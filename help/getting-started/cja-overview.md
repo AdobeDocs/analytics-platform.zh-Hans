@@ -2,7 +2,7 @@
 title: 客户旅程分析概述
 description: 客户旅程分析简介
 translation-type: tm+mt
-source-git-commit: 7afdf490d0a63b1286a1a646a487ee96d4b6ed8f
+source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
 
 ---
 
@@ -11,28 +11,22 @@ source-git-commit: 7afdf490d0a63b1286a1a646a487ee96d4b6ed8f
 
 客户旅程分析是一项分析功能，可让您将Analysis Workspace的强大功能与Adobe Experience Platform中的数据结合使用。 它可以细分、筛选、查询和可视化数据的年份价值，并与平台保存各种数据架构和类型的能力相结合。 使用体 **验数据模型(XDM)**，数据可以统一地表示和组织，随时可以进行组合和探索。 **Experience Query Services允许您使用SQL兼容工具和框架来查询和处理所有数据。**
 
-## 将CJA与Analysis Workspace进行比较
+## 将CJA与传统Adobe Analytics进行比较
 
 客户旅程分析通过提供易于使用的跨渠道功能并消除Adobe Analytics先前版本中的限制，扩展了Analytics的范围。 一些显着的改进包括：
 
 * **无限变量和事件**:eVar、prop和事件的概念已不复存在。 数据主要侧重于维度和指标。 数据集可以具有无限数量的唯一维度和指标。
-* **无限制的独立**:Adobe Experience Platform不受任何独特限制的限制，如传统报表包中的500k唯一值。
+* **无限制的唯一值**:Adobe Experience Platform不受任何独特限制的限制，如传统报表包中的500k唯一值。
 * **更改历史数据**:使用Adobe Experience Platform，可以删除或更正数据。
 * **跨报表包数据**:可以在平台中组合来自多个数据集的现有实现。
 
 客户旅程分析的初始版本包括Analysis Workspace中包含的许多功能。 有关完整列表，请参阅客 [户旅程分析功能支持](cja-aa.md)。
 
-### 术语更新
+## 比较CJA与跨设备分析
 
-CJA中的几项功能已更名为符合行业标准。 一些更新的名称包括：
+[跨设备分析](https://docs.adobe.com/content/help/en/analytics/components/cda/cda-home.html) (Cross-Device Analytics)与Adobe Experience Platform Identity Service集成，利用合作图或专用图确定数字设备如何映射到人群。 Adobe Analytics Ultimate客户可以使用它。
 
-* 区段现在称为“过滤器”
-* 虚拟报表包现在称为“查看”
-* 分类现在称为“查找数据集”
-* 客户属性现在称为“配置文件数据集”
-* 命中容器现在称为“事件”容器
-* 访问容器现在称为“会话”容器
-* 访客容器现在称为“人员”容器
+CJA与Adobe Experience Platform数据集集成，并支持Analysis Workspace中的跨渠道分析。 尽管CJA尚未与“合作”或“私人”标识图集成，但您可以“携带自己的ID”将数据集合在一起，这些数据集可以超越数字数据，同时包含线上和线下接触点。 下面将详细介绍CJA的先决条件。
 
 ## 主要用例
 
@@ -47,7 +41,7 @@ CJA中的几项功能已更名为符合行业标准。 一些更新的名称包�
 
 ## 先决条件
 
-在开始使用客户旅程分析之前，必须先完成以下步骤：
+在开始使用客户旅程分析之前，必须满足以下先决条件：
 
 * 您的组织与Adobe Analytics（针对Select、Prime或Ultimate）签订了有效合同，并安装了Customer Journey Analytics Add-on。 如果您不确定您拥有的合同类型，或不确定您是否拥有CJA加载项，请与贵组织的客户经理联系。
 * 您的组织已针对Adobe Experience Platform进行配置。
@@ -63,6 +57,18 @@ CJA中的几项功能已更名为符合行业标准。 一些更新的名称包�
    * 管理标识命名空间
    * 查看沙箱
 * 要访问客户旅程分析或建立连接，您还需要添加到 [Admin Console中的客户旅程分析产品配置](https://adminconsole.adobe.com/enterprise/)。
+
+### 术语更新
+
+CJA中的几项功能已更名为符合行业标准。 一些更新的名称包括：
+
+* 区段现在称为“过滤器”。
+* 虚拟报表包现在称为“查看”。
+* 分类现在称为“查找数据集”。
+* 客户属性现在称为“个人资料数据集”。
+* 命中容器现在称为“事件”容器。
+* 访问容器现在称为“会话”容器。
+* 访客容器现在称为“人员”容器。
 
 ## 构建在Adobe Experience Platform上的其他功能
 
