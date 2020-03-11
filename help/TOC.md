@@ -13,7 +13,7 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: 教程
 tutorials-url: https://helpx.adobe.com/cn/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 5f97a68f90150c6d42ce6022473004602769fef2
+source-git-commit: 8aa4ee719a7e2815cab94448a359b8dcba1307ec
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: 5f97a68f90150c6d42ce6022473004602769fef2
    + [常见问题解答](getting-started/cja-faq.md)
    + [客户旅程分析功能支持](getting-started/cja-aa.md)
    + [CJA词汇表](getting-started/cja-glossary.md)
-+ 项目 {#cja-reporting}
++ 工作区项目 {#cja-reporting}
    + [工作区简介](projects/workspace-basics.md)
    + [执行基本分析](projects/perform-basic-analysis.md)
    + [执行高级分析](projects/perform-adv-analysis.md)
