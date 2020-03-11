@@ -2,7 +2,7 @@
 title: 客户旅程分析常见问题解答
 description: 客户旅程分析——常见问题解答。
 translation-type: tm+mt
-source-git-commit: 17a61026bc92d1fe12c09848f3f249ab50057a5a
+source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 17a61026bc92d1fe12c09848f3f249ab50057a5a
 | **先决条件** |  |
 | 您是否需要客户旅程分析的设备图或设备联合？ | 否，客户旅程分析不需要专用设备图表或设备联合。 事实上，它们还没有得到支持。 |
 | 您是否需要Experience Cloud ID(ECID)来进行客户旅程分析？ | 否，Customer Journey Analytics支持数据集中的任何ID，无论该ID是ECID还是您选择的任何其他ID。 |
-| 如果您需要在客户旅程分析之前对数据进行ETL，该怎么办？ | 如果您需要在将数据放入AEP之前转换数据，那么您现在需要与ETL合作伙伴（Unifi或Informatica）合作。 如果您在摄取数据后需要ETL,AEP查询服务会提供一些有限的选项。 |
+| 如果您需要在客户旅程分析之前对数据进行ETL（提取、转换、加载），该怎么办？ | 如果您需要在将数据放入AEP之前转换数据，那么您现在需要与ETL合作伙伴（Unifi或Informatica）合作。 如果您在摄取数据后需要ETL,AEP查询服务会提供一些有限的选项。 |
 | **拼合** |  |
 | 客户旅程分析能否跨设备或跨数据集“拼接”? | 不会。客户旅程分析是一个“自带ID”分析系统。 正在制定一个好的拼接方案。 |
 | 是否支持从匿名行为到实名行为的拼接？ | 还不可以。 |
