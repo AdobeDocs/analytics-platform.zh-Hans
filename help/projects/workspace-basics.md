@@ -68,7 +68,7 @@ Workspace是Adobe的首要工具，可为您的组织制定基于数据的可操
 
 * 博客文章：
    * [使组织拥有更智能的分析功能](https://theblog.adobe.com/adobe-analytics-fall-2016-release-empowering-organizations-smarter-analysis/)
-   * [Analysis Workspace:秘密酱越来越美味](https://theblog.adobe.com/analysis-workspace-secret-sauce-getting-tastier/)
+   * [分析工作区：秘密酱越来越美味](https://theblog.adobe.com/analysis-workspace-secret-sauce-getting-tastier/)
    * [为何要使用 Analysis Workspace](https://theblog.adobe.com/why-you-should-be-using-analysis-workspace-in-adobe-analytics/)
    * [使用 Analysis Workspace 最大程度提高工作效率的 5 个提示](https://theblog.adobe.com/5-tips-maximize-productivity-analysis-workspace/)
 
