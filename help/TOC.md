@@ -37,9 +37,9 @@ source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
    + [组合的数据集](connections/combined-dataset.md)
 + 数据视图 {#cja-dataviews}
    + [创建数据视图](data-views/create-dataview.md)
-   + [配置数据查看和归因](data-views/configure-dataviews.md)
+   + [配置数据视图和归因](data-views/configure-dataviews.md)
 + 组件 {#cja-components}
-   + 过滤器 {#cja-filters}
+   + Filters {#cja-filters}
       + [过滤器概述](components/filters/filters-overview.md)
       + [创建过滤器](components/filters/create-filters.md)
       + [管理过滤器](components/filters/manage-filters.md)
