@@ -1,6 +1,6 @@
 ---
 title: 管理日期范围
-description: 在Analysis Workspace中共享、重命名或删除日期范围。
+description: 在分析工作区中共享、重命名或删除日期范围。
 translation-type: tm+mt
 source-git-commit: cd854a7543a6e31abb9cffd2657c75366cfe2737
 
@@ -16,7 +16,7 @@ source-git-commit: cd854a7543a6e31abb9cffd2657c75366cfe2737
 
 ## 界面
 
-![用户界面](../assets/date-range-ui.png)
+![UI](../assets/date-range-ui.png)
 
 日期范围管理器包括以下选项：
 
