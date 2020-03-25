@@ -1,6 +1,6 @@
 ---
 title: 客户旅程分析产品文档
-description: 客户旅程分析登录页面。
+description: 客户旅程分析登陆页。
 translation-type: tm+mt
 source-git-commit: 61cf17635c73a400b0c3a52666d75a771fca1a47
 
@@ -11,7 +11,7 @@ source-git-commit: 61cf17635c73a400b0c3a52666d75a771fca1a47
 
 本技术文档指南为客户旅程分析提供自助服务。 “客户历程分析”允许您从所选的任何渠道（在线和离线）将客户数据纳入到 Adobe Experience Platform 中，然后像现在使用 Analysis Workspace 分析现有数字数据一样分析这些数据。
 
-Customer Journey Analytics允许您控制在Analysis Workspace中通过任何常见客户ID连接线上和线下数据的方式，最后允许您进行归因、细分、流程、流失等。 Adobe Analytics中的所有客户数据集。
+客户旅程分析允许您控制如何在分析工作区中通过任何通用客户ID连接线上和线下数据，最后允许您进行归因、细分、流程、流失等。 Adobe Analytics中的所有客户数据集。
 
 Analytics Select、Prime 和 Ultimate 客户有资格购买此附加产品。有关更多详细信息，请与您的 Adobe 客户团队联系。
 
