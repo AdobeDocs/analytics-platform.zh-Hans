@@ -1,6 +1,6 @@
 ---
 title: CJA文档更新
-description: '列出自2019年12月以来客户旅程分析文档集的内容更新。 '
+description: '列表自2019年12月以来针对客户旅程分析文档集的内容更新。 '
 translation-type: tm+mt
 source-git-commit: 1d65b22ab2323bebf42b2782b2bab2ed52869a02
 
@@ -14,4 +14,4 @@ CJA文档自成立以来进行了以下更新。
 | 页面 | 更新说明 |
 | --- | --- |
 | 2020 年 2 月 27 日 | 客户旅程分 [析功能支持页面的更新](/help/getting-started/cja-aa.md) 。 |
-| 12 月 2019 日 | CJA文件初稿 |
+| 2019年12月 | CJA文件初稿 |
