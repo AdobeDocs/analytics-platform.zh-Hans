@@ -1,6 +1,6 @@
 ---
 title: 管理项目
-description: 在Analysis Workspace中共享、删除或重命名项目。
+description: 在分析工作区中共享、删除或重命名项目。
 translation-type: tm+mt
 source-git-commit: 542d394e9f20b10b932c8f444de096381ba25a17
 
@@ -16,7 +16,7 @@ source-git-commit: 542d394e9f20b10b932c8f444de096381ba25a17
 
 ## 界面
 
-![用户界面](../assets/project-ui.png)
+![UI](../assets/project-ui.png)
 
 项目经理包括以下选项：
 
