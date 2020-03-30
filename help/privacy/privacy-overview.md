@@ -1,19 +1,19 @@
 ---
-title: 客户旅程分析隐私权概述
-description: 介绍隐私权设置在客户旅程分析中的工作方式。
-translation-type: tm+mt
+title: Customer Journey Analytics 隐私权概述
+description: 介绍 Customer Journey Analytics 中隐私权设置的工作方式。
+translation-type: ht
 source-git-commit: 415a4a7f7d540a0329f973042d1c6a6a285d5b1b
 
 ---
 
 
-# 客户旅程分析隐私权概述
+# Customer Journey Analytics 隐私权概述
 
-通常情况下，客户旅程分析中的任何隐私权相关设置都会从Adobe Experience Platform继承。
+通常情况下，Customer Journey Analytics 中的任何隐私权相关设置都是从 Adobe Experience Platform 继承来的。
 
 ## GDPR
 
-客户旅程分析将不直接订阅一般数据保护规定(GDPR)中央服务，而是会继承在Experience Platform中所做的所有数据集更改。 我们依赖Platform Data Lake来执行GDPR删除请求，并在这些请求在Pipeline上完成时通知我们。 我们会监听Pipeline并同步客户旅程分析中针对事件数据集对受影响批次的所有更改。 受GDPR删除请求影响的用户档案和查找数据集将在每次删除请求后完全重新摄取。 我们可以保证在数据湖中删除事件的7天内执行删除请求。
+Customer Journey Analytics 将不直接订阅一般数据保护条例 (GDPR) 中央服务，而是会继承在 Experience Platform 中所做的所有数据集更改。我们依赖 Platform 数据湖来执行 GDPR 删除请求，并在这些请求在 Pipeline 上完成时通知我们。我们会监听 Pipeline，并将所有更改同步到 Customer Journey Analytics 中事件数据集的受影响批次。受 GDPR 删除请求影响的配置文件和查找数据集将在每个删除请求后完全重新摄取。我们可以保证在数据湖中的删除事件发生 7 天内执行删除请求。
 
 ## CCPA
 
