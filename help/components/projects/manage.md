@@ -11,7 +11,7 @@ source-git-commit: 542d394e9f20b10b932c8f444de096381ba25a17
 
 使用项目管理器共享、重命名或删除项目。 要联系日期管理器，请执行以下操作：
 
-1. 使用您 [的AdobeID凭据登录](https://analytics.adobe.com) analytics.adobe.com。
+1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your AdobeID credentials.
 1. 导航到 [!UICONTROL Components] > [!UICONTROL Projects]。
 
 ## 界面
