@@ -11,7 +11,7 @@ source-git-commit: cd854a7543a6e31abb9cffd2657c75366cfe2737
 
 使用日期范围管理器共享、重命名或删除日期范围。 要联系日期管理器，请执行以下操作：
 
-1. 使用您 [的AdobeID凭据登录](https://analytics.adobe.com) analytics.adobe.com。
+1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your AdobeID credentials.
 1. 导航到 [!UICONTROL Components] > [!UICONTROL Date Ranges]。
 
 ## 界面
