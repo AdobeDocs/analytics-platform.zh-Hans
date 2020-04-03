@@ -16,7 +16,7 @@ source-git-commit: fb2b5868db69bfff3345abcd69b0b70112fdcf3c
 | **第1步：将数据导入Adobe Experience Platform** | Adobe Experience Platform | 有多种方法可以为流和批量使用案例获取数据，包括API和用于数据上传的图形界面。 Experience Platform可以从以下方面导入数据：<ul><li>S3存储</li><li>Azure Blob存储</li><li>卡夫卡流</li><li>SFTP传输</li><li>CSV文件上传</li><li>JSON文件上传</li></ul> |
 | **第2步：准备数据模式** | Adobe Experience Platform | 使用 [Adobe Experience Data Model(XDM)](https://www.adobe.io/apis/experienceplatform/home/xdm.html) ，标准化客户体验数据并定义客户体验管理的模式。 |
 | **第3步：根据模式创建数据集** | Adobe Experience Platform | 平台中的数据由数据集组成，如电子邮件数据集、CRM数据集、POS数据集、Adobe Analytics数据集等。 每个数据集都由模式和批量数据组成。 您可以在Experience Platform中创 [建数据集](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/creating_a_dataset_tutorial/creating_a_dataset_tutorial.md)。<br>尽管可导入客户旅程分析的数据集的模式是灵活的，但它必须符合一些基本规则。 最好在将数据上传到平台之前，先确保数据满足这些要求。 (请注意，模式包括指标和维度。)<br>有三种类型的数据与客户旅程分析兼容：<ul><li>**事件数据**:表示及时事件的数据(例如，Web访问、交互、交易、POS数据、调查数据、广告印象数据等)。 这是典型的点击流数据，带有客户ID或cookie ID，以及时间戳。 利用事件数据，我们允许您使用您需要的ID。</li><li>**查找数据**:此数据用于查找在事件或用户档案数据中找到的值或键。 例如，您可以上传将事件数据中的数字ID映射到产品名称的查找数据。</li><li>**用户档案数据**:应用于访客、用户或客户的事件数据。 例如，允许您上传有关客户的CRM数据。</li></ul> |
-| **第4步：在平台数据集和客户旅程分析之间建立联系** | 客户历程分析 | 请参 [阅创建连接](/help/connections/create-connection.md)。 |
+| **第4步：在平台数据集和客户旅程分析之间建立联系** | 客户历程分析 | See [Create a connection](/help/connections/create-connection.md). |
 | **第5步：创建数据视图** | 客户历程分析 | See [Create a data view](/help/data-views/create-dataview.md). |
 | **第6步：在Workspace中报告跨渠道数据** | 客户历程分析 | 请参 [阅执行基本分析](/help/projects/perform-basic-analysis.md) , [执行高级分析](/help/projects/perform-adv-analysis.md)。 |
 
