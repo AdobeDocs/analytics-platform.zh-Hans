@@ -1,5 +1,5 @@
 ---
-title: 客户旅程分析功能支持
+title: Customer Journey Analytics 功能支持
 description: 客户旅程分析功能与Adobe Analytics功能集的对比。
 translation-type: tm+mt
 source-git-commit: 1d65b22ab2323bebf42b2782b2bab2ed52869a02
@@ -7,7 +7,7 @@ source-git-commit: 1d65b22ab2323bebf42b2782b2bab2ed52869a02
 ---
 
 
-# 客户旅程分析功能支持
+# Customer Journey Analytics 功能支持
 
 下表列表了客户旅程分析(CJA)中支持、部分支持或不支持Adobe Analytics中的功能。 随着向CJA添加功能，这些列表会随时间而改变。
 
