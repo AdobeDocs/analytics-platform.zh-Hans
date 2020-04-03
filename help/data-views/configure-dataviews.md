@@ -1,5 +1,5 @@
 ---
-title: 配置数据视图和归因
+title: 配置数据视图和属性
 description: 介绍如何在客户旅程分析中创建平台数据视图
 translation-type: tm+mt
 source-git-commit: 71d666b89860813d4e578c2f3c786da8d471a874
@@ -9,7 +9,7 @@ source-git-commit: 71d666b89860813d4e578c2f3c786da8d471a874
 
 # 组件和归因设置
 
-传统Adobe Analytics中的eVar、prop和事件在客户旅程分析中已不复存在。 相反，您有无限的模式元素(维度、度量、列表字段)。 您在数据收集过程中用于应用到eVar和prop的所有归因设置现在都在查询时应用——也称为报告时处理。
+传统 Adobe Analytics 中的 eVar、prop 和事件在 Customer Journey Analytics 中已不复存在。相反，您有无限的模式元素(维度、度量、列表字段)。 您在数据收集过程中用于应用到eVar和prop的所有归因设置现在都在查询时应用——也称为报告时处理。
 
 单击 [此处](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/attribution-settings-in-data-views.html) ，查看视频概述。
 
