@@ -1,5 +1,5 @@
 ---
-title: 客户旅程分析概述
+title: Customer Journey Analytics 概述
 description: 客户旅程分析简介
 translation-type: tm+mt
 source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
@@ -7,7 +7,7 @@ source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
 ---
 
 
-# 客户旅程分析概述
+# Customer Journey Analytics 概述
 
 客户旅程分析是一项分析功能，可让您将分析工作区的强大功能与Adobe Experience Platform中的数据结合使用。 它可以细分、筛选、查询和可视化数年的数据价值，并与平台保存各种数据模式和类型的能力相结合。 使用体 **验数据模型(XDM)**，数据可以统一地表示和组织，随时可以进行组合和探索。 **体验查询服务** ，允许您使用SQL兼容工具和框架来查询和处理所有数据。
 
