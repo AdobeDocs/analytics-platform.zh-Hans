@@ -16,7 +16,7 @@ source-git-commit: 2452490cc2f147cfd87540a68be2d0c219d8744f
 
 要在日期范围管理器中创建日期范围，请执行以下操作：
 
-1. 使用您 [的AdobeID凭据登录](https://analytics.adobe.com) analytics.adobe.com。
+1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your AdobeID credentials.
 1. 导航到 [!UICONTROL Components] > [!UICONTROL Date Ranges]。
 1. 单击该 [!UICONTROL Add] 按钮可打开创建日期范围的模态窗口。
 
