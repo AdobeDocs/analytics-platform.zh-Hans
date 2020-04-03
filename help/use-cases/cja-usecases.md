@@ -1,5 +1,5 @@
 ---
-title: 客户旅程分析使用案例
+title: Customer Journey Analytics 使用案例
 description: 客户旅程分析的使用案例
 translation-type: tm+mt
 source-git-commit: 8aa4ee719a7e2815cab94448a359b8dcba1307ec
@@ -7,7 +7,7 @@ source-git-commit: 8aa4ee719a7e2815cab94448a359b8dcba1307ec
 ---
 
 
-# 客户旅程分析使用案例
+# Customer Journey Analytics 使用案例
 
 客户旅程分析支持以下主要使用案例：
 
