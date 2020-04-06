@@ -2,7 +2,7 @@
 title: 参考——基本函数
 description: '计算量度生成器允许您将统计和数学函数应用于生成高级计算量度。 '
 translation-type: tm+mt
-source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
+source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
 
 这里有一个按字母顺序排列的函数及其定义列表。
 
-> [!NOTE] 当 [!DNL metric] 被标识为函数中的参数时，还允许使用其他量度表达式。例如，[!DNL MAXV(metrics)] 还允许使用 [!DNL MAXV(PageViews + Visits).]
+>[!NOTE] 当 [!DNL metric] 被标识为函数中的参数时，还允许使用其他量度表达式。例如，[!DNL MAXV(metrics)] 还允许使用 [!DNL MAXV(PageViews + Visits).]
 
 ## table 函数与 row 函数
 
