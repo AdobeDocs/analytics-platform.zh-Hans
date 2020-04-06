@@ -2,7 +2,7 @@
 title: 参考——高级功能
 description: 可通过以下方法访问这些函数：选中函数下拉列表中的显示高级。
 translation-type: tm+mt
-source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
+source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
 
 ---
 
@@ -27,7 +27,7 @@ Access these functions by checking **[!UICONTROL Show Advanced]** in the **[!UIC
 
 返回其参数的值。 使用“不”(NOT)确保值不等于一个特定值。
 
-> [!NOTE] 0（零）表示 False，而任何其他值均表示 True。
+>[!NOTE] 0（零）表示 False，而任何其他值均表示 True。
 
 ```
 AND(logical_test1,[logical_test2],...)
@@ -64,7 +64,7 @@ Approximate Count Distinct (customer ID eVar) 是此函数的常见用例。
 
 ## 超出的唯一值
 
-与Count()和RowCount()一样，Approximate Count Distinct()受“超出 [唯一值”限制](https://marketing.adobe.com/resources/help/en_US/reference/metrics_uniques_high_numbers.html)。 如果某个维的“超出的唯一值”限制在某个特定月份内达到，则该值计为1个维项。
+与Count()和RowCount()一样，Approximate Count Distinct()受“超出 [唯一值”限制](https://marketing.adobe.com/resources/help/zh_CN/reference/metrics_uniques_high_numbers.html)。 如果某个维的“超出的唯一值”限制在某个特定月份内达到，则该值计为1个维项。
 
 ## 比较计数函数
 
@@ -203,7 +203,7 @@ CBRT(metric)
 
 如果N &lt;= 0，则它使用所有以前的行。 由于它按维排序，因此它仅对具有自然顺序（如日期或路径长度）的维有用。
 
-> [!NOTE] 使用收入/访客之类的比率量度时，它可能不会按预期工作：它会计算比率的平均值，而不是总计最后 N 行的收入并总计最后 N 行的访客数，然后将二者相除。它使用的是
+>[!NOTE] 使用收入/访客之类的比率量度时，它可能不会按预期工作：它会计算比率的平均值，而不是总计最后 N 行的收入并总计最后 N 行的访客数，然后将二者相除。它使用的是
 
 ```
 cumul(revenue)/cumul(visitor)
@@ -446,7 +446,7 @@ NOT(logical)
 
 如果有任何参数为 TRUE，则返回 TRUE；如果所有参数均为 FALSE，则返回 FALSE。
 
-> [!NOTE] 0（零）表示 False，而任何其他值均表示 True。
+>[!NOTE] 0（零）表示 False，而任何其他值均表示 True。
 
 ```
 OR(logical_test1,[logical_test2],...)
@@ -687,7 +687,7 @@ Z得分的等式是：
 
 其中，[!DNL x] 为原始分数，[!DNL μ] 为群体平均值，[!DNL σ] 为群体标准偏差。
 
-> [!NOTE][!DNL μ]  (mu) 和 [!DNL σ] (sigma) 会使用该量度自动计算。
+>[!NOTE][!DNL μ]  (mu) 和 [!DNL σ] (sigma) 会使用该量度自动计算。
 
 Z 分数（量度）
 
@@ -712,5 +712,5 @@ Z 分数（量度）
 
 返回当前行在列中偶然可见的概率。
 
-> [!NOTE] 假定值为正态分布。
+>[!NOTE] 假定值为正态分布。
 
