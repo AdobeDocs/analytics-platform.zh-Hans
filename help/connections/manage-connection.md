@@ -2,14 +2,14 @@
 title: 管理连接
 description: 介绍如何管理与平台数据集的连接。
 translation-type: tm+mt
-source-git-commit: 43d7606886c1e1e51c549d4741924a902a7de26c
+source-git-commit: fa7898d73756c33a0bae22c8758bc9f0a649626a
 
 ---
 
 
 # 管理连接
 
-创建一个或多个连接后，您便可以在连接管理器中管理这些连接。 您可以
+创建一个或多个连接后，您便可以在 [!UICONTROL Connections] Manager中管理。 您可以
 
 * 删除连接。
 * 重命名连接。
@@ -26,9 +26,9 @@ source-git-commit: 43d7606886c1e1e51c549d4741924a902a7de26c
 
    | 操作 | 描述 |
    |---|---|
-   | 删除 | 删除连接不会删除数据集，因为数据仍位于Adobe Experience Platform中。 |
-   | 重命名 | 正在重命名连接…… |
-   | 创建数据视图 | 此链接将带您转到数据 [视图构建器](/help/data-views/create-dataview.md)。 |
-   | 开始或停止数据流 | “流”是指如果将任何新批量添加到连接中的任何数据集，则此新数据将被引入客户旅程分析以供报告。 |
+   | [!UICONTROL Delete] | 删除连接不会删除数据集，因为数据仍位于Adobe Experience Platform中。 |
+   | [!UICONTROL Rename] | 可以使用更具描述性的名称重命名连接。 |
+   | [!UICONTROL Create Data View] | 此链接将带您转到数据 [视图构建器](/help/data-views/create-dataview.md)。 |
+   | [!UICONTROL Start or stop data streaming] | “流”是指如果将任何新批量添加到连接中的任何数据集，则会将此新数据引入以进行 [!UICONTROL Customer Journey Analytics] 报告。 |
 
 
