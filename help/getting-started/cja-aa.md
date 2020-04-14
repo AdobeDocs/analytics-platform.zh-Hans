@@ -2,7 +2,7 @@
 title: Customer Journey Analytics 功能支持
 description: 客户旅程分析功能与Adobe Analytics功能集的对比。
 translation-type: tm+mt
-source-git-commit: 1d65b22ab2323bebf42b2782b2bab2ed52869a02
+source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: 1d65b22ab2323bebf42b2782b2bab2ed52869a02
 | 虚拟报表包 | 现在称为 [数据视图](/help/data-views/create-dataview.md)。 |
 | VRS组件特选 | 现在是数据视图的一部分。 |
 | 报告时间处理 | CJA仅依赖于报告时间处理。 |
-| GDPR删除 | 请注意，GDPR现在与Adobe Experience Platform协同处理- CJA继承了Experience Platform对基础数据集所做的任何数据更改。 |
+| GDPR删除 | 请注意，GDPR现在可与之协调处理 [!UICONTROL Experience Platform] - CJA会继承对基础数据集所做 [!UICONTROL Experience Platform] 的任何数据更改。 |
 
 ## 受支持，但需要注意
 
@@ -36,7 +36,7 @@ source-git-commit: 1d65b22ab2323bebf42b2782b2bab2ed52869a02
 | --- | --- |
 | 产品变量 | 当前可用于报告符合体验事件模式的数据的产品变量（特别是使用productListItems对象）。 |
 | 可视化图表 | 除地图可视化外，所有可视化均受支持。 |
-| AAM受众 | 如果客户使用Analytics Data Connector数据集，则此数据将是ADC数据的一部分。 |
+| AAM受众 | 如果客户使用 [!UICONTROL Analytics Data Connector] 数据集，则这些数据将是ADC数据的一部分。 |
 | 项目共享 | 项目共享仅在CJA用户之间受支持- CJA与传统分析工作区之间不存在项目共享。 |
 | 自定义会话化 | 支持除移动后台点击之外的所有自定义会话化功能。 |
 | eVar持久性设置 | eVar不再是CJA的一部分。 但是，持久性设置现在是数据视图的一部分，可用于所有维。 请记住，持久性是基于报告时间处理而非数据收集处理。 这意味着所有持久性都将基于报告日期范围而不是整个数据。 |
@@ -50,9 +50,9 @@ source-git-commit: 1d65b22ab2323bebf42b2782b2bab2ed52869a02
 | 开箱即用的分析工作区维度(例如，浏览器类型、推荐人类型、营销渠道、访问次数等) | CJA本身不提供这些维度。 对于使用Analytics Data Connector(ADC)的客户，其中一些维度可用，但并非全部。 请参阅我们的 [文档，其中ADC支持Analytics变量](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)。 |
 | 面板 | 完全支持空白面板、归因面板和自由格式面板。 不支持区段比较。 |
 | 销售eVar | 销售eVar只能与基于ADC的数据集一起使用，除非它们严格符合相同的XDM模式(与上述产品列表限制类似)。 |
-| 机器人过滤 | 对于基于Analytics Data Connector(ADC)的数据集，应用机器人过滤。 其他数据集的常规机器人过滤逻辑不由Experience Platform或CJA执行。 |
+| 机器人过滤 | 对于基于Analytics Data Connector(ADC)的数据集，应用机器人过滤。 其他数据集的常规机器人过滤逻辑不由或 [!UICONTROL Experience Platform] CJA执行。 |
 | 处理规则 | 对于基于ADC的数据集，仍然应用处理规则。 |
-| 跨设备身份拼接 | 客户只能通过查询服务对数据进行“一次”拼接，或者当前必须在Experience Platform数据获取之前将此逻辑应用于数据。 |
+| 跨设备身份拼接 | 客户只能通过查询服务对数据进行“一次”拼接，或者当前必须在数据获取之前将此逻辑应用于 [!UICONTROL Experience Platform] 数据。 |
 
 ## 当前不支持，但已计划
 
@@ -95,6 +95,6 @@ source-git-commit: 1d65b22ab2323bebf42b2782b2bab2ed52869a02
 | 报告和分析目标 |  |
 | 报告与分析日历事件 |  |
 | Ad Hoc Analysis |  |
-| Data Warehouse 报表 | Adobe Experience Platform查询服务将是CJA中这些用例的新界面。 |
+| Data Warehouse 报表 | [!UICONTROL Experience Platform Query Service] 将是CJA中这些用例的新界面。 |
 | Mobile Services |  |
 | 数据馈送 |  |
