@@ -2,7 +2,7 @@
 title: 创建数据视图
 description: 介绍如何在客户旅程分析(CJA)中创建平台数据集的数据视图。
 translation-type: tm+mt
-source-git-commit: c85b5d2e702a38aa6569da893a25bacd39604f8a
+source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: c85b5d2e702a38aa6569da893a25bacd39604f8a
 
 ## 先决条件
 
-在创建数据视图之前，您需 [要设置一个或多个与Adobe Experience Platform数据集的连接](/help/connections/create-connection.md)。
+在创建数据视图之前，您需要 [设置一个或多个与Experience Platform数据集的连接] ](/help/connections/create-connection.md)。
 
 ## 配置设置
 
@@ -27,7 +27,7 @@ source-git-commit: c85b5d2e702a38aa6569da893a25bacd39604f8a
 
    | 会话设置 | 定义 |
    |---|---|
-   | 连接 | 此字段将数据视图链接到您之前建立的连接，该连接包含平台数据集。 |
+   | 连接 | 此字段将数据视图链接到您之前建立的连接，该连接包含 [!UICONTROL Experience Platform] 数据集。 |
    | 名称 | 必须为数据视图命名。 |
    | 描述 | 详细说明不是强制性的，但建议使用。 |
    | 添加标记 | 标记允许您将数据视图组织到类别中。 |
