@@ -2,7 +2,7 @@
 title: 创建连接
 description: 介绍如何在客户旅程分析中创建与平台数据集的连接。
 translation-type: tm+mt
-source-git-commit: 757aea2f2ef4bb7eb1e9ba7c06a5705427255208
+source-git-commit: f17994c7d6812480102b9dc5fdbfc4609d2d1012
 
 ---
 
@@ -29,9 +29,9 @@ source-git-commit: 757aea2f2ef4bb7eb1e9ba7c06a5705427255208
 
    | 数据集类型 | 描述 | 时间戳 | 架构 | 人员 ID |
    |---|---|---|---|---|
-   | [!UICONTROL Event-Schema] | 任何基于具有“时间序列”行为的XDM类的内置或自定义模式。 示例包括“XDM体验事件”或“XDM决策事件”。 <br>表示及时事件的数据(例如，Web访问、交互、交易、POS数据、调查数据、广告印象数据等)。 例如，这可能是典型的点击流数据，其中包含客户ID或cookie ID，以及时间戳。 对于事件数据，您可以灵活地确定将哪个ID用作人员ID。 | 在 [UICONTROL Experience Platform中，从基于事件的模式自动设置为默认时间戳字段]。 | 此数 [据集类型所基于的] UICONTROL Experience Platform模式。 | 您可以选择要包含的人物ID。 在Experience Platform中定义的每个数据集模式都可以有自己的一组或多个标识，这些标识定义并与一个标识命名空间关联。 其中任何一个都可用作人员ID。 示例包括Cookie ID、拼合ID、用户ID、跟踪代码等。 |
-   | [!UICONTROL Lookup-Schema] | 除“XDM个人模式”类外，任何基于具有“记录”行为的XDM类的内置或自定义用户档案。<br>与分类文件类似。 此数据用于查找在事件或用户档案数据中找到的值或键。 例如，您可以上传将事件数据中的数字ID映射到产品名称的查找数据。 | 不适用 | 此数 [!DNL Experience Platform] 据集类型所基于的模式。 | 不适用 |
-   | [!UICONTROL Profile-Schema] | 任何基于“XDM个人模式”类的内置或自定义用户档案。 <br>与- [!UICONTROL Customer Attributes] 类似，适用于非更改属性和非临时属性。 应用于数据中的访客、用户或客户的数 [!UICONTROL Event] 据。 例如，允许您上传有关客户的CRM数据。 | 不适用 | 此数 [!DNL Experience Platform] 据集类型所基于的模式。 | 您可以选择要包含的人物ID。 在中定义的每个数 [!DNL Experience Platform] 据集都有其自己的一组定义的一个或多个人员ID，如Cookie ID、拼合ID、用户ID、跟踪代码等。<br>![人](assets/person-id.png)**员&#x200B;**:如果您创建的连接包含具有不同ID的数据集，报告将反映这一点。 要真正合并数据集，您需要使用相同的Person ID。 |
+   | [!UICONTROL Event] | 表示及时事件的数据(例如，Web访问、交互、交易、POS数据、调查数据、广告印象数据等)。 例如，这可能是典型的点击流数据，其中包含客户ID或cookie ID，以及时间戳。 对于事件数据，您可以灵活地确定将哪个ID用作人员ID。 | 在 [UICONTROL Experience Platform中，从基于事件的模式自动设置为默认时间戳字段]。 | 任何基于具有“时间序列”行为的XDM类的内置或自定义模式。 示例包括“XDM体验事件”或“XDM决策事件”。 | 您可以选择要包含的人物ID。 在Experience Platform中定义的每个数据集模式都可以有自己的一组或多个标识，这些标识定义并与一个标识命名空间关联。 其中任何一个都可用作人员ID。 示例包括Cookie ID、拼合ID、用户ID、跟踪代码等。 |
+   | [!UICONTROL Lookup] | 与分类文件类似。 此数据用于查找在事件或用户档案数据中找到的值或键。 例如，您可以上传将事件数据中的数字ID映射到产品名称的查找数据。 | 不适用 | 除“XDM个人模式”类外，任何基于具有“记录”行为的XDM类的内置或自定义用户档案。 | 不适用 |
+   | [!UICONTROL Profile] | 与- [!UICONTROL Customer Attributes] 类似，适用于非更改属性和非临时属性。 应用于数据中的访客、用户或客户的数 [!UICONTROL Event] 据。 例如，允许您上传有关客户的CRM数据。 | 不适用 | 任何基于“XDM个人模式”类的内置或自定义用户档案。 | 您可以选择要包含的人物ID。 在中定义的每个数 [!DNL Experience Platform] 据集都有其自己的一组定义的一个或多个人员ID，如Cookie ID、拼合ID、用户ID、跟踪代码等。<br>![人](assets/person-id.png)**员&#x200B;**:如果您创建的连接包含具有不同ID的数据集，报告将反映这一点。 要真正合并数据集，您需要使用相同的Person ID。 |
 
 1. 单击 **[!UICONTROL Next]** 将转到对话 [!UICONTROL Create Connection] 框。
 
