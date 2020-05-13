@@ -2,9 +2,9 @@
 title: 创建连接
 description: 介绍如何在客户旅程分析中创建与平台数据集的连接。
 translation-type: tm+mt
-source-git-commit: b81116bba59c4b52dfe5b8b628c581e332a05c48
+source-git-commit: 674835d9c8b79850051729c875bc67f0e4052a66
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '889'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 4%
 
 1. 单击 **[!UICONTROL 右上方的]** “新建连接”。
 
-![创建连接](assets/create-connection.png)
+   ![创建连接](assets/create-connection.png)
 
 1. 首先，在Experience Platform中选择一个沙箱，其中包含要创建连接的数据集。 Adobe Experience Platform提供将 [单个](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) Platform实例分区为单独的虚拟环境的沙箱，以帮助开发和改进数字体验应用程序。 您可以将沙箱视为包含数据集的“数据孤岛”。 沙箱用于控制对数据集的访问。 您无法跨沙箱访问数据。
 
