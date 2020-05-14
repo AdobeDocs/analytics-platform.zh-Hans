@@ -2,9 +2,9 @@
 title: 创建连接
 description: 介绍如何在客户旅程分析中创建与平台数据集的连接。
 translation-type: tm+mt
-source-git-commit: 674835d9c8b79850051729c875bc67f0e4052a66
+source-git-commit: 4b672b0decfecc5a3c607ad966ebb2ecbf178a96
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '886'
 ht-degree: 4%
 
 ---
@@ -26,7 +26,8 @@ ht-degree: 4%
 
    ![创建连接](assets/create-connection.png)
 
-1. 首先，在Experience Platform中选择一个沙箱，其中包含要创建连接的数据集。 Adobe Experience Platform提供将 [单个](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) Platform实例分区为单独的虚拟环境的沙箱，以帮助开发和改进数字体验应用程序。 您可以将沙箱视为包含数据集的“数据孤岛”。 沙箱用于控制对数据集的访问。 您无法跨沙箱访问数据。
+1. 首先，在 **[!UICONTROL 选择数据集]**&#x200B;下，选择 [!UICONTROL Experience] Platform中的沙箱，该沙箱包含要创建连接的数据集。
+Adobe Experience Platform提供将 [单个](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) Platform实例分区为单独虚拟环境的沙箱。 您可以将沙 [!UICONTROL 箱视为] “数据孤岛”，其中包含数据集并用于控制对数据集的访问。 请注意，您无法跨沙箱访 [!UICONTROL 问数据]。
 
 1. 选择沙箱后，左边栏会显示该沙箱中可从中提取的所有数据集。 选择一个或多个要纳入Customer Journey Analytics的数 [!UICONTROL 据集] ，然后单击 **[!UICONTROL 添加]**。 (如果您有许多数据集可供选择，则可以使用数据集列表上方的搜索栏搜索正确的数据集。)
 
