@@ -1,7 +1,7 @@
 ---
 title: Customer Journey Analytics 功能支持
-description: 客户旅程分析功能与Adobe Analytics功能集的对比。
-translation-type: tm+mt
+description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
+translation-type: ht
 source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 ---
@@ -9,92 +9,92 @@ source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 # Customer Journey Analytics 功能支持
 
-下表列表了客户旅程分析(CJA)中支持、部分支持或不支持Adobe Analytics中的功能。 随着向CJA添加功能，这些列表会随时间而改变。
+下表列出了 Customer Journey Analytics (CJA) 完全支持、部分支持或不支持 Adobe Analytics 中的功能。由于后续会向 CJA 添加其他功能，因此这些列表会随着时间而发生变化。
 
-## 完全支持的功能／组件
+## 完全支持的功能/组件
 
 | 功能 | 注释 |
 | --- | --- |
-| 量度 | CJA利用体验数据模型(XDM)并支持无限量度量度，且不与传统Analytics的自定义成功事件相关联。 请注意，一些标准指标已从传统的Analytics中更名为：访客=人员、访问=会话、点击=事件。 |
-| 维度 | CJA利用XDM并支持无限维度，且不与传统Analytics的自定义成功事件绑定。 |
-| 列表变量/列表属性 | CJA利用XDM并支持无限的列表变量 |
-| 日期范围 | 计划提供自定义日历支持。 |
-| 计算量度 | 请注意，传统分析工作区中的任何现有计算度量都不会移植到CJA。 |
-| 区段 | 现在称为“过滤器”-请注意，传统分析工作区中的任何现有区段都不会移植到CJA。 |
+| 量度 | CJA 利用体验数据模型 (XDM) 并支持无限量的量度，同时不会与传统 Analytics 的自定义成功事件绑定。请注意，已对传统 Analytics 中的一些标准量度名称进行了重命名，例如：“访客”=“人员”、“访问”=“会话”、“点击”=“事件”。 |
+| 维度 | CJA 利用 XDM 并支持无限量的维度，同时不会与传统 Analytics 的自定义成功事件绑定。 |
+| 列表变量/列表 Prop | CJA 利用 XDM 并支持无限量的列表变量 |
+| 日期范围 | 计划将会提供自定义日历支持。 |
+| 计算量度 | 请注意，传统 Analysis Workspace 中的任何现有计算量度都不会移植到 CJA。 |
+| 区段 | 现在称为“过滤器” - 请注意，传统 Analysis Workspace 中的任何现有区段都不会移植到 CJA。 |
 | 归因 IQ | 完全支持 |
-| 项目特选 | 完全支持 |
+| 项目策划 | 完全支持 |
 | 项目链接 | 完全支持 |
 | 日期比较 | 完全支持 |
-| 虚拟报表包 | 现在称为 [数据视图](/help/data-views/create-dataview.md)。 |
-| VRS组件特选 | 现在是数据视图的一部分。 |
-| 报告时间处理 | CJA仅依赖于报告时间处理。 |
-| GDPR删除 | 请注意，GDPR现在可与之协调处理 [!UICONTROL Experience Platform] - CJA会继承对基础数据集所做 [!UICONTROL Experience Platform] 的任何数据更改。 |
+| 虚拟报表包 | 现在称为[数据视图](/help/data-views/create-dataview.md)。 |
+| VRS 组件策划 | 现在是“数据视图”的一部分。 |
+| 报表时间处理 | CJA 完全依赖于报表时间处理。 |
+| 删除 GDPR | 请注意，GDPR 现在可与之协调处理 [!UICONTROL Experience Platform] - CJA 会继承 [!UICONTROL Experience Platform] 对基础数据集所做的任何数据更改。 |
 
-## 受支持，但需要注意
+## 受支持，但有注意事项
 
 | 功能 | 注释 |
 | --- | --- |
-| 产品变量 | 当前可用于报告符合体验事件模式的数据的产品变量（特别是使用productListItems对象）。 |
-| 可视化图表 | 除地图可视化外，所有可视化均受支持。 |
-| AAM受众 | 如果客户使用 [!UICONTROL Analytics Data Connector] 数据集，则这些数据将是ADC数据的一部分。 |
-| 项目共享 | 项目共享仅在CJA用户之间受支持- CJA与传统分析工作区之间不存在项目共享。 |
-| 自定义会话化 | 支持除移动后台点击之外的所有自定义会话化功能。 |
-| eVar持久性设置 | eVar不再是CJA的一部分。 但是，持久性设置现在是数据视图的一部分，可用于所有维。 请记住，持久性是基于报告时间处理而非数据收集处理。 这意味着所有持久性都将基于报告日期范围而不是整个数据。 |
-| 分类 | 现在称为“查找数据集”，它们不会从传统Analytics自动导入。 在CJA中提供之前，必须将它们上传到AEP。 |
-| 客户属性 | 现在称为“用户档案数据集”，它们不会从Experience Cloud自动导入，但必须先上传到AEP，然后才能在CJA中使用。 |
+| 产品变量 | 当前可用于报表数据的产品变量符合体验报告架构（特别是使用 productListItems 的对象）。 |
+| 可视化图表 | 除地图可视化图表外，支持所有可视化图表。 |
+| AAM 受众 | 如果客户使用 [!UICONTROL Analytics Data Connector] 数据集，此数据将成为 ADC 数据的一部分。 |
+| 项目共享 | 仅支持在 CJA 用户之间共享项目 - 不支持 CJA 与传统 Analysis Workspace 之间共享项目。 |
+| 自定义会话流程 | 支持除移动后台点击之外的所有自定义会话流程功能。 |
+| eVar 持久性设置 | eVar 不再是 CJA 的一部分。但是，持久性设置现在是数据视图的一部分，且可用于所有维度。请记住，持久基于报表时间处理，而不是数据收集处理。这意味着，所有持久性都将基于报表日期范围，而不是整个数据。 |
+| 分类 | 现在称为“查找数据集”，它们不会从传统的 Analytics 中自动导入。必须先将它们上传到 AEP，然后才能在 CJA 中使用。 |
+| 客户属性 | 现在称为“用户档案数据集”，它们不会从 Experience Cloud 中自动导入，必须先将其上传到 AEP，然后才能在 CJA 中使用。 |
 
 ## 部分支持
 
 | 功能 | 注释 |
 | --- | --- |
-| 开箱即用的分析工作区维度(例如，浏览器类型、推荐人类型、营销渠道、访问次数等) | CJA本身不提供这些维度。 对于使用Analytics Data Connector(ADC)的客户，其中一些维度可用，但并非全部。 请参阅我们的 [文档，其中ADC支持Analytics变量](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)。 |
-| 面板 | 完全支持空白面板、归因面板和自由格式面板。 不支持区段比较。 |
-| 销售eVar | 销售eVar只能与基于ADC的数据集一起使用，除非它们严格符合相同的XDM模式(与上述产品列表限制类似)。 |
-| 机器人过滤 | 对于基于Analytics Data Connector(ADC)的数据集，应用机器人过滤。 其他数据集的常规机器人过滤逻辑不由或 [!UICONTROL Experience Platform] CJA执行。 |
-| 处理规则 | 对于基于ADC的数据集，仍然应用处理规则。 |
-| 跨设备身份拼接 | 客户只能通过查询服务对数据进行“一次”拼接，或者当前必须在数据获取之前将此逻辑应用于 [!UICONTROL Experience Platform] 数据。 |
+| 开箱即用的 Analysis Workspace 维度（例如，浏览器类型、反向链接类型、营销渠道、访问次数等） | CJA 本身不提供这些维度。对于使用 Analytics Data Connector (ADC) 的客户，其中部分维度可用，但不是全部维度都可用。请参阅我们的[关于通过 ADC 支持哪些 Analytics 变量的文档](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)。 |
+| 面板 | 完全支持空白面板、归因面板和自由表单面板。不支持区段比较。 |
+| 促销 eVar | 除非它们严格符合相同的 XDM 架构，否则促销 eVar 将只能用于基于 ADC 的数据集，（与上述产品列表限制相似）。 |
+| 机器人过滤 | 对于基于 Analytics Data Connector (ADC) 的数据集，会应用机器人过滤。[!UICONTROL Experience Platform] 或 CJA 不会对其他数据集应用常规机器人过滤逻辑。 |
+| 处理规则 | 对于基于 ADC 的数据集，仍会应用处理规则。 |
+| 跨设备身份拼合 | 客户只能通过查询服务对数据进行“一次性”拼合，或者，目前必须在摄取 [!UICONTROL Experience Platform] 数据之前将此逻辑应用于数据。 |
 
-## 当前不支持，但已计划
+## 目前不支持，但计划将会提供支持
 
 | 功能 | 注释 |
 | --- | --- |
-| 异常检测 | 已计划提供支持。 |
-| 贡献分析 | 已计划提供支持。 |
-| 区段 IQ | 已计划提供支持。 |
-| 细分发布（将细分从Workspace发送到Experience Cloud） | 已计划提供支持。 |
-| 用户权限／数据访问控制 | CJA中的所有用户具有相同的访问控制-这意味着所有用户都有权访问所有连接、数据视图等。 基本上，所有用户都是CJA中的管理员级用户。 计划于2020年提供支持。 |
-| CSV下载 | 已计划提供支持。 |
-| 计划报告／项目 | 已计划提供支持。 |
-| 警报 | 已计划提供支持。 |
-| 自定义日历 | 已计划提供支持。 |
-| 营销渠道 | 已计划提供支持。 |
-| PDF导出 | 已计划提供支持。 |
-| 报告API访问 | 已计划提供支持——仅在API 2.0中提供。 |
-| 通过设备图进行ID拼接 | 已计划提供支持。 |
+| 异常检测 | 计划将会提供支持。 |
+| 贡献分析 | 计划将会提供支持。 |
+| 区段 IQ | 计划将会提供支持。 |
+| 区段发布（将区段从 Workspace 发送到 Experience Cloud） | 计划将会提供支持。 |
+| 用户权限/数据访问控制 | CJA 中的所有用户拥有相同的访问控制 - 这意味着所有用户都有权访问所有连接、数据视图等。在 CJA 中，所有用户基本上都是管理员级用户。计划 2020 年提供支持。 |
+| CSV 下载 | 计划将会提供支持。 |
+| 计划报表/项目 | 计划将会提供支持。 |
+| 警报 | 计划将会提供支持。 |
+| 自定义日历 | 计划将会提供支持。 |
+| 营销渠道 | 计划将会提供支持。 |
+| PDF 导出 | 计划将会提供支持。 |
+| 报表 API 访问 | 计划将会提供支持 - 将仅适用于 API 2.0。 |
+| 通过设备图形进行 ID 拼合 | 计划将会提供支持。 |
 
-## 尚未计划支持
+## 尚未计划提供支持
 
 | 功能 | 注释 |
 | --- | --- |
 | A4T | 尚未计划提供支持。 |
 | Video Analytics | 尚未计划提供支持。 |
 | Advertising Cloud | 尚未计划提供支持。 |
-| Report Builder（Excel插件） | 尚未计划提供支持。 |
+| Report Builder（Excel 插件） | 尚未计划提供支持。 |
 | Activity Map | 尚未计划提供支持。 |
 | 分类规则生成器 | 尚未计划提供支持。 |
-| 摘要数据源 | 尚未计划提供支持。 |
+| 概要数据源 | 尚未计划提供支持。 |
 | 实时报告 | 尚未计划提供支持。 |
 
-## 将永远不受支持
+## 将永远不支持
 
 | 功能 | 注释 |
 | --- | --- |
-| 使用跨设备合作伙伴的人员指标 |  |
-| 报告和分析仪表板 |  |
-| 报告和分析书签 |  |
-| 报告和分析目标 |  |
-| 报告与分析日历事件 |  |
+| 使用跨设备协作的人员量度 |  |
+| Reports &amp; Analytics 功能板 |  |
+| Reports &amp; Analytics 书签 |  |
+| Reports &amp; Analytics 目标 |  |
+| Reports &amp; Analytics 日历事件 |  |
 | Ad Hoc Analysis |  |
-| Data Warehouse 报表 | [!UICONTROL Experience Platform Query Service] 将是CJA中这些用例的新界面。 |
+| Data Warehouse 报表 | [!UICONTROL Experience Platform Query Service] 将作为 CJA 中这些用例的新界面。 |
 | Mobile Services |  |
 | 数据馈送 |  |
