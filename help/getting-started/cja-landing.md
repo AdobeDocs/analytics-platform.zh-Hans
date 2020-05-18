@@ -1,7 +1,7 @@
 ---
 title: Customer Journey Analytics 产品文档
 description: Customer Journey Analytics 登录页面。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 61cf17635c73a400b0c3a52666d75a771fca1a47
 
 ---
@@ -20,20 +20,20 @@ Analytics Select、Prime 和 Ultimate 客户有资格购买此附加产品。有
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>新增项目或特色项目</b> </p> <p> 
      <ul> 
-      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-getting-started.html">Customer Journey Analytics 入门</a> </li> 
-      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-faq.html"> 常见问题解答</a> </li> 
-      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-glossary.html">Customer Journey Analytics 术语表</a> </li> 
+      <li><a href="https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-overview/cja-getting-started.html">Customer Journey Analytics 入门</a> </li> 
+      <li><a href="https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-overview/cja-faq.html"> 常见问题解答</a> </li> 
+      <li><a href="https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-overview/cja-glossary.html">Customer Journey Analytics 术语表</a> </li> 
       <li><a href="https://www.adobe.io/apis/experiencecloud/analytics/docs.html"> Adobe Analytics API 2.0</a> </li> 
      </ul> </p> </td> 
    <td colname="col2" valign="top"> <p class="head"><b>发行说明</b> </p> 
     <ul> 
-     <li>有关新增功能和修复，请参阅最新的 <a href="https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html" format="https" scope="external">Experience Cloud 发行说明</a>。 </li> 
+     <li>有关新增功能和修复，请参阅最新的 <a href="https://docs.adobe.com/content/help/zh-Hans/release-notes/experience-cloud/current.html" format="https" scope="external">Experience Cloud 发行说明</a>。 </li> 
     </ul> <p class="head"> <b>Adobe Experience Platform 资源</b> </p> 
     <ul> 
-     <li><a href="https://www.adobe.com/experience-platform.html" format="http" scope="external"> Adobe Experience Platform</a> </li> 
+     <li><a href="https://www.adobe.com/cn/experience-platform.html" format="http" scope="external"> Adobe Experience Platform</a> </li> 
      <li> <a href="https://www.adobe.io/apis/experienceplatform/home/tutorials.html" format="https" scope="external"> Adobe Experience Platform 教程</a> </li> 
      <li><a href="https://www.adobe.io/apis/experienceplatform/home/api-reference.html" format="https" scope="external"> API 参考</a> </li> 
-     <li><a href="https://www.adobe.com/experience-platform/documentation-and-developer-resources.html" format="https" scope="external">文档和开发人员资源</a> </li> 
+     <li><a href="https://www.adobe.com/cn/experience-platform/documentation-and-developer-resources.html" format="https" scope="external">文档和开发人员资源</a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
