@@ -1,26 +1,25 @@
 ---
-title: 客户旅程分析词汇表
-description: 客户旅程分析词汇表。
-translation-type: tm+mt
+title: Customer Journey Analytics 术语表
+description: Customer Journey Analytics 术语表。
+translation-type: ht
 source-git-commit: 36fcdaff24c3055f7ce45eecb7631baa3c087bdb
 
 ---
 
 
-# 客户旅程分析词汇表
+# Customer Journey Analytics 术语表
 
-某些客户旅程分析术语与Adobe Analytics中传统使用这些术语的方式不同：
+部分 Customer Journey Analytics 术语与 Adobe Analytics 中传统使用的术语有所不同：
 
-| Adobe Analytics术语 | 新的客户旅程分析术语 | 描述 |
+| Adobe Analytics 术语 | Customer Journey Analytics 新术语 | 描述 |
 |---|---|---|
 | 分类 | 查找数据集 | ... |
-| 客户属性 | 用户档案数据集 | 如果您在客户关系管理(CRM)数据库中捕获企业客户数据，则可以将数据上传到Adobe Experience Platform中的用户档案数据集。 在Customer Journey Analytics中创建与该数据集的连接并创建数据视图后，请在Workspace中利用该数据。 |
-| 登录公司 | Experience Cloud组织 | 请参阅[组织和帐户关联](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html#topic_C31CB834F109465A82ED57FF0563B3F1)。 |
-| 报表包 | 不适用 | 传统Adobe Analytics中的报表包已不复存在。 而是从您建立连接的 [平台数据集](/help/data-views/create-dataview.md) ，创建（虚拟）数据视图。 |
-| 区段 | 过滤器 | 细分现在是过滤器。 过滤器在客户旅程分析中的行为与细分相同。 只有术语已更改。 |
-| 虚拟报告套件 | 数据视图 | 在Adobe Analytics中，虚拟报告套件是父报告套件的分段视图。 CJA中虚拟报告套件和数据视图的主要区别在于，虚拟报告套件是“基本”或“父”报告套件的子集，因此，会继承其某些设置。 由于父／基础报表包不再存在，您可以使用自己的设置定义数据视图。 |
+| 客户属性 | 用户档案数据集 | 如果您在客户关系管理 (CRM) 数据库中捕获到企业客户数据，则可以将该数据上传到 Adobe Experience Platform 中的用户档案数据集。当您在 Customer Journey Analytics 中创建与该数据集的连接并创建数据视图后，可在 Workspace 中利用该数据。 |
+| 登录公司 | Experience Cloud 组织 | 请参阅[组织和帐户关联](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/manage-users-and-products/organizations.html#topic_C31CB834F109465A82ED57FF0563B3F1)。 |
+| 报表包 | 不适用 | 传统 Adobe Analytics 中的报表包不再存在。实际上，您需要从与之创建连接的 Platform 数据集创建（虚拟）[数据视图](/help/data-views/create-dataview.md)。 |
+| 区段 | 过滤器 | 现在，区段更改为“过滤器”。Customer Journey Analytics 中的过滤器，其行为与“区段”是相同的。只是术语发生了更改。 |
+| 虚拟报表包 | 数据视图 | 在 Adobe Analytics 中，虚拟报表包是父报表包的分段视图。虚拟报表包与 CJA 中的数据视图的主要区别在于，虚拟报表包是“基础”或“父”报表包的子集，因此它会继承父报表包的某些设置。由于父/基础报表包不再存在，您可以使用自已的设置来定义数据视图。 |
 
-## Adobe Experience Platform词汇表
+## Adobe Experience Platform 术语表
 
-Adobe Experience Platform在企业内实现数据和内容标准化，为实时消费者用户档案提供强大动力，支持数据科学并加快内容速度，从而在客户旅程中推动体验个性化。
-有关更 [多信息，请参](https://www.adobe.io/apis/experienceplatform/home/services/acp-glossary.html)阅Adobe Experience Platform Glossary。
+Adobe Experience Platform 实现了整个企业内的数据和内容的标准化，从而为实时消费者用户档案提供强大动力，支持数据科学，加速内容处理速度以推动客户历程中的体验个性化。有关更多信息，请参阅 [Adobe Experience Platform 术语表](https://www.adobe.io/apis/experienceplatform/home/services/acp-glossary.html)。
