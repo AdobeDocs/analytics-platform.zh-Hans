@@ -1,8 +1,11 @@
 ---
 title: 组合的数据集
 description: 了解 CJA 如何通过组合数据集创建连接。
-translation-type: ht
-source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
+translation-type: tm+mt
+source-git-commit: fa354af31237c4963ba0affa89652bfdeae45ea0
+workflow-type: tm+mt
+source-wordcount: '320'
+ht-degree: 100%
 
 ---
 
@@ -58,8 +61,8 @@ source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
 
 | string_color | metric_a |
 | --- | --- |
-| 蓝色 | 5 |
 | 未指定 | 6 |
+| 蓝色 | 3 |
 | 红色 | 2 |
 
 但是，如果连接中同时包含两个表，则归因会发生更改，因为两个数据集中都有 `user_847`。第二个数据集中的某行将 `metric_a` 归因为“黄色”，也就是之前的“未指定”：
@@ -67,5 +70,5 @@ source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
 | string_color | metric_a |
 | --- | --- |
 | 黄色 | 6 |
-| 红色 | 2 |
 | 蓝色 | 3 |
+| 红色 | 2 |
