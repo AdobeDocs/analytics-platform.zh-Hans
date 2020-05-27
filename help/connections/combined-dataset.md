@@ -1,9 +1,9 @@
 ---
 title: 组合的数据集
 description: 了解 CJA 如何通过组合数据集创建连接。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fa354af31237c4963ba0affa89652bfdeae45ea0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '320'
 ht-degree: 100%
 
