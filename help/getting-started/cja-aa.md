@@ -1,8 +1,11 @@
 ---
 title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
-translation-type: ht
-source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
+translation-type: tm+mt
+source-git-commit: 7d2abfb2cd91ee7574fce10847abb89f14b5388e
+workflow-type: tm+mt
+source-wordcount: '881'
+ht-degree: 85%
 
 ---
 
@@ -21,6 +24,7 @@ source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 | 日期范围 | 计划将会提供自定义日历支持。 |
 | 计算量度 | 请注意，传统 Analysis Workspace 中的任何现有计算量度都不会移植到 CJA。 |
 | 区段 | 现在称为“过滤器” - 请注意，传统 Analysis Workspace 中的任何现有区段都不会移植到 CJA。 |
+| 异常检测 | 截至2020年6月的全面支持 |
 | 归因 IQ | 完全支持 |
 | 项目策划 | 完全支持 |
 | 项目链接 | 完全支持 |
@@ -28,7 +32,7 @@ source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 | 虚拟报表包 | 现在称为[数据视图](/help/data-views/create-dataview.md)。 |
 | VRS 组件策划 | 现在是“数据视图”的一部分。 |
 | 报表时间处理 | CJA 完全依赖于报表时间处理。 |
-| 删除 GDPR | 请注意，GDPR 现在可与之协调处理 [!UICONTROL Experience Platform] - CJA 会继承 [!UICONTROL Experience Platform] 对基础数据集所做的任何数据更改。 |
+| 删除 GDPR | Note that GDPR is now handled in coordination with [!UICONTROL Experience Platform] - CJA inherits whatever data changes [!UICONTROL Experience Platform] makes to underlying datasets. |
 
 ## 受支持，但有注意事项
 
@@ -36,7 +40,7 @@ source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 | --- | --- |
 | 产品变量 | 当前可用于报表数据的产品变量符合体验报告架构（特别是使用 productListItems 的对象）。 |
 | 可视化图表 | 除地图可视化图表外，支持所有可视化图表。 |
-| AAM 受众 | 如果客户使用 [!UICONTROL Analytics Data Connector] 数据集，此数据将成为 ADC 数据的一部分。 |
+| AAM 受众 | If customers are using [!UICONTROL Analytics Data Connector] datasets, this data will be part of the ADC data. |
 | 项目共享 | 仅支持在 CJA 用户之间共享项目 - 不支持 CJA 与传统 Analysis Workspace 之间共享项目。 |
 | 自定义会话流程 | 支持除移动后台点击之外的所有自定义会话流程功能。 |
 | eVar 持久性设置 | eVar 不再是 CJA 的一部分。但是，持久性设置现在是数据视图的一部分，且可用于所有维度。请记住，持久基于报表时间处理，而不是数据收集处理。这意味着，所有持久性都将基于报表日期范围，而不是整个数据。 |
@@ -48,17 +52,16 @@ source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 | 功能 | 注释 |
 | --- | --- |
 | 开箱即用的 Analysis Workspace 维度（例如，浏览器类型、反向链接类型、营销渠道、访问次数等） | CJA 本身不提供这些维度。对于使用 Analytics Data Connector (ADC) 的客户，其中部分维度可用，但不是全部维度都可用。请参阅我们的[关于通过 ADC 支持哪些 Analytics 变量的文档](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)。 |
-| 面板 | 完全支持空白面板、归因面板和自由表单面板。不支持区段比较。 |
+| 面板 | 完全支持空白面板、归因面板、自由形式面板和快速洞察。 不支持Target(A4T)面板的区段比较和Analytics。 |
 | 促销 eVar | 除非它们严格符合相同的 XDM 架构，否则促销 eVar 将只能用于基于 ADC 的数据集，（与上述产品列表限制相似）。 |
-| 机器人过滤 | 对于基于 Analytics Data Connector (ADC) 的数据集，会应用机器人过滤。[!UICONTROL Experience Platform] 或 CJA 不会对其他数据集应用常规机器人过滤逻辑。 |
+| 机器人过滤 | 对于基于 Analytics Data Connector (ADC) 的数据集，会应用机器人过滤。General bot filtering logic for other datasets is not performed by the [!UICONTROL Experience Platform] or CJA. |
 | 处理规则 | 对于基于 ADC 的数据集，仍会应用处理规则。 |
-| 跨设备身份拼合 | 客户只能通过查询服务对数据进行“一次性”拼合，或者，目前必须在摄取 [!UICONTROL Experience Platform] 数据之前将此逻辑应用于数据。 |
+| 跨设备身份拼合 | Customers are limited to &quot;one-time&quot; stitches of the data via Query Service, or currently must apply this logic to data prior to [!UICONTROL Experience Platform] data ingestion. |
 
 ## 目前不支持，但计划将会提供支持
 
 | 功能 | 注释 |
 | --- | --- |
-| 异常检测 | 计划将会提供支持。 |
 | 贡献分析 | 计划将会提供支持。 |
 | 区段 IQ | 计划将会提供支持。 |
 | 区段发布（将区段从 Workspace 发送到 Experience Cloud） | 计划将会提供支持。 |
@@ -95,6 +98,6 @@ source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 | Reports &amp; Analytics 目标 |  |
 | Reports &amp; Analytics 日历事件 |  |
 | Ad Hoc Analysis |  |
-| Data Warehouse 报表 | [!UICONTROL Experience Platform Query Service] 将作为 CJA 中这些用例的新界面。 |
+| Data Warehouse 报表 | [!UICONTROL Experience Platform] 查询服务将是CJA中这些用例的新接口。 |
 | Mobile Services |  |
 | 数据馈送 |  |
