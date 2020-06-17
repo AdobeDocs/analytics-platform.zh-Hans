@@ -1,13 +1,18 @@
 ---
 title: 引用 - 基本函数
 description: '计算量度生成器允许您将统计和数学函数应用于生成高级计算量度。 '
-translation-type: ht
-source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
+translation-type: tm+mt
+source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+workflow-type: tm+mt
+source-wordcount: '1091'
+ht-degree: 97%
 
 ---
 
 
 # 引用 - 基本函数
+
+>[!NOTE] 您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
 
 计算量度生成器允许您将统计和数学函数应用于生成高级计算量度。
 
@@ -213,7 +218,7 @@ ROUND(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *number* | 您希望舍入的量度。 |
+| *数字* | 您希望舍入的量度。 |
 
 在没有位数参数的情况下四舍五入，与在位数参数为 0 的情况下四舍五入是相同的，都会四舍五入为最接近的整数。使用位数参数，可在小数点右侧返回多位数字。如果位数为负，则在小数点左侧返回 0。
 
@@ -250,7 +255,7 @@ SQRT(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *number* | 您希望求平方根的量度。 |
+| *数字* | 您希望求平方根的量度。 |
 
 ## 标准偏差 (Table)
 
