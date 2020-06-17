@@ -1,5 +1,5 @@
 ---
-git-repo: https://github.com/adobedocs/analytics-platform.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.zh-Hans
 cloud: experience-cloud
 product: adobe analytics
 sub-product: 客户历程
@@ -12,8 +12,11 @@ getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: 教程
 tutorials-url: https://helpx.adobe.com/cn/experience-cloud/tutorials.html
-translation-type: ht
-source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
+translation-type: tm+mt
+source-git-commit: d8450b8435400aa16ce4d87868f804b82d1df4d7
+workflow-type: tm+mt
+source-wordcount: '371'
+ht-degree: 91%
 
 ---
 
@@ -27,10 +30,6 @@ source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
    + [常见问题解答](getting-started/cja-faq.md)
    + [Customer Journey Analytics 功能支持](getting-started/cja-aa.md)
    + [CJA 术语表](getting-started/cja-glossary.md)
-+ 工作区项目 {#cja-reporting}
-   + [工作区简介](projects/workspace-basics.md)
-   + [执行基本分析](projects/perform-basic-analysis.md)
-   + [执行高级分析](projects/perform-adv-analysis.md)
 + 连接 {#cja-connections}
    + [创建连接](connections/create-connection.md)
    + [管理连接](connections/manage-connection.md)
@@ -38,7 +37,91 @@ source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
 + 数据视图 {#cja-dataviews}
    + [创建数据视图](data-views/create-dataview.md)
    + [配置数据视图和属性](data-views/configure-dataviews.md)
++ Workspace projects {#cja-workspace}
+   + [Analysis Workspace 概述](analysis-workspace/home.md)
+   + [执行基本分析](analysis-workspace/perform-basic-analysis.md)
+   + [执行高级分析](analysis-workspace/perform-adv-analysis.md)
+   + 构建 Workspace 项目 {#build-workspace-project}
+      + [创建项目 - 概述](analysis-workspace/build-workspace-project/freeform-overview.md)
+      + [模板](analysis-workspace/build-workspace-project/starter-projects.md)
+      + 列和行设置 {#column-row-settings}
+         + [列设置](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
+         + [行设置](analysis-workspace/build-workspace-project/column-row-settings/table-settings.md)
+         + [手动行和动态行](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
+      + [“撤消”和“重做”设置](analysis-workspace/build-workspace-project/undo-redo.md)
+      + [Analysis Workspace 中可用的热键](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
+      + [对表格进行分页、过滤和排序](analysis-workspace/build-workspace-project/pagination-filtering-sorting.md)
+      + [调色板](analysis-workspace/build-workspace-project/color-palettes.md)
+      + [视图密度](analysis-workspace/build-workspace-project/view-density.md)
+      + [工作区总计](analysis-workspace/build-workspace-project/workspace-totals.md)
+   + 可视化 {#visualizations}
+      + [可视化概述](analysis-workspace/visualizations/freeform-analysis-visualizations.md)
+      + [管理数据源](analysis-workspace/visualizations/t-sync-visualization.md)
+      + [自由格式表](analysis-workspace/visualizations/freeform-table.md)
+      + 同类群组表 {#cohort-table}
+         + [什么是同类群组分析？](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
+         + [配置同类群组分析报表](analysis-workspace/visualizations/cohort-table/t-cohort.md)
+         + [同类群组分析用例](analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
+      + 流失 {#fallout}
+         + [流失概述](analysis-workspace/visualizations/fallout/fallout-flow.md)
+         + [配置流失可视化](analysis-workspace/visualizations/fallout/configuring-fallout.md)
+         + [维度间流失](analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
+         + [将过滤器应用于流失分析](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
+      + 流量 {#flow}
+         + [流量概述](analysis-workspace/visualizations/c-flow/flow.md)
+         + [配置流量可视化](analysis-workspace/visualizations/c-flow/creating-flow-report.md)
+         + [流量设置](analysis-workspace/visualizations/c-flow/flow-settings.md)
+         + [维度间流量](analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
+      + [直方图](analysis-workspace/visualizations/histogram.md)
+      + [维恩图](analysis-workspace/visualizations/venn.md)
+      + [面积图和堆叠的面积图](analysis-workspace/visualizations/area.md)
+      + [条形图和堆叠的条形图](analysis-workspace/visualizations/bar.md)
+      + [项目符号图表](analysis-workspace/visualizations/bullet-graph.md)
+      + [圆环](analysis-workspace/visualizations/donut.md)
+      + [水平条形图和堆叠的水平条形图](analysis-workspace/visualizations/horizontal-bar.md)
+      + [折线图](analysis-workspace/visualizations/line.md)
+      + [散点图](analysis-workspace/visualizations/scatterplot.md)
+      + [概要数量和概要更改](analysis-workspace/visualizations/summary-number-change.md)
+      + [文本](analysis-workspace/visualizations/text.md)
+      + [树形图](analysis-workspace/visualizations/treemap.md)
+   + 面板 {#panels}
+      + [面板概述](analysis-workspace/c-panels/panels.md)
+      + [归因面板](analysis-workspace/c-panels/attribution.md)
+      + [空白面板](analysis-workspace/c-panels/blank-panel.md)
+      + [自由格式面板](analysis-workspace/c-panels/freeform-panel.md)
+      + [“快速分析”面板](analysis-workspace/c-panels/quickinsight.md)
+   + 组织或共享项目 {#curate-share}
+      + [特选工作区项目](analysis-workspace/curate-share/curate.md)
+      + [共享Workspace项目](analysis-workspace/curate-share/share-projects.md)
+      + [仅查看工作区项目](analysis-workspace/curate-share/view-only-projects.md)
+      + [下载 PDF 或 CSV 文件](analysis-workspace/curate-share/download-send.md)
+      + [共享和计划项目文件](analysis-workspace/curate-share/send-schedule-files.md)
+      + [发送文件 - 计划交付项目](analysis-workspace/curate-share/t-schedule-report.md)
+      + [计划项目管理器](analysis-workspace/curate-share/schedule-projects.md)
+   + 归因 IQ {#attribution}
+      + [归因概述](analysis-workspace/attribution/overview.md)
+      + [归因模型和回顾窗口](analysis-workspace/attribution/models.md)
+      + [算法属性](analysis-workspace/attribution/algorithmic.md)
+      + [常见问题解答](analysis-workspace/attribution/faq.md)
+   + 虚拟分析师 {#virtual-analyst}
+      + [虚拟分析师概述](analysis-workspace/virtual-analyst/overview.md)
+      + 异常检测 {#anomaly-detection}
+         + [异常检测概述](analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
+         + [在 Analysis Workspace 中查看异常](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
+         + [异常检测中使用的统计技术](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
+   + 工作区常见问题解答 {#workspace-faq}
+      + [常见问题解答](analysis-workspace/workspace-faq/faq.md)
+      + [优化 Analysis Workspace 性能](analysis-workspace/workspace-faq/optimizing-performance.md)
+      + [Analysis Workspace 限制](analysis-workspace/workspace-faq/aw-limitations.md)
+      + [管理要求](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
+      + [Analysis Workspace中的辅助功能](analysis-workspace/workspace-faq/aw-accessibility.md)
 + 组件 {#cja-components}
+   + [组件概述](components/overview.md)
+   + 维度 {#dimensions}
+      + [预览维度](components/dimensions/view-dimensions.md)
+      + [划分维度](components/dimensions/t-breakdown-fa.md)
+      + [时间划分维度](components/dimensions/time-parting-dimensions.md)
+   + [量度](components/apply-create-metrics.md)
    + 过滤器 {#cja-filters}
       + [过滤器概述](components/filters/filters-overview.md)
       + [创建过滤器](components/filters/create-filters.md)
@@ -53,10 +136,9 @@ source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
       + [日期范围概述](components/date-ranges/overview.md)
       + [创建日期范围](components/date-ranges/create.md)
       + [管理日期范围](components/date-ranges/manage.md)
-   + 项目 {cja-projects}
-      + [项目概述](components/projects/overview.md)
-      + [创建项目](components/projects/create.md)
-      + [管理项目](components/projects/manage.md)
+      + [日历概述](components/date-ranges/calendar.md)
+      + [创建自定义日期范围](components/date-ranges/custom-date-ranges.md)
+      + [日期比较](components/date-ranges/time-comparison.md)
 + 用例 {#cja-usecases}
    + [Customer Journey Analytics 使用案例](use-cases/cja-usecases.md)
 + 隐私权 {#cja-privacy}
