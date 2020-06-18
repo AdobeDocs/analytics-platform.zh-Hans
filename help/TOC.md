@@ -13,10 +13,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: 教程
 tutorials-url: https://helpx.adobe.com/cn/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: d8450b8435400aa16ce4d87868f804b82d1df4d7
+source-git-commit: 17e6cc8f79c542465971162666d846e2b1e0da58
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 91%
+source-wordcount: '375'
+ht-degree: 90%
 
 ---
 
@@ -141,6 +141,7 @@ ht-degree: 91%
       + [日期比较](components/date-ranges/time-comparison.md)
 + 用例 {#cja-usecases}
    + [Customer Journey Analytics 使用案例](use-cases/cja-usecases.md)
+   + [使用对象数组](use-cases/object-arrays.md)
 + 隐私权 {#cja-privacy}
    + [隐私权概述](privacy/privacy-overview.md)
 + [CJA 文档更新](doc-changes.md)
