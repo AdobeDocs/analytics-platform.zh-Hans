@@ -1,16 +1,16 @@
 ---
-title: 将CJA与对象数组结合使用
+title: 使用对象数组
 description: 了解CJA如何报告数据层次结构。
 translation-type: tm+mt
-source-git-commit: b7cd74f3fe2f0222e78452f58a7c387f6e0c86d2
+source-git-commit: 52fecf03cc503fa59101f6280c671e153e2129e9
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
 
 
-# 将CJA与对象数组结合使用
+# 使用对象数组
 
 某些平台模式可以有对象数组。 最常见的示例之一是包含多个产品的购物车。 每个产品都有一个名称、SKU、类别、价格、数量以及要跟踪的任何其他维。 所有这些方面都有不同的要求，但必须都适合同一次点击。
 
@@ -206,7 +206,7 @@ CJA查看点击的这些部分以生成报告：
       "SKU": "1234", 
       "category": "Washing Machines", 
       "name": "LG Washing Machine 2000", 
-      "orders": 1, 
++      "orders": 1, 
       "revenue": 1600, 
       "units": 1,
       "order_id":"abc123", 
@@ -239,3 +239,30 @@ CJA查看点击的这些部分以生成报告：
 +  "timestamp": 1534219229
 +}
 ```
+
+请注意与其没有关联名称的订单。 这些是“未指定”维值所属的顺序。
+
+### 组合指标
+
+如果CJA在不同的对象级别上，则它本身不会合并名称相似的度量。
+
+| `product : category` | `product : revenue` | `product : warranty : revenue` |
+| --- | --- | --- |
+| `Washing Machines` | `1600` | `250` |
+| `Dryers` | `500` | `0` |
+| `Total` | `2100` | `250` |
+
+但是，您可以创建将所需指标组合在一起的计算指标：
+
+计算指标“总收入”: `[product : revenue] + [product : warranty : revenue]`
+
+应用此计算度量可显示所需的结果：
+
+| `product : warranty : name` | `Total revenue (calculated metric)` |
+| --- | --- |
+| `Washing Machines` | `1850` |
+| `Dryers` | `500` |
+| `Total` | `2350` |
+
+## 持久性示例
+
