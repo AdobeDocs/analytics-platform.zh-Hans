@@ -1,9 +1,9 @@
 ---
 title: Customer Journey Analytics 入门
 description: Customer Journey Analytics 入门。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16bca45f2576d3feef8129d558fad6f236852cb9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '532'
 ht-degree: 100%
 
