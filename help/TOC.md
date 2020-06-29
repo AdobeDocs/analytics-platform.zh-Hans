@@ -16,7 +16,7 @@ translation-type: tm+mt
 source-git-commit: 8f59697b2bb282a1057267131343229e12dd5111
 workflow-type: tm+mt
 source-wordcount: '379'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 89%
 + 数据视图 {#cja-dataviews}
    + [创建数据视图](data-views/create-dataview.md)
    + [配置数据视图和属性](data-views/configure-dataviews.md)
-+ Workspace projects {#cja-workspace}
++ 工作区项目 {#cja-workspace}
    + [Analysis Workspace 概述](analysis-workspace/home.md)
    + [执行基本分析](analysis-workspace/perform-basic-analysis.md)
    + [执行高级分析](analysis-workspace/perform-adv-analysis.md)
@@ -66,7 +66,7 @@ ht-degree: 89%
          + [流失概述](analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [配置流失可视化](analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [维度间流失](analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
-         + [将过滤器应用于流失分析](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
+         + [在流失分析中应用过滤器](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + 流量 {#flow}
          + [流量概述](analysis-workspace/visualizations/c-flow/flow.md)
          + [配置流量可视化](analysis-workspace/visualizations/c-flow/creating-flow-report.md)
@@ -89,10 +89,10 @@ ht-degree: 89%
       + [归因面板](analysis-workspace/c-panels/attribution.md)
       + [空白面板](analysis-workspace/c-panels/blank-panel.md)
       + [自由格式面板](analysis-workspace/c-panels/freeform-panel.md)
-      + [“快速分析”面板](analysis-workspace/c-panels/quickinsight.md)
+      + [快速分析面板](analysis-workspace/c-panels/quickinsight.md)
    + 组织或共享项目 {#curate-share}
-      + [特选工作区项目](analysis-workspace/curate-share/curate.md)
-      + [共享Workspace项目](analysis-workspace/curate-share/share-projects.md)
+      + [策划工作区项目](analysis-workspace/curate-share/curate.md)
+      + [共享工作区项目](analysis-workspace/curate-share/share-projects.md)
       + [仅查看工作区项目](analysis-workspace/curate-share/view-only-projects.md)
       + [下载 PDF 或 CSV 文件](analysis-workspace/curate-share/download-send.md)
       + [共享和计划项目文件](analysis-workspace/curate-share/send-schedule-files.md)
@@ -100,7 +100,7 @@ ht-degree: 89%
       + [计划项目管理器](analysis-workspace/curate-share/schedule-projects.md)
    + 归因 IQ {#attribution}
       + [归因概述](analysis-workspace/attribution/overview.md)
-      + [归因模型和回顾窗口](analysis-workspace/attribution/models.md)
+      + [归因模型和回顾时间范围](analysis-workspace/attribution/models.md)
       + [算法属性](analysis-workspace/attribution/algorithmic.md)
       + [常见问题解答](analysis-workspace/attribution/faq.md)
    + 虚拟分析师 {#virtual-analyst}
@@ -114,7 +114,7 @@ ht-degree: 89%
       + [优化 Analysis Workspace 性能](analysis-workspace/workspace-faq/optimizing-performance.md)
       + [Analysis Workspace 限制](analysis-workspace/workspace-faq/aw-limitations.md)
       + [管理要求](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
-      + [Analysis Workspace中的辅助功能](analysis-workspace/workspace-faq/aw-accessibility.md)
+      + [Analysis Workspace 中的辅助功能](analysis-workspace/workspace-faq/aw-accessibility.md)
       + [Analysis Workspace长尾](analysis-workspace/workspace-faq/long-tail.md)
 + 组件 {#cja-components}
    + [组件概述](components/overview.md)
