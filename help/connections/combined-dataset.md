@@ -1,9 +1,9 @@
 ---
 title: 组合的数据集
 description: 了解 CJA 如何通过组合数据集创建连接。
-translation-type: ht
-source-git-commit: fa354af31237c4963ba0affa89652bfdeae45ea0
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 100%
 
@@ -22,7 +22,9 @@ ht-degree: 100%
 
 请仔细研究下面的示例。您有两个数据集，每个数据集具有包含不同数据的不同字段。
 
->[!NOTE] Adobe Experience Platform 通常以 Unix 毫秒为单位存储时间戳。为了便于阅读和理解，本示例中使用了日期和时间。
+>[!NOTE]
+>
+> Adobe Experience Platform 通常以 Unix 毫秒为单位存储时间戳。为了便于阅读和理解，本示例中使用了日期和时间。
 
 | `example_id` | `timestamp` | `string_color` | `string_animal` | `metric_a` |
 | --- | --- | --- | --- | --- |
