@@ -1,19 +1,21 @@
 ---
 description: 通过“特选”，您可以在共享项目之前限制组件。
 keywords: Analysis Workspace curation
-title: 特选工作区项目
+title: 策划工作区项目
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '526'
-ht-degree: 35%
+ht-degree: 36%
 
 ---
 
 
-# 特选工作区项目
+# 策划工作区项目
 
->[!NOTE] 您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
 
 通过特选，您可以在共享项目之前限制组件（维度、量度、区段、日期范围）。 当收件人打开项目时，他们将看到您为其特选的有限组件集。 在共享项目之前，特选是一个可选的但建议的步骤。
 
