@@ -2,7 +2,7 @@
 title: 在 Customer Journey Analytics 中执行基础分析
 description: 介绍如何使用基础的可视化图表来分析 Customer Journey Analytics 中的数据
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 72%
@@ -12,11 +12,13 @@ ht-degree: 72%
 
 # 执行基本分析
 
->[!NOTE] 您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
 
 创建连接和数据视图后，利用 Analysis Workspace 的强大功能和灵活性分析导入的数据。您可以随意尝试和拖动维度和量度，更改维度和量度归因设置、友好名称、时区、会话设置等。
 
-以下是 Workspace 中基础的可视化图表示例。例如，您可以：
+以下是工作区中基础的可视化图表示例。例如，您可以：
 
 * 创建排名报表，其中数据源显示排名最靠前的事件、会话和人员。
 
