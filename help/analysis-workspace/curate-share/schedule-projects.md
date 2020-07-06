@@ -5,7 +5,7 @@ title: 计划项目管理器
 topic: Reports and analytics
 uuid: 28e3e0de-3cca-40b1-a9de-93a10bd31646
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 87%
@@ -15,7 +15,9 @@ ht-degree: 87%
 
 # 计划项目管理器
 
->[!NOTE] 您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
 
 管理计划的 Analysis Workspace 项目。
 
