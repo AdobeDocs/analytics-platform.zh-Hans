@@ -2,7 +2,7 @@
 title: 组件概述
 description: 了解 CJA 提供了哪些组件，以及如何在报表中使用它们。
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 86%
@@ -38,7 +38,9 @@ See [Create a project](/help/analysis-workspace/home.md) for information about u
 
 您可以通过多种方式管理组件（逐个选择或通过选择多个组件）。右键单击组件，或单击组件列表顶部的&#x200B;**[!UICONTROL 操作]**。
 
->[!NOTE] 这些操作不适用于“时间”组件。
+>[!NOTE]
+>
+> 这些操作不适用于“时间”组件。
 
 | 组件操作 | 描述 |
 |--- |--- |
