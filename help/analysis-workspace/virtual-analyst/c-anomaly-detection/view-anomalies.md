@@ -3,7 +3,7 @@ description: 您可以在表格或折线图中查看异常。
 title: 在 Analysis Workspace 中查看异常
 uuid: 270a7ea9-6485-4c83-8220-5a2200bd7200
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 91%
@@ -13,7 +13,9 @@ ht-degree: 91%
 
 # 在 Analysis Workspace 中查看异常
 
->[!NOTE] 您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
 
 您可以在表格或折线图中查看异常。
 
@@ -34,7 +36,6 @@ ht-degree: 91%
 * 异常发生的日期
 * 异常的原始值
 * 与预期值相差（高出或低于）的百分比，该值由绿色实线表示。
-
 <!--* The Analyze link to start [Contribution Analysis](/help/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.md).-->
 
 ![](assets/anomaly_linechart.png)
