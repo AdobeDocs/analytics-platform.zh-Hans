@@ -2,7 +2,7 @@
 title: 引用 - 高级函数
 description: 可通过以下方法访问这些函数：选中函数下拉列表中的显示高级。
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '2949'
 ht-degree: 99%
@@ -12,7 +12,9 @@ ht-degree: 99%
 
 # 引用 - 高级函数
 
->[!NOTE] 您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
 
 可通过以下方法访问这些函数：选中&#x200B;**[!UICONTROL 函数]**&#x200B;下拉列表中的&#x200B;**[!UICONTROL 显示高级]**。
 
@@ -32,7 +34,9 @@ ht-degree: 99%
 
 返回其参数的值。使用 NOT 确保值不等于某一特定值。
 
->[!NOTE] 0（零）表示 False，而任何其他值均表示 True。
+>[!NOTE]
+>
+> 0（零）表示 False，而任何其他值均表示 True。
 
 ```
 AND(logical_test1,[logical_test2],...)
@@ -208,7 +212,9 @@ CBRT(metric)
 
 如果 N &lt;= 0，则使用所有之前的行。由于它是按维度排序的，因此它仅对于具有自然顺序的维度（例如日期或路径长度）有用。
 
->[!NOTE] 使用收入/访客之类的比率量度时，它可能不会按预期工作：它会计算比率的平均值，而不是总计最后 N 行的收入并总计最后 N 行的访客数，然后将二者相除。它使用的是
+>[!NOTE]
+>
+> 使用收入/访客之类的比率量度时，它可能不会按预期工作：它会计算比率的平均值，而不是总计最后 N 行的收入并总计最后 N 行的访客数，然后将二者相除。它使用的是
 
 ```
 cumul(revenue)/cumul(visitor)
@@ -451,7 +457,9 @@ NOT(logical)
 
 如果有任何参数为 TRUE，则返回 TRUE；如果所有参数均为 FALSE，则返回 FALSE。
 
->[!NOTE] 0（零）表示 False，而任何其他值均表示 True。
+>[!NOTE]
+>
+> 0（零）表示 False，而任何其他值均表示 True。
 
 ```
 OR(logical_test1,[logical_test2],...)
@@ -692,7 +700,9 @@ Z 分数的方程式为：
 
 其中，[!DNL x] 为原始分数，[!DNL μ] 为群体平均值，[!DNL σ] 为群体标准偏差。
 
->[!NOTE][!DNL μ]  (mu) 和 [!DNL σ] (sigma) 会使用该量度自动计算。
+>[!NOTE]
+>
+>[!DNL μ]  (mu) 和 [!DNL σ] (sigma) 会使用该量度自动计算。
 
 Z 分数（量度）
 
@@ -717,5 +727,7 @@ Z 分数（量度）
 
 返回当前行在列中偶然可见的几率。
 
->[!NOTE] 假定值为正态分布。
+>[!NOTE]
+>
+> 假定值为正态分布。
 
