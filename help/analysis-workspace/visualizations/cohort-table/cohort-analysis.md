@@ -2,17 +2,19 @@
 title: 什么是同类群组分析？
 description: 了解Analysis Workspace中的同期群分析
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '507'
-ht-degree: 44%
+ht-degree: 45%
 
 ---
 
 
 # What is [!UICONTROL Cohort Analysis]?
 
->[!NOTE] 您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
 
 *`cohort`* 是指一组在特定期限内共享相同特性的人员。[!UICONTROL 例如，在您想了解如何让一个同类群组喜欢某个品牌时，同类群组分析就能派上用场。]您可以轻松识别趋势中的变化，然后相应地采取回应(Explanations of [!UICONTROL Cohort Analysis] are available on the web, such as at [Cohort Analysis 101](https://en.wikipedia.org/wiki/Cohort_analysis).)
 
@@ -32,7 +34,9 @@ Examples of what you can do with [!UICONTROL Cohort Analysis]:
 
 >[!IMPORTANT]
 >
->[!UICONTROL 同期群分析] 不支持不可过滤的指标（包括计算指标）、非整数指标（如收入）或发生次数。 只有可在区段中使用的指标才能用于
+>[!UICONTROL 同类群组分析]
+>
+>不支持不可过滤的指标（包括计算指标）、非整数指标（如收入）或“发生次数”。 只有可在区段中使用的指标才能用于
 >[!UICONTROL 同期群分析]，而且每次只能增加1。
 
 ## 同类群组分析功能
