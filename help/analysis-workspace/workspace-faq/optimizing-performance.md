@@ -3,7 +3,7 @@ description: 'null'
 title: 优化 Analysis Workspace 性能
 uuid: de51d03d-d555-4f0e-b19c-4a8f140770fc
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '1307'
 ht-degree: 98%
@@ -13,7 +13,9 @@ ht-degree: 98%
 
 # 优化 Analysis Workspace 性能
 
->[!NOTE] 您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
 
 某些因素可能影响 Analysis Workspace 内的项目性能。开始构建项目之前，请务必了解这些因素的具体情况，以便您能够以最佳方式计划和构建项目。下面是一个将会影响性能的因素列表以及优化项目的最佳实践。Analysis Workspace 性能是 Adobe 最优先考虑的事项之一，也是我们每天都在持续改进的对象。
 
