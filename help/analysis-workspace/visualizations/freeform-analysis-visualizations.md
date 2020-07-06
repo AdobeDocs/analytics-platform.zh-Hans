@@ -3,7 +3,7 @@ description: 了解 Analysis Workspace 中的可视化图表和可视化图表�
 keywords: Analysis Workspace
 title: 可视化图表概述
 translation-type: tm+mt
-source-git-commit: c6d98c03362617d34213e5d0d4ca35a24350b26c
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '1091'
 ht-degree: 97%
@@ -13,9 +13,11 @@ ht-degree: 97%
 
 # 可视化图表概述
 
->[!NOTE] 您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
 
-Workspace 提供了许多可视化图表，使您能够生成数据的可视化表示形式，如条形图、圆环图、直方图、折线图、地图、散点图等。每个可视化图表都有其自身的设置，您可以管理这些设置。单击可视化图表的名称可了解更多详细信息。
+工作区提供了许多可视化图表，使您能够生成数据的可视化表示形式，如条形图、圆环图、直方图、折线图、地图、散点图等。每个可视化图表都有其自身的设置，您可以管理这些设置。单击可视化图表的名称可了解更多详细信息。
 
 YouTube 视频：[Analysis Workspace 中的可视化图表类型](https://www.youtube.com/watch?v=b1zLEywRa6w&amp;index=39&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (2:57)
 
