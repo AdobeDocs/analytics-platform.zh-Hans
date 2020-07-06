@@ -1,8 +1,8 @@
 ---
 description: Quick Insights是面向新Workspace用户的工具，可指导他们构建数据表和可视化
-title: “快速分析”面板
+title: 快速分析面板
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '1101'
 ht-degree: 6%
@@ -10,9 +10,11 @@ ht-degree: 6%
 ---
 
 
-# “快速分析”面板
+# 快速分析面板
 
->[!NOTE] 您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
 
 >[!IMPORTANT]
 >
@@ -68,6 +70,7 @@ ht-degree: 6%
 1. 添加至少一个维和一个度量后，将为您创建以下内容：
 
    * 一个自由形式表，其顶部为垂直尺寸（此处为美国州）和水平度量（此处为访问量）。 请查看此表：
+
    ![](assets/qibuilder3.png)
 
    * 随附的可视化，本例为条 [形图](/help/analysis-workspace/visualizations/bar.md)。 生成的可视化基于您添加到表中的数据类型。 任何基于时间的数据( [!UICONTROL 如每] 天／月的访问量)均默认为 [!UICONTROL 折线图] 。 任何非基于时间的数据(如每 [!UICONTROL 台设][!UICONTROL 备的访]问 [!UICONTROL 次数] )均默认为条形图。 您可以通过单击可视化类型旁边的下拉箭头来更改可视化类型。
