@@ -2,7 +2,7 @@
 title: 算法属性
 description: 算法归因模型的详细信息。
 translation-type: tm+mt
-source-git-commit: 05bc0b378c962f4513ab292d518e32f5f70f7dfd
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 7%
@@ -12,9 +12,13 @@ ht-degree: 7%
 
 # 算法属性
 
->[!NOTE] 您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
 
->[!NOTE] **[!UICONTROL 算法归因]** 目前处于有限测试中。 有关 [更多信息](https://docs.adobe.com/content/help/zh-Hans/analytics/landing/an-releases.html) ，请参阅AdobeAnalytics功能版本。
+>[!NOTE]
+>
+>**[!UICONTROL 算法归因]** 目前处于有限测试中。 有关 [更多信息](https://docs.adobe.com/content/help/zh-Hans/analytics/landing/an-releases.html) ，请参阅AdobeAnalytics功能版本。
 
 Analysis Workspace中 [的算法归因模型](models.md) (Algorithmic attribution model)与其他模型不同之处在于它使用统计技术在报表或自由表格的维度值之间分配信用。 与Analysis Workspace中的所有其他归因模型一样，它可用于任何维度或指标，并支持无限细分和细分，并将100%的转换分发到表中的维度（也称为“分数”归因）。
 
@@ -25,4 +29,6 @@ Analysis Workspace中 [的算法归因模型](models.md) (Algorithmic attributio
 * 沙普利，劳埃德·S。 (1953)。 N人游戏的价值。 *对博弈论的贡献，2(28)*,307-317。
 * 哈萨尼，约翰C. (1963)。 n人合作博弈的简化协商模型。 *《国际经济评论》* 4(2),194-220年。
 
->[!NOTE] 仅当给定回顾窗口中存在多个接触点时，算法归因的结果才与其他模型不同。 无论归因模型如何，单个接触点的转化率均可获得100%的回报。
+>[!NOTE]
+>
+>仅当给定回顾窗口中存在多个接触点时，算法归因的结果才与其他模型不同。 无论归因模型如何，单个接触点的转化率均可获得100%的回报。
