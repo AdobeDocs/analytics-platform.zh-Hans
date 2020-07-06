@@ -5,7 +5,7 @@ title: 创建项目 - 概述
 topic: Reports and analytics
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 96%
@@ -15,7 +15,9 @@ ht-degree: 96%
 
 # 创建项目 - 概述
 
->[!NOTE] 您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
 
 **[!UICONTROL Analytics]** > **[!UICONTROL 工作区]**
 
@@ -71,7 +73,9 @@ ht-degree: 96%
 
 子菜单包含以下选项。
 
->[!NOTE] 标有星号 (*) 的选项仅在&#x200B;**已保存**&#x200B;项目中显示。
+>[!NOTE]
+>
+> 标有星号 (*) 的选项仅在&#x200B;**已保存**&#x200B;项目中显示。
 
 | 项目 | 编辑 | 插入 | 组件 | 共享 | 帮助 |
 |---|---|---|---|---|---|
