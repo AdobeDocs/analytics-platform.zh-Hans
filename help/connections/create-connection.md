@@ -1,9 +1,9 @@
 ---
 title: 创建连接
 description: 描述如何在 Customer Journey Analytics 中创建与 Platform 数据集的连接。
-translation-type: ht
-source-git-commit: 204eb143d513b9b73fad020efabe6891a1253608
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 100%
 
@@ -12,11 +12,13 @@ ht-degree: 100%
 
 # 创建连接
 
-通过连接，您可以将源自 [!DNL Adobe Experience Platform] 的数据集集成到 [!UICONTROL Workspace] 中。为了报告 [!DNL Experience Platform] 数据集，您必须首先在 [!DNL Experience Platform] 和 [!UICONTROL Workspace] 中的数据集之间建立连接。
+通过连接，您可以将源自 [!DNL Adobe Experience Platform] 的数据集集成到[!UICONTROL 工作区]中。为了报告 [!DNL Experience Platform] 数据集，您必须首先在 [!DNL Experience Platform] 和[!UICONTROL 工作区]中的数据集之间建立连接。
 
 单击[此处](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html)，查看视频概述。
 
->[!IMPORTANT] 您可以将多个 [!DNL Experience Platform] 数据集合并到单个连接中。
+>[!IMPORTANT]
+>
+> 您可以将多个 [!DNL Experience Platform] 数据集合并到单个连接中。
 
 1. 访问 [https://analytics.adobe.com](https://analytics.adobe.com)。
 
@@ -55,7 +57,7 @@ ht-degree: 100%
    | [!UICONTROL 名称连接] | 为连接指定一个描述性名称。如果没有名称，将无法保存连接。 |
    | [!UICONTROL 描述] | 添加更多详细信息以将此连接与其他连接区分开来。 |
    | [!UICONTROL 数据集] | 此连接中包含的数据集。 |
-   | [!UICONTROL 从今天开始自动导入此连接中的所有新数据集。] | 如果要创建持续连接，请选择此选项，以便要添加到此连接中数据集的任何新数据批次会自动流入 [!UICONTROL Workspace] 中。 |
+   | [!UICONTROL 从今天开始自动导入此连接中的所有新数据集。] | 如果要创建持续连接，请选择此选项，以便要添加到此连接中数据集的任何新数据批次会自动流入 [!UICONTROL 工作区] 中。 |
    | [!UICONTROL 导入所有现有数据] | 当选择此选项并保存连接时，将会从 [!DNL Experience Platform] 中导入此连接中所有数据集的所有现有（历史）数据。未来，还将自动导入添加到这个已保存连接的任何新数据集的所有现有历史数据。<br>**请注意，保存此连接后，无法更改此设置。** |
 
    **请记住以下事项：**
