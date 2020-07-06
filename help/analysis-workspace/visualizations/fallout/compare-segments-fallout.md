@@ -4,21 +4,25 @@ keywords: fallout and segmentation;segments in fallout analysis;compare segments
 title: 在流失分析中应用区段
 uuid: e87a33df-160e-4943-8d02-4d6609ae3bb1
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
 
-# 将过滤器应用于流失分析
+# 在流失分析中应用过滤器
 
->[!NOTE] 您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
 
 您可以从接触点创建过滤器，将区段添加为接触点，并比较Analysis Workspace中各过滤器的关键工作流。
 
->[!IMPORTANT] 在流失中用作检查点的过滤器必须使用级别低于流失可视化整体上下文的容器。 使用访客情境流失，用作检查点的过滤器必须访问或基于点击的过滤器。 使用访问上下文流失，用作检查点的过滤器必须基于点击的区段。 如果您使用的组合无效，则流失率将为 100%。我们为流失可视化添加了警告，当您将不兼容的过滤器添加为接触点时，将显示该警告。 某些无效的筛选器容器组合将导致无效的流失图，如：
+>[!IMPORTANT]
+>
+>在流失中用作检查点的过滤器必须使用级别低于流失可视化整体上下文的容器。 使用访客情境流失，用作检查点的过滤器必须访问或基于点击的过滤器。 使用访问上下文流失，用作检查点的过滤器必须基于点击的区段。 如果您使用的组合无效，则流失率将为 100%。我们为流失可视化添加了警告，当您将不兼容的过滤器添加为接触点时，将显示该警告。 某些无效的筛选器容器组合将导致无效的流失图，如：
 
 * 将基于访客的过滤器用作访客上下文流失可视化中的接触点
 * 使用基于访客的过滤器作为访问上下文流失可视化中的触点
