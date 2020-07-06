@@ -1,18 +1,20 @@
 ---
-title: 归因模型和回顾窗口
+title: 归因模型和回顾时间范围
 description: 不同类型的归因如何划分维度值之间的归因。
 translation-type: tm+mt
-source-git-commit: 05bc0b378c962f4513ab292d518e32f5f70f7dfd
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '1542'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
 
-# 归因模型和回顾窗口
+# 归因模型和回顾时间范围
 
->[!NOTE] 您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
 
 AdobeAnalytics归因的概念需要两个组件：
 
@@ -45,7 +47,9 @@ AdobeAnalytics归因的概念需要两个组件：
 
 * **自定义回顾窗口：** 允许您将归因窗口扩展到超出报告日期范围（最多90天）。 在报告期内的每次转换时，都会评估自定义回顾窗口。 例如，对于2月20日发生的转换，10天的回顾窗口将评估归因模型中2月10日到20日的所有维接触点。
 
->[!NOTE] **[!UICONTROL 自定义回顾窗口]** 当前处于受限测试中。 有关 [更多信息](https://docs.adobe.com/content/help/zh-Hans/analytics/landing/an-releases.html) ，请参阅AdobeAnalytics功能版本。
+>[!NOTE]
+>
+>**[!UICONTROL 自定义回顾窗口]** 当前处于受限测试中。 有关 [更多信息](https://docs.adobe.com/content/help/zh-Hans/analytics/landing/an-releases.html) ，请参阅AdobeAnalytics功能版本。
 
 ## 示例
 
@@ -76,4 +80,6 @@ AdobeAnalytics归因的概念需要两个组件：
       * 社交：18.6%，贡献价值是 9.32 美元
       * 付费搜索：13.8%，贡献价值是 6.92 美元
 
->[!TIP]此外，如果点数属于多个渠道，则其他转化事件（例如订单或自定义事件）也会获得点数。例如，如果使用线性归因模型分析得出两个渠道参与了自定义事件，则这两个渠道将分别获得 50% 的点数。这些事件分数在所有访问中相加，然后在报表中四舍五入到最接近的整数。
+>[!NOTE]
+>
+>此外，如果点数属于多个渠道，则其他转化事件（例如订单或自定义事件）也会获得点数。例如，如果使用线性归因模型分析得出两个渠道参与了自定义事件，则这两个渠道将分别获得 50% 的点数。这些事件分数在所有访问中相加，然后在报表中四舍五入到最接近的整数。
