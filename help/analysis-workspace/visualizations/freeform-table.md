@@ -2,7 +2,7 @@
 title: 自由格式表
 description: 了解自由格式表和自由格式表生成器
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 95%
@@ -12,7 +12,9 @@ ht-degree: 95%
 
 # 自由格式表
 
->[!NOTE] 您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
 
 在 Analysis Workspace 中，自由格式表不仅可以作为数据表，而且还是一个交互式的可视化图表。可以将[组件](/help/components/overview.md)组合拖放到行和列中，以创建自定义表格供您分析。拖动每个组件后，表格会立即更新，这样您便可以进行快速分析。
 
