@@ -2,7 +2,7 @@
 description: 了解如何调整视图密度。
 title: 视图密度
 translation-type: tm+mt
-source-git-commit: 05bc0b378c962f4513ab292d518e32f5f70f7dfd
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 82%
@@ -12,13 +12,15 @@ ht-degree: 82%
 
 # 视图密度
 
->[!NOTE] 您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
 
 通过调整视图密度，您可以减小左边栏、自由格式表和同类群组表的垂直边距，从而在屏幕上查看更多数据。使用单选按钮切换视图密度时，有 3 个选项可用：
 
 - **[!UICONTROL 紧凑]**：这是最精简的视图版本。
 - **[!UICONTROL 舒适]**：与紧凑版本相比，这个版本的视图多留出了一些边距。
-- **[!UICONTROL 展开]**（默认）：这是在工作区中中最常用的视图。
+- **[!UICONTROL 展开]**（默认）：这是在工作区中最常用的视图。
 
 ![](assets/view-density.png)
 
