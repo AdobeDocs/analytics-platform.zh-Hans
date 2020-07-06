@@ -2,17 +2,19 @@
 title: 归因面板
 description: 如何在Analysis Workspace中使用和解释归因面板。
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '431'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
 
 # 归因面板
 
->[!NOTE] 您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
 
 归因面板是一种用于构建各种归因模型的比较分析的简便方法。它是Attribution IQ中的一 [项功能](../attribution/overview.md) ，可为您提供专用工作区来使用和比较归因模型。
 
