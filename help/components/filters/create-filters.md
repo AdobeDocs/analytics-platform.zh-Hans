@@ -2,7 +2,7 @@
 title: 创建过滤器
 description: 了解过滤器创建用户界面。
 translation-type: tm+mt
-source-git-commit: 0c5bd5ce0b0ba4ba758a1ef1adf5a4a519e9cf8c
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 38%
@@ -26,7 +26,9 @@ ht-degree: 38%
 
 ![](assets/segment-dropzone.png)
 
->[!NOTE] 以这种方式创建的过滤器是项目内部的。
+>[!NOTE]
+>
+>以这种方式创建的过滤器是项目内部的。
 
 您可以按照以下步骤选择将这些过滤器公开（全局）:
 
