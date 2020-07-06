@@ -2,7 +2,7 @@
 title: 归因常见问题解答
 description: 获取有关归因的常见问题解答。
 translation-type: tm+mt
-source-git-commit: 05bc0b378c962f4513ab292d518e32f5f70f7dfd
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 83%
@@ -12,7 +12,9 @@ ht-degree: 83%
 
 # 归因常见问题解答
 
->[!NOTE] 您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
 
 **使用归因时，“无”行项目是什么？**
 
@@ -85,4 +87,6 @@ Analytics 中的某些维度可能包含单个点击时的多个值。常见示�
 
 ![仅显示虚拟报表包](assets/vrs-aiq-example.png)
 
->[!NOTE] 如果区段禁止包含您的量度的点击，则这些量度实例不会归因到任何维度。但是，类似的报表过滤器只会隐藏一些维度值，而不会影响根据归因模型处理的量度。因此，区段返回的值可能比具有类似定义的过滤器低。
+>[!NOTE]
+>
+> 如果区段禁止包含您的量度的点击，则这些量度实例不会归因到任何维度。但是，类似的报表过滤器只会隐藏一些维度值，而不会影响根据归因模型处理的量度。因此，区段返回的值可能比具有类似定义的过滤器低。
