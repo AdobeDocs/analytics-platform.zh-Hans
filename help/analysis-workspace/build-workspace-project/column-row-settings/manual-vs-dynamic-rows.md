@@ -3,7 +3,7 @@ description: 如何与表中的静态行交互。
 title: 静态行与动态行
 uuid: caf033ef-d252-4f8a-802e-7edbbac5c8c0
 translation-type: tm+mt
-source-git-commit: 05bc0b378c962f4513ab292d518e32f5f70f7dfd
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 91%
@@ -13,7 +13,9 @@ ht-degree: 91%
 
 # 静态行与动态行
 
->[!NOTE] 您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace 表格会在您将维度拖入到表格中时生成“动态”行，这意味着给定量度中与该维度对应的所有项目都将提取到表格中。
 
