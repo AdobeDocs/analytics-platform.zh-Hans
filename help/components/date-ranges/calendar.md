@@ -3,7 +3,7 @@ description: 在日历中，您可以指定日期和日期范围，或者选择�
 title: 日历和日期范围概述
 uuid: 3d7727ba-9070-4f7c-815f-c98baa4e3a2d
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 93%
@@ -13,11 +13,13 @@ ht-degree: 93%
 
 # 日历和日期范围概述
 
->[!NOTE] 您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
 
 在日历中，您可以指定日期和日期范围，或者选择一个预设。
 
-日历选择在面板级别应用，但您可以选择将它们应用于所有面板。在 Workspace 中单击日期范围时，界面将显示当前日历月和上一个日历月。您可以通过单击上方左右边角的左右箭头来调整这两个日历。
+日历选择在面板级别应用，但您可以选择将它们应用于所有面板。在工作区中单击日期范围时，界面将显示当前日历月和上一个日历月。您可以通过单击上方左右边角的左右箭头来调整这两个日历。
 
 ![日历](assets/aw_calendar.png)
 
