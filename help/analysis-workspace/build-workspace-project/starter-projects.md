@@ -3,7 +3,7 @@ description: 工作区中的模板
 title: 模板
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '1420'
 ht-degree: 95%
@@ -13,7 +13,9 @@ ht-degree: 95%
 
 # 模板
 
->[!NOTE] 您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
 
 您可以选择从以下项创建项目：
 
@@ -115,7 +117,9 @@ ht-degree: 95%
 
 ### 人员
 
->[!NOTE]“人员”模板及其关联的“人员”量度只能在 [Adobe Experience Cloud 设备协作](https://docs.adobe.com/content/help/zh-Hans/device-co-op/using/data/people.html)中使用。
+>[!NOTE]
+>
+>“人员”模板及其关联的“人员”量度只能在 [Adobe Experience Cloud 设备协作](https://docs.adobe.com/content/help/zh-Hans/device-co-op/using/data/people.html)中使用。
 
 该模板基于“人员”量度，“人员”量度是删除了重复数据的独特访客量度版本。通过“人员”量度可测量客户使用多个设备与您的品牌进行交互的频率。该模板允许您
 
