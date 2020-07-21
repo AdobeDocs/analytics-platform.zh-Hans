@@ -1,43 +1,53 @@
 ---
-description: 如何与表中的静态行交互。
-title: 静态行与动态行
-uuid: caf033ef-d252-4f8a-802e-7edbbac5c8c0
+title: 动态与静态维度值
+description: 如何与表中的动态和静态维值交互。
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 0477302df92ccab30d9f3a45cc7b22f2112a0c70
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 91%
+source-wordcount: '510'
+ht-degree: 8%
 
 ---
 
 
-# 静态行与动态行
+# 自由形式表中的动态维值与静态维值
 
->[!NOTE]
->
->您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>[!NOTE]您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
-Analysis Workspace 表格会在您将维度拖入到表格中时生成“动态”行，这意味着给定量度中与该维度对应的所有项目都将提取到表格中。
+在自由形式表中，行和列可以包含其中的各种组件值。 这些值可以是动态的（随时间而更改），也可以是静态的（不随时间而更改），具体取决于要构建的分析。
 
-例如，当您将浏览器维度拖动到表格时，其所有维度项目（例如，Android 浏览器、Mobile Safari、Firefox 等）都将动态提取到表格中。
+## 动态维度值
 
-与此相反，无论您何时手动选择特定量度、区段、数据范围或单个维度项目并将其拖动到表格中，结果都会生成硬编码或“静态”行或列表。您现在可以通过以下方式与静态行进行交互：
+动态维值会随时间而改变，并取决于在自由形式表中按排序的度量。 如果要分析给定时间段的顶项，则首选动态维值。
 
-* 单击静态行中的“预览”图标可预览区段、量度和日期范围。
-* 单击“x”图标以从表格中删除该行。
-* 限制显示的行数和启用分页显示。
-* 添加“混合维度项目”。例如，从浏览器维度添加一个项目，然后从产品维度添加另一个项目。
+将维放入自由形式表时，将返回动态行。 它们表示与给定度量和时间段的维度对应的顶级项目。 您还可以将维拖放到自由形式表列中，该维会自动扩展到前5个维值。
 
-   说明如下：
+例如，将“浏览器类型”维拖入表中时，顶部的“浏览器类型”维值（如Microsoft、Apple、Google等） 动态返回到表行。 如果放入列中，前5个浏览器类型维值将动态返回。
 
-   ![](assets/static_rows.png)
+动态维值具有行过滤器选项， **不存** 在锁和X图标。
 
-此外，现在只有当您处于静态行模式时，才能更改列总数的计算方式。只需单击齿轮图标并在以下 2 个选项之间进行切换：
+## 静态维值
 
-![](assets/column-totals.png)
+静态维值不随时间而改变； 它们是自由形式表中始终返回的固定组件。 如果您希望始终分析同一项目(无论是特定活动还是一周中的特定天)，则首选使用静态维度值。
 
-| 选项 | 描述 |
-|---|---|
-| （默认）通过汇总当前每列的值来计算总数。 | 此选项仅计算表格中的当前行。（客户端计算） |
-| 根据每个量度的所有行计算总数。 | 此选项包括此维度的所有维度项目，甚至包括未列在表格中的维度项目。（服务器端计算） |
+每当您手动选择特定组件值（维度、度量、段、日期范围）并将其拖放到表中时，结果就是行或列的静态列表。 如果选择：
 
+* 从行中，右键单击> [!UICONTROL 仅显示选定行]
+* 从列中，右键单击>将项设 [!UICONTROL 置为静态]
+
+例如，当您拖过Microsoft和Apple等特定的浏览器类型项目时，这2个特定项目始终会被拖入表中。
+
+静态维值 **没有** 行筛选器选项。 相反，锁和X图标显示在每个项目上。 单击X图标以从表中删除该维值。
+
+## 混合维度值
+
+不同维的维值可以添加到同一表中。 在这些情况下，行标题将显示“混合维”。 这些维值是静态的。 例如，从浏览器类型维添加特定维值，从浏览器维添加其他维值。
+
+## 自由形式总行数
+
+动态行和静态行在自由形式总行中的行为不同。 默认情况下：
+
+* 动态行是对服务器端和去重复度量(如访问或访客)进行汇总的
+* 静态行是在客户端求和的， **不会** 去重复度量。
+
+[了解有关动态行和静态行](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/build-workspace-project/workspace-totals.html) “工作区总选项”的更多信息。
