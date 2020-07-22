@@ -1,11 +1,11 @@
 ---
 title: 归因模型和回顾时间范围
-description: 不同类型的归因如何划分维度值之间的归因。
+description: 不同类型的归因如何划分维度项目之间的积分。
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '1542'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 91%
 
 >[!NOTE]
 >
->您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
-AdobeAnalytics归因的概念需要两个组件：
+AdobeAnalytics中归因的概念需要两个组件：
 
 * **归因模型：**&#x200B;此模型描述某个群组中点击的转化分布。例如，首次接触或最后接触。
 * **归因回顾窗口：**&#x200B;回顾窗口描述针对每个模型考虑的点击分组。例如，访问或访客。
@@ -49,7 +49,7 @@ AdobeAnalytics归因的概念需要两个组件：
 
 >[!NOTE]
 >
->**[!UICONTROL 自定义回顾窗口]** 当前处于受限测试中。 有关 [更多信息](https://docs.adobe.com/content/help/zh-Hans/analytics/landing/an-releases.html) ，请参阅AdobeAnalytics功能版本。
+>**[!UICONTROL 自定义回顾窗口]** 当前处于受限测试中。 有关 [详细信息，请参阅](https://docs.adobe.com/content/help/zh-Hans/analytics/landing/an-releases.html) AdobeAnalytics功能版本。
 
 ## 示例
 
