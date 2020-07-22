@@ -3,10 +3,10 @@ description: 了解 Analysis Workspace 中的可视化图表和可视化图表�
 keywords: Analysis Workspace
 title: 可视化图表概述
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '1091'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 工作区提供了许多可视化图表，使您能够生成数据的可视化表示形式，如条形图、圆环图、直方图、折线图、地图、散点图等。每个可视化图表都有其自身的设置，您可以管理这些设置。单击可视化图表的名称可了解更多详细信息。
 
@@ -34,7 +34,7 @@ YouTube 视频：[Analysis Workspace 中的可视化图表类型](https://www.yo
 | [直方图](/help/analysis-workspace/visualizations/histogram.md) | 直方图类似于条形图，不过它可以将数字归为几组不同的范围（存储段）。 |
 | [水平条](/help/analysis-workspace/visualizations/horizontal-bar.md) | 显示一些水平条，这些水平条表示一个或多个量度中的各种值。 |
 | [折线图](/help/analysis-workspace/visualizations/line.md) | 使用线条来表示量度，以显示一段时间内值的变化情况。仅当使用时间作为维度时，才可以使用折线图。 |
-| [散点图](/help/analysis-workspace/visualizations/scatterplot.md) | 显示维度值与最多三个量度之间的关系。 |
+| [散点图](/help/analysis-workspace/visualizations/scatterplot.md) | 显示维度项目与最多三个指标之间的关系。 |
 | [概要数字](/help/analysis-workspace/visualizations/summary-number-change.md) | 根据所选的单元格，此可视化图表显示总计和概要。 |
 | [概要变化](/help/analysis-workspace/visualizations/summary-number-change.md) | 根据所选的单元格，此可视化图表会比较单元格。 |
 | [文本](/help/analysis-workspace/visualizations/text.md) | 允许您将用户定义的文本添加至您的工作区。 |
