@@ -1,11 +1,11 @@
 ---
 title: 使用对象数组
 description: 了解 CJA 如何报告数据层次结构。
-translation-type: ht
-source-git-commit: 52fecf03cc503fa59101f6280c671e153e2129e9
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -188,7 +188,7 @@ CJA 查看点击的这些部分以生成报表：
 
 由于烘干机不包含保修，因此未纳入表中。
 
-由于您可以将任何维度与度量组合，下表显示了数据如何包含未指定的维度值：
+由于您可以将任何维与任何度量组合，下表显示了数据如何处理未指定的维项：
 
 | `product : warranty : name` | `product : orders` | `product : warranty : orders` |
 | --- | --- | --- |
@@ -196,7 +196,7 @@ CJA 查看点击的这些部分以生成报表：
 | `Unspecified` | `2` | `1` |
 | `Total` | `2` | `2` |
 
-产品订单存在，却不包含与其关联的保修名称，因此该维度值属于“未指定”。产品保修订单也存在相同情况：
+产品订单不存在与其关联的担保名称，因此维项目属性为“未指定”。 产品保修订单也存在相同情况：
 
 ```diff
 {
@@ -240,7 +240,7 @@ CJA 查看点击的这些部分以生成报表：
 +}
 ```
 
-请注意那些没有关联名称的订单。它们是归因于“未指定”维度值的订单。
+请注意那些没有关联名称的订单。这些是“未指定”维项的订单。
 
 ### 组合量度
 
