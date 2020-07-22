@@ -1,11 +1,11 @@
 ---
 title: 归因概述
-description: 将成功事件的信用归因到多维值的概念。
+description: 将成功事件的信用归因到多个维度项目的概念。
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 50%
+ht-degree: 56%
 
 ---
 
@@ -14,14 +14,14 @@ ht-degree: 50%
 
 >[!NOTE]
 >
->您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
-Attribution使分析师能够自定义维度值如何为成功事件赢得赞誉。 例如：
+Attribution使分析师能够自定义维度项目如何获得成功事件的认可。 例如：
 
-1. 网站访客单击指向您的某个产品页面的付费搜索链接。 将产品添加到购物车，但不购买。
+1. 网站访客单击指向您的某个产品页面的付费搜索链接。 The add the product to the cart, but do not purchase it.
 2. 第二天，查看其朋友的社交媒体帖子，单击链接，然后完成购买。
 
-在某些报表中，您可能希望订单归属于“付费”搜索。 在其他报表中，您可能希望订单归属于社交。 Attribution允许您控制报告的这一方面。 它适用于AdobeAnalytics旗舰店、Prime、Select和Foundation的所有组织。 如果您不确定您与Adobe的合同类型，请与贵组织的客户经理联系。
+在某些报表中，您可能希望订单归属于“付费”搜索。 在其他报表中，您可能希望订单归属于社交。 Attribution允许您控制报告的这一方面。 它适用于AdobeAnalytics旗舰版、Prime、Select和Foundation上的所有组织。 If you are not sure which type of contract you have with Adobe, contact your organization&#39;s Account Manager.
 
 ## 归因IQ的价值
 
@@ -45,6 +45,6 @@ Adobe Analytics 通过让您能够执行以下操作来增强归因：
 归因 IQ 包括以下功能：
 
 * [归因面板](../c-panels/attribution.md): 获取任何维度和指标，并快速将其与不同的归因模型进行比较。
-* [将归因应用于度量](../build-workspace-project/column-row-settings/column-settings.md): 对项目中的任何度量使用非默认属性。
+* [Apply attribution to a metric](../build-workspace-project/column-row-settings/column-settings.md): Use a non-default attribution on any metric in a project.
 * [将归因应用于细分](/help/components/dimensions/t-breakdown-fa.md): 对细分使用非默认属性。
 * [比较归因模型](/help/components/apply-create-metrics.md): 快速了解不同归因模型对任何指标的比较情况。
