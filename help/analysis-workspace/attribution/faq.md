@@ -2,10 +2,10 @@
 title: 归因常见问题解答
 description: 获取有关归因的常见问题解答。
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '740'
-ht-degree: 83%
+ht-degree: 81%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 83%
 
 >[!NOTE]
 >
->您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 **使用归因时，“无”行项目是什么？**
 
@@ -77,7 +77,7 @@ ht-degree: 83%
 
 Analytics 中的某些维度可能包含单个点击时的多个值。常见示例包括列表变量和产品变量。
 
-当将归因应用于多值点击时，同一点击中的所有值都将获得相同的点数。由于许多值都可以获得此点数，因此报表总计情况可能与您汇总每个单独行项目时有所不同。报表总计情况会消除重复项，而每个维度值将获得适当的点数。
+当将归因应用于多值点击时，同一点击中的所有值都将获得相同的点数。由于许多值都可以获得此点数，因此报表总计情况可能与您汇总每个单独行项目时有所不同。报表总数会消除重复项，而每个维项目均获得适当的积分。
 
 **归因如何与细分结合使用？**
 
@@ -89,4 +89,4 @@ Analytics 中的某些维度可能包含单个点击时的多个值。常见示�
 
 >[!NOTE]
 >
-> 如果区段禁止包含您的量度的点击，则这些量度实例不会归因到任何维度。但是，类似的报表过滤器只会隐藏一些维度值，而不会影响根据归因模型处理的量度。因此，区段返回的值可能比具有类似定义的过滤器低。
+> 如果区段禁止包含您的量度的点击，则这些量度实例不会归因到任何维度。但是，类似的报表过滤器只会隐藏某些维度项目，而不会影响根据归因模型处理的指标。 因此，区段返回的值可能比具有类似定义的过滤器低。
