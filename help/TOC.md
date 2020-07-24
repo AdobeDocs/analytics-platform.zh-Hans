@@ -13,7 +13,7 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: 教程
 tutorials-url: https://helpx.adobe.com/cn/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 8f59697b2bb282a1057267131343229e12dd5111
+source-git-commit: ee508a9186c02b4ee278a083ff0c75d2412a22e8
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 98%
@@ -41,13 +41,13 @@ ht-degree: 98%
    + [Analysis Workspace 概述](analysis-workspace/home.md)
    + [执行基本分析](analysis-workspace/perform-basic-analysis.md)
    + [执行高级分析](analysis-workspace/perform-adv-analysis.md)
-   + 构建 Workspace 项目 {#build-workspace-project}
+   + 构建工作区项目 {#build-workspace-project}
       + [创建项目 - 概述](analysis-workspace/build-workspace-project/freeform-overview.md)
       + [模板](analysis-workspace/build-workspace-project/starter-projects.md)
       + 列和行设置 {#column-row-settings}
          + [列设置](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
          + [行设置](analysis-workspace/build-workspace-project/column-row-settings/table-settings.md)
-         + [手动行和动态行](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
+         + [动态与静态项](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
       + [“撤消”和“重做”设置](analysis-workspace/build-workspace-project/undo-redo.md)
       + [Analysis Workspace 中可用的热键](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [对表格进行分页、过滤和排序](analysis-workspace/build-workspace-project/pagination-filtering-sorting.md)
@@ -115,7 +115,7 @@ ht-degree: 98%
       + [Analysis Workspace 限制](analysis-workspace/workspace-faq/aw-limitations.md)
       + [管理要求](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Analysis Workspace 中的辅助功能](analysis-workspace/workspace-faq/aw-accessibility.md)
-      + [Analysis Workspace长尾](analysis-workspace/workspace-faq/long-tail.md)
+      + [Analysis Workspace 中的长尾](analysis-workspace/workspace-faq/long-tail.md)
 + 组件 {#cja-components}
    + [组件概述](components/overview.md)
    + 维度 {#dimensions}
