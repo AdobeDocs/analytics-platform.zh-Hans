@@ -1,11 +1,11 @@
 ---
 title: 配置数据视图和属性
 description: 介绍如何在 Customer Journey Analytics 中创建 Platform 数据集的数据视图
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1523'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 96%
 
 * 在数据视图用户界面中，指定默认归因。**注意**：以后，您将能够在工作区项目中覆盖这些设置。但是，这项功能目前不可用。
 
-* Customer Journey Analytics 中的归因设置为非破坏性设置，具有追溯性。换言之，您无法对 Customer Journey Analytics 中的数据集造成无法弥补的损害。Even if you accidentally delete something, you can always go back to [!UICONTROL Experience Platform] and bring the dataset back in. （但是，请记住，重新引入数据集将产生额外成本。）
+* Customer Journey Analytics 中的归因设置为非破坏性设置，具有追溯性。换言之，您无法对 Customer Journey Analytics 中的数据集造成无法弥补的损害。即使意外删除了某些内容，您也始终可以返回 [!UICONTROL Experience Platform] 并将数据集重新导入。（但是，请记住，重新引入数据集将产生额外成本。）
 
 * 如果您希望某个维度的“行为”类似于传统 eVar（转换变量），则默认情况下应使用“最后接触访问”归因对其进行配置。
 
@@ -41,7 +41,7 @@ ht-degree: 96%
 
 1. 指定维度和量度的组件和归因设置。有关单独设置的信息，请参阅下文。
 
-1. Click **[!UICONTROL Save]** to save your data view.
+1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以保存数据视图。
 
 
 ### 组件设置
@@ -67,7 +67,7 @@ ht-degree: 96%
 
 ### 过期
 
-指定维项目到期的时间段(或事件)(不再接收成功事件的积分)。 您可以在会话、人员或自定义级别设置归因过期时间。
+指定一个时段或事件，维度项目将在此时段或事件之后过期（即，不再接收成功事件的信用）。您可以在会话、人员或自定义级别设置归因过期时间。
 
 | 设置 | 定义 |
 |---|---|
