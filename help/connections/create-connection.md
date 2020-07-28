@@ -2,10 +2,10 @@
 title: 创建连接
 description: 描述如何在 Customer Journey Analytics 中创建与 Platform 数据集的连接。
 translation-type: tm+mt
-source-git-commit: 2bbfe2296d658dd38464a4a9d7810ae6d6eda306
+source-git-commit: 756c6e7c187b76636cf96d18c949908a97db51ed
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 62%
+source-wordcount: '1626'
+ht-degree: 52%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 62%
 
 Customer Journey Analytics现在支持将身份映射用于其人员ID。 标识映射是一种允许某人上传密钥->值对的映射数据结构。 键是标识命名空间，值是包含标识值的结构。 上传的每行/事件上都存在标识映射，并会相应地为每行填充标识映射。
 
-标识映射可用于任何使用基于ExperienceEvent XDM类的模式的数据集。 当您选择要包含在CJA连接中的此类数据集时，您可以选择选择字段作为主ID或标识映射：
+标识映射可用于任何使用基于ExperienceEvent XDM类的模式 [的数据集](https://docs.adobe.com/content/help/zh-Hans/experience-platform/xdm/home.html) 。 当您选择要包含在CJA连接中的此类数据集时，您可以选择选择字段作为主ID或标识映射：
 
 ![](assets/idmap1.png)
 
@@ -80,6 +80,15 @@ Customer Journey Analytics现在支持将身份映射用于其人员ID。 标识
 |---|---|
 | [!UICONTROL 使用主 ID 命名空间] | 这会指示CJA在标有primary=true属性的标识映射中，按行查找标识，并将该标识用作该行的人员ID。 这意味着这是将用于分区的Experience Platform的主要密钥。 它还是用作CJA访客ID的主要候选者（取决于在CJA连接中配置数据集的方式）。 |
 | [!UICONTROL 命名空间] | (此选项仅在未使用主ID命名空间时可用。) 身份命名空间是Adobe Experience Platform身份 [服务的一个组成部分](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html) ，用作身份相关上下文的指标。 如果指定命名空间,CJA将搜索每行的此命名空间键的标识映射，并将该命名空间下的标识用作该行的人员ID。 请注意，由于CJA无法对所有行执行完全数据集扫描以确定哪些命名空间实际存在，因此所有可能的命名空间都会列在下拉列表中。 您需要知道数据中指定了哪些命名空间; 无法自动检测。 |
+
+### 标识映射边缘案例
+
+下表显示了当存在边缘情况时的两种配置选项及其处理方式：
+
+| 选项 | 身份映射中不存在ID | 没有ID被标记为主ID | 多个ID被标记为主ID | 单个ID被标记为主ID | ID标记为主命名空间无效 |
+|---|---|---|---|---|---|
+| **选中“使用主ID命名空间”** | CJA会删除该行。 | CJA将删除该行，因为未指定主ID。 | 标记为主ID的所有命名空间下的所有ID都会被提取到列表中。 然后按字母顺序排序； 在此新排序中，具有第一个ID的第一个命名空间将用作人员ID。 | 标为主ID的单个ID用作人员ID。 | 即使命名空间无效（AEP中不存在）,CJA仍将该命名空间下的主ID用作人员ID。 |
+| **已选择特定身份映射命名空间** | CJA会删除该行。 | 选定命名空间下的所有ID都提取到列表中，第一个ID用作人员ID。 | 选定命名空间下的所有ID都提取到列表中，第一个ID用作人员ID。 | 选定命名空间下的所有ID都提取到列表中，第一个ID用作人员ID。 | 选定命名空间下的所有ID都提取到列表中，第一个ID用作人员ID。 (在连接创建时，只能选择有效的命名空间，因此无效的命名空间/ID不能用作人员ID) |
 
 ## 启用连接
 
