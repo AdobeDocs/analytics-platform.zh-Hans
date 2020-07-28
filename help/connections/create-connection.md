@@ -2,10 +2,10 @@
 title: 创建连接
 description: 描述如何在 Customer Journey Analytics 中创建与 Platform 数据集的连接。
 translation-type: tm+mt
-source-git-commit: 220f164ae128c47aa89b319829336a5fc1b3d8c4
+source-git-commit: 63ddde92f1ea5e5e8129888909ac03ac89096b71
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 90%
+source-wordcount: '999'
+ht-degree: 82%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 90%
 
 1. 单击右上方的&#x200B;**[!UICONTROL 新建连接]**。
 
-   ![创建连接](assets/create-connection.png)
+   ![创建连接](assets/create-connection0.png)
 
 1. 在 Experience Platform 中选择一个沙盒，其中包含要创建连接的数据集。
 
@@ -39,6 +39,8 @@ ht-degree: 90%
 ## 配置数据集
 
 在右侧，您现在可以配置已添加的数据集。
+
+![配置数据集](assets/create-connection.png)
 
 1. **[!UICONTROL 数据集类型]**: 对于您添加到此连接的每个数据集， [!UICONTROL Customer Journey Analytics] 会根据传入的数据自动设置数据集类型。
 
@@ -54,17 +56,25 @@ ht-degree: 90%
 
 1. **[!UICONTROL 时间戳]**: 在此处添加内容
 
-1. **[!UICONTROL 架构]**:
+1. **[!UICONTROL 模式]**: 这是在Adobe Experience Platform中创建数据集时所依据的模式。
 
-1. **[!UICONTROL 人员 ID]**:
+1. **[!UICONTROL 人员ID]**: 从Experience Platform的数据集模式中定义的可用标识中选择人物ID。
+
+   >[!IMPORTANT]
+   >
+   >如果没有人员ID可供选择，则表示模式中尚未定义一个或多个人员ID。 视图 [此视频](https://youtu.be/G_ttmGl_LRU) ，了解如何在Experience Platform中定义标识。
 
 1. Click **[!UICONTROL Next]** to go to the [!UICONTROL Enable Connection] dialog.
 
-   ![启用连接](assets/create-connection2.png)
+### 身份映射
+
+
 
 ## 启用连接
 
-1. 在[!UICONTROL 创建连接]对话框中，定义以下设置：
+![启用连接](assets/create-connection2.png)
+
+1. 要启用连接，请定义以下设置：
 
    | 字段 | 描述 |
    |---|---|
