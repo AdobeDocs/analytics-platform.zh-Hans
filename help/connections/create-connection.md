@@ -2,10 +2,10 @@
 title: 创建连接
 description: 描述如何在 Customer Journey Analytics 中创建与 Platform 数据集的连接。
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 220f164ae128c47aa89b319829336a5fc1b3d8c4
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 100%
+source-wordcount: '923'
+ht-degree: 90%
 
 ---
 
@@ -34,9 +34,13 @@ ht-degree: 100%
 
 1. 选择您要提取到 [!UICONTROL Customer Journey Analytics] 的一个或多个数据集，并单击&#x200B;**[!UICONTROL 添加]**。
 
-   （如果您有许多数据集可供选择，可以使用数据集列表上方的搜索栏搜索正确的数据集。）
+   (If you have a lot of datasets to choose from, you can search for the right one(s) using the **[!UICONTROL Search datasets]** search bar above the list of datasets.)
 
-1. 接下来，对于您添加到此连接的每个数据集，[!UICONTROL Customer Journey Analytics] 会根据传入的数据自动设置数据集类型。
+## 配置数据集
+
+在右侧，您现在可以配置已添加的数据集。
+
+1. **[!UICONTROL 数据集类型]**: 对于您添加到此连接的每个数据集， [!UICONTROL Customer Journey Analytics] 会根据传入的数据自动设置数据集类型。
 
    有 3 种不同的数据集类型：[!UICONTROL 事件]数据、[!UICONTROL 配置文件]数据和[!UICONTROL 查找]数据。
 
@@ -46,9 +50,19 @@ ht-degree: 100%
    | [!UICONTROL 查找] | 类似于分类文件。此数据用于查找在“事件”或“个人资料”数据中找到的值或键。例如，您可以上传将事件数据中的数字 ID 映射到产品名称的查找数据。 | 不适用 | 任何基于 XDM 类且具有“记录”行为的内置或自定义架构，“XDM 个人资料”类除外。 | 不适用 |
    | [!UICONTROL 配置文件] | 类似于[!UICONTROL 客户属性] - 用于非更改属性和非临时属性。[!UICONTROL 事件]数据中应用于访客、用户或客户的数据。例如，允许您上传关于客户的 CRM 数据。 | 不适用 | 任何基于“XDM 个人资料”类的内置或自定义架构。 | 您可以选择想要包含的人员 ID。[!DNL Experience Platform] 中定义的每个数据集，都拥有自己定义的一个或多个人员 ID 集，例如 Cookie ID、拼合 ID、用户 ID、跟踪代码等。<br>![人员 ID](assets/person-id.png)**注意&#x200B;**：如果您创建的连接包含具有不同 ID 的数据集，报告将反映这一点。要真正合并数据集，您需要使用相同的人员 ID。 |
 
-1. 单击&#x200B;**[!UICONTROL 下一步]**，转到[!UICONTROL 创建连接]对话框。
+1. **[!UICONTROL 数据集ID]**: 此ID将自动生成。
 
-   ![创建连接](assets/create-connection2.png)
+1. **[!UICONTROL 时间戳]**: 在此处添加内容
+
+1. **[!UICONTROL 架构]**:
+
+1. **[!UICONTROL 人员 ID]**:
+
+1. Click **[!UICONTROL Next]** to go to the [!UICONTROL Enable Connection] dialog.
+
+   ![启用连接](assets/create-connection2.png)
+
+## 启用连接
 
 1. 在[!UICONTROL 创建连接]对话框中，定义以下设置：
 
