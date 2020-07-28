@@ -2,10 +2,10 @@
 title: 创建连接
 description: 描述如何在 Customer Journey Analytics 中创建与 Platform 数据集的连接。
 translation-type: tm+mt
-source-git-commit: 63ddde92f1ea5e5e8129888909ac03ac89096b71
+source-git-commit: 2bbfe2296d658dd38464a4a9d7810ae6d6eda306
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 82%
+source-wordcount: '1351'
+ht-degree: 62%
 
 ---
 
@@ -56,9 +56,9 @@ ht-degree: 82%
 
 1. **[!UICONTROL 时间戳]**: 在此处添加内容
 
-1. **[!UICONTROL 模式]**: 这是在Adobe Experience Platform中创建数据集时所依据的模式。
+1. **[!UICONTROL 模式]**: 这是模式 [](https://docs.adobe.com/content/help/zh-Hans/experience-platform/xdm/schema/composition.html) ，在Adobe Experience Platform中创建数据集时所依据的。
 
-1. **[!UICONTROL 人员ID]**: 从Experience Platform的数据集模式中定义的可用标识中选择人物ID。
+1. **[!UICONTROL 人员ID]**: 从可用身份的下拉列表中选择人员ID。 这些身份在Experience Platform的数据集模式中定义。 有关如何将身份映射用作人员ID的信息，请参见下文。
 
    >[!IMPORTANT]
    >
@@ -66,9 +66,20 @@ ht-degree: 82%
 
 1. Click **[!UICONTROL Next]** to go to the [!UICONTROL Enable Connection] dialog.
 
-### 身份映射
+### 使用身份映射作为人员ID
 
+Customer Journey Analytics现在支持将身份映射用于其人员ID。 标识映射是一种允许某人上传密钥->值对的映射数据结构。 键是标识命名空间，值是包含标识值的结构。 上传的每行/事件上都存在标识映射，并会相应地为每行填充标识映射。
 
+标识映射可用于任何使用基于ExperienceEvent XDM类的模式的数据集。 当您选择要包含在CJA连接中的此类数据集时，您可以选择选择字段作为主ID或标识映射：
+
+![](assets/idmap1.png)
+
+如果选择“身份映射”，您还会获得两个其他配置选项：
+
+| 选项 | 描述 |
+|---|---|
+| [!UICONTROL 使用主 ID 命名空间] | 这会指示CJA在标有primary=true属性的标识映射中，按行查找标识，并将该标识用作该行的人员ID。 这意味着这是将用于分区的Experience Platform的主要密钥。 它还是用作CJA访客ID的主要候选者（取决于在CJA连接中配置数据集的方式）。 |
+| [!UICONTROL 命名空间] | (此选项仅在未使用主ID命名空间时可用。) 身份命名空间是Adobe Experience Platform身份 [服务的一个组成部分](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html) ，用作身份相关上下文的指标。 如果指定命名空间,CJA将搜索每行的此命名空间键的标识映射，并将该命名空间下的标识用作该行的人员ID。 请注意，由于CJA无法对所有行执行完全数据集扫描以确定哪些命名空间实际存在，因此所有可能的命名空间都会列在下拉列表中。 您需要知道数据中指定了哪些命名空间; 无法自动检测。 |
 
 ## 启用连接
 
@@ -76,7 +87,7 @@ ht-degree: 82%
 
 1. 要启用连接，请定义以下设置：
 
-   | 字段 | 描述 |
+   | 选项 | 描述 |
    |---|---|
    | [!UICONTROL 名称连接] | 为连接指定一个描述性名称。如果没有名称，将无法保存连接。 |
    | [!UICONTROL 描述] | 添加更多详细信息以将此连接与其他连接区分开来。 |
