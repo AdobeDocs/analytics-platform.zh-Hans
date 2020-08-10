@@ -3,10 +3,10 @@ description: 工作区中的模板
 title: 模板
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: c7bf87b4ff3a7d0da930a22336db762fa3d74393
 workflow-type: tm+mt
 source-wordcount: '1420'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 您可以选择从以下项创建项目：
 
 * **空白项目（默认）**：有关说明，请参阅[创建 Analysis Workspace 项目](/help/analysis-workspace/home.md)。
 * **标准模板**：这些模板由 Adobe 创建，随产品一起提供。
-* **自定义模板**: 这些模板可由具有管理员权限的用户或非管理员用户创建、共享或删除，前提是已授予 [!UICONTROL Analysis Workspace: 在Admin Console中] ,“另存为模板”权限。 [了解更多...](https://docs.adobe.com/content/help/zh-Hans/analytics/admin/admin-console/permissions/product-profile.html)
+* **自定义模板**：这些模板可由具有管理员权限的用户或非管理员创建、共享或删除，前提是已在 Admin Console 中向他们授予了 [!UICONTROL Analysis Workspace：另存为模板]权限。[了解更多...](https://docs.adobe.com/content/help/zh-Hans/analytics/admin/admin-console/permissions/product-profile.html)
 
 ![](assets/start_modal.png)
 
@@ -46,7 +46,7 @@ ht-degree: 95%
 
 | 操作 | 描述 |
 |--- |--- |
-| 编辑 template | 允许管理员通过更改模板的数据源、修改组件、可视化图表、日期范围等内容来编辑模板。要编辑自定义模板，请<ul><li>在 Analysis Workspace 中调出自定义模板列表，选择一个模板，然后单击编辑模板，或</li><li>在 Analytics 中，导航到组件 > 项目，然后对模板进行过滤。单击要编辑的模板的名称。</li></ul>**注意：**&#x200B;编辑模板之后，根据具体情况，您有两个选项可用：保存、另存为。以下是它们的不同之处：<ul><li>**保存：**&#x200B;更新所有用户的自定义模板。其他人从该自定义模板创建项目时会看到您做出的更改。</li><li>**另存为：**&#x200B;创建包含您所做更改的自定义模板副本。（如果共享 > 共享项目菜单项处于禁用状态，那么您可以据此判断您处于编辑模式当中。）</li></ul> |
+| 编辑模板 | 允许管理员通过更改模板的数据源、修改组件、可视化图表、日期范围等内容来编辑模板。要编辑自定义模板，请<ul><li>在 Analysis Workspace 中调出自定义模板列表，选择一个模板，然后单击编辑模板，或</li><li>在 Analytics 中，导航到组件 > 项目，然后对模板进行过滤。单击要编辑的模板的名称。</li></ul>**注意：**&#x200B;编辑模板之后，根据具体情况，您有两个选项可用：保存、另存为。以下是它们的不同之处：<ul><li>**保存：**&#x200B;更新所有用户的自定义模板。其他人从该自定义模板创建项目时会看到您做出的更改。</li><li>**另存为：**&#x200B;创建包含您所做更改的自定义模板副本。（如果共享 > 共享项目菜单项处于禁用状态，那么您可以据此判断您处于编辑模式当中。）</li></ul> |
 | 搜索模板 | 在“自定义模板”对话框中，单击搜索模板。 |
 | 排序模板 | 您可以按字母顺序、相关性和创建日期对模板进行排序。在“自定义模板”对话框中，单击排序:。 |
 | 将标签应用到模板 | 打开模板，然后转到项目 > 项目信息和设置。单击添加标签。 |
@@ -133,7 +133,7 @@ ht-degree: 95%
 
 ### 历程 IQ：跨设备分析模板
 
-<!-->This content is mirrored in the CDA doc.<-->
+<!--This content is mirrored in the CDA doc.-->
 
 此模板可让您查看重要的跨设备性能数据。它仅适用于有权访问[跨设备分析](https://docs.adobe.com/content/help/zh-Hans/analytics/components/cda/cda-home.html) (CDA) 的客户。
 
