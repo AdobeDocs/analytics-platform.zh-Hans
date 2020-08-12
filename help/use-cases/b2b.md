@@ -2,9 +2,9 @@
 title: (B2B)将帐户级别数据添加为查找数据集
 description: 了解如何将基于帐户的数据添加为CJA的查找数据集
 translation-type: tm+mt
-source-git-commit: 721915ffdc9f196a13a360fb5ac145f750788bcf
+source-git-commit: e3d4a672c33b8c536246836a062d544e3d5b8a01
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '851'
 ht-degree: 1%
 
 ---
@@ -46,8 +46,15 @@ ht-degree: 1%
 1. 命名数据集（在我们的示例中，为B2B信息）并提供描述。
 1. 单击&#x200B;**[!UICONTROL 完成]**。
 
+## 3.将数据引入Experience Platform
 
-## 3.在连接中合并数据集(Customer Journey Analytics)
+关于如何 [将CSV文件映射到XDM模式](https://docs.adobe.com/content/help/en/experience-platform/ingestion/tutorials/map-a-csv-file.html) 如果您使用的是CSV文件，应会有帮助。
+
+[其他方法](https://docs.adobe.com/content/help/en/experience-platform/ingestion/home.html) 列表中。
+
+载入数据并建立查找大约需要2到4小时，具体取决于查找表的大小。
+
+## 4.在连接中合并数据集(Customer Journey Analytics)
 
 在此示例中，我们将3个数据集合为一个CJA连接：
 
@@ -61,20 +68,18 @@ ht-degree: 1%
 
 1. 在Customer Journey Analytics中，选择 **[!UICONTROL 连接]** 选项卡。
 1. 选择要合并的数据集（在我们的示例中，以上三个数据集）。
-1. （不确定这是步骤所属的位置……）对于B2B信息数据集，请选择 `accountID` 用于查找表的键。 然后选择其匹配键（对应的维）, `accountID` 事件数据集。
+1. 对于B2B信息数据集，选择 `accountID` 用于查找表的键。 然后选择其匹配键（对应的维）, `accountID` 事件数据集。
 1. 单击&#x200B;**[!UICONTROL 下一步]**。
 1. 命名并描述连接，并根据 [这些说明](/help/connections/create-connection.md).
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
-现在数据将被收录。 载入数据并建立查找大约需要2到4小时，具体取决于查找表的大小。
-
-## 从此连接创建数据视图
+## 5.从此连接创建数据视图
 
 按照 [创建数据视图](/help/data-views/create-dataview.md).
 
 * 从数据集添加您需要的所有组件（维度和指标）。
 
-## 在Workspace中分析数据
+## 6.在Workspace中分析数据
 
 您现在可以根据所有3个数据集的数据创建Workspace项目。
 
