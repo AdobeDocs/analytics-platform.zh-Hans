@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 756c6e7c187b76636cf96d18c949908a97db51ed
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -54,41 +54,41 @@ ht-degree: 58%
 
 1. **[!UICONTROL 数据集 ID]**：此 ID 将自动生成。
 
-1. **[!UICONTROL 时间戳]**:在此处添加内容
+1. **[!UICONTROL 时间戳]**：在此处添加内容
 
-1. **[!UICONTROL 模式]**:这是 [模式](https://docs.adobe.com/content/help/zh-Hans/experience-platform/xdm/schema/composition.html) 根据数据集在Adobe Experience Platform创建。
+1. **[!UICONTROL 架构]**：这个[架构](https://docs.adobe.com/content/help/zh-Hans/experience-platform/xdm/schema/composition.html)是以其中创建了数据集的 Adobe Experience Platform 为基础。
 
-1. **[!UICONTROL 人员ID]**:从可用身份的下拉列表中选择人员ID。 这些身份在Experience Platform的数据集模式中定义。 有关如何将身份映射用作人员ID的信息，请参见下文。
+1. **[!UICONTROL 人员 ID]**：从可用身份的下拉列表中选择一个人员 ID。这些身份已在 Experience Platform 的数据集架构中定义。有关如何将身份映射用作人员 ID 的信息，请参见下文。
 
    >[!IMPORTANT]
    >
-   >如果没有人员ID可供选择，则表示模式中尚未定义一个或多个人员ID。 视图 [此视频](https://youtu.be/G_ttmGl_LRU) 如何定义Experience Platform中的身份。
+   >如果没有可供选择的人员 ID，则意味着架构中尚未定义一个或多个人员 ID。请观看[这个视频](https://youtu.be/G_ttmGl_LRU)，以了解如何在 Experience Platform 中定义身份。
 
 1. 单击&#x200B;**[!UICONTROL 下一步]**，转到[!UICONTROL 启用连接]对话框。
 
-### 使用身份映射作为人员ID
+### 将身份映射用作人员 ID
 
-Customer Journey Analytics现在支持将身份映射用于其人员ID。 标识映射是一种允许某人上传密钥->值对的映射数据结构。 键是身份命名空间，值是包含身份值的结构。上传的每行/事件上都存在标识映射，并会相应地为每行填充标识映射。
+现在，Customer Journey Analytics 支持将身份映射用作人员 ID。身份映射是一种允许人员上传键值对的映射数据结构。键是身份命名空间，值是包含身份值的结构。在上传的每一行/每个事件中，都存在身份映射，并且身份映射会相应地填充到每一行中。
 
-The Identity Map is available a any dataset that uses a模式基于 [ExperienceEvent XDM](https://docs.adobe.com/content/help/zh-Hans/experience-platform/xdm/home.html) 类。 当您选择要包含在CJA连接中的此类数据集时，您可以选择选择字段作为主ID或标识映射：
+身份映射适用于任何满足以下要求的数据集：使用基于 [ExperienceEvent XDM](https://docs.adobe.com/content/help/zh-Hans/experience-platform/xdm/home.html) 类的架构。当您要将此类数据集包含在 CJA 连接中时，您既可以选择主 ID，也可以选择身份映射来作为字段：
 
 ![](assets/idmap1.png)
 
-如果选择“身份映射”，您还会获得两个其他配置选项：
+如果选择身份映射，您会另外再获得两个配置选项：
 
 | 选项 | 描述 |
 |---|---|
-| [!UICONTROL 使用主 ID 命名空间] | 这会指示CJA在标有primary=true属性的标识映射中，按行查找标识，并将该标识用作该行的人员ID。 这意味着这是将用于分区的Experience Platform的主要密钥。 它还是用作CJA访客ID的主要候选者（取决于在CJA连接中配置数据集的方式）。 |
-| [!UICONTROL 命名空间] | (此选项仅在未使用主ID命名空间时可用。) 身份命名空间是 [Adobe Experience Platform身份服务](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html) 作为身份相关背景的指标。 如果指定命名空间,CJA将搜索每行的此命名空间键的标识映射，并将该命名空间下的标识用作该行的人员ID。 请注意，由于CJA无法对所有行执行完全数据集扫描以确定哪些命名空间实际存在，因此所有可能的命名空间都会列在下拉列表中。 您需要知道数据中指定了哪些命名空间;无法自动检测。 |
+| [!UICONTROL 使用主 ID 命名空间] | 它会指示 CJA 逐行在“身份映射”中查找标记了“primary=true”属性的身份，并将该身份用作相应行的人员 ID。这意味着，它是 Experience Platform 中用于分区时使用的主密钥。此外，它还是用作 CJA 访客 ID 的主要候选项（取决于 CJA 连接中数据集的配置方式）。 |
+| [!UICONTROL 命名空间] | （此选项仅适用于未使用主 ID 命名空间的情况。）身份命名空间是 [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/zh-Hans/experience-platform/identity/namespaces.html) 的组件，充当与身份相关的上下文指示器。如果指定了命名空间，CJA 会在每行的“身份映射”中搜索此命名空间密钥，并将该命名空间下的身份用作该行的人员 ID。请注意，由于 CJA 无法对所有行执行全方位数据集扫描以确定哪些命名空间实际存在，因此下拉列表中会列出所有可能的命名空间。您需要知道数据中指定了哪些命名空间；这些信息无法自动检测。 |
 
-### 标识映射边缘案例
+### 身份映射边缘情况
 
-下表显示了当存在边缘情况时的两种配置选项及其处理方式：
+下表显示了当存在边缘情况时两种配置方案及其处理方式：
 
-| 选项 | 身份映射中不存在ID | 没有ID被标记为主ID | 多个ID被标记为主ID | 单个ID被标记为主ID | ID标记为主命名空间无效 |
+| 方案 | “身份映射”中不存在 ID | 没有 ID 标记为主 ID | 多个 ID 均标记为主 ID | 单个 ID 标记为主 ID | 一个 ID 标记为主 ID 的无效命名空间 |
 |---|---|---|---|---|---|
-| **选中“使用主ID命名空间”** | CJA会删除该行。 | CJA将删除该行，因为未指定主ID。 | 标记为主ID的所有命名空间下的所有ID都会被提取到列表中。 然后按字母顺序排序；在此新排序中，具有第一个ID的第一个命名空间将用作人员ID。 | 标为主ID的单个ID用作人员ID。 | 即使命名空间无效（AEP中不存在）,CJA仍将该命名空间下的主ID用作人员ID。 |
-| **已选择特定身份映射命名空间** | CJA会删除该行。 | 选定命名空间下的所有ID都提取到列表中，第一个ID用作人员ID。 | 选定命名空间下的所有ID都提取到列表中，第一个ID用作人员ID。 | 选定命名空间下的所有ID都提取到列表中，第一个ID用作人员ID。 | 选定命名空间下的所有ID都提取到列表中，第一个ID用作人员ID。 (在连接创建时，只能选择有效的命名空间，因此无效的命名空间/ID不能用作人员ID) |
+| **选中“使用主 ID 命名空间”** | 该行将被 CJA 删除。 | 该行将被 CJA 删除，因为未指定主 ID。 | 所有命名空间下标记为主 ID 的 ID 都将被提取到列表中，随后，这些 ID 将按字母顺序排序；根据这种新的排序方式，排在第一个命名空间中的首个 ID 将被用作人员 ID。 | 标记为主 ID 的单个 ID 将被用作人员 ID。 | 即便命名空间可能无效（未出现在 AEP 中），CJA 仍会将该命名空间下的主 ID 用作人员 ID。 |
+| **已选择特定的身份映射命名空间** | 该行将被 CJA 删除。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。（由于在创建连接时，只能选择有效的命名空间，因此无效的命名空间/ID 不可能用作人员 ID） |
 
 ## 启用连接
 
