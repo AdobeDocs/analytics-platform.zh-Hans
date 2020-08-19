@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics 术语表
 description: Customer Journey Analytics 术语表。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 307bfae11f44d088aa8d004f1f7ddd17375f60fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '339'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 87%
 
 | Customer Journey Analytics 新术语 | Adobe Analytics 术语 | 描述 |
 |---|---|---|
-| 查找数据集 | 分类 | 使用查找功能从具有1对1关系的键／匹配键的指定数据集(在事件数据集中)检索值。 例如，您可以指定“tracking_code”作为与事件数据集中的“tracking_code”匹配的键。 |
+| 查询数据集 | 分类 | 可使用查询功能从指定的数据集中检索某个键值/与之相匹配的键值（在事件数据集中），其中这两个值之间是一一对应的关系。例如，您可以将“tracking_code”指定为与事件数据集中的“tracking_code”相匹配的键值。 |
 | 用户档案数据集 | 客户属性 | 如果您在客户关系管理 (CRM) 数据库中捕获到企业客户数据，则可以将该数据上传到 Adobe Experience Platform 中的用户档案数据集。当您在 Customer Journey Analytics 中创建与该数据集的连接并创建数据视图后，可在工作区中利用该数据。 |
 | 登录公司 | Experience Cloud 组织 | 请参阅[组织和帐户关联](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/manage-users-and-products/organizations.html#topic_C31CB834F109465A82ED57FF0563B3F1)。 |
 | 不适用 | 报表包 | 传统 Adobe Analytics 中的报表包不再存在。实际上，您需要从与之创建连接的 Platform 数据集创建（虚拟）[数据视图](/help/data-views/create-dataview.md)。 |
