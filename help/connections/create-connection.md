@@ -2,10 +2,10 @@
 title: 创建连接
 description: 描述如何在 Customer Journey Analytics 中创建与 Platform 数据集的连接。
 translation-type: tm+mt
-source-git-commit: bbe86f2d6e052262f0e8a84bca0996f4e2589433
+source-git-commit: 297ed03ff59cc8d719a6bf0984e82597e8d33392
 workflow-type: tm+mt
-source-wordcount: '1651'
-ht-degree: 97%
+source-wordcount: '1655'
+ht-degree: 96%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 97%
 
    >[!IMPORTANT]
    >
-   >您无法跨沙箱访问数据，即只能将数据集合在一个沙箱中。
+   >您无法跨沙箱访问数据，即只能合并位于同一沙箱中的数据集。
 
 1. 选择您要提取到 [!UICONTROL Customer Journey Analytics] 的一个或多个数据集，并单击&#x200B;**[!UICONTROL 添加]**。
 
