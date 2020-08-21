@@ -1,8 +1,11 @@
 ---
 title: Customer Journey Analytics 产品文档
 description: Customer Journey Analytics 登录页面。
-translation-type: ht
-source-git-commit: 61cf17635c73a400b0c3a52666d75a771fca1a47
+translation-type: tm+mt
+source-git-commit: 76cedb931085e8b5b59d7c5c3929bf4b5c010d9d
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 92%
 
 ---
 
@@ -19,7 +22,9 @@ Analytics Select、Prime 和 Ultimate 客户有资格购买此附加产品。有
  <tbody> 
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>新增项目或特色项目</b> </p> <p> 
-     <ul> 
+     <ul>
+      <li><a href="https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-usecases/object-arrays.html"> 使用对象数组 </a> </li>
+      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-usecases/b2b.html"> 将帐户级别数据添加为查找数据集 </a> </li>
       <li><a href="https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-overview/cja-getting-started.html">Customer Journey Analytics 入门</a> </li> 
       <li><a href="https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-overview/cja-faq.html"> 常见问题解答</a> </li> 
       <li><a href="https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-overview/cja-glossary.html">Customer Journey Analytics 术语表</a> </li> 
