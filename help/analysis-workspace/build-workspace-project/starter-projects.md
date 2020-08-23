@@ -3,7 +3,7 @@ description: 工作区中的模板
 title: 模板
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: c7bf87b4ff3a7d0da930a22336db762fa3d74393
+source-git-commit: 43487b0dc9d0246fc4750fcc0175055899a198b5
 workflow-type: tm+mt
 source-wordcount: '1420'
 ht-degree: 99%
@@ -81,7 +81,9 @@ ht-degree: 99%
 
 ### 商务
 
-* **Magento：营销与商务**：此模板按营销渠道归因划分您的电子商务转化，并按搜索关键字、登录页面、地理位置等提供分析。有关视频概述，请参阅 > [!VIDEO](https://www.youtube.com/watch?v=AQOViVLEMHw)
+* **Magento：营销与商务**：此模板按营销渠道归因划分您的电子商务转化，并按搜索关键字、登录页面、地理位置等提供分析。有关视频概述，请参阅：
+
+>[!VIDEO](https://www.youtube.com/watch?v=AQOViVLEMHw)
 
 ### 媒体
 
