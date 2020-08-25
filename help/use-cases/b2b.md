@@ -1,11 +1,11 @@
 ---
 title: (B2B) 将帐户级别的数据作为查询数据集进行添加
 description: 了解如何将基于帐户的数据作为查询数据集添加到 CJA
-translation-type: ht
-source-git-commit: e3d4a672c33b8c536246836a062d544e3d5b8a01
-workflow-type: ht
-source-wordcount: '851'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: de5717d42fbe29554351a789cce594ac9ad47ee1
+workflow-type: tm+mt
+source-wordcount: '939'
+ht-degree: 89%
 
 ---
 
@@ -37,6 +37,12 @@ ht-degree: 100%
 ## 2. 创建查询数据集 (Experience Platform)
 
 创建模式后，需使用该模式在 Experience Platform 中创建一个查询数据集。这个查询数据集包含帐户级别的营销信息，例如：公司名称、员工总数、域名、公司所属行业、年收入、当前是否为 Experience Platform 客户、当前处于哪个销售阶段、帐户内的哪个团队在使用 CJA，等等。
+
+>[!IMPORTANT]
+>
+>CJA不支持查找数据集中的整数。 如果您在查找数据集的XDM模式中添加整数字段，则将不能将这些整数用作度量或计算度量。 例如，如果annualRevenue或totalEmployees定义为整数，则在CJA的报告中它们将显示为“0”。 但是，如果将它们指定为字符串，则可以将它们用作查找信息。
+
+例如，annualRevenue或totalEmployees在以下示例中定义为整数，这是原因，它在CJA中显示“0”。
 
 1. 在 Adobe Experience Platform 中，转到&#x200B;**[!UICONTROL 数据管理 > 数据集]**。
 1. 单击 **[!UICONTROL + 创建数据集]**。
@@ -73,9 +79,9 @@ ht-degree: 100%
 1. 命名并描述此连接，并根据[这些说明](/help/connections/create-connection.md)配置此连接。
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
-## 5. 通过这个连接创建数据视图
+## 5.从此连接创建数据视图
 
-按照有关[创建数据视图](/help/data-views/create-dataview.md)的说明进行操作。
+按照 [创建数据视图](/help/data-views/create-dataview.md).
 
 * 从数据集添加您所需要的所有组件（维度和量度）。
 
