@@ -1,33 +1,60 @@
 ---
-description: 通过电子邮件发送 Analysis Workspace 项目，或者针对项目的提交进行规划。
+description: 通过电子邮件发送Analysis Workspace项目或将其计划以供投放。
 keywords: Analysis Workspace
-title: 发送文件 - 计划交付项目
+title: 计划项目
+topic: Reports and analytics
+uuid: 9244d7b2-1b7e-4323-98ef-cf22de3b666a
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: c4c6bc367ba1a45146267b968edb88a634cbc7ae
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 76%
+source-wordcount: '465'
+ht-degree: 8%
 
 ---
 
 
-# 发送文件 - 计划交付项目
+# 计划项目
 
->[!NOTE]
->
->您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+从工作区 **共享菜单**，则可以通过电子邮件将Analysis Workspace项目发送给选定收件人。 文件可以以CSV或PDF格式发送。
 
-通过电子邮件发送 Analysis Workspace 项目，或者针对项目的提交进行规划。
+## 立即发送文件
 
-1. [创建一个 Analysis Workspace 项目](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/t-freeform-project.html)并保存该项目。
-1. 单击&#x200B;**[!UICONTROL 共享]** > **[!UICONTROL 按计划发送文件]**。
+要立即通过电子邮件将文件发送给收件人:
 
-   ![步骤结果](assets/send-file.png)
+1. 单击 **“共享”>“立即发送文件”**.
+1. 指定文件类型（CSV或PDF）。
+1. （可选）添加将包含在电子邮件中的说明，以说明收到的文件。
+1. 添加收件人或组。 还可以输入电子邮件地址。
+1. 单击&#x200B;**立即发送**。
+1. （可选）单击 **显示计划选项** 指定投放计划。
 
-1. 在[!UICONTROL 发送文件]页面中，指定文件类型（CSV 或 PDF）。
+## 按计划发送文件
 
-   ![步骤结果](assets/send-file-pop-up.png)
+要通过电子邮件将循环计划上的文件发送给收件人，请执行以下操作：
 
-1. 添加收件人的电子邮件地址或名称，然后单击&#x200B;**[!UICONTROL 立即发送]**。
-1. （可选）单击&#x200B;**[!UICONTROL 显示计划选项]**&#x200B;以指定提交计划，然后单击&#x200B;**[!UICONTROL 按计划发送]**。
-1. 在&#x200B;**[!UICONTROL 组件]** > [计划项目](/help/analysis-workspace/curate-share/schedule-projects.md)中管理计划项目。
+1. 单击 **“共享”>“在计划时发送文件”**.
+1. 指定文件类型（CSV或PDF）。
+1. （可选）添加将包含在电子邮件中的说明，以说明收到的文件。
+1. 添加收件人或组。 还可以输入电子邮件地址。
+1. 通过修改开始和结束输入指定计划应传送的范围。 结束日期必须在创建或修改计划之日起的一年内。
+1. 指定投放频率。 每个频率允许不同的自定义。
+1. 单击 **在计划时发送**.
+
+## 计划项目管理器
+
+计划的Analysis Workspace项目可在 **“分析”>“组件”>“计划项目”**.
+
+在计划项目管理器中，您可以编辑和删除重复的项目计划。 在搜索栏中或使用左边栏中的筛选器选项搜索计划。 您可以按标记、批准的计划、所有者等进行筛选。
+
+以下是“计划项目”管理器中的常见操作：
+
+| 操作 | 描述 |
+|---|---|
+| **编辑计划** | 单击计划的标题以更新其投放设置。 |
+| **删除计划** | 在列表中选择计划的项目，然后从菜单中选择删除。 这将删除项目的选定计划;不会删除项目本身。 |
+| **添加标记** | 在列表中选择计划的项目，然后选择“标记”或“批准”以组织计划并使其更易于搜索。 |
+| **视图失败的计划** | 导航到左边栏>其他过滤器>未能看到已失败的计划。 |
+| **视图过期计划** | 导航到左边栏>其他过滤器>过期，以查看已过期的计划。 单击计划的标题以设置新的交付计划。 |
+| **视图计划ID** | 导航到右上方的列选项，并将计划ID列添加到表中。 计划的ID通常对调试有用。 |
+
+计划项目管理器可显示特定用户已创建的项目。若应用程序中禁用此用户帐户，则会停止所有计划的提交。计划项目所有权可以 **已转移** 到新用户 **“管理员”>“Analytics用户和资产”>“转移资产”**.
