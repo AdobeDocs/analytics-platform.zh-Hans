@@ -13,9 +13,9 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: 教程
 tutorials-url: https://helpx.adobe.com/cn/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 76cedb931085e8b5b59d7c5c3929bf4b5c010d9d
+source-git-commit: ef0e1823e1343266853253fe29dc25d58c88cdee
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '391'
 ht-degree: 98%
 
 ---
@@ -93,6 +93,7 @@ ht-degree: 98%
    + 组织或共享项目 {#curate-share}
       + [策划工作区项目](analysis-workspace/curate-share/curate.md)
       + [共享工作区项目](analysis-workspace/curate-share/share-projects.md)
+      + [创建可共享链接](analysis-workspace/curate-share/shareable-links.md)
       + [仅查看工作区项目](analysis-workspace/curate-share/view-only-projects.md)
       + [下载 PDF 或 CSV 文件](analysis-workspace/curate-share/download-send.md)
       + [共享和计划项目文件](analysis-workspace/curate-share/send-schedule-files.md)
