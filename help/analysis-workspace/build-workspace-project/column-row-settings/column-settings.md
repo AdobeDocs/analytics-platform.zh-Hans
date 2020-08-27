@@ -3,23 +3,19 @@ description: 列设置允许您配置列格式，其中一些可以是条件格�
 title: 列设置
 uuid: 151d66da-04f7-4d0f-985c-4fdd92bc1308
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: d49e07d14d1b202d9cc12f42d60083c052a1c364
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 93%
+source-wordcount: '628'
+ht-degree: 97%
 
 ---
 
 
-# 列设置
+# [!UICONTROL 列设置]
 
->[!NOTE]
->
->您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+[!UICONTROL 列设置] 允许您配置列格式，其中某些格式可以是条件格式。
 
-列设置允许您配置列格式，其中一些可以是条件格式。
-
-## 列设置 {#section_C5A9C13553BF4BFDAD7FACE0139AECA3}
+## 编辑 [!UICONTROL 列设置] {#column-settings}
 
 要访问“[!UICONTROL 列设置]”，请将自由格式表拖到项目中，然后单击列标题中的齿轮图标。
 
@@ -28,7 +24,7 @@ ht-degree: 93%
 您可以&#x200B;**一次编辑多个列**&#x200B;的设置。只需选择多个列并单击其中任意一列的设置图标。您所做的任何更改将应用于有单元格被选中的所有列。
 
 | 元素 | 描述 |
-|--- |--- |
+| --- | --- |
 | 数字 | 确定单元格是否显示/隐藏量度的数值。例如，如果量度是“页面查看次数”，则数值是行项目的页面查看次数。 |
 | 百分比 | 确定单元格是否显示/隐藏量度的百分比值。例如，如果量度是“页面查看次数”，则百分比值等于行项目的页面查看次数除以该列的页面查看总数。注意：我们可以显示大于 100% 的百分比，准确度提高了。此外，我们还将上限调整为 1,000%，以确保允许列值有充足的变化范围。 |
 | 异常 | 确定此列中的值是否要运行异常检测。 |
@@ -39,33 +35,30 @@ ht-degree: 93%
 | 条件格式 | 请参阅以下部分。 |
 | 表单元格预览 | 显示应用当前所选的格式选项时，每个单元格的预览效果。 |
 
-
-## 条件格式 {#section_3DD847151DA14914888A70FC4FD7BDFB}
+## 条件格式 {#conditional-formatting}
 
 条件格式将格式应用于由您定义的上限、中点和下限。除非选择了“自定义”限制，否则对于各种划分，还将在自由格式表格中自动应用条件格式（颜色等）。
 
 ![](assets/conditional-formatting.png)
 
 | 元素 | 描述 |
-|--- |--- |
-| 条件格式 | 根据数据值，将以下颜色应用于单元格： <ul><li>绿色：高值</li><li>黄色：中点值</li><li>红色：低值</li></ul><br>替换表中的维度会重置条件格式限制。替换量度会重新计算此列的限制（其中，量度在 X 轴上，维度在 Y 轴上）。 |
-| 使用百分比限制 | 允许您根据每个量度的百分比值使用上限、中点和下限。此选项适用于完全基于百分比的量度（如跳出率）以及包含计数和百分比的量度（如页面查看次数）。 |
-| 自动生成 | 自动生成条件格式的限制。上限为此列中的最大值。下限为最小值，中点为上限和下限的平均值。 |
-| 自定义 | 您可以为条件格式手动分配上限、中点和下限字段的值。这可以让您灵活地决定列值何时为好、中或差。 |
-| 表单元格预览 | 显示应用当前所选的格式选项时，每个单元格的预览效果。 |
+| --- | --- |
+| 条件格式 | 根据数据值，将以下颜色应用于单元格： <ul><li>绿色：高值</li><li>黄色：中点值</li><li>红色：低值</li></ul> <br>替换表中的维度会重置条件格式限制。替换量度会重新计算此列的限制（其中，量度在 X 轴上，维度在 Y 轴上）。 |
+| 使用百分比限制 | 将限制范围更改为基于百分比而不是绝对值. 此选项适用于完全基于百分比的量度（如跳出率）以及包含计数和百分比的量度（如页面查看次数）。 |
+| 自动生成 | 根据数据自动计算上限/中值/下限. 上限为此列中的最大值。下限为最小值，中点为上限和下限的平均值。 |
+| 自定义 | 手动指定上限/中值/下限. 这可以让您灵活地决定列值何时为好、中或差。 |
 
-## 使用非默认的属性模型
+## 使用非默认的属性模型 {#attribution}
 
-Analysis Workspace支 [持几乎](../../attribution/overview.md) 任何指标的归因。
+Analysis Workspace 支持对几乎所有量度进行[归因](../../attribution/overview.md)。
 
 1. 单击“自由格式表”列中的“设置”（齿轮）图标。
 
-   ![归因复选框](assets/attribution-checkbox.png)
+   ![“归因”复选框](assets/attribution-checkbox.png)
 
-2. 在&#x200B;**[!UICONTROL 数据设置]**&#x200B;下，选中&#x200B;**[!UICONTROL 使用非默认归因模型]**。For more information on different attribution models, see [Attribution models](../../attribution/models.md).
+1. 在&#x200B;**[!UICONTROL 数据设置]**&#x200B;下，选中&#x200B;**[!UICONTROL 使用非默认归因模型]**。有关不同归因模型的更多信息，请参阅[归因模型](../../attribution/models.md)。
 
    ![选择归因模型](assets/attribution-select.png)
-
 
 >[!MORELIKETHIS]
 >
