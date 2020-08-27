@@ -3,9 +3,9 @@ description: 使用“摘要编号”和“更改”可视化显示项目中的�
 title: 概要数字和概要更改
 uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
 translation-type: tm+mt
-source-git-commit: 158c9da54f7d5dcdd0cca6223b5d4833df53abb7
+source-git-commit: 3e8e628ac7fe782e060fd3e0ced209853d53540e
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '403'
 ht-degree: 52%
 
 ---
@@ -21,6 +21,8 @@ ht-degree: 52%
 * 如果选中了单个单元格，此可视化则会显示该单元格的概要。
 * 如果选中了多个单元格，此可视化则会显示所选单元格的第一个单元格。
 * 如果选中了列，此可视化则会选择列中的第一个单元格值。
+
+![概要数字](assets/summary-number.png)
 
 单击 **可视化设置** 在右上角设置以配置“摘要编号”设置：
 
@@ -43,6 +45,8 @@ ht-degree: 52%
 * 如果选中了两个以上的单元格，则会仅考虑比较前两个单元格。
 * 如果选中了单元格范围，则会将范围内选定的第一个单元格与最后一个单元格进行比较。
 * 如果选中了列，会将第一个值与其自身进行比较，结果会显示变化为 0。
+
+![概要变化](assets/summary-change.png)
 
 单击 **可视化设置** 在右上角设置以配置“摘要更改”设置：
 
