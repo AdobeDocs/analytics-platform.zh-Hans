@@ -3,19 +3,15 @@ description: 'null'
 title: 优化 Analysis Workspace 性能
 uuid: de51d03d-d555-4f0e-b19c-4a8f140770fc
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: d49e07d14d1b202d9cc12f42d60083c052a1c364
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 98%
+source-wordcount: '1315'
+ht-degree: 85%
 
 ---
 
 
 # 优化 Analysis Workspace 性能
-
->[!NOTE]
->
->您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
 
 某些因素可能影响 Analysis Workspace 内的项目性能。开始构建项目之前，请务必了解这些因素的具体情况，以便您能够以最佳方式计划和构建项目。下面是一个将会影响性能的因素列表以及优化项目的最佳实践。Analysis Workspace 性能是 Adobe 最优先考虑的事项之一，也是我们每天都在持续改进的对象。
 
@@ -44,17 +40,15 @@ ht-degree: 98%
 
 在整个项目中请求的数据范围将影响 Analysis Workspace 性能。
 
-**数据范围的最佳实践**
+**日期范围的最佳实践**
 
-请尽量不要获取超过需求的数据。
+请尽量不要获取超过需求的数据。将面板日历缩小为分析的相关日期，或在自由格式表中使用日期范围组件（紫色组件）。 表中使用的日期范围将覆盖面板日期范围。 例如，您可以向表列添加上月、上周和昨天，以请求这些特定的数据范围。 有关在 Analysis Workspace 中使用日期范围的更多信息，请观看[此视频](https://www.youtube.com/watch?v=MIkT6FZ5gKk)。
 
-请记住，日期范围（紫色组件）会覆盖面板日期范围。因此，如果您使用不同的日期范围作为列（例如，“上月”、“上周”和“昨天”列），则面板日期范围无需跨所有的列日期范围。可以只将其设置为昨天，因为在自由格式表中使用的数据范围将覆盖面板。有关在 Analysis Workspace 中使用日期范围的更多信息，请观看[此视频](https://www.youtube.com/watch?v=ybmv6EBmhn0)。
-
-使用[日期比较选项](/help/components/date-ranges/time-comparison.md)获取要比较的特定时间段的数据。例如，如果您需要显示上个月与去年同月份的数据比较，则不必将面板设置为最近 13 个月的数据，而只需使用比较时间段选项来显示年同比性能。
+最大限度地减少项目中使用的逐年比较次数。 当计算一年比较时，它会在感兴趣的月份之间查看整整13个月的数据。 这与将面板日期范围更改为最近13个月具有相同的影响。
 
 ## 可视化图表数量
 
-一个项目中包含的图形可视化图表数量将影响 Analysis Workspace 的整体响应性。
+一个项目包含的可视化数量将影响Analysis Workspace的总体响应能力。 这是因为每个可视化，无论是表还是图，都有一个需要请求的数据源。
 
 **可视化图表数量的最佳实践**
 
@@ -67,7 +61,7 @@ ht-degree: 98%
 * 请求的数据范围，如上所述
 * 应用的区段数量；例如，用作自由格式表行的区段
 * 使用复杂区段
-* 自由格式表中的静态项目行或列
+* [自由格式表中的静态项目行或列](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.html)
 * 应用于自由格式表行的过滤器
 * 包含的量度数量，尤其是使用区段的计算量度
 
@@ -87,14 +81,14 @@ ht-degree: 98%
 
 如果需要组织更多项目，请记住，可以选择[直接关联](https://www.youtube.com/watch?v=6IOEewflG2U)到您的项目。可创建项目的内部索引，以便利益相关者能够更轻松地找到所需内容。
 
-如果一个工作区中需要许多面板，请先折叠面板，然后再进行保存和共享。加载项目时，Analysis Workspace 将只加载已展开面板的内容。折叠的面板只有等到用户展开它们后才会加载。此方法有以下两大好处：
+如果一个项目中需要多个面板，请在保存和共享之前折叠面板。 加载项目时，Analysis Workspace 将只加载已展开面板的内容。折叠的面板只有等到用户展开它们后才会加载。此方法有以下两大好处：
 
 * 折叠的面板可节省项目的整体加载时间
 * 折叠的面板能够很好地以一种逻辑方式为报表客户组织项目
 
 ## 报表包大小
 
-报表包的大小看起来像是一种驱动因素，但实际上，它因 Adobe 处理数据的方式，而只在项目性能中起到很小的作用
+报表包的大小看起来像是一种驱动因素，但实际上，它因 Adobe 处理数据的方式，而只在项目性能中起到很小的作用. 本规则可能有例外情况；请咨询您的实施团队或Adobe专家，确定是否可以改进实施以改善Adobe Analytics的整体体验。
 
 ## 同时访问 Analysis Workspace 的人数
 
