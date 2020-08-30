@@ -24,7 +24,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
-> 时间划分维度仅在 Analysis Workspace 中可用。要在其他 Analytics 解决方案中使用时间划分维度，您可以实施 [getTimeParting 插件](https://docs.adobe.com/content/help/zh-Hans/analytics/implementation/vars/plugins/gettimeparting.html)。
+>时间划分维度仅在 Analysis Workspace 中可用。要在其他 Analytics 解决方案中使用时间划分维度，您可以实施 [getTimeParting 插件](https://docs.adobe.com/content/help/zh-Hans/analytics/implementation/vars/plugins/gettimeparting.html)。
 
 Analysis Workspace 中的时间划分维度包括：
 
