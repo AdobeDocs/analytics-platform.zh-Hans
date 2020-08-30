@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 56%
+ht-degree: 93%
 
 ---
 
@@ -18,12 +18,12 @@ ht-degree: 56%
 
 Attribution使分析师能够自定义维度项目如何获得成功事件的认可。 例如：
 
-1. 网站访客单击指向您的某个产品页面的付费搜索链接。 The add the product to the cart, but do not purchase it.
-2. 第二天，查看其朋友的社交媒体帖子，单击链接，然后完成购买。
+1. 网站访客单击指向您的某个产品页面的付费搜索链接。他们将产品添加到购物车，但不购买。
+2. 第二天，他们查看自己朋友的社交媒体帖子，单击链接，然后完成购买。
 
-在某些报表中，您可能希望订单归属于“付费”搜索。 在其他报表中，您可能希望订单归属于社交。 Attribution允许您控制报告的这一方面。 它适用于AdobeAnalytics旗舰版、Prime、Select和Foundation上的所有组织。 If you are not sure which type of contract you have with Adobe, contact your organization&#39;s Account Manager.
+在某些报表中，您可能希望将订单归因到“付费”搜索。在其他报表中，您可能希望将订单归因到社交。通过归因，您能够控制报表对的各个方面。它适用于 Adobe Analytics Ultimate、Prime、Select 和 Foundation 上的所有组织。如果您不确定您与 Adobe 签订的合同类型，请联系贵组织的客户经理。
 
-## 归因IQ的价值
+## 归因 IQ 的价值
 
 给定的客户历程不是线性的，而且往往难以预测。每位客户按各自的进度进行；通常，它们会再次返回、延迟、重新启动或参与其他非线性行为。这些免费操作使得我们很难了解营销工作在整个客户历程中所产生的影响。它还会妨碍将多个数据渠道绑定在一起的工作。
 
@@ -44,7 +44,7 @@ Adobe Analytics 通过让您能够执行以下操作来增强归因：
 
 归因 IQ 包括以下功能：
 
-* [归因面板](../c-panels/attribution.md): 获取任何维度和指标，并快速将其与不同的归因模型进行比较。
-* [Apply attribution to a metric](../build-workspace-project/column-row-settings/column-settings.md): Use a non-default attribution on any metric in a project.
-* [将归因应用于细分](/help/components/dimensions/t-breakdown-fa.md): 对细分使用非默认属性。
-* [比较归因模型](/help/components/apply-create-metrics.md): 快速了解不同归因模型对任何指标的比较情况。
+* [归因面板](../c-panels/attribution.md)：获取任何维度和量度，并快速将其与不同的归因模型进行比较。
+* [将归因应用于度量](../build-workspace-project/column-row-settings/column-settings.md)：对项目中的任何量度使用非默认归因。
+* [将归因应用于细分](/help/components/dimensions/t-breakdown-fa.md)：对细分使用非默认归因。
+* [比较归因模型](/help/components/apply-create-metrics.md)：快速了解任何量度的不同归因模型的异同。
