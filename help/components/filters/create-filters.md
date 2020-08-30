@@ -16,11 +16,11 @@ ht-degree: 38%
 
 您可以通过将任何组件类型(维、维项、事件、度量、段、段模板、日期范围)拖放到面板顶部的筛选器拖放区中来创建即时过滤器。
 
-组件类型将自动转换为过滤器。 Alternatively, you can click the &quot;+&quot; sign in the **[!UICONTROL Add Filter]** drop box.
+组件类型将自动转换为过滤器。 或者，您也可以单击 **[!UICONTROL 添加过滤器]** 的双曲余切值。
 
 请记住以下事项：
 
-* You **cannot** drop the following component types into the filter zone: calculated metrics and dimensions/metrics from which you cannot build filters.
+* 您 **不能** 将以下组件类型拖放到筛选器区域中：无法从中构建过滤器的计算量度和维度／量度。
 * 对于完整尺寸和事件,Analysis Workspace创建“存在”点击过滤器。 示例：“在 eVar1 存在的地方点击”或“在 event1 存在的地方点击”。
 * 如果筛选器拖放区域中删除了“未指定”或“无”，则会自动将其转换为“不存在”筛选器，以正确处理它。
 
@@ -43,7 +43,7 @@ ht-degree: 38%
 
 | 操作 | 描述 |
 |--- |--- |
-| 从选区创建筛选器 | 创建内联筛选器。 选择行，右键单击选择，然后创建内联筛选器。 此过滤器仅应用于打开的项目，不会另存为CJA过滤器。 1. 选择行。2. 右键单击选定的内容。3. Click *Create filter from selection*. |
-| “组件”>“新建过滤器” | 显示Filter Builder。 See [Filter Builder](https://docs.adobe.com/content/help/zh-Hans/analytics/components/segmentation/segmentation-workflow/seg-build.html) for more information about filtering. |
-| “共享”>“共享项目”或“共享”>“策划项目数据” | In [Curate and Share](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6), learn how filters that you apply to the project are available in shared analysis for the recipient. |
+| 从选区创建筛选器 | 创建内联筛选器。 选择行，右键单击选择，然后创建内联筛选器。 此过滤器仅应用于打开的项目，不会另存为CJA过滤器。 1. 选择行。2. 右键单击选定的内容。3.单击 *从选区创建筛选器*. |
+| “组件”>“新建过滤器” | 显示Filter Builder。 请参阅 [Filter Builder](https://docs.adobe.com/content/help/zh-Hans/analytics/components/segmentation/segmentation-workflow/seg-build.html) 的双曲余切值。 |
+| “共享”>“共享项目”或“共享”>“策划项目数据” | 输入 [特选和共享](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6)，了解您应用到项目的过滤器如何在共享分析中为收件人提供。 |
 | 将过滤器用作维 | 视频：[在 Analysis Workspace 中使用区段作为维度](https://www.youtube.com/watch?v=WmSdReKTWto&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS&amp;index=39) |
