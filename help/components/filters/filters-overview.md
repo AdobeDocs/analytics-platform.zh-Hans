@@ -1,9 +1,9 @@
 ---
 title: 过滤器概述
 description: 了解过滤器的用途以及如何创建简单的过滤器。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 09dcb36b96d95276b357e0f1308a977f5db5d711
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 
 过滤器可以基于属性（浏览器类型、设备、访问次数、国家/地区、性别）、交互（营销活动、关键字搜索、搜索引擎）、退出和登录（来自 Facebook 的访客、定义的登陆页、反向链接域）、自定义变量（表单字段、定义的类别、客户 ID）以及其他标准。
 
-您可以在过滤器生成器中构建和保存过滤器，或从“流失”可视化图表（在 Workspace 中）生成过滤器。此外，过滤器可以一起用作堆叠过滤器。
+您可以在过滤器生成器中构建和保存过滤器，或从“流失”可视化图表（在工作区中）生成过滤器。此外，过滤器可以一起用作堆叠过滤器。
 
 >[!IMPORTANT]
 >“过滤器”就是 Adobe Analytics 中的“区段”。我们将区段重命名为过滤器，因为 Adobe Experience Platform 对“区段”有不同的定义。
