@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '1091'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 计算量度生成器允许您将统计和数学函数应用于生成高级计算量度。
 
@@ -22,7 +22,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
-> 当 [!DNL metric] 被标识为函数中的参数时，还允许使用其他量度表达式。例如，[!DNL MAXV(metrics)] 还允许使用 [!DNL MAXV(PageViews + Visits).]
+>当 [!DNL metric] 被标识为函数中的参数时，还允许使用其他量度表达式。例如，[!DNL MAXV(metrics)] 还允许使用 [!DNL MAXV(PageViews + Visits).]
 
 ## table 函数与 row 函数
 
@@ -50,7 +50,7 @@ MAXV(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望计算的量度。 |
+| *度量* | 您希望计算的量度。 |
 
 ## 列最小值
 
@@ -62,7 +62,7 @@ MINV(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望计算的量度。 |
+| *度量* | 您希望计算的量度。 |
 
 ## 列总和
 
@@ -74,7 +74,7 @@ SUM(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求总值或总和的量度。 |
+| *度量* | 您希望求总值或总和的量度。 |
 
 ## 计数 (Table)
 
@@ -86,7 +86,7 @@ COUNT(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望计数的量度。 |
+| *度量* | 您希望计数的量度。 |
 
 ## 指数 (Row)
 
@@ -98,7 +98,7 @@ EXP(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 应用于底数 *e* 的指数。 |
+| *度量* | 应用于底数 *e* 的指数。 |
 
 ## 求幂
 
@@ -118,7 +118,7 @@ MEAN(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求平均数的量度。 |
+| *度量* | 您希望求平均数的量度。 |
 
 ## 中间值 (Table)
 
@@ -130,7 +130,7 @@ MEDIAN(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求中间值的量度。 |
+| *度量* | 您希望求中间值的量度。 |
 
 ## 取模
 
@@ -173,7 +173,7 @@ PERCENTILE(metric,k)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>metric</i> </td> 
+   <td colname="col1"> <i>度量</i> </td> 
    <td colname="col2"> 用于定义相对位置的量度列。 </td> 
   </tr> 
   <tr> 
@@ -200,7 +200,7 @@ QUARTILE(metric,quart)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>metric</i> </td> 
+   <td colname="col1"> <i>度量</i> </td> 
    <td colname="col2"> 您希望求四分位数值的量度。 </td> 
   </tr> 
   <tr> 
@@ -304,7 +304,7 @@ VARIANCE(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求变量的量度。 |
+| *度量* | 您希望求变量的量度。 |
 
 为了计算变量，需要查看整列数字。首先，从该数字列表计算平均值。得出平均值后，浏览每个条目，然后执行以下操作：
 
