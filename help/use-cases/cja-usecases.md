@@ -1,8 +1,11 @@
 ---
 title: Customer Journey Analytics 用例
 description: Customer Journey Analytics 用例
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 8aa4ee719a7e2815cab94448a359b8dcba1307ec
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 100%
 
 ---
 
@@ -13,7 +16,7 @@ Customer Journey Analytics 支持以下主要用例：
 
 * **在历程情境中查看客户**：您可以跨多个渠道按顺序查看和分析数据。来自呼叫中心、销售点系统以及在线属性的数据可以合并到单个报表视图。
 * **为所有人提供洞察信息**：实现数据访问大众化，让更多人利用数据衍生的洞察信息制定业务决策。组织中任何负责客户体验某一方面的人员，都可以基于更完整全面的数据，更快地做出真正明智的决策。
-* **利用适用分析师的数据科学的强大力量**：Customer Journey Analytics 让普通人能够运用数据科学揭示深层的洞察信息和分析。
-* **使用临时报表实现数据集可视化并进行交互**：Workspace 可以使用 Adobe Experience Platform 中符合某些基本规则的任何数据集。
-* **查看非 Web 数据**：Workspace 不再局限于“点击”或“事件”的严格定义。自定义架构允许完全控制数据和定义。
-* **更好地控制数据操作**：更改您上传的数据，创建新数据集，并将这些数据导入 Workspace。Adobe Experience Platform 通过 Experience Cloud 查询服务来提供查询、提取、转换和加载工具。
+* **助力分析师充分利用数据科学的强大力量**：Customer Journey Analytics 让普通人能够运用数据科学获得深入的分析和洞察信息。
+* **使用临时报表实现数据集可视化并进行交互**：工作区可以使用 Adobe Experience Platform 中符合某些基本规则的任何数据集。
+* **查看非 Web 数据**：工作区不再局限于“点击”或“事件”的严格定义。自定义架构允许完全控制数据和定义。
+* **更好地控制数据操作**：更改您上传的数据，创建新数据集，并将这些数据导入工作区。Adobe Experience Platform 通过 Experience Cloud 查询服务来提供查询、提取、转换和加载工具。
