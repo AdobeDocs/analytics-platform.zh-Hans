@@ -1,8 +1,11 @@
 ---
 title: 管理过滤器
 description: 了解如何管理 Customer Journey Analytics 中的过滤器
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
+workflow-type: tm+mt
+source-wordcount: '1109'
+ht-degree: 96%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
 
 过滤器管理器会显示您自己拥有的以及与您共享的所有过滤器。管理员级别的用户可以查看组织内的所有过滤器。此概述介绍了过滤器管理器的用户界面和功能。
 
-通过在顶部导航中转到 **[!UICONTROL Customer Journey Analysis]** > **[!UICONTROL Components]** > **[!UICONTROL Filters]** 来访问过滤器管理器。
+通过转到 **[!UICONTROL 客户旅程分析]** > **[!UICONTROL 组件]** > **[!UICONTROL 过滤器]** 的双曲余切值。
 
 ## 过滤器管理器 UI
 
@@ -71,15 +74,15 @@ source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
 
 1. 在过滤器管理器中，选中要进行标记的过滤器旁边的复选框。此时会出现过滤器管理工具栏。
 
-1. 单击 **[!UICONTROL Tag]** 并
+1. 单击&#x200B;**[!UICONTROL 标记]**&#x200B;并执行以下操作之一
 
    * 从现有标记中进行选择，或者
 
-   * 输入新标记名称并按 **[!UICONTROL Enter]**。
+   * 输入新标记名称并按 **[!UICONTROL Enter]**.
 
-1. 再次单击 **[!UICONTROL Tag]** 以标记区段。
+1. 再次单击“**[!UICONTROL 标记]**”以标记区段。
 
-标记现在应会显示在“标记”列中。（单击右上方的齿轮图标可管理您的列。）您还可以转到 **[!UICONTROL Filters > Tags]** 对标记进行过滤。
+标记现在应会显示在“标记”列中。（单击右上方的齿轮图标可管理您的列。）您还可以转到&#x200B;**[!UICONTROL 过滤器 > 标记]**，对标记进行过滤。
 
 ### 批准过滤器
 
@@ -89,17 +92,17 @@ source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
 
 1. 在过滤器管理器中，选中过滤器标题左侧的复选框。
 
-1. 单击过滤器管理任务栏中的 **[!UICONTROL Approve]**。
+1. 单击 **[!UICONTROL 批准]** 中。
 
 1. 考虑将批准的区段与您的组织分享。
 
-1. 单击 **[!UICONTROL OK]**。
+1. 单击&#x200B;**[!UICONTROL 确定]**。
 
    请注意列表中过滤器旁的批准图标。
 
    ![](assets/seg_approved.png)
 
-1. 您也可以通过单击 **[!UICONTROL Unapprove]** 来取消批准已批准的过滤器。
+1. 您也可以通过单击&#x200B;**[!UICONTROL 取消批准]**&#x200B;来取消批准已批准的区段。
 
 ### 共享过滤器
 
@@ -121,9 +124,9 @@ source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
 
 1. 在过滤器管理器中，选中要共享的过滤器旁边的复选框。
 
-1. 在过滤器管理工具栏中，单击 **[!UICONTROL Share]**。
+1. 在过滤器管理工具栏中，单击 **[!UICONTROL 共享]**.
 
-1. 如果您是管理员，则可以选择“所有人”或组织中的“组”和“用户”。如果您不是管理员，则只能看到个人用户。使用搜索字段搜索组或用户。单击 **[!UICONTROL Share]**。“共享”图标将会显示在过滤器旁边：![](assets/share_icon.png)
+1. 如果您是管理员，则可以选择“所有人”或组织中的“组”和“用户”。如果您不是管理员，则只能看到个人用户。使用搜索字段搜索组或用户。单击&#x200B;**[!UICONTROL 共享]**。“共享”图标将会显示在过滤器旁边：![](assets/share_icon.png)
 
 1. 您可以过滤与您共享的过滤器，方法是：转到“过滤器”>“其他过滤器”>“已与我共享”。
 
