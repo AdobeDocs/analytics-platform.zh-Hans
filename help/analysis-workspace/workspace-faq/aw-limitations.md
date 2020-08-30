@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '380'
-ht-degree: 87%
+ht-degree: 93%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 以下是 Analysis Workspace 及其相关组件中的已知限制列表：
 
@@ -39,7 +39,7 @@ ht-degree: 87%
 ## “组件”>“过滤器”
 
 * 某些量度和维度不可分段，如[!UICONTROL 发生次数]、[!UICONTROL 唯一访客]，等等。
-* Certain components and operators are unavailable if a filter is created from Workspace (as opposed to being created from [!UICONTROL Components > Filters]). 例如，IP 地址。
+* 如果从Workspace创建过滤器(而不是从 [!UICONTROL “组件”>“过滤器”])。 例如，IP 地址。
 
 ## “组件”>“计算量度”
 
