@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '2949'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 可通过以下方法访问这些函数：选中&#x200B;**[!UICONTROL 函数]**&#x200B;下拉列表中的&#x200B;**[!UICONTROL 显示高级]**。
 
@@ -36,7 +36,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
-> 0（零）表示 False，而任何其他值均表示 True。
+>0（零）表示 False，而任何其他值均表示 True。
 
 ```
 AND(logical_test1,[logical_test2],...)
@@ -103,7 +103,7 @@ ASIN(metric)
 
 | 参数 |  |
 |---|---|
-| *metric* | 所需角的余弦，其范围介于 -1 到 1 之间。 |
+| *度量* | 所需角的余弦，其范围介于 -1 到 1 之间。 |
 
 ## 反正切 (Row)
 
@@ -115,7 +115,7 @@ ATAN(metric)
 
 | 参数 |  |
 |---|---|
-| *metric* | 所需角的余弦，其范围介于 -1 到 1 之间。 |
+| *度量* | 所需角的余弦，其范围介于 -1 到 1 之间。 |
 
 ## 指数回归：预测的 Y (Row)
 
@@ -165,7 +165,7 @@ CEILING(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 要舍入的量度。 |
+| *度量* | 要舍入的量度。 |
 
 ## 余弦 (Row)
 
@@ -177,7 +177,7 @@ COS(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求余弦的弧度角。 |
+| *度量* | 您希望求余弦的弧度角。 |
 
 ## 立方根
 
@@ -189,7 +189,7 @@ CBRT(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求立方根的量度。 |
+| *度量* | 您希望求立方根的量度。 |
 
 ## 累积
 
@@ -214,7 +214,7 @@ CBRT(metric)
 
 >[!NOTE]
 >
-> 使用收入/访客之类的比率量度时，它可能不会按预期工作：它会计算比率的平均值，而不是总计最后 N 行的收入并总计最后 N 行的访客数，然后将二者相除。它使用的是
+>使用收入/访客之类的比率量度时，它可能不会按预期工作：它会计算比率的平均值，而不是总计最后 N 行的收入并总计最后 N 行的访客数，然后将二者相除。它使用的是
 
 ```
 cumul(revenue)/cumul(visitor)
@@ -273,7 +273,7 @@ FLOOR(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望舍入的量度。 |
+| *度量* | 您希望舍入的量度。 |
 
 ## 大于
 
@@ -293,7 +293,7 @@ COSH(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求双曲余弦的弧度角。 |
+| *度量* | 您希望求双曲余弦的弧度角。 |
 
 ## 双曲正弦 (Row)
 
@@ -305,7 +305,7 @@ SINH(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求双曲正弦的弧度角。 |
+| *度量* | 您希望求双曲正弦的弧度角。 |
 
 ## 双曲正切 (Row)
 
@@ -317,7 +317,7 @@ TANH(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求双曲正切的弧度角。 |
+| *度量* | 您希望求双曲正切的弧度角。 |
 
 ## IF (Row)
 
@@ -367,7 +367,7 @@ LOG10(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求以 10 为底数的对数的正实数。 |
+| *度量* | 您希望求以 10 为底数的对数的正实数。 |
 
 ## 对数回归：相关系数 (Table)
 
@@ -433,7 +433,7 @@ LN(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求自然对数的正实数。 |
+| *度量* | 您希望求自然对数的正实数。 |
 
 ## NOT
 
@@ -459,7 +459,7 @@ NOT(logical)
 
 >[!NOTE]
 >
-> 0（零）表示 False，而任何其他值均表示 True。
+>0（零）表示 False，而任何其他值均表示 True。
 
 ```
 OR(logical_test1,[logical_test2],...)
@@ -646,7 +646,7 @@ SIN(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求正弦的弧度角。 |
+| *度量* | 您希望求正弦的弧度角。 |
 
 ## T 分数
 
@@ -688,7 +688,7 @@ TAN (metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求正切的弧度角。 |
+| *度量* | 您希望求正切的弧度角。 |
 
 ## Z 分数 (Row)
 
@@ -702,7 +702,7 @@ Z 分数的方程式为：
 
 >[!NOTE]
 >
->[!DNL μ]  (mu) 和 [!DNL σ] (sigma) 会使用该量度自动计算。
+>[!DNL μ] (mu) 和 [!DNL σ] (sigma) 会使用该量度自动计算。
 
 Z 分数（量度）
 
@@ -715,7 +715,7 @@ Z 分数（量度）
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>metric</i> </td> 
+   <td colname="col1"> <i>度量</i> </td> 
    <td colname="col2"> <p> 返回其首个非零参数的值。 </p> </td> 
   </tr> 
  </tbody> 
@@ -729,5 +729,5 @@ Z 分数（量度）
 
 >[!NOTE]
 >
-> 假定值为正态分布。
+>假定值为正态分布。
 
