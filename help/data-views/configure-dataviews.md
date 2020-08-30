@@ -1,9 +1,9 @@
 ---
 title: 配置数据视图和属性
 description: 介绍如何在 Customer Journey Analytics 中创建 Platform 数据集的数据视图
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 100%
 
