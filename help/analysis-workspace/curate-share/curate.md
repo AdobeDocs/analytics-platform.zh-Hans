@@ -1,12 +1,12 @@
 ---
-description: 通过“特选”，您可以在共享项目之前限制组件。
+description: “策划”让您可在共享项目前限制组件。
 keywords: Analysis Workspace curation
 title: 策划工作区项目
 translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '526'
-ht-degree: 36%
+ht-degree: 100%
 
 ---
 
@@ -15,54 +15,53 @@ ht-degree: 36%
 
 >[!NOTE]
 >
->您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
-通过特选，您可以在共享项目之前限制组件（维度、量度、区段、日期范围）。 当收件人打开项目时，他们将看到您为其特选的有限组件集。 在共享项目之前，特选是一个可选的但建议的步骤。
+“策划”让您可在共享项目前限制组件（维度、量度、区段、日期范围）。当收件人打开项目时，他们将看到您为其策划的有限组件。策划虽然是一个可选步骤，但建议在共享项目前执行此步骤。
 
 >[!NOTE]
-> 产品配置文件是控制用户可以查看哪些组件的主要机制。它们通过Adobe Experience CloudAdmin Console进行管理。 “策划”是一个次级过滤器。
+> 产品配置文件是控制用户可以查看哪些组件的主要机制。此类配置文件通过 Adobe Experience Cloud Admin Console 进行管理。“策划”是一个次级过滤器。
 
-## 应用项目特选
+## 应用项目策划
 
-1. Click **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**.
-项目中使用的组件将自动添加。
-   **注意**: 如果一个项目有多个报表包，您将在项目中看到每个报表包的特选字段。
-1. （可选）要添加更多组件，请将要共享的组件从左边栏拖到“特 [!UICONTROL 选组件] ”字段。
+1. 单击&#x200B;**[!UICONTROL 共享]** > **[!UICONTROL 策划项目数据]**。将自动添加项目中使用的组件。
+   **注意**：如果一个项目有多个报表包，您将在项目中看到每个报表包都有一个“策划”字段。
+1. （可选）要添加更多组件，请将要共享的组件从左边栏拖到[!UICONTROL 策划组件]字段。
 1. 单击&#x200B;**[!UICONTROL 完成]**。
 
-也可以通过单击“特选”和“共 [!UICONTROL 享”] ，从“共 **[!UICONTROL 享”菜单应用特选]**。 此选项会自动将项目归档到项目中使用的组件。 您可以按照上述步骤添加其他组件。
+也可以通过单击&#x200B;**[!UICONTROL 策划和共享]**&#x200B;从[!UICONTROL 共享]菜单中应用策划。此选项会自动将项目策划为项目中使用的组件。您可以按照上述步骤添加更多组件。
 
 ![](assets/curation-field.png)
 
-## 精选项目视图
+## 应用策划后的项目视图
 
-当收件人打开特选项目时，他们将只看到您定义的特选组件集：
+当收件人打开应用策划后的项目时，他们将只看到您在策划时定义的组件集：
 
 ![](assets/curate-project.png)
 
-## 删除项目特选
+## 删除项目策划
 
-要删除项目特选并恢复左边栏中的完整组件集，请执行以下操作：
-1. Click **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**.
-1. 单击“ **[!UICONTROL 删除特选]**”。
+要删除项目策划并恢复左边栏中的完整组件集，请执行以下操作：
+1. 单击&#x200B;**[!UICONTROL 共享]** > **[!UICONTROL 策划项目数据]**。
+1. 单击&#x200B;**[!UICONTROL 删除策划]**。
 1. 单击&#x200B;**[!UICONTROL 完成]**。
 
-## 虚拟报告套件(VRS)特选
+## 虚拟报表包 (VRS) 策划
 
-要在报表包级别应用特选，以便同时将其应用于许多项目，您可 [以在虚拟报表包(VRS)中特选组件](https://docs.adobe.com/content/help/zh-Hans/analytics/components/virtual-report-suites/vrs-components.html)。
+要在报表包级别应用策划，以便同时将策划应用于多个项目，您可以[在虚拟报表包 (VRS) 中进行组件策划](https://docs.adobe.com/content/help/zh-Hans/analytics/components/virtual-report-suites/vrs-components.html)。
 
 >[!NOTE]
 > 始终先应用 VRS 策划，再应用项目策划。这意味着即使您的策划项目包含某些组件，但是如果策划 VRS 不包含这些组件，系统也会将这些组件滤除。
 
-## 显示所有组件选项
+## “显示所有组件”选项
 
-在精选的项目或VRS中，收件人将显示左边栏中 **[!UICONTROL 的“显示]** 所有组件”选项。 [!UICONTROL “显示全部] ”显示不同的组件集，具体取决于：
+在应用策划后的项目或 VRS 中，收件人将看到左边栏中显示的&#x200B;**[!UICONTROL 显示所有组件]**&#x200B;选项。[!UICONTROL 显示所有组件]选项将显示不同的组件集，具体取决于：
 
 * 用户的权限级别（管理员或非管理员）
-* 项目角色（所有者／编辑者或不是）
-* 应用的特选类型（VRS或项目）
+* 项目角色（所有者/编辑者或非所有者/编辑者）
+* 应用的策划类型（VRS 或项目）
 
-| 策划类型 | 管理员 | 非管理员项目所有者或编辑角色 | 非管理员重复或视图角色 |
+| 策划类型 | 管理员 | 非管理员项目所有者或编辑角色 | 非管理员复制或查看角色 |
 |---|---|---|---|
 | 策划的 VRS | 所有非策划的 VRS 组件 | 此角色拥有或与其共享的非策划的 VRS 组件 | 此角色拥有或与其共享的非策划的 VRS 组件 |
 | 策划的项目 | 所有非策划的项目组件 | 所有非策划的项目组件 | 此角色拥有或与其共享的非策划的项目组件 |
