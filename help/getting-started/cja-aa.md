@@ -1,9 +1,9 @@
 ---
 title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 7d2abfb2cd91ee7574fce10847abb89f14b5388e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '881'
 ht-degree: 100%
 
@@ -64,7 +64,7 @@ ht-degree: 100%
 | --- | --- |
 | 贡献分析 | 计划将会提供支持。 |
 | 区段 IQ | 计划将会提供支持。 |
-| 区段发布（将区段从 Workspace 发送到 Experience Cloud） | 计划将会提供支持。 |
+| 区段发布（将区段从工作区发送到 Experience Cloud） | 计划将会提供支持。 |
 | 用户权限/数据访问控制 | CJA 中的所有用户拥有相同的访问控制 - 这意味着所有用户都有权访问所有连接、数据视图等。在 CJA 中，所有用户基本上都是管理员级用户。计划 2020 年提供支持。 |
 | CSV 下载 | 计划将会提供支持。 |
 | 计划报表/项目 | 计划将会提供支持。 |
