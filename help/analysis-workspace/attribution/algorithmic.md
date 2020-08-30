@@ -1,16 +1,16 @@
 ---
-title: 算法属性
-description: 算法归因模型的详细信息。
+title: 算法归因
+description: 有关算法归因模型的详细信息。
 translation-type: tm+mt
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 14%
+ht-degree: 78%
 
 ---
 
 
-# 算法属性
+# 算法归因
 
 >[!NOTE]
 >
@@ -18,17 +18,17 @@ ht-degree: 14%
 
 >[!NOTE]
 >
->**[!UICONTROL 算法归因]** 目前处于有限测试中。 有关 [详细信息，请参阅](https://docs.adobe.com/content/help/zh-Hans/analytics/landing/an-releases.html) AdobeAnalytics功能版本。
+>**[!UICONTROL 算法归因]** 当前处于有限测试中。 请参阅 [Adobe Analytics功能发布](https://docs.adobe.com/content/help/zh-Hans/analytics/landing/an-releases.html) 的双曲余切值。
 
-Analysis Workspace中 [的算法归因模型](models.md) (Algorithmic attribution model)与其他模型不同之处在于它使用统计技术在报表或自由表格中的维度项目之间分配信用。 与Analysis Workspace中的所有其他归因模型一样，它可用于任何维度或指标，并支持无限细分和细分，并将100%的转换分发到表中的维度（也称为“分数”归因）。
+The Algorithmic [归因模型](models.md) analysis workspace的不同之处在于它使用统计技术在报表或自由形式表中的维度项目之间分配信用。 与 Analysis Workspace 中的所有其他归因模型一样，该模型也可以用于任何维度或量度，支持无限分段和划分，并为表中的维度分配 100% 的转化率（因而也称为“分数”归因）。
 
-基于合作博弈论的Harsanyi Danyis算法用于归因。 哈桑尼派息是沙普利价值解决方案（以诺贝尔经济学奖获得者劳埃德·沙普利命名）的概括，用来在对结果贡献不均的游戏中在玩家之间分配信用。
+归因算法基于合作博弈理论中的 Harsanyi Dividend 算法。Harsanyi Dividend 算法是对“沙普利值”解决方案（以诺贝尔经济学奖获得者罗伊德·沙普利 (Lloyd Shapley) 命名）的推广形式，用于为对结果具有不同贡献的各参与者分配功能值（点数）。
 
-在高层面，每个接触点的转换信用的归因计算将回顾窗口内的每个营销接触点视为必须公平分配盈余的玩家联盟。 每个联盟的盈余分配根据每个子联盟（或先前参与的维度项目）以前递归创建的盈余来确定。 有关详细信息，请参阅约翰·哈萨尼和劳埃德·沙普利的原文：
+概言之，在对每个接触点的转化点数进行归因计算时，会将回顾时间范围内的每个营销接触点视为由各参与者组成的联盟，其中必须在每位参与者之间平均分配剩余价值。每个联盟的盈余分配根据每个子联盟（或先前参与的维度项目）以前递归创建的盈余来确定。 有关更多详细信息，请参阅约翰·海萨尼 (John Harsanyi) 和罗伊德·沙普利的原文：
 
-* 沙普利，劳埃德·S。 (1953)。 N人游戏的价值。 *对博弈论的贡献，2(28)*,307-317。
-* 哈萨尼，约翰C. (1963)。 n人合作博弈的简化协商模型。 *《国际经济评论》* 4(2),194-220年。
+* Shapley, Lloyd S. (1953). A value for n-person games. *Contributions to the Theory of Games, 2(28)*, 307-317.
+* Harsanyi, John C. (1963). A simplified bargaining model for the n-person cooperative game. *International Economic Review 4(2)*, 194-220.
 
 >[!NOTE]
 >
->仅当给定回顾窗口中存在多个接触点时，算法归因的结果才与其他模型不同。 无论归因模型如何，单个接触点的转化率均可获得100%的回报。
+>仅当指定的回顾时间范围内存在多个接触点时，算法归因的结果才会与其他模型不同。无论使用何种归因模型，具有单个接触点的转化均可获得 100% 的点数。
