@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '233'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 现在，您可以通过选择不同的调色板或指定与公司品牌颜色相匹配的个性化调色板，来更改工作区中使用的可视化图表调色板。这项功能会影响工作区中的大多数可视化图表，但&#x200B;**不会**&#x200B;影响概要变化、自由格式表中的条件格式和地图可视化图表。
 
 >[!NOTE]
 >
-> Internet Explorer 11 未启用调色板支持。
+>Internet Explorer 11 未启用调色板支持。
 
 ![](assets/color_palettes.png)
 
