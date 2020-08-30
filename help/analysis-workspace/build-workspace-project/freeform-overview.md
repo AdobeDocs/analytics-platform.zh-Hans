@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '727'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 **[!UICONTROL Analytics]** > **[!UICONTROL 工作区]**
 
@@ -37,7 +37,7 @@ ht-degree: 96%
 
 | 元素 | 描述 |
 |---|---|
-| 项目[模板](/help/analysis-workspace/build-workspace-project/starter-projects.md) | 您可以按原样使用这些预填充项目模板，或调整它们以符合您的需要（例如，添加或替换量度或可视化图表），然后取一个新名称将它们保存。 |
+| 项目 [模板](/help/analysis-workspace/build-workspace-project/starter-projects.md) | 您可以按原样使用这些预填充项目模板，或调整它们以符合您的需要（例如，添加或替换量度或可视化图表），然后取一个新名称将它们保存。 |
 | [新建项目](/help/analysis-workspace/home.md) | 单击此链接可重新启动一个新项目。 |
 | 管理项目 | 单击此链接将会转到项目组件管理器（**[!UICONTROL Analytics]** > **[!UICONTROL 组件]** > **[!UICONTROL 项目]**），其中列出了您的所有项目，并允许您标记、共享、删除、重命名、批准、复制项目以及将项目导出到 CSV。 |
 | 查看教程 | 转到 [Analysis Workspace YouTube 视频](https://www.youtube.com/playlist?list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS)。 |
@@ -75,7 +75,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
-> 标有星号 (*) 的选项仅在&#x200B;**已保存**&#x200B;项目中显示。
+>标有星号 (*) 的选项仅在&#x200B;**已保存**&#x200B;项目中显示。
 
 | 项目 | 编辑 | 插入 | 组件 | 共享 | 帮助 |
 |---|---|---|---|---|---|
