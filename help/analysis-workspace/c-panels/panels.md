@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '507'
-ht-degree: 80%
+ht-degree: 91%
 
 ---
 
@@ -14,18 +14,18 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->您正在查看Customer Journey Analytics中的Analysis Workspace文档。 其功能集与传统Adobe [Analytics的Analysis Workspace略有不同](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html)。 [了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
-面板是表格和可视化图表的集合。您可以通过工作区左上角的图标访问面板。当您需要根据时间段、业务单位、地理位置等来组织项目时，这些面板将会非常有帮助。以下四种面板类型可Analysis WorkspaceCustomer Journey Analytics:
+面板是表格和可视化图表的集合。您可以通过工作区左上角的图标访问面板。当您需要根据时间段、业务单位、地理位置等来组织项目时，这些面板将会非常有帮助。在Analysis Workspace，有以下四种专题小组供Customer Journey Analytics:
 
 * [空白面板](blank-panel.md)
 * [快速分析面板](quickinsight.md)
 * [归因面板](attribution.md)
 * [自由格式面板](freeform-panel.md)
 
-“快速洞察”、“空白”和“自由形式”面板是开始分析的绝佳场所，而“归因IQ”面板则适合用于更高级的分析。 项目 `"+"` 中有一个按钮，因此您可以随时添加空白面板。
+“快速洞察”、“空白”和“自由格式”面板是开始分析的绝佳场所，而Attribution IQ面板则适用于更高级的分析。 项目中有一个 `"+"` 按钮，通过该按钮，您可以随时添加空白面板。
 
-The default starting panel is the Freeform panel, but you can make the [blank panel](/help/analysis-workspace/c-panels/blank-panel.md) your default as well.
+默认的开始面板是自由格式面板，但也可以将[空白面板](/help/analysis-workspace/c-panels/blank-panel.md)设置为默认的开始面板。
 
 ## 面板中的下拉过滤器
 
