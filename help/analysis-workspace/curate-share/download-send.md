@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 814e02648607b6f06e2743cd054c14c892200b44
 workflow-type: tm+mt
 source-wordcount: '1028'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 7%
 
 ![](assets/download-data-viz.png)
 
-## 以CSV格式下载项目 {#download-items}
+## 以 CSV 格式下载项目 {#download-items}
 
 如果要分析表中超过可见的400行数据，请右键单击表标题或任何行，然后选择 **以CSV(Dimension名)形式下载项目**. 此选项最多可导出所选维的50,000个维项（基于表排序），并应用过滤器和段。 如果从表顶部选择此选项，则将导出表中的第一个维。 尽管自由形式表中不强制实施任何限制，但建议在少于20列的表中使用“下载项目”选项以确保最佳性能。
 
