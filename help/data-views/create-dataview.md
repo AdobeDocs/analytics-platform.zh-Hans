@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: de265170126c1a9fc1f66364a79a74ff487d0b71
 workflow-type: tm+mt
 source-wordcount: '540'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -20,17 +20,17 @@ Customer Journey Analytics 中的工作区项目均基于数据视图。
 
 ## 先决条件
 
-在创建数据视图之前，您需要[设置一个或多个与 Experience Platform 数据集的连接](/help/connections/create-connection.md).
+在创建数据视图之前，您需要[设置一个或多个与 Experience Platform 数据集的连接](/help/connections/create-connection.md)。
 
 ## 配置设置
 
-1. 在Customer Journey Analytics中，转到 **[!UICONTROL 数据视图]** 选项卡。
+1. 在 Customer Journey Analytics 中，转到&#x200B;**[!UICONTROL 数据视图]**&#x200B;选项卡。
 
-1. 单击 **[!UICONTROL 添加]** 添加视图并配置其设置。
+1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;以添加数据视图，并配置其设置。
 
    | 会话设置 | 定义 |
    |---|---|
-   | 连接 | 此字段将数据视图链接到您之前建立的连接，该连接包含 [!UICONTROL Experience Platform] 数据集/s |
+   | 连接 | 此字段会将数据视图链接到您之前已建立的连接，其中包含 [!UICONTROL Experience Platform] 数据集。 |
    | 名称 | 必须为数据视图命名。 |
    | 描述 | 不强制要求提供详细描述，但建议提供。 |
    | 添加标记 | 标记让您可以将数据视图组织成不同的类别。 |
@@ -43,11 +43,11 @@ Customer Journey Analytics 中的工作区项目均基于数据视图。
 
 ## 添加组件
 
-1. 现在就可以向数据视图添加组件（维度、量度）了（类似于虚拟报表包中的策划体验）。请注意，数据集中的每个字段现在均已转换成维度或量度。将维度和指标拖入面板或 **[!UICONTROL 全选]** 添加所有组件。
+1. 现在就可以向数据视图添加组件（维度、量度）了（类似于虚拟报表包中的策划体验）。请注意，数据集中的每个字段现在均已转换成维度或量度。将维度和量度拖入面板或单击&#x200B;**[!UICONTROL 全选]**&#x200B;以添加所有组件。
 
    ![](assets/add-all-components.png)
 
-1. 单击 **[!UICONTROL 添加组件]** 选项卡，将维和度量添加到数据视图。
+1. 单击&#x200B;**[!UICONTROL 添加组件]**&#x200B;选项卡，将维度和量度添加到数据视图。
 
    ![](assets/add-all-components2.png)
 
