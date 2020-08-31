@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 46cb6c92d4a6a7ceddb687e7668c1588559f87a7
 workflow-type: tm+mt
 source-wordcount: '933'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -40,9 +40,9 @@ ht-degree: 89%
 
 >[!IMPORTANT]
 >
->CJA不支持查找数据集中的整数。 如果您在查找数据集的XDM模式中添加整数字段，则将不能将这些整数用作度量或计算度量。 例如，如果annualRevenue或totalEmployees定义为整数，则在CJA的报告中它们将显示为“0”。 但是，如果将它们指定为字符串，则可以将它们用作查找信息。
+>CJA 不支持在查询数据集中使用整数。如果您在查询数据集的 XDM 模式中添加整数字段，则不能将这些整数用作量度或计算量度。例如，如果将 annualRevenue 或 totalEmployees 定义为整数，则它们将在 CJA 的报表中显示为“0”。但是，如果将它们指定为字符串，则可以将它们用作查询信息。
 
-例如，annualRevenue或totalEmployees在以下示例中定义为整数，这是原因，它在CJA中显示“0”。
+例如，在以下示例中，annualRevenue 或 totalEmployees 被定义为整数，因此它们在 CJA 中显示为“0”。
 
 1. 在 Adobe Experience Platform 中，转到&#x200B;**[!UICONTROL 数据管理 > 数据集]**。
 1. 单击 **[!UICONTROL + 创建数据集]**。
@@ -79,9 +79,9 @@ ht-degree: 89%
 1. 命名并描述此连接，并根据[这些说明](/help/connections/create-connection.md)配置此连接。
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
-## 5.从此连接创建数据视图
+## 5. 从此连接创建一个数据视图
 
-按照 [创建数据视图](/help/data-views/create-dataview.md).
+按照有关[创建数据视图](/help/data-views/create-dataview.md)的说明进行操作。
 
 * 从数据集添加您所需要的所有组件（维度和量度）。
 
