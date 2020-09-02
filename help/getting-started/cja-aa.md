@@ -2,10 +2,10 @@
 title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
 translation-type: tm+mt
-source-git-commit: 7d2abfb2cd91ee7574fce10847abb89f14b5388e
+source-git-commit: 9733d6471e6f1c886fd27b702654349d6760870c
 workflow-type: tm+mt
-source-wordcount: '881'
-ht-degree: 100%
+source-wordcount: '879'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 | 日期范围 | 计划将会提供自定义日历支持。 |
 | 计算量度 | 请注意，传统 Analysis Workspace 中的任何现有计算量度都不会移植到 CJA。 |
 | 区段 | 现在称为“过滤器” - 请注意，传统 Analysis Workspace 中的任何现有区段都不会移植到 CJA。 |
-| 异常检测 | 自 2020 年 6 月起全面支持 |
+| 异常检测 | 自2020年9月起全面支持 |
 | 归因 IQ | 完全支持 |
 | 项目策划 | 完全支持 |
 | 项目链接 | 完全支持 |
@@ -80,7 +80,7 @@ ht-degree: 100%
 | 功能 | 注释 |
 | --- | --- |
 | A4T | 尚未计划提供支持。 |
-| Video Analytics | 尚未计划提供支持。 |
+| Media Analytics | 尚未计划提供支持。 |
 | Advertising Cloud | 尚未计划提供支持。 |
 | Report Builder（Excel 插件） | 尚未计划提供支持。 |
 | Activity Map | 尚未计划提供支持。 |
@@ -90,14 +90,12 @@ ht-degree: 100%
 
 ## 将永远不支持
 
-| 功能 | 注释 |
-| --- | --- |
-| 使用跨设备协作的人员量度 |  |
-| Reports &amp; Analytics 功能板 |  |
-| Reports &amp; Analytics 书签 |  |
-| Reports &amp; Analytics 目标 |  |
-| Reports &amp; Analytics 日历事件 |  |
-| Ad Hoc Analysis |  |
-| Data Warehouse 报表 | [!UICONTROL Experience Platform 查询服务]将成为 CJA 中这些用例的新接口。 |
-| Mobile Services |  |
-| 数据馈送 |  |
+* 使用跨设备协作的人员量度
+* Reports &amp; Analytics 功能板
+* Reports &amp; Analytics 书签
+* Reports &amp; Analytics 目标
+* Reports &amp; Analytics 日历事件
+* Ad Hoc Analysis
+* data warehouse报告- [!UICONTROL Experience Platform查询服务] 将是CJA中这些用例的新界面。
+* Mobile Services
+* 数据馈送
