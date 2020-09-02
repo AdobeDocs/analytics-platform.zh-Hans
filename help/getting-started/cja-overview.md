@@ -2,10 +2,10 @@
 title: Customer Journey Analytics 概述
 description: Customer Journey Analytics 简介
 translation-type: tm+mt
-source-git-commit: 6f5c3c073069ca7f428d971515342c1a636795e3
+source-git-commit: 7fb439c0796f94e79ae2b738b71cfa85b86f2e8f
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 100%
+source-wordcount: '1202'
+ht-degree: 87%
 
 ---
 
@@ -54,16 +54,20 @@ CJA 与 Adobe Experience Platform 数据集集成，并且支持在 Analysis Wor
 要创建连接、添加数据集等，您需要在 [Admin Console](https://adminconsole.adobe.com/enterprise/) 中拥有以下权限：
 
 * 要管理 Experience Platform 中的数据集，您必须属于可为您赋予“管理数据集”权限的 Platform 产品用户档案。有关更多信息，请参阅 [Adobe Experience Platform 中的访问控制](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md)。
-* 要创建与 Platform 数据集的连接，您必须属于可为您赋予以下权限的 Platform 产品用户档案：
+* 要创建与Experience Platform数据集的连接，您必须是为您授予以下权限的平台产品用户档案的一部分：
    * 查看架构
    * 查看数据集
    * 管理身份命名空间
    * 查看沙盒
-* 要访问 Customer Journey Analytics 或建立连接，还需将您添加到 [Admin Console](https://adminconsole.adobe.com/enterprise/) 中的 Customer Journey Analytics 产品用户档案。
+* 自2020年9月9日起，您还需要作为管理员添加到Customer Journey Analytics的Customer Journey Analytics产品用户档案中， [Admin Console](https://adminconsole.adobe.com/enterprise/). 管理员具有以下权限：
+   * 创建／更新／删除连接或数据视图
+   * 更新／删除由其他用户创建的项目、过滤器、计算指标或区段
+   * 将Workspace项目共享给所有用户
+* Customer Journey Analytics中的非管理员（用户）无法视图数据视图或连接，但可以创建过滤器、项目和计算指标。
 
 ### 术语更新
 
-为了与行业标准保持一致，CJA 中的几项功能已重命名。一些更新的名称包括：
+与传统的Adobe Analytics相比，CJA中的几个功能已更名为符合行业标准。 一些更新的术语包括：
 
 * “区段”现在称为“过滤器”。
 * “虚拟报表包”现在称为“视图”。
@@ -75,7 +79,7 @@ CJA 与 Adobe Experience Platform 数据集集成，并且支持在 Analysis Wor
 
 ## 基于 Adobe Experience Platform 构建的其他功能
 
-Customer Journey Analytics 是依赖于 Adobe Experience Platform 的众多功能之一。此外，基于 Platform 构建的几项其他功能也可让您充分利用数据。
+Customer Journey Analytics 是依赖于 Adobe Experience Platform 的众多功能之一。还以Experience Platform为基础的其他几项功能使您能够充分利用数据。
 
 Adobe Experience Platform 让您可以实现源自任何系统的客户数据和内容的集中化和标准化，并应用数据科学和机器学习来优化个性化体验的设计和交付。Platform 中的客户数据将作为数据集存储，数据集由一个架构和批量数据组成。有关 Platform 的更多详细信息，请参阅 [Adobe Experience Platform 体系架构概述](https://www.adobe.io/apis/experienceplatform/home/overview.html)。
 
