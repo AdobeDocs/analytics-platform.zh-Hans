@@ -3,15 +3,19 @@ description: 使用“摘要编号”和“更改”可视化显示项目中的�
 title: 概要数字和概要更改
 uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
 translation-type: tm+mt
-source-git-commit: 3e8e628ac7fe782e060fd3e0ced209853d53540e
+source-git-commit: 9733d6471e6f1c886fd27b702654349d6760870c
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 52%
+source-wordcount: '438'
+ht-degree: 56%
 
 ---
 
 
 # 概要数字和概要更改
+
+>[!NOTE]
+>
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 ## 概要数字可视化 {#summary-number}
 
