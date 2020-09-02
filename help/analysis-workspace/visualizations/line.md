@@ -3,15 +3,19 @@ description: 使用线条可视化描述趋势（基于时间）数据集
 title: 折线图
 uuid: 0508ff29-43fe-4f3a-a5f7-051869271b55
 translation-type: tm+mt
-source-git-commit: afe5b341ea1b442c23561299fbffce59dae45930
+source-git-commit: 4f163e32787a732526511aeda5f6c1e32becb490
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 15%
+source-wordcount: '443'
+ht-degree: 20%
 
 ---
 
 
 # 折线图
+
+>[!NOTE]
+>
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 “行”可视化使用行表示度量，以显示值在一段时间内的变化情况。 仅当使用时间作为维度时，才可以使用折线图。
 
@@ -35,7 +39,7 @@ ht-degree: 15%
 
 ## 显示最小或最大
 
-下 **[!UICONTROL 可视化设置]** > **[!UICONTROL 叠加]** > **[!UICONTROL 显示最小／最大]**，您可以叠加最小值和最大值标签以快速突出显示度量中的峰值和谷值。
+下 **[!UICONTROL 可视化设置]** > **[!UICONTROL 叠加]** > **[!UICONTROL 显示最小／最大]**，您可以叠加最小值和最大值标签以快速突出显示度量中的峰值和谷值。 注意：最小值／最大值是从可视化中的可见数据点派生的，而不是从维中的完整值集。
 
 ![显示最小／最大](assets/min-max-labels.png)
 
@@ -48,7 +52,7 @@ ht-degree: 15%
 所有模型都采用普通最小二乘拟合：
 
 | 模型 | 描述 |
-|---|---|
+| --- | --- |
 | 线性 | 为简单的线性数据集创建最适合的直线，当数据以稳定速率增加或减少时，该直线很有用。 等式： `y = a + b * x` |
 | 对数 | 创建最适合的曲线，当数据更改率快速增加或减少，然后平铺时，该曲线很有用。 对数趋势线可使用负值和正值。 等式： `y = a + b * log(x)` |
 | 指数 | 创建一条曲线，当数据以不断增加的速度上升或下降时，它非常有用。 如果数据包含零值或负值，则不应使用此选项。 等式： `y = a + e^(b * x)` |
