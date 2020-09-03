@@ -1,9 +1,9 @@
 ---
 title: 组件概述
 description: 了解 CJA 提供了哪些组件，以及如何在报表中使用它们。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e3457b3ad6c991844f83c2213a4991e1e8879e97
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '356'
 ht-degree: 100%
 
