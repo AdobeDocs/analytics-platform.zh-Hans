@@ -3,15 +3,19 @@ description: 您可以通过复制数据或以PDF和CSV格式从Analysis Workspa
 title: 下载 PDF 或 CSV 文件
 uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: 814e02648607b6f06e2743cd054c14c892200b44
+source-git-commit: 23856a744ce66ac03656d84f72b4bce4cdef253a
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 8%
+source-wordcount: '1048'
+ht-degree: 11%
 
 ---
 
 
 # 下载 PDF 或 CSV 文件 从工作区
+
+>[!NOTE]
+>
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 您可以通过多种不同的方式从Analysis Workspace导出数据，具体取决于要在工具外分析的数据集以及哪些人需要接收信息。 导出的数据可以采用复制的数据、CSV或PDF文件的形式。 如果您希望将可视化包含在文件中，则通常首选PDF；而如果您只想要纯文本数据，则首选CSV（或复制的数据）。
 
@@ -36,7 +40,7 @@ ht-degree: 8%
 
 右键单击选项 **[!UICONTROL 复制到剪贴板]** 允许您快速从Workspace复制数据并将其粘贴到其他位置。
 
-* 如果要复制显示的表，请右键单击表标题并选择 **将显示的数据复制到剪贴板**.
+* 如果要复制显示的表，请右键单击表标题并选择 **将数据复制到剪贴板**.
 * 如果要复制数据子集，请在表中进行选择，然后右键单击> **将选区复制到剪贴板**.
 
 此外，热键 `Ctrl+C` 将您的选择复制到剪贴板。 复制后，您可以进入其他工具并粘贴信息(或点击 `Ctrl+V`)。
@@ -47,15 +51,14 @@ ht-degree: 8%
 
 右键单击选项 **[!UICONTROL 以CSV格式下载数据]** 允许您以CSV形式下载数据表或任何可视化的数据源。
 
-* 在任何表的标题中，右键单击 **[!UICONTROL 以CSV格式下载显示的数据]**. 此操作会以CSV格式下载表格中显示的数据。
+* 从任何表或可视化的标题中，右键单击 **[!UICONTROL 以CSV格式下载数据]**. 这将下载表格或基础数据源中显示的数据，以便以CSV形式显示可视化。 注意：地图可视化不支持此选项。
 * 如果在表中进行了选择，该选项将显示 **[!UICONTROL 以CSV格式下载选定内容]**. 与显示的完整表格相比，只有使用此选项下载选择内容。
-* 从任何可视化的标题中，右键单击 **[!UICONTROL 以CSV格式下载数据]**. 这将下载可视化的CSV数据源表。 注意：地图可视化不支持此选项。
 
 ![](assets/download-data-viz.png)
 
 ## 以 CSV 格式下载项目 {#download-items}
 
-如果要分析表中超过可见的400行数据，请右键单击表标题或任何行，然后选择 **以CSV(Dimension名)形式下载项目**. 此选项最多可导出所选维的50,000个维项（基于表排序），并应用过滤器和段。 如果从表顶部选择此选项，则将导出表中的第一个维。 尽管自由形式表中不强制实施任何限制，但建议在少于20列的表中使用“下载项目”选项以确保最佳性能。
+如果要分析表中超过可见的400行数据，请右键单击表标题或任何行，然后选择 **以CSV(Dimension名)形式下载项目**. 此选项最多可导出所选维的50,000个维项目（基于表排序），并应用过滤器和段。 如果从表顶部选择此选项，则将导出表中的第一个维。 尽管自由形式表中不强制实施任何限制，但建议在少于20列的表中使用“下载项目”选项以确保最佳性能。
 
 >[!TIP]
 >
