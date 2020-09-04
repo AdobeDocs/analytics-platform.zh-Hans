@@ -2,10 +2,10 @@
 title: Customer Journey Analytics 概述
 description: Customer Journey Analytics 简介
 translation-type: tm+mt
-source-git-commit: 7fb439c0796f94e79ae2b738b71cfa85b86f2e8f
+source-git-commit: 14b2cbfde4fd76f76addba58d9c22939a00925a9
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 87%
+source-wordcount: '1215'
+ht-degree: 82%
 
 ---
 
@@ -29,7 +29,7 @@ Customer Journey Analytics 的初始版本包括 Analysis Workspace 中的许多
 
 [Cross-Device Analytics ](https://docs.adobe.com/content/help/zh-Hans/analytics/components/cda/cda-home.html)与 Adobe Experience Platform Identity 服务集成，利用协作图形或专用图形来识别数字设备如何映射到人员。它适用于 Adobe Analytics Ultimate 客户。
 
-CJA 与 Adobe Experience Platform 数据集集成，并且支持在 Analysis Workspace 中进行跨渠道分析。尽管 CJA 尚未与协作或专用身份图形集成，但您可以“自带 ID”将数据集合在一起，这些数据集不仅包含数字数据，而且包含线上和线下接触点。下文将详细介绍使用 CJA 的先决条件。
+另一方面，CJA与Adobe Experience Platform数据集相集成，支持Analysis Workspace的跨渠道分析。 尽管 CJA 尚未与协作或专用身份图形集成，但您可以“自带 ID”将数据集合在一起，这些数据集不仅包含数字数据，而且包含线上和线下接触点。下文将详细介绍使用 CJA 的先决条件。
 
 ## 主要用例
 
@@ -49,23 +49,25 @@ CJA 与 Adobe Experience Platform 数据集集成，并且支持在 Analysis Wor
 * 您的组织与 Adobe 签订了一份 Analytics for Select、Prime 或 Ultimate 的有效合同，其中包含 Customer Journey Analytics 附加产品。如果您不确定您拥有哪种合同类型，或不确定您是否拥有 CJA 附加产品，请联系贵公司的客户经理。
 * 您的组织已配置 Adobe Experience Platform。
 
-## 用户访问权限
+## 管理员访问权限
 
 要创建连接、添加数据集等，您需要在 [Admin Console](https://adminconsole.adobe.com/enterprise/) 中拥有以下权限：
 
-* 要管理 Experience Platform 中的数据集，您必须属于可为您赋予“管理数据集”权限的 Platform 产品用户档案。有关更多信息，请参阅 [Adobe Experience Platform 中的访问控制](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md)。
-* 要创建与Experience Platform数据集的连接，您必须是为您授予以下权限的平台产品用户档案的一部分：
-   * 查看架构
-   * 查看数据集
-   * 管理身份命名空间
-   * 查看沙盒
-* 自2020年9月9日起，您还需要作为管理员添加到Customer Journey Analytics的Customer Journey Analytics产品用户档案中， [Admin Console](https://adminconsole.adobe.com/enterprise/). 管理员具有以下权限：
+* 自2020年9月9日起，您需要以管理员身份添加到 **Customer Journey Analytics产品用户档案** 的 [Admin Console](https://adminconsole.adobe.com/enterprise/). 管理员需要以下权限：
    * 创建／更新／删除连接或数据视图
    * 更新／删除由其他用户创建的项目、过滤器、计算指标或区段
    * 将Workspace项目共享给所有用户
-* Customer Journey Analytics中的非管理员（用户）无法视图数据视图或连接，但可以创建过滤器、项目和计算指标。
+* 在Customer Journey Analytics内成为产品管理员还不足以创建、更新或删除连接。 要创建与Experience Platform数据集的连接，您还需要Experience Platform权限。 特别是，您必须是 **Experience Platform产品用户档案** 授予您以下权限：
+   * 查看架构
+   * 管理架构
+   * 查看身份命名空间
+   * 视图数据集有关Experience Platform权限的更多信息，请参阅 [访问控制Adobe Experience Platform](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
 
-### 术语更新
+### 用户访问
+
+Customer Journey Analytics中的非管理员（用户）无法视图数据视图或连接，但可以创建过滤器、项目和计算指标。
+
+## 术语更新
 
 与传统的Adobe Analytics相比，CJA中的几个功能已更名为符合行业标准。 一些更新的术语包括：
 
