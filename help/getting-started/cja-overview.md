@@ -2,7 +2,7 @@
 title: Customer Journey Analytics 概述
 description: Customer Journey Analytics 简介
 translation-type: tm+mt
-source-git-commit: 14b2cbfde4fd76f76addba58d9c22939a00925a9
+source-git-commit: 0e04957e5a89862731b0a5d2c1d880e4c90a17ed
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 82%
@@ -61,7 +61,9 @@ Customer Journey Analytics 的初始版本包括 Analysis Workspace 中的许多
    * 查看架构
    * 管理架构
    * 查看身份命名空间
-   * 视图数据集有关Experience Platform权限的更多信息，请参阅 [访问控制Adobe Experience Platform](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
+   * 查看数据集
+
+有关Experience Platform权限的更多信息，请参阅 [访问控制Adobe Experience Platform](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
 
 ### 用户访问
 
