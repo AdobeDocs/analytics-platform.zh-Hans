@@ -12,11 +12,11 @@ getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: 教程
 tutorials-url: https://helpx.adobe.com/cn/experience-cloud/tutorials.html
-translation-type: ht
-source-git-commit: ef0e1823e1343266853253fe29dc25d58c88cdee
-workflow-type: ht
-source-wordcount: '391'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: abaa78767bb4329ef02b086752eed9d7a0e827af
+workflow-type: tm+mt
+source-wordcount: '395'
+ht-degree: 98%
 
 ---
 
@@ -145,6 +145,7 @@ ht-degree: 100%
    + [Customer Journey Analytics 使用案例](use-cases/cja-usecases.md)
    + [使用对象数组](use-cases/object-arrays.md)
    + [(B2B) 将帐户级别的数据作为查询数据集进行添加](use-cases/b2b.md)
+   + [数据获取用例](use-cases/data-ingestion.md)
 + 隐私权 {#cja-privacy}
    + [隐私权概述](privacy/privacy-overview.md)
 + [CJA 文档更新](doc-changes.md)
