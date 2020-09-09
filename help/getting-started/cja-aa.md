@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9733d6471e6f1c886fd27b702654349d6760870c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '879'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 97%
 | 日期范围 | 计划将会提供自定义日历支持。 |
 | 计算量度 | 请注意，传统 Analysis Workspace 中的任何现有计算量度都不会移植到 CJA。 |
 | 区段 | 现在称为“过滤器” - 请注意，传统 Analysis Workspace 中的任何现有区段都不会移植到 CJA。 |
-| 异常检测 | 自2020年9月起全面支持 |
+| 异常检测 | 自 2020 年 9 月起全面支持 |
 | 归因 IQ | 完全支持 |
 | 项目策划 | 完全支持 |
 | 项目链接 | 完全支持 |
@@ -96,6 +96,6 @@ ht-degree: 97%
 * Reports &amp; Analytics 目标
 * Reports &amp; Analytics 日历事件
 * Ad Hoc Analysis
-* data warehouse报告- [!UICONTROL Experience Platform查询服务] 将是CJA中这些用例的新界面。
+* Data Warehouse 报表 - [!UICONTROL Experience Platform 查询服务]将成为 CJA 中这些用例的新接口。
 * Mobile Services
 * 数据馈送
