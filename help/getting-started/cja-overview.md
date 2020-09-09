@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 0e04957e5a89862731b0a5d2c1d880e4c90a17ed
 workflow-type: tm+mt
 source-wordcount: '1215'
-ht-degree: 82%
+ht-degree: 89%
 
 ---
 
@@ -54,9 +54,9 @@ Customer Journey Analytics 的初始版本包括 Analysis Workspace 中的许多
 要创建连接、添加数据集等，您需要在 [Admin Console](https://adminconsole.adobe.com/enterprise/) 中拥有以下权限：
 
 * 自2020年9月9日起，您需要以管理员身份添加到 **Customer Journey Analytics产品用户档案** 的 [Admin Console](https://adminconsole.adobe.com/enterprise/). 管理员需要以下权限：
-   * 创建／更新／删除连接或数据视图
-   * 更新／删除由其他用户创建的项目、过滤器、计算指标或区段
-   * 将Workspace项目共享给所有用户
+   * 创建/更新/删除连接或数据视图
+   * 更新/删除由其他用户创建的项目、过滤器、计算量度或区段
+   * 将工作区项目共享给所有用户
 * 在Customer Journey Analytics内成为产品管理员还不足以创建、更新或删除连接。 要创建与Experience Platform数据集的连接，您还需要Experience Platform权限。 特别是，您必须是 **Experience Platform产品用户档案** 授予您以下权限：
    * 查看架构
    * 管理架构
@@ -67,11 +67,11 @@ Customer Journey Analytics 的初始版本包括 Analysis Workspace 中的许多
 
 ### 用户访问
 
-Customer Journey Analytics中的非管理员（用户）无法视图数据视图或连接，但可以创建过滤器、项目和计算指标。
+Customer Journey Analytics 中的非管理员（用户）无法查看数据视图或连接，但可以创建过滤器、项目和计算量度。
 
 ## 术语更新
 
-与传统的Adobe Analytics相比，CJA中的几个功能已更名为符合行业标准。 一些更新的术语包括：
+与传统的 Adobe Analytics 相比，CJA 中的一些功能已更名为符合行业标准。一些更新的术语包括：
 
 * “区段”现在称为“过滤器”。
 * “虚拟报表包”现在称为“视图”。
@@ -83,7 +83,7 @@ Customer Journey Analytics中的非管理员（用户）无法视图数据视图
 
 ## 基于 Adobe Experience Platform 构建的其他功能
 
-Customer Journey Analytics 是依赖于 Adobe Experience Platform 的众多功能之一。还以Experience Platform为基础的其他几项功能使您能够充分利用数据。
+Customer Journey Analytics 是依赖于 Adobe Experience Platform 的众多功能之一。此外，基于 Experience Platform 构建的几项其他功能也可让您充分利用数据。
 
 Adobe Experience Platform 让您可以实现源自任何系统的客户数据和内容的集中化和标准化，并应用数据科学和机器学习来优化个性化体验的设计和交付。Platform 中的客户数据将作为数据集存储，数据集由一个架构和批量数据组成。有关 Platform 的更多详细信息，请参阅 [Adobe Experience Platform 体系架构概述](https://www.adobe.io/apis/experienceplatform/home/overview.html)。
 
