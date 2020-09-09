@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics 产品文档
 description: Customer Journey Analytics 登录页面。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 59c255d6428db7795cce507f9de7c3c67ea0c743
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '288'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,12 +23,12 @@ Analytics Select、Prime 和 Ultimate 客户有资格购买此附加产品。有
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>新增项目或特色项目</b> </p> <p> 
      <ul>
-      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-overview.html#user-access-permissions"> 更新了用户权限要求（自2020年9月9日起） </a> </li>
+      <li><a href="https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-overview/cja-overview.html#user-access-permissions"> 更新了用户权限要求（自 2020 年 9 月 9 日起）</a> </li>
       <li><a href="https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-usecases/object-arrays.html"> 使用对象数组 </a> </li>
       <li><a href="https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-usecases/b2b.html"> 将帐户级别的数据作为查询数据集进行添加 </a> </li>
-      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-getting-started.html">Customer Journey Analytics 入门</a> </li> 
-      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-faq.html"> 常见问题解答</a> </li> 
-      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-glossary.html">Customer Journey Analytics 术语表</a> </li> 
+      <li><a href="https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-overview/cja-getting-started.html">Customer Journey Analytics 入门</a> </li> 
+      <li><a href="https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-overview/cja-faq.html"> 常见问题解答</a> </li> 
+      <li><a href="https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-overview/cja-glossary.html">Customer Journey Analytics 术语表</a> </li> 
       <li><a href="https://www.adobe.io/apis/experiencecloud/analytics/docs.html"> Adobe Analytics API 2.0</a> </li> 
      </ul> </p> </td> 
    <td colname="col2" valign="top"> <p class="head"><b>发行说明</b> </p> 
