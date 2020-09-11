@@ -2,7 +2,7 @@
 description: 快速分析是一款面向新工作区用户的工具，可指导用户构建数据表和可视化图表
 title: 快速分析面板
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 468f1f3bbe8ed555e944be49ec3bf3dcc577a23e
 workflow-type: tm+mt
 source-wordcount: '1101'
 ht-degree: 99%
