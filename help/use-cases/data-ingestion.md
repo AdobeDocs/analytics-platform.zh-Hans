@@ -2,17 +2,17 @@
 title: Customer Journey Analytics的数据获取选项
 description: 了解将数据收录到Customer Journey Analytics的不同方式
 translation-type: tm+mt
-source-git-commit: a48ebc2fbd4cb43de4424e9c1805504752a44fce
+source-git-commit: 4ea06ca1f13255c570ccc9f69cb328d57bf975b2
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 28%
+source-wordcount: '487'
+ht-degree: 27%
 
 ---
 
 
 # Customer Journey Analytics的数据获取选项
 
-在将数据引入Customer Journey Analytics方面，您有许多选择。 他们中有些人认为你想转移传统的Adobe Analytics数据，有些人认为你直接从Adobe Experience Platform收集数据。 本参考提供了要遵循的高级步骤。
+在将数据引入Customer Journey Analytics方面，您有许多选择。 他们中有些人认为你想转移传统的Adobe Analytics数据，有些人认为你直接从Adobe Experience Platform收集数据。 本参考提供了要遵循的高级步骤，其中提供了指向更详细信息的链接。
 
 ## 从传统Adobe Analytics采集数据
 
