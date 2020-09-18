@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics 概述
 description: Customer Journey Analytics 简介
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0e04957e5a89862731b0a5d2c1d880e4c90a17ed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1215'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Customer Journey Analytics 的初始版本包括 Analysis Workspace 中的许多
 
 [Cross-Device Analytics ](https://docs.adobe.com/content/help/zh-Hans/analytics/components/cda/cda-home.html)与 Adobe Experience Platform Identity 服务集成，利用协作图形或专用图形来识别数字设备如何映射到人员。它适用于 Adobe Analytics Ultimate 客户。
 
-另一方面，CJA与Adobe Experience Platform数据集相集成，支持Analysis Workspace的跨渠道分析。 尽管 CJA 尚未与协作或专用身份图形集成，但您可以“自带 ID”将数据集合在一起，这些数据集不仅包含数字数据，而且包含线上和线下接触点。下文将详细介绍使用 CJA 的先决条件。
+另一方面，CJA 与 Adobe Experience Platform 数据集集成，并且支持在 Analysis Workspace 中进行跨渠道分析。尽管 CJA 尚未与协作或专用身份图形集成，但您可以“自带 ID”将数据集合在一起，这些数据集不仅包含数字数据，而且包含线上和线下接触点。下文将详细介绍使用 CJA 的先决条件。
 
 ## 主要用例
 
@@ -53,17 +53,17 @@ Customer Journey Analytics 的初始版本包括 Analysis Workspace 中的许多
 
 要创建连接、添加数据集等，您需要在 [Admin Console](https://adminconsole.adobe.com/enterprise/) 中拥有以下权限：
 
-* 自2020年9月9日起，您需要以管理员身份添加到 **Customer Journey Analytics产品用户档案** 的 [Admin Console](https://adminconsole.adobe.com/enterprise/). 管理员需要以下权限：
+* 自 2020 年 9 月 9 日起，要访问 Customer Journey Analytics 或建立连接，需将您作为管理员添加到 [Admin Console](https://adminconsole.adobe.com/enterprise/) 中的 **Customer Journey Analytics 产品用户档案**。管理员需要拥有以下权限：
    * 创建/更新/删除连接或数据视图
    * 更新/删除由其他用户创建的项目、过滤器、计算量度或区段
    * 将工作区项目共享给所有用户
-* 在Customer Journey Analytics内成为产品管理员还不足以创建、更新或删除连接。 要创建与Experience Platform数据集的连接，您还需要Experience Platform权限。 特别是，您必须是 **Experience Platform产品用户档案** 授予您以下权限：
+* 即使在 Customer Journey Analytics 中成为产品管理员，也无法创建、更新或删除连接。要创建与 Experience Platform 数据集的连接，您还需要取得 Experience Platform 权限。具体而言，您必须属于授予您以下权限的 **Experience Platform 产品用户档案**：
    * 查看架构
    * 管理架构
    * 查看身份命名空间
    * 查看数据集
 
-有关Experience Platform权限的更多信息，请参阅 [访问控制Adobe Experience Platform](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
+有关 Experience Platform 权限的更多信息，请参阅 [Adobe Experience Platform 中的访问控制](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md)。
 
 ### 用户访问
 
