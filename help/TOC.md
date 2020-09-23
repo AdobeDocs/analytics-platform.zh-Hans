@@ -5,7 +5,7 @@ product: adobe analytics
 sub-product: 客户历程
 index: true
 user-guide-title: Customer Journey Analytics 指南
-user-guide-description: This guide provides self-help assistance for Customer Journey Analytics.
+user-guide-description: This guide provides self-help assistance for Customer Journey Analytics, Adobe's next-generation solution for cross-channel analytics, based on Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
 solution-title: Experience Cloud
@@ -16,10 +16,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: 教程
 tutorials-url: https://helpx.adobe.com/cn/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 1c5f134fc28fd02d58117d72db9afe5ada84cd40
+source-git-commit: 47e4d06be87ef32d63a1003f5073d75f61d6f38d
 workflow-type: tm+mt
 source-wordcount: '395'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -148,7 +148,7 @@ ht-degree: 98%
    + [Customer Journey Analytics 使用案例](use-cases/cja-usecases.md)
    + [使用对象数组](use-cases/object-arrays.md)
    + [(B2B) 将帐户级别的数据作为查询数据集进行添加](use-cases/b2b.md)
-   + [数据获取用例](use-cases/data-ingestion.md)
+   + [摄取数据用例](use-cases/data-ingestion.md)
 + 隐私权 {#cja-privacy}
    + [隐私权概述](privacy/privacy-overview.md)
 + [CJA 文档更新](doc-changes.md)
