@@ -3,25 +3,21 @@ description: 'null'
 title: 对表格进行分页、过滤和排序
 uuid: 53263cec-c378-459b-9689-6adaeb66e5c9
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 658561ae2f84ab1de87dbb224e3e1b663f64383f
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 100%
+source-wordcount: '92'
+ht-degree: 81%
 
 ---
 
 
 # 对表格进行分页、过滤和排序
 
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+有关概述，请观看此视频教程：
 
-要获取概览信息，请在 YouTube 中观看此视频：
+[在 Analysis Workspace 中对表格进行分页、过滤和排序](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/pagination-filtering-sorting-tables.html)
 
-[在 Analysis Workspace 中对表格进行分页、过滤和排序](https://www.youtube.com/watch?v=2zxpRPCGspg)
-
-## 高级过滤选项
+## 高级过滤选项 {#section_36E92E31442B4EBCB052073590C1F025}
 
 在自由格式表格中，单击维度旁的“过滤器”图标，然后单击“显示高级选项”，则可以使用以下条件进行过滤：
 
