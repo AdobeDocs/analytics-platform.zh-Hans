@@ -3,7 +3,7 @@ description: 您可以通过复制数据或以PDF和CSV格式从Analysis Workspa
 title: 下载 PDF 或 CSV 文件
 uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: 1c82c7c2e61c170b6eb05bfda0c7a79e5a13c4e1
+source-git-commit: 1f7771ced6e57b1fa288bd197d467dcd6de39b4f
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 11%
@@ -96,6 +96,4 @@ ht-degree: 11%
 | --- | --- |
 | 为什么下载的PDF只有一页？ | Workspace此时不会将下载的PDF分页。 |
 | 我是否可以使用“以CSV形式下载项目”选项导出50,000多个项目？ | 虽然每次下载最多可包含50,000个维度项目，但您可以更改表的排序以检索较长的尾项目，或应用过滤器以下载更多特定项目。 |
-| 做什么 **[!UICONTROL 复制可视化]** 是吗？ | **[!UICONTROL 复制可视化]** 不是导出选项。 它允许您将可视化或面板从Workspace中的一个位置复制到另一个位置。 例如，从一个面板到同一项目中的另一个面板，或者从一个项目到另一个项目。 观看视频： |
-
->[!VIDEO](https://video.tv.adobe.com/v/23724)
+| 做什么 **[!UICONTROL 复制可视化]** 是吗？ | **[!UICONTROL 复制可视化]** 不是导出选项。 它允许您将可视化或面板从Workspace中的一个位置复制到另一个位置。 例如，从一个面板到同一项目中的另一个面板，或者从一个项目到另一个项目。 观看视频：>[!VIDEO](https://video.tv.adobe.com/v/23724) |
