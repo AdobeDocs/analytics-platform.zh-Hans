@@ -3,19 +3,15 @@ description: 'null'
 title: 流失概述
 uuid: 2d98899e-e401-4d7a-8af0-de0002f84178
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 658561ae2f84ab1de87dbb224e3e1b663f64383f
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 100%
+source-wordcount: '515'
+ht-degree: 97%
 
 ---
 
 
 # 流失概述
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 流失可视化图表为构建流失报表提供了多个选项。流失报表显示访客从何处离开（流失）或继续通过（流过）预定义的页面序列。
 
@@ -37,7 +33,7 @@ ht-degree: 100%
 * 一般、更宽范围的流量：显示在查看主页的访客中，有多少人继续进行搜索及有多少人最终查看特定项目。
 * 网站上事件之间的关联。显示查看隐私政策后继续购买产品的访客百分比。
 
-[YouTube 上的流失可视化图表](https://www.youtube.com/watch?v=VcrfHSyIoj8&amp;index=52&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (4:15)
+[流失可视化视频教程](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html) (4:15)
 
 ## 区段划分：流量和流失的一项基本功能 {#section_654F37A398C24DDDB1552A543EE29AA9}
 
