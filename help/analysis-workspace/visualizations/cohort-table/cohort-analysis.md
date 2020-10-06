@@ -2,19 +2,15 @@
 title: 什么是同类群组分析？
 description: 了解 Analysis Workspace 中的同类群组分析
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: ff1a11a18de0825b6338de98865e3bddeef14f39
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '468'
 ht-degree: 97%
 
 ---
 
 
 # 什么是[!UICONTROL 同类群组分析]？
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 *`cohort`* 是指一组在特定期限内共享相同特性的人员。例如，在您想了解如何让一个同类群组喜欢某个品牌时，[!UICONTROL 同类群组分析]就能派上用场。您可以轻松识别趋势中的变化，然后相应地采取回应。（网上提供了有关[!UICONTROL 同类群组分析]的解释说明，例如[同类群组分析基础](https://en.wikipedia.org/wiki/Cohort_analysis)。）
 
@@ -30,13 +26,13 @@ ht-degree: 97%
 
 [!UICONTROL 同类群组分析]适用于具有 [!UICONTROL Analysis Workspace] 访问权限的所有 Adobe Analytics 客户。
 
-[YouTube 上的同类群组分析](https://www.youtube.com/watch?v=kqOIYrvV-co&amp;index=45&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (4:36)
+[同期群分析视频教程](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html) (4:36)
 
 >[!IMPORTANT]
 >
 >[!UICONTROL 同类群组分析]
 >
->不支持不可过滤的指标（包括计算指标）、非整数指标（如收入）或“发生次数”。 只有可在区段中使用的量度才能用于
+>不支持不可分段的量度（包括计算量度）、非整数量度（如收入）以及“发生次数”量度。只有可在区段中使用的量度才能用于
 >[!UICONTROL 同类群组分析]，并且这些量度一次只能增加 1 个单位。
 
 ## 同类群组分析功能
