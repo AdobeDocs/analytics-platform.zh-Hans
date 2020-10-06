@@ -3,19 +3,15 @@ description: 'null'
 title: 流量概述
 uuid: fc22b573-2d18-4c29-866c-f317c920d27a
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 100%
+source-wordcount: '207'
+ht-degree: 93%
 
 ---
 
 
 # 流量概述
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 流量功能会显示客户浏览您的网站或应用程序的路径。
 
@@ -29,7 +25,7 @@ ht-degree: 100%
 >
 >在 Analysis Workspace 中和 Reports &amp; Analytics/Ad Hoc Analysis 中对流量应用区段所获得的结果可能有所不同，要了解相关信息，请参阅[区段划分：流量和流失的一项基本功能](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)。
 
-[YouTube 上的流量可视化图表 ](https://www.youtube.com/watch?v=3R1HTM7y_RM&amp;index=55&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS)(4:56)
+[流可视化视频教程](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html)(4:56)
 
 ## 维度间流量 {#section_7AA325E432C846B0AC51E70CCE79B4C0}
 
