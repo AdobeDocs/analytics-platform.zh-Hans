@@ -4,60 +4,64 @@ title: Analysis Workspace 概述
 topic: Reports and analytics
 uuid: 4df6be48-2c88-4b9d-9536-ed64ffbb6ee4
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: ba9629adb93358bf4a44181c880e97ae584556e4
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 100%
+source-wordcount: '474'
+ht-degree: 6%
 
 ---
 
 
 # Analysis Workspace 概述
 
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+Analysis Workspace是一款灵活的浏览器工具，可让您快速构建分析并分享见解。 使用拖放界面，您可以制作分析、添加可视化功能以栩栩如生地呈现数据、创建数据集、与组织中的任何人共享和计划项目。
 
->[!IMPORTANT]
->
->此页面当前正在构建中。
+如果您只有几分钟时间，请观看此简短的概述，了解可能的方法。
 
-Analysis Workspace 去除了单一 Analytics 报表存在的所有典型限制。它提供了一个功能强大而灵活的画布，用于构建自定义分析项目。您可以向一个项目拖放任意数量的数据表、可视化图表和组件（维度、量度、区段和时间粒度）。可以即时创建划分和区段、创建用于分析的同类群组、创建警报、比较区段、进行流量和流失分析，并且组织和计划报表以与公司的其他人员共享。
+>[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
 
-本页包含开始使用的基本说明。掌握基础知识后，您可以转到工作区的高级功能。这些功能包括[归因 IQ](/help/analysis-workspace/attribution/overview.md) 和[异常检测](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)。
+## 登录Adobe Analytics {#login}
 
-有关 Analysis Workspace 功能的完整 YouTube 播放列表可在[此处](https://www.youtube.com/channel/UC8I6bqCk7gO6YdoMz6W5fvw/playlists?view=50&amp;sort=dd&amp;shelf_id=7)获取。
+要开始使用Analysis Workspace，请登录Adobe Analytics，转到 [experience.adobe.com/analytics](https://experience.adobe.com/analytics). 如果之前未为您选择特定项目，您将登录到Workspace项目列表主页。
 
-## 创建简单项目
+![](assets/login-analytics.png)
 
-项目可以包含数据表和要深入分析的任意数量的可视化图表
+## 使用培训教程 {#training-tutorial}
 
+登录后，您的第一站应该是“Analysis Workspace培训教程”，该教程将指导您逐步了解在Workspace中构建第一个分析的常用术语和步骤。 要开始教程，请单击 **[!UICONTROL 创建新项目]** ，然后选择 **培训教程** 的双曲余切值。
 
-## 构建表的两种方式
+![](assets/training-tutorial.png)
 
-## 通用的分析方法
+## 创建新项目 {#new-project}
 
-### 步骤 1：分析维度
+教程完成后，您可以开始构建您的第一个项目。 The **新项目模式** 为您提供了不同的分析启动选项。 您可以选择从空白项目进行开始，或者 [空白移动记分卡](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/mobapp/curator.html)，具体取决于您计划从浏览器还是Adobe Analytics分析移动应用程序共享仪表板。
 
-使用我们在培训教程中提供的定义和示例 - 此反馈适用于所有其余步骤
+![](assets/create-new-project.png)
 
-### 步骤 2：添加度量
+您还可以从预建的分析开始 **模板**,Adobe提供的标准模板或您的组织创建的自定义模板。 根据您所考虑的分析或用例，可以使用多个不同的模板。 [了解更多](/help/analysis-workspace/build-workspace-project/starter-projects.md) 关于可用的不同模板选项。
 
-在此部分介绍添加计算量度
+## 构建分析 {#analysis}
 
-### 步骤 3：更改日期范围
+在您的Workspace项目中， **面板、表格、可视化和组件** 从左边栏访问。 这些是您的项目构件。
 
-### 步骤 4：划分维度
+### 组件
 
-### 步骤 5：将区段应用于数据
+**组件** 维度、量度、细分或日期范围，所有这些都可以合并到 **[!UICONTROL 自由形式表]** 开始回答您的业务问题。 确保熟悉每个 [组件类型](/help/components/overview.md) 然后跳进分析。 掌握组件术语后，即可开始拖放至 [构建分析](/help/analysis-workspace/build-workspace-project/freeform-overview.md) 在 **[!UICONTROL 自由形式表]**.
 
-### 步骤 6：添加基本可视化图表
+![](assets/build-components.png)
 
-在此部分共享有关“快速查看”的提示
+### 可视化图表
 
-### 步骤 7：浏览高级可视化图表
+**可视化**&#x200B;然后，在数据顶部添加条形图或折线图，以可视方式使数据栩栩如生。 在最左边栏上，选择中间 **[!UICONTROL 可视化]** 图标，查看 [可视化](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) 。
 
-突出显示流量、流失、同类群组、地图
+![](assets/build-visualizations.png)
 
-### 步骤 8：策划和共享
+### 面板
 
+**面板** 用于在项目中组织分析，并可包含许多表和可视化。 Analysis Workspace提供的许多专题小组根据少数用户的意见生成了全套分析。 在最左边栏上，选择顶部 **[!UICONTROL 面板]** 图标，查看完整列表 [面板](/help/analysis-workspace/c-panels/panels.md) 。
+
+![](assets/build-panels.png)
+
+## 其他资源 {#resources}
+
+* Adobe优惠数百 [分析视频培训教程](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/overview.html).
