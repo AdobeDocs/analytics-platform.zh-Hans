@@ -2,11 +2,11 @@
 description: 了解如何为项目或可视化图表创建可共享链接
 keywords: Analysis Workspace sharing
 title: 创建可共享链接
-translation-type: ht
-source-git-commit: 814e02648607b6f06e2743cd054c14c892200b44
-workflow-type: ht
-source-wordcount: '287'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 658561ae2f84ab1de87dbb224e3e1b663f64383f
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 93%
 
 ---
 
@@ -28,7 +28,7 @@ Analysis Workspace 提供了多种将项目共享给用户的方法，包括获�
 * 在任意面板标题中，右键单击&#x200B;**[!UICONTROL 获取面板链接]**
 * 在任意表或可视化图表标题中，右键单击&#x200B;**[!UICONTROL 获取可视化图表链接]**
 
-请[观看以下视频](https://www.youtube.com/watch?v=lvmAdKNfWQw)，了解如何创建链接，并使用这些链接将收件人引导至项目的特定部分。
+请[观看以下视频](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html)，了解如何创建链接，并使用这些链接将收件人引导至项目的特定部分。
 
 ![](assets/get-viz-link.png)
 
@@ -36,6 +36,6 @@ Analysis Workspace 提供了多种将项目共享给用户的方法，包括获�
 
 使用各种链接选项的一个技巧是始终将目录置于工作区项目顶部。在目录中，您可以链接到其他相关项目、特定面板和特定可视化图表。这可帮助项目收件人更加轻松地进行导航。
 
-请[观看以下视频](https://www.youtube.com/watch?v=Xo6fTguWm-M)，了解如何通过使用链接和工作区中的富文本编辑器来构建目录。
+请[观看以下视频](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html)，了解如何通过使用链接和工作区中的富文本编辑器来构建目录。
 
 ![](assets/toc.png)
