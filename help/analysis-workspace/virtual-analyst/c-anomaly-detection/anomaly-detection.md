@@ -3,23 +3,19 @@ description: 您可以在 Analysis Workspace 中根据上下文查看和分析�
 title: 异常检测概述
 uuid: 991fde08-198c-4410-9606-d5a4f3dd8339
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 96%
+source-wordcount: '184'
+ht-degree: 92%
 
 ---
 
 
 # 异常检测概述
 
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
-
 您可以在 Analysis Workspace 中根据上下文查看和分析数据异常。
 
-[YouTube 上的异常检测](https://www.youtube.com/watch?v=krXyQCjXoeU&amp;index=63&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (4:53)
+[异常检测视频教程](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html) (4:53)
 
 “异常检测”提供了一种统计方法来确定给定的量度相对于以前的数据发生了什么变化。
 
@@ -34,19 +30,7 @@ ht-degree: 96%
 * 视频缓冲事件剧增
 * 低视频比特率剧增
 
-异常检测和[贡献分析](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html)是 Analysis Workspace 中的核心工作流程。您可以针对任何每日异常运行“贡献分析”，并将结果嵌入到您的 Analysis Workspace 项目中。
-
->[!IMPORTANT]
->
->贡献分析尚未在Customer Journey Analytics中提供。
-
 Analysis Workspace 的异常检测算法包括
 
 * 对每小时、每周和每月粒度以及现有的每天粒度的支持。
 * 季节性（如“黑色星期五”）和假日的概念。
-
-## 关闭异常检测
-
-您可以转到列设置并取消选中&#x200B;**[!UICONTROL 异常]**&#x200B;来在列级别关闭异常检测。
-
-![](assets/turnoff_anomalies.png)
