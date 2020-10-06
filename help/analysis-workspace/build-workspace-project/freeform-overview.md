@@ -5,19 +5,15 @@ title: 创建项目 - 概述
 topic: Reports and analytics
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: ff1a11a18de0825b6338de98865e3bddeef14f39
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 99%
+source-wordcount: '758'
+ht-degree: 84%
 
 ---
 
 
 # 创建项目 - 概述
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 **[!UICONTROL Analytics]** > **[!UICONTROL 工作区]**
 
@@ -37,14 +33,18 @@ ht-degree: 99%
 
 | 元素 | 描述 |
 |---|---|
-| 项目 [模板](/help/analysis-workspace/build-workspace-project/starter-projects.md) | 您可以按原样使用这些预填充项目模板，或调整它们以符合您的需要（例如，添加或替换量度或可视化图表），然后取一个新名称将它们保存。 |
-| [新建项目](/help/analysis-workspace/home.md) | 单击此链接可重新启动一个新项目。 |
+| 新建项目 | 单击此链接可 [开始从头开始的新项目](/help/analysis-workspace/home.md). |
 | 管理项目 | 单击此链接将会转到项目组件管理器（**[!UICONTROL Analytics]** > **[!UICONTROL 组件]** > **[!UICONTROL 项目]**），其中列出了您的所有项目，并允许您标记、共享、删除、重命名、批准、复制项目以及将项目导出到 CSV。 |
-| 查看教程 | 转到 [Analysis Workspace YouTube 视频](https://www.youtube.com/playlist?list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS)。 |
+| 设置为登录页面 | 将此页转换为工作区登陆页。 |
+| 查看教程 | 将您带到 [Analysis Workspace视频教程](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html). |
 | 名称 | 工作区项目名称。 |
-| 创建者 | 创建此项目的人员（您或与您共享项目的人员）。 |
+| 所有者 | 创建此项目的人员（您或与您共享项目的人员）。 |
+| 类型 | 指示这是Workspace项目还是 [Mobile Scorecard](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/mobapp/home.html). |
+| 项目角色 | 指示您是所有者、是否可以编辑项目，或者这是否为重复项目。 |
 | 标记 | 项目组件管理器中或&#x200B;**[!UICONTROL 工作区]** > **[!UICONTROL 项目]** > **[!UICONTROL 项目信息和设置]**&#x200B;下应用于项目的标记。 |
 | 上次修改时间 | 项目上次修改的日期和时间。 |
+| 我最喜欢的项目 | 要将项目标记为收藏，请打开项目，然后单击其名称旁的星形。 它将在您下次打开Workspace时显示在此列表中。 |
+| 经常查看的项目 | 列表您经常打开的所有项目，以便轻松访问。 |
 
 ## 项目信息和设置 {#section_63773D0B9E4543E88068ECECB9EEB4C6}
 
