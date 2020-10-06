@@ -1,11 +1,11 @@
 ---
 title: 组件概述
 description: 了解 CJA 提供了哪些组件，以及如何在报表中使用它们。
-translation-type: ht
-source-git-commit: e3457b3ad6c991844f83c2213a4991e1e8879e97
-workflow-type: ht
-source-wordcount: '356'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 1c82c7c2e61c170b6eb05bfda0c7a79e5a13c4e1
+workflow-type: tm+mt
+source-wordcount: '343'
+ht-degree: 97%
 
 ---
 
@@ -50,5 +50,6 @@ Analysis Workspace 中的组件包括量度、维度、区段和时间粒度，�
 | 共享 | 仅适用于区段。 |
 | 删除 | 仅适用于区段。 |
 
-[YouTube 上的创建量度、区段和日期](https://www.youtube.com/watch?v=XXJuNAte8E8&amp;index=25&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (2:51)
+观看有关创建指标、区段和日期的视频：
 
+>[!VIDEO](https://video.tv.adobe.com/v/23979)
