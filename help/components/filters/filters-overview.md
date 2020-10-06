@@ -2,10 +2,10 @@
 title: 过滤器概述
 description: 了解过滤器的用途以及如何创建简单的过滤器。
 translation-type: tm+mt
-source-git-commit: 09dcb36b96d95276b357e0f1308a977f5db5d711
+source-git-commit: 7996f71206e2d94642c49eb0bdfd79e384dfd8a3
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 100%
+source-wordcount: '877'
+ht-degree: 99%
 
 ---
 
@@ -80,7 +80,7 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 
 事件容器定义要在过滤器中包含或排除的页面事件。点击容器是范围最窄的可用容器，允许您确定符合条件的特定点击和页面查看，让您能够查看单个跟踪代码，或者将行为隔离在站点的特定部分内。当出现某个行为时，您也可能需要准确查明某个特定值，比如下订单时的市场营销渠道。
 
-事件容器包含的值以单个页面划分为基础：
+事件容器包括基于值的单页细分：
 
 * 产品
 
