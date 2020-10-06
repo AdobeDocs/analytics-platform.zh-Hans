@@ -3,30 +3,26 @@ description: 了解 Analysis Workspace 中的可视化图表和可视化图表�
 keywords: Analysis Workspace
 title: 可视化图表概述
 translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
 workflow-type: tm+mt
-source-wordcount: '1091'
-ht-degree: 98%
+source-wordcount: '1046'
+ht-degree: 94%
 
 ---
 
 
 # 可视化图表概述
 
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
-
 工作区提供了许多可视化图表，使您能够生成数据的可视化表示形式，如条形图、圆环图、直方图、折线图、地图、散点图等。每个可视化图表都有其自身的设置，您可以管理这些设置。单击可视化图表的名称可了解更多详细信息。
 
-YouTube 视频：[Analysis Workspace 中的可视化图表类型](https://www.youtube.com/watch?v=b1zLEywRa6w&amp;index=39&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (2:57)
+视频教程： [Analysis Workspace的可视化类型](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/visualization-types.html) (2:57)
 
 | 可视化图表名称 | 描述 |
-|---|---|
-| [面积图](/help/analysis-workspace/visualizations/area.md) | 与折线图类似，只是线条下方显示了彩色区域。当您有多个量度并且希望显示两个或更多量度相交的区域时，可使用面积图。 |
+| --- | --- |
+| [面积图](/help/analysis-workspace/visualizations/area.md) | 就像线图，但线下有彩色区域。 当您有多个量度并且希望显示两个或更多量度相交的区域时，可使用面积图。 |
 | [条形图](/help/analysis-workspace/visualizations/bar.md) | 显示一些垂直条，这些垂直条表示一个或多个量度中的各种值。 |
 | [项目符号图表](/help/analysis-workspace/visualizations/bullet-graph.md) | 显示您感兴趣的值与其他性能范围（目标）进行比较或衡量的结果。 |
-| [同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | *`cohort`* 是指一组在特定期限内共享相同特性的人员。例如，在您想了解如何让一个同类群组喜欢某个品牌时，同类群组分析就能派上用场。您可以轻松识别趋势中的变化，然后相应地采取回应 |
+| [同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | 同类群组是指一组在特定期限内共享相同特性的人员。例如，在您想了解如何让一个同类群组喜欢某个品牌时，同类群组分析就能派上用场。您可以轻松识别趋势中的变化，然后相应地采取回应 |
 | [圆环](/help/analysis-workspace/visualizations/donut.md) | 此可视化图表与饼图类似，它将数据显示为整体的一部分或区段。 |
 | [流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | 流失报表显示访客从何处离开（流失）或继续通过（流过）预定义的页面序列。 |
 | [流量](/help/analysis-workspace/visualizations/c-flow/flow.md) | 显示客户在您的网站和应用程序中的浏览路径。 |
@@ -43,7 +39,7 @@ YouTube 视频：[Analysis Workspace 中的可视化图表类型](https://www.yo
 
 ## “可视化图表”面板 {#section_DC07F032FBEF4046A40F7B95C28DA018}
 
-要显示“可视化”面板，请单击侧边面板中的&#x200B;**[!UICONTROL 可视化]**。
+要显示“可视化”面板，请单击 **[!UICONTROL 可视化]** 的双曲余切值。
 
 ![步骤结果](assets/visualizations.png)
 
@@ -60,7 +56,7 @@ YouTube 视频：[Analysis Workspace 中的可视化图表类型](https://www.yo
 ![](assets/visualization_settings.png)
 
 | 设置 | 描述 |
-|--- |--- |
+| --- | --- |
 | 百分数 | 显示百分数值。 |
 | 100% 堆叠 | 堆叠的面积、堆叠的条形或堆叠的水平条形可视化图表上的此设置将图表变为“100% 堆叠”可视化图表。示例：![](assets/stacked_100_percent.png) |
 | 图例可见 | 让您可以隐藏概要数字/概要变化可视化图表的过滤器详细信息文本。 |
@@ -83,7 +79,7 @@ YouTube 视频：[Analysis Workspace 中的可视化图表类型](https://www.yo
 ![](assets/right-click_menu.png)
 
 | 设置 | 描述 |
-|--- |--- |
+| --- | --- |
 | 插入已复制的可视化图表/面板 | 此设置允许您将已复制的可视化图表/面板粘贴（“插入”）到同一项目的其他位置，或另一个完全不同的项目中。 |
 | 复制可视化图表/面板 | 此设置允许您右键单击并复制可视化图表或面板。 |
 | 生成可视化图表/面板副本 | 生成一个与当前可视化图表完全相同的副本，然后可对其进行修改。 |
@@ -112,4 +108,4 @@ YouTube 视频：[Analysis Workspace 中的可视化图表类型](https://www.yo
 1. 输入新的标签文本。
 1. 按 **[!UICONTROL Enter]** 键保存。
 
-下面是一个[指向该主题相关视频的链接](https://www.youtube.com/watch?v=mry3vDrTml0&amp;index=61&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS)。
+下面是一个[指向该主题相关视频的链接](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html)。
