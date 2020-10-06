@@ -2,10 +2,10 @@
 title: 创建过滤器
 description: 了解过滤器创建用户界面。
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 1c82c7c2e61c170b6eb05bfda0c7a79e5a13c4e1
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 38%
+source-wordcount: '372'
+ht-degree: 33%
 
 ---
 
@@ -46,4 +46,4 @@ ht-degree: 38%
 | 从选区创建筛选器 | 创建内联筛选器。 选择行，右键单击选择，然后创建内联筛选器。 此过滤器仅应用于打开的项目，不会另存为CJA过滤器。 1. 选择行。2. 右键单击选定的内容。3.单击 *从选区创建筛选器*. |
 | “组件”>“新建过滤器” | 显示Filter Builder。 请参阅 [Filter Builder](https://docs.adobe.com/content/help/zh-Hans/analytics/components/segmentation/segmentation-workflow/seg-build.html) 的双曲余切值。 |
 | “共享”>“共享项目”或“共享”>“策划项目数据” | 输入 [特选和共享](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6)，了解您应用到项目的过滤器如何在共享分析中为收件人提供。 |
-| 将过滤器用作维 | 视频：[在 Analysis Workspace 中使用区段作为维度](https://www.youtube.com/watch?v=WmSdReKTWto&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS&amp;index=39) |
+| 将过滤器用作维 | 视频：在Analysis Workspace将过滤器用作Dimension<br>>[!VIDEO](https://video.tv.adobe.com/v/23974) |
