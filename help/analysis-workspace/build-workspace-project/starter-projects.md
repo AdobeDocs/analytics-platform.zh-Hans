@@ -3,10 +3,10 @@ description: 工作区中的模板
 title: 模板
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: 43487b0dc9d0246fc4750fcc0175055899a198b5
+source-git-commit: bb75be2608a9eedaa856cfb5f0a233fff7f8c074
 workflow-type: tm+mt
-source-wordcount: '1420'
-ht-degree: 99%
+source-wordcount: '1395'
+ht-degree: 97%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 99%
 
 您可以按原样使用这些预填充模板，或修改它们以符合您的需要（例如，添加或替换量度或可视化图表），然后起一个新名称保存它们。
 
-[YouTube 上 Analysis Workspace 中的标准模板](https://www.youtube.com/watch?v=aRgYwPneVXg&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS&amp;index=6) (2:46)
+>[!VIDEO](https://video.tv.adobe.com/v/23960) (2:46)
 
 以下是可用的模板和每个模板帮助回答的问题：
 
@@ -81,9 +81,9 @@ ht-degree: 99%
 
 ### 商务
 
-* **Magento：营销与商务**：此模板按营销渠道归因划分您的电子商务转化，并按搜索关键字、登录页面、地理位置等提供分析。有关视频概述，请参阅：
+* **Magento:营销和商务**:此模板按营销渠道归因划分您的电子商务转化，并提供按搜索关键字、登陆页、地理位置等进行分析。 有关视频概述，请参阅：
 
->[!VIDEO](https://www.youtube.com/watch?v=AQOViVLEMHw)
+>[!VIDEO](https://video.tv.adobe.com/v/28164)
 
 ### 媒体
 
