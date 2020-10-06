@@ -2,10 +2,10 @@
 title: 过滤器概述
 description: 了解过滤器的用途以及如何创建简单的过滤器。
 translation-type: tm+mt
-source-git-commit: 7996f71206e2d94642c49eb0bdfd79e384dfd8a3
+source-git-commit: 74b99933fb1b599c829e11117c41235754c189b9
 workflow-type: tm+mt
-source-wordcount: '877'
-ht-degree: 99%
+source-wordcount: '885'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 您可以在过滤器生成器中构建和保存过滤器，或从“流失”可视化图表（在工作区中）生成过滤器。此外，过滤器可以一起用作堆叠过滤器。
 
 >[!IMPORTANT]
->“过滤器”就是 Adobe Analytics 中的“区段”。我们将区段重命名为过滤器，因为 Adobe Experience Platform 对“区段”有不同的定义。
+>“过滤器”就是 Adobe Analytics 中的“区段”。我们将细分重命名为过滤器，因为Adobe Experience Platform [“区段”的不同定义](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html).
 
 过滤器包括[过滤器生成器](/help/components/filters/create-filters.md)和[过滤器管理器](/help/components/filters/manage-filters.md)，前者用于构建过滤器并运行预测试，后者用于在您的组织内收集、标记、批准、设置安全和共享过滤器。
 
@@ -32,7 +32,7 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 ![](assets/sequential_fil.png)
 
 | 访问一 | 访问二 | 访问三 |
-|---|---|---|
+| --- | --- | --- |
 | 访客转到主登录页面 (A)，排除促销活动页面 (B)，然后查看产品页面 (C)。 | 访客再次转到主登录页面 (A)，排除促销活动页面 (B)，再次转到产品页面 (C)，然后转到新页面 (D)。 | 访客进入并按照第一和第二次访问中的相同路线操作，然后排除页面 F，直接转到目标产品页面 (G)。 |
 
 ## 过滤器容器
@@ -51,9 +51,7 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 人员容器包含指定时间段内访客的每次访问和页面查看。人员级别的过滤器会返回满足条件的页面，以及访客查看的所有其他页面（只受定义的日期范围的约束）。作为定义最为广泛的容器，人员容器级别生成的报表将返回跨所有访问的页面查看并允许您生成多访问分析。因此，根据定义的日期范围，人员容器是最容易更改的。人员容器可以包含基于访客总体历史记录的值：
 
 * 首次购买间隔天数
-
 * 原始登录页面
-
 * 原始反向链接域名
 
 ### 会话容器
@@ -61,19 +59,14 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 通过会话容器可以识别页面交互、促销活动或特定会话的转化。会话容器是最常使用的容器，因为每当符合规则，会话容器便会立即捕获整个访问会话的行为，并允许您定义在生成和应用区段时要包含或排除的会话。它可以帮助您回答这些问题：
 
 * 同一会话中，有多少访客查看了“新闻和体育”部分？
-
 * 哪些页面有助于成功转化为销售？
 
 会话包含的值以每次会话的发生次数为基础：
 
 * 会话编号
-
 * 登录页面
-
 * 回访频度
-
 * 参与量度
-
 * 线性分配的量度
 
 ### 事件容器
@@ -83,9 +76,6 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 事件容器包括基于值的单页细分：
 
 * 产品
-
 * 列表属性
-
 * 列表维度
-
 * 促销维度（在事件背景下）
