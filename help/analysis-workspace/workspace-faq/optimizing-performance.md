@@ -3,9 +3,9 @@ description: 影响工作区性能的因素和建议的优化
 title: Analysis Workspace绩效因素及优化
 uuid: de51d03d-d555-4f0e-b19c-4a8f140770fc
 translation-type: tm+mt
-source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
+source-git-commit: 21bf268600c12dbf1db24dbc10028a0c29fc48a7
 workflow-type: tm+mt
-source-wordcount: '2029'
+source-wordcount: '2028'
 ht-degree: 17%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 17%
 
 各种因素都会影响Analysis Workspace内某项目的绩效。 在您开始构建项目之前，必须了解这些参与者是什么，这样您才能以最佳方式规划和构建项目。 本页包含影响性能的一列表因素，以及为确保在Analysis Workspace达到最佳性能而可进行的推荐优化。
 
->[!IMPORTANT 注意]
+>[!IMPORTANT]
 >
 >Analysis Workspace的“性能”页面为有限版本。 [了解更多](https://docs.adobe.com/content/help/zh-Hans/analytics/landing/an-releases.html)
 
