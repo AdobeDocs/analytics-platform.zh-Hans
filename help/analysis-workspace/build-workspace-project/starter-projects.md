@@ -3,7 +3,7 @@ description: 工作区中的模板
 title: 模板
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: bb75be2608a9eedaa856cfb5f0a233fff7f8c074
+source-git-commit: 21bf268600c12dbf1db24dbc10028a0c29fc48a7
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 97%
@@ -59,7 +59,9 @@ ht-degree: 97%
 
 您可以按原样使用这些预填充模板，或修改它们以符合您的需要（例如，添加或替换量度或可视化图表），然后起一个新名称保存它们。
 
->[!VIDEO](https://video.tv.adobe.com/v/23960) (2:46)
+>[!VIDEO](https://video.tv.adobe.com/v/23960)
+
+*(2:46)*
 
 以下是可用的模板和每个模板帮助回答的问题：
 
