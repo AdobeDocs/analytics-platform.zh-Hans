@@ -1,9 +1,9 @@
 ---
 title: Customer Journey Analytics 指南
-description: Customer Journey Analytics 登录页面。
-translation-type: tm+mt
+description: Customer Journey Analytics 登陆页面。
+translation-type: ht
 source-git-commit: 8cf9f257ccf2afd830a7f8e211c8e42b3f786e86
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '286'
 ht-degree: 100%
 
