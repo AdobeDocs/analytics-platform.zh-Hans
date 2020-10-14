@@ -2,10 +2,10 @@
 title: 创建连接
 description: 描述如何在 Customer Journey Analytics 中创建与 Platform 数据集的连接。
 translation-type: tm+mt
-source-git-commit: 59b949cf67c26226f4d337c566641f68e76b41ec
+source-git-commit: fb7b28c0525f7ac6bf8d8e346116c86952a438aa
 workflow-type: tm+mt
-source-wordcount: '1654'
-ht-degree: 100%
+source-wordcount: '1671'
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 100%
 
 1. **[!UICONTROL 数据集 ID]**：此 ID 将自动生成。
 
-1. **[!UICONTROL 时间戳]**：在此处添加内容
+1. **[!UICONTROL 时间戳]**:仅对于事件集，此设置会自动设置为基于事件的模式中的默认时间戳字段 [!UICONTROL Experience Platform].
 
 1. **[!UICONTROL 架构]**：这个[架构](https://docs.adobe.com/content/help/zh-Hans/experience-platform/xdm/schema/composition.html)是以其中创建了数据集的 Adobe Experience Platform 为基础。
 
