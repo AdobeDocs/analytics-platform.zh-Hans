@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics 入门
-description: 了解实施Customer Journey Analytics所需的先决条件和工作流。
+description: 了解实施 Customer Journey Analytics 所需的先决条件和工作流程。
 translation-type: tm+mt
 source-git-commit: 8067bb355934f8f6f1d54776f44abfd853aee231
 workflow-type: tm+mt
 source-wordcount: '538'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
