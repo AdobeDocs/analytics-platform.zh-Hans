@@ -1,10 +1,10 @@
 ---
 title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
-translation-type: ht
-source-git-commit: b0b8d62eaa7ca539b04677c308fbb33345e110fe
-workflow-type: ht
-source-wordcount: '890'
+translation-type: tm+mt
+source-git-commit: b870cf19c05d92de33edfbc0a6142b7b146256d3
+workflow-type: tm+mt
+source-wordcount: '871'
 ht-degree: 100%
 
 ---
@@ -41,7 +41,6 @@ ht-degree: 100%
 | --- | --- |
 | 产品变量 | 当前可用于报表数据的产品变量符合体验报告架构（特别是使用 productListItems 的对象）。 |
 | 可视化图表 | 除地图可视化图表外，支持所有可视化图表。 |
-| AAM 受众 | 如果客户使用 [!UICONTROL Analytics Data Connector] 数据集，此数据将成为 ADC 数据的一部分。 |
 | 项目共享 | 仅支持在 CJA 用户之间共享项目 - 不支持 CJA 与传统 Analysis Workspace 之间共享项目。 |
 | 自定义会话流程 | 支持除移动后台点击之外的所有自定义会话流程功能。 |
 | eVar 持久性设置 | eVar 不再是 CJA 的一部分。但是，持久性设置现在是数据视图的一部分，且可用于所有维度。请记住，持久基于报表时间处理，而不是数据收集处理。这意味着，所有持久性都将基于报表日期范围，而不是整个数据。 |
