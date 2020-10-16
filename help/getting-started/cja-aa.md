@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b0b8d62eaa7ca539b04677c308fbb33345e110fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '890'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 93%
 | VRS 组件策划 | 现在是“数据视图”的一部分。 |
 | 报表时间处理 | CJA 完全依赖于报表时间处理。 |
 | 删除 GDPR | 请注意，GDPR 现在可与 [!UICONTROL Experience Platform] 协调处理 - CJA 会继承 [!UICONTROL Experience Platform] 对基础数据集所做的任何数据更改。 |
-| 用户权限/数据访问控制 | CJA区分Adobe Admin Console产品管理员和用户。 只有产品管理员才能1)创建／更新／删除连接或视图,2)更新／删除其他用户创建的项目、过滤器或计算指标，以及3)将Workspace项目共享给所有用户 |
+| 用户权限/数据访问控制 | CJA 区分 Adobe Admin Console 产品管理员和用户。只有产品管理员才能 1) 创建/更新/删除连接或数据视图，2) 更新/删除其他用户创建的项目、过滤器或计算量度，以及 3) 将工作区项目共享给所有用户 |
 
 ## 受支持，但有注意事项
 
@@ -53,7 +53,7 @@ ht-degree: 93%
 | 功能 | 注释 |
 | --- | --- |
 | 开箱即用的 Analysis Workspace 维度（例如，浏览器类型、反向链接类型、营销渠道、访问次数等） | CJA 本身不提供这些维度。对于使用 Analytics Data Connector (ADC) 的客户，其中部分维度可用，但不是全部维度都可用。请参阅我们的[关于通过 ADC 支持哪些 Analytics 变量的文档](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)。 |
-| 面板 | 完全支持“空白面板”、“归因面板”、“快速分析面板”。不支持“区段比较”、“目标分析”(A4T)和“媒体并发查看器”面板。 |
+| 面板 | 完全支持“空白面板”、“归因面板”、“快速分析面板”。不支持“区段比较”面板、“Analytics for Target (A4T)”面板和“媒体并发查看者”面板。 |
 | 促销 eVar | 除非它们严格符合相同的 XDM 架构，否则促销 eVar 将只能用于基于 ADC 的数据集，（与上述产品列表限制相似）。 |
 | 机器人过滤 | 对于基于 Analytics Data Connector (ADC) 的数据集，会应用机器人过滤。[!UICONTROL Experience Platform] 或 CJA 不会对其他数据集应用常规机器人过滤逻辑。 |
 | 处理规则 | 对于基于 ADC 的数据集，仍会应用处理规则。 |
