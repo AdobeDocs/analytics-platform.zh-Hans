@@ -1,11 +1,11 @@
 ---
 title: 过滤器概述
 description: 了解过滤器的用途以及如何创建简单的过滤器。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 74b99933fb1b599c829e11117c41235754c189b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '885'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 您可以在过滤器生成器中构建和保存过滤器，或从“流失”可视化图表（在工作区中）生成过滤器。此外，过滤器可以一起用作堆叠过滤器。
 
 >[!IMPORTANT]
->“过滤器”就是 Adobe Analytics 中的“区段”。我们将细分重命名为过滤器，因为Adobe Experience Platform [“区段”的不同定义](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html).
+>“过滤器”就是 Adobe Analytics 中的“区段”。我们将区段重命名为过滤器，因为 Adobe Experience Platform [对“区段”有不同的定义](https://docs.adobe.com/content/help/zh-Hans/experience-platform/segmentation/home.html)。
 
 过滤器包括[过滤器生成器](/help/components/filters/create-filters.md)和[过滤器管理器](/help/components/filters/manage-filters.md)，前者用于构建过滤器并运行预测试，后者用于在您的组织内收集、标记、批准、设置安全和共享过滤器。
 
@@ -73,7 +73,7 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 
 事件容器定义要在过滤器中包含或排除的页面事件。点击容器是范围最窄的可用容器，允许您确定符合条件的特定点击和页面查看，让您能够查看单个跟踪代码，或者将行为隔离在站点的特定部分内。当出现某个行为时，您也可能需要准确查明某个特定值，比如下订单时的市场营销渠道。
 
-事件容器包括基于值的单页细分：
+事件容器包括基于值的单页划分：
 
 * 产品
 * 列表属性
