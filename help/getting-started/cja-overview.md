@@ -2,10 +2,10 @@
 title: Customer Journey Analytics 概述
 description: 了解如何通过 Customer Journey Analytics 来使用 Analysis Workspace 处理来自 Experience Platform 的数据。
 translation-type: tm+mt
-source-git-commit: 8067bb355934f8f6f1d54776f44abfd853aee231
+source-git-commit: f52a6788a0a5f3aea23fc783e479c3f8a23a260d
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 100%
+source-wordcount: '1229'
+ht-degree: 93%
 
 ---
 
@@ -53,11 +53,11 @@ Customer Journey Analytics 的初始版本包括 Analysis Workspace 中的许多
 
 要创建连接、添加数据集等，您需要在 [Admin Console](https://adminconsole.adobe.com/enterprise/) 中拥有以下权限：
 
-* 自 2020 年 9 月 9 日起，要访问 Customer Journey Analytics 或建立连接，需将您作为管理员添加到 [Admin Console](https://adminconsole.adobe.com/enterprise/) 中的 **Customer Journey Analytics 产品用户档案**。管理员需要拥有以下权限：
+* 自2020年9月9日起，您需要以管理员身份添加到 **Customer Journey Analytics产品** 的 [Admin Console](https://adminconsole.adobe.com/enterprise/). 产品管理员被授予以下权限：
    * 创建/更新/删除连接或数据视图
    * 更新/删除由其他用户创建的项目、过滤器、计算量度或区段
    * 将工作区项目共享给所有用户
-* 即使在 Customer Journey Analytics 中成为产品管理员，也无法创建、更新或删除连接。要创建与 Experience Platform 数据集的连接，您还需要取得 Experience Platform 权限。具体而言，您必须属于授予您以下权限的 **Experience Platform 产品用户档案**：
+* 仅在Customer Journey Analytics内成为产品管理员是不够的，需要创建、更新或删除连接。 要创建与 Experience Platform 数据集的连接，您还需要取得 Experience Platform 权限。具体而言，您必须属于授予您以下权限的 **Experience Platform 产品用户档案**：
    * 查看架构
    * 管理架构
    * 查看身份命名空间
@@ -67,7 +67,7 @@ Customer Journey Analytics 的初始版本包括 Analysis Workspace 中的许多
 
 ### 用户访问
 
-Customer Journey Analytics 中的非管理员（用户）无法查看数据视图或连接，但可以创建过滤器、项目和计算量度。
+Customer Journey Analytics的非产品管理员（用户）无法视图数据视图或连接，但可以创建过滤器、项目和计算指标。
 
 ## 术语更新
 
