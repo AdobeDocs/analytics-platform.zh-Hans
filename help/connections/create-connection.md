@@ -2,10 +2,10 @@
 title: 创建连接
 description: 描述如何在 Customer Journey Analytics 中创建与 Platform 数据集的连接。
 translation-type: tm+mt
-source-git-commit: fb7b28c0525f7ac6bf8d8e346116c86952a438aa
+source-git-commit: eb7d7d80ee07298f7d0fe308bdc93a3435f2c381
 workflow-type: tm+mt
-source-wordcount: '1671'
-ht-degree: 98%
+source-wordcount: '1679'
+ht-degree: 97%
 
 ---
 
@@ -114,7 +114,7 @@ ht-degree: 98%
 
    * 如果连接中所有数据集的历史数据的累计大小超过 15 亿行，则会出现一条错误消息，指示您无法导入此数量的历史数据。但是，如果您要添加一个包含 10 亿行历史数据的数据集并导入该数据，一周后，再添加另一个同等大小的数据集并导入其历史数据，则导入可正常进行。
    * 我们会优先处理新添加到此连接中数据集的新数据，因此这些新数据的滞后时间最短。
-   * 任何回填（历史）数据的导入速度都会比较慢。
+   * 任何回填（历史）数据都以较慢的速度（最多13个月的数据，而不管大小）导入。
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
