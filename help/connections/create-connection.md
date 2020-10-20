@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: eb7d7d80ee07298f7d0fe308bdc93a3435f2c381
 workflow-type: tm+mt
 source-wordcount: '1679'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 97%
 
 1. **[!UICONTROL 数据集 ID]**：此 ID 将自动生成。
 
-1. **[!UICONTROL 时间戳]**:仅对于事件集，此设置会自动设置为基于事件的模式中的默认时间戳字段 [!UICONTROL Experience Platform].
+1. **[!UICONTROL 时间戳]**：仅对于事件数据集，此设置会自动设置为 [!UICONTROL Experience Platform] 中基于事件的架构的默认时间戳字段。
 
 1. **[!UICONTROL 架构]**：这个[架构](https://docs.adobe.com/content/help/zh-Hans/experience-platform/xdm/schema/composition.html)是以其中创建了数据集的 Adobe Experience Platform 为基础。
 
