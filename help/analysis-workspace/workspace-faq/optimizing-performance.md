@@ -3,15 +3,15 @@ description: 影响工作区性能的因素和建议的优化
 title: Analysis Workspace绩效因素及优化
 uuid: de51d03d-d555-4f0e-b19c-4a8f140770fc
 translation-type: tm+mt
-source-git-commit: 21bf268600c12dbf1db24dbc10028a0c29fc48a7
+source-git-commit: 3928307fb51d1bde628773a91d5f4e2d4e5c2a5c
 workflow-type: tm+mt
-source-wordcount: '2028'
-ht-degree: 17%
+source-wordcount: '2026'
+ht-degree: 20%
 
 ---
 
 
-# Analysis Workspace绩效因素及优化
+# 优化 Analysis Workspace 性能
 
 各种因素都会影响Analysis Workspace内某项目的绩效。 在您开始构建项目之前，必须了解这些参与者是什么，这样您才能以最佳方式规划和构建项目。 本页包含影响性能的一列表因素，以及为确保在Analysis Workspace达到最佳性能而可进行的推荐优化。
 
@@ -35,7 +35,7 @@ ht-degree: 17%
 
 | 因子 | 定义 | 受 | 优化 |
 | --- | --- |--- | --- |
-| 连接至 Adobe | Adobe在性能页打开时发送10个测试调用。 这表示成功调用Adobe的百分比。 | 本地网络问题或Adobe问题将影响此因素。 | 检查status.adobe.com以验证是否存在任何已知服务问题。 然后，验证您的本地网络连接。 |
+| 与 Adobe 的连接 | Adobe在性能页打开时发送10个测试调用。 这表示成功调用Adobe的百分比。 | 本地网络问题或Adobe问题将影响此因素。 | 检查status.adobe.com以验证是否存在任何已知服务问题。 然后，验证您的本地网络连接。 |
 | Internet 带宽 | 您的浏览器对您所在位置的带宽的估计，仅针对Google Chrome进行测试。 建议的阈值为2.0MB/s。 | 您的本地网络连接将影响这一因素。 | 验证本地网络连接。 |
 | Internet 延迟 | Adobe在性能页打开时发送10个测试调用。 这表示每个请求进入Adobe并返回的平均时间。 更简单地说，它是衡量互联网在您所在地和Adobe之间的速度的指标。 建议的阈值小于1秒。 | 本地网络问题、许多打开的浏览器选项卡或Adobe问题将影响这一因素。 | 检查status.adobe.com以验证是否存在任何已知服务问题。 然后，验证您的本地网络连接并关闭未使用的浏览器选项卡。 |
 
@@ -62,7 +62,7 @@ ht-degree: 17%
 | 自由格式表的单元格数量 | 项目中自由形式表单元格的总数，按所有表的行*列计算。 不包括隐藏的数据源。 建议阈值为4000。 | 将表中的列数减少为仅最相关的数据点。 通过调整显示的行数、应用表过滤器或应用段来减少表中的行数。 |
 | 可用组件 | 项目左边栏中检索到的项目中所有报表包的组件总数。 建议阈值为2000。 | 与您的产品管理员讨论如何创建一个精选的虚拟报告套件，它包含一组更为定制的组件。 |
 | 已用的组件 | 项目中使用的组件总数。 建议阈值为100。 | 已使用组件的数量不直接影响性能。 但是，这些组件的复杂性将有助于提高项目的效果。 请参阅下面“其他因素”部分中的推荐优化。 |
-| 最长的日期范围 | 此系数显示使用项目的最长日期范围。 建议的阈值为1年。 | 请尽量不要获取超过需求的数据。将面板日历缩小为分析的相关日期，或在自由格式表中使用日期范围组件（紫色组件）。 表中使用的日期范围将覆盖面板日期范围。 例如，您可以向表列添加上月、上周和昨天，以请求这些特定的数据范围。 有关在 Analysis Workspace 中使用日期范围的更多信息，请观看[此视频](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/date-ranges-and-calendar-in-analysis-workspace.html)。<br><br>此外，还可最大限度地减少项目中使用的逐年比较次数。 当计算一年比较时，它会在感兴趣的月份之间查看整整13个月的数据。 这与将面板日期范围更改为最近13个月具有相同的影响。 |
+| 最长的日期范围 | 此系数显示使用项目的最长日期范围。 建议的阈值为1年。 | 请尽量不要获取超过需求的数据。将面板日历缩小为分析的相关日期，或在自由格式表中使用日期范围组件（紫色组件）。 表中使用的日期范围将覆盖面板日期范围。例如，您可以将上月、上周和昨天添加到表列中，以请求这些特定范围的数据。有关在 Analysis Workspace 中使用日期范围的更多信息，请观看[此视频](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/date-ranges-and-calendar-in-analysis-workspace.html)。<br><br>此外，还可最大限度地减少项目中使用的逐年比较次数。 在计算年度同期比较时，它会查看感兴趣的月份之间整整 13 个月的数据。这与将面板日期范围更改为过去 13 个月具有相同的效果。 |
 
 ## 其他因素
 
