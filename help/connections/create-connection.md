@@ -1,11 +1,11 @@
 ---
 title: 创建连接
 description: 描述如何在 Customer Journey Analytics 中创建与 Platform 数据集的连接。
-translation-type: ht
-source-git-commit: eb7d7d80ee07298f7d0fe308bdc93a3435f2c381
-workflow-type: ht
-source-wordcount: '1679'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 64c77d3080bc2a36af4e80a854f10adce2632064
+workflow-type: tm+mt
+source-wordcount: '1819'
+ht-degree: 84%
 
 ---
 
@@ -100,22 +100,26 @@ ht-degree: 100%
 
 ![启用连接](assets/create-connection2.png)
 
-1. 要启用连接，请定义以下设置：
+1. 要启用连接，请为整个连接（即连接中的所有数据集）定义以下设置：
 
    | 选项 | 描述 |
-   |---|---|
+   | --- | --- |
    | [!UICONTROL 名称连接] | 为连接指定一个描述性名称。如果没有名称，将无法保存连接。 |
    | [!UICONTROL 描述] | 添加更多详细信息以将此连接与其他连接区分开来。 |
    | [!UICONTROL 数据集] | 此连接中包含的数据集。 |
    | [!UICONTROL 从今天开始自动导入此连接中的所有新数据集。] | 如果要创建持续连接，请选择此选项，以便要添加到此连接中数据集的任何新数据批次会自动流入 [!UICONTROL 工作区] 中。 |
-   | [!UICONTROL 导入所有现有数据] | 当选择此选项并保存连接时，将会从 [!DNL Experience Platform] 中导入此连接中所有数据集的所有现有（历史）数据。未来，还将自动导入添加到这个已保存连接的任何新数据集的所有现有历史数据。<br>**请注意，保存此连接后，无法更改此设置。** |
+   | [!UICONTROL 导入所有现有数据] | 当您选择此选项并保存连接时，将从 [!DNL Experience Platform] 将导入或回填此连接中的所有数据集。 未来，还将自动导入添加到这个已保存连接的任何新数据集的所有现有历史数据。<br>**请注意，保存此连接后，无法更改此设置。** |
+   | [!UICONTROL 每日事件的平均数] | 您需要指定要导入的每日事件的平均数（新数据） **和** 返回数据)。 这样，Adobe就可以为此数据分配足够的空间。<br>如果您不知道公司要导入的每日事件的平均数，可以在 [Adobe Experience Platform查询服务](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) 来了解。<!--Rohit to provide and make sure we include multiple datasets.--> |
 
-   **请记住以下事项：**
+1. 单击 **[!UICONTROL 保存和创建数据视图]**. 有关文档，请参阅 [创建数据视图](/help/data-views/create-dataview.md).
 
-   * 如果连接中所有数据集的历史数据的累计大小超过 15 亿行，则会出现一条错误消息，指示您无法导入此数量的历史数据。但是，如果您要添加一个包含 10 亿行历史数据的数据集并导入该数据，一周后，再添加另一个同等大小的数据集并导入其历史数据，则导入可正常进行。
-   * 我们会优先处理新添加到此连接中数据集的新数据，因此这些新数据的滞后时间最短。
-   * 任何回填（历史）数据都会以较慢的速度导入（最多支持 13 个月的数据，不考虑数据大小）。
+### 回填历史数据
 
-1. 单击&#x200B;**[!UICONTROL 保存]**。
+**[!UICONTROL 导入所有现有数据]** 允许您回填历史数据。 请牢记这一点：
 
-工作流程的下一步是[创建数据视图](/help/data-views/create-dataview.md)。
+* 我们将新数据添加到连接中的数据集中，因此此新数据具有最低延迟。
+* 任何回填（历史）数据的导入速度都会比较慢。延迟受您拥有的历史数据量以及 **[!UICONTROL 每日事件的平均数]** 设置。 例如，如果您每天有超过10亿行的数据，加上3年的历史数据，则可能需要数周时间才能导入。 另一方面，如果每天的行数少于100万，而历史数据只有一周，那么这需要不到一小时。
+* 回填适用于整个连接，而不是单独应用于每个数据集。
+* The [Adobe Analytics数据连接器](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) 导入最多13个月的数据，而不管数据大小。
+
+<!--If you do not know the average number of daily events your company is going to import, you can do a simple SQL query in [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) to find out. Rohit to provide and make sure we include multiple datasets.-->
