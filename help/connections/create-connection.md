@@ -2,10 +2,10 @@
 title: 创建连接
 description: 描述如何在 Customer Journey Analytics 中创建与 Platform 数据集的连接。
 translation-type: tm+mt
-source-git-commit: 64c77d3080bc2a36af4e80a854f10adce2632064
+source-git-commit: 619eaeabfbd0fb6a7205488075c1c9cfb0fd5a26
 workflow-type: tm+mt
-source-wordcount: '1819'
-ht-degree: 84%
+source-wordcount: '1844'
+ht-degree: 83%
 
 ---
 
@@ -108,8 +108,8 @@ ht-degree: 84%
    | [!UICONTROL 描述] | 添加更多详细信息以将此连接与其他连接区分开来。 |
    | [!UICONTROL 数据集] | 此连接中包含的数据集。 |
    | [!UICONTROL 从今天开始自动导入此连接中的所有新数据集。] | 如果要创建持续连接，请选择此选项，以便要添加到此连接中数据集的任何新数据批次会自动流入 [!UICONTROL 工作区] 中。 |
-   | [!UICONTROL 导入所有现有数据] | 当您选择此选项并保存连接时，将从 [!DNL Experience Platform] 将导入或回填此连接中的所有数据集。 未来，还将自动导入添加到这个已保存连接的任何新数据集的所有现有历史数据。<br>**请注意，保存此连接后，无法更改此设置。** |
-   | [!UICONTROL 每日事件的平均数] | 您需要指定要导入的每日事件的平均数（新数据） **和** 返回数据)。 这样，Adobe就可以为此数据分配足够的空间。<br>如果您不知道公司要导入的每日事件的平均数，可以在 [Adobe Experience Platform查询服务](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) 来了解。<!--Rohit to provide and make sure we include multiple datasets.--> |
+   | [!UICONTROL 导入所有现有数据] | 当您选择此选项并保存连接时，将从 [!DNL Experience Platform] 将导入或回填此连接中的所有数据集。 未来，还将自动导入添加到这个已保存连接的任何新数据集的所有现有历史数据。另请参阅 [回填历史数据](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) 下。<br>**请注意，保存此连接后，无法更改此设置。** |
+   | [!UICONTROL 每日事件的平均数] | 您需要指定要导入的每日事件的平均数（新数据） **和** 返回数据)。 这样，Adobe就可以为此数据分配足够的空间。<br>如果您不知道公司要导入的每日事件的平均数，可以在 [Adobe Experience Platform查询服务](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) 来了解。 以下是此选项的选择： ![每日事件](assets/daily_size.png) |
 
 1. 单击 **[!UICONTROL 保存和创建数据视图]**. 有关文档，请参阅 [创建数据视图](/help/data-views/create-dataview.md).
 
