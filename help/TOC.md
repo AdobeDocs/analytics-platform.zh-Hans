@@ -16,10 +16,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: 教程
 tutorials-url: https://helpx.adobe.com/cn/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 3fbeb322b21d7211363b3bfaaedbd8acf6c41fa7
+source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 100%
+source-wordcount: '410'
+ht-degree: 98%
 
 ---
 
@@ -46,6 +46,7 @@ ht-degree: 100%
    + [执行高级分析](analysis-workspace/perform-adv-analysis.md)
    + 构建工作区项目 {#build-workspace-project}
       + [创建项目 - 概述](analysis-workspace/build-workspace-project/freeform-overview.md)
+      + [保存项目](analysis-workspace/build-workspace-project/save-projects.md)
       + [模板](analysis-workspace/build-workspace-project/starter-projects.md)
       + 列和行设置 {#column-row-settings}
          + [列设置](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
@@ -94,13 +95,13 @@ ht-degree: 100%
       + [自由格式面板](analysis-workspace/c-panels/freeform-panel.md)
       + [快速分析面板](analysis-workspace/c-panels/quickinsight.md)
    + 组织或共享项目 {#curate-share}
-      + [策划工作区项目](analysis-workspace/curate-share/curate.md)
-      + [共享工作区项目](analysis-workspace/curate-share/share-projects.md)
+      + [“共享”菜单](analysis-workspace/curate-share/send-schedule-files.md)
+      + [特选项目](analysis-workspace/curate-share/curate.md)
+      + [共享项目](analysis-workspace/curate-share/share-projects.md)
       + [创建可共享链接](analysis-workspace/curate-share/shareable-links.md)
-      + [仅查看工作区项目](analysis-workspace/curate-share/view-only-projects.md)
+      + [仅视图项目](analysis-workspace/curate-share/view-only-projects.md)
       + [下载 PDF 或 CSV 文件](analysis-workspace/curate-share/download-send.md)
-      + [共享和计划项目文件](analysis-workspace/curate-share/send-schedule-files.md)
-      + [发送文件 - 计划交付项目](analysis-workspace/curate-share/t-schedule-report.md)
+      + [计划项目](analysis-workspace/curate-share/t-schedule-report.md)
       + [计划项目管理器](analysis-workspace/curate-share/schedule-projects.md)
    + 归因 IQ {#attribution}
       + [归因概述](analysis-workspace/attribution/overview.md)
