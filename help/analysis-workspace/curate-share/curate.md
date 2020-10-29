@@ -3,19 +3,15 @@ description: “策划”让您可在共享项目前限制组件。
 keywords: Analysis Workspace curation
 title: 特选项目
 translation-type: tm+mt
-source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
+source-git-commit: 6f8973fe6277f3b28b13a61cd65d630398fb3aaa
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '489'
 ht-degree: 99%
 
 ---
 
 
 # 特选项目
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 “策划”让您可在共享项目前限制组件（维度、量度、区段、日期范围）。当收件人打开项目时，他们将看到您为其策划的有限组件。策划虽然是一个可选步骤，但建议在共享项目前执行此步骤。
 
@@ -42,6 +38,7 @@ ht-degree: 99%
 ## 删除项目策划
 
 要删除项目策划并恢复左边栏中的完整组件集，请执行以下操作：
+
 1. 单击&#x200B;**[!UICONTROL 共享]** > **[!UICONTROL 策划项目数据]**。
 1. 单击&#x200B;**[!UICONTROL 删除策划]**。
 1. 单击&#x200B;**[!UICONTROL 完成]**。
