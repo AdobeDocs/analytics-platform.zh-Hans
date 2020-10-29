@@ -1,17 +1,17 @@
 ---
 description: “策划”让您可在共享项目前限制组件。
 keywords: Analysis Workspace curation
-title: 策划工作区项目
+title: 特选项目
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 100%
+source-wordcount: '524'
+ht-degree: 99%
 
 ---
 
 
-# 策划工作区项目
+# 特选项目
 
 >[!NOTE]
 >
