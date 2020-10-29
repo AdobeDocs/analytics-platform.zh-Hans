@@ -1,17 +1,17 @@
 ---
 description: 工作区中的仅查看项目
 keywords: View-only projects
-title: 仅查看的工作区项目
+title: 仅视图项目
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 100%
+source-wordcount: '281'
+ht-degree: 98%
 
 ---
 
 
-# 仅查看的工作区项目
+# 仅视图项目
 
 >[!NOTE]
 >
