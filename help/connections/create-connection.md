@@ -2,10 +2,10 @@
 title: 创建连接
 description: 描述如何在 Customer Journey Analytics 中创建与 Platform 数据集的连接。
 translation-type: tm+mt
-source-git-commit: 240c0d33eb3db8bd3618698cac7f61f88048e953
+source-git-commit: 55347b8704fa93bdc833faec68b8da6dd589420b
 workflow-type: tm+mt
-source-wordcount: '1885'
-ht-degree: 81%
+source-wordcount: '1957'
+ht-degree: 78%
 
 ---
 
@@ -109,7 +109,7 @@ ht-degree: 81%
    | [!UICONTROL 数据集] | 此连接中包含的数据集。 |
    | [!UICONTROL 从今天开始自动导入此连接中的所有新数据集。] | 如果要创建持续连接，请选择此选项，以便要添加到此连接中数据集的任何新数据批次会自动流入 [!UICONTROL 工作区] 中。 |
    | [!UICONTROL 导入所有现有数据] | 当您选择此选项并保存连接时，将从 [!DNL Experience Platform] 将导入或回填此连接中的所有数据集。 未来，还将自动导入添加到这个已保存连接的任何新数据集的所有现有历史数据。另请参阅 [回填历史数据](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) 下。<br>**请注意，保存此连接后，无法更改此设置。** |
-   | [!UICONTROL 平均每日事件数] | 您需要指定要导入的每日事件的平均数（新数据） **和** 返回数据)。 从下拉菜单中选择一个选项。 这样，Adobe就可以为此数据分配足够的空间。<br>如果您不知道公司要导入的每日事件的平均数，可以在 [Adobe Experience Platform查询服务](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) 来了解。 查询会如下：<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;` |
+   | [!UICONTROL 平均每日事件数] | 您需要指定要导入的每日事件的平均数（新数据） **和** 返回数据)。 从下拉菜单中选择一个选项。 这样，Adobe就可以为此数据分配足够的空间。<br>如果您不知道公司要导入的每日事件的平均数，可以在 [Adobe Experience Platform查询服务](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) 来了解。<br>请参阅下面的“计算每日事件的平均数”。 |
 
 1. 单击 **[!UICONTROL 保存和创建数据视图]**. 有关文档，请参阅 [创建数据视图](/help/data-views/create-dataview.md).
 
@@ -123,4 +123,13 @@ ht-degree: 81%
 * 回填适用于整个连接，而不是单独应用于每个数据集。
 * The [Adobe Analytics数据连接器](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) 导入最多13个月的数据，而不管数据大小。
 
-<!--If you do not know the average number of daily events your company is going to import, you can do a simple SQL query in [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) to find out. Rohit to provide and make sure we include multiple datasets.-->
+### 计算每日事件的平均数
+
+必须对连接中的每个数据集进行此计算。
+
+1. 转到 [Adobe Experience Platform查询服务](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) 并创建新查询。
+
+1. 查询会如下：<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
+
+* 在此示例中，“analytics_demo_data”是数据集的名称。
+* 执行 `Show Tables` 查询显示AEP中存在的所有数据集。
