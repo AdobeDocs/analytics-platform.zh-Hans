@@ -1,26 +1,19 @@
 ---
 description: 您可以通过复制数据或以PDF和CSV格式从Analysis Workspace下载数据。
 title: 下载 PDF 或 CSV 文件
+uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
+source-git-commit: 6f8973fe6277f3b28b13a61cd65d630398fb3aaa
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 12%
+source-wordcount: '987'
+ht-degree: 9%
 
 ---
 
 
 # 下载 PDF 或 CSV 文件
 
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
-
 您可以通过多种不同的方式从Analysis Workspace导出数据，具体取决于要在工具外分析的数据集以及哪些人需要接收信息。 导出的数据可以采用复制的数据、CSV或PDF文件的形式。 如果您希望将可视化包含在文件中，则通常首选PDF；而如果您只想要纯文本数据，则首选CSV（或复制的数据）。
-
->[!IMPORTANT]
->
-> 本页中引用的一些选项，如 **以CSV格式下载项目**，当前处于有限测试中。 [了解更多](https://docs.adobe.com/content/help/zh-Hans/analytics/landing/an-releases.html)
 
 ## 将项目下载为CSV或PDF {#download-project}
 
@@ -95,6 +88,5 @@ ht-degree: 12%
 | --- | --- |
 | 为什么下载的PDF只有一页？ | Workspace此时不会将下载的PDF分页。 |
 | 我是否可以使用“以CSV形式下载项目”选项导出50,000多个项目？ | 虽然每次下载最多可包含50,000个维度项目，但您可以更改表的排序以检索较长的尾项目，或应用过滤器以下载更多特定项目。 |
-| 做什么 **[!UICONTROL 复制可视化]** 是吗？ | **[!UICONTROL 复制可视化]** 不是导出选项。 它允许您将可视化或面板从Workspace中的一个位置复制到另一个位置。 例如，从一个面板到同一项目中的另一个面板，或者从一个项目到另一个项目。 观看以下视频。 |
+| 做什么 **[!UICONTROL 复制可视化]** 是吗？ | **[!UICONTROL 复制可视化]** 不是导出选项。 它允许您将可视化或面板从Workspace中的一个位置复制到另一个位置。 例如，从一个面板到同一项目中的另一个面板，或者从一个项目到另一个项目。 [内链接视频](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) |
 
->[!VIDEO](https://video.tv.adobe.com/v/23724)
