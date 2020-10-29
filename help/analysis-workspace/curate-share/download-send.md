@@ -1,17 +1,16 @@
 ---
 description: 您可以通过复制数据或以PDF和CSV格式从Analysis Workspace下载数据。
 title: 下载 PDF 或 CSV 文件
-uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: 21bf268600c12dbf1db24dbc10028a0c29fc48a7
+source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
 workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 11%
+source-wordcount: '1042'
+ht-degree: 12%
 
 ---
 
 
-# 下载 PDF 或 CSV 文件 从工作区
+# 下载 PDF 或 CSV 文件
 
 >[!NOTE]
 >
@@ -31,7 +30,7 @@ ht-degree: 11%
 
 对于项目下载，请牢记：
 
-* 当您请求项目下载时，可以保存或保存项目。 但是，只能保存的项目 [计划](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html).
+* 当您请求项目下载时，可以保存或保存项目。 但是，只能保存的项目 [计划](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html).
 * 在浏览器中下载的PDF可能需要几分钟时间才能导出，因为项目在以PDF格式呈现之前在Adobe服务器上重新运行。 我们建议在浏览器中下载 PDF 之前不要离开项目。但是，在等待过程中，您仍可以继续对项目进行更改。如果PDF渲染时间超过5分钟，则会提示您通过电子邮件发送。
 * PDF下载以单个页面呈现，不应用分页。
 * 将项目渲染为PDF后，我们渲染页面上的内容。 如果项目具有自定义大小的可视化和面板，则需要将它们更改为自动调整大小（右上角的按钮），以便内容将不会被截断。
