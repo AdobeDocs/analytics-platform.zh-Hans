@@ -16,9 +16,9 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: 教程
 tutorials-url: https://helpx.adobe.com/cn/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 6f8973fe6277f3b28b13a61cd65d630398fb3aaa
+source-git-commit: a5f7a17d99d5ea7c8f944d02fb304bddf759030a
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '409'
 ht-degree: 98%
 
 ---
@@ -116,6 +116,7 @@ ht-degree: 98%
    + 工作区常见问题解答 {#workspace-faq}
       + [常见问题解答](analysis-workspace/workspace-faq/faq.md)
       + [优化 Analysis Workspace 性能](analysis-workspace/workspace-faq/optimizing-performance.md)
+      + [错误消息](analysis-workspace/workspace-faq/error-messages.md)
       + [Analysis Workspace 限制](analysis-workspace/workspace-faq/aw-limitations.md)
       + [管理要求](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Analysis Workspace 中的辅助功能](analysis-workspace/workspace-faq/aw-accessibility.md)
