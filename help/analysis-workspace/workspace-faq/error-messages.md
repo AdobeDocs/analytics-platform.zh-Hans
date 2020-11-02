@@ -1,16 +1,16 @@
 ---
-description: ' Analysis Workspace 及其相关组件中的已知限制列表'
-title: Analysis Workspace 中的已知限制
+description: Analysis Workspace及其相关组件中错误消息的列表
+title: 错误消息
 translation-type: tm+mt
-source-git-commit: 3d3620ef9180688b6216be0c930769e0f836370a
+source-git-commit: 130dd81b580a8a011d24401918c9cb1d6bb545e7
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 39%
+source-wordcount: '326'
+ht-degree: 35%
 
 ---
 
 
-# 常见错误消息
+# 错误消息
 
 您在与Analysis Workspace交互时可能会遇到错误，这也会影响性能。 下面列出了最常见的错误类型、发生原因以及可进行的优化。
 
