@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
-translation-type: ht
-source-git-commit: b870cf19c05d92de33edfbc0a6142b7b146256d3
-workflow-type: ht
-source-wordcount: '871'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: a4a655c5ee6aa8f72ba527baf5e841f76d9b9486
+workflow-type: tm+mt
+source-wordcount: '945'
+ht-degree: 94%
 
 ---
 
@@ -46,6 +46,8 @@ ht-degree: 100%
 | eVar 持久性设置 | eVar 不再是 CJA 的一部分。但是，持久性设置现在是数据视图的一部分，且可用于所有维度。请记住，持久基于报表时间处理，而不是数据收集处理。这意味着，所有持久性都将基于报表日期范围，而不是整个数据。 |
 | 分类 | 现在称为“查找数据集”，它们不会从传统的 Analytics 中自动导入。必须先将它们上传到 AEP，然后才能在 CJA 中使用。 |
 | 客户属性 | 现在称为“用户档案数据集”，它们不会从 Experience Cloud 中自动导入，必须先将其上传到 AEP，然后才能在 CJA 中使用。 |
+| 设备、浏览器、技术维度 | 当AEP数据集包含特定XDM模式字段并符合XDM体验事件类时，这些维度会自动包含。 |
+| 条目、退出和时间限制维度和指标 | 支持(现在“条目”和“退出”称为“会话开始”和“会话结束”)，计算方式略有不同。 |
 
 ## 部分支持
 
@@ -66,6 +68,10 @@ ht-degree: 100%
 | 区段 IQ | 计划将会提供支持。 |
 | 区段发布（将区段从工作区发送到 Experience Cloud） | 计划将会提供支持。 |
 | CSV 下载 | 计划将会提供支持。 |
+| 量度去重 | 计划将会提供支持。 |
+| 自定义日历 | 计划将会提供支持。 |
+| 量度去重 | 计划将会提供支持。 |
+| 销售变量持久性 | 计划将会提供支持。 |
 | 计划报表/项目 | 计划将会提供支持。 |
 | 警报 | 计划将会提供支持。 |
 | 自定义日历 | 计划将会提供支持。 |
