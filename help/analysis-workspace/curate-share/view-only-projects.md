@@ -3,15 +3,19 @@ description: 工作区中的仅查看项目
 keywords: View-only projects
 title: 仅视图项目
 translation-type: tm+mt
-source-git-commit: 9af9d7331d70fa37e1f138cb5a4b4064c34fec5e
+source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '281'
 ht-degree: 98%
 
 ---
 
 
 # 仅视图项目
+
+>[!NOTE]
+>
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 您可以通过[项目共享工作流程](/help/analysis-workspace/curate-share/share-projects.md)与收件人共享“仅查看”项目。处于“可以查看”角色的收件人将获得更有限的项目体验。如果您将项目共享给不太熟悉您组织的数据结构（通常情况下是 Analysis Workspace 或 Adobe Analytics）的用户，但仍希望他们在安全的环境中使用数据和洞察，则可能希望这样做。
 
