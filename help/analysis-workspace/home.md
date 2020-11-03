@@ -3,10 +3,10 @@ keywords: Analysis Workspace
 title: Analysis Workspace 概述
 topic: Reports and analytics
 uuid: 4df6be48-2c88-4b9d-9536-ed64ffbb6ee4
-translation-type: ht
-source-git-commit: ba9629adb93358bf4a44181c880e97ae584556e4
-workflow-type: ht
-source-wordcount: '474'
+translation-type: tm+mt
+source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+workflow-type: tm+mt
+source-wordcount: '509'
 ht-degree: 100%
 
 ---
@@ -14,11 +14,15 @@ ht-degree: 100%
 
 # Analysis Workspace 概述
 
+>[!NOTE]
+>
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+
 Analysis Workspace 是一款通过浏览器即可使用的灵活工具，可让您快速构建和共享分析。您可以使用拖放界面进行分析、添加可视化图表以便直观地呈现数据、梳理数据集、与组织中的任何人共享项目并设置共享频率与时间。
 
 如果您只有几分钟时间，请观看下面这个简短的视频简介，了解可用功能。
 
->[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
 
 ## 登录 Adobe Analytics {#login}
 
