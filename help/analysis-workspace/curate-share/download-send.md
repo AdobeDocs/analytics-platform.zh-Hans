@@ -3,15 +3,19 @@ description: 您可以通过复制数据或以PDF和CSV格式从Analysis Workspa
 title: 下载 PDF 或 CSV 文件
 uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: 6f8973fe6277f3b28b13a61cd65d630398fb3aaa
+source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 9%
+source-wordcount: '1022'
+ht-degree: 12%
 
 ---
 
 
 # 下载 PDF 或 CSV 文件
+
+>[!NOTE]
+>
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 您可以通过多种不同的方式从Analysis Workspace导出数据，具体取决于要在工具外分析的数据集以及哪些人需要接收信息。 导出的数据可以采用复制的数据、CSV或PDF文件的形式。 如果您希望将可视化包含在文件中，则通常首选PDF；而如果您只想要纯文本数据，则首选CSV（或复制的数据）。
 
