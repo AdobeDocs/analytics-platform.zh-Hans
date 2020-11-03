@@ -3,15 +3,19 @@ description: 影响工作区性能和优化的因素
 title: Analysis Workspace绩效因素及优化
 uuid: de51d03d-d555-4f0e-b19c-4a8f140770fc
 translation-type: tm+mt
-source-git-commit: fb7738a47818e62e8f90b9dd9e4c1abe842214d8
+source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 25%
+source-wordcount: '1839'
+ht-degree: 27%
 
 ---
 
 
 # 优化 [!UICONTROL Analysis Workspace表演]
+
+>[!NOTE]
+>
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 各种因素都会影响Analysis Workspace内某项目的绩效。 在您开始构建项目之前，必须了解这些参与者是什么，这样您才能以最佳方式规划和构建项目。 本页包括影响性能的一列表因素，您可以进行优化以确保在Analysis Workspace达到最佳性能。
 
