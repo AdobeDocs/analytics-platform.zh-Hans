@@ -1,9 +1,9 @@
 ---
 title: 组件概述
 description: 了解 CJA 提供了哪些组件，以及如何在报表中使用它们。
-translation-type: ht
-source-git-commit: 1c82c7c2e61c170b6eb05bfda0c7a79e5a13c4e1
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
+workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 Analysis Workspace 中的组件包括量度、维度、区段和时间粒度，您可以将这些组件拖放到项目中。您创建的自定义组件会被添加到这些面板中，例如自定义日期范围。
 
-要访问“组件”面板，请单击左边栏中的&#x200B;**[!UICONTROL 组件]**&#x200B;图标。您可以使用左边栏图标或[热键](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)在面板（空白面板、[自由格式面板](/help/analysis-workspace/visualizations/freeform-table.md)、[快速分析面板](/help/analysis-workspace/c-panels/quickinsight.md)或[归因 IQ](/help/analysis-workspace/c-panels/attribution.md) 面板）、[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)和“组件”之间切换。
+要访问“组件”面板，请单击左边栏中的&#x200B;**[!UICONTROL 组件]**&#x200B;图标。您可以使用左边栏图标或[热键](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)在面板（空白面板、[自由格式面板](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)、[快速分析面板](/help/analysis-workspace/c-panels/quickinsight.md)或[归因 IQ](/help/analysis-workspace/c-panels/attribution.md) 面板）、[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)和“组件”之间切换。
 
 ![](assets/components.png)
 
@@ -52,4 +52,4 @@ Analysis Workspace 中的组件包括量度、维度、区段和时间粒度，�
 
 观看有关创建量度、区段和日期的视频：
 
->[!VIDEO](https://video.tv.adobe.com/v/23979?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/23979)
