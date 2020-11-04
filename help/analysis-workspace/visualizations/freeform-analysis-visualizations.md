@@ -3,10 +3,10 @@ description: 了解 Analysis Workspace 中的可视化图表和可视化图表�
 keywords: Analysis Workspace
 title: 可视化图表概述
 translation-type: tm+mt
-source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
+source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
 workflow-type: tm+mt
 source-wordcount: '1046'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 94%
 | [圆环](/help/analysis-workspace/visualizations/donut.md) | 此可视化图表与饼图类似，它将数据显示为整体的一部分或区段。 |
 | [流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | 流失报表显示访客从何处离开（流失）或继续通过（流过）预定义的页面序列。 |
 | [流量](/help/analysis-workspace/visualizations/c-flow/flow.md) | 显示客户在您的网站和应用程序中的浏览路径。 |
-| [自由格式表](/help/analysis-workspace/visualizations/freeform-table.md) | 自由格式表不仅可以作为数据表，而且还是一个交互式可视化图表。 |
+| [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | 自由格式表不仅可以作为数据表，而且还是一个交互式可视化图表。 |
 | [直方图](/help/analysis-workspace/visualizations/histogram.md) | 直方图类似于条形图，不过它可以将数字归为几组不同的范围（存储段）。 |
 | [水平条](/help/analysis-workspace/visualizations/horizontal-bar.md) | 显示一些水平条，这些水平条表示一个或多个量度中的各种值。 |
 | [折线图](/help/analysis-workspace/visualizations/line.md) | 使用线条来表示量度，以显示一段时间内值的变化情况。仅当使用时间作为维度时，才可以使用折线图。 |
-| [散点图](/help/analysis-workspace/visualizations/scatterplot.md) | 显示维度项目与最多三个指标之间的关系。 |
+| [散点图](/help/analysis-workspace/visualizations/scatterplot.md) | 显示维度项目与最多三个量度之间的关系。 |
 | [概要数字](/help/analysis-workspace/visualizations/summary-number-change.md) | 根据所选的单元格，此可视化图表显示总计和概要。 |
 | [概要变化](/help/analysis-workspace/visualizations/summary-number-change.md) | 根据所选的单元格，此可视化图表会比较单元格。 |
 | [文本](/help/analysis-workspace/visualizations/text.md) | 允许您将用户定义的文本添加至您的工作区。 |
