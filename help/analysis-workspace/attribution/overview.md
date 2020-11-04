@@ -1,11 +1,11 @@
 ---
 title: 归因概述
-description: 将成功事件的信用归因到多个维度项目的概念。
+description: 将成功事件的点数归因到多个维度项目的概念。
 translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 93%
 >
 >您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
-Attribution使分析师能够自定义维度项目如何获得成功事件的认可。 例如：
+通过归因，分析师能够自定义维度项目获取成功事件点数的方式。例如：
 
 1. 网站访客单击指向您的某个产品页面的付费搜索链接。他们将产品添加到购物车，但不购买。
 2. 第二天，他们查看自己朋友的社交媒体帖子，单击链接，然后完成购买。
@@ -45,6 +45,6 @@ Adobe Analytics 通过让您能够执行以下操作来增强归因：
 归因 IQ 包括以下功能：
 
 * [归因面板](../c-panels/attribution.md)：获取任何维度和量度，并快速将其与不同的归因模型进行比较。
-* [将归因应用于度量](../build-workspace-project/column-row-settings/column-settings.md)：对项目中的任何量度使用非默认归因。
+* [将归因应用于度量](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)：对项目中的任何量度使用非默认归因。
 * [将归因应用于细分](/help/components/dimensions/t-breakdown-fa.md)：对细分使用非默认归因。
 * [比较归因模型](/help/components/apply-create-metrics.md)：快速了解任何量度的不同归因模型的异同。
