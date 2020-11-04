@@ -3,7 +3,7 @@ description: 影响工作区性能和优化的因素
 title: Analysis Workspace绩效因素及优化
 uuid: de51d03d-d555-4f0e-b19c-4a8f140770fc
 translation-type: tm+mt
-source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+source-git-commit: 8b814137a7c5e2ca96091addb5b4430e2da65329
 workflow-type: tm+mt
 source-wordcount: '1839'
 ht-degree: 27%
@@ -80,5 +80,5 @@ ht-degree: 27%
 | 因子 | 定义 | 受 | 优化 |
 | --- | --- | --- | --- |
 | 区段复杂性 | 复杂的区段可能会对项目性能产生重大影响。 | 增加区段复杂性的因素（按影响程度降序排列）包括： <ul><li>运算符：“包含”、“包含任意”、“匹配”、“开始于”或“结束于” </li><li>连续分段，尤其是使用维度限制（之内/之后）时的连续分段 </li><li>维度内区段中使用的唯一维度项目数（例如，在 Page = &#39;A&#39; 的情况下，页面具有 10 个唯一项目的查询速度将比页面具有 100,000 个唯一项目的查询速度更快） </li><li>使用的不同维度的数量（例如，Page = &#39;Home&#39; 和 Page = &#39;Search results&#39; 的查询速度将比 eVar 1 =&#39;red&#39; 和 eVar 2 =&#39;blue&#39; 更快）)</li><li>许多“或”运算符（而不是“和”）</li><li>嵌套容器的范围不同（例如，“访客”中“访问次数”内的“点击”）</li></ul> | 虽然无法阻止某些复杂因素，但是请寻找机会降低细分的复杂性。 通常，您的区段标准越具体，其性能就越好。例如：<ul><li>对于容器，使用区段顶部的单个容器的速度将比使用一系列嵌套容器的速度更快。</li><li>对于运算符，“等于”比“包含”运算速度快，“等于任意”比“包含任意”运算速度快。</li><li>对于许多标准，使用“和”运算符的速度将比使用一系列“或”运算符的速度更快。</li></ul> 寻找机会将许多OR语句简化为单个“等于任何”语句。<br><br>[分类](https://docs.adobe.com/content/help/zh-Hans/analytics/components/classifications/c-classifications.html) 还可以帮助将许多值合并到简洁的组中，然后从中创建区段。 与含有许多 OR 语句或“包含”标准的区段相比，按分类组划分区段可提供更佳的性能。 |
-| 可视化复杂性(细分、指标、过滤器) | 自行添加到项目中的可视化图表类型（例如，流失和自由格式表）不会对项目性能有太大影响。可视化图表的复杂性会增加处理时间。 | 导致可视化图表复杂性增加的因素包括：<ul><li>请求的数据范围</li><li>应用的区段数量；例如，用作自由格式表行的区段</li><li>使用复杂细分</li><li>[自由格式表中的静态项目行或列](/help/analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)</li><li>应用于自由格式表行的过滤器</li><li>包含的量度数量，尤其是使用区段的计算量度</li></ul> | 如果您注意到项目没有按所需的速度加载，请尽量尝试将某些区段替换为 eVar 和过滤器。<br><br>如果您发现自己持续使用细分和计算对您的业务至关重要的数据点的指标，请考虑改进实施以更直接地捕获这些数据点。 使用像Adobe Experience Platform Launch和Adobe的处理规则这样的标签管理器可以快速而轻松地实施实施更改。 |
+| 可视化复杂性(细分、指标、过滤器) | 自行添加到项目中的可视化图表类型（例如，流失和自由格式表）不会对项目性能有太大影响。可视化图表的复杂性会增加处理时间。 | 导致可视化图表复杂性增加的因素包括：<ul><li>请求的数据范围</li><li>应用的区段数量；例如，用作自由格式表行的区段</li><li>使用复杂细分</li><li>[自由格式表中的静态项目行或列](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)</li><li>应用于自由格式表行的过滤器</li><li>包含的量度数量，尤其是使用区段的计算量度</li></ul> | 如果您注意到项目没有按所需的速度加载，请尽量尝试将某些区段替换为 eVar 和过滤器。<br><br>如果您发现自己持续使用细分和计算对您的业务至关重要的数据点的指标，请考虑改进实施以更直接地捕获这些数据点。 使用像Adobe Experience Platform Launch和Adobe的处理规则这样的标签管理器可以快速而轻松地实施实施更改。 |
 | 报表包大小 | 收集到报表包中的数据量。 | - | 请咨询您的实施团队或Adobe专家，确定是否可以改进实施以改进Adobe Analytics的整体体验。 |
