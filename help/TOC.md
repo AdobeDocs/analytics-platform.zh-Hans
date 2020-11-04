@@ -16,10 +16,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: 教程
 tutorials-url: https://helpx.adobe.com/cn/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: a5f7a17d99d5ea7c8f944d02fb304bddf759030a
+source-git-commit: 1a1b439f4b2c8d7a03dd6431edd5271fc5af0b18
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 98%
+source-wordcount: '404'
+ht-degree: 97%
 
 ---
 
@@ -48,20 +48,20 @@ ht-degree: 98%
       + [创建项目 - 概述](analysis-workspace/build-workspace-project/freeform-overview.md)
       + [保存项目](analysis-workspace/build-workspace-project/save-projects.md)
       + [模板](analysis-workspace/build-workspace-project/starter-projects.md)
-      + 列和行设置 {#column-row-settings}
-         + [列设置](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
-         + [行设置](analysis-workspace/build-workspace-project/column-row-settings/table-settings.md)
-         + [动态项和静态项](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
-      + [“撤消”和“重做”设置](analysis-workspace/build-workspace-project/undo-redo.md)
-      + [Analysis Workspace 中可用的热键](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
-      + [对表格进行分页、过滤和排序](analysis-workspace/build-workspace-project/pagination-filtering-sorting.md)
+      + [热键（快捷键）](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [调色板](analysis-workspace/build-workspace-project/color-palettes.md)
       + [视图密度](analysis-workspace/build-workspace-project/view-density.md)
-      + [工作区总计](analysis-workspace/build-workspace-project/workspace-totals.md)
    + 可视化 {#visualizations}
       + [可视化概述](analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [管理数据源](analysis-workspace/visualizations/t-sync-visualization.md)
-      + [自由格式表](analysis-workspace/visualizations/freeform-table.md)
+      + 自由格式表 {#freeform-table}
+         + [自由格式表](analysis-workspace/visualizations/freeform-table/freeform-table.md)
+         + 列和行设置 {#column-row-settings}
+            + [列设置](analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
+            + [行设置](analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
+            + [动态项和静态项](analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
+         + [对表格进行分页、过滤和排序](analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md)
+         + [工作区总计](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + 同类群组表 {#cohort-table}
          + [什么是同类群组分析？](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [配置同类群组分析报表](analysis-workspace/visualizations/cohort-table/t-cohort.md)
