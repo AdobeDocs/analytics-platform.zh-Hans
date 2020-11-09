@@ -2,9 +2,9 @@
 title: Customer Journey Analytics 常见问题解答
 description: Customer Journey Analytics - 常见问题解答。
 translation-type: tm+mt
-source-git-commit: 830e7d71ad38539d1a73fe2df9f8886956f57acc
+source-git-commit: 1f8526e0b48e334a62776eb2ca4fbf09febf4dd4
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1296'
 ht-degree: 41%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 41%
 | 删除模式 [!UICONTROL Adobe Experience Platform]，但不是与此模式关联的数据集？ | [!UICONTROL Adobe Experience Platform] 不允许删除具有一个或多个与其关联的模式集。 但是，具有相应权限集的管理员可以先删除数据集，然后删除模式。 |
 | 删除 [!UICONTROL Adobe Experience Platform]? | 在AEP中删除数据集将停止数据从该数据集流向包含该数据集的任何连接。 来自该数据集的任何数据不会自动从关联的CJA连接中删除。 |
 | 删除 [!UICONTROL Customer Journey Analytics]? | 当前，无法删除已保存的连接中的数据集。 您必须删除整个连接并结束开始。 (但是，您可以在 [!UICONTROL Adobe Experience Platform].) |
-| 从数据集中删除批(在 [!UICONTROL Adobe Experience Platform])? | 如果从AEP数据集中删除了某个批，则同一批将从包含该特定批的任何CJA连接中删除。 |
+| 从数据集中删除批(在 [!UICONTROL Adobe Experience Platform])? | 如果从 [!UICONTROL Adobe Experience Platform] 数据集中，同一批将从包含该特定批的任何CJA连接中删除。  CJA在 [!UICONTROL Adobe Experience Platform]. |
 | 删除批 **在被摄入时** 入 [!UICONTROL Customer Journey Analytics]? | 如果数据集中只有一个批，则该批中的数据或部分数据将不会显示在 [!UICONTROL Customer Journey Analytics]. 摄取将回滚。 例如，如果数据集中有5个批次，且删除数据集时已摄取其中3个批次，则这3个批次的数据将显示在 [!UICONTROL Customer Journey Analytics]. |
 | 删除 [!UICONTROL Customer Journey Analytics]? | 将显示一条错误消息：<ul><li>为已删除的连接创建的任何数据视图将不再工作。</li><li> 同样，任何依赖于已删除连接中的数据视图的Workspace项目都将停止工作。</li></ul> |
 | 删除视图 [!UICONTROL Customer Journey Analytics]? | 将显示一条错误消息，指示任何依赖此已删除数据视图的Workspace项目将停止工作。 |
