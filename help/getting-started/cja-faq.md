@@ -2,7 +2,7 @@
 title: Customer Journey Analytics 常见问题解答
 description: Customer Journey Analytics - 常见问题解答。
 translation-type: tm+mt
-source-git-commit: b0069e0f3528942620a6a69aaae1447f7452956f
+source-git-commit: 3b3d0b0858d559e94f1bed6a31a63b018ed32a23
 workflow-type: tm+mt
 source-wordcount: '1330'
 ht-degree: 40%
@@ -55,7 +55,7 @@ ht-degree: 40%
 
 在删除方面，我们关注6个组件：沙箱、模式、数据集、连接、视图和Workspace项目。 以下是有关删除其中任何组件的一些可能情况：
 
-| 如果有人…… | 这种情况…… |
+| 如果我…… | 这种情况…… |
 | --- | --- |
 | 删除 [!UICONTROL Adobe Experience Platform]? | 删除沙箱将中断任何 [!UICONTROL Customer Journey Analytics] 与沙箱中数据集的连接。 但是，CJA中的数据集当前不会被删除。 |
 | 删除模式 [!UICONTROL Adobe Experience Platform]，但不是与此模式关联的数据集？ | [!UICONTROL Adobe Experience Platform] 不允许删除具有一个或多个与其关联的模式集。 但是，具有相应权限集的管理员可以先删除数据集，然后删除模式。 |
@@ -65,5 +65,4 @@ ht-degree: 40%
 | 删除批 **在被摄入时** 入 [!UICONTROL Customer Journey Analytics]? | 如果数据集中只有一个批，则该批中的数据或部分数据将不会显示在 [!UICONTROL Customer Journey Analytics]. 摄取将回滚。 例如，如果数据集中有5个批次，且删除数据集时已摄取其中3个批次，则这3个批次的数据将显示在 [!UICONTROL Customer Journey Analytics]. |
 | 删除 [!UICONTROL Customer Journey Analytics]? | 将显示一条错误消息：<ul><li>为已删除的连接创建的任何数据视图将不再工作。</li><li> 同样，任何依赖于已删除连接中的数据视图的Workspace项目都将停止工作。</li></ul> |
 | 删除视图 [!UICONTROL Customer Journey Analytics]? | 将显示一条错误消息，指示任何依赖此已删除数据视图的Workspace项目将停止工作。 |
-| 删除 [!UICONTROL Customer Journey Analytics]? | 您可以重新创建项目，也可以使用补救方法恢复项目。 只需转到 [!UICONTROL >管理员>日志>使用和访问日志]，查找已删除的项目并复制其ID。 然后打开任何Workspace项目，并使用复制的URL更新ID。 然后保存项目。 |
-
+| 删除 [!UICONTROL Customer Journey Analytics]? | 您可以重新创建项目，也可以使用补救方法恢复项目。 只需转到 [!UICONTROL “管理员”>“日志”>“使用和访问日志”]，查找已删除的项目并复制其ID。 然后打开任何Workspace项目，并使用复制的URL更新ID。 然后保存项目。 |
