@@ -2,10 +2,10 @@
 title: 创建数据视图
 description: 介绍如何在 Customer Journey Analytics (CJA) 中创建 Platform 数据集的视图。
 translation-type: tm+mt
-source-git-commit: de265170126c1a9fc1f66364a79a74ff487d0b71
+source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 100%
+source-wordcount: '572'
+ht-degree: 94%
 
 ---
 
@@ -54,3 +54,7 @@ Customer Journey Analytics 中的工作区项目均基于数据视图。
 1. （可选）您可以将组件重命名为友好名称，或通过选择组件并编辑其设置来更改组件的归因设置。请注意，基础名称将保留。有关详细信息，请参阅[配置视图和归因](/help/data-views/configure-dataviews.md)。
 
 1. 下一步是[指定组件和归因设置](/help/data-views/configure-dataviews.md)。
+
+## 删除数据视图
+
+如果在[!UICONTROL Customer Journey Analytics]中删除视图，将显示一条错误消息，指示依赖此已删除数据视图的任何Workspace项目将停止工作。
