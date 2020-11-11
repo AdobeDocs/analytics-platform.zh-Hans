@@ -18,10 +18,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: 教程
 tutorials-url: https://helpx.adobe.com/cn/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 5fe2177d8e1da64304b0f9c84caa5383b6909d06
+source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 97%
+source-wordcount: '407'
+ht-degree: 96%
 
 ---
 
@@ -38,6 +38,7 @@ ht-degree: 97%
 + 连接 {#cja-connections}
    + [创建连接](connections/create-connection.md)
    + [管理连接](connections/manage-connection.md)
+   + [估计连接大小](connections/estimate-connection-size.md)
    + [合并事件数据集](connections/combined-dataset.md)
 + 数据视图 {#cja-dataviews}
    + [创建数据视图](data-views/create-dataview.md)
