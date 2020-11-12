@@ -1,10 +1,10 @@
 ---
 title: 估计连接大小
-description: 报告您当前使用Customer Journey Analytics的情况（用于计费）
+description: 报告您当前的Customer Journey Analytics使用情况
 translation-type: tm+mt
-source-git-commit: 27b3b1d9e6042f4c61cd1d5bb9d574cc268c3460
+source-git-commit: 1f496175e504cefed4239aab454744ecae72a6ea
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -29,24 +29,24 @@ ht-degree: 0%
 
 1. 注意此数据集的&#x200B;**[!UICONTROL Total records]**&#x200B;总记录数为3.83k记录，数据大小为388.59 KB。
 
-1. 对连接中的其他数据集重复步骤1-5，并添加记录／行数。 最终的聚合数将是连接的使用量度，这是您要从[!UICONTROL Adobe Experience Platform]中摄取的连接数据集的行数。
+1. 对连接中的其他数据集重复步骤1-5，并添加记录／行数。 最终的聚合编号将是连接的使用量度。 这是您要从[!UICONTROL Adobe Experience Platform]中摄取的连接数据集的行数。
 
 ## 确定摄取的行数
 
-CJA中实际摄取的事件数取决于您的连接配置设置。 此外，如果您选择了错误的人员ID，或者此ID对于数据集中的某些行不可用，则[!UICONTROL Customer Journey Analytics]将忽略这些行。 要确定所摄取的事件的实际行，请执行以下步骤：
+在[!UICONTROL Customer Journey Analytics]中实际摄取的事件数取决于您的连接配置设置。 此外，如果您选择了错误的人员ID，或者此ID对于数据集中的某些行不可用，则[!UICONTROL Customer Journey Analytics]将忽略这些行。 要确定所摄取的事件的实际行，请执行以下步骤：
 
 1. 保存连接后，创建同一连接的数据视图，不使用任何过滤器。
-1. 创建Workspace项目并选择正确的数据视图。 创建自由形式表，并拖放具有&#x200B;**[!UICONTROL Year]**&#x200B;维度的&#x200B;**[!UICONTROL 事件]**&#x200B;度量。 从日期选择日历中选择一个足够大的日期范围，将所有数据封装到连接中。 这将允许您查看被引入[!UICONTROL 事件]的Customer Journey Analytics数。
+1. 创建Workspace项目并选择正确的数据视图。 创建自由形式表，并拖放具有&#x200B;**[!UICONTROL Year]**&#x200B;维度的&#x200B;**[!UICONTROL 事件]**&#x200B;度量。 从日期选择日历中选择足够大的日期范围，以封装连接中的所有数据。 这允许您查看被收录到[!UICONTROL 事件]中的Customer Journey Analytics数。
 
    ![工作区项目](assets/event-number.png)
 
    >[!NOTE]
    >
-   >这样，您就可以看到从事件数据集摄取的事件数。 它不包含用户档案和查找类型数据集。 按照步骤1-3用户档案和查找数据集，并添加数字以获取此连接的总行数。
+   >这样，您就可以看到从事件数据集摄取的事件数。 它不包含用户档案和查找类型数据集。 按照“估计连接大小”下的步骤1-3用户档案和查找数据集，并添加数字以获取此连接的总行数。
 
 ## 诊断差异
 
-在某些情况下，您可能会注意到Connection摄取的事件总数与AEP中数据集中的行数不同。 在这种情况下，数据集“B2B印象”有7650行，而数据集包含AEP中的3830行。 出现差异的原因有多种，可以采取以下步骤进行诊断：
+在某些情况下，您可能会注意到您的连接摄取的事件总数与[!UICONTROL Adobe Experience Platform]中的数据集中的行数不同。 在此示例中，数据集“B2B印象”有7650行，但数据集包含[!UICONTROL Adobe Experience Platform]中的3830行。 出现差异的原因有多种，可以采取以下步骤进行诊断：
 
 1. 按&#x200B;**[!UICONTROL 平台数据集ID]**&#x200B;划分此维度，您会注意到两个大小相同但不同的&#x200B;**[!UICONTROL 平台数据集ID]**&#x200B;的数据集。 每个数据集有3825条记录。 这意味着[!UICONTROL Customer Journey Analytics]由于缺少人员ID或缺少时间戳而忽略了5个记录：
 
