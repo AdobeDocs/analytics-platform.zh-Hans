@@ -2,9 +2,9 @@
 title: 使用对象数组
 description: 了解 CJA 如何报告数据层次结构。
 translation-type: tm+mt
-source-git-commit: 76cedb931085e8b5b59d7c5c3929bf4b5c010d9d
+source-git-commit: 6229c5bb08f6f153c625932ed06e85030bc08c5a
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '418'
 ht-degree: 100%
 
 ---
@@ -263,6 +263,3 @@ CJA 查看点击的这些部分以生成报表：
 | `Washing Machines` | `1850` |
 | `Dryers` | `500` |
 | `Total` | `2350` |
-
-## 永久性示例
-
