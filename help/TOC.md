@@ -18,10 +18,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: 教程
 tutorials-url: https://helpx.adobe.com/cn/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
+source-git-commit: 8eb7d3e24a941eaf882426e230561e2bf0d0145e
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 96%
+source-wordcount: '424'
+ht-degree: 93%
 
 ---
 
@@ -40,6 +40,10 @@ ht-degree: 96%
    + [管理连接](connections/manage-connection.md)
    + [估计连接大小](connections/estimate-connection-size.md)
    + [合并事件数据集](connections/combined-dataset.md)
+   + 跨渠道分析{#cca}
+      + [跨渠道分析概述](connections/cca/overview.md)
+      + [重播的工作原理](connections/cca/replay.md)
+      + [跨渠道分析常见问题解答](connections/cca/faq.md)
 + 数据视图 {#cja-dataviews}
    + [创建数据视图](data-views/create-dataview.md)
    + [配置数据视图和属性](data-views/configure-dataviews.md)
@@ -152,6 +156,7 @@ ht-degree: 96%
    + [Customer Journey Analytics 使用案例](use-cases/cja-usecases.md)
    + [使用对象数组](use-cases/object-arrays.md)
    + [(B2B) 将帐户级别的数据作为查询数据集进行添加](use-cases/b2b.md)
+   + [导入呼叫中心和Web数据](use-cases/call-center.md)
    + [摄取数据用例](use-cases/data-ingestion.md)
 + 隐私权 {#cja-privacy}
    + [隐私权概述](privacy/privacy-overview.md)
