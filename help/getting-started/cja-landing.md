@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics 指南
 description: Customer Journey Analytics 登陆页面。
-translation-type: ht
-source-git-commit: 8cf9f257ccf2afd830a7f8e211c8e42b3f786e86
-workflow-type: ht
-source-wordcount: '286'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 4c4463fe1c7454ede80330d8889bc4157eb99fca
+workflow-type: tm+mt
+source-wordcount: '284'
+ht-degree: 83%
 
 ---
 
@@ -23,14 +23,12 @@ Analytics Select、Prime 和 Ultimate 客户有资格购买此附加产品。有
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>新增项目或特色项目</b> </p> <p> 
      <ul>
-      <li><a href="https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-overview/cja-overview.html#user-access-permissions"> 更新了用户权限要求（自 2020 年 9 月 9 日起）</a> </li>
-      <li><a href="https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-usecases/object-arrays.html"> 使用对象数组 </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=en#cja-connections"> 跨渠道分析(Customer Journey Analytics中拼接ID)的新文档  </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#admin-access-permissions"> 更新了用户权限要求  </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=en#cja-usecases"> 使用对象数组 </a> </li>
       <li><a href="https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-usecases/b2b.html"> 将帐户级别的数据作为查询数据集进行添加 </a> </li>
       <li><a href="https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-overview/cja-getting-started.html">Customer Journey Analytics 入门</a> </li> 
       <li><a href="https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-overview/cja-faq.html"> 常见问题解答</a> </li> 
-      <li><a href="https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-overview/cja-glossary.html">Customer Journey Analytics 术语表</a> </li> 
-      <li><a href="https://www.adobe.io/apis/experiencecloud/analytics/docs.html"> Adobe Analytics API 2.0</a> </li> 
-     </ul> </p> </td> 
    <td colname="col2" valign="top"> <p class="head"><b>发行说明</b> </p> 
     <ul> 
      <li>有关新增功能和修复，请参阅最新的 <a href="https://docs.adobe.com/content/help/zh-Hans/release-notes/experience-cloud/current.html" format="https" scope="external">Experience Cloud 发行说明</a>。 </li> 
