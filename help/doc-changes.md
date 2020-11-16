@@ -2,10 +2,10 @@
 title: CJA 文档更新
 description: '列表自2019年12月以来Customer Journey Analytics文档集的内容更新。 '
 translation-type: tm+mt
-source-git-commit: fa70d59a4c30b78c09ea9d11dfc804bf12e9b603
+source-git-commit: 06079f13a61ec9732a69c8acee0bed7356910a84
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 19%
+source-wordcount: '205'
+ht-degree: 17%
 
 ---
 
@@ -16,7 +16,9 @@ CJA文件自成立以来进行了以下更新。
 
 | 日期 | 更新说明 |
 | --- | --- |
-| 2020 年 11 月 11 日 | 添加了有关[估计连接大小](/help/connections/estimate-connection-size.md)的主题，用于计费目的。 |
+| 2020 年 11 月 13 日 | 有关[跨渠道分析](/help/connections/cca/overview.md)的新主题，允许您重新键入数据集的人员ID，从而无缝组合多个数据集。 |
+| 2020 年 11 月 13 日 | 在[导入呼叫中心和Web数据](/help/use-cases/call-center.md)上添加了一个新用例。 |
+| 2020 年 11 月 11 日 | 在[估计连接大小](/help/connections/estimate-connection-size.md)上添加了主题。 |
 | 2020 年 11 月 10 日 | 在[常见问题解答](/help/getting-started/cja-faq.md)中添加了有关删除数据组件的含义的部分。 |
 | 2020 年 11 月 2 日 | [Customer Journey Analytics功能支持](/help/getting-started/cja-aa.md)页面的更新。 |
 | 2020 年 10 月 7 日 | 在[组合事件数据集](/help/connections/combined-dataset.md)上添加了主题。 |
