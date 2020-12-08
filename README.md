@@ -1,16 +1,12 @@
 ---
-source-git-commit: ed44f33e545df2e52566bd922fa40d9692df6bf2
+source-git-commit: 5b484b851919607226c0deed6b5d62d1eafea50b
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '521'
-ht-degree: 84%
+source-wordcount: '439'
+ht-degree: 98%
 
 ---
 # Contribute到Customer Journey Analytics文档
-
-| EXL-PR | EXL | 预览 | 激活 | 发布日期 | 帮助 |
-|--- |--- |--- |--- |--- |--- |
-| [![生成状态](https://docs.ci.corp.adobe.com/view/exl-pr/job/analytics-platform.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/analytics-platform.en_pr-exl/lastBuild/) | [![生成状态](https://docs.ci.corp.adobe.com/view/exl-pr/job/analytics-platform.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/analytics-platform.en_exl/lastBuild/lastBuild) | [预览URL](https://experienceleague.corp.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [实时URL](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=en) | [Authoring 指南](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 我们欢迎社区成员以及文档团队以外的 Adobe 员工积极贡献文章。
 
