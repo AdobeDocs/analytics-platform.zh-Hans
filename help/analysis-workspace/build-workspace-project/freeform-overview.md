@@ -23,7 +23,7 @@ ht-degree: 84%
 
 查询直接与报表引擎关联 -- 创建您的分析时，您可以在内部进行更改，无需引入其他报表。结果可以立即返回，无需刷新浏览器。
 
-## 工作区项目列表页面 {#section_39AA007D7C384F4E869F842F1C7B11F8}
+## 工作区项目列表页面  {#section_39AA007D7C384F4E869F842F1C7B11F8}
 
 当您首次访问 **[!UICONTROL Analytics]** > **[!UICONTROL 工作区]**&#x200B;时，该页面会列出您拥有或已获得访问权限的所有项目。通过单击&#x200B;**[!UICONTROL 设置为登录页面]**，您可以将此页面设置为您的 Adobe Analytics 登录页面。（如果您未看到此选项，如下面的屏幕快照所示，则它已是您的登录页面。）
 
@@ -33,13 +33,13 @@ ht-degree: 84%
 
 | 元素 | 描述 |
 |---|---|
-| 新建项目 | 单击此链接可 [开始从头开始的新项目](/help/analysis-workspace/home.md). |
+| 新建项目 | 单击此链接可[从头开始开始新项目](/help/analysis-workspace/home.md)。 |
 | 管理项目 | 单击此链接将会转到项目组件管理器（**[!UICONTROL Analytics]** > **[!UICONTROL 组件]** > **[!UICONTROL 项目]**），其中列出了您的所有项目，并允许您标记、共享、删除、重命名、批准、复制项目以及将项目导出到 CSV。 |
 | 设置为登录页面 | 将此页转换为工作区登陆页。 |
-| 查看教程 | 将您带到 [Analysis Workspace视频教程](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html). |
+| 查看教程 | 带您观看[Analysis Workspace视频教程](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html)。 |
 | 名称 | 工作区项目名称。 |
 | 所有者 | 创建此项目的人员（您或与您共享项目的人员）。 |
-| 类型 | 指示这是Workspace项目还是 [Mobile Scorecard](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/mobapp/home.html). |
+| 类型 | 指示这是Workspace项目还是[Mobile Scorecard](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/mobapp/home.html)。 |
 | 项目角色 | 指示您是所有者、是否可以编辑项目，或者这是否为重复项目。 |
 | 标记 | 项目组件管理器中或&#x200B;**[!UICONTROL 工作区]** > **[!UICONTROL 项目]** > **[!UICONTROL 项目信息和设置]**&#x200B;下应用于项目的标记。 |
 | 上次修改时间 | 项目上次修改的日期和时间。 |
@@ -89,7 +89,7 @@ ht-degree: 84%
 | 下载 PDF* |  |  |  |  |  |
 | 项目信息和设置 |  |  |  |  |  |
 
-## 左边栏 {#section_271295C26EC840ABB2A8E7EC0498B60E}
+## 左边栏  {#section_271295C26EC840ABB2A8E7EC0498B60E}
 
 左边栏含有 3 个图标，允许您一键访问面板、[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)和[组件](/help/components/overview.md)（维度、量度、区段、数据范围）：
 
