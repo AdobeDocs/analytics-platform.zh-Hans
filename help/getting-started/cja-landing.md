@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 4c4463fe1c7454ede80330d8889bc4157eb99fca
 workflow-type: tm+mt
 source-wordcount: '284'
-ht-degree: 83%
+ht-degree: 87%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 83%
 
 本技术文档指南为 Customer Journey Analytics 提供了自助服务。Customer Journey Analytics 允许您从所选的任何渠道（在线和离线）将客户数据纳入到 Adobe Experience Platform 中，然后像现在使用 Analysis Workspace 分析现有数字数据一样分析这些数据。
 
-Customer Journey Analytics 允许您在 Analysis Workspace 中控制如何通过任何常见客户 ID 连接在线和离线数据，最后允许您对 Adobe Analytics 中的整个客户数据集进行归因、分段、流程、流失等操作。
+Customer Journey Analytics 使您可以控制如何在 Analysis Workspace 中将任何通用客户 ID 上的在线和离线数据进行关联，从而最终得以进行归因、细分、流量、流失等分析。对 Adobe Analytics 中的整个客户数据集进行归因、分段、流程、流失等操作。
 
 Analytics Select、Prime 和 Ultimate 客户有资格购买此附加产品。有关更多详细信息，请与您的 Adobe 客户团队联系。
 
@@ -23,7 +23,7 @@ Analytics Select、Prime 和 Ultimate 客户有资格购买此附加产品。有
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>新增项目或特色项目</b> </p> <p> 
      <ul>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=en#cja-connections"> 跨渠道分析(Customer Journey Analytics中拼接ID)的新文档  </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=zh-Hans#cja-connections"> 跨渠道分析(Customer Journey Analytics中拼接ID)的新文档  </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#admin-access-permissions"> 更新了用户权限要求  </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=en#cja-usecases"> 使用对象数组 </a> </li>
       <li><a href="https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-usecases/b2b.html"> 将帐户级别的数据作为查询数据集进行添加 </a> </li>
