@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 658561ae2f84ab1de87dbb224e3e1b663f64383f
 workflow-type: tm+mt
 source-wordcount: '515'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 97%
 * 一般、更宽范围的流量：显示在查看主页的访客中，有多少人继续进行搜索及有多少人最终查看特定项目。
 * 网站上事件之间的关联。显示查看隐私政策后继续购买产品的访客百分比。
 
-[流失可视化视频教程](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html) (4:15)
+[流失可视化视频教程](https://docs.adobe.com/content/help/zh-Hans/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html) (4:15)
 
 ## 区段划分：流量和流失的一项基本功能 {#section_654F37A398C24DDDB1552A543EE29AA9}
 
