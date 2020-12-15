@@ -1,9 +1,9 @@
 ---
 title: 过滤器概述
 description: 了解过滤器的用途以及如何创建简单的过滤器。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 74b99933fb1b599c829e11117c41235754c189b9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 100%
 
