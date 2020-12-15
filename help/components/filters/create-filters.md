@@ -1,9 +1,9 @@
 ---
 title: 创建过滤器
 description: 了解过滤器创建用户界面。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 21bf268600c12dbf1db24dbc10028a0c29fc48a7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 100%
 
@@ -48,4 +48,4 @@ ht-degree: 100%
 | “共享”>“共享项目”或“共享”>“策划项目数据” | 在[策划并共享](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6)中，了解应用到项目中的过滤器如何用于给收件人共享的分析当中。 |
 | 使用过滤器作为维度 | 视频：在 Analysis Workspace 中使用过滤器作为维度 |
 
->[!VIDEO](https://video.tv.adobe.com/v/23974?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/23974)
