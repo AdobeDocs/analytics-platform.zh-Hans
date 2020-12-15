@@ -1,11 +1,11 @@
 ---
 title: 散点图
-description: 一个可视化，显示最多三个指标之间的关系。
+description: 显示与最多三个量度之间的关系的可视化图表。
 translation-type: tm+mt
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '146'
-ht-degree: 26%
+ht-degree: 100%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 26%
 >
 >您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
-散点图可视化显示了维度项与最多三个度量之间的关系。 它需要三个组件，并支持最多四个组件的可视化。
+散点图可视化图表显示维度项目与最多三个量度之间的关系。它需要三个组件，并且最多支持四个组件的可视化。
 
-* 行组件（通常为尺寸）表示图形上的每个点。 不同的行显示为不同的彩色点。
-* 最左侧的列（通常是度量）绘制点在Y轴上的位置（垂直）。
-* 第二列绘制点在X轴上（水平）的位置。
+* 行组件（通常为维度）表示图表上的每个点。不同的行显示为不同的彩色点。
+* 最左侧的列（通常是量度）绘制点在 Y 轴（垂直）上的位置。
+* 第二列绘制点在 X 轴（水平）上的位置。
 * 第三列确定点的半径。
-* 散点图可视化会忽略自由形式表中的所有后续列。
+* 散点图可视化图表将忽略自由格式表中的所有后续列。
 
 ![散点图](assets/scatter.png)
