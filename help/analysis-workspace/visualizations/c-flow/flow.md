@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 93%
 >
 >在 Analysis Workspace 中和 Reports &amp; Analytics/Ad Hoc Analysis 中对流量应用区段所获得的结果可能有所不同，要了解相关信息，请参阅[区段划分：流量和流失的一项基本功能](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)。
 
-[流可视化视频教程](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html)(4:56)
+[流可视化视频教程](https://docs.adobe.com/content/help/zh-Hans/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html)(4:56)
 
 ## 维度间流量 {#section_7AA325E432C846B0AC51E70CCE79B4C0}
 
@@ -33,6 +33,6 @@ ht-degree: 93%
 
 每一列可显示一个不同的维度。在拖放区域中对维度进行拖放，以将该维度添加到图表。
 
-## 将流量图导出为项目 .CSV 文件的一部分 {#section_BACD2639A0FC4C49A75398F7D0363D9D}
+## 将流量图导出为项目 .CSV 文件的一部分  {#section_BACD2639A0FC4C49A75398F7D0363D9D}
 
 流量图可以作为您能够创建的项目 .CSV 文件的一部分，方法是转到&#x200B;**[!UICONTROL 项目]** > **[!UICONTROL 下载 CSV]**。这可以让您分析 Microsoft Excel（以表格形式显示）或其他软件中的流量结果。
