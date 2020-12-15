@@ -20,7 +20,7 @@ ht-degree: 87%
 |--- |--- |
 | 使用 Analysis Workspace 的先决条件是什么？ | 使用Analysis Workspace需要一项工作Customer Journey Analytics的实施。 在使用该工具之前，请确保您的组织正在向Adobe Experience Platform发送数据。 |
 | Analysis Workspace 的管理和访问要求有哪些？ | 请参阅[管理要求](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)。 |
-| 使用 Analysis Workspace 是否会影响数据收集？ | 由于 Analysis Workspace 是一款报表工具，因此不会对数据收集产生任何影响。您可以不加选择地将组件拖到项目中来查看具体效果，这不会产生任何影响。将不同的维度和量度组合拖动到工作区项目中，可查看相应的效果。如果意外地将无效组件拖动到工作区项目，或者希望返回到上一个步骤，请按 Ctrl + Z (Windows) 或 cmd + Z (Mac) 以撤消上一个操作。此外，您还可以通过单击左上角菜单中的&#x200B;*[!UICONTROL 项目]>[!UICONTROL 新建]*&#x200B;来重头开始创建。 |
+| 使用 Analysis Workspace 是否会影响数据收集？ | 由于 Analysis Workspace 是一款报表工具，因此不会对数据收集产生任何影响。您可以不加选择地将组件拖到项目中来查看具体效果，这不会产生任何影响。将不同的维度和量度组合拖动到工作区项目中，可查看相应的效果。如果意外地将无效组件拖动到工作区项目，或者希望返回到上一个步骤，请按 Ctrl + Z (Windows) 或 cmd + Z (Mac) 以撤消上一个操作。此外，您还可以通过单击左上角菜单中的&#x200B;*[!UICONTROL 项目] > [!UICONTROL 新建]*&#x200B;来重头开始创建。 |
 | 如何实施 Analysis Workspace？ | 不要求执行任何特殊的实施操作。Analysis Workspace面向所有公司Customer Journey Analytics。 但是，对内容（如项目组件）的标准权限会应用，并且会用于创建和共享项目。 请参阅[管理和访问要求](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)。 |
 | 如何优化 Analysis Workspace 的性能？ | 请参阅[优化性能](/help/analysis-workspace/workspace-faq/optimizing-performance.md)。 |
 
