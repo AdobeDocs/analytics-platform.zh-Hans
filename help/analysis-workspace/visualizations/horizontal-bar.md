@@ -23,7 +23,7 @@ ht-degree: 100%
 
 ![](assets/horizontal_bar.png)
 
-## 堆叠的水平条形图 {#section_50C08E9E20A94024A6553BC352ADB597}
+## 堆叠的水平条形图  {#section_50C08E9E20A94024A6553BC352ADB597}
 
 此可视化与[!UICONTROL 水平条形图]类似，只是系列条以堆叠方式显示。
 
