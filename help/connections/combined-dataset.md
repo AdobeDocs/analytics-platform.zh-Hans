@@ -1,9 +1,9 @@
 ---
 title: 合并事件数据集
 description: 了解 CJA 如何通过合并数据集创建连接。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ef05a948cb2036db24c8e308695e3615613d98d8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 100%
 
