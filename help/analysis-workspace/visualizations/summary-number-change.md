@@ -1,25 +1,25 @@
 ---
-description: 使用“摘要编号”和“更改”可视化显示项目中的重要数据点。
-title: 概要数字和概要更改
+description: 使用“概要数字”和“概要变化”可视化图表来显示项目中的重要数据点。
+title: 概要数字和概要变化
 uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
 translation-type: tm+mt
 source-git-commit: 9733d6471e6f1c886fd27b702654349d6760870c
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
 
-# 概要数字和概要更改
+# 概要数字和概要变化
 
 >[!NOTE]
 >
 >您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
-## 概要数字可视化 {#summary-number}
+## “概要数字”可视化图表  {#summary-number}
 
-使用“摘要数字”可视化来突出显示在项目中很重要的大数字。 此可视化的行为方式如下：
+使用“概要数字”可视化图表来突出显示项目中的大型重要数字。此可视化图表的行为方式如下：
 
 * 如果未选中单元格，此可视化则会选择总列数。
 * 如果选中了单个单元格，此可视化则会显示该单元格的概要。
@@ -28,20 +28,20 @@ ht-degree: 56%
 
 ![概要数字](assets/summary-number.png)
 
-单击 **可视化设置** 在右上角设置以配置“摘要编号”设置：
+单击右上方的&#x200B;**可视化设置**&#x200B;齿轮，可配置“概要数字”设置：
 
 | 设置 | 定义 |
 |--- |--- |
-| 百分数 | 显示百分比而非原始数字。 |
-| 图例可见 | 显示有关显示的度量的信息。 |
-| 缩写值 | 选择缩写值，最多显示3个小数位。 |
-| 值汇总方式 | 选择显示所选数据的最大、最小、平均、中值或和。 |
+| 百分比 | 显示百分比，而不是原始数字。 |
+| 图例可见 | 显示有关所显示的量度的信息。 |
+| 缩写值 | 选择缩写值，最多显示 3 个小数位。 |
+| 值汇总方式 | 选择显示所选数据的最大值、最小值、平均值、中间值或总和。 |
 
-## 概要更改可视化 {#summary-change}
+## “概要变化”可视化图表 {#summary-change}
 
-使用“摘要更改”可视化显示两个数字之间的增量（更改）。 “摘要更改”的绿色和红色可通过 [自定义事件极性](https://docs.adobe.com/content/help/zh-Hans/analytics/admin/admin-tools/success-events/success-event.html) 或计算的度量 [显示上升趋势为](https://docs.adobe.com/content/help/zh-Hans/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) 选项。
+使用“概要变化”可视化图表来显示两个数字之间的增量（变化）。可通过[自定义事件极性](https://docs.adobe.com/content/help/zh-Hans/analytics/admin/admin-tools/success-events/success-event.html)或计算量度的[将上升趋势显示为](https://docs.adobe.com/content/help/zh-Hans/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html)选项来控制“概要变化”的绿色和红色。
 
-此可视化的行为方式如下：
+此可视化图表的行为方式如下：
 
 * 如果未选中单元格，此可视化会比较列中的前两个单元格值。
 * 如果选中了一个单元格，此可视化会显示 0，因为它将单元格值与其自身进行比较。
@@ -52,11 +52,11 @@ ht-degree: 56%
 
 ![概要变化](assets/summary-change.png)
 
-单击 **可视化设置** 在右上角设置以配置“摘要更改”设置：
+单击右上方的&#x200B;**可视化设置**&#x200B;齿轮，可配置“概要变化”设置：
 
 | 设置 | 定义 |
 |--- |--- |
-| 百分数 | 显示百分比而非原始数字。 |
-| 图例可见 | 显示有关显示的度量的信息。 |
-| 显示百分比更改 | 显示2个数字之间的百分比变化。 |
-| 显示原始差异 | 显示 2 个数值之间的原始差异。您还可以使用此选项缩写值并最多显示3个小数位。 |
+| 百分比 | 显示百分比，而不是原始数字。 |
+| 图例可见 | 显示有关所显示的量度的信息。 |
+| 显示百分比变化 | 显示 2 个数字之间的百分比变化。 |
+| 显示原始差异 | 显示 2 个数字之间的原始差异。您还可以对此选项使用缩写值，并最多显示 3 个小数位。 |
