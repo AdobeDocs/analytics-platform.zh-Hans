@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -36,8 +36,8 @@ ht-degree: 95%
 
 每当您手动选择特定组件值（维度、量度、区段、日期范围）并将其拖放到表中后，就会生成行或列的静态列表。此外，如果您选择执行以下操作，也可以创建静态维度项目：
 
-* 在行中，右键单击> [!UICONTROL 仅显示选定行]
-* 从列中，右键单击> [!UICONTROL 使项目变为静态]
+* 从行中，右键单击> [!UICONTROL 仅显示选定的行]
+* 从列中，右键单击> [!UICONTROL 将项设置为静态]
 
 例如，当您将鼠标拖到特定的“浏览器类型”项目（例如 Microsoft 和 Apple）上时，这 2 个特定项目始终会提取到表中。
 
@@ -56,5 +56,5 @@ ht-degree: 95%
 动态行和静态行在自由格式表总计行中的行为方式有所不同。默认情况下：
 
 * 动态行是服务器端总和，并且去除了重复量度，例如访问次数和访客
-* 静态行是客户端总和，并且&#x200B;**不会**&#x200B;去除重复量度。要计算服务器端总计行，请将“行”设置更改为&#x200B;**显示总计**。[了解更多](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)
+* 静态行是客户端总和，并且&#x200B;**不会**&#x200B;去除重复量度。要计算服务器端总计行，请将“行”设置更改为&#x200B;**显示总计**。[了解更多](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)
 
