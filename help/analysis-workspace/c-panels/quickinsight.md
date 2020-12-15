@@ -18,7 +18,7 @@ ht-degree: 99%
 
 >[!IMPORTANT]
 >
->**[!UICONTROL 快速洞察]** 面板当前处于受限测试状态。 [了解更多](https://docs.adobe.com/content/help/zh-Hans/analytics/landing/an-releases.html)
+>**[!UICONTROL Quick]** Insightspanel当前处于有限测试中。[了解更多](https://docs.adobe.com/content/help/zh-Hans/analytics/landing/an-releases.html)
 
 [!UICONTROL 快速分析]可为 [!UICONTROL Analysis Workspace] 的非分析师和新用户了解如何快速轻松地回答业务问题提供指导。此外，对于希望快速回答简单问题的高级用户来说，它也是一个不错的工具，无需自己制表。
 
