@@ -1,6 +1,6 @@
 ---
 title: 归因模型和回顾时间范围
-description: 不同类型的归因如何划分维度项目之间的积分。
+description: 不同类型的归因如何在维度项目之间划分点数。
 translation-type: tm+mt
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
@@ -49,7 +49,7 @@ Adobe Analytics 中的归因概念包含两个组件：
 
 >[!NOTE]
 >
->**[!UICONTROL 自定义回顾窗口]** 当前处于有限测试中。 请参阅 [Adobe Analytics功能发布](https://docs.adobe.com/content/help/zh-Hans/analytics/landing/an-releases.html) 的双曲余切值。
+>**[!UICONTROL 自定义回]** 顾窗口当前处于受限测试中。有关详细信息，请参阅[Adobe Analytics功能版本](https://docs.adobe.com/content/help/zh-Hans/analytics/landing/an-releases.html)。
 
 ## 示例
 
