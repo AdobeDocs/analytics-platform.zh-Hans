@@ -15,7 +15,7 @@ ht-degree: 95%
 
 工作区提供了许多可视化图表，使您能够生成数据的可视化表示形式，如条形图、圆环图、直方图、折线图、地图、散点图等。每个可视化图表都有其自身的设置，您可以管理这些设置。单击可视化图表的名称可了解更多详细信息。
 
-视频教程： [Analysis Workspace的可视化类型](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/visualization-types.html) (2:57)
+视频教程：Analysis Workspace的[可视化类型](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/visualization-types.html)(2:57)
 
 | 可视化图表名称 | 描述 |
 | --- | --- |
@@ -39,7 +39,7 @@ ht-degree: 95%
 
 ## “可视化图表”面板 {#section_DC07F032FBEF4046A40F7B95C28DA018}
 
-要显示“可视化”面板，请单击 **[!UICONTROL 可视化]** 的双曲余切值。
+要显示“可视化”面板，请单击左边栏中的&#x200B;**[!UICONTROL 可视化]**。
 
 ![步骤结果](assets/visualizations.png)
 
