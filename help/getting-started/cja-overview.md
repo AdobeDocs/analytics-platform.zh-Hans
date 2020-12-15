@@ -1,9 +1,9 @@
 ---
 title: Customer Journey Analytics 概述
 description: 了解如何通过 Customer Journey Analytics 来使用 Analysis Workspace 处理来自 Experience Platform 的数据。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f52a6788a0a5f3aea23fc783e479c3f8a23a260d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1229'
 ht-degree: 100%
 
