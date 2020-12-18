@@ -18,10 +18,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: 教程
 tutorials-url: https://helpx.adobe.com/cn/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: e0946d2e0490e25314367a86ed241eadd09b09e5
+source-git-commit: e57d92f702445d8caac25a7cc11a6aafe6c62262
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 92%
+source-wordcount: '434'
+ht-degree: 91%
 
 ---
 
@@ -159,6 +159,7 @@ ht-degree: 92%
    + [导入呼叫中心和Web数据](use-cases/call-center.md)
    + [摄取数据用例](use-cases/data-ingestion.md)
    + [使用营销渠道维](use-cases/marketing-channels.md)
+   + [向数据集添加全局查找](use-cases/global-lookups.md)
 + 隐私权 {#cja-privacy}
    + [隐私权概述](privacy/privacy-overview.md)
 + [CJA 文档更新](doc-changes.md)
