@@ -2,10 +2,10 @@
 title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
 translation-type: tm+mt
-source-git-commit: a4a655c5ee6aa8f72ba527baf5e841f76d9b9486
+source-git-commit: 55b03e01494a5989ab05aa391df5155bcf9d188f
 workflow-type: tm+mt
-source-wordcount: '945'
-ht-degree: 94%
+source-wordcount: '985'
+ht-degree: 89%
 
 ---
 
@@ -40,6 +40,7 @@ ht-degree: 94%
 | 功能 | 注释 |
 | --- | --- |
 | 产品变量 | 当前可用于报表数据的产品变量符合体验报告架构（特别是使用 productListItems 的对象）。 |
+| 营销渠道 | 营销渠道数据现在通过Analytics Data Connector流入CJA。 营销渠道规则仍必须在传统的Adobe Analytics中进行配置。 某些规则不受支持。 有关详细信息，请参阅[CJA营销渠道文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=en#cja-usecases)。 |
 | 可视化图表 | 除地图可视化图表外，支持所有可视化图表。 |
 | 项目共享 | 仅支持在 CJA 用户之间共享项目 - 不支持 CJA 与传统 Analysis Workspace 之间共享项目。 |
 | 自定义会话流程 | 支持除移动后台点击之外的所有自定义会话流程功能。 |
@@ -75,10 +76,11 @@ ht-degree: 94%
 | 计划报表/项目 | 计划将会提供支持。 |
 | 警报 | 计划将会提供支持。 |
 | 自定义日历 | 计划将会提供支持。 |
-| 营销渠道 | 计划将会提供支持。 |
 | PDF 导出 | 计划将会提供支持。 |
 | 报表 API 访问 | 计划将会提供支持 - 将仅适用于 API 2.0。 |
 | 通过设备图形进行 ID 拼合 | 计划将会提供支持。 |
+| Report Builder（Excel 插件） | 计划将会提供支持。 |
+| 实时报告 | 计划将会提供支持。 |
 
 ## 尚未计划提供支持
 
@@ -87,11 +89,9 @@ ht-degree: 94%
 | A4T | 尚未计划提供支持。 |
 | Media Analytics | 尚未计划提供支持。 |
 | Advertising Cloud | 尚未计划提供支持。 |
-| Report Builder（Excel 插件） | 尚未计划提供支持。 |
 | Activity Map | 尚未计划提供支持。 |
 | 分类规则生成器 | 尚未计划提供支持。 |
 | 概要数据源 | 尚未计划提供支持。 |
-| 实时报告 | 尚未计划提供支持。 |
 
 ## 将永远不支持
 
