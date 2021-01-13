@@ -3,9 +3,9 @@ description: 通过同步可视化图表，您可以控制与可视化图表对�
 keywords: Analysis Workspace;Synchronize visualization with data source
 title: 管理数据源
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 7f6afbb7c0376791c286021d9ffe4ac670ed7bd7
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '562'
 ht-degree: 100%
 
 ---
@@ -13,17 +13,13 @@ ht-degree: 100%
 
 # 管理数据源
 
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
-
 通过同步可视化图表，您可以控制与可视化图表对应的数据表或数据源。
 
 **提示：**&#x200B;您可以通过标题旁边圆点的颜色来辨别所关联的可视化图表。颜色一致表示可视化图表基于同一个数据源。
 
 管理数据源允许您显示数据源或锁定选择。这些设置决定了当有新数据输入时，可视化图表发生更改（或不发生更改）的方式。
 
-1. [创建项目](/help/analysis-workspace/home.md)，其中包含一个数据表和一个[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)。
+1. [创建项目](//help/analysis-workspace/home.md)，其中包含一个数据表和一个[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)。
 1. 在数据表中，选择要与可视化图表关联的单元格（数据源）。
 1. 在可视化中，单击标题旁边的圆点，打开&#x200B;**[!UICONTROL 数据源]**&#x200B;对话框。选择&#x200B;**[!UICONTROL 显示数据源]**&#x200B;或&#x200B;**[!UICONTROL 锁定选择]**。
 
