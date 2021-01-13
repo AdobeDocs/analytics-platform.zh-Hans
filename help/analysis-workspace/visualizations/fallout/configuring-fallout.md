@@ -3,19 +3,15 @@ description: 'null'
 title: 配置流失可视化图表
 uuid: fc117745-baf3-46fb-873d-9307092cc337
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '679'
 ht-degree: 100%
 
 ---
 
 
 # 配置流失可视化图表
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 您可以指定接触点以创建多维度流失序列。通常，接触点就是网站中的某个页面。但是，接触点并不仅限于页面。例如，您可以添加事件，如件数及独特访客和回访。也可以添加维度，如类别、浏览器类型或内部搜索词。
 
@@ -69,7 +65,6 @@ ht-degree: 100%
 | 设置 | 描述 |
 |--- |--- |
 | 流失容器 <ul><li>访问</li><li>Visitor</li></ul> | 用于在“访问”和“访客”之间切换以分析访客路径。默认值为“访客”。这些设置可帮助您在访客级别（跨访问）了解访客参与程度，或将分析限定于单次访问。 |
-| 显示“所有访客”作为第一个接触点。 | 如果不希望将“所有访客”作为第一个接触点，您可以取消选择此设置。 |
 
 当您&#x200B;**右键单击某个接触点**&#x200B;时，将会显示以下选项：
 
