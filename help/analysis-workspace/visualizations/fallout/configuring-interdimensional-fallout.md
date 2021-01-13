@@ -3,19 +3,15 @@ description: Analysis Workspace 中的流失允许您将维度和量度作为漏
 title: 维度间流失
 uuid: 17520727-2d06-4dc2-a66d-66e3350bdda3
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '164'
 ht-degree: 100%
 
 ---
 
 
 # 维度间流失
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace 中的流失允许您将维度和量度作为漏斗和工作流程中的接触点来进行混合和匹配。这在定义要调查的用户步骤方面具有更大的灵活性。
 
