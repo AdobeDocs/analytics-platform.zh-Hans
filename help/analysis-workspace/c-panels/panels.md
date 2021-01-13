@@ -1,61 +1,99 @@
 ---
-description: 'null'
+description: 面板是表和可视化的集合
 title: 面板概述
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 7f6afbb7c0376791c286021d9ffe4ac670ed7bd7
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 91%
+source-wordcount: '954'
+ht-degree: 8%
 
 ---
 
 
 # 面板概述
 
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+[!UICONTROL 面板]是表和可视化的集合。 您可以从Workspace中左上角的图标或[空白面板](/help/analysis-workspace/c-panels/blank-panel.md)访问面板。 当您希望根据时段、报表包或分析用例组织项目时，面板会很有帮助。 Analysis Workspace提供以下面板类型：
 
-面板是表格和可视化图表的集合。您可以通过工作区左上角的图标访问面板。当您需要根据时间段、业务单位、地理位置等来组织项目时，这些面板将会非常有帮助。在Analysis Workspace，有以下四种专题小组供Customer Journey Analytics:
+| 面板名称 | 描述 |
+| --- | --- |
+| [空白面板](/help/analysis-workspace/c-panels/blank-panel.md) | 从可用的面板和可视化中进行选择，以开始分析。 |
+| [快速分析面板](quickinsight.md) | 快速构建自由格式表和随附的可视化图表，以便更快地分析和发现见解。 |
+| [归因面板](attribution.md) | 使用任何维度和转化量度快速比较和可视化任意数量的归因模型。 |
+| [自由格式面板](freeform-panel.md) | 执行无限制的比较和细分，然后添加可视化以讲述丰富的数据故事。 |
 
-* [空白面板](blank-panel.md)
-* [快速分析面板](quickinsight.md)
-* [归因面板](attribution.md)
-* [自由格式面板](freeform-panel.md)
+![](assets/panel-overview.png)
 
-“快速洞察”、“空白”和“自由格式”面板是开始分析的绝佳场所，而Attribution IQ面板则适用于更高级的分析。 项目中有一个 `"+"` 按钮，通过该按钮，您可以随时添加空白面板。
+[!UICONTROL Quick Insights]、Blank  和Freeformpanels是开始您的  分析的绝佳 [!UICONTROL 场所，而Analytics for ]目标、 [!UICONTROL Attribution IQ]    、Ching Media Viewer和Ching细分相比较可以提供更高级的分析。项目中有一个 `"+"` 按钮，通过该按钮，您可以随时添加空白面板。
 
-默认的开始面板是自由格式面板，但也可以将[空白面板](/help/analysis-workspace/c-panels/blank-panel.md)设置为默认的开始面板。
+默认的起始面板是[!UICONTROL Freeform]面板，但您也可以将[空白面板](/help/analysis-workspace/c-panels/blank-panel.md)设置为默认面板。
 
-## 面板中的下拉过滤器
+## 报表包 {#report-suite}
 
-面板拖放区域具备下拉过滤器功能。通过这些过滤器，您能够以可控方式与项目数据进行交互，以便您可以进行深入分析、简化项目，和/或与他人共享分析。
+面板中的表和可视化从面板右上方选定的[!UICONTROL 报表包]中导出数据。 报表包还确定左边栏中可用的组件。 在项目中，可以根据分析用例使用一个或[多个报表包](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.html)。 要将单个报表包应用到项目中的所有面板，请&#x200B;**右键单击面板标题>将报表包应用到所有面板**。
 
-以下是一个简化项目的示例：假设您的某个项目/面板有多个版本，以提供针对特定国家/地区的报告。您可以将这些不同版本的项目/面板整合到单个面板中，并添加一个国家/地区下拉列表，以便在不同的数据集中进行过滤。
+报表包的列表根据相关性进行排序，Adobe根据当前用户最近和频繁使用该套件以及该套件在组织中的使用频率定义该套件。
 
-![](assets/dropdowns.png)
+![](assets/panel-report-suite.png)
 
-请牢记这一点：
+## 日历 {#calendar}
 
-* 您可以放入多个组件（或维度项目），然后通过下拉列表，在这些组件之间进行切换，以过滤面板内容。
-* 您还可以在同一个面板中创建多个下拉列表。
-* 您可以通过单击标题并对其进行修改来自定义下拉列表的标题，也可以通过单击标题旁边的 x 将标题全部移除。
-* 您可以使用任意组件类型创建下拉过滤器：维度、日期范围、区段和量度。请注意，下拉日期范围将始终覆盖面板日期范围。
-* 我们保持了左边栏中的组件颜色：黄色代表维度项目下拉列表，绿色代表量度，蓝色代表区段，紫色代表日期范围。
-* 拖放区域仍会为以区段形式拖入的项目创建点击级别的区段。您可以照常修改这些区段，方法是单击区段旁边的信息图标 (i)，然后单击铅笔形状的编辑图标，并在“区段生成器”中对其进行编辑。
+面板日历控制面板中表格和可视化的报告范围。
 
-**要创建并使用下拉过滤器，请执行以下操作：**
+注意：如果在表、可视化或面板拖放区中使用（紫色）日期范围组件，它将覆盖面板日历。
 
-1. 从左边栏中选择任意项目，**并在按住键的同时**，将这些项目放入面板拖放区域。
+![](assets/panel-calendar.png)
 
-   ![](assets/create_dropdown.png)
+## 拖放区{#dropzone}
 
-   此操作可将组件转换为下拉列表，而不是区段。（还可以通过不按住键来添加区段。）
+面板拖放区允许您将区段和下拉过滤器应用于面板中的所有表和可视化。 您可以对面板应用一个或多个过滤器。 可通过单击编辑铅笔来修改每个滤镜上方的标题，也可以右键单击以完全删除它。
 
-   ![](assets/dropdown.png)
+### 细分过滤器
 
-1. 从下拉列表中选择一个选项，以更改下面面板中的数据。（您还可以通过选择&#x200B;**[!UICONTROL 无过滤器]**，不对任何面板数据进行过滤。）
-1. 例如，如果您还希望按营销渠道对数据进行切片，则可以添加另外一个名为“营销渠道”的下拉列表：
+将左边栏中的任意段拖放到面板拖放区，开始筛选面板。
 
-   ![](assets/mc_dropdown.png)
+![](assets/segment-filter.png)
 
+### 临时细分过滤器
+
+非区段组件还可直接拖入拖放区以创建临时区段，节省了转至区段生成器的时间和精力。 以这种方式创建的区段会自动定义为点击级别区段。 可以通过单击段旁的信息图标(i)，然后单击铅笔形编辑图标并在段生成器中编辑来修改此定义。
+
+临时区段是项目的本地区段，除非公开，否则不会显示在左边栏中。
+
+![](assets/adhoc-segment-filter.png)
+
+### 下拉过滤器{#dropdown-filter}
+
+除细分过滤器外，下拉过滤器还允许您以受控方式与数据交互。 例如，您可以为移动设备类型添加下拉筛选器，以便按平板电脑、手机或桌面对面板进行分段。
+
+下拉式过滤器还可用于将多个项目合并到一个项目中。 例如，如果应用了不同国家／地区段的同一项目的多个版本，您可以将所有版本合并到单个项目中并添加国家／地区下拉列表筛选器。
+
+![](assets/dropdown-filter-intro.png)
+
+要创建下拉过滤器，请执行以下操作：
+
+1. 要使用[!UICONTROL Dimension项]创建下拉筛选器，如[!UICONTROL 营销渠道]维中的值，请单击左边栏中您的维旁边的右箭头图标。 这将显示所有可用项。 从左边栏中选择一个或多个组件项，并将它们拖放到面板拖放区&#x200B;**中，同时按住Shift键**。 这会将组件转换为下拉筛选器，而不是单个区段。
+1. 要使用度量、段或日期范围等其他组件创建下拉筛选器，请从左边栏中的一个组件类型中进行选择，并在按住Shift键的同时放入面板拖放区&#x200B;**。**
+1. 从下拉列表中选择一个选项以更改面板中的数据。 您也可以选择&#x200B;**[!UICONTROL 无过滤器]**&#x200B;来选择不过滤任何面板数据。
+
+![](assets/create-dropdown.png)
+
+[观看视](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) 频以进一步了解如何向项目添加下拉过滤器。
+
+## 右键单击菜单{#right-click}
+
+右击面板标题即可获得面板的其他功能。
+
+![](assets/right-click-menu.png)
+
+可以使用以下设置：
+
+| 设置 | 描述 |
+| --- | --- |
+| 插入复制的面板／可视化 | 允许您将复制的面板或可视化粘贴（“插入”）到项目中的其他位置，或粘贴到完全不同的项目中。 |
+| 复制面板 | 允许您右键单击并复制面板，以便将其插入项目中的其他位置，或插入完全不同的项目。 |
+| 将报表包应用于所有面板 | 允许您将活动面板报告套件应用到项目中的所有面板。 |
+| 重复面板 | 精确重复当前面板，然后可以修改该面板。 |
+| 折叠／展开所有面板 | 折叠并展开所有项目面板。 |
+| 折叠／展开面板中的所有可视化 | 折叠并展开当前面板中的所有可视化。 |
+| 编辑描述 | 添加（或编辑）面板的文本描述。 |
+| 获取面板链接 | 此设置允许您将人员引导至项目中的特定面板。单击链接后，收件人需要先登录，然后才能被定向到链接的确切面板。 |
