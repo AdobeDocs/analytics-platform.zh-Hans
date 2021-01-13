@@ -3,27 +3,19 @@ description: 使用折线图可视化图表来描述趋势（基于时间）数�
 title: 折线图
 uuid: 0508ff29-43fe-4f3a-a5f7-051869271b55
 translation-type: tm+mt
-source-git-commit: 4f163e32787a732526511aeda5f6c1e32becb490
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 94%
+source-wordcount: '511'
+ht-degree: 65%
 
 ---
 
 
 # 折线图
 
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
-
 此折线图可视化图表使用线条来表示量度，以显示一段时间内值的变化情况。仅当使用时间作为维度时，才可以使用折线图。
 
 ![折线图可视化图表](assets/line-viz.png)
-
->[!IMPORTANT]
->
->一些折线图可视化图表设置（如[!UICONTROL 显示趋势线]）当前处于有限测试阶段。[了解更多](https://docs.adobe.com/content/help/zh-Hans/analytics/landing/an-releases.html)
 
 单击折线图可视化图表右上角的齿轮图标，可访问&#x200B;[**可视化设置**](freeform-analysis-visualizations.md)。设置分为以下几类：
 
@@ -45,11 +37,15 @@ ht-degree: 94%
 
 ## 显示趋势线叠加图
 
-在&#x200B;**[!UICONTROL 可视化设置]** > **[!UICONTROL 叠加图]** > **[!UICONTROL 显示趋势线]**&#x200B;下，您可以选择向折线图系列添加一条回归趋势线。趋势线有助于在数据中描绘更清晰的图案。
+在&#x200B;**[!UICONTROL 可视化设置]** > **[!UICONTROL 叠加]** > **[!UICONTROL 显示趋势线]**&#x200B;下，您可以选择向行序列添加回归或移动平均趋势线。 趋势线有助于在数据中描绘更清晰的图案。
+
+>[!TIP]
+>
+>建议将趋势线应用于不包括今天（部分数据）或未来日期的数据，因为这些数据会使趋势线产生偏差。 但是，如果您需要包含未来日期，请从数据中删除零，以防这些日期出现偏斜。 为此，请转到可视化的数据源表，选择您的度量列，然后启用&#x200B;**[!UICONTROL 列设置]** > **[!UICONTROL 将零解释为无值]**。
 
 ![线性趋势线](assets/show-linear-trendline.png)
 
-所有模型都采用普通最小二乘法：
+所有回归模型趋势线均采用最小二乘拟合：
 
 | 模型 | 描述 |
 | --- | --- |
@@ -58,3 +54,4 @@ ht-degree: 94%
 | 指数 | 创建一条曲线，当数据以不断增大的速率增加或减少时，此模型非常有用。如果数据包含零或负值，则不应使用此选项。方程式：`y = a + e^(b * x)` |
 | 幂 | 创建一条曲线，对于要比较以特定速率增加的测量值的数据集，此模型非常有用。如果数据包含零或负值，则不应使用此选项。方程式：`y = a * x^b` |
 | 二次方程式 | 找到最适合数据集的曲线，形状类似抛物线（下凹或上凸）。方程式：`y = a + b * x + c * x^2` |
+| 移动平均 | 根据一组平均值创建平滑的趋势线。 移动平均值也称为滚动平均值，它使用特定数量的数据点（由您的“期间”选择确定），对它们进行平均，并将平均值用作行中的点。 例如，7天移动平均数或4周移动平均数。 |
