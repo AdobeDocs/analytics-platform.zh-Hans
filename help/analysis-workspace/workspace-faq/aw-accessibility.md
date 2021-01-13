@@ -2,19 +2,15 @@
 description: Analysis Workspace 中的无障碍支持功能
 title: Analysis Workspace 中的辅助功能
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 100%
+source-wordcount: '661'
+ht-degree: 82%
 
 ---
 
 
 # Analysis Workspace 中的辅助功能
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 了解 Adobe Analytics 的首要分析工具 [!UICONTROL Analysis Workspace] 中的无障碍支持。
 
@@ -26,11 +22,20 @@ ht-degree: 100%
 
 [!UICONTROL Analysis Workspace] 中的导航方式包括自上而下，以及从左至右。以下导航元素有助于促进无障碍功能：
 
-* `F6` 键会启用地标快捷键
-* `Tab` 键可在各个元素之间移动。
+* `Tab` 键会启用地标快捷键，在工作区中的较大部分之间移动。 在左边栏中，`Tab`还允许您从一个可拖动选项移动到下一个可拖动选项。
+* `Tab`突出显示后，`left/right arrows`在各个元素之间移动。
+* `F6`导航到项目中的第一个面板并在该面板中的可视化之间移动。 然后，它移到项目中的下一个面板并重复。
 * 我们应用焦点指示器，以便近视的键盘用户能够清楚地了解当前具有焦点的 UI 元素。指示器是指选定元素周围的蓝色边框。
 
    ![焦点指示器](assets/focus-indicator.png)
+
+### 菜单栏的键盘导航
+
+1. 选项卡，直到您到达菜单栏。
+1. 使用向左／向右箭头键导航到所需的菜单。
+1. 按`Enter`选择菜单并显示其选项。
+1. 使用向上／向下箭头键导航到所需的菜单选项。
+1. 按`Enter`选择选项。
 
 ### 键盘导航进行拖放交互操作
 
@@ -43,7 +48,7 @@ ht-degree: 100%
 
 ### 键盘快捷键（热键）
 
-[!UICONTROL Analysis Workspace] 提供丰富的[键盘快捷键](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)，以体验更顺畅的工作流程。下面列出了导航、创建分析和获取大众化洞察信息的一些常用快捷键。
+[!UICONTROL Analysis Workspace] 提供丰富的[键盘快捷键](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html)，以体验更顺畅的工作流程。下面列出了导航、创建分析和获取大众化洞察信息的一些常用快捷键。
 
 #### 导航
 
@@ -85,7 +90,7 @@ ht-degree: 100%
 
 [!UICONTROL Analysis Workspace] 致力于符合 WCAG 2.1 AA 合规性标准，包括对颜色对比度的要求。
 
-此外，用户还可以在&#x200B;**[!UICONTROL 项目]** > **[!UICONTROL 项目设置]** > [项目调色板](/help/analysis-workspace/build-workspace-project/color-palettes.md)下为项目设置各自的首选调色板。
+此外，用户还可以在&#x200B;**[!UICONTROL 项目]** > **[!UICONTROL 项目设置]** > [项目调色板](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html)下为项目设置各自的首选调色板。
 
 ## 组件构建器中的必填字段验证
 
