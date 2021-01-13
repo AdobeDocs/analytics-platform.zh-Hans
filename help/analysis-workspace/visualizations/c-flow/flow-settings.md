@@ -3,19 +3,15 @@ description: 'null'
 title: 流量设置
 uuid: 99822765-1d4f-4c23-a787-b089089cb8d7
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '235'
 ht-degree: 100%
 
 ---
 
 
 # 流量设置
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 | 设置 | 描述 |
 |--- |--- |
