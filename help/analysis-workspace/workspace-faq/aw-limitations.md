@@ -2,19 +2,15 @@
 description: Adobe Analysis Workspace 及其相关组件中的已知限制列表
 title: Analysis Workspace 中的已知限制
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 7f6afbb7c0376791c286021d9ffe4ac670ed7bd7
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 93%
+source-wordcount: '382'
+ht-degree: 85%
 
 ---
 
 
 # Analysis Workspace 中的已知限制
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 以下是 Analysis Workspace 及其相关组件中的已知限制列表：
 
@@ -32,14 +28,14 @@ ht-degree: 93%
 * [!UICONTROL 流量]：登入/退出维度（例如，[!UICONTROL 进入页面]）不能在流量中使用。
 * [!UICONTROL 同类群组]：非整数不能用作同类群组标准。
 
-<!--## Panels
+## 面板
 
-* Segment Comparison: The [!UICONTROL Everyone Else] segment does not get created if a segment template is used in the initial drop zone.<-->
+* 区段比较：如果在初始放置区中使用区段模板，则不会创建[!UICONTROL 其他各项]区段。
 
 ## “组件”>“过滤器”
 
-* 某些量度和维度不可分段，如[!UICONTROL 发生次数]、[!UICONTROL 唯一访客]，等等。
-* 如果从Workspace创建过滤器(而不是从[!UICONTROL 组件>过滤器]创建过滤器)，则某些组件和运算符将不可用。 例如，IP 地址。
+* 某些度量和维度无法筛选，如[!UICONTROL 发生次数]、[!UICONTROL 唯一访客]等。
+* 在[面板拖放区](/help/analysis-workspace/c-panels/panels.md)中创建的临时过滤器将不会显示在Workspace或过滤器组件管理器的左边栏中，除非公开它们。 这可以通过编辑过滤器并选择&#x200B;**[!UICONTROL 将此过滤器设为公开]**&#x200B;来完成。
 
 ## “组件”>“计算量度”
 
@@ -50,6 +46,7 @@ ht-degree: 93%
 ## “组件”>“日期范围”
 
 * 自定义日期范围不支持[!UICONTROL 去年今日]、[!UICONTROL 上个月今日]，等等。
+
 
 ## “组件”>“报表设置”
 
