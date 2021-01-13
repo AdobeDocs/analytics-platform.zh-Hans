@@ -3,19 +3,15 @@ description: 'null'
 title: 水平条形图和堆叠的水平条形图
 uuid: 3730929d-42e6-4543-b12a-d002f86ac82d
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '62'
 ht-degree: 100%
 
 ---
 
 
 # 水平条形图和堆叠的水平条形图
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 ## 水平条形图 {#section_73A4D6F6C8864045A97B0B32B5FFFEDB}
 
