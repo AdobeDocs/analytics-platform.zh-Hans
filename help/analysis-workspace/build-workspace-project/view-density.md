@@ -2,19 +2,15 @@
 description: 了解如何调整视图密度。
 title: 视图密度
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '104'
 ht-degree: 100%
 
 ---
 
 
 # 视图密度
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 通过调整视图密度，您可以减小左边栏、自由格式表和同类群组表的垂直边距，从而在屏幕上查看更多数据。使用单选按钮切换视图密度时，有 3 个选项可用：
 
