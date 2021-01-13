@@ -3,19 +3,15 @@ description: 将分层（树结构）数据显示为一组嵌套的矩形。
 title: 树状图
 uuid: 4e1ec255-d43e-46f2-ac62-296f15218799
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '94'
 ht-degree: 100%
 
 ---
 
 
 # 树状图
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 将分层（树结构）数据显示为一组嵌套的矩形。
 
