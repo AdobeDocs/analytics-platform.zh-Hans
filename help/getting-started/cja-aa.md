@@ -2,10 +2,10 @@
 title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
 translation-type: tm+mt
-source-git-commit: 55b03e01494a5989ab05aa391df5155bcf9d188f
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 89%
+source-wordcount: '986'
+ht-degree: 87%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 89%
 | 虚拟报表包 | 现在称为[数据视图](/help/data-views/create-dataview.md)。 |
 | VRS 组件策划 | 现在是“数据视图”的一部分。 |
 | 报表时间处理 | CJA 完全依赖于报表时间处理。 |
-| 删除 GDPR | 请注意，GDPR 现在可与 [!UICONTROL Experience Platform] 协调处理 - CJA 会继承 [!UICONTROL Experience Platform] 对基础数据集所做的任何数据更改。 |
+| 删除 GDPR | 请注意，GDPR现在与[!UICONTROL Adobe Experience Platform]协调处理- CJA继承[!UICONTROL Experience Platform]对基础数据集所做的任何数据更改。 |
 | 用户权限/数据访问控制 | CJA 区分 Adobe Admin Console 产品管理员和用户。只有产品管理员才能 1) 创建/更新/删除连接或数据视图，2) 更新/删除其他用户创建的项目、过滤器或计算量度，以及 3) 将工作区项目共享给所有用户 |
 
 ## 受支持，但有注意事项
