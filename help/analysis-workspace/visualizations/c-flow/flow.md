@@ -1,12 +1,11 @@
 ---
-description: 'null'
+description: “流程”功能显示客户在您的网站和应用程序中的路径。
 title: 流量概述
-uuid: fc22b573-2d18-4c29-866c-f317c920d27a
 translation-type: tm+mt
-source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 98%
+source-wordcount: '187'
+ht-degree: 86%
 
 ---
 
@@ -19,11 +18,7 @@ ht-degree: 98%
 
 * 可视化客户浏览您的网站或应用程序的历程
 * 分析客户在指定检查点（例如登入、特定维度或退出）之前和之后的去向
-* 通过在选定路径中指定一个特定点来创建区段
-
->[!NOTE]
->
->在 Analysis Workspace 中和 Reports &amp; Analytics/Ad Hoc Analysis 中对流量应用区段所获得的结果可能有所不同，要了解相关信息，请参阅[区段划分：流量和流失的一项基本功能](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)。
+* 通过指定所选路径中的特定点创建过滤器
 
 [流可视化视频教程](https://docs.adobe.com/content/help/zh-Hans/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html)(4:56)
 
