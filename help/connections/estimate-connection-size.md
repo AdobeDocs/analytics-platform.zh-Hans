@@ -2,7 +2,7 @@
 title: 估计连接大小
 description: 报告您当前的Customer Journey Analytics使用情况
 translation-type: tm+mt
-source-git-commit: 1f496175e504cefed4239aab454744ecae72a6ea
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
@@ -54,4 +54,4 @@ ht-degree: 0%
 
 1. 此外，如果我们签入[!UICONTROL Adobe Experience Platform]，则没有ID为“5f21c12b732044194bffc1d0”的数据集，因此，在创建初始连接时，有人从[!UICONTROL Adobe Experience Platform]中删除了此特定数据集。 之后，它又被添加到[!UICONTROL Customer Journey Analytics]中，但由[!UICONTROL Adobe Experience Platform]生成不同的[!UICONTROL 平台数据集ID]。
 
-   阅读有关[!UICONTROL Customer Journey Analytics]和[!UICONTROL Adobe Experience Platform]中数据集和连接删除[含义的更多信息。](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components)
+阅读有关[!UICONTROL Customer Journey Analytics]和[!UICONTROL Adobe Experience Platform]中数据集和连接删除[含义的更多信息。](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components)
