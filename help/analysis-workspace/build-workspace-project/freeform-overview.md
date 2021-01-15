@@ -1,13 +1,12 @@
 ---
-description: 'null'
+description: 带菜单栏和设置的Workspace项目概述
 keywords: Analysis Workspace
 title: 项目概述
-topic: Reports and analytics
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 translation-type: tm+mt
-source-git-commit: 09c7cf9bdbb9016e1070ea7f7fb0c89b4a027c1c
+source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1366'
 ht-degree: 21%
 
 ---
@@ -48,7 +47,7 @@ Workspace项目允许您结合数据组件、表格和可视化，创建分析�
 
 | 菜单项 | 描述 |
 |---|---|
-| 项目 | 包括用于项目管理的常见操作，包括“新建”、“打开”、“保存”、“另存为”和“另存为”模板[。 ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html)您还可以通过单击刷新项目来刷新整个项目以检索最新数据和定义。 [下载CSV和PDF](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html) 选项使您能从Workspace导出数据。[“项目信息和设](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html?#info-settings) 置”为管理项目提供了许多选项。 |
+| 项目 | 包括用于项目管理的常见操作，包括“新建”、“打开”、“保存”、“另存为”和“另存为”模板](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html)。 [您还可以通过单击刷新项目来刷新整个项目以检索最新数据和定义。 [下载CSV和PDF](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html) 选项使您能从Workspace导出数据。[“项目信息和设](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html?#info-settings) 置”为管理项目提供了许多选项。 |
 | 编辑 | 撤消或重做上一个操作。 “全部清除”会将项目重置为空的起始点。 |
 | 此项前 | 从此菜单插入新面板或可视化。 您还可以从左边栏插入新面板和可视化。 |
 | [组件](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html) | 从您的项目创建新的区段、计算量度、日期范围或警报组件。 您还可以从左边栏创建新组件。 如果您的组件定义最近发生了更改，则刷新组件将检索最新的定义。 |
