@@ -2,10 +2,10 @@
 title: Customer Journey Analytics 的数据摄取选项
 description: 了解将数据摄取到 Customer Journey Analytics 的不同方式
 translation-type: tm+mt
-source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
+source-git-commit: 8a3a868ff4e2fbbcdf83ff7769382c6a92f78ec2
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 61%
+source-wordcount: '968'
+ht-degree: 63%
 
 ---
 
@@ -34,15 +34,9 @@ ht-degree: 61%
 
 ## 通过Adobe Experience PlatformWeb SDK和Edge Network获取数据
 
-[Adobe Experience Platform网](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 络SDK是客户端JavaScript库，它允许Adobe Experience Cloud的客户通过Adobe Experience Platform边缘网络与Experience Cloud中的各种服务进行交互。无论是否使用Launch，都可以配置此摄取。
+[Adobe Experience Platform网](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 络SDK是客户端JavaScript库，它允许Adobe Experience Cloud的客户通过Adobe Experience Platform边缘网络与Experience Cloud中的各种服务进行交互。
 
-### 无需启动
-
-此链接无效：https://docs.adobe.com/content/help/en/experience-platform/edge/get-started/quick-start-without-launch.html。 如果没有Launch，这是否仍然可行？
-
-### 使用Launch
-
-1. [配置AEP Web SDK扩](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/aep-extension/overview.html?lang=en#configure-the-aep-web-sdk-extension) 展，通过Adobe Experience Platform边缘网络从Web属性向Adobe Experience Cloud发送数据。
+1. [在Launch中配置AEP Web SDK扩展](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/aep-extension/overview.html?lang=en#configure-the-aep-web-sdk-extension) ，通过Adobe Experience Platform边缘网络将数据从Web属性发送到Adobe Experience Cloud。
 1. 使用 [Customer Journey Analytics](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-getting-started.html) 创建一个或多将纳入您的跨渠道报表的连接和数据视图。
 
 ## 通过批量摄取和流摄取来摄取数据
