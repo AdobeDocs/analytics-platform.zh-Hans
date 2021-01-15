@@ -1,17 +1,17 @@
 ---
-description: 'null'
-title: 调色板
+description: 如何更改可视化调色板或指定您自己的自定义调色板。
+title: 可视化调色板
 uuid: 18252889-8dc0-48fa-820f-df534156c22f
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 100%
+source-wordcount: '247'
+ht-degree: 91%
 
 ---
 
 
-# 可视化图表调色板
+# 可视化调色板
 
 >[!NOTE]
 >
