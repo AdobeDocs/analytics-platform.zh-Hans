@@ -1,11 +1,10 @@
 ---
-description: 直方图是 Analysis Workspace 中一种新的可视化类型。
+description: 直方图类似于条形图，不过它可以将数字归为几组不同的范围（存储段）。
 title: 直方图
-uuid: 8a6bd2c4-da15-4f64-b889-ab9add685046
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '429'
 ht-degree: 95%
 
 ---
