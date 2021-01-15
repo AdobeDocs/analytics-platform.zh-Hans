@@ -1,12 +1,12 @@
 ---
-description: 您可以对贵组织中的收件人策划、共享和计划 PDF/CSV 项目。
+description: 您可以在您的组织内创建、共享PDF/CSV项目并将其计划给收件人。
 title: “共享”菜单
 uuid: d8539e0b-eaa5-4a3d-8282-a37d47e2fe96
 translation-type: tm+mt
-source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
 workflow-type: tm+mt
 source-wordcount: '205'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
