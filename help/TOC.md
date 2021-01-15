@@ -18,9 +18,9 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: 教程
 tutorials-url: https://helpx.adobe.com/cn/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: e57d92f702445d8caac25a7cc11a6aafe6c62262
+source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '430'
 ht-degree: 91%
 
 ---
@@ -51,8 +51,8 @@ ht-degree: 91%
    + [Analysis Workspace 概述](analysis-workspace/home.md)
    + [执行基本分析](analysis-workspace/perform-basic-analysis.md)
    + [执行高级分析](analysis-workspace/perform-adv-analysis.md)
-   + 构建工作区项目 {#build-workspace-project}
-      + [创建项目 - 概述](analysis-workspace/build-workspace-project/freeform-overview.md)
+   + 项目 {#build-workspace-project}
+      + [项目概述](analysis-workspace/build-workspace-project/freeform-overview.md)
       + [保存项目](analysis-workspace/build-workspace-project/save-projects.md)
       + [模板](analysis-workspace/build-workspace-project/starter-projects.md)
       + [热键（快捷键）](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
