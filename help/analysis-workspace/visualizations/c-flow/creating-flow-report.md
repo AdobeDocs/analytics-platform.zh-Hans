@@ -1,12 +1,11 @@
 ---
-description: 'null'
+description: 流可视化允许您跟踪页面或维度中的路径。
 title: 配置流量可视化图表
-uuid: ff36dc09-6175-43ed-a82a-630d28bca806
 translation-type: tm+mt
-source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 100%
+source-wordcount: '356'
+ht-degree: 96%
 
 ---
 
