@@ -1,10 +1,9 @@
 ---
 description: 您可以在 Analysis Workspace 中从接触点创建区段、添加区段作为接触点，并比较多个区段之间的关键工作流程。
 keywords: fallout and segmentation;segments in fallout analysis;compare segments in fallout
-title: 在流失分析中应用区段
-uuid: e87a33df-160e-4943-8d02-4d6609ae3bb1
+title: 在流失分析中应用过滤器
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 23%
