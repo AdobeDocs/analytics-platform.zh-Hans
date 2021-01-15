@@ -1,9 +1,8 @@
 ---
 description: Analysis Workspace 中的流失允许您将维度和量度作为漏斗和工作流程中的接触点来进行混合和匹配。这在定义要调查的用户步骤方面具有更大的灵活性。
 title: 维度间流失
-uuid: 17520727-2d06-4dc2-a66d-66e3350bdda3
 translation-type: tm+mt
-source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
+source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 100%
