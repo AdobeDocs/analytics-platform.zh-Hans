@@ -19,13 +19,13 @@ ht-degree: 0%
 
 ## 对Adobe数据连接器数据集使用全局查找
 
-全局查找数据集在报告时自动应用。 如果您使用[分析数据连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#connectors)，并且您引入了Adobe提供全局查找的维，我们将自动应用此全局查找。 如果事件数据集包含[XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en)字段，我们可以对其应用全局查找。
+全局查找数据集在报告时自动应用。 如果您使用[Analytics数据连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#connectors)，并且您引入了Adobe提供全局查找的维，我们会自动应用此全局查找。 如果事件数据集包含[XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en)字段，我们可以对其应用全局查找。
 
 ## 对自定义数据集使用全局查找
 
-事件数据集中需要一个与全局查找数据集兼容的密钥。 只要通过添加一些标准[Adobe体验平台架构混合](https://experienceleague.adobe.com/docs/experience-platform/xdm/mixins/event/environment-details.html?lang=en#mixins)来填充正确的XDM字段，您就可以使自定义数据集能够用于全局查找。
+事件集中需要有一个与全局查找数据集兼容的键。 只要通过添加一些我们的标准[Adobe Experience Platform模式混合](https://experienceleague.adobe.com/docs/experience-platform/xdm/mixins/event/environment-details.html?lang=en#mixins)来填充正确的XDM字段，您就可以使自定义数据集与全局查找结合使用。
 
-## 可用全局查找字段
+## 可用的全局查找字段
 
 * `browser`
    * `browser`, `group_id`, `id`
@@ -60,11 +60,11 @@ ht-degree: 0%
 
 ## 全局查找维度报告
 
-为了报告全局查找维，您必须在“客户行程分析”中创建数据视图时添加这些维：
+要报告全局查找维，您必须在Customer Journey Analytics中创建数据视图时添加这些维：
 
 ![](assets/global-lookup.png)
 
-然后，您可以在工作区中查看查找数据：
+然后，您可以在Workspace中查看查找数据：
 
 ![](assets/gl-reporting.png)
 
