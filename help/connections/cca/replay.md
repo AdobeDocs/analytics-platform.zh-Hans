@@ -2,7 +2,7 @@
 title: 重播的工作原理
 description: 理解跨渠道分析中的“重播”概念
 translation-type: tm+mt
-source-git-commit: 26486c79f6d94db1aa795bf024f581cad74c25f6
+source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 16%
