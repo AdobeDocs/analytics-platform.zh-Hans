@@ -16,7 +16,7 @@ ht-degree: 21%
 
 Workspace项目允许您结合数据组件、表格和可视化，创建分析并与组织中的任何人共享。 在开始您的第一个项目之前，请了解如何访问、导航和管理您的项目。
 
-## 项目列表{#project-list}
+## 项目列表 {#project-list}
 
 当您首次转到&#x200B;**[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**&#x200B;时，该页面会列表您拥有或已共享给您的所有项目。 这也是Adobe Analytics的登陆页，除非您之前设置了自定义登陆页。
 
