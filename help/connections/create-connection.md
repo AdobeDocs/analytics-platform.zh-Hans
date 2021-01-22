@@ -1,11 +1,11 @@
 ---
 title: 创建连接
 description: 描述如何在 Customer Journey Analytics 中创建与 Platform 数据集的连接。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1957'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -108,28 +108,28 @@ ht-degree: 80%
    | [!UICONTROL 描述] | 添加更多详细信息以将此连接与其他连接区分开来。 |
    | [!UICONTROL 数据集] | 此连接中包含的数据集。 |
    | [!UICONTROL 从今天开始自动导入此连接中的所有新数据集。] | 如果要创建持续连接，请选择此选项，以便要添加到此连接中数据集的任何新数据批次会自动流入 [!UICONTROL 工作区] 中。 |
-   | [!UICONTROL 导入所有现有数据] | 选择此选项并保存连接时，将导入或回填此连接中所有数据集的[!DNL Experience Platform]中的所有现有（历史）数据。 未来，还将自动导入添加到这个已保存连接的任何新数据集的所有现有历史数据。另请参阅下面的[回填历史数据](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data)。<br>**请注意，保存此连接后，无法更改此设置。** |
-   | [!UICONTROL 平均每日事件数] | 您需要为连接中的所有数据集指定要导入的每日事件（新数据&#x200B;**和**&#x200B;回填数据）的平均数。 从下拉菜单中选择一个选项。 这样，Adobe就可以为此数据分配足够的空间。<br>如果您不知道公司要导入的每日事件的平均数，可以在Adobe Experience Platform查询服务中执行简单 [的SQL](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) 查询以了解。<br>请参阅下面的“计算每日事件的平均数”。 |
+   | [!UICONTROL 导入所有现有数据] | 当选择此选项并保存连接时，将会从 [!DNL Experience Platform] 中导入或回填此连接中所有数据集的所有现有（历史）数据。未来，还将自动导入添加到这个已保存连接的任何新数据集的所有现有历史数据。另请参阅下面的[回填历史数据](https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data)。<br>**请注意，保存此连接后，无法更改此设置。** |
+   | [!UICONTROL 平均每日事件数] | 您需要为连接中的所有数据集指定要导入的平均每日事件数（包括新数据&#x200B;**和**&#x200B;回填数据）。从下拉菜单中选择一个选项，以便 Adobe 能为此数据分配足够的空间。<br>如果您不知道贵公司要导入的平均每日事件数，则可以在 [Adobe Experience Platform 查询服务](https://docs.adobe.com/content/help/zh-Hans/experience-platform/query/home.html)中执行简单的 SQL 查询以查明该数值。<br>请参阅下面的“计算平均每日事件数”。 |
 
-1. 单击&#x200B;**[!UICONTROL 保存并创建视图]**。 有关文档，请参阅[创建视图](/help/data-views/create-dataview.md)。
+1. 单击&#x200B;**[!UICONTROL 保存和创建数据视图]**。相关文档，请参阅[创建数据视图](/help/data-views/create-dataview.md)。
 
 ### 回填历史数据
 
-**[!UICONTROL 导入您回填历]** 史数据的所有现有数据集。请牢记这一点：
+通过&#x200B;**[!UICONTROL 导入所有现有数据]**，您可以回填历史数据。请牢记这一点：
 
-* 我们已删除回填（历史数据导入）限制。 以前，您自己最多可以回填 25 亿行，超出这个限制则需工程团队介入。现在，您可以自行回填数据，并且没有任何限制。
-* 我们将新数据添加到连接中的数据集中，因此此新数据具有最低延迟。
-* 任何回填（历史）数据的导入速度都会比较慢。延迟受您拥有的历史事件的数量以及您选择的&#x200B;**[!UICONTROL 平均每日数据数]**&#x200B;设置的影响。 例如，如果您每天有超过10亿行的数据，加上3年的历史数据，则可能需要数周时间才能导入。 另一方面，如果每天的行数少于100万，而历史数据只有一周，那么这需要不到一小时。
-* 回填适用于整个连接，而不是单独应用于每个数据集。
-* [Adobe Analytics源连接器](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html)导入最多13个月的数据，而不管大小。
+* 我们已删除了回填（历史数据导入）限制。以前，您自己最多可以回填 25 亿行，超出这个限制则需工程团队介入。现在，您自己即可不受任何限制地回填数据。
+* 我们会优先处理新添加到此连接中数据集的新数据，因此这些新数据的滞后时间最短。
+* 任何回填（历史）数据的导入速度都会比较慢。滞后时间受以下两个因素的影响：您所拥有的历史数据数量以及您选择的&#x200B;**[!UICONTROL 平均每日事件数]**&#x200B;设置。例如，如果您每日的数据行数超过 10 亿，且您具有 3 年的历史数据，则可能需要数周时间才能完成导入。相反，如果您每日的数据行数不足 100 万，且只有一周的历史数据，则不用一小时即可完成导入。
+* 回填将应用于整个连接，而不是单独应用于每个数据集。
+* [Adobe Analytics Source Connector](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) 最多可导入 13 个月的数据，而无论数据大小如何。
 
-### 计算每日事件的平均数
+### 计算平均每日事件数
 
-必须对连接中的每个数据集进行此计算。
+必须对连接中的每个数据集都进行此项计算。
 
-1. 转到[Adobe Experience Platform查询服务](https://docs.adobe.com/content/help/en/experience-platform/query/home.html)并创建新查询。
+1. 转到 [Adobe Experience Platform 查询服务](https://docs.adobe.com/content/help/zh-Hans/experience-platform/query/home.html)并创建新查询。
 
-1. 查询如下所示：<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
+1. 创建的查询将如下所示：<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
 * 在此示例中，“analytics_demo_data”是数据集的名称。
-* 执行`Show Tables`查询以显示AEP中存在的所有数据集。
+* 执行 `Show Tables` 查询以显示 AEP 中存在的所有数据集。
