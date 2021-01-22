@@ -2,9 +2,9 @@
 description: 了解如何创建指向项目或可视化图表的可共享链接
 keywords: Analysis Workspace sharing
 title: 创建可共享链接
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '331'
 ht-degree: 100%
 
