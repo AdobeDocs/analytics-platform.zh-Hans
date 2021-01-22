@@ -1,9 +1,9 @@
 ---
 description: 了解不同的保存选项，包括自动保存、另存为以及另存为模板。
 title: 保存项目
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f01585ffdc0b54d1b21b035278869e59bd4947dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '313'
 ht-degree: 100%
 
