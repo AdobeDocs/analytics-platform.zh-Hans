@@ -1,11 +1,11 @@
 ---
 title: 自由格式表中的动态维度项目与静态维度项目
 description: 如何与表中的动态维度项目和静态维度项目交互。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '519'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -36,8 +36,8 @@ ht-degree: 97%
 
 每当您手动选择特定组件值（维度、量度、区段、日期范围）并将其拖放到表中后，就会生成行或列的静态列表。此外，如果您选择执行以下操作，也可以创建静态维度项目：
 
-* 从行中，右键单击> [!UICONTROL 仅显示选定的行]
-* 从列中，右键单击> [!UICONTROL 将项设置为静态]
+* 在行中，右键单击并选择[!UICONTROL 只显示选定的行]
+* 在列中，右键单击并选择[!UICONTROL 将项目设为静态项目]
 
 例如，当您将鼠标拖到特定的“浏览器类型”项目（例如 Microsoft 和 Apple）上时，这 2 个特定项目始终会提取到表中。
 
