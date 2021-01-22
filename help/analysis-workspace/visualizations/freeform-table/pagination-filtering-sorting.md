@@ -1,18 +1,18 @@
 ---
-description: 在Workspace中对表进行分页、筛选和排序
+description: 在 Analysis Workspace 中对表格进行分页、过滤和排序
 title: 对表格进行分页、过滤和排序
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8b814137a7c5e2ca96091addb5b4430e2da65329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '97'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 
 # 对表格进行分页、过滤和排序
 
-有关概述，请观看此视频教程：
+要获取概览信息，请观看此视频教程：
 
 [在 Analysis Workspace 中对表格进行分页、过滤和排序](https://docs.adobe.com/help/en/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/pagination-filtering-sorting-tables.html)
 
