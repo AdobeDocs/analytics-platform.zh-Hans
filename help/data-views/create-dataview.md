@@ -1,11 +1,11 @@
 ---
 title: 创建数据视图
 description: 介绍如何在 Customer Journey Analytics (CJA) 中创建 Platform 数据集的视图。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '572'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -57,4 +57,4 @@ Customer Journey Analytics 中的工作区项目均基于数据视图。
 
 ## 删除数据视图
 
-如果在[!UICONTROL Customer Journey Analytics]中删除视图，将显示一条错误消息，指示依赖此已删除数据视图的任何Workspace项目将停止工作。
+如果在 [!UICONTROL Customer Journey Analytics] 中删除数据视图，将显示一条错误消息，指示所有依赖于这个已删除数据视图的工作区项目都将停止运行。
