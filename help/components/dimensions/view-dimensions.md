@@ -1,11 +1,11 @@
 ---
 description: 显示非时间维的前5个值（时间维的前15个值）。
-title: 预览维度
+title: 如何在CJA Workspace中预览尺寸
 translation-type: tm+mt
-source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
+source-git-commit: 7e000de9ed4c63e69a5a69ecdb3b12bb3894e0bc
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 95%
+source-wordcount: '230'
+ht-degree: 92%
 
 ---
 
