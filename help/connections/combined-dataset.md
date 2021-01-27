@@ -2,10 +2,10 @@
 title: 合并事件数据集
 description: 了解 CJA 如何通过合并数据集创建连接。
 translation-type: tm+mt
-source-git-commit: ef05a948cb2036db24c8e308695e3615613d98d8
+source-git-commit: b6bfb14b594f42efc114bbde1b047b814e1cf653
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 100%
+source-wordcount: '344'
+ht-degree: 94%
 
 ---
 
@@ -17,6 +17,8 @@ ht-degree: 100%
 * 架构会被合并。重复架构字段会被合并。
 * 每个数据集的“人员 ID”列将合并到单列中，无论其名称如何。此列是识别 CJA 中唯一访客的基础。
 * 根据时间戳处理各行。
+
+组合数据集的概念与传统Adobe Analytics的组合报表包的概念相似。
 
 ## 示例
 
@@ -72,5 +74,5 @@ ht-degree: 100%
 | string_color | metric_a |
 | --- | --- |
 | 黄色 | 6 |
-| 蓝色 | 3 |
+| 蓝色 | 1 |
 | 红色 | 2 |
