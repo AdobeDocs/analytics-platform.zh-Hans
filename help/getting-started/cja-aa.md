@@ -2,10 +2,10 @@
 title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
 translation-type: tm+mt
-source-git-commit: c70662468126279110f14291c135a3f60dd919db
+source-git-commit: b77165ee5994ec59e346cf6314a7e051ffa07524
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 75%
+source-wordcount: '1014'
+ht-degree: 76%
 
 ---
 
@@ -34,6 +34,7 @@ ht-degree: 75%
 | 报表时间处理 | CJA 完全依赖于报表时间处理。 |
 | 删除 GDPR | 请注意，GDPR现在与[!UICONTROL Adobe Experience Platform]协调处理- CJA继承[!UICONTROL Experience Platform]对基础数据集所做的任何数据更改。 |
 | 用户权限/数据访问控制 | CJA 区分 Adobe Admin Console 产品管理员和用户。只有产品管理员才能 1) 创建/更新/删除连接或数据视图，2) 更新/删除其他用户创建的项目、过滤器或计算量度，以及 3) 将工作区项目共享给所有用户 |
+| 跨设备／跨渠道拼接 | 请参阅[跨渠道分析](/help/connections/cca/overview.md)。 |
 | 开箱即用的Analysis Workspace尺寸(例如浏览器类型、推荐人类型、操作系统等) | 只要填充基本XDM字段（如用户代理或设备ID）,CJA就可以本机提供这些维。 对于使用 Analytics Data Connector (ADC) 的客户，其中部分维度可用，但不是全部维度都可用。请参阅我们的[关于通过 ADC 支持哪些 Analytics 变量的文档](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)。 |
 | 报表 API 访问 | 目前可使用Analytics API 2.0。 |
 
@@ -59,8 +60,7 @@ ht-degree: 75%
 | 面板 | 完全支持“空白面板”、“归因面板”、“快速分析面板”。不支持“区段比较”面板、“Analytics for Target (A4T)”面板和“媒体并发查看者”面板。 |
 | 促销 eVar | 如果销售eVar未设置为使用持久性，则可以使用对象数组中的维度来实现销售eVar的行为。 目前，不提供销售维持久性。 |
 | 机器人过滤 | 对于基于 Analytics Data Connector (ADC) 的数据集，会应用机器人过滤。[!UICONTROL Experience Platform] 或 CJA 不会对其他数据集应用常规机器人过滤逻辑。 |
-| 处理规则 | 对于基于 ADC 的数据集，仍会应用处理规则。 |
-| 跨设备身份拼合 | CJA支持跨设备、跨渠道身份拼接，包括定期重述历史数据。 目前，只能将单个客户集标识与单个Cookie ID结合使用。 |
+| 处理规则 | 对于基于Analytics Data Connector的数据集，仍会应用处理规则。 |
 | Media Analytics | 媒体数据可作为Analytics Data Connector的一部分提供。 |
 
 ## 目前不支持，但计划将会提供支持
