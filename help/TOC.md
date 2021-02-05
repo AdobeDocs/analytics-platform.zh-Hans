@@ -21,7 +21,7 @@ translation-type: tm+mt
 source-git-commit: b9204d42a1a319f6fed7d3f9b1d0145464378aa8
 workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 93%
 + 连接 {#cja-connections}
    + [创建连接](connections/create-connection.md)
    + [管理连接](connections/manage-connection.md)
-   + [估计连接大小](connections/estimate-connection-size.md)
+   + [预估连接大小](connections/estimate-connection-size.md)
    + [合并事件数据集](connections/combined-dataset.md)
    + 跨渠道分析{#cca}
       + [跨渠道分析概述](connections/cca/overview.md)
@@ -55,7 +55,7 @@ ht-degree: 93%
       + [项目概述](analysis-workspace/build-workspace-project/freeform-overview.md)
       + [保存项目](analysis-workspace/build-workspace-project/save-projects.md)
       + [模板](analysis-workspace/build-workspace-project/starter-projects.md)
-      + [热键（快捷键）](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
+      + [热键（快捷方式）](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [调色板](analysis-workspace/build-workspace-project/color-palettes.md)
       + [视图密度](analysis-workspace/build-workspace-project/view-density.md)
    + 可视化 {#visualizations}
@@ -103,10 +103,10 @@ ht-degree: 93%
       + [快速分析面板](analysis-workspace/c-panels/quickinsight.md)
    + 组织或共享项目 {#curate-share}
       + [“共享”菜单](analysis-workspace/curate-share/send-schedule-files.md)
-      + [策划项目](analysis-workspace/curate-share/curate.md)
+      + [组织项目](analysis-workspace/curate-share/curate.md)
       + [共享项目](analysis-workspace/curate-share/share-projects.md)
       + [创建可共享链接](analysis-workspace/curate-share/shareable-links.md)
-      + [仅查看项目](analysis-workspace/curate-share/view-only-projects.md)
+      + [仅供查看的项目](analysis-workspace/curate-share/view-only-projects.md)
       + [下载 PDF 或 CSV 文件](analysis-workspace/curate-share/download-send.md)
       + [计划项目](analysis-workspace/curate-share/t-schedule-report.md)
    + 归因 IQ {#attribution}
@@ -156,9 +156,9 @@ ht-degree: 93%
    + [Customer Journey Analytics 使用案例](use-cases/cja-usecases.md)
    + [使用对象数组](use-cases/object-arrays.md)
    + [(B2B) 将帐户级别的数据作为查询数据集进行添加](use-cases/b2b.md)
-   + [导入呼叫中心和Web数据](use-cases/call-center.md)
+   + [导入呼叫中心数据和网站数据](use-cases/call-center.md)
    + [摄取数据用例](use-cases/data-ingestion.md)
-   + [使用营销渠道维](use-cases/marketing-channels.md)
+   + [使用“营销渠道”维度](use-cases/marketing-channels.md)
    + [向数据集添加全局查找](use-cases/global-lookups.md)
 + 隐私权 {#cja-privacy}
    + [隐私权概述](privacy/privacy-overview.md)
