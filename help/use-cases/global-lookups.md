@@ -1,40 +1,40 @@
 ---
 title: 向数据集添加全局查找
-description: 使用全局查找功能以报告中有用的维度来增强Customer Journey Analytics。
+description: 在 Customer Journey Analytics 中，可使用全局查找为报表补充更多有用维度。
 translation-type: tm+mt
 source-git-commit: b3c9757421537d2d84a78a4d37e9bfc362438d40
 workflow-type: tm+mt
 source-wordcount: '447'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
 # 向数据集添加全局查找
 
-全局查找增强了Customer Journey Analytics报告某些维度／属性的能力，这些维度／属性本身并不有用，但在与其他数据结合时非常有用。 示例包括移动设备的属性以及操作系统和浏览器尺寸的属性，如浏览器版本号。 “全局查找”与查找数据集(在传统Adobe Analytics被称为分类)非常相似。 但是，全局查找功能适用于Experience Cloud组织。 全局查找会自动应用于包含某些XDM事件字段的所有模式数据集（有关特定字段，请参见下文）。
-对于模式要分类的每个Adobe位置，都存在全局查找数据集。 您可以将全局查找数据集与Analytics Source Connector一起使用，也可以将其与其他可接受的自定义数据集一起使用。
+全局查找可增强 Customer Journey Analytics 功能，使其能够报告一些本身无用但与其他数据结合后变得有用的维度/属性。示例包括移动设备的属性、操作系统属性和浏览器维度，如浏览器版本号。“全局查找”与“查找”数据集（在传统 Adobe Analytics 中称为“分类”）非常相似。但是，全局查找适用于 Experience Cloud 组织。全局查找会自动应用于包含特定 XDM 架构字段的所有事件数据集（有关这些特定字段的信息，请参见下文）。
+在 Adobe 正在分类的每个架构位置中，都存在一个全局查找数据集。您可以将全局查找数据集与 Analytics Source Connector 一起使用，也可以将其与其他可接受全局查找数据集的自定义数据集一起使用。
 
-在传统的Adobe Analytics，这些维度是自行显示的，而在CJA中，创建数据视图时，您必须主动包含这些维度。 当用户在连接工作流中选择标记为具有全局查找密钥的数据集时，数据视图UI将知道包含所有全局查找维（如果可用）。 数据视图工作流知道包括这些全局查找维，如果数据视图可用。 查找文件会在所有区域和所有帐户中自动保持最新并可用。 它们存储在与客户关联的特定于地区的组织中。
+在传统的 Adobe Analytics 中，这些维度按自已的方式显示，但在 CJA 中，您必须在创建数据视图时主动包含这些维度。当用户在“连接”工作流程中选择一个标记为具有全局查找键的数据集时，“数据视图”UI 将知晓要将所有可用的全局查找维度包含到报表中。“数据视图”工作流程知晓要将这些可用的全局查找维度包含到数据视图中。查找文件会在所有区域和所有帐户中自动保持为最新版本和可用。这些文件将存储在与客户关联的特定于区域的组织中。
 
-## 对Adobe数据连接器数据集使用全局查找
+## 将全局查找与 Adobe Data Connector 数据集结合使用
 
-全局查找数据集在报告时自动应用。 如果您使用[Analytics数据连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#connectors)，并且您引入了Adobe提供全局查找的维，我们会自动应用此全局查找。 如果事件数据集包含[XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en)字段，我们可以对其应用全局查找。
+全局查找数据集会在报告时自动应用。如果您在使用 [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-cn#connectors)，并引入了 Adobe 提供了全局查找的维度，则会自动应用此全局查找。如果事件数据集包含 [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-cn) 字段，我们可以对其应用全局查找。
 
-## 对自定义数据集使用全局查找
+## 将全局查找与自定义数据集结合使用
 
-事件集中需要有一个与全局查找数据集兼容的键。 只要通过添加一些我们的标准[Adobe Experience Platform模式混合](https://experienceleague.adobe.com/docs/experience-platform/xdm/mixins/event/environment-details.html?lang=en#mixins)来填充正确的XDM字段，您就可以使自定义数据集与全局查找结合使用。
+事件数据集中需要有一个与全局查找数据集兼容的键。只要通过添加一些标准的 [Adobe Experience Platform 架构 mixin](https://experienceleague.adobe.com/docs/experience-platform/xdm/mixins/event/environment-details.html?lang=zh-cn#mixins) 来填充相应的 XDM 字段，就可以使自定义数据集与全局查找结合使用。
 
 ## 可用的全局查找字段
 
 * `browser`
-   * `browser`, `group_id`, `id`
+   * `browser`、`group_id`、`id`
 * `browser_group`
-   * `browser_group`,  `id`
+   * `browser_group`、`id`
 * `os`
-   * `os`,  `group_id`  `id`
+   * `os`、`group_id`、`id`
 * `os_group`
-   * `os_group`,  `id`
+   * `os_group`、`id`
 * `mobile_audio_support - multi`
 * `mobile_color_depth`
 * `mobile_cookie_support`
@@ -58,13 +58,13 @@ ht-degree: 0%
 * `mobile_screen_width`
 * `mobile_video_support - multi`
 
-## 全局查找维度报告
+## 报告全局查找维度
 
-要报告全局查找维，您必须在Customer Journey Analytics中创建数据视图时添加这些维：
+要报告全局查找维度，您必须在 Customer Journey Analytics 中创建数据视图时添加这些维度：
 
 ![](assets/global-lookup.png)
 
-然后，您可以在Workspace中查看查找数据：
+然后，您便可以在工作区中查看查找数据：
 
 ![](assets/gl-reporting.png)
 
