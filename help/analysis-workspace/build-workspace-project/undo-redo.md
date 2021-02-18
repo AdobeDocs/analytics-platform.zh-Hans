@@ -1,12 +1,12 @@
 ---
-description: 了解Analysis Workspace的“撤消”和“重做”选项。
+description: 了解 Analysis Workspace 的“撤消”和“重做”选项。
 title: “撤消”和“重做”设置
 uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '298'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
