@@ -1,18 +1,18 @@
 ---
 title: 重播的工作原理
-description: 理解跨渠道分析中的“重播”概念
-translation-type: tm+mt
+description: 了解跨渠道分析中的“重播”概念
+translation-type: ht
 source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '524'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
 # 重播的工作原理
 
-跨渠道分析在给定连接上对数据进行两次传递：
+跨渠道分析分为两个阶段来处理某个给定连接中的数据：
 
 * **实时拼合**：CCA 会尝试在每次点击进入时拼合点击。数据集中从未登录的全新设备通常不会在此级别拼合。但已识别的设备会立即拼合。
 * **重播**：CCA 会根据其发现的唯一标识符“重播”数据。在这个阶段，连接中的新设备会被拼合。Adobe 提供以下两个重播时间间隔：
