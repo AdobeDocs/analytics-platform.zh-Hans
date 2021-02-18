@@ -2,7 +2,7 @@
 git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.zh-Hans
 cloud: experience-cloud
 product: adobe analytics
-sub-product: 客户历程
+sub-product: customer journey
 solution: Customer Journey Analytics
 type: Documentation
 index: true
@@ -17,11 +17,11 @@ getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: 教程
 tutorials-url: https://helpx.adobe.com/cn/experience-cloud/tutorials.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b9204d42a1a319f6fed7d3f9b1d0145464378aa8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '430'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 98%
    + [管理连接](connections/manage-connection.md)
    + [预估连接大小](connections/estimate-connection-size.md)
    + [合并事件数据集](connections/combined-dataset.md)
-   + 跨渠道分析{#cca}
+   + 跨渠道分析 {#cca}
       + [跨渠道分析概述](connections/cca/overview.md)
       + [重播的工作原理](connections/cca/replay.md)
       + [跨渠道分析常见问题解答](connections/cca/faq.md)
