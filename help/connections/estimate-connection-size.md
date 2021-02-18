@@ -1,9 +1,9 @@
 ---
 title: 预估连接大小
 description: 报告 Customer Journey Analytics 的当前使用情况
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '612'
 ht-degree: 100%
 
