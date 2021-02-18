@@ -2,9 +2,9 @@
 description: 创建一个项目并将组件（维度、量度、区段、日期范围）添加到自由格式面板。
 keywords: Analysis Workspace
 title: 创建工作区项目
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '753'
 ht-degree: 100%
 
