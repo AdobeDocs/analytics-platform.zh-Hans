@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics 的数据摄取选项
 description: 了解将数据摄取到 Customer Journey Analytics 的不同方式
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8a3a868ff4e2fbbcdf83ff7769382c6a92f78ec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '968'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -27,38 +27,38 @@ ht-degree: 63%
 
 ### 通过 Launch
 
-1. [创建数据层](https://docs.adobe.com/content/help/en/analytics/implementation/prepare/data-layer.html)（如果尚未创建）。数据层是网站上 JavaScript 对象的框架，其中包含实施中使用的所有变量值。它让您可以在实施中拥有更大的控制力且更便于维护。
+1. [创建数据层](https://docs.adobe.com/content/help/zh-Hans/analytics/implementation/prepare/data-layer.html)（如果尚未创建）。数据层是网站上 JavaScript 对象的框架，其中包含实施中使用的所有变量值。它让您可以在实施中拥有更大的控制力且更便于维护。
 1. 使用 [Adobe Experience Platform Launch](https://docs.adobe.com/content/help/zh-Hans/analytics/implementation/launch/overview.html) 在您的站点上实施代码以收集数据（如果尚未实施）。Launch 是一款标签管理解决方案，可让您在满足其他标记要求的同时部署 Analytics 代码。Launch 提供了与其他解决方案和产品的集成，并允许您部署自定义代码。无需依赖组织中的开发团队，也可以完成以下所有任务，进而更新网站上的代码。
-1. 在 Adobe Experience Platform 中创建一个 [Adobe Analytics 源连接器](https://docs.adobe.com/content/help/en/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)。该源连接器将会在名为[体验数据模型 (XDM) 系统](https://docs.adobe.com/content/help/en/experience-platform/xdm/home.html)的标准化框架中，将 Analytics 数据摄取到 Experience Platform。
-1. 使用 [Customer Journey Analytics](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-getting-started.html) 创建一个或多将纳入您的跨渠道报表的连接和数据视图。
+1. 在 Adobe Experience Platform 中创建一个 [Adobe Analytics 源连接器](https://docs.adobe.com/content/help/zh-Hans/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)。该源连接器将会在名为[体验数据模型 (XDM) 系统](https://docs.adobe.com/content/help/zh-Hans/experience-platform/xdm/home.html)的标准化框架中，将 Analytics 数据摄取到 Experience Platform。
+1. 使用 [Customer Journey Analytics](https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-overview/cja-getting-started.html) 创建一个或多将纳入您的跨渠道报表的连接和数据视图。
 
-## 通过Adobe Experience PlatformWeb SDK和Edge Network获取数据
+## 通过 Adobe Experience PlatformWeb SDK和 Edge Network 获取数据
 
-[Adobe Experience Platform网](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 络SDK是客户端JavaScript库，它允许Adobe Experience Cloud的客户通过Adobe Experience Platform边缘网络与Experience Cloud中的各种服务进行交互。
+[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans) 是客户端 JavaScript 库，它允许 Adobe Experience Cloud 的客户通过 Adobe Experience Platform Edge Network 与 Experience Cloud 中的各种服务进行交互。
 
-1. [在Launch中配置AEP Web SDK扩展](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/aep-extension/overview.html?lang=en#configure-the-aep-web-sdk-extension) ，通过Adobe Experience Platform边缘网络将数据从Web属性发送到Adobe Experience Cloud。
-1. 使用 [Customer Journey Analytics](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-getting-started.html) 创建一个或多将纳入您的跨渠道报表的连接和数据视图。
+1. [在 Launch 中配置 AEP Web SDK 扩展](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/aep-extension/overview.html?lang=zh-Hans#configure-the-aep-web-sdk-extension)，通过 Adobe Experience Platform Edge Network 从 Web 资产向 Adobe Experience Cloud 发送数据。
+1. 使用 [Customer Journey Analytics](https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-overview/cja-getting-started.html) 创建一个或多将纳入您的跨渠道报表的连接和数据视图。
 
-## 通过批量摄取和流摄取来摄取数据
+## 通过批量摄取和流式摄取来获取数据
 
-Adobe Experience Platform将来自多个来源的数据整合在一起，以帮助营销人员更好地了解其客户的行为。 Adobe Experience Platform数据摄取表示平台从这些来源收集数据的多种方法，以及该数据如何在数据湖中保留以供下游平台服务使用。
+Adobe Experience Platform 将来自多个来源的数据整合在一起，以帮助营销人员更好地了解其客户的行为。Adobe Experience Platform Data Ingestion 表示平台从这些来源获取数据的多种方法，以及该数据如何在“数据湖”中保留以供下游平台服务使用。
 
 ### 批量摄取
 
-1. 设置[批处理摄取](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=en#batch)，以允许您将数据作为批处理文件引入Adobe Experience Platform。 所摄取的用户档案可以是CRM系统中平面文件（如拼花文件）中的模式数据，也可以是与体验数据模型(XDM)注册表中的已知数据相符的数据。
-1. 使用 [Customer Journey Analytics](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-getting-started.html) 创建一个或多将纳入您的跨渠道报表的连接和数据视图。
+1. 设置[批量摄取](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=zh-Hans#batch)，以允许您将数据作为批处理文件接入 Adobe Experience Platform。 所摄取的数据可以是来自 CRM 系统中平面文件（如 Parquet 文件）的配置文件数据，也可以是与 Experience Data Model (XDM) 注册表中的已知架构相符的数据。
+1. 使用 [Customer Journey Analytics](https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-overview/cja-getting-started.html) 创建一个或多将纳入您的跨渠道报表的连接和数据视图。
 
-### 流摄取
+### 流式摄取
 
-1. 设置[流摄取](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=en#streaming)以将数据从客户端和服务器端设备实时发送到Experience Platform。
-1. 使用 [Customer Journey Analytics](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-getting-started.html) 创建一个或多将纳入您的跨渠道报表的连接和数据视图。
+1. 设置[流式摄取](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=zh-Hans#streaming)，以实时将数据从客户端和服务器端设备发送到 Experience Platform。
+1. 使用 [Customer Journey Analytics](https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-overview/cja-getting-started.html) 创建一个或多将纳入您的跨渠道报表的连接和数据视图。
 
-## 引入Google Analytics数据，以Customer Journey Analytics分析
+## 接入 Google Analytics 数据以在 Customer Journey Analytics 中分析
 
-阅读本教程，了解如何使用Customer Journey Analytics](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module16/ex5.html?lang=en#objectives)分析Google Analytics数据，以了解详细步骤。[
+阅读本教程，了解如何](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module16/ex5.html?lang=zh-Hans#objectives)使用 Customer Journey Analytics 分析 Google Analytics 数据[的详细步骤。
 
-## 使用批量数据插入API将数据导入Analytics，然后在Experience Platform中通过Adobe源连接器进行摄取
+## 使用批量数据摄取 API 将数据接入 Analytics，然后在 Experience Platform 中通过 Adobe Source Connector 进行摄取。
 
-1. [使用批量数据插](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md) 入API将服务器端收集数据提交到Adobe Analytics。它允许您提交包含事件数据的CSV格式文件。
-1. [创建Adobe Analytics源连](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) 接器，将此消费者数据引入Adobe Experience Platform。
-1. 使用 [Customer Journey Analytics](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-getting-started.html) 创建一个或多将纳入您的跨渠道报表的连接和数据视图。
+1. [使用批量数据摄取 API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md)，将服务器端收集数据提交到 Adobe Analytics。它允许您提交包含事件数据的 CSV 格式文件。
+1. [创建 Adobe Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)，将此消费者数据接入 Adobe Experience Platform。
+1. 使用 [Customer Journey Analytics](https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-overview/cja-getting-started.html) 创建一个或多将纳入您的跨渠道报表的连接和数据视图。
