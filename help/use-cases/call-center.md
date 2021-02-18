@@ -1,11 +1,11 @@
 ---
 title: 导入呼叫中心数据和网站数据
 description: 了解如何创建数据集以关联呼叫中心数据和网站数据。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '679'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Customer Journey Analytics 提供了一项非常有用的强大功能，就是�
 
 ## 将网站数据和呼叫中心数据导入 Platform
 
-将数据导入Adobe Experience Platform。 请参阅 Adobe Experience Platform 文档中的[创建架构](https://docs.adobe.com/content/help/zh-Hans/experience-platform/xdm/tutorials/create-schema-ui.html)和[摄取数据](https://docs.adobe.com/content/help/zh-Hans/experience-platform/ingestion/home.html)。
+将您的数据导入 Adobe Experience Platform。请参阅 Adobe Experience Platform 文档中的[创建架构](https://docs.adobe.com/content/help/zh-Hans/experience-platform/xdm/tutorials/create-schema-ui.html)和[摄取数据](https://docs.adobe.com/content/help/zh-Hans/experience-platform/ingestion/home.html)。
 
 将数据导入 Platform 时，遵循以下提示将有助于在所生成的报告增加洞察信息：
 
@@ -43,7 +43,7 @@ Customer Journey Analytics 提供了一项非常有用的强大功能，就是�
 CJA 需要使用通用标识符来生成[合并的数据集](../connections/combined-dataset.md)。
 
 * 如果这两个数据集都已经有适用于其所含的每个事件的通用标识符，则可以跳过此步骤并继续创建连接。
-* 如果您的任一事件集只有某些渠道具有通用标识符，则可以使用跨分析将数据拼合在一起。 请参阅[跨渠道分析概述](/help/connections/cca/overview.md)以了解为这两个数据集启用CCA的步骤。
+* 如果其中任一一个数据集具有仅对某些事件通用的标识符，则可以使用跨渠道分析拼合数据。有关为这两个数据集启用 CCA 的步骤，请参阅[跨渠道分析概述](/help/connections/cca/overview.md)。
 
 ## 在 CJA 中创建连接
 
