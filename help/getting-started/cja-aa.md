@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b77165ee5994ec59e346cf6314a7e051ffa07524
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1014'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 76%
 
 ## 完全支持的功能/组件
 
-| Adobe Analytics特征 | 注释 |
+| Adobe Analytics 功能 | 注释 |
 | --- | --- |
 | 量度 | CJA 利用体验数据模型 (XDM) 并支持无限量的量度，同时不会与传统 Analytics 的自定义成功事件绑定。请注意，已对传统 Analytics 中的一些标准量度名称进行了重命名，例如：“访客”=“人员”、“访问”=“会话”、“点击”=“事件”。 |
 | 维度 | CJA 利用 XDM 并支持无限量的维度，同时不会与传统 Analytics 的自定义成功事件绑定。 |
@@ -32,23 +32,23 @@ ht-degree: 76%
 | 虚拟报表包 | 现在称为[数据视图](/help/data-views/create-dataview.md)。 |
 | VRS 组件策划 | 现在是“数据视图”的一部分。 |
 | 报表时间处理 | CJA 完全依赖于报表时间处理。 |
-| 删除 GDPR | 请注意，GDPR现在与[!UICONTROL Adobe Experience Platform]协调处理- CJA继承[!UICONTROL Experience Platform]对基础数据集所做的任何数据更改。 |
+| 删除 GDPR | 请注意，GDPR 现在可与 [!UICONTROL Adobe Experience Platform] 协调处理 - CJA 会继承 [!UICONTROL Experience Platform] 对基础数据集所做的任何数据更改。 |
 | 用户权限/数据访问控制 | CJA 区分 Adobe Admin Console 产品管理员和用户。只有产品管理员才能 1) 创建/更新/删除连接或数据视图，2) 更新/删除其他用户创建的项目、过滤器或计算量度，以及 3) 将工作区项目共享给所有用户 |
-| 跨设备／跨渠道拼接 | 请参阅[跨渠道分析](/help/connections/cca/overview.md)。 |
-| 开箱即用的Analysis Workspace尺寸(例如浏览器类型、推荐人类型、操作系统等) | 只要填充基本XDM字段（如用户代理或设备ID）,CJA就可以本机提供这些维。 对于使用 Analytics Data Connector (ADC) 的客户，其中部分维度可用，但不是全部维度都可用。请参阅我们的[关于通过 ADC 支持哪些 Analytics 变量的文档](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)。 |
-| 报表 API 访问 | 目前可使用Analytics API 2.0。 |
+| 跨设备/跨渠道拼接 | 请参阅[跨渠道分析](/help/connections/cca/overview.md)。 |
+| 默认配置的 Analysis Workspace 维度（例如浏览器类型、推荐人类型、操作系统等） | 只要填充基本 XDM 字段（如用户代理或设备 ID），CJA 就可以原生提供这些维度。 对于使用 Analytics Data Connector (ADC) 的客户，其中部分维度可用，但不是全部维度都可用。请参阅我们的[关于通过 ADC 支持哪些 Analytics 变量的文档](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)。 |
+| 报表 API 访问 | 目前使用 Analytics API 2.0 可用。 |
 
 ## 受支持，但有注意事项
 
 | 功能 | 注释 |
 | --- | --- |
-| 产品变量 | 在该Experience Platform中，用户可以在数据集模式中使用对象类型字段的数组来满足此用例。 在CJA中，客户能够使用任意数量的产品变量，并且不限于单个变量，如在Adobe Analytics。 |
-| 营销渠道 | 营销渠道数据通过Analytics Data Connector流入CJA。 营销渠道规则仍必须在传统的 Adobe Analytics 中进行配置。某些规则不受支持。有关更多详细信息，请参阅 [CJA 营销渠道文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=zh-Hans#cja-usecases)。 |
+| 产品变量 | 在该 Experience Platform中，用户可以在数据集模式中使用“对象”类型字段的数组来满足此用例。 在 CJA 中，客户可以使用任意数量的产品变量，而不限于 Adobe Analytics 中的单个变量。 |
+| 营销渠道 | 营销渠道数据通过 Analytics Data Connector 流入 CJA。营销渠道规则仍必须在传统的 Adobe Analytics 中进行配置。某些规则不受支持。有关更多详细信息，请参阅 [CJA 营销渠道文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=zh-Hans#cja-usecases)。 |
 | 可视化图表 | 除地图可视化图表外，支持所有可视化图表。 |
 | 项目共享 | 仅支持在 CJA 用户之间共享项目 - 不支持 CJA 与传统 Analysis Workspace 之间共享项目。 |
 | 自定义会话流程 | 支持除移动后台点击之外的所有自定义会话流程功能。 |
-| eVar 持久性设置 | eVar 不再是 CJA 的一部分。但是，持久性设置现在是数据视图的一部分，且可用于所有维度。请记住，持久基于报表时间处理，而不是数据收集处理。在Dimension视图中设置的限制为90天最大持久性，不支持无限制的持久性。 |
-| Classifications | 现在称为“查找数据集”。 Analytics中使用的分类可以使用Analytics Classifications Data Connector导入Experience Platform和CJA。 查找数据集也可以直接上传到AEP并在CJA中可用。 |
+| eVar 持久性设置 | eVar 不再是 CJA 的一部分。但是，持久性设置现在是数据视图的一部分，且可用于所有维度。请记住，持久基于报表时间处理，而不是数据收集处理。数据视图中的纬度集限制为 90 天最大持久性，不支持无限持久性。 |
+| Classifications | 现在称为“查找数据集”。Analytics 中使用的分类可以使用 Analytics Classifications Data Connector 导入 Experience Platform 和 CJA。 查找数据集也可以直接上传到 AE P并在 CJA 中可用。 |
 | 客户属性 | 现在称为“用户档案数据集”，它们不会从 Experience Cloud 中自动导入，必须先将其上传到 AEP，然后才能在 CJA 中使用。 |
 | “设备”、“浏览器”、“技术”维度 | 当 AEP 数据集包含特定 XDM 架构字段并符合 XDM Experience Event 类要求时，将自动包含这些维度。 |
 | “登入次数”、“退出次数”以及“逗留时间”维度和量度 | 受支持（现在“进入次数”和“退出次数”称为“会话启动次数”和“会话结束次数”），但计算方式略有不同。 |
@@ -58,10 +58,10 @@ ht-degree: 76%
 | 功能 | 注释 |
 | --- | --- |
 | 面板 | 完全支持“空白面板”、“归因面板”、“快速分析面板”。不支持“区段比较”面板、“Analytics for Target (A4T)”面板和“媒体并发查看者”面板。 |
-| 促销 eVar | 如果销售eVar未设置为使用持久性，则可以使用对象数组中的维度来实现销售eVar的行为。 目前，不提供销售维持久性。 |
+| 促销 eVar | 如果促销 eVar 未设置为使用持久性，则可以使用对象数组中的维度来实现促销 eVar 的行为。 目前，不提供促销维度持久性。 |
 | 机器人过滤 | 对于基于 Analytics Data Connector (ADC) 的数据集，会应用机器人过滤。[!UICONTROL Experience Platform] 或 CJA 不会对其他数据集应用常规机器人过滤逻辑。 |
-| 处理规则 | 对于基于Analytics Data Connector的数据集，仍会应用处理规则。 |
-| Media Analytics | 媒体数据可作为Analytics Data Connector的一部分提供。 |
+| 处理规则 | 对于基于 Analytics Data Connector 的数据集，仍会应用处理规则。 |
+| Media Analytics | 媒体数据可作为 Analytics Data Connector 的一部分提供。 |
 
 ## 目前不支持，但计划将会提供支持
 
