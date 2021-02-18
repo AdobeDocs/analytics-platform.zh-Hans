@@ -1,11 +1,11 @@
 ---
 title: 跨渠道分析常见问题解答
-description: 跨渠道分析的常见问题
-translation-type: tm+mt
+description: 跨渠道分析常见问题解答
+translation-type: ht
 source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '460'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -41,8 +41,8 @@ ht-degree: 93%
 
 ## 在与客户经理联系并提供所需信息后，已重新生成键值的数据集需要多长时间才可用？
 
-Adobe启用“跨渠道分析”后，约1周即可进行实时拼接。 回填可用性取决于现有数据的数量。小型数据集（每日的事件数量少于 100 万）通常需要几天时间，而大型数据集（每日的事件数量为 10 亿）可能需要一周或更长时间。
+在 Adobe 启用跨渠道分析后，大约需要 1 周才能进行实时拼合。回填可用性取决于现有数据的数量。小型数据集（每日的事件数量少于 100 万）通常需要几天时间，而大型数据集（每日的事件数量为 10 亿）可能需要一周或更长时间。
 
-## 跨渠道分析如何处理GDPR和CCPA请求？
+## 跨渠道分析如何处理 GDPR 和 CCPA 请求？
 
 Adobe 将根据当地和国际法规处理 GDPR 和 CCPA 请求。Adobe 提供了 [Adobe Experience Platform 隐私服务](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html)来提交数据访问和删除请求。这些请求同时适用于原始数据集和已重新生成键值的数据集。
