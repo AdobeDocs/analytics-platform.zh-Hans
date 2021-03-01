@@ -4,7 +4,7 @@ cloud: experience-cloud
 product: adobe analytics
 sub-product: customer journey
 solution: Customer Journey Analytics
-type: Documentation
+type: 文档
 index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 本指南提供 Customer Journey Analytics 自助式帮助内容；Customer Journey Analytics 基于 Adobe Experience Platform，是 Adobe 的新一代跨渠道分析解决方案。
@@ -17,10 +17,10 @@ getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: 教程
 tutorials-url: https://helpx.adobe.com/cn/experience-cloud/tutorials.html
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b9204d42a1a319f6fed7d3f9b1d0145464378aa8
-workflow-type: ht
-source-wordcount: '430'
+workflow-type: tm+mt
+source-wordcount: '431'
 ht-degree: 100%
 
 ---
