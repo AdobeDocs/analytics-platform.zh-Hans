@@ -2,10 +2,10 @@
 title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
 translation-type: tm+mt
-source-git-commit: 1a436ac162df0ae96525fd2e71daef55b078a59c
+source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 94%
+source-wordcount: '1035'
+ht-degree: 93%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 94%
 
 ## 完全支持的功能/组件
 
-| Adobe Analytics 功能 | 注释 |
+| Adobe Analytics 功能 | 支持说明 |
 | --- | --- |
 | 量度 | CJA 利用体验数据模型 (XDM) 并支持无限量的量度，同时不会与传统 Analytics 的自定义成功事件绑定。请注意，已对传统 Analytics 中的一些标准量度名称进行了重命名，例如：“访客”=“人员”、“访问”=“会话”、“点击”=“事件”。 |
 | 维度 | CJA利用XDM并支持无限维度，且不与传统Analytics的自定义eVar或prop绑定。 |
@@ -100,5 +100,4 @@ ht-degree: 94%
 * Reports &amp; Analytics 书签
 * Reports &amp; Analytics 目标
 * Reports &amp; Analytics 日历事件
-* Ad Hoc Analysis
 * Mobile Services
