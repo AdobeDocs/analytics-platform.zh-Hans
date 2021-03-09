@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
 workflow-type: tm+mt
 source-wordcount: '1035'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -19,8 +19,8 @@ ht-degree: 93%
 | Adobe Analytics 功能 | 支持说明 |
 | --- | --- |
 | 量度 | CJA 利用体验数据模型 (XDM) 并支持无限量的量度，同时不会与传统 Analytics 的自定义成功事件绑定。请注意，已对传统 Analytics 中的一些标准量度名称进行了重命名，例如：“访客”=“人员”、“访问”=“会话”、“点击”=“事件”。 |
-| 维度 | CJA利用XDM并支持无限维度，且不与传统Analytics的自定义eVar或prop绑定。 |
-| 列表变量/列表 Prop | CJA利用XDM并支持无限的字符串数组，这些数组可以类似于listVar。 |
+| 维度 | CJA 利用 XDM 并支持无限量的维度，同时不会与传统 Analytics 的自定义 eVar 或 prop 绑定。 |
+| 列表变量/列表 Prop | CJA 利用 XDM 并支持无限量的与 listVar 具有类似用法的字符串数组。 |
 | 日期范围 | 计划将会提供自定义日历支持。 |
 | 计算量度 | 请注意，传统 Analysis Workspace 中的任何现有计算量度都不会移植到 CJA。 |
 | 区段 | 现在称为“过滤器” - 请注意，传统 Analysis Workspace 中的任何现有区段都不会移植到 CJA。 |
@@ -80,7 +80,7 @@ ht-degree: 93%
 | 通过设备图形进行 ID 拼合 | 计划将会提供支持。 |
 | Report Builder（Excel 插件） | 计划将会提供支持。 |
 | 实时报告 | 计划将会提供支持。 |
-| data warehouse报告（100%行导出） | 支持计划从Analysis Workspace界面进行。 [!UICONTROL Experience Platform 查询 ] Service还为CJA中的这些用例提供了接口。 |
+| Data Warehouse 报告（100% 行导出） | 计划从 Analysis Workspace 界面提供支持。[!UICONTROL Experience Platform 查询服务]还为 CJA 中的使用案例提供接口。 |
 
 ## 尚未计划提供支持
 
