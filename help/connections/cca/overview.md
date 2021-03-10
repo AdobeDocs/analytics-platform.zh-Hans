@@ -1,11 +1,11 @@
 ---
 title: 跨渠道分析概述
 description: 在多个数据集中重新生成访客 ID 的键值，以对访客进行拼合。
-translation-type: ht
-source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
-workflow-type: ht
-source-wordcount: '787'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 23a7a52ed6fc0a39ce1466a6d7b658dbdf7c6c14
+workflow-type: tm+mt
+source-wordcount: '844'
+ht-degree: 93%
 
 ---
 
@@ -45,6 +45,8 @@ ht-degree: 100%
 * 仅支持事件数据集。不支持其他数据集，例如查找数据集。
 * 不支持在组织中使用的自定义 ID 映射。
 * 不支持 Adobe 协作图和专用图。
+* 跨渠道分析不会以任何方式转换用于拼接的字段。 基于字段的拼接使用指定字段中的值，因为该值存在于数据湖中的未拼接数据集中。 例如，如果有时字段中显示“Bob”一词，而有时显示“BOB”一词，则这些人将被视为两个单独的人。
+
 
 ## 启用跨渠道分析
 
