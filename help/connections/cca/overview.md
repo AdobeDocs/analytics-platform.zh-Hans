@@ -2,10 +2,10 @@
 title: 跨渠道分析概述
 description: 在多个数据集中重新生成访客 ID 的键值，以对访客进行拼合。
 translation-type: tm+mt
-source-git-commit: 23a7a52ed6fc0a39ce1466a6d7b658dbdf7c6c14
+source-git-commit: cc78a3941a4179be0dbf46055fea60df8e7e8b97
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 93%
+source-wordcount: '898'
+ht-degree: 84%
 
 ---
 
@@ -59,7 +59,8 @@ ht-degree: 93%
    * 所需数据集的“永久 ID”列名称（每行都显示的标识符）
    * 所需数据集的“临时 ID”列名称（数据集之间的人员标识符关联）
    * 您的[重播](replay.md)频率和回顾时间范围首选项。选项包括每周重播一次（回顾时间范围为 7 天）或每天重播一次（回顾时间范围为 1 天）。
-1. 在收到您的请求后，Adobe 客户经理将启用跨渠道分析。启用后，Adobe Experience Platform 中会显示一个新的已重新生成键值的数据集，其中包含一个新的“人员 ID”列。Adobe 客户经理可以提供新的数据集 ID 和“人员 ID”列名称。
+1. Adobe客户经理将与Adobe工程部门合作，在收到您的请求后启用跨渠道分析。 启用后，将在Adobe Experience Platform中显示包含新人ID列的新重新键入的数据集。 Adobe 客户经理可以提供新的数据集 ID 和“人员 ID”列名称。
+1. 首次打开时，Adobe将提供拼接数据的回填，可回溯到上个月初（最长60天）。 要进行此回填，该瞬时ID必须存在于未拼接数据中的那么长时间。
 1. 在 CJA 中使用新生成的数据集以及任何其他要包含的数据集[创建连接](../create-connection.md)。为每个数据集选择正确的人员 ID。
 1. 根据连接[创建数据视图](/help/data-views/create-dataview.md)。
 
