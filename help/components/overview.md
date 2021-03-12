@@ -1,11 +1,11 @@
 ---
 title: 组件概述
 description: 了解 CJA 提供了哪些组件，以及如何在报表中使用它们。
-translation-type: ht
-source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
-workflow-type: ht
-source-wordcount: '343'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: c1699c4319b3b840d8420f3ffa1a4bd1c1d9a4d4
+workflow-type: tm+mt
+source-wordcount: '592'
+ht-degree: 57%
 
 ---
 
@@ -52,4 +52,16 @@ Analysis Workspace 中的组件包括量度、维度、区段和时间粒度，�
 
 观看有关创建量度、区段和日期的视频：
 
->[!VIDEO](https://video.tv.adobe.com/v/23979?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/23979)
+
+## 组件访问权限
+
+管理员可以(通过[Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=en#manage-users-and-products))组织哪些组件在报告中向用户公开。 下表显示了这些组件访问权限的行为：
+
+| 特选类型 | 管理员可以 | 非管理员项目所有者（或编辑角色）可以 | 非管理员重复角色 |
+| --- | --- | --- | --- |
+| **组件在数据视图中“隐藏”** | 所有可用于报告的视图组件（隐藏的组件需要单击“显示全部”） | 不可用于报告 | 不可用于报告 |
+| **从数据视图添加或删除的组件** | 仅添加到数据视图的组件（隐藏或未隐藏）。 管理员无法报告未由数据视图定义的字段或组件。 | 仅添加到数据视图的组件，或由用户拥有或与用户共享的组件。 隐藏的组件不可用（如VRS特选）。 | 只有添加到DV的组件不会隐藏，并且已包含在“项目”特选中。 |
+| **项目中的精选组件** | 所有可用于报告的视图组件（隐藏的组件需要单击“显示全部”） | 所有非隐藏的数据视图组件（需要单击“显示全部”） | 仅限精选的组件，以及拥有或与用户共享的任何组件 |
+| **使用包含隐藏组件的数据视图的精选项目** | 所有可用于报告的数据组件（隐藏和非特选组件需要单击“显示全部”） | 所有非精选项目组件、所有非隐藏数据视图组件，以及用户拥有或共享的任何组件 | 仅限精选的组件，以及用户拥有或共享的任何组件 |
+
