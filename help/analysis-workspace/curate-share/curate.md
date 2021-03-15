@@ -1,26 +1,22 @@
 ---
 description: “策划”让您可在共享项目前限制组件。
-keywords: Analysis Workspace curation
-title: 特选项目
+keywords: Analysis Workspace特选
+title: 组织项目
 translation-type: tm+mt
-source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+source-git-commit: 1fd11bf0f34b9e4698285e5d29fd57fbab5238be
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 99%
+source-wordcount: '516'
+ht-degree: 50%
 
 ---
 
 
-# 特选项目
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+# 组织项目
 
 “策划”让您可在共享项目前限制组件（维度、量度、区段、日期范围）。当收件人打开项目时，他们将看到您为其策划的有限组件。策划虽然是一个可选步骤，但建议在共享项目前执行此步骤。
 
 >[!NOTE]
-> 产品配置文件是控制用户可以查看哪些组件的主要机制。此类配置文件通过 Adobe Experience Cloud Admin Console 进行管理。“策划”是一个次级过滤器。
+> 产品配置文件是控制用户可以查看哪些组件的主要机制。它们通过[Adobe Experience Cloud Admin Console](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/manage-users-and-products/admin-getting-started.html)进行管理。 “策划”是一个次级过滤器。
 
 ## 应用项目策划
 
@@ -47,23 +43,18 @@ ht-degree: 99%
 1. 单击&#x200B;**[!UICONTROL 删除策划]**。
 1. 单击&#x200B;**[!UICONTROL 完成]**。
 
-## 虚拟报表包 (VRS) 策划
+## 组件特选选项
 
-要在报表包级别应用策划，以便同时将策划应用于多个项目，您可以[在虚拟报表包 (VRS) 中进行组件策划](https://docs.adobe.com/content/help/zh-Hans/analytics/components/virtual-report-suites/vrs-components.html)。
-
->[!NOTE]
-> 始终先应用 VRS 策划，再应用项目策划。这意味着即使您的策划项目包含某些组件，但是如果策划 VRS 不包含这些组件，系统也会将这些组件滤除。
-
-## “显示所有组件”选项
-
-在应用策划后的项目或 VRS 中，收件人将看到左边栏中显示的&#x200B;**[!UICONTROL 显示所有组件]**&#x200B;选项。[!UICONTROL 显示所有组件]选项将显示不同的组件集，具体取决于：
+在精选的项目中，收件人将显示左边栏中的&#x200B;**[!UICONTROL 显示所有]**&#x200B;组件选项。 [!UICONTROL 显示所有组件]选项将显示不同的组件集，具体取决于：
 
 * 用户的权限级别（管理员或非管理员）
 * 项目角色（所有者/编辑者或非所有者/编辑者）
-* 应用的策划类型（VRS 或项目）
+* 应用的特选类型（在项目级别）
 
-| 策划类型 | 管理员 | 非管理员项目所有者或编辑角色 | 非管理员复制或查看角色 |
-|---|---|---|---|
-| 策划的 VRS | 所有非策划的 VRS 组件 | 此角色拥有或与其共享的非策划的 VRS 组件 | 此角色拥有或与其共享的非策划的 VRS 组件 |
-| 策划的项目 | 所有非策划的项目组件 | 所有非策划的项目组件 | 此角色拥有或与其共享的非策划的项目组件 |
-| 策划的 VRS 中的策划项目 | 所有非策划的项目，如下所示 **[!UICONTROL 非策划的项目组件]**&#x200B;与 **[!UICONTROL 非策划的 VRS 组件]** | 此角色拥有或与其共享的所有非策划项目组件以及非策划 VRS 组件 | 此角色拥有或与其共享的非策划的 VRS 和项目组件 |
+| 特选类型 | 管理员可以 | 非管理员项目所有者（或编辑角色）可以 | 非管理员重复角色可以 |
+| --- | --- | --- | --- |
+| **组件在数据视图中“隐藏”** | 所有可用于报告的视图组件（隐藏的组件需要单击“显示全部”） | 不可用于报告 | 不可用于报告 |
+| **从数据视图添加或删除的组件** | 仅添加到数据视图的组件（隐藏或未隐藏）。 管理员无法报告未由数据视图定义的字段或组件。 | 仅添加到数据视图的组件，或由用户拥有或与用户共享的组件。 隐藏的组件不可用（如VRS特选）。 | 只有添加到DV的组件不会隐藏，并且已包含在“项目”特选中。 |
+| **项目中的精选组件** | 所有可用于报告的视图组件（隐藏的组件需要单击“显示全部”） | 所有非隐藏的数据视图组件（需要单击“显示全部”） | 仅限精选的组件，以及拥有或与用户共享的任何组件 |
+| **使用包含隐藏组件的数据视图的精选项目** | 所有可用于报告的数据组件（隐藏和非特选组件需要单击“显示全部”） | 所有非精选项目组件、所有非隐藏数据视图组件，以及用户拥有或共享的任何组件 | 仅限精选的组件，以及用户拥有或共享的任何组件 |
+
