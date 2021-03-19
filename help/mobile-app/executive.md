@@ -1,23 +1,23 @@
 ---
 description: 有关使用功能板记分卡的说明。
-title: Adobe Analytics 功能板执行指南
+title: Analytics 功能板执行指南
 translation-type: tm+mt
-source-git-commit: 132aba710395c46e123b4c13d6d8ef32c86d2e15
+source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
 workflow-type: tm+mt
-source-wordcount: '1293'
-ht-degree: 100%
+source-wordcount: '1290'
+ht-degree: 91%
 
 ---
 
 
-# Adobe Analytics 功能板：执行用户快速入门指南
+# Analytics 功能板：执行用户快速入门指南
 
-通过阅读以下信息，执行用户可以了解有关使用和查看 Adobe Analytics 功能板的最佳实践。要观看演示此信息的视频，请参阅 [Adobe Analytics 功能板应用程序内体验](https://youtu.be/QXqQ_PkArbA)。
+通过阅读以下信息，执行用户可以了解有关使用和查看 Analytics 功能板的最佳实践。要观看演示此信息的视频，请参阅 [ Analytics 功能板应用程序内体验](https://youtu.be/QXqQ_PkArbA)。
 
 
 ## 简介
 
-Adobe Analytics 功能板可以随时随地从 Adobe Analytics 提供分析。该应用程序允许用户通过移动设备访问直观的记分卡。记分卡是关键量度和其他组件的集合，这些组件以平铺布局显示，您可以点击它们以获取更详细的划分和趋势报表。iOS 和 Android 操作系统均支持功能板。
+分析仪表板可以随时随地从Customer Journey Analytics中获得洞察。  该应用程序允许用户通过移动设备访问直观的记分卡。记分卡是关键量度和其他组件的集合，这些组件以平铺布局显示，您可以点击它们以获取更详细的划分和趋势报表。iOS 和 Android 操作系统均支持功能板。
 
 ## 有关本指南的更多信息
 
@@ -27,8 +27,8 @@ Adobe Analytics 功能板可以随时随地从 Adobe Analytics 提供分析。�
 
 | 术语 | 定义 |
 |--- |--- |
-| 用户 | 在移动设备上查看 Analytics 中的关键量度和分析的执行人员 |
-| 策划人 | 精通数据的人员，可从 Analytics 中查找和发布分析数据，并配置供用户查看的记分卡 |
+| 用户 | 在移动设备上查看CJA中的关键指标和洞察的执行人员角色 |
+| 策划人 | 从CJA中查找和分发洞察并配置要由消费者查看的记分卡的数据识别角色 |
 | 策划 | 创建或编辑移动记分卡的操作，记分卡中包含用户的相关量度、维度和其他组件 |
 | 记分卡 | 包含一个或多个图块的功能板视图 |
 | 图块 | 记分卡视图中量度的呈现方式 |
@@ -44,22 +44,22 @@ Adobe Analytics 功能板可以随时随地从 Adobe Analytics 提供分析。�
 
 要在功能板中访问记分卡，请确保：
 
-* 您已有效登录 Adobe Analytics
+* 您有一个有效的登录Customer Journey Analytics
 * 您的策划人已正确创建了移动记分卡，并与您共享了这些记分卡
 
-### 下载并安装功能板
+### 下载和安装仪表板
 
 要下载并安装应用程序，请根据设备上的操作系统执行以下相应步骤。
 
 **对于 iOS 上的执行用户：**
 
-单击以下链接（也可在 Analytics 的&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Analytics 功能板（移动应用程序）]**&#x200B;下找到该链接），然后按照相应提示下载、安装和打开应用程序：
+单击以下链接(也可在CJA的&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 分析仪表板（移动应用程序）]**&#x200B;下找到)，然后按照提示下载、安装和打开应用程序：
 
 [iOS 链接](https://apple.co/2zXq0aN)
 
 **对于 Android 上的执行用户：**
 
-单击以下链接（也可在 Analytics 的&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Analytics 功能板（移动应用程序）]**&#x200B;下找到该链接），然后按照相应提示下载、安装和打开应用程序：
+单击以下链接(也可在CJA的&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 分析仪表板（移动应用程序）]**&#x200B;下找到)，然后按照提示下载、安装和打开应用程序：
 
 [Android 链接](https://bit.ly/2LM38Oo)
 
