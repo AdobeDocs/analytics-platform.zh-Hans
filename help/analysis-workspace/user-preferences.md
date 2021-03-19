@@ -2,7 +2,7 @@
 title: 如何在Analysis Workspace中设置用户首选项
 description: 您可以为用户设置常规和项目首选项。
 translation-type: tm+mt
-source-git-commit: 90b69c13a7a63228f62c4b6291b3d66f8e3c821b
+source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 17%
@@ -36,8 +36,8 @@ ht-degree: 17%
 | 区域 | 首选项 | 选项 |
 | --- | --- | --- |
 | **显示** |  |  |
-|  | [视图密度](https://experienceleague.adobe.com/docs/analytics-platform//using/cja-workspace/build-workspace-project/view-density.html) | <ul><li>紧凑</li><li>舒适</li><li>扩展（默认）</li></ul> |
-|  | [调色板](https://experienceleague.adobe.com/docs/analytics-platform//using/cja-workspace/build-workspace-project/color-palettes.html) | <ul><li>Adobe提供的调色板（默认）</li><li>自定义调色板</li></ul> |
+|  | [视图密度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density.html) | <ul><li>紧凑</li><li>舒适</li><li>扩展（默认）</li></ul> |
+|  | [调色板](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/color-palettes.html) | <ul><li>Adobe提供的调色板（默认）</li><li>自定义调色板</li></ul> |
 | **数据** |  |  |
 |  | [报表包](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?#report-suite) | <ul><li>最近（默认）</li><li>特定 — 从列表中选择</li></ul> |
 |  | [日历](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?#calendar) | 列表现成的日期范围，包括&#x200B;**[!UICONTROL 本月]**（默认） |
