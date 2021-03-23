@@ -1,11 +1,11 @@
 ---
 title: 组件概述
 description: 了解 CJA 提供了哪些组件，以及如何在报表中使用它们。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1fd11bf0f34b9e4698285e5d29fd57fbab5238be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -44,9 +44,9 @@ Analysis Workspace 中的组件包括量度、维度、区段和时间粒度，�
 
 | 组件操作 | 描述 |
 | --- | --- |
-| 标记 | 通过对组件应用标记来组织或管理组件。然后它会显示在相应的组件管理器中，如 [!UICONTROL Analytics] > [!UICONTROL 组件] > [!UICONTROL 区段]，或 [!UICONTROL Analytics] > [!UICONTROL 组件] > [!UICONTROL 项目] |
-| 收藏 | 将组件添加到您的收藏夹列表中。然后它会显示在相应的组件管理器中，如 [!UICONTROL Analytics] > [!UICONTROL 组件] > [!UICONTROL 区段]，或 [!UICONTROL Analytics] > [!UICONTROL 组件] > [!UICONTROL 项目]. |
-| 批准 | 批准组件以使其成为规范。然后它会显示在相应的组件管理器中，如 [!UICONTROL Analytics] > [!UICONTROL 组件] > [!UICONTROL 区段]，或 [!UICONTROL Analytics] > [!UICONTROL 组件] > [!UICONTROL 项目] |
+| 标记 | 通过对组件应用标记来组织或管理组件。然后，它显示在相应的组件管理器中，如 [!UICONTROL Analytics] > [!UICONTROL 组件] > [!UICONTROL 区段]，或 [!UICONTROL Analytics] > [!UICONTROL 组件] > [!UICONTROL 项目] |
+| 收藏 | 将组件添加到您的收藏夹列表中。然后，它显示在相应的组件管理器中，如 [!UICONTROL Analytics] > [!UICONTROL 组件] > [!UICONTROL 区段]，或 [!UICONTROL Analytics] > [!UICONTROL 组件] > [!UICONTROL 项目]. |
+| 批准 | 批准组件以使其成为规范。然后，它显示在相应的组件管理器中，如 [!UICONTROL Analytics] > [!UICONTROL 组件] > [!UICONTROL 区段]，或 [!UICONTROL Analytics] > [!UICONTROL 组件] > [!UICONTROL 项目] |
 | 共享 | 仅适用于区段。 |
 | 删除 | 仅适用于区段。 |
 
@@ -56,4 +56,4 @@ Analysis Workspace 中的组件包括量度、维度、区段和时间粒度，�
 
 ## 组件访问权限
 
-在Analysis Workspace中，管理员可以[策划](/help/analysis-workspace/curate-share/curate.md)向报告中的用户公开哪些组件。
+在 Analysis Workspace 中，管理员可[管理](/help/analysis-workspace/curate-share/curate.md)哪些组件在报表中对用户可见。
