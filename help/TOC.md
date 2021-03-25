@@ -16,12 +16,12 @@ solution-image: assets/experience-cloud-logo-24.png
 getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: 教程
-tutorials-url: https://helpx.adobe.com/cn/experience-cloud/tutorials.html
+tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 132aba710395c46e123b4c13d6d8ef32c86d2e15
+source-git-commit: 0f116524c0c3937ddddce6b50b3d9f8519e9157f
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 99%
+source-wordcount: '448'
+ht-degree: 98%
 
 ---
 
@@ -45,6 +45,7 @@ ht-degree: 99%
       + [重播的工作原理](connections/cca/replay.md)
       + [跨渠道分析常见问题解答](connections/cca/faq.md)
 + 数据视图 {#cja-dataviews}
+   + [数据视图概述](data-views/data-views.md)
    + [创建数据视图](data-views/create-dataview.md)
    + [配置数据视图和属性](data-views/configure-dataviews.md)
 + 工作区项目 {#cja-workspace}
