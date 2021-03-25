@@ -2,10 +2,10 @@
 title: Customer Journey Analytics 概述
 description: 了解如何通过 Customer Journey Analytics 来使用 Analysis Workspace 处理来自 Experience Platform 的数据。
 translation-type: tm+mt
-source-git-commit: f52a6788a0a5f3aea23fc783e479c3f8a23a260d
+source-git-commit: 0f5e9c117f12ef070733df032b078ad70ce7c52b
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 100%
+source-wordcount: '1226'
+ht-degree: 97%
 
 ---
 
@@ -53,7 +53,7 @@ Customer Journey Analytics 的初始版本包括 Analysis Workspace 中的许多
 
 要创建连接、添加数据集等，您需要在 [Admin Console](https://adminconsole.adobe.com/enterprise/) 中拥有以下权限：
 
-* 自 2020 年 9 月 9 日起，若要访问 Customer Journey Analytics 或建立连接，则需要作为管理员，添加在 [Admin Console](https://adminconsole.adobe.com/enterprise/) 的 **Customer Journey Analytics 产品**&#x200B;中。产品管理员享有以下权限：
+* 要访问Customer Journey Analytics或建立连接，您需要作为管理员添加到[Admin Console](https://adminconsole.adobe.com/enterprise/)中的&#x200B;**Customer Journey Analytics产品**。 产品管理员享有以下权限：
    * 创建/更新/删除连接或数据视图
    * 更新/删除由其他用户创建的项目、过滤器、计算量度或区段
    * 将工作区项目共享给所有用户
