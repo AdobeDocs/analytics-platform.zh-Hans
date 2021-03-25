@@ -1,11 +1,11 @@
 ---
 title: 什么是Customer Journey Analytics中的视图?
-description: null
+description: 数据视图指定您希望如何解释CJA连接中的数据元素，如量度、维度、会话等。
 translation-type: tm+mt
-source-git-commit: 0f116524c0c3937ddddce6b50b3d9f8519e9157f
+source-git-commit: 3b9a740d50d99315a5609133917dfd0714afa6cc
 workflow-type: tm+mt
-source-wordcount: '1115'
-ht-degree: 6%
+source-wordcount: '1126'
+ht-degree: 7%
 
 ---
 
@@ -52,13 +52,15 @@ Customer Journey Analytics 中的工作区项目均基于数据视图。
 ## 先决条件
 
 * 在创建数据视图之前，您需要[设置一个或多个与 Experience Platform 数据集的连接](/help/connections/create-connection.md)。
-* 要创建或管理数据视图，您需要在Adobe Admin Console中具备以下权限：
+* 要创建或管理数据视图，您需要Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=zh-Hans#admin-access-permissions)中的[权限集。
 
 ## 视图有关组件的信息
 
 单击Workspace中的(i)信息图标，以视图组件所基于的模式字段及其设置（如说明）。
 
 ## 可在Workspace中覆盖的数据视图设置
+
+在Analysis Workspace中，某些数据视图设置可以在项目级别被覆盖，而其他设置则不能。
 
 * 回顾窗口
 * 量度归因
@@ -70,10 +72,6 @@ Customer Journey Analytics 中的工作区项目均基于数据视图。
 * 量度格式
 * 数据视图名称
 * Dimension分配
-
-## 没有值
-
-您可以决定将此“无”/“无”值/“未指定”维称为什么，以及是否使其对报告中的用户可见。 但是，管理员和用户（对于他们拥有的项目）可以更改Workspace中的可见性设置。
 
 ## 删除数据视图
 
