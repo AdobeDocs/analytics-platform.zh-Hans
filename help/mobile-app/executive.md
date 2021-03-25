@@ -2,10 +2,10 @@
 description: 有关使用功能板记分卡的说明。
 title: Analytics 功能板执行指南
 translation-type: tm+mt
-source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
+source-git-commit: cfda4791c89a0fa1023bea6033b0244b29f45f12
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 91%
+source-wordcount: '1288'
+ht-degree: 89%
 
 ---
 
@@ -120,9 +120,9 @@ ht-degree: 91%
 
    * 根据点按的时间间隔（**日**、**周**、**月**&#x200B;或&#x200B;**年**），您将看到两个日期范围选项，即当前时间范围或紧随其前的时间范围。点按这两个选项之一，以选择第一个范围。在&#x200B;**[!UICONTROL 比较对象]**&#x200B;列表下，点按其中显示的一个选项，以将此时间段的数据与您选择的第一个日期范围进行比较。点按屏幕右上角的&#x200B;**[!UICONTROL 完成]**。**[!UICONTROL 日期范围]**&#x200B;字段和记分卡图块会更新以显示您选择的新范围中的新比较数据。
 
-7. 要将区段过滤器应用于记分卡，请点按过滤器下拉列表，然后选择由策划人配置的区段。应用程序中的[过滤器](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html)的工作方式与在 Analytics Workspace 中相同。
+7. 要对记分卡应用筛选器，请点按筛选器下拉列表，然后选择由策展人配置的筛选器。 应用程序中的[过滤器](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html)的工作方式与在 Analytics Workspace 中相同。
 
-   ![区段过滤器](assets/segment_filter.png)
+   ![过滤器](assets/segment_filter.png)
 
 8. 获取记分卡更新。如果记分卡不包含您可能感兴趣的所有量度或划分，请联系您的 Analytics 团队来更新记分卡。更新后，您可以下拉屏幕上的记分卡进行刷新，并加载最近添加的数据。
 
