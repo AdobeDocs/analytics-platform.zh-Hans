@@ -2,17 +2,17 @@
 title: 分析仪表板 — 概述
 description: 针对Customer Journey Analytics仪表板的产品文档和自助
 translation-type: tm+mt
-source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
+source-git-commit: 8b8fa177b1fdfc760845b1fad7c145da68c320c8
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 87%
+source-wordcount: '208'
+ht-degree: 73%
 
 ---
 
 
 # 分析[!UICONTROL 仪表板] — 概述
 
-**分析功 ** 能板可随时随地提供Customer Journey Analytics洞察。该应用程序允许用户通过移动设备访问直观的记分卡。记分卡是关键量度和其他组件的集合，这些组件以平铺布局显示，您可以点击它们以获取更详细的划分和趋势报表。iOS 和 Android 操作系统均支持移动设备应用程序。
+**分析功 ** 能板可随时随地从Adobe Analytics提供洞察，包括Customer Journey Analytics。该应用程序允许用户通过移动设备访问直观的记分卡。记分卡是在平铺布局中显示的关键量度和其他组件的集合，您可以点击它以查看更详细的划分和趋势数据视图。 iOS 和 Android 操作系统均支持移动设备应用程序。
 
 要进一步了解 Analytics [!UICONTROL 功能板]，请参阅以下资源：
 
