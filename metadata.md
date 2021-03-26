@@ -4,12 +4,16 @@ solution-title: Adobe Analytics
 solution-hub-url: https://helpx.adobe.com/cn/support/experience-cloud/core-services.html
 solution-image: help/assets/experience-cloud-logo-24.png
 getting-started-title: 快速入门
-getting-started-url: https://helpx.adobe.com/cn/experience-cloud-core-services/get-started.html
+getting-started-url: https://helpx.adobe.com/experience-cloud-core-services/get-started.html
 tutorials-title: 教程
 tutorials-url: https://helpx.adobe.com/cn/analytics/how-to/adobe-launch-publishing-process.html
-git-repo: https://github.com/AdobeDocs/analytics-platform.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.zh-Hans
+description: 此文件包括传递到回购协议中的用户指南TOC.md文件的回购级元数据。
 translation-type: tm+mt
-source-git-commit: 8559ff2f6e311822bc8021e98c2c8c72880bbe8a
+source-git-commit: 7f846ac36d787159d25aaf9ff7240e3a51979408
+workflow-type: tm+mt
+source-wordcount: '150'
+ht-degree: 86%
 
 ---
 
