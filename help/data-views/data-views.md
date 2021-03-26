@@ -2,10 +2,10 @@
 title: 什么是Customer Journey Analytics中的视图?
 description: 数据视图指定您希望如何解释CJA连接中的数据元素，如量度、维度、会话等。
 translation-type: tm+mt
-source-git-commit: 3b9a740d50d99315a5609133917dfd0714afa6cc
+source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
 workflow-type: tm+mt
-source-wordcount: '1126'
-ht-degree: 7%
+source-wordcount: '1127'
+ht-degree: 4%
 
 ---
 
@@ -75,4 +75,4 @@ Customer Journey Analytics 中的工作区项目均基于数据视图。
 
 ## 删除数据视图
 
-如果在 [!UICONTROL Customer Journey Analytics] 中删除数据视图，将显示一条错误消息，指示所有依赖于这个已删除数据视图的工作区项目都将停止运行。
+如果在[!UICONTROL Customer Journey Analytics]中删除视图，将显示一条错误消息，指示任何依赖于此已删除视图的Workspace项目将不再工作。
