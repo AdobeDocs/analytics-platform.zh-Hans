@@ -2,10 +2,10 @@
 title: 过滤器概述
 description: 了解过滤器的用途以及如何创建简单的过滤器。
 translation-type: tm+mt
-source-git-commit: 74b99933fb1b599c829e11117c41235754c189b9
+source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 100%
+source-wordcount: '967'
+ht-degree: 92%
 
 ---
 
@@ -66,8 +66,8 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 * 会话编号
 * 登录页面
 * 回访频度
-* 参与量度
-* 线性分配的量度
+* 参与指标
+* 线性分配的指标
 
 ### 事件容器
 
@@ -79,3 +79,11 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 * 列表属性
 * 列表维度
 * 促销维度（在事件背景下）
+
+## 现成滤镜模板
+
+传统的Analytics附带大量开箱即用的模板细分(过滤器)和计算量度。 其中许多不适用于CJA，或者必须重命名或重新创建。 其他变量将依赖于CJA中上下文感知变量的解决方案。
+
+| 过滤器名称 | 描述 |
+| --- | --- |
+| 全部 数据 | 这是类似于传统Adobe分析中“所有访问”区段的必需过滤器。 将量度添加到自由格式表的行时，它会动态添加到报告。 |
