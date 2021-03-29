@@ -2,7 +2,7 @@
 title: 如何在Customer Journey Analytics中创建新的视图。
 description: 描述创建新数据视图所需的所有设置。
 translation-type: tm+mt
-source-git-commit: 6cfab7fc7ce3360b5ea2ed8bdd7f3e0a8e76a24d
+source-git-commit: 7db2474bf3cd16863c597295399a262c328172dc
 workflow-type: tm+mt
 source-wordcount: '2464'
 ht-degree: 8%
@@ -19,7 +19,7 @@ ht-degree: 8%
 1. 在 Customer Journey Analytics 中，转到&#x200B;**数据视图**&#x200B;选项卡。
 2. 单击&#x200B;**添加**&#x200B;可创建新数据视图并配置其设置。
 
-![](assets/)
+![](assets/new-data-view.png)
 
 | 设置 | 描述/用例 |
 | --- | --- |
