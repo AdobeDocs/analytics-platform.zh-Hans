@@ -2,15 +2,19 @@
 title: 什么是Customer Journey Analytics中的视图?
 description: 数据视图指定您希望如何解释CJA连接中的数据元素，如量度、维度、会话等。
 translation-type: tm+mt
-source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
+source-git-commit: b260930c5ffd50a428e5502695e159538ff8cb73
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1134'
 ht-degree: 4%
 
 ---
 
 
 # 什么是数据视图?
+
+>[!IMPORTANT]
+>
+>此功能当前处于有限测试中。
 
 视图位于Customer Journey Analytics(CJA)[连接](/help/connections/create-connection.md)的上方。 连接将组合来自Adobe Experience Platform的一个或多个数据集并将其连接到CJA。 数据视图指定您希望如何解释连接中数据的元素，如量度、维度、会话等。 在Workspace中为报告数据做准备时，定义了视图。
 
