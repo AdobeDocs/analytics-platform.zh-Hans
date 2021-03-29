@@ -2,10 +2,10 @@
 title: Customer Journey Analytics中数据视图的用例
 description: 在Customer Journey Analytics中展示数据视图的灵活性和强大功能的多种用例
 translation-type: tm+mt
-source-git-commit: 7db2474bf3cd16863c597295399a262c328172dc
+source-git-commit: 6ca345f61ccdcdf9e3befd733a30dcb3fc79ee7a
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 0%
+source-wordcount: '288'
+ht-degree: 1%
 
 ---
 
@@ -29,10 +29,12 @@ Adobe
 1. 您可以进一步指定此量度的归因模型，如[!UICONTROL 上次触摸]，并且[!UICONTROL 会话]的[!UICONTROL 回顾窗口]。
 您还可以从同一字段创建另一个[!UICONTROL Orders]量度，并为它指定不同的归因模型，如[!UICONTROL First Touch]和不同的[!UICONTROL 回顾窗口]，如[!UICONTROL 30天]。
 
-## 从一个模式字段创建多个维
-
 ## 使用整数作为维
 
-34点
+以前，整数在CJA中会自动被视为量度。 现在，数字(包括来自Adobe Analytics的自定义事件)可以视为尺寸。 示例如下：
 
-包括分摊
+1. 将[!UICONTROL call_length_min]整数拖动到[!UICONTROL 包含的组件]下的[!UICONTROL Dimension]部分：
+   ![](assets/integers.png)
+
+1. 您现在可以添加[!UICONTROL 值分段]以按报告以分段方式显示此维。 否则，此维度的每个实例将在Workspace中显示为行项。
+   ![](assets/bucketing.png)
