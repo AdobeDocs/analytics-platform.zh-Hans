@@ -2,15 +2,19 @@
 title: Customer Journey Analytics中数据视图的用例
 description: 在Customer Journey Analytics中展示数据视图的灵活性和强大功能的多种用例
 translation-type: tm+mt
-source-git-commit: f8dfc10b926031838d084acf3dadd9ce3f83541e
+source-git-commit: b260930c5ffd50a428e5502695e159538ff8cb73
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '308'
 ht-degree: 1%
 
 ---
 
 
 # 数据视图使用案例
+
+>[!IMPORTANT]
+>
+>此功能当前处于有限测试中。
 
 这些用例显示了Customer Journey Analytics中数据视图的灵活性和强大功能。
 
