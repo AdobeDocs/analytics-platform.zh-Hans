@@ -2,9 +2,9 @@
 title: Customer Journey Analytics中数据视图的用例
 description: 在Customer Journey Analytics中展示数据视图的灵活性和强大功能的多种用例
 translation-type: tm+mt
-source-git-commit: 6ca345f61ccdcdf9e3befd733a30dcb3fc79ee7a
+source-git-commit: f8dfc10b926031838d084acf3dadd9ce3f83541e
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '301'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # 数据视图使用案例
 
-Adobe
+这些用例显示了Customer Journey Analytics中数据视图的灵活性和强大功能。
 
 ## 从pageTitle（字符串）模式字段创建订单量度
 
