@@ -18,10 +18,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: 教程
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 0f116524c0c3937ddddce6b50b3d9f8519e9157f
+source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 98%
+source-wordcount: '456'
+ht-degree: 96%
 
 ---
 
@@ -47,7 +47,9 @@ ht-degree: 98%
 + 数据视图 {#cja-dataviews}
    + [数据视图概述](data-views/data-views.md)
    + [创建数据视图](data-views/create-dataview.md)
+   + [创建数据视图2](data-views/create-dataview2.md)
    + [配置数据视图和属性](data-views/configure-dataviews.md)
+   + [数据视图使用案例](data-views/data-views-usecases.md)
 + 工作区项目 {#cja-workspace}
    + [Analysis Workspace 概述](analysis-workspace/home.md)
    + [执行基本分析](analysis-workspace/perform-basic-analysis.md)
