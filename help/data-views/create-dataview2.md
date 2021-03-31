@@ -2,9 +2,9 @@
 title: 如何在Customer Journey Analytics中创建新的视图。
 description: 描述创建新数据视图所需的所有设置。
 translation-type: tm+mt
-source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
+source-git-commit: 6d3298731ae387f626aeadc67529482e9455775f
 workflow-type: tm+mt
-source-wordcount: '2609'
+source-wordcount: '2566'
 ht-degree: 6%
 
 ---
@@ -122,7 +122,6 @@ ht-degree: 6%
 
 | 设置 | 描述/用例 |
 | --- | --- |
-| [!UICONTROL 对值计数] | 这样，您就可以创建布尔字段设置为`true`的次数的计数；作为量度。 例如，将名为`isPage`的布尔字段设置为`true`的[!UICONTROL 页视图]的数量。 |
 | [!UICONTROL 对实例计数] | 允许您指定用作量度的数字或日期类型字段是否应计算其设置的时间，而不是值本身。<br> 如果要将数字字段的实例相加，并且只想将某个字段与内部实际值相 ** 加的次数相加。<br>这对于从Revenuefield创  建Ordersmetric  （例如）很有用。如果已设置收入，则我们要计入1个订单，而不是数值收入额。 |
 
 ### 配置[!UICONTROL 无值选项]设置
@@ -160,7 +159,7 @@ ht-degree: 6%
 
 | 设置 | 描述/用例 |
 | --- | --- |
-| [!UICONTROL 分段值] | 允许您创建数字维度的分时段版本。 这允许您将收入时段或其他数值作为报告中的维度进行报告。 最多可创建5个桶。 |
+| [!UICONTROL 分段值] | 允许您创建数字维度的分时段版本。 这允许您将收入时段或其他数值作为报告中的维度进行报告。 |
 | [!UICONTROL 最高] | 允许您指定第一个数字维度时段的边界。 这仅适用于数字维。 |
 | [!UICONTROL 介于] | 允许您指定后续数字维度时段的边界。 |
 | [!UICONTROL 添加分段] | 允许您向数字维度分段添加另一个时段。 |
@@ -190,7 +189,7 @@ ht-degree: 6%
 
 ### 可选标准组件
 
-任何数据视图都需要某些系统组件，以促进Analysis Workspace中的报告功能，而以下组件是可选的。
+在任何数据视图中，都需要某些系统组件来促进Analysis Workspace中的报告功能，而以下组件是可选的。
 
 | 组件名称 | Dimension或量度 | 注释 |
 | --- | --- | --- |
