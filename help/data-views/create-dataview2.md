@@ -2,9 +2,9 @@
 title: 如何在Customer Journey Analytics中创建新的视图。
 description: 描述创建新数据视图所需的所有设置。
 translation-type: tm+mt
-source-git-commit: b260930c5ffd50a428e5502695e159538ff8cb73
+source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
 workflow-type: tm+mt
-source-wordcount: '2621'
+source-wordcount: '2609'
 ht-degree: 6%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 6%
 
 >[!IMPORTANT]
 >
->此功能当前处于有限测试中。
+>此功能将于2021年4月22日正式推出。
 
-创建视图涉及从模式元素创建量度和维度，或使用标准组件。 创建量度或维度为您提供了极大的灵活性。 以前，假设您在Adobe Experience Platform中有数据集，则字符串字段用作维度，数字字段用作量度。 要更改其中的任何字段，您必须在平台中编辑模式。 数据视图UI现在允许对量度和维度](/help/data-views/data-views.md)进行更多自由定义。[
+创建视图涉及从模式元素创建量度和维度，或使用标准组件。 创建量度或维度为您提供了极大的灵活性。 以前，假设您在Adobe Experience Platform中有数据集，则字符串字段用作维度，数字字段用作量度。 要更改其中的任何字段，您必须在平台中编辑模式。 数据视图UI现在允许对量度和维度](/help/data-views/data-views.md)进行更多自由定义。 [有关更多用例，请参阅[数据视图用例](/help/data-views/data-views-usecases.md)。
 
 ## 1.配置视图设置和容器
 
@@ -40,8 +40,6 @@ ht-degree: 6%
 接下来，您可以从模式元素创建量度和维度。 您还可以使用标准组件。
 
 ## 2.从模式元素创建量度和维度
-
-
 
 1. 在[!UICONTROL Customer Journey Analytics] > [!UICONTROL 视图]中，单击[!UICONTROL 组件]选项卡。
 
@@ -112,7 +110,7 @@ ht-degree: 6%
 
 | 设置 | 描述/用例 |
 | --- | --- |
-| [!UICONTROL 区分大小写] | 默认=开启。 此设置与“量度”的Dimension略有不同。<ul><li>**量度**:此设置仅适用于“包 [!UICONTROL 含/排除值”] 部分。它允许您确定要应用的过滤器是否应区分大小写。</li><li>**Dimension** :此设置确定应以区分大小写还是不区分大小写的方式聚集此维中的数据。这会更改为字符串字段运行报表/过滤器/属性设置的方式。</li></ul> |
+| [!UICONTROL 区分大小写] | 默认=开启。 此设置仅适用于[!UICONTROL 包含/排除值]部分。 它允许您确定您所应用的包含/排除规则是否应区分大小写。 |
 | [!UICONTROL 匹配] | 允许您指定在归因和分段之前要考虑的报告值（例如，仅使用包含短语“error”的值）。 您可以指定：**[!UICONTROL 如果所有条件均满足]**，或&#x200B;**[!UICONTROL 如果任何条件均满足]**。 |
 | [!UICONTROL 标准] | 允许您指定应应用于特定筛选器规则的匹配逻辑。<ul><li>**字符串**:包含短语、包含任何术语、包含所有术语、不包含任何术语、不包含短语、等号、不等于、开始和结尾</li><li>**多次/整数**:等于、不等于、大于、小于、大于或等于、小于或等于</li><li>**日期**:等于，不等于，晚于，是之前，发生在</li></ul> |
 | [!UICONTROL 匹配操作数] | 允许您指定应应用匹配运算符的匹配操作数。<ul><li>**字符串**:文本字段</li><li>**多次/整数**:带有数值向上/向下箭头的文本字段</li><li>**日期**:日粒度选择器（日历）</li><li>**日期时间**:日期和时间粒度选择器</li></ul> |
@@ -131,10 +129,6 @@ ht-degree: 6%
 
 [!UICONTROL “无值选] 项”设置类似于“未  指定”或“  未求值”报告。在数据视图UI中，您可以逐个组件决定在报告中如何处理这些值。 您还可以将[!UICONTROL No value]重命名为更适合您的环境的内容，如[!UICONTROL Null]、[!UICONTROL Not set]或其他。
 
->[!NOTE]
->
->将此字段更改为自定义值时，自定义值将被视为合法字符串值。 因此，如果在此字段中输入值“Red”，则数据本身中出现的字符串“Red”的任何实例也将滚动到您指定的同一行项目下。
-
 另请注意，无论您在此字段中指定什么，都可用于报告中[!UICONTROL 无值]行项的特殊UI处理，如[!UICONTROL 无值选项]设置中所述。
 
 ![](assets/no-value-options.png)
@@ -144,7 +138,7 @@ ht-degree: 6%
 | [!UICONTROL 如果显示，请调用“无值]...” | 您可以在此处将&#x200B;**[!UICONTROL 无值]**&#x200B;重命名为其他值。 |
 | [!UICONTROL 默认情况下不显示无值] | 不在报告中显示此值。 |
 | [!UICONTROL 默认情况下显示无值] | 在报告中显示此值。 |
-| [!UICONTROL 将无值视为值] | 例如，如果您将移动设备类型作为维度，则可以将&#x200B;**[!UICONTROL No value]**&#x200B;项重命名为“Desktop”。 |
+| [!UICONTROL 将无值视为值] | 例如，如果您将移动设备类型作为维度，则可以将&#x200B;**[!UICONTROL No value]**&#x200B;项重命名为“Desktop”。 请注意，将此字段更改为自定义值时，自定义值将被视为合法字符串值。 因此，如果在此字段中输入值“Red”，则数据本身中出现的字符串“Red”的任何实例也将滚动到您指定的同一行项目下。 |
 
 ### 配置持久性设置
 
@@ -155,10 +149,12 @@ ht-degree: 6%
 | 设置 | 描述/用例 |
 | --- | --- |
 | [!UICONTROL 设置持久性] | 切换键 |
-| [!UICONTROL 分配] | 允许您指定用于持久性的维的分配模型。 选项有：最近，原始，实例，全部。 如果您希望某个值持续存在（与传统Analytics中的eVar类似），您将在此处设置它。 唯一的关键区别是您可以设置的最大持久性为90天。 此外，[!UICONTROL 不过期]不是选项。 |
+| [!UICONTROL 分配] | 允许您指定用于持久性的维的分配模型。 选项有：[!UICONTROL 最近]、[!UICONTROL Original]、[!UICONTROL Instance]、[!UICONTROL All]。 如果您希望某个值持续存在（与传统Analytics中的eVar类似），您将在此处设置它。 唯一的关键区别是您可以设置的最大持久性为90天。 此外，[!UICONTROL 不过期]不是选项。 |
 | [!UICONTROL 过期] | 用于指定维的持久性窗口。 选项有：[!UICONTROL 会话]（默认）、[!UICONTROL 人员]、[!UICONTROL 时间]、[!UICONTROL 量度]。 您可能需要使购买时的维度过期（例如内部搜索词或其他促销用例）。 [!UICONTROL 量] 度允许您将任何定义的量度指定为此维度的过期时间(例如，  购买量度)。 |
 
 ### 配置值分段设置
+
+例如，在Workspace报告中，一个“介于5和10之间”的时段将显示为行项目“5到10”。
 
 ![](assets/value-bucketing.png)
 
@@ -173,7 +169,7 @@ ht-degree: 6%
 
 除了从模式元素创建量度和维度之外，您还可以在数据视图中使用标准组件。
 
-[!UICONTROL 标准] 组件是不是从数据集模式字段生成，而是系统生成的组件。任何数据视图都需要某些系统组件，以便在Analysis Workspace中实现报告功能，而其他系统组件是可选的。
+[!UICONTROL 标准] 组件是不是从数据集模式字段生成，而是系统生成的组件。在任何数据视图中都需要某些系统组件，以便于在Analysis Workspace中使用报告功能，而其他系统组件是可选的。
 
 ![](assets/standard-components.png)
 
