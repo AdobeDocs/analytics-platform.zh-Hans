@@ -2,9 +2,9 @@
 title: Customer Journey Analytics中数据视图的用例
 description: 在Customer Journey Analytics中展示数据视图的灵活性和强大功能的多种用例
 translation-type: tm+mt
-source-git-commit: b260930c5ffd50a428e5502695e159538ff8cb73
+source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '334'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->此功能当前处于有限测试中。
+>此功能将于2021年4月22日正式推出。
 
 这些用例显示了Customer Journey Analytics中数据视图的灵活性和强大功能。
 
@@ -38,7 +38,12 @@ ht-degree: 1%
 以前，整数在CJA中会自动被视为量度。 现在，数字(包括来自Adobe Analytics的自定义事件)可以视为尺寸。 示例如下：
 
 1. 将[!UICONTROL call_length_min]整数拖动到[!UICONTROL 包含的组件]下的[!UICONTROL Dimension]部分：
+
    ![](assets/integers.png)
 
-1. 您现在可以添加[!UICONTROL 值分段]以按报告以分段方式显示此维。 否则，此维度的每个实例将在Workspace中显示为行项。
+1. 您现在可以添加[!UICONTROL 值分段]以按报告以分段方式显示此维。 (如果没有分段，此维度的每个实例将在Workspace报告中显示为行项。)
+
    ![](assets/bucketing.png)
+
+有关其他视图设置的详细信息，请参阅[创建视图](/help/data-views/create-dataview2.md)。
+有关数据视图的概念概述，请参阅[视图概述](/help/data-views/data-views.md)。
