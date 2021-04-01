@@ -1,10 +1,10 @@
 ---
-title: 什么是Customer Journey Analytics?
+title: 什么是Customer Journey Analytics中的维持？
 description: Dimension持久性是分配和过期的组合。 它们共同决定维值的保留。
 translation-type: tm+mt
-source-git-commit: 09f49cff89d69ae630e917243425967dbf56a9ed
+source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '524'
 ht-degree: 72%
 
 ---
