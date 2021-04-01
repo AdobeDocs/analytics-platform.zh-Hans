@@ -2,9 +2,9 @@
 title: 如何在Customer Journey Analytics中创建新的视图。
 description: 描述创建新数据视图所需的所有设置。
 translation-type: tm+mt
-source-git-commit: 5de8faaf750dacaafe885f0c475f7240126f302f
+source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
 workflow-type: tm+mt
-source-wordcount: '2607'
+source-wordcount: '2599'
 ht-degree: 6%
 
 ---
@@ -144,7 +144,7 @@ ht-degree: 6%
 
 ![](assets/persistence.png)
 
-这些设置类似于传统Adobe Analytics中的eVar设置。
+有关详细信息，请参阅有关[持久性](/help/data-views/persistence.md)的主题。
 
 | 设置 | 描述/用例 |
 | --- | --- |
@@ -215,7 +215,7 @@ ht-degree: 6%
 
 ## 3.为您添加全局过滤器数据视图
 
-您可以添加应用于整个视图的过滤器（以前称为区段），类似于虚拟报表包(传统的Adobe Analytics)中筛选的视图。
+您可以添加适用于整个过滤器视图的。 此过滤器将应用于您在Workspace中运行的任何报表。
 
 1. 单击[!UICONTROL 数据视图]中的[!UICONTROL 设置]选项卡。
 1. 将滤镜从左边栏中的列表拖到[!UICONTROL 添加过滤器]字段。
