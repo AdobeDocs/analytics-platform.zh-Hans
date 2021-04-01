@@ -2,9 +2,9 @@
 title: 什么是Customer Journey Analytics中的视图?
 description: 数据视图指定您希望如何解释CJA连接中的数据元素，如量度、维度、会话等。
 translation-type: tm+mt
-source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
+source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1152'
 ht-degree: 4%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 4%
 >
 >此功能将于2021年4月22日正式推出。
 
-视图位于Customer Journey Analytics(CJA)[连接](/help/connections/create-connection.md)的上方。 连接将组合来自Adobe Experience Platform的一个或多个数据集并将其连接到CJA。 数据视图指定您希望如何解释连接中数据的元素，如量度、维度、会话等。 在Workspace中为报告数据做准备时，定义了视图。
+视图位于Customer Journey Analytics(CJA)[连接](/help/connections/create-connection.md)的上方。 连接将组合来自Adobe Experience Platform的一个或多个数据集并将其连接到CJA。 数据视图指定您希望如何解释连接中数据的元素，如量度、维度、会话等。 在Workspace中为报告数据做准备时，定义了视图。 数据视图具有追溯性和无损性。 换句话说，它们不会永久更改您的基础数据。
 
-如果您之前使用的是传统的Adobe Analytics，则视图类似于虚拟报表包，因为它是数据的“已过滤”视图。
+如果您之前使用的是传统的Adobe Analytics，则数据视图类似于虚拟报表包，因为它可以是数据的“筛选”视图。
 
-您可以为同一连接创建不同的视图，并设置不同的访问超时、归因等设置。您还可以为单个数据集创建多个视图。 例如，您可以有一个视图，其中所有维度均设置为[!UICONTROL 上次触摸]，同时，另一个视图（基于同一数据集）的所有维度均设置为[!UICONTROL 首次触摸]。
+您可以为同一连接创建不同的数据视图，组件集非常不同（维度/量度）。 或者创建具有不同访问超时、归因等设置的数据视图。 例如，您可以有一个视图，其中所有维度均设置为[!UICONTROL 上次触摸]，同时，另一个视图（基于同一数据集）的所有维度均设置为[!UICONTROL 首次触摸]。
 
 Customer Journey Analytics 中的工作区项目均基于数据视图。
 
