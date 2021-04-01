@@ -2,9 +2,9 @@
 title: 如何在Customer Journey Analytics中创建新的视图。
 description: 描述创建新数据视图所需的所有设置。
 translation-type: tm+mt
-source-git-commit: 6d3298731ae387f626aeadc67529482e9455775f
+source-git-commit: 5de8faaf750dacaafe885f0c475f7240126f302f
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2607'
 ht-degree: 6%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 6%
 | [!UICONTROL 描述] | 详细说明不是强制性的，但建议提供。 |
 | [!UICONTROL 时区] | 选择要显示数据的时区。 |
 | [!UICONTROL 标记] | 标记让您可以将数据视图组织成不同的类别。 |
-| [!UICONTROL 容器] | 您可以在此处重命名容器，这就是它们在基于此数据视图的任何Workspace项目中的显示方式。 容器用于过滤器和流失/流，以定义范围或上下文的范围或范围。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
+| [!UICONTROL 容器] | 您可以在此处重命名容器，这就是它们在基于此数据视图的任何Workspace项目中的显示方式。 容器用于过滤器和流失/流等，以定义范围或上下文的范围或范围。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
 | [!UICONTROL 人员容器名称是……] | [!UICONTROL Person] （默认）。[!UICONTROL Person]容器包括指定时间范围内访客的每次访问和页面视图。 您可以将其重命名为“用户”或您喜欢的任何其他术语。 |
 | [!UICONTROL 会话容器名称为……] | [!UICONTROL 会话] （默认）。通过[!UICONTROL 会话]容器，可以识别特定会话的页面交互、活动或转换。 您可以将其重命名为“访问”或您喜欢的任何其他术语。 |
 | [!UICONTROL 事件容器名称为……] | [!UICONTROL 事件] （默认）。[!UICONTROL 事件]容器定义要包括或从筛选器中排除的页面事件。 |
@@ -45,11 +45,12 @@ ht-degree: 6%
 
 ![](assets/components-tab.png)
 
-您可以在左上角看到[!UICONTROL Connection]，它包含数据集，并在下面看到其[!UICONTROL 模式字段]。
+您可以在左上角看到[!UICONTROL Connection]，它包含数据集，并在下面看到其[!UICONTROL 模式字段]。 已存在的组件是标准必需组件（系统生成）。
 
 1. 现在，将模式字段（如[!UICONTROL pageTitle]）从左边栏拖动到“量度”或“Dimension”部分。
 
-   您可以多次将同一模式字段拖入维度或量度部分，并以不同方式配置相同的维度或量度。 例如，从&#x200B;**[!UICONTROL pageTitle]**&#x200B;字段中，可以创建名为“Product Pages”的维度，以及另一个“Error pages”，等等。 从&#x200B;**[!UICONTROL pageTitle]**;字段中，您还可以根据字符串值创建量度。 例如，您可以创建一个或多个具有不同属性设置和不同包含/排除值的&#x200B;**[!UICONTROL Orders]**&#x200B;量度。
+   您可以多次将同一模式字段拖入维度或量度部分，并以不同方式配置相同的维度或量度。
+例如，从**[!UICONTROL pageTitle]**&#x200B;字段中，可以通过重命名右侧的&#x200B;**[!UICONTROL 组件名称]**&#x200B;创建名为“Product Pages”的维度和另一个名为“Error pages”的维度。 从&#x200B;**[!UICONTROL pageTitle]**;字段中，您还可以根据字符串值创建量度。 例如，您可以创建一个或多个具有不同属性设置和不同包含/排除值的&#x200B;**[!UICONTROL Orders]**&#x200B;量度。
 
    ![](assets/components-tab-3.png)
 
@@ -134,10 +135,10 @@ ht-degree: 6%
 
 | 设置 | 描述/用例 |
 | --- | --- |
-| [!UICONTROL 如果显示，请调用“无值]...” | 您可以在此处将&#x200B;**[!UICONTROL 无值]**&#x200B;重命名为其他值。 |
+| [!UICONTROL 如果显示，请调用“无”值……] | 您可以在此处将&#x200B;**[!UICONTROL 无值]**&#x200B;重命名为其他值。 |
 | [!UICONTROL 默认情况下不显示无值] | 不在报告中显示此值。 |
 | [!UICONTROL 默认情况下显示无值] | 在报告中显示此值。 |
-| [!UICONTROL 将无值视为值] | 例如，如果您将移动设备类型作为维度，则可以将&#x200B;**[!UICONTROL No value]**&#x200B;项重命名为“Desktop”。 请注意，将此字段更改为自定义值时，自定义值将被视为合法字符串值。 因此，如果在此字段中输入值“Red”，则数据本身中出现的字符串“Red”的任何实例也将滚动到您指定的同一行项目下。 |
+| [!UICONTROL 将无值视为值] | 此设置将用您在[!UICONTROL 显示时，调用无值……下指定的文本替换数据中的空值]。 例如，如果您将移动设备类型作为维度，则可以将&#x200B;**[!UICONTROL No value]**&#x200B;项重命名为“Desktop”。 请注意，将此字段更改为自定义值时，自定义值将被视为合法字符串值。 因此，如果在此字段中输入值“Red”，则数据本身中出现的字符串“Red”的任何实例也将滚动到您指定的同一行项目下。 |
 
 ### 配置持久性设置
 
