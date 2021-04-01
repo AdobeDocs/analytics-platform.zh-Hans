@@ -2,9 +2,9 @@
 title: 过滤器概述
 description: 了解过滤器的用途以及如何创建简单的过滤器。
 translation-type: tm+mt
-source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
+source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '957'
 ht-degree: 92%
 
 ---
@@ -86,4 +86,4 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 
 | 过滤器名称 | 描述 |
 | --- | --- |
-| 全部 数据 | 这是类似于传统Adobe分析中“所有访问”区段的必需过滤器。 将量度添加到自由格式表的行时，它会动态添加到报告。 |
+| 全部 数据 | 这是一个必需的筛选器，当量度添加到自由格式表的行时，它会动态添加到报告。 |
