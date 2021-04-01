@@ -2,9 +2,9 @@
 title: 什么是Customer Journey Analytics中的视图?
 description: 数据视图指定您希望如何解释CJA连接中的数据元素，如量度、维度、会话等。
 translation-type: tm+mt
-source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
+source-git-commit: 5de8faaf750dacaafe885f0c475f7240126f302f
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1087'
 ht-degree: 4%
 
 ---
@@ -16,9 +16,11 @@ ht-degree: 4%
 >
 >此功能将于2021年4月22日正式推出。
 
-视图位于Customer Journey Analytics(CJA)[连接](/help/connections/create-connection.md)的上方。 连接将组合来自Adobe Experience Platform的一个或多个数据集并将其连接到CJA。 数据视图指定您希望如何解释连接中数据的元素，如量度、维度、会话等。 在Workspace中为报告数据做准备时，定义了视图。 数据视图具有追溯性和无损性。 换句话说，它们不会永久更改您的基础数据。
+视图位于Customer Journey Analytics(CJA)[连接](/help/connections/create-connection.md)的上方。 连接将组合来自Adobe Experience Platform的一个或多个数据集并将其连接到CJA。 数据视图指定您希望如何解释连接中数据的元素，如量度、维度、会话等。 在Workspace中为报告数据做准备时，定义了视图。
 
-如果您之前使用的是传统的Adobe Analytics，则数据视图类似于虚拟报表包，因为它可以是数据的“筛选”视图。
+>[!NOTE]
+>
+>您在数据视图中选择或更改的任何设置都具有追溯性和无损性。 换句话说，它们不会永久更改您的基础数据。
 
 您可以为同一连接创建不同的数据视图，组件集非常不同（维度/量度）。 或者创建具有不同访问超时、归因等设置的数据视图。 例如，您可以有一个视图，其中所有维度均设置为[!UICONTROL 上次触摸]，同时，另一个视图（基于同一数据集）的所有维度均设置为[!UICONTROL 首次触摸]。
 
@@ -28,7 +30,7 @@ Customer Journey Analytics 中的工作区项目均基于数据视图。
 
 数据视图的最新更新为您提供了更多数据视图处理的灵活性。 这些增强功能使您能够&#x200B;**自发地更改数据视图中的模式元素设置，而无需更改Adobe Experience Platform中的模式或重新实施CJA环境**。
 
-* **您可以将组件从量度更改为Dimension，反之亦然**。您可以从字符串字段创建量度，或从数字字段创建维度。 这样，您就不必在XDM模式中为所需的每个量度创建数字字段，从而让您的生活更轻松。 相反，您只需在“数据视图”对话框中自发地创建它。 以下是一些示例：
+* **您可以将组件从量度更改为Dimension，反之亦然**。您可以从字符串字段创建量度，或从数字字段创建维度。 这使您的生活更轻松，因为您不必在XDM模式中为所需的每个量度创建数字字段。 相反，您只需在“数据视图”对话框中自发地创建它。 以下是一些示例：
    * **从单个模式字段创建一个或多个维度**。这是一对多的关系。 例如，您可以从单个模式字段创建一个或多个收入量度和/或一个或多个收入维度。
    * **使用字符串字段作为量度**:在Experience Platform中用模式集填充模式时，您可能不会预先知道需要哪些元素。例如，您可能尚未意识到需要“页面上的错误”量度。 因此，您没有为此效果创建数字模式元素。 现在，通过使用字符串元素作为量度，您可以使用数据视图设置来指定每当字符串包含单词“error”时，都可以将其用作量度。
    * **将数字字段用作维**:例如，如果您要从“收入”维中提取“收入”量度，则“收入”维会将每个值显示为维项（$100、$175、$1,000等）以及每个维项的实例数。 作为量度的收入会像往常一样。
@@ -37,7 +39,7 @@ Customer Journey Analytics 中的工作区项目均基于数据视图。
 
 * **您可以编辑组件的ID**  — 这用于实现跨数据视图兼容性。组件ID是报告 API用来标识特定量度或维度的组件ID。 由于您可以从一个XDM字段任意创建多个量度或维度，因此我们将为您提供定义您自己的组件ID的选项。 因此，您在一个Workspace项目中使用的量度可以跨数据视图（和API）兼容，即使这些量度基于来自不同连接或视图或XDM中不同模式的完全不同的字段。
 
-* **您可以指定将在Analysis Workspace中显示的友好组件名称**。默认情况下，此名称继承自模式显示名称，但您现在可以针对此特定视图覆盖它。 (这也是组件特选在传统Adobe Analytics中的虚拟报表包中的工作方式)。
+* **您可以指定将在Analysis Workspace中显示的友好组件名称**。默认情况下，此名称继承自模式显示名称，但您现在可以针对此特定视图覆盖它。
 
 * **您可以视图有关组件的更多与模式相关的信息** ，例如：它来自哪种数据集类型(事件、用户档案、查找);哪个模式类型（字符串、整数等）它来自：及其模式路径（它所基于的XDM字段）。
 
@@ -58,10 +60,6 @@ Customer Journey Analytics 中的工作区项目均基于数据视图。
 * 在创建数据视图之前，您需要[设置一个或多个与 Experience Platform 数据集的连接](/help/connections/create-connection.md)。
 * 要创建或管理数据视图，您需要Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=zh-Hans#admin-access-permissions)中的[权限集。
 
-## 视图有关组件的信息
-
-单击Workspace中的(i)信息图标，以视图组件所基于的模式字段及其设置（如说明）。
-
 ## 可在Workspace中覆盖的数据视图设置
 
 在Analysis Workspace中，某些数据视图设置可以在项目级别被覆盖，而其他设置则不能。
@@ -70,7 +68,7 @@ Customer Journey Analytics 中的工作区项目均基于数据视图。
 * 量度归因
 * 用户是否在报表中看到“无值”行项目
 
-## 无法在Workspace中覆盖的视图设置
+## 无法在Workspace中覆盖的数据视图设置
 
 * 组件类型
 * 量度格式
