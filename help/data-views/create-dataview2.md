@@ -1,14 +1,14 @@
 ---
 title: 如何在Customer Journey Analytics中创建新的视图。
 description: 描述创建新数据视图所需的所有设置。
+exl-id: 35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
+source-git-commit: 3c5cd2aa571d99b4c04aaf24b86d5e64fc8acec6
 workflow-type: tm+mt
-source-wordcount: '2599'
-ht-degree: 6%
+source-wordcount: '2813'
+ht-degree: 12%
 
 ---
-
 
 # 创建新数据视图
 
@@ -45,7 +45,10 @@ ht-degree: 6%
 
 ![](assets/components-tab.png)
 
-您可以在左上角看到[!UICONTROL Connection]，它包含数据集，并在下面看到其[!UICONTROL 模式字段]。 已存在的组件是标准必需组件（系统生成）。
+您可以在左上角看到[!UICONTROL Connection]，它包含数据集，并在下面看到其[!UICONTROL 模式字段]。 请记住以下事项：
+
+* 已包含的组件是标准必需组件（系统生成）。
+* 默认情况下，我们还应用筛选器&#x200B;**[!UICONTROL 包含数据]**，以便只显示包含数据的模式字段。 如果您正在查找不包含数据的字段，只需删除过滤器。
 
 1. 现在，将模式字段（如[!UICONTROL pageTitle]）从左边栏拖动到“量度”或“Dimension”部分。
 
@@ -173,35 +176,35 @@ ht-degree: 6%
 
 ![](assets/standard-components.png)
 
-所需的标准组件
+默认情况下，所需的标准组件会添加到您的数据视图。
 
 | 组件名称 | Dimension或量度 | 注释 |
 | --- | --- | --- |
-| [!UICONTROL 人员] | 指标 | 传统Analytics中以前称为[!UICONTROL 唯一访客]。 此量度基于在连接中指定的人员ID。 |
-| [!UICONTROL Sessions] | 指标 | 传统Analytics中以前称为[!UICONTROL 访问]。 此量度基于以下指定的会话化设置。 |
-| [!UICONTROL 事件] | 指标 | 在传统Analytics中，以前称为[!UICONTROL Occurrences]。 此量度表示连接中所有事件数据集的行数。 |
-| [!UICONTROL 日] | 维度 |  |
-| [!UICONTROL 周] | 维度 |  |
-| [!UICONTROL 月] | 维度 |  |
-| [!UICONTROL 季度] | 维度 |  |
-| [!UICONTROL 年] | 维度 |  |
-| [!UICONTROL 小时] | 维度 |  |
-| [!UICONTROL 分钟] | 维度 |  |
+| [!UICONTROL 人员] | 指标 | 此量度基于在连接中指定的人员ID。 |
+| [!UICONTROL Sessions] | 指标 | 此量度基于以下指定的会话化设置。 |
+| [!UICONTROL 事件] | 指标 | 此量度表示连接中所有事件数据集的行数。 |
+| [!UICONTROL 日] | 维度 | “天”维度报告给定量度发生的天。 第一个维度项目是日期范围内的第一天，最后一个维度项目是日期范围内的最后一天。 |
+| [!UICONTROL 周] | 维度 | “周”维度报告给定量度出现的周。 第一个维度项目是日期范围内的第一周，最后一个维度项目是日期范围内的最后一周。 |
+| [!UICONTROL 月] | 维度 | 月维度报告给定量度发生的月份。 第一个维度项目是日期范围内的第一个月，最后一个维度项目是日期范围内的最后一个月。 |
+| [!UICONTROL 季度] | 维度 | “季度”维度报告给定量度发生的季度。 第一个维度项目是日期范围内的第一个季度，最后一个维度项目是日期范围内的最后一个季度。 |
+| [!UICONTROL 年] | 维度 | “年”维度报告给定量度发生的年份。 第一个维度项目是日期范围内的第一个年份，最后一个维度项目是日期范围内的最近年份。 |
+| [!UICONTROL 小时] | 维度 | “小时”维度报告给定量度发生的小时数（向下舍入）。 第一个维度项目是日期范围内的第一个小时，最后一个维度项目是日期范围内的最后一个小时。 |
+| [!UICONTROL 分钟] | 维度 | “分钟”维度报告给定量度发生的分钟（向下舍入）。 第一个维度项目是日期范围内的第一分钟，最后一个维度项目是日期范围内的最后一分钟。 |
 
 ### 可选标准组件
 
-在任何数据视图中，都需要某些系统组件来促进Analysis Workspace中的报告功能，而以下组件是可选的。
+可选标准组件位于&#x200B;**[!UICONTROL 标准组件]**&#x200B;选项卡下。
 
 | 组件名称 | Dimension或量度 | 注释 |
 | --- | --- | --- |
-| [!UICONTROL 会话开始] | 指标 | 此量度计算作为会话第一个事件的事件数。 当在筛选器定义中使用时(例如“[!UICONTROL 会话开始]存在”)，它向下过滤器到每个会话的第一个事件。 请注意，这与[!UICONTROL Entries]不同，因为它始终计算会话的第一个事件，而不是会话中某个维度存在的第一个值。 |
-| [!UICONTROL 会话结束] | 指标 | 此量度计算作为会话最后事件的事件数。 与[!UICONTROL 会话开始]类似，它还可用于过滤器定义中，以将事项筛选到每个会话的最后一个事件。 请注意，这与[!UICONTROL 退出]不同，因为它始终计算会话的最后事件，而不是会话中某个维度存在的最后一个值。 |
-| [!UICONTROL 逗留时间] | 指标 | [!UICONTROL 逗留时间]量度的工作方式与传统Adobe Analytics中类似 — 将维度的两个不同值之间的时间相加。 但是，使用“会话开始”和“会话结束”量度，客户可以自行构建[!UICONTROL 每人逗留时间]和[!UICONTROL 每会话逗留时间]计算量度(请参阅下面的OOTB过滤器和计算量度)。 |
-| [!UICONTROL 每个事件逗留时间] | 维度 | 从功能上讲，这实际上只是上述量度的一次运算。 我们提供默认存储段，但允许您将存储段更改为您喜欢的任何内容。 |
-| [!UICONTROL 每个会话逗留时间] | 维度 |  |
-| [!UICONTROL 每人逗留时间] | 维度 |  |
-| [!UICONTROL 批ID] | 维度 |  |
-| [!UICONTROL 数据集 ID] | 维度 |  |
+| [!UICONTROL 会话开始] | 指标 | 此量度计算作为会话第一个事件的事件数。 当在筛选器定义中使用时(例如“[!UICONTROL 会话开始]存在”)，它向下过滤器到每个会话的第一个事件。 |
+| [!UICONTROL 会话结束] | 指标 | 此量度计算作为会话最后事件的事件数。 与[!UICONTROL 会话开始]类似，它还可用于过滤器定义中，以将事项筛选到每个会话的最后一个事件。 |
+| [!UICONTROL 逗留时间] | 指标 | [!UICONTROL 逗留时间]量度将一个维度的两个不同值之间的时间相加。 |
+| [!UICONTROL 每个事件逗留时间] | 维度 | [!UICONTROL Time Spent Per Event] 将Time Spentmetric存 [!UICONTROL 储] 到Event  存储段。 |
+| [!UICONTROL 每个会话逗留时间] | 维度 | [!UICONTROL Time Spent Per Session] 将Time Spentmetric [!UICONTROL 分] 段放入Session  buckets。 |
+| [!UICONTROL 每人逗留时间] | 维度 | [!UICONTROL Time Spent Per Per Personcupes] 将Time Spentmetric [!UICONTROL 放] 入Personbuckets  中。 |
+| [!UICONTROL 批ID] | 维度 | 表示[!UICONTROL 事件]为其一部分的Experience Platform批。 |
+| [!UICONTROL 数据集 ID] | 维度 | 表示[!UICONTROL 事件]为其一部分的Experience Platform数据集。 |
 
 ### 筛选模式字段和维度/量度
 
@@ -209,9 +212,10 @@ ht-degree: 6%
 
 ![](assets/filter-fields.png)
 
-您还可以按数据集以及模式字段是否包含数据或是否是标识进行筛选：
+您还可以按数据集以及模式字段是否包含数据或是否是标识进行筛选。 默认情况下，我们将&#x200B;**[!UICONTROL 包含数据]**&#x200B;过滤器应用于所有数据视图。
 
 ![](assets/filter-other.png)
+
 
 ## 3.为您添加全局过滤器数据视图
 
