@@ -1,14 +1,14 @@
 ---
 title: 什么是Customer Journey Analytics中的视图?
 description: 数据视图指定您希望如何解释CJA连接中的数据元素，如量度、维度、会话等。
+exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 translation-type: tm+mt
-source-git-commit: 5de8faaf750dacaafe885f0c475f7240126f302f
+source-git-commit: 3c5cd2aa571d99b4c04aaf24b86d5e64fc8acec6
 workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 4%
 
 ---
-
 
 # 什么是数据视图?
 
