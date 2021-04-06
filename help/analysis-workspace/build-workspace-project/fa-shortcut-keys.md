@@ -1,17 +1,17 @@
 ---
 description: 在 Analysis Workspace 中，可使用键盘交互、快捷键以及点击行为。
 keywords: Analysis Workspace
-title: 热键（快捷键）
+title: 热键（快捷方式）
+exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 translation-type: tm+mt
-source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 98%
+source-wordcount: '288'
+ht-degree: 100%
 
 ---
 
-
-# 热键（快捷键）
+# 热键（快捷方式）
 
 Analysis Workspace 中提供了热键（键盘快捷键），以实现无缝导航、分析和大众化。
 
@@ -39,7 +39,7 @@ Analysis Workspace 中提供了热键（键盘快捷键），以实现无缝导�
 | 创建警报 | Ctrl（或 Command）+ Shift + a |
 | 创建计算量度 | Ctrl（或 Command）+ Shift + c |
 | 创建日期范围 | Ctrl（或 Command）+ Shift + d |
-| 创建区段 | Ctrl（或 Command）+ Shift + e |
+| 创建过滤器 | Ctrl（或 Command）+ Shift + e |
 | 全部清除 | Alt + w |
 | 复制 | Ctrl（或 Command）+ c |
 | 重做 | Ctrl（或 Command）+ Shift + z |
@@ -52,13 +52,10 @@ Analysis Workspace 中提供了热键（键盘快捷键），以实现无缝导�
 
 | 操作 | 快捷键 |
 |---|---|
-| 新建 Analytics for Target 面板 | Alt + g |
 | 新建归因面板 | Alt + e |
 | 新建空白面板 | Alt + b |
 | 新建自由格式面板 | Alt + a |
-| 新增的“媒体并发查看者”面板 | Alt + h |
 | 新建快速分析面板 | Alt + f |
-| 新建区段比较面板 | Alt + c |
 | 新建自由格式表 | Alt + 1 |
 | 新建折线图 | Alt + 2 |
 | 新建条形图 | Alt + 3 |
