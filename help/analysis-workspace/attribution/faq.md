@@ -1,14 +1,14 @@
 ---
 title: 归因常见问题解答
 description: 获取有关归因的常见问题解答。
+exl-id: 3153d8c9-4ca8-4189-8a2f-511a87e8ac17
 translation-type: tm+mt
-source-git-commit: e4bef70f72019bdceb09938dffe2fd266ff4248d
+source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 93%
+source-wordcount: '307'
+ht-degree: 88%
 
 ---
-
 
 # 归因常见问题解答
 
@@ -26,7 +26,7 @@ ht-degree: 93%
 
 **何时应使用访问归因回顾？何时应使用访客归因回顾？**
 
-归因回顾的选择取决于您的用例。如果转化通常比单次访问花费的时间长，则建议使用访客回顾。此外，还有一种可行的解决方案是，使用较长的访问定义来创建虚拟报表包。
+归因回顾的选择取决于您的用例。如果转化通常比单次访问花费的时间长，则建议使用访客回顾。创建具有较长访问定义的数据视图也是一个潜在的解决方案。
 
 **使用归因时，如何进行 prop 和 eVar 比较？**
 
