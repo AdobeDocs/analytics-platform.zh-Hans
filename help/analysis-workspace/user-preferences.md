@@ -1,14 +1,14 @@
 ---
 title: 如何在 Analysis Workspace 中设置用户首选项
 description: 可设置用户的常规和项目首选项。
-translation-type: ht
-source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
-workflow-type: ht
-source-wordcount: '216'
+exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
+translation-type: tm+mt
+source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+workflow-type: tm+mt
+source-wordcount: '197'
 ht-degree: 100%
 
 ---
-
 
 # 用户首选项
 
@@ -39,7 +39,6 @@ ht-degree: 100%
 |  | [视图密度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density.html?lang=zh-Hans) | <ul><li>紧凑</li><li>舒适</li><li>已展开（默认）</li></ul> |
 |  | [调色板](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/color-palettes.html?lang=zh-Hans) | <ul><li>Adobe 提供的调色板（默认）</li><li>自定义调色板</li></ul> |
 | **数据** |  |  |
-|  | [报表包](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=zh-Hans?#report-suite) | <ul><li>最近（默认）</li><li>特定 - 从列表中选择</li></ul> |
 |  | [日历](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=zh-Hans?#calendar) | 现成日期范围的列表，包括&#x200B;**[!UICONTROL “本月”]**（默认） |
 |  | [面板类型](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=zh-Hans) | <ul><li>自由格式（默认）</li><li>空白</li><li>快速见解</li></ul> |
 |  | 数字格式 | <ul><li>1,000.00（默认）</li><li>1.000,00</li><li>1 000,00</li></ul> |
