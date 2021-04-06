@@ -1,14 +1,14 @@
 ---
 title: 计算量度概述
-description: '了解 '
+description: 了解
+exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
 translation-type: tm+mt
-source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 82%
+source-wordcount: '484'
+ht-degree: 81%
 
 ---
-
 
 # 计算量度概述
 
@@ -16,12 +16,11 @@ ht-degree: 82%
 >
 >您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
-计算量度和高级计算（或派生）量度是指您可以从现有量度创建的自定义量度。我们的计算量度工具提供了一种高度灵活的方式，可用于生成、管理和组织量度。通过使用这些工具，营销人员、产品经理和分析人员不必更改 [!DNL Analytics] 实施，即可提出有关数据的问题。
+计算量度和高级计算（或派生）量度是指您可以从现有量度创建的自定义量度。我们的计算量度工具提供了一种高度灵活的方式，可用于生成、管理和组织量度。通过使用这些工具，营销人员、产品经理和分析人员不必更改  实施，即可提出有关数据的问题。
 
 您可以
 
-* 创建在报表运行时过滤的量度，而[不必更改实施](https://youtu.be/CuQTm9RaUpY)。这些量度可以在历史记录中查看，因为它们是基于过滤器的。
-* 在报表包之间共享指标。这表示所有新创建的指标都适用于同一登录公司中的所有报表包。
+* 创建在报表运行时过滤的量度，而不必更改实施。这些量度可以在历史记录中查看，因为它们是基于过滤器的。
 * （仅限高级计算量度）根据量度进行过滤。例如，您可以为“新访客”创建一个指标，其中包含首次进行会话的人员计数。
 * （仅限高级计算指标）包含统计函数，以帮助您更好地描述数据。例如，您可以对报表中的项目数量进行计数，或为每个项目加入标准偏差数。
 
