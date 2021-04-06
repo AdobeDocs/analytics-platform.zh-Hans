@@ -3,10 +3,10 @@ description: 了解 Analysis Workspace 的“撤消”和“重做”选项。
 title: “撤消”和“重做”设置
 uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 100%
+source-wordcount: '285'
+ht-degree: 92%
 
 ---
 
@@ -33,7 +33,6 @@ ht-degree: 100%
 * 全部清除
 * 时间段
 * 贡献分析
-* 区段比较
 * 项目名称
 * 添加/删除可视化
 * 折叠/展开面板或可视化
@@ -45,7 +44,7 @@ ht-degree: 100%
 * 自由格式右键单击选项
 * 选区
 * 可视化图例选区
-* 将区段添加到面板
+* 向面板添加滤镜
 * 图表上的可视化设置
 * 编辑图例标签
 * 魔术可视化
@@ -63,9 +62,9 @@ ht-degree: 100%
 
 * 项目信息与设置更改（添加标签、描述更改、计数重复实例设置）
 * 设置为登录页面
-* 新增（区段/量度/日期范围/警报）
+* 添加新（过滤器/量度/日期范围/警报）
 * 共享项目、获取项目链接、发送文件（立即或按计划）
-* 在流量可视化中为此路径创建区段
+* 在流可视化中为此路径创建过滤器
 * 创建计算量度
 * 创建日期范围
 
