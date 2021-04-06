@@ -1,14 +1,14 @@
 ---
 title: 导入呼叫中心数据和网站数据
 description: 了解如何创建数据集以关联呼叫中心数据和网站数据。
-translation-type: ht
-source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
-workflow-type: ht
+exl-id: 48546227-029c-4cf9-9b7e-66d547769270
+translation-type: tm+mt
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 100%
 
 ---
-
 
 # 导入呼叫中心数据和网站数据
 
@@ -112,7 +112,6 @@ Create a bunch of filters - facets to their business. Filters were used because 
 
 wanted to understand when someone interacts with a facet, whats the highest percentage of people that abandon that channel to call them. not from volume perspective, but percentage perspective.
 
-use sequential segmentation, but you lose the ability to use attribution IQ
+use sequential filters, but you lose the ability to use attribution IQ
 
 ## What to do when you've found insight -->
-
