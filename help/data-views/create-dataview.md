@@ -3,10 +3,10 @@ title: 创建数据视图
 description: 介绍如何在 Customer Journey Analytics (CJA) 中创建 Platform 数据集的视图。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 97%
+source-wordcount: '553'
+ht-degree: 94%
 
 ---
 
@@ -35,9 +35,9 @@ Customer Journey Analytics 中的工作区项目均基于数据视图。
    | 描述 | 不强制要求提供详细描述，但建议提供。 |
    | 添加标记 | 标记让您可以将数据视图组织成不同的类别。 |
    | 时区 | 选择数据视图的时区。 |
-   | 会话超时 | 选择“会话”的定义。会话超时设置定义独特访客在新会话自动开始之前必须处于非活动状态的时间。默认为 30 分钟。例如，如果将会话超时设置为 45 分钟，则会以 45 分钟的非活动状态进行分隔，为每个收集的点击序列创建一个新会话组。<!--This setting impacts not only your visit counts, but also how visit segment containers are evaluated, and the visit expiration logic for any eVars expiring on visit. Decreasing the session timeout will likely increase the total number of visits in your reporting, while increasing the visit timeout will likely decrease the total number of visits in your reporting. This needs to be reviewed.--> |
-   | 通过事件开始新会话 | 无论会话是否超时，均会在事件被触发时启动新会话。新创建的会话包含启动该会话的事件。此外，您可以使用多个事件启动会话，如果在数据中观察到这些事件中的任何一个，便会触发新会话。此设置将影响您的访问计数、会话（以前的“访问”）区段容器，以及维度上的访问过期逻辑。 |
-   | 添加过滤器 | “过滤器”是 Customer Journey Analytics 中的“区段”术语。如果要过滤数据，请将相应的过滤器从左边栏拖动到此处。如果不选择过滤器，数据视图将包含您的所有数据。 |
+   | 会话超时 | 选择“会话”的定义。会话超时设置定义独特访客在新会话自动开始之前必须处于非活动状态的时间。默认为 30 分钟。例如，如果将会话超时设置为 45 分钟，则会以 45 分钟的非活动状态进行分隔，为每个收集的点击序列创建一个新会话组。<!--This setting impacts not only your visit counts, but also how visit filter containers are evaluated, and the visit expiration logic for any eVars expiring on visit. Decreasing the session timeout will likely increase the total number of visits in your reporting, while increasing the visit timeout will likely decrease the total number of visits in your reporting. This needs to be reviewed.--> |
+   | 通过事件开始新会话 | 无论会话是否超时，均会在事件被触发时启动新会话。新创建的会话包含启动该会话的事件。此外，您可以使用多个事件启动会话，如果在数据中观察到这些事件中的任何一个，便会触发新会话。此设置将影响您的访问计数、会话（以前称为访问）过滤器容器以及维度的访问到期逻辑。 |
+   | 添加过滤器 | 如果要过滤数据，请将相应的过滤器从左边栏拖动到此处。如果不选择过滤器，数据视图将包含您的所有数据。 |
 
 1. 单击&#x200B;**[!UICONTROL 继续]**。
 
