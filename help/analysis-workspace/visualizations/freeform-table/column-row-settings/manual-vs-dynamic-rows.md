@@ -1,14 +1,14 @@
 ---
 title: 自由格式表中的动态维度项目与静态维度项目
 description: 如何与表中的动态维度项目和静态维度项目交互。
-translation-type: ht
-source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
-workflow-type: ht
+exl-id: 7806f535-15c7-40f4-955a-724d9752969d
+translation-type: tm+mt
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
-
 
 # 自由格式表中的动态维度项目与静态维度项目
 
@@ -34,7 +34,7 @@ ht-degree: 100%
 
 静态维度项目不会随时间而改变；它们是自由格式表中始终返回的固定组件。如果您希望始终分析同一项目（无论是特定促销活动还是一周中的特定日期），可首选使用静态维度项目。
 
-每当您手动选择特定组件值（维度、量度、区段、日期范围）并将其拖放到表中后，就会生成行或列的静态列表。此外，如果您选择执行以下操作，也可以创建静态维度项目：
+每当您手动选择特定组件值（维度、量度、筛选器、日期范围）并将其拖放到表中时，结果就是行或列的静态列表。 此外，如果您选择执行以下操作，也可以创建静态维度项目：
 
 * 在行中，右键单击并选择[!UICONTROL 只显示选定的行]
 * 在列中，右键单击并选择[!UICONTROL 将项目设为静态项目]
@@ -57,4 +57,3 @@ ht-degree: 100%
 
 * 动态行是服务器端总和，并且去除了重复量度，例如访问次数和访客
 * 静态行是客户端总和，并且&#x200B;**不会**&#x200B;去除重复量度。要计算服务器端总计行，请将“行”设置更改为&#x200B;**显示总计**。[了解更多](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)
-
