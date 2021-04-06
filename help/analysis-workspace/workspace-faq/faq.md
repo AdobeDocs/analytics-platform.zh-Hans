@@ -3,10 +3,10 @@ description: 工作区常见问题解答和疑难解答提示。
 title: 常见问题解答
 exl-id: d7233b26-9887-4b71-ad46-3c6ffe27d904
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 84%
+ht-degree: 78%
 
 ---
 
@@ -34,6 +34,6 @@ ht-degree: 84%
 
 如果您成功创建了工作区报表，但报表中没有数据，则可以检查以下几项内容：
 
-* 如果在报表中应用了区段，区段标准可能与所有数据不匹配。请尝试移除区段或调整区段定义。
+* 如果您在报表中应用了过滤器，则过滤器标准可能与任何数据都不匹配。 尝试删除滤镜或调整滤镜定义。
 * 检查右上角的日期范围，并确保它已设置为预期的值。
 * 导航到您的网站，然后使用[调试器](https://docs.adobe.com/content/help/zh_CN/debugger/using/experience-cloud-debugger.html)验证正在收集的数据。
