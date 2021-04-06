@@ -1,14 +1,14 @@
 ---
 title: Customer Journey Analytics 概述
 description: 了解如何通过 Customer Journey Analytics 来使用 Analysis Workspace 处理来自 Experience Platform 的数据。
+exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 translation-type: tm+mt
-source-git-commit: 0f5e9c117f12ef070733df032b078ad70ce7c52b
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 97%
+source-wordcount: '1217'
+ht-degree: 95%
 
 ---
-
 
 # Customer Journey Analytics 概述
 
@@ -19,7 +19,7 @@ Customer Journey Analytics 是一项 Analytics 功能，让您可以运用 Analy
 Customer Journey Analytics 通过提供易于使用的跨渠道分析功能和消除 Adobe Analytics 先前版本中的限制，扩展了 Analytics 的适用范围。一些显着改进的功能包括：
 
 * **无限量的变量和事件**：eVar、prop 和事件的概念已不复存在。数据主要侧重于维度和量度。数据集可以拥有无限量的唯一维度和量度。
-* **无限量的唯一值**：Adobe Experience Platform 不受任何唯一限制的约束，例如传统报表包中 500k 的唯一值限制。
+* **无限制的唯一值**:Adobe Experience Platform不受任何独特限制的限制。
 * **更改历史数据**：使用 Adobe Experience Platform，可以删除或更正数据。
 * **跨报表包数据**：可以在 Platform 中组合来自多个数据集的现有实施。
 
@@ -74,7 +74,7 @@ Customer Journey Analytics 中的非产品管理员（用户）无法查看数�
 与传统的 Adobe Analytics 相比，为了符合行业标准，CJA 中的一些功能已重新命名。一些更新的术语包括：
 
 * “区段”现在称为“过滤器”。
-* “虚拟报表包”现在称为“视图”。
+* 虚拟报表包现在称为“数据视图”。
 * “分类”现在称为“查找数据集”。
 * “客户属性”现在称为“用户档案数据集”。
 * “点击”容器现在称为“事件”容器。
