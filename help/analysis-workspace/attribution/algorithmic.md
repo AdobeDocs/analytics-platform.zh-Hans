@@ -1,14 +1,14 @@
 ---
 title: 算法归因
 description: 有关算法归因模型的详细信息。
+exl-id: ce174253-4864-4fb0-8a96-a134a9fc9fba
 translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 95%
+ht-degree: 82%
 
 ---
-
 
 # 算法归因
 
@@ -20,7 +20,7 @@ ht-degree: 95%
 >
 >**[!UICONTROL 算法]** 属性目前处于有限测试中。有关详细信息，请参阅[Adobe Analytics功能版本](https://docs.adobe.com/content/help/zh-Hans/analytics/landing/an-releases.html)。
 
-Analysis Workspace 中的算法[归因模型](models.md)与其他模型有所不同，因为该模型会使用统计技术为报表或自由格式表中的各维度项目分配点数。与 Analysis Workspace 中的所有其他归因模型一样，该模型也可以用于任何维度或量度，支持无限分段和划分，并为表中的维度分配 100% 的转化率（因而也称为“分数”归因）。
+Analysis Workspace 中的算法[归因模型](models.md)与其他模型有所不同，因为该模型会使用统计技术为报表或自由格式表中的各维度项目分配点数。与Analysis Workspace中的所有其他归因模型一样，它可用于任何维度或量度，并支持无限过滤器和划分，并将100%的转换分发到表中的维（也称为“分数”归因）。
 
 归因算法基于合作博弈理论中的 Harsanyi Dividend 算法。Harsanyi Dividend 算法是对“沙普利值”解决方案（以诺贝尔经济学奖获得者罗伊德·沙普利 (Lloyd Shapley) 命名）的推广形式，用于为对结果具有不同贡献的各参与者分配功能值（点数）。
 
