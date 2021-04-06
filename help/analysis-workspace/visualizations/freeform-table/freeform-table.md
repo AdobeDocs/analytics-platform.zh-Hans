@@ -1,14 +1,14 @@
 ---
 title: 自由格式表
 description: 自由格式表是在 Analysis Workspace 中进行数据分析的基础
+exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 translation-type: tm+mt
-source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '531'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
-
 
 # 自由格式表
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 ## 自由格式表生成器
 
-如果您希望先向表中添加多个组件，然后再渲染数据，则可以启用自由格式表生成器。启用该生成器后，您可以通过拖放多个维度、划分、量度和区段来构建可解答更复杂业务问题的表格。数据不会即时更新，单击&#x200B;**[!UICONTROL 构建]**&#x200B;后，数据将会更新。
+如果您希望先向表中添加多个组件，然后再渲染数据，则可以启用自由格式表生成器。启用Builder后，您可以拖放许多维度、划分、量度和过滤器，以构建可回答更复杂问题的表。 数据不会即时更新，单击&#x200B;**[!UICONTROL 构建]**&#x200B;后，数据将会更新。
 
 ![](assets/table-builder.png)
 
@@ -39,7 +39,7 @@ ht-degree: 100%
    * 可以[过滤](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.html)行，以显示缩减的项目集。在[行设置](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.html)下，提供了其他设置。
 
 * **列**
-   * 可以将组件堆放在列中，以创建分段量度、跨标签分析等。
+   * 可以将组件堆放在列中，以创建筛选的量度、跨标签分析等。
    * 可以在[列设置](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/build-workspace-project/column-row-settings/column-settings.html)下调整每列的视图。
    * 可通过[右键单击菜单](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/using-the-right-click-menu.html)执行多个操作。根据您单击表标题、行或列的情况，菜单可提供不同的操作。
 
