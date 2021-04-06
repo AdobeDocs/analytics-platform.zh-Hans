@@ -3,9 +3,9 @@ title: 归因常见问题解答
 description: 获取有关归因的常见问题解答。
 exl-id: 3153d8c9-4ca8-4189-8a2f-511a87e8ac17
 translation-type: tm+mt
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '308'
 ht-degree: 88%
 
 ---
@@ -53,4 +53,4 @@ ht-degree: 88%
 
 **归因如何与过滤器协作？**
 
-归因始终在过滤器之前运行，分段在应用任何其他报表过滤器之前运行。
+归因始终在过滤器之前运行，全局过滤器在应用任何其他报表过滤器之前运行。
