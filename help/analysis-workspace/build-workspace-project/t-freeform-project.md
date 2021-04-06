@@ -1,12 +1,12 @@
 ---
-description: 创建一个项目并将组件（维度、量度、区段、日期范围）添加到自由格式面板。
+description: 创建项目，并将组件(维度、量度、过滤器、日期范围)添加到自由格式面板。
 keywords: Analysis Workspace
 title: 创建工作区项目
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 95%
+source-wordcount: '668'
+ht-degree: 86%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 95%
  <tbody> 
   <tr> 
    <td colname="col1"><a href="/help/analyze/analysis-workspace/components/analysis-workspace-components.md"  > 组件</a> </td> 
-   <td colname="col2"> <p>可拖入项目中的维度、量度、区段和日期范围。 </p> </td> 
+   <td colname="col2"> <p>Dimension、量度、过滤器和日期范围，您可以将其拖动到项目中。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md"  > 可视化图表</a> </td> 
@@ -90,7 +90,7 @@ ht-degree: 95%
 
    **组件**
 
-   “组件”工具栏显示了您最常使用的一些可搜索的维度、量度、区段以及日期范围。
+   组件工具栏显示您最常使用的可搜索维度、量度、过滤器和日期范围。
 
 <table id="table_4626163E26DE46CB86391868BBA3AD32"> 
  <thead> 
@@ -109,8 +109,8 @@ ht-degree: 95%
    <td colname="col2"> <p>应用于项目级别。 </p> <p><img  src="assets/metrics.png" id="image_7C874C72992E414CBEE6B90CEF7B9F3C" /> </p> <p> <span class="term">发生次数</span>是数据表默认的量度。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 区段（蓝色） </td> 
-   <td colname="col2"> <p>只能在面板级别进行拖动，不过，您可以在数据表中创建内联区段。 </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>有关更多信息，请参阅<a href="/help/analyze/analysis-workspace/components/t-freeform-project-segment.md"  >区段</a>。 </p> </td> 
+   <td colname="col1"> 过滤器（蓝色） </td> 
+   <td colname="col2"> <p>仅在面板级别可拖动，但您可以在数据表中创建内联过滤器。 </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>有关详细信息，请参阅<a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  >过滤器</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 日期范围和粒度（紫色） </td> 
@@ -187,10 +187,6 @@ ht-degree: 95%
   </tr> 
   <tr> 
    <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > 根据选定的内容创建过滤器</a> </td> 
-   <td colname="col2"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><a href="/help/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md"  > 在区段比较中运行</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
