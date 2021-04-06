@@ -2,14 +2,14 @@
 description: 行设置因您拖入到表格中的组件而异。
 title: 行设置
 uuid: f30c31d5-1fd4-4b93-94c3-ca441099fe2e
-translation-type: ht
-source-git-commit: 8b814137a7c5e2ca96091addb5b4430e2da65329
-workflow-type: ht
+exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
+translation-type: tm+mt
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+workflow-type: tm+mt
 source-wordcount: '425'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
-
 
 # 行设置
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >
 >您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
-行设置因您拖入到表格中的组件而异。要访问表格行设置，请单击每个行内的维度、区段、量度、时间段或划分旁边的“设置”图标：
+行设置因您拖入到表格中的组件而异。要访问表行设置，请单击其中每个维度、过滤器、量度、时段或划分旁边的设置图标：
 
 ![](assets/row-settings.png)
 
