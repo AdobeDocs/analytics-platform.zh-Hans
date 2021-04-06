@@ -4,10 +4,10 @@ title: Analysis Workspace 概述
 description: Analysis Workspace 功能概览
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '470'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -47,7 +47,7 @@ Analysis Workspace 是一款通过浏览器即可使用的灵活工具，可让�
 
 ### 组件
 
-**“组件”**&#x200B;包含维度、量度、区段或日期范围，所有这些组件都可以合并到一个&#x200B;**[!UICONTROL 自由格式表]**&#x200B;中，以便开始回答您的业务问题。请务必先熟悉每个[组件类型](/help/components/overview.md)，然后再开始投入分析。掌握组件术语后，即可开始拖放至&#x200B;**[!UICONTROL 自由格式表]**&#x200B;以[构建分析](/help/analysis-workspace/build-workspace-project/freeform-overview.md)。
+**组** 件是维度、量度、过滤器或日期范围，所有这些都可以组合到自由格式 **[!UICONTROL 表]** 中，以开始回答您的业务问题。请务必先熟悉每个[组件类型](/help/components/overview.md)，然后再开始投入分析。掌握组件术语后，即可开始拖放至&#x200B;**[!UICONTROL 自由格式表]**&#x200B;以[构建分析](/help/analysis-workspace/build-workspace-project/freeform-overview.md)。
 
 ![](assets/build-components.png)
 
