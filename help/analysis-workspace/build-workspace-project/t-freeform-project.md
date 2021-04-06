@@ -3,17 +3,17 @@ description: 创建一个项目并将组件（维度、量度、区段、日期�
 keywords: Analysis Workspace
 title: 创建工作区项目
 translation-type: tm+mt
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 100%
+source-wordcount: '672'
+ht-degree: 95%
 
 ---
 
 
 # 创建工作区项目
 
-创建一个项目并将组件（维度、量度、区段、日期范围）添加到自由格式面板。
+创建项目，并将组件(维度、量度、过滤器、日期范围)添加到自由格式面板。
 
 在本篇文章中，您可以熟悉 Analysis Workspace 的界面元素，并了解如何创建项目。
 
@@ -36,8 +36,7 @@ ht-degree: 100%
    您可以选择从以下项创建项目：
 
 * 空白项目（默认）。有关说明，请参阅下文。
-* 标准模板。这些模板由 Adobe 创建并且即装即用。有关说明，请参阅[模板](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md)。
-* 自定义模板。这些模板由具有管理员权限的用户创建。有关说明，请参阅[模板](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md)。
+* 自定义模板。这些模板由具有管理员权限的用户创建。
 
    ![](assets/start_modal.png)
 
@@ -49,10 +48,6 @@ ht-degree: 100%
    屏幕上会显示空白项目，其中包括一个自由格式面板和一个数据表可视化图表。
 
    ![](assets/fa_project_new.png)
-
-   >[!NOTE]
-   >
-   >有时候，在加载项目（或切换到报表包）时，如果该项目中的所有组件（量度/维度）并非全部包含在报表包中，将会显示“不兼容的报表包”消息。您可以看到不兼容的组件列表，这样便可以了解为什么会收到该消息。
 
 <table id="table_3989E45D9D4241CBB2E58B29DA257B2F"> 
  <thead> 
@@ -89,7 +84,7 @@ ht-degree: 100%
    >
    >如今，当您执行“保存”或“另存为”操作后，内部链接都是一些相对于其所在项目的链接，并非相对于以往进行复制的原始项目。
 
-## 添加组件和可视化图表 {#task_CDAC9B3007BE4A3790AFAD3746D669B1}
+## 添加组件和可视化{#task_CDAC9B3007BE4A3790AFAD3746D669B1}
 
 1. 通过将 *`components`* 和 *`visualizations`* 拖动到项目来构建项目。
 
@@ -134,7 +129,7 @@ ht-degree: 100%
 
 1. 步骤
 
-## 使用右键单击菜单自定义您的数据 {#concept_8117C300F21843B99F4E1B9AB7B11B6F}
+## 使用右键单击菜单自定义数据{#concept_8117C300F21843B99F4E1B9AB7B11B6F}
 
 右键单击菜单允许您执行以下操作，具体操作取决于您在表格中右键单击的单元格。
 
@@ -173,7 +168,7 @@ ht-degree: 100%
     <ul id="ul_18C83B8514AD4C1C86C071AA8402CB5C"> 
      <li id="li_6CA84ED293EA4940A7495DA9D9121264">维度 </li> 
      <li id="li_EA16EE017B2E4A6998918706938A21BF">指标 </li> 
-     <li id="li_0405D339CD01405DB508A7D8D1A976B4">区段 </li> 
+     <li id="li_0405D339CD01405DB508A7D8D1A976B4">过滤器 </li> 
      <li id="li_819CE81C552F49BB9C1B83ED3B42C5F7">时间 </li> 
     </ul> </td> 
    <td colname="col2"> </td> 
@@ -191,7 +186,7 @@ ht-degree: 100%
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > 从选定范围中创建区段</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > 根据选定的内容创建过滤器</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
