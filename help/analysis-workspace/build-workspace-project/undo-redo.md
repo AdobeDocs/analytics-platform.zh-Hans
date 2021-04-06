@@ -2,10 +2,10 @@
 description: 了解 Analysis Workspace 的“撤消”和“重做”选项。
 title: “撤消”和“重做”设置
 uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
-translation-type: ht
-source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
-workflow-type: ht
-source-wordcount: '298'
+translation-type: tm+mt
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+workflow-type: tm+mt
+source-wordcount: '287'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,6 @@ ht-degree: 100%
 
 * **[!UICONTROL 新建项目]**&#x200B;或&#x200B;**[!UICONTROL 打开现有项目]**&#x200B;会清除&#x200B;**[!UICONTROL 撤消]**&#x200B;堆叠
 
-* 您可以对更改报表包的操作执行撤消/恢复。
 * 项目名称旁边会显示撤消/恢复消息，表示正在进行撤消/恢复。
 * 您可以使用以下[热键](/help/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)：
 
@@ -36,7 +35,6 @@ ht-degree: 100%
 * 贡献分析
 * 区段比较
 * 项目名称
-* 报表包选择
 * 添加/删除可视化
 * 折叠/展开面板或可视化
 * 使用热键（CTRL(CMD)+Z 表示撤消）、（CTRL(CMD)+SHIFT+Z 表示重做）插入
