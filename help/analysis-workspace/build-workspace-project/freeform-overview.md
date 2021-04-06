@@ -5,7 +5,7 @@ title: 项目概述
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 translation-type: tm+mt
-source-git-commit: 18a76c92e37cf515dd02ebcebcc8d5e9d70a3ec0
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 90%
@@ -80,7 +80,7 @@ Workspace 项目列表页面包含了以下信息：
 
 还可从[空面板](/help/analysis-workspace/c-panels/blank-panel.md)访问可视化和面板。
 
-左边栏中的组件(Dimension、量度、区段、日期范围)与活动面板数据视图相关。 活动面板周围将有一个蓝色边框，活动数据视图将列在组件边栏的顶部。
+左边栏中的组件(Dimension、量度、过滤器、日期范围)与活动面板数据视图相关。 活动面板周围将有一个蓝色边框，活动数据视图将列在组件边栏的顶部。
 
 ![](assets/left-rail.png)
 
