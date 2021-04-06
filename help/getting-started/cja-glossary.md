@@ -1,14 +1,14 @@
 ---
 title: Customer Journey Analytics 术语表
 description: Customer Journey Analytics 术语表。
+exl-id: 7f8aac93-0103-4ead-b25b-3d9994a271af
 translation-type: tm+mt
-source-git-commit: 307bfae11f44d088aa8d004f1f7ddd17375f60fc
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '339'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
-
 
 # Customer Journey Analytics 术语表
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 | 登录公司 | Experience Cloud 组织 | 请参阅[组织和帐户关联](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/manage-users-and-products/organizations.html#topic_C31CB834F109465A82ED57FF0563B3F1)。 |
 | 不适用 | 报表包 | 传统 Adobe Analytics 中的报表包不再存在。实际上，您需要从与之创建连接的 Platform 数据集创建（虚拟）[数据视图](/help/data-views/create-dataview.md)。 |
 | 过滤器 | 区段 | 现在，区段更改为“过滤器”。Customer Journey Analytics 中的过滤器，其行为与“区段”是相同的。只是术语发生了更改。 |
-| 数据视图 | 虚拟报表包 | 在 Adobe Analytics 中，虚拟报表包是父报表包的分段视图。虚拟报表包与 CJA 中的数据视图的主要区别在于，虚拟报表包是“基础”或“父”报表包的子集，因此它会继承父报表包的某些设置。由于父/基础报表包不再存在，您可以使用自已的设置来定义数据视图。 |
+| 数据视图 | 虚拟报表包 | 在Adobe Analytics中，虚拟报表包是父报表包的筛选视图。 虚拟报表包与 CJA 中的数据视图的主要区别在于，虚拟报表包是“基础”或“父”报表包的子集，因此它会继承父报表包的某些设置。由于父/基础报表包不再存在，您可以使用自已的设置来定义数据视图。 |
 
 ## Adobe Experience Platform 术语表
 
