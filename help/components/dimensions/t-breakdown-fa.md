@@ -2,16 +2,16 @@
 description: 在 Analysis Workspace 中划分维度和维度项目。
 keywords: Analysis Workspace
 title: 划分维度
-topic: Reports and analytics
+topic: Reports and Analytics
 uuid: 0b888e26-f201-4405-99f9-755b3ee6cd18
+exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 translation-type: tm+mt
-source-git-commit: 1c82c7c2e61c170b6eb05bfda0c7a79e5a13c4e1
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 96%
+source-wordcount: '237'
+ht-degree: 79%
 
 ---
-
 
 # 划分维度
 
@@ -21,24 +21,24 @@ ht-degree: 96%
 
 在 Analysis Workspace 中划分维度和维度项目。
 
-为了满足您的特定需求，划分数据的方法可以不受限制；您可以使用相关的量度、维度、区段、时间线以及其他分析划分值来构建查询。
+根据您的特定需求无限细分数据；使用相关量度、维度、过滤器、时间线和其他查询细分值构建分析。
 
 1. [创建项目](/help/analysis-workspace/home.md)，其中包含一个数据表。
 1. 在数据表中，右键单击某个行项目，然后选择&#x200B;**[!UICONTROL 划分]** > *`<item>`*。
 
    ![步骤结果](assets/fa_data_table_actions.png)
 
-   您可以按维度项目或受众区段，在选定的时间期限内划分量度。此外，您还可以进一步深入到更精细的粒度级别。
+   您可以按维度项目或受众过滤器在选定时段划分量度。 此外，您还可以进一步深入到更精细的粒度级别。
 
    >[!NOTE]
    >
    >数据表可显示的划分数量最多为 200 个。在导出划分时，该限额会有所增加。
 
-**视频：DimensionAnalysis Workspace**
+**视频：Dimension在Analysis Workspace**
 
 >[!VIDEO](https://video.tv.adobe.com/v/23971)
 
-**视频：Dimension细分**
+**视频：Dimension划分**
 
 >[!VIDEO](https://video.tv.adobe.com/v/23969)
 
