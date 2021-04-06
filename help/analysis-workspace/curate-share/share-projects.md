@@ -1,15 +1,15 @@
 ---
 description: 工作区中的项目共享和项目角色
-keywords: Analysis Workspace sharing
+keywords: Analysis Workspace共享
 title: 共享项目
+exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 translation-type: tm+mt
-source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '1135'
-ht-degree: 99%
+source-wordcount: '1138'
+ht-degree: 98%
 
 ---
-
 
 # 共享项目
 
@@ -52,7 +52,8 @@ ht-degree: 99%
 如果存在未保存的更改，系统将提示您先保存项目。
 1. 添加收件人或收件人组。
 欲获取每个角色的说明，请单击顶部的帮助图标。
-1. （可选）将嵌入的项目组件（区段、计算量度和日期范围）与所有接收人共享。共享后，这些组件将显示在接收人工作区的“组件”下拉菜单中。请注意，此设置不具有持续性，在分享时，它是独立的操作。
+1. （可选）与所有收件人共享嵌入式项目组件(过滤器、计算量度和日期范围)。
+共享后，这些组件将显示在接收人工作区的“组件”下拉菜单中。请注意，此设置不具有持续性，在分享时，它是独立的操作。
 1. （可选）将此页设置为收件人的登陆页面。
 此设置不具有持续性，在分享时，它是独立的操作。
 1. 单击共享。您还可以单击&#x200B;**[!UICONTROL 策划和共享]**&#x200B;以自动应用项目策划。如果某个项目已共享，则将显示&#x200B;**[!UICONTROL 更新]**&#x200B;和&#x200B;**[!UICONTROL 策划和更新]**&#x200B;按钮。了解有关[项目策划](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/curate-share/curate.html)的更多信息。
