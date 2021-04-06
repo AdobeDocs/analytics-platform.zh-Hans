@@ -1,17 +1,17 @@
 ---
 description: 工作区中的仅查看项目
-keywords: View-only projects
-title: 仅视图项目
+keywords: 仅供查看的项目
+title: 仅供查看的项目
+exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
 translation-type: tm+mt
-source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
 source-wordcount: '281'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-
-# 仅视图项目
+# 仅供查看的项目
 
 >[!NOTE]
 >
@@ -26,7 +26,6 @@ ht-degree: 98%
 仅查看项目中已禁用的交互包括：
 
 * 隐藏的左边栏
-* 报表包
 * 面板日历日期范围。注意：如果要向收件人授予日历控制权，请添加[包含日期范围的下拉过滤器](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html)。
 * 自由格式过滤
 * 自由格式的可见行数
