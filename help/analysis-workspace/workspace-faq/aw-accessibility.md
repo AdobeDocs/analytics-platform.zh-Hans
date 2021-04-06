@@ -1,14 +1,14 @@
 ---
 description: Analysis Workspace 中的无障碍支持功能
 title: Analysis Workspace 中的辅助功能
+exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 translation-type: tm+mt
-source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 82%
+ht-degree: 81%
 
 ---
-
 
 # Analysis Workspace 中的辅助功能
 
@@ -23,8 +23,8 @@ ht-degree: 82%
 [!UICONTROL Analysis Workspace] 中的导航方式包括自上而下，以及从左至右。以下导航元素有助于促进无障碍功能：
 
 * `Tab` 键会启用地标快捷键，在工作区中的较大部分之间移动。 在左边栏中，`Tab`还允许您从一个可拖动选项移动到下一个可拖动选项。
-* `Tab`突出显示后，`left/right arrows`在各个元素之间移动。
-* `F6`导航到项目中的第一个面板并在该面板中的可视化之间移动。 然后，它移到项目中的下一个面板并重复。
+* `left/right arrows`在突出显示`Tab`后在各个元素之间移动。
+* `F6`导航到项目中的第一个面板，并在该面板中的可视化之间移动。 然后，它将移至项目中的下一个面板并重复。
 * 我们应用焦点指示器，以便近视的键盘用户能够清楚地了解当前具有焦点的 UI 元素。指示器是指选定元素周围的蓝色边框。
 
    ![焦点指示器](assets/focus-indicator.png)
@@ -32,9 +32,9 @@ ht-degree: 82%
 ### 菜单栏的键盘导航
 
 1. 选项卡，直到您到达菜单栏。
-1. 使用向左／向右箭头键导航到所需的菜单。
+1. 使用向左/向右箭头键导航到所需的菜单。
 1. 按`Enter`选择菜单并显示其选项。
-1. 使用向上／向下箭头键导航到所需的菜单选项。
+1. 使用向上/向下箭头键导航到所需的菜单选项。
 1. 按`Enter`选择选项。
 
 ### 键盘导航进行拖放交互操作
@@ -67,9 +67,9 @@ ht-degree: 82%
 | Alt + 1 | 新建自由格式表 |
 | Ctrl + Shift + C | 新建计算量度 |
 | Ctrl + Shift + D | 新建日期范围 |
-| Ctrl + Shift + E | 新建区段 |
+| Ctrl + Shift + E | 新建过滤器 |
 | Ctrl + Z | 撤消 |
-| 按住 Shift 键（在面板的区段拖放区域中） | 创建[下拉过滤器](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) |
+| 按住Shift键（在面板滤镜拖放区中） | 创建[下拉过滤器](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) |
 
 #### 大众化
 
