@@ -1,14 +1,14 @@
 ---
 title: 创建数据视图
 description: 介绍如何在 Customer Journey Analytics (CJA) 中创建 Platform 数据集的视图。
-translation-type: ht
-source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
-workflow-type: ht
-source-wordcount: '572'
-ht-degree: 100%
+exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
+translation-type: tm+mt
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+workflow-type: tm+mt
+source-wordcount: '563'
+ht-degree: 97%
 
 ---
-
 
 # 创建数据视图
 
@@ -43,7 +43,7 @@ Customer Journey Analytics 中的工作区项目均基于数据视图。
 
 ## 添加组件
 
-1. 现在就可以向数据视图添加组件（维度、量度）了（类似于虚拟报表包中的策划体验）。请注意，数据集中的每个字段现在均已转换成维度或量度。将维度和量度拖入面板或单击&#x200B;**[!UICONTROL 全选]**&#x200B;以添加所有组件。
+1. 现在，是时候向数据视图添加组件（维度、量度）了。 请注意，数据集中的每个字段现在均已转换成维度或量度。将维度和量度拖入面板或单击&#x200B;**[!UICONTROL 全选]**&#x200B;以添加所有组件。
 
    ![](assets/add-all-components.png)
 
