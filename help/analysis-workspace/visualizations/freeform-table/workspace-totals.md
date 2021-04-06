@@ -3,7 +3,7 @@ description: 工作区总计的计算方式。
 title: 工作区总计
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 92%
@@ -18,7 +18,7 @@ ht-degree: 92%
 
 在自由格式表中，每个划分级别都显示一个总计行，可以显示两个总计行：
 
-* **[!UICONTROL 总计]** （灰色“超出”数） — 此总数表示已收集的所有点击。当在面板级别或自由格式表中应用过滤器时，此总计将调整以反映符合区段标准的所有点击。
+* **[!UICONTROL 总计]** （灰色“超出”数） — 此总数表示已收集的所有点击。当在面板级别或自由格式表中应用过滤器时，此总量将调整以反映符合过滤器标准的所有点击。
 * **[!UICONTROL 表总计]**（黑色数字）- 此总计通常等于[!UICONTROL 总计]或是其子集。它反映自由格式表内应用的任何表过滤器，包括[!UICONTROL 不包含任何内容]选项。
 
 ![](assets/total-row.png)
