@@ -1,14 +1,14 @@
 ---
 description: 直方图类似于条形图，不过它可以将数字归为几组不同的范围（存储段）。
 title: 直方图
+exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 95%
+ht-degree: 87%
 
 ---
-
 
 # 直方图
 
@@ -60,7 +60,7 @@ ht-degree: 95%
 
 ![](assets/manage-data-source.png)
 
-表格中显示的预置区段是内部区段，将不会在区段选择器中显示。单击区段名称旁边的“i”图标，然后单击&#x200B;**[!UICONTROL 设为公用]**&#x200B;以将区段设为公用。
+表中显示的预建过滤器是内部过滤器，不会显示在筛选器选择器中。 单击筛选器名称旁的“i”图标，然后单击&#x200B;**[!UICONTROL 设为公用]**&#x200B;以使筛选器公开。
 
 ![](assets/prebuilt_segments.png)
 
