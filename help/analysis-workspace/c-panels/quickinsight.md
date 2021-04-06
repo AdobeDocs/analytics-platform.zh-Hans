@@ -1,14 +1,14 @@
 ---
 description: 快速分析是一款面向新工作区用户的工具，可指导用户构建数据表和可视化图表
 title: 快速分析面板
+exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 translation-type: tm+mt
-source-git-commit: 468f1f3bbe8ed555e944be49ec3bf3dcc577a23e
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '1101'
-ht-degree: 99%
+ht-degree: 75%
 
 ---
-
 
 # 快速分析面板
 
@@ -18,13 +18,13 @@ ht-degree: 99%
 
 >[!IMPORTANT]
 >
->**[!UICONTROL Quick]** Insightspanel当前处于有限测试中。[了解更多](https://docs.adobe.com/content/help/zh-Hans/analytics/landing/an-releases.html)
+>**[!UICONTROL Quick Insightspanel]** 当前处于有限测试中。[了解详情](https://docs.adobe.com/content/help/zh-Hans/analytics/landing/an-releases.html)
 
 [!UICONTROL 快速分析]可为 [!UICONTROL Analysis Workspace] 的非分析师和新用户了解如何快速轻松地回答业务问题提供指导。此外，对于希望快速回答简单问题的高级用户来说，它也是一个不错的工具，无需自己制表。
 
-当您首次使用此开始 [!UICONTROL Analysis Workspace] 时，您可能会想知道哪些可视化图表最有用，哪些维度和量度可增进洞察，应将项目拖放到何处，以及应在何处创建区段等。
+当您首次使用此[!UICONTROL Analysis Workspace]开始时，您可能会想知道哪些可视化功能最有用，哪些维度和量度可以促进洞察，在何处拖放项目，在何处创建筛选器等。
 
-为了帮助您解答这些问题，并根据贵公司对 [!UICONTROL Analysis Workspace] 中的数据组件的使用情况，[!UICONTROL 快速分析]会利用算法来向您介绍贵公司可使用的一些最热门的维度、量度、区段和日期范围。事实上，您会在下拉列表中看到标记为[!UICONTROL 热门]的维度、量度和区段，如下所示：
+为帮助您做到这一点，并根据您自己的公司在[!UICONTROL Analysis Workspace]中对数据组件的使用情况，[!UICONTROL 快速分析]利用了一种算法，该算法将为您提供公司使用的最流行的维度、量度、过滤器和日期范围。 事实上，您将在下拉列表中看到标记为[!UICONTROL Popular]的维度、量度和过滤器，如下所示：
 
 ![](assets/popular-tag.png)
 
@@ -32,7 +32,7 @@ ht-degree: 99%
 
 * 在 [!UICONTROL Analysis Workspace] 中妥善构建数据表以及随附的可视化图表。
 * 了解 [!UICONTROL Analysis Workspace] 中基本组件和要素的术语和词汇。
-* 在[!UICONTROL 自由格式表]中轻松进行维度的简单划分、添加多个量度或比较区段。
+* 在[!UICONTROL 自由格式表]中轻松进行维度的简单划分、添加多个量度或比较过滤器。
 * 更改或尝试各种可视化图表类型，快速直观地找到用于分析的查找工具。
 
 ## 基本关键术语
@@ -46,7 +46,7 @@ ht-degree: 99%
 | [!UICONTROL 量度] | 量度是有关访客活动的量化信息，包括查看次数、点进次数、重新加载次数、平均逗留时间、件数、订购、收入等。 |
 | [!UICONTROL 可视化图表] | 工作区提供了[许多可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)，用于构建数据的可视化表示形式，如条形图、圆环图、直方图、折线图、地图、散点图等。 |
 | [!UICONTROL 维度划分] | 维度划分是一种按其他维度来划分维度的方法。在我们的示例中，您可以按移动设备划分美国州来获取各个州的移动设备访问次数，或者按移动设备类型、区域、内部营销活动等划分移动设备。 |
-| [!UICONTROL 区段] | 通过区段，您可以根据用户特征或网站交互情况来识别访客子集。例如，您可以基于以下元素来构建[!UICONTROL 访客]区段：根据属性（例如，浏览器类型、设备、访问次数、国家/地区、性别），或者根据交互情况（例如，促销活动、关键词搜索、搜索引擎），或者根据进入和退出（例如，访客来自 Facebook、已定义的登陆页、反向链接域），或者根据自定义变量（例如，表单字段、已定义的类别、客户 ID）。 |
+| [!UICONTROL 过滤器] | 过滤器允许您根据特征或网站交互确定访客子集。 例如，您可以基于以下属性构建[!UICONTROL 访客]过滤器:浏览器类型、设备、访问次数、国家/地区、性别或基于交互：活动、关键字搜索、搜索引擎或基于退出和条目：来自Facebook、定义的登陆页、引用域或基于自定义变量的访客:表单字段、定义的类别、客户ID。 |
 
 ## 快速分析入门指南
 
@@ -58,7 +58,7 @@ ht-degree: 99%
    ![](assets/qi-panel.png)
 
 1. 首次开始时，请阅读简短教程，其中介绍了一些[!UICONTROL 快速分析面板]的基础知识。或者，单击以&#x200B;**[!UICONTROL 跳过教程]**。
-1. 选择构成要素（也称为组件）：维度（橙色）、量度（绿色）、区段（蓝色）或日期范围（紫色）。您必须为要自动构建的表至少选择一个维度和一个量度。
+1. 选择构建块（也称为组件）：维度（橙色）、量度（绿色）、过滤器（蓝色）或日期范围（紫色）您必须为要自动构建的表至少选择一个维度和一个量度。
 
    ![](assets/qibuilder2.png)
 
@@ -98,7 +98,7 @@ ht-degree: 99%
 
    ![](assets/qibuilder6.png)
 
-* **添加更多区段**：使用 AND 或 OR 运算符将最多 2 个区段添加到表中。在添加“移动设备用户 OR 忠诚的访客”后，查看表格会发生什么变化。它们彼此相邻，位于量度上方。如果您添加了“移动设备用户 AND 忠诚的访客”，您将会看到这两个区段的结果，并且它们在表中会彼此堆叠。
+* **添加更多过滤器**:通过使用AND或OR运算符将多达2个过滤器添加到表中。在添加“移动设备用户 OR 忠诚的访客”后，查看表格会发生什么变化。它们彼此相邻，位于量度上方。如果您添加了“移动用户”和“忠诚访客”，您将看到这两个过滤器的结果，它们会相互叠放在表中。
 
    ![](assets/qibuilder7.png)
 
@@ -113,4 +113,3 @@ ht-degree: 99%
 ![](assets/qibuilder8.png)
 
 否则，直接构建会导致此表如传统的自由格式表那样，不含适用于新用户的有用功能。
-
