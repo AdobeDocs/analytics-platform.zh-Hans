@@ -3,10 +3,10 @@ title: Customer Journey Analytics 概述
 description: 了解如何通过 Customer Journey Analytics 来使用 Analysis Workspace 处理来自 Experience Platform 的数据。
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '1217'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -55,7 +55,7 @@ Customer Journey Analytics 的初始版本包括 Analysis Workspace 中的许多
 
 * 要访问Customer Journey Analytics或建立连接，您需要作为管理员添加到[Admin Console](https://adminconsole.adobe.com/enterprise/)中的&#x200B;**Customer Journey Analytics产品**。 产品管理员享有以下权限：
    * 创建/更新/删除连接或数据视图
-   * 更新/删除由其他用户创建的项目、过滤器、计算量度或区段
+   * 更新/删除其他用户创建的项目、过滤器、计算量度或过滤器
    * 将工作区项目共享给所有用户
 * 仅作为 Customer Journey Analytics 的产品管理员，并不足以创建、更新或删除连接。要创建与 Experience Platform 数据集的连接，您还需要取得 Experience Platform 权限。具体而言，您必须属于授予您以下权限的 **Experience Platform 产品用户档案**：
    * 查看架构
