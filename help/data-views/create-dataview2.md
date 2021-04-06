@@ -3,9 +3,9 @@ title: 如何在Customer Journey Analytics中创建新的视图。
 description: 描述创建新数据视图所需的所有设置。
 exl-id: 35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: c021892119cbebccaa49e5c04fd7cc7450cce8c6
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '2814'
+source-wordcount: '2805'
 ht-degree: 12%
 
 ---
@@ -75,7 +75,7 @@ ht-degree: 12%
 | [!UICONTROL 标记] | 可选。允许您使用自定或现成的标签为组件添加标签，以便在Analysis Workspace UI中更轻松地搜索/筛选。 |
 | [!UICONTROL 字段名称] | 模式字段的名称。 |
 | [!UICONTROL 数据集类型] | 必需. 一个不可编辑的字段，显示组件来自哪个事件集类型(、查找或用户档案)。 |
-| [!UICONTROL 数据集] | 必需. 一个不可编辑的字段，显示组件来自的字段类型（例如字符串、整数等）。 此字段可包含多个数据集，例如您组合多个报表包时。 |
+| [!UICONTROL 数据集] | 必需. 一个不可编辑的字段，显示组件来自的字段类型（例如字符串、整数等）。 此字段可以包含多个数据集。 |
 | [!UICONTROL 架构类型] | 指组件是否为字符串、整数等。 |
 | [!UICONTROL 组件 ID] | 必需. [CJA API](https://adobe.io/cja-apis/docs)使用此字段引用组件。 您可以单击编辑图标并修改此组件ID。 但是，更改此组件ID会中断包含此组件的所有现有Workspace项目。<br>如果您曾创建另一个对pageTitle维度使用不同字段的视图，则可以对其重命名，并使维度跨视图兼容。 |
 | [!UICONTROL 路径] | 必需. 一个不可编辑的字段，显示组件来自的模式路径。 |
