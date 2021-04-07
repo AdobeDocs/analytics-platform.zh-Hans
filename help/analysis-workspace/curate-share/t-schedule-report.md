@@ -2,14 +2,14 @@
 description: 通过电子邮件发送 Analysis Workspace 项目，或者计划发送项目的时间。
 keywords: Analysis Workspace
 title: 计划项目
+exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 translation-type: tm+mt
-source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+source-git-commit: 5f9dc79e666303165f07fd203e29a3daf478e980
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 99%
+source-wordcount: '488'
+ht-degree: 100%
 
 ---
-
 
 # 计划项目
 
@@ -30,7 +30,7 @@ ht-degree: 99%
 1. 单击&#x200B;**立即发送**。
 1. （可选）单击&#x200B;**显示计划选项**&#x200B;以指定发送计划。
 
-![立即发送文件](assets/send-file-now.png)
+![立即发送文件](assets/send-file-no-scheduling-options.JPG)
 
 ## 按计划发送文件
 
@@ -44,15 +44,13 @@ ht-degree: 99%
 1. 指定发送频率。每种频率均允许进行不同的自定义。
 1. 单击&#x200B;**按计划发送**。
 
-![](assets/send-on-schedule.png)
+![](assets/send-file.JPG)
 
 ## 计划项目管理器
 
 可以在 **Analytics > 组件 > 计划项目**&#x200B;下管理计划的 Analysis Workspace 项目。
 
 在计划项目管理器中，您可以编辑和删除重复的项目计划。在搜索栏中搜索计划，或者使用左边栏中的过滤器选项搜索计划。您可以按标记、批准的计划、所有者等进行过滤。
-
-![](assets/scheduled-project-manager.png)
 
 以下是计划项目管理器中的常见操作：
 
@@ -65,4 +63,4 @@ ht-degree: 99%
 | **查看过期的计划** | 导航到左边栏中的“其他过滤器”>“过期”以查看已过期的计划。单击计划的标题以设置新的发送计划。 |
 | **查看计划 ID** | 导航到右上方的列选项，并将“计划 ID”列添加到表中。计划 ID 通常对调试有用。 |
 
-计划项目管理器可显示特定用户已创建的项目。若应用程序中禁用此用户帐户，则会停止所有计划的提交。可以在&#x200B;**管理员 > Analytics 用户和资产 > 转移资产**&#x200B;下将计划项目所有权&#x200B;**转移**&#x200B;给新用户。
+计划项目管理器可显示特定用户已创建的项目。若应用程序中禁用此用户帐户，则会停止所有计划的提交。
