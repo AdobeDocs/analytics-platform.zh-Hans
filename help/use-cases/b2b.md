@@ -1,18 +1,18 @@
 ---
 title: (B2B) 将帐户级别的数据作为查询数据集进行添加
 description: 了解如何将基于帐户的数据作为查询数据集添加到 CJA
+exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 translation-type: tm+mt
-source-git-commit: 46cb6c92d4a6a7ceddb687e7668c1588559f87a7
+source-git-commit: 9bbc625aca9e0b8384b3e95d79fd695fda863f0b
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 100%
+source-wordcount: '932'
+ht-degree: 89%
 
 ---
 
-
 # (B2B) 将帐户级别的数据作为查询数据集进行添加
 
-此 B2B 用例将向您展示如何指定帐户级别（而非个人级别）的数据来进行分析。帐户级别的数据分析可以回答以下问题：
+此B2B用例向您显示如何在帐户级别而非人员级别指定分析。 帐户级别的数据分析可以回答以下问题：
 
 * 与该帐户匹配的公司名是什么？
 * 与该帐户/公司相关联的员工有多少？
@@ -20,9 +20,9 @@ ht-degree: 100%
 * 与其他帐户相比，该帐户在特定营销活动中的整体表现如何？
 * 某些特定角色（如 IT 经理）在两个不同帐户中的行为是否存在差异？
 
-将帐户级别的信息作为[查询](/help/getting-started/cja-glossary.md)数据集（类似于传统 Adobe Analytics 中的分类）引入后，您将可以回答上述所有问题。
+通过将帐户级别信息作为[lookup](/help/getting-started/cja-glossary.md)数据集导入，您可以完成所有这些操作。
 
-首先，在 Adobe Experience Platform 中创建一个查询模式，然后通过引入基于 .csv 的帐户级别数据来创建查询表数据集。接着，继续创建一个可合并不同数据集（包括您创建的查询数据集）的 CJA 连接。最后，创建一个数据视图，届时将能够在工作区中利用所有这些数据。
+首先，在 Adobe Experience Platform 中创建一个查询模式，然后通过引入基于 .csv 的帐户级别数据来创建查询表数据集。然后，您继续在Customer Journey Analytics(CJA0)中创建一个连接，该连接组合了不同的数据集，包括您创建的查找数据集。 然后，您创建一个数据视图，并最终能够在Workspace中利用所有这些数据。
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ ht-degree: 100%
 >
 >CJA 不支持在查询数据集中使用整数。如果您在查询数据集的 XDM 模式中添加整数字段，则不能将这些整数用作量度或计算量度。例如，如果将 annualRevenue 或 totalEmployees 定义为整数，则它们将在 CJA 的报表中显示为“0”。但是，如果将它们指定为字符串，则可以将它们用作查询信息。
 
-例如，在以下示例中，annualRevenue 或 totalEmployees 被定义为整数，因此它们在 CJA 中显示为“0”。
+例如，annualRevenue或totalEmployees在以下示例中定义为Integer，这是它在CJA中显示“0”的原因。
 
 1. 在 Adobe Experience Platform 中，转到&#x200B;**[!UICONTROL 数据管理 > 数据集]**。
 1. 单击 **[!UICONTROL + 创建数据集]**。
@@ -65,7 +65,7 @@ ht-degree: 100%
 在此示例中，我们要将 3 个数据集合并到一个 CJA 连接：
 
 | 数据集名称 | 描述 | AEP 模式类 | 数据集详细信息 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | B2B Impression | 包含帐户级别的点击流（事件级）数据。例如，包含用于运行营销广告的电子邮件 ID 和相应的帐户 ID 以及营销活动名称。此外，还包含这些广告对每个用户的展示次数。 | 基于 XDM ExperienceEvent 模式类 | `emailID` 用作主标识，并分配到一个 `Customer ID` 命名空间。因此，它将在 Customer Journey Analytics 中显示为默认的&#x200B;**[!UICONTROL 人员 ID]**。![展示次数](assets/impressions-mixins.png) |
 | B2B Profile | 此用户档案数据集可告知有关帐户中用户的更多信息，例如其职务、其所属帐户、其 LinkedIn 个人档案等。 | 基于“XDM 个人用户档案”模式类 | 在此模式中，无需选择 `emailID` 作为主 ID。确保启用&#x200B;**[!UICONTROL 用户档案]**；如果未启用，CJA 将无法在“B2B Profile”数据集中的 `emailID` 与“B2B Impression”数据集中的 `emailID` 之间建立连接。![用户档案](assets/profile-mixins.png) |
 | B2B Info | 请参阅上面的“创建查询数据集”。 | B2BAccount（自定义查询模式类） | 在 CJA 中将“B2B Info”数据集与“B2B Impression”数据集连接（如以下步骤所述）后，`accountID` 与“B2B Impression”数据集之间将自动产生关联。![查询](assets/lookup-mixins.png) |
