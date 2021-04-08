@@ -1,28 +1,28 @@
 ---
 description: 有关设置功能板记分卡的说明。
-title: Customer Journey Analytics仪表板策展人指南
+title: Customer Journey Analytics 功能板策划人指南
+exl-id: 892e5789-8eec-43d9-99fe-8448aa8600b2
 translation-type: tm+mt
-source-git-commit: 026771a61bcbd0eec8cb59a1d06f3dad0b96acf6
+source-git-commit: 2d83d796f053465eb9543daa37068f316bccc659
 workflow-type: tm+mt
 source-wordcount: '2403'
-ht-degree: 77%
+ht-degree: 81%
 
 ---
 
+# Analytics 功能板策划人指南
 
-#  Analytics 功能板策划人指南
-
-以下信息将指导 Adobe Analytics 数据策划人如何为执行用户配置和展示功能板。要观看相关演示视频，请访问以下“ Analytics 功能板记分卡生成器”视频：
+以下信息指示 Adobe Analytics 数据的策划人如何为执行用户配置和展示功能板。要观看演示此信息的视频，请观看“Analytics 功能板记分卡生成器”视频：
 
 >[!VIDEO](https://video.tv.adobe.com/v/34544)
 
 ## 简介
 
-Adobe Analytics仪表板根据您的Customer Journey Analytics数据提供随时随地的洞察。 应用程序允许用户通过移动设备访问您从Customer Journey Analytics桌面UI创建和共享的直观记分卡。 记分卡是在平铺布局中显示的关键量度和其他组件的集合，您可以点击它以查看更详细的划分和趋势数据视图。 您可以根据对您最重要的数据来定制记分卡。iOS 和 Android 操作系统均支持 Analytics 功能板。
+Adobe Analytics仪表板根据您的Customer Journey Analytics数据提供随时随地的洞察。 通过该应用程序，用户可从移动设备上访问从 Customer Journey Analytics 桌面 UI 中创建并共享的各种易用的记分卡。记分卡是在平铺布局中显示的关键量度和其他组件的集合，您可以点击它以查看更详细的划分和趋势数据视图。 您可以根据对您最重要的数据来定制记分卡。iOS 和 Android 操作系统均支持 Analytics 功能板。
 
 ## 有关本指南的更多信息
 
-本指南旨在帮助Customer Journey Analytics数据的管理者为仪表板上的管理用户配置记分卡。 策划人可以是组织管理员，也可以是其他角色中负责设置应用程序记分卡的人员，该应用程序使执行用户能够在自己的移动设备上快速、轻松地查看广泛呈现的重要摘要数据。尽管执行用户是 Analytics 功能板的最终用户，但是本指南将帮助数据策划人为这些用户有效地设置应用程序。
+本指南旨在帮助 Customer Journey Analytics 数据的策划人在功能板上为其执行用户配置记分卡。策划人可以是组织管理员，也可以是其他角色中负责设置应用程序记分卡的人员，该应用程序使执行用户能够在自己的移动设备上快速、轻松地查看广泛呈现的重要摘要数据。尽管执行用户是 Analytics 功能板的最终用户，但是本指南将帮助数据策划人为这些用户有效地设置应用程序。
 
 ## 术语表
 
@@ -30,8 +30,8 @@ Adobe Analytics仪表板根据您的Customer Journey Analytics数据提供随时
 
 | 术语 | 定义 |
 |--- |--- |
-| 用户 | 在移动设备上查看CJA中的关键指标和洞察的执行人员角色 |
-| 策划人 | 从CJA中查找和分发洞察并配置要由消费者查看的记分卡的数据识别角色 |
+| 用户 | 在移动设备上从 CJA 查看关键指标和见解的执行角色 |
+| 策划人 | 通晓数据的角色，其负责从 CJA 发现和分发见解以及配置要供使用者查看的记分卡 |
 | 策划 | 创建或编辑移动记分卡的操作，记分卡中包含用户的相关量度、维度和其他组件 |
 | 记分卡 | 包含一个或多个图块的功能板视图 |
 | 图块 | 记分卡视图中量度的呈现方式 |
@@ -45,7 +45,7 @@ Adobe Analytics仪表板根据您的Customer Journey Analytics数据提供随时
 
 ![示例记分卡](assets/intro_scorecard.png)
 
-作为此记分卡的策划人，您可以使用记分卡生成器来配置要在用户的记分卡上显示的图块。您还可以配置在点按图块后，如何调整详细视图或“划分”。记分卡生成器界面如下所示：
+作为此记分卡的策划人，您可以使用记分卡生成器来配置要在用户的记分卡上显示的图块。您还可以配置在点按图块后如何调整详细视图（“划分”）。记分卡生成器界面如下所示：
 
 ![记分卡生成器](assets/scorecard_builder.png)
 
@@ -106,7 +106,7 @@ Adobe Analytics仪表板根据您的Customer Journey Analytics数据提供随时
 
    添加到图块的每个维度将显示在应用程序详细视图的下拉列表中。之后，执行用户可以从下拉列表所列的选项中进行选择。
 
-4. 要将过滤器应用于各个拼贴，请从左面板拖动滤镜并将其直接放置在拼贴的顶部。 如果要将筛选器应用于记分卡中的所有拼贴，请将拼贴放在记分卡的顶部。 或者，您也可以通过在日期范围下方的筛选器菜单中选择过滤器来应用过滤器。 您可以像在 Adobe Analytics Workspace 中一样[为记分卡配置和应用过滤器](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html)。
+4. 要将过滤器应用于各个拼贴，请从左面板拖动滤镜并将其直接放置在拼贴的顶部。 如果要将筛选器应用于记分卡中的所有拼贴，请将拼贴放在记分卡的顶部。 或者，您也可以通过在日期范围下方的筛选器菜单中选择过滤器来应用过滤器。 您可以像在 Adobe Analytics Workspace 中一样[为记分卡配置和应用过滤器](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans)。
 
    ![构建过滤器](assets/segment_ui.png)
 
@@ -270,4 +270,4 @@ Adobe Analytics仪表板根据您的Customer Journey Analytics数据提供随时
 
 >[!IMPORTANT]
 >
->从2020年10月开始，Adobe逐步推出一系列增强功能，以优化“Adobe Analytics仪表板”应用程序的性能。 这些增强功能的重心在于缓存用于填充特定日期（不包括当天）记分卡的历史 Analytics 数据。该数据将在安全的 Microsoft Azure 公共云存储帐户中缓存长达 24 小时。如果您想要选择退出这些性能增强功能，请联系您的客户成功经理。
+>从 2020 年 10 月开始，Adobe 逐步推出一系列增强，以优化“Adobe Analytics 功能板”应用程序的性能。这些增强功能的重心在于缓存用于填充特定日期（不包括当天）记分卡的历史 Analytics 数据。该数据将在安全的 Microsoft Azure 公共云存储帐户中缓存长达 24 小时。如果您想要选择退出这些性能增强功能，请联系您的客户成功经理。
