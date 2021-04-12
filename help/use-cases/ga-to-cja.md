@@ -2,9 +2,9 @@
 title: 在Customer Journey Analytics中设置Google Analytics报告
 description: null
 translation-type: tm+mt
-source-git-commit: 13828f484ec1edcd00a6d049ff78c7e2642d2b01
+source-git-commit: 1324ad5768a7ab215431b9447d9519367dfe17a0
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '272'
 ht-degree: 1%
 
 ---
@@ -12,15 +12,7 @@ ht-degree: 1%
 
 # 在Customer Journey Analytics中设置Google Analytics报告
 
-设置Google Cloud存储连接器，
 
-配置Google标签管理器
-
-BigQuery导出模式(https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089)
-
-1. 在大查询中将GA会话转换为事件
-1. 将Google Analytics事件导出到Google Cloud存储
-1. 将GCS事件导入Adobe Experience Platform并映射到XDM模式
 
 ## 先决条件
 
@@ -41,16 +33,26 @@ BigQuery导出模式(https://support.google.com/analytics/answer/3437719?hl=en&a
 
 1. 将您的Google Analytics数据连接到BigQuery和
 请参阅[这些说明](https://support.google.com/analytics/answer/3416092?hl=en)。
-1. （仅限Universal Analytics客户）将Google Analytics会话转换为BigQuery中的事件。 这使数据与Adobe Experience Platform兼容。 请参阅[这些说明](https://support.google.com/analytics/answer/3437618?hl=en)。
+
+1. （仅限Universal Analytics客户）将Google Analytics会话转换为BigQuery中的事件。
+这使数据与Adobe Experience Platform兼容。 请参阅[这些说明](https://support.google.com/analytics/answer/3437618?hl=en)。
 
    详细信息：在BigQuery中，您的GA数据将显示为表：
 
    ![](assets/ga-bigquery.png)
-您需要创建SQL查询，以将Universal Analytics数据转换为符合Experience Platform规范的格式。
-   * 视图此视频，以获取说明：
+您需要创建SQL查询，以将Universal Analytics数据转换为符合Experience Platform规范的格式。视图此视频，以获取说明：
+
    >[!VIDEO](https://video.tv.adobe.com/v/332634)
 
 1. 将JSON格式的Google Analytics事件导出到Google Cloud存储，并将它们保存到存储桶中。
 请参阅[这些说明](https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089)。
-1. 将来自Google Cloud存储的数据导入Experience Platform。 （从Trevor获取Slide 10视频。）
+
+1. 将来自Google Cloud存储的数据导入Experience Platform。
+视图此视频，以获取说明：
+
+   >[!VIDEO](https://video.tv.adobe.com/v/332641)
+
+1. 将GCS事件导入Adobe Experience Platform并映射到XDM模式
+
+BigQuery导出模式(https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089)
 
