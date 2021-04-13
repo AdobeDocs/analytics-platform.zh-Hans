@@ -3,9 +3,9 @@ title: 如何将Google Analytics数据导入Adobe Experience Platform以在Custo
 description: '解释如何利用Customer Journey Analytics(CJA)将Google Analytics和火库数据引入Adobe Experience Platform。 '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 58842436ab3388ba10ad0df0b35c78f68b02f0a3
+source-git-commit: cc212d8b1e0a229fd246f6678a8dc8e5bbadce79
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1040'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Adobe数据模型最强大的方面之一是，它允许您将所有客户交互
 
 | 如果您使用... | 您还需要这个许可证…… | 然后…… |
 | --- | --- | --- |
-| **通用Google Analytics** | Google Analytics360 | 执行下面说明步骤1 - 5 |
+| **通用分析** | Google Analytics360 | 执行下面说明步骤1 - 5 |
 | **Google Analytics4** | 免费的GA版本或Google Analytics360 | 执行下面说明的步骤1和3-5。 无需步骤2。 |
 
 ## 收录历史数据
@@ -53,11 +53,30 @@ Adobe数据模型最强大的方面之一是，它允许您将所有客户交互
 
 GA数据将每个记录作为用户会话存储在其数据中，而不是单独事件。 您需要创建SQL查询，以将Universal Analytics数据转换为符合Experience Platform规范的格式。 您将“unnest”函数应用于GA模式中的“hits”字段。 以下是您可以使用的SQL示例：
 
-`SQL sample`
+`SELECT
+*,
+timestamp_seconds(`` + hit.time) AS `` 
+FROM
+(
+SELECT
+fullVisitorId,
+visitNumber,
+visitId,
+visitStartTime,
+trafficSource,
+socialEngagementType,
+channelGrouping,
+device,
+geoNetwork,
+hit 
+FROM
+`visitStartTimetimestampyour_bq_table_2021_04_*`,
+UNNEST(hits) AS hit 
+)`
 
 查询完成后，将完整结果保存到BigQuery表中。
 
-请参阅[这些说明](https://support.google.com/analytics/answer/3437618?hl=en)。
+请参阅[这些说明](https://support.google.com/analytics/answer/7029846?hl=en&amp;ref_topic=9359001#zippy=%2Cold-export-schema%2Cuse-this-script-to-migrate-existing-bigquery-datasets-from-the-old-export-schema-to-the-new-one%2Cscript-migration-scriptsql)。
 
 或视图此视频：
 
