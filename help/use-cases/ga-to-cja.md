@@ -1,18 +1,18 @@
 ---
 title: 在Customer Journey Analytics中设置Google Analytics报告
 description: null
+exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 1324ad5768a7ab215431b9447d9519367dfe17a0
+source-git-commit: 49b49f24dbc68b1d9e843e0f4522123e6792a438
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '297'
 ht-degree: 1%
 
 ---
 
-
 # 在Customer Journey Analytics中设置Google Analytics报告
 
-
+此用例说明如何将Google Analytics数据导入Adobe Experience Platform，然后
 
 ## 先决条件
 
@@ -26,12 +26,12 @@ ht-degree: 1%
 
 | 如果您使用... | 您还需要这个许可证…… | 然后…… |
 | --- | --- | --- |
-| **通用Google Analytics** | Google Analytics360 | 执行下面说明步骤1 - x |
-| **Google Analytics4** | 免费的GA版本或Google Analytics360 | 无需在以下说明中执行步骤x。 |
+| **通用Google Analytics** | Google Analytics360 | 执行下面说明步骤1 - 5 |
+| **Google Analytics4** | 免费的GA版本或Google Analytics360 | 执行下面说明步骤2 - 5。 无需步骤1。 |
 
 以下说明基于通用Google Analytics。
 
-1. 将您的Google Analytics数据连接到BigQuery和
+1. 将您的Google Analytics数据连接到BigQuery，以便您可以转换部分数据。
 请参阅[这些说明](https://support.google.com/analytics/answer/3416092?hl=en)。
 
 1. （仅限Universal Analytics客户）将Google Analytics会话转换为BigQuery中的事件。
@@ -55,4 +55,3 @@ ht-degree: 1%
 1. 将GCS事件导入Adobe Experience Platform并映射到XDM模式
 
 BigQuery导出模式(https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089)
-
