@@ -1,14 +1,14 @@
 ---
 title: 向数据集添加全局查找
 description: 在 Customer Journey Analytics 中，可使用全局查找为报表补充更多有用维度。
+exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 translation-type: tm+mt
-source-git-commit: b3c9757421537d2d84a78a4d37e9bfc362438d40
+source-git-commit: e19e9b7d7a88232e1eeb7ddaa739389e26763c1a
 workflow-type: tm+mt
 source-wordcount: '447'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
-
 
 # 向数据集添加全局查找
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 ## 将全局查找与自定义数据集结合使用
 
-事件数据集中需要有一个与全局查找数据集兼容的键。只要通过添加一些标准的 [Adobe Experience Platform 架构 mixin](https://experienceleague.adobe.com/docs/experience-platform/xdm/mixins/event/environment-details.html?lang=zh-cn#mixins) 来填充相应的 XDM 字段，就可以使自定义数据集与全局查找结合使用。
+键需要存在于与全局查找数据集兼容的事件数据集中。 只要通过添加一些标准的 [Adobe Experience Platform 架构 mixin](https://experienceleague.adobe.com/docs/experience-platform/xdm/mixins/event/environment-details.html?lang=zh-cn#mixins) 来填充相应的 XDM 字段，就可以使自定义数据集与全局查找结合使用。
 
 ## 可用的全局查找字段
 
@@ -67,4 +67,3 @@ ht-degree: 100%
 然后，您便可以在工作区中查看查找数据：
 
 ![](assets/gl-reporting.png)
-
