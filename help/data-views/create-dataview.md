@@ -1,60 +1,225 @@
 ---
-title: 创建数据视图
-description: 介绍如何在 Customer Journey Analytics (CJA) 中创建 Platform 数据集的视图。
-exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
+title: 如何在Customer Journey Analytics中创建新的视图。
+description: 描述创建新数据视图所需的所有设置。
+exl-id: 35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: 7cad7b1231b08b8311dd9a1d8e0b5a6da3af9c73
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 94%
+source-wordcount: '2802'
+ht-degree: 12%
 
 ---
 
-# 创建数据视图
+# 创建新数据视图
 
-数据视图类似于 Analytics 中的虚拟报表包，因为从某种意义上说，它是“过滤的”数据视图。您可以使用不同的访问超时、归因等设置为同一连接创建不同的数据视图。您可以为单个数据集创建多个视图。例如，您可以具有一个将所有维度均设置为“最后接触”的视图，同时，还可以具有另一个将所有维度均设置为“首次接触”的视图（基于同一数据集）。
+>[!IMPORTANT]
+>
+>此功能将于2021年4月22日正式推出。
 
-Customer Journey Analytics 中的工作区项目均基于数据视图。
+创建视图涉及从模式元素创建量度和维度，或使用标准组件。 创建量度或维度为您提供了极大的灵活性。 以前，假设您在Adobe Experience Platform中有数据集，则字符串字段用作维度，数字字段用作量度。 要更改其中的任何字段，您必须在平台中编辑模式。 数据视图UI现在允许对量度和维度](/help/data-views/data-views.md)进行更多自由定义。 [有关更多用例，请参阅[数据视图用例](/help/data-views/data-views-usecases.md)。
 
-单击[此处](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/basic-configuration-for-data-views.html)，查看视频概述。
-
-## 先决条件
-
-在创建数据视图之前，您需要[设置一个或多个与 Experience Platform 数据集的连接](/help/connections/create-connection.md)。
-
-## 配置设置
+## 1.配置视图设置和容器
 
 1. 在 Customer Journey Analytics 中，转到&#x200B;**[!UICONTROL 数据视图]**&#x200B;选项卡。
+2. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;可创建新数据视图并配置其设置。
 
-1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;以添加数据视图，并配置其设置。
+![](assets/new-data-view.png)
 
-   | 会话设置 | 定义 |
-   |---|---|
-   | 连接 | 此字段会将数据视图链接到您之前已建立的连接，其中包含 [!UICONTROL Experience Platform] 数据集。 |
-   | 名称 | 必须为数据视图命名。 |
-   | 描述 | 不强制要求提供详细描述，但建议提供。 |
-   | 添加标记 | 标记让您可以将数据视图组织成不同的类别。 |
-   | 时区 | 选择数据视图的时区。 |
-   | 会话超时 | 选择“会话”的定义。会话超时设置定义独特访客在新会话自动开始之前必须处于非活动状态的时间。默认为 30 分钟。例如，如果将会话超时设置为 45 分钟，则会以 45 分钟的非活动状态进行分隔，为每个收集的点击序列创建一个新会话组。<!--This setting impacts not only your visit counts, but also how visit filter containers are evaluated, and the visit expiration logic for any eVars expiring on visit. Decreasing the session timeout will likely increase the total number of visits in your reporting, while increasing the visit timeout will likely decrease the total number of visits in your reporting. This needs to be reviewed.--> |
-   | 通过事件开始新会话 | 无论会话是否超时，均会在事件被触发时启动新会话。新创建的会话包含启动该会话的事件。此外，您可以使用多个事件启动会话，如果在数据中观察到这些事件中的任何一个，便会触发新会话。此设置将影响您的访问计数、会话（以前称为访问）过滤器容器以及维度的访问到期逻辑。 |
-   | 添加过滤器 | 如果要过滤数据，请将相应的过滤器从左边栏拖动到此处。如果不选择过滤器，数据视图将包含您的所有数据。 |
+| 设置 | 描述/用例 |
+| --- | --- |
+| [!UICONTROL 连接] | 此字段将数据视图链接到您之前建立的连接，该连接包含一个或多个Adobe Experience Platform数据集。 |
+| [!UICONTROL 名称] | 必须为数据视图命名。 |
+| [!UICONTROL 描述] | 详细说明不是强制性的，但建议提供。 |
+| [!UICONTROL 时区] | 选择要显示数据的时区。 |
+| [!UICONTROL 标记] | 标记让您可以将数据视图组织成不同的类别。 |
+| [!UICONTROL 容器] | 您可以在此处重命名容器，这就是它们在基于此数据视图的任何Workspace项目中的显示方式。 容器用于过滤器和流失/流等，以定义范围或上下文的范围或范围。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
+| [!UICONTROL 人员容器名称是……] | [!UICONTROL Person] （默认）。[!UICONTROL Person]容器包括指定时间范围内访客的每次访问和页面视图。 您可以将其重命名为“用户”或您喜欢的任何其他术语。 |
+| [!UICONTROL 会话容器名称为……] | [!UICONTROL 会话] （默认）。通过[!UICONTROL 会话]容器，可以识别特定会话的页面交互、活动或转换。 您可以将其重命名为“访问”或您喜欢的任何其他术语。 |
+| [!UICONTROL 事件容器名称为……] | [!UICONTROL 事件] （默认）。[!UICONTROL 事件]容器定义要包括或从筛选器中排除的页面事件。 |
 
-1. 单击&#x200B;**[!UICONTROL 继续]**。
+接下来，您可以从模式元素创建量度和维度。 您还可以使用标准组件。
 
-## 添加组件
+## 2.从模式元素创建量度和维度
 
-1. 现在，是时候向数据视图添加组件（维度、量度）了。 请注意，数据集中的每个字段现在均已转换成维度或量度。将维度和量度拖入面板或单击&#x200B;**[!UICONTROL 全选]**&#x200B;以添加所有组件。
+1. 在[!UICONTROL Customer Journey Analytics] > [!UICONTROL 视图]中，单击[!UICONTROL 组件]选项卡。
 
-   ![](assets/add-all-components.png)
+![](assets/components-tab.png)
 
-1. 单击&#x200B;**[!UICONTROL 添加组件]**&#x200B;选项卡，将维度和量度添加到数据视图。
+您可以在左上角看到[!UICONTROL Connection]，它包含数据集，并在下面看到其[!UICONTROL 模式字段]。 请记住以下事项：
 
-   ![](assets/add-all-components2.png)
+* 已包含的组件是标准必需组件（系统生成）。
+* 默认情况下，我们还应用筛选器&#x200B;**[!UICONTROL 包含数据]**，以便只显示包含数据的模式字段。 如果您正在查找不包含数据的字段，只需删除过滤器。
 
-1. （可选）您可以将组件重命名为友好名称，或通过选择组件并编辑其设置来更改组件的归因设置。请注意，基础名称将保留。有关详细信息，请参阅[配置视图和归因](/help/data-views/configure-dataviews.md)。
+1. 现在，将模式字段（如[!UICONTROL pageTitle]）从左边栏拖动到“量度”或“Dimension”部分。
 
-1. 下一步是[指定组件和归因设置](/help/data-views/configure-dataviews.md)。
+   您可以多次将同一模式字段拖入维度或量度部分，并以不同方式配置相同的维度或量度。
+例如，从**[!UICONTROL pageTitle]**&#x200B;字段中，可以通过重命名右侧的&#x200B;**[!UICONTROL 组件名称]**&#x200B;创建名为“Product Pages”的维度和另一个名为“Error pages”的维度。 从&#x200B;**[!UICONTROL pageTitle]**;字段中，您还可以根据字符串值创建量度。 例如，您可以创建一个或多个具有不同属性设置和不同包含/排除值的&#x200B;**[!UICONTROL Orders]**&#x200B;量度。
 
-## 删除数据视图
+   ![](assets/components-tab-3.png)
 
-如果在 [!UICONTROL Customer Journey Analytics] 中删除数据视图，将显示一条错误消息，指示所有依赖于这个已删除数据视图的工作区项目都将停止运行。
+   >[!NOTE]
+   >
+   >您可以从左边栏拖入整个模式字段文件夹，这些文件夹将自动按传统部分进行排序。 字符串字段将在[!UICONTROL Dimension]部分结尾，在[!UICONTROL 量度]部分结尾。 或者，单击&#x200B;**[!UICONTROL 添加所有]**，将添加所有模式字段。
+
+1. 选择组件后，您会看到许多设置显示在右侧。 使用下面描述的设置配置组件。
+
+### 配置组件设置
+
+![](assets/component-settings.png)
+
+| 设置 | 描述/用例 |
+| --- | --- |
+| [!UICONTROL 组件类型] | 必需. 允许您将组件从量度更改为Dimension，反之亦然。 |
+| [!UICONTROL 组件名称] | 必需. 用于指定将在Analysis Workspace中显示的易记名称。 您可以重命名组件，为其指定特定于数据视图的名称。 |
+| [!UICONTROL 描述] | （可选，但建议）为其他用户提供有关组件的信息。 |
+| [!UICONTROL 标记] | 可选。允许您使用自定或现成的标签为组件添加标签，以便在Analysis Workspace UI中更轻松地搜索/筛选。 |
+| [!UICONTROL 字段名称] | 模式字段的名称。 |
+| [!UICONTROL 数据集类型] | 必需. 一个不可编辑的字段，显示组件来自哪个事件集类型(、查找或用户档案)。 |
+| [!UICONTROL 数据集] | 必需. 一个不可编辑的字段，显示组件来自的字段类型（例如字符串、整数等）。 此字段可以包含多个数据集。 |
+| [!UICONTROL 架构类型] | 指组件是否为字符串、整数等。 |
+| [!UICONTROL 组件 ID] | 必需. [CJA API](https://adobe.io/cja-apis/docs)使用此字段引用组件。 您可以单击编辑图标并修改此组件ID。 但是，更改此组件ID会中断包含此组件的所有现有Workspace项目。<br>如果您曾创建另一个对pageTitle维度使用不同字段的视图，则可以对其重命名，并使维度跨视图兼容。 |
+| [!UICONTROL 路径] | 必需. 一个不可编辑的字段，显示组件来自的模式路径。 |
+| [!UICONTROL 在报表中隐藏组件] | 默认=关闭。 用于在报告中使用时，可将组件从“视图”中管理出来。 这不会影响权限，只影响组件特选。 换言之，您可以在报告中对非管理员隐藏组件。 管理员仍可通过单击Analysis Workspace项目中的[!UICONTROL 显示所有组件]来访问它。 |
+
+### 配置格式设置
+
+格式设置仅适用于量度。
+
+![](assets/format-settings.png)
+
+| 设置 | 描述/用例 |
+| --- | --- |
+| [!UICONTROL Format] | 允许您指定量度的格式，如小数、时间、%或货币。 |
+| [!UICONTROL 小数位] | 允许您指定量度应显示的小数位数。 |
+| [!UICONTROL 将上升趋势显示为] | 允许您指定此量度的向上趋势应被视为良好（绿色）还是坏（红色）。 |
+| [!UICONTROL 货币] | 仅当选定的量度格式为[!UICONTROL Currency]时，才显示此设置。 提供一列表货币选项。 默认为无货币。 这样，您就可以在报告中以您选择的货币表示收入。 这不是货币兑换，只是UI格式选项。 |
+
+### 配置归因设置
+
+![](assets/attribution-settings.png)
+
+| 设置 | 描述/用例 |
+| --- | --- |
+| [!UICONTROL 设置归因] | 允许您指定要在使用此量度时默认应用的属性设置。 此默认值可在自由格式表或计算量度中覆盖。 |
+| [!UICONTROL 归因模型] | 允许您指定默认归因模型 — 仅在打开[!UICONTROL 使用非默认归因模型]设置时处于活动状态。 默认为[!UICONTROL 上次触摸]。 选项有：上次触摸，首次触摸，线性，参与，同一触摸， U形， J曲线，逆J，时间衰减，定制，算法。 其中一些选项会创建需要填写的其他字段 — 如“自定义”或“时间衰减”。 您可以使用相同的字段创建多个量度 — 这意味着您可以有一个[!UICONTROL 最近联系]收入量度和一个[!UICONTROL 首次联系]收入量度，但基于模式中的相同收入字段。 |
+| [!UICONTROL 回顾窗口] | 允许您为量度指定默认回顾窗口 — 仅在打开[!UICONTROL 使用非默认归因模型]设置时处于活动状态。 选项有：人员(报告窗口)、会话、自定义。 选择“自定义”后，我们还为您提供选择任意天数/周/月/等的选项。 （最多90天），就像Attribution IQ。 您可以使用相同的模式字段来拥有多个量度，但每个量度都具有单独的回顾窗口。 |
+
+### 配置“包含/排除值”设置
+
+此设置允许您在报告时修改要查询的基础数据。 它与过滤器不同。 但过滤器会尊重这一新维度，路径和归因也会如此。
+
+例如，您可以在pageTitle字段中创建一个维度，但将其命名为“error pages”，并包含[!UICONTROL 包含短语]“error”的任何页面。
+
+![](assets/include-exclude.png)
+
+| 设置 | 描述/用例 |
+| --- | --- |
+| [!UICONTROL 区分大小写] | 默认=开启。 此设置仅适用于[!UICONTROL 包含/排除值]部分。 它允许您确定您所应用的包含/排除规则是否应区分大小写。 |
+| [!UICONTROL 匹配] | 允许您指定在归因和过滤器之前要考虑的报告值（例如，仅使用包含短语“error”的值）。 您可以指定：**[!UICONTROL 如果所有条件均满足]**，或&#x200B;**[!UICONTROL 如果任何条件均满足]**。 |
+| [!UICONTROL 标准] | 允许您指定应应用于特定筛选器规则的匹配逻辑。<ul><li>**字符串**:包含短语、包含任何术语、包含所有术语、不包含任何术语、不包含短语、等号、不等于、开始和结尾</li><li>**多次/整数**:等于、不等于、大于、小于、大于或等于、小于或等于</li><li>**日期**:等于，不等于，晚于，是之前，发生在</li></ul> |
+| [!UICONTROL 匹配操作数] | 允许您指定应应用匹配运算符的匹配操作数。<ul><li>**字符串**:文本字段</li><li>**多次/整数**:带有数值向上/向下箭头的文本字段</li><li>**日期**:日粒度选择器（日历）</li><li>**日期时间**:日期和时间粒度选择器</li></ul> |
+| [!UICONTROL 添加规则] | 允许您指定附加的匹配运算符和操作数。 |
+
+### 配置行为设置
+
+![](assets/behavior-settings.png)
+
+| 设置 | 描述/用例 |
+| --- | --- |
+| [!UICONTROL 对实例计数] | 允许您指定用作量度的数字或日期类型字段是否应计算其设置的时间，而不是值本身。<br> 如果要将数字字段的实例相加，并且只想将某个字段与内部实际值相 ** 加的次数相加。<br>这对于从Revenuefield创  建Ordersmetric  （例如）很有用。如果已设置收入，则我们要计入1个订单，而不是数值收入额。 |
+
+### 配置[!UICONTROL 无值选项]设置
+
+[!UICONTROL “无值选] 项”设置类似于“未  指定”或“  未求值”报告。在数据视图UI中，您可以逐个组件决定在报告中如何处理这些值。 您还可以将[!UICONTROL No value]重命名为更适合您的环境的内容，如[!UICONTROL Null]、[!UICONTROL Not set]或其他。
+
+另请注意，无论您在此字段中指定什么，都可用于报告中[!UICONTROL 无值]行项的特殊UI处理，如[!UICONTROL 无值选项]设置中所述。
+
+![](assets/no-value-options.png)
+
+| 设置 | 描述/用例 |
+| --- | --- |
+| [!UICONTROL 如果显示，请调用“无”值……] | 您可以在此处将&#x200B;**[!UICONTROL 无值]**&#x200B;重命名为其他值。 |
+| [!UICONTROL 默认情况下不显示无值] | 不在报告中显示此值。 |
+| [!UICONTROL 默认情况下显示无值] | 在报告中显示此值。 |
+| [!UICONTROL 将无值视为值] | 此设置将用您在[!UICONTROL 显示时，调用无值……下指定的文本替换数据中的空值]。 例如，如果您将移动设备类型作为维度，则可以将&#x200B;**[!UICONTROL No value]**&#x200B;项重命名为“Desktop”。 请注意，将此字段更改为自定义值时，自定义值将被视为合法字符串值。 因此，如果在此字段中输入值“Red”，则数据本身中出现的字符串“Red”的任何实例也将滚动到您指定的同一行项目下。 |
+
+### 配置持久性设置
+
+![](assets/persistence.png)
+
+有关详细信息，请参阅有关[持久性](/help/data-views/persistence.md)的主题。
+
+| 设置 | 描述/用例 |
+| --- | --- |
+| [!UICONTROL 设置持久性] | 切换键 |
+| [!UICONTROL 分配] | 允许您指定用于持久性的维的分配模型。 选项有：[!UICONTROL 最近]、[!UICONTROL Original]、[!UICONTROL Instance]、[!UICONTROL All]。 如果您希望某个值持续存在（与传统Analytics中的eVar类似），您将在此处设置它。 唯一的关键区别是您可以设置的最大持久性为90天。 此外，[!UICONTROL 不过期]不是选项。 |
+| [!UICONTROL 过期] | 用于指定维的持久性窗口。 选项有：[!UICONTROL 会话]（默认）、[!UICONTROL 人员]、[!UICONTROL 时间]、[!UICONTROL 量度]。 您可能需要使购买时的维度过期（例如内部搜索词或其他促销用例）。 [!UICONTROL 量] 度允许您将任何定义的量度指定为此维度的过期时间(例如，  购买量度)。 |
+
+### 配置值分段设置
+
+例如，在Workspace报告中，一个“介于5和10之间”的时段将显示为行项目“5到10”。
+
+![](assets/value-bucketing.png)
+
+| 设置 | 描述/用例 |
+| --- | --- |
+| [!UICONTROL 分段值] | 允许您创建数字维度的分时段版本。 这允许您将收入时段或其他数值作为报告中的维度进行报告。 |
+| [!UICONTROL 最高] | 允许您指定第一个数字维度时段的边界。 这仅适用于数字维。 |
+| [!UICONTROL 介于] | 允许您指定后续数字维度时段的边界。 |
+| [!UICONTROL 添加分段] | 允许您向数字维度分段添加另一个时段。 |
+
+### 使用[!UICONTROL 标准组件]
+
+除了从模式元素创建量度和维度之外，您还可以在数据视图中使用标准组件。
+
+[!UICONTROL 标准] 组件是不是从数据集模式字段生成，而是系统生成的组件。在任何数据视图中都需要某些系统组件，以便于在Analysis Workspace中使用报告功能，而其他系统组件是可选的。
+
+![](assets/standard-components.png)
+
+默认情况下，所需的标准组件会添加到您的数据视图。
+
+| 组件名称 | Dimension或量度 | 注释 |
+| --- | --- | --- |
+| [!UICONTROL 人员] | 指标 | 此量度基于在连接中指定的人员ID。 |
+| [!UICONTROL Sessions] | 指标 | 此量度基于以下指定的会话化设置。 |
+| [!UICONTROL 事件] | 指标 | 此量度表示连接中所有事件数据集的行数。 |
+| [!UICONTROL 日] | 维度 | “天”维度报告给定量度发生的天。 第一个维度项目是日期范围内的第一天，最后一个维度项目是日期范围内的最后一天。 |
+| [!UICONTROL 周] | 维度 | “周”维度报告给定量度出现的周。 第一个维度项目是日期范围内的第一周，最后一个维度项目是日期范围内的最后一周。 |
+| [!UICONTROL 月] | 维度 | 月维度报告给定量度发生的月份。 第一个维度项目是日期范围内的第一个月，最后一个维度项目是日期范围内的最后一个月。 |
+| [!UICONTROL 季度] | 维度 | “季度”维度报告给定量度发生的季度。 第一个维度项目是日期范围内的第一个季度，最后一个维度项目是日期范围内的最后一个季度。 |
+| [!UICONTROL 年] | 维度 | “年”维度报告给定量度发生的年份。 第一个维度项目是日期范围内的第一个年份，最后一个维度项目是日期范围内的最近年份。 |
+| [!UICONTROL 小时] | 维度 | “小时”维度报告给定量度发生的小时数（向下舍入）。 第一个维度项目是日期范围内的第一个小时，最后一个维度项目是日期范围内的最后一个小时。 |
+| [!UICONTROL 分钟] | 维度 | “分钟”维度报告给定量度发生的分钟（向下舍入）。 第一个维度项目是日期范围内的第一分钟，最后一个维度项目是日期范围内的最后一分钟。 |
+
+### 可选标准组件
+
+可选标准组件位于&#x200B;**[!UICONTROL 标准组件]**&#x200B;选项卡下。
+
+| 组件名称 | Dimension或量度 | 注释 |
+| --- | --- | --- |
+| [!UICONTROL 会话开始] | 指标 | 此量度计算作为会话第一个事件的事件数。 当在筛选器定义中使用时(例如“[!UICONTROL 会话开始]存在”)，它向下过滤器到每个会话的第一个事件。 |
+| [!UICONTROL 会话结束] | 指标 | 此量度计算作为会话最后事件的事件数。 与[!UICONTROL 会话开始]类似，它还可用于过滤器定义中，以将事项筛选到每个会话的最后一个事件。 |
+| [!UICONTROL 逗留时间] | 指标 | [!UICONTROL 逗留时间]量度将一个维度的两个不同值之间的时间相加。 |
+| [!UICONTROL 每个事件逗留时间] | 维度 | [!UICONTROL Time Spent Per Event] 将Time Spentmetric存 [!UICONTROL 储] 到Event  存储段。 |
+| [!UICONTROL 每个会话逗留时间] | 维度 | [!UICONTROL Time Spent Per Session] 将Time Spentmetric [!UICONTROL 分] 段放入Session  buckets。 |
+| [!UICONTROL 每人逗留时间] | 维度 | [!UICONTROL Time Spent Per Per Personcupes] 将Time Spentmetric [!UICONTROL 放] 入Personbuckets  中。 |
+| [!UICONTROL 批ID] | 维度 | 表示[!UICONTROL 事件]为其一部分的Experience Platform批。 |
+| [!UICONTROL 数据集 ID] | 维度 | 表示[!UICONTROL 事件]为其一部分的Experience Platform数据集。 |
+
+### 筛选模式字段和维度/量度
+
+您可以按以下模式类型过滤左边栏中的数据字段：
+
+![](assets/filter-fields.png)
+
+您还可以按数据集以及模式字段是否包含数据或是否是标识进行筛选。 默认情况下，我们将&#x200B;**[!UICONTROL 包含数据]**&#x200B;过滤器应用于所有数据视图。
+
+![](assets/filter-other.png)
+
+
+## 3.为您添加全局过滤器数据视图
+
+您可以添加适用于整个过滤器视图的。 此过滤器将应用于您在Workspace中运行的任何报表。
+
+1. 单击[!UICONTROL 数据视图]中的[!UICONTROL 设置]选项卡。
+1. 将滤镜从左边栏中的列表拖到[!UICONTROL 添加过滤器]字段。
