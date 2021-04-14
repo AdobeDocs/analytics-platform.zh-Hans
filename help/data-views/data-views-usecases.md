@@ -1,14 +1,14 @@
 ---
 title: Customer Journey Analytics中数据视图的用例
 description: 在Customer Journey Analytics中展示数据视图的灵活性和强大功能的多种用例
+exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 translation-type: tm+mt
-source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
+source-git-commit: f9fae62af3d57b2b700c26a402c7232c0255806b
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 1%
 
 ---
-
 
 # 数据视图使用案例
 
@@ -45,5 +45,5 @@ ht-degree: 1%
 
    ![](assets/bucketing.png)
 
-有关其他视图设置的详细信息，请参阅[创建视图](/help/data-views/create-dataview2.md)。
+有关其他视图设置的详细信息，请参阅[创建视图](/help/data-views/create-dataview.md)。
 有关数据视图的概念概述，请参阅[视图概述](/help/data-views/data-views.md)。
