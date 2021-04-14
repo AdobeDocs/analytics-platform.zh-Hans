@@ -3,7 +3,7 @@ title: (B2B) 将帐户级别的数据作为查询数据集进行添加
 description: 了解如何将基于帐户的数据作为查询数据集添加到 CJA
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 translation-type: tm+mt
-source-git-commit: 9bbc625aca9e0b8384b3e95d79fd695fda863f0b
+source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 89%
@@ -22,7 +22,7 @@ ht-degree: 89%
 
 通过将帐户级别信息作为[lookup](/help/getting-started/cja-glossary.md)数据集导入，您可以完成所有这些操作。
 
-首先，在 Adobe Experience Platform 中创建一个查询模式，然后通过引入基于 .csv 的帐户级别数据来创建查询表数据集。然后，您继续在Customer Journey Analytics(CJA0)中创建一个连接，该连接组合了不同的数据集，包括您创建的查找数据集。 然后，您创建一个数据视图，并最终能够在Workspace中利用所有这些数据。
+首先，在 Adobe Experience Platform 中创建一个查询模式，然后通过引入基于 .csv 的帐户级别数据来创建查询表数据集。然后，您继续在Customer Journey Analytics(CJA0)中创建一个连接，该连接组合了不同的数据集，包括您创建的查找数据集。 您随后将创建一个数据视图，并最终能够在Workspace中利用所有这些数据。
 
 >[!NOTE]
 >
