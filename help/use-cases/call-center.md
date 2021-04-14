@@ -3,7 +3,7 @@ title: 导入呼叫中心数据和网站数据
 description: 了解如何创建数据集以关联呼叫中心数据和网站数据。
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f9fae62af3d57b2b700c26a402c7232c0255806b
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 100%
@@ -80,7 +80,7 @@ CJA 需要使用通用标识符来生成[合并的数据集](../connections/comb
 1. 将包含网页名称的维度拖到一个自由格式表可视化图表上。
 1. 将量度替换为要衡量转化情况的所需呼叫中心量度。
 1. 单击该量度标题附近的齿轮图标。单击&#x200B;**[!UICONTROL 使用非默认的归因模型]**。
-1. 设置所需的[归因模型](/help/data-views/configure-dataviews.md#Attribution-model)。
+1. 设置所需的[归因模型](/help/data-views/create-dataview.md)。
 
 生成的报告将显示呼叫中心数据中排名最靠前的量度。<!-- Complement with donut visualization -->
 
