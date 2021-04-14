@@ -3,9 +3,9 @@ title: 什么是Customer Journey Analytics中的视图?
 description: 数据视图指定您希望如何解释CJA连接中的数据元素，如量度、维度、会话等。
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 translation-type: tm+mt
-source-git-commit: 3c5cd2aa571d99b4c04aaf24b86d5e64fc8acec6
+source-git-commit: 7ba17dd1fc27eefdfe061eb74b4e52c575647d2c
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1089'
 ht-degree: 4%
 
 ---
@@ -55,7 +55,7 @@ Customer Journey Analytics 中的工作区项目均基于数据视图。
 
 * 您可以&#x200B;**在数据视图中重命名容器**，并在任何基于该数据视图的Workspace项目中将那些重命名的容器曲面重命名。
 
-## 先决条件
+## 数据视图先决条件
 
 * 在创建数据视图之前，您需要[设置一个或多个与 Experience Platform 数据集的连接](/help/connections/create-connection.md)。
 * 要创建或管理数据视图，您需要Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=zh-Hans#admin-access-permissions)中的[权限集。
