@@ -3,9 +3,9 @@ title: 将Google Analytics数据收录到Adobe Experience Platform
 description: '解释如何利用Customer Journey Analytics(CJA)将Google Analytics和火库数据引入Adobe Experience Platform。 '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 0f1d7e0d26eefec46edabba4d0b8709c3bad6b8f
+source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1110'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Adobe数据模型最强大的方面之一是，它允许您将所有客户交互
 | **通用分析** | Google Analytics360 | 执行下面说明步骤1 - 5 |
 | **Google Analytics4** | 免费的GA版本或Google Analytics360 | 执行下面说明的步骤1和3-5。 无需步骤2。 |
 
-## 收录历史数据
+## 收录历史（回填）数据
 
 ### 1.将Google Analytics数据连接到BigQuery
 
@@ -78,19 +78,26 @@ UNNEST(hits) AS hit
 
 请参阅[这些说明](https://support.google.com/analytics/answer/7029846?hl=en&amp;ref_topic=9359001#zippy=%2Cold-export-schema%2Cuse-this-script-to-migrate-existing-bigquery-datasets-from-the-old-export-schema-to-the-new-one%2Cscript-migration-scriptsql)。
 
-或视图此视频：
+或者，视图此视频：
 
 >[!VIDEO](https://video.tv.adobe.com/v/332634)
 
 ### 3.将JSON格式的Google Analytics事件导出到Google Cloud存储，并将它们保存到存储桶
 
-接下来，您将以JSON格式将Google Analytics事件导入Google Cloud存储。
+接下来，您将以JSON格式将Google Analytics事件导出到Google Cloud存储。 只需单击&#x200B;**“导出”>“导出到GCS**”。 数据一旦到达，即可导入Adobe Experience Platform。
 
 请参阅[这些说明](https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089)。
 
-### 4.将来自Google Cloud存储的数据导入Experience Platform
+### 4.将数据从Google Cloud存储导入Experience Platform
 
-在Experience Platform中，选择&#x200B;**[!UICONTROL 源]**&#x200B;并找到&#x200B;**[!UICONTROL Google Cloud存储]**&#x200B;选项。 从那里，您只需要找到从“大查询”保存的数据集。
+在Experience Platform中，选择&#x200B;**[!UICONTROL 源]**&#x200B;并找到&#x200B;**[!UICONTROL Google Cloud存储]**&#x200B;选项。 从那里，您只需要找到从BigQuery保存的数据集。
+
+请牢记这一点：
+
+* 确保选择JSON格式。
+* 您可以选择现有数据集或创建新数据集（推荐）。
+* 确保为历史Google Analytics数据和实时流Google Analytics数据选择相同的模式，即使它们位于不同的数据集中。 您随后可以合并[CJA连接](/help/connections/combined-dataset.md)中的数据集。
+
 
 视图此视频，以获取说明：
 
@@ -98,7 +105,7 @@ UNNEST(hits) AS hit
 
 ### 5.将GCS事件导入Adobe Experience Platform并映射到XDM模式
 
-接下来，您可以将GA事件模式映射到您之前创建的现有数据集，或使用您选择的XDM创建新数据集。 选择模式后，Experience Platform会应用机器学习，自动将Google Analytics数据中的每个字段映射到您自己的模式。
+接下来，您可以将GA事件模式映射到您之前创建的现有数据集，或使用您选择的XDM创建新数据集。 选择模式后，Experience Platform会应用机器学习，自动将Google Analytics数据中的每个字段预映射到您的[ XDM模式](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en#ui)。
 
 映射很容易更改，您甚至可以从Google Analytics数据创建派生或计算字段。 完成将字段映射到XDM模式后，您可以重复计划此导入，并在摄取过程中应用错误验证。 这可确保您导入的数据没有任何问题。
 
