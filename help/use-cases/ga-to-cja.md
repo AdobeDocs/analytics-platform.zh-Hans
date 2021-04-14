@@ -3,9 +3,9 @@ title: 将Google Analytics数据收录到Adobe Experience Platform
 description: '解释如何利用Customer Journey Analytics(CJA)将Google Analytics和火库数据引入Adobe Experience Platform。 '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
+source-git-commit: 7ba17dd1fc27eefdfe061eb74b4e52c575647d2c
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1193'
 ht-degree: 1%
 
 ---
@@ -107,7 +107,25 @@ UNNEST(hits) AS hit
 
 接下来，您可以将GA事件模式映射到您之前创建的现有数据集，或使用您选择的XDM创建新数据集。 选择模式后，Experience Platform会应用机器学习，自动将Google Analytics数据中的每个字段预映射到您的[ XDM模式](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en#ui)。
 
+![](assets/schema-map.png)
+
 映射很容易更改，您甚至可以从Google Analytics数据创建派生或计算字段。 完成将字段映射到XDM模式后，您可以重复计划此导入，并在摄取过程中应用错误验证。 这可确保您导入的数据没有任何问题。
+
+**时间戳计算字段**
+
+对于Google Analytics数据中的`timestamp`字段，您必须在Experience Platform 模式 UI中创建一个特殊的计算字段。 单击&#x200B;**[!UICONTROL 添加计算字段]**&#x200B;并将`timestamp`字符串放入`date`函数中，如下所示：
+
+`date(timestamp, "yyyy-MM-dd HH:mm:ssZ")`
+
+然后，您需要将此计算字段保存到模式中的时间戳数据结构：
+
+![](assets/timestamp.png)
+
+**_id XDM计算字段**
+
+`_id`模式字段中必须有一个值 — CJA不在乎该值是什么。 您只需向字段中添加“1”即可：
+
+![](assets/_id.png)
 
 ## 摄取实时流Google Analytics数据
 
