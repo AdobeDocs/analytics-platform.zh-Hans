@@ -2,9 +2,9 @@
 title: Dimension在Customer Journey Analytics中基数非常高
 description: 介绍在Customer Journey Analytics中处理高基数维度的最佳实践
 translation-type: tm+mt
-source-git-commit: 9af5c74164462851ac4a6cbc4764569789f677fc
+source-git-commit: d35ff80b7a3a3235f13640d88b0efcfb3e7cc30b
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Customer Journey Analytics(CJA)不对可在单个维度中报告的唯一值或�
 
 ### 1.行计数可能不能精确报告
 
-高基数维度的行计数可能无法精确报告。 发生这种情况时，自由格式表将提供如下指示：
+高基数维度的行计数可能无法精确报告。 发生这种情况时，自由格式表将提供一个指示，如下所示：
 
 ![](assets/high-cardinality.png)
 
