@@ -2,14 +2,14 @@
 description: 同类群组分析的用例示例。
 keywords: Analysis Workspace
 title: 同类群组分析用例
-topic: Reports and Analytics
+feature: 报告和分析基础
 uuid: 5ec46f84-5702-4bc1-a796-874a3abe87c9
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
 translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: 3c10451d5a70e4f733634efb9648da843e4c0db1
 workflow-type: tm+mt
 source-wordcount: '966'
-ht-degree: 82%
+ht-degree: 81%
 
 ---
 
