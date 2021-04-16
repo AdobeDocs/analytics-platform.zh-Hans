@@ -2,16 +2,16 @@
 description: 在 Analysis Workspace 中创建自定义日期范围，并将它们另存为“时间”组件。
 keywords: Analysis Workspace
 title: 创建自定义日期范围
-topic: Reports and analytics
+feature: 报告和分析基础
 uuid: c8873d41-454d-4f22-ad1f-38cacec5a3bc
+exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 3c10451d5a70e4f733634efb9648da843e4c0db1
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 100%
+source-wordcount: '286'
+ht-degree: 98%
 
 ---
-
 
 # 创建自定义日期范围
 
