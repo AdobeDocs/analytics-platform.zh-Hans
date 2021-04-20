@@ -2,7 +2,7 @@
 description: 在 Analysis Workspace 中创建自定义日期范围，并将它们另存为“时间”组件。
 keywords: Analysis Workspace
 title: 创建自定义日期范围
-feature: 报告和分析基础
+feature: Reports & Analytics Basics
 uuid: c8873d41-454d-4f22-ad1f-38cacec5a3bc
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
 translation-type: tm+mt
