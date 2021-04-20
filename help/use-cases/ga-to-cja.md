@@ -3,9 +3,9 @@ title: 将Google Analytics数据收录到Adobe Experience Platform
 description: '解释如何利用Customer Journey Analytics(CJA)将Google Analytics和火库数据引入Adobe Experience Platform。 '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 1dcc566f286b0399e5ebd1e06e9d42a9522a1684
+source-git-commit: de822eb00a5e205889b4fa96f729845ad4c7e356
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1217'
 ht-degree: 7%
 
 ---
@@ -99,10 +99,6 @@ UNNEST(hits) AS hit
 ![](assets/schema-map.png)
 
 映射很容易更改，您甚至可以从Google Analytics数据创建派生或计算字段。 完成将字段映射到XDM模式后，您可以重复计划此导入，并在摄取过程中应用错误验证。 这可确保您导入的数据没有任何问题。
-
-视图此视频，以获取说明：
-
->[!VIDEO](https://video.tv.adobe.com/v/332641)
 
 **“时间戳”计算字段**
 
