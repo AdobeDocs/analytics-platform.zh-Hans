@@ -11,9 +11,9 @@ user-guide-description: 本指南提供 Customer Journey Analytics 自助式帮�
 breadcrumb-title: Customer Journey Analytics 指南
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
 translation-type: tm+mt
-source-git-commit: 3c10451d5a70e4f733634efb9648da843e4c0db1
+source-git-commit: a4e95424ee304869e76a0532b7240290a3f13418
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '447'
 ht-degree: 95%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 95%
 + 数据视图 {#cja-dataviews}
    + [数据视图概述](data-views/data-views.md)
    + [创建数据视图](data-views/create-dataview.md)
-   + [数据视图使用案例](data-views/data-views-usecases.md)
+   + [数据视图用例](data-views/data-views-usecases.md)
    + [持久性](data-views/persistence.md)
 + 工作区项目 {#cja-workspace}
    + [Analysis Workspace 概述](analysis-workspace/home.md)
@@ -130,7 +130,7 @@ ht-degree: 95%
       + [划分维度](components/dimensions/t-breakdown-fa.md)
       + [时间划分维度](components/dimensions/time-parting-dimensions.md)
       + [Dimension基数很高](components/dimensions/high-cardinality.md)
-   + [指标](components/apply-create-metrics.md)
+   + [量度](components/apply-create-metrics.md)
    + 过滤器 {#cja-filters}
       + [过滤器概述](components/filters/filters-overview.md)
       + [创建过滤器](components/filters/create-filters.md)
@@ -157,8 +157,9 @@ ht-degree: 95%
    + [使用“营销渠道”维度](use-cases/marketing-channels.md)
    + [向数据集添加全局查找](use-cases/global-lookups.md)
    + [将Google Analytics数据收录到Adobe Experience Platform](use-cases/ga-to-cja.md)
+   + [在CJA中报告Google Analytics数据](use-cases/ga-to-cja-reporting.md)
 + Analytics 功能板{#cja-dashboards}
-   + [Analytics 功能板 - 概述](mobile-app/home.md)
+   + [Analytics 功能板 — 概述](mobile-app/home.md)
    + [管理人指南](mobile-app/curator.md)
    + [执行用户快速入门指南](mobile-app/executive.md)
 + 隐私权 {#cja-privacy}
