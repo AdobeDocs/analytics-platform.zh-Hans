@@ -1,49 +1,45 @@
 ---
-title: Customer Journey Analytics中数据视图的用例
-description: 在Customer Journey Analytics中展示数据视图的灵活性和强大功能的多种用例
+title: Customer Journey Analytics 中的数据视图的用例
+description: 显示 Customer Journey Analytics 中数据视图的灵活性和强大功能的多个用例
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 translation-type: tm+mt
-source-git-commit: f9fae62af3d57b2b700c26a402c7232c0255806b
+source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 1%
+source-wordcount: '342'
+ht-degree: 100%
 
 ---
 
-# 数据视图使用案例
+# 数据视图用例
 
->[!IMPORTANT]
->
->此功能将于2021年4月22日正式推出。
+这些用例显示了 Customer Journey Analytics 中数据视图的灵活性和强大功能。
 
-这些用例显示了Customer Journey Analytics视图的灵活性和强大功能。
+## 根据 pageTitle（字符串）架构字段创建一个“订单”量度
 
-## 从pageTitle（字符串）模式字段创建订单量度
+例如，在创建数据视图时，您可以根据字符串形式的 [!UICONTROL pageTitle] 架构字段创建一个[!UICONTROL 订单]量度。步骤如下：
 
-例如，在创建视图时，您可以从作为字符串的[!UICONTROL pageTitle]模式字段创建[!UICONTROL Orders]量度。 以下是步骤：
-
-1. 在“组件”选项卡上，将[!UICONTROL pageTitle]拖到[!UICONTROL 包含的组件]下的[!UICONTROL Metrics]部分。
+1. 在“组件”选项卡上，将 [!UICONTROL pageTitle] 拖入[!UICONTROL 包含的组件]下的[!UICONTROL 量度]部分中。
    ![](assets/use-case1a.png)
-1. 现在，突出显示您刚拖入的量度，并将其重命名在右侧[!UICONTROL 组件设置]下：
+1. 现在，突出显示您刚才拖入的量度，并在右侧的[!UICONTROL 组件设置]下重命名它：
    ![](assets/orders.png)
-1. 打开右侧的[!UICONTROL 包含/排除值]对话框，并指定以下内容：
+1. 打开右侧的[!UICONTROL 添加/排除值]对话框，并指定以下内容：
    ![](assets/orders2.png)
 
-   “确认”短语表示这是订单。 在查看所有符合这些条件的页面标题后，将对每个实例计为“1”。 结果是新量度（而非计算量度）。 包含/排除值的量度可在任何其他可以使用的量度中使用。 它可与Attribution IQ、过滤器及其他您可以使用标准量度的地方配合使用。
-1. 您可以进一步指定此量度的归因模型，如[!UICONTROL 上次触摸]，并且[!UICONTROL 会话]的[!UICONTROL 回顾窗口]。
-您还可以从同一字段创建另一个[!UICONTROL Orders]量度，并为它指定不同的归因模型，如[!UICONTROL First Touch]和不同的[!UICONTROL 回顾窗口]，如[!UICONTROL 30天]。
+   “确认”短语指示这是个订单。查看满足这些条件的所有页面标题后，系统会为每个实例统计“1”。结果是一个新量度（而非计算量度）。具有已添加/排除值的量度可用在可使用任何其他量度的任意位置。它可与 Attribution IQ、过滤器配合使用，以及用在可使用标准量度的任何其他位置。
+1. 您可以进一步为此量度指定归因模型，例如[!UICONTROL 回顾时间范围]为[!UICONTROL 会话]的[!UICONTROL 最近联系]。
+您还可以根据同一字段创建另一个[!UICONTROL 订单]量度，并为其指定不同的归因模型（例如[!UICONTROL 首次联系]）和不同的[!UICONTROL 回顾时间范围]（例如 [!UICONTROL 30 天]）。
 
-## 使用整数作为维
+## 使用整数作为维度
 
-以前，整数在CJA中会自动被视为量度。 现在，数字(包括来自Adobe Analytics的自定义事件)可以视为尺寸。 示例如下：
+以前，整数会被自动视为 CJA 中的量度。现在，数字（包括 Adobe Analytics 中的自定义事件）可被视为维度。示例如下：
 
-1. 将[!UICONTROL call_length_min]整数拖动到[!UICONTROL 包含的组件]下的[!UICONTROL Dimension]部分：
+1. 将 [!UICONTROL call_length_min] 整数拖入[!UICONTROL 包含的组件]下的[!UICONTROL 维度]部分中：
 
    ![](assets/integers.png)
 
-1. 您现在可以添加[!UICONTROL 值分段]以按报告以分段方式显示此维。 (如果没有分段，此维度的每个实例将在Workspace报告中显示为行项。)
+1. 您现在可以添加[!UICONTROL 值分段]以分段方式在报告中表示此维度。（若不添加分段，此维度的每个实例都会显示为 Workspace 报告中的一个行项目。）
 
    ![](assets/bucketing.png)
 
-有关其他视图设置的详细信息，请参阅[创建视图](/help/data-views/create-dataview.md)。
-有关数据视图的概念概述，请参阅[视图概述](/help/data-views/data-views.md)。
+有关数据视图设置的更多信息，请参阅[创建数据视图](/help/data-views/create-dataview.md)。
+有关数据视图的概念性概述，请参阅[数据视图概述](/help/data-views/data-views.md)。
