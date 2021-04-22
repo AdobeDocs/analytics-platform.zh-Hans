@@ -3,10 +3,10 @@ title: Customer Journey Analytics 中的数据视图是什么？
 description: 数据视图会指定您要如何解释 CJA 连接中的数据元素，例如量度、维度、会话等。
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 translation-type: tm+mt
-source-git-commit: 8f3b57e0851441b86a282411674ffe67ed34ea32
+source-git-commit: 9b45873dbdc1a400b849723051d921b49bff6d65
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1095'
+ht-degree: 96%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您在数据视图中选择或更改的任何设置都可追溯，并且无破坏性。换言之，它们不会永久更改您的底层数据。
+>您在数据视图中选择或更改的任何设置都可追溯，并且无破坏性。换句话说，它们不会永久地更改您的基础数据。
 
 您可以使用完全不同的组件集（维度/量度）为同一连接创建不同的数据视图。或者，使用访问超时、归因等的不同设置创建数据视图。例如，您可以具有一个将所有维度均设置为[!UICONTROL 最近联系]的数据视图，同时，还可以具有另一个将所有维度均设置为[!UICONTROL 首次联系]的数据视图（基于同一数据集）。
 
@@ -60,13 +60,13 @@ Customer Journey Analytics 中的 Workspace 项目均基于数据视图。
 
 一些数据视图设置可以在 Analysis Workspace 中的项目级别被覆盖，而另一些则不然。
 
-* 回顾时间范围
+* [!UICONTROL 回顾时间范围]
 * 量度归因
-* 用户是否会在报告中看到“无值”行项目
+* 用户是否在报表中看到[!UICONTROL 无值]行项
 
 ## 您无法在 Workspace 中覆盖的数据视图设置
 
-* 组件类型
+* [!UICONTROL 组件类型]
 * 量度格式
 * 数据视图名称
 * 维度分配
