@@ -3,10 +3,10 @@ title: CJA 文档更新
 description: 列表自2019年12月以来针对Customer Journey Analytics文档集的内容更新。
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 translation-type: tm+mt
-source-git-commit: 8f3b57e0851441b86a282411674ffe67ed34ea32
+source-git-commit: 9b45873dbdc1a400b849723051d921b49bff6d65
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '304'
+ht-degree: 14%
 
 ---
 
@@ -16,18 +16,20 @@ ht-degree: 0%
 
 | 日期 | 更新说明 |
 | --- | --- |
-| 2021 年 4 月 | 有关[增强的数据视图的新主题体验](/help/data-views/data-views.md)。 |
+| 2021 年 4 月 | 有关[增强数据视图的新主题体验](/help/data-views/data-views.md)。 |
 | 2021 年 4 月 | 有关[收录Google Analytics数据](/help/use-cases/ga-to-cja.md)和[分析该数据](/help/use-cases/ga-to-cja-reporting.md)的新主题 |
 | 2021 年 4 月 | 在Workspace中添加了关于[计划报告](/help/analysis-workspace/curate-share/t-schedule-report.md)的主题 |
 | 2021 年 2 月 | 有关在Adobe Experience Platform](/help/use-cases/marketing-channels.md)中使用[营销渠道维度的新主题 |
 | 2021 年 3 月 | 添加了有关[分析仪表板](/help/mobile-app/home.md)（移动应用程序）支持的主题 |
 | 2021 年 3 月 | 工作区中[用户首选项](/help/analysis-workspace/user-preferences.md)的新主题 |
+| 2021 年 2 月 | 发布了新的[CJA API](https://www.adobe.io/cja-apis/docs/)文档 |
 | 2021 月 1 日 | 有关[向数据集](/help/use-cases/global-lookups.md)添加全局查找的新主题 |
 | 2020 年 11 月 13 日 | 有关[跨渠道分析](/help/connections/cca/overview.md)的新主题，可让您重新键入数据集的个人ID，从而实现多个数据集的无缝组合。 |
 | 2020 年 11 月 13 日 | 在[导入呼叫中心和Web数据](/help/use-cases/call-center.md)上添加了新用例。 |
 | 2020 年 11 月 11 日 | 在[估计连接大小](/help/connections/estimate-connection-size.md)上添加了主题。 |
 | 2020 年 11 月 10 日 | 在[常见问题解答](/help/getting-started/cja-faq.md)中添加了有关删除数据组件的含义的部分。 |
 | 2020 年 11 月 2 日 | [Customer Journey Analytics功能支持](/help/getting-started/cja-aa.md)页面的更新。 |
+| 2020 年 11 月 | 在[上添加了内容，删除了连接的回填限制](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#backfill-historical-data)。 |
 | 2020 年 10 月 7 日 | 在[组合事件数据集](/help/connections/combined-dataset.md)上添加了主题。 |
 | 2020 年 9 月 15 日 | 添加了有关[数据摄取](/help/use-cases/data-ingestion.md)的新主题。 |
 | 2020 年 9 月 2 日 | 更新了有关[用户权限](https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-overview/cja-overview.html#user-access-permissions)的部分 |
