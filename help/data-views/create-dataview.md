@@ -3,10 +3,10 @@ title: 如何在 Customer Journey Analytics 中创建新数据视图。
 description: 描述创建新数据视图所需的所有设置。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
+source-git-commit: c6ce71788582b20f6542ff8e26a7b86d8b1b3eb3
 workflow-type: tm+mt
-source-wordcount: '2794'
-ht-degree: 100%
+source-wordcount: '2795'
+ht-degree: 99%
 
 ---
 
@@ -172,7 +172,7 @@ ht-degree: 100%
 
 ![](assets/standard-components.png)
 
-默认情况下，您的数据视图中添加了必需的标准组件。
+默认情况下，这些必需的标准组件会添加到您的数据视图。
 
 | 组件名称 | 维度或量度 | 注释 |
 | --- | --- | --- |
