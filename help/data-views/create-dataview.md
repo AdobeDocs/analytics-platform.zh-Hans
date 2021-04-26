@@ -3,10 +3,10 @@ title: 如何在 Customer Journey Analytics 中创建新数据视图。
 description: 描述创建新数据视图所需的所有设置。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: c6ce71788582b20f6542ff8e26a7b86d8b1b3eb3
+source-git-commit: 199219322ca5cff48c83c66d1ad7cdab04845b2b
 workflow-type: tm+mt
 source-wordcount: '2795'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -172,13 +172,13 @@ ht-degree: 99%
 
 ![](assets/standard-components.png)
 
-默认情况下，这些必需的标准组件会添加到您的数据视图。
+默认情况下，这些必需的标准组件会添加到每个数据视图。
 
 | 组件名称 | 维度或量度 | 注释 |
 | --- | --- | --- |
-| [!UICONTROL 人员] | 量度 | 此量度基于连接中指定的人员 ID。 |
+| [!UICONTROL 人员] | 量度 | 此量度基于在[!UICONTROL Connection]中指定的人员ID。 |
 | [!UICONTROL 会话] | 量度 | 此量度基于下面指定的会话流程设置。 |
-| [!UICONTROL 事件] | 量度 | 此量度代表连接中所有事件数据集的行数。 |
+| [!UICONTROL 事件] | 量度 | 此量度表示[!UICONTROL Connection]中所有事件数据集的行数。 |
 | [!UICONTROL 日] | 维度 | “日”维度报告给定量度出现的日期。第一个维度项是日期范围内的第一天，最后一个维度项是日期范围内的最后一天。 |
 | [!UICONTROL 周] | 维度 | “周”维度报告给定量度出现的周。第一个维度项是日期范围内的第一周，最后一个维度项是日期范围内的最后一周。 |
 | [!UICONTROL 月] | 维度 | “月”维度报告给定量度出现的月。第一个维度项是日期范围内的第一个月，最后一个维度项是日期范围内的最后一个月。 |
