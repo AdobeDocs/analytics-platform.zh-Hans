@@ -1,14 +1,14 @@
 ---
 title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
+exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 translation-type: tm+mt
-source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
+source-git-commit: 4b543a1566580a8f3060c2387928148d55be70f2
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 100%
+source-wordcount: '1037'
+ht-degree: 99%
 
 ---
-
 
 # Customer Journey Analytics 功能支持
 
@@ -36,14 +36,16 @@ ht-degree: 100%
 | 用户权限/数据访问控制 | CJA 区分 Adobe Admin Console 产品管理员和用户。只有产品管理员才能 1) 创建/更新/删除连接或数据视图，2) 更新/删除其他用户创建的项目、过滤器或计算量度，以及 3) 将工作区项目共享给所有用户 |
 | 跨设备/跨渠道拼接 | 请参阅[跨渠道分析](/help/connections/cca/overview.md)。 |
 | 默认配置的 Analysis Workspace 维度（例如浏览器类型、推荐人类型、操作系统等） | 只要填充基本 XDM 字段（如用户代理或设备 ID），CJA 就可以原生提供这些维度。 对于使用 Analytics Data Connector (ADC) 的客户，其中部分维度可用，但不是全部维度都可用。请参阅我们的[关于通过 ADC 支持哪些 Analytics 变量的文档](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)。 |
-| 报表 API 访问 | 目前使用 Analytics API 2.0 可用。 |
+| 报表 API 访问 | 现在可使用[CJA API](https://www.adobe.io/cja-apis/docs/)使用。 |
+| 计划报表/项目 | 完全支持 |
+| PDF 导出 | 完全支持 |
 
 ## 受支持，但有注意事项
 
 | 功能 | 注释 |
 | --- | --- |
 | 产品变量 | 在该 Experience Platform 中，用户可以在数据集架构中使用“对象”类型字段的数组来满足此用例。在 CJA 中，客户可以使用任意数量的产品变量，而不限于 Adobe Analytics 中的单个变量。 |
-| 营销渠道 | 营销渠道数据通过 Analytics Data Connector 流入 CJA。营销渠道规则仍必须在传统的 Adobe Analytics 中进行配置。某些规则不受支持。有关更多详细信息，请参阅 [CJA 营销渠道文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=en#cja-usecases)。 |
+| 营销渠道 | 营销渠道数据通过 Analytics Data Connector 流入 CJA。营销渠道规则仍必须在传统的 Adobe Analytics 中进行配置。某些规则不受支持。有关更多详细信息，请参阅 [CJA 营销渠道文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=zh-Hans#cja-usecases)。 |
 | 可视化图表 | 除地图可视化图表外，支持所有可视化图表。 |
 | 项目共享 | 仅支持在 CJA 用户之间共享项目，不支持 CJA 与传统 Analysis Workspace 之间共享项目。 |
 | 自定义会话流程 | 支持除移动后台点击之外的所有自定义会话流程功能。 |
@@ -74,9 +76,7 @@ ht-degree: 100%
 | 自定义日历 | 计划将会提供支持。 |
 | 量度去重 | 计划将会提供支持。 |
 | 促销变量持久性 | 计划将会提供支持。 |
-| 计划报表/项目 | 计划将会提供支持。 |
 | 警报 | 计划将会提供支持。 |
-| PDF 导出 | 计划将会提供支持。 |
 | 通过设备图形进行 ID 拼合 | 计划将会提供支持。 |
 | Report Builder（Excel 插件） | 计划将会提供支持。 |
 | 实时报告 | 计划将会提供支持。 |
