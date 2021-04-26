@@ -1,14 +1,14 @@
 ---
 title: 跨渠道分析概述
 description: 在多个数据集中重新生成访客 ID 的键值，以对访客进行拼合。
-translation-type: ht
-source-git-commit: 1ac845af7255428d9df0fa7d4d733f60e014ed83
-workflow-type: ht
-source-wordcount: '1076'
-ht-degree: 100%
+exl-id: 69763313-de27-4487-8e32-8277f1f693d8
+translation-type: tm+mt
+source-git-commit: 5770817d9e72cfde4786c205ecbfb32f34fc13ab
+workflow-type: tm+mt
+source-wordcount: '1128'
+ht-degree: 95%
 
 ---
-
 
 # 跨渠道分析概述
 
@@ -50,6 +50,7 @@ ht-degree: 100%
 * 基于字段的拼接不组合或连接字段。
 * 临时 ID 字段应仅包含一种类型的 ID（即 ID 仅来自一个命名空间）。例如，临时 ID 字段不应包含登录 ID 和电子邮件 ID 的组合。
 * 如果对于同一持久 ID 发生了多个具有同一时间戳的事件，但临时 ID 字段中有多个不同的值，则基于字段的拼接将根据字母顺序进行选择。因此，如果持久 ID A 具有时间戳相同的两个事件，其中一个事件指定 Bob，而另一个指定 Ann，则基于字段的拼接将选择 Ann。
+* 跨渠道分析会跟踪每个永久ID值1年（TTL = 1年）。 如果某个设备在超过一年的时间内没有活动，然后开始再次具有活动，则新事件将与匿名人员关联，直到用户被重新标识（例如通过新登录）。
 
 
 ## 启用跨渠道分析
