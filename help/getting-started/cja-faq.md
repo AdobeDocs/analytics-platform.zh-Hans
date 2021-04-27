@@ -3,10 +3,10 @@ title: Customer Journey Analytics 常见问题解答
 description: Customer Journey Analytics — 常见问题解答。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 translation-type: tm+mt
-source-git-commit: 5667e2f43873061c5350c75fdb830a95b1c9b73f
+source-git-commit: bf8864103dc4e52734952c0c93d49f97e35b2817
 workflow-type: tm+mt
-source-wordcount: '1368'
-ht-degree: 61%
+source-wordcount: '1364'
+ht-degree: 60%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 61%
 | 在 [!UICONTROL Adobe Experience Platform] 上，[!UICONTROL Customer Journey Analytics] 的预期滞后时间是多少？ | <ul><li>在正常负载下：少于 60 分钟&#x200B;<br>**注意：**&#x200B;如果通过管道的数据流量异常高，则预期滞后时间可能会长达 24 小时。</li><li>回填数据（最多支持 13 个月的数据，不考虑数据大小）：少于 4 周</li></ul> |
 | 如何在 [!UICONTROL Customer Journey Analytics] 中将在线数据与离线数据关联起来？ | 只要数据集之间的人员 ID 匹配，[!UICONTROL Customer Journey Analytics] 就可以跨数据集连接过滤器、归因、流量、流失等。。 |
 | 如何将离线数据导入 [!UICONTROL Customer Journey Analytics]？ | 您对Customer Journey Analytics的授权允许您将数据引入Experience Platform。 然后，您可以在[!UICONTROL Customer Journey Analytics]中创建到该数据和视图的连接，以便在Analysis Workspace中进行报告。 如果需要，Experience Platform 的数据载入团队可以为您提供建议或咨询。 |
-| 如何将 [!UICONTROL Adobe Analytics] 数据载入到 [!UICONTROL Customer Journey Analytics]？ | [!UICONTROL Adobe Analytics] 数据可以通过 [Adobe Analytics Source Connector](https://docs.adobe.com/content/help/zh-Hans/experience-platform/sources/connectors/adobe-applications/analytics.html) 连接到 Experience Platform。大多数 [!UICONTROL Adobe Analytics] 字段以 XDM 格式提供，但其他字段尚不可用（如[!UICONTROL 营销渠道]维度）。 |
+| 如何将 [!UICONTROL Adobe Analytics] 数据载入到 [!UICONTROL Customer Journey Analytics]？ | [!UICONTROL Adobe Analytics] 数据可以通过 [Adobe Analytics Source Connector](https://docs.adobe.com/content/help/zh-Hans/experience-platform/sources/connectors/adobe-applications/analytics.html) 连接到 Experience Platform。大多数[!UICONTROL Adobe Analytics]字段以XDM格式导出，但其他字段尚不可用。 |
 | 将数据集元素组合到数据视图中需要多长时间？ | 最初只需几个小时，回填最近 13 个月的数据则需要几天的时间。 |
 | 是否必须导入 PII 数据才能在数据之间建立连接？ | 否，您可以使用任何 ID，包括客户 ID 的哈希，该哈希不是 PII。 |
 
