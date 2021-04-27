@@ -3,10 +3,10 @@ title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 translation-type: tm+mt
-source-git-commit: b149b4e95d8395c41242de7a2a3997315ba142a6
+source-git-commit: bf8864103dc4e52734952c0c93d49f97e35b2817
 workflow-type: tm+mt
 source-wordcount: '1038'
-ht-degree: 81%
+ht-degree: 98%
 
 ---
 
@@ -44,17 +44,16 @@ ht-degree: 81%
 
 | 功能 | 注释 |
 | --- | --- |
-
-|分类 |现在称为“查找数据集”。 Analytics 中使用的分类可以使用 Analytics Classifications Data Connector 导入 Experience Platform 和 CJA。 查找数据集也可以直接上传到 AEP 并在 CJA 中可用。|
-|自定义会话化 |支持除移动后台点击之外的所有自定义会话化功能。 |
-|客户属性 |现在称为“用户档案数据集”，它们不会从Experience Cloud自动导入，但必须上传到AEP，然后才能在CJA中使用。 |
-|设备、浏览器、技术维度 |当AEP数据集包含特定XDM模式字段并符合XDM体验事件类时，会自动包括这些维度。 |
-|条目、退出和逗留时间维度和量度 |支持(现在“登入”和“退出”称为“会话开始”和“会话结束”)，计算方式略有不同。 |
-|eVar持久性设置 | eVar不再是CJA的一部分。 但是，持久性设置现在是数据视图的一部分，且可用于所有维度。请记住，持久基于报表时间处理，而不是数据收集处理。数据视图中的纬度集限制为 90 天最大持久性，不支持无限持久性。|
-|营销渠道 |营销渠道数据通过Analytics Data Connector流入CJA。 营销渠道规则仍必须在传统的 Adobe Analytics 中进行配置。某些规则不受支持。有关更多详细信息，请参阅 [CJA 营销渠道文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=zh-Hans#cja-usecases)。|
-|产品变量 |在该Experience Platform中，用户可以在数据集模式中使用对象类型字段的数组来满足此用例。 在 CJA 中，客户可以使用任意数量的产品变量，而不限于 Adobe Analytics 中的单个变量。|
-|项目共享 |仅在CJA用户之间支持项目共享 — CJA与传统Analysis Workspace之间不支持项目共享。 |
-|可视化 |除地图可视化外，支持所有可视化。 |
+| 分类 | 现在称为“查找数据集”。Analytics 中使用的分类可以使用 Analytics Classifications Data Connector 导入 Experience Platform 和 CJA。 查找数据集也可以直接上传到 AEP 并在 CJA 中可用。 |
+| 自定义会话流程 | 支持除移动后台点击之外的所有自定义会话流程功能。 |
+| 客户属性 | 现在称为“用户档案数据集”，它们不会从 Experience Cloud 中自动导入，必须先将其上传到 AEP，然后才能在 CJA 中使用。 |
+| “设备”、“浏览器”、“技术”维度 | 当 AEP 数据集包含特定 XDM 架构字段并符合 XDM Experience Event 类要求时，将自动包含这些维度。 |
+| 条目、退出和逗留时间维度和量度 | 受支持（现在“进入次数”和“退出次数”称为“会话启动次数”和“会话结束次数”），但计算方式略有不同。 |
+| eVar 持久性设置 | eVar 不再是 CJA 的一部分。但是，持久性设置现在是数据视图的一部分，且可用于所有维度。请记住，持久基于报表时间处理，而不是数据收集处理。数据视图中的纬度集限制为 90 天最大持久性，不支持无限持久性。 |
+| 营销渠道 | 营销渠道数据通过 Analytics Data Connector 流入 CJA。营销渠道规则仍必须在传统的 Adobe Analytics 中进行配置。某些规则不受支持。有关更多详细信息，请参阅 [CJA 营销渠道文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=zh-Hans#cja-usecases)。 |
+| 产品变量 | 在该 Experience Platform 中，用户可以在数据集架构中使用“对象”类型字段的数组来满足此用例。在 CJA 中，客户可以使用任意数量的产品变量，而不限于 Adobe Analytics 中的单个变量。 |
+| 项目共享 | 仅支持在 CJA 用户之间共享项目，不支持 CJA 与传统 Analysis Workspace 之间共享项目。 |
+| 可视化图表 | 除地图可视化图表外，支持所有可视化图表。 |
 
 ## 部分支持
 
