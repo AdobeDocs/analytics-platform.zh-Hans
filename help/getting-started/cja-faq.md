@@ -3,7 +3,7 @@ title: Customer Journey Analytics 常见问题解答
 description: Customer Journey Analytics — 常见问题解答。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 translation-type: tm+mt
-source-git-commit: bf8864103dc4e52734952c0c93d49f97e35b2817
+source-git-commit: 9bc3e1c211c8cafa0abf73a8732d70185a4f0861
 workflow-type: tm+mt
 source-wordcount: '1364'
 ht-degree: 60%
@@ -37,8 +37,8 @@ ht-degree: 60%
 
 ## 3.将数据导入[!UICONTROL Customer Journey Analytics]
 
-| # | 问题 | 回答 |
-| --- | --- | --- |
+| 问题 | 回答 |
+| --- | --- |
 | 是否可以将来自不同 [!UICONTROL Adobe Experience Platform] 沙盒的数据合并到一个 [!UICONTROL Customer Journey Analytics] 连接中？ | 不能，您不能跨沙盒访问数据。您只能合并位于同一沙盒中的数据集。[了解详情](https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-connections/create-connection.html#select-sandbox-and-datasets) |
 | 在 [!UICONTROL Adobe Experience Platform] 上，[!UICONTROL Customer Journey Analytics] 的预期滞后时间是多少？ | <ul><li>在正常负载下：少于 60 分钟&#x200B;<br>**注意：**&#x200B;如果通过管道的数据流量异常高，则预期滞后时间可能会长达 24 小时。</li><li>回填数据（最多支持 13 个月的数据，不考虑数据大小）：少于 4 周</li></ul> |
 | 如何在 [!UICONTROL Customer Journey Analytics] 中将在线数据与离线数据关联起来？ | 只要数据集之间的人员 ID 匹配，[!UICONTROL Customer Journey Analytics] 就可以跨数据集连接过滤器、归因、流量、流失等。。 |
