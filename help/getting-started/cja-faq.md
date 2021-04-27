@@ -3,9 +3,9 @@ title: Customer Journey Analytics 常见问题解答
 description: Customer Journey Analytics — 常见问题解答。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 translation-type: tm+mt
-source-git-commit: 6de1907e74eb0323bde921f4400e27bcdf06cdd1
+source-git-commit: aa11e81e63e993fdcddd400d491d863e05ac65b9
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1388'
 ht-degree: 62%
 
 ---
@@ -22,6 +22,8 @@ ht-degree: 62%
 | b | [!UICONTROL Customer Journey Analytics] 是否需要 [!UICONTROL Experience Cloud ID] (ECID)？ | 不需要，[!UICONTROL Customer Journey Analytics] 支持数据集中的任何 ID，无论该 ID 是 [!UICONTROL ECID] 还是您选择的任何其他 ID。 |
 | c | 如果在执行 [!UICONTROL Customer Journey Analytics] 之前需要对数据进行 ETL（提取、转换、加载）操作，该怎么办？ | Customer Journey Analytics包括[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/api/overview.html)功能，帮助在将数据放入Adobe Experience Platform数据湖之前转换数据。 如果在已摄取数据后需要ETL，[Adobe Experience Platform查询服务](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html?lang=en#queries)会提供一些有限的选项，但可能会涉及额外费用。 |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## 2.拼接数据(跨渠道分析)
 
 | # | 问题 | 回答 |
@@ -30,6 +32,8 @@ ht-degree: 62%
 | b | 是否支持从匿名行为到实名行为的拼合？ | 是。[跨渠道分](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) 析查看已验证和未验证会话的用户数据，以生成拼接ID。 |
 | c | 在CCA中，“replay”是如何工作的？ | CCA“重播”数据，基于它所学到的唯一标识符。 重播导致新设备连接变得拼接。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=en#step-1%3A-live-stitching) |
 | d | 压合历史数据（回填）在CCA中是如何工作的？ | 首次打开时，Adobe会提供拼接数据的回填，可回溯到上个月初（最多60天）。 要进行此回填，瞬时ID必须存在于早期未拼接的数据中。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=en#enable-cross-channel-analytics) |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## 3.将数据导入[!UICONTROL Customer Journey Analytics]
 
@@ -43,6 +47,8 @@ ht-degree: 62%
 | f | 将数据集元素组合到数据视图中需要多长时间？ | 最初只需几个小时，回填最近 13 个月的数据则需要几天的时间。 |
 | g | 是否必须导入 PII 数据才能在数据之间建立连接？ | 否，您可以使用任何 ID，包括客户 ID 的哈希，该哈希不是 PII。 |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## 4.传统[!UICONTROL Adobe Analytics]组件
 
 | # | 问题 | 回答 |
@@ -52,7 +58,9 @@ ht-degree: 62%
 | c | 我的所有会话和变量持久性设置现在位于何处？ | [!UICONTROL Customer Journey Analytics] 在报告时应用所有这些设置，因此这些设置现在位于数据视图中。对这些设置的更改现在具有追溯性，您可以使用多个数据视图来管理多个版本！ |
 | d | 我们的现有区段/计算量度会发生什么？ | [!UICONTROL Customer Journey Analytics] 不再使用 eVar、prop 或事件，而是使用任何 AEP 架构。这意味着，任何现有区段或计算量度都与 [!UICONTROL Customer Journey Analytics] 不兼容。 |
 | e | [!UICONTROL Customer Journey Analytics] 如何处理 `Uniques Exceeded` 限制？ | [!UICONTROL Customer Journey Analytics] 没有唯一值限制，因此无需担心！ |
-| f | 如果我是现有 [!DNL Data Workbench] 客户，是否可以立即转到 [!UICONTROL Customer Journey Analytics]？ | 这取决于您的用例 — 请与您的Adobe帐户团队合作。 您当前的使用案例可能已经非常适合Customer Journey Analytics。 |
+| f | 如果我是现有 [!DNL Data Workbench] 客户，是否可以立即转到 [!UICONTROL Customer Journey Analytics]？ | 这取决于您的用例 — 请与您的Adobe帐户团队合作。 您当前的使用案例可能已经非常适合Customer Journey Analytics! |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## 5.删除数据部分的含义
 
