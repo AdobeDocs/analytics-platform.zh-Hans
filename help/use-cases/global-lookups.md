@@ -3,10 +3,10 @@ title: 向数据集添加全局查找
 description: 在 Customer Journey Analytics 中，可使用全局查找为报表补充更多有用维度。
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 translation-type: tm+mt
-source-git-commit: e19e9b7d7a88232e1eeb7ddaa739389e26763c1a
+source-git-commit: 8224fd2fde787f0d3cf0cb983641efc588c316b0
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 95%
+source-wordcount: '383'
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,7 @@ ht-degree: 95%
 
 ## 将全局查找与 Adobe Data Connector 数据集结合使用
 
-全局查找数据集会在报告时自动应用。如果您在使用 [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-cn#connectors)，并引入了 Adobe 提供了全局查找的维度，则会自动应用此全局查找。如果事件数据集包含 [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-cn) 字段，我们可以对其应用全局查找。
-
-## 将全局查找与自定义数据集结合使用
-
-键需要存在于与全局查找数据集兼容的事件数据集中。 只要通过添加一些标准的 [Adobe Experience Platform 架构 mixin](https://experienceleague.adobe.com/docs/experience-platform/xdm/mixins/event/environment-details.html?lang=zh-cn#mixins) 来填充相应的 XDM 字段，就可以使自定义数据集与全局查找结合使用。
+全局查找数据集会在报告时自动应用。如果您在使用 [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans#connectors)，并引入了 Adobe 提供了全局查找的维度，则会自动应用此全局查找。如果事件数据集包含 [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans) 字段，我们可以对其应用全局查找。
 
 ## 可用的全局查找字段
 
