@@ -2,11 +2,10 @@
 title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-translation-type: tm+mt
-source-git-commit: bf8864103dc4e52734952c0c93d49f97e35b2817
+source-git-commit: bc0e722ad33f818a6d580305301a869af2fff385
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 98%
+source-wordcount: '1071'
+ht-degree: 95%
 
 ---
 
@@ -63,7 +62,7 @@ ht-degree: 98%
 | Media Analytics | 媒体数据可作为 Analytics Data Connector 的一部分提供。 |
 | 促销 eVar | 如果促销 eVar 未设置为使用持久性，则可以使用对象数组中的维度来实现促销 eVar 的行为。 目前，不提供促销维度持久性。 |
 | 面板 | 完全支持空白面板、“归因”面板、“任意形状”面板和“快速分析”面板。不支持“区段比较”面板、“Analytics for Target (A4T)”面板和“媒体并发查看者”面板。 |
-| 处理规则 | 对于基于 Analytics Data Connector 的数据集，仍会应用处理规则。 |
+| 处理规则 | 对于基于 Analytics Data Connector 的数据集，仍会应用处理规则。[Adobe Experience Platform中的数据准](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) 备功能还可以用作直接访问平台的数据处理规则的替代。 |
 
 ## 目前不支持，但计划将会提供支持
 
