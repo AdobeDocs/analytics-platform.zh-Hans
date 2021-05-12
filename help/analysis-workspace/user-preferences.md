@@ -2,21 +2,16 @@
 title: 如何在 Analysis Workspace 中设置用户首选项
 description: 可设置用户的常规和项目首选项。
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
-translation-type: tm+mt
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+source-git-commit: 836a99c03671b4145890c8b37f5123a841a85543
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '188'
 ht-degree: 100%
 
 ---
 
 # 用户首选项
 
->[!NOTE]
->
->此功能即将推出。正式发布时间为 2021 年 3 月 25 日。
-
-通过[!UICONTROL “组件”]>[!UICONTROL “用户首选项”]页面，可为用户管理 Analysis Workspace 设置及其相关的组件。“用户首选项”适用于&#x200B;*所有*&#x200B;新的项目或面板。
+通过[!UICONTROL “组件”]>[!UICONTROL “用户首选项”]页面，可为用户管理 Analysis Workspace 设置及其相关的组件。“用户首选项”适用于&#x200B;*所有* 新的项目或面板。
 
 ![用户首选项](assets/user-preferences.png)
 
@@ -36,7 +31,7 @@ ht-degree: 100%
 | 部分 | 首选项 | 选项 |
 | --- | --- | --- |
 | **显示** |  |  |
-|  | [视图密度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density.html?lang=zh-Hans) | <ul><li>紧凑</li><li>舒适</li><li>已展开（默认）</li></ul> |
+|  | [视图密度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density.html?lang=zh-Hans) | <ul><li>紧凑</li><li>舒适</li><li>展开（默认）</li></ul> |
 |  | [调色板](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/color-palettes.html?lang=zh-Hans) | <ul><li>Adobe 提供的调色板（默认）</li><li>自定义调色板</li></ul> |
 | **数据** |  |  |
 |  | [日历](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=zh-Hans?#calendar) | 现成日期范围的列表，包括&#x200B;**[!UICONTROL “本月”]**（默认） |
