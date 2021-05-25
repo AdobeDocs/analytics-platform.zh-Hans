@@ -2,11 +2,10 @@
 title: Customer Journey Analytics 中的数据视图的用例
 description: 显示 Customer Journey Analytics 中数据视图的灵活性和强大功能的多个用例
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
-translation-type: tm+mt
-source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
+source-git-commit: 3553a6a684bc2cd015d1b2ad6a3b02987d6d6bb2
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 100%
+source-wordcount: '377'
+ht-degree: 90%
 
 ---
 
@@ -40,6 +39,14 @@ ht-degree: 100%
 1. 您现在可以添加[!UICONTROL 值分段]以分段方式在报告中表示此维度。（若不添加分段，此维度的每个实例都会显示为 Workspace 报告中的一个行项目。）
 
    ![](assets/bucketing.png)
+
+## 在流程图中将数值维度用作“量度”
+
+您可以使用数值维度将“量度”导入[!UICONTROL 流量]可视化。 以下示例显示了[!UICONTROL 营销渠道]流入[!UICONTROL 订单]的内容：
+
+![](assets/flow.png)
+
+## 包含或排除量度值
 
 有关数据视图设置的更多信息，请参阅[创建数据视图](/help/data-views/create-dataview.md)。
 有关数据视图的概念性概述，请参阅[数据视图概述](/help/data-views/data-views.md)。
