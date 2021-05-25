@@ -2,10 +2,9 @@
 title: 如何在 Customer Journey Analytics 中创建新数据视图。
 description: 描述创建新数据视图所需的所有设置。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-translation-type: tm+mt
-source-git-commit: 199219322ca5cff48c83c66d1ad7cdab04845b2b
+source-git-commit: 3553a6a684bc2cd015d1b2ad6a3b02987d6d6bb2
 workflow-type: tm+mt
-source-wordcount: '2795'
+source-wordcount: '2812'
 ht-degree: 98%
 
 ---
@@ -149,7 +148,7 @@ ht-degree: 98%
 | --- | --- |
 | [!UICONTROL 设置持久性] | 切换键 |
 | [!UICONTROL 分配] | 用于为持久性指定维度中使用的分配模型。选项有：[!UICONTROL 最近]、[!UICONTROL 原有]、[!UICONTROL 实例]、[!UICONTROL 全部]。如果您要保留某个值（与传统 Analytics 中的 eVar 类似），可以在这里设置它。唯一区别在于您可以设置的最长保留时间是 90 天。另外，无法选择[!UICONTROL 永不过期]。 |
-| [!UICONTROL 到期] | 用于为维度指定持久性窗口。选项有：[!UICONTROL 会话]（默认）、[!UICONTROL 人员]、[!UICONTROL 时间]、[!UICONTROL 量度]。您可能需要能够使维度在购买后过期（例如内部搜索词或其他促销用例）。[!UICONTROL 量度]用于将定义的所有量度指定为此维度的到期（例如，[!UICONTROL 购买]量度）。 |
+| [!UICONTROL 到期] | 用于为维度指定持久性窗口。选项有：[!UICONTROL 会话]（默认）、[!UICONTROL 人员]、[!UICONTROL 时间]、[!UICONTROL 量度]。您可能需要能够使维度在购买后过期（例如内部搜索词或其他促销用例）。[!UICONTROL 量度]用于将定义的所有量度指定为此维度的到期（例如，[!UICONTROL 购买]量度）。<br>**注意**:选择“全部”分配时，无法为维度设置自定义过 [!UICONTROL 期]。 |
 
 ### 配置“值分段”设置
 
@@ -176,7 +175,7 @@ ht-degree: 98%
 
 | 组件名称 | 维度或量度 | 注释 |
 | --- | --- | --- |
-| [!UICONTROL 人员] | 量度 | 此量度基于在[!UICONTROL Connection]中指定的人员ID。 |
+| [!UICONTROL 人员] | 量度 | 此量度基于[!UICONTROL 连接]中指定的人员ID。 |
 | [!UICONTROL 会话] | 量度 | 此量度基于下面指定的会话流程设置。 |
 | [!UICONTROL 事件] | 量度 | 此量度表示[!UICONTROL Connection]中所有事件数据集的行数。 |
 | [!UICONTROL 日] | 维度 | “日”维度报告给定量度出现的日期。第一个维度项是日期范围内的第一天，最后一个维度项是日期范围内的最后一天。 |
