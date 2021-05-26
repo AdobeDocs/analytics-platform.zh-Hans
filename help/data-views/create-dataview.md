@@ -2,10 +2,10 @@
 title: 如何在 Customer Journey Analytics 中创建新数据视图。
 description: 描述创建新数据视图所需的所有设置。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 3553a6a684bc2cd015d1b2ad6a3b02987d6d6bb2
+source-git-commit: 473b6679619c9e523997044eaa080025a762bb8d
 workflow-type: tm+mt
-source-wordcount: '2812'
-ht-degree: 98%
+source-wordcount: '2848'
+ht-degree: 96%
 
 ---
 
@@ -71,9 +71,9 @@ ht-degree: 98%
 | [!UICONTROL 字段名称] | 架构字段的名称。 |
 | [!UICONTROL 数据集类型] | 必需。显示组件来自哪个数据集类型（事件、查询或个人资料）的不可编辑字段。 |
 | [!UICONTROL 数据集] | 必需。显示组件来自哪个类型的字段（例如字符串、整数等）的不可编辑字段。此字段可以包含多个数据集。 |
-| [!UICONTROL 架构类型] | 这是指组件是字符串、整数等。 |
+| [!UICONTROL 架构数据类型] | 这是指组件是字符串、整数等。 |
 | [!UICONTROL 组件 ID] | 必需。[CJA API](https://adobe.io/cja-apis/docs) 使用此字段引用组件。您可以单击修改图标并修改此组件 ID。但是，更改此组件 ID 会破坏包含此组件的所有现有 Workspace 项目。<br>如果您曾创建另一个对 pageTitle 维度使用不同字段的数据视图，则可以对其进行重命名并使该维度跨数据视图兼容。 |
-| [!UICONTROL 路径] | 必需。显示组件来自的架构路径的不可编辑字段。 |
+| [!UICONTROL 架构路径] | 必需。显示组件来自的架构路径的不可编辑字段。 |
 | [!UICONTROL 在报告中隐藏组件] | 默认 = 关闭。可让您在数据视图中管理用于报告的组件。这不会影响许可，只用于管理组件。换言之，您可以在报告中对非管理员用户隐藏组件。管理员仍可以访问该组件，只需在 Analysis Workspace 项目中单击[!UICONTROL 显示所有组件]即可。 |
 
 ### 配置格式设置
@@ -121,6 +121,7 @@ ht-degree: 98%
 
 | 设置 | 描述/用例 |
 | --- | --- |
+| [!UICONTROL 对值计数] | 仅对于布尔量度，此设置允许您指定是要将[!UICONTROL Count True]、[!UICONTROL Count False]或[!UICONTROL Count True或False]作为量度值。 默认值为[!UICONTROL Count True]。 |
 | [!UICONTROL 计数实例] | 用于指定用作量度的数值或日期类型字段是否应统计设置该字段的次数（而非值本身）。<br> 如果您要合计数值字段的实例数并想只合计字段的&#x200B;*设置*&#x200B;次数（而非其中的实际值）。<br>这用于根据[!UICONTROL 收入]字段创建[!UICONTROL 订单]量度，例如：如果设置了收入，那么我们想统计 1 个订单（而非数值收入金额）。 |
 
 ### 配置[!UICONTROL 无值选项]设置
