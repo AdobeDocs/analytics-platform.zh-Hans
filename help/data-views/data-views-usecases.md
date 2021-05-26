@@ -2,10 +2,10 @@
 title: Customer Journey Analytics 中的数据视图的用例
 description: 显示 Customer Journey Analytics 中数据视图的灵活性和强大功能的多个用例
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
-source-git-commit: 3553a6a684bc2cd015d1b2ad6a3b02987d6d6bb2
+source-git-commit: 7386645aa63ddbf1fcc8835037c13382e117ef1e
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 90%
+source-wordcount: '549'
+ht-degree: 59%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 90%
 
 这些用例显示了 Customer Journey Analytics 中数据视图的灵活性和强大功能。
 
-## 根据 pageTitle（字符串）架构字段创建一个“订单”量度
+## 1.从pageTitle（字符串）架构字段创建订单量度
 
 例如，在创建数据视图时，您可以根据字符串形式的 [!UICONTROL pageTitle] 架构字段创建一个[!UICONTROL 订单]量度。步骤如下：
 
@@ -28,7 +28,7 @@ ht-degree: 90%
 1. 您可以进一步为此量度指定归因模型，例如[!UICONTROL 回顾时间范围]为[!UICONTROL 会话]的[!UICONTROL 最近联系]。
 您还可以根据同一字段创建另一个[!UICONTROL 订单]量度，并为其指定不同的归因模型（例如[!UICONTROL 首次联系]）和不同的[!UICONTROL 回顾时间范围]（例如 [!UICONTROL 30 天]）。
 
-## 使用整数作为维度
+## 2.使用整数作为维
 
 以前，整数会被自动视为 CJA 中的量度。现在，数字（包括 Adobe Analytics 中的自定义事件）可被视为维度。示例如下：
 
@@ -40,13 +40,27 @@ ht-degree: 90%
 
    ![](assets/bucketing.png)
 
-## 在流程图中将数值维度用作“量度”
+## 3.在流程图中将数值维度用作“量度”
 
-您可以使用数值维度将“量度”导入[!UICONTROL 流量]可视化。 以下示例显示了[!UICONTROL 营销渠道]流入[!UICONTROL 订单]的内容：
+您可以使用数值维度将“量度”导入[!UICONTROL 流量]可视化。
+
+1. 在数据视图[组件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings)选项卡上，将[!UICONTROL 营销渠道]架构字段拖动到[!UICONTROL [!UICONTROL 已包含组件]下的量度]区域。
+2. 在工作区报表中，此流程显示[!UICONTROL 营销渠道]流入[!UICONTROL 订单]:
 
 ![](assets/flow.png)
 
-## 包含或排除量度值
+## 4.进行子事件过滤
+
+您可以过滤事件以仅显示您想要查看的内容。 例如，使用数据视图中的包含/排除功能，可仅关注产生销售额超过50美元的产品。 因此，如果您的订单包含50美元的产品购买和25美元的产品购买，我们将只删除25美元的产品购买，而不是整个订单。
+
+1. 在数据视图[组件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings)选项卡上，将[!UICONTROL 订单]架构字段拖动到[!UICONTROL 量度]区域中[!UICONTROL 已包含的组件]下。
+1. 选择量度并在右侧配置以下内容：
+   1. 在[!UICONTROL Format]下，选择[!UICONTROL Currency]。
+   1. 在[!UICONTROL 货币]下，选择USD。
+   1. 在[!UICONTROL Include/Exclude Values]下，选中[!UICONTROL Set include/exclude values]旁边的复选框。
+   1. 在[!UICONTROL Match]下，选择[!UICONTROL 如果满足所有条件]。
+   1. 在[!UICONTROL 标准]下，选择[!UICONTROL 大于或等于]。
+   1. 指定“50”作为值。
 
 有关数据视图设置的更多信息，请参阅[创建数据视图](/help/data-views/create-dataview.md)。
 有关数据视图的概念性概述，请参阅[数据视图概述](/help/data-views/data-views.md)。
