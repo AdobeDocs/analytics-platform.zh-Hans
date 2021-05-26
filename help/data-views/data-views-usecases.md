@@ -2,10 +2,10 @@
 title: Customer Journey Analytics 中的数据视图的用例
 description: 显示 Customer Journey Analytics 中数据视图的灵活性和强大功能的多个用例
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
-source-git-commit: 7386645aa63ddbf1fcc8835037c13382e117ef1e
+source-git-commit: 27e472f534590112194ce46b28a15b655c9caf2b
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 59%
+source-wordcount: '707'
+ht-degree: 46%
 
 ---
 
@@ -53,14 +53,36 @@ ht-degree: 59%
 
 您可以过滤事件以仅显示您想要查看的内容。 例如，使用数据视图中的包含/排除功能，可仅关注产生销售额超过50美元的产品。 因此，如果您的订单包含50美元的产品购买和25美元的产品购买，我们将只删除25美元的产品购买，而不是整个订单。
 
-1. 在数据视图[组件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings)选项卡上，将[!UICONTROL 订单]架构字段拖动到[!UICONTROL 量度]区域中[!UICONTROL 已包含的组件]下。
+1. 在数据视图[组件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings)选项卡上，将[!UICONTROL 收入]架构字段拖动到[!UICONTROL 量度]区域中[!UICONTROL 已包含的组件]下。
 1. 选择量度并在右侧配置以下内容：
-   1. 在[!UICONTROL Format]下，选择[!UICONTROL Currency]。
-   1. 在[!UICONTROL 货币]下，选择USD。
-   1. 在[!UICONTROL Include/Exclude Values]下，选中[!UICONTROL Set include/exclude values]旁边的复选框。
-   1. 在[!UICONTROL Match]下，选择[!UICONTROL 如果满足所有条件]。
-   1. 在[!UICONTROL 标准]下，选择[!UICONTROL 大于或等于]。
-   1. 指定“50”作为值。
+a.在[!UICONTROL Format]下，选择[!UICONTROL Currency]。
+b.在[!UICONTROL 货币]下，选择USD。
+c.在[!UICONTROL Include/Exclude Values]下，选中[!UICONTROL Set include/exclude values]旁边的复选框。
+d.在[!UICONTROL Match]下，选择[!UICONTROL 如果满足所有条件]。
+e.在[!UICONTROL 标准]下，选择[!UICONTROL 大于或等于]。
+f.指定“50”作为值。
+
+这些新设置仅允许您查看高价值收入，并过滤掉低于50美元的任何内容。
+
+## 5.使用[!UICONTROL 无值选项]设置
+
+贵公司可能已花费时间培训用户以期在报表中显示“未指定”。 数据视图中的默认值为“无值”。 现在，您可以在数据视图UI中将[“无值”重命名为“未指定”](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-no-value-options-settings)。
+
+## 6.使用[!UICONTROL 复制]功能
+
+复制量度并修改特定设置是从单个架构字段创建多个量度或维度的简便方法。
+
+只需选择右上角量度或维度名称下方的复制设置：
+
+![](assets/duplicate.png)
+
+## 使用不同的归因设置创建多个量度
+
+使用上述[!UICONTROL 复制]功能，使用不同的归因设置（如[!UICONTROL 首次联系]、[!UICONTROL 最近联系]和[!UICONTROL 算法]）创建多个收入量度。
+
+请不要忘记重命名每个量度以反映差异，例如“算法收入”：
+
+![](assets/algo-revenue.png)
 
 有关数据视图设置的更多信息，请参阅[创建数据视图](/help/data-views/create-dataview.md)。
 有关数据视图的概念性概述，请参阅[数据视图概述](/help/data-views/data-views.md)。
