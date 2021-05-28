@@ -2,10 +2,10 @@
 title: Customer Journey Analytics 中的数据视图的用例
 description: 显示 Customer Journey Analytics 中数据视图的灵活性和强大功能的多个用例
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
-source-git-commit: 27e472f534590112194ce46b28a15b655c9caf2b
+source-git-commit: e40232916ee93136583d9ecf460367ecb7df5c8b
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 46%
+source-wordcount: '688'
+ht-degree: 47%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 46%
 
 这些用例显示了 Customer Journey Analytics 中数据视图的灵活性和强大功能。
 
-## 1.从pageTitle（字符串）架构字段创建订单量度
+## 1.从字符串架构字段创建量度
 
 例如，在创建数据视图时，您可以根据字符串形式的 [!UICONTROL pageTitle] 架构字段创建一个[!UICONTROL 订单]量度。步骤如下：
 
@@ -27,6 +27,8 @@ ht-degree: 46%
    “确认”短语指示这是个订单。查看满足这些条件的所有页面标题后，系统会为每个实例统计“1”。结果是一个新量度（而非计算量度）。具有已添加/排除值的量度可用在可使用任何其他量度的任意位置。它可与 Attribution IQ、过滤器配合使用，以及用在可使用标准量度的任何其他位置。
 1. 您可以进一步为此量度指定归因模型，例如[!UICONTROL 回顾时间范围]为[!UICONTROL 会话]的[!UICONTROL 最近联系]。
 您还可以根据同一字段创建另一个[!UICONTROL 订单]量度，并为其指定不同的归因模型（例如[!UICONTROL 首次联系]）和不同的[!UICONTROL 回顾时间范围]（例如 [!UICONTROL 30 天]）。
+
+另一个示例是使用访客ID（维度）作为量度，以确定贵公司拥有的访客ID数量。
 
 ## 2.使用整数作为维
 
@@ -68,17 +70,9 @@ f.指定“50”作为值。
 
 贵公司可能已花费时间培训用户以期在报表中显示“未指定”。 数据视图中的默认值为“无值”。 现在，您可以在数据视图UI中将[“无值”重命名为“未指定”](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-no-value-options-settings)。
 
-## 6.使用[!UICONTROL 复制]功能
+## 6.使用不同的[!UICONTROL Attribution]设置创建多个量度
 
-复制量度并修改特定设置是从单个架构字段创建多个量度或维度的简便方法。
-
-只需选择右上角量度或维度名称下方的复制设置：
-
-![](assets/duplicate.png)
-
-## 使用不同的归因设置创建多个量度
-
-使用上述[!UICONTROL 复制]功能，使用不同的归因设置（如[!UICONTROL 首次联系]、[!UICONTROL 最近联系]和[!UICONTROL 算法]）创建多个收入量度。
+使用右上方的[!UICONTROL 复制]功能，使用不同的归因设置（如[!UICONTROL 首次联系]、[!UICONTROL 最近联系]和[!UICONTROL 算法]）创建多个收入量度。
 
 请不要忘记重命名每个量度以反映差异，例如“算法收入”：
 
