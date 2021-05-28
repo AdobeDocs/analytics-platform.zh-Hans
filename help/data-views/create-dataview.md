@@ -2,10 +2,10 @@
 title: 如何在 Customer Journey Analytics 中创建新数据视图。
 description: 描述创建新数据视图所需的所有设置。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: e40232916ee93136583d9ecf460367ecb7df5c8b
+source-git-commit: e62303250e1f6b8f3f666a04c2742126a4861893
 workflow-type: tm+mt
 source-wordcount: '2934'
-ht-degree: 94%
+ht-degree: 90%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 94%
 | [!UICONTROL 描述] | 不强制要求提供详细描述，但建议提供。 |
 | [!UICONTROL 时区] | 选择您要在哪个时区中显示您的数据。 |
 | [!UICONTROL 标记] | 标记让您可以将数据视图组织成不同的类别。 |
-| [!UICONTROL 容器] | 您可以在此处重命名您的容器，它们将以这种方式显示在基于此数据视图的任何 Workspace 项目中。容器用在过滤器和流失/流量等中，用以定义范围或上下文的广义或狭义程度。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=zh-Hans#filter-containers) |
+| [!UICONTROL 容器] | 您可以在此处重命名容器，以确定它们在任何基于此数据视图的工作区项目中的显示方式。 容器用于过滤器和流失/流量等，以定义范围或上下文的范围或范围。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=zh-Hans#filter-containers) |
 | [!UICONTROL 人员容器名称是…] | [!UICONTROL 人员]（默认）。[!UICONTROL 人员]容器包含指定时间段内访客的每次访问和页面查看。您可以将此容器重命名为“用户”或您喜欢的任何其他术语。 |
 | [!UICONTROL 会话容器名称是…] | [!UICONTROL 会话]（默认）。通过[!UICONTROL 会话]容器可以识别页面交互、促销活动或特定会话的转化。您可以将此容器重命名为“访问”或您喜欢的任何其他术语。 |
 | [!UICONTROL 事件容器名称是…] | [!UICONTROL 事件]（默认）。[!UICONTROL 事件]容器定义要在过滤器中包含或排除的页面事件。 |
@@ -43,7 +43,7 @@ ht-degree: 94%
 您可以在左上角看到[!UICONTROL 连接]，其中包含数据集及其下方的[!UICONTROL 架构字段]。请记住以下事项：
 
 * 已添加的组件是所需的标准组件（系统生成的）。
-* 默认情况下，我们还会应用过滤器&#x200B;**[!UICONTROL 包含数据]**，使系统仅显示包含数据的架构字段。如果您要查找不含数据的字段，只需移除该过滤器即可。
+* Adobe默认应用筛选器&#x200B;**[!UICONTROL 包含数据]**，以便仅显示包含数据的架构字段。 如果要查找不包含数据的字段，请删除该过滤器。
 
 1. 下面，将架构字段（例如 [!UICONTROL pageTitle]）从左边栏拖入“量度”或“维度”部分中。
 
