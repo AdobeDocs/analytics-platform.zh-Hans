@@ -2,10 +2,10 @@
 title: 如何在 Customer Journey Analytics 中创建新数据视图。
 description: 描述创建新数据视图所需的所有设置。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 473b6679619c9e523997044eaa080025a762bb8d
+source-git-commit: e40232916ee93136583d9ecf460367ecb7df5c8b
 workflow-type: tm+mt
-source-wordcount: '2848'
-ht-degree: 96%
+source-wordcount: '2934'
+ht-degree: 94%
 
 ---
 
@@ -117,11 +117,13 @@ ht-degree: 96%
 
 ### 配置行为设置
 
+允许您指定量度在报表中的行为方式。
+
 ![](assets/behavior-settings.png)
 
 | 设置 | 描述/用例 |
 | --- | --- |
-| [!UICONTROL 对值计数] | 仅对于布尔量度，此设置允许您指定是要将[!UICONTROL Count True]、[!UICONTROL Count False]或[!UICONTROL Count True或False]作为量度值。 默认值为[!UICONTROL Count True]。 |
+| [!UICONTROL 对值计数] | 仅对于布尔量度，此设置允许您指定是要将[!UICONTROL Count True]、[!UICONTROL Count False]或[!UICONTROL Count True或False]作为量度值。 默认值为[!UICONTROL Count True]。 这会为您提供量度的实际值，如顺序值为50时的“50”。 |
 | [!UICONTROL 计数实例] | 用于指定用作量度的数值或日期类型字段是否应统计设置该字段的次数（而非值本身）。<br> 如果您要合计数值字段的实例数并想只合计字段的&#x200B;*设置*&#x200B;次数（而非其中的实际值）。<br>这用于根据[!UICONTROL 收入]字段创建[!UICONTROL 订单]量度，例如：如果设置了收入，那么我们想统计 1 个订单（而非数值收入金额）。 |
 
 ### 配置[!UICONTROL 无值选项]设置
@@ -202,6 +204,12 @@ ht-degree: 96%
 | [!UICONTROL 批次 ID] | 维度 | 表示某个[!UICONTROL 事件]所属的 Experience Platform 批次。 |
 | [!UICONTROL 数据集 ID] | 维度 | 表示某个[!UICONTROL 事件]所属的 Experience Platform 数据集。 |
 
+## 使用[!UICONTROL 复制]功能
+
+复制量度或维度，然后修改特定设置是从单个架构字段创建多个量度或维度的简便方法。 只需选择右上角量度或维度名称下方的[!UICONTROL 复制]设置。 然后，修改新量度或维度，并使用更具描述性的名称保存该量度或维度。
+
+![](assets/duplicate.png)
+
 ### 过滤架构字段和维度/量度
 
 您可以按以下数据类型过滤左边栏中的架构字段：
@@ -212,8 +220,7 @@ ht-degree: 96%
 
 ![](assets/filter-other.png)
 
-
-## 3. 向数据视图添加全局过滤器
+## 向数据视图添加全局过滤器
 
 您可以添加应用于整个数据视图的过滤器：此过滤器将应用于您在 Workspace 中生成的任何报告。
 
