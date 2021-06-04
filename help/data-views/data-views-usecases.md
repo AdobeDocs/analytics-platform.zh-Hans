@@ -2,10 +2,10 @@
 title: Customer Journey Analytics 中的数据视图的用例
 description: 显示 Customer Journey Analytics 中数据视图的灵活性和强大功能的多个用例
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
-source-git-commit: e40232916ee93136583d9ecf460367ecb7df5c8b
+source-git-commit: acf2728539562a2bb9be2adfbeb7ae6cc4f3dffd
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 47%
+source-wordcount: '763'
+ht-degree: 42%
 
 ---
 
@@ -53,7 +53,9 @@ ht-degree: 47%
 
 ## 4.进行子事件过滤
 
-您可以过滤事件以仅显示您想要查看的内容。 例如，使用数据视图中的包含/排除功能，可仅关注产生销售额超过50美元的产品。 因此，如果您的订单包含50美元的产品购买和25美元的产品购买，我们将只删除25美元的产品购买，而不是整个订单。
+此功能特别适用于基于阵列的字段。 包含/排除功能允许您在子事件级别进行过滤，而过滤器生成器中构建的过滤器（区段）仅允许您在事件级别进行过滤。 因此，您可以通过在数据视图中使用包含/排除来进行子事件过滤，然后在事件级别的过滤器中引用该新量度/维度。
+
+例如，使用数据视图中的包含/排除功能，可仅关注产生销售额超过50美元的产品。 因此，如果您的订单包含50美元的产品购买和25美元的产品购买，我们将只删除25美元的产品购买，而不是整个订单。
 
 1. 在数据视图[组件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings)选项卡上，将[!UICONTROL 收入]架构字段拖动到[!UICONTROL 量度]区域中[!UICONTROL 已包含的组件]下。
 1. 选择量度并在右侧配置以下内容：
@@ -69,6 +71,8 @@ f.指定“50”作为值。
 ## 5.使用[!UICONTROL 无值选项]设置
 
 贵公司可能已花费时间培训用户以期在报表中显示“未指定”。 数据视图中的默认值为“无值”。 现在，您可以在数据视图UI中将[“无值”重命名为“未指定”](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-no-value-options-settings)。
+
+另一个示例是会员资格计划注册的维度。 在这种情况下，您可以将“无值”重命名为“无会员资格计划注册”。
 
 ## 6.使用不同的[!UICONTROL Attribution]设置创建多个量度
 
