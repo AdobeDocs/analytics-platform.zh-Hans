@@ -2,10 +2,9 @@
 title: 创建连接
 description: 描述如何在 Customer Journey Analytics 中创建与 Platform 数据集的连接。
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-translation-type: tm+mt
-source-git-commit: 26176b446c5d825aa8893f0fe45190079d923251
+source-git-commit: 90470be09d666c0c3937670d5d5669ab668ed2c4
 workflow-type: tm+mt
-source-wordcount: '1974'
+source-wordcount: '1973'
 ht-degree: 98%
 
 ---
@@ -14,17 +13,17 @@ ht-degree: 98%
 
 通过连接，您可以将源自 [!DNL Adobe Experience Platform] 的数据集集成到[!UICONTROL 工作区]中。为了报告 [!DNL Experience Platform] 数据集，您必须首先在 [!DNL Experience Platform] 和[!UICONTROL 工作区]中的数据集之间建立连接。
 
-单击[此处](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html)，查看视频概述。
+单击[此处](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=en)，查看视频概述。
 
 要创建CJA连接，您需要以下权限：
 
 Adobe Experience Platform:
-* 数据建模：视图模式，管理模式
-* 数据管理:视图数据集，管理数据集
+* 数据建模：查看架构，管理架构
+* 数据管理：查看数据集，管理数据集
 * 数据摄取：管理源
 
 Customer Journey Analytics
-* 产品管理员访问
+* 产品管理员访问权限
 
 >[!IMPORTANT]
 >
@@ -131,7 +130,7 @@ Customer Journey Analytics
 * 我们会优先处理新添加到此连接中数据集的新数据，因此这些新数据的滞后时间最短。
 * 任何回填（历史）数据的导入速度都会比较慢。滞后时间受以下两个因素的影响：您所拥有的历史数据数量以及您选择的&#x200B;**[!UICONTROL 平均每日事件数]**&#x200B;设置。例如，如果您每日的数据行数超过 10 亿，且您具有 3 年的历史数据，则可能需要数周时间才能完成导入。相反，如果您每日的数据行数不足 100 万，且只有一周的历史数据，则不用一小时即可完成导入。
 * 回填将应用于整个连接，而不是单独应用于每个数据集。
-* [Adobe Analytics Source Connector](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) 最多可导入 13 个月的数据，而无论数据大小如何。
+* [Adobe Analytics Source Connector](https://docs.adobe.com/content/help/zh-Hans/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) 最多可导入 13 个月的数据，而无论数据大小如何。
 
 ### 计算平均每日事件数
 
