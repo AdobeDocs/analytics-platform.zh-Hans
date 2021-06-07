@@ -1,20 +1,19 @@
 ---
 title: 引用 - 基本函数
-description: '计算量度生成器允许您将统计和数学函数应用于生成高级计算量度。 '
-translation-type: tm+mt
-source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
+description: 计算量度生成器允许您将统计和数学函数应用于生成高级计算量度。
+exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1077'
 ht-degree: 100%
 
 ---
-
 
 # 引用 - 基本函数
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 计算量度生成器允许您将统计和数学函数应用于生成高级计算量度。
 
