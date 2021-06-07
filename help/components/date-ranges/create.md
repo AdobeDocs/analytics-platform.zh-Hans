@@ -1,60 +1,59 @@
 ---
 title: 创建日期范围
-description: 创建日期范围以用于报告。
-translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+description: 创建要用在报告中的日期范围。
+exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 10%
+source-wordcount: '436'
+ht-degree: 100%
 
 ---
-
 
 # 创建日期范围
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
-您可以使用以下两种方法之一创建自定义日期范围：
+您可以使用以下两种方法中的任一种创建自定义日期范围：
 
-* 单击左侧日期范围组件列表旁的“`+`”按钮，直接在工作区项目中
+* 直接在 Workspace 项目中单击左侧日期范围组件列表旁边的“`+`”按钮
 * 在日期范围管理器中
 
 要在日期范围管理器中创建日期范围，请执行以下操作：
 
-1. 使用您的AdobeID凭据登录[analytics.adobe.com](https://analytics.adobe.com)。
-1. 导航到[!UICONTROL 组件] > [!UICONTROL 日期范围]。
-1. 单击[!UICONTROL 添加]按钮以打开创建日期范围的模态窗口。
+1. 使用您的 Adobe ID 凭据登录 [analytics.adobe.com](https://analytics.adobe.com)。
+1. 依次转到[!UICONTROL 组件] > [!UICONTROL 日期范围]。
+1. 单击[!UICONTROL 添加]按钮以打开用以创建日期范围的模式窗口。
 
-## 创建日期范围模态窗口
+## 创建日期范围模式窗口
 
-模态窗口有四个可编辑的字段：
+模式窗口包含四个可供您修改的字段：
 
-* **日期范围**:您希望此组件的日期范围。
-* **标题**:您希望此组件的名称。标题用于工作区项目。
-* **描述**:此组件的描述。单击![i](../assets/i.png)图标时会看到说明。
-* **标记**:使用标记来组织日期范围。日期范围可以属于多个标记。
+* **日期范围**：您要为此组件使用的日期范围。
+* **标题**：您要为此组件使用的名称。该标题用在 Workspace 项目中。
+* **描述**：您要为此组件使用的描述。单击 ![i](../assets/i.png) 图标后，系统会显示该描述。
+* **标记**：使用标记整理日期范围。一个日期范围可以属于多个标记。
 
 ## 选择日期范围
 
-在模态窗口中单击日期范围时，您有以下几个选项：
+单击模式窗口中的日期范围后，您可以选择多个选项：
 
-* **日历**:选择开始和结束日期。
-* **使用滚动日期**:如果希望日期范围随时间变化，请选中此框。如果希望日期范围保持静态，请不要选中此框。
-* **选择预设**:如果您希望根据默认Adobe优惠的范围创建自定义日期范围，请使用此下拉列表。当您选择预设时，您可以进一步自定义日期范围以满足您的需求。 它不会影响Adobe优惠的预设。
+* **日历**：选择开始日期和结束日期。
+* **使用滚动日期**：如果您希望日期范围随时间变化，请选中此框。如果您希望日期范围保持静态，请不要选中此框。
+* **选择预设**：如果您希望根据 Adobe 默认提供的范围设置自定义日期范围，请使用此下拉菜单。选择预设后，您可以根据自己的需求进一步自定义日期范围。这不会影响 Adobe 提供的预设。
 
 ## 滚动日期范围
 
-如果要滚动日期范围，可以在滚动日期范围时进行自定义。 您可以控制开始和结束日期彼此独立滚动的时间。
+如果您需要滚动日期范围，可以自定义滚动时间。您可以单独控制开始日期和结束日期的滚动时间。
 
-* **日期开始时**:选择日期开始是在某个时间段的开始、在某个时间段的结束，还是使用固定日期。
-* **使用的时间段**:选择日期范围滚动的频率。您可以让它每天、每周、每月、每个季度或每年滚动。
-* **偏移**:选择日期范围的偏移。您可以添加或减少天数、周数、月数、季度数或年数。
+* **日期开始时**：选择相应日期是在某个时段开始时、结束时开始，还是使用固定日期。
+* **使用的时段**：选择日期范围滚动的频率。您可以将它设为每天、每周、每月、每季度或每年滚动一次。
+* **偏移**：选择日期范围的偏移。您可以添加或减去日、周、月、季度或年。
 
 ## 滚动日期示例
 
-某些日期范围在某些报表中非常有用。
+某些日期范围在特定报告中很有用。
 
 年初至今：
 
@@ -63,14 +62,14 @@ Start: Start of current year
 End: End of current day
 ```
 
-上星期四至本星期四：
+上周四到本周四：
 
 ```text
 Start: Start of current week minus 3 days
 End: Start of current week plus 4 days
 ```
 
-会计年度(例如，如果会计年度开始为12月)
+财年（例如，某个财年是否在 12 月开始）
 
 ```text
 Start: Start of current year minus 1 month
