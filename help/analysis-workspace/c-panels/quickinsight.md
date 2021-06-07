@@ -2,11 +2,10 @@
 description: 快速分析是一款面向新工作区用户的工具，可指导用户构建数据表和可视化图表
 title: 快速分析面板
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '1101'
-ht-degree: 75%
+source-wordcount: '1097'
+ht-degree: 74%
 
 ---
 
@@ -14,17 +13,17 @@ ht-degree: 75%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 >[!IMPORTANT]
 >
->**[!UICONTROL Quick Insightspanel]** 当前处于有限测试中。[了解详情](https://docs.adobe.com/content/help/zh-Hans/analytics/landing/an-releases.html)
+>**[!UICONTROL Quick Insightspanel]** 当前处于有限测试阶段。[了解详情](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html)
 
 [!UICONTROL 快速分析]可为 [!UICONTROL Analysis Workspace] 的非分析师和新用户了解如何快速轻松地回答业务问题提供指导。此外，对于希望快速回答简单问题的高级用户来说，它也是一个不错的工具，无需自己制表。
 
-当您首次使用此[!UICONTROL Analysis Workspace]开始时，您可能会想知道哪些可视化功能最有用，哪些维度和量度可以促进洞察，在何处拖放项目，在何处创建筛选器等。
+当您首次使用此[!UICONTROL Analysis Workspace]时，您可能会想知道哪些可视化图表最有用，哪些维度和量度可促进洞察，应将项目拖放到何处，应在何处创建过滤器等。
 
-为帮助您做到这一点，并根据您自己的公司在[!UICONTROL Analysis Workspace]中对数据组件的使用情况，[!UICONTROL 快速分析]利用了一种算法，该算法将为您提供公司使用的最流行的维度、量度、过滤器和日期范围。 事实上，您将在下拉列表中看到标记为[!UICONTROL Popular]的维度、量度和过滤器，如下所示：
+为了帮助您解答这些问题，并根据贵公司对[!UICONTROL Analysis Workspace]中的数据组件的使用情况，[!UICONTROL 快速分析]会利用算法来向您介绍贵公司使用的最热门的维度、量度、过滤器和日期范围。 事实上，您会在下拉列表中看到标记为[!UICONTROL 热门]的维度、量度和过滤器，如下所示：
 
 ![](assets/popular-tag.png)
 
@@ -46,7 +45,7 @@ ht-degree: 75%
 | [!UICONTROL 量度] | 量度是有关访客活动的量化信息，包括查看次数、点进次数、重新加载次数、平均逗留时间、件数、订购、收入等。 |
 | [!UICONTROL 可视化图表] | 工作区提供了[许多可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)，用于构建数据的可视化表示形式，如条形图、圆环图、直方图、折线图、地图、散点图等。 |
 | [!UICONTROL 维度划分] | 维度划分是一种按其他维度来划分维度的方法。在我们的示例中，您可以按移动设备划分美国州来获取各个州的移动设备访问次数，或者按移动设备类型、区域、内部营销活动等划分移动设备。 |
-| [!UICONTROL 过滤器] | 过滤器允许您根据特征或网站交互确定访客子集。 例如，您可以基于以下属性构建[!UICONTROL 访客]过滤器:浏览器类型、设备、访问次数、国家/地区、性别或基于交互：活动、关键字搜索、搜索引擎或基于退出和条目：来自Facebook、定义的登陆页、引用域或基于自定义变量的访客:表单字段、定义的类别、客户ID。 |
+| [!UICONTROL 过滤器] | 过滤器允许您根据特征或网站交互来识别访客子集。 例如，您可以根据属性生成[!UICONTROL Visitor]过滤器：浏览器类型、设备、访问次数、国家/地区、性别或基于交互：促销活动、关键词搜索、搜索引擎，或基于退出和登入：来自Facebook、已定义登陆页面、反向链接域或基于自定义变量的访客：表单字段、定义的类别、客户ID。 |
 
 ## 快速分析入门指南
 
@@ -58,7 +57,7 @@ ht-degree: 75%
    ![](assets/qi-panel.png)
 
 1. 首次开始时，请阅读简短教程，其中介绍了一些[!UICONTROL 快速分析面板]的基础知识。或者，单击以&#x200B;**[!UICONTROL 跳过教程]**。
-1. 选择构建块（也称为组件）：维度（橙色）、量度（绿色）、过滤器（蓝色）或日期范围（紫色）您必须为要自动构建的表至少选择一个维度和一个量度。
+1. 选择构建基块（也称为组件）：维度（橙色）、量度（绿色）、过滤器（蓝色）或日期范围（紫色）。您必须为要自动构建的表至少选择一个维度和一个量度。
 
    ![](assets/qibuilder2.png)
 
@@ -98,7 +97,7 @@ ht-degree: 75%
 
    ![](assets/qibuilder6.png)
 
-* **添加更多过滤器**:通过使用AND或OR运算符将多达2个过滤器添加到表中。在添加“移动设备用户 OR 忠诚的访客”后，查看表格会发生什么变化。它们彼此相邻，位于量度上方。如果您添加了“移动用户”和“忠诚访客”，您将看到这两个过滤器的结果，它们会相互叠放在表中。
+* **添加更多过滤器**:使用AND或OR运算符将最多2个过滤器添加到表中。在添加“移动设备用户 OR 忠诚的访客”后，查看表格会发生什么变化。它们彼此相邻，位于量度上方。如果您添加了“移动设备用户AND忠诚的访客”，您将看到这两个过滤器的结果，并且它们会在表中彼此堆叠。
 
    ![](assets/qibuilder7.png)
 
