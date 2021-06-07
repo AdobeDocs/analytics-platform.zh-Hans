@@ -1,13 +1,12 @@
 ---
-description: 在Workspace中使用模板并创建自定义模板。
+description: 在工作区中使用模板并创建自定义模板。
 title: 模板
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 exl-id: 464032a1-6dae-4df5-b4db-b277788e88c2
-translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 95%
+source-wordcount: '709'
+ht-degree: 93%
 
 ---
 
@@ -15,13 +14,13 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 您可以选择从以下项创建项目：
 
 * **空白项目（默认）**：有关说明，请参阅[创建 Analysis Workspace 项目](/help/analysis-workspace/home.md)。
 * **标准模板**：这些模板由 Adobe 创建，随产品一起提供。
-* **自定义模板**：这些模板可由具有管理员权限的用户或非管理员创建、共享或删除，前提是已在 Admin Console 中向他们授予了 [!UICONTROL Analysis Workspace：另存为模板]权限。[了解更多...](https://docs.adobe.com/content/help/zh-Hans/analytics/admin/admin-console/permissions/product-profile.html)
+* **自定义模板**：这些模板可由具有管理员权限的用户或非管理员创建、共享或删除，前提是已在 Admin Console 中向他们授予了 [!UICONTROL Analysis Workspace：另存为模板]权限。[了解更多...](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html)
 
 ![](assets/start_modal.png)
 
@@ -55,7 +54,7 @@ ht-degree: 95%
 
 ## 标准模板
 
-首次打开 Workspace 时，模板位于左边栏中。Analysis Workspace 模板涵盖常见用例。它们按属于的垂直分组，并根据您选择的视图填充不同的维度、过滤器、量度和可视化。
+首次打开 Workspace 时，模板位于左边栏中。Analysis Workspace 模板涵盖常见用例。这些量度按所属的垂直方向分组，并填充了不同的维度、过滤器、量度和可视化图表，具体取决于您选择的数据视图。
 
 您可以按原样使用这些预填充模板，或修改它们以符合您的需要（例如，添加或替换量度或可视化图表），然后起一个新名称保存它们。
 
