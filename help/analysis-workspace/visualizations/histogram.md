@@ -2,10 +2,9 @@
 description: 直方图类似于条形图，不过它可以将数字归为几组不同的范围（存储段）。
 title: 直方图
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '421'
 ht-degree: 87%
 
 ---
@@ -14,7 +13,7 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 直方图类似于条形图，不过它可以将数字归为几组不同的范围（存储段）。Analytics 将数字的“存储”自动归为不同的范围，但您可以在[高级设置](#section_09D774C584864D4CA6B5672DC2927477)中更改相关设置。
 
@@ -45,7 +44,7 @@ ht-degree: 87%
 | 开始存储段 | 确定直方图从哪个存储段开始。“1”为默认值。您可以在 0 到无穷大（非负数）的范围内设置开始数量。 |
 | 量度存储段 | 您可以增加/减少数据范围（存储段）的数量。存储段的最大数量为 50。 |
 | 量度存储段大小 | 您可以设置每个存储段的大小。例如，您可以将存储段大小从 1 次页面查看更改为 2 次页面查看。 |
-| 计算方法 | 您可以在[访客](https://docs.adobe.com/content/help/en/analytics/components/metrics/unique-visitors.html)、[访问](https://docs.adobe.com/content/help/en/analytics/components/metrics/visits.html)或点击类型中进行选择。例如，每次访问的页面查看次数或每位访客的页面查看次数，或者每次点击的页面查看次数。对于点击来说，“发生次数”可作为自由格式表中的 y 轴量度。 |
+| 计算方法 | 您可以在[访客](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html)、[访问](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html)或点击类型中进行选择。例如，每次访问的页面查看次数或每位访客的页面查看次数，或者每次点击的页面查看次数。对于点击来说，“发生次数”可作为自由格式表中的 y 轴量度。 |
 
 <!--Russ or Meike - Check Hit Type link above. -->
 
@@ -60,8 +59,8 @@ ht-degree: 87%
 
 ![](assets/manage-data-source.png)
 
-表中显示的预建过滤器是内部过滤器，不会显示在筛选器选择器中。 单击筛选器名称旁的“i”图标，然后单击&#x200B;**[!UICONTROL 设为公用]**&#x200B;以使筛选器公开。
+表格中显示的预建过滤器是内部过滤器，不会显示在过滤器选择器中。 单击过滤器名称旁边的“i”图标，然后单击&#x200B;**[!UICONTROL 设为公用]**&#x200B;以将过滤器设为公用。
 
 ![](assets/prebuilt_segments.png)
 
-要探索更多用于管理自由格式数据表及其他可视化的方法（如进行数据划分），请转到[此处](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)。
+要探索更多用于管理自由格式数据表及其他可视化的方法（如进行数据划分），请转到[此处](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=zh-Hans)。
