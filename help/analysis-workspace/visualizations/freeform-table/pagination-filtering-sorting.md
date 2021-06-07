@@ -1,20 +1,19 @@
 ---
 description: 在 Analysis Workspace 中对表格进行分页、过滤和排序
 title: 对表格进行分页、过滤和排序
-translation-type: ht
-source-git-commit: 7274e44dedb3eef89119d886e72c1454d914da0f
-workflow-type: ht
-source-wordcount: '235'
+exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '233'
 ht-degree: 100%
 
 ---
-
 
 # 对表格进行分页、过滤和排序
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 有关 Analysis Workspace 中的分页、筛选和排序表的概述，请观看此视频教程：
 
@@ -44,7 +43,7 @@ ht-degree: 100%
 >
 >维度排序仅适用于 Customer Journey Analytics 中的自由格式表，而不适用于传统的 Adobe Analytics。可以在两个版本的 Analytics 中执行量度排序。
 
-1. 在项目中的任意自由格式表中，单击维度名称旁的箭头：
+1. 在项目中的任意“自由格式”表中，单击维度名称旁的箭头：
 
 ![](assets/sort-dimensions.png)
 
