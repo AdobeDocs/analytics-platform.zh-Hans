@@ -2,10 +2,9 @@
 title: 归因常见问题解答
 description: 获取有关归因的常见问题解答。
 exl-id: 3153d8c9-4ca8-4189-8a2f-511a87e8ac17
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '306'
 ht-degree: 88%
 
 ---
@@ -14,7 +13,7 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 **使用归因时，“无”行项目是什么？**
 
@@ -26,7 +25,7 @@ ht-degree: 88%
 
 **何时应使用访问归因回顾？何时应使用访客归因回顾？**
 
-归因回顾的选择取决于您的用例。如果转化通常比单次访问花费的时间长，则建议使用访客回顾。创建具有较长访问定义的数据视图也是一个潜在的解决方案。
+归因回顾的选择取决于您的用例。如果转化通常比单次访问花费的时间长，则建议使用访客回顾。创建具有较长访问定义的数据视图也是一种潜在的解决方案。
 
 **使用归因时，如何进行 prop 和 eVar 比较？**
 
@@ -51,6 +50,6 @@ ht-degree: 88%
 * 单页面访问量
 * 单次存取
 
-**归因如何与过滤器协作？**
+**归因如何与过滤器一起使用？**
 
 归因始终在过滤器之前运行，全局过滤器在应用任何其他报表过滤器之前运行。
