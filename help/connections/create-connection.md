@@ -2,10 +2,10 @@
 title: 创建连接
 description: 描述如何在 Customer Journey Analytics 中创建与 Platform 数据集的连接。
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-source-git-commit: 90470be09d666c0c3937670d5d5669ab668ed2c4
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '1973'
-ht-degree: 98%
+source-wordcount: '1968'
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 98%
 
 单击[此处](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=en)，查看视频概述。
 
-要创建CJA连接，您需要以下权限：
+要创建CJA连接，您需要在[Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html)中拥有以下权限：
 
 Adobe Experience Platform:
 * 数据建模：查看架构，管理架构
@@ -41,7 +41,7 @@ Customer Journey Analytics
 
 1. 在 Experience Platform 中选择一个沙盒，其中包含要创建连接的数据集。
 
-   Adobe Experience Platform 提供了可将单个 Platform 实例划分为多个单独的虚拟环境的[沙盒](https://docs.adobe.com/content/help/zh-Hans/experience-platform/sandbox/home.html)，以帮助开发和改进数字体验应用程序。您可以将沙盒视为包含数据集的“数据孤岛”。沙盒可用于控制对数据集的访问。选择沙盒后，左边栏会显示可从该沙盒中提取的所有数据集。
+   Adobe Experience Platform 提供了可将单个 Platform 实例划分为多个单独的虚拟环境的[沙盒](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html)，以帮助开发和改进数字体验应用程序。您可以将沙盒视为包含数据集的“数据孤岛”。沙盒可用于控制对数据集的访问。选择沙盒后，左边栏会显示可从该沙盒中提取的所有数据集。
 
    >[!IMPORTANT]
    >
@@ -71,7 +71,7 @@ Customer Journey Analytics
 
 1. **[!UICONTROL 时间戳]**：仅对于事件数据集，此设置会自动设置为 [!UICONTROL Experience Platform] 中基于事件的架构的默认时间戳字段。
 
-1. **[!UICONTROL 架构]**：这个[架构](https://docs.adobe.com/content/help/zh-Hans/experience-platform/xdm/schema/composition.html)是以其中创建了数据集的 Adobe Experience Platform 为基础。
+1. **[!UICONTROL 架构]**：这个[架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html)是以其中创建了数据集的 Adobe Experience Platform 为基础。
 
 1. **[!UICONTROL 人员 ID]**：从可用身份的下拉列表中选择一个人员 ID。这些身份已在 Experience Platform 的数据集架构中定义。有关如何将身份映射用作人员 ID 的信息，请参见下文。
 
@@ -85,7 +85,7 @@ Customer Journey Analytics
 
 现在，Customer Journey Analytics 支持将身份映射用作人员 ID。身份映射是一种允许人员上传键值对的映射数据结构。键是身份命名空间，值是包含身份值的结构。在上传的每一行/每个事件中，都存在身份映射，并且身份映射会相应地填充到每一行中。
 
-身份映射适用于任何满足以下要求的数据集：使用基于 [ExperienceEvent XDM](https://docs.adobe.com/content/help/zh-Hans/experience-platform/xdm/home.html) 类的架构。当您要将此类数据集包含在 CJA 连接中时，您既可以选择主 ID，也可以选择身份映射来作为字段：
+身份映射适用于任何满足以下要求的数据集：使用基于 [ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) 类的架构。当您要将此类数据集包含在 CJA 连接中时，您既可以选择主 ID，也可以选择身份映射来作为字段：
 
 ![](assets/idmap1.png)
 
@@ -94,7 +94,7 @@ Customer Journey Analytics
 | 选项 | 描述 |
 |---|---|
 | [!UICONTROL 使用主 ID 命名空间] | 它会指示 CJA 逐行在“身份映射”中查找标记了“primary=true”属性的身份，并将该身份用作相应行的人员 ID。这意味着，它是 Experience Platform 中用于分区时使用的主密钥。此外，它还是用作 CJA 访客 ID 的主要候选项（取决于 CJA 连接中数据集的配置方式）。 |
-| [!UICONTROL 命名空间] | （此选项仅适用于未使用主 ID 命名空间的情况。）身份命名空间是 [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/zh-Hans/experience-platform/identity/namespaces.html) 的组件，充当与身份相关的上下文指示器。如果指定了命名空间，CJA 会在每行的“身份映射”中搜索此命名空间密钥，并将该命名空间下的身份用作该行的人员 ID。请注意，由于 CJA 无法对所有行执行全方位数据集扫描以确定哪些命名空间实际存在，因此下拉列表中会列出所有可能的命名空间。您需要知道数据中指定了哪些命名空间；这些信息无法自动检测。 |
+| [!UICONTROL 命名空间] | （此选项仅适用于未使用主 ID 命名空间的情况。）身份命名空间是 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html) 的组件，充当与身份相关的上下文指示器。如果指定了命名空间，CJA 会在每行的“身份映射”中搜索此命名空间密钥，并将该命名空间下的身份用作该行的人员 ID。请注意，由于 CJA 无法对所有行执行全方位数据集扫描以确定哪些命名空间实际存在，因此下拉列表中会列出所有可能的命名空间。您需要知道数据中指定了哪些命名空间；这些信息无法自动检测。 |
 
 ### 身份映射边缘情况
 
@@ -117,8 +117,8 @@ Customer Journey Analytics
    | [!UICONTROL 描述] | 添加更多详细信息以将此连接与其他连接区分开来。 |
    | [!UICONTROL 数据集] | 此连接中包含的数据集。 |
    | [!UICONTROL 从今天开始自动导入此连接中的所有新数据集。] | 如果要创建持续连接，请选择此选项，以便要添加到此连接中数据集的任何新数据批次会自动流入 [!UICONTROL 工作区] 中。 |
-   | [!UICONTROL 导入所有现有数据] | 当选择此选项并保存连接时，将会从 [!DNL Experience Platform] 中导入或回填此连接中所有数据集的所有现有（历史）数据。未来，还将自动导入添加到这个已保存连接的任何新数据集的所有现有历史数据。另请参阅下面的[回填历史数据](https://docs.adobe.com/content/help/zh-Hans/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data)。<br>**请注意，保存此连接后，无法更改此设置。** |
-   | [!UICONTROL 平均每日事件数] | 您需要为连接中的所有数据集指定要导入的平均每日事件数（包括新数据&#x200B;**和**&#x200B;回填数据）。从下拉菜单中选择一个选项，以便 Adobe 能为此数据分配足够的空间。<br>如果您不知道贵公司要导入的平均每日事件数，则可以在 [Adobe Experience Platform 查询服务](https://docs.adobe.com/content/help/zh-Hans/experience-platform/query/home.html)中执行简单的 SQL 查询以查明该数值。<br>请参阅下面的“计算平均每日事件数”。 |
+   | [!UICONTROL 导入所有现有数据] | 当选择此选项并保存连接时，将会从 [!DNL Experience Platform] 中导入或回填此连接中所有数据集的所有现有（历史）数据。未来，还将自动导入添加到这个已保存连接的任何新数据集的所有现有历史数据。另请参阅下面的[回填历史数据](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data)。<br>**请注意，保存此连接后，无法更改此设置。** |
+   | [!UICONTROL 平均每日事件数] | 您需要为连接中的所有数据集指定要导入的平均每日事件数（包括新数据&#x200B;**和**&#x200B;回填数据）。从下拉菜单中选择一个选项，以便 Adobe 能为此数据分配足够的空间。<br>如果您不知道贵公司要导入的平均每日事件数，则可以在 [Adobe Experience Platform 查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html)中执行简单的 SQL 查询以查明该数值。<br>请参阅下面的“计算平均每日事件数”。 |
 
 1. 单击&#x200B;**[!UICONTROL 保存和创建数据视图]**。相关文档，请参阅[创建数据视图](/help/data-views/create-dataview.md)。
 
@@ -130,13 +130,13 @@ Customer Journey Analytics
 * 我们会优先处理新添加到此连接中数据集的新数据，因此这些新数据的滞后时间最短。
 * 任何回填（历史）数据的导入速度都会比较慢。滞后时间受以下两个因素的影响：您所拥有的历史数据数量以及您选择的&#x200B;**[!UICONTROL 平均每日事件数]**&#x200B;设置。例如，如果您每日的数据行数超过 10 亿，且您具有 3 年的历史数据，则可能需要数周时间才能完成导入。相反，如果您每日的数据行数不足 100 万，且只有一周的历史数据，则不用一小时即可完成导入。
 * 回填将应用于整个连接，而不是单独应用于每个数据集。
-* [Adobe Analytics Source Connector](https://docs.adobe.com/content/help/zh-Hans/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) 最多可导入 13 个月的数据，而无论数据大小如何。
+* [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html?lang=zh-Hans) 最多可导入 13 个月的数据，而无论数据大小如何。
 
 ### 计算平均每日事件数
 
 必须对连接中的每个数据集都进行此项计算。
 
-1. 转到 [Adobe Experience Platform 查询服务](https://docs.adobe.com/content/help/en/experience-platform/query/home.html)并创建新查询。
+1. 转到 [Adobe Experience Platform 查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html)并创建新查询。
 
 1. 创建的查询将如下所示：<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
