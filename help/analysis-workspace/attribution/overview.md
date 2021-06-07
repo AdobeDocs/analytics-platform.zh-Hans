@@ -2,10 +2,9 @@
 title: 归因概述
 description: 将成功事件的点数归因到多个维度项目的概念。
 exl-id: 845b4310-e1b2-4690-b267-6f6d211845fb
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '452'
 ht-degree: 93%
 
 ---
@@ -14,7 +13,7 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 通过归因，分析师能够自定义维度项目获取成功事件点数的方式。例如：
 
@@ -35,7 +34,7 @@ Adobe Analytics 通过让您能够执行以下操作来增强归因：
 * 使用无限制的归因模型比较：动态比较任意所需数量的模型。
 * 避免实施更改：使用报表时间处理和上下文感知会话，可在运行时构建并应用客户历程上下文。
 * 构建与您的归因方案最匹配的会话。
-* 按过滤器划分归因：轻松比较任何重要过滤器（例如，新客户与重复客户、产品X与产品Y、忠诚度级别或CLV）中营销渠道的表现。
+* 按过滤器划分归因：轻松比较营销渠道在任何重要过滤器（例如，新客户与回访客户、产品X与产品Y、忠诚度级别或CLV）中的表现。
 * 检查渠道交叉和多接触点分析：使用维恩图和直方图，以及趋势归因结果。
 * 直观地分析关键营销序列：通过多节点流量和流失可视化图表，以可视方式探索导致转化的路径。
 * 构建计算量度：使用任意数量的归因分配方法。
