@@ -2,14 +2,13 @@
 description: 同类群组分析的用例示例。
 keywords: Analysis Workspace
 title: 同类群组分析用例
-feature: Reports & Analytics Basics
+feature: Reports & Analytics 基础知识
 uuid: 5ec46f84-5702-4bc1-a796-874a3abe87c9
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
-translation-type: tm+mt
-source-git-commit: 3c10451d5a70e4f733634efb9648da843e4c0db1
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 81%
+source-wordcount: '964'
+ht-degree: 82%
 
 ---
 
@@ -17,7 +16,7 @@ ht-degree: 81%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 [!UICONTROL 同类群组分析]的用例示例。
 
@@ -51,9 +50,9 @@ ht-degree: 81%
 
 请您在几个月后再关注同类群组分析报表。对于在启动促销活动后形成的同类群组而言，第三个月内转化为付费的 Creative Cloud 订阅的用户概率由 4%-5% 上升为 13%-14%，使得每个按月统计的同类群组从此都能产生数十万美元的收入。
 
-## 复杂的队列过滤器用例
+## 复杂同类群组过滤器用例
 
-一家大型连锁酒店针对多个客户群组进行了促销，并跟踪促销活动的效果。为了确定要定位的最佳用户同类群组，他们想要创建非常具体的同类群组。使用增强的[!UICONTROL Inclusion]和[!UICONTROL Return][!UICONTROL  Cortirai]表格中的Inclusion和 Cortinal标准，他们能够仅定义具有多个量度和过滤器的适当的同期群组，以识别表现欠佳的客户群组，以便通过促销和促销和交易目标，以增加预订。
+一家大型连锁酒店针对多个客户群组进行了促销，并跟踪促销活动的效果。为了确定要定位的最佳用户同类群组，他们想要创建非常具体的同类群组。使用扩大的[!UICONTROL Includation]和[!UICONTROL Return][!UICONTROL Coort]表中的标准，他们能够通过多个量度和过滤器定义适当的同类群组，以识别性能不佳的客户群组，以便通过促销和优惠活动来定位他们，以增加预订量。
 
 ## 采用的应用程序版本用例
 
@@ -65,8 +64,8 @@ ht-degree: 81%
 
 ## 产品上市用例
 
-一家大型服装零售商拥有许多特定的客户过滤器，这些客户将为其业务带来大部分收入。 每个过滤器都有专门设计和创建的产品，其中都要考虑到过滤器。 每次有产品上市时，他们都想知道新产品如何在一段时间内增加各个同类群组的销售额。使用[!UICONTROL 队列分析]中新的[!UICONTROL 延迟表]设置，他们能够分析给定客户过滤器的启动前和启动后行为和收入。 利用这些信息，他们可以确定哪些产品正在增加收入，哪些产品对客户没有吸引力。
+一家大型服装零售商拥有许多特定的客户过滤器，这些过滤器可为其业务带来大部分收入。 每个过滤器都有专门设计和创建的产品，其中都考虑了过滤器。 每次有产品上市时，他们都想知道新产品如何在一段时间内增加各个同类群组的销售额。使用[!UICONTROL 同类群组分析]中新的[!UICONTROL 延迟表]设置，他们能够分析给定客户过滤器在产品上市前和上市后的行为以及收入。 利用这些信息，他们可以确定哪些产品正在增加收入，哪些产品对客户没有吸引力。
 
 ## 个人吸引力 - 最忠诚的用户使用案例
 
-一家大型航空公司的成功和大部分收入均来自于其忠诚的旧客户。在许多情况下，他们的忠实旅客为其带来了大部分收入；要想取得长期成功，留住这些客户至关重要。识别最忠诚的固定客户通常十分困难。但是，使用[!UICONTROL 队列分析]中新的[!UICONTROL 滚动计算]设置，他们能够分析忠诚的过滤器并找出每月重复购买的旅客。 然后，他们能够为这些旅客提供奖励和优厚待遇，以答谢旅客的忠诚。此外，通过将同期群类型从保留转变为客户流失，他们还能够确定哪些客户没有逐月重复购买，并通过促销目标这些过滤器，以便与他们重新互动，并确保他们在未来仍是忠实客户。
+一家大型航空公司的成功和大部分收入均来自于其忠诚的旧客户。在许多情况下，他们的忠实旅客为其带来了大部分收入；要想取得长期成功，留住这些客户至关重要。识别最忠诚的固定客户通常十分困难。但是，使用[!UICONTROL 同类群组分析]中新的[!UICONTROL 滚动计算]设置，他们能够分析忠诚客户的过滤器，并找出哪些客户是每月的重复购买者。 然后，他们能够为这些旅客提供奖励和优厚待遇，以答谢旅客的忠诚。此外，通过将同类群组类型从维系切换为流失，他们还能够确定哪些客户不是每月的重复购买者，并通过促销活动定位这些过滤器，以便重新吸引他们，并确保他们将来保持忠诚的客户。
