@@ -2,11 +2,10 @@
 title: 创建过滤器
 description: 了解过滤器创建用户界面。
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 91%
+source-wordcount: '368'
+ht-degree: 93%
 
 ---
 
@@ -14,7 +13,7 @@ ht-degree: 91%
 
 过滤器生成器提供了一个将量度、维度、过滤器和事件拖放到其中的画布，从而根据容器层次结构逻辑、规则和运算符过滤访客。通过使用该集成开发工具，您可以生成和保存简单或复杂的过滤器，以确定跨访问和页面点击的访客属性和操作。
 
-您可以通过将任何组件类型(维度、维度项目、事件、量度、过滤器、过滤器模板、日期范围)拖放到面板顶部的过滤器拖放区中来创建即时过滤器。
+将任意组件类型（维度、维度项、事件、量度、过滤器、过滤器模板、日期范围）放入面板顶部的过滤器拖放区域中，即可创建即时过滤器。
 
 组件类型将被自动转换为过滤器。或者，您还可以单击&#x200B;**[!UICONTROL 添加过滤器]**&#x200B;下拉框中的“+”号。
 
@@ -44,8 +43,8 @@ ht-degree: 91%
 | 操作 | 描述 |
 |--- |--- |
 | 根据选定的内容创建过滤器 | 创建内联过滤器。选择行，接着右键单击选定的内容，然后创建内联过滤器。该过滤器只适用于打开的项目并且不能另存为 CJA 过滤器。1. 选择行。2. 右键单击选定的内容。3. 单击&#x200B;*从所选内容创建过滤器*。 |
-| “组件”>“新建过滤器” | 屏幕上会显示“过滤器生成器”。有关过滤器的更多信息，请参阅[过滤器生成器](https://docs.adobe.com/content/help/zh-Hans/analytics/components/segmentation/segmentation-workflow/seg-build.html)。 |
-| “共享”>“共享项目”或“共享”>“策划项目数据” | 在[策划并共享](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6)中，了解应用到项目中的过滤器如何用于给收件人共享的分析当中。 |
+| “组件”>“新建过滤器” | 屏幕上会显示“过滤器生成器”。有关过滤器的更多信息，请参阅[过滤器生成器](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html)。 |
+| “共享”>“共享项目”或“共享”>“策划项目数据” | 在[策划并共享](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6)中，了解应用到项目中的过滤器如何用于给收件人共享的分析当中。 |
 | 使用过滤器作为维度 | 视频：在 Analysis Workspace 中使用过滤器作为维度 |
 
 >[!VIDEO](https://video.tv.adobe.com/v/23974)
