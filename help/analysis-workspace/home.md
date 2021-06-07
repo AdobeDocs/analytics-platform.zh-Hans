@@ -3,11 +3,10 @@ keywords: Analysis Workspace
 title: Analysis Workspace 概述
 description: Analysis Workspace 功能概览
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 94%
+source-wordcount: '466'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +36,7 @@ Analysis Workspace 是一款通过浏览器即可使用的灵活工具，可让�
 
 ## 创建新项目 {#new-project}
 
-完成教程后，您就可以开始构建您的第一个项目。**“新项目模式”**&#x200B;提供了多种不同选项来开始您的分析。您可以选择从空白项目或[空白移动记分卡](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/mobapp/curator.html)开始，具体取决于您计划从浏览器还是从 Adobe Analytics 仪表板移动应用程序共享您的分析。
+完成教程后，您就可以开始构建您的第一个项目。**“新项目模式”**&#x200B;提供了多种不同选项来开始您的分析。您可以选择从空白项目或[空白移动记分卡](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html)开始，具体取决于您计划从浏览器还是从 Adobe Analytics 功能板移动应用程序共享您的分析。
 
 ![](assets/create-new-project.png)
 
@@ -47,7 +46,7 @@ Analysis Workspace 是一款通过浏览器即可使用的灵活工具，可让�
 
 ### 组件
 
-**组** 件是维度、量度、过滤器或日期范围，所有这些都可以组合到自由格式 **[!UICONTROL 表]** 中，以开始回答您的业务问题。请务必先熟悉每个[组件类型](/help/components/overview.md)，然后再开始投入分析。掌握组件术语后，即可开始拖放至&#x200B;**[!UICONTROL 自由格式表]**&#x200B;以[构建分析](/help/analysis-workspace/build-workspace-project/freeform-overview.md)。
+**组件**&#x200B;包含维度、量度、过滤器或日期范围，所有这些组件都可以合并到一个&#x200B;**[!UICONTROL 自由格式表]**&#x200B;中，以便开始回答您的业务问题。请务必先熟悉每个[组件类型](/help/components/overview.md)，然后再开始投入分析。掌握组件术语后，即可开始拖放至&#x200B;**[!UICONTROL 自由格式表]**&#x200B;以[构建分析](/help/analysis-workspace/build-workspace-project/freeform-overview.md)。
 
 ![](assets/build-components.png)
 
@@ -65,4 +64,4 @@ Analysis Workspace 是一款通过浏览器即可使用的灵活工具，可让�
 
 ## 其他资源 {#resources}
 
-* Adobe 提供了大量的 [Analytics 视频培训教程](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/overview.html)。
+* Adobe 提供了大量的 [Analytics 视频培训教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html)。
