@@ -2,17 +2,16 @@
 title: (B2B) 将帐户级别的数据作为查询数据集进行添加
 description: 了解如何将基于帐户的数据作为查询数据集添加到 CJA
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
-translation-type: tm+mt
-source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 89%
+source-wordcount: '926'
+ht-degree: 95%
 
 ---
 
 # (B2B) 将帐户级别的数据作为查询数据集进行添加
 
-此B2B用例向您显示如何在帐户级别而非人员级别指定分析。 帐户级别的数据分析可以回答以下问题：
+此 B2B 用例将向您展示如何指定帐户级别（而非个人级别）的数据来进行分析。帐户级别的数据分析可以回答以下问题：
 
 * 与该帐户匹配的公司名是什么？
 * 与该帐户/公司相关联的员工有多少？
@@ -20,9 +19,9 @@ ht-degree: 89%
 * 与其他帐户相比，该帐户在特定营销活动中的整体表现如何？
 * 某些特定角色（如 IT 经理）在两个不同帐户中的行为是否存在差异？
 
-通过将帐户级别信息作为[lookup](/help/getting-started/cja-glossary.md)数据集导入，您可以完成所有这些操作。
+所有这些都可通过将帐户级别信息作为[查询](/help/getting-started/cja-glossary.md)数据集引入来实现。
 
-首先，在 Adobe Experience Platform 中创建一个查询模式，然后通过引入基于 .csv 的帐户级别数据来创建查询表数据集。然后，您继续在Customer Journey Analytics(CJA0)中创建一个连接，该连接组合了不同的数据集，包括您创建的查找数据集。 您随后将创建一个数据视图，并最终能够在Workspace中利用所有这些数据。
+首先，在 Adobe Experience Platform 中创建一个查询架构，然后通过引入基于 .csv 的帐户级别数据来创建查询表数据集。接着，继续在 Customer Journey Analytics 中创建一个连接（CJA0，可合并不同数据集，包括您创建的查询数据集）。您随后将创建一个数据视图，并最终能够在工作区中利用所有这些数据。
 
 >[!NOTE]
 >
@@ -30,7 +29,7 @@ ht-degree: 89%
 
 ## 1. 创建查询模式 (Experience Platform)
 
-自行创建[查询](/help/getting-started/cja-glossary.md)表模式时，应当确保所用的数据集在 CJA 中具有正确的设置（记录类型）并且可用。最佳做法是：[创建一个自定义模式类](https://docs.adobe.com/content/help/zh-Hans/experience-platform/xdm/tutorials/create-schema-ui.html#create-new-class)（将其命名为“Lookup”），并清空所有元素，以便可重复用于所有查询表。
+自行创建[查询](/help/getting-started/cja-glossary.md)表模式时，应当确保所用的数据集在 CJA 中具有正确的设置（记录类型）并且可用。最佳做法是：[创建一个自定义模式类](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#create-new-class)（将其命名为“Lookup”），并清空所有元素，以便可重复用于所有查询表。
 
 ![](assets/create-new-class.png)
 
@@ -42,7 +41,7 @@ ht-degree: 89%
 >
 >CJA 不支持在查询数据集中使用整数。如果您在查询数据集的 XDM 模式中添加整数字段，则不能将这些整数用作量度或计算量度。例如，如果将 annualRevenue 或 totalEmployees 定义为整数，则它们将在 CJA 的报表中显示为“0”。但是，如果将它们指定为字符串，则可以将它们用作查询信息。
 
-例如，annualRevenue或totalEmployees在以下示例中定义为Integer，这是它在CJA中显示“0”的原因。
+例如，在以下示例中，annualRevenue 或 totalEmployees 被定义为整数，因此它们在 CJA 中显示为“0”。
 
 1. 在 Adobe Experience Platform 中，转到&#x200B;**[!UICONTROL 数据管理 > 数据集]**。
 1. 单击 **[!UICONTROL + 创建数据集]**。
@@ -54,9 +53,9 @@ ht-degree: 89%
 
 ## 3. 将数据引入 Experience Platform
 
-如果您使用的是 CSV 文件，那么关于如何[将 CSV 文件映射到 XDM 模式](https://docs.adobe.com/content/help/zh-Hans/experience-platform/ingestion/tutorials/map-a-csv-file.html)的说明应该对您会有帮助。
+如果您使用的是 CSV 文件，那么关于如何[将 CSV 文件映射到 XDM 模式](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html)的说明应该对您会有帮助。
 
-另外，还可以使用[其他方法](https://docs.adobe.com/content/help/zh-Hans/experience-platform/ingestion/home.html)。
+另外，还可以使用[其他方法](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html)。
 
 载入数据并建立查询大约需要 2-4 小时，具体取决于查询表的大小。
 
