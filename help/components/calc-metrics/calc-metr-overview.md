@@ -2,11 +2,10 @@
 title: 计算量度概述
 description: 了解
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
-translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 81%
+source-wordcount: '482'
+ht-degree: 100%
 
 ---
 
@@ -14,13 +13,13 @@ ht-degree: 81%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
-计算量度和高级计算（或派生）量度是指您可以从现有量度创建的自定义量度。我们的计算量度工具提供了一种高度灵活的方式，可用于生成、管理和组织量度。通过使用这些工具，营销人员、产品经理和分析人员不必更改  实施，即可提出有关数据的问题。
+计算量度和高级计算（或派生）量度是指您可以从现有量度创建的自定义量度。我们的计算量度工具提供了一种高度灵活的方式，可用于生成、管理和组织量度。借助这些工具，营销人员、产品经理和分析人员不必更改您的实施，即可提出有关数据的问题。
 
 您可以
 
-* 创建在报表运行时过滤的量度，而不必更改实施。这些量度可以在历史记录中查看，因为它们是基于过滤器的。
+* 创建在报告运行时派生已过滤量度，而不必更改实施。可查看这些量度的历史记录，因为它们基于过滤器。
 * （仅限高级计算量度）根据量度进行过滤。例如，您可以为“新访客”创建一个指标，其中包含首次进行会话的人员计数。
 * （仅限高级计算指标）包含统计函数，以帮助您更好地描述数据。例如，您可以对报表中的项目数量进行计数，或为每个项目加入标准偏差数。
 
@@ -46,12 +45,12 @@ ht-degree: 81%
 | 计算量度管理器 | <ul><li>与他人共享指标。</li><li>批准和管理指标。</li><li>组织（标记）指标，以方便用户查找。</li><li>删除指标。</li><li>重命名指标。</li></ul> |
 | 适用于计算量度的 API | Adobe Analytics 2.0 API 集的组成部分。 |
 
-## CJA中的计算量度模板
+## CJA 中的计算量度模板
 
 | 计算量度名称 | 计算量度描述 |
 | --- | --- |
-| 每人会话数 | 每人平均会话数 |
-| 会话开始率 | 任何维度项目在会话的第一个事件发生的时间百分比。 |
-| 会话结束速率 | 任何维度项目在会话的上次事件发生的时间百分比。 |
-| 每人逗留时间 | 人员在任何给定维度项目上所花费的平均时间。 |
-| 每会话逗留时间 | 每个会话中人员在任何给定维度项目上平均花费的时间。 |
+| 每人的会话 | 每人的平均会话数 |
+| 会话开始比率 | 在会话第一个事件中发生的任何维度项的时间百分比。 |
+| 会话结束比率 | 在会话最后一个事件中发生的任何维度项的时间百分比。 |
+| 每人逗留时间 | 某人在任何给定维度项上逗留的平均时间。 |
+| 每个会话逗留时间 | 每个会话在任何给定维度项上逗留的平均时间。 |
