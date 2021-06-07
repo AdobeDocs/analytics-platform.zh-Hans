@@ -3,10 +3,9 @@ description: 在 Analysis Workspace 中划分维度和维度项目。
 keywords: Analysis Workspace
 title: 划分维度
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
-translation-type: tm+mt
-source-git-commit: c086f21e1a13ef4dec4e1be63d9f462bfb32f2ea
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '232'
 ht-degree: 79%
 
 ---
@@ -15,18 +14,18 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 在 Analysis Workspace 中划分维度和维度项目。
 
-根据您的特定需求无限细分数据；使用相关量度、维度、过滤器、时间线和其他查询细分值构建分析。
+根据您的特定需求，以无限制的方式对数据进行划分；使用相关量度、维度、过滤器、时间行和其他分析划分值生成查询。
 
 1. [创建项目](/help/analysis-workspace/home.md)，其中包含一个数据表。
 1. 在数据表中，右键单击某个行项目，然后选择&#x200B;**[!UICONTROL 划分]** > *`<item>`*。
 
    ![步骤结果](assets/fa_data_table_actions.png)
 
-   您可以按维度项目或受众过滤器在选定时段划分量度。 此外，您还可以进一步深入到更精细的粒度级别。
+   您可以按维度项目或受众过滤器在选定时间段内划分量度。 此外，您还可以进一步深入到更精细的粒度级别。
 
    >[!NOTE]
    >
