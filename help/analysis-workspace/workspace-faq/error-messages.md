@@ -2,11 +2,10 @@
 description: Adobe Analysis Workspace 及其相关组件中的错误消息列表
 title: Analysis Workspace 中的常见错误消息
 exl-id: 792c3b2e-bd24-4e98-b9ea-983c1189d52e
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 82%
+source-wordcount: '332'
+ht-degree: 100%
 
 ---
 
@@ -17,8 +16,8 @@ ht-degree: 82%
 | 错误消息 | 为什么出现此错误？ | 优化 |
 | --- | --- | --- |
 | [!UICONTROL 发生系统错误。请在&#x200B;**[!UICONTROL 帮助 > 提交支持票证]**&#x200B;下记录一条客户关怀团队请求，并将您的错误代码包含在内。] | Adobe 遇到了一个需要解决的问题。 | 将错误代码提交给客户关怀团队。 |
-| [!UICONTROL 错误 500：无法加载页面] | 本地网络的问题（如公司[防火墙设置](https://docs.adobe.com/content/help/zh-Hans/analytics/technotes/ip-addresses.html)），是引发该错误的一个因素。此外，Adobe 可能遇到了需要解决的问题。 | 请在几分钟后再次尝试登录。如果问题仍然存在，请向客户关怀团队提交 EIM 实例 ID 代码。 |
-| [!UICONTROL 此可视化中的过滤器或搜索包含返回过多结果的文本搜索。] | 您的筛选条件或报表筛选器过于宽泛。 | 应缩小搜索文本标准，然后重试请求。 |
-| [!UICONTROL 请求过于复杂。] | 您的报表请求过大，无法执行。由于请求的大小、筛选器或搜索筛选器中匹配的项目过多、包含的量度过多、维度和量度组合不兼容，导致此错误的参与者是超时。 | 通过删除表中的某些列或行来简化请求，或者考虑将表拆分为单独的请求。 |
+| [!UICONTROL 错误 500：无法加载页面] | 本地网络的问题（如公司[防火墙设置](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html?lang=zh-Hans)），是引发该错误的一个因素。此外，Adobe 可能遇到了需要解决的问题。 | 请在几分钟后再次尝试登录。如果问题仍然存在，请向客户关怀团队提交 EIM 实例 ID 代码。 |
+| [!UICONTROL 此可视化图表中的一个过滤器或搜索，包含返回了大量结果的文本搜索。] | 您设定的筛选条件或报告过滤器过于宽泛。 | 应缩小搜索文本条件，然后重试请求。 |
+| [!UICONTROL 请求过于复杂。] | 您的报表请求过大，无法执行。导致此错误的因素包括：因请求的大小、过滤器或搜索过滤器中的匹配项过多、包含的量度过多、维度与量度组合不兼容等原因而导致的各种超时。 | 通过删除表中的某些列或行来简化请求，或者考虑将表拆分为单独的请求。 |
 | [!UICONTROL 此维度当前不支持非默认归因模型。] | 您使用的维度不支持非默认归因。 | 将表格中的维度替换为[归因 IQ](/help/analysis-workspace/attribution/overview.md) 兼容的维度。 |
 | [!UICONTROL 由于列或预配置行过多，导致请求失败。] | 表格中自由格式单元格（行数乘以列数）过多。 | 移除表格中的列或行，或考虑将表格拆分为单独的请求。 |
