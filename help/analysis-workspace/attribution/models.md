@@ -2,11 +2,10 @@
 title: 归因模型和回顾时间范围
 description: 不同类型的归因如何在维度项目之间划分点数。
 exl-id: 2ab6add7-9dc8-419d-96f7-e0c12e6b4761
-translation-type: tm+mt
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '1541'
-ht-degree: 98%
+source-wordcount: '1537'
+ht-degree: 97%
 
 ---
 
@@ -14,7 +13,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 Adobe Analytics 中的归因概念包含两个组件：
 
@@ -26,7 +25,7 @@ Adobe Analytics 中的归因概念包含两个组件：
 | UI 图标 | 归因模型 | 定义 | 使用时间 |
 | --- | --- | --- | --- |
 | ![最后接触](assets/last_touch1.png) | 最后接触 | 将 100% 的点数分给转化前最近发生的接触点。 | 最基本也是最常见的归因模型。它通常用于转化，并且考虑周期短。最后接触模型通常由管理搜索营销或分析内部搜索关键字的团队使用。 |
-| ![首次接触](assets/first_touch.png) | 首次接触 | 将 100% 的点数分给在归因回顾窗口中看到的首次接触点。 | 这是另一种常见的归因模型，可用于对旨在提升品牌认知度或促进客户获取的营销渠道进行分析。它经常由展示广告或社交渠道营销团队使用，但其对于评估现场产品推荐的有效性也很有帮助。 |
+| ![首次接触](assets/first_touch.png) | 首次接触 | 将 100% 的点数分给在归因回顾时间范围中看到的首次接触点。 | 这是另一种常见的归因模型，可用于对旨在提升品牌认知度或促进客户获取的营销渠道进行分析。它经常由展示广告或社交渠道营销团队使用，但其对于评估现场产品推荐的有效性也很有帮助。 |
 | ![同一接触](assets/same_touch.png) | 同一接触 | 将 100% 的点数分给发生转化的同一点击。如果在转化的同一点击中没有发生接触点，则它将存储在“无”下。 | 在对转化时立即呈现的内容或用户体验进行评估时，这个模型将会很有帮助。产品或设计团队通常会使用此模型来对发生转化的页面有效性进行评估。 |
 | ![线性](assets/linear.png) | 线性 | 将相同的点数分给促成转化的每个接触点。 | 对于需要更频繁的客户参与且具有较长考虑周期或用户体验的转化，此模型将非常有用。它通常由负责对移动设备应用程序通知有效性进行衡量的团队使用，或用于基于订阅的产品。 |
 | ![U 型](assets/u_shaped.png) | U 型 | 将 40% 的点数分给首次交互，40% 的点数分给最后交互，并将剩余 20% 的点数分给这两次交互之间的任意接触点。对于具有单一接触点的转化，它将分得 100% 的点数。对于具有两个接触点的转化，两个接触点各分得 50% 的点数。 | 此模型非常适用于那些重视引入或关闭转化交互，但同时希望识别辅助交互的用户。U 型归因通常由采取更均衡方法但同时希望更多归功于找到或结束转化的渠道的团队使用。 |
@@ -41,7 +40,7 @@ Adobe Analytics 中的归因概念包含两个组件：
 
 回顾窗口是指转化应回顾以包含接触点所花费的时间。在查看不同回顾窗口时，为首次交互分配更多点数的归因模型存在较大的差异。
 
-* **访问回顾窗口：**&#x200B;回顾到发生转化的访问之初。访问回顾窗口比较狭隘，因为不考虑访问之外的其他因素。访问回顾窗口与数据视图中修改的访问定义相符。
+* **访问回顾窗口：**&#x200B;回顾到发生转化的访问之初。访问回顾窗口比较狭隘，因为不考虑访问之外的其他因素。访问回顾窗口遵循数据视图中修改的访问定义。
 
 * **访客回顾窗口：**&#x200B;回顾到当前日期范围当月 1 日的所有访问。访客回顾窗口比较广泛，因为考虑范围包括多次访问。访客回顾时间范围会考虑报表日期范围月初的所有值。例如，如果报表日期范围为 9 月 15 日到 9 月 30 日，则访客回顾日期范围将为 9 月 1 日到 9 月 30 日。
 
@@ -49,7 +48,7 @@ Adobe Analytics 中的归因概念包含两个组件：
 
 >[!NOTE]
 >
->**[!UICONTROL 自定义回]** 顾窗口当前处于受限测试中。有关详细信息，请参阅[Adobe Analytics功能版本](https://docs.adobe.com/content/help/zh-Hans/analytics/landing/an-releases.html)。
+>**[!UICONTROL 自定义回顾]** 窗口当前处于有限测试中。有关更多信息，请参阅[Adobe Analytics功能发布](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html)。
 
 ## 示例
 
