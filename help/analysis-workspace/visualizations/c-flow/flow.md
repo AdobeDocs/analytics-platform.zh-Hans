@@ -1,14 +1,13 @@
 ---
-description: “流程”功能显示客户在您的网站和应用程序中的路径。
+description: “流量”功能显示客户在您的网站和应用程序中的路径。
 title: 流量概述
-translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 86%
+source-wordcount: '185'
+ht-degree: 83%
 
 ---
-
 
 # 流量概述
 
@@ -18,9 +17,9 @@ ht-degree: 86%
 
 * 可视化客户浏览您的网站或应用程序的历程
 * 分析客户在指定检查点（例如登入、特定维度或退出）之前和之后的去向
-* 通过指定所选路径中的特定点创建过滤器
+* 通过指定所选路径中的特定点来创建过滤器
 
-[流可视化视频教程](https://docs.adobe.com/content/help/zh-Hans/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html)(4:56)
+[流量可视化视频教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html)（4 分 56 秒）
 
 ## 维度间流量 {#section_7AA325E432C846B0AC51E70CCE79B4C0}
 
@@ -28,6 +27,6 @@ ht-degree: 86%
 
 每一列可显示一个不同的维度。在拖放区域中对维度进行拖放，以将该维度添加到图表。
 
-## 将流量图导出为项目 .CSV 文件的一部分  {#section_BACD2639A0FC4C49A75398F7D0363D9D}
+## 将流量图导出为项目 .CSV 文件的一部分 {#section_BACD2639A0FC4C49A75398F7D0363D9D}
 
 流量图可以作为您能够创建的项目 .CSV 文件的一部分，方法是转到&#x200B;**[!UICONTROL 项目]** > **[!UICONTROL 下载 CSV]**。这可以让您分析 Microsoft Excel（以表格形式显示）或其他软件中的流量结果。
