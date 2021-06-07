@@ -1,20 +1,19 @@
 ---
 title: 引用 - 高级函数
 description: 可通过以下方法访问这些函数：选中函数下拉列表中的显示高级。
-translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '2949'
+source-wordcount: '2947'
 ht-degree: 100%
 
 ---
-
 
 # 引用 - 高级函数
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 可通过以下方法访问这些函数：选中&#x200B;**[!UICONTROL 函数]**&#x200B;下拉列表中的&#x200B;**[!UICONTROL 显示高级]**。
 
@@ -103,7 +102,7 @@ ASIN(metric)
 
 | 参数 |  |
 |---|---|
-| *度量* | 所需角的余弦，其范围介于 -1 到 1 之间。 |
+| *量度* | 所需角的余弦，其范围介于 -1 到 1 之间。 |
 
 ## 反正切 (Row)
 
@@ -115,7 +114,7 @@ ATAN(metric)
 
 | 参数 |  |
 |---|---|
-| *度量* | 所需角的余弦，其范围介于 -1 到 1 之间。 |
+| *量度* | 所需角的余弦，其范围介于 -1 到 1 之间。 |
 
 ## 指数回归：预测的 Y (Row)
 
@@ -127,8 +126,8 @@ ESTIMATE.EXP(metric_X, metric_Y)
 
 | 参数 | 描述 |
 |---|---|
-| *metric_X* | 要指定为相关数据的量度。 |
-| *metric_Y* | 要指定为独立数据的量度。 |
+| *metric_X* | 要指定为因变数的量度。 |
+| *metric_Y* | 要指定为自变数的量度。 |
 
 ## Cdf-T
 
@@ -165,7 +164,7 @@ CEILING(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *度量* | 要舍入的量度。 |
+| *量度* | 要舍入的量度。 |
 
 ## 余弦 (Row)
 
@@ -177,7 +176,7 @@ COS(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *度量* | 您希望求余弦的弧度角。 |
+| *量度* | 您希望求余弦的弧度角。 |
 
 ## 立方根
 
@@ -189,7 +188,7 @@ CBRT(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *度量* | 您希望求立方根的量度。 |
+| *量度* | 您希望求立方根的量度。 |
 
 ## 累积
 
@@ -247,8 +246,8 @@ INTERCEPT.EXP(metric_X, metric_Y)
 
 | 参数 | 描述 |
 |---|---|
-| *metric_X* | 要指定为相关数据的量度。 |
-| *metric_Y* | 要指定为独立数据的量度。 |
+| *metric_X* | 要指定为因变数的量度。 |
+| *metric_Y* | 要指定为自变数的量度。 |
 
 ## 指数回归：斜率 (Table)
 
@@ -260,8 +259,8 @@ SLOPE.EXP(metric_X, metric_Y)
 
 | 参数 | 描述 |
 |---|---|
-| *metric_X* | 要指定为相关数据的量度。 |
-| *metric_Y* | 要指定为独立数据的量度。 |
+| *metric_X* | 要指定为因变数的量度。 |
+| *metric_Y* | 要指定为自变数的量度。 |
 
 ## 向下取整 (Row)
 
@@ -273,7 +272,7 @@ FLOOR(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *度量* | 您希望舍入的量度。 |
+| *量度* | 您希望舍入的量度。 |
 
 ## 大于
 
@@ -293,7 +292,7 @@ COSH(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *度量* | 您希望求双曲余弦的弧度角。 |
+| *量度* | 您希望求双曲余弦的弧度角。 |
 
 ## 双曲正弦 (Row)
 
@@ -305,7 +304,7 @@ SINH(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *度量* | 您希望求双曲正弦的弧度角。 |
+| *量度* | 您希望求双曲正弦的弧度角。 |
 
 ## 双曲正切 (Row)
 
@@ -317,7 +316,7 @@ TANH(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *度量* | 您希望求双曲正切的弧度角。 |
+| *量度* | 您希望求双曲正切的弧度角。 |
 
 ## IF (Row)
 
@@ -367,7 +366,7 @@ LOG10(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *度量* | 您希望求以 10 为底数的对数的正实数。 |
+| *量度* | 您希望求以 10 为底数的对数的正实数。 |
 
 ## 对数回归：相关系数 (Table)
 
@@ -392,8 +391,8 @@ INTERCEPT.LOG(metric_X, metric_Y)
 
 | 参数 | 描述 |
 |---|---|
-| *metric_X* | 要指定为相关数据的量度。 |
-| *metric_Y* | 要指定为独立数据的量度。 |
+| *metric_X* | 要指定为因变数的量度。 |
+| *metric_Y* | 要指定为自变数的量度。 |
 
 ## 对数回归：预测的 Y（行）
 
@@ -407,8 +406,8 @@ ESTIMATE.LOG(metric_X, metric_Y)
 
 | 参数 | 描述 |
 |---|---|
-| *metric_X* | 要指定为相关数据的量度。 |
-| *metric_Y* | 要指定为独立数据的量度。 |
+| *metric_X* | 要指定为因变数的量度。 |
+| *metric_Y* | 要指定为自变数的量度。 |
 
 ## 对数回归：斜率 (Table)
 
@@ -420,8 +419,8 @@ SLOPE.LOG(metric_A, metric_B)
 
 | 参数 | 描述 |
 |---|---|
-| *metric_A* | 要指定为相关数据的量度。 |
-| *metric_B* | 要指定为独立数据的量度。 |
+| *metric_A* | 要指定为因变数的量度。 |
+| *metric_B* | 要指定为自变数的量度。 |
 
 ## 自然对数
 
@@ -433,7 +432,7 @@ LN(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *度量* | 您希望求自然对数的正实数。 |
+| *量度* | 您希望求自然对数的正实数。 |
 
 ## NOT
 
@@ -503,8 +502,8 @@ CORREL.POWER(metric_X, metric_Y)
 
 | 参数 | 描述 |
 |---|---|
-| *metric_X* | 要指定为相关数据的量度。 |
-| *metric_Y* | 要指定为独立数据的量度。 |
+| *metric_X* | 要指定为因变数的量度。 |
+| *metric_Y* | 要指定为自变数的量度。 |
 
 ## 幂回归：预测的 Y (Row)
 
@@ -516,8 +515,8 @@ CORREL.POWER(metric_X, metric_Y)
 
 | 参数 | 描述 |
 |---|---|
-| *metric_X* | 要指定为相关数据的量度。 |
-| *metric_Y* | 要指定为独立数据的量度。 |
+| *metric_X* | 要指定为因变数的量度。 |
+| *metric_Y* | 要指定为自变数的量度。 |
 
 ## 幂回归：斜率 (Table)
 
@@ -529,8 +528,8 @@ SLOPE.POWER(metric_X, metric_Y)
 
 | 参数 | 描述 |
 |---|---|
-| *metric_X* | 要指定为相关数据的量度。 |
-| *metric_Y* | 要指定为独立数据的量度。 |
+| *metric_X* | 要指定为因变数的量度。 |
+| *metric_Y* | 要指定为自变数的量度。 |
 
 ## 二次回归：相关系数 (Table)
 
@@ -555,8 +554,8 @@ INTERCEPT.POWER(metric_X, metric_Y)
 
 | 参数 | 描述 |
 |---|---|
-| *metric_X* | 要指定为相关数据的量度。 |
-| *metric_Y* | 要指定为独立数据的量度。 |
+| *metric_X* | 要指定为因变数的量度。 |
+| *metric_Y* | 要指定为自变数的量度。 |
 
 ## 二次回归：预测的 Y (Row)
 
@@ -568,8 +567,8 @@ ESTIMATE.QUADRATIC(metric_A, metric_B)
 
 | 参数 | 描述 |
 |---|---|
-| *metric_A* | 要指定为相关数据的量度。 |
-| *metric_B* | 要指定为相关数据的量度。 |
+| *metric_A* | 要指定为因变数的量度。 |
+| *metric_B* | 要指定为因变数的量度。 |
 
 ## 二次回归：斜率 (Table)
 
@@ -581,8 +580,8 @@ SLOPE.QUADRATIC(metric_X, metric_Y)
 
 | 参数 | 描述 |
 |---|---|
-| *metric_X* | 要指定为相关数据的量度。 |
-| *metric_Y* | 要指定为独立数据的量度。 |
+| *metric_X* | 要指定为因变数的量度。 |
+| *metric_Y* | 要指定为自变数的量度。 |
 
 ## 倒数回归：相关系数 (Table)
 
@@ -607,8 +606,8 @@ INTERCEPT.RECIPROCAL(metric_A, metric_B)
 
 | 参数 | 描述 |
 |---|---|
-| *metric_X* | 要指定为相关数据的量度。 |
-| *metric_Y* | 要指定为独立数据的量度。 |
+| *metric_X* | 要指定为因变数的量度。 |
+| *metric_Y* | 要指定为自变数的量度。 |
 
 ## 倒数回归：预测的 Y (Row)
 
@@ -620,8 +619,8 @@ ESTIMATE.RECIPROCAL(metric_X, metric_Y)
 
 | 参数 | 描述 |
 |---|---|
-| *metric_X* | 要指定为相关数据的量度。 |
-| *metric_Y* | 要指定为独立数据的量度。 |
+| *metric_X* | 要指定为因变数的量度。 |
+| *metric_Y* | 要指定为自变数的量度。 |
 
 ## 倒数回归：斜率 (Table)
 
@@ -633,8 +632,8 @@ SLOPE.RECIPROCAL(metric_X, metric_Y)
 
 | 参数 | 描述 |
 |---|---|
-| *metric_X* | 要指定为相关数据的量度。 |
-| *metric_Y* | 要指定为独立数据的量度。 |
+| *metric_X* | 要指定为因变数的量度。 |
+| *metric_Y* | 要指定为自变数的量度。 |
 
 ## 正弦 (Row)
 
@@ -646,7 +645,7 @@ SIN(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *度量* | 您希望求正弦的弧度角。 |
+| *量度* | 您希望求正弦的弧度角。 |
 
 ## T 分数
 
@@ -688,7 +687,7 @@ TAN (metric)
 
 | 参数 | 描述 |
 |---|---|
-| *度量* | 您希望求正切的弧度角。 |
+| *量度* | 您希望求正切的弧度角。 |
 
 ## Z 分数 (Row)
 
@@ -715,7 +714,7 @@ Z 分数（量度）
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>度量</i> </td> 
+   <td colname="col1"> <i>量度</i> </td> 
    <td colname="col2"> <p> 返回其首个非零参数的值。 </p> </td> 
   </tr> 
  </tbody> 
@@ -730,4 +729,3 @@ Z 分数（量度）
 >[!NOTE]
 >
 >假定值为正态分布。
-
