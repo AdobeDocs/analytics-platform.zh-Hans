@@ -2,20 +2,19 @@
 description: 您可以在 Analysis Workspace 中根据上下文查看和分析数据异常。
 title: 异常检测概述
 uuid: 991fde08-198c-4410-9606-d5a4f3dd8339
-translation-type: tm+mt
-source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
+exl-id: f706cdb9-bc80-42b9-9450-4f68bdb3fd85
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 92%
+source-wordcount: '182'
+ht-degree: 96%
 
 ---
-
 
 # 异常检测概述
 
 您可以在 Analysis Workspace 中根据上下文查看和分析数据异常。
 
-[异常检测视频教程](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html) (4:53)
+[异常检测视频教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html) (4:53)
 
 “异常检测”提供了一种统计方法来确定给定的量度相对于以前的数据发生了什么变化。
 
