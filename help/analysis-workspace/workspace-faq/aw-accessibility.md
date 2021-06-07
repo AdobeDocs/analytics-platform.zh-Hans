@@ -2,10 +2,9 @@
 description: Analysis Workspace 中的无障碍支持功能
 title: Analysis Workspace 中的辅助功能
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '655'
 ht-degree: 81%
 
 ---
@@ -22,9 +21,9 @@ ht-degree: 81%
 
 [!UICONTROL Analysis Workspace] 中的导航方式包括自上而下，以及从左至右。以下导航元素有助于促进无障碍功能：
 
-* `Tab` 键会启用地标快捷键，在工作区中的较大部分之间移动。 在左边栏中，`Tab`还允许您从一个可拖动选项移动到下一个可拖动选项。
+* `Tab` 键会启用地标快捷键，在工作区中的较大区域之间移动。 在左边栏中，`Tab`还允许您从一个可拖动选项移动到下一个可拖动选项。
 * `left/right arrows`在突出显示`Tab`后在各个元素之间移动。
-* `F6`导航到项目中的第一个面板，并在该面板中的可视化之间移动。 然后，它将移至项目中的下一个面板并重复。
+* `F6`导航到项目中的第一个面板，并在该面板中的可视化之间移动。 然后，它会移到项目中的下一个面板并重复。
 * 我们应用焦点指示器，以便近视的键盘用户能够清楚地了解当前具有焦点的 UI 元素。指示器是指选定元素周围的蓝色边框。
 
    ![焦点指示器](assets/focus-indicator.png)
@@ -32,7 +31,7 @@ ht-degree: 81%
 ### 菜单栏的键盘导航
 
 1. 选项卡，直到您到达菜单栏。
-1. 使用向左/向右箭头键导航到所需的菜单。
+1. 使用左/右箭头键导航到所需的菜单。
 1. 按`Enter`选择菜单并显示其选项。
 1. 使用向上/向下箭头键导航到所需的菜单选项。
 1. 按`Enter`选择选项。
@@ -48,7 +47,7 @@ ht-degree: 81%
 
 ### 键盘快捷键（热键）
 
-[!UICONTROL Analysis Workspace] 提供丰富的[键盘快捷键](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html)，以体验更顺畅的工作流程。下面列出了导航、创建分析和获取大众化洞察信息的一些常用快捷键。
+[!UICONTROL Analysis Workspace] 提供丰富的[键盘快捷键](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html?lang=zh-Hans)，以体验更顺畅的工作流程。下面列出了导航、创建分析和获取大众化洞察信息的一些常用快捷键。
 
 #### 导航
 
@@ -69,7 +68,7 @@ ht-degree: 81%
 | Ctrl + Shift + D | 新建日期范围 |
 | Ctrl + Shift + E | 新建过滤器 |
 | Ctrl + Z | 撤消 |
-| 按住Shift键（在面板滤镜拖放区中） | 创建[下拉过滤器](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) |
+| 按住Shift键（在面板过滤器拖放区域中） | 创建[下拉过滤器](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans) |
 
 #### 大众化
 
@@ -90,7 +89,7 @@ ht-degree: 81%
 
 [!UICONTROL Analysis Workspace] 致力于符合 WCAG 2.1 AA 合规性标准，包括对颜色对比度的要求。
 
-此外，用户还可以在&#x200B;**[!UICONTROL 项目]** > **[!UICONTROL 项目设置]** > [项目调色板](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html)下为项目设置各自的首选调色板。
+此外，用户还可以在&#x200B;**[!UICONTROL 项目]** > **[!UICONTROL 项目设置]** > [项目调色板](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=zh-Hans)下为项目设置各自的首选调色板。
 
 ## 组件构建器中的必填字段验证
 
