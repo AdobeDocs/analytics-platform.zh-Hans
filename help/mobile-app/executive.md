@@ -2,11 +2,10 @@
 description: 有关使用功能板记分卡的说明。
 title: Analytics 功能板执行指南
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
-translation-type: tm+mt
-source-git-commit: 2d83d796f053465eb9543daa37068f316bccc659
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 98%
+source-wordcount: '1286'
+ht-degree: 100%
 
 ---
 
@@ -27,11 +26,11 @@ Analytics 功能板从 Customer Journey Analytics 随时随地提供各种见解
 
 | 术语 | 定义 |
 |--- |--- |
-| 用户 | 在移动设备上从 CJA 查看关键指标和见解的执行角色 |
+| 使用者 | 在移动设备上从 CJA 查看关键指标和见解的执行角色 |
 | 策划人 | 通晓数据的角色，其负责从 CJA 发现和分发见解以及配置要供使用者查看的记分卡 |
 | 策划 | 创建或编辑移动记分卡的操作，记分卡中包含用户的相关量度、维度和其他组件 |
 | 记分卡 | 包含一个或多个图块的功能板视图 |
-| 图块 | 记分卡视图中量度的呈现方式 |
+| 图块 | “记分卡视图”中量度的呈现方式 |
 | 划分 | 一种辅助视图，点按记分卡中的图块可访问这种辅助视图。此视图将展开图块上显示的量度，并（可选）报告其他划分维度。 |
 | 日期范围 | 功能板报告的主要日期范围 |
 | 比较日期范围 | 与主要日期范围进行比较的日期范围 |
@@ -120,7 +119,7 @@ Analytics 功能板从 Customer Journey Analytics 随时随地提供各种见解
 
    * 根据点按的时间间隔（**日**、**周**、**月**&#x200B;或&#x200B;**年**），您将看到两个日期范围选项，即当前时间范围或紧随其前的时间范围。点按这两个选项之一，以选择第一个范围。在&#x200B;**[!UICONTROL 比较对象]**&#x200B;列表下，点按其中显示的一个选项，以将此时间段的数据与您选择的第一个日期范围进行比较。点按屏幕右上角的&#x200B;**[!UICONTROL 完成]**。**[!UICONTROL 日期范围]**&#x200B;字段和记分卡图块会更新以显示您选择的新范围中的新比较数据。
 
-7. 要对记分卡应用筛选器，请点按筛选器下拉列表，然后选择由策展人配置的筛选器。 应用程序中的[过滤器](https://docs.adobe.com/content/help/zh-Hans/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html)的工作方式与在 Analytics Workspace 中相同。
+7. 要将过滤器应用于记分卡，请点按过滤器下拉列表，然后选择由策划人配置的过滤器。应用程序中的[过滤器](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans)的工作方式与在 Analytics Workspace 中相同。
 
    ![过滤器](assets/segment_filter.png)
 
