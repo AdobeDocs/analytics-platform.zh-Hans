@@ -1,12 +1,11 @@
 ---
-description: 流失可视化显示访客离开（掉出）和继续穿过（掉进）预定义的页面序列的位置。
+description: 流失可视化图表显示访客离开（流失）和继续通过（流失）预定义页面序列的位置。
 title: 流失概述
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 88%
+source-wordcount: '243'
+ht-degree: 84%
 
 ---
 
@@ -16,7 +15,7 @@ ht-degree: 88%
 
 流失可视化图表允许您
 
-* 对同一报表中的两个不同过滤器进行并排比较。
+* 对同一报表中的两个不同过滤器执行并排比较。
 * 拖放和重新排列漏斗步骤（接触点）
 * 混合和匹配来自不同维度和指标的值
 * 创建多维度流失报表
@@ -32,5 +31,5 @@ ht-degree: 88%
 * 一般、更宽范围的流量：显示在查看主页的访客中，有多少人继续进行搜索及有多少人最终查看特定项目。
 * 网站上事件之间的关联。显示查看隐私政策后继续购买产品的访客百分比。
 
-[流失可视化视频教程](https://docs.adobe.com/content/help/zh-Hans/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html)（4 分 15 秒）
+[流失可视化视频教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html)（4 分 15 秒）
 
