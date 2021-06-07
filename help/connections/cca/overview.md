@@ -2,11 +2,10 @@
 title: 跨渠道分析概述
 description: 在多个数据集中重新生成访客 ID 的键值，以对访客进行拼合。
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
-translation-type: tm+mt
-source-git-commit: 5770817d9e72cfde4786c205ecbfb32f34fc13ab
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 95%
+source-wordcount: '1124'
+ht-degree: 94%
 
 ---
 
@@ -50,14 +49,14 @@ ht-degree: 95%
 * 基于字段的拼接不组合或连接字段。
 * 临时 ID 字段应仅包含一种类型的 ID（即 ID 仅来自一个命名空间）。例如，临时 ID 字段不应包含登录 ID 和电子邮件 ID 的组合。
 * 如果对于同一持久 ID 发生了多个具有同一时间戳的事件，但临时 ID 字段中有多个不同的值，则基于字段的拼接将根据字母顺序进行选择。因此，如果持久 ID A 具有时间戳相同的两个事件，其中一个事件指定 Bob，而另一个指定 Ann，则基于字段的拼接将选择 Ann。
-* 跨渠道分析会跟踪每个永久ID值1年（TTL = 1年）。 如果某个设备在超过一年的时间内没有活动，然后开始再次具有活动，则新事件将与匿名人员关联，直到用户被重新标识（例如通过新登录）。
+* 跨渠道分析会将每个永久ID值的跟踪时间保留1年（TTL = 1年）。 如果设备一年多来没有活动，然后再次开始活动，则新事件将与匿名人员关联，直到用户被重新识别（例如通过新登录）为止。
 
 
 ## 启用跨渠道分析
 
 如果贵组织满足所有先决条件并已了解跨渠道分析存在的限制，便可按照以下步骤在 CJA 中开始使用该功能。
 
-1. 将所需数据导入 Adobe Experience Platform。请参阅 Adobe Experience Platform 文档中的[创建架构](https://docs.adobe.com/content/help/zh-Hans/experience-platform/xdm/tutorials/create-schema-ui.html)和[摄取数据](https://docs.adobe.com/content/help/zh-Hans/experience-platform/ingestion/home.html)。
+1. 将所需数据导入 Adobe Experience Platform。请参阅 Adobe Experience Platform 文档中的[创建架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html)和[摄取数据](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html)。
 1. 与您的 Adobe 客户经理联系，并提供以下信息：
    * 启用跨渠道分析的请求
    * 要重新生成键值的数据集的数据集 ID
