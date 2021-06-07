@@ -1,19 +1,18 @@
 ---
-description: 创建项目，并将组件(维度、量度、过滤器、日期范围)添加到自由格式面板。
+description: 创建一个项目并将组件（维度、量度、过滤器、日期范围）添加到自由格式面板。
 keywords: Analysis Workspace
 title: 创建工作区项目
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '668'
-ht-degree: 86%
+source-wordcount: '666'
+ht-degree: 98%
 
 ---
 
 
-# 创建工作区项目
+# 创建 Workspace 项目
 
-创建项目，并将组件(维度、量度、过滤器、日期范围)添加到自由格式面板。
+创建一个项目并将组件（维度、量度、过滤器、日期范围）添加到自由格式面板。
 
 在本篇文章中，您可以熟悉 Analysis Workspace 的界面元素，并了解如何创建项目。
 
@@ -21,7 +20,7 @@ ht-degree: 86%
 
 1. 指定创建和管理项目的用户权限。
 
-   创建或组织 Analysis Workspace 项目之前，管理员必须要将您添加到具有&#x200B;**[!UICONTROL 在 Analysis Workspace 中创建/组织项目]**&#x200B;权限的组，或者添加到&#x200B;**[!UICONTROL 全部报表访问]**&#x200B;用户组。（**[!UICONTROL 管理员]** > **[!UICONTROL 用户管理]** > [群组](https://docs.adobe.com/content/help/zh-Hans/analytics/admin/user-product-management/user-groups/groups.html)）。
+   创建或组织 Analysis Workspace 项目之前，管理员必须要将您添加到具有&#x200B;**[!UICONTROL 在 Analysis Workspace 中创建/组织项目]**&#x200B;权限的组，或者添加到&#x200B;**[!UICONTROL 全部报表访问]**&#x200B;用户组。（**[!UICONTROL 管理员]** > **[!UICONTROL 用户管理]** > [群组](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html)）。
 
 1. 在 [!DNL Experience Cloud] 中，单击 **[!UICONTROL Analytics]** > **[!UICONTROL 工作区]**。
 
@@ -59,7 +58,7 @@ ht-degree: 86%
  <tbody> 
   <tr> 
    <td colname="col1"><a href="/help/analyze/analysis-workspace/components/analysis-workspace-components.md"  > 组件</a> </td> 
-   <td colname="col2"> <p>Dimension、量度、过滤器和日期范围，您可以将其拖动到项目中。 </p> </td> 
+   <td colname="col2"> <p>可拖入项目中的维度、量度、过滤器和日期范围。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md"  > 可视化图表</a> </td> 
@@ -84,13 +83,13 @@ ht-degree: 86%
    >
    >如今，当您执行“保存”或“另存为”操作后，内部链接都是一些相对于其所在项目的链接，并非相对于以往进行复制的原始项目。
 
-## 添加组件和可视化{#task_CDAC9B3007BE4A3790AFAD3746D669B1}
+## 添加组件和可视化 {#task_CDAC9B3007BE4A3790AFAD3746D669B1}
 
 1. 通过将 *`components`* 和 *`visualizations`* 拖动到项目来构建项目。
 
    **组件**
 
-   组件工具栏显示您最常使用的可搜索维度、量度、过滤器和日期范围。
+   “组件”工具栏显示了您最常使用的一些可搜索的维度、量度、过滤器以及日期范围。
 
 <table id="table_4626163E26DE46CB86391868BBA3AD32"> 
  <thead> 
@@ -110,7 +109,7 @@ ht-degree: 86%
   </tr> 
   <tr> 
    <td colname="col1"> 过滤器（蓝色） </td> 
-   <td colname="col2"> <p>仅在面板级别可拖动，但您可以在数据表中创建内联过滤器。 </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>有关详细信息，请参阅<a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  >过滤器</a>。 </p> </td> 
+   <td colname="col2"> <p>只能在面板级别进行拖动，不过，您可以在数据表中创建内联过滤器。 </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>有关更多信息，请参阅<a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  >过滤器</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 日期范围和粒度（紫色） </td> 
@@ -129,7 +128,7 @@ ht-degree: 86%
 
 1. 步骤
 
-## 使用右键单击菜单自定义数据{#concept_8117C300F21843B99F4E1B9AB7B11B6F}
+## 使用右键单击菜单自定义您的数据 {#concept_8117C300F21843B99F4E1B9AB7B11B6F}
 
 右键单击菜单允许您执行以下操作，具体操作取决于您在表格中右键单击的单元格。
 
@@ -167,7 +166,7 @@ ht-degree: 86%
    <td colname="col1"><a href="/help/analysis-workspace/components/dimensions/t-breakdown-fa.md"  > 划分</a> 
     <ul id="ul_18C83B8514AD4C1C86C071AA8402CB5C"> 
      <li id="li_6CA84ED293EA4940A7495DA9D9121264">维度 </li> 
-     <li id="li_EA16EE017B2E4A6998918706938A21BF">指标 </li> 
+     <li id="li_EA16EE017B2E4A6998918706938A21BF">量度 </li> 
      <li id="li_0405D339CD01405DB508A7D8D1A976B4">过滤器 </li> 
      <li id="li_819CE81C552F49BB9C1B83ED3B42C5F7">时间 </li> 
     </ul> </td> 
