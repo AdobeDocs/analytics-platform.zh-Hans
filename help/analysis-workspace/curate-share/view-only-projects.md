@@ -3,10 +3,9 @@ description: 工作区中的仅查看项目
 keywords: 仅供查看的项目
 title: 仅供查看的项目
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '277'
 ht-degree: 99%
 
 ---
@@ -15,7 +14,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
 
 您可以通过[项目共享工作流程](/help/analysis-workspace/curate-share/share-projects.md)与收件人共享“仅查看”项目。处于“可以查看”角色的收件人将获得更有限的项目体验。如果您将项目共享给不太熟悉您组织的数据结构（通常情况下是 Analysis Workspace 或 Adobe Analytics）的用户，但仍希望他们在安全的环境中使用数据和洞察，则可能希望这样做。
 
@@ -26,7 +25,7 @@ ht-degree: 99%
 仅查看项目中已禁用的交互包括：
 
 * 隐藏的左边栏
-* 面板日历日期范围。注意：如果要向收件人授予日历控制权，请添加[包含日期范围的下拉过滤器](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html)。
+* 面板日历日期范围。注意：如果要向收件人授予日历控制权，请添加[包含日期范围的下拉过滤器](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans)。
 * 自由格式过滤
 * 自由格式的可见行数
 * 自由格式的行、列或可视化图表设置
