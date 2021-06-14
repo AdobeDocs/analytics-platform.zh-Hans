@@ -2,10 +2,10 @@
 title: 创建连接
 description: 描述如何在 Customer Journey Analytics 中创建与 Platform 数据集的连接。
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 16533219915421ed3ff642250bb707bf5ef13ed7
 workflow-type: tm+mt
-source-wordcount: '1968'
-ht-degree: 96%
+source-wordcount: '2084'
+ht-degree: 91%
 
 ---
 
@@ -15,7 +15,9 @@ ht-degree: 96%
 
 单击[此处](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=en)，查看视频概述。
 
-要创建CJA连接，您需要在[Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html)中拥有以下权限：
+## 需要的权限
+
+要创建Customer Journey Analytics(CJA)连接，您需要在[Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html)中拥有以下权限：
 
 Adobe Experience Platform:
 * 数据建模：查看架构，管理架构
@@ -41,7 +43,7 @@ Customer Journey Analytics
 
 1. 在 Experience Platform 中选择一个沙盒，其中包含要创建连接的数据集。
 
-   Adobe Experience Platform 提供了可将单个 Platform 实例划分为多个单独的虚拟环境的[沙盒](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html)，以帮助开发和改进数字体验应用程序。您可以将沙盒视为包含数据集的“数据孤岛”。沙盒可用于控制对数据集的访问。选择沙盒后，左边栏会显示可从该沙盒中提取的所有数据集。
+   Adobe Experience Platform 提供了可将单个 Platform 实例划分为多个单独的虚拟环境的[沙盒](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=zh-Hans)，以帮助开发和改进数字体验应用程序。您可以将沙盒视为包含数据集的“数据孤岛”。沙盒可用于控制对数据集的访问。选择沙盒后，左边栏会显示可从该沙盒中提取的所有数据集。
 
    >[!IMPORTANT]
    >
@@ -50,6 +52,9 @@ Customer Journey Analytics
 1. 选择您要提取到 [!UICONTROL Customer Journey Analytics] 的一个或多个数据集，并单击&#x200B;**[!UICONTROL 添加]**。
 
    （如果您有许多数据集可供选择，可以使用数据集列表上方的&#x200B;**[!UICONTROL 搜索数据集]**&#x200B;搜索栏搜索正确的数据集。）
+
+   CJA基于Experience Platform数据集。 虽然您可以在Platform中使用任何受支持的架构字段类型，但CJA并不支持所有字段类型。 您可以向CJA添加架构字段类型（字符串或数字除外）的数据集，但CJA无法显示该数据。 此外，此时Lookup数据集中仅允许使用字符串。
+如果在将数据集添加到连接后要查找要添加到数据视图的字段，则默认标记[!UICONTROL 包含数据]可用于数据集中的所有字段。 此标记可使数据视图更易于管理，因为它只包含数据集中包含数据的架构字段。
 
 ## 配置数据集
 
@@ -85,7 +90,7 @@ Customer Journey Analytics
 
 现在，Customer Journey Analytics 支持将身份映射用作人员 ID。身份映射是一种允许人员上传键值对的映射数据结构。键是身份命名空间，值是包含身份值的结构。在上传的每一行/每个事件中，都存在身份映射，并且身份映射会相应地填充到每一行中。
 
-身份映射适用于任何满足以下要求的数据集：使用基于 [ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) 类的架构。当您要将此类数据集包含在 CJA 连接中时，您既可以选择主 ID，也可以选择身份映射来作为字段：
+身份映射适用于任何满足以下要求的数据集：使用基于 [ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans) 类的架构。当您要将此类数据集包含在 CJA 连接中时，您既可以选择主 ID，也可以选择身份映射来作为字段：
 
 ![](assets/idmap1.png)
 
@@ -118,7 +123,7 @@ Customer Journey Analytics
    | [!UICONTROL 数据集] | 此连接中包含的数据集。 |
    | [!UICONTROL 从今天开始自动导入此连接中的所有新数据集。] | 如果要创建持续连接，请选择此选项，以便要添加到此连接中数据集的任何新数据批次会自动流入 [!UICONTROL 工作区] 中。 |
    | [!UICONTROL 导入所有现有数据] | 当选择此选项并保存连接时，将会从 [!DNL Experience Platform] 中导入或回填此连接中所有数据集的所有现有（历史）数据。未来，还将自动导入添加到这个已保存连接的任何新数据集的所有现有历史数据。另请参阅下面的[回填历史数据](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data)。<br>**请注意，保存此连接后，无法更改此设置。** |
-   | [!UICONTROL 平均每日事件数] | 您需要为连接中的所有数据集指定要导入的平均每日事件数（包括新数据&#x200B;**和**&#x200B;回填数据）。从下拉菜单中选择一个选项，以便 Adobe 能为此数据分配足够的空间。<br>如果您不知道贵公司要导入的平均每日事件数，则可以在 [Adobe Experience Platform 查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html)中执行简单的 SQL 查询以查明该数值。<br>请参阅下面的“计算平均每日事件数”。 |
+   | [!UICONTROL 平均每日事件数] | 您需要为连接中的所有数据集指定要导入的平均每日事件数（包括新数据&#x200B;**和**&#x200B;回填数据）。从下拉菜单中选择一个选项，以便 Adobe 能为此数据分配足够的空间。<br>如果您不知道贵公司要导入的平均每日事件数，则可以在 [Adobe Experience Platform 查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans)中执行简单的 SQL 查询以查明该数值。<br>请参阅下面的“计算平均每日事件数”。 |
 
 1. 单击&#x200B;**[!UICONTROL 保存和创建数据视图]**。相关文档，请参阅[创建数据视图](/help/data-views/create-dataview.md)。
 
