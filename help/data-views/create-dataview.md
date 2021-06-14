@@ -2,10 +2,10 @@
 title: 如何在 Customer Journey Analytics 中创建新数据视图。
 description: 描述创建新数据视图所需的所有设置。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: e62303250e1f6b8f3f666a04c2742126a4861893
+source-git-commit: d343ad40be6ae210f17dd547062e91df0aaf7fce
 workflow-type: tm+mt
-source-wordcount: '2934'
-ht-degree: 90%
+source-wordcount: '2988'
+ht-degree: 87%
 
 ---
 
@@ -26,8 +26,8 @@ ht-degree: 90%
 | [!UICONTROL 名称] | 必须为数据视图命名。 |
 | [!UICONTROL 描述] | 不强制要求提供详细描述，但建议提供。 |
 | [!UICONTROL 时区] | 选择您要在哪个时区中显示您的数据。 |
-| [!UICONTROL 标记] | 标记让您可以将数据视图组织成不同的类别。 |
-| [!UICONTROL 容器] | 您可以在此处重命名容器，以确定它们在任何基于此数据视图的工作区项目中的显示方式。 容器用于过滤器和流失/流量等，以定义范围或上下文的范围或范围。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=zh-Hans#filter-containers) |
+| [!UICONTROL 标记] | [!UICONTROL 标记让您可以将数据视图组织成不同的类别。] |
+| [!UICONTROL 容器] | 您可以在此处重命名容器，以确定它们在任何基于此数据视图的工作区项目中的显示方式。  容器用在过滤器和流失/流量等中，以定义范围或上下文的范围或范围。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=zh-Hans#filter-containers) |
 | [!UICONTROL 人员容器名称是…] | [!UICONTROL 人员]（默认）。[!UICONTROL 人员]容器包含指定时间段内访客的每次访问和页面查看。您可以将此容器重命名为“用户”或您喜欢的任何其他术语。 |
 | [!UICONTROL 会话容器名称是…] | [!UICONTROL 会话]（默认）。通过[!UICONTROL 会话]容器可以识别页面交互、促销活动或特定会话的转化。您可以将此容器重命名为“访问”或您喜欢的任何其他术语。 |
 | [!UICONTROL 事件容器名称是…] | [!UICONTROL 事件]（默认）。[!UICONTROL 事件]容器定义要在过滤器中包含或排除的页面事件。 |
@@ -71,7 +71,7 @@ ht-degree: 90%
 | [!UICONTROL 字段名称] | 架构字段的名称。 |
 | [!UICONTROL 数据集类型] | 必需。显示组件来自哪个数据集类型（事件、查询或个人资料）的不可编辑字段。 |
 | [!UICONTROL 数据集] | 必需。显示组件来自哪个类型的字段（例如字符串、整数等）的不可编辑字段。此字段可以包含多个数据集。 |
-| [!UICONTROL 架构数据类型] | 这是指组件是字符串、整数等。 |
+| [!UICONTROL 架构数据类型] | 指组件是否为字符串、整数等。  虽然您可以在Platform中使用任何受支持的架构字段类型，但CJA并不支持所有字段类型。 您可以使用字符串或整数以外的架构字段类型向CJA添加数据集，但CJA无法显示该数据。 此外，此时Lookup数据集中仅允许使用字符串。 |
 | [!UICONTROL 组件 ID] | 必需。[CJA API](https://adobe.io/cja-apis/docs) 使用此字段引用组件。您可以单击修改图标并修改此组件 ID。但是，更改此组件 ID 会破坏包含此组件的所有现有 Workspace 项目。<br>如果您曾创建另一个对 pageTitle 维度使用不同字段的数据视图，则可以对其进行重命名并使该维度跨数据视图兼容。 |
 | [!UICONTROL 架构路径] | 必需。显示组件来自的架构路径的不可编辑字段。 |
 | [!UICONTROL 在报告中隐藏组件] | 默认 = 关闭。可让您在数据视图中管理用于报告的组件。这不会影响许可，只用于管理组件。换言之，您可以在报告中对非管理员用户隐藏组件。管理员仍可以访问该组件，只需在 Analysis Workspace 项目中单击[!UICONTROL 显示所有组件]即可。 |
@@ -95,9 +95,9 @@ ht-degree: 90%
 
 | 设置 | 描述/用例 |
 | --- | --- |
-| [!UICONTROL 设置归因] | 可让您指定要在默认情况下对此量度（如果使用）应用的归因设置。可以在自由格式表或计算量度中覆盖此默认设置。 |
+| [!UICONTROL 设置归因] | 可让您指定要在默认情况下对此量度（如果使用）应用的归因设置。此默认值可以在[!UICONTROL 自由格式表]或计算量度中覆盖。 |
 | [!UICONTROL 归因模型] | 可让您指定默认归因模型 — 仅在您开启[!UICONTROL 使用非默认归因模型]设置时有效。默认为[!UICONTROL 最近联系]。选项有：最近联系、首次联系、线性、参与率、同一接触、U 形、J 曲线、反向 J、时间衰减、自定义、算法。其中一些选项会创建需要填写的其他字段，例如“自定义”或“时间衰减”。您可以使用同一字段创建多个量度，这意味着您可以基于架构中的同一收入字段创建一个[!UICONTROL 最近联系]收入量度和一个[!UICONTROL 首次联系]收入量度。 |
-| [!UICONTROL 回顾时间范围] | 可让您为量度指定默认回顾时间范围 — 仅在您开启[!UICONTROL 使用非默认归因模型]设置时有效。选项有：人员（报告窗口）、会话、自定义。如果选择了“自定义”，我们还会为您提供选择任意天数/周数/月数/等的选项。（最长为 90 天），和 Attribution IQ 一样。您可以使用同一架构字段创建多个量度，但每个量度都有不同的回顾时间范围。 |
+| [!UICONTROL 回顾时间范围] | 可让您为量度指定默认回顾时间范围 — 仅在您开启[!UICONTROL 使用非默认归因模型]设置时有效。选项包括：[!UICONTROL Person]（报告窗口）、[!UICONTROL Session]、[!UICONTROL Custom]。 选择[!UICONTROL Custom]后，我们还为您提供选择任意天数/周/月/等的选项。 （最长90天），与[!UICONTROL Attribution IQ]类似。 您可以使用同一架构字段创建多个量度，但每个量度都有不同的回顾时间范围。 |
 
 ### 配置“添加/排除值”设置
 
