@@ -2,9 +2,9 @@
 title: 如何在 Customer Journey Analytics 中创建新数据视图。
 description: 描述创建新数据视图所需的所有设置。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: d343ad40be6ae210f17dd547062e91df0aaf7fce
+source-git-commit: 9507bdfa66775e75628426bbb6d177b9bb5a3c6a
 workflow-type: tm+mt
-source-wordcount: '2988'
+source-wordcount: '2974'
 ht-degree: 87%
 
 ---
@@ -71,7 +71,7 @@ ht-degree: 87%
 | [!UICONTROL 字段名称] | 架构字段的名称。 |
 | [!UICONTROL 数据集类型] | 必需。显示组件来自哪个数据集类型（事件、查询或个人资料）的不可编辑字段。 |
 | [!UICONTROL 数据集] | 必需。显示组件来自哪个类型的字段（例如字符串、整数等）的不可编辑字段。此字段可以包含多个数据集。 |
-| [!UICONTROL 架构数据类型] | 指组件是否为字符串、整数等。  虽然您可以在Platform中使用任何受支持的架构字段类型，但CJA并不支持所有字段类型。 您可以使用字符串或整数以外的架构字段类型向CJA添加数据集，但CJA无法显示该数据。 此外，此时Lookup数据集中仅允许使用字符串。 |
+| [!UICONTROL 架构数据类型] | 指组件是否为字符串、整数等。  虽然您可以在Platform中使用任何受支持的架构字段类型，但CJA并不支持所有字段类型。 支持以下数据类型：`Integer`、`Int`、`Long`、`Double`、`Float`、`Number`、`Short`、`Byte`、`String`和`Boolean`。 请注意，目前Lookup数据集中仅允许使用字符串。 |
 | [!UICONTROL 组件 ID] | 必需。[CJA API](https://adobe.io/cja-apis/docs) 使用此字段引用组件。您可以单击修改图标并修改此组件 ID。但是，更改此组件 ID 会破坏包含此组件的所有现有 Workspace 项目。<br>如果您曾创建另一个对 pageTitle 维度使用不同字段的数据视图，则可以对其进行重命名并使该维度跨数据视图兼容。 |
 | [!UICONTROL 架构路径] | 必需。显示组件来自的架构路径的不可编辑字段。 |
 | [!UICONTROL 在报告中隐藏组件] | 默认 = 关闭。可让您在数据视图中管理用于报告的组件。这不会影响许可，只用于管理组件。换言之，您可以在报告中对非管理员用户隐藏组件。管理员仍可以访问该组件，只需在 Analysis Workspace 项目中单击[!UICONTROL 显示所有组件]即可。 |
