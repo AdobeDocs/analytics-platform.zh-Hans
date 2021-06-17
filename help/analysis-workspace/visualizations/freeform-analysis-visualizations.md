@@ -3,9 +3,9 @@ description: 在Analysis Workspace中直观地显示您的数据。
 keywords: Analysis Workspace
 title: 可视化图表概述
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 4f12248e196759c4c4fc494770048495c703c954
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1051'
 ht-degree: 93%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 93%
 
 工作区提供了许多可视化图表，使您能够生成数据的可视化表示形式，如条形图、圆环图、直方图、折线图、地图、散点图等。如果您使用 Adobe Analytics，则您已经熟悉了大多数可视化图表类型。但是，Analysis Workspace 提供了可视化图表设置，以及许多全新或独特的具有交互功能的可视化图表类型。
 
-您可从 Workspace 左上角的图标、[空白面板](https://experienceleague.adobe.com/docs/analytics/analysis-workspace/panels/blank-panel.html?lang=zh-Hans)或者通过工作流程中的右键单击菜单来访问可视化图表。
+您可从 Workspace 左上角的图标、[空白面板](/help/analysis-workspace/c-panels/blank-panel.md)或者通过工作流程中的右键单击菜单来访问可视化图表。
 
 ![](assets/viz-rail.png)
 
