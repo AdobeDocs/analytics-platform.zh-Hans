@@ -3,16 +3,16 @@ description: 在Analysis Workspace中直观地显示您的数据。
 keywords: Analysis Workspace
 title: 可视化图表概述
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 4f12248e196759c4c4fc494770048495c703c954
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1052'
 ht-degree: 93%
 
 ---
 
 # 可视化图表概述
 
-工作区提供了许多可视化图表，使您能够生成数据的可视化表示形式，如条形图、圆环图、直方图、折线图、地图、散点图等。如果您使用 Adobe Analytics，则您已经熟悉了大多数可视化图表类型。但是，Analysis Workspace 提供了可视化图表设置，以及许多全新或独特的具有交互功能的可视化图表类型。
+工作区提供了许多可视化图表，使您能够生成数据的可视化表示形式，如条形图、圆环图、直方图、折线图、地图、散点图等。如果您使用Customer Journey Analytics，则大多数可视化图表类型都会非常熟悉。 但是，Analysis Workspace 提供了可视化图表设置，以及许多全新或独特的具有交互功能的可视化图表类型。
 
 您可从 Workspace 左上角的图标、[空白面板](/help/analysis-workspace/c-panels/blank-panel.md)或者通过工作流程中的右键单击菜单来访问可视化图表。
 
@@ -75,7 +75,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 1. 输入新的标签文本。
 1. 按 **[!UICONTROL Enter]** 键保存。
 
-下面是一个[指向该主题相关视频的链接](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html)。
+下面是一个[指向该主题相关视频的链接](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html?lang=zh-Hans)。
 
 ## 右键单击菜单 {#right-click}
 
@@ -94,7 +94,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | 获取可视化图表链接 | 此设置允许您将用户引导至项目中的可视化图表。单击该链接时，收件人需要先登录，然后才能转至所链接到的确切可视化图表。 |
 | 从头开始 | （适用于流、维恩图、直方图）删除当前可视化图表的设置，以便您从头开始重新配置。 |
 
-## “创建可视化”图标 {#quick-viz}
+## “创建可视化”图标  {#quick-viz}
 
 如果您不确定所要创建的可视化图表，请单击任意表行中的&#x200B;**[!UICONTROL 创建可视化]**&#x200B;图标（将光标悬停于上方即可显示）。这是添加可视化图表最快的方法。单击此图标将提示 Analysis Workspace 针对哪种可视化图表最适合您的数据做出有根据的推测。例如，如果您选择了 1 行，则会创建趋势线形图。如果选择了3个过滤行，则会创建维恩图。
 
