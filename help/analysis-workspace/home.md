@@ -3,10 +3,10 @@ keywords: Analysis Workspace
 title: Analysis Workspace 概述
 description: Analysis Workspace 功能概览
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 98%
+source-wordcount: '461'
+ht-degree: 88%
 
 ---
 
@@ -22,9 +22,9 @@ Analysis Workspace 是一款通过浏览器即可使用的灵活工具，可让�
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
 
-## 登录 Adobe Analytics {#login}
+## 登录Customer Journey Analytics {#login}
 
-要开始使用 Analysis Workspace，请前往 [experience.adobe.com/analytics](https://experience.adobe.com/analytics) 登录 Adobe Analytics。如果此前未选择特定项目，您将登录到 Workspace 项目列表主页。
+要开始使用Analysis Workspace，请转到[experience.adobe.com/analytics](https://experience.adobe.com/analytics)登录Customer Journey Analytics。 如果此前未选择特定项目，您将登录到 Workspace 项目列表主页。
 
 ![](assets/login-analytics.png)
 
@@ -36,7 +36,7 @@ Analysis Workspace 是一款通过浏览器即可使用的灵活工具，可让�
 
 ## 创建新项目 {#new-project}
 
-完成教程后，您就可以开始构建您的第一个项目。**“新项目模式”**&#x200B;提供了多种不同选项来开始您的分析。您可以选择从空白项目或[空白移动记分卡](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html)开始，具体取决于您计划从浏览器还是从 Adobe Analytics 功能板移动应用程序共享您的分析。
+完成教程后，您就可以开始构建您的第一个项目。**“新项目模式”**&#x200B;提供了多种不同选项来开始您的分析。您可以选择从空白项目或[空白移动记分卡](/help/mobile-app/curator.md)开始，具体取决于您计划从浏览器还是Customer Journey Analytics功能板移动应用程序共享您的分析。
 
 ![](assets/create-new-project.png)
 
@@ -64,4 +64,4 @@ Analysis Workspace 是一款通过浏览器即可使用的灵活工具，可让�
 
 ## 其他资源 {#resources}
 
-* Adobe 提供了大量的 [Analytics 视频培训教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html)。
+* Adobe 提供了大量的 [Analytics 视频培训教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=zh-Hans)。
