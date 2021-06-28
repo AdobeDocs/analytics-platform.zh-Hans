@@ -2,10 +2,10 @@
 title: 计算量度概述
 description: 了解
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 100%
+source-wordcount: '481'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 |--- |--- |
 | 计算量度生成器 | <ul><li>使用高级分配模型创建计算量度和高级计算量度。</li><li>将内联过滤器添加到量度公式中。</li><li>比较同一报表中的过滤器。例如，比较本地访客与国际访客。</li><li>使用统计函数。</li><li> 提供详细的指标描述（显示其用途，以及何处可以使用，何处不可以使用）。</li><li>将定义复制到新指标中。</li><li>提供内联指标预览。</li><li>设置指标极性，以指示当给定的自定义事件（指标）上升时是有利还是不利。</li><li>标记指标。</li></ul> |
 | 计算量度管理器 | <ul><li>与他人共享指标。</li><li>批准和管理指标。</li><li>组织（标记）指标，以方便用户查找。</li><li>删除指标。</li><li>重命名指标。</li></ul> |
-| 适用于计算量度的 API | Adobe Analytics 2.0 API 集的组成部分。 |
+| 适用于计算量度的 API | CJA API集的一部分。 |
 
 ## CJA 中的计算量度模板
 
