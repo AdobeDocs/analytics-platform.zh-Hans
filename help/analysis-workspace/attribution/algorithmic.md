@@ -2,10 +2,10 @@
 title: 算法归因
 description: 有关算法归因模型的详细信息。
 exl-id: ce174253-4864-4fb0-8a96-a134a9fc9fba
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 34a1e7cea518e39ee665470dc3e1087d728b654d
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 80%
+source-wordcount: '290'
+ht-degree: 86%
 
 ---
 
@@ -14,10 +14,6 @@ ht-degree: 80%
 >[!NOTE]
 >
 >您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
-
->[!NOTE]
->
->**[!UICONTROL 算法]** 属性当前处于有限测试中。有关更多信息，请参阅[Adobe Analytics功能发布](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html)。
 
 Analysis Workspace 中的算法[归因模型](models.md)与其他模型有所不同，因为该模型会使用统计技术为报表或自由格式表中的各维度项目分配点数。与Analysis Workspace中的所有其他归因模型一样，该模型也可用于任何维度或量度，并支持无限制的过滤器和划分，并为表中的维度分配100%的转化（也称为“分数”归因）。
 
