@@ -2,10 +2,10 @@
 description: 快速分析是一款面向新工作区用户的工具，可指导用户构建数据表和可视化图表
 title: 快速分析面板
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 74%
+source-wordcount: '1098'
+ht-degree: 73%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 74%
 
 >[!IMPORTANT]
 >
->**[!UICONTROL Quick Insightspanel]** 当前处于有限测试阶段。[了解详情](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html)
+>**[!UICONTROL Quick Insightspanel]** 当前处于有限测试阶段。[了解详情](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html?lang=zh-Hans)
 
 [!UICONTROL 快速分析]可为 [!UICONTROL Analysis Workspace] 的非分析师和新用户了解如何快速轻松地回答业务问题提供指导。此外，对于希望快速回答简单问题的高级用户来说，它也是一个不错的工具，无需自己制表。
 
@@ -49,7 +49,7 @@ ht-degree: 74%
 
 ## 快速分析入门指南
 
-1. 使用您获得的凭据，登录 Adobe Analytics。
+1. 使用您获得的凭据登录Customer Journey Analytics。
 1. 转到[!UICONTROL 工作区]，单击&#x200B;**[!UICONTROL 创建新项目]**，然后单击&#x200B;**[!UICONTROL 快速分析]**。（您还可以从左边栏的&#x200B;**[!UICONTROL 面板]**&#x200B;菜单访问此面板。）
 
    ![](assets/qibuilder.png)
