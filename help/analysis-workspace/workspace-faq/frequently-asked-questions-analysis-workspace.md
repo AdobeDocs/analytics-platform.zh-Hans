@@ -3,10 +3,10 @@ description: Analysis Workspace 的系统要求。
 keywords: Analysis Workspace
 title: 管理要求
 exl-id: ea2ea8d6-8327-4168-b81a-f4945b572cbb
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 95%
+source-wordcount: '182'
+ht-degree: 82%
 
 ---
 
@@ -20,7 +20,7 @@ Analysis Workspace 的系统要求。
 
 | 要求 | 描述 |
 |--- |--- |
-| 产品 SKU | 您必须安装了 Adobe Analytics Standard 或 Adobe Analytics Premium。如果您只能单独访问 Reports &amp; Analytics 产品，请与您的客户团队联系，购买 Adobe Analytics 解决方案。 |
+| 产品 SKU | 贵组织必须与Adobe Analytics签订Select、Prime或Ultimate的有效合同，并且包含Customer Journey Analytics加载项。 如果您不确定您拥有哪种合同类型，或不确定您是否拥有 CJA 附加产品，请联系贵公司的客户经理。此外，您的组织必须配置Adobe Experience Platform。 |
 | 管理员 | 拥有 Analysis Workspace 的完全访问权。 |
-| 用户 | 要允许用户访问 Analytics 中的“工作区”选项卡，管理员必须在 [Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html) 中创建具有 Analysis Workspace 访问权限的产品配置文件，并将用户添加到该配置文件中。 |
-| 浏览器 | <ul><li>首选：最新版的 Firefox、Chrome、Safari 或 Edge。最新版的 Microsoft Internet Explorer 11。**注意：** Adobe 已于 2018 年 11 月 13 日，停止在 Adobe Analytics 中支持 Internet Explorer 11。请尽快切换到 Microsoft Edge 或其他受支持的浏览器。</li><li>必须启用 Cookie 和 JavaScript。</li><li>具有 16 位颜色深度（或更高）的 1024 x 768 显示器分辨率。</li></ul> |
+| 用户 | 要允许用户访问 Analytics 中的“工作区”选项卡，管理员必须在 [Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=zh-Hans) 中创建具有 Analysis Workspace 访问权限的产品配置文件，并将用户添加到该配置文件中。 |
+| 浏览器 | <ul><li>首选：最新版的 Firefox、Chrome、Safari 或 Edge。</li><li>必须启用 Cookie 和 JavaScript。</li><li>具有 16 位颜色深度（或更高）的 1024 x 768 显示器分辨率。</li></ul> |
