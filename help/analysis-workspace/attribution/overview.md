@@ -2,10 +2,10 @@
 title: 归因概述
 description: 将成功事件的点数归因到多个维度项目的概念。
 exl-id: 845b4310-e1b2-4690-b267-6f6d211845fb
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 93%
+source-wordcount: '421'
+ht-degree: 90%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 93%
 1. 网站访客单击指向您的某个产品页面的付费搜索链接。他们将产品添加到购物车，但不购买。
 2. 第二天，他们查看自己朋友的社交媒体帖子，单击链接，然后完成购买。
 
-在某些报表中，您可能希望将订单归因到“付费”搜索。在其他报表中，您可能希望将订单归因到社交。通过归因，您能够控制报表对的各个方面。它适用于 Adobe Analytics Ultimate、Prime、Select 和 Foundation 上的所有组织。如果您不确定您与 Adobe 签订的合同类型，请联系贵组织的客户经理。
+在某些报表中，您可能希望将订单归因到“付费”搜索。在其他报表中，您可能希望将订单归因到社交。通过归因，您能够控制报表对的各个方面。
 
 ## 归因 IQ 的价值
 
@@ -28,7 +28,7 @@ ht-degree: 93%
 
 ![归因 IQ 问题](assets/attribution_iq_problem.png)
 
-Adobe Analytics 通过让您能够执行以下操作来增强归因：
+Customer Journey Analytics通过允许您：
 
 * 定义付费媒体之外的归因：可将任何维度、量度、渠道或事件应用于模型（例如内部搜索），而不仅仅是营销活动。
 * 使用无限制的归因模型比较：动态比较任意所需数量的模型。
