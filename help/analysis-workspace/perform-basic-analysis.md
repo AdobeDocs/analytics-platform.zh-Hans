@@ -2,9 +2,9 @@
 title: 在 Customer Journey Analytics 中执行基础分析
 description: 介绍如何使用基础的可视化图表来分析 Customer Journey Analytics 中的数据
 exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '172'
 ht-degree: 85%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 85%
 
 * 创建在线商店收入与实体店收入的趋势报表，比较两个数据源随时间推移发生的变化。
 
-* 按数据源描述受众大小，例如广告展示数据、Adobe Analytics数据、电子邮件数据、POS数据、呼叫中心数据和调查数据。
+* 按数据源描述受众大小，例如广告展示数据、Customer Journey Analytics数据、电子邮件数据、POS数据、呼叫中心数据和调查数据。
 
 ![](assets/cja-basic-analysis.png)
 
