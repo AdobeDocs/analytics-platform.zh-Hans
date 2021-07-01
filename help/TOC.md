@@ -10,10 +10,9 @@ user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 本指南提供 Customer Journey Analytics 自助式帮助内容；Customer Journey Analytics 基于 Adobe Experience Platform，是 Adobe 的新一代跨渠道分析解决方案。
 breadcrumb-title: Customer Journey Analytics 指南
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-translation-type: tm+mt
-source-git-commit: a4e95424ee304869e76a0532b7240290a3f13418
+source-git-commit: 03be6a7a62d0ce43cd89657ecf828aa6e8fa03ee
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '449'
 ht-degree: 95%
 
 ---
@@ -27,10 +26,11 @@ ht-degree: 95%
    + [快速入门](getting-started/cja-getting-started.md)
    + [常见问题解答](getting-started/cja-faq.md)
    + [Customer Journey Analytics 功能支持](getting-started/cja-aa.md)
+   + [删除含义](getting-started/cja-deletion.md)
    + [CJA 术语表](getting-started/cja-glossary.md)
 + 连接 {#cja-connections}
    + [创建连接](connections/create-connection.md)
-   + [管理连接](connections/manage-connection.md)
+   + [管理连接](connections/manage-connections.md)
    + [预估连接大小](connections/estimate-connection-size.md)
    + [合并事件数据集](connections/combined-dataset.md)
    + 跨渠道分析 {#cca}
@@ -52,8 +52,8 @@ ht-degree: 95%
       + [热键（快捷方式）](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [调色板](analysis-workspace/build-workspace-project/color-palettes.md)
       + [视图密度](analysis-workspace/build-workspace-project/view-density.md)
-   + 可视化 {#visualizations}
-      + [可视化概述](analysis-workspace/visualizations/freeform-analysis-visualizations.md)
+   + 可视化图表 {#visualizations}
+      + [可视化图表概述](analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [管理数据源](analysis-workspace/visualizations/t-sync-visualization.md)
       + 自由格式表 {#freeform-table}
          + [自由格式表](analysis-workspace/visualizations/freeform-table/freeform-table.md)
@@ -61,7 +61,7 @@ ht-degree: 95%
             + [列设置](analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [行设置](analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [动态项和静态项](analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
-         + [对表格进行分页、过滤和排序](analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md)
+         + [对表格进行分页、筛选和排序](analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md)
          + [工作区总计](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + 同类群组表 {#cohort-table}
          + [什么是同类群组分析？](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
@@ -69,12 +69,12 @@ ht-degree: 95%
          + [同类群组分析用例](analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
       + 流失 {#fallout}
          + [流失概述](analysis-workspace/visualizations/fallout/fallout-flow.md)
-         + [配置流失可视化](analysis-workspace/visualizations/fallout/configuring-fallout.md)
+         + [配置流失可视化图表](analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [维度间流失](analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
          + [在流失分析中应用过滤器](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + 流量 {#flow}
          + [流量概述](analysis-workspace/visualizations/c-flow/flow.md)
-         + [配置流量可视化](analysis-workspace/visualizations/c-flow/creating-flow-report.md)
+         + [配置流量可视化图表](analysis-workspace/visualizations/c-flow/creating-flow-report.md)
          + [流量设置](analysis-workspace/visualizations/c-flow/flow-settings.md)
          + [维度间流量](analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
       + [直方图](analysis-workspace/visualizations/histogram.md)
@@ -82,11 +82,11 @@ ht-degree: 95%
       + [面积图和堆叠的面积图](analysis-workspace/visualizations/area.md)
       + [条形图和堆叠的条形图](analysis-workspace/visualizations/bar.md)
       + [项目符号图表](analysis-workspace/visualizations/bullet-graph.md)
-      + [圆环](analysis-workspace/visualizations/donut.md)
+      + [环形图](analysis-workspace/visualizations/donut.md)
       + [水平条形图和堆叠的水平条形图](analysis-workspace/visualizations/horizontal-bar.md)
       + [折线图](analysis-workspace/visualizations/line.md)
       + [散点图](analysis-workspace/visualizations/scatterplot.md)
-      + [概要数量和概要更改](analysis-workspace/visualizations/summary-number-change.md)
+      + [概要数字和概要变化](analysis-workspace/visualizations/summary-number-change.md)
       + [文本](analysis-workspace/visualizations/text.md)
       + [树形图](analysis-workspace/visualizations/treemap.md)
    + 面板 {#panels}
@@ -94,19 +94,19 @@ ht-degree: 95%
       + [归因面板](analysis-workspace/c-panels/attribution.md)
       + [空白面板](analysis-workspace/c-panels/blank-panel.md)
       + [自由格式面板](analysis-workspace/c-panels/freeform-panel.md)
-      + [快速分析面板](analysis-workspace/c-panels/quickinsight.md)
+      + [“快速分析”面板](analysis-workspace/c-panels/quickinsight.md)
    + 组织或共享项目 {#curate-share}
       + [“共享”菜单](analysis-workspace/curate-share/send-schedule-files.md)
-      + [组织项目](analysis-workspace/curate-share/curate.md)
+      + [策划项目](analysis-workspace/curate-share/curate.md)
       + [共享项目](analysis-workspace/curate-share/share-projects.md)
       + [创建可共享链接](analysis-workspace/curate-share/shareable-links.md)
       + [仅供查看的项目](analysis-workspace/curate-share/view-only-projects.md)
       + [下载 PDF 或 CSV 文件](analysis-workspace/curate-share/download-send.md)
       + [计划项目](analysis-workspace/curate-share/t-schedule-report.md)
-   + 归因 IQ {#attribution}
+   + Attribution IQ{#attribution}
       + [归因概述](analysis-workspace/attribution/overview.md)
       + [归因模型和回顾时间范围](analysis-workspace/attribution/models.md)
-      + [算法属性](analysis-workspace/attribution/algorithmic.md)
+      + [算法归因](analysis-workspace/attribution/algorithmic.md)
       + [常见问题解答](analysis-workspace/attribution/faq.md)
    + 虚拟分析师 {#virtual-analyst}
       + [虚拟分析师概述](analysis-workspace/virtual-analyst/overview.md)
@@ -125,7 +125,7 @@ ht-degree: 95%
       + [Analysis Workspace 中的长尾](analysis-workspace/workspace-faq/long-tail.md)
 + 组件 {#cja-components}
    + [组件概述](components/overview.md)
-   + 维度 {#dimensions}
+   + 维度{#dimensions}
       + [预览维度](components/dimensions/view-dimensions.md)
       + [划分维度](components/dimensions/t-breakdown-fa.md)
       + [时间划分维度](components/dimensions/time-parting-dimensions.md)
@@ -149,18 +149,18 @@ ht-degree: 95%
       + [创建自定义日期范围](components/date-ranges/custom-date-ranges.md)
       + [日期比较](components/date-ranges/time-comparison.md)
 + 用例 {#cja-usecases}
-   + [Customer Journey Analytics 使用案例](use-cases/cja-usecases.md)
+   + [Customer Journey Analytics 用例](use-cases/cja-usecases.md)
    + [使用对象数组](use-cases/object-arrays.md)
    + [(B2B) 将帐户级别的数据作为查询数据集进行添加](use-cases/b2b.md)
    + [导入呼叫中心数据和网站数据](use-cases/call-center.md)
    + [摄取数据用例](use-cases/data-ingestion.md)
    + [使用“营销渠道”维度](use-cases/marketing-channels.md)
    + [向数据集添加全局查找](use-cases/global-lookups.md)
-   + [将Google Analytics数据收录到Adobe Experience Platform](use-cases/ga-to-cja.md)
+   + [将Google Analytics数据摄取到Adobe Experience Platform](use-cases/ga-to-cja.md)
    + [在CJA中报告Google Analytics数据](use-cases/ga-to-cja-reporting.md)
 + Analytics 功能板{#cja-dashboards}
    + [Analytics 功能板 — 概述](mobile-app/home.md)
-   + [管理人指南](mobile-app/curator.md)
+   + [策划人指南](mobile-app/curator.md)
    + [执行用户快速入门指南](mobile-app/executive.md)
 + 隐私权 {#cja-privacy}
    + [隐私权概述](privacy/privacy-overview.md)
