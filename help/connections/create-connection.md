@@ -2,10 +2,10 @@
 title: 创建连接
 description: 描述如何在 Customer Journey Analytics 中创建与 Platform 数据集的连接。
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-source-git-commit: 16533219915421ed3ff642250bb707bf5ef13ed7
+source-git-commit: 4933b0393ddb985ad0da7a572e67efb3e77381b8
 workflow-type: tm+mt
-source-wordcount: '2084'
-ht-degree: 91%
+source-wordcount: '1980'
+ht-degree: 95%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 91%
 
 单击[此处](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=en)，查看视频概述。
 
-## 需要的权限
+## 所需权限
 
-要创建Customer Journey Analytics(CJA)连接，您需要在[Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html)中拥有以下权限：
+要创建CJA连接，您需要在[Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html)中拥有以下权限：
 
 Adobe Experience Platform:
 * 数据建模：查看架构，管理架构
@@ -33,7 +33,9 @@ Customer Journey Analytics
 
 ## 选择沙盒和数据集
 
-1. 访问 [https://analytics.adobe.com](https://analytics.adobe.com)。
+1. 转到[https://analytics.adobe.com](https://analytics.adobe.com)并使用您的Adobe ID登录。
+
+1. 单击[!DNL Customer Journey Analytics]图标。
 
 1. 单击&#x200B;**[!UICONTROL 连接]**&#x200B;选项卡。
 
@@ -53,10 +55,7 @@ Customer Journey Analytics
 
    （如果您有许多数据集可供选择，可以使用数据集列表上方的&#x200B;**[!UICONTROL 搜索数据集]**&#x200B;搜索栏搜索正确的数据集。）
 
-   CJA基于Experience Platform数据集。 虽然您可以在Platform中使用任何受支持的架构字段类型，但CJA并不支持所有字段类型。 您可以向CJA添加架构字段类型（字符串或数字除外）的数据集，但CJA无法显示该数据。 此外，此时Lookup数据集中仅允许使用字符串。
-如果在将数据集添加到连接后要查找要添加到数据视图的字段，则默认标记[!UICONTROL 包含数据]可用于数据集中的所有字段。 此标记可使数据视图更易于管理，因为它只包含数据集中包含数据的架构字段。
-
-## 配置数据集
+## 2.配置数据集
 
 在右侧，您现在可以配置已添加的数据集。
 
@@ -76,7 +75,7 @@ Customer Journey Analytics
 
 1. **[!UICONTROL 时间戳]**：仅对于事件数据集，此设置会自动设置为 [!UICONTROL Experience Platform] 中基于事件的架构的默认时间戳字段。
 
-1. **[!UICONTROL 架构]**：这个[架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html)是以其中创建了数据集的 Adobe Experience Platform 为基础。
+1. **[!UICONTROL 架构]**：这个[架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hans)是以其中创建了数据集的 Adobe Experience Platform 为基础。
 
 1. **[!UICONTROL 人员 ID]**：从可用身份的下拉列表中选择一个人员 ID。这些身份已在 Experience Platform 的数据集架构中定义。有关如何将身份映射用作人员 ID 的信息，请参见下文。
 
