@@ -2,9 +2,9 @@
 description: 了解不同的保存选项，包括“自动保存”、“另存为”、“另存为模板”以及“打开以前的版本”。
 title: 保存项目
 feature: Workspace 基础知识
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 734f1fe702398034090e25c251b5ff193db8381e
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 100%
