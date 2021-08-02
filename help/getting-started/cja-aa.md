@@ -2,10 +2,10 @@
 title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: bc0e722ad33f818a6d580305301a869af2fff385
+source-git-commit: 58627fd11c4031449f156e70cbfa41dac143ac90
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 95%
+source-wordcount: '1086'
+ht-degree: 93%
 
 ---
 
@@ -32,12 +32,13 @@ ht-degree: 95%
 | 项目策划 | 完全支持 |
 | 项目链接 | 完全支持 |
 | 报表时间处理 | CJA 完全依赖于报表时间处理。 |
-| 报表 API 访问 | 现在可使用[CJA API](https://www.adobe.io/cja-apis/docs/)使用。 |
+| 报表 API 访问 | 现在可使用[CJA API](https://www.adobe.io/cja-apis/docs/)。 |
 | 计划报表/项目 | 完全支持 |
 | 区段 | 现在称为“过滤器”。请注意，传统 Analysis Workspace 中的任何现有区段都不会移植到 CJA。 |
 | 用户权限/数据访问控制 | CJA 区分 Adobe Admin Console 产品管理员和用户。只有产品管理员才能 1) 创建/更新/删除连接或数据视图，2) 更新/删除其他用户创建的项目、过滤器或计算量度，以及 3) 将工作区项目共享给所有用户 |
 | 虚拟报表包 | 现在称为[数据视图](/help/data-views/create-dataview.md)。 |
 | VRS 组件策划 | 现在是“数据视图”的一部分。 |
+| A4T | 通过[Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)中的字段提供支持。 |
 
 ## 受支持，但有注意事项
 
@@ -47,7 +48,7 @@ ht-degree: 95%
 | 自定义会话流程 | 支持除移动后台点击之外的所有自定义会话流程功能。 |
 | 客户属性 | 现在称为“用户档案数据集”，它们不会从 Experience Cloud 中自动导入，必须先将其上传到 AEP，然后才能在 CJA 中使用。 |
 | “设备”、“浏览器”、“技术”维度 | 当 AEP 数据集包含特定 XDM 架构字段并符合 XDM Experience Event 类要求时，将自动包含这些维度。 |
-| 条目、退出和逗留时间维度和量度 | 受支持（现在“进入次数”和“退出次数”称为“会话启动次数”和“会话结束次数”），但计算方式略有不同。 |
+| 登入次数、退出次数和逗留时间维度和量度 | 受支持（现在“进入次数”和“退出次数”称为“会话启动次数”和“会话结束次数”），但计算方式略有不同。 |
 | eVar 持久性设置 | eVar 不再是 CJA 的一部分。但是，持久性设置现在是数据视图的一部分，且可用于所有维度。请记住，持久基于报表时间处理，而不是数据收集处理。数据视图中的纬度集限制为 90 天最大持久性，不支持无限持久性。 |
 | 营销渠道 | 营销渠道数据通过 Analytics Data Connector 流入 CJA。营销渠道规则仍必须在传统的 Adobe Analytics 中进行配置。某些规则不受支持。有关更多详细信息，请参阅 [CJA 营销渠道文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=zh-Hans#cja-usecases)。 |
 | 产品变量 | 在该 Experience Platform 中，用户可以在数据集架构中使用“对象”类型字段的数组来满足此用例。在 CJA 中，客户可以使用任意数量的产品变量，而不限于 Adobe Analytics 中的单个变量。 |
@@ -62,7 +63,7 @@ ht-degree: 95%
 | Media Analytics | 媒体数据可作为 Analytics Data Connector 的一部分提供。 |
 | 促销 eVar | 如果促销 eVar 未设置为使用持久性，则可以使用对象数组中的维度来实现促销 eVar 的行为。 目前，不提供促销维度持久性。 |
 | 面板 | 完全支持空白面板、“归因”面板、“任意形状”面板和“快速分析”面板。不支持“区段比较”面板、“Analytics for Target (A4T)”面板和“媒体并发查看者”面板。 |
-| 处理规则 | 对于基于 Analytics Data Connector 的数据集，仍会应用处理规则。[Adobe Experience Platform中的数据准](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) 备功能还可以用作直接访问平台的数据处理规则的替代。 |
+| 处理规则 | 对于基于 Analytics Data Connector 的数据集，仍会应用处理规则。[Adobe Experience Platform中的数据准](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) 备功能还可用作直接转到Platform的数据的处理规则的替换。 |
 
 ## 目前不支持，但计划将会提供支持
 
@@ -85,7 +86,6 @@ ht-degree: 95%
 
 | 功能 | 注释 |
 | --- | --- |
-| A4T | 尚未计划提供支持。 |
 | Activity Map | 尚未计划提供支持。 |
 | Advertising Cloud | 尚未计划提供支持。 |
 | 分类规则生成器 | 尚未计划提供支持。 |
