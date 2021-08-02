@@ -10,10 +10,10 @@ user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 本指南提供 Customer Journey Analytics 自助式帮助内容；Customer Journey Analytics 基于 Adobe Experience Platform，是 Adobe 的新一代跨渠道分析解决方案。
 breadcrumb-title: Customer Journey Analytics 指南
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-source-git-commit: a2e8f8a48078bfe247645b4ca57e10bf4f4e3fab
+source-git-commit: f6ec268d3820a7bcbcc84521e486c26e8ea9329b
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 95%
+source-wordcount: '449'
+ht-degree: 93%
 
 ---
 
@@ -95,7 +95,7 @@ ht-degree: 95%
       + [空白面板](analysis-workspace/c-panels/blank-panel.md)
       + [自由格式面板](analysis-workspace/c-panels/freeform-panel.md)
       + [“快速分析”面板](analysis-workspace/c-panels/quickinsight.md)
-   + 组织或共享项目 {#curate-share}
+   + 组织、共享和计划项目{#curate-share}
       + [“共享”菜单](analysis-workspace/curate-share/send-schedule-files.md)
       + [策划项目](analysis-workspace/curate-share/curate.md)
       + [共享项目](analysis-workspace/curate-share/share-projects.md)
