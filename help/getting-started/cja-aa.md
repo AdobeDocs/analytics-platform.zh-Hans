@@ -2,10 +2,10 @@
 title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: 58627fd11c4031449f156e70cbfa41dac143ac90
+source-git-commit: 423cf7d8a73c307bef42a62e91e7b64219f02670
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 93%
+source-wordcount: '1093'
+ht-degree: 90%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 93%
 
 | Adobe Analytics 功能 | 注释 |
 | --- | --- |
+| A4T | 通过[Adobe Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)中的字段提供支持。 |
 | 异常检测 | 完全支持 |
 | 归因 IQ | 完全支持 |
 | 计算量度 | 请注意，传统 Analysis Workspace 中的任何现有计算量度都不会移植到 CJA。 |
@@ -32,13 +33,12 @@ ht-degree: 93%
 | 项目策划 | 完全支持 |
 | 项目链接 | 完全支持 |
 | 报表时间处理 | CJA 完全依赖于报表时间处理。 |
-| 报表 API 访问 | 现在可使用[CJA API](https://www.adobe.io/cja-apis/docs/)。 |
+| 报表 API 访问 | 可通过[CJA API](https://www.adobe.io/cja-apis/docs/)获取。 |
 | 计划报表/项目 | 完全支持 |
 | 区段 | 现在称为“过滤器”。请注意，传统 Analysis Workspace 中的任何现有区段都不会移植到 CJA。 |
-| 用户权限/数据访问控制 | CJA 区分 Adobe Admin Console 产品管理员和用户。只有产品管理员才能 1) 创建/更新/删除连接或数据视图，2) 更新/删除其他用户创建的项目、过滤器或计算量度，以及 3) 将工作区项目共享给所有用户 |
+| 用户权限/数据访问控制 | CJA区分[Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=en)产品管理员和用户。 只有产品管理员才能 <ul><li>创建/更新/删除连接或数据视图</li><li>更新/删除其他用户创建的项目、过滤器或计算量度，以及</li><li>将 Workspace 项目共享给所有用户.</li></ul> |
 | 虚拟报表包 | 现在称为[数据视图](/help/data-views/create-dataview.md)。 |
 | VRS 组件策划 | 现在是“数据视图”的一部分。 |
-| A4T | 通过[Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)中的字段提供支持。 |
 
 ## 受支持，但有注意事项
 
