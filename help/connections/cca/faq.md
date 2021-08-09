@@ -1,14 +1,14 @@
 ---
 title: 跨渠道分析常见问题解答
 description: 跨渠道分析常见问题解答
+exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 translation-type: ht
-source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
+source-git-commit: 2d83d796f053465eb9543daa37068f316bccc659
 workflow-type: ht
 source-wordcount: '460'
 ht-degree: 100%
 
 ---
-
 
 # 常见问题解答
 
@@ -45,4 +45,4 @@ ht-degree: 100%
 
 ## 跨渠道分析如何处理 GDPR 和 CCPA 请求？
 
-Adobe 将根据当地和国际法规处理 GDPR 和 CCPA 请求。Adobe 提供了 [Adobe Experience Platform 隐私服务](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html)来提交数据访问和删除请求。这些请求同时适用于原始数据集和已重新生成键值的数据集。
+Adobe 将根据当地和国际法规处理 GDPR 和 CCPA 请求。Adobe 提供了 [Adobe Experience Platform 隐私服务](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans)来提交数据访问和删除请求。这些请求同时适用于原始数据集和已重新生成键值的数据集。
