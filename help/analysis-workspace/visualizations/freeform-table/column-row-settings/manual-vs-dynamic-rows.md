@@ -5,7 +5,7 @@ exl-id: 7806f535-15c7-40f4-955a-724d9752969d
 source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
 source-wordcount: '515'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -55,4 +55,4 @@ ht-degree: 98%
 动态行和静态行在自由格式表总计行中的行为方式有所不同。默认情况下：
 
 * 动态行是服务器端总和，并且去除了重复量度，例如访问次数和访客
-* 静态行是客户端总和，并且&#x200B;**不会**&#x200B;去除重复量度。要计算服务器端总计行，请将“行”设置更改为&#x200B;**“显示总计”**。[了解更多](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)
+* 静态行是客户端总和，并且&#x200B;**不会**&#x200B;去除重复量度。要计算服务器端总计行，请将“行”设置更改为&#x200B;**“显示总计”**。[了解更多](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html?lang=zh-Hans)
