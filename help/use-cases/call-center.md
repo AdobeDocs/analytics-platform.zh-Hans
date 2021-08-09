@@ -5,7 +5,7 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
 source-wordcount: '675'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Customer Journey Analytics 提供了一项非常有用的强大功能，就是�
 
 ## 将网站数据和呼叫中心数据导入 Platform
 
-将您的数据导入 Adobe Experience Platform。请参阅 Adobe Experience Platform 文档中的[创建架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html)和[摄取数据](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html)。
+将您的数据导入 Adobe Experience Platform。请参阅 Adobe Experience Platform 文档中的[创建架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans)和[摄取数据](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans)。
 
 将数据导入 Platform 时，遵循以下提示将有助于在所生成的报告增加洞察信息：
 
