@@ -2,11 +2,11 @@
 description: 有关设置功能板记分卡的说明。
 title: Customer Journey Analytics 功能板策划人指南
 exl-id: 892e5789-8eec-43d9-99fe-8448aa8600b2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2d83d796f053465eb9543daa37068f316bccc659
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2403'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 81%
 
 ## 简介
 
-Adobe Analytics仪表板根据您的Customer Journey Analytics数据提供随时随地的洞察。 通过该应用程序，用户可从移动设备上访问从 Customer Journey Analytics 桌面 UI 中创建并共享的各种易用的记分卡。记分卡是在平铺布局中显示的关键量度和其他组件的集合，您可以点击它以查看更详细的划分和趋势数据视图。 您可以根据对您最重要的数据来定制记分卡。iOS 和 Android 操作系统均支持 Analytics 功能板。
+Adobe Analytics 功能板根据您的 Customer Journey Analytics 数据，随时随地提供各种见解。通过该应用程序，用户可从移动设备上访问从 Customer Journey Analytics 桌面 UI 中创建并共享的各种易用的记分卡。分卡是关键量度和其他组件的集合，这些组件以平铺布局显示，您可以点击它们以获取更详细的划分和趋势数据视图。您可以根据对您最重要的数据来定制记分卡。iOS 和 Android 操作系统均支持 Analytics 功能板。
 
 ## 有关本指南的更多信息
 
@@ -30,11 +30,11 @@ Adobe Analytics仪表板根据您的Customer Journey Analytics数据提供随时
 
 | 术语 | 定义 |
 |--- |--- |
-| 用户 | 在移动设备上从 CJA 查看关键指标和见解的执行角色 |
+| 使用者 | 在移动设备上从 CJA 查看关键指标和见解的执行角色 |
 | 策划人 | 通晓数据的角色，其负责从 CJA 发现和分发见解以及配置要供使用者查看的记分卡 |
-| 策划 | 创建或编辑移动记分卡的操作，记分卡中包含用户的相关量度、维度和其他组件 |
+| 策划 | 创建或编辑移动记分卡的操作，记分卡中包含使用者的相关量度、维度和其他组件 |
 | 记分卡 | 包含一个或多个图块的功能板视图 |
-| 图块 | 记分卡视图中量度的呈现方式 |
+| 图块 | “记分卡视图”中量度的呈现方式 |
 | 划分 | 一种辅助视图，点按记分卡中的图块可访问这种辅助视图。此视图将展开图块上显示的量度，并（可选）报告其他划分维度。 |
 | 日期范围 | 功能板报告的主要日期范围 |
 | 比较日期范围 | 与主要日期范围进行比较的日期范围 |
@@ -60,7 +60,7 @@ Adobe Analytics仪表板根据您的Customer Journey Analytics数据提供随时
 
 **创建新项目**
 
-1. 打开Customer Journey Analytics，然后单击&#x200B;**项目**。
+1. 打开 Customer Journey Analytics 并单击&#x200B;**“项目”**。
 2. 单击&#x200B;**[!UICONTROL 创建新项目]**&#x200B;按钮，然后选择&#x200B;**[!UICONTROL 空白移动记分卡]**&#x200B;项目模板。
 3. 单击&#x200B;**[!UICONTROL 创建]**&#x200B;按钮。
 
@@ -74,13 +74,13 @@ Adobe Analytics仪表板根据您的Customer Journey Analytics数据提供随时
 
 **或**
 
-从&#x200B;**[!UICONTROL 工具]**&#x200B;菜单中，选择&#x200B;**[!UICONTROL 分析仪表板（移动应用程序）]**。 在后续显示的屏幕上，单击&#x200B;**[!UICONTROL 新建记分卡]**&#x200B;按钮。
+从&#x200B;**[!UICONTROL 工具]**&#x200B;菜单中，选择 **[!UICONTROL Analytics 功能板（移动应用程序）]**。在后续显示的屏幕上，单击&#x200B;**[!UICONTROL 新建记分卡]**&#x200B;按钮。
 
 ### 使用数据配置记分卡并保存
 
 要实施记分卡模板，请执行以下操作：
 
-1. 在&#x200B;**[!UICONTROL 属性]**（在右边栏中）下，指定要从中使用数据的&#x200B;**[!UICONTROL 项目视图]**。
+1. 在&#x200B;**[!UICONTROL 属性]**（位于右侧边栏中）下，指定要从中使用数据的&#x200B;**[!UICONTROL 项目数据视图]**。
 
    ![日期视图选择](assets/properties_save.png)
 
@@ -98,7 +98,7 @@ Adobe Analytics仪表板根据您的Customer Journey Analytics数据提供随时
 
    单击记分卡生成器中的图块后，右侧边栏会显示与该图块关联的属性和特征。在此边栏中，您可以为图块提供一个新的&#x200B;**[!UICONTROL 标题]**，或者通过指定组件而不是从左侧边栏中拖放组件来配置图块。
 
-   ![属性拼贴](assets/properties_tile.png)
+   ![“属性”图块](assets/properties_tile.png)
 
    此外，如果单击图块，动态弹出窗口将会显示“划分”视图在应用程序中向执行用户显示的方式。如果未将任何维度应用于图块，则划分维度将为&#x200B;**小时**&#x200B;或&#x200B;**天**，具体取决于默认日期范围。
 
@@ -106,35 +106,35 @@ Adobe Analytics仪表板根据您的Customer Journey Analytics数据提供随时
 
    添加到图块的每个维度将显示在应用程序详细视图的下拉列表中。之后，执行用户可以从下拉列表所列的选项中进行选择。
 
-4. 要将过滤器应用于各个拼贴，请从左面板拖动滤镜并将其直接放置在拼贴的顶部。 如果要将筛选器应用于记分卡中的所有拼贴，请将拼贴放在记分卡的顶部。 或者，您也可以通过在日期范围下方的筛选器菜单中选择过滤器来应用过滤器。 您可以像在 Adobe Analytics Workspace 中一样[为记分卡配置和应用过滤器](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans)。
+4. 要将过滤器应用于单个图块，请将左侧面板中的某个过滤器直接拖放到图块的顶部。如果要将过滤器应用于记分卡中的所有图块，请将图块拖放到记分卡的顶部。或者，您也可以通过在日期范围下方的筛选器菜单中选择过滤器来应用过滤器。您可以像在 Adobe Analytics Workspace 中一样[为记分卡配置和应用过滤器](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans)。
 
    ![构建过滤器](assets/segment_ui.png)
 
-5. 同样，要删除应用于整个记分卡的组件，请单击拼贴外部记分卡上的任意位置，然后单击将鼠标悬停在组件上时显示的&#x200B;**x**&#x200B;将其删除，如&#x200B;**首次访问**&#x200B;过滤器所示：
+5. 同样，要移除应用于整个记分卡的组件，请单击记分卡上图块外的任意位置，然后单击将鼠标悬停在该组件上时显示的 **x** 来移除该组件，如下面的&#x200B;**首次访问**&#x200B;过滤器所示：
 
    ![Remove_components](assets/new_remove.png)
 
-6. 通过选择日期范围下拉列表，添加和删除可在记分卡中选择的日期范围组合。
+6. 通过选择日期范围下拉菜单来添加和移除可在记分卡中选择的日期范围组合。
 
-   ![新得分卡](assets/new_score_card.png)
+   ![新记分卡](assets/new_score_card.png)
 
-   每个新记分卡开始具有6个日期范围组合，侧重于从今天到昨天的数据。 单击x可删除不必要的日期范围，也可以单击铅笔编辑每个日期范围组合。
+   每个新记分卡都从 6 个日期范围组合开始，重点展示今天和昨天的数据。您可以在 x 上单击以移除不必要的日期范围，也可以单击铅笔图标以修改每个日期范围组合。
 
-   ![新得分卡2](assets/new_score_card2.png)
+   ![新记分卡 2](assets/new_score_card2.png)
 
-   要创建或更改主日期，请使用下拉框从可用日期范围中进行选择，或将日期组件从右边栏拖放到拖放区中。
+   要创建或更改主要日期，请使用下拉菜单从可用日期范围中选择，或者将日期组件从右边栏拖放到放置区域中。
 
-   ![新得分卡3](assets/new_score_card3.png)
+   ![新记分卡 3](assets/new_score_card3.png)
 
-   要创建比较日期，您可以从下拉菜单中为常见时间比较选择方便的预设。 您还可以从右边栏中拖放日期组件。
+   要创建比较日期，您可以在下拉菜单中选择方便的预设以进行常用的时间比较。您还可以从右边栏拖放日期组件。
 
-   ![新配乐卡4](assets/new_score_card4.png)
+   ![新记分卡 4](assets/new_score_card4.png)
 
-   如果尚未创建您想要的日期范围，则可以单击日历图标创建新日期范围。
+   如果尚未创建您所需的日期范围，您可以单击日历图标以创建一个新的日期范围。
 
-   ![新配乐卡4](assets/new_score_card5.png)
+   ![新记分卡 4](assets/new_score_card5.png)
 
-7. 此操作将带您进入日期范围生成器，您可以在其中创建并保存新的日期范围组件。 要命名记分卡，请单击屏幕左上角的命名空间，然后键入新名称。
+7. 这会将您带到日期范围构建器，您可以在其中创建和保存新的日期范围组件。要命名记分卡，请单击屏幕左上角的命名空间，然后键入新名称。
 
    ![Naming_Scorecards](assets/new_name.png)
 
@@ -170,7 +170,7 @@ Adobe Analytics仪表板根据您的Customer Journey Analytics数据提供随时
 * 执行用户设备上的移动操作系统满足以下最低要求：iOS 版本 10 或更高版本，或者 Android 版本 4.4 (KitKat) 或更高版本
 * 执行用户已有效登录 Adobe Analytics
 * 您已为执行用户正确创建了移动记分卡，并与他们共享了这些记分卡
-* 他们可以访问Analysis Workspace和记分卡所基于的数据视图
+* 执行用户有权访问 Analysis Workspace 以及记分卡所基于的数据视图
 * 执行用户有权访问记分卡中包含的组件。请注意，在共享记分卡时，您可以选择&#x200B;**[!UICONTROL 共享嵌入的组件]**&#x200B;选项。
 
 ### 帮助执行用户使用应用程序
@@ -213,7 +213,7 @@ Adobe Analytics仪表板根据您的Customer Journey Analytics数据提供随时
    * 验证执行用户是否可以登录正确的 Analytics 实例，以及是否已共享记分卡。
 
 
-3. 向执行用户说明拼贴在您共享的记分卡中的显示方式(下面的第一个记分卡在深色模式下设置；如果您认为您的执行用户喜欢此查看选项，请参阅下面的&#x200B;**[!UICONTROL 首选项]**:
+3. 向执行用户说明图块在您共享的记分卡中的显示方式（下面的第一个记分卡是在深色模式下设置的；如果您认为您的执行用户更喜欢这个视图选项，请参阅下面的&#x200B;**[!UICONTROL 首选项]**）：
 
    ![说明图块](assets/newexplain.png)
 
@@ -237,7 +237,7 @@ Adobe Analytics仪表板根据您的Customer Journey Analytics数据提供随时
 
    * 将包含一个表以显示已添加到图块的各维度的数据。点按向下箭头以选择维度。如果未将维度添加到图块，则表将显示图表数据。
 
-5. 要更改记分卡的日期范围，请点按日期标题，然后选择要视图的主要和比较日期范围组合。
+5. 要更改记分卡的日期范围，请单击“日期”页头，然后选择要查看的主要和比较日期范围组合。
 
    ![更改日期](assets/changedate.png)
 
