@@ -2,11 +2,11 @@
 title: 组件概述
 description: 了解 CJA 提供了哪些组件，以及如何在报表中使用它们。
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 75%
 
 ## Analysis Workspace 组件
 
-Analysis Workspace中的组件由量度、维度、过滤器和时间粒度组成，您可以将它们拖放到项目上。 您创建的自定义组件会被添加到这些面板中，例如自定义日期范围。
+Analysis Workspace 中的组件包括量度、维度、区段和时间粒度，您可以将这些组件拖放到项目中。您创建的自定义组件会被添加到这些面板中，例如自定义日期范围。
 
 要访问“组件”面板，请单击左边栏中的&#x200B;**[!UICONTROL 组件]**&#x200B;图标。您可以使用左边栏图标或[热键](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)在面板（空白面板、[自由格式面板](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)、[快速分析面板](/help/analysis-workspace/c-panels/quickinsight.md)或[归因 IQ](/help/analysis-workspace/c-panels/attribution.md) 面板）、[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)和“组件”之间切换。
 
@@ -44,9 +44,9 @@ Analysis Workspace中的组件由量度、维度、过滤器和时间粒度组�
 
 | 组件操作 | 描述 |
 | --- | --- |
-| 标记 | 通过对组件应用标记来组织或管理组件。然后，它显示在相应的组件管理器中，如[!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL 过滤器]或[!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects] |
-| 收藏 | 将组件添加到您的收藏夹列表中。然后，它显示在相应的组件管理器中，如[!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL 过滤器]或[!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects]。 |
-| 批准 | 批准组件以使其成为规范。然后，它显示在相应的组件管理器中，如[!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL 过滤器]或[!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects] |
+| 标记 | 通过对组件应用标记来组织或管理组件。然后，它显示在相应的组件管理器中，如 [!UICONTROL Analytics] > [!UICONTROL 组件] > [!UICONTROL 过滤器]，或 [!UICONTROL Analytics] > [!UICONTROL 组件] > [!UICONTROL 项目] |
+| 收藏 | 将组件添加到您的收藏夹列表中。然后，它显示在相应的组件管理器中，如 [!UICONTROL Analytics] > [!UICONTROL 组件] > [!UICONTROL 过滤器]，或 [!UICONTROL Analytics] > [!UICONTROL 组件] > [!UICONTROL 项目]。 |
+| 批准 | 批准组件以使其成为规范。然后，它显示在相应的组件管理器中，如 [!UICONTROL Analytics] > [!UICONTROL 组件] > [!UICONTROL 过滤器]，或 [!UICONTROL Analytics] > [!UICONTROL 组件] > [!UICONTROL 项目] |
 | 共享 | 仅适用于过滤器。 |
 | 删除 | 仅适用于过滤器。 |
 
