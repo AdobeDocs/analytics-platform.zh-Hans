@@ -1,14 +1,14 @@
 ---
 title: 使用对象数组
 description: 了解 CJA 如何报告数据层次结构。
+exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 translation-type: ht
-source-git-commit: 6229c5bb08f6f153c625932ed06e85030bc08c5a
+source-git-commit: 2d83d796f053465eb9543daa37068f316bccc659
 workflow-type: ht
 source-wordcount: '418'
 ht-degree: 100%
 
 ---
-
 
 # 使用对象数组
 
@@ -90,7 +90,7 @@ ht-degree: 100%
 | `LG Dryer 2000` | `1` | `500` |
 | `Total` | `1` | `2100` |
 
-CJA 会根据表有选择地查看对象的维度和度量。
+CJA 会根据表有选择地查看对象的维度和量度。
 
 ```diff
 {
@@ -188,7 +188,7 @@ CJA 查看点击的这些部分以生成报表：
 
 由于烘干机不包含保修，因此未纳入表中。
 
-由于您可以将任何维度与度量组合，下表显示了数据如何包含未指定的维度项目：
+由于您可以将任何维度与量度组合，下表显示了数据如何包含未指定的维度项目：
 
 | `product : warranty : name` | `product : orders` | `product : warranty : orders` |
 | --- | --- | --- |
