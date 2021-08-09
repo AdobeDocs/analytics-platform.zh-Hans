@@ -2,7 +2,6 @@
 title: 合并事件数据集
 description: 了解 CJA 如何通过合并数据集创建连接。
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
-translation-type: tm+mt
 source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
 workflow-type: tm+mt
 source-wordcount: '326'
@@ -73,5 +72,5 @@ ht-degree: 100%
 | string_color | metric_a |
 | --- | --- |
 | 黄色 | 6 |
-| 蓝色 | 3 |
+| 蓝色 | 1 |
 | 红色 | 2 |
