@@ -5,7 +5,7 @@ exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
 source-wordcount: '1124'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 94%
 
 如果贵组织满足所有先决条件并已了解跨渠道分析存在的限制，便可按照以下步骤在 CJA 中开始使用该功能。
 
-1. 将所需数据导入 Adobe Experience Platform。请参阅 Adobe Experience Platform 文档中的[创建架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html)和[摄取数据](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html)。
+1. 将所需数据导入 Adobe Experience Platform。请参阅 Adobe Experience Platform 文档中的[创建架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans)和[摄取数据](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans)。
 1. 与您的 Adobe 客户经理联系，并提供以下信息：
    * 启用跨渠道分析的请求
    * 要重新生成键值的数据集的数据集 ID
