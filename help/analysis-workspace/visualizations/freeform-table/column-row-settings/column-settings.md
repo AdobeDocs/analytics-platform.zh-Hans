@@ -1,14 +1,14 @@
 ---
 description: 列设置允许您配置列格式，其中一些可以是条件格式。
 title: 列设置
+exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 translation-type: ht
-source-git-commit: 8b814137a7c5e2ca96091addb5b4430e2da65329
+source-git-commit: 2d83d796f053465eb9543daa37068f316bccc659
 workflow-type: ht
 source-wordcount: '628'
 ht-degree: 100%
 
 ---
-
 
 # [!UICONTROL 列设置]
 
