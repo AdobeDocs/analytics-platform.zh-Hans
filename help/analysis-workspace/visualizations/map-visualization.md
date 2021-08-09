@@ -1,9 +1,9 @@
 ---
 description: 了解如何在 Analysis Workspace 建立任意量度的可视化地图。
 title: 地图
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '523'
 ht-degree: 100%
 
