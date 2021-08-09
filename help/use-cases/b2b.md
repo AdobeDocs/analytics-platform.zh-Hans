@@ -5,7 +5,7 @@ exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
 source-wordcount: '926'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 95%
 
 如果您使用的是 CSV 文件，那么关于如何[将 CSV 文件映射到 XDM 模式](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html)的说明应该对您会有帮助。
 
-另外，还可以使用[其他方法](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html)。
+另外，还可以使用[其他方法](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans)。
 
 载入数据并建立查询大约需要 2-4 小时，具体取决于查询表的大小。
 
