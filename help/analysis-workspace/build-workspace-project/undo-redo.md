@@ -2,11 +2,11 @@
 description: 了解 Analysis Workspace 的“撤消”和“重做”选项。
 title: “撤消”和“重做”设置
 uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '285'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 92%
 
 * 单击&#x200B;**[!UICONTROL 保存]**&#x200B;不会清除&#x200B;**[!UICONTROL 撤消]**&#x200B;堆叠。
 
-* **[!UICONTROL 新建项目]**&#x200B;或&#x200B;**[!UICONTROL 打开现有项目]**&#x200B;会清除&#x200B;**[!UICONTROL 撤消]**&#x200B;堆叠
+* **[!UICONTROL 新建项目]**&#x200B;或&#x200B;**[!UICONTROL 打开现有项目]**&#x200B;会清除&#x200B;**[!UICONTROL 撤消]**&#x200B;堆叠。
 
 * 项目名称旁边会显示撤消/恢复消息，表示正在进行撤消/恢复。
 * 您可以使用以下[热键](/help/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)：
@@ -44,7 +44,7 @@ ht-degree: 92%
 * 自由格式右键单击选项
 * 选区
 * 可视化图例选区
-* 向面板添加滤镜
+* 将过滤器添加到面板
 * 图表上的可视化设置
 * 编辑图例标签
 * 魔术可视化
@@ -61,10 +61,10 @@ ht-degree: 92%
 ## 无法撤消或重做的事项 {#section_65BB313E048F4744B692926362873230}
 
 * 项目信息与设置更改（添加标签、描述更改、计数重复实例设置）
-* 设置为登录页面
-* 添加新（过滤器/量度/日期范围/警报）
+* 设置为“登录”页面
+* 新增（过滤器/量度/日期范围/警报）
 * 共享项目、获取项目链接、发送文件（立即或按计划）
-* 在流可视化中为此路径创建过滤器
+* 在流量可视化中为此路径创建过滤器
 * 创建计算量度
 * 创建日期范围
 
