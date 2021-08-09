@@ -1,14 +1,14 @@
 ---
 title: 预估连接大小
 description: 报告 Customer Journey Analytics 的当前使用情况
+exl-id: 5599b34f-342d-4c68-b7c9-2ac3ea50d078
 translation-type: ht
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: 2d83d796f053465eb9543daa37068f316bccc659
 workflow-type: ht
 source-wordcount: '612'
 ht-degree: 100%
 
 ---
-
 
 # 预估连接大小
 
