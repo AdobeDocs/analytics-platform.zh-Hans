@@ -5,7 +5,7 @@ exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
 source-wordcount: '517'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -34,13 +34,13 @@ ht-degree: 91%
 * **行**
    * 您可以通过调整项目的[视图密度](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html?lang=zh-Hans)，将更多行放入单个屏幕中。
    * 在执行分页之前，每个维度行最多可显示 400 行。单击“行”旁边的数字可在单个页面上显示更多行。使用页眉中的页面箭头可导航到其他页面。
-   * 可以按其他组件划分行。要同时划分多行，只需选择多行，然后将下一个组件拖动到选定行上即可。了解有关[划分](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.html)的更多信息。
-   * 可以[过滤](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.html)行，以显示缩减的项目集。在[行设置](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.html)下，提供了其他设置。
+   * 可以按其他组件划分行。要同时划分多行，只需选择多行，然后将下一个组件拖动到选定行上即可。了解有关[划分](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.html?lang=zh-Hans)的更多信息。
+   * 可以[过滤](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.html?lang=zh-Hans)行，以显示缩减的项目集。在[行设置](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.html?lang=zh-Hans)下，提供了其他设置。
 
 * **列**
    * 可以将组件堆放在列中，以创建过滤量度、跨标签分析等。
-   * 可以在[列设置](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/column-row-settings/column-settings.html)下调整每列的视图。
-   * 可通过[右键单击菜单](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/using-the-right-click-menu.html)执行多个操作。根据您单击表标题、行或列的情况，菜单可提供不同的操作。
+   * 可以在[列设置](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/column-row-settings/column-settings.html?lang=zh-Hans)下调整每列的视图。
+   * 可通过[右键单击菜单](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/using-the-right-click-menu.html?lang=zh-Hans)执行多个操作。根据您单击表标题、行或列的情况，菜单可提供不同的操作。
 
 ## 导出自由格式表数据
 
