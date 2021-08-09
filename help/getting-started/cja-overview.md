@@ -26,7 +26,7 @@ Customer Journey Analytics 的初始版本包括 Analysis Workspace 中的许多
 
 ## 比较 CJA 与 Cross-Device Analytics
 
-[Cross-Device Analytics ](https://experienceleague.adobe.com/docs/analytics/components/cda/cda-home.html)与 Adobe Experience Platform Identity 服务集成，利用协作图形或专用图形来识别数字设备如何映射到人员。它适用于 Adobe Analytics Ultimate 客户。
+[Cross-Device Analytics ](https://experienceleague.adobe.com/docs/analytics/components/cda/cda-home.html?lang=zh-Hans)与 Adobe Experience Platform Identity 服务集成，利用协作图形或专用图形来识别数字设备如何映射到人员。它适用于 Adobe Analytics Ultimate 客户。
 
 另一方面，CJA 与 Adobe Experience Platform 数据集集成，并且支持在 Analysis Workspace 中进行跨渠道分析。尽管 CJA 尚未与协作或专用身份图形集成，但您可以“自带 ID”将数据集合在一起，这些数据集不仅包含数字数据，而且包含线上和线下接触点。下文将详细介绍使用 CJA 的先决条件。
 
