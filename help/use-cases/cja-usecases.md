@@ -1,14 +1,14 @@
 ---
 title: Customer Journey Analytics 用例
 description: Customer Journey Analytics 用例
-translation-type: tm+mt
-source-git-commit: 8aa4ee719a7e2815cab94448a359b8dcba1307ec
-workflow-type: tm+mt
+exl-id: 90746eb0-99df-463a-8f01-330fd460a4a8
+translation-type: ht
+source-git-commit: 2d83d796f053465eb9543daa37068f316bccc659
+workflow-type: ht
 source-wordcount: '209'
 ht-degree: 100%
 
 ---
-
 
 # Customer Journey Analytics 用例
 
