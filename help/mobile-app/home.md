@@ -1,18 +1,18 @@
 ---
-title: Analytics 功能板 - 概述
+title: Analytics 功能板 — 概述
 description: Customer Journey Analytics 功能板的产品文档和自助服务
 exl-id: 40e52441-e772-41a3-b2e3-51a3d00580d0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2d83d796f053465eb9543daa37068f316bccc659
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '208'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
-# Analytics [!UICONTROL 功能板] - 概述
+# Analytics [!UICONTROL 功能板] — 概述
 
-**分析功 ** 能板可随时随地从Adobe Analytics提供洞察，包括Customer Journey Analytics。该应用程序允许用户通过移动设备访问直观的记分卡。记分卡是在平铺布局中显示的关键量度和其他组件的集合，您可以点击它以查看更详细的划分和趋势数据视图。 iOS 和 Android 操作系统均支持移动设备应用程序。
+**Analytics [!UICONTROL 功能板]**&#x200B;从 Adobe Analytics（包括 Customer Journey Analytics）随时随地提供各种见解。该应用程序允许用户通过移动设备访问直观的记分卡。分卡是关键量度和其他组件的集合，这些组件以平铺布局显示，您可以点击它们以获取更详细的划分和趋势数据视图。iOS 和 Android 操作系统均支持移动设备应用程序。
 
 要详细了解 Analytics [!UICONTROL 功能板]，请参阅以下资源：
 
