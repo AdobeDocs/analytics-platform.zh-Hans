@@ -3,7 +3,7 @@ description: 有关使用功能板记分卡的说明。
 title: Analytics 功能板执行指南
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1286'
 ht-degree: 100%
 
