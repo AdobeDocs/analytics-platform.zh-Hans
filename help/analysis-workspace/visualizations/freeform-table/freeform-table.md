@@ -3,7 +3,7 @@ title: 自由格式表
 description: 自由格式表是在 Analysis Workspace 中进行数据分析的基础
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '517'
 ht-degree: 100%
 
@@ -50,6 +50,6 @@ ht-degree: 100%
 * 右键单击并选择&#x200B;**[!UICONTROL 将数据下载为 CSV]** 可将显示的表数据下载为 CSV。如果已选择表，则此选项将显示为&#x200B;**[!UICONTROL 将选定内容下载为 CSV]**。
 * 右键单击并依次选择&#x200B;**[!UICONTROL 项目 > 以 CSV 格式下载项目]**&#x200B;将最多导出选定维度的 50,000 个项目。
 
-了解有关用于 Analysis Workspace 的所有数据[导出选项](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html)的更多信息。
+了解有关用于 Analysis Workspace 的所有数据[导出选项](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?lang=zh-Hans)的更多信息。
 
 ![](assets/export-options.png)
