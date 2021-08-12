@@ -2,10 +2,10 @@
 title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: 423cf7d8a73c307bef42a62e91e7b64219f02670
+source-git-commit: c23b172fd4dc5d0303723c4e8ccfeaa251257bfd
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 90%
+source-wordcount: '1188'
+ht-degree: 68%
 
 ---
 
@@ -17,39 +17,40 @@ ht-degree: 90%
 
 | Adobe Analytics 功能 | 注释 |
 | --- | --- |
-| A4T | 通过[Adobe Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)中的字段提供支持。 |
 | 异常检测 | 完全支持 |
 | 归因 IQ | 完全支持 |
-| 计算量度 | 请注意，传统 Analysis Workspace 中的任何现有计算量度都不会移植到 CJA。 |
-| 跨设备/跨渠道拼接 | 请参阅[跨渠道分析](/help/connections/cca/overview.md)。 |
+| 计算量度 | 全面支持；请注意，传统Analysis Workspace中的任何现有计算量度都不会移植到CJA。 |
+| 跨设备/跨渠道拼接 | 全面支持；请参阅[跨渠道分析](/help/connections/cca/overview.md)。 |
 | 日期比较 | 完全支持 |
-| 日期范围 | 计划将会提供自定义日历支持。 |
-| 维度 | CJA 利用 XDM 并支持无限量的维度，同时不会与传统 Analytics 的自定义 eVar 或 prop 绑定。 |
+| 维度 | 全面支持；CJA利用XDM并支持无限量的维度。 CJA未绑定到传统Adobe Analytics的自定义eVar或prop。 |
 | 默认配置的 Analysis Workspace 维度（例如浏览器类型、推荐人类型、操作系统等） | 只要填充基本 XDM 字段（如用户代理或设备 ID），CJA 就可以原生提供这些维度。 对于使用 Analytics Data Connector (ADC) 的客户，其中部分维度可用，但不是全部维度都可用。请参阅我们的[关于通过 ADC 支持哪些 Analytics 变量的文档](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)。 |
-| 删除 GDPR | 请注意，GDPR 现在可与 [!UICONTROL Adobe Experience Platform] 协调处理，CJA 会继承 [!UICONTROL Experience Platform] 对基础数据集所做的任何数据更改。 |
-| 列表变量/列表 Prop | CJA 利用 XDM 并支持无限量的与 listVar 具有类似用法的字符串数组。 |
-| 量度 | CJA 利用体验数据模型 (XDM) 并支持无限量的量度，同时不会与传统 Analytics 的自定义成功事件绑定。请注意，已对传统 Analytics 中的一些标准量度名称进行了重命名，例如：“访客”=“人员”、“访问”=“会话”、“点击”=“事件”。 |
+| 删除 GDPR | 全面支持；请注意，现在可以与[!UICONTROL Adobe Experience Platform]协调处理GDPR。 CJA会继承[!UICONTROL Experience Platform]对基础数据集所做的任何数据更改。 |
+| 列表变量/列表 Prop | 全面支持；CJA利用XDM并支持无限数量的字符串数组，这些数组的使用方式与listVars类似。 |
+| 量度 | 全面支持；CJA利用体验数据模型(XDM)，并支持无限量的量度，且不会与传统Analytics的自定义成功事件绑定。 请注意，已对传统 Analytics 中的一些标准量度名称进行了重命名，例如：“访客”=“人员”、“访问”=“会话”、“点击”=“事件”。 |
 | PDF 导出 | 完全支持 |
 | 项目策划 | 完全支持 |
 | 项目链接 | 完全支持 |
-| 报表时间处理 | CJA 完全依赖于报表时间处理。 |
-| 报表 API 访问 | 可通过[CJA API](https://www.adobe.io/cja-apis/docs/)获取。 |
+| 报表时间处理 | 全面支持；CJA完全依赖于报表时间处理。 |
+| 报表 API 访问 | 全面支持；可通过[CJA API](https://www.adobe.io/cja-apis/docs/)获取。 |
 | 计划报表/项目 | 完全支持 |
-| 区段 | 现在称为“过滤器”。请注意，传统 Analysis Workspace 中的任何现有区段都不会移植到 CJA。 |
-| 用户权限/数据访问控制 | CJA区分[Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=en)产品管理员和用户。 只有产品管理员才能 <ul><li>创建/更新/删除连接或数据视图</li><li>更新/删除其他用户创建的项目、过滤器或计算量度，以及</li><li>将 Workspace 项目共享给所有用户.</li></ul> |
-| 虚拟报表包 | 现在称为[数据视图](/help/data-views/create-dataview.md)。 |
-| VRS 组件策划 | 现在是“数据视图”的一部分。 |
+| 区段 | 全面支持；现在称为“过滤器” — 请注意，传统Analysis Workspace中的任何现有区段都不会移植到CJA。 |
+| 用户权限/数据访问控制 | 全面支持；CJA区分[Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=en)产品管理员和用户。 只有产品管理员才能 <ul><li>创建/更新/删除连接或数据视图</li><li>更新/删除其他用户创建的项目、过滤器或计算量度，以及</li><li>将 Workspace 项目共享给所有用户.</li></ul> |
+| 虚拟报表包 | 全面支持；现在称为[数据视图](/help/data-views/create-dataview.md)。 |
+| VRS 组件策划 | 全面支持；现在是数据视图的一部分。 |
 
 ## 受支持，但有注意事项
 
 | 功能 | 注释 |
 | --- | --- |
+| A4T | 通过[Adobe Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)中的字段提供支持。 |
 | 分类 | 现在称为“查找数据集”。Analytics 中使用的分类可以使用 Analytics Classifications Data Connector 导入 Experience Platform 和 CJA。 查找数据集也可以直接上传到 AEP 并在 CJA 中可用。 |
 | 自定义会话流程 | 支持除移动后台点击之外的所有自定义会话流程功能。 |
-| 客户属性 | 现在称为“用户档案数据集”，它们不会从 Experience Cloud 中自动导入，必须先将其上传到 AEP，然后才能在 CJA 中使用。 |
+| 客户属性 | 现在称为“配置文件数据集”，它们不会自动从Experience Cloud导入，但必须先上传到AEP，然后才能在CJA中使用。 |
+| 日期范围 | 除了已计划的自定义日历支持之外，支持所有日期范围功能。 |
 | “设备”、“浏览器”、“技术”维度 | 当 AEP 数据集包含特定 XDM 架构字段并符合 XDM Experience Event 类要求时，将自动包含这些维度。 |
 | 登入次数、退出次数和逗留时间维度和量度 | 受支持（现在“进入次数”和“退出次数”称为“会话启动次数”和“会话结束次数”），但计算方式略有不同。 |
 | eVar 持久性设置 | eVar 不再是 CJA 的一部分。但是，持久性设置现在是数据视图的一部分，且可用于所有维度。请记住，持久基于报表时间处理，而不是数据收集处理。数据视图中的纬度集限制为 90 天最大持久性，不支持无限持久性。 |
+| 地域划分维度 | 收集到Adobe Analytics的所有地域划分/地理位置都会通过Analytics Data Connector流入CJA。 不使用Analytics Data Connector的实施（例如依赖AEP Web SDK进行数字数据收集的实施）将不会自动执行全套地理查找（支持国家/地区和州、城市和zip）。 |
 | 营销渠道 | 营销渠道数据通过 Analytics Data Connector 流入 CJA。营销渠道规则仍必须在传统的 Adobe Analytics 中进行配置。某些规则不受支持。有关更多详细信息，请参阅 [CJA 营销渠道文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=zh-Hans#cja-usecases)。 |
 | 产品变量 | 在该 Experience Platform 中，用户可以在数据集架构中使用“对象”类型字段的数组来满足此用例。在 CJA 中，客户可以使用任意数量的产品变量，而不限于 Adobe Analytics 中的单个变量。 |
 | 项目共享 | 仅支持在 CJA 用户之间共享项目，不支持 CJA 与传统 Analysis Workspace 之间共享项目。 |
