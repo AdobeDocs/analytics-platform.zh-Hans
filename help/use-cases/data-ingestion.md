@@ -2,10 +2,10 @@
 title: Customer Journey Analytics 的数据摄取选项
 description: 了解将数据摄取到 Customer Journey Analytics 的不同方式
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 15312a57f0f122d22d0575f2008d547bcb8ab2ed
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 90%
+source-wordcount: '939'
+ht-degree: 89%
 
 ---
 
@@ -33,9 +33,9 @@ ht-degree: 90%
 
 ## 通过 Adobe Experience PlatformWeb SDK和 Edge Network 获取数据
 
-[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans) 是客户端 JavaScript 库，它允许 Adobe Experience Cloud 的客户通过 Adobe Experience Platform Edge Network 与 Experience Cloud 中的各种服务进行交互。
+[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 是客户端 JavaScript 库，它允许 Adobe Experience Cloud 的客户通过 Adobe Experience Platform Edge Network 与 Experience Cloud 中的各种服务进行交互。
 
-1. [在 Launch 中配置 AEP Web SDK 扩展](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/aep-extension/overview.html?lang=zh-Hans#configure-the-aep-web-sdk-extension)，通过 Adobe Experience Platform Edge Network 从 Web 资产向 Adobe Experience Cloud 发送数据。
+1. [在 Launch 中配置 AEP Web SDK 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=en)，通过 Adobe Experience Platform Edge Network 从 Web 资产向 Adobe Experience Cloud 发送数据。
 1. 使用 [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) 创建一个或多将纳入您的跨渠道报表的连接和数据视图。
 
 ## 通过批量摄取和流式摄取来获取数据
