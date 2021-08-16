@@ -2,10 +2,10 @@
 title: 如何在 Customer Journey Analytics 中创建新数据视图。
 description: 描述创建新数据视图所需的所有设置。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: f2e13469faf540d997fcac4687aa51533b543c84
+source-git-commit: bf3744ce700adf29e63066c3f15a72f0b20d01b1
 workflow-type: tm+mt
-source-wordcount: '3024'
-ht-degree: 85%
+source-wordcount: '3054'
+ht-degree: 82%
 
 ---
 
@@ -125,7 +125,7 @@ ht-degree: 85%
 | --- | --- |
 | [!UICONTROL 对值计数] | 仅对于布尔量度，此设置允许您指定是要将[!UICONTROL Count True]、[!UICONTROL Count False]或[!UICONTROL Count True或False]作为量度值。 默认值为[!UICONTROL Count True]。 这会为您提供量度的实际值，如顺序值为50时的“50”。 |
 | [!UICONTROL 计数实例] | 用于指定用作量度的数值或日期类型字段是否应统计设置该字段的次数（而非值本身）。<br> 如果您要合计数值字段的实例数并想只合计字段的&#x200B;*设置*&#x200B;次数（而非其中的实际值）。<br>这用于根据[!UICONTROL 收入]字段创建[!UICONTROL 订单]量度，例如：如果设置了收入，那么我们想统计 1 个订单（而非数值收入金额）。 |
-| [!UICONTROL 小写] | *新增*  — 对于“字符串”类型维度。此设置允许您控制Customer Journey Analytics是否将维度值视为区分大小写。 它允许删除具有相同值但大小写不同的行。 此屏幕截图显示了Workspace中区分大小写维度的示例：<br>![区分大小写维度](assets/case-sens-workspace.png) |
+| [!UICONTROL 小写] | *新增*  — 适用于“字符串”类型的维度。此设置允许您控制Customer Journey Analytics是否将维度值视为区分大小写。 它允许删除具有相同值但大小写不同的行。 如果选中&#x200B;**[!UICONTROL 小写]**，则具有相同值的维度的所有实例都将报告为小写。 此屏幕截图显示了如果您执行&#x200B;**not**&#x200B;检查[!UICONTROL 小写]，会发生什么情况。 请注意“liverpool”、“Liverpool”和“LIVERPOOL”如何在报表中生成三个单独的行项目：<br>![区分大小写的维度](assets/case-sens-workspace.png) |
 
 ### 配置[!UICONTROL 无值选项]设置
 
@@ -140,7 +140,7 @@ ht-degree: 85%
 | [!UICONTROL 如果显示，则调用“无值”...] | 在这种情况下，您可以将&#x200B;**[!UICONTROL 无值]**&#x200B;重命名为其他名称。 |
 | [!UICONTROL 默认不显示“无值”] | 不要在报告中显示此值。 |
 | [!UICONTROL 默认显示“无值”] | 在报告中显示此值。 |
-| [!UICONTROL 将“无值”视为值] | 此设置会将数据中的空白值替换为您在[!UICONTROL 如果显示，则调用“无值”...]下方指定的文本。例如，如果您将“移动设备类型”作为维度，则可以将&#x200B;**[!UICONTROL 无值]**&#x200B;项重命名为“桌面”。请注意，如果您将此字段更改为自定义值，自定义值将被视为合法字符串值。因此，如果在此字段中输入值“红色”，则数据本身中显示的字符串“红色”的所有实例都将滚动到您指定的同一行项目下。 |
+| [!UICONTROL 将“无值”视为值] | 此设置会将数据中的空白值替换为您在[!UICONTROL 如果显示，请调用无值……下指定的文本]。 例如，如果您将“移动设备类型”作为维度，则可以将&#x200B;**[!UICONTROL 无值]**&#x200B;项重命名为“桌面”。请注意，将此字段更改为自定义值时，自定义值将被视为合法的字符串值。 因此，如果在此字段中输入值“Red”，则数据本身中出现的字符串“Red”的任何实例都将滚动到您指定的同一行项目下。 |
 
 ### 配置持久性设置
 
