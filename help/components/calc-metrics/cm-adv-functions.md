@@ -2,10 +2,10 @@
 title: 引用 - 高级函数
 description: 可通过以下方法访问这些函数：选中函数下拉列表中的显示高级。
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 15312a57f0f122d22d0575f2008d547bcb8ab2ed
 workflow-type: tm+mt
-source-wordcount: '2947'
-ht-degree: 100%
+source-wordcount: '2944'
+ht-degree: 99%
 
 ---
 
@@ -72,7 +72,7 @@ Approximate Count Distinct (customer ID eVar) 是此函数的常见用例。
 
 ## 超出的独特数
 
-Count()、RowCount() 和 Approximate Count Distinct() 会受到[“超出的独特数”限制](https://marketing.adobe.com/resources/help/zh_CN/reference/metrics_uniques_high_numbers.html)的约束。如果维度在特定月份内达到“超出的独特数”限制，则该值将计数为 1 个维度项目。
+Count()、RowCount() 和 Approximate Count Distinct() 会受到[“超出的独特数”限制](https://experienceleague.adobe.com/docs/analytics/technotes/low-traffic.html?lang=en)的约束。如果维度在特定月份内达到“超出的独特数”限制，则该值将计数为 1 个维度项目。
 
 ## 比较计数函数
 
