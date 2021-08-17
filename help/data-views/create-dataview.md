@@ -2,10 +2,10 @@
 title: 如何在 Customer Journey Analytics 中创建新数据视图。
 description: 描述创建新数据视图所需的所有设置。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: bf3744ce700adf29e63066c3f15a72f0b20d01b1
+source-git-commit: 5d2750001cc9a5d12305741e99fccc3625432996
 workflow-type: tm+mt
-source-wordcount: '3054'
-ht-degree: 82%
+source-wordcount: '3069'
+ht-degree: 81%
 
 ---
 
@@ -125,7 +125,7 @@ ht-degree: 82%
 | --- | --- |
 | [!UICONTROL 对值计数] | 仅对于布尔量度，此设置允许您指定是要将[!UICONTROL Count True]、[!UICONTROL Count False]或[!UICONTROL Count True或False]作为量度值。 默认值为[!UICONTROL Count True]。 这会为您提供量度的实际值，如顺序值为50时的“50”。 |
 | [!UICONTROL 计数实例] | 用于指定用作量度的数值或日期类型字段是否应统计设置该字段的次数（而非值本身）。<br> 如果您要合计数值字段的实例数并想只合计字段的&#x200B;*设置*&#x200B;次数（而非其中的实际值）。<br>这用于根据[!UICONTROL 收入]字段创建[!UICONTROL 订单]量度，例如：如果设置了收入，那么我们想统计 1 个订单（而非数值收入金额）。 |
-| [!UICONTROL 小写] | *新增*  — 适用于“字符串”类型的维度。此设置允许您控制Customer Journey Analytics是否将维度值视为区分大小写。 它允许删除具有相同值但大小写不同的行。 如果选中&#x200B;**[!UICONTROL 小写]**，则具有相同值的维度的所有实例都将报告为小写。 此屏幕截图显示了如果您执行&#x200B;**not**&#x200B;检查[!UICONTROL 小写]，会发生什么情况。 请注意“liverpool”、“Liverpool”和“LIVERPOOL”如何在报表中生成三个单独的行项目：<br>![区分大小写的维度](assets/case-sens-workspace.png) |
+| [!UICONTROL 小写] | *新增*  — 适用于“字符串”类型的维度。此设置允许您控制Customer Journey Analytics是否将维度值视为区分大小写。 它允许删除具有相同值但大小写不同的行。 如果选中&#x200B;**[!UICONTROL 小写]**，则具有相同值的维度的所有实例都将报告为小写。 此屏幕截图显示如果您执行&#x200B;**不**&#x200B;选中[!UICONTROL 小写]与选中&#x200B;**do**&#x200B;复选框的情况。 在左表中，请注意“利物浦”、“利物浦”和“利物浦”如何在报表中生成三个单独的行项目。 在右表中，这些相同的值已删除重复项，并位于以下一行项目下：<br>![区分大小写的维度](assets/case-sens-workspace.png) |
 
 ### 配置[!UICONTROL 无值选项]设置
 
@@ -151,7 +151,7 @@ ht-degree: 82%
 | 设置 | 描述/用例 |
 | --- | --- |
 | [!UICONTROL 设置持久性] | 切换键 |
-| [!UICONTROL 分配] | 用于为持久性指定维度中使用的分配模型。选项有：[!UICONTROL 最近]、[!UICONTROL 原有]、[!UICONTROL 实例]、[!UICONTROL 全部]。如果您要保留某个值（与传统 Analytics 中的 eVar 类似），可以在这里设置它。唯一区别在于您可以设置的最长保留时间是 90 天。另外，无法选择[!UICONTROL 永不过期]。 |
+| [!UICONTROL 分配] | 用于为持久性指定维度中使用的分配模型。选项有：[!UICONTROL 最近]、[!UICONTROL 原有]、[!UICONTROL 实例]、[!UICONTROL 全部]。如果您希望某个值持续存在，则需在此处设置该值。 您可设置的最大持久性为90天。 另外，无法选择[!UICONTROL 永不过期]。 |
 | [!UICONTROL 到期] | 用于为维度指定持久性窗口。选项有：[!UICONTROL 会话]（默认）、[!UICONTROL 人员]、[!UICONTROL 时间]、[!UICONTROL 量度]。您可能需要能够使维度在购买后过期（例如内部搜索词或其他促销用例）。[!UICONTROL 量度]用于将定义的所有量度指定为此维度的到期（例如，[!UICONTROL 购买]量度）。<br>**注意**:选择“全部”分配时，无法为维度设置自定义过 [!UICONTROL 期]。 |
 
 ### 配置“值分段”设置
