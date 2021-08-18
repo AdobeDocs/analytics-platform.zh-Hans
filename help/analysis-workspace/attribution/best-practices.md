@@ -1,10 +1,10 @@
 ---
 title: 归因最佳实践
 description: 有关决定归因模型的最佳实践是什么？
-source-git-commit: 3839639858edbd019ef467ca5fb1791f48864100
+source-git-commit: 0e0d77425edeceb3ede6d2d7ca81846b30179607
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 2%
+source-wordcount: '393'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 2%
 >[!NOTE]
 >在您选择归因模型之前，需要先进行此分析。
 
-此阶段最初包括了解客户行为并定义转化量度。 根据转化量度，诸如[数据馈送](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=en)（用于原始数据）或Analysis Workspace之类的工具可帮助您了解
+此阶段最初包括了解客户行为并定义转化量度。 根据转化量度，诸如Analysis Workspace和从多个渠道提取数据源（如展示次数数据）之类的工具可以帮助您了解
 
 * 有多少客户在转化之前接触了不同的营销渠道？
 * 这些行为的比例/分布。
@@ -53,6 +53,3 @@ ht-degree: 2%
 ## 其他注意事项
 
 * 您可能需要使用数据科学家的服务，而不是仅仅依赖Analysis Workspace。
-* 您可以依赖原始数据，如Adobe数据馈送中的数据。
-* 例如，如果要考虑展示次数数据，请考虑使用[Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=zh-Hans)。
-
