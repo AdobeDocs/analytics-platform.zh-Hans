@@ -3,10 +3,10 @@ description: 在Analysis Workspace中直观地显示您的数据。
 keywords: Analysis Workspace
 title: 可视化图表概述
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+source-git-commit: fa0033202650f17acd275f1050565285c1464f53
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 93%
+source-wordcount: '1043'
+ht-degree: 92%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 93%
 
 您可从 Workspace 左上角的图标、[空白面板](/help/analysis-workspace/c-panels/blank-panel.md)或者通过工作流程中的右键单击菜单来访问可视化图表。
 
-![](assets/viz-rail.png)
+![可视化图表边栏](assets/viz-rail.png)
 
 Analysis Workspace 中提供了以下可视化图表类型：
 
@@ -26,7 +26,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | [条形图](/help/analysis-workspace/visualizations/bar.md) | 显示一些垂直条，这些垂直条表示一个或多个量度中的各种值。 |
 | [项目符号图表](/help/analysis-workspace/visualizations/bullet-graph.md) | 显示您感兴趣的值与其他性能范围（目标）进行比较或衡量的结果。 |
 | [同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | *`cohort`* 是指一组在特定期限内共享相同特性的人员。同类群组分析对于保留、流失或延迟分析非常有用。 |
-| [圆环](/help/analysis-workspace/visualizations/donut.md) | 与饼图类似，此可视化图表将数据显示为整体的一部分或过滤器。 |
+| [圆环图](/help/analysis-workspace/visualizations/donut.md) | 与饼图类似，此可视化图表将数据显示为整体的一部分或过滤器。 |
 | [流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | 流失报表显示访客从何处离开（流失）或继续通过（流过）预定义的页面序列。可以设置为有条件序列或确切序列。 |
 | [流](/help/analysis-workspace/visualizations/c-flow/flow.md) | 显示客户在您的网站和应用程序中的确切路径。 |
 | [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | 自由格式表不仅可以作为数据表，而且还是一个交互式可视化图表。这是 Workspace 中数据分析的基础。 |
@@ -44,7 +44,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 
 每个可视化图表都有其自身的设置，您可以管理这些设置。要访问[!UICONTROL 可视化图表设置]，请单击[!UICONTROL 可视化图表设置]齿轮图标。
 
-![](assets/settings.png)
+![设置](assets/settings.png)
 
 | 设置 | 描述 |
 | --- | --- |
@@ -70,18 +70,16 @@ Analysis Workspace 中提供了以下可视化图表类型：
 1. 右键单击某个图例标签。
 1. 单击&#x200B;**[!UICONTROL 编辑标签]**。
 
-   ![](assets/edit-label.png)
+   ![编辑标签](assets/edit-label.png)
 
 1. 输入新的标签文本。
 1. 按 **[!UICONTROL Enter]** 键保存。
-
-下面是一个[指向该主题相关视频的链接](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html?lang=zh-Hans)。
 
 ## 右键单击菜单 {#right-click}
 
 右键单击可视化标题，即可获得可视化的其他功能。 其设置因可视化图表而异。其中一些设置包括：
 
-![](assets/right-click.png)
+![右键单击](assets/right-click.png)
 
 | 设置 | 描述 |
 | --- | --- |
@@ -94,8 +92,8 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | 获取可视化图表链接 | 此设置允许您将用户引导至项目中的可视化图表。单击该链接时，收件人需要先登录，然后才能转至所链接到的确切可视化图表。 |
 | 从头开始 | （适用于流、维恩图、直方图）删除当前可视化图表的设置，以便您从头开始重新配置。 |
 
-## “创建可视化”图标  {#quick-viz}
+## “创建可视化”图标 {#quick-viz}
 
 如果您不确定所要创建的可视化图表，请单击任意表行中的&#x200B;**[!UICONTROL 创建可视化]**&#x200B;图标（将光标悬停于上方即可显示）。这是添加可视化图表最快的方法。单击此图标将提示 Analysis Workspace 针对哪种可视化图表最适合您的数据做出有根据的推测。例如，如果您选择了 1 行，则会创建趋势线形图。如果选择了3个过滤行，则会创建维恩图。
 
-![](assets/quick-viz.png)
+![快速可视化](assets/quick-viz.png)
