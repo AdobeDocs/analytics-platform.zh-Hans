@@ -1,9 +1,9 @@
 ---
-description: 创建一个项目并将组件（维度、量度、过滤器、日期范围）添加到自由格式面板。
+description: 创建一个项目并将组件（维度、量度、筛选器、日期范围）添加到自由格式面板。
 keywords: Analysis Workspace
-title: 创建工作区项目
+title: 创建 Workspace 项目
 source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '666'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # 创建 Workspace 项目
 
-创建一个项目并将组件（维度、量度、过滤器、日期范围）添加到自由格式面板。
+创建一个项目并将组件（维度、量度、筛选器、日期范围）添加到自由格式面板。
 
 在本篇文章中，您可以熟悉 Analysis Workspace 的界面元素，并了解如何创建项目。
 
@@ -58,20 +58,20 @@ ht-degree: 100%
  <tbody> 
   <tr> 
    <td colname="col1"><a href="/help/analyze/analysis-workspace/components/analysis-workspace-components.md"  > 组件</a> </td> 
-   <td colname="col2"> <p>可拖入项目中的维度、量度、过滤器和日期范围。 </p> </td> 
+   <td colname="col2"> <p>可拖入项目中的维度、量度、筛选器和日期范围。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md"  > 可视化图表</a> </td> 
    <td colname="col2"> <p>这些项目可拖至界面上的面板或项目区域中。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md"  > 自由格式面板 </a> </td> 
+   <td colname="col1"><a href="/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md"  > “自由格式”面板 </a> </td> 
    <td colname="col2"> <p>用于在 Analysis Workspace 中进行交互的画布或工作区。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-1. 保存项目。为项目命名，提供描述（可选但很有用）并标记项目（可选），然后单击&#x200B;**[!UICONTROL 保存项目]**。
+1. 保存项目。为项目命名，提供描述（可选但很有用）并标记项目（可选），然后单击&#x200B;**[!UICONTROL “保存项目”]**。
 
    ![](assets/save_project.png)
 
@@ -83,13 +83,13 @@ ht-degree: 100%
    >
    >如今，当您执行“保存”或“另存为”操作后，内部链接都是一些相对于其所在项目的链接，并非相对于以往进行复制的原始项目。
 
-## 添加组件和可视化 {#task_CDAC9B3007BE4A3790AFAD3746D669B1}
+## 添加组件和可视化图表 {#task_CDAC9B3007BE4A3790AFAD3746D669B1}
 
 1. 通过将 *`components`* 和 *`visualizations`* 拖动到项目来构建项目。
 
    **组件**
 
-   “组件”工具栏显示了您最常使用的一些可搜索的维度、量度、过滤器以及日期范围。
+   “组件”工具栏显示了您最常使用的一些可搜索的维度、量度、筛选器以及日期范围。
 
 <table id="table_4626163E26DE46CB86391868BBA3AD32"> 
  <thead> 
@@ -108,8 +108,8 @@ ht-degree: 100%
    <td colname="col2"> <p>应用于项目级别。 </p> <p><img  src="assets/metrics.png" id="image_7C874C72992E414CBEE6B90CEF7B9F3C" /> </p> <p> <span class="term">发生次数</span>是数据表默认的量度。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 过滤器（蓝色） </td> 
-   <td colname="col2"> <p>只能在面板级别进行拖动，不过，您可以在数据表中创建内联过滤器。 </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>有关更多信息，请参阅<a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  >过滤器</a>。 </p> </td> 
+   <td colname="col1"> 筛选器（蓝色） </td> 
+   <td colname="col2"> <p>只能在面板级别进行拖动，不过，您可以在数据表中创建内联筛选器。 </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>有关更多信息，请参阅<a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  >筛选器</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 日期范围和粒度（紫色） </td> 
@@ -120,7 +120,7 @@ ht-degree: 100%
 
 **[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)**
 
-[!UICONTROL 可视化]面板提供标准的 Analytics 图形、图表、圆环图、数据表、[同类群组](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)表、维恩图等等。您可以将多个可视化信息拖放到项目中。
+[!UICONTROL “可视化图表”]面板提供标准的 Analytics 图形、图表、圆环图、数据表、[同类群组](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)表、维恩图等等。您可以将多个可视化信息拖放到项目中。
 
 ![步骤结果](assets/visualizations.png)
 
@@ -167,7 +167,7 @@ ht-degree: 100%
     <ul id="ul_18C83B8514AD4C1C86C071AA8402CB5C"> 
      <li id="li_6CA84ED293EA4940A7495DA9D9121264">维度 </li> 
      <li id="li_EA16EE017B2E4A6998918706938A21BF">量度 </li> 
-     <li id="li_0405D339CD01405DB508A7D8D1A976B4">过滤器 </li> 
+     <li id="li_0405D339CD01405DB508A7D8D1A976B4">筛选器 </li> 
      <li id="li_819CE81C552F49BB9C1B83ED3B42C5F7">时间 </li> 
     </ul> </td> 
    <td colname="col2"> </td> 
@@ -185,7 +185,7 @@ ht-degree: 100%
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > 根据选定的内容创建过滤器</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > 根据选定的内容创建筛选器</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
