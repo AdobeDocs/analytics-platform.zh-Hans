@@ -3,7 +3,7 @@ title: 导入呼叫中心数据和网站数据
 description: 了解如何创建数据集以关联呼叫中心数据和网站数据。
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '675'
 ht-degree: 100%
 
@@ -64,11 +64,11 @@ CJA 需要使用通用标识符来生成[合并的数据集](../connections/comb
 
 此可视化图表有助于您了解 CCA 进行数据拼合的效果。
 
-1. 创建两个过滤器。这两个过滤器中使用的变量与上面提到的用于反映每个事件的数据源的变量相同。有关更多信息，请参阅[创建过滤器](/help/components/filters/create-filters.md)。
+1. 创建两个筛选器。这两个筛选器中使用的变量与上面提到的用于反映每个事件的数据源的变量相同。有关更多信息，请参阅[创建筛选器](/help/components/filters/create-filters.md)。
    * 数据集 ID 代表网站数据的“人员”容器
    * 数据集 ID 代表呼叫中心数据的“人员”容器
 2. 在 Analysis Workspace 中，将[维恩图](/help/analysis-workspace/visualizations/venn.md)可视化图表拖到工作区画布上。
-3. 将两个新创建的过滤器拖到&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;区域，将“人员”量度拖到&#x200B;**[!UICONTROL 添加量度]**&#x200B;区域。
+3. 将两个新创建的筛选器拖到&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;区域，将“人员”量度拖到&#x200B;**[!UICONTROL 添加量度]**&#x200B;区域。
 
 生成的维恩图可视化图表将显示数据集中同时包含网站数据和呼叫中心数据的人员数。重叠区域越大，表示成功拼合的人员越多。不重叠的区域则表示仅存在于其中一个数据集而不存在于另外一个数据集的人员。
 
