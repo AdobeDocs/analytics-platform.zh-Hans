@@ -3,7 +3,7 @@ title: 自由格式表中的动态维度项目与静态维度项目
 description: 如何与表中的动态维度项目和静态维度项目交互。
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
 source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '515'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 在自由格式表中，行和列包含各种组件值。这些值可能是动态的（随时间而改变），也可能是静态的（不随时间而改变），具体取决于您要构建的分析。
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 例如，将“浏览器类型”维度拖入表中后，则排名靠前的“浏览器类型”维度项目（例如 Microsoft、Apple、Google 等）会动态返回到表行。如果拖放到列中，则会动态返回排名前 5 的“浏览器类型”维度项目。
 
-动态维度项目具有行过滤器选项，并且&#x200B;**不会**&#x200B;出现锁图标和 X 图标。
+动态维度项目具有行筛选器选项，并且&#x200B;**不会**&#x200B;出现锁图标和 X 图标。
 
 ![](assets/dynamic-items.png)
 
@@ -33,14 +33,14 @@ ht-degree: 100%
 
 静态维度项目不会随时间而改变；它们是自由格式表中始终返回的固定组件。如果您希望始终分析同一项目（无论是特定促销活动还是一周中的特定日期），可首选使用静态维度项目。
 
-每当您手动选择特定组件值（维度、量度、过滤器、日期范围）并将其拖放到表中后，就会生成行或列的静态列表。此外，如果您选择执行以下操作，也可以创建静态维度项：
+每当您手动选择特定组件值（维度、量度、筛选器、日期范围）并将其拖放到表中后，就会生成行或列的静态列表。此外，如果您选择执行以下操作，也可以创建静态维度项：
 
 * 在行中，右键单击并选择[!UICONTROL 只显示选定的行]
 * 在列中，右键单击并选择[!UICONTROL 将项目设为静态项目]
 
 例如，当您将鼠标拖到特定的“浏览器类型”项目（例如 Microsoft 和 Apple）上时，这 2 个特定项目始终会提取到表中。
 
-静态维度项目&#x200B;**没有**&#x200B;行过滤器选项。而锁图标和 X 图标则会显示在每个项目上。单击 X 图标可从表中删除该维度项目。
+静态维度项目&#x200B;**没有**&#x200B;行筛选器选项。而锁图标和 X 图标则会显示在每个项目上。单击 X 图标可从表中删除该维度项目。
 
 ![](assets/static-items.png)
 
@@ -55,4 +55,4 @@ ht-degree: 100%
 动态行和静态行在自由格式表总计行中的行为方式有所不同。默认情况下：
 
 * 动态行是服务器端总和，并且去除了重复量度，例如访问次数和访客
-* 静态行是客户端总和，并且&#x200B;**不会**&#x200B;去除重复量度。要计算服务器端总计行，请将“行”设置更改为&#x200B;**“显示总计”**。[了解更多](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html?lang=zh-Hans)
+* 静态行是客户端总和，并且&#x200B;**不会**&#x200B;去除重复量度。要计算服务器端总计行，请将“行”设置更改为&#x200B;**“显示总计”**。[了解详情](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html?lang=zh-Hans)
