@@ -3,7 +3,7 @@ title: 创建日期范围
 description: 创建要用在报告中的日期范围。
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '436'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 您可以使用以下两种方法中的任一种创建自定义日期范围：
 
@@ -47,8 +47,8 @@ ht-degree: 100%
 
 如果您需要滚动日期范围，可以自定义滚动时间。您可以单独控制开始日期和结束日期的滚动时间。
 
-* **日期开始时**：选择相应日期是在某个时段开始时、结束时开始，还是使用固定日期。
-* **使用的时段**：选择日期范围滚动的频率。您可以将它设为每天、每周、每月、每季度或每年滚动一次。
+* **日期开始时**：选择相应日期是在某个时间段开始时、结束时开始，还是使用固定日期。
+* **使用的时间段**：选择日期范围滚动的频率。您可以将它设为每天、每周、每月、每季度或每年滚动一次。
 * **偏移**：选择日期范围的偏移。您可以添加或减去日、周、月、季度或年。
 
 ## 滚动日期示例
