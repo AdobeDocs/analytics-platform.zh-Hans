@@ -1,27 +1,27 @@
 ---
-description: 在 Analysis Workspace 中对表格进行分页、过滤和排序
-title: 对表格进行分页、过滤和排序
+description: 在 Analysis Workspace 中对表格进行分页、筛选和排序
+title: 对表格进行分页、筛选和排序
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '233'
 ht-degree: 100%
 
 ---
 
-# 对表格进行分页、过滤和排序
+# 对表格进行分页、筛选和排序
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 有关 Analysis Workspace 中的分页、筛选和排序表的概述，请观看此视频教程：
 
 >[!VIDEO](https://video.tv.adobe.com/v/23968)
 
-## 高级过滤选项 {#section_36E92E31442B4EBCB052073590C1F025}
+## 高级筛选选项 {#section_36E92E31442B4EBCB052073590C1F025}
 
-在自由格式表格中，单击维度旁的“过滤器”图标，然后单击“显示高级选项”，则可以使用以下条件进行过滤。****&#x200B;您可以应用多个筛选规则。
+在自由格式表格中，单击维度旁的“筛选器”图标，然后单击“显示高级选项”，则可以使用以下条件进行筛选。****&#x200B;您可以应用多个筛选规则。
 
 * 包含
 * 不包含
