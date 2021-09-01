@@ -3,9 +3,9 @@ title: 计算量度概述
 description: 了解
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
 source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '481'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -13,27 +13,27 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 计算量度和高级计算（或派生）量度是指您可以从现有量度创建的自定义量度。我们的计算量度工具提供了一种高度灵活的方式，可用于生成、管理和组织量度。借助这些工具，营销人员、产品经理和分析人员不必更改您的实施，即可提出有关数据的问题。
 
 您可以
 
-* 创建在报告运行时派生已过滤量度，而不必更改实施。可查看这些量度的历史记录，因为它们基于过滤器。
-* （仅限高级计算量度）根据量度进行过滤。例如，您可以为“新访客”创建一个指标，其中包含首次进行会话的人员计数。
+* 创建在报告运行时派生已筛选量度，而不必更改实施。可查看这些量度的历史记录，因为它们基于筛选器。
+* （仅限高级计算量度）根据量度进行筛选。例如，您可以为“新访客”创建一个指标，其中包含首次进行会话的人员计数。
 * （仅限高级计算指标）包含统计函数，以帮助您更好地描述数据。例如，您可以对报表中的项目数量进行计数，或为每个项目加入标准偏差数。
 
 ## 计算量度与高级计算量度
 
 以下是计算指标和高级计算指标功能的比较：
 
-| Builder 选项 | 计算指标 | 高级计算（派生）指标 |
+| Builder 选项 | 计算量度 | 高级计算（派生）指标 |
 |---|---|---|
 | 格式类型（小数、时间、百分比、货币） | 是 | 是 |
 | 归因更改（默认、线性、参与率等） | 是 | 是 |
 | 量度类型（标准、总数） | 是 | 是 |
 | 基本运算符（加、减、乘、除） | 是 | 是 |
-| 应用过滤器 | 否 | 是 |
+| 应用筛选器 | 否 | 是 |
 | [基本函数（计数、绝对值、平均值等）](/help/components/calc-metrics/cm-functions.md) | 否 | 是 |
 | [高级函数（回归、if/then、t 分数等）](/help/components/calc-metrics/cm-adv-functions.md) | 否 | 是 |
 
@@ -41,9 +41,9 @@ ht-degree: 98%
 
 | 工具 | 功能 |
 |--- |--- |
-| 计算量度生成器 | <ul><li>使用高级分配模型创建计算量度和高级计算量度。</li><li>将内联过滤器添加到量度公式中。</li><li>比较同一报表中的过滤器。例如，比较本地访客与国际访客。</li><li>使用统计函数。</li><li> 提供详细的指标描述（显示其用途，以及何处可以使用，何处不可以使用）。</li><li>将定义复制到新指标中。</li><li>提供内联指标预览。</li><li>设置指标极性，以指示当给定的自定义事件（指标）上升时是有利还是不利。</li><li>标记指标。</li></ul> |
+| 计算量度生成器 | <ul><li>使用高级分配模型创建计算量度和高级计算量度。</li><li>将内联筛选器添加到量度公式中。</li><li>比较同一报表中的筛选器。例如，比较本地访客与国际访客。</li><li>使用统计函数。</li><li> 提供详细的指标描述（显示其用途，以及何处可以使用，何处不可以使用）。</li><li>将定义复制到新指标中。</li><li>提供内联指标预览。</li><li>设置指标极性，以指示当给定的自定义事件（指标）上升时是有利还是不利。</li><li>标记指标。</li></ul> |
 | 计算量度管理器 | <ul><li>与他人共享指标。</li><li>批准和管理指标。</li><li>组织（标记）指标，以方便用户查找。</li><li>删除指标。</li><li>重命名指标。</li></ul> |
-| 适用于计算量度的 API | CJA API集的一部分。 |
+| 适用于计算量度的 API | CJA API 集的一部分。 |
 
 ## CJA 中的计算量度模板
 
