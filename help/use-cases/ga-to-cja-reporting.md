@@ -1,72 +1,71 @@
 ---
-title: 报告Google AnalyticsCustomer Journey Analytics
-description: 在Customer Journey Analytics中显示有关Google Analytics数据的有用报告
-translation-type: tm+mt
-source-git-commit: a4e95424ee304869e76a0532b7240290a3f13418
-workflow-type: tm+mt
+title: 在 Customer Journey Analytics 中就 Google Analytics 数据给出报告
+description: 在 Customer Journey Analytics 中就 Google Analytics 数据给出有价值的报告
+exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
+source-git-commit: 3f14af4ba547e9f6b1dcf98fa01b6752fad115a3
+workflow-type: ht
 source-wordcount: '809'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# 在 Customer Journey Analytics 中就 Google Analytics 数据给出报告
 
-# 报告Google AnalyticsCustomer Journey Analytics
+现在，您已[将 Google Analytics 数据摄取到 Experience Platform 和 Customer Journey Analytics (CJA)](/help/use-cases/ga-to-cja.md)，我们会为您显示给出该数据报告的一些实用场景。
 
-现在，您已将[Google Analytics数据引入Experience Platform和Customer Journey Analytics(CJA)](/help/use-cases/ga-to-cja.md)，我们将向您展示一些对该数据进行报告的有用方案。
+## 将 Web 数据和应用程序数据可视化为组合数据集
 
-## 将Web数据和应用程序数据可视化为组合数据集
-
-此Venn图显示了您网站上(来自您的Google Analytics数据)和移动App（来自您的Firebase数据）和呼叫中心的用户重叠。 您还可以在Web上以及移动应用程序中看到表现最好的产品。 您甚至可以使用计算量度从两者中获取总收入。 请注意，当您查看总收入时，顶级产品如何呈现不同的情况。 如果没有数据集，你永远不会知道“Twill cap”的表现如此出色。
+此 Venn 图显示在您的网站（根据您的 Google Analytics 数据）、移动应用程序（根据您的 Firebase 数据）和呼叫中心中重叠的用户。您还可以看到表现最好的产品 - 不光在 Web 上，而且在移动应用程序上。您甚至可以使用计算量度得到两者收入的总和。您会注意到，当查看合并收入时，表现最好的产品表现不一。没有合并数据集，您永远想不到“Twill cap”表现如此卓著。
 
 ![](assets/combined-datasets.png)
 
-## 确定呼叫原因并减少呼叫量
+## 识别呼叫原因并减少呼叫量
 
-要验证您是否接到了大量呼叫，您可以趋势化我们呼叫中心在过去2个月中所花费的时间。 很容易看到这种增长趋势。 这令人担忧，因为每一分钟您的呼叫中心代表都在打电话，你就会为此付出金钱。 这肯定会影响您的盈利。
+为了验证您接到很多呼叫，您可以查看过去 2 个月我们的呼叫中心所花时间的趋势。增长趋势很明显。这令人担忧，因为您的呼叫中心代表在电话上花的每一分钟都在消耗您的钱。这肯定会影响您的利润。
 
-让我们看看导致呼叫中心呼叫增加的主要原因。 请注意，“已拒绝信用卡”、“删除信用卡”和“损坏的产品”是主要原因。 这已经可以提示如何改进在线体验。 您还可以趋势化这些呼叫原因，并查看哪些因素对整体峰值贡献最大。 “损坏产品”的客户每次呼叫花费的时间超过3分钟，这非常有趣。
+我们来看一下导致呼叫中心来电增多的主要原因是什么。我们注意到，“信用卡被拒”、“删除信用卡”和“产品损坏”是主要原因。这可能暗示应该设法改善在线体验了。您还可以了解到这些呼叫原因的趋势，看看哪些在整体峰值中占比最大。有意思的是，我们看到，称“产品损坏”的客户每次通话时间超过 3 分钟。
 
 ![](assets/call-volume.png)
 
-让我们进一步查看哪些产品导致呼叫中心的大部分呼叫以及有多少客户拨打了这些呼叫。 泡泡图显示，有2万人打电话，花了4小时30分钟，并退回了33套“男士短袖Te”产品。
+我们进一步来看看哪些产品导致的呼叫最多，以及有多少客户打了这类电话。气泡图显示，有 20,000 人打了电话，花了 4 小时 30 多分钟，退回 33 件“男式短袖 T 恤”产品。
 
-我们可以分析这一洞察，并通过在维度“呼叫原因”中拖动来了解这些人返回产品的原因。 如您所见，此产品收到如此多呼叫的原因是“损坏的产品”。 下一步是与质量控制部门联系，了解客户为何收到损坏的T恤。
+我们继续进一步分析，通过拖入维度“呼叫原因”来看看为什么这些人会退货。正如您看到的，这个产品之所以接到这么多电话，是因为“产品损坏”。下一步就是联系质量控制部门，了解客户为什么会收到损坏的 T 恤。
 
 ![](assets/call-reason.png)
 
-现在，让我们看看哪些网页驱动呼叫中心的来电。 这样，您就可以了解网站上表现欠佳的体验所在的位置，并帮助您的产品经理解决这些难题。
+现在，我们来看看哪些网页驱动了呼叫中心的来电。这让您可以了解到网站体验不能令人满意的地方，帮助您的产品经理解决这些挑战。
 
-我们通过
+我们的做法是
 
-* 使用计算量度将数据向下过滤到仅以呼叫中心呼叫结束的会话。
-* 使用CJA的[Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=en#cja-workspace)中的“参与”模型。
+* 使用计算量度筛选数据，只查看最终导致呼叫中心通话的会话。
+* 使用 CJA 的 [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=zh-Hans#cja-workspace) 中的“参与率”模型。
 
-您可以轻松查看哪些页面最频繁地参加以呼叫结束的会话。 您可以看到“购物车”和“结帐信息”页面驱动了大多数呼叫。 由于您还包含了Firebase移动应用程序数据，因此您甚至可以看到生成调用的页面错误和应用程序崩溃。 如果您希望提供出色的Web和移动App体验，这确实是一个重要的数据点。
+您可以轻松地看到哪些页面最常参与以呼叫结束的会话。您可以看到，“购物车”和“结账信息”页面驱动了大部分呼叫。由于您还包含了 Firebase 移动应用程序数据，所以您甚至可以看到生成呼叫的页面错误和应用程序崩溃。如果您想要提供良好的 Web 和移动应用程序体验，这是一个非常重要的数据点。
 
 ![](assets/contributing-pages.png)
 
-最后，使用Analysis Workspace中的同期群表，可以轻松了解用户在访问过网站后通常需要多长时间来呼叫我们的呼叫中心。 这里你可以看到平均3到4周。
+最后，使用 Analysis Workspace 中的队列表，很容易看到用户通常在访问过网站多久后会呼叫我们的呼叫中心。在这里，您可以看到平均时间是 3 至 4 周。
 
 ![](assets/cohort.png)
 
 ## 使用高级营销归因
 
-CJA允许您对跨渠道数据使用复杂的归因模型。 在以下示例中，您可以看到将收入的“最近触摸”、“首次触摸”、“u形”和算法归因应用于“Google Analytics渠道分组”维度的比较。
+CJA 允许您在跨渠道数据上使用复杂的归因模型。在下面的示例中，您可以看到应用最近联系、首次联系、U 形和收入算法归因与 Google Analytics 渠道分组维度的比较。
 
 ![](assets/mktg-attribution.png)
 
-使用计算量度，您可以将该归因应用于您的Web收入、移动App收入，甚至删除产品回报。 因此，您可以看到每个营销渠道的真实净收入。
+使用计算量度，您可以将该归因应用于 Web 收入、移动应用程序收入，甚至可以删除产品退货。结果，您可以看到每个营销渠道的真实净收入。
 
 ![](assets/calc-metric.png)
 
-Attribution IQ还可让您轻松筛选数据。 您只能针对特定的用户集查看归因，如使用多个设备的用户。
+Attribution IQ 还让您能够轻松筛选数据。您可以看到仅针对特定用户集的归因，例如那些使用多个设备的用户。
 
 ![](assets/filter.png)
 
-最后，您还可以将Web和App收入归因于您的Google广告内容。 您会注意到，我们的在线Google Ads驱动的移动App比Web带来的收入要多。 通过按网络和App收入对广告进行排序，您可以获得与您不同的谷歌广告效果。
+最后，您还可以将您的 Web 和应用程序收入归因于您的 Google 广告内容。您会发现，从受到我们的在线 Google 广告驱动的移动应用程序获得的收入比从 Web 获得的多。通过按 Web 和应用程序收入排序广告，您对于表现最好的 Google 广告的认识会有很大不同。
 
 ![](assets/google-ad.png)
 
-如果没有CJA，您就无法知道您的在线广告对在您的移动App上购买的产品有任何影响。 现在您可以看到，与仅Web相比，Google Ads的移动应用程序收入额增加了1.4万美元 — 5万美元。
+如果没有 CJA，您可能无法知道您的在线广告对于通过您的移动应用程序购买的产品有怎样的影响。现在，您可以看到单与 Web 相比，来自 Google 广告的移动应用程序收入多出 5,000-1.4 万美元。
 
 ![](assets/google-ad2.png)
