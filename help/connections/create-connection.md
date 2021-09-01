@@ -3,9 +3,9 @@ title: 创建连接
 description: 描述如何在 Customer Journey Analytics 中创建与 Platform 数据集的连接。
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 source-git-commit: 4933b0393ddb985ad0da7a572e67efb3e77381b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1980'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -13,19 +13,19 @@ ht-degree: 95%
 
 通过连接，您可以将源自 [!DNL Adobe Experience Platform] 的数据集集成到[!UICONTROL 工作区]中。为了报告 [!DNL Experience Platform] 数据集，您必须首先在 [!DNL Experience Platform] 和[!UICONTROL 工作区]中的数据集之间建立连接。
 
-单击[此处](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=en)，查看视频概述。
+单击[此处](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=zh-Hans)，查看视频概述。
 
 ## 所需权限
 
-要创建CJA连接，您需要在[Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html)中拥有以下权限：
+要创建 CJA 连接，您需要在 [Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) 中拥有下列权限。
 
-Adobe Experience Platform:
+Adobe Experience Platform：
 * 数据建模：查看架构，管理架构
 * 数据管理：查看数据集，管理数据集
 * 数据摄取：管理源
 
 Customer Journey Analytics
-* 产品管理员访问权限
+* 产品管理员访问
 
 >[!IMPORTANT]
 >
@@ -33,9 +33,9 @@ Customer Journey Analytics
 
 ## 选择沙盒和数据集
 
-1. 转到[https://analytics.adobe.com](https://analytics.adobe.com)并使用您的Adobe ID登录。
+1. 转至[https://analytics.adobe.com](https://analytics.adobe.com)并使用您的 Adobe ID 登录。
 
-1. 单击[!DNL Customer Journey Analytics]图标。
+1. 单击 [!DNL Customer Journey Analytics] 图标。
 
 1. 单击&#x200B;**[!UICONTROL 连接]**&#x200B;选项卡。
 
@@ -55,7 +55,7 @@ Customer Journey Analytics
 
    （如果您有许多数据集可供选择，可以使用数据集列表上方的&#x200B;**[!UICONTROL 搜索数据集]**&#x200B;搜索栏搜索正确的数据集。）
 
-## 2.配置数据集
+## 2. 配置数据集
 
 在右侧，您现在可以配置已添加的数据集。
 
@@ -98,13 +98,13 @@ Customer Journey Analytics
 | 选项 | 描述 |
 |---|---|
 | [!UICONTROL 使用主 ID 命名空间] | 它会指示 CJA 逐行在“身份映射”中查找标记了“primary=true”属性的身份，并将该身份用作相应行的人员 ID。这意味着，它是 Experience Platform 中用于分区时使用的主密钥。此外，它还是用作 CJA 访客 ID 的主要候选项（取决于 CJA 连接中数据集的配置方式）。 |
-| [!UICONTROL 命名空间] | （此选项仅适用于未使用主 ID 命名空间的情况。）身份命名空间是 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html) 的组件，充当与身份相关的上下文指示器。如果指定了命名空间，CJA 会在每行的“身份映射”中搜索此命名空间密钥，并将该命名空间下的身份用作该行的人员 ID。请注意，由于 CJA 无法对所有行执行全方位数据集扫描以确定哪些命名空间实际存在，因此下拉列表中会列出所有可能的命名空间。您需要知道数据中指定了哪些命名空间；这些信息无法自动检测。 |
+| [!UICONTROL 命名空间] | （此选项仅适用于未使用主 ID 命名空间的情况。）身份命名空间是 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=zh-Hans) 的组件，充当与身份相关的上下文指示器。如果指定了命名空间，CJA 会在每行的“身份映射”中搜索此命名空间密钥，并将该命名空间下的身份用作该行的人员 ID。请注意，由于 CJA 无法对所有行执行全方位数据集扫描以确定哪些命名空间实际存在，因此下拉列表中会列出所有可能的命名空间。您需要知道数据中指定了哪些命名空间；这些信息无法自动检测。 |
 
 ### 身份映射边缘情况
 
 下表显示了当存在边缘情况时两种配置方案及其处理方式：
 
-| 方案 | “身份映射”中不存在 ID | 没有 ID 标记为主 ID | 多个 ID 均标记为主 ID | 单个 ID 标记为主 ID | 一个 ID 标记为主 ID 的无效命名空间 |
+| 选项 | “身份映射”中不存在 ID | 没有 ID 标记为主 ID | 多个 ID 均标记为主 ID | 单个 ID 标记为主 ID | 一个 ID 标记为主 ID 的无效命名空间 |
 |---|---|---|---|---|---|
 | **选中“使用主 ID 命名空间”** | 该行将被 CJA 删除。 | 该行将被 CJA 删除，因为未指定主 ID。 | 所有命名空间下标记为主 ID 的 ID 都将被提取到列表中，随后，这些 ID 将按字母顺序排序；根据这种新的排序方式，排在第一个命名空间中的首个 ID 将被用作人员 ID。 | 标记为主 ID 的单个 ID 将被用作人员 ID。 | 即便命名空间可能无效（未出现在 AEP 中），CJA 仍会将该命名空间下的主 ID 用作人员 ID。 |
 | **已选择特定的身份映射命名空间** | 该行将被 CJA 删除。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。（由于在创建连接时，只能选择有效的命名空间，因此无效的命名空间/ID 不可能用作人员 ID） |
@@ -121,7 +121,7 @@ Customer Journey Analytics
    | [!UICONTROL 描述] | 添加更多详细信息以将此连接与其他连接区分开来。 |
    | [!UICONTROL 数据集] | 此连接中包含的数据集。 |
    | [!UICONTROL 从今天开始自动导入此连接中的所有新数据集。] | 如果要创建持续连接，请选择此选项，以便要添加到此连接中数据集的任何新数据批次会自动流入 [!UICONTROL 工作区] 中。 |
-   | [!UICONTROL 导入所有现有数据] | 当选择此选项并保存连接时，将会从 [!DNL Experience Platform] 中导入或回填此连接中所有数据集的所有现有（历史）数据。未来，还将自动导入添加到这个已保存连接的任何新数据集的所有现有历史数据。另请参阅下面的[回填历史数据](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data)。<br>**请注意，保存此连接后，无法更改此设置。** |
+   | [!UICONTROL 导入所有现有数据] | 当选择此选项并保存连接时，将会从 [!DNL Experience Platform] 中导入或回填此连接中所有数据集的所有现有（历史）数据。未来，还将自动导入添加到这个已保存连接的任何新数据集的所有现有历史数据。另请参阅下面的[回填历史数据](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans#backfill-historical-data)。<br>**请注意，保存此连接后，无法更改此设置。** |
    | [!UICONTROL 平均每日事件数] | 您需要为连接中的所有数据集指定要导入的平均每日事件数（包括新数据&#x200B;**和**&#x200B;回填数据）。从下拉菜单中选择一个选项，以便 Adobe 能为此数据分配足够的空间。<br>如果您不知道贵公司要导入的平均每日事件数，则可以在 [Adobe Experience Platform 查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans)中执行简单的 SQL 查询以查明该数值。<br>请参阅下面的“计算平均每日事件数”。 |
 
 1. 单击&#x200B;**[!UICONTROL 保存和创建数据视图]**。相关文档，请参阅[创建数据视图](/help/data-views/create-dataview.md)。
@@ -140,7 +140,7 @@ Customer Journey Analytics
 
 必须对连接中的每个数据集都进行此项计算。
 
-1. 转到 [Adobe Experience Platform 查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html)并创建新查询。
+1. 转到 [Adobe Experience Platform 查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans)并创建新查询。
 
 1. 创建的查询将如下所示：<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
