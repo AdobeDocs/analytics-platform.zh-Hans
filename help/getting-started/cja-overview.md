@@ -11,7 +11,7 @@ ht-degree: 99%
 
 # Customer Journey Analytics 概述
 
-Customer Journey Analytics 是一项 Analytics 功能，让您可以运用 Analysis Workspace 的强大功能处理来自 Adobe Experience Platform 的数据。它可以划分、过滤、查询和可视化数年积累的有价值的数据，并结合 Platform 的功能来保存各种数据架构和类型。使用&#x200B;**体验数据模型 (XDM)**，可以采用统一的方式来表示和组织数据，以便进行数据合并和分析。**Experience 查询**&#x200B;允许您使用 SQL 兼容工具和框架来查询和处理所有数据。
+Customer Journey Analytics 是一项 Analytics 功能，让您可以运用 Analysis Workspace 的强大功能处理来自 Adobe Experience Platform 的数据。它可以划分、筛选、查询和可视化数年积累的有价值的数据，并结合 Platform 的功能来保存各种数据架构和类型。使用&#x200B;**体验数据模型 (XDM)**，可以采用统一的方式来表示和组织数据，以便进行数据合并和分析。**Experience 查询**&#x200B;允许您使用 SQL 兼容工具和框架来查询和处理所有数据。
 
 ## 比较 CJA 与传统 Adobe Analytics
 
@@ -54,7 +54,7 @@ Customer Journey Analytics 的初始版本包括 Analysis Workspace 中的许多
 
 * 若要访问 Customer Journey Analytics 或建立连接，您需要作为管理员，添加在 [Admin Console](https://adminconsole.adobe.com/enterprise/) 的 **Customer Journey Analytics 产品**&#x200B;中。产品管理员享有以下权限：
    * 创建/更新/删除连接或数据视图
-   * 更新/删除由其他用户创建的项目、过滤器、计算量度或过滤器
+   * 更新/删除由其他用户创建的项目、筛选器、计算量度或筛选器
    * 将 Workspace 项目共享给所有用户
 * 仅作为 Customer Journey Analytics 的产品管理员，并不足以创建、更新或删除连接。要创建与 Experience Platform 数据集的连接，您还需要取得 Experience Platform 权限。具体而言，您必须属于授予您以下权限的 **Experience Platform 产品用户档案**：
    * 查看架构
@@ -70,13 +70,13 @@ Customer Journey Analytics 的初始版本包括 Analysis Workspace 中的许多
 
 ### 用户访问
 
-Customer Journey Analytics 中的非产品管理员（用户）无法查看数据视图或连接，但可以创建过滤器、项目和计算量度。
+Customer Journey Analytics 中的非产品管理员（用户）无法查看数据视图或连接，但可以创建筛选器、项目和计算量度。
 
 ## 术语更新
 
 与传统的 Adobe Analytics 相比，为了符合行业标准，CJA 中的一些功能已重新命名。一些更新的术语包括：
 
-* “区段”现在称为“过滤器”。
+* “区段”现在称为“筛选器”。
 * “虚拟报告包”现在称为“数据视图”。
 * “分类”现在称为“查找数据集”。
 * “客户属性”现在称为“用户档案数据集”。

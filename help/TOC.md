@@ -12,8 +12,8 @@ breadcrumb-title: Customer Journey Analytics 指南
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
 source-git-commit: 3839639858edbd019ef467ca5fb1791f48864100
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 93%
+source-wordcount: '450'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 93%
    + [快速入门](getting-started/cja-getting-started.md)
    + [常见问题解答](getting-started/cja-faq.md)
    + [Customer Journey Analytics 功能支持](getting-started/cja-aa.md)
-   + [删除含义](getting-started/cja-deletion.md)
+   + [删除后果](getting-started/cja-deletion.md)
    + [CJA 术语表](getting-started/cja-glossary.md)
 + 连接 {#cja-connections}
    + [创建连接](connections/create-connection.md)
@@ -42,7 +42,7 @@ ht-degree: 93%
    + [创建数据视图](data-views/create-dataview.md)
    + [数据视图用例](data-views/data-views-usecases.md)
    + [持久性](data-views/persistence.md)
-+ 工作区项目 {#cja-workspace}
++ Workspace 项目 {#cja-workspace}
    + [Analysis Workspace 概述](analysis-workspace/home.md)
    + [执行基本分析](analysis-workspace/perform-basic-analysis.md)
    + [执行高级分析](analysis-workspace/perform-adv-analysis.md)
@@ -71,7 +71,7 @@ ht-degree: 93%
          + [流失概述](analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [配置流失可视化图表](analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [维度间流失](analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
-         + [在流失分析中应用过滤器](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
+         + [在流失分析中应用筛选器](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + 流量 {#flow}
          + [流量概述](analysis-workspace/visualizations/c-flow/flow.md)
          + [配置流量可视化图表](analysis-workspace/visualizations/c-flow/creating-flow-report.md)
@@ -93,9 +93,9 @@ ht-degree: 93%
       + [面板概述](analysis-workspace/c-panels/panels.md)
       + [归因面板](analysis-workspace/c-panels/attribution.md)
       + [空白面板](analysis-workspace/c-panels/blank-panel.md)
-      + [自由格式面板](analysis-workspace/c-panels/freeform-panel.md)
+      + [“自由格式”面板](analysis-workspace/c-panels/freeform-panel.md)
       + [“快速分析”面板](analysis-workspace/c-panels/quickinsight.md)
-   + 组织、共享和计划项目{#curate-share}
+   + 策划、共享和计划项目 {#curate-share}
       + [“共享”菜单](analysis-workspace/curate-share/send-schedule-files.md)
       + [策划项目](analysis-workspace/curate-share/curate.md)
       + [共享项目](analysis-workspace/curate-share/share-projects.md)
@@ -130,12 +130,12 @@ ht-degree: 93%
       + [预览维度](components/dimensions/view-dimensions.md)
       + [划分维度](components/dimensions/t-breakdown-fa.md)
       + [时间划分维度](components/dimensions/time-parting-dimensions.md)
-      + [Dimension基数很高](components/dimensions/high-cardinality.md)
+      + [具有很高基数的维度](components/dimensions/high-cardinality.md)
    + [量度](components/apply-create-metrics.md)
-   + 过滤器 {#cja-filters}
-      + [过滤器概述](components/filters/filters-overview.md)
-      + [创建过滤器](components/filters/create-filters.md)
-      + [管理过滤器](components/filters/manage-filters.md)
+   + 筛选器 {#cja-filters}
+      + [筛选器概述](components/filters/filters-overview.md)
+      + [创建筛选器](components/filters/create-filters.md)
+      + [管理筛选器](components/filters/manage-filters.md)
    + 计算量度 {#cja-calcmetrics}
       + [计算量度概述](components/calc-metrics/calc-metr-overview.md)
       + [创建计算量度](components/calc-metrics/create.md)
@@ -157,8 +157,8 @@ ht-degree: 93%
    + [摄取数据用例](use-cases/data-ingestion.md)
    + [使用“营销渠道”维度](use-cases/marketing-channels.md)
    + [向数据集添加全局查找](use-cases/global-lookups.md)
-   + [将Google Analytics数据摄取到Adobe Experience Platform](use-cases/ga-to-cja.md)
-   + [在CJA中报告Google Analytics数据](use-cases/ga-to-cja-reporting.md)
+   + [将 Google Analytics 数据摄取到 Adobe Experience Platform](use-cases/ga-to-cja.md)
+   + [在 CJA 中给出 Google Analytics 数据报告](use-cases/ga-to-cja-reporting.md)
 + Analytics 功能板{#cja-dashboards}
    + [Analytics 功能板 — 概述](mobile-app/home.md)
    + [策划人指南](mobile-app/curator.md)
