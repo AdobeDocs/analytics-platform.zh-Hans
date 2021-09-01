@@ -4,9 +4,9 @@ title: Analysis Workspace 概述
 description: Analysis Workspace 功能概览
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '461'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans#analysis-workspace) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans#analysis-workspace) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace 是一款通过浏览器即可使用的灵活工具，可让您快速构建和共享分析。您可以使用拖放界面进行分析、添加可视化图表以便直观地呈现数据、梳理数据集、与组织中的任何人共享项目并设置共享频率与时间。
 
@@ -22,9 +22,9 @@ Analysis Workspace 是一款通过浏览器即可使用的灵活工具，可让�
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
 
-## 登录Customer Journey Analytics {#login}
+## 登录 Customer Journey Analytics {#login}
 
-要开始使用Analysis Workspace，请转到[experience.adobe.com/analytics](https://experience.adobe.com/analytics)登录Customer Journey Analytics。 如果此前未选择特定项目，您将登录到 Workspace 项目列表主页。
+要开始使用 Analysis Workspace，请前往 [experience.adobe.com/analytics](https://experience.adobe.com/analytics) 登录 Customer Journey Analytics。如果此前未选择特定项目，您将登录到 Workspace 项目列表主页。
 
 ![](assets/login-analytics.png)
 
@@ -36,7 +36,7 @@ Analysis Workspace 是一款通过浏览器即可使用的灵活工具，可让�
 
 ## 创建新项目 {#new-project}
 
-完成教程后，您就可以开始构建您的第一个项目。**“新项目模式”**&#x200B;提供了多种不同选项来开始您的分析。您可以选择从空白项目或[空白移动记分卡](/help/mobile-app/curator.md)开始，具体取决于您计划从浏览器还是Customer Journey Analytics功能板移动应用程序共享您的分析。
+完成教程后，您就可以开始构建您的第一个项目。**“新项目模式”**&#x200B;提供了多种不同选项来开始您的分析。您可以选择从空白项目或[空白移动记分卡](/help/mobile-app/curator.md)开始，具体取决于您计划从浏览器还是从 Customer Journey Analytics 功能板移动应用程序共享您的分析。
 
 ![](assets/create-new-project.png)
 
@@ -46,13 +46,13 @@ Analysis Workspace 是一款通过浏览器即可使用的灵活工具，可让�
 
 ### 组件
 
-**组件**&#x200B;包含维度、量度、过滤器或日期范围，所有这些组件都可以合并到一个&#x200B;**[!UICONTROL 自由格式表]**&#x200B;中，以便开始回答您的业务问题。请务必先熟悉每个[组件类型](/help/components/overview.md)，然后再开始投入分析。掌握组件术语后，即可开始拖放至&#x200B;**[!UICONTROL 自由格式表]**&#x200B;以[构建分析](/help/analysis-workspace/build-workspace-project/freeform-overview.md)。
+**组件**&#x200B;包含维度、量度、筛选器或日期范围，所有这些组件都可以合并到一个&#x200B;**[!UICONTROL 自由格式表]**&#x200B;中，以便开始回答您的业务问题。请务必先熟悉每个[组件类型](/help/components/overview.md)，然后再开始投入分析。掌握组件术语后，即可开始拖放至&#x200B;**[!UICONTROL 自由格式表]**&#x200B;以[构建分析](/help/analysis-workspace/build-workspace-project/freeform-overview.md)。
 
 ![](assets/build-components.png)
 
 ### 可视化图表
 
-接下来，将&#x200B;**“可视化图表”**（例如条形图或折线图）添加到数据的顶部，以便更加直观地将数据呈现出来。在最左侧的边栏中，选择中间的&#x200B;**[!UICONTROL 可视化]**&#x200B;图标，以查看所有可用的[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)。
+接下来，将&#x200B;**“可视化图表”**（例如条形图或折线图）添加到数据的顶部，以便更加直观地将数据呈现出来。在最左侧的边栏中，选择中间的&#x200B;**[!UICONTROL 可视化图表]**&#x200B;图标，以查看所有可用的[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)。
 
 ![](assets/build-visualizations.png)
 
