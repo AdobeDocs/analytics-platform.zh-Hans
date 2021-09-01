@@ -3,9 +3,9 @@ title: (B2B) 将帐户级别的数据作为查询数据集进行添加
 description: 了解如何将基于帐户的数据作为查询数据集添加到 CJA
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '926'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 96%
 
 所有这些都可通过将帐户级别信息作为[查询](/help/getting-started/cja-glossary.md)数据集引入来实现。
 
-首先，在 Adobe Experience Platform 中创建一个查询架构，然后通过引入基于 .csv 的帐户级别数据来创建查询表数据集。接着，继续在 Customer Journey Analytics 中创建一个连接（CJA0，可合并不同数据集，包括您创建的查询数据集）。您随后将创建一个数据视图，并最终能够在工作区中利用所有这些数据。
+首先，在 Adobe Experience Platform 中创建一个查询架构，然后通过引入基于 .csv 的帐户级别数据来创建查询表数据集。接着，继续在 Customer Journey Analytics 中创建一个连接（CJA0，可合并不同数据集，包括您创建的查询数据集）。您随后创建一个数据视图，最后能够在 Workspace 中利用所有这些数据。
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ ht-degree: 96%
 
 ## 1. 创建查询模式 (Experience Platform)
 
-自行创建[查询](/help/getting-started/cja-glossary.md)表模式时，应当确保所用的数据集在 CJA 中具有正确的设置（记录类型）并且可用。最佳做法是：[创建一个自定义模式类](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#create-new-class)（将其命名为“Lookup”），并清空所有元素，以便可重复用于所有查询表。
+自行创建[查询](/help/getting-started/cja-glossary.md)表模式时，应当确保所用的数据集在 CJA 中具有正确的设置（记录类型）并且可用。最佳做法是：[创建一个自定义模式类](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans#create-new-class)（将其命名为“Lookup”），并清空所有元素，以便可重复用于所有查询表。
 
 ![](assets/create-new-class.png)
 
@@ -53,7 +53,7 @@ ht-degree: 96%
 
 ## 3. 将数据引入 Experience Platform
 
-如果您使用的是 CSV 文件，那么关于如何[将 CSV 文件映射到 XDM 模式](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html)的说明应该对您会有帮助。
+如果您使用的是 CSV 文件，那么关于如何[将 CSV 文件映射到 XDM 模式](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=zh-Hans)的说明应该对您会有帮助。
 
 另外，还可以使用[其他方法](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans)。
 
