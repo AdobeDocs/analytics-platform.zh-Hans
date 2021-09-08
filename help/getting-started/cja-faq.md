@@ -2,10 +2,10 @@
 title: Customer Journey Analytics 常见问题解答
 description: Customer Journey Analytics — 常见问题解答。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: ht
-source-wordcount: '1360'
-ht-degree: 100%
+source-git-commit: e605682ee4df06589ec343a27941f5d6a5928d7d
+workflow-type: tm+mt
+source-wordcount: '1569'
+ht-degree: 87%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 | 问题 | 回答 |
 | --- | --- |
 | [!UICONTROL Customer Journey Analytics] 是否可以跨设备或跨数据集进行“拼合”？ | 支持。[!UICONTROL Customer Journey Analytics] 具有一个称为[跨渠道分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=zh-Hans) (CCA) 的拼合解决方案，该方案允许您重新键入数据集的人员 ID，实现多个数据集的无缝组合。 |
-| 是否支持从匿名行为到实名行为的拼合？ | 支持。[跨渠道分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=zh-Hans)查看来自已通过和未通过身份验证的会话的用户数据来生成拼合 ID。 |
+| 是否支持从匿名行为到实名行为的拼合？ | 支持。[跨渠道分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html)查看来自已通过和未通过身份验证的会话的用户数据来生成拼合 ID。 |
 | CCA 中如何进行“重放”？ | CCA 根据它所掌握的唯一标识符“重放”数据。重放导致新设备连接并被拼合。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=zh-Hans#step-1%3A-live-stitching) |
 | 如何在 CCA 中拼合历史数据（回填）？ | 首次启用时，Adobe 提供追溯到上月初（最多 60 天）的拼合数据的回填。为实现此回填，当时的未拼合数据中必须存在过渡 ID。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=zh-Hans#enable-cross-channel-analytics) |
 
@@ -75,3 +75,16 @@ ht-degree: 100%
 | **批次被摄取**&#x200B;到 [!UICONTROL Customer Journey Analytics] 的同时删除批次 | 如果数据集中只有一个批次，则该批次中只会有部分数据或没有任何数据显示在 [!UICONTROL Customer Journey Analytics] 中。系统将回滚该摄取操作。例如，如果数据集中共有 5 个批次，且在删除该数据集时已摄取其中 3 个批次，那么这 3 个批次中的数据将显示在 [!UICONTROL Customer Journey Analytics] 中。 |
 | 删除 [!UICONTROL Customer Journey Analytics] 中的连接 | 将显示一条错误消息，指示：<ul><li>为已删除的连接创建的所有数据视图都将不再起作用。</li><li> 同样地，任何依赖于已删除连接中的数据视图的工作区项目都将停止运行。</li></ul> |
 | 删除 [!UICONTROL Customer Journey Analytics] 中的数据视图 | 将显示一条错误消息，指示所有依赖于这个已删除数据视图的 Workspace 项目都将停止运行。 |
+
+## 6.在CJA中合并报表包时的注意事项
+
+如果您计划通过[Adobe Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans)摄取Adobe Analytics数据，请在合并2个或多个Adobe Analytics报表包时考虑这些后果。
+
+| 问题 | 注意事项 |
+| --- | --- |
+| 变量 | 变量（如[!UICONTROL eVars]）可能无法在报表包中排列。 例如，报表包1中的eVar1可能指向&#x200B;**[!UICONTROL Page]**。 在报表包2中，eVar1可能指向&#x200B;**[!UICONTROL 内部营销活动]**，从而导致报告混合且不准确。 |
+|  会话和  句点 | 报表包中的重复数据会被删除。 因此，计数可能不匹配。 |
+| 量度去重 | 如果多个行具有相同的交易ID（例如，[!UICONTROL 购买ID]），则会删除量度的重复实例（例如，[!UICONTROL Orders]）。 这可防止关键量度计数过多。 因此，诸如[!UICONTROL Orders]之类的量度可能不会在报表包之间进行累加。 |
+| 货币 | CJA尚不支持货币换算。 如果您尝试合并的报表包使用不同的基本货币，则可能会出现问题。 |
+| [!UICONTROL 持久性] | [](/help/data-views/persistence.md) 持久性会跨报表包扩展，这会 [!UICONTROL 影响过滤器]、 [!UICONTROL 归因]等。数字可能无法正确加总。 |
+| [!UICONTROL 分类] |  合并报表包时，分类不会自动删除重复项。将多个分类文件合并到单个[!UICONTROL lookup]数据集时，可能会遇到问题。 |
