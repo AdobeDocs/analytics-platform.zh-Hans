@@ -2,14 +2,14 @@
 title: 如何在 Customer Journey Analytics 中创建新数据视图。
 description: 描述创建新数据视图所需的所有设置。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 5d2750001cc9a5d12305741e99fccc3625432996
-workflow-type: ht
-source-wordcount: '3069'
-ht-degree: 100%
+source-git-commit: fb8de8c65b44fd57ca5da6d993bb02b8574f7f47
+workflow-type: tm+mt
+source-wordcount: '3076'
+ht-degree: 95%
 
 ---
 
-# 创建新数据视图
+# 创建数据视图
 
 创建数据视图涉及根据架构元素创建量度和维度或利用标准组件。创建量度或维度可为您提供极大的灵活性。之前的假设是，如果您在 Adobe Experience Platform 中有数据集，则将字符串字段用作维度，并将数值字段用作量度。若要更改其中任何这些字段，您必须在 Platform 中修改您的架构。数据视图 UI 现在允许[以更自由格式定义量度和维度](/help/data-views/data-views.md)。如需更多用例，请参阅[数据视图用例](/help/data-views/data-views-usecases.md)。
 
@@ -123,9 +123,13 @@ ht-degree: 100%
 
 | 设置 | 描述/用例 |
 | --- | --- |
-| [!UICONTROL 清点值数] | 对于仅 Boolean 量度，此设置允许您指定是[!UICONTROL 统计 True]、[!UICONTROL 统计 False] 还是[!UICONTROL 统计 True 或 False] 作为量度值。默认为[!UICONTROL 统计 True]。这为您提供了量度的实际值，例如，如果订单值为 50，则为“50”。 |
+| [!UICONTROL 清点值数] | 对于仅 Boolean 量度，此设置允许您指定是[!UICONTROL 统计 True]、[!UICONTROL 统计 False] 还是[!UICONTROL 统计 True 或 False] 作为量度值。默认为[!UICONTROL 统计 True]。这会为您提供量度的实际值，如顺序值为50时的“50”。 |
 | [!UICONTROL 清点实例数] | 用于指定用作量度的数值或日期类型字段是否应统计设置该字段的次数（而非值本身）。<br> 如果您要合计数值字段的实例数并想只合计字段的&#x200B;*设置*&#x200B;次数（而非其中的实际值）。<br>这用于根据[!UICONTROL 收入]字段创建[!UICONTROL 订单]量度，例如：如果设置了收入，那么我们想统计 1 个订单（而非数值收入金额）。 |
-| [!UICONTROL 小写] | *新* - 对于“字符串”类型的维度。此设置让您可以控制 Customer Journey Analytics 是否将维度值视为区分大小写。它允许对具有相同值但大小写不一样的行进行重复数据删除。如果您选中&#x200B;**[!UICONTROL 小写]**，则具有相同值的维度的所有实例都将报告为小写。此屏幕快照显示当您&#x200B;**不选中**[!UICONTROL 小写]复选框与&#x200B;**选中**&#x200B;时的情形。在左侧表格中，请注意“liverpool”、“Liverpool”和“LIVERPOOL”如何在报告中生成三个单独的行项目。在右侧表格中，对那些相同的值进行了重复数据删除，并归入一个行项目：<br>![区分大小写维度](assets/case-sens-workspace.png) |
+| [!UICONTROL 小写] | 与字符串维度一起使用。 删除具有相同值但大小写不同的重复行。 如果启用，则具有相同值的维度的所有实例都将报告为小写。 例如，您的数据集包含字符串维度中的值`"liverpool"`、`"Liverpool"`和`"LIVERPOOL"`。 如果启用了[!UICONTROL 小写]，则所有三个值都将合并到`"liverpool"`中。 如果禁用，则所有三个值都将被视为不同的值：<br>![区分大小写的维度](assets/case-sens-workspace.png)<br> |
+
+>[!NOTE]
+>
+>如果对查询数据集维度启用[!UICONTROL 小写]，则同一标识符可能存在多个查询值。 如果发生此冲突，CJA将使用第一个ASCII整理值（大写值位于小写值之前）。 Adobe建议在启用[!UICONTROL Lower case]时，不要使用包含相同值的查询数据集。
 
 ### 配置[!UICONTROL 无值选项]设置
 
