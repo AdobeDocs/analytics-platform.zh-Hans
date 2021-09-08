@@ -3,9 +3,9 @@ title: Customer Journey Analytics 概述
 description: 了解如何通过 Customer Journey Analytics 来使用 Analysis Workspace 处理来自 Experience Platform 的数据。
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 source-git-commit: fa0033202650f17acd275f1050565285c1464f53
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1255'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ Customer Journey Analytics 是一项 Analytics 功能，让您可以运用 Analy
 
 ## 比较 CJA 与传统 Adobe Analytics
 
-Customer Journey Analytics 通过提供易于使用的跨渠道分析功能和消除 Adobe Analytics 先前版本中的限制，扩展了 Analytics 的适用范围。一些显着改进的功能包括：
+Customer Journey Analytics 通过提供易于使用的跨渠道分析功能和消除 Adobe Analytics 先前版本中的限制，扩展了 Analytics 的适用范围。一些显著改进的功能包括：
 
 * **无限量的变量和事件**：eVar、prop 和事件的概念已不复存在。数据主要侧重于维度和量度。数据集可以拥有无限量的唯一维度和量度。
 * **无限唯一值**：Adobe Experience Platform 不受任何特有限制的约束。
