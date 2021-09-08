@@ -11,9 +11,9 @@ user-guide-description: 本指南提供 Customer Journey Analytics 自助式帮�
 breadcrumb-title: Customer Journey Analytics 指南
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
 source-git-commit: 3839639858edbd019ef467ca5fb1791f48864100
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '450'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
