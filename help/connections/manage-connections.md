@@ -2,10 +2,11 @@
 title: 管理连接
 description: 描述如何在 Customer Journey Analytics (CJA) 中管理与 Experience Platform 数据集的连接。
 mini-toc-levels: 3
-source-git-commit: 1daac64168e656ed1145dac4c34d3df52d155e35
-workflow-type: ht
+exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
+source-git-commit: b0e07ca9533a2d53c916c6db31acaccbd78a41a3
+workflow-type: tm+mt
 source-wordcount: '1445'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 100%
 * 它让您能够发现因错误配置&#x200B;**导致的数据不一致**。您是否丢失了行？如果是，那么丢失了哪些行？为什么？您是否错误配置了连接并因此导致 CJA 中数据丢失？
 
 >[!NOTE]
-> 此功能将在 2021 年 8 月 10 日正式发布。
+> 此功能将于2021年9月20日正式提供。
 
 ## 连接管理器 {#connections-manager}
 
@@ -102,11 +103,11 @@ ht-degree: 100%
 | **连接层的右侧边栏** |  |
 | [!UICONTROL 刷新] | 刷新连接以便反映最近添加的记录。 |
 | [!UICONTROL 删除] | 删除此连接。 |
-| [!UICONTROL 创建数据视图] | 基于此连接创建新的数据视图。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=zh-Hans) |
+| [!UICONTROL 创建数据视图] | 基于此连接创建新的数据视图。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en) |
 | [!UICONTROL 连接名称] | 显示好记的连接名称。 |
 | [!UICONTROL 连接说明] | 显示完整描述此连接目的的更详细的说明。 |
 | [!UICONTROL 人员 ID] | 在 Experience Platform 中显示在数据集架构中定义的身份。这是您在创建连接期间选择的[!UICONTROL 人员 ID]。如果您创建的连接包含具有不同 ID 的数据集，则报告中会反映这一点。要真正合并数据集，需要使用相同的[!UICONTROL 人员 ID]。 |
-| [!UICONTROL 沙盒] | 此连接从中获取其数据集的 [Adobe Experience Platform 沙盒](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=zh-Hans)。这是您在首次创建连接时选择的沙盒。不能更改。 |
+| [!UICONTROL 沙盒] | 此连接从中获取其数据集的 [Adobe Experience Platform 沙盒](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en)。这是您在首次创建连接时选择的沙盒。不能更改。 |
 | [!UICONTROL 连接 ID] | 此 ID 是系统在 Adobe Experience Platform 中生成的。 |
 | [!UICONTROL IMS 组织 ID] | 与您的预配 Experience Cloud 公司关联的[组织 ID](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans)。以前称为“登录公司”。 |
 | [!UICONTROL 使用连接的数据视图] | 列出使用此连接的所有数据视图。 |
@@ -119,7 +120,7 @@ ht-degree: 100%
 | [!UICONTROL 跳过记录错误] | 这里指出跳过记录的原因。可能包括丢失时间戳、丢失人员 ID 等。 |
 | [!UICONTROL 已摄取批次] | 有多少数据批次添加到此数据集。 |
 | [!UICONTROL 上次添加] | 添加最后批次的时间。 |
-| [!UICONTROL 数据集类型] | [!UICONTROL 事件]、[!UICONTROL 查找]或[!UICONTROL 档案]。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans#configure-dataset) |
+| [!UICONTROL 数据集类型] | [!UICONTROL 事件]、[!UICONTROL 查找]或[!UICONTROL 档案]。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
 | [!UICONTROL 架构] | 此数据集所基于的 Adobe Experience Platform 架构。 |
 | [!UICONTROL 数据集 ID] | 此 ID 是系统在 Adobe Experience Platform 中生成的。 |
 | [!UICONTROL 回填数据] | 跟踪回填（历史）数据的 3 种状态：[!UICONTROL 队列中]、[!UICONTROL 进行中]（同时显示进度百分比）和[!UICONTROL 完成]。 |
