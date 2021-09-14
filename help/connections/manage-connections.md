@@ -3,10 +3,10 @@ title: 管理连接
 description: 描述如何在 Customer Journey Analytics (CJA) 中管理与 Experience Platform 数据集的连接。
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: b0e07ca9533a2d53c916c6db31acaccbd78a41a3
+source-git-commit: d099c2559eea68aa1f44d345b103618f55fd0559
 workflow-type: tm+mt
-source-wordcount: '1445'
-ht-degree: 99%
+source-wordcount: '1587'
+ht-degree: 86%
 
 ---
 
@@ -80,6 +80,9 @@ ht-degree: 99%
 * 发现导致跳过或删除记录的配置问题。
 * 了解数据何时可用于报告。
 
+>[!IMPORTANT]
+>在2021年8月13日之前摄取的任何数据不会反映在此[!UICONTROL 连接]对话框中。
+
 以下是构件和设置解释：
 
 ![查看连接详细信息](assets/conn-details.png)
@@ -88,11 +91,11 @@ ht-degree: 99%
 | --- | --- |
 | 数据集选择器 | 允许您选择连接中的一个或全部数据集。不能选择其他数量的数据集。默认为[!UICONTROL 全部数据集]。 |
 | 日历/日期范围 | 日期范围指您何时将数据添加到连接中的。包括所有标准日历预设。您可以自定义日期范围，但自定义日期范围不会出现在下拉列表中。 |
-| [!UICONTROL 可用的记录数]构件 | 表示可用于报告，即&#x200B;**整个连接**&#x200B;的总行数。此数与任何日历设置无关。如果您从数据集选择器中选择了一个数据集，或者在表中选择了一个数据集，则该数会变化。（请注意，添加数据后，数据延迟 1-2 个小时后才会出现在报告中。） |
-| [!UICONTROL 量度]构件 | 汇总添加/跳过/删除的记录以及您选择的&#x200B;**数据集和日期范围的批次添加数量(**)。 |
-| [!UICONTROL 添加的记录数]构件 | 指示在选定时间段，**为您选择的数据集和日期范围**&#x200B;添加了多少行。每 10 分钟更新一次。 |
-| [!UICONTROL 跳过的记录数]构件 | 指示在选定的时间段内跳过了多少行（对于您选择的数据集和日期范围&#x200B;**）。**&#x200B;跳过记录的原因包括：缺少时间戳、缺少人员 ID 等。每 10 分钟更新一次。 |
-| [!UICONTROL 删除的记录数]构件 | 指示在选定时间段，**为您选择的数据集和日期范围**&#x200B;删除了多少行。例如，有人可能在 Experience Platform 中删除了一个数据集。每 10 分钟更新一次。 |
+| [!UICONTROL 事件数据可用小组] 件记录 | 表示可用于报告的事件数据集行总数，即整个连接&#x200B;**的**。 此数与任何日历设置无关。如果您从数据集选择器中选择了一个数据集，或者在表中选择了一个数据集，则该数会变化。（请注意，添加数据后，数据延迟 1-2 个小时后才会出现在报告中。） |
+| [!UICONTROL 量度]构件 | 汇总添加/跳过/删除的事件记录以及您选择的&#x200B;**数据集和日期范围的批次添加数量(**)。 |
+| [!UICONTROL 添加的记录数]构件 | 指示在选定时间段，**为您选择的数据集和日期范围**&#x200B;添加了多少行。每 10 分钟更新一次。**注意**:添加的记 **[!UICONTROL 录]** 数据当前仅包含事件数据，而不包含用户档案或查询数据。 |
+| [!UICONTROL 跳过的记录数]构件 | 指示在选定的时间段内跳过了多少行（对于您选择的数据集和日期范围&#x200B;**）。**&#x200B;跳过记录的原因包括：缺少时间戳、缺少人员 ID 等。每 10 分钟更新一次。**注意**:“记录 **[!UICONTROL 跳过]** 的数据当前仅包含事件数据，而不包含用户档案或查询数据。 |
+| [!UICONTROL 删除的记录数]构件 | 指示在选定时间段，**为您选择的数据集和日期范围**&#x200B;删除了多少行。例如，有人可能在 Experience Platform 中删除了一个数据集。每 10 分钟更新一次。**注意**:删除的记 **[!UICONTROL 录]** 的数据当前只包含事件数据，而不包含用户档案或查询数据。 |
 | 数据集搜索框 | 您可以按数据集名称或[!UICONTROL 数据集 ID] 来搜索。 |
 | [!UICONTROL 数据集] | 显示作为连接一部分的数据集。您可以单击超链接来查看连接中的全部数据集。 |
 | [!UICONTROL 数据集 ID] | 此 ID 由 Adobe Experience Platform 自动生成。 |
@@ -114,10 +117,11 @@ ht-degree: 99%
 | [!UICONTROL 导入新数据] | 指示是否应将新批次的数据添加到历史（回填）数据中。 |
 | **数据集层的右侧边栏** |  |
 | [!UICONTROL 数据集描述] | 描述此连接中每个数据集的参数。 |
-| [!UICONTROL 可用的记录数] | 表示在通过日历选择的特定时间段内为此数据集摄取的总行数。添加数据后，数据立刻在报告中显示，没有延迟。（创建全新连接时的情况例外，此时有[延迟](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans#3.-getting-data-into-customer-journey-analytics)。） |
-| [!UICONTROL 添加的记录数] | 在选定的时间段中添加了多少行。 |
-| [!UICONTROL 跳过的记录数] | 摄取期间在选定的时间段中跳过了多少行。 |
-| [!UICONTROL 跳过记录错误] | 这里指出跳过记录的原因。可能包括丢失时间戳、丢失人员 ID 等。 |
+| [!UICONTROL 可用的记录数] | 表示在通过日历选择的特定时间段内为此数据集摄取的总行数。 添加数据后，数据立刻在报告中显示，没有延迟。（创建全新连接时的情况例外，此时有[延迟](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans#3.-getting-data-into-customer-journey-analytics)。） |
+| [!UICONTROL 添加的记录数] | 在选定的时间段中添加了多少行。**注意**:添加的记 **[!UICONTROL 录]** 数据当前仅包含事件数据，而不包含用户档案或查询数据。 |
+| [!UICONTROL 跳过的记录数] | 摄取期间在选定的时间段中跳过了多少行。**注意**:“记录 **[!UICONTROL 跳过]** 的数据当前仅包含事件数据，而不包含用户档案或查询数据。 |
+| [!UICONTROL 删除的记录数] | 在选定的时间段内删除了多少条记录。 **注意**:删除的记 **[!UICONTROL 录]** 的数据当前只包含事件数据，而不包含用户档案或查询数据。 |
+| [!UICONTROL 跳过记录错误] | 这里指出跳过记录的原因。原因可能包括缺少时间戳、缺少人员ID等。 |
 | [!UICONTROL 已摄取批次] | 有多少数据批次添加到此数据集。 |
 | [!UICONTROL 上次添加] | 添加最后批次的时间。 |
 | [!UICONTROL 数据集类型] | [!UICONTROL 事件]、[!UICONTROL 查找]或[!UICONTROL 档案]。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
@@ -131,3 +135,5 @@ ht-degree: 99%
 
 * 开始或停止导入新数据。此过程以前称为“数据流式传输”。
 * 重命名连接。
+* 刷新数据集。
+* 从连接中删除数据集。
