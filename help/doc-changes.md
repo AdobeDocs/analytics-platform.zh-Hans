@@ -2,10 +2,10 @@
 title: CJA 文档更新
 description: 列出自2019年12月以来的Customer Journey Analytics文档集内容更新。
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
-source-git-commit: 8f576a8321c0e50cc34c1c08c8f8f7c48b427233
+source-git-commit: f9a7bfd8ac379f6f3b0d30f365f123301462368c
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 18%
+ht-degree: 20%
 
 ---
 
@@ -19,7 +19,7 @@ CJA文档自创建以来进行了以下更新。
 | 2021 年 8 月 | 新增了关于CJA中增强的[连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans)体验的章节。 |
 | 2021 年 8 月 | 有关数据视图维度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-behavior-settings)中区分大小写的新部分。[ |
 | 2021 年 6 月 | 有关工作区中[先前项目版本](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/save-projects.html?lang=en#previous-version)的新文档。 |
-| 2021 年 4 月 | 新增了[持久性](/help/data-views/persistence.md)主题。 |
+| 2021 年 4 月 | 新增了[持久性](data-views/component-settings/persistence.md)主题。 |
 | 2021 年 4 月 | 新增了有关在工作区中支持计划项目的文档。 |
 | 2021 年 4 月 | 有关[增强型数据视图体验](/help/data-views/data-views.md)的新主题。 |
 | 2021 年 4 月 | 有关[摄取Google Analytics数据](/help/use-cases/ga-to-cja.md)和[分析该数据](/help/use-cases/ga-to-cja-reporting.md)的新主题。 |

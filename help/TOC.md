@@ -10,10 +10,10 @@ user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 本指南提供 Customer Journey Analytics 自助式帮助内容；Customer Journey Analytics 基于 Adobe Experience Platform，是 Adobe 的新一代跨渠道分析解决方案。
 breadcrumb-title: Customer Journey Analytics 指南
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-source-git-commit: 3839639858edbd019ef467ca5fb1791f48864100
-workflow-type: ht
-source-wordcount: '450'
-ht-degree: 100%
+source-git-commit: dd88dc79d523d6e5ef4fa868eef4bbb22df6b61b
+workflow-type: tm+mt
+source-wordcount: '471'
+ht-degree: 98%
 
 ---
 
@@ -40,8 +40,18 @@ ht-degree: 100%
 + 数据视图 {#cja-dataviews}
    + [数据视图概述](data-views/data-views.md)
    + [创建数据视图](data-views/create-dataview.md)
+   + 组件设置{#component-settings}
+      + [组件设置概述](data-views/component-settings/overview.md)
+      + [归因](data-views/component-settings/attribution.md)
+      + [行为](data-views/component-settings/behavior.md)
+      + [格式](data-views/component-settings/format.md)
+      + [包含/排除值](data-views/component-settings/include-exclude-values.md)
+      + [量度去重](data-views/component-settings/metric-deduplication.md)
+      + [没有值选项](data-views/component-settings/no-value-options.md)
+      + [持久性](data-views/component-settings/persistence.md)
+      + [值分段](data-views/component-settings/value-bucketing.md)
+   + [标准组件引用](data-views/component-reference.md)
    + [数据视图用例](data-views/data-views-usecases.md)
-   + [持久性](data-views/persistence.md)
 + Workspace 项目 {#cja-workspace}
    + [Analysis Workspace 概述](analysis-workspace/home.md)
    + [执行基本分析](analysis-workspace/perform-basic-analysis.md)

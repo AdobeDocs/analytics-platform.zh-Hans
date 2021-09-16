@@ -2,7 +2,7 @@
 title: Customer Journey Analytics 常见问题解答
 description: Customer Journey Analytics — 常见问题解答。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
-source-git-commit: af683f97284ed24c3285a5819217ad329d5a8067
+source-git-commit: f9a7bfd8ac379f6f3b0d30f365f123301462368c
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 87%
@@ -86,5 +86,5 @@ ht-degree: 87%
 |  会话和  句点 | 报表包中的重复数据会被删除。 因此，计数可能不匹配。 |
 | 量度去重 | 如果多个行具有相同的交易ID（例如，[!UICONTROL 购买ID]），则会删除量度的重复实例（例如，[!UICONTROL Orders]）。 这可防止关键量度计数过多。 因此，诸如[!UICONTROL Orders]之类的量度可能不会在报表包之间进行累加。 |
 | 货币 | CJA尚不支持货币换算。 如果您尝试合并的报表包使用不同的基本货币，则可能会出现问题。 |
-| [!UICONTROL 持久性] | [](/help/data-views/persistence.md) 持久性会跨报表包扩展，这会 [!UICONTROL 影响过滤器]、 [!UICONTROL 归因]等。数字可能无法正确加总。 |
+| [!UICONTROL 持久性] | [](../data-views/component-settings/persistence.md) 持久性会跨报表包扩展，这会 [!UICONTROL 影响过滤器]、 [!UICONTROL 归因]等。数字可能无法正确加总。 |
 | [!UICONTROL 分类] |  合并报表包时，分类不会自动删除重复项。将多个分类文件合并到单个[!UICONTROL lookup]数据集时，可能会遇到问题。 |

@@ -1,17 +1,17 @@
 ---
-title: Customer Journey Analytics 中的数据视图是什么？
+title: 数据视图概述
 description: 数据视图会指定您要如何解释 CJA 连接中的数据元素，例如量度、维度、会话等。
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
-source-git-commit: e6504d4b5c17f5b461de81a9df5d7d2ab2505ae9
-workflow-type: ht
-source-wordcount: '1070'
-ht-degree: 100%
+source-git-commit: 86522f1ea5ae241351514d954672ec5fd7990944
+workflow-type: tm+mt
+source-wordcount: '1047'
+ht-degree: 94%
 
 ---
 
-# 什么是数据视图？
+# 数据视图概述
 
-数据视图位于 Customer Journey Analytics (CJA) [连接](/help/connections/create-connection.md)的顶部。连接会合并 Adobe Experience Platform 中的一个或多个数据集，并将其连接到 CJA。数据视图会指定您要如何解释连接中的数据元素，例如量度、维度、会话等。定义数据视图是为了准备报告 Workspace 中的数据。
+数据视图是特定于Customer Journey Analytics的容器，它允许您确定如何解释[连接](/help/connections/create-connection.md)中的数据。 它指定了Analysis Workspace中可用的所有维度和量度，以及这些维度和量度从中获取其数据的列。 定义数据视图是为在Analysis Workspace中报告做准备。
 
 >[!NOTE]
 >
@@ -78,4 +78,3 @@ Customer Journey Analytics 中的 Workspace 项目均基于数据视图。
 
 * [创建数据视图](/help/data-views/create-dataview.md)
 * [数据视图用例](/help/data-views/data-views-usecases.md)
-* 关于[持久性](/help/data-views/persistence.md)如何工作的详细说明
