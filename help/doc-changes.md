@@ -2,10 +2,10 @@
 title: CJA 文档更新
 description: 列出自2019年12月以来的Customer Journey Analytics文档集内容更新。
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
-source-git-commit: f9a7bfd8ac379f6f3b0d30f365f123301462368c
+source-git-commit: 6fca2dbffb0a631b0c5425c7d8964296ad22b7cc
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 20%
+source-wordcount: '448'
+ht-degree: 18%
 
 ---
 
@@ -15,8 +15,9 @@ CJA文档自创建以来进行了以下更新。
 
 | 日期 | 更新描述 |
 | --- | --- |
+| 2021 年 9 月 | 将数据视图中的组件设置划分为单个文件：<ul><li>[ 组件设置概述](/help/data-views/component-settings/overview.md)</li><li>[ 属性组件设置](/help/data-views/component-settings/attribution.md)</li><li>[ 行为组件设置](/help/data-views/component-settings/behavior.md)</li><li>[ 格式组件设置](/help/data-views/component-settings/format.md)</li><li>[[!UICONTROL Include/excludecomponent] 设置](/help/data-views/component-settings/include-exclude-values.md)</li><li>[[!UICONTROL 量度] 重复数据删除组件设置](/help/data-views/component-settings/metric-deduplication.md)</li><li>[[!UICONTROL 无值] 组件设置](/help/data-views/component-settings/no-value-options.md)</li><li>[ 持久组件设置](/help/data-views/component-settings/persistence.md)</li><li>[[!UICONTROL 值分] 段组件设置](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
 | 2021 年 9 月 | 新增了关于CJA中合并报表包](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans#6.-considerations-when-merging-report-suites-in-cja)的影响部分。[ |
-| 2021 年 8 月 | 新增了关于CJA中增强的[连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans)体验的章节。 |
+| 2021 年 8 月 | 新增了关于CJA中增强的[连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans)体验的部分。 |
 | 2021 年 8 月 | 有关数据视图维度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-behavior-settings)中区分大小写的新部分。[ |
 | 2021 年 6 月 | 有关工作区中[先前项目版本](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/save-projects.html?lang=en#previous-version)的新文档。 |
 | 2021 年 4 月 | 新增了[持久性](data-views/component-settings/persistence.md)主题。 |

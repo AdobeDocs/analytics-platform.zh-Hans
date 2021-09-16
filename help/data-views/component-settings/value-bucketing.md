@@ -1,7 +1,7 @@
 ---
 title: 值分段组件设置
 description: 在维度中组合数值。
-source-git-commit: af357167e65f4a577880832818221f6edbfc8b0a
+source-git-commit: 0c27f75eed8f1f3dec3f287cfe35ab748bbfc1bb
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 12%
@@ -9,7 +9,7 @@ ht-degree: 12%
 ---
 
 
-# 值分段组件设置
+# [!UICONTROL 值分] 段组件设置
 
 创建或编辑数据视图时，值分段允许您根据范围组合数字值。 它仅适用于使用整数或双重架构数据类型的维度。
 

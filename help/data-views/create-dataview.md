@@ -2,10 +2,10 @@
 title: 创建数据视图
 description: 您可以调整以创建或编辑数据视图的所有设置。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 86522f1ea5ae241351514d954672ec5fd7990944
+source-git-commit: 49b4998194274eec2ab8eca231029ccb5ccf648d
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 81%
+source-wordcount: '805'
+ht-degree: 77%
 
 ---
 
@@ -56,7 +56,17 @@ ht-degree: 81%
    >
    >您可以从左边栏拖入整个架构字段文件夹，这些文件夹会自动分类为传统部分。 字符串字段最终位于[!UICONTROL Dimension]部分，而数字位于[!UICONTROL 量度]部分。 或者，您也可以单击&#x200B;**[!UICONTROL 添加所有]**，并添加所有架构字段。
 
-1. 选择相应组件后，您会在右侧看到许多设置。使用下述设置配置该组件。
+1. 选择相应组件后，您会在右侧看到许多设置。使用
+
+* [ 组件设置概述](/help/data-views/component-settings/overview.md)
+* [ 属性组件设置](/help/data-views/component-settings/attribution.md)
+* [ 行为组件设置](/help/data-views/component-settings/behavior.md)
+* [ 格式组件设置](/help/data-views/component-settings/format.md)
+* [[!UICONTROL 包含|排] 除分组组件设置](/help/data-views/component-settings/include-exclude-values.md)
+* [[!UICONTROL 量度] 重复数据删除组件设置](/help/data-views/component-settings/metric-deduplication.md)
+* [[!UICONTROL 无值] 组件设置](/help/data-views/component-settings/no-value-options.md)
+* [ 持久组件设置](/help/data-views/component-settings/persistence.md)
+   [[!UICONTROL 值分] 段组件设置](/help/data-views/component-settings/value-bucketing.md)
 
 ## 使用[!UICONTROL 复制]功能
 
