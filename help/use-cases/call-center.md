@@ -2,10 +2,10 @@
 title: 导入呼叫中心数据和网站数据
 description: 了解如何创建数据集以关联呼叫中心数据和网站数据。
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
-source-git-commit: a6c6620a4f4118755509e534d7d6a12bf08b4b67
+source-git-commit: 269c6e50f26d424df58c0803a4e49eb2fc9d3968
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 86%
+source-wordcount: '1148'
+ht-degree: 56%
 
 ---
 
@@ -79,30 +79,58 @@ CJA 需要使用通用标识符来生成[合并的数据集](../connections/comb
 此自由格式表允许您查看对呼叫中心事件贡献最大的网页。首先，确保所需的维度和量度具有正确的归因模型：
 
 1. 将包含网页名称的维度拖到一个自由格式表可视化图表上。
-1. 将量度替换为要衡量转化情况的所需呼叫中心量度。
+1. 将量度替换为您要测量的所需呼叫中心量度。
 1. 单击该量度标题附近的齿轮图标。单击&#x200B;**[!UICONTROL 使用非默认的归因模型]**。
-1. 设置所需的[归因模型](/help/data-views/create-dataview.md)。
+1. 设置所需的[归因模型](/help/analysis-workspace/attribution/models.md)。例如，半衰期为15分钟的时间衰减模型和会话的回顾窗口。 此归因模型会将点数分配给呼叫中心之前的页面。
 
-生成的报告将显示呼叫中心数据中排名最靠前的量度。
+生成的报表显示导致呼叫中心呼叫的热门页面。<!-- use case behind what we use these pages for -->
 
-<!-- ### Flow between web data and call center
+<!-- Complement with donut visualization -->
 
-call reason as an exit dimension, web page name for previous pages
+您可以通过按原因或类别拆分调用来进一步增加对此表的洞察。
 
-### Histogram
+1. 单击组件列表中“调用原因”维度下的右V形标记。 此操作会显示单个维度值。
+2. 在“调用”量度下拖动所需的维度值，该量度会根据每个调用原因过滤该量度。
+3. 请重复执行您要深入查看的每个调用原因。 使用“所有会话”过滤器查看聚合总计。
+
+<!-- screenshot -->
+
+### 流量可视化图表
+
+您可以在客户使用呼叫中心渠道之前，先深入了解客户尝试执行的操作。 此流量可视化图表可帮助您了解客户访问您的呼叫中心的最频繁旅程。 通过此洞察，您可以确定对网站做出的最有效改进，以便客户不太可能在中调用。
+
+1. 单击左侧的&#x200B;**[!UICONTROL 可视化图表]**&#x200B;选项卡，然后将流量可视化图表拖到工作区画布上。
+2. 单击左侧的&#x200B;**[!UICONTROL 组件]**&#x200B;选项卡，然后找到“调用原因”维度。
+3. 单击此维度旁边的右V形标记。 此操作会显示单个维度值。
+4. 将所需的呼叫原因维度项目拖动到流量可视化的中心位置。
+5. 流量可视化图表会自动填充先前和后续调用原因。 将之前的调用原因替换为网站页面维度。
+6. 单击流量可视化图表右上角的齿轮图标，然后将流量容器更改为&#x200B;**[!UICONTROL Session]**。
+
+### 直方图
+
+有多少客户曾经打过一次电话、打过两次电话或打过6次以上电话？ 其中有些人从不访问网站。 使用直方图可视化图表来确定每个存储段中有多少人。 对于从未访问过该网站的用户，请看我们如何鼓励他们自助。
+
+1. 单击左侧的&#x200B;**[!UICONTROL 可视化图表]**&#x200B;选项卡，然后将直方图可视化图表拖到工作区画布上。
+2. 单击左侧的&#x200B;**[!UICONTROL 组件]**&#x200B;选项卡，然后将调用量度拖到直方图可视化中。
+3. 单击可视化中心的&#x200B;**[!UICONTROL 显示高级设置]**&#x200B;并自定义所需的存储段。
+4. 单击&#x200B;**[!UICONTROL 生成]**。
+
+<!--
+### Web to call, call to web
 
 ### Fallout
 
-step 1: all sessions
-step 2: purchase step 1
-step 3: call
+Fallout sessions - session
 
-another good one
+All sessions > page views metric > calls metric
+
+All sessions > calls metric > page views
+
+Orrr we could also use dataset ID
 
 step 1: all sessions
 step 2: 
 
-Orrr we could also use dataset ID
 
 ### Site sections that result in a call within 30 minutes
 

@@ -2,11 +2,10 @@
 title: 重播的工作原理
 description: 了解跨渠道分析中的“重播”概念
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
-translation-type: ht
-source-git-commit: 2d83d796f053465eb9543daa37068f316bccc659
-workflow-type: ht
-source-wordcount: '524'
-ht-degree: 100%
+source-git-commit: af14d9279f1dd5019e7e6db59a27765eede078bb
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 95%
 
 ---
 
@@ -54,6 +53,10 @@ CCA 会定期（每周一次或每天一次，具体取决于选择的回顾时�
 | `5` | `3579` | `Bob` | - | `Bob` | Bob 通过移动设备登录 | `1` (Bob) |
 | `6` | - | - | `Bob` | `Bob` | Bob 再次致电客服人员 | `1` (Bob) |
 | `7` | `246` | - | - | `Bob` | Bob 再次在其台式机上访问您的网站，且未经过身份验证 | `1` (Bob) |
+
+>[!NOTE]
+>
+>仅为网站数据集重播数据。 呼叫中心数据集保持不变，但在使用正确的人员ID时会匹配。
 
 ## 要点回顾
 
