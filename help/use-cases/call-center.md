@@ -2,16 +2,16 @@
 title: 导入呼叫中心数据和网站数据
 description: 了解如何创建数据集以关联呼叫中心数据和网站数据。
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: ht
-source-wordcount: '675'
-ht-degree: 100%
+source-git-commit: a6c6620a4f4118755509e534d7d6a12bf08b4b67
+workflow-type: tm+mt
+source-wordcount: '778'
+ht-degree: 86%
 
 ---
 
 # 导入呼叫中心数据和网站数据
 
-Customer Journey Analytics 提供了一项非常有用的强大功能，就是将不同来源的数据合并到一个工作区项目中。使用本指南了解您的组织如何将网站数据与呼叫中心数据相结合。
+Customer Journey Analytics 提供了一项非常有用的强大功能，就是将不同来源的数据合并到一个工作区项目中。使用本指南了解您的组织如何将网站数据与呼叫中心数据相结合。例如，您可以了解客户采取了哪些操作、他们查看了哪些内容，以及他们在联系客户支持之前搜索的术语。 然后，您可以确定要改进的内容和自助服务工具，以便客户能够更好地自行解决问题，而无需呼叫。
 
 ## 先决条件
 
@@ -53,8 +53,10 @@ CJA 需要使用通用标识符来生成[合并的数据集](../connections/comb
 
 ## 创建数据视图
 
-创建连接后，可以[创建数据视图](/help/data-views/create-dataview.md)，以供在 Analysis Workspace 使用。<!-- page dimension last touch, session persistence -->
-<!-- create calls metric using call center reason (requires data views 2.0). any column that triggers once per call -->
+创建连接后，可以[创建数据视图](/help/data-views/create-dataview.md)，以供在 Analysis Workspace 使用。有用的组件包括：
+
+* 具有最近联系和会话持久性的页面维度。 您可以将呼叫中心量度与客户在呼叫前查看的最后一页连接起来。
+* 使用“呼叫中心原因”架构字段增加发生次数的呼叫量度。 使用[量度重复数据删除](/help/data-views/component-settings/metric-deduplication.md) ，以便每个会话只增加一次。
 
 ## 创建可视化图表
 
@@ -81,14 +83,13 @@ CJA 需要使用通用标识符来生成[合并的数据集](../connections/comb
 1. 单击该量度标题附近的齿轮图标。单击&#x200B;**[!UICONTROL 使用非默认的归因模型]**。
 1. 设置所需的[归因模型](/help/data-views/create-dataview.md)。
 
-生成的报告将显示呼叫中心数据中排名最靠前的量度。<!-- Complement with donut visualization -->
+生成的报告将显示呼叫中心数据中排名最靠前的量度。
 
 <!-- ### Flow between web data and call center
 
 call reason as an exit dimension, web page name for previous pages
 
 ### Histogram
-
 
 ### Fallout
 

@@ -2,10 +2,10 @@
 title: 创建或编辑数据视图
 description: 您可以调整以创建或编辑数据视图的所有设置。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 384679788d140a01a12e1c830b47099398a920b1
+source-git-commit: 36b7cc72c34e27f90af29146f7a32c525b279b9b
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 18%
+ht-degree: 16%
 
 ---
 
@@ -60,12 +60,9 @@ ht-degree: 18%
 1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;以创建数据视图，或单击现有数据视图以对其进行编辑。
 1. 单击&#x200B;**[!UICONTROL Components]**&#x200B;选项卡。
 
-![“组件”选项卡](assets/components-tab.png)
+   ![“组件”选项卡](assets/components-tab.png)
 
-您可以在左上角看到[!UICONTROL 连接]，其中包含数据集及其下方的[!UICONTROL 架构字段]。请记住以下事项：
-
-    *已包括的组件是标准必需组件（系统生成）。
-    *Adobe默认应用过滤器**[!UICONTROL 包含数据]**，以便仅显示包含数据的架构字段。如果您要查找不包含数据的字段，则删除该筛选器。
+   您可以在左上角看到[!UICONTROL 连接]，其中包含数据集及其下方的[!UICONTROL 架构字段]。请注意，已包含的组件是所有数据视图的标准必需组件（系统生成）。 Adobe还默认应用筛选器&#x200B;**[!UICONTROL 包含数据]**，以便仅显示包含数据的架构字段。 如果希望字段不包含数据，请删除此过滤器。
 
 1. 将架构字段（如`pageTitle`）从左边栏拖到量度或Dimension部分。
 
