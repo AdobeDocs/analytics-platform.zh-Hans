@@ -2,9 +2,8 @@
 title: 过滤器概述
 description: 了解过滤器的用途以及如何创建简单的过滤器。
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-translation-type: ht
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: ht
+source-git-commit: 4564b2d33e2222c7ad3e2db3c85b5a27d70d05ee
+workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 100%
 
@@ -83,4 +82,4 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 
 | 过滤器名称 | 描述 |
 | --- | --- |
-| 全部 数据 | 这是一个必需过滤器，向自由格式表的行中添加量度后，此过滤器会动态添加到报告中。 |
+| 所有数据 | 这是一个必需过滤器，向自由格式表的行中添加量度后，此过滤器会动态添加到报告中。 |

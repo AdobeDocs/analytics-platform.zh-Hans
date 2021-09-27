@@ -10,10 +10,10 @@ user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 本指南提供 Customer Journey Analytics 自助式帮助内容；Customer Journey Analytics 基于 Adobe Experience Platform，是 Adobe 的新一代跨渠道分析解决方案。
 breadcrumb-title: Customer Journey Analytics 指南
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-source-git-commit: a6c6620a4f4118755509e534d7d6a12bf08b4b67
+source-git-commit: 4564b2d33e2222c7ad3e2db3c85b5a27d70d05ee
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 96%
+source-wordcount: '481'
+ht-degree: 95%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 96%
             + [列设置](analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [行设置](analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [动态项和静态项](analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
-         + [对表格进行分页、筛选和排序](analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md)
+         + [对表格进行分页、过滤和排序](analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md)
          + [工作区总计](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + 同类群组表 {#cohort-table}
          + [什么是同类群组分析？](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
@@ -146,6 +146,8 @@ ht-degree: 96%
       + [筛选器概述](components/filters/filters-overview.md)
       + [创建筛选器](components/filters/create-filters.md)
       + [管理筛选器](components/filters/manage-filters.md)
+      + [快速过滤器](components/filters/quick-filters.md)
+      + [临时过滤器](components/filters/ad-hoc-filters.md)
    + 计算量度 {#cja-calcmetrics}
       + [计算量度概述](components/calc-metrics/calc-metr-overview.md)
       + [创建计算量度](components/calc-metrics/create.md)
