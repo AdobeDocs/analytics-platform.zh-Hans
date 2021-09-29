@@ -3,22 +3,22 @@ description: 在Analysis Workspace中使用快速过滤器。
 title: 快速过滤器
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: a32b260fb4c4696ac460903f44b240cb71a62db9
+exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
+source-git-commit: 300bc4069b77b62ae13fd5baf2eec5846676fc6e
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 1%
+source-wordcount: '930'
+ht-degree: 3%
 
 ---
-
 
 # 快速过滤器
 
 您可以在项目中创建快速过滤器，以绕过完整[过滤器生成器](/help/components/filters/create-filters.md)的复杂性。 快速过滤器
 
-* 仅应用于特定项目（您可以更改此项）。
+* 仅适用于在中创建的项目（您可以更改此设置）。
 * 最多允许3个规则
 * 不要包含嵌套容器或顺序规则。
-* 在包含多个报表包的面板中可以工作
+* 在包含多个报表包的项目中工作
 
 要比较快速过滤器可以执行的操作与完整的组件列表过滤器，请转到[此处](/help/components/filters/filters-overview.md)。
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## 先决条件
 
-用户需要[Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en#analytics-tools)中的[!UICONTROL 过滤器创建]权限，才能创建快速过滤器。
+用户需要[Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en#analytics-tools)中的[!UICONTROL 区段创建]权限，才能创建快速过滤器。
 
 ## 创建快速过滤器
 
@@ -37,9 +37,9 @@ ht-degree: 1%
 
 | 设置 | 描述 |
 | --- | --- |
-| 名称 | 过滤器的默认名称是过滤器中规则名称的组合。 您可以重命名过滤器。 |
+| 名称 | 过滤器的默认名称是过滤器中规则名称的组合。 您可以将过滤器重命名为更易记的名称。 |
 | 包含/排除 | 您可以在过滤器定义中包含或排除组件，但不能同时包含和排除这两个组件。 |
-| 点击/访问/访客容器 | 快速过滤器仅包含一个[过滤器容器](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=en#section_AF2A28BE92474DB386AE85743C71B2D6)，该容器允许您在过滤器中（或从中排除）包含维度/量度/日期范围。  访客包含所有访问和页面查看中特定于该访客的一切数据。通过[!UICONTROL 访问]容器可设置规则来根据访问对访客的数据进行划分，通过[!UICONTROL 点击]容器可根据各个页面查看对访客信息进行划分。 默认容器为[!UICONTROL Hit]。 |
+| 点击/访问/访客容器 | 快速过滤器仅包含一个[过滤器容器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=zh-Hans#filter-containers)，该容器允许您在过滤器中（或从中排除）包含维度/量度/日期范围。  访客包含所有访问和页面查看中特定于该访客的一切数据。通过[!UICONTROL 访问]容器可设置规则来根据访问对访客的数据进行划分，通过[!UICONTROL 点击]容器可根据各个页面查看对访客信息进行划分。 默认容器为[!UICONTROL Hit]。 |
 | 组件(Dimension/量度/日期范围) | 通过添加组件维度和/或量度和/或日期范围及其值，最多定义3个规则。 有3种方法可找到正确的组件：<ul><li>开始键入内容，[!UICONTROL 快速过滤器]生成器会自动找到相应的组件。</li><li>使用下拉列表查找组件。</li><li>从左边栏拖放组件。</li></ul> |
 | 运算符 | 使用下拉菜单查找标准运算符和[!UICONTROL Distinct Count]运算符。 [了解详情](https://experienceleague.adobe.com/docs/analytics/components/filteration/segment-reference/seg-operators.html?lang=en) |
 | 加号(+) | 添加其他规则 |
@@ -83,9 +83,6 @@ ht-degree: 1%
 
 1. 将鼠标悬停在快速过滤器上，然后选择信息(“i”)图标。
 1. 选择&#x200B;**[!UICONTROL 保存过滤器]**
-
-   ![](assets/save-quick-seg.png)
-
 1. 将名称保留为原样，或重命名过滤器。
 
    返回到工作区，并注意过滤器现在是如何显示蓝色侧栏的。 这表示无法再在快速过滤器生成器中编辑/打开过滤器。 通过保存，它将成为组件列表的一部分。
@@ -100,7 +97,7 @@ ht-degree: 1%
 
    ![](assets/project-only.png)
 
-1. 选中&#x200B;**[!UICONTROL 使此过滤器可用于所有项目旁边的复选框，并将其添加到组件列表。]**
+1. 选中&#x200B;**[!UICONTROL Make available of all projects and add to your component list（使所有项目都可用并添加到组件列表）旁边的复选框。]**
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 1. 过滤器现在会显示在您的过滤器组件列表中，以供您的所有项目使用。
 1. 您还可以[与组织中的其他人员共享过滤器](/help/components/filters/manage-filters.md)。

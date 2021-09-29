@@ -2,10 +2,10 @@
 title: 过滤器概述
 description: 了解过滤器的用途以及如何创建简单的过滤器。
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: 4564b2d33e2222c7ad3e2db3c85b5a27d70d05ee
+source-git-commit: ff1f28015a2c52f79fae975c16bb7cb76f6179c3
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 100%
+source-wordcount: '1099'
+ht-degree: 84%
 
 ---
 
@@ -18,6 +18,18 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 您可以在过滤器生成器中构建和保存过滤器，或从“流失”可视化图表（在工作区中）生成过滤器。此外，过滤器可以一起用作堆叠过滤器。
 
 过滤器包括[过滤器生成器](/help/components/filters/create-filters.md)和[过滤器管理器](/help/components/filters/manage-filters.md)，前者用于构建过滤器并运行预测试，后者用于在您的组织内收集、标记、批准、设置安全和共享过滤器。
+
+## 过滤器类型
+
+您可以在工作区和过滤器生成器中创建不同类型的过滤器，具体取决于它们需要的复杂程度、它们是否应仅应用于此项目等。 以下是过滤器类型的摘要：
+
+| 过滤器类型 | 创建位置？ | 适用位置？ | 使用时间 |
+| --- | --- | --- | --- |
+| 组件列表过滤器 | 单击+，此时将转到[过滤器生成器](/help/components/filters/create-filters.md) | 所有工作区项目 | 对于更复杂的过滤器，顺序过滤器 |
+| 快速筛选 | [快速过滤器生成器](/help/components/filters/quick-filters.md) | 仅限项目，但可以保存并添加到区段列表。 | 灵活地添加/编辑一个或多个规则 |
+| 临时项目过滤器 | [将拖放到项目中的区段拖放区域](/help/components/filters/ad-hoc-filters.md) | 仅限项目，但可以保存并添加到过滤器列表。 | 对于单规则过滤器 |
+| 流失分析中的过滤器 | [流失可](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) 视化图表(Analysis Workspace) | 对于单个流失可视化图表 | 从接触点创建过滤器，添加过滤器作为接触点，并比较各种过滤器中的关键工作流程 |
+| 基于计算量度的过滤器 | [计算量度生成器](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html) | 到单个计算量度 | 在量度定义中应用过滤器 |
 
 ## 顺序过滤器
 
