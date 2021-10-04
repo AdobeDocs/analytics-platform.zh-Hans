@@ -2,9 +2,9 @@
 title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: ac86d4a191a7ed2f9fa7285e497be509f658f615
+source-git-commit: d833e12c67d74696438be9547db159438e671b2c
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1196'
 ht-degree: 99%
 
 ---
@@ -31,9 +31,11 @@ ht-degree: 99%
 | 列表变量/列表属性 | 全面支持；CJA 利用 XDM 并支持无限量的与 listVar 具有类似用法的字符串数组。 |
 | 量度 | 全面支持；CJA 利用体验数据模型 (XDM)，支持无限量的量度，并且不会与传统 Analytics 的自定义成功事件绑定。请注意，已对传统 Analytics 中的一些标准量度名称进行了重命名，例如：“访客”=“人员”、“访问”=“会话”、“点击”=“事件”。 |
 | 量度去重 | 全面支持 |
+| 面板 | 全面支持空白面板、“归因”面板、“任意形状”面板和“快速分析”面板。 |
 | PDF 导出 | 全面支持 |
 | 项目策划 | 全面支持 |
 | 项目链接 | 全面支持 |
+| Report Builder（Excel 插件） | 完全支持（2021年10月） |
 | 报表时间处理 | 全面支持；CJA 完全依赖于报表时间处理。 |
 | 报表 API 访问 | 全面支持；通过 [CJA API](https://www.adobe.io/cja-apis/docs/) 提供。 |
 | 计划报表/项目 | 全面支持 |
@@ -80,7 +82,6 @@ ht-degree: 99%
 | 通过设备图形进行 ID 拼合 | 计划将会提供支持。 |
 | 促销变量持久性 | 计划将会提供支持。 |
 | 实时报告 | 计划将会提供支持。 |
-| Report Builder（Excel 插件） | 计划将会提供支持。 |
 | 区段 IQ | 计划将会提供支持。 |
 | 区段发布（将区段从工作区发送到 Experience Cloud） | 计划将会提供支持。 |
 
