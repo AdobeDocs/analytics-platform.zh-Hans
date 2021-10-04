@@ -2,9 +2,9 @@
 title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: d833e12c67d74696438be9547db159438e671b2c
+source-git-commit: 8efb8da477b2680a44294553fdca944461ba0f0c
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1195'
 ht-degree: 99%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 99%
 | 归因 IQ | 全面支持 |
 | 计算量度 | 全面支持；请注意，传统 Analysis Workspace 中的任何现有计算量度都不会移植到 CJA。 |
 | 跨设备/跨渠道拼接 | 全面支持；请参阅[跨渠道分析](/help/connections/cca/overview.md)。 |
+| CSV 下载 | 全面支持 |
 | 自定义日历 | 完全支持 |
 | 日期比较 | 全面支持 |
 | 日期范围 | 支持所有日期范围功能。 |
@@ -77,7 +78,6 @@ ht-degree: 99%
 | --- | --- |
 | 警报 | 计划将会提供支持。 |
 | 贡献分析 | 计划将会提供支持。 |
-| CSV 下载 | 计划将会提供支持。 |
 | Data Warehouse 报告（100% 行导出） | 计划从 Analysis Workspace 界面提供支持。[!UICONTROL Experience Platform 查询服务]还为 CJA 中的使用案例提供接口。 |
 | 通过设备图形进行 ID 拼合 | 计划将会提供支持。 |
 | 促销变量持久性 | 计划将会提供支持。 |
