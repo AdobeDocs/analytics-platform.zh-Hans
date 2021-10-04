@@ -2,10 +2,10 @@
 title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: c23b172fd4dc5d0303723c4e8ccfeaa251257bfd
-workflow-type: ht
-source-wordcount: '1188'
-ht-degree: 100%
+source-git-commit: ac86d4a191a7ed2f9fa7285e497be509f658f615
+workflow-type: tm+mt
+source-wordcount: '1183'
+ht-degree: 99%
 
 ---
 
@@ -21,12 +21,16 @@ ht-degree: 100%
 | 归因 IQ | 全面支持 |
 | 计算量度 | 全面支持；请注意，传统 Analysis Workspace 中的任何现有计算量度都不会移植到 CJA。 |
 | 跨设备/跨渠道拼接 | 全面支持；请参阅[跨渠道分析](/help/connections/cca/overview.md)。 |
+| 自定义日历 | 完全支持 |
 | 日期比较 | 全面支持 |
+| 日期范围 | 支持所有日期范围功能。 |
+| 夏令时 | 全面支持 |
 | 维度 | 全面支持；CJA 利用 XDM 并支持无限维度。CJA 未绑定到传统 Adobe Analytics 的自定义 eVar 或 prop。 |
 | 默认配置的 Analysis Workspace 维度（例如浏览器类型、推荐人类型、操作系统等） | 只要填充基本 XDM 字段（如用户代理或设备 ID），CJA 就可以原生提供这些维度。 对于使用 Analytics Data Connector (ADC) 的客户，其中部分维度可用，但不是全部维度都可用。请参阅我们的[关于通过 ADC 支持哪些 Analytics 变量的文档](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)。 |
 | 删除 GDPR | 全面支持；请注意，GDPR 现在与 [!UICONTROL Adobe Experience Platform] 协调处理。CJA 继承 [!UICONTROL Experience Platform] 对底层数据集所作的任何数据更改。 |
 | 列表变量/列表属性 | 全面支持；CJA 利用 XDM 并支持无限量的与 listVar 具有类似用法的字符串数组。 |
 | 量度 | 全面支持；CJA 利用体验数据模型 (XDM)，支持无限量的量度，并且不会与传统 Analytics 的自定义成功事件绑定。请注意，已对传统 Analytics 中的一些标准量度名称进行了重命名，例如：“访客”=“人员”、“访问”=“会话”、“点击”=“事件”。 |
+| 量度去重 | 全面支持 |
 | PDF 导出 | 全面支持 |
 | 项目策划 | 全面支持 |
 | 项目链接 | 全面支持 |
@@ -46,7 +50,6 @@ ht-degree: 100%
 | 分类 | 现在称为“查找数据集”。Analytics 中使用的分类可以使用 Analytics Classifications Data Connector 导入 Experience Platform 和 CJA。 查找数据集也可以直接上传到 AEP 并在 CJA 中可用。 |
 | 自定义会话流程 | 支持除移动后台点击之外的所有自定义会话流程功能。 |
 | 客户属性 | 现在称为“个人资料数据集”，它们不会从 Experience Cloud 自动导入，而是必须先上传到 AEP，然后才可在 CJA 中使用。 |
-| 日期范围 | 支持所有日期范围功能，但自定义日历支持除外，这项支持正在规划中。 |
 | “设备”、“浏览器”、“技术”维度 | 当 AEP 数据集包含特定 XDM 架构字段并符合 XDM Experience Event 类要求时，将自动包含这些维度。 |
 | 登录、退出和花费时间维度和量度 | 受支持（现在“进入次数”和“退出次数”称为“会话启动次数”和“会话结束次数”），但计算方式略有不同。 |
 | eVar 持久性设置 | eVar 不再是 CJA 的一部分。但是，持久性设置现在是数据视图的一部分，且可用于所有维度。请记住，持久基于报表时间处理，而不是数据收集处理。数据视图中的纬度集限制为 90 天最大持久性，不支持无限持久性。 |
@@ -73,10 +76,8 @@ ht-degree: 100%
 | 警报 | 计划将会提供支持。 |
 | 贡献分析 | 计划将会提供支持。 |
 | CSV 下载 | 计划将会提供支持。 |
-| 自定义日历 | 计划将会提供支持。 |
 | Data Warehouse 报告（100% 行导出） | 计划从 Analysis Workspace 界面提供支持。[!UICONTROL Experience Platform 查询服务]还为 CJA 中的使用案例提供接口。 |
 | 通过设备图形进行 ID 拼合 | 计划将会提供支持。 |
-| 量度去重 | 计划将会提供支持。 |
 | 促销变量持久性 | 计划将会提供支持。 |
 | 实时报告 | 计划将会提供支持。 |
 | Report Builder（Excel 插件） | 计划将会提供支持。 |
