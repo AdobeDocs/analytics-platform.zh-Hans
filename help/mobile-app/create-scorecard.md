@@ -3,10 +3,10 @@ description: 如何创建Adobe Analytics功能板记分卡
 title: 创建记分卡
 feature: Analytics Dashboards
 role: User, Admin
-source-git-commit: c41eeda10083ef6cc3d46b044f1c0052d08a575b
+source-git-commit: ac2228a20591909f8c81bd79cf40d84ab0cf6272
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 56%
+source-wordcount: '1339'
+ht-degree: 54%
 
 ---
 
@@ -126,7 +126,7 @@ Analytics功能板提供了四种可视化图表，可让您对维度项目和�
 
 **折线图可视化图表**
 
-此折线图可视化图表使用线条来表示量度，以显示一段时间内值的变化情况。仅当使用时间作为维度时，才可以使用折线图。
+此折线图可视化图表使用线条来表示量度，以显示一段时间内值的变化情况。折线图可显示一段时间内的维度，但可与任何可视化图表一起使用。 在此示例中，您正在显示产品类别维度。
 
 ![折线图可视化图表](assets/line.png)
 
@@ -146,7 +146,7 @@ Analytics功能板提供了四种可视化图表，可让您对维度项目和�
 
    ![未指定](assets/unspecified.png)
 
-1. 单击&#x200B;**[!UICONTROL Unspecified]**&#x200B;旁边的图标，以从报表中删除未指定的数据。
+1. 单击&#x200B;**[!UICONTROL Unspecified]**&#x200B;旁边的图标，以从报表中删除未指定的数据。 （您还可以删除任何其他维度项目。）
 
 ## 查看和配置磁贴属性
 
