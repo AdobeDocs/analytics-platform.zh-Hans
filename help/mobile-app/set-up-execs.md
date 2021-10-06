@@ -3,13 +3,13 @@ description: 如何设置用户以使用Analytics移动设备应用程序
 title: 设置管理人员以使用功能板
 feature: Analytics Dashboards
 role: User, Admin
-source-git-commit: 020d59268873776aeec8fc7a90be70c3b6c55b69
+exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
+source-git-commit: a9e1242a5038c57d8fd687df1ceff84a365cf141
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 56%
 
 ---
-
 
 # 设置执行用户以使用功能板
 
@@ -19,7 +19,7 @@ ht-degree: 56%
 
 1. 在[Experience CloudAdmin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=en)中设置新用户。
 
-1. 要共享记分卡，您必须向应用程序用户授予访问记分卡组件的权限，这些组件包括Analysis Workspace、记分卡所基于的报表包以及区段、量度和维度。
+1. 要共享记分卡，您必须向应用程序用户授予访问记分卡组件的权限，这些组件包括Analysis Workspace、记分卡所基于的数据视图，以及过滤器、量度和维度。
 
 ## 应用程序用户的系统先决条件
 
@@ -111,4 +111,3 @@ ht-degree: 56%
 * 可能尚未与执行用户共享记分卡。
 
 确认执行用户可以登录到正确的Adobe Analytics实例，并且已共享记分卡。
-

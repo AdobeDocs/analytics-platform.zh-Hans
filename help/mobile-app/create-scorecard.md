@@ -3,13 +3,13 @@ description: 如何创建Adobe Analytics功能板记分卡
 title: 创建记分卡
 feature: Analytics Dashboards
 role: User, Admin
-source-git-commit: ac2228a20591909f8c81bd79cf40d84ab0cf6272
+exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
+source-git-commit: a9e1242a5038c57d8fd687df1ceff84a365cf141
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1342'
 ht-degree: 54%
 
 ---
-
 
 # 创建记分卡
 
@@ -112,32 +112,31 @@ Analytics功能板提供了四种可视化图表，可让您对维度项目和�
 
 ![可视化图表](assets/vizs.png)
 
-**[!UICONTROL 概要数字]**
+### [!UICONTROL 概要数字]
 
 使用“概要数字”可视化图表来突出显示项目中的大型重要数字。
 
 ![概要数字](assets/sparkline.png)
 
-** Donutvisualization**
+### [!UICONTROL 圆环图]
 
 此可视化图表与饼图类似，它将数据显示为整体的一部分或区段。在比较总百分比时使用圆环图。 例如，假设您想了解哪个广告平台对独特访客总数做出了贡献：
 
 ![圆环图可视化图表](assets/donut-viz.png)
 
-**折线图可视化图表**
+### [!UICONTROL 折线图]
 
 此折线图可视化图表使用线条来表示量度，以显示一段时间内值的变化情况。折线图可显示一段时间内的维度，但可与任何可视化图表一起使用。 在此示例中，您正在显示产品类别维度。
 
 ![折线图可视化图表](assets/line.png)
 
-
-**[!UICONTROL 水平条形] 图**
+### [!UICONTROL 水平条形图]
 
 此可视化显示了一些水平条，这些水平条表示一个或多个量度中的各种值。例如，要轻松查看您的顶级产品，请使用[!UICONTROL 水平条]作为首选可视化图表。
 
 ![水平条](assets/horizontal.png)
 
-**删除未指 [!UICONTROL 定项]**
+### 删除[!UICONTROL 未指定]维度项目
 
 如果要从数据中删除[!UICONTROL 未指定]维度项目，请执行以下操作：
 
@@ -153,6 +152,8 @@ Analytics功能板提供了四种可视化图表，可让您对维度项目和�
 在记分卡生成器中单击图块时，右侧边栏会显示与该图块关联的属性和特征。 在此边栏中，您可以为图块提供一个新的&#x200B;**[!UICONTROL 标题]**，或者通过指定组件而不是从左侧边栏中拖放组件来配置图块。
 
 ![“属性”图块](assets/properties_tile.png)
+
+## 查看钻取（划分）
 
 单击图块时，动态弹出窗口会显示向应用程序中的执行用户显示“钻取（划分）”视图的方式。 如果未将任何维度应用于图块，则划分维度将为&#x200B;**小时**&#x200B;或&#x200B;**天**，具体取决于默认日期范围。
 
