@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 本指南提供 Customer Journey Analytics 自助式帮助内容；Customer Journey Analytics 基于 Adobe Experience Platform，是 Adobe 的新一代跨渠道分析解决方案。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 1ee998aa4c5c429ebb62be83f56431842dd75602
+source-git-commit: c41eeda10083ef6cc3d46b044f1c0052d08a575b
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 95%
+source-wordcount: '490'
+ht-degree: 93%
 
 ---
 
@@ -173,7 +173,9 @@ ht-degree: 95%
    + [在 CJA 中给出 Google Analytics 数据报告](use-cases/ga-to-cja-reporting.md)
 + Analytics 功能板{#cja-dashboards}
    + [Analytics 功能板 — 概述](mobile-app/home.md)
-   + [策划人指南](mobile-app/curator.md)
+   + [策划人任务](mobile-app/curator.md)
+   + [创建记分卡](mobile-app/create-scorecard.md)
+   + [设置管理人员以使用功能板](mobile-app/set-up-execs.md)
    + [执行用户快速入门指南](mobile-app/executive.md)
 + 隐私权 {#cja-privacy}
    + [隐私权概述](privacy/privacy-overview.md)
