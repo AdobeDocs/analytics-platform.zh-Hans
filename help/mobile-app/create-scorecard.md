@@ -4,10 +4,10 @@ title: 创建记分卡
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
-source-git-commit: a9e1242a5038c57d8fd687df1ceff84a365cf141
+source-git-commit: 9a7fa68bd7b4b9a7164a80691ddfb7aedaf8e3e4
 workflow-type: tm+mt
-source-wordcount: '1342'
-ht-degree: 54%
+source-wordcount: '1378'
+ht-degree: 53%
 
 ---
 
@@ -16,6 +16,9 @@ ht-degree: 54%
 以下信息指示 Adobe Analytics 数据的策划人如何为执行用户配置和展示功能板。要开始使用，您可以查看Adobe Analytics功能板记分卡生成器视频：
 
 >[!VIDEO](https://video.tv.adobe.com/v/34544)
+
+>[!NOTE]
+>此页面的记分卡屏幕截图来自Adobe Analytics UI，而非CJA。 UI几乎相同。
 
 Adobe Analytics评分卡以平铺布局为执行用户显示关键数据可视化图表，如下所示：
 
@@ -116,7 +119,7 @@ Analytics功能板提供了四种可视化图表，可让您对维度项目和�
 
 使用“概要数字”可视化图表来突出显示项目中的大型重要数字。
 
-![概要数字](assets/sparkline.png)
+![概要数字](assets/summary-number.png)
 
 ### [!UICONTROL 圆环图]
 
@@ -155,9 +158,9 @@ Analytics功能板提供了四种可视化图表，可让您对维度项目和�
 
 ## 查看钻取（划分）
 
-单击图块时，动态弹出窗口会显示向应用程序中的执行用户显示“钻取（划分）”视图的方式。 如果未将任何维度应用于图块，则划分维度将为&#x200B;**小时**&#x200B;或&#x200B;**天**，具体取决于默认日期范围。
+单击图块时，动态弹出窗口会显示向应用程序中的执行用户显示“钻取（划分）”视图的方式。 您可以划分维度和维度项目，以根据您的特定需求划分数据。 如果未将任何维度应用于图块，则划分维度将为&#x200B;**小时**&#x200B;或&#x200B;**天**，具体取决于默认日期范围。
 
-划分可通过按其他量度和维度（例如，在此零售示例中）按字面划分量度和维度来优化分析：
+划分可通过按其他量度和维度划分维度来优化分析，例如在此零售示例中：
 
 * 按广告平台(AMO ID)划分的独特访客量度
 * 按产品类别（零售）划分的访问量
