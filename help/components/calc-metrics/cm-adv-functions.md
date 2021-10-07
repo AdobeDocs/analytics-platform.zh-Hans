@@ -2,7 +2,7 @@
 title: 引用 - 高级函数
 description: 可通过以下方法访问这些函数：选中函数下拉列表中的显示高级。
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
-source-git-commit: 15312a57f0f122d22d0575f2008d547bcb8ab2ed
+source-git-commit: d6902af2d5e8a706e6b572c3daca2f60661dbbe9
 workflow-type: tm+mt
 source-wordcount: '2944'
 ht-degree: 99%
@@ -13,7 +13,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 可通过以下方法访问这些函数：选中&#x200B;**[!UICONTROL 函数]**&#x200B;下拉列表中的&#x200B;**[!UICONTROL 显示高级]**。
 
@@ -97,7 +97,7 @@ ACOS(metric)
 返回某数字的反正弦。反正弦是一个其正弦为数字的角。返回的角为范围在 -pi/2 到 pi/2 之间的弧度。要以角度表示反正弦，请将结果乘以 180/PI( )。
 
 ```
-ASIN(metric) 
+ASIN(metric)
 ```
 
 | 参数 |  |
@@ -134,10 +134,10 @@ ESTIMATE.EXP(metric_X, metric_Y)
 返回在 n 自由度的学生 t 分布下，其 Z 分数小于 x 的值的百分比。
 
 ```
-cdf_t( -∞, n ) = 0 
-cdf_t(  ∞, n ) = 1 
-cdf_t( 3, 5 ) ? 0.99865 
-cdf_t( -2, 7 ) ? 0.0227501 
+cdf_t( -∞, n ) = 0
+cdf_t(  ∞, n ) = 1
+cdf_t( 3, 5 ) ? 0.99865
+cdf_t( -2, 7 ) ? 0.0227501
 cdf_t( x, ∞ ) ? cdf_z( x )
 ```
 
@@ -146,12 +146,11 @@ cdf_t( x, ∞ ) ? cdf_z( x )
 返回在正态分布下，其 Z 分数小于 x 的值的百分比。
 
 ```
-cdf_z( -∞ ) = 0 
-cdf_z( ∞ ) = 1 
-cdf_z( 0 ) = 0.5 
-cdf_z( 2 ) ? 0.97725 
-cdf_z( -3 ) ? 0.0013499 
- 
+cdf_z( -∞ ) = 0
+cdf_z( ∞ ) = 1
+cdf_z( 0 ) = 0.5
+cdf_z( 2 ) ? 0.97725
+cdf_z( -3 ) ? 0.0013499
 ```
 
 ## 向上取整 (Row)
@@ -197,12 +196,11 @@ CBRT(metric)
 如果 N &lt;= 0，则使用所有之前的行。由于它是按维度排序的，因此它仅对于具有自然顺序的维度（例如日期或路径长度）有用。
 
 ```
-| Date | Rev  | cumul(0,Rev) | cumul(2,Rev) | 
-|------+------+--------------+--------------| 
-| May  | $500 | $500         | $500         | 
-| June | $200 | $700         | $700         | 
-| July | $400 | $1100        | $600         | 
- 
+| Date | Rev  | cumul(0,Rev) | cumul(2,Rev) |
+|------+------+--------------+--------------|
+| May  | $500 | $500         | $500         |
+| June | $200 | $700         | $700         |
+| July | $400 | $1100        | $600         |
 ```
 
 ## 累积平均数
@@ -705,19 +703,19 @@ Z 分数的方程式为：
 
 Z 分数（量度）
 
-<table id="table_AEA3622A58F54EA495468A9402651E1B"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 参数 </th> 
-   <th colname="col2" class="entry"> 描述 </th> 
-  </tr> 
+<table id="table_AEA3622A58F54EA495468A9402651E1B">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> 参数 </th>
+   <th colname="col2" class="entry"> 描述 </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <i>量度</i> </td> 
-   <td colname="col2"> <p> 返回其首个非零参数的值。 </p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> <i>量度</i> </td>
+   <td colname="col2"> <p> 返回其首个非零参数的值。 </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Z 测试
