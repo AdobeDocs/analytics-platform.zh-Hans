@@ -4,9 +4,9 @@ title: 快速过滤器
 feature: Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: a8e1913fb22414610214f5c0a03f6ef7f3b4f8f0
+source-git-commit: ca1789242a4b9abe63affcc0769d669863722c88
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '950'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,6 @@ ht-degree: 2%
 * 仅应用于创建了这些项目的项目（您可以更改此设置）。
 * 最多允许3个规则
 * 不要包含嵌套容器或顺序规则。
-* 在包含多个报表包的项目中工作
 
 要比较快速过滤器可以执行的操作与完整的组件列表过滤器，请转到[此处](/help/components/filters/filters-overview.md)。
 
