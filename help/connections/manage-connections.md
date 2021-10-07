@@ -3,10 +3,10 @@ title: 管理连接
 description: 描述如何在 Customer Journey Analytics (CJA) 中管理与 Experience Platform 数据集的连接。
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: d099c2559eea68aa1f44d345b103618f55fd0559
+source-git-commit: a8e1913fb22414610214f5c0a03f6ef7f3b4f8f0
 workflow-type: tm+mt
-source-wordcount: '1587'
-ht-degree: 86%
+source-wordcount: '1714'
+ht-degree: 80%
 
 ---
 
@@ -137,3 +137,10 @@ ht-degree: 86%
 * 重命名连接。
 * 刷新数据集。
 * 从连接中删除数据集。
+
+## 为[!UICONTROL 连接]数据保留设置滚动窗口
+
+>[!IMPORTANT]
+>请联系客户关怀或您的Adobe客户经理以实施此设置。 尚无法通过CJA UI使用。
+
+此设置允许您在[!UICONTROL 连接]级别（而不是[!UICONTROL 数据集]级别）将CJA数据保留定义为以月（3个月、6个月等）表示的滚动窗口。 数据保留基于事件数据集时间戳，并且仅适用于事件数据集。 配置文件或查找数据集不存在数据保留设置，因为没有适用的时间戳。 主要好处是您仅存储或报告适用且有用的数据，并删除不再有用的旧数据。 它有助于您遵守合同限制并降低超额成本风险。
