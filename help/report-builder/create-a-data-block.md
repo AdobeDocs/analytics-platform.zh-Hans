@@ -4,13 +4,13 @@ description: 介绍如何创建数据块。
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
-source-git-commit: d946e6dbda608499594cf48a9456131485e7349a
+exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
+source-git-commit: 188ed6c6c32db9f65f6f31cf26311ce545d9dfb7
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
-
 
 # 创建数据块
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 1. 设置&#x200B;**日期范围**。
 
-   日期范围选项允许您选择日期范围。 日期范围可以是固定的或滚动的。 有关数据范围选项的其他信息，请参阅&lt;&lt;链接到日期范围部分>>。
+   日期范围选项允许您选择日期范围。 日期范围可以是固定的或滚动的。 有关数据范围选项的信息，请参阅[选择日期范围](select-date-range.md)。
 
 1. 单击&#x200B;**Next**。
 
