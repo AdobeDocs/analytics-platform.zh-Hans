@@ -4,7 +4,7 @@ title: 快速过滤器
 feature: Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: ca1789242a4b9abe63affcc0769d669863722c88
+source-git-commit: 1334e1edb36583ba978936fecbff2657e63a94bf
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 2%
@@ -32,15 +32,15 @@ ht-degree: 2%
 
 在自由格式表中，单击面板标题中的过滤器+图标：
 
-![](assets/quick-seg1.png)
+![区段过滤器](assets/quick-seg1.png)
 
 | 设置 | 描述 |
 | --- | --- |
 | 名称 | 过滤器的默认名称是过滤器中规则名称的组合。 您可以将过滤器重命名为更易记的名称。 |
 | 包含/排除 | 您可以在过滤器定义中包含或排除组件，但不能同时包含和排除这两个组件。 |
 | 点击/访问/访客容器 | 快速过滤器仅包含一个[过滤器容器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=zh-Hans#filter-containers)，该容器允许您在过滤器中（或从中排除）包含维度/量度/日期范围。  访客包含所有访问和页面查看中特定于该访客的一切数据。通过[!UICONTROL 访问]容器可设置规则来根据访问对访客的数据进行划分，通过[!UICONTROL 点击]容器可根据各个页面查看对访客信息进行划分。 默认容器为[!UICONTROL Hit]。 |
-| 组件(Dimension/量度/日期范围) | 通过添加组件（维度和/或量度和/或日期范围）及其值，最多定义3个规则。 有3种方法可找到正确的组件：<ul><li>开始键入内容，[!UICONTROL 快速过滤器]生成器会自动找到相应的组件。</li><li>使用下拉列表查找组件。</li><li>从左边栏拖放组件。</li></ul> |
-| 运算符 | 使用下拉菜单查找标准运算符和[!UICONTROL Distinct Count]运算符。 [了解详情](https://experienceleague.adobe.com/docs/analytics/components/filteration/segment-reference/seg-operators.html?lang=en) |
+| 组件(Dimension/量度/日期范围) | 通过添加组件（维度、量度、日期范围或维度值）最多定义3个规则。 有3种方法可找到正确的组件：<ul><li>开始键入内容，[!UICONTROL 快速过滤器]生成器会自动找到相应的组件。</li><li>使用下拉列表查找组件。</li><li>从左边栏拖放组件。</li></ul> |
+| 运算符 | 使用下拉菜单查找标准运算符和[!UICONTROL Distinct Count]运算符。 请参阅[筛选器运算符](operators.md)。 |
 | 加号(+) | 添加其他规则 |
 | 和/或限定符 | 您可以在规则中添加“AND”或“OR”限定符，但不能在单个过滤器定义中混合使用“AND”和“OR”。 |
 | 应用 | 将此过滤器应用到面板。 如果过滤器不包含数据，则系统将询问您是否要继续。 |
@@ -51,11 +51,11 @@ ht-degree: 2%
 
 以下是将维度和量度组合在一起的过滤器示例：
 
-![](assets/quick-seg2.png)
+![过滤器定义示例](assets/quick-seg2.png)
 
 过滤器将显示在顶部。 请注意其蓝色条纹侧栏，而不是左侧过滤器库中组件级别过滤器的蓝色侧栏。
 
-![](assets/quick-seg3.png)
+![筛选组件位置](assets/quick-seg3.png)
 
 ## 编辑快速过滤器
 
@@ -86,7 +86,7 @@ ht-degree: 2%
 
    返回到工作区，并注意过滤器现在如何具有浅蓝色侧栏。 这表示无法再在快速过滤器生成器中编辑/打开过滤器。 通过保存，它将成为组件列表的一部分。
 
-   ![](assets/quick-seg4.png)
+   ![过滤器组件列表](assets/quick-seg4.png)
 
 应用过滤器后，您可以选择将其添加到过滤器组件列表，并使其可用于所有项目。
 
@@ -94,7 +94,7 @@ ht-degree: 2%
 
 1. 在过滤器生成器顶部，请注意以下对话框：
 
-   ![](assets/project-only.png)
+   ![过滤器对话框](assets/project-only.png)
 
 1. 选中&#x200B;**[!UICONTROL Make available of all projects and add to your component list（使所有项目都可用并添加到组件列表）旁边的复选框。]**
 1. 单击&#x200B;**[!UICONTROL 保存]**。
