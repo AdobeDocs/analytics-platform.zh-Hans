@@ -3,9 +3,9 @@ title: 重播的工作原理
 description: 了解跨渠道分析中的“重播”概念
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 source-git-commit: af14d9279f1dd5019e7e6db59a27765eede078bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '548'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ CCA 会定期（每周一次或每天一次，具体取决于选择的回顾时�
 
 >[!NOTE]
 >
->仅为网站数据集重播数据。 呼叫中心数据集保持不变，但在使用正确的人员ID时会匹配。
+>仅为网站数据集重放数据。呼叫中心数据集保持不变，但在使用正确的人员 ID 时匹配。
 
 ## 要点回顾
 
