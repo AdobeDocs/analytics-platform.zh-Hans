@@ -2,10 +2,10 @@
 title: Customer Journey Analytics 常见问题解答
 description: Customer Journey Analytics — 常见问题解答。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
-source-git-commit: 2412b2b3d6c0abf29c2d265ba60668c3e4a12936
+source-git-commit: d88502218cd94fbb430a0fc5a3af994e7edaa73c
 workflow-type: tm+mt
-source-wordcount: '1611'
-ht-degree: 83%
+source-wordcount: '1649'
+ht-degree: 93%
 
 ---
 
@@ -39,11 +39,12 @@ ht-degree: 83%
 | 问题 | 回答 |
 | --- | --- |
 | 是否可以将来自不同 [!UICONTROL Adobe Experience Platform] 沙盒的数据合并到一个 [!UICONTROL Customer Journey Analytics] 连接中？ | 不能，您不能跨沙盒访问数据。您只能合并位于同一沙盒中的数据集。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans#select-sandbox-and-datasets) |
-| 如何在 [!UICONTROL Customer Journey Analytics] 中将在线数据与离线数据关联起来？ | 只要数据集之间的人员 ID 匹配，[!UICONTROL Customer Journey Analytics] 就可以跨数据集连接筛选器、归因、流量、流失等。。 |
+| 如何在 [!UICONTROL Customer Journey Analytics] 中将在线数据与离线数据关联起来？ | 只要数据集之间的人员 ID 匹配，[!UICONTROL Customer Journey Analytics] 就可以跨数据集连接筛选器、归因、流量、流失等。 |
 | 如何将离线数据导入 [!UICONTROL Customer Journey Analytics]？ | 您拥有的 Customer Journey Analytics 权利允许您将数据摄取到 Experience Platform。然后，您可以在 [!UICONTROL Customer Journey Analytics] 中创建到该数据和数据视图的连接，以在 Analysis Workspace 中报告。如果需要，Experience Platform 的数据载入团队可以为您提供建议或咨询。 |
 | 如何将 [!UICONTROL Adobe Analytics] 数据载入到 [!UICONTROL Customer Journey Analytics]？ | [!UICONTROL Adobe Analytics] 数据可以通过 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 连接到 Experience Platform。大多数 [!UICONTROL Adobe Analytics] 字段以 XDM 格式转入，但其他字段尚不可用。 |
 | 将数据集元素组合到数据视图中需要多长时间？ | 最初只需几个小时，回填最近 13 个月的数据则需要几天的时间。 |
 | 是否必须导入 PII 数据才能在数据之间建立连接？ | 否，您可以使用任何 ID，包括客户 ID 的哈希，该哈希不是 PII。 |
+| 在CJA事件数据集中，摄取过去或未来日期/时间戳的限制是什么？ | <ul><li>关于过去的日期/时间戳：事件数据最长为10年。</li><li>关于未来日期/时间戳：事件数据（预测），最长为1个月。</li></ul> |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -85,15 +86,15 @@ ht-degree: 83%
 | 删除 [!UICONTROL Customer Journey Analytics] 中的连接 | 将显示一条错误消息，指示：<ul><li>为已删除的连接创建的所有数据视图都将不再起作用。</li><li> 同样地，任何依赖于已删除连接中的数据视图的工作区项目都将停止运行。</li></ul> |
 | 删除 [!UICONTROL Customer Journey Analytics] 中的数据视图 | 将显示一条错误消息，指示所有依赖于这个已删除数据视图的 Workspace 项目都将停止运行。 |
 
-## 7.在CJA中合并报表包时的注意事项
+## 7. 在 CJA 中合并报表包时的注意事项
 
-如果您计划通过[Adobe Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans)摄取Adobe Analytics数据，请在合并2个或多个Adobe Analytics报表包时考虑这些后果。
+如果打算通过 [Adobe Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans)引入 Adobe Analytics 数据，请在合并 2 个或更多 Adobe Analytics 报表包时考虑以下这些后果。
 
 | 问题 | 注意事项 |
 | --- | --- |
-| 变量 | 变量（如[!UICONTROL eVars]）可能无法在报表包中排列。 例如，报表包1中的eVar1可能指向&#x200B;**[!UICONTROL Page]**。 在报表包2中，eVar1可能指向&#x200B;**[!UICONTROL 内部营销活动]**，从而导致报告混合且不准确。 |
-|  会话和  人 | 报表包中的重复数据会被删除。 因此，计数可能不匹配。 |
-| 量度去重 | 如果多个行具有相同的交易ID（例如，[!UICONTROL 购买ID]），则会删除量度的重复实例（例如，[!UICONTROL Orders]）。 这可防止关键量度计数过多。 因此，诸如[!UICONTROL Orders]之类的量度可能不会在报表包之间进行累加。 |
-| 货币 | CJA尚不支持货币换算。 如果您尝试合并的报表包使用不同的基本货币，则可能会出现问题。 |
-| [!UICONTROL 持久性] | [](../data-views/component-settings/persistence.md) 持久性会跨报表包进行扩展，这 [!UICONTROL 会影响过滤器]、 [!UICONTROL 归因]等。数字可能无法正确加总。 |
-| [!UICONTROL 分类] |  合并报表包时，分类不会自动删除重复项。将多个分类文件合并到单个[!UICONTROL lookup]数据集时，可能会遇到问题。 |
+| 变量 | [!UICONTROL eVars] 等变量在报表包间可能不一致。例如，报表包 1 中的 eVar1 可能指向&#x200B;**[!UICONTROL 页面]**。在报表包 2 中，eVar1 可能指向&#x200B;**[!UICONTROL 内部活动]**，导致报表变得混乱而又不准确。 |
+| [!UICONTROL 会话]数和[!UICONTROL 人员]数 | 在报表包间将为其去重。因此，这些数量可能不一致。 |
+| 指标去重 | 如果有多行的交易 ID（例如，[!UICONTROL 购买 ID]）相同，请为指标的实例（例如，[!UICONTROL 订单]）去重。这样可防止过度计算关键指标。因此，[!UICONTROL 订单]等指标可能不在报表包间累加。 |
+| 货币 | CJA 中尚不支持货币转换。如果尝试合并的报表包使用不同的基础货币，则可能会出现问题。 |
+| [!UICONTROL 持久性] | [持久性](../data-views/component-settings/persistence.md)作用于各个报表包，它影响[!UICONTROL 筛选器]、[!UICONTROL 归因]等等。数值可能无法正确地累加。 |
+| [!UICONTROL 分类] | 在合并报表包时，不会自动为[!UICONTROL 分类]去重。将多个分类文件合并为一个[!UICONTROL 查找]数据集时，可能会遇到问题。 |
