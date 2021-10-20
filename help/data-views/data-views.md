@@ -1,21 +1,21 @@
 ---
 title: 数据视图概述
-description: 数据视图会指定您要如何解释 CJA 连接中的数据元素，例如量度、维度、会话等。
+description: 数据视图指定您要如何解释数据在 CJA 连接中的各个元素，如指标、维度、会话等。
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 source-git-commit: 86522f1ea5ae241351514d954672ec5fd7990944
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1047'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # 数据视图概述
 
-数据视图是特定于Customer Journey Analytics的容器，它允许您确定如何解释[连接](/help/connections/create-connection.md)中的数据。 它指定了Analysis Workspace中可用的所有维度和量度，以及这些维度和量度从中获取其数据的列。 定义数据视图是为在Analysis Workspace中报告做准备。
+数据视图是 Customer Journey Analytics 专属的容器，通过它，可决定如何解释来自[连接](/help/connections/create-connection.md)的数据。它指定所有可在 Analysis Workspace 中找到的维度和指标，以及这些维度和指标从哪些列获取其数据。为准备 Analysis Workspace 中的报表而定义数据视图。
 
 >[!NOTE]
 >
->您在数据视图中选择或更改的任何设置都可追溯，并且无破坏性。换言之，它们不会永久更改您的底层数据。
+>在数据视图中选择或更改的任何设置均可追溯，因此无破坏性。换言之，它们不会永久更改您的底层数据。
 
 您可以使用完全不同的组件集（维度/量度）为同一连接创建不同的数据视图。或者，使用访问超时、归因等的不同设置创建数据视图。例如，您可以具有一个将所有维度均设置为[!UICONTROL 最近联系]的数据视图，同时，还可以具有另一个将所有维度均设置为[!UICONTROL 首次联系]的数据视图（基于同一数据集）。
 
