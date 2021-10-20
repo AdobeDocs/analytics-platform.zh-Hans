@@ -2,7 +2,7 @@
 title: Customer Journey Analytics 常见问题解答
 description: Customer Journey Analytics — 常见问题解答。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
-source-git-commit: d88502218cd94fbb430a0fc5a3af994e7edaa73c
+source-git-commit: 688c7ee9debd82bbeb1e95461e9d95a8d1bd220b
 workflow-type: tm+mt
 source-wordcount: '1649'
 ht-degree: 93%
@@ -44,7 +44,7 @@ ht-degree: 93%
 | 如何将 [!UICONTROL Adobe Analytics] 数据载入到 [!UICONTROL Customer Journey Analytics]？ | [!UICONTROL Adobe Analytics] 数据可以通过 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 连接到 Experience Platform。大多数 [!UICONTROL Adobe Analytics] 字段以 XDM 格式转入，但其他字段尚不可用。 |
 | 将数据集元素组合到数据视图中需要多长时间？ | 最初只需几个小时，回填最近 13 个月的数据则需要几天的时间。 |
 | 是否必须导入 PII 数据才能在数据之间建立连接？ | 否，您可以使用任何 ID，包括客户 ID 的哈希，该哈希不是 PII。 |
-| 在CJA事件数据集中，摄取过去或未来日期/时间戳的限制是什么？ | <ul><li>关于过去的日期/时间戳：事件数据最长为10年。</li><li>关于未来日期/时间戳：事件数据（预测），最长为1个月。</li></ul> |
+| 在CJA事件数据集中摄取过去或未来日期/时间戳有何限制？ | <ul><li>关于过去的日期/时间戳：事件数据最长为10年。</li><li>关于未来日期/时间戳：事件数据（预测），最长为1个月。</li></ul> |
 
 {style=&quot;table-layout:auto&quot;}
 
