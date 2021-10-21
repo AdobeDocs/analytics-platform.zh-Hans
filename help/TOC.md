@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 本指南提供 Customer Journey Analytics 自助式帮助内容；Customer Journey Analytics 基于 Adobe Experience Platform，是 Adobe 的新一代跨渠道分析解决方案。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 0fd60f5923a010754a4ccad343934acfa30f358a
+source-git-commit: 20dd79161f813a372901dafa8ba44bb64d301974
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 93%
+source-wordcount: '560'
+ht-degree: 92%
 
 ---
 
@@ -159,8 +159,21 @@ ht-degree: 93%
       + [操作员](components/filters/operators.md)
    + 计算量度 {#cja-calcmetrics}
       + [计算量度概述](components/calc-metrics/calc-metr-overview.md)
-      + [创建计算量度](components/calc-metrics/create.md)
-      + [管理计算量度](components/calc-metrics/manage.md)
+      + 计算量度工作流程 {#cm-workflow}
+         + [计算指标工作流程](components/calc-metrics/cm-workflow/cm-workflow.md)
+         + [查找指标](components/calc-metrics/cm-workflow/cm-finding.md)
+         + [生成指标](components/calc-metrics/cm-workflow/cm-build-metrics.md)
+         + [指标类型和归因](components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
+         + [构建简单的“每次访问的页面查看次数”指标](components/calc-metrics/cm-workflow/cm-pvv.md)
+         + [过滤量度](components/calc-metrics/cm-workflow/metrics-with-segments.md)
+         + [堆叠和替换区段](components/calc-metrics/cm-workflow/cm-stack-seg.md)
+         + [过滤和加权指标](components/calc-metrics/cm-workflow/cm-weighted-metric.md)
+         + [使用函数](components/calc-metrics/cm-workflow/cm-using-functions.md)
+         + [参与率指标](components/calc-metrics/cm-workflow/participation-metric.md)
+         + [标记计算指标](components/calc-metrics/cm-workflow/cm-tagging.md)
+         + [批准计算指标](components/calc-metrics/cm-workflow/cm-approving.md)
+         + [共享计算指标](components/calc-metrics/cm-workflow/cm-sharing.md)
+         + [计算指标管理器](components/calc-metrics/cm-workflow/cm-manager.md)
       + [基本功能](components/calc-metrics/cm-functions.md)
       + [高级功能](components/calc-metrics/cm-adv-functions.md)
    + 日期范围 {#cja-date-ranges}
