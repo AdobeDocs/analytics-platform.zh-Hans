@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics 指南
 source-git-commit: 0fd60f5923a010754a4ccad343934acfa30f358a
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 89%
+ht-degree: 93%
 
 ---
 
@@ -39,17 +39,17 @@ ht-degree: 89%
 + 数据视图 {#cja-dataviews}
    + [数据视图概述](data-views/data-views.md)
    + [创建或编辑数据视图](data-views/create-dataview.md)
-   + 组件设置{#component-settings}
+   + 组件设置 {#component-settings}
       + [组件设置概述](data-views/component-settings/overview.md)
       + [归因](data-views/component-settings/attribution.md)
       + [行为](data-views/component-settings/behavior.md)
       + [格式](data-views/component-settings/format.md)
-      + [包含/排除值](data-views/component-settings/include-exclude-values.md)
-      + [量度去重](data-views/component-settings/metric-deduplication.md)
-      + [没有值选项](data-views/component-settings/no-value-options.md)
+      + [包括/排除值](data-views/component-settings/include-exclude-values.md)
+      + [指标去重](data-views/component-settings/metric-deduplication.md)
+      + [无值选项](data-views/component-settings/no-value-options.md)
       + [持久性](data-views/component-settings/persistence.md)
       + [值分段](data-views/component-settings/value-bucketing.md)
-   + [标准组件引用](data-views/component-reference.md)
+   + [标准组件参考](data-views/component-reference.md)
    + [数据视图用例](data-views/data-views-usecases.md)
 + Workspace 项目 {#cja-workspace}
    + [Analysis Workspace 概述](analysis-workspace/home.md)
@@ -154,8 +154,8 @@ ht-degree: 89%
       + [筛选器概述](components/filters/filters-overview.md)
       + [创建筛选器](components/filters/create-filters.md)
       + [管理筛选器](components/filters/manage-filters.md)
-      + [快速过滤器](components/filters/quick-filters.md)
-      + [临时过滤器](components/filters/ad-hoc-filters.md)
+      + [快速筛选器](components/filters/quick-filters.md)
+      + [临时筛选器](components/filters/ad-hoc-filters.md)
       + [操作员](components/filters/operators.md)
    + 计算量度 {#cja-calcmetrics}
       + [计算量度概述](components/calc-metrics/calc-metr-overview.md)

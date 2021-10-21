@@ -5,7 +5,7 @@ exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 source-git-commit: ff1f28015a2c52f79fae975c16bb7cb76f6179c3
 workflow-type: tm+mt
 source-wordcount: '1099'
-ht-degree: 84%
+ht-degree: 89%
 
 ---
 
@@ -23,13 +23,13 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 
 您可以在工作区和过滤器生成器中创建不同类型的过滤器，具体取决于它们需要的复杂程度、它们是否应仅应用于此项目等。 以下是过滤器类型的摘要：
 
-| 过滤器类型 | 创建位置？ | 适用位置？ | 使用时间 |
+| 过滤器类型 | 在何处创建？ | 适用于何处？ | 使用时间 |
 | --- | --- | --- | --- |
-| 组件列表过滤器 | 单击+，此时将转到[过滤器生成器](/help/components/filters/create-filters.md) | 所有工作区项目 | 对于更复杂的过滤器，顺序过滤器 |
-| 快速筛选 | [快速过滤器生成器](/help/components/filters/quick-filters.md) | 仅限项目，但可以保存并添加到区段列表。 | 灵活地添加/编辑一个或多个规则 |
-| 临时项目过滤器 | [将拖放到项目中的区段拖放区域](/help/components/filters/ad-hoc-filters.md) | 仅限项目，但可以保存并添加到过滤器列表。 | 对于单规则过滤器 |
-| 流失分析中的过滤器 | [流失可](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) 视化图表(Analysis Workspace) | 对于单个流失可视化图表 | 从接触点创建过滤器，添加过滤器作为接触点，并比较各种过滤器中的关键工作流程 |
-| 基于计算量度的过滤器 | [计算量度生成器](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html) | 到单个计算量度 | 在量度定义中应用过滤器 |
+| 组件列表过滤器 | 单击+，此时将转到 [过滤器生成器](/help/components/filters/create-filters.md) | 您的所有工作区项目 | 对于更复杂的过滤器，顺序过滤器 |
+| 快速筛选 | [快速过滤器生成器](/help/components/filters/quick-filters.md) | 仅用于项目，但可保存并添加到您的区段列表。 | 灵活地添加/编辑一条或多条规则 |
+| 临时项目过滤器 | [拖放到项目中的区段放置区域](/help/components/filters/ad-hoc-filters.md) | 仅限项目，但可以保存并添加到过滤器列表。 | 对于单规则过滤器 |
+| 流失分析中的过滤器 | [流失可视化图表](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) 在Analysis Workspace | 对于单个流失可视化图表 | 从接触点创建过滤器，添加过滤器作为接触点，并比较各种过滤器中的关键工作流程 |
+| 基于计算量度的过滤器 | [计算指标生成器](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html?lang=zh-Hans) | 适用于个别计算指标 | 在量度定义中应用过滤器 |
 
 ## 顺序过滤器
 
@@ -74,7 +74,7 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 * 会话编号
 * 登录页面
 * 回访频度
-* 参与指标
+* 参与率指标
 * 线性分配的指标
 
 ### 事件容器
@@ -94,4 +94,4 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 
 | 过滤器名称 | 描述 |
 | --- | --- |
-| 所有数据 | 这是一个必需过滤器，向自由格式表的行中添加量度后，此过滤器会动态添加到报告中。 |
+| 所有数据 | 这是一个必要的筛选器，当有指标添加到自由格式表的行时，即动态地将此筛选器添加到报表。 |
