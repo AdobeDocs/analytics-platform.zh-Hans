@@ -2,11 +2,10 @@
 description: 列设置允许您配置列格式，其中一些可以是条件格式。
 title: 列设置
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
-translation-type: ht
-source-git-commit: 2d83d796f053465eb9543daa37068f316bccc659
-workflow-type: ht
-source-wordcount: '628'
-ht-degree: 100%
+source-git-commit: 1250d9e39d055fbe9dee9a10d74dac3f3f7661bb
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 98%
 
 ---
 
@@ -14,7 +13,11 @@ ht-degree: 100%
 
 [!UICONTROL 列设置]允许您配置列格式，其中一些可以是条件格式。
 
-## 编辑[!UICONTROL 列设置]{#edit-column-settings}
+请在此处查看有关行和列设置的视频：
+
+>[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
+
+## 编辑[!UICONTROL 列设置] {#edit-column-settings}
 
 要访问“[!UICONTROL 列设置]”，请将自由格式表拖到项目中，然后单击列标题中的齿轮图标。
 
