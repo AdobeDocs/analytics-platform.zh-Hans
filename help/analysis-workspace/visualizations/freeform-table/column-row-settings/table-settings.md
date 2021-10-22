@@ -3,7 +3,7 @@ description: 行设置因您拖入到表格中的组件而异。
 title: 行设置
 uuid: f30c31d5-1fd4-4b93-94c3-ca441099fe2e
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
-source-git-commit: 941c32ce5ec9bfec020a68297397574f687d5e2b
+source-git-commit: 7abd4d08f02597aed1af27970b8497898a553a10
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 82%
@@ -31,7 +31,7 @@ ht-degree: 82%
 
 要更改显示的行数，请执行以下操作：
 
-1. 单击表顶部“行”旁边的数字。
+1. 单击旁边的数字 [!UICONTROL 行] 在桌子顶部。
 
    ![](assets/row-number.png)
 
