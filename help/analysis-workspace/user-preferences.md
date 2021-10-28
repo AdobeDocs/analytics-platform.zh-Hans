@@ -2,10 +2,10 @@
 title: 如何在 Analysis Workspace 中设置用户首选项
 description: 可设置用户的常规和项目首选项。
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
-source-git-commit: 836a99c03671b4145890c8b37f5123a841a85543
-workflow-type: ht
-source-wordcount: '188'
-ht-degree: 100%
+source-git-commit: 80a41d5678728eaab8a8a66455c8e1e8f1cdbb8e
+workflow-type: tm+mt
+source-wordcount: '230'
+ht-degree: 81%
 
 ---
 
@@ -38,3 +38,14 @@ ht-degree: 100%
 |  | [面板类型](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=zh-Hans) | <ul><li>自由格式（默认）</li><li>空白</li><li>快速见解</li></ul> |
 |  | 数字格式 | <ul><li>1,000.00（默认）</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | CSV 分隔符 | <ul><li>逗号（默认）</li><li>分号</li><li>冒号</li><li>竖线</li><li>句点</li><li>空格</li><li>制表符</li></ul> |
+
+## [!UICONTROL 深色主题]
+
+如果您希望Customer Journey Analytics用户界面具有深色背景，则可以切换到 [!UICONTROL 深色主题].
+
+1. 单击右上方的Experience Cloud用户图标。
+
+   ![暗主题](assets/dark-theme.png)
+
+1. 移动 **[!UICONTROL 深色主题]** 切换到右侧。
+

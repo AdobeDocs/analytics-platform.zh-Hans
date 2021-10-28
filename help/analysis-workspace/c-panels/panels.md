@@ -2,27 +2,27 @@
 description: 面板是表格和可视化图表的集合
 title: 面板概述
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 80a41d5678728eaab8a8a66455c8e1e8f1cdbb8e
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 62%
+source-wordcount: '845'
+ht-degree: 60%
 
 ---
 
 # 面板概述
 
-[!UICONTROL 面板]是表格和可视化图表的集合您可以从 Workspace 左上角的图标或[空白面板](/help/analysis-workspace/c-panels/blank-panel.md)访问面板。当您想要根据时间段、数据视图或分析用例来组织项目时，面板会很有帮助。 Analysis Workspace 中提供了以下面板类型：
+[!UICONTROL 面板]是表格和可视化图表的集合可从工作区左上角的图标或[空白面板](/help/analysis-workspace/c-panels/blank-panel.md)访问面板。当您想要根据时间段、数据视图或分析用例来组织项目时，面板会很有帮助。 Analysis Workspace 中提供了以下面板类型：
 
 | 面板名称 | 描述 |
 | --- | --- |
 | [空白面板](/help/analysis-workspace/c-panels/blank-panel.md) | 从可用的面板和可视化图表中选择以开始分析。 |
 | [“快速分析”面板](quickinsight.md) | 快速构建自由格式表和随附的可视化图表，以便更快地分析和发现见解。 |
-| [归因面板](attribution.md) | 使用任意维度和转化量度，快速比较和可视化任意数量的归因模型。 |
+| [归因面板](attribution.md) | 使用任意维度和转化指标，快速比较和可视化任意数量的归因模型。 |
 | [自由格式面板](freeform-panel.md) | 不受限制地执行比较和细分，然后添加可视化图表来讲述丰富的数据案例。 |
 
 ![](assets/panel-overview.png)
 
-[!UICONTROL 快速分析]、Blank和    Freeformpanels是开始分析的绝佳选择，而归因IQ则适 [!UICONTROL 用于] 更高级的分析。项目中有一个 `"+"` 按钮，通过该按钮，您可以随时添加空白面板。
+[!UICONTROL 快速分析], [!UICONTROL 空白] 和 [!UICONTROL 自由格式] 面板是开始分析的绝佳位置，而 [!UICONTROL Attribution IQ] 更为先进的分析。 项目中有一个 `"+"` 按钮，通过该按钮，您可以随时添加空白面板。
 
 默认开始面板是[!UICONTROL 自由格式]面板，但您也可以将[空白面板](/help/analysis-workspace/c-panels/blank-panel.md)设置为默认值。
 
@@ -34,17 +34,19 @@ ht-degree: 62%
 
 ![](assets/panel-calendar.png)
 
+您可以在面板日历的高级设置下应用分钟级日期范围。 如果您报告的日期范围跨越多天，则开始时间适用于第一天，结束时间适用于范围内的最后一天。
+
 ## 拖放区域 {#dropzone}
 
 通过面板拖放区域，您可以将过滤器和下拉列表过滤器应用到面板中的所有表和可视化图表。 您可以将一个或多个过滤器应用到面板。各个过滤器上方的标题可以通过单击铅笔图标进行修改，您也可以右键单击以将其全部删除。
 
-### 过滤器
+### 筛选器
 
 将左边栏中的任意过滤器拖放到面板拖放区域，以开始过滤面板。
 
 ![](assets/segment-filter.png)
 
-### 临时过滤器
+### 临时筛选器
 
 也可以将非过滤器组件直接拖入拖放区以创建临时过滤器，从而节省您转到过滤器生成器的时间和精力。 通过这种方式创建的过滤器会自动定义为点击级别的过滤器。 可以修改此定义，方法是单击过滤器旁边的信息图标(i)，然后单击铅笔形的编辑图标，并在过滤器生成器中对其进行编辑。
 
@@ -63,12 +65,12 @@ ht-degree: 62%
 要创建下拉过滤器，请执行以下操作：
 
 1. 要使用[!UICONTROL 维度项]创建下拉过滤器，例如[!UICONTROL 营销渠道]维度，请在左边栏中单击该维度旁边的右箭头图标。这会打开所有可用项。从左边栏中选择一个或多个组件项，然后&#x200B;**在按住 Shift 键的同时**&#x200B;将其放到面板拖放区域中。这会将组件转换为下拉过滤器，而不是单个过滤器。
-1. 要使用其他组件（如量度、过滤器或日期范围）创建下拉过滤器，请从左边栏中的一个组件类型中进行选择，然后放入面板拖放区&#x200B;**中，同时按住Shift键**。
+1. 要使用其他组件（如量度、过滤器或日期范围）创建下拉过滤器，请从左边栏的一个组件类型中进行选择，然后放入面板拖放区域 **同时按住Shift键**.
 1. 从下拉过滤器中选择以下选项之一来更改面板中的数据。您也可以通过选择&#x200B;**[!UICONTROL 无过滤器]**&#x200B;来不过滤任何面板数据。
 
 ![](assets/create-dropdown.png)
 
-[观看视频](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html)以详细了解如何将下拉过滤器添加到项目中。
+[观看视频](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html?lang=zh-Hans)以详细了解如何将下拉过滤器添加到项目中。
 
 ## 右键单击菜单 {#right-click}
 
