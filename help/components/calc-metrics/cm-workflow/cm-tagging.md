@@ -2,7 +2,7 @@
 description: 在计算量度管理器中，您可以通过标记区段来组织区段。
 title: 标记计算量度
 source-git-commit: cefc5696efa8c1b68d6227d06a03014fbc5e3ff1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '200'
 ht-degree: 100%
 
