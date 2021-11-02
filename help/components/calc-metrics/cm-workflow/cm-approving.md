@@ -2,7 +2,7 @@
 description: 在计算量度管理器内，您可以设置一个工作流程，用于批准多个级别的应用程序和特定部门或群组的量度。
 title: 批准计算量度
 source-git-commit: cefc5696efa8c1b68d6227d06a03014fbc5e3ff1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '144'
 ht-degree: 100%
 
