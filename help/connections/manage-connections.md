@@ -3,9 +3,9 @@ title: 管理连接
 description: 描述如何在 Customer Journey Analytics (CJA) 中管理与 Experience Platform 数据集的连接。
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: 6d1907d676ea01b3956d5ce2ce76d43d7a8f0f1d
+source-git-commit: 3103e02bb49b6e5913c8a71d7ecf436b5ee90d11
 workflow-type: tm+mt
-source-wordcount: '1871'
+source-wordcount: '1866'
 ht-degree: 81%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 81%
 * 重命名连接。
 * 从连接中创建一个数据视图。
 
-![管理连接](assets/conn-manager.png)
+![](assets/conn-manager.png)
 
 | 设置 | 描述 |
 | --- | --- |
@@ -85,7 +85,7 @@ ht-degree: 81%
 
 以下是构件和设置解释：
 
-![查看连接详细信息](assets/conn-details.png)
+![](assets/conn-details.png)
 
 | 构件/设置 | 描述 |
 | --- | --- |
