@@ -3,7 +3,7 @@ title: 管理连接
 description: 描述如何在 Customer Journey Analytics (CJA) 中管理与 Experience Platform 数据集的连接。
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: 4ac2d58cd14df8a6aae5728b4fabd11ec47abbed
+source-git-commit: 61f11ed1d91d7a5da7aabbec1fe961b9b0842450
 workflow-type: tm+mt
 source-wordcount: '1942'
 ht-degree: 77%
@@ -141,7 +141,7 @@ ht-degree: 77%
 | [!UICONTROL 架构] | 显示此数据集所基于的Adobe Experience Platform架构。 |
 | [!UICONTROL 数据集 ID] | 此 ID 是系统在 Adobe Experience Platform 中生成的。 |
 
-### 编辑连接
+## 编辑连接
 
 允许管理员编辑连接。选择一个连接，然后单击[!UICONTROL 编辑连接]转入该对话框。在这里，您可以执行以下操作：
 
