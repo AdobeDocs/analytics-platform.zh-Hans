@@ -3,10 +3,10 @@ title: 管理连接
 description: 描述如何在 Customer Journey Analytics (CJA) 中管理与 Experience Platform 数据集的连接。
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: 3103e02bb49b6e5913c8a71d7ecf436b5ee90d11
+source-git-commit: 4ac2d58cd14df8a6aae5728b4fabd11ec47abbed
 workflow-type: tm+mt
-source-wordcount: '1866'
-ht-degree: 81%
+source-wordcount: '1942'
+ht-degree: 77%
 
 ---
 
@@ -33,6 +33,8 @@ ht-degree: 81%
 * 从连接中创建一个数据视图。
 
 ![](assets/conn-manager.png)
+
+### 连接管理器设置
 
 | 设置 | 描述 |
 | --- | --- |
@@ -87,6 +89,8 @@ ht-degree: 81%
 
 ![](assets/conn-details.png)
 
+### 连接详细信息设置
+
 | 构件/设置 | 描述 |
 | --- | --- |
 | 数据集选择器 | 允许您选择连接中的一个或全部数据集。不能选择其他数量的数据集。默认为[!UICONTROL 全部数据集]。 |
@@ -94,7 +98,7 @@ ht-degree: 81%
 | [!UICONTROL 可用的事件数据记录数]构件 | 表示&#x200B;**对于整个连接**&#x200B;可用于报表的事件数据集总行数。此数与任何日历设置无关。如果您从数据集选择器中选择了一个数据集，或者在表中选择了一个数据集，则该数会变化。（请注意，添加数据后，数据延迟 1-2 个小时后才会出现在报告中。） |
 | [!UICONTROL 量度]构件 | 汇总&#x200B;**对于所选择的数据集和日期范围**&#x200B;添加/跳过/删除的事件记录以及添加的批次数。 |
 | [!UICONTROL 添加的记录数]构件 | 指示在选定时间段，**为您选择的数据集和日期范围**&#x200B;添加了多少行。每 10 分钟更新一次。**注意**：**[!UICONTROL 添加的记录数]**&#x200B;的数据目前仅包括事件数据，而不包括配置文件或查找数据。 |
-| [!UICONTROL 跳过的记录数]构件 | 指示在选定的时间段内跳过了多少行（对于您选择的数据集和日期范围&#x200B;**）。**&#x200B;跳过记录的原因包括：缺少时间戳、缺少或人员ID无效等。 每 10 分钟更新一次。<p>无效的人员ID（未定义，全部为零）不能归因于任何特定用户或人员。 无法将它们摄取到系统中，并且会导致获取和报告流程出错。 要修复无效的人员ID，您有3个选项：<ul><li>使用拼合功能，使用有效的用户ID填充未定义或全零用户ID。</li><li>将用户ID留空，在摄取期间也会跳过该用户ID（优于无效或全零用户ID）。</li><li>在摄取数据之前，修复系统中任何无效的用户ID。</li></ul><p>**注意**：**[!UICONTROL 跳过的记录数]**&#x200B;的数据目前仅包括事件数据，而不包括配置文件或查找数据。 |
+| [!UICONTROL 跳过的记录数]构件 | 指示在选定的时间段内跳过了多少行（对于您选择的数据集和日期范围&#x200B;**）。**&#x200B;跳过记录的原因包括：缺少时间戳、缺少或人员ID无效等。 每 10 分钟更新一次。<p>人员ID无效(如“未定义”、“00000000”，或 [!UICONTROL 人员ID] 在给定月内超过100万次的事件中显示的事件)不能归因于任何特定用户或人员。 无法将它们摄取到系统中，并且会导致容易出错的摄取和报告。 要修复无效的人员ID，您有3个选项：<ul><li>使用 [跨渠道分析](/help/connections/cca/overview.md) 用有效的用户ID填充未定义或全部为零的用户ID。</li><li>将用户ID留空，在摄取期间也会跳过该用户ID（优于无效或全零用户ID）。</li><li>在摄取数据之前，修复系统中任何无效的用户ID。</li></ul><p>**注意**：**[!UICONTROL 跳过的记录数]**&#x200B;的数据目前仅包括事件数据，而不包括配置文件或查找数据。 |
 | [!UICONTROL 删除的记录数]构件 | 指示在选定时间段，**为您选择的数据集和日期范围**&#x200B;删除了多少行。例如，有人可能在 Experience Platform 中删除了一个数据集。每 10 分钟更新一次。**注意**：**[!UICONTROL 删除的记录数]**&#x200B;的数据目前仅包括事件数据，而不包括配置文件或查找数据。 |
 | 数据集搜索框 | 您可以按数据集名称或[!UICONTROL 数据集 ID] 来搜索。 |
 | [!UICONTROL 数据集] | 显示作为连接一部分的数据集。您可以单击超链接来查看连接中的全部数据集。 |
@@ -103,7 +107,11 @@ ht-degree: 81%
 | [!UICONTROL 上次添加] | 显示此数据集中最后添加的批次的时间戳。 |
 | [!UICONTROL 数据集类型] | 此数据集的数据集类型可以是[!UICONTROL 事件]、[!UICONTROL 查找]或[!UICONTROL 档案]。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans#configure-dataset) |
 | 架构 | 此连接中的数据集所基于的 Adobe Experience Platform 架构。 |
-| **连接层的右侧边栏** |  |
+
+### 连接级别的右侧边栏设置
+
+| 设置 | 描述 |
+| --- | --- |
 | [!UICONTROL 刷新] | 刷新连接以便反映最近添加的记录。 |
 | [!UICONTROL 删除] | 删除此连接。 |
 | [!UICONTROL 创建数据视图] | 基于此连接创建新的数据视图。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en) |
@@ -117,13 +125,17 @@ ht-degree: 81%
 | [!UICONTROL 创建者] | 显示创建连接的人员的姓名。 |
 | [!UICONTROL 最近修改] | 显示连接上次更改的日期和时间。 |
 | [!UICONTROL 上一次修改人] | 显示上次修改连接的人员。 |
-| **数据集层的右侧边栏** |  |
+
+### 数据集级别的右侧边栏设置
+
+| 设置 | 描述 |
+| --- | --- |
 | [!UICONTROL 人员 ID] | 在 Experience Platform 中显示在数据集架构中定义的身份。这是您在创建连接期间选择的人员 ID。如果您创建的连接包含具有不同 ID 的数据集，则报告中会反映这一点。要真正合并数据集，您需要跨数据集使用相同的人员ID。 |
 | [!UICONTROL 可用的记录数] | 表示对于通过日历选择的特定时段为此数据集引入的总行数。添加数据后，数据立刻在报告中显示，没有延迟。（创建全新连接时的情况例外，此时有[延迟](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans#3.-getting-data-into-customer-journey-analytics)。） |
 | [!UICONTROL 添加的记录数] | 指示在选定的时间段内添加了多少行。 **注意**：**[!UICONTROL 添加的记录数]**&#x200B;的数据目前仅包括事件数据，而不包括配置文件或查找数据。 |
 | [!UICONTROL 删除的记录数] | 指示在选定时间段内删除了多少个记录。 **注意**：**[!UICONTROL 删除的记录数]**&#x200B;的数据目前仅包括事件数据，而不包括配置文件或查找数据。 |
 | [!UICONTROL 添加了批次] | 指示已向此数据集添加了多少个数据批次。 |
-| [!UICONTROL 跳过的记录数] | 指示在选定的时间段内在摄取期间跳过了多少行。<p>无效的人员ID（未定义，全部为零）不能归因于任何特定用户或人员。 无法将它们摄取到系统中，并且会导致获取和报告流程出错。 要修复无效的人员ID，您有3个选项：<ul><li>使用拼合功能，使用有效的用户ID填充未定义或全零用户ID。</li><li>将用户ID留空，在摄取期间也会跳过该用户ID（优于无效或全零用户ID）。</li><li>在摄取数据之前，修复系统中任何无效的用户ID。</li></ul><p>**注意**：**[!UICONTROL 跳过的记录数]**&#x200B;的数据目前仅包括事件数据，而不包括配置文件或查找数据。 |
+| [!UICONTROL 跳过的记录数] | 指示在选定的时间段内在摄取期间跳过了多少行。<p>跳过记录的原因包括：缺少时间戳、缺少或人员ID无效等。 每 10 分钟更新一次。<p>人员ID无效(如“未定义”、“00000000”，或 [!UICONTROL 人员ID] 在给定月内超过100万次的事件中显示的事件)不能归因于任何特定用户或人员。 无法将它们摄取到系统中，并且会导致容易出错的摄取和报告。 要修复无效的人员ID，您有3个选项：<ul><li>使用 [跨渠道分析](/help/connections/cca/overview.md) 用有效的用户ID填充未定义或全部为零的用户ID。</li><li>将用户ID留空，在摄取期间也会跳过该用户ID（优于无效或全零用户ID）。</li><li>在摄取数据之前，修复系统中任何无效的用户ID。</li></ul><p>**注意**：**[!UICONTROL 跳过的记录数]**&#x200B;的数据目前仅包括事件数据，而不包括配置文件或查找数据。 |
 | [!UICONTROL 上次添加] | 指示上次添加批处理的时间。 |
 | [!UICONTROL 数据集类型] | [!UICONTROL 事件]、[!UICONTROL 查找]或[!UICONTROL 档案]。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
 | [!UICONTROL 架构] | 显示此数据集所基于的Adobe Experience Platform架构。 |
