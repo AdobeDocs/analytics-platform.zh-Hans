@@ -3,10 +3,10 @@ title: 管理连接
 description: 描述如何在 Customer Journey Analytics (CJA) 中管理与 Experience Platform 数据集的连接。
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: fa87337c10a1621142137b427c1986fafc70d9f7
+source-git-commit: 6b9a725cf31385576f358c137a1e6ba71cd74f95
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 93%
+source-wordcount: '1701'
+ht-degree: 89%
 
 ---
 
@@ -114,19 +114,19 @@ ht-degree: 93%
 | [!UICONTROL 使用连接的数据视图] | 列出使用此连接的所有数据视图。 |
 | [!UICONTROL 导入新数据] | （开/关）指示是否应将新批量数据添加到历史（回填）数据中。 |
 | [!UICONTROL 回填数据] | 跟踪回填（历史）数据的 3 种状态：[!UICONTROL 队列中]、[!UICONTROL 进行中]（同时显示进度百分比）和[!UICONTROL 完成]。 |
-| [!UICONTROL 创建者] | 创建连接的人员的姓名。 |
-| [!UICONTROL 最近修改] | 上次更改连接的日期和时间。 |
-| [!UICONTROL 上一次修改人] | 上次修改连接的人员。 |
+| [!UICONTROL 创建者] | 显示创建连接的人员的姓名。 |
+| [!UICONTROL 最近修改] | 显示连接上次更改的日期和时间。 |
+| [!UICONTROL 上一次修改人] | 显示上次修改连接的人员。 |
 | **数据集层的右侧边栏** |  |
 | [!UICONTROL 人员 ID] | 在 Experience Platform 中显示在数据集架构中定义的身份。这是您在创建连接期间选择的人员 ID。如果您创建的连接包含具有不同 ID 的数据集，则报告中会反映这一点。要真正合并数据集，您需要跨数据集使用相同的人员ID。 |
 | [!UICONTROL 可用的记录数] | 表示对于通过日历选择的特定时段为此数据集引入的总行数。添加数据后，数据立刻在报告中显示，没有延迟。（创建全新连接时的情况例外，此时有[延迟](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans#3.-getting-data-into-customer-journey-analytics)。） |
-| [!UICONTROL 添加的记录数] | 在所选时段中添加了多少行。**注意**：**[!UICONTROL 添加的记录数]**&#x200B;的数据目前仅包括事件数据，而不包括配置文件或查找数据。 |
-| [!UICONTROL 删除的记录数] | 在所选时段期间添加了多少条记录。**注意**：**[!UICONTROL 删除的记录数]**&#x200B;的数据目前仅包括事件数据，而不包括配置文件或查找数据。 |
-| [!UICONTROL 添加了批次] | 有多少数据批次添加到此数据集。 |
-| [!UICONTROL 跳过的记录数] | 在所选时段中引入期间跳过了多少行。**注意**：**[!UICONTROL 跳过的记录数]**&#x200B;的数据目前仅包括事件数据，而不包括配置文件或查找数据。 |
-| [!UICONTROL 上次添加] | 添加最后批次的时间。 |
+| [!UICONTROL 添加的记录数] | 指示在选定的时间段内添加了多少行。 **注意**：**[!UICONTROL 添加的记录数]**&#x200B;的数据目前仅包括事件数据，而不包括配置文件或查找数据。 |
+| [!UICONTROL 删除的记录数] | 指示在选定时间段内删除了多少个记录。 **注意**：**[!UICONTROL 删除的记录数]**&#x200B;的数据目前仅包括事件数据，而不包括配置文件或查找数据。 |
+| [!UICONTROL 添加了批次] | 指示已向此数据集添加了多少个数据批次。 |
+| [!UICONTROL 跳过的记录数] | 指示在选定的时间段内在摄取期间跳过了多少行。 **注意**：**[!UICONTROL 跳过的记录数]**&#x200B;的数据目前仅包括事件数据，而不包括配置文件或查找数据。 |
+| [!UICONTROL 上次添加] | 指示上次添加批处理的时间。 |
 | [!UICONTROL 数据集类型] | [!UICONTROL 事件]、[!UICONTROL 查找]或[!UICONTROL 档案]。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
-| [!UICONTROL 架构] | 此数据集所基于的 Adobe Experience Platform 架构。 |
+| [!UICONTROL 架构] | 显示此数据集所基于的Adobe Experience Platform架构。 |
 | [!UICONTROL 数据集 ID] | 此 ID 是系统在 Adobe Experience Platform 中生成的。 |
 
 ### 编辑连接
