@@ -2,10 +2,11 @@
 title: Customer Journey Analytics 常见问题解答
 description: Customer Journey Analytics — 常见问题解答。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
-source-git-commit: 688c7ee9debd82bbeb1e95461e9d95a8d1bd220b
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
 source-wordcount: '1649'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -44,18 +45,18 @@ ht-degree: 93%
 | 如何将 [!UICONTROL Adobe Analytics] 数据载入到 [!UICONTROL Customer Journey Analytics]？ | [!UICONTROL Adobe Analytics] 数据可以通过 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 连接到 Experience Platform。大多数 [!UICONTROL Adobe Analytics] 字段以 XDM 格式转入，但其他字段尚不可用。 |
 | 将数据集元素组合到数据视图中需要多长时间？ | 最初只需几个小时，回填最近 13 个月的数据则需要几天的时间。 |
 | 是否必须导入 PII 数据才能在数据之间建立连接？ | 否，您可以使用任何 ID，包括客户 ID 的哈希，该哈希不是 PII。 |
-| 在CJA事件数据集中摄取过去或未来日期/时间戳有何限制？ | <ul><li>关于过去的日期/时间戳：事件数据最长为10年。</li><li>关于未来日期/时间戳：事件数据（预测），最长为1个月。</li></ul> |
+| 将过去或未来日期/时间戳摄取到 CJA 事件数据集中有什么限制？ | <ul><li>关于过去日期/时间戳：最多 10 年前的事件数据。</li><li>关于未来日期/时间戳（预测）：最多未来 1 个月。</li></ul> |
 
 {style=&quot;table-layout:auto&quot;}
 
-## 4.延迟注意事项
+## 4. 延迟注意事项
 
 >[!NOTE]
->CJA中没有固定的数据大小，因此Adobe无法提交到标准摄取时间。 我们正积极通过新更新和引入优化来减少这些延迟。
+>CJA 中没有固定的数据大小，因此 Adobe 无法承诺标准摄取时间。我们正在积极地努力通过新的更新和摄取优化来缩短这些延迟。
 
 | 问题 | 回答 |
 | --- | --- |
-| 在 [!UICONTROL Adobe Experience Platform] 上，[!UICONTROL Customer Journey Analytics] 的预期滞后时间是多少？ | <ul><li>实时数据或事件：在AEP中提供数据后，在90分钟内处理并摄取。</li><li>批量> 5,000万行：超过90分钟。</li><li>小型回填 — 例如，一个1000万行的查询数据集：24小时内<li>大回填 — 例如，5000亿行：30天</li></ul> |
+| 在 [!UICONTROL Adobe Experience Platform] 上，[!UICONTROL Customer Journey Analytics] 的预期滞后时间是多少？ | <ul><li>实时数据或事件：当数据在 AEP 中可用后，在 90 分钟内处理和摄取。</li><li>批次大小 > 500 万行：超过 90 分钟。</li><li>少量回填 - 例如，查找 100 万行的数据集：24 小时内<li>大量回填 - 例如，5000 亿行：30 天</li></ul> |
 
 
 ## 5. 传统 [!UICONTROL Adobe Analytics] 组件
@@ -94,7 +95,7 @@ ht-degree: 93%
 | --- | --- |
 | 变量 | [!UICONTROL eVars] 等变量在报表包间可能不一致。例如，报表包 1 中的 eVar1 可能指向&#x200B;**[!UICONTROL 页面]**。在报表包 2 中，eVar1 可能指向&#x200B;**[!UICONTROL 内部活动]**，导致报表变得混乱而又不准确。 |
 | [!UICONTROL 会话]数和[!UICONTROL 人员]数 | 在报表包间将为其去重。因此，这些数量可能不一致。 |
-| 指标去重 | 如果有多行的交易 ID（例如，[!UICONTROL 购买 ID]）相同，请为指标的实例（例如，[!UICONTROL 订单]）去重。这样可防止过度计算关键指标。因此，[!UICONTROL 订单]等指标可能不在报表包间累加。 |
+| 量度去重 | 如果有多行的交易 ID（例如，[!UICONTROL 购买 ID]）相同，请为指标的实例（例如，[!UICONTROL 订单]）去重。这样可防止过度计算关键指标。因此，[!UICONTROL 订单]等指标可能不在报表包间累加。 |
 | 货币 | CJA 中尚不支持货币转换。如果尝试合并的报表包使用不同的基础货币，则可能会出现问题。 |
 | [!UICONTROL 持久性] | [持久性](../data-views/component-settings/persistence.md)作用于各个报表包，它影响[!UICONTROL 筛选器]、[!UICONTROL 归因]等等。数值可能无法正确地累加。 |
 | [!UICONTROL 分类] | 在合并报表包时，不会自动为[!UICONTROL 分类]去重。将多个分类文件合并为一个[!UICONTROL 查找]数据集时，可能会遇到问题。 |

@@ -1,38 +1,39 @@
 ---
-title: 如何在CJA中配置Report Builder设置
-description: 介绍如何设置离线模式、语言、截止日期和疑难解答设置。
+title: 如何在 CJA 中为 Report Builder 配置设置
+description: 介绍如何设置离线模式、语言、截止日期以及故障排除设置。
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
-source-git-commit: b655813816b2a8e0d47b035eefa11926f106ee0e
+exl-id: 32423cb4-1a4c-4ea3-ad4b-9520aff9ae4b
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
 source-wordcount: '256'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
+# Report Builder 设置
 
-# Report Builder设置
+使用&#x200B;**设置**&#x200B;窗格可以配置应用程序级别的设置，例如 UI 显示的语言或者是否在离线模式下工作。这些设置会立即应用，并设定用于所有未来的会话，直至发生更改。
 
-使用&#x200B;**Settings**&#x200B;窗格配置应用程序级设置（如UI显示的语言），或者是否在脱机模式下工作。 将立即应用这些设置，并为以后的所有会话设置这些设置，直到它们被更改为止。
+更改 Report Builder 设置
 
-更改Report Builder设置
+1. 单击&#x200B;**设置**&#x200B;图标
 
-1. 单击&#x200B;**Settings**&#x200B;图标。
-
-1. 更改“启用离线模式”、选择“语言”或“启用疑难解答日志设置”。
+1. 进行更改以启用离线模式、选择语言或者启用故障排除日志设置。
 
 1. 单击&#x200B;**应用**。
 
    ![](./assets/image38.png)
 
-## 脱机模式
+## 离线模式
 
-在离线模式下创建和编辑数据块时，不会检索数据。 相反，会使用模拟数据，以便您能够快速创建和编辑数据块，而无需等待请求运行。 当您重新联机时，*刷新数据块*&#x200B;命令或&#x200B;*刷新所有数据块*&#x200B;命令会刷新您使用实际数据创建的数据块。
+在离线模式下创建和编辑数据块时，不检索数据。相反，使用模拟数据，这样您就可以快速创建和编辑数据块而无需等待请求运行。在您重新在线时，*刷新数据块*&#x200B;命令或&#x200B;*刷新所有数据块*&#x200B;命令使用真实数据刷新您创建的数据块。
 
 启用离线模式
 
-1. 单击&#x200B;**Settings**&#x200B;图标。
+1. 单击&#x200B;**设置**&#x200B;图标。
 
 1. 选择&#x200B;**启用离线模式**。
 
@@ -42,20 +43,20 @@ ht-degree: 2%
 
 ## 语言
 
-您可以选择Report BuilderUI的语言。 提供了所有受支持的Adobe Analytics语言。
+您可以为 Report Builder UI 选择语言。所有支持的 Adobe Analytics 语言都可用。
 
-选择Report BuilderUI中使用的语言
+选择在 Report Builder UI 中使用的语言
 
-1. 单击设置。
+1. 单击“设置”。
 
-1. 从&#x200B;**语言**&#x200B;下拉菜单中选择一种语言。
+1. 从&#x200B;**语言**&#x200B;下拉菜单中选择语言。
 
    ![](./assets/image39.png)
 
-1. 单击&#x200B;**Apply.**
+1. 单击&#x200B;**应用**。
 
-## 疑难解答
+## 故障排除
 
-使用“疑难解答”设置将所有客户端/服务器数据记录到本地文件。 使用此选项可帮助解析支持票证。
+使用“故障排除”设置将所有客户端/服务器数据记录到本地文件。使用此选项帮助解决支持服务单。
 
-要启用“疑难解答”选项，请选择&#x200B;**将报表生成器请求记录到本地文件**。
+要启用故障排除选项，请选择&#x200B;**将 Report Builder 请求记录到本地文件**。

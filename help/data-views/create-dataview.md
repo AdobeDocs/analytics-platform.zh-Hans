@@ -2,8 +2,9 @@
 title: 创建或编辑数据视图
 description: 为创建或编辑数据视图而可调整的所有设置。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 36b7cc72c34e27f90af29146f7a32c525b279b9b
-workflow-type: ht
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 100%
 

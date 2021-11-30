@@ -2,10 +2,11 @@
 title: 如何在 Analysis Workspace 中设置用户首选项
 description: 可设置用户的常规和项目首选项。
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
-source-git-commit: 80a41d5678728eaab8a8a66455c8e1e8f1cdbb8e
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
 source-wordcount: '230'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -41,11 +42,11 @@ ht-degree: 81%
 
 ## [!UICONTROL 深色主题]
 
-如果您希望Customer Journey Analytics用户界面具有深色背景，则可以切换到 [!UICONTROL 深色主题].
+如果您更希望为 Customer Journey Analytics 用户界面使用深色背景，可以切换到[!UICONTROL 深色主题]。
 
-1. 单击右上方的Experience Cloud用户图标。
+1. 单击右上角的 Experience Cloud 用户图标。
 
-   ![暗主题](assets/dark-theme.png)
+   ![dark-theme](assets/dark-theme.png)
 
-1. 移动 **[!UICONTROL 深色主题]** 切换到右侧。
+1. 将&#x200B;**[!UICONTROL 深色主题]**&#x200B;开关移动到右侧。
 

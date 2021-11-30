@@ -4,10 +4,11 @@ title: Adobe Analytics 功能板执行指南
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: a72df772-edd0-45d7-bb64-80fbdaa12f6b
-source-git-commit: 35b76b1c2642d5e8f15f71fed9c75ab37491a901
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
 source-wordcount: '1230'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 97%
 
 通过阅读以下信息，执行用户可以了解有关使用和查看 Adobe Analytics 功能板的最佳实践。要观看演示此信息的视频，请参阅 [Adobe Analytics 功能板应用程序内体验](https://youtu.be/QXqQ_PkArbA)。
 
-本指南旨在帮助执行用户阅读并理解Analytics功能板上的记分卡。 该应用程序允许执行用户在其自己的移动设备上快速、轻松地查看广泛呈现的重要摘要数据。
+本指南旨在帮助执行用户阅读并理解 Analytics 功能板上的记分卡。该应用程序允许执行用户在其自己的移动设备上快速、轻松地查看广泛呈现的重要概要数据。
 
 ## 在设备上设置功能板
 
@@ -52,11 +53,11 @@ ht-degree: 97%
 
 要使用功能板，请执行以下操作：
 
-1. 登录到应用程序。 启动功能板时，将显示登录屏幕。使用现有的 Adobe Analytics 凭据按照提示进行操作。我们同时支持 Adobe ID 和 Enterprise/Federated ID。
+1. 登录到该应用程序。启动功能板时，将显示登录屏幕。使用现有的 Adobe Analytics 凭据按照提示进行操作。我们同时支持 Adobe ID 和 Enterprise/Federated ID。
 
    ![登录序列](assets/signseq.png)
 
-1. 选择一个公司。登录到功能板后，会显示&#x200B;**[!UICONTROL 选择公司]**&#x200B;屏幕。 此屏幕会列出您所属的登录公司。点按与您共享的记分卡所关联的公司名称。
+1. 选择一个公司。登录功能板后，会显示&#x200B;**[!UICONTROL 选择公司]**&#x200B;屏幕。此屏幕会列出您所属的登录公司。点按与您共享的记分卡所关联的公司名称。
 
 1. 然后，记分卡列表会显示与您共享的所有记分卡。点按要查看的记分卡。
 

@@ -2,8 +2,9 @@
 title: 指标去重组件设置
 description: 仅计入指标在报表中第一次出现的情况。
 exl-id: ced0c637-5cbe-47a4-897a-eb79961986a3
-source-git-commit: 181fc4fbf599c5ca34f4786439e83ac0e4a524dd
-workflow-type: ht
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 100%
 

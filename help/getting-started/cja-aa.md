@@ -2,10 +2,11 @@
 title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: 8efb8da477b2680a44294553fdca944461ba0f0c
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
 source-wordcount: '1195'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 99%
 | 计算量度 | 全面支持；请注意，传统 Analysis Workspace 中的任何现有计算量度都不会移植到 CJA。 |
 | 跨设备/跨渠道拼接 | 全面支持；请参阅[跨渠道分析](/help/connections/cca/overview.md)。 |
 | CSV 下载 | 全面支持 |
-| 自定义日历 | 完全支持 |
+| 自定义日历 | 全面支持 |
 | 日期比较 | 全面支持 |
 | 日期范围 | 支持所有日期范围功能。 |
 | 夏令时 | 全面支持 |
@@ -36,7 +37,7 @@ ht-degree: 99%
 | PDF 导出 | 全面支持 |
 | 项目策划 | 全面支持 |
 | 项目链接 | 全面支持 |
-| Report Builder（Excel 插件） | 完全支持（2021年10月） |
+| Report Builder（Excel 插件） | 全面支持（2021 年 10 月） |
 | 报表时间处理 | 全面支持；CJA 完全依赖于报表时间处理。 |
 | 报表 API 访问 | 全面支持；通过 [CJA API](https://www.adobe.io/cja-apis/docs/) 提供。 |
 | 计划报表/项目 | 全面支持 |

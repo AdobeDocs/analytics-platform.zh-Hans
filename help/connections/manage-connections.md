@@ -1,12 +1,13 @@
 ---
-title: 管理连接
+title: 如何在Customer Journey Analytics中管理连接
 description: 描述如何在 Customer Journey Analytics (CJA) 中管理与 Experience Platform 数据集的连接。
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: 61f11ed1d91d7a5da7aabbec1fe961b9b0842450
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
-source-wordcount: '1942'
-ht-degree: 77%
+source-wordcount: '1948'
+ht-degree: 81%
 
 ---
 
@@ -120,21 +121,21 @@ ht-degree: 77%
 | [!UICONTROL 沙盒] | 此连接从中获取其数据集的 [Adobe Experience Platform 沙盒](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en)。这是您在首次创建连接时选择的沙盒。不能更改。 |
 | [!UICONTROL 连接 ID] | 此 ID 是系统在 Adobe Experience Platform 中生成的。 |
 | [!UICONTROL 使用连接的数据视图] | 列出使用此连接的所有数据视图。 |
-| [!UICONTROL 导入新数据] | （开/关）指示是否应将新批量数据添加到历史（回填）数据中。 |
+| [!UICONTROL 导入新数据] | （开启/关闭）指示是否应将新批次的数据添加到历史（回填）数据中。 |
 | [!UICONTROL 回填数据] | 跟踪回填（历史）数据的 3 种状态：[!UICONTROL 队列中]、[!UICONTROL 进行中]（同时显示进度百分比）和[!UICONTROL 完成]。 |
 | [!UICONTROL 创建者] | 显示创建连接的人员的姓名。 |
-| [!UICONTROL 最近修改] | 显示连接上次更改的日期和时间。 |
-| [!UICONTROL 上一次修改人] | 显示上次修改连接的人员。 |
+| [!UICONTROL 上次修改时间] | 显示连接上次更改的日期和时间。 |
+| [!UICONTROL 上次修改人] | 显示上次修改连接的人员。 |
 
 ### 数据集级别的右侧边栏设置
 
 | 设置 | 描述 |
 | --- | --- |
-| [!UICONTROL 人员 ID] | 在 Experience Platform 中显示在数据集架构中定义的身份。这是您在创建连接期间选择的人员 ID。如果您创建的连接包含具有不同 ID 的数据集，则报告中会反映这一点。要真正合并数据集，您需要跨数据集使用相同的人员ID。 |
+| [!UICONTROL 人员 ID] | 在 Experience Platform 中显示在数据集架构中定义的身份。这是您在创建连接期间选择的人员 ID。如果您创建的连接包含具有不同 ID 的数据集，则报告中会反映这一点。要真正合并数据集，需要跨所有数据集使用相同的人员 ID。 |
 | [!UICONTROL 可用的记录数] | 表示对于通过日历选择的特定时段为此数据集引入的总行数。添加数据后，数据立刻在报告中显示，没有延迟。（创建全新连接时的情况例外，此时有[延迟](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans#3.-getting-data-into-customer-journey-analytics)。） |
 | [!UICONTROL 添加的记录数] | 指示在选定的时间段内添加了多少行。 **注意**：**[!UICONTROL 添加的记录数]**&#x200B;的数据目前仅包括事件数据，而不包括配置文件或查找数据。 |
 | [!UICONTROL 删除的记录数] | 指示在选定时间段内删除了多少个记录。 **注意**：**[!UICONTROL 删除的记录数]**&#x200B;的数据目前仅包括事件数据，而不包括配置文件或查找数据。 |
-| [!UICONTROL 添加了批次] | 指示已向此数据集添加了多少个数据批次。 |
+| [!UICONTROL 添加的批次] | 指示已向此数据集添加了多少个数据批次。 |
 | [!UICONTROL 跳过的记录数] | 指示在选定的时间段内在摄取期间跳过了多少行。<p>跳过记录的原因包括：缺少时间戳、缺少或人员ID无效等。 每 10 分钟更新一次。<p>人员ID无效(如“未定义”、“00000000”，或 [!UICONTROL 人员ID] 在给定月内超过100万次的事件中显示的事件)不能归因于任何特定用户或人员。 无法将它们摄取到系统中，并且会导致容易出错的摄取和报告。 要修复无效的人员ID，您有3个选项：<ul><li>使用 [跨渠道分析](/help/connections/cca/overview.md) 用有效的用户ID填充未定义或全部为零的用户ID。</li><li>将用户ID留空，在摄取期间也会跳过该用户ID（优于无效或全零用户ID）。</li><li>在摄取数据之前，修复系统中任何无效的用户ID。</li></ul><p>**注意**：**[!UICONTROL 跳过的记录数]**&#x200B;的数据目前仅包括事件数据，而不包括配置文件或查找数据。 |
 | [!UICONTROL 上次添加] | 指示上次添加批处理的时间。 |
 | [!UICONTROL 数据集类型] | [!UICONTROL 事件]、[!UICONTROL 查找]或[!UICONTROL 档案]。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
@@ -150,9 +151,9 @@ ht-degree: 77%
 * 刷新数据集。
 * 从连接中删除数据集。
 
-## 设置滚动窗口 [!UICONTROL 连接] 数据保留
+## 设置[!UICONTROL 连接]数据保留滚动时段
 
 >[!IMPORTANT]
->请联系客户关怀或您的Adobe客户经理以实施此设置。 尚无法通过 CJA UI 访问此设置。
+>请联系客户关怀部门或您的 Adobe 客户经理来实施此设置。尚无法通过 CJA UI 访问此设置。
 
-通过此设置，您可以将CJA数据保留定义为以月（3个月、6个月等）为单位的滚动窗口，即 [!UICONTROL 连接] 级别(不在 [!UICONTROL 数据集] 级别)。 数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此个人资料或查找数据集没有数据保留设置。主要好处是，您只需存储或报告适用且有用的数据，并且可删除不再有用的旧数据。它可以帮助您保持在合同限制范围内，并减少超出预期成本的风险。
+此设置可让您在[!UICONTROL 连接]级别（而不是[!UICONTROL 数据集]级别）将 CJA 数据保留设置定义为以月计的滚动时段（3 个月、6 个月等）。数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此个人资料或查找数据集没有数据保留设置。主要好处是，您只需存储或报告适用且有用的数据，并且可删除不再有用的旧数据。它可以帮助您保持在合同限制范围内，并减少超出预期成本的风险。

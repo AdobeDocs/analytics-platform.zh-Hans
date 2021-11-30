@@ -2,7 +2,8 @@
 title: 在 Customer Journey Analytics 中执行基础分析
 description: 介绍如何使用基础的可视化图表来分析 Customer Journey Analytics 中的数据
 exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 85%
@@ -13,7 +14,7 @@ ht-degree: 85%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 创建连接和数据视图后，利用 Analysis Workspace 的强大功能和灵活性分析导入的数据。您可以随意尝试和拖动维度和量度，更改维度和量度归因设置、友好名称、时区、会话设置等。
 

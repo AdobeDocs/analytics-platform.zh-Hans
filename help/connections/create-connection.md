@@ -2,8 +2,9 @@
 title: 创建连接
 description: 描述如何在 Customer Journey Analytics 中创建与 Platform 数据集的连接。
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-source-git-commit: 4933b0393ddb985ad0da7a572e67efb3e77381b8
-workflow-type: ht
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+workflow-type: tm+mt
 source-wordcount: '1980'
 ht-degree: 100%
 
@@ -140,7 +141,7 @@ Customer Journey Analytics
 
 必须对连接中的每个数据集都进行此项计算。
 
-1. 转到 [Adobe Experience Platform 查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans)并创建新查询。
+1. 转到 [Adobe Experience Platform 查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html)并创建新查询。
 
 1. 创建的查询将如下所示：<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
