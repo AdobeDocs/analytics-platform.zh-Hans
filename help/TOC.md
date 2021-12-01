@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 本指南提供 Customer Journey Analytics 自助式帮助内容；Customer Journey Analytics 基于 Adobe Experience Platform，是 Adobe 的新一代跨渠道分析解决方案。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 20dd79161f813a372901dafa8ba44bb64d301974
+source-git-commit: 6c5fb7b3964cbf2bb5158733a2ede9b54f9415a5
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 92%
+source-wordcount: '556'
+ht-degree: 99%
 
 ---
 
@@ -32,6 +32,7 @@ ht-degree: 92%
    + [管理连接](connections/manage-connections.md)
    + [预估连接大小](connections/estimate-connection-size.md)
    + [合并事件数据集](connections/combined-dataset.md)
+   + [标准查找](connections/standard-lookups.md)
    + 跨渠道分析 {#cca}
       + [跨渠道分析概述](connections/cca/overview.md)
       + [重播的工作原理](connections/cca/replay.md)
@@ -45,7 +46,7 @@ ht-degree: 92%
       + [行为](data-views/component-settings/behavior.md)
       + [格式](data-views/component-settings/format.md)
       + [包括/排除值](data-views/component-settings/include-exclude-values.md)
-      + [指标去重](data-views/component-settings/metric-deduplication.md)
+      + [量度去重](data-views/component-settings/metric-deduplication.md)
       + [无值选项](data-views/component-settings/no-value-options.md)
       + [持久性](data-views/component-settings/persistence.md)
       + [值分段](data-views/component-settings/value-bucketing.md)
@@ -91,7 +92,7 @@ ht-degree: 92%
       + [面积图和堆叠的面积图](analysis-workspace/visualizations/area.md)
       + [条形图和堆叠的条形图](analysis-workspace/visualizations/bar.md)
       + [项目符号图表](analysis-workspace/visualizations/bullet-graph.md)
-      + [环形图](analysis-workspace/visualizations/donut.md)
+      + [圆环图](analysis-workspace/visualizations/donut.md)
       + [水平条形图和堆叠的水平条形图](analysis-workspace/visualizations/horizontal-bar.md)
       + [折线图](analysis-workspace/visualizations/line.md)
       + [散点图](analysis-workspace/visualizations/scatterplot.md)
@@ -134,14 +135,14 @@ ht-degree: 92%
       + [Analysis Workspace 中的辅助功能](analysis-workspace/workspace-faq/aw-accessibility.md)
       + [Analysis Workspace 中的长尾](analysis-workspace/workspace-faq/long-tail.md)
 + Report Builder {#cja-reportbuilder}
-   + [Report Builder概述](report-builder/report-buider-overview.md)
-   + [Report Builder设置](report-builder/report-builder-setup.md)
+   + [Report Builder 概述](report-builder/report-buider-overview.md)
+   + [Report Builder 设置](report-builder/report-builder-setup.md)
    + [创建数据块](report-builder/create-a-data-block.md)
-   + [Report Builder中心](report-builder/report-builder-hub.md)
+   + [Report Builder 中心](report-builder/report-builder-hub.md)
    + [选择日期范围](report-builder/select-date-range.md)
-   + [使用过滤器](report-builder/work-with-filters.md)
-   + [过滤维度](report-builder/filter-dimensions.md)
-   + [Report Builder设置](report-builder/report-builder-settings.md)
+   + [使用筛选器](report-builder/work-with-filters.md)
+   + [筛选维度](report-builder/filter-dimensions.md)
+   + [Report Builder 设置](report-builder/report-builder-settings.md)
 + 组件 {#cja-components}
    + [组件概述](components/overview.md)
    + 维度{#dimensions}
@@ -156,7 +157,7 @@ ht-degree: 92%
       + [管理筛选器](components/filters/manage-filters.md)
       + [快速筛选器](components/filters/quick-filters.md)
       + [临时筛选器](components/filters/ad-hoc-filters.md)
-      + [操作员](components/filters/operators.md)
+      + [运算符](components/filters/operators.md)
    + 计算量度 {#cja-calcmetrics}
       + [计算量度概述](components/calc-metrics/calc-metr-overview.md)
       + 计算量度工作流程 {#cm-workflow}
@@ -165,7 +166,7 @@ ht-degree: 92%
          + [生成指标](components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [指标类型和归因](components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
          + [构建简单的“每次访问的页面查看次数”指标](components/calc-metrics/cm-workflow/cm-pvv.md)
-         + [过滤量度](components/calc-metrics/cm-workflow/metrics-with-segments.md)
+         + [筛选量度](components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [堆叠和替换区段](components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [过滤和加权指标](components/calc-metrics/cm-workflow/cm-weighted-metric.md)
          + [使用函数](components/calc-metrics/cm-workflow/cm-using-functions.md)
@@ -191,14 +192,13 @@ ht-degree: 92%
    + [导入呼叫中心数据和网站数据](use-cases/call-center.md)
    + [摄取数据用例](use-cases/data-ingestion.md)
    + [使用“营销渠道”维度](use-cases/marketing-channels.md)
-   + [向数据集添加全局查找](use-cases/global-lookups.md)
    + [将 Google Analytics 数据摄取到 Adobe Experience Platform](use-cases/ga-to-cja.md)
    + [在 CJA 中给出 Google Analytics 数据报告](use-cases/ga-to-cja-reporting.md)
 + Analytics 功能板{#cja-dashboards}
    + [Analytics 功能板 — 概述](mobile-app/home.md)
    + [策划人任务](mobile-app/curator.md)
    + [创建记分卡](mobile-app/create-scorecard.md)
-   + [设置管理人员以使用功能板](mobile-app/set-up-execs.md)
+   + [设置执行用户以使用功能板](mobile-app/set-up-execs.md)
    + [执行用户快速入门指南](mobile-app/executive.md)
 + 隐私权 {#cja-privacy}
    + [隐私权概述](privacy/privacy-overview.md)
