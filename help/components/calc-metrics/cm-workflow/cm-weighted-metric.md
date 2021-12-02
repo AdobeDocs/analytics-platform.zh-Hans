@@ -1,8 +1,8 @@
 ---
-description: 显示过滤和加权量度的示例。
+description: 显示筛选量度和加权量度的示例。
 title: 过滤和加权量度
 source-git-commit: 0865c318c1390f2ad6d9864915254a7b8f68030f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '143'
 ht-degree: 100%
 
@@ -10,7 +10,7 @@ ht-degree: 100%
 
 # 过滤和加权量度
 
-显示过滤和加权量度的示例。
+显示筛选量度和加权量度的示例。
 
 ## 过滤跳出率 {#section_D42F2452E4464948934063EB6F2DAAB4}
 
