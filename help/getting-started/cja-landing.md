@@ -3,10 +3,10 @@ title: Customer Journey Analytics 指南
 description: Customer Journey Analytics 登陆页面。
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+source-git-commit: 69ded6c9d08981810f6d9edef273cad95cb2c367
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 87%
+source-wordcount: '340'
+ht-degree: 91%
 
 ---
 
@@ -23,10 +23,10 @@ Analytics Select、Prime 和 Ultimate 客户有资格此附加产品。有关更
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>新增项目或特色项目</b> </p> <p> 
      <ul>
-     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=en#connection-detail"> 如何使用增强的连接管理功能 </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=zh-Hans#cja-dataviews"> 如何使用增强的数据视图功能 </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=zh-Hans#cja-usecases"> 有关将Google Analytics数据摄取到Adobe Experience Platform的文档 </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja-reporting.html?lang=zh-Hans#cja-usecases"> CJA中Google Analytics数据分析文档 </a> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=en#connection-detail"> 使用增强的连接管理功能 </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=zh-Hans#cja-dataviews"> 使用增强的数据视图功能 </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=zh-Hans#cja-usecases"> 将 Google Analytics 数据摄取到 Adobe Experience Platform </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja-reporting.html?lang=zh-Hans#cja-usecases"> 在CJA中分析Google Analytics数据 </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=zh-Hans#cja-connections"> 跨渠道分析（在 Customer Journey Analytics 中拼合 ID）</a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=zh-Hans#admin-access-permissions"> 更新了用户权限要求</a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=zh-Hans#cja-usecases"> 使用对象数组 </a> </li>
