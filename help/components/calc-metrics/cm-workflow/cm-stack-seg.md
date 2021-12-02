@@ -1,25 +1,25 @@
 ---
-description: 显示如何在计算量度生成器中堆叠和替换过滤器。
-title: 堆叠和替换过滤器
+description: 显示在计算量度生成器中如何堆叠和替换筛选器。
+title: 堆叠和替换筛选器
 source-git-commit: 0865c318c1390f2ad6d9864915254a7b8f68030f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '68'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# 堆叠和替换过滤器
+# 堆叠和替换筛选器
 
-显示如何在计算量度生成器中堆叠和替换过滤器。
+显示在计算量度生成器中如何堆叠和替换筛选器。
 
-## 堆栈过滤器 {#stack-filter}
+## 堆叠筛选器 {#stack-filter}
 
-在“定义”画布中，只需将新过滤器拖放到现有过滤器旁边即可：
+在“定义”画布中，只需将新的筛选器拖放到现有筛选器旁边：
 
 ![](assets/cm_stack_seg.png)
 
-## 将一个过滤器替换为另一个过滤器 {#replace-filter}
+## 使用一个筛选器替换另一个 {#replace-filter}
 
-在“定义”画布中，只需将新过滤器拖放到现有过滤器上：
+在“定义”画布中，只需将新的筛选器拖放到现有筛选器之上：
 
 ![](assets/cm_replace_seg.png)
