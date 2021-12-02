@@ -2,7 +2,7 @@
 description: '了解 '
 title: 指标类型和归因
 source-git-commit: 0865c318c1390f2ad6d9864915254a7b8f68030f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '188'
 ht-degree: 100%
 
