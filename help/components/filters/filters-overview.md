@@ -3,9 +3,9 @@ title: 过滤器概述
 description: 了解过滤器的用途以及如何创建简单的过滤器。
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 source-git-commit: ff1f28015a2c52f79fae975c16bb7cb76f6179c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1099'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -17,19 +17,19 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 
 您可以在过滤器生成器中构建和保存过滤器，或从“流失”可视化图表（在工作区中）生成过滤器。此外，过滤器可以一起用作堆叠过滤器。
 
-过滤器包括[过滤器生成器](/help/components/filters/create-filters.md)和[过滤器管理器](/help/components/filters/manage-filters.md)，前者用于构建过滤器并运行预测试，后者用于在您的组织内收集、标记、批准、设置安全和共享过滤器。
+筛选器包括[筛选器生成器](/help/components/filters/create-filters.md)和[筛选器管理器](/help/components/filters/manage-filters.md)，前者用于构建筛选器并运行预测试，后者用于在您的组织内收集、标记、批准、设置安全和共享筛选器。
 
-## 过滤器类型
+## 筛选器类型
 
-您可以在工作区和过滤器生成器中创建不同类型的过滤器，具体取决于它们需要的复杂程度、它们是否应仅应用于此项目等。 以下是过滤器类型的摘要：
+可在工作区和筛选器生成器中创建不同类型的筛选器，具体取决于这些筛选器需要实现的复杂程度、是否应将其仅应用于此项目等等。以下总结了各种筛选器类型：
 
-| 过滤器类型 | 在何处创建？ | 适用于何处？ | 使用时间 |
+| 筛选器类型 | 在何处创建？ | 适用于何处？ | 使用场合 |
 | --- | --- | --- | --- |
-| 组件列表过滤器 | 单击+，此时将转到 [过滤器生成器](/help/components/filters/create-filters.md) | 您的所有工作区项目 | 对于更复杂的过滤器，顺序过滤器 |
-| 快速筛选 | [快速过滤器生成器](/help/components/filters/quick-filters.md) | 仅用于项目，但可保存并添加到您的区段列表。 | 灵活地添加/编辑一条或多条规则 |
-| 临时项目过滤器 | [拖放到项目中的区段放置区域](/help/components/filters/ad-hoc-filters.md) | 仅限项目，但可以保存并添加到过滤器列表。 | 对于单规则过滤器 |
-| 流失分析中的过滤器 | [流失可视化图表](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) 在Analysis Workspace | 对于单个流失可视化图表 | 从接触点创建过滤器，添加过滤器作为接触点，并比较各种过滤器中的关键工作流程 |
-| 基于计算量度的过滤器 | [计算指标生成器](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html?lang=zh-Hans) | 适用于个别计算指标 | 在量度定义中应用过滤器 |
+| 组件列表筛选器 | 单击 +，这将会转到[筛选器生成器](/help/components/filters/create-filters.md) | 您的所有工作区项目 | 对于更复杂的筛选器、顺序筛选器 |
+| 快速筛选器 | [快速筛选器生成器](/help/components/filters/quick-filters.md) | 仅用于项目，但可保存并添加到您的区段列表。 | 灵活地添加/编辑一条或多条规则 |
+| 临时项目筛选器 | [拖放到项目中的区段放置区域](/help/components/filters/ad-hoc-filters.md) | 仅用于项目，但可保存并添加到您的筛选器列表。 | 对于单规则筛选器 |
+| 流失分析中的筛选器 | Analysis Workspace 中的[流失可视化图表](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) | 单独的流失可视化图表 | 从接触点创建筛选器、添加筛选器作为接触点，并比较多个筛选器之间的关键工作流程 |
+| 基于计算量度的筛选器 | [计算指标生成器](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html?lang=zh-Hans) | 适用于个别计算指标 | 在您的量度定义中应用筛选器 |
 
 ## 顺序过滤器
 
