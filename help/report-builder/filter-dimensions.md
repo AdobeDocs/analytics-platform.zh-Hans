@@ -153,7 +153,7 @@ ht-degree: 100%
 
    ![](./assets/image36.png)
 
-1. 单击&#x200B;**应用**
+1. 单击&#x200B;**应用**。
 
    Report Builder 更新列表以显示所应用的特定筛选。
 

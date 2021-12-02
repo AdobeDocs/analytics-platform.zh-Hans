@@ -1,5 +1,5 @@
 ---
-description: '什么是功能板记分卡和 '
+description: '什么是功能板记分卡 '
 title: Adobe Analytics 功能板策划人指南
 feature: Analytics Dashboards
 role: User, Admin

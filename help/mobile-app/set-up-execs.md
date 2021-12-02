@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## 确保应用程序用户具有 Adobe Analytics 访问权限
 
-1. 在 [Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=en) 中设置新用户。
+1. 在 [Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=zh-Hans) 中设置新用户。
 
 1. 要能够共享记分卡，您必须向应用程序用户授予对记分卡组件（例如 Analysis Workspace）、记分卡所基于的数据视图以及筛选器、量度和维度的访问权限。
 

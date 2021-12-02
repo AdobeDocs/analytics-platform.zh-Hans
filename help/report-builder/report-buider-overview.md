@@ -33,7 +33,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->本文档面向适用于 Customer Journey Analytics 的 Report Builder。有关 Windows 上的适用于 Analytics 的 Report Builder 的信息，请参阅[适用于 Customer Journey Analytics 的 Report Builder](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/home.html?lang=en)。
+>本文档面向适用于 Customer Journey Analytics 的 Report Builder。有关 Windows 上的适用于 Analytics 的 Report Builder 的信息，请参阅[适用于 Customer Journey Analytics 的 Report Builder](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/home.html?lang=zh-Hans)。
 
 您可以从以下位置下载适用于 Customer Journey Analytics 的 Report Builder：
 [Microsoft Store](https://www.microsoft.com/en-us/store/apps/windows)。
