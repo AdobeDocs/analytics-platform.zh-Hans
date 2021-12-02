@@ -2,9 +2,9 @@
 description: 显示如何生成简单的“每次访问页面查看次数”量度。
 title: 构建简单的“每次访问的页面查看次数”量度
 source-git-commit: 50c56d718ae7a7f6e3d788b9f755831a7522337c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '224'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -28,4 +28,4 @@ ht-degree: 95%
 1. 现在，当您生成量度时，即可在右上角看到该量度的&#x200B;**[!UICONTROL 预览]**。
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 1. 请注意，无论您何时对量度定义进行更改，**[!UICONTROL 概要]**&#x200B;公式都会随之发生更新。
-1. 现在，您会自动转到 [计算量度管理器](/help/components/calc-metrics/cm-workflow/cm-manager.md)，与过滤器管理器类似。 它允许您共享、批准、（重新）标记、重命名或删除量度。
+1. 现在，您会自动转到[计算量度管理器](/help/components/calc-metrics/cm-workflow/cm-manager.md)，这与筛选器管理器相似。通过此项，您可以共享、批准、（重新）标记、重命名或删除量度。
