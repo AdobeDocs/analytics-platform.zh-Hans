@@ -4,7 +4,7 @@ description: 了解跨渠道分析中的“重播”概念
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '548'
 ht-degree: 100%
 
