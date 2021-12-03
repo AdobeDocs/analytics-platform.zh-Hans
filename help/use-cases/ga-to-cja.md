@@ -4,7 +4,7 @@ description: '阐述如何利用 Customer Journey Analytics (CJA) 将您的 Goog
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1178'
 ht-degree: 100%
 
