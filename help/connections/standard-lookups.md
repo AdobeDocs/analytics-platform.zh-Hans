@@ -3,14 +3,17 @@ title: 向数据集添加标准查找
 description: 使用标准查找为报表中的有用维度提供更多Customer Journey Analytics。
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
-source-git-commit: 6c5fb7b3964cbf2bb5158733a2ede9b54f9415a5
+source-git-commit: 067502a0d69bd0b085ecb5e6cbd3ae062f33daef
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 31%
+source-wordcount: '357'
+ht-degree: 28%
 
 ---
 
 # 向数据集添加标准查找
+
+>[!IMPORTANT]
+>标准查找仅适用于CJA中的Analytics Data Connector数据源。 仅当使用 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) 或Experience Platform数据收集API。
 
 标准查找(也称为Adobe提供的查找)增强了Customer Journey Analytics报告某些维度/属性的能力，这些维度/属性本身并不有用，但在与其他数据连接时很有用。 示例包括移动设备的属性、操作系统属性和浏览器维度，如浏览器版本号。“标准查找”类似于查找数据集。 标准查找适用于各个Experience Cloud组织。 它们自动应用于包含某些 XDM 架构字段（有关具体字段见下文）的所有事件数据集。对于Adobe正在分类的每个架构位置，都存在标准查找数据集。
 
