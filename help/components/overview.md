@@ -1,18 +1,18 @@
 ---
-title: Customer Journey Analytics中有哪些组件？
+title: Customer Journey Analytics 中有哪些组件？
 description: 了解 CJA 提供了哪些组件，以及如何在报表中使用它们。
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '366'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # 组件概述
 
-组件是Customer Journey Analytics中的功能，可用于报表或补充报表功能。 您可以通过以下步骤管理这些组件：
+组件是 Customer Journey Analytics 中的功能，可以在报告中使用，或者用于补充报告功能。您可以通过以下步骤管理这些组件：
 
 1. 使用您的 Adobe ID 凭据登录 [analytics.adobe.com](https://analytics.adobe.com)。
 2. 在标题菜单中，导航到[!UICONTROL 组件] > [!UICONTROL 组件]。
