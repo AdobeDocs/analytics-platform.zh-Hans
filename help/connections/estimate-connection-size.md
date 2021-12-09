@@ -1,12 +1,12 @@
 ---
-title: 如何估计CJA连接大小
+title: 如何估算 CJA 连接大小
 description: 报告 Customer Journey Analytics 的当前使用情况
 exl-id: 5599b34f-342d-4c68-b7c9-2ac3ea50d078
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '615'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
