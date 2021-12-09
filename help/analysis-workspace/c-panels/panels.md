@@ -3,9 +3,9 @@ description: 面板是表格和可视化图表的集合
 title: 面板概述
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 source-git-commit: f6e7c2f5d83a29b498a7c3dbed64f2d2ea5c0b27
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '851'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 98%
 
 ## 面板类型
 
-在Analysis Workspace中，可以使用以下面板类型： [!UICONTROL Customer Journey Analytics]:
+Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以下面板类型：
 
 | 面板名称 | 描述 |
 | --- | --- |
