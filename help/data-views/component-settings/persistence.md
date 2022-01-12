@@ -3,9 +3,9 @@ title: 持久性组件设置
 description: 决定维度值如何或是否从一个事件保持到下一个事件。
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
-source-git-commit: 4d45314ae77ee1ca78bbd44b0aa08add0f7030cc
+source-git-commit: 3b00b8fe5dd4687bb8022d8e6e5e98ad2d535866
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '753'
 ht-degree: 78%
 
 ---
@@ -66,10 +66,10 @@ ht-degree: 78%
 
 用于将维度值的持久性绑定到其他维度中的维度值的下拉列表。 有效的下拉选项包括数据视图中包含的其他维度。
 
-此设置通常在对象数组中使用，最常用于测量产品查找方法、内部搜索结果、内部促销活动的展示次数或内容或产品推荐等内容。 在Adobe Analytics的早期版本中，此概念称为转化语法推销。
+此设置通常在对象数组中使用，最常用于测量产品查找方法、内部搜索结果、内部促销活动的展示次数或内容或产品推荐等内容。 在以前版本的Adobe Analytics中，此概念与转化语法推销类似。
 
 ## [!UICONTROL 绑定量度]
 
 允许您选择充当捆绑触发器的量度的下拉列表。 有效的下拉选项包括数据视图中包含的量度。
 
-仅当对象数组中的“绑定”Dimension低于组件时，才会显示此设置。 当绑定量度在事件中存在时，维度值将从事件级别维度复制到绑定维度的较低架构级别。 在Adobe Analytics的早期版本中，有一个相似但比较受限的概念，称为产品语法推销。
+仅当对象数组中的“绑定”Dimension低于组件时，才会显示此设置。 当绑定量度在事件中存在时，维度值将从事件级别维度复制到绑定维度的较低架构级别。 在Adobe Analytics的早期版本中，一个相似但比较有限的概念称为产品语法推销。
