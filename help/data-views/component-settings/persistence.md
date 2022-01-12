@@ -3,10 +3,10 @@ title: 持久性组件设置
 description: 决定维度值如何或是否从一个事件保持到下一个事件。
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
-source-git-commit: 25557196c9841489e2732dece2c3402ebaf6224e
+source-git-commit: 8c82aad72beca8d206d30f8f0e842445fd18758b
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 74%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -55,12 +55,12 @@ ht-degree: 74%
 
 * **[!UICONTROL 第一个已知]** 和 **[!UICONTROL 上次已知]**:（2022年1月19日）这两个分配模型满足“登入”和“退出”维度用例。 他们获取指定持久性范围（具有回顾的会话、人员或自定义时间段）内维度的第一个或最后一个观察到的值，并将其应用于指定范围内的所有事件。 示例：
 
-| 维度 | 第 1 次点击 | 第 2 次点击 | 第 3 次点击 | 第 4 次点击 | 第 5 次点击 |
-| --- | --- | --- | --- | --- | --- |
-| 时间戳（分钟） | 1 | 2 | 3 | 6 | 7 |
-| 原始值 |  | C | B |  | A |
-| 第一个已知 | C | C | C | C | C |
-| 最后一个已知 | A | A | A | A | A |
+   | 维度 | 第 1 次点击 | 第 2 次点击 | 第 3 次点击 | 第 4 次点击 | 第 5 次点击 |
+   | --- | --- | --- | --- | --- | --- |
+   | 时间戳（分钟） | 1 | 2 | 3 | 6 | 7 |
+   | 原始值 |  | C | B |  | A |
+   | 第一个已知 | C | C | C | C | C |
+   | 最后一个已知 | A | A | A | A | A |
 
 ## [!UICONTROL 到期]设置
 
