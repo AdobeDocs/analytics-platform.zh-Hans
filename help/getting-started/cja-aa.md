@@ -3,10 +3,10 @@ title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
-source-wordcount: '1195'
-ht-degree: 100%
+source-git-commit: d970539d19fad6f274245dcc7bac6b3f13e7b7a2
+workflow-type: tm+mt
+source-wordcount: '1203'
+ht-degree: 97%
 
 ---
 
@@ -31,13 +31,14 @@ ht-degree: 100%
 | 默认配置的 Analysis Workspace 维度（例如浏览器类型、推荐人类型、操作系统等） | 只要填充基本 XDM 字段（如用户代理或设备 ID），CJA 就可以原生提供这些维度。 对于使用 Analytics Data Connector (ADC) 的客户，其中部分维度可用，但不是全部维度都可用。请参阅我们的[关于通过 ADC 支持哪些 Analytics 变量的文档](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)。 |
 | 删除 GDPR | 全面支持；请注意，GDPR 现在与 [!UICONTROL Adobe Experience Platform] 协调处理。CJA 继承 [!UICONTROL Experience Platform] 对底层数据集所作的任何数据更改。 |
 | 列表变量/列表属性 | 全面支持；CJA 利用 XDM 并支持无限量的与 listVar 具有类似用法的字符串数组。 |
+| 促销变量持久性 | 完全支持（2022年1月） |
 | 量度 | 全面支持；CJA 利用体验数据模型 (XDM)，支持无限量的量度，并且不会与传统 Analytics 的自定义成功事件绑定。请注意，已对传统 Analytics 中的一些标准量度名称进行了重命名，例如：“访客”=“人员”、“访问”=“会话”、“点击”=“事件”。 |
 | 量度去重 | 全面支持 |
 | 面板 | 全面支持空白面板、“归因”面板、“任意形状”面板和“快速分析”面板。 |
 | PDF 导出 | 全面支持 |
 | 项目策划 | 全面支持 |
 | 项目链接 | 全面支持 |
-| Report Builder（Excel 插件） | 全面支持（2021 年 10 月） |
+| Report Builder（Excel 插件） | 全面支持 |
 | 报表时间处理 | 全面支持；CJA 完全依赖于报表时间处理。 |
 | 报表 API 访问 | 全面支持；通过 [CJA API](https://www.adobe.io/cja-apis/docs/) 提供。 |
 | 计划报表/项目 | 全面支持 |
@@ -79,9 +80,8 @@ ht-degree: 100%
 | --- | --- |
 | 警报 | 计划将会提供支持。 |
 | 贡献分析 | 计划将会提供支持。 |
-| Data Warehouse 报告（100% 行导出） | 计划从 Analysis Workspace 界面提供支持。[!UICONTROL Experience Platform 查询服务]还为 CJA 中的使用案例提供接口。 |
+| Data Warehouse 报告（100% 行导出） | 计划从 Analysis Workspace 界面提供支持。Adobe Experience Platform [[!UICONTROL 查询服务]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en) 还为CJA中的这些用例提供了一个界面。 |
 | 通过设备图形进行 ID 拼合 | 计划将会提供支持。 |
-| 促销变量持久性 | 计划将会提供支持。 |
 | 实时报告 | 计划将会提供支持。 |
 | 区段 IQ | 计划将会提供支持。 |
 | 区段发布（将区段从工作区发送到 Experience Cloud） | 计划将会提供支持。 |

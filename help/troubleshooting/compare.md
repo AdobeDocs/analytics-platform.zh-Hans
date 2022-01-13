@@ -4,14 +4,16 @@ description: 了解如何将Adobe Analytics数据与Customer Journey Analytics�
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: 6f77dd9caef1ac8c838f825a48ace6cf533d28a9
+source-git-commit: d970539d19fad6f274245dcc7bac6b3f13e7b7a2
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '777'
 ht-degree: 4%
 
 ---
 
 # 比较Adobe Analytics数据与CJA数据
+
+由于贵组织采用CJA，因此您可能会注意到Adobe Analytics与CJA之间在数据方面存在一些差异。 这是正常的，可能由于多种原因发生。 CJA旨在让您改善AA中数据的一些限制。 但是，可能会出现意外/意外的差异。 本文旨在帮助您诊断和解决这些差异，以便您和您的团队能够不受数据完整性方面的疑虑影响地使用CJA。
 
 假设您通过Analytics源连接器将Adobe Analytics数据摄取到AEP，然后使用此数据集创建CJA连接。
 

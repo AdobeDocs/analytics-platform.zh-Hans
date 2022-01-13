@@ -3,10 +3,10 @@ title: CJA 文档更新
 description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以来的内容更新。
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
-source-git-commit: 6c5fb7b3964cbf2bb5158733a2ede9b54f9415a5
-workflow-type: ht
-source-wordcount: '615'
-ht-degree: 100%
+source-git-commit: 226c2549ecd0ee694b9aea8072aa1c5e76226c4a
+workflow-type: tm+mt
+source-wordcount: '679'
+ht-degree: 90%
 
 ---
 
@@ -16,15 +16,17 @@ CJA 文档自创建以来进行了以下更新。
 
 | 日期 | 更新描述 |
 | --- | --- |
+| 2022 月 1 日 | 在 [绑定维度和量度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=en#binding-dimension) 新 [[!UICONTROL 第一个已知] 和 [!UICONTROL 上次已知] 分配设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=en#allocation-settings) |
+| 2022 月 1 日 | 添加了关于 [在CJA中比较Adobe Analytics数据与Analytics数据](https://experienceleague.adobe.com/docs/analytics-platform/using/troubleshooting/compare.html) |
 | 2021 年 11 月 | 更新了有关“连接详细信息”页面上[[!UICONTROL 跳过的记录数]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans#connection-details-settings)的文档。 |
 | 2021 年 10 月 | CJA 中 [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/report-buider-overview.html#) 的文档。 |
 | 2021 年 10 月 | Customer Journey Analytics [审核日志](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) API 文档 |
 | 2021 年 10 月 | 记录了 [Analytics 功能板的可视化图表](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=zh-Hans#apply-visualizations) |
 | 2021 年 10 月 | 有关[!UICONTROL 连接][数据保留](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans#set-rolling-window-for-connection-data-retention)滚动时段的文档<p>**注意：请联系客户关怀部门或您的 Adobe 客户经理来实施此设置。尚无法通过 CJA UI 访问此设置。** |
-| 2021 年 9 月 | [量度去重](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication.html?lang=zh-Hans)文档 |
+| 2021 年 9 月 | [量度去重](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication.html?lang=en)文档 |
 | 2021 年 9 月 | [报告中的夏令时支持](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-Hans#calendar) |
-| 2021 年 9 月 | [客户日历](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-Hans#calendar)文档 |
-| 2021 年 9 月 | [布尔字段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/behavior.html?lang=zh-Hans)文档 |
+| 2021 年 9 月 | [客户日历](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#calendar)文档 |
+| 2021 年 9 月 | [布尔字段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/behavior.html?lang=en)文档 |
 | 2021 年 9 月 | 将数据视图中的组件设置细分为单独的文件：<ul><li>[[!UICONTROL 组件]设置概述](/help/data-views/component-settings/overview.md)</li><li>[[!UICONTROL 归因]组件设置](/help/data-views/component-settings/attribution.md)</li><li>[[!UICONTROL 行为]组件设置](/help/data-views/component-settings/behavior.md)</li><li>[[!UICONTROL 格式]组件设置](/help/data-views/component-settings/format.md)</li><li>[[!UICONTROL 包括/排除]组件设置](/help/data-views/component-settings/include-exclude-values.md)</li><li>[[!UICONTROL 量度去重]组件设置](/help/data-views/component-settings/metric-deduplication.md)</li><li>[[!UICONTROL 无值]组件设置](/help/data-views/component-settings/no-value-options.md)</li><li>[[!UICONTROL 持久性]组件设置](/help/data-views/component-settings/persistence.md)</li><li>[[!UICONTROL 值分段]组件设置](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
 | 2021 年 9 月 | 有关 CJA 中[合并报表包后果](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans#6.-considerations-when-merging-report-suites-in-cja)的新部分。 |
 | 2021 年 8 月 | 有关 CJA 中增强的[连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans)体验的新部分。 |
