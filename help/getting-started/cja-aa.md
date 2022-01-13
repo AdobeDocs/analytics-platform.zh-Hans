@@ -3,10 +3,10 @@ title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: d970539d19fad6f274245dcc7bac6b3f13e7b7a2
+source-git-commit: b72d84a0412ab774360bc2f9b4d9e656b54598f6
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 97%
+source-wordcount: '1207'
+ht-degree: 91%
 
 ---
 
@@ -31,7 +31,8 @@ ht-degree: 97%
 | 默认配置的 Analysis Workspace 维度（例如浏览器类型、推荐人类型、操作系统等） | 只要填充基本 XDM 字段（如用户代理或设备 ID），CJA 就可以原生提供这些维度。 对于使用 Analytics Data Connector (ADC) 的客户，其中部分维度可用，但不是全部维度都可用。请参阅我们的[关于通过 ADC 支持哪些 Analytics 变量的文档](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)。 |
 | 删除 GDPR | 全面支持；请注意，GDPR 现在与 [!UICONTROL Adobe Experience Platform] 协调处理。CJA 继承 [!UICONTROL Experience Platform] 对底层数据集所作的任何数据更改。 |
 | 列表变量/列表属性 | 全面支持；CJA 利用 XDM 并支持无限量的与 listVar 具有类似用法的字符串数组。 |
-| 促销变量持久性 | 完全支持（2022年1月） |
+| 促销变量持久性 | 通过 [绑定维度和绑定量度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=en#binding-dimension) （2022年1月） |
+| 促销 eVar | 通过 [绑定维度和绑定量度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=en#binding-dimension) （2022年1月） |
 | 量度 | 全面支持；CJA 利用体验数据模型 (XDM)，支持无限量的量度，并且不会与传统 Analytics 的自定义成功事件绑定。请注意，已对传统 Analytics 中的一些标准量度名称进行了重命名，例如：“访客”=“人员”、“访问”=“会话”、“点击”=“事件”。 |
 | 量度去重 | 全面支持 |
 | 面板 | 全面支持空白面板、“归因”面板、“任意形状”面板和“快速分析”面板。 |
@@ -60,7 +61,7 @@ ht-degree: 97%
 | eVar 持久性设置 | eVar 不再是 CJA 的一部分。但是，持久性设置现在是数据视图的一部分，且可用于所有维度。请记住，持久基于报表时间处理，而不是数据收集处理。数据视图中的纬度集限制为 90 天最大持久性，不支持无限持久性。 |
 | 地理分段维度 | 收集到 Adobe Analytics 的所有地理分段/地理位置通过 Analytics Data Connector 流入 CJA。不使用 Analytics Data Connector 的实施（例如，依赖于 AEP Web SDK 进行数字数据收集的实施）不会自动执行全面的地理查找（支持国家/地区和州/省/自治区，不支持城市和邮政编码）。 |
 | 营销渠道 | 营销渠道数据通过 Analytics Data Connector 流入 CJA。营销渠道规则仍必须在传统的 Adobe Analytics 中进行配置。某些规则不受支持。有关更多详细信息，请参阅 [CJA 营销渠道文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=zh-Hans#cja-usecases)。 |
-| 产品变量 | 在该 Experience Platform 中，用户可以在数据集架构中使用“对象”类型字段的数组来满足此用例。在 CJA 中，客户可以使用任意数量的产品变量，而不限于 Adobe Analytics 中的单个变量。 |
+| 产品变量 | 在该 Experience Platform 中，用户可以在数据集架构中使用“对象”类型字段的数组来满足此用例。在CJA中，客户能够使用任意数量的产品变量，并且不会像在Adobe Analytics中那样仅使用单个变量。 |
 | 项目共享 | 仅支持在 CJA 用户之间共享项目，不支持 CJA 与传统 Analysis Workspace 之间共享项目。 |
 | 可视化图表 | 除地图可视化图表外，支持所有可视化图表。 |
 
@@ -68,9 +69,8 @@ ht-degree: 97%
 
 | 功能 | 注释 |
 | --- | --- |
-| 机器人筛选 | 对于基于 Analytics Data Connector (ADC) 的数据集，会应用机器人筛选。[!UICONTROL Experience Platform] 或 CJA 不会对其他数据集应用常规机器人筛选逻辑。 |
+| 机器人筛选 | 对于基于Analytics源连接器的数据集，将应用机器人过滤。 [!UICONTROL Experience Platform] 或 CJA 不会对其他数据集应用常规机器人筛选逻辑。 |
 | Media Analytics | 媒体数据可作为 Analytics Data Connector 的一部分提供。 |
-| 促销 eVar | 如果促销 eVar 未设置为使用持久性，则可以使用对象数组中的维度来实现促销 eVar 的行为。 目前，不提供促销维度持久性。 |
 | 面板 | 全面支持空白面板、“归因”面板、“任意形状”面板和“快速分析”面板。不支持“区段比较”面板、“Analytics for Target (A4T)”面板和“媒体并发查看者”面板。 |
 | 处理规则 | 对于基于 Analytics Data Connector 的数据集，仍会应用处理规则。[Adobe Experience Platform 中的数据准备功能](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)也可以取代处理将直接进入 Platform 的数据的规则。 |
 
