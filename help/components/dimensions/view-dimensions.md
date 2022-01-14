@@ -2,18 +2,18 @@
 description: 显示非时间维度的前5个值（时间维度为15个）。
 title: 如何在CJA工作区中预览维度
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 92%
+source-wordcount: '231'
+ht-degree: 90%
 
 ---
 
-# 预览维度
+# 在Analysis Workspace中预览维度
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 将鼠标悬停在某个维度旁边的“信息”(i) 图标上。此时会显示非时间维度的前 5 个值（对于时间维度，显示前 15 个值）。过去，这些值会保持不变（例如，选定的 5 个值永远不会更改）。
 

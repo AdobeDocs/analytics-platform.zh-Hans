@@ -3,18 +3,18 @@ description: 在 Analysis Workspace 中划分维度和维度项目。
 keywords: Analysis Workspace
 title: 划分维度
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '234'
 ht-degree: 79%
 
 ---
 
-# 划分维度
+# 在 Workspace 中划分维度
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 在 Analysis Workspace 中划分维度和维度项目。
 

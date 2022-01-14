@@ -3,10 +3,10 @@ title: 创建或编辑数据视图
 description: 为创建或编辑数据视图而可调整的所有设置。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
-source-git-commit: 5a1a1842532001ca0d53d5d7562272fe1651b870
+source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 99%
+source-wordcount: '1217'
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 99%
 
 ![新建数据视图](assets/new-data-view.png)
 
-### 设置
+### 数据视图设置
 
 提供数据视图的总体设置。
 
@@ -29,7 +29,7 @@ ht-degree: 99%
 | --- | --- |
 | [!UICONTROL 连接] | 此字段将数据视图链接到您之前建立的连接，其中包含一个或多个 Adobe Experience Platform 数据集。 |
 | [!UICONTROL 名称] | 必填。数据视图的名称。此值显示在 Analysis Workspace 右上角的下拉列表中。 |
-| [!UICONTROL 描述] | 可选。Adobe 建议输入详细描述，以使用户了解为什么存在数据视图以及为谁设计了它。 |
+| [!UICONTROL 描述] | 可选。Adobe建议提供详细描述，以便用户了解数据视图存在的原因以及数据视图的设计对象。 |
 
 ### 容器
 
