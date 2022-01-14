@@ -3,10 +3,10 @@ title: 创建或编辑数据视图
 description: 为创建或编辑数据视图而可调整的所有设置。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
+source-git-commit: 5a1a1842532001ca0d53d5d7562272fe1651b870
+workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -84,21 +84,23 @@ ht-degree: 100%
    * [[!UICONTROL 持久性]](component-settings/persistence.md)
    * [[!UICONTROL 值分段]](component-settings/value-bucketing.md)
 
-如果需要，可使用以下功能：
+## 重复的量度或维度
 
-* **[!UICONTROL 复制]**：复制指标或维度，然后修改特定设置，是一种从单个架构字段创建多个指标或维度的简单方法。在指标或维度在右上角的名称下方选择[!UICONTROL 复制]设置。修改新维度或指标，并以更具描述性的名称保存它。
+复制量度或维度，然后修改特定设置，这是从单个架构字段创建多个量度或维度的简单方法。在指标或维度在右上角的名称下方选择[!UICONTROL 复制]设置。修改新维度或指标，并以更具描述性的名称保存它。
 
-   ![复制](assets/duplicate.png)
+![复制](assets/duplicate.png)
 
-* **[!UICONTROL 筛选器]**：可在左边栏中按以下数据类型筛选架构字段：
+## 筛选架构字段或数据集
 
-   ![筛选字段](assets/filter-fields.png)
+您可以按以下数据类型筛选左边栏中的架构字段：
 
-   还可按数据集筛选，以及按某个架构字段是否包含数据或它是否为标识进行筛选。默认情况下，Adobe 最初将&#x200B;**[!UICONTROL 包含数据]**&#x200B;筛选器应用于所有数据视图。
+![筛选字段](assets/filter-fields.png)
 
-   ![筛选其他](assets/filter-other.png)
+还可按数据集筛选，以及按某个架构字段是否包含数据或它是否为标识进行筛选。默认情况下，Adobe 最初将&#x200B;**[!UICONTROL 包含数据]**&#x200B;筛选器应用于所有数据视图。
 
-## 设置
+![筛选其他](assets/filter-other.png)
+
+## 设置 选项卡
 
 1. 登录到 [Customer Journey Analytics](https://analytics.adobe.com)，然后转到&#x200B;**[!UICONTROL 数据视图]**&#x200B;选项卡。
 1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;以创建数据视图，或单击现有数据视图以编辑它。
