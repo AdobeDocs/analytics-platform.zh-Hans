@@ -3,10 +3,10 @@ title: 跨渠道分析概述
 description: 在多个数据集中重新生成访客 ID 的键值，以对访客进行拼合。
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
-source-wordcount: '1127'
-ht-degree: 100%
+source-git-commit: 0f348f1d2119c902716a5e096a859521a4b316b0
+workflow-type: tm+mt
+source-wordcount: '1154'
+ht-degree: 91%
 
 ---
 
@@ -39,6 +39,10 @@ ht-degree: 100%
 
 ## 限制
 
+>[!IMPORTANT]
+>
+>请注意，对全局事件数据集架构所做的任何更改都必须同时应用于新的拼合数据集架构，否则，它将破坏拼合的数据集。
+
 跨渠道分析是一项具有突破性的强大功能，但其使用方式存在限制。
 
 * 当前，重新生成键值功能只能执行一步（即将永久 ID 转换为临时 ID）。而不支持多步重新生成键值功能（例如，将永久 ID 转换为临时 ID，然后再转换为另一个临时 ID）。
@@ -58,13 +62,14 @@ ht-degree: 100%
 如果贵组织满足所有先决条件并已了解跨渠道分析存在的限制，便可按照以下步骤在 CJA 中开始使用该功能。
 
 1. 将所需数据导入 Adobe Experience Platform。请参阅 Adobe Experience Platform 文档中的[创建架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans)和[摄取数据](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans)。
-1. 请联系 Adobe 技术客户经理并提供以下信息：
+1. 请联系Adobe客户支持，并提供以下信息：
    * 启用跨渠道分析的请求
    * 要重新生成键值的数据集的数据集 ID
    * 所需数据集的“永久 ID”列名称（每行都显示的标识符）
    * 所需数据集的“临时 ID”列名称（数据集之间的人员标识符关联）
-   * 您的[重播](replay.md)频率和回顾时间范围首选项。选项包括每周重播一次（回顾时间范围为 7 天）或每天重播一次（回顾时间范围为 1 天）。
-1. Adobe 技术客户经理将与 Adobe 工程部门合作，在收到您的请求时启用跨渠道分析。一旦启用，Adobe Experience Platform 中就会出现一个更新了密钥的新数据集，其中包含新的人员 ID 列。Adobe 技术客户经理可以提供新的数据集 ID 和人员 ID 列名。
+   * 您的[重播](replay.md)频率和回顾时间范围首选项。选项包括每周重播一次（回顾时间范围为7天）或每天重播一次（回顾时间范围为1天）
+   * 沙盒名称。
+1. Adobe客户支持将与Adobe工程团队合作，在收到您的请求后启用跨渠道分析。 一旦启用，Adobe Experience Platform 中就会出现一个更新了密钥的新数据集，其中包含新的人员 ID 列。Adobe客户支持可以提供新的数据集ID和人员ID列名称。
 1. 首次开启后，Adobe 将提供拼接数据的回填，最远可追溯到上月初（最多 60 天）。为进行此回填，当时的非拼接数据中必须存在临时 ID。
 1. 在 CJA 中使用新生成的数据集以及任何其他要包含的数据集[创建连接](../create-connection.md)。为每个数据集选择正确的人员 ID。
 1. 根据连接[创建数据视图](/help/data-views/create-dataview.md)。
