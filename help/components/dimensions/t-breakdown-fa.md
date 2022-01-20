@@ -3,10 +3,10 @@ description: 在 Analysis Workspace 中划分维度和维度项目。
 keywords: Analysis Workspace
 title: 划分维度
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
-source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
+source-git-commit: 0176f10ffed85786b0bfa77204ca7a19d9c39ba7
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 79%
+source-wordcount: '381'
+ht-degree: 53%
 
 ---
 
@@ -44,3 +44,25 @@ ht-degree: 79%
 也可以对表中的任何划分应用归因模型。此归因模型可能与父列相同或不同。例如，您可以对“营销渠道”维度上的线性订单进行分析，但同时将 U 型订单应用于渠道中的特定跟踪代码。要编辑已应用于划分的归因模型，只需将鼠标悬停在划分模型上，然后单击&#x200B;**[!UICONTROL 编辑]**：
 
 ![划分设置](assets/breakdown_settings.png)
+
+将归因模型应用于划分或编辑划分时的预期行为是：
+
+* 如果您在不存在其他属性时应用归因，则该归因将应用于整个列树。
+
+* 如果在应用归因后添加划分，则它将对添加的给定划分（如果该维度具有默认值）使用默认值。 否则，它将使用父列中的划分。 某些维度具有默认分配。 例如，“时间”维度和“反向链接”使用“同一接触”。 产品维度使用“最近联系”。 其他维没有默认维，将使用父列分配。
+
+* 如果列树中已存在属性，则更改属性只会影响您正在编辑的属性。
+
+## 视频
+
+在 Analysis Workspace 中将维度和量度添加到项目：
+
+>[!VIDEO](https://video.tv.adobe.com/v/30606)
+
+在自由格式表中使用维度：
+
+>[!VIDEO](https://video.tv.adobe.com/v/40179)
+
+Dimension按位置划分：
+
+>[!VIDEO](https://video.tv.adobe.com/v/24033)
