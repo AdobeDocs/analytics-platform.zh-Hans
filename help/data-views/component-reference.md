@@ -3,10 +3,10 @@ title: 标准组件参考
 description: 关于所有可添加到任何数据视图的标准组件的详细信息。
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
-source-git-commit: b4d2c564f9fc477212306dc022b4afc5ab92db97
+source-git-commit: 9d08d5c80c8d31ffeca4f829798d0fd1700b0cc8
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 92%
+source-wordcount: '774'
+ht-degree: 86%
 
 ---
 
@@ -49,7 +49,7 @@ CJA 中的大多数维度和指标都基于您 Adobe Experience Platform 数据�
 | [!UICONTROL 每年的某一天] | 时间划分维度 | 第 1 天至第 366 天 |
 | [!UICONTROL 小时] | 时间划分维度 | 0 时至 23 时 |
 | [!UICONTROL  月份] | 时间划分维度 | 1月至12月 |
-| [!UICONTROL 人员 ID] | 维度 | Experience Platform 中定义的每个数据集架构，可以拥有自己定义的一个或多个标识集，并与命名空间关联。其中任何标识都可用作人员 ID。示例包括 Cookie ID、拼接 ID、用户 ID、跟踪代码等。的 [!UICONTROL 人员ID] 维度是在CJA中合并数据集和识别独特访客的基础。 |
+| [!UICONTROL 人员 ID] | 维度 | Experience Platform 中定义的每个数据集架构，可以拥有自己定义的一个或多个标识集，并与命名空间关联。其中任何标识都可用作人员 ID。示例包括 Cookie ID、拼接 ID、用户 ID、跟踪代码等。的 [!UICONTROL 人员ID] 维度是在CJA中合并数据集和识别独特访客的基础。<p>可能的用例包括：<ul><li>根据特定的人员ID值创建过滤器，以根据该用户的行为对所有内容进行过滤。</li><li>调试：确保存在特定Cookie ID（或特定客户ID）的数据。</li><li>识别呼叫中心的用户。</li></ul> |
 | [!UICONTROL 人员ID命名空间] | 维度 | 哪类ID是 [!UICONTROL 人员ID] 包含。 示例： `email address`, `cookie ID`, `Analytics ID`等。 |
 | [!UICONTROL 季度] | 时间划分维度 | 第一季度、第二季度、第三季度和第四季度 |
 | [!UICONTROL 会话开始] | 量度 | 会话的第一个事件的事件数。用在筛选器定义（例如“[!UICONTROL 会话开始]”）中时，它会逐渐筛选以仅显示每个会话的第一个事件。 |
