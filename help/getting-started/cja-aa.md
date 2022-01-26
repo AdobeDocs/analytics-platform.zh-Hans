@@ -3,10 +3,10 @@ title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: 66545b4d1a3ab15480a202709e1d1e8b5cf1e31c
+source-git-commit: d46779a30fd841194f8ba0e80ab17ea5714569db
 workflow-type: tm+mt
-source-wordcount: '1313'
-ht-degree: 94%
+source-wordcount: '1309'
+ht-degree: 92%
 
 ---
 
@@ -69,8 +69,8 @@ ht-degree: 94%
 
 | 功能 | 注释 |
 | --- | --- |
-| 机器人筛选 | 对于基于 Analytics Source Connector 的数据集，将应用机器人筛选。[!UICONTROL Experience Platform] 或 CJA 不会对其他数据集应用常规机器人筛选逻辑。 |
-| Media Analytics | 媒体数据可作为 Analytics Data Connector 的一部分提供。 |
+| 机器人筛选 | 对于 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)基于数据集，将应用机器人过滤。 [!UICONTROL Experience Platform] 或 CJA 不会对其他数据集应用常规机器人筛选逻辑。 |
+| Media Analytics | 媒体数据作为Analytics源连接器的一部分提供。 |
 | 面板 | 全面支持空白面板、“归因”面板、“任意形状”面板和“快速分析”面板。不支持“区段比较”面板、“Analytics for Target (A4T)”面板和“媒体并发查看者”面板。 |
 | 处理规则 | 对于基于 Analytics Data Connector 的数据集，仍会应用处理规则。[Adobe Experience Platform 中的数据准备功能](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)也可以取代处理将直接进入 Platform 的数据的规则。 |
 
@@ -98,10 +98,8 @@ ht-degree: 94%
 | --- | --- |
 | Activity Map | 尚未计划提供支持。 |
 | Advertising Cloud | 尚未计划提供支持。 |
-| 分类规则生成器 | 尚未计划提供支持。 |
 | 货币兑换 | 尚未计划提供支持。 |
 | 数据馈送 | 尚未计划提供支持。 |
-| 实时报表 | 尚未计划提供支持。 |
 | 概要数据源 | 尚未计划提供支持。 |
 | 交易 ID 数据源 | 尚未计划提供支持。 |
 
