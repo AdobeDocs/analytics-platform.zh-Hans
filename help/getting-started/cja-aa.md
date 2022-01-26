@@ -3,9 +3,9 @@ title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: be823f0ce9ff65528b34cb8d5693b60e2ff0ee11
+source-git-commit: 66545b4d1a3ab15480a202709e1d1e8b5cf1e31c
 workflow-type: tm+mt
-source-wordcount: '1309'
+source-wordcount: '1313'
 ht-degree: 94%
 
 ---
@@ -79,12 +79,13 @@ ht-degree: 94%
 | 功能 | 注释 |
 | --- | --- |
 | 警报 | 计划将会提供支持。 |
+| 日历事件 | 在工作区中将被称为“注释”。 |
 | 分类规则生成器 | 在CJA中使用的字符串操作在报表时间处理而不是查找数据集，其工作方式将略有不同。 |
 | 贡献分析 | 计划将会提供支持。 |
 | Data Warehouse 报告（100% 行导出） | 计划从 Analysis Workspace 界面提供支持。Adobe Experience Platform [[!UICONTROL 查询服务]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans)还为 CJA 中的这些用例提供接口。 |
 | 通过设备图形进行 ID 拼合 | 计划将会提供支持。 |
-| Lift and Confidence Reporting | 计划将会提供支持。 |
-| Processing Rules, VISTA Rules, Marketing Channels Processing Rules | Support planned, but will work at query-time rather than during data collection for more flexible and retroactive and non-destructive data manipulations. |
+| 提升度和置信度报表 | 计划将会提供支持。 |
+| 处理规则、VISTA规则、营销渠道处理规则 | 支持已计划提供，但将在查询时使用，而不是在数据收集期间使用，以实现更灵活、可追溯和无损的数据操作。 |
 | 项目模板 | 计划将会提供支持。 |
 | 实时报告 | 计划将会提供支持。 |
 | 区段 IQ | 计划将会提供支持。 |
@@ -98,11 +99,11 @@ ht-degree: 94%
 | Activity Map | 尚未计划提供支持。 |
 | Advertising Cloud | 尚未计划提供支持。 |
 | 分类规则生成器 | 尚未计划提供支持。 |
+| 货币兑换 | 尚未计划提供支持。 |
 | 数据馈送 | 尚未计划提供支持。 |
+| 实时报表 | 尚未计划提供支持。 |
 | 概要数据源 | 尚未计划提供支持。 |
 | 交易 ID 数据源 | 尚未计划提供支持。 |
-| Currency Conversion | 尚未计划提供支持。 |
-| 实时报表 | 尚未计划提供支持。 |
 
 ## 将永远不支持
 
@@ -110,5 +111,4 @@ ht-degree: 94%
 * Reports &amp; Analytics 功能板
 * Reports &amp; Analytics 书签
 * Reports &amp; Analytics 目标
-* Reports &amp; Analytics 日历事件
 * Mobile Services
