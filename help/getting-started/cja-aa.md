@@ -3,9 +3,9 @@ title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: 279778d30241e338bff97bd2b0514f3a47614bb9
+source-git-commit: be823f0ce9ff65528b34cb8d5693b60e2ff0ee11
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1309'
 ht-degree: 94%
 
 ---
@@ -79,17 +79,17 @@ ht-degree: 94%
 | 功能 | 注释 |
 | --- | --- |
 | 警报 | 计划将会提供支持。 |
+| 分类规则生成器 | 在CJA中使用的字符串操作在报表时间处理而不是查找数据集，其工作方式将略有不同。 |
 | 贡献分析 | 计划将会提供支持。 |
 | Data Warehouse 报告（100% 行导出） | 计划从 Analysis Workspace 界面提供支持。Adobe Experience Platform [[!UICONTROL 查询服务]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans)还为 CJA 中的这些用例提供接口。 |
 | 通过设备图形进行 ID 拼合 | 计划将会提供支持。 |
+| Lift and Confidence Reporting | 计划将会提供支持。 |
+| Processing Rules, VISTA Rules, Marketing Channels Processing Rules | Support planned, but will work at query-time rather than during data collection for more flexible and retroactive and non-destructive data manipulations. |
+| 项目模板 | 计划将会提供支持。 |
 | 实时报告 | 计划将会提供支持。 |
 | 区段 IQ | 计划将会提供支持。 |
 | 区段发布（将区段从工作区发送到 Experience Cloud） | 计划将会提供支持。在CJA中将被称为“受众发布”。 |
 | 新增与重复会话报告 | 计划提供支持，但有一些注意事项。 |
-| 提升度和置信度报表 | 计划将会提供支持。 |
-| 分类规则生成器 | 在CJA中，使用在报表时的动态字符串操作而不是查找数据集的操作方式将略有不同。 |
-| 处理规则、VISTA规则、营销渠道处理规则 | 支持已计划提供，但将在查询时使用，而不是在数据收集期间使用，以实现更灵活、可追溯和无损的数据操作。 |
-| 项目模板 | 计划将会提供支持。 |
 
 ## 尚未计划提供支持
 
@@ -101,7 +101,7 @@ ht-degree: 94%
 | 数据馈送 | 尚未计划提供支持。 |
 | 概要数据源 | 尚未计划提供支持。 |
 | 交易 ID 数据源 | 尚未计划提供支持。 |
-| 货币兑换 | 尚未计划提供支持。 |
+| Currency Conversion | 尚未计划提供支持。 |
 | 实时报表 | 尚未计划提供支持。 |
 
 ## 将永远不支持
