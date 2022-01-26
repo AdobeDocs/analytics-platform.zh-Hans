@@ -3,10 +3,10 @@ title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: b72d84a0412ab774360bc2f9b4d9e656b54598f6
-workflow-type: ht
-source-wordcount: '1207'
-ht-degree: 100%
+source-git-commit: 279778d30241e338bff97bd2b0514f3a47614bb9
+workflow-type: tm+mt
+source-wordcount: '1310'
+ht-degree: 94%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 | 删除 GDPR | 全面支持；请注意，GDPR 现在与 [!UICONTROL Adobe Experience Platform] 协调处理。CJA 继承 [!UICONTROL Experience Platform] 对底层数据集所作的任何数据更改。 |
 | 列表变量/列表属性 | 全面支持；CJA 利用 XDM 并支持无限量的与 listVar 具有类似用法的字符串数组。 |
 | 促销变量持久性 | 通过[绑定维度和绑定指标](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=zh-Hans#binding-dimension)提供完全支持（2022 年 1 月） |
-| 促销 eVar | 通过[绑定维度和绑定指标](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=zh-Hans#binding-dimension)提供完全支持（2022 年 1 月） |
+| 促销 eVar | 通过[绑定维度和绑定指标](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=en#binding-dimension)提供完全支持（2022 年 1 月） |
 | 量度 | 全面支持；CJA 利用体验数据模型 (XDM)，支持无限量的量度，并且不会与传统 Analytics 的自定义成功事件绑定。请注意，已对传统 Analytics 中的一些标准量度名称进行了重命名，例如：“访客”=“人员”、“访问”=“会话”、“点击”=“事件”。 |
 | 量度去重 | 全面支持 |
 | 面板 | 全面支持空白面板、“归因”面板、“任意形状”面板和“快速分析”面板。 |
@@ -84,7 +84,12 @@ ht-degree: 100%
 | 通过设备图形进行 ID 拼合 | 计划将会提供支持。 |
 | 实时报告 | 计划将会提供支持。 |
 | 区段 IQ | 计划将会提供支持。 |
-| 区段发布（将区段从工作区发送到 Experience Cloud） | 计划将会提供支持。 |
+| 区段发布（将区段从工作区发送到 Experience Cloud） | 计划将会提供支持。在CJA中将被称为“受众发布”。 |
+| 新增与重复会话报告 | 计划提供支持，但有一些注意事项。 |
+| 提升度和置信度报表 | 计划将会提供支持。 |
+| 分类规则生成器 | 在CJA中，使用在报表时的动态字符串操作而不是查找数据集的操作方式将略有不同。 |
+| 处理规则、VISTA规则、营销渠道处理规则 | 支持已计划提供，但将在查询时使用，而不是在数据收集期间使用，以实现更灵活、可追溯和无损的数据操作。 |
+| 项目模板 | 计划将会提供支持。 |
 
 ## 尚未计划提供支持
 
@@ -95,6 +100,9 @@ ht-degree: 100%
 | 分类规则生成器 | 尚未计划提供支持。 |
 | 数据馈送 | 尚未计划提供支持。 |
 | 概要数据源 | 尚未计划提供支持。 |
+| 交易 ID 数据源 | 尚未计划提供支持。 |
+| 货币兑换 | 尚未计划提供支持。 |
+| 实时报表 | 尚未计划提供支持。 |
 
 ## 将永远不支持
 
