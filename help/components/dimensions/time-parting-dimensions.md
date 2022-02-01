@@ -3,22 +3,22 @@ description: 时间划分会采用所收集的点击量的时间戳，并将其�
 title: 时间划分维度
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
 source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '193'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# 时间划分维度Analysis Workspace 中的 
+# 时间划分维度Analysis Workspace 中的
 
 时间划分会采用所收集的点击量的时间戳，并将其划分为更有意义的维度，例如“每天时间”或“每周时间”。
 
-时间划分维度基于数据视图的时区。 这些维度可以在 Analysis Workspace 中使用，并且可以帮助您回答以下问题：
+时间划分维度基于数据视图的时区。这些维度可以在 Analysis Workspace 中使用，并且可以帮助您回答以下问题：
 
 * 在某个较长的日期范围内，哪些时段内访问网站或应用程序的访客最多？
 * 在我的网站或应用程序上，是否每周有几天或每天有几个小时的转化率较高？
 * 周末的销售额与工作日的销售额相比如何？
-* 特定促销活动是在上午还是在下午产生更高的转化？
+* 特定营销活动是在上午还是在下午产生更高的转化？
 
 | 维度 | 示例值 |
 |--- |--- |
