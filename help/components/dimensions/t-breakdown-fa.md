@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: 划分维度
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 source-git-commit: 0176f10ffed85786b0bfa77204ca7a19d9c39ba7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '381'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -14,28 +14,28 @@ ht-degree: 53%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 在 Analysis Workspace 中划分维度和维度项目。
 
-根据您的特定需求，以无限制的方式对数据进行划分；使用相关量度、维度、过滤器、时间行和其他分析划分值生成查询。
+根据特定需求，按照不计其数的方式划分您的数据；使用相关的指标、维度、筛选条件、时间线以及其他分析细分值构建查询。
 
 1. [创建项目](/help/analysis-workspace/home.md)，其中包含一个数据表。
 1. 在数据表中，右键单击某个行项目，然后选择&#x200B;**[!UICONTROL 划分]** > *`<item>`*。
 
    ![步骤结果](assets/fa_data_table_actions.png)
 
-   您可以按维度项目或受众过滤器在选定时间段内划分量度。 此外，您还可以进一步深入到更精细的粒度级别。
+   您可以跨选定的时段，按维度项目或者受众筛选条件来划分指标。此外，您还可以进一步深入到更精细的粒度级别。
 
    >[!NOTE]
    >
    >数据表可显示的划分数量最多为 200 个。在导出划分时，该限额会有所增加。
 
-**视频：Dimension在Analysis Workspace**
+**视频：Analysis Workspace 中的维度**
 
 >[!VIDEO](https://video.tv.adobe.com/v/23971)
 
-**视频：Dimension划分**
+**视频：划分维度**
 
 >[!VIDEO](https://video.tv.adobe.com/v/23969)
 
@@ -45,13 +45,13 @@ ht-degree: 53%
 
 ![划分设置](assets/breakdown_settings.png)
 
-将归因模型应用于划分或编辑划分时的预期行为是：
+将归因模型应用到细分或者编辑它们时的预期行为如下：
 
-* 如果您在不存在其他属性时应用归因，则该归因将应用于整个列树。
+* 如果在没有其他归因存在时应用某个归因，则该归因应用到整个列树。
 
-* 如果在应用归因后添加划分，则它将对添加的给定划分（如果该维度具有默认值）使用默认值。 否则，它将使用父列中的划分。 某些维度具有默认分配。 例如，“时间”维度和“反向链接”使用“同一接触”。 产品维度使用“最近联系”。 其他维没有默认维，将使用父列分配。
+* 如果您在应用某个归因之后添加细分，则它会使用所添加给定细分的默认值（如果该维度有默认值）。否则，它会使用来自父列的细分。一些维度具有默认分配。例如，时间维度和反向链接使用同一接触。产品维度使用最后接触。其他维度没有默认值，将使用父列分配。
 
-* 如果列树中已存在属性，则更改属性只会影响您正在编辑的属性。
+* 如果列树中已有归因，更改该归因仅影响您正在编辑的列。
 
 ## 视频
 
@@ -63,6 +63,6 @@ ht-degree: 53%
 
 >[!VIDEO](https://video.tv.adobe.com/v/40179)
 
-Dimension按位置划分：
+按位置划分维度：
 
 >[!VIDEO](https://video.tv.adobe.com/v/24033)
