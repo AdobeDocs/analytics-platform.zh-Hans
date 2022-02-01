@@ -1,11 +1,11 @@
 ---
 description: 在 Analysis Workspace for Customer Journey Analytics 中使用快速筛选器。
 title: 快速筛选器
-feature: Workspace Basics
+feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 1334e1edb36583ba978936fecbff2657e63a94bf
-workflow-type: ht
+source-git-commit: cea2faeaf9c2779ab808506025780fd3659a94b1
+workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 | “点击”/“访问”/“访客”容器 | 快速筛选器仅包括一个[筛选器容器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=zh-Hans#filter-containers)，从中可在筛选器中包括（或从筛选器中排除）某个维度/指标/日期范围。[!UICONTROL 访客]包含访客在不同的访问和页面查看间专属的总体数据。通过[!UICONTROL 访问]容器可设置规则以根据访问划分访客的数据，而通过[!UICONTROL 点击]容器可根据个别页面查看划分访客信息。默认容器为[!UICONTROL 点击]。 |
 | 组件（维度/指标/日期范围） | 通过添加组件（维度、量度、日期范围或维度值）可定义最多 3 条规则。有 3 种方法可以找到正确的组件：<ul><li>只需开始打字，[!UICONTROL 快速筛选器生成器]即自动查找相应的组件。</li><li>使用下拉列表查找组件。</li><li>从左边栏中拖放组件。</li></ul> |
 | 运算符 | 使用下拉菜单查找标准运算符和[!UICONTROL 非重复计数]运算符。请参阅[筛选器运算符](operators.md)。 |
-| 加号 (+) | 添加另一条规则 |
+| 加号 (+) | 添加另一条规则。 |
 | AND/OR 限定符 | 可将“AND”或“OR”限定符添加到规则，但不得在单个筛选器定义中混用“AND”和“OR”。 |
 | 应用 | 将此筛选器应用于面板。如果此筛选器不包含任何数据，则系统将询问您是否要继续。 |
 | 打开生成器 | 打开筛选器生成器。在筛选器生成器中保存或应用筛选器后，即不再将它视为“快速筛选器”。它成为组件列表筛选器库的一部分。 |

@@ -1,9 +1,9 @@
 ---
 description: Analysis Workspace 中的异常检测使用一系列高级统计技术来确定是否应将观测到的情况视为异常。
 title: 异常检测中使用的统计技术
-uuid: b6ef6a2e-0836-4c9a-bf7e-01910199bb92
+feature: Anomaly Detection
 exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 100%
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace 中的异常检测使用一系列高级统计技术来确定是否应将观测到的情况视为异常。
 
@@ -43,7 +43,7 @@ Analysis Workspace 中的异常检测使用一系列高级统计技术来确定�
 * 网购星期一
 * 12 月 24 至 26 日
 * 1 月 1 日
-* 12 月 31 日
+* 31 年 12 月
 
 这些假日的选择基于对许多客户数据点的广泛统计分析，旨在确定对客户最高值趋势影响最大的假日。虽然此列表没有囊括所有客户或业务周期内的假日，但我们发现，应用这些假日可以显著提升几乎所有客户数据集算法的整体性能。
 

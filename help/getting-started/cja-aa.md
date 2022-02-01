@@ -3,7 +3,8 @@ title: Customer Journey Analytics 功能支持
 description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集进行比较。
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: d46779a30fd841194f8ba0e80ab17ea5714569db
+feature: CJA Basics
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '1309'
 ht-degree: 92%

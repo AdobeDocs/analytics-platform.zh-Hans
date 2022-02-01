@@ -2,8 +2,9 @@
 description: Workspace 中的项目共享和项目角色
 keywords: Analysis Workspace 共享
 title: 共享项目
+feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 94%
@@ -14,7 +15,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 共享可以使一个项目供您的组织内的其他 Analysis Workspace 用户使用。在收件人打开项目时，您应用的任何[策划](curate.md)都会反映出来。
 
@@ -61,7 +62,7 @@ ht-degree: 94%
 
 ## 共享到收件人组 {#Groups}
 
-所有用户都可以将项目共享到由多位收集人组成的组。在Customer Journey Analytics中，组由[Adobe Experience Cloud管理控制台](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html)中的产品配置文件定义。
+所有用户都可以将项目共享到由多位收集人组成的组。在Customer Journey Analytics中，组由 [Adobe Experience Cloud admin console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 * 管理员可以共享到任何组，包括“全部”组。
 * 除“全部”组外，非管理员可以共享到其所属的组。

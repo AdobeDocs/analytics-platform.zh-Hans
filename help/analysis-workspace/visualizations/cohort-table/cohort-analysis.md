@@ -1,8 +1,9 @@
 ---
 title: 什么是同类群组分析？
 description: 了解 Analysis Workspace 中的同类群组分析
+feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 75%
@@ -11,7 +12,7 @@ ht-degree: 75%
 
 # 什么是[!UICONTROL 同类群组分析]？
 
-*`cohort`* 是指一组在特定期限内共享相同特性的人员。例如，在您想了解如何让一个同类群组喜欢某个品牌时，[!UICONTROL 同类群组分析]就能派上用场。您可以轻松识别趋势中的变化，然后相应地采取回应。（网上提供了有关[!UICONTROL 同类群组分析]的解释说明，例如[同类群组分析基础](https://en.wikipedia.org/wiki/Cohort_analysis)。）
+*`cohort`* 是指一组在特定期限内共享相同特性的人员。例如，在您想了解如何让一个同类群组喜欢某个品牌时，[!UICONTROL 同类群组分析]就能派上用场。您可以轻松识别趋势中的变化，然后相应地采取回应。（网上提供了有关[!UICONTROL 同类群组分析]的解释说明，例如[同类群组分析基础](https://zh.wikipedia.org/wiki/Cohort_analysis)。）
 
 创建同类群组报表后，您可以组织其组件（特定维度、量度和过滤器），然后与任何人共享同类群组报表。 请参阅[策划和共享](/help/analysis-workspace/curate-share/curate.md)。
 
@@ -23,7 +24,7 @@ ht-degree: 75%
 * 获取在一些领域（例如，定价、升级路径等）内进行 A/B 测试的建议。
 * 在引导分析报表中查看[!UICONTROL 同类群组分析]报表。
 
-[!UICONTROL 同类群] 组分析适用于具有Analysis Workspace访问权限的所有Customer Journey Analytics [!UICONTROL 客户]。
+[!UICONTROL 同类群组分析] 适用于具有访问权限的所有Customer Journey Analytics客户 [!UICONTROL Analysis Workspace].
 
 [同类群组分析视频教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html?lang=zh-Hans)（4 分 36 秒）
 
@@ -64,7 +65,7 @@ ht-degree: 75%
 
 ### [!UICONTROL 自定义维度]同类群组
 
-创建基于所选维度的同类群组，而不是默认的基于时间的同类群组。在Customer Journey Analytics中使用诸如[!UICONTROL 营销渠道]、[!UICONTROL 营销活动]、[!UICONTROL 产品]、[!UICONTROL 页面]、[!UICONTROL 区域]等维度，显示维系率根据这些维度值的不同有何变化。
+创建基于所选维度的同类群组，而不是默认的基于时间的同类群组。使用维度，例如 [!UICONTROL 营销渠道], [!UICONTROL 营销活动], [!UICONTROL 产品], [!UICONTROL 页面], [!UICONTROL 地区]，或Customer Journey Analytics中的任何其他维度，以显示维系率根据这些维度值的不同有何变化。
 
 ![](assets/cohort-customizable-cohort-row.png)
 

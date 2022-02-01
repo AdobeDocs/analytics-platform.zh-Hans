@@ -3,8 +3,9 @@ title: (B2B) 将帐户级别的数据作为查询数据集进行添加
 description: 了解如何将基于帐户的数据作为查询数据集添加到 CJA
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
+feature: Use Cases
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 100%
 

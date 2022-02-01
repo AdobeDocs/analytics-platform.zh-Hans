@@ -2,11 +2,12 @@
 description: “策划”让您可在共享项目前限制组件。
 keywords: Analysis Workspace 策划
 title: 策划项目
+feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '493'
-ht-degree: 43%
+ht-degree: 45%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 43%
 “策划”允许您在共享项目之前限制组件（维度、量度、过滤器、日期范围）。 当收件人打开项目时，他们将看到您为其策划的有限组件。策划虽然是一个可选步骤，但建议在共享项目前执行此步骤。
 
 >[!NOTE]
-> 产品配置文件是控制用户可以查看哪些组件的主要机制。它们通过[Adobe Experience CloudAdmin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html)进行管理。 “策划”是一个次级过滤器。
+> 产品配置文件是控制用户可以查看哪些组件的主要机制。它们通过 [Adobe Experience CloudAdmin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=zh-Hans). “策划”是一个次级过滤器。
 
 ## 应用项目策划
 
@@ -43,7 +44,7 @@ ht-degree: 43%
 
 ## 组件管理选项
 
-在应用策划后的项目中，收件人将看到左边栏中的&#x200B;**[!UICONTROL 显示所有]**&#x200B;组件选项。 [!UICONTROL 显示所有组件]选项将显示不同的组件集，具体取决于：
+在应用策划后的项目中，收件人将看到 **[!UICONTROL 显示全部]** 组件。 [!UICONTROL 显示所有组件]选项将显示不同的组件集，具体取决于：
 
 * 用户的权限级别（管理员或非管理员）
 * 项目角色（所有者/编辑者或非所有者/编辑者）

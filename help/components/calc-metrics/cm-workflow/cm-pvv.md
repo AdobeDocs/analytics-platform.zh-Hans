@@ -1,8 +1,10 @@
 ---
 description: 显示如何生成简单的“每次访问页面查看次数”量度。
 title: 构建简单的“每次访问的页面查看次数”量度
-source-git-commit: 50c56d718ae7a7f6e3d788b9f755831a7522337c
-workflow-type: ht
+feature: Calculated Metrics
+exl-id: 46c83a1f-cb2d-4d5d-af4f-e1d2e4566743
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 100%
 
@@ -12,7 +14,7 @@ ht-degree: 100%
 
 显示如何生成简单的“每次访问页面查看次数”量度。
 
-有关 UI 组件的详细描述，请参阅[生成量度](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)。
+有关 UI 组件的详细描述，请参阅 [生成指标](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
 下面说明了如何生成简单的“每次访问页面查看次数”量度。
 

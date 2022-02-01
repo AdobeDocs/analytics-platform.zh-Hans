@@ -3,8 +3,9 @@ title: 在 Customer Journey Analytics 中就 Google Analytics 数据给出报告
 description: 在 Customer Journey Analytics 中就 Google Analytics 数据给出有价值的报告
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
+feature: Use Cases
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 100%
 

@@ -1,11 +1,12 @@
 ---
 description: 直方图类似于条形图，不过它可以将数字归为几组不同的范围（存储段）。
 title: 直方图
+feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '421'
-ht-degree: 87%
+ht-degree: 91%
 
 ---
 
@@ -13,7 +14,7 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 直方图类似于条形图，不过它可以将数字归为几组不同的范围（存储段）。Analytics 将数字的“存储”自动归为不同的范围，但您可以在[高级设置](#section_09D774C584864D4CA6B5672DC2927477)中更改相关设置。
 
@@ -59,7 +60,7 @@ ht-degree: 87%
 
 ![](assets/manage-data-source.png)
 
-表格中显示的预建过滤器是内部过滤器，不会显示在过滤器选择器中。 单击过滤器名称旁边的“i”图标，然后单击&#x200B;**[!UICONTROL 设为公用]**&#x200B;以将过滤器设为公用。
+表格中显示的预建过滤器是内部过滤器，不会显示在过滤器选择器中。 单击过滤器名称旁边的“i”图标，然后单击 **[!UICONTROL 公开]** 将过滤器公开。
 
 ![](assets/prebuilt_segments.png)
 

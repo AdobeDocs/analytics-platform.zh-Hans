@@ -1,14 +1,14 @@
 ---
-description: “区域”可视化类似于线图，但线下有彩色区域。
+description: “区域”可视化与折线图类似，只是折线图下方显示了彩色区域。
 title: 面积图和堆叠的面积图
-translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+feature: Visualizations
+exl-id: d9662b29-fc41-4074-8cf6-031202994ece
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 83%
 
 ---
-
 
 # 面积图和堆叠的面积图
 
@@ -27,4 +27,3 @@ ht-degree: 83%
 堆叠的面积可视化的新可视化设置将图表变为“100% 堆叠”可视化。
 
 ![](assets/areastacked100.png)
-

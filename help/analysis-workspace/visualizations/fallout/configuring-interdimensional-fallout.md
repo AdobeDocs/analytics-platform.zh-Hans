@@ -1,14 +1,14 @@
 ---
 description: Analysis Workspace 中的流失允许您将维度和量度作为漏斗和工作流程中的接触点来进行混合和匹配。这在定义要调查的用户步骤方面具有更大的灵活性。
 title: 维度间流失
-translation-type: tm+mt
-source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
+feature: Visualizations
+exl-id: 7975324c-4efc-4c36-bc83-dcde85d2febc
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 100%
 
 ---
-
 
 # 维度间流失
 
@@ -27,4 +27,3 @@ Analysis Workspace 中的流失允许您将维度和量度作为漏斗和工作�
 此外，您可以将不同的维度和量度合并为 AND 检查点。您只需将其他维度或量度拖动到现有维度或量度的顶部即可：
 
 ![](assets/interdimensional-fallout3.png)
-

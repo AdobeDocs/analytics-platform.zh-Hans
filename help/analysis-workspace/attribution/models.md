@@ -1,8 +1,9 @@
 ---
 title: 归因模型和回顾时间范围
 description: 不同类型的归因如何在维度项目之间划分点数。
+Feature: Attribution
 exl-id: 2ab6add7-9dc8-419d-96f7-e0c12e6b4761
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '1516'
 ht-degree: 98%
@@ -13,7 +14,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 Customer Journey Analytics中归因的概念需要两个组件：
 

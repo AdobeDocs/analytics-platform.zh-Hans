@@ -1,8 +1,9 @@
 ---
 description: 工作区常见问题解答和疑难解答提示。
 title: 常见问题解答
+feature: FAQ
 exl-id: d7233b26-9887-4b71-ad46-3c6ffe27d904
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 77%
@@ -13,17 +14,17 @@ ht-degree: 77%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 | 问题 | 回答 |
 |--- |--- |
 | **使用 Analysis Workspace 的先决条件是什么？** | 使用Analysis Workspace需要有效的Customer Journey Analytics实施。 在使用该工具之前，请确保贵组织正在向Adobe Experience Platform发送数据。 |
-| **Analysis Workspace 的管理和访问要求有哪些？** | 请参阅[管理要求](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)。 |
+| **Analysis Workspace 的管理和访问要求有哪些？** | 请参阅 [管理要求](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md). |
 | **使用 Analysis Workspace 是否会影响数据收集？** | 由于 Analysis Workspace 是一款报表工具，因此不会对数据收集产生任何影响。您可以不加选择地将组件拖到项目中来查看具体效果，这不会产生任何影响。将不同的维度和指标组合拖动到工作区项目中，可查看相应的效果。如果意外地将无效组件拖动到工作区项目，或者希望返回到上一个步骤，请按 Ctrl + Z (Windows) 或 cmd + Z (Mac) 以撤消上一个操作。此外，您还可以通过单击左上角菜单中的&#x200B;*[!UICONTROL 项目] > [!UICONTROL 新建]*&#x200B;来重头开始创建。 |
 | **如何实施Analysis Workspace?** | 不要求执行任何特殊的实施操作。Analysis Workspace适用于所有公司Customer Journey Analytics。 但是，对内容（如项目组件）的标准权限也适用，并且适用于组织和共享项目。 请参阅[管理和访问要求](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)。 |
 | **如何优化 Analysis Workspace 的性能？** | 请参阅[优化性能](/help/analysis-workspace/workspace-faq/optimizing-performance.md)。 |
 
-## 故障诊断
+## 疑难解答
 
 **当我将指标拖动到上面时，显示“数据无效”。**
 
@@ -35,4 +36,4 @@ ht-degree: 77%
 
 * 如果您在报表中应用了过滤器，则过滤器标准可能与任何数据都不匹配。 尝试删除过滤器或调整过滤器定义。
 * 检查右上角的日期范围，并确保它已设置为预期的值。
-* 导航到您的网站，然后使用[调试器](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html)验证正在收集的数据。
+* 导航到您的网站，然后使用 [Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=zh-Hans) 验证正在收集的数据。

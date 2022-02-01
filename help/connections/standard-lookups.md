@@ -3,8 +3,9 @@ title: 向数据集添加标准查找
 description: 使用标准查找可利用 Customer Journey Analytics 中的有用维度来增强报告。
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
-source-git-commit: 0f2cbe4ff8bdc083fff363d9623afe68a5132d6f
-workflow-type: ht
+feature: Connections
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 100%
 

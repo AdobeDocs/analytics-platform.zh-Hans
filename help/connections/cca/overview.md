@@ -3,8 +3,9 @@ title: 跨渠道分析概述
 description: 在多个数据集中重新生成访客 ID 的键值，以对访客进行拼合。
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
-source-git-commit: 0f348f1d2119c902716a5e096a859521a4b316b0
-workflow-type: ht
+feature: Cross-Channel Analytics
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 100%
 

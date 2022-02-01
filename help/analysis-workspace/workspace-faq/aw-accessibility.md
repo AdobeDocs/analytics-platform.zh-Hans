@@ -1,8 +1,9 @@
 ---
 description: Analysis Workspace 中的无障碍支持功能
 title: Analysis Workspace 中的辅助功能
+feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 96%
@@ -11,7 +12,7 @@ ht-degree: 96%
 
 # Analysis Workspace 中的辅助功能
 
-了解[!UICONTROL Analysis Workspace]中的无障碍支持，这是用于Customer Journey Analytics的首要分析工具。
+了解中的无障碍支持 [!UICONTROL Analysis Workspace]，这是Customer Journey Analytics的主要分析工具。
 
 无障碍是指让患有失明、视力欠佳、认知困难、行动不便等残障人士都可以使用产品。软件产品的无障碍功能示例包括：屏幕阅读器支持、图形的对等文本、键盘快捷键、将显示颜色更改为高对比度等。
 

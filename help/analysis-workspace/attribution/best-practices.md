@@ -1,13 +1,14 @@
 ---
 title: 归因最佳实践
 description: 确定归因模型的最佳实践是什么？
-source-git-commit: 0e0d77425edeceb3ede6d2d7ca81846b30179607
-workflow-type: ht
+feature: Attribution
+exl-id: d612dc79-24e4-4d50-bccd-dfb58328bd4e
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 100%
 
 ---
-
 
 # 归因最佳实践
 
@@ -23,8 +24,7 @@ ht-degree: 100%
 * 在转化前有多少客户接触了不同的营销渠道？
 * 这些行为的比例/分布。
 
-例如，如果 50% 的客户在转化前接触了 3 个渠道，这 3 个渠道之间有什么互动吗？
-然后，您可以进行漏斗上层和漏斗下层分析以扩展您的理解。
+例如，如果 50% 的客户在转化前接触了 3 个渠道，这 3 个渠道之间有什么互动吗？然后，您可以进行漏斗上层和漏斗下层分析以扩展您的理解。
 
 ### 漏斗上层分析
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 ### 漏斗下层分析
 
-在这个分析中，假设人们已经知道您的品牌，您希望转化他们。使用电子邮件、推送通知或 Facebook 广告。
+在这个分析中，假设人们已经知道您的品牌，您希望他们转化。使用电子邮件、推送通知或 Facebook 广告。
 
 ## 步骤 2：基于规则的归因
 
@@ -40,11 +40,11 @@ ht-degree: 100%
 
 **示例 1**
 
-比如您的假设是“我的第一次接触渠道比最后一次接触渠道对转化的影响更大”。然后您会使用[“反向 J 型”归因模型](/help/analysis-workspace/attribution/models.md)来检验这个假设。此模型将 60% 的点数分给第一个接触点。
+比如您的假设是“我第一次接触的渠道比最后一次接触的渠道对转化的影响更大”。然后，您会使用[“反向 J 型”归因模型](/help/analysis-workspace/attribution/models.md)来检验这个假设。此模型将 60% 的点数分给第一个接触点。
 
 **示例 2**
 
-您的假设可能是：“在我们的行业（例如，旅游业）中，归因时段为 60 或 90 天，而不是 30 天，因为客户在购买产品之前会进行大量研究。然后您会将[回溯时段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=en#lookback-windows)更改为 90 天。
+您的假设可能是：“在我们的行业（例如，旅游业）中，归因时段为 60 或 90 天，而不是 30 天，因为客户在购买产品之前会进行大量研究。”然后，您会将[回溯时段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=en#lookback-windows)更改为 90 天。
 
 ## 步骤 3：使用算法归因
 

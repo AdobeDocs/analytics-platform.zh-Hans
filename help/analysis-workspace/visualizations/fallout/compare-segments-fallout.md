@@ -1,20 +1,21 @@
 ---
 description: 您可以在Analysis Workspace中从接触点创建过滤器、添加过滤器作为接触点，以及比较各种过滤器之间的关键工作流程。
 keywords: 流失和过滤器；流失分析中的过滤器；比较流失中的过滤器
-title: 在流失分析中应用过滤器
+title: 在流失分析中应用筛选器
+feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 15%
 
 ---
 
-# 在流失分析中应用过滤器
+# 在流失分析中应用筛选器
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 您可以在Analysis Workspace中从接触点创建过滤器、添加过滤器作为接触点，以及比较各种过滤器之间的关键工作流程。
 
@@ -28,7 +29,7 @@ ht-degree: 15%
 
 ## 从接触点创建过滤器 {#section_915E8FBF35CD4F34828F860C1CCC2272}
 
-1. 从您特别感兴趣的特定接触点创建一个过滤器，该过滤器可能会应用到其他报表。 为此，请右键单击接触点并选择&#x200B;**[!UICONTROL 从接触点创建过滤器]**。
+1. 从您特别感兴趣的特定接触点创建一个过滤器，该过滤器可能会应用到其他报表。 要执行此操作，请右键单击接触点并选择 **[!UICONTROL 从接触点创建过滤器]**.
 
    ![](assets/segment-from-touchpoint.png)
 
@@ -52,7 +53,7 @@ ht-degree: 15%
 
 您可以在流失可视化图表中比较无限数量的过滤器。
 
-1. 从左侧的[!UICONTROL Filter]边栏中选择要比较的过滤器。 在本例中，我们选择了2个过滤器：美国用户和非美国用户。
+1. 从 [!UICONTROL 过滤器] 左边栏。 在本例中，我们选择了2个过滤器：美国用户和非美国用户。
 1. 将它们拖到顶部的过滤器拖放区域。
 
    ![](assets/segment-drop.png)

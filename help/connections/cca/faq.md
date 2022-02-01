@@ -3,8 +3,9 @@ title: 跨渠道分析常见问题解答
 description: 跨渠道分析常见问题解答
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
+feature: Cross-Channel Analytics
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 100%
 

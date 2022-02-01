@@ -1,12 +1,13 @@
 ---
 description: 在日历中，您可以指定日期和日期范围，或者选择一个预设。
 title: 日历和日期范围概述
-uuid: 3d7727ba-9070-4f7c-815f-c98baa4e3a2d
+feature: Calendar
+solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: b776478fa4fa77841c5cf0b2d082ff60055bf587
 workflow-type: tm+mt
 source-wordcount: '373'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 96%
 
 在日历中，您可以指定日期和日期范围，或者选择一个预设。
 
-日历选择在面板级别应用，但您可以选择将它们应用于所有面板。在工作区中单击日期范围时，界面将显示当前日历月和上一个日历月。您可以通过单击上方左右边角的左右箭头来调整这两个日历。
+日历选择在面板级别应用，但您可以选择将它们应用于所有面板。 在工作区中单击日期范围时，界面将显示当前日历月和上一个日历月。您可以通过单击上方左右边角的左右箭头来调整这两个日历。
 
 ![日历](assets/aw_calendar.png)
 
@@ -22,7 +23,7 @@ ht-degree: 96%
 
 您还可以将日期（和时间维度）拖放到工作区项目中。您可以选择特定的日期、周、月、年或滚动日期。
 
-[在 Analysis Workspace 中使用日期范围和日历](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/using-dates-in-analysis-workspace.html) (4:07)
+[在 Analysis Workspace 中使用日期范围和日历](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/using-dates-in-analysis-workspace.html?lang=zh-Hans) (4:07)
 
 | 设置 | 描述 |
 | --- | --- |

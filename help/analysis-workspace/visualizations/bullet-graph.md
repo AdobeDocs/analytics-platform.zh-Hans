@@ -1,14 +1,14 @@
 ---
 description: 让您可以查看您感兴趣的值与其他性能范围（目标）进行比较或衡量的结果。
 title: 项目符号图表
-translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+feature: Visualizations
+exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 100%
 
 ---
-
 
 # 项目符号图表
 

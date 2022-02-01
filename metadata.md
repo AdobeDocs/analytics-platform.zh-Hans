@@ -1,10 +1,9 @@
 ---
 cloud: Experience Cloud
-git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.zh-Hans
-description: 此文件包括传递到回购协议中的用户指南TOC.md文件的回购级元数据。
-feature-set: Analytics
-translation-type: tm+mt
-source-git-commit: 3c10451d5a70e4f733634efb9648da843e4c0db1
+git-repo: https://github.com/AdobeDocs/analytics-platform.zh-Hans
+description: 此文件包含存储库级别的元数据，这些元数据会传递到存储库中的用户指南TOC.md文件。
+feature-set: Customer Journey Analytics
+source-git-commit: a31b6a6624087b2863b4643397c4a824662551b5
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 84%

@@ -1,8 +1,10 @@
 ---
 description: 根据您的权限，您可以与整个组织、群组或个人用户共享量度。
 title: 共享计算量度
-source-git-commit: cefc5696efa8c1b68d6227d06a03014fbc5e3ff1
-workflow-type: ht
+feature: Calculated Metrics
+exl-id: b2a3e4e3-f0aa-4505-b3f5-7d9f14dc1640
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 100%
 

@@ -1,14 +1,13 @@
 ---
-description: 带菜单栏和设置的Workspace项目概述
+description: 使用菜单栏和设置的工作区项目概述
 keywords: Analysis Workspace
 title: 项目概述
-uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
+feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '1165'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -47,11 +46,11 @@ Workspace 项目列表页面包含了以下信息：
 
 | 菜单项 | 描述 |
 |---|---|
-| 项目 | 包括常用于项目管理的操作，如新建、打开、保存、另存为和另存为模板。还可通过单击“刷新项目”而刷新整个项目以检索最新的数据和定义。通过[“下载 CSV 和 PDF”](/help/analysis-workspace/curate-share/download-send.md)选项，可从 Workspace 导出数据。**“项目信息和设置** ”（请参阅下文）优惠了许多用于管理项目的选项。 |
+| 项目 | 包括常用于项目管理的操作，如新建、打开、保存、另存为和另存为模板。还可通过单击“刷新项目”而刷新整个项目以检索最新的数据和定义。通过[“下载 CSV 和 PDF”](/help/analysis-workspace/curate-share/download-send.md)选项，可从 Workspace 导出数据。**项目信息和设置** （请参阅下文）提供了许多用于管理项目的选项。 |
 | 编辑 | 撤消或重做您的上一项操作。“全部清除”将您的项目重置为空起点。 |
-| 插入 | 从此菜单插入新面板或可视化。还可从左侧边栏插入新面板和可视化。 |
-| [组件](/help/components/overview.md) | 从您的项目创建新过滤器、计算量度、日期范围或警报组件。 还可从左侧边栏创建新组件。如果最近更改了组件定义，则“刷新组件”将检索最新定义。 |
-| [共享](/help/analysis-workspace/curate-share/send-schedule-files.md) | 组织中的收件人可以管理、共享PDF/CSV项目并将其计划。 |
+| 插入 | 从此菜单插入新面板或可视化图表。还可从左侧边栏插入新面板和可视化图表。 |
+| [组件](/help/components/overview.md) | 从您的项目中创建新的过滤器、计算量度、日期范围或警报组件。 还可从左侧边栏创建新组件。如果最近更改了组件定义，则“刷新组件”将检索最新定义。 |
+| [共享](/help/analysis-workspace/curate-share/send-schedule-files.md) | 组织、共享和计划PDF/CSV项目以发送给贵组织的收件人。 |
 | 帮助 | 访问帮助文档、视频和 Analytics [Experience League 社区](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community)。管理 Workspace 提示和[调试器](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md)的可见性。查找关于 Workspace 及影响项目[性能](/help/analysis-workspace/workspace-faq/optimizing-performance.md)的各种因素的详细信息。 |
 | “共享”按钮或“所有者” | 如果您处于项目的“拥有”或“编辑”角色，则通过右上方的“共享”按钮可一键管理项目接收方。如果您处于项目的“复制”或“查看”角色，则您将看到项目所有者的姓名。 |
 
@@ -65,8 +64,8 @@ Workspace 项目列表页面包含了以下信息：
 
 | 设置 | 描述 |
 |---|---|
-| 项目 名称 | 给项目起的名称。您可以双击该名称以编辑它。 |
-| 创建者 | 项目所有者名称 |
+| 项目名称 | 给项目起的名称。您可以双击该名称以编辑它。 |
+| 创建者 | 项目所有者名称。 |
 | 上次修改时间 | 项目上次修改日期。 |
 | 标记 | 列出应用于项目以方便分类的所有标记。 |
 | 描述 | 描述有助于明确项目的目的。您可以双击描述以编辑它。 |
@@ -80,7 +79,7 @@ Workspace 项目列表页面包含了以下信息：
 
 还可从[空面板](/help/analysis-workspace/c-panels/blank-panel.md)访问可视化和面板。
 
-左边栏中的组件(Dimension、量度、过滤器、日期范围)与活动面板数据视图相关。 活动面板周围将有一个蓝色边框，活动数据视图将列在组件边栏的顶部。
+左边栏中的组件(Dimension、量度、过滤器、日期范围)与活动面板数据视图相关。 活动面板周围将有一个蓝色边框，并且活动数据视图将列在组件边栏的顶部。
 
 ![](assets/left-rail.png)
 
@@ -88,7 +87,7 @@ Workspace 项目列表页面包含了以下信息：
 
 项目画布是将面板、表格、可视化和组件集中在一起以构建您的分析的地方。一个项目可包含许多面板，而每个面板均可包含许多表格和可视化。
 
-当您希望根据时段、视图或分析用例组织项目时，面板非常有用。 活动面板在自身四周将有蓝色边框，并决定在左侧边栏中有哪些组件可用。
+当您要根据时段、数据视图或分析用例组织您的项目时，面板非常有用。活动面板在自身四周将有蓝色边框，并决定在左侧边栏中有哪些组件可用。
 
 根据您为项目选择的起点，您在画布中将首先使用[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)或[空面板](/help/analysis-workspace/c-panels/blank-panel.md)。最快开始分析的方法是选择一个或多个组件，然后将其拖放到项目画布中。随后将自动为您呈现数据表。[详细了解](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)构建表的不同选项，或利用我们的[培训教程](/help/analysis-workspace/home.md)就构建您的第一个项目获得更多指导。
 

@@ -1,11 +1,12 @@
 ---
 description: “流量”功能显示客户在您的网站和应用程序中的路径。
 title: 流量概述
+feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '185'
-ht-degree: 83%
+ht-degree: 88%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 83%
 * 分析客户在指定检查点（例如登入、特定维度或退出）之前和之后的去向
 * 通过指定所选路径中的特定点来创建过滤器
 
-[流量可视化视频教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html)（4 分 56 秒）
+[流量可视化视频教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html?lang=zh-Hans)（4 分 56 秒）
 
 ## 维度间流量 {#section_7AA325E432C846B0AC51E70CCE79B4C0}
 

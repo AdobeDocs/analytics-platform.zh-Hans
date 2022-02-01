@@ -1,14 +1,14 @@
 ---
-description: 条形可视化显示表示一个或多个度量中不同值的垂直条。
+description: 条形可视化显示垂直条，这些垂直条表示一个或多个量度中的各种值。
 title: 条形图和堆叠的条形图
-translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+feature: Visualizations
+exl-id: a4458694-0c90-4e44-88d5-575737a61c36
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 85%
 
 ---
-
 
 # 条形图和堆叠的条形图
 
@@ -29,4 +29,3 @@ ht-degree: 85%
 堆叠的条形可视化的新可视化设置将图表变为“100% 堆叠”可视化：
 
 ![](assets/stacked_100_percent.png)
-

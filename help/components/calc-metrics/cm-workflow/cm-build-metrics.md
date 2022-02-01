@@ -1,8 +1,10 @@
 ---
 description: 计算量度生成器提供一个画布，可以将维度、量度、筛选器和函数拖放到画布上，以基于容器层次结构逻辑、规则和运算符创建自定义量度。通过此集成式开发工具，您可以生成并保存简单的计算量度或复杂的高级计算量度。
 title: 生成量度
-source-git-commit: a747a7e7def6f55fd350406125581e631af9e208
-workflow-type: ht
+feature: Calculated Metrics
+exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 100%
 
@@ -48,4 +50,3 @@ ht-degree: 100%
 | 筛选器列表 | （仅限高级计算量度）作为管理员，此列表显示在您的登录公司中创建的所有筛选器。如果您是非管理员用户，则此列表显示您拥有的筛选器以及与您共享的筛选器。 |
 | 函数列表 | （仅限高级计算量度）函数将分为两个列表：基本（最常用）和高级。 |
 | 数据视图选择器 | 此选择器（位于右上角）让您可以切换到不同的数据视图。 |
-

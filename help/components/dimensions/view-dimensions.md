@@ -1,9 +1,10 @@
 ---
 description: 对于非时间维度显示前 5 个值（对于时间维度显示前 15 个值）。
 title: 如何在 CJA Workspace 中预览维度
+feature: Dimensions
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
-source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
-workflow-type: ht
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 100%
 

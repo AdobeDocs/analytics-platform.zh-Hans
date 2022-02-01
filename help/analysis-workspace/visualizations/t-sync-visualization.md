@@ -1,15 +1,15 @@
 ---
-description: 通过同步可视化图表，您可以控制与可视化图表对应的数据表或数据源。
-keywords: Analysis Workspace;Synchronize visualization with data source
+description: 通过同步可视化信息，您可以控制与可视化对应的数据表或数据源。
+keywords: Analysis Workspace;将可视化与数据源同步
 title: 管理数据源
-translation-type: tm+mt
-source-git-commit: 3dc9d0d0a1f65a4205120895c35aa508f080c25d
+feature: Visualizations
+exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '569'
 ht-degree: 100%
 
 ---
-
 
 # 管理数据源
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 此新架构与上一个架构的不同之处在于，Analysis Workspace 不再创建用于存储锁定选择的重复隐藏表格。现在，数据源指向用于创建可视化图表的表格。
 
-**用例示例：**
+**示例用例:**
 
 * 您可以创建一个概要可视化，并将其锁定到用于创建可视化图表的表格的单元格。当您启用“显示数据源”后，它会准确地显示表中信息的来源。源数据将会变成灰色：
 

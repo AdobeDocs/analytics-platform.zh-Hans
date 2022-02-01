@@ -2,12 +2,11 @@
 description: 在 Analysis Workspace 中创建自定义日期范围，并将它们另存为“时间”组件。
 keywords: Analysis Workspace
 title: 创建自定义日期范围
-feature: Reports & Analytics 基础知识
-uuid: c8873d41-454d-4f22-ad1f-38cacec5a3bc
+feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '281'
 ht-degree: 100%
 
 ---
@@ -16,7 +15,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解更多...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 在 Analysis Workspace 中创建自定义日期范围，并将它们另存为“时间”组件。
 
