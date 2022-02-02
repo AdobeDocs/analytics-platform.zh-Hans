@@ -4,7 +4,7 @@ description: 确定归因模型的最佳实践是什么？
 feature: Attribution
 exl-id: d612dc79-24e4-4d50-bccd-dfb58328bd4e
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '393'
 ht-degree: 100%
 
