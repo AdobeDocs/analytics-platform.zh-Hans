@@ -6,7 +6,7 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1948'
 ht-degree: 100%
 
@@ -116,10 +116,10 @@ ht-degree: 100%
 | --- | --- |
 | [!UICONTROL 刷新] | 刷新连接以便反映最近添加的记录。 |
 | [!UICONTROL 删除] | 删除此连接。 |
-| [!UICONTROL 创建数据视图] | 基于此连接创建新的数据视图。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en) |
+| [!UICONTROL 创建数据视图] | 基于此连接创建新的数据视图。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=zh-Hans) |
 | [!UICONTROL 连接名称] | 显示好记的连接名称。 |
 | [!UICONTROL 连接说明] | 显示完整描述此连接目的的更详细的说明。 |
-| [!UICONTROL 沙盒] | 此连接从中获取其数据集的 [Adobe Experience Platform 沙盒](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en)。这是您在首次创建连接时选择的沙盒。不能更改。 |
+| [!UICONTROL 沙盒] | 此连接从中获取其数据集的 [Adobe Experience Platform 沙盒](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=zh-Hans)。这是您在首次创建连接时选择的沙盒。不能更改。 |
 | [!UICONTROL 连接 ID] | 此 ID 是系统在 Adobe Experience Platform 中生成的。 |
 | [!UICONTROL 使用连接的数据视图] | 列出使用此连接的所有数据视图。 |
 | [!UICONTROL 导入新数据] | （开启/关闭）指示是否应将新批次的数据添加到历史（回填）数据中。 |
@@ -139,7 +139,7 @@ ht-degree: 100%
 | [!UICONTROL 添加的批次] | 指示有多少数据批次添加到此数据集。 |
 | [!UICONTROL 跳过的记录数] | 指示提取期间在选定的时段中跳过了多少行。<p>跳过记录的原因包括：缺少时间戳、缺少人员 ID 或人员 ID 无效等。每 10 分钟更新一次。<p>无效的个人 ID（例如“undefined”或“00000000”，或者在某个事件中，[!UICONTROL 人员 ID] 中的任何数字和字母组合在指定月份出现超过 100 万次）无法归因到任何特定的用户或个人。它们无法提取到系统中，并会导致容易出错的提取和报告。要修复无效的人员 ID，您有 3 个选项：<ul><li>使用[跨渠道分析](/help/connections/cca/overview.md)可以利用有效用户 ID 填充未定义或全零用户 ID。</li><li>作废用户 ID，则在提取期间也会跳过这些 ID（这要优于无效或全零用户 ID）。</li><li>先修复系统中的任意无效用户 ID，然后再提取数据。</li></ul><p>**注意**：**[!UICONTROL 跳过的记录数]**&#x200B;的数据目前仅包括事件数据，而不包括配置文件或查找数据。 |
 | [!UICONTROL 上次添加时间] | 指示添加最后批次的时间。 |
-| [!UICONTROL 数据集类型] | [!UICONTROL 事件]、[!UICONTROL 查找]或[!UICONTROL 档案]。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
+| [!UICONTROL 数据集类型] | [!UICONTROL 事件]、[!UICONTROL 查找]或[!UICONTROL 档案]。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans#configure-dataset) |
 | [!UICONTROL 架构] | 显示此数据集所基于的 Adobe Experience Platform 架构。 |
 | [!UICONTROL 数据集 ID] | 此 ID 是系统在 Adobe Experience Platform 中生成的。 |
 
