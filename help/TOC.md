@@ -1,5 +1,5 @@
 ---
-git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.zh-Hans
+git-repo: https://github.com/AdobeDocs/analytics-platform.zh-Hans
 cloud: Experience Cloud
 product: adobe analytics
 sub-product: customer journey
@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 本指南提供 Customer Journey Analytics 自助式帮助内容；Customer Journey Analytics 基于 Adobe Experience Platform，是 Adobe 的新一代跨渠道分析解决方案。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 6585e3b3f5a48edcf4357f710630ebbd36175e7d
+source-git-commit: c09c381a6a0c258275dcc90fff3e7133d5c42d5a
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 99%
+source-wordcount: '579'
+ht-degree: 98%
 
 ---
 
@@ -205,9 +205,11 @@ ht-degree: 99%
    + [将 Adobe Analytics 数据与 CJA 数据进行比较](troubleshooting/compare.md)
 + 隐私权 {#cja-privacy}
    + [隐私权概述](privacy/privacy-overview.md)
-+ [CJA 文档更新](doc-changes.md)
 + 发行说明 {#releases}
    + [最新版本](release-notes/latest.md)
+   + [2022 版](release-notes/2022.md)
    + [2021 版](release-notes/2021.md)
    + [2020 版](release-notes/2020.md)
+   + [CJA版本](release-notes/releases.md)
+   + [CJA 文档更新](release-notes/doc-changes.md)
 
