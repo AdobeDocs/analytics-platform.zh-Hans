@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 本指南提供 Customer Journey Analytics 自助式帮助内容；Customer Journey Analytics 基于 Adobe Experience Platform，是 Adobe 的新一代跨渠道分析解决方案。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: c09c381a6a0c258275dcc90fff3e7133d5c42d5a
+source-git-commit: cf51db711370e7dea5d934cb25d351271d3f20bd
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 98%
+source-wordcount: '589'
+ht-degree: 97%
 
 ---
 
@@ -20,10 +20,18 @@ ht-degree: 98%
 # Customer Journey Analytics 指南 {#using}
 
 + [Customer Journey Analytics 指南](getting-started/cja-landing.md)
++ 发行说明 {#releases}
+   + [最新版本](release-notes/latest.md)
+   + [2022 版](release-notes/2022.md)
+   + [2021 版](release-notes/2021.md)
+   + [2020 版](release-notes/2020.md)
+   + [CJA版本](release-notes/releases.md)
+   + [CJA 文档更新](release-notes/doc-changes.md)
 + Customer Journey Analytics 概述{#cja-overview}
    + [Customer Journey Analytics 概述](getting-started/cja-overview.md)
    + [快速入门](getting-started/cja-getting-started.md)
    + [常见问题解答](getting-started/cja-faq.md)
+   + [准备从Adobe Analytics迁移到Customer Journey Analytics](getting-started/aa-to-cja.md)
    + [Customer Journey Analytics 功能支持](getting-started/cja-aa.md)
    + [删除后果](getting-started/cja-deletion.md)
    + [CJA 术语表](getting-started/cja-glossary.md)
@@ -205,11 +213,5 @@ ht-degree: 98%
    + [将 Adobe Analytics 数据与 CJA 数据进行比较](troubleshooting/compare.md)
 + 隐私权 {#cja-privacy}
    + [隐私权概述](privacy/privacy-overview.md)
-+ 发行说明 {#releases}
-   + [最新版本](release-notes/latest.md)
-   + [2022 版](release-notes/2022.md)
-   + [2021 版](release-notes/2021.md)
-   + [2020 版](release-notes/2020.md)
-   + [CJA版本](release-notes/releases.md)
-   + [CJA 文档更新](release-notes/doc-changes.md)
+
 

@@ -3,18 +3,14 @@ title: 计算量度概述
 description: 了解
 feature: Calculated Metrics
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '481'
+source-git-commit: cf51db711370e7dea5d934cb25d351271d3f20bd
+workflow-type: tm+mt
+source-wordcount: '448'
 ht-degree: 100%
 
 ---
 
 # 计算量度概述
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 计算量度和高级计算（或派生）量度是指您可以从现有量度创建的自定义量度。我们的计算量度工具提供了一种高度灵活的方式，可用于生成、管理和组织量度。借助这些工具，营销人员、产品经理和分析人员不必更改您的实施，即可提出有关数据的问题。
 
