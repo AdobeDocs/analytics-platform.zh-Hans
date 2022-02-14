@@ -4,10 +4,10 @@ description: Customer Journey Analytics — 常见问题解答。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '1649'
-ht-degree: 100%
+source-git-commit: b9b6c411552e8be98547e834ce81ba45d28dda60
+workflow-type: tm+mt
+source-wordcount: '1646'
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 100%
 | 问题 | 回答 |
 | --- | --- |
 | [!UICONTROL Customer Journey Analytics] 是否可以跨设备或跨数据集进行“拼合”？ | 支持。[!UICONTROL Customer Journey Analytics] 具有一个称为[跨渠道分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=zh-Hans) (CCA) 的拼合解决方案，该方案允许您重新键入数据集的人员 ID，实现多个数据集的无缝组合。 |
-| 是否支持从匿名行为到实名行为的拼合？ | 支持。[跨渠道分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=zh-Hans)查看来自已通过和未通过身份验证的会话的用户数据来生成拼合 ID。 |
+| 是否支持从匿名行为到实名行为的拼合？ | 支持。[跨渠道分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html)查看来自已通过和未通过身份验证的会话的用户数据来生成拼合 ID。 |
 | CCA 中如何进行“重放”？ | CCA 根据它所掌握的唯一标识符“重放”数据。重放导致新设备连接并被拼合。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=zh-Hans#step-1%3A-live-stitching) |
 | 如何在 CCA 中拼合历史数据（回填）？ | 首次启用时，Adobe 提供追溯到上月初（最多 60 天）的拼合数据的回填。为实现此回填，当时的未拼合数据中必须存在过渡 ID。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=zh-Hans#enable-cross-channel-analytics) |
 
@@ -57,15 +57,15 @@ ht-degree: 100%
 
 | 问题 | 回答 |
 | --- | --- |
-| 在 [!UICONTROL Adobe Experience Platform] 上，[!UICONTROL Customer Journey Analytics] 的预期滞后时间是多少？ | <ul><li>实时数据或事件：当数据在 AEP 中可用后，在 90 分钟内处理和摄取。</li><li>批次大小 > 500 万行：超过 90 分钟。</li><li>少量回填 - 例如，查找 100 万行的数据集：24 小时内<li>大量回填 - 例如，5000 亿行：30 天</li></ul> |
+| 在 [!UICONTROL Adobe Experience Platform] 上，[!UICONTROL Customer Journey Analytics] 的预期滞后时间是多少？ | <ul><li>实时数据或事件：当数据在 AEP 中可用后，在 90 分钟内处理和摄取。(批量> 5,000万行：超过90分钟。)</li><li>少量回填 - 例如，查找 100 万行的数据集：24 小时内<li>大量回填 - 例如，5000 亿行：30 天</li></ul> |
 
 
 ## 5. 传统 [!UICONTROL Adobe Analytics] 组件
 
 | 问题 | 回答 |
 | --- | --- |
-| 我能否将来自 Customer Journey Analytics 的筛选器（区段）共享/发布到 Experience Platform Unified Profile 或其他 Experience Cloud 应用程序？ | 还不能，但我们正在努力提供这种功能。 |
-| 我的旧 eVar 设置发生了什么？ | 传统 Adobe Analytics 中的 eVar、prop 和事件在 [!UICONTROL Customer Journey Analytics] 中已不复存在。您有无限的架构元素（维度、量度、列表字段）。因此，您在数据收集过程中使用的所有属性设置现在都会在查询时应用。 |
+| 我能否共享/发布 [!UICONTROL 过滤器] ([!UICONTROL 区段])从 [!DNL Customer Journey Analytics] Experience Platform统一配置文件或其他Experience Cloud应用程序？ | 还不能，但我们正在努力提供这种功能。 |
+| 我老头怎么了 [!UICONTROL eVar] 设置？ | [!UICONTROL eVar], [!UICONTROL prop]和 [!UICONTROL 事件] 在传统Adobe Analytics意义上， [!UICONTROL Customer Journey Analytics]. 您有无限的架构元素（维度、量度、列表字段）。因此，您在数据收集过程中使用的所有属性设置现在都会在查询时应用。 |
 | 我的所有会话和变量持久性设置现在位于何处？ | [!UICONTROL Customer Journey Analytics] 在报告时应用所有这些设置，因此这些设置现在位于数据视图中。对这些设置的更改现在具有追溯性，您可以使用多个数据视图来管理多个版本！ |
 | 我们的现有区段/计算量度会发生什么？ | [!UICONTROL Customer Journey Analytics] 不再使用 eVar、prop 或事件，而是使用任何 AEP 架构。这意味着，任何现有区段或计算量度都与 [!UICONTROL Customer Journey Analytics] 不兼容。 |
 | [!UICONTROL Customer Journey Analytics] 如何处理 `Uniques Exceeded` 限制？ | [!UICONTROL Customer Journey Analytics] 没有唯一值限制，因此无需担心！ |
