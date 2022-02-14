@@ -4,10 +4,10 @@ description: Customer Journey Analytics 登陆页面。
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '348'
-ht-degree: 100%
+source-git-commit: 719b67049456be857431ee1a7ca97e9f0fd881ee
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 76%
 
 ---
 
@@ -24,19 +24,20 @@ Analytics Select、Prime 和 Ultimate 客户有资格此附加产品。有关更
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>新增项目或特色项目</b> </p> <p> 
      <ul>
-     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans#connection-detail">如何使用增强的连接管理功能</a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=zh-Hans#cja-dataviews">如何使用增强的数据视图功能</a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=zh-Hans#cja-usecases"> 关于将 Google Analytics 数据提取到 Adobe Experience Platform 的文档</a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja-reporting.html?lang=zh-Hans#cja-usecases"> 关于在 CJA 中分析 Google Analytics 数据的文档</a> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=en"> 准备从Adobe Analytics迁移到Customer Journey Analytics </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/binding-dimensions-metrics.html?lang=en"> 在CJA中使用绑定维度和量度 </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=en"> 在 Adobe Experience Platform 中使用“营销渠道”维度
+ </a> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans#connection-detail"> 使用增强的连接管理功能 </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=zh-Hans#cja-dataviews"> 使用增强的数据视图功能 </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=zh-Hans#cja-usecases"> 将 Google Analytics 数据摄取到 Adobe Experience Platform </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja-reporting.html?lang=zh-Hans#cja-usecases"> 在CJA中分析Google Analytics数据 </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=zh-Hans#cja-connections"> 跨渠道分析（在 Customer Journey Analytics 中拼合 ID）</a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=zh-Hans#admin-access-permissions"> 更新了用户权限要求</a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=zh-Hans#cja-usecases"> 使用对象数组 </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/b2b.html?lang=zh-Hans"> 将帐户级别的数据作为查询数据集进行添加 </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=zh-Hans">Customer Journey Analytics 入门</a> </li> 
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans"> 常见问题解答</a> </li> 
    <td colname="col2" valign="top"> <p class="head"><b>发行说明</b> </p> 
     <ul> 
-     <li>有关新增功能和修复，请参阅最新的 <a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-Hans" format="https" scope="external">Experience Cloud 发行说明</a>。 </li> 
+     <li>查看最新 <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html?lang=en" format="https" scope="external"> Customer Journey Analytics说明</a> 中，了解新增功能和修复。 </li> 
     </ul> <p class="head"> <b>Adobe Experience Platform 资源</b> </p> 
     <ul> 
      <li><a href="https://www.adobe.com/cn/experience-platform.html" format="http" scope="external"> Adobe Experience Platform</a> </li> 
