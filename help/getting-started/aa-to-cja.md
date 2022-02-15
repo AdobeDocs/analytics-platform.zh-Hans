@@ -4,10 +4,10 @@ description: 从Adobe Analytics迁移到Customer Journey Analytics的步骤
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 2a330a430b48eb753d269e1165e95b61cb5fb483
+source-git-commit: 39814339963b2e836a05ddbe2062bea2527fea24
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 5%
+source-wordcount: '1096'
+ht-degree: 6%
 
 ---
 
@@ -66,7 +66,7 @@ Adobe已发布 [更新了营销渠道实施的最佳实践](https://experiencele
 
 **使用Experience PlatformSDK的缺陷**
 
-不支持以下Adobe Analytics组件：
+不支持以下Adobe Analytics功能或组件：
 
 * 营销渠道
 * 机器人筛选
@@ -77,15 +77,15 @@ Adobe已发布 [更新了营销渠道实施的最佳实践](https://experiencele
 
 ### 熟悉报表时间处理
 
-Adobe Analytics中的报表依赖大量数据预处理来生成结果，如您在eVar中看到的持久性。 Customer Journey Analytics在报表运行时运行这些计算。
+Adobe Analytics中的报表依赖大量数据预处理来生成结果，如您在中看到的持久性 [!UICONTROL eVar]. Customer Journey Analytics在报表运行时运行这些计算。
 
-报表时间处理允许应用具有可回溯性的设置并创建变量持久性的多个版本，而无需更改基础数据的收集方式。
+[!UICONTROL 报表时间处理] 打开应用具有可回溯性的设置并创建多个版本的变量持久性的功能，而无需更改基础数据的收集方式。
 
 这种转变会在报告数据的方式上产生一些差异，尤其是对于任何可能具有较长过期时间的变量。 您可以首先使用 [虚拟报表包](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html).
 
 ### 识别关键区段和计算量度
 
-Adobe Analytics区段（在CJA中称为过滤器）和计算量度与Customer Journey Analytics不兼容。 在很多情况下，可以使用新的可用架构和数据在CJA中重新构建这些组件。
+Adobe Analytics区段(称为 [!UICONTROL 过滤器] （在CJA中）和计算量度与Customer Journey Analytics不兼容。 在很多情况下，可以使用新的可用架构和数据在CJA中重新构建这些组件。
 
 要在用户在系统之间进行过渡时，使过渡尽可能顺利，请提前制定计划
 
@@ -100,3 +100,7 @@ Adobe Analytics区段（在CJA中称为过滤器）和计算量度与Customer Jo
 * [将Adobe Analytics区段移动到Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=en)
 
 * [将计算量度从 Adobe Analytics 移动到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en)
+
+## 后续步骤
+
+迁移到CJA后，如果您发现任何数据差异，则可以将原始Adobe Analytics数据与当前处于Customer Journey Analytics中的Adobe Analytics数据进行比较。 [了解详情](/help/troubleshooting/compare.md)
