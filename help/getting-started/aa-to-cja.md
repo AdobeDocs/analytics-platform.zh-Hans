@@ -4,10 +4,10 @@ description: 从Adobe Analytics迁移到Customer Journey Analytics的步骤
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 39814339963b2e836a05ddbe2062bea2527fea24
+source-git-commit: 2f38b38328816a523427d73f812041904e294bc7
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 6%
+source-wordcount: '1234'
+ht-degree: 5%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 6%
 
 ### 2.调整变量
 
-将Adobe Analytics数据迁移到Customer Journey Analytics的最简单方法是，使用 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans). 此连接器可将您的Adobe Analytics变量直接映射到AEP中的XDM架构和数据集，这反过来又可以轻松连接到CJA。
+将Adobe Analytics数据迁移到Customer Journey Analytics的最简单方法是 [全局报表包](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=en) Experience Platform [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans). 此连接器可将您的Adobe Analytics变量直接映射到AEP中的XDM架构和数据集，这反过来又可以轻松连接到CJA。
 
 完整的全局报表包可能并非总是适用于实施。 如果您计划将多个报表包Customer Journey Analytics，则必须提前计划以使这些报表包中的变量保持一致。
 
@@ -77,7 +77,7 @@ Adobe已发布 [更新了营销渠道实施的最佳实践](https://experiencele
 
 ### 熟悉报表时间处理
 
-Adobe Analytics中的报表依赖大量数据预处理来生成结果，如您在中看到的持久性 [!UICONTROL eVar]. Customer Journey Analytics在报表运行时运行这些计算。
+Adobe Analytics中的报表依赖大量数据预处理来生成结果，如您在中看到的持久性 [!UICONTROL eVar]. 相反，Customer Journey Analytics在报表运行时运行这些计算。
 
 [!UICONTROL 报表时间处理] 打开应用具有可回溯性的设置并创建多个版本的变量持久性的功能，而无需更改基础数据的收集方式。
 
@@ -100,6 +100,14 @@ Adobe Analytics区段(称为 [!UICONTROL 过滤器] （在CJA中）和计算量�
 * [将Adobe Analytics区段移动到Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=en)
 
 * [将计算量度从 Adobe Analytics 移动到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en)
+
+### 其他注意事项
+
+* 使用CJA数据视图的强大功能，您在定义量度和维度方面具有更大的灵活性，而且Customer Journey Analytics中的量度和维度更灵活。 例如，您可以使用维度的值作为量度的定义。 [了解详情](/help/data-views/data-views-usecases.md)
+
+* 如果您在Adobe Analytics中定义了自定义日历，则CJA中将具有类似的日历功能。 您需要确保日历的定义正确。
+
+* 在Customer Journey Analytics中，您可以定义自定义访问/会话超时，以及定义将启动新会话的量度。 您可以使用不同的会话定义创建数据视图，以深入了解Adobe Analytics中可能包含的内容。 此功能可能对移动数据集特别有用。
 
 ## 后续步骤
 
