@@ -4,7 +4,7 @@ title: 构建简单的“每次访问的页面查看次数”量度
 feature: Calculated Metrics
 exl-id: 46c83a1f-cb2d-4d5d-af4f-e1d2e4566743
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '224'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 显示如何生成简单的“每次访问页面查看次数”量度。
 
-有关 UI 组件的详细描述，请参阅 [生成指标](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+有关 UI 组件的详细描述，请参阅 [生成量度](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)。
 
 下面说明了如何生成简单的“每次访问页面查看次数”量度。
 
@@ -30,4 +30,4 @@ ht-degree: 100%
 1. 现在，当您生成量度时，即可在右上角看到该量度的&#x200B;**[!UICONTROL 预览]**。
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 1. 请注意，无论您何时对量度定义进行更改，**[!UICONTROL 概要]**&#x200B;公式都会随之发生更新。
-1. 现在，您会自动转到[计算量度管理器](/help/components/calc-metrics/cm-workflow/cm-manager.md)，这与筛选器管理器相似。通过此项，您可以共享、批准、（重新）标记、重命名或删除量度。
+1. 现在，您会自动转到[计算量度管理器](/help/components/calc-metrics/cm-workflow/cm-manager.md)，这与过滤器管理器相似。通过此项，您可以共享、批准、（重新）标记、重命名或删除量度。
