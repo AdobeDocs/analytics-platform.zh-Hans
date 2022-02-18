@@ -4,9 +4,9 @@ title: 配置流失可视化
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '688'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -14,11 +14,11 @@ ht-degree: 85%
 
 您可以指定接触点以创建多维度流失序列。通常，接触点就是网站中的某个页面。但是，接触点并不仅限于页面。例如，您可以添加事件，如件数及独特访客和回访。也可以添加维度，如类别、浏览器类型或内部搜索词。
 
-您甚至可以在接触点内添加过滤器。 例如，您可能想要比较过滤器，如iOS和Android用户。 将所需的过滤器拖到流失顶部，并且有关这些过滤器的信息会添加到流失报表。 如果您只想显示这些过滤器，可以删除所有访问基线。
+甚至可以在接触点内添加过滤器。例如，您可能需要比较过滤器，如 iOS 和 Android 用户。请将所需过滤器拖动到流失顶部，并将与这些过滤器有关的信息添加到流失报告中。如果要仅显示这些过滤器，可以删除“所有访问”基准值。
 
 对于可添加的步骤数量或可使用的维度数量，没有任何限制。
 
-您可以对 eVar 执行路径分析，包括促销 eVar 和 [listVar](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=zh-Hans)（每个点击可以具有多个值的变量，如产品、listVar、促销 eVar 和列表属性）。例如，假设某个用户在一个页面上查看鞋和衬衫，而在另一个页面上查看衬衫和袜子。鞋的下一个产品流量报表将是衬衫和袜子，而不是衬衫。
+您可以对 eVar 执行路径分析，包括促销 eVar 和 [listVar](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html)（每个点击可以具有多个值的变量，如产品、listVar、促销 eVar 和列表属性）。例如，假设某个用户在一个页面上查看鞋和衬衫，而在另一个页面上查看衬衫和袜子。鞋的下一个产品流量报表将是衬衫和袜子，而不是衬衫。
 
 1. 将“[!UICONTROL 流失]”可视化从“可视化”下拉菜单中拖动到“[!UICONTROL 自由格式表]”中。
 
@@ -38,7 +38,7 @@ ht-degree: 85%
 
    >[!NOTE]
    >
-   >多个过滤器使用AND进行连接，但多个项目（如维度项目和量度）使用OR进行连接。
+   >多个过滤器通过 AND 相连，而多个项（如维度项）和量度通过 OR 相连。
 
    ![](assets/multiple_obj_touchpoint.png)
 
