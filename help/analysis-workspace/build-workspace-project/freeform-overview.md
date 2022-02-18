@@ -1,13 +1,13 @@
 ---
-description: 使用菜单栏和设置的工作区项目概述
+description: 带有菜单栏和设置的工作区项目概述
 keywords: Analysis Workspace
 title: 项目概述
 feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1165'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -46,11 +46,11 @@ Workspace 项目列表页面包含了以下信息：
 
 | 菜单项 | 描述 |
 |---|---|
-| 项目 | 包括常用于项目管理的操作，如新建、打开、保存、另存为和另存为模板。还可通过单击“刷新项目”而刷新整个项目以检索最新的数据和定义。通过[“下载 CSV 和 PDF”](/help/analysis-workspace/curate-share/download-send.md)选项，可从 Workspace 导出数据。**项目信息和设置** （请参阅下文）提供了许多用于管理项目的选项。 |
+| 项目 | 包括常用于项目管理的操作，如“新建”、“打开”、“保存”、“另存为”和“另存为模板”。还可通过单击“刷新项目”而刷新整个项目以检索最新的数据和定义。通过[“下载 CSV 和 PDF”](/help/analysis-workspace/curate-share/download-send.md)选项，可从 Workspace 导出数据。**项目信息和设置**（见下文）提供多种用于管理项目的选项。 |
 | 编辑 | 撤消或重做您的上一项操作。“全部清除”将您的项目重置为空起点。 |
 | 插入 | 从此菜单插入新面板或可视化图表。还可从左侧边栏插入新面板和可视化图表。 |
-| [组件](/help/components/overview.md) | 从您的项目中创建新的过滤器、计算量度、日期范围或警报组件。 还可从左侧边栏创建新组件。如果最近更改了组件定义，则“刷新组件”将检索最新定义。 |
-| [共享](/help/analysis-workspace/curate-share/send-schedule-files.md) | 组织、共享和计划PDF/CSV项目以发送给贵组织的收件人。 |
+| [组件](/help/components/overview.md) | 从您的项目创建新过滤器、计算量度、日期范围或警报组件。还可从左侧边栏创建新组件。如果最近更改了组件定义，则“刷新组件”将检索最新定义。 |
+| [共享](/help/analysis-workspace/curate-share/send-schedule-files.md) | 策划、安排 PDF/CSV 项目以及将其共享给您组织中的接收方。 |
 | 帮助 | 访问帮助文档、视频和 Analytics [Experience League 社区](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community)。管理 Workspace 提示和[调试器](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md)的可见性。查找关于 Workspace 及影响项目[性能](/help/analysis-workspace/workspace-faq/optimizing-performance.md)的各种因素的详细信息。 |
 | “共享”按钮或“所有者” | 如果您处于项目的“拥有”或“编辑”角色，则通过右上方的“共享”按钮可一键管理项目接收方。如果您处于项目的“复制”或“查看”角色，则您将看到项目所有者的姓名。 |
 
@@ -79,7 +79,7 @@ Workspace 项目列表页面包含了以下信息：
 
 还可从[空面板](/help/analysis-workspace/c-panels/blank-panel.md)访问可视化和面板。
 
-左边栏中的组件(Dimension、量度、过滤器、日期范围)与活动面板数据视图相关。 活动面板周围将有一个蓝色边框，并且活动数据视图将列在组件边栏的顶部。
+左侧边栏中的组件（维度、量度、过滤器、日期范围）与活动面板数据视图相关。活动面板在自身四周将有蓝色边框，而活动数据视图将列在组件边栏的顶部。
 
 ![](assets/left-rail.png)
 
@@ -97,7 +97,7 @@ Workspace 项目列表页面包含了以下信息：
 
 可在&#x200B;**“Analytics”>“组件”>“项目”**&#x200B;下管理 Analysis Workspace 项目。项目管理器显示特定用户已创建的项。可在“管理员”>“Analytics 用户和资源”>“转移资源”下将项目所有权移交给新用户。
 
-在项目管理器中，可执行添加、标记、共享、复制等操作。可在搜索栏中或通过使用左侧边栏中的筛选器选项搜索项目。可按标记、所有者、项目类型等进行筛选。
+在项目管理器中，可执行添加、标记、共享、复制等操作。可在搜索栏中或通过使用左侧边栏中的过滤器选项搜索项目。可按标记、所有者、项目类型等进行筛选。
 
 ![](assets/project-manager.png)
 
@@ -105,7 +105,7 @@ Workspace 项目列表页面包含了以下信息：
 
 | 操作 | 描述 |
 |---|---|
-| 添加 | 从头开始创建新项目。 |
+| 添加 | 从头开始创建一个新项目。 |
 | 标记或批准 | 选择“标记”或“批准”以组织您的项目并使其更容易搜索。 |
 | [共享](/help/analysis-workspace/curate-share/share-projects.md) | 使项目可供您所在组织中的其他 Analysis Workspace 用户使用。 |
 | 删除 | 删除项目。 |
