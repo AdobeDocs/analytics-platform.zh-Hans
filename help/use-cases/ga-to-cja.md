@@ -5,9 +5,9 @@ exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1178'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -125,7 +125,7 @@ FROM
 
 ### 1. 添加自定义变量
 
-登录 Google Tag Manager 帐户后，您需要添加一些与 Adobe 相关的自定义常量变量。您可能已在Google标签管理器中拥有要发送到Google Analytics的变量，例如客户电子邮件、客户名称、语言和客户登录状态。 您需要定义 5 个新的自定义变量：
+登录 Google Tag Manager 帐户后，您需要添加一些与 Adobe 相关的自定义常量变量。在 Google Tag Manager 中您可能已有发送到 Google Analytics 的变量，如客户电子邮件、客户姓名、语言和客户登录状态。您需要定义 5 个新的自定义变量：
 
 * Adobe Experience Cloud 组织 ID
 * DCS 流式传输端点
