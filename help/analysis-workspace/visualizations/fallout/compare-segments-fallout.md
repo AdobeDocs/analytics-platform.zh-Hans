@@ -1,27 +1,27 @@
 ---
-description: 您可以在Analysis Workspace中从接触点创建过滤器、添加过滤器作为接触点，以及比较各种过滤器之间的关键工作流程。
-keywords: 流失和过滤器；流失分析中的过滤器；比较流失中的过滤器
-title: 在流失分析中应用筛选器
+description: 您可以在 Analysis Workspace 中从接触点创建过滤器、添加过滤器作为接触点，并比较多个过滤器之间的关键工作流程。
+keywords: 流失和过滤器;流失分析中的过滤器;比较流失中的过滤器
+title: 在流失分析中应用过滤器
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '438'
-ht-degree: 15%
+ht-degree: 100%
 
 ---
 
-# 在流失分析中应用筛选器
+# 在流失分析中应用过滤器
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
-您可以在Analysis Workspace中从接触点创建过滤器、添加过滤器作为接触点，以及比较各种过滤器之间的关键工作流程。
+您可以在 Analysis Workspace 中从接触点创建过滤器、添加过滤器作为接触点，并比较多个过滤器之间的关键工作流程。
 
 >[!IMPORTANT]
 >
->用作流失中检查点的过滤器必须使用级别低于流失可视化图表整体上下文的容器。 对于访客上下文流失，用作检查点的过滤器必须是基于访问的过滤器或基于点击的过滤器。 对于访问上下文流失，用作检查点的过滤器必须是基于点击的过滤器。 如果您使用的组合无效，则流失率将为 100%。我们为流失可视化图表添加了警告，当您添加不兼容的过滤器作为接触点时，将显示该警告。 某些无效的过滤器容器组合将导致无效的流失图表，例如：
+>用作流失中检查点的过滤器必须使用级别低于流失可视化图表整体上下文的容器。对于访客上下文流失，用作检查点的过滤器必须是基于访问或基于点击的过滤器。对于访问上下文流失，用作检查点的过滤器必须是基于点击的过滤器。如果您使用的组合无效，则流失率将为 100%。我们为流失可视化图表添加了警告，当您添加不兼容的过滤器作为接触点时，将显示该警告。某些无效的过滤器容器组合会导致无效的流失图表，例如：
 
 * 在访客上下文流失可视化图表中使用基于访客的过滤器作为接触点
 * 在访问上下文流失可视化图表中使用基于访客的过滤器作为接触点
@@ -29,32 +29,32 @@ ht-degree: 15%
 
 ## 从接触点创建过滤器 {#section_915E8FBF35CD4F34828F860C1CCC2272}
 
-1. 从您特别感兴趣的特定接触点创建一个过滤器，该过滤器可能会应用到其他报表。 要执行此操作，请右键单击接触点并选择 **[!UICONTROL 从接触点创建过滤器]**.
+1. 从特定的接触点创建一个您特别感兴趣，并且可以应用至其他报表的过滤器。为此，请右键单击接触点并选择&#x200B;**[!UICONTROL 从接触点创建过滤器]**。
 
    ![](assets/segment-from-touchpoint.png)
 
-   此时会打开过滤器生成器，其中预填充了与您选择的接触点匹配的预建顺序过滤器：
+   过滤器生成器即会打开，并预先填充匹配选定接触点的预置序列过滤器：
 
    ![](assets/segment-builder.png)
 
-1. 为过滤器提供标题和描述并保存。
+1. 为该过滤器提供一个标题和描述，然后保存它。
 
-   现在，您可以在所需的任何项目中使用此过滤器。
+   您现在可以在您需要的任意项目中使用此过滤器。
 
 ## 添加过滤器作为接触点 {#section_17611C1A07444BE891DC21EE8FC03EFC}
 
-例如，如果您想要了解美国用户的趋势和对流失的影响，只需将美国用户过滤器拖到流失中：
+例如，如果您要查看您的美国用户趋势及其是如何影响流失的，只需将美国用户过滤器拖到流失中：
 
 ![](assets/segment-touchpoint.png)
 
-或者，也可以通过将美国用户过滤器拖到另一个检查点来创建“与”接触点。
+或者，您也可以将美国用户过滤器拖到另一检查点中，以此来创建一个 AND 接触点。
 
 ## 在流失中比较过滤器 {#section_E0B761A69B1545908B52E05379277B56}
 
-您可以在流失可视化图表中比较无限数量的过滤器。
+您可以在“流失”可视化图表中比较任意过滤器数量。
 
-1. 从 [!UICONTROL 过滤器] 左边栏。 在本例中，我们选择了2个过滤器：美国用户和非美国用户。
-1. 将它们拖到顶部的过滤器拖放区域。
+1. 从左侧的[!UICONTROL 过滤器]边栏中选择要比较的过滤器。在我们的示例中，我们已选择了 2 个过滤器：美国用户和非美国用户。
+1. 将它们拖到顶部的过滤器拖放区域中。
 
    ![](assets/segment-drop.png)
 
@@ -62,4 +62,4 @@ ht-degree: 15%
 
    ![](assets/seg-compare.png)
 
-1. 您现在可以比较两个过滤器的流失情况，例如一个过滤器的性能优于另一个过滤器的情况，或者其他分析。
+1. 您现在可以比较两个过滤器间的流失，例如一个过滤器在哪些方面超过另一过滤器，或者其他分析。
