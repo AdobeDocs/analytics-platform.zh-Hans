@@ -4,10 +4,10 @@ description: 决定维度值如何或是否从一个事件保持到下一个事�
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '837'
-ht-degree: 100%
+source-git-commit: 419279f8e01bc81b17c372c6c53939b81ddbf4b7
+workflow-type: tm+mt
+source-wordcount: '831'
+ht-degree: 98%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 100%
 
 * **会话**：在给定会话后到期。默认到期时段。
 * **人员**：在报表时段结束时到期。
-* **时间**：可设置维度值，以使其在指定时段（最长 90 天）后到期。仅对“原有”和“最近”分配模型有此到期选项。在使用基于时间的到期时，将考虑报告时段（最长 90 天）开始之前的值。
+* **自定义时间**:在指定的时间段（最长90天）后过期。 仅对“原有”和“最近”分配模型有此到期选项。在使用基于时间的到期时，将考虑报告时段（最长 90 天）开始之前的值。
 * **指标**：可在点击中看到此指标时，请让维度中的保留值立即到期。可将任何指标用作此维度的到期结束。仅对“原有”和“最近”分配设置有此到期选项。
 
 ## [!UICONTROL 绑定维度]
