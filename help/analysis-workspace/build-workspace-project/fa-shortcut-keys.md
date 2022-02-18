@@ -5,7 +5,7 @@ feature: CJA Workspace Basics
 title: 热键（快捷方式）
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '288'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ Analysis Workspace 中提供了热键（键盘快捷键），以实现无缝导�
 | 创建警报 | Ctrl（或 Command）+ Shift + a |
 | 创建计算量度 | Ctrl（或 Command）+ Shift + c |
 | 创建日期范围 | Ctrl（或 Command）+ Shift + d |
-| 创建筛选器 | Ctrl（或 Command）+ Shift + e |
+| 创建过滤器 | Ctrl（或 Command）+ Shift + e |
 | 全部清除 | Alt + w |
 | 复制 | Ctrl（或 Command）+ c |
 | 重做 | Ctrl（或 Command）+ Shift + z |
