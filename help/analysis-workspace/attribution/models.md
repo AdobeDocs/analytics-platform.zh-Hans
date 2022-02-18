@@ -4,9 +4,9 @@ description: 不同类型的归因如何在维度项目之间划分点数。
 Feature: Attribution
 exl-id: 2ab6add7-9dc8-419d-96f7-e0c12e6b4761
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1516'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
-Customer Journey Analytics中归因的概念需要两个组件：
+Customer Journey Analytics 中的归因概念包含两个组件：
 
 * **归因模型：**&#x200B;此模型描述某个群组中点击的转化分布。例如，首次接触或最后接触。
 * **归因回顾窗口：**&#x200B;回顾窗口描述针对每个模型考虑的点击分组。例如，访问或访客。
@@ -41,7 +41,7 @@ Customer Journey Analytics中归因的概念需要两个组件：
 
 回顾窗口是指转化应回顾以包含接触点所花费的时间。在查看不同回顾窗口时，为首次交互分配更多点数的归因模型存在较大的差异。
 
-* **访问回顾窗口：**&#x200B;回顾到发生转化的访问之初。访问回顾窗口比较狭隘，因为不考虑访问之外的其他因素。访问回顾窗口遵循数据视图中修改的访问定义。
+* **访问回顾窗口：**&#x200B;回顾到发生转化的访问之初。访问回顾窗口比较狭隘，因为不考虑访问之外的其他因素。访问回顾窗口会遵守数据视图中修改的访问定义。
 
 * **访客回顾窗口：**&#x200B;回顾到当前日期范围当月 1 日的所有访问。访客回顾窗口比较广泛，因为考虑范围包括多次访问。访客回顾时间范围会考虑报表日期范围月初的所有值。例如，如果报表日期范围为 9 月 15 日到 9 月 30 日，则访客回顾日期范围将为 9 月 1 日到 9 月 30 日。
 
