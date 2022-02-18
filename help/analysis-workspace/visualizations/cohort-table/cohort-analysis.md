@@ -4,9 +4,9 @@ description: 了解 Analysis Workspace 中的同类群组分析
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '468'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 75%
 
 *`cohort`* 是指一组在特定期限内共享相同特性的人员。例如，在您想了解如何让一个同类群组喜欢某个品牌时，[!UICONTROL 同类群组分析]就能派上用场。您可以轻松识别趋势中的变化，然后相应地采取回应。（网上提供了有关[!UICONTROL 同类群组分析]的解释说明，例如[同类群组分析基础](https://zh.wikipedia.org/wiki/Cohort_analysis)。）
 
-创建同类群组报表后，您可以组织其组件（特定维度、量度和过滤器），然后与任何人共享同类群组报表。 请参阅[策划和共享](/help/analysis-workspace/curate-share/curate.md)。
+创建同类群组报表后，您可以组织其组件（特定的维度、量度和过滤器），然后可以与其他任何人员共享这份同类群组报表。请参阅[策划和共享](/help/analysis-workspace/curate-share/curate.md)。
 
 使用[!UICONTROL 同类群组分析]可以实现的作用（示例）：
 
@@ -24,7 +24,7 @@ ht-degree: 75%
 * 获取在一些领域（例如，定价、升级路径等）内进行 A/B 测试的建议。
 * 在引导分析报表中查看[!UICONTROL 同类群组分析]报表。
 
-[!UICONTROL 同类群组分析] 适用于具有访问权限的所有Customer Journey Analytics客户 [!UICONTROL Analysis Workspace].
+[!UICONTROL 同类群组分析]适用于具有 [!UICONTROL Analysis Workspace] 访问权限的所有 Customer Journey Analytics 客户。
 
 [同类群组分析视频教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html?lang=zh-Hans)（4 分 36 秒）
 
@@ -32,7 +32,7 @@ ht-degree: 75%
 >
 >[!UICONTROL 同类群组分析]
 >
->不支持不可过滤的量度（包括计算量度）、非整数量度（如收入）或发生次数。 只有可在过滤器中使用的量度才能用于
+>不支持不可过滤的量度（包括计算量度）、非整数量度（如“收入”）以及“发生次数”量度。只有可在过滤器中使用的量度才能用于
 >[!UICONTROL 同类群组分析]，并且这些指标一次只能增加 1 个单位。
 
 ## 同类群组分析功能
@@ -41,13 +41,13 @@ ht-degree: 75%
 
 ### [!UICONTROL 维系率表]
 
-[!UICONTROL 维系]同类群组报表返回访客：每个数据单元格显示了同类群组中在该时间段内执行操作的访客原始数量和百分比。您最多可以包含3个量度和10个过滤器。
+[!UICONTROL 维系]同类群组报表返回访客：每个数据单元格显示了同类群组中在该时间段内执行操作的访客原始数量和百分比。您最多可以包含 3 个量度和 10 个过滤器。
 
 ![](assets/retention-report.png)
 
 ### [!UICONTROL 流失率表]
 
-[!UICONTROL 流失率]同类群组与维系率表完全相反，会显示随着时间的推移，您的同类群组中已流失或从不满足回访标准的访客。您最多可以包含3个量度和10个过滤器。
+[!UICONTROL 流失率]同类群组与维系率表完全相反，会显示随着时间的推移，您的同类群组中已流失或从不满足回访标准的访客。您最多可以包含 3 个量度和 10 个过滤器。
 
 ![](assets/churn-report.png)
 
@@ -65,7 +65,7 @@ ht-degree: 75%
 
 ### [!UICONTROL 自定义维度]同类群组
 
-创建基于所选维度的同类群组，而不是默认的基于时间的同类群组。使用维度，例如 [!UICONTROL 营销渠道], [!UICONTROL 营销活动], [!UICONTROL 产品], [!UICONTROL 页面], [!UICONTROL 地区]，或Customer Journey Analytics中的任何其他维度，以显示维系率根据这些维度值的不同有何变化。
+创建基于所选维度的同类群组，而不是默认的基于时间的同类群组。在 Customer Journey Analytics 中使用[!UICONTROL 营销渠道]、[!UICONTROL 促销活动]、[!UICONTROL 产品]、[!UICONTROL 页面]、[!UICONTROL 区域]或任何其他维度，可显示维系率根据这些维度值的不同有何变化。
 
 ![](assets/cohort-customizable-cohort-row.png)
 
