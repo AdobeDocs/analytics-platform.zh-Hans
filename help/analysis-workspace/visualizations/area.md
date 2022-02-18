@@ -1,12 +1,12 @@
 ---
-description: “区域”可视化与折线图类似，只是折线图下方显示了彩色区域。
+description: 此区域可视化图表与线形图类似，只是线条下方显示了彩色区域。
 title: 面积图和堆叠的面积图
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '99'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
