@@ -1,19 +1,19 @@
 ---
-description: 在Analysis Workspace中直观地显示您的数据。
+description: 在 Analysis Workspace 中直观地展示您的数据。
 keywords: Analysis Workspace
 title: 可视化图表概述
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1043'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # 可视化图表概述
 
-工作区提供了许多可视化图表，使您能够生成数据的可视化表示形式，如条形图、圆环图、直方图、折线图、地图、散点图等。如果您使用Customer Journey Analytics，则大多数可视化图表类型都会非常熟悉。 但是，Analysis Workspace 提供了可视化图表设置，以及许多全新或独特的具有交互功能的可视化图表类型。
+工作区提供了许多可视化图表，使您能够生成数据的可视化表示形式，如条形图、圆环图、直方图、折线图、地图、散点图等。如果您使用 Customer Journey Analytics，则您已经熟悉了大多数可视化图表类型。但是，Analysis Workspace 提供了可视化图表设置，以及许多全新或独特的具有交互功能的可视化图表类型。
 
 可从工作区左上角的图标、[空白面板](/help/analysis-workspace/c-panels/blank-panel.md)或者通过工作流程中的右键单击菜单来访问可视化图表。
 
@@ -27,7 +27,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | [条形图](/help/analysis-workspace/visualizations/bar.md) | 显示一些垂直条，这些垂直条表示一个或多个指标中的各种值。 |
 | [项目符号图表](/help/analysis-workspace/visualizations/bullet-graph.md) | 显示您感兴趣的值与其他性能范围（目标）进行比较或衡量的结果。 |
 | [同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | *`cohort`* 是指一组在特定期限内共享相同特性的人员。同类群组分析对于保留、流失或延迟分析非常有用。 |
-| [圆环图](/help/analysis-workspace/visualizations/donut.md) | 与饼图类似，此可视化图表将数据显示为整体的一部分或过滤器。 |
+| [圆环图](/help/analysis-workspace/visualizations/donut.md) | 此可视化图表与饼图类似，它将数据显示为整体的一部分或过滤器。 |
 | [流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | 流失报表显示访客从何处离开（流失）或继续通过（流过）预定义的页面序列。可以设置为有条件序列或确切序列。 |
 | [流](/help/analysis-workspace/visualizations/c-flow/flow.md) | 显示客户在您的网站和应用程序中的确切路径。 |
 | [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | 自由格式表不仅可以作为数据表，而且还是一个交互式可视化图表。这是在工作区中进行数据分析的基础。 |
@@ -39,7 +39,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | [概要变化](/help/analysis-workspace/visualizations/summary-number-change.md) | 将所选单元格之间的变化显示为 1 个多位数/百分比。 |
 | [文本](/help/analysis-workspace/visualizations/text.md) | 使您克将用户定义的文本添加到您的工作区。在利用面板/可视化图表描述之外，对于向您的分析和见解添加额外的上下文非常有用 |
 | [树图](/help/analysis-workspace/visualizations/treemap.md) | 将分层（树结构）数据显示为一组嵌套的矩形。 |
-| [维恩图](/help/analysis-workspace/visualizations/venn.md) | 使用圆来描述多达3个过滤器的量度重叠。 |
+| [维恩图](/help/analysis-workspace/visualizations/venn.md) | 使用圆圈来描述最多 3 个过滤器之间的量度重叠。 |
 
 ## 设置 {#settings}
 
@@ -78,7 +78,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 
 ## 右键单击菜单 {#right-click}
 
-右键单击可视化标题，即可获得可视化的其他功能。 其设置因可视化图表而异。其中一些设置包括：
+可视化图表的其他功能可通过在可视化图表的标题上右键单击来使用。其设置因可视化图表而异。其中一些设置包括：
 
 ![右键单击](assets/right-click.png)
 
@@ -95,6 +95,6 @@ Analysis Workspace 中提供了以下可视化图表类型：
 
 ## “创建可视化”图标 {#quick-viz}
 
-如果您不确定所要创建的可视化图表，请单击任意表行中的&#x200B;**[!UICONTROL 创建可视化]**&#x200B;图标（将光标悬停于上方即可显示）。这是添加可视化图表最快的方法。单击此图标将提示 Analysis Workspace 针对哪种可视化图表最适合您的数据做出有根据的推测。例如，如果您选择了 1 行，则会创建趋势线形图。如果选择了3个过滤行，则会创建维恩图。
+如果您不确定所要创建的可视化图表，请单击任意表行中的&#x200B;**[!UICONTROL 创建可视化]**&#x200B;图标（将光标悬停于上方即可显示）。这是添加可视化图表最快的方法。单击此图标将提示 Analysis Workspace 针对哪种可视化图表最适合您的数据做出有根据的推测。例如，如果您选择了 1 行，则会创建趋势线形图。如果您选择了 3 个过滤器行，则会创建维恩图。
 
 ![快速可视化](assets/quick-viz.png)
