@@ -1,22 +1,22 @@
 ---
-description: 通过维恩图可视化，最多可拖入3个过滤器（从“组件”中）和一个量度来构建维恩图。
+description: 通过维恩图可视化，最多可拖入 3 个过滤器（从“组件”中）和一个量度来构建维恩图。
 title: 维恩图
 feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '104'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
 # 维恩图
 
-通过维恩图可视化，最多可拖入3个过滤器（从“组件”中）和一个量度来构建维恩图。
+通过维恩图可视化，最多可拖入 3 个过滤器（从“组件”中）和一个量度来构建维恩图。
 
 ![](assets/venn.png)
 
-然后，您可以将鼠标悬停在过滤器上，以便更深入地了解百分比等信息。
+然后，可以将光标悬停在这些过滤器上以更加深入地了解百分比等信息。
 
 ![](assets/venn_hover.png)
 
