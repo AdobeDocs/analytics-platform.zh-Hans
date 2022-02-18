@@ -5,9 +5,9 @@ feature: Calendar
 solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
 source-git-commit: b776478fa4fa77841c5cf0b2d082ff60055bf587
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '373'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 98%
 
 | 设置 | 描述 |
 | --- | --- |
-| 选定的日期 | 选定日期/周/月/年 |
+| 选定的日期 | 选定的日期/周/月/年 |
 | 使用滚动日期 | 滚动日期允许您生成一个动态报表，从而可根据您运行报表的时间向前或向后查看一段特定的时间段。例如，如果您要报告“上个月”安排的所有订单（基于“创建日期”字段）并在十二月运行该报表，则会看到十一月安排的订单。如果您在一月运行同一报表，则会看到十二月安排的订单。<ul><li>**[!UICONTROL 日期预览]**：指示滚动日历包含哪些时间段。</li><li>**[!UICONTROL 开始]**：您可以在当天、当周、当月、当季、当年之间进行选择。</li><li>**[!UICONTROL 结束]**：您可以在当天、当周、当月、当季、当年之间进行选择。</li></ul>有关示例，请前往[此处](/help/components/date-ranges/custom-date-ranges.md)。 |
 | 日期范围 | 您可以选择一个预设日期范围。最近 30 天为默认设置。**[!UICONTROL 本周/月/季度/年（不包括今天）]**&#x200B;允许您从不包括今天的部分日期数据的日期范围中进行选择。 |
 | 应用于所有面板 | 您不仅可以更改当前面板的选定日期范围，还会更改项目内所有其他面板的日期范围。 |
