@@ -4,9 +4,9 @@ title: 下载 PDF 或 CSV 文件
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1016'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
+>您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 您可以通过多种不同的方式从 Analysis Workspace 导出数据，具体取决于您要在工具之外分析的具体数据集以及需要接收信息的具体人员。导出的数据可以是复制的数据、CSV 或 PDF 文件的形式。如果您希望文件中包含可视化图表，则 PDF 通常为首选，而如果您只需要纯文本数据，则 CSV（或复制的数据）为首选。
 
@@ -53,7 +53,7 @@ ht-degree: 93%
 
 ## 以 CSV 格式下载项目 {#download-items}
 
-如果要分析表中的 400 多行可见数据，请右键单击表标题或任意行，然后选择&#x200B;**以 CSV 格式下载项目（维度名称）**。此选项将针对所选维度导出最多50,000个维度项目（基于表排序），并应用过滤器和过滤器。 如果从表格顶部选择此选项，将导出表格中的第一个维度。虽然在自由格式表中没有强制执行任何限制，但建议在少于 20 列的表中使用“下载项目”选项以确保达到最佳性能。
+如果要分析的数据不止在表中可见的 400 行数据，请右键单击该表标题或任意行，然后选择&#x200B;**以 CSV 格式下载项目（维度名称）**。此选项将导出所选维度的最多 50,000 个维度项（根据表格排序），其中带有过滤器并应用了过滤器。如果从表格顶部选择此选项，将导出表格中的第一个维度。虽然在自由格式表中没有强制执行任何限制，但建议在少于 20 列的表中使用“下载项目”选项以确保达到最佳性能。
 
 >[!TIP]
 >
@@ -67,11 +67,11 @@ ht-degree: 93%
 
 表格功能将按如下方式应用于下载的文件：
 
-* 所有面板过滤器都作为过滤器应用。
+* 所有面板过滤器都应用为过滤器。
 * 在每列上方以过滤器形式应用表格中所选维度&#x200B;**上面**&#x200B;的细分。
 * 删除表格中所选维度&#x200B;**下面**&#x200B;的细分。
 
-在以上示例中，页面项目是通过面板过滤器（新访客客户）和作为过滤器应用的上述组件（营销渠道=电子邮件）来下载的，以下组件（移动设备类型）是从下载的CSV中删除的。
+在上面的示例中，以过滤器形式应用了面板过滤器（新访客客户）及其上面的组件（营销渠道 = 电子邮件），从而下载了页面项目，并从下载的 CSV 中删除了下面的组件（移动设备类型）。
 
 ![](assets/downloaded-file.png)
 
