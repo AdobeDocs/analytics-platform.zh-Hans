@@ -89,7 +89,7 @@ ht-degree: 97%
          + [流失概述](analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [配置流失可视化图表](analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [维度间流失](analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
-         + [在流失分析中应用筛选器](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
+         + [在流失分析中应用过滤器](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + 流量 {#flow}
          + [流量概述](analysis-workspace/visualizations/c-flow/flow.md)
          + [配置流量可视化图表](analysis-workspace/visualizations/c-flow/creating-flow-report.md)
@@ -127,8 +127,8 @@ ht-degree: 97%
       + [算法归因](analysis-workspace/attribution/algorithmic.md)
       + [归因最佳实践](analysis-workspace/attribution/best-practices.md)
       + [常见问题解答](analysis-workspace/attribution/faq.md)
-   + 虚拟分析师 {#virtual-analyst}
-      + [虚拟分析师概述](analysis-workspace/virtual-analyst/overview.md)
+   + Virtual Analyst {#virtual-analyst}
+      + [Virtual Analyst 概述](analysis-workspace/virtual-analyst/overview.md)
       + 异常检测 {#anomaly-detection}
          + [异常检测概述](analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
          + [在 Analysis Workspace 中查看异常](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
@@ -148,7 +148,7 @@ ht-degree: 97%
    + [创建数据块](report-builder/create-a-data-block.md)
    + [Report Builder 中心](report-builder/report-builder-hub.md)
    + [选择日期范围](report-builder/select-date-range.md)
-   + [使用筛选器](report-builder/work-with-filters.md)
+   + [使用过滤器](report-builder/work-with-filters.md)
    + [筛选维度](report-builder/filter-dimensions.md)
    + [Report Builder 设置](report-builder/report-builder-settings.md)
 + 组件 {#cja-components}
@@ -159,12 +159,12 @@ ht-degree: 97%
       + [时间划分维度](components/dimensions/time-parting-dimensions.md)
       + [具有很高基数的维度](components/dimensions/high-cardinality.md)
    + [量度](components/apply-create-metrics.md)
-   + 筛选器 {#cja-filters}
-      + [筛选器概述](components/filters/filters-overview.md)
-      + [创建筛选器](components/filters/create-filters.md)
-      + [管理筛选器](components/filters/manage-filters.md)
-      + [快速筛选器](components/filters/quick-filters.md)
-      + [临时筛选器](components/filters/ad-hoc-filters.md)
+   + 过滤器 {#cja-filters}
+      + [过滤器概述](components/filters/filters-overview.md)
+      + [创建过滤器](components/filters/create-filters.md)
+      + [管理过滤器](components/filters/manage-filters.md)
+      + [快速过滤器](components/filters/quick-filters.md)
+      + [临时过滤器](components/filters/ad-hoc-filters.md)
       + [运算符](components/filters/operators.md)
    + 计算量度 {#cja-calcmetrics}
       + [计算量度概述](components/calc-metrics/calc-metr-overview.md)
