@@ -4,10 +4,10 @@ description: 决定维度值如何或是否从一个事件保持到下一个事�
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 419279f8e01bc81b17c372c6c53939b81ddbf4b7
+source-git-commit: 459249c74bf4dadf84c2adf96498f2eea21be1ee
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 98%
+source-wordcount: '806'
+ht-degree: 93%
 
 ---
 
@@ -76,10 +76,12 @@ ht-degree: 98%
 
 一个下拉列表，可让您将维度值的持久性绑定到另一个维度中的维度值。有效的下拉列表选项包括数据视图中包含的其他维度。
 
-此设置通常用于对象数组，最常用于衡量产品查找方法、内部搜索结果、内部促销展示次数或内容或产品推荐等内容。在早期版本的 Adobe Analytics 中，这个概念类似于转化语法促销。
+请参阅 [在CJA中使用绑定维度和量度](../../use-cases/binding-dimensions-metrics.md) ，以了解如何有效使用绑定维度的示例。
 
 ## [!UICONTROL 绑定量度]
 
 一个下拉列表，可让您选择充当绑定触发器的量度。有效的下拉列表选项包括数据视图中包含的量度。
 
-此设置仅在对象数组中的绑定维度低于组件时显示。当绑定量度显示在事件中时，维度值会从事件级别维度向下复制到绑定维度的较低架构级别。在早期版本的 Adobe Analytics 中，有一个类似但更有限的概念，即产品语法促销。
+此设置仅在对象数组中的绑定维度低于组件时显示。当绑定量度显示在事件中时，维度值会从事件级别维度向下复制到绑定维度的较低架构级别。
+
+请参阅 [在CJA中使用绑定维度和量度](../../use-cases/binding-dimensions-metrics.md) 以了解有关如何有效使用捆绑量度的更多信息。
