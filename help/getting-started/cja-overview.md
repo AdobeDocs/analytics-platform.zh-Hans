@@ -4,10 +4,10 @@ description: 了解如何通过 Customer Journey Analytics 来使用 Analysis Wo
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: bbeceb076e7f249f2c2b8f997bdf37f3dc839db8
+source-git-commit: 04ceeb9e9a048a224ea957ad42bc54cbd4b3f249
 workflow-type: tm+mt
-source-wordcount: '1270'
-ht-degree: 94%
+source-wordcount: '1252'
+ht-degree: 91%
 
 ---
 
@@ -94,11 +94,11 @@ Customer Journey Analytics 中的非产品管理员（用户）无法查看数�
 
 Customer Journey Analytics 是依赖于 Adobe Experience Platform 的众多功能之一。此外，基于 Experience Platform 构建的几项其他功能也可让您充分利用数据。
 
-Adobe Experience Platform 让您可以实现源自任何系统的客户数据和内容的集中化和标准化，并应用数据科学和机器学习来优化个性化体验的设计和交付。Platform 中的客户数据将作为数据集存储，数据集由一个架构和批量数据组成。有关 Platform 的更多详细信息，请参阅 [Adobe Experience Platform 体系架构概述](https://www.adobe.io/apis/experienceplatform/home/overview.html)。
+Adobe Experience Platform 让您可以实现源自任何系统的客户数据和内容的集中化和标准化，并应用数据科学和机器学习来优化个性化体验的设计和交付。Platform 中的客户数据将作为数据集存储，数据集由一个架构和批量数据组成。有关 Platform 的更多详细信息，请参阅 [Adobe Experience Platform 体系架构概述](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en)。
 
 从数据摄取到直接 SQL 访问，Experience Platform 的多个组件在 Customer Journey Analytics 中发挥着重要作用，并且可与之搭配使用：
 
-* [查询服务](https://www.adobe.io/apis/experienceplatform/home/query-service/sql-reference.html)：使用标准 SQL 从 Adobe Experience Platform 检索数据，例如，Adobe 解决方案数据、客户第一方数据，或任何其他 Platform 数据。它是一个无服务器工具，让您可以加入任何数据集，并作为新数据集获取查询结果，以用于报表、Data Science Workspace，或将数据摄取到用户档案服务。您可以使用“查询服务”构建数据分析生态系统，进而创建使用者在各种交互渠道中的全景图。这些渠道可能包括销售点系统、Web、移动设备、CRM 系统等。
-* [实时客户用户档案](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/unified_profile_architectural_overview/unified_profile_architectural_overview.md)：
-* [Identity 服务](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/identity_services_architectural_overview/identity_services_architectural_overview.md)：
-* “开发人员”选项中的 [Data Science Workspace](https://www.adobe.io/apis/experienceplatform/home/data-science-workspace.html)：您可以使用 Adobe Experience Platform 中预建的人工智能 (AI) 和机器学习模型来影响客户历程的各个接触点。通过揭示暗藏的洞察信息，您可以在整个客户历程中做出更好的预测、提出最佳的后续步骤建议，或自动处理繁琐的流程。
+* [查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en)：使用标准 SQL 从 Adobe Experience Platform 检索数据，例如，Adobe 解决方案数据、客户第一方数据，或任何其他 Platform 数据。它是一个无服务器工具，让您可以加入任何数据集，并作为新数据集获取查询结果，以用于报表、Data Science Workspace，或将数据摄取到用户档案服务。您可以使用“查询服务”构建数据分析生态系统，进而创建使用者在各种交互渠道中的全景图。这些渠道可能包括销售点系统、Web、移动设备、CRM 系统等。
+* [实时客户用户档案](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en)：
+* [Identity 服务](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en)：
+* “开发人员”选项中的 [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=en)：您可以使用 Adobe Experience Platform 中预建的人工智能 (AI) 和机器学习模型来影响客户历程的各个接触点。通过揭示暗藏的洞察信息，您可以在整个客户历程中做出更好的预测、提出最佳的后续步骤建议，或自动处理繁琐的流程。
