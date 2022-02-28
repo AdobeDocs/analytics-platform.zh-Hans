@@ -4,10 +4,10 @@ description: 如何在工作区中创建注释。
 role: User, Admin
 feature: Components
 exl-id: 3cf9a0fd-11c9-4375-8bbe-9551ba86f86d
-source-git-commit: b4e65903c720ecd9e684f8b7a764e2ba8f74baed
+source-git-commit: dfd38a9f668dcb0434b107e947aa74b4f9b826a3
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 61%
+source-wordcount: '608'
+ht-degree: 62%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 61%
 
 | 创建方法 | 详细信息 |
 | --- | --- |
-| **转到 [!UICONTROL Analytics] > [!UICONTROL 组件] > [!UICONTROL 注释].** | “注释管理器”页面将打开。单击[!UICONTROL 创建新注释]，然后 Annotation Builder 将打开。 |
+| **转到 [!UICONTROL 组件] > [!UICONTROL 注释].** | “注释管理器”页面将打开。单击[!UICONTROL 创建新注释]，然后 Annotation Builder 将打开。 |
 | **右键单击表格上的点。** | [!UICONTROL Annotation Builder 将打开。]请注意，默认情况下，以这种方式创建的注释仅在创建它们的项目中可见。但是您可以使它们可用于所有项目。另请注意，日期和任何量度等均已填充。<p>![](assets/annotate-table.png) |
 | **右键单击 [!UICONTROL 折线图] 图表。** | 的 [!UICONTROL 注释生成器] 打开。 请注意，默认情况下，以这种方式创建的注释仅在创建它们的项目中可见。但是您可以使它们可用于所有项目。另请注意，日期和任何量度等均已填充。<p>![](assets/annotate-line.png) |
 | **在工作区中，转到 [!UICONTROL 组件] > [!UICONTROL 创建注释].** | 的 [!UICONTROL 注释生成器] 打开。 |
