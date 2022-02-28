@@ -4,10 +4,10 @@ description: 了解如何通过 Customer Journey Analytics 来使用 Analysis Wo
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 04ceeb9e9a048a224ea957ad42bc54cbd4b3f249
+source-git-commit: da34e4c97720ec20f354a4bd67708b4d89c5bea4
 workflow-type: tm+mt
-source-wordcount: '1252'
-ht-degree: 91%
+source-wordcount: '1266'
+ht-degree: 87%
 
 ---
 
@@ -19,9 +19,11 @@ Customer Journey Analytics 是一项 Analytics 功能，让您可以运用 Analy
 
 ![架构](assets/cja-architecture.png)
 
+有关
+
 ## 比较 CJA 与传统 Adobe Analytics
 
-Customer Journey Analytics 通过提供易于使用的跨渠道分析功能和消除 Adobe Analytics 先前版本中的限制，扩展了 Analytics 的适用范围。一些显著改进的功能包括：
+Customer Journey Analytics通过提供易于使用的跨渠道功能并消除Adobe Analytics早期版本中的限制，扩展了Adobe Analytics的范围。 一些显著改进的功能包括：
 
 * **无限量的变量和事件**：eVar、prop 和事件的概念已不复存在。数据主要侧重于维度和量度。数据集可以拥有无限量的唯一维度和量度。
 * **无限唯一值**：Adobe Experience Platform 不受任何特有限制的约束。
@@ -68,11 +70,11 @@ Customer Journey Analytics 的初始版本包括 Analysis Workspace 中的许多
    * 查看身份命名空间
    * 查看数据集
 
-有关 Experience Platform 权限的更多信息，请参阅 [Adobe Experience Platform 中的访问控制](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md)。
+有关 Experience Platform 权限的更多信息，请参阅 [Adobe Experience Platform 中的访问控制](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hans)。
 
 >[!NOTE]
 >
->就像在传统 Adobe Analytics 中那样，在 Customer Journey Analytics 中也不能许可单个量度或维度。可以在数据视图中修改量度和维度，因此它们在 CJA 中可能会变化，CJA 也会追溯性地更改报告。
+>就像在传统 Adobe Analytics 中那样，在 Customer Journey Analytics 中也不能许可单个量度或维度。量度和维度可在 [数据视图](/help/data-views/data-views.md) 因此，CJA可能会发生更改，这也会追溯更改报表。
 
 ### 用户访问
 
@@ -102,3 +104,14 @@ Adobe Experience Platform 让您可以实现源自任何系统的客户数据和
 * [实时客户用户档案](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en)：
 * [Identity 服务](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en)：
 * “开发人员”选项中的 [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=en)：您可以使用 Adobe Experience Platform 中预建的人工智能 (AI) 和机器学习模型来影响客户历程的各个接触点。通过揭示暗藏的洞察信息，您可以在整个客户历程中做出更好的预测、提出最佳的后续步骤建议，或自动处理繁琐的流程。
+
+## 视频
+
+* 在Customer Journey Analytics中处理数据：
+
+   >[!VIDEO](https://video.tv.adobe.com/v/32112/?quality=12)
+
+* Customer Journey Analytics 的架构和集成:
+
+   >[!VIDEO](https://video.tv.adobe.com/v/32483/?quality=12)
+

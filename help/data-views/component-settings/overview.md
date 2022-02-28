@@ -4,10 +4,10 @@ description: 查看数据视图组件的核心设置。
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '360'
-ht-degree: 100%
+source-git-commit: da34e4c97720ec20f354a4bd67708b4d89c5bea4
+workflow-type: tm+mt
+source-wordcount: '370'
+ht-degree: 97%
 
 ---
 
@@ -30,3 +30,7 @@ ht-degree: 100%
 | [!UICONTROL 组件 ID] | 必填。[CJA API](https://adobe.io/cja-apis/docs) 使用此字段引用组件。数据视图中的每个组件都必须是唯一的。Adobe 自动为每个组件生成一个 ID；但是，您可以单击编辑图标并修改组件 ID。更改组件 ID 将破坏所有包含此组件的现有工作区项目。虽然每个组件在单个数据视图中都需要唯一的 ID，但可在其他数据视图中使用相同的组件 ID。如果在其他数据视图中使用相同的组件 ID，则可让工作区项目在数据视图间保持兼容。 |
 | [!UICONTROL 架构路径] | 必填。显示组件来自的架构路径的不可编辑字段。 |
 | [!UICONTROL 在报告中隐藏组件] | 使您可从非管理员的数据视图策划该组件。管理员仍可通过在 Analysis Workspace 项目中单击[!UICONTROL 显示所有组件]而访问该组件。 |
+
+以下是有关数据视图中组件设置的视频：
+
+>[!VIDEO](https://video.tv.adobe.com/v/333112/?quality=12)
