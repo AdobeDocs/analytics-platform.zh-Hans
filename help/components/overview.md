@@ -4,10 +4,10 @@ description: 了解 CJA 提供了哪些组件，以及如何在报表中使用�
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '366'
-ht-degree: 100%
+source-git-commit: 83a725ac746629874162827d30d5bdf8be0fa6dc
+workflow-type: tm+mt
+source-wordcount: '383'
+ht-degree: 95%
 
 ---
 
@@ -20,6 +20,7 @@ ht-degree: 100%
 
 您可以管理以下组件：
 
+* [**批注**](/help/components/annotations/overview.md):将上下文数据细微差别和洞察传达给您的组织。 **此功能当前位于 [有限测试](/help/release-notes/releases.md).**
 * [**过滤器**](filters/filters-overview.md)：排除部分数据，以重点关注常见的维度项目
 * [**计算量度**](calc-metrics/calc-metr-overview.md)：使用量度和公式作为新组件以便在报表中使用
 * [**日期范围**](date-ranges/overview.md)：自定义和优化 Analysis Workspace 中提供的日期范围

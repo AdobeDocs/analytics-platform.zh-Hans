@@ -7,12 +7,12 @@ solution: Customer Journey Analytics
 type: Documentation
 index: true
 user-guide-title: Customer Journey Analytics 指南
-user-guide-description: 本指南提供 Customer Journey Analytics 自助式帮助内容；Customer Journey Analytics 基于 Adobe Experience Platform，是 Adobe 的新一代跨渠道分析解决方案。
+user-guide-description: 本指南提供对Customer Journey Analytics的支持，后者是Adobe基于Adobe Experience Platform的下一代跨渠道分析解决方案。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: cf51db711370e7dea5d934cb25d351271d3f20bd
+source-git-commit: 47c025bc8c84515cfb9ba3d357fe897bb018648a
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 97%
+source-wordcount: '597'
+ht-degree: 94%
 
 ---
 
@@ -153,6 +153,11 @@ ht-degree: 97%
    + [Report Builder 设置](report-builder/report-builder-settings.md)
 + 组件 {#cja-components}
    + [组件概述](components/overview.md)
+   + 批注 {#annotations}
+      + [批注概述](components/annotations/overview.md)
+      + [创建注释](components/annotations/create-annotations.md)
+      + [管理注释](components/annotations/manage-annotations.md)
+      + [查看注释](components/annotations/view-annotations.md)
    + 维度{#dimensions}
       + [预览维度](components/dimensions/view-dimensions.md)
       + [划分维度](components/dimensions/t-breakdown-fa.md)
