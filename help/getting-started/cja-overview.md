@@ -4,9 +4,9 @@ description: 了解如何通过 Customer Journey Analytics 来使用 Analysis Wo
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: da34e4c97720ec20f354a4bd67708b4d89c5bea4
+source-git-commit: e397ff4de0f65ebb0264eac3813046452c572256
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1271'
 ht-degree: 87%
 
 ---
@@ -19,7 +19,9 @@ Customer Journey Analytics 是一项 Analytics 功能，让您可以运用 Analy
 
 ![架构](assets/cja-architecture.png)
 
-有关
+以下是Customer Journey Analytics概述视频：
+
+>[!VIDEO](https://video.tv.adobe.com/v/30090/?quality=12)
 
 ## 比较 CJA 与传统 Adobe Analytics
 
