@@ -1,17 +1,17 @@
 ---
-title: 在 CJA 中使用绑定维度和量度
+title: 在CJA中使用绑定维度和量度
 description: 将维度归因于对象阵列，以进行复杂的持久性分析。
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
-source-git-commit: 459249c74bf4dadf84c2adf96498f2eea21be1ee
+source-git-commit: 28a6acd3f850e94a1f0d72477c22a5b30ab3fc2a
 workflow-type: tm+mt
 source-wordcount: '1330'
-ht-degree: 44%
+ht-degree: 43%
 
 ---
 
 
-# 在 CJA 中使用绑定维度和量度
+# 在CJA中使用绑定维度和量度
 
 Customer Journey Analytics 提供了几种方法，使维度值在所设置的点击之后持续存在。Adobe 提供的一种持久性方法称为“绑定”。在早期版本的 Adobe Analytics 中，这个概念被称为促销。
 
