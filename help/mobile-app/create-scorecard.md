@@ -6,9 +6,9 @@ role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
 source-git-commit: 929656128214ed0dc2fe2195ea691122edb6566e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1492'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -179,23 +179,23 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 ## 预览记分卡 {#preview}
 
-在Analytics功能板应用程序中发布记分卡后，您可以预览记分卡的外观和功能。
+您可以预览记分卡在 Analytics 功能板应用程序中发布后的外观和功能。
 
-1. 单击 **[!UICONTROL 预览]** 屏幕的右上角。
+1. 单击屏幕右上角的&#x200B;**[!UICONTROL 预览]**。
 
-   ![Preview_scorecards](assets/preview.png)
+   ![预览记分卡](assets/preview.png)
 
-1. 要查看记分卡在不同设备上的显示效果，请从 [!UICONTROL 设备预览] 下拉菜单。
+1. 要查看记分卡在不同设备上的外观，请从[!UICONTROL 设备预览]下拉菜单中选择一个设备。
 
-   ![Device_preview](assets/device-preview.png)
+   ![设备预览](assets/device-preview.png)
 
-1. 要与预览进行交互，您可以：
+1. 要与预览交互，您可以：
 
-   * 单击左键以模拟在电话屏幕上点按。
+   * 左键单击以模拟在手机屏幕上的点击。
 
-   * 使用计算机的滚动功能模拟用手指滚动手机屏幕。
+   * 使用计算机的滚动功能来模拟用手指滚动手机屏幕。
 
-   * 单击并按住，以模拟将手指按住电话屏幕。 这对于与详细视图中的可视化进行交互非常有用。
+   * 单击并按住以模拟在电话屏幕上按住手指。这对于与详细视图中的可视化交互很有用。
 
 ## 命名记分卡 {#name}
 
