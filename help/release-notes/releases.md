@@ -1,22 +1,23 @@
 ---
-description: 说明针对Customer Journey Analytics的连续功能发布策略
-title: Customer Journey Analytics功能发布
-source-git-commit: b740d3a18d1090b04cc50869d38600f016cf30d5
-workflow-type: tm+mt
+description: 介绍 Customer Journey Analytics 的持续功能发布策略
+title: Customer Journey Analytics 功能发布
+exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
+source-git-commit: f2c82f54ec534603539327597d5f4c4ec875d44c
+workflow-type: ht
 source-wordcount: '379'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-# Customer Journey Analytics功能发布
+# Customer Journey Analytics 功能发布
 
-Customer Journey Analytics发布基于连续交付模型进行操作，该模型允许采用可扩展的分阶段方法来部署功能。
+Customer Journey Analytics 版本在持续交付模型上运行，该模型允许采用可扩展的分阶段方法进行功能部署。
 
 ## 发布策略
 
 [!UICONTROL Analysis Workspace] 使用功能标志（又称为“切换”）控制新功能的可见性，从而允许在完全发布之前进行受控规模测试。此发布策略包括以下阶段：
 
-* **发布到生产 (RTP)**：将代码发布到生产，并在 Analysis Workspace 中关闭功能可见性。该功能有时在CJA API中可用。
+* **发布到生产 (RTP)**：将代码发布到生产，并在 Analysis Workspace 中关闭功能可见性。此功能有时在 CJA API 中可用。
 
 * **有限测试**：从 Adobe 内部用户测试开始的分阶段发布。然后，此发布在两个月内从可用性 0% 扩展到 100%。由于分阶段推出在 Experience Cloud 组织级别进行，因此组织中所有授权用户都可以获得相同的体验。
 
