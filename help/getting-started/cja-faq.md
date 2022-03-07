@@ -5,9 +5,9 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 source-git-commit: 719b67049456be857431ee1a7ca97e9f0fd881ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1646'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 96%
 | 问题 | 回答 |
 | --- | --- |
 | [!UICONTROL Customer Journey Analytics] 是否可以跨设备或跨数据集进行“拼合”？ | 支持。[!UICONTROL Customer Journey Analytics] 具有一个称为[跨渠道分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=zh-Hans) (CCA) 的拼合解决方案，该方案允许您重新键入数据集的人员 ID，实现多个数据集的无缝组合。 |
-| 是否支持从匿名行为到实名行为的拼合？ | 支持。[跨渠道分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html)查看来自已通过和未通过身份验证的会话的用户数据来生成拼合 ID。 |
+| 是否支持从匿名行为到实名行为的拼合？ | 支持。[跨渠道分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=zh-Hans)查看来自已通过和未通过身份验证的会话的用户数据来生成拼合 ID。 |
 | CCA 中如何进行“重放”？ | CCA 根据它所掌握的唯一标识符“重放”数据。重放导致新设备连接并被拼合。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=zh-Hans#step-1%3A-live-stitching) |
 | 如何在 CCA 中拼合历史数据（回填）？ | 首次启用时，Adobe 提供追溯到上月初（最多 60 天）的拼合数据的回填。为实现此回填，当时的未拼合数据中必须存在过渡 ID。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=zh-Hans#enable-cross-channel-analytics) |
 
@@ -57,15 +57,15 @@ ht-degree: 96%
 
 | 问题 | 回答 |
 | --- | --- |
-| 在 [!UICONTROL Adobe Experience Platform] 上，[!UICONTROL Customer Journey Analytics] 的预期滞后时间是多少？ | <ul><li>实时数据或事件：当数据在 AEP 中可用后，在 90 分钟内处理和摄取。(批量> 5,000万行：超过90分钟。)</li><li>少量回填 - 例如，查找 100 万行的数据集：24 小时内<li>大量回填 - 例如，5000 亿行：30 天</li></ul> |
+| 在 [!UICONTROL Adobe Experience Platform] 上，[!UICONTROL Customer Journey Analytics] 的预期滞后时间是多少？ | <ul><li>实时数据或事件：当数据在 AEP 中可用后，在 90 分钟内处理和摄取。（批次大小 > 500 万行：超过 90 分钟。）</li><li>少量回填 - 例如，查找 100 万行的数据集：24 小时内<li>大量回填 - 例如，5000 亿行：30 天</li></ul> |
 
 
 ## 5. 传统 [!UICONTROL Adobe Analytics] 组件
 
 | 问题 | 回答 |
 | --- | --- |
-| 我能否共享/发布 [!UICONTROL 过滤器] ([!UICONTROL 区段])从 [!DNL Customer Journey Analytics] Experience Platform统一配置文件或其他Experience Cloud应用程序？ | 还不能，但我们正在努力提供这种功能。 |
-| 我老头怎么了 [!UICONTROL eVar] 设置？ | [!UICONTROL eVar], [!UICONTROL prop]和 [!UICONTROL 事件] 在传统Adobe Analytics意义上， [!UICONTROL Customer Journey Analytics]. 您有无限的架构元素（维度、量度、列表字段）。因此，您在数据收集过程中使用的所有属性设置现在都会在查询时应用。 |
+| 我能否将来自[!DNL Customer Journey Analytics]的[!UICONTROL 过滤器]（[!UICONTROL 区段]）共享/发布到 Experience Platform Unified Profile 或其他 Experience Cloud 云应用程序？ | 还不能，但我们正在努力提供这种功能。 |
+| 我之前的 [!UICONTROL eVar] 设置发生了什么变化？ | [!UICONTROL Customer Journey Analytics] 中不再存在传统 Adobe Analytics 意义上的 [!UICONTROL eVar]、[!UICONTROL 属性]和[!UICONTROL 事件]。您有无限的架构元素（维度、量度、列表字段）。因此，您在数据收集过程中使用的所有属性设置现在都会在查询时应用。 |
 | 我的所有会话和变量持久性设置现在位于何处？ | [!UICONTROL Customer Journey Analytics] 在报告时应用所有这些设置，因此这些设置现在位于数据视图中。对这些设置的更改现在具有追溯性，您可以使用多个数据视图来管理多个版本！ |
 | 我们的现有区段/计算量度会发生什么？ | [!UICONTROL Customer Journey Analytics] 不再使用 eVar、prop 或事件，而是使用任何 AEP 架构。这意味着，任何现有区段或计算量度都与 [!UICONTROL Customer Journey Analytics] 不兼容。 |
 | [!UICONTROL Customer Journey Analytics] 如何处理 `Uniques Exceeded` 限制？ | [!UICONTROL Customer Journey Analytics] 没有唯一值限制，因此无需担心！ |
@@ -79,7 +79,7 @@ ht-degree: 96%
 
 | 如果您... | 产生的后果... |
 | --- | --- |
-| 删除 [!UICONTROL Adobe Experience Platform] 中的沙盒 | 如果删除沙盒，则将阻止数据流向与该沙盒中的数据集关联的 [!UICONTROL Customer Journey Analytics] 连接。目前， [!UICONTROL 连接] 在CJA中，不会自动删除与已删除的沙盒绑定的沙箱。 |
+| 删除 [!UICONTROL Adobe Experience Platform] 中的沙盒 | 如果删除沙盒，则将阻止数据流向与该沙盒中的数据集关联的 [!UICONTROL Customer Journey Analytics] 连接。目前，CJA 中关联被删除沙盒的[!UICONTROL 连接]不能自动删除。 |
 | 删除 [!UICONTROL Adobe Experience Platform] 中的架构，但不删除与该架构关联的数据集 | [!UICONTROL Adobe Experience Platform][!UICONTROL  不允许删除具有一个或多个关联数据集的架构。]但是，具有相应权限集的管理员可以先删除关联数据集，然后再删除架构。 |
 | 删除 [!UICONTROL Adobe Experience Platform] 数据湖中的一个数据集 | 删除 AEP 数据湖中的某个数据集将阻止数据从该数据集流向包括该数据集的任何 CJA 连接。来自该数据集的任何数据都不会自动从关联的 CJA 连接中删除。 |
 | 删除 [!UICONTROL Customer Journey Analytics] 中的数据集 | 当前，无法删除已保存的连接中的数据集。您必须删除整个连接，然后重新开始创建连接。（但是，如果客户购买了 CJA SKU，则可以删除 [!UICONTROL Adobe Experience Platform] 用户界面中的一个数据集。） |
