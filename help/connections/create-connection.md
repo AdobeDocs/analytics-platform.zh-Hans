@@ -4,7 +4,7 @@ description: 描述如何在 Customer Journey Analytics 中创建与 Platform �
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: da34e4c97720ec20f354a4bd67708b4d89c5bea4
+source-git-commit: cec3d95d2877bad3a7fc4ac5e68691859262c2d4
 workflow-type: tm+mt
 source-wordcount: '1971'
 ht-degree: 100%
@@ -146,11 +146,12 @@ Customer Journey Analytics
 
 1. 转到 [Adobe Experience Platform 查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html)并创建新查询。
 
-1. 创建的查询将如下所示：
+   创建的查询将如下所示：
 
    ```
    Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;
    ```
 
-* 在此示例中，“analytics_demo_data”是数据集的名称。
-* 执行 `Show Tables` 查询以显示 AEP 中存在的所有数据集。
+   在此示例中，“analytics_demo_data”是数据集的名称。
+
+1. 执行 `Show Tables` 查询以显示 AEP 中存在的所有数据集。
