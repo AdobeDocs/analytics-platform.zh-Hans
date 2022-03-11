@@ -4,10 +4,10 @@ description: 报告 Customer Journey Analytics 的当前使用情况
 exl-id: 5599b34f-342d-4c68-b7c9-2ac3ea50d078
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 74934c8684198104c808284310bcdfd633085574
+source-git-commit: 966274d433d8495d32823d74c5f72107bb5f383a
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 50%
+source-wordcount: '549'
+ht-degree: 48%
 
 ---
 
@@ -38,9 +38,9 @@ ht-degree: 50%
 
 ## 关于使用超量
 
-Adobe会每天严格监控和强制实施使用限制。 “数据行”是指可用于在Customer Journey Analytics中分析的每日平均数据行数。
+使用限制由Adobe定期监控和强制执行。 “数据行”是指可用于在Customer Journey Analytics中分析的每日平均数据行数。
 
-假设您的合同授权将行数限制为100万。 假设在第1天使用Customer Journey Analytics时，您上传了200万行数据。 在第2天，您删除了100万行，并在剩余的许可期限内，将使用量保持在已承诺的最大值。 根据您的合同条款，您仍可能会在第1天收取按比例分摊的超额使用费用。
+例如，假设您的合同授权您拥有100万行数据。 假设在使用Customer Journey Analytics的第1天，您上传了200万行数据。 在第2天，您会删除100万行，并在剩余的许可证期限内将使用量保持在承诺的最大值（即100万行数据）。 根据您的合同条款，由于您超出了“数据行”许可证授权，因此您在第1天仍可能会收取按比例分摊的过度使用费用。
 
 ## 诊断差异
 
