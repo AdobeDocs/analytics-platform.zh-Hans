@@ -4,10 +4,10 @@ description: Customer Journey Analytics — 常见问题解答。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: cd48a91ca3affc39cf71451bdd8a44ca7669523b
+source-git-commit: 5bee04bcb837552364f4852df09b1da2931f5dfe
 workflow-type: tm+mt
-source-wordcount: '1624'
-ht-degree: 97%
+source-wordcount: '2286'
+ht-degree: 85%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 [!UICONTROL Customer Journey Analytics] (CJA) 是我们的新一代分析产品。以下是关于 CJA 的常见问题解答。有关更多信息，请查阅 [Customer Journey Analytics 功能支持](/help/getting-started/cja-aa.md)。
 
-## 1. 先决条件
+## 1. 先决条件 {#prerequisites}
 
 | 问题 | 回答 |
 | --- | --- |
@@ -25,7 +25,7 @@ ht-degree: 97%
 
 {style=&quot;table-layout:auto&quot;}
 
-## 2. 拼合数据（跨渠道分析）
+## 2. 拼合数据（跨渠道分析） {#stitching}
 
 | 问题 | 回答 |
 | --- | --- |
@@ -36,7 +36,7 @@ ht-degree: 97%
 
 {style=&quot;table-layout:auto&quot;}
 
-## 3. 将数据载入到 [!UICONTROL Customer Journey Analytics]
+## 3. 将数据载入到 [!UICONTROL Customer Journey Analytics] {#ingest}
 
 | 问题 | 回答 |
 | --- | --- |
@@ -50,7 +50,7 @@ ht-degree: 97%
 
 {style=&quot;table-layout:auto&quot;}
 
-## 4. 延迟注意事项
+## 4. 延迟注意事项 {#latency}
 
 >[!NOTE]
 >CJA 中没有固定的数据大小，因此 Adobe 无法承诺标准摄取时间。我们正在积极地努力通过新的更新和摄取优化来缩短这些延迟。
@@ -59,21 +59,16 @@ ht-degree: 97%
 | --- | --- |
 | 在 [!UICONTROL Adobe Experience Platform] 上，[!UICONTROL Customer Journey Analytics] 的预期滞后时间是多少？ | <ul><li>实时数据或事件：当数据在 AEP 中可用后，在 90 分钟内处理和摄取。（批次大小 > 500 万行：超过 90 分钟。）</li><li>少量回填 - 例如，查找 100 万行的数据集：24 小时内<li>大量回填 - 例如，5000 亿行：30 天</li></ul> |
 
+## 5.为 [!UICONTROL 连接] 数据保留 {#data-retention}
 
-## 5. 传统 [!UICONTROL Adobe Analytics] 组件
+>[!IMPORTANT]
+>请联系客户关怀部门或您的 Adobe 客户经理来实施此设置。尚无法通过 CJA UI 访问此设置。
 
-| 问题 | 回答 |
-| --- | --- |
-| 我能否将来自[!DNL Customer Journey Analytics]的[!UICONTROL 过滤器]（[!UICONTROL 区段]）共享/发布到 Experience Platform Unified Profile 或其他 Experience Cloud 云应用程序？ | 还不能，但我们正在努力提供这种功能。 |
-| 我之前的 [!UICONTROL eVar] 设置发生了什么变化？ | [!UICONTROL Customer Journey Analytics] 中不再存在传统 Adobe Analytics 意义上的 [!UICONTROL eVar]、[!UICONTROL 属性]和[!UICONTROL 事件]。您有无限的架构元素（维度、量度、列表字段）。因此，您在数据收集过程中使用的所有属性设置现在都会在查询时应用。 |
-| 我的所有会话和变量持久性设置现在位于何处？ | [!UICONTROL Customer Journey Analytics] 在报告时应用所有这些设置，因此这些设置现在位于数据视图中。对这些设置的更改现在具有追溯性，您可以使用多个数据视图来管理多个版本！ |
-| 我们的现有区段/计算量度会发生什么？ | [!UICONTROL Customer Journey Analytics] 不再使用 eVar、prop 或事件，而是使用任何 AEP 架构。这意味着，任何现有区段或计算量度都与 [!UICONTROL Customer Journey Analytics] 不兼容。 |
-| [!UICONTROL Customer Journey Analytics] 如何处理 `Uniques Exceeded` 限制？ | [!UICONTROL Customer Journey Analytics] 没有唯一值限制，因此无需担心！ |
-| 如果我是现有 [!DNL Data Workbench] 客户，是否可以立即转到 [!UICONTROL Customer Journey Analytics]？ | 这取决于您的用例 - 请与您的 Adobe 客户团队合作。您的当前用例可能已经非常适合 Customer Journey Analytics！ |
+此设置可让您在[!UICONTROL 连接]级别（而不是[!UICONTROL 数据集]级别）将 CJA 数据保留设置定义为以月计的滚动时段（3 个月、6 个月等）。数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此个人资料或查找数据集没有数据保留设置。
 
-{style=&quot;table-layout:auto&quot;}
+主要好处是，您只需存储或报告适用且有用的数据，并且可删除不再有用的旧数据。它可以帮助您保持在合同限制范围内，并减少超出预期成本的风险。
 
-## 6. 删除数据组件的后果
+## 6. 删除数据组件的后果 {#deletion}
 
 在数据删除方面，我们关注这 6 类组件：沙盒、架构、数据集、连接、数据视图和 Workspace 项目。下面是关于删除其中任何一个组件的一些可能情景：
 
@@ -88,7 +83,7 @@ ht-degree: 97%
 | 删除 [!UICONTROL Customer Journey Analytics] 中的连接 | 将显示一条错误消息，指示：<ul><li>为已删除的连接创建的所有数据视图都将不再起作用。</li><li> 同样地，任何依赖于已删除连接中的数据视图的工作区项目都将停止运行。</li></ul> |
 | 删除 [!UICONTROL Customer Journey Analytics] 中的数据视图 | 将显示一条错误消息，指示所有依赖于这个已删除数据视图的 Workspace 项目都将停止运行。 |
 
-## 7. 在 CJA 中合并报表包时的注意事项
+## 7. 在 CJA 中合并报表包时的注意事项 {#merge-reportsuite}
 
 如果打算通过 [Adobe Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans)引入 Adobe Analytics 数据，请在合并 2 个或更多 Adobe Analytics 报表包时考虑以下这些后果。
 
@@ -100,3 +95,60 @@ ht-degree: 97%
 | 货币 | CJA 中尚不支持货币转换。如果尝试合并的报表包使用不同的基础货币，则可能会出现问题。 |
 | [!UICONTROL 持久性] | [持久性](../data-views/component-settings/persistence.md)作用于各个报表包，它影响[!UICONTROL 筛选器]、[!UICONTROL 归因]等等。数值可能无法正确地累加。 |
 | [!UICONTROL 分类] | 在合并报表包时，不会自动为[!UICONTROL 分类]去重。将多个分类文件合并为一个[!UICONTROL 查找]数据集时，可能会遇到问题。 |
+
+
+## 8. 传统 [!UICONTROL Adobe Analytics] 组件
+
+| 问题 | 回答 |
+| --- | --- |
+| 我能否将来自[!DNL Customer Journey Analytics]的[!UICONTROL 过滤器]（[!UICONTROL 区段]）共享/发布到 Experience Platform Unified Profile 或其他 Experience Cloud 云应用程序？ | 还不能，但我们正在努力提供这种功能。 |
+| 我之前的 [!UICONTROL eVar] 设置发生了什么变化？ | [!UICONTROL Customer Journey Analytics] 中不再存在传统 Adobe Analytics 意义上的 [!UICONTROL eVar]、[!UICONTROL 属性]和[!UICONTROL 事件]。您有无限的架构元素（维度、量度、列表字段）。因此，您在数据收集过程中使用的所有属性设置现在都会在查询时应用。 |
+| 我的所有会话和变量持久性设置现在位于何处？ | [!UICONTROL Customer Journey Analytics] 在报告时应用所有这些设置，因此这些设置现在位于数据视图中。对这些设置的更改现在具有追溯性，您可以使用多个数据视图来管理多个版本！ |
+| 我们的现有区段/计算量度会发生什么？ | [!UICONTROL Customer Journey Analytics] 不再使用 eVar、prop 或事件，而是使用任何 AEP 架构。这意味着，任何现有区段或计算量度都与 [!UICONTROL Customer Journey Analytics] 不兼容。 |
+| [!UICONTROL Customer Journey Analytics] 如何处理 `Uniques Exceeded` 限制？ | [!UICONTROL Customer Journey Analytics] 没有唯一值限制，因此无需担心！ |
+| 如果我是现有 [!DNL Data Workbench] 客户，是否可以立即转到 [!UICONTROL Customer Journey Analytics]？ | 这取决于您的用例 - 请与您的 Adobe 客户团队合作。您的当前用例可能已经非常适合 Customer Journey Analytics！ |
+
+{style=&quot;table-layout:auto&quot;}
+
+## 9.估计连接大小 {#estimate-size}
+
+您可能需要知道 [!UICONTROL Customer Journey Analytics] 中当前有多少行数据。要准确了解贵组织的事件数据记录（数据行）使用情况，请执行以下操作 **对于贵组织创建的每个连接**.
+
+1. 在 [!UICONTROL Customer Journey Analytics] 中，单击&#x200B;**[!UICONTROL 连接]**&#x200B;选项卡。
+
+   您现在可以看到所有当前连接的列表。
+
+1. 单击每个连接名称以转到连接管理器。
+
+1. 将 **[!UICONTROL 可用事件数据的记录]** ，用于创建的所有连接。 （根据连接的大小，数字可能需要一段时间才能显示。）
+
+   ![事件数据](assets/event-data.png)
+
+1. 获得所有事件数据行的总和后，在您的公司与Adobe签署的Customer Journey Analytics合同中查找“数据行”权利。
+
+   这可让您获得销售订单中授权的最大数据行数。 如果步骤3产生的数据行数大于此数值，则表示您出现过量情况。
+
+1. 要解决这种情况，您有以下几个选项：
+
+   * 更改 [数据保留设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans#set-rolling-window-for-connection-data-retention).
+   * [删除任何未使用的连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans#implications-of-deleting-data-components).
+   * [删除AEP中的数据集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components).
+   * 请联系您的Adobe客户经理以许可额外容量。
+
+## 十、关于使用超量 {#overage}
+
+使用限制由Adobe定期监控和强制执行。 “数据行”是指可用于在Customer Journey Analytics中分析的每日平均数据行数。
+
+例如，假设您的合同授权您拥有100万行数据。 假设在使用Customer Journey Analytics的第1天，您上传了200万行数据。 在第2天，您会删除100万行，并在剩余的许可证期限内将使用量保持在承诺的最大值（即100万行数据）。 根据您的合同条款，由于您超出了“数据行”许可证授权，因此您在第1天仍可能会收取按比例分摊的过度使用费用。
+
+## 11.诊断数据差异 {#discrepancies}
+
+在某些情况下，您可能会注意到您的连接所摄取的事件总数与 [!UICONTROL Adobe Experience Platform] 中数据集的行数存在差异。在此示例中，“B2B Impression”数据集的行数为 7650，而该数据集在 [!UICONTROL Adobe Experience Platform] 中的行数为 3830。导致差异的原因有多种，可采取以下步骤进行诊断：
+
+1. 按 **[!UICONTROL Platform 数据集 ID]** 划分此维度，此时，您会发现存在两个大小相同但 **[!UICONTROL Platform 数据集 ID]** 不同的数据集。每个数据集都包含 3825 条记录。这意味着由于缺少人员 ID 或缺少时间戳，[!UICONTROL Customer Journey Analytics] 忽略了 5 条记录：
+
+   ![划分](assets/data-size2.png)
+
+1. 此外，如果我们登入 [!UICONTROL Adobe Experience Platform]，便会发现不存在 ID 为“5f21c12b732044194bffc1d0”的数据集，这表示在最初创建连接时，从 [!UICONTROL Adobe Experience Platform] 中删除了此特定数据集。不过，之后又将此数据集重新添加到 Customer Journey Analytics 中，但 [!UICONTROL Adobe Experience Platform] 生成了一个不同的 [!UICONTROL Platform 数据集 ID]。
+
+有关更多信息，请参阅在 [!UICONTROL Customer Journey Analytics] 和 [!UICONTROL Adobe Experience Platform] 中[删除数据集和连接的后果](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components)。
