@@ -4,7 +4,7 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 621b40ffebe0c28376bcb36fabf84b53b54e4992
+source-git-commit: d5bdbfd0ac2a62ea5a55fbd381bf5453910ce0d1
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 98%
@@ -17,7 +17,7 @@ CJA 文档自创建以来进行了以下更新。
 
 | 日期 | 更新描述 |
 | --- | --- |
-| 3 月 | 显着更新了 [估计连接大小](/help/getting-started/cja-faq.md). |
+| 2022 年 3 月 | 显着更新了 [估计连接大小](/help/getting-started/cja-faq.md). |
 | 2022 年 2 月 | [Adobe Analytics到Customer Journey Analytics的演变](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=zh-Hans) |
 | 2022 年 1 月 | [在 CJA 中使用绑定维度和量度](/help/use-cases/binding-dimensions-metrics.md)的新用例 |
 | 2022 年 1 月 | 添加了有关[绑定维度和指标](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=zh-Hans#binding-dimension)以及新的[[!UICONTROL 第一个已知]和[!UICONTROL 最后一个已知]分配设置的新功能文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=zh-Hans#allocation-settings) |
