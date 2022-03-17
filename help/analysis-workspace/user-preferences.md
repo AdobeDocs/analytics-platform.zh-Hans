@@ -4,9 +4,9 @@ description: 可设置用户的常规和项目首选项。
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '230'
+source-git-commit: 5743bece216431fecc073528ca2509cd2ed72f2b
+workflow-type: tm+mt
+source-wordcount: '238'
 ht-degree: 100%
 
 ---
@@ -40,6 +40,7 @@ ht-degree: 100%
 |  | [面板类型](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=zh-Hans) | <ul><li>自由格式（默认）</li><li>空白</li><li>快速见解</li></ul> |
 |  | 数字格式 | <ul><li>1,000.00（默认）</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | CSV 分隔符 | <ul><li>逗号（默认）</li><li>分号</li><li>冒号</li><li>竖线</li><li>句点</li><li>空格</li><li>制表符</li></ul> |
+|  | 自由格式表 | <ul><li>显示异常 </li><li>显示迷你图</li><li>显示注释</li></ul> |
 
 ## [!UICONTROL 深色主题]
 
