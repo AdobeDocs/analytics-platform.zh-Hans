@@ -4,9 +4,9 @@ description: 当您的公司将数据从Adobe Analytics移动到Customer Journey
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: d5bdbfd0ac2a62ea5a55fbd381bf5453910ce0d1
+source-git-commit: 24a6319b1303eaef80ddf6142deae60e7f664ae4
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '642'
 ht-degree: 25%
 
 ---
@@ -14,11 +14,17 @@ ht-degree: 25%
 
 # 适用于Adobe Analytics用户的CJA用户指南
 
+>[!NOTE]
+>
+>本页正在构建中。
+
 恭喜，贵公司正在开始工作Customer Journey Analytics! 作为Adobe Analytics的用户，您已经拥有了绝佳的开端。 使用Customer Journey Analytics时，您会注意到一些重大差异和一些相似之处。 本页旨在解释那些未更改的内容，以及一些主要差异。 我们还将告诉您如何获取有关新概念的更多信息，以及进一步的步骤，以使您的客户历程更轻松、更成功。
 
 ## 未更改的内容
 
-您在报表端所熟悉的许多内容并未发生更改。 您仍然可以使用Analysis Workspace的强大功能分析数据，以及Adobe Analytics功能板和新版Report Builder。 工作区和功能板的工作方式与在传统Adobe Analytics中基本相同。 Report Builder具有新的界面，现在可在PC、Mac计算机和Excel的Web版本上运行。 在报告方面，不同之处在于您有权访问要分析的更多跨渠道数据。 以下是的工作区示例
+您在报表端所熟悉的许多内容并未发生更改。 您仍然可以使用Analysis Workspace的强大功能分析数据。 您还可以使用相同版本的Adobe Analytics功能板。 工作区和功能板的工作方式与在传统Adobe Analytics中基本相同。 Report Builder具有新的界面，现在可在PC、Mac计算机和Excel的Web版本上运行。 在报告方面，不同之处在于您有权访问要分析的更多跨渠道数据。 以下是一些多渠道可视化图表的示例：
+
+![多渠道](assets/cross-channel.png)
 
 ## 新架构
 
@@ -26,7 +32,7 @@ Customer Journey Analytics从Adobe Experience Platform获取其数据。 Experie
 
 Platform 中的客户数据将作为数据集存储，数据集由一个架构和批量数据组成。有关 Platform 的更多详细信息，请参阅 [Adobe Experience Platform 体系架构概述](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en)。
 
-您的CJA管理员将在平台中建立与数据的连接，并在这些连接中构建数据视图。 将数据视图视为类似于虚拟报表包的视图。 数据视图是报告Customer Journey Analytics的基础。
+您的CJA管理员已建立 [连接](/help/connections/create-connection.md) 到平台中的数据集。 然后他们建了 [数据视图](/help/data-views/data-views.md) 在这些关系中。 将数据视图视为类似于虚拟报表包的视图。 数据视图是报告Customer Journey Analytics的基础。
 
 ## 新概念和术语
 
