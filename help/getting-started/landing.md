@@ -3,9 +3,9 @@ description: 介绍新登陆页面的功能。
 title: Customer Journey Analytics登陆页面
 role: User, Admin
 feature: CJA Basics
-source-git-commit: 186c462c363660970080acbb9a906c4cf8254df8
+source-git-commit: 2aafa1b1181377ff80b12dbaecd9634e53f1a08c
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1053'
 ht-degree: 58%
 
 ---
@@ -32,15 +32,13 @@ Customer Journey Analytics登陆页面提供了项目经理主页和学习部分
 
 [!UICONTROL 项目]用作 [!UICONTROL Workspace] 主页。此处会显示所有 Workspace 项目，包括移动记分卡。**[!UICONTROL 项目]**&#x200B;是指您已构建的内容或其他人已构建并与您分享的内容。[!UICONTROL 项目]还指空白项目和空白移动记分卡。
 
-![全部登陆](assets/landing-all.png)
-
 >[!NOTE]
 >
 >以下几种设置会在整个会话和多个会话间保留（并会被记住）。示例：您位于哪个选项卡，选择了哪些过滤器，选择了哪些列，以及列排序方向。但是，搜索结果不会保留。
 
 | UI 元素 | 定义 |
 | --- | --- |
-| ... 更多 | 可让您[!UICONTROL 查看教程]和[编辑用户偏好设置](/help/analyze/analysis-workspace/user-preferences.md)。 |
+| ... 更多 | 可让您[!UICONTROL 查看教程]和[编辑用户偏好设置](/help/analysis-workspace/user-preferences.md)。 |
 | **[!UICONTROL 新建]** 模式窗口返回 | 单击 **[!UICONTROL 新建]** 在工作区中，您可以再次选择 [!UICONTROL 空白项目] 和 [!UICONTROL 空白移动记分卡]. 您还可以从公司创建的任何模板中进行选择。 |
 | [!UICONTROL 显示更少/更多内容] | 在不显示和显示横幅之间切换： ![顶部横幅](assets/top-banner.png) |
 | [!UICONTROL 空白项目] | 创建一个空白 [Workspace 项目](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans)供您填充。 |
@@ -52,7 +50,7 @@ Customer Journey Analytics登陆页面提供了项目经理主页和学习部分
 | 选区框 | 单击一个或多个项目旁边的此框会显示您可以执行的项目管理操作：删除、标记、固定、批准、共享、重命名、复制和导出至 CSV。您可能无权执行所有这些操作。 |
 | [!UICONTROL 收藏] | 收藏项目会给它旁边添加星标，并将其标记为您可以过滤的收藏项。 |
 | [!UICONTROL 名称] | 项目的名称。 |
-| 信息 (i) 图标 | 单击信息图标会显示有关此项目的以下信息：类型、项目角色、所有者、描述及其共享对象。它还指示谁可以[编辑或复制](https://experienceleague.adobe.com/docs/analytics-platform/analysis-workspace/curate-share/share-projects.html)此项目。 |
+| 信息 (i) 图标 | 单击信息图标会显示有关此项目的以下信息：类型、项目角色、所有者、描述及其共享对象。它还指示谁可以[编辑或复制](/help/analysis-workspace/curate-share/share-projects.md)此项目。 |
 | 省略号 (...) | 单击项目旁边的省略号会显示您可以执行的项目管理操作：删除、标记、固定、批准、共享、重命名、复制和导出至 CSV。请注意，您可能无权执行所有这些操作。 |
 | [!UICONTROL 类型] | 指示此类型是 Workspace 项目还是移动记分卡。 |
 | [!UICONTROL 标记] | 您可以标记报告以将其整理到组中。 |
@@ -62,7 +60,7 @@ Customer Journey Analytics登陆页面提供了项目经理主页和学习部分
 | [!UICONTROL 共享对象] | 与谁共享了此项目。 |
 | [!UICONTROL 上次修改时间] | 上次修改此项目时。 |
 | [!UICONTROL 上次打开时间] | 您上次打开此项目的时间。 |
-| [!UICONTROL 已计划] | 设置为 [!UICONTROL 开] 计划项目或 **[!UICONTROL 关闭]** 当它不是时。 单击 **[!UICONTROL 开]** 链接可让您查看有关计划项目的信息。 您还可以 [编辑项目计划](/help/analyze/analysis-workspace/curate-share/t-schedule-report.md) 如果您是项目所有者。 |
+| [!UICONTROL 已计划] | 设置为 [!UICONTROL 开] 计划项目或 **[!UICONTROL 关闭]** 当它不是时。 单击 **[!UICONTROL 开]** 链接可让您查看有关计划项目的信息。 您还可以 [编辑项目计划](/help/analysis-workspace/curate-share/t-schedule-report.md) 如果您是项目所有者。 |
 | [!UICONTROL 项目 ID] | 项目ID可用于调试项目。 |
 | [!UICONTROL 最长的日期范围] | 较长的日期范围会增加项目复杂性，并可能会增加处理和加载时间。 |
 | [!UICONTROL 查询次数] | 项目查询的数量越多，项目复杂性就越高，并且可能会增加处理和加载时间。 |
