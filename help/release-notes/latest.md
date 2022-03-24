@@ -3,18 +3,14 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新 CJA 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 4afb87d0160dff9cd3249889bab84dacfdc43e2a
+source-git-commit: 39869e6ab2da8b15cb5dde876fe5233fc7c35adf
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 34%
+source-wordcount: '191'
+ht-degree: 30%
 
 ---
 
 # 当前 Customer Journey Analytics 发行说明 (2022 年 3 月)
-
->[!IMPORTANT]
->
->这些发行说明包含可能会发生变化的预发行信息。
 
 **上次更新**:2022年3月23日
 
