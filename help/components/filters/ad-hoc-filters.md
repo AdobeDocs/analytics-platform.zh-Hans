@@ -4,16 +4,16 @@ title: 临时项目筛选器
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 79513ad9-3c9d-441e-a5c5-c2b1e5cacc2e
-source-git-commit: 5743bece216431fecc073528ca2509cd2ed72f2b
+source-git-commit: c053a1517030b68875fe7f4518dbbd473dbe1b47
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 54%
+source-wordcount: '295'
+ht-degree: 61%
 
 ---
 
 # 临时项目筛选器
 
-临时项目过滤器允许您将任何组件直接拖放到面板拖放区域中，以创建过滤器。 过滤器将变为 [项目级别筛选器](https://experienceleague.adobe.com/docs/analytics-platform/analysis-workspace/components/filters/quick-filters.html?#what-are-project-only-segments) 当前项目的本地位置。
+临时项目过滤器允许您将任何组件直接拖放到面板拖放区域中，以创建过滤器。 过滤器将变为 [项目级别筛选器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html?lang=zh-Hans) 当前项目的本地位置。
 
 以下是一段关于创建临时项目筛选器的视频：
 
@@ -44,8 +44,8 @@ ht-degree: 54%
 
 1. 将光标悬停在放置区域中的筛选器上，然后单击“i”图标。
 1. 单击编辑铅笔以转到过滤器生成器。
-1. 检查 **[!UICONTROL 可用于所有项目并添加到组件列表]**.
-1. 单击 **[!UICONTROL 保存]**.
+1. 单击&#x200B;**[!UICONTROL “使其对所有项目可用，并添加到组件列表”]**。
+1. 单击&#x200B;**[!UICONTROL 保存]**。
 
 保存后，该过滤器即会显示在您的左边栏组件列表中，并且可以从过滤器管理器中与其他用户共享。
 

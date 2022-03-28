@@ -4,10 +4,10 @@ title: 快速筛选器
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 5743bece216431fecc073528ca2509cd2ed72f2b
+source-git-commit: c053a1517030b68875fe7f4518dbbd473dbe1b47
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 82%
+source-wordcount: '1028'
+ht-degree: 84%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 82%
 
 可在项目中创建快速筛选器以规避完整版[筛选器生成器](/help/components/filters/create-filters.md)的复杂操作。快速筛选器
 
-* 应用为 [仅限项目的区段](https://experienceleague.adobe.com/docs/analytics-platform/analysis-workspace/components/filters/quick-filters.html?lang=en#what-are-project-only-filters).
+* 作为[仅用于项目的区段](https://experienceleague.adobe.com/docs/analytics-platform/analysis-workspace/components/filters/quick-filters.html)应用。
 * 允许有最多 3 条规则
 * 不容纳嵌套容器或顺序规则。
 
@@ -99,11 +99,11 @@ ht-degree: 82%
 1. 所有项目的筛选器组件列表中现在都显示该筛选器。
 1. 还可与组织中的其他人员[共享该筛选器](/help/components/filters/manage-filters.md)。
 
-## 仅用于项目的筛选器是什么？
+## 仅用于项目的筛选器是什么？ {#project-only}
 
-仅限项目的过滤器是仅适用于在中创建这些项目的当前项目的过滤器。 它们在其他项目中不可用，并且无法共享给其他用户。 它们旨在快速探索数据，而无需在左边栏中创建和保存过滤器。 可以在面板拖放区域中使用快速过滤器或 [临时过滤器](/help/components/filters/ad-hoc-filters.md).
+Project-only filters are filters that only apply to the current project they were created in. 它们在其他项目中不可用，并且无法共享给其他用户。 They are intended for quick exploration of your data without having to create and save a filter in the left rail. 可以在面板拖放区域中使用快速过滤器或 [临时过滤器](/help/components/filters/ad-hoc-filters.md).
 
-如果您在 [!UICONTROL 过滤器生成器]，则会显示仅限项目的通知。 如果未选中“使此过滤器可用……” 单击 **[!UICONTROL 应用]**，则该区段仍为仅项目区段。
+如果您在 [!UICONTROL 过滤器生成器]，则会显示仅限项目的通知。 如果未选中“使此过滤器可用……” 且不点击&#x200B;**[!UICONTROL 应用]**，则该区段仍然是仅用于项目的区段。
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ ht-degree: 82%
 
 ![“仅用于项目”未选中](assets/project-only-unchecked.png)
 
-如果选中“使此过滤器可用……” 单击 **[!UICONTROL 保存]**，则左边栏组件列表中会提供该过滤器，以供在其他项目中使用。 也可以从过滤器管理器中与其他用户共享该功能。
+If you check &quot;Make this filter available..&quot; 单击 **[!UICONTROL 保存]**，则左边栏组件列表中会提供该过滤器，以供在其他项目中使用。 It can also be shared with other users from the Filter Manager.
 
 ![“仅用于项目”已选中](assets/project-only-checked.png)
 
