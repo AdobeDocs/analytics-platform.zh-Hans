@@ -4,10 +4,10 @@ description: 当您的公司将数据从Adobe Analytics移动到Customer Journey
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 07c9bda0c40bf1e7bd39bf75bdce900a4749f0da
+source-git-commit: 957cb693a9fd814cbf571696964cd4f91d338307
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '982'
+ht-degree: 19%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 >
 >本页正在构建中。
 
-恭喜，贵公司已开始与Customer Journey Analytics合作！ 作为熟悉Adobe Analytics的用户，您已经拥有了良好的开端。 使用Customer Journey Analytics时，您会注意到一些重大差异和一些相似之处。 本页旨在解释那些未更改的内容，以及一些主要差异。 我们还将告诉您如何获取有关新概念的更多信息，以及进一步的步骤，以使您的客户历程更轻松、更成功。
+恭喜，你的公司开始雇Customer Journey Analytics! 作为熟悉Adobe Analytics的用户，您已经拥有了良好的开端。 使用Customer Journey Analytics时，您会注意到一些重大差异和一些相似之处。 本页旨在解释那些未更改的内容，以及一些主要差异。 我们还将告诉您如何获取有关新概念的更多信息，以及进一步的步骤，以使您的客户历程更轻松、更成功。
 
 ## 未更改的内容
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 * 您还具有相同版本的 [Adobe Analytics功能板](/help/mobile-app/home.md) 随你。 工作区和功能板的工作方式与在传统Adobe Analytics中相同。
 * [Report Builder](/help/report-builder/report-buider-overview.md) 拥有新的界面，现在可以在PC、Mac和Excel的Web版本上运行。
 
-在报表方面，不同之处在于您可以访问更多的跨渠道数据进行分析。 以下是一些包含大量跨渠道数据源的多渠道可视化图表示例：
+在报表方面，不同之处在于您可以访问更多的跨渠道数据进行分析。 以下是一些包含跨渠道数据源的可视化图表示例：
 
 ![多渠道可视化图表](assets/cross-channel.png)
 
@@ -38,7 +38,7 @@ Customer Journey Analytics从Adobe Experience Platform获取其数据。 Experie
 
 Platform 中的客户数据将作为数据集存储，数据集由一个架构和批量数据组成。有关 Platform 的更多详细信息，请参阅 [Adobe Experience Platform 体系架构概述](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en)。
 
-您的CJA管理员已建立 [连接](/help/connections/create-connection.md) 到平台中的数据集。 然后他们建了 [数据视图](/help/data-views/data-views.md) 在这些关系中。 将数据视图视为类似于虚拟报表包的视图。 数据视图是报告Customer Journey Analytics的基础。
+您的CJA管理员已建立 [连接](/help/connections/create-connection.md) 到平台中的数据集。 然后他们建了 [数据视图](/help/data-views/data-views.md) 在这些关系中。 将数据视图视为类似于虚拟报表包的视图。 数据视图是报告Customer Journey Analytics的基础。 报表包的概念已不复存在。
 
 ## 新概念和术语
 
@@ -72,17 +72,30 @@ Platform 中的客户数据将作为数据集存储，数据集由一个架构�
 * 如果要将Adobe Analytics计算量度移动到Customer Journey Analytics，请查看 [此视频](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=zh-Hans).
 * 否则，请在Customer Journey Analytics中重新创建计算量度。
 
-### 会话和变量持久性设置
-
-[!UICONTROL Customer Journey Analytics] 在报告时应用所有这些设置，这些设置现在位于 [数据视图](help/data-views/component-settings/persistence.md). 对这些设置所做的更改现在具有可回溯性，您可以使用多个数据视图来拥有多个版本！
-
 ### 虚拟报表包现在为“数据视图”
 
 数据视图采用当前虚拟报表包的概念，并将其扩展为 [对数据启用其他控制](/help/data-views/create-dataview.md) 由连接提供。 这可以配置时区和会话超时间隔。 您还可以动态地对各个维度应用归因和到期属性。 请注意，这些量度会追溯应用于所有数据。
 
+**您需要执行的操作**:
+
+* 熟悉有关数据视图的许多用例。
+* 请注意，在工作区中，您现在使用的报表包选择器允许您从管理员与您共享的数据视图中进行选择：
+
+   ![数据视图选择器](assets/data-views.png)
+
 ### 跨报表包数据
 
-可以在Experience Platform中组合来自多个数据集的现有实施。
+可以在Experience Platform中组合来自多个数据集的现有实施。 基于这些数据集的连接和数据视图可以合并之前存在于单独报表包中的数据。
+
+**您需要执行的操作**:
+
+
+### 会话和变量持久性设置
+
+[!UICONTROL Customer Journey Analytics] 在报告时应用所有这些设置，这些设置现在位于 [数据视图](help/data-views/component-settings/persistence.md). 对这些设置所做的更改现在具有可回溯性，您可以使用多个数据视图来拥有多个版本！
+
+**您需要执行的操作**:
+
 
 ### 分类现在为“查找数据集”
 
@@ -91,11 +104,15 @@ Platform 中的客户数据将作为数据集存储，数据集由一个架构�
 
 ### 容器已重命名
 
-您为 [创建的每个数据视图](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#containers). 请注意，您可以重命名任何容器以符合贵组织的需求。
-
+您为 [创建的每个数据视图](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#containers).
 * **点击容器现在为“事件”容器**. [!UICONTROL 人员]容器包括访客在指定的时间范围内的每个会话和事件。
 * **访问容器现在为“会话”容器**. 通过[!UICONTROL 会话]容器可以识别页面交互、营销活动或特定会话的转化。
 * **现在，访客容器为 [!UICONTROL 人员] 容器**. [!UICONTROL 人员]容器包括访客在指定的时间范围内的每个会话和事件。
+
+**您需要执行的操作**:
+
+您可以选择重命名任何容器以符合贵组织的需求。
+
 
 ### `Uniques Exceeded` 限制
 
