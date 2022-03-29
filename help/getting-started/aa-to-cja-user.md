@@ -4,10 +4,10 @@ description: 当您的公司将数据从Adobe Analytics移动到Customer Journey
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: d31f07d8b26ea4d60481c040a0ca1ba491d4ecf0
+source-git-commit: 755e554e3eb362d6e7149e5d3a4fbbcddebdd14d
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 25%
+source-wordcount: '656'
+ht-degree: 24%
 
 ---
 
@@ -22,9 +22,15 @@ ht-degree: 25%
 
 ## 未更改的内容
 
-您在报表端所熟悉的许多内容并未发生更改。 您仍然可以使用Analysis Workspace的强大功能分析数据。 您还可以使用相同版本的Adobe Analytics功能板。 工作区和功能板的工作方式与在传统Adobe Analytics中基本相同。 Report Builder具有新的界面，现在可在PC、Mac计算机和Excel的Web版本上运行。 在报告方面，不同之处在于您有权访问要分析的更多跨渠道数据。 以下是一些多渠道可视化图表的示例：
+您在报表端所熟悉的许多内容并未发生更改。
 
-![多渠道](assets/cross-channel.png)
+* 您仍然可以使用 [Analysis Workspace](/help/analysis-workspace/home.md) 分析数据。
+* 您还具有相同版本的 [Adobe Analytics功能板](/help/mobile-app/home.md) 随你。 工作区和功能板的工作方式与在传统Adobe Analytics中相同。
+* [Report Builder](/help/report-builder/report-buider-overview.md) 拥有新的界面，现在可以在PC、Mac和Excel的Web版本上运行。
+
+在报表方面，不同之处在于您可以访问更多的跨渠道数据进行分析。 以下是一些包含大量跨渠道数据源的多渠道可视化图表示例：
+
+![多渠道可视化图表](assets/cross-channel.png)
 
 ## 新架构
 
