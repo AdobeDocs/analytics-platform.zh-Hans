@@ -4,10 +4,10 @@ title: 快速筛选器
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: c053a1517030b68875fe7f4518dbbd473dbe1b47
+source-git-commit: be9622559696c65e76bf45d6675646fc64d58ace
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 84%
+source-wordcount: '1050'
+ht-degree: 82%
 
 ---
 
@@ -20,6 +20,10 @@ ht-degree: 84%
 * 不容纳嵌套容器或顺序规则。
 
 要比较快速筛选器与完整的组件列表筛选器的作用，请转到[此处](/help/components/filters/filters-overview.md)。
+
+以下是一个关于快速过滤器的视频（请注意，它改用术语“快速区段”。） 但是，功能是相同的。
+
+>[!VIDEO](https://video.tv.adobe.com/v/341466/?quality=12&learn=on)
 
 ## 先决条件 {#prereqs}
 
@@ -101,7 +105,7 @@ ht-degree: 84%
 
 ## 仅用于项目的筛选器是什么？ {#project-only}
 
-Project-only filters are filters that only apply to the current project they were created in. 它们在其他项目中不可用，并且无法共享给其他用户。 They are intended for quick exploration of your data without having to create and save a filter in the left rail. 可以在面板拖放区域中使用快速过滤器或 [临时过滤器](/help/components/filters/ad-hoc-filters.md).
+仅限项目的过滤器是仅适用于在中创建这些项目的当前项目的过滤器。 它们在其他项目中不可用，并且无法共享给其他用户。 它们旨在快速探索数据，而无需在左边栏中创建和保存过滤器。 可以在面板拖放区域中使用快速过滤器或 [临时过滤器](/help/components/filters/ad-hoc-filters.md).
 
 如果您在 [!UICONTROL 过滤器生成器]，则会显示仅限项目的通知。 如果未选中“使此过滤器可用……” 且不点击&#x200B;**[!UICONTROL 应用]**，则该区段仍然是仅用于项目的区段。
 
@@ -111,7 +115,7 @@ Project-only filters are filters that only apply to the current project they wer
 
 ![“仅用于项目”未选中](assets/project-only-unchecked.png)
 
-If you check &quot;Make this filter available..&quot; 单击 **[!UICONTROL 保存]**，则左边栏组件列表中会提供该过滤器，以供在其他项目中使用。 It can also be shared with other users from the Filter Manager.
+如果选中“使此过滤器可用……” 单击 **[!UICONTROL 保存]**，则左边栏组件列表中会提供该过滤器，以供在其他项目中使用。 也可以从过滤器管理器中与其他用户共享该功能。
 
 ![“仅用于项目”已选中](assets/project-only-checked.png)
 

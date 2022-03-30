@@ -4,10 +4,10 @@ description: 当您的公司将数据从Adobe Analytics移动到Customer Journey
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 957cb693a9fd814cbf571696964cd4f91d338307
+source-git-commit: be9622559696c65e76bf45d6675646fc64d58ace
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 19%
+source-wordcount: '994'
+ht-degree: 18%
 
 ---
 
@@ -24,8 +24,8 @@ ht-degree: 19%
 
 您在报表端所熟悉的许多内容并未发生更改。
 
-* 您仍然可以使用 [Analysis Workspace](/help/analysis-workspace/home.md) 分析数据。
-* 您还具有相同版本的 [Adobe Analytics功能板](/help/mobile-app/home.md) 随你。 工作区和功能板的工作方式与在传统Adobe Analytics中相同。
+* 您仍然可以使用 [Analysis Workspace](/help/analysis-workspace/home.md) 分析数据。 工作区的工作方式与在传统Adobe Analytics中相同。
+* 您还具有相同版本的 [Adobe Analytics功能板](/help/mobile-app/home.md) 随你。 功能板(又称Mobile应用程序)的工作方式与在传统Adobe Analytics中相同。
 * [Report Builder](/help/report-builder/report-buider-overview.md) 拥有新的界面，现在可以在PC、Mac和Excel的Web版本上运行。
 
 在报表方面，不同之处在于您可以访问更多的跨渠道数据进行分析。 以下是一些包含跨渠道数据源的可视化图表示例：
@@ -78,10 +78,11 @@ Platform 中的客户数据将作为数据集存储，数据集由一个架构�
 
 **您需要执行的操作**:
 
-* 熟悉有关数据视图的许多用例。
 * 请注意，在工作区中，您现在使用的报表包选择器允许您从管理员与您共享的数据视图中进行选择：
 
    ![数据视图选择器](assets/data-views.png)
+
+* 熟悉许多 [数据视图用例](/help/data-views/data-views-usecases.md).
 
 ### 跨报表包数据
 
