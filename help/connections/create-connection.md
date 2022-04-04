@@ -4,7 +4,7 @@ description: 描述如何在 Customer Journey Analytics 中创建与 Platform �
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 59d9fa8d4e4fa4aa3d297e70a619a7456527c5cd
+source-git-commit: 386feb602a276672f79ee8a612b5d288ce6ad981
 workflow-type: tm+mt
 source-wordcount: '1971'
 ht-degree: 100%
@@ -59,7 +59,7 @@ Customer Journey Analytics
 
    （如果您有许多数据集可供选择，可以使用数据集列表上方的&#x200B;**[!UICONTROL 搜索数据集]**&#x200B;搜索栏搜索正确的数据集。）
 
-## 2. 配置数据集
+## 配置数据集
 
 在右侧，您现在可以配置已添加的数据集。
 
