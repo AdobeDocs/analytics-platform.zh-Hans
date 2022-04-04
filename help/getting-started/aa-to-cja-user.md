@@ -4,7 +4,7 @@ description: 当您的公司将数据从Adobe Analytics移动到Customer Journey
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 9f7b98084a7ec5d2abe89e00f0a6567cb271e80a
+source-git-commit: fcd178add387cc79dabecace3fa1f84bd64c904f
 workflow-type: tm+mt
 source-wordcount: '1010'
 ht-degree: 18%
@@ -93,7 +93,7 @@ Platform 中的客户数据将作为数据集存储，数据集由一个架构�
 
 ## 会话和变量持久性设置
 
-[!UICONTROL Customer Journey Analytics] 在报告时应用所有这些设置，这些设置现在位于 [数据视图](help/data-views/component-settings/persistence.md). 对这些设置所做的更改现在具有可回溯性，您可以使用多个数据视图来拥有多个版本！
+[!UICONTROL Customer Journey Analytics] 在报告时应用所有这些设置，这些设置现在位于 [数据视图](/help/data-views/component-settings/persistence.md). 对这些设置所做的更改现在具有可回溯性，您可以使用多个数据视图来拥有多个版本！
 
 **您需要执行的操作**:
 
