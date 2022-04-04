@@ -4,8 +4,8 @@ description: 数据视图指定您要如何解释数据在 CJA 连接中的各�
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+source-git-commit: 9f7b98084a7ec5d2abe89e00f0a6567cb271e80a
+workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Customer Journey Analytics 中的 Workspace 项目均基于数据视图。
 
-## 数据视图功能
+## 数据视图功能 {#capabilities}
 
 数据视图允许您自发地更改架构元素设置，而不必更改 Adobe Experience Platform 中的架构或重新实施您的 CJA 环境。
 
@@ -52,12 +52,12 @@ Customer Journey Analytics 中的 Workspace 项目均基于数据视图。
 
 * 您可以在数据视图中&#x200B;**重命名您的容器**，并将这些重命名后的容器显示在基于该数据视图的任意 Workspace 项目中。
 
-## 数据视图先决条件
+## 数据视图先决条件 {#prerequisites}
 
 * 在创建数据视图之前，您需要[设置一个或多个与 Experience Platform 数据集的连接](/help/connections/create-connection.md)。
 * 要创建或管理数据视图，您需要[在 Adobe Admin Console 中拥有一组权限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=zh-Hans#admin-access-permissions)。
 
-## 您可以在 Workspace 中覆盖的数据视图设置
+## 您可以在 Workspace 中覆盖的数据视图设置 {#settings-override}
 
 一些数据视图设置可以在 Analysis Workspace 中的项目级别被覆盖，而另一些则不然。
 
@@ -65,14 +65,14 @@ Customer Journey Analytics 中的 Workspace 项目均基于数据视图。
 * 量度属性
 * 用户是否会在报告中看到[!UICONTROL 没有值]行项目
 
-## 您无法在 Workspace 中覆盖的数据视图设置
+## 您无法在 Workspace 中覆盖的数据视图设置 {#settings-no-override}
 
 * [!UICONTROL 组件类型]
 * 量度格式
 * 数据视图名称
 * 维度分配
 
-## 删除数据视图
+## 删除数据视图 {#delete}
 
 如果您在 [!UICONTROL Customer Journey Analytics] 中删除数据视图，将显示一条错误消息，指示所有依赖于这个已删除数据视图的 Workspace 项目都将停止运行。
 

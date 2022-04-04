@@ -4,9 +4,9 @@ description: 当您的公司将数据从Adobe Analytics移动到Customer Journey
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 48cde188fffd810f7bb292923fb0137fb476dcd4
+source-git-commit: 9f7b98084a7ec5d2abe89e00f0a6567cb271e80a
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1010'
 ht-degree: 18%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 18%
 >
 >本页正在构建中。
 
-恭喜，你的公司开始雇Customer Journey Analytics! 作为熟悉Adobe Analytics的用户，您已经拥有了良好的开端。 使用Customer Journey Analytics时，您会注意到一些重大差异和一些相似之处。 本页旨在解释那些未更改的内容，以及一些主要差异。 我们还将告诉您如何获取有关新概念的更多信息，以及进一步的步骤，以使您的客户历程更轻松、更成功。
+你的公司开始雇佣Customer Journey Analytics。 作为熟悉Adobe Analytics的用户，您已经拥有了良好的开端。 使用Customer Journey Analytics时，您会注意到一些重大差异和一些相似之处。 本页旨在解释那些未更改的内容，以及一些主要差异。 我们还将告诉您如何获取有关新概念的更多信息，以及进一步的步骤，以使您的客户历程更轻松、更成功。
 
 ## 未更改的内容
 
@@ -44,13 +44,25 @@ Platform 中的客户数据将作为数据集存储，数据集由一个架构�
 
 与传统的Adobe Analytics相比，为了符合行业标准，CJA中的几项功能已重命名并重新构建。 一些更新的术语包括区段、虚拟报表包、分类、客户属性和容器名称。 耳熟能详的概念（如eVar和prop）已不复存在，而且这些概念也存在限制。
 
-## 不再有eVar和prop
+## （虚拟）报表包现在为“数据视图”
 
-[!UICONTROL Customer Journey Analytics] 中不再存在传统 Adobe Analytics 意义上的 [!UICONTROL eVar]、[!UICONTROL 属性]和[!UICONTROL 事件]。您有无限的架构元素（维度、量度、列表字段）。因此，您在数据收集过程中使用的所有属性设置现在都会在查询时应用。
+[!UICONTROL 数据视图] 采用虚拟报表包当前存在的概念，并将其扩展到 [对数据启用其他控制](/help/data-views/create-dataview.md) 由连接提供。 这可以配置时区和会话超时间隔。 您还可以动态地对各个维度应用归因和到期属性。 请注意，这些量度会追溯应用于所有数据。
 
 **您需要执行的操作**:
 
-* 熟悉您可以使用的多种方式
+* 请注意，在工作区中，您现在使用的报表包选择器允许您从管理员与您共享的数据视图中进行选择：
+
+   ![数据视图选择器](assets/data-views.png)
+
+* 熟悉许多 [数据视图用例](/help/data-views/data-views-usecases.md).
+
+## 不再有eVar和prop
+
+[!UICONTROL Customer Journey Analytics] 中不再存在传统 Adobe Analytics 意义上的 [!UICONTROL eVar]、[!UICONTROL 属性]和[!UICONTROL 事件]。您有无限的架构元素（维度、量度、列表字段）。因此，您在数据收集过程中使用的所有属性设置现在都会在查询时应用。您的CJA管理员可以创建数据视图
+
+**您需要执行的操作**:
+
+* 熟悉这些架构元素可用于深入查看数据的多种方式。
 
 ## 区段现在为“过滤器”
 
@@ -72,17 +84,6 @@ Platform 中的客户数据将作为数据集存储，数据集由一个架构�
 * 如果要将Adobe Analytics计算量度移动到Customer Journey Analytics，请查看 [此视频](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=zh-Hans).
 * 否则，请在Customer Journey Analytics中重新创建计算量度。
 
-## 虚拟报表包现在为“数据视图”
-
-数据视图采用当前虚拟报表包的概念，并将其扩展为 [对数据启用其他控制](/help/data-views/create-dataview.md) 由连接提供。 这可以配置时区和会话超时间隔。 您还可以动态地对各个维度应用归因和到期属性。 请注意，这些量度会追溯应用于所有数据。
-
-**您需要执行的操作**:
-
-* 请注意，在工作区中，您现在使用的报表包选择器允许您从管理员与您共享的数据视图中进行选择：
-
-   ![数据视图选择器](assets/data-views.png)
-
-* 熟悉许多 [数据视图用例](/help/data-views/data-views-usecases.md).
 
 ## 跨报表包数据
 
@@ -96,8 +97,9 @@ Platform 中的客户数据将作为数据集存储，数据集由一个架构�
 
 **您需要执行的操作**:
 
-
 ## 分类现在为“查找数据集”
+
+
 
 ## 客户属性现在为“用户档案数据集”
 
