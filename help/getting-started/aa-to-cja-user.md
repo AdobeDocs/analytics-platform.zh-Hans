@@ -4,13 +4,13 @@ description: 当您的公司将数据从Adobe Analytics移动到Customer Journey
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 13743c627ae0af608e63c39ca1f0b8c54f61bbe0
+exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
+source-git-commit: 0fe1d1ce880db04f52f9828f97f61925da7b4028
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1012'
 ht-degree: 18%
 
 ---
-
 
 # 适用于Adobe Analytics用户的CJA用户指南
 
@@ -28,7 +28,7 @@ ht-degree: 18%
 * 您还具有相同版本的 [Adobe Analytics功能板](/help/mobile-app/home.md) 随你。 功能板(又称Mobile应用程序)的工作方式与在传统Adobe Analytics中相同。
 * [Report Builder](/help/report-builder/report-buider-overview.md) 拥有新的界面，现在可以在PC、Mac和Excel的Web版本上运行。
 
-在报表方面，不同之处在于您可以访问更多的跨渠道数据进行分析。 以下是一些包含跨渠道数据源的可视化图表示例：
+在报告方面， **不同之处** 即您有权访问更多要分析的跨渠道数据。 以下是一些包含跨渠道数据源的可视化图表示例：
 
 ![多渠道可视化图表](assets/cross-channel.png)
 

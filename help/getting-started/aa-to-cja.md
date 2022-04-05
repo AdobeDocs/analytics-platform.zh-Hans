@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: cd48a91ca3affc39cf71451bdd8a44ca7669523b
+source-git-commit: 0fe1d1ce880db04f52f9828f97f61925da7b4028
 workflow-type: tm+mt
-source-wordcount: '1242'
-ht-degree: 88%
+source-wordcount: '1316'
+ht-degree: 81%
 
 ---
 
@@ -35,9 +35,11 @@ ht-degree: 88%
 
 将Adobe Analytics数据转换为Customer Journey Analytics数据的最直接方法是 [全局报表包](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=zh-Hans) Experience Platform [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans). 此连接器可将您的Adobe Analytics变量直接映射到Experience Platform中的XDM架构和数据集，这反过来又可以轻松连接到Customer Journey Analytics。
 
-完整的全局报表包可能并不总是适用于实施。如果您计划将多个报表包引入 Customer Journey Analytics，则必须提前计划使变量在这些报表包中保持一致。
+完整的全局报表包可能并不总是适用于实施。如果您计划将多个报表包引入Customer Journey Analytics，您有2个选项：
 
-例如，报表包 1 中的 eVar1 可能指向[!UICONTROL 页面]。在报表包 2 中，eVar1 可能指向[!UICONTROL 内部营销活动]。当被引入 CJA 时，这些变量将混合到一个单一的 eVar1 维度中，从而导致潜在的混乱和不准确的报告。
+* 提前规划以使这些报表包中的变量保持一致。 例如，报表包 1 中的 eVar1 可能指向[!UICONTROL 页面]。在报表包 2 中，eVar1 可能指向[!UICONTROL 内部营销活动]。当被引入 CJA 时，这些变量将混合到一个单一的 eVar1 维度中，从而导致潜在的混乱和不准确的报告。
+
+* 使用 [日期准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) 功能来映射变量。 虽然如果所有报表包都使用相同的常用变量设计，这样会更轻松，但是如果您使用新Experience Platform，则无需使用 [数据准备](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en#mapping) 功能。 它允许您通过变量的映射值(位于数据流（或属性）级别)引用变量。
 
 如果您因为 [!UICONTROL Uniques Exceeded] 或 [!UICONTROL Low Traffic] 问题而无法迁移到全局报表包，请了解 CJA [对维度没有基数限制](/help/components/dimensions/high-cardinality.md)。它允许出现并计算任何唯一值。
 
