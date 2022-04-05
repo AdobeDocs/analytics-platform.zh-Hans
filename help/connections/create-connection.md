@@ -4,7 +4,7 @@ description: 描述如何在 Customer Journey Analytics 中创建与 Platform �
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 386feb602a276672f79ee8a612b5d288ce6ad981
+source-git-commit: ff642069b058626fa049ef4dad7ee565e501b0c6
 workflow-type: tm+mt
 source-wordcount: '1971'
 ht-degree: 100%
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 以下是一段视频概述：
 
->[!VIDEO](https://video.tv.adobe.com/v/331788/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/35111/?quality=12&learn=on)
 
 ## 所需权限
 
