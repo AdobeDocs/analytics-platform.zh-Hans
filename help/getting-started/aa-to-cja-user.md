@@ -5,20 +5,18 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 0fe1d1ce880db04f52f9828f97f61925da7b4028
+source-git-commit: 171b174624dbb48873024368884992766dcd0922
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 18%
+source-wordcount: '1053'
+ht-degree: 17%
 
 ---
 
 # 适用于Adobe Analytics用户的CJA用户指南
 
->[!NOTE]
->
->本页正在构建中。
+你的公司开始雇佣Customer Journey Analytics。 作为熟悉Adobe Analytics的用户，您已经拥有了良好的开端。 使用Customer Journey Analytics时，您会注意到一些相似之处和一些重大差异。 本页旨在解释那些未更改的内容，以及一些主要差异。 我们还将告诉您如何获取有关新概念的更多信息，以及进一步的步骤，以使您的客户历程更轻松、更成功。
 
-你的公司开始雇佣Customer Journey Analytics。 作为熟悉Adobe Analytics的用户，您已经拥有了良好的开端。 使用Customer Journey Analytics时，您会注意到一些重大差异和一些相似之处。 本页旨在解释那些未更改的内容，以及一些主要差异。 我们还将告诉您如何获取有关新概念的更多信息，以及进一步的步骤，以使您的客户历程更轻松、更成功。
+与传统的Adobe Analytics相比，为了符合行业标准，CJA中的几项功能已重命名并重新构建。 一些更新的术语包括区段、虚拟报表包、分类、客户属性和容器名称。 耳熟能详的概念（如eVar和prop）已不复存在，而且这些概念也存在限制。
 
 ## 未更改的内容
 
@@ -40,9 +38,9 @@ Platform 中的客户数据将作为数据集存储，数据集由一个架构�
 
 您的CJA管理员已建立 [连接](/help/connections/create-connection.md) 到平台中的数据集。 然后他们建了 [数据视图](/help/data-views/data-views.md) 在这些关系中。 将数据视图视为类似于虚拟报表包的视图。 数据视图是报告Customer Journey Analytics的基础。 报表包的概念已不复存在。
 
-## 新概念和术语
+## 报表包
 
-与传统的Adobe Analytics相比，为了符合行业标准，CJA中的几项功能已重命名并重新构建。 一些更新的术语包括区段、虚拟报表包、分类、客户属性和容器名称。 耳熟能详的概念（如eVar和prop）已不复存在，而且这些概念也存在限制。
+您可以通过Adobe Analytics源连接器或Web SDK将报表包数据引入Experience Platform，尤其是当您的组织仍在Adobe Analytics平台上并添加CJA/AEP时。 您通常会源使用Analytics架构的特定于报表包的数据集。
 
 ## （虚拟）报表包现在为“数据视图”
 
