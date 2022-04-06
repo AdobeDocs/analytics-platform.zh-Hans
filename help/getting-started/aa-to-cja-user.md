@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 171b174624dbb48873024368884992766dcd0922
+source-git-commit: 3af757fd311d7a92e56aa9ce5939dc3db8dcf6fa
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1051'
 ht-degree: 17%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 17%
 
 ![多渠道可视化图表](assets/cross-channel.png)
 
-## 新架构
+## 新架构 {#architecture}
 
 Customer Journey Analytics从Adobe Experience Platform获取其数据。 Experience Platform让您能够集中和标准化来自任何系统或渠道的客户数据和内容，并应用数据科学和机器学习来改进个性化体验的设计和交付。
 
@@ -38,11 +38,11 @@ Platform 中的客户数据将作为数据集存储，数据集由一个架构�
 
 您的CJA管理员已建立 [连接](/help/connections/create-connection.md) 到平台中的数据集。 然后他们建了 [数据视图](/help/data-views/data-views.md) 在这些关系中。 将数据视图视为类似于虚拟报表包的视图。 数据视图是报告Customer Journey Analytics的基础。 报表包的概念已不复存在。
 
-## 报表包
+## 报表包 {#report-suites}
 
 您可以通过Adobe Analytics源连接器或Web SDK将报表包数据引入Experience Platform，尤其是当您的组织仍在Adobe Analytics平台上并添加CJA/AEP时。 您通常会源使用Analytics架构的特定于报表包的数据集。
 
-## （虚拟）报表包现在为“数据视图”
+## （虚拟）报表包现在为“数据视图” {#data-views}
 
 [!UICONTROL 数据视图] 采用虚拟报表包当前存在的概念，并将其扩展到 [对数据启用其他控制](/help/data-views/create-dataview.md) 由连接提供。 这可以配置时区和会话超时间隔。 您还可以动态地对各个维度应用归因和到期属性。 请注意，这些量度会追溯应用于所有数据。
 
@@ -54,7 +54,7 @@ Platform 中的客户数据将作为数据集存储，数据集由一个架构�
 
 * 熟悉许多 [数据视图用例](/help/data-views/data-views-usecases.md).
 
-## 不再有eVar和prop
+## eVar和prop
 
 [!UICONTROL Customer Journey Analytics] 中不再存在传统 Adobe Analytics 意义上的 [!UICONTROL eVar]、[!UICONTROL 属性]和[!UICONTROL 事件]。您有无限的架构元素（维度、量度、列表字段）。因此，您在数据收集过程中使用的所有属性设置现在都会在查询时应用。您的CJA管理员可以创建数据视图
 
