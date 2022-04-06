@@ -4,10 +4,10 @@ description: 在多个数据集中重新生成访客 ID 的键值，以对访客
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '1154'
-ht-degree: 100%
+source-git-commit: 16ebf5672099b0cd0c5e4dafd577f175370fa9b5
+workflow-type: tm+mt
+source-wordcount: '1196'
+ht-degree: 96%
 
 ---
 
@@ -43,6 +43,8 @@ ht-degree: 100%
 >[!IMPORTANT]
 >
 >请注意，对全局事件数据集架构的任意更改还必须应用到新拼接的数据集架构中，否则这会断开拼接的数据集。
+>
+>此外，如果删除源数据集，则拼合的数据集将停止处理，并被系统删除。
 
 跨渠道分析是一项具有突破性的强大功能，但其使用方式存在限制。
 
@@ -56,6 +58,7 @@ ht-degree: 100%
 * 临时 ID 字段应仅包含一种类型的 ID（即 ID 仅来自一个命名空间）。例如，临时 ID 字段不应包含登录 ID 和电子邮件 ID 的组合。
 * 如果对于同一持久 ID 发生了多个具有同一时间戳的事件，但临时 ID 字段中有多个不同的值，则基于字段的拼接将根据字母顺序进行选择。因此，如果持久 ID A 具有时间戳相同的两个事件，其中一个事件指定 Bob，而另一个指定 Ann，则基于字段的拼接将选择 Ann。
 * 跨渠道分析跟踪每个持久 ID 值达 1 年（TTL = 1 年）。如果设备已超过一年没有活动，后又再次开始活动，则新事件将与匿名人员关联，直到该用户被重新识别（例如通过新的登录）。
+* 如果多个人共享了某个设备，且用户之间的过渡总数超过50.000，则CCA会停止拼合该设备的数据。
 
 
 ## 启用跨渠道分析
