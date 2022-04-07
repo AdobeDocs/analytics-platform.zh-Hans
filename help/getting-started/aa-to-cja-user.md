@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 3af757fd311d7a92e56aa9ce5939dc3db8dcf6fa
+source-git-commit: 570fb36de0ed81f001ed6115e73d1d4347f368ec
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 17%
+source-wordcount: '1280'
+ht-degree: 21%
 
 ---
 
@@ -38,9 +38,21 @@ Platform 中的客户数据将作为数据集存储，数据集由一个架构�
 
 您的CJA管理员已建立 [连接](/help/connections/create-connection.md) 到平台中的数据集。 然后他们建了 [数据视图](/help/data-views/data-views.md) 在这些关系中。 将数据视图视为类似于虚拟报表包的视图。 数据视图是报告Customer Journey Analytics的基础。 报表包的概念已不复存在。
 
+## 连接
+
+通过建立连接，Analytics管理员可以集成 [!DNL Adobe Experience Platform] into [!UICONTROL 工作区]. 为了报告 [!DNL Experience Platform] 数据集，您必须首先在 [!DNL Experience Platform] 和[!UICONTROL 工作区]中的数据集之间建立连接。
+
+以下是一段视频概述：
+
+>[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12&learn=on)
+
 ## 报表包 {#report-suites}
 
-您可以通过Adobe Analytics源连接器或Web SDK将报表包数据引入Experience Platform，尤其是当您的组织仍在Adobe Analytics平台上并添加CJA/AEP时。 您通常会源使用Analytics架构的特定于报表包的数据集。
+如果贵组织仍在Adobe Analytics平台上并添加CJA/AEP，则可以通过Adobe Analytics源连接器或Web SDK将报表包数据引入Experience Platform。 您通常会源使用Analytics架构的特定于报表包的数据集。
+
+但是，报表包不再是在CJA中报告的基础 —  [数据视图](/help/data-views/data-views.md) 。 有关数据视图的更多信息，请参阅下面的部分。
+
+可以在Experience Platform中组合来自多个数据集的现有实施。 基于这些数据集的连接和数据视图可以合并之前存在于单独报表包中的数据。
 
 ## （虚拟）报表包现在为“数据视图” {#data-views}
 
@@ -56,7 +68,7 @@ Platform 中的客户数据将作为数据集存储，数据集由一个架构�
 
 ## eVar和prop
 
-[!UICONTROL Customer Journey Analytics] 中不再存在传统 Adobe Analytics 意义上的 [!UICONTROL eVar]、[!UICONTROL 属性]和[!UICONTROL 事件]。您有无限的架构元素（维度、量度、列表字段）。因此，您在数据收集过程中使用的所有属性设置现在都会在查询时应用。您的CJA管理员可以创建数据视图
+[!UICONTROL Customer Journey Analytics] 中不再存在传统 Adobe Analytics 意义上的 [!UICONTROL eVar]、[!UICONTROL 属性]和[!UICONTROL 事件]。您有无限的架构元素（维度、量度、列表字段）。因此，您在数据收集过程中使用的所有属性设置现在都会在查询时应用。
 
 **您需要执行的操作**:
 
@@ -82,29 +94,30 @@ Platform 中的客户数据将作为数据集存储，数据集由一个架构�
 * 如果要将Adobe Analytics计算量度移动到Customer Journey Analytics，请查看 [此视频](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=zh-Hans).
 * 否则，请在Customer Journey Analytics中重新创建计算量度。
 
-
-## 跨报表包数据
-
-可以在Experience Platform中组合来自多个数据集的现有实施。 基于这些数据集的连接和数据视图可以合并之前存在于单独报表包中的数据。
-
-**您需要执行的操作**:
-
 ## 会话和变量持久性设置
 
 [!UICONTROL Customer Journey Analytics] 在报告时应用所有这些设置，这些设置现在位于 [数据视图](/help/data-views/component-settings/persistence.md). 对这些设置所做的更改现在具有可回溯性，您可以使用多个数据视图来拥有多个版本！
 
-**您需要执行的操作**:
-
 ## 分类现在为“查找数据集”
 
-
+查找数据集用于查找在“事件”或“配置文件”数据中找到的值或键。 例如，您可以上传将事件数据中的数字 ID 映射到产品名称的查找数据。有关示例，请参阅[此用例](/help/use-cases/b2b.md)。
 
 ## 客户属性现在为“用户档案数据集”
 
+配置文件数据集包含应用于 [!UICONTROL 事件] 数据。 例如，它允许您上传有关客户的CRM数据。 您可以选择想要包含的人员 ID。[!DNL Experience Platform] 中定义的每个数据集，都拥有自己定义的一个或多个人员 ID 集，例如 Cookie ID、拼合 ID、用户 ID、跟踪代码等。
+
+## 标识
+
+CJA扩展了ECID之外的身份概念，以包含您要使用的任何ID，包括客户ID、Cookie ID、拼合ID、用户ID、跟踪代码等。 跨数据集使用通用命名空间ID，或使用 [跨渠道分析](/help/connections/cca/overview.md) 可帮助将不同数据集中的人员关联在一起。 在CJA中设置工作区项目的任何用户都需要了解跨数据集使用的ID。
+
+以下视频重点介绍了身份在Customer Journey Analytics中的使用：
+
+>[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 
 ## 容器已重命名
 
 您为 [创建的每个数据视图](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#containers).
+
 * **点击容器现在为“事件”容器**. [!UICONTROL 人员]容器包括访客在指定的时间范围内的每个会话和事件。
 * **访问容器现在为“会话”容器**. 通过[!UICONTROL 会话]容器可以识别页面交互、营销活动或特定会话的转化。
 * **现在，访客容器为 [!UICONTROL 人员] 容器**. [!UICONTROL 人员]容器包括访客在指定的时间范围内的每个会话和事件。
@@ -112,7 +125,6 @@ Platform 中的客户数据将作为数据集存储，数据集由一个架构�
 **您需要执行的操作**:
 
 您可以选择重命名任何容器以符合贵组织的需求。
-
 
 ## `Uniques Exceeded` 限制
 

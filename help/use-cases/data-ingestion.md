@@ -4,7 +4,7 @@ description: 了解将数据摄取到 Customer Journey Analytics 的不同方式
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 06ef2da0f66b1f8fa1597a618d64974cb6c320ce
+source-git-commit: 570fb36de0ed81f001ed6115e73d1d4347f368ec
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 89%
@@ -19,7 +19,7 @@ ht-degree: 89%
 
 此工作流利用 Adobe Analytics Data Connector，会因您选择 DTM 还是 Launch 作为标签管理器而有所不同。
 
-### 通过Adobe Experience Platform中的标记（以前称为Launch）
+### 通过Adobe Experience Platform中的标记(以前称为 [!UICONTROL Launch])
 
 1. [创建数据层](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/data-layer.html?lang=zh-Hans)（如果尚未创建）。数据层是网站上 JavaScript 对象的框架，其中包含实施中使用的所有变量值。它让您可以在实施中拥有更大的控制力且更便于维护。
 1. 使用 [Adobe Experience Platform标记](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=zh-Hans) 要在您的网站上实施代码以收集数据（如果尚未实施）。 此标签管理解决方案允许您在部署Analytics代码的同时满足其他标记要求。 标记提供了与其他解决方案和产品的集成，并允许您部署自定义代码。 无需依赖组织中的开发团队，也可以完成以下所有任务，进而更新网站上的代码。
