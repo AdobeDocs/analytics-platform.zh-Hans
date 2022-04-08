@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 59355c37d7bae28c1de52cd12ae63c37cdd09eb6
+source-git-commit: 4f7f0b48a15065fb13e5de484946f90fd17e7332
 workflow-type: tm+mt
-source-wordcount: '1316'
-ht-degree: 81%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -110,6 +110,8 @@ Adobe Analytics 区段（在 CJA 中称为[!UICONTROL 过滤器]）和计算量�
 * 如果您在Adobe Analytics中定义了自定义日历，则将具有类似的 [自定义日历功能](/help/components/date-ranges/custom-date-ranges.md) 在CJA中。 您需要确保正确定义日历。
 
 * 在 Customer Journey Analytics 中，您可以定义自定义访问/会话超时，以及定义将启动新会话的量度。您可以创建具有不同会话定义的数据视图，以获得超越 Adobe Analytics 的洞察力。此功能可能对移动数据集特别有益。
+
+* 考虑为用户提供数据字典，或扩展SDR以包含架构元素的Experience Platform字段名称。
 
 ## 后续步骤
 
