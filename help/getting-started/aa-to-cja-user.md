@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 64ba233212fa6bfc1d63c122e1f8dcebe6735f39
+source-git-commit: 6981a7a68d8a517f6b842cb36382f543c80f4582
 workflow-type: tm+mt
-source-wordcount: '1398'
+source-wordcount: '1460'
 ht-degree: 6%
 
 ---
@@ -36,7 +36,7 @@ CJA中的几项功能已重命名和重新设计，以符合行业标准。 一�
 
 CJA从Adobe Experience Platform获取数据。 Experience Platform让您能够集中和标准化来自任何系统或渠道的客户数据和内容，并应用数据科学和机器学习来改进个性化体验的设计和交付。
 
-Experience Platform中的客户数据将作为数据集存储，数据集由一个架构和批量数据组成。 有关 Platform 的更多详细信息，请参阅 [Adobe Experience Platform 体系架构概述](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en)。
+Experience Platform中的客户数据将作为数据集存储，数据集由 [模式](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=zh-Hans) 和批量数据。 有关 Platform 的更多详细信息，请参阅 [Adobe Experience Platform 体系架构概述](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en)。
 
 您的CJA管理员已建立 [连接](/help/connections/create-connection.md) 到Experience Platform中的数据集。 然后，他们构建 [数据视图](/help/data-views/data-views.md) 使用这些连接。 数据视图在概念上与虚拟报表包类似，是CJA中报表的基础。 由于Experience Platform为报表收集所有数据，因此报表包不再作为数据容器存在。
 
@@ -58,7 +58,9 @@ Adobe提供了多种将数据导入Adobe Experience Platform的方法，包括�
 
 ## 对eVar和prop概念的更改
 
-的概念 [!UICONTROL eVar], [!UICONTROL prop]和 [!UICONTROL 事件] 在传统Adobe Analytics中， [!UICONTROL Customer Journey Analytics]. 提供了无限的架构元素，包括维度、量度和列表字段。 这些量度可映射到无限的架构元素，包括Experience Platform中的维度、量度和列表字段。 现在，在Adobe Analytics中处理规则后应用的所有访问和归因设置都会在查询时Customer Journey Analytics。
+的概念 [!UICONTROL eVar], [!UICONTROL prop]和 [!UICONTROL 事件] 在传统Adobe Analytics中， [!UICONTROL Customer Journey Analytics]. 在Adobe Analytics中，eVar和prop存储了内容、客户、营销活动等的描述。 和事件会计入收入、订阅或产生的商机。 Customer Journey Analytics会保留这两种类型的数据，您可以以相同的方式访问它们 — 分别从Analysis Workspace的左边栏中的“Dimension”或“量度”下。
+
+在CJA中，可以使用无限的架构元素，包括维度、量度和列表字段。 这些量度可映射到无限的架构元素，包括Experience Platform中的维度、量度和列表字段。 现在，在Adobe Analytics中处理规则后应用的所有访问和归因设置都会在查询时Customer Journey Analytics。
 
 凭借这种灵活性，您可能会遇到以下情况：单个架构字段既可用作维度，也可用作量度，以支持不同的跟踪需求。
 
