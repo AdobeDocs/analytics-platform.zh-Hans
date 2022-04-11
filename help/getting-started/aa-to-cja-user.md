@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 4f7f0b48a15065fb13e5de484946f90fd17e7332
+source-git-commit: 64ba233212fa6bfc1d63c122e1f8dcebe6735f39
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1398'
+ht-degree: 6%
 
 ---
 
@@ -60,6 +60,8 @@ Adobe提供了多种将数据导入Adobe Experience Platform的方法，包括�
 
 的概念 [!UICONTROL eVar], [!UICONTROL prop]和 [!UICONTROL 事件] 在传统Adobe Analytics中， [!UICONTROL Customer Journey Analytics]. 提供了无限的架构元素，包括维度、量度和列表字段。 这些量度可映射到无限的架构元素，包括Experience Platform中的维度、量度和列表字段。 现在，在Adobe Analytics中处理规则后应用的所有访问和归因设置都会在查询时Customer Journey Analytics。
 
+凭借这种灵活性，您可能会遇到以下情况：单个架构字段既可用作维度，也可用作量度，以支持不同的跟踪需求。
+
 ## 区段概念的更改
 
 Adobe已将“区段”组件重命名为“过滤器”，以更好地符合行业标准，并更好地区分Adobe Experience Platform中的区段。
@@ -100,10 +102,10 @@ Adobe已将“区段”组件重命名为“过滤器”，以更好地符合行
 
 ## 更改了Adobe识别访客的方式
 
-CJA扩展了ECID之外的身份概念，以包含您要使用的任何ID，包括客户ID、Cookie ID、拼合ID、用户ID、跟踪代码等。 跨数据集使用通用命名空间ID，或使用 [跨渠道分析](/help/connections/cca/overview.md) 可帮助将不同数据集中的人员关联在一起。 在CJA中设置工作区项目的任何用户都必须了解跨数据集使用的ID。 请观看以下视频，重点介绍在Customer Journey Analytics中使用身份的方法：
+CJA扩展了ECID之外的身份概念，以包含您要使用的任何ID，包括客户ID、Cookie ID、拼合ID、用户ID、跟踪代码等。 跨数据集使用通用命名空间ID，或使用 [跨渠道分析](/help/connections/cca/overview.md) 可帮助将不同数据集中的人员关联在一起。 在CJA中设置工作区项目的任何用户都必须了解跨数据集使用的ID。 请观看以下视频，重点介绍CJA中标识的使用：
 
 >[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 
 ## 对低流量维度项目概念的更改
 
-在传统Adobe Analytics中，接收过多唯一值的变量会开始在 [!UICONTROL 低流量]. CJA对高基数字段有许多限制。 对报表架构所做的更改允许Analysis Workspace报告更多独特维度项目。 请参阅 [长尾](../analysis-workspace/workspace-faq/long-tail.md) 有关CJA如何优化具有许多唯一值的维度报表的更多信息。
+在传统Adobe Analytics中，接收过多唯一值的变量会开始在 [!UICONTROL 低流量]. CJA对高基数字段的限制较少。 对报表架构所做的更改允许Analysis Workspace报告更多独特维度项目。 请参阅 [长尾](../analysis-workspace/workspace-faq/long-tail.md) 有关CJA如何优化具有许多唯一值的维度报表的更多信息。
