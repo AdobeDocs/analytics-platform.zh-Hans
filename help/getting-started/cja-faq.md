@@ -4,7 +4,7 @@ description: Customer Journey Analytics — 常见问题解答。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 5bee04bcb837552364f4852df09b1da2931f5dfe
+source-git-commit: 3c353d668bbf1f0d276edfa0d3491969a1a9dfeb
 workflow-type: tm+mt
 source-wordcount: '2286'
 ht-degree: 85%
@@ -57,7 +57,7 @@ ht-degree: 85%
 
 | 问题 | 回答 |
 | --- | --- |
-| 在 [!UICONTROL Adobe Experience Platform] 上，[!UICONTROL Customer Journey Analytics] 的预期滞后时间是多少？ | <ul><li>实时数据或事件：当数据在 AEP 中可用后，在 90 分钟内处理和摄取。（批次大小 > 500 万行：超过 90 分钟。）</li><li>少量回填 - 例如，查找 100 万行的数据集：24 小时内<li>大量回填 - 例如，5000 亿行：30 天</li></ul> |
+| 在 [!UICONTROL Adobe Experience Platform] 上，[!UICONTROL Customer Journey Analytics] 的预期滞后时间是多少？ | <ul><li>实时数据或事件：当数据在 AEP 中可用后，在 90 分钟内处理和摄取。（批次大小 > 500 万行：超过 90 分钟。）</li><li>小型回填 — 例如，一个1000万行的查询数据集：7天内<li>大量回填 - 例如，5000 亿行：30 天</li></ul> |
 
 ## 5.为 [!UICONTROL 连接] 数据保留 {#data-retention}
 
