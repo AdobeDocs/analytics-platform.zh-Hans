@@ -4,10 +4,10 @@ description: Customer Journey Analytics 术语表。
 exl-id: 7f8aac93-0103-4ead-b25b-3d9994a271af
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 04ceeb9e9a048a224ea957ad42bc54cbd4b3f249
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 97%
+source-wordcount: '336'
+ht-degree: 98%
 
 ---
 
@@ -26,4 +26,4 @@ ht-degree: 97%
 
 ## Adobe Experience Platform 术语表
 
-Adobe Experience Platform 实现了整个企业内的数据和内容的标准化，从而为实时使用者用户档案提供强大动力，支持数据科学，加速内容处理速度以推动客户历程中的体验个性化。有关更多信息，请参阅 [Adobe Experience Platform 术语表](https://experienceleague.adobe.com/docs/experience-platform/landing/glossary.html?lang=en)。
+Adobe Experience Platform 实现了整个企业内的数据和内容的标准化，从而为实时使用者用户档案提供强大动力，支持数据科学，加速内容处理速度以推动客户历程中的体验个性化。有关更多信息，请参阅 [Adobe Experience Platform 术语表](https://experienceleague.adobe.com/docs/experience-platform/landing/glossary.html)。

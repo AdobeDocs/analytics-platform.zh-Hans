@@ -4,10 +4,10 @@ title: 快速筛选器
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: a1bb56c5a7e6d3bb6b59e2cf3448409d85ec2efa
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 77%
+source-wordcount: '1047'
+ht-degree: 76%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 77%
 
 可在项目中创建快速筛选器以规避完整版[筛选器生成器](/help/components/filters/create-filters.md)的复杂操作。快速筛选器
 
-* 应用为 [仅限项目的过滤器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html?lang=en#project-only).
+* 应用为 [仅限项目的过滤器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html#project-only).
 * 允许有最多 3 条规则
 * 不容纳嵌套容器或顺序规则。
 
@@ -27,7 +27,7 @@ ht-degree: 77%
 
 ## 先决条件 {#prereqs}
 
-任何人都可以创建快速过滤器。 但是，您需要在 [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=zh-Hans#analytics-tools) 以保存快速过滤器，或在过滤器生成器中将其打开。
+任何人都可以创建快速过滤器。 但是，您需要在 [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html#analytics-tools) 以保存快速过滤器，或在过滤器生成器中将其打开。
 
 ## 创建快速筛选器 {#create}
 
@@ -39,7 +39,7 @@ ht-degree: 77%
 | --- | --- |
 | [!UICONTROL 名称] | 筛选器的默认名称为该筛选器中的规则名称的组合。可以将筛选器重命名为更友好的名称。 |
 | [!UICONTROL 包括/排除] | 可在筛选器定义中包括或排除组件，但不得既包括又排除。 |
-| [!UICONTROL “点击”/“访问”/“访客”容器] | 快速筛选器仅包括一个[筛选器容器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers)，从中可在筛选器中包括（或从筛选器中排除）某个维度/指标/日期范围。[!UICONTROL 访客]包含访客在不同的访问和页面查看间专属的总体数据。通过[!UICONTROL 访问]容器可设置规则以根据访问划分访客的数据，而通过[!UICONTROL 点击]容器可根据个别页面查看划分访客信息。默认容器为[!UICONTROL 点击]。 |
+| [!UICONTROL “点击”/“访问”/“访客”容器] | 快速筛选器仅包括一个[筛选器容器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html#filter-containers)，从中可在筛选器中包括（或从筛选器中排除）某个维度/指标/日期范围。[!UICONTROL 访客]包含访客在不同的访问和页面查看间专属的总体数据。通过[!UICONTROL 访问]容器可设置规则以根据访问划分访客的数据，而通过[!UICONTROL 点击]容器可根据个别页面查看划分访客信息。默认容器为[!UICONTROL 点击]。 |
 | [!UICONTROL 组件] (Dimension/量度/日期范围) | 通过添加组件（维度、量度、日期范围或维度值）可定义最多 3 条规则。有 3 种方法可以找到正确的组件：<ul><li>只需开始打字，[!UICONTROL 快速筛选器生成器]即自动查找相应的组件。</li><li>使用下拉列表查找组件。</li><li>从左边栏中拖放组件。</li></ul> |
 | [!UICONTROL 运算符] | 使用下拉菜单查找标准运算符和[!UICONTROL 非重复计数]运算符。请参阅[筛选器运算符](operators.md)。 |
 | 加号 (+) | 添加另一条规则。 |

@@ -3,10 +3,10 @@ title: 归因最佳实践
 description: 确定归因模型的最佳实践是什么？
 feature: Attribution
 exl-id: d612dc79-24e4-4d50-bccd-dfb58328bd4e
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '393'
-ht-degree: 100%
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 97%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 100%
 
 **示例 2**
 
-您的假设可能是：“在我们的行业（例如，旅游业）中，归因时段为 60 或 90 天，而不是 30 天，因为客户在购买产品之前会进行大量研究。”然后，您会将[回溯时段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=en#lookback-windows)更改为 90 天。
+您的假设可能是：“在我们的行业（例如，旅游业）中，归因时段为 60 或 90 天，而不是 30 天，因为客户在购买产品之前会进行大量研究。”然后，您会将[回溯时段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html#lookback-windows)更改为 90 天。
 
 ## 步骤 3：使用算法归因
 

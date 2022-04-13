@@ -4,10 +4,10 @@ description: '阐述如何利用 Customer Journey Analytics (CJA) 将您的 Goog
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '1178'
-ht-degree: 100%
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+workflow-type: tm+mt
+source-wordcount: '1170'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe 数据模型最强大的地方之一是，它允许您将所有客户互�
 
 * 访问 Adobe Experience Platform
 * 访问通用 Google Analytics（Google Analytics 360 版本）或 Google Analytics 4（免费版本或 Google Analytics 360 版本）
-* 访问 Customer Journey Analytics以及它的[管理员权限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=zh-Hans#admin-access-permissions)。
+* 访问 Customer Journey Analytics以及它的[管理员权限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html#admin-access-permissions)。
 
 将 Google Analytics 数据引入 Adobe Experience Platform 中的方式取决于您使用的是哪个 Google Analytics 版本：
 
@@ -97,7 +97,7 @@ FROM
 
 >[!VIDEO](https://video.tv.adobe.com/v/332676)
 
-您可以将 GA 事件数据映射到以前创建的现有数据集，或者使用所选择的任何 XDM 架构创建新的数据集。选择好架构后，Experience Platform 则应用机器学习，自动将 Google Analytics 数据中的每个字段预映射到您的 [XDM 架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans#ui)。
+您可以将 GA 事件数据映射到以前创建的现有数据集，或者使用所选择的任何 XDM 架构创建新的数据集。选择好架构后，Experience Platform 则应用机器学习，自动将 Google Analytics 数据中的每个字段预映射到您的 [XDM 架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html#ui)。
 
 ![](assets/schema-map.png)
 
@@ -141,7 +141,7 @@ FROM
 
 在此示例中，已定义“客户创建”触发器，其中 `pageUrl equals account-creation`。通过在此触发器中添加一些信息，您可以确保当用户验证成功并且客户创建页面加载时，数据将同时发送到 Google Analytics 和 AEP。
 
-您还可以参考[数据摄取和 Google Tag Manager](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module9/data-ingestion-using-google-tag-manager-and-google-analytics.html?lang=zh-Hans#module9)。
+您还可以参考[数据摄取和 Google Tag Manager](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module9/data-ingestion-using-google-tag-manager-and-google-analytics.html#module9)。
 
 有关说明，请观看此视频：
 
@@ -153,6 +153,6 @@ FROM
 
 ## 后续步骤
 
-* 根据包含 Google Analytics 数据的连接创建[数据视图](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-Hans#cja-dataviews)。
+* 根据包含 Google Analytics 数据的连接创建[数据视图](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#cja-dataviews)。
 
 * 在Workspace](/help/use-cases/ga-to-cja-reporting.md)中，进行一些令人惊叹的[分析。

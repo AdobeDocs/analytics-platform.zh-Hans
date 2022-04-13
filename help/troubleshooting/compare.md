@@ -4,10 +4,10 @@ description: 了解如何比较 Adobe Analytics 数据和 Customer Journey Analy
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: bbeceb076e7f249f2c2b8f997bdf37f3dc839db8
-workflow-type: ht
-source-wordcount: '788'
-ht-degree: 100%
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+workflow-type: tm+mt
+source-wordcount: '782'
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ## 步骤 1：在 Adobe Analytics 中运行发生次数指标
 
-[发生次数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=zh-Hans)指标显示设置或持久化某个给定维度所经历的点击次数。
+[发生次数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html)指标显示设置或持久化某个给定维度所经历的点击次数。
 
 1. 在“Analytics”>“[!UICONTROL 工作区]”中，将要报告的日期范围作为一个维度拖入到一个[!UICONTROL 自由格式]表格中。
 
@@ -63,9 +63,9 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
         ORDER BY Day; 
 ```
 
-1. 在 [Analytics 数据馈送](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=zh-Hans)中，从原始数据确认是否 Analytics 源连接器已丢弃某些行。
+1. 在 [Analytics 数据馈送](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html)中，从原始数据确认是否 Analytics 源连接器已丢弃某些行。
 
-   [Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)在将数据转换到 XDM 架构的过程中可能会丢弃一些行。整个行不适合进行转换的原因可能有多种。如果以下任何 Analytics 字段具有这些值，则将丢弃整个行。
+   [Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)在将数据转换到 XDM 架构的过程中可能会丢弃一些行。整个行不适合进行转换的原因可能有多种。如果以下任何 Analytics 字段具有这些值，则将丢弃整个行。
 
    | Analytics 字段 | 导致发生丢弃的值 |
    | --- | --- |

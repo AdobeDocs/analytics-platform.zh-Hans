@@ -4,9 +4,9 @@ description: 数据视图指定您要如何解释数据在 CJA 连接中的各�
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 9f7b98084a7ec5d2abe89e00f0a6567cb271e80a
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1045'
 ht-degree: 100%
 
 ---
@@ -55,7 +55,7 @@ Customer Journey Analytics 中的 Workspace 项目均基于数据视图。
 ## 数据视图先决条件 {#prerequisites}
 
 * 在创建数据视图之前，您需要[设置一个或多个与 Experience Platform 数据集的连接](/help/connections/create-connection.md)。
-* 要创建或管理数据视图，您需要[在 Adobe Admin Console 中拥有一组权限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=zh-Hans#admin-access-permissions)。
+* 要创建或管理数据视图，您需要[在 Adobe Admin Console 中拥有一组权限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html#admin-access-permissions)。
 
 ## 您可以在 Workspace 中覆盖的数据视图设置 {#settings-override}
 

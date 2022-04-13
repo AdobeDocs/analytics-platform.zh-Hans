@@ -4,10 +4,10 @@ title: Customer Journey Analytics登陆页面
 role: User, Admin
 feature: CJA Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 998cc9e5f8d2ffd3964078dc389f55bb573063b9
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 73%
+source-wordcount: '1077'
+ht-degree: 76%
 
 ---
 
@@ -43,7 +43,7 @@ Customer Journey Analytics登陆页面提供了项目经理主页和学习部分
 | **[!UICONTROL 新建]**&#x200B;模式恢复 | 当在工作区中单击&#x200B;**[!UICONTROL 新建]**&#x200B;时，您可再次在[!UICONTROL 空白项目]和[!UICONTROL 空白移动记分卡]之间进行选择。您也可以从公司创建的任何模板中进行选择。 |
 | [!UICONTROL 显示更少/更多内容] | 在不显示和显示横幅之间切换：![顶部横幅](assets/top-banner.png) |
 | [!UICONTROL 空白项目] | 创建一个空白[工作区项目](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans)供您填充。 |
-| [!UICONTROL 空白移动记分卡] | 创建一个空白[移动记分卡](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html?lang=zh-Hans)供您填充。 |
+| [!UICONTROL 空白移动记分卡] | 创建一个空白[移动记分卡](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html)供您填充。 |
 | [!UICONTROL 打开培训教程] | 打开工作区培训教程，它会指导新用户逐步构建项目。 |
 | [!UICONTROL 打开发行说明] | 打开最新的Adobe Experience Cloud发行说明。 |
 | 过滤器图标 | 您可以按标记、报告包、所有者、类型和其他过滤器（“我的”、“已与我共享”、“收藏”和“已批准”）进行过滤 |
@@ -64,7 +64,7 @@ Customer Journey Analytics登陆页面提供了项目经理主页和学习部分
 | [!UICONTROL 已计划] | 设置为 [!UICONTROL 开] 计划项目或 **[!UICONTROL 关闭]** 当它不是时。 点击 **[!UICONTROL 开启]** 链接，您可以看到有关计划项目的信息。如果您是项目所有者，也可[编辑项目计划](/help/analysis-workspace/curate-share/t-schedule-report.md)。 |
 | [!UICONTROL 项目 ID] | 项目ID可用于调试项目。 |
 | [!UICONTROL 最长的日期范围] | 较长的日期范围会增加项目复杂性，并可能会增加处理和加载时间。 |
-| [!UICONTROL 查询次数] | 项目加载时向Analytics发出的请求总数。 项目查询的数量越多，项目复杂性就越高，并且可能会增加处理和加载时间。 此数据仅在加载项目或发送计划项目后才可用。 |
+| [!UICONTROL 查询次数] | 项目加载时向Analytics发出的请求总数。 较多的项目查询次数会增加项目的复杂性，并可能增加处理和加载时间。此数据仅在加载项目或发送计划项目后可用。 |
 | 自定义表格图标 | （右上角）如果要在项目列表中添加或移除列，可以通过选择或取消选择列来实现。 |
 | &lt;（“返回”按钮） | 工作区项目中的此按钮将允许您返回到最近的登陆页面配置。 您离开登陆页面时的任何页面配置将在您返回时保留。 |
 

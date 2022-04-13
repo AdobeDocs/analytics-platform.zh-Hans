@@ -4,10 +4,10 @@ description: 在 Customer Journey Analytics 中就 Google Analytics 数据给出
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '809'
-ht-degree: 100%
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+workflow-type: tm+mt
+source-wordcount: '807'
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 100%
 我们的做法是
 
 * 使用计算量度筛选数据，只查看最终导致呼叫中心通话的会话。
-* 使用 CJA 的 [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=zh-Hans#cja-workspace) 中的“参与率”模型。
+* 使用 CJA 的 [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html#cja-workspace) 中的“参与率”模型。
 
 您可以轻松地看到哪些页面最常参与以呼叫结束的会话。您可以看到，“购物车”和“结账信息”页面驱动了大部分呼叫。由于您还包含了 Firebase 移动应用程序数据，所以您甚至可以看到生成呼叫的页面错误和应用程序崩溃。如果您想要提供良好的 Web 和移动应用程序体验，这是一个非常重要的数据点。
 
