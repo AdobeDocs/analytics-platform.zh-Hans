@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+source-git-commit: b7a68f7cbcca74c1eaa5f14c4a3aa2652afb248d
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 81%
+source-wordcount: '713'
+ht-degree: 79%
 
 ---
 
@@ -17,6 +17,7 @@ CJA 文档自创建以来进行了以下更新。
 
 | 日期 | 更新描述 |
 | --- | --- |
+| 2022 年 4 月 | 相关文档 [维度子字符串](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html). |
 | 2022 年 4 月 | 新建 [适用于Adobe Analytics用户的CJA用户指南](/help/getting-started/aa-to-cja-user.md). |
 | 2022 年 3 月 | 新建 [CJA批注API文档](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/). |
 | 2022 年 3 月 | 有关 [工作区中的注释](/help/components/annotations/overview.md). |
