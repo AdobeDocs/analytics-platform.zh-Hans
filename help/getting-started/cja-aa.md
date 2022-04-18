@@ -4,10 +4,10 @@ description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+source-git-commit: 5799d8beec534bc6ec76b7fd01a7dd2524b28fef
 workflow-type: tm+mt
 source-wordcount: '1310'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -23,6 +23,7 @@ ht-degree: 97%
 | Attribution IQ | 全面支持 |
 | 计算量度 | 全面支持；请注意，传统 Analysis Workspace 中的任何现有计算量度都不会移植到 CJA。 |
 | 日历事件 | 全面支持. 日历事件已实施为 [批注](/help/components/annotations/overview.md) 中。 |
+| 分类规则生成器 | 完全支持。 已调用 [子字符串](/help/data-views/component-settings/substring.md) 在CJA中。 在报表时使用字符串操作，而不是查找数据集。 |
 | 跨设备/跨渠道拼接 | 全面支持；请参阅[跨渠道分析](/help/connections/cca/overview.md)。 |
 | CSV 下载 | 全面支持 |
 | 自定义日历 | 全面支持 |
@@ -80,7 +81,6 @@ ht-degree: 97%
 | 功能 | 注释 |
 | --- | --- |
 | 警报 | 计划将会提供支持。 |
-| 分类规则生成器 | 在 CJA 中的工作方式略有不同，在报告时使用字符串操作，而不是查找数据集。 |
 | 贡献分析 | 计划将会提供支持。 |
 | Data Warehouse 报告（100% 行导出） | 计划从 Analysis Workspace 界面提供支持。Adobe Experience Platform [[!UICONTROL 查询服务]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans)还为 CJA 中的这些用例提供接口。 |
 | 通过设备图形进行 ID 拼合 | 计划将会提供支持。 |
