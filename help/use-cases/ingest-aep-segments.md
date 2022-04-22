@@ -3,15 +3,19 @@ title: 将AEP受众摄取到Customer Journey Analytics
 description: 说明如何将AEP受众摄取到Customer Journey Analytics中以供进一步分析。
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: cd1d639ad698c188c506881b2b17103b0a3559f2
+source-git-commit: ed01fd0899cac21fff156e0c31dc2b52ff7c8cca
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '600'
 ht-degree: 2%
 
 ---
 
 
 # 将AEP受众摄取到Customer Journey Analytics(CJA)
+
+>[!NOTE]
+>
+>本主题正在构建中。
 
 (AEP文档经理称，“Brandon， fyi， &#39;Unified Profile&#39;”是“实时客户资料”的过时术语。 在AEP文档集中，您找不到任何UP文档。)
 
@@ -61,7 +65,7 @@ Adobe Experience Platform [实时客户资料](https://experienceleague.adobe.co
 * `audienceMembershipIdList` 字符串字段：受众ID
 * 为受众添加易记名称(`audienceMembershipIdName`)，例如
 
-   ![友好受众名称](assets/audience-name)
+   ![友好受众名称](assets/audience-name.png)
 
 ## 步骤5:在CJA中创建与此配置文件数据集的连接
 
