@@ -4,10 +4,10 @@ description: 说明如何将AEP受众摄取到Customer Journey Analytics中以�
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
-source-git-commit: 490a754270922481ebd893514c530a0667d9d6e4
+source-git-commit: 9c4869bb632f3d69d8704009744246b975cb5c4a
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 1%
+source-wordcount: '1049'
+ht-degree: 2%
 
 ---
 
@@ -43,7 +43,9 @@ RTCP中的受众可能来自各种来源。 选择一个或多个要摄取到CJA
 
 ## 步骤4:编辑导出输出
 
-需要将导出作业的结果转换为单独的用户档案数据集，才能将其摄取到CJA中。  此转换可通过AEP查询服务或您选择的其他转换工具完成。  在CJA中，我们只需要配置文件ID（与CJA中的人员ID匹配）和一个或多个受众ID即可进行报告。 但是，标准导出作业包含更多数据，因此我们需要编辑此输出以删除无关数据，并移动一些内容。  此外，您还需要先创建架构/数据集，然后再将转换后的数据添加到该架构/数据集。
+需要将导出作业的结果转换为单独的用户档案数据集，才能将其摄取到CJA中。  此转换可通过 [AEP查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en)，或您选择的其他转换工具。 在CJA中，我们只需要配置文件ID（与CJA中的人员ID匹配）和一个或多个受众ID即可进行报告。
+
+但是，标准导出作业包含更多数据，因此我们需要编辑此输出以删除无关数据，并移动一些内容。  此外，您还需要先创建架构/数据集，然后再将转换后的数据添加到该架构/数据集。
 
 以下是配置文件并集数据集中的导出输出示例， **之前** 任何编辑：
 
@@ -71,9 +73,7 @@ RTCP中的受众可能来自各种来源。 选择一个或多个要摄取到CJA
 
 ## 步骤5:将此配置文件数据集添加到CJA中的现有连接
 
-您可以创建新连接，但大多数客户都希望将其添加到现有连接。 受众ID可“丰富”CJA中的现有数据。
-
-[创建连接](/help/connections/create-connection.md)
+你可以 [创建新连接](/help/connections/create-connection.md)，但大多数客户将希望将配置文件数据集添加到现有连接。 受众ID可“丰富”CJA中的现有数据。
 
 ## 步骤6:修改现有（或新建）CJA数据视图
 
