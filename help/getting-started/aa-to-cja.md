@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1318'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 79%
 
 ### 2. 调整您的变量 {#variables}
 
-将Adobe Analytics数据转换为Customer Journey Analytics数据的最直接方法是 [全局报表包](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html) Experience Platform [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans). 此连接器可将您的Adobe Analytics变量直接映射到Experience Platform中的XDM架构和数据集，这反过来又可以轻松连接到Customer Journey Analytics。
+[](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html)[](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)
 
 完整的全局报表包可能并不总是适用于实施。如果您计划将多个报表包引入Customer Journey Analytics，您有2个选项：
 
@@ -107,7 +107,7 @@ Adobe Analytics 区段（在 CJA 中称为[!UICONTROL 过滤器]）和计算量�
 
 * 使用 CJA 数据视图的强大功能，您可以在 Customer Journey Analytics 中定义指标和维度时更加灵活。例如，您可以使用维度的值来定义度量。[了解详情](/help/data-views/data-views-usecases.md)
 
-* 如果您在Adobe Analytics中定义了自定义日历，则将具有类似的 [自定义日历功能](/help/components/date-ranges/custom-date-ranges.md) 在CJA中。 您需要确保正确定义日历。
+* [](/help/components/date-ranges/custom-date-ranges.md)您需要确保正确定义日历。
 
 * 在 Customer Journey Analytics 中，您可以定义自定义访问/会话超时，以及定义将启动新会话的量度。您可以创建具有不同会话定义的数据视图，以获得超越 Adobe Analytics 的洞察力。此功能可能对移动数据集特别有益。
 
