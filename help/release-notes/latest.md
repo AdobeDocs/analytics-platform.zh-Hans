@@ -4,9 +4,9 @@ description: 最新 CJA 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 source-git-commit: 70ca04d647645d6ba69f07110f0deced03bd0a77
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '244'
-ht-degree: 15%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 15%
 >
 >本页包含可能发生更改的预发行信息。
 
-**上次更新**:2022年4月19日
+**上次更新时间**：2022 年 4 月 19 日
 
 ## 主要功能
 
