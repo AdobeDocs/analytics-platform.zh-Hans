@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
 source-git-commit: 5799d8beec534bc6ec76b7fd01a7dd2524b28fef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1310'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 96%
 | Attribution IQ | 全面支持 |
 | 计算量度 | 全面支持；请注意，传统 Analysis Workspace 中的任何现有计算量度都不会移植到 CJA。 |
 | 日历事件 | 全面支持. 日历事件已实施为 [批注](/help/components/annotations/overview.md) 中。 |
-| 分类规则生成器 | 完全支持。 已调用 [子字符串](/help/data-views/component-settings/substring.md) 在CJA中。 在报表时使用字符串操作，而不是查找数据集。 |
+| 分类规则生成器 | 已调用 [子字符串](/help/data-views/component-settings/substring.md) 在CJA中。 在报表时使用字符串操作，而不是查找数据集。 |
 | 跨设备/跨渠道拼接 | 全面支持；请参阅[跨渠道分析](/help/connections/cca/overview.md)。 |
 | CSV 下载 | 全面支持 |
 | 自定义日历 | 全面支持 |
@@ -61,7 +61,7 @@ ht-degree: 96%
 | [!UICONTROL 设备]、[!UICONTROL 浏览器]、[!UICONTROL 反向链接]、[!UICONTROL 技术]维度 | 当 AEP 数据集包含特定 XDM 架构字段并符合 XDM Experience Event 类要求时，将自动包含这些维度。请参阅我们的文档，[了解通过 Analytics Source Connector 哪些 Analytics 变量受支持](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html)。对于未使用 Source Connector 将数据从 Adobe Analytics 填充到 CJA 中，而是使用 AEP Web SDK 数据收集的 CJA 客户，当前不支持基于设备查找的[!UICONTROL 设备]和维度，但将在不久的将来支持。 |
 | 登录、退出和花费时间维度和量度 | 受支持（现在“进入次数”和“退出次数”称为“会话启动次数”和“会话结束次数”），但计算方式略有不同。 |
 | eVar 持久性设置 | eVar 不再是 CJA 的一部分。但是，持久性设置现在是数据视图的一部分，且可用于所有维度。请记住，持久基于报表时间处理，而不是数据收集处理。数据视图中的纬度集限制为 90 天最大持久性，不支持无限持久性。 |
-| 地理分段维度 | 收集到 Adobe Analytics 的所有地理分段/地理位置通过 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) 流入 CJA。不使用 Analytics Source Connector 的实施（例如，依赖于 AEP Web SDK 进行数字数据收集的实施）不会自动执行全面的地理查找：支持国家和美国州，不支持城市和邮政编码。目前对美国以外的州/区域的支持有限或不支持。 |
+| 地理分段维度 | 收集到 Adobe Analytics 的所有地理分段/地理位置通过 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 流入 CJA。不使用 Analytics Source Connector 的实施（例如，依赖于 AEP Web SDK 进行数字数据收集的实施）不会自动执行全面的地理查找：支持国家和美国州，不支持城市和邮政编码。目前对美国以外的州/区域的支持有限或不支持。 |
 | 营销渠道 | 营销渠道数据通过 Analytics Data Connector 流入 CJA。营销渠道规则仍必须在传统的 Adobe Analytics 中进行配置。某些规则不受支持。有关更多详细信息，请参阅 [CJA 营销渠道文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html#cja-usecases)。 |
 | 产品变量 | 在该 Experience Platform 中，用户可以在数据集架构中使用“对象”类型字段的数组来满足此用例。在 CJA 内，客户能够使用任意数量的产品变量，不像在 Adobe Analytics 中一样仅限使用单个变量。 |
 | 项目共享 | 仅支持在 CJA 用户之间共享项目，不支持 CJA 与传统 Analysis Workspace 之间共享项目。 |
@@ -71,7 +71,7 @@ ht-degree: 96%
 
 | 功能 | 注释 |
 | --- | --- |
-| 机器人筛选 | 对于基于 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) 的数据集，将应用机器人筛选。[!UICONTROL Experience Platform] 或 CJA 不会对其他数据集应用常规机器人筛选逻辑。 |
+| 机器人筛选 | 对于基于 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 的数据集，将应用机器人筛选。[!UICONTROL Experience Platform] 或 CJA 不会对其他数据集应用常规机器人筛选逻辑。 |
 | 媒体分析 | 媒体数据可作为 Analytics Source Connector 的一部分提供。 |
 | 面板 | 全面支持空白面板、“归因”面板、“任意形状”面板和“快速分析”面板。不支持“区段比较”面板、“Analytics for Target (A4T)”面板和“媒体并发查看者”面板。 |
 | 处理规则 | 对于基于 Analytics Data Connector 的数据集，仍会应用处理规则。[Adobe Experience Platform 中的数据准备功能](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html)也可以取代处理将直接进入 Platform 的数据的规则。 |
