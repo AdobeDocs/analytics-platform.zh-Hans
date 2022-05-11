@@ -4,9 +4,9 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: b7a68f7cbcca74c1eaa5f14c4a3aa2652afb248d
-workflow-type: ht
-source-wordcount: '713'
+source-git-commit: 5224c83b222997413a9fb70a0d1e219f82d1af17
+workflow-type: tm+mt
+source-wordcount: '722'
 ht-degree: 100%
 
 ---
@@ -19,6 +19,7 @@ CJA 文档自创建以来进行了以下更新。
 | --- | --- |
 | 2022 年 4 月 | 相关文档 [维度子字符串](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html). |
 | 2022 年 4 月 | 新建 [适用于Adobe Analytics用户的CJA用户指南](/help/getting-started/aa-to-cja-user.md). |
+| 2022 年 4 月 | [将 Adobe Analytics 数据与 CJA 数据进行比较](/help/troubleshooting/compare.md) |
 | 2022 年 3 月 | 新建 [CJA批注API文档](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/). |
 | 2022 年 3 月 | [](/help/components/annotations/overview.md) |
 | 2022 年 3 月 | 显着更新了 [估计连接大小](/help/getting-started/cja-faq.md). |
@@ -36,7 +37,7 @@ CJA 文档自创建以来进行了以下更新。
 | 2021 年 9 月 | [客户日历](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#calendar)文档 |
 | 2021 年 9 月 | [布尔字段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/behavior.html)文档 |
 | 2021 年 9 月 | 将数据视图中的组件设置细分为单独的文件：<ul><li>[[!UICONTROL 组件]设置概述](/help/data-views/component-settings/overview.md)</li><li>[[!UICONTROL 归因]组件设置](/help/data-views/component-settings/attribution.md)</li><li>[[!UICONTROL 行为]组件设置](/help/data-views/component-settings/behavior.md)</li><li>[[!UICONTROL 格式]组件设置](/help/data-views/component-settings/format.md)</li><li>[[!UICONTROL 包括/排除]组件设置](/help/data-views/component-settings/include-exclude-values.md)</li><li>[[!UICONTROL 量度去重]组件设置](/help/data-views/component-settings/metric-deduplication.md)</li><li>[[!UICONTROL 无值]组件设置](/help/data-views/component-settings/no-value-options.md)</li><li>[[!UICONTROL 持久性]组件设置](/help/data-views/component-settings/persistence.md)</li><li>[[!UICONTROL 值分段]组件设置](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
-| 2021 年 9 月 | 有关 CJA 中[合并报表包后果](-considerations-when-merging-report-suites-in-cja)的新部分。 |
+| 2021 年 9 月 | 有关 CJA 中[合并报表包后果](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#6.-considerations-when-merging-report-suites-in-cja)的新部分。 |
 | 2021 年 8 月 | 有关 CJA 中增强的[连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html)体验的新部分。 |
 | 2021 年 8 月 | 有关[数据视图维度中的区分大小写](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#configure-behavior-settings)的新部分。 |
 | 2021 年 6 月 | 有关工作区中[以前的项目版本](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/save-projects.html#previous-version)的新文档。 |
