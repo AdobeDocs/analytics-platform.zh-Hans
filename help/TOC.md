@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics 指南
 source-git-commit: 165a2f7cd33282a8aaf93aa074a370cec2cbd40e
 workflow-type: tm+mt
 source-wordcount: '620'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 93%
 + Customer Journey Analytics 概述{#cja-overview}
    + [Customer Journey Analytics 概述](getting-started/cja-overview.md)
    + [快速入门](getting-started/cja-getting-started.md)
-   + [Customer Journey Analytics登陆页面](getting-started/landing.md)
+   + [Customer Journey Analytics landing page](getting-started/landing.md)
    + [常见问题解答](getting-started/cja-faq.md)
    + [Adobe Analytics到Customer Journey Analytics的演变](getting-started/aa-to-cja.md)
    + [面向新Customer Journey Analytics用户的用户指南](getting-started/aa-to-cja-user.md)
@@ -202,7 +202,7 @@ ht-degree: 93%
 + 用例 {#cja-usecases}
    + [Customer Journey Analytics 用例](use-cases/cja-usecases.md)
    + [使用对象数组](use-cases/object-arrays.md)
-   + [使用绑定维度和量度](use-cases/binding-dimensions-metrics.md)
+   + [Use binding dimensions and metrics](use-cases/binding-dimensions-metrics.md)
    + [(B2B) 将帐户级别的数据作为查询数据集进行添加](use-cases/b2b.md)
    + [将Marketo Engage数据摄取到AEP并在CJA中报告](use-cases/marketo.md)
    + [将AEP受众摄取到CJA](use-cases/ingest-aep-segments.md)
