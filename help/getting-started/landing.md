@@ -1,17 +1,17 @@
 ---
 description: 介绍新登陆页面的功能。
-title: Customer Journey Analytics登陆页面
+title: Customer Journey Analytics landing page
 role: User, Admin
 feature: CJA Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1077'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
-# Customer Journey Analytics登陆页面
+# Customer Journey Analytics landing page
 
 Customer Journey Analytics登陆页面提供了项目经理主页和学习部分，可帮助您更有效地入门。
 
@@ -19,13 +19,13 @@ Customer Journey Analytics登陆页面提供了项目经理主页和学习部分
 
 ## 访问登陆页面 {#access-landing}
 
-在登录到Adobe Experience Cloud和Customer Journey Analytics后，启用 [!UICONTROL 新登陆页面 — 测试版] 切换按钮。 能否使用切换按钮取决于每个组织的用户而非公司。
+能否使用切换按钮取决于每个组织的用户而非公司。
 
 ![登陆](assets/landing.png)
 
 您可以
 
-* 展开 [!UICONTROL 项目] 表格全屏显示。 单击汉堡菜单图标，展开表格。此操作将折叠左边栏标签。
+* 单击汉堡菜单图标，展开表格。此操作将折叠左边栏标签。
 * 通过拖动列分隔符来自定义列宽。
 * 重新排列固定项目. 要上下移动固定项目，请单击固定项目旁边的省略号，然后选择&#x200B;**[!UICONTROL 向上移动]** 或 **[!UICONTROL 向下移动]**。
 
@@ -56,17 +56,17 @@ Customer Journey Analytics登陆页面提供了项目经理主页和学习部分
 | [!UICONTROL 类型] | 指示此类型是工作区项目还是移动记分卡。 |
 | [!UICONTROL 标记] | 您可以标记报告以将其整理到组中。 |
 | [!UICONTROL 项目角色] | 项目角色是指您是否为项目所有者，以及您是否具有编辑或复制项目的权限。 |
-| [!UICONTROL 数据视图] | 面板中的表格和可视化图表从面板右上角选择的数据视图派生数据。 数据视图还可确定左边栏中可用的组件。 在项目中，您可以使用一个或多个数据视图，具体取决于您的分析用例。 数据视图列表按相关性排序。 Adobe根据当前用户最近和频繁使用数据视图的时间以及组织内使用数据视图的频率来定义相关性。 |
+|  | Tables and visualizations within a panel derive data from the data view selected in the top right of the panel. The data view also determines what components are available in the left rail. Within a project, you can use one or many data views, depending on your analysis use cases. The list of data views is sorted on relevance. Adobe defines relevance based on how recently and frequently the data view has been used by the current user, and how frequently the data view is used within the organization. |
 | [!UICONTROL 所有者] | 创建项目的用户。 |
 | [!UICONTROL 共享对象] | 与谁共享了此项目。 |
 | [!UICONTROL 上次修改时间] | 上次修改此项目时。 |
 | [!UICONTROL 上次打开时间] | 您上次打开此项目的时间。 |
-| [!UICONTROL 已计划] | 设置为 [!UICONTROL 开] 计划项目或 **[!UICONTROL 关闭]** 当它不是时。 点击 **[!UICONTROL 开启]** 链接，您可以看到有关计划项目的信息。如果您是项目所有者，也可[编辑项目计划](/help/analysis-workspace/curate-share/t-schedule-report.md)。 |
-| [!UICONTROL 项目 ID] | 项目ID可用于调试项目。 |
-| [!UICONTROL 最长的日期范围] | 较长的日期范围会增加项目复杂性，并可能会增加处理和加载时间。 |
-| [!UICONTROL 查询次数] | 项目加载时向Analytics发出的请求总数。 较多的项目查询次数会增加项目的复杂性，并可能增加处理和加载时间。此数据仅在加载项目或发送计划项目后可用。 |
+| [!UICONTROL 已计划] | ****&#x200B;点击 **[!UICONTROL 开启]** 链接，您可以看到有关计划项目的信息。如果您是项目所有者，也可[编辑项目计划](/help/analysis-workspace/curate-share/t-schedule-report.md)。 |
+| [!UICONTROL 项目ID] | The project ID can be used for debugging projects. |
+|  | Longer date ranges increase project complexity and may increase processing and load times. |
+| [!UICONTROL 查询次数] | 较多的项目查询次数会增加项目的复杂性，并可能增加处理和加载时间。此数据仅在加载项目或发送计划项目后可用。 |
 | 自定义表格图标 | （右上角）如果要在项目列表中添加或移除列，可以通过选择或取消选择列来实现。 |
-| &lt;（“返回”按钮） | 工作区项目中的此按钮将允许您返回到最近的登陆页面配置。 您离开登陆页面时的任何页面配置将在您返回时保留。 |
+| &lt;（“返回”按钮） | 您离开登陆页面时的任何页面配置将在您返回时保留。 |
 
 ## 在“学习”选项卡中导航 {#navigate-learning}
 
