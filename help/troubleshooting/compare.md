@@ -5,9 +5,9 @@ role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '782'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
 
 1. 在 [Analytics 数据馈送](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html)中，从原始数据确认是否 Analytics 源连接器已丢弃某些行。
 
-   [Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)在将数据转换到 XDM 架构的过程中可能会丢弃一些行。整个行不适合进行转换的原因可能有多种。如果以下任何 Analytics 字段具有这些值，则将丢弃整个行。
+   [Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)在将数据转换到 XDM 架构的过程中可能会丢弃一些行。整个行不适合进行转换的原因可能有多种。如果以下任何 Analytics 字段具有这些值，则将丢弃整个行。
 
    | Analytics 字段 | 导致发生丢弃的值 |
    | --- | --- |
