@@ -3,9 +3,10 @@ title: 子字符串组件设置
 description: 使用字符串的子集作为维度项目。
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: a8bdb5b0c00a9dbca2f466452a5d18045b2e9971
+exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
+source-git-commit: e1d8cffac907e1043d18b1939585108ce95a0fda
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '907'
 ht-degree: 7%
 
 ---
@@ -42,7 +43,7 @@ ht-degree: 7%
 * **[!UICONTROL 分隔符]**:字段使用的分隔符。
 * **[!UICONTROL 索引]**:仅当标准为“从左/右”时才存在。 元素编号，就像它在数组中一样。 例如，如果字符串输入为 `"Fox,Turtle,Rabbit,Wolf"` 索引为3时，输出为 `"Rabbit"`. 如果索引大于分隔元素的数量， [无值选项](no-value-options.md) 。
 
-## URL 解析
+## URL解析
 
 用于包含URL的字段。 使用示例URL `https://example.com/store/index.html?cid=campaign#cart`，则可以使用以下选项：
 
@@ -54,7 +55,7 @@ ht-degree: 7%
 
 如果输入的URL不是有效的URL，或者如果不存在所需的URL组件， [无值选项](no-value-options.md) 。
 
-## 修剪
+## 裁切
 
 从字符串中裁切空格或特殊字符。
 
@@ -112,3 +113,7 @@ CJA使用Perl正则表达式语法的子集。 如果输入与正则表达式不
 | ``$` `` | 输出在找到的上次匹配的结束（或在未找到先前匹配的情况下，输出文本的开始）和当前匹配的开始之间的文本。 |
 | `$+` | 输出与正则表达式中最后一个标记的子表达式匹配的内容。 |
 | `$$` | 输出字符串字符 `"$"`. |
+
+以下是有关绑定Dimension的视频：
+
+>[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
