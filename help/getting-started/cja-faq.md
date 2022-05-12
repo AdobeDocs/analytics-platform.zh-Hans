@@ -59,7 +59,7 @@ ht-degree: 100%
 | --- | --- |
 | 在 [!UICONTROL Adobe Experience Platform] 上，[!UICONTROL Customer Journey Analytics] 的预期滞后时间是多少？ | <ul><li>实时数据或事件：当数据在 AEP 中可用后，在 90 分钟内处理和摄取。（批次大小 > 500 万行：超过 90 分钟。）</li><li>Small backfills - For example, a lookup dataset of 10 million rows: within 7 days<li>大量回填 - 例如，5000 亿行：30 天</li></ul> |
 
-##  {#data-retention}
+## 5. 设置[!UICONTROL 连接]数据保留的时段 {#data-retention}
 
 >[!IMPORTANT]
 >请联系客户关怀部门或您的 Adobe 客户经理来实施此设置。尚无法通过 CJA UI 访问此设置。
