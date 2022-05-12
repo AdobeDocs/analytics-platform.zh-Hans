@@ -5,9 +5,9 @@ role: User, Admin
 feature: Components
 exl-id: 52b179fd-d9a4-4119-a3c6-f6a36f24f8ea
 source-git-commit: 998cc9e5f8d2ffd3964078dc389f55bb573063b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '251'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -33,12 +33,12 @@ ht-degree: 79%
 
 ![](assets/ann-pdf.png)
 
-## 查看包含非趋势数据的注释
+## 查看带有非趋势数据的注释
 
-有时，注释会以非趋势数据显示，但会与特定维度绑定。 在这种情况下，此类注释仅显示在右下角的摘要注释中。示例如下：
+有时，注释与非趋势数据一起显示，但与特定维度相关联。在这种情况下，此类注释仅显示在右下角的摘要注释中。示例如下：
 
 ![](assets/non-date.png)
 
-概要图表显示在角落的所有可视化图表类型中，而不只是显示在非趋势自由格式表和概要数字中。 它还会显示在 [!UICONTROL 圆环], [!UICONTROL 流量],[!UICONTROL 流失],[!UICONTROL 同类群组]，等等。
+摘要图表出现在角落的所有可视化类型中，而不仅仅是非趋势自由表格和摘要数字中。它也出现在例如 [!UICONTROL Donut]、[!UICONTROL Flow]、[!UICONTROL Fallout]、[!UICONTROL Cohort] 等可视化中。
 
 ![](assets/ann-summary.png)
