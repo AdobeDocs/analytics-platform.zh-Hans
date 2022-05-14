@@ -4,9 +4,9 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: fa36f46a352d786cbbab6a753d7cc0cb401cff9f
+source-git-commit: ed0a015e7198db8dd77ec73d9c9299d9a872370c
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '727'
 ht-degree: 98%
 
 ---
@@ -66,3 +66,5 @@ CJA 文档自创建以来进行了以下更新。
 | 2020 年 4 月 14 日 | 对[创建连接](/help/connections/create-connection.md)主题中的最新 UI 进行了更新。 |
 | 2020 年 2 月 27 日 | 对 [Customer Journey Analytics 功能支持](/help/getting-started/cja-aa.md)页面进行了更新。 |
 | 2019 年 12 月 | CJA 文档初稿 |
+
+{style=&quot;table-layout:auto&quot;}
