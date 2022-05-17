@@ -1,27 +1,27 @@
 ---
-description: 在 Analysis Workspace 中使用临时筛选器。
-title: 临时项目筛选器
+description: 在Analysis Workspace中使用临时过滤器。
+title: 临时项目过滤器
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 79513ad9-3c9d-441e-a5c5-c2b1e5cacc2e
-source-git-commit: c053a1517030b68875fe7f4518dbbd473dbe1b47
+source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 61%
+source-wordcount: '302'
+ht-degree: 51%
 
 ---
 
-# 临时项目筛选器
+# 临时项目过滤器
 
-临时项目过滤器允许您将任何组件直接拖放到面板拖放区域中，以创建过滤器。 过滤器将变为 [项目级别筛选器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html?lang=zh-Hans) 当前项目的本地位置。
+临时项目过滤器允许您将任何组件直接拖放到面板拖放区域中以创建过滤器。 过滤器将变为 [项目级别筛选器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html?lang=zh-Hans) 当前项目的本地位置。
 
-以下是一段关于创建临时项目筛选器的视频：
+以下是有关创建临时项目过滤器的视频：
 
 >[!VIDEO](https://video.tv.adobe.com/v/23978/?quality=12)
 
 
 1. 
-   1. 将任何组件类型（维度、维度项目、事件、量度、区段、区段模板、日期范围）拖放到面板顶部的过滤器拖放区域。 组件类型会自动转换为临时过滤器或 [快速过滤器](/help/components/filters/quick-filters.md) 兼容。
+   1. 将任何组件类型（维度、维度项目、事件、量度、区段、区段模板、日期范围）拖放到面板顶部的过滤器拖放区域。 组件类型会自动转换为Ad Hoc Filter，或 [快速过滤器](/help/components/filters/quick-filters.md) 兼容。
 
    以下是如何为 Twitter 反向链接域创建筛选器的示例：
 
@@ -38,7 +38,7 @@ ht-degree: 61%
 * 对于所有维度和事件，Analysis Workspace 将创建“存在”点击过滤器。示例：`Hit where eVar1 exists` 或 `Hit where event1 exists`。
 * 如果将“未指定”或“无”拖入筛选器放置区域，则它自动转换为“不存在”筛选器，以使其在筛选时受到正确对待。
 
-## 保存临时项目筛选器 {#ad-hoc-save}
+## 保存临时项目过滤器 {#ad-hoc-save}
 
 可选择按以下这些步骤保存这些筛选器：
 
