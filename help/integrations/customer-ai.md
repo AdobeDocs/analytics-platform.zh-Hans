@@ -3,15 +3,19 @@ description: 了解AEP Customer AI如何与CJA中的工作区集成。
 title: 将客户人工智能与CJA集成
 role: Admin
 solution: Customer Journey Analytics
-source-git-commit: 0b095edc3ad8f5121818feafa6edb3f826bee84c
+source-git-commit: 5302d9213b66c327b59c3f4476fbf204f1078392
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
 
 
 # 将客户人工智能与CJA集成
+
+>[!NOTE]
+>
+>本页正在构建中。
 
 [客户人工智能](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=en)，作为Adobe Experience Platform Intelligent Services的一部分，为营销人员提供了在个人级别生成客户预测的功能。
 
