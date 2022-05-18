@@ -6,20 +6,25 @@ feature: Report Builder
 type: Documentation
 exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
-source-wordcount: '435'
-ht-degree: 100%
+source-git-commit: 8544de42c643c729558f27a7d64b0e4a8af608d0
+workflow-type: tm+mt
+source-wordcount: '464'
+ht-degree: 88%
 
 ---
 
 # Report Builder 中心
 
-使用 Report Builder 中心创建、更新或删除数据块。
+使用Report Builder中心创建、更新、删除和管理数据块。
 
-Report Builder 中心包含“命令”和“快速编辑”面板。
+Report Builder中心包含“创建”和“管理”按钮、“命令”列表和“快速编辑”面板。
 
-![](./assets/image13.png)
+<img src="./assets/hub51.png" width="50%"/>
+
+
+## 创建和管理按钮
+
+使用创建或管理按钮创建新数据块或管理现有数据块。
 
 ## “命令”面板
 
