@@ -4,18 +4,14 @@ description: 如何在工作区中查看注释。
 role: User, Admin
 feature: Components
 exl-id: 52b179fd-d9a4-4119-a3c6-f6a36f24f8ea
-source-git-commit: 998cc9e5f8d2ffd3964078dc389f55bb573063b9
-workflow-type: ht
-source-wordcount: '251'
+source-git-commit: 4940f26c6c3b0b1f8baf0d715f4190c7f0f40efa
+workflow-type: tm+mt
+source-wordcount: '244'
 ht-degree: 100%
 
 ---
 
 # 查看注释
-
->[!NOTE]
->
->此功能当前正在进行小范围测试。
 
 注释的显示方式略有不同，具体取决于它们是跨越一天还是跨越一个日期范围。
 

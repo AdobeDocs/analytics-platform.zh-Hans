@@ -4,29 +4,25 @@ description: 如何在工作区中创建注释。
 role: User, Admin
 feature: Components
 exl-id: 3cf9a0fd-11c9-4375-8bbe-9551ba86f86d
-source-git-commit: 15faee32171a2beab7cf42b92b09358b5cb1acc3
+source-git-commit: 4940f26c6c3b0b1f8baf0d715f4190c7f0f40efa
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 92%
+source-wordcount: '643'
+ht-degree: 100%
 
 ---
 
 # 创建注释
 
->[!NOTE]
->
->此功能当前正在进行小范围测试。
-
 1. 要创建注释，有若干方法可使用：
 
 | 创建方法 | 详细信息 |
 | --- | --- |
-| **转到 [!UICONTROL 组件] > [!UICONTROL 注释].** | 随后将打开“注释管理器”页面。单击[!UICONTROL 创建新注释]，然后将打开[!UICONTROL 注释生成器]。 |
+| **转到 [!UICONTROL 组件] > [!UICONTROL 注释]。** | 随后将打开“注释管理器”页面。单击[!UICONTROL 创建新注释]，然后将打开[!UICONTROL 注释生成器]。 |
 | **右键单击表上的某个点。** | 随后将打开[!UICONTROL 注释生成器]。请注意，默认情况下，以这种方式创建的注释仅在创建它们的项目中可见。但是您可以使它们可用于所有项目。另请注意，已填充日期和任何指标等。<p>![](assets/annotate-table.png) |
 | **右键单击[!UICONTROL 折线]图上的某个点。** | 随后将打开[!UICONTROL 注释生成器]。请注意，默认情况下，以这种方式创建的注释仅在创建它们的项目中可见。但是您可以使它们可用于所有项目。另请注意，已填充日期和任何指标等。<p>![](assets/annotate-line.png) |
 | **在工作区中，转到[!UICONTROL 组件] > [!UICONTROL 创建注释]。** | 随后将打开[!UICONTROL 注释生成器]。 |
 | **使用此热键**&#x200B;打开注释生成器：(PC) `ctrl` `shift` + o、(Mac) `shift` + `command` + o | 请注意，使用热键创建注释，您只是为当前日期创建单日注释，并无任何预先选择的范围（指标或维度）。 |
-| **使用 [CJA批注API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | CJA批注API允许您通过Adobe Developer以编程方式创建、更新或检索批注。 这些API使用的数据和方法与Adobe在产品UI中使用的数据和方法相同。 |
+| **使用 [CJA 注释 API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | CJA 注释 API 允许您通过 Adobe Developer 以编程方式创建、更新或检索注释。 这些 API 使用的数据和方法与 Adobe 在产品 UI 中使用的相同。 |
 
 1. 填写[!UICONTROL 注释生成器]的各个元素。
 

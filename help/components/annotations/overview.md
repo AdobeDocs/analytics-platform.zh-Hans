@@ -5,18 +5,14 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: 722d7636-f619-479a-97f1-3da23e8f7f83
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+source-git-commit: 4940f26c6c3b0b1f8baf0d715f4190c7f0f40efa
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 97%
+source-wordcount: '296'
+ht-degree: 100%
 
 ---
 
 # 注释概述
-
->[!NOTE]
->
->此功能当前正在进行小范围测试。
 
 注释使您能够有效地将上下文数据的细微差别和见解传达给您的组织。它们可让您将日历活动与特定维度/指标关联起来。您可以对已知数据问题、公共假日、营销活动启动等内容注释日期或日期范围。然后您可以以图形方式显示活动并查看营销活动或其他活动是否影响了您的网站流量、收入或任何其他指标。
 
