@@ -3,9 +3,9 @@ description: 了解AEP Customer AI如何与CJA中的工作区集成。
 title: 将客户人工智能与CJA集成
 role: Admin
 solution: Customer Journey Analytics
-source-git-commit: d59128c34deb7d8fb65d0fad4e6029453c449ea4
+source-git-commit: 0b095edc3ad8f5121818feafa6edb3f826bee84c
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Customer AI与Customer Journey Analytics(CJA)集成，以便能够在CJA的数�
 
 每个预测（如“升级帐户的可能性”）等于一个数据集。
 
-以下是CJA将作为现有数据集或新数据集的一部分引入的XDM架构示例：
+以下是CJA将作为现有或新数据集的一部分引入的XDM架构示例：
 
 ![CAI模式](assets/cai-schema.png)
 
@@ -58,4 +58,4 @@ Customer AI与Customer Journey Analytics(CJA)集成，以便能够在CJA的数�
 
 ### 步骤5:根据这些连接创建数据视图
 
-在CJA中，您现在可以继续创建包含作为
+在CJA中，您现在可以继续创建数据视图，其中包含作为已建立连接的一部分引入的维度。
