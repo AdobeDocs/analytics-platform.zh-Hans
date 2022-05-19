@@ -4,9 +4,9 @@ title: 将客户人工智能与CJA集成
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: 77b253390dafb27228995f339d138eb9f4fa2c56
+source-git-commit: 5d22437ec6514196146283af311b6661c1f2e45b
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 借助影响因素的帮助， Customer AI可以告诉您客户可能执行的操作以及原因。 此外，营销人员还可以从Customer AI预测和分析中受益，通过提供最合适的选件和消息传送来个性化客户体验。
 
-Customer AI通过分析以下数据集之一来预测客户流失率或转化倾向得分：
+Customer AI通过分析以下一个或多个数据集来预测流失率或转化倾向得分：
 
 * Adobe Analytics数据（使用Analytics源连接器）
 * Adobe Audience ManagerAudience Manager源连接器
@@ -34,19 +34,11 @@ Customer AI与Customer Journey Analytics(CJA)集成，以便能够在CJA的数�
 
 在CJA中处理输出之前，某些步骤在Adobe Experience Platform中执行。
 
-### 步骤1:下载Customer AI分数
-
-下载Customer AI分数是通过组合Experience PlatformAPI调用来完成的，如所述 [此处](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/getting-started.html?lang=en#downloading-customer-ai-scores).
-
-### 步骤2:定义Customer AI输入和输出
-
-此过程在 [客户人工智能中的输入与输出](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/input-output.html?lang=en) 文档。
-
-### 步骤3:配置Customer AI实例
+### 步骤1:配置Customer AI实例
 
 准备数据并部署所有凭据和模式后，请首先按照 [配置Customer AI实例](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=en) 的双曲余切值。
 
-### 步骤4:设置与Customer AI数据集的CJA连接
+### 步骤2:设置与Customer AI数据集的CJA连接
 
 在CJA中，您现在可以 [创建一个或多个连接](/help/connections/create-connection.md) Experience Platform为Customer AI分析的数据集。 这些数据集将显示前缀为“Customer AI得分”，如下所示：
 
@@ -60,11 +52,11 @@ Customer AI与Customer Journey Analytics(CJA)集成，以便能够在CJA的数�
 
 (请注意，此示例是用户档案数据集；同一组架构对象将包含在CJA将获取的体验事件数据集中。 “体验事件”数据集将包含时间戳作为得分日期。) 在此模型中得分的每位客户都将具有得分、scoreDate等。 关联。
 
-### 步骤5:根据这些连接创建数据视图
+### 步骤3:根据这些连接创建数据视图
 
-在CJA中，您现在可以继续 [创建数据视图](/help/data-views/create-dataview.md) 包含作为您建立的连接的一部分引入的维度（例如分数、得分日期、概率等）。
+在CJA中，您现在可以继续 [创建数据视图](/help/data-views/create-dataview.md) 包含作为您建立的连接的一部分引入的维度（例如得分、得分日期、概率等）和量度。
 
-### 步骤6:工作区CAI成绩报告
+### 步骤4:工作区CAI成绩报告
 
 以下是一个工作区项目的CAI数据示例，该项目在堆叠式条形图中显示得分日期：
 
