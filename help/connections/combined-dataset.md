@@ -4,17 +4,17 @@ description: 了解 CJA 如何通过合并数据集创建连接。
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '334'
-ht-degree: 100%
+source-git-commit: 6b5f4659e9bae02e2665db3c0ee02d143dbc7ea0
+workflow-type: tm+mt
+source-wordcount: '337'
+ht-degree: 94%
 
 ---
 
 
 # 合并事件数据集
 
-创建连接后，CJA 会将所有架构和数据集都合并到一个数据集中。这个“合并事件数据集”就是 CJA 用于报表的数据集。如果您将多个架构或数据集纳入单个连接，则：
+创建连接时，Customer Journey Analytics(CJA)会将所有架构和数据集合并到一个数据集中。 这个“合并事件数据集”就是 CJA 用于报表的数据集。如果您将多个架构或数据集纳入单个连接，则：
 
 * 架构会被合并。重复架构字段会被合并。
 * 每个数据集的“人员 ID”列将合并到单列中，无论其名称如何。此列是识别 CJA 中唯一访客的基础。
