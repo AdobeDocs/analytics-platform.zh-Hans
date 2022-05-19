@@ -4,16 +4,16 @@ description: 描述如何在 Customer Journey Analytics 中创建与 Platform �
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: beb9e94e0870f8957de59e643957f7422f902182
+source-git-commit: 36fc82cf2c075550ced98193fe50115af12974de
 workflow-type: tm+mt
-source-wordcount: '2096'
-ht-degree: 69%
+source-wordcount: '2094'
+ht-degree: 70%
 
 ---
 
 # 创建连接
 
-2022年5月，将在Customer Journey Analytics(CJA)中启动新的连接工作流。 以下是新增功能的概述：
+最近在Customer Journey Analytics(CJA)中启动了新的连接工作流。 以下是新增功能的概述：
 
 * 创建连接时，可以启用滚动数据保留窗口。
 * 您可以向连接添加数据集，也可以从连接中删除数据集。 (删除数据集会将其从连接中删除，并会影响任何关联的数据视图和基础Analysis Workspace项目。)
@@ -93,7 +93,7 @@ ht-degree: 69%
 
 >[!IMPORTANT]
 >
->您需要在连接中至少添加一个事件数据集。
+>您需要添加至少一个事件数据集作为连接的一部分。
 
 有 3 种不同的数据集类型：[!UICONTROL 事件]数据、[!UICONTROL 配置文件]数据和[!UICONTROL 查找]数据。
 

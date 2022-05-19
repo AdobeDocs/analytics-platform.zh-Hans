@@ -1,72 +1,72 @@
 ---
-description: Find out how AEP Customer AI integrates with Workspace in CJA.
-title: Integrate Customer AI with CJA
+description: 了解AEP Customer AI如何与CJA中的工作区集成。
+title: 将客户人工智能与CJA集成
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: e0b5e91897ce6cdcaebfb2d6663e565dff850d74
+source-git-commit: 77b253390dafb27228995f339d138eb9f4fa2c56
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
 
-# Integrate Customer AI with CJA
+# 将客户人工智能与CJA集成
 
 >[!NOTE]
 >
->This page is under construction.
+>此功能将于2022年5月25日发布。
 
-[](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=en)
+[客户人工智能](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=en)，作为Adobe Experience Platform Intelligent Services的一部分，为营销人员提供了在个人级别生成客户预测的功能。
 
-With the help of influential factors, Customer AI can tell you what a customer is likely to do and why. Additionally, marketers can benefit from Customer AI predictions and insights to personalize customer experiences by serving the most appropriate offers and messaging.
+借助影响因素的帮助， Customer AI可以告诉您客户可能执行的操作以及原因。 此外，营销人员还可以从Customer AI预测和分析中受益，通过提供最合适的选件和消息传送来个性化客户体验。
 
-Customer AI works by analyzing one of the following datasets to predict churn or conversion propensity scores:
+Customer AI通过分析以下数据集之一来预测客户流失率或转化倾向得分：
 
-* Adobe Analytics data using the Analytics source connector
-* Adobe Audience Manager data using the Audience Manager source connector
-* Experience Event (EE) dataset
-* Consumer Experience Event (CEE) dataset
+* Adobe Analytics数据（使用Analytics源连接器）
+* Adobe Audience ManagerAudience Manager源连接器
+* 体验事件(EE)数据集
+* 消费者体验事件(CEE)数据集
 
-Customer AI integrates with Customer Journey Analytics (CJA) to the extent that Customer AI-enabled datasets can be leveraged in data views and reporting in CJA.
+Customer AI与Customer Journey Analytics(CJA)集成，以便能够在CJA的数据视图和报表中利用支持Customer AI的数据集。
 
 ## 工作流程
 
-Some of the steps are performed in Adobe Experience Platform prior to working with the output in CJA.
+在CJA中处理输出之前，某些步骤在Adobe Experience Platform中执行。
 
-### Step 1: Download Customer AI scores
+### 步骤1:下载Customer AI分数
 
-[](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/getting-started.html?lang=en#downloading-customer-ai-scores)
+下载Customer AI分数是通过组合Experience PlatformAPI调用来完成的，如所述 [此处](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/getting-started.html?lang=en#downloading-customer-ai-scores).
 
-### Step 2: Define Customer AI inputs and outputs
+### 步骤2:定义Customer AI输入和输出
 
-[](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/input-output.html?lang=en)
+此过程在 [客户人工智能中的输入与输出](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/input-output.html?lang=en) 文档。
 
-### Step 3: Configure a Customer AI instance
+### 步骤3:配置Customer AI实例
 
-[](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=en)
+准备数据并部署所有凭据和模式后，请首先按照 [配置Customer AI实例](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=en) 的双曲余切值。
 
-### Step 4: Set up a CJA connection to Customer AI datasets
+### 步骤4:设置与Customer AI数据集的CJA连接
 
-[](/help/connections/create-connection.md)These datasets appears with the &quot;Customer AI Scores&quot; prefix, as shown here:
+在CJA中，您现在可以 [创建一个或多个连接](/help/connections/create-connection.md) Experience Platform为Customer AI分析的数据集。 这些数据集将显示前缀为“Customer AI得分”，如下所示：
 
-![](assets/cai-scores.png)
+![CAI成绩](assets/cai-scores.png)
 
-Each prediction, such as &quot;Likelihood to upgrade account&quot; equates to one dataset.
+每个预测（如“升级帐户的可能性”）等于一个数据集。
 
-Here is an example of a XDM schema that CJA would bring in as part of an existing or new dataset:
+以下是CJA将作为现有或新数据集的一部分引入的XDM架构示例：
 
-![](assets/cai-schema.png)
+![CAI模式](assets/cai-schema.png)
 
-(Note that the example is a profile dataset; the same set of schema object would be part of an Experience Event dataset that CJA would grab. The Experience Event dataset would include timestamps as the score date.) Every customer scored in this model would have a score, a scoreDate, etc. associated with them.
+(请注意，此示例是用户档案数据集；同一组架构对象将包含在CJA将获取的体验事件数据集中。 “体验事件”数据集将包含时间戳作为得分日期。) 在此模型中得分的每位客户都将具有得分、scoreDate等。 关联。
 
-### Step 5: Create data views based on these connections
+### 步骤5:根据这些连接创建数据视图
 
-[](/help/data-views/create-dataview.md)
+在CJA中，您现在可以继续 [创建数据视图](/help/data-views/create-dataview.md) 包含作为您建立的连接的一部分引入的维度（例如分数、得分日期、概率等）。
 
-### Step 6: Report on CAI scores in Workspace
+### 步骤6:工作区CAI成绩报告
 
-Here is an example of a Workspace project with CAI data that shows score dates in a stacked bar chart:
+以下是一个工作区项目的CAI数据示例，该项目在堆叠式条形图中显示得分日期：
 
-![](assets/workspace-scores.png)
+![分数段](assets/workspace-scores.png)
 
