@@ -1,60 +1,65 @@
 ---
-description: 了解AEPAttribution AI如何与CJA中的工作区集成。
-title: 将Attribution AI与CJA集成
+description: Find out how AEP Attribution AI integrates with Workspace in CJA.
+title: Integrate Attribution AI with CJA
 role: Admin
 solution: Customer Journey Analytics
-source-git-commit: 5302d9213b66c327b59c3f4476fbf204f1078392
+exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
+source-git-commit: e0b5e91897ce6cdcaebfb2d6663e565dff850d74
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '457'
 ht-degree: 4%
 
 ---
 
-# 将Attribution AI与CJA集成
+# Integrate Attribution AI with CJA
 
 >[!NOTE]
 >
->本页正在构建中。
+>This page is under construction.
 
-[Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en)作为Adobe Experience Platform Intelligent Services的一部分，是一项多渠道算法归因服务，用于计算客户交互对特定结果的影响和增量影响。 借助Attribution AI，营销人员可以通过了解客户旅程各个阶段每个客户互动的影响来衡量和优化营销和广告支出。
+[](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en)With Attribution AI, marketers can measure and optimize marketing and advertising spend by understanding the impact of every individual customer interaction across each phase of the customer journeys.
 
-Attribution AI支持两类得分：算法和基于规则。 算法得分包括增量分数和受影响分数。 基于规则的得分包括“首次接触”、“最近接触”、“线性”、“U型”和“时间衰减”。 Attribution AI支持3种Experience Platform模式：体验事件、Adobe Analytics和消费者体验事件。
+Attribution AI supports two categories of scores: algorithmic and rule-based. Algorithmic scores include incremental and influenced scores. Rule-based scores include First touch, Last touch, Linear, U-shaped, and Time-Decay. Attribution AI supports 3 Experience Platform schemas: Experience Event, Adobe Analytics, and Consumer Experience Event.
 
-Attribution AI与Customer Journey Analytics(CJA)集成，以便Attribution AI针对数据运行模型，然后CJA将这些模型的输出导入为数据集，然后可将其与其余的CJA数据集集成。 然后，可以在CJA的数据视图和报表中利用启用Attribution AI的数据集。
+Attribution AI integrates with Customer Journey Analytics (CJA) to the extent that Attribution AI runs models against data and then CJA imports the output of those models as a data set, which can then be integrated with the rest of your CJA data sets. Attribution AI-enabled datasets can be then be leveraged in data views and reporting in CJA.
 
 ## 工作流程
 
-在CJA中处理输出之前，某些步骤在Adobe Experience Platform中执行。
+Some of the steps are performed in Adobe Experience Platform prior to working with the output in CJA.
 
-### 步骤1:下载Attribution AI得分
+### Step 1: Download Attribution AI scores
 
-在Adobe Experience Platform中，下载Attribution AI得分，如所述 [此处](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/getting-started.html?lang=en#downloading-attribution-ai-scores).
+[](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/getting-started.html?lang=en#downloading-attribution-ai-scores)
 
-### 步骤2:创建Attribution AI实例
+### Step 2: Create an Attribution AI instance
 
-在Experience Platform中，通过选择和映射数据、定义事件和培训数据来创建Attribution AI实例，如所述 [此处](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/user-guide.html).
+[](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/user-guide.html)
 
-### 步骤3:设置与Attribution AI数据集的CJA连接
+### Step 3: Set up a CJA connection to Attribution AI datasets
 
-在CJA中，您现在可以 [创建一个或多个连接](/help/connections/create-connection.md) Experience Platform已针对Attribution AI分析的数据集。 这些Attribution AI集会显示“数据得分”前缀，如下所示：
+[](/help/connections/create-connection.md)These datasets appears with the &quot;Attribution AI Scores&quot; prefix, as shown here:
 
-![AAI分数](assets/aai-scores.png)
+![](assets/aai-scores.png)
 
-### 步骤4:根据这些连接创建数据视图
+### Step 4: Create data views based on these connections
 
-在CJA中，
+[](/help/data-views/create-dataview.md)(Would be great to have a screenshot here.)
 
-## Attribution AI和Attribution IQ之间的差异
+### Step 5: Report on AAI data in CJA Workspace
 
-因此，您何时应使用Attribution AI数据， [Attribution IQ](/help/analysis-workspace/attribution/overview.md)，是本机CJA功能吗？ 此表显示了功能上的一些差异：
+Here is an example of a Workspace project with AAI data that shows...
+
+## Differences between Attribution AI and Attribution IQ
+
+[](/help/analysis-workspace/attribution/overview.md)This table shows some of the differences in functionality:
 
 | 功能 | Attribution AI | Attribution IQ |
 | --- | --- | --- |
-| 小数归因 | 是 | 否 |
-| 允许用户调整模型 | 否 | 是 |
-| 跨渠道归因吗(注意：AAI使用的拼合数据与CJA不同。) | 是 | 是 |
-| 包括增量分数和受影响的分数 | 是 | 否 |
-| ML建模吗？ | 是 | 是 |
-| 使用预测进行ML建模吗？ | 是 | 否 |
+| Does fractional attribution | 是 | 否 |
+| Allows users to adjust model | 否 | 是 |
+| Does attribution across channels (Note: AAI does not use the same stitched data that CJA does.) | 是 | 是 |
+| Includes incremental and influenced scores | 是 | 否 |
+| Does ML modeling | 是 | 是 |
+| Does ML modeling with predictions | 是 | 否 |
 
 {style=&quot;table-layout:auto&quot;}
