@@ -5,13 +5,13 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: 01a9ff4e03e002da723c10500de6dec4444f951e
+exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
+source-git-commit: e9856269ee07b7119f75b98489b47e1f35f7cf5f
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 2%
+source-wordcount: '552'
+ht-degree: 1%
 
 ---
-
 
 # 在Report Builder中管理数据块
 
@@ -50,19 +50,17 @@ ht-degree: 2%
 
 例如，您可以在一个或多个数据块中将现有过滤器替换为新过滤器。
 
-1. 选择要更新的数据块。
+1. 选择要更新的数据块。 您可以选择顶级复选框以选择所有数据块，也可以选择单个数据块。
 
-您可以选择顶级复选框以选择所有数据块，也可以选择单个数据块。
-
-![图像](./assets/image56.png)
+   ![图像](./assets/image56.png)
 
 1. 单击编辑图标以显示“快速编辑”窗口。
 
-![图像](./assets/image58.png)
+   ![图像](./assets/image58.png)
 
 1. 选择过滤器链接以更新数据视图、日期范围或过滤器。
 
-![图像](./assets/image59.png)
+   ![图像](./assets/image59.png)
 
 ## 刷新数据块
 
@@ -81,9 +79,9 @@ ht-degree: 2%
 
 ## 组数据块
 
-单击列标题可对数据块进行分组，或从 **分组依据** *名称* 列表。
+您可以使用 **分组依据** 下拉菜单，或者单击列标题。 要按列对数据块进行排序，请单击列标题。 要按组对数据块进行分组，请从 **分组依据** 下拉菜单。 例如，下面的屏幕截图显示了按工作表分组的数据块。 它显示按Sheet1和Sheet2分组的数据块。  例如，在过滤器替换用例中，这非常有用。 如果您对每个数据块应用了多个过滤器，则创建包含所有要替换的数据块的组会非常有用。 然后，您可以轻松地同时选择和编辑所有组件。
 
-![图像](./assets/image514.png)
+![图像](./assets/group-data-blocks.png)
 
 ## 修改数据块管理器视图
 
