@@ -7,7 +7,7 @@ type: Documentation
 exl-id: 56bf524d-101d-4745-b2ef-9770c50f6774
 solution: Customer Journey Analytics
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '209'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # 关于适用于 Customer Journey Analytics 的 Report Builder
 
-通过适用于 Customer Journey Analytics 的 ，您可以使用 Adobe Customer Journey Analytics 数据轻松地创建、编辑和刷新自定义报表。Customer Journey Analytics 是一项基于 Adobe Experience Platform 构建的服务，可让您连接多个数据源以创建业务的整体视图。借助 Report Builder 简单灵活的拖放 UI，您可以在 Excel 中从 Customer Journey Analytics 数据创建复杂的数据查询和自定义报表。
+Customer Journey Analytics Report Builder 允许您使用 Adobe Customer Journey Analytics 数据轻松创建、编辑和刷新自定义报表。 Customer Journey Analytics 是一项基于 Adobe Experience Platform 构建的服务，可让您连接多个数据源以创建业务的整体视图。借助 Report Builder 简单灵活的拖放 UI，您可以在 Excel 中从 Customer Journey Analytics 数据创建复杂的数据查询和自定义报表。
 
 利用 Report Builder for Customer Journey Analytics，您可以：
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->本文档面向适用于 Customer Journey Analytics 的 Report Builder。有关 Windows 上的适用于 Analytics 的 Report Builder 的信息，请参阅[适用于 Customer Journey Analytics 的 Report Builder](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/home.html?lang=zh-Hans)。
+>本文档面向适用于 Customer Journey Analytics 的 Report Builder。有关 Windows 上的适用于 Analytics 的 Report Builder 的信息，请参阅[适用于 Customer Journey Analytics 的 Report Builder](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/home.html)。
 
 您可以从以下位置下载适用于 Customer Journey Analytics 的 Report Builder：
 [Microsoft Store](https://www.microsoft.com/en-us/store/apps/windows)。
