@@ -1,15 +1,15 @@
 ---
-title: 在Dimension中过滤Customer Journey Analytics
-description: 介绍如何在CJA的Report Builder中使用过滤器维度
+title: Customer Journey Analytics 中的筛选维度
+description: 描述如何在 Report Builder for CJA 中使用筛选维度
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
 source-git-commit: 39a399f5267b37548d4e757140268d6f104370b6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '916'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -33,15 +33,15 @@ ht-degree: 98%
 
    ![](./assets/image28.png)
 
-1. 根据所选筛选器类型选择相应的选项。
+1. 根据所选过滤器类型选择相应的选项。
 
-1. 单击&#x200B;**应用**&#x200B;以添加筛选器。
+1. 单击&#x200B;**应用**&#x200B;以添加过滤器。
 
-   Report Builder 显示通知以确认添加了筛选器。
+   Report Builder 显示通知以确认添加了过滤器。
 
-要显示应用的筛选器，请将光标悬停在维度上。应用了筛选器的维度会在维度名称的右边显示一个筛选器图标。
+要显示应用的过滤器，请将光标悬停在维度上。应用了过滤器的维度会在维度名称的右边显示一个过滤器图标。
 
-## 筛选器类型
+## 过滤器类型
 
 有两种方式来筛选维度项：最受欢迎和特定。
 
@@ -80,7 +80,7 @@ ht-degree: 98%
 
 ### 包括“无值”
 
-在 Customer Journey Analytics 中，一些维度收集“无值”条目。使用此筛选器，您可以从报表中排除这些值。例如，您可以创建分类，例如基于产品 SKU 键的产品名称分类。如果特定产品 SKU 没有设置其特定的产品名称分类，则其产品名称值设置为“无值”。
+在 Customer Journey Analytics 中，一些维度收集“无值”条目。使用此过滤器，您可以从报表中排除这些值。例如，您可以创建分类，例如基于产品 SKU 键的产品名称分类。如果特定产品 SKU 没有设置其特定的产品名称分类，则其产品名称值设置为“无值”。
 
 默认情况下选中以包括&#x200B;**无值**。取消选择此选项可排除无值的条目。
 
@@ -102,7 +102,7 @@ ht-degree: 98%
 
    最多可以包括 10 个条件项。
 
-### 更改筛选器和排序顺序
+### 更改过滤器和排序顺序
 
 量度旁边显示的箭头用于筛选和排序数据块。箭头的方向指示量度是按照从大到小还是从小到大排序。
 
@@ -119,7 +119,7 @@ ht-degree: 98%
 
 ## 特定筛选
 
-使用“特定”选项，您可以为每个维度创建固定的维度项列表。使用&#x200B;**特定**&#x200B;筛选类型指定要包括在筛选器中的确切维度项。可从列表或从单元格范围中选择项。
+使用“特定”选项，您可以为每个维度创建固定的维度项列表。使用&#x200B;**特定**&#x200B;筛选类型指定要包括在过滤器中的确切维度项。可从列表或从单元格范围中选择项。
 
 ![](./assets/image32.png)
 
