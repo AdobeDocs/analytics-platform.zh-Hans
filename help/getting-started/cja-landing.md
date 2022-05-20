@@ -4,10 +4,10 @@ description: Customer Journey Analytics 登陆页面。
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 5799d8beec534bc6ec76b7fd01a7dd2524b28fef
-workflow-type: ht
-source-wordcount: '345'
-ht-degree: 100%
+source-git-commit: 7bd111c67f49fc56f93039269d9c1714bece311b
+workflow-type: tm+mt
+source-wordcount: '342'
+ht-degree: 94%
 
 ---
 
@@ -24,11 +24,10 @@ Analytics Select、Prime 和 Ultimate 客户有资格此附加产品。有关更
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>新增项目或特色项目</b> </p> <p> 
      <ul>
+       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/integrations/attribution-ai.html?lang=en"> 将Attribution AI与CJA集成 </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html">将客户人工智能与CJA集成</a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html"> Adobe Analytics到Customer Journey Analytics的演变 </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja-user.html"> 适用于Adobe Analytics用户的CJA用户指南 </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/binding-dimensions-metrics.html"> 在 CJA 中使用绑定维度和量度 </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html"> 在 Adobe Experience Platform 中使用“营销渠道”维度
- </a> </li>
      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html#connection-detail">使用增强的连接管理功能</a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html#cja-dataviews">使用增强的数据视图功能</a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html#cja-usecases"> 将 Google Analytics 数据摄取到 Adobe Experience Platform </a> </li>

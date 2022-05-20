@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: ed0a015e7198db8dd77ec73d9c9299d9a872370c
+source-git-commit: 7bd111c67f49fc56f93039269d9c1714bece311b
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 98%
+source-wordcount: '782'
+ht-degree: 92%
 
 ---
 
@@ -17,6 +17,10 @@ CJA 文档自创建以来进行了以下更新。
 
 | 日期 | 更新描述 |
 | --- | --- |
+| 2022 年 5 月 | 显着更新了 [创建连接](/help/connections/create-connection.md) 在CJA中。 |
+| 2022 年 5 月 | 新文章 [将CJA与Attribution AI集成](/help/integrations/attribution-ai.md) 在Adobe Experience Platform。 |
+| 2022 年 5 月 | 新文章 [在Adobe Experience Platform中将CJA与客户人工智能集成](/help/integrations/customer-ai.md). |
+| 2022 年 5 月 | 新增了有关如何 [在CJA中管理数据块Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html) |
 | 2022 年 5 月 | 新文章 [将Adobe Experience Platform受众摄取到CJA](/help/use-cases/ingest-aep-segments.md) |
 | 2022 年 4 月 | 相关文档 [维度子字符串](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html). |
 | 2022 年 4 月 | 新建 [适用于Adobe Analytics用户的CJA用户指南](/help/getting-started/aa-to-cja-user.md). |
