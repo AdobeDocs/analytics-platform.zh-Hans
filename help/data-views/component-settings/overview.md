@@ -5,9 +5,9 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: da34e4c97720ec20f354a4bd67708b4d89c5bea4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '370'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -31,6 +31,6 @@ ht-degree: 97%
 | [!UICONTROL 架构路径] | 必填。显示组件来自的架构路径的不可编辑字段。 |
 | [!UICONTROL 在报告中隐藏组件] | 使您可从非管理员的数据视图策划该组件。管理员仍可通过在 Analysis Workspace 项目中单击[!UICONTROL 显示所有组件]而访问该组件。 |
 
-以下是有关数据视图中组件设置的视频：
+以下是关于数据视图中组件设置的视频：
 
 >[!VIDEO](https://video.tv.adobe.com/v/333112/?quality=12)
