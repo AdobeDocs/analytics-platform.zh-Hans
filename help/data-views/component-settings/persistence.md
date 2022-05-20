@@ -5,9 +5,9 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: 459249c74bf4dadf84c2adf96498f2eea21be1ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '806'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 95%
 
 一个下拉列表，可让您将维度值的持久性绑定到另一个维度中的维度值。有效的下拉列表选项包括数据视图中包含的其他维度。
 
-请参阅 [在CJA中使用绑定维度和量度](../../use-cases/binding-dimensions-metrics.md) ，以了解如何有效使用绑定维度的示例。
+有关如何有效使用绑定维度的示例，请参见 CJA 中的 [使用绑定维度和量度](../../use-cases/binding-dimensions-metrics.md)。
 
 ## [!UICONTROL 绑定量度]
 
@@ -84,4 +84,4 @@ ht-degree: 95%
 
 此设置仅在对象数组中的绑定维度低于组件时显示。当绑定量度显示在事件中时，维度值会从事件级别维度向下复制到绑定维度的较低架构级别。
 
-请参阅 [在CJA中使用绑定维度和量度](../../use-cases/binding-dimensions-metrics.md) 以了解有关如何有效使用捆绑量度的更多信息。
+有关如何有效使用绑定量度的更多信息，请参阅 CJA 中 [使用绑定维度和量度下的第二个示例](../../use-cases/binding-dimensions-metrics.md)。
