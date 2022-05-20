@@ -5,9 +5,9 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: 48cc438032fb1df043b7caf085aadf3f2c2f1ecf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1224'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 99%
 
 ### 容器 {#containers}
 
-指定数据视图的容器的名称。容器名称在 [过滤器](/help/components/filters/filters-overview.md#Filter-containers).
+指定数据视图的容器的名称。经常在[过滤器](/help/components/filters/filters-overview.md#Filter-containers)中使用容器名称。
 
 | 设置 | 描述 |
 | --- | --- |
@@ -68,7 +68,7 @@ ht-degree: 99%
 
    ![“组件”选项卡](assets/components-tab.png)
 
-   可在左上角看到[!UICONTROL 连接]（其中包含数据集），并可在下方看到其[!UICONTROL 架构字段]。注意，已包括的组件为所有数据视图（系统生成）的标准必需组件。默认情况下，Adobe 还应用&#x200B;**[!UICONTROL 包含数据]**&#x200B;筛选器，这样仅显示包含数据的架构字段。如果要让某个字段不包含数据，请删除此筛选器。
+   可在左上角看到[!UICONTROL 连接]（其中包含数据集），并可在下方看到其[!UICONTROL 架构字段]。注意，已包括的组件为所有数据视图（系统生成）的标准必需组件。默认情况下，Adobe 还应用&#x200B;**[!UICONTROL 包含数据]**&#x200B;过滤器，这样仅显示包含数据的架构字段。如果要让某个字段不包含数据，请删除此过滤器。
 
 1. 从左边栏将某个架构字段（如 `pageTitle`）拖入“指标”或“维度”部分。
 
@@ -101,7 +101,7 @@ ht-degree: 99%
 
 ![筛选字段](assets/filter-fields.png)
 
-还可按数据集筛选，以及按某个架构字段是否包含数据或它是否为标识进行筛选。默认情况下，Adobe 最初将&#x200B;**[!UICONTROL 包含数据]**&#x200B;筛选器应用于所有数据视图。
+还可按数据集筛选，以及按某个架构字段是否包含数据或它是否为标识进行筛选。默认情况下，Adobe 最初将&#x200B;**[!UICONTROL 包含数据]**&#x200B;过滤器应用于所有数据视图。
 
 ![筛选其他](assets/filter-other.png)
 
@@ -111,12 +111,12 @@ ht-degree: 99%
 1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;以创建数据视图，或单击现有数据视图以编辑它。
 1. 单击&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡。
 
-### 全局筛选器 {#global-filter}
+### 全局过滤器 {#global-filter}
 
-可添加适用于整个数据视图的筛选器。此筛选器适用于您在 Workspace 中运行的任何报表。请将某个筛选器从左边栏中的列表拖至[!UICONTROL 添加筛选器]字段。
+可添加适用于整个数据视图的过滤器。此过滤器适用于您在 Workspace 中运行的任何报表。请将某个过滤器从左边栏中的列表拖至[!UICONTROL 添加过滤器]字段。
 
 ### 会话设置 {#sessions}
 
-决定在会话到期并开始新会话之前事件之间无活动的时段。时段为必填。还可选择在事件包含特定指标时强制开始新会话。
+决定在会话到期并开始新会话之前，事件之间无活动的时段。 时段为必填。还可选择在事件包含特定指标时强制开始新会话。
 
 指定所有需要的设置后，单击&#x200B;**[!UICONTROL 保存并完成]**。
