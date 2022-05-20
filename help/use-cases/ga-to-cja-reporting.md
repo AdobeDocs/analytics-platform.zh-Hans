@@ -5,9 +5,9 @@ exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '807'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
