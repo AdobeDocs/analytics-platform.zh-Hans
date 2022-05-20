@@ -6,9 +6,9 @@ feature: CJA Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '459'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Analysis Workspace 是一款通过浏览器即可使用的灵活工具，可让�
 
 ### 组件
 
-**组件**&#x200B;包含维度、量度、筛选器或日期范围，所有这些组件都可以合并到一个&#x200B;**[!UICONTROL 自由格式表]**&#x200B;中，以便开始回答您的业务问题。请务必先熟悉每个[组件类型](/help/components/overview.md)，然后再开始投入分析。掌握组件术语后，即可开始拖放至&#x200B;**[!UICONTROL 自由格式表]**&#x200B;以[构建分析](/help/analysis-workspace/build-workspace-project/freeform-overview.md)。
+**组件**&#x200B;包含维度、量度、过滤器或日期范围，所有这些组件都可以合并到一个&#x200B;**[!UICONTROL 自由格式表]**&#x200B;中，以便开始回答您的业务问题。请务必先熟悉每个[组件类型](/help/components/overview.md)，然后再开始投入分析。掌握组件术语后，即可开始拖放至&#x200B;**[!UICONTROL 自由格式表]**&#x200B;以[构建分析](/help/analysis-workspace/build-workspace-project/freeform-overview.md)。
 
 ![](assets/build-components.png)
 
