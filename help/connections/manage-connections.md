@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1808'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 98%
 
 * 它让您能够发现因错误配置&#x200B;**导致的数据不一致**。您是否丢失了行？如果是，那么丢失了哪些行？为什么？您是否错误配置了连接并因此导致 CJA 中数据丢失？
 
-以下是有关新连接管理器的视频：
+以下是关于新连接管理器的视频：
 
 >[!VIDEO](https://video.tv.adobe.com/v/342097/?quality=12&learn=on)
 
@@ -45,9 +45,9 @@ ht-degree: 98%
 | 连接信息 | 单击连接名称旁边的信息图标以查看以下信息：![查看连接信息](assets/conn-info.png) |
 | 编辑连接 | 单击连接名称旁边的省略号 (...)，然后单击[!UICONTROL 编辑]。![编辑连接](assets/conn-edit-delete.png) 有关更多信息，请参阅下面的“编辑连接”。 |
 | 删除连接 | 单击连接名称旁边的省略号 (...)，然后单击[!UICONTROL 删除]。更多信息参见“删除连接”标题下的内容。 |
-| 创建数据视图 | 单击连接名称旁边的省略号 (...)，然后单击[!UICONTROL 创建数据视图]。此操作基于这一连接创建新的数据视图。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=zh-Hans) |
+| 创建数据视图 | 单击连接名称旁边的省略号 (...)，然后单击[!UICONTROL 创建数据视图]。此操作基于这一连接创建新的数据视图。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html) |
 | [!UICONTROL 数据集] | 作为连接一部分的数据集。您可以单击超链接来查看连接中的全部数据集。单击一个数据集会在 Adobe Experience Platform 中在新的选项卡中打开该数据集。 |
-| [!UICONTROL 沙盒] | 此连接从中获取其数据集的 [Adobe Experience Platform 沙盒](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=zh-Hans)。这是您在首次创建连接时选择的沙盒。不能更改。 |
+| [!UICONTROL 沙盒] | 此连接从中获取其数据集的 [Adobe Experience Platform 沙盒](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html)。这是您在首次创建连接时选择的沙盒。不能更改。 |
 | [!UICONTROL 所有者] | 创建连接的人员。 |
 | [!UICONTROL 导入数据集] | 您可以启用或禁用以前称为“数据流式传输”的东西。 |
 | [!UICONTROL 创建日期] | 首次创建连接的日期。 |
