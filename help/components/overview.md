@@ -5,9 +5,9 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 source-git-commit: 83a725ac746629874162827d30d5bdf8be0fa6dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '383'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 95%
 
 您可以管理以下组件：
 
-* [**批注**](/help/components/annotations/overview.md):将上下文数据细微差别和洞察传达给您的组织。 **此功能当前位于 [有限测试](/help/release-notes/releases.md).**
+* [**注释**](/help/components/annotations/overview.md)：向您的组织传达上下文数据的细微差别和见解。 **此功能当前正在进行 [小范围测试](/help/release-notes/releases.md)。**
 * [**过滤器**](filters/filters-overview.md)：排除部分数据，以重点关注常见的维度项目
 * [**计算量度**](calc-metrics/calc-metr-overview.md)：使用量度和公式作为新组件以便在报表中使用
 * [**日期范围**](date-ranges/overview.md)：自定义和优化 Analysis Workspace 中提供的日期范围
@@ -30,7 +30,7 @@ ht-degree: 95%
 
 Analysis Workspace 中的组件包括量度、维度、区段和时间粒度，您可以将这些组件拖放到项目中。您创建的自定义组件会被添加到这些面板中，例如自定义日期范围。
 
-要访问“组件”面板，请单击左边栏中的&#x200B;**[!UICONTROL 组件]**&#x200B;图标。您可以使用左边栏图标或[热键](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)在面板（空白面板、[自由格式面板](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)、[快速分析面板](/help/analysis-workspace/c-panels/quickinsight.md)或[归因 IQ](/help/analysis-workspace/c-panels/attribution.md) 面板）、[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)和“组件”之间切换。
+要访问“组件”面板，请单击左边栏中的&#x200B;**[!UICONTROL 组件]**&#x200B;图标。您可以使用左边栏图标或[热键](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)在面板（空白面板、[自由格式面板](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)、[快速分析面板](/help/analysis-workspace/c-panels/quickinsight.md)或[Attribution IQ](/help/analysis-workspace/c-panels/attribution.md) 面板）、[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)和“组件”之间切换。
 
 ![](assets/components.png)
 
