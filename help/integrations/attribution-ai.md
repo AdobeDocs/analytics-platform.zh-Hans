@@ -4,10 +4,10 @@ title: 将Attribution AI与CJA集成
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: 1ace9fcb67ec6d1460b5209e2987219ecec52ee2
+source-git-commit: d165b3aaca9f99bb23bcbfbcfbca9d2e96b3cfcb
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 3%
+source-wordcount: '908'
+ht-degree: 10%
 
 ---
 
@@ -19,14 +19,28 @@ ht-degree: 3%
 
 [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en)作为Adobe Experience Platform Intelligent Services的一部分，是一项多渠道算法归因服务，用于计算客户交互对特定结果的影响和增量影响。 借助Attribution AI，营销人员可以通过了解客户旅程各个阶段每个客户互动的影响来衡量和优化营销和广告支出。
 
-Attribution AI支持两类得分：算法和基于规则。 算法得分包括增量分数和受影响分数。
-
-* **影响分数** 将100%的转化点数分给营销渠道。
-* **增量分数** 首先，考虑即使没有营销，您也可以达到的转化基线。 此基线取决于AI对模式、季节性等的观察，这是因为现有的品牌认可、忠诚度和口碑。 剩余的点数按营销渠道进行划分。
-
-基于规则的分数包括 [!UICONTROL 首次接触], [!UICONTROL 最近联系], [!UICONTROL 线性], [!UICONTROL U型]和 [!UICONTROL 时间衰减]. Attribution AI支持3种Experience Platform模式：体验事件、Adobe Analytics和消费者体验事件。
-
 Attribution AI与Customer Journey Analytics(CJA)集成，以便Attribution AI针对数据运行模型，然后CJA将这些模型的输出导入为数据集，然后可将其与其余的CJA数据集集成。 然后，可以在CJA的数据视图和报表中利用启用Attribution AI的数据集。
+
+Attribution AI支持3种Experience Platform模式：体验事件、Adobe Analytics和消费者体验事件。
+
+Attribution AI支持两类得分：算法和基于规则。
+
+## 算法得分
+
+算法得分包括增量分数和受影响分数。
+
+* **[!UICONTROL 影响] 分数** 将100%的转化点数分给营销渠道。
+* **[!UICONTROL 增量] 分数** 首先，考虑即使没有营销，您也可以达到的转化基线。 此基线取决于AI对模式、季节性等的观察，这是因为现有的品牌认可、忠诚度和口碑。 剩余的点数按营销渠道进行划分。
+
+## 基于规则的分数
+
+基于规则的分数包括
+
+* **[!UICONTROL 首次接触]** 将100%的点数分给在归因回顾窗口中看到的首次接触点。
+* **[!UICONTROL 最近联系]** 将100%的点数分给转化前最近发生的接触点。
+* **[!UICONTROL 线性]** 将相同的点数分给导致转化的每个接触点。
+* **[!UICONTROL U型]** 将40%的点数分给首次交互，40%的点数分给最后交互，并将剩余20%的点数分给这两次交互之间的任意接触点。 对于具有单一接触点的转化，它将分得 100% 的点数。对于具有两个接触点的转化，两个接触点各分得 50% 的点数。
+* **[!UICONTROL 时间衰减]** 采用具有自定义半衰期参数的指数衰减，其默认值为7天。 每个渠道的权重，取决于在接触点启动与最终转化之间流逝的时间。用于确定点数的公式是 `2^(-t/halflife)`，其中 `t` 是接触点与转化之间流逝的时间。然后，所有接触点均被标准化为 100%。
 
 ## 工作流程
 
@@ -60,9 +74,15 @@ Attribution AI与Customer Journey Analytics(CJA)集成，以便Attribution AI针
 
 ![AAI项目](assets/aai-project2.png)
 
+**营销效果**
+
+比较和对比不同归因模型之间的接触点归因：
+
+![比较](assets/compare.png)
+
 **渠道互动**
 
-了解渠道交互，以了解哪些渠道可以最有效地与其他渠道一起使用：
+通过维恩图了解渠道交互，以了解哪些渠道可以最有效地与其他渠道一起使用：
 
 ![营销渠道重叠](assets/mc-overlap.png)
 
