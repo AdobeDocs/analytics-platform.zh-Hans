@@ -4,10 +4,10 @@ title: 将Attribution AI与CJA集成
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: acfa4086c525ed78b52e430c110ec1daca9d20a5
+source-git-commit: 1ace9fcb67ec6d1460b5209e2987219ecec52ee2
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 2%
+source-wordcount: '747'
+ht-degree: 3%
 
 ---
 
@@ -52,19 +52,27 @@ Attribution AI与Customer Journey Analytics(CJA)集成，以便Attribution AI针
 
 ![AAI维度](assets/aai-dims.png)
 
+**具有影响分数和增量分数的订单**
+
 在此，我们看到一个包含AAI数据的工作区项目，该项目显示了具有影响和增量得分的订单。 通过以下方式向下访问任何维度以了解归因：促销活动、产品组、用户区段、地理位置等。
 
 ![AAI项目](assets/aai-project.png)
 
 ![AAI项目](assets/aai-project2.png)
 
+**渠道互动**
+
 了解渠道交互，以了解哪些渠道可以最有效地与其他渠道一起使用：
 
 ![营销渠道重叠](assets/mc-overlap.png)
 
+**转化的热门路径**
+
 此表显示了转化的热门路径（消除了重复项），以帮助您设计和优化接触点：
 
 ![热门渠道](assets/top-channels.png)
+
+**转化前置时间**
 
 在此，我们可以看到在混合接触点中出现转化的前置时间。 它有助于优化前置时间：
 
@@ -80,6 +88,8 @@ Attribution AI与Customer Journey Analytics(CJA)集成，以便Attribution AI针
 | [!UICONTROL 订单外AAI平均天数] | 对于每个渠道，自订单后的平均天数。 |
 | [!UICONTROL AAI销售流程中的平均总天数] | 对于每个渠道，它接触的转化路径的平均总天数。 |
 | [!UICONTROL AVG触碰顺序] | 对于每个渠道，平均接触次数会偏离顺序。 |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Attribution AI和Attribution IQ之间的差异
 
