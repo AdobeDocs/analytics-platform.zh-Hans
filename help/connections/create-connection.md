@@ -4,7 +4,7 @@ description: 描述如何在 Customer Journey Analytics 中创建与 Platform �
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 36fc82cf2c075550ced98193fe50115af12974de
+source-git-commit: ffcffa3838419d49afda7598d81c672b36415260
 workflow-type: tm+mt
 source-wordcount: '2094'
 ht-degree: 70%
@@ -20,6 +20,8 @@ ht-degree: 70%
 * 您可以启用并请求每个数据集的回填数据。
 * 您可以编辑数据集，例如请求其他回填。
 * 您可以按数据集导入现有数据。
+
+>[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
 
 ## 创建和配置连接 {#create-connection}
 
