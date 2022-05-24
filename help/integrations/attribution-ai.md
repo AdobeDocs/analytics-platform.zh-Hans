@@ -4,9 +4,9 @@ title: 将Attribution AI与CJA集成
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: d165b3aaca9f99bb23bcbfbcfbca9d2e96b3cfcb
+source-git-commit: c37aaa63677fbe2f7a10aaef5aad5b0ad0a607c4
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '875'
 ht-degree: 10%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 10%
 
 [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en)作为Adobe Experience Platform Intelligent Services的一部分，是一项多渠道算法归因服务，用于计算客户交互对特定结果的影响和增量影响。 借助Attribution AI，营销人员可以通过了解客户旅程各个阶段每个客户互动的影响来衡量和优化营销和广告支出。
 
-Attribution AI与Customer Journey Analytics(CJA)集成，以便Attribution AI针对数据运行模型，然后CJA将这些模型的输出导入为数据集，然后可将其与其余的CJA数据集集成。 然后，可以在CJA的数据视图和报表中利用启用Attribution AI的数据集。
+Attribution AI与Customer Journey Analytics(CJA)集成，以便Attribution AI针对客户的营销接触点和转化数据源运行模型。 然后，CJA会将这些模型的输出作为数据集进行导入，或者也可以将其与CJA数据集的其余部分集成。 然后，可以在CJA的数据视图和报表中利用启用Attribution AI的数据集。
 
 Attribution AI支持3种Experience Platform模式：体验事件、Adobe Analytics和消费者体验事件。
 
@@ -66,6 +66,11 @@ Attribution AI支持两类得分：算法和基于规则。
 
 ![AAI维度](assets/aai-dims.png)
 
+>[!IMPORTANT]
+>
+>这些维度和量度不会以这种方式在本地命名。 这些是“友好名称”。 的 [Attribution AI中的命名约定](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) 遵循架构路径。 我们建议将AAI中的长架构路径名称重命名为CJA中更易用的简短名称（维度/量度）。 您可以在 **[!UICONTROL 数据视图]** > **[!UICONTROL 编辑数据视图]** > **[!UICONTROL 组件]** 选项卡> **[!UICONTROL 架构字段]** ->单击架构字段 — > **[!UICONTROL 组件名称]**.
+
+
 **具有影响分数和增量分数的订单**
 
 在此，我们看到一个包含AAI数据的工作区项目，该项目显示了具有影响和增量得分的订单。 通过以下方式向下访问任何维度以了解归因：促销活动、产品组、用户区段、地理位置等。
@@ -98,30 +103,18 @@ Attribution AI支持两类得分：算法和基于规则。
 
 ![前置时间](assets/lead-time.png)
 
-## 新CJA量度
-
-| 指标 | 描述 |
-| --- | --- |
-| [!UICONTROL 客户获取率] | 对于每个渠道，在它接触的转化路径中，渠道的百分比是起始者。 |
-| [!UICONTROL 播放器费率] | 对于每个渠道，在它接触的转化路径中，渠道的百分比是播放器。 |
-| [!UICONTROL 更近的比率] | 对于每个渠道，在它接触的转化路径中，渠道的百分比是“更近”。 |
-| [!UICONTROL 订单外AAI平均天数] | 对于每个渠道，自订单后的平均天数。 |
-| [!UICONTROL AAI销售流程中的平均总天数] | 对于每个渠道，它接触的转化路径的平均总天数。 |
-| [!UICONTROL AVG触碰顺序] | 对于每个渠道，平均接触次数会偏离顺序。 |
-
-{style=&quot;table-layout:auto&quot;}
-
 ## Attribution AI和Attribution IQ之间的差异
 
 因此，您何时应使用Attribution AI数据， [Attribution IQ](/help/analysis-workspace/attribution/overview.md)，是本机CJA功能吗？ 此表显示了功能上的一些差异：
 
 | 功能 | Attribution AI | Attribution IQ |
 | --- | --- | --- |
-| 小数归因 | 是 | 否 |
+| 增量归因吗？ | 是 | 否 |
 | 允许用户调整模型 | 是 | 是 |
 | 跨渠道归因吗(注意：AAI使用的拼合数据与CJA不同。) | 是 | 是 |
-| 包括增量分数和受影响的分数 | 是 | 否 |
+| 包括受影响的得分 | 是 | 是 |
 | ML建模吗？ | 是 | 是 |
-| 使用预测进行ML建模吗？ | 是 | 否 |
+| 基于区域的归因模型 | 是 | 是 |
+| 可以在模型中包含营销接触点 | 是 | 否 |
 
 {style=&quot;table-layout:auto&quot;}
