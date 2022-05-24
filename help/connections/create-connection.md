@@ -4,10 +4,10 @@ description: 描述如何在 Customer Journey Analytics 中创建与 Platform �
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: ffcffa3838419d49afda7598d81c672b36415260
+source-git-commit: 322961b416deb049010d9e4e3f2301300a116ee4
 workflow-type: tm+mt
-source-wordcount: '2094'
-ht-degree: 70%
+source-wordcount: '2148'
+ht-degree: 68%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 70%
    | **[!UICONTROL 连接名称]** | 输入连接的唯一名称。 |
    | **[!UICONTROL 连接说明]** | 描述此连接的用途。 |
    | **[!UICONTROL 沙盒]** | 在 Experience Platform 中选择一个沙盒，其中包含要创建连接的数据集。<p>Adobe Experience Platform 提供了可将单个 Platform 实例划分为多个单独的虚拟环境的[沙盒](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=zh-Hans)，以帮助开发和改进数字体验应用程序。您可以将沙盒视为包含数据集的“数据孤岛”。 沙盒可用于控制对数据集的访问。<p>选择沙盒后，左边栏会显示可从该沙盒中提取的所有数据集。 |
-   | **[!UICONTROL 启用滚动数据窗口]** | 此设置允许您在连接级别将CJA数据保留定义为以月（1个月、3个月、6个月等）为单位的滚动窗口。<p>数据保留基于事件数据集时间戳并且仅适用于事件数据集。配置文件或查找数据集不存在滚动数据窗口设置，因为没有适用的时间戳。 但是，如果您的连接包含任何用户档案或查询数据集（除一个或多个事件数据集之外），则该数据将保留在同一时间段。<p> 主要好处是，您只需存储或报告适用且有用的数据，并且可删除不再有用的旧数据。它可以帮助您保持在合同限制范围内，并减少超出预期成本的风险。 |
+   | **[!UICONTROL 启用滚动数据窗口]** | 如果选中此复选框，则允许您在连接级别将CJA数据保留定义为以月（1个月、3个月、6个月等）为单位的滚动窗口。<p>数据保留基于事件数据集时间戳并且仅适用于事件数据集。配置文件或查找数据集不存在滚动数据窗口设置，因为没有适用的时间戳。 但是，如果您的连接包含任何用户档案或查询数据集（除一个或多个事件数据集之外），则该数据将保留在同一时间段。<p> 主要好处是，您只需存储或报告适用且有用的数据，并且可删除不再有用的旧数据。它可以帮助您保持在合同限制范围内，并减少超出预期成本的风险。<p>如果您保留默认设置（未选中），则保留期将由Adobe Experience Platform数据保留设置取代。 如果您在Experience Platform中拥有25个月的数据，CJA将通过回填获取25个月的数据。 如果您在Platform中删除了其中的10个月，CJA将保留剩余的15个月。 |
    | **[!UICONTROL 添加数据集]** （见下文） | 如果数据集列表中未显示任何数据集，则添加数据集。 |
    | **[!UICONTROL 数据集名称]** | 选择您要提取到 Customer Journey Analytics 的一个或多个数据集，并单击&#x200B;**[!UICONTROL 添加]**。<p>（如果您有许多数据集可供选择，可以使用数据集列表上方的搜索数据集搜索栏搜索正确的数据集。） |
    | **[!UICONTROL 上次更新时间]** | 仅对于事件数据集，此设置会自动设置为Experience Platform中基于事件的架构的默认时间戳字段。 “N/A”表示此数据集不包含任何数据。 |
