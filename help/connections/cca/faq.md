@@ -4,10 +4,10 @@ description: 跨渠道分析常见问题解答
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: ht
-source-wordcount: '962'
-ht-degree: 100%
+source-git-commit: de12bb7758904fb471a2da940d5281a5937f7d21
+workflow-type: tm+mt
+source-wordcount: '975'
+ht-degree: 98%
 
 ---
 
@@ -65,3 +65,7 @@ CJA 中的某些指标与传统 Analytics 中的指标相似，但其他指标�
 | **事件数** = CJA 中已拼合数据的行数。通常，在传统 Adobe Analytics 中，该值应该接近&#x200B;**发生次数**。但是，请注意上面关于带有空白 `Persistent ID` 的行的常见问题解答。 | **事件数** = CJA 中未拼合数据的行数。通常，在传统 Adobe Analytics 中，该值应该接近&#x200B;**发生次数**。但请注意，如果任何事件在 AEP 数据湖内的未拼合数据中有空白 `Person ID`，这些事件将被从 CJA 中删除（不包括在内）。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html)。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html)。 |
 
 CJA 和传统 Adobe Analytics 中的其他指标可能类似。例如，Adobe Analytics [自定义事件](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html)（事件 1-100）的总数在传统 Adobe Analytics 和 CJA（无论是已拼合还是未拼合）中通常应该非常接近。但请注意，由于[功能差异](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-aa.html)（例如 CJA 与传统 Adobe Analytics 之间的事件重复数据删除），可能并不总是这样。
+
+## CCA能否使用身份映射字段？
+
+否，CCA当前不能使用identityMap字段。
