@@ -4,9 +4,9 @@ title: 将Attribution AI与CJA集成
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: c1e9fdb0e6d62da91b2b5c81eb21462890945b62
+source-git-commit: 320b34ca171bb835aa3b4a9a981cc19b14060ad9
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '859'
 ht-degree: 10%
 
 ---
@@ -54,7 +54,7 @@ Attribution AI支持两类得分：算法和基于规则。
 
 ### 步骤3:根据这些连接创建数据视图
 
-在CJA中， [创建一个或多个数据视图](/help/data-views/create-dataview.md) 包含Attribution AIXDM字段的ID。 （最好在此处显示屏幕截图。）
+在CJA中， [创建一个或多个数据视图](/help/data-views/create-dataview.md) 包含Attribution AIXDM字段的ID。
 
 ### 步骤4:在CJA工作区中报告AAI数据
 
@@ -64,7 +64,7 @@ Attribution AI支持两类得分：算法和基于规则。
 
 >[!IMPORTANT]
 >
->这些维度和量度不会以这种方式在本地命名。 这些是“友好名称”。 的 [Attribution AI中的命名约定](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) 遵循架构路径。 我们建议将AAI中的长架构路径名称重命名为CJA中更易用的简短名称（维度/量度）。 您可以在 **[!UICONTROL 数据视图]** > **[!UICONTROL 编辑数据视图]** > **[!UICONTROL 组件]** 选项卡> **[!UICONTROL 架构字段]** ->单击架构字段 — > **[!UICONTROL 组件名称]**.
+>这些维度和量度不会以这种方式在本地命名。 这些是“友好名称”。 的 [Attribution AI中的命名约定](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) 遵循架构路径。 我们建议在CJA中将长AAI架构路径名称重命名为更易用的短名称（维度/量度）。 您可以在 **[!UICONTROL 数据视图]** > **[!UICONTROL 编辑数据视图]** > **[!UICONTROL 组件]** 选项卡> **[!UICONTROL 架构字段]** ->单击架构字段 — > **[!UICONTROL 组件名称]**.
 
 
 **具有影响分数和增量分数的订单**
