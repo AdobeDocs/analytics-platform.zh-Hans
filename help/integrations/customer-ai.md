@@ -4,9 +4,9 @@ title: 将客户人工智能与CJA集成
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: c1e9fdb0e6d62da91b2b5c81eb21462890945b62
+source-git-commit: 23c257c6b00b919b8e70b4cef58b5187227ec2a6
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '873'
 ht-degree: 0%
 
 ---
@@ -17,14 +17,14 @@ ht-degree: 0%
 
 借助影响因素的帮助， Customer AI可以告诉您客户可能执行的操作以及原因。 此外，营销人员还可以从Customer AI预测和分析中受益，通过提供最合适的选件和消息传送来个性化客户体验。
 
-Customer AI依赖于个人行为数据和用户档案数据来进行倾向评分。 Customer AI具有灵活性，可以接收多个数据源，包括Adobe Analytics、Adobe Audience Manager、消费者体验事件数据和体验事件数据。 如果使用AEP Data Connector导入Adobe Audience Manager和Adobe Analytics数据，则模型会自动选取标准事件类型以对模型进行培训和评分。 如果您引入了自己的不含标准事件类型的体验事件数据集，则如果您希望在模型中使用任何相关字段，则需要将其映射为自定义事件或配置文件属性。 这可以在Customer AI配置步骤中完成。&#x200B;
+Customer AI依赖于个人行为数据和用户档案数据来进行倾向评分。 Customer AI具有灵活性，可以接收多个数据源，包括Adobe Analytics、Adobe Audience Manager、消费者体验事件数据和体验事件数据。 如果您使用Experience Platform源连接器导入Adobe Audience Manager和Adobe Analytics数据，则模型会自动选取标准事件类型以对模型进行培训和评分。 如果您引入了自己的不含标准事件类型的体验事件数据集，则如果您希望在模型中使用任何相关字段，则需要将其映射为自定义事件或配置文件属性。 这可以在Experience Platform的Customer AI配置步骤中完成。&#x200B;
 
 Customer AI与Customer Journey Analytics(CJA)集成，以便能够在CJA的数据视图和报表中利用支持Customer AI的数据集。 通过此集成，您可以
 
 * **跟踪一段时间内某个用户区段的倾向得分**. 示例用例：酒店客户在酒店的音乐会场地购买展示票的可能性有多大？
 * **分析哪些成功事件或属性与倾向得分相关联**.&#x200B;示例用例：我想了解与倾向得分相关的属性或成功事件。
 * **在不同的评分运行中跟踪客户倾向的登录流程**. 示例用例：我想了解那些最初是低倾向用户的人，随着时间的推移，他们变成了高倾向用户&#x200B;。
-* **查看倾向的分布**. 用例：我想了解倾向得分的分布情况，以便能够更准确地分配我的区段。&#x200B;示例：零售商希望以每件产品50美元的价格进行特定促销。  由于预算等原因，他们可能只想进行非常有限的升级。 他们分析数据并决定只定位其前80%以&#x200B;上的客户。
+* **查看倾向的分布**. 用例：我想了解倾向得分的分布情况，以便能够更准确地分配我的区段。&#x200B;示例：零售商希望以每件产品50美元的价格进行特定促销。 由于预算等原因，他们可能只想进行非常有限的升级。 他们分析数据并决定只定位其前80%以&#x200B;上的客户。
 * **查看一段时间内特定同类群组完成操作的倾向**. 用例：我希望跟踪特定同类群组的一段时间。 这类似于第一个同类群组，但您可以随着时间跟踪特定同类群组&#x200B;。 酒店业示例：营销人员可以跟踪他们的青铜层与银层，或银层与黄金层随时间推移的变化。 然后，他们可以看到每个同类群组在一段时间内预订酒店的倾向。&#x200B;
 
 ## 工作流程
@@ -33,7 +33,7 @@ Customer AI与Customer Journey Analytics(CJA)集成，以便能够在CJA的数�
 
 ### 步骤1:配置Customer AI实例
 
-准备数据并部署所有凭据和模式后，请首先按照 [配置Customer AI实例](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=en) 的双曲余切值。
+准备数据并部署所有凭据和模式后，请首先按照 [配置Customer AI实例](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=en) 指南。
 
 ### 步骤2:设置与Customer AI数据集的CJA连接
 
