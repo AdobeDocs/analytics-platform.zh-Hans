@@ -3,10 +3,10 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新 CJA 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 9a019184c87b6c2d4df009cac4ebd3499b11c8f1
+source-git-commit: 23258f85ae62375f498d7ac3a7ee24cc139a22a8
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 28%
+source-wordcount: '149'
+ht-degree: 30%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 28%
 | ----------- | ---------- | ----- |
 | 新的连接编辑和创建UI | 这种简化的体验允许您在数据集级别回填数据、启用滚动数据保留窗口、添加到连接并从中删除数据集。 [了解详情](/help/connections/create-connection.md) | 2022 年 5 月 18 日 |
 | Report BuilderCJA更新 | 包括计划和数据块管理器等功能。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html) | 2022 年 5 月 18 日 |
-| 客户AI集成 | 允许您在CJA中摄取Customer AI模型得分，以便在CJA Analysis Workspace中进一步分析。 [了解详情](/help/integrations/customer-ai.md) | 2022 年 5 月 25 日 |
-| Attribution AI集成 | 允许您在CJA中摄取Attribution AI模型得分，以便在CJA Analysis Workspace中进一步分析。 [了解详情](/help/integrations/attribution-ai.md) | 2022 年 5 月 25 日 |
+| 客户AI集成 | 允许您在CJA中摄取Customer AI模型得分，以便在CJA Analysis Workspace中进一步分析。 了解详情 - 即将推出 | 待定 |
+| Attribution AI集成 | 允许您在CJA中摄取Attribution AI模型得分，以便在CJA Analysis Workspace中进一步分析。 了解详情 - 即将推出 | 待定 |
 
 {style=&quot;table-layout:auto&quot;}
 
