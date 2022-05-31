@@ -1,15 +1,15 @@
 ---
-title: CJA连接概述
-description: 了解Customer Journey Analytics中的连接。
+title: CJA 连接概述
+description: 了解 Customer Journey Analytics 中的连接。
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: b164a78cd55a885c8dd724a448dcbe9ecdbcfff8
-workflow-type: tm+mt
+exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
+source-git-commit: d437e846e1242f2941b59fcdb712a8a31bedcbcd
+workflow-type: ht
 source-wordcount: '101'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
-
 
 # 连接概述
 
@@ -34,4 +34,3 @@ Customer Journey Analytics
 >[!IMPORTANT]
 >
 >您可以将多个 [!DNL Experience Platform] 数据集合并到单个连接中。
-
