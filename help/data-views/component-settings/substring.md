@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
 source-git-commit: 0178babcd5ae87b491e849c7517eb5792fb14af1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '911'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -114,8 +114,8 @@ CJA 使用 Perl 正则表达式语法的子集。 如果输入内容与正则表
 | `$+` | 输出与正则表达式中最后标记的子表达式匹配的内容。 |
 | `$$` | 输出字符串 `"$"`。 |
 
-## 有关捆绑维度的视频
+## 关于绑定维度的视频
 
-以下是有关捆绑维度的视频：
+以下是一段关于绑定维度的视频：
 
 >[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
