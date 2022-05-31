@@ -4,9 +4,9 @@ title: 面板概述
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '854'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 ![](assets/panel-overview.png)
 
-[!UICONTROL 快速见解]、[!UICONTROL 空白]和[!UICONTROL 自由格式]面板非常适合开始您的分析，而[!UICONTROL 归因 IQ] 本身有助于进行更深入的分析。项目中有一个 `"+"` 按钮，通过该按钮，您可以随时添加空白面板。
+[!UICONTROL 快速见解]、[!UICONTROL 空白]和[!UICONTROL 自由格式]面板非常适合开始您的分析，而[!UICONTROL Attribution IQ] 本身有助于进行更深入的分析。项目中有一个 `"+"` 按钮，通过该按钮，您可以随时添加空白面板。
 
 默认开始面板是[!UICONTROL 自由格式]面板，但您也可以将[空白面板](/help/analysis-workspace/c-panels/blank-panel.md)设置为默认值。
 
@@ -43,39 +43,39 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 ## 拖放区域 {#dropzone}
 
-使用面板拖放区域，您可以将筛选器和下拉筛选器应用到面板中的所有表格和可视化图表。您可以将一个或多个过滤器应用到面板。各个过滤器上方的标题可以通过单击铅笔图标进行修改，您也可以右键单击以将其全部删除。
+使用面板拖放区域，您可以将过滤器和下拉过滤器应用到面板中的所有表格和可视化图表。您可以将一个或多个过滤器应用到面板。各个过滤器上方的标题可以通过单击铅笔图标进行修改，您也可以右键单击以将其全部删除。
 
-### 筛选器
+### 过滤器
 
-将任意筛选器从左边栏拖放到面板拖放区域以开始筛选面板。
+将任意过滤器从左边栏拖放到面板拖放区域以开始筛选面板。
 
 ![](assets/segment-filter.png)
 
 ### 临时过滤器
 
-也可以将非过滤器组件直接拖入拖放区以创建临时过滤器，从而节省您转到过滤器生成器的时间和精力。 通过这种方式创建的筛选器自动定义为点击级别筛选器。通过单击筛选器旁的信息图标 (i)、单击铅笔形状编辑图标并在筛选器生成器中进行编辑，可以修改此定义。
+还可将非过滤器组件直接拖入放置区域以创建临时过滤器，从而为您节省转到过滤器生成器的时间和精力。通过这种方式创建的过滤器自动定义为点击级别过滤器。通过单击过滤器旁的信息图标 (i)、单击铅笔形状编辑图标并在过滤器生成器中进行编辑，可以修改此定义。
 
-临时过滤器是项目的本地过滤器，除非将其设为公用过滤器，否则不会显示在左边栏中。
+临时过滤器在项目本地，除非将其公开，否则此类过滤器不会出现在左边栏中。
 
 ![](assets/adhoc-segment-filter.png)
 
-### 下拉筛选器 {#dropdown-filter}
+### 下拉过滤器 {#dropdown-filter}
 
-除了筛选器，您还可通过下拉筛选器以可控方式与数据交互。例如，您可以为移动设备类型添加下拉筛选器，这样您就可以按照平板电脑、手机或台式机来筛选面板。
+除了过滤器，您还可通过下拉过滤器以可控方式与数据交互。例如，您可以为移动设备类型添加下拉过滤器，这样您就可以按照平板电脑、手机或台式机来筛选面板。
 
-下拉筛选器也可用于将多个项目合并在一起。例如，如果您有一个项目的多个版本，每个版本具有不同的“国家/地区”筛选器，您可以将所有版本合并为一个项目并添加“国家/地区”下拉筛选器。
+下拉过滤器也可用于将多个项目合并在一起。例如，如果您有一个项目的多个版本，每个版本具有不同的“国家/地区”过滤器，您可以将所有版本合并为一个项目并添加“国家/地区”下拉过滤器。
 
 ![](assets/dropdown-filter-intro.png)
 
 要创建下拉过滤器，请执行以下操作：
 
-1. 要使用[!UICONTROL 维度项]创建下拉过滤器，例如[!UICONTROL 营销渠道]维度，请在左边栏中单击该维度旁边的右箭头图标。这会打开所有可用项。从左边栏中选择一个或多个组件项，然后&#x200B;**在按住 Shift 键的同时**&#x200B;将其放到面板拖放区域中。这会将组件转换为下拉筛选器，而不是转换为单个筛选器。
-1. 要使用量度、筛选器或日期范围等其他组件创建下拉筛选器，请在左边栏中选择一种组件类型，然后&#x200B;**在按住 Shift 键的同时**&#x200B;将其放到面板拖放区域中。
+1. 要使用[!UICONTROL 维度项]创建下拉过滤器，例如[!UICONTROL 营销渠道]维度，请在左边栏中单击该维度旁边的右箭头图标。这会打开所有可用项。从左边栏中选择一个或多个组件项，然后&#x200B;**在按住 Shift 键的同时**&#x200B;将其放到面板拖放区域中。这会将组件转换为下拉过滤器，而不是转换为单个过滤器。
+1. 要使用量度、过滤器或日期范围等其他组件创建下拉过滤器，请在左边栏中选择一种组件类型，然后&#x200B;**在按住 Shift 键的同时**&#x200B;将其放到面板拖放区域中。
 1. 从下拉过滤器中选择以下选项之一来更改面板中的数据。您也可以通过选择&#x200B;**[!UICONTROL 无过滤器]**&#x200B;来不过滤任何面板数据。
 
 ![](assets/create-dropdown.png)
 
-[观看视频](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html?lang=zh-Hans)以详细了解如何将下拉过滤器添加到项目中。
+[观看视频](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html)以详细了解如何将下拉过滤器添加到项目中。
 
 ## 右键单击菜单 {#right-click}
 
