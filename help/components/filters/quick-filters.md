@@ -5,9 +5,9 @@ feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
 source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1048'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -105,7 +105,7 @@ ht-degree: 98%
 
 ## 仅用于项目的过滤器是什么？ {#project-only}
 
-仅用于项目的过滤器是指只适用于其所在当前项目的过滤器。此类过滤器在其他项目中不可用，无法共享给其他用户。 它们用于快速浏览数据，且无需在左边栏中创建和保存数据过滤器。 可以在面板拖放区域中使用快速过滤器或 [临时过滤器](/help/components/filters/ad-hoc-filters.md).
+仅用于项目的过滤器是指只适用于其所在当前项目的过滤器。此类过滤器在其他项目中不可用，无法共享给其他用户。 它们用于快速浏览数据，且无需在左边栏中创建和保存数据过滤器。 可以在面板拖放区域中使用快速过滤器或[临时过滤器](/help/components/filters/ad-hoc-filters.md)创建仅用于项目的过滤器。
 
 如果在[!UICONTROL 过滤器生成器]中打开了仅用于项目过滤器，则会显示“仅用于项目”通知。 如果不选中“使此过滤器可用…” 且不点击 **[!UICONTROL 应用]**，则该区段仍然是仅用于项目的过滤器。
 
