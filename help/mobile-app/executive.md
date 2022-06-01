@@ -5,16 +5,18 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: a72df772-edd0-45d7-bb64-80fbdaa12f6b
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
-source-wordcount: '1230'
-ht-degree: 100%
+source-git-commit: 76477d23a9ab6bd38118bae9f1af4dc506922fa7
+workflow-type: tm+mt
+source-wordcount: '1220'
+ht-degree: 99%
 
 ---
 
 # 执行用户快速入门指南
 
-通过阅读以下信息，执行用户可以了解有关使用和查看 Adobe Analytics 功能板的最佳实践。要观看演示此信息的视频，请参阅 [Adobe Analytics 功能板应用程序内体验](https://youtu.be/QXqQ_PkArbA)。
+通过阅读以下信息，执行用户可以了解有关使用和查看 Adobe Analytics 功能板的最佳实践。以下是演示此信息的视频：
+
+>[!VIDEO](https://video.tv.adobe.com/v/343460/)
 
 本指南旨在帮助执行用户阅读并理解 Analytics 功能板上的记分卡。该应用程序允许执行用户在其自己的移动设备上快速、轻松地查看广泛呈现的重要概要数据。
 

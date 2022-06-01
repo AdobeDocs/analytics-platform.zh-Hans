@@ -5,8 +5,8 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 929656128214ed0dc2fe2195ea691122edb6566e
-workflow-type: ht
+source-git-commit: 76477d23a9ab6bd38118bae9f1af4dc506922fa7
+workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 以下信息指示 Adobe Analytics 数据的策划人如何为执行用户配置和展示功能板。要开始操作，您可以观看 Adobe Analytics 功能板记分卡生成器视频：
 
->[!VIDEO](https://video.tv.adobe.com/v/34544)
+>[!VIDEO](https://video.tv.adobe.com/v/343458)
 
 >[!NOTE]
 >此页面的记分卡屏幕截图获取自 Adobe Analytics UI 而非 CJA。这些 UI 几乎完全相同。
