@@ -20,8 +20,7 @@ ht-degree: 100%
 >[!VIDEO](https://video.tv.adobe.com/v/23978/?quality=12)
 
 
-1. 
-   1. 将任意组件类型（维度、维度项、事件、指标、区段、区段模板、日期范围）拖入面板顶部的过滤器放置区域。 组件类型会自动转换为临时过滤器或 [快速过滤器](/help/components/filters/quick-filters.md)（如果兼容）。
+1. 将任意组件类型（维度、维度项、事件、指标、区段、区段模板、日期范围）拖入面板顶部的过滤器放置区域。 组件类型会自动转换为临时过滤器或 [快速过滤器](/help/components/filters/quick-filters.md)（如果兼容）。
 
    以下是如何为 Twitter 反向链接域创建过滤器的示例：
 
