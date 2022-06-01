@@ -4,10 +4,10 @@ description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: e9f83a6169addc7d7df1ef7902466008f66ef66b
+source-git-commit: ab60cb09e4578be0fda642a3669af7e4c796fd52
 workflow-type: tm+mt
-source-wordcount: '1416'
-ht-degree: 95%
+source-wordcount: '1414'
+ht-degree: 94%
 
 ---
 
@@ -34,8 +34,8 @@ ht-degree: 95%
 | 维度 | 全面支持；CJA 利用 XDM 并支持无限维度。CJA 未绑定到传统 Adobe Analytics 的自定义 eVar 或 prop。 |
 | 删除 GDPR | 全面支持；请注意，GDPR 现在与 [!UICONTROL Adobe Experience Platform] 协调处理。CJA 继承 [!UICONTROL Experience Platform] 对底层数据集所作的任何数据更改。 |
 | 列表变量/列表属性 | 全面支持；CJA 利用 XDM 并支持无限量的与 listVar 具有类似用法的字符串数组。 |
-| 促销变量持久性 | 通过[绑定维度和绑定指标](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension)提供完全支持（2022 年 1 月） |
-| 促销 eVar | 通过[绑定维度和绑定指标](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension)提供完全支持（2022 年 1 月） |
+| 促销变量持久性 | 通过 [绑定维度和绑定量度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
+| 促销 eVar | 通过 [绑定维度和绑定量度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
 | 量度 | 全面支持；CJA 利用体验数据模型 (XDM)，支持无限量的量度，并且不会与传统 Analytics 的自定义成功事件绑定。请注意，已对传统 Analytics 中的一些标准量度名称进行了重命名，例如：“访客”=“人员”、“访问”=“会话”、“点击”=“事件”。 |
 | 量度去重 | 全面支持 |
 | 移动记分卡/功能板 | 全面支持 |

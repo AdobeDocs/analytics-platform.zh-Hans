@@ -4,29 +4,29 @@ description: 描述如何在 Customer Journey Analytics 中创建与 Platform �
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 322961b416deb049010d9e4e3f2301300a116ee4
+source-git-commit: 90480aa725e75d8b8315c4cebcd9a2fd9cfe8823
 workflow-type: tm+mt
-source-wordcount: '2148'
-ht-degree: 68%
+source-wordcount: '2319'
+ht-degree: 89%
 
 ---
 
 # 创建连接
 
-最近在Customer Journey Analytics(CJA)中启动了新的连接工作流。 以下是新增功能的概述：
+最近在 Customer Journey Analytics (CJA) 中启动了一个新的连接工作流程。新的连接创建和编辑工作流体验通过辅助工作流将所有数据集和连接配置设置带到屏幕的中心。  我们提供了详细的数据集选择、配置和使用关键信息（如数据集类型、大小、架构、数据集ID、批处理状态、回填状态、人员ID等）查看体验，以降低错误连接配置的风险。 以下是新功能的概述：
 
-* 创建连接时，可以启用滚动数据保留窗口。
-* 您可以向连接添加数据集，也可以从连接中删除数据集。 (删除数据集会将其从连接中删除，并会影响任何关联的数据视图和基础Analysis Workspace项目。)
-* 您可以启用并请求每个数据集的回填数据。
-* 您可以编辑数据集，例如请求其他回填。
+* 您可以在创建连接时启用滚动数据保留窗口。
+* 您可以在连接中添加和删除数据集。（删除数据集会将其从连接中删除，并影响任何关联的数据视图和基础 Analysis Workspace 项目。）
+* 您可以为每个数据集启用和请求回填数据。
+* 您可以编辑数据集，例如请求另一个回填。
 * 您可以按数据集导入现有数据。
 
 >[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
 
 ## 创建和配置连接 {#create-connection}
 
-1. 在CJA中，单击 **[!UICONTROL 连接]** 选项卡。
-1. 单击 **[!UICONTROL 创建新连接]**.
+1. 在 CJA 中，单击&#x200B;**[!UICONTROL “连接”]**&#x200B;选项卡。
+1. 单击&#x200B;**[!UICONTROL “创建新连接”]**。
 
    ![连接设置](assets/create-conn1.png)
 
@@ -35,63 +35,63 @@ ht-degree: 68%
    | 设置 | 描述 |
    | --- | --- |
    | **[!UICONTROL 连接名称]** | 输入连接的唯一名称。 |
-   | **[!UICONTROL 连接说明]** | 描述此连接的用途。 |
-   | **[!UICONTROL 沙盒]** | 在 Experience Platform 中选择一个沙盒，其中包含要创建连接的数据集。<p>Adobe Experience Platform 提供了可将单个 Platform 实例划分为多个单独的虚拟环境的[沙盒](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=zh-Hans)，以帮助开发和改进数字体验应用程序。您可以将沙盒视为包含数据集的“数据孤岛”。 沙盒可用于控制对数据集的访问。<p>选择沙盒后，左边栏会显示可从该沙盒中提取的所有数据集。 |
-   | **[!UICONTROL 启用滚动数据窗口]** | 如果选中此复选框，则允许您在连接级别将CJA数据保留定义为以月（1个月、3个月、6个月等）为单位的滚动窗口。<p>数据保留基于事件数据集时间戳并且仅适用于事件数据集。配置文件或查找数据集不存在滚动数据窗口设置，因为没有适用的时间戳。 但是，如果您的连接包含任何用户档案或查询数据集（除一个或多个事件数据集之外），则该数据将保留在同一时间段。<p> 主要好处是，您只需存储或报告适用且有用的数据，并且可删除不再有用的旧数据。它可以帮助您保持在合同限制范围内，并减少超出预期成本的风险。<p>如果您保留默认设置（未选中），则保留期将由Adobe Experience Platform数据保留设置取代。 如果您在Experience Platform中拥有25个月的数据，CJA将通过回填获取25个月的数据。 如果您在Platform中删除了其中的10个月，CJA将保留剩余的15个月。 |
-   | **[!UICONTROL 添加数据集]** （见下文） | 如果数据集列表中未显示任何数据集，则添加数据集。 |
-   | **[!UICONTROL 数据集名称]** | 选择您要提取到 Customer Journey Analytics 的一个或多个数据集，并单击&#x200B;**[!UICONTROL 添加]**。<p>（如果您有许多数据集可供选择，可以使用数据集列表上方的搜索数据集搜索栏搜索正确的数据集。） |
-   | **[!UICONTROL 上次更新时间]** | 仅对于事件数据集，此设置会自动设置为Experience Platform中基于事件的架构的默认时间戳字段。 “N/A”表示此数据集不包含任何数据。 |
-   | **[!UICONTROL 架构]** | 这是 [模式](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) 基于在Adobe Experience Platform中创建数据集的位置。 |
-   | **[!UICONTROL 数据集类型]** | 对于您添加到此连接的每个数据集，Customer Journey Analytics会根据传入的数据自动设置数据集类型。 有 3 种不同的数据集类型：事件数据、配置文件数据和查找数据。有关数据集类型的说明，请参阅下表。 |
-   | **[!UICONTROL 人员 ID]** | 从可用身份的下拉列表中选择一个人员ID。 这些身份已在 Experience Platform 的数据集架构中定义。有关如何将身份映射用作人员 ID 的信息，请参见下文。<p>重要信息：如果没有可供选择的人员ID，则表示架构中尚未定义一个或多个人员ID。 请观看[这个视频](https://www.youtube.com/watch?v=G_ttmGl_LRU)，以了解如何在 Experience Platform 中定义身份。 |
-   | **[!UICONTROL 键]** | 仅用于查找数据集（例如_id）。 |
-   | **[!UICONTROL 匹配键]** | 仅用于查找数据集（例如_id）。 |
+   | **[!UICONTROL 连接说明]** | 描述这种连接的目的。 |
+   | **[!UICONTROL 沙盒]** | 在 Experience Platform 中选择一个沙盒，其中包含要创建连接的数据集。<p>Adobe Experience Platform 提供了可将单个 Platform 实例划分为多个单独的虚拟环境的[沙盒](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=zh-Hans)，以帮助开发和改进数字体验应用程序。您可以将沙盒视为包含数据集的“数据孤岛”。沙盒可用于控制对数据集的访问。<p>选择沙盒后，左边栏会显示可从该沙盒中提取的所有数据集。 |
+   | **[!UICONTROL 启用滚动数据窗口]** | 如果选中此复选框，则允许您在连接级别将CJA数据保留定义为以月（1个月、3个月、6个月等）为单位的滚动窗口。<p>数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此配置文件或查找数据集不存在滚动数据窗口设置。但是，如果您的连接包括任何配置文件或查找数据集（一个或多个事件数据集除外），则该数据将保留相同的时段。<p> 主要好处是，您只需存储或报告适用且有用的数据，并且可删除不再有用的旧数据。它可以帮助您保持在合同限制范围内，并减少超出预期成本的风险。<p>如果您保留默认设置（未选中），则保留期将由Adobe Experience Platform数据保留设置取代。 如果您在Experience Platform中拥有25个月的数据，CJA将通过回填获取25个月的数据。 如果您在Platform中删除了其中的10个月，CJA将保留剩余的15个月。 |
+   | **[!UICONTROL 添加数据集]**（见下文） | 如果您的数据集列表中没有数据集，请添加数据集。 |
+   | **[!UICONTROL 数据集名称]** | 选择您要提取到 Customer Journey Analytics 的一个或多个数据集，并单击 **[!UICONTROL 添加]**。<p>（如果您有许多数据集可供选择，可以使用数据集列表上方的搜索数据集搜索栏搜索正确的数据集。） |
+   | **[!UICONTROL 上次更新时间]** | 仅对于事件数据集，此设置会自动设置为 Experience Platform 中基于事件的架构的默认时间戳字段。“N/A”表示该数据集不包含数据。 |
+   | **[!UICONTROL 架构]** | 这是在 Adobe Experience Platform 中创建数据集的[架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hans)。 |
+   | **[!UICONTROL 数据集类型]** | 对于您添加到此连接的每个数据集，Customer Journey Analytics 会根据传入的数据自动设置数据集类型。有 3 种不同的数据集类型：事件数据、配置文件数据和查找数据。有关数据集类型的说明，请参见下表。 |
+   | **[!UICONTROL 人员 ID]** | 从可用标识的下拉列表中选择个人 ID。这些身份已在 Experience Platform 的数据集架构中定义。有关如何将身份映射用作人员 ID 的信息，请参见下文。<p>重要提示：如果没有可供选择的人员 ID，则意味着未在模式中定义一个或多个人员 ID。请查看[这个视频](https://www.youtube.com/watch?v=G_ttmGl_LRU)，以了解如何在 Experience Platform 中定义标识。 |
+   | **[!UICONTROL 键]** | 仅用于查找数据集（例如 _id）。 |
+   | **[!UICONTROL 匹配键]** | 仅用于查找数据集（例如 _id）。 |
    | **[!UICONTROL 导入新数据]** | 设置为开或关。 |
-   | **[!UICONTROL 回填数据]** |  |
+   | **[!UICONTROL 回填数据]** | 您可以根据事件时间戳请求回填数据集中的数据。 例如，您可以请求回填最近7天的数据，配置正确的人员ID，并测试您的连接以进行正确配置。 如果一切正常，您可以轻松回填所有剩余数据。<p>此外，您还可以启用按数据集导入新数据的功能。 例如，您可以仅为查找数据启用新数据的导入。 |
    | **[!UICONTROL 回填状态]** | 指示是否正在处理任何回填数据。 |
 
    {style=&quot;table-layout:auto&quot;}
 
 ## 添加和配置数据集 {#add-dataset}
 
-通过新的工作流，您可以在创建连接时添加Experience Platform数据集。
+新的工作流程允许您在创建连接时添加 Experience Platform 数据集。
 
-1. 在连接设置对话框中，单击 **[!UICONTROL 添加数据集]**.
-1. 选择一个或多个数据集并单击 **[!UICONTROL 下一个]**.
+1. 在连接设置对话框中，单击&#x200B;**[!UICONTROL 添加数据集]**。
+1. 选择一个或多个数据集并单击&#x200B;**[!UICONTROL 下一个]**。
 
-   请注意，连接中至少需要有一个事件数据集。
-1. 现在，可逐个配置数据集。
+   请注意，至少一个事件数据集需要成为连接的一部分。
+1. 现在逐一配置数据集。
 
    ![配置数据集](assets/add-dataset.png)
 
    | 设置 | 描述 |
    | --- | --- |
-   | **[!UICONTROL 人员 ID]** | 从可用身份的下拉列表中选择一个人员ID。 这些身份已在 Experience Platform 的数据集架构中定义。有关如何将身份映射用作人员 ID 的信息，请参见下文。<p>如果没有可供选择的人员 ID，则意味着架构中尚未定义一个或多个人员 ID。请观看这个视频，以了解如何在 Experience Platform 中定义身份。 |
-   | **[!UICONTROL 时间戳]** | 仅对于事件数据集，此设置会自动设置为Experience Platform中基于事件的架构的默认时间戳字段。 |
-   | **[!UICONTROL 导入新数据]** | 如果要创建持续连接，请选择此选项，以便要添加到此连接中数据集的任何新数据批次会自动流入 工作区 中。可设置为开或关。 |
-   | **[!UICONTROL 数据集回填]** | 单击 **[!UICONTROL 请求回填]** 来回填历史数据。<ul><li>您可以逐个回填每个数据集。</li><li>我们会优先处理新添加到此连接中数据集的新数据，因此这些新数据的滞后时间最短。</li><li>任何回填（历史）数据的导入速度都会比较慢。滞后时间受您拥有的历史数据量的影响。</li><li>Adobe Analytics Source Connector 最多可导入 13 个月的数据，而无论数据大小如何。</li></ul> |
-   | **[!UICONTROL 回填状态]** | 可能的状态指标包括：<ul><li>成功</li><li>X回填处理</li><li>关</li></ul> |
-   | **[!UICONTROL 数据集 ID]** | 此ID将自动生成。 |
-   | **[!UICONTROL 描述]** | 创建此数据集时对其的描述。 |
-   | **[!UICONTROL 数据集大小]** | 数据集的大小。 |
-   | **[!UICONTROL 架构]** | 这是基于其在Adobe Experience Platform中创建数据集的架构。 |
+   | **[!UICONTROL 人员 ID]** | 从可用标识的下拉列表中选择个人 ID。这些身份已在 Experience Platform 的数据集架构中定义。有关如何将身份映射用作人员 ID 的信息，请参见下文。<p>如果没有可供选择的人员 ID，则意味着架构中尚未定义一个或多个人员 ID。请查看这个视频，以了解如何在 Experience Platform 中定义标识。 |
+   | **[!UICONTROL 时间戳]** | 仅对于事件数据集，此设置会自动设置为 Experience Platform 中基于事件的架构的默认时间戳字段。 |
+   | **[!UICONTROL 导入新数据]** | 如果要创建持续连接，请选择此选项，以便要添加到此连接中数据集的任何新数据批次会自动流入工作区中。可以设置为开或关。 |
+   | **[!UICONTROL 数据集回填]** | 点击&#x200B;**[!UICONTROL 请求回填]**&#x200B;以回填历史数据。<ul><li>您可以单独回填每个数据集。</li><li>我们会优先处理新添加到此连接中数据集的新数据，因此这些新数据的滞后时间最短。</li><li>任何回填（历史）数据的导入速度都会比较慢。延迟受您拥有多少历史数据的影响。</li><li>Adobe Analytics Source Connector 最多可导入 13 个月的数据，而无论数据大小如何。</li></ul> |
+   | **[!UICONTROL 回填状态]** | 可能的状态指示符有：<ul><li>成功</li><li>X 回填处理</li><li>关</li></ul> |
+   | **[!UICONTROL 数据集 ID]** | 此 ID 是自动生成的。 |
+   | **[!UICONTROL 描述]** | 创建此数据集时给出的描述。 |
+   | **[!UICONTROL 数据集大小]** | 数据集大小。 |
+   | **[!UICONTROL 架构]** | 这是在 Adobe Experience Platform 中创建数据集的架构。 |
    | **[!UICONTROL 数据集]** | 数据集的名称。 |
-   | **[!UICONTROL 预览]**: `<dataset name>` | 预览包含日期、我的ID和标识符列的数据集。 |
-   | **[!UICONTROL 删除]** | 从连接中删除此数据集。 |
+   | **[!UICONTROL 预览]**: `<dataset name>` | 使用日期、我的 ID 和标识符列预览数据集。 |
+   | **[!UICONTROL 删除]** | 您可以删除或删除数据集，并更改人员ID，而不删除整个连接。 这降低了数据获取所涉及的成本，以及重新创建整个连接和相关数据视图的繁琐过程。 |
 
    {style=&quot;table-layout:auto&quot;}
 
 ## 连接预览 {#preview}
 
-要预览已创建的连接，请单击 **[!UICONTROL 连接预览]** 中。
+要预览您创建的连接，请单击连接设置对话框中的&#x200B;**[!UICONTROL 连接预览]**。
 
 ![连接预览](assets/create-conn4.png)
 
-此预览包含列出连接配置的列数。 显示的列类型取决于您的各个数据集。
+此预览包含许多列，列出了连接配置。显示的列类型取决于您的个人数据集。
 
 ## 数据集类型 {#dataset-types}
 
-对于您添加到此连接的每个数据集， [!UICONTROL Customer Journey Analytics] 会根据传入的数据自动设置数据集类型。
+对于您添加到此连接的每个数据集，[!UICONTROL Customer Journey Analytics] 会根据传入的数据自动设置数据集类型。
 
 >[!IMPORTANT]
 >
@@ -111,7 +111,7 @@ ht-degree: 68%
 
 现在，Customer Journey Analytics 支持将身份映射用作人员 ID。身份映射是一种允许人员上传键值对的映射数据结构。键是身份命名空间，值是包含身份值的结构。在上传的每一行/每个事件中，都存在身份映射，并且身份映射会相应地填充到每一行中。
 
-身份映射适用于任何满足以下要求的数据集：使用基于 [ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans) 类的架构。当您要将此类数据集包含在 CJA 连接中时，您既可以选择主 ID，也可以选择身份映射来作为字段：
+身份映射适用于任何满足以下要求的数据集：使用基于 [ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) 类的架构。当您要将此类数据集包含在 CJA 连接中时，您既可以选择主 ID，也可以选择身份映射来作为字段：
 
 ![](assets/idmap1.png)
 
@@ -120,7 +120,7 @@ ht-degree: 68%
 | 选项 | 描述 |
 |---|---|
 | **[!UICONTROL 使用主 ID 命名空间]** | 它会指示 CJA 逐行在“身份映射”中查找标记了“primary=true”属性的身份，并将该身份用作相应行的人员 ID。这意味着，它是 Experience Platform 中用于分区时使用的主密钥。此外，它还是用作 CJA 访客 ID 的主要候选项（取决于 CJA 连接中数据集的配置方式）。 |
-| **[!UICONTROL 命名空间]** | （此选项仅适用于未使用主 ID 命名空间的情况。）身份命名空间是 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=zh-Hans) 的组件，充当与身份相关的上下文指示器。如果指定了命名空间，CJA 会在每行的“身份映射”中搜索此命名空间密钥，并将该命名空间下的身份用作该行的人员 ID。请注意，由于 CJA 无法对所有行执行全方位数据集扫描以确定哪些命名空间实际存在，因此下拉列表中会列出所有可能的命名空间。您需要知道数据中指定了哪些命名空间；这些信息无法自动检测。 |
+| **[!UICONTROL 命名空间]** | （此选项仅适用于未使用主 ID 命名空间的情况。）身份命名空间是 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html) 的组件，充当与身份相关的上下文指示器。如果指定了命名空间，CJA 会在每行的“身份映射”中搜索此命名空间密钥，并将该命名空间下的身份用作该行的人员 ID。请注意，由于 CJA 无法对所有行执行全方位数据集扫描以确定哪些命名空间实际存在，因此下拉列表中会列出所有可能的命名空间。您需要知道数据中指定了哪些命名空间；这些信息无法自动检测。 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -139,7 +139,7 @@ ht-degree: 68%
 
 必须对连接中的每个数据集都进行此项计算。
 
-1. 转到 [Adobe Experience Platform 查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans)并创建新查询。
+1. 转到 [Adobe Experience Platform 查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html)并创建新查询。
 
    创建的查询将如下所示：
 
