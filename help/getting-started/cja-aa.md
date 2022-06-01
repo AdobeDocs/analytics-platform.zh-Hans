@@ -4,10 +4,10 @@ description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: ab60cb09e4578be0fda642a3669af7e4c796fd52
+source-git-commit: 401d22d7edbb751f1a377b2a8778d1c08ddea5c3
 workflow-type: tm+mt
-source-wordcount: '1414'
-ht-degree: 94%
+source-wordcount: '1432'
+ht-degree: 93%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 94%
 | 日期比较 | 全面支持 |
 | 日期范围 | 支持所有日期范围功能。 |
 | 夏令时 | 全面支持 |
-| 设备、浏览器、反向链接、技术维度 | 当 AEP 数据集包含特定 XDM 架构字段并符合 XDM Experience Event 类要求时，将自动包含这些维度。请参阅我们的[关于通过 ADC 支持哪些 Analytics 变量的文档](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)。对于未使用ADC将数据从Adobe Analytics填充到CJA，而改为使用AEP Web SDK数据收集的CJA客户，当前不支持基于设备查找的设备和维度，但将在不久的将来提供。 |
+| 设备、浏览器、反向链接、技术维度 | 当 AEP 数据集包含特定 XDM 架构字段并符合 XDM Experience Event 类要求时，将自动包含这些维度。请参阅我们的[关于通过 ADC 支持哪些 Analytics 变量的文档](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=zh-Hans)。<p>如果您不使用Adobe源连接器将数据从Adobe Analytics填充到CJA中，而是使用Experience PlatformWeb SDK数据收集，则当前不支持基于设备查找的设备和维度。 在不久的将来，将支持这些功能。 |
 | 维度 | 全面支持；CJA 利用 XDM 并支持无限维度。CJA 未绑定到传统 Adobe Analytics 的自定义 eVar 或 prop。 |
 | 删除 GDPR | 全面支持；请注意，GDPR 现在与 [!UICONTROL Adobe Experience Platform] 协调处理。CJA 继承 [!UICONTROL Experience Platform] 对底层数据集所作的任何数据更改。 |
 | 列表变量/列表属性 | 全面支持；CJA 利用 XDM 并支持无限量的与 listVar 具有类似用法的字符串数组。 |
@@ -52,6 +52,8 @@ ht-degree: 94%
 | 虚拟报表包 | 全面支持；现在称为[数据视图](/help/data-views/create-dataview.md)。 |
 | VRS 组件管理 | 全面支持；现在是数据视图的一部分。 |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## 受支持，但有注意事项
 
 | 功能 | 注释 |
@@ -69,14 +71,18 @@ ht-degree: 94%
 | 项目共享 | 仅支持在 CJA 用户之间共享项目，不支持 CJA 与传统 Analysis Workspace 之间共享项目。 |
 | 可视化图表 | 除地图可视化图表外，支持所有可视化图表。 |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## 部分支持
 
 | 功能 | 注释 |
 | --- | --- |
 | 机器人筛选 | 对于基于 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) 的数据集，将应用机器人筛选。[!UICONTROL Experience Platform] 或 CJA 不会对其他数据集应用常规机器人筛选逻辑。 |
-| 媒体分析 | 媒体数据可作为 Analytics Source Connector 的一部分提供。 |
 | 面板 | 全面支持空白面板、“归因”面板、“任意形状”面板和“快速分析”面板。不支持“区段比较”面板、“Analytics for Target (A4T)”面板和“媒体并发查看者”面板。 |
 | 处理规则 | 对于基于 Analytics Data Connector 的数据集，仍会应用处理规则。[Adobe Experience Platform 中的数据准备功能](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html)也可以取代处理将直接进入 Platform 的数据的规则。 |
+| Streaming Media Analytics | 媒体数据作为 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## 目前不支持，但计划将会提供支持
 
@@ -94,6 +100,8 @@ ht-degree: 94%
 | 区段发布（将区段从工作区发送到 Experience Cloud） | 计划将会提供支持。在 CJA 中将被称为“受众发布”。 |
 | 新的与重复的会话报告 | 计划将会提供支持，但有一些注意事项。 |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## 尚未计划提供支持
 
 | 功能 | 注释 |
@@ -104,6 +112,8 @@ ht-degree: 94%
 | 数据馈送 | 尚未计划提供支持。 |
 | 概要数据源 | 尚未计划提供支持。 |
 | 交易 ID 数据源 | 尚未计划提供支持。 |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## 将永远不支持
 
