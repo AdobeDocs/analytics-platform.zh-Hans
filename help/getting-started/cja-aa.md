@@ -4,10 +4,10 @@ description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 146c8b9b4918c753391484dc1267e1cb90380525
+source-git-commit: e9f83a6169addc7d7df1ef7902466008f66ef66b
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 99%
+source-wordcount: '1416'
+ht-degree: 95%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 99%
 | 日期比较 | 全面支持 |
 | 日期范围 | 支持所有日期范围功能。 |
 | 夏令时 | 全面支持 |
+| 设备、浏览器、反向链接、技术维度 | 当 AEP 数据集包含特定 XDM 架构字段并符合 XDM Experience Event 类要求时，将自动包含这些维度。请参阅我们的[关于通过 ADC 支持哪些 Analytics 变量的文档](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)。对于未使用ADC将数据从Adobe Analytics填充到CJA，而改为使用AEP Web SDK数据收集的CJA客户，当前不支持基于设备查找的设备和维度，但将在不久的将来提供。 |
 | 维度 | 全面支持；CJA 利用 XDM 并支持无限维度。CJA 未绑定到传统 Adobe Analytics 的自定义 eVar 或 prop。 |
 | 删除 GDPR | 全面支持；请注意，GDPR 现在与 [!UICONTROL Adobe Experience Platform] 协调处理。CJA 继承 [!UICONTROL Experience Platform] 对底层数据集所作的任何数据更改。 |
 | 列表变量/列表属性 | 全面支持；CJA 利用 XDM 并支持无限量的与 listVar 具有类似用法的字符串数组。 |
@@ -57,7 +58,7 @@ ht-degree: 99%
 | --- | --- |
 | A4T | 通过 [Adobe Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans)中的字段提供支持。 |
 | 分类 | 现在称为“查找数据集”。Analytics 中使用的分类可以使用 Analytics Classifications Data Connector 导入 Experience Platform 和 CJA。 查找数据集也可以直接上传到 AEP 并在 CJA 中可用。 |
-| 自定义会话流程 | 支持除移动后台点击之外的所有自定义会话流程功能。 |
+| 自定义会话流程 | 支持除移动设备后台点击之外的所有自定义会话流程功能。 |
 | 客户属性 | 现在称为“个人资料数据集”，它们不会从 Experience Cloud 自动导入，而是必须先上传到 AEP，然后才可在 CJA 中使用。 |
 | [!UICONTROL 设备]、[!UICONTROL 浏览器]、[!UICONTROL 反向链接]、[!UICONTROL 技术]维度 | 当 AEP 数据集包含特定 XDM 架构字段并符合 XDM Experience Event 类要求时，将自动包含这些维度。请参阅我们的文档，[了解通过 Analytics Source Connector 哪些 Analytics 变量受支持](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html)。对于未使用 Source Connector 将数据从 Adobe Analytics 填充到 CJA 中，而是使用 AEP Web SDK 数据收集的 CJA 客户，当前不支持基于设备查找的[!UICONTROL 设备]和维度，但将在不久的将来支持。 |
 | 登录、退出和花费时间维度和量度 | 受支持（现在“进入次数”和“退出次数”称为“会话启动次数”和“会话结束次数”），但计算方式略有不同。 |
