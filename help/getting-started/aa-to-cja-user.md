@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: ht
-source-wordcount: '1456'
-ht-degree: 100%
+source-git-commit: c33176b695d5ea3417ff17fe3140589d803472ae
+workflow-type: tm+mt
+source-wordcount: '1457'
+ht-degree: 97%
 
 ---
 
@@ -34,7 +34,7 @@ CJA中的几项功能已重命名和重新设计，以符合行业标准。 一�
 
 ## 数据架构的更改 {#architecture}
 
-CJA从Adobe Experience Platform获取数据。 
+CJA从Adobe Experience Platform获取数据。 Experience Platform lets you centralize and standardize customer data and content from any system or channel and applies data science and machine learning to improve the design and delivery of personalized experiences.
 
 [](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html)有关 Platform 的更多详细信息，请参阅 [Adobe Experience Platform 体系架构概述](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html)。
 
@@ -76,9 +76,9 @@ Adobe已将“区段”组件重命名为“过滤器”，以更好地符合行
 
 除了区段更改的概念之外，区段容器也会更新。
 
-* **点击容器现在为“事件”容器**. [!UICONTROL 人员]容器包括访客在指定的时间范围内的每个会话和事件。
-* **访问容器现在为“会话”容器**. 通过[!UICONTROL 会话]容器可以识别页面交互、营销活动或特定会话的转化。
-* **现在，访客容器为 [!UICONTROL 人员] 容器**. [!UICONTROL 人员]容器包括访客在指定的时间范围内的每个会话和事件。
+* **点击容器现在为 [!UICONTROL 事件] 容器**. 的 [!UICONTROL 事件] 容器允许您根据各个页面查看次数/点击次数来划分访客信息。
+* **访问容器现在为 [!UICONTROL 会话] 容器**. 通过[!UICONTROL 会话]容器可以识别页面交互、营销活动或特定会话的转化。
+* **现在，访客容器为 [!UICONTROL 人员] 容器**. 的 [!UICONTROL 人员] 容器包括指定时间范围内访客的每个会话和事件。
 
 ## 对计算量度概念的更改
 
@@ -96,11 +96,11 @@ Adobe已将“区段”组件重命名为“过滤器”，以更好地符合行
 
 ## 对分类概念的更改
 
-例如，您可以上传将事件数据中的数字 ID 映射到产品名称的查找数据。请参阅 [将帐户级别的数据添加为查询数据集](/help/use-cases/b2b.md) 例如用例。
+&quot;Classifications&quot; are now known as &quot;Lookup datasets&quot;. Lookup datasets are used to look up values or keys found in your Event or Profile data. 例如，您可以上传将事件数据中的数字 ID 映射到产品名称的查找数据。请参阅 [将帐户级别的数据添加为查询数据集](/help/use-cases/b2b.md) 例如用例。
 
 ## 对客户属性概念的更改
 
-您可以选择想要包含的人员 ID。中定义的每个数据集 [!DNL Experience Platform] 自己定义了一个或多个人员ID集。
+&quot;Customer attributes&quot; are now known as &quot;Profile datasets&quot;. For example, it allows you to upload CRM data about your customers. 您可以选择想要包含的人员 ID。中定义的每个数据集 [!DNL Experience Platform] 自己定义了一个或多个人员ID集。
 
 ## 更改了Adobe识别访客的方式
 
