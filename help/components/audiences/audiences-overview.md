@@ -1,9 +1,9 @@
 ---
 title: CJA受众发布概述
 description: 了解Customer Journey Analytics中受众发布的概念
-source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
+source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '367'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 3%
 * 向此受众发送电子邮件。
 * 向此受众发送推送消息。
 * 在Adobe Journey Optimizer中使用受众进行旅程。
-* 通过AEP目标将受众导出到第三方
+* 通过Experience Platform目标将受众导出到第三方。
 
 ## 关键术语
 
@@ -34,5 +34,7 @@ ht-degree: 3%
 
 ## 后续步骤
 
+* [创建和发布受众](/help/components/audiences/publish.md)
+* [管理受众](/help/components/audiences/manage.md)
 
 

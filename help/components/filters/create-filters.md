@@ -2,10 +2,10 @@
 title: 创建过滤器
 description: 了解过滤器创建用户界面。
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
-source-git-commit: b907e62bfabd8cb42dc89d551d7b5285cb61298e
-workflow-type: ht
-source-wordcount: '368'
-ht-degree: 100%
+source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
+workflow-type: tm+mt
+source-wordcount: '371'
+ht-degree: 96%
 
 ---
 
@@ -41,10 +41,10 @@ ht-degree: 100%
 还有其他一些方法也可以将过滤器应用到项目中：
 
 | 操作 | 描述 |
-|--- |--- |
+| --- | --- |
 | 根据选定的内容创建过滤器 | 创建内联过滤器。该过滤器只适用于打开的项目并且不能另存为 CJA 过滤器。<p> 1. 选择要成为过滤器一部分的表行。  2. 右键单击选定的内容。3. 单击&#x200B;*从所选内容创建过滤器*。 |
-| “组件”>“新建过滤器” | 屏幕上会显示“过滤器生成器”。有关过滤器的更多信息，请参阅[过滤器生成器](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=zh-Hans)。 |
+| 工作区 [!UICONTROL 组件] > [!UICONTROL 新建过滤器] | 屏幕上会显示“过滤器生成器”。有关过滤器的更多信息，请参阅[过滤器生成器](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=zh-Hans)。 |
 | “共享”>“共享项目”或“共享”>“策划项目数据” | 在[策划并共享](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html?lang=zh-Hans#concept_4A9726927E7C44AFA260E2BB2721AFC6)中，了解应用到项目中的过滤器如何用于给收件人共享的分析当中。 |
-| 使用过滤器作为维度 | 视频：在 Analysis Workspace 中使用过滤器作为维度 |
+| 使用过滤器作为维度 | 请观看以下视频：在Analysis Workspace中使用过滤器作为Dimension |
 
 >[!VIDEO](https://video.tv.adobe.com/v/23974)
