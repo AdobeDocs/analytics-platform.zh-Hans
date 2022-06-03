@@ -1,9 +1,9 @@
 ---
 title: 创建受众并将其发布到实时客户资料
 description: 了解如何从Customer Journey Analytics发布受众
-source-git-commit: fbe6f346d35d5f80fcbc9ed69b3ab4730c0715d6
+source-git-commit: 7e9c2f58101aa8ed215b20d584d85f14410064fa
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '827'
 ht-degree: 7%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 7%
 >
 >此功能当前位于 [有限测试](/help/release-notes/releases.md).
 
-本主题讨论如何将在Customer Journey Analytics(CJA)中发现的受众发布到 [实时客户资料](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=cn) ，用于客户定位和个性化。
+本主题讨论如何创建和发布在Customer Journey Analytics(CJA)中发现的受众，并将其发布到 [实时客户资料](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=cn) ，用于客户定位和个性化。
 
 阅读此内容 [概述](/help/components/audiences/audiences-overview.md) 了解CJA受众的概念。
 
@@ -47,7 +47,7 @@ ht-degree: 7%
    | 刷新回顾时段 | 指定创建此受众时要在数据窗口中返回的距离。 最大值。 90天。 |
    | [!UICONTROL 一次性日期范围] | 希望发布一次性受众的日期范围。 |
    | [!UICONTROL 过滤器] | 过滤器是受众的主要输入。 您最多可以添加20个过滤器。 这些过滤器可以使用 `And` 或 `Or` 运算符。 |
-   | [!UICONTROL 查看样本 ID] | 此受众中的ID示例。 使用搜索栏搜索示例ID。<p>!![](assets/sample-ids.png) |
+   | [!UICONTROL 查看样本 ID] | 此受众中的ID示例。 使用搜索栏搜索示例ID。 |
 
    {style=&quot;table-layout:auto&quot;}
 
@@ -72,7 +72,23 @@ ht-degree: 7%
 
 1. 如果一切正常，请单击 **[!UICONTROL 发布]**.
 
+   如果一切正常，您将收到一条确认消息，指示受众已发布。
+
+1. 单击 **[!UICONTROL 在AEP中查看受众]** 消息中，您将转到Adobe Experience Platform中的区段UI。 有关详细信息，请参阅下文。
+
+## 在Experience Platform中使用CJA受众
+
+您可以转到 **[!UICONTROL 区段]** > **[!UICONTROL 创建区段]** > **[!UICONTROL 受众]** 选项卡> **[!UICONTROL CJA受众]**.
+
+您可以将CJA受众拖到AEP区段的区段定义中。
+
+![](assets/audiences-aep.png)
+
+如果您选择将此受众导出到AEP数据湖，它将显示为符合XDM个人配置文件架构类的数据集：
+
+![](assets/aep-datalake.png)
+
+
 ## 后续步骤
 
 * 要管理此受众，请转到 [管理UI](/help/components/audiences/manage.md).
-* 要在Adobe Experience Platform中与此受众合作，请转到此处。
