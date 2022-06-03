@@ -9,15 +9,15 @@ solution: Customer Journey Analytics
 source-git-commit: abdf9dc510ebf929be2ca6be02ea60a83785a6f7
 workflow-type: tm+mt
 source-wordcount: '464'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # Report Builder 中心
 
-使用Report Builder中心创建、更新、删除和管理数据块。
+使用 Report Builder 中心创建、更新和管理数据块。
 
-Report Builder中心包含“创建”和“管理”按钮、“命令”列表和“快速编辑”面板。
+Report Builder 中心包含“创建和管理”按钮、“命令”列表和“快速编辑”面板。
 
 <img src="./assets/hub51.png" width="50%"/>
 
@@ -65,6 +65,6 @@ Report Builder中心包含“创建”和“管理”按钮、“命令”列表
 
 **日期范围**&#x200B;显示所选数据块的日期范围。如果选择了具有多个日期范围的多个数据块，则&#x200B;**日期范围**&#x200B;链接显示&#x200B;*多个*。
 
-### 筛选器
+### 过滤器
 
-**筛选器**&#x200B;链接显示所选数据块使用的筛选器概要列表。如果选择应用了多个筛选器的多个数据块，则&#x200B;**筛选器**&#x200B;链接显示&#x200B;*多个*。
+**过滤器**&#x200B;链接显示所选数据块使用的过滤器概要列表。如果选择应用了多个过滤器的多个数据块，则&#x200B;**过滤器**&#x200B;链接显示&#x200B;*多个*。
