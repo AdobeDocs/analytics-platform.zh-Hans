@@ -1,15 +1,19 @@
 ---
 title: 管理在Customer Journey Analytics中创建的受众
 description: 了解如何管理Customer Journey Analytics中的受众
-source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
+source-git-commit: 9d19e1ea55a6c2de701d38cb417d6d39e753c640
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '260'
 ht-degree: 8%
 
 ---
 
 
 # 管理在Customer Journey Analytics中创建的受众
+
+>[!NOTE]
+>
+>此功能当前位于 [有限测试](/help/release-notes/releases.md).
 
 通过管理以前创建的受众，您可以
 

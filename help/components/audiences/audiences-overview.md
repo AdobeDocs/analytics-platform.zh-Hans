@@ -1,15 +1,19 @@
 ---
 title: CJA受众发布概述
 description: 了解Customer Journey Analytics中受众发布的概念
-source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
+source-git-commit: 9d19e1ea55a6c2de701d38cb417d6d39e753c640
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '374'
 ht-degree: 3%
 
 ---
 
 
 # CJA受众发布概述
+
+>[!NOTE]
+>
+>此功能当前位于 [有限测试](/help/release-notes/releases.md).
 
 您现在可以将在Customer Journey Analytics(CJA)中发现的受众发布到 [实时客户资料](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=cn) ，用于客户定位和个性化。 通过实时客户资料，您可以通过合并来自多个渠道（包括在线、离线、CRM和第三方）的数据，来全面了解每个客户。 利用用户档案，可将客户数据整合到统一视图中，为每次客户互动提供一个加盖时间戳的可操作帐户。
 
