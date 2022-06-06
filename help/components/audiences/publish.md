@@ -1,13 +1,13 @@
 ---
 title: 创建受众并将其发布到实时客户资料
 description: 了解如何从Customer Journey Analytics发布受众
-source-git-commit: 7e9c2f58101aa8ed215b20d584d85f14410064fa
+exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
+source-git-commit: b7f0173959445cda64de4307bea8ce22ba5048cd
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '929'
 ht-degree: 7%
 
 ---
-
 
 # 创建和发布受众
 
@@ -65,18 +65,20 @@ ht-degree: 7%
    | [!UICONTROL 预计的受众返回] | 此设置对于重新定位此受众中返回您网站的客户非常有用。 （换言之，此数据集中会再次显示这些内容。） <p>在此，您可以为预计可返回的客户数量选择时间范围（后7天、后2周、下月）。 |
    | [!UICONTROL 预计的返回] | 此数字可显示从下拉列表中选择的预计回访客户数量。 我们会查看此受众的历史流失率来预测此数字。 |
    | [!UICONTROL 预览量度] | 此设置允许您查看特定量度，以查看此受众对此量度的贡献是否过大，如“[!UICONTROL 收入]&#39;或&#39;[!UICONTROL 网站平均逗留时间]&#39;。 它会为您提供量度的聚合计数以及它所代表的总量百分比。 您可以选择数据视图中可用的任何量度。 |
-   | 命名空间已包含 | 与受众中的人员关联的特定命名空间。 示例包括ECID、CRM ID、电子邮件地址等。 |
-   | 沙盒 | 此受众所在的Experience Platform沙盒。 将此受众发布到平台后，您只能在此沙盒的范围内处理此受众。 |
+   | [!UICONTROL 命名空间已包含] | 与受众中的人员关联的特定命名空间。 示例包括ECID、CRM ID、电子邮件地址等。 |
+   | [!UICONTROL 沙盒] | 的 [Experience Platform沙盒](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=zh-Hans) 受众所在的位置。 将此受众发布到平台后，您只能在此沙盒的范围内处理此受众。 |
 
    {style=&quot;table-layout:auto&quot;}
 
-1. 如果一切正常，请单击 **[!UICONTROL 发布]**.
+1. 仔细检查受众配置，然后单击 **[!UICONTROL 发布]**.
 
    如果一切正常，您将收到一条确认消息，指示受众已发布。
 
-1. 单击 **[!UICONTROL 在AEP中查看受众]** 消息中，您将转到Adobe Experience Platform中的区段UI。 有关详细信息，请参阅下文。
+1. 单击 **[!UICONTROL 在AEP中查看受众]** ，您将转到 [区段UI](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=en) 在Adobe Experience Platform。 有关详细信息，请参阅下文。
 
 ## 在Experience Platform中使用CJA受众
+
+现在，CJA会采用已发布受众中的所有命名空间和ID组合，并将它们流式传输到实时客户资料中。 然后，RTCP检查每个命名空间/ID组合，并查找它可能包含的配置文件。 如果找到一个ID，它会将命名空间和ID作为区段成员资格属性添加到此配置文件中的其他ID。 例如，现在可以跨所有设备和渠道定位“user@adobe.com”。 如果未找到配置文件，则会创建一个新配置文件。
 
 您可以转到 **[!UICONTROL 区段]** > **[!UICONTROL 创建区段]** > **[!UICONTROL 受众]** 选项卡> **[!UICONTROL CJA受众]**.
 
