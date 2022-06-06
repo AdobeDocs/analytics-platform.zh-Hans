@@ -4,7 +4,7 @@ description: 不同类型的归因如何在维度项目之间划分点数。
 Feature: Attribution
 exl-id: 2ab6add7-9dc8-419d-96f7-e0c12e6b4761
 source-git-commit: d165b3aaca9f99bb23bcbfbcfbca9d2e96b3cfcb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1516'
 ht-degree: 100%
 
