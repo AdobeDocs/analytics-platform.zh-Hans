@@ -1,13 +1,13 @@
 ---
 title: CJA受众发布概述
 description: 了解Customer Journey Analytics中受众发布的概念
-source-git-commit: ba98ee1372c4ce396af3f41aeb98bc42ee6d02ce
+exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
+source-git-commit: cfc4824c214ba8b60877bebe10a697f706f9c2fb
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '401'
 ht-degree: 3%
 
 ---
-
 
 # CJA受众发布概述
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 >
 >此功能当前位于 [有限测试](/help/release-notes/releases.md).
 
-您现在可以创建并发布在Customer Journey Analytics(CJA)中发现的受众，以 [实时客户资料](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=cn) ，用于客户定位和个性化。 通过实时客户资料，您可以通过合并来自多个渠道（包括在线、离线、CRM和第三方）的数据，来全面了解每个客户。 利用用户档案，可将客户数据整合到统一视图中，为每次客户互动提供一个加盖时间戳的可操作帐户。
+您现在可以创建并发布在Customer Journey Analytics(CJA)中发现的受众，以 [实时客户资料](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=cn) (RTCP)，用于客户定位和个性化。 通过实时客户资料，您可以通过合并来自多个渠道（包括在线、离线、CRM和第三方）的数据，来全面了解每个客户。 利用用户档案，可将客户数据整合到统一视图中，为每次客户互动提供一个加盖时间戳的可操作帐户。
 
 发布受众为对CJA中的分析采取操作提供了一种清晰的方法。 这些操作可能包括：
 
@@ -23,6 +23,7 @@ ht-degree: 3%
 * 向此受众发送推送消息。
 * 在Adobe Journey Optimizer中使用受众进行旅程。
 * 通过Experience Platform目标将受众导出到第三方。
+* 使用从CJA中基于事件的数据派生的有用属性扩充实时客户配置文件，而无需将所有事件数据添加到RTCP。
 
 ## 关键术语
 
@@ -40,5 +41,3 @@ ht-degree: 3%
 
 * [创建和发布受众](/help/components/audiences/publish.md)
 * [管理受众](/help/components/audiences/manage.md)
-
-

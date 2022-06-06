@@ -2,10 +2,10 @@
 title: 创建受众并将其发布到实时客户资料
 description: 了解如何从Customer Journey Analytics发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: b7f0173959445cda64de4307bea8ce22ba5048cd
+source-git-commit: cfc4824c214ba8b60877bebe10a697f706f9c2fb
 workflow-type: tm+mt
-source-wordcount: '929'
-ht-degree: 7%
+source-wordcount: '971'
+ht-degree: 6%
 
 ---
 
@@ -72,13 +72,13 @@ ht-degree: 7%
 
 1. 仔细检查受众配置，然后单击 **[!UICONTROL 发布]**.
 
-   如果一切正常，您将收到一条确认消息，指示受众已发布。
+   如果一切正常，您将收到一条确认消息，指示受众已发布。 此受众只需一两分钟即可显示在Experience Platform中。 （即使对于拥有数百万会员的受众，也需要不到5分钟。）
 
 1. 单击 **[!UICONTROL 在AEP中查看受众]** ，您将转到 [区段UI](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=en) 在Adobe Experience Platform。 有关详细信息，请参阅下文。
 
 ## 在Experience Platform中使用CJA受众
 
-现在，CJA会采用已发布受众中的所有命名空间和ID组合，并将它们流式传输到实时客户资料中。 然后，RTCP检查每个命名空间/ID组合，并查找它可能包含的配置文件。 如果找到一个ID，它会将命名空间和ID作为区段成员资格属性添加到此配置文件中的其他ID。 例如，现在可以跨所有设备和渠道定位“user@adobe.com”。 如果未找到配置文件，则会创建一个新配置文件。
+现在，CJA会获取您已发布受众中的所有命名空间和ID组合，并将它们流式传输到实时客户资料(RTCP)中。 然后，RTCP检查每个命名空间/ID组合，并查找它可能包含的配置文件。 配置文件基本上是一组链接的命名空间、ID和设备。 如果找到配置文件，则会将命名空间和ID作为区段成员资格属性添加到此配置文件中的其他ID中。 例如，现在可以跨所有设备和渠道定位“user@adobe.com”。 如果未找到配置文件，则会创建一个新配置文件。
 
 您可以转到 **[!UICONTROL 区段]** > **[!UICONTROL 创建区段]** > **[!UICONTROL 受众]** 选项卡> **[!UICONTROL CJA受众]**.
 
