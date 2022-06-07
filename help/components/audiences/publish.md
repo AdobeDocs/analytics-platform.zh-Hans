@@ -2,10 +2,10 @@
 title: 创建受众并将其发布到实时客户资料
 description: 了解如何从Customer Journey Analytics发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: cfc4824c214ba8b60877bebe10a697f706f9c2fb
+source-git-commit: ffefe67eae2ff0dde80dbb09ed255486c3db3a61
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
