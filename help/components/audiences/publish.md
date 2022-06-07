@@ -2,7 +2,7 @@
 title: 创建受众并将其发布到实时客户资料
 description: 了解如何从Customer Journey Analytics发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: ffefe67eae2ff0dde80dbb09ed255486c3db3a61
+source-git-commit: abeefebafb9ac246ab6a0c18b5554370a6776b38
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >此功能当前位于 [有限测试](/help/release-notes/releases.md).
 
-本主题讨论如何创建和发布在Customer Journey Analytics(CJA)中发现的受众，并将其发布到 [实时客户资料](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=cn) ，用于客户定位和个性化。
+本主题讨论如何创建和发布在Customer Journey Analytics(CJA)中标识的受众，并将其发布到 [实时客户资料](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=cn) ，用于客户定位和个性化。
 
 阅读此内容 [概述](/help/components/audiences/audiences-overview.md) 了解CJA受众的概念。
 
@@ -42,9 +42,9 @@ ht-degree: 0%
    | [!UICONTROL 名称] | 受众的名称。 |
    | [!UICONTROL 标记] | 您希望为组织目的分配给受众的任何标记。 您可以使用预先存在的标记或输入新标记。 |
    | [!UICONTROL 描述] | 添加对受众的良好描述，以便将其与其他受众区分开来。 |
-   | [!UICONTROL 刷新频率] | 要刷新受众的频率。<ul><li>您可以选择创建一次性受众（默认），该受众无需刷新，例如，这将有助于创建特定的一次性营销活动。</li><li>您可以选择其他刷新间隔。 对于4小时频率，受众数量限制为150个，因为此刷新率非常需要处理。 对于其他间隔，没有最大受众数。</li></ul> |
+   | [!UICONTROL 刷新频率] | 要刷新受众的频率。<ul><li>您可以选择创建一次性受众（默认），该受众无需刷新。 例如，这可能有助于进行特定的一次性营销活动。</li><li>您可以选择其他刷新间隔。 对于4小时频率，受众数量限制为150个，因为此刷新率非常需要处理。 对于其他间隔，没有最大受众数。</li></ul> |
    | 过期日期 | 受众将停止刷新的时间。 默认为自创建日期起1年。 过期受众的处理方式与过期的计划报表类似 — 管理员会在受众过期前一个月收到一封电子邮件。 |
-   | 刷新回顾时段 | 指定创建此受众时要在数据窗口中返回的距离。 最大值。 90天。 |
+   | 刷新回顾时段 | 指定创建此受众时要在数据窗口中返回的距离。 最高为90天。 |
    | [!UICONTROL 一次性日期范围] | 希望发布一次性受众的日期范围。 |
    | [!UICONTROL 过滤器] | 过滤器是受众的主要输入。 您最多可以添加20个过滤器。 这些过滤器可以使用 `And` 或 `Or` 运算符。 |
    | [!UICONTROL 查看样本 ID] | 此受众中的ID示例。 使用搜索栏搜索示例ID。 |
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 1. 解释数据预览。
 
-   受众预览将显示在右边栏中。 它允许对您创建的受众进行高级分析。
+   受众预览将显示在右边栏中。 它允许对您创建的受众进行汇总分析。
 
    ![](assets/data-preview.png)
 
@@ -78,7 +78,8 @@ ht-degree: 0%
 
 ## 在Experience Platform中使用CJA受众
 
-现在，CJA会获取您已发布受众中的所有命名空间和ID组合，并将它们流式传输到实时客户资料(RTCP)中。 然后，RTCP检查每个命名空间/ID组合，并查找它可能包含的配置文件。 配置文件基本上是一组链接的命名空间、ID和设备。 如果找到配置文件，则会将命名空间和ID作为区段成员资格属性添加到此配置文件中的其他ID中。 例如，现在可以跨所有设备和渠道定位“user@adobe.com”。 如果未找到配置文件，则会创建一个新配置文件。
+
+现在，CJA会获取您已发布受众中的所有命名空间和ID组合，并将它们流式传输到实时客户资料(RTCP)中。 然后，RTCP检查每个命名空间/ID组合，并查找它可能包含的配置文件。 配置文件基本上是一组链接的命名空间、ID和设备。 如果找到配置文件，则会将命名空间和ID作为区段成员资格属性添加到此配置文件中的其他ID中。 例如，现在可以跨所有设备和渠道定位“user@adobe.com”。 如果未找到用户档案，则会创建一个新用户档案。
 
 您可以转到 **[!UICONTROL 区段]** > **[!UICONTROL 创建区段]** > **[!UICONTROL 受众]** 选项卡> **[!UICONTROL CJA受众]**.
 
