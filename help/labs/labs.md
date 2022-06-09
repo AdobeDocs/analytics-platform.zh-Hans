@@ -2,13 +2,13 @@
 title: Labs 用户指南
 description: 预览原型项目以进行Customer Journey Analytics
 role: Admin
-source-git-commit: 2e1a97b6ed2bfd1f8c03399b635a6135c26bce55
+exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
+source-git-commit: 6a44f9fe73de2a6a9bf9397bd31a27607707061b
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 84%
+source-wordcount: '460'
+ht-degree: 78%
 
 ---
-
 
 # [!UICONTROL Labs] 用户指南
 
@@ -68,8 +68,12 @@ ht-degree: 84%
 
 1. 单击&#x200B;**[!UICONTROL 提交]**&#x200B;以返回主“预览”门户。
 
+## CJA Labs原型
+
+* 自然语言分析生成器：提供您在自由格式表中分析的任何数据的自然语言摘要。
+* 可视化推荐程序：建议将可视化图表与您的数据很好地配对。
+
 ## 其他信息
 
 * 中的一些原型 [!UICONTROL Labs] 成为Customer Journey Analytics功能，而其他功能则不会。 您的反馈有助于我们做出合理决策，因此请查看原型并告知 Adobe 它们对您的重要性。
 * Labs 适用于所有 SKU 授权。
-
