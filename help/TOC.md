@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 本指南为 Customer Journey Analytics 提供支持，这是 Adobe 的新一代跨渠道分析解决方案，基于 Adobe Experience Platform。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: a8b59feccfb5bf1656dc3716fa3d022f8f74ee5a
+source-git-commit: 55be32601ebece4be6f384f4c7a58b3bb29567db
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '642'
 ht-degree: 99%
 
 ---
@@ -162,9 +162,10 @@ ht-degree: 99%
       + [创建注释](components/annotations/create-annotations.md)
       + [管理注释](components/annotations/manage-annotations.md)
       + [查看注释](components/annotations/view-annotations.md)
+      + [移动记分卡批注](components/annotations/mobile-annotations.md)
    + 受众 {#audiences}
       + [受众概述](components/audiences/audiences-overview.md)
-      + [创建和发布受众](components/audiences/publish.md)
+      + [创建并发布受众](components/audiences/publish.md)
       + [管理受众](components/audiences/manage.md)
    + 维度{#dimensions}
       + [预览维度](components/dimensions/view-dimensions.md)
