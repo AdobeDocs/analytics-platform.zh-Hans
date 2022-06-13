@@ -4,10 +4,10 @@ description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 401d22d7edbb751f1a377b2a8778d1c08ddea5c3
+source-git-commit: ab44c58a4089a5a48ad845579fb536f668d9f9f6
 workflow-type: tm+mt
-source-wordcount: '1432'
-ht-degree: 93%
+source-wordcount: '1440'
+ht-degree: 98%
 
 ---
 
@@ -21,24 +21,25 @@ ht-degree: 93%
 | --- | --- |
 | 异常检测 | 全面支持 |
 | Attribution IQ | 全面支持 |
+| 受众发布 | 全面支持. 在AA中称为区段发布(将区段从工作区发送到Experience Cloud)。 [受众发布](/help/components/audiences/audiences-overview.md) 将受众发送到experience Platform中的实时客户资料。 |
 | 计算量度 | 全面支持；请注意，传统 Analysis Workspace 中的任何现有计算量度都不会移植到 CJA。 |
 | 日历事件 | 全面支持. 日历事件已实施为 [批注](/help/components/annotations/overview.md) 中。 |
-| 分类规则生成器 | Full support. 已调用 [子字符串](/help/data-views/component-settings/substring.md) 在CJA中。 在报表时使用字符串操作，而不是查找数据集。 |
+| 分类规则生成器 | Full support. 已调用 [子字符串](/help/data-views/component-settings/substring.md) 在CJA中。在报表时使用字符串操作，而不是查找数据集。 |
 | 跨设备/跨渠道拼接 | 全面支持；请参阅[跨渠道分析](/help/connections/cca/overview.md)。 |
 | CSV 下载 | 全面支持 |
 | 自定义日历 | 全面支持 |
 | 日期比较 | 全面支持 |
 | 日期范围 | 支持所有日期范围功能。 |
 | 夏令时 | 全面支持 |
-| 设备、浏览器、反向链接、技术维度 | 当 AEP 数据集包含特定 XDM 架构字段并符合 XDM Experience Event 类要求时，将自动包含这些维度。请参阅我们的[关于通过 ADC 支持哪些 Analytics 变量的文档](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=zh-Hans)。<p>如果您不使用Adobe源连接器将数据从Adobe Analytics填充到CJA中，而是使用Experience PlatformWeb SDK数据收集，则当前不支持基于设备查找的设备和维度。 在不久的将来，将支持这些功能。 |
+| 设备、浏览器、反向链接、技术维度 | 当 AEP 数据集包含特定 XDM 架构字段并符合 XDM Experience Event 类要求时，将自动包含这些维度。请参阅我们的[关于通过 ADC 支持哪些 Analytics 变量的文档](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=zh-Hans)。<p>如果您未使用 Adobe Source Connector 将数据从 Adobe Analytics 填充到 CJA 中，而是使用 Experience Platform Web SDK 数据收集，则当前不支持基于设备查找的设备和维度。不久的将来将支持它们。 |
 | 维度 | 全面支持；CJA 利用 XDM 并支持无限维度。CJA 未绑定到传统 Adobe Analytics 的自定义 eVar 或 prop。 |
 | 删除 GDPR | 全面支持；请注意，GDPR 现在与 [!UICONTROL Adobe Experience Platform] 协调处理。CJA 继承 [!UICONTROL Experience Platform] 对底层数据集所作的任何数据更改。 |
 | 列表变量/列表属性 | 全面支持；CJA 利用 XDM 并支持无限量的与 listVar 具有类似用法的字符串数组。 |
-| 促销变量持久性 | 通过 [绑定维度和绑定量度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
-| 促销 eVar | 通过 [绑定维度和绑定量度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
+| 促销变量持久性 | 通过[绑定维度和绑定量度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension)提供全面支持 |
+| 促销 eVar | 通过[绑定维度和绑定量度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension)提供全面支持 |
 | 量度 | 全面支持；CJA 利用体验数据模型 (XDM)，支持无限量的量度，并且不会与传统 Analytics 的自定义成功事件绑定。请注意，已对传统 Analytics 中的一些标准量度名称进行了重命名，例如：“访客”=“人员”、“访问”=“会话”、“点击”=“事件”。 |
 | 量度去重 | 全面支持 |
-| 移动记分卡/功能板 | 全面支持 |
+| 移动记分卡/仪表板 | 全面支持 |
 | 面板 | 全面支持空白面板、“归因”面板、“任意形状”面板和“快速分析”面板。 |
 | PDF 导出 | 全面支持 |
 | 项目策划 | 全面支持 |
@@ -58,9 +59,9 @@ ht-degree: 93%
 
 | 功能 | 注释 |
 | --- | --- |
-| A4T | 通过 [Adobe Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans)中的字段提供支持。 |
-| 分类 | 现在称为“查找数据集”。Analytics 中使用的分类可以使用 Analytics Classifications Data Connector 导入 Experience Platform 和 CJA。 查找数据集也可以直接上传到 AEP 并在 CJA 中可用。 |
-| 自定义会话流程 | 支持除移动设备后台点击之外的所有自定义会话流程功能。 |
+| A4T | 通过 [Adobe Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)中的字段提供支持。 |
+| 分类 | 现在称为“查找数据集”。Analytics 中使用的分类可以使用 Analytics Classifications Data Connector 导入 Experience Platform 和 CJA。查找数据集也可以直接上传到 AEP 并在 CJA 中可用。 |
+| 自定义会话流程 | 支持除移动后台点击之外的所有自定义会话流程功能。 |
 | 客户属性 | 现在称为“个人资料数据集”，它们不会从 Experience Cloud 自动导入，而是必须先上传到 AEP，然后才可在 CJA 中使用。 |
 | [!UICONTROL 设备]、[!UICONTROL 浏览器]、[!UICONTROL 反向链接]、[!UICONTROL 技术]维度 | 当 AEP 数据集包含特定 XDM 架构字段并符合 XDM Experience Event 类要求时，将自动包含这些维度。请参阅我们的文档，[了解通过 Analytics Source Connector 哪些 Analytics 变量受支持](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html)。对于未使用 Source Connector 将数据从 Adobe Analytics 填充到 CJA 中，而是使用 AEP Web SDK 数据收集的 CJA 客户，当前不支持基于设备查找的[!UICONTROL 设备]和维度，但将在不久的将来支持。 |
 | 登录、退出和花费时间维度和量度 | 受支持（现在“进入次数”和“退出次数”称为“会话启动次数”和“会话结束次数”），但计算方式略有不同。 |
@@ -80,7 +81,7 @@ ht-degree: 93%
 | 机器人筛选 | 对于基于 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) 的数据集，将应用机器人筛选。[!UICONTROL Experience Platform] 或 CJA 不会对其他数据集应用常规机器人筛选逻辑。 |
 | 面板 | 全面支持空白面板、“归因”面板、“任意形状”面板和“快速分析”面板。不支持“区段比较”面板、“Analytics for Target (A4T)”面板和“媒体并发查看者”面板。 |
 | 处理规则 | 对于基于 Analytics Data Connector 的数据集，仍会应用处理规则。[Adobe Experience Platform 中的数据准备功能](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html)也可以取代处理将直接进入 Platform 的数据的规则。 |
-| Streaming Media Analytics | 媒体数据作为 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). |
+| 流媒体分析 | 媒体数据可作为 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) 的一部分提供。 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -97,7 +98,6 @@ ht-degree: 93%
 | 项目模板 | 计划将会提供支持。 |
 | 实时报告 | 计划将会提供支持。 |
 | 区段 IQ | 计划将会提供支持。 |
-| 区段发布（将区段从工作区发送到 Experience Cloud） | 计划将会提供支持。在 CJA 中将被称为“受众发布”。 |
 | 新的与重复的会话报告 | 计划将会提供支持，但有一些注意事项。 |
 
 {style=&quot;table-layout:auto&quot;}
