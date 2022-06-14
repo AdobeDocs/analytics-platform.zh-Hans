@@ -6,15 +6,15 @@ role: User, Admin
 exl-id: a72df772-edd0-45d7-bb64-80fbdaa12f6b
 solution: Customer Journey Analytics
 source-git-commit: 76477d23a9ab6bd38118bae9f1af4dc506922fa7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1220'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # 执行用户快速入门指南
 
-通过阅读以下信息，执行用户可以了解有关使用和查看 Adobe Analytics 功能板的最佳实践。以下是演示此信息的视频：
+通过阅读以下信息，执行用户可以了解有关使用和查看 Adobe Analytics 功能板的最佳实践。以下是一段演示此信息的视频：
 
 >[!VIDEO](https://video.tv.adobe.com/v/343460/)
 
