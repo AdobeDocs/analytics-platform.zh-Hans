@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 本指南为 Customer Journey Analytics 提供支持，这是 Adobe 的新一代跨渠道分析解决方案，基于 Adobe Experience Platform。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 20e495040c213c5fff0450cddc1899ce340f785d
+source-git-commit: d6c73fd1073f4e4db6f95824d881112a19b3c4bd
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 99%
+source-wordcount: '645'
+ht-degree: 98%
 
 ---
 
@@ -195,7 +195,7 @@ ht-degree: 99%
          + [标记计算指标](components/calc-metrics/cm-workflow/cm-tagging.md)
          + [批准计算指标](components/calc-metrics/cm-workflow/cm-approving.md)
          + [共享计算指标](components/calc-metrics/cm-workflow/cm-sharing.md)
-         + [计算指标管理器](components/calc-metrics/cm-workflow/cm-manager.md)
+         + [计算量度管理器](components/calc-metrics/cm-workflow/cm-manager.md)
       + [基本功能](components/calc-metrics/cm-functions.md)
       + [高级功能](components/calc-metrics/cm-adv-functions.md)
    + 日期范围 {#cja-date-ranges}
@@ -213,8 +213,9 @@ ht-degree: 99%
    + [执行用户快速入门指南](mobile-app/executive.md)
 + 用例 {#cja-usecases}
    + [Customer Journey Analytics 用例](use-cases/cja-usecases.md)
+   + [将具有不同架构的报表包组合在一起](use-cases/combine-report-suites.md)
    + [使用对象数组](use-cases/object-arrays.md)
-   + [Use binding dimensions and metrics](use-cases/binding-dimensions-metrics.md)
+   + [使用绑定维度和量度](use-cases/binding-dimensions-metrics.md)
    + [(B2B) 将帐户级别的数据作为查询数据集进行添加](use-cases/b2b.md)
    + [将 Marketo Engage 数据摄取到 AEP 并在 CJA 中报告](use-cases/marketo.md)
    + [将 AEP 受众引入 CJA](use-cases/ingest-aep-segments.md)
