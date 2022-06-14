@@ -1,59 +1,57 @@
 ---
 title: '移动记分卡注释    '
-description: 如何在移动设备记分卡中使用注释。
+description: 了解如何在移动记分卡中显示注释。
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: 3387d72e68cccd4df54fbc4f29f03409db131206
+source-git-commit: 20e495040c213c5fff0450cddc1899ce340f785d
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 0%
+source-wordcount: '384'
+ht-degree: 3%
 
 ---
 
+
 # 在移动记分卡中共享注释
 
-您可以在移动记分卡中显示在工作区中创建的注释。 这允许您直接在记分卡中将上下文数据细微差别和分析共享到您的组织和营销策划。
+>[!NOTE]
+>
+>此功能当前正在进行 [小范围测试](/help/release-notes/releases.md)。
 
-移动记分卡中的注释的工作方式与具有某些其他功能的工作区注释类似。 例如，在工作区中，您可以为日期范围创建表级别批注。 在移动设备记分卡中，您可以查看类别级别的批注。 这为移动记分卡用户提供了其他上下文。
-__添加示例 — 或描述差异的更多信息
+您可以在移动记分卡中显示在工作区中创建的注释。 这允许您直接在移动记分卡项目中共享与您的组织和促销活动有关的上下文数据细微差别和分析，这些项目可在Analytics功能板移动应用程序中查看。
 
-??Mobile具有哪些其他功能？
+## 移动记分卡中的表面批注
 
+要在移动记分卡中显示注释，请先从工作区项目或组件菜单中创建注释。
 
-## 向移动记分卡添加注释
-
-在移动记分卡中显示的注释是使用工作区注释创建方法在工作区中创建的。 有关创建注释的信息，请参阅 [创建注释](create-annotations.md).
-
+有关创建注释的信息，请参阅 [创建注释](create-annotations.md). 默认情况下，移动记分卡中会关闭注释，并且必须为要在移动记分卡中显示的每个记分卡启用注释。
 
 1. 打开注释。 要打开注释，请参阅 [打开或关闭注释](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/overview.html?lang=en#turn-annotations-on-or-off).
 
-1. 创建注释并将其分配给全局项目(_G)。 要在工作区中创建注释，请参阅 [创建注释](create-annotations.md).
+1. 创建注释，并确保已将其共享给所有项目。 要在工作区中创建注释，请参阅 [创建注释](create-annotations.md).
 
 1. 选择 **显示注释** ，以在移动记分卡中显示注释。
 
-要确认已选择显示批注，请转到 **项目** > **项目信息和设置**.
+![](assets/show-annotations.png)
+
+1. 确认已选择显示批注，请转到 **项目** > **项目信息和设置**.
+
+![](assets/project-info-settings.png)
 
 ## 在移动记分卡中查看注释
 
-在工作区中，您可以在生成器中验证注释。 您还可以使用预览模式查看带有注释的移动记分卡。
+启用注释后，注释图标会在记分卡生成器中显示。 注释仅在详细视图的图表和表格上显示。 注释在记分卡的主图块视图中不可见。
 
-要在移动设备上查看注释，请在移动记分卡中，点按注释图标。 向左或向右轻扫可查看其他批注。 这样，您就可以快速查看所有批注。
+![](assets/view-annotations.png)
 
-![](assets/mobile-annotations2.png)
+当注释图标可见时，无法在生成器画布中完全查看注释或与注释进行交互。 使用预览模式可查看应用程序中显示的批注并与之交互。 ![](assets/preview-icon.png)
 
-查看__圆环时，应用于量度的注释摘要位于右下角。
+在工作区中创建注释时，将选择注释颜色。 灰色批注表示存在多个批注。 ![](assets/gray-annotations1.png) ![](assets/gray-annotations2.png)
 
-![](assets/ann-mobile-summary.png)
+## 查看图表批注
 
-
-## 移动记分卡注释注意事项
-
-* 如果批注应用于类别，并且用户从该类别视图切换到该类别视图，则批注会消失。 注释仅在关联的类别中显示。
-
-* 默认情况下，注释处于关闭状态。
-
-
-## 注释颜色
-
-创建注释时，为记分卡中显示的注释分配特定颜色。 灰色显示的注释表示多个注释被分配到同一类别。 否则，注释将以在工作区中设置的颜色显示。
+| 日期 | 外观 |
+| --- | --- |
+| **一天** | ![](assets/single-day-mobile-annotations.png)<br></br> |
+| **日期范围** | ![](assets/date-range.png) |
+| **重叠注释** | ![](assets/overlapping-annotations.png)<br></br>要在Analytics功能板应用程序中查看注释详细信息，请点按注释图标。 <br></br>在图表中查看注释时，您可以向左和向右轻扫以导航图表中存在的所有注释。 在表中查看注释时，向左和向右轻扫可导航与表中该行项目关联的所有注释。 <br></br>![](assets/swipe-multiple-annotations.png) <br></br>在没有基于时间的图表中 *x轴*&#x200B;例如，点按右下角的图标，可查看应用于图表的注释，如圆环图或水平条形图。<br></br> ![](assets/charts-without-timebase.png) |
