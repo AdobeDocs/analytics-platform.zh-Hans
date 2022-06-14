@@ -1,19 +1,19 @@
 ---
 title: 将具有不同架构的报表包组合在一起
 description: 了解如何使用数据准备将具有不同架构的报表包组合在一起
-source-git-commit: c602ee5567e7ba90d1d302f990cc1d8fc49e5adc
+source-git-commit: 02483345326180a72a71e3fc7c60ba64a5f8a9d6
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1308'
 ht-degree: 3%
 
 ---
 
 
-# 将具有不同架构的报表包组合
+# 将不同架构的报表包组合在一起
 
-的 [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans) 提供了一种将报表包数据从Adobe Analytics导入Adobe Experience Platform以供Real-time Customer Data Platform和Customer Journey Analytics(CJA)等AEP应用程序使用的方法。 引入AEP的每个报表包都配置为单个源连接数据流，并且每个数据流都作为数据集登陆AEP数据湖中。 Analytics源连接器为每个报表包创建一个数据集。
+的 [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans) 将来自Adobe Analytics的报表包数据导入Adobe Experience Platform(AEP)，以供AEP应用程序(如Real-time Customer Data Platform和Customer Journey Analytics(CJA))使用。 引入AEP的每个报表包都配置为单个源连接数据流，并且每个数据流都作为数据集登陆AEP数据湖中。 Analytics源连接器为每个报表包创建一个数据集。
 
-CJA客户使用 [连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans) 将来自AEP数据湖的数据集集成到CJA的Analysis Workspace中。 但是，在连接中组合报表包时，需要使用AEP的 [数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans) 功能，以确保prop和eVar等Adobe Analytics变量在CJA中具有一致的含义。
+CJA客户使用 [连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans) 将来自AEP数据湖的数据集集成到CJA的Analysis Workspace中。 但是，在连接中组合报表包时，需要使用AEP的 [数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans) 功能。 其目的是确保Adobe Analytics变量（如prop和eVar）在CJA中具有一致的含义。
 
 ## 报表包之间的架构差异存在问题
 
@@ -21,8 +21,8 @@ CJA客户使用 [连接](https://experienceleague.adobe.com/docs/analytics-platf
 
 | 报表包A | 报表包B |
 | --- | --- |
-| eVar1 =>搜索词 | eVar1 =>业务单位 |
-| eVar2 =>客户类别 | eVar2 =>搜索词 |
+| eVar1 =搜索词 | eVar1 =业务单位 |
+| eVar2 =客户类别 | eVar2 =搜索词 |
 
 为简单起见，假设这两个报表包都只定义了这些eVar。
 
@@ -30,8 +30,8 @@ CJA客户使用 [连接](https://experienceleague.adobe.com/docs/analytics-platf
 
 - 创建用于摄取的Analytics源连接（不使用数据准备） **报表包A** 作为 **数据集A**.
 - 创建用于摄取的Analytics源连接（不使用数据准备） **报表包B** 作为 **数据集B**.
-- 创建名为 **所有报表包** 数据集A和数据集B的组合集。
-- 创建名为的CJA数据视图 **全局视图** 基于所有报表包连接。
+- 创建 [CJA连接](/help/connections/create-connection.md) 调用 **所有报表包** 数据集A和数据集B的组合集。
+- 创建 [CJA数据视图](/help/data-views/create-dataview.md) 调用 **全局视图** 基于所有报表包连接。
 
 如果不使用数据准备来解决数据集A和数据集B之间的架构差异，则“全局视图”数据视图中的eVar将包含以下混合值：
 
@@ -48,9 +48,9 @@ CJA客户使用 [连接](https://experienceleague.adobe.com/docs/analytics-platf
 
 ## 使用AEP数据准备解决报表包之间的架构差异
 
-AEP的数据准备功能与Analytics源连接器集成，可用于解决上述方案中所述的架构差异。 这会导致eVar在CJA数据视图中具有一致的含义。 （可以根据您的需要自定义下面使用的命名约定。）
+Experience Platform数据准备功能与Analytics源连接器集成，可用于解决上述方案中描述的架构差异。 这会导致eVar在CJA数据视图中具有一致的含义。 （可以根据您的需要自定义下面使用的命名约定。）
 
-1. 在为报表包A和报表包B创建源连接数据流之前，请在AEP中创建自定义字段组(我们将其称为 **统一字段** 在我们的示例中)，其中包含以下字段：
+1. 在为报表包A和报表包B创建源连接数据流之前， [创建自定义字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail.) 在AEP中(我们称之为 **统一字段** 在我们的示例中)，其中包含以下字段：
 
    | “统一字段”自定义字段组  |
    | --- |
@@ -58,7 +58,7 @@ AEP的数据准备功能与Analytics源连接器集成，可用于解决上述�
    | 业务单位 |
    | 客户类别 |
 
-1. 在AEP中创建新架构(我们将其称为 **统一模式** )。 将以下字段组添加到架构中：
+1. [创建新架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en) 在AEP中(我们称之为 **统一模式** )。 将以下字段组添加到架构中：
 
    | “统一架构”的字段组 |
    | --- |
@@ -88,7 +88,7 @@ AEP的数据准备功能与Analytics源连接器集成，可用于解决上述�
    | \_experience.analytics.customDimensions.eVars.eVar1 | _\&lt;path>_.Business_unit |
    | _experience.analytics.customDimensions.eVars.eVar2 | _\&lt;path>_.Search_term |
 
-1. 现在创建 **所有报表包** 连接（数据集A和数据集B的组合）。
+1. 现在，创建 **所有报表包** 连接（数据集A和数据集B的组合）。
 
 1. 创建 **全局视图** 数据视图。
 
@@ -106,9 +106,9 @@ AEP的数据准备功能与Analytics源连接器集成，可用于解决上述�
 
    您现在已将eVar1和eVar2从源报表包映射到三个新字段。 请注意，使用数据准备映射的另一个优势是，目标字段现在基于语义上有意义的名称（搜索词、业务部门、客户类别），而不是较不有意义的eVar名称(eVar1、eVar2)。
 
->[!NOTE]
->
->可以随时将统一字段自定义字段组和关联的字段映射添加到现有的Analytics源连接器数据流和数据集。 但是，这仅会影响将来的数据。
+   >[!NOTE]
+   >
+   >可以随时将统一字段自定义字段组和关联的字段映射添加到现有的Analytics源连接器数据流和数据集。 但是，这仅会影响将来的数据。
 
 ## 不仅仅是报表包
 
