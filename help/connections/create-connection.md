@@ -4,9 +4,9 @@ description: 描述如何在 Customer Journey Analytics 中创建与 Platform �
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 3d8394fa3d4fba036658161ca6120078902aad9a
+source-git-commit: 31d4faaf14adb7f11f975f77864074cd25a6e3bd
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2473'
 ht-degree: 92%
 
 ---
@@ -109,7 +109,7 @@ ht-degree: 92%
 
 ## 使用数字字段作为查询键和查询值 {#numeric}
 
-当您想要使用产品SKU上的数字字段（如COGS或利润）对字符串值进行分类时，这项功能非常有用。 它允许数值作为键值或值包含在查找中。 在查找架构中，您可能具有与产品名称、COGS、促销活动营销成本或利润率等相关的数值。 以下是Adobe Experience Platform中的查找模式示例：
+如果要向基于字符串的键字段添加数字字段（如成本或利润），则此功能非常有用。 它允许数值作为键值或值包含在查找中。 在查找架构中，您可能具有与产品名称、COGS、促销活动营销成本或利润率等相关的数值。 以下是Adobe Experience Platform中的查找模式示例：
 
 ![查找模式](assets/schema.png)
 
@@ -123,7 +123,7 @@ ht-degree: 92%
 
 Customer Journey Analytics支持将身份映射用于其人员ID。 身份映射是一种允许您上传键值对的映射数据结构。 键是身份命名空间，值是包含身份值的结构。在上传的每一行/每个事件中，都存在身份映射，并且身份映射会相应地填充到每一行中。
 
-身份映射适用于任何满足以下要求的数据集：使用基于 [ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) 类的架构。当您要将此类数据集包含在 CJA 连接中时，您既可以选择主 ID，也可以选择身份映射来作为字段：
+身份映射适用于任何满足以下要求的数据集：使用基于 [ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans) 类的架构。当您要将此类数据集包含在 CJA 连接中时，您既可以选择主 ID，也可以选择身份映射来作为字段：
 
 ![](assets/idmap1.png)
 
@@ -132,7 +132,7 @@ Customer Journey Analytics支持将身份映射用于其人员ID。 身份映射
 | 选项 | 描述 |
 |---|---|
 | **[!UICONTROL 使用主 ID 命名空间]** | 它会指示 CJA 逐行在“身份映射”中查找标记了“primary=true”属性的身份，并将该身份用作相应行的人员 ID。这意味着，它是 Experience Platform 中用于分区时使用的主密钥。此外，它还是用作 CJA 访客 ID 的主要候选项（取决于 CJA 连接中数据集的配置方式）。 |
-| **[!UICONTROL 命名空间]** | （此选项仅适用于未使用主 ID 命名空间的情况。）身份命名空间是 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html) 的组件，充当与身份相关的上下文指示器。如果指定了命名空间，CJA 会在每行的“身份映射”中搜索此命名空间密钥，并将该命名空间下的身份用作该行的人员 ID。请注意，由于 CJA 无法对所有行执行全方位数据集扫描以确定哪些命名空间实际存在，因此下拉列表中会列出所有可能的命名空间。您需要知道数据中指定了哪些命名空间；这些信息无法自动检测。 |
+| **[!UICONTROL 命名空间]** | （此选项仅适用于未使用主 ID 命名空间的情况。）身份命名空间是 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=zh-Hans) 的组件，充当与身份相关的上下文指示器。如果指定了命名空间，CJA 会在每行的“身份映射”中搜索此命名空间密钥，并将该命名空间下的身份用作该行的人员 ID。请注意，由于 CJA 无法对所有行执行全方位数据集扫描以确定哪些命名空间实际存在，因此下拉列表中会列出所有可能的命名空间。您需要知道数据中指定了哪些命名空间；这些信息无法自动检测。 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -151,7 +151,7 @@ Customer Journey Analytics支持将身份映射用于其人员ID。 身份映射
 
 必须对连接中的每个数据集都进行此项计算。
 
-1. 转到 [Adobe Experience Platform 查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html)并创建新查询。
+1. 转到 [Adobe Experience Platform 查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans)并创建新查询。
 
    创建的查询将如下所示：
 
