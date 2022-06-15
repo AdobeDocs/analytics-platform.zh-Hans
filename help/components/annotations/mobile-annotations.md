@@ -1,22 +1,19 @@
 ---
-title: '移动记分卡注释    '
+title: 移动记分卡注释
 description: 了解如何在移动记分卡中显示注释。
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: 20e495040c213c5fff0450cddc1899ce340f785d
+exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
+source-git-commit: e39f34486e54da188145092921a4ca3aa5f936fb
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 3%
+source-wordcount: '366'
+ht-degree: 2%
 
 ---
 
 
 # 在移动记分卡中共享注释
-
->[!NOTE]
->
->此功能当前正在进行 [小范围测试](/help/release-notes/releases.md)。
 
 您可以在移动记分卡中显示在工作区中创建的注释。 这允许您直接在移动记分卡项目中共享与您的组织和促销活动有关的上下文数据细微差别和分析，这些项目可在Analytics功能板移动应用程序中查看。
 
@@ -26,17 +23,17 @@ ht-degree: 3%
 
 有关创建注释的信息，请参阅 [创建注释](create-annotations.md). 默认情况下，移动记分卡中会关闭注释，并且必须为要在移动记分卡中显示的每个记分卡启用注释。
 
-1. 打开注释。 要打开注释，请参阅 [打开或关闭注释](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/overview.html?lang=en#turn-annotations-on-or-off).
+1. 打开注释。 要打开注释，请参阅 [打开或关闭注释](overview.md#annotations-on-off).
 
 1. 创建注释，并确保已将其共享给所有项目。 要在工作区中创建注释，请参阅 [创建注释](create-annotations.md).
 
 1. 选择 **显示注释** ，以在移动记分卡中显示注释。
 
-![](assets/show-annotations.png)
+   ![](assets/show-annotations.png)
 
 1. 确认已选择显示批注，请转到 **项目** > **项目信息和设置**.
 
-![](assets/project-info-settings.png)
+   ![](assets/project-info-settings.png)
 
 ## 在移动记分卡中查看注释
 
