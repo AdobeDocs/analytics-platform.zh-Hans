@@ -4,18 +4,14 @@ title: 配置流量可视化图表
 feature: Visualizations
 role: User, Admin
 exl-id: c2fdcc96-81ac-4d3b-b255-ff805b6ff0ea
-source-git-commit: 4ffe667793d5ba75d3fadcf713244afac0fe8183
+source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1378'
 ht-degree: 23%
 
 ---
 
 # 配置流量可视化图表
-
->[!NOTE]
->
->此新版本的 [!UICONTROL 流量] 可视化图表当前处于有限测试阶段。
 
 更新的流量可视化图表允许您了解源自网站或应用程序上特定转化事件或导致该事件的历程。 它会跟踪维度（和维度项目）或量度的路径。 流量允许您配置您感兴趣的路径的开始或结束，或分析通过维度或维度项目的所有这些路径。
 

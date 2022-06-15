@@ -3,22 +3,14 @@ description: 快速分析是一款面向新工作区用户的工具，可指导�
 title: 快速分析面板
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '1098'
+source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
+workflow-type: tm+mt
+source-wordcount: '1049'
 ht-degree: 100%
 
 ---
 
 # 快速分析面板
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
-
->[!IMPORTANT]
->
->**[!UICONTROL 快速分析]**&#x200B;面板当前正在进行小范围测试。[了解详情](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html)
 
 [!UICONTROL 快速分析]可为 [!UICONTROL Analysis Workspace] 的非分析师和新用户了解如何快速轻松地回答业务问题提供指导。此外，对于希望快速回答简单问题的高级用户来说，它也是一个不错的工具，无需自己制表。
 

@@ -4,9 +4,9 @@ title: 保存项目
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '461'
+source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
+workflow-type: tm+mt
+source-wordcount: '453'
 ht-degree: 100%
 
 ---
@@ -55,10 +55,6 @@ Adobe 提供了在离开页面之前进行保存的选项。离开现有项目�
 对于从未保存的&#x200B;**新**&#x200B;项目，未保存的更改将无法恢复。
 
 ## 打开以前的版本 {#previous-version}
-
->[!NOTE]
->
->以前的项目版本当前属于受限制版本。
 
 要打开以前的项目版本，请执行以下操作: 
 
