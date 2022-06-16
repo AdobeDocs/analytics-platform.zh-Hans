@@ -1,13 +1,13 @@
 ---
 title: 将具有不同架构的报表包组合在一起
 description: 了解如何使用数据准备将具有不同架构的报表包组合在一起
-source-git-commit: 02483345326180a72a71e3fc7c60ba64a5f8a9d6
+exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
+source-git-commit: b7446d204eab2530d188600aed7e4cc0c603bf1d
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1336'
 ht-degree: 3%
 
 ---
-
 
 # 将不同架构的报表包组合在一起
 
@@ -50,7 +50,14 @@ CJA客户使用 [连接](https://experienceleague.adobe.com/docs/analytics-platf
 
 Experience Platform数据准备功能与Analytics源连接器集成，可用于解决上述方案中描述的架构差异。 这会导致eVar在CJA数据视图中具有一致的含义。 （可以根据您的需要自定义下面使用的命名约定。）
 
-1. 在为报表包A和报表包B创建源连接数据流之前， [创建自定义字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail.) 在AEP中(我们称之为 **统一字段** 在我们的示例中)，其中包含以下字段：
+1. 在为报表包A和报表包B创建源连接数据流之前， [创建新架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en) 在AEP中(我们称之为 **统一模式** )。 将以下内容添加到架构中：
+
+   | &quot;统一模式&quot; |
+   | --- |
+   | **XDM ExperienceEvent** 类 |
+   | **Adobe Analytics ExperienceEvent模板** 字段组 |
+
+1. 向架构或 [创建自定义字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail) 并将其添加到架构中。 我们将创建一个新字段组并将其命名为 **统一字段**. 然后，我们将以下字段添加到新字段组：
 
    | “统一字段”自定义字段组  |
    | --- |
@@ -58,17 +65,7 @@ Experience Platform数据准备功能与Analytics源连接器集成，可用于�
    | 业务单位 |
    | 客户类别 |
 
-1. [创建新架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en) 在AEP中(我们称之为 **统一模式** )。 将以下字段组添加到架构中：
-
-   | “统一架构”的字段组 |
-   | --- |
-   | XDM体验事件 |
-   | Adobe Analytics体验事件模板 |
-   | 统一字段 |
-
-   创建的源连接数据流时 **报表包A**，选择 **统一模式** 用于数据流。
-
-1. 按如下方式添加自定义映射：
+1. 为创建源连接数据流 **报表包A**，选择 **统一模式** 用于数据流。 向数据流添加自定义映射，如下所示：
 
    | 报表包A源字段 | “统一字段”字段组中的目标字段 |
    | --- | --- |
@@ -77,11 +74,9 @@ Experience Platform数据准备功能与Analytics源连接器集成，可用于�
 
    >[!NOTE]
    >
-   >目标字段的XDM路径将取决于您如何设置自定义字段组。
+   >目标字段的XDM路径将取决于您如何构建自定义字段组。
 
-1. 创建的源连接数据流时 **报表包B**，再次选择 **统一模式** 用于数据流。
-
-   工作流显示两个字段存在描述符名称冲突。 这是因为eVar1和eVar2的描述符在报表包B中与在报表包A中不同。但我们已经知道这一点，因此我们可以安全地忽略冲突并使用如下自定义映射：
+1. 为创建源连接数据流 **报表包B**，再次选择 **统一模式** 用于数据流。 工作流将显示两个字段存在描述符名称冲突。 这是因为eVar1和eVar2的描述符在报表包B中与在报表包A中不同。但我们已经知道这一点，因此我们可以安全地忽略冲突并使用如下自定义映射：
 
    | 报表包B源字段 | “统一字段”字段组中的目标字段 |
    |---|---|
@@ -90,11 +85,9 @@ Experience Platform数据准备功能与Analytics源连接器集成，可用于�
 
 1. 现在，创建 **所有报表包** 连接（数据集A和数据集B的组合）。
 
-1. 创建 **全局视图** 数据视图。
+1. 创建 **全局视图** 数据视图。 忽略原始eVar字段，并仅包含统一字段字段字段组中的字段。
 
-   忽略原始eVar字段，并仅包含统一字段字段字段组中的字段。
-
-   CJA中的全局视图数据视图：
+   **全局视图** CJA中的数据视图：
 
    | 源字段 | 是否包含在数据视图中？ |
    | --- | --- | 
@@ -104,11 +97,11 @@ Experience Platform数据准备功能与Analytics源连接器集成，可用于�
    | _\&lt;path>_.Customer_category  | 是 |
    | _\&lt;path>_.Business_unit | 是 |
 
-   您现在已将eVar1和eVar2从源报表包映射到三个新字段。 请注意，使用数据准备映射的另一个优势是，目标字段现在基于语义上有意义的名称（搜索词、业务部门、客户类别），而不是较不有意义的eVar名称(eVar1、eVar2)。
+您现在已将eVar1和eVar2从源报表包映射到三个新字段。 请注意，使用数据准备映射的另一个优势是，目标字段现在基于语义上有意义的名称（搜索词、业务部门、客户类别），而不是较不有意义的eVar名称(eVar1、eVar2)。
 
-   >[!NOTE]
-   >
-   >可以随时将统一字段自定义字段组和关联的字段映射添加到现有的Analytics源连接器数据流和数据集。 但是，这仅会影响将来的数据。
+>[!NOTE]
+>
+>可以随时将统一字段自定义字段组和关联的字段映射添加到现有的Analytics源连接器数据流和数据集。 但是，这仅会影响将来的数据。
 
 ## 不仅仅是报表包
 
@@ -124,37 +117,34 @@ Experience Platform数据准备功能与Analytics源连接器集成，可用于�
 
 使用数据准备，您可以将AnalyticseVar1中的客户类别与呼叫中心数据中Some_field中的客户类别组合。 你可以这样做。 再次重申，可以根据您的需要更改命名约定。
 
-1. 创建自定义字段组：
+1. 在AEP中创建架构。 将以下内容添加到架构中：
+
+   | &quot;扩展模式&quot; |
+   | --- | 
+   | **XDM体验事件** 类 |
+   | **Adobe Analytics体验事件模板** 字段组 |
+
+1. 创建新字段组并将其添加到架构。 向字段组添加字段：
 
    | “客户信息”自定义字段组  |
    | --- |
    | Customer_category |
 
-1. 在AEP中创建架构。 将以下字段组添加到架构中：
-
-   | “扩展架构”的字段组 |
-   | --- | 
-   | XDM体验事件 |
-   | Adobe Analytics体验事件模板 |
-   | 客户信息 |
-
-1. 为创建数据流时 **数据集A**，选择 **扩展架构** 作为您的架构。
-
-1. 按如下方式添加自定义映射：
+1. 为创建数据流 **数据集A**，选择 **扩展架构** 作为您的架构。 向数据流添加自定义映射，如下所示：
 
    | 数据集A源字段 | “客户信息”字段组中的目标字段 |
    | --- | --- |
    | \_experience.analytics.customDimensions.eVars.eVar2 | _\&lt;path>_.Customer_category |
 
-1. 为创建数据流时 **数据集B**，再次选择 **扩展架构** 作为您的架构。
-
-1. 按如下方式添加自定义映射：
+1. 为创建数据流 **数据集B**，再次选择 **扩展架构** 作为您的架构。 向数据流添加自定义映射，如下所示：
 
    | 数据集B源字段 | “客户信息”字段组中的目标字段 |
    | --- | --- |
    | _\&lt;path>_.Some_field | _\&lt;path>_.Customer_category |
 
-   创建一个将数据集A和数据集B组合在一起的CJA连接。在CJA中使用您刚刚创建的CJA连接创建一个数据视图。 忽略原始eVar字段，并仅包含“客户信息”字段组中的字段。
+1. 创建一个将数据集A和数据集B组合在一起的CJA连接。
+
+1. 在CJA中使用刚刚创建的CJA连接创建数据视图。 忽略原始eVar字段，并仅包含“客户信息”字段组中的字段。
 
    CJA中的数据视图：
 
@@ -169,4 +159,3 @@ Experience Platform数据准备功能与Analytics源连接器集成，可用于�
 如上所述，数据准备允许您在多个Adobe Analytics报表包中将不同的字段映射到一起。 当您要将多个数据集中的数据合并到单个CJA连接中时，这在CJA中非常有用。 但是，如果您打算将报表包保留在单独的CJA连接中，但希望跨这些连接和数据视图使用一组报表，则更改CJA中的基础组件ID可让报表兼容，即使架构不同也是如此。 请参阅 [组件设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=en) 以了解更多信息。
 
 更改组件ID是仅限CJA的函数，不会影响Analytics源连接器中发送到实时客户配置文件和RTCDP的数据。
-
