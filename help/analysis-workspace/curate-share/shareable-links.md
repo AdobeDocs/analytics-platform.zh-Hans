@@ -3,18 +3,14 @@ description: 了解如何创建指向项目或可视化图表的可共享链接
 keywords: Analysis Workspace 共享
 title: 创建可共享链接
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
-workflow-type: ht
-source-wordcount: '327'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '294'
 ht-degree: 100%
 
 ---
 
 # 创建可共享链接
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace 提供了多种将项目共享给用户的方法，包括能够获得指向项目或项目特定部分的链接。收到链接的用户需要登录到 Customer Journey Analytics 后才能访问项目。
 

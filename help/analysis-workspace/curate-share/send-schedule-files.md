@@ -3,18 +3,14 @@ description: 您可以对贵组织中的收件人策划、共享和计划 PDF/CS
 title: “共享”菜单
 feature: Curate and Share
 exl-id: d7f92e59-18e9-43cd-8121-3c970434aaee
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '195'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '162'
 ht-degree: 100%
 
 ---
 
 # “共享”菜单
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 您可以在 Workspace **共享** 菜单中为您组织中的收件人策划、共享和计划 PDF/CSV 项目。
 

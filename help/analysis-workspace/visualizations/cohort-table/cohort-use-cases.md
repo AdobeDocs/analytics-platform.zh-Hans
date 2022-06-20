@@ -4,18 +4,14 @@ keywords: Analysis Workspace
 title: 同类群组分析用例
 feature: Visualizations
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '961'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '928'
 ht-degree: 100%
 
 ---
 
 # [!UICONTROL 同类群组分析]用例
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 [!UICONTROL 同类群组分析]的用例示例。
 
@@ -27,7 +23,7 @@ ht-degree: 100%
 
 **粒度**：按月，从 2015 年 1 月至 2015 年 6 月
 
-**包含量度**：应用程序安装次数
+**包含指标**：应用程序安装次数
 
 **返回量度**：会话次数或启动次数
 
@@ -39,9 +35,9 @@ ht-degree: 100%
 
 **粒度**：按月
 
-**包含量度**：下载链接
+**包含指标**：下载链接
 
-**返回量度**：购买付费的 Creative Cloud
+**返回指标**：购买付费的 Creative Cloud
 
 通过这份[!UICONTROL 同类群组分析]表，您可能会发现，无论用户是在何时安装的 Creative Cloud 免费版本，有 8%-10% 的用户会在第一个月内进行升级。12-15% 的用户会在使用后的第二个月内进行升级。随后，升级的用户数量会大幅缩减：第三个月为 4%-5%，第四个月为 3%-4%，到了第五个月就缩减为 1%-2%。
 
@@ -65,6 +61,6 @@ ht-degree: 100%
 
 一家大型服装零售商拥有许多特定的客户过滤器，这些过滤器为他们的业务带来了很大一部分收入。每个过滤器在设计和创建特定的产品时都将该过滤器考虑在内。每件新产品上市后，他们都想了解这件新产品如何逐渐提升各个同类群组的销售额。他们使用[!UICONTROL 同类群组分析]中新的[!UICONTROL 延迟表]设置，可分析给定客户过滤器在产品上市前和上市后的行为以及带来的收入。利用这些信息，他们可以确定哪些产品正在增加收入，哪些产品对客户没有吸引力。
 
-## 个人吸引力 - 最忠诚的用户使用案例
+## 个人吸引力 — 最忠诚的用户使用案例
 
 一家大型航空公司的成功和大部分收入均来自于其忠诚的旧客户。在许多情况下，他们的忠实旅客为其带来了大部分收入；要想取得长期成功，留住这些客户至关重要。识别最忠诚的固定客户通常十分困难。但是，他们使用[!UICONTROL 同类群组分析]中新的[!UICONTROL 滚动计算]设置，可分析忠实客户过滤器，找出哪些旅客是回头客。然后，他们即可为这些旅客提供奖励和优厚待遇，以答谢旅客的惠顾。此外，通过将同类群组类型从维系更改为流失，他们还能够确定哪些客户不是回头客，然后通过促销活动来定位这些过滤器，以便让客户再次购买并确保这些客户以后仍是忠诚客户。

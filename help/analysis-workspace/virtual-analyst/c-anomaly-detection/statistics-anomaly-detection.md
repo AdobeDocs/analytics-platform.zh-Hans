@@ -3,18 +3,14 @@ description: Analysis Workspace 中的异常检测使用一系列高级统计技
 title: 异常检测中使用的统计技术
 feature: Anomaly Detection
 exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '827'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '794'
 ht-degree: 100%
 
 ---
 
 # 异常检测中使用的统计技术
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace 中的异常检测使用一系列高级统计技术来确定是否应将观测到的情况视为异常。
 

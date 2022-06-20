@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 本指南为 Customer Journey Analytics 提供支持，这是 Adobe 的新一代跨渠道分析解决方案，基于 Adobe Experience Platform。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 243dc9bfcb7dde08e58fa4f8a11c8ec8c1e49de1
+source-git-commit: 58e6453fee6dbb17ab816aee091a228874e797ab
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 97%
+source-wordcount: '666'
+ht-degree: 95%
 
 ---
 
@@ -34,7 +34,10 @@ ht-degree: 97%
    + [常见问题解答](getting-started/cja-faq.md)
    + [Adobe Analytics到Customer Journey Analytics的演变](getting-started/aa-to-cja.md)
    + [面向新Customer Journey Analytics用户的用户指南](getting-started/aa-to-cja-user.md)
-   + [Customer Journey Analytics 功能支持](getting-started/cja-aa.md)
+   + [比较Adobe Analytics和Customer Journey Analytics] {#compare-aa-cja}
+      + [Customer Journey Analytics 功能支持](getting-started/aa-vs-cja/cja-aa.md)
+      + [比较Adobe Analytics和CJA中的数据处理情况](getting-started/aa-vs-cja/data-processing-comparisons.md)
+      + [虚拟报告环境和沙盒环境](getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
    + [删除后果](getting-started/cja-deletion.md)
    + [CJA 术语表](getting-started/cja-glossary.md)
 + 连接 {#cja-connections}
@@ -229,6 +232,5 @@ ht-degree: 97%
    + [Labs 用户指南](labs/labs.md)
 + 故障排除 {#troubleshooting}
    + [将 Adobe Analytics 数据与 CJA 数据进行比较](troubleshooting/compare.md)
-   + [比较Adobe Analytics和CJA中的数据处理情况](troubleshooting/data-processing-comparisons.md)
 + 隐私权 {#cja-privacy}
    + [隐私权概述](privacy/privacy-overview.md)

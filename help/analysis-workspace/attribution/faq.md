@@ -3,18 +3,14 @@ title: 归因常见问题解答
 description: 获取有关归因的常见问题解答。
 feature: Attribution
 exl-id: 3153d8c9-4ca8-4189-8a2f-511a87e8ac17
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '306'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '273'
 ht-degree: 100%
 
 ---
 
 # 归因常见问题解答
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 **使用归因时，“无”行项是什么？**
 

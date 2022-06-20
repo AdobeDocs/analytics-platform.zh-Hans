@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: cd6f78b2ce40a3368b1e643a60e9f3070dd80c55
+source-git-commit: 9afc0931622509769e53ff5df3ffaa2d99894488
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 89%
+source-wordcount: '842'
+ht-degree: 85%
 
 ---
 
@@ -17,6 +17,8 @@ CJA 文档自创建以来进行了以下更新。
 
 | 日期 | 更新描述 |
 | --- | --- |
+| 2022 年 6 月 | 新文章 [虚拟报表环境和沙盒环境](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md) |
+| 2022 年 6 月 | 新文章 [比较Adobe Analytics和CJA报表功能中的数据处理情况](/help/getting-started/aa-vs-cja/data-processing-comparisons.md) |
 | 2022 年 6 月 | 新文章 [将不同架构的报表包组合在一起](/help/use-cases/combine-report-suites.md) |
 | 2022 年 6 月 | 新文章 [在移动记分卡中共享注释](/help/components/annotations/mobile-annotations.md) |
 | 2022 年 6 月 | 新文章 [CJA中的Analytics Labs](/help/labs/labs.md) |
@@ -63,7 +65,7 @@ CJA 文档自创建以来进行了以下更新。
 | 2020 年 11 月 13 日 | 添加了有关[跨渠道分析](/help/connections/cca/overview.md)的新主题，该方案让您能够重新键入数据集的人员 ID，并实现多个数据集的无缝组合。 |
 | 2020 年 11 月 13 日 | 添加了有关[导入呼叫中心和 Web 数据](/help/use-cases/call-center.md)的新用例。 |
 | 2020 年 11 月 10 日 | 将有关删除数据组件后果的部分添加到[常见问题解答](/help/getting-started/cja-faq.md)中。 |
-| 2020 年 11 月 2 日 | 对 [Customer Journey Analytics 功能支持](/help/getting-started/cja-aa.md)页面进行了更新。 |
+| 2020 年 11 月 2 日 | 对 [Customer Journey Analytics 功能支持](/help/getting-started/aa-vs-cja/cja-aa.md)页面进行了更新。 |
 | 2020 年 11 月 | 添加了有关为连接[删除回填限制](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data)的内容。 |
 | 2020 年 10 月 7 日 | 添加了有关[合并事件数据集](/help/connections/combined-dataset.md)的主题。 |
 | 2020 年 9 月 15 日 | 添加了有关[数据摄取](/help/use-cases/data-ingestion.md)的主题。 |
@@ -72,7 +74,7 @@ CJA 文档自创建以来进行了以下更新。
 | 2020 年 7 月 | 添加了有关[人员 ID 的标识映射选项](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html)的信息。 |
 | 2020 年 7 月 | 添加了有关[对象数组](/help/use-cases/object-arrays.md)或“数据层次结构”的新主题。 |
 | 2020 年 4 月 14 日 | 对[创建连接](/help/connections/create-connection.md)主题中的最新 UI 进行了更新。 |
-| 2020 年 2 月 27 日 | 对 [Customer Journey Analytics 功能支持](/help/getting-started/cja-aa.md)页面进行了更新。 |
+| 2020 年 2 月 27 日 | 更新了 [Customer Journey Analytics功能支持](/help/getting-started/aa-vs-cja/cja-aa.md) |
 | 2019 年 12 月 | CJA 文档初稿 |
 
 {style=&quot;table-layout:auto&quot;}

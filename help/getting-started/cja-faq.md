@@ -4,8 +4,8 @@ description: Customer Journey Analytics — 常见问题解答。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: ht
+source-git-commit: 9afc0931622509769e53ff5df3ffaa2d99894488
+workflow-type: tm+mt
 source-wordcount: '2270'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # 常见问题解答
 
-[!UICONTROL Customer Journey Analytics] (CJA) 是我们的新一代分析产品。以下是关于 CJA 的常见问题解答。有关更多信息，请查阅 [Customer Journey Analytics 功能支持](/help/getting-started/cja-aa.md)。
+[!UICONTROL Customer Journey Analytics] (CJA) 是我们的新一代分析产品。以下是关于 CJA 的常见问题解答。有关更多信息，请查阅 [Customer Journey Analytics 功能支持](/help/getting-started/aa-vs-cja/cja-aa.md)。
 
 ## 1. 先决条件 {#prerequisites}
 
@@ -30,7 +30,7 @@ ht-degree: 100%
 | 问题 | 回答 |
 | --- | --- |
 | [!UICONTROL Customer Journey Analytics] 是否可以跨设备或跨数据集进行“拼合”？ | 支持。[!UICONTROL Customer Journey Analytics] 具有一个称为[跨渠道分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=zh-Hans) (CCA) 的拼合解决方案，该方案允许您重新键入数据集的人员 ID，实现多个数据集的无缝组合。 |
-| 是否支持从匿名行为到实名行为的拼合？ | 支持。[跨渠道分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=zh-Hans)查看来自已通过和未通过身份验证的会话的用户数据来生成拼合 ID。 |
+| 是否支持从匿名行为到实名行为的拼合？ | 支持。[跨渠道分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html)查看来自已通过和未通过身份验证的会话的用户数据来生成拼合 ID。 |
 | CCA 中如何进行“重放”？ | CCA 根据它所掌握的唯一标识符“重放”数据。重放导致新设备连接并被拼合。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html#step-1%3A-live-stitching) |
 | 如何在 CCA 中拼合历史数据（回填）？ | 首次启用时，Adobe 提供追溯到上月初（最多 60 天）的拼合数据的回填。为实现此回填，当时的未拼合数据中必须存在过渡 ID。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html#enable-cross-channel-analytics) |
 
@@ -76,7 +76,7 @@ ht-degree: 100%
 | --- | --- |
 | 删除 [!UICONTROL Adobe Experience Platform] 中的沙盒 | 如果删除沙盒，则将阻止数据流向与该沙盒中的数据集关联的 [!UICONTROL Customer Journey Analytics] 连接。目前，CJA 中关联被删除沙盒的[!UICONTROL 连接]不能自动删除。 |
 | 删除 [!UICONTROL Adobe Experience Platform] 中的架构，但不删除与该架构关联的数据集 | [!UICONTROL Adobe Experience Platform][!UICONTROL  不允许删除具有一个或多个关联数据集的架构。]但是，具有相应权限集的管理员可以先删除关联数据集，然后再删除架构。 |
-| 删除 [!UICONTROL Adobe Experience Platform] 数据湖中的一个数据集 | 删除 AEP 数据湖中的某个数据集将阻止数据从该数据集流向包括该数据集的任何 CJA 连接。 |
+| 删除 [!UICONTROL Adobe Experience Platform] 数据湖中的一个数据集 | 删除 AEP 数据湖中的某个数据集将阻止数据从该数据集流向包括该数据集的任何 CJA 连接。Any data from that dataset is automatically deleted from associated CJA Connections. |
 | 删除 [!UICONTROL Customer Journey Analytics] 中的数据集 | 请联系您的Adobe客户经理，以启动删除已保存连接中数据集的过程。 |
 | 从数据集中删除批次（在 [!UICONTROL Adobe Experience Platform] 中） | 如果从 [!UICONTROL Adobe Experience Platform] 数据集中删除了某个批次，则会从包含该特定批次的所有 CJA 连接中删除该批次。CJA 会收到批次已在 [!UICONTROL Adobe Experience Platform] 中删除的通知。 |
 | **批次被摄取**&#x200B;到 [!UICONTROL Customer Journey Analytics] 的同时删除批次 | 如果数据集中只有一个批次，则该批次中只会有部分数据或没有任何数据显示在 [!UICONTROL Customer Journey Analytics] 中。系统将回滚该摄取操作。例如，如果数据集中共有 5 个批次，且在删除该数据集时已摄取其中 3 个批次，那么这 3 个批次中的数据将显示在 [!UICONTROL Customer Journey Analytics] 中。 |
@@ -85,7 +85,7 @@ ht-degree: 100%
 
 ## 7. 在 CJA 中合并报表包时的注意事项 {#merge-reportsuite}
 
-如果打算通过 [Adobe Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans)引入 Adobe Analytics 数据，请在合并 2 个或更多 Adobe Analytics 报表包时考虑以下这些后果。
+如果打算通过 [Adobe Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)引入 Adobe Analytics 数据，请在合并 2 个或更多 Adobe Analytics 报表包时考虑以下这些后果。
 
 | 问题 | 注意事项 |
 | --- | --- |
@@ -130,7 +130,7 @@ ht-degree: 100%
 
 1. 要解决这种情况，您有以下几个选项：
 
-   * 更改 [数据保留设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html#set-rolling-window-for-connection-data-retention).
+   * 更改 [数据保留设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans#set-rolling-window-for-connection-data-retention).
    * [删除任何未使用的连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components).
    * [](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components)
    * 请联系您的Adobe客户经理以许可额外容量。

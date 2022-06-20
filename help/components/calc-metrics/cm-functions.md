@@ -3,20 +3,16 @@ title: 引用 - 基本函数
 description: 计算量度生成器允许您将统计和数学函数应用于生成高级计算量度。
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '1077'
-ht-degree: 100%
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '1044'
+ht-degree: 99%
 
 ---
 
 # 引用 - 基本函数
 
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
-
-计算量度生成器允许您将统计和数学函数应用于生成高级计算量度。
+计算指标生成器允许您将统计和数学函数应用于生成高级计算指标。
 
 这里有一个按字母顺序排列的函数及其定义列表。
 
@@ -38,11 +34,11 @@ ABS(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求绝对值的量度。 |
+| *metric* | 您希望求绝对值的指标。 |
 
 ## 列最大值
 
-返回某量度列的一组维度元素中的最大值。MAXV 可以在一个列（量度）内跨维度元素垂直估值。
+返回某指标列的一组维度元素中的最大值。MAXV 可以在一个列（指标）内跨维度元素垂直估值。
 
 ```
 MAXV(metric)
@@ -50,11 +46,11 @@ MAXV(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望计算的量度。 |
+| *量度* | 您希望计算的指标。 |
 
 ## 列最小值
 
-返回某量度列的一组维度元素中的最小值。MINV 可以在一个列（量度）内跨维度元素垂直估值。
+返回某指标列的一组维度元素中的最小值。MINV 可以在一个列（指标）内跨维度元素垂直估值。
 
 ```
 MINV(metric)
@@ -62,11 +58,11 @@ MINV(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望计算的量度。 |
+| *量度* | 您希望计算的指标。 |
 
 ## 列总和
 
-添加列中某量度的所有数字值（跨维度元素）。
+添加列中某指标的所有数字值（跨维度元素）。
 
 ```
 SUM(metric)
@@ -74,11 +70,11 @@ SUM(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求总值或总和的量度。 |
+| *量度* | 您希望求总值或总和的指标。 |
 
 ## 计数 (Table)
 
-返回列中某量度的非零值的数量或计数（某个维度内报告的独特元素数）。
+返回列中某指标的非零值的数量或计数（某个维度内报告的独特元素数）。
 
 ```
 COUNT(metric)
@@ -86,7 +82,7 @@ COUNT(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望计数的量度。 |
+| *量度* | 您希望计数的指标。 |
 
 ## 指数 (Row)
 
@@ -98,7 +94,7 @@ EXP(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 应用于底数 *e* 的指数。 |
+| *量度* | 应用于底数 *e* 的指数。 |
 
 ## 求幂
 
@@ -110,7 +106,7 @@ pow(x,y) = x<sup>y</sup> = x*x*x*… (y 次)
 
 ## 平均值 (Table)
 
-返回列中某量度的算术平均值或平均数。
+返回列中某指标的算术平均值或平均数。
 
 ```
 MEAN(metric)
@@ -118,11 +114,11 @@ MEAN(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求平均数的量度。 |
+| *量度* | 您希望求平均数的指标。 |
 
 ## 中间值 (Table)
 
-返回列中某量度的中间值。中间值是指位于一组数字正中间的那个数字，也就是说有一半数字的值大于或等于该中间值，还有一半数字的值小于或等于该中间值。
+返回列中某指标的中间值。中间值是指位于一组数字正中间的那个数字，也就是说有一半数字的值大于或等于该中间值，还有一半数字的值小于或等于该中间值。
 
 ```
 MEDIAN(metric)
@@ -130,7 +126,7 @@ MEDIAN(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求中间值的量度。 |
+| *量度* | 您希望求中间值的指标。 |
 
 ## 取模
 
@@ -158,7 +154,7 @@ modulo(modulo(x,y)+y,y)
 
 ## 百分位数 (Table)
 
-返回某量度的 k-th 百分位数形式的值。您可以使用此函数确立一个接受阈值。例如，您可以决定检查其分数大于第 90 个百分位数的维度元素。
+返回某指标的 k-th 百分位数形式的值。您可以使用此函数确立一个接受阈值。例如，您可以决定检查其分数大于第 90 个百分位数的维度元素。
 
 ```
 PERCENTILE(metric,k)
@@ -173,8 +169,8 @@ PERCENTILE(metric,k)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>metric</i> </td> 
-   <td colname="col2"> 用于定义相对位置的量度列。 </td> 
+   <td colname="col1"> <i>量度</i> </td> 
+   <td colname="col2"> 用于定义相对位置的指标列。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>k </p> </td> 
@@ -185,7 +181,7 @@ PERCENTILE(metric,k)
 
 ## 四分位数 (Table)
 
-返回某量度的四分位数形式的值。例如，四分位数可用于查找在获得的收入方面排名前 25% 的产品。当 quart 分别等于 0（零）、2 和 4 时，MINV、MEDIAN 和 MAXV 可返回与 QUARTILE 相同的值。
+返回某指标的四分位数形式的值。例如，四分位数可用于查找在获得的收入方面排名前 25% 的产品。当 quart 分别等于 0（零）、2 和 4 时，MINV、MEDIAN 和 MAXV 可返回与 QUARTILE 相同的值。
 
 ```
 QUARTILE(metric,quart)
@@ -200,8 +196,8 @@ QUARTILE(metric,quart)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>metric</i> </td> 
-   <td colname="col2"> 您希望求四分位数值的量度。 </td> 
+   <td colname="col1"> <i>量度</i> </td> 
+   <td colname="col2"> 您希望求四分位数值的指标。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>quart </p> </td> 
@@ -210,7 +206,7 @@ QUARTILE(metric,quart)
  </tbody> 
 </table>
 
-*如果 *quart* = 0，则 QUARTILE 返回最小值。如果 *quart* = 1，则 QUARTILE 返回第一个四分位数（第 25 个百分位数）。如果 *quart* = 2，则 QUARTILE 返回第一个四分位数（第 50 个百分位数）。如果 *quart* = 3，则 QUARTILE 返回第一个四分位数（第 75 个百分位数）。如果 *quart* = 4，则 QUARTILE 返回最大值。
+&#42;如果 *quart* = 0,QUARTILE返回最小值。 如果 *quart* = 1，则 QUARTILE 返回第一个四分位数（第 25 个百分位数）。如果 *quart* = 2，则 QUARTILE 返回第一个四分位数（第 50 个百分位数）。如果 *quart* = 3，则 QUARTILE 返回第一个四分位数（第 75 个百分位数）。如果 *quart* = 4，则 QUARTILE 返回最大值。
 
 ## 轮次
 
@@ -222,7 +218,7 @@ ROUND(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *数字* | 您希望舍入的量度。 |
+| *数字* | 您希望舍入的指标。 |
 
 在没有位数参数的情况下四舍五入，与在位数参数为 0 的情况下四舍五入是相同的，都会四舍五入为最接近的整数。使用位数参数，可在小数点右侧返回多位数字。如果位数为负，则在小数点左侧返回 0。
 
@@ -259,7 +255,7 @@ SQRT(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *数字* | 您希望求平方根的量度。 |
+| *数字* | 您希望求平方根的指标。 |
 
 ## 标准偏差 (Table)
 
@@ -304,7 +300,7 @@ VARIANCE(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求变量的量度。 |
+| *量度* | 您希望求变量的指标。 |
 
 为了计算变量，需要查看整列数字。首先，从该数字列表计算平均值。得出平均值后，浏览每个条目，然后执行以下操作：
 

@@ -3,18 +3,14 @@ title: 引用 - 高级函数
 description: 可通过以下方法访问这些函数：选中函数下拉列表中的显示高级。
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: ht
-source-wordcount: '2942'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '2909'
 ht-degree: 100%
 
 ---
 
 # 引用 - 高级函数
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 可通过以下方法访问这些函数：选中&#x200B;**[!UICONTROL 函数]**&#x200B;下拉列表中的&#x200B;**[!UICONTROL 显示高级]**。
 
@@ -103,7 +99,7 @@ ASIN(metric)
 
 | 参数 |  |
 |---|---|
-| *metric* | 所需角的余弦，其范围介于 -1 到 1 之间。 |
+| *量度* | 所需角的余弦，其范围介于 -1 到 1 之间。 |
 
 ## 反正切 (Row)
 
@@ -115,7 +111,7 @@ ATAN(metric)
 
 | 参数 |  |
 |---|---|
-| *metric* | 所需角的余弦，其范围介于 -1 到 1 之间。 |
+| *量度* | 所需角的余弦，其范围介于 -1 到 1 之间。 |
 
 ## 指数回归：预测的 Y (Row)
 
@@ -164,7 +160,7 @@ CEILING(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 要舍入的量度。 |
+| *量度* | 要舍入的量度。 |
 
 ## 余弦 (Row)
 
@@ -176,7 +172,7 @@ COS(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求余弦的弧度角。 |
+| *量度* | 您希望求余弦的弧度角。 |
 
 ## 立方根
 
@@ -188,7 +184,7 @@ CBRT(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求立方根的量度。 |
+| *量度* | 您希望求立方根的量度。 |
 
 ## 累积
 
@@ -271,7 +267,7 @@ FLOOR(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望舍入的量度。 |
+| *量度* | 您希望舍入的量度。 |
 
 ## 大于
 
@@ -291,7 +287,7 @@ COSH(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求双曲余弦的弧度角。 |
+| *量度* | 您希望求双曲余弦的弧度角。 |
 
 ## 双曲正弦 (Row)
 
@@ -303,7 +299,7 @@ SINH(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求双曲正弦的弧度角。 |
+| *量度* | 您希望求双曲正弦的弧度角。 |
 
 ## 双曲正切 (Row)
 
@@ -315,7 +311,7 @@ TANH(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求双曲正切的弧度角。 |
+| *量度* | 您希望求双曲正切的弧度角。 |
 
 ## IF (Row)
 
@@ -365,7 +361,7 @@ LOG10(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求以 10 为底数的对数的正实数。 |
+| *量度* | 您希望求以 10 为底数的对数的正实数。 |
 
 ## 对数回归：相关系数 (Table)
 
@@ -431,7 +427,7 @@ LN(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求自然对数的正实数。 |
+| *量度* | 您希望求自然对数的正实数。 |
 
 ## NOT
 
@@ -644,7 +640,7 @@ SIN(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求正弦的弧度角。 |
+| *量度* | 您希望求正弦的弧度角。 |
 
 ## T 分数
 
@@ -686,7 +682,7 @@ TAN (metric)
 
 | 参数 | 描述 |
 |---|---|
-| *metric* | 您希望求正切的弧度角。 |
+| *量度* | 您希望求正切的弧度角。 |
 
 ## Z 分数 (Row)
 
@@ -713,7 +709,7 @@ Z 分数（量度）
  </thead>
  <tbody>
   <tr>
-   <td colname="col1"> <i>metric</i> </td>
+   <td colname="col1"> <i>量度</i> </td>
    <td colname="col2"> <p> 返回其首个非零参数的值。 </p> </td>
   </tr>
  </tbody>

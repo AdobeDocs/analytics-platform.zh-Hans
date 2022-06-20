@@ -4,18 +4,14 @@ keywords: Analysis Workspace 共享
 title: 共享项目
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '1128'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '1095'
 ht-degree: 100%
 
 ---
 
 # 共享项目
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 共享可以使一个项目供您的组织内的其他 Analysis Workspace 用户使用。在收件人打开项目时，您应用的任何[策划](curate.md)都会反映出来。
 
@@ -61,14 +57,14 @@ ht-degree: 100%
 
 ## 共享到收件人组 {#Groups}
 
-所有用户都可以将项目共享到由多位收件人组成的组。在 Customer Journey Analytics 中，组由 [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=zh-Hans) 中的产品配置文件定义。
+所有用户都可以将项目共享到由多位收件人组成的组。在 Customer Journey Analytics 中，组由 [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html) 中的产品配置文件定义。
 
 * 管理员可以共享到任何组，包括“全部”组。
 * 除“全部”组外，非管理员可以共享到其所属的组。
 
 ## 共享项目链接 {#Links}
 
-您可以通过&#x200B;**[!UICONTROL 共享] > [!UICONTROL 获取项目链接]**&#x200B;来获取某个项目的链接。单击该链接后，收件人将需要先登录，然后才能进入项目。如果收件人未分配到角色，他们将获得默认角色。管理员将获得&#x200B;**[!UICONTROL 可以编辑]**&#x200B;角色，非管理员将获得&#x200B;**[!UICONTROL 可以复制]**&#x200B;角色。[了解更多](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html?lang=zh-Hans)有关创建指向工作区项目的可共享链接的信息。
+您可以通过&#x200B;**[!UICONTROL 共享] > [!UICONTROL 获取项目链接]**&#x200B;来获取某个项目的链接。单击该链接后，收件人将需要先登录，然后才能进入项目。如果收件人未分配到角色，他们将获得默认角色。管理员将获得&#x200B;**[!UICONTROL 可以编辑]**&#x200B;角色，非管理员将获得&#x200B;**[!UICONTROL 可以复制]**&#x200B;角色。[了解更多](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html)有关创建指向工作区项目的可共享链接的信息。
 
 ## 在项目管理器中共享项目 {#Manager}
 

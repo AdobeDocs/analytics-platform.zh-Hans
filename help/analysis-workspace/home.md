@@ -5,18 +5,14 @@ description: Analysis Workspace 功能概览
 feature: CJA Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: ht
-source-wordcount: '459'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '425'
 ht-degree: 100%
 
 ---
 
 # Analysis Workspace 概述
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html#analysis-workspace) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace 是一款通过浏览器即可使用的灵活工具，可让您快速构建和共享分析。您可以使用拖放界面进行分析、添加可视化图表以便直观地呈现数据、梳理数据集、与组织中的任何人共享项目并设置共享频率与时间。
 

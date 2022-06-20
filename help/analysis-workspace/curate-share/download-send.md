@@ -3,18 +3,14 @@ description: 您可以通过复制数据或以 PDF 和 CSV 格式从 Analysis Wo
 title: 下载 PDF 或 CSV 文件
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '1016'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '983'
 ht-degree: 100%
 
 ---
 
 # 下载 PDF 或 CSV 文件
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 您可以通过多种不同的方式从 Analysis Workspace 导出数据，具体取决于您要在工具之外分析的具体数据集以及需要接收信息的具体人员。导出的数据可以是复制的数据、CSV 或 PDF 文件的形式。如果您希望文件中包含可视化图表，则 PDF 通常为首选，而如果您只需要纯文本数据，则 CSV（或复制的数据）为首选。
 

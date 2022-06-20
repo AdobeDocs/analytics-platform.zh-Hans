@@ -4,18 +4,14 @@ keywords: Analysis Workspace
 title: 计划项目
 feature: Curate and Share
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '486'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '453'
 ht-degree: 100%
 
 ---
 
 # 计划项目
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 从工作区的&#x200B;**“共享”菜单**&#x200B;中，您可以通过电子邮件将 Analysis Workspace 项目发送给选定的收件人。可以采用 CSV 或 PDF 格式发送文件。
 

@@ -3,18 +3,14 @@ description: 行设置因您拖入到表格中的组件而异。
 title: 行设置
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '472'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '439'
 ht-degree: 100%
 
 ---
 
 # 行设置
-
->[!NOTE]
->
->您正在查看有关 Customer Journey Analytics 中 Analysis Workspace 的文档。其功能集与[传统 Adobe Analytics 中的 Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans) 略有不同。[了解详情...](/help/getting-started/cja-aa.md)
 
 在此处查看有关行和列设置的视频：
 
