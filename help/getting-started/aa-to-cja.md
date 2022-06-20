@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: ht
-source-wordcount: '1318'
-ht-degree: 100%
+source-git-commit: bad3527384802ace236ca78bce97bf7aac12bcbe
+workflow-type: tm+mt
+source-wordcount: '1330'
+ht-degree: 99%
 
 ---
 
@@ -33,15 +33,17 @@ ht-degree: 100%
 
 ### 2. 调整您的变量 {#variables}
 
-[](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html)[](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)
+[](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html)[](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)This connector maps your Adobe Analytics variables directly to an XDM schema and dataset in Experience Platform, which can in turn be easily connected to Customer Journey Analytics.
 
 完整的全局报表包可能并不总是适用于实施。如果您计划将多个报表包引入Customer Journey Analytics，您有2个选项：
 
 * 提前规划以使这些报表包中的变量保持一致。 例如，报表包 1 中的 eVar1 可能指向[!UICONTROL 页面]。在报表包 2 中，eVar1 可能指向[!UICONTROL 内部营销活动]。当被引入 CJA 时，这些变量将混合到一个单一的 eVar1 维度中，从而导致潜在的混乱和不准确的报告。
 
-* 使用 [日期准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) 功能来映射变量。 虽然如果所有报表包都使用相同的常用变量设计，这样会更轻松，但是如果您使用新Experience Platform，则无需使用 [数据准备](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html#mapping) 功能。 它允许您通过变量的映射值(位于数据流（或属性）级别)引用变量。
+* 使用 [日期准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans) 功能来映射变量。 虽然如果所有报表包都使用相同的常用变量设计，这样会更轻松，但是如果您使用新Experience Platform，则无需使用 [数据准备](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html#mapping) 功能。 它允许您通过变量的映射值(位于数据流（或属性）级别)引用变量。
 
 如果您因为 [!UICONTROL Uniques Exceeded] 或 [!UICONTROL Low Traffic] 问题而无法迁移到全局报表包，请了解 CJA [对维度没有基数限制](/help/components/dimensions/high-cardinality.md)。它允许出现并计算任何唯一值。
+
+以下是 [将不同架构的报表包组合在一起](/help/use-cases/combine-report-suites.md).
 
 ### 3. （重新）配置您的营销渠道 {#marketing-channels}
 
