@@ -4,10 +4,10 @@ description: 在多个数据集中重新生成访客 ID 的键值，以对访客
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 16ebf5672099b0cd0c5e4dafd577f175370fa9b5
-workflow-type: ht
+source-git-commit: 3f20520a2021d9b6066b0492ed11a1a4619ab1d4
+workflow-type: tm+mt
 source-wordcount: '1196'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 100%
 * 不支持在组织中使用的自定义 ID 映射。
 * 不支持 Adobe 协作图和专用图。
 * 跨渠道 Analytics 不以任何方式转换用于拼接的字段。基于字段的拼接使用存在于数据湖内非拼接数据集中的指定字段中的值。拼接过程区分大小写。例如，如果字段中有时出现“Bob”一词，有时出现“BOB”一词，则将这两个词视为单独的两人。
-* 鉴于基于字段的拼接区分大小写，因此对于通过 Analytics Data Connector 生成的 Analytics 数据集，Adobe 建议检查任何适用于临时 ID 字段的 VISTA 规则或处理规则，以确保所有这些规则都不会引入同一 ID 的新形式。例如，对于部分事件，您应确保没有任何 VISTA 或处理规则将小写字母引入到临时 ID 字段。
+* 给定的基于字段的拼合区分大小写，对于通过Analytics源连接器生成的Analytics数据集，Adobe建议审核适用于临时ID字段的任何VISTA规则或处理规则，以确保这些规则中没有一个引入了相同ID的新形式。 例如，对于部分事件，您应确保没有任何 VISTA 或处理规则将小写字母引入到临时 ID 字段。
 * 基于字段的拼接不组合或连接字段。
 * 临时 ID 字段应仅包含一种类型的 ID（即 ID 仅来自一个命名空间）。例如，临时 ID 字段不应包含登录 ID 和电子邮件 ID 的组合。
 * 如果对于同一持久 ID 发生了多个具有同一时间戳的事件，但临时 ID 字段中有多个不同的值，则基于字段的拼接将根据字母顺序进行选择。因此，如果持久 ID A 具有时间戳相同的两个事件，其中一个事件指定 Bob，而另一个指定 Ann，则基于字段的拼接将选择 Ann。

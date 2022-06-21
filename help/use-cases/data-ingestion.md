@@ -4,10 +4,10 @@ description: 了解将数据摄取到 Customer Journey Analytics 的不同方式
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: ht
+source-git-commit: 3f20520a2021d9b6066b0492ed11a1a4619ab1d4
+workflow-type: tm+mt
 source-wordcount: '771'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## 从传统 Adobe Analytics 中摄取数据
 
-此工作流利用 Adobe Analytics Data Connector，会因您选择 DTM 还是 Launch 作为标签管理器而有所不同。
+此工作流利用Adobe Analytics源连接器，并会因您使用DTM还是Launch作为标签管理器而有所不同。
 
 ### 通过 Adobe Experience Platform 中的标记（以前称为 [!UICONTROL Launch]）
 
@@ -55,4 +55,4 @@ Adobe Experience Platform 将来自多个来源的数据整合在一起，以帮
 
 1. [使用批量数据摄取 API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md)，将服务器端收集数据提交到 Adobe Analytics。它允许您提交包含事件数据的 CSV 格式文件。
 1. [创建 Adobe Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)，将此使用者数据接入 Adobe Experience Platform。
-1. 使用 [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=zh-Hans) 创建一个或多个将通知跨渠道报告的 [连接](/help/connections/create-connection.md) 和 [数据视图](/help/data-views/data-views.md)。
+1. 使用 [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) 创建一个或多个将通知跨渠道报告的 [连接](/help/connections/create-connection.md) 和 [数据视图](/help/data-views/data-views.md)。
