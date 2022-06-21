@@ -4,10 +4,10 @@ description: 跨渠道分析常见问题解答
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: f181584603d62b09ebc8538759d47fb1e03b007a
+source-git-commit: 5eede8eeb5d7e8632dc0d7d580f01ccc7ac8106c
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 92%
+source-wordcount: '1067'
+ht-degree: 59%
 
 ---
 
@@ -19,30 +19,36 @@ ht-degree: 92%
 
 1. 登录 [analytics.adobe.com](https://analytics.adobe.com) 并创建一个空白的工作区项目。
 2. 单击左侧的“可视化图表”选项卡，然后将流量可视化图表拖到右侧的画布上。
-3. 单击左侧的“组件”选项卡，然后将“数据集 ID”维度拖到标记为“维度或项目”的中心位置。
+3. 单击左侧的“组件”选项卡，然后将“数据集ID”维度拖动到标有“Dimension或项目”的中心位置。
 4. 此流量报表是交互式的。单击任意值可将流量展开到后续或之前的页面。使用右键单击菜单可展开或折叠列。此外，还可以在同一流量报表中使用不同的维度。
 
 如果要重命名“数据集 ID”维度项，可使用查找数据集。
 
 ## CCA 为访客重新生成键值的回顾时间范围是多久？
 
-重新生成键值的回顾时间范围取决于您所需的数据[重播](replay.md)频率。例如，如果将 CCA 设置为每周重播一次数据，则重新生成键值的回顾时间范围为 7 天。如果将 CCA 设置为每天重播一次数据，则重新生成键值的回顾时间范围为 1 天。
+重新生成键值的回顾时间范围取决于您所需的数据[重播](replay.md)频率。例如，如果将CCA设置为每周重播一次数据，则重新生成键值的回顾时间范围为7天。 如果将CCA设置为每天重播一次数据，则重新生成键值的回顾时间范围为一天。
 
 ## 如何处理共享设备？
 
-在某些情况下，可能有多个用户从同一设备登录。例如，在家中使用共享设备，在图书馆中使用共享 PC，或在零售商店中使用自助终端。
+在某些情况下，可能有多个人从同一设备登录。 例如，在家中使用共享设备，在图书馆中使用共享 PC，或在零售商店中使用自助终端。
 
 临时 ID 会覆盖永久 ID，因此共享设备会被视为单独的人员（即使来自于同一设备也是如此）。
 
-## CCA 如何处理一人拥有大量永久 ID 的情况？
+## CCA如何处理单个用户拥有多个永久ID的情况？
 
-在某些情况下，单个用户可能会与大量永久 ID 相关联。例如，经常清除浏览器 Cookie 的用户或使用浏览器私人/隐身模式的用户便会出现这种情况。
+在某些情况下，单个用户可以与许多永久ID关联。 例如，经常清除浏览器 Cookie 的用户或使用浏览器私人/隐身模式的用户便会出现这种情况。
 
 永久 ID 的数量与临时 ID 的使用无关。单个用户可以属于任意数量的设备，而不会影响 CCA 跨设备拼合的功能。
 
 ## 在与客户经理联系并提供所需信息后，已重新生成键值的数据集需要多长时间才可用？
 
-在 Adobe 启用跨渠道分析后，大约需要 1 周才能进行实时拼合。回填可用性取决于现有数据的数量。小型数据集（每日的事件数量少于 100 万）通常需要几天时间，而大型数据集（每日的事件数量为 10 亿）可能需要一周或更长时间。
+在启用跨渠道分析后，大约一周即可进行实时拼合。Adobe后，可以执行跨渠道分析。 回填可用性取决于现有数据的数量。小型数据集（每日的事件数量少于 100 万）通常需要几天时间，而大型数据集（每日的事件数量为 10 亿）可能需要一周或更长时间。
+
+## 跨设备分析（传统Analytics中的一项功能）与跨渠道分析之间有何区别？
+
+[跨设备分析](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html) 是特定于传统Adobe Analytics的一项功能，可让您了解用户如何跨设备运行。 它提供了两个工作流，用于将设备数据链接在一起：基于字段的拼合和设备图。
+
+[跨渠道分析](../overview.md) 是CJA特有的一项功能，可让您了解用户如何跨设备和渠道运行。 它可重新生成数据集的人员ID键值，从而使该数据集能够与其他数据集无缝组合。 此功能的设计方式与CDA基于字段的拼合类似，但是其实施方式与传统Analytics和CJA之间不同的数据架构有所不同。
 
 ## 跨渠道分析如何处理 GDPR 和 CCPA 请求？
 
@@ -51,8 +57,9 @@ Adobe 将根据当地和国际法规处理 GDPR 和 CCPA 请求。Adobe 提供�
 ## 如果一个或多个事件中的永久 ID 字段为空，会发生什么情况？
 
 如果在使用基于字段的拼合功能进行拼合的数据集内，某个事件的 `Persistent ID` 字段为空，CCA 会通过以下两种方式之一填充该事件的 `Stitched ID`：
+
 * 如果 `Transient ID` 字段不为空，CCA 将使用 `Transient ID` 中的值作为 `Stitched ID`。
-* 如果 `Transient ID` 字段为空，CCA 还会将 `Stitched ID` 保留为空。在这种情况下，`Persistent ID`、`Transient ID` 和 `Stitched ID` 在此事件上将全部为空。如果在正拼合的数据集内，`Stitched ID` 被选定为 `Person ID`，则在使用该数据集的任何 CJA 连接中，会从 CJA 中删除此类事件。
+* 如果 `Transient ID` 字段为空，CCA 还会将 `Stitched ID` 保留为空。在这种情况下， `Persistent ID`, `Transient ID`和 `Stitched ID` 全部为空。 这些类型的事件将通过拼合的数据集(其中 `Stitched ID` 被选为 `Person ID`.
 
 ## 与 CJA 未拼合数据集内的类似指标和传统 Adobe Analytics 相比，CJA 拼合数据集中的指标如何？
 
@@ -60,12 +67,12 @@ CJA 中的某些指标与传统 Analytics 中的指标相似，但其他指标�
 
 | **CJA 拼合数据** | **CJA 未拼合数据** | **传统 Adobe Analytics** | **带 CDA 的 Analytics Ultimate** |
 | ----- | ----- | ----- | ----- |
-| **人员数** = 不同 `Person ID` 的数量，其中 `Stitched ID` 被选定为 `Person ID`。**人员数** 可能高于或低于传统 Adobe Analytics 中的&#x200B;**独特访客数**，具体取决于拼合过程的结果。 | **人员数** = 不同 `Person ID` 的数量（根据选定为 `Person ID` 的列）。**人员** Adobe源连接器数据集中的 **独特访客** 在传统Adobe Analytics中，如果 `endUserIDs. _experience. aaid.id` 选择为 `Person ID` 在CJA中。 | **独特访客** = 不同访客 ID 的数量。请注意，**独特访客数**&#x200B;可能与不同 **ECID** 的数量不相同。 | 请参阅[人员数](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=zh-Hans)。 |
-| **会话**：根据 CJA 数据视图中指定的会话流程设置而定义。拼合过程可能将来自多个设备的各个会话组合成单个会话。 | **会话**：根据 CJA 数据视图中指定的会话流程设置而定义。 | **访问数**：请参阅[访问数](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=zh-Hans)。 | **访问数**：根据 [CDA 虚拟报表包](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=zh-Hans)中指定的会话流程设置而定义。 |
-| **事件数** = CJA 中已拼合数据的行数。通常，在传统 Adobe Analytics 中，该值应该接近&#x200B;**发生次数**。但是，请注意上面关于带有空白 `Persistent ID` 的行的常见问题解答。 | **事件数** = CJA 中未拼合数据的行数。通常，在传统 Adobe Analytics 中，该值应该接近&#x200B;**发生次数**。但请注意，如果任何事件在 AEP 数据湖内的未拼合数据中有空白 `Person ID`，这些事件将被从 CJA 中删除（不包括在内）。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=zh-Hans)。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html)。 |
+| **人员数** = 不同 `Person ID` 的数量，其中 `Stitched ID` 被选定为 `Person ID`。**人员数** 可能高于或低于传统 Adobe Analytics 中的&#x200B;**独特访客数**，具体取决于拼合过程的结果。 | **人员数** = 不同 `Person ID` 的数量（根据选定为 `Person ID` 的列）。**人员** Adobe源连接器数据集中的 **独特访客** 在传统Adobe Analytics中，如果 `endUserIDs._experience.aaid.id` 选择为 `Person ID` 在CJA中。 | **独特访客** = 不同访客 ID 的数量。**独特访客** 可能与非重复项的计数不同 **ECID** s. | 请参阅[人员数](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=zh-Hans)。 |
+| **会话**:根据CJA数据视图中的会话设置定义。 拼合过程可能将来自多个设备的各个会话组合成单个会话。 | **会话**:根据CJA数据视图中指定的会话设置定义。 | **访问数**：请参阅[访问数](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=zh-Hans)。 | **访问次数**:根据 [CDA虚拟报表包](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=zh-Hans). |
+| **事件数** = CJA 中已拼合数据的行数。此量度通常接近 **发生次数** 传统Adobe Analytics。 但是，请注意上面关于带有空白 `Persistent ID` 的行的常见问题解答。 | **事件数** = CJA 中未拼合数据的行数。此量度通常接近 **发生次数** 传统Adobe Analytics。 但是，请注意，如果有任何事件包含空白 `Person ID` 在Experience Platform数据湖中的未拼合数据中，CJA中不包含这些事件。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=zh-Hans)。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html)。 |
 
-CJA 和传统 Adobe Analytics 中的其他指标可能类似。例如，Adobe Analytics的总计数 [自定义事件](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=zh-Hans) 在传统的Adobe Analytics和CJA中，1-100通常应非常接近（无论是拼合还是未拼合）。 但请注意，由于 [功能差异](/help/getting-started/aa-vs-cja/cja-aa.md))，例如在CJA与传统Adobe Analytics之间进行重复事件删除。
+其他量度在CJA和传统Adobe Analytics中可以类似。 例如，Adobe Analytics的总计数 [自定义事件](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=zh-Hans) 传统Adobe Analytics和CJA（无论是拼合还是未拼合）的1-100量级通常具有可比性。 [功能差异](/help/getting-started/aa-vs-cja/cja-aa.md))(例如，与传统Adobe Analytics相比，CJA中的事件重复数据删除可能会导致两个产品之间出现差异。
 
 ## CCA 能否使用身份映射字段？
 
-否，CCA 目前无法使用 identityMap 字段。
+否，CCA当前不能使用身份映射字段。

@@ -4,10 +4,10 @@ description: 了解跨渠道分析中的“重播”概念
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '548'
-ht-degree: 100%
+source-git-commit: a67350c60593385daaeb01fb8afb9c57b423935a
+workflow-type: tm+mt
+source-wordcount: '590'
+ht-degree: 92%
 
 ---
 
@@ -19,6 +19,8 @@ ht-degree: 100%
 * **重播**：CCA 会根据其发现的唯一标识符“重播”数据。在这个阶段，连接中的新设备会被拼合。Adobe 提供以下两个重播时间间隔：
    * 每日：数据每天重播一次，回顾时间范围为 24 小时。此选项的优势在于重播更频繁，但未经身份验证的访客必须在访问您网站的同一天进行身份验证。
    * 每周：数据每周重播一次，回顾时间范围为 7 天。此选项的优势在于允许未经身份验证的会话在更加宽松充裕的时间范围内进行身份验证。不过，一周之内的数据无法拼合。
+
+不会重播回顾窗口以外的数据。 访客必须在给定的回顾窗口内进行身份验证，才能同时识别未经身份验证的访问和经过身份验证的访问。 识别设备后，该设备将从此刻开始进行实时拼合。
 
 ## 步骤 1：实时拼合
 

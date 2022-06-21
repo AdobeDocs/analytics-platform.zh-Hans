@@ -4,9 +4,9 @@ description: 了解如何通过 Customer Journey Analytics 来使用 Analysis Wo
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 9afc0931622509769e53ff5df3ffaa2d99894488
+source-git-commit: a67350c60593385daaeb01fb8afb9c57b423935a
 workflow-type: tm+mt
-source-wordcount: '1258'
+source-wordcount: '1144'
 ht-degree: 100%
 
 ---
@@ -33,12 +33,6 @@ Customer Journey Analytics expands the scope of Adobe Analytics by offering easy
 * **跨报告包数据**：可以在 Platform 中组合来自多个数据集的现有实施。
 
 Customer Journey Analytics 的初始版本包括 Analysis Workspace 中的许多功能。有关完整列表，请参阅 [Customer Journey Analytics 功能支持](/help/getting-started/aa-vs-cja/cja-aa.md)。
-
-## 比较 CJA 与 Cross-Device Analytics
-
-[跨设备分析](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html)与 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html) 集成，利用 Co-op Graph 或 Private Graph 来识别数字设备如何映射到人。它适用于 Adobe Analytics Ultimate 客户。
-
-另一方面，CJA 与 Adobe Experience Platform 数据集集成，并且支持在 Analysis Workspace 中进行跨渠道分析。尽管 CJA 尚未与 Co-op 或 Private 标识图集成，但您可以“自带 ID”将数据集连接在一起。这些数据集可以超越数字数据，包括在线和离线接触点。下文将详细介绍使用 CJA 的先决条件。
 
 ## 主要用例
 
