@@ -2,10 +2,10 @@
 title: 创建受众并将受众发布到实时客户档案
 description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 9ff64cb1b30fef5c475ecc6f7d19961144530095
+source-git-commit: 454d931b8c9f9e4e960a01401623bc9eda4e21d8
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 36%
+source-wordcount: '993'
+ht-degree: 34%
 
 ---
 
@@ -74,14 +74,19 @@ ht-degree: 36%
 
 ## 在Experience Platform中使用CJA受众
 
+现在，CJA会获取您已发布受众中的所有命名空间和ID组合，并将它们流式传输到实时客户资料(RTCP)中。 CJA将受众发送到Experience Platform，并将主标识设置为配置连接时选择的任何作为人员ID的内容。
 
-现在，CJA会获取您已发布受众中的所有命名空间和ID组合，并将它们流式传输到实时客户资料(RTCP)中。 然后，RTCP检查每个命名空间/ID组合，并查找它可能包含的配置文件。 配置文件基本上是一组链接的命名空间、ID和设备。 如果找到配置文件，则会将命名空间和ID作为区段成员资格属性添加到此配置文件中的其他ID中。 例如，现在可以跨所有设备和渠道定位“user@adobe.com”。 如果未找到用户档案，则会创建一个新用户档案。
+然后，RTCP检查每个命名空间/ID组合，并查找它可能包含的配置文件。 配置文件基本上是一组链接的命名空间、ID和设备。 如果找到配置文件，则会将命名空间和ID作为区段成员资格属性添加到此配置文件中的其他ID中。 例如，现在可以跨所有设备和渠道定位“user@adobe.com”。 如果未找到用户档案，则会创建一个新用户档案。
 
 通过转到&#x200B;**[!UICONTROL 区段]** > **[!UICONTROL 创建区段]** > **[!UICONTROL 受众]**&#x200B;选项卡 > **[!UICONTROL CJA 受众]**，您可以在 Platform 中查看 CJA 受众。
 
 您可以将 CJA 受众拖到 AEP 区段的区段定义中。
 
 ![](assets/audiences-aep.png)
+
+## 如果用户不再是CJA中的受众成员，会发生什么情况？
+
+在这种情况下，会从CJA将退出事件发送到Experience Platform。
 
 ## 后续步骤
 
