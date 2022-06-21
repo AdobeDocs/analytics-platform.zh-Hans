@@ -4,10 +4,10 @@ description: 跨渠道分析常见问题解答
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 9afc0931622509769e53ff5df3ffaa2d99894488
+source-git-commit: f181584603d62b09ebc8538759d47fb1e03b007a
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 95%
+source-wordcount: '966'
+ht-degree: 92%
 
 ---
 
@@ -60,7 +60,7 @@ CJA 中的某些指标与传统 Analytics 中的指标相似，但其他指标�
 
 | **CJA 拼合数据** | **CJA 未拼合数据** | **传统 Adobe Analytics** | **带 CDA 的 Analytics Ultimate** |
 | ----- | ----- | ----- | ----- |
-| **人员数** = 不同 `Person ID` 的数量，其中 `Stitched ID` 被选定为 `Person ID`。**人员数** 可能高于或低于传统 Adobe Analytics 中的&#x200B;**独特访客数**，具体取决于拼合过程的结果。 | **人员数** = 不同 `Person ID` 的数量（根据选定为 `Person ID` 的列）。如果在 CJA 中，`endUserIDs. _experience. aaid.id` 被选定为 `Person ID`，Adobe Analytics 连接器 (ADC) 数据集中的&#x200B;**人员**&#x200B;将等于传统 Adobe Analytics 中的&#x200B;**独特访客数**。 | **独特访客** = 不同访客 ID 的数量。请注意，**独特访客数**&#x200B;可能与不同 **ECID** 的数量不相同。 | 请参阅[人员数](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=zh-Hans)。 |
+| **人员数** = 不同 `Person ID` 的数量，其中 `Stitched ID` 被选定为 `Person ID`。**人员数** 可能高于或低于传统 Adobe Analytics 中的&#x200B;**独特访客数**，具体取决于拼合过程的结果。 | **人员数** = 不同 `Person ID` 的数量（根据选定为 `Person ID` 的列）。**人员** Adobe源连接器数据集中的 **独特访客** 在传统Adobe Analytics中，如果 `endUserIDs. _experience. aaid.id` 选择为 `Person ID` 在CJA中。 | **独特访客** = 不同访客 ID 的数量。请注意，**独特访客数**&#x200B;可能与不同 **ECID** 的数量不相同。 | 请参阅[人员数](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=zh-Hans)。 |
 | **会话**：根据 CJA 数据视图中指定的会话流程设置而定义。拼合过程可能将来自多个设备的各个会话组合成单个会话。 | **会话**：根据 CJA 数据视图中指定的会话流程设置而定义。 | **访问数**：请参阅[访问数](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=zh-Hans)。 | **访问数**：根据 [CDA 虚拟报表包](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=zh-Hans)中指定的会话流程设置而定义。 |
 | **事件数** = CJA 中已拼合数据的行数。通常，在传统 Adobe Analytics 中，该值应该接近&#x200B;**发生次数**。但是，请注意上面关于带有空白 `Persistent ID` 的行的常见问题解答。 | **事件数** = CJA 中未拼合数据的行数。通常，在传统 Adobe Analytics 中，该值应该接近&#x200B;**发生次数**。但请注意，如果任何事件在 AEP 数据湖内的未拼合数据中有空白 `Person ID`，这些事件将被从 CJA 中删除（不包括在内）。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=zh-Hans)。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html)。 |
 
