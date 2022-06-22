@@ -34,9 +34,9 @@ CJA中的几项功能已重命名和重新设计，以符合行业标准。一�
 
 ## 数据架构的更改 {#architecture}
 
-CJA从Adobe Experience Platform获取数据。Experience Platform lets you centralize and standardize customer data and content from any system or channel and applies data science and machine learning to improve the design and delivery of personalized experiences.
+CJA从Adobe Experience Platform获取数据。Experience Platform 可让您集中和标准化来自任何系统或渠道的客户数据和内容，并应用数据科学和机器学习来改进个性化体验的设计和交付。
 
-[](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html)有关 Platform 的更多详细信息，请参阅 [Adobe Experience Platform 体系架构概述](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html)。
+Experience Platform 中的客户数据存储为数据集，其中包含[架构](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=zh-Hans)和批量数据。有关 Platform 的更多详细信息，请参阅 [Adobe Experience Platform 体系架构概述](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=zh-Hans)。
 
 您的CJA管理员已建立 [连接](/help/connections/create-connection.md) 到Experience Platform中的数据集。然后，他们构建 [数据视图](/help/data-views/data-views.md) 使用这些连接。数据视图在概念上与虚拟报表包类似，是CJA中报表的基础。由于Experience Platform为报表收集所有数据，因此报表包不再作为数据容器存在。
 
@@ -58,9 +58,9 @@ Adobe提供了多种将数据导入Adobe Experience Platform的方法，包括�
 
 ## 对eVar和prop概念的更改
 
-在Adobe Analytics中，eVar和prop存储了内容、客户、营销活动等的描述。和事件会计入收入、订阅或产生的商机。Customer Journey Analytics会保留这两种类型的数据，您可以以相同的方式访问它们 — 分别从Analysis Workspace的左边栏中的“Dimension”或“量度”下。
+传统 Adobe Analytics 中的 [!UICONTROL eVars]、[!UICONTROL props] 和 [!UICONTROL 事件] 的概念在 [!UICONTROL Customer Journey Analytics] 中不再存在。在Adobe Analytics中，eVar和prop存储了内容、客户、营销活动等的描述。和事件会计入收入、订阅或产生的商机。Customer Journey Analytics会保留这两种类型的数据，您可以以相同的方式访问它们 — 分别从Analysis Workspace的左边栏中的“Dimension”或“量度”下。
 
-在CJA中，可以使用无限的架构元素，包括维度、量度和列表字段。这些量度可映射到无限的架构元素，包括Experience Platform中的维度、量度和列表字段。现在，在Adobe Analytics中处理规则后应用的所有访问和归因设置都会在查询时Customer Journey Analytics。
+在CJA中，可以使用无限的架构元素，包括维度、量度和列表字段。这些量度可映射到无限的架构元素，包括Experience Platform中的维度、量度和列表字段。现在，在 Adobe Analytics 中处理规则后应用的所有访问和归因设置都会在 Customer Journey Analytics 中的查询时应用。
 
 凭借这种灵活性，您可能会遇到以下情况：单个架构字段既可用作维度，也可用作量度，以支持不同的跟踪需求。
 
@@ -68,11 +68,11 @@ Adobe提供了多种将数据导入Adobe Experience Platform的方法，包括�
 
 Adobe已将“区段”组件重命名为“过滤器”，以更好地符合行业标准，并更好地区分Adobe Experience Platform中的区段。
 
-[!UICONTROL Customer Journey Analytics] 不再使用eVar、prop或事件，而是使用它们已映射到的Experience Platform架构字段名称。此更改意味着Adobe Analytics中的任何现有区段都与 [!UICONTROL Customer Journey Analytics]. 如果要将现有Adobe Analytics区段移动到Customer Journey Analytics，请观看以下视频：
+[!UICONTROL Customer Journey Analytics] 不再使用eVar、prop或事件，而是使用它们已映射到的Experience Platform架构字段名称。此更改意味着 Adobe Analytics中 的任何现有区段都与 [!UICONTROL Customer Journey Analytics] 不兼容。如果要将现有Adobe Analytics区段移动到Customer Journey Analytics，请观看以下视频：
 
 >[!VIDEO](https://video.tv.adobe.com/v/31982/?quality=12)
 
-当您尚未共享或发布时 [!UICONTROL 过滤器] ([!UICONTROL 区段])从 [!DNL Customer Journey Analytics] 要Experience Platform统一配置文件，正在开发此功能。
+虽然您还不能从 [!DNL Customer Journey Analytics] 共享或发布[!UICONTROL 过滤器]（[!UICONTROL 区段]）到 Experience Platform Unified Profile，但此功能正在开发中。
 
 除了区段更改的概念之外，区段容器也会更新。
 
@@ -82,7 +82,7 @@ Adobe已将“区段”组件重命名为“过滤器”，以更好地符合行
 
 ## 对计算量度概念的更改
 
-计算量度在传统Analytics和CJA中的名称类似。这一根本变化意味着，任何现有的计算量度都与 [!UICONTROL Customer Journey Analytics]. 如果要将Adobe Analytics计算量度移动到Customer Journey Analytics，请观看以下视频：
+计算量度在传统Analytics和CJA中的名称类似。但是， [!UICONTROL Customer Journey Analytics] 不再使用 eVar、props 或事件，而是使用任何 Experience Platform 架构元素。这一根本变化意味着，任何现有的计算量度都与 [!UICONTROL Customer Journey Analytics] 不兼容。如果要将Adobe Analytics计算量度移动到Customer Journey Analytics，请观看以下视频：
 
 >[!VIDEO](https://video.tv.adobe.com/v/31788/?quality=12)
 
@@ -96,11 +96,11 @@ Adobe已将“区段”组件重命名为“过滤器”，以更好地符合行
 
 ## 对分类概念的更改
 
-&quot;Classifications&quot; are now known as &quot;Lookup datasets&quot;. Lookup datasets are used to look up values or keys found in your Event or Profile data. 例如，您可以上传将事件数据中的数字 ID 映射到产品名称的查找数据。请参阅 [将帐户级别的数据添加为查询数据集](/help/use-cases/b2b.md) 例如用例。
+“分类”现在称为“查找数据集”。查找数据集用于查找在您的事件或个人资料数据中找到的值或键。例如，您可以上传将事件数据中的数字 ID 映射到产品名称的查找数据。有关示例用例，请参阅 [将帐户级别的数据添加为查询数据集](/help/use-cases/b2b.md)。
 
 ## 对客户属性概念的更改
 
-&quot;Customer attributes&quot; are now known as &quot;Profile datasets&quot;. For example, it allows you to upload CRM data about your customers. 您可以选择想要包含的人员 ID。中定义的每个数据集 [!DNL Experience Platform] 自己定义了一个或多个人员ID集。
+“客户属性”现在称为“个人资料数据集”。配置文件数据集包含应用于[!UICONTROL 事件]数据中的访问者、用户或客户的数据。例如，它允许您上传有关客户的 CRM 数据。您可以选择想要包含的人员 ID。[!DNL Experience Platform] 中定义的每个数据集都有自己的一组定义的一个或多个人员 ID。
 
 ## 更改了Adobe识别访客的方式
 
@@ -110,4 +110,4 @@ CJA扩展了ECID之外的身份概念，以包含您要使用的任何ID，包�
 
 ## 对低流量维度项目概念的更改
 
-在传统Adobe Analytics中，接收过多唯一值的变量会开始在 [!UICONTROL 低流量]. CJA对高基数字段的限制较少。对报表架构所做的更改允许Analysis Workspace报告更多独特维度项目。请参阅 [长尾](../analysis-workspace/workspace-faq/long-tail.md) 有关CJA如何优化具有许多唯一值的维度报表的更多信息。
+在传统Adobe Analytics中，接收过多唯一值的变量会开始将维度项存储在[!UICONTROL 低流量]下。CJA对高基数字段的限制较少。对报表架构所做的更改允许Analysis Workspace报告更多独特维度项目。请参阅 [长尾](../analysis-workspace/workspace-faq/long-tail.md) 有关CJA如何优化具有许多唯一值的维度报表的更多信息。
