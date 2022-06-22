@@ -5,8 +5,8 @@ title: 在流失分析中应用过滤器
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: tm+mt
-source-wordcount: '405'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
