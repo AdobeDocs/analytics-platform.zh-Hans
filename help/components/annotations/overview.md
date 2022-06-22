@@ -6,8 +6,8 @@ solution: Customer Journey Analytics
 feature: Components
 exl-id: 722d7636-f619-479a-97f1-3da23e8f7f83
 source-git-commit: e39f34486e54da188145092921a4ca3aa5f936fb
-workflow-type: tm+mt
-source-wordcount: '296'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
