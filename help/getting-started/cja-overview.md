@@ -4,10 +4,10 @@ description: 了解如何通过 Customer Journey Analytics 来使用 Analysis Wo
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: a67350c60593385daaeb01fb8afb9c57b423935a
+source-git-commit: 64cd3983f58f1f0de1d8639e5cb1e705dd72ef44
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 100%
+source-wordcount: '1149'
+ht-degree: 81%
 
 ---
 
@@ -25,9 +25,9 @@ Here is a video overview of Customer Journey Analytics:
 
 ## 比较 CJA 与传统 Adobe Analytics
 
-Customer Journey Analytics expands the scope of Adobe Analytics by offering easy-to-use cross-channel capabilities and removing limitations in previous versions of Adobe Analytics. 一些显著改进的功能包括：
+Customer Journey Analytics通过提供易于使用的跨渠道功能并消除Adobe Analytics早期版本中的限制，扩展了Adobe Analytics的范围。 一些显著改进的功能包括：
 
-* **无限量的变量和事件**：eVar、prop 和事件的概念已不复存在。数据主要侧重于维度和量度。数据集可以拥有无限量的唯一维度和量度。
+* **无限量的变量和事件**：eVar、prop 和事件的概念已不复存在。数据主要侧重于维度和量度。数据集可以具有无限数量的唯一维度和量度。
 * **无限唯一值**：Adobe Experience Platform 不受任何特有限制的约束。
 * **更改历史数据**：使用 Adobe Experience Platform，可以删除或更正数据。
 * **跨报告包数据**：可以在 Platform 中组合来自多个数据集的现有实施。
@@ -41,9 +41,9 @@ Customer Journey Analytics 的初始版本包括 Analysis Workspace 中的许多
 * **在历程情境中查看客户**：您可以跨多个渠道按顺序查看和分析数据。将来自呼叫中心、POS 系统以及在线属性的数据合并到单个报表视图。
 * **为所有人提供洞察信息**：实现数据访问大众化，让更多人利用数据衍生的洞察信息做出业务决策。组织中任何负责客户体验某一方面的人员，都可以基于更完整全面的数据，更快地做出真正明智的决策。
 * **助力分析师充分利用数据科学的强大力量**：Customer Journey Analytics 让普通人能够运用数据科学获得深入的分析和洞察信息。
-* **使用临时报告可视化您的数据集并与之交互**：工作区可以使用 Adobe Experience Platform 中符合某些基本规则的任何数据集。
+* **使用按需报表实现数据集的可视化和交互**:工作区可以使用Adobe Experience Platform中符合某些基本规则的任何数据集。
 * **查看非 Web 数据**：工作区不再局限于“点击”或“事件”的严格定义。自定义架构允许完全控制数据和定义。
-* **更好地控制数据操作**：更改您上传的数据，创建新数据集，并将这些数据导入工作区。Adobe Experience Platform 通过 Experience Cloud 查询服务来提供查询、提取、转换和加载工具。
+* **更好地控制数据操作**:更改您上传的数据，创建数据集，然后将其导入工作区。 Adobe Experience Platform 通过 Experience Cloud 查询服务来提供查询、提取、转换和加载工具。
 
 ## 先决条件
 
@@ -54,13 +54,13 @@ Customer Journey Analytics 的初始版本包括 Analysis Workspace 中的许多
 
 ## 管理员访问权限
 
-要创建连接、添加数据集等，您需要在 [Admin Console](https://adminconsole.adobe.com/enterprise/) 中拥有以下权限：
+要创建连接、添加数据集等，您需要在 [Admin Console](https://adminconsole.adobe.com/enterprise/):
 
-* 若要访问 Customer Journey Analytics 或建立连接，您需要作为管理员，添加在 [Admin Console](https://adminconsole.adobe.com/enterprise/) 的 **Customer Journey Analytics 产品**&#x200B;中。产品管理员享有以下权限：
+* 要访问Customer Journey Analytics或建立连接，必须将您作为管理员添加到 **Customer Journey Analytics产品** 在 [Admin Console](https://adminconsole.adobe.com/enterprise/). 产品管理员享有以下权限：
    * 创建/更新/删除连接或数据视图
-   * 更新/删除由其他用户创建的项目、过滤器、计算量度或过滤器
-   * 将 Workspace 项目共享给所有用户
-* 仅作为 Customer Journey Analytics 的产品管理员，并不足以创建、更新或删除连接。要创建与 Experience Platform 数据集的连接，您还需要取得 Experience Platform 权限。具体而言，您必须属于授予您以下权限的 **Experience Platform 产品用户档案**：
+   * 更新/删除其他用户创建的项目、过滤器、计算量度或过滤器
+   * 将工作区项目共享给所有用户
+* 仅在Customer Journey Analytics内成为产品管理员是不够的，需要创建、更新或删除连接。 要创建与 Experience Platform 数据集的连接，您还需要取得 Experience Platform 权限。具体而言，您必须属于授予您以下权限的 **Experience Platform 产品用户档案**：
    * 查看架构
    * 管理架构
    * 查看身份命名空间
@@ -70,7 +70,7 @@ Customer Journey Analytics 的初始版本包括 Analysis Workspace 中的许多
 
 >[!NOTE]
 >
->就像在传统 Adobe Analytics 中那样，在 Customer Journey Analytics 中也不能许可单个量度或维度。[](/help/data-views/data-views.md)
+>您无法像在传统Adobe Analytics中一样，在Customer Journey Analytics中授予或拒绝单个量度或维度的权限。 [](/help/data-views/data-views.md)
 
 ### 用户访问
 
@@ -94,9 +94,9 @@ Customer Journey Analytics 是依赖于 Adobe Experience Platform 的众多功�
 
 Adobe Experience Platform 让您可以实现源自任何系统的客户数据和内容的集中化和标准化，并应用数据科学和机器学习来优化个性化体验的设计和交付。Platform 中的客户数据将作为数据集存储，数据集由一个架构和批量数据组成。有关 Platform 的更多详细信息，请参阅 [Adobe Experience Platform 体系架构概述](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html)。
 
-从数据摄取到直接 SQL 访问，Experience Platform 的多个组件在 Customer Journey Analytics 中发挥着重要作用，并且可与之搭配使用：
+从数据摄取到直接SQL访问，Experience Platform的几个组件在Customer Journey Analytics和补充数据时是核心组件：
 
-* [查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html)：使用标准 SQL 从 Adobe Experience Platform 检索数据，例如，Adobe 解决方案数据、客户第一方数据，或任何其他 Platform 数据。It is a server-less tool that allows you to join any datasets and capture the query results as a new dataset for use in reporting, Data Science Workspace, or for ingestion into Profile Service. 您可以使用“查询服务”构建数据分析生态系统，进而创建使用者在各种交互渠道中的全景图。这些渠道可能包括销售点系统、Web、移动设备、CRM 系统等。
+* [查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html)：使用标准 SQL 从 Adobe Experience Platform 检索数据，例如，Adobe 解决方案数据、客户第一方数据，或任何其他 Platform 数据。It is a server-less tool that allows you to join any datasets and capture the query results as a new dataset for use in reporting, Data Science Workspace, or for ingestion into Profile Service. 您可以使用“查询服务”构建数据分析生态系统，进而创建使用者在各种交互渠道中的全景图。这些渠道可能包括销售点系统、Web、移动设备、CRM系统等。
 * [实时客户用户档案](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)：
 * [Identity 服务](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html)：
 * “开发人员”选项中的 [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html)：您可以使用 Adobe Experience Platform 中预建的人工智能 (AI) 和机器学习模型来影响客户历程的各个接触点。通过揭示暗藏的洞察信息，您可以在整个客户历程中做出更好的预测、提出最佳的后续步骤建议，或自动处理繁琐的流程。
