@@ -4,8 +4,8 @@ title: 异常检测中使用的统计技术
 feature: Anomaly Detection
 exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
 source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: tm+mt
-source-wordcount: '794'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
