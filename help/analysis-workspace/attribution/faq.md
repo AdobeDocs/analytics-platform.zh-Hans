@@ -4,8 +4,8 @@ description: 获取有关归因的常见问题解答。
 feature: Attribution
 exl-id: 3153d8c9-4ca8-4189-8a2f-511a87e8ac17
 source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: tm+mt
-source-wordcount: '273'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
