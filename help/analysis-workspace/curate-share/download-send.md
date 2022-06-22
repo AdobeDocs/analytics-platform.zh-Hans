@@ -4,8 +4,8 @@ title: 下载 PDF 或 CSV 文件
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: tm+mt
-source-wordcount: '983'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
