@@ -4,10 +4,10 @@ description: Customer Journey Analytics 登陆页面。
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 85b804d2bb67daf1f69433524d1cd8fab0e4c5d5
+source-git-commit: 464961194405341b0bb8240a9e327d668d4cde64
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 86%
+source-wordcount: '404'
+ht-degree: 69%
 
 ---
 
@@ -26,19 +26,21 @@ Analytics Select、Prime 和 Ultimate 客户有资格此附加产品。有关更
      <ul>
        <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=en"> 将不同架构的报表包组合在一起 </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=en"> CJA受众发布 </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/pr-vista-dataprep.html?lang=en"> 处理规则、VISTA和分类与数据准备 </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/data-processing-comparisons.html?lang=en"> 比较Adobe Analytics和CJA报表功能中的数据处理情况 </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/vrs-dataview-sandbox-adc.html?lang=en"> 虚拟报表包、数据视图、AEP沙箱和Analytics源连接器 </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=zh-Hans"> Adobe Analytics到Customer Journey Analytics的演变 </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja-user.html?lang=zh-Hans"> 适用于Adobe Analytics用户的CJA用户指南 </a> </li>
      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans#connection-detail">使用增强的连接管理功能</a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=zh-Hans#cja-dataviews">使用增强的数据视图功能</a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=zh-Hans#cja-usecases"> 将 Google Analytics 数据摄取到 Adobe Experience Platform </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja-reporting.html?lang=zh-Hans#cja-usecases">在 CJA 中分析 Google Analytics 数据</a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=zh-Hans#cja-connections"> 跨渠道分析（在 Customer Journey Analytics 中拼合 ID）</a> </li>
+   <td colname="col2" valign="top"><p class="head"> <b>快速入门</b> </p> 
+      <ul> 
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=zh-Hans">Customer Journey Analytics 入门</a> </li> 
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans"> 常见问题解答</a> </li> 
-   <td colname="col2" valign="top"> <p class="head"><b>发行说明</b> </p> 
-    <ul> 
-     <li>有关新增功能和修复，请参阅最新的 <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html?lang=zh-Hans" format="https" scope="external">Customer Journey Analytics 说明</a>。 </li>
-    <td colname="col2" valign="top"> <p class="head"><b>CJA API</b> </p> 
+   </ul> <p class="head"><b>发行说明</b> </p> 
+     <li>查看最新 <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html?lang=zh-Hans" format="https" scope="external"> Customer Journey Analytics发行说明</a> 中，了解新增功能和修复。 </li>
+    <td colname="col3" valign="top"> <p class="head"><b>CJA API</b> </p> 
     <ul> 
      <li>查看全部 <a href="https://developer.adobe.com/cja-apis/docs/" format="https" scope="external"> Customer Journey AnalyticsAPI</a>. </li>
       <li>查看最新 <a href="https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API" format="https" scope="external"> Customer Journey Analytics报表API</a>. </li>
