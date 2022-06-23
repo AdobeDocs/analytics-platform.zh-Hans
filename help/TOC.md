@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 本指南为 Customer Journey Analytics 提供支持，这是 Adobe 的新一代跨渠道分析解决方案，基于 Adobe Experience Platform。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: be74260829c8e383829a3163e518104d1d0f11e0
+source-git-commit: caddee21a20c8d3088de936f109c862d5795af7f
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '680'
 ht-degree: 94%
 
 ---
@@ -162,9 +162,9 @@ ht-degree: 94%
    + [组件概述](components/overview.md)
    + 批注 {#annotations}
       + [批注概述](components/annotations/overview.md)
-      + [创建注释](components/annotations/create-annotations.md)
-      + [管理注释](components/annotations/manage-annotations.md)
-      + [查看注释](components/annotations/view-annotations.md)
+      + [创建批注](components/annotations/create-annotations.md)
+      + [管理批注](components/annotations/manage-annotations.md)
+      + [查看批注](components/annotations/view-annotations.md)
       + [移动批注](components/annotations/mobile-annotations.md)
    + 受众 {#audiences}
       + [受众概述](components/audiences/audiences-overview.md)
@@ -235,3 +235,4 @@ ht-degree: 94%
    + [将 Adobe Analytics 数据与 CJA 数据进行比较](troubleshooting/compare.md)
 + 隐私权 {#cja-privacy}
    + [隐私权概述](privacy/privacy-overview.md)
++ [CJA API](https://developer.adobe.com/cja-apis/docs/)
