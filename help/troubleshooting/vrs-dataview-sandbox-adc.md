@@ -1,7 +1,7 @@
 ---
-source-git-commit: de28f20583457e91aa5136c688a885045606b860
+source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '698'
 ht-degree: 9%
 
 ---
@@ -21,7 +21,7 @@ VRS:
 
 * 可以基于Adobe Analytics区段。
 * 可以以非破坏性方式应用于历史数据和新数据。
-* 允许您在Adobe Analytics报表包上创建一个或多个虚拟视图，以供不同业务团队使用。
+* 允许您在Adobe Analytics报表包上创建一个或多个虚拟视图，以供不同的业务团队使用。
 * 可用于控制对Adobe Analytics中不同用户的不同类型数据的访问和管理。
 * 提供可选 [报告时间处理](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=zh-Hans) 功能Adobe Analytics。 在这种情况下，可以使用VRS为“访问”创建自定义定义。
 * 在报表运行时应用，与区段评估类似。 这是 _after_ 已在Adobe Analytics中收集和存储数据。

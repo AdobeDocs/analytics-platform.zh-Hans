@@ -1,13 +1,13 @@
 ---
 title: 比较Adobe Analytics和CJA报表功能中的数据处理情况
 description: 了解各种报表功能的数据处理差异
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
+source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 22%
 
 ---
-
 
 # 比较Adobe Analytics和CJA报表功能中的数据处理情况
 

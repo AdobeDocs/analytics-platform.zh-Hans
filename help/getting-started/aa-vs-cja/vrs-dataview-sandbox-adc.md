@@ -1,13 +1,13 @@
 ---
 title: 虚拟报表包、数据视图、AEP沙箱和Analytics源连接器
 description: 了解虚拟报告环境和沙盒环境。
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
+source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '718'
 ht-degree: 9%
 
 ---
-
 
 # 虚拟报表包、数据视图、AEP沙箱和Analytics源连接器
 
@@ -25,7 +25,7 @@ VRS:
 
 * 可以基于Adobe Analytics区段。
 * 可以以非破坏性方式应用于历史数据和新数据。
-* 允许您在Adobe Analytics报表包上创建一个或多个虚拟视图，以供不同业务团队使用。
+* 允许您在Adobe Analytics报表包上创建一个或多个虚拟视图，以供不同的业务团队使用。
 * 可用于控制对Adobe Analytics中不同用户的不同类型数据的访问和管理。
 * 提供可选 [报告时间处理](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=zh-Hans) 功能Adobe Analytics。 在这种情况下，可以使用VRS为“访问”创建自定义定义。
 * 在报表运行时应用，与区段评估类似。 这是 _after_ 已在Adobe Analytics中收集和存储数据。
