@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: be74260829c8e383829a3163e518104d1d0f11e0
+source-git-commit: 159e24bb2a0dc40463679a6a672af773e8ce101f
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 84%
+source-wordcount: '881'
+ht-degree: 82%
 
 ---
 
@@ -17,6 +17,7 @@ CJA 文档自创建以来进行了以下更新。
 
 | 日期 | 更新描述 |
 | --- | --- |
+| 2022 年 6 月 | 新文章 [AAID、ECID、ACUSTOMID和Analytics源连接器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/aaid-ecid-adc.html) |
 | 2022 年 6 月 | 新文章 [Adobe Analytics处理规则、VISTA和分类与Analytics源连接器的数据准备](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md) |
 | 2022 年 6 月 | 新文章 [虚拟报表环境和沙盒环境](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md) |
 | 2022 年 6 月 | 新文章 [比较Adobe Analytics和CJA报表功能中的数据处理情况](/help/getting-started/aa-vs-cja/data-processing-comparisons.md) |
@@ -70,7 +71,7 @@ CJA 文档自创建以来进行了以下更新。
 | 2020 年 11 月 | 添加了有关为连接[删除回填限制](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data)的内容。 |
 | 2020 年 10 月 7 日 | 添加了有关[合并事件数据集](/help/connections/combined-dataset.md)的主题。 |
 | 2020 年 9 月 15 日 | 添加了有关[数据摄取](/help/use-cases/data-ingestion.md)的主题。 |
-| 2020 年 9 月 2 日 | 更新了有关[用户权限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=zh-Hans)的部分。 |
+| 2020 年 9 月 2 日 | 更新了有关[用户权限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html)的部分。 |
 | 2020 年 8 月 7 日 | 添加了有关 [B2B 用例 - 查找数据集](/help/use-cases/b2b.md)的新主题。 |
 | 2020 年 7 月 | 添加了有关[人员 ID 的标识映射选项](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html)的信息。 |
 | 2020 年 7 月 | 添加了有关[对象数组](/help/use-cases/object-arrays.md)或“数据层次结构”的新主题。 |
