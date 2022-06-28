@@ -4,16 +4,16 @@ description: 如何在 Analysis Workspace 中使用和解释“媒体播放耗�
 feature: Panels
 role: User, Admin
 exl-id: 9268baf7-b50b-4c09-a722-7bfcd4172f15
-source-git-commit: a9ba9def94a2f156f6d2d8e59c0155a492c3978c
+source-git-commit: 5ae8bf2bfeb3496e4806629618cdc3ce8d3e9b71
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 100%
+source-wordcount: '246'
+ht-degree: 84%
 
 ---
 
 # “媒体播放耗时”面板
 
-Media Analytics 客户可以分析播放耗时以了解在哪里出现了并发峰值或者在哪里出现流失，从而针对内容质量和查看者参与情况提供宝贵的洞察，并帮助进行故障排除或者容量或规模的规划。
+您可以分析播放所用时间，以了解出现并发峰值或发生锐减的位置，从而对内容质量和查看者参与度提供有价值的分析，并有助于对容量或规模进行疑难解答或规划。
 
 在 Analysis Workspace 中，媒体播放耗时是在某个特定的时间点观看媒体流所耗的时长，其中包括暂停、缓冲和开始时间。
 
