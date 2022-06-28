@@ -3,10 +3,10 @@ description: 面板是表格和可视化图表的集合
 title: 面板概述
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
-workflow-type: ht
-source-wordcount: '854'
-ht-degree: 100%
+source-git-commit: 7883726d8055fd5ea161fb4991a17ad579012f28
+workflow-type: tm+mt
+source-wordcount: '894'
+ht-degree: 98%
 
 ---
 
@@ -24,6 +24,8 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 | [“快速分析”面板](quickinsight.md) | 快速构建自由格式表和随附的可视化图表，以便更快地分析和发现见解。 |
 | [归因面板](attribution.md) | 使用任意维度和转化指标，快速比较和可视化任意数量的归因模型。 |
 | [自由格式面板](freeform-panel.md) | 不受限制地执行比较和细分，然后添加可视化图表来讲述丰富的数据案例。 |
+| [“媒体并行查看者”面板](media-concurrent-viewers.md) | 分析一段时间内的并发查看者，了解有关并发峰值的详细信息，并且可以进行细分和比较。 |
+| [“媒体播放逗留时间”面板](media-playback-timespent/media-playback-time-spent.md) | 分析播放所用时间，以了解出现并发峰值或发生锐减的位置。 |
 
 ![](assets/panel-overview.png)
 
