@@ -2,7 +2,7 @@
 title: AAID、ECID、ACUSTOMID和Analytics源连接器
 description: 了解Analytics源连接器如何处理Adobe Analytics标识字段。
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
-source-git-commit: 20ebfb36e769f7d683ad44ec84b11aafb301a737
+source-git-commit: 89fb87653355ffe174d9ad7e19eb5979dd78eaaf
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 9%
@@ -17,7 +17,7 @@ Adobe Analytics数据包含多个标识字段。 对3个重要的身份域给予
 
 Adobe Analytics ID(AAID)是Adobe Analytics中的主要设备标识符，可保证存在于通过Analytics源连接器的每个事件中。 AAID有时称为“旧版Analytics ID”或 `s_vi` cookie id。 但是，即使 `s_vi` cookie不存在。 AAID由 `post_visid_high/post_visid_low` 列 [Adobe Analytics数据馈送](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=zh-Hans#columns%2C-descriptions%2C-and-data-types).
 
-在Analytics源连接器中，AAID将转换为 `HEX(post_visid_high) + "-" + HEX(post_visid_low)`. 给定事件的AAID字段包含单个标识，该标识可能是中所述的几种不同类型之一 [Analytics ID操作顺序](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html?lang=en%5B%5D). (在整个报表包中，AAID可能包含各种事件的各种类型。 每次点击的类型在 `post _visid_type` 列。) 另请参阅： [数据列引用](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=zh-Hans).
+在Analytics源连接器中，AAID将转换为 `HEX(post_visid_high) + "-" + HEX(post_visid_low)`. 给定事件的AAID字段包含单个标识，该标识可能是中所述的几种不同类型之一 [Analytics ID操作顺序](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html?lang=en%5B%5D). (在整个报表包中，AAID可能包含各种事件的各种类型。 每次点击的类型在 `post_visid_type` 列。) 另请参阅： [数据列引用](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=zh-Hans).
 
 ## ECID
 
