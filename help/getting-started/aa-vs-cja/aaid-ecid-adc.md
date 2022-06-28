@@ -2,9 +2,9 @@
 title: AAID、ECID、ACUSTOMID和Analytics源连接器
 description: 了解Analytics源连接器如何处理Adobe Analytics标识字段。
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
-source-git-commit: 89fb87653355ffe174d9ad7e19eb5979dd78eaaf
+source-git-commit: 4c9d87b6c6b7859ffac4cd2d26e8c89d12fe1285
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '560'
 ht-degree: 9%
 
 ---
@@ -51,4 +51,6 @@ Analytics源连接器将以XDM形式将这些身份传递到Adobe Experience Pla
 否则，AAID将标记为事件的主标识。
 * AACUSTOMID从不被标记为事件的主ID。 但是，如果存在AACUSTOMID，则AAID将基于AACUSTOMID，如上文所述。
 
-就CJA而言，只有最终用户决定使用主ID作为人员ID时，主ID的定义才很重要。 但是，这样做并非强制性的。 用户可以选择其他一些身份列作为人员ID。
+## CJA和主ID
+
+就CJA而言，只有在您决定使用主ID作为人员ID时，主ID的定义才很重要。 但是，这样做并非强制性的。 您可以选择其他一些身份列作为人员ID。
