@@ -2,14 +2,18 @@
 title: 创建受众并将受众发布到实时客户档案
 description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 454d931b8c9f9e4e960a01401623bc9eda4e21d8
+source-git-commit: 86998458bd79f1fc17c17e58932b2b8434abf041
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1000'
 ht-degree: 34%
 
 ---
 
 # 创建并发布受众
+
+>[!NOTE]
+>
+>此功能当前正在进行[小范围测试](/help/release-notes/releases.md)。
 
 本主题讨论如何创建和发布在Customer Journey Analytics(CJA)中标识的受众，并将其发布到 [实时客户资料](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans) ，用于客户定位和个性化。
 
