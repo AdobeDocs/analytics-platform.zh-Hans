@@ -4,7 +4,7 @@ description: 如何使用和解释 Analysis Workspace 中的“媒体平均受�
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: a9ba9def94a2f156f6d2d8e59c0155a492c3978c
+source-git-commit: db48638cc1e22ca4e555a8981e0f5175d52970f2
 workflow-type: tm+mt
 source-wordcount: '1313'
 ht-degree: 100%
@@ -13,6 +13,8 @@ ht-degree: 100%
 
 
 # “媒体平均受众访问分钟数”面板
+
+<!-- THIS FEATURE IS SCHEDULED FOR 2023 -->
 
 Media Analytics 客户可以使用平均受众访问分钟数面板来更好地了解其内容的平均使用情况。平均受众访问分钟数可以比较任何长度或类型的编程。此外，客户可以将此数字平均受众访问分钟数与线性电视平均访问分钟数指标进行比较或附加到其上。此面板提供了更大的灵活性来衡量自定义时间段的平均受众访问，以及持续时间分类在事后更新的时间。当前的平均受众访问分钟数指标仅在持续时间在处理时可用的情况下才有效。
 
