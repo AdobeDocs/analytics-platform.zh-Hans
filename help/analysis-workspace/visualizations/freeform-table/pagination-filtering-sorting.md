@@ -1,10 +1,10 @@
 ---
-description: 在 Analysis Workspace 中对表格进行分页、筛选和排序
+description: 在分析工作区中对表格进行分页、筛选和排序
 title: 对表格进行分页、筛选和排序
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '200'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # 对表格进行分页、筛选和排序
 
-有关 Analysis Workspace 中的分页、筛选和排序表的概述，请观看此视频教程：
+有关分析工作区中的分页、筛选和排序表的概述，请观看此视频教程：
 
 >[!VIDEO](https://video.tv.adobe.com/v/23968)
 
