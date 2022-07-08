@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: 3d8394fa3d4fba036658161ca6120078902aad9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1457'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ CJA中的几项功能已重命名和重新设计，以符合行业标准。一�
 
 您在报表端所熟悉的许多内容并未发生更改。
 
-* 您仍然可以使用 [Analysis Workspace](/help/analysis-workspace/home.md) 分析数据。工作区的操作方式与在传统Adobe Analytics中相同。
+* 您仍然可以使用[分析工作区](/help/analysis-workspace/home.md)分析数据。工作区的操作方式与在传统Adobe Analytics中相同。
 * 相同版本 [Adobe Analytics功能板](/help/mobile-app/home.md) 可用，且在CJA与传统Analytics中的工作方式类似。
-* [Report Builder](/help/report-builder/report-buider-overview.md) 具有新界面，可在MS Windows、MacOS和Excel的Web版本上运行。 (在此版本的Report Builder之前，除非在VMware上运行Mac，否则无法在中使用。) 此版本尚不支持传统的AA数据请求。
+* [Report Builder](/help/report-builder/report-buider-overview.md) 具有新界面，并可在 MS Windows、MacOS 和 Web 版本的 Excel 上运行。(在此版本的Report Builder之前，除非在VMware上运行Mac，否则无法在中使用。) 此版本尚不支持传统的AA数据请求。
 
 ## 对报表的更改
 
@@ -44,7 +44,7 @@ Experience Platform 中的客户数据存储为数据集，其中包含[架构](
 
 >[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12)
 
-Adobe提供了多种将数据导入Adobe Experience Platform的方法，包括通过Adobe Analytics源连接器或Web SDK导入报表包数据。多个报表包中的现有实施可以合并为Experience Platform。基于这些数据集的连接和数据视图可以合并之前存在于单独报表包中的数据。
+Adobe 提供了多种将数据导入 Adobe Experience Platform 的方法，包括通过 Adobe Analytics Source Connector 或 Web SDK 导入报表包数据。多个报表包中的现有实施可以合并为Experience Platform。基于这些数据集的连接和数据视图可以合并之前存在于单独报表包中的数据。
 
 ## 对虚拟报表包概念的更改 {#data-views}
 
@@ -58,7 +58,7 @@ Adobe提供了多种将数据导入Adobe Experience Platform的方法，包括�
 
 ## 对eVar和prop概念的更改
 
-传统 Adobe Analytics 中的 [!UICONTROL eVars]、[!UICONTROL props] 和 [!UICONTROL 事件] 的概念在 [!UICONTROL Customer Journey Analytics] 中不再存在。在Adobe Analytics中，eVar和prop存储了内容、客户、营销活动等的描述。和事件会计入收入、订阅或产生的商机。Customer Journey Analytics会保留这两种类型的数据，您可以以相同的方式访问它们 — 分别从Analysis Workspace的左边栏中的“Dimension”或“量度”下。
+传统 Adobe Analytics 中的 [!UICONTROL eVars]、[!UICONTROL props] 和 [!UICONTROL 事件] 的概念在 [!UICONTROL Customer Journey Analytics] 中不再存在。在Adobe Analytics中，eVar和prop存储了内容、客户、营销活动等的描述。和事件会计入收入、订阅或产生的商机。Customer Journey Analytics 会保留这两种类型的数据，您可以以相同的方式访问它们 — 分别从分析工作区的左边栏中的“维度”或“量度”下。
 
 在CJA中，可以使用无限的架构元素，包括维度、量度和列表字段。这些量度可映射到无限的架构元素，包括Experience Platform中的维度、量度和列表字段。现在，在 Adobe Analytics 中处理规则后应用的所有访问和归因设置都会在 Customer Journey Analytics 中的查询时应用。
 
@@ -104,10 +104,10 @@ Adobe已将“区段”组件重命名为“过滤器”，以更好地符合行
 
 ## 更改了Adobe识别访客的方式
 
-CJA扩展了ECID之外的身份概念，以包含您要使用的任何ID，包括客户ID、Cookie ID、拼合ID、用户ID、跟踪代码等。跨数据集使用通用命名空间ID，或使用 [跨渠道分析](/help/connections/cca/overview.md) 可帮助将不同数据集中的人员关联在一起。在CJA中设置工作区项目的任何用户都必须了解跨数据集使用的ID。请观看以下视频，重点介绍CJA中标识的使用：
+CJA扩展了ECID之外的身份概念，以包含您要使用的任何ID，包括客户ID、Cookie ID、拼接ID、用户ID、跟踪代码等。跨数据集使用通用命名空间ID，或使用 [跨渠道分析](/help/connections/cca/overview.md) 可帮助将不同数据集中的人员关联在一起。在CJA中设置工作区项目的任何用户都必须了解跨数据集使用的ID。请观看以下视频，重点介绍CJA中标识的使用：
 
 >[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 
 ## 对低流量维度项目概念的更改
 
-在传统Adobe Analytics中，接收过多唯一值的变量会开始将维度项存储在[!UICONTROL 低流量]下。CJA对高基数字段的限制较少。对报表架构所做的更改允许Analysis Workspace报告更多独特维度项目。请参阅 [长尾](../analysis-workspace/workspace-faq/long-tail.md) 有关CJA如何优化具有许多唯一值的维度报表的更多信息。
+在传统Adobe Analytics中，接收过多唯一值的变量会开始将维度项存储在[!UICONTROL 低流量]下。CJA对高基数字段的限制较少。对报表架构所做的更改允许分析工作区报告更多独特维度项目。请参阅 [长尾](../analysis-workspace/workspace-faq/long-tail.md) 有关CJA如何优化具有许多唯一值的维度报表的更多信息。
