@@ -4,9 +4,9 @@ description: 计算量度生成器允许您将统计和数学函数应用于生�
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1044'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ MAXV(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *量度* | 您希望计算的指标。 |
+| *metric* | 您希望计算的指标。 |
 
 ## 列最小值
 
@@ -58,7 +58,7 @@ MINV(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *量度* | 您希望计算的指标。 |
+| *metric* | 您希望计算的指标。 |
 
 ## 列总和
 
@@ -70,7 +70,7 @@ SUM(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *量度* | 您希望求总值或总和的指标。 |
+| *metric* | 您希望求总值或总和的指标。 |
 
 ## 计数 (Table)
 
@@ -82,7 +82,7 @@ COUNT(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *量度* | 您希望计数的指标。 |
+| *metric* | 您希望计数的指标。 |
 
 ## 指数 (Row)
 
@@ -94,7 +94,7 @@ EXP(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *量度* | 应用于底数 *e* 的指数。 |
+| *metric* | 应用于底数 *e* 的指数。 |
 
 ## 求幂
 
@@ -114,7 +114,7 @@ MEAN(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *量度* | 您希望求平均数的指标。 |
+| *metric* | 您希望求平均数的指标。 |
 
 ## 中间值 (Table)
 
@@ -126,7 +126,7 @@ MEDIAN(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *量度* | 您希望求中间值的指标。 |
+| *metric* | 您希望求中间值的指标。 |
 
 ## 取模
 
@@ -169,7 +169,7 @@ PERCENTILE(metric,k)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>量度</i> </td> 
+   <td colname="col1"> <i>metric</i> </td> 
    <td colname="col2"> 用于定义相对位置的指标列。 </td> 
   </tr> 
   <tr> 
@@ -196,7 +196,7 @@ QUARTILE(metric,quart)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>量度</i> </td> 
+   <td colname="col1"> <i>metric</i> </td> 
    <td colname="col2"> 您希望求四分位数值的指标。 </td> 
   </tr> 
   <tr> 
@@ -206,7 +206,7 @@ QUARTILE(metric,quart)
  </tbody> 
 </table>
 
-&#42;如果 *quart* = 0,QUARTILE返回最小值。 如果 *quart* = 1，则 QUARTILE 返回第一个四分位数（第 25 个百分位数）。如果 *quart* = 2，则 QUARTILE 返回第一个四分位数（第 50 个百分位数）。如果 *quart* = 3，则 QUARTILE 返回第一个四分位数（第 75 个百分位数）。如果 *quart* = 4，则 QUARTILE 返回最大值。
+&#42;如果 *quart* = 0，则 QUARTILE 会返回最小值。如果 *quart* = 1，则 QUARTILE 返回第一个四分位数（第 25 个百分位数）。如果 *quart* = 2，则 QUARTILE 返回第一个四分位数（第 50 个百分位数）。如果 *quart* = 3，则 QUARTILE 返回第一个四分位数（第 75 个百分位数）。如果 *quart* = 4，则 QUARTILE 返回最大值。
 
 ## 轮次
 
@@ -300,7 +300,7 @@ VARIANCE(metric)
 
 | 参数 | 描述 |
 |---|---|
-| *量度* | 您希望求变量的指标。 |
+| *metric* | 您希望求变量的指标。 |
 
 为了计算变量，需要查看整列数字。首先，从该数字列表计算平均值。得出平均值后，浏览每个条目，然后执行以下操作：
 
