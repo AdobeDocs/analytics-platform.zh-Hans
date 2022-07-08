@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 source-git-commit: 82e4629583ef0aadeac098101d7429625470d8b8
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '104'
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Experience Platform：
 * 数据建模：查看架构，管理架构
 * 数据管理：查看数据集，管理数据集
 * 数据摄取：管理源
-* 查看身份命名空间
+* 查看标识命名空间
 
 Customer Journey Analytics
 * 产品管理员访问
