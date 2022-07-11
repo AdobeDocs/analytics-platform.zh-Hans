@@ -4,10 +4,10 @@ description: 了解 CJA 提供了哪些组件，以及如何在报表中使用�
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: 83a725ac746629874162827d30d5bdf8be0fa6dc
-workflow-type: ht
-source-wordcount: '383'
-ht-degree: 100%
+source-git-commit: d75f432d8933e9f6aa735ff9ca3bc12277ee0b0a
+workflow-type: tm+mt
+source-wordcount: '409'
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,8 @@ ht-degree: 100%
 
 您可以管理以下组件：
 
-* [**注释**](/help/components/annotations/overview.md)：向您的组织传达上下文数据的细微差别和见解。 **此功能当前正在进行 [小范围测试](/help/release-notes/releases.md)。**
+* [**注释**](/help/components/annotations/overview.md)：向您的组织传达上下文数据的细微差别和见解。 
+* [**受众**](/help/components/audiences/audiences-overview.md):创建并发布在Customer Journey Analytics(CJA)中发现的受众，以 [实时客户资料](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans) (RTCP)，用于客户定位和个性化。
 * [**过滤器**](filters/filters-overview.md)：排除部分数据，以重点关注常见的维度项目
 * [**计算量度**](calc-metrics/calc-metr-overview.md)：使用量度和公式作为新组件以便在报表中使用
 * [**日期范围**](date-ranges/overview.md)：自定义和优化 Analysis Workspace 中提供的日期范围
