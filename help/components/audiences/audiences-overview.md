@@ -5,7 +5,7 @@ exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 source-git-commit: 86998458bd79f1fc17c17e58932b2b8434abf041
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -15,14 +15,14 @@ ht-degree: 78%
 >
 >此功能当前正在进行[小范围测试](/help/release-notes/releases.md)。
 
-您现在可以创建并发布在Customer Journey Analytics(CJA)中发现的受众，以 [实时客户资料](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans) (RTCP)，用于客户定位和个性化。
+您现在可以在 Adobe Experience Platform 中创建并将在 Customer Journey Analytics (CJA) 中发现的受众发布到[实时客户个人资料](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans) (RTCP)，以实现客户定位和个性化。
 
-发布受众为激活和对CJA中的分析采取行动提供了一种清晰的方法。 这些行动可能包括：
+通过发布受众可以提供一种明确的方式来激活 CJA 中发现的洞察并采取行动。这些行动可能包括：
 
 * 在 Adobe Journey Optimizer 中将受众用于历程。
 * 通过 Experience Platform 目标将受众导出到第三方。
-* 使用从CJA中基于事件的数据派生的有用属性扩充实时客户资料。
-* 在发布受众（几分钟）后，以最短的延迟执行所有这些操作
+* 使用从 CJA 中基于事件的数据派生出的有用属性丰富实时客户个人资料。
+* 在发布受众后可以最低的延迟完成所有这些操作（几分钟）
 * 发布一次性受众或定期受众
 
 ## 关键术语

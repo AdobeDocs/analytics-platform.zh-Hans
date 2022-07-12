@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics 指南
 source-git-commit: d4b1d5f784a98c5e14d653d03aec4b811a34462a
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -34,11 +34,11 @@ ht-degree: 93%
    + [常见问题解答](getting-started/cja-faq.md)
    + [Adobe Analytics到Customer Journey Analytics的演变](getting-started/aa-to-cja.md)
    + [面向新Customer Journey Analytics用户的用户指南](getting-started/aa-to-cja-user.md)
-   + 比较Adobe Analytics和Customer Journey Analytics {#compare-aa-cja}
+   + 比较 Adobe Analytics 和 Customer Journey Analytics{#compare-aa-cja}
       + [Customer Journey Analytics 功能支持](getting-started/aa-vs-cja/cja-aa.md)
-      + [比较Adobe Analytics和CJA中的数据处理情况](getting-started/aa-vs-cja/data-processing-comparisons.md)
+      + [跨 Adobe Analytics 和 CJA 比较数据处理](getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [虚拟报告环境和沙盒环境](getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
-      + [处理规则、VISTA和分类与数据准备](getting-started/aa-vs-cja/pr-vista-dataprep.md)
+      + [处理规则、VISTA 和分类与数据准备](getting-started/aa-vs-cja/pr-vista-dataprep.md)
       + [AAID、ECID、ACUSTOMID和Analytics源连接器](getting-started/aa-vs-cja/aaid-ecid-adc.md)
    + [删除后果](getting-started/cja-deletion.md)
    + [CJA 术语表](getting-started/cja-glossary.md)
@@ -68,8 +68,8 @@ ht-degree: 93%
       + [值分段](data-views/component-settings/value-bucketing.md)
    + [标准组件参考](data-views/component-reference.md)
    + [数据视图用例](data-views/data-views-usecases.md)
-+ Workspace 项目 {#cja-workspace}
-   + [Analysis Workspace 概述](analysis-workspace/home.md)
++ 工作区项目 {#cja-workspace}
+   + [分析工作区概述](analysis-workspace/home.md)
    + [执行基本分析](analysis-workspace/perform-basic-analysis.md)
    + [执行高级分析](analysis-workspace/perform-adv-analysis.md)
    + 项目 {#build-workspace-project}
@@ -143,17 +143,17 @@ ht-degree: 93%
       + [Virtual Analyst 概述](analysis-workspace/virtual-analyst/overview.md)
       + 异常检测 {#anomaly-detection}
          + [异常检测概述](analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
-         + [在 Analysis Workspace 中查看异常](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
+         + [在分析工作区中查看异常](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
          + [异常检测中使用的统计技术](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
    + [用户首选项](analysis-workspace/user-preferences.md)
    + 工作区常见问题解答 {#workspace-faq}
       + [常见问题解答](analysis-workspace/workspace-faq/faq.md)
-      + [优化 Analysis Workspace 性能](analysis-workspace/workspace-faq/optimizing-performance.md)
+      + [优化分析工作区性能](analysis-workspace/workspace-faq/optimizing-performance.md)
       + [错误消息](analysis-workspace/workspace-faq/error-messages.md)
-      + [Analysis Workspace 限制](analysis-workspace/workspace-faq/aw-limitations.md)
+      + [分析工作区限制](analysis-workspace/workspace-faq/aw-limitations.md)
       + [管理要求](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
-      + [Analysis Workspace 中的辅助功能](analysis-workspace/workspace-faq/aw-accessibility.md)
-      + [Analysis Workspace 中的长尾](analysis-workspace/workspace-faq/long-tail.md)
+      + [分析工作区中的辅助功能](analysis-workspace/workspace-faq/aw-accessibility.md)
+      + [分析工作区中的长尾](analysis-workspace/workspace-faq/long-tail.md)
 + Report Builder {#cja-reportbuilder}
    + [Report Builder 概述](report-builder/report-buider-overview.md)
    + [Report Builder 设置](report-builder/report-builder-setup.md)
@@ -172,7 +172,7 @@ ht-degree: 93%
       + [管理批注](components/annotations/manage-annotations.md)
       + [查看批注](components/annotations/view-annotations.md)
       + [移动批注](components/annotations/mobile-annotations.md)
-   + 受众 {#audiences}
+   + 受众{#audiences}
       + [受众概述](components/audiences/audiences-overview.md)
       + [创建并发布受众](components/audiences/publish.md)
       + [管理受众](components/audiences/manage.md)
@@ -223,7 +223,7 @@ ht-degree: 93%
    + [执行用户快速入门指南](mobile-app/executive.md)
 + 用例 {#cja-usecases}
    + [Customer Journey Analytics 用例](use-cases/cja-usecases.md)
-   + [将具有不同架构的报表包组合在一起](use-cases/combine-report-suites.md)
+   + [将报告包与不同的架构相结合](use-cases/combine-report-suites.md)
    + [使用对象数组](use-cases/object-arrays.md)
    + [使用绑定维度和量度](use-cases/binding-dimensions-metrics.md)
    + [(B2B) 将帐户级别的数据作为查询数据集进行添加](use-cases/b2b.md)

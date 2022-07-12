@@ -5,7 +5,7 @@ exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 source-git-commit: 86998458bd79f1fc17c17e58932b2b8434abf041
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 67%
+ht-degree: 95%
 
 ---
 
@@ -30,14 +30,14 @@ ht-degree: 67%
 | UI 设置 | 定义 |
 | --- | --- |
 | 隐藏/显示过滤器 | 允许您在左边栏中显示或隐藏以下过滤器： <ul><li>[!UICONTROL 数据视图]</li><li>[!UICONTROL 所有者]</li><li>[!UICONTROL 刷新频率]</li><li>[!UICONTROL 标记]</li></ul> |
-| [!UICONTROL 标题和描述] | 创建受众时为受众提供的标题和描述。 |
+| [!UICONTROL 标题和描述] | 创建时提供给受众的标题和描述。 |
 | [!UICONTROL 数据视图] | 创建此受众的数据视图。 |
-| [!UICONTROL 受众大小] | 此受众的总人数。 |
-| [!UICONTROL 所有者] | 受众的所有者 — 创建受众的人。 |
+| [!UICONTROL 受众规模] | 该受众中的总人数。 |
+| [!UICONTROL 所有者] | 受众的所有者，即受众创建人。 |
 | [!UICONTROL 刷新频率] | 创建受众时配置的刷新间隔。 |
-| [!UICONTROL 标记] | 应用于此受众的任何标记。 |
-| [!UICONTROL 发布状态] | 可以显示 [!UICONTROL 就绪], [!UICONTROL 正在进行]或 [!UICONTROL 错误]. |
-| [!UICONTROL  上次刷新时间] | 上次刷新受众的时间。 |
-| [!UICONTROL 上次修改时间] | 上次编辑或修改受众的时间。 |
+| [!UICONTROL 标记] | 应用于此受众的所有标记。 |
+| [!UICONTROL 发布状态] | 可以显示[!UICONTROL 就绪]、[!UICONTROL 正在进行中]或[!UICONTROL 错误]。 |
+| [!UICONTROL  上次刷新时间] | 受众最后一次刷新的时间。 |
+| [!UICONTROL 上次修改时间] | 受众最后一次编辑或修改的时间。 |
 
 {style=&quot;table-layout:auto&quot;}
