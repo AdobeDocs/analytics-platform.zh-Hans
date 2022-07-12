@@ -4,9 +4,9 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 159e24bb2a0dc40463679a6a672af773e8ce101f
+source-git-commit: 70df0ae886508b703d0b87d3608b75f21d7952a6
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '863'
 ht-degree: 97%
 
 ---
@@ -26,7 +26,6 @@ CJA 文档自创建以来进行了以下更新。
 | 2022 年 6 月 | 关于 [CJA 分析实验室](/help/labs/labs.md)的新文章 |
 | 2022 年 6 月 | 关于[支持数字字段作为查找键和查找值](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric)的最新部分 |
 | 2022 年 6 月 | [流量可视化工作流](/help/analysis-workspace/visualizations/c-flow/create-flow.md)的更新 |
-| 2022 年 6 月 | 关于[将受众发布到实时客户个人资料](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html)的新文档 |
 | 2022 年 5 月 | 关于在 CJA 中[创建连接](/help/connections/create-connection.md)的大幅更新文章。 |
 | 2022 年 5 月 | 关于如何[在 CJA Report Builder 中管理数据块](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=zh-Hans)的新文章 |
 | 2022 年 5 月 | 关于[将 Adobe Experience Platform 受众引入 CJA](/help/use-cases/ingest-aep-segments.md) 的新文章 |
