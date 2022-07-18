@@ -4,10 +4,10 @@ description: 显示 Customer Journey Analytics 中数据视图的灵活性和强
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: f698b236ec37439b1edf7c28497baa8330b05015
+source-git-commit: d642b17baa93c3b3533a7e1b4fb966cb66f22173
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 78%
+source-wordcount: '1085'
+ht-degree: 69%
 
 ---
 
@@ -87,7 +87,7 @@ f. 指定“50”为值。
 有关数据视图设置的更多信息，请参阅[创建数据视图](/help/data-views/create-dataview.md)。
 有关数据视图的概念性概述，请参阅[数据视图概述](/help/data-views/data-views.md)。
 
-## 新增与重复会话报告 {#new-repeat}
+## 7.新增与重复会话报告 {#new-repeat}
 
 您可以根据您为此数据视图定义的报告时间范围和13个月的回顾时间范围，确定某个会话是否确实是用户的第一个会话。 通过此报表，您可以确定以下内容：
 
@@ -97,9 +97,9 @@ f. 指定“50”为值。
 
 有三个部分有助于进行此报告：
 
-* 1个维度：新会话与旧会话
+* 1个维度： [会话类型](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional)  — 此维度有两个值：1) [!UICONTROL 新建] 和2) [!UICONTROL 返回]. 的 [!UICONTROL 新建] 行项目包括确定为人员定义的第一个会话的会话中的所有行为（即针对此维度的量度）。 其他所有内容都包含在 [!UICONTROL 返回] 行项目（假定所有内容都属于会话）。 如果量度不是任何会话的一部分，则它们将归入此维度的“不适用”存储段。
 
-* 2个量度：新会话、回访会话
+* 2个量度： [新会话、回访会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). 新会话定义为人员在报告窗口内定义的第一个会话。 回访会话是非人员首次会话的会话数。
 
 要访问这些组件，请执行以下操作：
 
@@ -109,7 +109,7 @@ f. 指定“50”为值。
 
 95%-99%的时间，将准确报告新会议。 唯一的例外是：
 
-* 在13个月回顾窗口之前发生会话时。 此会话将被忽略。
+* 在13个月回顾窗口之前发生第一个会话时。 此会话将被忽略。
 
 * 当会话同时跨回顾窗口和报告窗口时。 假设您在2022年6月1日至6月15日运行报表。 回顾窗口将包含2021年5月1日至2022年5月31日。 如果某个会话将于2022年5月30日开始，并于2022年6月1日结束，因为该会话包含在回顾窗口中，则报告窗口中的所有会话都将计为返回会话。
 
