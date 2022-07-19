@@ -3,7 +3,7 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新 CJA 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: d642b17baa93c3b3533a7e1b4fb966cb66f22173
+source-git-commit: 11171eb6e079adbf41e0abc798a54a5749492eac
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 44%
@@ -12,7 +12,7 @@ ht-degree: 44%
 
 # 当前Customer Journey Analytics(CJA)发行说明（2022年7月）
 
-**上次更新**:2022年7月13日
+**上次更新**:2022年7月19日
 
 >[!NOTE]
 >
@@ -22,8 +22,8 @@ ht-degree: 44%
 
 | 功能 | 描述 | [预定日期](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| 首次会话与重复会话报告 | 您现在可以发现某个特定会话是否是用户的首次会话。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) | 2022年7月20日 |
 | 支持数字字段作为查找键和查找值 | 如果要使用数值字段（如产品 SKU 上的 COGS 或边距）对字符串值进行分类，则此选项非常有用。允许从查找中获取量度有助于将这些数据点纳入报告。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric) | 2022年7月20日 |
+| 首次会话与重复会话报告 | 您现在可以发现某个特定会话是否是用户的首次会话。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) | 2022 年 8 月 17 日 |
 
 ## 修复
 

@@ -4,9 +4,9 @@ description: 显示 Customer Journey Analytics 中数据视图的灵活性和强
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: d642b17baa93c3b3533a7e1b4fb966cb66f22173
+source-git-commit: 11171eb6e079adbf41e0abc798a54a5749492eac
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1092'
 ht-degree: 69%
 
 ---
@@ -88,6 +88,10 @@ f. 指定“50”为值。
 有关数据视图的概念性概述，请参阅[数据视图概述](/help/data-views/data-views.md)。
 
 ## 7.新增与重复会话报告 {#new-repeat}
+
+>[!NOTE]
+>
+>此功能当前正在进行小范围测试。
 
 您可以根据您为此数据视图定义的报告时间范围和13个月的回顾时间范围，确定某个会话是否确实是用户的第一个会话。 通过此报表，您可以确定以下内容：
 
