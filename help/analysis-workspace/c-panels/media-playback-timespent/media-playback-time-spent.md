@@ -4,19 +4,14 @@ description: 如何在 Analysis Workspace 中使用和解释“媒体播放耗�
 feature: Panels
 role: User, Admin
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
-source-git-commit: db48638cc1e22ca4e555a8981e0f5175d52970f2
+source-git-commit: 9f1394df9b57707d57c701e997df8f4cd70c7baa
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '246'
 ht-degree: 84%
 
 ---
 
 # “媒体播放耗时”面板
-
->[!NOTE]
->
->此功能当前正在进行[小范围测试](/help/release-notes/releases.md)。
-
 
 您可以分析播放所用时间，以了解出现并发峰值或发生锐减的位置，从而对内容质量和查看者参与度提供有价值的分析，并有助于对容量或规模进行疑难解答或规划。
 
