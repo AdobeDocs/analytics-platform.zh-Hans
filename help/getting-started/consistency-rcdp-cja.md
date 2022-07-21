@@ -1,19 +1,20 @@
 ---
-description: 解释哪些因素会影响Real-time Customer Data Platform(Real-time CDP)与CJA之间量度的一致性。
-title: 实时CDP与CJA之间量度的一致性
+description: 解释哪些因素会影响Real-time Customer Data Platform(Real-time CDP)与CJA之间量度和受众成员资格计数的一致性。
+title: 实时CDP与CJA之间量度和受众成员资格计数的一致性
 role: Admin
 feature: CJA Basics
-source-git-commit: 2318b303c981ad556dc61a3419af4cce9fbbf92b
+exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
+source-git-commit: 21d51ababeda7fe188fbd42b57ef3baf76d21774
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '781'
 ht-degree: 2%
 
 ---
 
 
-# 实时CDP与CJA之间量度的一致性
+# 实时CDP与CJA之间量度和受众成员资格计数的一致性
 
-在现实场景中，无法保证Real-time Customer Data Platform（实时CDP）和Customer Journey Analytics(CJA)中量度的一致性。 本文档解释了原因。
+在现实场景中，无法保证Real-time Customer Data Platform（实时CDP）和Customer Journey Analytics(CJA)中量度和受众成员资格计数的一致性。 本文档解释了原因。
 
 ## CJA尚未使用身份图
 
