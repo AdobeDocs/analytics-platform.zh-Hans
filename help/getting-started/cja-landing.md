@@ -4,10 +4,10 @@ description: Customer Journey Analytics 登陆页面。
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 464961194405341b0bb8240a9e327d668d4cde64
+source-git-commit: 9874626b52fd4e87bd6337b20ac03d837d8ad888
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 81%
+source-wordcount: '391'
+ht-degree: 80%
 
 ---
 
@@ -25,7 +25,6 @@ Analytics Select、Prime 和 Ultimate 客户有资格此附加产品。有关更
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>新增项目或特色项目</b> </p> <p> 
      <ul>
        <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=zh-Hans">将报告包与不同的架构相结合</a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=zh-Hans">CJA 受众发布</a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/pr-vista-dataprep.html?lang=en"> 处理规则、VISTA 和分类与数据准备 </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/data-processing-comparisons.html?lang=en"> 跨 Adobe Analytics 和 CJA 报告功能比较数据处理 </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/vrs-dataview-sandbox-adc.html?lang=en"> 虚拟报表包、数据视图、AEP沙箱和Analytics源连接器 </a> </li>
