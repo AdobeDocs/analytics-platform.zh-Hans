@@ -4,10 +4,10 @@ title: 实时CDP与CJA之间量度和受众成员资格计数的一致性
 role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: 21d51ababeda7fe188fbd42b57ef3baf76d21774
+source-git-commit: cf4e2136f5ab4e0ed702820e52e9a62ea8251860
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 2%
+source-wordcount: '490'
+ht-degree: 0%
 
 ---
 
@@ -16,45 +16,22 @@ ht-degree: 2%
 
 在现实场景中，无法保证Real-time Customer Data Platform（实时CDP）和Customer Journey Analytics(CJA)中量度和受众成员资格计数的一致性。 本文档解释了原因。
 
-## CJA尚未使用身份图
+## 身份配置的差异
 
-CDP和CJA当前对人员的定义不相同。 CJA尚未使用 [身份图](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hans) 以告知其对人的定义。 Real-time CDP完全依赖身份图中的信息来构建合并的配置文件。
+Real-time CDP和CJA当前对人员的定义不相同。 Real-time CDP完全依赖 [身份图](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=en) 来构建合并的配置文件。
 
-CJA使用名为 [基于字段的拼合](/help/connections/cca/overview.md) 它会从数据湖中的数据集提取标识符，并应用自定义逻辑将它们链接在一起。 预计中期后，CJA将开始利用 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en) 导出到数据湖，从而允许在实时CDP和CJA中共享身份概念。
+CJA可配置为使用 [跨渠道分析](/help/connections/cca/overview.md) 它会从数据湖中的数据集提取标识符，并应用自定义逻辑将它们链接在一起。
+将来，CJA将能够使用身份图。
 
->[!IMPORTANT]
->
->使Adobe Experience Platform Identity Service成为所有Adobe Experience Platform应用程序的真实身份源不会自动使各个应用程序的量度保持一致。 请阅读并了解原因。
+## 数据集配置的差异
 
-## 应用程序数据灵活性
+您可以选择在Real-time CDP中放置一些数据，在CJA中放置一些数据；通常，客户会选择在CJA中放置比与实时CDP相关的更多历史数据。 与CJA相比，其他数据集可能与Real-time CDP更相关。
 
-Experience Platform不会应用严格的强制措施来将实时客户资料和数据湖之间的数据保持相同。 在中处理数据的一些用例 [实时客户资料](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-overview.html?lang=en) （激活），而其他人则在工作 [数据湖](https://business.adobe.com/blog/basics/data-lake) （报告和查询服务）。
+## 处理配置的差异
 
-实时CDP客户通常不会将Adobe Experience Platform数据湖中100%的数据放入用户档案。 这是特意设计的 — 客户应专门在湖中为用户档案启用数据。 CJA允许数据分析人员自由选择要从数据湖引入哪些数据进行分析，而与实时CDP的功能无关。
+CJA允许在查询时对数据进行大量修改，如组合字段、拆分字段以及其他操作（如包含/排除、子字符串、重复值消除、会话化和行级过滤）。
 
-## 特定于应用程序的修饰符
-
-CJA允许在查询时对数据进行大量修改，如组合字段、拆分字段以及其他操作（如货币转换、重复值消除、会话化和行级过滤）。 这些功能对CDP不可用。
-
-同样， Real-time CDP也适用 [合并策略](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=en) 确定哪些数据具有优先级，哪些数据将被合并以创建人员的统一视图。 这些配置牢牢地位于每个应用程序的逻辑内，不会共享。
-
-## 读取时间行为与写入时间行为
-
-Real-time CDP需要使用最新ID图形进行时间点配置文件拼合。
-
-* Real-time CDP旨在实时组合用户档案信息以进行激活。
-
-* 它可以实时容纳对给定用户的设置标识符的所有更改。
-
-* 回顾窗口由区段定义控制。
-
-CJA要求使用ID图表导出在写入时拼合数据。
-
-* CJA在数据准备好进行分析之前，会应用复杂的预处理步骤，如索引、共享和分组。
-
-* 给定用户的人员标识符是预处理阶段的关键输入；之后更改人员标识符会产生重大的重新处理成本。
-
-* 回顾窗口在应用程序级别进行控制。
+Real-time CDP提供了一组不同的数据操作工具。 它适用 [合并策略](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=en) 确定哪些数据具有优先级，哪些数据将被合并以创建人员的统一视图。
 
 ## TTL（存留期）和数据获取方面的差异
 
@@ -70,10 +47,6 @@ CJA要求使用ID图表导出在写入时拼合数据。
 
 * Real-time CDP中的配置文件存储允许客户可配置的TTL。 客户可以将此TTL更改为需要保留在其许可证授权内的任何TTL。
 
-## GDPR（《通用数据保护条例》）处理方法的差异
-
-跨实时CDP和数据湖的GDPR和数据卫生的数据处理逻辑存在很大差异。 我们正在努力采取一种单一的方法。
-
 ## 数据获取滞后的差异
 
-CJA报表在数据可用于报表或创建受众之前会存在一些延迟。 Real-time CDP通过具有不同滞后的不同系统处理数据。
+CJa尚未具备实时CDP的实时功能，因此，CJA报表会在数据可用于报表或创建受众之前存在一些延迟。 Real-time CDP通过具有不同滞后的不同系统处理数据。
