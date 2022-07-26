@@ -4,9 +4,9 @@ title: 实时CDP与CJA之间量度和受众成员资格计数的一致性
 role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: cf4e2136f5ab4e0ed702820e52e9a62ea8251860
+source-git-commit: 769eef205df32865874753859ce79e573db40641
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,14 @@ ht-degree: 0%
 
 在现实场景中，无法保证Real-time Customer Data Platform（实时CDP）和Customer Journey Analytics(CJA)中量度和受众成员资格计数的一致性。 本文档解释了原因。
 
+在Real-time CDP和CJA之间比较受众成员资格计数时，请务必记住这两个工具的不同用途。 Real-time CDP使用客户配置文件数据将数字体验定位到个人消费者，而CJA旨在帮助用户了解关键业务量度和区段的模式。 虽然受众从CJA发布到实时CDP允许这些工具的用户轻松且本地地“激活”洞察，并利用在CJA中获取的学习内容，但这些工具仍可实现根本不同的目的。
+
 ## 身份配置的差异
 
 Real-time CDP和CJA当前对人员的定义不相同。 Real-time CDP完全依赖 [身份图](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=en) 来构建合并的配置文件。
 
 CJA可配置为使用 [跨渠道分析](/help/connections/cca/overview.md) 它会从数据湖中的数据集提取标识符，并应用自定义逻辑将它们链接在一起。
+
 将来，CJA将能够使用身份图。
 
 ## 数据集配置的差异
