@@ -5,9 +5,9 @@ title: 可视化图表概述
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1043'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -27,8 +27,8 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | [条形图](/help/analysis-workspace/visualizations/bar.md) | 显示一些垂直条，这些垂直条表示一个或多个指标中的各种值。 |
 | [项目符号图表](/help/analysis-workspace/visualizations/bullet-graph.md) | 显示您感兴趣的值与其他性能范围（目标）进行比较或衡量的结果。 |
 | [同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | *`cohort`* 是指一组在特定期限内共享相同特性的人员。同类群组分析对于保留、流失或延迟分析非常有用。 |
-| [圆环图](/help/analysis-workspace/visualizations/donut.md) | 此可视化图表与饼图类似，它将数据显示为整体的一部分或过滤器。 |
-| [流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | 流失报表显示访客从何处离开（流失）或继续通过（流过）预定义的页面序列。可以设置为有条件序列或确切序列。 |
+| [圆环图](/help/analysis-workspace/visualizations/donut.md) | 此可视化图表与饼图类似，它将数据显示为整体的一部分或筛选条件。 |
+| [流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | 流失报告显示访客从何处离开（流失）或继续通过（流过）预定义的页面序列。可以设置为有条件序列或确切序列。 |
 | [流](/help/analysis-workspace/visualizations/c-flow/flow.md) | 显示客户在您的网站和应用程序中的确切路径。 |
 | [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | 自由格式表不仅可以作为数据表，而且还是一个交互式可视化图表。这是在工作区中进行数据分析的基础。 |
 | [直方图](/help/analysis-workspace/visualizations/histogram.md) | 直方图根据指标数量，将访客数、访问数或点击数划分到存储桶中。 |
@@ -84,7 +84,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 
 | 设置 | 描述 |
 | --- | --- |
-| 插入复制的面板/可视化图表 | 此设置允许您将复制的面板或可视化图表粘贴（“插入”）到项目中的其他位置或完全不同的项目中。 |
+| 插入复制的面板/可视化图表 | 使用此设置，您可以将复制的面板或可视化图表粘贴（“插入”）到项目中的其他位置或完全不同的项目中。 |
 | 复制可视化图表 | 此设置允许您右键单击并复制可视化图表，以便将其插入到项目中的其他位置或完全不同的项目中。 |
 | [以 CSV 格式下载项目](/help/analysis-workspace/curate-share/download-send.md) | 以 CSV 格式下载所选维度，最多下载 50,000 个维度项。 |
 | [将数据下载为 CSV](/help/analysis-workspace/curate-share/download-send.md) | 以 CSV 格式下载可视化图表数据源。 |
@@ -95,6 +95,6 @@ Analysis Workspace 中提供了以下可视化图表类型：
 
 ## “创建可视化”图标 {#quick-viz}
 
-如果您不确定所要创建的可视化图表，请单击任意表行中的&#x200B;**[!UICONTROL 创建可视化]**&#x200B;图标（将光标悬停于上方即可显示）。这是添加可视化图表的最快方法。 单击此图标将提示 Analysis Workspace 针对哪种可视化图表最适合您的数据做出有根据的推测。例如，如果您选择了 1 行，则会创建趋势线形图。如果您选择了 3 个过滤器行，则会创建维恩图。
+如果您不确定所要创建的可视化图表，请单击任意表行中的&#x200B;**[!UICONTROL 创建可视化]**&#x200B;图标（将光标悬停于上方即可显示）。这是添加可视化图表最快的方法。单击此图标将提示 Analysis Workspace 针对哪种可视化图表最适合您的数据做出有根据的推测。例如，如果您选择了 1 行，则会创建趋势线形图。如果您选择了 3 个过滤器行，则会创建维恩图。
 
 ![快速可视化](assets/quick-viz.png)
