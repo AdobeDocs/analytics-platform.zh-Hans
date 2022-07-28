@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics 中有哪些组件？
-description: 了解 CJA 提供了哪些组件，以及如何在报表中使用它们。
+description: 了解 CJA 提供了哪些组件，以及如何在报告中使用它们。
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 source-git-commit: 434695e87a0b342da9c17c94b93e0253cf1e621e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '376'
 ht-degree: 100%
 
@@ -20,9 +20,9 @@ ht-degree: 100%
 
 您可以管理以下组件：
 
-* [**注释**](/help/components/annotations/overview.md)：向您的组织传达上下文数据的细微差别和见解。 
+* [**批注**](/help/components/annotations/overview.md)：向您的组织传达上下文数据的细微差别和见解。
 * [**过滤器**](filters/filters-overview.md)：排除部分数据，以重点关注常见的维度项目
-* [**计算量度**](calc-metrics/calc-metr-overview.md)：使用量度和公式作为新组件以便在报表中使用
+* [**计算量度**](calc-metrics/calc-metr-overview.md)：使用量度和公式作为新组件以便在报告中使用
 * [**日期范围**](date-ranges/overview.md)：自定义和优化 Analysis Workspace 中提供的日期范围
 * [**项目**](/help/analysis-workspace/home.md)：组织和维护 Analysis Workspace 中的项目
 
@@ -58,4 +58,4 @@ Analysis Workspace 中的组件包括量度、维度、区段和时间粒度，�
 
 ## 组件访问权限
 
-在 Analysis Workspace 中，管理员可[管理](/help/analysis-workspace/curate-share/curate.md)哪些组件在报表中对用户可见。
+在 Analysis Workspace 中，管理员可[管理](/help/analysis-workspace/curate-share/curate.md)哪些组件在报告中对用户可见。
