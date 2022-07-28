@@ -4,9 +4,9 @@ title: 面板概述
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 source-git-commit: 7883726d8055fd5ea161fb4991a17ad579012f28
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '894'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 | [归因面板](attribution.md) | 使用任意维度和转化指标，快速比较和可视化任意数量的归因模型。 |
 | [自由格式面板](freeform-panel.md) | 不受限制地执行比较和细分，然后添加可视化图表来讲述丰富的数据案例。 |
 | [“媒体并行查看者”面板](media-concurrent-viewers.md) | 分析一段时间内的并发查看者，了解有关并发峰值的详细信息，并且可以进行细分和比较。 |
-| [“媒体播放逗留时间”面板](media-playback-timespent/media-playback-time-spent.md) | 分析播放所用时间，以了解出现并发峰值或发生锐减的位置。 |
+| [“媒体播放逗留时间”面板](media-playback-timespent/media-playback-time-spent.md) | 分析播放耗时以了解发生并发高峰或发生播放量下降的位置。 |
 
 ![](assets/panel-overview.png)
 
@@ -35,9 +35,9 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 ## 日历 {#calendar}
 
-面板日历控制面板中表格和可视化报表的报告范围。
+面板日历控制面板中表格和可视化图表的报告范围。
 
-注意：如果在表格、可视化报表或面板拖放区域中使用了某个（紫色）日期范围组件，则该组件会覆盖面板日历。
+注意：如果在表格、可视化图表或面板拖放区域中使用了某个（紫色）日期范围组件，则该组件会覆盖面板日历。
 
 ![](assets/panel-calendar.png)
 
