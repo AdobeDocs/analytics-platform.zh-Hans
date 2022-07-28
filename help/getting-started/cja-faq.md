@@ -1,13 +1,13 @@
 ---
 title: Customer Journey Analytics 常见问题解答
-description: Customer Journey Analytics — 常见问题解答。
+description: Customer Journey Analytics - 常见问题解答。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 source-git-commit: 29d8f5e293ddee10578e953e2db224099f7b7033
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2377'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -30,10 +30,10 @@ ht-degree: 95%
 | 问题 | 回答 |
 | --- | --- |
 | [!UICONTROL Customer Journey Analytics] 是否可以跨设备或跨数据集进行“拼合”？ | 支持。[!UICONTROL Customer Journey Analytics] 具有一个称为[跨渠道分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=zh-Hans) (CCA) 的拼合解决方案，该方案允许您重新键入数据集的人员 ID，实现多个数据集的无缝组合。 |
-| 是否支持从匿名行为到实名行为的拼合？ | 支持。[跨渠道分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html)查看来自已通过和未通过身份验证的会话的用户数据来生成拼合 ID。 |
+| 是否支持从匿名行为到实名行为的拼合？ | 支持。[跨渠道分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=zh-Hans)查看来自已通过和未通过身份验证的会话的用户数据来生成拼合 ID。 |
 | CCA 中如何进行“重放”？ | CCA 根据它所掌握的唯一标识符“重放”数据。重放导致新设备连接并被拼合。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html#step-1%3A-live-stitching) |
 | 如何在 CCA 中拼合历史数据（回填）？ | 首次启用时，Adobe 提供追溯到上月初（最多 60 天）的拼合数据的回填。为实现此回填，当时的未拼合数据中必须存在过渡 ID。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html#enable-cross-channel-analytics) |
-| 未拼合的配置文件数据集记录的预期行为是什么？ | **示例方案**:使用 `CRMid` 作为人员ID。 一个是包含 `CRMid` 在所有记录中。 另一个数据集是CRM配置文件数据集。 40%的CRM数据集已 `CRMid` 存在于Web事件数据集中。 另外60%的记录不在Web事件数据集中 — 这些记录是否显示在Analysis Workspace的报表中？<p> **回答**:没有与其关联事件的配置文件行存储在CJA中。 但是，在Analysis Workspace中显示与该ID绑定的事件后，您才能查看这些ID。 |
+| 未拼合的配置文件数据集记录的预期行为是什么？ | **示例场景**：使用 `CRMid` 作为人员 ID 在 CJA 连接中联接 2 个数据集。一个是 Web 事件数据集，所有记录中都包含 `CRMid`。另一个数据集是 CRM 配置文件数据集。CRM 数据集中 40% 的数据都在 Web 事件数据集中有 `CRMid`。另外 60% 的数据不在 Web 事件数据集中 - 这些记录是否显示在 Analysis Workspace 的报告中？<p> **回答**：不带关联的事件的配置文件行存储在 CJA 中。但是，您无法在 Analysis Workspace 中查看它们，直到与该 ID 关联的事件出现。 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -58,7 +58,7 @@ ht-degree: 95%
 
 | 问题 | 回答 |
 | --- | --- |
-| 在 [!UICONTROL Adobe Experience Platform] 上，[!UICONTROL Customer Journey Analytics] 的预期滞后时间是多少？ | <ul><li>实时数据或事件：当数据在 AEP 中可用后，在 90 分钟内处理和摄取。（批次大小 > 500 万行：超过 90 分钟。）</li><li>Small backfills - For example, a lookup dataset of 10 million rows: within 7 days<li>大量回填 - 例如，5000 亿行：30 天</li></ul> |
+| 在 [!UICONTROL Adobe Experience Platform] 上，[!UICONTROL Customer Journey Analytics] 的预期滞后时间是多少？ | <ul><li>实时数据或事件：当数据在 AEP 中可用后，在 90 分钟内处理和摄取。（批次大小 > 500 万行：超过 90 分钟。）</li><li>少量回填 - 例如，查找 100 万行的数据集：7 天内<li>大量回填 - 例如，5000 亿行：30 天</li></ul> |
 
 ## 5. 设置[!UICONTROL 连接]数据保留的时段 {#data-retention}
 
@@ -77,25 +77,25 @@ ht-degree: 95%
 | --- | --- |
 | 删除 [!UICONTROL Adobe Experience Platform] 中的沙盒 | 如果删除沙盒，则将阻止数据流向与该沙盒中的数据集关联的 [!UICONTROL Customer Journey Analytics] 连接。目前，CJA 中关联被删除沙盒的[!UICONTROL 连接]不能自动删除。 |
 | 删除 [!UICONTROL Adobe Experience Platform] 中的架构，但不删除与该架构关联的数据集 | [!UICONTROL Adobe Experience Platform][!UICONTROL  不允许删除具有一个或多个关联数据集的架构。]但是，具有相应权限集的管理员可以先删除关联数据集，然后再删除架构。 |
-| 删除 [!UICONTROL Adobe Experience Platform] 数据湖中的一个数据集 | 删除 AEP 数据湖中的某个数据集将阻止数据从该数据集流向包括该数据集的任何 CJA 连接。Any data from that dataset is automatically deleted from associated CJA Connections. |
+| 删除 [!UICONTROL Adobe Experience Platform] 数据湖中的一个数据集 | 删除 AEP 数据湖中的某个数据集将阻止数据从该数据集流向包括该数据集的任何 CJA 连接。来自该数据集的任何数据都会自动从关联的 CJA 连接中删除。 |
 | 删除 [!UICONTROL Customer Journey Analytics] 中的数据集 | 请联系您的Adobe客户经理，以启动删除已保存连接中数据集的过程。 |
 | 从数据集中删除批次（在 [!UICONTROL Adobe Experience Platform] 中） | 如果从 [!UICONTROL Adobe Experience Platform] 数据集中删除了某个批次，则会从包含该特定批次的所有 CJA 连接中删除该批次。CJA 会收到批次已在 [!UICONTROL Adobe Experience Platform] 中删除的通知。 |
 | **批次被摄取**&#x200B;到 [!UICONTROL Customer Journey Analytics] 的同时删除批次 | 如果数据集中只有一个批次，则该批次中只会有部分数据或没有任何数据显示在 [!UICONTROL Customer Journey Analytics] 中。系统将回滚该摄取操作。例如，如果数据集中共有 5 个批次，且在删除该数据集时已摄取其中 3 个批次，那么这 3 个批次中的数据将显示在 [!UICONTROL Customer Journey Analytics] 中。 |
 | 删除 [!UICONTROL Customer Journey Analytics] 中的连接 | 将显示一条错误消息，指示：<ul><li>为已删除的连接创建的所有数据视图都将不再起作用。</li><li> 同样地，任何依赖于已删除连接中的数据视图的工作区项目都将停止运行。</li></ul> |
 | 删除 [!UICONTROL Customer Journey Analytics] 中的数据视图 | 将显示一条错误消息，指示所有依赖于这个已删除数据视图的 Workspace 项目都将停止运行。 |
 
-## 7. 在 CJA 中合并报表包时的注意事项 {#merge-reportsuite}
+## 7. 在 CJA 中合并报告包时的注意事项 {#merge-reportsuite}
 
-如果打算通过 [Adobe Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)引入 Adobe Analytics 数据，请在合并 2 个或更多 Adobe Analytics 报表包时考虑以下这些后果。
+如果打算通过 [Adobe Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans)引入 Adobe Analytics 数据，请在合并 2 个或更多 Adobe Analytics 报告包时考虑以下这些后果。
 
 | 问题 | 注意事项 |
 | --- | --- |
-| 变量 | [!UICONTROL eVars] 等变量在报表包间可能不一致。例如，报表包 1 中的 eVar1 可能指向&#x200B;**[!UICONTROL 页面]**。在报表包 2 中，eVar1 可能指向&#x200B;**[!UICONTROL 内部活动]**，导致报表变得混乱而又不准确。 |
-| [!UICONTROL 会话]数和[!UICONTROL 人员]数 | 在报表包间将为其去重。因此，这些数量可能不一致。 |
-| 量度去重 | 如果有多行的交易 ID（例如，[!UICONTROL 购买 ID]）相同，请为指标的实例（例如，[!UICONTROL 订单]）去重。这样可防止过度计算关键指标。因此，[!UICONTROL 订单]等指标可能不在报表包间累加。 |
-| 货币 | CJA 中尚不支持货币转换。如果尝试合并的报表包使用不同的基础货币，则可能会出现问题。 |
-| [!UICONTROL 持久性] | [持久性](../data-views/component-settings/persistence.md)作用于各个报表包，它影响[!UICONTROL 筛选器]、[!UICONTROL 归因]等等。数值可能无法正确地累加。 |
-| [!UICONTROL 分类] | 在合并报表包时，不会自动为[!UICONTROL 分类]去重。将多个分类文件合并为一个[!UICONTROL 查找]数据集时，可能会遇到问题。 |
+| 变量 | [!UICONTROL eVars] 等变量在报告包间可能不一致。例如，报告包 1 中的 eVar1 可能指向&#x200B;**[!UICONTROL 页面]**。在报告包 2 中，eVar1 可能指向&#x200B;**[!UICONTROL 内部活动]**，导致报告变得混乱而又不准确。 |
+| [!UICONTROL 会话]数和[!UICONTROL 人员]数 | 在报告包间将为其去重。因此，这些数量可能不一致。 |
+| 量度去重 | 如果有多行的交易 ID（例如，[!UICONTROL 购买 ID]）相同，请为指标的实例（例如，[!UICONTROL 订单]）去重。这样可防止过度计算关键指标。因此，[!UICONTROL 订单]等指标可能不在报告包间累加。 |
+| 货币 | CJA 中尚不支持货币转换。如果尝试合并的报告包使用不同的基础货币，则可能会出现问题。 |
+| [!UICONTROL 持久性] | [持久性](../data-views/component-settings/persistence.md)作用于各个报告包，它影响[!UICONTROL 筛选器]、[!UICONTROL 归因]等等。数值可能无法正确地累加。 |
+| [!UICONTROL 分类] | 在合并报告包时，不会自动为[!UICONTROL 分类]去重。将多个分类文件合并为一个[!UICONTROL 查找]数据集时，可能会遇到问题。 |
 
 
 ## 8. 传统 [!UICONTROL Adobe Analytics] 组件
@@ -111,7 +111,7 @@ ht-degree: 95%
 
 {style=&quot;table-layout:auto&quot;}
 
-## 9. Estimate connection size {#estimate-size}
+## 9. 估算连接大小 {#estimate-size}
 
 您可能需要知道 [!UICONTROL Customer Journey Analytics] 中当前有多少行数据。要准确了解贵组织的事件数据记录（数据行）使用情况，请执行以下操作 **对于贵组织创建的每个连接**.
 
@@ -125,24 +125,24 @@ ht-degree: 95%
 
    ![](assets/event-data.png)
 
-1. 获得所有事件数据行的总和后，在您的公司与Adobe签署的Customer Journey Analytics合同中查找“数据行”权利。
+1. 获得所有事件数据行的总和后，在您的公司与 Adobe 签署的 Customer Journey Analytics 合同中查找“数据行”权利。
 
-   这可让您获得销售订单中授权的最大数据行数。 如果步骤3产生的数据行数大于此数值，则表示您出现过量情况。
+   这可让您获得销售订单中授权的最大数据行数。 如果步骤 3 产生的数据行数大于此数值，则表示您出现过量情况。
 
 1. 要解决这种情况，您有以下几个选项：
 
-   * 更改 [数据保留设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans#set-rolling-window-for-connection-data-retention).
+   * 更改 [数据保留设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html#set-rolling-window-for-connection-data-retention).
    * [删除任何未使用的连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components).
-   * [](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components)
-   * 请联系您的Adobe客户经理以许可额外容量。
+   * [在 AEP 中删除数据集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components)。
+   * 请联系您的 Adobe 客户经理以获得额外容量的许可。
 
-## 十、关于使用超量 {#overage}
+## 10. 关于使用过量 {#overage}
 
-使用限制由Adobe定期监控和强制执行。 “数据行”是指可用于在Customer Journey Analytics中分析的每日平均数据行数。
+Adobe 定期监控和执行使用限制。“数据行”是指可用于在 Customer Journey Analytics 中分析的每日平均数据行数。
 
-例如，假设您的合同授权您拥有100万行数据。 假设在使用Customer Journey Analytics的第1天，您上传了200万行数据。 在第2天，您会删除100万行，并在剩余的许可证期限内将使用量保持在承诺的最大值（即100万行数据）。 根据您的合同条款，由于您超出了“数据行”许可证授权，因此您在第1天仍可能会收取按比例分摊的过度使用费用。
+例如，假设您的合同授权您拥有 100 万行数据。假设在使用 Customer Journey Analytics 的第 1 天，您上传了 200 万行数据。在第 2 天，您会删除 100 万行，并在剩余的许可证期限内将使用量保持在承诺的最大值（即 100 万行数据）。根据您的合同条款，由于您超出了“数据行”许可证授权，因此您在第 1 天仍可能会收取按比例分摊的过度使用费用。
 
-## 11.诊断数据差异 {#discrepancies}
+## 11. 诊断数据差异 {#discrepancies}
 
 在某些情况下，您可能会注意到您的连接所摄取的事件总数与 [!UICONTROL Adobe Experience Platform] 中数据集的行数存在差异。在此示例中，“B2B Impression”数据集的行数为 7650，而该数据集在 [!UICONTROL Adobe Experience Platform] 中的行数为 3830。导致差异的原因有多种，可采取以下步骤进行诊断：
 
