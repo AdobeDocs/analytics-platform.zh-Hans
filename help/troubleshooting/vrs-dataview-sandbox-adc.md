@@ -2,7 +2,7 @@
 source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
 workflow-type: tm+mt
 source-wordcount: '698'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 # 虚拟报告包、数据视图、AEP 沙盒和 Analytics Source Connector 
@@ -21,7 +21,7 @@ A VRS：
 
 * 可以基于 Adobe Analytics 区段。
 * 能够以无损的方式应用于历史数据和新数据。
-* 允许您在Adobe Analytics报表包上创建一个或多个虚拟视图，以供不同的业务团队使用。
+* 允许您在 Adobe Analytics 报告包上创建一个或多个虚拟视图，以供不同的业务团队使用。
 * 可用于控制 Adobe Analytics 中不同用户对不同类型数据的访问和管理。
 * 为 Adobe Analytics 提供可选的[报告时处理](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=zh-Hans)功能。在这种情况下，VRS 可用于创建对“访问”的自定义。
 * 在报告运行时应用，类似于区段评估。这会在收集数据并将其存储在 Adobe Analytics 中&#x200B;_之后_&#x200B;进行。
@@ -75,4 +75,4 @@ AEP 沙盒不会：
 另外：
 
 * 来自不同沙盒的数据不能在 CJA 中合并。
-*  Analytics Source Connector 将报告包数据发送&#x200B;_到_&#x200B;特定的沙盒中。每个报告包均可以配置为单个沙盒的来源。有关更多详细信息，请参阅[ Analytics Source Connector 文档](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en)。
+* Analytics Source Connector 将报告包数据发送&#x200B;_到_&#x200B;特定的沙盒中。每个报告包均可以配置为单个沙盒的来源。有关更多详细信息，请参阅 [Analytics Source Connector 文档](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en)。

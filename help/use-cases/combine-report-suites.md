@@ -5,7 +5,7 @@ exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
 source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
 workflow-type: tm+mt
 source-wordcount: '1335'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 96%
 
 [ Analytics Source Connector ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)将 Adobe Analytics 中的报告包数据带入 Adobe Experience Platform (AEP)，以供 AEP 应用程序使用，如 Real-time Customer Data Platform 和 Customer Journey Analytics (CJA)。引入 AEP 的每个报告包都会被配置为单个源连接数据流，而每个数据流都会作为 AEP 数据湖中的数据集。 Analytics Source Connector 会为每个报告包创建一个数据集。
 
-CJA 客户使用[连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans)将 AEP 数据湖中的数据集集成到 CJA 的分析工作区。然而，在连接内组合报告包时，需要使用 AEP 的[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)功能解决报告包之间的架构差异。其目的是确保 Adobe Analytics 的变量（如 prop 和 eVar）在 CJA 中具有一致的含义。
+CJA 客户使用[连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans)将 AEP 数据湖中的数据集集成到 CJA 的 Analysis Workspace。然而，在连接内组合报告包时，需要使用 AEP 的[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)功能解决报告包之间的架构差异。其目的是确保 Adobe Analytics 的变量（如 prop 和 eVar）在 CJA 中具有一致的含义。
 
 ## 报告包之间的架构差异存在问题
 
@@ -156,6 +156,6 @@ Experience Platform 数据准备功能与 Analytics Source Connector 集成，�
 
 ## 数据准备与组件 ID
 
-如上所述，数据准备工具允许您跨多个 Adobe Analytics 报告包将不同字段映射到一起。当您想要将多个数据集的数据合并到单个 CJA 连接中时，这在 CJA 中很有帮助。但是，如果您打算将报表包保留在单独的CJA连接中，但希望跨这些连接和数据视图使用一组报表，则更改CJA中的基础组件ID可让报表兼容，即使架构不同也是如此。 有关更多信息，请参阅 [组件设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=zh-Hans)。
+如上所述，数据准备工具允许您跨多个 Adobe Analytics 报告包将不同字段映射到一起。当您想要将多个数据集的数据合并到单个 CJA 连接中时，这在 CJA 中很有帮助。但是，如果您打算将报告包保留在单独的 CJA 连接中，但希望在这些连接和数据视图中使用一组报告，则更改 CJA 中的基础组件 ID 可以在即使架构不同的情况下使报告兼容。有关更多信息，请参阅 [组件设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=zh-Hans)。
 
 更改组件 ID 是一项仅限 CJA 的功能，并且不会影响发送到 Real-time Customer Profile 和 RTCDP 的 Analytics Source Connector 的数据。
