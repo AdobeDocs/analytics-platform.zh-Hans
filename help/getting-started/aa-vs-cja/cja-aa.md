@@ -4,10 +4,10 @@ description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 9d928a68e9b2eb16ba14cd793857547432ba11b0
+source-git-commit: 42b3b2e9a2ff8a46fd6c84e2425e19dcbb0d28f0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1493'
+ht-degree: 91%
 
 ---
 
@@ -67,6 +67,7 @@ ht-degree: 0%
 | 登录、退出和花费时间维度和量度 | 受支持（现在“进入次数”和“退出次数”称为“会话启动次数”和“会话结束次数”），但计算方式略有不同。 |
 | eVar 持久性设置 | eVar 不再是 CJA 的一部分。但是，持久性设置现在是数据视图的一部分，且可用于所有维度。请记住，持久基于报表时间处理，而不是数据收集处理。数据视图中的纬度集限制为 90 天最大持久性，不支持无限持久性。 |
 | 地理分段维度 | 收集到 Adobe Analytics 的所有地理分段/地理位置通过 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) 流入 CJA。对于不使用 Analytics Source Connector 的实施，例如那些依赖 AEP Web SDK 进行数字数据收集的实施，将不会自动执行完整的地理查找功能：全球支持国家和州，但不支持城市和邮政编码。 |
+| IP 模糊处理 | 对于使用Analytics源连接器将数据从Adobe Analytics填充到CJA的CJA客户：在Adobe Analytics中应用的IP模糊处理设置会流向您的CJA数据。 您可以根据需要在Adobe Analytics中控制这些设置。<p>对于使用Adobe Experience Platform Web SDK将数据直接填充到Platform和CJA中的CJA客户：您可以使用平台中用于数据收集的数据准备来配置规则，以根据您公司的要求模糊处理IP地址。 |
 | 营销渠道 | 营销渠道数据通过 Analytics Source Connector 流入 CJA。营销渠道规则仍必须在传统的 Adobe Analytics 中进行配置。某些规则不受支持。有关更多详细信息，请参阅 [CJA 营销渠道文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=zh-Hans#cja-usecases)。 |
 | 新的与重复的会话报告 | 2022年8月17日受支持， [具有13个月的回顾窗口](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat). |
 | 产品变量 | 在该 Experience Platform 中，用户可以在数据集架构中使用“对象”类型字段的数组来满足此用例。在 CJA 内，客户能够使用任意数量的产品变量，不像在 Adobe Analytics 中一样仅限使用单个变量。 |
