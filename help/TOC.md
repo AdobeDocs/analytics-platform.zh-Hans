@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics 指南
 source-git-commit: 8a23ed7ad39497ed3c9d86fac6cf5b38856b2088
 workflow-type: tm+mt
 source-wordcount: '708'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -30,8 +30,8 @@ ht-degree: 97%
 + Customer Journey Analytics 概述{#cja-overview}
    + [Customer Journey Analytics 概述](getting-started/cja-overview.md)
    + [快速入门](getting-started/cja-getting-started.md)
-   + [实时CDP与CJA之间量度和受众成员资格计数的一致性](getting-started/consistency-rcdp-cja.md)
-   + [CJA访问控制](getting-started/cja-access-control.md)
+   + [Real-Time CDP 和 CJA 之间量度和受众会员计数的一致性](getting-started/consistency-rcdp-cja.md)
+   + [CJA 访问控制](getting-started/cja-access-control.md)
    + [Customer Journey Analytics 登陆页面](getting-started/landing.md)
    + [常见问题解答](getting-started/cja-faq.md)
    + [从 Adobe Analytics 演变到 Customer Journey Analytics](getting-started/aa-to-cja.md)
