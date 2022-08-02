@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 source-git-commit: 3fa65dd46e807041cec1fee64e918aacaa5b7a1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2471'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -140,9 +140,9 @@ Customer Journey Analytics 支持将标识映射作为个人 ID。Identity Map �
 
 下表显示了当存在边缘情况时两种配置方案及其处理方式：
 
-| 选项 | “身份映射”中不存在 ID | 多个ID，无标记为主ID | 多个 ID 均标记为主 ID | 单个ID，标记为主ID或不标记为主ID | 一个 ID 标记为主 ID 的无效命名空间 |
+| 选项 | “身份映射”中不存在 ID | 多个 ID，没有一个标记为主 ID | 多个 ID 均标记为主 ID | 单个 ID，是否标记为主 ID | 一个 ID 标记为主 ID 的无效命名空间 |
 |---|---|---|---|---|---|
-| **[!UICONTROL 使用主 ID 命名空间]已选中** | 该行将被 CJA 删除。 | 该行将被 CJA 删除，因为未指定主 ID。 | 所有命名空间下标记为主 ID 的 ID 都将被提取到列表中，随后，这些 ID 将按字母顺序排序；根据这种新的排序方式，排在第一个命名空间中的首个 ID 将被用作人员 ID。 | 单个ID用作人员ID。 | 即便命名空间可能无效（未出现在 AEP 中），CJA 仍会将该命名空间下的主 ID 用作人员 ID。 |
+| **[!UICONTROL 使用主 ID 命名空间]已选中** | 该行将被 CJA 删除。 | 该行将被 CJA 删除，因为未指定主 ID。 | 所有命名空间下标记为主 ID 的 ID 都将被提取到列表中，随后，这些 ID 将按字母顺序排序；根据这种新的排序方式，排在第一个命名空间中的首个 ID 将被用作人员 ID。 | 单个 ID 用作个人 ID。 | 即便命名空间可能无效（未出现在 AEP 中），CJA 仍会将该命名空间下的主 ID 用作个人 ID。 |
 | **[!UICONTROL 特定的身份映射命名空间]已选择** | 该行将被 CJA 删除。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。（由于在创建连接时，只能选择有效的命名空间，因此无效的命名空间/ID 不可能用作人员 ID） |
 
 {style=&quot;table-layout:auto&quot;}
