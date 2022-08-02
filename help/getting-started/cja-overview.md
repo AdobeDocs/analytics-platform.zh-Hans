@@ -5,9 +5,9 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
 source-git-commit: f7b4dcb893586e71302cc6a20ebe931743ea8924
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '925'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Customer Journey Analytics 的初始版本包括分析工作区中的许多功�
 
 ## 访问控制
 
-请参阅 [访问控制](/help/getting-started/cja-access-control.md) 主题。
+请参阅[访问控制](/help/getting-started/cja-access-control.md)主题。
 
 ## 术语更新
 
