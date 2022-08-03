@@ -4,10 +4,10 @@ description: 关于所有可添加到任何数据视图的标准组件的详细�
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 8e43c65c372f57dc54d01114b9c06a59d5c0efe4
+source-git-commit: c5a42392df82af4f0f8dcd718e3ce962ad654191
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '915'
+ht-degree: 100%
 
 ---
 
@@ -35,6 +35,8 @@ CJA 中的大多数维度和指标都基于您 Adobe Experience Platform 数据�
 | [!UICONTROL 月] | 维度 | 发生给定事件的那一个月。第一个维度项是日期范围内的第一个月，最后一个维度项是日期范围内的最后一个月。 |
 | [!UICONTROL 季度] | 维度 | 发生给定事件的那一季。第一个维度项是日期范围内的第一个季度，最后一个维度项是日期范围内的最后一个季度。 |
 | [!UICONTROL 年] | 维度 | 发生给定事件的那一年。第一个维度项是日期范围中的第一年，最后一个维度项是日期范围中的最后一年。 |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## 可选标准组件 {#optional}
 
@@ -64,3 +66,4 @@ CJA 中的大多数维度和指标都基于您 Adobe Experience Platform 数据�
 | [!UICONTROL 每人逗留时间] | 维度 | 将[!UICONTROL 耗时]指标装入[!UICONTROL 人员]桶。 |
 | [!UICONTROL 周末]/[!UICONTROL 工作日] | 时间划分维度 | 周末或工作日 |
 
+{style=&quot;table-layout:auto&quot;}
