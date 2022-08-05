@@ -2,10 +2,10 @@
 title: CJA 受众发布概述
 description: 了解 Customer Journey Analytics 中的受众发布的概念
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
-source-git-commit: 86998458bd79f1fc17c17e58932b2b8434abf041
-workflow-type: ht
-source-wordcount: '355'
-ht-degree: 100%
+source-git-commit: 94b3e7417b82e9ae3ad080884d4c184bee412c2c
+workflow-type: tm+mt
+source-wordcount: '366'
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,11 @@ ht-degree: 100%
 
 ## 权限
 
-管理员在 Adobe Admin Console 中被自动授予[!UICONTROL 受众发布]权限。他们可以将此权限授予个人用户。
+* 管理员在 Adobe Admin Console 中被自动授予&#x200B;**[!UICONTROL 受众发布]**&#x200B;权限。
+
+* 管理员可以向个人用户授予此权限。
+
+* 管理员还需要 **[!UICONTROL 管理配置文件]** 在Adobe Experience Platform。
 
 ## 后续步骤
 

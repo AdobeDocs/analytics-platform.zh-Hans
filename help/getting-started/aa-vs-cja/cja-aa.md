@@ -4,9 +4,9 @@ description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 42b3b2e9a2ff8a46fd6c84e2425e19dcbb0d28f0
+source-git-commit: 94b3e7417b82e9ae3ad080884d4c184bee412c2c
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1521'
 ht-degree: 94%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 94%
 | --- | --- |
 | 异常检测 | 全面支持 |
 | Attribution IQ | 全面支持 |
+| 受众发布 | 全面支持。在 AA 中称为区段发布（将区段从工作区发送到 Experience Cloud）。[受众发布](/help/components/audiences/audiences-overview.md) 将受众发送到Experience Platform中的实时客户资料。 |
 | 计算量度 | 全面支持；请注意，传统分析工作区中的任何现有计算量度都不会移植到 CJA。 |
 | 日历事件 | 全面支持。日历事件已实施为 [批注](/help/components/annotations/overview.md) 中。 |
 | 分类规则生成器 | 全面支持。已调用 [子字符串](/help/data-views/component-settings/substring.md) 在CJA中。在报表时使用字符串操作，而不是查找数据集。 |

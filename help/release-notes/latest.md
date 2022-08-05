@@ -3,22 +3,23 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新 CJA 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 509eed292df7c778f30389267dc61f900d230024
+source-git-commit: 94b3e7417b82e9ae3ad080884d4c184bee412c2c
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '381'
 ht-degree: 98%
 
 ---
 
 # 当前的 Customer Journey Analytics (CJA) 发行说明（2022 年 7 月）
 
-**上次更新**:2022年8月4日
+**上次更新**:2022年8月5日
 
 ## 主要功能
 
 | 功能 | 描述 | [预定日期](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
 | 支持数字字段作为查找键和查找值 | 如果要使用数值字段（如产品 SKU 上的 COGS 或边距）对字符串值进行分类，则此选项非常有用。允许从查找中获取量度有助于将这些数据点纳入报告。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric) | 2022 年 7 月 20 日 |
+| **将受众发布到实时客户个人资料** | 允许您将在 CJA 中发现的受众发布到 Adobe Experience Platform/实时客户个人资料，以实现客户定位和个性化。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=zh-Hans) | 2022 年 8 月 5 日 |
 | “媒体并行查看者”面板 | 了解同时观看的人数在哪里达到峰值或在哪里发生下降。获得关于内容质量和观众参与情况的宝贵洞察，并帮助进行故障排除或规划数量和规模。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html) | **2022年8月9日** |
 | “Media Playback 耗时”面板 | Media Playback 耗时提供有关查看者参与情况的宝贵洞察，并使媒体组织能够通过具备时段分割功能的高级耗时分析，利用以分钟计的用户参与获得更深入、更精细的洞察。 您可以观察在特定时间点查看媒体流的耗时。您可以按不同的粒度分割播放时长，包括新的 5 分钟、15 分钟和 30 分钟粒度。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html) | **2022年8月9日** |
 | 首次与重复会话报告 | 现在，您可以发现某个特定会话是否是用户的首次会话。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat) | 2022 年 8 月 17 日 |
