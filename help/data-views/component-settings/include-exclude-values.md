@@ -4,9 +4,9 @@ description: 有条件地包括或排除某个维度项，具体取决于其值�
 exl-id: 1a3f8ab5-bd82-415a-989a-f93e6714df4b
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '300'
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+workflow-type: tm+mt
+source-wordcount: '303'
 ht-degree: 100%
 
 ---
@@ -25,3 +25,5 @@ ht-degree: 100%
 | [!UICONTROL 条件] | 用于指定应该应用于特定筛选器规则的匹配逻辑。<ul><li>**字符串**：包含短语、包含任何术语、包含所有术语、不包含任何术语、不包含短语、等于、不等于、开头为、结尾为</li><li>**双精度/整数**：等于、不等于、大于、小于、大于或等于、小于或等于</li><li>**日期**：等于、不等于、晚于、早于、期间</li></ul> |
 | [!UICONTROL 匹配运算数] | 用于指定应将匹配运算符应用到的匹配运算数。<ul><li>**字符串**：文本字段</li><li>**双精度/整数**：数值类型的文本字段（带上/下箭头）</li><li>**日期**：日期粒度选择器（日历）</li><li>**日期时间**：日期和时间粒度选择器</li></ul> |
 | [!UICONTROL 添加规则] | 用于指定附加匹配运算符和运算数。 |
+
+{style=&quot;table-layout:auto&quot;}

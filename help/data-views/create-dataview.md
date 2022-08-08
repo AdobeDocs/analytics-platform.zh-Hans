@@ -4,9 +4,9 @@ description: 为创建或编辑数据视图而可调整的所有设置。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 48cc438032fb1df043b7caf085aadf3f2c2f1ecf
-workflow-type: ht
-source-wordcount: '1224'
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+workflow-type: tm+mt
+source-wordcount: '1233'
 ht-degree: 100%
 
 ---
@@ -36,6 +36,8 @@ ht-degree: 100%
 | [!UICONTROL 名称] | 必填。数据视图的名称。此值显示在 Analysis Workspace 右上角的下拉列表中。 |
 | [!UICONTROL 描述] | 可选。Adobe 建议输入详细描述，以便用户了解为什么存在该数据视图以及为谁设计了它。 |
 
+{style=&quot;table-layout:auto&quot;}
+
 ### 容器 {#containers}
 
 指定数据视图的容器的名称。经常在[过滤器](/help/components/filters/filters-overview.md#Filter-containers)中使用容器名称。
@@ -45,6 +47,8 @@ ht-degree: 100%
 | [!UICONTROL 人员容器名称] | [!UICONTROL 人员]（默认）。[!UICONTROL 人员]容器包括访客在指定的时间范围内的每个会话和事件。如果您的组织使用不同的用语（例如，“访客”或“用户”），可在此处将该容器重命名。 |
 | [!UICONTROL 会话容器名称] | [!UICONTROL 会话]（默认）。通过[!UICONTROL 会话]容器可以识别页面交互、营销活动或特定会话的转化。可将此容器重命名为“访问”或您的组织更喜欢的任何其他用语。 |
 | [!UICONTROL 事件容器名称] | [!UICONTROL 事件]（默认）。[!UICONTROL 事件]容器定义数据集中的个别事件。如果您的组织使用不同的用语（例如，“点击”或“页面查看”），可在此处将该容器重命名。 |
+
+{style=&quot;table-layout:auto&quot;}
 
 ### 日历 {#calendar}
 
@@ -57,6 +61,8 @@ ht-degree: 100%
 | [!UICONTROL 一年的第一个月]和[!UICONTROL 一周的第一天] | 对“公历”日历类型可见。指定要让日历年从哪一个月开始，以及每周从哪一天开始。 |
 | [!UICONTROL 当年的第一天] | 对自定义日历类型可见。指定要让当年在一年中的哪一天开始。日历自动根据此值设置每周第一天的格式。 |
 | [!UICONTROL 出现“额外的”一周的年份] | 对于大多数 364 天日历（52 周，每周 7 天），每年都会积累多出的天数，直到形成额外的一周。然后，将这额外的一周添加到当年的最后一个月。指定要将额外的一周添加到哪年。 |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## 设置数据视图的组件 {#set-components}
 

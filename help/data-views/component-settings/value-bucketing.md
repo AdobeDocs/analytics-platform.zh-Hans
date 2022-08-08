@@ -4,9 +4,9 @@ description: 组合维度中的数值。
 exl-id: 52f9abf6-69f1-47d0-86ab-57123bc178d5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '188'
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+workflow-type: tm+mt
+source-wordcount: '191'
 ht-degree: 100%
 
 ---
@@ -28,3 +28,5 @@ ht-degree: 100%
 | [!UICONTROL 包括][!UICONTROL 并小于] | 后续分段的边界。 |
 | [!UICONTROL 大于或等于] | 最后一个维度分段的下限。 |
 | [!UICONTROL 添加分段] | 使您可将另一分段添加到数值维度分段。在一个维度中可添加最多 20 个分段。 |
+
+{style=&quot;table-layout:auto&quot;}

@@ -4,9 +4,9 @@ description: 决定维度值如何或是否从一个事件保持到下一个事�
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 459249c74bf4dadf84c2adf96498f2eea21be1ee
-workflow-type: ht
-source-wordcount: '806'
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+workflow-type: tm+mt
+source-wordcount: '809'
 ht-degree: 100%
 
 ---
@@ -28,6 +28,8 @@ ht-degree: 100%
 | [!UICONTROL 设置持久性] | 为维度启用持久性。如果未启用持久性，则维度仅与同一事件中存在的指标相关。默认下禁用此设置。 |
 | [!UICONTROL 分配] | 用于为持久性指定维度中使用的分配模型。选项有：[!UICONTROL 最近]、[!UICONTROL 原有]、[!UICONTROL 实例]、[!UICONTROL 全部]。截止 2021 年 10 月 28 日，最多 90 天的回溯时段将添加到[!UICONTROL 分配]设置。 |
 | [!UICONTROL 到期] | 用于为维度指定持久性窗口。选项为：[!UICONTROL 会话]（默认值）、[!UICONTROL 人员]、[!UICONTROL 自定义时间]、[!UICONTROL 指标]。可能需要能够在购买（如内部搜索词或其他促销用例）时让维度到期。可设置的最长到期时间为 90 天。如果选择[!UICONTROL 全部]分配，则仅有[!UICONTROL 会话]或[!UICONTROL 人员]到期可用。 |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## [!UICONTROL 分配]设置
 

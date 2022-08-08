@@ -4,9 +4,9 @@ description: 使用字符串的子集作为维度项。
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: 0178babcd5ae87b491e849c7517eb5792fb14af1
-workflow-type: ht
-source-wordcount: '911'
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+workflow-type: tm+mt
+source-wordcount: '914'
 ht-degree: 100%
 
 ---
@@ -113,6 +113,8 @@ CJA 使用 Perl 正则表达式语法的子集。 如果输入内容与正则表
 | ``$` `` | 输出上一个匹配的结束（如果没有找到上一个匹配，则输出文本的开始）和当前匹配的开始之间的文本。 |
 | `$+` | 输出与正则表达式中最后标记的子表达式匹配的内容。 |
 | `$$` | 输出字符串 `"$"`。 |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## 关于绑定维度的视频
 

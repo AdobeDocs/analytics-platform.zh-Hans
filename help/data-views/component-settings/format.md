@@ -4,9 +4,9 @@ description: 配置指标的格式。
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '133'
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+workflow-type: tm+mt
+source-wordcount: '136'
 ht-degree: 100%
 
 ---
@@ -24,3 +24,5 @@ ht-degree: 100%
 | [!UICONTROL 货币] | 如果格式为“货币”，则它决定您要以何种货币显示该指标。此选项不应用任何货币转换，而是仅用于 UI 格式化。 |
 | [!UICONTROL 将上升趋势显示为] | 使您可指定此指标的上升趋势是好（绿色）还是坏（红色）。 |
 | [!UICONTROL 真值]和[!UICONTROL 假值] | 仅在 Boolean 架构数据类型上可见。使您可自定义 `true` 和 `false` 值的维度项目标签。 |
+
+{style=&quot;table-layout:auto&quot;}
