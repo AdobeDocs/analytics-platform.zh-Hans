@@ -4,7 +4,7 @@ description: 为创建或编辑数据视图而可调整的所有设置。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+source-git-commit: 2fa00c88cebde78a0a56d06aea3d4b6b268a0767
 workflow-type: tm+mt
 source-wordcount: '1233'
 ht-degree: 100%
@@ -126,3 +126,4 @@ ht-degree: 100%
 决定在会话到期并开始新会话之前，事件之间无活动的时段。 时段为必填。还可选择在事件包含特定指标时强制开始新会话。
 
 指定所有需要的设置后，单击&#x200B;**[!UICONTROL 保存并完成]**。
+

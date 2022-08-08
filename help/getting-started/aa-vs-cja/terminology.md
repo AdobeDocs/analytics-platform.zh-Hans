@@ -1,11 +1,18 @@
 ---
-source-git-commit: c25e320268aeda85eb6709ca3458c60c6f24fea3
+title: 比较通过Analytics源连接器传递的Analytics数据的术语
+description: 某些术语差异
+solution: Customer Journey Analytics
+source-git-commit: 287c75fd2b519f3d1d86209e0b0ab4ed7f761814
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 28%
+source-wordcount: '788'
+ht-degree: 27%
 
 ---
+
+
 # 比较通过Analytics源连接器传递的Analytics数据的术语
+
+Adobe Analytics、数据馈送、Analytics源连接器/数据湖和CJA之间存在一些术语差异。 本专题旨在强调和澄清这些差异。
 
 | 相关术语 | Adobe Analytics | Adobe Analytics数据馈送 | Analytics源连接器/数据湖 | CJA | 注释 |
 |---|---|---|---|---|---|

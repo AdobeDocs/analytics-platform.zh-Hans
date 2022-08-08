@@ -4,10 +4,10 @@ description: 显示 Customer Journey Analytics 中数据视图的灵活性和强
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 11171eb6e079adbf41e0abc798a54a5749492eac
-workflow-type: ht
+source-git-commit: 2fa00c88cebde78a0a56d06aea3d4b6b268a0767
+workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -103,17 +103,16 @@ f. 指定“50”为值。
 
 * 1 维度：[会话类型](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=zh-Hans#optional) – 此维度有两个值：1）[!UICONTROL 新]及 2）[!UICONTROL 返回]。 [!UICONTROL 新的]行项目包括已确定为个人的首次会话的所有行为（即针对该维度的量度）。 其他所有内容都包含在[!UICONTROL 返回]的行项目中（假设所有内容都属于一个会话）。 如果量度不是任何会话的一部分，则它们属于该维度的“不适用”范围。 
 
-* 2 量度：[新会话、返回会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=zh-Hans#optional)。 新会话被定义为个人在报告窗口内的首次会话。 返回会话是非个人首次会话的会话数。 
+* 2 量度：[新会话、返回会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional)。 新会话被定义为个人在报告窗口内的首次会话。 返回会话是非个人首次会话的会话数。 
 
 要访问这些组件：
 
 1. 进入数据视图编辑器。
 1. 单击左栏中的&#x200B;**[!UICONTROL “组件”]**>**[!UICONTROL “可选标准组件”]**。
-1. 将它们拖到数据视图中。
+1. 将这些组件拖动到数据视图中。
 
-95% – 99% 的时间里，新会话会被准确地报告。 唯一的例外是：
+在95%-99%的情况下，会准确报告新会议。 唯一的例外是：
 
 * 当首次会话发生在 13 个月的回看窗口之前时。 此会话将被忽略。
 
-* 当会话跨越回看窗口和报告窗口时。 假设您从 2022 年 6 月 1 日到 6 月 15 日运行报告。 回看窗口将涵盖 2021 5 月 1 日至 2022 年 5 月 31 日。 如果会话从 2022 年 5 月 30 日开始，到 2022 年 6 月 1 日结束，因为该会话包含在回看窗口中，则报告窗口中的所有会话都被视为返回会话。
-
+* 当会话跨越回看窗口和报告窗口时。 假设您从 2022 年 6 月 1 日到 6 月 15 日运行报告。 回看窗口将涵盖 2021 5 月 1 日至 2022 年 5 月 31 日。 如果会话从2022年5月30日开始，到2022年6月1日结束，因为会话包含在回顾窗口中，则报告窗口中的所有会话都将计为返回会话。
