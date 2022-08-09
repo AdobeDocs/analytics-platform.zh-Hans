@@ -1,18 +1,21 @@
 ---
-title: Customer Journey Analytics 隐私权概述
-description: 介绍 Customer Journey Analytics 中隐私权设置的工作方式。
+title: Customer Journey Analytics和数据管理
+description: 介绍数据管理在Customer Journey Analytics中的工作方式。
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
-translation-type: ht
-source-git-commit: 2d83d796f053465eb9543daa37068f316bccc659
-workflow-type: ht
-source-wordcount: '224'
-ht-degree: 100%
+source-git-commit: 61850e8a1da80a115bf850c64358a512770f852e
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 75%
 
 ---
 
-# Customer Journey Analytics 隐私权概述
+# Customer Journey Analytics和数据管理
 
-通常情况下，Customer Journey Analytics 中的任何隐私权相关设置都是从 Adobe Experience Platform 继承来的。
+通常情况下，Customer Journey Analytics中与数据管理相关的任何设置都会从Adobe Experience Platform继承。
+
+## 数据管理
+
+CJA支持在Adobe Experience Platform中设置的“数据管理”标签和策略。 有关更多信息，请参阅CJA对Adobe Experience Platform数据管理的支持。
 
 ## GDPR
 

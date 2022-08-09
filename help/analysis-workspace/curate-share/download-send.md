@@ -3,10 +3,10 @@ description: 您可以通过复制数据或以 PDF 和 CSV 格式从 Analysis Wo
 title: 下载 PDF 或 CSV 文件
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 3f0051868ef559d331fa9e5c4648f9bab7fc8d34
+workflow-type: tm+mt
+source-wordcount: '1048'
+ht-degree: 93%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 100%
 
 ![](assets/download-items.png)
 
-### 下载的项目文件
+### 下载的项目文件 {#items-file}
 
 表格功能将按如下方式应用于下载的文件：
 
@@ -71,7 +71,7 @@ ht-degree: 100%
 
 ![](assets/downloaded-file.png)
 
-### 下载通知
+### 下载通知 {#notifications}
 
 下载文件时，您将看到带有进度的信息通知。您可以随时单击&#x200B;**[!UICONTROL 取消下载]**&#x200B;来取消下载。 关闭 toast **将不**&#x200B;会取消下载。
 
@@ -80,6 +80,10 @@ ht-degree: 100%
 如果您同时请求多个下载，您将收到一条通知，说明每个额外的下载都将排队等待，直到前面的下载完成为止。
 
 ![](assets/toast.png)
+
+## 下载敏感数据 {#sensitive}
+
+如果启用“强制下载数据管理”策略，则工作区项目的任何下载（例如通过电子邮件或共享pdf）都将对标记为敏感的数据字段进行哈希处理。 您仍可以在工作区中对这些字段进行分析，但如果您尝试通过电子邮件发送或以其他方式共享项目，则阻止的字段将在.pdf文件中显示为经过哈希处理的项目。
 
 ## 常见问题解答 {#faq}
 
