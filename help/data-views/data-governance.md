@@ -2,9 +2,9 @@
 title: CJA支持Adobe Experience Platform数据管理
 description: 了解AEP中定义的数据标签和策略如何影响CJA中的报表。
 mini-toc-levels: 3
-source-git-commit: 82060862c64aae10ea6dd375a8cd65d67ee21704
+source-git-commit: 2f74c10f821aed421e31ee8e14b854f2a73c11f1
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '843'
 ht-degree: 1%
 
 ---
@@ -38,13 +38,12 @@ CJA与 [Adobe Experience Platform数据管理](https://experienceleague.adobe.co
 
 * Analytics — 将数据用于分析目的，例如测量、分析和报告贵组织网站或应用程序的消费者使用情况。
 
-* 将数据导出到第三方 — 即在Adobe环境之外。
+* 导出数据 — 即，从Adobe环境导出。
 
 将标签和营销操作与策略绑定，然后打开策略。 该策略将标签和营销操作标记为：强制执行此限制。 CJA中显示了两个Adobe定义的策略，这些策略会影响报表和下载/共享：
 
-* 强制实施Analytics策略
-* 强制下载策略
-
+* [!UICONTROL 强制Analytics] 策略
+* [!UICONTROL 强制下载] 策略
 
 ### 在CJA数据视图中查看数据标签
 
@@ -93,7 +92,7 @@ CJA与 [Adobe Experience Platform数据管理](https://experienceleague.adobe.co
 
 ### 如何 [!UICONTROL 强制下载] 策略影响工作区项目
 
-如果打开此策略，则任何Workspace项目的下载（例如通过电子邮件发送或共享pdf）都将对敏感字段进行哈希处理。 您仍可以在工作区中对这些字段进行分析，但如果您尝试通过电子邮件发送或以其他方式共享项目，则阻止的字段将在.pdf文件中显示为经过哈希处理的项目。
+如果开启此策略，则工作区项目的任何导出或下载（例如通过电子邮件或共享pdf）都将对敏感字段进行哈希处理。 您仍可以在工作区中对这些字段进行分析，但如果您尝试通过电子邮件发送或以其他方式共享项目，则阻止的字段将在.pdf文件中显示为经过哈希处理的项目。
 
 在此处添加屏幕截图。
 
