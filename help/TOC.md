@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 本指南为 Customer Journey Analytics 提供支持，这是 Adobe 的新一代跨渠道分析解决方案，基于 Adobe Experience Platform。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 2f74c10f821aed421e31ee8e14b854f2a73c11f1
+source-git-commit: cb1984a765a614d97974ff88763b43da4f927a2b
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 97%
+source-wordcount: '734'
+ht-degree: 98%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 97%
       + [值分段](data-views/component-settings/value-bucketing.md)
    + [标准组件参考](data-views/component-reference.md)
    + [数据视图用例](data-views/data-views-usecases.md)
-   + [CJA支持Adobe Experience Platform数据管理](data-views/data-governance.md)
+   + [标签和策略](data-views/data-governance.md)
 + 工作区项目 {#cja-workspace}
    + [Analysis Workspace 概述](analysis-workspace/home.md)
    + [执行基本分析](analysis-workspace/perform-basic-analysis.md)

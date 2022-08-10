@@ -2,10 +2,10 @@
 title: 创建受众并将受众发布到实时客户档案
 description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+source-git-commit: 235f08b275fd2f5706024823005e732b61af1c07
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 100%
+source-wordcount: '1032'
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 阅读本[概述](/help/components/audiences/audiences-overview.md)，了解 CJA 受众的概念。
 
-## 创建受众
+## 创建受众 {#create}
 
 1. 要创建受众，有三种方法可使用：
 
@@ -56,8 +56,8 @@ ht-degree: 100%
    | 预览设置 | 描述 |
    | --- | --- |
    | [!UICONTROL 数据预览]窗口 | 受众的日期范围。 |
-   | [!UICONTROL 总人数] | 该受众中总人数的汇总。它可以高达 2 亿人。如果您的受众超过 2 亿人，则必须先缩小受众规模，然后才能发布。 |
-   | [!UICONTROL 受众规模限制] | 显示该受众还差多少会达到 2 亿人的限制。 |
+   | [!UICONTROL 总人数] | 该受众中总人数的汇总。可能高达两千万人。 如果您的受众人数超过2000万，则必须先缩小受众大小，然后才能发布。 |
+   | [!UICONTROL 受众规模限制] | 显示此受众的数量限制距离2000万的限制有多远。 |
    | [!UICONTROL 预计会返回的受众] | 此设置对于重新定位该受众中会返回网站的客户非常有用。（换句话说，就是在这个数据集中可以再次看到的客户。） <p>在这里，您可以为可能返回的估计客户数选择时间范围（未来 7 天、未来 2 周、下个月）。 |
    | [!UICONTROL 预计会返回] | 该数字为您提供了在您从下拉列表中选择的时间范围内返回的客户的估计数量。我们通过观察该受众的历史流失率来预测这一数字。 |
    | [!UICONTROL 预览量度] | 通过此设置，您可以查看特定量度，以查看该受众为此量度做出的贡献是否不成比例，例如[!UICONTROL 收入]或[!UICONTROL 平均网站逗留时间。]它提供了度量的聚合计数，以及它所代表的总数的百分比。您可以选择数据视图中可用的任何量度。 |
@@ -72,7 +72,7 @@ ht-degree: 100%
 
 1. 在同一条消息中单击&#x200B;**[!UICONTROL 在 AEP 中查看受众]**，则可进入 Adobe Experience Platform 中的 [Segment UI](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=zh-Hans)。有关详细信息，请参阅下文。
 
-## 在 Experience Platform 中使用 CJA 受众
+## 在 Experience Platform 中使用 CJA 受众 {#audiences-aep}
 
 CJA 现在可以从您发布的受众中获取所有的命名空间和 ID 组合，并将其以流式传输到实时客户个人资料 (RTCP) 中。CJA 会将受众发送到 Experience Platform，其中主要标识会被设置为配置连接时选择的个人 ID。
 
@@ -84,9 +84,13 @@ CJA 现在可以从您发布的受众中获取所有的命名空间和 ID 组合
 
 ![](assets/audiences-aep.png)
 
-## 如果用户不再是 CJA 中的受众，会发生什么？
+## 如果用户不再是 CJA 中的受众，会发生什么？ {#no-member}
 
 在这种情况下，系统会从 CJA 将退出事件发送给 Experience Platform。
+
+## 如果在CJA中删除受众，会发生什么情况？ {#delete}
+
+删除CJA受众后，该受众将不再显示在Experience PlatformUI中。 但是，Platform中实际上不会删除与该受众关联的用户档案。
 
 ## 后续步骤
 
