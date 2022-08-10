@@ -1,12 +1,11 @@
 ---
-title: CJA支持Adobe Experience Platform数据管理
-description: 了解AEP中定义的数据标签和策略如何影响CJA中的报表。
-mini-toc-levels: 3
+title: 标签和策略
+description: 了解AEP中定义的数据标签和策略如何影响CJA中的数据视图和报表。
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: 2dde88ea6c3bb806b66cd4bc8fb8b10bd28084d0
+source-git-commit: a28247e861e2f8853a6e2d2b81e7f6ed221caec0
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 1%
+source-wordcount: '579'
+ht-degree: 2%
 
 ---
 
@@ -26,8 +25,8 @@ ht-degree: 1%
 
 CJA中显示了两个Adobe定义的策略，这些策略会影响报表和下载/共享：
 
-* [!UICONTROL 强制Analytics] 策略
-* [!UICONTROL 强制下载] 策略
+* **[!UICONTROL 强制Analytics]** 策略
+* **[!UICONTROL 强制下载]** 策略
 
 ## 在CJA数据视图中查看数据标签
 
@@ -35,9 +34,11 @@ CJA中显示了两个Adobe定义的策略，这些策略会影响报表和下载
 
 | 位置 | 描述 |
 | --- | --- |
-| 架构字段上的“信息”按钮 | 单击此按钮可指示当前应用于字段的数据使用标签：<p>![](assets/data-label-left.png) |
-| 下方的右边栏 [组件设置](/help/data-views/component-settings/overview.md) | 此处列出了所有数据使用情况标签：<p>![](assets/data-label-right.png) |
-| 将数据标签添加为列 | 您可以将数据标签作为列添加到数据视图的“已包括组件”列中。 只需单击列选择器图标，然后选择数据使用情况标签：<p>![](assets/data-label-column.png) |
+| 架构字段上的“信息”按钮 | 单击此按钮可指示 [!UICONTROL 数据使用情况标签] 当前适用于字段：<p>![](assets/data-label-left.png) |
+| 下方的右边栏 [组件设置](/help/data-views/component-settings/overview.md) | 任意 [!UICONTROL 数据使用情况标签] 列在此处：<p>![](assets/data-label-right.png) |
+| 将数据标签添加为列 | 您可以添加 [!UICONTROL 数据标签] 作为列 [!UICONTROL 包含的组件] 列。 只需单击列选择器图标并选择 **[!UICONTROL 数据使用情况标签]**:<p>![](assets/data-label-column.png) |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## 在数据视图中过滤“数据管理”标签
 
@@ -55,7 +56,7 @@ CJA中显示了两个Adobe定义的策略，这些策略会影响报表和下载
 
 ![](assets/filter-policies.png)
 
-单击 **[!UICONTROL 应用]** 查看启用了哪些策略 _?_
+单击 **[!UICONTROL 应用]** 以查看已启用的策略。
 
 ## 如何 [!UICONTROL 强制Analytics] 策略影响工作区项目
 
