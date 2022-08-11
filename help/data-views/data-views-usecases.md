@@ -4,10 +4,10 @@ description: 显示 Customer Journey Analytics 中数据视图的灵活性和强
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 2fa00c88cebde78a0a56d06aea3d4b6b268a0767
+source-git-commit: 684918af270a77355b7cefab4ae2e32720a71cae
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 95%
+source-wordcount: '1194'
+ht-degree: 87%
 
 ---
 
@@ -89,10 +89,6 @@ f. 指定“50”为值。
 
 ## 7. 新的与重复的会话报告 {#new-repeat}
 
->[!NOTE]
->
->此功能当前正在进行小范围测试。
-
 您可以根据为此数据视图定义的报告窗口和 13 个月的回看窗口来确定会话是否确实是用户的首次会话。 该报告允许您确定，例如：
 
 * 您的订单中新订单与重复订单比例各为多少？
@@ -116,3 +112,19 @@ f. 指定“50”为值。
 * 当首次会话发生在 13 个月的回看窗口之前时。 此会话将被忽略。
 
 * 当会话跨越回看窗口和报告窗口时。 假设您从 2022 年 6 月 1 日到 6 月 15 日运行报告。 回看窗口将涵盖 2021 5 月 1 日至 2022 年 5 月 31 日。 如果会话从2022年5月30日开始，到2022年6月1日结束，因为会话包含在回顾窗口中，则报告窗口中的所有会话都将计为返回会话。
+
+## 使用日期和日期时间功能 {#date}
+
+>[!NOTE]
+>
+>此功能当前正在进行[小范围测试](/help/release-notes/releases.md)。
+
+示例用例:
+
+* 日期：一家旅游公司正在收集其数据中作为字段的出行日期。 他们想要一份报告，将 [!UICONTROL 每周时间] 收集的所有离境日期，以了解最受欢迎的日期。 他们也想为 [!UICONTROL 月份].
+
+* 日期时间：一家零售公司正在收集每次商店内销售点(POS)购买的时间。 在一个月内，他们希望了解 [!UICONTROL 小时].
+
+>[!MORELIKETHIS]
+>[格式组件设置中的日期和日期时间](/help/data-views/component-settings/format.md)
+
