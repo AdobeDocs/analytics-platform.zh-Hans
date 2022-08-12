@@ -2,9 +2,9 @@
 title: 标签和策略
 description: 了解AEP中定义的数据标签和策略如何影响CJA中的数据视图和报表。
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: 1e2c5d79059a4804416288188ea4740dd94ca33d
+source-git-commit: b135175e0276ab26514d1c785793feb817c09898
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '475'
 ht-degree: 2%
 
 ---
@@ -72,3 +72,7 @@ CJA中显示了两个Adobe定义的策略，这些策略会影响报表和下载
 
 >[!MORELIKETHIS]
 >[下载敏感数据](/help/analysis-workspace/curate-share/download-send.md)
+
+>[!MORELIKETHIS]
+>[什么是受限标签Report Builder?](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html?lang=en)
+

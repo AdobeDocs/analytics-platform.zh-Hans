@@ -3,7 +3,7 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新 CJA 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 5a38bb3a792b1b5b998e60870eb40a5aeced4280
+source-git-commit: a34ca124bac34912323e1a6c4d0b42f4b8cf2e86
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 59%
@@ -22,8 +22,8 @@ ht-degree: 59%
 | **“Media Playback 耗时”面板** | Media Playback 耗时提供有关查看者参与情况的宝贵洞察，并使媒体组织能够通过具备时段分割功能的高级耗时分析，利用以分钟计的用户参与获得更深入、更精细的洞察。 您可以观察在特定时间点查看媒体流的耗时。您可以按不同的粒度分割播放时长，包括新的 5 分钟、15 分钟和 30 分钟粒度。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html) | 2022 年 8 月 9 日 |
 | **将受众发布到实时客户个人资料** | 允许您将在 CJA 中发现的受众发布到 Adobe Experience Platform/实时客户个人资料，以实现客户定位和个性化。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=zh-Hans) | 2022 年 8 月 17 日 |
 | **CJA支持“数据管理”标签和策略** | 自动集成CJA和Adobe Experience Platform隐私标签和策略。 在Platform使用的数据集上创建的数据标签会在CJA数据视图中显示，以停止或警告从敏感字段创建量度和/或维度的用户。 此外，在从CJA导出数据(通过工作区或Report Builder报表、导出、API等)时 将添加其他警告或标签，以通知用户报表包含需要以特定方式处理的敏感信息。 [了解详情](/help/data-views/data-governance.md) | 2022 年 8 月 17 日 |
-| **CJA实验面板（一般提升度和置信度）** | 此新的工作区面板允许CJA用户评估任何来源(在线、离线、Adobe解决方案、Adobe Journey Optimizer甚至BYO数据)的A/B实验的提升度和置信度。 有关更多信息，请参阅。 | 2022 年 8 月 17 日 |
 | **CJA中的日期字段支持** | 允许CJA报告日期和日期时间字段。 [了解详情](/help/data-views/data-views-usecases.md#date) | 2022 年 8 月 17 日 |
+| **CJA实验面板（一般提升度和置信度）** | 此新的工作区面板允许CJA用户评估任何来源(在线、离线、Adobe解决方案、Adobe Journey Optimizer甚至BYO数据)的A/B实验的提升度和置信度。 有关更多信息，请参阅。 | 2022 年 8 月 24 日 |
 | **对Analytics源连接器的跨区域支持** | 您现在可以从任何地区（美国、英国或新加坡）摄取报表包。 但是，这些报表包必须映射到与在其中创建源连接的Experience Platform沙盒实例相同的组织。 [了解详情](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans) | 2022 年 8 月 24 日 |
 | **首次与重复会话报告** | 现在，您可以发现某个特定会话是否是用户的首次会话。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat) | 2022 年 8 月 24 日 |
 
