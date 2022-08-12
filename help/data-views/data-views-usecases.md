@@ -4,7 +4,7 @@ description: 显示 Customer Journey Analytics 中数据视图的灵活性和强
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b7a2921b30075b3c63136a989df3744256f810f4
+source-git-commit: 9321831a23c1329000fd1e960c28e41d4ba18714
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 81%
@@ -119,7 +119,7 @@ f. 指定“50”为值。
 >
 >此功能当前正在进行[小范围测试](/help/release-notes/releases.md)。
 
-Adobe Experience Platform中的架构包含日期和日期时间字段。 CJA数据视图现在支持这些字段。 将这些字段作为维度拖入数据视图中时，可以指定其 [格式](/help/data-views/component-settings/format.md). 此格式设置确定字段在报表中的显示方式。 例如：
+Adobe Experience Platform中的架构包含 [!UICONTROL 日期] 和 [!UICONTROL Date-Time] 字段。 CJA数据视图现在支持这些字段。 将这些字段作为维度拖入数据视图中时，可以指定其 [格式](/help/data-views/component-settings/format.md). 此格式设置确定字段在报表中的显示方式。 例如：
 
 * 对于日期格式，如果您选择 **[!UICONTROL 日]** 格式 **[!UICONTROL 月、日、年]**，报表中的示例输出可能如下所示：2022年8月23日。
 
