@@ -4,10 +4,10 @@ description: 使用 Analytics Source Connector 将营销渠道处理规则引入
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 3f20520a2021d9b6066b0492ed11a1a4619ab1d4
-workflow-type: ht
-source-wordcount: '955'
-ht-degree: 100%
+source-git-commit: 8d333627d3fe4f4dd68ec0f9316838c88678bc0f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## 前提条件
 
-* 必须已使用 [ Analytics Source Connector ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 将报告包数据导入 Adobe Experience Platform。不支持其他数据源，因为“营销渠道”维度依赖于 Analytics 报表包中的处理规则。
+* 必须已使用 [ Analytics Source Connector ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) 将报告包数据导入 Adobe Experience Platform。不支持其他数据源，因为“营销渠道”维度依赖于 Analytics 报表包中的处理规则。
 * 必须已设置“营销渠道”维度处理规则。请参阅“传统 Analytics 组件”指南中的[“营销渠道”维度的处理规则](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/c-rules.html?lang=zh-Hans)。
 
 ## “营销渠道”架构元素
@@ -32,6 +32,10 @@ ht-degree: 100%
 4. 创建数据视图。
 
 “营销渠道”维度现在可在分析工作区中使用。
+
+>[!NOTE]
+>
+> Analytics源连接器要求 `channel.typeAtSource` （营销渠道）和 `channel._id` （营销渠道详细信息），否则，将不会传递到XDM ExperienceEvent。 如果源报表包中的“营销渠道详细信息”为空，则会导致显示空白 `channel._id` 和Analytics Source Connector将空白 `channel.typeAtSource` 也是。 这可能会导致Adobe Analytics和Customer Journey Analytics之间的报表差异。
 
 ## 处理方式和体系结构差异
 
@@ -66,5 +70,5 @@ ht-degree: 100%
 * 确认上列体系结构差异不会影响您的比较。这包括删除不覆盖最后接触渠道的渠道，以及删除“为访问（会话）的首次点击”规则条件。
 * 再次确认您的连接使用与传统 Analytics 相同的报表包。如果您的 CJA 连接包含多个报表包且每个报表包都有自己的“营销渠道”维度处理规则，则很难将其与传统 Analytics 进行比较。您需要为每个要比较数据的报表包各创建一个连接。
 * 确保比较相同日期范围的数据，并且数据视图中的时区设置与报表包的时区相同。
-* 在查看报表包数据时使用自定义归因模型。例如，将[营销渠道](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html?lang=zh-Hans)维度与使用非默认归因模型的量度结合使用。Adobe 建议不要比较默认维度[首次接触渠道](https://experienceleague.adobe.com/docs/analytics/components/dimensions/first-touch-channel.html?lang=zh-Hans)或[最后接触渠道](https://experienceleague.adobe.com/docs/analytics/components/dimensions/last-touch-channel.html?lang=zh-Hans)，因为它们依赖于报表包中收集的归因数据。CJA 不依赖报表包中的归因数据；相反，会在运行 CJA 报表时进行计算。
+* 在查看报表包数据时使用自定义归因模型。例如，将[营销渠道](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html)维度与使用非默认归因模型的量度结合使用。Adobe 建议不要比较默认维度[首次接触渠道](https://experienceleague.adobe.com/docs/analytics/components/dimensions/first-touch-channel.html?lang=zh-Hans)或[最后接触渠道](https://experienceleague.adobe.com/docs/analytics/components/dimensions/last-touch-channel.html?lang=zh-Hans)，因为它们依赖于报表包中收集的归因数据。CJA 不依赖报表包中的归因数据；相反，会在运行 CJA 报表时进行计算。
 * 由于报表包数据与 Platform 数据之间存在体系结构上的差异，因此无法合理比较某些量度。例如，“访问次数”与“会话数”、“访客数”与“人员数”，以及“发生次数”与“事件数”量度。
