@@ -5,13 +5,13 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: 0e626b4072c68a69ae94dbfdfb53169aa34ca8ac
+exl-id: 99c3c66e-928e-4363-a6a9-bbcab792337a
+source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 2%
+source-wordcount: '311'
+ht-degree: 0%
 
 ---
-
 
 # Report Builder中的限制标签
 
@@ -26,10 +26,6 @@ Customer Journey Analytics中与数据管理相关的设置通常继承自Adobe 
 有关更多信息，请参阅 [Customer Journey Analytics和数据管理](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-privacy/privacy-overview.html)
 
 ## 在Report Builder中查看受限数据
-
->[!NOTE]
->
->此功能当前正在进行[小范围测试](/help/release-notes/releases.md)。
 
 CJA中会显示两个Adobe定义的策略，这些策略会影响报表、下载和共享：
 

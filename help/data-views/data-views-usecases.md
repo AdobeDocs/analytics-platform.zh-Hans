@@ -4,9 +4,9 @@ description: 显示 Customer Journey Analytics 中数据视图的灵活性和强
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 9321831a23c1329000fd1e960c28e41d4ba18714
+source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1277'
 ht-degree: 81%
 
 ---
@@ -114,10 +114,6 @@ f. 指定“50”为值。
 * 当会话跨越回看窗口和报告窗口时。 假设您从 2022 年 6 月 1 日到 6 月 15 日运行报告。 回看窗口将涵盖 2021 5 月 1 日至 2022 年 5 月 31 日。 如果会话从2022年5月30日开始，到2022年6月1日结束，因为会话包含在回顾窗口中，则报告窗口中的所有会话都将计为返回会话。
 
 ## 使用日期和日期时间功能 {#date}
-
->[!NOTE]
->
->此功能当前正在进行[小范围测试](/help/release-notes/releases.md)。
 
 Adobe Experience Platform中的架构包含 [!UICONTROL 日期] 和 [!UICONTROL Date-Time] 字段。 CJA数据视图现在支持这些字段。 将这些字段作为维度拖入数据视图中时，可以指定其 [格式](/help/data-views/component-settings/format.md). 此格式设置确定字段在报表中的显示方式。 例如：
 
