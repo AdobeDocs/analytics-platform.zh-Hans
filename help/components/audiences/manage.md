@@ -3,7 +3,7 @@ title: 管理在 Customer Journey Analytics 中创建的受众
 description: 了解如何管理 Customer Journey Analytics 中的受众
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 source-git-commit: c851a07a456fa033b37e45a3d182a8fc80988b82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '275'
 ht-degree: 100%
 
