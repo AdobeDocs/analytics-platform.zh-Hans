@@ -4,10 +4,10 @@ description: 查看数据视图组件的核心设置。
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 1e2c5d79059a4804416288188ea4740dd94ca33d
+source-git-commit: 338cb8a4409c9b03461763d97ced6b8a10de2b7b
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 96%
+source-wordcount: '422'
+ht-degree: 89%
 
 ---
 
@@ -23,7 +23,8 @@ ht-degree: 96%
 | [!UICONTROL 组件名称] | 必填。使您可指定在分析工作区中显示的易记名称。可将组件重命名以给予其一个数据视图专属的名称。 |
 | [!UICONTROL 描述] | 可选，但推荐。向其他用户提供有关组件的信息。 |
 | [!UICONTROL 标记] | 可选。可让您使用自定义或现成标记为组件添加标签，以便于在分析工作区 UI 中搜索/筛选。 |
-| [!UICONTROL 字段名称] | 架构字段的名称。 |
+| [!UICONTROL 上下文标签] | 您可以为报表中的特定用例标记特定维度和/或量度。 示例包括CJA的媒体面板、新的实验面板以及报告模板。 |
+| [!UICONTROL 架构字段名称] | 架构字段的名称。 |
 | [!UICONTROL 数据集类型] | 必填。显示组件来自哪个数据集类型（事件、查询或个人资料）的不可编辑字段。 |
 | [!UICONTROL 数据集] | 一个不可编辑的字段，它显示该组件来源于哪个数据集。此字段可以包含多个数据集。 |
 | [!UICONTROL 架构类型] | 一个不可编辑的字段，它显示该组件的数据类型。虽然您可以在 Platform 中使用任何受支持的架构字段类型，但 CJA 并非支持所有字段类型。支持的数据类型有：`Integer`、`Int`、`Long`、`Double`、`Float`、`Number`、`Short`、`Byte`、`String` 和 `Boolean`。目前在查找数据集中仅允许有 `String` 架构数据类型。 |
