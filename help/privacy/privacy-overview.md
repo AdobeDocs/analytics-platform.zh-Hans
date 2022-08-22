@@ -1,27 +1,27 @@
 ---
-title: Customer Journey Analytics和数据管理
-description: 介绍数据管理在Customer Journey Analytics中的工作方式。
+title: Customer Journey Analytics 和数据管理
+description: 描述数据管理在 Customer Journey Analytics 中的工作方式。
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 source-git-commit: 1e2c5d79059a4804416288188ea4740dd94ca33d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '372'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
-# Customer Journey Analytics和数据管理
+# Customer Journey Analytics 和数据管理
 
-通常情况下，Customer Journey Analytics中与数据管理相关的任何设置都会从Adobe Experience Platform继承。
+通常情况下，Customer Journey Analytics 中的任何数据管理相关设置都是从 Adobe Experience Platform 继承来的。
 
 ## 数据管理
 
-CJA与 [Adobe Experience Platform数据管理](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=en) 允许为敏感CJA数据设置标签并强制执行隐私政策。
+CJA 和 [Adobe Experience Platform 数据管理](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=zh-Hans)之间的集成允许标记敏感 CJA 数据和实施隐私政策。
 
-在CJA数据视图工作流中，可以显示在由Experience Platform使用的数据集上创建的隐私标签和策略。 这些标签可阻止或警告从敏感字段创建量度和/或维度的用户。
+在 Experience Platform 使用的数据集上创建的隐私标签和策略可以在 CJA 数据视图工作流中显示。 这些标签阻止或警告从敏感字段创建亮度和/或维度的用户。
 
-此外，在从CJA导出数据（通过报表、导出、API等）时，会添加警告或标签，以通知用户报表包含需要以特定方式处理的敏感信息。
+此外，从 CJA 导出数据时（通过报告、导出、API 等），将添加其他警告或标签，以通知用户报告包含需要以特定方式处理的敏感信息。
 
-此集成使您能够更轻松地管理法规遵从性。 贵组织中的数据管理员可以设置策略以限制使用。 因此，您的CJA用户可以更自信地使用数据，因为他们知道数据符合数据管理者定义的策略。
+此集成允许您更轻松地管理合规性。 组织中的数据管理员可以设置策略以限制使用。 因此，您的 CJA 用户可以更自信地使用数据，因为他们知道此等数据使用符合数据管理员定义的策略。 
 
 [了解详情](/help/data-views/data-governance.md)
 
