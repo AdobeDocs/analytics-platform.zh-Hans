@@ -5,7 +5,7 @@ exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: c5a42392df82af4f0f8dcd718e3ce962ad654191
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '915'
 ht-degree: 100%
 
@@ -56,10 +56,10 @@ CJA 中的大多数维度和指标都基于您 Adobe Experience Platform 数据�
 | [!UICONTROL 人员 ID] | 维度 | Experience Platform 中定义的每个数据集架构，可以拥有自己定义的一个或多个标识集，并与命名空间关联。其中任何标识都可用作人员 ID。示例包括 Cookie ID、拼接 ID、用户 ID、跟踪代码等。[!UICONTROL 个人 ID] 维度是合并数据集的基础，在 CJA 中标识独特访客。<p>可能的使用案例包括：<ul><li>对特定人员 ID 值创建筛选条件，以将所有内容向下筛选到该用户的行为。</li><li>调试：确保特定 Cookie ID（或特定客户 ID）的数据存在。</li><li>确定致电给呼叫中心的用户。</li></ul> |
 | [!UICONTROL 人员 ID 命名空间] | 维度 | [!UICONTROL 人员 ID] 由哪种类型的 ID 组成。示例：`email address`、`cookie ID`、`Analytics ID` 等。 |
 | [!UICONTROL 季度] | 时间划分维度 | 第一季度、第二季度、第三季度和第四季度 |
-| [!UICONTROL 重复会话] | 量度 | 非个人首次会话的会话数。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) |
+| [!UICONTROL 重复会话] | 量度 | 非个人首次会话的会话数。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat) |
 | [!UICONTROL 会话开始] | 量度 | 会话的第一个事件的事件数。用在筛选器定义（例如“[!UICONTROL 会话开始]”）中时，它会逐渐筛选以仅显示每个会话的第一个事件。 |
 | [!UICONTROL 会话结束] | 量度 | 会话的最后一个事件的事件数。与[!UICONTROL 会话开始]类似，它也用在过滤器定义中，逐渐过滤以仅显示每个会话的最后一个事件。 |
-| [!UICONTROL 会话类型] | 维度 | 此维度有两个值：1）[!UICONTROL 首次]及 2）返回。 [!UICONTROL 首次]行项目包括已确定为个人的首次会话的所有行为（即针对该维度的量度）。 其他所有内容都包含在[!UICONTROL 返回]的行项目中（假设所有内容都属于一个会话）。 如果量度不是任何会话的一部分，则它们将属于该维度的“不适用”范围。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) |
+| [!UICONTROL 会话类型] | 维度 | 此维度有两个值：1）[!UICONTROL 首次]及 2）返回。 [!UICONTROL 首次]行项目包括已确定为个人的首次会话的所有行为（即针对该维度的量度）。 其他所有内容都包含在[!UICONTROL 返回]的行项目中（假设所有内容都属于一个会话）。 如果量度不是任何会话的一部分，则它们将属于该维度的“不适用”范围。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat) |
 | [!UICONTROL 逗留时间（秒）] | 量度 | 累计两个不同的维度值之间的时间。 |
 | [!UICONTROL 每个事件逗留时间] | 维度 | 将[!UICONTROL 耗时]指标装入[!UICONTROL “事件”]桶。 |
 | [!UICONTROL 每个会话逗留时间] | 维度 | 将[!UICONTROL 耗时]指标装入[!UICONTROL 会话]桶。 |
