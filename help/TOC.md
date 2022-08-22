@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics 指南
 source-git-commit: 338cb8a4409c9b03461763d97ced6b8a10de2b7b
 workflow-type: tm+mt
 source-wordcount: '738'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 97%
    + [Customer Journey Analytics 新用户的用户指南](getting-started/aa-to-cja-user.md)
    + 比较 Adobe Analytics 和 Customer Journey Analytics{#compare-aa-cja}
       + [Customer Journey Analytics 功能支持](getting-started/aa-vs-cja/cja-aa.md)
-      + [比较通过Analytics源连接器传递的Analytics数据的术语](getting-started/aa-vs-cja/terminology.md)
+      + [比较通过 Analytics Source Connector 传递的 Analytics 数据的术语](getting-started/aa-vs-cja/terminology.md)
       + [跨 Adobe Analytics 和 CJA 比较数据处理](getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [虚拟报告环境和沙盒环境](getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
       + [处理规则、VISTA 和分类与数据准备](getting-started/aa-vs-cja/pr-vista-dataprep.md)
@@ -113,7 +113,7 @@ ht-degree: 97%
       + [直方图](analysis-workspace/visualizations/histogram.md)
       + [水平条形图和堆叠的水平条形图](analysis-workspace/visualizations/horizontal-bar.md)
       + [关键量度摘要](analysis-workspace/visualizations/key-metric.md)
-      + [折线图](analysis-workspace/visualizations/line.md)
+      + [线形图](analysis-workspace/visualizations/line.md)
       + [散点图](analysis-workspace/visualizations/scatterplot.md)
       + [摘要数字和摘要变化](analysis-workspace/visualizations/summary-number-change.md)
       + [文本](analysis-workspace/visualizations/text.md)
@@ -169,7 +169,7 @@ ht-degree: 97%
    + [使用过滤器](report-builder/work-with-filters.md)
    + [筛选维度](report-builder/filter-dimensions.md)
    + [管理数据块](report-builder/manage-reportbuilder.md)
-   + [受限标签](report-builder/restricted-labels.md)
+   + [限制标签](report-builder/restricted-labels.md)
    + [Report Builder 设置](report-builder/report-builder-settings.md)
 + 组件 {#cja-components}
    + [组件概述](components/overview.md)
