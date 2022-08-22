@@ -4,9 +4,9 @@ title: 下载 PDF 或 CSV 文件
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 source-git-commit: 1e2c5d79059a4804416288188ea4740dd94ca33d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1057'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ ht-degree: 92%
 
 ## 下载敏感数据 {#sensitive}
 
-如果 **[!UICONTROL 强制下载]** [数据管理政策](/help/data-views/data-governance.md) 在您报告的数据视图中打开，则工作区项目的任何下载（例如向电子邮件发送或共享pdf）都将对标记为敏感的数据字段进行哈希处理。 您仍可以在工作区中对这些字段进行分析，但如果您尝试通过电子邮件或以其他方式共享项目，则阻止的字段将在.pdf或.csv文件中显示为空。
+如果在您报告的数据视图中启用了&#x200B;**[!UICONTROL 强制下载]**[数据管理策略](/help/data-views/data-governance.md)，则”工作区“项目的任何下载（如通过电子邮件发送或共享 PDF）都将散列标记为敏感的数据字段。 您仍然可以在工作区中对这些字段进行分析，但如果您尝试发送电子邮件或以其他方式共享项目，被阻止的字段将在 .pdf 或 .csv 文件中显示为空。
 
 ## 常见问题解答 {#faq}
 
