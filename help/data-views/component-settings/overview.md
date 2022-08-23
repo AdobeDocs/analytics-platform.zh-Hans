@@ -4,10 +4,10 @@ description: 查看数据视图组件的核心设置。
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 3d0de872f92de3586bfe5e38ac01799da20526de
+source-git-commit: baee2ccf6eec040972726b9651ffe565d50307a9
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 92%
+source-wordcount: '427'
+ht-degree: 91%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 92%
 | [!UICONTROL 组件名称] | 必填。使您可指定在分析工作区中显示的易记名称。可将组件重命名以给予其一个数据视图专属的名称。 |
 | [!UICONTROL 描述] | 可选，但推荐。向其他用户提供有关组件的信息。 |
 | [!UICONTROL 标记] | 可选。可让您使用自定义或现成标记为组件添加标签，以便于在分析工作区 UI 中搜索/筛选。 |
-| [!UICONTROL 上下文标签] | 您可以为报表中的特定用例标记特定维度和/或量度。 示例包括CJA的媒体面板、新的实验面板以及报告模板。 移除上下文标签可能会影响需要该组件的特定面板或报告。 |
+| [!UICONTROL 上下文标签] | 可选。可应用于组件的可用系统定义标签的下拉列表。 在定义一组用于在Analysis Workspace项目或面板中进行报告的组件时，可能需要这些标签。 |
 | [!UICONTROL 架构字段名称] | 架构字段的名称。 |
 | [!UICONTROL 数据集类型] | 必填。显示组件来自哪个数据集类型（事件、查询或个人资料）的不可编辑字段。 |
 | [!UICONTROL 数据集] | 一个不可编辑的字段，它显示该组件来源于哪个数据集。此字段可以包含多个数据集。 |
