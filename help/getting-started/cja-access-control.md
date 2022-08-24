@@ -4,10 +4,10 @@ description: 了解创建连接、添加数据集、创建数据视图等的访�
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
-source-git-commit: c80c10e1e4887bfe7fdc3b59d0dfe415b1b0d5eb
-workflow-type: ht
-source-wordcount: '241'
-ht-degree: 100%
+source-git-commit: e5ae592c6765638e26ee5252f458e82af9d24e44
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 91%
 
 ---
 
@@ -37,4 +37,10 @@ ht-degree: 100%
 ## 用户访问
 
 Customer Journey Analytics 中的非产品管理员（用户）无法查看数据视图或连接，但可以创建过滤器、项目和计算量度。
+
+## 工作区项目策划
+
+有关如何在项目级别限制组件（维度、量度、区段、日期范围）的更多信息，请参阅 [组织项目](/help/analysis-workspace/curate-share/curate.md).
+
+
 
