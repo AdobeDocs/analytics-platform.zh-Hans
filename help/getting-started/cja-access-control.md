@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: 7520f068e41d8b91bf9d260b7763cf8c1b946bc4
+source-git-commit: 04957adebd848739b8b3609eb35366d8296ee752
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '945'
 ht-degree: 17%
 
 ---
@@ -97,3 +97,5 @@ Customer Journey Analytics中的用户无法创建、编辑或查看数据视图
 | **[!UICONTROL 创建注释]** | 允许用户创建 [批注](/help/components/annotations/overview.md). |
 | **[!UICONTROL 受众创建]** | 允许用户创建 [受众](/help/components/audiences/audiences-overview.md). |
 | **[!UICONTROL 受众视图]** | 允许用户查看 [受众](/help/components/audiences/audiences-overview.md). |
+
+{style=&quot;table-layout:auto&quot;}
