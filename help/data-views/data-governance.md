@@ -3,7 +3,7 @@ title: 标签和策略
 description: 了解 AEP 中定义的数据标签和策略如何影响 CJA 中的数据视图和报告。
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 source-git-commit: 7962114aaab42a283f1cb35a312b0a707038c31a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '468'
 ht-degree: 100%
 
