@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 source-git-commit: 75e72f94b90ad67a3f8e9506abb09b96a59383d8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '888'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 98%
 
 ### 第 4 步：报告工作区中的 CAI 分数
 
-在CJA工作区中，创建新项目并提取可视化图表。
+在 CJA Workspace 中，创建一个新项目并引入可视化图表。
 
 **趋势倾向分数**
 
