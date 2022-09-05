@@ -5,9 +5,9 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: 6e22766b1730a34fc6219f66174e2dbd575cfa14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1254'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 92%
 
 ## 3. 在流量图中将数值维度作为“量度” {#numeric}
 
-您可以使用数值维度将“量度”导入 [!UICONTROL  流量] 可视化图表。
+您可以使用数值维度将“量度”引入[!UICONTROL 流量]可视化图表中。
 
 1. 在数据视图[组件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#configure-component-settings)选项卡上，将[!UICONTROL 营销渠道]架构字段拖动到[!UICONTROL [!UICONTROL 已包含组件]下的量度]区域。
 2. 在工作区报表中，此流程显示[!UICONTROL 营销渠道]流入[!UICONTROL 订单]:
@@ -87,19 +87,19 @@ f. 指定“50”为值。
 有关数据视图设置的更多信息，请参阅[创建数据视图](/help/data-views/create-dataview.md)。
 有关数据视图的概念性概述，请参阅[数据视图概述](/help/data-views/data-views.md)。
 
-## 7.新会议报告 {#new-repeat}
+## 7. 新会话报告 {#new-repeat}
 
 您可以根据为此数据视图定义的报告窗口和 13 个月的回看窗口来确定会话是否确实是用户的首次会话。 该报告允许您确定，例如：
 
-* 您的订单中新会话订购的百分比是多少？
+* 您的订单中有多大百分比来自新会话？
 
-* 对于给定的营销渠道或特定的营销活动，您是否定位了首次使用的用户？ 此选项对转化率有何影响？
+* 对于给定的营销渠道或特定的营销活动，您的目标是首次用户吗？ 该选择如何影响转化率？
 
-有两个组件可促进此报告：
+两个组件有助于此报告：
 
-* 1 维度：[会话类型](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=zh-Hans#optional) – 此维度有两个值：1）[!UICONTROL 新]及 2）[!UICONTROL 返回]。 [!UICONTROL 新的]行项目包括已确定为个人的首次会话的所有行为（即针对该维度的量度）。 其他所有内容都包含在[!UICONTROL 返回]的行项目中（假设所有内容都属于一个会话）。 如果量度不是任何会话的一部分，则它们将归入此维度的“不适用”存储段。
+* 1 维度：[会话类型](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=zh-Hans#optional) – 此维度有两个值：1）[!UICONTROL 新]及 2）[!UICONTROL 返回]。 [!UICONTROL 新的]行项目包括已确定为个人的首次会话的所有行为（即针对该维度的量度）。 其他所有内容都包含在[!UICONTROL 返回]的行项目中（假设所有内容都属于一个会话）。 如果量度不是任何会话的一部分，则它们属于该维度的“不适用”范围。 
 
-* 1个量度： [新会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). 新会话定义为人员在报告窗口内定义的第一个会话。
+* 1 量度：[新会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=zh-Hans#optional)。 新会话指个人在报告窗口内的首个会话。
 
 要访问这些组件：
 
@@ -111,7 +111,7 @@ f. 指定“50”为值。
 
 * 当首次会话发生在 13 个月的回看窗口之前时。 此会话将被忽略。
 
-* 当会话跨越回看窗口和报告窗口时。 假设您在2022年6月1日至6月15日运行报表。 回看窗口将涵盖 2021 5 月 1 日至 2022 年 5 月 31 日。 如果会话从 2022 年 5 月 30 日开始，到 2022 年 6 月 1 日结束，因为该会话包含在回看窗口中，则报告窗口中的所有会话都被视为返回会话。
+* 当会话跨越回看窗口和报告窗口时。 假设您从 2022 年 6 月 1 日到 6 月 15 日运行报告。 回看窗口将涵盖 2021 5 月 1 日至 2022 年 5 月 31 日。 如果会话从 2022 年 5 月 30 日开始，到 2022 年 6 月 1 日结束，因为该会话包含在回看窗口中，则报告窗口中的所有会话都被视为返回会话。
 
 ## 使用日期和日期时间功能 {#date}
 
