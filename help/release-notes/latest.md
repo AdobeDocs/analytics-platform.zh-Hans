@@ -4,9 +4,9 @@ description: 最新 CJA 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 source-git-commit: 6e22766b1730a34fc6219f66174e2dbd575cfa14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '493'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 99%
 | **CJA 对数据管理标签和策略的支持** | 自动化 CJA 和 Adobe Experience Platform 隐私标签和策略之间的集成。 在 Platform 使用的数据集上创建的数据标签显示在 CJA 数据视图中，用以阻止或警告从敏感字段创建亮度和/或维度的用户。 此外，从 CJA 导出数据时（通过 Workspace 或 Report Builder 报告、导出、API 等），将添加其他警告或标签，以通知用户报告包含需要以特定方式处理的敏感信息。 [了解详情](/help/data-views/data-governance.md) | 2022 年 8 月 17 日 |
 | **CJA 中的日期字段支持** | 允许 CJA 报告日期和日期时间字段。 [了解详情](/help/data-views/data-views-usecases.md#date) | 2022 年 8 月 17 日 |
 | **Analytics Source Connector 的跨区域支持** | 您现在可以接收来自任何地区（美国、英国或新加坡）的报告包。 但是，这些报告包必须映射到与创建源连接的 Experience Platform 沙盒实例相同的组织。 [了解详情](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans) | 2022 年 8 月 24 日 |
-| **第一个会话报告** | 现在，您可以发现某个特定会话是否是用户的首次会话。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat) | 2022 年 8 月 24 日 |
+| **首次会话报告** | 现在，您可以发现某个特定会话是否是用户的首次会话。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat) | 2022 年 8 月 24 日 |
 
 {style=&quot;table-layout:auto&quot;}
 
