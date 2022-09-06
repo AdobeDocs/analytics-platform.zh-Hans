@@ -3,16 +3,16 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新 CJA 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 6e22766b1730a34fc6219f66174e2dbd575cfa14
-workflow-type: ht
-source-wordcount: '493'
-ht-degree: 100%
+source-git-commit: c7dd23b7cf0a624c98691646ba4c55d748bc0dcf
+workflow-type: tm+mt
+source-wordcount: '519'
+ht-degree: 96%
 
 ---
 
 # 当前的 Customer Journey Analytics (CJA) 发行说明（2022 年 8 月）
 
-**上次更新日期**：2022 年 8 月 25 日
+**上次更新**:2022年9月6日
 
 ## 主要功能
 
@@ -25,6 +25,7 @@ ht-degree: 100%
 | **CJA 中的日期字段支持** | 允许 CJA 报告日期和日期时间字段。 [了解详情](/help/data-views/data-views-usecases.md#date) | 2022 年 8 月 17 日 |
 | **Analytics Source Connector 的跨区域支持** | 您现在可以接收来自任何地区（美国、英国或新加坡）的报告包。 但是，这些报告包必须映射到与创建源连接的 Experience Platform 沙盒实例相同的组织。 [了解详情](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans) | 2022 年 8 月 24 日 |
 | **首次会话报告** | 现在，您可以发现某个特定会话是否是用户的首次会话。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat) | 2022 年 8 月 24 日 |
+| **重复会话报告** | 发现特定会话是否是用户的返回会话。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) | 2022年9月8日 |
 
 {style=&quot;table-layout:auto&quot;}
 

@@ -4,10 +4,10 @@ description: 显示 Customer Journey Analytics 中数据视图的灵活性和强
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 6e22766b1730a34fc6219f66174e2dbd575cfa14
-workflow-type: ht
-source-wordcount: '1254'
-ht-degree: 100%
+source-git-commit: c7dd23b7cf0a624c98691646ba4c55d748bc0dcf
+workflow-type: tm+mt
+source-wordcount: '1280'
+ht-degree: 98%
 
 ---
 
@@ -95,11 +95,15 @@ f. 指定“50”为值。
 
 * 对于给定的营销渠道或特定的营销活动，您的目标是首次用户吗？ 该选择如何影响转化率？
 
-两个组件有助于此报告：
+三个组件有助于此报告：
 
 * 1 维度：[会话类型](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=zh-Hans#optional) – 此维度有两个值：1）[!UICONTROL 新]及 2）[!UICONTROL 返回]。 [!UICONTROL 新的]行项目包括已确定为个人的首次会话的所有行为（即针对该维度的量度）。 其他所有内容都包含在[!UICONTROL 返回]的行项目中（假设所有内容都属于一个会话）。 如果量度不是任何会话的一部分，则它们属于该维度的“不适用”范围。 
 
-* 1 量度：[新会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=zh-Hans#optional)。 新会话指个人在报告窗口内的首个会话。
+* 2个量度：
+
+   * [新会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). 新会话指个人在报告窗口内的首个会话。
+
+   * [返回会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) 回访会话是非人员首次会话的会话数。
 
 要访问这些组件：
 
