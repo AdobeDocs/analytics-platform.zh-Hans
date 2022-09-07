@@ -3,10 +3,10 @@ description: 了解如何在 CJA 试验面板中分析 A/B 测试结果。
 title: 试验性面板
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 870fe0f441ad95e5faec569f05fe4d67954b18a5
+source-git-commit: 7246c019b01a4d9478309bc09bec757561f602d0
 workflow-type: tm+mt
-source-wordcount: '1327'
-ht-degree: 86%
+source-wordcount: '1326'
+ht-degree: 85%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 86%
 
 ![上下文标签](assets/context-label.png)
 
-如果没有这些标签，试验面板将无法工作，因为将没有可使用的试验。
+如果没有这些标签，“实验”面板将不起作用，因为没有可用的实验。
 
 ## 步骤 3：配置试验面板
 
@@ -70,13 +70,9 @@ ht-degree: 86%
 
 您还可以获得一份文本摘要，其中会指出试验是否具有结论性，并会总结结果。结论性基于统计显著性。（见下文“统计方法”）您可以看到具有最高提升和置信度的最佳性能变量的摘要数字。
 
->[!NOTE]
->
->提升和置信度也是 CJA 中的[高级计算量度函数](/help/components/calc-metrics/cm-adv-functions.md)，因此您可以构建自己的提升和置信量度。
+对于您选择的每个成功量度，将显示一个自由格式表和一个转化率趋势图。
 
 ![试验输出](assets/exp-output1.png)
-
-对于您选择的每个成功量度，将显示一个自由格式表和一个转化率趋势图。
 
 [!UICONTROL 线]图给出了[!UICONTROL 控制]与[!UICONTROL 控制变量]性能：
 
@@ -85,6 +81,10 @@ ht-degree: 86%
 >[!NOTE]
 >
 >该面板目前不支持分析 A/A 测试。
+
+>[!NOTE]
+>
+>提升和置信度也是 CJA 中的[高级计算量度函数](/help/components/calc-metrics/cm-adv-functions.md)，因此您可以构建自己的提升和置信量度。
 
 ## 步骤5:解释结果
 
