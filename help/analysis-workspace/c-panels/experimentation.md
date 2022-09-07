@@ -3,9 +3,9 @@ description: 了解如何在 CJA 试验面板中分析 A/B 测试结果。
 title: 试验性面板
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 15ef6bfc1d6600b3795310c208ad46c6f6b52254
-workflow-type: ht
-source-wordcount: '1322'
+source-git-commit: 3c4e2ccd9a3a1d8daf4ace79103b35aead79e432
+workflow-type: tm+mt
+source-wordcount: '1324'
 ht-degree: 100%
 
 ---
@@ -34,8 +34,8 @@ ht-degree: 100%
 
 在 CJA 数据视图设置中，管理员可以向维度或量度添加[上下文标签](/help/data-views/component-settings/overview.md)，并且 CJA 服务（如[!UICONTROL 试验]面板）可以使用这些标签。试验面板使用两个预定义标签：
 
-* [!UICONTROL 试验]
-* [!UICONTROL 变量]
+* [!UICONTROL 体验试验]
+* [!UICONTROL 试验变体]
 
 在包含试验数据的数据视图中，选择两个维度，一个包含试验数据，另一个包含变量数据。然后用&#x200B;**[!UICONTROL 试验]**&#x200B;和&#x200B;**[!UICONTROL 变量]**&#x200B;标签标注这些维度。
 
