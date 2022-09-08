@@ -3,10 +3,10 @@ description: 了解如何在 CJA 试验面板中分析 A/B 测试结果。
 title: 试验性面板
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 7246c019b01a4d9478309bc09bec757561f602d0
+source-git-commit: 31f29e9453d252f119a4fa7c26f96e9f01ed2abf
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 85%
+source-wordcount: '1401'
+ht-degree: 80%
 
 ---
 
@@ -27,6 +27,8 @@ ht-degree: 85%
 试验面板可供所有 Customer Journey Analytics (CJA) 用户使用。不需要管理员权限或其他权限。但是，设置流程中（下面的步骤 1 和 2）需要只有管理员才能执行的操作。
 
 ## 步骤 1：创建与试验数据集的连接
+
+推荐的数据模式是将实验数据放在 [对象数组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=en) 包含两个不同维度中的实验和变体数据。 如果您在单个维度中拥有实验数据，并在一个分隔字符串中具有实验和变体数据，则可以使用 [子字符串](/help/data-views/component-settings/substring.md) 在数据视图中设置，将它们拆分为两个，以在面板中使用。
 
 在 Adobe Experience Platform [吸收](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans)您的试验数据后，[在 CJA ](/help/connections/create-connection.md)中创建与一个或多个试验数据集的连接。
 
@@ -76,7 +78,7 @@ ht-degree: 85%
 
 [!UICONTROL 线]图给出了[!UICONTROL 控制]与[!UICONTROL 控制变量]性能：
 
-![试验输出](assets/exp-output2.png)
+![折线图输出](assets/exp-output2.png)
 
 >[!NOTE]
 >
