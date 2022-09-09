@@ -3,10 +3,10 @@ description: 了解如何在CJA实验面板中分析A/B测试的结果。
 title: 试验性面板
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 41cca39d73773af09981bde10c93c767ebdb77d4
+source-git-commit: 23ea60d785bbee62aab66c0e74be70b34e5d5642
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 79%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -83,10 +83,6 @@ ht-degree: 79%
 >[!NOTE]
 >
 >该面板目前不支持分析 A/A 测试。
-
->[!NOTE]
->
->提升和置信度也是 CJA 中的[高级计算量度函数](/help/components/calc-metrics/cm-adv-functions.md)，因此您可以构建自己的提升和置信量度。
 
 ## 步骤5:解释结果
 
