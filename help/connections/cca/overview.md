@@ -4,10 +4,10 @@ description: 在多个数据集中重新生成访客 ID 的键值，以对访客
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 3f20520a2021d9b6066b0492ed11a1a4619ab1d4
-workflow-type: ht
-source-wordcount: '1196'
-ht-degree: 100%
+source-git-commit: fff0ffb3a513c3fc514d6769f8c3bc70fa75459e
+workflow-type: tm+mt
+source-wordcount: '1189'
+ht-degree: 97%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->请注意，对全局事件数据集架构的任意更改还必须应用到新拼接的数据集架构中，否则这会断开拼接的数据集。
+>对全局事件数据集架构所做的任何更改都必须同时应用于新的拼合数据集架构，否则将会破坏拼合的数据集。
 >
 >此外，如果移除源数据集，缝合的数据集将停止处理并被系统移除。
 
@@ -51,7 +51,7 @@ ht-degree: 100%
 * 当前，重新生成键值功能只能执行一步（即将永久 ID 转换为临时 ID）。而不支持多步重新生成键值功能（例如，将永久 ID 转换为临时 ID，然后再转换为另一个临时 ID）。
 * 仅支持事件数据集。不支持其他数据集，例如查找数据集。
 * 不支持在组织中使用的自定义 ID 映射。
-* 不支持 Adobe 协作图和专用图。
+* 不支持跨设备专用图。
 * 跨渠道 Analytics 不以任何方式转换用于拼接的字段。基于字段的拼接使用存在于数据湖内非拼接数据集中的指定字段中的值。拼接过程区分大小写。例如，如果字段中有时出现“Bob”一词，有时出现“BOB”一词，则将这两个词视为单独的两人。
 * 由于基于字段的拼接区分大小写，对于通过 Analytics Source Connector 生成的分析数据集来说，Adobe 建议审查适用于临时 ID 字段的任何 VISTA 规则或处理规则，以确保这些规则都不会引入相同 ID 的新形式。例如，对于部分事件，您应确保没有任何 VISTA 或处理规则将小写字母引入到临时 ID 字段。
 * 基于字段的拼接不组合或连接字段。
