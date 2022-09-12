@@ -5,8 +5,8 @@ exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 source-git-commit: f961bf0a615199de931a98f14d8b640890df7a2b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '328'
+ht-degree: 67%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 0%
 
 ## 相关资源
 
-* [2022版CJA以前的发行说明](/help/release-notes/2022.md)
+* [以前的 2022 年 CJA 发行说明](/help/release-notes/2022.md)
 
-* [年 Adobe Analytics 发行说明](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=zh-Hans)
+* [Adobe Analytics 发行说明](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=zh-Hans)
 
 * [Media Analytics 发行说明](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html?lang=zh-Hans)
 
-* [Adobe Experience Cloud 发行说明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-Hans)
+* [Adobe Experience Cloud 发行说明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
 
 ## 主要功能
 

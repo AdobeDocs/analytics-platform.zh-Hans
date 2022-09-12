@@ -5,8 +5,8 @@ feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 source-git-commit: 23ea60d785bbee62aab66c0e74be70b34e5d5642
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1379'
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->如今，通过分析源连接器引入 Adobe Experience Platform 的 [Adobe Analytics for Target ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=zh-Hans)(A4T) 数据&#x200B;**无法**&#x200B;在[!UICONTROL 试验]面板中分析。我们期待能够在 2023 年解决这一问题。
+>如今，通过分析源连接器引入 Adobe Experience Platform 的 [Adobe Analytics for Target ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html)(A4T) 数据&#x200B;**无法**&#x200B;在[!UICONTROL 试验]面板中分析。我们期待能够在 2023 年解决这一问题。
 
 ## 访问控制
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## 步骤 1：创建与试验数据集的连接
 
-推荐的数据模式是将实验数据放在 [对象数组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=en) 包含两个不同维度中的实验和变体数据。 如果您在单个维度中拥有实验数据，并在一个分隔字符串中具有实验和变体数据，则可以使用 [子字符串](/help/data-views/component-settings/substring.md) 在数据视图中设置，将它们拆分为两个，以在面板中使用。
+推荐的数据架构将试验数据放在一个[对象数组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=zh-Hans)中，该数组在两个单独的维度中包含试验数据和变体数据。 如果将试验数据放在单个维度中，其中在一个字符串中分隔试验数据和变体数据，则可在数据视图中使用[子字符串](/help/data-views/component-settings/substring.md)设置将这些数据一分为二以用于面板中。
 
 在 Adobe Experience Platform [吸收](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans)您的试验数据后，[在 CJA ](/help/connections/create-connection.md)中创建与一个或多个试验数据集的连接。
 
@@ -36,14 +36,14 @@ ht-degree: 0%
 
 在 CJA 数据视图设置中，管理员可以向维度或量度添加[上下文标签](/help/data-views/component-settings/overview.md)，并且 CJA 服务（如[!UICONTROL 试验]面板）可以使用这些标签。试验面板使用两个预定义标签：
 
-* [!UICONTROL 体验试验]
+* [!UICONTROL 试验试验]
 * [!UICONTROL 试验变体]
 
 在包含试验数据的数据视图中，选择两个维度，一个包含试验数据，另一个包含变量数据。然后用&#x200B;**[!UICONTROL 试验]**&#x200B;和&#x200B;**[!UICONTROL 变量]**&#x200B;标签标注这些维度。
 
 ![上下文标签](assets/context-label.png)
 
-如果没有这些标签，“实验”面板将不起作用，因为没有可用的实验。
+如果没有这些标签，则由于没有试验可使用，因此“试验”面板不工作。
 
 ## 步骤 3：配置试验面板
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 ![试验面板](assets/experiment.png)
 
 >[!IMPORTANT]
->如果CJA数据视图中的必需设置尚未完成，则在继续操作之前，您将收到此消息：&quot;[!UICONTROL 请在数据视图中配置实验和变量维度]&quot;
+>如果尚未完成 CJA 数据视图中的必要设置，则在可继续操作之前将收到此消息：“[!UICONTROL 请配置数据视图中的试验维度和变体维度]”。
 
 1. 配置面板输入设置。
 
@@ -66,13 +66,13 @@ ht-degree: 0%
 
 1. 单击&#x200B;**[!UICONTROL 生成]**。
 
-## 步骤4:查看面板输出
+## 第 4 步：查看面板输出
 
 试验面板会返回一组丰富的数据和可视化图表，帮助您更好地了解试验的执行情况。在该面板顶部，提供了一个摘要行，用于提醒您选择的面板设置。在任何时候，您都可以通过单击右上角的编辑铅笔来编辑面板。
 
 您还可以获得一份文本摘要，其中会指出试验是否具有结论性，并会总结结果。结论性基于统计显著性。（见下文“统计方法”）您可以看到具有最高提升和置信度的最佳性能变量的摘要数字。
 
-对于您选择的每个成功量度，将显示一个自由格式表和一个转化率趋势图。
+对于每个选择的成功量度都将显示一个自由格式表和一个转化率趋势图。
 
 ![试验输出](assets/exp-output1.png)
 
@@ -82,11 +82,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->该面板目前不支持分析 A/A 测试。
+>此面板当前不支持分析 A/A 测试。
 
-## 步骤5:解释结果
+## 第 5 步：诠释结果
 
-1. **实验是决定性的**:每次您查看实验报告时，Adobe都会分析在实验中累计到此时刻的数据，并将在任何有效置信度超过95%的阈值时，声明实验为“结论性” *至少一个* （当有两个以上的臂时，应用Bonferonni校正，以校正多假设检验）。
+1. **试验具有结论性**：每次查看试验报告时，Adobe 都分析到目前为止已在试验中积累的数据，并将在&#x200B;*至少一个*&#x200B;变体的任意时间有效置信度超过 95% 这一阈值时宣称某个试验具有“结论性”（当有两臂以上时，将应用邦费罗尼校正以针对多重假设检验进行校正）。
 
 2. **最佳性能变量**：当一项试验被宣布为具有结论性时，具有最高转化率的变量会被标记为“最佳性能变量”。请注意，该变量必须是对照变量或基准变量，或者是超过 95% 随时有效置信阈值的变量之一（应用 Bonferonni 校正）。
 
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->对结果的全面描述应考虑所有可用证据（即实验设计、样本量、转化率、置信度等），而不仅仅是结论性或无结论性声明。 即使结果尚未“确定”，仍有令人信服的证据表明一个变体与另一个变体不同（例如，置信区间几乎不重叠）。 理想情况下，决策应以所有统计证据为依据，并在连续谱上进行解释。
+>全面描述结果应考虑所有可获得的证据（如试验设计、样本量、转化率、置信度等），而不仅声明是否具有结论性。即使结果尚未具有“结论性”，仍可能有令人信服的证据（例如，置信区间几乎不重叠）表明一个变体与另一个变体不同。理想情况下，所有统计证据都应影响决策，并在一个连续的范围上诠释决策。
 
 ## Adobe 的统计方法
 
