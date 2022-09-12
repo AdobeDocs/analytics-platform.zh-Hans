@@ -3,9 +3,9 @@ title: 筛选器运算符
 description: 确定组件如何与筛选器中的值交互。
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
 source-git-commit: a8b884148a197b081e321582f70a9188a1bdc51e
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '594'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 | --- | --- |
 | 等于 | 返回与某一数字或字符串值完全匹配的项目。如果使用通配符，请使用“匹配”运算符。 |
 | 不等于 | 返回不包含输入值的完全匹配项的所有项目。如果使用通配符，请使用“不匹配”运算符。 |
-| 等于任何 | 返回包含输入的子字符串值（以逗号分隔）的匹配项的项目。 |
+| 等于任何 | 返回包含与所输入的子字符串值匹配的值的任意项并以逗号分隔。 |
 | 包含 | 返回与输入值的子字符串匹配的项目。例如，如果字符串维度的规则包含 `"Search"`，则它会匹配包含子字符串 `"Search"` 的所有页面，包括 `"Search Results"`、`"Search"` 和 `"Searching"`。此运算符区分大小写。 |
 | 不包含 | 从结果中排除与输入值匹配的所有项。例如，如果字符串维度的规则不包含 `"Search"`，则它会排除包含子字符串 `"Search"` 的所有页面，包括 `"Search Results"`、`"Search"` 和 `"Searching"`。 |
 | 包含全部 | 返回包含所有子字符串（以空格分隔）的项，顺序不限。例如，输入 `"Search Results"` 和此运算符会匹配 `"Search Results"` 和 `"Results of Search"`，但不包含单独的 `"Search"` 或 `"Results"`。此运算符支持最多 100 个以空格分隔的单词。 |
