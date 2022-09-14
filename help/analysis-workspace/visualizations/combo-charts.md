@@ -4,30 +4,24 @@ title: 组合图表可视化
 feature: Visualizations
 role: User, Admin
 exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
-source-git-commit: 5eebcccc45b9760ecc18ec94ca526f2082d089bc
-workflow-type: ht
-source-wordcount: '763'
-ht-degree: 100%
+source-git-commit: 5aee0fcc0ec241d946da4ce97dc01eb6274648aa
+workflow-type: tm+mt
+source-wordcount: '768'
+ht-degree: 99%
 
 ---
 
 # 组合图表
 
->[!NOTE]
->
->此功能当前正在进行[小范围测试](/help/release-notes/releases.md)。
-
 通过[!UICONTROL 组合图表]可视化，可轻松快速地构建比较可视化图表，而无需先构建表格。您可以通过线条/条形组合轻松查看数据趋势。
 
-使用[!UICONTROL 组合图表]：
+使用[!UICONTROL 组合图表]：：
 
 * 将本周的订单与上个月（和去年）同一时间的订单进行比较 – 只需点击几下即可。
-
 * 在同一张图表上快速分析和比较多个量度（例如[!UICONTROL 独特访客数]和[!UICONTROL 收入]）。
-
 * 在一段时间内针对某个函数（例如[!UICONTROL 累积平均数]）分析量度。
 
-请记住，您可以：
+请记住，您可以：：
 
 * 在单个[!UICONTROL 组合图表]中添加多个比较。
 * 如果添加一个或多个比较，则它们必须是同一类型，例如[!UICONTROL 时间比较]。
@@ -38,7 +32,7 @@ ht-degree: 100%
 
 1. 从左侧栏的“可视化”下拉列表中，将[!UICONTROL 组合图表]可视化拖动到空面板中。
 
-   ![](assets/combo-chart-build.png)
+   ![生成](assets/combo-chart-build.png)
 
 1. 从下拉列表中，为 X 轴选择一个维度，为 Y 轴选择一个量度。
 
@@ -46,9 +40,9 @@ ht-degree: 100%
 
    | 线形比较类型 | 定义 |
    | --- | --- |
-   | **[!UICONTROL 时间比较]** | 最常见的比较类型 – 例如，将此时间段与 4 周前进行比较。如果您选择了[!UICONTROL 时间比较]，则对要比较的时间段进行二次选择。<p>![](assets/combo-time-period.png) |
-   | **[!UICONTROL 函数]** | 您可以在比较中引入函数（例如[!UICONTROL 平均值]）。请参阅下面的支持函数列表。<p>![](assets/combo-functions.png) |
-   | **[!UICONTROL 辅助量度]** | 例如，您可以将[!UICONTROL 收入]与另一个量度进行比较。<p>![](assets/combo-2metrics.png) |
+   | **[!UICONTROL 时间比较]** | 最常见的比较类型 – 例如，将此时间段与 4 周前进行比较。如果您选择了[!UICONTROL 时间比较]，则对要比较的时间段进行二次选择。<p>![时段](assets/combo-time-period.png) |
+   | **[!UICONTROL 函数]** | 您可以在比较中引入函数（例如[!UICONTROL 平均值]）。请参阅下面的支持函数列表。<p>![函数](assets/combo-functions.png) |
+   | **[!UICONTROL 辅助量度]** | 例如，您可以将[!UICONTROL 收入]与另一个量度进行比较。<p>![两个量度](assets/combo-2metrics.png) |
 
    {style=&quot;table-layout:auto&quot;}
 
@@ -56,7 +50,7 @@ ht-degree: 100%
 
    输出将类似于下面这样：
 
-   ![](assets/combo-output.png)
+   ![输出](assets/combo-output.png)
 
    当前时期以条形图显示，对比时期以线形图表示。线形图上的点被称为“条形铃”。
 
@@ -78,17 +72,17 @@ ht-degree: 100%
 
 以下是“收入”量度的累积平均值的示例：
 
-![](assets/combo-cumul-avg.png)
+![累积平均数](assets/combo-cumul-avg.png)
 
 以下是使用了累积平均值和均值函数的组合图的示例：
 
-![](assets/combo-two-functions.png)
+![两个函数](assets/combo-two-functions.png)
 
 ## 组合图表设置
 
 单击组合图表右上角的齿轮图标以更改其设置。
 
-![](assets/combo-settings.png)
+![设置](assets/combo-settings.png)
 
 | 设置 | 定义 |
 | --- | --- |
