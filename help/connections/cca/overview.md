@@ -5,9 +5,9 @@ exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
 source-git-commit: fff0ffb3a513c3fc514d6769f8c3bc70fa75459e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1189'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->对全局事件数据集架构所做的任何更改都必须同时应用于新的拼合数据集架构，否则将会破坏拼合的数据集。
+>对全局事件数据集架构的任何更改还必须应用到新拼接的数据集架构中，否则这会断开拼接的数据集。
 >
 >此外，如果移除源数据集，缝合的数据集将停止处理并被系统移除。
 
