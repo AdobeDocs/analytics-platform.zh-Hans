@@ -1,12 +1,12 @@
 ---
-description: 了解如何在CJA实验面板中分析A/B测试的结果。
+description: 了解如何在 CJA 试验面板中分析 A/B 测试结果。
 title: 试验性面板
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 source-git-commit: 23ea60d785bbee62aab66c0e74be70b34e5d5642
 workflow-type: tm+mt
 source-wordcount: '1379'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

@@ -7,7 +7,7 @@ feature: Data Views
 source-git-commit: 80f31a77df68dca91c1f9f5a0d521b0ea7d450ce
 workflow-type: tm+mt
 source-wordcount: '979'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ f. 指定“50”为值。
 
 * 对于给定的营销渠道或特定的营销活动，您的目标是首次用户吗？ 该选择如何影响转化率？
 
-一个量度可促进此报表：
+一个量度有助于这种报告：
 
 <!--* 1 dimension: [Session type](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - This dimension has two values: 1) [!UICONTROL New] and 2) [!UICONTROL Returning]. The [!UICONTROL New] line item includes all of the behavior (i.e. metrics against this dimension) from a session that has been determined to be a person's defined first session. Everything else is included in the [!UICONTROL Returning] line item (assuming everything belongs to a session). Where metrics are not part of any session, they fall into the 'Not applicable' bucket for this dimension.-->
 
@@ -103,7 +103,7 @@ f. 指定“50”为值。
 
    <!--* [Return sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) Return sessions is the number of sessions that were not a person's first-ever session.-->
 
-要访问此组件，请执行以下操作：
+要访问此组件：
 
 1. 进入数据视图编辑器。
 1. 单击左栏中的&#x200B;**[!UICONTROL “组件”]**>**[!UICONTROL “可选标准组件”]**。
