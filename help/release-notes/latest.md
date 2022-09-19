@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # 当前的 Customer Journey Analytics (CJA) 发行说明（2022 年 9 月）
 
-**上次更新日期**：2022 年 14 月 9 日
+**上次更新日期**：2022 年 9 月 14 日
 
 ## 相关资源
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 * [Adobe Analytics 发行说明](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=zh-Hans)
 
-* [Media Analytics 发行说明](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html?lang=zh-Hans)
+* [Media Analytics 发行说明](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html)
 
 * [Adobe Experience Cloud 发行说明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
 
