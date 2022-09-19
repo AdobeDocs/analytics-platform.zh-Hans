@@ -5,9 +5,9 @@ feature: Visualizations
 role: User, Admin
 exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
 source-git-commit: 5aee0fcc0ec241d946da4ce97dc01eb6274648aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '768'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 99%
    | --- | --- |
    | **[!UICONTROL 时间比较]** | 最常见的比较类型 – 例如，将此时间段与 4 周前进行比较。如果您选择了[!UICONTROL 时间比较]，则对要比较的时间段进行二次选择。<p>![时段](assets/combo-time-period.png) |
    | **[!UICONTROL 函数]** | 您可以在比较中引入函数（例如[!UICONTROL 平均值]）。请参阅下面的支持函数列表。<p>![函数](assets/combo-functions.png) |
-   | **[!UICONTROL 辅助量度]** | 例如，您可以将[!UICONTROL 收入]与另一个量度进行比较。<p>![两个量度](assets/combo-2metrics.png) |
+   | **[!UICONTROL 辅助量度]** | 例如，您可以将[!UICONTROL 收入]与另一个量度进行比较。<p>![两个指标](assets/combo-2metrics.png) |
 
    {style=&quot;table-layout:auto&quot;}
 
@@ -72,9 +72,9 @@ ht-degree: 99%
 
 以下是“收入”量度的累积平均值的示例：
 
-![累积平均数](assets/combo-cumul-avg.png)
+![累积平均值](assets/combo-cumul-avg.png)
 
-以下是使用了累积平均值和均值函数的组合图的示例：
+以下是使用了累积平均值和均值函数的组合图表的示例：
 
 ![两个函数](assets/combo-two-functions.png)
 
