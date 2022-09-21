@@ -4,10 +4,10 @@ description: Customer Journey Analytics - 常见问题解答。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 29d8f5e293ddee10578e953e2db224099f7b7033
-workflow-type: ht
-source-wordcount: '2377'
-ht-degree: 100%
+source-git-commit: 91d9e473d38e12a7ba9cafea92c864641cebd206
+workflow-type: tm+mt
+source-wordcount: '2371'
+ht-degree: 95%
 
 ---
 
@@ -29,9 +29,9 @@ ht-degree: 100%
 
 | 问题 | 回答 |
 | --- | --- |
-| [!UICONTROL Customer Journey Analytics] 是否可以跨设备或跨数据集进行“拼合”？ | 支持。[!UICONTROL Customer Journey Analytics] 具有一个称为[跨渠道分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=zh-Hans) (CCA) 的拼合解决方案，该方案允许您重新键入数据集的人员 ID，实现多个数据集的无缝组合。 |
-| 是否支持从匿名行为到实名行为的拼合？ | 支持。[跨渠道分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=zh-Hans)查看来自已通过和未通过身份验证的会话的用户数据来生成拼合 ID。 |
-| CCA 中如何进行“重放”？ | CCA 根据它所掌握的唯一标识符“重放”数据。重放导致新设备连接并被拼合。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html#step-1%3A-live-stitching) |
+| [!UICONTROL Customer Journey Analytics] 是否可以跨设备或跨数据集进行“拼合”？ | 支持。[!UICONTROL Customer Journey Analytics] 具有一个称为[跨渠道分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=zh-Hans) (CCA) 的拼合解决方案，它允许您为数据集的人员ID重新生成键值，从而实现多个数据集的无缝组合。 |
+| 是否支持从匿名行为到实名行为的拼合？ | 支持。[跨渠道分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html)查看来自已通过和未通过身份验证的会话的用户数据来生成拼合 ID。 |
+| CCA 中如何进行“重放”？ | CCA会根据其发现的唯一标识符“重播”数据。 重放导致新设备连接并被拼合。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html#step-1%3A-live-stitching) |
 | 如何在 CCA 中拼合历史数据（回填）？ | 首次启用时，Adobe 提供追溯到上月初（最多 60 天）的拼合数据的回填。为实现此回填，当时的未拼合数据中必须存在过渡 ID。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html#enable-cross-channel-analytics) |
 | 未拼合的配置文件数据集记录的预期行为是什么？ | **示例场景**：使用 `CRMid` 作为人员 ID 在 CJA 连接中联接 2 个数据集。一个是 Web 事件数据集，所有记录中都包含 `CRMid`。另一个数据集是 CRM 配置文件数据集。CRM 数据集中 40% 的数据都在 Web 事件数据集中有 `CRMid`。另外 60% 的数据不在 Web 事件数据集中 - 这些记录是否显示在 Analysis Workspace 的报告中？<p> **回答**：不带关联的事件的配置文件行存储在 CJA 中。但是，您无法在 Analysis Workspace 中查看它们，直到与该 ID 关联的事件出现。 |
 
@@ -62,10 +62,7 @@ ht-degree: 100%
 
 ## 5. 设置[!UICONTROL 连接]数据保留的时段 {#data-retention}
 
->[!IMPORTANT]
->请联系客户关怀部门或您的 Adobe 客户经理来实施此设置。尚无法通过 CJA UI 访问此设置。
-
-此设置可让您在[!UICONTROL 连接]级别（而不是[!UICONTROL 数据集]级别）将 CJA 数据保留设置定义为以月计的滚动时段（3 个月、6 个月等）。数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此个人资料或查找数据集没有数据保留设置。
+的 [**[!UICONTROL 启用滚动数据窗口&#x200B;]**设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#create-connection) 允许您将CJA数据保留定义为以月（3个月、6个月等）为单位的滚动窗口。 设置为 [!UICONTROL 连接] 级别，不在 [!UICONTROL 数据集] 级别。 数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此个人资料或查找数据集没有数据保留设置。
 
 主要好处是，您只需存储或报告适用且有用的数据，并且可删除不再有用的旧数据。它可以帮助您保持在合同限制范围内，并减少超出预期成本的风险。
 
@@ -86,7 +83,7 @@ ht-degree: 100%
 
 ## 7. 在 CJA 中合并报告包时的注意事项 {#merge-reportsuite}
 
-如果打算通过 [Adobe Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans)引入 Adobe Analytics 数据，请在合并 2 个或更多 Adobe Analytics 报告包时考虑以下这些后果。
+如果打算通过 [Adobe Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)引入 Adobe Analytics 数据，请在合并 2 个或更多 Adobe Analytics 报告包时考虑以下这些后果。
 
 | 问题 | 注意事项 |
 | --- | --- |
@@ -138,9 +135,9 @@ ht-degree: 100%
 
 ## 10. 关于使用过量 {#overage}
 
-Adobe 定期监控和执行使用限制。“数据行”是指可用于在 Customer Journey Analytics 中分析的每日平均数据行数。
+Adobe 定期监控和执行使用限制。“数据行”是指可用于在Customer Journey Analytics中分析的每日平均数据行数。
 
-例如，假设您的合同授权您拥有 100 万行数据。假设在使用 Customer Journey Analytics 的第 1 天，您上传了 200 万行数据。在第 2 天，您会删除 100 万行，并在剩余的许可证期限内将使用量保持在承诺的最大值（即 100 万行数据）。根据您的合同条款，由于您超出了“数据行”许可证授权，因此您在第 1 天仍可能会收取按比例分摊的过度使用费用。
+例如，假设您的合同授权您拥有100万行数据。 假设在使用 Customer Journey Analytics 的第 1 天，您上传了 200 万行数据。在第 2 天，您会删除 100 万行，并在剩余的许可证期限内将使用量保持在承诺的最大值（即 100 万行数据）。根据您的合同条款，由于您超出了“数据行”许可证授权，因此您在第 1 天仍可能会收取按比例分摊的过度使用费用。
 
 ## 11. 诊断数据差异 {#discrepancies}
 
