@@ -4,9 +4,9 @@ description: 最新 CJA 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 source-git-commit: d2aec8976d7d81c28a6b9b76c58fec0fc2c3b360
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '432'
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 **上次更新日期**：2022 年 9 月 14 日
 
-Customer Journey Analytics版本在 [连续投放模型](releases.md) 这允许采用更具扩展性的分阶段方法来部署功能。 因此，这些发行说明每月会更新多次。 请定期查看。
+Customer Journey Analytics 版本在[持续交付模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
 ## 相关资源
 
