@@ -1,21 +1,21 @@
 ---
-title: 将Adobe解决方案与Customer Journey Analytics集成
-description: 了解如何集成来自其他Adobe解决方案和服务的数据。
+title: 将 Adobe 解决方案与 Customer Journey Analytics 集成
+description: 了解如何从其他 Adobe 解决方案和服务整合数据。
 source-git-commit: 19551e8c8f3b114b1851ed80c2b13ae29696f79d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '123'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# 将Adobe解决方案与Customer Journey Analytics集成
+# 将 Adobe 解决方案与 Customer Journey Analytics 集成
 
-Adobe提供了许多产品和解决方案，可利用Adobe Experience Platform上托管的数据。 您可以使用这些指南了解将数据导入Analysis Workspace以运行高级报表的首要工作流程。
+Adobe 提供多种产品和解决方案，可以利用托管在 Adobe Experience Platform 上的数据。可使用这些指南了解将数据引入 Analysis Workspace 以运行高级报表的首要工作流程。
 
-大多数工作流涉及以下步骤：
+大多数工作流都涉及以下步骤：
 
-1. 使用所需的解决方案或服务将数据作为数据集发送到Platform。
-2. [创建连接](/help/connections/create-connection.md) Customer Journey Analytics。
-3. [创建数据视图](/help/data-views/create-dataview.md) 包含报表中使用的所需维度和量度。
-4. 在Analysis Workspace中根据数据视图中配置的维度和量度运行报表。
+1. 使用所需的解决方案或服务将数据发送到 Platform as a Dataset。
+2. 在 Customer Journey Analytics 中用所需的数据集[创建一个连接](/help/connections/create-connection.md)。
+3. [创建一个数据视图](/help/data-views/create-dataview.md)，其中包含要在报表中使用的维度和量度。
+4. 根据在该数据视图中配置的维度和量度在 Analysis Workspace 中运行报表。
