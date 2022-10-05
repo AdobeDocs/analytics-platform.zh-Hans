@@ -7,12 +7,12 @@ solution: Customer Journey Analytics
 type: Documentation
 index: true
 user-guide-title: Customer Journey Analytics 指南
-user-guide-description: 本指南为 Customer Journey Analytics 提供支持，这是 Adobe 的新一代跨渠道分析解决方案，基于 Adobe Experience Platform。
+user-guide-description: 了解Customer Journey Analytics(CJA)以及如何将Analysis Workspace与Experience Platform中的数据结合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: d87f9bc1c7a993772da56ee1165ea0e9804bd5ff
+source-git-commit: 33451b21024d5cd861ccf0cc92f492fb7749e938
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 100%
+source-wordcount: '770'
+ht-degree: 97%
 
 ---
 
@@ -230,8 +230,8 @@ ht-degree: 100%
    + [设置执行用户以使用功能板](../mobile-app/set-up-execs.md)
    + [执行用户快速入门指南](../mobile-app/executive.md)
 + Adobe 集成 {#integrations}
-   + [关于将 Adobe 解决方案与 CJA 集成的概述](..//help/integrations/overview.md)
-   + [将 Journey Optimizer 数据与 CJA 集成](..//help/integrations/ajo.md)
+   + [关于将 Adobe 解决方案与 CJA 集成的概述](/help/integrations/overview.md)
+   + [将 Journey Optimizer 数据与 CJA 集成](/help/integrations/ajo.md)
 + 用例 {#cja-usecases}
    + [Customer Journey Analytics 用例](../use-cases/cja-usecases.md)
    + Google Analytics 数据{#ga}

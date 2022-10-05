@@ -4,7 +4,7 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: fa86c113de8cf533e7b68df1aad7ac02aa60f7e8
+source-git-commit: 3b89c88186b27148ba7d0cdee77cd60699b7161f
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 94%
@@ -21,7 +21,7 @@ CJA 文档自创建以来进行了以下更新。
 | --- | --- |
 | 2022 年 10 月 | 新主题 [关键量度摘要](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html?lang=en) 可视化图表。 |
 | 2022 年 10 月 | 新增了 [数据视图中的日期和日期时间功能](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#date) |
-| 2022 年 10 月 | 移动设备应用程序：新主题 [自定义详细信息视图](https://experienceleague.corp.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html?lang=en#view-detail-slides). |
+| 2022 年 10 月 | 移动设备应用程序：新主题 [自定义详细信息视图](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html?lang=en#view-detail-slides). |
 | 2022 年 9 月 | [将 Google Analytics 数据迁移到 CJA](/help/use-cases/ga/overview.md) 的新用例。 |
 | 2022 年 9 月 | Workspace 中[组合图表](/help/analysis-workspace/visualizations/combo-charts.md)的新主题。 |
 | 2022 年 9 月 | 有关工作区中[实验面板](/help/analysis-workspace/c-panels/experimentation.md)的新主题。 |
