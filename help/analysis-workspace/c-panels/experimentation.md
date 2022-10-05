@@ -3,18 +3,14 @@ description: 了解如何在 CJA 试验面板中分析 A/B 测试结果。
 title: 试验性面板
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 3c108836e72cb85e0f9c379d7c945f867fb09699
+source-git-commit: 967348b321525c50b292339de875fd4976d8b10a
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 98%
+source-wordcount: '1393'
+ht-degree: 100%
 
 ---
 
 # 试验性面板
-
->[!NOTE]
->
->此功能当前正在进行[小范围测试](/help/release-notes/releases.md)。
 
 通过&#x200B;**[!UICONTROL 试验]**&#x200B;面板，分析师可以比较不同的用户体验、营销或消息传递方面的变化，以确定哪一种最能推动特定结果。您可以从任何试验平台来源评估任何 A/B 试验的提升和置信度：在线、离线、Adobe 解决方案、Adobe Journey Optimizer 甚至 BYO（自带）数据。 
 
@@ -104,10 +100,10 @@ ht-degree: 98%
 
 为了提供易于解释且安全的统计推断，Adobe 采用了基于[随时有效置信序列（Anytime Valid Confidence Sequences）](https://doi.org/10.48550/arXiv.2103.06476)的统计方法。
 
-置信序列是置信区间的“顺序”模拟。为了理解置信序列的含义，请设想对&#x200B;*每个进入试验的新用户*&#x200B;重复 100 次实验的情况，并计算平均业务量度（例如电子邮件的打开率）的估计值及其相关的 95% 置信序列。
+置信序列是置信区间的“顺序”模拟。为了理解置信序列的含义，请设想对&#x200B;*每个进入试验的新用户*&#x200B;重复 100 次实验的情况，并计算平均业务指标（例如电子邮件的打开率）的估计值及其相关的 95% 置信序列。
 
 95% 置信度序列将包括您运行的 100 次实验中的 95 次实验中业务量度的“真”值。（每个试验只能计算一次 95% 置信区间，以提供相同的 95% 覆盖率保证；而不是计算每个新用户）。因此，通过使用置信序列，您可以连续监控试验，而不会增加假阳性错误率，即这些序列允许“窥视”结果。
 
-## 计算量度中的新函数
+## 计算指标中新增了函数
 
-新增了两个高级功能： [!UICONTROL 提升度] 和 [!UICONTROL 置信度]. 有关更多信息，请参阅 [引用 — 高级函数](/help/components/calc-metrics/cm-adv-functions.md).
+添加了两个新的高级函数：[!UICONTROL 提升]和[!UICONTROL 置信度]。有关详细信息，请参阅[参考 - 高级函数](/help/components/calc-metrics/cm-adv-functions.md)。
