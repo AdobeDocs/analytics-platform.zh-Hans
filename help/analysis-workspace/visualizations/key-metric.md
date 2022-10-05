@@ -4,18 +4,14 @@ title: 关键量度摘要
 feature: Visualizations
 role: User, Admin
 exl-id: c74e77ff-15d6-48f1-a845-85bdf3444c3a
-source-git-commit: 6238a3b2239a20aaedbec5e5603d0c72bb4ae463
-workflow-type: ht
-source-wordcount: '605'
+source-git-commit: fa86c113de8cf533e7b68df1aad7ac02aa60f7e8
+workflow-type: tm+mt
+source-wordcount: '598'
 ht-degree: 100%
 
 ---
 
 # 关键量度摘要
-
->[!NOTE]
->
->此功能当前正在进行[小范围测试](/help/release-notes/releases.md)。
 
 [!UICONTROL 关键量度摘要]可视化让您看到重要量度在单个时间范围内的趋势。 它还允许您在两个时间范围内比较量度表现。 它还具备将多个可视化图表组合为一个可视化图表的优点：
 
