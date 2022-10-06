@@ -5,9 +5,9 @@ feature: Visualizations
 role: User, Admin
 exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
 source-git-commit: 8cc4fc0cd2a6c5b6b895e56bbb7922caba56d9ae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '776'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -23,11 +23,11 @@ ht-degree: 97%
 
 请牢记这一点：
 
-* 您可以在一个中添加多个比较 [!UICONTROL 组合图].
+* 您可以在单个[!UICONTROL 组合图表]中添加多个比较。
 * 如果添加一个或多个比较，则它们必须是同一类型，例如[!UICONTROL 时间比较]。
 * 最多可添加 5 个比较。
 * 您最多可以为一个量度应用 3 个过滤器（区段）。
-* 组合图中不支持计算量度。
+* 组合图表中不支持计算指标。
 
 ## 构建组合图表
 
