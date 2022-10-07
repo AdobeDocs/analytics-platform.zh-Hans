@@ -7,12 +7,12 @@ solution: Customer Journey Analytics
 type: Documentation
 index: true
 user-guide-title: Customer Journey Analytics 指南
-user-guide-description: 了解Customer Journey Analytics(CJA)以及如何将Analysis Workspace与Experience Platform中的数据结合使用。
+user-guide-description: 了解 Customer Journey Analytics (CJA) 以及如何将 Analysis Workspace 用于来自 Experience Platform 的数据。
 breadcrumb-title: Customer Journey Analytics 指南
 source-git-commit: 33451b21024d5cd861ccf0cc92f492fb7749e938
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '770'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -124,7 +124,7 @@ ht-degree: 97%
       + [面板概述](../analysis-workspace/c-panels/panels.md)
       + [归因面板](../analysis-workspace/c-panels/attribution.md)
       + [空白面板](../analysis-workspace/c-panels/blank-panel.md)
-      + [试验性面板](../analysis-workspace/c-panels/experimentation.md)
+      + [“试验”面板](../analysis-workspace/c-panels/experimentation.md)
       + [“自由格式”面板](../analysis-workspace/c-panels/freeform-panel.md)
       + [“快速分析”面板](../analysis-workspace/c-panels/quickinsight.md)
       + [“媒体并行查看者”面板](../analysis-workspace/c-panels/media-concurrent-viewers.md)
