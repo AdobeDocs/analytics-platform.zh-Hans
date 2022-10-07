@@ -5,9 +5,9 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: 0113bd3157c147a3d39aead3fc686d114925f476
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1294'
+ht-degree: 100%
 
 ---
 
@@ -87,21 +87,21 @@ f. 指定“50”为值。
 有关数据视图设置的更多信息，请参阅[创建数据视图](/help/data-views/create-dataview.md)。
 有关数据视图的概念性概述，请参阅[数据视图概述](/help/data-views/data-views.md)。
 
-## 7.新会议和回会报告 {#new-repeat}
+## 7. 新会话和回归会话报表 {#new-repeat}
 
-您可以根据您为此数据视图定义的报告时间范围和13个月的回顾时间范围，确定会话是否确实是用户的第一个会话或回访会话。 该报告允许您确定，例如：
+可根据为此数据视图定义的报表时段和 13 个月回溯时段确定某个会话到底是某个用户有史以来的第一个会话还是回归会话。通过此报表可确定，例如：
 
-* 您的订单中来自新会话或回访会话的百分比是多少？
+* 您的订单中有多大百分比来自新会话或回归会话？
 
-* 对于给定的营销渠道或特定的营销活动，您的目标是首次用户还是回头用户？ 该选择如何影响转化率？
+* 对于给定的营销渠道或特定的营销活动，您是面向首次访问的用户还是回归用户？此选择如何影响转化率？
 
-一个维度和两个量度可促进此报表：
+有一个维度和两个指标可简化此报表：
 
-* [会话类型](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=zh-Hans#optional)  — 此维度有两个值：1) [!UICONTROL 新建] 和2) [!UICONTROL 返回]. [!UICONTROL 新的]行项目包括已确定为个人的首次会话的所有行为（即针对该维度的量度）。 其他所有内容都包含在[!UICONTROL 返回]的行项目中（假设所有内容都属于一个会话）。 如果量度不是任何会话的一部分，则它们属于该维度的“不适用”范围。 
+* [会话类型](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=zh-Hans#optional) - 此维度有两个值：1) [!UICONTROL New] 和 2) [!UICONTROL Returning]。[!UICONTROL 新的]行项目包括已确定为个人的首次会话的所有行为（即针对该维度的量度）。 其他所有内容都包含在[!UICONTROL 返回]的行项目中（假设所有内容都属于一个会话）。 如果量度不是任何会话的一部分，则它们属于该维度的“不适用”范围。 
 
-* [新会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional)。新会话量度被定义为人员在报告窗口中定义的第一个会话。
+* [新会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=zh-Hans#optional)。新会话指标被定义为某人在报表时段内定义的首个会话。
 
-* [返回会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) “回访会话数”量度是指非人员首次会话的会话数。—>
+* [回归会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=zh-Hans#optional)回归会话指标是并非某人第一会话的会话数。-->
 
 要访问这些组件，请执行以下操作：
 
@@ -115,7 +115,7 @@ f. 指定“50”为值。
 
 * 当会话跨越回看窗口和报告窗口时。 假设您从 2022 年 6 月 1 日到 6 月 15 日运行报告。 回看窗口将涵盖 2021 5 月 1 日至 2022 年 5 月 31 日。 如果会话从 2022 年 5 月 30 日开始，到 2022 年 6 月 1 日结束，因为该会话包含在回看窗口中，则报告窗口中的所有会话都被视为返回会话。
 
-## 8.使用日期和日期时间功能 {#date}
+## 8. 使用日期和日期时间功能 {#date}
 
 Adobe Experience Platform 中的架构包含[!UICONTROL 日期]和[!UICONTROL 日期时间]字段。 CJA 数据视图现在支持这些字段。 将这些字段作为维度拖动到数据视图中时，可以指定其[格式](/help/data-views/component-settings/format.md)。 此格式设置确定字段在报告中的显示方式。 例如：
 
