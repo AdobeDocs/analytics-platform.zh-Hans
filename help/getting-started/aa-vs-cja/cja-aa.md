@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
 source-git-commit: 57d1f48c363bda93b4b28425794a55ef269b31c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1535'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -44,31 +44,31 @@ ht-degree: 81%
 | 区段 | 全面支持；现在称为“过滤器”- 请注意，传统分析工作区中的任何现有区段都不会移植到 CJA。 |
 | 虚拟报表包 | 全面支持；现在称为[数据视图](/help/data-views/create-dataview.md)。 |
 | VRS 组件管理 | 全面支持；现在是数据视图的一部分。 |
-| 流 Media Analytics | 在工作区中，可以使用Analytics Data Connector作为“媒体并行查看者”面板和“媒体播放逗留时间”面板的一部分来使用媒体数据。 |
+| 流 Media Analytics | 使用作为 Workspace 中的“同时观看媒体的人数”面板和“媒体播放耗时”面板一部分的 Analytics Data Connector 即可获得媒体数据。 |
 
 {style=&quot;table-layout:auto&quot;}
 
-## 以新方式受支持
+## 以新方式支持
 
 | 功能 | 注释 |
 | --- | --- |
-| 受众发布（区段发布） | 受支持(如果通过Adobe的客户数据平台或Journey Optimizer产品获得许可)。 [受众发布](/help/components/audiences/audiences-overview.md)功能将受众发送到 Experience Platform 的实时客户个人资料中。 |
+| 受众发布（区段发布） | 如果与 Adobe 的客户数据平台或 Journey Optimizer 产品一起获得许可即支持。[受众发布](/help/components/audiences/audiences-overview.md)将受众发送到 Experience Platform 中的 Real-time Customer Profile。 |
 | 分类 | 现在称为“查找数据集”。Analytics 中使用的分类可以通过分析分类源连接器导入到 Experience Platform 和 CJA。 查找数据集也可以直接上传到 AEP 并在 CJA 中可用。 |
-| 分类规则生成器 | 支持使用 [子字符串](/help/data-views/component-settings/substring.md) 在CJA中。 在报表时使用字符串操作，而不是查找数据集。 |
+| 分类规则生成器 | 通过 CJA 中的[子字符串](/help/data-views/component-settings/substring.md)支持。在报表时使用字符串操作，而不使用查找数据集。 |
 | 自定义会话流程 | 支持除移动后台点击之外的所有自定义会话流程功能。 |
-| 促销变量持久性 | 通过[绑定维度和绑定量度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension)提供全面支持 |
+| 促销变量持久性 | 通过[绑定维度和绑定量度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=zh-Hans#binding-dimension)提供全面支持 |
 | 客户属性 | 现在称为“个人资料数据集”，它们不会从 Experience Cloud 自动导入，而是必须先上传到 AEP，然后才可在 CJA 中使用。 |
-| 量度去重 | 现在，已在数据视图内的量度上进行配置。 量度重复数据删除在人员或会话级别进行，而不是在数据集、数据视图或连接级别进行。 |
+| 指标去重 | 现在对数据视图中的指标配置此项。在人员或会话级别，而非数据集、数据视图或连接级别进行指标去重。 |
 | 登录、退出和花费时间维度和量度 | 受支持（现在“进入次数”和“退出次数”称为“会话启动次数”和“会话结束次数”），但计算方式略有不同。 |
 | eVar 持久性设置 | eVar 不再是 CJA 的一部分。但是，持久性设置现在是数据视图的一部分，且可用于所有维度。请记住，持久基于报表时间处理，而不是数据收集处理。数据视图中的纬度集限制为 90 天最大持久性，不支持无限持久性。 |
 | IP 模糊处理 | 使用 Analytics Source Connector 将数据从 Adobe Analytics 填充到 CJA 中的 CJA 客户：Adobe Analytics 中应用的 IP 混淆设置将流入您的 CJA 数据中。您可以根据需要在 Adobe Analytics 中控制这些设置。<p>对于使用 Adobe Experience Platform Web SDK 将数据直接填充到平台和 CJA 中的 CJA 客户：您可以使用数据准备在 Platform 中进行数据收集，以根据公司的要求配置混淆 IP 地址的规则。  |
-| 新的与重复的会话报告 | 以前使用访问数量维度完成。 支持新会话与重复会话 [具有13个月的回顾窗口](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat). |
+| 新会话报表与重复会话报表 | 以前使用“访问次数”维度实现。新会话与重复会话均支持 [13 个月的回溯时段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat)。 |
 | 产品变量 | 在该 Experience Platform 中，用户可以在数据集架构中使用“对象”类型字段的数组来满足此用例。在 CJA 内，客户能够使用任意数量的产品变量，不像在 Adobe Analytics 中一样仅限使用单个变量。 |
 | 项目共享 | 仅支持在 CJA 用户之间共享项目，不支持 CJA 与传统分析工作区之间共享项目。 |
 | 可视化图表 | 除地图可视化图表外，支持所有可视化图表。 |
-| Report Builder（Excel 插件） | 新的Office 365插件支持此功能。 |
-| 用户权限/数据访问控制 | CJA区分 [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=zh-Hans) 产品管理员、产品配置文件管理员和用户。 只有产品管理员才能创建/更新/删除其他用户创建的连接、项目、过滤器或计算量度，而产品管理员和产品配置文件管理员则可以编辑数据视图。 其他用户权限可用于创建计算量度、过滤器或注释等内容。 |
-| 处理规则、VISTA 规则、营销渠道处理规则 | 支持对基于WebSDK的数据集以及来自Analytics Data Connector的数据使用Adobe Experience Platform数据准备功能。 |
+| Report Builder（Excel 插件） | 通过 Office 365 中的新 Excel 插件支持。 |
+| 用户权限/数据访问控制 | CJA 区分 [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=zh-Hans) 产品管理员、产品配置文件管理员和用户。只有产品管理员可创建/更新/删除由其他用户创建的连接、项目、过滤器或计算指标，而产品管理员和产品配置文件管理员可编辑数据视图。还可为创建计算指标、过滤器或注释等操作提供其他用户权限。 |
+| 处理规则、VISTA 规则、营销渠道处理规则 | 对基于 WebSDK 的数据集和来自 Analytics Data Connector 的数据都使用 Adobe Experience Platform 数据准备功能时支持。 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -76,33 +76,33 @@ ht-degree: 81%
 
 | 功能 | 注释 |
 | --- | --- |
-| 营销渠道 | 营销渠道数据通过 Analytics Source Connector 流入 CJA。营销渠道规则仍必须在传统Adobe Analytics中配置，并且某些规则不受支持。 有关更多详细信息，请参阅 [CJA 营销渠道文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=zh-Hans#cja-usecases)。此外，对于WebSDK实施，还提供了用于定义客户端营销渠道的插件。 计划将来支持报告时营销渠道处理规则。 |
-| 跨设备/跨渠道拼接 | 支持直接包含身份信息的数据集（即“基于字段”的拼合）；目前尚不支持基于图形的拼合，但已计划进行拼合。 请参阅[跨渠道分析](/help/connections/cca/overview.md)。 |
+| 营销渠道 | 营销渠道数据通过 Analytics Source Connector 流入 CJA。仍必须在传统 Adobe Analytics 中配置营销渠道规则，并且不支持某些规则。有关更多详细信息，请参阅 [CJA 营销渠道文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=zh-Hans#cja-usecases)。此外，对于 WebSDK 实施，还提供在客户端定义营销渠道的插件。有计划以后支持报表时间营销渠道处理规则。 |
+| 跨设备/跨渠道拼接 | 对于直接包含身份信息的数据集（也称为“基于字段的”拼接）支持；尚不支持基于图形的拼接，但已有计划要支持。请参阅[跨渠道分析](/help/connections/cca/overview.md)。 |
 | 机器人筛选 | 对于基于 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 的数据集，将应用机器人筛选。[!UICONTROL Experience Platform] 或 CJA 不会对其他数据集应用常规机器人筛选逻辑。 |
-| 设备、浏览器、反向链接、技术维度 | 支持 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)基于的数据集。 请参阅我们的[关于通过 ADC 支持哪些 Analytics 变量的文档](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=zh-Hans)。<p>如果您未使用 Adobe Source Connector 将数据从 Adobe Analytics 填充到 CJA 中，而是使用 Experience Platform Web SDK 数据收集，则当前不支持基于设备查找的设备和维度。计划将来支持。 |
-| 地理分段维度 | 收集到 Adobe Analytics 的所有地理分段/地理位置通过 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) 流入 CJA。对于不使用 Analytics Source Connector 的实施，例如那些依赖 AEP Web SDK 进行数字数据收集的实施，将不会自动执行完整的地理查找功能：全球支持国家和州，但不支持城市和邮政编码。 |
+| 设备、浏览器、反向链接、技术维度 | 对于基于 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 的数据集支持。请参阅我们的[关于通过 ADC 支持哪些 Analytics 变量的文档](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=zh-Hans)。<p>如果您未使用 Adobe Source Connector 将数据从 Adobe Analytics 填充到 CJA 中，而是使用 Experience Platform Web SDK 数据收集，则当前不支持基于设备查找的设备和维度。有计划以后支持。 |
+| 地理分段维度 | 收集到 Adobe Analytics 的所有地理分段/地理位置通过 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 流入 CJA。对于不使用 Analytics Source Connector 的实施，例如那些依赖 AEP Web SDK 进行数字数据收集的实施，将不会自动执行完整的地理查找功能：全球支持国家和州，但不支持城市和邮政编码。 |
 | 面板 | 完全支持“空白面板”、“归因面板”、“快速分析面板”。不支持“区段比较面板”和“Analytics for Target (A4T) 面板”。 |
 | 处理规则 | 对于基于 Analytics Source Connector 的数据集，仍会应用处理规则。[Adobe Experience Platform 中的数据准备功能](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)也可以取代处理将直接进入 Platform 的数据的规则。 |
-| A4T | 部分支持通过 [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). 计划在Target活动和体验中支持A4T友好名称。 |
+| A4T | 通过 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 中的字段提供部分支持。有计划在 Target 活动和体验上支持适合 A4T 的名称。 |
 
 {style=&quot;table-layout:auto&quot;}
 
-## 目前不支持，但计划将会提供支持
+## 目前不支持，但有计划要支持
 
 | 功能 | 注释 |
 | --- | --- |
-| 警报 | 计划将会提供支持。 |
-| 贡献分析 | 计划将会提供支持。 |
+| 警报 | 有计划要支持。 |
+| 贡献分析 | 有计划要支持。 |
 | Data Warehouse 报告（100% 行导出） | 计划从分析工作区界面提供支持。Adobe Experience Platform [[!UICONTROL 查询服务]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans)还为 CJA 中的这些用例提供接口。 |
-| 通过设备图形进行 ID 拼接 | 计划将会提供支持。 |
-| 项目模板 | 计划将会提供支持。 |
-| 实时报告 | 计划将会提供支持。 |
-| 区段 IQ | 计划将会提供支持。 |
-| 货币换算 | 计划将会提供支持。 |
-| 数据馈送 | 计划通过AEP目标提供支持。 |
-| 交易 ID 数据源 | 计划将会提供支持。 |
-| 将项目/过滤器/计算量度从AA迁移到CJA | 计划将会提供支持。 |
-| 概要级别数据源 | 计划将会提供支持。 |
+| 通过设备图形进行 ID 拼接 | 有计划要支持。 |
+| 项目模板 | 有计划要支持。 |
+| 实时报告 | 有计划要支持。 |
+| 区段 IQ | 有计划要支持。 |
+| 货币换算 | 有计划要支持。 |
+| 数据馈送 | 有计划通过 AEP 目标支持。 |
+| 交易 ID 数据源 | 有计划要支持。 |
+| 将项目/过滤器/计算指标从 AA 迁移到 CJA | 有计划要支持。 |
+| 摘要级别数据源 | 有计划要支持。 |
 
 {style=&quot;table-layout:auto&quot;}
 
