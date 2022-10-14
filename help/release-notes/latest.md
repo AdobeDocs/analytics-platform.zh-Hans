@@ -4,9 +4,9 @@ description: 最新 CJA 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 source-git-commit: ed5b1a233dc0e4cbfe223fe71e6e1960efba0592
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '517'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Customer Journey Analytics 版本在[持续交付模型](releases.md)上运行�
 
 * [Adobe Experience Cloud 发行说明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
 
-## 主要功能和更新
+## 主要功能及更新
 
 | 功能 | 描述 | [预定日期](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
@@ -34,7 +34,7 @@ Customer Journey Analytics 版本在[持续交付模型](releases.md)上运行�
 | **[!UICONTROL 关键指标摘要]可视化** | 通过[!UICONTROL 关键指标摘要]可视化，可了解某个重要的指标在单个时间范围内的趋势如何。通过它，还可比较指标在两个时间范围内的表现。了解详情 | 已从 2022 年 10 月 5 日开始分阶段推出 |
 | **CJA 中的日期字段支持** | 允许 CJA 报告日期和日期时间字段。 [了解详情](/help/data-views/data-views-usecases.md#date) | 2022 年 10 月 5 日 |
 | **移动应用程序：自定义详细信息视图** | 通过自定义详细信息视图，可通过让受众关注最重要的内容而使与受众共享的信息更有针对性。可更改与每个记分卡图块关联的详细视图的布局，并可添加文本以更好地解释最终用户可能在数据中看到的内容。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=zh-Hans) | 2022 年 10 月 5 日 |
-| **不区分大小写的多值变量** | 对于不区分大小写的多值变量， `mvvar1` - `mvvar3` 将不再自动转换为小写。 相反，通过Analytics源连接器传递到Adobe Experience Platform和CJA的数据将反映从页面传入的原始大小写。 | 2022 年 10 月 24 日 |
+| **不区分大小写的多值变量** | 对于不区分大小写的多值变量，存储在 `mvvar1` 至 `mvvar3` 中的值将不再自动变为小写。而是通过 Analytics Source Connector 传递到 Adobe Experience Platform 和 CJA 的数据将反映从页面传入的原有大小写形式。 | 2022 年 10 月 24 日 |
 
 {style=&quot;table-layout:auto&quot;}
 
