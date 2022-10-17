@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 93690a3351f2dca0b3a68e7eea7fb64c581d2d53
-workflow-type: ht
-source-wordcount: '1333'
-ht-degree: 100%
+source-git-commit: 87d0dd37c9fc9e32e46b7c6a104301f23a2ff652
+workflow-type: tm+mt
+source-wordcount: '1334'
+ht-degree: 97%
 
 ---
 
@@ -103,7 +103,7 @@ Adobe Analytics 区段（在 CJA 中称为[!UICONTROL 过滤器]）和计算量�
 
 * [将 Adobe Analytics 区段迁移到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html)
 
-* [将计算量度从 Adobe Analytics 移动到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=zh-Hans)
+* [将计算量度从 Adobe Analytics 移动到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en)
 
 ### 其他注意事项
 
