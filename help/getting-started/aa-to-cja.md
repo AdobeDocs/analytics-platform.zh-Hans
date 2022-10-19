@@ -1,18 +1,18 @@
 ---
-title: Adobe Analytics到Customer Journey Analytics的演变
+title: Adobe Analytics 到 Customer Journey Analytics 的演变
 description: 将Adobe Analytics数据转换为Customer Journey Analytics数据的步骤
 role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: 87d0dd37c9fc9e32e46b7c6a104301f23a2ff652
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1334'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Adobe Analytics到Customer Journey Analytics的演变
+# Adobe Analytics 到 Customer Journey Analytics 的演变
 
 随着贵组织不断发展使用Customer Journey Analytics，请探索这些步骤以准备数据并了解这两种技术之间的关键差异。 本文针对管理员受众。
 
@@ -39,7 +39,7 @@ ht-degree: 97%
 
 * 提前规划以使这些报表包中的变量保持一致。 例如，报表包 1 中的 eVar1 可能指向[!UICONTROL 页面]。在报表包 2 中，eVar1 可能指向[!UICONTROL 内部营销活动]。当被引入 CJA 时，这些变量将混合到一个单一的 eVar1 维度中，从而导致潜在的混乱和不准确的报告。
 
-* 使用 [日期准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) 功能来映射变量。 虽然如果所有报表包都使用相同的常用变量设计，这样会更轻松，但是如果您使用新Experience Platform，则无需使用 [数据准备](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html#mapping) 功能。 它允许您通过变量的映射值(位于数据流（或属性）级别)引用变量。
+* 使用 [日期准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) 功能来映射变量。 虽然如果所有报告包都使用相同的常用变量设计，这样会更轻松，但是如果您使用新 Experience Platform [数据准备](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html#mapping)功能，则无需这样做。它允许您通过变量的映射值(位于数据流（或属性）级别)引用变量。
 
 如果您因为 [!UICONTROL Uniques Exceeded] 或 [!UICONTROL Low Traffic] 问题而无法迁移到全局报表包，请了解 CJA [对维度没有基数限制](/help/components/dimensions/high-cardinality.md)。它允许出现并计算任何唯一值。
 
@@ -103,7 +103,7 @@ Adobe Analytics 区段（在 CJA 中称为[!UICONTROL 过滤器]）和计算量�
 
 * [将 Adobe Analytics 区段迁移到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html)
 
-* [将计算量度从 Adobe Analytics 移动到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en)
+* [将计算量度从 Adobe Analytics 移动到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=zh-Hans)
 
 ### 其他注意事项
 
