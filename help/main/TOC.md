@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Customer Journey Analytics (CJA) 以及如何将 Analysis Workspace 用于来自 Experience Platform 的数据。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 317e45146d493f969176bc026590fa894b4d7fb1
-workflow-type: ht
-source-wordcount: '776'
-ht-degree: 100%
+source-git-commit: f70dafa93ec22a0ef876052fbef4c9a67835d292
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -79,6 +79,12 @@ ht-degree: 100%
    + 项目 {#build-workspace-project}
       + [项目概述](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [保存项目](../analysis-workspace/build-workspace-project/save-projects.md)
+      + 工作区中的文件夹 {#workspace-folders}
+         + [关于工作区中的文件夹](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+         + [创建文件夹](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+         + [添加项目](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
+         + [删除项目](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
+         + [保存新项目](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
       + [热键（快捷方式）](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [调色板](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [视图密度](../analysis-workspace/build-workspace-project/view-density.md)

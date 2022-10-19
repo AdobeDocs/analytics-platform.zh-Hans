@@ -3,16 +3,16 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新 CJA 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: ed5b1a233dc0e4cbfe223fe71e6e1960efba0592
-workflow-type: ht
-source-wordcount: '517'
-ht-degree: 100%
+source-git-commit: 785ea95049135adef888c20a6d9fef9f31439a7d
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Customer Journey Analytics (CJA) 发行说明（2022 年 10 月）
 
-**上次更新时间**：2022 年 10 月 13 日
+**上次更新时间**：2022 年 10 月 18 日
 
 Customer Journey Analytics 版本在[持续交付模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
@@ -30,6 +30,7 @@ Customer Journey Analytics 版本在[持续交付模型](releases.md)上运行�
 
 | 功能 | 描述 | [预定日期](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
+| **工作区项目中的文件夹** | 工作区项目中的文件夹可帮助用户使用文件夹来组织和分类其项目，以便更好地检索和访问。 通过共享公司文件夹，管理员可以轻松创建内容并与所有工作区用户共享内容 [了解更多](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md) | 2022 年 10 月 19 日 |
 | **“试验”面板** | 通过这个新的“工作区”面板，CJA 用户可从在线、离线、从 Adobe 解决方案、Adobe Journey Optimizer 甚至 BYO 数据等任何来源评估任何 A/B 试验的提升和置信度。[了解详情](/help/analysis-workspace/c-panels/experimentation.md) | 2022 年 10 月 5 日 |
 | **[!UICONTROL 关键指标摘要]可视化** | 通过[!UICONTROL 关键指标摘要]可视化，可了解某个重要的指标在单个时间范围内的趋势如何。通过它，还可比较指标在两个时间范围内的表现。了解详情 | 已从 2022 年 10 月 5 日开始分阶段推出 |
 | **CJA 中的日期字段支持** | 允许 CJA 报告日期和日期时间字段。 [了解详情](/help/data-views/data-views-usecases.md#date) | 2022 年 10 月 5 日 |
