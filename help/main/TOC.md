@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Customer Journey Analytics (CJA) 以及如何将 Analysis Workspace 用于来自 Experience Platform 的数据。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: f70dafa93ec22a0ef876052fbef4c9a67835d292
+source-git-commit: d11a1cf98999c5797ab456bd547c065a5103b068
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '799'
+ht-degree: 97%
 
 ---
 
@@ -81,7 +81,7 @@ ht-degree: 0%
       + [保存项目](../analysis-workspace/build-workspace-project/save-projects.md)
       + 工作区中的文件夹 {#workspace-folders}
          + [关于工作区中的文件夹](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
-         + [创建文件夹](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+         + [创建文件夹和子文件夹](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [添加项目](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
          + [删除项目](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
          + [保存新项目](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
@@ -260,6 +260,7 @@ ht-degree: 0%
    + [Labs 用户指南](../labs/labs.md)
 + 故障排除 {#troubleshooting}
    + [将 Adobe Analytics 数据与 CJA 数据进行比较](../troubleshooting/compare.md)
-+ 隐私权 {#cja-privacy}
++ 数据管理 {#cja-privacy}
+   + [审核日志](../privacy/audit-log.md)
    + [数据管理](../privacy/privacy-overview.md)
 + [CJA API](https://developer.adobe.com/cja-apis/docs/)
