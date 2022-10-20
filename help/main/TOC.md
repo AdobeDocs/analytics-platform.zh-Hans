@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Customer Journey Analytics (CJA) 以及如何将 Analysis Workspace 用于来自 Experience Platform 的数据。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: d11a1cf98999c5797ab456bd547c065a5103b068
+source-git-commit: dc75ed818b2760e9cd19fdcd427fe752f829aef0
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 97%
+source-wordcount: '797'
+ht-degree: 99%
 
 ---
 
@@ -72,18 +72,18 @@ ht-degree: 97%
    + [标准组件参考](../data-views/component-reference.md)
    + [数据视图用例](../data-views/data-views-usecases.md)
    + [标签和策略](../data-views/data-governance.md)
-+ 工作区项目 {#cja-workspace}
++ Workspace 项目 {#cja-workspace}
    + [Analysis Workspace 概述](../analysis-workspace/home.md)
    + [执行基本分析](../analysis-workspace/perform-basic-analysis.md)
    + [执行高级分析](../analysis-workspace/perform-adv-analysis.md)
    + 项目 {#build-workspace-project}
       + [项目概述](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [保存项目](../analysis-workspace/build-workspace-project/save-projects.md)
-      + 工作区中的文件夹 {#workspace-folders}
-         + [关于工作区中的文件夹](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
-         + [创建文件夹和子文件夹](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+      + Workspace 中的文件夹 {#workspace-folders}
+         + [关于 Workspace 中的文件夹 ](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+         + [创建文件夹 和子文件夹](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [添加项目](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
-         + [删除项目](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
+         + [移除项目](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
          + [保存新项目](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
       + [热键（快捷方式）](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [调色板](../analysis-workspace/build-workspace-project/color-palettes.md)
@@ -98,7 +98,7 @@ ht-degree: 97%
             + [行设置](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [动态项和静态项](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
          + [对表格进行分页、过滤和排序](../analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md)
-         + [工作区总计](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+         + [Workspace 总计](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + 同类群组表 {#cohort-table}
          + [什么是同类群组分析？](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [配置同类群组分析报告](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
@@ -159,7 +159,7 @@ ht-degree: 97%
          + [在 Analysis Workspace 中查看异常](../analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
          + [异常检测中使用的统计技术](../analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
    + [用户首选项](../analysis-workspace/user-preferences.md)
-   + 工作区常见问题解答 {#workspace-faq}
+   + Workspace 常见问题解答 {#workspace-faq}
       + [常见问题解答](../analysis-workspace/workspace-faq/faq.md)
       + [优化 Analysis Workspace 性能](../analysis-workspace/workspace-faq/optimizing-performance.md)
       + [错误消息](../analysis-workspace/workspace-faq/error-messages.md)
@@ -261,6 +261,5 @@ ht-degree: 97%
 + 故障排除 {#troubleshooting}
    + [将 Adobe Analytics 数据与 CJA 数据进行比较](../troubleshooting/compare.md)
 + 数据管理 {#cja-privacy}
-   + [审核日志](../privacy/audit-log.md)
    + [数据管理](../privacy/privacy-overview.md)
 + [CJA API](https://developer.adobe.com/cja-apis/docs/)

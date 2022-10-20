@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: 8262d7f0ec56a792bfcd8fe94b7f7685ee5b5438
+source-git-commit: ee3196b78e1cf613446840e8cde1fac565d0f2b7
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 98%
+source-wordcount: '936'
+ht-degree: 96%
 
 ---
 
@@ -53,7 +53,7 @@ Customer Journey Analytics 中的用户无法创建、编辑或查看数据视�
 
 ## 授予对单个量度或维度的访问权限
 
-您不能像在传统的 Adobe Analytics 中那样，在 Customer Journey Analytics 中授予或拒绝对单个量度或维度的权限。 量度和维度可以在[数据视图](/help/data-views/data-views.md)中修改，因此可能会在 CJA 中出现更改。更改它们也会追溯性地更改报告。
+您无法像在传统Adobe Analytics中一样，在Customer Journey Analytics中授予或拒绝单个量度或维度的权限。 量度和维度可以在[数据视图](/help/data-views/data-views.md)中修改，因此可能会在 CJA 中出现更改。更改它们也会追溯性地更改报告。
 
 ## 用例
 
@@ -88,7 +88,7 @@ Customer Journey Analytics 中的用户无法创建、编辑或查看数据视�
 | --- | --- |
 | **[!UICONTROL 数据视图]** | 如果您将&#x200B;**[!UICONTROL 自动包含]**&#x200B;切换到&#x200B;**[!UICONTROL 开启]**，则属于此产品配置文件的用户可以查看所有现有和新创建的数据视图。如果此设置被设置为&#x200B;**[!UICONTROL 关闭]**，则可以选择用户有权访问的特定数据视图。 |
 | **[!UICONTROL 报告工具]**： |  |
-| **[!UICONTROL 审核日志访问]** | 此权限强制对 [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) 和 [审核日志UI](/help/privacy/audit-log.md). |
+| **[!UICONTROL 审核日志访问]** | 此权限强制对 [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) 和即将发布的审核日志UI。 |
 | **[!UICONTROL 报告使用情况管理员]** | 允许用户查看和删除公司中运行的任何报告。（报告使用情况功能尚未发布。） |
 | **[!UICONTROL 报告使用情况视图]** | 允许用户查看所有并发报告请求。（报告使用情况功能尚未发布。） |
 | **[!UICONTROL 计算量度创建]** | 允许用户创建[计算量度](/help/components/calc-metrics/calc-metr-overview.md)。 |
