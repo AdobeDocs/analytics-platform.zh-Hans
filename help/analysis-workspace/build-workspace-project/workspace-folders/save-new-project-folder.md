@@ -1,12 +1,12 @@
 ---
-description: 了解有关在工作区中将项目保存到文件夹的信息
-keywords: 分析工作区
+description: 了解如何将项目保存到 Workspace 中的文件夹
+keywords: Analysis Workspace
 title: 将项目保存到文件夹
 feature: CJA Workspace Basics
-source-git-commit: af3580a1925dd5cb504b192f9b125234443e53cf
+source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '80'
+ht-degree: 92%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此功能当前正在进行小范围发布。 某些屏幕可能会发生变化。
+>此功能目前处于测试阶段。 某些屏幕可能会有所变更。
 
-1. 在工作区中，创建新项目。
+1. 在 Workspace 中，创建新项目。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/save-to-folder1.png)
 
-1. 在 **项目** > **保存** 对话框中，从“文件夹”下拉菜单中选择文件夹名称。
+1. 在&#x200B;**”项目“**>**”保存“**&#x200B;对话框中，从”文件夹“下拉菜单中选择文件夹名称。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/save-to-folder2.png)
 
