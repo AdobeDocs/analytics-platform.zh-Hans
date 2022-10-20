@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: 04957adebd848739b8b3609eb35366d8296ee752
-workflow-type: ht
-source-wordcount: '945'
-ht-degree: 100%
+source-git-commit: 8262d7f0ec56a792bfcd8fe94b7f7685ee5b5438
+workflow-type: tm+mt
+source-wordcount: '935'
+ht-degree: 98%
 
 ---
 
@@ -88,7 +88,7 @@ Customer Journey Analytics 中的用户无法创建、编辑或查看数据视�
 | --- | --- |
 | **[!UICONTROL 数据视图]** | 如果您将&#x200B;**[!UICONTROL 自动包含]**&#x200B;切换到&#x200B;**[!UICONTROL 开启]**，则属于此产品配置文件的用户可以查看所有现有和新创建的数据视图。如果此设置被设置为&#x200B;**[!UICONTROL 关闭]**，则可以选择用户有权访问的特定数据视图。 |
 | **[!UICONTROL 报告工具]**： |  |
-| **[!UICONTROL 审核日志访问]** | 目前，[审计日志](https://adobe.io/cja-apis/docs/endpoints/auditlogs/)仅通过 API 提供。此权限强制对 API 和即将到来的审核日志 UI 进行权限检查。 |
+| **[!UICONTROL 审核日志访问]** | 此权限强制对 [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) 和 [审核日志UI](/help/privacy/audit-log.md). |
 | **[!UICONTROL 报告使用情况管理员]** | 允许用户查看和删除公司中运行的任何报告。（报告使用情况功能尚未发布。） |
 | **[!UICONTROL 报告使用情况视图]** | 允许用户查看所有并发报告请求。（报告使用情况功能尚未发布。） |
 | **[!UICONTROL 计算量度创建]** | 允许用户创建[计算量度](/help/components/calc-metrics/calc-metr-overview.md)。 |
