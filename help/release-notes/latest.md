@@ -4,9 +4,9 @@ description: 最新 CJA 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 source-git-commit: a3d47318d74df161cf9054b849c9eb8ef09e60c4
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '517'
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Customer Journey Analytics 版本在[持续交付模型](releases.md)上运行�
 
 | 功能 | 描述 | [预定日期](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| **“试验”面板** | 通过这个新的“工作区”面板，CJA 用户可从在线、离线、从 Adobe 解决方案、Adobe Journey Optimizer 甚至 BYO 数据等任何来源评估任何 A/B 试验的提升和置信度。[了解详情](/help/analysis-workspace/c-panels/experimentation.md) | 2022 年 10 月 5 日 |
+| **“试验”面板** | 通过这个新的 Workspace 面板，CJA 用户可从在线、离线、从 Adobe 解决方案、Adobe Journey Optimizer 甚至 BYO 数据等任何来源评估任何 A/B 试验的提升和置信度。[了解详情](/help/analysis-workspace/c-panels/experimentation.md) | 2022 年 10 月 5 日 |
 | **[!UICONTROL 关键指标摘要]可视化** | 通过[!UICONTROL 关键指标摘要]可视化，可了解某个重要的指标在单个时间范围内的趋势如何。通过它，还可比较指标在两个时间范围内的表现。了解详情 | 已从 2022 年 10 月 5 日开始分阶段推出 |
 | **CJA 中的日期字段支持** | 允许 CJA 报告日期和日期时间字段。 [了解详情](/help/data-views/data-views-usecases.md#date) | 2022 年 10 月 5 日 |
 | **移动应用程序：自定义详细信息视图** | 通过自定义详细信息视图，可通过让受众关注最重要的内容而使与受众共享的信息更有针对性。可更改与每个记分卡图块关联的详细视图的布局，并可添加文本以更好地解释最终用户可能在数据中看到的内容。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=zh-Hans) | 2022 年 10 月 5 日 |
