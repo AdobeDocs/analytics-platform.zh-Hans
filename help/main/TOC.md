@@ -83,7 +83,7 @@ ht-degree: 99%
          + [关于 Workspace 中的文件夹 ](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [创建文件夹 和子文件夹](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [添加项目](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
-         + [移除项目](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
+         + [删除项目](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
          + [保存新项目](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
       + [热键（快捷方式）](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [调色板](../analysis-workspace/build-workspace-project/color-palettes.md)
@@ -98,7 +98,7 @@ ht-degree: 99%
             + [行设置](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [动态项和静态项](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
          + [对表格进行分页、过滤和排序](../analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md)
-         + [Workspace 总计](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+         + [ Workspace 总计](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + 同类群组表 {#cohort-table}
          + [什么是同类群组分析？](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [配置同类群组分析报告](../analysis-workspace/visualizations/cohort-table/t-cohort.md)

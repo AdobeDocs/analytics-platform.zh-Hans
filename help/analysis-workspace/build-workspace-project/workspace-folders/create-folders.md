@@ -5,15 +5,15 @@ title: 创建文件夹
 feature: CJA Workspace Basics
 source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '152'
+ht-degree: 96%
 
 ---
 
 
 # 创建文件夹
 
-您可以将新文件夹或子文件夹添加到 Workspace 登陆页上的项目和文件夹列表中。
+可将新文件夹或子文件夹添加到 Workspace 登陆页上的项目和文件夹列表。
 
 >[!NOTE]
 >
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 ## 创建新文件夹
 
-如需创建新文件夹，请
+要创建新文件夹，请执行以下操作
 
-1. 单击&#x200B;**“新建”**。
+1. 单击&#x200B;**新建**。
 
 1. 输入新文件夹的名称。
 
@@ -35,17 +35,17 @@ ht-degree: 0%
 
    ![](/help/analysis-workspace/build-workspace-project/assets/create.png)
 
-   新文件夹会被添加到项目和文件夹的主列表中。
+   该新文件夹即添加到项目和文件夹的主列表。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
 
 ## 创建子文件夹
 
-子文件夹允许您提供额外级别的项目管理和组织。
+通过子文件夹，可提供额外级别的项目管理和组织。
 
-要在现有文件夹处于开启状态时创建子文件夹，
+要在已有文件夹打开时创建子文件夹，请执行以下操作
 
-1. 单击&#x200B;** 创建新文件夹**。
+1. 单击&#x200B;**创建新文件夹**。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder2.png)
 
@@ -55,12 +55,12 @@ ht-degree: 0%
 
 1. 单击&#x200B;**创建**。
 
-   新的子文件夹会被添加到项目和子文件夹列表中。
+   该新子文件夹即添加到项目和子文件夹的列表。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-added.png)
 
    >[!NOTE]
    >
-   >在一个文件夹中最多可以创建 10 级子文件夹。
+   >可在单个文件夹中创建最多 10 级子文件夹。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-limit.png)

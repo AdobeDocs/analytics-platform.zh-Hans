@@ -1,7 +1,7 @@
 ---
-description: 了解如何从文件夹中移除项目
+description: 了解如何从文件夹中删除项目
 keywords: Analysis Workspace
-title: 从文件夹中移除项目
+title: 从文件夹中删除项目
 feature: CJA Workspace Basics
 source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
 workflow-type: tm+mt
@@ -11,9 +11,9 @@ ht-degree: 96%
 ---
 
 
-# 从文件夹中移除项目
+# 从文件夹中删除项目
 
-要从文件夹中移除某个项目，可以将该项目移动到其他位置或删除该项目。
+要从文件夹中删除一个项目，可将该项目移至另一位置或删除该项目。
 
 >[!NOTE]
 >
@@ -21,34 +21,34 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->当管理员将某个项目移动到“公司文件夹”时，即使原始共享权限受到限制，该文件夹也会与所有人共享。当管理员将某个项目移出“公司文件夹”时，则会遵循原始或此前的共享权限。
+>当管理员将某个项目移至公司文件夹时，即使原有的共享权限受限，也将与所有人共享该文件夹。当管理员将某个项目移出公司文件夹时，将遵循原有或以前的共享权限。
 
 ## 移动项目
 
-1. 从项目文件夹中，选择项目名称旁边的 **...** 省略号。
+1. 从某个项目的文件夹中，选择该项目名称旁的 **...** 省略号。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
-1. 选择&#x200B;**移动到**，然后选择要将项目移动到的文件夹。
+1. 选择&#x200B;**移至**，然后选择要将该项目移至的文件夹。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
 
-1. 单击&#x200B;**“移动”**。
+1. 单击&#x200B;**移动**。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
 
-   Toast 表示确认项目已被转移。
+   随后将有一个 toast 确认移动了该项目。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
 
 ## 从项目文件夹中删除项目
 
-从文件夹中删除某个项目时，该项目会被完全删除。
+从文件夹中删除某个项目时，将完全删除该项目。
 
-1. 从项目文件夹中，选择项目名称旁边的 **...** 省略号。
+1. 从某个项目的文件夹中，选择该项目名称旁的 **...** 省略号。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
 1. 选择&#x200B;**删除**。
 
-1. 会出现一个确认窗口，要求您确认删除。
+1. 随后将有一个确认窗口要求您确认删除。
