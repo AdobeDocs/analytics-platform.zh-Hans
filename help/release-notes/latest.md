@@ -3,10 +3,10 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新 CJA 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 3028024c97355cb43fb7a844acef5771d2f5cbcf
+source-git-commit: a7636909c0570655ee6d3638e56828916044d2bd
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 75%
+source-wordcount: '509'
+ht-degree: 76%
 
 ---
 
@@ -23,7 +23,7 @@ Customer Journey Analytics 版本在[持续交付模型](releases.md)上运行�
 | **[!UICONTROL 关键指标摘要]可视化** | 通过[!UICONTROL 关键指标摘要]可视化，可了解某个重要的指标在单个时间范围内的趋势如何。通过它，还可比较指标在两个时间范围内的表现。[了解详情](/help/analysis-workspace/visualizations/key-metric.md) | 2022 年 10 月 5 日 | 2022 年 10 月 19 日 |
 | **不区分大小写的多值变量** | 对于不区分大小写的多值变量，存储在 `mvvar1` 至 `mvvar3` 中的值将不再自动变为小写。而是通过 Analytics Source Connector 传递到 Adobe Experience Platform 和 CJA 的数据将反映从页面传入的原有大小写形式。 | 不适用 | 2022 年 10 月 24 日 |
 | **CJA审核日志** | Customer Journey Analytics(CJA)允许您以“审核日志”的形式审核各种服务和功能的用户活动。 这些日志形成了一个审核跟踪，可帮助解决问题，并帮助您的企业有效遵守公司数据管理政策和法规要求，如健康保险流通和责任法案(HIPAA)。 以前，这些日志只能通过审核日志API使用。 [要遵循的文档] | 不适用 | 2022 年 10 月 26 日 |
-| **CJA HIPAA就绪** | 后续描述 | 不适用 | 2022 年 10 月 26 日 |
+| **HIPAA就绪** | 后续描述 | 不适用 | 2022 年 11 月 7 日 |
 
 {style=&quot;table-layout:auto&quot;}
 
