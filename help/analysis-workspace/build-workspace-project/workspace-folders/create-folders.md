@@ -6,7 +6,7 @@ feature: CJA Workspace Basics
 source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
 workflow-type: tm+mt
 source-wordcount: '152'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->此功能目前处于测试阶段。 某些屏幕可能会有所变更。
+>目前此功能处于测试阶段。某些屏幕可能会有所变更。
 
 ## 创建新文件夹
 

@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics 指南
 source-git-commit: dc75ed818b2760e9cd19fdcd427fe752f829aef0
 workflow-type: tm+mt
 source-wordcount: '797'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -80,8 +80,8 @@ ht-degree: 99%
       + [项目概述](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [保存项目](../analysis-workspace/build-workspace-project/save-projects.md)
       + Workspace 中的文件夹 {#workspace-folders}
-         + [关于 Workspace 中的文件夹 ](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
-         + [创建文件夹 和子文件夹](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+         + [关于 Workspace 中的文件夹](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+         + [创建文件夹和子文件夹](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [添加项目](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
          + [删除项目](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
          + [保存新项目](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)

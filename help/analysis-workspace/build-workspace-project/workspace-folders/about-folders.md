@@ -6,7 +6,7 @@ feature: CJA Workspace Basics
 source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Workspace 项目中的文件夹是位于 Workspace 登陆页上的一个文件�
 
 >[!NOTE]
 >
->此功能目前处于测试阶段。 某些屏幕可能会有所变更。
+>目前此功能处于测试阶段。某些屏幕可能会有所变更。
 
 Workspace 项目中的文件夹帮助用户组织其项目和将其项目分类，以便更好地检索和访问。此外，通过一个共享的公司文件夹，管理员可轻松地创建内容并与所有 Workspace 用户共享内容。 
 
