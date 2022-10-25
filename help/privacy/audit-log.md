@@ -1,19 +1,17 @@
 ---
 title: 审核日志
 description: 了解如何查看和管理 CJA 审核日志。
-source-git-commit: a866dec61df93bf730529a2d7513b4d76bab6694
-workflow-type: ht
-source-wordcount: '855'
+hide: true
+hidefromtoc: true
+source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
+workflow-type: tm+mt
+source-wordcount: '848'
 ht-degree: 100%
 
 ---
 
 
 # 审核日志
-
->[!NOTE]
->
->此功能当前正在进行[小范围测试](/help/release-notes/releases.md)。
 
 为了提高系统中执行的活动的透明度和可见性，Customer Journey Analytics (CJA) 允许您以“审核日志”的形式审核各种服务和功能的用户活动。这些日志形成审核记录，可以帮助解决问题，并帮助您的企业有效遵守公司数据管理政策和监管要求，例如“健康保险流通与责任法案”(HIPAA)。
 
