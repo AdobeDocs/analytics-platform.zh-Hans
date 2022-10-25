@@ -5,10 +5,10 @@ title: 计划项目
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
+source-git-commit: ca8323591ce3e9eabbad66a290cd28153f5a7327
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 63%
+source-wordcount: '723'
+ht-degree: 62%
 
 ---
 
@@ -95,6 +95,7 @@ Adobe使用密码加密计划项目，无论这些项目是以.pdf格式还是.c
 
 ![电子邮件](assets/email-password.png)
 
+1. 重新登录Customer Journey Analytics。
 1. 单击 **[!UICONTROL 查看计划项目]**.
 1. 在 **[!UICONTROL 编辑计划项目]** 对话框，输入并重新输入密码。
 1. （仅）计划项目的收件人知晓此密码。
