@@ -5,10 +5,10 @@ title: 计划项目
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: ca8323591ce3e9eabbad66a290cd28153f5a7327
+source-git-commit: 6267b7ea3e0a72c86f3ab042c537ddca6f99539f
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 62%
+source-wordcount: '741'
+ht-degree: 61%
 
 ---
 
@@ -86,8 +86,8 @@ Adobe使用密码加密计划项目，无论这些项目是以.pdf格式还是.c
 
 ### 新建计划项目
 
-1. 保存项目后，转到共享>立即发送文件，或按计划共享>发送文件。
-1. 按照上面“立即共享文件”或“按计划共享文件”下的说明操作。
+1. 保存项目后，转到 **[!UICONTROL 共享]** > **[!UICONTROL 立即发送文件]**&#x200B;或 [!UICONTROL 共享] > **[!UICONTROL 按计划发送文件]**.
+1. 按照上述说明，在 [立即发送文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#now) 或 [按计划发送文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#schedule).
 
 ### 现有计划项目
 
