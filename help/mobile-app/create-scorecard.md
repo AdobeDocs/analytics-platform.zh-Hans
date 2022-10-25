@@ -6,9 +6,9 @@ role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
 source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1769'
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ Adobe Analytics 记分卡以平铺版面为执行用户显示关键数据可视�
 
 要将过滤器应用于个别图块，请从左侧面板拖动某个过滤器（区段就是 CJA 中的过滤器），然后将它直接放在图块的顶部。
 
-如果要将过滤器应用于记分卡中的所有图块，请将图块拖放到记分卡的顶部。或者，您也可以通过在日期范围下方的筛选器菜单中选择过滤器来应用过滤器。您可以像在 Adobe Analytics Workspace 中一样[为记分卡配置和应用过滤器](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans)。
+如果要将过滤器应用于记分卡中的所有图块，请将图块拖放到记分卡的顶部。或者，您也可以通过在日期范围下方的过滤器菜单中选择过滤器来应用过滤器。您可以像在 Adobe Analytics Workspace 中一样[为记分卡配置和应用过滤器](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans)。
 
 ![构建过滤器](assets/segment_ui.png)
 
