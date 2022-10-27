@@ -5,7 +5,7 @@ exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 83%
+ht-degree: 99%
 
 ---
 
@@ -37,9 +37,9 @@ ht-degree: 83%
 
 * 管理员还需要 Adobe Experience Platform 中的&#x200B;**[!UICONTROL 管理个人资料]**&#x200B;权限。
 
-## 数据管理和同意
+## 数据治理和同意
 
-在CJA中发布受众时，会记录附加到受众中所用字段的数据管理标签和策略。  在任何Adobe Experience App中激活受众后，所有关联的“数据管理”标签和策略都可用于该受众，并且可以应用适当的强制实施。 [进一步了解同意](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=en#consent-policy).
+当您在 CJA 中发布受众时，将记录附加到受众中使用的字段的数据治理标签和策略。在任何 Adobe Experience 应用程序中激活受众后，所有相关的数据治理标签和策略都可供该受众使用，并且可以应用适当的强制执行。[进一步了解同意](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=zh-Hans#consent-policy).
 
 ## 后续步骤
 
