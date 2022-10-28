@@ -4,9 +4,9 @@ description: 了解如何查看和管理 CJA 审核日志。
 hide: true
 hidefromtoc: true
 source-git-commit: 6cf2d5ccbeeea7baeea8a675f2b7e96e6203fe24
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '849'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 99%
 
 要查看和导出审核日志，您必须已在 Audit Logs Access 中获得&#x200B;**[!UICONTROL 审核日志访问]**&#x200B;访问控制权限。要了解如何管理 CJA 功能的各项权限，请参阅[访问控制文档](/help/getting-started/cja-access-control.md)。
 
-## 在UI中查看审核日志
+## 在 UI 中查看审核日志
 
 在 CJA 中，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 审核日志]**。
 
