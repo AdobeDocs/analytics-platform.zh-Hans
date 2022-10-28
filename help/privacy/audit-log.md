@@ -1,10 +1,8 @@
 ---
 title: 审核日志
 description: 了解如何查看和管理 CJA 审核日志。
-hide: true
-hidefromtoc: true
-source-git-commit: 6cf2d5ccbeeea7baeea8a675f2b7e96e6203fe24
-workflow-type: ht
+source-git-commit: 37a23a4669c08c8f7d9c6595286998ebd7e60ac4
+workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 100%
 
