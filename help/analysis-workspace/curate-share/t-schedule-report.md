@@ -6,9 +6,9 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 source-git-commit: 6267b7ea3e0a72c86f3ab042c537ddca6f99539f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '741'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 61%
 1. 指定文件类型（CSV 或 PDF）。
 1. （可选）添加要包含在电子邮件中的说明，以阐述所发送的文件。
 1. 添加收件人或组。也可以输入电子邮件地址。
-1. （仅适用于Healthcare Shield客户）提供密码。 请参阅密码保护计划报表一节。
+1. （仅适用于 Healthcare Shield 客户）提供密码。请参阅“密码保护计划报告”部分。
 1. 单击&#x200B;**立即发送**。
 1. （可选）单击&#x200B;**显示计划选项**&#x200B;以指定发送计划。
 
@@ -38,7 +38,7 @@ ht-degree: 61%
 1. 指定文件类型（CSV 或 PDF）。
 1. （可选）添加要包含在电子邮件中的说明，以阐述所发送的文件。
 1. 添加收件人或组。也可以输入电子邮件地址。
-1. （仅适用于Healthcare Shield客户）提供密码。 请参阅密码保护计划报表一节。
+1. （仅适用于 Healthcare Shield 客户）提供密码。请参阅“密码保护计划报告”部分。
 1. 通过修改开始日期和结束日期输入值来指定计划发送文件的日期范围。结束日期必须在自创建或修改计划之日起的一年内。
 1. 指定发送频率。每种频率均允许进行不同的自定义。
 1. 单击&#x200B;**按计划发送**。
@@ -68,36 +68,36 @@ ht-degree: 61%
 
 >[!NOTE]
 >
->对计划项目进行密码保护的选项仅对购买了 [医疗盾](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html%3Flang%3Den) 附加产品。
+>密码保护计划项目的选项仅显示给购买了 [Healthcare Shield](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html?lang=zh-Hans%3Flang%3Den) 附加产品的 CJA 客户。
 
-Adobe使用密码加密计划项目，无论这些项目是以.pdf格式还是.csv格式发送。
+Adobe 使用密码来加密计划项目，无论它们是以 .pdf 还是 .csv 格式发送。
 
-在您的公司购买了Healthcare Shield SKU并为其启用后，在两种情况下会弹出为计划项目创建密码的提示：
+在您的公司购买并启用 Healthcare Shield SKU 后，将会在两种情况下弹出为计划项目创建密码的提示：
 
-* 当某人创建新的计划项目时。
+* 当有人创建一个新的计划项目时。
 
-* 将要发送现有计划项目时。 在密码保护到位之前，将禁用当前计划的项目。 计划项目的所有者将收到一封针对此效果的电子邮件。
+* 即将发送现有的计划项目时。在设置好密码保护之前，当前计划的项目将被禁用。计划项目的所有者将为此收到一封电子邮件。
 
 ![密码保护](assets/password.png)
 
 ### 密码要求
 
-密码要求符合Adobe标准，要求至少8个字符，其中至少1个数字和1个特殊字符。
+密码要求符合 Adobe 标准，要求至少 8 个字符，并且其中至少有一个数字和一个特殊字符。
 
-### 新建计划项目
+### 新的计划项目
 
-1. 保存项目后，转到 **[!UICONTROL 共享]** > **[!UICONTROL 立即发送文件]**&#x200B;或 [!UICONTROL 共享] > **[!UICONTROL 按计划发送文件]**.
-1. 按照上述说明，在 [立即发送文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#now) 或 [按计划发送文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#schedule).
+1. 保存项目后，转到&#x200B;**[!UICONTROL 分享]** > **[!UICONTROL 立即发送文件]**，或[!UICONTROL 分享] > **[!UICONTROL 按计划发送文件]**。
+1. 在[立即发送文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#now)或[按计划发送文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#schedule)下面，按照上面的说明操作。
 
-### 现有计划项目
+### 现有的计划项目
 
-在计划项目的时间之前，项目的所有者将收到类似于以下内容的电子邮件：
+在项目计划的时间之前，项目的所有者将收到类似于以下内容的电子邮件：
 
 ![电子邮件](assets/email-password.png)
 
-1. 重新登录Customer Journey Analytics。
-1. 单击 **[!UICONTROL 查看计划项目]**.
-1. 在 **[!UICONTROL 编辑计划项目]** 对话框，输入并重新输入密码。
-1. （仅）计划项目的收件人知晓此密码。
+1. 登录回到 Customer Journey Analytics。
+1. 单击&#x200B;**[!UICONTROL 查看计划项目]**。
+1. 在&#x200B;**[!UICONTROL 编辑计划项目]**&#x200B;对话框中，输入密码，然后再输入一次。
+1. （仅）让计划项目的接收者知道此密码。
 
 
