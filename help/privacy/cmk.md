@@ -3,10 +3,10 @@ title: 客户管理的密钥
 description: 了解如何为 CJA 设置客户管理的密钥。
 hide: true
 hidefromtoc: true
-source-git-commit: 3aa5d9e1b426e67f27ef1909a2640f335719502a
-workflow-type: ht
-source-wordcount: '269'
-ht-degree: 100%
+source-git-commit: 90521aa7326486b9016321d35191a73ef891a0bc
+workflow-type: tm+mt
+source-wordcount: '283'
+ht-degree: 95%
 
 ---
 
@@ -30,5 +30,5 @@ Customer Journey Analytics (CJA) 为 [Healthcare Shield](https://www.adobe.com/t
 1. 确保您在 Azure 中是具有特权角色的管理员，例如应用程序管理员、云应用程序管理员或全局管理员。[从 Microsoft 了解详情](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference)
 1. 创建一个新的仅用于 CJA 的 Azure 密钥库。[从 Microsoft 了解详情](https://learn.microsoft.com/en-us/azure/key-vault/general/)
 1. 授予 Adobe Azure 应用程序访问您在密钥库中的密钥的权限。这是 Adobe 应用程序 ID：251e3919-1940-4296-bb8b-6b9a5e8a4805。[从 Microsoft 了解详情](https://learn.microsoft.com/en-us/azure/storage/common/customer-managed-keys-configure-cross-tenant-existing-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&amp;tabs=powershell-preview%2Cazure-portal#the-customer-grants-the-service-providers-app-access-to-the-key-in-the-key-vault)
-1. 创建一个请求 CMK 设置的 Adobe 客户关怀票证。在您的票证中包含 Azure URI。
+1. 创建一个请求 CMK 设置的 Adobe 客户关怀票证。在您的票证中包含 Azure URI。URI可在Azure密钥的密钥标识符字段中找到。
 1. Adobe 客户关怀部门将会确认对您的 CJA 数据完成了 CMK 应用。
