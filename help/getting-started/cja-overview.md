@@ -5,9 +5,9 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
 source-git-commit: f70cb6a8567d1bb2f844b1694f552ec4bfe70adc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '942'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Customer Journey Analytics 的初始版本包括分析工作区中的许多功�
 
 * 您的组织与 Adobe 签订了一份 Analytics for Select、Prime 或 Ultimate 的有效合同，其中包含 Customer Journey Analytics 附加产品。如果您不确定您拥有哪种合同类型，或不确定您是否拥有 CJA 附加产品，请联系贵公司的客户经理。
 * 您的组织已配置 Adobe Experience Platform。
-* 您还可以购买Customer Journey Analytics作为独立产品，而无需使用Adobe Analytics。
+* 您还可以将 Customer Journey Analytics 作为独立产品购买，而无需 Adobe Analytics。
 
 ## 访问控制
 
