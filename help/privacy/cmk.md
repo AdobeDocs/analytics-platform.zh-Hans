@@ -1,12 +1,10 @@
 ---
 title: 客户管理的密钥
 description: 了解如何为 CJA 设置客户管理的密钥。
-hide: true
-hidefromtoc: true
-source-git-commit: 08a322e159725c565dafdc5ef28758cc97fb9ae4
+source-git-commit: 903c1423c91b220524174fa900a9ec13cd2051c6
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 83%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
