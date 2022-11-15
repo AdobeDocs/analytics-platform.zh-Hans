@@ -5,10 +5,10 @@ title: 计划项目
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 6267b7ea3e0a72c86f3ab042c537ddca6f99539f
-workflow-type: ht
-source-wordcount: '741'
-ht-degree: 100%
+source-git-commit: b0a1fdcfb2d200d40c308c557c2ddff172c1e18f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -84,12 +84,12 @@ Adobe 使用密码来加密计划项目，无论它们是以 .pdf 还是 .csv �
 
 密码要求符合 Adobe 标准，要求至少 8 个字符，并且其中至少有一个数字和一个特殊字符。
 
-### 新的计划项目
+### 密码保护新的计划项目
 
 1. 保存项目后，转到&#x200B;**[!UICONTROL 分享]** > **[!UICONTROL 立即发送文件]**，或[!UICONTROL 分享] > **[!UICONTROL 按计划发送文件]**。
 1. 在[立即发送文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#now)或[按计划发送文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#schedule)下面，按照上面的说明操作。
 
-### 现有的计划项目
+### 密码保护现有计划项目
 
 在项目计划的时间之前，项目的所有者将收到类似于以下内容的电子邮件：
 
