@@ -4,10 +4,10 @@ description: 了解如何比较 Adobe Analytics 数据和 Customer Journey Analy
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: 718dc00b13ec0a79e122b4a2ca48f4de7643bacb
-workflow-type: ht
-source-wordcount: '825'
-ht-degree: 100%
+source-git-commit: 2088fd98510887e86cffb6bd957d32a35fcfc467
+workflow-type: tm+mt
+source-wordcount: '828'
+ht-degree: 90%
 
 ---
 
@@ -63,9 +63,9 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
         ORDER BY Day; 
 ```
 
-1. 在 [Analytics 数据馈送](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html)中，从原始数据确认是否 Analytics 源连接器已丢弃某些行。
+1. 在 [Analytics数据馈送](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html)，从原始数据中识别Analytics源连接器是否过滤掉了某些行。
 
-   [Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)在将数据转换到 XDM 架构的过程中可能会丢弃一些行。整个行不适合进行转换的原因可能有多种。如果以下任何 Analytics 字段具有这些值，则将丢弃整个行。
+   的 [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) 可能会在转换到XDM架构期间过滤某些行。 整个行不适合进行转换的原因可能有多种。如果以下任何一个Analytics字段具有这些值，则将过滤掉整行。
 
    | Analytics 字段 | 导致行丢弃的值 |
    | --- | --- |
@@ -78,9 +78,9 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
 
    有关 hit\_source 详细信息，请参阅：[数据列参考](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=zh-Hans)。有关 page\_event 详细信息，请参阅：[页面事件查找](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html?lang=zh-Hans)。
 
-1. 如果连接器丢弃了某些行，则将从[!UICONTROL 发生次数]指标中减去这些行。得到的数字应与 Adobe Experience Platform 数据集中的事件数一致。
+1. 如果连接器过滤了行，则从 [!UICONTROL 发生次数] 量度。 得到的数字应与 Adobe Experience Platform 数据集中的事件数一致。
 
-## 为什么在从 AEP 引入数据期间可能会丢弃或跳过一些记录
+## 在从AEP摄取期间为何会过滤或跳过记录
 
 CJA [连接](/help/connections/create-connection.md)允许您跨数据集基于共同的人员 ID 将多个数据集聚集并连接在一起。在后端，我们应用重复数据删除：首先，基于时间戳针对事件数据集进行完全的外部连接或合并，然后基于人员 ID 对配置文件和查找数据集进行内部连接。
 

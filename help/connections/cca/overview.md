@@ -4,10 +4,10 @@ description: 在多个数据集中重新生成访客 ID 的键值，以对访客
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: fff0ffb3a513c3fc514d6769f8c3bc70fa75459e
-workflow-type: ht
-source-wordcount: '1189'
-ht-degree: 100%
+source-git-commit: 143979330addce3fce045d1785ae969c75a78d28
+workflow-type: tm+mt
+source-wordcount: '1210'
+ht-degree: 97%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 100%
 
 如果贵组织满足所有前提条件并已了解跨渠道分析存在的限制，便可按照以下步骤在 CJA 中开始使用该功能。
 
-1. 将所需数据导入 Adobe Experience Platform。请参阅 Adobe Experience Platform 文档中的[创建架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans)和[摄取数据](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans)。
+1. 将所需数据导入 Adobe Experience Platform。有关Adobe Analytics数据，请参阅 [在Customer Journey Analytics中利用Adobe Analytics报表包数据](/help/getting-started/aa-vs-cja/aa-data-in-cja.md). 有关其他类型的数据，请参阅 [创建架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans) 和 [摄取数据](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans) (在Adobe Experience Platform文档中)。
 1. 请联系 Adobe 客户支持并提供以下信息：
    * 启用跨渠道分析的请求
    * 要重新生成键值的数据集的数据集 ID
