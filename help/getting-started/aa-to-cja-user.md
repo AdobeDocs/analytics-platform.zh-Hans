@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 3d8394fa3d4fba036658161ca6120078902aad9a
-workflow-type: ht
+source-git-commit: 95b422ac44e2a25dfaa2198098185fe71c1fb204
+workflow-type: tm+mt
 source-wordcount: '1457'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -54,7 +54,7 @@ Adobe 提供了多种将数据导入 Adobe Experience Platform 的方法，包�
 
 ![数据视图选择器](assets/data-views.png)
 
-请参阅 [数据视图用例](/help/data-views/data-views-usecases.md) 以了解有关此概念的更多信息。
+请参阅 [数据视图用例](/help/use-cases/data-views/data-views-usecases.md) 以了解有关此概念的更多信息。
 
 ## 对eVar和prop概念的更改
 
@@ -68,7 +68,7 @@ Adobe 提供了多种将数据导入 Adobe Experience Platform 的方法，包�
 
 Adobe已将“区段”组件重命名为“过滤器”，以更好地符合行业标准，并更好地区分Adobe Experience Platform中的区段。
 
-[!UICONTROL Customer Journey Analytics] 不再使用eVar、prop或事件，而是使用它们已映射到的Experience Platform架构字段名称。此更改意味着 Adobe Analytics中 的任何现有区段都与 [!UICONTROL Customer Journey Analytics] 不兼容。如果要将现有Adobe Analytics区段移动到Customer Journey Analytics，请观看以下视频：
+[!UICONTROL Customer Journey Analytics] 不再使用eVar、prop或事件，而是使用它们已映射到的Experience Platform架构字段名称。 此更改意味着 Adobe Analytics中 的任何现有区段都与 [!UICONTROL Customer Journey Analytics] 不兼容。如果要将现有Adobe Analytics区段移动到Customer Journey Analytics，请观看以下视频：
 
 >[!VIDEO](https://video.tv.adobe.com/v/31982/?quality=12)
 
@@ -96,7 +96,7 @@ Adobe已将“区段”组件重命名为“过滤器”，以更好地符合行
 
 ## 对分类概念的更改
 
-“分类”现在称为“查找数据集”。查找数据集用于查找在您的事件或个人资料数据中找到的值或键。例如，您可以上传将事件数据中的数字 ID 映射到产品名称的查找数据。有关示例用例，请参阅 [将帐户级别的数据添加为查询数据集](/help/use-cases/b2b.md)。
+“分类”现在称为“查找数据集”。查找数据集用于查找在您的事件或个人资料数据中找到的值或键。例如，您可以上传将事件数据中的数字 ID 映射到产品名称的查找数据。有关示例用例，请参阅 [将帐户级别的数据添加为查询数据集](/help/use-cases/b2b/b2b.md)。
 
 ## 对客户属性概念的更改
 

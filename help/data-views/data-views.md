@@ -4,8 +4,8 @@ description: 数据视图指定您要如何解释数据在 CJA 连接中的各�
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: ht
+source-git-commit: 95b422ac44e2a25dfaa2198098185fe71c1fb204
+workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 100%
 
@@ -79,4 +79,4 @@ Customer Journey Analytics 中的 Workspace 项目均基于数据视图。
 ## 后续步骤
 
 * [创建数据视图](/help/data-views/create-dataview.md)
-* [数据视图用例](/help/data-views/data-views-usecases.md)
+* [数据视图用例](/help/use-cases/data-views/data-views-usecases.md)

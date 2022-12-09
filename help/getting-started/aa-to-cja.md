@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 7820f462617d21c9e3b23de26c9e9022d74bec0e
+source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
 workflow-type: tm+mt
 source-wordcount: '1420'
 ht-degree: 94%
@@ -43,7 +43,7 @@ ht-degree: 94%
 
 如果您因为 [!UICONTROL Uniques Exceeded] 或 [!UICONTROL Low Traffic] 问题而无法迁移到全局报表包，请了解 CJA [对维度没有基数限制](/help/components/dimensions/high-cardinality.md)。它允许出现并计算任何唯一值。
 
-以下是[将报告包与不同架构相结合](/help/use-cases/combine-report-suites.md)的用例。
+以下是[将报告包与不同架构相结合](/help/use-cases/aa-data/combine-report-suites.md)的用例。
 
 ### 3. （重新）配置您的营销渠道 {#marketing-channels}
 
@@ -110,7 +110,7 @@ Adobe Analytics 区段（在 CJA 中称为[!UICONTROL 过滤器]）和计算量�
 
 ### 其他注意事项
 
-* 使用 CJA 数据视图的强大功能，您可以在 Customer Journey Analytics 中定义指标和维度时更加灵活。例如，您可以使用维度的值来定义度量。[了解详情](/help/data-views/data-views-usecases.md)
+* 使用 CJA 数据视图的强大功能，您可以在 Customer Journey Analytics 中定义指标和维度时更加灵活。例如，您可以使用维度的值来定义度量。[了解详情](/help/use-cases/data-views/data-views-usecases.md)
 
 * 如果您在 Adobe Analytics 中定义了自定义日程表，那么 CJA 中也将具有类似的[自定义日程表功能](/help/components/date-ranges/custom-date-ranges.md)。您需要确保正确定义日历。
 
