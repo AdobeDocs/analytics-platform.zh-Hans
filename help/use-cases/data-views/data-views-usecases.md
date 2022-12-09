@@ -4,10 +4,10 @@ description: 显示 Customer Journey Analytics 中数据视图的灵活性和强
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+source-git-commit: b2dc937159fc631755c1c5486149a94f7cd33f89
 workflow-type: tm+mt
-source-wordcount: '1296'
-ht-degree: 100%
+source-wordcount: '1313'
+ht-degree: 98%
 
 ---
 
@@ -122,6 +122,8 @@ Adobe Experience Platform 中的架构包含[!UICONTROL 日期]和[!UICONTROL �
 * 对于日期格式，如果您选择&#x200B;**[!UICONTROL 天]**&#x200B;格式为&#x200B;**[!UICONTROL 月、日、年]**，则报告中的示例输出可能如下所示：2022 年 8 月 23 日。
 
 * 对于日期时间格式，如果选择&#x200B;**[!UICONTROL 一天中的分钟]**&#x200B;格式为&#x200B;**[!UICONTROL 小时:分钟]**，则输出可能为：20:20。
+
+我们当前支持1900年1月1日之后的日期（除1970年1月1日外）和2000年1月1日之后的日期时间值:00:00.
 
 ### 日期和日期时间用例
 
