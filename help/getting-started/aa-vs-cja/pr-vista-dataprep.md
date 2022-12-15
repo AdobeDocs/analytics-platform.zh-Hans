@@ -1,5 +1,5 @@
 ---
-title: ' Analytics Source Connector 的处理规则、VISTA 和分类与数据准备'
+title: Analytics Source Connector 的处理规则、VISTA 和分类与数据准备
 description: 了解使用处理规则和 VISTA 与通过准备数据来进行数据转换的异同
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 source-git-commit: 6b7b8e8f1c1e88644961dd5e1b3d2ff7ec07951e
