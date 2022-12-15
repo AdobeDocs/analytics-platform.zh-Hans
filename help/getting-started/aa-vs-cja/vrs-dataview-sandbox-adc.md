@@ -1,9 +1,9 @@
 ---
-title: '虚拟报告包、数据视图、AEP 沙盒和 Analytics Source Connector '
+title: 虚拟报告包、数据视图、AEP 沙盒和 Analytics Source Connector
 description: 了解虚拟报告环境和沙盒环境。
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
 source-git-commit: 6603aed778980c37d69843f11f3ee64e64cd13b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '720'
 ht-degree: 100%
 
@@ -79,4 +79,4 @@ AEP 沙盒不会：
 注意：
 
 * 来自不同沙盒的数据不能在 CJA 中合并。
-* Analytics Source Connector 将报告包数据发送&#x200B;_到_&#x200B;特定的沙盒中。每个报告包均可以配置为单个沙盒的来源。有关更多详细信息，请参阅 [Analytics Source Connector 文档](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en)。
+* Analytics Source Connector 将报告包数据发送&#x200B;_到_&#x200B;特定的沙盒中。每个报告包均可以配置为单个沙盒的来源。有关更多详细信息，请参阅 [Analytics Source Connector 文档](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)。
