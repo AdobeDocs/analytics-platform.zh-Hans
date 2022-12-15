@@ -5,13 +5,13 @@ title: 文件夹概述
 feature: CJA Workspace Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
+exl-id: e12e271e-ce15-4535-bb48-1976395cf755
+source-git-commit: bb6e4dcc1c917fcfb565430232e3c5562f63fd1a
 workflow-type: ht
 source-wordcount: '428'
 ht-degree: 100%
 
 ---
-
 
 # 关于 Workspace 项目中的文件夹
 
