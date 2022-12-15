@@ -3,9 +3,9 @@ description: 有关使用功能板记分卡的说明。
 title: Adobe Analytics 功能板执行指南
 feature: Analytics Dashboards
 role: User, Admin
-exl-id: a72df772-edd0-45d7-bb64-80fbdaa12f6b
+exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 76477d23a9ab6bd38118bae9f1af4dc506922fa7
+source-git-commit: 2fac52abb2f970455846c46b28db88360cff2886
 workflow-type: ht
 source-wordcount: '1220'
 ht-degree: 100%
@@ -149,4 +149,3 @@ ht-degree: 100%
 | 划分 | 一种辅助视图，点按记分卡中的图块可访问这种辅助视图。此视图将展开图块上显示的量度，并（可选）报告其他划分维度。 |
 | 日期范围 | 功能板报告的主要日期范围 |
 | 比较日期范围 | 与主要日期范围进行比较的日期范围 |
-
