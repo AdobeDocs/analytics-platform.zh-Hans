@@ -5,13 +5,13 @@ title: 将项目保存到文件夹
 feature: CJA Workspace Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
+exl-id: d08a558b-a2bb-4002-b179-437e1885c6c4
+source-git-commit: bb6e4dcc1c917fcfb565430232e3c5562f63fd1a
 workflow-type: ht
 source-wordcount: '80'
 ht-degree: 100%
 
 ---
-
 
 # 将新项目保存到文件夹
 
