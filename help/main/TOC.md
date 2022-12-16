@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Customer Journey Analytics (CJA) 以及如何将 Analysis Workspace 用于来自 Experience Platform 的数据。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 879350c645cf4c6e12361184dddfb065224d758c
+source-git-commit: 6cb91575d5d4c899057efb04e9a3f7c3fc2d2dec
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 97%
+source-wordcount: '831'
+ht-degree: 99%
 
 ---
 
@@ -33,11 +33,12 @@ ht-degree: 97%
    + [Real-Time CDP 和 CJA 之间量度和受众会员计数的一致性](../getting-started/consistency-rcdp-cja.md)
    + [CJA 访问控制](../getting-started/cja-access-control.md)
    + [Customer Journey Analytics 登陆页面](../getting-started/landing.md)
-   + [常见问题解答](../getting-started/cja-faq.md)
    + [从 Adobe Analytics 演变到 Customer Journey Analytics](../getting-started/aa-to-cja.md)
    + [Customer Journey Analytics 新用户的用户指南](../getting-started/aa-to-cja-user.md)
+   + [评估和管理CJA使用情况](../getting-started/estimate-usage.md)
+   + [常见问题解答](../getting-started/cja-faq.md)
    + 比较 Adobe Analytics 和 Customer Journey Analytics{#compare-aa-cja}
-      + [在Customer Journey Analytics中利用Adobe Analytics数据](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+      + [在 Customer Journey Analytics 中使用 Adobe Analytics 数据](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Customer Journey Analytics 功能支持](../getting-started/aa-vs-cja/cja-aa.md)
       + [比较通过 Analytics Source Connector 传递的 Analytics 数据的术语](../getting-started/aa-vs-cja/terminology.md)
       + [跨 Adobe Analytics 和 CJA 比较数据处理](../getting-started/aa-vs-cja/data-processing-comparisons.md)
@@ -237,7 +238,7 @@ ht-degree: 97%
    + [执行用户快速入门指南](../mobile-app/executive.md)
 + Adobe 集成 {#integrations}
    + [关于将 Adobe 解决方案与 CJA 集成的概述](/help/integrations/overview.md)
-   + [将Adobe Analytics与Customer Journey Analytics集成](/help/integrations/aa.md)
+   + [将 Adobe Analytics 与 Customer Journey Analytics 集成](/help/integrations/aa.md)
    + [将 Journey Optimizer 数据与 CJA 集成](/help/integrations/ajo.md)
    + [将 Customer AI 数据与 CJA 集成](/help/integrations/customer-ai.md)
 + 用例 {#cja-usecases}
@@ -247,7 +248,7 @@ ht-degree: 97%
       + [将 Google Analytics 历史数据提取到平台](../use-cases/ga/backfill.md)
       + [将流式 Google Analytics 数据配置到 Platform](../use-cases/ga/streaming.md)
       + [在 CJA 中给出 Google Analytics 数据报告](../use-cases/ga/report.md)
-   + 数据摄取 {#data-ingestion}
+   + 数据获取 {#data-ingestion}
       + [摄取数据用例](../use-cases/data-ingestion/data-ingestion.md)
       + [将 Marketo Engage 数据摄取到 AEP 并在 CJA 中报告](../use-cases/data-ingestion/marketo.md)
       + [将 AEP 受众引入 CJA](../use-cases/data-ingestion/ingest-aep-segments.md)
@@ -259,7 +260,7 @@ ht-degree: 97%
    + 跨渠道数据 {#cross-channel}
       + [跨渠道分析数据](../use-cases/cross-channel/cross-channel.md)
       + [导入呼叫中心数据和网站数据](../use-cases/cross-channel/call-center.md)
-   + Adobe Analytics数据 {#aa-data}
+   + Adobe Analytics 数据 {#aa-data}
       + [使用“营销渠道”维度](../use-cases/aa-data/marketing-channels.md)
       + [将报告包与不同的架构相结合](../use-cases/aa-data/combine-report-suites.md)
    + [使用对象数组](../use-cases/object-arrays.md)
