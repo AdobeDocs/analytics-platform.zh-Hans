@@ -4,10 +4,10 @@ description: Customer Journey Analytics - 常见问题解答。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 91d9e473d38e12a7ba9cafea92c864641cebd206
-workflow-type: ht
-source-wordcount: '2371'
-ht-degree: 100%
+source-git-commit: 6eba4eb9f9ba879d9cb17e88b9e61e2f2b297f33
+workflow-type: tm+mt
+source-wordcount: '2157'
+ht-degree: 99%
 
 ---
 
@@ -110,28 +110,7 @@ ht-degree: 100%
 
 ## 9. 估算连接大小 {#estimate-size}
 
-您可能需要知道 [!UICONTROL Customer Journey Analytics] 中当前有多少行数据。要准确了解贵组织的事件数据记录（数据行）使用情况，请执行以下操作 **对于贵组织创建的每个连接**.
-
-1. 在 [!UICONTROL Customer Journey Analytics] 中，单击&#x200B;**[!UICONTROL 连接]**&#x200B;选项卡。
-
-   您现在可以看到所有当前连接的列表。
-
-1. 单击每个连接名称以转到连接管理器。
-
-1. 将 **[!UICONTROL 可用事件数据的记录]** ，用于创建的所有连接。 （根据连接的大小，数字可能需要一段时间才能显示。）
-
-   ![](assets/event-data.png)
-
-1. 获得所有事件数据行的总和后，在您的公司与 Adobe 签署的 Customer Journey Analytics 合同中查找“数据行”权利。
-
-   这可让您获得销售订单中授权的最大数据行数。 如果步骤 3 产生的数据行数大于此数值，则表示您出现过量情况。
-
-1. 要解决这种情况，您有以下几个选项：
-
-   * 更改[数据保留设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans#set-rolling-window-for-connection-data-retention)。
-   * [删除任何未使用的连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans#implications-of-deleting-data-components)。
-   * [在 AEP 中删除数据集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans#implications-of-deleting-data-components)。
-   * 请联系您的 Adobe 客户经理以获得额外容量的许可。
+请参阅 [评估和管理使用情况](/help/getting-started/estimate-usage.md).
 
 ## 10. 关于使用过量 {#overage}
 
