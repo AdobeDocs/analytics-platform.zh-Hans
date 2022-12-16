@@ -3,24 +3,25 @@ title: 评估和管理CJA使用情况
 description: 显示两种估计使用情况的方法和一种管理使用情况的方法。
 role: Admin
 feature: CJA Basics
-source-git-commit: 2bcf1f805a54581f13f7d08b9ef034535d7959b1
+exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
+source-git-commit: e8f5982ae073d4e3dca85b3054fd325cc40ff40a
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 42%
+source-wordcount: '810'
+ht-degree: 43%
 
 ---
 
-
 # 评估和管理CJA使用情况
 
-要了解CJA的用法，您可以使用2种方法：
+要了解CJA的用法，您可以使用3种方法：
 
-* 为每个连接添加事件数据行。 (请参阅 **预估连接大小** 下面)
-* 使用Analysis Workspace报告上个月的事件。 (请参阅 **使用所有事件数据创建工作区项目** )。
+* 为每个连接添加事件数据行。 (请参阅 **预估连接大小** 下面)这是查看特定时间戳的事件行数据（每个连接）的简便方法。
+* 使用Analysis Workspace报告上个月的事件。 (请参阅 **使用所有事件数据创建工作区项目** )。 这样，您便可以对使用数据以及使用历史记录进行更深入的分析。
+* 使用CJA API创建自动报表。 (请参阅 **在CJA API中创建报表** )。
 
 要管理CJA的使用情况，请执行以下操作：
 
-* 使用CJA API。 (请参阅 **在CJA API中创建报表** )。
+* 定义滚动数据窗口。 （请参阅下文。）
 
 ## 预估连接大小 {#estimate-size}
 
@@ -59,12 +60,33 @@ ht-degree: 42%
 
 1. 在工作区中创建项目之前， [创建数据视图](/help/data-views/create-dataview.md) 从您的所有连接中提取数据且未应用任何过滤器的数据。 换句话说，它包含您的所有数据。
 
-1. 在工作区中，创建新项目并提取所有事件(从 **[!UICONTROL 量度]** 下拉列表)。
+1. 在工作区中，创建新项目并提取所有事件(从 **[!UICONTROL 量度]** 下拉列表)，从当前CJA合同的第一天开始，到当月的第一个星期五。
 
    ![事件](assets/events-usage.png)
 
-1. 执行此操作
+   这将使您能够很好地了解每月使用情况的趋势。
 
-## 在CJA API中创建报表 {#api-report}
+1. 根据您的需求，您可以按数据集等进行深入分析。
 
-使用 [CJA报表API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) 运行所有事件数据的报告。
+
+## 在CJA API中创建自动报表 {#api-report}
+
+1. 使用 [CJA报表API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) 运行所有事件数据的报告， **每个连接**. 设置此设置以便报表运行
+
+   * 每个月的第三个星期五。
+   * 回到您当前CJA合同的第一天。
+
+   这将使您能够很好地了解每月使用情况的趋势。 它将为您提供所有CJA连接的总行数。
+
+1. 使用Excel进一步自定义此报表。
+
+## 定义滚动数据窗口 {#rolling}
+
+要管理您的使用情况，请 [连接UI](/help/connections/create-connection.md) 允许您在连接级别将CJA数据保留定义为以月（1个月、3个月、6个月等）为单位的滚动窗口。
+
+主要好处是，您只需存储或报告适用且有用的数据，并且可删除不再有用的旧数据。它可以帮助您保持在合同限制范围内，并减少超出预期成本的风险。
+
+如果您保留默认值（未选中），则保留期将被 Adobe Experience Platform 数据保留设置所取代。如果您在 Experience Platform 中有 25 个月的数据，那么 CJA 将通过回填获取 25 个月的数据。如果您在 Platform 中删除了其中的 10 个月，则 CJA 将保留剩余的 15 个月。
+
+数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此配置文件或查找数据集不存在滚动数据窗口设置。但是，如果您的连接包括任何配置文件或查找数据集（一个或多个事件数据集除外），则该数据将保留相同的时段。
+
