@@ -4,9 +4,9 @@ description: 显示两种估计使用情况的方法和一种管理使用情况�
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: e8f5982ae073d4e3dca85b3054fd325cc40ff40a
+source-git-commit: 9ee3bbfe77d6134bee85d4f1844e40894e16a5c7
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '804'
 ht-degree: 43%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 43%
 
 要管理CJA的使用情况，请执行以下操作：
 
-* 定义滚动数据窗口。 （请参阅下文。）
+* 定义滚动数据窗口。 (请参阅 **定义滚动数据窗口** )。
 
 ## 预估连接大小 {#estimate-size}
 
@@ -58,7 +58,7 @@ ht-degree: 43%
 
 ## 使用所有事件数据创建工作区项目 {#workspace-event-data}
 
-1. 在工作区中创建项目之前， [创建数据视图](/help/data-views/create-dataview.md) 从您的所有连接中提取数据且未应用任何过滤器的数据。 换句话说，它包含您的所有数据。
+1. 在工作区中创建项目之前， [创建数据视图](/help/data-views/create-dataview.md) ，且未应用任何过滤器。
 
 1. 在工作区中，创建新项目并提取所有事件(从 **[!UICONTROL 量度]** 下拉列表)，从当前CJA合同的第一天开始，到当月的第一个星期五。
 
