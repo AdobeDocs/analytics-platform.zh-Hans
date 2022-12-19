@@ -4,10 +4,10 @@ description: 显示两种估计使用情况的方法和一种管理使用情况�
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: f3f24c0a426d22184d2e7c18886d201c290ad18e
+source-git-commit: a69cb8a419d95e0cab666fceea9cb7ebf6daef73
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 42%
+source-wordcount: '857'
+ht-degree: 41%
 
 ---
 
@@ -63,6 +63,10 @@ ht-degree: 42%
 此方法允许您对使用数据以及使用历史记录进行更深入的分析。
 
 1. 在工作区中创建项目之前， [创建数据视图](/help/data-views/create-dataview.md) ，且不应用任何过滤器。
+
+>[!WARNING]
+>
+>    请勿创建仅用于测量使用情况的包含所有数据的新连接，因为这样实际上会使您的使用量增加一倍。
 
 1. 在工作区中，根据每个数据视图创建新项目并提取所有事件(从 **[!UICONTROL 量度]** 下拉列表)，从当前CJA合同的第一天开始，到当月的第一个星期五。
 
