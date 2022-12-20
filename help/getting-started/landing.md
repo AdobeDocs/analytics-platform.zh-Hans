@@ -1,6 +1,6 @@
 ---
 description: 介绍新登陆页面的功能。
-title: Customer Journey Analytics landing page
+title: Customer Journey Analytics 登陆页面
 role: User, Admin
 feature: CJA Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
@@ -11,7 +11,7 @@ ht-degree: 100%
 
 ---
 
-# Customer Journey Analytics landing page
+# Customer Journey Analytics 登陆页面
 
 Customer Journey Analytics登陆页面提供了项目经理主页和学习部分，可帮助您更有效地入门。
 
@@ -56,17 +56,17 @@ Customer Journey Analytics登陆页面提供了项目经理主页和学习部分
 | [!UICONTROL 类型] | 指示此类型是工作区项目还是移动记分卡。 |
 | [!UICONTROL 标记] | 您可以标记报告以将其整理到组中。 |
 | [!UICONTROL 项目角色] | 项目角色是指您是否为项目所有者，以及您是否具有编辑或复制项目的权限。 |
-|  | Tables and visualizations within a panel derive data from the data view selected in the top right of the panel. The data view also determines what components are available in the left rail. Within a project, you can use one or many data views, depending on your analysis use cases. The list of data views is sorted on relevance. Adobe defines relevance based on how recently and frequently the data view has been used by the current user, and how frequently the data view is used within the organization. |
+|  | 面板中的表格和可视化图表从面板右上角选择的数据视图中派生数据。数据视图还确定了左侧边栏中可用的组件。在项目中，可以根据分析用例使用一个或多个数据视图。数据视图列表按相关性排序。Adobe 根据当前用户最近使用数据视图的频率以及组织内部使用数据视图频率来定义相关性。 |
 | [!UICONTROL 所有者] | 创建项目的用户。 |
 | [!UICONTROL 共享对象] | 与谁共享了此项目。 |
 | [!UICONTROL 上次修改时间] | 上次修改此项目时。 |
 | [!UICONTROL 上次打开时间] | 您上次打开此项目的时间。 |
 | [!UICONTROL 已计划] | ****&#x200B;点击 **[!UICONTROL 开启]** 链接，您可以看到有关计划项目的信息。如果您是项目所有者，也可[编辑项目计划](/help/analysis-workspace/curate-share/t-schedule-report.md)。 |
-| [!UICONTROL 项目ID] | The project ID can be used for debugging projects. |
-|  | Longer date ranges increase project complexity and may increase processing and load times. |
-| [!UICONTROL 查询次数] | 较多的项目查询次数会增加项目的复杂性，并可能增加处理和加载时间。此数据仅在加载项目或发送计划项目后可用。 |
+| [!UICONTROL 项目ID] | 项目 ID 可用于调试项目。 |
+|  | 较长的日期范围会增加项目的复杂性，并可能增加处理和加载时间。 |
+| [!UICONTROL 查询次数] | 加载项目时向 Analytics 发出的请求总数。较多的项目查询次数会增加项目的复杂性，并可能增加处理和加载时间。此数据仅在加载项目或发送计划项目后可用。 |
 | 自定义表格图标 | （右上角）如果要在项目列表中添加或移除列，可以通过选择或取消选择列来实现。 |
-| &lt;（“返回”按钮） | 您离开登陆页面时的任何页面配置将在您返回时保留。 |
+| &lt;（“返回”按钮） | Workspace 项目中的此按钮将带您返回到最近的登陆页配置。您离开登陆页面时的任何页面配置将在您返回时保留。 |
 
 ## 在“学习”选项卡中导航 {#navigate-learning}
 
