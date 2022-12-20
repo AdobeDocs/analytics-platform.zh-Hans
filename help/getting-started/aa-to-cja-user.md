@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: 95b422ac44e2a25dfaa2198098185fe71c1fb204
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1457'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,8 +23,8 @@ CJA中的几项功能已重命名和重新设计，以符合行业标准。一�
 您在报表端所熟悉的许多内容并未发生更改。
 
 * 您仍然可以使用[分析工作区](/help/analysis-workspace/home.md)分析数据。工作区的操作方式与在传统Adobe Analytics中相同。
-* 相同版本 [Adobe Analytics功能板](/help/mobile-app/home.md) 可用，且在CJA与传统Analytics中的工作方式类似。
-* [Report Builder](/help/report-builder/report-buider-overview.md) 具有新界面，并可在 MS Windows、MacOS 和 Web 版本的 Excel 上运行。(在此版本的Report Builder之前，除非在VMware上运行Mac，否则无法在中使用。) 此版本尚不支持传统的AA数据请求。
+* 相同版本 [Adobe Analytics 功能板](/help/mobile-app/home.md) 可用，且在 CJA 与传统 Analytics 中的工作方式类似。
+* [Report Builder](/help/report-builder/report-buider-overview.md) 具有新界面，并可在 MS Windows、MacOS 和 Web 版本的 Excel 上运行。（在此版本的 Report Builder 之前，除非在 VMware 上运行 Mac，否则无法在中使用。） 此版本尚不支持传统的 AA 数据请求。
 
 ## 对报表的更改
 
@@ -68,7 +68,7 @@ Adobe 提供了多种将数据导入 Adobe Experience Platform 的方法，包�
 
 Adobe已将“区段”组件重命名为“过滤器”，以更好地符合行业标准，并更好地区分Adobe Experience Platform中的区段。
 
-[!UICONTROL Customer Journey Analytics] 不再使用eVar、prop或事件，而是使用它们已映射到的Experience Platform架构字段名称。 此更改意味着 Adobe Analytics中 的任何现有区段都与 [!UICONTROL Customer Journey Analytics] 不兼容。如果要将现有Adobe Analytics区段移动到Customer Journey Analytics，请观看以下视频：
+[!UICONTROL Customer Journey Analytics] 不再使用 eVar、prop 或事件，而是使用它们已映射到的 Experience Platform 架构字段名称。此更改意味着 Adobe Analytics中 的任何现有区段都与 [!UICONTROL Customer Journey Analytics] 不兼容。如果要将现有Adobe Analytics区段移动到Customer Journey Analytics，请观看以下视频：
 
 >[!VIDEO](https://video.tv.adobe.com/v/31982/?quality=12)
 
