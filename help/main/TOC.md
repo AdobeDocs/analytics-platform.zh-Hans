@@ -248,7 +248,7 @@ ht-degree: 99%
       + [将 Google Analytics 历史数据提取到平台](../use-cases/ga/backfill.md)
       + [将流式 Google Analytics 数据配置到 Platform](../use-cases/ga/streaming.md)
       + [在 CJA 中给出 Google Analytics 数据报告](../use-cases/ga/report.md)
-   + 数据获取 {#data-ingestion}
+   + 数据摄取 {#data-ingestion}
       + [摄取数据用例](../use-cases/data-ingestion/data-ingestion.md)
       + [将 Marketo Engage 数据摄取到 AEP 并在 CJA 中报告](../use-cases/data-ingestion/marketo.md)
       + [将 AEP 受众引入 CJA](../use-cases/data-ingestion/ingest-aep-segments.md)
