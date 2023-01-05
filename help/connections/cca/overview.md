@@ -4,9 +4,9 @@ description: 在多个数据集中重新生成访客 ID 的键值，以对访客
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 143979330addce3fce045d1785ae969c75a78d28
+source-git-commit: a9c4465ae099763c92cdc355de56d383ac625432
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1158'
 ht-degree: 97%
 
 ---
@@ -57,7 +57,6 @@ ht-degree: 97%
 * 基于字段的拼接不组合或连接字段。
 * 临时 ID 字段应仅包含一种类型的 ID（即 ID 仅来自一个命名空间）。例如，临时 ID 字段不应包含登录 ID 和电子邮件 ID 的组合。
 * 如果对于同一持久 ID 发生了多个具有同一时间戳的事件，但临时 ID 字段中有多个不同的值，则基于字段的拼接将根据字母顺序进行选择。因此，如果持久 ID A 具有时间戳相同的两个事件，其中一个事件指定 Bob，而另一个指定 Ann，则基于字段的拼接将选择 Ann。
-* 跨渠道分析跟踪每个持久 ID 值达 1 年（TTL = 1 年）。如果设备已超过一年没有活动，后又再次开始活动，则新事件将与匿名人员关联，直到该用户被重新识别（例如通过新的登录）。
 * 如果一台设备由多人共享，且用户之间的转换总数超过 50.000，CCA 将停止为该设备缝合数据。
 
 
