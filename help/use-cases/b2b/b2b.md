@@ -4,9 +4,9 @@ description: 了解如何将基于帐户的数据作为查询数据集添加到 
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: d2b21d6e4e092c33947220b2d22a8a757407fabb
+source-git-commit: f7d50753f4c6d64492682d7c1269a4d45aea8a31
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '853'
 ht-degree: 93%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 93%
 
 所有这些都可通过将帐户级别信息作为[查询](/help/getting-started/cja-glossary.md)数据集引入来实现。
 
-首先，在 Adobe Experience Platform 中创建一个查询架构，然后通过引入基于 .csv 的帐户级别数据来创建查询表数据集。接着，继续在 Customer Journey Analytics 中创建一个连接（CJA0，可合并不同数据集，包括您创建的查询数据集）。您随后创建一个数据视图，最后能够在 Workspace 中利用所有这些数据。
+首先，在 Adobe Experience Platform 中创建一个查询架构，然后通过引入基于 .csv 的帐户级别数据来创建查询表数据集。然后，继续在Customer Journey Analytics(CJA)中创建可合并不同数据集（包括您创建的查询数据集）的连接。 您随后创建一个数据视图，最后能够在 Workspace 中利用所有这些数据。
 
 >[!NOTE]
 >
@@ -38,12 +38,6 @@ ht-degree: 93%
 ## 2. 创建查询数据集 (Experience Platform)
 
 创建模式后，需使用该模式在 Experience Platform 中创建一个查询数据集。这个查询数据集包含帐户级别的营销信息，例如：公司名称、员工总数、域名、公司所属行业、年收入、当前是否为 Experience Platform 客户、当前处于哪个销售阶段、帐户内的哪个团队在使用 CJA，等等。
-
->[!IMPORTANT]
->
->CJA 不支持在查询数据集中使用整数。如果您在查询数据集的 XDM 模式中添加整数字段，则不能将这些整数用作量度或计算量度。例如，如果将annualRevenue或totalEmployees定义为整数，则它们将在CJA的报表中显示为“0”。 但是，如果将它们指定为字符串，则可以将它们用作查询信息。
-
-例如，在以下示例中，年度收入或totalEmployees被定义为整数 — 这是它在CJA中显示“0”的原因。
 
 1. 在 Adobe Experience Platform 中，转到&#x200B;**[!UICONTROL 数据管理 > 数据集]**。
 1. 单击 **[!UICONTROL + 创建数据集]**。
@@ -96,4 +90,4 @@ ht-degree: 93%
 * 可确定有多少员工被映射到某个特定的帐户 ID。
 * 还可以确定某个帐户 ID 属于哪个行业。
 
-![](../assets/project-lookup.png)
+![project-lookup2](https://git.corp.adobe.com/storage/user/5902/files/348183a8-343c-497e-b270-4fc02b32cb9e)
