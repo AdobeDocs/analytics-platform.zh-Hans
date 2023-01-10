@@ -4,9 +4,9 @@ description: 可设置用户的常规和项目首选项。
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 652ae043f504ff71e8ed469a33f2ef4ebf1c7d04
+source-git-commit: 0031f27412e7997f8c9b9d2d11c7ecbcbe63de03
 workflow-type: tm+mt
-source-wordcount: '2475'
+source-wordcount: '2439'
 ht-degree: 49%
 
 ---
@@ -155,11 +155,6 @@ ht-degree: 49%
 | **[直方图](/help/analysis-workspace/visualizations/histogram.md)** |  |  |
 |  | 存储段数 | 在可视化中选择数据范围（分段）的数量。 存储段的最大数量为 50。 <p>有关更多信息，请参阅 [直方图](/help/analysis-workspace/visualizations/histogram.md).</p> |
 |  | 计数方法 | 从以下选项中进行选择： <ul><li>点击</li><li>访问</li><li>访客</li></ul> <p>例如，与页面查看次数结合使用时，您可以选择每位访客的页面查看次数、每次访问的页面查看次数或每次点击的页面查看次数。 对于点击来说，“发生次数”可作为自由格式表中的 y 轴量度。</p> |
-| **地图** |  |  |
-|  | 绘制维度图 | <ul><li>移动经度/纬度</li><li>地理维度</li></ul> |
-|  | 映射类型 | <ul><li>气泡</li><li>热图</li></ul> |
-|  | 颜色主题 | 可选择珊瑚色、红色、绿色、蓝调、热图和正/负。 |
-|  | 映射样式 | 从“基本”、“街道”、“明亮”、“亮”、“暗”和“卫星”中进行选择。 |
 | **[概要变化](/help/analysis-workspace/visualizations/summary-number-change.md)** |  |  |
 |  | 值 | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>百分比变化</li><li>原始差异</li></ul> |
 |  | 百分比 | 以百分比形式显示“概要变化”可视化图表的值。 |
