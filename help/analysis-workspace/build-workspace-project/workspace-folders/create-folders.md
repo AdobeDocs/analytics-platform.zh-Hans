@@ -3,13 +3,11 @@ description: 了解如何在 Workspace 中创建文件夹和子文件夹
 keywords: Analysis Workspace
 title: 创建文件夹
 feature: CJA Workspace Basics
-hide: true
-hidefromtoc: true
 exl-id: c83c3526-a8d0-4094-b4c4-46cf70e1a365
-source-git-commit: bb6e4dcc1c917fcfb565430232e3c5562f63fd1a
-workflow-type: ht
-source-wordcount: '152'
-ht-degree: 100%
+source-git-commit: a8b874bfbe9d3586140f93c1dcef2403ca5707cc
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 93%
 
 ---
 
@@ -17,11 +15,7 @@ ht-degree: 100%
 
 可将新文件夹或子文件夹添加到 Workspace 登陆页上的项目和文件夹列表。
 
->[!NOTE]
->
->目前此功能处于测试阶段。某些屏幕可能会有所变更。
-
-## 创建新文件夹
+## 创建新文件夹 {#create-new-folder}
 
 要创建新文件夹，请执行以下操作
 
@@ -29,7 +23,7 @@ ht-degree: 100%
 
 1. 输入新文件夹的名称。
 
-1. 从下拉菜单中选择标记。
+1. 从下拉菜单中选择标记或添加新标记。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/select-tags.png)
 
@@ -41,7 +35,7 @@ ht-degree: 100%
 
    ![](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
 
-## 创建子文件夹
+## 创建子文件夹 {#create-subfolder}
 
 通过子文件夹，可提供额外级别的项目管理和组织。
 

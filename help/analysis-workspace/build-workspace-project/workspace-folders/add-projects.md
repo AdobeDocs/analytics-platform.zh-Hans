@@ -3,12 +3,10 @@ description: 了解如何在 Workspace 中添加文件夹
 keywords: Analysis Workspace
 title: 在 Workspace 中添加文件夹
 feature: CJA Workspace Basics
-hide: true
-hidefromtoc: true
 exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
-source-git-commit: bb6e4dcc1c917fcfb565430232e3c5562f63fd1a
-workflow-type: ht
-source-wordcount: '225'
+source-git-commit: a8b874bfbe9d3586140f93c1dcef2403ca5707cc
+workflow-type: tm+mt
+source-wordcount: '214'
 ht-degree: 100%
 
 ---
@@ -17,11 +15,7 @@ ht-degree: 100%
 
 可在表格视图中或从文件夹内将项目添加到文件夹。
 
->[!NOTE]
->
->目前此功能处于测试阶段。某些屏幕可能会有所变更。
-
-## 从表格视图中
+## 从表格视图中 {#table-view}
 
 从主页上的表格视图中将项目添加到文件夹。
 
@@ -47,7 +41,7 @@ ht-degree: 100%
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
 
-## 从文件夹内
+## 从文件夹内 {#inside-folder}
 
 还可使用省略号链接从文件夹内添加项目。
 
@@ -69,7 +63,11 @@ ht-degree: 100%
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-add-multiple-projects.png)
 
-1. 单击&#x200B;**添加**&#x200B;将这些项目添加到该文件夹。
+1. 单击&#x200B;**添加**&#x200B;以将这些项目添加到该文件夹。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-added-items.png)
-只有管理员可将项目添加到公司文件夹或创建新项目并将它保存到公司文件夹
+
+
+>[!NOTE]
+>
+>只有管理员可将项目添加到公司文件夹或创建新项目并将它保存到公司文件夹

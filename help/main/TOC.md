@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Customer Journey Analytics (CJA) 以及如何将 Analysis Workspace 用于来自 Experience Platform 的数据。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: f3f24c0a426d22184d2e7c18886d201c290ad18e
+source-git-commit: aff7b978382446e705d6507dbaa07790bd1dd2ae
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 99%
+source-wordcount: '835'
+ht-degree: 98%
 
 ---
 
@@ -83,6 +83,7 @@ ht-degree: 99%
       + Workspace 中的文件夹 {#workspace-folders}
          + [关于 Workspace 中的文件夹](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [创建文件夹和子文件夹](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+         + [删除文件夹](../analysis-workspace/build-workspace-project/workspace-folders/delete-folders.md)
          + [添加项目](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
          + [删除项目](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
          + [保存新项目](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
@@ -177,6 +178,7 @@ ht-degree: 99%
    + [使用过滤器](../report-builder/work-with-filters.md)
    + [筛选维度](../report-builder/filter-dimensions.md)
    + [管理数据块](../report-builder/manage-reportbuilder.md)
+   + [计划工作簿](../report-builder/schedule-reportbuilder.md)
    + [限制标签](../report-builder/restricted-labels.md)
    + [Report Builder 设置](../report-builder/report-builder-settings.md)
 + 组件 {#cja-components}

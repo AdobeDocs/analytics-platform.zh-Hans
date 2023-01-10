@@ -1,0 +1,31 @@
+---
+description: 了解如何在工作区中删除文件夹
+keywords: Analysis Workspace
+title: 删除工作区中的文件夹
+feature: CJA Workspace Basics
+source-git-commit: aedc4ff099327e5b6ac7e9a171f90c5c15738585
+workflow-type: tm+mt
+source-wordcount: '72'
+ht-degree: 2%
+
+---
+
+
+# 删除文件夹
+
+您可以删除您创建的文件夹。
+
+>[!NOTE]
+>
+>删除文件夹不会删除文件夹的内容。 已删除文件夹（项目或子文件夹）的内容将移至文件夹层次结构中上方的直接文件夹。
+
+1. 单击 **...** 右上角的省略号图标。
+
+   ![](/help/analysis-workspace/build-workspace-project/assets/select-delete-folder.png)
+
+1. 选择 **删除文件夹**.
+
+   确认通知表示文件夹已删除。
+
+   ![](/help/analysis-workspace/build-workspace-project/assets/deleted-folder.png)
+
