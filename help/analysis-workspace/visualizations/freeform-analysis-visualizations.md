@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: 可视化图表概述
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
-workflow-type: ht
-source-wordcount: '1043'
-ht-degree: 100%
+source-git-commit: 5107c1ed145579c7da27ce50c13543196fcf6fe3
+workflow-type: tm+mt
+source-wordcount: '1136'
+ht-degree: 91%
 
 ---
 
@@ -40,6 +40,24 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | [文本](/help/analysis-workspace/visualizations/text.md) | 使您克将用户定义的文本添加到您的工作区。在利用面板/可视化图表描述之外，对于向您的分析和见解添加额外的上下文非常有用 |
 | [树图](/help/analysis-workspace/visualizations/treemap.md) | 将分层（树结构）数据显示为一组嵌套的矩形。 |
 | [维恩图](/help/analysis-workspace/visualizations/venn.md) | 使用圆圈来描述最多 3 个过滤器之间的量度重叠。 |
+
+## 自定义可视化设置
+
+您可以自定义单个可视化图表的可视化图表设置，也可以自定义您创建的所有可视化图表的可视化图表设置。
+
+### 自定义单个可视化的可视化设置
+
+访问 [!UICONTROL 可视化设置] 对于单个可视化：
+
+1. 在Analysis Workspace中，将鼠标悬停在要自定义其设置的可视化上。
+
+1. 单击齿轮图标。
+
+   每种类型的可视化图表都有可自定义的唯一设置。 有关可用设置的信息，请参阅 [设置](#settings).
+
+### 自定义您创建的所有可视化的可视化设置
+
+您可以自定义您创建的所有可视化的设置。 有关更多信息，请参阅 [用户首选项](/help/analysis-workspace/user-preferences.md).
 
 ## 设置 {#settings}
 
