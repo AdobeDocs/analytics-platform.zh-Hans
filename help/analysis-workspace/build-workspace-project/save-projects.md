@@ -4,10 +4,10 @@ title: 保存项目
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: b35520d22fdd6ee39972e3500b3d6968c2dfeadd
+source-git-commit: 8845d3e7142c5eb0f9007d7f9b5cd9e52017f31e
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 42%
+source-wordcount: '726'
+ht-degree: 39%
 
 ---
 
@@ -32,17 +32,22 @@ Analysis Workspace中的项目每2分钟自动保存一次。
    | **[!UICONTROL 另存为]** | 创建项目副本。原始项目不受影响。 |
    | **[!UICONTROL 另存为模板]** | 将您的项目另存为[自定义模板](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=zh-Hans)，贵组织可在&#x200B;**[!UICONTROL 项目 > 新建]**&#x200B;下使用该模板 |
 
-   ![](assets/save-project.png)
-
 ## 自动保存 {#Autosave}
 
 Analysis Workspace中的所有项目每2分钟自动保存到本地计算机。 这包括尚未手动保存的新创建项目。
 
 * **新项目：** 即使新项目已自动保存，您仍必须首次手动保存每个新项目。 Analysis Workspace在切换到其他项目、关闭浏览器选项卡等时，会提示您手动保存新项目。
 
-   如果出于任何原因，您在手动保存之前意外失去了对新创建项目的访问权限，则您项目的恢复版本会保存在Analysis Workspace登录页面上名为 `Recovered Projects (Last 7 Days)`.
+   如果出于任何原因，您在手动保存之前意外失去了对新创建项目的访问权限，则您项目的恢复版本会保存在Analysis Workspace登录页面上名为 `Recovered Projects (Last 7 Days)`. 您必须恢复已恢复的项目，然后手动将其保存到所需位置。
 
-   ![](assets/recovered-folder.png)
+   要恢复已恢复的项目，请执行以下操作：
+
+   1. 转到 [!UICONTROL **已恢复的项目**] 文件夹。
+
+      ![](assets/recovered-folder.png)
+
+   1. 打开您的项目并将其保存到所需的位置。
+
 
 * **现有项目：** 如果您出于任何原因离开的项目时更改尚未自动保存，Analysis Workspace会提示您保存更改或提供警告消息。
 

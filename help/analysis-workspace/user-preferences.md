@@ -4,7 +4,7 @@ description: 可设置用户的常规和项目首选项。
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 0031f27412e7997f8c9b9d2d11c7ecbcbe63de03
+source-git-commit: 8845d3e7142c5eb0f9007d7f9b5cd9e52017f31e
 workflow-type: tm+mt
 source-wordcount: '2439'
 ht-degree: 49%
@@ -39,7 +39,7 @@ ht-degree: 49%
 | --- | --- |
 | 登陆页面 | 选择访问Adobe Analytics时显示的默认页面： <ul><li>项目列表（默认）</li><li>空白项目</li><li>特定项目在列表中选定</li></ul> |
 | 显示提示 | 在Analysis Workspace右下方的蓝色框中显示提示。 <p>默认情况下，此选项处于启用状态。</p> |
-| <span class="preview">左边栏组中显示的组件</span> | 在左边栏的“组件”菜单中选择要显示的每个组件数量。 <p>如果选择0，则无法再从工作区的左边栏访问组件。</p><p>默认情况下，将为以下每个组件显示5个组件：</p> <ul><li>维度</li><li>指标</li><li>筛选器</li><li>日期范围</li></ul> <p>有关Analysis Workspace中组件的更多信息，请参阅 [组件概述](/help/components/overview.md).</p> |
+| 左边栏组中显示的组件 | 在左边栏的“组件”菜单中选择要显示的每个组件数量。 <p>如果选择0，则无法再从工作区的左边栏访问组件。</p><p>默认情况下，将为以下每个组件显示5个组件：</p> <ul><li>维度</li><li>指标</li><li>筛选器</li><li>日期范围</li></ul> <p>有关Analysis Workspace中组件的更多信息，请参阅 [组件概述](/help/components/overview.md).</p> |
 
 ## 项目首选项
 
@@ -53,7 +53,7 @@ ht-degree: 49%
 | --- | --- | --- |
 | **显示** |  |  |
 |  | [视图密度](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html?lang=zh-Hans) | 通过减小左边栏、自由格式表和同类群组表的垂直边距，选择要在屏幕上显示多少内容。 <ul><li>紧凑</li><li>舒适</li><li>展开（默认）</li></ul> |
-|  | [调色板](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=zh-Hans) | 选择在Analysis Workspace中使用的可视化调色板。 <ul><li>Adobe 提供的调色板（默认）</li><li><span class="preview">条件格式化调色板 </span></li><li><span class="preview">上/下调色板（发散）</span><li>自定义调色板</li></ul> |
+|  | [调色板](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=zh-Hans) | 选择在Analysis Workspace中使用的可视化调色板。 <ul><li>Adobe 提供的调色板（默认）</li><li>条件格式化调色板 </li><li>上/下调色板（发散）<li>自定义调色板</li></ul> |
 | **数据** |  |  |
 |  | [报表包](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=zh-Hans?#report-suite) | 从表和可视化图表获取其数据的位置进行选择。 <ul><li>最近（默认）</li><li>从列表中选择特定报表包</li></ul> |
 |  | [日历](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=zh-Hans?#calendar) | 从以下列表中选择： <ul><li>Adobe 提供的范围（默认为“本月”）</li><li>自定义范围</li></ul> |
