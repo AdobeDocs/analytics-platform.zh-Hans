@@ -4,16 +4,16 @@ description: 了解 CJA 如何报告数据层次结构。
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '418'
-ht-degree: 100%
+source-git-commit: 04aaf9ae9f720255c97c9dc148953b5b9d6967ae
+workflow-type: tm+mt
+source-wordcount: '432'
+ht-degree: 96%
 
 ---
 
 # 使用对象数组
 
-某些平台架构可以具有对象数组。最常见的示例之一是包含多个产品的购物车。每个产品都有一个名称、SKU、类别、价格、数量以及要跟踪的任何其他维度。所有这些方面都有不同的要求，但必须都属于相同点击。
+某些平台架构可以具有对象数组。CJA支持在事件、查找和配置文件数据中摄取和报告对象数组。 最常见的示例之一是包含多个产品的购物车。每个产品都有一个名称、SKU、类别、价格、数量以及要跟踪的任何其他维度。所有这些方面都有不同的要求，但必须都属于相同点击。
 
 在以前版本的 Adobe Analytics 中，此功能是通过 `products` 变量实现的。它是一个连接字符串，用分号 (`;`) 分隔以区分产品不同方面，同时用逗号 (`,`) 描述不同产品。它是有限支持“对象数组”的唯一变量。多值变量（如列表变量）可以支持数组的等效内容，但它们不能支持“对象数组”。CJA 通过支持单行数据中任意深度的层次结构扩展了这一概念，任何以前版本的 Adobe Analytics 均不提供该功能。
 

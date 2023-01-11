@@ -4,10 +4,10 @@ description: 解释如何将 AEP 受众纳入 Customer Journey Analytics 以进�
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+source-git-commit: 04aaf9ae9f720255c97c9dc148953b5b9d6967ae
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 100%
+source-wordcount: '937'
+ht-degree: 96%
 
 ---
 
@@ -88,6 +88,6 @@ RTCP 中可能已经有来自不同来源的受众。 选择一个或多个受�
 * 您应该定期执行此过程，以便在 CJA 中不断刷新受众数据。
 * 您可以在单个 CJA 连接中导入多个访问群体。 这增加了流程的复杂性，但这是可能的。 为此，您需要对上述过程进行一些修改：
    1. 在 RTCP 中，为受众集合中的每个所需受众执行此过程。
-   1. 在执行导出作业输出的转换时，您需要创建一个 `audienceMembershipId(s)` 列表，因为一个 CJA 人员 ID 可能属于多个受众。在将来的某个时候，CJA 将支持概要数据集中的阵列/对象阵列。 一旦这些都得到支持，为 `audienceMembershipId` 或 `audienceMembershipIdName` 使用对象数组将是最好的选择。在此期间，提取导出作业输出中每个用户档案 ID 的所有当前受众 ID（状态为“已实现”或“已输入”），并将其放入逗号分隔的值字符串中（即，`<id1>,<id2>,...`）。如果有状态为“退出”的受众 ID，请确保该 ID 不在列表中。  如果要维护与 ID 的友好名称关联，可以将其附加到列表中每个 ID 的末尾（以及任何其他元数据）。
+   1. CJA支持配置文件数据集中的数组/对象数组。 使用 [对象数组](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=en) 对于audienceMembersipId或audienceMembersipIdName，是最佳选项。
    1. 在数据视图中，在 `audienceMembershipId` 字段上使用子字符串转换创建新维度，以将逗号分隔的值字符串转换为数组。 注意：数组中当前限制为 10 个值。
    1. 现在，您可以在 CJA 工作区中报告此新维度 `audienceMembershipIds`。
