@@ -4,10 +4,10 @@ title: Customer Journey Analytics 登陆页面
 role: User, Admin
 feature: CJA Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 617be3cad41fd4a4fe9d26fc5253e7af801c7bd4
+source-git-commit: 88f38de837a23f9b0833c5c6b534b3ed567207a6
 workflow-type: tm+mt
-source-wordcount: '1279'
-ht-degree: 55%
+source-wordcount: '1424'
+ht-degree: 50%
 
 ---
 
@@ -67,6 +67,18 @@ Customer Journey Analytics的登陆页面亮点 [!DNL Analysis Workspace] 以及
 | 自定义表格图标 | 选择要在表中查看的列。 要在项目列表中添加或删除列，请单击列图标(![全部登陆](assets/select-column.png) )，然后选择或取消选择列标题。 |
 | 节目：文件夹和项目或所有项目 | 更改表格中的视图设置，以根据您的文件夹组织显示文件夹和项目 **或** 以无组织的列表显示所有项目。 |
 | &lt;（“返回”按钮） | 可返回到工作区项目中最近的登陆页面配置。 您离开登陆页面时拥有的页面配置将在您返回时持续保留。 |
+
+### 弃用“项目管理器”页面 {#deprecate-pm-page}
+
+在新登陆页面的发布中，我们弃用了项目管理器，如组件管理器下所列。 新登录页面可处理旧项目管理器页面等的所有功能。
+
+“项目管理器”页面的一个常见用例是查看您的所有项目。 要使用过滤器边栏查看新登陆页面上的所有项目，请选择 **其他过滤器** 然后选择 **显示全部**.
+
+![其他过滤器](assets/other-filters.png)
+
+如果您处于“文件夹和项目”视图中，将弹出一个模式窗口，询问您是否要切换到“所有项目”视图，这样可以更轻松地在可能组织的任何文件夹之外查看所有项目。   选择 **切换到“所有项目”视图** 以便更好地查看您有权访问的所有项目。
+
+![切换到所有项目](assets/switch-all-projects-view.png)
 
 ## 在“学习”选项卡中导航 {#navigate-learning}
 
