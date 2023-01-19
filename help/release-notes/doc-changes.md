@@ -4,7 +4,7 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 6eba4eb9f9ba879d9cb17e88b9e61e2f2b297f33
+source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 99%
@@ -124,7 +124,7 @@ CJA 文档自创建以来进行了以下更新。
 | 2020 年 11 月 2 日 | 对 [Customer Journey Analytics 功能支持](/help/getting-started/aa-vs-cja/cja-aa.md)页面进行了更新。 |
 | 2020 年 11 月 | 添加了有关为连接[删除回填限制](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans#backfill-historical-data)的内容。 |
 | 2020 年 10 月 7 日 | 添加了有关[合并事件数据集](/help/connections/combined-dataset.md)的主题。 |
-| 2020 年 9 月 15 日 | 添加了有关[数据摄取](/help/use-cases/data-ingestion/data-ingestion.md)的主题。 |
+| 2020 年 9 月 15 日 | 添加了有关[数据摄取](/help/data-ingestion/data-ingestion.md)的主题。 |
 | 2020 年 9 月 2 日 | 更新了有关[用户权限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=zh-Hans)的部分。 |
 | 2020 年 8 月 7 日 | 添加了有关 [B2B 用例 - 查找数据集](/help/use-cases/b2b/b2b.md)的新主题。 |
 | 2020 年 7 月 | 添加了有关[人员 ID 的标识映射选项](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans)的信息。 |
