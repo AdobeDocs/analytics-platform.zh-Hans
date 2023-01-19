@@ -4,7 +4,7 @@ description: 说明如何通过Adobe Experience Platform Web SDK和边缘网络�
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
+source-git-commit: 325dcd0862b8ac06b3b26c3ae349a8fce757cb6c
 workflow-type: tm+mt
 source-wordcount: '3587'
 ht-degree: 7%
@@ -523,7 +523,7 @@ Adobe Experience Platform标记支持简单到复杂的发布工作流程，这�
 
       - 已设置 **[!UICONTROL 导入所有新数据]** 和 **[!UICONTROL 数据集回填现有数据]** 根据您的喜好。
 
-      ![配置数据集](./assets/cja-connections-3.png)
+      ![配置数据集](./assets/cja-connections-3b.png)
 
    - 选择 **[!UICONTROL 添加数据集]**.
    选择&#x200B;**[!UICONTROL 保存]**。
