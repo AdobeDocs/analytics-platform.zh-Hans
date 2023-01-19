@@ -4,7 +4,7 @@ description: 将维度归因于对象阵列，以进行复杂的持久性分析�
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
 source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1330'
 ht-degree: 100%
 
@@ -247,7 +247,7 @@ Adobe Analytics 中最常见的促销方法之一是将搜索词绑定到产品�
 
 | search_term | 收入 |
 | --- | --- |
-| 鞋子 | US$204.97 |
+| 鞋子 | $204.97 |
 
 本例仅包括一位访客，而许多搜索不同东西的访客可能会将搜索词错误地归因于不同的产品，使得确定最佳搜索结果变得困难。
 
