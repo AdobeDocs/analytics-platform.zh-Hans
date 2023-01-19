@@ -4,16 +4,25 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
+source-git-commit: 4488c87604db363ca4ddb0954216b195990c8bb1
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 99%
+source-wordcount: '1214'
+ht-degree: 96%
 
 ---
 
 # Customer Journey Analytics - 文档更新
 
 CJA 文档自创建以来进行了以下更新。
+
+## 2023 {#23}
+
+| 功能 | 描述 |
+| --- | --- |
+| **2023 年 1 月** |  |
+| 文件夹 | 专用页面 [文件夹管理](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
+| 用户首选项 | 许多其他用户首选项现在在 [首选项](/help/analysis-workspace/user-preferences.md). |
+| 自动保存项目 | 更新了内容，以在 [保存项目](/help/analysis-workspace/build-workspace-project/save-projects.md). |
 
 ## 2022
 
