@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Customer Journey Analytics (CJA) 以及如何将 Analysis Workspace 用于来自 Experience Platform 的数据。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: eb7b53816fcc325f6a72ae145c8cf8a633375578
+source-git-commit: 11ad1c91d07e8d4d6dd0186de68b1cc1d715ffe1
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '860'
 ht-degree: 96%
 
 ---
@@ -61,10 +61,7 @@ ht-degree: 96%
    + [管理连接](../connections/manage-connections.md)
    + [合并事件数据集](../connections/combined-dataset.md)
    + [标准查找](../connections/standard-lookups.md)
-   + 跨渠道分析 {#cca}
-      + [跨渠道分析概述](../connections/cca/overview.md)
-      + [重播的工作原理](../connections/cca/replay.md)
-      + [跨渠道分析常见问题解答](../connections/cca/faq.md)
+   + [跨渠道分析](../connections/cca.md)
 + 数据视图 {#cja-dataviews}
    + [数据视图概述](../data-views/data-views.md)
    + [创建或编辑数据视图](../data-views/create-dataview.md)
@@ -177,18 +174,6 @@ ht-degree: 96%
       + [管理要求](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Analysis Workspace 中的辅助功能](../analysis-workspace/workspace-faq/aw-accessibility.md)
       + [Analysis Workspace 中的长尾](../analysis-workspace/workspace-faq/long-tail.md)
-+ Report Builder {#cja-reportbuilder}
-   + [Report Builder 概述](../report-builder/report-buider-overview.md)
-   + [Report Builder 设置](../report-builder/report-builder-setup.md)
-   + [创建数据块](../report-builder/create-a-data-block.md)
-   + [Report Builder 中心](../report-builder/report-builder-hub.md)
-   + [选择日期范围](../report-builder/select-date-range.md)
-   + [使用过滤器](../report-builder/work-with-filters.md)
-   + [筛选维度](../report-builder/filter-dimensions.md)
-   + [管理数据块](../report-builder/manage-reportbuilder.md)
-   + [计划工作簿](../report-builder/schedule-reportbuilder.md)
-   + [限制标签](../report-builder/restricted-labels.md)
-   + [Report Builder 设置](../report-builder/report-builder-settings.md)
 + 组件 {#cja-components}
    + [组件概述](../components/overview.md)
    + 批注 {#annotations}
@@ -246,11 +231,31 @@ ht-degree: 96%
    + [创建移动记分卡](../mobile-app/create-scorecard.md)
    + [设置执行用户以使用功能板](../mobile-app/set-up-execs.md)
    + [执行用户快速入门指南](../mobile-app/executive.md)
++ Report Builder {#cja-reportbuilder}
+   + [Report Builder 概述](../report-builder/report-buider-overview.md)
+   + [Report Builder 设置](../report-builder/report-builder-setup.md)
+   + [创建数据块](../report-builder/create-a-data-block.md)
+   + [Report Builder 中心](../report-builder/report-builder-hub.md)
+   + [选择日期范围](../report-builder/select-date-range.md)
+   + [使用过滤器](../report-builder/work-with-filters.md)
+   + [筛选维度](../report-builder/filter-dimensions.md)
+   + [管理数据块](../report-builder/manage-reportbuilder.md)
+   + [计划工作簿](../report-builder/schedule-reportbuilder.md)
+   + [限制标签](../report-builder/restricted-labels.md)
+   + [Report Builder 设置](../report-builder/report-builder-settings.md)
++ 跨渠道分析 {#cca}
+   + [跨渠道分析概述](../cca/overview.md)
+   + [重播的工作原理](../cca/replay.md)
+   + [跨渠道分析常见问题解答](../cca/faq.md)
 + Adobe 集成 {#integrations}
    + [关于将 Adobe 解决方案与 CJA 集成的概述](/help/integrations/overview.md)
    + [将 Adobe Analytics 与 Customer Journey Analytics 集成](/help/integrations/aa.md)
    + [将 Journey Optimizer 数据与 CJA 集成](/help/integrations/ajo.md)
    + [将 Customer AI 数据与 CJA 集成](/help/integrations/customer-ai.md)
++ 数据管理 {#cja-privacy}
+   + [数据管理](../privacy/privacy-overview.md)
+   + [审核日志](../privacy/audit-log.md)
+   + [客户管理的密钥](../privacy/cmk.md)
 + 用例 {#cja-usecases}
    + [Customer Journey Analytics 用例](../use-cases/cja-usecases.md)
    + Google Analytics 数据{#ga}
@@ -277,8 +282,4 @@ ht-degree: 96%
    + [Labs 用户指南](../labs/labs.md)
 + 故障排除 {#troubleshooting}
    + [将 Adobe Analytics 数据与 CJA 数据进行比较](../troubleshooting/compare.md)
-+ 数据管理 {#cja-privacy}
-   + [数据管理](../privacy/privacy-overview.md)
-   + [审核日志](../privacy/audit-log.md)
-   + [客户管理的密钥](../privacy/cmk.md)
 + [CJA API](https://developer.adobe.com/cja-apis/docs/)

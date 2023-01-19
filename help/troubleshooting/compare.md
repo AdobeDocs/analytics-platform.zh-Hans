@@ -4,10 +4,10 @@ description: 了解如何比较 Adobe Analytics 数据和 Customer Journey Analy
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: 2088fd98510887e86cffb6bd957d32a35fcfc467
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
 workflow-type: tm+mt
 source-wordcount: '828'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 90%
 
 >[!NOTE]
 >
->这仅适用于常规中间值数据集，不适用于拼合的数据集（借助[跨渠道分析](/help/connections/cca/overview.md)）。请注意，将在 CJA 中使用的人员 ID 考虑在内对于使这一比较发挥作用至关重要。可能并非总是很容易在 AA 中复制该内容，尤其是在已启用跨渠道分析的情况下。
+>这仅适用于常规中间值数据集，不适用于拼合的数据集（借助[跨渠道分析](/help/cca/overview.md)）。请注意，将在 CJA 中使用的人员 ID 考虑在内对于使这一比较发挥作用至关重要。可能并非总是很容易在 AA 中复制该内容，尤其是在已启用跨渠道分析的情况下。
 
 1. 在 Adobe Experience Platform [查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html)中，运行以下的[!UICONTROL 按时间戳的总记录数]查询：
 
@@ -90,4 +90,4 @@ CJA [连接](/help/connections/create-connection.md)允许您跨数据集基于�
 
 * **缺少人员 ID** -（事件数据集和/或配置文件/查找数据集）缺少人员 ID 将导致忽略或跳过这些记录。原因是没有共同的 ID 或匹配的键可连接这些记录。
 
-* **人员 ID 无效或过大** – 对于无效的 ID，系统将无法在要连接的数据集中找到有效的共同 ID。在某些情况下，人员 ID 列具有无效的人员 ID，例如“未定义”或“00000000”。每个月在某个事件中出现超过 100 万次的人员 ID（数字和字母的任意组合）无法归因到任何特定的用户或个人。它将被归为无效。无法将这些记录引入到系统中，并将导致引入和报表容易出错。
+* **人员 ID 无效或过大** – 对于无效的 ID，系统将无法在要连接的数据集中找到有效的共同 ID。在某些情况下，人员ID列具有无效的人员ID，如“未定义”或“00000000”。 每个月在某个事件中出现超过 100 万次的人员 ID（数字和字母的任意组合）无法归因到任何特定的用户或个人。它将被归为无效。无法将这些记录引入到系统中，并将导致引入和报表容易出错。

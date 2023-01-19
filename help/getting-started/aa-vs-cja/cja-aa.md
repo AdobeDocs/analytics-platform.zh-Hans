@@ -4,10 +4,10 @@ description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 57d1f48c363bda93b4b28425794a55ef269b31c4
-workflow-type: ht
-source-wordcount: '1535'
-ht-degree: 100%
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
+workflow-type: tm+mt
+source-wordcount: '1537'
+ht-degree: 98%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 100%
 | 功能 | 注释 |
 | --- | --- |
 | 营销渠道 | 营销渠道数据通过 Analytics Source Connector 流入 CJA。仍必须在传统 Adobe Analytics 中配置营销渠道规则，并且不支持某些规则。有关更多详细信息，请参阅 [CJA 营销渠道文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=zh-Hans#cja-usecases)。此外，对于 WebSDK 实施，还提供在客户端定义营销渠道的插件。有计划以后支持报表时间营销渠道处理规则。 |
-| 跨设备/跨渠道拼接 | 对于直接包含身份信息的数据集（也称为“基于字段的”拼接）支持；尚不支持基于图形的拼接，但已有计划要支持。请参阅[跨渠道分析](/help/connections/cca/overview.md)。 |
+| 跨设备/跨渠道拼接 | 直接包含身份信息的数据集（也称为“基于字段”的拼合）受支持。 目前尚不支持基于图形的拼合，但已计划进行拼合。 请参阅[跨渠道分析](/help/cca/overview.md)。 |
 | 机器人筛选 | 对于基于 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 的数据集，将应用机器人筛选。[!UICONTROL Experience Platform] 或 CJA 不会对其他数据集应用常规机器人筛选逻辑。 |
 | 设备、浏览器、反向链接、技术维度 | 对于基于 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 的数据集支持。请参阅我们的[关于通过 ADC 支持哪些 Analytics 变量的文档](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=zh-Hans)。<p>如果您未使用 Adobe Source Connector 将数据从 Adobe Analytics 填充到 CJA 中，而是使用 Experience Platform Web SDK 数据收集，则当前不支持基于设备查找的设备和维度。有计划以后支持。 |
 | 地理分段维度 | 收集到 Adobe Analytics 的所有地理分段/地理位置通过 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 流入 CJA。对于不使用 Analytics Source Connector 的实施，例如那些依赖 AEP Web SDK 进行数字数据收集的实施，将不会自动执行完整的地理查找功能：全球支持国家和州，但不支持城市和邮政编码。 |

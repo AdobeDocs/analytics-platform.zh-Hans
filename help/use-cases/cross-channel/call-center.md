@@ -4,7 +4,7 @@ description: 了解如何创建数据集以关联呼叫中心数据和网站数�
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
 workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 100%
@@ -44,7 +44,7 @@ Customer Journey Analytics 提供了一项非常有用的强大功能，就是�
 CJA 需要使用通用标识符来生成[合并的数据集](/help/connections/combined-dataset.md)。
 
 * 如果这两个数据集都已经有适用于其所含的每个事件的通用标识符，则可以跳过此步骤并继续创建连接。
-* 如果其中任一一个数据集具有仅对某些事件通用的标识符，则可以使用跨渠道分析拼合数据。有关为这两个数据集启用 CCA 的步骤，请参阅[跨渠道分析概述](/help/connections/cca/overview.md)。
+* 如果其中任一一个数据集具有仅对某些事件通用的标识符，则可以使用跨渠道分析拼合数据。有关为这两个数据集启用 CCA 的步骤，请参阅[跨渠道分析概述](/help/cca/overview.md)。
 
 ## 在 CJA 中创建连接
 

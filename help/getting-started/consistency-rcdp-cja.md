@@ -4,8 +4,8 @@ title: Real-Time CDP 和 CJA 之间量度和受众会员计数的一致性
 role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: 769eef205df32865874753859ce79e573db40641
-workflow-type: ht
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
+workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Real-time CDP 和 CJA 现在对个人的定义不同。 Real-time CDP 完全依赖于[身份图](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=zh-Hans)中的信息来构建合并的用户档案。
 
-CJA 可以通过配置使用 [跨通道 Analytics](/help/connections/cca/overview.md)，从数据湖中的数据集提取标识符，并应用自定义逻辑将它们链接在一起。
+CJA 可以通过配置使用 [跨通道 Analytics](/help/cca/overview.md)，从数据湖中的数据集提取标识符，并应用自定义逻辑将它们链接在一起。
 
 未来，CJA 将能够使用身份图。
 

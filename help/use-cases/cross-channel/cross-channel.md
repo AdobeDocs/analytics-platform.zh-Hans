@@ -4,7 +4,7 @@ description: 分析客户历程中的客户交互并从中提炼见解。
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 100%
@@ -24,7 +24,7 @@ ht-degree: 100%
 1. 为要引入的数据[创建架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans)。
 1. 为要引入的数据[创建数据集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html)。
 1. [将数据引入 Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html)。
-1. 使用在数据集间公用的命名空间 ID 或使用[跨渠道分析](/help/connections/cca/overview.md)将人员联系在一起。注意，Customer Journey Analytics 当前不使用 Experience Platform 配置文件或标识服务进行拼接。
+1. 使用在数据集间公用的命名空间 ID 或使用[跨渠道分析](/help/cca/overview.md)将人员联系在一起。注意，Customer Journey Analytics 当前不使用 Experience Platform 配置文件或标识服务进行拼接。
 1. 执行任何自定义数据准备，以确保将一个在时序数据集间公用的键引入 Customer Journey Analytics。
 1. 为查找数据给予一个主 ID，后者可连接到事件数据中的某个字段。在许可中计为行。
 1. 为配置文件数据设置同一主 ID 作为事件数据的主 ID。
