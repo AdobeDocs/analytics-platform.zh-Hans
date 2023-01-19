@@ -3,7 +3,7 @@ title: 数据摄取概述
 description: 了解将数据摄取到 Customer Journey Analytics 的不同方式
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
+source-git-commit: 5de8c0daaa7eea0a9ab993d256e2b0a14f37301e
 workflow-type: tm+mt
 source-wordcount: '641'
 ht-degree: 7%
@@ -48,7 +48,7 @@ ht-degree: 7%
 
 ## 摄取和使用流数据
 
-您有一个相关的数据源，如CRM系统、ERP系统或任何其他来源，它提供了详细信息，可帮助您更好地了解客户行为并分析客户交互。 该数据源能够通过HTTP或公共云流基础架构进行通信，但其Adobe当前不提供源连接器。 通过将此流数据实时摄取到Adobe Experience Platform中，您可以将其与其他渠道和数据源中的数据Customer Journey Analytics，从而使用、合并和分析这些数据。
+您有一个相关的数据源，如CRM系统、ERP系统或任何其他数据源，它提供了详细信息，可帮助您更好地了解客户行为并分析客户交互。 该数据源能够通过HTTP或公共云流基础架构进行通信，但其Adobe当前不提供源连接器。 通过将此流数据实时摄取到Adobe Experience Platform中，您可以将其与其他渠道和数据源中的数据Customer Journey Analytics，从而使用、合并和分析这些数据。
 
 请参阅 [摄取和使用流数据](./streaming.md) 以了解更多信息。
 
