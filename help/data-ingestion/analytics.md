@@ -3,13 +3,13 @@ title: 从传统Adobe Analytics中摄取和使用数据
 description: 说明如何从传统Adobe Analytics中摄取数据
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
+exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
+source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1146'
 ht-degree: 10%
 
 ---
-
 
 # 从传统Adobe Analytics中摄取和使用数据
 
@@ -23,12 +23,12 @@ ht-degree: 10%
 >
 >- [使用Adobe Analytics扩展实施Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=zh-Hans)
 >
->- [使用Javascript实施Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=en)
+>- [使用 JavaScript 实施 Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=en)
 
 
 要实现此目的，您需要：
 
-- **设置Adobe Analytics源连接器** 在Adobe Experience Platform。 这将负责将当前Adobe Analytics数据摄取到Adobe Experience Platform中的数据集中。
+- **设置Adobe Analytics源连接器** 在Adobe Experience Platform。 这可以将您当前的Adobe Analytics数据摄取到Adobe Experience Platform中的数据集中。
 
 - **设置连接** Customer Journey Analytics。 此连接应（至少）包含您的Adobe Experience Platform数据集。
 
@@ -39,7 +39,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->这是有关如何使用Adobe Analytics源连接器获取数据并在Customer Journey Analytics中使用该数据的简化指南。  强烈建议在提及时研究附加信息。
+>这是有关如何使用Adobe Analytics源连接器获取数据并在Customer Journey Analytics中使用该数据的简化指南。 强烈建议在提及时研究附加信息。
 
 
 ## 设置Adobe Analytics源连接器
@@ -48,7 +48,7 @@ Adobe Analytics源连接器允许您将Adobe Analytics报表包数据导入Adobe
 
 要创建Adobe Analytics源连接器，请执行以下操作：
 
-1. 在平台UI中，选择 **[!UICONTROL 源]** 从左边栏。
+1. 在平台UI中，选择 **[!UICONTROL 源]**，从左边栏。
 
 2. 选择 **[!UICONTROL Adobe应用程序]** 从 [!UICONTROL 类别].
 
@@ -62,7 +62,7 @@ Adobe Analytics源连接器允许您将Adobe Analytics报表包数据导入Adobe
 
    选择&#x200B;**[!UICONTROL 下一步]**。
 
-5. 选择 **[!UICONTROL 默认架构]** 作为 [!UICONTROL 目标架构]. Adobe Experience Platform将自动创建架构和相应的数据集，以映射选定Adobe Analytics报表包中的所有标准字段。
+5. 选择 **[!UICONTROL 默认架构]** 作为 [!UICONTROL 目标架构]. Adobe Experience Platform会自动创建架构和相应的数据集，以映射选定Adobe Analytics报表包中的所有标准字段。
 
    ![默认架构](./assets/default-schema.png)
 
@@ -88,7 +88,7 @@ Adobe Analytics源连接器允许您将Adobe Analytics报表包数据导入Adobe
 
 ## 设置连接
 
-要在Customer Journey Analytics中使用Adobe Experience Platform数据，请创建一个连接，其中包含设置架构、数据集和工作流所产生的数据。
+要在Customer Journey Analytics中使用Adobe Experience Platform数据，请创建一个连接，其中包含设置架构、数据集和工作流后生成的数据。
 
 通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告这些数据集，您必须首先在Adobe Experience Platform和工作区中的数据集之间建立连接。
 
@@ -102,7 +102,7 @@ Adobe Analytics源连接器允许您将Adobe Analytics报表包数据导入Adobe
 
    在中命名并描述您的连接 [!UICONTROL 连接设置].
 
-   从 [!UICONTROL 沙盒] 列表 [!UICONTROL 数据设置] 并从 [!UICONTROL 每日事件的平均数] 列表。
+   从 [!UICONTROL 沙盒] 列表 [!UICONTROL 数据设置] 并从 [!UICONTROL 平均每日事件数] 列表。
 
    ![连接设置](./assets/cja-connections-1.png)
 
@@ -121,7 +121,7 @@ Adobe Analytics源连接器允许您将Adobe Analytics报表包数据导入Adobe
 
       - 选择 [!UICONTROL 人员ID] 从Adobe Experience Platform的数据集架构中定义的可用标识。
 
-      - 从 [!UICONTROL 数据源类型] 列表。 如果您指定 **[!UICONTROL 其他]** 然后，为数据源添加描述。
+      - 从 [!UICONTROL 数据源类型] 列表。 如果您指定 **[!UICONTROL 其他]**，然后为数据源添加描述。
 
       - 已设置 **[!UICONTROL 导入所有新数据]** 和 **[!UICONTROL 数据集回填现有数据]** 根据您的喜好。
 
@@ -154,7 +154,7 @@ Adobe Analytics源连接器允许您将Adobe Analytics报表包数据导入Adobe
 
 4. 在 [!UICONTROL 组件] 步骤：
 
-   将要包含的任何架构字段和/或标准组件添加到 [!UICONTROL 量度] 或 [!UICONTROL Dimension] 组件框。
+   将您要包含的任何架构字段和/或标准组件添加到 [!UICONTROL 量度] 或 [!UICONTROL Dimension] 组件框。
 
    ![数据视图组件](./assets/cja-dataview-2.png)
 
@@ -191,7 +191,7 @@ Analysis Workspace是一个灵活的浏览器工具，允许您快速构建分�
 
    ![工作区选择数据视图](./assets/cja-projects-3.png).
 
-5. 开始在 [!UICONTROL 自由格式表] 在 [!UICONTROL 面板] 以创建您的第一个报表。 例如，拖动 `Program Points Balance` 和 `Page View` 作为量度和 `email` 作为维度，快速查看访问过您网站且也是收集会员积分的忠诚度计划一部分的用户档案。
+5. 开始在 [!UICONTROL 自由格式表] 在 [!UICONTROL 面板] 以创建您的第一个报表。 例如，拖动 `Program Points Balance` 和 `Page View` 作为量度和 `email` 作为维度，可快速查看访问过您的网站且属于收集会员积分的忠诚度计划一部分的用户档案。
 
    ![工作区 — 首个报表](./assets/cja-projects-5.png)
 
@@ -201,10 +201,4 @@ Analysis Workspace是一个灵活的浏览器工具，允许您快速构建分�
 >[!SUCCESS]
 >
 >您已完成所有步骤。 从设置Adobe Analytics数据源连接器并为报表包配置该连接器开始，您的Adobe Analytics数据会自动上传到Adobe Experience Platform。 您在Customer Journey Analytics中定义了一个连接，以利用摄取的Adobe Analytics数据和其他数据。 通过数据视图定义，您可以指定要使用的维度和量度，最后创建了您的第一个项目，并对数据进行可视化和分析。
-
-
-
-
-
-
 

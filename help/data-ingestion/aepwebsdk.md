@@ -1,15 +1,15 @@
 ---
 title: 通过 Adobe Experience PlatformWeb SDK和 Edge Network 获取数据
-description: 说明如何通过Adobe Experience Platform Web SDK和边缘网络将数据摄取到Customer历程分析中
+description: 说明如何通过Adobe Experience Platform Web SDK和边缘网络将数据摄取到Customer Journey Analytics中
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
+exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
+source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
 workflow-type: tm+mt
-source-wordcount: '3591'
+source-wordcount: '3587'
 ht-degree: 7%
 
 ---
-
 
 # 通过 Adobe Experience PlatformWeb SDK和 Edge Network 获取数据
 
@@ -21,7 +21,7 @@ ht-degree: 7%
 
 - **设置数据流** 配置Adobe Experience Platform边缘网络，将收集的数据路由到您在Adobe Experience Platform中配置的数据集。
 
-- **使用标记** 可轻松地针对网站上数据层中的数据配置规则和数据元素，并确保将数据发送到Adobe Experience Platform边缘网络上配置的数据流。
+- **使用标记** 轻松地针对网站上数据层中的数据配置规则和数据元素。 然后，确保将数据发送到Adobe Experience Platform边缘网络上配置的数据流。
 
 - **部署和验证**. 有一个可在其中进行标签迭代开发的环境，一旦所有内容都经过验证，就会将其实时发布到生产环境。
 
@@ -33,20 +33,20 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->本指南是有关如何将从您的网站收集的数据摄取到Adobe Experience Platform并在Customer Journey Analytics中使用的简化指南。  强烈建议在提及时研究附加信息。
+>本指南是有关如何将从您的网站收集的数据摄取到Adobe Experience Platform并在Customer Journey Analytics中使用的简化指南。 强烈建议在提及时研究附加信息。
 
 
 ## 设置架构和数据集
 
-要将数据引入Adobe Experience Platform，您首先需要定义要收集的数据。 摄取到Adobe Experience Platform的所有数据都必须符合标准的异常结构，才能通过下游功能和特性来识别和处理数据。 体验数据模型(XDM)是以模式形式提供此结构的标准框架。
+要将数据引入Adobe Experience Platform，您首先需要定义要收集的数据。 摄取到Adobe Experience Platform的所有数据都必须符合标准的异常结构，以便下游功能和特性能够识别并处理这些数据。 体验数据模型(XDM)是以模式形式提供此结构的标准框架。
 
-定义架构后，您将使用一个或多个数据集来存储和管理数据收集。 数据集是用于数据集合的存储和管理结构，通常是表格，其中包含架构（列）和字段（行）。
+定义架构后，您可以使用一个或多个数据集来存储和管理数据收集。 数据集是用于数据集合的存储和管理结构，通常是表格，其中包含架构（列）和字段（行）。
 
 摄取到Adobe Experience Platform的所有数据都必须符合预定义的架构，然后才能作为数据集进行持久保留。
 
 ### 设置架构
 
-您希望跟踪来自访问您网站的用户档案的一些最低数据，例如页面名称、标识等。
+您希望跟踪来自访问您网站的用户档案的一些最低数据，例如页面名称、标识。
 为此，您首先需要定义一个模型此数据的架构。
 
 要设置架构，请执行以下操作：
@@ -94,7 +94,7 @@ ht-degree: 7%
 
    ![标识对象](./assets/identification-field.png)
 
-   这将向您的架构中添加标识功能。 在您的用例中，您需要使用Experience CloudID和电子邮件地址来识别访问您网站的用户档案。 还有许多其他属性可用于跟踪访客的标识（例如客户ID、忠诚度ID等）。
+   这会向架构中添加标识功能。 在您的用例中，您需要使用Experience CloudID和电子邮件地址来识别访问您网站的用户档案。 还有许多其他属性可用于跟踪访客的标识（例如客户ID、忠诚度ID）。
 
    选择 **[!UICONTROL 应用]** 将此对象添加到架构中。
 
@@ -104,7 +104,7 @@ ht-degree: 7%
 
    您将Experience Cloud标识指定为Adobe Experience Platform Identity服务可用来使用同一ECID组合（拼合）用户档案行为的主标识。
 
-   选择 **[!UICONTROL 应用]**. 您将在ecid属性中看到一个指纹图标。
+   选择 **[!UICONTROL 应用]**. 您会看到ecid属性中会显示一个指纹图标。
 
 7. 选择 **[!UICONTROL 电子邮件]** 字段，然后选择 **[!UICONTROL 身份]** 和 **[!UICONTROL 电子邮件]** 从 [!UICONTROL 身份命名空间] 列表 [!UICONTROL 字段属性] 的上界。
 
@@ -112,13 +112,13 @@ ht-degree: 7%
 
    您将电子邮件地址指定为Adobe Experience Platform Identity服务可用于组合（拼合）用户档案行为的其他标识。
 
-   选择 **[!UICONTROL 应用]**. 您将在电子邮件属性中看到一个指纹图标。
+   选择 **[!UICONTROL 应用]**. 您会看到电子邮件属性中显示一个指纹图标。
 
    选择&#x200B;**[!UICONTROL 保存]**。
 
 8. 选择显示架构名称的架构的根元素，然后选择 **[!UICONTROL 用户档案]** 切换。
 
-   系统将提示您启用用户档案的架构。 启用后，当根据此架构将数据摄取到数据集时，该数据将合并到实时客户资料中。
+   系统会提示您为用户档案启用架构。 启用后，当根据此架构将数据摄取到数据集时，该数据将合并到实时客户资料中。
 
    请参阅 [启用架构以在实时客户资料中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#profile) 以了解更多信息。
 
@@ -150,7 +150,7 @@ ht-degree: 7%
 
 ### 设置数据集
 
-使用您的架构定义了数据模型。 现在，您必须定义结构才能存储和管理该数据。 这可通过数据集完成。
+使用您的架构，您定义了数据模型。 现在，您必须定义结构才能存储和管理该数据。 这可通过数据集完成。
 
 要设置数据集，请执行以下操作：
 
@@ -174,11 +174,11 @@ ht-degree: 7%
 
 7. 选择 **[!UICONTROL 用户档案]** 切换。
 
-   系统将提示您为用户档案启用数据集。 启用后，数据集将使用其摄取的数据扩充实时客户用户档案。
+   系统会提示您为配置文件启用数据集。 数据集在启用后，会通过其摄取的数据来丰富实时客户用户档案。
 
    >[!IMPORTANT]
    >
-   >    只有当数据集所附在的架构也为配置文件启用时，才能为配置文件启用数据集。
+   >    仅当为配置文件启用架构（数据集所附的架构）时，才能为配置文件启用数据集。
 
    ![为配置文件启用架构](./assets/aepwebsdk-dataset-profile.png)
 
@@ -245,7 +245,7 @@ ht-degree: 7%
 
 #### **扩展**
 
-您需要将Adobe平台Web SDK扩展添加到您的标记中，以确保您能够（通过数据流）将数据发送到Adobe Experience Platform。
+将Adobe平台Web SDK扩展添加到您的标记中，以确保您可以（通过数据流）将数据发送到Adobe Experience Platform。
 
 要创建和配置Adobe Experience Platform Web SDK扩展，请执行以下操作：
 
@@ -265,7 +265,7 @@ ht-degree: 7%
 
 请参阅 [配置Adobe Experience Platform Web SDK扩展](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html) 以了解更多信息。
 
-您还希望设置Experience CloudID服务扩展，以便能够轻松使用Experience CloudID服务。 Experience CloudID服务可在所有Adobe Experience Cloud解决方案中标识访客。
+您还希望设置Experience CloudID服务扩展，以便轻松使用Experience CloudID。 Experience CloudID服务可在所有Adobe Experience Cloud解决方案中标识访客。
 
 要创建和配置Experience CloudID服务扩展，请执行以下操作：
 
@@ -283,9 +283,9 @@ ht-degree: 7%
 
 #### **数据元素**
 
-数据元素是数据字典（或数据映射）的构建块。使用数据元素可跨市场营销和广告技术收集、组织和交付数据。您将在标记中设置从数据层读取的数据元素，该数据元素可用于将数据交付到Adobe Experience Platform。
+数据元素是数据字典（或数据映射）的构建块。使用数据元素可跨市场营销和广告技术收集、组织和交付数据。您可以在标记中设置从数据层读取并可用于将数据交付到Adobe Experience Platform的数据元素。
 
-数据元素的类型不同。 首先，您将设置一个数据元素，以捕获访客在您的网站上查看的页面名称。
+数据元素的类型不同。 首先，设置一个数据元素以捕获访客在您的网站上查看的页面名称。
 
 要定义页面名称数据元素，请执行以下操作：
 
@@ -295,7 +295,7 @@ ht-degree: 7%
 
 3. 在 [!UICONTROL 创建数据元素] 对话框：
 
-   - 命名数据元素，例如 `Page Name`.
+   - 例如，命名数据元素 `Page Name`.
 
    - 选择 **[!UICONTROL 核心]** 从 [!UICONTROL 扩展] 列表。
 
@@ -321,7 +321,7 @@ ht-degree: 7%
 
 3. 在 [!UICONTROL 创建数据元素] 对话框：
 
-   - 命名数据元素，例如 `ECID`.
+   - 例如，命名数据元素 `ECID`.
 
    - 选择 **[!UICONTROL Experience CloudID服务]** 从 [!UICONTROL 扩展] 列表。
 
@@ -331,7 +331,7 @@ ht-degree: 7%
 
    - 选择&#x200B;**[!UICONTROL 保存]**。
 
-最后，您现在希望将任何特定数据元素映射到之前定义的架构。 您需要定义另一个数据元素，以提供XDM架构的表示形式。
+最后，您现在希望将任何特定数据元素映射到之前定义的架构。 您可以定义另一个数据元素，以表示XDM架构。
 
 要定义XDM对象数据元素，请执行以下操作：
 
@@ -341,7 +341,7 @@ ht-degree: 7%
 
 3. 在 [!UICONTROL 创建数据元素] 对话框：
 
-   - 命名数据元素，例如 `XDM - Page View`.
+   - 例如，命名数据元素 `XDM - Page View`.
 
    - 选择 **[!UICONTROL Adobe Experience Platform Web SDK]** 从 [!UICONTROL 扩展] 列表。
 
@@ -351,7 +351,7 @@ ht-degree: 7%
 
    - 从 [!UICONTROL 架构] 列表。
 
-   - 映射 `identification > core > ecid` 属性（在架构中定义）添加到ECID数据元素。 选择客户端图标，可轻松地从数据元素列表中选取ECID数据元素。
+   - 映射 `identification > core > ecid` 属性（在架构中定义）添加到ECID数据元素。 选择柱体图标，可轻松地从数据元素列表中选取ECID数据元素。
 
       ![选择ECID数据元素](./assets/pick-ecid-dataelement.png)
 
@@ -367,7 +367,7 @@ ht-degree: 7%
 
 #### **规则**
 
-Adobe Experience Platform中的标记遵循基于规则的系统。 他们查找用户交互和关联的数据。 如果满足您的规则中所列的标准，则规则会触发您已识别的扩展、脚本或客户端代码。您可以使用规则通过Adobe Experience Platform Web SDK扩展将数据（如XDM对象）发送到AdobeExperience Platform。
+Adobe Experience Platform中的标记遵循基于规则的系统。 他们查找用户交互和关联的数据。 如果满足您的规则中所列的标准，则规则会触发您已识别的扩展、脚本或客户端代码。您可以使用规则通过Adobe Experience Platform Web SDK扩展将数据（如XDM对象）发送到Adobe Experience Platform。
 
 定义规则：
 
@@ -377,7 +377,7 @@ Adobe Experience Platform中的标记遵循基于规则的系统。 他们查找
 
 3. 在 [!UICONTROL 创建规则] 对话框：
 
-   - 命名规则，例如 `Page View`.
+   - 例如，命名规则 `Page View`.
 
    - 选择 **[!UICONTROL +添加]** 在 [!UICONTROL 事件].
 
@@ -400,7 +400,7 @@ Adobe Experience Platform中的标记遵循基于规则的系统。 他们查找
 
       - 选择 **[!UICONTROL web.webpagedetails.pageViews]** 从 [!UICONTROL 类型] 列表。
 
-      - 选择旁边的客户端图标  [!UICONTROL XDM数据] 和选择 **[!UICONTROL XDM — 页面查看]** 从数据元素列表中。
+      - 选择旁边的圆柱图标  [!UICONTROL XDM数据] 和选择 **[!UICONTROL XDM — 页面查看]** 从数据元素列表中。
 
          ![规则 — 操作配置](./assets/action-pageview-xdm.png)
 
@@ -417,7 +417,7 @@ Adobe Experience Platform中的标记遵循基于规则的系统。 他们查找
 
 这只是定义一个规则的示例，该规则会将包含来自其他数据元素的值的XDM数据发送到Adobe Experience Platform。
 
-您可以在标记中以各种方式使用规则来处理变量（利用数据元素）。
+您可以在标记中以各种方式使用规则来处理变量（使用数据元素）。
 
 请参阅 [规则](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=zh-Hans) 以了解更多信息。
 
@@ -443,13 +443,13 @@ Adobe Experience Platform中的标记遵循基于规则的系统。 他们查找
 
    - 选择 **[!UICONTROL 保存并构建到开发环境]**.
 
-   这将保存并构建适用于您的开发环境的标记。 绿色圆点表示已在开发环境中成功生成标记。
+   这会保存并构建用于开发环境的标记。 绿色圆点表示已在开发环境中成功生成标记。
 
 4. 您可以选择 **[!UICONTROL ...]** 重建库或将库移动到暂存或生产环境。
 
    ![发布 — 生成库](./assets/build-library.png)
 
-Adobe Experience Platform标记支持简单到复杂的发布工作流程，这些工作流程应会纳入您部署Adobe Experience Platform Web SDK的过程。
+Adobe Experience Platform标记支持简单到复杂的发布工作流程，这些工作流程应适应您部署Adobe Experience Platform Web SDK。
 
 请参阅 [发布概述](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) 以了解更多信息。
 
@@ -480,13 +480,13 @@ Adobe Experience Platform标记支持简单到复杂的发布工作流程，这�
 
 ## 部署和验证
 
-现在，您可以在网站的开发版本上的 `<head>` 标记。 部署后，您的网站将开始收集数据到Adobe Experience Platform。
+现在，您可以在网站的开发版本上的 `<head>` 标记。 部署后，您的网站会开始收集数据到Adobe Experience Platform。
 
 验证您的实施，在必要时进行更正，并在正确后，使用“标记”的发布工作流程功能将其部署到暂存和生产环境。
 
 ## 设置连接
 
-要在Customer Journey Analytics中使用Adobe Experience Platform数据，请创建一个连接，其中包含设置架构、数据集和工作流所产生的数据。
+要在Customer Journey Analytics中使用Adobe Experience Platform数据，请创建一个连接，其中包含设置架构、数据集和工作流后生成的数据。
 
 通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告这些数据集，您必须首先在Adobe Experience Platform和工作区中的数据集之间建立连接。
 
@@ -500,7 +500,7 @@ Adobe Experience Platform标记支持简单到复杂的发布工作流程，这�
 
    在中命名并描述您的连接 [!UICONTROL 连接设置].
 
-   从 [!UICONTROL 沙盒] 列表 [!UICONTROL 数据设置] 并从 [!UICONTROL 每日事件的平均数] 列表。
+   从 [!UICONTROL 沙盒] 列表 [!UICONTROL 数据设置] 并从 [!UICONTROL 平均每日事件数] 列表。
 
    ![连接设置](./assets/cja-connections-1.png)
 
@@ -508,7 +508,7 @@ Adobe Experience Platform标记支持简单到复杂的发布工作流程，这�
 
    在 [!UICONTROL 选择数据集] 步骤 [!UICONTROL 添加数据集]:
 
-   - 选择之前创建的数据集(`Example dataset`)以及要包含在连接中的任何其他数据集。
+   - 选择您之前创建的数据集(`Example dataset`)以及要包含在连接中的任何其他数据集。
 
       ![添加数据集](./assets/cja-connections-2b.png)
 
@@ -519,7 +519,7 @@ Adobe Experience Platform标记支持简单到复杂的发布工作流程，这�
 
       - 选择 [!UICONTROL 人员ID] 从Adobe Experience Platform的数据集架构中定义的可用标识。
 
-      - 从 [!UICONTROL 数据源类型] 列表。 如果您指定 **[!UICONTROL 其他]** 然后，为数据源添加描述。
+      - 从 [!UICONTROL 数据源类型] 列表。 如果您指定 **[!UICONTROL 其他]**，然后为数据源添加描述。
 
       - 已设置 **[!UICONTROL 导入所有新数据]** 和 **[!UICONTROL 数据集回填现有数据]** 根据您的喜好。
 
@@ -552,7 +552,7 @@ Adobe Experience Platform标记支持简单到复杂的发布工作流程，这�
 
 4. 在 [!UICONTROL 组件] 步骤：
 
-   将要包含的任何架构字段和/或标准组件添加到 [!UICONTROL 量度] 或 [!UICONTROL Dimension] 组件框。
+   将您要包含的任何架构字段和/或标准组件添加到 [!UICONTROL 量度] 或 [!UICONTROL Dimension] 组件框。
 
    ![数据视图组件](./assets/cja-dataview-2.png)
 
@@ -589,7 +589,7 @@ Analysis Workspace是一个灵活的浏览器工具，允许您快速构建分�
 
    ![工作区选择数据视图](./assets/cja-projects-3.png).
 
-5. 开始在 [!UICONTROL 自由格式表] 在 [!UICONTROL 面板] 以创建您的第一个报表。 例如，拖动 `Program Points Balance` 和 `Page View` 作为量度和 `email` 作为维度，快速查看访问过您网站且也是收集会员积分的忠诚度计划一部分的用户档案。
+5. 开始在 [!UICONTROL 自由格式表] 在 [!UICONTROL 面板] 以创建您的第一个报表。 例如，拖动 `Program Points Balance` 和 `Page View` 作为量度和 `email` 作为维度，可快速查看访问过您的网站且属于收集会员积分的忠诚度计划一部分的用户档案。
 
    ![工作区 — 首个报表](./assets/cja-projects-5.png)
 
@@ -597,4 +597,4 @@ Analysis Workspace是一个灵活的浏览器工具，允许您快速构建分�
 
 >[!SUCCESS]
 >
->您已完成所有步骤。 首先，定义要收集的数据（架构）以及将其存储在Adobe Experience Platform中的位置（数据集），然后在边缘网络上配置了一个数据流，以确保可将数据转发到该数据集。 然后，您定义并部署了您的标记，其中包含扩展(Adobe Experience Platform Web SDK、Experience CloudID服务)、数据元素和规则，以从您的网站中捕获数据并将该数据发送到您的数据流。 您在Customer Journey Analytics中定义了一个连接，以利用网站跟踪数据和其他数据。 通过数据视图定义，您可以指定要使用的维度和量度，最后创建了您的第一个项目，并对数据进行可视化和分析。
+>您已完成所有步骤。 首先，定义要收集的数据（架构）以及将其存储在Adobe Experience Platform中的位置（数据集），然后在边缘网络上配置了一个数据流，以确保可将数据转发到该数据集。 然后，您定义并部署了您的标记，其中包含扩展(Adobe Experience Platform Web SDK、Experience CloudID服务)、数据元素和规则，以从您的网站中捕获数据并将该数据发送到您的数据流。 您在Customer Journey Analytics中定义了一个连接，以使用网站跟踪数据和其他数据。 通过数据视图定义，您可以指定要使用的维度和量度，最后创建了您的第一个项目，并对数据进行可视化和分析。

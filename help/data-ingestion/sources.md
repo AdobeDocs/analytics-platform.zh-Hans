@@ -3,13 +3,13 @@ title: 使用源连接器摄取和使用数据
 description: 说明如何在Customer Journey Analytics中使用源连接器摄取和使用数据
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
+exl-id: 813d3213-86b3-431a-821c-174e5e36d032
+source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
 workflow-type: tm+mt
-source-wordcount: '1952'
+source-wordcount: '1955'
 ht-degree: 5%
 
 ---
-
 
 # 使用源连接器摄取和使用数据。
 
@@ -31,20 +31,20 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->本指南是有关如何使用源连接器将数据摄取到Adobe Experience Platform并在Customer Journey Analytics中使用的简化指南。  强烈建议在提及时研究附加信息。
+>本指南是有关如何使用源连接器将数据摄取到Adobe Experience Platform并在Customer Journey Analytics中使用的简化指南。 强烈建议在提及时研究附加信息。
 
 
 ## 设置架构和数据集
 
-要将数据引入Adobe Experience Platform，您首先需要定义要收集的数据。 摄取到Adobe Experience Platform的所有数据都必须符合标准的异常结构，才能通过下游功能和特性来识别和处理数据。 体验数据模型(XDM)是以模式形式提供此结构的标准框架。
+要将数据引入Adobe Experience Platform，您首先需要定义要收集的数据。 摄取到Adobe Experience Platform的所有数据都必须符合标准的异常结构，以便下游功能和特性能够识别并处理这些数据。 体验数据模型(XDM)是以模式形式提供此结构的标准框架。
 
-定义架构后，您将使用一个或多个数据集来存储和管理数据收集。 数据集是用于数据集合的存储和管理结构，通常是表格，其中包含架构（列）和字段（行）。
+定义架构后，您可以使用一个或多个数据集来存储和管理数据收集。 数据集是用于数据集合的存储和管理结构，通常是表格，其中包含架构（列）和字段（行）。
 
 摄取到Adobe Experience Platform的所有数据都必须符合预定义的架构，然后才能作为数据集进行持久保留。
 
 ### 设置架构
 
-对于此快速入门，我们假定您要收集一些忠诚度数据，例如忠诚度ID、忠诚度积分和忠诚度状态。
+对于此快速入门，您需要收集一些忠诚度数据，例如忠诚度ID、忠诚度积分和忠诚度状态。
 为此，您首先需要定义一个模型此数据的架构。
 
 要设置架构，请执行以下操作：
@@ -92,7 +92,7 @@ ht-degree: 5%
 
    ![标识对象](./assets/identifcation-loyalty-field.png)
 
-   这将向您的架构中添加标识功能。 在您的用例中，您需要使用批量数据中的电子邮件地址来识别忠诚度信息。
+   这会向架构中添加标识功能。 在您的用例中，您需要使用批量数据中的电子邮件地址来识别忠诚度信息。
 
    选择 **[!UICONTROL 应用]** 将此对象添加到架构中。
 
@@ -102,11 +102,11 @@ ht-degree: 5%
 
    您将指定电子邮件地址作为Adobe Experience Platform Identity服务可用于组合（拼合）用户档案行为的标识。
 
-   选择 **[!UICONTROL 应用]**. 您将在电子邮件属性中看到一个指纹图标。
+   选择 **[!UICONTROL 应用]**. 您会看到电子邮件属性中显示一个指纹图标。
 
 7. 选择架构的根级别（具有架构名称），然后选择 **[!UICONTROL 用户档案]** 切换。
 
-   系统将提示您启用用户档案的架构。 启用后，当根据此架构将数据摄取到数据集时，该数据将合并到实时客户资料中。
+   系统会提示您为用户档案启用架构。 启用后，当根据此架构将数据摄取到数据集时，该数据将合并到实时客户资料中。
 
    请参阅 [启用架构以在实时客户资料中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#profile) 以了解更多信息。
 
@@ -124,7 +124,7 @@ ht-degree: 5%
 
 ### 设置数据集
 
-使用您的架构定义了数据模型。 现在，您必须定义结构才能存储和管理该数据。 这可通过数据集完成。
+使用您的架构，您定义了数据模型。 现在，您必须定义结构才能存储和管理该数据。 这可通过数据集完成。
 
 要设置数据集，请执行以下操作：
 
@@ -148,7 +148,7 @@ ht-degree: 5%
 
 7. 选择 **[!UICONTROL 用户档案]** 切换。
 
-   系统将提示您为用户档案启用数据集。 启用后，数据集将使用其摄取的数据扩充实时客户用户档案。
+   系统会提示您为配置文件启用数据集。 数据集在启用后，会通过其摄取的数据来丰富实时客户用户档案。
 
    >[!IMPORTANT]
    >
@@ -173,13 +173,13 @@ ht-degree: 5%
 
    - **[!UICONTROL 选择数据]**:选择要摄取的源数据。
 
-   - **[!UICONTROL 数据流处理]**:您提供了有关数据流的其他详细信息，例如名称和使用的数据集。
+   - **[!UICONTROL 数据流详细信息]**:您提供了有关数据流的其他详细信息，例如名称和使用的数据集。
 
    - **[!UICONTROL 映射]**:将传入的源数据字段映射到与所选数据集关联的架构中的属性。
 
    - **[!UICONTROL 计划]**:如果可用，您可以计划数据的摄取。
 
-   - **[!UICONTROL 审阅]**:在完成设置之前，您将查看源连接器的定义。
+   - **[!UICONTROL 审阅]**:您会看到对源连接器定义的查看。
 
    每个连接器都提供详细文档。
 
@@ -201,7 +201,7 @@ ht-degree: 5%
 
 ## 设置连接
 
-要在Customer Journey Analytics中使用Adobe Experience Platform数据，请创建一个连接，其中包含设置架构、数据集和工作流所产生的数据。
+要在Customer Journey Analytics中使用Adobe Experience Platform数据，请创建一个连接，其中包含设置架构、数据集和工作流后生成的数据。
 
 通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告这些数据集，您必须首先在Adobe Experience Platform和工作区中的数据集之间建立连接。
 
@@ -215,7 +215,7 @@ ht-degree: 5%
 
    在中命名并描述您的连接 [!UICONTROL 连接设置].
 
-   从 [!UICONTROL 沙盒] 列表 [!UICONTROL 数据设置] 并从 [!UICONTROL 每日事件的平均数] 列表。
+   从 [!UICONTROL 沙盒] 列表 [!UICONTROL 数据设置] 并从 [!UICONTROL 平均每日事件数] 列表。
 
    ![连接设置](./assets/cja-connections-1.png)
 
@@ -223,7 +223,7 @@ ht-degree: 5%
 
    在 [!UICONTROL 选择数据集] 步骤 [!UICONTROL 添加数据集]:
 
-   - 选择之前创建的数据集(`Example Loyalty Dataset`)以及要包含在连接中的任何其他数据集。
+   - 选择您之前创建的数据集(`Example Loyalty Dataset`)以及要包含在连接中的任何其他数据集。
 
       ![添加数据集](./assets/cja-connections-2.png)
 
@@ -234,7 +234,7 @@ ht-degree: 5%
 
       - 选择 [!UICONTROL 人员ID] 从Adobe Experience Platform的数据集架构中定义的可用标识。
 
-      - 从 [!UICONTROL 数据源类型] 列表。 如果您指定 **[!UICONTROL 其他]** 然后，为数据源添加描述。
+      - 从 [!UICONTROL 数据源类型] 列表。 如果您指定 **[!UICONTROL 其他]**，然后为数据源添加描述。
 
       - 已设置 **[!UICONTROL 导入所有新数据]** 和 **[!UICONTROL 数据集回填现有数据]** 根据您的喜好。
 
@@ -267,7 +267,7 @@ ht-degree: 5%
 
 4. 在 [!UICONTROL 组件] 步骤：
 
-   将要包含的任何架构字段和/或标准组件添加到 [!UICONTROL 量度] 或 [!UICONTROL Dimension] 组件框。
+   将您要包含的任何架构字段和/或标准组件添加到 [!UICONTROL 量度] 或 [!UICONTROL Dimension] 组件框。
 
    ![数据视图组件](./assets/cja-dataview-2.png)
 
@@ -304,7 +304,7 @@ Analysis Workspace是一个灵活的浏览器工具，允许您快速构建分�
 
    ![工作区选择数据视图](./assets/cja-projects-3.png).
 
-5. 开始在 [!UICONTROL 自由格式表] 在 [!UICONTROL 面板] 以创建您的第一个报表。 例如，拖动 `Program Points Balance` 和 `Page View` 作为量度和 `email` 作为维度，快速查看访问过您网站且也是收集会员积分的忠诚度计划一部分的用户档案。
+5. 开始在 [!UICONTROL 自由格式表] 在 [!UICONTROL 面板] 以创建您的第一个报表。 例如，拖动 `Program Points Balance` 和 `Page View` 作为量度和 `email` 作为维度，可快速查看访问过您的网站且属于收集会员积分的忠诚度计划一部分的用户档案。
 
    ![工作区 — 首个报表](./assets/cja-projects-5.png)
 
@@ -312,4 +312,4 @@ Analysis Workspace是一个灵活的浏览器工具，允许您快速构建分�
 
 >[!SUCCESS]
 >
->您已完成所有步骤。 从定义要收集的忠诚度数据（架构）以及将其存储在Adobe Experience Platform中的位置（数据集）开始，您配置了相应的源连接器以向您提供忠诚度数据。 您在Customer Journey Analytics中定义了一个连接，以利用摄取的忠诚度数据和其他数据。 通过数据视图定义，您可以指定要使用的维度和量度，最后创建了您的第一个项目，并对数据进行可视化和分析。
+>您已完成所有步骤。 从定义要收集的忠诚度数据（架构）以及将其存储在Adobe Experience Platform中的位置（数据集）开始，您配置了相应的源连接器以向您提供忠诚度数据。 您在Customer Journey Analytics中定义了一个连接，以使用摄取的忠诚度数据和其他数据。 通过数据视图定义，您可以指定要使用的维度和量度，最后创建了您的第一个项目，并对数据进行可视化和分析。
