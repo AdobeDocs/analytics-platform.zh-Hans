@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a6ce6409eb7a4d853d5390cd62f4a9506ee6282a
+source-git-commit: 2579a6bbf17836fdab519b01e09f253bfb3a7aeb
 workflow-type: tm+mt
-source-wordcount: '1280'
-ht-degree: 91%
+source-wordcount: '1255'
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,6 @@ CJA 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2023 年 1 月** |  |
-| CJA受众文档更新 | 有关 [创建新受众后会发生什么情况](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
 | 数据摄取快速入门指南 | 新增了有关如何 [摄取和使用数据](/help/data-ingestion/data-ingestion.md) 在CJA中。 |
 | 工作区文件夹 | 专用页面 [文件夹管理](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | 工作区用户首选项 | 许多其他用户首选项现在在 [首选项](/help/analysis-workspace/user-preferences.md). |

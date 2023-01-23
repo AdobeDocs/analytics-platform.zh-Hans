@@ -3,16 +3,16 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新 CJA 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: a6ce6409eb7a4d853d5390cd62f4a9506ee6282a
+source-git-commit: 2579a6bbf17836fdab519b01e09f253bfb3a7aeb
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 40%
+source-wordcount: '537'
+ht-degree: 42%
 
 ---
 
 # 当前Customer Journey Analytics(CJA)发行说明（2023年1月）
 
-**上次更新**:2023年1月23日
+**上次更新**:2023年1月13日
 
 Customer Journey Analytics 版本在[持续交付模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
@@ -20,7 +20,6 @@ Customer Journey Analytics 版本在[持续交付模型](releases.md)上运行�
 
 | 功能 | 描述 | [开始推出](/help/release-notes/releases.md) | [正式发布](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
-| **更新CJA受众** | 创建受众后， [Adobe为每个新的CJA受众创建一个Experience Platform流区段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). | 不适用 | 2023年1月23日 |
 | **Workspace 中的文件夹** | 文件夹可帮助您组织和分类项目，以便更好地检索和访问。 此外，共享 **[!UICONTROL 公司]** 利用文件夹，管理员可以轻松创建内容并与所有工作区用户共享。 [了解详情](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.html) | 不适用 | 2023 年 1 月 11 日 |
 | **默认登陆页面** | 的 [新登陆页面](/help/getting-started/landing.md) 2022年早些时候引入的体验，将成为 **2023年1月11日**. 旧版登陆页面将被弃用，每个人都需要使用新体验。 | 不适用 | 2023 年 1 月 11 日 |
 | **已弃用项目管理器页面** | 随着新登陆页面的发布，我们弃用了 **[!UICONTROL 项目经理]** 列于 **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL 组件]**. 新登录页面具有旧项目管理器页面的所有功能等。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=en#deprecate-pm-page) | 不适用 | 2023 年 1 月 11 日 |
