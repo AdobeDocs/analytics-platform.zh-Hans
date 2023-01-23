@@ -2,10 +2,10 @@
 title: 创建受众并将受众发布到实时客户档案
 description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: f45485d7e26827a85abe47168b1a3dbdbe150e53
+source-git-commit: 2cc4dc1472406314e9ba3a5ab17c08bb7696f6c0
 workflow-type: tm+mt
-source-wordcount: '1278'
-ht-degree: 79%
+source-wordcount: '1289'
+ht-degree: 75%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 79%
 
 ## 在 Experience Platform 中使用 CJA 受众 {#audiences-aep}
 
-CJA 现在可以从您发布的受众中获取所有的命名空间和 ID 组合，并将其以流式传输到实时客户个人资料 (RTCP) 中。CJA 会将受众发送到 Experience Platform，其中主要标识会被设置为配置连接时选择的个人 ID。
+CJA会采用您已发布受众中的所有命名空间和ID组合，并将它们流式传输到实时客户资料(RTCP)中。 CJA会根据所选的Experience Platform，将受众发送到设置了主标识的受众 [!UICONTROL 人员ID] 连接配置后。
 
 然后，RTCP 会检查每个命名空间/ID 组合，并查找可能包含它的个人资料。个人资料其实就是由所链接的命名空间、ID 和设备组成的集群。如果它找到一份相关的个人资料，则会将命名空间和 ID 作为区段会员资格属性添加到此个人资料中的其他 ID。例如，现在”user@adobe.com“可以成为所有设备和渠道的目标。如果未找到相关的个人资料，则会创建一份新的个人资料。
 
@@ -98,33 +98,47 @@ CJA 现在可以从您发布的受众中获取所有的命名空间和 ID 组合
 
 有关受众发布的常见问题解答。
 
-### 如果用户不再是 CJA 中的受众，会发生什么？
++++**如果用户不再是 CJA 中的受众，会发生什么？**
 
 在这种情况下，系统会从 CJA 将退出事件发送给 Experience Platform。
 
-### 如果删除 CJA 中的受众会发生什么？
++++
+
++++**如果删除 CJA 中的受众会发生什么？**
 
 删除 CJA 受众后，该受众将不再出现在 Experience Platform UI 中。 然而，在 Platform 中并没有删除和该受众相关联的个人资料。
 
-### 如果RTCDP中不存在相应的配置文件，是否会创建新配置文件？
++++
+
++++**如果RTCDP中不存在相应的配置文件，是否会创建新配置文件？**
 
 会的。
 
-### CJA会将受众数据作为管道事件还是平面文件（也会发送到数据湖）发送吗？
++++
 
-它通过管道将数据流传输到RTCP中，并且这些数据也会收集到数据湖中的系统数据集中。
++++**CJA会将受众数据作为管道事件还是平面文件（也会发送到数据湖）发送吗？**
 
-### CJA会发送哪些身份？
+CJA通过管道将数据流传输到RTCP中，并且这些数据也会收集到数据湖中的系统数据集中。
 
-连接设置中使用的身份/命名空间对。 具体而言，用户选择要用作其“人员ID”的字段时的步骤。
++++
 
-### 选择什么作为主标识？
++++**CJA会发送哪些身份？**
+
+在 [连接设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans#create-connection). 具体而言，用户选择要用作其“人员ID”的字段时的步骤。
+
++++
+
++++**选择哪个ID作为主标识？**
 
 请参阅上面的内容。我们只为每个CJA“人员”发送一个身份。
 
-### RTCP是否也会处理CJA消息？ CJA是否可以通过受众共享将身份添加到配置文件标识图？
++++
+
++++**RTCP是否也会处理CJA消息？ CJA是否可以通过受众共享将身份添加到配置文件标识图？**
 
 否。我们只为每个“人员”发送一个身份，因此RTCP不会使用图边。
+
++++
 
 ## 后续步骤
 
