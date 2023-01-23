@@ -2,10 +2,10 @@
 title: 创建受众并将受众发布到实时客户档案
 description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 06e27fc2ecc2b54e30616bc69b44550af20af76f
+source-git-commit: 1a0689694304056ba582265aee7997a3e0406434
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 85%
+source-wordcount: '1277'
+ht-degree: 79%
 
 ---
 
@@ -71,6 +71,16 @@ ht-degree: 85%
    如果一切顺利，您会收到一条确认消息，确认已发布受众。这些观众只需一两分钟就能出现在 Experience Platform 中。（即使是拥有数百万成员的受众，也不会超过 5 分钟的时间。）
 
 1. 在同一条消息中单击&#x200B;**[!UICONTROL 在 AEP 中查看受众]**，则可进入 Adobe Experience Platform 中的 [Segment UI](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=zh-Hans)。有关详细信息，请参阅下文。
+
+## 创建受众后会发生什么情况 {#after-audience-created}
+
+创建受众后，Adobe会为创建的每个新CJA受众创建一个Experience Platform流区段。
+
+* AEP区段与CJA受众共享相同的名称/描述，但名称将附加CJA受众ID，以确保其唯一。
+
+* 如果CJA受众名称/描述发生更改，AEP区段名称/描述也会反映该更改。
+
+* 如果用户删除了CJA受众，则不会删除AEP区段，以防稍后取消删除CJA受众。
 
 ## 在 Experience Platform 中使用 CJA 受众 {#audiences-aep}
 

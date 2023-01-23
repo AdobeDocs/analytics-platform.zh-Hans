@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 6c1abdcb4543124c1585d4461b32adb55c558032
+source-git-commit: 1a0689694304056ba582265aee7997a3e0406434
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 94%
+source-wordcount: '1255'
+ht-degree: 93%
 
 ---
 
@@ -20,14 +20,14 @@ CJA 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2023 年 1 月** |  |
-| 快速入门指南 | 新增了有关如何 [摄取和使用数据](/help/data-ingestion/data-ingestion.md) 在CJA中。 |
-| 文件夹 | 专用页面 [文件夹管理](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
-| 用户首选项 | 许多其他用户首选项现在在 [首选项](/help/analysis-workspace/user-preferences.md). |
-| 自动保存项目 | 更新了内容，以在 [保存项目](/help/analysis-workspace/build-workspace-project/save-projects.md). |
+| 数据摄取快速入门指南 | 新增了有关如何 [摄取和使用数据](/help/data-ingestion/data-ingestion.md) 在CJA中。 |
+| 工作区文件夹 | 专用页面 [文件夹管理](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
+| 工作区用户首选项 | 许多其他用户首选项现在在 [首选项](/help/analysis-workspace/user-preferences.md). |
+| 为工作区项目自动保存 | 更新了内容，以在 [保存项目](/help/analysis-workspace/build-workspace-project/save-projects.md). |
 | 登陆页面 | 新登陆页面更新 [登陆页面](/help/getting-started/landing.md). |
 | 计划工作簿 | 描述如何 [计划工作簿](/help/report-builder/schedule-reportbuilder.md) Report Builder。 |
 
-## 2022
+## 2022 {#22}
 
 | 日期 | 更新描述 |
 | --- | --- |
@@ -85,7 +85,7 @@ CJA 文档自创建以来进行了以下更新。
 
 {style=&quot;table-layout:auto&quot;}
 
-## 2021
+## 2021 {#21}
 
 | 日期 | 更新描述 |
 | --- | --- |
@@ -126,7 +126,7 @@ CJA 文档自创建以来进行了以下更新。
 
 {style=&quot;table-layout:auto&quot;}
 
-## 2020
+## 2020 {#20}
 
 | 日期 | 更新描述 |
 | --- | --- |
