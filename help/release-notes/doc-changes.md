@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 2579a6bbf17836fdab519b01e09f253bfb3a7aeb
+source-git-commit: 673aed4daf7029ddec032055789f94125395e7f9
 workflow-type: tm+mt
-source-wordcount: '1255'
-ht-degree: 93%
+source-wordcount: '1282'
+ht-degree: 91%
 
 ---
 
@@ -26,6 +26,7 @@ CJA 文档自创建以来进行了以下更新。
 | 为工作区项目自动保存 | 更新了内容，以在 [保存项目](/help/analysis-workspace/build-workspace-project/save-projects.md). |
 | 登陆页面 | 新登陆页面更新 [登陆页面](/help/getting-started/landing.md). |
 | 计划工作簿 | 描述如何 [计划工作簿](/help/report-builder/schedule-reportbuilder.md) Report Builder。 |
+| 对配置文件和查找数据集的对象数组支持 | 已更新 [使用对象数组](/help/use-cases/object-arrays.md) 和 [摄取AEP受众](/help/use-cases/data-ingestion/ingest-aep-segments.md) 以反映对配置文件和查找数据集的对象数组支持。 |
 
 ## 2022 {#22}
 

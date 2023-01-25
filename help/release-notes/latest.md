@@ -3,10 +3,10 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新 CJA 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 2579a6bbf17836fdab519b01e09f253bfb3a7aeb
+source-git-commit: 673aed4daf7029ddec032055789f94125395e7f9
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 42%
+source-wordcount: '561'
+ht-degree: 41%
 
 ---
 
@@ -26,6 +26,7 @@ Customer Journey Analytics 版本在[持续交付模型](releases.md)上运行�
 | **在Report Builder中计划工作簿** | 在Customer Journey Analytics中，您可以创建计划以定期发送工作簿。 现在，收件人可以定期接收工作簿的最新更新。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/schedule-reportbuilder.html) | 不适用 | 2023 年 1 月 11 日 |
 | **自动保存新项目** | Analysis Workspace现在可自动保存新创建的项目。 如果您出于任何原因，在手动保存之前意外失去了对新创建项目的访问权限，则现在可以使用项目的恢复版本。 以前，只有在最初手动保存项目后，才会自动保存项目。 [了解详情](/help/analysis-workspace/build-workspace-project/save-projects.md) | 不适用 | 2023 年 1 月 11 日 |
 | **增强的用户首选项** | 您现在可以在用户级别配置其他首选项(在 [!UICONTROL 组件] > [!UICONTROL 首选项])。 设置用户首选项时，您的选择会跨项目、表和可视化图表进行。 “首选项”页面现在包含以下新选项卡，每个选项卡都包含许多新配置选项：<ul><li>自由格式表</li><li>可视化图表>/li></ul>。此外，现在还提供了 **[!UICONTROL 常规]** 和 **[!UICONTROL 项目]** 选项卡。<p>以前，其中许多首选项只能针对单个项目、表和可视化图表进行配置。 [了解详情](/help/analysis-workspace/user-preferences.md) | 不适用 | 2023 年 1 月 11 日 |
+| **对配置文件和查找数据集的对象数组支持** | 配置文件数据集和查找数据集现在支持在CJA中使用的对象数组。 | 不适用 | 2023 年 1 月 11 日 |
 
 {style=&quot;table-layout:auto&quot;}
 
