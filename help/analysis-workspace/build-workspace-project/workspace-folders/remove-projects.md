@@ -5,13 +5,13 @@ title: 从文件夹中删除项目
 feature: CJA Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 source-git-commit: b251cc2f918b54e52ad70def28187473255efbfa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '177'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# 从文件夹删除项目
+# 从文件夹中删除项目
 
 要从文件夹中删除一个项目，可将该项目移至另一位置或删除该项目。
 
