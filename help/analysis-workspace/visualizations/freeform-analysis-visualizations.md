@@ -5,9 +5,9 @@ title: 可视化图表概述
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 source-git-commit: 5107c1ed145579c7da27ce50c13543196fcf6fe3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1136'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -38,26 +38,26 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | [概要数字](/help/analysis-workspace/visualizations/summary-number-change.md) | 将选择的单元格显示为 1 个多位数。 |
 | [概要变化](/help/analysis-workspace/visualizations/summary-number-change.md) | 将所选单元格之间的变化显示为 1 个多位数/百分比。 |
 | [文本](/help/analysis-workspace/visualizations/text.md) | 使您克将用户定义的文本添加到您的工作区。在利用面板/可视化图表描述之外，对于向您的分析和见解添加额外的上下文非常有用 |
-| [树图](/help/analysis-workspace/visualizations/treemap.md) | 将分层（树结构）数据显示为一组嵌套的矩形。 |
+| [树形图](/help/analysis-workspace/visualizations/treemap.md) | 将分层（树结构）数据显示为一组嵌套的矩形。 |
 | [维恩图](/help/analysis-workspace/visualizations/venn.md) | 使用圆圈来描述最多 3 个过滤器之间的量度重叠。 |
 
 ## 自定义可视化设置
 
-您可以自定义单个可视化图表的可视化图表设置，也可以自定义您创建的所有可视化图表的可视化图表设置。
+您可以自定义单个可视化，或创建的所有可视化的可视化设置。
 
 ### 自定义单个可视化的可视化设置
 
-访问 [!UICONTROL 可视化设置] 对于单个可视化：
+要访问单个可视化的[!UICONTROL 可视化设置]：
 
-1. 在Analysis Workspace中，将鼠标悬停在要自定义其设置的可视化上。
+1. 在 Analysis Workspace 中，将鼠标悬停在要自定义其设置的可视化上。
 
 1. 单击齿轮图标。
 
-   每种类型的可视化图表都有可自定义的唯一设置。 有关可用设置的信息，请参阅 [设置](#settings).
+   每种类型的可视化都有您可以自定义的独特设置。有关可用设置的信息，请参见[设置](#settings)。
 
-### 自定义您创建的所有可视化的可视化设置
+### 为您创建的所有可视化自定义可视化设置
 
-您可以自定义您创建的所有可视化的设置。 有关更多信息，请参阅 [用户首选项](/help/analysis-workspace/user-preferences.md).
+您可以自定义创建的所有可视化效果的设置。有关详细信息，请参阅[用户首选项](/help/analysis-workspace/user-preferences.md)。
 
 ## 设置 {#settings}
 
@@ -69,7 +69,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | --- | --- |
 | 可视化图表类型 | 更改描述数据所用的视觉效果的类型。 |
 | 粒度 | 对于趋势性的可视化图表，您可从此下拉菜单更改时间粒度（日、周、月等）。此更改也适用于数据源表。 |
-| 百分数 | 显示百分数值。 |
+| 百分比 | 显示百分数值。 |
 | 100% 堆叠 | 在面积堆叠、条形堆叠或水平条形堆叠的可视化图表上的此设置将图表转换为“100% 堆叠”的可视化图表。示例：![堆叠 100%](assets/stacked_100_percent.png) |
 | 图例可见 | 此设置允许您为概要数字/概要变化可视化图表隐藏详细的图例文本。 |
 | 限制最大项目数 | 允许您限制可视化图表显示的项目数量。 |
