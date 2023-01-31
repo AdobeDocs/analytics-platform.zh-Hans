@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 673aed4daf7029ddec032055789f94125395e7f9
+source-git-commit: fe8a2ee1af1f022f56116ea64460e4ad1b572b8e
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 92%
+source-wordcount: '1311'
+ht-degree: 90%
 
 ---
 
@@ -20,6 +20,7 @@ CJA 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2023 年 1 月** |  |
+| 过滤和排序表 | 更新了 [过滤和排序表](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) 文章。 已从“对表格进行分页、过滤和排序”中重命名本文。 |
 | 数据摄取快速入门指南 | 新增了有关如何 [摄取和使用数据](/help/data-ingestion/data-ingestion.md) 在CJA中。 |
 | 工作区文件夹 | 专用页面 [文件夹管理](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | 工作区用户首选项 | 许多其他用户首选项现在在 [首选项](/help/analysis-workspace/user-preferences.md). |
