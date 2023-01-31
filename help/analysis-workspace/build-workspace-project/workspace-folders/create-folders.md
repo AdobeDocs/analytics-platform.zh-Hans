@@ -5,9 +5,9 @@ title: 创建文件夹
 feature: CJA Workspace Basics
 exl-id: c83c3526-a8d0-4094-b4c4-46cf70e1a365
 source-git-commit: a8b874bfbe9d3586140f93c1dcef2403ca5707cc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '146'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 93%
 
 1. 输入新文件夹的名称。
 
-1. 从下拉菜单中选择标记或添加新标记。
+1. 从下拉菜单中选择标签或添加全新标签。
 
    ![](/help/analysis-workspace/build-workspace-project/assets/select-tags.png)
 
@@ -39,7 +39,7 @@ ht-degree: 93%
 
 通过子文件夹，可提供额外级别的项目管理和组织。
 
-要在已有文件夹打开时创建子文件夹，请执行以下操作
+要在已有文件夹打开时创建子文件夹，请执行以下操作：
 
 1. 单击&#x200B;**创建新文件夹**。
 
