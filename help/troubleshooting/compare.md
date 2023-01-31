@@ -5,9 +5,9 @@ role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '828'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -63,9 +63,9 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
         ORDER BY Day; 
 ```
 
-1. 在 [Analytics数据馈送](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html)，从原始数据中识别Analytics源连接器是否过滤掉了某些行。
+1. [分析数据馈送](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html)，从原始数据中识别某些行是否已被分析源连接器过滤掉。
 
-   的 [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) 可能会在转换到XDM架构期间过滤某些行。 整个行不适合进行转换的原因可能有多种。如果以下任何一个Analytics字段具有这些值，则将过滤掉整行。
+   [分析源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)可能在转换到 XDM 模式期间过滤某些行。整个行不适合进行转换的原因可能有多种。如果以下任何分析字段具有这些值，则将过滤掉整个行。
 
    | Analytics 字段 | 导致行丢弃的值 |
    | --- | --- |
@@ -78,9 +78,9 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
 
    有关 hit\_source 详细信息，请参阅：[数据列参考](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=zh-Hans)。有关 page\_event 详细信息，请参阅：[页面事件查找](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html?lang=zh-Hans)。
 
-1. 如果连接器过滤了行，则从 [!UICONTROL 发生次数] 量度。 得到的数字应与 Adobe Experience Platform 数据集中的事件数一致。
+1. 如果连接器过滤某些行，则将从[!UICONTROL 发生次数]量度中去除这些行。得到的数字应与 Adobe Experience Platform 数据集中的事件数一致。
 
-## 在从AEP摄取期间为何会过滤或跳过记录
+## 为什么在从 AEP 引入数据期间可能会过滤或跳过一些记录
 
 CJA [连接](/help/connections/create-connection.md)允许您跨数据集基于共同的人员 ID 将多个数据集聚集并连接在一起。在后端，我们应用重复数据删除：首先，基于时间戳针对事件数据集进行完全的外部连接或合并，然后基于人员 ID 对配置文件和查找数据集进行内部连接。
 
@@ -90,4 +90,4 @@ CJA [连接](/help/connections/create-connection.md)允许您跨数据集基于�
 
 * **缺少人员 ID** -（事件数据集和/或配置文件/查找数据集）缺少人员 ID 将导致忽略或跳过这些记录。原因是没有共同的 ID 或匹配的键可连接这些记录。
 
-* **人员 ID 无效或过大** – 对于无效的 ID，系统将无法在要连接的数据集中找到有效的共同 ID。在某些情况下，人员ID列具有无效的人员ID，如“未定义”或“00000000”。 每个月在某个事件中出现超过 100 万次的人员 ID（数字和字母的任意组合）无法归因到任何特定的用户或个人。它将被归为无效。无法将这些记录引入到系统中，并将导致引入和报表容易出错。
+* **人员 ID 无效或过大** – 对于无效的 ID，系统将无法在要连接的数据集中找到有效的共同 ID。在某些情况下，人员 ID 列具有无效的人员 ID，例如“未定义”或“00000000”。每个月在某个事件中出现超过 100 万次的人员 ID（数字和字母的任意组合）无法归因到任何特定的用户或个人。它将被归为无效。无法将这些记录引入到系统中，并将导致引入和报表容易出错。
