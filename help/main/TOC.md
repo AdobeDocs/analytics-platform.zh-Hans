@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Customer Journey Analytics (CJA) 以及如何将 Analysis Workspace 用于来自 Experience Platform 的数据。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 11ad1c91d07e8d4d6dd0186de68b1cc1d715ffe1
+source-git-commit: 43c8af6f9010354258a702fb702a330873d9cb8e
 workflow-type: tm+mt
 source-wordcount: '860'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 96%
    + [Customer Journey Analytics 登陆页面](../getting-started/landing.md)
    + [从 Adobe Analytics 演变到 Customer Journey Analytics](../getting-started/aa-to-cja.md)
    + [Customer Journey Analytics 新用户的用户指南](../getting-started/aa-to-cja-user.md)
-   + [查看和管理CJA使用情况](../getting-started/estimate-usage.md)
+   + [查看和管理 CJA 使用情况](../getting-started/estimate-usage.md)
    + [常见问题解答](../getting-started/cja-faq.md)
    + 比较 Adobe Analytics 和 Customer Journey Analytics{#compare-aa-cja}
       + [在 Customer Journey Analytics 中使用 Adobe Analytics 数据](../getting-started/aa-vs-cja/aa-data-in-cja.md)
@@ -49,11 +49,11 @@ ht-degree: 96%
    + [CJA 术语表](../getting-started/cja-glossary.md)
 + 数据引入 {#cja-data-ingestion}
    + [数据摄取概述](../data-ingestion/data-ingestion.md)
-   + 摄取和使用快速入门指南{#ingest-use-guides}
+   + 摄取并使用快速入门指南{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
-      + [Adobe Experience Platform Web SDK和Edge Network](../data-ingestion/aepwebsdk.md)
-      + [批量数据](../data-ingestion/batch.md)
-      + [流数据](../data-ingestion/streaming.md)
+      + [Adobe Experience Platform Web SDK 和 Edge Network](../data-ingestion/aepwebsdk.md)
+      + [批次数据](../data-ingestion/batch.md)
+      + [流式数据](../data-ingestion/streaming.md)
       + [源连接器](../data-ingestion/sources.md)
 + 连接 {#cja-connections}
    + [连接概述](../connections/overview.md)
@@ -104,7 +104,7 @@ ht-degree: 96%
             + [列设置](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [行设置](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [动态项和静态项](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
-         + [对表格进行分页、过滤和排序](../analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md)
+         + [对表格进行分页、过滤和排序](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
          + [ Workspace 总计](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + 同类群组表 {#cohort-table}
          + [什么是同类群组分析？](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
