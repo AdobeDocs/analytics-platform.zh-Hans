@@ -5,9 +5,9 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 source-git-commit: 6eba4eb9f9ba879d9cb17e88b9e61e2f2b297f33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2157'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -110,7 +110,7 @@ ht-degree: 99%
 
 ## 9. 估算连接大小 {#estimate-size}
 
-请参阅 [评估和管理使用情况](/help/getting-started/estimate-usage.md).
+请参阅[估算和管理使用情况](/help/getting-started/estimate-usage.md)。
 
 ## 10. 关于使用过量 {#overage}
 
