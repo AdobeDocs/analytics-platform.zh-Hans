@@ -1,71 +1,71 @@
 ---
 title: 数据摄取概述
-description: 了解将数据摄取到Customer Journey Analytics的不同方式
+description: 了解将数据导入 Customer Journey Analytics 的不同方式
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '634'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 # 数据摄取概述
 
-在将数据摄取到Customer Journey Analytics时，您有许多选项。 其中一些选项假定您要转移传统的Adobe Analytics数据，而另一些选项则假定您使用摄取到Adobe Experience Platform的数据。
+在将数据导入 Customer Journey Analytics 时您有多种选择。他们中的一些人假设你想移动传统的 Adobe Analytics 数据，有些人假设你使用的是从 Adobe Experience Platform 获取的数据。
 
 >[!IMPORTANT]
 >
->在所有情况下，您希望 _use_ Customer Journey Analytics _摄取_ 在Adobe Experience Platform。
+>在所有情况下，您希望在 Customer Journey Analytics 中&#x200B;_使用的_&#x200B;数据实际上都是在 Adobe Experience Platform 中&#x200B;_获取的_。
 
 
-请参阅 [概述](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=zh-Hans):
+请参阅前面[概述](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=zh-Hans)中所示的高级 Customer Journey Analytics 体系结构：
 
-![客户历程分析](./assets/cja-architecture.png)
+![Customer Journey Analytics](./assets/cja-architecture.png)
 
-上述架构中的数据集可能源自各种来源：
+上述模式中的数据集可以来自各种来源：
 
-- 批量数据，
+- 批次数据，
 
-- 流数据，
+- 流式数据，
 
-- 来自当前Adobe Analytics部署的数据，
+- 来自当前 Adobe Analytics 部署的数据，
 
-- 使用Adobe Experience Platform Web/Mobile SDK跟踪您的网站/移动设备应用程序的数据，或
+- 使用 Adobe Experience Platform Web/Mobile SDK 跟踪您的网站/移动应用程序的数据，或
 
-- 来自第三方数据提供商的数据，Adobe为其提供源连接器。
+- 来自 Adobe 提供源连接器的第三方数据提供商的数据。
 
-你可以拥有很多这样的数据集。
+您可以拥有许多这些数据集。
 
-本文档的此部分提供了各种情景的快速入门指南。
+文档的这一部分提供了各种场景的快速入门指南。
 
-## 从传统Adobe Analytics中摄取和使用数据
+## 从传统 Adobe Analytics 中获取和使用数据
 
-您已经部署了Adobe Analytics，并且希望在Adobe Experience Platform中摄取此数据，并在Customer Journey Analytics中使用、合并和分析来自其他渠道和数据源的数据。
+您已经部署了 Adobe Analytics，并希望在 Adobe Experience Platform 中获取这些数据，并将其与 Customer Journey Analytics 中其他渠道和数据源的数据一起使用、组合和分析。
 
-请参阅 [从传统Adobe Analytics中摄取和使用数据](./analytics.md) 以了解更多信息。
+有关更多信息请参阅[摄取并使用传统 Adobe Analytics 的数据](./analytics.md)。
 
-## 通过Adobe Experience Platform Web SDK和边缘网络摄取和使用数据
+## 通过 Adobe Experience Platform Web SDK 和 Edge Network 获取和使用数据
 
-您想要使用Adobe技术分析您的网站，从其他解决方案迁移或开始跟踪访客的行为。 您希望遵循Adobe实施的最佳实践(使用Adobe Experience Platform SDK和边缘网络)来摄取数据。 然后，您可以在Customer Journey Analytics中使用、合并和分析从其他渠道和数据源摄取的数据。
+您希望使用 Adobe 技术分析您的网站，可能从另一个解决方案迁移或开始跟踪访问者的行为。您希望遵循 Adobe 的最佳实施实践，即使用 Adobe Experience Platform SDK 和 Edge Network 来获取数据。然后您可以在 Customer Journey Analytics 中使用、组合和分析摄入的数据与来自其他渠道和数据源的数据。
 
-请参阅 [通过Adobe Experience Platform Web SDK和边缘网络摄取和使用数据](./aepwebsdk.md) 以了解更多信息。
+有关更多信息请参阅[通过 Adobe Experience Platform Web SDK 和 Edge Network 摄取和使用数据](./aepwebsdk.md)。
 
-## 摄取和使用批量数据
+## 摄取和使用批次数据
 
-您提供了相关的批量数据，其中提供了可帮助您更好地了解客户行为并分析客户交互的详细信息。 此类批量数据的示例是CSV、JSON或Parquet格式的平面文件，这些文件来自CRM系统、忠诚度应用程序或其他解决方案，Adobe当前未提供源连接器。 将此批量数据摄取到Adobe Experience Platform中，可让您在Customer Journey Analytics中使用、合并和分析来自其他渠道和数据源的数据。
+您有相关的批处理数据这些数据提供了详细信息可以帮助您更好地了解客户行为并分析客户互动。此类批处理数据的示例是来自 CRM 系统、忠诚度应用程序或 Adobe 当前未提供源连接器的其他解决方案的 CSV、JSON 或 Parquet 格式的平面文件。通过将此批数据导入 Adobe Experience Platform，您可以在 Customer Journey Analytics 中使用、组合并分析来自其他渠道和数据源的数据。
 
-请参阅 [摄取和使用批量数据](./batch.md) 以了解更多信息。
+有关详细信息请参阅[摄入和使用批次数据](./batch.md)。
 
-## 摄取和使用流数据
+## 摄取和使用流式数据
 
-您有一个相关的数据源，如CRM系统、ERP系统或任何其他数据源，它提供了详细信息，可帮助您更好地了解客户行为并分析客户交互。 该数据源能够通过HTTP或公共云流基础架构进行通信，但其Adobe当前不提供源连接器。 通过将此流数据实时摄取到Adobe Experience Platform中，您可以使用、合并和分析来自其他渠道的数据以及Customer Journey Analytics中的数据源。
+您有一个相关的数据源，如 CRM 系统、ERP 系统或任何其他提供详细信息的源，可以帮助您更好地了解客户行为并分析客户互动。该数据源能够通过 HTTP 或公共云流基础设施进行通信，但 Adobe 目前没有提供源连接器。将这些流式数据实时导入 Adobe Experience Platform，使您能够使用、组合并分析来自 Customer Journey Analytics 中其他渠道和数据源的数据。
 
-请参阅 [摄取和使用流数据](./streaming.md) 以了解更多信息。
+有关详细信息请参阅[摄取并使用流数据](./streaming.md)。
 
 ## 使用源连接器摄取和使用数据
 
-源连接器支持的源中有可用的数据。 源连接器是可配置的配置，允许您将数据从Adobe、第一方和第三方应用程序摄取到Adobe Experience Platform。 请参阅 [源连接器概述](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hans) 有关可用源连接器的概述。 使用源连接器，您可以轻松地将数据从源摄取到Adobe Experience Platform中，然后将其与其他渠道和数据源中的数据Customer Journey Analytics使用、合并和分析。
+您可以从源连接器支持的源获取数据。源连接器是可配置的配置允许您将数据从 Adobe、第一方和第三方应用程序摄取到 Adobe Experience Platform 中。有关可用源连接器的概述请参见[源连接器概述](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hans)。使用源连接器您可以轻松地将数据从源导入 Adobe Experience Platform，然后在 Customer Journey Analytics 中使用、组合和分析来自其他渠道和数据源的数据。
 
-请参阅 [使用源连接器摄取和使用数据](./sources.md) 以了解更多信息。
+有关详细信息请参阅[摄取并使用源连接器使用数据](./sources.md)。
