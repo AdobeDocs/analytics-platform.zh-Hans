@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2471'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
