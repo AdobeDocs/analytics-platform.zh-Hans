@@ -5,9 +5,9 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: b2dc937159fc631755c1c5486149a94f7cd33f89
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1313'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -99,9 +99,9 @@ f. 指定“50”为值。
 
 * [会话类型](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=zh-Hans#optional) - 此维度有两个值：1) [!UICONTROL New] 和 2) [!UICONTROL Returning]。[!UICONTROL 新的]行项目包括已确定为个人的首次会话的所有行为（即针对该维度的量度）。 其他所有内容都包含在[!UICONTROL 返回]的行项目中（假设所有内容都属于一个会话）。 如果量度不是任何会话的一部分，则它们属于该维度的“不适用”范围。 
 
-* [新会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional)。新会话指标被定义为某人在报表时段内定义的首个会话。
+* [新会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=zh-Hans#optional)。新会话指标被定义为某人在报表时段内定义的首个会话。
 
-* [回归会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional)回归会话指标是并非某人第一会话的会话数。-->
+* [回归会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=zh-Hans#optional)回归会话指标是并非某人第一会话的会话数。-->
 
 要访问这些组件，请执行以下操作：
 
@@ -123,7 +123,7 @@ Adobe Experience Platform 中的架构包含[!UICONTROL 日期]和[!UICONTROL �
 
 * 对于日期时间格式，如果选择&#x200B;**[!UICONTROL 一天中的分钟]**&#x200B;格式为&#x200B;**[!UICONTROL 小时:分钟]**，则输出可能为：20:20。
 
-我们当前支持1900年1月1日之后的日期（除1970年1月1日外）和2000年1月1日之后的日期时间值:00:00.
+我们目前支持 1900 年 1 月 1 日之后的日期（1970 年 1 月 1 日除外）和 2000 年 1 月 1 日 00:00:00 点之后的时间值。
 
 ### 日期和日期时间用例
 
