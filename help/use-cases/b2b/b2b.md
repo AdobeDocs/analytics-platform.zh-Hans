@@ -5,9 +5,9 @@ exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
 source-git-commit: f7d50753f4c6d64492682d7c1269a4d45aea8a31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '853'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 93%
 
 所有这些都可通过将帐户级别信息作为[查询](/help/getting-started/cja-glossary.md)数据集引入来实现。
 
-首先，在 Adobe Experience Platform 中创建一个查询架构，然后通过引入基于 .csv 的帐户级别数据来创建查询表数据集。然后，继续在Customer Journey Analytics(CJA)中创建可合并不同数据集（包括您创建的查询数据集）的连接。 您随后创建一个数据视图，最后能够在 Workspace 中利用所有这些数据。
+首先，在 Adobe Experience Platform 中创建一个查询架构，然后通过引入基于 .csv 的帐户级别数据来创建查询表数据集。然后，您继续在 Customer Journey Analytics (CJA) 中创建一个连接，该连接结合了不同的数据集，包括您创建的查找数据集。您随后创建一个数据视图，最后能够在 Workspace 中利用所有这些数据。
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ ht-degree: 93%
 
 ## 1. 创建查询模式 (Experience Platform)
 
-自行创建[查询](/help/getting-started/cja-glossary.md)表模式时，应当确保所用的数据集在 CJA 中具有正确的设置（记录类型）并且可用。最佳做法是 [创建自定义模式类](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans#create-new-class) 称为“Lookup”（清空任何元素），可重复用于所有查询表。
+自行创建[查询](/help/getting-started/cja-glossary.md)表模式时，应当确保所用的数据集在 CJA 中具有正确的设置（记录类型）并且可用。最佳实践是[创建一个名为查找的自定义模式类](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans#create-new-class)，该类中没有任何元素，可以重新用于所有查找表。
 
 ![](../assets/create-new-class.png)
 
