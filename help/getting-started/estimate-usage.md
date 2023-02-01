@@ -4,10 +4,10 @@ description: 展示了两种估算使用情况的方法和一种管理使用情�
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: a69cb8a419d95e0cab666fceea9cb7ebf6daef73
-workflow-type: ht
-source-wordcount: '857'
-ht-degree: 100%
+source-git-commit: d38e4c4cd589e6708b0a6b5856da341344f6440e
+workflow-type: tm+mt
+source-wordcount: '864'
+ht-degree: 96%
 
 ---
 
@@ -99,5 +99,5 @@ ht-degree: 100%
 
 如果您保留默认值（未选中），则保留期将被 Adobe Experience Platform 数据保留设置所取代。如果您在 Experience Platform 中有 25 个月的数据，那么 CJA 将通过回填获取 25 个月的数据。如果您在 Platform 中删除了其中的 10 个月，则 CJA 将保留剩余的 15 个月。
 
-数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此配置文件或查找数据集不存在滚动数据窗口设置。但是，如果您的连接包括任何配置文件或查找数据集（一个或多个事件数据集除外），则该数据将保留相同的时段。
+数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此配置文件或查找数据集不存在滚动数据窗口设置。如果您的连接包含任何配置文件或查询数据集，由于这些数据集与事件数据集相连，因此该数据会根据您对事件数据集时间戳的数据保留设置在CJA中保留。
 
