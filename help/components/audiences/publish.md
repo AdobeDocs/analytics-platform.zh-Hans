@@ -5,7 +5,7 @@ exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 source-git-commit: 2579a6bbf17836fdab519b01e09f253bfb3a7aeb
 workflow-type: tm+mt
 source-wordcount: '1192'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -74,7 +74,7 @@ ht-degree: 91%
 
 ## 在 Experience Platform 中使用 CJA 受众 {#audiences-aep}
 
-CJA会采用您已发布受众中的所有命名空间和ID组合，并将它们流式传输到实时客户资料(RTCP)中。 CJA会根据所选的Experience Platform，将受众发送到设置了主标识的受众 [!UICONTROL 人员ID] 连接配置后。
+CJA 可以从您发布的受众中获取所有的命名空间和 ID 组合，并将其以流式传输到实时客户配置文件 (RTCP) 中。CJA 会将受众发送到 Experience Platform，并根据配置连接时选择的[!UICONTROL 人员 ID] 设置主要标识。
 
 然后，RTCP 会检查每个命名空间/ID 组合，并查找可能包含它的个人资料。个人资料其实就是由所链接的命名空间、ID 和设备组成的集群。如果它找到一份相关的个人资料，则会将命名空间和 ID 作为区段会员资格属性添加到此个人资料中的其他 ID。例如，现在”user@adobe.com“可以成为所有设备和渠道的目标。如果未找到相关的个人资料，则会创建一份新的个人资料。
 
@@ -108,17 +108,17 @@ CJA会采用您已发布受众中的所有命名空间和ID组合，并将它们
 
 +++**CJA 是将受众数据作为管道事件发送，还是也发送到数据湖的平面文件？**
 
-CJA通过管道将数据流传输到RTCP中，并且这些数据也会收集到数据湖中的系统数据集中。
+CJA 通过管道将数据流式传输到 RTCP 中，这些数据也被收集到数据湖中的系统数据集中。
 
 +++
 
 +++**CJA 发送了哪些身份？**
 
-在 [连接设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans#create-connection). 具体而言，用户选择要用作其“人员ID”的字段时的步骤。
+[连接设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans#create-connection)中使用的标识/命名空间对。具体来说，用户选择要用作其“个人 ID”的字段时的步骤。
 
 +++
 
-+++**选择哪个ID作为主标识？**
++++**选择什么 ID 作为主要标识？**
 
 请参阅上面的内容。每个 CJA“人”只发送一个身份。
 

@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: fe8a2ee1af1f022f56116ea64460e4ad1b572b8e
 workflow-type: tm+mt
 source-wordcount: '1311'
-ht-degree: 90%
+ht-degree: 98%
 
 ---
 
@@ -20,14 +20,14 @@ CJA 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2023 年 1 月** |  |
-| 过滤和排序表 | 更新了 [过滤和排序表](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) 文章。 已从“对表格进行分页、过滤和排序”中重命名本文。 |
-| 数据摄取快速入门指南 | 新增了有关如何 [摄取和使用数据](/help/data-ingestion/data-ingestion.md) 在CJA中。 |
-| 工作区文件夹 | 专用页面 [文件夹管理](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
-| 工作区用户首选项 | 许多其他用户首选项现在在 [首选项](/help/analysis-workspace/user-preferences.md). |
-| 为工作区项目自动保存 | 更新了内容，以在 [保存项目](/help/analysis-workspace/build-workspace-project/save-projects.md). |
-| 登陆页面 | 新登陆页面更新 [登陆页面](/help/getting-started/landing.md). |
-| 计划工作簿 | 描述如何 [计划工作簿](/help/report-builder/schedule-reportbuilder.md) Report Builder。 |
-| 对配置文件和查找数据集的对象数组支持 | 已更新 [使用对象数组](/help/use-cases/object-arrays.md) 和 [摄取AEP受众](/help/use-cases/data-ingestion/ingest-aep-segments.md) 以反映对配置文件和查找数据集的对象数组支持。 |
+| 排序和过滤表格 | 更新了 [过滤和排序表](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) 文章。 已从“对表格进行分页、过滤和排序”中重命名本文。 |
+| 数据摄取快速入门指南 | 关于如何在 CJA 中[摄取和使用数据](/help/data-ingestion/data-ingestion.md)的新文档部分。 |
+| Workspace 文件夹 | [文件夹管理](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)的专用页面。 |
+| Workspace 用户偏好设置 | [偏好设置](/help/analysis-workspace/user-preferences.md)中现在提供了许多其他用户偏好设置。 |
+| 自动保存 Workspace 项目 | 已更新内容以在[保存项目](/help/analysis-workspace/build-workspace-project/save-projects.md)中包含自动保存功能。 |
+| 登陆页面 | 新的着陆页面更新[着陆页面](/help/getting-started/landing.md)。 |
+| 计划工作簿 | 专用页面描述如何在 Report Builder 中[计划工作簿](/help/report-builder/schedule-reportbuilder.md)。 |
+| 对象数组支持配置文件和查找数据集 | 更新了[使用对象数组](/help/use-cases/object-arrays.md)和[摄入 AEP 受众](/help/use-cases/data-ingestion/ingest-aep-segments.md)以反映对配置文件和查找数据集的对象数组支持。 |
 
 ## 2022 {#22}
 
@@ -36,7 +36,7 @@ CJA 文档自创建以来进行了以下更新。
 | **2022 年 12 月** |  |
 | 2022 年 12 月 16 日 | 关于[测量和管理 CJA 数据使用](/help/getting-started/estimate-usage.md)的新主题。 |
 | **2022 年 10 月** |  |
-| 2022 年 10 月 | 关于[计划项目密码保护](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#password)的新主题。 此功能支持 [HIPAA 准备工作](https://www.adobe.com/cn/trust/compliance/hipaa-ready.html)。 |
+| 2022 年 10 月 | 关于[计划项目密码保护](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=zh-Hans#password)的新主题。 此功能支持 [HIPAA 准备工作](https://www.adobe.com/cn/trust/compliance/hipaa-ready.html)。 |
 | 2022 年 10 月 | 关于[客户管理的密钥](/help/privacy/cmk.md)新主题。 此功能支持 [HIPAA 准备工作](https://www.adobe.com/cn/trust/compliance/hipaa-ready.html)。 |
 | 2022 年 10 月 | 关于 [CJA 审核日志](/help/privacy/audit-log.md)的新主题。 |
 | 2022 年 10 月 | 关于[关键指标摘要](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html?lang=zh-Hans)可视化的新主题。 |
@@ -48,24 +48,24 @@ CJA 文档自创建以来进行了以下更新。
 | 2022 年 9 月 | Workspace 中[组合图表](/help/analysis-workspace/visualizations/combo-charts.md)的新主题。 |
 | 2022 年 9 月 | 关于 Workspace 中[“试验”面板](/help/analysis-workspace/c-panels/experimentation.md)的新主题。 |
 | **2022 年 8 月** |  |
-| 2022 年 8 月 | Adobe Experience Platform 有关[分析源连接器跨区域支持](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)的文章。。 |
+| 2022 年 8 月 | Adobe Experience Platform 有关[分析源连接器跨区域支持](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)的文章。 |
 | 2022 年 8 月 | 关于[CJA 访问控制](/help/getting-started/cja-access-control.md)的重要更新文章。 |
 | 2022 年 8 月 | 关于 [CJA 支持数据管理标签和策略的新文章](/help/data-views/data-governance.md)。 |
 | 2022 年 8 月 | 关于[比较通过 Analytics Source Connector 传递的分析数据的术语](/help/getting-started/aa-vs-cja/terminology.md)的新文章。 |
-| 2022 年 8 月 | 关于[将受众发布到实时客户个人资料](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html)的新文档。 |
+| 2022 年 8 月 | 关于[将受众发布到实时客户个人资料](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=zh-Hans)的新文档。 |
 | **2022 年 7 月** |  |
-| 2022 年 7 月 | [Media Playback 耗时面板](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html)文档。 |
-| 2022 年 7 月 | [媒体并行查看者面板](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html)文档。 |
+| 2022 年 7 月 | [Media Playback 耗时面板](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=zh-Hans)文档。 |
+| 2022 年 7 月 | [媒体并行查看者面板](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=zh-Hans)文档。 |
 | 2022 年 7 月 | [首次会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat)报告文档。 |
 | **2022 年 6 月** |  |
-| 2022 年 6 月 | 关于 [AAID、ECID、AACUSTOMID 和 Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/aaid-ecid-adc.html) 的新文章 |
+| 2022 年 6 月 | 关于 [AAID、ECID、AACUSTOMID 和 Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/aaid-ecid-adc.html?lang=zh-Hans) 的新文章 |
 | 2022 年 6 月 | 关于 [Adobe Analytics 处理规则、VISTA 和分类对比 Analytics Source Connector 的数据准备的新文章](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md)。 |
 | 2022 年 6 月 | 关于[虚拟报告环境和沙盒环境的新文章](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)。 |
 | 2022 年 6 月 | 关于[跨 Adobe Analytics 和 CJA 报告功能比较数据处理的新文章](/help/getting-started/aa-vs-cja/data-processing-comparisons.md)。 |
 | 2022 年 6 月 | 关于[将报告包与不同架构相结合](/help/use-cases/aa-data/combine-report-suites.md)的新文章。 |
 | 2022 年 6 月 | 关于[在 Mobile 记分卡中共享批注的新文章](/help/components/annotations/mobile-annotations.md)。 |
 | 2022 年 6 月 | 关于 [CJA 分析实验室](/help/labs/labs.md)的新文章。 |
-| 2022 年 6 月 | 关于[支持数字字段作为查找键和查找值](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric)的最新部分。 |
+| 2022 年 6 月 | 关于[支持数字字段作为查找键和查找值](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans#numeric)的最新部分。 |
 | 2022 年 6 月 | [流量可视化工作流](/help/analysis-workspace/visualizations/c-flow/create-flow.md)的更新。 |
 | **2022 年 5 月** |  |
 | 2022 年 5 月 | 关于在 CJA 中[创建连接](/help/connections/create-connection.md)的大幅更新文章。 |
@@ -144,7 +144,7 @@ CJA 文档自创建以来进行了以下更新。
 | 2020 年 7 月 | 添加了有关[人员 ID 的标识映射选项](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans)的信息。 |
 | 2020 年 7 月 | 添加了有关[对象数组](/help/use-cases/object-arrays.md)或“数据层次结构”的新主题。 |
 | 2020 年 4 月 14 日 | 对[创建连接](/help/connections/create-connection.md)主题中的最新 UI 进行了更新。 |
-| 2020 年 2 月 27 日 | 对[Customer Journey Analytics 功能支持](/help/getting-started/aa-vs-cja/cja-aa.md)的更新 |
+| 2020 年 2 月 27 日 | 对 [Customer Journey Analytics 功能支持](/help/getting-started/aa-vs-cja/cja-aa.md)的更新 |
 | 2019 年 12 月 | CJA 文档初稿 |
 
 {style=&quot;table-layout:auto&quot;}
