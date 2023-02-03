@@ -3,9 +3,9 @@ title: 审核日志
 description: 了解如何查看和管理 CJA 审核日志。
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 source-git-commit: 53d019f99cbf06ee97243121fbf46f6d3ee9f0a7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '856'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 99%
 | 操作名称 | 以下是可能的操作列表： <ul><li>API 请求</li><li>批准</li><li>创建</li><li>编辑</li><li>导出</li><li>登录失败</li><li>登录成功</li><li>注销</li><li>组织更改</li><li>刷新</li><li>共享</li><li>转移</li><li>取消批准</li><li>取消共享</li></ul> |
 | 描述 | 操作、组件类型（包含 ID）和其他值的摘要。 |
 | 用户名 | 执行操作的用户。 |
-| 组件类型 | 可能的组件类型包括： <ul><li>批注</li><li>受众</li><li>计算量度</li><li>连接</li><li>数据组</li><li>数据视图 （此组件类型包括维度和量度）</li><li>功能访问</li><li>过滤器</li><li>IMS 组织</li><li>移动</li><li>项目</li><li>报表</li><li>计划的项目</li><li>用户</li><li>用户组</li></ul> |
+| 组件类型 | 可能的组件类型包括： <ul><li>批注</li><li>受众</li><li>计算量度</li><li>连接</li><li>数据组</li><li>数据视图（此组件类型包括维度和指标）</li><li>功能访问</li><li>过滤器</li><li>IMS 组织</li><li>移动</li><li>项目</li><li>报表</li><li>计划的项目</li><li>用户</li><li>用户组</li></ul> |
 | IMS 组织 ID | 首次登录 Adobe Experience Cloud 时为您的实例分配的唯一 ID。格式应为：xxx@AdobeOrg。 |
 | 用户 ID | 标识执行此操作的用户的唯一 ID。 |
 | 创建日期 | 执行此操作的时间。 |
