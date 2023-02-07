@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: fe8a2ee1af1f022f56116ea64460e4ad1b572b8e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1311'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ CJA 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2023 年 1 月** |  |
-| 排序和过滤表格 | 更新了 [过滤和排序表](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) 文章。 已从“对表格进行分页、过滤和排序”中重命名本文。 |
+| 对表格进行筛选和排序 | 更新了[对表格进行筛选和排序](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)一文中的内容（包括添加过程和解释可用选项）。本文从“对表格进行分页、筛选和排序”更名而成。 |
 | 数据摄取快速入门指南 | 关于如何在 CJA 中[摄取和使用数据](/help/data-ingestion/data-ingestion.md)的新文档部分。 |
 | Workspace 文件夹 | [文件夹管理](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)的专用页面。 |
 | Workspace 用户偏好设置 | [偏好设置](/help/analysis-workspace/user-preferences.md)中现在提供了许多其他用户偏好设置。 |
