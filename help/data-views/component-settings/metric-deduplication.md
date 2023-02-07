@@ -7,7 +7,7 @@ feature: Data Views
 source-git-commit: 9a31b1dcba4015f00dd7ae8c43b317e1c5679a2c
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 41%
+ht-degree: 54%
 
 ---
 
@@ -26,4 +26,4 @@ ht-degree: 41%
 
 >[!CAUTION]
 >
->在 _人员_ 范围按UTC时间的完整月份评估。 如果部分月份报表窗口在整个月内但在报表日期之外发生，则可能不会显示所有第一个或最后一个实例。
+>在 UTC 时间的足月前评估在&#x200B;_人员_&#x200B;范围的去重。如果某些实例发生在足月内但在报告日期外，则不足月报告时段可能并不显示所有第一个或最后一个实例。
