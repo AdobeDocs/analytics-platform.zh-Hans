@@ -2,10 +2,10 @@
 title: 创建受众并将受众发布到实时客户档案
 description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 218618fb6f5ad97da82ebb40e78f9a04f7d28343
+source-git-commit: e117775aa949b3d471e708ca5559474af76d28bc
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 91%
+source-wordcount: '1389'
+ht-degree: 86%
 
 ---
 
@@ -79,6 +79,19 @@ ht-degree: 91%
 * AEP区段与CJA受众共享相同的名称/描述，但名称将附加CJA受众ID，以确保其唯一。
 * 如果CJA受众名称/描述发生更改，AEP区段名称/描述也会反映该更改。
 * 如果用户删除了CJA受众，则不会删除AEP区段。 原因是CJA受众稍后可能会被取消删除。
+
+## 延迟注意事项 {#latency}
+
+在受众发布之前、期间和之后的几个时间点，可能会发生延迟。 以下是可能延迟的概述。
+
+![](assets/latency-diagram.png)
+
+| 延迟点 | 延迟持续时间 |
+| --- | --- |
+| 数据摄取到数据湖 | 最多30分钟 |
+| 从Experience Platform到CJA的数据摄取 | 最多60分钟 |
+| 将受众发布到实时客户个人资料 | 不到5分钟（取决于受众规模） |
+| 受众的刷新频率 | <ul><li>一次性刷新（延迟少于5分钟）</li><li>每4小时、每日、每周、每月进行一次刷新（刷新率会伴随延迟） |
 
 ## 在 Experience Platform 中使用 CJA 受众 {#audiences-aep}
 

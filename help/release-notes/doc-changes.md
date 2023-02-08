@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: fe8a2ee1af1f022f56116ea64460e4ad1b572b8e
-workflow-type: ht
-source-wordcount: '1311'
-ht-degree: 100%
+source-git-commit: 7f137f545ca2da64f4019818e0b00ab8d96e312f
+workflow-type: tm+mt
+source-wordcount: '1343'
+ht-degree: 97%
 
 ---
 
@@ -19,6 +19,8 @@ CJA 文档自创建以来进行了以下更新。
 
 | 功能 | 描述 |
 | --- | --- |
+| **2023 年 2 月** |  |
+| 受众文档更新 | 创建受众后，Adobe会创建Experience Platform [每个新CJA受众的流区段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
 | **2023 年 1 月** |  |
 | 对表格进行筛选和排序 | 更新了[对表格进行筛选和排序](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)一文中的内容（包括添加过程和解释可用选项）。本文从“对表格进行分页、筛选和排序”更名而成。 |
 | 数据摄取快速入门指南 | 关于如何在 CJA 中[摄取和使用数据](/help/data-ingestion/data-ingestion.md)的新文档部分。 |
