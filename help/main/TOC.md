@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Customer Journey Analytics (CJA) 以及如何将 Analysis Workspace 用于来自 Experience Platform 的数据。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 43c8af6f9010354258a702fb702a330873d9cb8e
+source-git-commit: 97e648de4363eefd4375effad66d6cb17e3f2c2c
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '861'
 ht-degree: 100%
 
 ---
@@ -22,6 +22,7 @@ ht-degree: 100%
 + [Customer Journey Analytics 指南](../getting-started/cja-landing.md)
 + 发行说明 {#releases}
    + [最新版本](../release-notes/latest.md)
+   + [2023 版](../release-notes/2023.md)
    + [2022 版](../release-notes/2022.md)
    + [2021 版](../release-notes/2021.md)
    + [2020 版](../release-notes/2020.md)
@@ -165,7 +166,7 @@ ht-degree: 100%
          + [异常检测概述](../analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
          + [在 Analysis Workspace 中查看异常](../analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
          + [异常检测中使用的统计技术](../analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
-   + [用户首选项](../analysis-workspace/user-preferences.md)
+   + [用户偏好设置](../analysis-workspace/user-preferences.md)
    + Workspace 常见问题解答 {#workspace-faq}
       + [常见问题解答](../analysis-workspace/workspace-faq/faq.md)
       + [优化 Analysis Workspace 性能](../analysis-workspace/workspace-faq/optimizing-performance.md)
