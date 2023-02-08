@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
-workflow-type: ht
-source-wordcount: '1769'
-ht-degree: 100%
+source-git-commit: bacf1568b0d39d20f948c087d616881b66d96ca2
+workflow-type: tm+mt
+source-wordcount: '1808'
+ht-degree: 98%
 
 ---
 
@@ -105,6 +105,16 @@ Adobe Analytics 记分卡以平铺版面为执行用户显示关键数据可视�
 ![新记分卡 5](assets/new_score_card5.png)
 
 这会将您带到日期范围生成器，您可以在其中创建和保存新的日期范围组件。
+
+### 显示比较日期范围 {#show-comparison-dates}
+
+要包含比较日期范围，请将 **包括比较日期** 设置。
+
+![包括比较日期](assets/include-comparison-dates.png)
+
+设置为 *on* 默认情况下。 如果不想查看比较日期，请取消选择选项。
+
+![取消选择的比较日期设置](assets/no-comparison-dates.png)
 
 ## 应用可视化图表 {#viz}
 
