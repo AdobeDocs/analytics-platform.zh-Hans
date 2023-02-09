@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 7f137f545ca2da64f4019818e0b00ab8d96e312f
+source-git-commit: 362954f126956ed0c77ad8c79aa634f8d6a36569
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 97%
+source-wordcount: '1390'
+ht-degree: 95%
 
 ---
 
@@ -21,8 +21,10 @@ CJA 文档自创建以来进行了以下更新。
 | --- | --- |
 | **2023 年 2 月** |  |
 | 受众文档更新 | 创建受众后，Adobe会创建Experience Platform [每个新CJA受众的流区段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
+| 工作区日历和日期范围 | 更新了描述相对日期范围、公式计算更新和日历UI更改的内容。 请参阅 [关于相对面板日期范围](/help/components/date-ranges/calendar.md#relative-panel-dates). |
+| 移动记分卡 | 新增了描述如何显示和隐藏比较日期范围的文档部分。 请参阅 [显示比较日期范围](/help/mobile-app/create-scorecard.md#show-comparison-dates) 在CJA中。 |
 | **2023 年 1 月** |  |
-| 对表格进行筛选和排序 | 更新了[对表格进行筛选和排序](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)一文中的内容（包括添加过程和解释可用选项）。本文从“对表格进行分页、筛选和排序”更名而成。 |
+| 排序和过滤表格 | 更新了[对表格进行筛选和排序](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)一文中的内容（包括添加过程和解释可用选项）。本文从“对表格进行分页、筛选和排序”更名而成。 |
 | 数据摄取快速入门指南 | 关于如何在 CJA 中[摄取和使用数据](/help/data-ingestion/data-ingestion.md)的新文档部分。 |
 | Workspace 文件夹 | [文件夹管理](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)的专用页面。 |
 | Workspace 用户偏好设置 | [偏好设置](/help/analysis-workspace/user-preferences.md)中现在提供了许多其他用户偏好设置。 |

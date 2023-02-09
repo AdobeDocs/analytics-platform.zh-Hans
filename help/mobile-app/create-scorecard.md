@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 72f59b140b2a907f8c0a125825cd4df6d7c38dbc
+source-git-commit: 14bcb1364e59ee02073829050daa068c6203a93c
 workflow-type: tm+mt
-source-wordcount: '1810'
-ht-degree: 97%
+source-wordcount: '1811'
+ht-degree: 99%
 
 ---
 
@@ -57,7 +57,7 @@ Adobe Analytics 记分卡以平铺版面为执行用户显示关键数据可视�
 
 1. 在&#x200B;**[!UICONTROL 属性]**（位于右侧边栏中）下，指定要从中使用数据的&#x200B;**[!UICONTROL 项目报表包]**。报表包就是 CJA 中的数据视图。
 
-   ![报表包选择](assets/properties_save.png)
+   ![报告包选择](assets/properties_save.png)
 
 1. 要向记分卡中添加新图块，请将左侧面板中的某个指标拖放到&#x200B;**[!UICONTROL 在此处拖放指标]**&#x200B;区域。您也可以使用类似的工作流程，在两个图块之间插入指标。
 
@@ -106,15 +106,15 @@ Adobe Analytics 记分卡以平铺版面为执行用户显示关键数据可视�
 
 这会将您带到日期范围生成器，您可以在其中创建和保存新的日期范围组件。
 
-### 显示/隐藏比较日期范围 {#showo-comparison-dates}
+### 显示或隐藏比较日期范围 {#show-comparison-dates}
 
-要包含比较日期范围，请将 **包括比较日期** 设置。
+要包括比较日期范围，请切换&#x200B;**包括比较日期**&#x200B;设置。
 
 ![包括比较日期](assets/include-comparison-dates.png)
 
-设置为 *on* 默认情况下。 将其切换到 *关闭* 不想查看比较日期。
+默认情况下&#x200B;*启用*&#x200B;此设置。 将其切换到 *关闭* 不想查看比较日期。
 
-![取消选择的比较日期设置](assets/no-comparison-dates.png)
+![已取消选择比较日期设置](assets/no-comparison-dates.png)
 
 ## 应用可视化图表 {#viz}
 
