@@ -2,10 +2,10 @@
 title: 创建受众并将受众发布到实时客户档案
 description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: d343436f5b72e30b420088f9e9a3a8fb9b97becb
+source-git-commit: 04dd36d9157da852aea7d488cbcc2617162d9324
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 90%
+source-wordcount: '1411'
+ht-degree: 91%
 
 ---
 
@@ -90,7 +90,7 @@ ht-degree: 90%
 | 从Experience Platform到CJA的数据摄取 | 最多60分钟 |
 | 将受众发布到实时客户资料，包括自动创建流区段，并允许区段准备接收数据。 | 大约60分钟 |
 | 受众的刷新频率 | <ul><li>一次性刷新（延迟少于5分钟）</li><li>每4小时、每日、每周、每月进行一次刷新（刷新率会伴随延迟） |
-| 在AEP中创建目标：将新区段激活到Adobe Target | 目前，这最长可能需要24小时，具体取决于受众更新间隔和区段评估类型 |
+| 在AEP中创建目标：激活新区段 | 1-2 小时 |
 
 ## 在 Experience Platform 中使用 CJA 受众 {#audiences-aep}
 
