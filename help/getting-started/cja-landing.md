@@ -4,10 +4,10 @@ description: Customer Journey Analytics 登陆页面。
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 316f53c99053023fa54e0890fe9cf5f6c9cfcb4d
-workflow-type: ht
-source-wordcount: '425'
-ht-degree: 100%
+source-git-commit: 9eae32c75218a9fd84da42593f4bd202757b4403
+workflow-type: tm+mt
+source-wordcount: '447'
+ht-degree: 82%
 
 ---
 
@@ -25,13 +25,13 @@ Analytics Select、Prime 和 Ultimate 客户有资格此附加产品。有关更
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>新增项目或特色项目</b> </p> <p> 
      <ul>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cca/overview.html?lang=zh-Hans#cja-connections"> 跨渠道分析（在 Customer Journey Analytics 中拼接 ID）</a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/aa-data-in-cja.html?lang=zh-Hans">在 Customer Journey Analytics 中使用 Adobe Analytics 报告包</a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html?lang=en">在 Customer Journey Analytics 中使用 Adobe Analytics 报告包</a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=zh-Hans">将报告包与不同的架构相结合</a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/pr-vista-dataprep.html?lang=zh-Hans">处理规则、VISTA 和分类与数据准备</a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/data-processing-comparisons.html?lang=zh-Hans">跨 Adobe Analytics 和 CJA 报告功能比较数据处理</a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/vrs-dataview-sandbox-adc.html?lang=zh-Hans">虚拟报告包、数据视图、AEP 沙盒和 Analytics Source Connector</a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=zh-Hans"> 从 Adobe Analytics 演变到 Customer Journey Analytics </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja-user.html?lang=zh-Hans"> 适用于Adobe Analytics用户的CJA用户指南 </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/pr-vista-dataprep.html?lang=en">处理规则、VISTA 和分类与数据准备</a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons.html?lang=en">跨 Adobe Analytics 和 CJA 报告功能比较数据处理</a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html?lang=en">虚拟报告包、数据视图、AEP 沙盒和 Analytics Source Connector</a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html"> 从 Adobe Analytics 演变到 Customer Journey Analytics </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja-user.htm"> 适用于Adobe Analytics用户的CJA用户指南 </a> </li>
      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans#connection-detail">使用增强的连接管理功能</a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=zh-Hans#cja-dataviews">使用增强的数据视图功能</a> </li>
    <td colname="col2" valign="top"><p class="head"> <b>快速入门</b> </p> 
@@ -50,6 +50,7 @@ Analytics Select、Prime 和 Ultimate 客户有资格此附加产品。有关更
      <li> <a href="https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html?lang=zh-Hans" format="https" scope="external"> Adobe Experience Platform 教程</a> </li> 
      <li><a href="https://www.adobe.io/apis/experienceplatform/home/api-reference.html" format="https" scope="external"> API 参考</a> </li> 
      <li><a href="https://www.adobe.com/cn/experience-platform/documentation-and-developer-resources.html" format="https" scope="external">文档和开发人员资源</a> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/analytics.html" format="https" scope="external"> 有关如何从传统Adobe Analytics中摄取和使用数据的快速入门指南
      <li><a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans" format="https" scope="external">报告包数据的 Adobe Analytics Source Connector</a> </li>
     </ul> </td> 
   </tr> 

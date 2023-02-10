@@ -4,10 +4,10 @@ description: 了解如何通过 Customer Journey Analytics 来使用分析工作
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: e808ac175092af659ac702bb43f94f82c0ff22f9
+source-git-commit: 9eae32c75218a9fd84da42593f4bd202757b4403
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 100%
+source-wordcount: '980'
+ht-degree: 96%
 
 ---
 
@@ -31,6 +31,11 @@ Customer Journey Analytics 通过提供易于使用的跨渠道功能和消除 A
 * **无限唯一值**：Adobe Experience Platform 不受任何特有限制的约束。
 * **更改历史数据**：使用 Adobe Experience Platform，可以删除或更正数据。
 * **跨报告包数据**：可以在 Platform 中组合来自多个数据集的现有实施。
+
+>[!TIP]
+>
+>如果您一直在使用Adobe Analytics并且希望在Customer Journey Analytics中使用Adobe Analytics数据，请参阅 [从传统Adobe Analytics中摄取和使用数据](../data-ingestion/analytics.md) 快速入门指南(作为 [数据摄取](../data-ingestion/data-ingestion.md) 中。
+
 
 Customer Journey Analytics 的初始版本包括分析工作区中的许多功能。有关完整列表，请参阅 [Customer Journey Analytics 功能支持](/help/getting-started/aa-vs-cja/cja-aa.md)。
 
