@@ -4,9 +4,9 @@ description: 了解实施 Customer Journey Analytics 所需的先决条件和工
 exl-id: cab218c0-009c-4669-9dfb-f8872a7f066b
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 5d0f012505d254406e106939234d4e1d103168db
+source-git-commit: ab4b65a8948d650615cdf9b99718cbc50499e9f5
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '415'
 ht-degree: 85%
 
 ---
@@ -19,7 +19,6 @@ ht-degree: 85%
 
 Customer Journey Analytics 适用以下客户：
 
-* Adobe Analytics [Select、Prime 或 Ultimate](https://www.adobe.com/cn/analytics/compare-adobe-analytics-packages.html) 客户，以及
 * 已配置 [Adobe Experience Platform](https://www.adobe.com/cn/experience-platform.html) 的客户，以及
 * 已购买 Customer Journey Analytics SKU 的客户
 
