@@ -4,7 +4,7 @@ description: 了解如何通过 Customer Journey Analytics 来使用分析工作
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f70cb6a8567d1bb2f844b1694f552ec4bfe70adc
+source-git-commit: e808ac175092af659ac702bb43f94f82c0ff22f9
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 100%
@@ -55,7 +55,7 @@ Customer Journey Analytics 的初始版本包括分析工作区中的许多功�
 
 ## 访问控制
 
-请参阅[访问控制](/help/getting-started/cja-access-control.md)主题。
+请参阅[访问控制](/help/admin/cja-access-control.md)主题。
 
 ## 术语更新
 

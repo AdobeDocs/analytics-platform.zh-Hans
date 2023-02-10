@@ -2,8 +2,8 @@
 title: 审核日志
 description: 了解如何查看和管理 CJA 审核日志。
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
-source-git-commit: 53d019f99cbf06ee97243121fbf46f6d3ee9f0a7
-workflow-type: ht
+source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
+workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 为您的组织启用该功能后，系统会在活动发生时自动收集审核日志。您无需手动启用日志收集。
 
-要查看和导出审核日志，您必须已在 Audit Logs Access 中获得&#x200B;**[!UICONTROL 审核日志访问]**&#x200B;访问控制权限。要了解如何管理 CJA 功能的各项权限，请参阅[访问控制文档](/help/getting-started/cja-access-control.md)。
+要查看和导出审核日志，您必须已在 Audit Logs Access 中获得&#x200B;**[!UICONTROL 审核日志访问]**&#x200B;访问控制权限。要了解如何管理 CJA 功能的各项权限，请参阅[访问控制文档](../admin/cja-access-control.md)。
 
 ## 在 UI 中查看审核日志
 

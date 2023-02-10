@@ -1,18 +1,18 @@
 ---
-title: 从 Adobe Analytics 演变到 Customer Journey Analytics
+title: 来自Adobe Analytics的演变
 description: 将Adobe Analytics数据转换为Customer Journey Analytics数据的步骤
 role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
-workflow-type: ht
-source-wordcount: '1420'
-ht-degree: 100%
+source-git-commit: 34ee7954329d7dc8520031a977bb83d6e1bf3d3d
+workflow-type: tm+mt
+source-wordcount: '1414'
+ht-degree: 99%
 
 ---
 
-# 从 Adobe Analytics 演变到 Customer Journey Analytics
+# 来自Adobe Analytics的演变
 
 随着贵组织不断发展使用Customer Journey Analytics，请探索这些步骤以准备数据并了解这两种技术之间的关键差异。 本文针对管理员受众。
 
@@ -98,9 +98,9 @@ Adobe Analytics 区段（在 CJA 中称为[!UICONTROL 过滤器]）和计算量�
 
 1. 确定这些组件中最重要的部分。
 
-1. 记录它们的定义，以及
+2. 记录它们的定义，以及
 
-1. 确定数据中需要哪些字段以在 CJA 中将它们复制为[过滤器](/help/components/filters/filters-overview.md)和[计算量度](/help/components/calc-metrics/calc-metr-overview.md)。
+3. 确定数据中需要哪些字段以在 CJA 中将它们复制为[过滤器](/help/components/filters/filters-overview.md)和[计算量度](/help/components/calc-metrics/calc-metr-overview.md)。
 
 这里有几个视频可以为您指南：
 

@@ -4,7 +4,7 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 362954f126956ed0c77ad8c79aa634f8d6a36569
+source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 95%
@@ -38,7 +38,7 @@ CJA 文档自创建以来进行了以下更新。
 | 日期 | 更新描述 |
 | --- | --- |
 | **2022 年 12 月** |  |
-| 2022 年 12 月 16 日 | 关于[测量和管理 CJA 数据使用](/help/getting-started/estimate-usage.md)的新主题。 |
+| 2022 年 12 月 16 日 | 关于[测量和管理 CJA 数据使用](/help/admin/estimate-usage.md)的新主题。 |
 | **2022 年 10 月** |  |
 | 2022 年 10 月 | 关于[计划项目密码保护](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=zh-Hans#password)的新主题。 此功能支持 [HIPAA 准备工作](https://www.adobe.com/cn/trust/compliance/hipaa-ready.html)。 |
 | 2022 年 10 月 | 关于[客户管理的密钥](/help/privacy/cmk.md)新主题。 此功能支持 [HIPAA 准备工作](https://www.adobe.com/cn/trust/compliance/hipaa-ready.html)。 |
@@ -53,7 +53,7 @@ CJA 文档自创建以来进行了以下更新。
 | 2022 年 9 月 | 关于 Workspace 中[“试验”面板](/help/analysis-workspace/c-panels/experimentation.md)的新主题。 |
 | **2022 年 8 月** |  |
 | 2022 年 8 月 | Adobe Experience Platform 有关[分析源连接器跨区域支持](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)的文章。 |
-| 2022 年 8 月 | 关于[CJA 访问控制](/help/getting-started/cja-access-control.md)的重要更新文章。 |
+| 2022 年 8 月 | 关于[CJA 访问控制](/help/admin/cja-access-control.md)的重要更新文章。 |
 | 2022 年 8 月 | 关于 [CJA 支持数据管理标签和策略的新文章](/help/data-views/data-governance.md)。 |
 | 2022 年 8 月 | 关于[比较通过 Analytics Source Connector 传递的分析数据的术语](/help/getting-started/aa-vs-cja/terminology.md)的新文章。 |
 | 2022 年 8 月 | 关于[将受众发布到实时客户个人资料](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=zh-Hans)的新文档。 |

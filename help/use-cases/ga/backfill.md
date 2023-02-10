@@ -4,8 +4,8 @@ description: 阐述如何使用 Customer Journey Analytics (CJA) 将您的 Googl
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: f65f13d696ad2045f58ccb5c9ef7fed45eb9d68c
-workflow-type: ht
+source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
+workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 * 访问 Adobe Experience Platform
 * 访问 Google Analytics（GA 标准版或 GA 360）
-* [管理员访问](/help/getting-started/cja-access-control.md) Customer Journey Analytics
+* [管理员访问](/help/admin/cja-access-control.md) Customer Journey Analytics
 
 ## 设置 BigQuery 导出
 
