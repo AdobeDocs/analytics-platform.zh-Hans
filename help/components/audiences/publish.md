@@ -2,10 +2,10 @@
 title: 创建受众并将受众发布到实时客户档案
 description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: e117775aa949b3d471e708ca5559474af76d28bc
+source-git-commit: d343436f5b72e30b420088f9e9a3a8fb9b97becb
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 86%
+source-wordcount: '1430'
+ht-degree: 90%
 
 ---
 
@@ -72,26 +72,25 @@ ht-degree: 86%
 
 1. 在同一条消息中单击&#x200B;**[!UICONTROL 在 AEP 中查看受众]**，则可进入 Adobe Experience Platform 中的 [Segment UI](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=zh-Hans)。有关详细信息，请参阅下文。
 
-## 创建受众后会发生什么情况？ {#after-audience-created}
+## 创建受众后会发生什么? {#after-audience-created}
 
-创建受众后，Adobe会为每个新CJA受众创建一个Experience Platform流区段。 只有在为流区段设置您的组织后，才会创建AEP流区段。
+在您创建受众后，Adobe 为每个新的 CJA 受众创建一个 Experience Platform 流式区段。只有在为流区段设置您的组织后，才会创建AEP流区段。
 
-* AEP区段与CJA受众共享相同的名称/描述，但名称将附加CJA受众ID，以确保其唯一。
-* 如果CJA受众名称/描述发生更改，AEP区段名称/描述也会反映该更改。
-* 如果用户删除了CJA受众，则不会删除AEP区段。 原因是CJA受众稍后可能会被取消删除。
+* AEP 区段与 CJA 受众共用相同的名称/描述，但将在名称后附加 CJA 受众 ID 以确保其唯一。
+* 如果 CJA 受众名称/描述发生变化，则 AEP 区段名称/描述也将反映该变化。
+* 如果用户删除 CJA 受众，则并不删除 AEP 区段。原因是以后可能会取消删除 CJA 受众。
 
 ## 延迟注意事项 {#latency}
 
 在受众发布之前、期间和之后的几个时间点，可能会发生延迟。 以下是可能延迟的概述。
 
-![](assets/latency-diagram.png)
-
 | 延迟点 | 延迟持续时间 |
 | --- | --- |
 | 数据摄取到数据湖 | 最多30分钟 |
 | 从Experience Platform到CJA的数据摄取 | 最多60分钟 |
-| 将受众发布到实时客户个人资料 | 不到5分钟（取决于受众规模） |
+| 将受众发布到实时客户资料，包括自动创建流区段，并允许区段准备接收数据。 | 大约60分钟 |
 | 受众的刷新频率 | <ul><li>一次性刷新（延迟少于5分钟）</li><li>每4小时、每日、每周、每月进行一次刷新（刷新率会伴随延迟） |
+| 在AEP中创建目标：将新区段激活到Adobe Target | 目前，这最长可能需要24小时，具体取决于受众更新间隔和区段评估类型 |
 
 ## 在 Experience Platform 中使用 CJA 受众 {#audiences-aep}
 
