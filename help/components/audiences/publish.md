@@ -2,10 +2,10 @@
 title: 创建受众并将受众发布到实时客户档案
 description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 04dd36d9157da852aea7d488cbcc2617162d9324
+source-git-commit: 1bd07390b1e01c64f192994a6d9d41e7c9a88440
 workflow-type: tm+mt
-source-wordcount: '1411'
-ht-degree: 91%
+source-wordcount: '1419'
+ht-degree: 97%
 
 ---
 
@@ -74,7 +74,7 @@ ht-degree: 91%
 
 ## 创建受众后会发生什么? {#after-audience-created}
 
-在您创建受众后，Adobe 为每个新的 CJA 受众创建一个 Experience Platform 流式区段。只有在为流区段设置您的组织后，才会创建AEP流区段。
+在您创建受众后，Adobe 为每个新的 CJA 受众创建一个 Experience Platform 流式区段。只有您的组织设置了流式分段，才会创建 AEP 流式区段。
 
 * AEP 区段与 CJA 受众共用相同的名称/描述，但将在名称后附加 CJA 受众 ID 以确保其唯一。
 * 如果 CJA 受众名称/描述发生变化，则 AEP 区段名称/描述也将反映该变化。
@@ -82,15 +82,19 @@ ht-degree: 91%
 
 ## 延迟注意事项 {#latency}
 
-在受众发布之前、期间和之后的几个时间点，可能会发生延迟。 以下是可能延迟的概述。
+在受众发布之前、期间和之后的几个时间点，可能会出现延迟。以下是对可能出现的延迟情况的概述。
 
-| 延迟点 | 延迟持续时间 |
-| --- | --- |
-| 数据摄取到数据湖 | 最多30分钟 |
-| 从Experience Platform到CJA的数据摄取 | 最多60分钟 |
-| 将受众发布到实时客户资料，包括自动创建流区段，并允许区段准备接收数据。 | 大约60分钟 |
-| 受众的刷新频率 | <ul><li>一次性刷新（延迟少于5分钟）</li><li>每4小时、每日、每周、每月进行一次刷新（刷新率会伴随延迟） |
-| 在AEP中创建目标：激活新区段 | 1-2 小时 |
+![](assets/latency-diagram.png)
+
+| # | 延迟点 | 延迟持续时间 |
+| --- | --- | --- |
+| 1 | 将数据引入数据湖 | 最多 30 分钟 |
+| 2 | 将数据从 Experience Platform 引入 CJA | 最多 60 分钟 |
+| 3 | 将受众发布到实时客户资料，包括自动创建流区段，并允许区段准备接收数据。 | 大约60分钟 |
+| 4 | 受众的刷新频率 | <ul><li>一次性刷新（延迟小于 5 分钟）</li><li>每 4 小时、每天、每周、每月刷新一次（延迟与刷新率密切相关） |
+| 5 | 在AEP中创建目标：激活新区段 | 1-2 小时 |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## 在 Experience Platform 中使用 CJA 受众 {#audiences-aep}
 
