@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 1bd07390b1e01c64f192994a6d9d41e7c9a88440
+source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
 workflow-type: tm+mt
-source-wordcount: '1410'
-ht-degree: 95%
+source-wordcount: '1412'
+ht-degree: 94%
 
 ---
 
@@ -63,7 +63,7 @@ CJA 文档自创建以来进行了以下更新。
 | 2022 年 7 月 | [媒体并行查看者面板](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=zh-Hans)文档。 |
 | 2022 年 7 月 | [首次会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat)报告文档。 |
 | **2022 年 6 月** |  |
-| 2022 年 6 月 | 关于 [AAID、ECID、AACUSTOMID 和 Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/aaid-ecid-adc.html?lang=zh-Hans) 的新文章 |
+| 2022 年 6 月 | 关于 [AAID、ECID、AACUSTOMID 和 Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html) 的新文章 |
 | 2022 年 6 月 | 关于 [Adobe Analytics 处理规则、VISTA 和分类对比 Analytics Source Connector 的数据准备的新文章](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md)。 |
 | 2022 年 6 月 | 关于[虚拟报告环境和沙盒环境的新文章](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)。 |
 | 2022 年 6 月 | 关于[跨 Adobe Analytics 和 CJA 报告功能比较数据处理的新文章](/help/getting-started/aa-vs-cja/data-processing-comparisons.md)。 |
@@ -84,7 +84,7 @@ CJA 文档自创建以来进行了以下更新。
 | 2022 年 3 月 | 关于[工作区批注](/help/components/annotations/overview.md)的新文档。 |
 | 2022 年 3 月 | 关于[估计连接大小](/help/getting-started/cja-faq.md)内容的大幅更新。 |
 | **2022 年 2 月** |  |
-| 2022 年 2 月 | 面向从 Adobe Analytics 转移到 CJA 的管理员的新指南：[从 Adobe Analytics 到 Customer Journey Analytics 的演变](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=zh-Hans) |
+| 2022 年 2 月 | 面向从 Adobe Analytics 转移到 CJA 的管理员的新指南：[从 Adobe Analytics 到 Customer Journey Analytics 的演变](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html?lang=en) |
 | **2022 年 1 月** |  |
 | 2022 年 1 月 | [在 CJA 中使用绑定维度和量度](/help/use-cases/data-views/binding-dimensions-metrics.md)的新用例 |
 | 2022 年 1 月 | 添加了有关[绑定维度和指标](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=zh-Hans#binding-dimension)以及新的[[!UICONTROL 第一个已知]和[!UICONTROL 最后一个已知]分配设置的新功能文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=zh-Hans#allocation-settings) |

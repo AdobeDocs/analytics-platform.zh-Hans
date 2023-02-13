@@ -2,10 +2,10 @@
 title: 客户管理的密钥
 description: 了解如何为 CJA 设置客户管理的密钥。
 exl-id: 08ece1cb-22b7-4b8d-be76-5414a810feb6
-source-git-commit: bb6e4dcc1c917fcfb565430232e3c5562f63fd1a
-workflow-type: ht
+source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
+workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,7 @@ Customer Journey Analytics (CJA) 为 [Healthcare Shield](https://www.adobe.com/c
 
 >[!NOTE]
 >
->客户管理的密钥目前仅适用于已购买 [Healthcare Shield 或 Privacy &amp; Security Shield](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html?lang=zh-Hans%3Flang%3Den) 附加产品的组织。
+>客户管理的密钥目前仅适用于已购买 [Healthcare Shield 或 Privacy &amp; Security Shield](https://experienceleague.adobe.com/docs/customer-data-management-voices-events/events/governance/healthcare-shield.html?lang=en) 附加产品的组织。
 
 ## 为 CJA 设置 CMK
 

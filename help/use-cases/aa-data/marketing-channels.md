@@ -4,10 +4,10 @@ description: 使用 Analytics Source Connector 将营销渠道处理规则引入
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
-workflow-type: ht
-source-wordcount: '1019'
-ht-degree: 100%
+source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
+workflow-type: tm+mt
+source-wordcount: '1024'
+ht-degree: 98%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 ## 前提条件
 
 * 必须已使用 [ Analytics Source Connector ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 将报告包数据导入 Adobe Experience Platform。不支持其他数据源，因为“营销渠道”维度依赖于 Analytics 报表包中的处理规则。
-* 必须已设置“营销渠道”维度处理规则。请参阅“传统 Analytics 组件”指南中的[“营销渠道”维度的处理规则](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/c-rules.html?lang=zh-Hans)。
+* 必须已设置“营销渠道”维度处理规则。请参阅“传统 Analytics 组件”指南中的[“营销渠道”维度的处理规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html?lang=en)。
 
 ## “营销渠道”架构元素
 
