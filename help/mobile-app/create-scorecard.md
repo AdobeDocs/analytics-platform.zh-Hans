@@ -112,7 +112,7 @@ Adobe Analytics 记分卡以平铺版面为执行用户显示关键数据可视�
 
 ![包括比较日期](assets/include-comparison-dates.png)
 
-默认情况下&#x200B;*启用*&#x200B;此设置。 将其切换到 *关闭* 不想查看比较日期。
+默认情况下&#x200B;*启用*&#x200B;此设置。 如果您不想查看比较日期，请将其切换为&#x200B;*关闭*。
 
 ![已取消选择比较日期设置](assets/no-comparison-dates.png)
 

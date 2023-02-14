@@ -21,7 +21,7 @@ CJA 文档自创建以来进行了以下更新。
 | --- | --- |
 | **2023 年 2 月** |  |
 | 更新至受众文档 | 新增了 [延迟注意事项](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
-| 更新至受众文档 | 在您创建受众后，Adobe [为每个新的 CJA 受众创建一个 Experience Platform 流式区段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-Hant#after-audience-created)。 |
+| 更新至受众文档 | 在您创建受众后，Adobe [为每个新的 CJA 受众创建一个 Experience Platform 流式区段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created)。 |
 | 工作区日历和日期范围 | 更新了描述相对日期范围、公式计算更新和日历UI更改的内容。 请参阅 [关于相对面板日期范围](/help/components/date-ranges/calendar.md#relative-panel-dates). |
 | 移动记分卡 | 新增了描述如何显示和隐藏比较日期范围的文档部分。 请参阅 [显示比较日期范围](/help/mobile-app/create-scorecard.md#show-comparison-dates) 在CJA中。 |
 | **2023 年 1 月** |  |
