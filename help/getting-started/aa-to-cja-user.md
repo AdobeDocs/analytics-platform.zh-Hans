@@ -1,18 +1,18 @@
 ---
-title: 适用于Adobe Analytics用户的用户指南
-description: 当您的公司将数据从Adobe Analytics移动到Customer Journey Analytics时，从用户的角度应该考虑什么
+title: 适用于 Adobe Analytics 用户的用户指南
+description: 当您的公司将数据从 Adobe Analytics 移动到 Customer Journey Analytics 时，从用户的角度应该考虑什么
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: 34ee7954329d7dc8520031a977bb83d6e1bf3d3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1454'
 ht-degree: 100%
 
 ---
 
-# 适用于Adobe Analytics用户的用户指南
+# 适用于 Adobe Analytics 用户的用户指南
 
 如果贵组织开始使用Customer Journey Analytics(CJA)，您可能会注意到传统Analytics与CJA之间的一些相似之处和差异。本页旨在解释这些差异，以帮助贵组织适应新的实施和报告工作流程。本页还提供了有关新概念的其他资源，以及进一步的步骤，帮助您作为分析师，更轻松、更成功。
 
