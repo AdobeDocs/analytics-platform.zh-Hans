@@ -5,7 +5,7 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2135'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 +++**[!UICONTROL Customer Journey Analytics] 是否需要 [!UICONTROL Experience Cloud ID] (ECID)？**
 
-不需要，[!UICONTROL Customer Journey Analytics] 支持数据集中的任何 ID，无论该 ID 是 [!UICONTROL ECID] 还是您选择的任何其他 ID。
+不需要，[!UICONTROL Customer Journey Analytics] 支持数据集内的任何 ID，无论该 ID 是 [!UICONTROL ECID] 还是您选择的任何其他 ID。
 
 +++
 
@@ -118,7 +118,7 @@ CCA 根据已学到的唯一标识符“回放”数据。重放导致新设备�
 +++
 
 
-+++**将过去或未来日期/时间戳摄取到 CJA 事件数据集中有什么限制？**
++++**将过去或未来日期/时间戳摄取到 CJA 事件数据集内有什么限制？**
 
 <ul><li>关于过去日期/时间戳：最多 10 年前的事件数据。</li><li>关于未来日期/时间戳（预测）：最多未来 1 个月。</li></ul>
 
@@ -174,7 +174,7 @@ CCA 根据已学到的唯一标识符“回放”数据。重放导致新设备�
 ## 8. 传统 [!UICONTROL Adobe Analytics] 组件
 
 
-+++**我能否将来自[!UICONTROL 的]过滤器[!UICONTROL （]区段[!DNL Customer Journey Analytics]）共享/发布到 Experience Platform Unified Profile 或其他 Experience Cloud 云应用程序？**
++++**我能否将来自[!UICONTROL 的]过滤器[!UICONTROL （]区段[!DNL Customer Journey Analytics]）共享/发布到 Experience Platform Unified Profile 或其他 Experience Cloud 应用程序？**
 
 还不能，但我们正在努力提供这种功能。
 
@@ -215,7 +215,7 @@ CCA 根据已学到的唯一标识符“回放”数据。重放导致新设备�
 
 +++
 
-## 9. 估算连接大小 {#estimate-size}
+## 9. 估计连接大小 {#estimate-size}
 
 请参阅[估算和管理使用情况](/help/admin/estimate-usage.md)。
 
