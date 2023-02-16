@@ -5,9 +5,9 @@ role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
 source-git-commit: 34ee7954329d7dc8520031a977bb83d6e1bf3d3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '577'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -52,4 +52,4 @@ Real-time CDP 提供了一套不同的数据操作工具。 它应用[合并策�
 
 ## 数据摄取延迟的差异
 
-CJA尚不具备实时CDP的实时功能，因此，CJA报表会在数据可用于报表或创建受众之前存在一些延迟。 Real-time CDP 通过具有不同延迟的不同系统处理数据。
+CJA 尚不具备 Real-time CDP 的实时能力，因此，CJA 报告在数据可用于报告或受众创建之前存在一定的延迟。Real-time CDP 通过各种具有不同延迟的系统来处理数据。
