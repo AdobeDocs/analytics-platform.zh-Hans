@@ -1,17 +1,17 @@
 ---
-title: 查看并管理Customer Journey Analytics使用情况
+title: 查看和管理您的 Customer Journey Analytics 使用情况
 description: 展示了两种估算使用情况的方法和一种管理使用情况的方法。
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
 source-git-commit: 9f2d0d00872ad18c73bf67184e44f687a0b156a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '868'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# 查看并管理Customer Journey Analytics使用情况
+# 查看和管理您的 Customer Journey Analytics 使用情况
 
 要查看您的 CJA 使用情况，您可以使用以下几种方法：
 
@@ -25,7 +25,7 @@ ht-degree: 98%
 
 * 定义滚动数据窗口。
 
-## 估算连接大小 {#estimate-size}
+## 估计连接大小 {#estimate-size}
 
 您可能需要知道 [!UICONTROL Customer Journey Analytics] 中当前有多少行事件数据。要准确了解贵组织的事件数据记录（数据行）使用情况，**对于贵组织创建的每个连接**，请执行以下操作。
 
