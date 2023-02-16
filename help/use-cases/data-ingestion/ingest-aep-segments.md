@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
 source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '936'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,25 +25,25 @@ ht-degree: 99%
 
 ## 步骤 1：在实时客户档案中选择受众 {#audience}
 
-Adobe Experience Platform [实时客户档案](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=cn) (RTCP) 允许您通过组合来自多个渠道的数据（包括在线、离线、CRM 和第三方）来查看每个客户的整体视图。
+Adobe Experience Platform [实时客户档案](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans?lang=cn) (RTCP) 允许您通过组合来自多个渠道的数据（包括在线、离线、CRM 和第三方）来查看每个客户的整体视图。
 
 RTCP 中可能已经有来自不同来源的受众。 选择一个或多个受众融入 CJA。
 
 ## 步骤 2：为导出创建用户档案合并数据集
 
-为了将受众导出到最终可以添加到 CJA 连接的数据集，您需要创建一个数据集，其模式是一个用户档案 [合并模式](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=cn#understanding-union-schemas)。
+为了将受众导出到最终可以添加到 CJA 连接的数据集，您需要创建一个数据集，其模式是一个用户档案 [合并模式](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=zh-Hans?lang=cn#understanding-union-schemas)。
 
 合并模式由多个共享同一类并已启用用户档案的模式组成。 合并模式使您能够看到共享同一类的模式中包含的所有字段的合并。实时客户配置文件使用合并模式创建每个客户的整体视图。
 
 ## 步骤 3：通过 API 调用将受众导出到用户档案合并数据集 {#export}
 
-在将受众引入 CJA 之前，需要将其导出到 AEP 数据集。 这只能使用分段 API，特别是 [导出作业 API 端点](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=cn)来完成。
+在将受众引入 CJA 之前，需要将其导出到 AEP 数据集。 这只能使用分段 API，特别是 [导出作业 API 端点](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=zh-Hans?lang=cn)来完成。
 
 您可以使用所选的受众 ID 创建导出作业，并将结果放入在步骤 2 中创建的概要文件联合 AEP 数据集中。 尽管您可以为受众导出各种属性/事件，但您只需要导出与您将要利用的 CJA 连接中使用的个人 ID 字段相匹配的特定用户档案 ID 字段（请参见下面的步骤 5）。
 
 ## 步骤 4：编辑导出输出
 
-导出作业的结果需要转换为单独的用户档案数据集，以便纳入 CJA。  此转换可以使用 [AEP 查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=cn)或您选择的其他转换工具来完成。 我们只需要用户档案 ID（与 CJA 中的个人 ID 匹配）和一个或多个受众 ID 即可在 CJA 中进行报告。
+导出作业的结果需要转换为单独的用户档案数据集，以便纳入 CJA。  此转换可以使用 [AEP 查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans?lang=cn)或您选择的其他转换工具来完成。 我们只需要用户档案 ID（与 CJA 中的个人 ID 匹配）和一个或多个受众 ID 即可在 CJA 中进行报告。
 
 然而，标准导出作业包含更多数据，因此我们需要编辑此输出以删除无关数据，并移动一些内容。  此外，在将转换后的数据添加到模式/数据集之前，需要先创建模式/数据集。
 
@@ -88,6 +88,6 @@ RTCP 中可能已经有来自不同来源的受众。 选择一个或多个受�
 * 您应该定期执行此过程，以便在 CJA 中不断刷新受众数据。
 * 您可以在单个 CJA 连接中导入多个访问群体。 这增加了流程的复杂性，但这是可能的。 为此，您需要对上述过程进行一些修改：
    1. 在 RTCP 中，为受众集合中的每个所需受众执行此过程。
-   1. CJA 支持配置文件数据集中的数组/对象数组。为 audienceMembershipId 或 audienceMembershipIdName 使用[对象数组](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html)是最佳选项。
+   1. CJA 支持配置文件数据集中的数组/对象数组。为 audienceMembershipId 或 audienceMembershipIdName 使用[对象数组](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=zh-Hans)是最佳选项。
    1. 在数据视图中，在 `audienceMembershipId` 字段上使用子字符串转换创建新维度，以将逗号分隔的值字符串转换为数组。 注意：数组中当前限制为 10 个值。
    1. 现在，您可以在 CJA 工作区中报告此新维度 `audienceMembershipIds`。
