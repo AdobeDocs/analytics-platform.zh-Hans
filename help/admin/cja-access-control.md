@@ -1,18 +1,18 @@
 ---
-title: Customer Journey Analytics访问控制
+title: Customer Journey Analytics 访问控制
 description: 了解在 CJA 中实现访问控制的方法。
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 source-git-commit: 34ee7954329d7dc8520031a977bb83d6e1bf3d3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '925'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Customer Journey Analytics访问控制
+# Customer Journey Analytics 访问控制
 
 Customer Journey Analytics (CJA) 由三个访问级别或三个角色管理：产品管理员角色、产品配置文件管理员角色和用户级别访问。本主题将更详细地解释这些角色。
 
