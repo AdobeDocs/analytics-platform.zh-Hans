@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics 指南
 source-git-commit: 45c6e6db751f5a73bb9d44d3a6641c7369d6252f
 workflow-type: tm+mt
 source-wordcount: '856'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,10 +36,10 @@ ht-degree: 98%
    + [登陆页面](../getting-started/landing.md)
    + [常见问题解答](../getting-started/cja-faq.md)
 
-+ Customer Journey Analytics和Adobe Analytics {#compare-aa-cja}
-   + [来自Adobe Analytics的演变 ](../getting-started/aa-to-cja.md)
-   + [适用于Adobe Analytics用户的用户指南](../getting-started/aa-to-cja-user.md)
-   + 与Adobe Analytics比较 {#cja-aa-comparison}
++ Customer Journey Analytics 和 Adobe Analytics {#compare-aa-cja}
+   + [Adobe Analytics 的演变 ](../getting-started/aa-to-cja.md)
+   + [适用于 Adobe Analytics 用户的用户指南](../getting-started/aa-to-cja-user.md)
+   + 与 Adobe Analytics 进行比较 {#cja-aa-comparison}
       + [在 Customer Journey Analytics 中使用 Adobe Analytics 数据](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Customer Journey Analytics 功能支持](../getting-started/aa-vs-cja/cja-aa.md)
       + [比较通过 Analytics Source Connector 传递的 Analytics 数据的术语](../getting-started/aa-vs-cja/terminology.md)
@@ -305,12 +305,12 @@ ht-degree: 98%
    + Adobe Analytics 数据 {#aa-data}
       + [使用“营销渠道”维度](../use-cases/aa-data/marketing-channels.md)
       + [将报告包与不同的架构相结合](../use-cases/aa-data/combine-report-suites.md)
-   + 复杂数据 {#complex-data}
+   + 复杂的数据 {#complex-data}
       + [使用对象数组](../use-cases/object-arrays.md)
 
 + 管理 {#cja-admin}
    + [访问控制](../admin/cja-access-control.md)
-   + [查看和管理 使用情况](../admin/estimate-usage.md)
+   + [查看和管理使用情况](../admin/estimate-usage.md)
    + [删除后果](../admin/cja-deletion.md)
 
 + Labs {#labs}

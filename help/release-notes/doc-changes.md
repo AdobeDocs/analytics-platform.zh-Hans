@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
 workflow-type: tm+mt
 source-wordcount: '1412'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -20,10 +20,10 @@ CJA 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2023 年 2 月** |  |
-| 更新至受众文档 | 新增了 [延迟注意事项](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
-| 更新至受众文档 | 在您创建受众后，Adobe [为每个新的 CJA 受众创建一个 Experience Platform 流式区段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created)。 |
-| 工作区日历和日期范围 | 更新了描述相对日期范围、公式计算更新和日历UI更改的内容。 请参阅 [关于相对面板日期范围](/help/components/date-ranges/calendar.md#relative-panel-dates). |
-| 移动记分卡 | 新增了描述如何显示和隐藏比较日期范围的文档部分。 请参阅 [显示比较日期范围](/help/mobile-app/create-scorecard.md#show-comparison-dates) 在CJA中。 |
+| 更新至受众文档 | 有关[延迟注意事项](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-Hans#latency)的新章节。 |
+| 更新至受众文档 | 在您创建受众后，Adobe [为每个新的 CJA 受众创建一个 Experience Platform 流式区段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-Hans#after-audience-created)。 |
+| 工作区日历和日期范围 | 已更新内容来描述相对日期范围、公式计算更新和日历 UI 更改。请参阅[关于相对面板日期范围](/help/components/date-ranges/calendar.md#relative-panel-dates)。 |
+| 移动记分卡 | 新文档部分，描述如何显示和隐藏比较日期范围。请参阅 CJA 中的[显示比较日期范围](/help/mobile-app/create-scorecard.md#show-comparison-dates)。 |
 | **2023 年 1 月** |  |
 | 排序和过滤表格 | 更新了[对表格进行筛选和排序](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)一文中的内容（包括添加过程和解释可用选项）。本文从“对表格进行分页、筛选和排序”更名而成。 |
 | 数据摄取快速入门指南 | 关于如何在 CJA 中[摄取和使用数据](/help/data-ingestion/data-ingestion.md)的新文档部分。 |
@@ -63,7 +63,7 @@ CJA 文档自创建以来进行了以下更新。
 | 2022 年 7 月 | [媒体并行查看者面板](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=zh-Hans)文档。 |
 | 2022 年 7 月 | [首次会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat)报告文档。 |
 | **2022 年 6 月** |  |
-| 2022 年 6 月 | 关于 [AAID、ECID、AACUSTOMID 和 Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html) 的新文章 |
+| 2022 年 6 月 | 关于 [AAID、ECID、AACUSTOMID 和 Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=zh-Hans) 的新文章 |
 | 2022 年 6 月 | 关于 [Adobe Analytics 处理规则、VISTA 和分类对比 Analytics Source Connector 的数据准备的新文章](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md)。 |
 | 2022 年 6 月 | 关于[虚拟报告环境和沙盒环境的新文章](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)。 |
 | 2022 年 6 月 | 关于[跨 Adobe Analytics 和 CJA 报告功能比较数据处理的新文章](/help/getting-started/aa-vs-cja/data-processing-comparisons.md)。 |
@@ -84,7 +84,7 @@ CJA 文档自创建以来进行了以下更新。
 | 2022 年 3 月 | 关于[工作区批注](/help/components/annotations/overview.md)的新文档。 |
 | 2022 年 3 月 | 关于[估计连接大小](/help/getting-started/cja-faq.md)内容的大幅更新。 |
 | **2022 年 2 月** |  |
-| 2022 年 2 月 | 面向从 Adobe Analytics 转移到 CJA 的管理员的新指南：[从 Adobe Analytics 到 Customer Journey Analytics 的演变](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html?lang=en) |
+| 2022 年 2 月 | 面向从 Adobe Analytics 转移到 CJA 的管理员的新指南：[从 Adobe Analytics 到 Customer Journey Analytics 的演变](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html?lang=zh-Hans) |
 | **2022 年 1 月** |  |
 | 2022 年 1 月 | [在 CJA 中使用绑定维度和量度](/help/use-cases/data-views/binding-dimensions-metrics.md)的新用例 |
 | 2022 年 1 月 | 添加了有关[绑定维度和指标](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=zh-Hans#binding-dimension)以及新的[[!UICONTROL 第一个已知]和[!UICONTROL 最后一个已知]分配设置的新功能文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=zh-Hans#allocation-settings) |

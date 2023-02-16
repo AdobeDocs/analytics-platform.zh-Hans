@@ -5,7 +5,7 @@ exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 source-git-commit: 1bd07390b1e01c64f192994a6d9d41e7c9a88440
 workflow-type: tm+mt
 source-wordcount: '1419'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -90,9 +90,9 @@ ht-degree: 97%
 | --- | --- | --- |
 | 1 | 将数据引入数据湖 | 最多 30 分钟 |
 | 2 | 将数据从 Experience Platform 引入 CJA | 最多 60 分钟 |
-| 3 | 将受众发布到实时客户资料，包括自动创建流区段，并允许区段准备接收数据。 | 大约60分钟 |
+| 3 | 受众发布到实时客户配置文件，包括自动创建流式区段，并可让区段准备好接收数据。 | 约 60 分钟 |
 | 4 | 受众的刷新频率 | <ul><li>一次性刷新（延迟小于 5 分钟）</li><li>每 4 小时、每天、每周、每月刷新一次（延迟与刷新率密切相关） |
-| 5 | 在AEP中创建目标：激活新区段 | 1-2 小时 |
+| 5 | 在 AEP 中创建目标：激活新的区段 | 1-2 小时 |
 
 {style=&quot;table-layout:auto&quot;}
 
