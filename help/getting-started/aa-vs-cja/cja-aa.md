@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
 source-git-commit: 95c1f15cf5a3e807c101d356c5452f37ea2a78e9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1527'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ ht-degree: 99%
 | 地理分段维度 | 收集到 Adobe Analytics 的所有地理分段/地理位置通过 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 流入 CJA。对于不使用 Analytics Source Connector 的实施，例如那些依赖 AEP Web SDK 进行数字数据收集的实施，将不会自动执行完整的地理查找功能：全球支持国家和州，但不支持城市和邮政编码。 |
 | 面板 | 完全支持“空白面板”、“归因面板”、“快速分析面板”。不支持“区段比较面板”和“Analytics for Target (A4T) 面板”。 |
 | 处理规则 | 对于基于 Analytics Source Connector 的数据集，仍会应用处理规则。[Adobe Experience Platform 中的数据准备功能](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)也可以取代处理将直接进入 Platform 的数据的规则。 |
-| A4T | 通过 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 中的字段提供部分支持。计划在Target活动和体验中支持A4T友好名称。 |
+| A4T | 通过 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 中的字段提供部分支持。有计划在 Target 活动和体验上支持适合 A4T 的名称。 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -102,7 +102,7 @@ ht-degree: 99%
 | 数据馈送 | 有计划通过 AEP 目标支持。 |
 | 交易 ID 数据源 | 有计划要支持。 |
 | 将项目/过滤器/计算指标从 AA 迁移到 CJA | 有计划要支持。 |
-| 概要级别的数据源 | 有计划要支持。 |
+| 摘要级别数据源 | 有计划要支持。 |
 
 {style=&quot;table-layout:auto&quot;}
 
