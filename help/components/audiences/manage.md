@@ -2,10 +2,10 @@
 title: 管理在 Customer Journey Analytics 中创建的受众
 description: 了解如何管理 Customer Journey Analytics 中的受众
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
-source-git-commit: c851a07a456fa033b37e45a3d182a8fc80988b82
-workflow-type: ht
+source-git-commit: 955f4543a132126deee52b7dfe3398b742022069
+workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -14,8 +14,8 @@ ht-degree: 100%
 通过管理以前创建的受众，您可以
 
 * **计划或取消计划**&#x200B;自动受众刷新/更新。计划的最长有效期为 1 年。
-* 即将到期时&#x200B;**续订受众刷新计划**。即将过期的受众的处理方式与即将过期的计划报告的处理方式类似 - 管理员会在计划过期前一个月收到一封电子邮件。
-* 查看&#x200B;**刷新间隔**&#x200B;和&#x200B;**上次更新受众的时间**
+* **续订受众刷新计划** 即将过期。 即将过期的受众的处理方式与即将过期的计划报告的处理方式类似 - 管理员会在计划过期前一个月收到一封电子邮件。
+* 查看 **刷新间隔** 和 **上次更新受众的时间**
 * 深入了解从 Customer Journey Analytics (CJA) **生成受众所需的时间**，以及为激活目的而让受众出现在实时客户档案中所需的时间。
 * 查看 CJA 中的受众是&#x200B;**被实时客户档案主动使用**，还是（理想情况下）被任何使用 CJA 创建的受众的 Experience Platform 应用程序积极使用。
 
