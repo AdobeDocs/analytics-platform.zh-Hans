@@ -4,9 +4,9 @@ title: 将归因人工智能与 CJA 集成
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: 195a89588d83e27eceb58fec8c66c098f1971250
-workflow-type: ht
-source-wordcount: '889'
+source-git-commit: ab3b9bdccbd92873a6fe11a1c7605692d2a0da8b
+workflow-type: tm+mt
+source-wordcount: '812'
 ht-degree: 100%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 100%
 
 ### 第 1 步：创建归因人工智能实例
 
-在 Experience Platform 中，通过选择和映射数据、定义事件和训练数据来创建归因人工智能实例，如[此处](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/user-guide.html?lang=zh-Hans)所述。
+在 Experience Platform 中，通过选择和映射数据、定义事件和训练数据来创建归因人工智能实例，如[此处](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/user-guide.html)所述。
 
 ![AAI 实例](assets/aai-instance.png)
 
@@ -74,11 +74,7 @@ ht-degree: 100%
 
 ![AAI 维度](assets/aai-dims.png)
 
->[!IMPORTANT]
->
->这些维度和量度本身并不以这种方式命名。这些名称是“友好名称”。[归因人工智能中的命名惯例](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=zh-Hans#attribution-ai-output-data)遵循架构路径。我们建议在 CJA 中将长 AAI 架构路径名称重命名为对用户更友好的短名称（维度/量度）。您可以在以下位置执行此操作：**[!UICONTROL 数据视图]** > **[!UICONTROL 编辑数据视图]** > **[!UICONTROL 组件]**&#x200B;选项卡 > **[!UICONTROL 架构字段]**&#x200B;中 -> 单击架构字段 -> **[!UICONTROL 组件名称]**。
 
-![更改维度名称](assets/change-name.png)
 
 **包括影响分数和增量分数的订单**
 
