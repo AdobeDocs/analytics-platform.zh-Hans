@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
+source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
 workflow-type: tm+mt
-source-wordcount: '1412'
-ht-degree: 100%
+source-wordcount: '1430'
+ht-degree: 98%
 
 ---
 
@@ -20,10 +20,11 @@ CJA 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2023 年 2 月** |  |
+| 比较CJA与BI解决方案 | 关于 [比较](../getting-started/cja-vs-bi.md) Customer Journey Analytics到典型BI解决方案。 |
 | 更新至受众文档 | 有关[延迟注意事项](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-Hans#latency)的新章节。 |
 | 更新至受众文档 | 在您创建受众后，Adobe [为每个新的 CJA 受众创建一个 Experience Platform 流式区段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-Hans#after-audience-created)。 |
-| 工作区日历和日期范围 | 已更新内容来描述相对日期范围、公式计算更新和日历 UI 更改。请参阅[关于相对面板日期范围](/help/components/date-ranges/calendar.md#relative-panel-dates)。 |
-| 移动记分卡 | 新文档部分，描述如何显示和隐藏比较日期范围。请参阅 CJA 中的[显示比较日期范围](/help/mobile-app/create-scorecard.md#show-comparison-dates)。 |
+| 工作区日历和日期范围 | 更新内容以描述相对日期范围、公式计算更新和日程表 UI 更改。请参阅[关于相对面板日期范围](/help/components/date-ranges/calendar.md#relative-panel-dates)。 |
+| 移动记分卡 | 新文档部分描述如何显示和隐藏比较日期范围。请参阅 CJA 中的[显示比较日期范围](/help/mobile-app/create-scorecard.md#show-comparison-dates)。 |
 | **2023 年 1 月** |  |
 | 排序和过滤表格 | 更新了[对表格进行筛选和排序](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)一文中的内容（包括添加过程和解释可用选项）。本文从“对表格进行分页、筛选和排序”更名而成。 |
 | 数据摄取快速入门指南 | 关于如何在 CJA 中[摄取和使用数据](/help/data-ingestion/data-ingestion.md)的新文档部分。 |
