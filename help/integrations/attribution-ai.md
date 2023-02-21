@@ -4,10 +4,10 @@ title: 将归因人工智能与 CJA 集成
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: ab3b9bdccbd92873a6fe11a1c7605692d2a0da8b
+source-git-commit: 52f9cc80f9e0608f8d3ad522da488bfceb8d0dc0
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 100%
+source-wordcount: '930'
+ht-degree: 87%
 
 ---
 
@@ -74,7 +74,15 @@ ht-degree: 100%
 
 ![AAI 维度](assets/aai-dims.png)
 
+AAI中输出的原始分数具有嵌套模式，在该模式中，字段的路径可能足够长，以占用表或可视化中的大多数空格。 为了简洁， [!UICONTROL 显示名称] 会在CJA中按照以下规则自动生成和利用：
 
+* 所有字段都具有“AAI”前缀
+* 对于接触点字段：
+   * 对于属于XDM分数的字段，它们在CJA中显示为 `AAI T {field name}`
+   * 对于作为“传递”列包含的字段，它们将在CJA中显示为 `AAI T PT {field name}`
+* 对于转化字段：
+   * 对于属于XDM分数的字段，它们将在CJA中显示为 `AAI C {field name}`
+   * 对于作为“传递”列包含的字段，它们将在CJA中显示为 `AAI C PT {field name}`
 
 **包括影响分数和增量分数的订单**
 
