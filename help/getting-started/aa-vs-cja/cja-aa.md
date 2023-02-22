@@ -4,10 +4,10 @@ description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 95c1f15cf5a3e807c101d356c5452f37ea2a78e9
-workflow-type: ht
-source-wordcount: '1527'
-ht-degree: 100%
+source-git-commit: c87d7428a2ddca35297225314e97171fe8b129fb
+workflow-type: tm+mt
+source-wordcount: '1525'
+ht-degree: 99%
 
 ---
 
@@ -93,7 +93,7 @@ ht-degree: 100%
 | --- | --- |
 | 警报 | 有计划要支持。 |
 | 贡献分析 | 有计划要支持。 |
-| Data Warehouse 报告（100% 行导出） | 计划从分析工作区界面提供支持。Adobe Experience Platform [[!UICONTROL 查询服务]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans)还为 CJA 中的这些用例提供接口。 |
+| data warehouse报告 | 计划从分析工作区界面提供支持。Adobe Experience Platform [[!UICONTROL 查询服务]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans)还为 CJA 中的这些用例提供接口。 |
 | 通过设备图形进行 ID 拼接 | 有计划要支持。 |
 | 项目模板 | 有计划要支持。 |
 | 实时报告 | 有计划要支持。 |
