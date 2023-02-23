@@ -2,7 +2,7 @@
 title: 将Adobe Journey Optimizer(AJO)与Customer Journey Analytics(CJA)集成
 description: 引入 AJO 生成的数据，并在 CJA 中使用 Analysis Workspace 分析这些数据。
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
-source-git-commit: 3a4dbe9a87f8e195a4daf78423d29d73f2be0f83
+source-git-commit: 9aed4e724c564272071b96c037f4eb0e82572e6f
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 53%
@@ -64,7 +64,7 @@ AJO和CJA之间的数据差异通常不到1%到2%。 对于过去两小时内收
 | 电子邮件打开次数 | 打开的邮件数. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | 组件类型：量度<br>包括排除值：等于 `open` |
 | 错误数 | 出错的邮件数。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | 组件类型：量度<br>包括排除值：等于 `error` |
 | 排除数 | 排除的邮件数。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | 组件类型：量度<br>包括排除值：等于 `exclude` |
-| 发送 | 电子邮件提供商接受的邮件数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | 组件类型：量度<br>包括排除值：等于 `sent` |
+| 发送 | 电子邮件提供商接受的邮件数。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | 组件类型：量度<br>包括排除值：等于 `sent` |
 | 垃圾邮件投诉 | 垃圾邮件投诉的次数. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | 组件类型：量度<br>包括排除值：等于 `spam_complaint` |
 | 取消订阅次数 | 取消订阅的次数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | 组件类型：量度<br>包括排除值：等于 `unsubscribe` |
 
