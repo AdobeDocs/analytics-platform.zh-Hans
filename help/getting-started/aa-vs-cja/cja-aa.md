@@ -4,10 +4,10 @@ description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: c87d7428a2ddca35297225314e97171fe8b129fb
+source-git-commit: ca161bd86b4f926991c1adec2ccf3918f2bc4347
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 99%
+source-wordcount: '1595'
+ht-degree: 95%
 
 ---
 
@@ -58,6 +58,7 @@ ht-degree: 99%
 | 自定义会话流程 | 支持除移动后台点击之外的所有自定义会话流程功能。 |
 | 促销变量持久性 | 通过[绑定维度和绑定量度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=zh-Hans#binding-dimension)提供全面支持 |
 | 客户属性 | 现在称为“个人资料数据集”，它们不会从 Experience Cloud 自动导入，而是必须先上传到 AEP，然后才可在 CJA 中使用。 |
+| 数据馈送 | 数据集的第一代数据导出可通过 [AEP数据访问API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) 通过 [AEP目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en). 这些选项可提供所有收集或摄取到AEP数据湖中的数据的点击/行级别导出。 后处理数据列不可用，因为后处理列是在查询时计算的。 可通过报告导出帖子列。 |
 | 指标去重 | 现在对数据视图中的指标配置此项。在人员或会话级别，而非数据集、数据视图或连接级别进行指标去重。 |
 | 登录、退出和花费时间维度和量度 | 受支持（现在“进入次数”和“退出次数”称为“会话启动次数”和“会话结束次数”），但计算方式略有不同。 |
 | eVar 持久性设置 | eVar 不再是 CJA 的一部分。但是，持久性设置现在是数据视图的一部分，且可用于所有维度。请记住，持久基于报表时间处理，而不是数据收集处理。数据视图中的纬度集限制为 90 天最大持久性，不支持无限持久性。 |
@@ -99,7 +100,6 @@ ht-degree: 99%
 | 实时报告 | 有计划要支持。 |
 | 区段 IQ | 有计划要支持。 |
 | 货币换算 | 有计划要支持。 |
-| 数据馈送 | 有计划通过 AEP 目标支持。 |
 | 交易 ID 数据源 | 有计划要支持。 |
 | 将项目/过滤器/计算指标从 AA 迁移到 CJA | 有计划要支持。 |
 | 摘要级别数据源 | 有计划要支持。 |
