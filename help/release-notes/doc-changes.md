@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1430'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -20,9 +20,9 @@ CJA 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2023 年 2 月** |  |
-| 比较CJA与BI解决方案 | 关于 [比较](../getting-started/cja-vs-bi.md) Customer Journey Analytics到典型BI解决方案。 |
-| 更新至受众文档 | 有关[延迟注意事项](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-Hans#latency)的新章节。 |
-| 更新至受众文档 | 在您创建受众后，Adobe [为每个新的 CJA 受众创建一个 Experience Platform 流式区段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-Hans#after-audience-created)。 |
+| 比较 CJA 和 BI 解决方案 | 新增了有关 Customer Journey Analytics 与典型 BI 解决方案的[比较](../getting-started/cja-vs-bi.md)的文档。 |
+| 对 Audiences 文档的更新 | 有关[延迟注意事项](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-Hans#latency)的新章节。 |
+| 对 Audiences 文档的更新 | 在您创建受众后，Adobe [为每个新的 CJA 受众创建一个 Experience Platform 流式区段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-Hans#after-audience-created)。 |
 | 工作区日历和日期范围 | 更新内容以描述相对日期范围、公式计算更新和日程表 UI 更改。请参阅[关于相对面板日期范围](/help/components/date-ranges/calendar.md#relative-panel-dates)。 |
 | 移动记分卡 | 新文档部分描述如何显示和隐藏比较日期范围。请参阅 CJA 中的[显示比较日期范围](/help/mobile-app/create-scorecard.md#show-comparison-dates)。 |
 | **2023 年 1 月** |  |
@@ -45,7 +45,7 @@ CJA 文档自创建以来进行了以下更新。
 | 2022 年 10 月 | 关于[计划项目密码保护](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=zh-Hans#password)的新主题。 此功能支持 [HIPAA 准备工作](https://www.adobe.com/cn/trust/compliance/hipaa-ready.html)。 |
 | 2022 年 10 月 | 关于[客户管理的密钥](/help/privacy/cmk.md)新主题。 此功能支持 [HIPAA 准备工作](https://www.adobe.com/cn/trust/compliance/hipaa-ready.html)。 |
 | 2022 年 10 月 | 关于 [CJA 审核日志](/help/privacy/audit-log.md)的新主题。 |
-| 2022 年 10 月 | 关于[关键指标摘要](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html?lang=zh-Hans)可视化的新主题。 |
+| 2022 年 10 月 | 关于[关键度量摘要](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html?lang=zh-Hans)可视化的新主题。 |
 | 2022 年 10 月 | 关于[数据视图中的日期和日期时间功能](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#date)的新部分 |
 | 2022 年 10 月 | 移动应用程序：关于[自定义详细视图](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html?lang=zh-Hans#view-detail-slides)的新主题。 |
 | 2022 年 10 月 | 对 [Customer Journey Analytics 功能支持](/help/getting-started/aa-vs-cja/cja-aa.md)主题进行了更新。 |
@@ -87,8 +87,8 @@ CJA 文档自创建以来进行了以下更新。
 | **2022 年 2 月** |  |
 | 2022 年 2 月 | 面向从 Adobe Analytics 转移到 CJA 的管理员的新指南：[从 Adobe Analytics 到 Customer Journey Analytics 的演变](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html?lang=zh-Hans) |
 | **2022 年 1 月** |  |
-| 2022 年 1 月 | [在 CJA 中使用绑定维度和量度](/help/use-cases/data-views/binding-dimensions-metrics.md)的新用例 |
-| 2022 年 1 月 | 添加了有关[绑定维度和指标](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=zh-Hans#binding-dimension)以及新的[[!UICONTROL 第一个已知]和[!UICONTROL 最后一个已知]分配设置的新功能文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=zh-Hans#allocation-settings) |
+| 2022 年 1 月 | [在 CJA 中使用绑定维度和度量](/help/use-cases/data-views/binding-dimensions-metrics.md)的新用例 |
+| 2022 年 1 月 | 添加了有关[绑定维度和度量](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=zh-Hans#binding-dimension)以及新的[[!UICONTROL 第一个已知]和[!UICONTROL 最后一个已知]分配设置的新功能文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=zh-Hans#allocation-settings) |
 | 2022 年 1 月 | 关于[将 Adobe Analytics 数据与 CJA 中的 Analytics 数据进行比较](https://experienceleague.adobe.com/docs/analytics-platform/using/troubleshooting/compare.html?lang=zh-Hans)的新文章 |
 
 {style=&quot;table-layout:auto&quot;}
@@ -105,11 +105,11 @@ CJA 文档自创建以来进行了以下更新。
 | 2021 年 10 月 | 记录了 [Analytics 功能板的可视化图表](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=zh-Hans#apply-visualizations) |
 | 2021 年 10 月 | 有关[!UICONTROL 连接][数据保留](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans#set-rolling-window-for-connection-data-retention)滚动时段的文档 |
 | **2021 年 9 月** |  |
-| 2021 年 9 月 | [量度去重](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication.html?lang=zh-Hans)文档 |
+| 2021 年 9 月 | [度量去重](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication.html?lang=zh-Hans)文档 |
 | 2021 年 9 月 | [报告中的夏令时支持](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-Hans#calendar) |
 | 2021 年 9 月 | [客户日历](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-Hans#calendar)文档 |
 | 2021 年 9 月 | [布尔字段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/behavior.html?lang=zh-Hans)文档 |
-| 2021 年 9 月 | 将数据视图中的组件设置细分为单独的文件：<ul><li>[[!UICONTROL 组件]设置概述](/help/data-views/component-settings/overview.md)</li><li>[[!UICONTROL 归因]组件设置](/help/data-views/component-settings/attribution.md)</li><li>[[!UICONTROL 行为]组件设置](/help/data-views/component-settings/behavior.md)</li><li>[[!UICONTROL 格式]组件设置](/help/data-views/component-settings/format.md)</li><li>[[!UICONTROL 包括/排除]组件设置](/help/data-views/component-settings/include-exclude-values.md)</li><li>[[!UICONTROL 量度去重]组件设置](/help/data-views/component-settings/metric-deduplication.md)</li><li>[[!UICONTROL 无值]组件设置](/help/data-views/component-settings/no-value-options.md)</li><li>[[!UICONTROL 持久性]组件设置](/help/data-views/component-settings/persistence.md)</li><li>[[!UICONTROL 值分段]组件设置](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
+| 2021 年 9 月 | 将数据视图中的组件设置细分为单独的文件：<ul><li>[[!UICONTROL 组件]设置概述](/help/data-views/component-settings/overview.md)</li><li>[[!UICONTROL 归因]组件设置](/help/data-views/component-settings/attribution.md)</li><li>[[!UICONTROL 行为]组件设置](/help/data-views/component-settings/behavior.md)</li><li>[[!UICONTROL 格式]组件设置](/help/data-views/component-settings/format.md)</li><li>[[!UICONTROL 包括/排除]组件设置](/help/data-views/component-settings/include-exclude-values.md)</li><li>[[!UICONTROL 度量去重]组件设置](/help/data-views/component-settings/metric-deduplication.md)</li><li>[[!UICONTROL 无值]组件设置](/help/data-views/component-settings/no-value-options.md)</li><li>[[!UICONTROL 持久性]组件设置](/help/data-views/component-settings/persistence.md)</li><li>[[!UICONTROL 值分段]组件设置](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
 | 2021 年 9 月 | 有关 CJA 中[合并报告包后果](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans#6。-considerations-when-merging-report-suites-in-cja)的新部分。 |
 | **2021 年 8 月** |  |
 | 2021 年 8 月 | 有关 CJA 中增强的[连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans)体验的新部分。 |
