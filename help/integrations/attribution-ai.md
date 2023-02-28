@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
 mini-toc-levels: 3
 source-git-commit: c87d7428a2ddca35297225314e97171fe8b129fb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '929'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 85%
 
 [归因人工智能](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=zh-Hans)，作为 Adobe Experience Platform 智能服务的一部分，是一种多渠道、算法归因服务，用于计算客户交互对指定结果的影响和增量影响。借助归因人工智能，营销人员可以通过了解每个客户互动对客户旅程各个阶段的影响来衡量和优化营销和广告支出。
 
-归因人工智能与 Customer Journey Analytics (CJA) 集成的程度是：归因人工智能针对客户的营销接触点和转化数据源运行模型。然后，CJA 将这些模型的输出作为数据集导入，或者输出可以与您的其他 CJA 数据集集成。然后，可以在CJA的数据视图和报表中利用启用Attribution AI的数据集。
+归因人工智能与 Customer Journey Analytics (CJA) 集成的程度是：归因人工智能针对客户的营销接触点和转化数据源运行模型。然后，CJA 将这些模型的输出作为数据集导入，或者输出可以与您的其他 CJA 数据集集成。然后可以在 CJA 中的数据视图和报告中利用启用了归因人工智能的数据集。
 
 归因人工智能支持 3 种 Experience Platform 模式：体验事件、Adobe Analytics 和消费者体验事件。
 
@@ -71,19 +71,19 @@ ht-degree: 85%
 
 ### 第 4 步：在 CJA 工作区中报告 AAI 数据
 
-例如，在 CJA 工作区项目中，您可以提取“AAI 订单”等指标，以及“AAI 营销活动名称”或“AAI 营销渠道”等维度。
+例如，在 CJA 工作区项目中，您可以提取“AAI 订单”等度量，以及“AAI 营销活动名称”或“AAI 营销渠道”等维度。
 
 ![AAI 维度](assets/aai-dims.png)
 
-AAI中输出的原始分数具有嵌套模式，在该模式中，字段的路径可能足够长，以占用表或可视化中的大多数空格。 为了简洁， [!UICONTROL 显示名称] 会在CJA中按照以下规则自动生成和利用：
+AAI 中的原始分数输出具有嵌套模式，其中字段的路径可能很长，足以占用表格或可视化图表中的大部分空间。为简洁起见，按照以下规则在 CJA 中自动生成和利用[!UICONTROL 显示名称]：
 
 * 所有字段都具有“AAI”前缀
 * 对于接触点字段：
-   * 对于属于XDM分数的字段，它们在CJA中显示为 `AAI T {field name}`
-   * 对于作为“传递”列包含的字段，它们将在CJA中显示为 `AAI T PT {field name}`
+   * 对于作为分数 XDM 一部分的字段，它们在 CJA 中显示为 `AAI T {field name}`
+   * 对于作为 passThrough 列包含在内的字段，它们将在 CJA 中显示为 `AAI T PT {field name}`
 * 对于转化字段：
-   * 对于属于XDM分数的字段，它们将在CJA中显示为 `AAI C {field name}`
-   * 对于作为“传递”列包含的字段，它们将在CJA中显示为 `AAI C PT {field name}`
+   * 对于作为分数 XDM 一部分的字段，它们将在 CJA 中显示为 `AAI C {field name}`
+   * 对于作为 passThrough 列包含在内的字段，它们将在 CJA 中显示为 `AAI C PT {field name}`
 
 **包括影响分数和增量分数的订单**
 
