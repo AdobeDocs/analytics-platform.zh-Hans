@@ -6,21 +6,21 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 source-git-commit: 5adf47139a3a083f90007dfab3bc63fd187ddcff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '927'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # 计划项目
 
-从工作区 **[!UICONTROL 共享]** 菜单中，您可以通过电子邮件将Analysis Workspace项目发送给选定的收件人。 可以采用 CSV 或 PDF 格式发送文件。
+从工作区的&#x200B;**[!UICONTROL 共享]**&#x200B;菜单中，您可以通过电子邮件将 Analysis Workspace 项目发送给选定的收件人。可以采用 CSV 或 PDF 格式发送文件。
 
 ## 立即发送文件 {#now}
 
 要通过电子邮件立即将文件发送给收件人，请执行以下步骤：
 
-1. 单击 **[!UICONTROL 共享] > [!UICONTROL 立即发送文件]**.
+1. 单击&#x200B;**[!UICONTROL 共享] > [!UICONTROL 立即发送文件]**。
 1. 指定文件类型（CSV 或 PDF）。
 1. （可选）添加要包含在电子邮件中的说明，以阐述所发送的文件。
 1. 添加收件人或组。也可以输入电子邮件地址。
@@ -34,7 +34,7 @@ ht-degree: 89%
 
 要通过电子邮件按重复计划将文件发送给收件人，请执行以下操作：
 
-1. 单击 **[!UICONTROL 共享] > [!UICONTROL 按计划发送文件]**.
+1. 单击&#x200B;**[!UICONTROL 共享] > [!UICONTROL 按计划发送文件]**。
 1. 指定文件类型（CSV 或 PDF）。
 1. （可选）添加要包含在电子邮件中的说明，以阐述所发送的文件。
 1. 添加收件人或组。也可以输入电子邮件地址。
@@ -47,7 +47,7 @@ ht-degree: 89%
 
 ## 计划项目管理器 {#manager}
 
-计划的Analysis Workspace项目可在 **[!UICONTROL Analytics] > [!UICONTROL 组件] > [!UICONTROL 计划项目]**.
+可以在 **[!UICONTROL Analytics] > [!UICONTROL 组件] > [!UICONTROL 计划项目]**&#x200B;下管理计划的 Analysis Workspace 项目。
 
 在计划项目管理器中，您可以编辑和删除重复的项目计划。在搜索栏中搜索计划，或者使用左边栏中的过滤器选项搜索计划。您可以按标记、批准的计划、所有者等进行过滤。
 
@@ -58,8 +58,8 @@ ht-degree: 89%
 | [!UICONTROL 标题和描述] | 此项目的标题和描述。 |
 | [!UICONTROL 所有者] | 创建并拥有项目的用户。 |
 | [!UICONTROL 标记] | （可选）标记是一种用于排列项目的好方法。 所有用户均可创建标记，并将一个或多个标记应用到项目。 但是，您只能查看自己拥有或者与您共享的项目的标记。 |
-| [!UICONTROL 传送到] | 此计划项目的收件人。 |
-| [!UICONTROL 过期日期] | 默认过期日期取决于计划频率。 请参阅下面的“计划项目过期日期”。 |
+| [!UICONTROL 投放到] | 此计划项目的收件人。 |
+| [!UICONTROL 过期日期] | 默认过期日期取决于计划频率。请参见下面的“计划项目过期日期”。 |
 | [!UICONTROL 频率] | 您希望将此计划项目发送给收件人的频率。 |
 | [!UICONTROL 执行时间] | 在一天中发送此计划项目的时间。 |
 | [!UICONTROL 查询次数] | 查询此项目的次数。 |
@@ -79,12 +79,12 @@ ht-degree: 89%
 
 ## 计划项目的过期日期 {#expiration}
 
-计划项目的过期日期取决于计划的提交频率：
+计划项目的过期日期取决于计划的投放频率：
 
-* 每小时投放会在一周内过期。
-* 每日投放会在一个月后过期。
-* 每周投放会在6个月内过期。
-* 每月/每年的投放会在一年内到期。
+* 每小时投放在一周后过期。
+* 每日投放在一个月后过期。
+* 每周投放在 6 个月后过期。
+* 每月/每年投放在一年后过期。
 
 ## 密码保护计划项目 {#password}
 
