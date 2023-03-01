@@ -5,10 +5,10 @@ description: Analysis Workspace 功能概览
 feature: CJA Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '425'
-ht-degree: 100%
+source-git-commit: e104a7a36df3743028fd18b47b46e936841a586a
+workflow-type: tm+mt
+source-wordcount: '417'
+ht-degree: 69%
 
 ---
 
@@ -20,23 +20,27 @@ Analysis Workspace 是一款通过浏览器即可使用的灵活工具，可让�
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
 
-## 登录 Customer Journey Analytics {#login}
+## 登录到Customer Journey Analytics {#login}
 
-要开始使用 Analysis Workspace，请前往 [experience.adobe.com/analytics](https://experience.adobe.com/analytics) 登录 Customer Journey Analytics。如果此前未选择特定项目，您将登录到 Workspace 项目列表主页。
+要开始使用 Analysis Workspace，请前往 [experience.adobe.com/analytics](https://experience.adobe.com/analytics) 登录 Customer Journey Analytics。如果之前未选择特定项目，您将登录到“项目”页面。
 
-![](assets/login-analytics.png)
+![](assets/create-new-project.png)
 
-## 使用培训教程 {#training-tutorial}
+## 使用培训教程模板 {#training-tutorial}
 
-登录后，您的第一站应该是“Analysis Workspace 培训教程”，该教程将指导您逐步了解在 Workspace 中构建第一个分析时通常会用到的术语和步骤。要开始教程，请单击&#x200B;**[!UICONTROL 新建项目]**，然后在新项目模式中选择&#x200B;**“培训教程”**。
+登录后，您的第一站可以是Analysis Workspace培训教程模板，该模板将指导您逐步了解在Workspace中构建首个分析的常用术语和步骤。 要开始教程，请执行以下操作：
+
+1. 单击 **[!UICONTROL 学习]** 选项卡。
+1. 单击 **[!UICONTROL 打开教程]**.
 
 ![](assets/training-tutorial.png)
 
 ## 创建新项目 {#new-project}
 
-完成教程后，您就可以开始构建您的第一个项目。**“新项目模式”**&#x200B;提供了多种不同选项来开始您的分析。您可以选择从空白项目或[空白移动记分卡](/help/mobile-app/curator.md)开始，具体取决于您计划从浏览器还是从 Customer Journey Analytics 功能板移动应用程序共享您的分析。
+完成本教程后，您便可以开始构建第一个项目。 在 [!UICONTROL 项目] 选项卡，您可以选择从以下位置开始
 
-![](assets/create-new-project.png)
+* [!UICONTROL 空白项目] 如果您计划从浏览器共享您的分析，或者
+* [[!UICONTROL 空白移动记分卡]](/help/mobile-app/curator.md)，如果您计划从Customer Journey Analytics功能板移动应用程序共享您的分析。
 
 ## 构建分析 {#analysis}
 
