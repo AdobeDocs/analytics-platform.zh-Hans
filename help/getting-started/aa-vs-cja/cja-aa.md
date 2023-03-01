@@ -4,16 +4,16 @@ description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: ca161bd86b4f926991c1adec2ccf3918f2bc4347
+source-git-commit: 538c0d2858983fb508393c92686f3e7cc52578fa
 workflow-type: tm+mt
-source-wordcount: '1595'
-ht-degree: 95%
+source-wordcount: '2024'
+ht-degree: 75%
 
 ---
 
 # Customer Journey Analytics 功能支持
 
-下表列出了 Customer Journey Analytics (CJA) 全面支持、部分支持或不支持的 Adobe Analytics 功能。由于后续会向 CJA 添加其他功能，因此这些列表会随着时间而发生变化。
+下表列出了Adobe Analytics (AA)中部分支持、部分支持或不支持Customer Journey Analytics (CJA)的功能，以及AA中不支持或不提供CJA的功能。 由于后续会向 CJA 添加其他功能，因此这些列表会随着时间而发生变化。
 
 ## 全面支持的功能/组件
 
@@ -58,7 +58,7 @@ ht-degree: 95%
 | 自定义会话流程 | 支持除移动后台点击之外的所有自定义会话流程功能。 |
 | 促销变量持久性 | 通过[绑定维度和绑定度量](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=zh-Hans#binding-dimension)提供全面支持 |
 | 客户属性 | 现在称为“个人资料数据集”，它们不会从 Experience Cloud 自动导入，而是必须先上传到 AEP，然后才可在 CJA 中使用。 |
-| 数据馈送 | 数据集的第一代数据导出可通过 [AEP数据访问API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) 通过 [AEP目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en). 这些选项可提供所有收集或摄取到AEP数据湖中的数据的点击/行级别导出。 后处理数据列不可用，因为后处理列是在查询时计算的。 可通过报告导出帖子列。 |
+| 数据馈送 | 数据集的第一代数据导出可通过 [AEP数据访问API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) 和至 [AEP目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en). 这些选项提供收集或摄取到AEP数据湖中的所有数据的点击/行级别导出。 后处理数据列不可用，因为后处理列是在查询时计算的。 可通过报告导出后置列。 |
 | 度量去重 | 现在对数据视图中的度量配置此项。在人员或会话级别，而非数据集、数据视图或连接级别进行度量去重。 |
 | 登录、退出和花费时间维度和度量 | 受支持（现在“进入次数”和“退出次数”称为“会话启动次数”和“会话结束次数”），但计算方式略有不同。 |
 | eVar 持久性设置 | eVar 不再是 CJA 的一部分。但是，持久性设置现在是数据视图的一部分，且可用于所有维度。请记住，持久基于报表时间处理，而不是数据收集处理。数据视图中的纬度集限制为 90 天最大持久性，不支持无限持久性。 |
@@ -122,3 +122,20 @@ ht-degree: 95%
 * Reports &amp; Analytics 书签
 * Reports &amp; Analytics 目标
 * Mobile Services
+
+## CJA功能在Adobe Analytics中不可用
+
+下表列出了Customer Journey Analytics (CJA)中可用，但Adobe Analytics (AA)中不支持的功能。
+
+| 功能 | 更多详细信息 |
+| --- | --- |
+| 为任何类型的数据提供方便 | CJA与Experience Platform保存各种数据架构和类型的能力相结合。 使用 [体验数据模型(XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans)、可以采用统一的方式来表示和组织数据，以便进行数据合并和分析。 Adobe Analytics主要关注Web和移动分析数据，并具有以下功能： [导入数据](https://experienceleague.adobe.com/docs/analytics/import/home.html?lang=zh-Hans). |
+| 无限制的客户Dimension和量度 | CJA维度无限制；值可以是数字、文本、对象、列表或所有这些的混合。 Dimension可以嵌套或分层。 Analytics最多支持75个prop和250个eVar。 这消除了使用维度和事件的当前测量限制。 |
+| 无限基数/唯一值 | CJA支持可以在单个维度中报告的无限唯一值或维度项目。 AA限制为500,000个唯一值。 这消除了当前在大规模Analytics实施中存在的报表和分析限制。 |
+| 报表时间转换 | CJA中的报告时间转换（更名为数据视图）允许您进一步解释来自连接的数据。 您可以更改或删除数据，而无需重新实施；使用子字符串处理维度；从任何值创建量度；筛选子事件。 这一切都可以在不造成破坏的情况下完成。 Adobe Analytics通过虚拟报表包和会话流程提供有限的功能。 |
+| 试验分析 | CJA可以从定义为连接一部分的任何数据源评估任何试验的提升和置信度。 这使您能够了解跨任何渠道的客户交互之间的因果关系。 Analytics仅限于通过Analytics for Target (A4T)集成进行试验分析。 |
+| 跨设备分析 | CJA支持来自未经身份验证和经过身份验证的会话的设备特定数据集的无缝组合。 您还可以将历史数据回填到已知设备。 在Analytics中，此功能仅限于单个报表包以及设备图的使用。 |
+| SQL访问 | 通过使用Data Distiller选项，CJA可以删除在Adobe后端处理中收集的数据的限制。 您可以使用SQL修改数据，创建新的值以及您的企业专属的数据集，并继续探索。 Analytics不支持对其数据进行任何类型的SQL访问。 |
+| 增强的安全性和隐私选项 — HIPAA准备工作 | CJA已符合HIPAA要求，并为法规合规提供了其他安全选项。 Adobe Analytics未就绪。 |
+
+{style=&quot;table-layout:auto&quot;}
