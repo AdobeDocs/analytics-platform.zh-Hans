@@ -2,10 +2,10 @@
 title: 将 Adobe Journey Optimizer (AJO) 与 Customer Journey Analytics (CJA) 集成
 description: 引入 AJO 生成的数据，并在 CJA 中使用 Analysis Workspace 分析这些数据。
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
-source-git-commit: 9aed4e724c564272071b96c037f4eb0e82572e6f
-workflow-type: ht
-source-wordcount: '647'
-ht-degree: 100%
+source-git-commit: adf5671f80b122b7bcc77dea9c3e57d133961266
+workflow-type: tm+mt
+source-wordcount: '744'
+ht-degree: 89%
 
 ---
 
@@ -23,12 +23,20 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 
 一旦 Journey Optimizer 数据进入 Adobe Experience Platform，即可根据 Journey Optimizer 数据集[创建连接](/help/connections/create-connection.md)。选择已发送到 Platform 的数据集。
 
+| 数据集 | 数据集类型 | 连接设置 | 描述 |
+| --- | --- | --- | --- |
+| AJO消息反馈事件数据集 | 事件 | 人员 ID: `IdentityMap` | 包含消息投放事件，例如“[!UICONTROL 发送]&#39;和&#39;[!UICONTROL 跳出次数]&#39;. |
+| AJO电子邮件跟踪体验事件数据集 | 事件 | 人员 ID: `IdentityMap` | 包含电子邮件跟踪事件，例如“[!UICONTROL 打开次数]&#39;， &#39;[!UICONTROL 点击次数]&#39;和&#39;[!UICONTROL 取消订阅]&#39;. |
+| AJO推送跟踪体验事件数据集 | 事件 | 人员 ID: `IdentityMap` | 包含推送跟踪事件，如[!UICONTROL 应用程序启动次数]&#39;. |
+| 历程步骤事件 | 事件 | 人员 ID: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | 包含显示哪些用户档案参与了历程每个节点的事件。 |
+| AJO实体数据集 | 记录 | 密钥： `_id`<br>匹配键： `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | 包含将历程和促销活动元数据与所有AJO事件数据关联的分类。 |
+
 ## 配置数据视图以容纳 Journey Optimizer 维度和度量
 
 创建连接之后，可创建一个或多个[数据视图](/help/data-views/create-dataview.md)配置可在 Customer Journey Analytics 中找到的所需的维度和度量。
 
 >!![NOTE]
->AJO 和 CJA 之间的数据差异通常小于 1-2%。过去两小时内收集到的数据可能存在较大差异。请使用排除今天的日期范围以缓解涉及处理时间的差异。
+AJO 和 CJA 之间的数据差异通常小于 1-2%。过去两小时内收集到的数据可能存在较大差异。请使用排除今天的日期范围以缓解涉及处理时间的差异。
 
 ### 在数据视图中配置维度
 
@@ -50,7 +58,7 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 | 电子邮件投放失败原因 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` | 组件类型：维度 |
 | 电子邮件投放排除原因 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` | 组件类型：维度 |
 
-{style="table-layout:auto"}
+{style=&quot;table-layout:auto&quot;}
 
 ### 在数据视图中配置度量
 
@@ -68,7 +76,7 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 | 垃圾邮件投诉次数 | 垃圾邮件投诉的次数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | 组件类型：度量<br>包括排除值：等于 `spam_complaint` |
 | 取消订阅次数 | 取消订阅的次数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | 组件类型：度量<br>包括排除值：等于 `unsubscribe` |
 
-{style="table-layout:auto"}
+{style=&quot;table-layout:auto&quot;}
 
 ### 在 Analysis Workspace 中配置计算度量
 
@@ -79,4 +87,4 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 | 已发送邮件数 | 已发送邮件的总数。包括发送成功或失败的邮件。 | `[Sends] + [Bounces] - [Bounces After Delivery]` |
 | 已投放邮件数 | 已投放给客户的电子邮件数。 | `[Sends] - [Bounces After Delivery]` |
 
-{style="table-layout:auto"}
+{style=&quot;table-layout:auto&quot;}
