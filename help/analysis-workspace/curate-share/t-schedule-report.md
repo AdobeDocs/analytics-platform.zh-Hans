@@ -5,10 +5,10 @@ title: 计划项目
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 5adf47139a3a083f90007dfab3bc63fd187ddcff
-workflow-type: ht
-source-wordcount: '927'
-ht-degree: 100%
+source-git-commit: 06ec1145e25275dab0b1bf2388caae9eb8e6bcfe
+workflow-type: tm+mt
+source-wordcount: '886'
+ht-degree: 98%
 
 ---
 
@@ -53,13 +53,13 @@ ht-degree: 100%
 
 | 字段 | 描述 |
 | --- | --- |
-| [!UICONTROL 收藏夹] | 选择星型图标可将此计划添加到收藏中。 |
+| [!UICONTROL 收藏夹] | 选择星形图标将此计划加入收藏。 |
 | [!UICONTROL 计划 ID] | 此 ID 主要用于调试用途。 |
 | [!UICONTROL 标题和描述] | 此项目的标题和描述。 |
-| [!UICONTROL 所有者] | 创建并拥有项目的用户。 |
+| [!UICONTROL 所有者] | 创建并拥有此项目的人。 |
 | [!UICONTROL 标记] | （可选）标记是一种用于排列项目的好方法。 所有用户均可创建标记，并将一个或多个标记应用到项目。 但是，您只能查看自己拥有或者与您共享的项目的标记。 |
-| [!UICONTROL 投放到] | 此计划项目的收件人。 |
-| [!UICONTROL 过期日期] | 默认过期日期取决于计划频率。请参见下面的“计划项目过期日期”。 |
+| [!UICONTROL 投放到] | 接收此计划项目的人。 |
+| [!UICONTROL 到期日期] | 您可以将到期日期设置为最多一年，而不考虑调度频率。 |
 | [!UICONTROL 频率] | 您希望将此计划项目发送给收件人的频率。 |
 | [!UICONTROL 执行时间] | 在一天中发送此计划项目的时间。 |
 | [!UICONTROL 查询次数] | 查询此项目的次数。 |
@@ -76,15 +76,6 @@ ht-degree: 100%
 | **[!UICONTROL 查看计划 ID]** | 导航到右上方的列选项，并将“计划 ID”列添加到表中。计划 ID 通常对调试有用。 |
 
 计划项目管理器可显示特定用户已创建的项目。若应用程序中禁用此用户帐户，则会停止所有计划的提交。
-
-## 计划项目的过期日期 {#expiration}
-
-计划项目的过期日期取决于计划的投放频率：
-
-* 每小时投放在一周后过期。
-* 每日投放在一个月后过期。
-* 每周投放在 6 个月后过期。
-* 每月/每年投放在一年后过期。
 
 ## 密码保护计划项目 {#password}
 
