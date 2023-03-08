@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Customer Journey Analytics (CJA) 以及如何将 Analysis Workspace 用于来自 Experience Platform 的数据。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
+source-git-commit: 5929d56bef8f756967926482f80014db0d43d3e3
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 100%
+source-wordcount: '890'
+ht-degree: 99%
 
 ---
 
@@ -199,6 +199,7 @@ ht-degree: 100%
 
 + 组件 {#cja-components}
    + [组件概述](../components/overview.md)
+   + [添加组件描述](../components/add-component-descriptions.md)
    + 批注 {#annotations}
       + [批注概述](../components/annotations/overview.md)
       + [创建批注](../components/annotations/create-annotations.md)
@@ -239,6 +240,7 @@ ht-degree: 100%
          + [批准计算度量](../components/calc-metrics/cm-workflow/cm-approving.md)
          + [共享计算度量](../components/calc-metrics/cm-workflow/cm-sharing.md)
          + [计算度量管理器](../components/calc-metrics/cm-workflow/cm-manager.md)
+      + [默认计算量度](../components/calc-metrics/default-calcmetrics.md)
       + [基本功能](../components/calc-metrics/cm-functions.md)
       + [高级功能](../components/calc-metrics/cm-adv-functions.md)
    + 日期范围 {#cja-date-ranges}
@@ -248,7 +250,11 @@ ht-degree: 100%
       + [日历概述](../components/date-ranges/calendar.md)
       + [创建自定义日期范围](../components/date-ranges/custom-date-ranges.md)
       + [日期比较](../components/date-ranges/time-comparison.md)
-
+   + 数据词典 {#data-dictionary}
+      + [数据词典概述](../components/data-dictionary/data-dictionary-overview.md)
+      + [查看数据词典中的组件信息](../components/data-dictionary/view-data-dictionary.md)
+      + [编辑数据词典中的组件条目](../components/data-dictionary/edit-entries-data-dictionary.md)
+      + [监测数据词典健康状况](../components/data-dictionary/monitor-data-dictionary-health.md)
 + Analytics 功能板{#cja-dashboards}
    + [Analytics 功能板 — 概述](../mobile-app/home.md)
    + [策划人任务](../mobile-app/curator.md)
