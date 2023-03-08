@@ -3,10 +3,10 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新 CJA 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: c6714b375c8e74f12018fe54d80eb411e55e7097
+source-git-commit: d1fec541a41f01bf249cedb5f7e535166174a372
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 51%
+source-wordcount: '345'
+ht-degree: 42%
 
 ---
 
@@ -23,6 +23,7 @@ Customer Journey Analytics 版本在[持续交付模型](releases.md)上运行�
 | **Analysis Workspace中的数据字典** | 数据字典可帮助用户和管理员跟踪并更好地了解其CJA环境中的组件（维度、量度）。 了解详情 | 2023年3月8日 | 2023年3月22日 |
 | **移动仪表板中的数据故事** | 通过数据故事，可将多个可自定义的详细信息视图添加到移动记分卡项目中的图块。 使用数据故事在客户历程中更深入地探讨关键驱动因素、相关指标和不同步骤。 您可以轻松地浏览这些视图，以了解关键量度背后的整个故事。 了解详情 | 不适用 | 2023年3月8日 |
 | **计划项目的过期日期** | 您可以将计划项目的最长到期日期设置为一年，而不管计划频率如何。 | 不适用 | 2023年3月8日 |
+| **项目链接共享（无需登录） — 仅私人测试版访问** | 您现在可以与无权访问CJA的人共享Analysis Workspace项目的只读链接。 您可以与组织外部的人员或组织内未配置CJA的人员共享项目链接。 了解更多（关注）<p>要加入私人测试版，请联系您的Adobe客户团队。 | 2023年3月15日(Private Beta) | 2023 年 4 月 |
 
 {style="table-layout:auto"}
 
