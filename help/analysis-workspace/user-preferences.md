@@ -4,10 +4,10 @@ description: 可设置用户的常规和项目首选项。
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 8845d3e7142c5eb0f9007d7f9b5cd9e52017f31e
-workflow-type: ht
-source-wordcount: '2439'
-ht-degree: 100%
+source-git-commit: 0c41c5a4c79105520f6f98e9e9ea60f19befd608
+workflow-type: tm+mt
+source-wordcount: '2928'
+ht-degree: 84%
 
 ---
 
@@ -175,13 +175,29 @@ ht-degree: 100%
 |  | 限制最大项目数 | 减少散点图可视化中 X 轴上的项目数。如果您有大型数据集，这会很有用。 |
 |  | 将 Y 轴定位在零 | 如果图表上绘制的所有值都远远大于零，则图表默认会将 y 轴底部设置为非零值。如果选中此框，y 轴将被强制设置为零（并将重新绘制图表）。 |
 
+## 公司偏好设置
+
+>[!AVAILABILITY]
+>
+>本节中介绍的公共访问链接功能处于版本的有限测试阶段，可能尚未在您的环境中提供。 当该功能正式发布时，将删除此说明。有关 Analytics 发布流程的信息，请参阅 [Customer Journey Analytics 功能发布](/help/release-notes/releases.md)。
+
+您可以更新适用于组织内所有用户和项目的公司偏好设置。 有关如何访问这些首选项的信息，请参阅[更新首选项](#update-preferences)。
+
+| 部分 | 首选项 | 选项 |
+| --- | --- | --- |
+| **公共访问链接** <!-- Double check the names of all these settings for what they are actually called --> |  |  |
+|  | 禁用所有公共访问链接 | <p>禁用所有现有的公共访问链接，并阻止组织中的用户创建新链接。 这意味着用户无法与没有Analysis Workspace帐户的用户共享Adobe Customer Journey Analytics项目。 用户只能与组织内的其他Customer Journey Analytics用户共享项目。</p> <p>禁用公共链接时：</p> <ul><li><p>用户无法创建公共访问链接</p><p>“共享公共链接”选项将从“共享”菜单中删除。 这意味着用户不能再与组织中没有Analysis Workspace帐户的用户共享项目，如中所述 [与任何人共享公共链接（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) 在 [共享项目](/help/analysis-workspace/curate-share/share-projects.md).</p></li> <li><p>已禁用任何现有的公共链接</p></li><p>如果禁用然后重新启用公共链接，则不会自动重新激活所有之前已停用的链接。 在这种情况下，用户必须从“共享项目”对话框中为每个项目手动重新激活它们。</p> |
+|  | 需要Experience Cloud身份验证 | <p>启用此选项后，只有具有Federated ID并且可以登录Adobe Experience Cloud的收件人才能访问共享的公共链接。</p> <p>启用此选项后，每当用户创建指向Analysis Workspace项目的链接时，就会在“共享”对话框中启用“需要Experience Cloud身份验证”选项，并且共享链接的用户无法禁用该选项。 (有关用户如何与组织外的用户共享项目的信息，请参阅 [与任何人共享公共链接（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) 在 [共享项目](/help/analysis-workspace/curate-share/share-projects.md).)</p> <p>启用此选项时，请考虑以下事项：</p><ul><li><p>启用此选项后，当前未启用Experience Cloud的所有活动公共链接都会被停用。</p></li> <li><p>如果启用了此选项，稍后又禁用了此选项，则不会自动重新激活所有之前已停用的链接。 在这种情况下，用户必须从“共享项目”对话框中手动重新激活它们。</p></li> <li><p>仅当您的组织中实施了SSO时，此选项才可用。 有关系统管理员如何为您的组织启用SSO的信息，请参阅 [设置身份和单点登录](https://helpx.adobe.com/cn/enterprise/using/set-up-identity.html){target=_blank}.</p><p>如果为贵组织配置了SSO，请检查控制台中是否实施了任何类型的自动帐户创建。 通常，系统管理员会进行此设置，如中所述 [启用自动帐户创建](https://helpx.adobe.com/enterprise/using/automatic-account-creation.html){target=_blank}.</p></li><li><p>如果您的组织属于要求HIPAA合规性的行业，则此选项会自动启用，并且无法禁用。</p></li></ul> |
+
+{style="table-layout:auto"}
+
 ## 恢复默认首选项
 
 您可以将所有用户首选项恢复为系统默认值。这不会影响公司选项卡下的管理员首选项。
 
 此操作无法撤销。
 
-1. 在 Adobe Analytics 中，选择&#x200B;[!UICONTROL **组件**] **>** [!UICONTROL **首选项**]。
+1. 在Customer Journey Analytics中，选择 [!UICONTROL **组件**] **>** [!UICONTROL **首选项**].
 
    ![用户首选项](assets/user-preferences.png)
 
