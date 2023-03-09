@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 04b5e4df5ad07e701e3fb812df841b457e7b9c6f
+source-git-commit: 9e87d7b834873d33474d9f48f34ee41d10271419
 workflow-type: tm+mt
-source-wordcount: '1454'
-ht-degree: 98%
+source-wordcount: '1538'
+ht-degree: 92%
 
 ---
 
@@ -21,6 +21,9 @@ CJA 文档自创建以来进行了以下更新。
 | --- | --- |
 | **2023 年 3 月** |  |
 | 功能支持 | 已更新 [Customer Journey Analytics功能支持](/help/getting-started/aa-vs-cja/cja-aa.md) 具有CJA中可用但在AA中不可用或不受支持的功能表。 |
+| 默认计算量度 | 添加了说明 [Adobe提供的默认计算指标](/help/components/calc-metrics/default-calcmetrics.md). |
+| 数据词典 | <p>添加了有关数据字典的新文档，包括 [概述](/help/components/data-dictionary/data-dictionary-overview.md)， [查看](/help/components/data-dictionary/view-data-dictionary.md)， [编辑](/help/components/data-dictionary/edit-entries-data-dictionary.md)、和 [监测](/help/components/data-dictionary/monitor-data-dictionary-health.md) 数据字典。</p><p>中的信息 [添加组件描述](/help/components/add-component-descriptions.md) 已更新以考虑数据字典功能。</p> |
+| 项目链接共享（无需登录） | <p>更新了现有文档，以解释如何与无权访问Analysis Workspace的人共享项目的只读链接。</p> <p>更新的用户文档包括 [共享项目](/help/analysis-workspace/curate-share/share-projects.md) 和 [创建可共享链接](/help/analysis-workspace/curate-share/shareable-links.md).</p> <p>管理员的选项已添加到 [首选项](/help/analysis-workspace/user-preferences.md).</p> |
 | **2023 年 2 月** |  |
 | 比较 CJA 和 BI 解决方案 | 新增了有关 Customer Journey Analytics 与典型 BI 解决方案的[比较](../getting-started/cja-vs-bi.md)的文档。 |
 | 对 Audiences 文档的更新 | 有关[延迟注意事项](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-Hans#latency)的新章节。 |
@@ -93,7 +96,7 @@ CJA 文档自创建以来进行了以下更新。
 | 2022 年 1 月 | 添加了有关[绑定维度和度量](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=zh-Hans#binding-dimension)以及新的[[!UICONTROL 第一个已知]和[!UICONTROL 最后一个已知]分配设置的新功能文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=zh-Hans#allocation-settings) |
 | 2022 年 1 月 | 关于[将 Adobe Analytics 数据与 CJA 中的 Analytics 数据进行比较](https://experienceleague.adobe.com/docs/analytics-platform/using/troubleshooting/compare.html?lang=zh-Hans)的新文章 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 2021 {#21}
 
@@ -134,7 +137,7 @@ CJA 文档自创建以来进行了以下更新。
 | **2021 年 1 月** |  |
 | 2021 年 1 月 | 有关[向数据集添加标准查找](/help/connections/standard-lookups.md)的新主题。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 2020 {#20}
 
@@ -155,4 +158,4 @@ CJA 文档自创建以来进行了以下更新。
 | 2020 年 2 月 27 日 | 对 [Customer Journey Analytics 功能支持](/help/getting-started/aa-vs-cja/cja-aa.md)的更新 |
 | 2019 年 12 月 | CJA 文档初稿 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
