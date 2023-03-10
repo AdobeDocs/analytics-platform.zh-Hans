@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 9e87d7b834873d33474d9f48f34ee41d10271419
+source-git-commit: e4b84436315d4eb87e39085f4838b51797a1f9b7
 workflow-type: tm+mt
-source-wordcount: '1538'
-ht-degree: 92%
+source-wordcount: '1566'
+ht-degree: 93%
 
 ---
 
@@ -20,8 +20,9 @@ CJA 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2023 年 3 月** |  |
-| 功能支持 | 已更新 [Customer Journey Analytics功能支持](/help/getting-started/aa-vs-cja/cja-aa.md) 具有CJA中可用但在AA中不可用或不受支持的功能表。 |
-| 默认计算量度 | 添加了说明 [Adobe提供的默认计算指标](/help/components/calc-metrics/default-calcmetrics.md). |
+| 在移动记分卡中创建数据故事 | A [数据故事](/help/mobile-app/create-scorecard.md#create-data-stories) 是围绕中心主题或量度构建的支持数据点、业务上下文和相关量度的集合。 |
+| 功能支持 | 更新了对[ Customer Journey Analytics 功能的支持](/help/getting-started/aa-vs-cja/cja-aa.md)，其中含有 CJA 中可用但 AA 中不可用或不支持的功能表。 |
+| 默认计算量度 | 添加了解释 [Adobe 提供的默认计算量度](/help/components/calc-metrics/default-calcmetrics.md)的内容。 |
 | 数据词典 | <p>添加了有关数据字典的新文档，包括 [概述](/help/components/data-dictionary/data-dictionary-overview.md)， [查看](/help/components/data-dictionary/view-data-dictionary.md)， [编辑](/help/components/data-dictionary/edit-entries-data-dictionary.md)、和 [监测](/help/components/data-dictionary/monitor-data-dictionary-health.md) 数据字典。</p><p>中的信息 [添加组件描述](/help/components/add-component-descriptions.md) 已更新以考虑数据字典功能。</p> |
 | 项目链接共享（无需登录） | <p>更新了现有文档，以解释如何与无权访问Analysis Workspace的人共享项目的只读链接。</p> <p>更新的用户文档包括 [共享项目](/help/analysis-workspace/curate-share/share-projects.md) 和 [创建可共享链接](/help/analysis-workspace/curate-share/shareable-links.md).</p> <p>管理员的选项已添加到 [首选项](/help/analysis-workspace/user-preferences.md).</p> |
 | **2023 年 2 月** |  |
