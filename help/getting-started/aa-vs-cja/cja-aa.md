@@ -4,10 +4,10 @@ description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 538c0d2858983fb508393c92686f3e7cc52578fa
+source-git-commit: 116000f3dd0212896ca96d7e45e4d4cfc5cdd357
 workflow-type: tm+mt
-source-wordcount: '2024'
-ht-degree: 75%
+source-wordcount: '2004'
+ht-degree: 74%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 75%
 
 下表列出了Adobe Analytics (AA)中部分支持、部分支持或不支持Customer Journey Analytics (CJA)的功能，以及AA中不支持或不提供CJA的功能。 由于后续会向 CJA 添加其他功能，因此这些列表会随着时间而发生变化。
 
-## 全面支持的功能/组件
+## 全面支持的功能/组件 {#full-support}
 
 | Adobe Analytics 功能 | 注释 |
 | --- | --- |
@@ -46,9 +46,9 @@ ht-degree: 75%
 | VRS 组件管理 | 全面支持；现在是数据视图的一部分。 |
 | 流 Media Analytics | 使用作为 Workspace 中的“同时观看媒体的人数”面板和“媒体播放耗时”面板一部分的 Analytics Data Connector 即可获得媒体数据。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## 以新方式支持
+## 以新方式支持 {#new-support}
 
 | 功能 | 注释 |
 | --- | --- |
@@ -71,9 +71,9 @@ ht-degree: 75%
 | 用户权限/数据访问控制 | CJA 区分 [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=zh-Hans) 产品管理员、产品配置文件管理员和用户。只有产品管理员可创建/更新/删除由其他用户创建的连接、项目、过滤器或计算度量，而产品管理员和产品配置文件管理员可编辑数据视图。还可为创建计算度量、过滤器或注释等操作提供其他用户权限。 |
 | 处理规则、VISTA 规则、营销渠道处理规则 | 对基于 WebSDK 的数据集和来自 Analytics Data Connector 的数据都使用 Adobe Experience Platform 数据准备功能时支持。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## 部分支持
+## 部分支持 {#partial}
 
 | 功能 | 注释 |
 | --- | --- |
@@ -86,9 +86,9 @@ ht-degree: 75%
 | 处理规则 | 对于基于 Analytics Source Connector 的数据集，仍会应用处理规则。[Adobe Experience Platform 中的数据准备功能](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)也可以取代处理将直接进入 Platform 的数据的规则。 |
 | A4T | 通过 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 中的字段提供部分支持。有计划在 Target 活动和体验上支持适合 A4T 的名称。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## 目前不支持，但有计划要支持
+## 目前不支持，但有计划要支持 {#planned}
 
 | 功能 | 注释 |
 | --- | --- |
@@ -102,28 +102,27 @@ ht-degree: 75%
 | 货币换算 | 有计划要支持。 |
 | 交易 ID 数据源 | 有计划要支持。 |
 | 将项目/过滤器/计算度量从 AA 迁移到 CJA | 有计划要支持。 |
-| 摘要级别数据源 | 有计划要支持。 |
+| 摘要级别数据源 | 计划将会提供支持。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## 尚未计划提供支持
+## 尚未计划提供支持 {#not-planned}
 
 | 功能 | 注释 |
 | --- | --- |
 | Activity Map | 尚未计划提供支持。 |
 | Advertising Cloud | 尚未计划提供支持。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## 将永远不支持
+## 将永远不支持 {#never}
 
 * 使用跨设备协作的人员度量
 * Reports &amp; Analytics 功能板
 * Reports &amp; Analytics 书签
 * Reports &amp; Analytics 目标
-* Mobile Services
 
-## CJA功能在Adobe Analytics中不可用
+## CJA功能在Adobe Analytics中不可用 {#cja-not-aa}
 
 下表列出了Customer Journey Analytics (CJA)中可用，但Adobe Analytics (AA)中不支持的功能。
 
@@ -138,4 +137,4 @@ ht-degree: 75%
 | SQL访问 | 通过使用Data Distiller选项，CJA可以删除在Adobe后端处理中收集的数据的限制。 您可以使用SQL修改数据，创建新的值以及您的企业专属的数据集，并继续探索。 Analytics不支持对其数据进行任何类型的SQL访问。 |
 | 增强的安全性和隐私选项 — HIPAA准备工作 | CJA已符合HIPAA要求，并为法规合规提供了其他安全选项。 Adobe Analytics未就绪。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
