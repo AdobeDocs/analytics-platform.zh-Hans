@@ -4,10 +4,10 @@ description: 描述如何在 Customer Journey Analytics 中创建与 Platform �
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
-workflow-type: ht
-source-wordcount: '2471'
-ht-degree: 100%
+source-git-commit: 5db5747637c014da00744802e81f8706c3901b5b
+workflow-type: tm+mt
+source-wordcount: '2472'
+ht-degree: 99%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 100%
    | **[!UICONTROL 回填数据]** | 您可以请求根据事件时间戳回填数据集中的数据。例如，您可以请求回填过去 7 天的数据，配置正确的人员 ID 并测试您的连接是否配置正确。如果一切看起来正常，您可以轻松回填所有剩余数据。<p>此外，您可以启用按数据集导入新数据。例如，您可以仅对查找数据启用新数据导入。 |
    | **[!UICONTROL 回填状态]** | 指示是否正在处理任何回填数据。 |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 ## 添加和配置数据集 {#add-dataset}
 
@@ -68,6 +68,7 @@ ht-degree: 100%
    | --- | --- |
    | **[!UICONTROL 人员 ID]** | 从可用标识的下拉列表中选择个人 ID。这些身份已在 Experience Platform 的数据集架构中定义。有关如何将身份映射用作人员 ID 的信息，请参见下文。<p>如果没有可供选择的人员 ID，则意味着架构中尚未定义一个或多个人员 ID。请查看这个视频，以了解如何在 Experience Platform 中定义标识。 |
    | **[!UICONTROL 时间戳]** | 仅对于事件数据集，此设置会自动设置为 Experience Platform 中基于事件的架构的默认时间戳字段。 |
+   | **[!UICONTROL 数据源类型]** | 数据源类型包括CRM数据、呼叫中心数据、电子邮件数据等。 |
    | **[!UICONTROL 导入新数据]** | 如果要创建持续连接，请选择此选项，以便要添加到此连接中数据集的任何新数据批次会自动流入工作区中。可以设置为开或关。 |
    | **[!UICONTROL 数据集回填]** | 点击&#x200B;**[!UICONTROL 请求回填]**&#x200B;以回填历史数据。<ul><li>您可以单独回填每个数据集。</li><li>我们会优先处理新添加到此连接中数据集的新数据，因此这些新数据的滞后时间最短。</li><li>任何回填（历史）数据的导入速度都会比较慢。延迟受您拥有多少历史数据的影响。</li><li>Adobe Analytics Source Connector 最多可导入 13 个月的数据，而无论数据大小如何。</li></ul> |
    | **[!UICONTROL 回填状态]** | 可能的状态指示符有：<ul><li>成功</li><li>X 回填处理</li><li>关</li></ul> |
@@ -79,7 +80,7 @@ ht-degree: 100%
    | **[!UICONTROL 预览]**: `<dataset name>` | 使用日期、我的 ID 和标识符列预览数据集。 |
    | **[!UICONTROL 删除]** | 您可以删除或移除数据集并更改人员 ID 而不删除整个连接。这会降低数据引入以及重新创建整个连接和相关数据视图这一繁琐过程所涉及的成本。 |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 ## 连接预览 {#preview}
 
@@ -105,7 +106,7 @@ ht-degree: 100%
 | **[!UICONTROL 查找]** | 此数据用于查找在“事件”或“配置文件”数据中找到的值或键。例如，您可以上传将事件数据中的数字 ID 映射到产品名称的查找数据。有关示例，请参阅[此用例](/help/use-cases/b2b/b2b.md)。 | 不适用 | 任何基于 XDM 类且具有“记录”行为的内置或自定义架构，“XDM 个人资料”类除外。 | 不适用 |
 | **[!UICONTROL 配置文件]** | [!UICONTROL 事件]数据中应用于访客、用户或客户的数据。例如，允许您上传关于客户的 CRM 数据。 | 不适用 | 任何基于“XDM 个人资料”类的内置或自定义架构。 | 您可以选择想要包含的人员 ID。[!DNL Experience Platform] 中定义的每个数据集，都拥有自己定义的一个或多个人员 ID 集，例如 Cookie ID、拼接 ID、用户 ID、跟踪代码等。<br>![人员 ID ](assets/person-id.png)**注意**：如果您创建的连接包含具有不同 ID 的数据集，报告将反映这一点。要真正合并数据集，您需要使用相同的人员 ID。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 使用数字字段作为查找键和查找值 {#numeric}
 
@@ -134,7 +135,7 @@ Customer Journey Analytics 支持将标识映射作为个人 ID。Identity Map �
 | **[!UICONTROL 使用主 ID 命名空间]** | 它会指示 CJA 逐行在“身份映射”中查找标记了“primary=true”属性的身份，并将该身份用作相应行的人员 ID。这意味着，它是 Experience Platform 中用于分区时使用的主密钥。此外，它还是用作 CJA 访客 ID 的主要候选项（取决于 CJA 连接中数据集的配置方式）。 |
 | **[!UICONTROL 命名空间]** | （此选项仅适用于未使用主 ID 命名空间的情况。）身份命名空间是 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=zh-Hans) 的组件，充当与身份相关的上下文指示器。如果指定了命名空间，CJA 会在每行的“身份映射”中搜索此命名空间密钥，并将该命名空间下的身份用作该行的人员 ID。请注意，由于 CJA 无法对所有行执行全方位数据集扫描以确定哪些命名空间实际存在，因此下拉列表中会列出所有可能的命名空间。您需要知道数据中指定了哪些命名空间；这些信息无法自动检测。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### 身份映射边缘情况 {#id-map-edge}
 
@@ -145,7 +146,7 @@ Customer Journey Analytics 支持将标识映射作为个人 ID。Identity Map �
 | **[!UICONTROL 使用主 ID 命名空间]已选中** | 该行将被 CJA 删除。 | 该行将被 CJA 删除，因为未指定主 ID。 | 所有命名空间下标记为主 ID 的 ID 都将被提取到列表中，随后，这些 ID 将按字母顺序排序；根据这种新的排序方式，排在第一个命名空间中的首个 ID 将被用作人员 ID。 | 单个 ID 用作个人 ID。 | 即便命名空间可能无效（未出现在 AEP 中），CJA 仍会将该命名空间下的主 ID 用作个人 ID。 |
 | **[!UICONTROL 特定的身份映射命名空间]已选择** | 该行将被 CJA 删除。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。（由于在创建连接时，只能选择有效的命名空间，因此无效的命名空间/ID 不可能用作人员 ID） |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 计算平均每日事件数
 
