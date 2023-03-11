@@ -3,16 +3,16 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新 CJA 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: c419d304e6af77fb61b756aa59faeae88a7c29d5
+source-git-commit: f3233f0be1fb455535af4532fe32b5db8560fb62
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 42%
+source-wordcount: '495'
+ht-degree: 72%
 
 ---
 
-# 当前Customer Journey Analytics(CJA)发行说明（2023年3月）
+# 当前 Customer Journey Analytics (CJA) 发行说明（2023 年 3 月）
 
-**上次更新日期**：2023 年 3 月 8 日
+**上次更新日期**：2023 年 3 月 10 日
 
 Customer Journey Analytics 版本在[持续交付模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
@@ -20,22 +20,23 @@ Customer Journey Analytics 版本在[持续交付模型](releases.md)上运行�
 
 | 功能 | 描述 | [开始推出](/help/release-notes/releases.md) | [正式发布](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
-| **Analysis Workspace中的数据字典** | 数据字典可帮助用户和管理员跟踪并更好地了解其CJA环境中的组件（维度、量度）。 [了解详情](/help/components/data-dictionary/data-dictionary-overview.md) | 2023年3月8日 | 2023年3月22日 |
-| **移动仪表板中的数据故事** | 通过数据故事，可将多个可自定义的详细信息视图添加到移动记分卡项目中的图块。 使用数据故事在客户历程中更深入地探讨关键驱动因素、相关指标和不同步骤。 您可以轻松地浏览这些视图，以了解关键量度背后的整个故事。 [了解详情](/help/mobile-app/create-scorecard.md#create-data-story) | 不适用 | 2023年3月8日 |
-| **计划项目的过期日期** | 您可以将计划项目的最长到期日期设置为一年，而不管计划频率如何。 [了解详情](/help/analysis-workspace/curate-share/t-schedule-report.md) | 不适用 | 2023年3月8日 |
-| **项目链接共享（无需登录） — 仅私人测试版访问** | 您现在可以与无权访问CJA的人共享Analysis Workspace项目的只读链接。 您可以与组织外部的人员或组织内未配置CJA的人员共享项目链接。 [了解详情](/help/analysis-workspace/curate-share/share-projects.md)<p>要加入私人测试版，请联系您的Adobe客户团队。 | 2023年3月15日(Private Beta) | 2023 年 4 月 |
+| **Analysis Workspace 中的数据词典** | 数据词典可帮助用户和管理员跟踪并更好地了解其 CJA 环境中的组件（如维度、量度等）。[了解详情](/help/components/data-dictionary/data-dictionary-overview.md) | 2023 年 3 月 8 日 | 2023 年 3 月 22 日 |
+| **移动仪表板中的数据故事** | 数据故事让您可以将多个可自定义的详细信息视图添加到移动记分卡项目中的图块。使用数据故事深入了解关键驱动因素、相关指标以及客户历程中的不同步骤。您可以轻松浏览这些视图以了解关键指标背后的整个故事。[了解详情](/help/mobile-app/create-scorecard.md#create-data-story) | 不适用 | 2023 年 3 月 8 日 |
+| **计划项目的过期日期** | 无论计划频率如何，您都可以将计划项目的最长到期日期设置为最多一年。[了解详情](/help/analysis-workspace/curate-share/t-schedule-report.md) | 不适用 | 2023 年 3 月 8 日 |
+| **项目链接共享（无需登录）- 仅限访问 Private Beta** | 您现在可以与无权访问 CJA 的人员共享 Analysis Workspace 项目的只读链接。您可以与组织外的人员或组织内未配置 CJA 的人员共享项目链接。[了解详情](/help/analysis-workspace/curate-share/share-projects.md)<p>要加入 Private Beta，请联系您的 Adobe 账户团队。 | 2023 年 3 月 15 日 (Private Beta) | 2023 年 4 月 |
+| **面板日期范围更新** | 在 Workspace 中，我们对以下方面作出了改进：<ul><li>从2月版开始，维度项目和数据预览基于面板日期范围，而不是最近90天。 </li><li>列出的所有维度项都基于面板日期范围内的数据。 如果维度项的数据超出日期范围，则可以在列表底部显示超出日期范围的其他数据。</li><li>没有数据的Dimension可以显示在左边栏中。 单击显示更多选项以查看数据在面板日期范围之外的维度项。</li><li>区段和计算量度生成器中的数据预览基于面板日期范围，除非从组件管理器访问，组件管理器没有关联的面板，并且仍基于过去90天。</li><li>数据预览根据面板日期范围显示数据或组件。</li></ul> | 不适用 | 2023 年 2 月 8 日 |
 
 {style="table-layout:auto"}
 
 ## Customer Journey Analytics 中的修复
 
-AN-309729； AN-309975； AN-311779； AN-313095
+AN-309729; AN-309975; AN-311779; AN-313095
 
 ## CJA 管理员的重要注意事项
 
 | 注意事项 | 添加或更新注意事项 | 描述 |
 | --- | --- | --- |
-| Analytics Source Connector 可用性 | 2023 年 2 月 15 日 | 2023年2月28日，位于加拿大的新Adobe Experience Platform数据中心提供了Analytics Source Connector。 |
+| Analytics Source Connector 可用性 | 2023 年 2 月 15 日 | 2023 年 2 月 28 日，位于加拿大的新 Adobe Experience Platform 数据中心提供了 Analytics Source Connector。 |
 
 {style="table-layout:auto"}
 
