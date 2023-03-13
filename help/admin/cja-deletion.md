@@ -4,10 +4,10 @@ description: 在 Customer Journey Analytics 或 Adobe Experience Platform 中删
 exl-id: a89694c9-0909-440e-939c-b245fc4dd6bf
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f56d56d65491ab14c5d0e6d3005c0e5e13127c9b
+source-git-commit: 64c165e30926f2571bce5ea2f31560daf50acc46
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 92%
+source-wordcount: '373'
+ht-degree: 81%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 92%
 
 | 当... | 产生的后果... |
 | --- | --- |
-| 删除 [!UICONTROL Customer Journey Analytics] 中的连接 | 将显示一条错误消息，指示：<ul><li>为已删除的连接创建的所有数据视图都将不再起作用。</li><li> 同样地，任何依赖于已删除连接中的数据视图的工作区项目都将停止运行。</li></ul> |
+| 删除 [!UICONTROL Customer Journey Analytics] 中的连接 | 将显示一条错误消息，指示：<ul><li>为已删除的连接创建的所有数据视图都将不再起作用。</li><li> 同样地，任何依赖于已删除连接中的数据视图的工作区项目都将停止运行。</li></ul>请注意，您无法删除与您没有权限的AEP沙盒绑定的CJA连接。 即使您有权访问基于这些连接构建的数据视图，但在您获得基础AEP沙盒的权限之前，无法删除连接。 |
 | 删除 [!UICONTROL Adobe Experience Platform] (AEP) 中的数据集 | 如果删除 AEP 中的某个数据集，则将阻止从该数据集到包含该数据集的任何连接的数据流量。来自该数据集的任何数据都不会自动从关联的 CJA 连接中删除。 |
 | 删除 [!UICONTROL Customer Journey Analytics] 中的数据集 | 当您从CJA中的连接中删除数据集时，任何依赖该数据集的数据视图和项目将不再有效。 |
 | 从数据集中删除批次（在 [!UICONTROL Adobe Experience Platform] 中） | 如果从 [!UICONTROL Adobe Experience Platform] 数据集中删除了某个批次，则会从包含该特定批次的所有 [!UICONTROL Customer Journey Analytics] 连接中删除该批次。[!UICONTROL Customer Journey Analytics] 会收到批次已在 [!UICONTROL Adobe Experience Platform] 中删除的通知。 |
