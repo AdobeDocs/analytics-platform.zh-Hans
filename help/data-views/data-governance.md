@@ -2,22 +2,26 @@
 title: 标签和策略
 description: 了解 AEP 中定义的数据标签和策略如何影响 CJA 中的数据视图和报告。
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: 7962114aaab42a283f1cb35a312b0a707038c31a
-workflow-type: ht
-source-wordcount: '468'
-ht-degree: 100%
+source-git-commit: ba4b1e61891c21610e3bd84a41581b1f6cea6234
+workflow-type: tm+mt
+source-wordcount: '470'
+ht-degree: 79%
 
 ---
 
 # 标签和策略
 
-在 Experience Platform 中创建数据集时，可以为数据集中的部分或所有元素创建[数据使用标签](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=zh-Hans)。 直到现在，这些标签还没有在 CJA 中公开。使用此版本，您可以在 CJA 中查看这些标签和策略。
+在 Experience Platform 中创建数据集时，可以为数据集中的部分或所有元素创建[数据使用标签](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=zh-Hans)。 您可以在CJA中查看这些标签和策略。
 
-CJA 特别感兴趣的是以下标签：
+CJA特别关注以下标签：
 
 * `C8`标签 – **[!UICONTROL 无测量]**。 此标签表示数据不能用于组织网站或应用程序上的分析。
 
 * `C12`标签 – **[!UICONTROL 无一般数据导出]**。 以这种方式标记的架构字段无法从 CJA 导出或下载（通过报告、导出、API 等）
+
+>[!NOTE]
+>
+>数据使用标签不会自动传播到拼接的数据集。 但是，可以手动添加它们。
 
 标签本身并不意味着强制执行这些数据使用标签。 这就是政策的用途。 您可以通过 Experience Platform 中的 [策略服务 API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=zh-Hans) 创建策略。
 
@@ -36,11 +40,11 @@ CJA 特别感兴趣的是以下标签：
 | 在[组件设置](/help/data-views/component-settings/overview.md)下的右边栏 | 此处列出了任何[!UICONTROL 数据使用标签]：<p>![](assets/data-label-right.png) |
 | 将数据标签添加为列 | 您可以将[!UICONTROL 数据使用标签]作为列添加到数据视图中[!UICONTROL 包含的组件]列中。 只需单击列选择器图标并选择&#x200B;**[!UICONTROL 数据使用标签]**：<p>![](assets/data-label-column.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 筛选数据视图中的数据管理标签
 
-在数据视图编辑器中，单击左边栏中的过滤器图标，并按&#x200B;**[!UICONTROL 数据管理]**&#x200B;和&#x200B;**[!UICONTROL 标签]**&#x200B;类型过滤数据视图组件：
+在数据视图编辑器中，单击 [!UICONTROL 过滤器] 图标，并按以下条件筛选数据视图组件 **[!UICONTROL 数据管理]** 和类型 **[!UICONTROL 标签]**：
 
 ![](assets/filter-labels.png)
 
@@ -50,7 +54,7 @@ CJA 特别感兴趣的是以下标签：
 
 您可以检查是否启用了阻止使用某些 CJA 数据视图元素进行分析或导出的策略。
 
-再次单击左栏中的过滤器图标，在&#x200B;**[!UICONTROL 数据管理]**&#x200B;下，单击&#x200B;**[!UICONTROL 策略]**：
+再次，单击 [!UICONTROL 过滤器] 图标（位于左边栏和下） **[!UICONTROL 数据管理]**，单击 **[!UICONTROL 策略]**：
 
 ![](assets/filter-policies.png)
 
