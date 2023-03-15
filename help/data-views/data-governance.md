@@ -15,13 +15,13 @@ ht-degree: 79%
 
 CJA特别关注以下标签：
 
-* `C8`标签 – **[!UICONTROL 无测量]**。 此标签表示数据不能用于组织网站或应用程序上的分析。
+* `C8`标签 – **[!UICONTROL 无测量]**。 此标签表示数据不能用于贵组织网站或应用程序上的分析。
 
 * `C12`标签 – **[!UICONTROL 无一般数据导出]**。 以这种方式标记的架构字段无法从 CJA 导出或下载（通过报告、导出、API 等）
 
 >[!NOTE]
 >
->数据使用标签不会自动传播到拼接的数据集。 但是，可以手动添加它们。
+>数据使用情况标签不会自动传播到拼合的数据集。 但是，可以手动添加这些量度。
 
 标签本身并不意味着强制执行这些数据使用标签。 这就是政策的用途。 您可以通过 Experience Platform 中的 [策略服务 API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=zh-Hans) 创建策略。
 
@@ -44,7 +44,7 @@ CJA特别关注以下标签：
 
 ## 筛选数据视图中的数据管理标签
 
-在数据视图编辑器中，单击 [!UICONTROL 过滤器] 图标，并按以下条件筛选数据视图组件 **[!UICONTROL 数据管理]** 和类型 **[!UICONTROL 标签]**：
+在数据视图编辑器中，单击 [!UICONTROL 过滤器] 图标，并按 **[!UICONTROL 数据管理]** 和类型 **[!UICONTROL 标签]**:
 
 ![](assets/filter-labels.png)
 
@@ -54,7 +54,7 @@ CJA特别关注以下标签：
 
 您可以检查是否启用了阻止使用某些 CJA 数据视图元素进行分析或导出的策略。
 
-再次，单击 [!UICONTROL 过滤器] 图标（位于左边栏和下） **[!UICONTROL 数据管理]**，单击 **[!UICONTROL 策略]**：
+再次单击 [!UICONTROL 过滤器] 图标 **[!UICONTROL 数据管理]**，单击 **[!UICONTROL 策略]**:
 
 ![](assets/filter-policies.png)
 
