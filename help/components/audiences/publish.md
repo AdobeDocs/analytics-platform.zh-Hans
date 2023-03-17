@@ -2,10 +2,10 @@
 title: 创建受众并将受众发布到实时客户档案
 description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 1bd07390b1e01c64f192994a6d9d41e7c9a88440
+source-git-commit: 60f9c81699f9a8e1657da4bd806d04f9f8adaa99
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 100%
+source-wordcount: '1435'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
    | 通过自由格式表 | 右键单击自由格式表中的项目并选择&#x200B;**[!UICONTROL 根据选定内容创建受众]**。使用此方法时会用您在表中选择的维度或维度项目预填充过滤器。 |
    | 通过过滤器创建/编辑 UI | 选中显示&#x200B;**[!UICONTROL 从此过滤器创建受众]**&#x200B;的框。使用此方法时会预填充过滤器。 |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. 生成受众。
 
@@ -45,7 +45,7 @@ ht-degree: 100%
    | [!UICONTROL 过滤器] | 过滤器是受众的主要输入。您最多可以添加 20 个过滤器。这些过滤器可以与 `And` 或 `Or` 运算符相连。 |
    | [!UICONTROL 查看样本 ID] | 受众中的 ID 示例。使用搜索栏搜索 ID 示例。 |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. 解释数据预览。
 
@@ -64,7 +64,7 @@ ht-degree: 100%
    | [!UICONTROL 命名空间包含] | 与受众中的人关联的特定命名空间。例如 ECID、CRM ID、电子邮件地址等。 |
    | [!UICONTROL 沙盒] | 受众所在的 [Experience Platform sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=zh-Hans) 沙盒。当您将此受众发布到平台时，您只能在这个沙盒的范围内使用它。 |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. 双击受众配置，然后单击&#x200B;**[!UICONTROL 发布]**。
 
@@ -82,19 +82,20 @@ ht-degree: 100%
 
 ## 延迟注意事项 {#latency}
 
-在受众发布之前、期间和之后的几个时间点，可能会出现延迟。以下是对可能出现的延迟情况的概述。
+在受众发布之前、期间和之后的几个时间点，可能会发生延迟。 以下是对可能出现的延迟情况的概述。
 
-![](assets/latency-diagram.png)
+![从AEP到CJA的延迟](assets/latency-diagram.png)
 
 | # | 延迟点 | 延迟持续时间 |
 | --- | --- | --- |
-| 1 | 将数据引入数据湖 | 最多 30 分钟 |
-| 2 | 将数据从 Experience Platform 引入 CJA | 最多 60 分钟 |
+| 未显示 | Adobe Analytics到Analytics源连接器(A4T) | 最多 30 分钟 |
+| 1 | 数据摄取到数据湖（从Analytics源连接器或其他源） | 最多 90 分钟 |
+| 2 | 从Experience Platform数据湖向CJA中摄取数据 | 最多 90 分钟 |
 | 3 | 受众发布到实时客户配置文件，包括自动创建流式区段，并可让区段准备好接收数据。 | 约 60 分钟 |
 | 4 | 受众的刷新频率 | <ul><li>一次性刷新（延迟小于 5 分钟）</li><li>每 4 小时、每天、每周、每月刷新一次（延迟与刷新率密切相关） |
 | 5 | 在 AEP 中创建目标：激活新的区段 | 1-2 小时 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 在 Experience Platform 中使用 CJA 受众 {#audiences-aep}
 
@@ -130,7 +131,7 @@ CJA 可以从您发布的受众中获取所有的命名空间和 ID 组合，并
 
 +++
 
-+++**CJA 是将受众数据作为管道事件发送，还是也发送到数据湖的平面文件？**
++++**CJA会将受众数据作为管道事件还是作为也会发送到数据湖的平面文件发送？**
 
 CJA 通过管道将数据流式传输到 RTCP 中，这些数据也被收集到数据湖中的系统数据集中。
 
@@ -138,7 +139,7 @@ CJA 通过管道将数据流式传输到 RTCP 中，这些数据也被收集到�
 
 +++**CJA 发送了哪些身份？**
 
-[连接设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans#create-connection)中使用的标识/命名空间对。具体来说，用户选择要用作其“个人 ID”的字段时的步骤。
+在 [连接设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans#create-connection). 具体来说，用户选择要用作其“个人 ID”的字段时的步骤。
 
 +++
 
