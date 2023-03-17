@@ -3,16 +3,16 @@ description: 了解如何创建指向项目或可视化图表的可共享链接
 keywords: Analysis Workspace 共享
 title: 创建可共享链接
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
-source-git-commit: c419d304e6af77fb61b756aa59faeae88a7c29d5
+source-git-commit: 29f65709a3cca89e3fbabe978e65e25e0c546c10
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 81%
+source-wordcount: '338'
+ht-degree: 80%
 
 ---
 
 # 创建可共享链接
 
-Analysis Workspace 提供了多种将项目共享给用户的方法，包括能够获得指向项目或项目特定部分的链接。某些链接类型要求收件人先登录Adobe Analytics才能访问项目，而其他链接类型则不需要。
+Analysis Workspace 提供了多种将项目共享给用户的方法，包括能够获得指向项目或项目特定部分的链接。某些链接类型要求收件人在访问项目之前登录到Adobe Analytics，而其他链接类型则不要。
 
 ## 获取项目链接 {#project-link}
 
@@ -20,13 +20,13 @@ Analysis Workspace 提供了多种将项目共享给用户的方法，包括能�
 
 ![](assets/get-project-link.png)
 
-## 获取公共链接
+## 获取可与任何人共享的只读链接
 
 {{release-limited-testing-section}}
 
-您可以与无权访问Analysis Workspace的用户共享指向Adobe Analytics项目的仅查看链接。
+您可以与无权访问Analysis Workspace的人员共享指向该项目的只读链接。
 
-有关更多信息，请参阅文章中的“与任何人共享公共链接（无需登录）” [共享项目](/help/analysis-workspace/curate-share/share-projects.md).
+有关更多信息，请参阅文章中的“与任何人共享项目（无需登录）” [共享项目](/help/analysis-workspace/curate-share/share-projects.md).
 
 ## 获取面板或可视化图表链接 {#panel-link}
 
