@@ -3,7 +3,7 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新 CJA 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: f3233f0be1fb455535af4532fe32b5db8560fb62
+source-git-commit: 53a1dd1537cbd862dafabcbaf8af9e4baa07c529
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 72%
@@ -20,11 +20,11 @@ Customer Journey Analytics 版本在[持续交付模型](releases.md)上运行�
 
 | 功能 | 描述 | [开始推出](/help/release-notes/releases.md) | [正式发布](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
-| **Analysis Workspace 中的数据词典** | 数据词典可帮助用户和管理员跟踪并更好地了解其 CJA 环境中的组件（如维度、量度等）。[了解详情](/help/components/data-dictionary/data-dictionary-overview.md) | 2023 年 3 月 8 日 | 2023 年 3 月 22 日 |
+| **Analysis Workspace 中的数据词典** | 数据词典可帮助用户和管理员跟踪并更好地了解其 CJA 环境中的组件（如维度、量度等）。[了解详情](/help/components/data-dictionary/data-dictionary-overview.md) | 2023 年 3 月 8 日 | 2023 年 3 月 29 日 |
 | **移动仪表板中的数据故事** | 数据故事让您可以将多个可自定义的详细信息视图添加到移动记分卡项目中的图块。使用数据故事深入了解关键驱动因素、相关指标以及客户历程中的不同步骤。您可以轻松浏览这些视图以了解关键指标背后的整个故事。[了解详情](/help/mobile-app/create-scorecard.md#create-data-story) | 不适用 | 2023 年 3 月 8 日 |
 | **计划项目的过期日期** | 无论计划频率如何，您都可以将计划项目的最长到期日期设置为最多一年。[了解详情](/help/analysis-workspace/curate-share/t-schedule-report.md) | 不适用 | 2023 年 3 月 8 日 |
 | **项目链接共享（无需登录）- 仅限访问 Private Beta** | 您现在可以与无权访问 CJA 的人员共享 Analysis Workspace 项目的只读链接。您可以与组织外的人员或组织内未配置 CJA 的人员共享项目链接。[了解详情](/help/analysis-workspace/curate-share/share-projects.md)<p>要加入 Private Beta，请联系您的 Adobe 账户团队。 | 2023 年 3 月 15 日 (Private Beta) | 2023 年 4 月 |
-| **面板日期范围更新** | 在 Workspace 中，我们对以下方面作出了改进：<ul><li>从2月版开始，维度项目和数据预览基于面板日期范围，而不是最近90天。 </li><li>列出的所有维度项都基于面板日期范围内的数据。 如果维度项的数据超出日期范围，则可以在列表底部显示超出日期范围的其他数据。</li><li>没有数据的Dimension可以显示在左边栏中。 单击显示更多选项以查看数据在面板日期范围之外的维度项。</li><li>区段和计算量度生成器中的数据预览基于面板日期范围，除非从组件管理器访问，组件管理器没有关联的面板，并且仍基于过去90天。</li><li>数据预览根据面板日期范围显示数据或组件。</li></ul> | 不适用 | 2023 年 2 月 8 日 |
+| **面板日期范围更新** | 在 Workspace 中，我们对以下方面作出了改进：<ul><li>从2月版开始，维度项目和数据预览基于面板日期范围，而不是最近90天。 </li><li>列出的所有维度项目都基于面板日期范围内的数据。 如果维度项目的数据超出日期范围，您可以在列表底部显示超出日期范围的其他数据。</li><li>没有Dimension的数据可显示在左边栏中。 单击显示更多选项可查看在面板日期范围外包含数据的维度项目。</li><li>区段和计算量度生成器中的数据预览基于面板日期范围，除非从组件管理器进行访问，组件管理器没有关联的面板，并且仍基于过去90天。</li><li>数据预览基于面板日期范围显示数据或组件。</li></ul> | 不适用 | 2023 年 2 月 8 日 |
 
 {style="table-layout:auto"}
 
