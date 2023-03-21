@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: 项目概述
 feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '1165'
-ht-degree: 100%
+source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+workflow-type: tm+mt
+source-wordcount: '1427'
+ht-degree: 81%
 
 ---
 
@@ -21,22 +21,40 @@ ht-degree: 100%
 
 ![](assets/sample-project.png)
 
-Workspace 项目列表页面包含了以下信息：
+“项目”页面包含以下信息：
+
+>[!NOTE]
+>
+>默认情况下，某些列不显示。 要自定义您看到的列，请单击 **自定义表** 图标 ![自定义表](assets/projects-page-customize-columns-icon.png).
+
 
 | 元素 | 描述 |
 |---|---|
-| [创建新项目](/help/analysis-workspace/home.md) | 单击此链接可重新启动一个新项目。 |
-| 管理项目 | 单击此链接将会转到项目组件管理器（**[!UICONTROL Analytics]** > **[!UICONTROL 组件]** > **[!UICONTROL 项目]**），其中列出了您的所有项目，并允许您标记、共享、删除、重命名、批准、复制项目以及将项目导出到 CSV。 |
-| 设置为登陆页面 | 将此页面变为您的 Workspace 登陆页面。 |
-| [查看教程](/help/analysis-workspace/home.md) | 带您查看 Analysis Workspace 视频教程。 |
+| [编辑偏好设置](/help/analysis-workspace/user-preferences.md) | 管理您创建的所有新项目或面板的Analysis Workspace及其相关组件的设置。 |
+| [创建文件夹](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | 向项目和文件夹列表中添加新文件夹或子文件夹。 |
+| [创建项目](/help/analysis-workspace/home.md) | 从头开始或从 [模板](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#analysis-workspace?lang=zh-Hans). |
+| 管理项目 <!--I don't see this option--> | 单击此链接将会转到项目组件管理器（**[!UICONTROL Analytics]** > **[!UICONTROL 组件]** > **[!UICONTROL 项目]**），其中列出了您的所有项目，并允许您标记、共享、删除、重命名、批准、复制项目以及将项目导出到 CSV。 |
+| 设置为登陆页面 <!--I don't see this option--> | 将此页面变为您的 Workspace 登陆页面。 |
+| 展开 | 显示用于创建空白项目或移动记分卡的选项， [查看培训教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=zh-Hans)或 [查看发行说明](/help/release-notes/latest.md). |
+| 显示文件夹和项目 | 选择是否显示项目的文件夹结构。 有关更多信息，请参阅[关于 Analytics 中的文件夹](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)。 |
+| 自定义表（图标） | 允许您自定义在“项目”页面上为每个项目显示的信息。 |
 | 名称 | Workspace 项目名称。 |
-| 所有者 | 创建此项目的人员（您或与您共享此项目的人员）。 |
-| 类型 | 指示这是 Workspace 项目还是[移动记分卡](/help/mobile-app/home.md)。 |
-| [项目角色](/help/analysis-workspace/curate-share/share-projects.md) | 指示您在项目中的角色 — 所有者、编辑、复制、查看。 |
+| 类型 | 指示这是工作区项目、文件夹还是 [移动记分卡](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html?lang=zh-Hans). |
 | 标记 | 应用于项目的标记。 |
+| 已计划 | 指示是否计划按计划通过电子邮件将项目发送给收件人。 请参阅 [计划项目](/help/analysis-workspace/curate-share/t-schedule-report.md). |
+| 共享链接（任何人） | 项目可以与任何人共享 — 即使是与无权访问Analysis Workspace的人共享。 此列显示项目是否已通过这种方式共享。 请参阅 [与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [共享项目](/help/analysis-workspace/curate-share/share-projects.md) 以了解更多信息。 |
+| 报表包 | 与项目关联的报表包。 |
+| [项目角色](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=zh-Hans) | 指示您在项目中的角色 — 所有者、编辑、复制、查看。 |
+| 所有者 | 创建此项目的人员（您或与您共享此项目的人员）。 |
+| 共享对象 | 与项目共享的用户。 |
 | 上次修改时间 | 项目上次修改的日期和时间。 |
-| 我收藏的项目 | 要将项目标为收藏，请打开该项目，然后单击其名称旁的星标。下载打开 Workspace 时，它就会出现在此列表中。 |
-| 经常查看的项目 | 列出您经常打开的所有项目以方便访问。 |
+| 上次打开 | 项目上次打开的日期和时间。 |
+| 项目ID | 项目的ID。 |
+| Longest Date Range | 项目的最长日期范围。 |
+| 查询次数 | 项目中包含的查询总数。 |
+| 位置 | 项目所在的文件夹。 |
+| 我收藏的项目 <!--I don't see this option--> | 要将项目标为收藏，请打开该项目，然后单击其名称旁的星标。下载打开 Workspace 时，它就会出现在此列表中。 |
+| 经常查看的项目 <!--I don't see this option--> | 列出您经常打开的所有项目以方便访问。 |
 
 ## 菜单栏 {#menu-bar}
 
@@ -106,7 +124,7 @@ Workspace 项目列表页面包含了以下信息：
 | 操作 | 描述 |
 |---|---|
 | 添加 | 从头开始创建一个新项目。 |
-| 标记或批准 | 选择“标记”或“批准”以组织您的项目并使其更容易搜索。 |
+| 标记或批准 | 选择“标记”或“批准”以组织项目并使其更易于搜索。 |
 | [共享](/help/analysis-workspace/curate-share/share-projects.md) | 使项目可供您所在组织中的其他 Analysis Workspace 用户使用。 |
 | 删除 | 删除项目。 |
 | 重命名 | 编辑项目的名称。 |

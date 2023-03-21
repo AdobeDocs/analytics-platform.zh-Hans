@@ -3,7 +3,7 @@ description: Analysis Workspace 中的数据词典允许用户对 Analysis Works
 title: 数据词典概述
 feature: Components
 role: User, Admin
-source-git-commit: 5d6942af4ac3f999c5e7fd7d6ba74a5fe7a26a9d
+source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 90%
@@ -11,8 +11,6 @@ ht-degree: 90%
 ---
 
 # 数据词典概述
-
-{{release-limited-testing}}
 
 Analysis Workspace 中的数据词典可帮助用户和管理员跟踪并更好地了解其 Analytics 环境中的组件。
 
@@ -71,9 +69,9 @@ Analytics 管理员负责整理有关数据词典中每个组件的信息，并�
 
 ## 更新和整理数据词典
 
-Customer Journey Analytics管理员负责为其组织维护健康的数据字典，如中所述 [监测数据字典运行状况](/help/components/data-dictionary/monitor-data-dictionary-health.md).
+Customer Journey Analytics管理员负责维护其组织的正常数据字典，如 [监视数据字典运行状况](/help/components/data-dictionary/monitor-data-dictionary-health.md).
 
-在此过程中，CJA管理员可以编辑数据字典中有关每个组件的信息，如中所述 [编辑数据字典中的组件条目](/help/components/data-dictionary/edit-entries-data-dictionary.md).
+在此过程中，CJA管理员可以编辑有关数据字典中每个组件的信息，如 [编辑数据字典中的组件条目](/help/components/data-dictionary/edit-entries-data-dictionary.md).
 
 ## 移动、最小化或关闭数据词典
 

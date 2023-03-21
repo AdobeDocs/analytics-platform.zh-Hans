@@ -3,18 +3,16 @@ description: Analysis Workspace 中的数据词典允许用户对 Analysis Works
 title: 编辑数据词典中的条目
 feature: Components
 role: Admin
-source-git-commit: 5929d56bef8f756967926482f80014db0d43d3e3
+source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 92%
+source-wordcount: '293'
+ht-degree: 70%
 
 ---
 
 # 编辑数据词典中的组件条目
 
-{{release-limited-testing}}
-
-Customer Journey Analytics管理员可以在数据字典中编辑给定报表包的组件条目。 报告包的所有用户都可以看到所做的任何更改。
+Customer Journey Analytics管理员可以编辑给定报表包的数据字典中的组件条目。 报告包的所有用户都可以看到所做的任何更改。
 
 要编辑数据词典中的组件：
 
@@ -29,6 +27,8 @@ Customer Journey Analytics管理员可以在数据字典中编辑给定报表包
 1. 确保在下拉菜单中选择了正确的报告包。默认情况下，会显示您已在使用的报告包。
 
 1. （可选）在搜索字段中，开始键入要编辑的组件的名称。
+
+   组件类型可通过颜色和图标进行标识。 **Dimension** ![Dimension图标](assets/dimension-icon.png) 橙色， **区段** ![区段图标](assets/segment-icon.png) 是蓝色的， **日期范围** ![日期范围图标](assets/date-range-icon.png) 是紫色的， **量度** ![“量度”图标](assets/default-metric-icon.png) 为绿色。 Adobe图标 ![Adobe图标](assets/default-calc-metric-icon.png) 指示计算量度模板或区段模板以及计算器图标 ![计算器图标](assets/calculated-metric-icon-created.png) 指示了由您组织中的Analytics管理员创建的计算量度。
 
 {{dd-filter-criteria}}
 
