@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: 项目概述
 feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+source-git-commit: c378a7d39c3d2ae388bc3cf2fa1bbc693b0bccb3
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 81%
+source-wordcount: '1333'
+ht-degree: 80%
 
 ---
 
@@ -33,8 +33,6 @@ ht-degree: 81%
 | [编辑偏好设置](/help/analysis-workspace/user-preferences.md) | 管理您创建的所有新项目或面板的Analysis Workspace及其相关组件的设置。 |
 | [创建文件夹](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | 向项目和文件夹列表中添加新文件夹或子文件夹。 |
 | [创建项目](/help/analysis-workspace/home.md) | 从头开始或从 [模板](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#analysis-workspace?lang=zh-Hans). |
-| 管理项目 <!--I don't see this option--> | 单击此链接将会转到项目组件管理器（**[!UICONTROL Analytics]** > **[!UICONTROL 组件]** > **[!UICONTROL 项目]**），其中列出了您的所有项目，并允许您标记、共享、删除、重命名、批准、复制项目以及将项目导出到 CSV。 |
-| 设置为登陆页面 <!--I don't see this option--> | 将此页面变为您的 Workspace 登陆页面。 |
 | 展开 | 显示用于创建空白项目或移动记分卡的选项， [查看培训教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=zh-Hans)或 [查看发行说明](/help/release-notes/latest.md). |
 | 显示文件夹和项目 | 选择是否显示项目的文件夹结构。 有关更多信息，请参阅[关于 Analytics 中的文件夹](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)。 |
 | 自定义表（图标） | 允许您自定义在“项目”页面上为每个项目显示的信息。 |
@@ -53,8 +51,6 @@ ht-degree: 81%
 | Longest Date Range | 项目的最长日期范围。 |
 | 查询次数 | 项目中包含的查询总数。 |
 | 位置 | 项目所在的文件夹。 |
-| 我收藏的项目 <!--I don't see this option--> | 要将项目标为收藏，请打开该项目，然后单击其名称旁的星标。下载打开 Workspace 时，它就会出现在此列表中。 |
-| 经常查看的项目 <!--I don't see this option--> | 列出您经常打开的所有项目以方便访问。 |
 
 ## 菜单栏 {#menu-bar}
 
