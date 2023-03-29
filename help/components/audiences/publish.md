@@ -2,10 +2,10 @@
 title: 创建受众并将受众发布到实时客户档案
 description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 60f9c81699f9a8e1657da4bd806d04f9f8adaa99
+source-git-commit: 28c56e7f33960c75ab6ca87fcbc0d1fb61d2f107
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 94%
+source-wordcount: '1502'
+ht-degree: 90%
 
 ---
 
@@ -154,6 +154,19 @@ CJA 通过管道将数据流式传输到 RTCP 中，这些数据也被收集到�
 否。我们只为每个“人”发送一个标识，因此 RTCP 不会使用任何图边。
 
 +++
+
++++**每天、每周和每月的刷新发生在一天中的哪个时间？ 每周刷新在一周的哪一天发生？**
+
+刷新的时间取决于原始受众的发布时间，以及该时间（以及每周或月中的某天）的锚点。
+
++++
+
++++**用户是否可以配置每日、每周和每月的刷新时间？**
+
+不能，用户无法配置它们。
+
++++
+
 
 ## 后续步骤
 
