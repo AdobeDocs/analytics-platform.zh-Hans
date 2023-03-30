@@ -4,10 +4,10 @@ keywords: Analysis Workspace 共享
 title: 共享项目
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+source-git-commit: bf067ca57564bad72640c6bb5eb1c376ad818d3e
 workflow-type: tm+mt
-source-wordcount: '1574'
-ht-degree: 63%
+source-wordcount: '1655'
+ht-degree: 60%
 
 ---
 
@@ -123,6 +123,10 @@ ht-degree: 63%
 >* CJA管理员可以禁用以这种方式共享项目的功能，如 [首选项](/help/analysis-workspace/user-preferences.md). 如果无法按本节所述共享项目，则CJA管理员已禁用此功能。
 >
 >* 无法与无法访问CJA的人员共享具有超过14个扩展可视化的项目。
+>
+>* 与您共享的用户可以查看在 [策划](curate.md).
+> 
+>* 您与共享的用户可以更改项目日期范围。 默认情况下，会显示您为项目设置的日期范围。
 
 
 要与任何人共享Analysis Workspace项目，请执行以下操作：
@@ -154,6 +158,8 @@ ht-degree: 63%
 1. 与您希望拥有项目访问权限的人员共享该链接。 例如，您可以将链接粘贴到电子邮件中。
 
    与您共享该链接的任何人都可以查看Analysis Workspace项目。
+
+1. （可选）您可以单击 **生成新链接** 图标 ![生成链接图标](assets/regenerate-link.png) 删除之前收到项目链接的用户的访问权限。 系统会生成一个新链接，您可以与想要访问该项目的用户共享该链接。
 
 1. 选择 **[!UICONTROL 关闭]** 关闭“共享”对话框。 您的更改将自动保存。
 
