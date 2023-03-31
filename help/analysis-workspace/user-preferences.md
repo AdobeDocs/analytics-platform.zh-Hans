@@ -4,10 +4,10 @@ description: 可设置用户的常规和项目首选项。
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: bf067ca57564bad72640c6bb5eb1c376ad818d3e
+source-git-commit: 2d96b246ecee6ce447b5a03216e093b71a83a8ac
 workflow-type: tm+mt
-source-wordcount: '3015'
-ht-degree: 82%
+source-wordcount: '3139'
+ht-degree: 79%
 
 ---
 
@@ -186,7 +186,7 @@ ht-degree: 82%
 | 部分 | 首选项 | 选项 |
 | --- | --- | --- |
 | **项目共享** |  |  |
-|  | 仅允许与 Workspace 用户共享 | <p>启用此选项后：</p> <ul><li><p>“与任何人共享”选项将从“共享”菜单中移除。 这意味着用户无法再像 [与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [共享项目](/help/analysis-workspace/curate-share/share-projects.md).</p></li> <li><p>以前通过“与任何人共享”共享选项获得项目访问权限的人员无法再访问该项目。</p></li><p>**注意：** 如果启用了此选项（仅允许与工作区用户共享），然后禁用了此选项（允许与任何人共享），则之前通过“与任何人共享”选项获得项目访问权限的人员不会自动重新获得对项目的访问权限。 在这种情况下，共享项目的用户必须启用 [!UICONTROL **链接处于活动状态**] 与任何人共享项目时可用的选项([!UICONTROL **共享**] > [!UICONTROL **与任何人共享**])，如 [与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [共享项目](/help/analysis-workspace/curate-share/share-projects.md).</p> |
+|  | 仅允许与 Workspace 用户共享 | <p>启用此选项后，您组织中的用户在“共享”菜单中看不到“与任何人共享”选项。 这意味着用户无法与组织中没有Analysis Workspace帐户的人员共享项目，如 [与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [共享项目](/help/analysis-workspace/curate-share/share-projects.md).</p><p>默认情况下，除医疗保健行业的组织外，所有组织都会禁用此选项。 </p><p>启用或禁用此选项时，请考虑以下事项：</p> <ul><li><p>启用此选项后，之前通过“与任何人共享”共享选项获得项目访问权限的人员将无法再访问该项目。</p></li><li><p>如果启用了此选项（仅允许与工作区用户共享），然后禁用了此选项（允许与任何人共享），则之前通过“与任何人共享”选项获得项目访问权限的人员不会自动重新获得对项目的访问权限。 在这种情况下，共享项目的用户必须启用 [!UICONTROL **链接处于活动状态**] 与任何人共享项目时可用的选项([!UICONTROL **共享**] > [!UICONTROL **与任何人共享**])，如 [与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [共享项目](/help/analysis-workspace/curate-share/share-projects.md).</p></li><li><p>**对于医疗保健行业中的组织：** 默认情况下，此选项处于启用状态并灰显。 在禁用此选项以便用户能够使用“与任何人共享”共享选项之前，您首先需要添加 [!UICONTROL **与任何人共享项目链接**] 权限(位于 [!UICONTROL **报表工具**])。 添加权限后，您可以禁用此选项，然后接受生成的法律声明。 有关如何在Admin Console中添加权限的信息，请参阅 [在Admin Console中管理产品权限](https://helpx.adobe.com/cn/enterprise/using/manage-permissions-and-roles.html).</p></li> |
 |  | 需要 Experience Cloud 身份验证 | <p>启用后，在Analysis Workspace中通过“与任何人共享”选项授予项目访问权限的人员必须使用其Experience Cloud凭据进行身份验证。</p> <p>启用此选项后，每当用户使用“与任何人共享”共享选项共享项目时，“需要Experience Cloud身份验证”选项都会在共享对话框中启用，并且共享项目的用户无法禁用该选项。 (有关用户如何与任何人共享项目的信息，请参阅 [与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [共享项目](/help/analysis-workspace/curate-share/share-projects.md).)</p> <p>启用此选项时，请考虑以下事项：</p><ul><li><p>启用此选项后，之前与“与任何人共享”共享选项共享且未启用“需要Experience Cloud身份验证”选项的所有项目都将被停用。</p></li> <li><p>如果启用了此选项(需要Experience Cloud身份验证)，然后又禁用了此选项（允许具有链接的任何人访问项目），则之前通过“与任何人共享”选项接收项目访问权限的人员不会自动重新获得项目访问权限。 在这种情况下，共享项目的用户必须启用“链接处于活动状态”选项，该选项可在与任何人共享项目时使用([!UICONTROL **共享**] > [!UICONTROL **与任何人共享**] > [!UICONTROL **链接处于活动状态**])，如 [与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [共享项目](/help/analysis-workspace/curate-share/share-projects.md).</p></li> <li><p>此选项仅在贵组织中实施了SSO时可用。 有关系统管理员如何为您的组织启用单点登录(SSO)的信息，请参阅 [设置身份和单点登录](https://helpx.adobe.com/cn/enterprise/using/set-up-identity.html){target=_blank}.</p><p>如果为贵组织配置了SSO，请检查是否在控制台中实施了任何类型的自动帐户创建。 通常，系统管理员会设置此设置，如 [启用自动帐户创建](https://helpx.adobe.com/enterprise/using/automatic-account-creation.html){target=_blank}.</p></li><li><p>如果贵组织所在的行业需要符合HIPAA合规性，则此选项将自动启用，并且无法禁用。</p></li></ul> |
 
 {style="table-layout:auto"}
