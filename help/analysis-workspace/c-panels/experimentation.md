@@ -3,10 +3,10 @@ description: 了解如何在 CJA 试验面板中分析 A/B 测试结果。
 title: 试验性面板
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 967348b321525c50b292339de875fd4976d8b10a
+source-git-commit: 54d8cf211a5a4bc3ffde5e24c29089125fc35362
 workflow-type: tm+mt
-source-wordcount: '1393'
-ht-degree: 100%
+source-wordcount: '1833'
+ht-degree: 75%
 
 ---
 
@@ -18,17 +18,21 @@ ht-degree: 100%
 >
 >如今，通过分析源连接器引入 Adobe Experience Platform 的 [Adobe Analytics for Target ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html)(A4T) 数据&#x200B;**无法**&#x200B;在[!UICONTROL 试验]面板中分析。我们期待能够在 2023 年解决这一问题。
 
-## 访问控制
+## 访问控制 {#access}
 
 试验面板可供所有 Customer Journey Analytics (CJA) 用户使用。不需要管理员权限或其他权限。但是，设置流程中（下面的步骤 1 和 2）需要只有管理员才能执行的操作。
 
-## 步骤 1：创建与试验数据集的连接
+## 计算指标中新增了函数 {#functions}
+
+添加了两个新的高级函数：[!UICONTROL 提升]和[!UICONTROL 置信度]。有关详细信息，请参阅[参考 - 高级函数](/help/components/calc-metrics/cm-adv-functions.md)。
+
+## 步骤 1：创建与试验数据集的连接 {#connection}
 
 推荐的数据架构将试验数据放在一个[对象数组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=zh-Hans)中，该数组在两个单独的维度中包含试验数据和变体数据。 如果将试验数据放在单个维度中，其中在一个字符串中分隔试验数据和变体数据，则可在数据视图中使用[子字符串](/help/data-views/component-settings/substring.md)设置将这些数据一分为二以用于面板中。
 
 在 Adobe Experience Platform [吸收](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans)您的试验数据后，[在 CJA ](/help/connections/create-connection.md)中创建与一个或多个试验数据集的连接。
 
-## 步骤 2：在数据视图中添加上下文标签
+## 步骤 2：在数据视图中添加上下文标签 {#contect-labels}
 
 在 CJA 数据视图设置中，管理员可以向维度或量度添加[上下文标签](/help/data-views/component-settings/overview.md)，并且 CJA 服务（如[!UICONTROL 试验]面板）可以使用这些标签。试验面板使用两个预定义标签：
 
@@ -41,7 +45,7 @@ ht-degree: 100%
 
 如果没有这些标签，则由于没有试验可使用，因此“试验”面板不工作。
 
-## 步骤 3：配置试验面板
+## 步骤 3：配置试验面板 {#configure}
 
 1. 在 CJA 工作区中，将试验面板拖动到项目中。
 
@@ -62,7 +66,7 @@ ht-degree: 100%
 
 1. 单击&#x200B;**[!UICONTROL 生成]**。
 
-## 第 4 步：查看面板输出
+## 第 4 步：查看面板输出 {#view}
 
 试验面板会返回一组丰富的数据和可视化图表，帮助您更好地了解试验的执行情况。在该面板顶部，提供了一个摘要行，用于提醒您选择的面板设置。在任何时候，您都可以通过单击右上角的编辑铅笔来编辑面板。
 
@@ -80,7 +84,7 @@ ht-degree: 100%
 >
 >此面板当前不支持分析 A/A 测试。
 
-## 第 5 步：诠释结果
+## 第 5 步：诠释结果 {#interpret}
 
 1. **试验具有结论性**：每次查看试验报告时，Adobe 都分析到目前为止已在试验中积累的数据，并将在&#x200B;*至少一个*&#x200B;变体的任意时间有效置信度超过 95% 这一阈值时宣称某个试验具有“结论性”（当有两臂以上时，将应用邦费罗尼校正以针对多重假设检验进行校正）。
 
@@ -96,7 +100,7 @@ ht-degree: 100%
 >
 >全面描述结果应考虑所有可获得的证据（如试验设计、样本量、转化率、置信度等），而不仅声明是否具有结论性。即使结果尚未具有“结论性”，仍可能有令人信服的证据（例如，置信区间几乎不重叠）表明一个变体与另一个变体不同。理想情况下，所有统计证据都应影响决策，并在一个连续的范围上诠释决策。
 
-## Adobe 的统计方法
+## Adobe 的统计方法 {#statistics}
 
 为了提供易于解释且安全的统计推断，Adobe 采用了基于[随时有效置信序列（Anytime Valid Confidence Sequences）](https://doi.org/10.48550/arXiv.2103.06476)的统计方法。
 
@@ -104,6 +108,20 @@ ht-degree: 100%
 
 95% 置信度序列将包括您运行的 100 次实验中的 95 次实验中业务量度的“真”值。（每个试验只能计算一次 95% 置信区间，以提供相同的 95% 覆盖率保证；而不是计算每个新用户）。因此，通过使用置信序列，您可以连续监控试验，而不会增加假阳性错误率，即这些序列允许“窥视”结果。
 
-## 计算指标中新增了函数
+## 解释非随机维度 {#non-randomized}
 
-添加了两个新的高级函数：[!UICONTROL 提升]和[!UICONTROL 置信度]。有关详细信息，请参阅[参考 - 高级函数](/help/components/calc-metrics/cm-adv-functions.md)。
+CJA允许分析人员选择任何维度作为“实验”。 但是，您如何解读一种分析，其中选择的实验维度不是随机访客的维度？
+
+例如，以访客看到的广告为例。 如果您决定向访客显示“广告B”而不是“广告A”，则您可能有兴趣测量某些量度（例如平均收入）的更改。 显示广告B代替广告A的因果效应对于制定营销决策至关重要。 如果我们用显示广告A的替代策略替换显示广告B的现状，则此因果效应可以以整个人口的平均收入来衡量。
+
+A/B测试是行业内客观衡量此类干预措施效果的金本位。 A/B测试产生因果估计的关键原因是访客随机接收其中一个可能变体。
+
+现在，考虑一个不是通过随机化实现的维度，例如访客所在的美国州。 假设我们的访客主要来自纽约和加利福尼亚这两个州。 冬季服装品牌的平均销售收入在两个州可能因区域天气的不同而有所不同。 在这种情况下，天气可能是冬季服装销售背后的真正原因因素，而不是访客的地理状态不同。
+
+通过Customer Journey Analytics中的实验面板，您可以按访客状态分析平均收入差异的数据。 在这种情况下，产出没有因果解释。 然而，这种分析可能仍然很有意义。 它提供按访客状态划分的平均收入差异的估计值（以及不确定度的度量值）。 这也称为“统计假设测试”。 此分析的输出结果可能很有趣，但不一定是可操作的，因为我们没有、有时无法将访客随机排列到维度的一个可能值。
+
+下图对比了以下情况：
+
+![随机实验](assets/randomize.png)
+
+如果要测量干预X对结果Y的影响，则两者的真正原因可能是混淆因素C。如果数据不是通过在X上随机访客来实现，则影响将更难衡量，分析将明确考虑C。随机化会破坏X对C的依赖性，使我们能够测量X对Y的影响，而无需担心其他变量。
