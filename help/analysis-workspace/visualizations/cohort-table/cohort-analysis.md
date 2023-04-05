@@ -3,10 +3,10 @@ title: 什么是同类群组分析？
 description: 了解 Analysis Workspace 中的同类群组分析
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '468'
-ht-degree: 100%
+source-git-commit: 5dd25745f3ae872a70f60c53a1340ba59552665d
+workflow-type: tm+mt
+source-wordcount: '467'
+ht-degree: 91%
 
 ---
 
@@ -30,10 +30,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->[!UICONTROL 同类群组分析]
->
->不支持不可过滤的量度（包括计算量度）、非整数量度（如“收入”）以及“发生次数”量度。只有可在过滤器中使用的量度才能用于
->[!UICONTROL 同类群组分析]，并且这些指标一次只能增加 1 个单位。
+>[!UICONTROL 同类群组分析] 不支持不可过滤的量度（包括计算量度）、非整数量度（如收入）或发生次数。 只有可在过滤器中使用的量度才能用于 [!UICONTROL 同类群组分析]，并且这些值一次只能递增1。
 
 ## 同类群组分析功能
 
