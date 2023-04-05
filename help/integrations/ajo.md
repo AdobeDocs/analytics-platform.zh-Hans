@@ -2,10 +2,10 @@
 title: 将 Adobe Journey Optimizer (AJO) 与 Customer Journey Analytics (CJA) 集成
 description: 引入 AJO 生成的数据，并在 CJA 中使用 Analysis Workspace 分析这些数据。
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
-source-git-commit: 750e96bdf6f020e0f5c0fbaf95cdd10c42b95e55
+source-git-commit: 933f3f0336c325bf0973a0379532b3e19f1c6d68
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 89%
+source-wordcount: '744'
+ht-degree: 84%
 
 ---
 
@@ -21,15 +21,20 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 
 ## 在 Customer Journey Analytics 中创建连接
 
-一旦 Journey Optimizer 数据进入 Adobe Experience Platform，即可根据 Journey Optimizer 数据集[创建连接](/help/connections/create-connection.md)。选择已发送到 Platform 的数据集。
+将Journey Optimizer数据放入Adobe Experience Platform后，您可以 [创建连接](/help/connections/create-connection.md) 基于Journey Optimizer数据集。 或者，也可以将Journey Optimizer数据集添加到现有连接。
+
+选择并配置以下数据集：
 
 | 数据集 | 数据集类型 | 连接设置 | 描述 |
 | --- | --- | --- | --- |
-| AJO消息反馈事件数据集 | 事件 | 人员 ID: `IdentityMap` | 包含消息投放事件，例如“[!UICONTROL 发送]&#39;和&#39;[!UICONTROL 跳出次数]&#39;. |
-| AJO电子邮件跟踪体验事件数据集 | 事件 | 人员 ID: `IdentityMap` | 包含电子邮件跟踪事件，例如“[!UICONTROL 打开次数]&#39;， &#39;[!UICONTROL 点击次数]&#39;和&#39;[!UICONTROL 取消订阅]&#39;. |
-| AJO推送跟踪体验事件数据集 | 事件 | 人员 ID: `IdentityMap` | 包含推送跟踪事件，如[!UICONTROL 应用程序启动次数]&#39;. |
-| 历程步骤事件 | 事件 | 人员 ID: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | 包含显示哪些用户档案参与了历程每个节点的事件。 |
-| AJO实体数据集 | 记录 | 密钥： `_id`<br>匹配键： `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | 包含将历程和促销活动元数据与所有AJO事件数据关联的分类。 |
+| AJO消息反馈事件数据集 | 事件 | 人员 ID: `IdentityMap` | 包含消息投放事件，如“[!UICONTROL 发送]&#39;和&#39;[!UICONTROL 跳出次数]&#39;。 |
+| AJO电子邮件跟踪体验事件数据集 | 事件 | 人员 ID: `IdentityMap` | 包含电子邮件跟踪事件，如“[!UICONTROL 打开]&#39;, &#39;[!UICONTROL 点击次数]&#39;和&#39;[!UICONTROL 取消订阅]&#39;。 |
+| AJO推送跟踪体验事件数据集 | 事件 | 人员 ID: `IdentityMap` | 包含推送跟踪事件，如“[!UICONTROL 应用程序启动次数]&#39;。 |
+| 历程步骤事件 | 事件 | 人员 ID: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | 包含显示哪些用户档案参与了历程的每个节点的事件。 |
+| AJO实体数据集 | 查询 | 键： `_id`<br>匹配键： `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | 包含将历程和促销活动元数据与所有AJO事件数据关联的分类。 |
+
+{style="table-layout:auto"}
+
 
 ## 配置数据视图以容纳 Journey Optimizer 维度和度量
 
