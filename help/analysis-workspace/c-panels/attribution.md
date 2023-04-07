@@ -3,16 +3,27 @@ title: 归因面板
 description: 在 Analysis Workspace 中如何使用和解读归因面板。
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '369'
-ht-degree: 100%
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+workflow-type: tm+mt
+source-wordcount: '516'
+ht-degree: 94%
 
 ---
 
 # 归因面板
 
-[!UICONTROL 归因]面板是一种简单的方式，用于构建分析来比较各种归因模型。它是 [Attribution IQ](../attribution/overview.md) 的一项功能，为您提供专用工作区来使用和比较归因模型。
+[!UICONTROL 归因]面板是一种简单的方式，用于构建分析来比较各种归因模型。该功能为您提供专用工作区来使用和比较归因模型。
+
+Customer Journey Analytics 通过让您能够执行以下操作来增强归因：
+
+* 定义付费媒体之外的归因：可将任何维度、量度、渠道或事件应用于模型（例如内部搜索），而不仅仅是营销活动。
+* 使用无限制的归因模型比较：动态比较任意所需数量的模型。
+* 避免实施更改：使用报告时间处理和上下文感知会话，可在运行时构建并应用客户历程上下文。
+* 构建与您的归因方案最匹配的会话。
+* 按过滤器划分归因：轻松对所有重要过滤器中的营销渠道效果进行比较（例如新客户与老客户、产品 X 与产品 Y、忠诚度级别或 CLV）。
+* 检查渠道交叉和多接触点分析：使用维恩图和直方图，以及趋势归因结果。
+* 直观地分析关键营销序列：通过多节点流量和流失可视化图表，以可视方式探索导致转化的路径。
+* 构建计算量度：使用任意数量的归因分配方法。
 
 ## 创建归因面板
 
@@ -25,7 +36,7 @@ ht-degree: 100%
 
    ![选择维度和量度](assets/attribution_panel2.png)
 
-1. 选择要比较的[归因模型和回顾时间范围](../attribution/models.md)。
+1. 选择要比较的归因模型和回顾窗口。
 
 1. “归因”面板会返回一组丰富的数据和可视化图表，其中对选定维度和度量进行了归因比较。
 

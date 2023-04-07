@@ -4,10 +4,10 @@ description: 在 Customer Journey Analytics 中就 Google Analytics 数据给出
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 17b9e14e58f5bd2f4ec995de54989b00c26076f2
-workflow-type: ht
-source-wordcount: '694'
-ht-degree: 100%
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+workflow-type: tm+mt
+source-wordcount: '680'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 应用“致电原因”的维度细分，该示例显示“损坏的产品”维度项目。下一步就是联系质量控制部门，了解客户为什么会收到损坏的 T 恤。
 
-您可以查看哪些网站页面将呼叫吸引到呼叫中心。该报告可让您了解网站上体验欠佳的地方，并帮助您的产品经理解决这些挑战。以下示例使用计算量度将数据过滤到仅以呼叫中心呼叫结束的会话。它还使用了 CJA [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html#cja-workspace) 中的“参与”模型。
+您可以查看哪些网站页面将呼叫吸引到呼叫中心。该报告可让您了解网站上体验欠佳的地方，并帮助您的产品经理解决这些挑战。以下示例使用带有参与归因模型的计算量度，将数据向下过滤到仅以呼叫中心呼叫结束的会话。
 
 以下示例显示“购物车”和“结帐信息”页面驱动了大部分调用。
 

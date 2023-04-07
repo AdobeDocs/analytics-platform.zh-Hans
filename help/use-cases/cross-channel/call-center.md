@@ -4,8 +4,8 @@ description: 了解如何创建数据集以关联呼叫中心数据和网站数�
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
-workflow-type: ht
+source-git-commit: fd5d7ae51b51e6f608428a032319a4d7d1f45a97
+workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 100%
 
@@ -83,7 +83,7 @@ CJA 需要使用通用标识符来生成[合并的数据集](/help/connections/c
 1. 将包含网页名称的维度拖到一个自由格式表可视化图表上。
 1. 将该指标替换为您要衡量的呼叫中心指标。
 1. 单击该量度标题附近的齿轮图标。单击&#x200B;**[!UICONTROL 使用非默认的归因模型]**。
-1. 设置所需的[归因模型](/help/analysis-workspace/attribution/models.md)。例如，半衰期为 15 分钟的时间衰减模型和会话的回溯时段。此归因模型将作用归于引起致电您的呼叫中心的页面。
+1. 设置所需的[归因模型](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)。例如，半衰期为 15 分钟的时间衰减模型和会话的回溯时段。此归因模型将作用归于引起致电您的呼叫中心的页面。
 
 所得的报表展示促使致电您的呼叫中心的前几名的页面。<!-- use case behind what we use these pages for -->
 

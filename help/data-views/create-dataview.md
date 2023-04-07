@@ -1,12 +1,12 @@
 ---
 title: 创建或编辑数据视图
 description: 为创建或编辑数据视图而可调整的所有设置。
-exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
+exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 2fa00c88cebde78a0a56d06aea3d4b6b268a0767
-workflow-type: ht
-source-wordcount: '1233'
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+workflow-type: tm+mt
+source-wordcount: '1224'
 ht-degree: 100%
 
 ---
@@ -19,14 +19,14 @@ ht-degree: 100%
 
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
 
-## 配置数据视图 {#configure}
+## 配置数据视图
 
 1. 登录到 [Customer Journey Analytics](https://analytics.adobe.com)，然后转到&#x200B;**[!UICONTROL 数据视图]**&#x200B;选项卡。
 2. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;以创建数据视图，或单击现有数据视图以编辑它。
 
 ![新建数据视图](assets/new-data-view.png)
 
-### 数据视图设置 {#settings}
+### 数据视图设置
 
 提供数据视图的总体设置。
 
@@ -36,9 +36,9 @@ ht-degree: 100%
 | [!UICONTROL 名称] | 必填。数据视图的名称。此值显示在 Analysis Workspace 右上角的下拉列表中。 |
 | [!UICONTROL 描述] | 可选。Adobe 建议输入详细描述，以便用户了解为什么存在该数据视图以及为谁设计了它。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-### 容器 {#containers}
+### 容器
 
 指定数据视图的容器的名称。经常在[过滤器](/help/components/filters/filters-overview.md#Filter-containers)中使用容器名称。
 
@@ -48,9 +48,9 @@ ht-degree: 100%
 | [!UICONTROL 会话容器名称] | [!UICONTROL 会话]（默认）。通过[!UICONTROL 会话]容器可以识别页面交互、营销活动或特定会话的转化。可将此容器重命名为“访问”或您的组织更喜欢的任何其他用语。 |
 | [!UICONTROL 事件容器名称] | [!UICONTROL 事件]（默认）。[!UICONTROL 事件]容器定义数据集中的个别事件。如果您的组织使用不同的用语（例如，“点击”或“页面查看”），可在此处将该容器重命名。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-### 日历 {#calendar}
+### 日历
 
 指示您希望数据视图遵循的日历格式。可有多个数据视图基于同一个[连接](/help/connections/create-connection.md)，并可为其赋予不同的日历类型或时区。这些数据视图可让使用不同日历类型的团队用相同的基础数据满足其各自的需求。
 
@@ -62,9 +62,9 @@ ht-degree: 100%
 | [!UICONTROL 当年的第一天] | 对自定义日历类型可见。指定要让当年在一年中的哪一天开始。日历自动根据此值设置每周第一天的格式。 |
 | [!UICONTROL 出现“额外的”一周的年份] | 对于大多数 364 天日历（52 周，每周 7 天），每年都会积累多出的天数，直到形成额外的一周。然后，将这额外的一周添加到当年的最后一个月。指定要将额外的一周添加到哪年。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## 设置数据视图的组件 {#set-components}
+## 设置数据视图的组件
 
 接下来，您可以根据架构元素创建量度和维度。您也可以使用标准组件。
 
@@ -95,13 +95,13 @@ ht-degree: 100%
    * [[!UICONTROL 持久性]](component-settings/persistence.md)
    * [[!UICONTROL 值分段]](component-settings/value-bucketing.md)
 
-## 重复的指标或维度 {#duplicate}
+## 重复的指标或维度
 
 复制指标或维度，然后修改特定设置，这是从单个架构字段创建多个指标或维度的简单方法。在指标或维度在右上角的名称下方选择[!UICONTROL 复制]设置。修改新维度或指标，并以更具描述性的名称保存它。
 
 ![复制](assets/duplicate.png)
 
-## 筛选架构字段或数据集 {#filter}
+## 筛选架构字段或数据集
 
 您可以按以下数据类型筛选左边栏中的架构字段：
 
@@ -111,19 +111,18 @@ ht-degree: 100%
 
 ![筛选其他](assets/filter-other.png)
 
-## 设置选项卡 {#settings-tab}
+## 设置选项卡
 
 1. 登录到 [Customer Journey Analytics](https://analytics.adobe.com)，然后转到&#x200B;**[!UICONTROL 数据视图]**&#x200B;选项卡。
 1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;以创建数据视图，或单击现有数据视图以编辑它。
 1. 单击&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡。
 
-### 全局过滤器 {#global-filter}
+### 全局过滤器
 
 可添加适用于整个数据视图的过滤器。此过滤器适用于您在 Workspace 中运行的任何报表。请将某个过滤器从左边栏中的列表拖至[!UICONTROL 添加过滤器]字段。
 
-### 会话设置 {#sessions}
+### 会话设置
 
 决定在会话到期并开始新会话之前，事件之间无活动的时段。 时段为必填。还可选择在事件包含特定指标时强制开始新会话。
 
 指定所有需要的设置后，单击&#x200B;**[!UICONTROL 保存并完成]**。
-

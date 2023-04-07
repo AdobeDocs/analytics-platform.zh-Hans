@@ -3,10 +3,10 @@ description: 列设置允许您配置列格式，其中一些可以是条件格�
 title: 列设置
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
-source-git-commit: 46873cc66461c40d7f44c8aac91ddc3ccf15ee21
-workflow-type: ht
-source-wordcount: '666'
-ht-degree: 100%
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+workflow-type: tm+mt
+source-wordcount: '670'
+ht-degree: 98%
 
 ---
 
@@ -46,21 +46,21 @@ ht-degree: 100%
 
 | 元素 | 描述 |
 | --- | --- |
-| 条件格式 | 将您选择的预配置颜色集应用于单元格。根据您选择的 4 种可用配色方案中的哪一种，不同的颜色会分配给高值、中点值和低值。<br>替换表中的维度会重置条件格式限制。替换量度会重新计算此列的限制（其中，量度在 X 轴上，维度在 Y 轴上）。 |
+| 条件格式 | 将您选择的预配置颜色集应用于单元格。根据您选择的 4 种可用颜色方案中的哪一种，不同的颜色会分配给高值、中点值和低值。<br>替换表中的维度会重置条件格式限制。替换量度会重新计算此列的限制（其中，量度在 X 轴上，维度在 Y 轴上）。 |
 | 使用百分比限制 | 将限制范围更改为基于百分比而不是绝对值。此选项适用于完全基于百分比的量度（如跳出率）以及包含计数和百分比的量度（如页面查看次数）。 |
 | 自动生成 | 根据数据自动计算上限/中值/下限。上限为此列中的最大值。下限为最小值，中点为上限和下限的平均值。 |
 | 自定义 | 手动指定上限/中值/下限。这可以让您灵活地决定列值何时为好、中或差。 |
-| 条件格式化调色板 | 选择 4 种可用配色方案中的哪一种用于您的条件格式。 |
+| 条件格式化调色板 | 选择 4 种可用颜色方案中的哪一种用于您的条件格式。 |
 
 ## 使用非默认的属性模型 {#attribution}
 
-Analysis Workspace 支持对几乎所有量度进行[归因](/help/analysis-workspace/attribution/overview.md)。
+允许您覆盖 [数据视图](/help/data-views/component-settings/attribution.md).
 
 1. 单击“自由格式表”列中的“设置”（齿轮）图标。
 
    ![“归因”复选框](assets/attribution-checkbox.png)
 
-1. 在&#x200B;**[!UICONTROL 数据设置]**&#x200B;下，选中&#x200B;**[!UICONTROL 使用非默认归因模型]**。有关不同归因模型的更多信息，请参阅[归因模型](/help/analysis-workspace/attribution/models.md)。
+2. 在&#x200B;**[!UICONTROL 数据设置]**&#x200B;下，选中&#x200B;**[!UICONTROL 使用非默认归因模型]**。有关不同归因模型的更多信息，请参阅[归因模型](/help/data-views/component-settings/attribution.md)。
 
    ![选择归因模型](assets/attribution-select.png)
 

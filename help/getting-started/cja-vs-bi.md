@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-source-git-commit: 941a8c8b081b8212d0a57994d2480efbd9c12be7
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
 workflow-type: tm+mt
-source-wordcount: '1609'
-ht-degree: 100%
+source-wordcount: '1588'
+ht-degree: 98%
 
 ---
 
@@ -62,13 +62,11 @@ CJA 使用一种强大的专有架构，该架构分散在数百甚至数千台�
 
 * **虚拟分析师功能**，如[异常检测](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)，它使用预测算法和机器学习深入了解是什么促使您的数据中产生异常行为。
 
-* 专门关注客户历程见解的&#x200B;**高级分析功能**，如[流量图](/help/analysis-workspace/visualizations/c-flow/flow.md)、[归因 IQ](/help/analysis-workspace/attribution/overview.md)、[流失图](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)和[维度细分](/help/components/dimensions/t-breakdown-fa.md)。开箱即用的可视化示例包括：
+* **高级分析功能** 专门关注客户历程分析，例如 [流程图](/help/analysis-workspace/visualizations/c-flow/flow.md), [归因面板](/help/analysis-workspace/c-panels/attribution.md), [流失图表](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)和 [维度划分](/help/components/dimensions/t-breakdown-fa.md). 开箱即用的可视化示例包括：
 
    * [通过队列/延迟表进行客户维系分析](/help/analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)，其中只需将度量/维度拖入构建器，即可在 30 秒内完成，
 
    * [流失](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)/[流量](/help/analysis-workspace/visualizations/c-flow/create-flow.md)可视化。不到一分钟即可完成设置。
-
-   * 只需单击几下即可设置的[归因模型](/help/analysis-workspace/attribution/algorithmic.md)，如第一次接触、最后一次接触、参与、时间衰减甚至自定义的模型。
 
 * **在逐步探索的每一步都有分段功能**：只要认为有意义，即可将受众发布回 Experience Platform 以及从那里发布到任何支持的目标。
 

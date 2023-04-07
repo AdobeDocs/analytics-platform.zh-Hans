@@ -3,9 +3,9 @@ description: Adobe Analysis Workspace 及其相关组件中的错误消息列表
 title: Analysis Workspace 中的常见错误消息
 feature: FAQ
 exl-id: 792c3b2e-bd24-4e98-b9ea-983c1189d52e
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '332'
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+workflow-type: tm+mt
+source-wordcount: '298'
 ht-degree: 100%
 
 ---
@@ -20,5 +20,4 @@ ht-degree: 100%
 | [!UICONTROL 错误 500：无法加载页面] | 本地网络的问题（如公司[防火墙设置](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html?lang=zh-Hans)），是引发该错误的一个因素。此外，Adobe 可能遇到了需要解决的问题。 | 请在几分钟后再次尝试登录。如果问题仍然存在，请向客户关怀团队提交 EIM 实例 ID 代码。 |
 | [!UICONTROL 此可视化图表中的一个过滤器或搜索，包含返回了大量结果的文本搜索。] | 您设定的筛选条件或报告过滤器过于宽泛。 | 应缩小搜索文本条件，然后重试请求。 |
 | [!UICONTROL 请求过于复杂。] | 您的报告请求过大，无法执行。导致此错误的因素包括：因请求的大小、过滤器或搜索过滤器中的匹配项过多、包含的量度过多、维度与量度组合不兼容等原因而导致的各种超时。 | 通过删除表中的某些列或行来简化请求，或者考虑将表拆分为单独的请求。 |
-| [!UICONTROL 此维度当前不支持非默认归因模型。] | 您使用的维度不支持非默认归因。 | 将表格中的维度替换为[归因 IQ](/help/analysis-workspace/attribution/overview.md) 兼容的维度。 |
 | [!UICONTROL 由于列或预配置行过多，导致请求失败。] | 表格中自由格式单元格（行数乘以列数）过多。 | 移除表格中的列或行，或考虑将表格拆分为单独的请求。 |

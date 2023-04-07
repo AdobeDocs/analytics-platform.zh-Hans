@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
 mini-toc-levels: 3
-source-git-commit: c87d7428a2ddca35297225314e97171fe8b129fb
-workflow-type: ht
-source-wordcount: '929'
-ht-degree: 100%
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 97%
 
 ---
 
@@ -117,11 +117,11 @@ AAI 中的原始分数输出具有嵌套模式，其中字段的路径可能很�
 
 ![前置时间](assets/lead-time.png)
 
-## 归因人工智能和 Attribution IQ 之间的差异
+## Attribution AI与CJA归因功能之间的差异
 
-那么什么时候应该使用归因人工智能数据而非原生 CJA 功能 [Attribution IQ](/help/analysis-workspace/attribution/overview.md)？下表显示了一些功能差异：
+下表显示了功能上的一些差异：
 
-| 功能 | 归因人工智能 | Attribution IQ |
+| 功能 | 归因人工智能 | CJA归因 |
 | --- | --- | --- |
 | 进行增量归因 | 是 | 否 |
 | 允许用户调整模型 | 是 | 是 |
@@ -131,4 +131,4 @@ AAI 中的原始分数输出具有嵌套模式，其中字段的路径可能很�
 | 基于区域的归因模型 | 是 | 是 |
 | 可以在模型中配置营销接触点 | 是 | 否 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

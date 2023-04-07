@@ -3,9 +3,9 @@ description: Adobe Analysis Workspace 及其相关组件中的已知限制列表
 title: Analysis Workspace 中的已知限制
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
-source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
-workflow-type: ht
-source-wordcount: '361'
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+workflow-type: tm+mt
+source-wordcount: '340'
 ht-degree: 100%
 
 ---
@@ -48,6 +48,3 @@ ht-degree: 100%
 
 * [!UICONTROL 报表设置]页面上的某些设置不适用。Analysis Workspace 只使用底部的[!UICONTROL 语言/货币/编码]设置：[!UICONTROL 千位分隔符]、[!UICONTROL 计划报表编码]和 [!UICONTROL CSV 分隔符]。
 
-## Attribution IQ
-
-* [!UICONTROL Attribution IQ] 中不支持量度的子集。有关完整列表，请参阅 [Attribution IQ 常见问题解答](../attribution/faq.md)。
