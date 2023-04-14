@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 8360a7d98510973061e76748ec520711eb3ebaf6
+source-git-commit: 3b4acdd3e0f5f47957abf6d11eab8bbf65c4bf08
 workflow-type: tm+mt
-source-wordcount: '1609'
-ht-degree: 97%
+source-wordcount: '1642'
+ht-degree: 95%
 
 ---
 
@@ -21,6 +21,7 @@ CJA 文档自创建以来进行了以下更新。
 | --- | --- |
 | **2023 年 4 月** |  |
 | 更新了实验面板文档 | 在 [解释非随机维度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized). |
+| 项目过滤器（临时和快速过滤器） | 简化了有关项目过滤器的文档并删除了重复信息。 现在，创建临时过滤器的步骤与 [创建快速过滤器](/help/components/filters/quick-filters.md). |
 | **2023 年 3 月** |  |
 | 集成决策管理数据 | 添加了说明如何 [在CJA中集成Adobe Journey Optimizer决策管理数据](/help/integrations/ajo-od.md). |
 | 在移动记分卡中创建数据故事 | [数据故事](/help/mobile-app/create-scorecard.md#create-data-stories)是围绕中心主题或量度构建的辅助数据点、业务背景和相关量度的集合。 |

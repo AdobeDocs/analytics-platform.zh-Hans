@@ -3,10 +3,10 @@ description: 面板是表格和可视化图表的集合
 title: 面板概述
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: 7883726d8055fd5ea161fb4991a17ad579012f28
-workflow-type: ht
-source-wordcount: '894'
-ht-degree: 100%
+source-git-commit: a69f9eef39c0eceee1964a3b8741b7538b218ece
+workflow-type: tm+mt
+source-wordcount: '907'
+ht-degree: 96%
 
 ---
 
@@ -57,7 +57,9 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 还可将非过滤器组件直接拖入放置区域以创建临时过滤器，从而为您节省转到过滤器生成器的时间和精力。通过这种方式创建的过滤器自动定义为点击级别过滤器。通过单击过滤器旁的信息图标 (i)、单击铅笔形状编辑图标并在过滤器生成器中进行编辑，可以修改此定义。
 
-临时过滤器在项目本地，除非将其公开，否则此类过滤器不会出现在左边栏中。
+临时过滤器是一种快速过滤器类型，是项目的本地过滤器。 除非您将它们设为公开，否则它们不会显示在左边栏中。
+
+有关更多信息，请参阅 [快速过滤器](/help/components/filters/quick-filters.md).
 
 ![](assets/adhoc-segment-filter.png)
 
