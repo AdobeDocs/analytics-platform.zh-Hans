@@ -3,15 +3,19 @@ title: 创建注释
 description: 如何在工作区中创建注释。
 role: User, Admin
 feature: Components
-exl-id: 3cf9a0fd-11c9-4375-8bbe-9551ba86f86d
-source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
-workflow-type: ht
-source-wordcount: '646'
-ht-degree: 100%
+exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
+source-git-commit: 2569ee4e958f2d647b62cbce72ebb2b7b98096ab
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # 创建注释
+
+默认情况下，只有管理员可以创建注释。用户有权查看注释，就像查看其他 Analytics 组件（例如区段、计算指标等）一样。
+
+但是，管理员可以通过 [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html) 向用户提供[!UICONTROL 注释创建]权限（Analytics 工具）。
 
 1. 要创建注释，有若干方法可使用：
 
@@ -39,6 +43,6 @@ ht-degree: 100%
    | [!UICONTROL 应用于所有报表包] | 默认情况下，注释应用于原始报表包。通过选中此框，您可以使注释应用于公司内的所有报表包。 |
    | [!UICONTROL 应用于所有项目] | 默认情况下，注释应用于当前项目。通过选中此框，您可以使注释应用于您负责的所有项目。请注意，此复选框仅在您从 Annotation Builder 启动 Annotation Builder 时显示？ |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。
