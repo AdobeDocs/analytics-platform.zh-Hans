@@ -2,9 +2,9 @@
 title: 过滤器概述
 description: 了解过滤器的用途以及如何创建简单的过滤器。
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: a69f9eef39c0eceee1964a3b8741b7538b218ece
+source-git-commit: d09cff0db8b02af1f0495faceb9ee1fc5fa0a41d
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '956'
 ht-degree: 98%
 
 ---
@@ -18,20 +18,13 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 
 您可以在过滤器生成器中构建和保存过滤器，或从“流失”可视化图表（在工作区中）生成过滤器。此外，过滤器可以一起用作堆叠过滤器。
 
-过滤器包括[过滤器生成器](/help/components/filters/create-filters.md)和[过滤器管理器](/help/components/filters/manage-filters.md)，前者用于构建过滤器并运行预测试，后者用于在您的组织内收集、标记、批准、设置安全和共享过滤器。
+过滤器包括[过滤器生成器](/help/components/filters/filter-builder.md)和[过滤器管理器](/help/components/filters/manage-filters.md)，前者用于构建过滤器并运行预测试，后者用于在您的组织内收集、标记、批准、设置安全和共享过滤器。
 
 每个 IMS 组织可创建的最大过滤器数为 50000。
 
 ## 过滤器类型 {#types}
 
-可在工作区和过滤器生成器中创建不同类型的过滤器，具体取决于这些过滤器需要实现的复杂程度、是否应将其仅应用于此项目等等。以下总结了各种过滤器类型：
-
-| 过滤器类型 | 在何处创建？ | 适用于何处？ | 使用场合 |
-| --- | --- | --- | --- |
-| 组件列表过滤器 | 单击 +，这将会转到[过滤器生成器](/help/components/filters/create-filters.md) | 您的所有工作区项目 | 对于更复杂的过滤器、顺序过滤器 |
-| 快速过滤器 | [快速过滤器生成器](/help/components/filters/quick-filters.md) | 仅用于项目，但可保存并添加到您的区段列表。 | 可用于临时单规则过滤器（通过拖放），或添加/编辑多个规则（通过单击过滤器图标） |
-| 流失分析中的过滤器 | Analysis Workspace 中的[流失可视化图表](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) | 单独的流失可视化图表 | 从接触点创建过滤器、添加过滤器作为接触点，并比较多个过滤器之间的关键工作流程 |
-| 基于计算量度的过滤器 | [计算指标生成器](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html) | 适用于个别计算指标 | 在您的量度定义中应用过滤器 |
+有关可用过滤器的可用类型以及如何创建过滤器的信息，请参阅 [创建过滤器](/help/components/filters/create-filters.md).
 
 ## 顺序过滤器 {#sequential}
 

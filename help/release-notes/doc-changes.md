@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 3b4acdd3e0f5f47957abf6d11eab8bbf65c4bf08
+source-git-commit: d09cff0db8b02af1f0495faceb9ee1fc5fa0a41d
 workflow-type: tm+mt
-source-wordcount: '1642'
-ht-degree: 95%
+source-wordcount: '1659'
+ht-degree: 94%
 
 ---
 
@@ -20,6 +20,7 @@ CJA 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2023 年 4 月** |  |
+| 过滤器文档 | 添加了有关使用 [过滤器生成器](/help/components/filters/filter-builder.md). <p>简化了 [创建过滤器](/help/components/filters/create-filters.md) 和 [过滤器概述](/help/components/filters/filters-overview.md).</p> |
 | 更新了实验面板文档 | 在 [解释非随机维度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized). |
 | 项目过滤器（临时和快速过滤器） | 简化了有关项目过滤器的文档并删除了重复信息。 现在，创建临时过滤器的步骤与 [创建快速过滤器](/help/components/filters/quick-filters.md). |
 | **2023 年 3 月** |  |
