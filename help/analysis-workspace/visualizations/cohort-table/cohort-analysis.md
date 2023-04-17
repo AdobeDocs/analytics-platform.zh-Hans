@@ -3,9 +3,9 @@ title: 什么是同类群组分析？
 description: 了解 Analysis Workspace 中的同类群组分析
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: 5dd25745f3ae872a70f60c53a1340ba59552665d
+source-git-commit: 76840d025d1ace28abce5557d66d104795818167
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '457'
 ht-degree: 91%
 
 ---
@@ -22,7 +22,6 @@ ht-degree: 91%
 * 在客户生命周期的恰当时间内转变营销预算。
 * 识别终止试用或优惠活动的时间，以实现价值的最大化。
 * 获取在一些领域（例如，定价、升级路径等）内进行 A/B 测试的建议。
-* 在引导分析报表中查看[!UICONTROL 同类群组分析]报表。
 
 [!UICONTROL 同类群组分析]适用于具有 [!UICONTROL Analysis Workspace] 访问权限的所有 Customer Journey Analytics 客户。
 
