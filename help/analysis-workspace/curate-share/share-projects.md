@@ -4,10 +4,10 @@ keywords: Analysis Workspace 共享
 title: 共享项目
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 19ed9553a147c87e20ecfcf536d03b7c6b2e9b91
+source-git-commit: df939712d3ee8d029dd42a9a769c022a4d0dbdf1
 workflow-type: tm+mt
-source-wordcount: '1673'
-ht-degree: 56%
+source-wordcount: '1753'
+ht-degree: 53%
 
 ---
 
@@ -138,6 +138,10 @@ ht-degree: 56%
    <!-- Add screen shot of new modal -->
 
 1. 启用 **[!UICONTROL 链接处于活动状态]** 选项。
+
+   选择此选项将创建一个指向项目的链接，该链接可供任何人共享。 您可以随时通过禁用此选项来禁用对项目的访问权限。
+
+   项目的所有者也是此链接的所有者。 仅当项目所有权被转移时，链接所有权才能转移给其他用户，如 [转移用户资产或设置帐户过期日期](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=en) 管理指南中的。
 
 1. 选择是否启用以下安全选项（此选项可由CJA管理员控制）：
 
