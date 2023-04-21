@@ -4,10 +4,10 @@ description: 解释如何从传统 Adobe Analytics 获取数据
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: 325dcd0862b8ac06b3b26c3ae349a8fce757cb6c
-workflow-type: ht
-source-wordcount: '1146'
-ht-degree: 100%
+source-git-commit: 41847015d581f2ee18bcaa9605bd567d5feb78d8
+workflow-type: tm+mt
+source-wordcount: '1162'
+ht-degree: 95%
 
 ---
 
@@ -79,7 +79,7 @@ Adobe Analytics 源连接器允许您将 Adobe Analytics 报告套件数据导�
    ![请查看](./assets/review.png)
 
 
-创建连接后，将自动创建数据流，以使用报告套件中的 Adobe Analytics 数据填充数据集，包括最多 13 个月的历史数据。
+创建连接后，将自动创建数据流，以使用报表包中的Adobe Analytics数据填充数据集，包括摄取最多13个月的生产沙盒历史数据。 （请注意，从2023年4月26日开始，非生产沙箱的回填时间限制为3个月。）
 
 初始摄取完成后，您的 Adobe Analytics 报告套件数据即可供 Customer Journey Analytics 使用。
 

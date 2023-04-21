@@ -4,10 +4,10 @@ description: 描述如何在 Customer Journey Analytics 中创建与 Platform �
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 60f9c81699f9a8e1657da4bd806d04f9f8adaa99
+source-git-commit: 41847015d581f2ee18bcaa9605bd567d5feb78d8
 workflow-type: tm+mt
-source-wordcount: '2489'
-ht-degree: 98%
+source-wordcount: '2501'
+ht-degree: 97%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 98%
    | **[!UICONTROL 时间戳]** | 仅对于事件数据集，此设置会自动设置为 Experience Platform 中基于事件的架构的默认时间戳字段。 |
    | **[!UICONTROL 数据源类型]** | 数据源类型包括： [!UICONTROL Web数据], [!UICONTROL 移动设备应用程序数据], [!UICONTROL POS数据], [!UICONTROL CRM数据], [!UICONTROL 调查数据], [!UICONTROL 呼叫中心数据], [!UICONTROL 产品数据], [!UICONTROL 帐户数据], [!UICONTROL 交易数据], [!UICONTROL 客户反馈数据]和 [!UICONTROL 其他]. |
    | **[!UICONTROL 导入新数据]** | 如果要创建持续连接，请选择此选项，以便要添加到此连接中数据集的任何新数据批次会自动流入工作区中。可以设置为 [!UICONTROL 开] 或 [!UICONTROL 关闭]. |
-   | **[!UICONTROL 数据集回填]** | 点击&#x200B;**[!UICONTROL 请求回填]**&#x200B;以回填历史数据。<ul><li>您可以单独回填每个数据集。</li><li>我们会优先处理新添加到此连接中数据集的新数据，因此这些新数据的滞后时间最短。</li><li>任何回填（历史）数据的导入速度都会比较慢。延迟受您拥有多少历史数据的影响。</li><li>Adobe Analytics Source Connector 最多可导入 13 个月的数据，而无论数据大小如何。</li></ul> |
+   | **[!UICONTROL 数据集回填]** | 点击&#x200B;**[!UICONTROL 请求回填]**&#x200B;以回填历史数据。<ul><li>您可以单独回填每个数据集。</li><li>我们会优先处理新添加到此连接中数据集的新数据，因此这些新数据的滞后时间最短。</li><li>任何回填（历史）数据的导入速度都会比较慢。延迟受您拥有多少历史数据的影响。</li><li>Adobe Analytics Source Connector最多可为生产沙箱导入13个月的数据（不论大小）。 非生产沙箱的回填限制为3个月。</li></ul> |
    | **[!UICONTROL 回填状态]** | 可能的状态指示符有：<ul><li>成功</li><li>X 回填处理</li><li>关</li></ul> |
    | **[!UICONTROL 数据集 ID]** | 此 ID 是自动生成的。 |
    | **[!UICONTROL 描述]** | 创建此数据集时给出的描述。 |
