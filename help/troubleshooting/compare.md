@@ -4,10 +4,10 @@ description: 了解如何比较 Adobe Analytics 数据和 Customer Journey Analy
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
-workflow-type: ht
-source-wordcount: '828'
-ht-degree: 100%
+source-git-commit: 95f92d742dcc59098f51978a02c2989c42594807
+workflow-type: tm+mt
+source-wordcount: '874'
+ht-degree: 94%
 
 ---
 
@@ -51,18 +51,19 @@ ht-degree: 100%
 
 1. 在 Adobe Experience Platform [查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html)中，运行以下的[!UICONTROL 按时间戳的总记录数]查询：
 
-```
-SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \ 
-        Count(_id) AS Records 
-        FROM  {dataset} \ 
-        WHERE timestamp>=from_utc_timestamp('{fromDate}','UTC') \ 
-        AND timestamp<from_utc_timestamp('{toDate}','UTC') \ 
-        AND timestamp IS NOT NULL \ 
-        AND enduserids._experience.aaid.id IS NOT NULL  \ 
-        GROUP BY Day \ 
-        ORDER BY Day; 
-```
-
+       &quot;
+       选择Substring(from_utc_timestamp(timestamp，&#39;{timeZone}&#39;), 1, 10)作为Day， \
+       Count(_id)AS记录
+       来自{dataset} \
+       WHERE timestamp>=from_utc_timestamp(&#39;{fromDate}&#39;,&#39;UTC&#39;)\
+       AND时间戳&lt;from_utc_timestamp todate=&quot;&quot; utc=&quot;&quot; span=&quot;&quot; id=&quot;11&quot; translate=&quot;no&quot; />       且时间戳不为空\
+       和enduserid。
+_experience.aaid.id不为NULL \
+       按日分组\
+       按日排序；
+       
+       &quot;
+   
 1. [分析数据馈送](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html)，从原始数据中识别某些行是否已被分析源连接器过滤掉。
 
    [分析源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)可能在转换到 XDM 模式期间过滤某些行。整个行不适合进行转换的原因可能有多种。如果以下任何分析字段具有这些值，则将过滤掉整个行。
