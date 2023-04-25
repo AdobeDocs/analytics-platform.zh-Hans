@@ -3,9 +3,9 @@ description: 过滤器生成器提供了一个画布，用于拖放量度Dimensi
 title: 构建过滤器
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: e918b93a7d5aa98fe0ac1532fa76a2994f6a0c07
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '2056'
+source-wordcount: '2054'
 ht-degree: 36%
 
 ---
@@ -71,7 +71,7 @@ ht-degree: 36%
 1. **[!UICONTROL 指标]**：单击标题可展开。
 1. **[!UICONTROL 过滤器]**:单击标题可展开。
 1. **[!UICONTROL 报表包选择器]**:允许您选择保存此过滤器的报表包。 您仍然可以在所有报表包中使用过滤器。
-1. **[!UICONTROL 过滤器预览]**:用于预览关键量度，以查看您是否具有有效的过滤器以及过滤器的广泛程度。 表示是否应用此过滤器时，您将会看到的数据集的划分。 显示3个同心圆和一个列表，以显示的匹配数和百分比 [!UICONTROL 事件], [!UICONTROL 人员]和 [!UICONTROL 会话] 用于针对数据集运行的过滤器。 在您创建过滤器定义或对其进行更改后，此图表会立即更新。
+1. **[!UICONTROL 过滤器预览]**:用于预览关键量度，以查看您是否具有有效的过滤器以及过滤器的广泛程度。 表示在应用此过滤器时，您可能会看到的数据集的划分。 显示3个同心圆和一个列表，以显示的匹配数和百分比 [!UICONTROL 事件], [!UICONTROL 人员]和 [!UICONTROL 会话] ，用于针对数据集运行过滤器。 在您创建过滤器定义或对其进行更改后，此图表会立即更新。
 1. **[!UICONTROL 产品兼容性]**:提供Adobe Analytics产品(Analysis Workspace、 [!UICONTROL Reports &amp; Analytics]、Data warehouse)。 大多数过滤器与所有产品都兼容。 但是，并非所有运算符和维度都与所有Analytics产品兼容，尤其是 [data warehouse](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segment-reference/seg-compatibility.html). 在对过滤器定义进行更改后，此图表会立即更新。
 1. **[!UICONTROL 保存]** 或 **[!UICONTROL 取消]**:保存或取消过滤器。 单击 **[!UICONTROL 保存]**，您将转到过滤器管理器，您可以在此处管理过滤器。
 

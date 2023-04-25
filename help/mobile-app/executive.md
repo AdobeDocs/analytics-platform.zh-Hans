@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 2fac52abb2f970455846c46b28db88360cff2886
-workflow-type: ht
-source-wordcount: '1220'
-ht-degree: 100%
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
+source-wordcount: '1221'
+ht-degree: 98%
 
 ---
 
@@ -104,7 +104,7 @@ ht-degree: 100%
 
    * 根据点按的时间间隔（**日**、**周**、**月**&#x200B;或&#x200B;**年**），您将看到两个日期范围选项，即当前时间范围或紧随其前的时间范围。点按这两个选项之一，以选择第一个范围。在&#x200B;**[!UICONTROL 比较对象]**&#x200B;列表下，点按其中显示的一个选项，以将此时间段的数据与您选择的第一个日期范围进行比较。点按屏幕右上角的&#x200B;**[!UICONTROL 完成]**。**[!UICONTROL 日期范围]**&#x200B;字段和记分卡图块会更新以显示您选择的新范围中的新比较数据。
 
-1. 要将区段过滤器应用于记分卡，请点按过滤器下拉列表，然后选择由策划人配置的区段。应用程序中的[过滤器](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans)的工作方式与在 Analytics Workspace 中相同。
+1. 要将区段过滤器应用于记分卡，请点按过滤器下拉列表，然后选择由策划人配置的区段。 应用程序中的[过滤器](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans)的工作方式与在 Analytics Workspace 中相同。
 
    ![区段过滤器](assets/segment_filter.png)
 

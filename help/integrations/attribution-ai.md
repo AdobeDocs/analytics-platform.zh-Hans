@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
 mini-toc-levels: 3
-source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 97%
+source-wordcount: '911'
+ht-degree: 95%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 [归因人工智能](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=zh-Hans)，作为 Adobe Experience Platform 智能服务的一部分，是一种多渠道、算法归因服务，用于计算客户交互对指定结果的影响和增量影响。借助归因人工智能，营销人员可以通过了解每个客户互动对客户旅程各个阶段的影响来衡量和优化营销和广告支出。
 
-归因人工智能与 Customer Journey Analytics (CJA) 集成的程度是：归因人工智能针对客户的营销接触点和转化数据源运行模型。然后，CJA 将这些模型的输出作为数据集导入，或者输出可以与您的其他 CJA 数据集集成。然后可以在 CJA 中的数据视图和报告中利用启用了归因人工智能的数据集。
+归因人工智能与 Customer Journey Analytics (CJA) 集成的程度是：归因人工智能针对客户的营销接触点和转化数据源运行模型。然后，CJA会将这些模型的输出作为数据集导入，或者也可以将其与其余的CJA数据集集成。 然后可以在 CJA 中的数据视图和报告中利用启用了归因人工智能的数据集。
 
 归因人工智能支持 3 种 Experience Platform 模式：体验事件、Adobe Analytics 和消费者体验事件。
 

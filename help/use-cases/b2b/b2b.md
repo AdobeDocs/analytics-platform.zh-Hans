@@ -4,10 +4,10 @@ description: 了解如何将基于帐户的数据作为查询数据集添加到 
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 1a18ddbab09e272189a25041396570d127bb81c3
-workflow-type: ht
-source-wordcount: '841'
-ht-degree: 100%
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+workflow-type: tm+mt
+source-wordcount: '838'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 所有这些都可通过将帐户级别信息作为[查询](/help/getting-started/cja-glossary.md)数据集引入来实现。
 
-首先，在 Adobe Experience Platform 中创建一个查询架构，然后通过引入基于 .csv 的帐户级别数据来创建查询表数据集。然后，您继续在 Customer Journey Analytics (CJA) 中创建一个连接，该连接结合了不同的数据集，包括您创建的查找数据集。您随后创建一个数据视图，最后能够在 Workspace 中利用所有这些数据。
+您首先在Adobe Experience Platform中创建一个查询架构，然后通过摄取基于.csv的帐户级别数据来创建一个查询表数据集。 然后，您继续在 Customer Journey Analytics (CJA) 中创建一个连接，该连接结合了不同的数据集，包括您创建的查找数据集。您随后创建一个数据视图，最后能够在 Workspace 中利用所有这些数据。
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 ![](../assets/create-new-class.png)
 
-## 2. 创建查询数据集 (Experience Platform)
+## 2.创建查询数据集(Experience Platform)
 
 创建模式后，需使用该模式在 Experience Platform 中创建一个查询数据集。这个查询数据集包含帐户级别的营销信息，例如：公司名称、员工总数、域名、公司所属行业、年收入、当前是否为 Experience Platform 客户、当前处于哪个销售阶段、帐户内的哪个团队在使用 CJA，等等。
 

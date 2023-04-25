@@ -3,11 +3,11 @@ description: 让您轻松地在 Analysis Workspace 中进行数据的可视化�
 title: 组合图表可视化
 feature: Visualizations
 role: User, Admin
-exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
-source-git-commit: 8cc4fc0cd2a6c5b6b895e56bbb7922caba56d9ae
-workflow-type: ht
-source-wordcount: '776'
-ht-degree: 100%
+exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+workflow-type: tm+mt
+source-wordcount: '767'
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 100%
    | **[!UICONTROL 函数]** | 您可以在比较中引入函数（例如[!UICONTROL 平均值]）。请参阅下面的支持函数列表。<p>![函数](assets/combo-functions.png) |
    | **[!UICONTROL 辅助量度]** | 例如，您可以将[!UICONTROL 收入]与另一个量度进行比较。<p>![两个指标](assets/combo-2metrics.png) |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. 单击&#x200B;**[!UICONTROL 生成]**。
 
@@ -69,7 +69,7 @@ ht-degree: 100%
 | **[!UICONTROL 平均值]** | 返回某度量的算术平均值或平均值。 |
 | **[!UICONTROL 列最小值]** | 返回某量度列的一组维度元素中的最小值。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 以下是“收入”量度的累积平均值的示例：
 
@@ -88,11 +88,11 @@ ht-degree: 100%
 | 设置 | 定义 |
 | --- | --- |
 | **[!UICONTROL 可视化类型]** | 让您切换到另一种可视化类型。 |
-| **[!UICONTROL 粒度]** | 对于趋势性的可视化图表，您可从此下拉菜单更改时间粒度（日、周、月等）。 |
+| **[!UICONTROL 粒度]** | 对于趋势性的可视化图表，您可从此下拉菜单更改从此下拉列表中。 |
 | **[!UICONTROL 常规]** |  |
 | **[!UICONTROL 百分比]** | 显示百分数值。 |
 | **[!UICONTROL 图例可见]** | 允许您为组合图表可视化隐藏详细的图例文本。 |
-| **[!UICONTROL 限制最大项目数]** | 减少 X 轴上的项目数。如果您有一个大数据集，则可能只显示前 10 个项目（或您选择的任何值）。 |
+| **[!UICONTROL 限制最大项目数]** | 减少 X 轴上的项目数。如果您有大数据集，则可能只显示前10个项目（或您选择的任何值）。 |
 | **[!UICONTROL 叠加]** | 显示或隐藏线形上的条形铃。 |
 | **[!UICONTROL 轴]** |  |
 | **[!UICONTROL 显示双轴]** | 仅适用于具有两个量度的情况，可以在左（用于一个量度）、右（用于另一个量度）两边各有一个 y 轴。在所绘制量度的数量级差别很大时，此项非常有用。双轴颜色与表格的颜色相匹配，除非有多个比较。在这种情况下，所有比较的颜色都是灰色的。 |
@@ -101,4 +101,4 @@ ht-degree: 100%
 | **[!UICONTROL 显示 Y 轴]** | 显示 Y 轴或隐藏它。 |
 | **[!UICONTROL 将 Y 轴固定在 0]** | 如果图表上绘制的所有值都远远大于零，则图表默认会将 y 轴底部设置为非零值。如果选中此框，y 轴将被强制设置为零（并将重新绘制图表）。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

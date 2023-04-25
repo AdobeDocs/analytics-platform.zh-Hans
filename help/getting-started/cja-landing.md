@@ -4,10 +4,10 @@ description: Customer Journey Analytics 登陆页面。
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 6e90688d72ddf7791ad8c4c12d5293070d987e39
-workflow-type: ht
-source-wordcount: '447'
-ht-degree: 100%
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 本技术文档指南为 Customer Journey Analytics 提供了自助服务。Customer Journey Analytics 允许您从所选的任何渠道（在线和离线）将客户数据纳入到 Adobe Experience Platform 中，然后像现在使用 Analysis Workspace 分析现有数字数据一样分析这些数据。
 
-借助 Customer Journey Analytics，您可以控制如何在 Analysis Workspace 中将与任何通用客户 ID 相关的在线和离线数据进行关联，从而最终得以对 Customer Journey Analytics 中的整个客户数据集进行归因、筛选、流程、流失等操作。
+借助 Customer Journey Analytics，您可以控制如何在 Analysis Workspace 中将与任何通用客户 ID 相关的在线和离线数据进行关联，跨整个客户数据集进行Customer Journey Analytics。
 
 Analytics Select、Prime 和 Ultimate 客户有资格此附加产品。有关更多详细信息，请与您的 Adobe 客户团队联系。
 

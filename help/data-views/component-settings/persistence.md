@@ -4,10 +4,10 @@ description: 决定维度值如何或是否从一个事件保持到下一个事�
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
-workflow-type: ht
-source-wordcount: '809'
-ht-degree: 100%
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
+source-wordcount: '806'
+ht-degree: 93%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 | [!UICONTROL 分配] | 用于为持久性指定维度中使用的分配模型。选项有：[!UICONTROL 最近]、[!UICONTROL 原有]、[!UICONTROL 实例]、[!UICONTROL 全部]。截止 2021 年 10 月 28 日，最多 90 天的回溯时段将添加到[!UICONTROL 分配]设置。 |
 | [!UICONTROL 到期] | 用于为维度指定持久性窗口。选项为：[!UICONTROL 会话]（默认值）、[!UICONTROL 人员]、[!UICONTROL 自定义时间]、[!UICONTROL 指标]。可能需要能够在购买（如内部搜索词或其他促销用例）时让维度到期。可设置的最长到期时间为 90 天。如果选择[!UICONTROL 全部]分配，则仅有[!UICONTROL 会话]或[!UICONTROL 人员]到期可用。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## [!UICONTROL 分配]设置
 
@@ -76,13 +76,13 @@ ht-degree: 100%
 
 ## [!UICONTROL 绑定维度]
 
-一个下拉列表，可让您将维度值的持久性绑定到另一个维度中的维度值。有效的下拉列表选项包括数据视图中包含的其他维度。
+一个下拉列表，用于将维度值的持久性绑定到其他维度中的维度值。 有效选项包括数据视图中包含的其他维度。
 
 有关如何有效使用绑定维度的示例，请参见 CJA 中的 [使用绑定维度和量度](../../use-cases/data-views/binding-dimensions-metrics.md)。
 
 ## [!UICONTROL 绑定量度]
 
-一个下拉列表，可让您选择充当绑定触发器的量度。有效的下拉列表选项包括数据视图中包含的量度。
+用于选择充当捆绑触发器的量度的下拉列表。 有效选项包括数据视图中包含的量度。
 
 此设置仅在对象数组中的绑定维度低于组件时显示。当绑定量度显示在事件中时，维度值会从事件级别维度向下复制到绑定维度的较低架构级别。
 

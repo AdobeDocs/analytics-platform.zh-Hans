@@ -3,10 +3,10 @@ description: 如何更改可视化图表调色板或指定您自己的自定义�
 title: 可视化图表调色板
 feature: CJA Workspace Basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '211'
-ht-degree: 100%
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
+source-wordcount: '212'
+ht-degree: 92%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 ## 更改调色板：
 
 1. 导航至&#x200B;**[!UICONTROL 工作区]** > **[!UICONTROL 项目]** > **[!UICONTROL 项目信息和设置]**。
-1. 从&#x200B;**[!UICONTROL 项目调色板]**&#x200B;下拉列表中，您可以从 5 种预设配色方案中选取一种配色方案。
+1. 从 **[!UICONTROL 项目调色板]** 下拉列表中，您可以从5种预设配色方案中选取一种配色方案。
 
    ![](assets/custom_palette.png)
 

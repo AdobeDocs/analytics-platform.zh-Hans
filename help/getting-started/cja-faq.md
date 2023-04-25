@@ -4,10 +4,10 @@ description: Customer Journey Analytics - 常见问题解答。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: dac10a1e4848514661bf06fe71d233da6f9aa878
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '2135'
-ht-degree: 98%
+source-wordcount: '2130'
+ht-degree: 96%
 
 ---
 
@@ -70,7 +70,7 @@ CCA 根据已学到的唯一标识符“回放”数据。重放导致新设备�
 
 +++**未拼合的配置文件数据集记录的预期行为是什么？**
 
-**示例场景**：使用 `CRMid` 作为人员 ID 在 CJA 连接中联接 2 个数据集。一个是 Web 事件数据集，所有记录中都包含 `CRMid`。另一个数据集是 CRM 配置文件数据集。CRM 数据集中 40% 的数据都在 Web 事件数据集中有 `CRMid`。另外 60% 的数据不在 Web 事件数据集中 - 这些记录是否显示在 Analysis Workspace 的报告中？<p> **回答**：不带关联的事件的配置文件行存储在 CJA 中。但是，您无法在 Analysis Workspace 中查看它们，直到与该 ID 关联的事件出现。
+**示例场景**：使用 `CRMid` 作为人员 ID 在 CJA 连接中联接 2 个数据集。一个是 Web 事件数据集，所有记录中都包含 `CRMid`。另一个数据集是CRM配置文件数据集。 40%的CRM数据集已 `CRMid` 在Web事件数据集中存在。 另外 60% 的数据不在 Web 事件数据集中 - 这些记录是否显示在 Analysis Workspace 的报告中？<p> **回答**：不带关联的事件的配置文件行存储在 CJA 中。但是，您无法在 Analysis Workspace 中查看它们，直到与该 ID 关联的事件出现。
 
 +++
 
@@ -151,7 +151,7 @@ CCA 根据已学到的唯一标识符“回放”数据。重放导致新设备�
 | 删除 [!UICONTROL Adobe Experience Platform] 中的沙盒 | 如果删除沙盒，则将阻止数据流向与该沙盒中的数据集关联的 [!UICONTROL Customer Journey Analytics] 连接。目前，CJA 中关联被删除沙盒的[!UICONTROL 连接]不能自动删除。 |
 | 删除 [!UICONTROL Adobe Experience Platform] 中的架构，但不删除与该架构关联的数据集 | [!UICONTROL Adobe Experience Platform][!UICONTROL  不允许删除具有一个或多个关联数据集的架构。]但是，具有相应权限集的管理员可以先删除关联数据集，然后再删除架构。 |
 | 删除 [!UICONTROL Adobe Experience Platform] 数据湖中的一个数据集 | 删除 AEP 数据湖中的某个数据集将阻止数据从该数据集流向包括该数据集的任何 CJA 连接。来自该数据集的任何数据都会自动从关联的 CJA 连接中删除。 |
-| 删除 [!UICONTROL Customer Journey Analytics] 中的数据集 | 请联系您的Adobe客户团队，以启动删除已保存连接中的数据集的过程。 |
+| 删除 [!UICONTROL Customer Journey Analytics] 中的数据集 | 请联系您的Adobe帐户团队，以启动删除已保存连接中数据集的过程。 |
 | 从数据集中删除批次（在 [!UICONTROL Adobe Experience Platform] 中） | 如果从 [!UICONTROL Adobe Experience Platform] 数据集中删除了某个批次，则会从包含该特定批次的所有 CJA 连接中删除该批次。CJA 会收到批次已在 [!UICONTROL Adobe Experience Platform] 中删除的通知。 |
 | **批次被摄取**&#x200B;到 [!UICONTROL Customer Journey Analytics] 的同时删除批次 | 如果数据集中只有一个批次，则该批次中只会有部分数据或没有任何数据显示在 [!UICONTROL Customer Journey Analytics] 中。系统将回滚该摄取操作。例如，如果数据集中共有 5 个批次，且在删除该数据集时已摄取其中 3 个批次，那么这 3 个批次中的数据将显示在 [!UICONTROL Customer Journey Analytics] 中。 |
 | 删除 [!UICONTROL Customer Journey Analytics] 中的连接 | 将显示一条错误消息，指示：<ul><li>为已删除的连接创建的所有数据视图都将不再起作用。</li><li> 同样地，任何依赖于已删除连接中的数据视图的工作区项目都将停止运行。</li></ul> |
@@ -168,7 +168,7 @@ CCA 根据已学到的唯一标识符“回放”数据。重放导致新设备�
 | 量度去重 | 如果有多行的交易 ID（例如，[!UICONTROL 购买 ID]）相同，请为指标的实例（例如，[!UICONTROL 订单]）去重。这样可防止过度计算关键指标。因此，[!UICONTROL 订单]等指标可能不在报告包间累加。 |
 | 货币 | CJA 中尚不支持货币转换。如果尝试合并的报告包使用不同的基础货币，则可能会出现问题。 |
 | [!UICONTROL 持久性] | [持久性](../data-views/component-settings/persistence.md)作用于各个报告包，它影响[!UICONTROL 筛选器]、[!UICONTROL 归因]等等。数值可能无法正确地累加。 |
-| [!UICONTROL 分类] | 在合并报告包时，不会自动为[!UICONTROL 分类]去重。将多个分类文件合并为一个[!UICONTROL 查找]数据集时，可能会遇到问题。 |
+| [!UICONTROL 分类] | 在合并报告包时，不会自动为[!UICONTROL 分类]去重。将多个分类文件合并到单个 [!UICONTROL 对照] 数据集时，您可能会遇到问题。 |
 
 
 ## 8. 传统 [!UICONTROL Adobe Analytics] 组件

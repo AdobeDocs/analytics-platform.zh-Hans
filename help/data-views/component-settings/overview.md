@@ -4,10 +4,10 @@ description: 查看数据视图组件的核心设置。
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: baee2ccf6eec040972726b9651ffe565d50307a9
-workflow-type: ht
-source-wordcount: '427'
-ht-degree: 100%
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
+source-wordcount: '426'
+ht-degree: 93%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 100%
 
 | 设置 | 描述/用例 |
 | --- | --- |
-| [!UICONTROL 组件类型] | 必填。使您可将组件从“指标”变为“维度”或反之。更改此下拉列表会将该组件移至其各自包括的组件区域。 |
+| [!UICONTROL 组件类型] | 必填。使您可将组件从“指标”变为“维度”或反之。更改此下拉选择将组件移至其各自包含的组件区域。 |
 | [!UICONTROL 组件名称] | 必填。使您可指定在分析工作区中显示的易记名称。可将组件重命名以给予其一个数据视图专属的名称。 |
 | [!UICONTROL 描述] | 可选，但推荐。向其他用户提供有关组件的信息。 |
 | [!UICONTROL 标记] | 可选。可让您使用自定义或现成标记为组件添加标签，以便于在分析工作区 UI 中搜索/筛选。 |
-| [!UICONTROL 上下文标签] | 可选。可应用于组件的现有系统定义标签的下拉列表。可能需要这些标签来定义用于在 Analysis 工作区项目或面板中报告的一组组件。 |
+| [!UICONTROL 上下文标签] | 可选。可应用于组件的可用系统定义标签的下拉列表。 可能需要这些标签来定义用于在 Analysis 工作区项目或面板中报告的一组组件。 |
 | [!UICONTROL 架构字段名] | 架构字段的名称。 |
 | [!UICONTROL 数据集类型] | 必填。显示组件来自哪个数据集类型（事件、查询或个人资料）的不可编辑字段。 |
 | [!UICONTROL 数据集] | 一个不可编辑的字段，它显示该组件来源于哪个数据集。此字段可以包含多个数据集。 |
@@ -33,7 +33,7 @@ ht-degree: 100%
 | [!UICONTROL 数据使用情况标签] | 在 Adobe Experience Platform 中分配给此组件的任何数据使用标签。[了解详情](/help/data-views/data-governance.md) |
 | [!UICONTROL 在报告中隐藏组件] | 使您可从非管理员的数据视图策划该组件。管理员仍可通过在分析工作区项目中单击[!UICONTROL 显示所有组件]而访问该组件。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 以下是关于数据视图中组件设置的视频：
 

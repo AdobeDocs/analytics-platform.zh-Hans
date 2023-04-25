@@ -4,10 +4,10 @@ description: 使用字符串的子集作为维度项。
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
-workflow-type: ht
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
 source-wordcount: '914'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## 从左/右
 
-根据字符串开始或结束的位置提取字符串的一部分。**[!UICONTROL 从左]** 和 **[!UICONTROL 从右]** 两种方法提供两个下拉列表：**[!UICONTROL 从]**（输出开始的地方）和 **[!UICONTROL 至]**（输出结束的地方）。
+根据字符串开始或结束的位置提取字符串的一部分。**[!UICONTROL 左边]** 和 **[!UICONTROL 从右侧]** 方法提供了两个下拉列表： **[!UICONTROL 从]** （输出开始时）和 **[!UICONTROL 至]** （输出结束的位置）。
 
 * **[!UICONTROL 字符串开始]**：字符串的开始。
 * **[!UICONTROL 字符串结束]**：字符串的结束。
@@ -30,7 +30,7 @@ ht-degree: 100%
    * **[!UICONTROL 匹配]**：要匹配的字符串。 如果输入内容与此字段不匹配，则应用 [无值选项](no-value-options.md)。
    * **[!UICONTROL 索引]**：**[!UICONTROL 匹配]** 条件可以在字符串中多次出现。 此整数确定开始或结束输出的匹配项，具体取决于方法。 例如，索引为 `1` 表示第一个匹配。 如果索引高于可用的匹配数，则应用 [无值选项](no-value-options.md)。
    * **[!UICONTROL 包括字符串]**：如果启用，则在输出中包括 **[!UICONTROL 匹配]** 字符串的复选框。
-* **[!UICONTROL 长度]**：指定输出起始位置后要包含的字符数的整数。 仅在 **[!UICONTROL 至]** 下拉菜单下可用。
+* **[!UICONTROL 长度]**：指定输出起始位置后要包含的字符数的整数。 仅在 **[!UICONTROL 至]** 下拉列表。
 
 ## 分隔符
 
@@ -114,7 +114,7 @@ CJA 使用 Perl 正则表达式语法的子集。 如果输入内容与正则表
 | `$+` | 输出与正则表达式中最后标记的子表达式匹配的内容。 |
 | `$$` | 输出字符串 `"$"`。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 关于绑定维度的视频
 

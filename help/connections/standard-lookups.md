@@ -4,10 +4,10 @@ description: 使用标准查找可利用 Customer Journey Analytics 中的有用
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 3f20520a2021d9b6066b0492ed11a1a4619ab1d4
-workflow-type: ht
-source-wordcount: '359'
-ht-degree: 100%
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 >[!IMPORTANT]
 >在 CJA 中仅为 Analytics Source Connector 数据源提供标准查找功能。您可以将其用于标准 Adobe Analytics 实施、[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) 或 Experience Platform 数据收集 API。
 
-标准查找（也称为 Adobe 提供的查找）可以增强 Customer Journey Analytics 的功能，用于报告一些本身并不是非常有用但在与其他数据结合时可以发挥作用的维度/属性。示例包括移动设备属性、操作系统属性和浏览器维度，如浏览器版本号。“标准查找”类似于查找数据集。标准查找适用于整个 Experience Cloud 组织。它们自动应用于包含某些 XDM 架构字段（有关具体字段见下文）的所有事件数据集。Adobe 分类的每个架构位置都存在一个标准查找数据集。
+标准查找（也称为 Adobe 提供的查找）可以增强 Customer Journey Analytics 的功能，用于报告一些本身并不是非常有用但在与其他数据结合时可以发挥作用的维度/属性。示例包括移动设备属性、操作系统属性和浏览器维度，如浏览器版本号。“标准查找”类似于查询数据集。 标准查找适用于整个 Experience Cloud 组织。它们自动应用于包含某些 XDM 架构字段（有关具体字段见下文）的所有事件数据集。Adobe 分类的每个架构位置都存在一个标准查找数据集。
 
 在传统的 Adobe Analytics 中，这些维度按自己的方式显示，但在 CJA 中，您必须在创建数据视图时主动包含这些维度。在“连接”工作流中，选择具有标准查找键标志的数据集。数据视图 UI 自动知道包括所有标准查找维度以用于报告。查找文件会在所有区域和所有帐户中自动保持为最新版本和可用。这些文件将存储在与客户关联的特定于区域的组织中。
 

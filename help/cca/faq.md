@@ -4,10 +4,10 @@ description: 跨渠道分析常见问题解答
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: dac10a1e4848514661bf06fe71d233da6f9aa878
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 97%
+source-wordcount: '1067'
+ht-degree: 95%
 
 ---
 
@@ -40,9 +40,9 @@ ht-degree: 97%
 
 永久 ID 的数量与临时 ID 的使用无关。单个用户可以属于任意数量的设备，而不会影响 CCA 跨设备拼接的功能。
 
-## 在联系我的Adobe客户团队并提供所需信息后，重新生成键值的数据集需要多长时间才可用？
+## 在与Adobe帐户团队联系并提供所需信息后，已重新生成键值的数据集需要多长时间才可用？
 
-在 Adobe 启用跨渠道分析后大约一周，实时拼接功能会变得可用。回填可用性取决于现有数据的数量。小型数据集（每日的事件数量少于 100 万）通常需要几天时间，而大型数据集（每日的事件数量为 10 亿）可能需要一周或更长时间。
+在 Adobe 启用跨渠道分析后大约一周，实时拼接功能会变得可用。回填可用性取决于现有数据的数量。小数据集（每天的事件数少于100万）通常需要几天时间，而大数据集（每天的事件数为10亿）可能需要一周或更长时间。
 
 ## 跨设备分析（传统分析中的一个功能）和跨渠道分析之间有什么区别？
 

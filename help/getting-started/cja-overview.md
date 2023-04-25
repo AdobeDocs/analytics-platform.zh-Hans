@@ -4,10 +4,10 @@ description: 了解如何通过 Customer Journey Analytics 来使用分析工作
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: dac10a1e4848514661bf06fe71d233da6f9aa878
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 97%
+source-wordcount: '978'
+ht-degree: 94%
 
 ---
 
@@ -27,10 +27,10 @@ Customer Journey Analytics 是一项 Analytics 功能，让您可以运用分析
 
 Customer Journey Analytics 通过提供易于使用的跨渠道功能和消除 Adobe Analytics 早期版本中的限制，扩展了 Adobe Analytics 的范围。一些显著改进的功能包括：
 
-* **无限量的变量和事件**：eVar、prop 和事件的概念已不复存在。数据主要侧重于维度和量度。数据集可以有无限数量的唯一维度和量度。
+* **无限量的变量和事件**：eVar、prop 和事件的概念已不复存在。数据主要侧重于维度和量度。数据集可以具有无限数量的唯一维度和量度。
 * **无限唯一值**：Adobe Experience Platform 不受任何特有限制的约束。
 * **更改历史数据**：使用 Adobe Experience Platform，可以删除或更正数据。
-* **跨报告包数据**：可以在 Platform 中组合来自多个数据集的现有实施。
+* **跨报表包数据**:可以在Platform中组合来自多个数据集的现有实施。
 
 >[!TIP]
 >
@@ -54,7 +54,7 @@ Customer Journey Analytics 的初始版本包括分析工作区中的许多功�
 
 在开始使用 Customer Journey Analytics 之前，必须满足以下前提条件：
 
-* 您的组织与 Adobe 签订了一份 Analytics for Select、Prime 或 Ultimate 的有效合同，其中包含 Customer Journey Analytics 附加产品。如果您不确定您拥有哪种合同类型，或不确定您是否拥有CJA加载项，请联系您的Adobe客户团队。
+* 您的组织与 Adobe 签订了一份 Analytics for Select、Prime 或 Ultimate 的有效合同，其中包含 Customer Journey Analytics 附加产品。如果您不确定您拥有的合同类型，或不确定您是否拥有CJA附加组件，请联系您的Adobe帐户团队。
 * 您的组织已配置 Adobe Experience Platform。
 * 您还可以将 Customer Journey Analytics 作为独立产品购买，而无需 Adobe Analytics。
 

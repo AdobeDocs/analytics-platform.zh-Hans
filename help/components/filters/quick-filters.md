@@ -4,10 +4,10 @@ title: 快速过滤器
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: cb1654cef651c5143667302c3fc592ba503dfe0a
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 43%
+source-wordcount: '1166'
+ht-degree: 42%
 
 ---
 
@@ -63,9 +63,9 @@ Analysis Workspace中的任何用户都可以创建快速过滤器。
    | AND/OR 限定符 | 可将“AND”或“OR”限定符添加到规则，但不得在单个过滤器定义中混用“AND”和“OR”。 |
    | [!UICONTROL 应用] | 将此过滤器应用于面板。如果过滤器不包含数据，系统会询问您是否要继续。 |
    | [!UICONTROL 打开生成器] | 打开过滤器生成器。 在过滤器生成器中保存或应用过滤器后，该过滤器不再被视为“快速过滤器”。 它成为组件列表过滤器库的一部分。 <p>要使组件在所有项目和左边栏中均可用，请选择选项 [!UICONTROL **使此过滤器可用于所有项目，并将其添加到组件列表**].</p><p>有关更多信息，请参阅 [将快速过滤器另存为组件列表过滤器](#save-a-quick-filter-as-a-component-list-filter) 在本文中。</p><p>**注意：** 仅在 [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html#analytics-tools?lang=zh-Hans) 可打开过滤器生成器。</p> |
-   | [!UICONTROL 取消] | 取消此快速过滤器（请勿应用）。 |
+   | [!UICONTROL 取消] | 取消此快速过滤器（请勿应用它）。 |
    | [!UICONTROL 日期范围] | 该验证器使用面板日期范围执行其数据查找。但在快速过滤器中应用的任何日期范围都将取代面板顶部的面板日期范围。 |
-   | 预览（右上角） | 让您查看您的过滤器是否有效以及该过滤器的作用范围。 表示在应用此过滤器时预计将看到的数据集的划分方式。您可能会收到一条通知，表明此过滤器没有数据。在这种情况下，可继续操作或更改过滤器定义。 |
+   | 预览（右上角） | 让您查看您的过滤器是否有效以及该过滤器的作用范围。 表示在应用此过滤器时，您可能会看到的数据集的划分。 您可能会收到一条通知，表明此过滤器没有数据。在这种情况下，可继续操作或更改过滤器定义。 |
 
 1. 选择 [!UICONTROL **应用**] 以保存更改。
 
