@@ -3,10 +3,10 @@ title: 自由格式表中的动态维度项与静态维度项
 description: 如何与表中的动态维度项和静态维度项交互
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '482'
-ht-degree: 100%
+source-git-commit: 67435cdfcb23e3c6e9a04ecb4a0b0e854473387c
+workflow-type: tm+mt
+source-wordcount: '495'
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,8 @@ ht-degree: 100%
 
 例如，将“浏览器类型”维度拖入表中后，则排名靠前的“浏览器类型”维度项目（例如 Microsoft、Apple、Google 等）会动态返回到表行。如果拖放到列中，则会动态返回排名前 5 的“浏览器类型”维度项目。
 
-动态维度项目具有行过滤器选项，并且&#x200B;**不会**&#x200B;出现锁图标和 X 图标。
+动态维度项目具有行过滤器选项，并且&#x200B;**不会**&#x200B;出现锁图标和 X 图标。有关将过滤器应用到表格的更多信息，请参阅 [过滤和排序表](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
+
 
 ![](assets/dynamic-items.png)
 

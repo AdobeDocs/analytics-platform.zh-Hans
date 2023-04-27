@@ -4,7 +4,7 @@ keywords: Analysis Workspace 共享
 title: 共享项目
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: df939712d3ee8d029dd42a9a769c022a4d0dbdf1
+source-git-commit: 749088c6e6c100797bd9a2dd1de64d18d45108e5
 workflow-type: tm+mt
 source-wordcount: '1753'
 ht-degree: 53%
@@ -120,7 +120,7 @@ ht-degree: 53%
 >
 >* CJA管理员可以禁用以这种方式共享项目的功能，如 [首选项](/help/analysis-workspace/user-preferences.md). 如果无法按本节所述共享项目，则CJA管理员已禁用此功能。
 >
->* 无法与无法访问CJA的人员共享具有超过14个扩展可视化的项目。
+>* 无法与无权访问CJA的人员共享具有50个以上扩展可视化的项目。
 >
 >* 与您共享的用户可以查看在 [策划](curate.md).
 > 
