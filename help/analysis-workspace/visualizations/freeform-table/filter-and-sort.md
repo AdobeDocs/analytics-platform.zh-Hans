@@ -3,10 +3,10 @@ description: 描述如何在 Analysis Workspace 中筛选和排序表格的文�
 title: 排序和过滤表格
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 43c8af6f9010354258a702fb702a330873d9cb8e
-workflow-type: ht
-source-wordcount: '692'
-ht-degree: 100%
+source-git-commit: 4dd5e5248026c39489f3ac4598ea91ff15d95aa4
+workflow-type: tm+mt
+source-wordcount: '722'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,11 @@ Analysis Workspace 中的自由格式表是进行交互式数据分析的基础�
 
 Analysis Workspace 中的过滤器可帮助您显示最重要的信息。
 
-要过滤自由格式表中的数据：
+>[!NOTE]
+>
+> 只能按照本节所述过滤动态维度项目。 无法过滤静态维度项目。 有关更多信息，请参阅 [自由格式表中的动态维度项目与静态维度项目](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
+
+过滤自由格式表中的数据：
 
 1. 在自由格式表中，将鼠标悬停在包含要过滤的数据的列上。<!--only some types of columns show the filter... Which? Just Dimensions?-->
 
