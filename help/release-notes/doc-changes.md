@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: d09cff0db8b02af1f0495faceb9ee1fc5fa0a41d
+source-git-commit: a4ff2b48a85730f6ded56f207b5cc1ece6a3d3ab
 workflow-type: tm+mt
-source-wordcount: '1659'
-ht-degree: 94%
+source-wordcount: '1705'
+ht-degree: 91%
 
 ---
 
@@ -20,6 +20,7 @@ CJA 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2023 年 4 月** |  |
+| 有关使用过滤器作为维度的视频 | <p>更新了有关使用过滤器作为维度的视频。 此视频链接自 [创建过滤器](/help/components/filters/create-filters.md) 页面。</p> <p>以下是视频的直接链接： [在Analysis Workspace中将过滤器用作维度](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p> |
 | 过滤器文档 | 添加了有关使用 [过滤器生成器](/help/components/filters/filter-builder.md). <p>简化了 [创建过滤器](/help/components/filters/create-filters.md) 和 [过滤器概述](/help/components/filters/filters-overview.md).</p> |
 | 更新了实验面板文档 | 在 [解释非随机维度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized). |
 | 项目过滤器（临时和快速过滤器） | 简化了有关项目过滤器的文档并删除了重复信息。 现在，创建临时过滤器的步骤与 [创建快速过滤器](/help/components/filters/quick-filters.md). |

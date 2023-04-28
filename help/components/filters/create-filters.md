@@ -2,10 +2,10 @@
 title: 创建过滤器
 description: 了解过滤器创建用户界面。
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
-source-git-commit: d09cff0db8b02af1f0495faceb9ee1fc5fa0a41d
+source-git-commit: a4ff2b48a85730f6ded56f207b5cc1ece6a3d3ab
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 58%
+source-wordcount: '309'
+ht-degree: 56%
 
 ---
 
@@ -29,4 +29,4 @@ ht-degree: 58%
 | 根据选定的内容创建过滤器 | 创建内联过滤器。该过滤器只适用于打开的项目并且不能另存为 CJA 过滤器。<p> 1. 选择要成为过滤器一部分的表行。2. 右键单击选定的内容。3. 单击&#x200B;*从所选内容创建过滤器*。 |
 | 工作区[!UICONTROL 组件] > [!UICONTROL 新过滤器] | 屏幕上会显示“过滤器生成器”。有关过滤器的更多信息，请参阅[过滤器生成器](/help/components/filters/filter-builder.md)。 |
 | “共享”>“共享项目”或“共享”>“策划项目数据” | 在 [共享项目](/help/analysis-workspace/curate-share/share-projects.md) 或 [组织项目](/help/analysis-workspace/curate-share/curate.md)，了解如何在为收件人提供的共享分析中使用应用到项目的过滤器。 |
-| 使用过滤器作为维度 | 以下视频演示了如何将过滤器用作维度：(**注意：** 此视频使用术语“区段”而不是“过滤器”。 但是，功能是相同的。) <p>[在 Analysis Workspace 中将区段用作维度](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/applying-segments/using-segments-as-dimensions-in-analysis-workspace.html?lang=zh-Hans)</p> |
+| 使用过滤器作为维度 | 以下视频演示了如何将过滤器用作维度：  <p>[在Analysis Workspace中将过滤器用作维度](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html)</p> |
