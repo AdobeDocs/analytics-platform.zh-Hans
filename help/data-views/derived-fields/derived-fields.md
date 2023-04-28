@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 hide: true
 hidefromtoc: true
-source-git-commit: 3fb99165104ad4045aed0b9f6867b21acf2a11f8
+source-git-commit: cf36e6c662835b10c60f400c95e341865a9e56b1
 workflow-type: tm+mt
-source-wordcount: '3040'
+source-wordcount: '3057'
 ht-degree: 9%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 9%
 
 # 派生字段
 
-派生字段是Customer Journey Analytics(CJA)中实时报表功能的重要方面。 利用派生（自定义）字段，可通过可自定义的规则生成器，即时定义（通常复杂）的数据操作。 然后，您可以在工作区中将该派生字段用作组件（量度或维度），甚至可以在数据视图中进一步定义为组件。
+派生字段是Customer Journey Analytics(CJA)中实时报表功能的一个重要方面。 利用派生（自定义）字段，可通过可自定义的规则生成器，即时定义（通常复杂）的数据操作。 然后，您可以将该派生字段用作 [工作区](../../analysis-workspace/home.md) 或在 [数据视图](../data-views.md).
 
-与转换或处理CJA外其他位置的数据相比，派生字段可节省大量时间和精力。 例如数据准备、数据Distiller，或在提取转换加载(ETL)/提取加载转换(ELT)流程中。
+与转换或处理CJA外其他位置的数据相比，派生字段可节省大量时间和精力。 例如 [数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans), [数据Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)，或在您自己的提取转换加载(ETL)/提取加载转换(ELT)流程中。
 
-派生字段定义为 [数据视图](../data-views.md)、和基于一组函数，并应用于可用的标准和/或架构字段。
+派生字段定义为 [数据视图](../data-views.md)，基于一组函数，并应用于可用的标准和/或架构字段。
 
 示例用例包括：
 
