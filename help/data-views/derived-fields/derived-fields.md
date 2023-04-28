@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 hide: true
 hidefromtoc: true
-source-git-commit: cf36e6c662835b10c60f400c95e341865a9e56b1
+source-git-commit: 35a1a93a43869abab6e53ffb1d02edb5fad9a0c1
 workflow-type: tm+mt
-source-wordcount: '3057'
+source-wordcount: '3062'
 ht-degree: 9%
 
 ---
@@ -15,18 +15,19 @@ ht-degree: 9%
 
 # 派生字段
 
+{{release-limited-testing}}
+
 派生字段是Customer Journey Analytics(CJA)中实时报表功能的一个重要方面。 利用派生（自定义）字段，可通过可自定义的规则生成器，即时定义（通常复杂）的数据操作。 然后，您可以将该派生字段用作 [工作区](../../analysis-workspace/home.md) 或在 [数据视图](../data-views.md).
 
 与转换或处理CJA外其他位置的数据相比，派生字段可节省大量时间和精力。 例如 [数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans), [数据Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)，或在您自己的提取转换加载(ETL)/提取加载转换(ELT)流程中。
 
-派生字段定义为 [数据视图](../data-views.md)，基于一组函数，并应用于可用的标准和/或架构字段。
+派生字段定义为 [数据视图](../data-views.md)，基于一组定义为规则的函数，并应用于可用的标准和/或架构字段。
 
 示例用例包括：
 
 - 定义一个自定义的“页面名称”字段，以更正不正确收集的页面名称值，从而更正页面名称值。
 
 - 定义自定义营销渠道字段，以根据一个或多个条件（例如URL参数、页面URL、页面名称）确定适当的营销渠道。
-
 
 ## 自定义字段界面
 
@@ -37,7 +38,7 @@ ht-degree: 9%
 
 |  | 名称 | 描述 |
 |---------|----------|--------|
-| 1 | **选择器** | 您可以使用选择器区域选择并拖放您的 ![函数](assets/Smock_Function_18_N.svg) 函数，![函数模板图标](assets/Smock_FileTemplate_18_N.svg) 函数模板，![架构字段图标](assets/Smock_Folder_18_N.svg) 架构字段，或![“标准字段”图标](assets/Smock_DragHandle_18_N.svg)标准字段。 <br/>使用下拉菜单选择 [!UICONTROL 函数], [!UICONTROL 函数模板], [!UICONTROL 架构字段]和 [!UICONTROL 标准字段].<br/>您可以使用“搜索”框搜索函数、函数模板、架构和标准字段。 <br/>您可以通过选择 ![“过滤器”图标](assets/Smock_Filter_18_N.svg) 在 [!UICONTROL 过滤字段依据] 对话框。 您可以使用 ![关闭图标](assets/CrossSize75.svg) 的值。 |
+| 1 | **选择器** | 您可以使用选择器区域选择并拖放您的 ![函数](assets/Smock_Function_18_N.svg) 函数，![函数模板图标](assets/Smock_FileTemplate_18_N.svg) 函数模板，![架构字段图标](assets/Smock_Folder_18_N.svg) 架构字段，或![“标准字段”图标](assets/Smock_DragHandle_18_N.svg)标准字段。 <br/>使用下拉菜单选择 [!UICONTROL 函数], [!UICONTROL 函数模板], [!UICONTROL 架构字段]和 [!UICONTROL 标准字段].<br/>您可以使用 ![“搜索”图标](assets/Smock_Search_18_N.svg) 搜索框。 <br/>您可以通过选择 ![“过滤器”图标](assets/Smock_Filter_18_N.svg) 在 [!UICONTROL 过滤字段依据] 对话框。 您可以使用 ![关闭图标](assets/CrossSize75.svg) 的值。 |
 | 2 | **规则生成器** | 您可以使用一个或多个规则按顺序构建自定义字段。 规则是函数的特定实现，因此始终只与一个函数关联。 通过将函数拖放到规则生成器中来创建规则。 函数类型确定规则的界面。<br/>请参阅 [规则界面](#rule-interface) 以了解更多信息。 <br/>您可以在规则生成器中已有的可用规则之间，在开始、结束或插入函数。 规则生成器中的最后一个规则确定自定义字段的最终输出。 |
 | 3 | **[!UICONTROL **&#x200B;字段设置&#x200B;**]** | 您可以命名并描述自定义字段，并检查其字段类型。 |
 | 4 | **[!UICONTROL **&#x200B;最终输出&#x200B;**]** | 此区域会根据过去30天的数据以及您对规则生成器中自定义字段所做的更改，即时显示输出值的更新预览。 |
