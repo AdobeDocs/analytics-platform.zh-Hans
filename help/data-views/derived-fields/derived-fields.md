@@ -5,13 +5,13 @@ solution: Customer Journey Analytics
 feature: Data Views
 hide: true
 hidefromtoc: true
-source-git-commit: 35a1a93a43869abab6e53ffb1d02edb5fad9a0c1
+exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
+source-git-commit: 3aa2f57e7cd11b013369ad80d0181bccb48eebe1
 workflow-type: tm+mt
-source-wordcount: '3062'
+source-wordcount: '3225'
 ht-degree: 9%
 
 ---
-
 
 # 派生字段
 
@@ -153,14 +153,21 @@ ht-degree: 9%
 
 ## 函数引用
 
-对于每个受支持的函数，请查找以下详细信息：
+对于每个受支持的函数，请在下面找到详细信息：
 
-- 输入、运算符和产出
+- 规范：
+   - 输入数据类型：支持的数据类型，
+   - 输入：输入的可能值，
+   - 包含的运算符：此函数支持的运算符（如果有），
+   - 限制：使用此函数可在派生字段中使用的最大规则数，
+   - 输出。
 
 - 用例包括：
    - 定义自定义字段前的数据
    - 如何定义自定义字段
    - 定义自定义字段后的数据
+
+- 依赖关系（可选）
 
 
 <!-- Concatenate -->
@@ -171,11 +178,11 @@ ht-degree: 9%
 
 +++ 详细信息
 
-## 输入/运算符/输出 {#concatenate-io}
+## 规范 {#concatenate-io}
 
-| 输入数据类型 | 输入 | 包含的运算符 | 输出 |
-|---|---|---|---|
-| <p>字符串</p> | <ul><li>要组合的两个或多个值<ul><li>字段</li><li>从前一个规则派生的值</li><li>用户输入的值</li></ul></li><li>分隔符<ul><li>输入或选择每个值的分隔符</li></ul></li> </ul> | <p>不适用</p> | <p>新建自定义字段</p> |
+| 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
+|---|---|---|:--:|---|
+| <p>字符串</p> | <ul><li>要组合的两个或多个值<ul><li>字段</li><li>从前一个规则派生的值</li><li>用户输入的值</li></ul></li><li>分隔符<ul><li>输入或选择每个值的分隔符</li></ul></li> </ul> | <p>不适用</p> | <p>2</p> | <p>新建自定义字段</p> |
 
 {style="table-layout:auto"}
 
@@ -200,7 +207,7 @@ ht-degree: 9%
 所需的报表应当类似于：
 
 | 源/目标 | 预订 |
-|---|---|
+|----|---:|
 | SLC-MCO | 2 |
 | SLC-LAX | 1 |
 | SLC-SEA | 1 |
@@ -212,7 +219,7 @@ ht-degree: 9%
 ### 数据之前 {#concatenate-uc-databefore}
 
 | Origin | 目标 |
-|----|----|
+|----|---:|
 | SLC | MCO |
 | SLC | LAX |
 | SLC | SEA |
@@ -249,11 +256,11 @@ ht-degree: 9%
 
 +++ 详细信息
 
-## 输入/运算符/输出 {#casewhen-io}
+## 规范 {#casewhen-io}
 
-| 输入数据类型 | 输入 | 包含的运算符 | 输出 |
-|---|---|---|---|
-| <ul><li>字符串</li><li>数值</li><li>Date/Date-Time</li></ul> | <ul><li>输入字段</li><li>条件</li></ul> | <p><u>字符串</u></p><ul><li>等于</li><li>等于任何词语</li><li>包含该短语</li><li>包含任何词语</li><li>包含所有词语</li><li>开始于</li><li>以任意词开头</li><li>结束于</li><li>以任何术语结尾</li><li>不等于</li><li>不等于任何词语</li><li>不包含该短语</li><li>不包含任何词语</li><li>不包含所有词语</li><li>未始于</li><li>不以任何术语开头</li><li>未止于</li><li>不以任何术语结尾</li><li>已设置</li><li>未设置</li></ul><p><u>数值</u></p><ul><li>等于</li><li>不等于</li><li>高于</li><li>高于或等于</li><li>低于</li><li>低于或等于</li><li>已设置</li><li>未设置</li></ul><p><u>日期</u></p><ul><li>等于</li><li>不等于</li><li>晚于</li><li>晚于或等于</li><li>在之前</li><li>早于或等于</li><li>已设置</li><li>未设置</li></ul> | <p>新建自定义字段</p> |
+| 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
+|---|---|---|:---:|---|
+| <ul><li>字符串</li><li>数值</li><li>Date/Date-Time</li></ul> | <ul><li>输入字段</li><li>条件</li></ul> | <p><u>字符串</u></p><ul><li>等于</li><li>等于任何词语</li><li>包含该短语</li><li>包含任何词语</li><li>包含所有词语</li><li>开始于</li><li>以任意词开头</li><li>结束于</li><li>以任何术语结尾</li><li>不等于</li><li>不等于任何词语</li><li>不包含该短语</li><li>不包含任何词语</li><li>不包含所有词语</li><li>未始于</li><li>不以任何术语开头</li><li>未止于</li><li>不以任何术语结尾</li><li>已设置</li><li>未设置</li></ul><p><u>数值</u></p><ul><li>等于</li><li>不等于</li><li>高于</li><li>高于或等于</li><li>低于</li><li>低于或等于</li><li>已设置</li><li>未设置</li></ul><p><u>日期</u></p><ul><li>等于</li><li>不等于</li><li>晚于</li><li>晚于或等于</li><li>在之前</li><li>早于或等于</li><li>已设置</li><li>未设置</li></ul> | <p>5</p> | <p>新建自定义字段</p> |
 
 {style="table-layout:auto"}
 
@@ -273,7 +280,7 @@ ht-degree: 9%
 如果您的网站收到以下包含反向链接和页面URL的示例事件，则应按以下方式标识这些事件：
 
 | 事件 | 反向链接 | 页面 URL | 营销渠道 |
-|:----:|----|----|----|
+|:--:|----|----|----|
 | 1 | `https://facebook.com` | `https://site.com/home` | 自然社交 |
 | 2 | `https://abc.com` | `https://site.com/?cid=ds_12345678` | 显示 |
 | 3 |  | `https://site.com/?cid=em_12345678` | 电子邮件 |
@@ -425,8 +432,6 @@ ht-degree: 9%
 | 21 |
 | 8 |
 
-{style="table-layout:auto"}
-
 ### 自定义字段 {#casewhen-uc3-customfield}
 
 您定义 `Trip Duration (bucketed)` 自定义字段。 您可以创建以下内容 **[!UICONTROL **&#x200B;大小写&#x200B;**]** 规则生成器中的规则。 此规则将逻辑应用于存储旧 **[!UICONTROL **&#x200B;行程持续时间&#x200B;**]** 字段值分为三个值： `short trip`, `medium  trip`和 `long trip`.
@@ -451,6 +456,32 @@ ht-degree: 9%
 | 长途旅行 |
 | 长途旅行 |
 
+
+## 依赖关系
+
+选择和设置值时，会应用以下依赖项。
+
+
+|  | 数据集依赖关系 |
+|:---:|----|
+| <span style='color: red'>A</span> | 您的值 _选择_ 在同一 [!UICONTROL 如果], [!UICONTROL Else If] 构造(使用 [!UICONTROL 和] 或 [!UICONTROL 或])必须源于同一数据集。 |
+| <span style='color: red'>B</span> | 所有值 _set_ 在构建和规则之间必须源自同一数据集。 |
+| <span style='color: blue'>C</span> | 您的值 _选择_ 跨 [!UICONTROL 如果], [!UICONTROL Else If] 规则中的构造 _not_ 必须源于同一数据集。 |
+
+{style="table-layout:auto"}
+
+![数据集依赖项时的大小写](assets/case-when-datasets.png)
+
+
+|  | 类型依赖关系 |
+|:---:|----|
+| <span style='color: red'>D</span> | 您的值类型 _set_ 整个规则必须相同。 |
+| <span style='color: blue'>E</span> | 您的值类型 _选择_ 规则中的结构内或跨结构可以是任何类型（字符串、数字、日期）。 |
+
+{style="table-layout:auto"}
+
+![类型依赖项时的大小写](assets/case-when-types.png)
+
 +++
 
 
@@ -462,11 +493,11 @@ ht-degree: 9%
 
 +++ 详细信息
 
-## 输入/运算符/输出 {#findreplace-io}
+## 规范 {#findreplace-io}
 
-| 输入数据类型 | 输入 | 包含的运算符 | 输出 |
-|---|---|---|---|
-| <p>字符串</p> | <ul><li><span>“替换时间”字段标准</span></li><li><span>“替换为”字段值</span><ul><li><span>用户输入</span></li><li><span>单独字段</span></li></ul></li></ul> | <p><u>字符串</u></p><ul><li>全部查找并全部替换</li></ul> | <p>新建自定义字段</p> |
+| 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
+|---|---|---|:---:|---|
+| <p>字符串</p> | <ul><li><span>“替换时间”字段标准</span></li><li><span>“替换为”字段值</span><ul><li><span>用户输入</span></li><li><span>单独字段</span></li></ul></li></ul> | <p><u>字符串</u></p><ul><li>全部查找并全部替换</li></ul> | <p>1</p> | <p>新建自定义字段</p> |
 
 {style="table-layout:auto"}
 
@@ -478,16 +509,16 @@ ht-degree: 9%
 **原始报表**
 
 | 外部营销渠道 | 会话 |
-|---|---|
+|---|--:|
 | 电子邮件营销 | 500 |
-| email%20marketing | 24 |
+| 电子邮件%20marketing | 24 |
 
 {style="table-layout:auto"}
 
 **首选报表**
 
 | 外部营销渠道 | 会话 |
-|---|---|
+|---|--:|
 | 电子邮件营销 | 524 |
 
 
@@ -533,11 +564,11 @@ ht-degree: 9%
 +++ 详细信息
 
 
-## 输入/运算符/输出 {#lookup-io}
+## 规范 {#lookup-io}
 
-| 输入数据类型 | 输入 | 包含的运算符 | 输出 |
-|---|---|---|---|
-| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>Sing字段</li><li>查找文件<ul><li>Key Column（键列）</li><li>新建字段列</li></ul></li></ul> | <p>不适用</p> | <p>新建自定义字段</p> |
+| 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
+|---|---|---|:---:|---|
+| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>Sing字段</li><li>查找文件<ul><li>Key Column（键列）</li><li>新建字段列</li></ul></li></ul> | <p>不适用</p> | <p>5</p> | <p>新建自定义字段</p> |
 
 {style="table-layout:auto"}
 
@@ -652,11 +683,11 @@ ht-degree: 9%
 
 +++ 详细信息
 
-## 输入/运算符/输出 {#urlparse-io}
+## 规范 {#urlparse-io}
 
-| 输入数据类型 | 输入 | 包含的运算符 | 输出 |
-|---|---|---|---|
-| <ul><li>字符串</li></ul> | <ul><li>Sing字段</li><li>解析选项<ul><li>获取协议</li><li>获取主机</li><li>获取路径</li><li>获取查询值<ul><li>查询参数</li></ul></li><li>获取哈希值</li></ul></li></ul></li></ul> | <p>不适用</p> | <p>新建自定义字段</p> |
+| 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
+|---|---|---|:---:|---|
+| <ul><li>字符串</li></ul> | <ul><li>Sing字段</li><li>解析选项<ul><li>获取协议</li><li>获取主机</li><li>获取路径</li><li>获取查询值<ul><li>查询参数</li></ul></li><li>获取哈希值</li></ul></li></ul></li></ul> | <p>不适用</p> | <p>5</p> | <p>新建自定义字段</p> |
 
 {style="table-layout:auto"}
 
