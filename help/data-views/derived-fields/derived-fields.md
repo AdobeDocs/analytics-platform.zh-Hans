@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 3aa2f57e7cd11b013369ad80d0181bccb48eebe1
+source-git-commit: 5df8086fd91bd10fa976468a936723e4c3ebbb85
 workflow-type: tm+mt
-source-wordcount: '3225'
+source-wordcount: '3221'
 ht-degree: 9%
 
 ---
@@ -461,11 +461,10 @@ ht-degree: 9%
 
 选择和设置值时，会应用以下依赖项。
 
-
 |  | 数据集依赖关系 |
 |:---:|----|
 | <span style='color: red'>A</span> | 您的值 _选择_ 在同一 [!UICONTROL 如果], [!UICONTROL Else If] 构造(使用 [!UICONTROL 和] 或 [!UICONTROL 或])必须源于同一数据集。 |
-| <span style='color: red'>B</span> | 所有值 _set_ 在构建和规则之间必须源自同一数据集。 |
+| <span style='color: red'>B</span> | 所有值 _set_ 规则的数据源必须是同一数据集。 |
 | <span style='color: blue'>C</span> | 您的值 _选择_ 跨 [!UICONTROL 如果], [!UICONTROL Else If] 规则中的构造 _not_ 必须源于同一数据集。 |
 
 {style="table-layout:auto"}
@@ -475,7 +474,7 @@ ht-degree: 9%
 
 |  | 类型依赖关系 |
 |:---:|----|
-| <span style='color: red'>D</span> | 您的值类型 _set_ 整个规则必须相同。 |
+| <span style='color: red'>D</span> | 您的值类型 _set_ 规则必须相同。 |
 | <span style='color: blue'>E</span> | 您的值类型 _选择_ 规则中的结构内或跨结构可以是任何类型（字符串、数字、日期）。 |
 
 {style="table-layout:auto"}
