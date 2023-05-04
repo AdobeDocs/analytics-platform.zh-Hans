@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 5df8086fd91bd10fa976468a936723e4c3ebbb85
+source-git-commit: cd1228c18a665d3411039e9ca04a30d2ac7d9cb2
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3260'
 ht-degree: 9%
 
 ---
@@ -167,7 +167,7 @@ ht-degree: 9%
    - 如何定义自定义字段
    - 定义自定义字段后的数据
 
-- 依赖关系（可选）
+- 约束（可选）
 
 
 <!-- Concatenate -->
@@ -457,29 +457,25 @@ ht-degree: 9%
 | 长途旅行 |
 
 
-## 依赖关系
+## 约束
 
-选择和设置值时，会应用以下依赖项。
+CJA使用嵌套的容器模型来实现其功能。 使用规则生成器时，此嵌套容器模型可确定约束。 CJA使用的默认嵌套容器模型的结构如下图所示：
 
-|  | 数据集依赖关系 |
+<p align="center">
+<img src="./assets/containers.png" width="70%" valign="middle">
+</p>
+
+请参阅 [容器](../create-dataview.md#containers) 和 [过滤器容器](../../components/filters/filters-overview.md#filter-containers) 以了解更多背景信息。
+
+以下容器约束在 _选择_ 和 _设置_ 值。
+
+|  | 约束 |
 |:---:|----|
-| <span style='color: red'>A</span> | 您的值 _选择_ 在同一 [!UICONTROL 如果], [!UICONTROL Else If] 构造(使用 [!UICONTROL 和] 或 [!UICONTROL 或])必须源于同一数据集。 |
-| <span style='color: red'>B</span> | 所有值 _set_ 规则的数据源必须是同一数据集。 |
-| <span style='color: blue'>C</span> | 您的值 _选择_ 跨 [!UICONTROL 如果], [!UICONTROL Else If] 规则中的构造 _not_ 必须源于同一数据集。 |
+| **<span style='color: red'>A</span>** | 您的值 _选择_ 在同一 [!UICONTROL 如果], [!UICONTROL Else If] 构造(使用 [!UICONTROL 和] 或 [!UICONTROL 或])必须源于同一容器，并且可以是任何类型（字符串） ![字符串](assets/Smock_ABC_18_N.svg)，数字 ![数值](assets/Smock_123_18_N.svg)，等等)。 <br/>![依赖项A](assets/dependency-a.png) |
+| **<span style='color: red'>B</span>** | 所有值 _set_ 跨规则必须来自同一容器，并且具有相同类型或相同类型的自定义值。 <br/> ![依赖项B](assets/dependency-b.png) |
+| **<span style='color: blue'>C</span>** | 您的值 _选择_ 跨 [!UICONTROL 如果], [!UICONTROL Else If] 规则中的构造 _not_ 必须源自同一容器，并且 _not_ 必须是同一类型。 <br/> ![依赖项C](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
-
-![数据集依赖项时的大小写](assets/case-when-datasets.png)
-
-
-|  | 类型依赖关系 |
-|:---:|----|
-| <span style='color: red'>D</span> | 您的值类型 _set_ 规则必须相同。 |
-| <span style='color: blue'>E</span> | 您的值类型 _选择_ 规则中的结构内或跨结构可以是任何类型（字符串、数字、日期）。 |
-
-{style="table-layout:auto"}
-
-![类型依赖项时的大小写](assets/case-when-types.png)
 
 +++
 
@@ -567,7 +563,7 @@ ht-degree: 9%
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|:---:|---|
-| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>Sing字段</li><li>查找文件<ul><li>Key Column（键列）</li><li>新建字段列</li></ul></li></ul> | <p>不适用</p> | <p>5</p> | <p>新建自定义字段</p> |
+| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>单个字段</li><li>查找文件<ul><li>Key Column（键列）</li><li>新建字段列</li></ul></li></ul> | <p>不适用</p> | <p>5</p> | <p>新建自定义字段</p> |
 
 {style="table-layout:auto"}
 
@@ -686,7 +682,7 @@ ht-degree: 9%
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|:---:|---|
-| <ul><li>字符串</li></ul> | <ul><li>Sing字段</li><li>解析选项<ul><li>获取协议</li><li>获取主机</li><li>获取路径</li><li>获取查询值<ul><li>查询参数</li></ul></li><li>获取哈希值</li></ul></li></ul></li></ul> | <p>不适用</p> | <p>5</p> | <p>新建自定义字段</p> |
+| <ul><li>字符串</li></ul> | <ul><li>单个字段</li><li>解析选项<ul><li>获取协议</li><li>获取主机</li><li>获取路径</li><li>获取查询值<ul><li>查询参数</li></ul></li><li>获取哈希值</li></ul></li></ul></li></ul> | <p>不适用</p> | <p>5</p> | <p>新建自定义字段</p> |
 
 {style="table-layout:auto"}
 
