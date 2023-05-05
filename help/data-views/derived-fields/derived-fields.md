@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 38f1e711ef0033e6e8492af992477f679de818a9
+source-git-commit: b7338c66ba3f78bd082e6d8da43b91b5517f48ac
 workflow-type: tm+mt
-source-wordcount: '3281'
+source-wordcount: '3265'
 ht-degree: 9%
 
 ---
@@ -17,46 +17,46 @@ ht-degree: 9%
 
 {{release-limited-testing}}
 
-派生字段是Customer Journey Analytics(CJA)中实时报表功能的一个重要方面。 利用派生（自定义）字段，可通过可自定义的规则生成器，即时定义（通常复杂）的数据操作。 然后，您可以将该派生字段用作 [工作区](../../analysis-workspace/home.md) 或在 [数据视图](../data-views.md).
+派生字段是Customer Journey Analytics(CJA)中实时报表功能的一个重要方面。 利用派生字段，可通过可自定义的规则生成器，即时定义（通常复杂）数据操作。 然后，您可以将该派生字段用作 [工作区](../../analysis-workspace/home.md) 或在 [数据视图](../data-views.md).
 
 与转换或处理CJA外其他位置的数据相比，派生字段可节省大量时间和精力。 例如 [数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans), [数据Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)，或在您自己的提取转换加载(ETL)/提取加载转换(ELT)流程中。
 
-派生字段定义为 [数据视图](../data-views.md)，基于一组定义为规则的函数，并应用于可用的标准和/或架构字段。
+派生字段在 [数据视图](../data-views.md)，基于一组定义为规则的函数，并应用于可用的标准和/或架构字段。
 
 示例用例包括：
 
-- 定义一个自定义的“页面名称”字段，以更正不正确收集的页面名称值，从而更正页面名称值。
+- 定义派生的“页面名称”字段，以更正不正确收集的页面名称值，从而更正页面名称值。
 
-- 定义自定义营销渠道字段，以根据一个或多个条件（例如URL参数、页面URL、页面名称）确定适当的营销渠道。
+- 定义派生的“营销渠道”字段，以根据一个或多个条件（例如URL参数、页面URL、页面名称）确定适当的营销渠道。
 
-## 自定义字段界面
+## 派生字段接口
 
-创建或编辑自定义字段时，使用自定义字段界面。
+创建或编辑派生字段时，使用派生字段界面。
 
-![自定义字段对话框](assets/custom-field-dialog.png)
+![派生字段对话框](assets/derived-field-dialog.png)
 
 
 |  | 名称 | 描述 |
 |---------|----------|--------|
 | 1 | **选择器** | 您可以使用选择器区域选择并拖放您的 ![函数](assets/Smock_Function_18_N.svg) 函数，![函数模板图标](assets/Smock_FileTemplate_18_N.svg) 函数模板，![架构字段图标](assets/Smock_Folder_18_N.svg) 架构字段，或![“标准字段”图标](assets/Smock_DragHandle_18_N.svg)标准字段。 <br/>使用下拉菜单选择 [!UICONTROL 函数], [!UICONTROL 函数模板], [!UICONTROL 架构字段]和 [!UICONTROL 标准字段].<br/>您可以使用 ![“搜索”图标](assets/Smock_Search_18_N.svg) 搜索框。 <br/>您可以通过选择 ![“过滤器”图标](assets/Smock_Filter_18_N.svg) 在 [!UICONTROL 过滤字段依据] 对话框。 您可以使用 ![关闭图标](assets/CrossSize75.svg) 的值。 |
-| 2 | **规则生成器** | 您可以使用一个或多个规则按顺序构建自定义字段。 规则是函数的特定实现，因此始终只与一个函数关联。 通过将函数拖放到规则生成器中来创建规则。 函数类型确定规则的界面。<br/>请参阅 [规则界面](#rule-interface) 以了解更多信息。 <br/>您可以在规则生成器中已有的可用规则之间，在开始、结束或插入函数。 规则生成器中的最后一个规则确定自定义字段的最终输出。 |
-| 3 | **[!UICONTROL **&#x200B;字段设置&#x200B;**]** | 您可以命名并描述自定义字段，并检查其字段类型。 |
-| 4 | **[!UICONTROL **&#x200B;最终输出&#x200B;**]** | 此区域会根据过去30天的数据以及您对规则生成器中自定义字段所做的更改，即时显示输出值的更新预览。 |
+| 2 | **规则生成器** | 您可以使用一个或多个规则按顺序构建派生字段。 规则是函数的特定实现，因此始终只与一个函数关联。 通过将函数拖放到规则生成器中来创建规则。 函数类型确定规则的界面。<br/>请参阅 [规则界面](#rule-interface) 以了解更多信息。 <br/>您可以在规则生成器中已有的可用规则之间，在开始、结束或插入函数。 规则生成器中的最后一个规则确定派生字段的最终输出。 |
+| 3 | **[!UICONTROL **&#x200B;字段设置&#x200B;**]** | 您可以命名并描述派生字段，并检查其字段类型。 |
+| 4 | **[!UICONTROL **&#x200B;最终输出&#x200B;**]** | 此区域会根据过去30天的数据以及您对规则生成器中的派生字段所做的更改，即时显示输出值的更新预览。 |
 
 {style="table-layout:auto"}
 
-首次访问自定义字段界面时， [!UICONTROL 从字段模板开始] 向导。
+## 字段模板向导
 
-![自定义字段模板向导对话框](assets/field-template-dialog.png)
+首次访问派生字段界面时， [!UICONTROL 从字段模板开始] 向导。
 
 1. 选择最能描述您尝试创建的字段类型的模板。
 2. 选择 **[!UICONTROL **&#x200B;选择&#x200B;**]** 按钮继续。
 
-“自定义字段”对话框中填充了您所选字段类型的必需或有用的规则（和函数）。 请参阅 [函数模板](#function-templates) 以了解有关可用模板的更多信息。
+“派生字段”对话框中填充了对所选字段类型必需或有用的规则（和函数）。 请参阅 [函数模板](#function-templates) 以了解有关可用模板的更多信息。
 
 ## 规则界面
 
-在规则生成器中定义规则时，您会使用规则界面。
+在规则生成器中定义规则时，您将使用规则界面。
 
 ![规则界面](assets/rule-interface.png)
 
@@ -69,22 +69,22 @@ ht-degree: 9%
 
 {style="table-layout:auto"}
 
-## 创建自定义字段
+## 创建派生字段
 
 1. 选择现有的数据视图或创建数据视图。 请参阅 [数据视图](../data-views.md) 以了解更多信息。
 
 2. 选择 **[!UICONTROL **&#x200B;组件&#x200B;**]** 选项卡。
 
-3. 选择 **[!UICONTROL **&#x200B;创建自定义字段&#x200B;**]** 从左边栏。
+3. 选择 **[!UICONTROL **&#x200B;创建派生字段&#x200B;**]** 从左边栏。
 
-4. 要定义自定义字段，请使用 [!UICONTROL 创建自定义字段] 界面。 请参阅 [自定义字段界面](#custom-field-interface).
+4. 要定义派生字段，请使用 [!UICONTROL 创建派生字段] 界面。 请参阅 [派生字段接口](#derived-field-interface).
 
-   要保存新的自定义字段，请选择 **[!UICONTROL **&#x200B;保存&#x200B;**]**.
+   要保存新的派生字段，请选择 **[!UICONTROL **&#x200B;保存&#x200B;**]**.
 
-5. 您的新自定义字段将添加到 **[!UICONTROL **&#x200B;自定义字段>**]** 容器，作为 **[!UICONTROL **&#x200B;架构字段&#x200B;**]** 的双曲余切值。
+5. 您的新派生字段将添加到 **[!UICONTROL **&#x200B;派生字段>**]** 容器，作为 **[!UICONTROL **&#x200B;架构字段&#x200B;**]** 的双曲余切值。
 
 
-## 编辑自定义字段
+## 编辑派生字段
 
 1. 选择现有数据视图。 请参阅 [数据视图](../data-views.md) 以了解更多信息。
 
@@ -92,19 +92,19 @@ ht-degree: 9%
 
 3. 选择 **[!UICONTROL **&#x200B;架构字段&#x200B;**]** 选项卡 [!UICONTROL 连接] 窗格。
 
-4. 选择 **[!UICONTROL **&#x200B;自定义字段>**]** 容器。
+4. 选择 **[!UICONTROL **&#x200B;派生字段>**]** 容器。
 
-5. 将鼠标悬停在要编辑的自定义字段上，然后选择 ![“编辑”图标](assets/Smock_Edit_18_N.svg).
+5. 将鼠标悬停在要编辑的派生字段上，然后选择 ![“编辑”图标](assets/Smock_Edit_18_N.svg).
 
-6. 要编辑自定义字段，请使用 [!UICONTROL 编辑自定义字段] 界面。 请参阅 [自定义字段界面](#custom-field-interface).
+6. 要编辑派生字段，请使用 [!UICONTROL 编辑派生字段] 界面。 请参阅 [派生字段接口](#derived-field-interface).
 
-   - 选择 **[!UICONTROL **&#x200B;保存&#x200B;**]** 以保存更新的自定义字段。
+   - 选择 **[!UICONTROL **&#x200B;保存&#x200B;**]** 以保存更新的派生字段。
 
-   - 选择 **[!UICONTROL **&#x200B;取消&#x200B;**]** 取消您对自定义字段所做的任何更改。
+   - 选择 **[!UICONTROL **&#x200B;取消&#x200B;**]** 取消您对派生字段所做的任何更改。
 
-   - 选择 **[!UICONTROL **&#x200B;另存为&#x200B;**]** 将自定义字段另存为新的自定义字段。 新的自定义字段与原始编辑的自定义字段具有相同的名称，其中 `(copy)` 中。
+   - 选择 **[!UICONTROL **&#x200B;另存为&#x200B;**]** 将派生字段另存为新派生字段。 新派生字段与原始编辑的派生字段具有相同的名称，其中 `(copy)` 中。
 
-## 删除自定义字段
+## 删除派生字段
 
 1. 选择现有数据视图。 请参阅 [数据视图](../data-views.md) 以了解更多信息。
 
@@ -112,20 +112,20 @@ ht-degree: 9%
 
 3. 选择 **[!UICONTROL **&#x200B;架构字段&#x200B;**]** 选项卡 [!UICONTROL 连接] 中。
 
-4. 选择 **[!UICONTROL **&#x200B;自定义字段>**]** 容器。
+4. 选择 **[!UICONTROL **&#x200B;派生字段>**]** 容器。
 
-5. 将鼠标悬停在要删除的自定义字段上，然后选择 ![“编辑”图标](assets/Smock_Edit_18_N.svg).
+5. 将鼠标悬停在要删除的派生字段上，然后选择 ![“编辑”图标](assets/Smock_Edit_18_N.svg).
 
-6. 使用中 **[!UICONTROL **&#x200B;编辑自定义字段&#x200B;**]** 界面中，选择删除。
+6. 使用中 **[!UICONTROL **&#x200B;编辑派生字段&#x200B;**]** 界面中，选择删除。
 
-   A [!UICONTROL 删除组件] 对话框要求您确认删除。 考虑数据视图外部对自定义字段可能存在的任何外部引用。
+   A [!UICONTROL 删除组件] 对话框要求您确认删除。 考虑数据视图外的派生字段可能存在的任何外部引用。
 
-   - 选择 **[!UICONTROL **&#x200B;继续&#x200B;**]** 删除自定义字段。
+   - 选择 **[!UICONTROL **&#x200B;继续&#x200B;**]** 删除派生字段。
 
 
 ## 函数模板
 
-要快速为特定用例创建自定义字段，可使用函数模板。 这些函数模板可从自定义字段界面的选择器区域访问，或在 [!UICONTROL 从字段模板开始] 向导。
+为了快速为特定用例创建派生字段，可使用函数模板。 这些函数模板可以从派生字段界面的“选择器”区域访问，或在 [!UICONTROL 从字段模板开始] 向导。
 
 
 ### 营销渠道
@@ -163,9 +163,9 @@ ht-degree: 9%
    - 输出。
 
 - 用例包括：
-   - 定义自定义字段前的数据
-   - 如何定义自定义字段
-   - 定义自定义字段后的数据
+   - 定义派生字段前的数据
+   - 如何定义派生字段
+   - 定义派生字段后的数据
 
 - 约束（可选）
 
@@ -174,7 +174,7 @@ ht-degree: 9%
 
 ### [!DNL Concatenate]
 
-将两个或多个字段、自定义字段或用户输入的值合并到具有定义分隔符的单个字段中。
+将两个或多个字段、派生字段或用户输入的值合并到具有定义分隔符的单个字段中。
 
 +++ 详细信息
 
@@ -182,7 +182,7 @@ ht-degree: 9%
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|:--:|---|
-| <p>字符串</p> | <ul><li>要组合的两个或多个值<ul><li>字段</li><li>从前一个规则派生的值</li><li>用户输入的值</li></ul></li><li>分隔符<ul><li>输入或选择每个值的分隔符</li></ul></li> </ul> | <p>不适用</p> | <p>2</p> | <p>新建自定义字段</p> |
+| <p>字符串</p> | <ul><li>要组合的两个或多个值<ul><li>字段</li><li>从前一个规则派生的值</li><li>用户输入的值</li></ul></li><li>分隔符<ul><li>输入或选择每个值的分隔符</li></ul></li> </ul> | <p>不适用</p> | <p>2</p> | <p>新派生字段</p> |
 
 {style="table-layout:auto"}
 
@@ -228,15 +228,15 @@ ht-degree: 9%
 
 {style="table-layout:auto"}
 
-### 自定义字段 {#concatenate-customfield}
+### 派生字段 {#concatenate-derivedfield}
 
-您定义新 **[!UICONTROL **&#x200B;源 — 目标&#x200B;**]** 自定义字段。 您使用 **[!UICONTROL 连接]** 函数来定义要连接的规则 [!UICONTROL 原始] 和 [!UICONTROL 目标] 字段 `-` [!UICONTROL 分隔符].
+您定义新 **[!UICONTROL **&#x200B;源 — 目标&#x200B;**]** 派生字段。 您使用 **[!UICONTROL 连接]** 函数来定义要连接的规则 [!UICONTROL 原始] 和 [!UICONTROL 目标] 字段 `-` [!UICONTROL 分隔符].
 
 ![[!DNL Concatenate] 规则](assets/concatenate.png)
 
 ### 之后的数据 {#concatenate-dataafter}
 
-| 源 — 目标<br/>（自定义字段） |
+| 源 — 目标<br/>（派生字段） |
 |---|
 | SLC-MCO |
 | SLC-LAX |
@@ -252,7 +252,7 @@ ht-degree: 9%
 
 ### [!DNL Case When]
 
-根据一个或多个字段中的定义条件应用条件。 然后，可使用这些条件根据条件的顺序在新自定义字段中定义值。
+根据一个或多个字段中的定义条件应用条件。 然后，这些条件用于根据条件的顺序定义新派生字段中的值。
 
 +++ 详细信息
 
@@ -260,7 +260,7 @@ ht-degree: 9%
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|:---:|---|
-| <ul><li>字符串</li><li>数值</li><li>Date/Date-Time</li></ul> | <ul><li>输入字段</li><li>条件</li></ul> | <p><u>字符串</u></p><ul><li>等于</li><li>等于任何词语</li><li>包含该短语</li><li>包含任何词语</li><li>包含所有词语</li><li>开始于</li><li>以任意词开头</li><li>结束于</li><li>以任何术语结尾</li><li>不等于</li><li>不等于任何词语</li><li>不包含该短语</li><li>不包含任何词语</li><li>不包含所有词语</li><li>未始于</li><li>不以任何术语开头</li><li>未止于</li><li>不以任何术语结尾</li><li>已设置</li><li>未设置</li></ul><p><u>数值</u></p><ul><li>等于</li><li>不等于</li><li>高于</li><li>高于或等于</li><li>低于</li><li>低于或等于</li><li>已设置</li><li>未设置</li></ul><p><u>日期</u></p><ul><li>等于</li><li>不等于</li><li>晚于</li><li>晚于或等于</li><li>在之前</li><li>早于或等于</li><li>已设置</li><li>未设置</li></ul> | <p>5</p> | <p>新建自定义字段</p> |
+| <ul><li>字符串</li><li>数值</li><li>Date/Date-Time</li></ul> | <ul><li>输入字段</li><li>条件</li></ul> | <p><u>字符串</u></p><ul><li>等于</li><li>等于任何词语</li><li>包含该短语</li><li>包含任何词语</li><li>包含所有词语</li><li>开始于</li><li>以任意词开头</li><li>结束于</li><li>以任何术语结尾</li><li>不等于</li><li>不等于任何词语</li><li>不包含该短语</li><li>不包含任何词语</li><li>不包含所有词语</li><li>未始于</li><li>不以任何术语开头</li><li>未止于</li><li>不以任何术语结尾</li><li>已设置</li><li>未设置</li></ul><p><u>数值</u></p><ul><li>等于</li><li>不等于</li><li>高于</li><li>高于或等于</li><li>低于</li><li>低于或等于</li><li>已设置</li><li>未设置</li></ul><p><u>日期</u></p><ul><li>等于</li><li>不等于</li><li>晚于</li><li>晚于或等于</li><li>在之前</li><li>早于或等于</li><li>已设置</li><li>未设置</li></ul> | <p>5</p> | <p>新派生字段</p> |
 
 {style="table-layout:auto"}
 
@@ -303,9 +303,9 @@ ht-degree: 9%
 
 {style="table-layout:auto"}
 
-### 自定义字段 {#casewhen-uc1-customfield}
+### 派生字段 {#casewhen-uc1-derivedfield}
 
-您定义新 `Marketing Channel` 自定义字段。 您使用 **[!UICONTROL 大小写]** 函数来定义规则，以便根据这两个规则的现有值为其创建值 `Page URL` 和 `Referring URL` 字段。
+您定义新 `Marketing Channel` 派生字段。 您使用 **[!UICONTROL 大小写]** 函数来定义规则，以便根据这两个规则的现有值为其创建值 `Page URL` 和 `Referring URL` 字段。
 
 请注意函数的用法 **[!UICONTROL ** URL解析&#x200B;**]** 定义规则以获取 `Page Url` 和 `Referring Url` 在 **[!UICONTROL **&#x200B;大小写&#x200B;**]** 规则。
 
@@ -359,9 +359,9 @@ ht-degree: 9%
 
 {style="table-layout:auto"}
 
-### 自定义字段 {#casewhen-uc2-customfield}
+### 派生字段 {#casewhen-uc2-derivedfield}
 
-您定义 `Product Finding Methods (new)` 自定义字段。 您可以创建以下内容 **[!UICONTROL **&#x200B;大小写&#x200B;**]** 规则生成器中的规则。 这些规则会将逻辑应用于旧的所有可能变体 **[!UICONTROL **&#x200B;产品查找方法&#x200B;**]** 字段值 `search` 和 `browse` 使用 **[!UICONTROL 包含短语]** 标准。
+您定义 `Product Finding Methods (new)` 派生字段。 您可以创建以下内容 **[!UICONTROL **&#x200B;大小写&#x200B;**]** 规则生成器中的规则。 这些规则会将逻辑应用于旧的所有可能变体 **[!UICONTROL **&#x200B;产品查找方法&#x200B;**]** 字段值 `search` 和 `browse` 使用 **[!UICONTROL 包含短语]** 标准。
 
 ![[!DNL Case When] 规则2](assets/case-when-2.png)
 
@@ -432,9 +432,9 @@ ht-degree: 9%
 | 21 |
 | 8 |
 
-### 自定义字段 {#casewhen-uc3-customfield}
+### 派生字段 {#casewhen-uc3-derivedfield}
 
-您定义 `Trip Duration (bucketed)` 自定义字段。 您可以创建以下内容 **[!UICONTROL **&#x200B;大小写&#x200B;**]** 规则生成器中的规则。 此规则将逻辑应用于存储旧 **[!UICONTROL **&#x200B;行程持续时间&#x200B;**]** 字段值分为三个值： `short trip`, `medium  trip`和 `long trip`.
+您定义 `Trip Duration (bucketed)` 派生字段。 您可以创建以下内容 **[!UICONTROL **&#x200B;大小写&#x200B;**]** 规则生成器中的规则。 此规则将逻辑应用于存储旧 **[!UICONTROL **&#x200B;行程持续时间&#x200B;**]** 字段值分为三个值： `short trip`, `medium  trip`和 `long trip`.
 
 ![[!DNL Case When] 规则3](assets/case-when-3.png)
 
@@ -459,20 +459,22 @@ ht-degree: 9%
 
 ## 约束
 
-CJA使用以Adobe Experience Platform [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans) （体验数据模型）。 此容器模型虽然在性质上是灵活的，但在使用规则生成器时仍会施加一些限制。 CJA使用的默认嵌套容器模型的结构如下图所示：
+CJA使用嵌套的容器结构，该结构建模于Adobe Experience Platform [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans) （体验数据模型）。 请参阅 [容器](../create-dataview.md#containers) 和 [过滤器容器](../../components/filters/filters-overview.md#filter-containers) 以了解更多背景信息。 此容器模型虽然在性质上是灵活的，但在使用规则生成器时仍会施加一些限制。
+
+CJA使用以下默认容器模型：
 
 <p align="center">
-<img src="./assets/containers.png" width="70%" valign="middle">
+<img src="./assets/containers.png" width="50%" valign="middle">
 </p>
 
-请参阅 [容器](../create-dataview.md#containers) 和 [过滤器容器](../../components/filters/filters-overview.md#filter-containers) 以了解更多背景信息。
 
-以下容器约束在 _选择_ 和 _设置_ 值。
+
+以下约束在 _选择_ 和 _设置_ 值。
 
 |  | 约束 |
 |:---:|----|
 | **<span style='color: red'>A</span>** | 您的值 _选择_ 在同一 [!UICONTROL 如果], [!UICONTROL Else If] 构造(使用 [!UICONTROL 和] 或 [!UICONTROL 或])必须源于同一容器，并且可以是任何类型（字符串） ![字符串](assets/Smock_ABC_18_N.svg)，数字 ![数值](assets/Smock_123_18_N.svg)，等等)。 <br/>![依赖项A](assets/dependency-a.png) |
-| **<span style='color: red'>B</span>** | 所有值 _set_ 跨规则必须来自同一容器，并且具有相同类型或相同类型的自定义值。 <br/> ![依赖项B](assets/dependency-b.png) |
+| **<span style='color: red'>B</span>** | 所有值 _set_ 跨规则必须来自同一容器，并且具有相同类型或派生值的相同类型。 <br/> ![依赖项B](assets/dependency-b.png) |
 | **<span style='color: blue'>C</span>** | 您的值 _选择_ 跨 [!UICONTROL 如果], [!UICONTROL Else If] 规则中的构造 _not_ 必须源自同一容器，并且 _not_ 必须是同一类型。 <br/> ![依赖项C](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
@@ -484,7 +486,7 @@ CJA使用以Adobe Experience Platform [XDM](https://experienceleague.adobe.com/d
 
 ### [!DNL Find and Replace]
 
-查找选定字段中的所有值，并在新的自定义字段中将这些值替换为不同的值。
+查找选定字段中的所有值，并在新派生字段中将这些值替换为不同的值。
 
 +++ 详细信息
 
@@ -492,7 +494,7 @@ CJA使用以Adobe Experience Platform [XDM](https://experienceleague.adobe.com/d
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|:---:|---|
-| <p>字符串</p> | <ul><li><span>“替换时间”字段标准</span></li><li><span>“替换为”字段值</span><ul><li><span>用户输入</span></li><li><span>单独字段</span></li></ul></li></ul> | <p><u>字符串</u></p><ul><li>全部查找并全部替换</li></ul> | <p>1</p> | <p>新建自定义字段</p> |
+| <p>字符串</p> | <ul><li><span>“替换时间”字段标准</span></li><li><span>“替换为”字段值</span><ul><li><span>用户输入</span></li><li><span>单独字段</span></li></ul></li></ul> | <p><u>字符串</u></p><ul><li>全部查找并全部替换</li></ul> | <p>1</p> | <p>新派生字段</p> |
 
 {style="table-layout:auto"}
 
@@ -529,15 +531,15 @@ CJA使用以Adobe Experience Platform [XDM](https://experienceleague.adobe.com/d
 
 {style="table-layout:auto"}
 
-### 自定义字段 {#findreplace-uc-customfield}
+### 派生字段 {#findreplace-uc-derivedfield}
 
-您定义 `Email Marketing (updated)` 自定义字段。 您使用 **[!UICONTROL 查找和替换]** 函数来定义规则以查找和替换所有出现的 `email%20marketing` with `email marketing`.
+您定义 `Email Marketing (updated)` 派生字段。 您使用 **[!UICONTROL 查找和替换]** 函数来定义规则以查找和替换所有出现的 `email%20marketing` with `email marketing`.
 
 ![[!DNL Find and Replace] 规则](assets/find-and-replace.png)
 
 ### 之后的数据 {#findreplace-uc-dataafter}
 
-| 外部营销<br/>（自定义字段） |
+| 外部营销<br/>（派生字段） |
 |----|
 | 电子邮件营销 |
 | 电子邮件营销 |
@@ -563,7 +565,7 @@ CJA使用以Adobe Experience Platform [XDM](https://experienceleague.adobe.com/d
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|:---:|---|
-| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>单个字段</li><li>查找文件<ul><li>Key Column（键列）</li><li>新建字段列</li></ul></li></ul> | <p>不适用</p> | <p>5</p> | <p>新建自定义字段</p> |
+| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>单个字段</li><li>查找文件<ul><li>Key Column（键列）</li><li>新建字段列</li></ul></li></ul> | <p>不适用</p> | <p>5</p> | <p>新派生字段</p> |
 
 {style="table-layout:auto"}
 
@@ -615,9 +617,9 @@ CJA使用以Adobe Experience Platform [XDM](https://experienceleague.adobe.com/d
 {style="table-layout:auto"}
 
 
-### 自定义字段 {#lookup-uc1-customfield}
+### 派生字段 {#lookup-uc1-derivedfield}
 
-您定义 `Hotel Name` 自定义字段。 您使用 **[!UICONTROL **&#x200B;查找&#x200B;**]** 函数来定义一个规则，您可以在该规则中查找 **[!UICONTROL **&#x200B;酒店ID **]** 字段，并替换为新值。
+您定义 `Hotel Name` 派生字段。 您使用 **[!UICONTROL **&#x200B;查找&#x200B;**]** 函数来定义一个规则，您可以在该规则中查找 **[!UICONTROL **&#x200B;酒店ID **]** 字段，并替换为新值。
 
 ![[!DNL Lookup] 规则1](assets/lookup-1.png)
 
@@ -650,9 +652,9 @@ CJA使用以Adobe Experience Platform [XDM](https://experienceleague.adobe.com/d
 
 {style="table-layout:auto"}
 
-### 自定义字段 {#lookup-uc2-customfield}
+### 派生字段 {#lookup-uc2-derivedfield}
 
-您定义 `Page Name (updated)` 自定义字段。 您使用 **[!UICONTROL **&#x200B;查找&#x200B;**]** 函数来定义规则，从中查找现有值 **[!UICONTROL **&#x200B;页面名称&#x200B;**]** 字段，并替换为更新的正确值。
+您定义 `Page Name (updated)` 派生字段。 您使用 **[!UICONTROL **&#x200B;查找&#x200B;**]** 函数来定义规则，从中查找现有值 **[!UICONTROL **&#x200B;页面名称&#x200B;**]** 字段，并替换为更新的正确值。
 
 ![[!DNL Lookup] 规则2](assets/lookup-2.png)
 
@@ -682,7 +684,7 @@ CJA使用以Adobe Experience Platform [XDM](https://experienceleague.adobe.com/d
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|:---:|---|
-| <ul><li>字符串</li></ul> | <ul><li>单个字段</li><li>解析选项<ul><li>获取协议</li><li>获取主机</li><li>获取路径</li><li>获取查询值<ul><li>查询参数</li></ul></li><li>获取哈希值</li></ul></li></ul></li></ul> | <p>不适用</p> | <p>5</p> | <p>新建自定义字段</p> |
+| <ul><li>字符串</li></ul> | <ul><li>单个字段</li><li>解析选项<ul><li>获取协议</li><li>获取主机</li><li>获取路径</li><li>获取查询值<ul><li>查询参数</li></ul></li><li>获取哈希值</li></ul></li></ul></li></ul> | <p>不适用</p> | <p>5</p> | <p>新派生字段</p> |
 
 {style="table-layout:auto"}
 
@@ -702,9 +704,9 @@ CJA使用以Adobe Experience Platform [XDM](https://experienceleague.adobe.com/d
 
 {style="table-layout:auto"}
 
-### 自定义字段 {#urlparse-uc1-customfield}
+### 派生字段 {#urlparse-uc1-derivedfield}
 
-您定义  `Referring Domain` 自定义字段。 您使用 **[!UICONTROL ** URL解析&#x200B;**]** 函数来定义从 **引荐URL** 并将其存储到新的自定义字段中。
+您定义  `Referring Domain` 派生字段。 您使用 **[!UICONTROL ** URL解析&#x200B;**]** 函数来定义从 **引荐URL** 并将其存储在新派生字段中。
 
 ![[!DNL Url Parse] 规则1](assets/url-parse-1.png)
 
@@ -734,9 +736,9 @@ CJA使用以Adobe Experience Platform [XDM](https://experienceleague.adobe.com/d
 
 {style="table-layout:auto"}
 
-### 自定义字段 {#urlparse-uc2-customfield}
+### 派生字段 {#urlparse-uc2-derivedfield}
 
-您定义 `Query String CID` 自定义字段。 您使用 **[!UICONTROL ** URL解析&#x200B;**]** 函数来定义规则以获取页面URL中查询字符串参数的值，指定 `cid` 作为查询参数。 输出值将存储在新的自定义字段中。
+您定义 `Query String CID` 派生字段。 您使用 **[!UICONTROL ** URL解析&#x200B;**]** 函数来定义规则以获取页面URL中查询字符串参数的值，指定 `cid` 作为查询参数。 输出值将存储在新派生字段中。
 
 ![[!DNL Url Parse] 规则2](assets/url-parse-2.png)
 
