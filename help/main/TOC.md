@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Customer Journey Analytics (CJA) 以及如何将 Analysis Workspace 用于来自 Experience Platform 的数据。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 804521e518d811bd4ad458b00367d00facb29b35
+source-git-commit: e0417d94c0d371aca3d10af7a25b0e346f8b2a8e
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '877'
 ht-degree: 98%
 
 ---
@@ -92,6 +92,7 @@ ht-degree: 98%
 
    + 项目 {#build-workspace-project}
       + [项目概述](../analysis-workspace/build-workspace-project/freeform-overview.md)
+      + [创建项目](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [保存项目](../analysis-workspace/build-workspace-project/save-projects.md)
       + Workspace 中的文件夹 {#workspace-folders}
          + [关于 Workspace 中的文件夹](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)

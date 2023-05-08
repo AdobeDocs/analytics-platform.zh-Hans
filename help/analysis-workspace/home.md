@@ -5,65 +5,105 @@ description: Analysis Workspace 功能概览
 feature: CJA Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
-source-git-commit: e104a7a36df3743028fd18b47b46e936841a586a
+source-git-commit: d2828173e802baf5dc598cef0383075e1203442a
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 69%
+source-wordcount: '688'
+ht-degree: 26%
 
 ---
 
 # Analysis Workspace 概述
 
-Analysis Workspace 是一款通过浏览器即可使用的灵活工具，可让您快速构建和共享分析。您可以使用拖放界面进行分析、添加可视化图表以便直观地呈现数据、梳理数据集、与组织中的任何人共享项目并设置共享频率与时间。
+Analysis Workspace允许您快速构建分析以收集分析，然后与他人共享这些分析。 使用拖放浏览器界面，您可以进行分析、添加可视化图表以生动呈现数据、组织数据集，以及与您选择的任何人共享和计划项目。
 
-如果您只有几分钟时间，请观看下面这个简短的视频简介，了解可用功能。
+以下视频简要概述可用功能示例。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
 
-## 登录到Customer Journey Analytics {#login}
+## Analysis Workspace地区
 
-要开始使用 Analysis Workspace，请前往 [experience.adobe.com/analytics](https://experience.adobe.com/analytics) 登录 Customer Journey Analytics。如果之前未选择特定项目，您将登录到“项目”页面。
+下图和随附的表格说明了Analysis Workspace的一些主要方面：
 
-![](assets/create-new-project.png)
+![Analysis Workspace 概述](assets/analysis-workspace-overvew.png)
 
-## 使用培训教程模板 {#training-tutorial}
+| 图像中的位置 | 名称和函数 |
+|---------|----------|
+| A | **最左边栏：** 包含用于向Analysis Workspace添加面板、可视化图表和组件的选项卡。 还包含用于打开数据字典的数据字典图标。 |
+| B | **左边栏：** 根据最左边栏中选择的选项卡，此区域包含各个面板、可视化图表或组件。 |
+| C | **画布：** 这是从左边栏拖动内容以构建项目的主区域。 当您向画布中添加面板、可视化图表和组件时，项目会动态更新。 |
+| D | **报表包下拉菜单：** 对于Analysis Workspace中的每个面板，报表包下拉菜单允许您选择要用作数据源的报表包。 |
 
-登录后，您的第一站可以是Analysis Workspace培训教程模板，该模板将指导您逐步了解在Workspace中构建首个分析的常用术语和步骤。 要开始教程，请执行以下操作：
+## Analysis Workspace功能 {#analysis}
 
-1. 单击 **[!UICONTROL 学习]** 选项卡。
-1. 单击 **[!UICONTROL 打开教程]**.
-
-![](assets/training-tutorial.png)
-
-## 创建新项目 {#new-project}
-
-完成本教程后，您便可以开始构建第一个项目。 在 [!UICONTROL 项目] 选项卡，您可以选择从以下位置开始
-
-* [!UICONTROL 空白项目] 如果您计划从浏览器共享您的分析，或者
-* [[!UICONTROL 空白移动记分卡]](/help/mobile-app/curator.md)，如果您计划从Customer Journey Analytics功能板移动应用程序共享您的分析。
-
-## 构建分析 {#analysis}
-
-在 Workspace 项目中，从左边栏访问&#x200B;**“面板、表格、可视化图表和组件”**。这些都是项目的构建基块。
-
-### 组件
-
-**组件**&#x200B;包含维度、量度、过滤器或日期范围，所有这些组件都可以合并到一个&#x200B;**[!UICONTROL 自由格式表]**&#x200B;中，以便开始回答您的业务问题。请务必先熟悉每个[组件类型](/help/components/overview.md)，然后再开始投入分析。掌握组件术语后，即可开始拖放至&#x200B;**[!UICONTROL 自由格式表]**&#x200B;以[构建分析](/help/analysis-workspace/build-workspace-project/freeform-overview.md)。
-
-![](assets/build-components.png)
-
-### 可视化图表
-
-接下来，将&#x200B;**“可视化图表”**（例如条形图或折线图）添加到数据的顶部，以便更加直观地将数据呈现出来。在最左侧的边栏中，选择中间的&#x200B;**[!UICONTROL 可视化图表]**&#x200B;图标，以查看所有可用的[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)。
-
-![](assets/build-visualizations.png)
+以下是Analysis Workspace中提供的一些主要功能：
 
 ### 面板
 
-**“面板”**&#x200B;可以包含许多表格和可视化图表，用于在项目中对分析进行组织和整理。Analysis Workspace 中提供的许多面板都可以基于一些用户输入来生成整套分析。在最左侧的边栏中，选择顶部的&#x200B;**[!UICONTROL 面板]**&#x200B;图标，以查看所有可用的[面板](/help/analysis-workspace/c-panels/panels.md)。
+**“面板”**&#x200B;可以包含许多表格和可视化图表，用于在项目中对分析进行组织和整理。Analysis Workspace 中提供的许多面板都可以基于一些用户输入来生成整套分析。在最左侧的边栏中，选择顶部的&#x200B;**[!UICONTROL 面板]**&#x200B;图标，以查看所有可用的面板。
+
+要进一步了解面板，请参阅 [面板概述](/help/analysis-workspace/c-panels/panels.md).
 
 ![](assets/build-panels.png)
+
+### 可视化图表
+
+**可视化图表**，如条形图或折线图，可用于直观地将数据呈现出来。 在最左侧的边栏中，选择中间的&#x200B;**[!UICONTROL 可视化图表]**&#x200B;图标，以查看所有可用的可视化图表。
+
+要了解有关可视化的更多信息，请参阅 [可视化概述](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
+
+![](assets/build-visualizations.png)
+
+### 组件
+
+Analysis Workspace中的组件包括：
+
+* 维度
+
+* 指标
+
+* 区段
+
+* 日期范围
+
+要了解有关每个组件类型的更多信息，请参阅 [组件概述](/help/components/overview.md).
+
+可以将这些组件类型中的每种类型添加到可视化图表（如自由格式表），以开始回答您的业务问题。
+
+了解组件术语后，您可以将组件拖动到可视化（包括自由格式表）中，以 [构建分析](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md).
+
+![](assets/build-components.png)
+
+### 数据词典
+
+Analysis Workspace 中的数据词典可帮助用户和管理员跟踪并更好地了解其 Analytics 环境中的组件。
+
+要了解有关数据字典的更多信息，请参阅 [数据字典概述](/help/components/data-dictionary/data-dictionary-overview.md).
+
+## 开始使用Analysis Workspace
+
+### 登录 Adobe Analytics {#login}
+
+要开始使用 Analysis Workspace，请前往 [experience.adobe.com/analytics](https://experience.adobe.com/analytics) 登录 Adobe Analytics。默认情况下，将显示Analysis Workspace的“项目”页面。 如果已为您选择特定项目，则默认情况下会显示该项目。
+
+### 创建项目 {#new-project}
+
+在Analysis Workspace中的分析称为 [项目](/help/analysis-workspace/build-workspace-project/freeform-overview.md).
+
+您可以在Analysis Workspace中创建项目，如 [创建项目](/help/analysis-workspace/build-workspace-project/create-projects.md).
+
+项目可以组织到文件夹和子文件夹中，如 [Analysis Workspace中的文件夹](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md).
+
+### 保存和共享项目
+
+在Analysis Workspace中创建分析时，您所做的工作是 [自动保存](/help/analysis-workspace/build-workspace-project/save-projects.md).
+
+当您完成项目构建并收集可操作的洞察时，该项目便可供其他人使用。 您可以与组织中的用户和组共享项目，甚至与组织外的人员共享项目。 有关共享项目的信息，请参阅 [共享项目](/help/analysis-workspace/curate-share/share-projects.md).
 
 ## 其他资源 {#resources}
 
 * Adobe 提供了大量的 [Analytics 视频培训教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=zh-Hans)。
+* 有关新功能的更新，请参阅 [Adobe Experience Cloud 发行说明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html#analytics)。
+* 通过Analysis Workspace培训教程模板了解Analysis Workspace是了解的绝佳方法。 此模板可指导您逐步了解在工作区中构建首个分析的常用术语和步骤。 要开始教程，请执行以下操作：
+   1. 在 [!UICONTROL **工作区**] 选项卡，选择 **[!UICONTROL 学习]** 左边。
+   1. 选择 **[!UICONTROL 打开教程]**.
+      ![](assets/training-tutorial.png)
