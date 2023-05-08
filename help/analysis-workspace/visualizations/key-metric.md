@@ -3,11 +3,11 @@ description: 使用关键量度摘要可视化图表来比较两条时间线的�
 title: 关键量度摘要
 feature: Visualizations
 role: User, Admin
-exl-id: c74e77ff-15d6-48f1-a845-85bdf3444c3a
-source-git-commit: fa86c113de8cf533e7b68df1aad7ac02aa60f7e8
-workflow-type: ht
-source-wordcount: '598'
-ht-degree: 100%
+exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
+source-git-commit: f2e152345d7a395c684a964e72b1bcdaa5d817b0
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 1. 通过选择量度、主要日期范围、比较日期范围和区段（如果需要）来配置可视化图表：
 
-   ![](assets/key-metric-config.png)
+   ![关键量度配置](assets/key-metric-config.png)
 
    | 配置设置 | 定义 |
    | --- | --- |
@@ -46,7 +46,7 @@ ht-degree: 100%
    | **[!UICONTROL 比较日期范围。]** | 要与主日期范围进行比较的日期范围。 |
    | **[!UICONTROL 区段（可选）]** | 您对此摘要特别感兴趣的任何区段。 |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. 单击&#x200B;**[!UICONTROL 生成]**。
 
@@ -62,7 +62,7 @@ ht-degree: 100%
 
 * 从此处，您可以将鼠标悬停在线形图上，查看各个日期的统计数据：
 
-![](assets/key-metric-output2.png)
+![统计](assets/key-metric-output2.png)
 
 ## 可视化设置
 
@@ -89,7 +89,7 @@ ht-degree: 100%
 
 1. 单击可视化右上角的铅笔图标（设置齿轮图标旁边）。
 
-   ![](assets/edit-icon.png)
+   ![编辑](assets/edit-icon.png)
 
    现在，您将返回到原始配置视图。
 

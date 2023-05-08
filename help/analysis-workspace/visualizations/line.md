@@ -3,14 +3,18 @@ description: 使用折线图可视化图表来描述趋势（基于时间）数�
 title: 折线图
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 228578ceae27bb83645001fb959a614283dcca33
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 87%
+source-wordcount: '515'
+ht-degree: 86%
 
 ---
 
 # 折线图
+
+>[!NOTE]
+>
+>折线图可视化图表很快将提供 [智能字幕](/help/analysis-workspace/visualizations/intelligent-captions.md).
 
 此折线图可视化图表使用线条来表示量度，以显示一段时间内值的变化情况。仅当使用时间作为维度时，才可以使用折线图。
 

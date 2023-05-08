@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Customer Journey Analytics (CJA) 以及如何将 Analysis Workspace 用于来自 Experience Platform 的数据。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: e0417d94c0d371aca3d10af7a25b0e346f8b2a8e
+source-git-commit: 4b28a3288f1659ca88353540ff8ce7cd7cd50aea
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '879'
 ht-degree: 98%
 
 ---
@@ -138,6 +138,7 @@ ht-degree: 98%
       + [圆环图](../analysis-workspace/visualizations/donut.md)
       + [直方图](../analysis-workspace/visualizations/histogram.md)
       + [水平条形图和堆叠的水平条形图](../analysis-workspace/visualizations/horizontal-bar.md)
+      + [智能题注](../analysis-workspace/visualizations/intelligent-captions.md)
       + [关键度量摘要](../analysis-workspace/visualizations/key-metric.md)
       + [线形图](../analysis-workspace/visualizations/line.md)
       + [散点图](../analysis-workspace/visualizations/scatterplot.md)
