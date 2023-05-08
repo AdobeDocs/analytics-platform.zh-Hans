@@ -4,9 +4,9 @@ keywords: Analysis Workspace 共享
 title: 共享项目
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 749088c6e6c100797bd9a2dd1de64d18d45108e5
+source-git-commit: cc475afebba5bd1cfcaf3b1471ce6d1316126a9d
 workflow-type: tm+mt
-source-wordcount: '1753'
+source-wordcount: '1770'
 ht-degree: 53%
 
 ---
@@ -125,6 +125,8 @@ ht-degree: 53%
 >* 与您共享的用户可以查看在 [策划](curate.md).
 > 
 >* 您与共享的用户可以更改项目日期范围。 默认情况下，会显示您为项目设置的日期范围。
+>
+>* 如果太多用户尝试同时访问某个项目，则该项目可能会变得无法访问。
 
 
 要与任何人共享Analysis Workspace项目，请执行以下操作：
