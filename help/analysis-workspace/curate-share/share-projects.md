@@ -4,10 +4,10 @@ keywords: Analysis Workspace 共享
 title: 共享项目
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: cc475afebba5bd1cfcaf3b1471ce6d1316126a9d
+source-git-commit: dab154ce10b0b4f7fb2873d92a1ce9ceb7478b26
 workflow-type: tm+mt
-source-wordcount: '1770'
-ht-degree: 53%
+source-wordcount: '1798'
+ht-degree: 52%
 
 ---
 
@@ -126,7 +126,7 @@ ht-degree: 53%
 > 
 >* 您与共享的用户可以更改项目日期范围。 默认情况下，会显示您为项目设置的日期范围。
 >
->* 如果太多用户尝试同时访问某个项目，则该项目可能会变得无法访问。
+>* 如果许多用户同时尝试访问给定链接，则项目可能会变为无法访问。 默认情况下，每5分钟有190多人可以访问一个链接。 如果贵组织达到此限制，请等待5分钟，然后再次尝试访问该链接。
 
 
 要与任何人共享Analysis Workspace项目，请执行以下操作：
