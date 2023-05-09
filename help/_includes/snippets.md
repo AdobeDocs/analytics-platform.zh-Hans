@@ -1,8 +1,8 @@
 ---
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 4662b941b90b2304402f6e2097f59ef669da7ada
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 75%
+source-wordcount: '950'
+ht-degree: 71%
 
 ---
 # 片段
@@ -56,3 +56,14 @@ ht-degree: 75%
 | [!UICONTROL **上次修改日期**] | 显示上次修改组件的日期。查看过滤器、量度、计算量度和日期范围时，将显示此部分。 |
 
 {style="table-layout:auto"}
+
+## 组件排序选项 {#components-sort-options}
+
+| 选项 | 函数 |
+|---------|----------|
+| [!UICONTROL **建议**] | 使用列表顶部推荐的组件对组件进行排序。 您或组织中的其他人员最常使用、最近使用的组件在列表中显示得更高。 |
+| [!UICONTROL **按字母顺序**] | 按字母顺序对组件进行排序。 |
+| [!UICONTROL **类别**] | 按组件类型（维度、量度、区段、日期范围）对组件进行排序。 |
+
+{style="table-layout:auto"}
+
