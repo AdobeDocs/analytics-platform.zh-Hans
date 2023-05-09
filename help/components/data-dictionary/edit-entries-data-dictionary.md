@@ -3,16 +3,17 @@ description: Analysis Workspace 中的数据词典允许用户对 Analysis Works
 title: 编辑数据词典中的条目
 feature: Components
 role: Admin
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 70%
+ht-degree: 58%
 
 ---
 
 # 编辑数据词典中的组件条目
 
-Customer Journey Analytics管理员可以编辑给定报表包的数据字典中的组件条目。 报告包的所有用户都可以看到所做的任何更改。
+Customer Journey Analytics管理员可以编辑给定数据视图的数据字典中的组件条目。 数据视图的所有用户都可以看到所做的任何更改。
 
 要编辑数据词典中的组件：
 
@@ -24,7 +25,7 @@ Customer Journey Analytics管理员可以编辑给定报表包的数据字典中
 
    ![数据词典管理员视图](assets/data-dictionary-admin.png)
 
-1. 确保在下拉菜单中选择了正确的报告包。默认情况下，会显示您已在使用的报告包。
+1. 确保在下拉菜单中选择了正确的数据视图。 默认情况下，会显示您已在中的数据视图。
 
 1. （可选）在搜索字段中，开始键入要编辑的组件的名称。
 

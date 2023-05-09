@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: 项目概述
 feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: c378a7d39c3d2ae388bc3cf2fa1bbc693b0bccb3
+source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
 workflow-type: tm+mt
 source-wordcount: '1333'
 ht-degree: 80%
@@ -41,7 +41,7 @@ ht-degree: 80%
 | 标记 | 应用于项目的标记。 |
 | 已计划 | 指示是否计划按计划通过电子邮件将项目发送给收件人。 请参阅 [计划项目](/help/analysis-workspace/curate-share/t-schedule-report.md). |
 | 共享链接（任何人） | 项目可以与任何人共享 — 即使是与无权访问Analysis Workspace的人共享。 此列显示项目是否已通过这种方式共享。 请参阅 [与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [共享项目](/help/analysis-workspace/curate-share/share-projects.md) 以了解更多信息。 |
-| 报表包 | 与项目关联的报表包。 |
+| 数据视图 | 与项目关联的数据视图。 |
 | [项目角色](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=zh-Hans) | 指示您在项目中的角色 — 所有者、编辑、复制、查看。 |
 | 所有者 | 创建此项目的人员（您或与您共享此项目的人员）。 |
 | 共享对象 | 与项目共享的用户。 |

@@ -3,10 +3,11 @@ description: Analysis Workspace 中的数据词典允许用户对 Analysis Works
 title: 数据词典概述
 feature: Components
 role: User, Admin
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '534'
-ht-degree: 90%
+ht-degree: 81%
 
 ---
 
@@ -44,11 +45,11 @@ Analytics 管理员负责整理有关数据词典中每个组件的信息，并�
 
 * 确定尚未批准的组件。
 
-* 直接在 Analysis Workspace 中更新组件描述。对数据词典中组件描述所做的任何更新都会反映在报告包中。
+* 直接在 Analysis Workspace 中更新组件描述。数据字典中对组件描述所做的任何更新都会反映在数据视图中。
 
-   同样，对报告包中组件描述所做的任何更新都会反映在 Analysis Workspace 中。
+   同样，对数据视图中的组件描述所做的任何更新也会反映在Analysis Workspace中。
 
-   有关在 Analysis Workspace 或报告包中添加组件描述的更多信息，请参阅[添加组件描述](/help/components/add-component-descriptions.md)。
+   有关在Analysis Workspace或数据视图中添加组件描述的更多信息，请参阅 [添加组件描述](/help/components/add-component-descriptions.md).
 
 ## 访问数据词典
 

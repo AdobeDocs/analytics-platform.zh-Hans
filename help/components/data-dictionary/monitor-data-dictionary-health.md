@@ -3,10 +3,11 @@ description: 管理员负责监测数据词典的健康状况。这包括组件�
 title: 监测数据词典健康状况
 feature: Components
 role: Admin
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+exl-id: 8bc89ac7-078d-469d-8627-3905823d4100
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 94%
+ht-degree: 89%
 
 ---
 
@@ -38,7 +39,7 @@ Customer Journey Analytics管理员负责维护正常的数据字典。
 
    ![数据词典管理员视图](assets/data-dictionary-admin.png)
 
-1. 确保在下拉菜单中选择了正确的报告包。
+1. 确保在下拉菜单中选择了正确的数据视图。
 
 1. 在&#x200B;[!UICONTROL **词典健康状况**]&#x200B;选项卡上，选择以下任一选项旁边的&#x200B;[!UICONTROL **视图**]：
 

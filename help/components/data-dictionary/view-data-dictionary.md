@@ -3,10 +3,11 @@ description: Analysis Workspace 中的数据词典允许用户对 Analysis Works
 title: 查看数据词典
 feature: Components
 role: User, Admin
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 75%
+ht-degree: 63%
 
 ---
 
@@ -26,7 +27,7 @@ ht-degree: 75%
 
    <!--double-check this screenshot. I mocked the admin view up a bit to get rid of the Dictionary health tab.-->
 
-1. 确保在下拉菜单中选择了包含您要查看的组件的报告包。默认情况下，会显示您已在使用的报告包。
+1. 确保在下拉菜单中选择了包含要查看的组件的数据视图。 默认情况下，会显示您已在中的数据视图。
 
 1. （可选）在搜索字段中，开始键入要查看组件的名称。
 

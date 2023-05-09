@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
-source-git-commit: e9856269ee07b7119f75b98489b47e1f35f7cf5f
-workflow-type: ht
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+workflow-type: tm+mt
 source-wordcount: '552'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 ## 对数据块列表进行排序
 
-您可以按显示的列对数据块列表进行排序。例如，您可以按报告包、过滤器、日期范围和其他变量对数据块列表进行排序。
+您可以按显示的列对数据块列表进行排序。例如，您可以按数据视图、过滤器、日期范围和其他变量对数据阻止列表进行排序。
 
 要对数据块列表进行排序，请单击列标题。
 
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 ## 搜索数据块列表
 
-使用搜索字段在数据块表中查找任何内容。 例如，您可以搜索数据块或报告包中包含的指标。 您还可以搜索出现在日期范围、修改日期或上次运行日期列中的日期。
+使用搜索字段在数据块表中查找任何内容。 例如，您可以搜索数据块或数据视图中包含的量度。 您还可以搜索出现在日期范围、修改日期或上次运行日期列中的日期。
 
 ![图像](./assets/image55.png)
 

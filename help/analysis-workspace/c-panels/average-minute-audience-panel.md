@@ -4,10 +4,10 @@ description: 如何使用和解释 Analysis Workspace 中的“媒体平均受�
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
 workflow-type: tm+mt
 source-wordcount: '1315'
-ht-degree: 91%
+ht-degree: 90%
 
 ---
 
@@ -21,7 +21,7 @@ Media Analytics 客户可以使用平均受众访问分钟数面板来更好地
 在 Analysis Workspace 中，平均受众访问分钟数是查看媒体流所花费的时间除以内容的持续时间或所选总时段和所选粒度。
 
 如果使用“分类”提供持续时间，则“媒体平均受众访问分钟数”面板按所选的特定内容提供平均受众访问分钟数分析。
-“平均受众访问分钟数”面板还提供选定时段内的分析（可以按特定内容过滤），无论持续时间是否可使用分类获得。要访问“媒体平均受众访问分钟数”面板，请导航到启用了 Media Analytics 组件的报表包。然后，单击最左侧的面板图标，并将该面板拖入您的 Analysis Workspace 项目。
+“平均受众访问分钟数”面板还提供选定时段内的分析（可以按特定内容过滤），无论持续时间是否可使用分类获得。要访问“媒体平均观看分钟数”受众面板，请导航到启用了Media Analytics组件的数据视图。 然后，单击最左侧的面板图标，并将该面板拖入您的 Analysis Workspace 项目。
 
 <!-- For more information, see the Media Average Minute Audience introduction video:
 << replace with AMA video when available >> -->
