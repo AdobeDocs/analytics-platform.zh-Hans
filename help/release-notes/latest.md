@@ -3,7 +3,7 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新 CJA 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 1c00f3974293c9022365e69d6c1b38d79f52d872
+source-git-commit: b313600ff215dea5a869e5a6125120a64f50235b
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 31%
@@ -27,7 +27,7 @@ Customer Journey Analytics 版本在[持续交付模型](releases.md)上运行�
 | **Report BuilderCJA — 从单元格中选择数据视图** | 此功能允许用户从单元格中选择数据块的数据视图。 如果您创建工作簿，并且有多个数据视图，这些视图具有相似的数据结构，并且您希望能够使用不同的数据视图多次重复使用工作簿，则此操作会很有帮助。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html) | 不适用 | 2023年5月24日 |
 | **对Analysis Workspace中的组件排序** | <p>现在，在左边栏或Analysis Workspace的“数据字典”中查看组件时，可以使用新的排序选项。 您可以按推荐（最常用的组件）、按字母顺序或类别（类型）对组件进行排序。</p><p>以前，您只能搜索或过滤组件。 [了解详情](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html?lang=en)</p> | 不适用 | 2023 年 5 月 10 日 |
 | **从自由格式表中删除包含动态维度的行** | 在Analysis Workspace的自由格式表中，您现在可以使用x图标快速删除包含动态维度的特定行。 这样做时，会自动应用“不等于”过滤规则。<p>以前，删除包含动态维度的行的唯一方法是在过滤器对话框中手动创建规则。 [了解详情](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/filter-and-sort.html?lang=en)</p> | 不适用 | 2023 年 5 月 10 日 |
-| **用于在面板中添加可视化的新按钮** | 现在，Analysis Workspace中每个面板底部都有一个新按钮，通过该按钮，您可以快速添加可视化图表。 <p>以前，向面板添加可视化的唯一方法是从左边栏拖动可视化、复制或复制现有可视化，或创建空白面板。 [了解详情](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=en#quick-viz)</p> | 不适用 | 2023 年 5 月 10 日 |
+| **用于在面板中添加可视化的新按钮** | 现在，Analysis Workspace中每个面板底部都有一个新按钮，通过该按钮，您可以快速添加可视化图表。 <p>以前，向面板添加可视化的唯一方法是从左边栏拖动可视化、复制或复制现有可视化，或创建空白面板。 [了解详情](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=en#quick-viz)</p> | 不适用 | 2023年5月17日 |
 | **深层链接（移动设备应用程序）** | 允许用户发送指向记分卡的链接，这些记分卡会将用户直接引导到应用程序中的记分卡项目。 这样，就更容易共享项目并提高技术含量较低的受众的参与度。 | 不适用 | 2023年5月17日 |
 | **智能字幕** | 通过折线图可视化的自然语言摘要丰富用户的讲述内容。 | 2023年5月17日 | 2023 年 6 月 1 日 |
 
