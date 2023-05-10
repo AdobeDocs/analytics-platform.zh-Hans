@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5e3c85daebd996eced70ff0aaba7f381783b7fe2
+source-git-commit: c262b7d4ad69821880b2822b891ea081cf06b66b
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 90%
+source-wordcount: '1854'
+ht-degree: 84%
 
 ---
 
@@ -22,6 +22,9 @@ CJA 文档自创建以来进行了以下更新。
 | **2023 年 5 月** |  |
 | Analysis Workspace 概述 | 已更新 [Analysis Workspace概述](/help/analysis-workspace/home.md) 以包含更多常规概述信息和相关内容的链接。 |
 | 创建项目 | 创建了一篇新文章，详细说明了如何 [创建项目](/help/analysis-workspace/build-workspace-project/create-projects.md) 在Analysis Workspace。 |
+| 对左边栏中的组件进行排序 | 添加了有关在左边栏中对组件列表进行排序的信息。请参阅 [组件概述](/help/components/overview.md). |
+| 从自由格式表中删除包含动态维度的行 | 添加了有关如何使用x图标快速删除包含动态维度的特定行的信息。 请参阅 [过滤和排序表](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
+| 用于在面板中添加可视化的按钮 | 在Analysis Workspace中每个面板底部添加了有关新按钮的信息，通过该按钮可快速添加可视化图表。 请参阅 [可视化概述](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). |
 | **2023 年 4 月** |  |
 | 有关使用过滤器作为维度的视频 | 更新了有关使用过滤器作为维度的视频。 <p>此视频链接自 [创建过滤器](/help/components/filters/create-filters.md) 页面。</p> <p>以下是视频的直接链接： [在Analysis Workspace中将过滤器用作维度](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p> |
 | 过滤器文档 | 添加了有关使用 [过滤器生成器](/help/components/filters/filter-builder.md). <p>简化了 [创建过滤器](/help/components/filters/create-filters.md) 和 [过滤器概述](/help/components/filters/filters-overview.md).</p> |
