@@ -3,10 +3,10 @@ description: 描述如何在 Analysis Workspace 中筛选和排序表格的文�
 title: 排序和过滤表格
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 4dd5e5248026c39489f3ac4598ea91ff15d95aa4
+source-git-commit: 54032271e8f12673cc6d4f2b209b4fa89f5c4406
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 95%
+source-wordcount: '848'
+ht-degree: 79%
 
 ---
 
@@ -26,17 +26,38 @@ Analysis Workspace 中的过滤器可帮助您显示最重要的信息。
 >
 > 只能按照本节所述过滤动态维度项目。 无法过滤静态维度项目。 有关更多信息，请参阅 [自由格式表中的动态维度项目与静态维度项目](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
 
+### 快速从表中排除特定行
+
+您无需打开过滤器对话框即可快速从表中排除特定行。
+
+>[!NOTE]
+>
+>如本节所述，排除行时， [!UICONTROL **不等于**] 规则会在 [**[!UICONTROL 高级过滤]**](#apply-a-simple-or-advanced-filter) 对话框。
+
+要快速从自由格式表中排除特定行，请执行以下操作：
+
+1. 将鼠标悬停在要排除的行上，然后选择x图标。
+
+   按住Shift键选择范围行，或按住Command键(在Mac上)或Ctrl键（在Windows上）选择多行。
+
+### 将简单或高级过滤器应用于表
+
 过滤自由格式表中的数据：
 
-1. 在自由格式表中，将鼠标悬停在包含要过滤的数据的列上。<!--only some types of columns show the filter... Which? Just Dimensions?-->
+1. 将鼠标悬停在包含要过滤的数据的列上。 <!--only some types of columns show the filter... Which? Just Dimensions?-->
 
 1. 当&#x200B;**过滤器**&#x200B;图标出现时选择它。
 
    ![表格中的过滤器图标](assets/table-filter-icon.png)
 
-1. 在&#x200B;[!UICONTROL **搜索字词或短语**]&#x200B;字段中，指定要作为过滤依据的字词或短语。仅显示包含指定单词或确切短语的行。
+   可以使用以下选项：
 
-1. （可选）要按不同条件或多个条件筛选，请选择&#x200B;[!UICONTROL **显示高级选项**]。
+   | 选项 | 函数 |
+   |---------|----------|
+   | [!UICONTROL **搜索词或短语**] | 指定要按过滤的单词或短语。 仅显示包含指定单词或确切短语的行。 |
+   | [!UICONTROL **包括未指定的项（无）**] | 选择此选项可在表中显示不属于表格的任何维度的数据。<!--what is this?--> |
+
+1. （可选）要按不同标准或多个标准进行筛选，请选择 [!UICONTROL **高级过滤**].
 
    可以使用以下选项
 
