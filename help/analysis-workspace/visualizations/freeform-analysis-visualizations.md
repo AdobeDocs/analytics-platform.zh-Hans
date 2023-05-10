@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: 可视化图表概述
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 19d18d497857442c141fda49cdcf1fbe71e9c07f
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 99%
+source-wordcount: '1245'
+ht-degree: 90%
 
 ---
 
@@ -15,9 +15,7 @@ ht-degree: 99%
 
 工作区提供了许多可视化图表，使您能够生成数据的可视化表示形式，如条形图、圆环图、直方图、折线图、地图、散点图等。如果您使用 Customer Journey Analytics，则您已经熟悉了大多数可视化图表类型。但是，Analysis Workspace 提供了可视化图表设置，以及许多全新或独特的具有交互功能的可视化图表类型。
 
-可从工作区左上角的图标、[空白面板](/help/analysis-workspace/c-panels/blank-panel.md)或者通过工作流程中的右键单击菜单来访问可视化图表。
-
-![可视化图表边栏](assets/viz-rail.png)
+## 可视化图表类型 
 
 Analysis Workspace 中提供了以下可视化图表类型：
 
@@ -41,7 +39,27 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | [树形图](/help/analysis-workspace/visualizations/treemap.md) | 将分层（树结构）数据显示为一组嵌套的矩形。 |
 | [维恩图](/help/analysis-workspace/visualizations/venn.md) | 使用圆圈来描述最多 3 个过滤器之间的量度重叠。 |
 
-## 自定义可视化设置
+## 向面板中添加可视化
+
+1. 打开要在其中添加可视化的Analysis Workspace项目。
+
+1. 使用以下任一方法添加可视化：
+
+   * 在左边栏中，选择 **可视化图表** 图标 <!-- add icon -->，然后将可视化图表拖到要添加该可视化图表的面板中。
+
+      ![](assets/viz-rail.png)
+
+   * 在要添加可视化的面板上，选择 **加号** 图标，然后选择表示要添加的可视化的图标。 将鼠标悬停在每个可视化的图标上可查看其名称。
+
+      ![用于添加可视化的按钮](assets/visualization-add-to-panel.png)
+
+   * 添加 [空白面板](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html?lang=zh-Hans)，然后选择要添加的可视化。
+
+      ![空白面板](assets/blank_panel.png)
+
+   * 右键单击Analysis Workspace项目中的现有面板，然后选择 [!UICONTROL **复制可视化图表**] 或 [!UICONTROL **复制可视化图表**].
+
+## 自定义可视化图表设置
 
 您可以为单个可视化图表或您创建的所有可视化图表自定义可视化图表设置。
 
