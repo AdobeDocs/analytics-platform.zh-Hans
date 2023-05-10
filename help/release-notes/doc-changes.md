@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: d738b63b9d5fdc6ed01d6c9711953ea3af76f7cc
+source-git-commit: 5e3c85daebd996eced70ff0aaba7f381783b7fe2
 workflow-type: tm+mt
-source-wordcount: '1748'
-ht-degree: 89%
+source-wordcount: '1741'
+ht-degree: 90%
 
 ---
 
@@ -22,7 +22,6 @@ CJA 文档自创建以来进行了以下更新。
 | **2023 年 5 月** |  |
 | Analysis Workspace 概述 | 已更新 [Analysis Workspace概述](/help/analysis-workspace/home.md) 以包含更多常规概述信息和相关内容的链接。 |
 | 创建项目 | 创建了一篇新文章，详细说明了如何 [创建项目](/help/analysis-workspace/build-workspace-project/create-projects.md) 在Analysis Workspace。 |
-| 派生字段 | 相关文档 [派生字段](../data-views/derived-fields/derived-fields.md) 功能。 |
 | **2023 年 4 月** |  |
 | 有关使用过滤器作为维度的视频 | 更新了有关使用过滤器作为维度的视频。 <p>此视频链接自 [创建过滤器](/help/components/filters/create-filters.md) 页面。</p> <p>以下是视频的直接链接： [在Analysis Workspace中将过滤器用作维度](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p> |
 | 过滤器文档 | 添加了有关使用 [过滤器生成器](/help/components/filters/filter-builder.md). <p>简化了 [创建过滤器](/help/components/filters/create-filters.md) 和 [过滤器概述](/help/components/filters/filters-overview.md).</p> |
