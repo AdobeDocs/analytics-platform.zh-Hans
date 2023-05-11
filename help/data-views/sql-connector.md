@@ -225,7 +225,7 @@ prod:all=> \dv
 |---|---|
 | 架构发现 | <pre>从dv1中选择* ，其中1=0</pre> |
 | 排名/划分 | <pre>选择DIM1, SUM(metric1)AS m1<br/>从dv1<br/>其中，“2022-01-01”和“2022-01-02”之间的\`timestamp\<br/>GROUP BY dim1</pre><pre>选择DIM1, SUM(metric1)AS m1<br/>从dv1<br/>其中，“2022-01-01”和“2022-01-02”之间的\`timestamp\`和<br/>  filterId = &#39;12345&#39;<br/>GROUP BY dim1</pre><pre>选择DIM1, SUM(metric1)AS m1<br/>从dv1<br/>其中，“2022-01-01”和“2022-01-02”之间的\`timestamp\`和<br/>  和(dim2 = &#39;A&#39;或DIM3 IN(&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GROUP BY dim1</pre> |
-| HAVING子句 | <pre>选择DIM1, SUM(metric1)AS m1<br/>从dv1<br/>其中，“2022-01-01”和“2022-01-02”之间的\`timestamp\<br/>GROUP BY dim1<br/>m1>100 |
+| HAVING子句 | <pre>选择DIM1, SUM(metric1)AS m1<br/>从dv1<br/>其中，“2022-01-01”和“2022-01-02”之间的\`timestamp\<br/>GROUP BY dim1<br/>m1>100</pre> |
 | 非重复，顶部 <br/>维度值 | <pre>选择DISTINCT DIM1 FROM dv1</pre><pre>选择DIM1 AS dv1<br/>从dv1<br/>其中，“2022-01-01”和“2022-01-02”之间的\`timestamp\<br/>GROUP BY dim1</pre><pre>选择DIM1 AS dv1<br/>从dv1<br/>其中， \&#39;timestamp\` >= &#39;2022-01-01&#39; AND \&#39;timestamp\` &lt; &#39;2022-01-02&#39;<br/>GROUP BY dim1<br/>按总和排序(metric1)<br/>限制15</pre> |
 | 量度总计 | <pre>选择SUM(metric1)AS m1<br/>从dv1<br/>其中，“2022-01-01”和“2022-01-02”之间的\`timestamp\</pre> |
 | 多维度<br/>划分<br/>和顶部显示 | <pre>选择DIM1、dim2、SUM(metric1)AS m1<br/>从dv1<br/>其中，“2022-01-01”和“2022-01-02”之间的\`timestamp\<br/>GROUP BY dim1, dim2</pre><pre>选择DIM1、dim2、SUM(metric1)AS m1<br/>从dv1<br/>其中，“2022-01-01”和“2022-01-02”之间的\`timestamp\<br/>按1、2分组<br/>按1、2排序</pre><pre>选择DISTINCT DIM1, dim2<br/>从dv1</pre> |
