@@ -3,10 +3,10 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新 CJA 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: c262b7d4ad69821880b2822b891ea081cf06b66b
+source-git-commit: 76130aeaee4447a83c2f8feea95371dc2e38bd67
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 33%
+source-wordcount: '850'
+ht-degree: 29%
 
 ---
 
@@ -29,7 +29,7 @@ Customer Journey Analytics 版本在[持续交付模型](releases.md)上运行�
 | **从自由格式表中删除包含动态维度的行** | 在Analysis Workspace的自由格式表中，您现在可以使用x图标快速删除包含动态维度的特定行。 这样做时，会自动应用“不等于”过滤规则。<p>以前，删除包含动态维度的行的唯一方法是在过滤器对话框中手动创建规则。 [了解详情](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)</p> | 不适用 | 2023 年 5 月 10 日 |
 | **用于在面板中添加可视化的新按钮** | 现在，Analysis Workspace中每个面板底部都有一个新按钮，通过该按钮，您可以快速添加可视化图表。 <p>以前，向面板添加可视化的唯一方法是从左边栏拖动可视化、复制或复制现有可视化，或创建空白面板。 [了解详情](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</p> | 不适用 | 2023年5月17日 |
 | **深层链接（移动设备应用程序）** | 允许用户发送指向记分卡的链接，这些记分卡会将用户直接引导到应用程序中的记分卡项目。 这样，就更容易共享项目并提高技术含量较低的受众的参与度。 | 不适用 | 2023年5月17日 |
-| **智能字幕** | 通过折线图可视化的自然语言摘要丰富用户的讲述内容。 | 2023年5月17日 | 2023 年 6 月 1 日 |
+| **智能字幕** | 通过 [!UICONTROL 折线图] 可视化图表。 | 2023年5月17日 | 2023 年 6 月 1 日 |
 
 {style="table-layout:auto"}
 
@@ -42,6 +42,12 @@ AN-316412;AN-317105;AN-318122;AN-317353
 | 注意事项 | 添加或更新注意事项 | 描述 |
 | --- | --- | --- |
 | 不适用 | 不适用 | 不适用 |
+
+## 生命周期终止 (EOL) 通知 {#eol}
+
+| 产品或功能 EOL | 添加或更新日期 | 描述 |
+| --- | --- | --- |
+| **迁移到AdobeIO OAuth服务器到服务器凭据** | 2023 年 5 月 11 日 | 使用AdobeIO JWT凭据的Adobe Analytics API、CJA API和Livestream客户必须通过 **2025年1月1日**. 从2024年5月1日开始，AdobeIO将不允许创建新的JWT凭据。 使用JWT的客户必须创建新的OAuth服务器到服务器凭据，或将其现有的JWT凭据迁移到OAuth服务器到服务器凭据。 客户还必须更新其客户端应用程序才能使用新的OAuth服务器到服务器凭据。 <ul><li>[从服务帐户(JWT)凭据迁移](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)</li><li>[使用新的OAuth服务器到服务器凭据](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)</li><li>[常见问题解答](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/faqs/)</li></ul>![](assets/jwt.png) |
 
 {style="table-layout:auto"}
 
