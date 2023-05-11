@@ -3,9 +3,9 @@ description: 了解如何在Analysis Workspace中创建项目
 title: 创建项目
 feature: CJA Workspace Basics
 role: User, Admin
-source-git-commit: 1c5f0a618e2e95df68ba5598948488b16c9532e6
+source-git-commit: 21c52833a84f352610bacce58f5748d12792b20b
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '578'
 ht-degree: 3%
 
 ---
@@ -22,30 +22,14 @@ ht-degree: 3%
 
 1. 在Adobe Analytics中，选择 [!UICONTROL **工作区**].
 
-1. 选择是创建空白项目还是从模板创建项目：
+1. 在 [!UICONTROL **工作区**] 选项卡，选择 [!UICONTROL **项目**] ，然后选择 [!UICONTROL **创建项目**].
 
-   +++创建空白项目
+1. 选择是创建空白项目还是创建空白移动记分卡
 
-   1. 在 [!UICONTROL **工作区**] 选项卡，选择 [!UICONTROL **项目**] ，然后选择 [!UICONTROL **创建项目**].
+   * **空白项目** 如果您计划从浏览器共享您的分析
+   * [**空白移动记分卡**](/help/mobile-app/curator.md) 如果您计划从Adobe Analytics功能板移动应用程序共享您的分析。
 
-   1. 选择是创建空白项目还是创建空白移动记分卡
-
-      * **空白项目** 如果您计划从浏览器共享您的分析
-      * [**空白移动记分卡**](/help/mobile-app/curator.md) 如果您计划从Adobe Analytics功能板移动应用程序共享您的分析。
-   1. 选择&#x200B;[!UICONTROL **创建**]。
-
-+++
-
-   +++从模板创建项目
-
-   1. 在 [!UICONTROL **工作区**] 选项卡，选择 [!UICONTROL **报表**] 选项卡。
-
-   1. 搜索或导航到要使用的模板，然后在显示时选择该模板。
-
-      默认情况下，提供一组标准模板。 此外，您的组织可能已创建自定义模板供您选择。
-
-      <!-- (I don't know if you can create a project from a template in CJA... Might need to delete this section. Also update table in "Projects overview") For more information, see [Get started with Reports & Analytics](/help/analyze/reports-analytics/getting-started.md). -->
-+++
+1. 选择&#x200B;[!UICONTROL **创建**]。
 
 1. 接下来，您需要向项目添加面板、可视化图表和组件。 首先，在Analysis Workspace中向项目添加面板，如 [向项目中添加面板](#add-panels-to-the-project). 然后，您可以向任何面板中添加可视化。 最后，您可以向任何面板或可视化图表中添加组件。
 

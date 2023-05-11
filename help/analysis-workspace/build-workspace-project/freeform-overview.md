@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: 项目概述
 feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 21c52833a84f352610bacce58f5748d12792b20b
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 80%
+source-wordcount: '1317'
+ht-degree: 79%
 
 ---
 
@@ -27,12 +27,11 @@ ht-degree: 80%
 >
 >默认情况下，某些列不显示。 要自定义您看到的列，请单击 **自定义表** 图标 ![自定义表](assets/projects-page-customize-columns-icon.png).
 
-
 | 元素 | 描述 |
 |---|---|
 | [编辑偏好设置](/help/analysis-workspace/user-preferences.md) | 管理您创建的所有新项目或面板的Analysis Workspace及其相关组件的设置。 |
 | [创建文件夹](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | 向项目和文件夹列表中添加新文件夹或子文件夹。 |
-| [创建项目](/help/analysis-workspace/home.md) | 从头开始或从 [模板](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#analysis-workspace?lang=zh-Hans). |
+| [创建项目](/help/analysis-workspace/build-workspace-project/create-projects.md) | 从头开始创建新项目。 |
 | 展开 | 显示用于创建空白项目或移动记分卡的选项， [查看培训教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=zh-Hans)或 [查看发行说明](/help/release-notes/latest.md). |
 | 显示文件夹和项目 | 选择是否显示项目的文件夹结构。 有关更多信息，请参阅[关于 Analytics 中的文件夹](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)。 |
 | 自定义表（图标） | 允许您自定义在“项目”页面上为每个项目显示的信息。 |
@@ -60,7 +59,7 @@ ht-degree: 80%
 
 | 菜单项 | 描述 |
 |---|---|
-| 项目 | 包括常用于项目管理的操作，如“新建”、“打开”、“保存”、“另存为”和“另存为模板”。还可通过单击“刷新项目”而刷新整个项目以检索最新的数据和定义。通过[“下载 CSV 和 PDF”](/help/analysis-workspace/curate-share/download-send.md)选项，可从 Workspace 导出数据。**项目信息和设置**（见下文）提供多种用于管理项目的选项。 |
+| 项目 | 包括用于项目管理的常见操作，包括“新建”、“打开”、“保存”和“另存为”。 还可通过单击“刷新项目”而刷新整个项目以检索最新的数据和定义。通过[“下载 CSV 和 PDF”](/help/analysis-workspace/curate-share/download-send.md)选项，可从 Workspace 导出数据。**项目信息和设置**（见下文）提供多种用于管理项目的选项。 |
 | 编辑 | 撤消或重做您的上一项操作。“全部清除”将您的项目重置为空起点。 |
 | 插入 | 从此菜单插入新面板或可视化图表。还可从左侧边栏插入新面板和可视化图表。 |
 | [组件](/help/components/overview.md) | 从您的项目创建新过滤器、计算量度、日期范围或警报组件。还可从左侧边栏创建新组件。如果最近更改了组件定义，则“刷新组件”将检索最新定义。 |
