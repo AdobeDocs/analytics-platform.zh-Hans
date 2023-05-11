@@ -3,7 +3,7 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新 CJA 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 76130aeaee4447a83c2f8feea95371dc2e38bd67
+source-git-commit: 306c1432163841034c8e7a34f8e112a5cc734da4
 workflow-type: tm+mt
 source-wordcount: '850'
 ht-degree: 29%
@@ -25,8 +25,8 @@ Customer Journey Analytics 版本在[持续交付模型](releases.md)上运行�
 | **更新了Analytics功能板应用程序（移动设备应用程序）的主屏幕** | 新的更新主页屏幕允许您在一个整合的记分卡列表中查看所有记分卡。  如果您通过一次登录访问多个组织，则来自您组织的所有记分卡都将在单个列表中可用。 | 不适用 | 2023 年 5 月 10 日 |
 | **派生字段** | 这表示派生字段的初始版本。 利用派生字段，可通过可自定义的规则生成器，即时定义（通常复杂）数据操作。 您可以在“数据”视图中进一步将派生字段定义为组件（量度或维度），然后在工作区中将派生字段用作组件。<p>此版本支持营销渠道模板和以下功能：</p><ul><li>串联</li><li>情况</li><li>查找和替换</li><li>查询</li><li>URL 解析</li></ul> <p>[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/derived-fields.html)</p> | 2023 年 5 月 10 日 | 待定 |
 | **Report BuilderCJA — 从单元格中选择数据视图** | 此功能允许用户从单元格中选择数据块的数据视图。 如果您创建工作簿，并且有多个数据视图，这些视图具有相似的数据结构，并且您希望能够使用不同的数据视图多次重复使用工作簿，则此操作会很有帮助。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html) | 不适用 | 2023年5月24日 |
-| **对Analysis Workspace中的组件排序** | <p>现在，在左边栏或Analysis Workspace的“数据字典”中查看组件时，可以使用新的排序选项。 您可以按推荐（最常用的组件）、按字母顺序或类别（类型）对组件进行排序。</p><p>以前，您只能搜索或过滤组件。 [了解详情](/help/components/overview.md)</p> | 不适用 | 2023 年 5 月 10 日 |
-| **从自由格式表中删除包含动态维度的行** | 在Analysis Workspace的自由格式表中，您现在可以使用x图标快速删除包含动态维度的特定行。 这样做时，会自动应用“不等于”过滤规则。<p>以前，删除包含动态维度的行的唯一方法是在过滤器对话框中手动创建规则。 [了解详情](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)</p> | 不适用 | 2023 年 5 月 10 日 |
+| **对Analysis Workspace中的组件排序** | <p>现在，在左边栏或Analysis Workspace的“数据字典”中查看组件时，可以使用新的排序选项。 您可以按推荐（最常用的组件）、按字母顺序或类别（类型）对组件进行排序。</p><p>以前，您只能搜索或过滤组件。 [了解详情](/help/components/overview.md)</p> | 不适用 | 2023年5月17日 |
+| **从自由格式表中删除包含动态维度的行** | 在Analysis Workspace的自由格式表中，您现在可以使用x图标快速删除包含动态维度的特定行。 这样做时，会自动应用“不等于”过滤规则。<p>以前，删除包含动态维度的行的唯一方法是在过滤器对话框中手动创建规则。 [了解详情](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)</p> | 不适用 | 2023年5月17日 |
 | **用于在面板中添加可视化的新按钮** | 现在，Analysis Workspace中每个面板底部都有一个新按钮，通过该按钮，您可以快速添加可视化图表。 <p>以前，向面板添加可视化的唯一方法是从左边栏拖动可视化、复制或复制现有可视化，或创建空白面板。 [了解详情](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</p> | 不适用 | 2023年5月17日 |
 | **深层链接（移动设备应用程序）** | 允许用户发送指向记分卡的链接，这些记分卡会将用户直接引导到应用程序中的记分卡项目。 这样，就更容易共享项目并提高技术含量较低的受众的参与度。 | 不适用 | 2023年5月17日 |
 | **智能字幕** | 通过 [!UICONTROL 折线图] 可视化图表。 | 2023年5月17日 | 2023 年 6 月 1 日 |
