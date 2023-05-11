@@ -4,18 +4,18 @@ title: 将 Customer AI 数据与 CJA 集成
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: fdd8d96eeca90ac13c035ace4a010c016681bac7
+hide: true
+hide-from-toc: true
+source-git-commit: adfc2500cfc3811e7ef2798c3a0ee3e9b3425208
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '954'
 ht-degree: 70%
 
 ---
 
 # 将 Customer AI 数据与 CJA 集成
 
->[!NOTE]
->
->此功能当前正在接受[有限的测试](/help/release-notes/releases.md)，并未公开发布。
+{{release-limited-testing}}
 
 [客户人工智能](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=zh-Hans)，作为 Adobe Experience Platform 智能服务的一部分，为营销人员提供了在个人层面生成客户预测的能力。
 
