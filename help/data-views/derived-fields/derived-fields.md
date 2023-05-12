@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: cb63cd52a1618f2e1048f2779c4e6c0317e94f64
+source-git-commit: daa2c69a61e80fb0e38f06ecca248658595b2c3a
 workflow-type: tm+mt
-source-wordcount: '3003'
+source-wordcount: '2987'
 ht-degree: 8%
 
 ---
@@ -18,11 +18,6 @@ ht-degree: 8%
 # 派生字段
 
 {{release-limited-testing}}
-
->[!NOTE]
->
->待定的最终更新，您可能会看到 [!UICONTROL 自定义字段] 而不是 [!UICONTROL 派生字段] 跨用户界面。
-
 
 派生字段是Customer Journey Analytics(CJA)中实时报表功能的一个重要方面。 利用派生字段，可通过可自定义的规则生成器，即时定义（通常复杂）数据操作。 然后，您可以将该派生字段用作 [工作区](../../analysis-workspace/home.md) 或进一步将派生字段定义为 [数据视图](../data-views.md).
 
