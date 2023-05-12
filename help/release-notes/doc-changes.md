@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: c262b7d4ad69821880b2822b891ea081cf06b66b
+source-git-commit: a546c52d2a686c38f7a9a23e0c541568c2918495
 workflow-type: tm+mt
-source-wordcount: '1854'
-ht-degree: 84%
+source-wordcount: '1868'
+ht-degree: 93%
 
 ---
 
@@ -20,20 +20,21 @@ CJA 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2023 年 5 月** |  |
-| Analysis Workspace 概述 | 已更新 [Analysis Workspace概述](/help/analysis-workspace/home.md) 以包含更多常规概述信息和相关内容的链接。 |
-| 创建项目 | 创建了一篇新文章，详细说明了如何 [创建项目](/help/analysis-workspace/build-workspace-project/create-projects.md) 在Analysis Workspace。 |
+| Analysis Workspace 概述 | 更新了 [Analysis Workspace 概述](/help/analysis-workspace/home.md)，包括更多的一般概述信息和相关内容的链接。 |
+| 创建项目 | 创建了一篇新文章，其中详细解释了如何在 Analysis Workspace 中[创建项目](/help/analysis-workspace/build-workspace-project/create-projects.md)。 |
 | 对左边栏中的组件进行排序 | 添加了有关在左边栏中对组件列表进行排序的信息。请参阅 [组件概述](/help/components/overview.md). |
 | 从自由格式表中删除包含动态维度的行 | 添加了有关如何使用x图标快速删除包含动态维度的特定行的信息。 请参阅 [过滤和排序表](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
 | 用于在面板中添加可视化的按钮 | 在Analysis Workspace中每个面板底部添加了有关新按钮的信息，通过该按钮可快速添加可视化图表。 请参阅 [可视化概述](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). |
+| 智能字幕文档 | 通过 [自然语言概要](/help/analysis-workspace/visualizations/intelligent-captions.md) 折线图可视化图表的“隐藏主体”。 |
 | **2023 年 4 月** |  |
-| 有关使用过滤器作为维度的视频 | 更新了有关使用过滤器作为维度的视频。 <p>此视频链接自 [创建过滤器](/help/components/filters/create-filters.md) 页面。</p> <p>以下是视频的直接链接： [在Analysis Workspace中将过滤器用作维度](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p> |
-| 过滤器文档 | 添加了有关使用 [过滤器生成器](/help/components/filters/filter-builder.md). <p>简化了 [创建过滤器](/help/components/filters/create-filters.md) 和 [过滤器概述](/help/components/filters/filters-overview.md).</p> |
-| 更新了实验面板文档 | 在 [解释非随机维度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized). |
-| 项目过滤器（临时和快速过滤器） | 简化了有关项目过滤器的文档并删除了重复信息。 现在，创建临时过滤器的步骤与 [创建快速过滤器](/help/components/filters/quick-filters.md). |
+| 关于使用过滤器作为维度的视频 | 更新了关于使用过滤器作为维度的视频。 <p>此视频链接自[创建过滤器](/help/components/filters/create-filters.md)页面。</p> <p>以下是视频的直接链接：[在 Analysis Workspace 中使用过滤器作为维度。](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html)</p> |
+| 过滤器文档 | 添加了有关使用[过滤器生成器](/help/components/filters/filter-builder.md)的文章。 <p>简化了[创建过滤器](/help/components/filters/create-filters.md)和[过滤器概述](/help/components/filters/filters-overview.md)中的文档。</p> |
+| 更新实验面板文档 | 添加了一个有关[解释非随机维度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized)的部分。 |
+| 项目过滤器（临时区段和快速过滤器） | 简化了有关项目过滤器的文档并删除了重复的信息。创建临时过滤器的步骤现在与[创建快速过滤器](/help/components/filters/quick-filters.md)的步骤合并在一起。 |
 | **2023 年 3 月** |  |
-| 集成决策管理数据 | 添加了说明如何 [在CJA中集成Adobe Journey Optimizer决策管理数据](/help/integrations/ajo-od.md). |
+| 集成决策管理数据 | 添加了解释如何[在 CJA 中集成 Adobe Journey Optimizer 决策管理数据](/help/integrations/ajo-od.md)的内容。 |
 | 在移动记分卡中创建数据故事 | [数据故事](/help/mobile-app/create-scorecard.md#create-data-stories)是围绕中心主题或量度构建的辅助数据点、业务背景和相关量度的集合。 |
-| 更新了功能支持 | 更新了对[ Customer Journey Analytics 功能的支持](/help/getting-started/aa-vs-cja/cja-aa.md)，其中含有 CJA 中可用但 AA 中不可用或不支持的功能表。 |
+| 更新的功能支持 | 更新了对[ Customer Journey Analytics 功能的支持](/help/getting-started/aa-vs-cja/cja-aa.md)，其中含有 CJA 中可用但 AA 中不可用或不支持的功能表。 |
 | 默认计算量度 | 添加了解释 [Adobe 提供的默认计算量度](/help/components/calc-metrics/default-calcmetrics.md)的内容。 |
 | 数据词典 | <p>添加了数据词典的新文档，包括[概述](/help/components/data-dictionary/data-dictionary-overview.md)、[查看](/help/components/data-dictionary/view-data-dictionary.md)、[编辑](/help/components/data-dictionary/edit-entries-data-dictionary.md)和[监控](/help/components/data-dictionary/monitor-data-dictionary-health.md)数据词典。</p><p>更新了[添加组件描述](/help/components/add-component-descriptions.md)中的信息以解释数据词典功能。</p> |
 | 共享项目链接（无需登录） | <p>更新了现有文档以说明如何与无权访问 Analysis Workspace 的人员共享项目的只读链接。</p> <p>更新后的用户文档包括[共享项目](/help/analysis-workspace/curate-share/share-projects.md)和[创建可共享链接](/help/analysis-workspace/curate-share/shareable-links.md)。</p> <p>已将管理员的选项添加到[首选项](/help/analysis-workspace/user-preferences.md)。</p> |
