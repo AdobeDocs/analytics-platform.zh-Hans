@@ -1,21 +1,21 @@
 ---
 description: 使用智能字幕生成自然语言分析，以便在可视化图表中快速显示趋势。
-title: 智能字幕
+title: 智能题注
 feature: Visualizations
 role: User, Admin
-source-git-commit: c613c313ae2c9c6786370c46fa0a86134014e754
+source-git-commit: 9ce948e4a8dd7fdf844016ad197d9d125eb6ef6a
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 0%
+source-wordcount: '384'
+ht-degree: 1%
 
 ---
 
 
-# 智能字幕
+# 智能题注
 
 {{release-limited-testing}}
 
-智能字幕使用数据科学为工作区可视化图表提供有价值的自然语言分析。 初始版本提供了自动生成的 [折线图](line.md) 可视化图表。 （随后将显示其他可视化图表。）
+智能字幕使用高级机器学习和生成式人工智能为工作区可视化图表提供有价值的自然语言分析。 初始版本提供了自动生成的 [折线图](line.md) 可视化图表。 （随后将显示其他可视化图表。）
 
 智能字幕针对：
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ![启动智能字幕](assets/intell-caps-1.png)
 
-自然语言分析正在产生。
+自然语言分析正在产生。 每当为可视化图表提供支持的表中基础选定数据发生更改时，都会生成字幕。 此外，如果表中有多个量度，则仅会为第一个量度或用户当前选择的量度生成字幕。
 
 如果此时保存项目，稍后重新加载该项目，则字幕将自动更新为新数据。 这同样适用于从此项目导出的计划项目和PDF文件。
 
@@ -65,7 +65,3 @@ ht-degree: 0%
 如果您不希望生成智能字幕，则可以转到可视化首选项并取消选中来关闭此功能 **[!UICONTROL 显示智能字幕]**.
 
 ![字幕设置](assets/toggle-captions.png)
-
-## 重新排序字幕 {#reorder}
-
-您可以通过将字幕拖到新位置来重新排序字幕的显示方式。
