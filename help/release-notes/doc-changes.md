@@ -27,14 +27,14 @@ CJA 文档自创建以来进行了以下更新。
 | 用于在面板中添加可视化的按钮 | 在Analysis Workspace中每个面板底部添加了有关新按钮的信息，通过该按钮可快速添加可视化图表。 请参阅 [可视化概述](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). |
 | 智能字幕文档 | 通过 [自然语言概要](/help/analysis-workspace/visualizations/intelligent-captions.md) 折线图可视化图表的“隐藏主体”。 |
 | **2023 年 4 月** |  |
-| 关于使用过滤器作为维度的视频 | 更新了关于使用过滤器作为维度的视频。 <p>此视频链接自[创建过滤器](/help/components/filters/create-filters.md)页面。</p> <p>以下是视频的直接链接：[在 Analysis Workspace 中使用过滤器作为维度。](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html)</p> |
+| 关于使用过滤器作为维度的视频 | 更新了关于使用过滤器作为维度的视频。 <p>此视频链接自[创建过滤器](/help/components/filters/create-filters.md)页面。</p> <p>以下是这段视频的直接链接：[在 Analysis Workspace 中使用过滤器作为维度](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html)。</p> |
 | 过滤器文档 | 添加了有关使用[过滤器生成器](/help/components/filters/filter-builder.md)的文章。 <p>简化了[创建过滤器](/help/components/filters/create-filters.md)和[过滤器概述](/help/components/filters/filters-overview.md)中的文档。</p> |
 | 更新实验面板文档 | 添加了一个有关[解释非随机维度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized)的部分。 |
-| 项目过滤器（临时区段和快速过滤器） | 简化了有关项目过滤器的文档并删除了重复的信息。创建临时过滤器的步骤现在与[创建快速过滤器](/help/components/filters/quick-filters.md)的步骤合并在一起。 |
+| 项目过滤器（临时过滤出和快速过滤器） | 简化了有关项目过滤器的文档并删除了重复的信息。创建临时过滤器的步骤现在与[创建快速过滤器](/help/components/filters/quick-filters.md)的步骤合并在一起。 |
 | **2023 年 3 月** |  |
 | 集成决策管理数据 | 添加了解释如何[在 CJA 中集成 Adobe Journey Optimizer 决策管理数据](/help/integrations/ajo-od.md)的内容。 |
 | 在移动记分卡中创建数据故事 | [数据故事](/help/mobile-app/create-scorecard.md#create-data-stories)是围绕中心主题或量度构建的辅助数据点、业务背景和相关量度的集合。 |
-| 更新的功能支持 | 更新了对[ Customer Journey Analytics 功能的支持](/help/getting-started/aa-vs-cja/cja-aa.md)，其中含有 CJA 中可用但 AA 中不可用或不支持的功能表。 |
+| 更新了功能支持 | 更新了 [Customer Journey Analytics 功能支持](/help/getting-started/aa-vs-cja/cja-aa.md)，提供一个功能表，其中是在 CJA 中可用但在 AA 中不可用或不支持的功能。 |
 | 默认计算量度 | 添加了解释 [Adobe 提供的默认计算量度](/help/components/calc-metrics/default-calcmetrics.md)的内容。 |
 | 数据词典 | <p>添加了数据词典的新文档，包括[概述](/help/components/data-dictionary/data-dictionary-overview.md)、[查看](/help/components/data-dictionary/view-data-dictionary.md)、[编辑](/help/components/data-dictionary/edit-entries-data-dictionary.md)和[监控](/help/components/data-dictionary/monitor-data-dictionary-health.md)数据词典。</p><p>更新了[添加组件描述](/help/components/add-component-descriptions.md)中的信息以解释数据词典功能。</p> |
 | 共享项目链接（无需登录） | <p>更新了现有文档以说明如何与无权访问 Analysis Workspace 的人员共享项目的只读链接。</p> <p>更新后的用户文档包括[共享项目](/help/analysis-workspace/curate-share/share-projects.md)和[创建可共享链接](/help/analysis-workspace/curate-share/shareable-links.md)。</p> <p>已将管理员的选项添加到[首选项](/help/analysis-workspace/user-preferences.md)。</p> |
