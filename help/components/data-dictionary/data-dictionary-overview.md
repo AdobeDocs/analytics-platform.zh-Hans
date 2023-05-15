@@ -4,7 +4,7 @@ title: 数据词典概述
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
-source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+source-git-commit: 9f1a96308fce7fb827cba43833df96098f05ef93
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 81%
@@ -16,6 +16,8 @@ ht-degree: 81%
 Analysis Workspace 中的数据词典可帮助用户和管理员跟踪并更好地了解其 Analytics 环境中的组件。
 
 Analytics 管理员负责整理有关数据词典中每个组件的信息，并将其提供给用户。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on)
 
 ## 对用户的好处
 
