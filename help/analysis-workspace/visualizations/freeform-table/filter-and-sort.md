@@ -3,9 +3,9 @@ description: 描述如何在 Analysis Workspace 中筛选和排序表格的文�
 title: 排序和过滤表格
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 54032271e8f12673cc6d4f2b209b4fa89f5c4406
+source-git-commit: 1c11eb1b89eccf33fd66a0914b4beb1ab5dd6ff2
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '862'
 ht-degree: 79%
 
 ---
@@ -32,7 +32,7 @@ Analysis Workspace 中的过滤器可帮助您显示最重要的信息。
 
 >[!NOTE]
 >
->如本节所述，排除行时， [!UICONTROL **不等于**] 规则会在 [**[!UICONTROL 高级过滤]**](#apply-a-simple-or-advanced-filter) 对话框。
+>如本节所述，排除行时， [!UICONTROL **始终排除项目**] 规则会在高级过滤器对话框中自动应用。 (您可以通过选择过滤器图标，然后 [**[!UICONTROL 显示高级]**](#apply-a-simple-or-advanced-filter-to-a-table).)
 
 要快速从自由格式表中排除特定行，请执行以下操作：
 
@@ -57,7 +57,7 @@ Analysis Workspace 中的过滤器可帮助您显示最重要的信息。
    | [!UICONTROL **搜索词或短语**] | 指定要按过滤的单词或短语。 仅显示包含指定单词或确切短语的行。 |
    | [!UICONTROL **包括未指定的项（无）**] | 选择此选项可在表中显示不属于表格的任何维度的数据。<!--what is this?--> |
 
-1. （可选）要按不同标准或多个标准进行筛选，请选择 [!UICONTROL **高级过滤**].
+1. （可选）要按不同条件或多个条件筛选，请选择&#x200B;[!UICONTROL **显示高级选项**]。
 
    可以使用以下选项
 
