@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Customer Journey Analytics (CJA) 以及如何将 Analysis Workspace 用于来自 Experience Platform 的数据。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 7e6383bf94e10f6ab6f9db990f4ef3df0fb826d3
+source-git-commit: 970f93737f35a84c0e28061d2c6a8215c8b070ec
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '888'
 ht-degree: 98%
 
 ---
@@ -81,8 +81,8 @@ ht-degree: 98%
       + [子字符串](../data-views/component-settings/substring.md)
       + [值分段](../data-views/component-settings/value-bucketing.md)
    + [标准组件参考](../data-views/component-reference.md)
-   + [SQL Connector](../data-views/sql-connector.md)
-   + [派生的字段](../data-views/derived-fields/derived-fields.md)
+   + [SQL聯結器](../data-views/sql-connector.md)
+   + [派生字段](../data-views/derived-fields/derived-fields.md)
    + [标签和策略](../data-views/data-governance.md)
 
 
@@ -177,7 +177,6 @@ ht-degree: 98%
 
    + Workspace 常见问题解答 {#workspace-faq}
       + [常见问题解答](../analysis-workspace/workspace-faq/faq.md)
-      + [优化 Analysis Workspace 性能](../analysis-workspace/workspace-faq/optimizing-performance.md)
       + [错误消息](../analysis-workspace/workspace-faq/error-messages.md)
       + [Analysis Workspace 限制](../analysis-workspace/workspace-faq/aw-limitations.md)
       + [管理要求](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
@@ -197,6 +196,7 @@ ht-degree: 98%
 + 组件 {#cja-components}
    + [组件概述](../components/overview.md)
    + [添加组件描述](../components/add-component-descriptions.md)
+
    + 批注 {#annotations}
       + [批注概述](../components/annotations/overview.md)
       + [创建批注](../components/annotations/create-annotations.md)
@@ -213,11 +213,12 @@ ht-degree: 98%
       + [时间划分维度](../components/dimensions/time-parting-dimensions.md)
       + [具有很高基数的维度](../components/dimensions/high-cardinality.md)
    + [度量](../components/apply-create-metrics.md)
+
    + 过滤器 {#cja-filters}
       + [过滤器概述](../components/filters/filters-overview.md)
       + [创建过滤器](../components/filters/create-filters.md)
       + [快速过滤器](../components/filters/quick-filters.md)
-      + [过滤器生成器](../components/filters/filter-builder.md)
+      + [篩選產生器](../components/filters/filter-builder.md)
       + [管理过滤器](../components/filters/manage-filters.md)
       + [运算符](../components/filters/operators.md)
    + 计算度量 {#cja-calcmetrics}
@@ -252,18 +253,26 @@ ht-degree: 98%
       + [查看数据词典中的组件信息](../components/data-dictionary/view-data-dictionary.md)
       + [编辑数据词典中的组件条目](../components/data-dictionary/edit-entries-data-dictionary.md)
       + [监测数据词典健康状况](../components/data-dictionary/monitor-data-dictionary-health.md)
+
+
+
+
+
+
+
 + Analytics 功能板{#cja-dashboards}
    + [Analytics 功能板 — 概述](../mobile-app/home.md)
    + [策划人任务](../mobile-app/curator.md)
    + [创建移动记分卡](../mobile-app/create-scorecard.md)
    + [设置执行用户以使用功能板](../mobile-app/set-up-execs.md)
    + [执行用户快速入门指南](../mobile-app/executive.md)
+
 + Report Builder {#cja-reportbuilder}
    + [Report Builder 概述](../report-builder/report-buider-overview.md)
    + [Report Builder 设置](../report-builder/report-builder-setup.md)
    + [创建数据块](../report-builder/create-a-data-block.md)
    + [Report Builder 中心](../report-builder/report-builder-hub.md)
-   + [选择数据视图](../report-builder/select-data-view.md)
+   + [選取資料檢視](../report-builder/select-data-view.md)
    + [选择日期范围](../report-builder/select-date-range.md)
    + [使用过滤器](../report-builder/work-with-filters.md)
    + [筛选维度](../report-builder/filter-dimensions.md)
@@ -281,7 +290,7 @@ ht-degree: 98%
    + [关于将 Adobe 解决方案与 CJA 集成的概述](/help/integrations/overview.md)
    + [将 Adobe Analytics 与 Customer Journey Analytics 集成](/help/integrations/aa.md)
    + [将 Journey Optimizer 数据与 CJA 集成](/help/integrations/ajo.md)
-   + [将决策管理数据与CJA集成](/help/integrations/ajo-od.md)
+   + [將決定管理資料與CJA整合](/help/integrations/ajo-od.md)
    + [将客户人工智能与 CJA 集成](/help/integrations/customer-ai.md)
 
 + 数据管理 {#cja-privacy}
@@ -291,6 +300,7 @@ ht-degree: 98%
 
 + 用例 {#cja-usecases}
    + [Customer Journey Analytics 用例](../use-cases/cja-usecases.md)
+
    + Google Analytics 数据{#ga}
       + [将数据从 Google Analytics 迁移到 CJA 概览](../use-cases/ga/overview.md)
       + [将 Google Analytics 历史数据提取到平台](../use-cases/ga/backfill.md)
@@ -313,11 +323,16 @@ ht-degree: 98%
    + 复杂的数据 {#complex-data}
       + [使用对象数组](../use-cases/object-arrays.md)
 
+
+
+
+
+
 + 管理 {#cja-admin}
    + [访问控制](../admin/cja-access-control.md)
    + [查看和管理使用情况](../admin/estimate-usage.md)
    + [删除后果](../admin/cja-deletion.md)
-   + [优化CJA性能](../admin/cja-performance.md)
+   + [最佳化CJA效能](../admin/optimizing-performance.md)
 
 + Labs {#labs}
    + [Labs 用户指南](../labs/labs.md)
