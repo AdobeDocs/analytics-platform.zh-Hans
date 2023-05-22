@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
-source-wordcount: '1452'
-ht-degree: 97%
+source-wordcount: '1450'
+ht-degree: 96%
 
 ---
 
@@ -38,13 +38,13 @@ CJA从Adobe Experience Platform获取数据。Experience Platform 可让您集�
 
 Experience Platform 中的客户数据存储为数据集，其中包含[架构](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=zh-Hans)和批量数据。有关 Platform 的更多详细信息，请参阅 [Adobe Experience Platform 体系架构概述](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=zh-Hans)。
 
-您的CJA管理员已建立 [连接](/help/connections/create-connection.md) 到Experience Platform中的数据集。 然后，他们构建[数据视图](/help/data-views/data-views.md)使用这些连接。数据视图在概念上与虚拟报表包类似，是CJA中报表的基础。由于Experience Platform为报表收集所有数据，因此报表包不再作为数据容器存在。
+您的CJA管理員已建立 [連線](/help/connections/create-connection.md) 至Experience Platform中的資料集。 然后，他们构建[数据视图](/help/data-views/data-views.md)使用这些连接。数据视图在概念上与虚拟报表包类似，是CJA中报表的基础。由于Experience Platform为报表收集所有数据，因此报表包不再作为数据容器存在。
 
 通过建立连接，Analytics管理员可以将来自Adobe Experience Platform的数据集集成到CJA中，该数据集包含在以下视频中：
 
 >[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12)
 
-Adobe 提供了多种将数据导入 Adobe Experience Platform 的方法，包括通过 Adobe Analytics Source Connector 或 Web SDK 导入报表包数据。多个报表包中的现有实施可以合并为Experience Platform。基于这些数据集的连接和数据视图可以合并之前存在于单独报表包中的数据。
+Adobe 提供了多种将数据导入 Adobe Experience Platform 的方法，包括通过 Adobe Analytics Source Connector 或 Web SDK 导入报表包数据。多个报表包中的现有实施可以合并为Experience Platform。基於這些資料集的連線和資料檢視可以合併先前存在於單獨報告套裝中的資料。
 
 ## 对虚拟报表包概念的更改 {#data-views}
 
@@ -76,7 +76,7 @@ Adobe已将“区段”组件重命名为“过滤器”，以更好地符合行
 
 除了区段更改的概念之外，区段容器也会更新。
 
-* **命中容器现在是[!UICONTROL 事件]容器**。通过[!UICONTROL 事件]容器，可根据个别页面查看/点击量划分访客信息。
+* **命中容器现在是[!UICONTROL 事件]容器**。此 [!UICONTROL 事件] 容器可讓您根據個別事件來劃分訪客資訊。
 * **访问容器现在是[!UICONTROL 会话]容器**。通过[!UICONTROL 会话]容器可以识别页面交互、营销活动或特定会话的转化。
 * **现在，访客容器为 [!UICONTROL 人员] 容器**。[!UICONTROL 人员]容器包括访客在指定的时间范围内的每个会话和事件。
 

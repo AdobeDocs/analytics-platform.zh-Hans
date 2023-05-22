@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: 可视化图表概述
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 19d18d497857442c141fda49cdcf1fbe71e9c07f
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '1245'
-ht-degree: 90%
+ht-degree: 88%
 
 ---
 
@@ -29,7 +29,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | [流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | 流失报告显示访客从何处离开（流失）或继续通过（流过）预定义的页面序列。可以设置为有条件序列或确切序列。 |
 | [流](/help/analysis-workspace/visualizations/c-flow/flow.md) | 显示客户在您的网站和应用程序中的确切路径。 |
 | [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | 自由格式表不仅可以作为数据表，而且还是一个交互式可视化图表。这是在工作区中进行数据分析的基础。 |
-| [直方图](/help/analysis-workspace/visualizations/histogram.md) | 直方图根据指标数量，将访客数、访问数或点击数划分到存储桶中。 |
+| [直方图](/help/analysis-workspace/visualizations/histogram.md) | 長條圖會根據量度數量，將訪客、造訪或事件儲存在貯體中。 |
 | [水平条](/help/analysis-workspace/visualizations/horizontal-bar.md) | 显示一些水平条，这些水平条表示一个或多个指标中的各种值。 |
 | [折线图](/help/analysis-workspace/visualizations/line.md) | 使用线条来表示指标，以显示一段时间内值的变化情况。将时间作为 x 轴的线形图。 |
 | [散点图](/help/analysis-workspace/visualizations/scatterplot.md) | 显示维度项目与最多三个指标之间的关系。 |
@@ -39,25 +39,25 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | [树形图](/help/analysis-workspace/visualizations/treemap.md) | 将分层（树结构）数据显示为一组嵌套的矩形。 |
 | [维恩图](/help/analysis-workspace/visualizations/venn.md) | 使用圆圈来描述最多 3 个过滤器之间的量度重叠。 |
 
-## 向面板中添加可视化
+## 將視覺效果新增至面板
 
-1. 打开要在其中添加可视化的Analysis Workspace项目。
+1. 開啟您要新增視覺效果的Analysis Workspace專案。
 
-1. 使用以下任一方法添加可视化：
+1. 使用下列任一種方法來新增視覺效果：
 
-   * 在左边栏中，选择 **可视化图表** 图标 <!-- add icon -->，然后将可视化图表拖到要添加该可视化图表的面板中。
+   * 在左側邊欄中，選取 **視覺效果** 圖示 <!-- add icon -->，然後將視覺效果拖曳至您要新增的面板。
 
       ![](assets/viz-rail.png)
 
-   * 在要添加可视化的面板上，选择 **加号** 图标，然后选择表示要添加的可视化的图标。 将鼠标悬停在每个可视化的图标上可查看其名称。
+   * 在您想要新增視覺效果的面板上，選取 **加號** 圖示，然後選擇代表您要新增之視覺效果的圖示。 將滑鼠指標暫留在每個視覺效果的圖示上，即可檢視其名稱。
 
-      ![用于添加可视化的按钮](assets/visualization-add-to-panel.png)
+      ![用於新增視覺效果的按鈕](assets/visualization-add-to-panel.png)
 
-   * 添加 [空白面板](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html?lang=zh-Hans)，然后选择要添加的可视化。
+   * 新增 [空白面板](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html?lang=zh-Hans)，然後選擇要新增的視覺效果。
 
       ![空白面板](assets/blank_panel.png)
 
-   * 右键单击Analysis Workspace项目中的现有面板，然后选择 [!UICONTROL **复制可视化图表**] 或 [!UICONTROL **复制可视化图表**].
+   * 以滑鼠右鍵按一下Analysis Workspace專案中的現有面板，然後選取「 」 [!UICONTROL **複製視覺效果**] 或 [!UICONTROL **複製視覺效果**].
 
 ## 自定义可视化图表设置
 
@@ -86,7 +86,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | 设置 | 描述 |
 | --- | --- |
 | 可视化图表类型 | 更改描述数据所用的视觉效果的类型。 |
-| 粒度 | 对于趋势性的可视化图表，您可从此下拉菜单更改从此下拉列表中。 此更改也适用于数据源表。 |
+| 粒度 | 对于趋势性的可视化图表，您可从此下拉菜单更改下拉式清單中的。 此更改也适用于数据源表。 |
 | 百分比 | 显示百分数值。 |
 | 100% 堆叠 | 在面积堆叠、条形堆叠或水平条形堆叠的可视化图表上的此设置将图表转换为“100% 堆叠”的可视化图表。示例：![堆叠 100%](assets/stacked_100_percent.png) |
 | 图例可见 | 此设置允许您为概要数字/概要变化可视化图表隐藏详细的图例文本。 |

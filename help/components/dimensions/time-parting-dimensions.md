@@ -1,18 +1,18 @@
 ---
-description: 时间划分会采用所收集的点击量的时间戳，并将其划分为更有意义的维度，例如“每天时间”或“每周时间”。
+description: 時間分段功能會擷取所收集事件的時間戳記，並採用更有意義的維度加以分段，例如「小時」或「星期」。
 title: 时间划分维度
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+workflow-type: tm+mt
 source-wordcount: '193'
-ht-degree: 100%
+ht-degree: 72%
 
 ---
 
-# 时间划分维度Analysis Workspace 中的
+# Analysis Workspace中的時間分段維度
 
-时间划分会采用所收集的点击量的时间戳，并将其划分为更有意义的维度，例如“每天时间”或“每周时间”。
+時間分段功能會擷取所收集事件的時間戳記，並採用更有意義的維度加以分段，例如「小時」或「星期」。
 
 时间划分维度基于数据视图的时区。这些维度可以在 Analysis Workspace 中使用，并且可以帮助您回答以下问题：
 

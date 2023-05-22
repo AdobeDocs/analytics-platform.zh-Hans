@@ -3,10 +3,10 @@ description: 工作区总计的计算方式。
 title: 工作区总计
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+workflow-type: tm+mt
+source-wordcount: '491'
+ht-degree: 91%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 在自由格式表中，每个划分级别都显示一个总计行，可以显示两个总计行：
 
-* **[!UICONTROL 全部总计]**（灰色的“共”数字）— 此总计表示已收集的所有点击数。当在面板级别或自由格式表中应用筛选器时，此总计会进行相应的调整以反映符合筛选条件的所有点击。
+* **[!UICONTROL 全部總計]** （灰色「共」數字） — 此總計代表已收集的所有事件。 在面板層級或自由表格內套用篩選器時，此總計會經過調整，以反映符合篩選條件的所有事件。
 * **[!UICONTROL 表总计]**（黑色数字）— 此总计通常等于[!UICONTROL 总计]或是其子集。它反映自由格式表内应用的任何表筛选器，包括[!UICONTROL 不包含任何内容]选项。
 
 ![](assets/total-row.png)

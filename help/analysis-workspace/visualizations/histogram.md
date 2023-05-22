@@ -3,10 +3,10 @@ description: 直方图类似于条形图，不过它可以将数字归为几组�
 title: 直方图
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+workflow-type: tm+mt
+source-wordcount: '388'
+ht-degree: 95%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 | 开始存储段 | 确定直方图从哪个存储段开始。“1”为默认值。您可以在 0 到无穷大（非负数）的范围内设置开始数量。 |
 | 量度存储段 | 您可以增加/减少数据范围（存储段）的数量。存储段的最大数量为 50。 |
 | 量度存储段大小 | 您可以设置每个存储段的大小。例如，您可以将存储段大小从 1 次页面查看更改为 2 次页面查看。 |
-| 计算方法 | 您可以在[访客](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html)、[访问](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html)或点击类型中进行选择。例如，每次访问的页面查看次数或每位访客的页面查看次数，或者每次点击的页面查看次数。对于点击来说，“发生次数”可作为自由格式表中的 y 轴量度。 |
+| 计算方法 | 您可以在[访客](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html)、[访问](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html)或点击类型中进行选择。例如，每次造訪的頁面檢視數、每位訪客的頁面檢視數，或每個事件的頁面檢視數。 对于点击来说，“发生次数”可作为自由格式表中的 y 轴量度。 |
 
 <!--Russ or Meike - Check Hit Type link above. -->
 

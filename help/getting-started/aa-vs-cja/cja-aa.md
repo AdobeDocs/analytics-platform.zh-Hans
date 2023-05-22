@@ -4,7 +4,7 @@ description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '2003'
 ht-degree: 74%
@@ -13,7 +13,7 @@ ht-degree: 74%
 
 # Customer Journey Analytics 功能支持
 
-下表列出了在Adobe Analytics(AA)中支持、部分支持或不支持Customer Journey Analytics(CJA)的功能，以及在AA中不支持或提供CJA的功能。 由于后续会向 CJA 添加其他功能，因此这些列表会随着时间而发生变化。
+下表列出Adobe Analytics (AA)中哪些功能在Customer Journey Analytics (CJA)中受到支援、部分支援或不支援，以及AA中不支援或不提供哪些CJA功能。 由于后续会向 CJA 添加其他功能，因此这些列表会随着时间而发生变化。
 
 ## 全面支持的功能/组件 {#full-support}
 
@@ -55,10 +55,10 @@ ht-degree: 74%
 | 受众发布（区段发布） | 如果与 Adobe 的客户数据平台或 Journey Optimizer 产品一起获得许可即支持。[受众发布](/help/components/audiences/audiences-overview.md)将受众发送到 Experience Platform 中的 Real-time Customer Profile。 |
 | 分类 | 现在称为“查找数据集”。Analytics 中使用的分类可以通过分析分类源连接器导入到 Experience Platform 和 CJA。 查找数据集也可以直接上传到 AEP 并在 CJA 中可用。 |
 | 分类规则生成器 | 通过 CJA 中的[子字符串](/help/data-views/component-settings/substring.md)支持。在报表时使用字符串操作，而不使用查找数据集。 |
-| 自定义会话流程 | 支持除移动后台点击之外的所有自定义会话流程功能。 |
+| 自定义会话流程 | 支援所有自訂工作階段化功能，行動背景事件除外。 |
 | 促销变量持久性 | 通过[绑定维度和绑定度量](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=zh-Hans#binding-dimension)提供全面支持 |
 | 客户属性 | 现在称为“个人资料数据集”，它们不会从 Experience Cloud 自动导入，而是必须先上传到 AEP，然后才可在 CJA 中使用。 |
-| 数据馈送 | 数据集的第一代数据导出可通过 [AEP数据访问API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) 通过 [AEP目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en). 这些选项可提供所有收集或摄取到AEP数据湖中的数据的点击/行级别导出。 后处理数据列不可用，因为后处理列是在查询时计算的。 可通过报告导出帖子列。 |
+| 数据馈送 | 資料集的第一代資料匯出可透過 [AEP資料存取API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) 和至 [AEP目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en). 這些選項可讓您匯出所收集或擷取至AEP資料湖的所有資料，以事件/列層級匯出。 後處理資料欄無法使用，因為後處理欄是在查詢時計算的。 可透過報告匯出後置欄。 |
 | 度量去重 | 现在对数据视图中的度量配置此项。在人员或会话级别，而非数据集、数据视图或连接级别进行度量去重。 |
 | 登录、退出和花费时间维度和度量 | 受支持（现在“进入次数”和“退出次数”称为“会话启动次数”和“会话结束次数”），但计算方式略有不同。 |
 | eVar 持久性设置 | eVar 不再是 CJA 的一部分。但是，持久性设置现在是数据视图的一部分，且可用于所有维度。请记住，持久基于报表时间处理，而不是数据收集处理。数据视图中的纬度集限制为 90 天最大持久性，不支持无限持久性。 |
@@ -122,19 +122,19 @@ ht-degree: 74%
 * Reports &amp; Analytics 书签
 * Reports &amp; Analytics 目标
 
-## CJA功能在Adobe Analytics中不可用 {#cja-not-aa}
+## Adobe Analytics中不提供CJA功能 {#cja-not-aa}
 
-下表列出了Customer Journey Analytics(CJA)中提供但Adobe Analytics(AA)中不支持的功能。
+下表列出Customer Journey Analytics (CJA)中可用，但Adobe Analytics (AA)中不支援的功能。
 
 | 功能 | 更多详细信息 |
 | --- | --- |
-| 适用于任何类型数据 | CJA与Experience Platform保存各种数据架构和类型的能力相结合。 使用 [体验数据模型(XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans)，则数据可以被统一表示和组织，以便进行组合和探索。 Adobe Analytics主要关注web和移动分析数据，并在 [导入数据](https://experienceleague.adobe.com/docs/analytics/import/home.html?lang=zh-Hans). |
-| 无限量的客户Dimension和量度 | CJA维度无限制；值可以是数值、文本、对象、列表或所有元素的混合。 Dimension可以是嵌套的，也可以是分层的。 Analytics最多支持75个prop和250个eVar。 这使用维度和事件消除了当前的测量限制。 |
-| 无限基数/唯一值 | CJA支持可在单个维度中报告的无限数量的唯一值或维度项目。 AA限制为50万个唯一值。 这样可以消除当前在大规模Analytics实施中存在的报表和分析限制。 |
-| 报表时间转换 | 在CJA中，报表时间转换（更称为“数据视图”）允许您进一步解释连接中的数据。 您无需重新实施即可更改或删除数据；使用子字符串处理维度；根据任何值创建量度；过滤子事件。 这些都可以非破坏性地完成。 Adobe Analytics通过虚拟报表包和会话化提供了有限的功能。 |
-| 实验分析 | CJA可以从定义为连接一部分的任何数据源中评估任何实验的提升度和置信度。 这使您能够了解跨任何渠道的客户交互之间的因果关系。 Analytics仅能通过Analytics for Target(A4T)集成进行实验分析。 |
-| 跨设备分析 | CJA支持无缝组合来自未经身份验证和已验证会话的特定于设备的数据集。 您还可以向已知设备回填历史数据。 在Analytics中，此功能仅限于单个报表包和设备图的使用。 |
-| SQL访问 | 使用数据Distiller选项，CJA可以删除在Adobe的后端处理中收集数据的限制。 您可以使用SQL修改数据，创建新值和业务特有的数据集，并继续探索。 Analytics不支持任何类型的SQL访问其数据。 |
-| 增强的安全和隐私选项 — HIPAA就绪性 | CJA已为HIPAA做好准备，并为法规合规性提供了额外的安全选项。 Adobe Analytics尚未准备好HIPAA。 |
+| 適用於任何型別的資料 | CJA結合Experience Platform儲存各種資料結構和型別的能力。 使用 [體驗資料模型(XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans)，能以統一方式呈現和組織資料，可進行組合和探索。 Adobe Analytics主要針對網頁和行動分析資料，具備以下功能： [匯入資料](https://experienceleague.adobe.com/docs/analytics/import/home.html?lang=zh-Hans). |
+| 不限數量的客戶Dimension和量度 | CJA維度沒有限制；值可以是數值、文字、物件、清單或所有專案的混合。 Dimension可以是巢狀或階層式。 Analytics最多可支援75個prop和250個eVar。 如此一來，即可移除目前使用維度和事件的測量限制。 |
+| 無限制基數/唯一值 | CJA支援可以在單一維度中報告的無限唯一值或維度專案。 AA限製為500,000個不重複值。 如此一來，目前大規模Analytics實作所存在的Reporting And Analysis限制便能移除。 |
+| 報表時間轉換 | CJA中的報告時間轉換（更名為資料檢視）可讓您進一步詮釋來自連線的資料。 您可以在不重新實作的情況下變更或移除資料；使用子字串來操作維度；從任何值建立量度；篩選子事件。 而且這一切都可以在不破壞性的情況下完成。 Adobe Analytics透過虛擬報告套裝和作業化提供有限的功能。 |
+| 實驗分析 | CJA可從定義為連線一部分的任何資料來源評估任何實驗的提升度和信賴度。 這可讓您瞭解跨任何管道的客戶互動之間的因果關係。 Analytics僅限於透過Analytics for Target (A4T)整合進行Experimentation analytics。 |
+| 跨设备分析 | CJA支援來自未經驗證和已驗證工作階段的裝置特定資料集無縫結合。 您也可以將歷史資料回填至已知裝置。 在Analytics中，此功能僅限於單一報表套裝和使用裝置圖表。 |
+| SQL存取 | 使用Data Distiller選項，CJA可以移除在Adobe後端處理時收集資料的限制。 您可以使用SQL修改資料、建立企業專屬的新值和資料集，並繼續探索。 Analytics不支援對其資料進行任何型別的SQL存取。 |
+| 增強式安全性和隱私權選項 — HIPAA整備 | CJA已可使用HIPAA，並提供額外的法規合規性安全性選項。 Adobe Analytics尚未符合HIPAA標準。 |
 
 {style="table-layout:auto"}

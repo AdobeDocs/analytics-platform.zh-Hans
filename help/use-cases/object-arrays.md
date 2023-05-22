@@ -4,10 +4,10 @@ description: 了解 CJA 如何报告数据层次结构。
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: afc4dfd808b12be869edbd5e93a4069b93488739
-workflow-type: ht
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+workflow-type: tm+mt
 source-wordcount: '432'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 100%
 
 在以前版本的 Adobe Analytics 中，此功能是通过 `products` 变量实现的。它是一个连接字符串，用分号 (`;`) 分隔以区分产品不同方面，同时用逗号 (`,`) 描述不同产品。它是有限支持“对象数组”的唯一变量。多值变量（如列表变量）可以支持数组的等效内容，但它们不能支持“对象数组”。CJA 通过支持单行数据中任意深度的层次结构扩展了这一概念，任何以前版本的 Adobe Analytics 均不提供该功能。
 
-## 相同点击示例
+## 相同事件範例
 
-以下点击是一个 JSON 对象，它表示客户购买洗衣机和烘干机。
+以下事件是JSON物件，代表客戶購買洗衣機和烘衣機。
 
 ```json
 {
@@ -81,9 +81,9 @@ ht-degree: 100%
    * product : warranty
    * product : warranty : revenue
 
-### 相同点击示例（报表行为）
+### 相同事件範例（報告行為）
 
-仅使用上述点击，下表显示了包含某些维度和量度组合的工作区报表。
+下表僅使用上述事件，顯示具有某些維度和量度組合的工作區報表。
 
 | `product : name` | `product : orders` | `product : revenue` |
 | --- | --- | --- |
@@ -143,7 +143,7 @@ CJA 会根据表有选择地查看对象的维度和量度。
 | `extended` | `50` |
 | `Total` | `250` |
 
-CJA 查看点击的这些部分以生成报表：
+CJA會檢視事件的這些部分來產生報告：
 
 ```diff
 {
