@@ -1,195 +1,195 @@
 ---
-title: SQL Connector
-description: 了解如何使用查询服务、Power BI和/或表格来使用SQL Connector访问数据视图。
+title: SQL聯結器
+description: 瞭解如何使用Query Service、Power BI和/或Tableau，以使用SQL聯結器存取資料檢視。
 solution: Customer Journey Analytics
 feature: Data Views
 hide: true
 hidefromtoc: true
 badgeCJASQLConnector: label="New Feature" type="Positive"
-source-git-commit: 5b84c2c908f947b1abed621f68aa1a324faeecde
+source-git-commit: 829f7556c731ce55ccf1e03e2dea69b12e4501e4
 workflow-type: tm+mt
 source-wordcount: '2890'
 ht-degree: 2%
 
 ---
 
-# SQL Connector
+# SQL聯結器
 
 {{release-limited-testing}}
 
-的 [!DNL Customer Journey Analytics (CJA) SQL Connector] 启用对的SQL访问 [数据视图](./data-views.md) 在CJA中定义。 您的Power BI工程师和分析人员可能更熟悉数据、表格或其他业务智能和可视化工具（进一步称为BI工具）。 现在，他们可以基于CJA用户在创建其Analysis Workspace项目时所使用的相同数据视图来创建报表和功能板。
+此 [!DNL Customer Journey Analytics (CJA) SQL Connector] 啟用SQL存取 [資料檢視](./data-views.md) 您已在CJA中定義的專案。 您的資料工程師和分析人員可能更熟悉Power BI、Tableau或其他商業智慧和視覺化工具（進一步稱為BI工具）。 他們現在可以根據CJA使用者在建立其Analysis Workspace專案時使用的相同資料檢視來建立報告和儀表板。
 
-Adobe Experience Platform [查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans?lang=cn) 是用于Experience Platform数据湖中可用数据的SQL接口。 使用 [!DNL CJA SQL Connector] 启用，其功能 [!DNL Query Service] 扩展后，您的CJA数据视图将作为 [!DNL Query Service] 会话。 因此，使用 [!DNL Query Service] 由于其PostgresSQL接口可以无缝地从这项扩展功能中受益。
+Adobe Experience Platform [查詢服務](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans?lang=cn) 是Experience Platform資料湖中可用資料的SQL介面。 使用 [!DNL CJA SQL Connector] 已啟用， [!DNL Query Service] 延伸以將CJA資料檢視視為中的表格或檢視 [!DNL Query Service] 工作階段。 因此，商業智慧工具若使用 [!DNL Query Service] 因為其PostgresSQL介面可順暢地受益於這項擴充功能。
 
-主要优势包括：
+主要優點包括：
 
-- 无需在BI工具本身中重新创建CJA数据视图的等效表示形式。 <br/>请参阅 [数据视图](data-views.md) 有关数据视图功能的更多信息，以了解必须重新创建哪些内容。<br/>
+- 不需要在BI工具本身中重新建立CJA資料檢視的同等表示法。 <br/>另請參閱 [資料檢視](data-views.md) 有關資料檢視功能的詳細資訊，以瞭解必須重新建立的內容。<br/>
 
-- 在BI工具与CJA之间的报告和分析方面更加一致。
+- 提高BI工具與CJA之間報告和分析的一致性。
 
-- 将CJA数据与BI工具中已有的其他数据源合并。
+- 將CJA資料與BI工具中可用的其他資料來源結合。
 
 ## 先决条件
 
-要使用此功能，您必须
+若要使用此功能，您必須
 
-- 启用 [!UICONTROL CJA SQL Connector] 在您的Experience Platform组织中。
+- 啟用 [!UICONTROL CJA SQL聯結器] 在您的Experience Platform組織中。
 
-- 配置相关产品配置文件、用户组和/或个人用户的功能。<br/>
-用户必须有权访问：
-   - Experience Platform查询服务、
-   - CJA工作区项目和
-   - 要使用的CJA数据视图。
+- 設定相關產品設定檔、使用者群組及/或個別使用者的功能。<br/>
+使用者必須擁有下列專案的存取權：
+   - Experience Platform查詢服務，
+   - CJA工作區專案，以及
+   - 他們想要使用的CJA資料檢視。
 
-- 使用在未过期的凭据上过期，将BI工具连接到CJA SQL Connector。 Thr [凭据指南](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) 提供了有关设置过期凭据或未过期凭据的更多信息。
+- 使用不會到期的認證到期來將BI工具連線到CJA SQL Connector。 Thr [認證指南](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) 提供有關設定即將到期的認證或不即將到期的認證的詳細資訊。
 
-请参阅 [访问控制](../admin/cja-access-control.md) （在“CJA管理”部分）以了解其他信息。
+另請參閱 [存取控制](../admin/cja-access-control.md) 如需詳細資訊，請參閱CJA管理區段。
 
 
 ## 使用情况
 
-使用 [!DNL CJA SQL Connector] 功能中，您可以直接使用SQL，也可以使用特定BI工具中提供的拖放体验。
+若要使用 [!DNL CJA SQL Connector] 功能，您可以直接使用SQL或使用特定BI工具中可用的拖放體驗。
 
 ### SQL
 
-您可以使用查询编辑器或标准PostgresSQL命令行界面(CLI)客户端直接在SQL语句中使用该功能。
+您可以使用「查詢編輯器」或標準PostgresSQL命令列介面(CLI)使用者端，直接在SQL敘述句中使用功能。
 
-+++ 查询编辑器
++++ 查詢編輯器
 
 在Experience PlatformUI中：
 
-1. 选择 **[!UICONTROL **&#x200B;查询&#x200B;**]** 从 **[!UICONTROL **&#x200B;数据管理&#x200B;**]** 中。
+1. 選取 **[!UICONTROL **&#x200B;查詢&#x200B;**]** 從 **[!UICONTROL **&#x200B;資料管理&#x200B;**]** 在左側邊欄中。
 
-2. 选择 ![创建查询](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL **&#x200B;创建查询&#x200B;**]**.
+2. 選取 ![建立查詢](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL **&#x200B;建立查詢&#x200B;**]**.
 
-3. 要执行查询，请键入SQL语句并选择 ![播放](assets/Smock_Play_18_N.svg) 按钮（或按SHIFT + ENTER）。
+3. 若要執行查詢，請輸入您的SQL陳述式，然後選取 ![播放](assets/Smock_Play_18_N.svg) 按鈕（或按SHIFT + ENTER）。
 
 +++
 
 
 +++ PostgresSQL CLI
 
-1. 在Experience PlatformUI中，查找并复制PostgresSQL凭据：
+1. 在Experience PlatformUI中，查詢並複製您的PostgresSQL認證：
 
-   1. 选择 **[!UICONTROL **&#x200B;查询&#x200B;**]** 从左边栏(下 **[!UICONTROL **&#x200B;数据管理&#x200B;**]**)。
+   1. 選取 **[!UICONTROL **&#x200B;查詢&#x200B;**]** 從左側邊欄（在下） **[!UICONTROL **&#x200B;資料管理&#x200B;**]**)。
 
-   2. 选择 **[!UICONTROL **&#x200B;凭据&#x200B;**]** 来访问Advertising Cloud的帮助。
+   2. 選取 **[!UICONTROL **&#x200B;認證&#x200B;**]** 從頂端列。
 
-   3. 要复制连接字符串，请使用 ![复制](assets/Smock_Copy_18_N.svg) 在 **[!UICONTROL ** PSQL命令&#x200B;**]** 中。
+   3. 若要複製連線字串，請使用 ![複製](assets/Smock_Copy_18_N.svg) 在 **[!UICONTROL ** PSQL命令&#x200B;**]** 區段。
 
-2. 打开PostgresSQL CLI。
+2. 開啟您的PostgresSQL CLI。
 
-3. 要登录并开始执行查询，请将连接字符串粘贴到PostgresSQL CLI中。
+3. 若要登入並開始執行查詢，請在PostgresSQL CLI中貼上連線字串。
 
 +++
 
-请参阅 [查询编辑器UI指南](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html?lang=en) 以了解更多信息。
+另請參閱 [查詢編輯器UI指南](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html?lang=en) 以取得詳細資訊。
 
 
-### BI工具
+### BI Tools
 
-目前，CJA SQL Connector支持Power BI和表格。
+目前CJA SQL Connector支援Power BI和Tableau。
 
 +++ Power BI
 
-1. 在Adobe Experience Platform UI中，查找PostgresSQL凭据的详细信息。
+1. 在Adobe Experience Platform UI中，查詢您的PostgresSQL憑證詳細資訊。
 
-   1. 选择 **[!UICONTROL **&#x200B;查询&#x200B;**]** 从左边栏(下 **[!UICONTROL **&#x200B;数据管理&#x200B;**]**)。
+   1. 選取 **[!UICONTROL **&#x200B;查詢&#x200B;**]** 從左側邊欄（在下） **[!UICONTROL **&#x200B;資料管理&#x200B;**]**)。
 
-   2. 选择 **[!UICONTROL **&#x200B;凭据&#x200B;**]** 来访问Advertising Cloud的帮助。
+   2. 選取 **[!UICONTROL **&#x200B;認證&#x200B;**]** 從頂端列。
 
-   3. 使用 ![复制](assets/Smock_Copy_18_N.svg) 复制每个Postgres凭据参数([!UICONTROL 主机], [!UICONTROL 端口], [!UICONTROL 数据库], [!UICONTROL 用户名]等)。
+   3. 使用 ![複製](assets/Smock_Copy_18_N.svg) 若要複製每個Postgres認證引數([!UICONTROL 主機]， [!UICONTROL 連線埠]， [!UICONTROL 資料庫]， [!UICONTROL 使用者名稱]Power BI和其他)。
 
-2. 在Power BI中：
+2. 在Power BI：
 
-   1. 在主窗口中，选择 **[!UICONTROL **&#x200B;获取数据&#x200B;**]** 中。
+   1. 在主視窗中選取 **[!UICONTROL **&#x200B;取得資料&#x200B;**]** 從頂端工具列。
 
-   2. 选择 **[!UICONTROL **&#x200B;更多……**]** 中。
+   2. 選取 **[!UICONTROL **&#x200B;更多……**]** 在左側邊欄中。
 
-   3. 在 **获取数据** 屏幕，搜索 `PostgresSQL` ，然后选择 **[!UICONTROL ** PostgresSQL数据库&#x200B;**]** 列表。
+   3. 在 **取得資料** 畫面，搜尋 `PostgresSQL` 並選取 **[!UICONTROL ** PostgresSQL資料庫&#x200B;**]** 從清單中。
 
-   4. 在 **[!UICONTROL **&#x200B;出口SQL数据库&#x200B;**]** 对话框：
+   4. 在 **[!UICONTROL ** PostgressSQL資料庫&#x200B;**]** 對話方塊：
 
-      1. 粘贴 **[!UICONTROL **&#x200B;主机&#x200B;**]** 来自Experience Platform查询的参数 [!UICONTROL 凭据] into **[!UICONTROL **&#x200B;服务器&#x200B;**]** 文本。
+      1. 貼上 **[!UICONTROL **&#x200B;主機&#x200B;**]** Experience Platform查詢中的引數 [!UICONTROL 認證] 到 **[!UICONTROL **&#x200B;伺服器&#x200B;**]** 文字欄位。
 
-      2. 粘贴 **[!UICONTROL **&#x200B;数据库&#x200B;**]** 来自Experience Platform查询的参数 [!UICONTROL 凭据] in **[!UICONTROL **&#x200B;数据库&#x200B;**]** 文本。
+      2. 貼上 **[!UICONTROL **&#x200B;資料庫&#x200B;**]** Experience Platform查詢中的引數 [!UICONTROL 認證] 在 **[!UICONTROL **&#x200B;資料庫&#x200B;**]** 文字欄位。
 
-         添加 `?FLATTEN` 到 **[!UICONTROL **&#x200B;数据库&#x200B;**]** 参数，因此其内容如下所示 `prod:all?FLATTEN` 例如。 请参阅 [扁平化嵌套数据结构以与第三方BI工具一起使用](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) 以了解更多信息。
+         新增 `?FLATTEN` 至 **[!UICONTROL **&#x200B;資料庫&#x200B;**]** 引數，因此其顯示如下 `prod:all?FLATTEN` 例如。 另請參閱 [平面化巢狀資料結構以搭配協力廠商BI工具使用](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) 以取得詳細資訊。
 
-      3. 提示时 **[!UICONTROL **&#x200B;数据连接&#x200B;**]** 模式，选择 **[!UICONTROL ** DirectQuery **]** 以确保正确扁平化数据结构。
+      3. 當系統提示輸入 **[!UICONTROL **&#x200B;資料連線能力&#x200B;**]** 模式，選取 **[!UICONTROL ** DirectQuery **]** 以確保資料結構正確平面化。
 
-      4. 系统会提示您输入 **[!UICONTROL **&#x200B;用户名&#x200B;**]** 和 **[!UICONTROL **&#x200B;密码&#x200B;**]**. 使用Experience Platform查询中的等效参数 [!UICONTROL 凭据].
-   5. 成功登录后，CJA数据视图表会显示在Power BI的 **[!UICONTROL **&#x200B;导航器&#x200B;**]**. 数据视图表使用 `dv_` 以他们的名字。
+      4. 系統會提示您輸入 **[!UICONTROL **&#x200B;使用者名稱&#x200B;**]** 和 **[!UICONTROL **&#x200B;密碼&#x200B;**]**. 使用Experience Platform查詢中的對等引數 [!UICONTROL 認證].
+   5. 成功登入後，CJA資料檢視表格會出現在Power BI的 **[!UICONTROL **&#x200B;導覽器&#x200B;**]**. 識別資料檢視表的方法為使用 `dv_` 以他們的名稱。
 
 
-   6. 选择要使用的数据视图表，然后选择 **[!UICONTROL **&#x200B;加载&#x200B;**]**.
+   6. 選取您要使用的資料檢視表格，然後選取 **[!UICONTROL **&#x200B;載入&#x200B;**]**.
 
-   与一个或多个选定表格关联的所有维度和量度都显示在右侧窗格中，可在您的可视化中使用。
+   與一個或多個選定表格相關的所有維度和量度都會顯示在右窗格中，並準備好用於您的視覺效果中。
 
-   请参阅 [将Power BI连接到查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html?lang=en) 以了解更多信息。
-
-+++
-
-+++表格
-
-1. 在Experience PlatformUI中，查找PostgresSQL凭据的详细信息。
-
-   1. 选择 **[!UICONTROL **&#x200B;查询&#x200B;**]** 从左边栏(下 **[!UICONTROL **&#x200B;数据管理&#x200B;**]**)。
-
-   2. 选择 **[!UICONTROL **&#x200B;凭据&#x200B;**]** 来访问Advertising Cloud的帮助。
-
-   3. 使用 ![复制](assets/Smock_Copy_18_N.svg) 复制每个Postgres凭据参数([!UICONTROL 主机], [!UICONTROL 端口], [!UICONTROL 数据库], [!UICONTROL 用户名]等)。
-
-2. 在表格中：
-
-   1. 选择 **[!UICONTROL **&#x200B;更多&#x200B;**]** 从 **[!UICONTROL **&#x200B;到服务器&#x200B;**]** 中。
-
-   2. 选择 **[!UICONTROL ** PostgresSQL **]** 列表。
-
-   3. 在 [!UICONTROL PostgresSQL] 对话框：
-
-      1. 粘贴 **[!UICONTROL **&#x200B;主机&#x200B;**]** 来自Experience Platform查询的参数 [!UICONTROL 凭据] into **[!UICONTROL **&#x200B;服务器&#x200B;**]** 文本。
-
-      2. 粘贴 **[!UICONTROL **&#x200B;端口&#x200B;**]** 来自Experience Platform查询的参数 [!UICONTROL 凭据] into **[!UICONTROL **&#x200B;端口&#x200B;**]** 文本。
-
-      3. 粘贴 **[!UICONTROL **&#x200B;数据库&#x200B;**]** 来自Experience Platform查询的参数 [!UICONTROL 凭据] into **[!UICONTROL **&#x200B;数据库&#x200B;**]** 文本。
-
-         添加 `%3FFLATTEN` 到 **[!UICONTROL **&#x200B;数据库&#x200B;**]** 参数，因此其内容如下所示 `prod:all%3FFLATTEN` 例如。 请参阅 [扁平化嵌套数据结构以与第三方BI工具一起使用](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) 以了解更多信息。
-
-      4. 选择 **[!UICONTROL **&#x200B;用户名和密码&#x200B;**]** 从 **[!UICONTROL **&#x200B;身份验证&#x200B;**]** 列表。
-
-      5. 粘贴 **[!UICONTROL **&#x200B;用户名&#x200B;**]** 来自Experience Platform查询的参数 [!UICONTROL 凭据] into **[!UICONTROL **&#x200B;用户名&#x200B;**]** 文本。
-
-      6. 粘贴 **[!UICONTROL **&#x200B;密码&#x200B;**]** 来自Experience Platform查询的参数 [!UICONTROL 凭据] into **[!UICONTROL **&#x200B;密码&#x200B;**]** 文本。
-
-      7. 选择 **[!UICONTROL **&#x200B;登录&#x200B;**]**.
-   4. CJA数据视图在 **[!UICONTROL **&#x200B;表&#x200B;**]** 列表。 数据视图表的前缀为 `dv_`.
-
-   5. 在画布上拖动要使用的表。
-
-   您现在可以处理数据视图表中的数据，以构建报表和可视化图表。
-
-   请参阅 [将表格连接到查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html?lang=en) 以了解更多信息。
+   另請參閱 [將Power BI連線至查詢服務](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html?lang=en) 以取得詳細資訊。
 
 +++
 
-请参阅 [将客户端连接到查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=en) 以了解各种可用工具的概述和更多信息。
++++Tableau
+
+1. 在Experience PlatformUI中，查詢您的PostgresSQL認證的詳細資訊。
+
+   1. 選取 **[!UICONTROL **&#x200B;查詢&#x200B;**]** 從左側邊欄（在下） **[!UICONTROL **&#x200B;資料管理&#x200B;**]**)。
+
+   2. 選取 **[!UICONTROL **&#x200B;認證&#x200B;**]** 從頂端列。
+
+   3. 使用 ![複製](assets/Smock_Copy_18_N.svg) 若要複製每個Postgres認證引數([!UICONTROL 主機]， [!UICONTROL 連線埠]， [!UICONTROL 資料庫]， [!UICONTROL 使用者名稱]和其他)。
+
+2. 在Tableau：
+
+   1. 選取 **[!UICONTROL **&#x200B;更多&#x200B;**]** 從 **[!UICONTROL **&#x200B;至伺服器&#x200B;**]** 在左側邊欄中。
+
+   2. 選取 **[!UICONTROL ** PostgresSQL **]** 從清單中。
+
+   3. 在 [!UICONTROL PostgresSQL] 對話方塊：
+
+      1. 貼上 **[!UICONTROL **&#x200B;主機&#x200B;**]** Experience Platform查詢中的引數 [!UICONTROL 認證] 到 **[!UICONTROL **&#x200B;伺服器&#x200B;**]** 文字欄位。
+
+      2. 貼上 **[!UICONTROL **&#x200B;連線埠&#x200B;**]** Experience Platform查詢中的引數 [!UICONTROL 認證] 到 **[!UICONTROL **&#x200B;連線埠&#x200B;**]** 文字欄位。
+
+      3. 貼上 **[!UICONTROL **&#x200B;資料庫&#x200B;**]** Experience Platform查詢中的引數 [!UICONTROL 認證] 到 **[!UICONTROL **&#x200B;資料庫&#x200B;**]** 文字欄位。
+
+         新增 `%3FFLATTEN` 至 **[!UICONTROL **&#x200B;資料庫&#x200B;**]** 引數，因此其顯示如下 `prod:all%3FFLATTEN` 例如。 另請參閱 [平面化巢狀資料結構以搭配協力廠商BI工具使用](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) 以取得詳細資訊。
+
+      4. 選取 **[!UICONTROL **&#x200B;使用者名稱和密碼&#x200B;**]** 從 **[!UICONTROL **&#x200B;驗證&#x200B;**]** 清單。
+
+      5. 貼上 **[!UICONTROL **&#x200B;使用者名稱&#x200B;**]** Experience Platform查詢中的引數 [!UICONTROL 認證] 到 **[!UICONTROL **&#x200B;使用者名稱&#x200B;**]** 文字欄位。
+
+      6. 貼上 **[!UICONTROL **&#x200B;密碼&#x200B;**]** Experience Platform查詢中的引數 [!UICONTROL 認證] 到 **[!UICONTROL **&#x200B;密碼&#x200B;**]** 文字欄位。
+
+      7. 選取 **[!UICONTROL **&#x200B;登入&#x200B;**]**.
+   4. CJA資料檢視在中顯示為表格 **[!UICONTROL **&#x200B;表格&#x200B;**]** 清單。 資料檢視表的前置詞為 `dv_`.
+
+   5. 拖曳您要在畫布上使用的表格。
+
+   您現在可以使用資料檢視表格中的資料，以建置您的報告和視覺效果。
+
+   另請參閱 [將Tableau連線至查詢服務](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html?lang=en) 以取得詳細資訊。
+
++++
+
+另請參閱 [將使用者端連線至查詢服務](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=en) 有關各種可用工具的概覽和更多資訊。
 
 ## 功能
 
-默认情况下，您的数据视图具有从其友好名称生成的表安全名称。 例如，名为的数据视图 [!UICONTROL 我的Web数据] 具有视图名称 `dv_my_web_data`.
+依預設，您的資料檢視具有從易記名稱產生的表格安全名稱。 例如，資料檢視命名為 [!UICONTROL 我的網頁資料] 具有檢視名稱 `dv_my_web_data`.
 
-如果要将数据视图ID用作表名称，可以添加可选 `CJA_USE_IDS` 在连接时将设置为数据库名称。 例如， `prod:all?CJA_USE_IDS` 显示数据视图，其名称如 `dv_ABC123`.
+如果您想要使用資料檢視ID作為表格名稱，可以新增選用的 `CJA_USE_IDS` 設定為您的資料庫名稱。 例如， `prod:all?CJA_USE_IDS` 顯示您的資料檢視，名稱如下 `dv_ABC123`.
 
 ### 数据管理
 
-Customer Journey Analytics中与数据管理相关的设置继承自Adobe Experience Platform。 CJA 和 Adobe Experience Platform 数据管理之间的集成允许标记敏感 CJA 数据和实施隐私政策。
+Customer Journey Analytics中的資料控管相關設定繼承自Adobe Experience Platform。 CJA 和 Adobe Experience Platform 数据管理之间的集成允许标记敏感 CJA 数据和实施隐私政策。
 
-在 Experience Platform 使用的数据集上创建的隐私标签和策略可以在 CJA 数据视图工作流中显示。 因此，使用CJA SQL Connector查询的数据在不遵守定义的隐私标签和策略时会显示相应的警告或错误。
+在 Experience Platform 使用的数据集上创建的隐私标签和策略可以在 CJA 数据视图工作流中显示。 因此，使用CJA SQL Connector查詢的資料在未遵守定義的隱私權標籤和原則時會顯示適當的警告或錯誤。
 
-### 列出数据视图
+### 列出資料檢視
 
-在标准PostgreSQL CLI中，您可以使用 `\dv`
+在標準PostgreSQL CLI中，您可以使用以下專案列出檢視： `\dv`
 
 ```sql
 prod:all=> \dv
@@ -211,31 +211,31 @@ prod:all=> \dv
  public | dv_customer_journey_analytics_sc_demo_users_                   | view | postgres
 ```
 
-### 嵌套与扁平化
+### 巢狀與平面化
 
-默认情况下，数据视图的架构使用嵌套结构，就像原始XDM架构一样。 该集成还支持 `FLATTEN` 选项。 您可以使用此选项强制对数据视图（以及会话中的任何其他表）的架构进行扁平化处理。 拼合允许在不支持结构化架构的BI工具中更轻松地使用。 请参阅 [在查询服务中使用嵌套数据结构](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) 以了解更多信息。
+依預設，資料檢視的結構描述會使用巢狀結構，就像原始的XDM結構描述一樣。 此整合也支援 `FLATTEN` 選項。 您可以使用此選項來強制資料檢視（和工作階段中的任何其他表格）的架構平面化。 平面化可讓您在不支援結構化結構描述的BI工具中更輕鬆地使用。 另請參閱 [在查詢服務中使用巢狀資料結構](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) 以取得詳細資訊。
 
-### 支持的SQL
+### 支援的SQL
 
-请参阅 [查询服务SQL引用](https://experienceleague.adobe.com/docs/experience-platform/query/sql/overview.html?lang=en) 以获取有关支持哪种类型SQL的完整引用。
+另請參閱 [查詢服務SQL參考](https://experienceleague.adobe.com/docs/experience-platform/query/sql/overview.html?lang=en) 以取得支援哪種SQL型別的完整參考。
 
-有关模式和示例的概述，请参阅下面的模式表。
+請參閱下方的圖樣表格，以取得圖樣和範例的概觀。
 
 +++模式
 
 | 模式 | 示例 |
 |---|---|
-| 架构发现 | <pre>从dv1中选择* ，其中1=0</pre> |
-| 排名/划分 | <pre>选择DIM1, SUM(metric1)AS m1<br/>从dv1<br/>其中，“2022-01-01”和“2022-01-02”之间的\`timestamp\`<br/>GROUP BY dim1</pre><pre>选择DIM1, SUM(metric1)AS m1<br/>从dv1<br/>其中，“2022-01-01”和“2022-01-02”之间的\`timestamp\`和<br/>  filterId = &#39;12345&#39;<br/>GROUP BY dim1</pre><pre>选择DIM1, SUM(metric1)AS m1<br/>从dv1<br/>其中，“2022-01-01”和“2022-01-02”之间的\`timestamp\`和<br/>  和(dim2 = &#39;A&#39;或DIM3 IN(&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GROUP BY dim1</pre> |
-| HAVING子句 | <pre>选择DIM1, SUM(metric1)AS m1<br/>从dv1<br/>其中，“2022-01-01”和“2022-01-02”之间的\`timestamp\`<br/>GROUP BY dim1<br/>m1>100</pre> |
-| 非重复，顶部 <br/>维度值 | <pre>选择DISTINCT DIM1 FROM dv1</pre><pre>选择DIM1 AS dv1<br/>从dv1<br/>其中，“2022-01-01”和“2022-01-02”之间的\`timestamp\`<br/>GROUP BY dim1</pre><pre>选择DIM1 AS dv1<br/>从dv1<br/>其中， \`timestamp\` >= &#39;2022-01-01&#39; AND \`timestamp\` &lt; &#39;2022-01-02&#39;<br/>GROUP BY dim1<br/>按总和排序(metric1)<br/>限制15</pre> |
-| 量度总计 | <pre>选择SUM(metric1)AS m1<br/>从dv1<br/>其中，“2022-01-01”和“2022-01-02”之间的\`timestamp\`</pre> |
-| 多维度<br/>划分<br/>和顶部显示 | <pre>选择DIM1、dim2、SUM(metric1)AS m1<br/>从dv1<br/>其中，“2022-01-01”和“2022-01-02”之间的\`timestamp\`<br/>GROUP BY dim1, dim2</pre><pre>选择DIM1、dim2、SUM(metric1)AS m1<br/>从dv1<br/>其中，“2022-01-01”和“2022-01-02”之间的\`timestamp\`<br/>按1、2分组<br/>按1、2排序</pre><pre>选择DISTINCT DIM1, dim2<br/>从dv1</pre> |
-| 子选择：<br/>其他结果<br/>过滤 | <pre>SELECT dim1, m1<br/>从(<br/>  选择DIM1, SUM(metric1)AS m1<br/>  从dv1<br/>  其中，“2022-01-01”和“2022-01-02”之间的\`timestamp\`</br>  GROUP BY dim1<br/>)<br/>其中，dim1 in(&#39;A&#39;, &#39;B&#39;)</pre> |
-| 子选择：<br/>加入<br/>数据集未在<br/>CJA | <pre>选择b.key、a.dim1、a.m1<br/>从(<br/>  选择DIM1, SUM(metric1)AS m1<br/>  从dv1<br/>  其中，“2022-01-01”和“2022-01-02”之间的\`timestamp\`<br/>  GROUP BY dim1<br/>)a<br/>a.dim1 = b.key上的LEFT JOIN查找b</pre> |
-| 子选择：<br/>跨渠道查询<br/>data-views | <pre>选择键，总和(m1)AS总计<br/>从(<br/>  选择DIM1作为键，SUM(metric1)AS m1<br/>  从dv1<br/>  其中，“2022-01-01”和“2022-01-02”之间的\`timestamp\`<br/>  GROUP BY dim1<br/><br/>  并集<br/><br/>  选择DIM2作为键，SUM(m1)AS m1<br/>  从dv2<br/>  其中，“2022-01-01”和“2022-01-02”之间的\`timestamp\`<br/>  GROUP BY dim2<br/>按键分组<br/>订单总额</pre> |
-| 子选择： <br/>分层源， <br/>过滤， <br/>和聚合 | 使用子选项分层：<br><pre>选择ROWS.dim1, SUM(rows.m1)AS total<br/>从(<br/>  选择\_.dim1,\_.m1<br/>  从(<br/>    从dv1中选择\*<br/>    其中，“2022-01-01”和“2022-01-02”之间的\`timestamp\`<br/>  )\_<br/>  其中，\_.dim1 in(&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>)行<br/>按1分组<br/>订单总额</pre><br/>使用CTE的层：<br/><pre>行为(<br/>  使用\_ AS(<br/>    选择*从数据区<br/>    其中，“2021-01-01”和“2021-02-01”之间的\`timestamp\`<br/>  )<br/>  选择_.item，_.units FROM _<br/>  其中_.item不为NULL<br/>)<br/>选择ROWS.item， SUM(rows.units)AS units<br/>(“A”、“B”、“C”)中的ROWS.item<br/>按行.item分组</pre> |
-| 选择<br/>量度之前<br/> 或与<br/>维度 | <pre>选择SUM(metric1)AS m1, dim1<br/>从dv1<br/>其中，“2022-01-01”和“2022-01-02”之间的\`timestamp\`<br/>按2分组</pre> |
+| 結構描述探索 | <pre>選取*從dv1，其中1=0</pre> |
+| 排名/劃分 | <pre>選取dim1，SUM(metric1) AS m1<br/>從dv1<br/>其中\&#39;timestamp\&#39;介於&#39;2022-01-01&#39;和&#39;2022-01-02&#39;之間<br/>按dim1分組</pre><pre>選取dim1，SUM(metric1) AS m1<br/>從dv1<br/>其中\&#39;timestamp\&#39;介於&#39;2022-01-01&#39;和&#39;2022-01-02&#39;之間，並且<br/>  filterId = &#39;12345&#39;<br/>按dim1分組</pre><pre>選取dim1，SUM(metric1) AS m1<br/>從dv1<br/>其中\&#39;timestamp\&#39;介於&#39;2022-01-01&#39;和&#39;2022-01-02&#39;之間，並且<br/>  AND (dim2 = &#39;A&#39;或dim3 IN (&#39;X&#39;， &#39;Y&#39;， &#39;Z&#39;))<br/>按dim1分組</pre> |
+| HAVING子句 | <pre>選取dim1，SUM(metric1) AS m1<br/>從dv1<br/>其中\&#39;timestamp\&#39;介於&#39;2022-01-01&#39;和&#39;2022-01-02&#39;之間<br/>按dim1分組<br/>擁有m1 > 100</pre> |
+| 相異，頂端 <br/>維度值 | <pre>從dv1選取不同的DIM1</pre><pre>選取dim1 AS dv1<br/>從dv1<br/>其中\&#39;timestamp\&#39;介於&#39;2022-01-01&#39;和&#39;2022-01-02&#39;之間<br/>按dim1分組</pre><pre>選取dim1 AS dv1<br/>從dv1<br/>其中\&#39;timestamp\&#39; >= &#39;2022-01-01&#39;和\&#39;timestamp\&#39; &lt; &#39;2022-01-02&#39;<br/>按dim1分組<br/>ORDER BY SUM(metric1)<br/>上限15</pre> |
+| 量度總計 | <pre>選取SUM(metric1) AS m1<br/>從dv1<br/>其中\&#39;timestamp\&#39;介於&#39;2022-01-01&#39;和&#39;2022-01-02&#39;之間</pre> |
+| 多維度<br/>劃分<br/>和頂級特性 | <pre>選取dim1、dim2、SUM(metric1) AS m1<br/>從dv1<br/>其中\&#39;timestamp\&#39;介於&#39;2022-01-01&#39;和&#39;2022-01-02&#39;之間<br/>群組依據dim1， dim2</pre><pre>選取dim1、dim2、SUM(metric1) AS m1<br/>從dv1<br/>其中\&#39;timestamp\&#39;介於&#39;2022-01-01&#39;和&#39;2022-01-02&#39;之間<br/>按1、2分組<br/>ORDER BY 1， 2</pre><pre>選取DISTINCT dim1， dim2<br/>從dv1</pre> |
+| 子選取：<br/>其他結果<br/>篩選 | <pre>選取dim1， m1<br/>從(<br/>  選取dim1，SUM(metric1) AS m1<br/>  從dv1<br/>  其中\&#39;timestamp\&#39;介於&#39;2022-01-01&#39;和&#39;2022-01-02&#39;之間</br>  按dim1分組<br/>)<br/>WHERE dim1在(&#39;A&#39;， &#39;B&#39;)</pre> |
+| 子選取：<br/>加入<br/>資料集不在<br/>CJA | <pre>選取b.key， a.dim1， a.m1<br/>從(<br/>  選取dim1，SUM(metric1) AS m1<br/>  從dv1<br/>  其中\&#39;timestamp\&#39;介於&#39;2022-01-01&#39;和&#39;2022-01-02&#39;之間<br/>  按dim1分組<br/>) a<br/>LEFT JOIN查閱b ON a.dim1 = b.key</pre> |
+| 子選取：<br/>查詢跨越<br/>資料檢視 | <pre>SELECT索引鍵，SUM(m1) AS total<br/>從(<br/>  選取dim1作為索引鍵，選取SUM(metric1) AS m1<br/>  從dv1<br/>  其中\&#39;timestamp\&#39;介於&#39;2022-01-01&#39;和&#39;2022-01-02&#39;之間<br/>  按dim1分組<br/><br/>  聯集<br/><br/>  選取dim2作為索引鍵，選取SUM(m1) AS m1<br/>  從dv2<br/>  其中\&#39;timestamp\&#39;介於&#39;2022-01-01&#39;和&#39;2022-01-02&#39;之間<br/>  按dim2分組<br/>依索引鍵分組<br/>ORDER BY總計</pre> |
+| 子選取： <br/>分層來源， <br/>篩選， <br/>和彙總 | 使用子選取項進行分層：<br><pre>選取rows.dim1， SUM(rows.m1) AS total<br/>從(<br/>  選取\_.dim1，\_.m1<br/>  從(<br/>    從dv1選取\*<br/>    其中\&#39;timestamp\&#39;介於&#39;2022-01-01&#39;和&#39;2022-01-02&#39;之間<br/>  ) \_<br/>  其中\_.dim1於(&#39;A&#39;， &#39;B&#39;， &#39;C&#39;)<br/>)列<br/>按1分組<br/>ORDER BY總計</pre><br/>搭配使用CTE的圖層：<br/><pre>列為(<br/>  以\_ AS (<br/>    選取*從data_ares<br/>    其中\&#39;timestamp\&#39;介於&#39;2021-01-01&#39;和&#39;2021-02-01&#39;之間<br/>  )<br/>  選取_.item，_.units FROM _<br/>  其中_.item不是NULL<br/>)<br/>SELECT rows.item， SUM(rows.units) AS units<br/>FROM列WHERE rows.item在(&#39;A&#39;， &#39;B&#39;， &#39;C&#39;)<br/>GROUP BY rows.item</pre> |
+| 選取<br/>量度排在前<br/> 或混合<br/>維度 | <pre>選取SUM(metric1) AS m1， dim1<br/>從dv1<br/>其中\&#39;timestamp\&#39;介於&#39;2022-01-01&#39;和&#39;2022-01-02&#39;之間<br/>按2分組</pre> |
 
 {style="table-layout:auto"}
 
@@ -243,35 +243,35 @@ prod:all=> \dv
 
 ### 维度
 
-您可以选择默认可用或在数据视图中定义的任何维度。 您可以按维度的ID来选择维度。
+您可以選取任何預設可用的維度或在資料檢視中定義的維度。 您可以依維度的ID來選取維度。
 
 ### 度量
 
-可供选择的量度包括：
+可供選取的量度包括：
 
-- 默认可用的任何量度，
+- 任何預設可用的量度，
 
-- 在数据视图中定义，
+- 在資料檢視中定義，
 
-- 与用户有权访问的数据视图兼容的计算量度。
+- 與使用者有權存取的資料檢視相容的計算量度。
 
-您可以通过其ID来选择量度，该ID封装在 `SUM(metric)` 表达式，就像使用其他SQL源一样。
+您可以透過包在中的量度ID來選取量度 `SUM(metric)` 運算式，就像處理其他SQL來源一樣。
 
 您可以使用:
 
-- `SELECT COUNT(*)` 或 `COUNT(1)` 以获取发生次数量度。
+- `SELECT COUNT(*)` 或 `COUNT(1)` 以取得發生次數量度。
 
-- `SELECT COUNT(DISTINCT dimension)` 或 `SELECT APPROX_COUNT_DISTINCT(dimension)` 来计算维度的近似非重复值。 请参阅 [计数区别](#counting-distincts).
+- `SELECT COUNT(DISTINCT dimension)` 或 `SELECT APPROX_COUNT_DISTINCT(dimension)` 以計算維度的近似相異值。 請參閱以下連結中的詳細資料： [計算差異](#counting-distincts).
 
-- [内联计算](#inline-calculations) 来快速组合量度和/或对量度进行数学运算。
+- [內嵌計算](#inline-calculations) 快速組合量度和/或對其執行數學。
 
-#### 计数区别
+#### 計算差異
 
-由于CJA工作方式的基本性质，您唯一可以获得精确独特计数的维度是 `adobe_personid` 维度。 以下SQL语句 `SELECT COUNT(DISTINCT adobe_personid)` 或 `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` 返回默认访客量度的值，该值是不同人员的计数。 对于其他维度，会返回非重复近似计数。
+由於CJA運作方式的基礎性質，您唯一可獲得確切相異計數的維度是 `adobe_personid` 維度。 下列SQL敘述句 `SELECT COUNT(DISTINCT adobe_personid)` 或 `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` 傳回預設訪客量度的值，該量度為不同人員的計數。 對於其他維度，會傳回近似的相異計數。
 
-#### 条件量度
+#### 條件量度
 
-您可以嵌入 `IF` 或 `CASE` 子句 `SUM` 或 `COUNT` 函数添加特定于所选量度的附加过滤。 添加这些子句与将过滤器应用到工作区报表表中的量度列类似。
+您可以內嵌 `IF` 或 `CASE` 子句於 `SUM` 或 `COUNT` 函式來新增所選量度特定的其他篩選。 新增這些子句類似於將篩選器套用至Workspace報表表格中的量度欄。
 
 示例：
 
@@ -283,62 +283,62 @@ SUM(IF(dim1 = 'X' AND dim2 = 'A', metric1, 0)) AS m1
 SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN METRIC1 END) AS m1
 ```
 
-#### 内联计算
+#### 內嵌計算
 
-您可以将其他量度表达式应用到 `SELECT` 而不是在计算量度中定义数学。 下表列出了支持的表达式类型。
+您可以將其他套用至量度運算式，在 `SELECT` 而不需在計算量度中定義數學。 下表列出支援的運算式型別。
 
-| 运算符或函数 | 详细信息 |
+| 運運算元或函式 | 详细信息 |
 |---|---|
-| `+`, `-`, `*`, `/`, 和 `%` | 加、减、乘、除和取模/余数 |
-| `-X` 或 `+X` | 更改X为量度表达式的符号或量度 |
-| `PI()` | π常数 |
-| `POSITIVE`, `NEGATIVE`, `ABS`, `FLOOR`, `CEIL`, `CEILING`, `EXP`, `LN`, `LOG10`, `LOG1P`, `SQRT`, `CBRT`, `DEGREES`, `RADIANS`, `SIN`, `COS`, `TAN`, `ACOS`, `ASIN`, `ATAN`, `COSH`, `SINH`和 `TANH` | 一元数学函数 |
-| `MOD`, `POW`, `POWER`, `ROUND`, `LOG` | 二进制数学函数 |
+| `+`, `-`, `*`, `/`, 和 `%` | 加、減、乘、除和模數/餘數 |
+| `-X` 或 `+X` | 變更符號或量度，其中X是量度運算式 |
+| `PI()` | π常數 |
+| `POSITIVE`， `NEGATIVE`， `ABS`， `FLOOR`， `CEIL`， `CEILING`， `EXP`， `LN`， `LOG10`， `LOG1P`， `SQRT`， `CBRT`， `DEGREES`， `RADIANS`， `SIN`， `COS`， `TAN`， `ACOS`， `ASIN`， `ATAN`， `COSH`， `SINH`、和 `TANH` | 一元數學函式 |
+| `MOD`, `POW`, `POWER`, `ROUND`, `LOG` | 二進位數學函式 |
 
 {style="table-layout:auto"}
 
-### 特殊列
+### 特殊欄
 
 **时间戳**
 
-的 `timestamp` 特殊列用于提供查询的日期范围。 日期范围可以使用 `BETWEEN` 表达式或一对 `timestamp` `>`, `>=`, `<`, `<=` 检查 `AND`一起拼了。
-的 `timestamp` 为可选参数，如果未提供完整范围，则使用默认值：
+此 `timestamp` 特殊欄用於提供查詢的日期範圍。 日期範圍可透過以下方式定義： `BETWEEN` 運算式或一對 `timestamp` `>`， `>=`， `<`， `<=` 檢查 `AND`ed在一起。
+此 `timestamp` 為選用，若未提供完整範圍，則會使用預設值：
 
-- 如果仅提供最小值(`timestamp > X` 或 ` timestamp >= X`)，范围从X到现在。
+- 如果只提供最低值(`timestamp > X` 或 ` timestamp >= X`)，範圍是從X到現在。
 
-- 如果仅提供最大值(`timestamp < X` 或 `timestamp <= X`)，范围为X-30天到X。
+- 如果只提供最大值(`timestamp < X` 或 `timestamp <= X`)，範圍為X-30天到X。
 
-- 如果未提供任何内容，则范围为“现在–30天”到“现在”。
+- 如果未提供任何專案，則範圍為從現在–30天到現在。
 
-时间戳范围会在RankedRequest中转换为日期范围全局过滤器。
-时间戳字段还可用于Date-Time函数中以解析、截断事件时间戳。
+時間戳記範圍會轉換為RankingRequest中的日期範圍全域篩選器。
+時間戳記欄位也可用於日期 — 時間函式，以剖析、截斷事件時間戳記。
 
 **日期范围**
 
-的 `daterange` 特殊列的工作方式类似于  `timestamp`，但过滤时间限制为整天。 的 `daterange` 也是可选的，且其默认范围与相同 `timestamp`.
-的 `daterange` 字段，也可以在日期时间函数中使用来解析和截断事件日期。
+此 `daterange` 特殊欄的工作方式類似於  `timestamp`，但篩選時間限製為完整天。 此 `daterange` 也是選用專案，其預設範圍與相同 `timestamp`.
+此 `daterange` 欄位也可用於日期時間函式，以剖析、截斷事件日期。
 
 **filterId**
 
-的 `filterId` 特殊列是可选列，用于将外部定义的过滤器应用到查询。 将外部定义的过滤器应用到查询与在工作区的面板上拖动过滤器类似。 可以提供多个过滤器ID `AND`-Ing theres。
+此 `filterId` 特殊欄是選用欄位，用於將外部定義的篩選器套用至查詢。 將外部定義的篩選器套用至查詢，類似於在工作區中的面板上拖曳篩選器。 下列專案可提供多個篩選器ID： `AND` — 他們。
 
 ### WHERE子句
 
-WHERE子句分三步处理：
+WHERE子句有三個步驟處理：
 
-1. 从 `timestamp` 特殊字段。
+1. 從以下位置尋找日期範圍： `timestamp` 特殊欄位。
 
-2. 查找任何外部定义的 `filterId`要包含在过滤中。
+2. 尋找任何外部定義的 `filterId`要包含在篩選中的。
 
-3. 将其余表达式转换为临时过滤器。
+3. 將剩餘運算式轉換為臨時篩選。
 
-处理通过解析 `AND`s `WHERE` 子句。 每个顶级 `AND`ed表达式必须与上述任一值匹配。 比 `AND`s，或者，如果 `WHERE` 子句使用 `OR`作为临时过滤器处理。
+處理是透過剖析第一層級來完成 `AND`位於 `WHERE` 子句。 每個頂層 `AND`ed運算式必須符合上述其中一項。 任何比第一層級更深入的內容 `AND`s，或，如果 `WHERE` 子句使用 `OR`在頂層，會以臨時篩選來處理。
 
-### 订购依据
+### 排序方式
 
-默认情况下，查询会按第一个选定量度的降序排序结果。 您可以通过指定 `ORDER BY ... ASC` 或 `ORDER BY ... DESC`. 如果您使用 `ORDER BY`，您必须指定 `ORDER BY` 在第一个选定量度上。
+依預設，查詢會依第一個選取的量度以遞減順序來排序結果。 您可以透過指定覆寫預設的排序順序 `ORDER BY ... ASC` 或 `ORDER BY ... DESC`. 如果您使用 `ORDER BY`，您必須指定 `ORDER BY` 於第一個選取的量度。
 
-您还可以使用 `-` （减）。 下面两个语句的顺序相同：
+您也可以使用反向順序 `-` （減號）在量度之前。 以下兩個陳述式會產生相同的順序：
 
 ```sql
 ORDER BY metric1 ASC
@@ -348,46 +348,46 @@ ORDER BY metric1 ASC
 ORDER BY -metric1 DESC
 ```
 
-### 一般功能支持
+### 一般功能支援
 
 | 函数 | 示例 | 详细信息 |
 |---|---|---|
-| [CAST（列AS类型）](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` 或 <br/> `` `timestamp`::string `` | 当前不支持类型转换，但不会引发任何错误。 的 `CAST` 函数时，会将其忽略。 |
-| [TIMESTAMP(timeString)](https://spark.apache.org/docs/latest/api/sql/index.html#timestamp) | `` WHERE `timestamp` >= TIMESTAMP('2022-01-01 00:00:00') AND   `timestamp` < TIMESTAMP('2022-01-02 00:00:00') `` | 将时间字符串解析为时间戳，以在 `WHERE` 子句。 |
-| [TO_TIMESTAMP(timeString， formatString)](https://spark.apache.org/docs/latest/api/sql/index.html#to_timestamp) | `` WHERE `timestamp` >= TO_TIMESTAMP('01/01/2022', 'MM/dd/yyyy') AND `timestamp` < TO_TIMESTAMP('01/02/2022', 'MM/dd/yyyy') `` | 将时间字符串解析为时间戳，以在 `WHERE` 子句，或者为该时间字符串提供格式。 |
-| [DATE(dateString)](https://spark.apache.org/docs/latest/api/sql/index.html#date) | `` WHERE `timestamp` >= DATE('2022-01-01') AND `timestamp` < DATE('2022-01-02') `` | 将日期字符串解析为时间戳，以在 `WHERE` 子句。 |
-| [TO_DATE(dateString， formatString)](https://spark.apache.org/docs/latest/api/sql/index.html#to_date) | `` WHERE `timestamp` >= TO_DATE('01/01/2022', 'MM/dd/yyyy') AND `timestamp` < TO_DATE('01/02/2022', 'MM/dd/yyyy') `` | 将日期字符串解析为时间戳，以在 `WHERE` 子句，或者为该日期字符串提供格式。 |
+| [CAST(COLUMN AS type)](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` 或 <br/> `` `timestamp`::string `` | 目前不支援型別轉換，但不會擲回錯誤。 此 `CAST` 已忽略函式。 |
+| [TIMESTAMP(timeString)](https://spark.apache.org/docs/latest/api/sql/index.html#timestamp) | `` WHERE `timestamp` >= TIMESTAMP('2022-01-01 00:00:00') AND   `timestamp` < TIMESTAMP('2022-01-02 00:00:00') `` | 將時間字串剖析為時間戳記，以便用於 `WHERE` 子句。 |
+| [TO_TIMESTAMP(timeString， formatString)](https://spark.apache.org/docs/latest/api/sql/index.html#to_timestamp) | `` WHERE `timestamp` >= TO_TIMESTAMP('01/01/2022', 'MM/dd/yyyy') AND `timestamp` < TO_TIMESTAMP('01/02/2022', 'MM/dd/yyyy') `` | 將時間字串剖析為時間戳記，以便用於 `WHERE` 子句，選擇性地提供該時間字串的格式。 |
+| [DATE(dateString)](https://spark.apache.org/docs/latest/api/sql/index.html#date) | `` WHERE `timestamp` >= DATE('2022-01-01') AND `timestamp` < DATE('2022-01-02') `` | 將日期字串剖析為時間戳記，以便用於 `WHERE` 子句。 |
+| [TO_DATE(dateString， formatString)](https://spark.apache.org/docs/latest/api/sql/index.html#to_date) | `` WHERE `timestamp` >= TO_DATE('01/01/2022', 'MM/dd/yyyy') AND `timestamp` < TO_DATE('01/02/2022', 'MM/dd/yyyy') `` | 將日期字串剖析為時間戳記，以便用於 `WHERE` 子句，選擇性地提供該日期字串的格式。 |
 
 {style="table-layout:auto"}
 
-### Dimension功能支持
+### Dimension功能支援
 
-这些函数可用于 `SELECT`, `WHERE` 子句或条件量度中的。
+這些函式可用於中的維度 `SELECT`， `WHERE` 子句中或在條件量度中。
 
 **字符串函数**
 
 | 函数 | 示例 | 详细信息 |
 |---|---|---|
-| [LOWER(stringDimension)](https://spark.apache.org/docs/latest/api/sql/index.html#lower) | ``SELECT LOWER(name) AS lower_name`` | 在传递的字段上生成动态维度标识。 |
+| [LOWER(stringDimension)](https://spark.apache.org/docs/latest/api/sql/index.html#lower) | ``SELECT LOWER(name) AS lower_name`` | 在傳入的欄位上產生動態維度身分識別。 |
 
 {style="table-layout:auto"}
 
-**日期时间函数**
+**日期時間函式**
 
 | 函数 | 示例 | 详细信息 |
 |---|---|---|
-| [YEAR（日期或日期 — 时间）](https://spark.apache.org/docs/latest/api/sql/index.html#year) | ``SELECT YEAR(`timestamp`)`` | 在传递的字段上生成动态维度标识。 |
-| [MONTH（日期或日期 — 时间）](https://spark.apache.org/docs/latest/api/sql/index.html#month) | ``SELECT MONTH(`timestamp`)`` | 在传递的字段上生成动态维度标识。 |
-| [DAY（日期或日期 — 时间）](https://spark.apache.org/docs/latest/api/sql/index.html#day) | ``SELECT DAY(`timestamp`)`` | 在传递的字段上生成动态维度标识。 |
-| [DAYOFWEEK（日期或日期 — 时间）](https://spark.apache.org/docs/latest/api/sql/index.html#dayofweek) | ``SELECT DAYOFWEEK(`timestamp`)`` | 在传递的字段上生成动态维度标识。 由于您需要的编号不是友好名称，因此请使用项目ID而不是值。 |
-| [DAYOFYEAR（日期或日期时间）](https://spark.apache.org/docs/latest/api/sql/index.html#dayofyear) | ``SELECT DAYOFYEAR(`timestamp`)`` | 在传递的字段上生成动态维度标识。 |
-| [WEEK（日期或日期 — 时间）](https://spark.apache.org/docs/latest/api/sql/index.html#week) | ``SELECT WEEK(`timestamp`)`` | 在传递的字段上生成动态维度标识。 |
-| [QUARTER（日期或日期 — 时间）](https://spark.apache.org/docs/latest/api/sql/index.html#quarter) | ``SELECT QUARTER(`timestamp`)`` | 在传递的字段上生成动态维度标识。 |
-| [HOUR（日期或日期 — 时间）](https://spark.apache.org/docs/latest/api/sql/index.html#hour) | ``SELECT HOUR(`timestamp`)`` | 在传递的字段上生成动态维度标识。 由于您需要的编号不是友好名称，因此请使用项目ID而不是值。 |
-| [MINUTE（日期或日期时间）](https://spark.apache.org/docs/latest/api/sql/index.html#minute) | ``SELECT MINUTE(`timestamp`)`` | 在传递的字段上生成动态维度标识。 |
-| [EXTRACT（part FROM date或date-time）](https://spark.apache.org/docs/latest/api/sql/index.html#extract) | ``SELECT EXTRACT(MONTH FROM `timestamp`)`` | 在传递的字段上生成动态维度标识。 由于您需要的编号不是友好名称，因此请对此函数的某些部分使用项目ID而不是值。<br/>支持的部件包括：<br> — 关键词： `YEAR`, `MONTH`, `DAYOFMONTH`, `DAYOFWEEK`, `DAYOFYEAR`, `WEEK`, `QUARTER`, `HOUR`, `MINUTE`.<br/> — 字符串：  `'YEAR'`, &#39;`Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, &#39;`DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&#39;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`或 `'MINUTE'`. |
-| [DATE_PART（part、date或date-time）](https://spark.apache.org/docs/latest/api/sql/index.html#date_part) | ``SELECT DATE_PART('month', `timestamp`)`` | 在传递的字段上生成动态维度标识。 由于您需要的编号不是友好名称，因此请对此函数的某些部分使用项目ID而不是值。<br/>支持的字符串部分包括： `'YEAR'`, &#39;`Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, &#39;`DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&#39;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`或 `'MINUTE'`. |
-| [DATE_TRUNC（粒度、日期或日期 — 时间）](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | 在传递的字段上生成动态维度标识。<br/>支持的字符串粒度包括： `'YEAR'`, &#39;`Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, &#39;`DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&#39;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`或 `'MINUTE'`. |
+| [YEAR（日期或日期時間）](https://spark.apache.org/docs/latest/api/sql/index.html#year) | ``SELECT YEAR(`timestamp`)`` | 在傳入的欄位上產生動態維度身分識別。 |
+| [MONTH（日期或日期時間）](https://spark.apache.org/docs/latest/api/sql/index.html#month) | ``SELECT MONTH(`timestamp`)`` | 在傳入的欄位上產生動態維度身分識別。 |
+| [DAY（日期或日期時間）](https://spark.apache.org/docs/latest/api/sql/index.html#day) | ``SELECT DAY(`timestamp`)`` | 在傳入的欄位上產生動態維度身分識別。 |
+| [DAYOFWEEK（日期或日期時間）](https://spark.apache.org/docs/latest/api/sql/index.html#dayofweek) | ``SELECT DAYOFWEEK(`timestamp`)`` | 在傳入的欄位上產生動態維度身分識別。 使用專案ID而非值，因為您需要編號而不是好記名稱。 |
+| [DAYOFYEAR（日期或日期時間）](https://spark.apache.org/docs/latest/api/sql/index.html#dayofyear) | ``SELECT DAYOFYEAR(`timestamp`)`` | 在傳入的欄位上產生動態維度身分識別。 |
+| [WEEK（日期或日期時間）](https://spark.apache.org/docs/latest/api/sql/index.html#week) | ``SELECT WEEK(`timestamp`)`` | 在傳入的欄位上產生動態維度身分識別。 |
+| [QUARTER（日期或日期時間）](https://spark.apache.org/docs/latest/api/sql/index.html#quarter) | ``SELECT QUARTER(`timestamp`)`` | 在傳入的欄位上產生動態維度身分識別。 |
+| [HOUR（日期或日期時間）](https://spark.apache.org/docs/latest/api/sql/index.html#hour) | ``SELECT HOUR(`timestamp`)`` | 在傳入的欄位上產生動態維度身分識別。 使用專案ID而非值，因為您需要編號而不是好記名稱。 |
+| [MINUTE（日期或日期時間）](https://spark.apache.org/docs/latest/api/sql/index.html#minute) | ``SELECT MINUTE(`timestamp`)`` | 在傳入的欄位上產生動態維度身分識別。 |
+| [EXTRACT(part FROM date or date-time)](https://spark.apache.org/docs/latest/api/sql/index.html#extract) | ``SELECT EXTRACT(MONTH FROM `timestamp`)`` | 在傳入的欄位上產生動態維度身分識別。 使用專案ID而非此函式某些部分的值，因為您需要編號而不是好記名稱。<br/>支援的零件包括：<br> — 關鍵字： `YEAR`， `MONTH`， `DAYOFMONTH`， `DAYOFWEEK`， `DAYOFYEAR`， `WEEK`， `QUARTER`， `HOUR`， `MINUTE`.<br/> — 字串：  `'YEAR'`， `'Y'`， `'MONTH'`， `'M'`， `'DAYOFMONTH'`， `'DAY'`， `'D'`， `'DAYOFWEEK'`， `'DOW'`， `'DAYOFYEAR'`， `'DOY'`， `'WEEK'`， `'WOY`&#39;， `'W'`， `'QUARTER'`， `'QOY'`， `'Q'`， `'HOUR'`，或 `'MINUTE'`. |
+| [DATE_PART（part， date或date-time）](https://spark.apache.org/docs/latest/api/sql/index.html#date_part) | ``SELECT DATE_PART('month', `timestamp`)`` | 在傳入的欄位上產生動態維度身分識別。 使用專案ID而非此函式某些部分的值，因為您需要編號而不是好記名稱。<br/>支援的字串部分包括： `'YEAR'`， `'Y'`， `'MONTH'`， `'M'`， `'DAYOFMONTH'`， `'DAY'`， `'D'`， `'DAYOFWEEK'`， `'DOW'`， `'DAYOFYEAR'`， `'DOY'`， `'WEEK'`， `'WOY`&#39;， `'W'`， `'QUARTER'`， `'QOY'`， `'Q'`， `'HOUR'`，或 `'MINUTE'`. |
+| [DATE_TRUNC（粒度、日期或日期時間）](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | 在傳入的欄位上產生動態維度身分識別。<br/>支援的字串粒度為： `'YEAR'`， `'Y'`， `'MONTH'`， `'M'`， `'DAYOFMONTH'`， `'DAY'`， `'D'`， `'DAYOFWEEK'`， `'DOW'`， `'DAYOFYEAR'`， `'DOY'`， `'WEEK'`， `'WOY`&#39;， `'W'`， `'QUARTER'`， `'QOY'`， `'Q'`， `'HOUR'`，或 `'MINUTE'`. |
 
 {style="table-layout:auto"}
 
