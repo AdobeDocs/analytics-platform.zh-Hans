@@ -2,10 +2,10 @@
 title: 管理过滤器
 description: 了解如何管理 Customer Journey Analytics 中的过滤器
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
-source-git-commit: bd7a6d8ea46b27c465fcc8db4b9a317e517939a6
-workflow-type: ht
-source-wordcount: '1094'
-ht-degree: 100%
+source-git-commit: ec8760cf9984d4e962992f613c4a58a52fa29d47
+workflow-type: tm+mt
+source-wordcount: '1102'
+ht-degree: 99%
 
 ---
 
@@ -124,7 +124,7 @@ ht-degree: 100%
 
 1. 单击过滤器管理工具栏中的&#x200B;**[!UICONTROL 共享]**。
 
-1. 如果您是管理员，则可以选择“所有人”或组织中的“组”和“用户”。如果您不是管理员，则只能看到个人用户。使用搜索字段搜索组或用户。单击&#x200B;**[!UICONTROL 共享]**。“共享”图标将会显示在过滤器旁边：![](assets/share_icon.png)
+1. 如果您是管理员，则可以选择“所有人”或组织中的“组”和“用户”。如果您不是管理员，则只能看到个人用户。使用搜索字段搜索组或用户。单击&#x200B;**[!UICONTROL 共享]**。“共享”图标将会显示在过滤器旁边：![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
 
 1. 您可以过滤与您共享的过滤器，方法是：转到“过滤器”>“其他过滤器”>“已与我共享”。
 
