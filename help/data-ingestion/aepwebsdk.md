@@ -4,10 +4,10 @@ description: 阐述如何通过 Adobe Experience Platform Web SDK 和 Edge Netwo
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: 43f77ffb3538e96798e68b35ec4541ba650c2090
-workflow-type: ht
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
 source-wordcount: '3587'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -94,7 +94,7 @@ ht-degree: 100%
 
    ![ 识别对象 ](./assets/identification-field.png)
 
-   这会为您的模式添加识别功能。在您的情况下，您希望使用 Experience Cloud Id 和电子邮件地址来识别访问您站点的配置文件。还有许多其他属性可用于跟踪访问者的身份（例如客户 ID、忠诚度 ID）。
+   这会为您的模式添加识别功能。在您的情况下，您希望使用 Experience Cloud Id 和电子邮件地址来识别访问您站点的配置文件。有许多其他属性可用于跟踪您的人员标识（例如客户ID、忠诚度ID）。
 
    选择&#x200B;**[!UICONTROL 应用]**&#x200B;将此对象添加到您的模式中。
 
@@ -265,7 +265,7 @@ ht-degree: 100%
 
 有关详细信息，请参阅[配置 Adobe Experience Platform Web SDK 扩展](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html)。
 
-您还希望设置 Experience Cloud ID 服务扩展，以便您可以轻松使用 Experience Cloud ID。Experience Cloud ID 服务可识别所有 Adobe Experience Cloud 解决方案中的访客。
+您还希望设置 Experience Cloud ID 服务扩展，以便您可以轻松使用 Experience Cloud ID。Experience CloudID服务可识别所有Adobe Experience Cloud解决方案中的人员。
 
 要创建和配置 Experience Cloud ID 服务扩展：
 
@@ -285,7 +285,7 @@ ht-degree: 100%
 
 数据元素是数据词典（或数据映射）的构建块。使用数据元素可跨市场营销和广告技术收集、组织和交付数据。您可以在标记中设置从数据层读取的数据元素，并可用于将数据传送到 Adobe Experience Platform。
 
-有不同类型的数据元素。您首先设置一个数据元素来捕获访问者在您的网站上查看的页面名称。
+有不同类型的数据元素。您首先设置一个数据元素来捕获用户在您的网站上查看的页面名称。
 
 定义页面名称数据元素：
 

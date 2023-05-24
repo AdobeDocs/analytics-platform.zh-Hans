@@ -3,10 +3,10 @@ title: 自由格式表中的动态维度项与静态维度项
 description: 如何与表中的动态维度项和静态维度项交互
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
-source-git-commit: 54032271e8f12673cc6d4f2b209b4fa89f5c4406
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 90%
+ht-degree: 88%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 90%
 
 例如，将“浏览器类型”维度拖入表中后，则排名靠前的“浏览器类型”维度项目（例如 Microsoft、Apple、Google 等）会动态返回到表行。如果拖放到列中，则会动态返回排名前 5 的“浏览器类型”维度项目。
 
-动态维度项目具有行过滤器选项和X图标，并且可以 **not** 有锁图标。 <!--do they have the lock icon? --> 单击动态维度项目旁边的x时，会自动应用过滤器。 有关将过滤器应用到表格的更多信息，请参阅 [过滤和排序表](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
+动态维度项目具有行筛选器选项和X图标，可以 **非** 出现锁图标。 <!--do they have the lock icon? --> 单击动态维度项旁边的x时，将自动应用过滤器。 有关将过滤器应用于表的详细信息，请参见 [筛选和排序表](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
 
 ![](assets/dynamic-items.png)
@@ -52,5 +52,5 @@ ht-degree: 90%
 
 动态行和静态行在自由格式表总计行中的行为方式有所不同。默认情况下：
 
-* 动态行是服务器端总和，并且去除了重复量度，例如访问次数和访客。
+* 动态行是服务器端总和，并且去除了重复量度，如访问次数或人员
 * 静态行是客户端总和，并且&#x200B;**不会**&#x200B;去除重复量度。要计算服务器端总计行，请将“行”设置更改为&#x200B;**“显示总计”**。[了解详情](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html?lang=zh-Hans)

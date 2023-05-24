@@ -4,10 +4,10 @@ description: 了解 CJA 如何通过合并数据集创建连接。
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 6b5f4659e9bae02e2665db3c0ee02d143dbc7ea0
-workflow-type: ht
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
 source-wordcount: '337'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 当您创建连接时，Customer Journey Analytics (CJA) 将所有模式和数据集组合到一个数据集中。这个“合并事件数据集”就是 CJA 用于报表的数据集。如果您将多个架构或数据集纳入单个连接，则：
 
 * 架构会被合并。重复架构字段会被合并。
-* 每个数据集的“人员 ID”列将合并到单列中，无论其名称如何。此列是识别 CJA 中唯一访客的基础。
+* 每个数据集的“人员 ID”列将合并到单列中，无论其名称如何。此列是识别CJA中独特人员的基础。
 * 根据时间戳处理各行。
 * 事件被解析到毫秒级别。
 
@@ -58,7 +58,7 @@ ht-degree: 100%
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` |  | `Square` |  | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` |  |  | `Triangle` |  | `3.1` |
 
-此合并事件数据集就是报表中使用的数据集。不管某行数据源自哪个数据集，CJA 会像所有数据均位于同一数据集中一样来处理它们。如果两个数据集中都出现了匹配的人员 ID，则它们被视为相同的唯一访客。如果两个包含时间戳（30 分钟内）都出现了匹配的人员 ID，则它们被视为属于同一个会话。
+此合并事件数据集就是报表中使用的数据集。不管某行数据源自哪个数据集，CJA 会像所有数据均位于同一数据集中一样来处理它们。如果两个数据集中都出现匹配的人员ID，则它们被视为同一个唯一人员。 如果两个包含时间戳（30 分钟内）都出现了匹配的人员 ID，则它们被视为属于同一个会话。
 
 这种概念也适用于归因。不管某行数据源自哪个数据集，归因会像所有事件均源自单个数据集来进行处理。以上表为例：
 

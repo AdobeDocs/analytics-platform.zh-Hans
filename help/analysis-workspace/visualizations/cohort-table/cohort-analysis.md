@@ -3,10 +3,10 @@ title: 什么是同类群组分析？
 description: 了解 Analysis Workspace 中的同类群组分析
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: 76840d025d1ace28abce5557d66d104795818167
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 91%
+ht-degree: 78%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 91%
 
 >[!IMPORTANT]
 >
->[!UICONTROL 同类群组分析] 不支持不可过滤的量度（包括计算量度）、非整数量度（如收入）或发生次数。 只有可在过滤器中使用的量度才能用于 [!UICONTROL 同类群组分析]，并且这些值一次只能递增1。
+>[!UICONTROL 同类群组分析] 不支持不可过滤的指标（包括计算量度）、非整数量度（如收入）以及“发生次数”指标。 只有可在过滤器中使用的量度才能用于 [!UICONTROL 同类群组分析]，并且它们一次只能递增1。
 
 ## 同类群组分析功能
 
@@ -37,13 +37,13 @@ ht-degree: 91%
 
 ### [!UICONTROL 维系率表]
 
-[!UICONTROL 维系]同类群组报表返回访客：每个数据单元格显示了同类群组中在该时间段内执行操作的访客原始数量和百分比。您最多可以包含 3 个量度和 10 个过滤器。
+A [!UICONTROL 维系] 同类群组报表返回人员：每个数据单元格显示了同类群组中在该时间段内执行操作的原始人数和百分比。 您最多可以包含 3 个量度和 10 个过滤器。
 
 ![](assets/retention-report.png)
 
 ### [!UICONTROL 流失率表]
 
-[!UICONTROL 流失率]同类群组与维系率表完全相反，会显示随着时间的推移，您的同类群组中已流失或从不满足回访标准的访客。您最多可以包含 3 个量度和 10 个过滤器。
+A [!UICONTROL 流失率] 同类群组与维系率表完全相反，会显示随着时间的推移，您的同类群组中已流失或从不满足回访标准的人员。 您最多可以包含 3 个量度和 10 个过滤器。
 
 ![](assets/churn-report.png)
 

@@ -1,15 +1,15 @@
 ---
 title: 跨渠道分析
-description: 了解如何在多个数据集中重新生成访客 ID 的键值，以对访客进行拼接。
+description: 了解如何重新生成多个数据集中的人员ID键值以对人员进行拼接。
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 11ad1c91d07e8d4d6dd0186de68b1cc1d715ffe1
-workflow-type: ht
+exl-id: 5fb30b64-d305-4de4-ab84-66195ceb8386
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
 source-wordcount: '210'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
-
 
 # 跨渠道分析
 

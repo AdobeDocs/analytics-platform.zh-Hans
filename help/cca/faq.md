@@ -4,10 +4,10 @@ description: 跨渠道分析常见问题解答
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1067'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 95%
 
 如果要重命名“数据集 ID”维度项，可使用查找数据集。
 
-## CCA 为访客重新生成键值的回顾时间范围是多久？
+## CCA为人员重新生成键值的回顾时间范围是多久？
 
 重新生成键值的回顾时间范围取决于您所需的数据[重播](replay.md)频率。例如，如果将 CCA 设置为每周回放一次数据，则重新生成密钥的回看窗口为七天。例如，如果将 CCA 设置为每天回放一次数据，则重新生成密钥的回看窗口为一天。
 
@@ -40,9 +40,9 @@ ht-degree: 95%
 
 永久 ID 的数量与临时 ID 的使用无关。单个用户可以属于任意数量的设备，而不会影响 CCA 跨设备拼接的功能。
 
-## 在与Adobe帐户团队联系并提供所需信息后，已重新生成键值的数据集需要多长时间才可用？
+## 在联系我的Adobe客户团队并提供所需信息后，重新生成键值的数据集需要多长时间才可用？
 
-在 Adobe 启用跨渠道分析后大约一周，实时拼接功能会变得可用。回填可用性取决于现有数据的数量。小数据集（每天的事件数少于100万）通常需要几天时间，而大数据集（每天的事件数为10亿）可能需要一周或更长时间。
+在 Adobe 启用跨渠道分析后大约一周，实时拼接功能会变得可用。回填可用性取决于现有数据的数量。小型数据集（每天不到100万个事件）通常需要几天时间，而大型数据集（每天10亿个事件）可能需要一周或更长时间。
 
 ## 跨设备分析（传统分析中的一个功能）和跨渠道分析之间有什么区别？
 
@@ -67,7 +67,7 @@ CJA 中的某些指标与传统 Analytics 中的指标相似，但其他指标�
 
 | **CJA 拼接数据** | **CJA 未拼接数据** | **传统 Adobe Analytics** | **带 CDA 的 Analytics Ultimate** |
 | ----- | ----- | ----- | ----- |
-| **人员数** = 不同 `Person ID` 的数量，其中 `Stitched ID` 被选定为 `Person ID`。**人员数** 可能高于或低于传统 Adobe Analytics 中的&#x200B;**独特访客数**，具体取决于拼接过程的结果。 | **人员数** = 不同 `Person ID` 的数量（根据选定为 `Person ID` 的列）。如果在 CJA 中将 `endUserIDs._experience.aaid.id` 选为 `Person ID`，则 Adobe Source Connector 数据集中的&#x200B;**人员数**&#x200B;则类似于传统 Adobe Analytics 中的&#x200B;**独特访客**。 | **独特访客** = 不同访客 ID 的数量。**独特访客**&#x200B;可能与不同 **ECID** 的数量不一致。 | 请参阅[人员数](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=zh-Hans)。 |
+| **人员数** = 不同 `Person ID` 的数量，其中 `Stitched ID` 被选定为 `Person ID`。**人员数** 可能高于或低于传统 Adobe Analytics 中的&#x200B;**独特访客数**，具体取决于拼接过程的结果。 | **人员数** = 不同 `Person ID` 的数量（根据选定为 `Person ID` 的列）。如果在 CJA 中将 `endUserIDs._experience.aaid.id` 选为 `Person ID`，则 Adobe Source Connector 数据集中的&#x200B;**人员数**&#x200B;则类似于传统 Adobe Analytics 中的&#x200B;**独特访客**。 | **独特访客** =不同人员ID的数量。 **独特访客**&#x200B;可能与不同 **ECID** 的数量不一致。 | 请参阅[人员数](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=zh-Hans)。 |
 | **会话**：根据 CJA 数据视图中的会话设置定义。拼接过程可能会将来自多个设备的各个会话组合成单个会话。 | **会话**：根据 CJA 数据视图中特定的会话设置定义。 | **访问数**：请参阅[访问数](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=zh-Hans)。 | **访问数**：根据 [CDA 虚拟报告包](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=zh-Hans)中特定的会话设置定义。 |
 | **事件数** = CJA 中已拼接数据的行数。该量度通常接近于传统 Adobe Analytics 中的&#x200B;**发生次数**。但是，请注意上面关于带有空白 `Persistent ID` 的行的常见问题解答。 | **事件数** = CJA 中未拼接数据的行数。该量度通常接近于传统 Adobe Analytics 中的&#x200B;**发生次数**。但是，请注意，如果任何事件在 Experience Platform 数据湖的未拼接数据中有空白 `Person ID`，则这些事件不包括在 CJA 中。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=zh-Hans)。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=zh-Hans)。 |
 

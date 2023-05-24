@@ -3,10 +3,10 @@ title: 引用 - 高级函数
 description: 可通过以下方法访问这些函数：选中函数下拉列表中的显示高级。
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
-source-git-commit: 3c108836e72cb85e0f9c379d7c945f867fb09699
-workflow-type: ht
-source-wordcount: '3111'
-ht-degree: 100%
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
+source-wordcount: '3105'
+ht-degree: 98%
 
 ---
 
@@ -177,7 +177,7 @@ fx Confidence (normalizing-container, success-metric, control, significance-thre
 | 控制 | 试验中所有其他变量要与之进行比较的变量。输入控制变量维度项目的名称。 |
 | 显著性阈值 | 此函数中的阈值默认设置为 95%。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 余弦 (Row)
 
@@ -225,10 +225,10 @@ CBRT(metric)
 
 >[!NOTE]
 >
->使用收入/访客之类的比率量度时，它可能不会按预期工作：它会计算比率的平均值，而不是总计最后 N 行的收入并总计最后 N 行的访客数，然后将二者相除。它使用的是
+>使用收入/人员之类的比率量度时，它可能不会按预期工作：它会计算比率的平均值，而不是总计最后N行的收入并总计最后N行的人员数，然后将二者相除。 它使用的是
 
 ```
-cumul(revenue)/cumul(visitor)
+cumul(revenue)/cumul(person)
 ```
 
 ## 等于
@@ -363,10 +363,10 @@ fx Lift (normalizing-container, success-metric, control)
 | 参数 | 描述 |
 | --- | --- |
 | 标准化容器 | 运行测试的基础（人、会话或事件）。 |
-| 成功指标 | 用户正在与变量进行比较的一个或多个量度。 |
+| 成功指标 | 用户正在将变量与之比较的一个或多个指标。 |
 | 控制 | 试验中所有其他变量要与之进行比较的变量。输入控制变量维度项的名称。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 线性回归_ 相关系数
 

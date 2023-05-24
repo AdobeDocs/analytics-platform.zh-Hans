@@ -3,10 +3,10 @@ description: 工作区总计的计算方式。
 title: 工作区总计
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 91%
+ht-degree: 81%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 91%
 
 在自由格式表中，每个划分级别都显示一个总计行，可以显示两个总计行：
 
-* **[!UICONTROL 全部總計]** （灰色「共」數字） — 此總計代表已收集的所有事件。 在面板層級或自由表格內套用篩選器時，此總計會經過調整，以反映符合篩選條件的所有事件。
+* **[!UICONTROL 总计]** （灰色的“共”数字） — 此总计表示已收集的所有事件。 当在面板级别或自由格式表中应用过滤器时，此总计会进行相应的调整以反映符合筛选条件的所有事件。
 * **[!UICONTROL 表总计]**（黑色数字）— 此总计通常等于[!UICONTROL 总计]或是其子集。它反映自由格式表内应用的任何表筛选器，包括[!UICONTROL 不包含任何内容]选项。
 
 ![](assets/total-row.png)
@@ -29,8 +29,8 @@ ht-degree: 91%
 
 [静态行](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)总计的行为方式不尽想同，可采用&#x200B;**[!UICONTROL 行设置]**&#x200B;来进行控制。
 
-* **[!UICONTROL 将当前行的总和显示为总计]** — 此设置将显示表中行的客户端总和，这意味着总计将&#x200B;**不会**&#x200B;消除重复的量度，如访问次数或访客。
-* **[!UICONTROL 显示总计]** — 此设置将显示服务器端总和，这意味着总计将消除重复的量度，如访问次数或访客。
+* **[!UICONTROL 将当前行的总和显示为总计]**  — 此设置将显示表中行的客户端总和，这意味着总计将 **非** 删除重复的量度，如访问次数或人员。
+* **[!UICONTROL 显示全部总计]**  — 此设置将显示服务器端总和，这意味着总计将消除重复的量度，如访问次数或人员。
 
 ![](assets/static-rows.png)
 

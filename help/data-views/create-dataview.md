@@ -4,10 +4,10 @@ description: 为创建或编辑数据视图而可调整的所有设置。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1226'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 99%
 | 设置 | 描述 |
 | --- | --- |
 | [!UICONTROL 连接] | 此字段将数据视图链接到您之前建立的连接，其中包含一个或多个 Adobe Experience Platform 数据集。 |
-| [!UICONTROL 名称] | 必填。数据视图的名称。此值显示在Analysis Workspace的右上方下拉列表中。 |
+| [!UICONTROL 名称] | 必填。数据视图的名称。此值显示在Analysis Workspace的右上角下拉列表中。 |
 | [!UICONTROL 描述] | 可选。Adobe 建议输入详细描述，以便用户了解为什么存在该数据视图以及为谁设计了它。 |
 
 {style="table-layout:auto"}
@@ -44,7 +44,7 @@ ht-degree: 99%
 
 | 设置 | 描述 |
 | --- | --- |
-| [!UICONTROL 人员容器名称] | [!UICONTROL 人员]（默认）。[!UICONTROL 人员]容器包括访客在指定的时间范围内的每个会话和事件。如果您的组织使用不同的用语（例如，“访客”或“用户”），可在此处将该容器重命名。 |
+| [!UICONTROL 人员容器名称] | [!UICONTROL 人员]（默认）。此 [!UICONTROL 人员] 容器包括指定时间段内人员的每个会话和事件。 如果您的组织使用不同的用语（例如，“访客”或“用户”），可在此处将该容器重命名。 |
 | [!UICONTROL 会话容器名称] | [!UICONTROL 会话]（默认）。通过[!UICONTROL 会话]容器可以识别页面交互、营销活动或特定会话的转化。可将此容器重命名为“访问”或您的组织更喜欢的任何其他用语。 |
 | [!UICONTROL 事件容器名称] | [!UICONTROL 事件]（默认）。[!UICONTROL 事件]容器定义数据集中的个别事件。如果您的组织使用不同的用语（例如，“点击”或“页面查看”），可在此处将该容器重命名。 |
 

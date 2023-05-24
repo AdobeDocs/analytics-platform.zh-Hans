@@ -1,13 +1,13 @@
 ---
 title: 跨渠道分析概述
-description: 在多个数据集中重新生成访客 ID 的键值，以对访客进行拼接。
+description: 在多个数据集中重新生成人员ID的键值，以将人员拼合在一起。
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
-workflow-type: ht
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
 source-wordcount: '1158'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -32,9 +32,9 @@ ht-degree: 100%
 
 在使用跨渠道分析之前，请确保贵组织已做好以下准备：
 
-* Adobe Experience Platform 中必须有一个数据集具有以下两个用于标识访客的列：
-   * **持久 ID**，即每行都存在的标识符。例如，由 Adobe Analytics AppMeasurement 库生成的访客 ID。
-   * **临时 ID**，即仅在部分行存在的标识符。例如，经过身份验证的访客的经过哈希处理的用户名或电子邮件地址。实际上，您可以使用任何想要使用的标识符，但前提是该标识符与给定的永久 ID 至少有一次存在于同一事件。
+* Adobe Experience Platform中的一个数据集必须具有两个帮助识别人员的列：
+   * **持久 ID**，即每行都存在的标识符。例如，由Adobe Analytics AppMeasurement库生成的人员ID。
+   * **临时 ID**，即仅在部分行存在的标识符。例如，经过身份验证的用户名或电子邮件地址。 实际上，您可以使用任何想要使用的标识符，但前提是该标识符与给定的永久 ID 至少有一次存在于同一事件。
 * 还要具有每行都包含临时 ID 的另外一个数据集，如呼叫中心数据。此人员 ID 必须与另一个数据集中的临时 ID 采用相似的格式。
 * 此功能允许您同时拼接包含经过身份验证的用户数据和未经身份验证的用户数据的数据集。在合并数据集之前，请确保遵守任何适用的法律和法规，包括获取必要的最终用户权限。
 

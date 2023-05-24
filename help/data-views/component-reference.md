@@ -4,10 +4,10 @@ description: 关于所有可添加到任何数据视图的标准组件的详细�
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c5a42392df82af4f0f8dcd718e3ce962ad654191
-workflow-type: ht
-source-wordcount: '915'
-ht-degree: 100%
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
+source-wordcount: '909'
+ht-degree: 98%
 
 ---
 
@@ -36,7 +36,7 @@ CJA 中的大多数维度和指标都基于您 Adobe Experience Platform 数据�
 | [!UICONTROL 季度] | 维度 | 发生给定事件的那一季。第一个维度项是日期范围内的第一个季度，最后一个维度项是日期范围内的最后一个季度。 |
 | [!UICONTROL 年] | 维度 | 发生给定事件的那一年。第一个维度项是日期范围中的第一年，最后一个维度项是日期范围中的最后一年。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 可选标准组件 {#optional}
 
@@ -53,7 +53,7 @@ CJA 中的大多数维度和指标都基于您 Adobe Experience Platform 数据�
 | [!UICONTROL 小时] | 时间划分维度 | 0 时至 23 时 |
 | [!UICONTROL  月份] | 时间划分维度 | 一月 - 十二月 |
 | [!UICONTROL 新会话] | 量度 | 个人在报告窗口内定义的首次会话。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat) |
-| [!UICONTROL 人员 ID] | 维度 | Experience Platform 中定义的每个数据集架构，可以拥有自己定义的一个或多个标识集，并与命名空间关联。其中任何标识都可用作人员 ID。示例包括 Cookie ID、拼接 ID、用户 ID、跟踪代码等。[!UICONTROL 个人 ID] 维度是合并数据集的基础，在 CJA 中标识独特访客。<p>可能的使用案例包括：<ul><li>对特定人员 ID 值创建筛选条件，以将所有内容向下筛选到该用户的行为。</li><li>调试：确保特定 Cookie ID（或特定客户 ID）的数据存在。</li><li>确定致电给呼叫中心的用户。</li></ul> |
+| [!UICONTROL 人员 ID] | 维度 | Experience Platform 中定义的每个数据集架构，可以拥有自己定义的一个或多个标识集，并与命名空间关联。其中任何标识都可用作人员 ID。示例包括 Cookie ID、拼接 ID、用户 ID、跟踪代码等。此 [!UICONTROL 人员ID] 维度是CJA中组合数据集和识别独特人员的基础。<p>可能的使用案例包括：<ul><li>对特定人员 ID 值创建筛选条件，以将所有内容向下筛选到该用户的行为。</li><li>调试：确保特定 Cookie ID（或特定客户 ID）的数据存在。</li><li>确定致电给呼叫中心的用户。</li></ul> |
 | [!UICONTROL 人员 ID 命名空间] | 维度 | [!UICONTROL 人员 ID] 由哪种类型的 ID 组成。示例：`email address`、`cookie ID`、`Analytics ID` 等。 |
 | [!UICONTROL 季度] | 时间划分维度 | 第一季度、第二季度、第三季度和第四季度 |
 | [!UICONTROL 重复会话] | 量度 | 非个人首次会话的会话数。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat) |
@@ -66,4 +66,4 @@ CJA 中的大多数维度和指标都基于您 Adobe Experience Platform 数据�
 | [!UICONTROL 每人逗留时间] | 维度 | 将[!UICONTROL 耗时]指标装入[!UICONTROL 人员]桶。 |
 | [!UICONTROL 周末]/[!UICONTROL 工作日] | 时间划分维度 | 周末或工作日 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
