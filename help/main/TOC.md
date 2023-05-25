@@ -9,7 +9,7 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Customer Journey Analytics (CJA) 以及如何将 Analysis Workspace 用于来自 Experience Platform 的数据。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: e7a27030459f0755ef445fffd4c86f79d4333d72
+source-git-commit: 03f6b0cef6fa4259041a82173acda852d91e06b5
 workflow-type: tm+mt
 source-wordcount: '899'
 ht-degree: 97%
@@ -81,7 +81,7 @@ ht-degree: 97%
       + [子字符串](../data-views/component-settings/substring.md)
       + [值分段](../data-views/component-settings/value-bucketing.md)
    + [标准组件参考](../data-views/component-reference.md)
-   + [SQL聯結器](../data-views/sql-connector.md)
+   + [SQL连接器](../data-views/sql-connector.md)
    + [派生字段](../data-views/derived-fields/derived-fields.md)
    + [标签和策略](../data-views/data-governance.md)
 
@@ -201,12 +201,12 @@ ht-degree: 97%
 
 + 指导分析 {#guided-analysis}
    + [概述](../guided-analysis/overview.md)
-   + [界面](../guided-analysis/interface.md)
-   + 分析型別 {#analysis-types}
+   + 分析类型 {#analysis-types}
       + [概述](../guided-analysis/analysis-types/overview.md)
       + [漏斗](../guided-analysis/analysis-types/funnel.md)
       + [趋势](../guided-analysis/analysis-types/trends.md)
       + [用户增长](../guided-analysis/analysis-types/user-growth.md)
+   + [常见问题解答](../guided-analysis/faq.md)
 
 + 组件 {#cja-components}
    + [组件概述](../components/overview.md)
@@ -233,7 +233,7 @@ ht-degree: 97%
       + [过滤器概述](../components/filters/filters-overview.md)
       + [创建过滤器](../components/filters/create-filters.md)
       + [快速过滤器](../components/filters/quick-filters.md)
-      + [篩選產生器](../components/filters/filter-builder.md)
+      + [筛选器生成器](../components/filters/filter-builder.md)
       + [管理过滤器](../components/filters/manage-filters.md)
       + [运算符](../components/filters/operators.md)
    + 计算度量 {#cja-calcmetrics}
@@ -280,7 +280,7 @@ ht-degree: 97%
    + [Report Builder 设置](../report-builder/report-builder-setup.md)
    + [创建数据块](../report-builder/create-a-data-block.md)
    + [Report Builder 中心](../report-builder/report-builder-hub.md)
-   + [選取資料檢視](../report-builder/select-data-view.md)
+   + [选择数据视图](../report-builder/select-data-view.md)
    + [选择日期范围](../report-builder/select-date-range.md)
    + [使用过滤器](../report-builder/work-with-filters.md)
    + [筛选维度](../report-builder/filter-dimensions.md)
@@ -298,7 +298,7 @@ ht-degree: 97%
    + [关于将 Adobe 解决方案与 CJA 集成的概述](/help/integrations/overview.md)
    + [将 Adobe Analytics 与 Customer Journey Analytics 集成](/help/integrations/aa.md)
    + [将 Journey Optimizer 数据与 CJA 集成](/help/integrations/ajo.md)
-   + [將決定管理資料與CJA整合](/help/integrations/ajo-od.md)
+   + [将决策管理数据与CJA集成](/help/integrations/ajo-od.md)
    + [将客户人工智能与 CJA 集成](/help/integrations/customer-ai.md)
 
 + 数据管理 {#cja-privacy}
@@ -340,7 +340,7 @@ ht-degree: 97%
    + [访问控制](../admin/cja-access-control.md)
    + [查看和管理使用情况](../admin/estimate-usage.md)
    + [删除后果](../admin/cja-deletion.md)
-   + [最佳化CJA效能](../admin/optimizing-performance.md)
+   + [优化CJA性能](../admin/optimizing-performance.md)
 
 + Labs {#labs}
    + [Labs 用户指南](../labs/labs.md)
