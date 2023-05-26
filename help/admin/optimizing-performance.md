@@ -3,7 +3,7 @@ description: 影响CJA和工作区性能的因素以及您可以采取的优化�
 title: 优化CJA和Analysis Workspace性能
 feature: FAQ
 exl-id: ad00e476-6f19-462b-ba53-d72ddd949802
-source-git-commit: b6e8dff7fc2ec16200cba5ac8ef029880bd830ff
+source-git-commit: 935839190d86dd907a45c311c9b53236edaaaa2e
 workflow-type: tm+mt
 source-wordcount: '1923'
 ht-degree: 75%
@@ -31,9 +31,9 @@ ht-degree: 75%
 | **可视化图表的复杂性** （过滤器、量度、过滤器） | 自行添加到项目中的可视化图表类型（例如，流失与自由格式表）对项目性能影响不大。 可视化图表的复杂性会增加处理时间。 | 导致可视化图表复杂性增加的因素包括：<ul><li>请求的数据范围</li><li>应用的过滤器数量；例如，用作自由格式表行的过滤器</li><li>使用复杂过滤器</li><li>[静态项目](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)行或列（位于自由格式表中）</li><li>应用于自由格式表行的过滤器</li><li>包含的量度数量，尤其是使用过滤器的计算量度</li></ul> |
 | **数据中心容量** | 您和其他客户在 Adobe 数据中心内共享的报告容量数额。 | 此值受组织和数据中心内其他组织进行的并发查询数量的影响。 | 您的组织有权使用设置的容量，如果系统负荷较轻，Adobe 将转给您超出权利限额的更多容量。 |
 | **并发查询数** | 您的组织同时请求的查询数。 每个组织都有权同时进行至少5次查询???如果报表需要较长时间，通常是因为它与其他报表位于队列中。 这意味着贵组织针对特定数据视图尝试运行多个并发请求。 查询可以来自API请求、报表UI(Analysis Workspace、Report Builder等)、计划项目、计划警报以及发出报表请求的并发用户。 在一天中更均匀地分布数据视图的请求和计划。 此外，请尽可能将您的请求转移到非高峰时段。周一早上、周二早上和每个月的第一天是报告高峰时段。 |
-| **数据视图大小???** | 收集到数据视图中的数据量。 |  | 请咨询您的实施团队或CJA专家，确定是否可以进行实施方面的改进，以提高CJA的整体体验。 |
-| **维度设置的复杂性** | 高度复杂的维度可能会对项目性能产生重大影响。 | 自定义字段会增加复杂性。 | 减少自定义字段的数量或创建单独的维度。 |
-| **具有大量唯一值的Dimension** | 这些维度也称为高基数维度，可能会影响可以报告的内容。 | 参见 [高基数维度](/help/components/dimensions/high-cardinality.md) | 参见 [高基数维度](/help/components/dimensions/high-cardinality.md) |
+| **连接大小** | 收集到您的连接中的数据量。 |  | 请咨询您的实施团队或CJA专家，确定是否可以进行实施方面的改进，以提高CJA的整体体验。 |
+| **维度设置的复杂性** | 高度复杂的维度可能会对项目性能产生重大影响，特别是基于复杂自定义字段的维度或量度。 |  | 减少自定义字段的数量或创建单独的维度。 |
+| **具有大量唯一值的Dimension** | 这些维度也称为高基数维度，可能会影响报表性能。 | 参见 [高基数维度](/help/components/dimensions/high-cardinality.md) | 参见 [高基数维度](/help/components/dimensions/high-cardinality.md) |
 
 ## Analysis Workspace 中的[!UICONTROL 帮助] > [!UICONTROL 性能]
 
