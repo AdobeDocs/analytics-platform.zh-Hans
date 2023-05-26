@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Customer Journey Analytics (CJA) 以及如何将 Analysis Workspace 用于来自 Experience Platform 的数据。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 03f6b0cef6fa4259041a82173acda852d91e06b5
+source-git-commit: 5fbffb01c08b5f8069b2670742f7ae3836ad8357
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 97%
+source-wordcount: '900'
+ht-degree: 96%
 
 ---
 
@@ -236,19 +236,19 @@ ht-degree: 97%
       + [筛选器生成器](../components/filters/filter-builder.md)
       + [管理过滤器](../components/filters/manage-filters.md)
       + [运算符](../components/filters/operators.md)
-   + 计算度量 {#cja-calcmetrics}
+   + 计算量度 {#cja-calcmetrics}
       + [计算度量概述](../components/calc-metrics/calc-metr-overview.md)
       + 计算度量工作流程 {#cm-workflow}
          + [计算度量工作流程](../components/calc-metrics/cm-workflow/cm-workflow.md)
          + [查找度量](../components/calc-metrics/cm-workflow/cm-finding.md)
-         + [生成度量](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
-         + [度量类型和归因](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-         + [构建简单的“每次访问的页面查看次数”度量](../components/calc-metrics/cm-workflow/cm-pvv.md)
+         + [生成量度](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
+         + [量度类型和归因](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
+         + [构建“每次访问的页面查看次数”量度](../components/calc-metrics/cm-workflow/cm-pvv.md)
+         + [构建“参与率”量度](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [筛选度量](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [堆叠和替换区段](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [过滤和加权度量](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
          + [使用函数](../components/calc-metrics/cm-workflow/cm-using-functions.md)
-         + [参与率度量](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [标记计算度量](../components/calc-metrics/cm-workflow/cm-tagging.md)
          + [批准计算度量](../components/calc-metrics/cm-workflow/cm-approving.md)
          + [共享计算度量](../components/calc-metrics/cm-workflow/cm-sharing.md)
