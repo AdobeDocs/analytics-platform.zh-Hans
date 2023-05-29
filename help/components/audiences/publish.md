@@ -2,7 +2,7 @@
 title: 创建受众并将受众发布到实时客户档案
 description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 28c56e7f33960c75ab6ca87fcbc0d1fb61d2f107
+source-git-commit: a56cc7a0299aad98ff8af5e0d59df4679e0d2d25
 workflow-type: tm+mt
 source-wordcount: '1502'
 ht-degree: 90%
@@ -82,15 +82,15 @@ ht-degree: 90%
 
 ## 延迟注意事项 {#latency}
 
-在受众发布之前、期间和之后的几个时间点，可能会发生延迟。 以下是对可能出现的延迟情况的概述。
+在受众发布之前、期间和之后的多个时间点，可能会发生延迟。 以下是对可能出现的延迟情况的概述。
 
 ![从AEP到CJA的延迟](assets/latency-diagram.png)
 
 | # | 延迟点 | 延迟持续时间 |
 | --- | --- | --- |
-| 未显示 | Adobe Analytics到Analytics源连接器(A4T) | 最多 30 分钟 |
-| 1 | 数据摄取到数据湖（从Analytics源连接器或其他源） | 最多 90 分钟 |
-| 2 | 从Experience Platform数据湖向CJA中摄取数据 | 最多 90 分钟 |
+| 未显示 | Adobe Analytics到Analytics Source Connector (A4T) | 最多 30 分钟 |
+| 1 | 将数据摄取到数据湖（从Analytics Source Connector或其他源） | 最多 90 分钟 |
+| 2 | 从Experience Platform数据湖将数据摄取到CJA | 最多 90 分钟 |
 | 3 | 受众发布到实时客户配置文件，包括自动创建流式区段，并可让区段准备好接收数据。 | 约 60 分钟 |
 | 4 | 受众的刷新频率 | <ul><li>一次性刷新（延迟小于 5 分钟）</li><li>每 4 小时、每天、每周、每月刷新一次（延迟与刷新率密切相关） |
 | 5 | 在 AEP 中创建目标：激活新的区段 | 1-2 小时 |
@@ -131,7 +131,7 @@ CJA 可以从您发布的受众中获取所有的命名空间和 ID 组合，并
 
 +++
 
-+++**CJA会将受众数据作为管道事件还是作为也会发送到数据湖的平面文件发送？**
++++**CJA是将受众数据作为管道事件发送，还是作为也发送到数据湖的平面文件发送？**
 
 CJA 通过管道将数据流式传输到 RTCP 中，这些数据也被收集到数据湖中的系统数据集中。
 
@@ -139,7 +139,7 @@ CJA 通过管道将数据流式传输到 RTCP 中，这些数据也被收集到�
 
 +++**CJA 发送了哪些身份？**
 
-在 [连接设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans#create-connection). 具体来说，用户选择要用作其“个人 ID”的字段时的步骤。
+中指定的任何标识/命名空间对 [连接设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans#create-connection). 具体来说，用户选择要用作其“个人 ID”的字段时的步骤。
 
 +++
 
@@ -155,15 +155,15 @@ CJA 通过管道将数据流式传输到 RTCP 中，这些数据也被收集到�
 
 +++
 
-+++**每天、每周和每月的刷新发生在一天中的哪个时间？ 每周刷新在一周的哪一天发生？**
++++**每天、每周和每月刷新在一天中的哪个时间进行？ 每周的哪一天进行刷新？**
 
-刷新的时间取决于原始受众的发布时间，以及该时间（以及每周或月中的某天）的锚点。
+刷新时间基于原始受众的发布时间和该时间（以及星期或月）的锚点。
 
 +++
 
-+++**用户是否可以配置每日、每周和每月的刷新时间？**
++++**用户是否可以配置每日、每周和每月刷新时间？**
 
-不能，用户无法配置它们。
+不能，用户不能配置它们。
 
 +++
 
