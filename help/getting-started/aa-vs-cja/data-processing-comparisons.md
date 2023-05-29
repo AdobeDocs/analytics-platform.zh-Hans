@@ -2,7 +2,7 @@
 title: 跨 Adobe Analytics 和 CJA 报告功能比较数据处理
 description: 了解各种报告功能的数据处理差异
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: a38e2afac7645e9249e42e0b4830f5249a69b522
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 71%
@@ -45,7 +45,7 @@ ht-degree: 71%
 | 计算量度 | 评估客户创建的自定义量度，这些量度可以基于复杂的公式，其中包括区段和过滤器。 | 示例：购买红色鞋款的人数。 |
 | 属性逻辑 | 计算属性的逻辑。 | 示例：eVar 持久性。 |
 | 组件设置 | 将自定义应用于量度或维度，如归因、行为、格式等 | 示例：根据范围组合数值的值分段 |
-| 自定义字段 | 逻辑适用于在数据视图中定义组件时的架构或标准字段。 | 示例：创建新的营销渠道维度 |
+| 派生字段 | 逻辑适用于在数据视图中定义组件时的架构或标准字段。 | 示例：创建新的营销渠道维度 |
 
 {style="table-layout:auto"}
 
