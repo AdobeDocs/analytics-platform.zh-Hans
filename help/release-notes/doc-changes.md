@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a546c52d2a686c38f7a9a23e0c541568c2918495
+source-git-commit: 960021f2374b38b96fc1ec18200f1790194bfbb8
 workflow-type: tm+mt
-source-wordcount: '1868'
-ht-degree: 93%
+source-wordcount: '2060'
+ht-degree: 91%
 
 ---
 
@@ -20,12 +20,16 @@ CJA 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2023 年 5 月** |  |
+| 深层链接（移动设备应用程序）文档 | 使用户可发送记分卡的链接，而这些链接将引导用户直接进入应用程序中的记分卡项目。这样使得可更轻松地从不太熟悉技术的受众共享项目和提高参与度。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) |
+| 关于Report Builder中“从单元格中选择数据视图”的文档 | 通过此功能，用户可从单元格选择数据块的数据视图。如果创建一个工作簿，并有多个数据视图的数据构造相似，而您希望能够以不同的数据视图多次重用工作簿，则这样做很有帮助。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html) |
+| 有关Analytics功能板应用程序（移动应用程序）的主屏幕更新的文档 | 通过新近更新的主屏幕，可在一个合并的记分卡列表中查看您的所有记分卡。如果您可用一个登录名访问多个组织，则在一个列表中即可找到所有来自您这些组织的记分卡。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/executive.html#use-dashboards) |
+| 优化更新 | 更新文章于 [优化CJA性能](/help/admin/optimizing-performance.md) |
 | Analysis Workspace 概述 | 更新了 [Analysis Workspace 概述](/help/analysis-workspace/home.md)，包括更多的一般概述信息和相关内容的链接。 |
 | 创建项目 | 创建了一篇新文章，其中详细解释了如何在 Analysis Workspace 中[创建项目](/help/analysis-workspace/build-workspace-project/create-projects.md)。 |
-| 对左边栏中的组件进行排序 | 添加了有关在左边栏中对组件列表进行排序的信息。请参阅 [组件概述](/help/components/overview.md). |
-| 从自由格式表中删除包含动态维度的行 | 添加了有关如何使用x图标快速删除包含动态维度的特定行的信息。 请参阅 [过滤和排序表](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
-| 用于在面板中添加可视化的按钮 | 在Analysis Workspace中每个面板底部添加了有关新按钮的信息，通过该按钮可快速添加可视化图表。 请参阅 [可视化概述](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). |
-| 智能字幕文档 | 通过 [自然语言概要](/help/analysis-workspace/visualizations/intelligent-captions.md) 折线图可视化图表的“隐藏主体”。 |
+| 对左边栏中的组件进行排序 | 添加了有关对左边栏中的组件列表进行排序的信息。请参阅中的“搜索、筛选和排序组件列表”部分 [组件概述](/help/components/overview.md). |
+| 从自由格式表中删除包含动态维度的行 | 添加了有关如何使用x图标快速删除包含动态维度的特定行的信息。 请参阅中的“从表中快速排除特定行”部分。 [筛选和排序表](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
+| 用于在面板中添加可视化图表的按钮 | 添加了有关Analysis Workspace中每个面板底部新按钮的信息，通过该按钮可快速添加可视化图表。 请参阅中的“将可视化图表添加到面板”部分 [可视化概述](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). |
+| 智能字幕文档 | 丰富了用户的叙事方式 [自然语言摘要](/help/analysis-workspace/visualizations/intelligent-captions.md) 折线图可视化图表的。 |
 | **2023 年 4 月** |  |
 | 关于使用过滤器作为维度的视频 | 更新了关于使用过滤器作为维度的视频。 <p>此视频链接自[创建过滤器](/help/components/filters/create-filters.md)页面。</p> <p>以下是这段视频的直接链接：[在 Analysis Workspace 中使用过滤器作为维度](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html)。</p> |
 | 过滤器文档 | 添加了有关使用[过滤器生成器](/help/components/filters/filter-builder.md)的文章。 <p>简化了[创建过滤器](/help/components/filters/create-filters.md)和[过滤器概述](/help/components/filters/filters-overview.md)中的文档。</p> |
