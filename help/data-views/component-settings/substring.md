@@ -4,7 +4,7 @@ description: 使用字符串的子集作为维度项。
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
 workflow-type: tm+mt
 source-wordcount: '914'
 ht-degree: 95%
@@ -15,13 +15,13 @@ ht-degree: 95%
 
 [!UICONTROL 子字符串] 组件设置允许您执行多种字符串操作方法，以在报告中获取所需的维度项。
 
-[!UICONTROL 子字符串]仅在维度上可用，并可追溯至应用该子字符串的数据。 它是紧接应用筛选或其他分析操作之前发生的数据转换。
-
 ![子字符串设置](../assets/substring-settings.png)
+
+[!UICONTROL 子字符串]仅在维度上可用，并可追溯至应用该子字符串的数据。 它是紧接应用筛选或其他分析操作之前发生的数据转换。
 
 ## 从左/右
 
-根据字符串开始或结束的位置提取字符串的一部分。**[!UICONTROL 左边]** 和 **[!UICONTROL 从右侧]** 方法提供了两个下拉列表： **[!UICONTROL 从]** （输出开始时）和 **[!UICONTROL 至]** （输出结束的位置）。
+根据字符串开始或结束的位置提取字符串的一部分。**[!UICONTROL 从左侧]** 和 **[!UICONTROL 从右侧]** 方法提供了两个下拉列表： **[!UICONTROL 起始日期]** （输出开始处）和 **[!UICONTROL 至]** （输出结束处）。
 
 * **[!UICONTROL 字符串开始]**：字符串的开始。
 * **[!UICONTROL 字符串结束]**：字符串的结束。

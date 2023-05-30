@@ -4,16 +4,20 @@ description: 使您可设置指标的默认归因。
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
 workflow-type: tm+mt
-source-wordcount: '1782'
+source-wordcount: '1781'
 ht-degree: 38%
 
 ---
 
 # 归因组件设置
 
-通过归因，您可以自定义维度项目获得成功事件点数的方式。 例如：
+通过归因，您可以自定义维度项目获得成功事件点数的方式。
+
+![](../assets/attribution-settings.png)
+
+例如：
 
 1. 您网站的用户单击指向您的某个产品页面的付费搜索链接。 他们将产品添加到购物车，但不购买。
 2. 第二天，他们看到了朋友的社交媒体帖子。 他们单击链接，然后完成购买。
@@ -22,7 +26,7 @@ ht-degree: 38%
 
 通过此数据视图组件设置，可为量度设置默认归因模型。 在 Analysis Workspace 中工作时，可忽略给定指标的归因模型。
 
-![归因](../assets/attribution-settings.png)
+
 
 如果您的组织要求一个量度有多个归因设置，您可以执行以下操作之一：
 
