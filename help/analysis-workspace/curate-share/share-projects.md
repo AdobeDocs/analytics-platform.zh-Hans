@@ -4,10 +4,10 @@ keywords: Analysis Workspace 共享
 title: 共享项目
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: a64b380c337f2f359b4cffd23265a8fca8251957
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 49%
+source-wordcount: '1934'
+ht-degree: 48%
 
 ---
 
@@ -131,6 +131,10 @@ ht-degree: 49%
 >* 如果贵组织许可Healthcare Shield，则只能与通过单点登录(SSO)或Adobe ID进行身份验证的用户共享项目；不能与未经身份验证的用户共享项目。 您有责任按照公司的内部数据管理策略使用此功能，并且只与具有适当权限的用户共享包含个人健康信息(PHI)的项目链接。
 
 
+以下视频演示和随附文档介绍了与任何人共享链接相关的选项：
+
+>[!VIDEO](https://video.tv.adobe.com/v/3420093/?learn=on)
+
 要与任何人共享Analysis Workspace项目，请执行以下操作：
 
 1. 打开要共享的Analysis Workspace项目。
@@ -151,7 +155,7 @@ ht-degree: 49%
 
    * **[!UICONTROL 需要 Experience Cloud 身份验证]:**
 
-      启用此选项后，只有能够登录到创建您共享的项目的Adobe Experience Cloud组织的用户才能访问该项目。
+      启用此选项后，只有那些能够访问项目的用户才能登录到创建您共享的项目的Adobe Experience Cloud组织。 但是，与您共享的用户不需要具有访问Adobe Analytics的权限。
 
       CJA管理员可以为公司配置此首选项，如中所述 [首选项](/help/analysis-workspace/user-preferences.md). 您可能会遇到以下情况，具体取决于管理员如何配置此选项：
 
