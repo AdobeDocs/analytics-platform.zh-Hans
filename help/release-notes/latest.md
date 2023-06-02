@@ -3,10 +3,10 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新 CJA 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 2ff3fae7e285998d787a259d9d18c6d5e7fa961e
+source-git-commit: 0fdf95906e17b9e90fa6ba652aa8e53f695279a4
 workflow-type: tm+mt
 source-wordcount: '932'
-ht-degree: 77%
+ht-degree: 76%
 
 ---
 
@@ -22,7 +22,7 @@ Customer Journey Analytics 版本在[持续交付模型](releases.md)上运行�
 | ----------- | ---------- | ------- | ---- |
 | **Adobe Journey Optimizer数据视图** | CJA管理员有权访问CJA中一些名为“AJO数据视图(Sandbox-name)”的额外数据视图。 这些数据视图用于为Adobe Journey Optimizer (AJO)中的报表提供支持。 它们还可用于在CJA中对AJO活动进行更深入的分析。 [了解详情](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html)。 |  | 2023 年 5 月 25 日 |
 | **非生产沙盒的回填** | 在非生产沙盒中创建 Analytics 源连接器数据流时，非生产沙盒中的回填将限制为 3 个月。生产沙盒的时间将保持在 13 个月。 | 不适用 | 2023 年 4 月 26 日 |
-| **用链接共享项目（无需登录）** | 您现在可以与无权访问 Adobe Analytics 的人员共享 Analysis Workspace 项目的只读链接。这包括与组织外的人员或组织内未配置 Adobe Analytics 的人员共享。[了解详情](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=zh-Hans#share-public-link) <p>默认启用此功能，而系统管理员可禁用此功能。[了解详情](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/user-preferences.html?lang=zh-Hans#company-preferences)</p> | 2023 年 5 月 3 日 | 2023 年 6 月 5 日 |
+| **用链接共享项目（无需登录）** | 您现在可以与无权访问 Adobe Analytics 的人员共享 Analysis Workspace 项目的只读链接。这包括与组织外的人员或组织内未配置 Adobe Analytics 的人员共享。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en#share-public-link) <p>默认启用此功能，而系统管理员可禁用此功能。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/user-preferences.html?lang=en#ims-organization-preferences)</p> | 2023 年 5 月 3 日 | 2023 年 6 月 5 日 |
 | **更新了 Analytics 功能板应用程序（移动应用程序）的主屏幕** | 通过新近更新的主屏幕，可在一个合并的记分卡列表中查看您的所有记分卡。如果您可用一个登录名访问多个组织，则在一个列表中即可找到所有来自您这些组织的记分卡。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/executive.html#use-dashboards) | 不适用 | 2023 年 5 月 10 日 |
 | **派生字段** | 这代表派生字段的初始版本。通过派生字段和可自定义的规则生成器，即可迅速定义（一般较为复杂的）数据操作。可进一步将该派生字段定义为数据视图中的组件（量度或维度），然后将该派生字段用作 Workspace 中的组件。<p>此版本支持营销渠道模板和以下功能：</p><ul><li>拼接</li><li>Case When</li><li>查找和替换</li><li>查询</li><li>URL 解析</li></ul> <p>[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/derived-fields.html)</p> | 2023 年 5 月 10 日 | 2023年8月2日 |
 | **CJA Report Builder - 从单元格选择数据视图** | 通过此功能，用户可从单元格选择数据块的数据视图。如果创建一个工作簿，并有多个数据视图的数据构造相似，而您希望能够以不同的数据视图多次重用工作簿，则这样做很有帮助。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html) | 不适用 | 2023 年 5 月 24 日 |
