@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 960021f2374b38b96fc1ec18200f1790194bfbb8
+source-git-commit: a7a03fa6e0f71d473b4713bd9817e1b97dab383e
 workflow-type: tm+mt
-source-wordcount: '2060'
-ht-degree: 91%
+source-wordcount: '2094'
+ht-degree: 90%
 
 ---
 
@@ -19,6 +19,8 @@ CJA 文档自创建以来进行了以下更新。
 
 | 功能 | 描述 |
 | --- | --- |
+| **2023 年 6 月** |  |
+| 计算量度更新 | 已更新与计算量度相关的各种文章，包括更新屏幕截图和程序中的步骤。 做出这些更改是为了使文档与当前CJA功能保持一致。 |
 | **2023 年 5 月** |  |
 | 深层链接（移动设备应用程序）文档 | 使用户可发送记分卡的链接，而这些链接将引导用户直接进入应用程序中的记分卡项目。这样使得可更轻松地从不太熟悉技术的受众共享项目和提高参与度。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) |
 | 关于Report Builder中“从单元格中选择数据视图”的文档 | 通过此功能，用户可从单元格选择数据块的数据视图。如果创建一个工作簿，并有多个数据视图的数据构造相似，而您希望能够以不同的数据视图多次重用工作簿，则这样做很有帮助。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html) |

@@ -4,10 +4,10 @@ title: 关键量度摘要
 feature: Visualizations
 role: User, Admin
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
-source-git-commit: f2e152345d7a395c684a964e72b1bcdaa5d817b0
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '600'
+ht-degree: 91%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 1. 将&#x200B;**[!UICONTROL 关键度量摘要]**&#x200B;可视化图表从左栏中的&#x200B;**[!UICONTROL 可视化图表]**&#x200B;菜单拖动到面板中。
 
-1. 通过选择量度、主要日期范围、比较日期范围和区段（如果需要）来配置可视化图表：
+1. 通过选择量度、主要日期范围、比较日期范围和过滤器（如果需要）来配置可视化图表：
 
    ![关键量度配置](assets/key-metric-config.png)
 
@@ -44,7 +44,7 @@ ht-degree: 0%
    | **[!UICONTROL 量度]** | 选择您希望检查的量度。 支持全部量度。 |
    | **[!UICONTROL 主要日期范围]** | 自由表格的当前日期范围。 |
    | **[!UICONTROL 比较日期范围。]** | 要与主日期范围进行比较的日期范围。 |
-   | **[!UICONTROL 区段（可选）]** | 您对此摘要特别感兴趣的任何区段。 |
+   | **[!UICONTROL 过滤器（可选）]** | 您对此摘要特别感兴趣的任何过滤器。 |
 
    {style="table-layout:auto"}
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 * 从此处，您可以将鼠标悬停在线形图上，查看各个日期的统计数据：
 
-![统计](assets/key-metric-output2.png)
+![统计数据](assets/key-metric-output2.png)
 
 ## 可视化设置
 
@@ -93,4 +93,4 @@ ht-degree: 0%
 
    现在，您将返回到原始配置视图。
 
-1. 根据需要更改量度、主要日期范围、比较日期范围或区段。
+1. 根据需要更改量度、主要日期范围、比较日期范围或过滤器。

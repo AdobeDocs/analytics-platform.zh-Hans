@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Customer Journey Analytics (CJA) 以及如何将 Analysis Workspace 用于来自 Experience Platform 的数据。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 5fbffb01c08b5f8069b2670742f7ae3836ad8357
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -246,13 +246,13 @@ ht-degree: 96%
          + [构建“每次访问的页面查看次数”量度](../components/calc-metrics/cm-workflow/cm-pvv.md)
          + [构建“参与率”量度](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [筛选度量](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
-         + [堆叠和替换区段](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
+         + [堆叠和替换筛选器](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [过滤和加权度量](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
          + [使用函数](../components/calc-metrics/cm-workflow/cm-using-functions.md)
          + [标记计算度量](../components/calc-metrics/cm-workflow/cm-tagging.md)
          + [批准计算度量](../components/calc-metrics/cm-workflow/cm-approving.md)
          + [共享计算度量](../components/calc-metrics/cm-workflow/cm-sharing.md)
-         + [计算度量管理器](../components/calc-metrics/cm-workflow/cm-manager.md)
+         + [计算指标管理器](../components/calc-metrics/cm-workflow/cm-manager.md)
       + [默认计算量度](../components/calc-metrics/default-calcmetrics.md)
       + [基本功能](../components/calc-metrics/cm-functions.md)
       + [高级功能](../components/calc-metrics/cm-adv-functions.md)

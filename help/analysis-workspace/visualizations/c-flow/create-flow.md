@@ -4,10 +4,10 @@ title: 配置流量可视化图表
 feature: Visualizations
 role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '1305'
-ht-degree: 86%
+ht-degree: 85%
 
 ---
 
@@ -98,7 +98,7 @@ ht-degree: 86%
 |--- |--- |
 | [!UICONTROL 关注此节点] | 转而关注选定的节点。关注节点在流量图表的中间显示。 |
 | [!UICONTROL 从头开始] | 返回到自由格式表格生成器，您可从中生成新的流量图表。 |
-| [!UICONTROL 从流量中的此点创建区段] | 创建区段。这会转至区段生成器，您可从中配置新区段。 |
+| [!UICONTROL 从流量中的此点创建过滤器] | 创建过滤器。这会将您转到过滤器生成器，您可以在其中配置新过滤器。 |
 | [!UICONTROL 细分] | 按可用维度、量度或时间分解节点。 |
 | [!UICONTROL 趋势] | 为节点创建趋势图表。 |
 | [!UICONTROL 扩展整列] | 扩展某一列以显示全部节点。默认情况下，只会显示头五个节点。 |

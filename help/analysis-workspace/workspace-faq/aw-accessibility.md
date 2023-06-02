@@ -3,7 +3,7 @@ description: Analysis Workspace 中的无障碍支持功能
 title: Analysis Workspace 中的辅助功能
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 99%
@@ -67,7 +67,7 @@ ht-degree: 99%
 | `[Alt + 1]` | 新建自由格式表 |
 | `[Ctrl + Shift + C]` | 新建计算量度 |
 | `[Ctrl + Shift + D]` | 新建日期范围 |
-| `[Ctrl + Shift + E]` | 新建区段 |
+| `[Ctrl + Shift + E]` | 新建过滤器 |
 | `[Ctrl + Z]` | 还原 |
 | `[Component drag + Shift]` | 创建下拉过滤器 |
 

@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: 34ee7954329d7dc8520031a977bb83d6e1bf3d3d
-workflow-type: ht
-source-wordcount: '925'
-ht-degree: 100%
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+workflow-type: tm+mt
+source-wordcount: '922'
+ht-degree: 96%
 
 ---
 
@@ -49,7 +49,7 @@ Customer Journey Analytics 中的用户无法创建、编辑或查看数据视�
 
 ## 工作区项目策划
 
-可以在工作区报告级别使用另一级别的访问控制。您可以限制某些用户对特定组件的访问。有关如何在工作区项目级别限制组件（维度、量度、区段、日期范围）以及如何将管理与数据视图绑定在一起的更多信息，请参阅[管理项目](/help/analysis-workspace/curate-share/curate.md)。
+可以在工作区报告级别使用另一级别的访问控制。您可以限制某些用户对特定组件的访问。有关如何在Workspace项目级别限制组件（维度、量度、过滤器、日期范围）以及如何将管理与数据视图绑定在一起的更多信息，请参阅 [策划项目](/help/analysis-workspace/curate-share/curate.md).
 
 ## 授予对单个量度或维度的访问权限
 
@@ -98,4 +98,4 @@ Customer Journey Analytics 中的用户无法创建、编辑或查看数据视�
 | **[!UICONTROL 受众创建]** | 允许用户创建[受众](/help/components/audiences/audiences-overview.md)。 |
 | **[!UICONTROL 受众视图]** | 允许用户查看[受众](/help/components/audiences/audiences-overview.md)。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
