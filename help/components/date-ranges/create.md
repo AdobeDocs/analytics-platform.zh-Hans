@@ -3,16 +3,16 @@ title: 创建日期范围
 description: 创建要用在报告中的日期范围。
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 94%
+source-wordcount: '403'
+ht-degree: 91%
 
 ---
 
 # 创建日期范围
 
-您可以使用以下两种方法中的任一种创建自定义日期范围：
+您可以使用以下两种方法之一创建日期范围：
 
 * 直接在 Workspace 项目中单击左侧日期范围组件列表旁边的“`+`”按钮
 * 在日期范围管理器中
@@ -38,7 +38,7 @@ ht-degree: 94%
 
 * **日历**：选择开始日期和结束日期。
 * **使用滚动日期**：如果您希望日期范围随时间变化，请选中此框。如果您希望日期范围保持静态，请不要选中此框。
-* **选择预设**:如果您希望自定义日期范围默认基于Adobe选件的范围，请使用此下拉选择。 选择预设后，您可以根据自己的需求进一步自定义日期范围。这不会影响 Adobe 提供的预设。
+* **选择预设**：如果您希望根据Adobe默认提供的范围设置自定义日期范围，请使用此下拉选项。 选择预设后，您可以根据自己的需求进一步自定义日期范围。这不会影响 Adobe 提供的预设。
 
 ## 滚动日期范围
 

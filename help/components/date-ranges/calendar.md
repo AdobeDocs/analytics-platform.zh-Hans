@@ -1,19 +1,19 @@
 ---
-description: 在日历中，您可以指定日期和日期范围，或者选择一个预设。
+description: 如何指定日期和日期范围，或选择预设。
 title: 日程表和日期范围概述
 feature: Calendar
 solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
 workflow-type: tm+mt
-source-wordcount: '822'
-ht-degree: 81%
+source-wordcount: '869'
+ht-degree: 79%
 
 ---
 
 # 日程表和日期范围概述
 
-在日历中，您可以指定日期和日期范围，或者选择一个预设。
+使用日历，您可以指定日期和日期范围，或选择预设。 日期范围是您可在工作区项目中使用的一种组件。您可以使用日期范围查看数据在一段时间的变化趋势或查看哪些事件发生得最频繁。日期范围以紫色编码。通过自定义日期范围，您可以自定义在工作区项目中看到的日期。
 
 日程表选择在面板级别应用，但您可以选择将它们应用于所有面板。 在工作区中单击日期范围时，界面将显示当前日程表月和上一个日程表月。您可以通过单击上方左右边角的左右箭头来调整这两个日程表。
 
