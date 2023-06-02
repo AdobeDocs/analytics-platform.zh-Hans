@@ -6,9 +6,10 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 badgeCJASQLConnector: label="New Feature" type="Positive"
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+exl-id: 80feadef-3e2d-4901-8c82-25c56d296e9f
+source-git-commit: f3dba7bac92cbda3285fe53a8961065e9bbbf972
 workflow-type: tm+mt
-source-wordcount: '2890'
+source-wordcount: '2900'
 ht-degree: 2%
 
 ---
@@ -33,7 +34,7 @@ Adobe Experience Platform [查询服务](https://experienceleague.adobe.com/docs
 
 要使用此功能，您必须
 
-- 启用 [!UICONTROL CJA SQL Connector] 在您的Experience Platform组织中。
+<!---   Enable the [!UICONTROL CJA SQL Connector] in your Experience Platform organization. -->
 
 - 配置相关产品配置文件、用户组和/或个人用户的功能。<br/>
 用户必须有权访问：
@@ -88,7 +89,7 @@ Adobe Experience Platform [查询服务](https://experienceleague.adobe.com/docs
 
 ### BI工具
 
-目前，Power BI和Tableau支持CJA SQL连接器。
+目前，仅支持CJA SQL Connector并针对Power BI和Tableau进行测试。 其他使用PSQL接口的BI工具也可能正常工作，但尚未得到正式支持。
 
 +++ Power BI
 
@@ -213,15 +214,15 @@ prod:all=> \dv
 
 ### 嵌套与扁平化
 
-默认情况下，数据视图的架构使用嵌套结构，就像原始XDM架构一样。 该集成还支持 `FLATTEN` 选项。 您可以使用此选项强制将数据视图（以及会话中的任何其他表）的架构扁平化。 拼合允许在不支持结构化架构的BI工具中更轻松地使用。 参见 [在查询服务中使用嵌套数据结构](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) 了解更多信息。
+默认情况下，数据视图的架构使用嵌套结构，就像原始XDM架构一样。 该集成还支持 `FLATTEN` 选项。 您可以使用此选项强制将数据视图（以及会话中的任何其他表）的架构平面化。 拼合允许在不支持结构化架构的BI工具中更轻松地使用。 参见 [在查询服务中使用嵌套数据结构](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) 了解更多信息。
 
 ### 支持的SQL
 
 参见 [查询服务SQL引用](https://experienceleague.adobe.com/docs/experience-platform/query/sql/overview.html?lang=en) 以了解有关支持的SQL类型的完整引用。
 
-有关模式和示例的概述，请参阅下面的模式表。
+有关可以使用的SQL的示例，请参见下表。
 
-+++模式
++++ 示例
 
 | 模式 | 示例 |
 |---|---|
@@ -390,4 +391,3 @@ ORDER BY -metric1 DESC
 | [DATE_TRUNC（粒度、日期或日期时间）](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | 在传递的字段上生成动态维度标识。<br/>支持的字符串粒度包括： `'YEAR'`， `'Y'`， `'MONTH'`， `'M'`， `'DAYOFMONTH'`， `'DAY'`， `'D'`， `'DAYOFWEEK'`， `'DOW'`， `'DAYOFYEAR'`， `'DOY'`， `'WEEK'`， `'WOY`&#39;， `'W'`， `'QUARTER'`， `'QOY'`， `'Q'`， `'HOUR'`，或 `'MINUTE'`. |
 
 {style="table-layout:auto"}
-
