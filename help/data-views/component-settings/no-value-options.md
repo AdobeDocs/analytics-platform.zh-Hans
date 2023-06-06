@@ -4,10 +4,10 @@ description: 决定如果维度为空该如何处理该维度。
 exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
-workflow-type: ht
-source-wordcount: '227'
-ht-degree: 100%
+source-git-commit: 0bd632d9e748b567c7b946f4c7d1437f0a776ca2
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 91%
 
 ---
 
@@ -17,6 +17,8 @@ ht-degree: 100%
 
 ![无值选项](../assets/no-value-options.png)
 
+## 设置 {#settings}
+
 | 设置 | 描述 |
 | --- | --- |
 | [!UICONTROL 如果显示，则将“无值”称为] | 一个文本字段，通过它，可将&#x200B;**[!UICONTROL 无值]**&#x200B;维度项重命名为其他名称。 |
@@ -24,4 +26,8 @@ ht-degree: 100%
 | [!UICONTROL 默认显示“无值”] | 在报表中显示此值。 |
 | [!UICONTROL 将“无值”视为值] | 将数据中的空白值替换为您在[!UICONTROL 如果显示，则将“无值”称为]下指定的文本。例如，如果以“移动设备类型”作为维度，则可将&#x200B;**[!UICONTROL 无值]**&#x200B;项重命名为“桌面”。将此字段更改为自定义值时，将该自定义值视为合法的字符串值。因此，如果将“Red”值输入到此字段中，则字符串“Red”在数据自身中存在的任何实例均滚入您已指定的同一行项下方。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
+
+## 博客帖子
+
+以下是一篇相关的博客文章，内容涉及 [在CJA中处理“无值”](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).
