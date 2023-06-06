@@ -3,10 +3,10 @@ description: 了解如何在 CJA 试验面板中分析 A/B 测试结果。
 title: 试验性面板
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: a18233ecaa14931af0d97b041cfe5dd20b3f653d
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 75%
+source-wordcount: '1861'
+ht-degree: 73%
 
 ---
 
@@ -125,3 +125,7 @@ A/B测试是行业内客观衡量此类干预效果的黄金标准。 A/B测试�
 ![随机试验](assets/randomize.png)
 
 如果想衡量干预措施X对结果Y的影响，两个因素的真正原因可能是混淆因素C。如果数据不是通过随机化X上的人员得到的，影响更难测量，分析将明确说明C。随机化打破了X对C的依赖性，让我们不必担心其他变量就可以测量X对Y的影响。
+
+## 在“试验”面板中使用计算量度
+
+请参阅这篇博客帖子以了解有关的信息 [在“试验”面板中使用派生量度](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).

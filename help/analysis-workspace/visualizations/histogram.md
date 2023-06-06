@@ -3,10 +3,10 @@ description: 直方图类似于条形图，不过它可以将数字归为几组�
 title: 直方图
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: a18233ecaa14931af0d97b041cfe5dd20b3f653d
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 90%
+source-wordcount: '411'
+ht-degree: 85%
 
 ---
 
@@ -61,3 +61,7 @@ ht-degree: 90%
 ![](assets/prebuilt_segments.png)
 
 要探索更多用于管理自由格式数据表及其他可视化的方法（如进行数据划分），请转到[此处](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)。
+
+## 博客帖子
+
+请参阅这篇博客帖子，了解以下信息： [使用直方图识别意外的数据值](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168).
