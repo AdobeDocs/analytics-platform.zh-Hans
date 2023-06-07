@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: f9aafab436fa1f26be9ed2e433ded046bbb1135a
+source-git-commit: b780a6cb4e0f922ff68d62b742ff58034db672b7
 workflow-type: tm+mt
-source-wordcount: '3218'
+source-wordcount: '3252'
 ht-degree: 9%
 
 ---
@@ -123,6 +123,11 @@ ht-degree: 9%
    A [!UICONTROL 删除组件] 对话框要求您确认删除。 考虑对数据视图外部的派生字段可能存在的任何外部引用。
 
    - 选择 **[!UICONTROL **&#x200B;继续&#x200B;**]** 以删除派生字段。
+
+>[!NOTE]
+>
+>派生字段在CJA中的连接级别进行管理。 对与该连接关联的任何数据视图中的派生字段所做的任何更改将应用于所有这些关联的数据视图。
+
 
 
 ## 函数模板
