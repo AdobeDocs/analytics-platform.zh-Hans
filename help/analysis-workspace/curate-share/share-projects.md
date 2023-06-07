@@ -4,7 +4,7 @@ keywords: Analysis Workspace 共享
 title: 共享项目
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: a64b380c337f2f359b4cffd23265a8fca8251957
+source-git-commit: 433bbb7526618f2b924ebd06768ebb3074efab57
 workflow-type: tm+mt
 source-wordcount: '1934'
 ht-degree: 48%
@@ -105,8 +105,6 @@ ht-degree: 48%
 1. 与组织中的用户共享项目链接。 例如，您可以将其粘贴到电子邮件、内部网站等。
 
 ## 与任何人共享项目（无需登录） {#share-public-link}
-
-{{release-limited-testing-section}}
 
 您可以授予 [只读访问](/help/analysis-workspace/curate-share/view-only-projects.md) 将Analysis Workspace项目发送给无权访问Customer Journey Analytics的用户。 这可能包括：
 
