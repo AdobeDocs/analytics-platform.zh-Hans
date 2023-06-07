@@ -3,10 +3,10 @@ description: 描述如何在 Analysis Workspace 中筛选和排序表格的文�
 title: 排序和过滤表格
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 901ddcd814c71504ff056d91fd25445d94a6f56e
+source-git-commit: 5469585897e483d721326fd6859ad74087407825
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 78%
+ht-degree: 73%
 
 ---
 
@@ -24,27 +24,27 @@ Analysis Workspace 中的过滤器可帮助您显示最重要的信息。
 
 >[!NOTE]
 >
-> 如本節所述，只能篩選動態維度專案。 無法篩選靜態維度專案。 如需詳細資訊，請參閱 [自由表格中的動態與靜態維度專案](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
+> 只能筛选动态维度项，如本节所述。 无法筛选静态维度项目。 有关更多信息，请参阅 [自由格式表中的动态维度项与静态维度项](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
 
-### 從表格中快速排除特定列
+### 从表中快速排除特定行
 
-您可以快速從表格中排除特定列，而無需開啟「篩選」對話方塊。
+无需打开“筛选器”对话框，即可快速从表中排除特定行。
 
 >[!NOTE]
 >
->如本節所述，排除列時， [!UICONTROL **一律排除專案**] 規則會自動套用至進階篩選對話方塊。 (您可以選取「篩選」圖示，然後選取「 」，檢視套用的規則 [**[!UICONTROL 顯示進階]**](#apply-a-simple-or-advanced-filter-to-a-table).)
+>在按本节所述排除行时， [!UICONTROL **始终排除项目**] 规则将自动应用于高级过滤器对话框。 (您可以通过选择“过滤器”图标来查看应用的规则，然后 [**[!UICONTROL 显示高级]**](#apply-a-simple-or-advanced-filter-to-a-table).)
 
-若要從自由表格中快速排除特定列：
+要从自由格式表中快速排除特定行，请执行以下操作：
 
-1. 暫留在您要排除的列上，然後選取x圖示。
+1. 将鼠标悬停在要排除的行上，然后选择x图标。
 
-   按住Shift鍵以選取範圍列，或按住Command鍵(在Mac上)或Ctrl鍵（在Windows上）以選取多個列。
+   按住Shift键选择范围行，或按住Command键(在Mac上)或Ctrl键（在Windows上）选择多行。
 
-### 套用簡單或進階篩選器至表格
+### 对表应用简单或高级过滤器
 
 过滤自由格式表中的数据：
 
-1. 將游標停留在包含您要篩選之資料的欄上。 <!--only some types of columns show the filter... Which? Just Dimensions?-->
+1. 将鼠标悬停在包含要过滤的数据的列上。 <!--only some types of columns show the filter... Which? Just Dimensions?-->
 
 1. 当&#x200B;**过滤器**&#x200B;图标出现时选择它。
 
@@ -54,7 +54,7 @@ Analysis Workspace 中的过滤器可帮助您显示最重要的信息。
 
    | 选项 | 函数 |
    |---------|----------|
-   | [!UICONTROL **搜尋字詞或片語**] | 指定您要篩選的字詞或片語。 仅显示包含指定单词或确切短语的行。 |
+   | [!UICONTROL **搜索单词或短语**] | 指定要作为筛选依据的词或短语。 仅显示包含指定单词或确切短语的行。 |
    | [!UICONTROL **包括未指定的项（无）**] | 选择此选项可在表中显示不属于表格的任何维度的数据。<!--what is this?--> |
 
 1. （可选）要按不同条件或多个条件筛选，请选择&#x200B;[!UICONTROL **显示高级选项**]。
@@ -74,11 +74,11 @@ Analysis Workspace 中的过滤器可帮助您显示最重要的信息。
 
 ## 对表格进行排序
 
-您可以按 Analysis Workspace 中的任何列（维度或量度）对自由格式表的数据进行排序。
+您可以按Analysis Workspace中作为维度或量度的任何列对自由格式表的数据进行排序。
 
 向下箭头图标![向下箭头图标已排序表格列](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg)在当前排序数据的列的标题中可见。
 
-1. 在 Analysis Workspace 中的任意“自由格式”表中，单击维度或量度名称旁的箭头：
+1. 在Analysis Workspace中的任意自由格式表中，单击维度或量度名称旁边的箭头。
 
    排序时考虑以下几点：
 
