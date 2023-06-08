@@ -4,10 +4,10 @@ keywords: Analysis Workspace 共享
 title: 共享项目
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 433bbb7526618f2b924ebd06768ebb3074efab57
+source-git-commit: cbd2d9b7143bb1cc3246330f656b911d7e362fe3
 workflow-type: tm+mt
-source-wordcount: '1934'
-ht-degree: 48%
+source-wordcount: '1944'
+ht-degree: 47%
 
 ---
 
@@ -17,15 +17,15 @@ ht-degree: 48%
 
 * 组织中有权访问Adobe Customer Journey Analytics的用户和组
 
-   您可以共享编辑、复制或查看权限
+  您可以共享编辑、复制或查看权限
 
 * 您组织中无权访问Customer Journey Analytics的用户和组
 
-   收件人具有只读访问权限
+  收件人具有只读访问权限
 
 * 组织外部的人员
 
-   收件人具有只读访问权限
+  收件人具有只读访问权限
 
 任意 [策划](curate.md) 当收件人打开项目时，会反映您在共享之前应用。
 
@@ -54,7 +54,7 @@ ht-degree: 48%
 
 * 如果用户分配到了多个角色，将始终获得权限最高的角色体验。 如果同时将用户添加为个人和组成员，则可能发生这种情况。 例如，如果作为个人用户获得&#x200B;**[!UICONTROL 可以编辑]**&#x200B;角色，而作为小组成员获得&#x200B;**[!UICONTROL 可以查看]**&#x200B;角色，则用户将获得&#x200B;**[!UICONTROL 可以编辑]**&#x200B;项目体验。
 
-* 具有&#x200B;**[!UICONTROL 可以复制]**&#x200B;或&#x200B;**[!UICONTROL 可以查看]**&#x200B;角色的管理员在打开项目时会获得有限的项目体验。 如有需要，管理员可以随时通过“**[!UICONTROL 组件]”>“[!UICONTROL 项目]**”将其角色提升为&#x200B;**[!UICONTROL 可以编辑]**。
+* 具有&#x200B;**[!UICONTROL 可以复制]**&#x200B;或&#x200B;**[!UICONTROL 可以查看]**&#x200B;角色的管理员在打开项目时会获得有限的项目体验。 管理员可以将其角色更改为 **[!UICONTROL 可以编辑]** 共享项目并授予“编辑”角色，如以下过程所述。
 
 与组织中的用户或组共享特定项目角色：
 
@@ -128,7 +128,6 @@ ht-degree: 48%
 >
 >* 如果贵组织许可Healthcare Shield，则只能与通过单点登录(SSO)或Adobe ID进行身份验证的用户共享项目；不能与未经身份验证的用户共享项目。 您有责任按照公司的内部数据管理策略使用此功能，并且只与具有适当权限的用户共享包含个人健康信息(PHI)的项目链接。
 
-
 以下视频演示和随附文档介绍了与任何人共享链接相关的选项：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420093/?learn=on)
@@ -153,9 +152,9 @@ ht-degree: 48%
 
    * **[!UICONTROL 需要 Experience Cloud 身份验证]:**
 
-      启用此选项后，只有那些能够访问项目的用户才能登录到创建您共享的项目的Adobe Experience Cloud组织。 但是，与您共享的用户不需要具有访问Adobe Analytics的权限。
+     启用此选项后，只有那些能够访问项目的用户才能登录到创建您共享的项目的Adobe Experience Cloud组织。 但是，与您共享的用户不需要具有访问Adobe Analytics的权限。
 
-      CJA管理员可以为公司配置此首选项，如中所述 [首选项](/help/analysis-workspace/user-preferences.md). 您可能会遇到以下情况，具体取决于管理员如何配置此选项：
+     CJA管理员可以为公司配置此首选项，如中所述 [首选项](/help/analysis-workspace/user-preferences.md). 您可能会遇到以下情况，具体取决于管理员如何配置此选项：
 
       * 如果此选项不可见，则CJA管理员未启用此功能。
 
