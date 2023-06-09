@@ -3,7 +3,7 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新 CJA 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: f02cda499b2050cd238ca2352237ae2cc9a502d6
+source-git-commit: a676c5c71e13524ef56143fe0f5d4cf98c64c2f2
 workflow-type: tm+mt
 source-wordcount: '1164'
 ht-degree: 91%
@@ -12,7 +12,7 @@ ht-degree: 91%
 
 # 当前的 Customer Journey Analytics (CJA) 发行说明（2023 年 6 月）
 
-**上次更新日期**：2023 年 6 月 6 日
+**上次更新日期**：2023 年 9 月 6 日
 
 Customer Journey Analytics 版本在[持续交付模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
@@ -26,7 +26,7 @@ Customer Journey Analytics 版本在[持续交付模型](releases.md)上运行�
 | **PowerBI 和 Tableau 对 CJA 数据视图的访问权限** | 利用 Customer Journey Analytics (CJA) SQL Connector 可以对您在 CJA 中定义的数据视图进行 SQL 访问。对于更熟悉 Power BI、Tableau 或其他商业智能和可视化工具的数据工程师和分析师而言，现在可以根据 CJA 用户用于其 Analysis Workspace 项目的相同数据视图创建报告和仪表板。[了解详情](/help/data-views/sql-connector.md) |  | 2023 年 6 月 30 日 |
 | **Experience Edge 地域查找** | 在为数据流启用 Experience Edge 地域查找后，您将能够使用 CJA 中的地理位置数据生成报告。 |  | 2023 年 6 月 30 日 |
 | **扩展了对配置文件和查找数据的查找支持** | 您不仅能够将查找数据集添加到事件数据集，还可以将其添加到配置文件和查找数据集。 | 2023 年 6 月 21 日 | 2023 年 7 月 12 日 |
-| **支持货币兑换** | 作为格式化数据视图中的量度组件的一部分，CJA 将支持货币兑换。 | 2023 年 6 月 21 日 | 2023 年 7 月 19 日 |
+| **支持货币兑换** | 作为格式化数据视图中的量度组件的一部分，CJA 将支持货币兑换。 | 2023 年 6 月 7 日 | 2023 年 6 月 21 日 |
 
 {style="table-layout:auto"}
 
