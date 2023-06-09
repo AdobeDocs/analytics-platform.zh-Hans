@@ -2,10 +2,10 @@
 title: 审核日志
 description: 了解如何查看和管理 CJA 审核日志。
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
-source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
-workflow-type: ht
-source-wordcount: '856'
-ht-degree: 100%
+source-git-commit: 7fcbac6adb6946efd5c54b9f8edb4587dc34d445
+workflow-type: tm+mt
+source-wordcount: '796'
+ht-degree: 79%
 
 ---
 
@@ -41,19 +41,49 @@ ht-degree: 100%
 
 将显示以下项目：
 
-| 项目 | 描述 |
-| --- | --- |
-| 操作名称 | 以下是可能的操作列表： <ul><li>API 请求</li><li>批准</li><li>创建</li><li>编辑</li><li>导出</li><li>登录失败</li><li>登录成功</li><li>注销</li><li>组织更改</li><li>刷新</li><li>共享</li><li>转移</li><li>取消批准</li><li>取消共享</li></ul> |
-| 描述 | 操作、组件类型（包含 ID）和其他值的摘要。 |
-| 用户名 | 执行操作的用户。 |
-| 组件类型 | 可能的组件类型包括： <ul><li>批注</li><li>受众</li><li>计算量度</li><li>连接</li><li>数据组</li><li>数据视图（此组件类型包括维度和指标）</li><li>功能访问</li><li>过滤器</li><li>IMS 组织</li><li>移动</li><li>项目</li><li>报表</li><li>计划的项目</li><li>用户</li><li>用户组</li></ul> |
-| IMS 组织 ID | 首次登录 Adobe Experience Cloud 时为您的实例分配的唯一 ID。格式应为：xxx@AdobeOrg。 |
-| 用户 ID | 标识执行此操作的用户的唯一 ID。 |
-| 创建日期 | 执行此操作的时间。 |
-| 电子邮件 | 执行此操作的用户的电子邮件。 |
-| 组件 ID | 标识正在对其执行操作的组件的唯一 ID。 |
-| 日志 ID | 标识此日志条目的唯一 ID。 |
-| 用户类型 | 可能的类型包括：IMS、OKTA |
+* **[!UICONTROL 操作名称]**：采取的操作。 可能的值包括：
+   * API请求
+   * 批准
+   * 创建
+   * DELETE
+   * 编辑
+   * 导出
+   * 组织更改
+   * 刷新
+   * 共享
+   * 转移
+   * 取消批准
+   * 取消共享
+* **[!UICONTROL 创建日期]**：执行操作的日期和时间。
+* **[!UICONTROL 描述]**：操作摘要。
+* **[!UICONTROL 用户名]**：执行操作的用户。
+* **[!UICONTROL 电子邮件]**：执行操作的用户的电子邮件地址。
+* **[!UICONTROL 组件名称]**：用户对其执行操作的组件。
+* **[!UICONTROL 组件类型]**：组件的类型。 可能的值包括：
+   * 注释
+   * AUDIENCE
+   * CALCULATED_METRIC
+   * 连接
+   * 数据组
+   * 数据视图
+   * DATASET_STITCHING
+   * DATE_RANGE
+   * 功能访问
+   * FILTER
+   * IMS组织
+   * 移动设备
+   * 项目
+   * 报告
+   * 计划项目
+   * 用户
+   * 用户组
+* **[!UICONTROL 组件Id]**：用户对其执行操作的组件的ID。
+* **[!UICONTROL IMS组织ID]**：组织的IMS ID，采用格式 `ABC123@AdobeOrg`.
+* **[!UICONTROL 日志ID]**：标识此日志条目的唯一ID。
+* **[!UICONTROL 用户ID]**：标识执行操作的用户的唯一ID。
+* **[!UICONTROL 用户类型]**：使用的身份验证类型。 有效的值包括：
+   * IMS
+   * OKTA
 
 ### 筛选审核日志
 
@@ -66,13 +96,13 @@ ht-degree: 100%
 | 过滤器 | 描述 |
 | --- | --- |
 | [!UICONTROL 日期范围] | 通过选择不同的日期或通过在多个日期上拖动光标来选择日期范围，从而筛选不同的日期范围。默认情况下，选择今天和昨天的日期。 |
-| [!UICONTROL 操作] | 对以下一个或多个操作进行筛选： <ul><li>API 请求</li><li>批准</li><li>创建</li><li>编辑</li><li>导出</li><li>登录失败</li><li>登录成功</li><li>注销</li><li>组织更改</li><li>刷新</li><li>共享</li><li>转移</li><li>取消批准</li><li>取消共享</li></ul> |
+| [!UICONTROL 操作] | 筛选上面列出的任何操作名称。 |
 | [!UICONTROL 用户 ID] | 按用户 ID 筛选特定用户。通过选择用户名旁边的信息 (i) 按钮可以找到用户 ID。 |
 | [!UICONTROL 电子邮件] | 筛选特定用户的电子邮件地址。通过选择用户名旁边的信息 (i) 按钮可以找到电子邮件 ID。 |
 | [!UICONTROL 组件 ID] | 筛选特定的组件 ID。通过选择所需组件的信息 (i) 按钮可以找到用户 ID。 |
-| [!UICONTROL 组件类型] | 筛选一个或多个组件类型： <ul><li>批注</li><li>受众</li><li>计算量度</li><li>连接</li><li>数据组</li><li>数据视图</li><li>功能访问</li><li>过滤器</li><li>IMS 组织</li><li>移动</li><li>项目</li><li>报表</li><li>计划的项目</li><li>用户</li><li>用户组</li></ul> |
+| [!UICONTROL 组件类型] | 筛选上面列出的任何组件类型。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 审核日志记录的事件类型
 
@@ -94,7 +124,7 @@ ht-degree: 100%
 | [!UICONTROL 用户] | <ul><li>API 请求</li><li>创建</li><li>删除</li><li>编辑</li></ul> |
 | [!UICONTROL 用户组] | <ul><li>API 请求</li><li>创建</li><li>删除</li><li>编辑</li></ul> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 下载审核日志
 
