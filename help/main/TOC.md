@@ -10,9 +10,9 @@ user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Customer Journey Analytics (CJA) 以及如何将 Analysis Workspace 用于来自 Experience Platform 的数据。
 breadcrumb-title: Customer Journey Analytics 指南
 source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '902'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -75,13 +75,13 @@ ht-degree: 95%
       + [行为](../data-views/component-settings/behavior.md)
       + [格式](../data-views/component-settings/format.md)
       + [包括/排除值](../data-views/component-settings/include-exclude-values.md)
-      + [度量去重](../data-views/component-settings/metric-deduplication.md)
+      + [指标去重](../data-views/component-settings/metric-deduplication.md)
       + [无值选项](../data-views/component-settings/no-value-options.md)
       + [持久性](../data-views/component-settings/persistence.md)
       + [子字符串](../data-views/component-settings/substring.md)
       + [值分段](../data-views/component-settings/value-bucketing.md)
    + [标准组件参考](../data-views/component-reference.md)
-   + [SQL连接器](../data-views/sql-connector.md)
+   + [SQL Connector](../data-views/sql-connector.md)
    + [派生字段](../data-views/derived-fields/derived-fields.md)
    + [标签和策略](../data-views/data-governance.md)
 
@@ -140,7 +140,7 @@ ht-degree: 95%
       + [直方图](../analysis-workspace/visualizations/histogram.md)
       + [水平条形图和堆叠的水平条形图](../analysis-workspace/visualizations/horizontal-bar.md)
       + [智能题注](../analysis-workspace/visualizations/intelligent-captions.md)
-      + [关键度量摘要](../analysis-workspace/visualizations/key-metric.md)
+      + [关键指标摘要](../analysis-workspace/visualizations/key-metric.md)
       + [线形图](../analysis-workspace/visualizations/line.md)
       + [散点图](../analysis-workspace/visualizations/scatterplot.md)
       + [摘要数字和摘要变化](../analysis-workspace/visualizations/summary-number-change.md)
@@ -199,7 +199,7 @@ ht-degree: 95%
    + [设置执行用户以使用功能板](../mobile-app/set-up-execs.md)
    + [执行用户快速入门指南](../mobile-app/executive.md)
 
-+ 指导分析 {#guided-analysis}
++ 引导式分析 {#guided-analysis}
    + [概述](../guided-analysis/overview.md)
    + 分析类型 {#analysis-types}
       + [概述](../guided-analysis/analysis-types/overview.md)
@@ -227,33 +227,33 @@ ht-degree: 95%
       + [划分维度](../components/dimensions/t-breakdown-fa.md)
       + [时间划分维度](../components/dimensions/time-parting-dimensions.md)
       + [具有很高基数的维度](../components/dimensions/high-cardinality.md)
-   + [度量](../components/apply-create-metrics.md)
+   + [指标](../components/apply-create-metrics.md)
 
    + 过滤器 {#cja-filters}
       + [过滤器概述](../components/filters/filters-overview.md)
       + [创建过滤器](../components/filters/create-filters.md)
       + [快速过滤器](../components/filters/quick-filters.md)
-      + [筛选器生成器](../components/filters/filter-builder.md)
+      + [过滤器生成器](../components/filters/filter-builder.md)
       + [管理过滤器](../components/filters/manage-filters.md)
       + [运算符](../components/filters/operators.md)
-   + 计算量度 {#cja-calcmetrics}
-      + [计算度量概述](../components/calc-metrics/calc-metr-overview.md)
-      + 计算度量工作流程 {#cm-workflow}
-         + [计算度量工作流程](../components/calc-metrics/cm-workflow/cm-workflow.md)
-         + [查找度量](../components/calc-metrics/cm-workflow/cm-finding.md)
-         + [生成量度](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
-         + [量度类型和归因](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-         + [构建“每次访问的页面查看次数”量度](../components/calc-metrics/cm-workflow/cm-pvv.md)
-         + [构建“参与率”量度](../components/calc-metrics/cm-workflow/participation-metric.md)
-         + [筛选度量](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
-         + [堆叠和替换筛选器](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
-         + [过滤和加权度量](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
+   + 计算指标 {#cja-calcmetrics}
+      + [计算指标概述](../components/calc-metrics/calc-metr-overview.md)
+      + 计算指标工作流程 {#cm-workflow}
+         + [计算指标工作流程](../components/calc-metrics/cm-workflow/cm-workflow.md)
+         + [查找指标](../components/calc-metrics/cm-workflow/cm-finding.md)
+         + [生成指标](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
+         + [指标类型和归因](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
+         + [生成“每次访问的页面查看次数”指标](../components/calc-metrics/cm-workflow/cm-pvv.md)
+         + [生成“参与率”指标](../components/calc-metrics/cm-workflow/participation-metric.md)
+         + [过滤指标](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
+         + [堆叠和替换过滤器](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
+         + [过滤和加权指标](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
          + [使用函数](../components/calc-metrics/cm-workflow/cm-using-functions.md)
-         + [标记计算度量](../components/calc-metrics/cm-workflow/cm-tagging.md)
-         + [批准计算度量](../components/calc-metrics/cm-workflow/cm-approving.md)
-         + [共享计算度量](../components/calc-metrics/cm-workflow/cm-sharing.md)
+         + [标记计算指标](../components/calc-metrics/cm-workflow/cm-tagging.md)
+         + [批准计算指标](../components/calc-metrics/cm-workflow/cm-approving.md)
+         + [共享计算指标](../components/calc-metrics/cm-workflow/cm-sharing.md)
          + [计算指标管理器](../components/calc-metrics/cm-workflow/cm-manager.md)
-      + [默认计算量度](../components/calc-metrics/default-calcmetrics.md)
+      + [默认计算指标](../components/calc-metrics/default-calcmetrics.md)
       + [基本功能](../components/calc-metrics/cm-functions.md)
       + [高级功能](../components/calc-metrics/cm-adv-functions.md)
    + 日程表和日期范围 {#cja-date-ranges}
@@ -297,8 +297,8 @@ ht-degree: 95%
    + [关于将 Adobe 解决方案与 CJA 集成的概述](/help/integrations/overview.md)
    + [将 Adobe Analytics 与 Customer Journey Analytics 集成](/help/integrations/aa.md)
    + [将 Journey Optimizer 数据与 CJA 集成](/help/integrations/ajo.md)
-   + [将决策管理数据与CJA集成](/help/integrations/ajo-od.md)
-   + [将客户人工智能与 CJA 集成](/help/integrations/customer-ai.md)
+   + [将 Decision Management 数据与 CJA 集成](/help/integrations/ajo-od.md)
+   + [将 Customer AI 与 CJA 集成](/help/integrations/customer-ai.md)
 
 + 数据管理 {#cja-privacy}
    + [数据管理](../privacy/privacy-overview.md)
@@ -318,7 +318,7 @@ ht-degree: 95%
       + [将 AEP 受众引入 CJA](../use-cases/data-ingestion/ingest-aep-segments.md)
    + 数据视图 {#data-views}
       + [数据视图用例](../use-cases/data-views/data-views-usecases.md)
-      + [使用绑定维度和度量](../use-cases/data-views/binding-dimensions-metrics.md)
+      + [使用绑定维度和指标](../use-cases/data-views/binding-dimensions-metrics.md)
    + B2B {#b2b}
       + [将帐户级别的数据作为查询数据集进行添加](../use-cases/b2b/b2b.md)
    + 跨渠道数据 {#cross-channel}
@@ -339,14 +339,14 @@ ht-degree: 95%
    + [访问控制](../admin/cja-access-control.md)
    + [查看和管理使用情况](../admin/estimate-usage.md)
    + [删除后果](../admin/cja-deletion.md)
-   + [优化CJA性能](../admin/optimizing-performance.md)
+   + [优化 CJA 性能](../admin/optimizing-performance.md)
 
 + Labs {#labs}
    + [Labs 用户指南](../labs/labs.md)
 
 + 故障排除 {#troubleshooting}
    + [将 Adobe Analytics 数据与 CJA 数据进行比较](../troubleshooting/compare.md)
-   + [Real-Time CDP 和 CJA 之间度量和受众会员计数的一致性](../troubleshooting/consistency-rcdp-cja.md)
+   + [Real-Time CDP 和 CJA 之间指标和受众会员计数的一致性](../troubleshooting/consistency-rcdp-cja.md)
 
 + [CJA 术语表](../getting-started/cja-glossary.md)
 
