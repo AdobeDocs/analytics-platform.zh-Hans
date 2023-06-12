@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 62c2c74d1a5d0f92cbe8a641f392ccaba3b105ff
+source-git-commit: 25293f3ef40f0c19ec6a963d337ab91b8054aa58
 workflow-type: tm+mt
 source-wordcount: '2086'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ CJA 文档自创建以来进行了以下更新。
 | 关于使用过滤器作为维度的视频 | 更新了关于使用过滤器作为维度的视频。 <p>此视频链接自[创建过滤器](/help/components/filters/create-filters.md)页面。</p> <p>以下是这段视频的直接链接：[在 Analysis Workspace 中使用过滤器作为维度](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html)。</p> |
 | 过滤器文档 | 添加了有关使用[过滤器生成器](/help/components/filters/filter-builder.md)的文章。 <p>简化了[创建过滤器](/help/components/filters/create-filters.md)和[过滤器概述](/help/components/filters/filters-overview.md)中的文档。</p> |
 | 更新实验面板文档 | 添加了一个有关[解释非随机维度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized)的部分。 |
-| 项目过滤器（临时过滤出和快速过滤器） | 简化了有关项目过滤器的文档并删除了重复的信息。创建临时过滤器的步骤现在与[创建快速过滤器](/help/components/filters/quick-filters.md)的步骤合并在一起。 |
+| 项目过滤器（临时过滤出和快速过滤器） | 简化了有关项目筛选器的文档，并删除了重复信息。 创建临时过滤器的步骤现在与[创建快速过滤器](/help/components/filters/quick-filters.md)的步骤合并在一起。 |
 | **2023 年 3 月** | |
 | 集成决策管理数据 | 添加了解释如何[在 CJA 中集成 Adobe Journey Optimizer 决策管理数据](/help/integrations/ajo-od.md)的内容。 |
 | 在移动记分卡中创建数据故事 | [数据故事](/help/mobile-app/create-scorecard.md#create-data-stories)是围绕中心主题或指标构建的辅助数据点、业务背景和相关指标的集合。 |
