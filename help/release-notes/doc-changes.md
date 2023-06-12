@@ -4,9 +4,9 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 3426392854d60269f370228cbe7542e9789dae99
+source-git-commit: 62c2c74d1a5d0f92cbe8a641f392ccaba3b105ff
 workflow-type: tm+mt
-source-wordcount: '2102'
+source-wordcount: '2086'
 ht-degree: 99%
 
 ---
@@ -20,17 +20,19 @@ CJA 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2023 年 6 月** | |
+| PowerBI 和 Tableau 访问 CJA 数据视图 | 通过 Customer Journey Analytics (CJA) SQL Connector，SQL 可访问您在 CJA 中定义的数据视图。[了解详情](/help/data-views/sql-connector.md) |
+| Adobe Journey Optimizer 数据视图 | CJA 管理员有权访问 CJA 中某些额外的名为“AJO 数据视图（沙盒名称）”的数据视图。[了解详情](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html)。 |
 | 货币换算 | 更新了以下项的文档 [货币换算](../data-views/component-settings/format.md#currency) 支持。 |
 | 计算指标更新 | 对计算指标文档作出了以下更新，以使其与当前的 CJA 功能保持一致： <ul><li>更新了 CJA 中提供的[默认计算指标](/help/components/calc-metrics/default-calcmetrics.md)的列表</li><li>更新了各种计算指标文章中的屏幕截图和过程 </li></ul> |
 | **2023 年 5 月** | |
-| 深层链接（移动应用程序）文档 | 使用户可发送记分卡的链接，而这些链接将引导用户直接进入应用程序中的记分卡项目。这样使得可更轻松地从不太熟悉技术的受众共享项目和提高参与度。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) |
-| 关于 Report Builder 中的“从单元格选择数据视图”文档 | 通过此功能，用户可从单元格选择数据块的数据视图。如果创建一个工作簿，并有多个数据视图的数据构造相似，而您希望能够以不同的数据视图多次重用工作簿，则这样做很有帮助。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html) |
-| 关于 Analytics 功能板应用程序（移动应用程序）更新的主屏幕的文档 | 通过新近更新的主屏幕，可在一个合并的记分卡列表中查看您的所有记分卡。如果您可用一个登录名访问多个组织，则在一个列表中即可找到所有来自您这些组织的记分卡。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/executive.html#use-dashboards) |
+| 深层链接（移动应用程序）文档 | 使用户可发送记分卡的链接，而这些链接将引导用户直接进入应用程序中的记分卡项目。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) |
+| 关于 Report Builder 中的“从单元格选择数据视图”文档 | 通过此功能，用户可从单元格选择数据块的数据视图。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html) |
+| 关于 Analytics 功能板应用程序（移动应用程序）更新的主屏幕的文档 | 通过新近更新的主屏幕，可在一个合并的记分卡列表中查看您的所有记分卡。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/executive.html#use-dashboards) |
 | 优化更新 | 更新了有关[优化 CJA 性能](/help/admin/optimizing-performance.md)的文章 |
 | Analysis Workspace 概述 | 更新了 [Analysis Workspace 概述](/help/analysis-workspace/home.md)，包括更多的一般概述信息和相关内容的链接。 |
 | 创建项目 | 创建了一篇新文章，其中详细解释了如何在 Analysis Workspace 中[创建项目](/help/analysis-workspace/build-workspace-project/create-projects.md)。 |
-| 为左边栏中的组件排序 | 添加了有关为左边栏中的组件列表排序的信息。请参阅[组件概述](/help/components/overview.md)中的“搜索、过滤组件列表和为其排序”部分。 |
-| 从自由格式表中删除包含动态维度的行 | 添加了有关如何使用 x 图标快速删除包含动态维度的特定行的信息。请参阅[过滤表和为其排序](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)中的“从表中快速排除特定行”部分。 |
+| 对左边栏中的组件排序 | 添加了有关对左边栏中的组件列表进行排序的信息。请参阅[组件概述](/help/components/overview.md)中的“搜索、筛选和排序组件列表”部分。 |
+| 从自由格式表中删除包含动态维度的行 | 添加了有关如何使用 x 图标快速删除包含动态维度的特定行的信息。请参阅[筛选和排序表](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)中的“从表中快速排除特定行”部分。 |
 | 面板中添加可视化效果的按钮 | 添加了有关 Analysis Workspace 中每个面板底部的新按钮的信息，通过该按钮，可快速地添加可视化效果。请参阅[可视化概述](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)中的“将可视化效果添加到面板”部分。 |
 | 智能题注文档 | 通过折线图可视化效果的[自然语言概括](/help/analysis-workspace/visualizations/intelligent-captions.md)，为用户提供更丰富多彩的叙事。 |
 | 派生字段 | 添加了以下项的文档 [派生字段](../data-views/derived-fields/derived-fields.md) 功能。 |
