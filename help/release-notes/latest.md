@@ -3,9 +3,9 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新 CJA 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: a676c5c71e13524ef56143fe0f5d4cf98c64c2f2
+source-git-commit: c3bea466c4960893ebe746046250608bacc9e340
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1369'
 ht-degree: 91%
 
 ---
@@ -26,7 +26,7 @@ Customer Journey Analytics 版本在[持续交付模型](releases.md)上运行�
 | **PowerBI 和 Tableau 对 CJA 数据视图的访问权限** | 利用 Customer Journey Analytics (CJA) SQL Connector 可以对您在 CJA 中定义的数据视图进行 SQL 访问。对于更熟悉 Power BI、Tableau 或其他商业智能和可视化工具的数据工程师和分析师而言，现在可以根据 CJA 用户用于其 Analysis Workspace 项目的相同数据视图创建报告和仪表板。[了解详情](/help/data-views/sql-connector.md) |  | 2023 年 6 月 30 日 |
 | **Experience Edge 地域查找** | 在为数据流启用 Experience Edge 地域查找后，您将能够使用 CJA 中的地理位置数据生成报告。 |  | 2023 年 6 月 30 日 |
 | **扩展了对配置文件和查找数据的查找支持** | 您不仅能够将查找数据集添加到事件数据集，还可以将其添加到配置文件和查找数据集。 | 2023 年 6 月 21 日 | 2023 年 7 月 12 日 |
-| **支持货币兑换** | 作为格式化数据视图中的量度组件的一部分，CJA 将支持货币兑换。 | 2023 年 6 月 7 日 | 2023 年 6 月 21 日 |
+| **货币兑换支持** | 在数据视图中格式化量度组件时，支持货币转换。 [了解详情](../data-views/component-settings/format.md#currency) | 2023 年 6 月 7 日 | 2023 年 6 月 21 日 |
 
 {style="table-layout:auto"}
 
@@ -42,6 +42,10 @@ Customer Journey Analytics 版本在[持续交付模型](releases.md)上运行�
 | **CJA Report Builder - 从单元格选择数据视图** | 通过此功能，用户可从单元格选择数据块的数据视图。如果创建一个工作簿，并有多个数据视图的数据构造相似，而您希望能够以不同的数据视图多次重用工作簿，则这样做很有帮助。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html) | 不适用 | 2023 年 5 月 24 日 |
 | **CJA的更新学习页面** | Customer Journey Analytics登录页上的“学习”选项卡现在包含特定于CJA的内容，包括侧重于从Adobe Analytics过渡到CJA的内容。<p>“学习”选项卡上还提供了以下其他增强功能：</p><ul><li>改进了设计，通过改进的导航在单个页面上显示更多学习内容</li><li>能够按体验级别（初级、中级和高级）个性化学习内容</li></ul><p>以前，CJA中的“学习”选项卡包含的信息与Adobe Analytics中的“学习”选项卡相同。</p> [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=en#navigate-learning) | 不适用 | 2023 年 6 月 30 日 |
 | **为 Analysis Workspace 中的组件排序** | <p>在 Analysis Workspace 中的左边栏或数据词典中查看组件时，现在有一个新的排序选项可用。可按“推荐”（最常用的那些组件）、“字母顺序”或“分类”（类型）为组件排序。</p><p>而以前只能搜索或过滤组件。[了解详情](/help/components/overview.md)</p> | 不适用 | 待定 |
+| **从自由格式表中删除包含动态维度的行** | 现在可在 Analysis Workspace 的自由格式表中使用 x 图标快速地删除包含动态维度的特定行。这样做时自动应用“始终排除项目”筛选规则。<p>而以前只有在“过滤器”对话框中手动创建规则才能删除包含动态维度的行。[了解详情](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)</p> | 不适用 | 2023 年 5 月 17 日 |
+| **在面板中新增一个用于添加可视化效果的按钮** | Analysis Workspace 中每个面板的底部现在都有一个新按钮，通过它，可快速地添加可视化效果。 <p>而以前只有从左边栏拖动可视化效果、重复或复制现有的可视化效果或创建空白面板才能将可视化效果添加到面板。[了解详情](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</p> | 不适用 | 2023 年 5 月 17 日 |
+| **深层链接（移动应用程序）** | 使用户可发送记分卡的链接，而这些链接将引导用户直接进入应用程序中的记分卡项目。这样使得可更轻松地从不太熟悉技术的受众共享项目和提高参与度。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) | 不适用 | 2023 年 5 月 17 日 |
+| **智能题注** | 用自然语言概括[!UICONTROL 折线图]可视化效果，从而更细致地讲述故事。[了解详情](/help/analysis-workspace/visualizations/intelligent-captions.md) | 2023 年 5 月 17 日 | 2023 年 6 月 1 日 |
 
 {style="table-layout:auto"}
 
