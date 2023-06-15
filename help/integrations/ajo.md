@@ -2,10 +2,10 @@
 title: 将 Adobe Journey Optimizer (AJO) 与 Customer Journey Analytics (CJA) 集成
 description: 引入 AJO 生成的数据，并在 CJA 中使用 Analysis Workspace 分析这些数据。
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
-source-git-commit: 933f3f0336c325bf0973a0379532b3e19f1c6d68
+source-git-commit: 76f13b6c3b05d4a3fa4169ab0b4a1e9573efb9e0
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 84%
+source-wordcount: '864'
+ht-degree: 73%
 
 ---
 
@@ -21,17 +21,17 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 
 ## 在 Customer Journey Analytics 中创建连接
 
-将Journey Optimizer数据放入Adobe Experience Platform后，您可以 [创建连接](/help/connections/create-connection.md) 基于Journey Optimizer数据集。 或者，也可以将Journey Optimizer数据集添加到现有连接。
+一旦Journey Optimizer数据进入Adobe Experience Platform，您就可以 [创建连接](/help/connections/create-connection.md) 基于您的Journey Optimizer数据集。 或者，您可以将Journey Optimizer数据集添加到现有连接。
 
 选择并配置以下数据集：
 
 | 数据集 | 数据集类型 | 连接设置 | 描述 |
 | --- | --- | --- | --- |
-| AJO消息反馈事件数据集 | 事件 | 人员 ID: `IdentityMap` | 包含消息投放事件，如“[!UICONTROL 发送]&#39;和&#39;[!UICONTROL 跳出次数]&#39;。 |
-| AJO电子邮件跟踪体验事件数据集 | 事件 | 人员 ID: `IdentityMap` | 包含电子邮件跟踪事件，如“[!UICONTROL 打开]&#39;, &#39;[!UICONTROL 点击次数]&#39;和&#39;[!UICONTROL 取消订阅]&#39;。 |
-| AJO推送跟踪体验事件数据集 | 事件 | 人员 ID: `IdentityMap` | 包含推送跟踪事件，如“[!UICONTROL 应用程序启动次数]&#39;。 |
-| 历程步骤事件 | 事件 | 人员 ID: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | 包含显示哪些用户档案参与了历程的每个节点的事件。 |
-| AJO实体数据集 | 查询 | 键： `_id`<br>匹配键： `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | 包含将历程和促销活动元数据与所有AJO事件数据关联的分类。 |
+| AJO消息反馈事件数据集 | 事件 | 人员 ID: `IdentityMap` | 包含消息投放事件，例如“[!UICONTROL 发送]&#39;和&#39;[!UICONTROL 跳出次数]&#39;. |
+| AJO电子邮件跟踪体验事件数据集 | 事件 | 人员 ID: `IdentityMap` | 包含电子邮件跟踪事件，例如“[!UICONTROL 打开次数]&#39;， &#39;[!UICONTROL 点击次数]&#39;和&#39;[!UICONTROL 取消订阅]&#39;. |
+| AJO推送跟踪体验事件数据集 | 事件 | 人员 ID: `IdentityMap` | 包含推送跟踪事件，如[!UICONTROL 应用程序启动次数]&#39;. |
+| 历程步骤事件 | 事件 | 人员 ID: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | 包含显示哪些用户档案参与了历程每个节点的事件。 |
+| AJO实体数据集 | 查询 | 密钥： `_id`<br>匹配键： `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | 包含将历程和促销活动元数据与所有AJO事件数据关联的分类。 |
 
 {style="table-layout:auto"}
 
@@ -64,6 +64,7 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 | 处理名称 | `_experience.customerJourneyManagement.`<br>`entities.experiment.treatmentName` | 组件类型：维度<br>上下文标签：试验变体 |
 | 电子邮件投放失败原因 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` | 组件类型：维度 |
 | 电子邮件投放排除原因 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` | 组件类型：维度 |
+| 元素标签 | `_experience.decisioning.propositionAction.label` | 组件类型：维度 |
 
 {style="table-layout:auto"}
 
@@ -82,6 +83,11 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 | 发送次数 | 电子邮件提供商接受的邮件数。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | 组件类型：度量<br>包括排除值：等于 `sent` |
 | 垃圾邮件投诉次数 | 垃圾邮件投诉的次数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | 组件类型：度量<br>包括排除值：等于 `spam_complaint` |
 | 取消订阅次数 | 取消订阅的次数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | 组件类型：度量<br>包括排除值：等于 `unsubscribe` |
+| Edge发送 | 边缘网络向Web或Mobile SDK发送消息的次数 | 使用架构字符串元素 `_experience.decisioning.propositionEventType.send` |
+| 集客显示 | 向用户显示Web或应用程序内消息的次数 | 使用架构字符串元素 `_experience.decisioning.propositionEventType.display` |
+| 入站点击次数 | Web或应用程序内消息点击次数 | 使用架构字符串元素 `_experience.decisioning.propositionEventType.interact` |
+| 应用程序内触发器 | 决策引擎建议消息应显示的次数。 Mobile SDK可以覆盖减少实际显示数量的决策。 | 使用架构字符串元素 `_experience.decisioning.propositionEventType.trigger` |
+| 应用程序内解除 | SDK从UI中删除应用程序内消息的次数 | 使用架构字符串元素 `_experience.decisioning.propositionEventType.dismiss` |
 
 {style="table-layout:auto"}
 
