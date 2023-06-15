@@ -3,11 +3,9 @@ title: 派生字段
 description: 派生字段通过一组可用函数和函数模板指定对架构字段和/或标准组件的报告时间操作。
 solution: Customer Journey Analytics
 feature: Data Views
-hide: true
-hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: b780a6cb4e0f922ff68d62b742ff58034db672b7
+source-git-commit: 4ae102baa524a7e01ac8f08365260e80fe90150e
 workflow-type: tm+mt
 source-wordcount: '3252'
 ht-degree: 9%
@@ -16,8 +14,6 @@ ht-degree: 9%
 
 
 # 派生字段
-
-{{release-limited-testing}}
 
 派生字段是Customer Journey Analytics(CJA)中实时报表功能的一个重要方面。 通过派生字段和可自定义的规则生成器，即可迅速定义（一般较为复杂的）数据操作。然后，您可以将该派生字段用作中的组件（量度或维度） [工作区](../../analysis-workspace/home.md) 或者甚至进一步将派生字段定义为中的组件 [数据视图](../data-views.md).
 
@@ -289,7 +285,7 @@ ht-degree: 9%
 |:--:|----|----|----|
 | 1 | `https://facebook.com` | `https://site.com/home` | [!DNL Natural Social] |
 | 2 | `https://abc.com` | `https://site.com/?cid=ds_12345678` | [!DNL Display] |
-| 3 |  | `https://site.com/?cid=em_12345678` | [!DNL Email] |
+| 3 | | `https://site.com/?cid=em_12345678` | [!DNL Email] |
 | 4 | `https://google.com` | `https://site.com/?cid=ps_abc098765` | [!DNL Paid Search] |
 | 5 | `https://google.com` | `https://site.com/?cid=em_765544332` | [!DNL Email] |
 | 6 | `https://google.com` |  | [!DNL Natural Search] |
@@ -342,7 +338,7 @@ ht-degree: 9%
 | [!DNL search p13n_no] | [!DNL search] |
 | [!DNL search p13n_yes] | [!DNL search] |
 | [!DNL search refine p13n_no] | [!DNL search] |
-| [!DNL search refine p13n_yes ] | [!DNL search] |
+| [!DNL search refine p13n_yes] | [!DNL search] |
 | [!DNL search redirect p13n_yes] | [!DNL search] |
 | [!DNL search-redirect] | [!DNL search] |
 
@@ -764,5 +760,5 @@ CJA使用以下默认容器模型：
 
 以下限制通常适用于派生字段功能：
 
-- 在为派生字段定义规则时，最多可以使用100个不同的架构字段（不包括标准字段）。
+- 在为派生字段定义规则时，最多可以使用10个不同的架构字段（不包括标准字段）。
 - 每个CJA连接最多可以有100个派生字段。
