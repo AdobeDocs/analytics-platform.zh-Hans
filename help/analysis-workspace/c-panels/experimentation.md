@@ -3,10 +3,10 @@ description: 了解如何在 CJA 试验面板中分析 A/B 测试结果。
 title: 试验性面板
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: f95693c35f5baa569bde79150c24ef752824b592
+source-git-commit: f77ee391c0915f5e71ffc592c49a0b1d9f86f521
 workflow-type: tm+mt
 source-wordcount: '1855'
-ht-degree: 66%
+ht-degree: 67%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 66%
 
 >[!IMPORTANT]
 >
->此时， [适用于Target的Adobe Analytics|https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en] (A4T)数据 *无法* 在“试验”面板中分析。
+>此时， [Adobe Analytics目标版](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=zh-Hans) (A4T)数据 *无法* 在“试验”面板中分析。
 
 ## 访问控制 {#access}
 
