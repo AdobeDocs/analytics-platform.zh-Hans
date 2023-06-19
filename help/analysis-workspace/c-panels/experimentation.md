@@ -3,10 +3,10 @@ description: 了解如何在 CJA 试验面板中分析 A/B 测试结果。
 title: 试验性面板
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: a18233ecaa14931af0d97b041cfe5dd20b3f653d
+source-git-commit: f95693c35f5baa569bde79150c24ef752824b592
 workflow-type: tm+mt
-source-wordcount: '1861'
-ht-degree: 73%
+source-wordcount: '1855'
+ht-degree: 66%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 73%
 
 >[!IMPORTANT]
 >
->如今，通过分析源连接器引入 Adobe Experience Platform 的 [Adobe Analytics for Target ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html)(A4T) 数据&#x200B;**无法**&#x200B;在[!UICONTROL 试验]面板中分析。我们期待能够在 2023 年解决这一问题。
+>此时， [适用于Target的Adobe Analytics|https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en] (A4T)数据 *无法* 在“试验”面板中分析。
 
 ## 访问控制 {#access}
 
@@ -28,7 +28,7 @@ ht-degree: 73%
 
 ## 步骤 1：创建与试验数据集的连接 {#connection}
 
-推荐的数据架构将试验数据放在一个[对象数组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=zh-Hans)中，该数组在两个单独的维度中包含试验数据和变体数据。 如果将试验数据放在单个维度中，其中在一个字符串中分隔试验数据和变体数据，则可在数据视图中使用[子字符串](/help/data-views/component-settings/substring.md)设置将这些数据一分为二以用于面板中。
+推荐的数据架构将试验数据放在一个[对象数组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=zh-Hans)中，该数组在两个单独的维度中包含试验数据和变体数据。 两个维度都必须位于 **单身** 对象数组。 如果将试验数据放在单个维度中，其中在一个字符串中分隔试验数据和变体数据，则可在数据视图中使用[子字符串](/help/data-views/component-settings/substring.md)设置将这些数据一分为二以用于面板中。
 
 在 Adobe Experience Platform [吸收](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans)您的试验数据后，[在 CJA ](/help/connections/create-connection.md)中创建与一个或多个试验数据集的连接。
 
@@ -86,9 +86,9 @@ ht-degree: 73%
 
 ## 第 5 步：诠释结果 {#interpret}
 
-1. **试验具有结论性**：每次查看试验报告时，Adobe 都分析到目前为止已在试验中积累的数据，并将在&#x200B;*至少一个*&#x200B;变体的任意时间有效置信度超过 95% 这一阈值时宣称某个试验具有“结论性”（当有两臂以上时，将应用邦费罗尼校正以针对多重假设检验进行校正）。
+1. **试验已有定论**：每次查看试验报告时，Adobe都会分析到目前为止在试验中积累的数据，并将在随时有效置信度超过95%的阈值时宣布试验具有“结论性”。 *至少一个* （当双臂超过时，应用Benjamini-Hochberg校正，以校正多重假设检验）。
 
-2. **最佳性能变量**：当一项试验被宣布为具有结论性时，具有最高转化率的变量会被标记为“最佳性能变量”。请注意，该变量必须是对照变量或基准变量，或者是超过 95% 随时有效置信阈值的变量之一（应用 Bonferonni 校正）。
+2. **最佳性能变量**：当一项试验被宣布为具有结论性时，具有最高转化率的变量会被标记为“最佳性能变量”。请注意，此变量必须是对照变量或基线变量，或者是超过95%随时有效置信阈值的变量之一（应用Benjamini-Hochberg校正）。
 
 3. **转换率**：显示的转换率是成功量度值与标准化量度值的比率。注意，如果量度不是二进制的（实验中的每个单位为 1 或 0），这有时可能大于 1
 
