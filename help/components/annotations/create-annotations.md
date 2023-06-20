@@ -4,10 +4,10 @@ description: 如何在工作区中创建注释。
 role: User, Admin
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 80%
+source-wordcount: '699'
+ht-degree: 76%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 80%
 | **右键单击[!UICONTROL 折线]图上的某个点。** | 随后将打开[!UICONTROL 注释生成器]。请注意，默认情况下，以这种方式创建的注释仅在创建它们的项目中可见。但是您可以使它们可用于所有项目。另请注意，已填充日期和任何指标等。<p>![](assets/annotate-line.png) |
 | **在工作区中，转到[!UICONTROL 组件] > [!UICONTROL 创建注释]。** | 随后将打开[!UICONTROL 注释生成器]。 |
 | **使用此热键**&#x200B;打开注释生成器：(PC) `ctrl` `shift` + o、(Mac) `shift` + `command` + o | 请注意，使用热键创建注释，您只是为当前日期创建单日注释，并无任何预先选择的范围（指标或维度）。 |
-| **使用 [CJA 注释 API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | CJA 注释 API 允许您通过 Adobe Developer 以编程方式创建、更新或检索注释。 这些 API 使用的数据和方法与 Adobe 在产品 UI 中使用的相同。 |
+| **使用 [Customer Journey Analytics批注API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | Customer Journey Analytics注释API允许您通过Adobe Developer以编程方式创建、更新或检索注释。 这些 API 使用的数据和方法与 Adobe 在产品 UI 中使用的相同。 |
 
 1. 填写[!UICONTROL 注释生成器]的各个元素。
 

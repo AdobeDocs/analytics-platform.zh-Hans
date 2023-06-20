@@ -5,10 +5,10 @@ title: 计划项目
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: ebdbfcb4a512c8810364693fc3c2504f958bc986
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 91%
+source-wordcount: '912'
+ht-degree: 89%
 
 ---
 
@@ -83,7 +83,7 @@ ht-degree: 91%
 
 >[!NOTE]
 >
->密码保护计划项目的选项仅显示给购买了 [Healthcare Shield](https://business.adobe.com/solutions/experience-cloud-for-healthcare.html) 附加产品的 CJA 客户。
+>密码保护计划项目的选项仅对已购买的Customer Journey Analytics客户显示 [Health Shield](https://business.adobe.com/solutions/experience-cloud-for-healthcare.html) 附加产品。
 
 Adobe 使用密码来加密计划项目，无论它们是以 .pdf 还是 .csv 格式发送。
 

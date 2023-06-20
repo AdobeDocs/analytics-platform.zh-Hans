@@ -1,13 +1,13 @@
 ---
 title: Customer Journey Analytics 中有哪些组件？
-description: 了解 CJA 提供了哪些组件，以及如何在报告中使用它们。
+description: 了解Customer Journey Analytics提供了哪些组件，以及如何在报表中使用它们。
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: e8778520581ea6d1cf59285bc8a6c178904d44e2
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 57%
+source-wordcount: '1037'
+ht-degree: 87%
 
 ---
 
@@ -58,24 +58,24 @@ Analysis Workspace 中的组件包括量度、维度、区段和时间粒度，�
 
 ## 管理组件 {#actions}
 
-您可以直接在左边栏中管理组件。
+您可以直接在左侧边栏中管理组件。
 
-1. 右键单击组件。
+1. 右键单击一个组件。
 
    或
 
-   选择一个组件，然后选择 **操作** 组件列表顶部的（3点）图标。
+   选择一个组件，然后选择组件列表顶部的&#x200B;**操作**（3 点）图标。
 
    >[!TIP]
    >
-   >   按住Shift键或按住Command键(在Mac上)或Ctrl键（在Windows上）可选取多个元件。
+   >   通过按住 Shift 或按住 Command (Mac) 或 Ctrl (Windows) 可选择多个组件。
 
 
    ![](assets/component-actions.png)
 
    | 组件操作 | 描述 |
    |--- |--- |
-   | [!UICONTROL **标记**] | 通过对组件应用标记来组织或管理组件。然后，您可以通过单击过滤器或者键入 # 在左边栏中按标记搜索。标记在组件管理器中也可用作过滤器。 |
+   | [!UICONTROL **标记**] | 通过将标记应用于组件而组织或管理组件。然后，您可以通过单击过滤器或者键入 # 在左边栏中按标记搜索。标记在组件管理器中也可用作过滤器。 |
    | [!UICONTROL **收藏**] | 将组件添加到您的收藏夹列表中。与标记相似，您可在左边栏中按“收藏”进行搜索，然后在组件管理器中对其进行过滤。 |
    | [!UICONTROL **批准**] | 将组件标记为“已批准”可告知用户该组件得到了组织的批准。与标记相似，您可在左边栏中按“已批准”进行搜索，然后在组件管理器中对其进行过滤。 |
    | [!UICONTROL **共享**] | 将组件与组织中的用户共享。此选项仅适用于自定义组件，例如过滤器或计算量度。 |
@@ -83,54 +83,54 @@ Analysis Workspace 中的组件包括量度、维度、区段和时间粒度，�
 
 自定义组件也可通过其相应的组件管理器进行管理。例如， [管理过滤器](/help/components/filters/manage-filters.md).
 
-## 搜索、筛选和排序组件列表
+## 搜索、筛选并对组件列表进行排序
 
-您可以在Analysis Workspace的左边栏中搜索、筛选和排序组件列表，以快速找到特定组件。
+您可以在 Analysis Workspace 的左侧边栏中对组件列表进行搜索、筛选和排序，以快速找到特定组件。
 
 ### 搜索组件列表
 
-1. 选择 **组件** 图标 ![“组件”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) 在左边栏中。
+1. 在左侧边栏中选择&#x200B;**组件**&#x200B;图标 ![组件图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg)。
 
-2. 在搜索字段中，开始键入要在项目中使用的组件的名称。
+2. 在搜索字段中，开始键入要在项目中使用的组件名称。
 
-   组件的类型可通过颜色和图标来标识。 **Dimension** ![Dimension图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) 是橙色的， **筛选器** ![过滤器图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) 是蓝色的， **日期范围** ![日期范围图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) 是紫色的，而且 **量度** ![“量度”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) 绿色。 Adobe图标 ![Adobe图标](assets/default-calc-metric-icon.png) 指示计算指标模板或过滤器模板以及计算器图标 ![计算器图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) 指示由贵组织中的Analytics管理员创建的计算指标。
+   组件的类型可以通过颜色和图标来识别。**Dimension** ![Dimension图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) 是橙色的， **筛选器** ![过滤器图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) 是蓝色的， **日期范围** ![日期范围图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) 是紫色的，而且 **量度** ![“量度”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) 绿色。 Adobe图标 ![Adobe图标](assets/default-calc-metric-icon.png) 指示计算指标模板或过滤器模板以及计算器图标 ![计算器图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) 指示由贵组织中的Analytics管理员创建的计算指标。
 
-3. 当组件出现在下拉列表中时，选择该组件。
+3. 当组件出现在下拉列表中时选中它。
 
-### 筛选组件列表
+### 过滤组件列表
 
-1. 选择 **组件** 图标 ![“组件”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) 在左边栏中。
+1. 在左侧边栏中选择&#x200B;**组件**&#x200B;图标 ![组件图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg)。
 
 2. 选择 **筛选条件** 图标 ![“数据字典过滤器”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg))。
 
    或
 
-   在搜索字段中键入井号(#)。
+   在搜索字段中键入井号 (#)。
 
-3. 选择以下任何筛选器选项以筛选组件列表：
+3. 选择以下任一筛选条件选项以过滤组件列表：
 
    | 选项 | 函数 |
    |---------|----------|
    | [!UICONTROL **已批准**] | 仅显示标记为由管理员批准的组件。 |
    | [!UICONTROL **收藏夹**] | 仅显示收藏夹列表中的组件。有关将组件添加到收藏夹列表的信息，请参阅 [管理组件](#manage-components). |
    | [!UICONTROL **维度**] | 仅显示维度的组件。 |
-   | [!UICONTROL **量度**] | 仅显示量度的组件。 |
+   | [!UICONTROL **指标**] | 仅显示指标的组件。 |
    | [!UICONTROL **筛选器**] | 仅显示属于筛选器的组件。 |
    | [!UICONTROL **日期范围**] | 仅显示日期范围的组件。 |
    | [!UICONTROL **显示所有**] | 显示所有组件。仅管理员有此选项可用。 |
    | [!UICONTROL **未批准**] | 仅显示未标记为由管理员批准的组件。作为管理员，这有助于确定需要您审阅和批准的组件。仅管理员有此选项可用。 |
 
-4. （可选）要进一步修饰列表，可以对组件列表进行排序，如中所述 [对组件列表进行排序](#sort-the-component-list).
+4. （可选）要进一步细化列表，您可以对组件列表进行排序，如[对组件列表进行排序](#sort-the-component-list)中所述。
 
 ### 对组件列表进行排序
 
 {{release-limited-testing-section}}
 
-1. （可选）将任意过滤器应用于组件列表，如中所述 [筛选组件列表](#filter-the-component-list).
+1. （可选）对组件列表应用任何筛选条件，如[筛选组件列表](#filter-the-component-list)中所述。
 
-2. 选择 **组件** 图标 ![“组件”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) 在左边栏中。
+2. 在左侧边栏中选择&#x200B;**组件**&#x200B;图标 ![组件图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg)。
 
-3. 选择 **排序** 图标 ![“对组件排序”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg)，然后选择以下任意过滤器选项对组件列表进行排序：
+3. 选择&#x200B;**排序**&#x200B;图标 ![为组件排序图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg)，然后选择以下任一过滤器选项对组件列表进行排序：
 
    {{components-sort-options}}
 

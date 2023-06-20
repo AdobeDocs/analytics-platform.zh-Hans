@@ -4,10 +4,10 @@ description: 使用字符串的子集作为维度项。
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: 20135c39341eebbf680783ad0e71bf6c62e5377b
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 95%
+source-wordcount: '905'
+ht-degree: 94%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 95%
 * **[!UICONTROL 输出格式]**：一个可选字段，允许您添加文本或对正则表达式子组输出内容重新排序。 如果此字段为空，则字符串输出是经过计算的正则表达式。
 * **[!UICONTROL 区分大小写]**：如果启用，强制正则表达式区分大小写的复选框。
 
-CJA 使用 Perl 正则表达式语法的子集。 如果输入内容与正则表达式不匹配，并且 **[!UICONTROL 输出格式]** 为空，则应用[无值选项](no-value-options.md)。 支持以下表达式：
+Customer Journey Analytics使用Perl正则表达式语法的子集。 如果输入内容与正则表达式不匹配，并且 **[!UICONTROL 输出格式]** 为空，则应用[无值选项](no-value-options.md)。 支持以下表达式：
 
 | 表达式 | 描述 |
 | --- | --- |

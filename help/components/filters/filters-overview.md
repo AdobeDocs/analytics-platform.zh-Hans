@@ -2,9 +2,9 @@
 title: 过滤器概述
 description: 了解过滤器的用途以及如何创建简单的过滤器。
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: 4e2d4d8c4f8145ae691114d57d663af96240b5f5
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '967'
 ht-degree: 34%
 
 ---
@@ -112,7 +112,7 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 
 ## 现成的过滤器模板 {#template}
 
-传统Analytics提供大量现成的模板过滤器（过滤器）和计算量度。 其中许多在CJA中不适用，或者必须重命名或重新创建。 其他依赖于CJA中上下文感知变量的解决方案。
+传统Analytics提供大量现成的模板过滤器（过滤器）和计算量度。 其中许多不适用于Customer Journey Analytics，或者必须重命名或重新创建。 其他变量则依赖于Customer Journey Analytics中的上下文感知变量的解决方案。
 
 | 过滤器名称 | 描述 |
 | --- | --- |

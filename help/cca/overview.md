@@ -4,10 +4,10 @@ description: 在多个数据集中重新生成人员ID的键值，以将人员�
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 95%
+source-wordcount: '1166'
+ht-degree: 89%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 95%
 在使用跨渠道分析之前，请确保贵组织已做好以下准备：
 
 * Adobe Experience Platform中的一个数据集必须具有两个帮助识别人员的列：
-   * **持久 ID**，即每行都存在的标识符。例如，由Adobe Analytics AppMeasurement库生成的人员ID。
+   * **持久 ID**，即每行都存在的标识符。例如，由Adobe AnalyticsAppMeasurement库生成的人员ID。
    * **临时 ID**，即仅在部分行存在的标识符。例如，经过身份验证的用户名或电子邮件地址。 实际上，您可以使用任何想要使用的标识符，但前提是该标识符与给定的永久 ID 至少有一次存在于同一事件。
 * 还要具有每行都包含临时 ID 的另外一个数据集，如呼叫中心数据。此人员 ID 必须与另一个数据集中的临时 ID 采用相似的格式。
 * 此功能允许您同时拼接包含经过身份验证的用户数据和未经身份验证的用户数据的数据集。在合并数据集之前，请确保遵守任何适用的法律和法规，包括获取必要的最终用户权限。
@@ -62,7 +62,7 @@ ht-degree: 95%
 
 ## 启用跨渠道分析
 
-如果贵组织满足所有前提条件并已了解跨渠道分析存在的限制，便可按照以下步骤在 CJA 中开始使用该功能。
+贵组织在满足所有先决条件并了解相关限制后，便可以按照以下步骤开始在Customer Journey Analytics中使用它。
 
 1. 将所需数据导入 Adobe Experience Platform。有关 Adobe Analytics 数据，请查阅[在 Customer Journey Analytics 中使用 Adobe Analytics 报告包](/help/getting-started/aa-vs-cja/aa-data-in-cja.md)。有关其他类型的数据，请参阅 Adobe Experience Platform 文档中的[创建模式](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans)和[摄取数据](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans)。
 1. 请联系 Adobe 客户支持并提供以下信息：
@@ -74,9 +74,9 @@ ht-degree: 95%
    * 沙盒名称。
 1. Adobe 客户支持将与 Adobe 工程部门合作，在收到您的请求时启用跨渠道分析。一旦启用，Adobe Experience Platform 中就会出现一个更新了密钥的新数据集，其中包含新的人员 ID 列。Adobe 客户支持可以提供新的数据集 ID 和人员 ID 列名。
 1. 首次开启后，Adobe 将提供拼接数据的回填，最远可追溯到上月初（最多 60 天）。为进行此回填，当时的非拼接数据中必须存在临时 ID。
-1. 在 CJA 中使用新生成的数据集以及任何其他要包含的数据集[创建连接](/help/connections/create-connection.md)。为每个数据集选择正确的人员 ID。
+1. [创建连接](/help/connections/create-connection.md) 使用新生成的数据集和任何其他要包含的数据集进行Customer Journey Analytics。 为每个数据集选择正确的人员 ID。
 1. 根据连接[创建数据视图](/help/data-views/create-dataview.md)。
 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
-数据视图设置完成后，将在 CJA 中进行分析，此分析与 CJA 中的其他分析基本一样，只是现在的数据操作是跨渠道和跨设备进行的。
+设置数据视图后，Customer Journey Analytics中的分析就与Customer Journey Analytics中的其他分析一样，只是现在的数据操作是跨渠道和跨设备的。

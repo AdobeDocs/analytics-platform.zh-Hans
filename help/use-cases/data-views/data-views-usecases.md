@@ -4,10 +4,10 @@ description: 显示 Customer Journey Analytics 中数据视图的灵活性和强
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 0fdf95906e17b9e90fa6ba652aa8e53f695279a4
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1313'
-ht-degree: 97%
+source-wordcount: '1317'
+ht-degree: 95%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 97%
 
 ## 2. 使用整数作为维度 {#integers}
 
-以前，整数会被自动视为 CJA 中的量度。现在，数字（包括 Adobe Analytics 中的自定义事件）可被视为维度。示例如下：
+以前，整数会自动被视为Customer Journey Analytics中的量度。 现在，数字（包括 Adobe Analytics 中的自定义事件）可被视为维度。示例如下：
 
 1. 将 [!UICONTROL call_length_min] 整数拖入[!UICONTROL 包含的组件]下的[!UICONTROL 维度]部分中：
 
@@ -117,7 +117,7 @@ f. 指定“50”为值。
 
 ## 8. 使用日期和日期时间功能 {#date}
 
-Adobe Experience Platform 中的架构包含[!UICONTROL 日期]和[!UICONTROL 日期时间]字段。 CJA 数据视图现在支持这些字段。 将这些字段作为维度拖动到数据视图中时，可以指定其[格式](/help/data-views/component-settings/format.md)。 此格式设置确定字段在报告中的显示方式。 例如：
+Adobe Experience Platform 中的架构包含[!UICONTROL 日期]和[!UICONTROL 日期时间]字段。 Customer Journey Analytics数据视图现在支持这些字段。 将这些字段作为维度拖动到数据视图中时，可以指定其[格式](/help/data-views/component-settings/format.md)。 此格式设置确定字段在报告中的显示方式。 例如：
 
 * 对于日期格式，如果您选择&#x200B;**[!UICONTROL 天]**&#x200B;格式为&#x200B;**[!UICONTROL 月、日、年]**，则报告中的示例输出可能如下所示：2022 年 8 月 23 日。
 

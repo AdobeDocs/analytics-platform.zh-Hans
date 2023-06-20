@@ -4,24 +4,24 @@ description: 展示了两种估算使用情况的方法和一种管理使用情�
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 94%
+source-wordcount: '895'
+ht-degree: 72%
 
 ---
 
 # 查看和管理您的 Customer Journey Analytics 使用情况
 
-要查看您的 CJA 使用情况，您可以使用以下几种方法：
+要查看您的Customer Journey Analytics使用情况，您可以使用多种方法：
 
 * 为每个连接添加事件数据行。请参阅下面的 [估计连接大小]（#estimate size）。这是查看特定时间戳的每个连接的事件行数据的简单方法。
 * 通过三种方式查看您的使用情况，下面对每种方式进行了更详细的描述：
    * 使用 Analysis Workspace 报告的上个月的事件。
    * 使用 Report Builder 报告的上个月的事件。
-   * 使用 CJA API 创建自动报告。
+   * 使用Customer Journey AnalyticsAPI创建自动报表。
 
-要管理您的 CJA 使用情况：
+要管理Customer Journey Analytics使用情况，请执行以下操作：
 
 * 定义滚动数据窗口。
 
@@ -55,7 +55,7 @@ ht-degree: 94%
 
    * 更改[数据保留设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans#set-rolling-window-for-connection-data-retention)。
    * [删除任何未使用的连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans#implications-of-deleting-data-components)。
-   * [在 AEP 中删除数据集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans#implications-of-deleting-data-components)。
+   * [删除Adobe Experience Platform中的数据集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans#implications-of-deleting-data-components).
    * 请联系您的Adobe客户团队以许可额外容量。
 
 ## 使用所有事件数据创建工作区项目 {#workspace-event-data}
@@ -68,7 +68,7 @@ ht-degree: 94%
 >
 >    不要创建包含所有数据的新连接只是为了测量使用情况，因为这实际上会使您的使用量翻倍。
 
-1. 在工作区中，根据每个数据视图创建新项目并提取所有事件(从 **[!UICONTROL 量度]** 下拉列表)，从当前CJA合同的第一天开始，到当月的第一个星期五。
+1. 在工作区中，根据每个数据视图创建新项目并拉入所有事件(从 **[!UICONTROL 量度]** 下拉列表)，从当前Customer Journey Analytics合同的第一天开始，开始每月第一个星期五。
 
    ![事件](./assets/events-usage.png)
 
@@ -80,24 +80,24 @@ ht-degree: 94%
 
 在 Report Builder 中，[为每个数据视图创建一个数据块](/help/report-builder/create-a-data-block.md)，然后将它们相加。
 
-## 在 CJA API 中创建自动报告。 {#api-report}
+## 在Customer Journey AnalyticsAPI中创建自动报表 {#api-report}
 
-1. 使用 [CJA 报告 API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) 运行关于所有事件数据的报告，**针对每个连接**。设置它以便报告运行
+1. 使用 [Customer Journey Analytics报表API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) 要对您的所有事件数据运行报告， **每个连接**. 设置它以便报告运行
 
    * 每个月的第一个星期五。
-   * 回到您当前 CJA 合同的第一天。
+   * 回到您当前Customer Journey Analytics合同的第一天。
 
-   这将使您很好地了解每月的使用趋势。它将为您提供所有 CJA 连接上的总行数。
+   这将使您很好地了解每月的使用趋势。它会为您提供所有Customer Journey Analytics连接上的总行数。
 
 1. 使用 Excel 进一步自定义此报告。
 
 ## 通过定义滚动数据窗口来管理您的使用情况 {#rolling}
 
-为了管理使用情况，[连接 UI](/help/connections/create-connection.md) 允许您在连接级别将 CJA 数据保留定义为以月为单位（1 个月、3 个月、6 个月等）的滚动窗口。
+要管理您的使用情况，请 [连接用户界面](/help/connections/create-connection.md) 允许您在连接级别将Customer Journey Analytics数据保留定义为以月计的滚动时段（1个月、3个月、6个月等）。
 
 主要好处是，您只需存储或报告适用且有用的数据，并且可删除不再有用的旧数据。它可以帮助您保持在合同限制范围内，并减少超出预期成本的风险。
 
-如果您保留默认值（未选中），则保留期将被 Adobe Experience Platform 数据保留设置所取代。如果您在 Experience Platform 中有 25 个月的数据，那么 CJA 将通过回填获取 25 个月的数据。如果您在 Platform 中删除了其中的 10 个月，则 CJA 将保留剩余的 15 个月。
+如果您保留默认值（未选中），则保留期将被 Adobe Experience Platform 数据保留设置所取代。如果您具有25个月的数据Experience Platform，则Customer Journey Analytics将通过回填获取25个月的数据。 如果您在Platform中删除了其中的10个月，则Customer Journey Analytics将保留剩余的15个月。
 
-数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此配置文件或查找数据集不存在滚动数据窗口设置。如果您的连接包括任何配置文件或查找数据集，由于它们与事件数据集连接，因此根据您针对事件数据集时间戳的数据保留设置，在 CJA 中保留这些数据。
+数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此配置文件或查找数据集不存在滚动数据窗口设置。如果您的连接包括任何配置文件或查找数据集，则由于它们与事件数据集相连，因此会根据事件数据集时间戳上的数据保留设置将数据保留在Customer Journey Analytics中。
 

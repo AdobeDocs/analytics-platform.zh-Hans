@@ -4,10 +4,10 @@ description: 决定维度值如何或是否从一个事件保持到下一个事�
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 20135c39341eebbf680783ad0e71bf6c62e5377b
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 91%
+source-wordcount: '810'
+ht-degree: 86%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 91%
 
 一个下拉列表，用于将维度值的持久性绑定到另一个维度中的维度值。 有效选项包括数据视图中包含的其他维度。
 
-有关如何有效使用绑定维度的示例，请参见 CJA 中的 [使用绑定维度和量度](../../use-cases/data-views/binding-dimensions-metrics.md)。
+参见 [在Customer Journey Analytics中使用绑定维度和量度](../../use-cases/data-views/binding-dimensions-metrics.md) 有关如何有效使用绑定维度的示例。
 
 >[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
 
@@ -88,4 +88,4 @@ ht-degree: 91%
 
 此设置仅在对象数组中的绑定维度低于组件时显示。当绑定量度显示在事件中时，维度值会从事件级别维度向下复制到绑定维度的较低架构级别。
 
-有关如何有效使用绑定量度的更多信息，请参阅 CJA 中 [使用绑定维度和量度下的第二个示例](../../use-cases/data-views/binding-dimensions-metrics.md)。
+请参阅下面的第二个示例 [在Customer Journey Analytics中使用绑定维度和量度](../../use-cases/data-views/binding-dimensions-metrics.md) 有关如何有效使用绑定量度的更多信息。

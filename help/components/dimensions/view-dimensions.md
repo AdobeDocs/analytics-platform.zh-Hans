@@ -1,12 +1,12 @@
 ---
 description: 对于非时间维度显示前 5 个值（对于时间维度显示前 15 个值）。
-title: 如何在 CJA Workspace 中预览维度
+title: 如何在Customer Journey Analytics工作区中预览维度
 feature: Dimensions
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 95%
 
 ---
 

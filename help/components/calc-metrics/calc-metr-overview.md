@@ -3,10 +3,10 @@ title: 计算量度概述
 description: 了解报告运行时派生的已过滤量度。
 feature: Calculated Metrics
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 92%
+source-wordcount: '461'
+ht-degree: 90%
 
 ---
 
@@ -40,9 +40,9 @@ ht-degree: 92%
 |--- |--- |
 | 计算指标生成器 | <ul><li>使用高级分配模型创建计算量度和高级计算量度。</li><li>将内联筛选器添加到量度公式中。</li><li>比较同一报表中的筛选器。例如，比较本地人员与国际人员。</li><li>使用统计函数。</li><li> 提供详细的指标描述（显示其用途，以及何处可以使用，何处不可以使用）。</li><li>将定义复制到新指标中。</li><li>提供内联指标预览。</li><li>设置指标极性，以指示当给定的自定义事件（指标）上升时是有利还是不利。</li><li>标记指标。</li></ul> |
 | 计算指标管理器 | <ul><li>与他人共享指标。</li><li>批准和管理指标。</li><li>组织（标记）指标，以方便用户查找。</li><li>删除指标。</li><li>重命名指标。</li></ul> |
-| 适用于计算量度的 API | CJA API 集的一部分。 |
+| 适用于计算量度的 API | Customer Journey AnalyticsAPI集的一部分。 |
 
-## CJA 中的计算量度模板
+## Customer Journey Analytics中的计算量度模板
 
 | 计算量度名称 | 计算量度描述 |
 | --- | --- |

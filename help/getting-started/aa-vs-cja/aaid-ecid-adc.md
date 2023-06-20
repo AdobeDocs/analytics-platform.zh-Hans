@@ -2,10 +2,10 @@
 title: AAID、ECID、AACUSTOMID 和 Analytics Source Connector
 description: 了解 Analytics Source Connector 如何处理 Adobe Analytics 标识字段。
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 97%
+source-wordcount: '571'
+ht-degree: 91%
 
 ---
 
@@ -17,7 +17,7 @@ Adobe Analytics 数据包含多个标识字段。[Analytics Source Connector](ht
 
 Adobe Analytics ID (AAID) 是 Adobe Analytics 中的主要设备标识符，并且必定存在于通过 Analytics Source Connector 传递的每个事件中。AAID 有时称作“旧版 Analytics ID”或 `s_vi` Cookie Id。不过，即使 `s_vi` Cookie不存在，也会创建 AAID。在 [Adobe Analytics 数据馈送](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=zh-Hans#columns%2C-descriptions%2C-and-data-types)中，AAID 由 `post_visid_high/post_visid_low` 列表示。
 
-在 Analytics Source Connector 中，AAID 将转换为 `HEX(post_visid_high) + "-" + HEX(post_visid_low)`。给定事件的 AAID 字段包含单个标识，它可能是 [Analytics ID 操作顺序](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html?lang=zh-Hans%5B%5D)中所述的几种不同类型之一。（在整个报告包中，AAID 可能包含各种事件的类型组合。每個事件的型別都指示在 `post_visid_type` 欄)。 另请参阅：[数据列引用](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=zh-Hans)。
+在 Analytics Source Connector 中，AAID 将转换为 `HEX(post_visid_high) + "-" + HEX(post_visid_low)`。给定事件的 AAID 字段包含单个标识，它可能是 [Analytics ID 操作顺序](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html?lang=zh-Hans%5B%5D)中所述的几种不同类型之一。（在整个报告包中，AAID 可能包含各种事件的类型组合。每个事件的类型均指示在 `post_visid_type` 列。) 另请参阅：[数据列引用](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=zh-Hans)。
 
 ## ECID
 
@@ -50,6 +50,6 @@ Analytics Source Connector 将这些标识以 XDM 形式传递到 Adobe Experien
 * 如果存在 ECID，则会将它标记为事件的主标识。请注意，在此情况下，AAID 可能基于 ECID，如上面的讨论中所述。否则，会将 AAID 标记为事件的主标识。
 * 绝不会将 AACUSTOMID 标记为事件的主 ID。不过，如果存在 AACUSTOMID，则 AAID 将基于 AACUSTOMID，如上面的讨论中所述。
 
-## CJA 和主 ID
+## Customer Journey Analytics和主ID
 
-就 CJA 而言，只有在您决定使用主 ID 作为人员 ID 时，主 ID 的定义才重要。但这样做并不是强制性的。您可以选择其他某个标识列作为人员 ID。
+就Customer Journey Analytics而言，只有在您决定使用主ID作为人员ID时，主ID的定义才重要。 但这样做并不是强制性的。您可以选择其他某个标识列作为人员 ID。

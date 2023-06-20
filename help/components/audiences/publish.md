@@ -2,18 +2,18 @@
 title: 创建受众并将受众发布到实时客户档案
 description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: a56cc7a0299aad98ff8af5e0d59df4679e0d2d25
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 90%
+source-wordcount: '1565'
+ht-degree: 63%
 
 ---
 
 # 创建并发布受众
 
-该主题讨论了如何在 Adobe Experience Platform 中创建并将在 Customer Journey Analytics (CJA) 中识别的受众发布到[实时客户个人资料](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans)，以实现客户定位和个性化。
+本主题讨论如何创建并发布Customer Journey Analytics中识别的受众到 [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans) 用于Adobe Experience Platform客户定位和个性化。
 
-阅读本[概述](/help/components/audiences/audiences-overview.md)，了解 CJA 受众的概念。
+阅读此 [概述](/help/components/audiences/audiences-overview.md) 熟悉Customer Journey Analytics受众的概念。
 
 ## 创建受众 {#create}
 
@@ -38,7 +38,7 @@ ht-degree: 90%
    | [!UICONTROL 名称] | 受众的名称。 |
    | [!UICONTROL 标记] | 出于组织目的而要分配给受众的任何标记。您可以使用预先存在的标记或输入新标记。 |
    | [!UICONTROL 描述] | 添加合适的受众描述以将受众与其他人区分开来。 |
-   | [!UICONTROL 刷新频率] | 您刷新受众所要采用的频率。<ul><li>您可以选择创建不需要刷新的一次性受众（默认）。例如，这可能有助于特定的一次性营销活动。</li><li>您可以选择其他刷新间隔。对于每 4 小时进行一次的频率，根据您的 CJA 权限，受众限制为 75 或 150 人。</li></ul> |
+   | [!UICONTROL 刷新频率] | 您刷新受众所要采用的频率。<ul><li>您可以选择创建不需要刷新的一次性受众（默认）。例如，这可能有助于特定的一次性营销活动。</li><li>您可以选择其他刷新间隔。对于4小时刷新频率，受众刷新限制为75到150次，具体取决于您的Customer Journey Analytics权限。</li></ul> |
    | 过期日期 | 当受众将停止刷新时。默认值为创建日期开始 1 年。对过期受众的处理方法与过期的计划报告类似——管理员在受众过期前一个月会收到一封电子邮件。 |
    | 刷新回顾时段 | 指定创建此受众时要在数据窗口中返回多远。最多为 90 天。 |
    | [!UICONTROL 一次性日期范围] | 您希望在其中发布一次性受众的日期范围。 |
@@ -74,38 +74,38 @@ ht-degree: 90%
 
 ## 创建受众后会发生什么? {#after-audience-created}
 
-在您创建受众后，Adobe 为每个新的 CJA 受众创建一个 Experience Platform 流式区段。只有您的组织设置了流式分段，才会创建 AEP 流式区段。
+创建受众后，Adobe会为每个新的Experience Platform受众创建一个Customer Journey Analytics流区段。 仅当您的组织设置为进行流式划分时，才会创建Adobe Experience Platform流式区段。
 
-* AEP 区段与 CJA 受众共用相同的名称/描述，但将在名称后附加 CJA 受众 ID 以确保其唯一。
-* 如果 CJA 受众名称/描述发生变化，则 AEP 区段名称/描述也将反映该变化。
-* 如果用户删除 CJA 受众，则并不删除 AEP 区段。原因是以后可能会取消删除 CJA 受众。
+* Adobe Experience Platform区段与Customer Journey Analytics受众共享相同的名称/描述，但该名称将附加有Customer Journey Analytics受众ID，以确保它是唯一的。
+* 如果Customer Journey Analytics受众名称/描述发生更改，则Adobe Experience Platform区段名称/描述也会反映该更改。
+* 如果用户删除了Customer Journey Analytics受众，则不会删除Adobe Experience Platform区段。 原因是Customer Journey Analytics受众可能稍后被取消删除。
 
 ## 延迟注意事项 {#latency}
 
 在受众发布之前、期间和之后的多个时间点，可能会发生延迟。 以下是对可能出现的延迟情况的概述。
 
-![从AEP到CJA的延迟](assets/latency-diagram.png)
+![从Adobe Experience Platform到Customer Journey Analytics的延迟](assets/latency-diagram.png)
 
 | # | 延迟点 | 延迟持续时间 |
 | --- | --- | --- |
 | 未显示 | Adobe Analytics到Analytics Source Connector (A4T) | 最多 30 分钟 |
 | 1 | 将数据摄取到数据湖（从Analytics Source Connector或其他源） | 最多 90 分钟 |
-| 2 | 从Experience Platform数据湖将数据摄取到CJA | 最多 90 分钟 |
+| 2 | 将数据从Experience Platform数据湖摄取到Customer Journey Analytics | 最多 90 分钟 |
 | 3 | 受众发布到实时客户配置文件，包括自动创建流式区段，并可让区段准备好接收数据。 | 约 60 分钟 |
 | 4 | 受众的刷新频率 | <ul><li>一次性刷新（延迟小于 5 分钟）</li><li>每 4 小时、每天、每周、每月刷新一次（延迟与刷新率密切相关） |
-| 5 | 在 AEP 中创建目标：激活新的区段 | 1-2 小时 |
+| 5 | 在Adobe Experience Platform中创建目标：激活新区段 | 1-2 小时 |
 
 {style="table-layout:auto"}
 
-## 在 Experience Platform 中使用 CJA 受众 {#audiences-aep}
+## 在Experience Platform中使用Customer Journey Analytics受众 {#audiences-aep}
 
-CJA 可以从您发布的受众中获取所有的命名空间和 ID 组合，并将其以流式传输到实时客户配置文件 (RTCP) 中。CJA 会将受众发送到 Experience Platform，并根据配置连接时选择的[!UICONTROL 人员 ID] 设置主要标识。
+Customer Journey Analytics会从已发布的受众中获取所有命名空间和ID组合，并将它们流式传输到实时客户个人资料(RTCP)中。 Customer Journey Analytics根据选定内容将受众发送到设置了主要身份的Experience Platform [!UICONTROL 人员ID] 配置连接时。
 
 然后，RTCP 会检查每个命名空间/ID 组合，并查找可能包含它的个人资料。个人资料其实就是由所链接的命名空间、ID 和设备组成的集群。如果它找到一份相关的个人资料，则会将命名空间和 ID 作为区段会员资格属性添加到此个人资料中的其他 ID。例如，现在”user@adobe.com“可以成为所有设备和渠道的目标。如果未找到相关的个人资料，则会创建一份新的个人资料。
 
-通过转到&#x200B;**[!UICONTROL 区段]** > **[!UICONTROL 创建区段]** > **[!UICONTROL 受众]**&#x200B;选项卡 > **[!UICONTROL CJA 受众]**，您可以在 Platform 中查看 CJA 受众。
+Customer Journey Analytics您可以在Platform中通过转到 **[!UICONTROL 区段]** > **[!UICONTROL 创建区段]** > **[!UICONTROL 受众]** 选项卡> **[!UICONTROL cja受众]**.
 
-您可以将 CJA 受众拖到 AEP 区段的区段定义中。
+您可以将Customer Journey Analytics受众拖到Adobe Experience Platform区段的区段定义中。
 
 ![](assets/audiences-aep.png)
 
@@ -113,15 +113,15 @@ CJA 可以从您发布的受众中获取所有的命名空间和 ID 组合，并
 
 关于受众发布的常见问题。
 
-+++**如果用户不再是 CJA 中的受众，会发生什么？**
++++**如果用户不再是Customer Journey Analytics中的受众成员，会发生什么情况？**
 
-在这种情况下，系统会从 CJA 将退出事件发送给 Experience Platform。
+在这种情况下，会从Customer Journey Analytics向Experience Platform发送退出事件。
 
 +++
 
-+++**如果删除 CJA 中的受众会发生什么？**
++++**如果删除Customer Journey Analytics中的受众会发生什么情况？**
 
-删除 CJA 受众后，该受众将不再出现在 Experience Platform UI 中。 然而，在 Platform 中并没有删除和该受众相关联的个人资料。
+删除Customer Journey Analytics受众后，该受众将不再显示在Experience PlatformUI中。 然而，在 Platform 中并没有删除和该受众相关联的个人资料。
 
 +++
 
@@ -131,13 +131,13 @@ CJA 可以从您发布的受众中获取所有的命名空间和 ID 组合，并
 
 +++
 
-+++**CJA是将受众数据作为管道事件发送，还是作为也发送到数据湖的平面文件发送？**
++++**Customer Journey Analytics是以管道事件的形式还是以同样发送到数据湖的平面文件的形式发送受众数据？**
 
-CJA 通过管道将数据流式传输到 RTCP 中，这些数据也被收集到数据湖中的系统数据集中。
+Customer Journey Analytics通过管道将数据流式传输到RTCP中，并且这些数据还会收集到数据湖中的系统数据集中。
 
 +++
 
-+++**CJA 发送了哪些身份？**
++++**Customer Journey Analytics发送了哪些标识？**
 
 中指定的任何标识/命名空间对 [连接设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans#create-connection). 具体来说，用户选择要用作其“个人 ID”的字段时的步骤。
 
@@ -145,11 +145,11 @@ CJA 通过管道将数据流式传输到 RTCP 中，这些数据也被收集到�
 
 +++**选择什么 ID 作为主要标识？**
 
-请参阅上面的内容。每个 CJA“人”只发送一个身份。
+请参阅上面的内容。我们只为每个Customer Journey Analytics“人员”发送一个身份。
 
 +++
 
-+++**RTCP 是否也处理 CJA 消息？CJA 是否可以通过受众共享将身份添加到个人资料身份图中？**
++++**RTCP是否也处理Customer Journey Analytics消息？ Customer Journey Analytics是否可以通过受众共享将身份添加到配置文件身份图？**
 
 否。我们只为每个“人”发送一个标识，因此 RTCP 不会使用任何图边。
 

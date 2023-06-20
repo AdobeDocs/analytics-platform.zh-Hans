@@ -4,10 +4,10 @@ keywords: Analysis Workspace 共享
 title: 共享项目
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: cbd2d9b7143bb1cc3246330f656b911d7e362fe3
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1944'
-ht-degree: 47%
+source-wordcount: '1960'
+ht-degree: 46%
 
 ---
 
@@ -114,11 +114,11 @@ ht-degree: 47%
 
 >[!NOTE]
 >
->与无法访问CJA的人共享Analysis Workspace项目时，请考虑以下事项：
+>与无权访问Customer Journey Analytics的用户共享Analysis Workspace项目时，请考虑以下事项：
 >
->* CJA管理员可以禁用通过此方式共享项目的功能，如中所述 [首选项](/help/analysis-workspace/user-preferences.md). 如果您无法按本节所述共享项目，则CJA管理员已禁用此功能。
+>* Customer Journey Analytics管理员可以禁用通过此方式共享项目的功能，如中所述 [首选项](/help/analysis-workspace/user-preferences.md). 如果您无法按本节所述共享项目，则Customer Journey Analytics管理员已禁用此功能。
 >
->* 具有50多个扩展可视化图表的项目无法与无法访问CJA的人共享。
+>* 具有50个以上扩展可视化图表的项目无法与无权访问Customer Journey Analytics的用户共享。
 >
 >* 与您共享的用户可以查看以下期间应用于项目的任何过滤器： [策划](curate.md).
 > 
@@ -148,17 +148,17 @@ ht-degree: 47%
 
    项目所有者也是此链接的所有者。 仅在转移项目所有权时，才能将链接所有权转移给另一个用户，如中所述 [转移用户资产或设置帐户有效期](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=en) 在Analytics管理指南中。
 
-1. 选择是否启用以下安全选项（此选项可由您的CJA管理员控制）：
+1. 选择是否启用以下安全选项(此选项可由您的Customer Journey Analytics管理员控制)：
 
    * **[!UICONTROL 需要 Experience Cloud 身份验证]:**
 
      启用此选项后，只有那些能够访问项目的用户才能登录到创建您共享的项目的Adobe Experience Cloud组织。 但是，与您共享的用户不需要具有访问Adobe Analytics的权限。
 
-     CJA管理员可以为公司配置此首选项，如中所述 [首选项](/help/analysis-workspace/user-preferences.md). 您可能会遇到以下情况，具体取决于管理员如何配置此选项：
+     Customer Journey Analytics管理员可以为公司配置此首选项，如中所述 [首选项](/help/analysis-workspace/user-preferences.md). 您可能会遇到以下情况，具体取决于管理员如何配置此选项：
 
-      * 如果此选项不可见，则CJA管理员未启用此功能。
+      * 如果此选项不可见，则表示您的Customer Journey Analytics管理员未启用此功能。
 
-      * 如果启用了此选项，但无法禁用它，则意味着您的CJA管理员要求对访问Analysis Workspace项目的任何人进行Experience Cloud身份验证。 对于获得Healthcare Shield许可证的组织来说，情况始终如此。
+      * 如果启用了此选项，但无法禁用它，则意味着您的Customer Journey Analytics管理员要求对访问Analysis Workspace项目的任何人进行Experience Cloud身份验证。 对于获得Healthcare Shield许可证的组织来说，情况始终如此。
 
 1. 在 **[!UICONTROL 与任何人共享（无需登录）]** 字段中，单击 **复制链接** 图标 ![复制链接图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg))以将链接复制到系统剪贴板。
 

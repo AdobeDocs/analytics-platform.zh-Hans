@@ -4,10 +4,10 @@ title: 数据词典概述
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
-source-git-commit: 9f1a96308fce7fb827cba43833df96098f05ef93
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 81%
+source-wordcount: '536'
+ht-degree: 80%
 
 ---
 
@@ -47,11 +47,11 @@ Analytics 管理员负责整理有关数据词典中每个组件的信息，并�
 
 * 确定尚未批准的组件。
 
-* 直接在 Analysis Workspace 中更新组件描述。数据字典中对组件描述所做的任何更新都会反映在数据视图中。
+* 直接在 Analysis Workspace 中更新组件描述。对数据字典中的组件描述所做的任何更新都会反映在数据视图中。
 
-   同样，对数据视图中的组件描述所做的任何更新也会反映在Analysis Workspace中。
+  同样，对数据视图中组件描述所做的任何更新都会反映在Analysis Workspace中。
 
-   有关在Analysis Workspace或数据视图中添加组件描述的更多信息，请参阅 [添加组件描述](/help/components/add-component-descriptions.md).
+  有关在Analysis Workspace或数据视图中添加组件说明的更多信息，请参阅 [添加组件描述](/help/components/add-component-descriptions.md).
 
 ## 访问数据词典
 
@@ -59,12 +59,12 @@ Analytics 管理员负责整理有关数据词典中每个组件的信息，并�
 
 * 来自左边栏中的&#x200B;**数据词典**&#x200B;图标。
 
-   ![来自左边栏中的“数据词典”图标](assets/data-dictionary-access-icon.png)
+  ![来自左边栏中的“数据词典”图标](assets/data-dictionary-access-icon.png)
 
 * 来自组件信息弹出框内的&#x200B;**数据词典**&#x200B;图标。
 
-   ![信息弹出窗口中的“数据词典”图标](assets/data-dictionary-access-infopopover.png)
-   <!--update screenshot; this was taken from a mock-->
+  ![信息弹出窗口中的“数据词典”图标](assets/data-dictionary-access-infopopover.png)
+  <!--update screenshot; this was taken from a mock-->
 
 * 从菜单：[!UICONTROL **帮助**] > [!UICONTROL **数据词典**]。
 
@@ -72,9 +72,9 @@ Analytics 管理员负责整理有关数据词典中每个组件的信息，并�
 
 ## 更新和整理数据词典
 
-Customer Journey Analytics管理员负责维护其组织的正常数据字典，如 [监视数据字典运行状况](/help/components/data-dictionary/monitor-data-dictionary-health.md).
+Customer Journey Analytics管理员负责为其组织维护健康的数据字典，如中所述 [监测数据字典运行状况](/help/components/data-dictionary/monitor-data-dictionary-health.md).
 
-在此过程中，CJA管理员可以编辑有关数据字典中每个组件的信息，如 [编辑数据字典中的组件条目](/help/components/data-dictionary/edit-entries-data-dictionary.md).
+在此过程中，Customer Journey Analytics管理员可以编辑数据字典中有关每个组件的信息，如中所述 [编辑数据字典中的组件条目](/help/components/data-dictionary/edit-entries-data-dictionary.md).
 
 ## 移动、最小化或关闭数据词典
 
@@ -84,12 +84,12 @@ Customer Journey Analytics管理员负责维护其组织的正常数据字典，
 
 * 将其拖动到 Analysis Workspace 中的任何区域
 
-   如果您关闭并重新打开 Analysis Workspace，“数据词典”窗口将保留在您上次移动它的位置上。<!--True?-->
+  如果您关闭并重新打开 Analysis Workspace，“数据词典”窗口将保留在您上次移动它的位置上。<!--True?-->
 
 * 将其最小化
 
-   最小化时，数据词典在 Analysis Workspace 的右下角显示为蓝色选项卡。
+  最小化时，数据词典在 Analysis Workspace 的右下角显示为蓝色选项卡。
 
-   当您选择蓝色选项卡时，数据词典将打开您最近查看的组件。
+  当您选择蓝色选项卡时，数据词典将打开您最近查看的组件。
 
 * 将其关闭

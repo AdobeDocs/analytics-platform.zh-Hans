@@ -1,17 +1,17 @@
 ---
 description: 使用智能字幕生成自然语言洞察，以快速在可视化图表中显示趋势。
-title: 智能字幕
+title: 智能题注
 feature: Visualizations
 role: User, Admin
 exl-id: 7e61ac12-a68e-4639-b021-f04762af4709
-source-git-commit: 48648a29b92ff81b98a7efa8f6f1cb3f49d4bf81
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '384'
 ht-degree: 1%
 
 ---
 
-# 智能字幕
+# 智能题注
 
 智能字幕使用高级机器学习和创作AI为Workspace可视化提供有价值的自然语言见解。 初始版本为自动生成的洞察 [折线图](line.md) 可视化图表。 （随后将提供其他可视化图表。）
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 * 需要与其他用户共享叙述的分析师。 分析师需要这些见解才能为其用户提供上下文。
 * 希望快速发现高层次内容的企业用户。
 
-字幕可供所有CJA用户使用，并且不需要特殊权限。
+字幕对所有Customer Journey Analytics用户都可用，不需要特殊权限。
 
 ## 启动智能字幕 {#launch}
 

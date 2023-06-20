@@ -4,16 +4,16 @@ description: 描述如何在 Customer Journey Analytics 中创建与 Platform �
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 90ce711ddfdff9e3441e40aa968e62e34da6a122
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '2510'
-ht-degree: 66%
+source-wordcount: '2543'
+ht-degree: 62%
 
 ---
 
 # 创建连接
 
-最近在 Customer Journey Analytics (CJA) 中启动了一个新的连接工作流程。新的连接创建和编辑工作流体验通过辅助工作流将所有数据集和连接配置设置引入屏幕中心。您提供了详细的数据集选择、配置和查看体验，以及数据集类型、大小、架构、数据集ID、批次状态、回填状态、人员ID等关键信息，以降低连接配置错误的风险。 以下是新功能的概述：
+最近在Customer Journey Analytics中启动了一个新的“连接”工作流。 新的连接创建和编辑工作流体验通过辅助工作流将所有数据集和连接配置设置引入屏幕中心。您提供了详细的数据集选择、配置和查看体验，以及数据集类型、大小、架构、数据集ID、批次状态、回填状态、人员ID等关键信息，以降低连接配置错误的风险。 以下是新功能的概述：
 
 * 您可以在创建连接时启用滚动数据保留窗口。
 * 您可以在连接中添加和删除数据集。（删除数据集会将其从连接中删除，并影响任何关联的数据视图和基础分析工作区项目。）
@@ -25,7 +25,7 @@ ht-degree: 66%
 
 ## 创建和配置连接 {#create-connection}
 
-1. 在 CJA 中，单击&#x200B;**[!UICONTROL “连接”]**&#x200B;选项卡。
+1. 在 Customer Journey Analytics 中，单击&#x200B;**[!UICONTROL 连接]**&#x200B;选项卡。
 1. 单击&#x200B;**[!UICONTROL “创建新连接”]**。
 
    ![连接设置](assets/create-conn1.png)
@@ -37,7 +37,7 @@ ht-degree: 66%
    | **[!UICONTROL 连接名称]** | 输入连接的唯一名称。 |
    | **[!UICONTROL 连接说明]** | 描述这种连接的目的。 |
    | **[!UICONTROL 沙盒]** | 在 Experience Platform 中选择一个沙盒，其中包含要创建连接的数据集。<p>Adobe Experience Platform 提供了可将单个 Platform 实例划分为多个单独的虚拟环境的[沙盒](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=zh-Hans)，以帮助开发和改进数字体验应用程序。您可以将沙盒视为包含数据集的“数据孤岛”。 沙盒用于控制对数据集的访问。<p>选择沙盒后，左边栏会显示可从该沙盒中提取的所有数据集。 |
-   | **[!UICONTROL 启用滚动数据窗口]** | 如果选中此复选框，您可以在连接级别将CJA数据保留定义为以月计的滚动时段（1个月、3个月、6个月等）。<p>数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此配置文件或查找数据集不存在滚动数据窗口设置。但是，如果您的连接包括任何配置文件或查找数据集（一个或多个事件数据集除外），则该数据会保留相同的时间段。<p> 主要好处是，您只需存储或报告适用且有用的数据，并且可删除不再有用的旧数据。它可以帮助您保持在合同限制范围内，并减少超出预期成本的风险。<p>如果您保留默认值（未选中），则保留期将由Adobe Experience Platform数据保留设置取代。 如果您在Experience Platform中有25个月的数据，CJA将通过回填获取25个月的数据。 如果您在 Platform 中删除了其中的 10 个月，则 CJA 将保留剩余的 15 个月。 |
+   | **[!UICONTROL 启用滚动数据窗口]** | 如果选中此复选框，则可在连接级别将Customer Journey Analytics数据保留定义为以月计的滚动时段（1个月、3个月、6个月等）。<p>数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此配置文件或查找数据集不存在滚动数据窗口设置。但是，如果您的连接包括任何配置文件或查找数据集（一个或多个事件数据集除外），则该数据会保留相同的时间段。<p> 主要好处是，您只需存储或报告适用且有用的数据，并且可删除不再有用的旧数据。它可以帮助您保持在合同限制范围内，并减少超出预期成本的风险。<p>如果您保留默认值（未选中），则保留期将由Adobe Experience Platform数据保留设置取代。 如果您在Experience Platform中有25个月的数据，则Customer Journey Analytics将通过回填获取25个月的数据。 如果您在Platform中删除了其中的10个月，则Customer Journey Analytics将保留剩余的15个月。 |
    | **[!UICONTROL 添加数据集]**（见下文） | 如果您的数据集列表中没有数据集，请添加数据集。 |
    | **[!UICONTROL 数据集名称]** | 选择一个或多个要拉入Customer Journey Analytics的数据集并单击 **[!UICONTROL 添加]**.<p>（如果您有许多数据集可供选择，可以使用数据集列表上方的搜索数据集搜索栏搜索正确的数据集。） |
    | **[!UICONTROL 上次更新时间]** | 仅对于事件数据集，此设置会自动设置为 Experience Platform 中基于事件的架构的默认时间戳字段。“N/A”表示该数据集不包含数据。 |
@@ -114,7 +114,7 @@ ht-degree: 66%
 
 ![查找模式](assets/schema.png)
 
-现在，您支持将这些值作为指标或维度引入CJA报告。 设置连接和拉入查找数据集时，可以编辑数据集以选择[!UICONTROL 键]和[!UICONTROL 匹配键]：
+现在，您支持将这些值作为量度或维度引入Customer Journey Analytics报表。 设置连接和拉入查找数据集时，可以编辑数据集以选择[!UICONTROL 键]和[!UICONTROL 匹配键]：
 
 ![编辑数据集](assets/lookup-dataset.png)
 
@@ -124,7 +124,7 @@ ht-degree: 66%
 
 Customer Journey Analytics 支持将标识映射作为个人 ID。Identity Map 是一种地图数据结构，它允许您上载键 -> 值对。键是身份命名空间，值是包含身份值的结构。在上传的每一行/每个事件中，都存在身份映射，并且身份映射会相应地填充到每一行中。
 
-身份映射适用于任何满足以下要求的数据集：使用基于 [ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans) 类的架构。当您要将此类数据集包含在 CJA 连接中时，您既可以选择主 ID，也可以选择身份映射来作为字段：
+身份映射适用于任何满足以下要求的数据集：使用基于 [ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans) 类的架构。在选择要包含在Customer Journey Analytics连接中的此类数据集时，您可以选择字段作为主ID，也可以选择身份映射：
 
 ![](assets/idmap1.png)
 
@@ -132,8 +132,8 @@ Customer Journey Analytics 支持将标识映射作为个人 ID。Identity Map �
 
 | 选项 | 描述 |
 |---|---|
-| **[!UICONTROL 使用主 ID 命名空间]** | 此选项指示CJA逐行在标记为primary=true属性的身份映射中查找身份，并将其用作该行的人员ID。 此标识是在Experience Platform中用于分区的主键。 并且此身份也是用作CJA的人员ID的主要候选项（取决于CJA连接中数据集的配置方式）。 |
-| **[!UICONTROL 命名空间]** | （此选项仅适用于未使用主 ID 命名空间的情况。）身份命名空间是 [ Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=zh-Hans) 的组件，充当与身份相关的上下文指示器。如果您指定命名空间，CJA会为此命名空间键搜索每行的“身份映射”，然后使用该命名空间下的身份作为该行的人员ID。 由于CJA无法对所有行执行完整数据集扫描以确定哪些命名空间存在，因此所有可能的命名空间都会显示在下拉列表中。 您必须知道数据中指定了哪些命名空间；系统不会自动检测到这些命名空间。 |
+| **[!UICONTROL 使用主 ID 命名空间]** | 此选项指示Customer Journey Analytics在标识映射中每行查找标记为primary=true属性的标识并将其用作该行的人员ID。 此标识是在Experience Platform中用于分区的主键。 此外，此身份还是用作Customer Journey Analytics人员ID的主要候选项(取决于Customer Journey Analytics连接中数据集配置的方式)。 |
+| **[!UICONTROL 命名空间]** | （此选项仅适用于未使用主 ID 命名空间的情况。）身份命名空间是 [ Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=zh-Hans) 的组件，充当与身份相关的上下文指示器。如果指定命名空间，则Customer Journey Analytics将搜索此命名空间键的每行的“身份映射”，然后使用该命名空间下的身份作为该行的人员ID。 由于Customer Journey Analytics无法对所有行执行完整数据集扫描以确定哪些命名空间存在，因此下拉列表中会显示所有可能的命名空间。 您必须知道数据中指定了哪些命名空间；系统不会自动检测到这些命名空间。 |
 
 {style="table-layout:auto"}
 
@@ -143,8 +143,8 @@ Customer Journey Analytics 支持将标识映射作为个人 ID。Identity Map �
 
 | 选项 | “身份映射”中不存在 ID | 多个 ID，没有一个标记为主 ID | 多个 ID 均标记为主 ID | 单个 ID，是否标记为主 ID | 一个 ID 标记为主 ID 的无效命名空间 |
 |---|---|---|---|---|---|
-| **[!UICONTROL 使用主 ID 命名空间]已选中** | 该行将被 CJA 删除。 | 该行将被 CJA 删除，因为未指定主 ID。 | 所有命名空间下标记为主 ID 的 ID 都将被提取到列表中，然后，它们按字母顺序排序；在新的排序中，第一个命名空间及其第一个ID将被用作人员ID。 | 单个 ID 用作个人 ID。 | 即使命名空间可能无效（未出现在AEP中），CJA仍会将该命名空间下的主ID用作人员ID。 |
-| **[!UICONTROL 特定的身份映射命名空间]已选择** | 该行将被 CJA 删除。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。（由于在创建连接时，只能选择有效的命名空间，因此无效的命名空间/ID 不可能用作人员 ID） |
+| **[!UICONTROL 使用主 ID 命名空间]已选中** | 该行将被Customer Journey Analytics删除。 | 该行将被Customer Journey Analytics删除，因为未指定主ID。 | 所有命名空间下标记为主 ID 的 ID 都将被提取到列表中，然后，它们按字母顺序排序；在新的排序中，第一个命名空间及其第一个ID将被用作人员ID。 | 单个 ID 用作个人 ID。 | 即使命名空间可能无效(未出现在Adobe Experience Platform中)，Customer Journey Analytics仍会使用该命名空间下的主ID作为人员ID。 |
+| **[!UICONTROL 特定的身份映射命名空间]已选择** | 该行将被Customer Journey Analytics删除。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。（由于在创建连接时，只能选择有效的命名空间，因此无效的命名空间/ID 不可能用作人员 ID） |
 
 {style="table-layout:auto"}
 
@@ -162,4 +162,4 @@ Customer Journey Analytics 支持将标识映射作为个人 ID。Identity Map �
 
    在此示例中，“analytics_demo_data”是数据集的名称。
 
-2. 要显示AEP中存在的所有数据集，请执行 `Show Tables` 查询。
+2. 要显示Adobe Experience Platform中存在的所有数据集，请执行 `Show Tables` 查询。

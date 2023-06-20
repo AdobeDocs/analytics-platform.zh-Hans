@@ -1,15 +1,15 @@
 ---
-title: 将 Adobe Journey Optimizer (AJO) 与 Customer Journey Analytics (CJA) 集成
-description: 引入 AJO 生成的数据，并在 CJA 中使用 Analysis Workspace 分析这些数据。
+title: 将 Adobe Journey Optimizer 与 Customer Journey Analytics 集成
+description: 引入Adobe Journey Optimizer生成的数据，并在Customer Journey Analytics中使用Analysis Workspace分析这些数据。
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
-source-git-commit: 76f13b6c3b05d4a3fa4169ab0b4a1e9573efb9e0
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 73%
+source-wordcount: '873'
+ht-degree: 68%
 
 ---
 
-# 将 Adobe Journey Optimizer 与 Customer Journey Analytics 集成
+# 将Adobe Journey Optimizer与Adobe Customer Journey Analytics集成
 
 [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) 帮助您营造紧密联系、与上下文相关且个性化的体验。它还有助于让客户了解其客户历程的下一步。
 
@@ -31,7 +31,7 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 | AJO电子邮件跟踪体验事件数据集 | 事件 | 人员 ID: `IdentityMap` | 包含电子邮件跟踪事件，例如“[!UICONTROL 打开次数]&#39;， &#39;[!UICONTROL 点击次数]&#39;和&#39;[!UICONTROL 取消订阅]&#39;. |
 | AJO推送跟踪体验事件数据集 | 事件 | 人员 ID: `IdentityMap` | 包含推送跟踪事件，如[!UICONTROL 应用程序启动次数]&#39;. |
 | 历程步骤事件 | 事件 | 人员 ID: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | 包含显示哪些用户档案参与了历程每个节点的事件。 |
-| AJO实体数据集 | 查询 | 密钥： `_id`<br>匹配键： `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | 包含将历程和促销活动元数据与所有AJO事件数据关联的分类。 |
+| AJO实体数据集 | 查询 | 密钥： `_id`<br>匹配键： `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | 包含将历程和促销活动元数据与所有Adobe Journey Optimizer事件数据关联的分类。 |
 
 {style="table-layout:auto"}
 
@@ -42,7 +42,7 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 
 >[!NOTE]
 >
->AJO 和 CJA 之间的数据差异通常小于 1-2%。过去两小时内收集到的数据可能存在较大差异。请使用排除今天的日期范围以缓解涉及处理时间的差异。
+>Adobe Journey Optimizer和Customer Journey Analytics之间的数据差异通常小于1-2%。 过去两小时内收集到的数据可能存在较大差异。请使用排除今天的日期范围以缓解涉及处理时间的差异。
 
 
 ### 在数据视图中配置维度

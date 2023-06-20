@@ -1,25 +1,25 @@
 ---
 title: 使用对象数组
-description: 了解 CJA 如何报告数据层次结构。
+description: 了解Customer Journey Analytics如何报告数据层次结构。
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 86%
+source-wordcount: '445'
+ht-degree: 66%
 
 ---
 
 # 使用对象数组
 
-某些平台模式可以具有对象数组。CJA 支持在事件、查找和配置文件数据中摄取和报告对象数组。最常见的示例之一是包含多个产品的购物车。每个产品都有一个名称、SKU、类别、价格、数量以及要跟踪的任何其他维度。所有这些方面都有不同的要求，但必须都属于相同点击。
+某些平台模式可以具有对象数组。Adobe Customer Journey Analytics支持摄取和报告事件、查找和配置文件数据中的对象数组。 最常见的示例之一是包含多个产品的购物车。每个产品都有一个名称、SKU、类别、价格、数量以及要跟踪的任何其他维度。所有这些方面都有不同的要求，但必须都属于相同点击。
 
-在以前版本的 Adobe Analytics 中，此功能是通过 `products` 变量实现的。它是一个连接字符串，用分号 (`;`) 分隔以区分产品不同方面，同时用逗号 (`,`) 描述不同产品。它是有限支持“对象数组”的唯一变量。多值变量（如列表变量）可以支持数组的等效内容，但它们不能支持“对象数组”。CJA 通过支持单行数据中任意深度的层次结构扩展了这一概念，任何以前版本的 Adobe Analytics 均不提供该功能。
+在以前版本的 Adobe Analytics 中，此功能是通过 `products` 变量实现的。它是一个连接字符串，用分号 (`;`) 分隔以区分产品不同方面，同时用逗号 (`,`) 描述不同产品。它是有限支持“对象数组”的唯一变量。多值变量（如列表变量）可以支持数组的等效内容，但它们不能支持“对象数组”。Customer Journey Analytics通过支持单行数据中任意深度的层次结构扩展了此概念，任何以前版本的Adobe Analytics均不提供此功能。
 
-## 相同事件範例
+## 相同事件示例
 
-以下事件是JSON物件，代表客戶購買洗衣機和烘衣機。
+以下事件是一个JSON对象，它表示客户购买洗衣机和烘干机。
 
 ```json
 {
@@ -81,9 +81,9 @@ ht-degree: 86%
    * product : warranty
    * product : warranty : revenue
 
-### 相同事件範例（報告行為）
+### 相同事件示例（报表行为）
 
-下表僅使用上述事件，顯示具有某些維度和量度組合的工作區報表。
+仅使用上述事件，下表显示了具有某些维度和量度组合的工作区报表。
 
 | `product : name` | `product : orders` | `product : revenue` |
 | --- | --- | --- |
@@ -91,7 +91,7 @@ ht-degree: 86%
 | `LG Dryer 2000` | `1` | `500` |
 | `Total` | `1` | `2100` |
 
-CJA 会根据表有选择地查看对象的维度和量度。
+Customer Journey Analytics会根据表有选择地查看对象的维度和量度。
 
 ```diff
 {
@@ -143,7 +143,7 @@ CJA 会根据表有选择地查看对象的维度和量度。
 | `extended` | `50` |
 | `Total` | `250` |
 
-CJA會檢視事件的這些部分來產生報告：
+Customer Journey Analytics会查看事件的以下部分以生成报告：
 
 ```diff
 {
@@ -245,7 +245,7 @@ CJA會檢視事件的這些部分來產生報告：
 
 ### 组合量度
 
-如果 CJA 在不同的对象级别上，则它本身不会组合名称相似的量度。
+如果Customer Journey Analytics位于不同的对象级别，则它本身不会组合名称相似的指标。
 
 | `product : category` | `product : revenue` | `product : warranty : revenue` |
 | --- | --- | --- |

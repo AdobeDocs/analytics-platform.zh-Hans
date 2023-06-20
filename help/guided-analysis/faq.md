@@ -1,9 +1,10 @@
 ---
 title: 引导式分析常见问题解答
 description: 有关引导式分析的常见问题解答。
-source-git-commit: 03f6b0cef6fa4259041a82173acda852d91e06b5
+exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '162'
 ht-degree: 5%
 
 ---
@@ -16,13 +17,13 @@ ht-degree: 5%
 
 +++**引导式分析是否对每个人都可用？**
 
-否；引导式分析是CJA的付费附加功能。 如果您希望开始使用此加载项，请联系您的Adobe客户团队。
+否；引导式分析是Customer Journey Analytics的付费附加功能。 如果您希望开始使用此加载项，请联系您的Adobe客户团队。
 
 +++
 
 +++**使用引导式分析需要进行哪些实施更改？**
 
-如果您已在CJA中使用Analysis Workspace，则无需进行其他实施更改。 引导式分析使用与Analysis Workspace相同的数据视图和连接。 载入和使用任何项目类型的过程对于所有CJA都是相同的，包括引导式分析。
+如果您已在Customer Journey Analytics中使用Analysis Workspace，则无需进行其他实施更改。 引导式分析使用与Analysis Workspace相同的数据视图和连接。 载入和使用任何项目类型的过程对于所有Customer Journey Analytics（包括引导式分析）都是相同的。
 
 +++
 

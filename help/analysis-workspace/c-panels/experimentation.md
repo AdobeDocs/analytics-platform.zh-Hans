@@ -1,12 +1,12 @@
 ---
-description: 了解如何在 CJA 试验面板中分析 A/B 测试结果。
+description: 了解如何在Customer Journey Analytics试验面板中分析A/B测试结果。
 title: 试验性面板
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: f77ee391c0915f5e71ffc592c49a0b1d9f86f521
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 67%
+source-wordcount: '1870'
+ht-degree: 60%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 67%
 
 ## 访问控制 {#access}
 
-试验面板可供所有 Customer Journey Analytics (CJA) 用户使用。不需要管理员权限或其他权限。但是，设置流程中（下面的步骤 1 和 2）需要只有管理员才能执行的操作。
+试验面板可供所有Customer Journey Analytics用户使用。 不需要管理员权限或其他权限。但是，设置流程中（下面的步骤 1 和 2）需要只有管理员才能执行的操作。
 
 ## 计算指标中新增了函数 {#functions}
 
@@ -30,11 +30,11 @@ ht-degree: 67%
 
 推荐的数据架构将试验数据放在一个[对象数组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=zh-Hans)中，该数组在两个单独的维度中包含试验数据和变体数据。 两个维度都必须位于 **单身** 对象数组。 如果将试验数据放在单个维度中，其中在一个字符串中分隔试验数据和变体数据，则可在数据视图中使用[子字符串](/help/data-views/component-settings/substring.md)设置将这些数据一分为二以用于面板中。
 
-在 Adobe Experience Platform [吸收](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans)您的试验数据后，[在 CJA ](/help/connections/create-connection.md)中创建与一个或多个试验数据集的连接。
+在您的试验数据得 [已摄取](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans) 进入Adobe Experience Platform， [在Customer Journey Analytics中创建连接](/help/connections/create-connection.md) 到一个或多个试验数据集。
 
 ## 步骤 2：在数据视图中添加上下文标签 {#contect-labels}
 
-在 CJA 数据视图设置中，管理员可以向维度或量度添加[上下文标签](/help/data-views/component-settings/overview.md)，并且 CJA 服务（如[!UICONTROL 试验]面板）可以使用这些标签。试验面板使用两个预定义标签：
+在Customer Journey Analytics数据视图设置中，管理员可以添加 [上下文标签](/help/data-views/component-settings/overview.md) 到维度或指标和Customer Journey Analytics服务，如 [!UICONTROL 试验] 面板可出于其目的使用这些标签。 试验面板使用两个预定义标签：
 
 * [!UICONTROL 试验试验]
 * [!UICONTROL 试验变体]
@@ -47,12 +47,12 @@ ht-degree: 67%
 
 ## 步骤 3：配置试验面板 {#configure}
 
-1. 在 CJA 工作区中，将试验面板拖动到项目中。
+1. 在Customer Journey Analytics工作区中，将“试验”面板拖动到项目中。
 
 ![试验面板](assets/experiment.png)
 
 >[!IMPORTANT]
->如果尚未完成 CJA 数据视图中的必要设置，则在可继续操作之前将收到此消息：“[!UICONTROL 请配置数据视图中的试验维度和变体维度]”。
+>如果尚未完成Customer Journey Analytics数据视图中的必要设置，则在继续操作之前将收到此消息： ”[!UICONTROL 请在数据视图中配置试验维度和变体维度]“。
 
 1. 配置面板输入设置。
 
@@ -62,7 +62,7 @@ ht-degree: 67%
    | **[!UICONTROL 控制变量]** | 最终用户体验中的两种或多种变化中的一种，并会为了确定更好的替代方案而对其进行比较。必须选择一个变量作为控制变量，并且只能将一个变量视为控制变量。 该设置预先填充了数据视图中已标记为&#x200B;**[!UICONTROL 变量]**&#x200B;标签的维度。此设置将会调出与此试验相关的变量数据。 |
    | **[!UICONTROL 成功量度]** | 用户正在与变量进行比较的一个或多个量度。可产生最理想的转化量度结果（最高或最低）的变量会成为某项试验中具有“最佳性能的变量”。最多可添加 5 个量度。 |
    | **[!UICONTROL 标准化量度]** | 运行测试的基础（[!UICONTROL 人]，[!UICONTROL 会话]或[!UICONTROL 事件]）。例如，测试可以比较几种变化的转换率，其中&#x200B;**[!UICONTROL 转化率]**&#x200B;会计为每个会话的&#x200B;**[!UICONTROL 转化率]**&#x200B;或每个人的&#x200B;**[!UICONTROL 转化率]**。 |
-   | **[!UICONTROL 日期范围]** | 日期范围会根据CJA中接收到的第一个事件为所选试验自动设置。 如果需要，可以将日期范围限制或扩展到更具体的时间范围。 |
+   | **[!UICONTROL 日期范围]** | 根据为所选试验在Customer Journey Analytics中收到的第一个事件，自动设置日期范围。 如果需要，可以将日期范围限制或扩展到更具体的时间范围。 |
 
 1. 单击&#x200B;**[!UICONTROL 生成]**。
 
@@ -110,7 +110,7 @@ ht-degree: 67%
 
 ## 解释非随机维度 {#non-randomized}
 
-CJA允许分析人员选择任何维度作为“试验”。 但是，如果选择的实验维度不是针对哪些人进行随机化的，您如何解释分析？
+Customer Journey Analytics允许分析人员选择任何维度作为“试验”。 但是，如果选择的实验维度不是针对哪些人进行随机化的，您如何解释分析？
 
 例如，假定用户看到一个广告。 如果您决定向人员显示“广告B”而不是“广告A”，则可能有兴趣衡量某些指标中的变化（例如，平均收入）。 显示广告B代替广告A的因果关系对于做出营销决策至关重要。 这种因果关系可以通过测量整个群体的平均收入来衡量，如果我们用显示广告B的替代策略替换了显示广告A的现状。
 

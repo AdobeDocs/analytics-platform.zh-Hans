@@ -4,9 +4,9 @@ description: 配置指标的格式。
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: a3fea05ac95407c7f3bee723a267ae0bc03d334a
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '493'
 ht-degree: 32%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 32%
 
 要为指标启用货币转换，请执行以下操作：
 
-- 设置您的CJA连接以包含至少一个事件数据集，该数据集为包含货币量度的每个事件保留一个货币代码维度。 该货币代码维度使用符合 [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) 表示货币的标准。 例如，USD表示$，EUR表示€，GBP表示£。
+- 设置您的Customer Journey Analytics连接，使其至少包含一个事件数据集，该数据集为包含货币量度的每个事件保留一个货币代码维度。 该货币代码维度使用符合 [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) 表示货币的标准。 例如，USD表示$，EUR表示€，GBP表示£。
 
 - 您已（可选）应用 [!UICONTROL 货币代码] 一个或多个维度的上下文标签，这些维度定义您的数据集中可用的货币代码。
 

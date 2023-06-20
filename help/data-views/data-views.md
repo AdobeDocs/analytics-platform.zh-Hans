@@ -1,13 +1,13 @@
 ---
 title: 数据视图概述
-description: 数据视图指定您要如何解释数据在 CJA 连接中的各个元素，如指标、维度、会话等。
+description: 数据视图指定您要如何解释Customer Journey Analytics连接中的数据元素，如量度、维度、会话等。
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 95b422ac44e2a25dfaa2198098185fe71c1fb204
-workflow-type: ht
-source-wordcount: '1045'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '1049'
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ Customer Journey Analytics 中的 Workspace 项目均基于数据视图。
 
 ## 数据视图功能 {#capabilities}
 
-数据视图允许您自发地更改架构元素设置，而不必更改 Adobe Experience Platform 中的架构或重新实施您的 CJA 环境。
+数据视图允许您自发地更改架构元素设置，而不必更改Adobe Experience Platform中的架构或重新实施您的Customer Journey Analytics环境。
 
 * **您可将组件从“量度”更改为“维度”，反之亦然**。您可以根据字符串字段创建量度，或根据数值字段创建维度。这就简化了您的工作，因为您不必在 XDM 架构中为所需的每个量度创建数值字段。您只需在数据视图对话框中自发地创建它。下面给出了一些示例：
    * **根据一个架构字段创建一个或多个维度，以及/或仅创建一个维度**。这是一对多关系。例如，您可以根据一个架构字段创建一个或多个“收入”量度以及/或一个或多个“收入”维度。

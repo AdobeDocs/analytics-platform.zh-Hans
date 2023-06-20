@@ -2,22 +2,22 @@
 title: 将报告包与不同的架构相结合
 description: 了解如何使用数据准备将报告包与不同的架构结合起来
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
-source-git-commit: 69356510596d047d80af63338fccca71e8af53cd
-workflow-type: ht
-source-wordcount: '1335'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '1398'
+ht-degree: 64%
 
 ---
 
 # 将报告包与不同的架构相结合
 
-[ Analytics Source Connector ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)将 Adobe Analytics 中的报告包数据带入 Adobe Experience Platform (AEP)，以供 AEP 应用程序使用，如 Real-time Customer Data Platform 和 Customer Journey Analytics (CJA)。引入 AEP 的每个报告包都会被配置为单个源连接数据流，而每个数据流都会作为 AEP 数据湖中的数据集。 Analytics Source Connector 会为每个报告包创建一个数据集。
+此 [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans) 将报表包数据从Adobe Analytics引入Adobe Experience Platform，以供Adobe Experience Platform应用程序(如Real-time Customer Data Platform和Customer Journey Analytics(Customer Journey Analytics))使用。 引入Adobe Experience Platform的每个报表包都会配置为单独的源连接数据流，而每个数据流都会作为Adobe Experience Platform数据湖中的数据集。  Analytics Source Connector 会为每个报告包创建一个数据集。
 
-CJA 客户使用[连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans)将 AEP 数据湖中的数据集集成到 CJA 的 Analysis Workspace。然而，在连接内组合报告包时，需要使用 AEP 的[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)功能解决报告包之间的架构差异。其目的是确保 Adobe Analytics 的变量（如 prop 和 eVar）在 CJA 中具有一致的含义。
+客户使用的Customer Journey Analytics [连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans) 将Adobe Experience Platform数据湖中的数据集集成到Customer Journey AnalyticsAnalysis Workspace中。 但是，在连接内组合报告包时，需要使用Adobe Experience Platform解决报告包之间的架构差异 [数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans) 功能。 其目的是确保Adobe Analytics变量（如prop和eVar）在Customer Journey Analytics中具有一致的含义。
 
 ## 报告包之间的架构差异存在问题
 
-假设您的公司希望将来自两个不同报告包的数据引入 AEP 以供 CJA 使用，并假设两个报告包的架构有所不同：
+假设您的公司希望将来自两个不同报表包的数据引入Adobe Experience Platform以供Customer Journey Analytics使用，并假设两个报表包的架构有所不同：
 
 | 报告包 A | 报告包 B |
 | --- | --- |
@@ -28,14 +28,14 @@ CJA 客户使用[连接](https://experienceleague.adobe.com/docs/analytics-platf
 
 此外，假设您执行以下操作：
 
-- 创建分析源连接（不使用数据准备），将&#x200B;**报告包 A**&#x200B;作为&#x200B;**数据集 A** 摄入 AEP 数据湖。
-- 创建分析源连接（不使用数据准备），将&#x200B;**报告包 B**&#x200B;作为&#x200B;**数据集 B** 摄入 AEP 数据湖。
-- 创建一个名为[所有报告包](/help/connections/create-connection.md)的&#x200B;**CJA 连接**，该连接结合了数据集 A 和数据集 B。
-- 创建一个名为[全局视图](/help/data-views/create-dataview.md)的&#x200B;**CJA 数据视图**，该视图基于所有的报告包连接。
+- 创建用于引入的Analytics源连接（不使用数据准备） **报告包A** 到Adobe Experience Platform数据湖中作为 **数据集a**.
+- 创建用于引入的Analytics源连接（不使用数据准备） **报告包B** 到Adobe Experience Platform数据湖中作为 **数据集B**.
+- 创建 [Customer Journey Analytics连接](/help/connections/create-connection.md) 已调用 **所有报表包** 那个合并了数据集A和数据集B。
+- 创建 [Customer Journey Analytics数据视图](/help/data-views/create-dataview.md) 已调用 **全局视图** 该连接基于所有报表包连接。
 
 如果不使用数据准备来解决数据集 A 和数据集 B 之间的架构差异，全局视图数据视图中的 eVar 将包含以下混合值：
 
-| CJA 中的全局视图数据视图 |
+| Customer Journey Analytics中的全局视图数据视图 |
 | --- |
 | eVar1=> 搜索项和业务单元的组合 |
 | eVar2=> 客户类别和搜索项的组合 |
@@ -46,11 +46,11 @@ CJA 客户使用[连接](https://experienceleague.adobe.com/docs/analytics-platf
 - 搜索项分布在 eVar1 和 eVar2 之间。
 - 不可能对每个搜索项、业务单位和客户类别使用不同的属性模型。
 
-## 使用 AEP 数据准备解决报告包之间的架构差异
+## 使用Adobe Experience Platform数据准备解决报表包之间的架构差异
 
-Experience Platform 数据准备功能与 Analytics Source Connector 集成，可用于解决上述场景中描述的架构差异。这导致在 CJA 数据视图中会出现具有一致含义的 eVar。（以下使用的命名惯例可以通过自定义来满足您的需要。）
+Experience Platform 数据准备功能与 Analytics Source Connector 集成，可用于解决上述场景中描述的架构差异。这会导致eVar在Customer Journey Analytics数据视图中具有一致的含义。 （以下使用的命名惯例可以通过自定义来满足您的需要。）
 
-1. 在为报告包 A 和报告包 B 创建源连接数据流之前，在 AEP 中[创建一个新架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=zh-Hans)（在我们的示例中，我们将其称为&#x200B;**统一架构**）将以下内容添加到该架构中：
+1. 在为报告包A和报告包B创建源连接数据流之前， [创建新架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=zh-Hans) 在Adobe Experience Platform中(我们将其称为 **统一架构** 在我们的示例中。) 将以下内容添加到该架构中：
 
    | “统一架构” |
    | --- |
@@ -83,11 +83,11 @@ Experience Platform 数据准备功能与 Analytics Source Connector 集成，�
    | \_experience.analytics.customDimensions.eVars.eVar1 | _\&lt;path>_.商业单位 |
    | _experience.analytics.customDimensions.eVars.eVar2 | _\&lt;path>_.搜索项 |
 
-1. 现在，结合数据集 A 和数据集 B，为 CJA 创建一个&#x200B;**所有报告包**&#x200B;连接。
+1. 现在创建 **所有报表包** Customer Journey Analytics的连接，组合数据集A和数据集B。
 
-1. 在 CJA 中创建&#x200B;**全局视图**&#x200B;数据视图。忽略原始 eVar 字段，仅包括统一字段字段组中的字段。
+1. 创建 **全局视图** Customer Journey Analytics中的数据视图。 忽略原始 eVar 字段，仅包括统一字段字段组中的字段。
 
-   CJA 中的&#x200B;**全局视图**&#x200B;数据视图：
+   **全局视图** Customer Journey Analytics中的数据视图：
 
    | 源字段 | 是否包含在数据视图中？ |
    | --- | --- | 
@@ -117,7 +117,7 @@ Experience Platform 数据准备功能与 Analytics Source Connector 集成，�
 
 通过使用数据准备工具，您可以将分析数据中 eVar 1 内的客户类别与呼叫中心数据中 Some_field 内的客户类别相结合。这里是实现这一点的一种方法。同样，可以更改命名惯例来满足您的需要。
 
-1. 在 AEP 中创建架构。 将以下内容添加到该架构中：
+1. 在Adobe Experience Platform中创建架构。 将以下内容添加到该架构中：
 
    | “扩展架构” |
    | --- | 
@@ -142,11 +142,11 @@ Experience Platform 数据准备功能与 Analytics Source Connector 集成，�
    | --- | --- |
    | _\&lt;path>_.Some_field | _\&lt;path>_.客户类别 |
 
-1. 创建一个 CJA 连接，该连接结合了数据集 A 和数据集 B。
+1. 创建一个Customer Journey Analytics连接，该连接结合了数据集A和数据集B。
 
-1. 使用刚刚创建的 CJA 连接，在 CJA 中创建数据视图。忽略原始 eVar 字段，仅包括客户信息字段组中的字段。
+1. 使用刚刚创建的Customer Journey Analytics连接，在Customer Journey Analytics中创建数据视图。 忽略原始 eVar 字段，仅包括客户信息字段组中的字段。
 
-   CJA 中的数据视图：
+   Customer Journey Analytics中的数据视图：
 
    | 源字段 | 是否包含在数据视图中？ |
    |---|---|
@@ -156,6 +156,6 @@ Experience Platform 数据准备功能与 Analytics Source Connector 集成，�
 
 ## 数据准备与组件 ID
 
-如上所述，数据准备工具允许您跨多个 Adobe Analytics 报告包将不同字段映射到一起。当您想要将多个数据集的数据合并到单个 CJA 连接中时，这在 CJA 中很有帮助。但是，如果您打算将报告包保留在单独的 CJA 连接中，但希望在这些连接和数据视图中使用一组报告，则更改 CJA 中的基础组件 ID 可以在即使架构不同的情况下使报告兼容。有关更多信息，请参阅 [组件设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=zh-Hans)。
+如上所述，数据准备工具允许您跨多个 Adobe Analytics 报告包将不同字段映射到一起。当您要将多个数据集的数据合并到单个Customer Journey Analytics连接中时，这在Customer Journey Analytics中很有用。 但是，如果您打算将报表包保留在单独的Customer Journey Analytics连接中，但希望在这些连接和数据视图中使用一组报表，则更改Customer Journey Analytics中的基础组件ID可以在即使架构不同的情况下使报表兼容。 有关更多信息，请参阅 [组件设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=zh-Hans)。
 
-更改组件 ID 是一项仅限 CJA 的功能，并且不会影响发送到 Real-time Customer Profile 和 RTCDP 的 Analytics Source Connector 的数据。
+更改组件ID是一项仅限Customer Journey Analytics的功能，不会影响从Analytics Source Connector发送到Real-time Customer Profile和RTCDP的数据。

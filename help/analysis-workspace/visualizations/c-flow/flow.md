@@ -3,7 +3,7 @@ description: 流量功能会显示客户浏览您的网站或应用程序的路�
 title: 流量概述
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
-source-git-commit: 8a971c6b7e04f40a57d379f246c38815852ee0c2
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 93%
@@ -22,7 +22,7 @@ ht-degree: 93%
 
 [流量可视化视频教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html)（4 分 56 秒）
 
-## 维度间流量 {#section_7AA325E432C846B0AC51E70CCE79B4C0}
+## 维度间流量 {#in}
 
 您可以显示[维度间的流量](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)。例如，您可以在一个图表中合并多个页面和部门。在这种情况下，您的流量可能从主页转到“男士”页面，然后转到“鞋类”部门。
 
@@ -30,7 +30,7 @@ ht-degree: 93%
 
 ## 配置流量可视化图表
 
-有关如何配置流量可视化的信息，请参阅 [配置流量可视化](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
+有关如何配置流量可视化图表的信息，请参阅 [配置流量可视化图表](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
 
 ## 将流量图导出为项目 .CSV 文件的一部分 {#section_BACD2639A0FC4C49A75398F7D0363D9D}
 

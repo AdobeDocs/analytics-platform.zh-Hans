@@ -4,10 +4,10 @@ description: 在 Customer Journey Analytics 中就 Google Analytics 数据给出
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 92%
+source-wordcount: '684'
+ht-degree: 86%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 92%
 
 ## 使用高级营销归因
 
-CJA 允许您在跨通道数据上使用复杂的归因模型。在下面的示例中，您可以看到应用最近联系、首次联系、U 形和收入算法归因与 Google Analytics 渠道分组维度的比较。
+Customer Journey Analytics允许您对跨渠道数据使用复杂的归因模型。 在下面的示例中，您可以看到应用最近联系、首次联系、U 形和收入算法归因与 Google Analytics 渠道分组维度的比较。
 
 ![营销属性](../assets/mktg-attribution.png)
 
@@ -63,6 +63,6 @@ Attribution IQ 还让您能够过滤数据。您可以看到仅针对特定用�
 
 ![Google ad](../assets/google-ad.png)
 
-结合 CJA 中的数据集，您可以在此示例中看到在线广告对您在移动应用上购买的产品产生了任何影响。以下可视化显示，与单独的网络相比，来自 Google Ads 的移动应用收入多出 14000 至 15000 美元。
+通过合并Customer Journey Analytics中的数据集，您可以在此示例中看到在线广告对您在移动应用程序上购买的产品产生了任何影响。 以下可视化显示，与单独的网络相比，来自 Google Ads 的移动应用收入多出 14000 至 15000 美元。
 
 ![Google ad 2](../assets/google-ad2.png)

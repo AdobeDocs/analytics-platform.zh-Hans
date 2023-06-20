@@ -1,31 +1,31 @@
 ---
 title: 审核日志
-description: 了解如何查看和管理 CJA 审核日志。
+description: 了解如何查看和管理Customer Journey Analytics审核日志。
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
-source-git-commit: 7fcbac6adb6946efd5c54b9f8edb4587dc34d445
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 79%
+source-wordcount: '806'
+ht-degree: 67%
 
 ---
 
 # 审核日志
 
-为了提高系统中执行的活动的透明度和可见性，Customer Journey Analytics (CJA) 允许您以“审核日志”的形式审核各种服务和功能的用户活动。这些日志形成审核记录，可以帮助解决问题，并帮助您的企业有效遵守公司数据管理政策和监管要求，例如“健康保险流通与责任法案”(HIPAA)。
+为了提高系统中所执行活动的透明度和可见性，Adobe Customer Journey Analytics允许您以“审核日志”的形式审核各种服务和功能的用户活动。 这些日志形成审核记录，可以帮助解决问题，并帮助您的企业有效遵守公司数据管理政策和监管要求，例如“健康保险流通与责任法案”(HIPAA)。
 
 从基本意义上讲，审核日志将说明&#x200B;**谁**&#x200B;执行了&#x200B;**什么**&#x200B;操作，以及在&#x200B;**什么时候**&#x200B;执行的。日志中记录的每个操作都包含元数据，这些元数据可指示操作类型、日期和时间、执行操作的用户的电子邮件 ID 以及与操作类型相关的其他属性。
 
-本主题涵盖 CJA 中的审核日志，包括如何在 UI 中查看和管理它们。
+本主题介绍Customer Journey Analytics中的审核日志，包括如何在UI中查看和管理它们。
 
 ## 访问审核日志
 
 为您的组织启用该功能后，系统会在活动发生时自动收集审核日志。您无需手动启用日志收集。
 
-要查看和导出审核日志，您必须已在 Audit Logs Access 中获得&#x200B;**[!UICONTROL 审核日志访问]**&#x200B;访问控制权限。要了解如何管理 CJA 功能的各项权限，请参阅[访问控制文档](../admin/cja-access-control.md)。
+要查看和导出审核日志，您必须已在 Audit Logs Access 中获得&#x200B;**[!UICONTROL 审核日志访问]**&#x200B;访问控制权限。要了解如何管理Customer Journey Analytics功能的各个权限，请参阅 [访问控制文档](../admin/cja-access-control.md).
 
 ## 在 UI 中查看审核日志
 
-在 CJA 中，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 审核日志]**。
+在Customer Journey Analytics中，导航到 **[!UICONTROL 工具]** > **[!UICONTROL 审核日志]**.
 
 默认显示今天和昨天的审核日志。
 
@@ -136,4 +136,4 @@ ht-degree: 79%
 
 ## 在 API 中管理审核日志
 
-您在 UI 中可以执行的所有操作也可以使用 API 调用来完成。有关详细信息，请参阅 [CJA API 参考文档](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs)。
+您在 UI 中可以执行的所有操作也可以使用 API 调用来完成。请参阅 [Customer Journey AnalyticsAPI参考文档](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) 了解更多信息。

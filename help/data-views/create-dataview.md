@@ -4,16 +4,16 @@ description: 为创建或编辑数据视图而可调整的所有设置。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 97%
+source-wordcount: '1228'
+ht-degree: 95%
 
 ---
 
 # 创建或编辑数据视图
 
-创建数据视图涉及从架构元素创建指标和维度或利用标准组件。大多数架构元素既可为维度，也可为指标，具体取决于您的业务要求。将架构元素拖入数据视图后，右侧即显示选项，从中可调整维度或指标在 CJA 中的操作方式。
+创建数据视图涉及从架构元素创建指标和维度或利用标准组件。大多数架构元素既可为维度，也可为指标，具体取决于您的业务要求。将架构元素拖入数据视图后，右侧即显示选项，从中可调整维度或指标在Customer Journey Analytics中的操作方式。
 
 以下是一段关于该主题的视频：
 

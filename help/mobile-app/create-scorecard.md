@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '2523'
-ht-degree: 78%
+source-wordcount: '2529'
+ht-degree: 76%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 78%
 >[!VIDEO](https://video.tv.adobe.com/v/343458)
 
 >[!NOTE]
->此页面的记分卡屏幕截图获取自 Adobe Analytics UI 而非 CJA。这些 UI 几乎完全相同。
+>此页面的记分卡屏幕截图取自Adobe Analytics UI，而非Customer Journey Analytics。 这些 UI 几乎完全相同。
 
 Adobe Analytics 记分卡以平铺版面为执行用户显示关键数据可视化图表，如下所示：
 
@@ -76,7 +76,7 @@ Adobe Analytics 记分卡以平铺版面为执行用户显示关键数据可视�
 
 ## 应用过滤器 {#filters}
 
-要将过滤器应用于个别图块，请从左侧面板拖动某个过滤器（区段就是 CJA 中的过滤器），然后将它直接放在图块的顶部。
+要将过滤器应用于单个图块，请将左侧面板中的过滤器(区段即Customer Journey Analytics中的过滤器)直接拖放到图块的顶部。
 
 如果要将过滤器应用于记分卡中的所有图块，请将图块拖放到记分卡的顶部。 或者，您也可以通过在日期范围下方的过滤器菜单中选择过滤器来应用过滤器。您 [为记分卡配置和应用过滤器](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans) 与在Adobe Analytics工作区中操作的方式相同。
 
@@ -163,7 +163,7 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 ## 查看和配置图块属性 {#tiles}
 
-在记分卡生成器中单击图块时，右侧边栏会显示与该图块及其详细信息幻灯片关联的属性和特征。 在此边栏中，可为该图块提供新的&#x200B;**标题**&#x200B;或通过应用过滤器而配置该图块。区段就是 CJA 中的过滤器。
+在记分卡生成器中单击图块时，右侧边栏会显示与该图块及其详细信息幻灯片关联的属性和特征。 在此边栏中，可为该图块提供新的&#x200B;**标题**&#x200B;或通过应用过滤器而配置该图块。区段是Customer Journey Analytics中的过滤器。
 
 ![“属性”图块](assets/properties-tile-new.png)
 

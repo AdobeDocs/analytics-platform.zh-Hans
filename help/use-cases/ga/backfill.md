@@ -1,13 +1,13 @@
 ---
 title: 将 Google Analytics 历史数据提取到 Adobe Experience Platform
-description: 阐述如何使用 Customer Journey Analytics (CJA) 将您的 Google Analytics 数据摄取到 Adobe Experience Platform。
+description: 介绍如何使用Adobe Customer Journey Analytics将Google Analytics数据摄取到Adobe Experience Platform。
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
-workflow-type: ht
-source-wordcount: '620'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '624'
+ht-degree: 91%
 
 ---
 
@@ -77,7 +77,7 @@ FROM
 
 >[!TIP]
 >
->如果您计划同时导入历史和实时流式 Google Analytics 数据，请确保对两个数据集使用相同的架构。您可以使用[组合数据集](/help/connections/combined-dataset.md)在 CJA 中合并数据集。
+>如果您计划同时导入历史和实时流式 Google Analytics 数据，请确保对两个数据集使用相同的架构。您可以使用合并Customer Journey Analytics中的数据集 [组合的数据集](/help/connections/combined-dataset.md).
 
 您可以将 GA 事件数据映射到以前创建的现有数据集，或者使用所选择的任何 XDM 架构创建数据集。选择好架构后，Experience Platform 则应用机器学习，自动将 Google Analytics 数据中的每个字段预映射到您的 [XDM 架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html#ui)。
 
@@ -91,15 +91,15 @@ Platform 中的某些 XDM 字段需要正确的格式才能正确处理数据。
 
 * **`timestamp`**：在 Experience Platform 架构 UI 中创建一个特殊的计算字段。单击&#x200B;**[!UICONTROL 添加计算字段]**，并在 `date` 函数中包含 `timestamp` 字符串：
 
-   `date(timestamp, "yyyy-MM-dd HH:mm:ssZ")`
+  `date(timestamp, "yyyy-MM-dd HH:mm:ssZ")`
 
-   将计算的字段保存到架构中的时间戳数据结构中：
+  将计算的字段保存到架构中的时间戳数据结构中：
 
-   ![时间戳](../assets/timestamp.png)
+  ![时间戳](../assets/timestamp.png)
 
-* **`_id`**：该字段中必须有一个值 - CJA 不关心该值是什么。您可以在字段中添加“1”：
+* **`_id`**：此字段必须具有值 — Customer Journey Analytics不管该值是什么。 您可以在字段中添加“1”：
 
-   ![ID](../assets/_id.png)
+  ![ID](../assets/_id.png)
 
 ## 后续步骤
 

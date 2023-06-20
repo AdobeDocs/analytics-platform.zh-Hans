@@ -5,19 +5,19 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: 4ae102baa524a7e01ac8f08365260e80fe90150e
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '3252'
-ht-degree: 9%
+source-wordcount: '3262'
+ht-degree: 8%
 
 ---
 
 
 # 派生字段
 
-派生字段是Customer Journey Analytics(CJA)中实时报表功能的一个重要方面。 通过派生字段和可自定义的规则生成器，即可迅速定义（一般较为复杂的）数据操作。然后，您可以将该派生字段用作中的组件（量度或维度） [工作区](../../analysis-workspace/home.md) 或者甚至进一步将派生字段定义为中的组件 [数据视图](../data-views.md).
+派生字段是Adobe Customer Journey Analytics中实时报表功能的一个重要方面。 通过派生字段和可自定义的规则生成器，即可迅速定义（一般较为复杂的）数据操作。然后，您可以将该派生字段用作中的组件（量度或维度） [工作区](../../analysis-workspace/home.md) 或者甚至进一步将派生字段定义为中的组件 [数据视图](../data-views.md).
 
-与在CJA以外的其他位置转换或处理数据相比，派生字段可以节省大量时间和精力。 例如 [数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)， [数据Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)，或在您自己的提取转换加载(ETL)/提取加载转换(ELT)进程中。
+与在Customer Journey Analytics之外的其他位置转换或处理数据相比，派生字段可以节省大量时间和精力。 例如 [数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)， [数据Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)，或在您自己的提取转换加载(ETL)/提取加载转换(ELT)进程中。
 
 派生字段定义于 [数据视图](../data-views.md)基于一组定义为规则的函数，并应用于可用的标准和/或架构字段。
 
@@ -122,7 +122,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->派生字段在CJA中的连接级别进行管理。 对与该连接关联的任何数据视图中的派生字段所做的任何更改将应用于所有这些关联的数据视图。
+>派生字段在Customer Journey Analytics中的连接级别进行管理。 对与该连接关联的任何数据视图中的派生字段所做的任何更改将应用于所有这些关联的数据视图。
 
 
 
@@ -461,9 +461,9 @@ ht-degree: 9%
 
 ## 约束
 
-CJA使用嵌套容器结构，该结构以Adobe Experience Platform的 [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans) （体验数据模型）。 参见 [容器](../create-dataview.md#containers) 和 [筛选容器](../../components/filters/filters-overview.md#filter-containers) 了解更多背景信息。 虽然此容器模型本质上很灵活，但在使用规则生成器时施加了一些限制。
+Customer Journey Analytics使用嵌套容器结构，该结构以Adobe Experience Platform的模式建模。 [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans) （体验数据模型）。 参见 [容器](../create-dataview.md#containers) 和 [筛选容器](../../components/filters/filters-overview.md#filter-containers) 了解更多背景信息。 虽然此容器模型本质上很灵活，但在使用规则生成器时施加了一些限制。
 
-CJA使用以下默认容器模型：
+Customer Journey Analytics使用以下默认容器模型：
 
 <p align="center">
 <img src="./assets/containers.png" width="50%" valign="middle">
@@ -761,4 +761,4 @@ CJA使用以下默认容器模型：
 以下限制通常适用于派生字段功能：
 
 - 在为派生字段定义规则时，最多可以使用10个不同的架构字段（不包括标准字段）。
-- 每个CJA连接最多可以有100个派生字段。
+- 每个Customer Journey Analytics连接最多可以有100个派生字段。

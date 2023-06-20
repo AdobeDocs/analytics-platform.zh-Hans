@@ -3,16 +3,16 @@ title: Labs 用户指南
 description: 预览 Customer Journey Analytics 的原型项目
 role: Admin
 exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
-source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
-workflow-type: ht
-source-wordcount: '453'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '457'
+ht-degree: 90%
 
 ---
 
 # [!UICONTROL Labs] 用户指南
 
-[!UICONTROL Labs] 允许更快地为早期创意制作原型。它以客户为中心，整合了工具和流程，可加快开发速度并提高开发透明度。它允许用户与新兴技术交互，发掘有价值的分析，并影响未来的功能开发和优先级。您可以通过 Labs 抢先试用 Customer Journey Analytics (CJA) 创新，并在您自己的业务用例和数据范围内评估即将推出的功能。
+[!UICONTROL Labs] 允许更快地为早期创意制作原型。它以客户为中心，整合了工具和流程，可加快开发速度并提高开发透明度。它允许用户与新兴技术交互，发掘有价值的分析，并影响未来的功能开发和优先级。您可以通过Labs抢先试用Adobe Customer Journey Analytics创新，并在您自己的业务用例和数据范围内评估即将推出的功能。
 
 ## 要求
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 1. 如果您还没有[!UICONTROL 工作区]和 [!UICONTROL Labs] 的访问权限，请联系管理员以获取相应权限。
 
-1. 在 CJA 中，单击 **[!UICONTROL Labs]** 选项卡。
+1. 在Customer Journey Analytics中，单击 **[!UICONTROL Labs]** 选项卡。
 
 ## 评估原型
 
@@ -64,7 +64,7 @@ ht-degree: 100%
 
 1. 单击&#x200B;**[!UICONTROL 提交]**&#x200B;以返回主“预览”门户。
 
-## CJA 实验室原型
+## Customer Journey Analytics实验室原型
 
 * 自然语言洞察生成器：提供在自由格式表格中分析的任何数据的自然语言摘要。
 * 可视化推荐：推荐与数据匹配良好的可视化。

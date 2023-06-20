@@ -1,10 +1,11 @@
 ---
 title: 将数据从 Google Analytics 迁移到 Customer Journey Analytics
 description: 了解有关如何将数据从 Google Analytics 移动到 Adobe Experience Platform 以及在 Customer Journey Analytics 中查看报告的总体工作流。
-source-git-commit: 7c195453490499cc42e7d5b2f2d111e2654f918c
-workflow-type: ht
-source-wordcount: '304'
-ht-degree: 100%
+exl-id: 10c485c9-66ab-4925-a357-a66a374d4c6f
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 87%
 
 ---
 
@@ -18,13 +19,13 @@ ht-degree: 100%
 
 提取历史（回填）数据涉及从 Google 导出数据并将该数据导入 Adobe Experience Platform。查看[将 Google Analytics 数据摄取到 Adobe Experience Platform](backfill.md)。
 
-成功将历史数据引入平台后，您可以[配置流式当前数据](streaming.md)，或通过[创建连接](/help/connections/create-connection.md)立即开始在 CJA 中报告回填数据。
+成功将历史数据引入平台后，您可以 [配置流当前数据](streaming.md)，或者立即开始报告Customer Journey Analytics中的回填数据，报告者为 [创建连接](/help/connections/create-connection.md).
 
 ## 为 Adobe Experience Platform 配置现有的 Google Analytics 实施 {#configure}
 
 摄取当前（流式传输）数据涉及将数据发送到 Adobe Experience Edge，然后由 Adobe Experience Edge 将该数据转发到 Adobe Experience Platform。查看[在 Adobe Experience Platform 中设置流式 Google Analytics 数据](streaming.md)。
 
-## 在 CJA 中配置连接和数据视图
+## 在Customer Journey Analytics中配置连接和数据视图
 
 成功提取历史数据和/或将数据收集配置到 Adobe Experience Platform 后，您可以[创建连接](/help/connections/create-connection.md)以允许 Customer Journey Analytics 引用该数据。
 

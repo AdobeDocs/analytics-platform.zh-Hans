@@ -1,31 +1,31 @@
 ---
-title: 比较 AA 数据和 CJA 数据
+title: 将Adobe Analytics数据与Customer Journey Analytics数据进行比较
 description: 了解如何比较 Adobe Analytics 数据和 Customer Journey Analytics 中的数据
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: 95f92d742dcc59098f51978a02c2989c42594807
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 94%
+source-wordcount: '906'
+ht-degree: 65%
 
 ---
 
-# 将 Adobe Analytics 数据与 CJA 数据进行比较
+# 将Adobe Analytics数据与Customer Journey Analytics数据进行比较
 
-随着您的组织采用 CJA，您可能会注意到 Adobe Analytics 与 CJA 之间的数据有些不同。这是正常情况，并且可能由于若干原因出现这种情况。CJA 旨在使您可改善对于您在 AA 中的数据存在的某些限制。但是，可能会出现意外的差异。本文旨在帮助您诊断和解决这些差异，以便您和您的团队可以使用 CJA，而不受数据完整性问题的影响。
+随着贵组织采用Customer Journey Analytics，您可能会注意到Adobe Analytics与Customer Journey Analytics之间的数据存在某些差异。 这是正常情况，并且可能由于若干原因出现这种情况。Customer Journey Analytics旨在允许您改进AA中数据的一些限制。 但是，可能会出现意外的差异。本文旨在帮助您诊断和解决这些差异，以便您和您的团队可以使用Customer Journey Analytics，而不受数据完整性问题的影响。
 
-假设您通过 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans) 将 Adobe Analytics 数据引入到 AEP 中，然后创建了使用此数据集的 CJA 连接。
+Adobe Analytics Adobe Experience Platform假设您通过 [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)，然后使用此数据集创建了Customer Journey Analytics连接。
 
 ![数据流](assets/compare.png)
 
-接下来，您创建了一个数据视图，随后在 CJA 上制作此数据的报告时，您注意到与 Adobe Analytics 中的报告结果存在差异。
+接下来，您创建了一个数据视图，随后在Customer Journey Analytics中报告此数据时，您注意到与Adobe Analytics中的报告结果存在差异。
 
 将原始 Adobe Analytics 数据与 Customer Journey Analytics 中的现有 Adobe Analytics 数据进行比较所要遵循的步骤如下。
 
 ## 先决条件
 
-* 确保 AEP 中的 Analytics 数据集包含您正在调查的日期范围的数据。
+* 确保Adobe Experience Platform中的Analytics数据集包含您正在调查的日期范围的数据。
 
 * 确保您在 Analytics 中选择的报表包与引入到 Adobe Experience Platform 中的报表包一致。
 
@@ -39,7 +39,7 @@ ht-degree: 94%
 
 1. 保存此项目，以使您可在比较中使用它。
 
-## 步骤 2：将结果与 CJA 中的[!UICONTROL 按时间戳的总记录数]进行比较
+## 步骤2：将结果与 [!UICONTROL 按时间戳的总记录数] 在Customer Journey Analytics中
 
 现在比较 Analytics 中的[!UICONTROL 发生次数]与 Customer Journey Analytics 中的“按时间戳的总记录数”。
 
@@ -47,22 +47,22 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->这仅适用于常规中间值数据集，不适用于拼合的数据集（借助[跨渠道分析](/help/cca/overview.md)）。请注意，将在 CJA 中使用的人员 ID 考虑在内对于使这一比较发挥作用至关重要。可能并非总是很容易在 AA 中复制该内容，尤其是在已启用跨渠道分析的情况下。
+>这仅适用于常规中间值数据集，不适用于拼合的数据集（借助[跨渠道分析](/help/cca/overview.md)）。请注意，考虑在Customer Journey Analytics中使用的人员ID对于使比较有效至关重要。 在Adobe Analytics中复制可能并不总是那么容易，尤其是在启用了跨渠道分析的情况下。
 
 1. 在 Adobe Experience Platform [查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html)中，运行以下的[!UICONTROL 按时间戳的总记录数]查询：
 
-       &quot;
-       选择Substring(from_utc_timestamp(timestamp，&#39;{timeZone}&#39;), 1, 10)作为Day， \
-       Count(_id)AS记录
-       来自{dataset} \
-       WHERE timestamp>=from_utc_timestamp(&#39;{fromDate}&#39;,&#39;UTC&#39;)\
-       AND时间戳&lt;from_utc_timestamp todate=&quot;&quot; utc=&quot;&quot; span=&quot;&quot; id=&quot;11&quot; translate=&quot;no&quot; />       且时间戳不为空\
-       和enduserid。
-_experience.aaid.id不为NULL \
+       ```
+       SELECT子字符串(from_utc_timestamp(timestamp，&#39;{timeZone}&#39;)， 1， 10)作为日，\
+       Count(_id) AS记录
+       起始日期  {dataset} \
+       WHERE timestamp>=from_utc_timestamp(&#39;{fromDate}&#39;，&#39;UTC&#39;) \
+       AND时间戳&lt;from_utc_timestamp span=&quot;&quot; id=&quot;14&quot; translate=&quot;no&quot; />&#39;，&#39;UTC&#39;) \
+       AND时间戳不为NULL \
+       AND enduserids。{toDate}_experience.aaid.id不为空\
        按日分组\
-       按日排序；
+       按日订购；
        
-       &quot;
+       ```
    
 1. [分析数据馈送](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html)，从原始数据中识别某些行是否已被分析源连接器过滤掉。
 
@@ -81,11 +81,11 @@ _experience.aaid.id不为NULL \
 
 1. 如果连接器过滤某些行，则将从[!UICONTROL 发生次数]量度中去除这些行。得到的数字应与 Adobe Experience Platform 数据集中的事件数一致。
 
-## 为什么在从 AEP 引入数据期间可能会过滤或跳过一些记录
+## 为什么在从Adobe Experience Platform引入数据期间可能会筛选或跳过记录
 
-CJA [连接](/help/connections/create-connection.md)允许您跨数据集基于共同的人员 ID 将多个数据集聚集并连接在一起。在后端，我们应用重复数据删除：首先，基于时间戳针对事件数据集进行完全的外部连接或合并，然后基于人员 ID 对配置文件和查找数据集进行内部连接。
+Customer Journey Analytics [连接](/help/connections/create-connection.md) 允许您跨数据集基于通用人员ID将多个数据集聚集并连接在一起。 在后端，我们应用重复数据删除：首先，基于时间戳针对事件数据集进行完全的外部连接或合并，然后基于人员 ID 对配置文件和查找数据集进行内部连接。
 
-以下是从 AEP 中引入数据时可能会跳过记录的一些原因。
+以下是从Adobe Experience Platform摄取数据时可能跳过记录的一些原因。
 
 * **缺少时间戳** – 如果事件数据集中缺少时间戳，则在引入期间将完全忽略或跳过这些记录。
 

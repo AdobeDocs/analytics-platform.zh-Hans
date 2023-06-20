@@ -4,9 +4,9 @@ description: 可设置用户的常规和项目首选项。
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: b2931e40bd07b8bd3421216c1f1565bea7e3cd5d
+source-git-commit: c7e6dd4fb9a4dd517464572815e09f698b1761ed
 workflow-type: tm+mt
-source-wordcount: '3128'
+source-wordcount: '3130'
 ht-degree: 74%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 74%
 
 ## 常规首选项
 
-常规首选项适用于您在浏览器中的 CJA 体验。有关如何访问这些首选项的信息，请参阅[更新首选项](#update-preferences)。
+常规首选项适用于您在浏览器中的Customer Journey Analytics体验。 有关如何访问这些首选项的信息，请参阅[更新首选项](#update-preferences)。
 
 | 首选项 | 选项 |
 | --- | --- |

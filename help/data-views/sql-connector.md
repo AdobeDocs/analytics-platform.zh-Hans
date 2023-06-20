@@ -1,5 +1,5 @@
 ---
-title: SQL连接器
+title: SQL Connector
 description: 了解如何使用Query Service、Power BI和/或Tableau通过SQL Connector访问数据视图。
 solution: Customer Journey Analytics
 feature: Data Views
@@ -7,49 +7,49 @@ hide: true
 hidefromtoc: true
 badgeCJASQLConnector: label="New Feature" type="Positive"
 exl-id: 80feadef-3e2d-4901-8c82-25c56d296e9f
-source-git-commit: f3dba7bac92cbda3285fe53a8961065e9bbbf972
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '2900'
-ht-degree: 2%
+source-wordcount: '2938'
+ht-degree: 1%
 
 ---
 
-# SQL连接器
+# SQL Connector
 
 {{release-limited-testing}}
 
-此 [!DNL Customer Journey Analytics (CJA) SQL Connector] 允许通过SQL访问 [数据视图](./data-views.md) 您在CJA中定义的属性。 您的数据工程师和分析人员可能更熟悉Power BI、Tableau或其他商业智能和可视化工具（进一步称为BI工具）。 他们现在可以基于CJA用户在创建其Analysis Workspace项目时所用的相同数据视图创建报告和仪表板。
+此 [!DNL Customer Journey Analytics SQL Connector] 允许通过SQL访问 [数据视图](./data-views.md) 您已在Customer Journey Analytics中定义的参数。 您的数据工程师和分析人员可能更熟悉Power BI、Tableau或其他商业智能和可视化工具（进一步称为BI工具）。 他们现在可以根据Customer Journey Analytics用户在创建Analysis Workspace项目时所使用的相同数据视图创建报告和仪表板。
 
-Adobe Experience Platform [查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans?lang=cn) 是Experience Platform数据湖中可用数据的SQL接口。 使用 [!DNL CJA SQL Connector] 已启用，的功能 [!DNL Query Service] 扩展了以将CJA数据视图作为表或视图查看 [!DNL Query Service] 会话。 因此，使用 [!DNL Query Service] 因为其PostgresSQL接口可从此扩展功能中无缝受益。
+Adobe Experience Platform [查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans?lang=cn) 是Experience Platform数据湖中可用数据的SQL接口。 使用 [!DNL Customer Journey Analytics SQL Connector] 已启用，的功能 [!DNL Query Service] 扩展了以表或视图的形式查看Customer Journey Analytics数据视图 [!DNL Query Service] 会话。 因此，使用 [!DNL Query Service] 因为其PostgresSQL接口可从此扩展功能中无缝受益。
 
 主要优势包括：
 
-- 无需在BI工具本身中重新创建CJA数据视图的等效表示形式。 <br/>参见 [数据视图](data-views.md) 有关数据视图功能的更多信息，以了解必须重新创建的内容。<br/>
+- 无需在BI工具本身中重新创建Customer Journey Analytics数据视图的等效表示形式。 <br/>参见 [数据视图](data-views.md) 有关数据视图功能的更多信息，以了解必须重新创建的内容。<br/>
 
-- 提高BI工具和CJA之间报告和分析的一致性。
+- 提高BI工具和Customer Journey Analytics之间报告和分析的一致性。
 
-- 将CJA数据与BI工具中已有的其他数据源相结合。
+- 将Customer Journey Analytics数据与BI工具中已有的其他数据源相结合。
 
 ## 先决条件
 
 要使用此功能，您必须
 
-<!---   Enable the [!UICONTROL CJA SQL Connector] in your Experience Platform organization. -->
+<!---   Enable the [!UICONTROL Customer Journey Analytics SQL Connector] in your Experience Platform organization. -->
 
 - 配置相关产品配置文件、用户组和/或个人用户的功能。<br/>
 用户必须有权访问：
    - Experience Platform查询服务，
-   - CJA工作区项目，以及
-   - 他们要使用的CJA数据视图。
+   - Customer Journey Analytics工作区项目，以及
+   - Customer Journey Analytics要使用的数据视图。
 
-- 使用过期凭据将BI工具连接到CJA SQL Connector。 三 [凭据指南](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) 提供有关设置过期凭据或非过期凭据的更多信息。
+- 使用过期凭据将BI工具连接到Customer Journey AnalyticsSQL Connector。 三 [凭据指南](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) 提供有关设置过期凭据或非过期凭据的更多信息。
 
-参见 [访问控制](../admin/cja-access-control.md) 有关更多信息，请参阅“CJA管理”部分。
+参见 [访问控制](../admin/cja-access-control.md) 有关更多信息，请参阅Customer Journey Analytics管理部分。
 
 
 ## 使用情况
 
-要使用 [!DNL CJA SQL Connector] 功能上，您可以直接使用SQL，也可以使用特定BI工具中提供的拖放体验。
+要使用 [!DNL Customer Journey Analytics SQL Connector] 功能上，您可以直接使用SQL，也可以使用特定BI工具中提供的拖放体验。
 
 ### SQL
 
@@ -89,7 +89,7 @@ Adobe Experience Platform [查询服务](https://experienceleague.adobe.com/docs
 
 ### BI工具
 
-目前，仅支持CJA SQL Connector并针对Power BI和Tableau进行测试。 其他使用PSQL接口的BI工具也可能正常工作，但尚未得到正式支持。
+目前，仅支持Customer Journey AnalyticsSQL Connector并针对Power BI和Tableau进行测试。 其他使用PSQL接口的BI工具也可能正常工作，但尚未得到正式支持。
 
 +++ Power BI
 
@@ -120,7 +120,9 @@ Adobe Experience Platform [查询服务](https://experienceleague.adobe.com/docs
       3. 提示输入时 **[!UICONTROL **&#x200B;数据连接&#x200B;**]** 模式，选择 **[!UICONTROL ** Directquery **]** 以确保数据结构正确拼合。
 
       4. 系统会提示您输入 **[!UICONTROL **&#x200B;用户名&#x200B;**]** 和 **[!UICONTROL **&#x200B;密码&#x200B;**]**. 使用Experience Platform查询中的等效参数 [!UICONTROL 凭据].
-   5. 成功登录后，CJA数据视图表会显示在Power BI的 **[!UICONTROL **&#x200B;导航器&#x200B;**]**. 数据视图表使用进行标识 `dv_` 以他们的名义。
+
+
+   5. 成功登录后，“Customer Journey Analytics数据视图”表将出现在Power BI的 **[!UICONTROL **&#x200B;导航器&#x200B;**]**. 数据视图表使用进行标识 `dv_` 以他们的名义。
 
 
    6. 选择要使用的数据视图表，然后选择 **[!UICONTROL **&#x200B;加载&#x200B;**]**.
@@ -164,7 +166,8 @@ Adobe Experience Platform [查询服务](https://experienceleague.adobe.com/docs
       6. 粘贴 **[!UICONTROL **&#x200B;密码&#x200B;**]** Experience Platform查询中的参数 [!UICONTROL 凭据] 到 **[!UICONTROL **&#x200B;密码&#x200B;**]** 文本字段。
 
       7. 选择 **[!UICONTROL **&#x200B;登录&#x200B;**]**.
-   4. CJA数据视图在中显示为表 **[!UICONTROL **&#x200B;表&#x200B;**]** 列表。 数据视图表的前缀为 `dv_`.
+
+   4. Customer Journey Analytics数据视图在中显示为表 **[!UICONTROL **&#x200B;表&#x200B;**]** 列表。 数据视图表的前缀为 `dv_`.
 
    5. 拖动要在画布上使用的表。
 
@@ -184,9 +187,9 @@ Adobe Experience Platform [查询服务](https://experienceleague.adobe.com/docs
 
 ### 数据管理
 
-Customer Journey Analytics中与数据治理相关的设置继承自Adobe Experience Platform。 CJA 和 Adobe Experience Platform 数据管理之间的集成允许标记敏感 CJA 数据和实施隐私政策。
+Customer Journey Analytics中与数据治理相关的设置继承自Adobe Experience Platform。 Customer Journey Analytics与Adobe Experience Platform数据管理之间的集成允许标记敏感Customer Journey Analytics数据并执行隐私政策。
 
-在 Experience Platform 使用的数据集上创建的隐私标签和策略可以在 CJA 数据视图工作流中显示。 因此，当不符合定义的隐私标签和策略时，使用CJA SQL Connector查询的数据会显示相应的警告或错误。
+在Experience Platform使用的数据集上创建的隐私标签和策略可以在Customer Journey Analytics数据视图工作流中显示。 因此，当不遵循定义的隐私标签和策略时，使用Customer Journey AnalyticsSQL Connector查询的数据会显示相应的警告或错误。
 
 ### 列出数据视图
 
@@ -233,7 +236,7 @@ prod:all=> \dv
 | 指标总计 | <pre>选择SUM(metric1)作为m1<br/>从dv1<br/>其中\&#39;时间戳\&#39;介于&#39;2022-01-01&#39;和&#39;2022-01-02&#39;之间</pre> |
 | 多维<br/>划分<br/>和顶级区别 | <pre>选择dim1、dim2、SUM(metric1) AS m1<br/>从dv1<br/>其中\&#39;时间戳\&#39;介于&#39;2022-01-01&#39;和&#39;2022-01-02&#39;之间<br/>GROUP BY dim1， dim2</pre><pre>选择dim1、dim2、SUM(metric1) AS m1<br/>从dv1<br/>其中\&#39;时间戳\&#39;介于&#39;2022-01-01&#39;和&#39;2022-01-02&#39;之间<br/>按1、2分组<br/>排序方式1、2</pre><pre>选取DISTINCT dim1， dim2<br/>从dv1</pre> |
 | 子选择：<br/>其他结果<br/>筛选 | <pre>选择dim1， m1<br/>从(<br/>  选择dim1，SUM(metric1) AS m1<br/>  从dv1<br/>  其中\&#39;时间戳\&#39;介于&#39;2022-01-01&#39;和&#39;2022-01-02&#39;之间</br>  按dim1分组<br/>)<br/>其中dim1位于(&#39;A&#39;， &#39;B&#39;)</pre> |
-| 子选择：<br/>加入<br/>数据集不在<br/>CJA | <pre>选择b.key、a.dim1、a.m1<br/>从(<br/>  选择dim1，SUM(metric1) AS m1<br/>  从dv1<br/>  其中\&#39;时间戳\&#39;介于&#39;2022-01-01&#39;和&#39;2022-01-02&#39;之间<br/>  按dim1分组<br/>) a<br/>左连接查找b ON a.dim1 = b.key</pre> |
+| 子选择：<br/>加入<br/>数据集不在<br/>Customer Journey Analytics | <pre>选择b.key、a.dim1、a.m1<br/>从(<br/>  选择dim1，SUM(metric1) AS m1<br/>  从dv1<br/>  其中\&#39;时间戳\&#39;介于&#39;2022-01-01&#39;和&#39;2022-01-02&#39;之间<br/>  按dim1分组<br/>) a<br/>左连接查找b ON a.dim1 = b.key</pre> |
 | 子选择：<br/>跨以下项查询<br/>数据视图 | <pre>SELECT键，SUM(m1) AS total<br/>从(<br/>  选择dim1 AS键，选择SUM(metric1) AS m1<br/>  从dv1<br/>  其中\&#39;时间戳\&#39;介于&#39;2022-01-01&#39;和&#39;2022-01-02&#39;之间<br/>  按dim1分组<br/><br/>  并集<br/><br/>  选择dim2 AS键，SUM(m1) AS m1<br/>  从dv2<br/>  其中\&#39;时间戳\&#39;介于&#39;2022-01-01&#39;和&#39;2022-01-02&#39;之间<br/>  按DIM2分组<br/>按键分组<br/>ORDER BY总计</pre> |
 | 子选择： <br/>分层源， <br/>正在筛选， <br/>和聚合 | 使用子选择进行分层：<br><pre>SELECT rows.dim1， SUM(rows.m1) AS total<br/>从(<br/>  选择\_.dim1，\_.m1<br/>  从(<br/>    从dv1中选择\*<br/>    其中\&#39;时间戳\&#39;介于&#39;2022-01-01&#39;和&#39;2022-01-02&#39;之间<br/>  ) \_<br/>  其中\_.dim1位于(&#39;A&#39;， &#39;B&#39;， &#39;C&#39;)<br/>)行<br/>按1分组<br/>ORDER BY总计</pre><br/>将CTE与以下内容结合使用的图层：<br/><pre>行为(<br/>  带有\_ AS (<br/>    SELECT * FROM data_ares<br/>    其中\&#39;时间戳\&#39;介于&#39;2021-01-01&#39;和&#39;2021-02-01&#39;之间<br/>  )<br/>  选择_.item 、_.units FROM _<br/>  其中_.item不为空<br/>)<br/>SELECT rows.item， SUM(rows.units) AS units<br/>FROM行，其中rows.item位于(&#39;A&#39;， &#39;B&#39;， &#39;C&#39;)<br/>GROUP BY rows.item</pre> |
 | 选择<br/>指标先于<br/> 或与<br/>尺寸 | <pre>选择SUM(metric1) AS m1， dim1<br/>从dv1<br/>其中\&#39;时间戳\&#39;介于&#39;2022-01-01&#39;和&#39;2022-01-02&#39;之间<br/>按2分组</pre> |
@@ -246,7 +249,7 @@ prod:all=> \dv
 
 您可以选择默认可用的维或数据视图中定义的维。 通过维度的ID选择维度。
 
-### 度量
+### 指标
 
 可供选择的量度包括：
 
@@ -268,7 +271,7 @@ prod:all=> \dv
 
 #### 计数区别
 
-由于CJA工作方式的根本性质，您唯一可以获得准确非重复计数的维度是 `adobe_personid` 维度。 以下SQL语句 `SELECT COUNT(DISTINCT adobe_personid)` 或 `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` 返回默认人员量度的值，该量度是不同人员的计数。 对于其他维度，会返回近似的非重复计数。
+由于Customer Journey Analytics工作方式的基础性质，您可以获得准确非重复计数的唯一维度是 `adobe_personid` 维度。 以下SQL语句 `SELECT COUNT(DISTINCT adobe_personid)` 或 `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` 返回默认人员量度的值，该量度是不同人员的计数。 对于其他维度，会返回近似的非重复计数。
 
 #### 条件量度
 

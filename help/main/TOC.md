@@ -7,19 +7,19 @@ solution: Customer Journey Analytics
 type: Documentation
 index: true
 user-guide-title: Customer Journey Analytics 指南
-user-guide-description: 了解 Customer Journey Analytics (CJA) 以及如何将 Analysis Workspace 用于来自 Experience Platform 的数据。
+user-guide-description: 了解Adobe Customer Journey Analytics以及如何将Analysis Workspace用于Experience Platform数据。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
-workflow-type: ht
-source-wordcount: '902'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '942'
+ht-degree: 85%
 
 ---
 
 
-# Customer Journey Analytics 指南 {#using}
+# Adobe Customer Journey Analytics指南 {#using}
 
-+ [Customer Journey Analytics 指南](../getting-started/cja-landing.md)
++ [Adobe Customer Journey Analytics指南](../getting-started/cja-landing.md)
 
 + 发行说明 {#releases}
    + [最新版本](../release-notes/latest.md)
@@ -27,24 +27,24 @@ ht-degree: 100%
    + [2022 版](../release-notes/2022.md)
    + [2021 版](../release-notes/2021.md)
    + [2020 版](../release-notes/2020.md)
-   + [CJA 版本](../release-notes/releases.md)
-   + [CJA 文档更新](../release-notes/doc-changes.md)
+   + [Customer Journey Analytics版本](../release-notes/releases.md)
+   + [Customer Journey Analytics 文档更新](../release-notes/doc-changes.md)
 
 + 快速入门 {#cja-overview}
    + [Customer Journey Analytics 概述](../getting-started/cja-overview.md)
    + [快速入门指南](../getting-started/cja-getting-started.md)
    + [登陆页面](../getting-started/landing.md)
    + [常见问题解答](../getting-started/cja-faq.md)
-   + [比较 CJA 和 BI 解决方案](../getting-started/cja-vs-bi.md)
+   + [比较 Customer Journey Analytics 和 BI 解决方案](../getting-started/cja-vs-bi.md)
 
 + Customer Journey Analytics 和 Adobe Analytics {#compare-aa-cja}
-   + [Adobe Analytics 的演变 ](../getting-started/aa-to-cja.md)
+   + [Adobe Analytics 的演变](../getting-started/aa-to-cja.md)
    + [适用于 Adobe Analytics 用户的用户指南](../getting-started/aa-to-cja-user.md)
    + 与 Adobe Analytics 进行比较 {#cja-aa-comparison}
       + [在 Customer Journey Analytics 中使用 Adobe Analytics 数据](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Customer Journey Analytics 功能支持](../getting-started/aa-vs-cja/cja-aa.md)
       + [比较通过 Analytics Source Connector 传递的 Analytics 数据的术语](../getting-started/aa-vs-cja/terminology.md)
-      + [跨 Adobe Analytics 和 CJA 比较数据处理](../getting-started/aa-vs-cja/data-processing-comparisons.md)
+      + [跨Adobe Analytics和Customer Journey Analytics比较数据处理](../getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [虚拟报告环境和沙盒环境](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
       + [处理规则、VISTA 和分类与数据准备](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
       + [AAID、ECID、AACUSTOMID 和 Analytics Source Connector](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
@@ -105,6 +105,7 @@ ht-degree: 100%
       + [热键（快捷方式）](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [调色板](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [视图密度](../analysis-workspace/build-workspace-project/view-density.md)
+
    + 可视化图表 {#visualizations}
       + [可视化图表概述](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [管理数据源](../analysis-workspace/visualizations/t-sync-visualization.md)
@@ -115,18 +116,23 @@ ht-degree: 100%
             + [列设置](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [行设置](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [动态项和静态项](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
+
          + [排序和过滤表格](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
 
          + [ Workspace 总计](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+
       + 同类群组表 {#cohort-table}
          + [什么是同类群组分析？](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [配置同类群组分析报告](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
          + [同类群组分析用例](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
+
       + 流失 {#fallout}
          + [流失概述](../analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [配置流失可视化图表](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [维度间流失](../analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
          + [在流失分析中应用过滤器](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
+
+
       + 流量 {#flow}
          + [流量概述](../analysis-workspace/visualizations/c-flow/flow.md)
          + [配置流量可视化图表](../analysis-workspace/visualizations/c-flow/create-flow.md)
@@ -147,6 +153,7 @@ ht-degree: 100%
       + [文本](../analysis-workspace/visualizations/text.md)
       + [树形图](../analysis-workspace/visualizations/treemap.md)
       + [维恩图](../analysis-workspace/visualizations/venn.md)
+
    + 面板 {#panels}
       + [面板概述](../analysis-workspace/c-panels/panels.md)
       + [归因面板](../analysis-workspace/c-panels/attribution.md)
@@ -159,6 +166,7 @@ ht-degree: 100%
          + [概述](../analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)
          + [输入和输出设置](../analysis-workspace/c-panels/media-playback-timespent/panel-inputs-outputs.md)
          + [常见问题解答](../analysis-workspace/c-panels/media-playback-timespent/faqs.md)
+
    + 策划、共享和计划项目 {#curate-share}
       + [“共享”菜单](../analysis-workspace/curate-share/send-schedule-files.md)
       + [策划项目](../analysis-workspace/curate-share/curate.md)
@@ -167,6 +175,7 @@ ht-degree: 100%
       + [仅供查看的项目](../analysis-workspace/curate-share/view-only-projects.md)
       + [下载 PDF 或 CSV 文件](../analysis-workspace/curate-share/download-send.md)
       + [计划项目](../analysis-workspace/curate-share/t-schedule-report.md)
+
    + Virtual Analyst {#virtual-analyst}
       + [Virtual Analyst 概述](../analysis-workspace/virtual-analyst/overview.md)
       + 异常检测 {#anomaly-detection}
@@ -182,15 +191,6 @@ ht-degree: 100%
       + [管理要求](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Analysis Workspace 中的辅助功能](../analysis-workspace/workspace-faq/aw-accessibility.md)
       + [Analysis Workspace 中的长尾](../analysis-workspace/workspace-faq/long-tail.md)
-
-
-
-
-
-
-
-
-
 
 + Analytics 功能板{#cja-dashboards}
    + [Analytics 功能板 — 概述](../mobile-app/home.md)
@@ -218,15 +218,18 @@ ht-degree: 100%
       + [管理批注](../components/annotations/manage-annotations.md)
       + [查看批注](../components/annotations/view-annotations.md)
       + [移动批注](../components/annotations/mobile-annotations.md)
+
    + 受众{#audiences}
       + [受众概述](../components/audiences/audiences-overview.md)
       + [创建并发布受众](../components/audiences/publish.md)
       + [管理受众](../components/audiences/manage.md)
+
    + 维度{#dimensions}
       + [预览维度](../components/dimensions/view-dimensions.md)
       + [划分维度](../components/dimensions/t-breakdown-fa.md)
       + [时间划分维度](../components/dimensions/time-parting-dimensions.md)
       + [具有很高基数的维度](../components/dimensions/high-cardinality.md)
+
    + [指标](../components/apply-create-metrics.md)
 
    + 过滤器 {#cja-filters}
@@ -236,6 +239,7 @@ ht-degree: 100%
       + [过滤器生成器](../components/filters/filter-builder.md)
       + [管理过滤器](../components/filters/manage-filters.md)
       + [运算符](../components/filters/operators.md)
+
    + 计算指标 {#cja-calcmetrics}
       + [计算指标概述](../components/calc-metrics/calc-metr-overview.md)
       + 计算指标工作流程 {#cm-workflow}
@@ -256,23 +260,19 @@ ht-degree: 100%
       + [默认计算指标](../components/calc-metrics/default-calcmetrics.md)
       + [基本功能](../components/calc-metrics/cm-functions.md)
       + [高级功能](../components/calc-metrics/cm-adv-functions.md)
+
    + 日程表和日期范围 {#cja-date-ranges}
       + [日程表和日期范围概述](../components/date-ranges/calendar.md)
       + [创建日期范围](../components/date-ranges/create.md)
       + [管理日期范围](../components/date-ranges/manage.md)
       + [创建自定义日期范围](../components/date-ranges/custom-date-ranges.md)
       + [日期比较](../components/date-ranges/time-comparison.md)
+
    + 数据词典 {#data-dictionary}
       + [数据词典概述](../components/data-dictionary/data-dictionary-overview.md)
       + [查看数据词典中的组件信息](../components/data-dictionary/view-data-dictionary.md)
       + [编辑数据词典中的组件条目](../components/data-dictionary/edit-entries-data-dictionary.md)
       + [监测数据词典健康状况](../components/data-dictionary/monitor-data-dictionary-health.md)
-
-
-
-
-
-
 
 + Report Builder {#cja-reportbuilder}
    + [Report Builder 概述](../report-builder/report-buider-overview.md)
@@ -294,11 +294,11 @@ ht-degree: 100%
    + [跨渠道分析常见问题解答](../cca/faq.md)
 
 + Adobe 集成 {#integrations}
-   + [关于将 Adobe 解决方案与 CJA 集成的概述](/help/integrations/overview.md)
+   + [将Adobe解决方案与Customer Journey Analytics集成概述](/help/integrations/overview.md)
    + [将 Adobe Analytics 与 Customer Journey Analytics 集成](/help/integrations/aa.md)
-   + [将 Journey Optimizer 数据与 CJA 集成](/help/integrations/ajo.md)
-   + [将 Decision Management 数据与 CJA 集成](/help/integrations/ajo-od.md)
-   + [将 Customer AI 与 CJA 集成](/help/integrations/customer-ai.md)
+   + [将Journey Optimizer数据与Customer Journey Analytics集成](/help/integrations/ajo.md)
+   + [将决策管理数据与Customer Journey Analytics集成](/help/integrations/ajo-od.md)
+   + [将客户人工智能与Customer Journey Analytics集成](/help/integrations/customer-ai.md)
 
 + 数据管理 {#cja-privacy}
    + [数据管理](../privacy/privacy-overview.md)
@@ -309,45 +309,45 @@ ht-degree: 100%
    + [Customer Journey Analytics 用例](../use-cases/cja-usecases.md)
 
    + Google Analytics 数据{#ga}
-      + [将数据从 Google Analytics 迁移到 CJA 概览](../use-cases/ga/overview.md)
+      + [将数据从Google Analytics迁移到Customer Journey Analytics概述](../use-cases/ga/overview.md)
       + [将 Google Analytics 历史数据提取到平台](../use-cases/ga/backfill.md)
       + [将流式 Google Analytics 数据配置到 Platform](../use-cases/ga/streaming.md)
-      + [在 CJA 中给出 Google Analytics 数据报告](../use-cases/ga/report.md)
+      + [在 Customer Journey Analytics 中就 Google Analytics 数据给出报告](../use-cases/ga/report.md)
+
    + 数据摄取 {#data-ingestion}
-      + [将 Marketo Engage 数据摄取到 AEP 并在 CJA 中报告](../use-cases/data-ingestion/marketo.md)
-      + [将 AEP 受众引入 CJA](../use-cases/data-ingestion/ingest-aep-segments.md)
+      + [将Marketo Engage数据摄取到Adobe Experience Platform并在Customer Journey Analytics中报告](../use-cases/data-ingestion/marketo.md)
+      + [将Adobe Experience Platform受众引入Customer Journey Analytics](../use-cases/data-ingestion/ingest-aep-segments.md)
    + 数据视图 {#data-views}
       + [数据视图用例](../use-cases/data-views/data-views-usecases.md)
       + [使用绑定维度和指标](../use-cases/data-views/binding-dimensions-metrics.md)
+
    + B2B {#b2b}
       + [将帐户级别的数据作为查询数据集进行添加](../use-cases/b2b/b2b.md)
+
    + 跨渠道数据 {#cross-channel}
       + [跨渠道分析数据](../use-cases/cross-channel/cross-channel.md)
       + [导入呼叫中心数据和网站数据](../use-cases/cross-channel/call-center.md)
+
    + Adobe Analytics 数据 {#aa-data}
       + [使用“营销渠道”维度](../use-cases/aa-data/marketing-channels.md)
       + [将报告包与不同的架构相结合](../use-cases/aa-data/combine-report-suites.md)
+
    + 复杂的数据 {#complex-data}
       + [使用对象数组](../use-cases/object-arrays.md)
-
-
-
-
-
 
 + 管理 {#cja-admin}
    + [访问控制](../admin/cja-access-control.md)
    + [查看和管理使用情况](../admin/estimate-usage.md)
    + [删除后果](../admin/cja-deletion.md)
-   + [优化 CJA 性能](../admin/optimizing-performance.md)
+   + [优化Customer Journey Analytics性能](../admin/optimizing-performance.md)
 
 + Labs {#labs}
    + [Labs 用户指南](../labs/labs.md)
 
 + 故障排除 {#troubleshooting}
-   + [将 Adobe Analytics 数据与 CJA 数据进行比较](../troubleshooting/compare.md)
-   + [Real-Time CDP 和 CJA 之间指标和受众会员计数的一致性](../troubleshooting/consistency-rcdp-cja.md)
+   + [将Adobe Analytics数据与Customer Journey Analytics数据进行比较](../troubleshooting/compare.md)
+   + [Real-time CDP与Customer Journey Analytics之间量度和受众会员计数的一致性](../troubleshooting/consistency-rcdp-cja.md)
 
-+ [CJA 术语表](../getting-started/cja-glossary.md)
++ [Customer Journey Analytics 术语表](../getting-started/cja-glossary.md)
 
-+ [CJA API](https://developer.adobe.com/cja-apis/docs/)
++ [CUSTOMER JOURNEY ANALYTICSAPI](https://developer.adobe.com/cja-apis/docs/)
