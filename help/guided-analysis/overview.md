@@ -1,9 +1,10 @@
 ---
 title: 指导分析概述
 description: 一种分析Customer Journey Analytics中的数据的方法，使产品团队能够轻松生成报告和见解。
-source-git-commit: 03f6b0cef6fa4259041a82173acda852d91e06b5
+exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
+source-git-commit: e2020d9194f7885f80671214829f06245bbab328
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '731'
 ht-degree: 1%
 
 ---
@@ -17,10 +18,6 @@ ht-degree: 1%
 与Analysis Workspace和移动记分卡类似，引导式分析报表使用来自 [数据视图](../data-views/data-views.md)，通过Adobe Experience Platform中的引用数据 [连接](../connections/overview.md). 在引导式分析中创建的所有报告都可以无缝地传输到Analysis Workspace以供进一步研究。
 
 引导式分析报告目前具有三种分析类型： [漏斗](analysis-types/funnel.md)， [趋势](analysis-types/trends.md)、和 [用户增长](analysis-types/user-growth.md). 其中每种分析类型都有多种视图类型，可为每个报表提供附加见解。
-
-## 配置
-
-引导式分析是Customer Journey Analytics的付费附加功能。 如果您的组织希望开始使用此功能，请联系您的Adobe客户团队。
 
 ## 界面
 
@@ -45,7 +42,9 @@ ht-degree: 1%
 
 {style="table-layout:auto"}
 
-## 权限
+## 配置
+
+引导式分析是Adobe Product Analytics的一部分，是Customer Journey Analytics的付费附加功能。 如果您的组织希望开始使用此功能，请联系您的Adobe客户团队。
 
 Adobe计划在未来提供特定于引导式分析的权限。
 
