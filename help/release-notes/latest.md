@@ -3,7 +3,7 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新Customer Journey Analytics发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: f224a37190d60e7f055fdeb39c42dd77d8764259
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 75%
@@ -12,7 +12,7 @@ ht-degree: 75%
 
 # 当前的Adobe Customer Journey Analytics发行说明（2023年6月）
 
-**上次更新日期**：2023 年 6 月 19 日
+**上次更新日期**：2023 年 6 月 21 日
 
 Customer Journey Analytics 版本在[持续交付模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
@@ -23,10 +23,10 @@ Customer Journey Analytics 版本在[持续交付模型](releases.md)上运行�
 | **智能题注** | 通过[!UICONTROL 折线图]可视化效果的自然语言概括，为用户提供更丰富多彩的叙事。[了解详情](/help/analysis-workspace/visualizations/intelligent-captions.md) | 2023 年 5 月 17 日 | 2023 年 6 月 1 日 |
 | **用链接共享项目（无需登录）** | 您现在可以与无权访问 Adobe Analytics 的人员共享 Analysis Workspace 项目的只读链接。这包括与组织外的人员或组织内未配置 Adobe Analytics 的人员共享。[了解详情](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=zh-Hans#share-public-link) <p>默认启用此功能，而系统管理员可禁用此功能。[了解详情](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/user-preferences.html?lang=zh-Hans#company-preferences)</p> | 2023 年 5 月 3 日 | 2023 年 6 月 6 日 |
 | **派生字段** | 这代表派生字段的初始版本。通过派生字段和可自定义的规则生成器，即可迅速定义（一般较为复杂的）数据操作。您可以进一步将派生字段定义为数据视图中的组件（量度或维度），然后在工作区中将派生字段用作组件。<p>此版本支持营销渠道模板和以下功能：</p><ul><li>拼接</li><li>Case When</li><li>查找和替换</li><li>查询</li><li>URL 解析</li></ul> <p>[了解详情](/help/data-views/derived-fields/derived-fields.md)</p> | 2023 年 5 月 10 日 | 2023 年 6 月 14 日 |
-| **PowerBI和Tableau访问Customer Journey Analytics数据视图** | Adobe Customer Journey Analytics SQL Connector允许SQL访问您在Customer Journey Analytics中定义的数据视图。 更熟悉Power BI、Tableau或其他商业智能和可视化工具的数据工程师和分析人员现在可以根据Customer Journey Analytics用户用于其Analysis Workspace项目的相同数据视图创建报告和仪表板。 [了解详情](/help/data-views/sql-connector.md) |  | 2023 年 6 月 30 日 |
-| **Experience Edge 地理位置查询** | 为您的数据流启用Experience Edge地理查找后，您将能够在Customer Journey Analytics中使用地理位置数据构建报表。 |  | 2023 年 6 月 30 日 |
-| **将对查找的支持扩充至配置文件和查找数据** | 您将不仅可将查找数据集添加到事件数据集，还可将其添加到配置文件和查找数据集。 | 2023 年 6 月 28 日 | 2023 年 7 月 12 日 |
 | **货币兑换支持** | 在数据视图中格式化量度组件时，支持货币转换。 [了解详情](../data-views/component-settings/format.md#currency) | 2023 年 6 月 7 日 | 2023 年 6 月 21 日 |
+| **PowerBI和Tableau访问Customer Journey Analytics数据视图** | Adobe Customer Journey Analytics SQL Connector允许SQL访问您在Customer Journey Analytics中定义的数据视图。 更熟悉Power BI、Tableau或其他商业智能和可视化工具的数据工程师和分析人员现在可以根据Customer Journey Analytics用户用于其Analysis Workspace项目的相同数据视图创建报告和仪表板。 [了解详情](/help/data-views/sql-connector.md) |  | 2023 年 6 月 30 日 |
+| **将对查找的支持扩充至配置文件和查找数据** | 您将不仅可将查找数据集添加到事件数据集，还可将其添加到配置文件和查找数据集。 | 2023 年 6 月 28 日 | 2023 年 7 月 12 日 |
+| **Experience Edge 地理位置查询** | 为您的数据流启用Experience Edge地理查找后，您将能够在Customer Journey Analytics中使用地理位置数据构建报表。 |  | 2023 年 7 月 26 日 |
 
 {style="table-layout:auto"}
 

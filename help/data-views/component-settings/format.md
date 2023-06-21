@@ -4,9 +4,9 @@ description: 配置指标的格式。
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 5c6e7c51369b451ac0efdcead86f71e38bd3a853
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '491'
 ht-degree: 32%
 
 ---
@@ -44,10 +44,6 @@ ht-degree: 32%
 
 
 ### 转换和显示货币
-
-[!BADGE 新功能]{type=Positive}
-
-{{release-limited-testing-section}}
 
 要为指标启用货币转换，请执行以下操作：
 
