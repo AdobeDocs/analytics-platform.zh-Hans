@@ -3,16 +3,16 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新Customer Journey Analytics发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 3c6d1cd351df9a8db8e2fcfe66ecf713ae680c16
+source-git-commit: 68041d22c55d46d740307f2ad2b0cefa249a7e96
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 73%
+source-wordcount: '1426'
+ht-degree: 69%
 
 ---
 
 # 当前的Adobe Customer Journey Analytics发行说明（2023年6月）
 
-**上次更新日期**：2023 年 6 月 21 日
+**上次更新日期**：2023 年 6 月 22 日
 
 Adobe Customer Journey Analytics版本在 [连续传递模型](releases.md) 这允许采用更具可扩展性、分阶段的方法部署功能。 因此，这些发行说明每月更新几次。请定期检查。
 
@@ -56,7 +56,7 @@ AN-318343、AN-319453
 
 | 注意事项 | 添加或更新注意事项 | 描述 |
 | --- | --- | --- |
-| 不适用 | 不适用 | 不适用 |
+| 对Customer Journey Analytics处理数据的方式的更改 | 2023 年 6 月 22 日 | 我们最近改变了在Customer Journey Analytics中处理数据的方式。<p>**老办法：**<ul><li>实时数据或事件：当数据在Adobe Experience Platform中可用后，在90分钟内处理和摄取。 （批次大小 > 500 万行：超过 90 分钟。）</li><li>少量回填 - 例如，查找 100 万行的数据集：7 天内<li>大量回填 - 例如，5000 亿行：30 天</li></ul>**新方式（自2023年6月起）**<ul><li>任何时间戳少于24小时的事件数据都将流式传入。</li><li>时间戳超过24小时的任何事件数据（即使它与较新数据位于同一批次中）都将被视为回填，并将以较低的优先级摄取。</li></ul> |
 
 ## 生命周期终止 (EOL) 通知 {#eol}
 

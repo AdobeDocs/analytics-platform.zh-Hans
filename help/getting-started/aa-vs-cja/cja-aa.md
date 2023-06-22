@@ -4,16 +4,16 @@ description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
+source-git-commit: fb5642f8dafdc16749b355cf4b77a8366e1f8401
 workflow-type: tm+mt
-source-wordcount: '2038'
-ht-degree: 42%
+source-wordcount: '2056'
+ht-degree: 41%
 
 ---
 
-# Customer Journey Analytics 功能支持
+# Adobe Customer Journey Analytics功能支持
 
-下表列出了Adobe Analytics中部分支持、部分支持或不支持Customer Journey Analytics(Customer Journey Analytics)的功能，以及Adobe Analytics中不支持或不提供的Customer Journey Analytics功能。 这些列表会随着向Customer Journey Analytics添加功能而不断变化。
+下表列出了Adobe Analytics中部分支持、部分支持或不支持Customer Journey Analytics的功能，以及Adobe Analytics中不支持或不提供的Customer Journey Analytics功能。 这些列表会随着向Customer Journey Analytics添加功能而不断变化。
 
 ## 全面支持的功能/组件 {#full-support}
 
@@ -56,6 +56,7 @@ ht-degree: 42%
 | 分类 | 现在称为“查找数据集”。Analytics中使用的分类可以使用Analytics Classifications Source Connector导入到Experience Platform和Customer Journey Analytics。 查找数据集也可以直接上传到Experience Platform并在Customer Journey Analytics中可用。 |
 | 分类规则生成器 | 支持，使用 [子字符串](/help/data-views/component-settings/substring.md) 在Customer Journey Analytics中。 在报表时使用字符串操作，而不使用查找数据集。 |
 | 自定义会话流程 | 支持除移动后台事件之外的所有自定义会话流程功能。 |
+| 货币换算 | 作为的一部分支持 [格式化量度组件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/format.html?lang=en#currency) 在数据视图中。 |
 | 促销变量持久性 | 通过[绑定维度和绑定度量](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=zh-Hans#binding-dimension)提供全面支持 |
 | 客户属性 | 现在称为“配置文件数据集”，它们不会自动从Experience Cloud导入，必须先上传到Experience Platform，然后才可在Customer Journey Analytics中使用。 |
 | 数据馈送 | 数据集的第一代数据导出可通过 [Experience Platform数据访问API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) 和至 [Experience Platform目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en). 这些选项提供收集或摄取到Experience Platform数据湖中的所有数据的事件/行级别导出。 后处理数据列不可用，因为后处理列是在查询时计算的。 可通过报告导出后置列。 |
@@ -99,7 +100,6 @@ ht-degree: 42%
 | 项目模板 | 有计划要支持。 |
 | 实时报告 | 有计划要支持。 |
 | 区段 IQ | 有计划要支持。 |
-| 货币换算 | 有计划要支持。 |
 | 交易 ID 数据源 | 有计划要支持。 |
 | 将项目/过滤器/计算量度从Adobe Analytics迁移到Customer Journey Analytics | 有计划要支持。 |
 | 摘要级别数据源 | 有计划要支持。 |
@@ -115,7 +115,7 @@ ht-degree: 42%
 
 {style="table-layout:auto"}
 
-## 从不支持 {#never}
+## 从未支持 {#never}
 
 * 使用跨设备协作的人员度量
 * Reports &amp; Analytics 功能板

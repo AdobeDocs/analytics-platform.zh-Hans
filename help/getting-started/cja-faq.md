@@ -4,10 +4,10 @@ description: Customer Journey Analytics - 常见问题解答。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 3c6d1cd351df9a8db8e2fcfe66ecf713ae680c16
+source-git-commit: 68041d22c55d46d740307f2ad2b0cefa249a7e96
 workflow-type: tm+mt
-source-wordcount: '2161'
-ht-degree: 83%
+source-wordcount: '2217'
+ht-degree: 72%
 
 ---
 
@@ -132,7 +132,13 @@ CCA 根据已学到的唯一标识符“回放”数据。重放导致新设备�
 
 +++**预计滞后时间是多少 [!UICONTROL Customer Journey Analytics] 数据 [!UICONTROL Adobe Experience Platform]？**
 
+我们最近改变了在Customer Journey Analytics中处理数据的方式。
+
+**老办法：**
 <ul><li>实时数据或事件：当数据在Adobe Experience Platform中可用后，在90分钟内处理和摄取。 （批次大小 &gt; 500 万行：超过 90 分钟。）</li><li>少量回填 - 例如，查找 100 万行的数据集：7 天内<li>大量回填 - 例如，5000 亿行：30 天</li></ul>
+
+**新方式（自2023年6月起）**
+<ul><li>任何时间戳少于24小时的事件数据都将流式传入。</li><li>时间戳超过24小时的任何事件数据（即使它与较新数据位于同一批次中）都将被视为回填，并将以较低的优先级摄取。</li></ul>
 
 +++
 
@@ -148,14 +154,14 @@ CCA 根据已学到的唯一标识符“回放”数据。重放导致新设备�
 
 | 如果您... | 产生的后果... |
 | --- | --- |
-| 删除 [!UICONTROL Adobe Experience Platform] 中的沙盒 | 如果删除沙盒，则将阻止数据流向与该沙盒中的数据集关联的 [!UICONTROL Customer Journey Analytics] 连接。目前， [!UICONTROL 连接] 中的与已删除的沙盒关联的Customer Journey Analytics不会自动删除。 |
+| 删除 [!UICONTROL Adobe Experience Platform] 中的沙盒 | 如果删除沙盒，则将阻止数据流向与该沙盒中的数据集关联的 [!UICONTROL Customer Journey Analytics] 连接。目前， [!UICONTROL 连接] 不会自动删除与被删除的沙盒关联的Customer Journey Analytics。 |
 | 删除 [!UICONTROL Adobe Experience Platform] 中的架构，但不删除与该架构关联的数据集 | [!UICONTROL Adobe Experience Platform][!UICONTROL  不允许删除具有一个或多个关联数据集的架构。]但是，具有相应权限集的管理员可以先删除关联数据集，然后再删除架构。 |
-| 删除 [!UICONTROL Adobe Experience Platform] 数据湖中的一个数据集 | 如果删除Adobe Experience Platform数据湖中的一个数据集，则将阻止从该数据集到包含该数据集的任何Customer Journey Analytics连接的数据流量。 来自该数据集的任何数据都会自动从关联的Customer Journey Analytics连接中删除。 |
+| 删除 [!UICONTROL Adobe Experience Platform] 数据湖中的一个数据集 | 删除Adobe Experience Platform Data Lake中的某个数据集会阻止数据从该数据集流向包含该数据集的任何Customer Journey Analytics连接。 来自该数据集的任何数据都会自动从关联的Customer Journey Analytics连接中删除。 |
 | 删除 [!UICONTROL Customer Journey Analytics] 中的数据集 | 请联系您的Adobe客户团队，以启动删除已保存连接中的数据集的过程。 |
 | 从数据集中删除批次（在 [!UICONTROL Adobe Experience Platform] 中） | 如果从 [!UICONTROL Adobe Experience Platform] 之后，该批次将从包含该特定批次的所有Customer Journey Analytics连接中删除。  Customer Journey Analytics将收到批次删除的通知 [!UICONTROL Adobe Experience Platform]. |
-| **批次被摄取**&#x200B;到 [!UICONTROL Customer Journey Analytics] 的同时删除批次 | 如果数据集中只有一个批次，则该批次中只会有部分数据或没有任何数据显示在 [!UICONTROL Customer Journey Analytics] 中。系统将回滚该摄取操作。例如，如果数据集中共有 5 个批次，且在删除该数据集时已摄取其中 3 个批次，那么这 3 个批次中的数据将显示在 [!UICONTROL Customer Journey Analytics] 中。 |
-| 删除 [!UICONTROL Customer Journey Analytics] 中的连接 | 将显示一条错误消息，指示：<ul><li>为已删除的连接创建的所有数据视图都将不再起作用。</li><li> 同样地，任何依赖于已删除连接中的数据视图的工作区项目都将停止运行。</li></ul> |
-| 删除 [!UICONTROL Customer Journey Analytics] 中的数据视图 | 将显示一条错误消息，指示所有依赖于这个已删除数据视图的 Workspace 项目都将停止运行。 |
+| **批次被摄取**&#x200B;到 [!UICONTROL Customer Journey Analytics] 的同时删除批次 | 如果数据集中只有一个批次，则该批次中只会有部分数据或没有任何数据显示在 [!UICONTROL Customer Journey Analytics] 中。系统将回滚该摄取操作。例如，如果数据集中共有5个批次，且在删除该数据集时已摄取其中3个批次，则这3个批次中的数据将显示在 [!UICONTROL Customer Journey Analytics]. |
+| 删除 [!UICONTROL Customer Journey Analytics] 中的连接 | 错误消息指示：<ul><li>为已删除的连接创建的所有数据视图都将不再起作用。</li><li> 同样地，任何依赖于已删除连接中的数据视图的工作区项目都将停止运行。</li></ul> |
+| 删除 [!UICONTROL Customer Journey Analytics] 中的数据视图 | 将显示一条错误消息，指示所有依赖于这个已删除数据视图的工作区项目都将停止运行。 |
 
 ## 7.在Customer Journey Analytics中合并报表包时的注意事项 {#merge-reportsuite}
 
@@ -170,16 +176,13 @@ CCA 根据已学到的唯一标识符“回放”数据。重放导致新设备�
 | [!UICONTROL 持久性] | [持久性](../data-views/component-settings/persistence.md)作用于各个报告包，它影响[!UICONTROL 筛选器]、[!UICONTROL 归因]等等。数值可能无法正确地累加。 |
 | [!UICONTROL 分类] | 在合并报告包时，不会自动为[!UICONTROL 分类]去重。将多个分类文件合并为单个时 [!UICONTROL 查找] 数据集，您可能会遇到问题。 |
 
-
 ## 8. [!UICONTROL Adobe Analytics] 组件
 
-
-+++**我能否将来自[!UICONTROL 的]过滤器[!UICONTROL （]区段[!DNL Customer Journey Analytics]）共享/发布到 Experience Platform Unified Profile 或其他 Experience Cloud 应用程序？**
++++**我是否可以共享/发布 [!UICONTROL 过滤器] 起始日期 [!DNL Customer Journey Analytics] Experience PlatformReal-Time CDP或其他Experience Cloud应用程序？**
 
 还不能，但我们正在努力提供这种功能。
 
 +++
-
 
 +++**我之前的 [!UICONTROL eVar] 设置发生了什么变化？**
 
@@ -187,13 +190,11 @@ CCA 根据已学到的唯一标识符“回放”数据。重放导致新设备�
 
 +++
 
-
 +++**我的所有会话和变量持久性设置现在位于何处？**
 
-[!UICONTROL Customer Journey Analytics] 在报告时应用所有这些设置，因此这些设置现在位于数据视图中。对这些设置的更改现在具有追溯性，您可以使用多个数据视图来管理多个版本！
+[!UICONTROL Customer Journey Analytics] 在报告时应用所有这些设置，并且这些设置现在位于数据视图中。 对这些设置的更改现在具有追溯性，您可以使用多个数据视图来拥有多个版本！
 
 +++
-
 
 +++**我们的现有区段/计算量度会发生什么？**
 
@@ -201,13 +202,11 @@ CCA 根据已学到的唯一标识符“回放”数据。重放导致新设备�
 
 +++
 
-
 +++**[!UICONTROL Customer Journey Analytics] 如何处理 `Uniques Exceeded` 限制？**
 
 [!UICONTROL Customer Journey Analytics] 没有唯一值限制，因此无需担心！
 
 +++
-
 
 +++**如果我是现有 [!DNL Data Workbench] 客户，是否可以立即转到 [!UICONTROL Customer Journey Analytics]？**
 
@@ -229,10 +228,10 @@ Adobe 定期监控和执行使用限制。“数据行数”表示可供在 Cust
 
 在某些情况下，您可能会注意到您的连接所摄取的事件总数与 [!UICONTROL Adobe Experience Platform] 中数据集的行数存在差异。在此示例中，“B2B Impression”数据集的行数为 7650，而该数据集在 [!UICONTROL Adobe Experience Platform] 中的行数为 3830。导致差异的原因有多种，可采取以下步骤进行诊断：
 
-1. 按 **[!UICONTROL Platform 数据集 ID]** 划分此维度，此时，您会发现存在两个大小相同但 **[!UICONTROL Platform 数据集 ID]** 不同的数据集。每个数据集都包含 3825 条记录。这意味着由于缺少人员 ID 或缺少时间戳，[!UICONTROL Customer Journey Analytics] 忽略了 5 条记录：
+1. 此维度的划分方式 **[!UICONTROL 平台数据集ID]** 您会发现两个大小相同但大小不同的数据集 **[!UICONTROL Platform数据集ID]**. 每个数据集都包含 3825 条记录。这意味着由于缺少人员 ID 或缺少时间戳，[!UICONTROL Customer Journey Analytics] 忽略了 5 条记录：
 
    ![划分](assets/data-size2.png)
 
-2. 此外，如果我们登入 [!UICONTROL Adobe Experience Platform]，便会发现不存在 ID 为“5f21c12b732044194bffc1d0”的数据集，这表示在最初创建连接时，从 [!UICONTROL Adobe Experience Platform] 中删除了此特定数据集。不过，之后又将此数据集重新添加到 Customer Journey Analytics 中，但 [!UICONTROL Adobe Experience Platform] 生成了一个不同的 [!UICONTROL Platform 数据集 ID]。
+2. 此外，如果我们登入 [!UICONTROL Adobe Experience Platform]，没有ID为“5f21c12b732044194bffc1d0”的数据集，因此有人从中删除了此特定数据集 [!UICONTROL Adobe Experience Platform] 创建初始连接的时间。 之后，又将此代码添加到Customer Journey Analytics中，但进行了其他更改 [!UICONTROL 平台数据集ID] 生成者 [!UICONTROL Adobe Experience Platform].
 
 有关更多信息，请参阅在 [!UICONTROL Customer Journey Analytics] 和 [!UICONTROL Adobe Experience Platform] 中[删除数据集和连接的后果](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans#implications-of-deleting-data-components)。
