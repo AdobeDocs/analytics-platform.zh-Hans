@@ -4,10 +4,10 @@ description: Customer Journey Analytics - 常见问题解答。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 3c6d1cd351df9a8db8e2fcfe66ecf713ae680c16
 workflow-type: tm+mt
-source-wordcount: '2162'
-ht-degree: 84%
+source-wordcount: '2161'
+ht-degree: 83%
 
 ---
 
@@ -130,7 +130,7 @@ CCA 根据已学到的唯一标识符“回放”数据。重放导致新设备�
 >[!NOTE]
 >Customer Journey Analytics中没有固定的数据大小，因此Adobe无法承诺标准摄取时间。 我们正在积极地努力通过新的更新和摄取优化来缩短这些延迟。
 
-+++**在 [!UICONTROL Adobe Experience Platform] 上，[!UICONTROL Customer Journey Analytics] 的预期滞后时间是多少？**
++++**预计滞后时间是多少 [!UICONTROL Customer Journey Analytics] 数据 [!UICONTROL Adobe Experience Platform]？**
 
 <ul><li>实时数据或事件：当数据在Adobe Experience Platform中可用后，在90分钟内处理和摄取。 （批次大小 &gt; 500 万行：超过 90 分钟。）</li><li>少量回填 - 例如，查找 100 万行的数据集：7 天内<li>大量回填 - 例如，5000 亿行：30 天</li></ul>
 
@@ -171,7 +171,7 @@ CCA 根据已学到的唯一标识符“回放”数据。重放导致新设备�
 | [!UICONTROL 分类] | 在合并报告包时，不会自动为[!UICONTROL 分类]去重。将多个分类文件合并为单个时 [!UICONTROL 查找] 数据集，您可能会遇到问题。 |
 
 
-## 8. 传统 [!UICONTROL Adobe Analytics] 组件
+## 8. [!UICONTROL Adobe Analytics] 组件
 
 
 +++**我能否将来自[!UICONTROL 的]过滤器[!UICONTROL （]区段[!DNL Customer Journey Analytics]）共享/发布到 Experience Platform Unified Profile 或其他 Experience Cloud 应用程序？**
@@ -183,7 +183,7 @@ CCA 根据已学到的唯一标识符“回放”数据。重放导致新设备�
 
 +++**我之前的 [!UICONTROL eVar] 设置发生了什么变化？**
 
-[!UICONTROL Customer Journey Analytics] 中不再存在传统 Adobe Analytics 意义上的 [!UICONTROL eVar]、[!UICONTROL 属性]和[!UICONTROL 事件]。您有无限的架构元素（维度、量度、列表字段）。因此，您在数据收集过程中使用的所有属性设置现在都会在查询时应用。
+[!UICONTROL eVar]， [!UICONTROL prop]、和 [!UICONTROL 事件] 在Adobe Analytics中，不再存在于 [!UICONTROL Customer Journey Analytics]. 您有无限的架构元素（维度、量度、列表字段）。因此，您在数据收集过程中使用的所有属性设置现在都会在查询时应用。
 
 +++
 
