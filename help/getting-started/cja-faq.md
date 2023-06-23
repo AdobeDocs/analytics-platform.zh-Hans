@@ -4,9 +4,9 @@ description: Customer Journey Analytics - 常见问题解答。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: eb05f22fdef55147da3bb84ba038f52ee7769167
+source-git-commit: b66aed675153af3a2a0fbb77569d5c4c90d48022
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2199'
 ht-degree: 72%
 
 ---
@@ -132,7 +132,7 @@ CCA 根据已学到的唯一标识符“回放”数据。重放导致新设备�
 
 +++**预计滞后时间是多少 [!UICONTROL Customer Journey Analytics] 数据 [!UICONTROL Adobe Experience Platform]？**
 
-<ul><li>实时数据或事件：当数据在Adobe Experience Platform中可用后，在90分钟内处理和摄取。 （批次大小 &gt; 500 万行：超过 90 分钟。）</li><li>少量回填 - 例如，查找 100 万行的数据集：7 天内<li>大量回填 - 例如，5000 亿行：30 天</li></ul>
+<ul><li>实时数据或事件：当数据在Adobe Experience Platform中可用后，在90分钟内处理和摄取。 （批次大小 &gt; 500 万行：超过 90 分钟。）</li><li>少量回填：7天内<li>大量回填：30天内</li></ul>
 
 我们最近更改了在Customer Journey Analytics中处理数据的方式：
 
