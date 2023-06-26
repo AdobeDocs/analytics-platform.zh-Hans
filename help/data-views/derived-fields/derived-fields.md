@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: cc33257a04214ba786d7e5510a1b6bc618a84883
 workflow-type: tm+mt
-source-wordcount: '3262'
+source-wordcount: '3281'
 ht-degree: 8%
 
 ---
@@ -761,4 +761,5 @@ Customer Journey Analytics使用以下默认容器模型：
 以下限制通常适用于派生字段功能：
 
 - 在为派生字段定义规则时，最多可以使用10个不同的架构字段（不包括标准字段）。
+   - 在这个最多为10个不同的架构字段中，最多只允许3个查找架构或配置文件架构字段。
 - 每个Customer Journey Analytics连接最多可以有100个派生字段。
