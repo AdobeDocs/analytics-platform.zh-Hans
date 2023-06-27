@@ -4,9 +4,9 @@ description: 配置指标的格式。
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 66e7adfbca3f20d21b4331033f70ac7d0933cd12
+source-git-commit: 585242be7ffff5b089d8452d34f7ee012a7d01f5
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '532'
 ht-degree: 30%
 
 ---
@@ -40,20 +40,20 @@ ht-degree: 30%
 
 1. 输入数字 **[!UICONTROL 小数位]**.
 
-2. 从中选择货币 **[!UICONTROL 显示货币]** 列表。
+1. 从中选择货币 **[!UICONTROL 显示货币]** 列表。
 
 
 ### 转换和显示货币
 
-要为指标启用货币转换，请执行以下操作：
+要为一个或多个量度启用货币转换，请执行以下操作：
 
 - 设置您的Customer Journey Analytics连接，使其至少包含一个事件数据集，该数据集为包含货币量度的每个事件保留一个货币代码维度。 该货币代码维度使用符合 [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) 表示货币的标准。 这些值应采用全大写格式，例如$表示美元，欧元表示欧元，英镑表示英镑。
 
    1. 从包含货币代码的数据集之一中选择维度。 例如， [!UICONTROL 货币代码].
 
-   2. 选择 **[!UICONTROL 货币代码]** 从维度列表中。
+   1. 选择 **[!UICONTROL 货币代码]** 从维度列表中。
 
-  如果您有更多维度包含要用于货币兑换的货币代码，请重复这些步骤。
+- 如果您有更多维度包含要用于货币兑换的货币代码，请重复这些步骤。
 
 >[!NOTE]
 >
@@ -64,11 +64,11 @@ ht-degree: 30%
 
 1. 输入数字 **[!UICONTROL 小数位]**.
 
-2. 选择 **[!UICONTROL 转换并发]**.
+1. 选择 **[!UICONTROL 转换并发]**.
 
-3. 从包含货币代码字段的维度列表中选择相应的维度。
+1. 从包含货币代码字段的维度列表中选择相应的维度。
 
-4. 从中选择货币 **[!UICONTROL 转换和显示货币]** 列表。
+1. 从中选择货币 **[!UICONTROL 转换和显示货币]** 列表。
 
 ### 常见问题解答
 
@@ -76,9 +76,15 @@ ht-degree: 30%
 
 在报告时，量度和原始货币代码的值将转换为USD，然后转换为配置为显示的货币。 对于此转换，使用事件时适用的每日货币汇率。
 
++++
+
+
 +++ 每日转化率可维持多久以前的水平？
 
 过去四年中每天的兑换率保持不变？
+
++++
+
 
 +++ 如果我当前数据架构中没有货币代码字段，该怎么办？
 
