@@ -4,10 +4,10 @@ description: 配置指标的格式。
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 5c6e7c51369b451ac0efdcead86f71e38bd3a853
+source-git-commit: 66e7adfbca3f20d21b4331033f70ac7d0933cd12
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 32%
+source-wordcount: '530'
+ht-degree: 30%
 
 ---
 
@@ -47,17 +47,11 @@ ht-degree: 32%
 
 要为指标启用货币转换，请执行以下操作：
 
-- 设置您的Customer Journey Analytics连接，使其至少包含一个事件数据集，该数据集为包含货币量度的每个事件保留一个货币代码维度。 该货币代码维度使用符合 [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) 表示货币的标准。 例如，USD表示$，EUR表示€，GBP表示£。
-
-- 您已（可选）应用 [!UICONTROL 货币代码] 一个或多个维度的上下文标签，这些维度定义您的数据集中可用的货币代码。
-
-  要应用 [!UICONTROL 货币代码] 上下文标签，在 [!UICONTROL 组件] 数据视图的选项卡：
-
-  <!--![Currency Context Label](../assets/currency-context-label.png)-->
+- 设置您的Customer Journey Analytics连接，使其至少包含一个事件数据集，该数据集为包含货币量度的每个事件保留一个货币代码维度。 该货币代码维度使用符合 [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) 表示货币的标准。 这些值应采用全大写格式，例如$表示美元，欧元表示欧元，英镑表示英镑。
 
    1. 从包含货币代码的数据集之一中选择维度。 例如， [!UICONTROL 货币代码].
 
-   2. 选择 **[!UICONTROL 货币代码]** 从 [!UICONTROL 上下文标签] 列表。
+   2. 选择 **[!UICONTROL 货币代码]** 从维度列表中。
 
   如果您有更多维度包含要用于货币兑换的货币代码，请重复这些步骤。
 
@@ -72,7 +66,7 @@ ht-degree: 32%
 
 2. 选择 **[!UICONTROL 转换并发]**.
 
-3. 根据应用的上下文标签，来自的相应维度 **[!UICONTROL 货币代码维度]** 将自动选择列表。 您可以选择任何其他维度，包括您另外应用了货币代码上下文标签的维度。
+3. 从包含货币代码字段的维度列表中选择相应的维度。
 
 4. 从中选择货币 **[!UICONTROL 转换和显示货币]** 列表。
 
@@ -81,6 +75,14 @@ ht-degree: 32%
 +++ 如何执行货币转换？
 
 在报告时，量度和原始货币代码的值将转换为USD，然后转换为配置为显示的货币。 对于此转换，使用事件时适用的每日货币汇率。
+
++++ 每日转化率可维持多久以前的水平？
+
+过去四年中每天的兑换率保持不变？
+
++++ 如果我当前数据架构中没有货币代码字段，该怎么办？
+
+有多个选项可用于创建新的货币代码字段，包括数据准备、数据Distiller和派生字段。 “数据准备”将是新实施的理想选择，因为它仅用于以后的实施。 根据组织的设置，可以使用Data Distiller和派生字段来访问历史货币代码值。
 
 +++
 
