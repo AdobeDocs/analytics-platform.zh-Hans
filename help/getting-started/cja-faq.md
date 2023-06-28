@@ -4,10 +4,10 @@ description: Customer Journey Analytics - 常见问题解答。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 7a2abd797b89de094cf00ec1d75984e47452da40
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '2185'
-ht-degree: 72%
+source-wordcount: '2197'
+ht-degree: 68%
 
 ---
 
@@ -38,39 +38,40 @@ Customer Journey Analytics 包括[数据准备](https://experienceleague.adobe.c
 +++
 
 
-## 2. 拼合数据（跨渠道分析） {#stitching}
+## 2.拼合数据 {#stitching}
 
 +++**[!UICONTROL Customer Journey Analytics] 是否可以跨设备或跨数据集进行“拼合”？**
 
-支持。[!UICONTROL Customer Journey Analytics] 具有一个称为[跨渠道分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=zh-Hans) (CCA) 的拼合解决方案，通过它可重新生成数据集的人员 ID 的密钥，而这样可无缝地组合多个数据集。
+是的。[!UICONTROL Customer Journey Analytics] 具有 [拼接](../stitching/overview.md) 跨数据集内经过身份验证和未经身份验证的事件工作的功能。 这允许将不同的记录解析为单个拼合ID，以在人员级别进行跨设备分析。
+此外，当在数据集间使用通用命名空间ID（人员ID）时， [连接](/help/connections/overview.md)，您将能够对多个数据集的无缝组合运行分析，并在人员级别“拼接”。
 
 +++
 
 
 +++**是否支持从匿名行为到实名行为的拼合？**
 
-支持。[跨渠道分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=zh-Hans)查看来自已通过和未通过身份验证的会话的用户数据来生成拼合 ID。
+是的。[拼接](../stitching/overview.md) 查看来自经过身份验证和未经身份验证的会话的用户数据以生成拼合ID。
 
 +++
 
 
-+++**CCA 中如何进行“重放”？**
++++**“重播”在拼合中如何工作？**
 
-CCA 根据已学到的唯一标识符“回放”数据。重放导致新设备连接并被拼合。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=zh-Hans#step-1%3A-live-stitching)
+根据所掌握的唯一标识符拼接“重播”数据。 重放旨在拼接来自同时已识别的设备的初始未经身份验证的事件。 [了解详情](../stitching/explained.md)
 
 +++
 
 
-+++**如何在 CCA 中拼合历史数据（回填）？**
++++**拼合历史数据（回填）的工作原理是什么？**
 
-首次启用时，Adobe 提供追溯到上月初（最多 60 天）的拼合数据的回填。为实现此回填，当时的未拼合数据中必须存在过渡 ID。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=zh-Hans#enable-cross-channel-analytics)
+首次启用时，Adobe 提供追溯到上月初（最多 60 天）的拼合数据的回填。为实现此回填，当时的未拼合数据中必须存在过渡 ID。[了解详情](../stitching/explained.md)
 
 +++
 
 
 +++**未拼合的配置文件数据集记录的预期行为是什么？**
 
-**示例场景**：使用在Customer Journey Analytics连接中联接2个数据集 `CRMid` 作为人员ID。 一个是 Web 事件数据集，所有记录中都包含 `CRMid`。另一个数据集是CRM配置文件数据集。 40%的CRM数据集具有 `CRMid` 在Web事件数据集中存在。 另外 60% 的数据不在 Web 事件数据集中 - 这些记录是否显示在 Analysis Workspace 的报告中？<p> **答案**：无事件关联的配置文件行存储在Customer Journey Analytics中。 但是，您无法在 Analysis Workspace 中查看它们，直到与该 ID 关联的事件出现。
+**示例场景**：使用在Customer Journey Analytics连接中联接2个数据集 `CRMid` 作为人员ID。 一个是 Web 事件数据集，所有记录中都包含 `CRMid`。另一个数据集是 CRM 配置文件数据集。CRM 数据集中 40% 的数据都在 Web 事件数据集中有 `CRMid`。另外 60% 的数据不在 Web 事件数据集中 - 这些记录是否显示在 Analysis Workspace 的报告中？<p> **答案**：无事件关联的配置文件行存储在Customer Journey Analytics中。 但是，您无法在 Analysis Workspace 中查看它们，直到与该 ID 关联的事件出现。
 
 +++
 
@@ -226,6 +227,6 @@ Adobe 定期监控和执行使用限制。“数据行数”表示可供在 Cust
 
    ![划分](assets/data-size2.png)
 
-2. 此外，如果我们登入 [!UICONTROL Adobe Experience Platform]，没有ID为“5f21c12b732044194bffc1d0”的数据集，因此有人从中删除了此特定数据集 [!UICONTROL Adobe Experience Platform] 创建初始连接的时间。 之后，又将此代码添加到Customer Journey Analytics中，但进行了其他更改 [!UICONTROL 平台数据集ID] 生成者 [!UICONTROL Adobe Experience Platform].
+1. 此外，如果我们登入 [!UICONTROL Adobe Experience Platform]，没有ID为“5f21c12b732044194bffc1d0”的数据集，因此有人从中删除了此特定数据集 [!UICONTROL Adobe Experience Platform] 创建初始连接的时间。 之后，又将此代码添加到Customer Journey Analytics中，但进行了其他更改 [!UICONTROL 平台数据集ID] 生成者 [!UICONTROL Adobe Experience Platform].
 
 有关更多信息，请参阅在 [!UICONTROL Customer Journey Analytics] 和 [!UICONTROL Adobe Experience Platform] 中[删除数据集和连接的后果](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans#implications-of-deleting-data-components)。

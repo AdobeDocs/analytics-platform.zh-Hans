@@ -4,10 +4,10 @@ description: 了解Customer Journey Analytics如何通过组合数据集创建�
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 72%
+source-wordcount: '584'
+ht-degree: 61%
 
 ---
 
@@ -77,3 +77,28 @@ ht-degree: 72%
 | 黄色 | 6 |
 | 蓝色 | 3 |
 | 红色 | 2 |
+
+## 跨渠道分析
+
+合并数据集的下一个级别是跨渠道分析，其中基于通用标识符（人员ID）合并来自不同渠道的数据集。 跨渠道分析可从拼接功能中获益，允许您重新生成数据集的人员ID键值，以便正确更新数据集，实现多个数据集的无缝拼合。 拼接查看来自经过身份验证和未经身份验证的会话的用户数据，以生成拼接ID。
+
+跨渠道分析允许您回答以下问题：
+
+* 有多少人在一个渠道开始体验，然后在另一个渠道结束体验？
+* 有多少人与我的品牌互动？他们使用多少台设备？设备的类型如何？这些设备如何进行交叠？
+* 出现下面这种情况的频率是多少：人们先是在移动设备上开启一项任务，随后为了完成该任务而移至桌面 PC？登陆一台设备后执行的营销活动点进次数是否会导致在其他设备上的转化？
+* 如果考虑跨设备历程，我对营销活动效用的理解会有怎样的变化？ 我的漏斗分析会有怎样的变化？
+* 用户从一台设备转到另一台设备时最常用的路径是什么？他们在哪里退出？他们在哪里继续？
+* 使用多台设备的用户，其行为与使用单台设备的用户有何区别？
+
+
+有关跨渠道分析的更多信息，请参阅特定用例：
+
+* [跨渠道分析](../use-cases/cross-channel/cross-channel.md)
+
+有关更深入的讨论拼合功能，请转到：
+
+* [拼接概述](/help/stitching/overview.md)
+* [拼合的工作原理](../stitching/explained.md)
+* [常见问题解答](/help/stitching/faq.md)
+

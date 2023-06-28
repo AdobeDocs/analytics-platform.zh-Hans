@@ -4,9 +4,9 @@ description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: fb5642f8dafdc16749b355cf4b77a8366e1f8401
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '2056'
+source-wordcount: '2055'
 ht-degree: 41%
 
 ---
@@ -79,7 +79,7 @@ ht-degree: 41%
 
 | 功能 | 注释 |
 | --- | --- |
-| 跨设备/跨渠道拼接 | 支持直接包含标识信息的数据集（也称为“基于字段的”拼接）。尚不支持基于图形的拼接，但已规划。请参阅[跨渠道分析](/help/cca/overview.md)。 |
+| 跨设备/跨渠道拼接 | 支持直接包含标识信息的数据集（也称为“基于字段的”拼接）。尚不支持基于图形的拼接，但已规划。参见 [拼接](../../stitching/overview.md). |
 | 机器人筛选 | 对于基于 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 的数据集，将应用机器人筛选。其他数据集的常规机器人过滤逻辑不由 [!UICONTROL Experience Platform] 或Customer Journey Analytics。 |
 | 设备、浏览器、反向链接、技术维度 | 对于基于 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 的数据集支持。请参阅 [关于通过ADC支持哪些Analytics变量的文档](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=zh-Hans).<p>如果您使用Experience PlatformWeb SDK数据收集，则当前不支持基于设备查找的设备与维度。 有计划以后支持。 |
 | 地理分段维度 | 收集到Adobe AnalyticsCustomer Journey Analytics的所有地理分段/地理位置都将通过 [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans). 不使用Analytics Source Connector但依赖Experience PlatformWeb SDK进行数字数据收集的实施，可以使用 [Experience Edge地理位置查找服务](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hans). |

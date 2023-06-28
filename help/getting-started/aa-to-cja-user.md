@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '1480'
-ht-degree: 76%
+source-wordcount: '1479'
+ht-degree: 75%
 
 ---
 
@@ -104,7 +104,7 @@ Adobe已将“区段”组件重命名为“过滤器”，以更好地符合行
 
 ## 更改了Adobe识别访客的方式
 
-Customer Journey Analytics扩展了ECID之外的身份概念，以包含您要使用的任何ID，包括客户ID、Cookie ID、拼合ID、用户ID、跟踪代码等。 跨数据集使用通用命名空间ID，或使用[跨渠道分析](/help/cca/overview.md)可帮助将不同数据集中的人员关联在一起。在Customer Journey Analytics中设置工作区项目的任何用户都必须了解跨数据集使用的ID。 请观看以下视频，重点介绍Customer Journey Analytics中标识的使用：
+Customer Journey Analytics扩展了ECID之外的身份概念，以包含您要使用的任何ID，包括客户ID、Cookie ID、拼合ID、用户ID、跟踪代码等。 跨数据集使用通用命名空间ID，或使用 [拼接](../stitching/overview.md) 有助于将不同数据集中的人员关联在一起。 在Customer Journey Analytics中设置工作区项目的任何用户都必须了解跨数据集使用的ID。 请观看以下视频，重点介绍Customer Journey Analytics中标识的使用：
 
 >[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 

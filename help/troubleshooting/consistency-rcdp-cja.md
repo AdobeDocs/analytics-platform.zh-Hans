@@ -4,9 +4,9 @@ title: Real-time CDP与Customer Journey Analytics之间量度和受众会员计�
 role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '624'
 ht-degree: 25%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 25%
 
 Real-time CDP和Customer Journey Analytics目前对个人的定义不同。 Real-time CDP 完全依赖于[身份图](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=zh-Hans)中的信息来构建合并的用户档案。
 
-可以将Customer Journey Analytics配置为使用 [跨渠道分析](/help/cca/overview.md) 它会从数据湖中的数据集提取标识符，并应用自定义逻辑将它们链接在一起。
+可以将Customer Journey Analytics配置为使用 [拼接](../stitching/overview.md) 它会从数据湖中的数据集提取标识符，并应用自定义逻辑将它们链接在一起。
 
 将来，Customer Journey Analytics将能够使用身份图。
 
