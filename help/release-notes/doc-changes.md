@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: ffa57379c868322290fbe23ba43659620c01f068
 workflow-type: tm+mt
-source-wordcount: '2159'
-ht-degree: 78%
+source-wordcount: '2213'
+ht-degree: 76%
 
 ---
 
@@ -20,6 +20,7 @@ Customer Journey Analytics文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2023 年 6 月** | |
+| 跨渠道分析和拼合 | 为了迎接即将到来的启用拼合的更改以及进一步阐明如何使用拼合提高跨渠道分析的效率，对与跨渠道分析功能相关的所有内容进行了编辑，将跨渠道分析称为Customer Journey Analytics功能，将拼合称为完成此操作的重要功能。 |
 | PowerBI和Tableau访问Customer Journey Analytics数据视图 | Customer Journey AnalyticsSQL Connector允许SQL访问您在Customer Journey Analytics中定义的数据视图。 [了解详情](/help/data-views/sql-connector.md) |
 | Adobe Journey Optimizer 数据视图 | Customer Journey Analytics管理员有权访问Customer Journey Analytics中一些名为的“AJO数据视图(Sandbox-name)”的额外数据视图。 [了解详情](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html)。 |
 | 货币换算 | 更新了以下项的文档 [货币换算](../data-views/component-settings/format.md#currency) 支持。 |
