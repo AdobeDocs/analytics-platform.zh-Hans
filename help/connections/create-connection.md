@@ -4,9 +4,9 @@ description: 描述如何在 Customer Journey Analytics 中创建与 Platform �
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 9721d9899735f2a009d4cea92b52df513eae97a3
+source-git-commit: 7bcfedb472c26605e53805a09ef827fd20a1f986
 workflow-type: tm+mt
-source-wordcount: '2608'
+source-wordcount: '2605'
 ht-degree: 60%
 
 ---
@@ -98,8 +98,6 @@ ht-degree: 60%
 >
 >您必须至少添加一个事件数据集作为连接的一部分。
 
-![“添加数据集”对话框](assets/add-dataset.png)
-
 有三种不同的数据集类型： [!UICONTROL 事件] 数据， [!UICONTROL 个人资料] 数据，以及 [!UICONTROL 查找] 数据。
 
 | 数据集类型 | 描述 | 时间戳 | 架构 | 人员 ID |
@@ -150,7 +148,7 @@ Customer Journey Analytics 支持将标识映射作为个人 ID。Identity Map �
 
 {style="table-layout:auto"}
 
-## 计算平均每日事件数
+## 计算平均每日事件数 {#average-number}
 
 此计算针对连接中的每个数据集完成。
 
