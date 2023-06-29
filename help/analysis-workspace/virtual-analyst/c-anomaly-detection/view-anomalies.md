@@ -3,10 +3,10 @@ description: 您可以在表格或折线图中查看异常。
 title: 在 Analysis Workspace 中查看异常
 feature: Anomaly Detection
 exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
-source-git-commit: e62261d1d440c0a85e4cab95611c6e6272de6724
-workflow-type: ht
-source-wordcount: '460'
-ht-degree: 100%
+source-git-commit: 34566535589c84c96a8d7a47988cd155b743674e
+workflow-type: tm+mt
+source-wordcount: '461'
+ht-degree: 97%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 100%
 
 您可以在表格或折线图中查看异常。
 
-## 在表中查看异常 {#section_869A87B92B574A38B017A980ED8A29C5}
+## 在表中查看异常 {#table}
 
-您可以在时间序列自由形式表中查看异常。
+您可以在时间序列自由格式表中查看异常。
 
 1. 选择列标题中的列设置图标，然后确保在选项列表中选择了&#x200B;[!UICONTROL **异常情况**]&#x200B;选项。有关更多信息，请参阅[列设置](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)。
 
@@ -32,13 +32,13 @@ ht-degree: 100%
 
 1. 选择行右上角的灰色三角形以查看有关异常的详细信息。这显示了实际值偏离预期值以上或以下的程度（以百分比表示）。
 
-## 在折线图中查看异常 {#section_7C1192AFDB4345A8A2CCFB3AE0C47D82}
+## 在折线图中查看异常 {#line-chart}
 
-折线图是唯一允许您查看异常情况的可视化。
+折线图是唯一允许您查看异常的可视化图表。
 
-要在折线图中查看异常：
+要在折线图中查看异常，请执行以下操作：
 
-1. 选择可视化标题中的设置图标，然后确保在选项列表中选择&#x200B;[!UICONTROL **显示异常**]&#x200B;选项。有关详细信息，请参阅[折线图](/help/analysis-workspace/visualizations/line.md)。
+1. 选择可视化标题中的设置图标，然后确保在选项列表中选择&#x200B;[!UICONTROL **显示异常**]&#x200B;选项。有关更多信息，请参阅[折线图](/help/analysis-workspace/visualizations/line.md)。
 
 1. （可选）要允许置信区间缩放图表，请选择可视化标题中的设置图标，然后选择选项&#x200B;**[!UICONTROL 允许异常缩放 Y 轴]**。
 
@@ -50,7 +50,7 @@ ht-degree: 100%
 
    异常情况如下折线图所示：
 
-   当检测到数据异常时，**白点**&#x200B;出现在线路上。（根据[异常检测中使用的统计技术](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)中描述的高级统计技术，观察被认为是异常的。）
+   当检测到数据异常时，**白点**&#x200B;出现在折线上。（根据[异常检测中使用的统计技术](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)中描述的高级统计技术，观察被认为是异常的。）
 
    **浅色阴影区域**&#x200B;是值应该出现的置信带或预期范围。超出此预期范围的任何值都是异常。
 

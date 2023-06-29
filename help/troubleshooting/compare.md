@@ -4,16 +4,16 @@ description: 了解如何比较 Adobe Analytics 数据和 Customer Journey Analy
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+source-git-commit: 34566535589c84c96a8d7a47988cd155b743674e
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 65%
+source-wordcount: '906'
+ht-degree: 64%
 
 ---
 
 # 将Adobe Analytics数据与Customer Journey Analytics数据进行比较
 
-随着贵组织采用Customer Journey Analytics，您可能会注意到Adobe Analytics与Customer Journey Analytics之间的数据存在某些差异。 这是正常情况，并且可能由于若干原因出现这种情况。Customer Journey Analytics旨在允许您改进AA中数据的一些限制。 但是，可能会出现意外的差异。本文旨在帮助您诊断和解决这些差异，以便您和您的团队可以使用Customer Journey Analytics，而不受数据完整性问题的影响。
+随着贵组织采用Customer Journey Analytics，您可能会注意到Adobe Analytics与Customer Journey Analytics之间的数据存在某些差异。 这是正常情况，并且可能由于若干原因出现这种情况。Customer Journey Analytics旨在允许您改进AA中数据的一些限制。 但是，可能会出现意外和意外的差异。 本文旨在帮助您诊断和解决这些差异，以便您和您的团队可以使用Customer Journey Analytics，而不受数据完整性问题的影响。
 
 Adobe Analytics Adobe Experience Platform假设您通过 [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)，然后使用此数据集创建了Customer Journey Analytics连接。
 
