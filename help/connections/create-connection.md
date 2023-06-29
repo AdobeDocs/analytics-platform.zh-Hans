@@ -4,10 +4,10 @@ description: 描述如何在 Customer Journey Analytics 中创建与 Platform �
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 9721d9899735f2a009d4cea92b52df513eae97a3
 workflow-type: tm+mt
-source-wordcount: '2543'
-ht-degree: 62%
+source-wordcount: '2608'
+ht-degree: 60%
 
 ---
 
@@ -98,12 +98,14 @@ ht-degree: 62%
 >
 >您必须至少添加一个事件数据集作为连接的一部分。
 
+![“添加数据集”对话框](assets/add-dataset.png)
+
 有三种不同的数据集类型： [!UICONTROL 事件] 数据， [!UICONTROL 个人资料] 数据，以及 [!UICONTROL 查找] 数据。
 
 | 数据集类型 | 描述 | 时间戳 | 架构 | 人员 ID |
 |---|---|---|---|---|
 | **[!UICONTROL 事件]** | 表示及时事件的数据（例如，Web访问、交互、交易、POS数据、调查数据、广告展示数据等）。 例如，此数据可能是典型的点击流数据，包含客户ID或Cookie ID以及时间戳。 使用“事件”数据，您可以灵活地选择将哪个 ID 用作人员 ID。 | 自动设置为 [!UICONTROL Experience Platform] 中基于事件的架构的默认时间戳字段。 | 任何基于 XDM 类且具有“时间序列”行为的内置或自定义架构。示例包括“XDM 体验事件”或“XDM 决策事件”。 | 您可以选择想要包含的人员 ID。Experience Platform 中定义的每个数据集架构，可以拥有自己定义的一个或多个标识集，并与命名空间关联。这些身份中的任何身份都可以用作人员ID。 示例包括Cookie ID、拼接ID、用户ID、跟踪代码等。 |
-| **[!UICONTROL 查询]** | 此数据用于查找在“事件”或“配置文件”数据中找到的值或键。例如，您可以上传将事件数据中的数字 ID 映射到产品名称的查找数据。参见 [B2B用例](/help/use-cases/b2b/b2b.md) 举个例子。 | 不适用 | 任何基于 XDM 类且具有“记录”行为的内置或自定义架构，“XDM 个人资料”类除外。 | 不适用 |
+| **[!UICONTROL 查询]** | 您现在可以将数据集添加为所有数据集类型中的字段的查找：配置文件、查找和事件数据集（始终支持后者）。 这一额外功能扩展了CJA支持复杂数据模型（包括B2B CDP）的能力。 此数据用于查找在事件、配置文件或查找数据中找到的值或键。 最多可以添加两个查找级别。 (请注意 [派生字段](/help/data-views/derived-fields/derived-fields.md) 不能用作连接中查找的匹配键。) 例如，您可以上传将事件数据中的数字 ID 映射到产品名称的查找数据。参见 [B2B用例](/help/use-cases/b2b/b2b.md) 举个例子。 | 不适用 | 任何基于 XDM 类且具有“记录”行为的内置或自定义架构，“XDM 个人资料”类除外。 | 不适用 |
 | **[!UICONTROL 配置文件]** | 在中应用于您的个人、用户或客户的数据 [!UICONTROL 事件] 数据。 例如，允许您上传关于客户的 CRM 数据。 | 不适用 | 任何基于“XDM 个人资料”类的内置或自定义架构。 | 您可以选择想要包含的人员 ID。中定义的每个数据集 [!DNL Experience Platform] 拥有自己定义的一个或多个人员ID集，例如Cookie ID、拼接ID、用户ID、跟踪代码等。<br>![人员ID ](assets/person-id.png)**注释**：如果您创建的连接包含具有不同ID的数据集，则报表会反映这一点。 要真正合并数据集，您需要使用相同的人员 ID。 |
 
 {style="table-layout:auto"}
