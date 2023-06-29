@@ -4,10 +4,10 @@ description: Customer Journey Analytics 登陆页面。
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 9b69f36f47ca8f0bd709af8bdd8aa8e47830e06d
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 89%
+source-wordcount: '453'
+ht-degree: 86%
 
 ---
 
@@ -24,7 +24,7 @@ Analytics Select、Prime 和 Ultimate 客户有资格此附加产品。有关更
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>新增项目或特色项目</b> </p> <p> 
      <ul>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cca/overview.html?lang=zh-Hans#cja-connections"> 跨渠道分析（在 Customer Journey Analytics 中拼接 ID）</a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/stitching/overview.html"> 跨渠道分析(在Customer Journey Analytics中拼接ID) </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html?lang=zh-Hans">在 Customer Journey Analytics 中使用 Adobe Analytics 报告包</a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=zh-Hans">将报告包与不同的架构相结合</a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/pr-vista-dataprep.html?lang=zh-Hans">处理规则、VISTA 和分类与数据准备</a> </li>
