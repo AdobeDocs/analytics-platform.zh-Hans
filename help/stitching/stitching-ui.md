@@ -2,10 +2,10 @@
 title: 拼合
 description: 了解如何创建和管理拼合数据集
 solution: Customer Journey Analytics
-feature: Stitching
+feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 2%

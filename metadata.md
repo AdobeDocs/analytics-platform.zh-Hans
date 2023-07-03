@@ -1,9 +1,10 @@
 ---
 cloud: Experience Cloud
 git-repo: https://github.com/AdobeDocs/analytics-platform.zh-Hans
-description: 此文件包含存储库级别的元数据，这些元数据会传递到存储库中的用户指南TOC.md文件。
+description: 此文件包含存储库级别的元数据，这些元数据会传送到存储库中的用户指南TOC.md文件。
 feature-set: Customer Journey Analytics
-source-git-commit: a31b6a6624087b2863b4643397c4a824662551b5
+role: User, Admin
+source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 84%

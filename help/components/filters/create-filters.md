@@ -2,7 +2,8 @@
 title: 创建过滤器
 description: 了解过滤器创建用户界面。
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+feature: Filters
+source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 55%

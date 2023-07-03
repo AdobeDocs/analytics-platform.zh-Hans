@@ -2,10 +2,11 @@
 title: Analytics Source Connector 的处理规则、VISTA 和分类与数据准备
 description: 了解使用处理规则和 VISTA 与通过准备数据来进行数据转换的异同
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+feature: CJA Basics
+source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
 workflow-type: tm+mt
 source-wordcount: '619'
-ht-degree: 83%
+ht-degree: 80%
 
 ---
 
@@ -29,4 +30,4 @@ Adobe Analytics 收集并存储的数据可以通过处理规则或 VISTA 规则
 
 例如，在分隔字段中，您可以使用数据准备将该字段拆分为多个单独的字段，而无需使用分类。通常，分类是一种通过上传在传入Analytics事件流之外提供的查找文件来向字段添加元数据的方式。
 
-例如，您可以上传一个分类文件，将 SKU 分为“大小”、“品牌”、“颜色”等。分类和数据准备之间的另一个区别是，分类适用于&#x200B;_历史和未来的数据_。另一方面，从创建映射时起，数据准备的映射就会&#x200B;_向前_&#x200B;应用于数据。
+例如，您可以上传一个分类文件，将SKU分为“大小”、“品牌”、“颜色”等。 分类和数据准备之间的另一个区别是，分类适用于&#x200B;_历史和未来的数据_。另一方面，从创建映射时起，数据准备的映射就会&#x200B;_向前_&#x200B;应用于数据。

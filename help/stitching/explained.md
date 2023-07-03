@@ -2,8 +2,8 @@
 title: 拼合的工作原理
 description: 了解拼合的概念
 solution: Customer Journey Analytics
-feature: Stitching
-source-git-commit: 34566535589c84c96a8d7a47988cd155b743674e
+feature: Stitching, Cross-Channel Analysis
+source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 28%
@@ -94,7 +94,7 @@ ht-degree: 28%
 
 当您收到隐私请求时，包含原始用户信息的行会被删除，包含此同一人员信息的任何拼合ID也会被删除。 下表呈现与上表相同的数据，但显示了Bob隐私请求在处理该数据后对数据的影响。 删除了进行Bob身份验证的行（2、3、5、7和11），并删除了Bob作为其他行的临时ID。
 
-*Bob的隐私请求后的相同数据：*
+*Bob隐私请求后的相同数据：*
 
 | 事件 | 时间戳 | 永久性ID (Cookie ID) | 临时ID（登录ID） | 拼合ID（实时拼合后） | 拼合ID（重播后） | 临时ID（登录ID） | 拼合ID（隐私请求后） |
 |---|---|---|---|---|---|---|---|

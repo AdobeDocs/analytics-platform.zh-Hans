@@ -2,7 +2,8 @@
 title: 将报告包与不同的架构相结合
 description: 了解如何使用数据准备将报告包与不同的架构结合起来
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+feature: Use Cases
+source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 64%

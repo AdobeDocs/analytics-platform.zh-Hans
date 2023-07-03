@@ -2,12 +2,12 @@
 title: SQL Connector
 description: 了解如何使用Query Service、Power BI和/或Tableau通过SQL Connector访问数据视图。
 solution: Customer Journey Analytics
-feature: Data Views
+feature: SQL Connector
 hide: true
 hidefromtoc: true
 badgeCJASQLConnector: label="New Feature" type="Positive"
 exl-id: 80feadef-3e2d-4901-8c82-25c56d296e9f
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
 workflow-type: tm+mt
 source-wordcount: '2938'
 ht-degree: 1%

@@ -2,7 +2,8 @@
 title: 虚拟报告包、数据视图、Adobe Experience Platform沙盒和Analytics Source Connector
 description: 了解虚拟报告环境和沙盒环境。
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+feature: CJA Basics
+source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 62%

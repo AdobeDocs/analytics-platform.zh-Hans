@@ -2,7 +2,8 @@
 title: 指导分析概述
 description: 一种分析Customer Journey Analytics中的数据的方法，使产品团队能够轻松生成报告和见解。
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
-source-git-commit: e2020d9194f7885f80671214829f06245bbab328
+feature: Guided Analysis
+source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 1%
