@@ -2,7 +2,8 @@
 title: AAID、ECID、AACUSTOMID 和 Analytics Source Connector
 description: 了解 Analytics Source Connector 如何处理 Adobe Analytics 标识字段。
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+feature: Basics
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 91%
@@ -39,9 +40,9 @@ Analytics Source Connector 将这些标识以 XDM 形式传递到 Adobe Experien
 
 这些字段未标记为标识。相反，相同的标识将以键值对的形式复制到 XDM 的 **_identityMap_**，如下所示：
 
-* `{ “key”: “AAID”, “value”: [ { “id”: “<identity>”, “primary”: <true or false> } ] }`
-* `{ “key”: “ECID”, “value”: [ { “id”: “<identity>”, “primary”: <true or false> } ] }`
-* `{ “key”: “AACUSTOMID”, “value”: [ { “id”: “<identity>”, “primary”: false } ] }`
+* `{ "key": "AAID", "value": [ { "id": "<identity>", "primary": <true or false> } ] }`
+* `{ "key": "ECID", "value": [ { "id": "<identity>", "primary": <true or false> } ] }`
+* `{ "key": "AACUSTOMID", "value": [ { "id": "<identity>", "primary": false } ] }`
 
 &lt;> 括号中的项目表示实际值出现的位置。
 

@@ -1,10 +1,10 @@
 ---
 description: 在 Analysis Workspace for Customer Journey Analytics 中使用快速过滤器。
 title: 快速过滤器
-feature: CJA Workspace Basics
+feature: Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 37%
@@ -35,20 +35,19 @@ Analysis Workspace中的任何用户都可以创建快速过滤器。
 
    * **临时（拖放）：** 从左边栏中，将组件拖到旁边的拖放区域 **筛选条件** 图标，然后选择 **编辑** 图标来调整过滤器。
 
-      ![编辑临时过滤器](assets/filter-adhoc-edit.png)
+     ![编辑临时过滤器](assets/filter-adhoc-edit.png)
 
-      >[!NOTE]
-      >
-      > 创建快速过滤器时，请考虑以下事项（拖放）：
-      > * 不支持以下组件类型：计算量度和维度，以及无法从中生成过滤器的量度。
-      > * 对于完整的维度和事件，Analysis Workspace将创建“存在”事件过滤器。 示例：`Hit where eVar1 exists` 或 `Hit where event1 exists`。
-      > * 如果将“未指定”或“无”拖入过滤器放置区域，则它自动转换为“不存在”过滤器，以使其在筛选时受到正确对待。
-
+     >[!NOTE]
+     >
+     > 创建快速过滤器时，请考虑以下事项（拖放）：
+     > * 不支持以下组件类型：计算量度和维度，以及无法从中生成过滤器的量度。
+     > * 对于完整的维度和事件，Analysis Workspace将创建“存在”事件过滤器。 示例：`Hit where eVar1 exists` 或 `Hit where event1 exists`。
+     > * 如果将“未指定”或“无”拖入过滤器放置区域，则它自动转换为“不存在”过滤器，以使其在筛选时受到正确对待。
 
 
    * **使用过滤器图标：** 在自由格式表中，选择 **筛选条件** 图标。
 
-      ![区段过滤器](assets/quick-seg1.png)
+     ![区段过滤器](assets/quick-seg1.png)
 
 1. 调整以下任意设置：
 
@@ -87,7 +86,6 @@ Analysis Workspace中的任何用户都可以创建快速过滤器。
 > * 要保存快速过滤器，您需要以下位置中的过滤器创建权限： [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html#analytics-tools?lang=zh-Hans).
 > 
 > * 保存或应用过滤器后，在快速过滤器生成器中无法再编辑它。 相反，您必须使用常规过滤器生成器。
-
 
 您可以选择将快速筛选器另存为组件列表筛选器。 组件列表过滤器的优势包括：
 

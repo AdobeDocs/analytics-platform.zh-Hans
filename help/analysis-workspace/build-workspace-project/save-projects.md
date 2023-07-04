@@ -1,11 +1,11 @@
 ---
 description: 了解不同的保存选项，包括“自动保存”、“另存为”、“另存为模板”以及“打开以前的版本”。
 title: 保存项目
-feature: CJA Workspace Basics
+feature: Workspace Basics
 role: User, Admin
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: 8845d3e7142c5eb0f9007d7f9b5cd9e52017f31e
-workflow-type: ht
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 100%
 
@@ -38,9 +38,9 @@ Analysis Workspace 中的所有项目每 2 分钟自动保存到本地计算机�
 
 * **新项目：**&#x200B;尽管新项目是自动保存的，但您必须在第一次手动保存每个新项目。在切换到另一个项目、关闭浏览器选项卡等时，Analysis Workspace 会提示您手动保存新项目。
 
-   如果出于任何原因您在手动保存之前意外失去对新创建项目的访问权限，您的项目的恢复版本将保存在 Analysis Workspace 登录页面上名为`Recovered Projects (Last 7 Days)`的文件夹中。您必须恢复已恢复的项目并将其手动保存到所需位置。
+  如果出于任何原因您在手动保存之前意外失去对新创建项目的访问权限，您的项目的恢复版本将保存在 Analysis Workspace 登录页面上名为`Recovered Projects (Last 7 Days)`的文件夹中。您必须恢复已恢复的项目并将其手动保存到所需位置。
 
-   要恢复已恢复的项目：
+  要恢复已恢复的项目：
 
    1. 转到 Analysis Workspace 登录页面上的&#x200B;[!UICONTROL **已恢复的项目**]&#x200B;文件夹。
 
@@ -51,7 +51,7 @@ Analysis Workspace 中的所有项目每 2 分钟自动保存到本地计算机�
 
 * **现有项目：**&#x200B;如果出于任何原因您离开的项目包含尚未自动保存的更改，Analysis Workspace 会提示您保存更改或提供警告消息。
 
-   以下是一些常见的场景：
+  以下是一些常见的场景：
 
 ### 打开另一个项目
 

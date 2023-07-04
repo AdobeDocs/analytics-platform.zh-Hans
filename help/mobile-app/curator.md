@@ -1,13 +1,13 @@
 ---
 description: 什么是功能板记分卡
-title: Adobe Analytics 功能板策划人指南
+title: Analytics 功能板策划人指南
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 892e5789-8eec-43d9-99fe-8448aa8600b2
 solution: Customer Journey Analytics
-source-git-commit: 2fac52abb2f970455846c46b28db88360cff2886
-workflow-type: ht
-source-wordcount: '88'
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+workflow-type: tm+mt
+source-wordcount: '87'
 ht-degree: 100%
 
 ---

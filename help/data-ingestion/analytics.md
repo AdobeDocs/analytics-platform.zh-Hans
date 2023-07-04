@@ -2,9 +2,9 @@
 title: 从传统 Adobe Analytics 中获取和使用数据
 description: 解释如何从传统 Adobe Analytics 获取数据
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: 41847015d581f2ee18bcaa9605bd567d5feb78d8
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 95%
@@ -24,7 +24,6 @@ ht-degree: 95%
 >- [使用 Adobe Analytics 扩展实现分析](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=zh-Hans)
 >
 >- [使用 JavaScript 实施 Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=zh-Hans)
-
 
 要完成此实施，您需要：
 
@@ -79,7 +78,7 @@ Adobe Analytics 源连接器允许您将 Adobe Analytics 报告套件数据导�
    ![请查看](./assets/review.png)
 
 
-创建连接后，将自动创建数据流，以使用报表包中的Adobe Analytics数据填充数据集，包括摄取最多13个月的生产沙盒历史数据。 （请注意，从2023年4月26日开始，非生产沙箱的回填时间限制为3个月。）
+创建连接后，将自动创建数据流以使用报表包中的Adobe Analytics数据填充数据集，包括为生产沙盒摄取至多13个月的历史数据。 （请注意，从2023年4月26日开始，非生产沙盒中的回填限制为3个月。）
 
 初始摄取完成后，您的 Adobe Analytics 报告套件数据即可供 Customer Journey Analytics 使用。
 
@@ -112,9 +111,10 @@ Adobe Analytics 源连接器允许您将 Adobe Analytics 报告套件数据导�
 
    - 选择由 Adobe Analytics 源连接器自动创建的数据集，以及要包含在连接中的任何其他数据集。
 
-      ![添加数据集](./assets/cja-connections-2a.png)
+     ![添加数据集](./assets/cja-connections-2a.png)
 
    - 选择&#x200B;**[!UICONTROL 下一步]**。
+
    在[!UICONTROL 添加数据集]的[!UICONTROL 设置数据集]步骤中：
 
    - 对于每个数据集：
@@ -125,9 +125,10 @@ Adobe Analytics 源连接器允许您将 Adobe Analytics 报告套件数据导�
 
       - 根据您的首选项设置&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;和&#x200B;**[!UICONTROL 数据集回填现有数据]**。
 
-      ![配置数据集](./assets/cja-connections-3a.png)
+     ![配置数据集](./assets/cja-connections-3a.png)
 
    - 选择&#x200B;**[!UICONTROL 添加数据集]**。
+
    选择&#x200B;**[!UICONTROL 保存]**。
 
 有关如何创建和管理连接以及如何选择和组合数据集的更多信息请参阅[连接概述](../connections/overview.md)。

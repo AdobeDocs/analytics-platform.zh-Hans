@@ -3,8 +3,8 @@ title: Customer Journey Analytics 概述
 description: 了解如何通过 Customer Journey Analytics 来使用分析工作区处理来自 Experience Platform 的数据。
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
-feature: CJA Basics
-source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
+feature: Basics
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 89%

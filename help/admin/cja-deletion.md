@@ -3,8 +3,8 @@ title: 删除后果
 description: 在 Customer Journey Analytics 或 Adobe Experience Platform 中删除连接、数据集或批次后发生的情况。
 exl-id: a89694c9-0909-440e-939c-b245fc4dd6bf
 solution: Customer Journey Analytics
-feature: CJA Basics
-source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
+feature: Basics
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 71%

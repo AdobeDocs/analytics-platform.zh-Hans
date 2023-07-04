@@ -1,10 +1,10 @@
 ---
 title: 如何在 Analysis Workspace 中设置用户首选项
 description: 可设置用户的常规和项目首选项。
-feature: CJA Workspace Basics
+feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: c7e6dd4fb9a4dd517464572815e09f698b1761ed
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '3130'
 ht-degree: 74%

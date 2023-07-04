@@ -2,10 +2,10 @@
 title: 摄取和使用流式数据
 description: 解释如何在 Customer Journey Analytics 中接收和使用流数据
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: 9984200a-71e6-4697-b46f-f53e8d4c507f
-source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
-workflow-type: ht
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+workflow-type: tm+mt
 source-wordcount: '2002'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 - 在 Customer Journey Analytics 中&#x200B;**设置连接**。此连接应（至少）包含 Adobe Experience Platform 数据集。
 
-- **在 Customer Journey Analytics 中设置数据视图**&#x200B;以定义要在 Analysis Workspace 中使用的量度和维度。
+- 在 Customer Journey Analytics 中&#x200B;**设置数据视图**&#x200B;以定义要在 Analysis Workspace 中使用的量度和维度。
 
 - 在 Customer Journey Analytics 中&#x200B;**设置一个项目**&#x200B;以构建报告和可视化图表。
 
@@ -255,9 +255,10 @@ ht-degree: 100%
 
    - 选择先前(`Example Loyalty Dataset`)创建的数据集以及要包含在连接中的任何其他数据集。
 
-      ![添加数据集](./assets/cja-connections-2.png)
+     ![添加数据集](./assets/cja-connections-2.png)
 
    - 选择&#x200B;**[!UICONTROL 下一步]**。
+
    在[!UICONTROL 添加数据集]的[!UICONTROL 设置数据集]步骤中：
 
    - 对于每个数据集：
@@ -268,12 +269,13 @@ ht-degree: 100%
 
       - 根据您的首选项设置&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;和&#x200B;**[!UICONTROL 数据集回填现有数据]**。
 
-      ![配置数据集](./assets/cja-connections-3.png)
+     ![配置数据集](./assets/cja-connections-3.png)
 
    - 选择&#x200B;**[!UICONTROL 添加数据集]**。
+
    选择&#x200B;**[!UICONTROL 保存]**。
 
-有关如何创建和管理连接以及如何选择和组合数据集的更多信息，请参阅[连接概述](../connections/overview.md)。
+有关如何创建和管理连接以及如何选择和组合数据集的更多信息请参阅[连接概述](../connections/overview.md)。
 
 ## 设置数据视图
 
@@ -322,11 +324,11 @@ Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分�
 
 2. 选择左侧导航中的&#x200B;**[!UICONTROL 项目]**。
 
-3. 选择&#x200B;**[!UICONTROL 创建项目]**
+3. 选择&#x200B;**[!UICONTROL 创建项目]**。
 
    ![工作区项目](./assets/cja-projects-1.png)
 
-   选择&#x200B;**[!UICONTROL 空白项目]**
+   选择&#x200B;**[!UICONTROL 空白项目]**。
 
    ![工作区 – 空白项目](./assets/cja-projects-2.png)
 

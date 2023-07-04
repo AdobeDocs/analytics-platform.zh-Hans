@@ -2,9 +2,9 @@
 title: 通过 Adobe Experience Platform Web SDK 和 Edge Network 获取数据
 description: 阐述如何通过 Adobe Experience Platform Web SDK 和 Edge Network 将您的数据导入到 Customer Journey Analytics。
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '3587'
 ht-degree: 98%
@@ -303,11 +303,11 @@ ht-degree: 98%
 
    - 从[!UICONTROL 属性] 列表中选择&#x200B;**[!UICONTROL 标题]** 
 
-      ![使用页面信息创建日期元素](./assets/create-dataelement-1.png)
+     ![使用页面信息创建日期元素](./assets/create-dataelement-1.png)
 
-      或者您可以使用数据层变量中的值，例如 `pageName` 和 [!UICONTROL JavaScript 变量]数据元素类型来定义数据元素。
+     或者您可以使用数据层变量中的值，例如 `pageName` 和 [!UICONTROL JavaScript 变量]数据元素类型来定义数据元素。
 
-      ![使用页面信息创建数据元素](./assets/create-dataelement-2.png)
+     ![使用页面信息创建数据元素](./assets/create-dataelement-2.png)
 
    - 选择&#x200B;**[!UICONTROL 保存]**。
 
@@ -327,7 +327,7 @@ ht-degree: 98%
 
    - 从 [!UICONTROL 数据元素类型]列表中选择&#x200B;**[!UICONTROL ECID]**。
 
-      ![ECID 数据元素](./assets/ecid-dataelement.png)
+     ![ECID 数据元素](./assets/ecid-dataelement.png)
 
    - 选择&#x200B;**[!UICONTROL 保存]**。
 
@@ -353,14 +353,14 @@ ht-degree: 98%
 
    - 将模式中定义的 `identification > core > ecid` 属性映射到 ECID 数据元素。选择圆柱体图标可以轻松地从数据元素列表中拾取 ECID 数据元素。
 
-      ![拾取 ECID 数据元素](./assets/pick-ecid-dataelement.png)
+     ![拾取 ECID 数据元素](./assets/pick-ecid-dataelement.png)
 
-      ![映射 ECID 数据元素](./assets/map-ecid.png)
+     ![映射 ECID 数据元素](./assets/map-ecid.png)
 
 
    - 将模式中定义的`web > webPageDetails > name` 属性映射到页面名称数据元素。
 
-      ![映射页面名称数据元素](./assets/map-pagename.png)
+     ![映射页面名称数据元素](./assets/map-pagename.png)
 
    - 选择&#x200B;**[!UICONTROL 保存]**。
 
@@ -387,9 +387,12 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。他们寻找
 
       - 从[!UICONTROL 事件类型] 列表中选择&#x200B;**[!UICONTROL 加载的窗口]** 
 
-         ![规则 – 事件配置](./assets/event-windowloaded-pageview.png)
+        ![规则 – 事件配置](./assets/event-windowloaded-pageview.png)
 
       - 选择&#x200B;**[!UICONTROL 保留更改]**。
+
+
+
    - 选择并在[!UICONTROL 操作]下方 **[!UICONTROL +添加]** 
 
    - 在[!UICONTROL 操作配置]对话框中：
@@ -402,18 +405,15 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。他们寻找
 
       - 选择[!UICONTROL  XDM 数据]旁边的圆柱体图标，然后从数据元素列表中选择&#x200B;**[!UICONTROL XDM - 页面视图]**。
 
-         ![规则 – 操作配置](./assets/action-pageview-xdm.png)
+        ![规则 – 操作配置](./assets/action-pageview-xdm.png)
 
       - 选择&#x200B;**[!UICONTROL 保留更改]**。
+
    - 您的规则应如下所示：
 
-      ![创建规则](assets/rule-pageview.png)
+     ![创建规则](assets/rule-pageview.png)
 
    - 选择&#x200B;**[!UICONTROL 保存]**。
-
-
-
-
 
 这只是一个定义规则的示例，该规则将包含来自其他数据元素的值的 XDM 数据发送到 Adobe Experience Platform。
 
@@ -439,7 +439,7 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。他们寻找
 
    - 选择&#x200B;**[!UICONTROL + 添加所有更改的资源]**。
 
-      ![发布文档库](./assets/create-library-aep.png)
+     ![发布文档库](./assets/create-library-aep.png)
 
    - 选择&#x200B;**[!UICONTROL 保存并生成到开发]**。
 
@@ -510,9 +510,10 @@ Adobe Experience Platform 标签支持简单到复杂的发布工作流，这些
 
    - 选择先前(`Example dataset`)创建的数据集以及要包含在连接中的任何其他数据集。
 
-      ![添加数据集](./assets/cja-connections-2b.png)
+     ![添加数据集](./assets/cja-connections-2b.png)
 
    - 选择&#x200B;**[!UICONTROL 下一步]**。
+
    在[!UICONTROL 添加数据集]的[!UICONTROL 设置数据集]步骤中：
 
    - 对于每个数据集：
@@ -523,9 +524,10 @@ Adobe Experience Platform 标签支持简单到复杂的发布工作流，这些
 
       - 根据您的首选项设置&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;和&#x200B;**[!UICONTROL 数据集回填现有数据]**。
 
-      ![配置数据集](./assets/cja-connections-3b.png)
+     ![配置数据集](./assets/cja-connections-3b.png)
 
    - 选择&#x200B;**[!UICONTROL 添加数据集]**。
+
    选择&#x200B;**[!UICONTROL 保存]**。
 
 有关如何创建和管理连接以及如何选择和组合数据集的更多信息请参阅[连接概述](../connections/overview.md)。

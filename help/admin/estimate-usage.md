@@ -2,9 +2,9 @@
 title: 查看和管理您的 Customer Journey Analytics 使用情况
 description: 展示了两种估算使用情况的方法和一种管理使用情况的方法。
 role: Admin
-feature: CJA Basics
+feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 72%
