@@ -3,10 +3,10 @@ title: 拼接概述
 description: 拼接概述。
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
+source-git-commit: 3fd4038c44b50490618f838d281684742920d152
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 28%
+source-wordcount: '1246'
+ht-degree: 24%
 
 ---
 
@@ -56,22 +56,22 @@ ht-degree: 28%
    * 启用拼合的请求。
    * 要重新生成键值的数据集的数据集 ID.
    * 所需数据集的永久ID的列名称（每行显示的标识符）。
-   * 所需数据集的临时ID列名称（数据集之间的人员标识符链接）。
+   * 所需数据集的临时ID列名称（人员标识符，还用作连接上下文中的数据集之间的链接）。
    * 您的[重播](explained.md)频率和回顾时间范围首选项。选项包括每周重播一次（回顾时间范围为 7 天）或每天重播一次（回顾时间范围为 1 天）。
    * 沙盒名称。
 
 
-2. Adobe客户支持与Adobe工程部门合作，以便在收到您的请求时启用拼合。 一旦启用，Adobe Experience Platform 中就会出现一个更新了密钥的新数据集，其中包含新的人员 ID 列。Adobe 客户支持可以提供新的数据集 ID 和人员 ID 列名。
+2. Adobe客户支持与Adobe工程部门合作，以便在收到您的请求时启用拼合。 启用后，Adobe Experience Platform中会显示一个包含新拼接ID列的已重新生成键值的新数据集。 Adobe客户支持可以提供新数据集的ID。
 
-3. 首次启用时，Adobe 提供追溯到上月初（最多 60 天）的拼合数据的回填。要执行此回填，当时的未拼合数据中必须存在临时ID。
+3. 首次打开时，Adobe提供回填30天以前的拼合数据。
 
-4. [创建连接](/help/connections/create-connection.md) 使用新生成的数据集和任何其他要包含的数据集进行Customer Journey Analytics。 为每个数据集选择正确的人员 ID。
+4. 如果要在跨渠道分析中使用新拼合的数据集，则需要将其添加到 [连接](../connections/overview.md) 与其他所需数据集一起Customer Journey Analytics。 为每个数据集选择正确的人员 ID。
 
 5. 根据连接[创建数据视图](/help/data-views/create-dataview.md)。
 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
-设置数据视图后，Customer Journey Analytics中的跨渠道分析与Customer Journey Analytics中的其他分析一样，只是现在数据跨渠道和跨设备运行。
+设置数据视图后，您可以跨渠道和设备运行Customer Journey Analytics报表分析。
 
 <!-- Uncomment once stitching UI is available (for limited testing)..
 
