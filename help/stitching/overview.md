@@ -3,10 +3,10 @@ title: 拼接概述
 description: 拼接概述。
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 29%
+source-wordcount: '1273'
+ht-degree: 28%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 29%
 
 遗憾的是，并非所有作为Customer Journey Analytics中连接一部分的基于事件的数据集都已充分填充了数据，以支持开箱即用的归因。 特别是，基于Web或基于移动设备的体验数据集通常没有可用于所有事件的实际人员ID信息。
 
-拼接允许为数据集行中的身份重新生成键值，以确保每个事件上都有所需的人员ID（拼接的ID）。 拼接查看来自经过身份验证和未经身份验证的会话的用户数据，以生成拼接ID。 拼接允许将不同的记录解析为单个拼接的ID，以供在人员级别（而不是设备或Cookie级别）进行分析。
+拼接允许为一个数据集行中的身份重新生成键值，确保人员ID（拼接ID）在每个事件上可用。 拼接查看来自经过身份验证和未经身份验证的会话的用户数据，以确定可用作拼接ID的通用临时ID值。 这允许将不同的记录解析为单个拼合ID，以供在人员级别（而不是设备或Cookie级别）进行分析。
 
 如果在定义Customer Journey Analytics连接时合并一个或多个拼接数据集与其他数据集（例如呼叫中心数据），则您将受益于跨渠道分析。 这假设其他那些数据集在每行上都已包含一个人员ID，类似于拼合的ID。
 
@@ -36,12 +36,13 @@ ht-degree: 29%
    * 有关Adobe Analytics数据，请参阅 [在Customer Journey Analytics中使用Adobe Analytics报表包数据](/help/getting-started/aa-vs-cja/aa-data-in-cja.md).
    * 有关其他类型的数据，请参阅 Adobe Experience Platform 文档中的[创建模式](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans)和[摄取数据](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans)。
 
-* Adobe Experience Platform中要应用拼接的数据集必须具有两个帮助识别访客的列：
+* Adobe Experience Platform中要应用拼接的事件数据集必须具有两个帮助识别访客的列：
 
    * **持久 ID**，即每行都存在的标识符。例如，由Adobe AnalyticsAppMeasurement库生成的访客ID或由Adobe Experience Cloud Identity服务生成的ECID。
-   * **临时 ID**，即仅在部分行存在的标识符。例如，经过身份验证的访客的经过哈希处理的用户名或电子邮件地址。实际上，您可以使用任何喜欢的标识符，但前提是该标识符与给定的永久ID至少在同一事件中出现一次。
+   * **临时 ID**，即仅在部分行存在的标识符。例如，经过身份验证的访客的经过哈希处理的用户名或电子邮件地址。您实际上可以使用任何喜欢的标识符。 拼接将考虑使用此字段来保存实际的人员ID信息。 为获得最佳的拼接结果，应在数据集的事件中为每个永久ID至少发送一次临时ID。
+如果计划在Customer Journey Analytics连接中包含此数据集，最好其他数据集也具有类似的通用标识符。
 
-* 拼接包括合并经过身份验证的用户数据和未经身份验证的用户数据。 在合并数据集之前，确保遵守适用的法律和法规，包括获得必要的最终用户权限。
+* 拼接包括合并经过身份验证的用户数据和未经身份验证的用户数据。 在激活事件数据集的拼合之前，请确保遵守适用的法律和法规，包括获取必要的最终用户权限。
 
 
 ## 使用拼合

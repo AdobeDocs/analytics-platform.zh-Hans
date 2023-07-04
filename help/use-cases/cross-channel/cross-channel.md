@@ -4,10 +4,10 @@ description: 分析客户历程中的客户交互并从中提炼见解。
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 68%
+source-wordcount: '523'
+ht-degree: 63%
 
 ---
 
@@ -43,6 +43,6 @@ ht-degree: 68%
 * 跨通道分析数据要求每条记录上的 ID 命名空间都相同。
 * 将不同的数据集统一在一起的合并过程需要一个在数据集间公用的人员/实体主键。
 * 当前不支持基于辅助键的合并。
-* 拼接过程允许根据后续临时ID记录（如身份验证ID）为行中的身份重新生成键值。 这样可将不同的记录解析为单个 ID，以供在人员级别而非设备或 Cookie 级别进行分析。
+* 拼接过程允许根据共享同一永久ID的记录的临时ID（例如身份验证ID）信息重新生成行中标识的密钥。这允许将不同的记录解析为单个拼接ID，以供在人员级别，而不是设备或Cookie级别进行分析。
 * 同一 XDM 字段的对象和属性合并为 Customer Journey Analytics 中的一个维度。要将多个来自不同数据集的属性合并为同一个 Customer Journey Analytics 维度，这些数据集应引用相同的 XDM 字段或架构。
 
