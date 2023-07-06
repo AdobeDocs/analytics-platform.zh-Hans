@@ -1,20 +1,20 @@
 ---
 description: 有关使用功能板记分卡的说明。
-title: Adobe Analytics 功能板执行指南
+title: Analytics 功能板执行指南
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 25293f3ef40f0c19ec6a963d337ab91b8054aa58
+source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 92%
+source-wordcount: '1304'
+ht-degree: 77%
 
 ---
 
 # 执行用户快速入门指南
 
-通过阅读以下信息，执行用户可以了解有关使用和查看 Adobe Analytics 功能板的最佳实践。以下是一段演示此信息的视频：
+以下信息让执行用户了解使用和查看 Analytics 功能板的最佳实践。以下是一段演示此信息的视频：
 
 >[!VIDEO](https://video.tv.adobe.com/v/343460/)
 
@@ -28,26 +28,30 @@ ht-degree: 92%
 
 要在功能板中访问记分卡，请确保：
 
-* 您已有效登录 Adobe Analytics
+* 您具备有效的 Customer Journey Analytics 登录信息
 * 您的策划人已正确创建了移动记分卡，并与您共享了这些记分卡
 
 ### 下载并安装记分卡
 
 要下载并安装应用程序，请根据设备上的操作系统执行以下相应步骤。
 
+>[!NOTE]
+>
+>尽管移动设备应用程序在应用商店中被命名为Adobe Analytics功能板，但该应用程序可以与Customer Journey Analytics移动设备记分卡同等使用。
+
 **对于 iOS 上的执行用户：**
 
-单击以下链接（也可在 Analytics 的&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Analytics 功能板（移动应用程序）]**&#x200B;下找到该链接），然后按照相应提示下载、安装和打开应用程序：
+单击以下链接(此链接也可在Customer Journey Analytics中找到，位于 **[!UICONTROL 工具]** > **[!UICONTROL Analytics功能板（移动应用程序）]**)并按照提示下载、安装和打开应用程序：
 
 [iOS 链接](https://apple.co/2zXq0aN)
 
 **对于 Android 上的执行用户：**
 
-单击以下链接（也可在 Analytics 的&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Analytics 功能板（移动应用程序）]**&#x200B;下找到该链接），然后按照相应提示下载、安装和打开应用程序：
+单击以下链接(此链接也可在Customer Journey Analytics中找到，位于 **[!UICONTROL 工具]** > **[!UICONTROL Analytics功能板（移动应用程序）]**)并按照提示下载、安装和打开应用程序：
 
 [Android 链接](https://bit.ly/2LM38Oo)
 
-下载和安装后，执行用户可使用其现有的 Adobe Analytics 凭据登录应用程序。
+下载并安装完毕后，执行用户可以使用其现有的Customer Journey Analytics凭据登录应用程序。
 
 ![应用程序欢迎屏幕](assets/welcome.png)
 
@@ -55,7 +59,7 @@ ht-degree: 92%
 
 要使用功能板，请执行以下操作：
 
-1. 登录到该应用程序。启动功能板时，将显示登录屏幕。使用现有的 Adobe Analytics 凭据按照提示进行操作。我们同时支持 Adobe ID 和 Enterprise/Federated ID。
+1. 登录到该应用程序。启动功能板时，将显示登录屏幕。使用现有Customer Journey Analytics凭据按照提示操作。 我们同时支持 Adobe ID 和 Enterprise/Federated ID。
 
    ![登录序列](assets/signseq.png)
 
@@ -73,8 +77,8 @@ ht-degree: 92%
 
    如果您登录后看到一条消息，指出尚未共享任何内容，请与策划人确认以下事项：
 
-   * 您可以登录到正确的 Analytics 实例
-   * 已与您共享记分卡
+   * 您可以登录到正确的Customer Journey Analytics沙盒。
+   * 已与您共享记分卡.
 
    ![未共享任何内容](assets/nothing.png)
 
@@ -111,11 +115,11 @@ ht-degree: 92%
 
    * 根据点按的时间间隔（**日**、**周**、**月**&#x200B;或&#x200B;**年**），您将看到两个日期范围选项，即当前时间范围或紧随其前的时间范围。点按这两个选项之一，以选择第一个范围。在&#x200B;**[!UICONTROL 比较对象]**&#x200B;列表下，点按其中显示的一个选项，以将此时间段的数据与您选择的第一个日期范围进行比较。点按屏幕右上角的&#x200B;**[!UICONTROL 完成]**。**[!UICONTROL 日期范围]**&#x200B;字段和记分卡图块会更新以显示您选择的新范围中的新比较数据。
 
-1. 要将区段过滤器应用于记分卡，请点按过滤器下拉列表，然后选择由策划人配置的区段。 应用程序中的[过滤器](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans)的工作方式与在 Analytics Workspace 中相同。
+1. 要将区段过滤器应用于记分卡，请点按过滤器下拉列表，然后选择由策划人配置的区段。 应用程序中的[过滤器](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans)的工作方式与在 Workspace 中相同。
 
    ![区段过滤器](assets/segment_filter.png)
 
-1. 获取记分卡更新。如果记分卡不包含您可能感兴趣的所有量度或划分，请联系您的 Analytics 团队来更新记分卡。更新后，您可以下拉屏幕上的记分卡进行刷新，并加载最近添加的数据。
+1. 获取记分卡更新。如果记分卡不包含您可能感兴趣的所有量度或划分，请联系您的Customer Journey Analytics团队以更新记分卡。 更新后，您可以下拉屏幕上的记分卡进行刷新，并加载最近添加的数据。
 
 1. 要提供对应用程序的反馈，请执行以下操作：
 
@@ -148,8 +152,8 @@ ht-degree: 92%
 
 | 术语 | 定义 |
 |--- |--- |
-| 用户 | 在移动设备上查看 Analytics 中的关键量度和分析的执行人员 |
-| 策划人 | 精通数据的人员，可从 Analytics 中查找和发布分析数据，并配置供用户查看的记分卡 |
+| 使用者 | 在移动设备上通过Customer Journey Analytics查看关键指标和见解的执行角色 |
+| 策划人 | 通晓数据的角色，可从Customer Journey Analytics中查找和分发见解并配置供使用者查看的记分卡 |
 | 策划 | 创建或编辑移动记分卡的操作，记分卡中包含用户的相关量度、维度和其他组件 |
 | 记分卡 | 包含一个或多个图块的功能板视图 |
 | 图块 | “记分卡视图”中量度的呈现方式 |

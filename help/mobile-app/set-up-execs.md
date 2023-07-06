@@ -1,14 +1,14 @@
 ---
-description: 如何设置用户使用 Analytics 移动应用程序
+description: 如何设置用户以使用Adobe Analytics功能板移动应用程序
 title: 设置执行用户以使用功能板
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: ht
-source-wordcount: '668'
-ht-degree: 100%
+source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
+workflow-type: tm+mt
+source-wordcount: '704'
+ht-degree: 76%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## 确保应用程序用户具有 Adobe Analytics 访问权限
 
-1. 在 [Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html) 中设置新用户。
+1. 在 [Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=zh-Hans) 中设置新用户。
 
 1. 要能够共享记分卡，您必须向应用程序用户授予对记分卡组件（例如 Analysis Workspace）、记分卡所基于的数据视图以及筛选器、量度和维度的访问权限。
 
@@ -27,25 +27,29 @@ ht-degree: 100%
 要确保执行用户可以在应用程序上访问您的记分卡，请确保：
 
 * 执行用户设备上的移动操作系统满足以下最低要求：iOS 版本 10 或更高版本，或者 Android 版本 4.4 (KitKat) 或更高版本
-* 执行用户已有效登录 Adobe Analytics。
+* 用户具有有效的Customer Journey Analytics登录信息。
 * 您已为执行用户正确创建了移动记分卡，并与他们共享了这些记分卡。
 * 执行用户有权访问记分卡中包含的组件。请注意，在共享记分卡时，您可以选择&#x200B;**[!UICONTROL 共享嵌入的组件]**&#x200B;选项。
 
 ## 帮助执行用户下载和安装应用程序
 
+>[!NOTE]
+>
+>尽管移动设备应用程序在应用商店中被命名为Adobe Analytics功能板，但该应用程序可以与Customer Journey Analytics移动设备记分卡同等使用。
+
 **对于 iOS 上的执行用户：**
 
-单击以下链接（也可在 Analytics 的&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Analytics 功能板（移动应用程序）]**&#x200B;下找到该链接），然后按照相应提示下载、安装和打开应用程序：
+单击以下链接(此链接也可在Customer Journey Analytics中找到，位于 **[!UICONTROL 工具]** > **[!UICONTROL Analytics功能板（移动设备OPP）]**)并按照提示下载、安装和打开应用程序：
 
 `[iOS link](https://apple.co/2zXq0aN)`
 
 **对于 Android 上的执行用户：**
 
-单击以下链接（也可在 Analytics 的&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Analytics 功能板（移动应用程序）]**&#x200B;下找到该链接），然后按照相应提示下载、安装和打开应用程序：
+单击以下链接(此链接也可在Customer Journey Analytics中找到，位于 **[!UICONTROL 工具]** > **[!UICONTROL Analytics功能板（移动应用程序）]**)并按照提示下载、安装和打开应用程序：
 
 `[Android link](https://bit.ly/2LM38Oo)`
 
-下载并安装后，执行用户可以使用他们现有的 Adobe Analytics 凭据登录应用程序；我们同时支持 Adobe ID 和 Enterprise/Federated ID。
+下载并安装完毕后，执行用户可以使用其现有的Customer Journey Analytics凭据登录应用程序；我们同时支持AdobeID和Enterprise/Federated ID。
 
 ![应用程序欢迎屏幕](assets/welcome.png)
 
@@ -108,7 +112,7 @@ ht-degree: 100%
 
 ![未共享任何内容](assets/nothing.png)
 
-* 执行用户可能选择了错误的 Analytics 实例，或
+* 执行用户可能选择了错误的Customer Journey Analytics沙盒，或者
 * 可能尚未与执行用户共享记分卡。
 
-验证执行用户是否可以登录正确的 Adobe Analytics 实例，以及是否已共享记分卡。
+验证执行用户是否可以登录正确的Customer Journey Analytics沙盒，以及是否已共享记分卡。

@@ -1,27 +1,28 @@
 ---
-description: 如何创建和共享Adobe Analytics功能板记分卡
+description: 如何创建和共享Analytics功能板记分卡
 title: 创建和共享记分卡
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
 workflow-type: tm+mt
-source-wordcount: '2529'
-ht-degree: 76%
+source-wordcount: '2532'
+ht-degree: 74%
 
 ---
 
 # 创建移动记分卡
 
-以下信息指示 Adobe Analytics 数据的策划人如何为执行用户配置和展示功能板。要开始操作，您可以查看Adobe Analytics功能板记分卡生成器视频：
+以下信息指示Customer Journey Analytics数据策划人如何为执行用户配置和展示功能板。 要开始操作，您可以查看Analytics功能板记分卡生成器视频：
 
 >[!VIDEO](https://video.tv.adobe.com/v/343458)
 
 >[!NOTE]
->此页面的记分卡屏幕截图取自Adobe Analytics UI，而非Customer Journey Analytics。 这些 UI 几乎完全相同。
+>
+>此页面的Analytics记分卡屏幕截图取自Adobe Analytics UI，而非Customer Journey Analytics。 这些 UI 几乎完全相同。
 
-Adobe Analytics 记分卡以平铺版面为执行用户显示关键数据可视化图表，如下所示：
+ Analytics 记分卡以平铺版面为执行用户显示关键数据可视化图表，如下所示：
 
 ![示例记分卡](assets/intro_scorecard.png)
 
@@ -40,7 +41,7 @@ Adobe Analytics 记分卡以平铺版面为执行用户显示关键数据可视�
 
 ### 创建新项目 {#create}
 
-1. 打开 Adobe Analytics，然后单击&#x200B;**[!UICONTROL 工作区]**&#x200B;选项卡。
+1. 打开Customer Journey Analytics并单击 **[!UICONTROL 工作区]** 选项卡。
 1. 单击&#x200B;**[!UICONTROL 创建新项目]**&#x200B;并选择&#x200B;**[!UICONTROL 空白移动记分卡]**&#x200B;项目模板。
 1. 单击&#x200B;**[!UICONTROL 创建]**。
 
@@ -78,7 +79,7 @@ Adobe Analytics 记分卡以平铺版面为执行用户显示关键数据可视�
 
 要将过滤器应用于单个图块，请将左侧面板中的过滤器(区段即Customer Journey Analytics中的过滤器)直接拖放到图块的顶部。
 
-如果要将过滤器应用于记分卡中的所有图块，请将图块拖放到记分卡的顶部。 或者，您也可以通过在日期范围下方的过滤器菜单中选择过滤器来应用过滤器。您 [为记分卡配置和应用过滤器](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans) 与在Adobe Analytics工作区中操作的方式相同。
+如果要将过滤器应用于记分卡中的所有图块，请将图块拖放到记分卡的顶部。 或者，您也可以通过在日期范围下方的过滤器菜单中选择过滤器来应用过滤器。您 [为记分卡配置和应用过滤器](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans) 与在Customer Journey Analytics工作区中操作的方式相同。
 
 ![构建过滤器](assets/segment_ui.png)
 
@@ -276,7 +277,7 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 ## 预览记分卡 {#preview}
 
-可预览在 Analytics 功能板应用程序中发布记分卡后其外观和功能。
+您可以预览记分卡在Adobe Analytics功能板应用程序中发布后的外观和功能。
 
 1. 在屏幕的右上角单击&#x200B;**[!UICONTROL 预览]**。
 
@@ -335,7 +336,7 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
    当收件人使用桌面应用程序或浏览器打开链接时，将在工作区中打开移动记分卡项目。
 
-   当收件人打开移动设备上的链接时，记分卡将直接在Analytics功能板应用程序中打开。
+   当收件人打开移动设备上的链接时，记分卡将直接在Adobe Analytics功能板应用程序中打开。
 
    如果收件人尚未下载移动设备应用程序，则会被定向到App Store或Google Play应用商店中的应用程序列表，以便他们下载。
 
