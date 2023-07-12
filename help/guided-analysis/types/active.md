@@ -1,16 +1,16 @@
 ---
-title: 活动
+title: 活动视图
 description: 确定新的、保留的、返回的或休眠的用户.
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 feature: Guided Analysis
-source-git-commit: c96f30979cc8bf519a8e96a1fafa5aba2ebc4c01
+source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '595'
 ht-degree: 3%
 
 ---
 
-# 活动
+# 活动视图
 
 {{release-limited-testing}}
 
@@ -23,13 +23,15 @@ ht-degree: 3%
 
 所有活动用户（新+重复+返回）在水平轴上方显示为蓝绿色，而所有休眠用户都在水平轴下方显示为橙色。
 
+![活动](../assets/active.png)
+
+## 用例
+
 此视图类型的用例包括：
 
 * **用户保留和流失：** 针对高保留率或低保留率时段提供清晰的可视化图表。 识别这些高保留期或低保留期可帮助您做出产品决策，以鼓励高保留期或帮助最大程度地减少流失。
 * **营销活动评估**：查看特定营销活动不仅可帮助您了解它产生了多少流量，而且还可以了解该营销活动帮助用户保持参与的程度。
 * **用户生命周期分析**：分析整个用户生命周期中的活跃用户增长可帮助确定用户参与度下降的特定阶段。 例如，如果处于入门阶段的个人的休眠用户比例很高，则可能表明存在可用性问题或需要更好的产品内指导。
-
-![活动](../assets/active.png)
 
 ## 查询边栏
 
