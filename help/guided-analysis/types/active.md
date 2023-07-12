@@ -3,7 +3,7 @@ title: 活动
 description: 衡量用户群的增长.
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 2%
@@ -29,7 +29,7 @@ ht-degree: 2%
 * **营销活动评估**：查看特定营销活动不仅可帮助您了解它产生了多少流量，而且还可以了解该营销活动帮助用户保持参与的程度。
 * **用户生命周期分析**：分析整个用户生命周期中的活跃用户增长可帮助确定用户参与度下降的特定阶段。 例如，如果处于载入阶段的用户的休眠用户比例很高，则可能表明存在可用性问题或需要更好的产品内指导。
 
-[用户增长屏幕截图]
+![活动](../assets/active.png)
 
 ## 查询边栏
 
@@ -48,6 +48,8 @@ ht-degree: 2%
 ## 应用时间比较
 
 {{apply-time-comparison}}
+
+![活动时间比较](../assets/active-compare.png)
 
 ## 日期范围
 

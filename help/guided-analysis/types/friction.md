@@ -3,9 +3,9 @@ title: 摩擦
 description: 比较步骤之间的转化率.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '423'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 * **功能采用和参与**：了解用户如何与产品中的特定功能进行交互。 通过分析与功能相关的步骤来分析用户进度，您可以评估功能采用率，并识别用户可能放弃或少用某些功能的区域。 然后，您可以使用此信息专注于功能或UI改进以提高采用率。
 * **营销活动评估**：衡量营销活动的有效性。 您可以创建一个区段，该区段重点关注接触了给定营销活动的用户，并将其转化过程与其他营销活动或在您的产品中进行比较。
 
-[漏斗屏幕快照]
+![摩擦](../assets/friction.png)
 
 ## 查询边栏
 
@@ -41,6 +41,8 @@ ht-degree: 3%
 ## 应用时间比较
 
 {{apply-time-comparison}}
+
+![摩擦时间比较](../assets/friction-compare.png)
 
 ## 日期范围
 

@@ -3,9 +3,9 @@ title: 使用情况
 description: 随着时间的推移衡量用户参与度.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '505'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 * **用户行为**：趋势可以提供有关一段时间内用户行为的洞察。 通过检查用户执行的特定操作，您可以识别用户可能流失的模式。 您可以将此视图类型的分析与 [摩擦](friction.md) 以更深入地了解行为。
 * **A/B测试和实验**：如果您在产品中运行A/B测试，则可以使用趋势来衡量哪些测试随着时间的推移最为成功。
 
-[趋势屏幕截图]
+![使用情况](../assets/usage.png)
 
 ## 查询边栏
 
@@ -40,6 +40,8 @@ ht-degree: 2%
 ## 应用时间比较
 
 {{apply-time-comparison}}
+
+![使用时间比较](../assets/usage-compare.png)
 
 ## 日期范围
 

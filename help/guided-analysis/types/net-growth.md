@@ -2,10 +2,10 @@
 title: 净增长
 description: 使用户的收益和损失达到平衡.
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 1%
+source-wordcount: '563'
+ht-degree: 2%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 * **绩效评估**：可让您从获取新用户角度评估产品的整体性能。 通过跟踪增长趋势，您可以更好地了解您的产品是否以所需的速度吸引和留住用户。
 * **流失分析**：净增长采用以下公式：自然减员（休眠用户）。 您可以评估一段时间内用户群的整体运行状况。 如果净增长持续低于 `1`，它表明存在大量减少，提示您调查其背后的原因并实施保留策略。
 
-[用户增长屏幕截图]
+![净增长](../assets/net-growth.png)
 
 ## 查询边栏
 

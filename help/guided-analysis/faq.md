@@ -3,10 +3,10 @@ title: 引导式分析常见问题解答
 description: 有关引导式分析的常见问题解答。
 exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
 feature: Guided Analysis
-source-git-commit: d5208a28c9efd6c31ecbfc6ff6b4e44a52f396e8
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 2%
+source-wordcount: '323'
+ht-degree: 3%
 
 ---
 
@@ -47,13 +47,11 @@ ht-degree: 2%
 
 虽然Analysis Workspace和引导式分析使用相同的底层数据，但每个工具查询这些数据的方式却不同。
 
-**Analysis Workspace是一种以维度为中心的体验。** 表通常由维度项目行组成，而列通常为量度。 您可以将过滤器应用于其中任何一个，以获取所需的数据。
+* **Analysis Workspace是一种以维度为中心的体验。** 表通常由维度项目行组成，而列通常为量度。 您可以将过滤器应用于其中任何一个，以获取所需的数据。
 
-![工作区结构](assets/workspace-structure.png)
+* **引导式分析是一种以事件为中心的体验。** 可视化图表侧重于事件，使用维度和过滤器补充这些数据。
 
-**引导式分析是一种以事件为中心的体验。** 可视化图表侧重于事件，使用维度和过滤器补充这些数据。
-
-![引导式分析结构](assets/guided-analysis-structure.png)
+![结构](assets/structure.png)
 
 请考虑以下示例，其中您侧重于网站主页的相关数据。 团队提出类似的问题，但分析方法可能不同。
 

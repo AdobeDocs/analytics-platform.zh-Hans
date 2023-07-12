@@ -2,9 +2,9 @@
 title: 转化趋势
 description: 跟踪转化率随时间发生的变化。
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '475'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 * **A/B测试评估**：评估在漏斗环境中执行的A/B测试或试验的有效性。 通过比较不同变体之间的转化率，您可以轻松确定哪些测试提供了较高的转化率，从而做出关于永久实施哪些变体的数据驱动型决策。
 * **一段时间的营销活动评估**：衡量营销活动在一段时间内的有效性。 您可以创建一个区段，该区段重点关注接触了给定营销活动的用户，并将其转化率与其他营销活动进行比较。 您还可以将当前转化率与过去运行的类似促销活动进行比较。
 
-[漏斗屏幕快照]
+![转化趋势](../assets/conversion-trends.png)
 
 ## 查询边栏
 
@@ -39,6 +39,8 @@ ht-degree: 2%
 ## 应用时间比较
 
 {{apply-time-comparison}}
+
+![转化趋势时间比较](../assets/conversion-trends-compare.png)
 
 ## 日期范围
 
