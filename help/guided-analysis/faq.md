@@ -3,9 +3,9 @@ title: 引导式分析常见问题解答
 description: 有关引导式分析的常见问题解答。
 exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
 feature: Guided Analysis
-source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
+source-git-commit: 23d3e6a9662cda932a376c09849ab078d22830dc
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '333'
 ht-degree: 3%
 
 ---
@@ -35,6 +35,7 @@ ht-degree: 3%
 | 指导分析词 | Analysis Workspace术语 |
 | --- | --- |
 | 事件 | 度量 |
+| 用户 | 人员 |
 | 属性 | 维度 |
 | 值 | 维度项 |
 | 区段 | 过滤器 |
@@ -43,11 +44,11 @@ ht-degree: 3%
 
 +++
 
-+++**Analysis Workspace和引导式分析方法的报告方式有哪些区别？**
++++**Analysis Workspace和引导式分析方法的分析方式有哪些区别？**
 
-虽然Analysis Workspace和引导式分析使用相同的底层数据，但每个工具查询这些数据的方式却不同。
+虽然Analysis Workspace和引导式分析使用相同的底层数据，但每种工具允许您形成该数据查询的方式各不相同。
 
-* **Analysis Workspace是一种以维度为中心的体验。** 表通常由维度项目行组成，而列通常为量度。 您可以将过滤器应用于其中任何一个，以获取所需的数据。
+* **Analysis Workspace是一种以维度为中心的体验。** 表通常由维度项目行组成，而列通常为量度。 您可以将过滤器同时应用于行和列，以获取所需的数据。
 
 * **引导式分析是一种以事件为中心的体验。** 可视化图表侧重于事件，使用维度和过滤器补充这些数据。
 
