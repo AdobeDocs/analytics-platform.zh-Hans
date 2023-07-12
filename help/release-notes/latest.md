@@ -3,10 +3,10 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新Customer Journey Analytics发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: daf41a2aefeebe6339b4f86cc04c071b57887ce3
+source-git-commit: 2b0d091484c3c80d97de2952f4200d166ab5cd8a
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 40%
+source-wordcount: '731'
+ht-degree: 37%
 
 ---
 
@@ -44,7 +44,7 @@ AN-317971； AN-319234； AN-320439； AN-320519； AN-321740； AN-322444； AN
 
 | 产品或功能 EOL | 添加或更新日期 | 描述 |
 | --- | --- | --- |
-| **迁移到 Adobe I/O OAuth 服务器到服务器凭据** | 2023 年 5 月 11 日 | 使用AdobeIO JWT凭据的Adobe Analytics API、Customer Journey AnalyticsAPI和Livestream客户必须通过以下方式迁移到AdobeIO OAuth服务器到服务器凭据 **2025年1月1日**. 从 2024 年 5 月 1 日开始，Adobe I/O 将不允许创建新的 JWT 凭据。使用 JWT 的客户必须创建新的 OAuth 服务器到服务器凭据或将他们现有的 JWT 凭据迁移到 OAuth 服务器到服务器凭据。客户还必须更新其客户端应用程序以使用新的 OAuth 服务器到服务器凭据。 <ul><li>[从服务帐户 (JWT) 凭据迁移](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)</li><li>[使用新的 OAuth 服务器到服务器凭据](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)</li><li>[常见问题解答](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/faqs/)</li></ul> |
+| **迁移到Adobe I/OOAuth服务器到服务器凭据** | 2023 年 5 月 11 日 | 使用Adobe I/OJWT凭据的Adobe Analytics API、Customer Journey AnalyticsAPI和Livestream客户必须迁移至Adobe I/OOAuth服务器到服务器凭据，迁移方式为 **2025年1月1日**. 从2024年5月1日开始，Adobe I/O不允许创建新的JWT凭据。 使用 JWT 的客户必须创建新的 OAuth 服务器到服务器凭据或将他们现有的 JWT 凭据迁移到 OAuth 服务器到服务器凭据。客户还必须更新其客户端应用程序以使用新的 OAuth 服务器到服务器凭据。 <ul><li>[从服务帐户 (JWT) 凭据迁移](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)</li><li>[使用新的 OAuth 服务器到服务器凭据](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)</li><li>[常见问题解答](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/faqs/)</li></ul> |
 
 {style="table-layout:auto"}
 
