@@ -1,10 +1,10 @@
 ---
 title: 行业用例
 description: 引导式分析的行业用例
-source-git-commit: 9311157c8aa8bab8627e3fdf3e989a0302d29f32
+source-git-commit: 704018bd9d0dae97e0f9c40c36d0618e9f15de76
 workflow-type: tm+mt
-source-wordcount: '1380'
-ht-degree: 3%
+source-wordcount: '1442'
+ht-degree: 2%
 
 ---
 
@@ -23,6 +23,10 @@ ht-degree: 3%
 
 {style="table-layout:auto"}
 
+![零售的摩擦视图](assets/retail-funnel-friction.png)
+
+![零售的使用情况视图](assets/retail-trends-usage.png)
+
 +++
 
 +++**金融服务**
@@ -35,6 +39,14 @@ ht-degree: 3%
 | **推荐的新功能** | 随着时间的推移，数字提款逐渐减少，代替了打电话给财务顾问。 我们希望优化数字流程，数据趋势有助于我们通过指导委员会确定优化的优先级。 | **创建数据驱动路线图。** 利用数据来规划和实施优化。 | [使用情况趋势视图](types/usage.md) |
 
 {style="table-layout:auto"}
+
+![金融服务的摩擦视图](assets/fsi-funnel-friction.png)
+
+![金融服务的“使用情况”视图](assets/fsi-trends-usage.png)
+
+![金融服务的活动视图](assets/fsi-user-growth-active.png)
+
+![金融服务的备用活动视图](assets/fsi-user-growth-active-2.png)
 
 +++
 
@@ -49,6 +61,10 @@ ht-degree: 3%
 
 {style="table-layout:auto"}
 
+![旅行和酒店业的摩擦视图](assets/th-funnel-friction.png)
+
+![旅行和酒店的使用情况视图](assets/th-trends-usage.png)
+
 +++
 
 +++**媒体和娱乐**
@@ -61,6 +77,10 @@ ht-degree: 3%
 | **转移呼叫中心呼叫** | 我发现我们的自动转帐功能无法正常工作的问题，这导致失望的客户致电我们的支持中心取消其计划。 | **减少支持呼叫。** 创造更好的客户体验，并减少客户对客户服务的致电。 | [摩擦视图](types/friction.md) <p/><p/> [转化趋势视图](types/conversion-trends.md) |
 
 {style="table-layout:auto"}
+
+![媒体和娱乐的摩擦视图](assets/me-funnel-friction.png)
+
+![媒体和娱乐活动视图](assets/me-user-growth-active.png)
 
 +++
 
@@ -75,6 +95,8 @@ ht-degree: 3%
 
 {style="table-layout:auto"}
 
+![医疗保健的摩擦视图](assets/healthcare-funnel-friction.png)
+
 +++
 
 +++**高科技和B2B**
@@ -87,5 +109,7 @@ ht-degree: 3%
 | **解锁自助分析** | 试图获取见解具有挑战性，并且我们的用户没有接受过分析培训。 他们需要能够获得答案并管理整个组织正在使用的相同数据，从而建立更牢固的合作伙伴关系，做出真正的数据驱动型决策。 | **加强整个组织内的伙伴关系。** 让产品经理可以访问以前孤立的数据。 | [引导式分析](overview.md) |
 
 {style="table-layout:auto"}
+
+![B2B的使用情况视图](assets/b2b-trends-usage.png)
 
 +++
