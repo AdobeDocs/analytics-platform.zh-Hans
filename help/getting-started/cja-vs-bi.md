@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 7991f2be316349fcfaa85c2338e16c41d5b130b1
 workflow-type: tm+mt
-source-wordcount: '1638'
-ht-degree: 66%
+source-wordcount: '1649'
+ht-degree: 65%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 66%
 
 分析客户历程的传统方法有一个常见的障碍，即这些方法不以客户为中心。每个团队都将数据收集到孤岛中，并根据其有权访问的数据分析和优化体验。
 
-![典型的 BI 工作流](./assets/biworkflow.png)
+![传统BI工作流，如本节中所述](./assets/biworkflow.png)
 
 如果要了解特定的数字营销活动如何影响存储在不同数据孤岛中的离线操作，请向 BI 团队的队列发出请求。BI 团队编写所需的查询以获取并转化数据。检索原始数据后，BI 团队即创建可视化图表。这些数据与您共享，而您需要耗时梳理这些见解并提取数据，以供在其他系统中激活。
 
@@ -34,7 +34,7 @@ ht-degree: 66%
 
 Customer Journey Analytics提供了一个环境，用于在总体客户级别连接在线和离线跨渠道数据，其唯一目的是了解客户历程。 确实需要初始设置才能[连接](/help/connections/overview.md)并[定义](/help/data-views/data-views.md)针对您视为相关的数据的视图。不过，一旦完成设置，就可以利用这些数据进行持续的分析和探索。您可以逐步了解客户历程并从中获得深入见解。通过将结合在一起的在线和离线数据大众化，只需几秒时间即可解答与客户历程相关的疑问。
 
-![Customer Journey Analytics工作流](./assets/cjaworkflow.png)
+![Customer Journey Analytics工作流，如本节所述](./assets/cjaworkflow.png)
 
 您可以使用Customer Journey Analytics通过可视化Analysis Workspace环境提出问题，并几乎立即获得见解。 无需 SQL 代码，即可立即获得跨渠道数据和报表。只需在 UI 中简单地拖放，即可对完全相关的数据进行其他查询和分析。可继续提问，并根据需要逐步探索更多详细信息。然后可针对所发现的见解立即采取行动，如向外共享受众以供激活和编排。
 

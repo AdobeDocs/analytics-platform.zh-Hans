@@ -3,10 +3,10 @@ title: 创建受众并将受众发布到实时客户档案
 description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 7991f2be316349fcfaa85c2338e16c41d5b130b1
 workflow-type: tm+mt
-source-wordcount: '1565'
-ht-degree: 63%
+source-wordcount: '1576'
+ht-degree: 61%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 63%
 
    在发布受众之前，请配置这些设置。
 
-   ![](assets/create-audience.png)
+   ![如何创建受众的屏幕截图](assets/create-audience.png)
 
    | 设置 | 描述 |
    | --- | --- |
@@ -52,7 +52,7 @@ ht-degree: 63%
 
    受众预览显示在右边栏中。它允许您对所创建的受众进行总结分析。
 
-   ![](assets/data-preview.png)
+   ![数据预览的屏幕快照](assets/data-preview.png)
 
    | 预览设置 | 描述 |
    | --- | --- |
@@ -85,7 +85,7 @@ ht-degree: 63%
 
 在受众发布之前、期间和之后的多个时间点，可能会发生延迟。 以下是对可能出现的延迟情况的概述。
 
-![从Adobe Experience Platform到Customer Journey Analytics的延迟](assets/latency-diagram.png)
+![受众发布的延迟，如中所述 [延迟注意事项](#latency-considerations)](assets/latency-diagram.png)
 
 | # | 延迟点 | 延迟持续时间 |
 | --- | --- | --- |
@@ -102,7 +102,7 @@ ht-degree: 63%
 
 Customer Journey Analytics会从已发布的受众中获取所有命名空间和ID组合，并将它们流式传输到实时客户个人资料(RTCP)中。 Customer Journey Analytics根据选定内容将受众发送到设置了主要身份的Experience Platform [!UICONTROL 人员ID] 配置连接时。
 
-然后，RTCP 会检查每个命名空间/ID 组合，并查找可能包含它的个人资料。个人资料其实就是由所链接的命名空间、ID 和设备组成的集群。如果它找到一份相关的个人资料，则会将命名空间和 ID 作为区段会员资格属性添加到此个人资料中的其他 ID。例如，现在”user@adobe.com“可以成为所有设备和渠道的目标。如果未找到相关的个人资料，则会创建一份新的个人资料。
+然后，RTCP 会检查每个命名空间/ID 组合，并查找可能包含它的个人资料。个人资料其实就是由所链接的命名空间、ID 和设备组成的集群。如果它找到一份相关的个人资料，则会将命名空间和 ID 作为区段会员资格属性添加到此个人资料中的其他 ID。举个例子， <user@adobe.com> 可以跨其所有设备和渠道进行定位。 如果未找到相关的个人资料，则会创建一份新的个人资料。
 
 Customer Journey Analytics您可以在Platform中通过转到 **[!UICONTROL 区段]** > **[!UICONTROL 创建区段]** > **[!UICONTROL 受众]** 选项卡> **[!UICONTROL cja受众]**.
 
