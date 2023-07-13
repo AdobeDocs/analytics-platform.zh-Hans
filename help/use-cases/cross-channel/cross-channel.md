@@ -4,10 +4,10 @@ description: 分析客户历程中的客户交互并从中提炼见解。
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
-source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
+source-git-commit: 75f27ef2f5fcd0d2a2038dbe7bcf812e865a14fc
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 63%
+source-wordcount: '531'
+ht-degree: 61%
 
 ---
 
@@ -15,11 +15,9 @@ ht-degree: 63%
 
 跨渠道分析通过统一来自各种Web、移动和离线资产的数据，支持跨各种渠道的客户行为的单一整合视图。 例如，可使用此综合视图分析桌面和移动设备上的客户交互，从而了解客户行为并提炼见解以优化数字客户体验。还可分析各渠道（包括数字和线下渠道）的客户交互（如支持交互和店内购买）以更好地了解和优化客户历程。
 
-## 工作流程
-
-![跨渠道体系结构](../assets/cca-architecture.png)
-
 ## 实施步骤
+
+![实施步骤流的插图，如中所述 [实施步骤](#implementation-steps)](../assets/cca-architecture.png)
 
 1. 为要引入的数据[创建架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans)。
 1. 为要引入的数据[创建数据集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html)。
