@@ -1,9 +1,9 @@
 ---
 title: 行业用例
 description: 引导式分析的行业用例
-source-git-commit: 704018bd9d0dae97e0f9c40c36d0618e9f15de76
+source-git-commit: 4a82681f0523e0a9cba23da98f42f9dd6210b414
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1448'
 ht-degree: 2%
 
 ---
@@ -65,6 +65,8 @@ ht-degree: 2%
 
 ![旅行和酒店的使用情况视图](assets/th-trends-usage.png)
 
+![旅游和酒店业的转化趋势](assets/th-funnel-conversio-trends.png)
+
 +++
 
 +++**媒体和娱乐**
@@ -81,6 +83,8 @@ ht-degree: 2%
 ![媒体和娱乐的摩擦视图](assets/me-funnel-friction.png)
 
 ![媒体和娱乐活动视图](assets/me-user-growth-active.png)
+
+![](assets/me-trends-usage.png)
 
 +++
 

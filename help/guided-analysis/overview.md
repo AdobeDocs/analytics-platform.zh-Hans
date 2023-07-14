@@ -3,7 +3,7 @@ title: 指导分析概述
 description: 一种分析Customer Journey Analytics中的数据的方法，使产品团队能够快速获得高质量的见解。
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: bdde5e7798ee3c960006d47dc31947d2e1a74a5f
+source-git-commit: 75f946e65bfc0ccee4f173b699b14caced21bbaf
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 8%
@@ -40,11 +40,11 @@ ht-degree: 8%
 
 1. 单击 **[!UICONTROL 引导式分析]** 从主页直接跳转到 [使用情况趋势视图](types/usage.md).
 
-   ![创建新模式窗口](assets/create-new-modal.png)
+   ![登陆页面拼贴](assets/landing-page-tile.png)
 
 1. 单击 **[!UICONTROL 新建]** 查看不同的视图选项并选择不同的起点进行分析。
 
-   ![登陆页面拼贴](assets/landing-page-tile.png)
+   ![创建新模式窗口](assets/create-new-modal.png)
 
 ## 界面
 
