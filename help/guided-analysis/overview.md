@@ -3,10 +3,10 @@ title: 指导分析概述
 description: 一种分析Customer Journey Analytics中的数据的方法，使产品团队能够快速获得高质量的见解。
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: cc76b4c3b03647f6e90f0b57f4d8c819caa8823f
+source-git-commit: bdde5e7798ee3c960006d47dc31947d2e1a74a5f
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 9%
+source-wordcount: '1048'
+ht-degree: 8%
 
 ---
 
@@ -24,13 +24,13 @@ ht-degree: 9%
 
 | 分析类型 | 视图类型 | 描述 |
 | --- | --- | --- |
-| 影响 | [版本](types/release.md) | 比较发布前和发布后相同时期的性能. |
-| 影响 | [首次使用](types/first-use.md) | 衡量首次功能使用对关键指标的影响. |
-| 漏斗 | [摩擦](types/friction.md) | 比较步骤之间的转化率. |
-| 漏斗 | [转化趋势](types/conversion-trends.md) | 跟踪转化率随时间发生的变化. |
-| 用户增长 | [活动](types/active.md) | 确定新的、保留的、返回的或休眠的用户. |
-| 用户增长 | [净增长](types/net-growth.md) | 您是在获得用户还是在失去用户？ |
-| 趋势 | [使用情况](types/usage.md) | 随着时间的推移衡量用户参与度. |
+| [!UICONTROL 影响] | [版本](types/release.md) | 比较发布前和发布后相同时期的性能. |
+| [!UICONTROL 影响] | [首次使用](types/first-use.md) | 衡量首次功能使用对关键指标的影响. |
+| [!UICONTROL 漏斗] | [摩擦](types/friction.md) | 比较步骤之间的转化率. |
+| [!UICONTROL 漏斗] | [转化趋势](types/conversion-trends.md) | 跟踪转化率随时间发生的变化. |
+| [!UICONTROL 用户增长] | [活动](types/active.md) | 确定新的、保留的、返回的或休眠的用户. |
+| [!UICONTROL 净增长] | [净增长](types/net-growth.md) | 您是在获得用户还是在失去用户？ |
+| [!UICONTROL 趋势] | [使用情况](types/usage.md) | 随着时间的推移衡量用户参与度. |
 
 {style="table-layout:auto"}
 
@@ -38,9 +38,13 @@ ht-degree: 9%
 
 如果您的组织已针对引导式分析进行了配置，则可以从Customer Journey Analytics主页访问该组织。
 
-单击 **引导式分析** 从主页直接跳转到 [使用情况趋势视图](types/usage.md).
+1. 单击 **[!UICONTROL 引导式分析]** 从主页直接跳转到 [使用情况趋势视图](types/usage.md).
 
-单击 **新建** 查看不同的视图选项并选择不同的起点进行分析。
+   ![创建新模式窗口](assets/create-new-modal.png)
+
+1. 单击 **[!UICONTROL 新建]** 查看不同的视图选项并选择不同的起点进行分析。
+
+   ![登陆页面拼贴](assets/landing-page-tile.png)
 
 ## 界面
 
