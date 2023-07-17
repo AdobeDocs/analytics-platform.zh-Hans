@@ -2,7 +2,7 @@
 title: 转化趋势视图
 description: 跟踪转化率随时间发生的变化。
 feature: Guided Analysis
-source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
+source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 2%
@@ -10,8 +10,6 @@ ht-degree: 2%
 ---
 
 # 转化趋势视图
-
-{{release-limited-testing}}
 
 此 **转化趋势** 视图提供有关一段时间内转化率的趋势可视化。 水平轴是一个时间间隔，而垂直轴表示转化率。
 

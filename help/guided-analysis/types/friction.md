@@ -3,7 +3,7 @@ title: 摩擦视图
 description: 比较步骤之间的转化率.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
 feature: Guided Analysis
-source-git-commit: aca4a5091c65d7243f79551be7cee615ba98bb26
+source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 3%
@@ -11,8 +11,6 @@ ht-degree: 3%
 ---
 
 # 摩擦视图
-
-{{release-limited-testing}}
 
 此 **摩擦** 视图提供了产品中关键用户历程的可视化表示形式。 水平轴表示用户必须执行的每个步骤。 垂直轴表示每个步骤中用户或会话的百分比。 所有步骤必须按最终顺序完成，但可以在报告窗口内的任何时间执行。
 

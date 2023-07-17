@@ -3,7 +3,7 @@ title: 指导分析概述
 description: 一种分析Customer Journey Analytics中的数据的方法，使产品团队能够快速获得高质量的见解。
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: 75f946e65bfc0ccee4f173b699b14caced21bbaf
+source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 8%
@@ -11,8 +11,6 @@ ht-degree: 8%
 ---
 
 # 指导分析概述
-
-{{release-limited-testing}}
 
 引导式分析是一种报告格式，它允许产品团队快速满足其数据需求，以便他们能够快速获得高质量见解并做出更多由数据驱动的产品决策。 跨职能团队可以实时连接以使用和了解这些报告。
 

@@ -2,7 +2,7 @@
 title: 净增长视图
 description: 您是在获得用户还是在失去用户？
 feature: Guided Analysis
-source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
+source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 1%
@@ -10,8 +10,6 @@ ht-degree: 1%
 ---
 
 # 净增长视图
-
-{{release-limited-testing}}
 
 此 **净增长** 视图类型提供有关特定时段内用户增减速率的见解。 水平轴是时间间隔，垂直轴是生长测量值。
 

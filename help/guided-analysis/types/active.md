@@ -3,7 +3,7 @@ title: 活动视图
 description: 确定新的、保留的、返回的或休眠的用户.
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 feature: Guided Analysis
-source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
+source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 3%
@@ -11,8 +11,6 @@ ht-degree: 3%
 ---
 
 # 活动视图
-
-{{release-limited-testing}}
 
 此 **活动** 视图提供有关特定时段内用户增长和客户获取的洞察。 水平轴是时间间隔，而垂直轴是用户的测量值。 用户分为四个类别：
 

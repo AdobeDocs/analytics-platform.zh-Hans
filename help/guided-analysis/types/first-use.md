@@ -2,7 +2,7 @@
 title: 首次使用视图
 description: 衡量首次功能使用对关键指标的影响.
 feature: Guided Analysis
-source-git-commit: 4d642c150f04ed4780820036cfd53fc343fc94c8
+source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 3%
@@ -10,8 +10,6 @@ ht-degree: 3%
 ---
 
 # 首次使用视图
-
-{{release-limited-testing}}
 
 此 **首次使用** 视图显示了用户首次使用产品功能之前和之后关键指示器执行情况的比较。 此报告的水平轴是事件之前和之后的相对时间间隔，而垂直轴测量所需的关键指标。 图表中间的一个垂直条形表示给定用户首次使用某个功能时的第0天。 由于用户并不总是在同一天采用功能，并且您的转出可能会持续几天，因此第0天对于每个用户都意味着一些不同的内容。
 
