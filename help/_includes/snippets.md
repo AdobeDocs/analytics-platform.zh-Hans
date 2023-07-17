@@ -1,8 +1,8 @@
 ---
-source-git-commit: 89665490fb3b03a9d9578d22e0e9ed62415c66be
+source-git-commit: 497334bdd0324e5b3955be79029079af88ca56e2
 workflow-type: tm+mt
-source-wordcount: '1061'
-ht-degree: 69%
+source-wordcount: '1092'
+ht-degree: 67%
 
 ---
 # 片段
@@ -18,6 +18,13 @@ ht-degree: 69%
 >[!AVAILABILITY]
 >
 >本部分描述的功能处于发布的有限测试阶段，因此可能在您的环境中尚不可用。当该功能正式发布时，将删除此说明。有关Customer Journey Analytics发布过程的信息，请参阅 [Customer Journey Analytics功能发布](/help/release-notes/releases.md).
+
+## 选择包 {#select-package}
+
+>[!NOTE]
+>
+>您必须拥有 **选择** 包以便使用本文中描述的功能。 如果您不确定您拥有哪个Customer Journey Analytics包，请联系您的管理员。
+
 
 ## 数据词典过滤条件 {#dd-filter-criteria}
 
