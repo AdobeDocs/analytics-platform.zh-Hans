@@ -3,9 +3,9 @@ title: 活动视图
 description: 确定新的、保留的、返回的或休眠的用户.
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 feature: Guided Analysis
-source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
+source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '595'
 ht-degree: 2%
 
 ---
@@ -20,8 +20,6 @@ ht-degree: 2%
 * **[!UICONTROL 休眠]**：用户在刚开始的上一时段处于活动状态，但在当前时段未处于活动状态。 休眠用户不计入活动用户总数。
 
 所有活动用户（新+重复+返回）在水平轴上方显示为蓝绿色，而所有休眠用户都在水平轴下方显示为橙色。
-
-请参阅 [!UICONTROL 活动] 查看实际操作内容：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421667/?learn=on)
 

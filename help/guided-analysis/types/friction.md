@@ -3,9 +3,9 @@ title: 摩擦视图
 description: 比较步骤之间的转化率.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
 feature: Guided Analysis
-source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
+source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '489'
 ht-degree: 2%
 
 ---
@@ -13,8 +13,6 @@ ht-degree: 2%
 # [!UICONTROL 摩擦] 视图
 
 此 **[!UICONTROL 摩擦]** 视图提供了产品中关键用户历程的可视化表示形式。 水平轴表示用户必须执行的每个步骤。 垂直轴表示每个步骤中用户或会话的百分比。 所有步骤必须按最终顺序完成，但可以在报告窗口内的任何时间执行。
-
-请参阅 [!UICONTROL 摩擦] 查看实际操作内容：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421663/?learn=on)
 

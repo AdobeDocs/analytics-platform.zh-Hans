@@ -2,18 +2,16 @@
 title: 版本视图
 description: 比较发布前和发布后相同时期的性能.
 feature: Guided Analysis
-source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
+source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 3%
+source-wordcount: '474'
+ht-degree: 4%
 
 ---
 
 # [!UICONTROL 版本] 视图
 
 此 **[!UICONTROL 版本]** 视图显示给定日期之前和之后关键指标执行情况的比较。 此报告的水平轴是一个时间间隔，而垂直轴测量所需的关键指标。 图表中间有一个垂直条，表示您要在之前和之后进行比较的日期。 此日期通常表示要针对的产品发生显着更改，例如产品更新或促销活动发布。
-
-请参阅 [!UICONTROL 版本] 查看实际操作内容：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421665/?learn=on)
 

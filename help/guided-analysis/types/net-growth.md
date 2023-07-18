@@ -2,9 +2,9 @@
 title: 净增长视图
 description: 您是在获得用户还是在失去用户？
 feature: Guided Analysis
-source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
+source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '616'
 ht-degree: 1%
 
 ---
@@ -28,8 +28,6 @@ ht-degree: 1%
 >[!NOTE]
 >
 >重复用户不会计入此计算，因为它们不表示用户的任何收益或损失。
-
-请参阅 [!UICONTROL 净增长] 查看实际操作内容：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421664/?learn=on)
 
