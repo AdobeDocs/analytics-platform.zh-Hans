@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 1f39d7f4-b508-45d8-9b97-81242c3805d3
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 8b0a4b06a2ebed196bab37e9befb61e0bf0f8902
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 97%
+source-wordcount: '750'
+ht-degree: 68%
 
 ---
 
@@ -90,3 +90,47 @@ ht-degree: 97%
 1. 单击&#x200B;**应用**。
 
    Report Builder 将更新筛选器列表以反映替换情况。
+
+### 从单元格定义数据块筛选器
+
+数据块可以引用单元格中的筛选器。 多个数据块可以引用同一单元格作为过滤器，从而允许您一次轻松切换多个数据块的过滤器。
+
+从单元格应用筛选器
+
+1. 导航到数据块创建或编辑过程中的步骤2。 参见 [创建数据块](./create-a-data-block.md).
+1. 单击 **筛选器** 选项卡，以定义过滤器。
+1. 单击 **从单元格创建筛选器**.
+
+   ![](./assets/create-filter-from-cell.png)
+
+1. 选择要数据块从中引用筛选器的单元格。
+
+1. 通过双击筛选器或者将其拖放到包含的筛选器部分来添加要添加到单元格的筛选器选择。
+
+   注意：一次只能为给定单元格选择一个选项。
+
+   ![](./assets/select-filters.png)
+
+1. 单击 **应用** 创建引用单元格。
+
+1. 从 **筛选器** 选项卡，将新创建的引用单元格筛选器添加到数据块。
+
+   ![](./assets/reference-cell-filter.png)
+
+1. 单击&#x200B;**完成**。
+
+   现在，此单元格可以被其筛选器中的其他数据块引用。 要将引用单元格作为过滤器应用于其他数据块，只需从过滤器选项卡中将单元格引用添加到其过滤器即可。
+
+#### 使用引用单元格更改数据块筛选器
+
+1. 选择电子表格中的引用单元格。
+
+1. 单击下面的链接 **单元格中的筛选器** 在“快速编辑”菜单中。
+
+   ![](./assets/filters-from-cell-link.png)
+
+1. 从下拉菜单中选择您的筛选器。
+
+   ![](./assets/filter-drop-down.png)
+
+1. 单击&#x200B;**应用**。

@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: f09dffe3d134c423b69f6ca75337f3aca3f51410
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 97%
+source-wordcount: '552'
+ht-degree: 82%
 
 ---
 
@@ -70,6 +70,24 @@ ht-degree: 97%
    将组件添加到表时，数据块的预览显示在工作表中的“数据块”位置。在表中添加、移动或删除项目时，数据块版面的预览自动更新。
 
    ![](./assets/image10.png)
+
+   **显示或隐藏行和列标题**
+
+1. 单击Report Builder中心中的“编辑数据块”命令。
+
+1. 单击 **表** 设置图标。
+
+   ![占位符图像](./assets/table-settings.png){width="35%"}
+
+1. 选中或取消选中“显示行和列标题”选项。 默认显示标题。
+
+   **隐藏或显示维度标签和量度标题**
+
+1. 单击维度或列标题上的省略号图标以显示设置。
+
+   ![占位符图像](./assets/row-heading.png){width="35%"}
+
+1. 单击隐藏或显示可切换维度标签或列标题。 默认显示所有标签。
 
 1. 单击&#x200B;**完成**。
 
