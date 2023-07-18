@@ -3,7 +3,7 @@ title: 活动视图
 description: 确定新的、保留的、返回的或休眠的用户.
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 2%
@@ -21,9 +21,7 @@ ht-degree: 2%
 
 所有活动用户（新+重复+返回）在水平轴上方显示为蓝绿色，而所有休眠用户都在水平轴下方显示为橙色。
 
-![活动](../assets/active.png)
-
-## 查看活动视图的实际操作
+请参阅 [!UICONTROL 活动] 查看实际操作内容：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421667/?learn=on)
 

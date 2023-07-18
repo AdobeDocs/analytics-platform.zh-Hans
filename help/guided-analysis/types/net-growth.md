@@ -2,16 +2,16 @@
 title: 净增长视图
 description: 您是在获得用户还是在失去用户？
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '623'
 ht-degree: 1%
 
 ---
 
-# 净增长视图
+# [!UICONTROL 净增长] 视图
 
-此 **净增长** 视图类型提供有关特定时段内用户增减速率的见解。 水平轴是时间间隔，垂直轴是生长测量值。
+此 **[!UICONTROL 净增长]** 视图类型提供有关特定时段内用户增减速率的见解。 水平轴是时间间隔，垂直轴是生长测量值。
 
 每个数据点表示净增长，使用下列公式计算净增长：
 
@@ -29,9 +29,7 @@ ht-degree: 1%
 >
 >重复用户不会计入此计算，因为它们不表示用户的任何收益或损失。
 
-![净增长](../assets/net-growth.png)
-
-## 实际运营中的净增长视图
+请参阅 [!UICONTROL 净增长] 查看实际操作内容：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421664/?learn=on)
 

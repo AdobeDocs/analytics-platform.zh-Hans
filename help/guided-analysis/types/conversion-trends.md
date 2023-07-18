@@ -2,10 +2,10 @@
 title: 转化趋势视图
 description: 跟踪转化率随时间发生的变化。
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 2%
+source-wordcount: '453'
+ht-degree: 1%
 
 ---
 
@@ -13,9 +13,7 @@ ht-degree: 2%
 
 此 **转化趋势** 视图提供有关一段时间内转化率的趋势可视化。 水平轴是一个时间间隔，而垂直轴表示转化率。
 
-![转化趋势](../assets/conversion-trends.png)
-
-## 请参阅转化趋势视图的实际操作
+请参阅 [!UICONTROL 转化趋势] 在操作中查看
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421662/?learn=on)
 

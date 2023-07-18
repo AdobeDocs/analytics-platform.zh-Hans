@@ -3,10 +3,10 @@ title: 使用情况视图
 description: 随着时间的推移衡量用户参与度.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
 workflow-type: tm+mt
 source-wordcount: '498'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -14,9 +14,7 @@ ht-degree: 3%
 
 此 **[!UICONTROL 使用情况]** 视图提供关于您的产品性能或用户一段时间内行为的宝贵见解。 此报表的水平轴是一个时间间隔，而垂直轴测量所需的事件。
 
-![使用情况](../assets/usage.png)
-
-## 参见 [!UICONTROL 使用情况] 在操作中查看
+请参阅 [!UICONTROL 使用情况] 查看实际操作内容：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421666/?learn=on)
 
