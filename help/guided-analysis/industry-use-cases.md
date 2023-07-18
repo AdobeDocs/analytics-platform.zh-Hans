@@ -1,9 +1,9 @@
 ---
 title: 行业用例
 description: 引导式分析的行业用例
-source-git-commit: 4a82681f0523e0a9cba23da98f42f9dd6210b414
+source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1442'
 ht-degree: 2%
 
 ---
@@ -46,8 +46,6 @@ ht-degree: 2%
 
 ![金融服务的活动视图](assets/fsi-user-growth-active.png)
 
-![金融服务的备用活动视图](assets/fsi-user-growth-active-2.png)
-
 +++
 
 +++**旅游和酒店业**
@@ -65,7 +63,7 @@ ht-degree: 2%
 
 ![旅行和酒店的使用情况视图](assets/th-trends-usage.png)
 
-![旅游和酒店业的转化趋势](assets/th-funnel-conversio-trends.png)
+![旅游和酒店业的转化趋势](assets/th-funnel-conversion-trends.png)
 
 +++
 
