@@ -4,10 +4,10 @@ description: 预览 Customer Journey Analytics 的原型项目
 role: Admin
 exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
 feature: Labs
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 9a4ae8ae8c545589de0556059520b31364de367c
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 90%
+source-wordcount: '424'
+ht-degree: 91%
 
 ---
 
@@ -64,11 +64,6 @@ ht-degree: 90%
    ![新反馈框](assets/short-survey.png)
 
 1. 单击&#x200B;**[!UICONTROL 提交]**&#x200B;以返回主“预览”门户。
-
-## Customer Journey Analytics实验室原型
-
-* 自然语言洞察生成器：提供在自由格式表格中分析的任何数据的自然语言摘要。
-* 可视化推荐：推荐与数据匹配良好的可视化。
 
 ## 其他信息
 
