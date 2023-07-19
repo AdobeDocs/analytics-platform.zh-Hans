@@ -3,9 +3,9 @@ title: 过滤器概述
 description: 了解过滤器的用途以及如何创建简单的过滤器。
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
-source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
+source-git-commit: d045ecf73f7e15940510b764814fb853222e88cc
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '990'
 ht-degree: 33%
 
 ---
@@ -43,8 +43,6 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 >您必须拥有 **选择** ，以创建跨渠道顺序过滤器。 如果您不确定您拥有哪个Customer Journey Analytics包，请联系您的管理员。&#x200B;
 
 示例如下：
-
-<!--![](assets/sequential_fil.png)-->
 
 | 会话1 | 第二场会议 | 第三场会议 |
 | --- | --- | --- |
@@ -117,7 +115,7 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 
 ## 现成的过滤器模板 {#template}
 
-传统Analytics提供大量现成的模板过滤器（过滤器）和计算量度。 其中许多不适用于Customer Journey Analytics，或者必须重命名或重新创建。 其他变量则依赖于Customer Journey Analytics中的上下文感知变量的解决方案。
+传统Analytics附带大量现成的模板和计算量度。 其中许多不适用于Customer Journey Analytics，或者必须重命名或重新创建。 其他变量则依赖于Customer Journey Analytics中的上下文感知变量的解决方案。
 
 | 过滤器名称 | 描述 |
 | --- | --- |

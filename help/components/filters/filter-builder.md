@@ -3,14 +3,14 @@ description: 过滤器生成器提供了一个画布以将指标Dimension、过�
 title: 构建过滤器
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: d045ecf73f7e15940510b764814fb853222e88cc
 workflow-type: tm+mt
-source-wordcount: '2052'
-ht-degree: 27%
+source-wordcount: '1396'
+ht-degree: 22%
 
 ---
 
-# 筛选器生成器
+# 过滤器生成器
 
 此 [!UICONTROL 筛选器生成器] 可让您构建简单或复杂的过滤器，用于标识跨访问和事件的人员属性和操作。 它提供了一个画布以将指标维度、事件或其他过滤器拖放到其中，从而根据层次结构逻辑、规则和运算符筛选人员。
 
@@ -20,10 +20,9 @@ ht-degree: 27%
 
 您可以通过以下任意方式访问过滤器生成器：
 
-* **Analytics顶部导航**：单击 **[!UICONTROL 分析]** > **[!UICONTROL 组件]** > **[!UICONTROL 筛选器]**.
+* **顶部导航**：单击 **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL 组件]** > **[!UICONTROL 筛选器]**.
 * **[!UICONTROL Analysis Workspace]**：在Analysis Workspace中打开一个项目后，选择 **[!UICONTROL +组件]** > **[!UICONTROL 创建筛选器]**.
-* **[!UICONTROL Reports &amp; Analytics]**：单击 **[!UICONTROL 分析]** > **[!UICONTROL 报告]**，打开一个现有报表，然后单击 **筛选条件** 图标，然后单击 **[!UICONTROL 添加]**.
-* **[!UICONTROL Report Builder]**： [在Report Builder中添加或编辑筛选器](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/data-requests/segmentation.html?lang=zh-Hans).
+* **[!UICONTROL Report Builder]**： [在Report Builder中使用筛选器](/help/report-builder/work-with-filters.md).
 
 ## 生成器标准概述 {#section_F61C4268A5974C788629399ADE1E6E7C}
 
@@ -153,91 +152,3 @@ ht-degree: 27%
 
 1. 选择&#x200B;[!UICONTROL **保存**]。
 
-## 筛选器模板 {#concept_5098446CC78D441E93B8E4D1D1EA6558}
-
-过滤器模板可用于常见的过滤器用例，例如“首次访问”或“来自移动设备的访问”。 它们可在工作区项目和过滤器生成器中用作新过滤器的构建基块。
-
-模板由 Adobe“A”徽标表示。以下列出了模板示例：
-
-<table id="table_98B87D807E9344C9BEBF072C65D87B1B"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 模板名称 </th> 
-   <th colname="col2" class="entry"> 定义 </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> 放弃购物车 </td> 
-   <td colname="col2">查看将商品添加到购物车但未订购任何商品的人员的数据。 在过滤器定义中，容器为“访问”。 此顺序过滤器的规则为 <p> 购物车加货不为空 </p> <p>Then </p> <p>订单等于 0。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 第一次访问 </td> 
-   <td colname="col2">查看访问次数最多一[1]次的人的数据。 在过滤器定义中，容器为“访问”。 规则为 <p>访问次数等于 1。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 非顾客 </td> 
-   <td colname="col2">查看未参与订单事件的人员的数据。 在过滤器定义中，容器为“访客”。 此过滤器使用排除逻辑。 规则为 <p>订单不为空。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 非单页面访问（非跳出） </td> 
-   <td colname="col2">查看访问过多次的人的数据。 在过滤器定义中，容器为“访客”。 此过滤器使用排除逻辑。 规则为 <p>单次访问不为空。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 付费搜索 </td> 
-   <td colname="col2">查看来自付费搜索人员的数据。 在过滤器定义中，容器为“访问”。 规则为 <p>付费搜索等于 1。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 顾客 </td> 
-   <td colname="col2">查看已参与订单事件的人员的数据。 在过滤器定义中，容器为“访客”。 规则为 <p>订单不为空。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 回访 </td> 
-   <td colname="col2">查看至少访问过一次的人员的数据。 在过滤器定义中，容器为“访问”。 规则为 <p>访问次数大于 1。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 单页面访问量 </td> 
-   <td colname="col2"> 查看包含某个页面值的访问数据，可以提交该次访问过程中的多个页面查看。过滤器中包含带有退出链接事件的单页面访问量。 在过滤器定义中，容器为“访问”。 规则为 <p>单个页面访问次数等于 1。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 查看的产品未添加到购物车 </td> 
-   <td colname="col2">查看查看查看了产品但未添加购物车的人员的数据。 在过滤器定义中，容器为“访问”。 此顺序过滤器的规则为 <p>产品查看不为空 </p> <p>Then </p> <p> 购物车加货等于 0。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 来自促销活动的访问量 </td> 
-   <td colname="col2">查看营销活动引荐的人员提供的数据。 在过滤器定义中，容器为“访问”。 规则为 <p>跟踪代码不为空。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 来自移动设备的访问量 </td> 
-   <td colname="col2">查看使用移动设备的人员提供的数据。 在过滤器定义中，容器为“访问”。 规则为 <p>移动设备不为空。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 来自免费搜索的访问量 </td> 
-   <td colname="col2">查看并非来自付费搜索的人的数据。 在过滤器定义中，容器为“访问”。 规则为 <p>付费搜索等于 0。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 来自非移动设备的访问量 </td> 
-   <td colname="col2">查看未使用移动设备的人员的数据。 在过滤器定义中，容器为“访问”。 此过滤器使用排除逻辑。 规则为 <p>移动设备类型等于手机 </p> <p>或 </p> <p>移动设备类型等于平板电脑 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 来自手机的访问量 </td> 
-   <td colname="col2">查看使用电话的人的数据。 在过滤器定义中，容器为“访问”。 规则为 <p>设备类型等于手机。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 来自搜索引擎的访问量 </td> 
-   <td colname="col2">查看搜索引擎引用的人员提供的数据。 在过滤器定义中，容器为“访问”。 规则为 <p>反向链接类型等于搜索引擎。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 社交网站访问量 </td> 
-   <td colname="col2">查看社交网站引用的人员数据。 在过滤器定义中，容器为“访问”。 规则为 <p>反向链接类型等于“社交网络”。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 来自平板电脑的访问量 </td> 
-   <td colname="col2">查看使用平板电脑的用户的数据。 在过滤器定义中，容器为“访问”。 规则为 <p>设备类型等于平板电脑。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 使用访客 ID Cookie 的访问量 </td> 
-   <td colname="col2">查看从人员到您网站的数据，其中需要永久性Cookie。 在过滤器定义中，容器为“访问”。 规则为 <p>永久性 Cookie 等于 1。 </p> </td> 
-  </tr> 
- </tbody> 
-</table>
