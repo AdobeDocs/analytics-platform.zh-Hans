@@ -3,17 +3,17 @@ title: 过滤器概述
 description: 了解过滤器的用途以及如何创建简单的过滤器。
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 34%
+source-wordcount: '992'
+ht-degree: 33%
 
 ---
 
 
 # 过滤器概述 {#overview}
 
-Customer Journey Analytics 让您可以构建、管理、共享强大集中的受众过滤器，并将这些过滤器应用到您的报表。过滤器让您可以根据用户特征或网站交互情况来识别人员子集。 过滤器是指正式设计编码的受众洞察，您可以根据自己的特定需求来构建，然后验证、编辑并与其他团队成员共享。
+Customer Journey Analytics 让您可以构建、管理、共享强大集中的受众过滤器，并将这些过滤器应用到您的报表。通过过滤器，可根据人员特征或交互情况识别人员子集。 过滤器是指正式设计编码的受众洞察，您可以根据自己的特定需求来构建，然后验证、编辑并与其他团队成员共享。
 
 筛选器可以基于
 
@@ -37,6 +37,10 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 ## 顺序过滤器 {#sequential}
 
 顺序过滤器允许您根据网站中的导航和页面查看来识别人员，从而为定义的操作和交互提供过滤器。 顺序过滤器可帮助您识别用户喜欢和避开的内容。 生成顺序过滤器时，会使用THEN运算符来定义和排序人员导航。
+
+>[!IMPORTANT]
+>
+>您必须拥有 **选择** ，以创建跨渠道顺序过滤器。 如果您不确定您拥有哪个Customer Journey Analytics包，请联系您的管理员。&#x200B;
 
 示例如下：
 

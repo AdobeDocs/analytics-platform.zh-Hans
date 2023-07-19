@@ -4,10 +4,10 @@ description: 了解Customer Journey Analytics提供了哪些组件，以及如�
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 87%
+source-wordcount: '1127'
+ht-degree: 79%
 
 ---
 
@@ -21,10 +21,14 @@ ht-degree: 87%
 您可以管理以下组件：
 
 * [**批注**](/help/components/annotations/overview.md)：向您的组织传达上下文数据的细微差别和见解。
-* [**过滤器**](filters/filters-overview.md)：排除部分数据，以重点关注常见的维度项目
+* [**受众**](/help/components/audiences/audiences-overview.md)：创建在Customer Journey Analytics中发现的受众并将其发布到 [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans) (RTCDP)，用于Adobe Experience Platform中的客户定位和个性化。
+* [**筛选器**](filters/filters-overview.md)：构建、管理、共享强大而集中的受众过滤器，并将其应用于您的报表。 通过过滤器，可根据人员特征或交互情况识别人员子集。
 * [**计算量度**](calc-metrics/calc-metr-overview.md)：使用量度和公式作为新组件以便在报告中使用
-* [**日期范围**](date-ranges/create.md)：自定义和优化 Analysis Workspace 中提供的日期范围
-* [**项目**](/help/analysis-workspace/home.md)：组织和维护 Analysis Workspace 中的项目
+* [**数据字典**](/help/components/data-dictionary/data-dictionary-overview.md)：帮助用户和管理员跟踪并更好地了解其Analytics环境中的组件。
+* [**日期范围**](date-ranges/create.md)：自定义和优化 Analysis Workspace 中提供的日期范围.
+* [**Dimension**](/help/components/dimensions/view-dimensions.md)：Dimension是通常包含字符串值的变量。 常见维度包括页面和反向链接域。
+* [**量度**](/help/components/apply-create-metrics.md)：用于量化Analysis Workspace中的数据点。
+* [**项目**](/help/analysis-workspace/home.md)：组织和维护 Analysis Workspace 中的项目.
 
 ## Analysis Workspace 组件
 

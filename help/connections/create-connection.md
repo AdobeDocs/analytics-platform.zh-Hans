@@ -4,16 +4,16 @@ description: 描述如何在 Customer Journey Analytics 中创建与 Platform �
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 7bcfedb472c26605e53805a09ef827fd20a1f986
+source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
 workflow-type: tm+mt
-source-wordcount: '2605'
-ht-degree: 60%
+source-wordcount: '2630'
+ht-degree: 58%
 
 ---
 
 # 创建连接
 
-最近在Customer Journey Analytics中启动了一个新的“连接”工作流。 新的连接创建和编辑工作流体验通过辅助工作流将所有数据集和连接配置设置引入屏幕中心。您提供了详细的数据集选择、配置和查看体验，以及数据集类型、大小、架构、数据集ID、批次状态、回填状态、人员ID等关键信息，以降低连接配置错误的风险。 以下是新功能的概述：
+连接创建和编辑工作流体验通过辅助工作流将所有数据集和连接配置设置带到屏幕中心。 它提供了详细的数据集选择、配置和查看体验，以及数据集类型、大小、架构、数据集ID、批次状态、回填状态、人员ID等关键信息，以降低连接配置错误的风险。 以下是各项功能的概述：
 
 * 您可以在创建连接时启用滚动数据保留窗口。
 * 您可以在连接中添加和删除数据集。（删除数据集会将其从连接中删除，并影响任何关联的数据视图和基础分析工作区项目。）
@@ -22,6 +22,10 @@ ht-degree: 60%
 * 您可以按数据集导入现有数据。
 
 >[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
+
+>[!IMPORTANT]
+>
+>您必须拥有 **选择** 打包以便向连接添加无限数量的数据集。 此 **基础** 包限制为一个数据集。 如果您不确定您拥有哪个Customer Journey Analytics包，请联系您的管理员。&#x200B;
 
 ## 创建和配置连接 {#create-connection}
 
