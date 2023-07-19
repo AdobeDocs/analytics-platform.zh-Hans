@@ -4,7 +4,7 @@ description: 使用字符串的子集作为维度项。
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 708dc7c69480534b118c8454d65a907946cfcce7
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 94%
@@ -75,7 +75,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 如果输�
 | 表达式 | 描述 |
 | --- | --- |
 | `a` | 单个字符 `a`。 |
-| `a|b` | 单个字符 `a` 或者 `b`。 |
+| `a\|b` | 单个字符 `a` 或者 `b`。 |
 | `[abc]` | 单个字符 `a`、`b` 或者 `c`。 |
 | `[^abc]` | 除 `a`、`b` 或者 `c` 之外的任意单个字符。 |
 | `[a-z]` | 在 `a`–`z` 之间的任意单个字符。 |
