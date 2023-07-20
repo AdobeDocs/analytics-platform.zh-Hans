@@ -3,7 +3,7 @@ title: 拼合常见问题解答
 description: 有关拼合的常见问题解答
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: c87aaefdd15e02b7fe2cf8e638830aa278d46b92
 workflow-type: tm+mt
 source-wordcount: '1163'
 ht-degree: 35%
@@ -82,7 +82,7 @@ Customer Journey Analytics中的某些指标与传统Analytics中的指标相似
 
 | **Customer Journey Analytics拼合数据** | **Customer Journey Analytics未拼合的数据** | **Adobe Analytics** | **带 CDA 的 Analytics Ultimate** |
 | ----- | ----- | ----- | ----- |
-| **人员** =已拼合ID被选为人员ID的不同人员ID的数量。 **人员数** 可能高于或低于传统 Adobe Analytics 中的&#x200B;**独特访客数**，具体取决于拼接过程的结果。 | **人员** =不同人员ID的数量（根据选定为人员ID的列）。 **人员** 在Adobe中，源连接器数据集类似于 **独特访客** 传统Adobe Analytics中的 `endUserIDs._experience.aaid.id` 用作Customer Journey Analytics中的人员ID。 | **独特访客** = 不同访客 ID 的数量。**独特访客**&#x200B;可能与不同 **ECID** 的数量不一致。 | 请参阅[人员数](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=zh-Hans)。 |
+| **人员** =已拼合ID被选为人员ID的不同人员ID的数量。 **人员数** 可能高于或低于传统 Adobe Analytics 中的&#x200B;**独特访客数**，具体取决于拼接过程的结果。 | **人员** =不同人员ID的数量（根据选定为人员ID的列）。 **人员** 在Analytics中，源连接器数据集类似于 **独特访客** 传统Adobe Analytics中的 `endUserIDs._experience.aaid.id` 用作Customer Journey Analytics中的人员ID。 | **独特访客** = 不同访客 ID 的数量。**独特访客**&#x200B;可能与不同 **ECID** 的数量不一致。 | 请参阅[人员数](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=zh-Hans)。 |
 | **会话**：根据Customer Journey Analytics数据视图中的会话设置定义。 拼接过程可能会将来自多个设备的各个会话组合成单个会话。 | **会话**：根据Customer Journey Analytics数据视图中指定的会话设置定义。 | **访问数**：请参阅[访问数](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=zh-Hans)。 | **访问数**：根据 [CDA 虚拟报告包](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=zh-Hans)中特定的会话设置定义。 |
 | **事件** =Customer Journey Analytics中已拼合数据的行数。 该量度通常接近于传统 Adobe Analytics 中的&#x200B;**发生次数**。但是，请注意上面关于具有空白永久ID的行的常见问题解答。 | **事件** =Customer Journey Analytics中未拼合数据的行数。 该量度通常接近于传统 Adobe Analytics 中的&#x200B;**发生次数**。但请注意，如果任何事件在Experience Platform数据湖的未拼接数据中具有空白的人员ID，则这些事件不包括在Customer Journey Analytics中。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=zh-Hans)。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=zh-Hans)。 |
 

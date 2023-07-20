@@ -4,10 +4,10 @@ description: 了解将数据摄取到 Customer Journey Analytics 的不同方式
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 675b3c24de2fdb47c8072d15fba168cc72feefbe
 workflow-type: tm+mt
 source-wordcount: '785'
-ht-degree: 93%
+ht-degree: 91%
 
 ---
 
@@ -51,7 +51,7 @@ Adobe Experience Platform 将来自多个来源的数据整合在一起，以帮
 
 阅读本教程，了解如何[使用 Customer Journey Analytics 分析 Google Analytics 数据](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module12/ex5.html?lang=zh-Hans)的详细步骤。
 
-## 使用批量数据摄取 API 将数据接入 Analytics，然后在 Experience Platform 中通过 Adobe Source Connector 进行摄取。
+## 使用Bulk Data Insertion API将数据导入Analytics，然后在Experience Platform中通过Analytics Source Connector进行摄取
 
 1. [使用批量数据摄取 API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md)，将服务器端收集数据提交到 Adobe Analytics。它允许您提交包含事件数据的 CSV 格式文件。
 1. [创建 Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)，将此使用者数据接入 Adobe Experience Platform。

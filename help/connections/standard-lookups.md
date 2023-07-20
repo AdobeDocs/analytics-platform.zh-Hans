@@ -4,10 +4,10 @@ description: 使用标准查找可利用 Customer Journey Analytics 中的有用
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 675b3c24de2fdb47c8072d15fba168cc72feefbe
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 78%
+ht-degree: 76%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 78%
 
 在传统Adobe Analytics中，这些维度会自行显示，但在Customer Journey Analytics中，您必须在创建数据视图时主动包含这些维度。 在“连接”工作流中，选择具有标准查找键标志的数据集。数据视图 UI 自动知道包括所有标准查找维度以用于报告。查找文件会在所有区域和所有帐户中自动保持为最新版本和可用。这些文件将存储在与客户关联的特定于区域的组织中。
 
-## 对 Adobe 源连接器数据集使用标准查找功能
+## 对Analytics源连接器数据集使用标准查找
 
 标准查找数据集在报告时自动应用。如果您使用Analytics Source Connector并引入Adobe为其提供标准查找的维度，我们会自动应用此标准查找。 如果某个事件数据集包含 XDM 字段，我们可以对其应用标准查找。
 
