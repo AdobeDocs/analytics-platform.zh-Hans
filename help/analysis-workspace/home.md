@@ -5,10 +5,10 @@ description: Analysis Workspace 功能概览
 feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 2647acd9dbf0732b02d69528fe1d07e381123aef
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 26%
+source-wordcount: '716'
+ht-degree: 28%
 
 ---
 
@@ -78,6 +78,10 @@ Analysis Workspace中的组件包含以下各项：
 Analysis Workspace 中的数据词典可帮助用户和管理员跟踪并更好地了解其 Analytics 环境中的组件。
 
 要了解有关数据字典的更多信息，请参阅 [数据字典概述](/help/components/data-dictionary/data-dictionary-overview.md).
+
+## 数据源
+
+通过同步可视化图表，您可以控制与可视化图表对应的数据表或数据源。以下是如何实现此功能的更多信息 [管理数据源](/help/analysis-workspace/visualizations/t-sync-visualization.md).
 
 ## 开始使用Analysis Workspace
 
