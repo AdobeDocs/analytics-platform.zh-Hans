@@ -4,10 +4,10 @@ description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
-source-wordcount: '2055'
-ht-degree: 41%
+source-wordcount: '2053'
+ht-degree: 38%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 41%
 | 区段 | 全面支持。现在称为“过滤器” — 请注意，传统Analysis Workspace中的任何现有区段都不会移植到Customer Journey Analytics。 |
 | 虚拟报告包 | 全面支持。现在称为[数据视图](/help/data-views/create-dataview.md)。 |
 | 虚拟报表包组件管理 | 全面支持。现在是“数据视图”的一部分。 |
-| 流 Media Analytics | 使用作为 Workspace 中的“同时观看媒体的人数”面板和“媒体播放耗时”面板一部分的 Analytics Data Connector 即可获得媒体数据。 |
+| 流 Media Analytics | 使用作为Workspace中的“媒体并行查看者”面板和“媒体播放耗时”面板一部分的Analytics Source Connector即可获得媒体数据。 |
 
 {style="table-layout:auto"}
 
@@ -70,7 +70,7 @@ ht-degree: 41%
 | 可视化图表 | 除地图可视化图表外，支持所有可视化图表。 |
 | Report Builder（Excel 插件） | 通过 Office 365 中的新 Excel 插件支持。 |
 | 用户权限/数据访问控制 | Customer Journey Analytics区分 [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=zh-Hans) 产品管理员、产品配置文件管理员和用户。 只有产品管理员可创建/更新/删除由其他用户创建的连接、项目、过滤器或计算度量，而产品管理员和产品配置文件管理员可编辑数据视图。其他用户权限可用于创建计算量度、过滤器或注释等。 |
-| 处理规则、VISTA 规则、营销渠道处理规则 | 对基于WebSDK的数据集和Analytics Data Connector的数据使用Adobe Experience Platform数据准备功能时支持。 |
+| 处理规则、VISTA 规则、营销渠道处理规则 | 对基于WebSDK的数据集和Analytics Source Connector的数据使用Adobe Experience Platform数据准备功能时支持。 |
 | 营销渠道 | 使用Analytics Source Connector时，营销渠道数据通过该连接器流入Customer Journey Analytics。 营销渠道规则是在传统Adobe Analytics中配置的，某些规则不受支持。 有关更多详细信息，请参阅 [Customer Journey Analytics营销渠道文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels.html). <br/>对于WebSDK实施，通过以下方式支持报表时间营销渠道处理规则 [派生字段](../../data-views/derived-fields/derived-fields.md). |
 
 {style="table-layout:auto"}
@@ -80,12 +80,12 @@ ht-degree: 41%
 | 功能 | 注释 |
 | --- | --- |
 | 跨设备/跨渠道拼接 | 支持直接包含标识信息的数据集（也称为“基于字段的”拼接）。尚不支持基于图形的拼接，但已规划。参见 [拼接](../../stitching/overview.md). |
-| 机器人筛选 | 对于基于 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 的数据集，将应用机器人筛选。其他数据集的常规机器人过滤逻辑不由 [!UICONTROL Experience Platform] 或Customer Journey Analytics。 |
-| 设备、浏览器、反向链接、技术维度 | 对于基于 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 的数据集支持。请参阅 [关于通过ADC支持哪些Analytics变量的文档](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=zh-Hans).<p>如果您使用Experience PlatformWeb SDK数据收集，则当前不支持基于设备查找的设备与维度。 有计划以后支持。 |
-| 地理分段维度 | 收集到Adobe AnalyticsCustomer Journey Analytics的所有地理分段/地理位置都将通过 [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans). 不使用Analytics Source Connector但依赖Experience PlatformWeb SDK进行数字数据收集的实施，可以使用 [Experience Edge地理位置查找服务](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hans). |
+| 机器人筛选 | 对象 [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans)基于的数据集，则应用机器人过滤。 其他数据集的常规机器人过滤逻辑不由 [!UICONTROL Experience Platform] 或Customer Journey Analytics。 |
+| 设备、浏览器、反向链接、技术维度 | 支持 [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans)基于的数据集。 请参阅 [关于通过ADC支持哪些Analytics变量的文档](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=zh-Hans).<p>如果您使用Experience PlatformWeb SDK数据收集，则当前不支持基于设备查找的设备与维度。 有计划以后支持。 |
+| 地理分段维度 | 收集到Adobe AnalyticsCustomer Journey Analytics的所有地理分段/地理位置都将通过 [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans). 对于不使用Analytics Source Connector但依赖Experience PlatformWeb SDK进行数字数据收集的实施，可以使用 [Experience Edge地理位置查找服务](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hans). |
 | 面板 | 全面支持空白面板、“归因”面板、“任意形状”面板和“快速分析”面板。不支持“区段比较面板”和“Analytics for Target (A4T) 面板”。 |
-| 处理规则 | 对于基于 Analytics Source Connector 的数据集，仍会应用处理规则。[Adobe Experience Platform 中的数据准备功能](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)也可以取代处理将直接进入 Platform 的数据的规则。 |
-| A4T | 通过 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 中的字段提供部分支持。有计划在 Target 活动和体验上支持适合 A4T 的名称。 |
+| 处理规则 | 对于基于Analytics源连接器的数据集，仍会应用处理规则。 [Adobe Experience Platform 中的数据准备功能](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)也可以取代处理将直接进入 Platform 的数据的规则。 |
+| A4T | 通过 [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans). 有计划在 Target 活动和体验上支持适合 A4T 的名称。 |
 
 {style="table-layout:auto"}
 

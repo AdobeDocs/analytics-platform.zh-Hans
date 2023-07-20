@@ -3,7 +3,7 @@ title: 创建受众并将受众发布到实时客户档案
 description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: 0b68281df23ef4d2e6c1f7dacf9f58c40604e7ca
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '1576'
 ht-degree: 61%
@@ -89,8 +89,8 @@ ht-degree: 61%
 
 | # | 延迟点 | 延迟持续时间 |
 | --- | --- | --- |
-| 未显示 | Adobe Analytics到Analytics Source Connector (A4T) | 最多 30 分钟 |
-| 1 | 将数据摄取到数据湖（从Analytics Source Connector或其他源） | 最多 90 分钟 |
+| 未显示 | Adobe Analytics到Analytics源连接器(A4T) | 最多 30 分钟 |
+| 1 | 将数据摄取到数据湖（从Analytics源连接器或其他源） | 最多 90 分钟 |
 | 2 | 将数据从Experience Platform数据湖摄取到Customer Journey Analytics | 最多 90 分钟 |
 | 3 | 受众发布到实时客户配置文件，包括自动创建流式区段，并可让区段准备好接收数据。 | 约 60 分钟 |
 | 4 | 受众的刷新频率 | <ul><li>一次性刷新（延迟小于 5 分钟）</li><li>每 4 小时、每天、每周、每月刷新一次（延迟与刷新率密切相关） |

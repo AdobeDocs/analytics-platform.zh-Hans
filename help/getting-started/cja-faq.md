@@ -4,10 +4,10 @@ description: Customer Journey Analytics - 常见问题解答。
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
-source-wordcount: '2197'
-ht-degree: 68%
+source-wordcount: '2196'
+ht-degree: 69%
 
 ---
 
@@ -100,7 +100,7 @@ Customer Journey Analytics 包括[数据准备](https://experienceleague.adobe.c
 
 +++**如何将 [!UICONTROL Adobe Analytics] 数据载入到 [!UICONTROL Customer Journey Analytics]？**
 
-[!UICONTROL Adobe Analytics] 数据可以通过 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 连接到 Experience Platform。大多数 [!UICONTROL Adobe Analytics] 字段以 XDM 格式转入，但其他字段尚不可用。
+[!UICONTROL Adobe Analytics] 数据可通过连接到Experience Platform [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans). 大多数 [!UICONTROL Adobe Analytics] 字段以 XDM 格式转入，但其他字段尚不可用。
 
 +++
 
@@ -135,7 +135,7 @@ Customer Journey Analytics 包括[数据准备](https://experienceleague.adobe.c
 
 我们最近更改了在Customer Journey Analytics中处理数据的方式：
 
-<ul><li>任何时间戳少于24小时的事件数据都将流式传入。</li><li>时间戳超过24小时的任何事件数据（即使它与较新数据位于同一批次中）都将被视为回填，并将以较低的优先级摄取。</li></ul>
+<ul><li>任何时间戳少于 24 小时的事件数据都将流入。</li><li>任何时间戳多于 24 小时的事件数据（即使它与更新的数据属于同一批次）都将视为回填，并将以较低的优先级摄取。</li></ul>
 
 ## 5. 设置[!UICONTROL 连接]数据保留的时段 {#data-retention}
 

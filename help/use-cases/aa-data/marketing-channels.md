@@ -1,13 +1,13 @@
 ---
 title: 在 Adobe Experience Platform 中使用“营销渠道”维度
-description: 使用 Analytics Source Connector 将营销渠道处理规则引入 Adobe Experience Platform。
+description: 使用Analytics Source Connector将营销渠道处理规则引入Adobe Experience Platform。
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '1046'
-ht-degree: 74%
+ht-degree: 63%
 
 ---
 
@@ -15,16 +15,16 @@ ht-degree: 74%
 
 如果您的组织使用 [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 要将报表包数据纳入Customer Journey Analytics，您可以在Customer Journey Analytics中配置连接以报告“营销渠道”维度。
 
-## 前提条件
+## 先决条件
 
-* 必须已使用 [ Analytics Source Connector ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 将报告包数据导入 Adobe Experience Platform。不支持其他数据源，因为“营销渠道”维度依赖于 Analytics 报表包中的处理规则。
+* 必须已使用将报表包数据导入Adobe Experience Platform [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans). 不支持其他数据源，因为“营销渠道”维度依赖于 Analytics 报表包中的处理规则。
 * 必须已设置“营销渠道”维度处理规则。参见 [营销渠道的处理规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html?lang=zh-Hans) 《Adobe Analytics组件指南》中的。
 
 ## “营销渠道”架构元素
 
-在所需的报告包上建立 Analytics Source Connector 后，系统会为您创建 XDM 架构。此架构包含所有 Analytics 维度和量度作为原始数据。此类原始数据中不包含归因或持久性设置。相反，每个事件都通过“营销渠道”维度处理规则运行，并记录其匹配的第一个规则。在Customer Journey Analytics中创建数据视图时，需要指定归因和持久性。
+在所需的报表包上建立Analytics Source Connector后，将为您创建XDM架构。 此架构包含所有 Analytics 维度和量度作为原始数据。此类原始数据中不包含归因或持久性设置。相反，每个事件都通过“营销渠道”维度处理规则运行，并记录其匹配的第一个规则。在Customer Journey Analytics中创建数据视图时，需要指定归因和持久性。
 
-1. [创建包含基于 Analytics Source Connector 的数据集的连接](/help/connections/create-connection.md)。
+1. [创建连接](/help/connections/create-connection.md) 其中包括基于Analytics Source Connector的数据集。
 2. [创建数据视图](/help/data-views/create-dataview.md)，视图中包含以下维度：
    * **`channel.typeAtSource`**：相当于[营销渠道](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html?lang=zh-Hans)维度。
    * **`channel._id`**：相当于[营销渠道详细信息](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-detail.html?lang=zh-Hans)
@@ -35,7 +35,7 @@ ht-degree: 74%
 
 >[!NOTE]
 >
-> 分析源连接器要求填充 `channel.typeAtSource`（营销渠道）和 `channel._id`（市场渠道详细信息），否则两者都不会转移到 XDM ExperienceEvent。如果源报告包中的营销渠道详细信息为空白，则会导致出现空白的 `channel._id`，分析源连接器也会成为空白 `channel.typeAtSource`。这可能导致报告 Adobe Analytics 和 Customer Journey Analytics 之间存在差异。
+> Analytics Source Connector要求 `channel.typeAtSource` （营销渠道）和 `channel._id` （营销渠道详细信息）进行填充，否则两者都不会转移到XDM ExperienceEvent。 如果源报表包中的营销渠道详细信息为空白，则会导致出现空白信息 `channel._id` 并且Analytics源连接器将清空 `channel.typeAtSource` 也是。 这可能导致报告 Adobe Analytics 和 Customer Journey Analytics 之间存在差异。
 
 ## 处理方式和体系结构差异
 

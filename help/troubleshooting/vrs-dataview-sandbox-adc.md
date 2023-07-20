@@ -1,13 +1,13 @@
 ---
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '744'
-ht-degree: 63%
+ht-degree: 57%
 
 ---
 # 虚拟报告包、数据视图、Adobe Experience Platform沙盒和Analytics Source Connector
 
-Adobe 提供了多种方法来创建虚拟报告环境和沙盒环境。了解以下功能之间的异同以及这些功能与[ Analytics Source Connector ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)的关系非常有用：
+Adobe 提供了多种方法来创建虚拟报告环境和沙盒环境。了解以下功能之间的异同以及这些功能与 [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)：
 
 * Adobe Analytics 虚拟报告包
 * Customer Journey Analytics数据视图
@@ -33,7 +33,7 @@ A VRS：
 
 * 提供组合报告包的方法。
 * 在 Adobe Analytics Data Warehouse 中提供。
-* 可用作通过Analytics Source Connector流入Adobe Experience Platform的数据流的源。 只有完整的（非虚拟）报告包可用于 Analytics Source Connector 。
+* 可用作通过Analytics Source Connector流入Adobe Experience Platform的数据流的源。 只有完整（非虚拟）报表包可用于Analytics源连接器。
 
 
 ## Customer Journey Analytics数据视图
@@ -75,4 +75,4 @@ Adobe Experience Platform沙盒不会：
 另外：
 
 * 来自不同沙盒的数据不能在Customer Journey Analytics中合并。
-* Analytics Source Connector 将报告包数据发送&#x200B;_到_&#x200B;特定的沙盒中。每个报告包均可以配置为单个沙盒的来源。有关更多详细信息，请参阅 [Analytics Source Connector 文档](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)。
+* Analytics Source Connector 将报告包数据发送&#x200B;_到_&#x200B;特定的沙盒中。每个报告包均可以配置为单个沙盒的来源。请参阅 [Analytics源连接器文档](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans) 了解更多详细信息。

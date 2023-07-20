@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
-source-wordcount: '1462'
-ht-degree: 79%
+source-wordcount: '1461'
+ht-degree: 75%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 79%
 
 ### 2. 调整您的变量 {#variables}
 
-将 Adobe Analytics 数据转换为 Customer Journey Analytics 数据的最直接方法是使用 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=zh-Hans) 将[全局报告包](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)纳入 Experience Platform 中。该连接器会将您的 Adobe Analytics 变量直接映射到 Experience Platform 中的 XDM 架构和数据集，然后便可以轻松连接到 Customer Journey Analytics。
+将Adobe Analytics数据转换为Customer Journey Analytics数据的最直接方法是摄取 [全局报告包](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=zh-Hans) 使用Experience Platform [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans). 该连接器会将您的 Adobe Analytics 变量直接映射到 Experience Platform 中的 XDM 架构和数据集，然后便可以轻松连接到 Customer Journey Analytics。
 
 完整的全局报表包可能并不总是适用于实施。如果您计划将多个报表包引入Customer Journey Analytics，您有2个选项：
 
@@ -56,9 +56,9 @@ ht-degree: 79%
 
 Adobe 发布了](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html?lang=zh-Hans)营销渠道实施的[最新先进实践。这些最新的推荐可帮助您用 Attribution IQ 充分利用 Adobe Analytics 中已有的功能。他们还将帮助您在过渡到 Customer Journey Analytics 时取得成功。
 
-### 4. 决定使用 Analytics Source Connector 还是 Experience Platform SDK {#connector-vs-sdk}
+### 4.决定使用Analytics源连接器还是Experience PlatformSDK {#connector-vs-sdk}
 
-Adobe Analytics 客户可以使用 Analytics Source Connector 在 Adobe Experience Platform 和 Customer Journey Analytics 中轻松利用他们的报告包。有关使用Analytics Source Connector的信息，请参阅快速入门指南，了解如何 [从Adobe Analytics摄取数据并将其用于Customer Journey Analytics](../data-ingestion/analytics.md). 有关更多信息，另请参阅[在 UI 中创建 Adobe Analytics 源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)。
+Adobe Analytics客户可以轻松地在Adobe Experience Platform中利用他们的报告包，并使用Analytics Source Connector进行Customer Journey Analytics。 有关使用Analytics Source Connector的信息，请参阅快速入门指南，了解如何 [从Adobe Analytics摄取数据并将其用于Customer Journey Analytics](../data-ingestion/analytics.md). 有关更多信息，另请参阅[在 UI 中创建 Adobe Analytics 源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)。
 
 随着 [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans) 数据收集的发展，您可能会迁移到带有 Adobe Experience Platform Edge Network 的 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=zh-Hans) 或 [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hans)。虽然 SDK 的典型实施会将数据发送到 Adobe Analytics，但将数据直接发送到 Adobe Experience Platform 的新机会出现了。然后可以将其引入 Customer Journey Analytics，同时还可以维护发送到 Adobe Analytics 的数据。
 

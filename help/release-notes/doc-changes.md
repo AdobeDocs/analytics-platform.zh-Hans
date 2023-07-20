@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 2a1f97a9a454c11e0c006579e8f550bda55d47db
-workflow-type: ht
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+workflow-type: tm+mt
 source-wordcount: '2215'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -84,18 +84,18 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 2022 年 9 月 | Workspace 中[组合图表](/help/analysis-workspace/visualizations/combo-charts.md)的新主题。 |
 | 2022 年 9 月 | 关于 Workspace 中[“试验”面板](/help/analysis-workspace/c-panels/experimentation.md)的新主题。 |
 | **2022 年 8 月** | |
-| 2022 年 8 月 | Adobe Experience Platform 有关[分析源连接器跨区域支持](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)的文章。 |
+| 2022 年 8 月 | Adobe Experience Platform文章 [Analytics源连接器的跨区域支持](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans). |
 | 2022 年 8 月 | 关于 [Customer Journey Analytics 访问控制](/help/admin/cja-access-control.md)的大幅更新文章。 |
 | 2022 年 8 月 | 关于 [Customer Journey Analytics 支持数据管理标签和策略](/help/data-views/data-governance.md)的新文章。 |
-| 2022 年 8 月 | 关于[比较通过 Analytics Source Connector 传递的分析数据的术语](/help/getting-started/aa-vs-cja/terminology.md)的新文章。 |
+| 2022 年 8 月 | 关于以下内容的新文章： [比较通过Analytics源连接器传递的Analytics数据的术语](/help/getting-started/aa-vs-cja/terminology.md). |
 | 2022 年 8 月 | 关于[将受众发布到实时客户个人资料](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=zh-Hans)的新文档。 |
 | **2022 年 7 月** | |
 | 2022 年 7 月 | [Media Playback 耗时面板](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=zh-Hans)文档。 |
 | 2022 年 7 月 | [媒体并行查看者面板](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=zh-Hans)文档。 |
 | 2022 年 7 月 | [首次会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat)报告文档。 |
 | **2022 年 6 月** | |
-| 2022 年 6 月 | 关于 [AAID、ECID、AACUSTOMID 和 Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=zh-Hans) 的新文章 |
-| 2022 年 6 月 | 关于 [Adobe Analytics 处理规则、VISTA 和分类对比 Analytics Source Connector 的数据准备的新文章](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md)。 |
+| 2022 年 6 月 | 关于以下内容的新文章： [AAID、ECID、AACUSTOMID和Analytics源连接器](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=zh-Hans) |
+| 2022 年 6 月 | 关于以下内容的新文章： [Adobe Analytics处理规则、VISTA和分类与Analytics Source Connector的数据准备的对比](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md). |
 | 2022 年 6 月 | 关于[虚拟报告环境和沙盒环境的新文章](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)。 |
 | 2022 年 6 月 | 关于[跨 Adobe Analytics 和 Customer Journey Analytics 报告功能比较数据处理](/help/getting-started/aa-vs-cja/data-processing-comparisons.md)的新文章。 |
 | 2022 年 6 月 | 关于[将报告包与不同架构相结合](/help/use-cases/aa-data/combine-report-suites.md)的新文章。 |

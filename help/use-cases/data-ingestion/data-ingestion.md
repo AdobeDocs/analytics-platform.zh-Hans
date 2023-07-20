@@ -4,10 +4,10 @@ description: 了解将数据摄取到 Customer Journey Analytics 的不同方式
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 96%
+source-wordcount: '785'
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 ## 从传统 Adobe Analytics 中摄取数据
 
-此工作流利用 Adobe Analytics 源连接器，并根据您使用 DTM 还是将 Launch 作为 Tag Manager 而有所不同。
+此工作流利用Analytics源连接器，并根据您使用DTM还是Launch作为Tag Manager而有所不同。
 
 ### 通过 Adobe Experience Platform 中的标记（以前称为 [!UICONTROL Launch]）
 
