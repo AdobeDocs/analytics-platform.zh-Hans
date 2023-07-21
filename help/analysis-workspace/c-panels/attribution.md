@@ -3,10 +3,10 @@ title: 归因面板
 description: 在 Analysis Workspace 中如何使用和解读归因面板。
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: bf2688220a0e5b0ff3267a8f1af135e63b4066c5
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 86%
+source-wordcount: '515'
+ht-degree: 82%
 
 ---
 
@@ -18,7 +18,7 @@ Customer Journey Analytics 通过让您能够执行以下操作来增强归因�
 
 * 定义付费媒体之外的归因：可将任何维度、量度、渠道或事件应用于模型（例如内部搜索），而不仅仅是营销活动。
 * 使用无限制的归因模型比较：动态比较任意所需数量的模型。
-* 避免实施更改：使用报告时间处理和上下文感知会话，可在运行时构建并应用客户历程上下文。
+* 避免实施更改：通过报表时间处理和上下文感知会话，可以内置客户历程上下文并在运行时应用。
 * 构建与您的归因方案最匹配的会话。
 * 按过滤器划分归因：轻松对所有重要过滤器中的营销渠道效果进行比较（例如新客户与老客户、产品 X 与产品 Y、忠诚度级别或 CLV）。
 * 检查渠道交叉和多接触点分析：使用维恩图和直方图，以及趋势归因结果。

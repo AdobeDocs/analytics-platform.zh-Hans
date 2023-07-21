@@ -1,11 +1,11 @@
 ---
 title: 指导分析概述
-description: 一种分析Customer Journey Analytics中的数据的方法，使产品团队能够快速获得高质量的见解。
+description: 一种分析Customer Journey Analytics中的数据的方法，使产品团队能够快速获得高质量的见解。 也称为Product Analytics。
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: bf2688220a0e5b0ff3267a8f1af135e63b4066c5
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1054'
 ht-degree: 8%
 
 ---
