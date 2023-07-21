@@ -3,7 +3,7 @@ title: 拼合常见问题解答
 description: 有关拼合的常见问题解答
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: c87aaefdd15e02b7fe2cf8e638830aa278d46b92
+source-git-commit: 94df90b64a25bfbeb5ed5e270925b1ef1ed89b8a
 workflow-type: tm+mt
 source-wordcount: '1163'
 ht-degree: 35%
@@ -60,6 +60,8 @@ ht-degree: 35%
 [跨设备分析](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html) 是传统Adobe Analytics特有的功能，它使您能够了解人们如何跨设备操作。 该功能提供了两种将设备数据链接在一起的工作流：基于字段的拼接和设备图。
 
 跨渠道分析是特定于Customer Journey Analytics的用例，通过该分析，您可以同时了解人们如何跨设备和跨渠道操作。 它拼合数据集的人员ID，以便将该数据集与其他数据集无缝合并。 该功能在设计上类似于基于跨设备分析的字段拼合，但由于传统Analytics和Customer Journey Analytics之间的数据架构不同，因此实施方法有所不同。 参见 [拼接](overview.md) 和 [跨渠道分析](../use-cases/cross-channel/cross-channel.md) 用例以了解更多信息。
+
++++
 
 +++**拼接如何处理GDPR和CCPA请求？**
 
