@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: e55cd5d9da816b9413dba7542acb385f12709642
 workflow-type: tm+mt
-source-wordcount: '2215'
-ht-degree: 97%
+source-wordcount: '2367'
+ht-degree: 94%
 
 ---
 
@@ -19,6 +19,12 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 
 | 功能 | 描述 |
 | --- | --- |
+| **2023 年 7 月** |
+| Adobe Product Analytics | Adobe Product Analytics 是一种与 Customer Journey Analytics 中的跨渠道数据和见解进行交互的新方式。这些新功能使产品团队能够通过自助服务有关其产品体验的数据和见解 [引导式分析](/help/guided-analysis/overview.md) 工作流&#x200B;。 |
+| 派生字段 | A [派生字段](/help/data-views/derived-fields/derived-fields.md) 允许您通过可自定义的规则生成器来动态定义（通常非常复杂的）数据操作。 |
+| 配置文件和查找数据的扩展查找支持 | 提供将数据集添加为配置文件或查找数据集中的字段查找的功能。之前，仅支持事件数据集。[了解详情](/help/connections/create-connection.md) |
+| Report Builder 增强功能 | <ul><li>[从单元格中筛选多个数据块](/help/report-builder/select-data-view.md)</li><li>[显示和隐藏行标题和列标题](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=zh-Hans#build-the-data-block)</li></ul> |
+| Experience Edge 地理位置查询 | [Adobe Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hans) 添加了地理查找服务，该服务可为所有Experience Edge用户提供统一的地理数据。 |
 | **2023 年 6 月** | |
 | 跨渠道分析和拼合 | 为了预测即将进行的更改，以支持拼合并进一步阐明如何使用拼合提升跨渠道分析，我们编辑了与跨渠道分析功能相关的文档，将[跨渠道分析](../use-cases/cross-channel/cross-channel.md)称作 Customer Journey Analytics 功能和用例，并将[拼合](../stitching/overview.md)作为实现此目的的重要功能。 |
 | PowerBI 和 Tableau 访问 Customer Journey Analytics 数据视图 | 通过 Customer Journey Analytics SQL Connector，SQL 可访问您在 Customer Journey Analytics 中定义的数据视图。[了解详情](/help/data-views/sql-connector.md) |

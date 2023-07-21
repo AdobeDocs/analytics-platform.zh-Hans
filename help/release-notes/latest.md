@@ -3,9 +3,9 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 9e6231e4dc9770fbb7c859b397ea8c57e7dff478
+source-git-commit: e55cd5d9da816b9413dba7542acb385f12709642
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '740'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,7 @@ Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上�
 | **派生字段** | 这代表派生字段的初始版本。通过派生字段和可自定义的规则生成器，即可迅速定义（一般较为复杂的）数据操作。可进一步将该派生字段定义为数据视图中的组件（指标或维度），然后将该派生字段用作 Workspace 中的组件。<p>此版本支持营销渠道模板和以下功能：</p><ul><li>拼接</li><li>Case When</li><li>查找和替换</li><li>查询</li><li>URL 解析</li></ul> <p>[了解详情](/help/data-views/derived-fields/derived-fields.md)</p> | 2023 年 5 月 10 日 | 2023 年 8 月 2 日 |
 | **配置文件和查找数据的扩展查找支持** | 提供将数据集添加为配置文件或查找数据集中的字段查找的功能。之前，仅支持事件数据集。[了解详情](/help/connections/create-connection.md) | 2023 年 6 月 21 日 | 2023 年 7 月 12 日 |
 | **Report Builder 增强功能** | <ul><li>从单元格中过滤多个数据块。您可以更改单元格中多个数据块的过滤器。使用预定义的单元格，将它分配给多个数据块，并基于单元格中定义的过滤器更新数据。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=zh-Hans)</li><li>显示和隐藏行标题和列标题。您可以显示或隐藏数据块表标题或行标题和列标题，以重新格式化表并对齐报表中的数据块。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=zh-Hans#build-the-data-block)</li></ul> | 不适用 | 2023 年 7 月 19 日 |
-| **Experience Edge 地理位置查询** | Adobe Experience Edge 添加了一项地理位置查询服务，可为所有 Experience Edge 用户（Adobe Analytics、Customer Journey Analytics、Adobe Target、Adobe Media Analytics、Adobe Experience Platform 等）提供统一的地理数据。 | 不适用 | 2023 年 7 月 26 日 |
+| **Experience Edge 地理位置查询** | [Adobe Experience Edge 添加了一项地理位置查询服务，可为所有 Experience Edge 用户（Adobe Analytics、Customer Journey Analytics、Adobe Target、Adobe Media Analytics、Adobe Experience Platform 等）提供统一的地理数据。](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hans) | 不适用 | 2023 年 7 月 26 日 |
 
 {style="table-layout:auto"}
 
