@@ -3,10 +3,10 @@ title: 标签和策略
 description: 了解Adobe Experience Platform中定义的数据标签和策略如何影响Customer Journey Analytics中的数据视图和报表。
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: d14db99f6cf597c4b62cdb148853b0f11503eaa1
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 60%
+source-wordcount: '501'
+ht-degree: 58%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 60%
 >
 >数据使用标签不会自动传播到拼接的数据集。 但是，可以手动添加它们。
 
-标签本身并不意味着强制执行这些数据使用标签。 这就是政策的用途。 您可以通过 Experience Platform 中的 [策略服务 API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=zh-Hans) 创建策略。
+标签本身并不意味着强制执行这些数据使用标签。 这就是政策的用途。 您可使用以下方式创建策略 [EXPERIENCE PLATFORMUI](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=zh-Hans) 或通过 [策略服务API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=zh-Hans) 在Experience Platform中。
 
 两个Adobe定义的策略出现在Customer Journey Analytics中，并影响报表和下载/共享：
 

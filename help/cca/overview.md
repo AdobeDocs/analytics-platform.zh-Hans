@@ -3,10 +3,10 @@ title: 跨渠道分析概述
 description: 在多个数据集中重新生成人员ID的键值，以将人员拼合在一起。
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
-feature: Cross-Channel Analytics
+feature: Cross-Channel Analysis
 hide: true
 hidefromtoc: true
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: ca037fa439a6a94ca071c610089a3ad931cc921d
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 85%
@@ -35,7 +35,7 @@ ht-degree: 85%
 在使用跨渠道分析之前，请确保贵组织已做好以下准备：
 
 * Adobe Experience Platform中的一个数据集必须具有两个帮助识别人员的列：
-   * **持久 ID**，即每行都存在的标识符。例如，由Adobe AnalyticsAppMeasurement库生成的人员ID。
+   * **持久 ID**，即每行都存在的标识符。例如，由Adobe Analytics AppMeasurement库生成的人员ID。
    * **临时 ID**，即仅在部分行存在的标识符。例如，经过身份验证的用户名或电子邮件地址。 实际上，您可以使用任何想要使用的标识符，但前提是该标识符与给定的永久 ID 至少有一次存在于同一事件。
 * 还要具有每行都包含临时 ID 的另外一个数据集，如呼叫中心数据。此人员 ID 必须与另一个数据集中的临时 ID 采用相似的格式。
 * 此功能允许您同时拼接包含经过身份验证的用户数据和未经身份验证的用户数据的数据集。在合并数据集之前，请确保遵守任何适用的法律和法规，包括获取必要的最终用户权限。
