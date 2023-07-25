@@ -3,7 +3,7 @@ title: 指导分析概述
 description: 一种分析Customer Journey Analytics中的数据的方法，使产品团队能够快速获得高质量的见解。 也称为Product Analytics。
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: bf2688220a0e5b0ff3267a8f1af135e63b4066c5
+source-git-commit: 4ed5acc2c9bb1a530d16d9c3ce8f5e9243bfa1f2
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 8%
@@ -13,8 +13,6 @@ ht-degree: 8%
 # 指导分析概述
 
 引导式分析是一种报告格式，它允许产品团队快速满足其数据需求，以便他们能够快速获得高质量见解并做出更多由数据驱动的产品决策。 跨职能团队可以实时连接以使用和了解这些报告。
-
->[!VIDEO](https://video.tv.adobe.com/v/3421621/)
 
 与Analysis Workspace和移动记分卡类似，引导式分析报表使用来自 [数据视图](../data-views/data-views.md)，通过Adobe Experience Platform中的引用数据 [连接](../connections/overview.md). 在引导式分析中创建的所有报告都可以无缝地传输到Analysis Workspace以供进一步研究。
 
