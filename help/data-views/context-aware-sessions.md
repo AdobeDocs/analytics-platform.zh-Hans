@@ -3,7 +3,7 @@ title: 上下文感知会话
 description: 数据视图中的设置，可用于定义上下文感知会话。
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 92511d2bedf322097b4d70ccede5ac6e0df7b0c6
+source-git-commit: 6235fbb128098e2a624d5fd4fd72c2c583cfd277
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 3%
