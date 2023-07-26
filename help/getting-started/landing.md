@@ -5,9 +5,9 @@ role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
 source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1514'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Customer Journey Analytics 的登录页突出[!DNL Analysis Workspace]显示了�
 
 >[!NOTE]
 >
->以下几个设置在会话期间和会话之间保持不变。例如，您选择的选项卡、选择的过滤器、选择的列以及列排序方向。搜索结果不是持久性的。
+>以下几个设置在会话期间和会话之间保持不变。例如，您选择的选项卡、选择的筛选条件、选择的列以及列排序方向。搜索结果不是持久性的。
 
 | UI 元素 | 定义 |
 | --- | --- |
@@ -50,10 +50,10 @@ Customer Journey Analytics 的登录页突出[!DNL Analysis Workspace]显示了�
 | [!UICONTROL 移动记分卡] | 创建一个空白[移动记分卡](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html)以便您进行设计和构建。 |
 | [!UICONTROL 打开培训教程] | 打开 Workspace 培训教程，它会通过分步教程指导您完成构建新的入门项目的过程。 |
 | [!UICONTROL 打开发行说明] | 打开最新的 Adobe Experience Cloud 发行说明的 Adobe Analytics 部分。 |
-| 过滤器图标 | 按标记、数据视图、所有者、类型和其他筛选器（“我的”、“已与我共享”、“收藏”和“已批准”）进行筛选 |
+| 筛选条件图标 | 按标记、数据视图、所有者、类型和其他筛选条件（“我的”、“已与我共享”、“收藏”和“已批准”）进行筛选 |
 | 搜索栏 | 搜索表中的所有列。 |
 | 选区框 | 选择一个或多个项目可显示您可以执行的项目管理操作：**删除**、**共享**、**重命名**、**复制**、**取消固定**、**上移**、**下移**、**标记**、**批准**、**导出 CSV** 和&#x200B;**移至**。您可能无权执行所有列出的操作。 |
-| [!UICONTROL 收藏] | 在可用作过滤器的收藏项目或文件夹旁边添加星号。 |
+| [!UICONTROL 收藏] | 在可用作筛选条件的收藏项目或文件夹旁边添加星号。 |
 | [!UICONTROL 名称] | 标识项目的名称。 |
 | 固定图标 | 固定项目，使它们始终显示在列表顶部，但您可以通过上移或下移项目来重新调整其顺序。使用省略号选项菜单并在列表中选择&#x200B;**上移**&#x200B;或&#x200B;**下移**。 |
 | 信息 (i) 图标 | 显示有关项目的以下信息：类型、项目角色、所有者、描述及其共享对象。它还指示谁可以[编辑或复制](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=zh-Hans)此项目。 |
@@ -61,7 +61,7 @@ Customer Journey Analytics 的登录页突出[!DNL Analysis Workspace]显示了�
 | [!UICONTROL 类型] | 指示此类型是 Workspace 项目、移动记分卡还是文件夹。 |
 | [!UICONTROL 标记] | 标记项目以将其整理到组中。 |
 | [!UICONTROL 项目角色] | 标识项目角色：您是否为项目所有者，以及您是否具有编辑或复制项目的权限。 |
-|  | 标识与项目关联的数据视图。<br>面板中的表格和可视化图表从面板右上角选择的数据视图中派生数据。数据视图还确定了左侧边栏中可用的组件。在项目中，您可以使用一个或多个数据视图，具体取决于分析用例。 数据视图列表按相关性排序。Adobe 在定义相关性时，依据当前用户在近期使用该包的频率以及该包在组织中的使用频率。 |
+|  | 标识与项目关联的数据视图。<br>面板中的表格和可视化图表从面板右上角选择的数据视图中派生数据。数据视图还确定了左侧边栏中可用的组件。在项目中，可以根据分析用例使用一个或多个数据视图。数据视图列表按相关性排序。Adobe 在定义相关性时，依据当前用户在近期使用该包的频率以及该包在组织中的使用频率。 |
 | [!UICONTROL 所有者] | 标识已创建项目的用户。 |
 | [!UICONTROL 上次打开时间] | 标识您上次打开项目的日期。 |
 | 自定义表格图标 | 选择要在表中查看的列。要在项目列表中添加或删除列，请单击右上角的列图标（![全部登陆](assets/select-column.png)），然后选择或取消选择列标题。 |
@@ -72,9 +72,9 @@ Customer Journey Analytics 的登录页突出[!DNL Analysis Workspace]显示了�
 
 随着新登陆页面的发布，我们弃用了项目管理器，如组件管理器下所列。新登录页处理旧项目管理器页面的所有功能以及更多功能。
 
-项目经理页面的一个常见用例是查看所有项目。要使用过滤栏在新登录页上查看所有项目，请选择&#x200B;**其他过滤器**，然后选择&#x200B;**全部显示**。
+项目经理页面的一个常见用例是查看所有项目。要使用筛选栏在新登录页上查看所有项目，请选择&#x200B;**其他筛选条件**，然后选择&#x200B;**全部显示**。
 
-![其他过滤器](assets/other-filters.png)
+![其他筛选条件](assets/other-filters.png)
 
 如果您在“文件夹和项目”视图中，将弹出一个模式，询问您是否要切换到“所有项目”视图，这样可以更轻松地查看所有项目，而不必查看它们可能组织在其中的文件夹。选择&#x200B;**切换到“所有项目”视图**&#x200B;可更好地查看您有权访问的所有项目。
 
@@ -82,25 +82,25 @@ Customer Journey Analytics 的登录页突出[!DNL Analysis Workspace]显示了�
 
 ## 使用“学习”选项卡 {#navigate-learning}
 
-“学习”页面包含实践视频导览、教程和文档链接。
+“学习”页面包含实践视频导览、教程以及文档链接。
 
-使用Customer Journey Analytics中的“学习”页面来了解：
+使用 Customer Journey Analytics 中的“学习”页面来学习：
 
-* CJA中的初级、中间或高级功能和用例
-* 如何更顺畅地从Adobe Analytics过渡到CJA
+* CJA 中的初级、中级或高级功能和用例
+* 如何更无缝地从 Adob&#x200B;e Analytics 过渡到 CJA
 
 ### 访问“学习”页面
 
-1. 在Customer Journey Analytics中，选择 [!UICONTROL **工作区**] > [!UICONTROL **学习**].
+1. 在 Customer Journey Analytics 中，选择&#x200B;[!UICONTROL **Workspace**]>[!UICONTROL **学习。**]
 
-### 学习页面功能
+### “学习”页面功能
 
-* **筛选内容：** 利用左边栏中的过滤器图标，可按体验级别（初级、中级或高级）和内容类型（文档、视频或导览和教程）过滤学习内容。
-* **跟踪进度：** 选择一段内容后， **[!UICONTROL 已查看]** 标记随即出现。 此标记有助于跟踪您在整个学习内容中的进度。您可以选择 **[!UICONTROL 已查看]** 标记以将其从一段内容中删除。
-* **查看其他内容：** 在查看任何视频时，选择 **[!UICONTROL 了解详情]** 按钮以查看有关Experience League的相关文档内容。 或者，从“学习”页面中，选择以下任一选项以查看其他内容：
-   * **[!UICONTROL 访问YouTube]：** 查看完整的Analysis Workspace YouTube播放列表。
-   * [!UICONTROL **访问Experience League**]：查看有关Experience League的整套CJA文档。
-* **面向新用户的基础知识：** 此 [!UICONTROL 工作区基础知识] 建议新用户进行导览。 此导览会将您直接转到Workspace，并引导您完成最常见的操作。 此导览也可以随时通过面板标题中的工具提示弹出窗口在Workspace中重新启动。
+* **筛选内容：**&#x200B;利用左边栏中的“筛选”图标，可以按经验级别（初学者、中级或高级）和内容类型（文档、视频或导览和教程）筛选学习内容。
+* **跟踪进度：**&#x200B;选择一段内容后，将显示&#x200B;**[!UICONTROL 已查看]**&#x200B;标记。此标记有助于跟踪您在整个学习内容中的进度。您可以选择&#x200B;**[!UICONTROL 已查看]**&#x200B;标记以将其从一段内容中删除。
+* **查看附加内容：**&#x200B;在观看任何视频时，选择&#x200B;**[!UICONTROL 了解更多]**&#x200B;按钮以查看 Experience League 的相关文档内容。或者，从“学习”页面中，选择下列选项之一以查看其他内容：
+   * **[!UICONTROL 访问 YouTube]：**&#x200B;查看完整的 Analysis Workspace YouTube 播放列表。
+   * [!UICONTROL **访问 Experience League**]：查看 Experience League 上的全套 CJA 文档。
+* **面向新用户的基础知识：**&#x200B;建议新用户使用 [!UICONTROL Workspace 基础知识]导览。此导览会将您直接转到 Workspace 并向您介绍最常用操作。也可以随时通过面板标题中的工具提示弹出窗口在 Workspace 中重新启动此导览。
 
 ## 设置您的登陆页面 {#set-landing}
 
