@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 92511d2bedf322097b4d70ccede5ac6e0df7b0c6
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 82%
+source-wordcount: '968'
+ht-degree: 83%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 82%
    + 与 Adobe Analytics 进行比较 {#cja-aa-comparison}
       + [在 Customer Journey Analytics 中使用 Adobe Analytics 数据](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Customer Journey Analytics 功能支持](../getting-started/aa-vs-cja/cja-aa.md)
-      + [比较通过Analytics源连接器传递的Analytics数据的术语](../getting-started/aa-vs-cja/terminology.md)
+      + [比较通过Analytics Source Connector传递的Analytics数据的术语](../getting-started/aa-vs-cja/terminology.md)
       + [跨Adobe Analytics和Customer Journey Analytics比较数据处理](../getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [虚拟报告环境和沙盒环境](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
       + [处理规则、VISTA 和分类与数据准备](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
@@ -69,6 +69,7 @@ ht-degree: 82%
 + 数据视图 {#cja-dataviews}
    + [数据视图概述](../data-views/data-views.md)
    + [创建或编辑数据视图](../data-views/create-dataview.md)
+   + [上下文感知会话](../data-views/context-aware-sessions.md)
    + 组件设置 {#component-settings}
       + [组件设置概述](../data-views/component-settings/overview.md)
       + [归因](../data-views/component-settings/attribution.md)
@@ -229,8 +230,8 @@ ht-degree: 82%
    + 计算指标 {#cja-calcmetrics}
       + [计算指标概述](../components/calc-metrics/calc-metr-overview.md)
       + 计算指标工作流程 {#cm-workflow}
-         + [计算指标工作流程](../components/calc-metrics/cm-workflow/cm-workflow.md)
-         + [查找指标](../components/calc-metrics/cm-workflow/cm-finding.md)
+         + [计算量度工作流程](../components/calc-metrics/cm-workflow/cm-workflow.md)
+         + [查找量度](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [生成指标](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [指标类型和归因](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
          + [生成“参与率”指标](../components/calc-metrics/cm-workflow/participation-metric.md)
@@ -238,8 +239,8 @@ ht-degree: 82%
          + [堆叠和替换过滤器](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [过滤和加权指标](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
          + [使用函数](../components/calc-metrics/cm-workflow/cm-using-functions.md)
-         + [标记计算指标](../components/calc-metrics/cm-workflow/cm-tagging.md)
-         + [批准计算指标](../components/calc-metrics/cm-workflow/cm-approving.md)
+         + [标记计算量度](../components/calc-metrics/cm-workflow/cm-tagging.md)
+         + [批准计算量度](../components/calc-metrics/cm-workflow/cm-approving.md)
          + [共享计算指标](../components/calc-metrics/cm-workflow/cm-sharing.md)
          + [计算指标管理器](../components/calc-metrics/cm-workflow/cm-manager.md)
       + [默认计算指标](../components/calc-metrics/default-calcmetrics.md)
@@ -328,9 +329,9 @@ ht-degree: 82%
    + [Labs 用户指南](../labs/labs.md)
 
 + 故障排除 {#troubleshooting}
-   + [将Adobe Analytics数据与Customer Journey Analytics数据进行比较](../troubleshooting/compare.md)
+   + [比较 Adobe Analytics 数据和 Customer Journey Analytics 数据](../troubleshooting/compare.md)
    + [Real-time CDP与Customer Journey Analytics之间量度和受众会员计数的一致性](../troubleshooting/consistency-rcdp-cja.md)
 
 + [Customer Journey Analytics 术语表](../getting-started/cja-glossary.md)
 
-+ [CUSTOMER JOURNEY ANALYTICSAPI](https://developer.adobe.com/cja-apis/docs/)
++ [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)
