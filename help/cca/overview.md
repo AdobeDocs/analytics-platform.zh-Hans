@@ -1,6 +1,6 @@
 ---
 title: 跨渠道分析概述
-description: 在多个数据集中重新生成人员ID的键值，以将人员拼合在一起。
+description: 在多个数据集中重新生成人员 ID 的键值，以对人员进行拼接。
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analysis
@@ -9,7 +9,7 @@ hidefromtoc: true
 source-git-commit: ca037fa439a6a94ca071c610089a3ad931cc921d
 workflow-type: tm+mt
 source-wordcount: '1166'
-ht-degree: 85%
+ht-degree: 96%
 
 ---
 
@@ -34,9 +34,9 @@ ht-degree: 85%
 
 在使用跨渠道分析之前，请确保贵组织已做好以下准备：
 
-* Adobe Experience Platform中的一个数据集必须具有两个帮助识别人员的列：
-   * **持久 ID**，即每行都存在的标识符。例如，由Adobe Analytics AppMeasurement库生成的人员ID。
-   * **临时 ID**，即仅在部分行存在的标识符。例如，经过身份验证的用户名或电子邮件地址。 实际上，您可以使用任何想要使用的标识符，但前提是该标识符与给定的永久 ID 至少有一次存在于同一事件。
+* Adobe Experience Platform 中必须有一个数据集具有以下两个用于标识人员的列：
+   * **持久 ID**，即每行都存在的标识符。例如，由 Adobe Analytics AppMeasurement 库生成的个人 ID。
+   * **临时 ID**，即仅在部分行存在的标识符。例如，通过身份验证的人员的经过哈希处理的用户名或电子邮件地址。实际上，您可以使用任何想要使用的标识符，但前提是该标识符与给定的永久 ID 至少有一次存在于同一事件。
 * 还要具有每行都包含临时 ID 的另外一个数据集，如呼叫中心数据。此人员 ID 必须与另一个数据集中的临时 ID 采用相似的格式。
 * 此功能允许您同时拼接包含经过身份验证的用户数据和未经身份验证的用户数据的数据集。在合并数据集之前，请确保遵守任何适用的法律和法规，包括获取必要的最终用户权限。
 
@@ -55,7 +55,7 @@ ht-degree: 85%
 * 不支持在组织中使用的自定义 ID 映射。
 * 不支持跨设备专用图。
 * 跨渠道 Analytics 不以任何方式转换用于拼接的字段。基于字段的拼接使用存在于数据湖内非拼接数据集中的指定字段中的值。拼接过程区分大小写。例如，如果字段中有时出现“Bob”一词，有时出现“BOB”一词，则将这两个词视为单独的两人。
-* 鉴于基于字段的拼接区分大小写，因此对于通过Analytics Source Connector生成的Analytics数据集，Adobe建议检查任何适用于临时ID字段的VISTA规则或处理规则，以确保所有这些规则都不会引入同一ID的新形式。 例如，对于部分事件，您应确保没有任何 VISTA 或处理规则将小写字母引入到临时 ID 字段。
+* 鉴于基于字段的拼接区分大小写，因此对于通过Analytics源连接器生成的Analytics数据集，Adobe建议检查任何适用于临时ID字段的VISTA规则或处理规则，以确保所有这些规则都不会引入同一ID的新形式。 例如，对于部分事件，您应确保没有任何 VISTA 或处理规则将小写字母引入到临时 ID 字段。
 * 基于字段的拼接不组合或连接字段。
 * 临时 ID 字段应仅包含一种类型的 ID（即 ID 仅来自一个命名空间）。例如，临时 ID 字段不应包含登录 ID 和电子邮件 ID 的组合。
 * 如果对于同一持久 ID 发生了多个具有同一时间戳的事件，但临时 ID 字段中有多个不同的值，则基于字段的拼接将根据字母顺序进行选择。因此，如果持久 ID A 具有时间戳相同的两个事件，其中一个事件指定 Bob，而另一个指定 Ann，则基于字段的拼接将选择 Ann。
@@ -64,7 +64,7 @@ ht-degree: 85%
 
 ## 启用跨渠道分析
 
-贵组织在满足所有先决条件并了解相关限制后，便可以按照以下步骤开始在Customer Journey Analytics中使用它。
+如果贵组织满足所有前提条件并已了解跨渠道分析存在的限制，便可按照以下步骤在 Customer Journey Analytics 中开始使用该功能。
 
 1. 将所需数据导入 Adobe Experience Platform。有关 Adobe Analytics 数据，请查阅[在 Customer Journey Analytics 中使用 Adobe Analytics 报告包](/help/getting-started/aa-vs-cja/aa-data-in-cja.md)。有关其他类型的数据，请参阅 Adobe Experience Platform 文档中的[创建模式](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans)和[摄取数据](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans)。
 1. 请联系 Adobe 客户支持并提供以下信息：
@@ -76,9 +76,9 @@ ht-degree: 85%
    * 沙盒名称。
 1. Adobe 客户支持将与 Adobe 工程部门合作，在收到您的请求时启用跨渠道分析。一旦启用，Adobe Experience Platform 中就会出现一个更新了密钥的新数据集，其中包含新的人员 ID 列。Adobe 客户支持可以提供新的数据集 ID 和人员 ID 列名。
 1. 首次开启后，Adobe 将提供拼接数据的回填，最远可追溯到上月初（最多 60 天）。为进行此回填，当时的非拼接数据中必须存在临时 ID。
-1. [创建连接](/help/connections/create-connection.md) 使用新生成的数据集和任何其他要包含的数据集进行Customer Journey Analytics。 为每个数据集选择正确的人员 ID。
+1. 在 Customer Journey Analytics 中使用新生成的数据集以及任何其他要包含的数据集[创建连接](/help/connections/create-connection.md)。为每个数据集选择正确的人员 ID。
 1. 根据连接[创建数据视图](/help/data-views/create-dataview.md)。
 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
-设置数据视图后，Customer Journey Analytics中的分析就与Customer Journey Analytics中的其他分析一样，只是现在的数据操作是跨渠道和跨设备的。
+数据视图设置完成后，将在 Customer Journey Analytics 中进行分析，此分析与 Customer Journey Analytics 中的其他分析基本一样，只是现在的数据操作是跨渠道和跨设备进行的。
