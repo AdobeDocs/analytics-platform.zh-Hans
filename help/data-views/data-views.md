@@ -1,19 +1,19 @@
 ---
 title: 数据视图概述
-description: 数据视图指定您要如何解释Customer Journey Analytics连接中的数据元素，如量度、维度、会话等。
+description: 数据视图会指定您要如何解释 Customer Journey Analytics 连接中的数据元素，例如量度、维度、会话等。
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1049'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # 数据视图概述
 
-数据视图是 Customer Journey Analytics 专属的容器，通过它，可决定如何解释来自[连接](/help/connections/create-connection.md)的数据。它指定所有可在 Analysis Workspace 中找到的维度和指标，以及这些维度和指标从哪些列获取其数据。为准备 Analysis Workspace 中的报表而定义数据视图。
+数据视图是 Customer Journey Analytics 专属的容器，通过它，可决定如何解释来自[连接](/help/connections/create-connection.md)的数据。它指定所有可在 Analysis Workspace 中找到的维度和量度，以及这些维度和量度从哪些列获取其数据。为准备 Analysis Workspace 中的报告而定义数据视图。
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ Customer Journey Analytics 中的 Workspace 项目均基于数据视图。
 
 ## 数据视图功能 {#capabilities}
 
-数据视图允许您自发地更改架构元素设置，而不必更改Adobe Experience Platform中的架构或重新实施您的Customer Journey Analytics环境。
+通过数据视图，您可以自发地更改架构元素设置，而不必更改 Adobe Experience Platform 中的架构或重新实施您的 Customer Journey Analytics 环境。
 
 * **您可将组件从“量度”更改为“维度”，反之亦然**。您可以根据字符串字段创建量度，或根据数值字段创建维度。这就简化了您的工作，因为您不必在 XDM 架构中为所需的每个量度创建数值字段。您只需在数据视图对话框中自发地创建它。下面给出了一些示例：
    * **根据一个架构字段创建一个或多个维度，以及/或仅创建一个维度**。这是一对多关系。例如，您可以根据一个架构字段创建一个或多个“收入”量度以及/或一个或多个“收入”维度。
@@ -46,7 +46,7 @@ Customer Journey Analytics 中的 Workspace 项目均基于数据视图。
 
 * **您可以对量度应用格式**，例如显示小数、时间、百分比或货币；指定小数位；将上升趋势显示为绿色或红色；以及指定货币选项。
 
-* 您可以&#x200B;**仅根据架构字段中的部分值创建量度或维度**。例如，如果您需要“错误”量度，则可以根据页面名称字段创建一个量度，但仅添加包含短语“错误”一词的页面。过滤器支持据此创建的错误量度，该量度可以插入计算量度中，并且可与归因、流量、流失等配合使用。
+* 您可以&#x200B;**仅根据架构字段中的部分值创建量度或维度**。例如，如果您需要“错误”量度，则可以根据页面名称字段创建一个量度，但仅添加包含短语“错误”一词的页面。筛选条件支持据此创建的错误量度，该量度可以插入计算量度中，并且可与归因、流量、流失等配合使用。
 
 * 对于维度，您可以&#x200B;**仅自动添加或排除特定字段中的某些值**。例如，如果开发人员将错误值 `dev mistake` 发送到某字段中，您可以使用排除规则轻松排除该错误，并且该错误的行为方式就好像数据中从不存在它一样。
 
