@@ -3,7 +3,7 @@ title: 上下文感知会话
 description: 数据视图中的设置，可用于定义上下文感知会话。
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 6235fbb128098e2a624d5fd4fd72c2c583cfd277
+source-git-commit: 5e4bf2985a0ec75cc0120e2a9549d720077cd5cc
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 数据视图中的上下文感知会话会更改Customer Journey Analytics根据连接中的数据计算会话的方式。
 
-在 [!UICONTROL 设置] 选项卡中，您可以以任何方式定义会话，以匹配人员与您的数字体验的交互方式。 上下文感知会话定义是非破坏性的，不会更改基础数据。 您可以设置多个数据视图，每个视图都具有其特定的上下文感知会话定义，作为工作区项目的基础。
+在 [!UICONTROL 设置] 选项卡中，您可以以任何方式定义会话，以匹配人员与您的数字体验的交互方式。 上下文感知会话定义是非破坏性的，不会更改基础数据。 您可以将多个数据视图（每个视图都有其特定的上下文感知会话定义）设置为工作区项目的基础。
 
 要为数据视图定义会话的上下文，请执行以下操作：
 

@@ -4,9 +4,9 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e55cd5d9da816b9413dba7542acb385f12709642
+source-git-commit: 5e4bf2985a0ec75cc0120e2a9549d720077cd5cc
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2379'
 ht-degree: 94%
 
 ---
@@ -20,11 +20,12 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2023 年 7 月** |
-| Adobe Product Analytics | Adobe Product Analytics 是一种与 Customer Journey Analytics 中的跨渠道数据和见解进行交互的新方式。这些新功能使产品团队能够通过自助服务有关其产品体验的数据和见解 [引导式分析](/help/guided-analysis/overview.md) 工作流&#x200B;。 |
+| 上下文感知会话 | 添加了有关此数据视图设置的主题。 [了解详情](/help/data-views/context-aware-sessions.md) |
+| Adobe Product Analytics | Adobe Product Analytics 是一种与 Customer Journey Analytics 中的跨渠道数据和见解进行交互的新方式。这些新功能使产品团队能够通过自助服务获取关于其产品体验的数据和见解 [引导式分析](/help/guided-analysis/overview.md) 工作流&#x200B;。 |
 | 派生字段 | A [派生字段](/help/data-views/derived-fields/derived-fields.md) 允许您通过可自定义的规则生成器来动态定义（通常非常复杂的）数据操作。 |
 | 配置文件和查找数据的扩展查找支持 | 提供将数据集添加为配置文件或查找数据集中的字段查找的功能。之前，仅支持事件数据集。[了解详情](/help/connections/create-connection.md) |
-| Report Builder 增强功能 | <ul><li>[从单元格中筛选多个数据块](/help/report-builder/select-data-view.md)</li><li>[显示和隐藏行标题和列标题](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=zh-Hans#build-the-data-block)</li></ul> |
-| Experience Edge 地理位置查询 | [Adobe Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hans) 添加了地理查找服务，该服务可为所有Experience Edge用户提供统一的地理数据。 |
+| Report Builder 增强功能 | <ul><li>[从单元格筛选多个数据块](/help/report-builder/select-data-view.md)</li><li>[显示和隐藏行和列标题](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=zh-Hans#build-the-data-block)</li></ul> |
+| Experience Edge 地理位置查询 | [Adobe Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hans) 添加了地理查找服务，该服务为所有Experience Edge用户提供统一的地理数据。 |
 | **2023 年 6 月** | |
 | 跨渠道分析和拼合 | 为了预测即将进行的更改，以支持拼合并进一步阐明如何使用拼合提升跨渠道分析，我们编辑了与跨渠道分析功能相关的文档，将[跨渠道分析](../use-cases/cross-channel/cross-channel.md)称作 Customer Journey Analytics 功能和用例，并将[拼合](../stitching/overview.md)作为实现此目的的重要功能。 |
 | PowerBI 和 Tableau 访问 Customer Journey Analytics 数据视图 | 通过 Customer Journey Analytics SQL Connector，SQL 可访问您在 Customer Journey Analytics 中定义的数据视图。[了解详情](/help/data-views/sql-connector.md) |
@@ -52,9 +53,9 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 集成决策管理数据 | 添加了解释如何[在 Customer Journey Analytics 中集成 Adobe Journey Optimizer 决策管理数据](/help/integrations/ajo-od.md)的内容。 |
 | 在移动记分卡中创建数据故事 | [数据故事](/help/mobile-app/create-scorecard.md#create-data-stories)是围绕中心主题或指标构建的辅助数据点、业务背景和相关指标的集合。 |
 | 更新了功能支持 | 更新了 [Customer Journey Analytics 功能支持](/help/getting-started/aa-vs-cja/cja-aa.md)，提供一个功能表，其中是在 Customer Journey Analytics 中可用但在 AA 中不可用或不支持的功能。 |
-| 默认计算指标 | 添加了解释 [Adobe 提供的默认计算指标](/help/components/calc-metrics/default-calcmetrics.md)的内容。 |
+| 默认计算量度 | 添加了解释 [Adobe 提供的默认计算量度](/help/components/calc-metrics/default-calcmetrics.md)的内容。 |
 | 数据词典 | <p>添加了数据词典的新文档，包括[概述](/help/components/data-dictionary/data-dictionary-overview.md)、[查看](/help/components/data-dictionary/view-data-dictionary.md)、[编辑](/help/components/data-dictionary/edit-entries-data-dictionary.md)和[监控](/help/components/data-dictionary/monitor-data-dictionary-health.md)数据词典。</p><p>更新了[添加组件描述](/help/components/add-component-descriptions.md)中的信息以解释数据词典功能。</p> |
-| 共享项目链接（无需登录） | <p>更新了现有文档以说明如何与无权访问 Analysis Workspace 的人员共享项目的只读链接。</p> <p>更新后的用户文档包括[共享项目](/help/analysis-workspace/curate-share/share-projects.md)和[创建可共享链接](/help/analysis-workspace/curate-share/shareable-links.md)。</p> <p>已将管理员的选项添加到[首选项](/help/analysis-workspace/user-preferences.md)。</p> |
+| 共享项目链接（无需登录） | <p>更新了现有文档以说明如何与无权访问 Analysis Workspace 的人员共享项目的只读链接。</p> <p>更新后的用户文档包括[共享项目](/help/analysis-workspace/curate-share/share-projects.md)和[创建可共享链接](/help/analysis-workspace/curate-share/shareable-links.md)。</p> <p>已将管理员的选项添加到[偏好设置](/help/analysis-workspace/user-preferences.md)。</p> |
 | **2023 年 2 月** | |
 | 比较 Customer Journey Analytics 和 BI 解决方案 | 新增了有关 Customer Journey Analytics 与典型 BI 解决方案的[比较](../getting-started/cja-vs-bi.md)的文档。 |
 | 对 Audiences 文档的更新 | 有关[延迟注意事项](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-Hans#latency)的新章节。 |
@@ -93,15 +94,15 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 2022 年 8 月 | Adobe Experience Platform文章 [Analytics源连接器的跨区域支持](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans). |
 | 2022 年 8 月 | 关于 [Customer Journey Analytics 访问控制](/help/admin/cja-access-control.md)的大幅更新文章。 |
 | 2022 年 8 月 | 关于 [Customer Journey Analytics 支持数据管理标签和策略](/help/data-views/data-governance.md)的新文章。 |
-| 2022 年 8 月 | 关于以下内容的新文章： [比较通过Analytics源连接器传递的Analytics数据的术语](/help/getting-started/aa-vs-cja/terminology.md). |
+| 2022 年 8 月 | 关于的新文章 [比较通过Analytics源连接器传递的Analytics数据的术语](/help/getting-started/aa-vs-cja/terminology.md). |
 | 2022 年 8 月 | 关于[将受众发布到实时客户个人资料](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=zh-Hans)的新文档。 |
 | **2022 年 7 月** | |
 | 2022 年 7 月 | [Media Playback 耗时面板](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=zh-Hans)文档。 |
 | 2022 年 7 月 | [媒体并行查看者面板](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=zh-Hans)文档。 |
 | 2022 年 7 月 | [首次会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat)报告文档。 |
 | **2022 年 6 月** | |
-| 2022 年 6 月 | 关于以下内容的新文章： [AAID、ECID、AACUSTOMID和Analytics源连接器](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=zh-Hans) |
-| 2022 年 6 月 | 关于以下内容的新文章： [Adobe Analytics处理规则、VISTA和分类与Analytics Source Connector的数据准备的对比](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md). |
+| 2022 年 6 月 | 关于的新文章 [AAID、ECID、AACUSTOMID和Analytics源连接器](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=zh-Hans) |
+| 2022 年 6 月 | 关于的新文章 [Adobe Analytics处理规则、VISTA和分类与Analytics Source Connector的数据准备](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md). |
 | 2022 年 6 月 | 关于[虚拟报告环境和沙盒环境的新文章](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)。 |
 | 2022 年 6 月 | 关于[跨 Adobe Analytics 和 Customer Journey Analytics 报告功能比较数据处理](/help/getting-started/aa-vs-cja/data-processing-comparisons.md)的新文章。 |
 | 2022 年 6 月 | 关于[将报告包与不同架构相结合](/help/use-cases/aa-data/combine-report-suites.md)的新文章。 |
