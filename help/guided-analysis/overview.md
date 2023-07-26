@@ -3,9 +3,9 @@ title: 指导分析概述
 description: 一种分析Customer Journey Analytics中的数据的方法，使产品团队能够快速获得高质量的见解。 也称为Product Analytics。
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: bbf69470727dae531065972511bcc29eb3f47679
+source-git-commit: f1eb7eefb84054c37a04dd1535f30e3e5130e019
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1128'
 ht-degree: 8%
 
 ---
@@ -46,7 +46,9 @@ Adobe Product Analytics使产品团队能够通过基于Customer Journey Analyti
 
 ## 界面
 
-无论分析类型如何，引导式分析的界面都包含以下主要UI元素：
+引导式分析的界面遵循问答格式。 您在查询边栏中形成问题，然后通过书面分析、图表和表格形式获得答案。 然后，您可以询问有关可视化设置和视图类型的下一个问题。
+
+无论分析类型如何，引导式分析都由以下UI元素组成：
 
 | 界面预览 | UI 元素 | 描述 |
 | --- | --- | --- |
