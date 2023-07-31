@@ -4,10 +4,10 @@ description: 了解如何将基于帐户的数据作为查询数据集添加到C
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 647257322dc4b7e64e0e17fbfde27f626b1012a1
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 73%
+source-wordcount: '821'
+ht-degree: 74%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 73%
 
 所有这些都可通过将帐户级别信息作为[查询](/help/getting-started/cja-glossary.md)数据集引入来实现。
 
-首先，在Adobe Experience Platform中创建查询架构，然后通过引入基于.csv的帐户级别数据来创建查询表数据集。 然后，继续在Customer Journey Analytics(Customer Journey Analytics)中创建连接，该连接可合并各种数据集，包括您创建的查询数据集。 您随后创建一个数据视图，最后能够在 Workspace 中利用所有这些数据。
+首先，在Adobe Experience Platform中创建一个查询架构，然后通过引入基于.csv的帐户级别数据来创建查询表数据集。 接下来，继续创建一个Customer Journey Analytics(Customer Journey Analytics)连接，该连接可合并各种数据集，包括您创建的查询数据集。 您随后创建一个数据视图，最后能够在 Workspace 中利用所有这些数据。
 
 >[!NOTE]
 >
@@ -31,13 +31,13 @@ ht-degree: 73%
 
 ## 1. 创建查询模式 (Experience Platform)
 
-创建您自己的架构 [查找](/help/getting-started/cja-glossary.md) 表可确保使用的数据集能够以正确设置（记录类型）的Customer Journey Analytics提供。 最佳实践是[创建一个名为查找的自定义模式类](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans#create-new-class)，该类中没有任何元素，可以重新用于所有查找表。
+创建您自己的架构 [查找](/help/getting-started/cja-glossary.md) 表可确保所用的数据集能够以正确设置（记录类型）的Customer Journey Analytics使用。 最佳实践是[创建一个名为查找的自定义模式类](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans#create-new-class)，该类中没有任何元素，可以重新用于所有查找表。
 
 ![](../assets/create-new-class.png)
 
 ## 2.创建查询数据集(Experience Platform)
 
-创建模式后，需使用该模式在 Experience Platform 中创建一个查询数据集。此查询数据集包含帐户级别的营销信息，例如：公司名称、员工总数、域名、他们所属的行业、年收入、他们是否为Experience Platform的当前客户、他们处于哪个销售阶段、帐户中的哪个团队在使用Customer Journey Analytics等。
+创建模式后，需使用该模式在 Experience Platform 中创建一个查询数据集。此查询数据集包含帐户级别的营销信息，例如：公司名称、员工总数、域名、公司所属行业、年收入、是否为Experience Platform的当前客户、所处销售阶段、帐户中的哪个团队在使用Customer Journey Analytics等。
 
 1. 在 Adobe Experience Platform 中，转到&#x200B;**[!UICONTROL 数据管理 > 数据集]**。
 1. 单击 **[!UICONTROL + 创建数据集]**。
@@ -57,13 +57,13 @@ ht-degree: 73%
 
 ## 4. 将多个数据集合并到一个连接 (Customer Journey Analytics)
 
-在本例中，我们将3个数据集合并到一个Customer Journey Analytics连接中：
+在本例中，我们要将3个数据集合并到一个Customer Journey Analytics连接中：
 
 | 数据集名称 | 描述 | Adobe Experience Platform架构类 | 数据集详细信息 |
 | --- | --- | --- | --- |
 | B2B Impression | 包含帐户级别的点击流（事件级）数据。例如，包含用于运行营销广告的电子邮件 ID 和相应的帐户 ID 以及营销活动名称。此外，还包含这些广告对每个用户的展示次数。 | 基于 XDM ExperienceEvent 模式类 | `emailID` 用作主标识，并分配到一个 `Customer ID` 命名空间。因此，它将在 Customer Journey Analytics 中显示为默认的&#x200B;**[!UICONTROL 人员 ID]**。![展示次数](../assets/impressions-mixins.png) |
-| B2B Profile | 此用户档案数据集可告知有关帐户中用户的更多信息，例如其职务、其所属帐户、其 LinkedIn 个人档案等。 | 基于“XDM 个人用户档案”模式类 | 在此模式中，无需选择 `emailID` 作为主 ID。确保启用 **[!UICONTROL 个人资料]**；否则，Customer Journey Analytics将无法连接 `emailID` 在B2B Profile中使用 `emailID` B2B Impression数据中。 ![用户档案](../assets/profile-mixins.png) |
-| B2B Info | 请参阅上面的“创建查询数据集”。 | B2BAccount（自定义查询模式类） | 两者之间的关系 `accountID` 并且，通过将B2B Info数据集与Customer Journey Analytics中的B2B Impression数据集连接，已自动创建B2B Impressions数据集，如以下步骤中所述。 ![查询](../assets/lookup-mixins.png) |
+| B2B Profile | 此用户档案数据集可告知有关帐户中用户的更多信息，例如其职务、其所属帐户、其 LinkedIn 个人档案等。 | 基于“XDM 个人用户档案”模式类 | 选择 `emailID` 作为此架构中的主ID。 |
+| B2B Info | 请参阅上面的“创建查询数据集”。 | B2BAccount（自定义查询模式类） | 关系介于 `accountID` 并且，通过在Customer Journey Analytics中将B2B Info数据集与B2B Impressions数据集连接，已自动创建B2B Impressions数据集，如以下步骤中所述。 ![查询](../assets/lookup-mixins.png) |
 
 要合并数据集，请按以下步骤操作：
 
