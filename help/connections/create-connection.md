@@ -7,13 +7,13 @@ feature: Connections
 source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '2629'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # 创建连接
 
-连接创建和编辑工作流体验通过辅助工作流将所有数据集和连接配置设置引入屏幕中心。 它提供了详细的数据集选择、配置和查看体验，以及数据集类型、大小、架构、数据集ID、批次状态、回填状态、人员ID等关键信息，以降低错误连接配置的风险。 以下是各项功能的概述：
+连接创建和编辑工作流体验通过辅助工作流将所有数据集和连接配置设置引入屏幕中心。它提供了详细的数据集选择、配置和查看体验，以及数据集类型、大小、架构、数据集 ID、批次状态、回填状态、人员 ID 等关键信息，以降低错误连接配置的风险。以下是功能概述：
 
 * 您可以在创建连接时启用滚动数据保留窗口。
 * 您可以在连接中添加和删除数据集。（删除数据集会将其从连接中删除，并影响任何关联的数据视图和基础 Analysis Workspace 项目。）
@@ -25,7 +25,7 @@ ht-degree: 95%
 
 >[!IMPORTANT]
 >
->您必须拥有 **选择** 打包以便向连接添加无限数量的数据集。 此 **基础** 包限制为一个数据集。 如果不确定您拥有哪个Customer Journey Analytics包，请联系您的管理员。&#x200B;
+>您必须拥有&#x200B;**选择**&#x200B;包才能将无限数量的数据集添加到连接中。**基础**&#x200B;包仅限于一个数据集。如果您不确定您拥有的 Customer Journey Analytics 包，请联系您的管理员。&#x200B;
 
 ## 创建和配置连接 {#create-connection}
 
@@ -74,7 +74,7 @@ ht-degree: 95%
    | **[!UICONTROL 时间戳]** | 仅对于事件数据集，此设置会自动设置为 Experience Platform 中基于事件的架构的默认时间戳字段。 |
    | **[!UICONTROL 数据源类型]** | 选择数据源类型。<br/>数据源的类型包括： <ul><li>[!UICONTROL Web 数据]</li><li>[!UICONTROL 移动应用程序数据]</li><li>[!UICONTROL POS 数据]</li><li>[!UICONTROL CRM 数据]</li><li>[!UICONTROL 调查数据]</li><li>[!UICONTROL 呼叫中心数据]</li><li>[!UICONTROL 产品数据]</li><li> [!UICONTROL 帐户数据]</li><li> [!UICONTROL 事务数据]</li><li>[!UICONTROL 客户反馈数据]</li><li> [!UICONTROL 其他]</li></ul>该字段用于调查正在使用的数据源的类型。 |
    | **[!UICONTROL 导入新数据]** | 如果要创建持续连接，请选择此选项，以便要添加到此连接中数据集的任何新数据批次会自动流入工作区中。可以设置为[!UICONTROL 开]或[!UICONTROL 关。] |
-   | **[!UICONTROL 数据集回填]** | 选择&#x200B;**[!UICONTROL 请求回填]**，以回填历史数据。<ul><li>您可以单独回填每个数据集。</li><li>您会优先处理新添加到此连接中数据集的新数据，因此这些新数据的滞后时间最短。</li><li>任何回填（历史）数据的导入速度都会比较慢。延迟受您拥有多少历史数据的影响。</li><li>Analytics Source Connector最多可为生产沙盒导入13个月的数据（不考虑数据大小）。 非生产沙盒的回填期限为 3 个月。</li></ul> |
+   | **[!UICONTROL 数据集回填]** | 选择&#x200B;**[!UICONTROL 请求回填]**，以回填历史数据。<ul><li>您可以单独回填每个数据集。</li><li>您会优先处理新添加到此连接中数据集的新数据，因此这些新数据的滞后时间最短。</li><li>任何回填（历史）数据的导入速度都会比较慢。延迟受您拥有多少历史数据的影响。</li><li>Analytics Source Connector 会为生产沙盒导入最多 13 个月的数据（无论大小）。非生产沙盒的回填期限为 3 个月。</li></ul> |
    | **[!UICONTROL 回填状态]** | 可能的状态指示符有：<ul><li>成功</li><li>X 回填处理</li><li>关</li></ul> |
    | **[!UICONTROL 数据集 ID]** | 此 ID 是自动生成的。 |
    | **[!UICONTROL 描述]** | 创建此数据集时给出的描述。 |

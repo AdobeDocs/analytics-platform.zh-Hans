@@ -8,7 +8,7 @@ exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '1480'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Experience Platform 中的客户数据存储为数据集，其中包含[架构](
 
 >[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12)
 
-Adobe提供了多种将数据导入Adobe Experience Platform的方法，包括通过Analytics Source Connector或Web SDK导入报表包数据。 多个报告包中的现有实施可以合并为Experience Platform。基于这些数据集的连接和数据视图可以合并之前存在于单独的报告包中的数据。
+Adobe 提供了多种将数据导入 Adobe Experience Platform 的方法，包括通过 Analytics Source Connector 或 Web SDK 导入报表包数据。多个报告包中的现有实施可以合并为Experience Platform。基于这些数据集的连接和数据视图可以合并之前存在于单独的报告包中的数据。
 
 ## 对虚拟报告包概念的更改 {#data-views}
 

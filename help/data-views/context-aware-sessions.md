@@ -6,28 +6,28 @@ feature: Data Views
 source-git-commit: 5e4bf2985a0ec75cc0120e2a9549d720077cd5cc
 workflow-type: tm+mt
 source-wordcount: '236'
-ht-degree: 3%
+ht-degree: 83%
 
 ---
 
 
 # 上下文感知会话
 
-数据视图中的上下文感知会话会更改Customer Journey Analytics根据连接中的数据计算会话的方式。
+数据视图中的上下文感知会话改变了 Customer Journey Analytics 根据连接中的数据计算会话的方式。
 
-在 [!UICONTROL 设置] 选项卡中，您可以以任何方式定义会话，以匹配人员与您的数字体验的交互方式。 上下文感知会话定义是非破坏性的，不会更改基础数据。 您可以将多个数据视图（每个视图都有其特定的上下文感知会话定义）设置为工作区项目的基础。
+在数据视图的[!UICONTROL 设置]选项卡中，可通过任何方式定义会话，以匹配人员与您的数字体验交互的方式。上下文感知会话定义是无损的，不会更改底层数据。您可以将多个数据视图（每个视图都有其特定的上下文感知会话定义）设置为工作区项目的基础。
 
-要为数据视图定义会话的上下文，请执行以下操作：
+要定义数据视图的会话上下文，请执行以下操作：
 
-1. 选择 **[!UICONTROL 数据视图]** 在Customer Journey AnalyticsUI中。
+1. 在 Customer Journey Analytics UI 中，选择&#x200B;**[!UICONTROL 数据视图]**。
 
-1. 创建新数据视图或编辑现有数据视图。 请参阅 [创建或编辑数据视图](create-dataview.md) 以了解更多信息。
+1. 创建新的或编辑现有的数据视图。有关更多信息，请参阅[创建或编辑数据视图](create-dataview.md)。
 
-1. 选择&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡。下方 [!UICONTROL 会话设置]：
+1. 选择&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡。在[!UICONTROL 会话设置]下：
 
-   1. 输入值 **[!UICONTROL 会话超时]** 在 [!UICONTROL 分钟]， [!UICONTROL 小时]， [!UICONTROL 天]，或 [!UICONTROL 周]. 会话超时决定在启动新会话之前，会话可以空闲多久（不发生事件）。
+   1. 输入&#x200B;**[!UICONTROL 会话超时]**&#x200B;的值（以[!UICONTROL 分钟]、[!UICONTROL 小时]、[!UICONTROL 天]或[!UICONTROL 周]为单位）。会话超时可确定在开始新会话之前，会话可处于空闲状态（无事件发生）的时长。
 
-   2. 从中选择一个量度 **[!UICONTROL 将指标拖放到此处]** 在下面列出 [!UICONTROL 使用量度开始新会话]. 或者，您可以从左侧窗格将量度拖放到 **[!UICONTROL 放置量度字段]**. 所选量度定义新会话的开始。 您可以定义多个量度。
+   2. 从[!UICONTROL 使用量度发起新会话]下的&#x200B;**[!UICONTROL 在此处放置量度]**&#x200B;列表中选择量度。或者，您可以从左侧窗格将量度拖放到 **[!UICONTROL 放置量度字段]**. 所选量度定义新会话的开始。您可以定义多个量度。
 
-1. 选择 **[!UICONTROL 保存]** 或 **[!UICONTROL 保存并完成]** 以保存上下文感知会话定义。
+1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;或&#x200B;**[!UICONTROL 保存并完成]**&#x200B;以保存上下文感知会话定义。
 
