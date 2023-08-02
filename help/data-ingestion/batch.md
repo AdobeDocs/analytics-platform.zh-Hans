@@ -4,10 +4,10 @@ description: 解释如何在 Customer Journey Analytics 中获取和使用批处
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
 workflow-type: tm+mt
-source-wordcount: '1954'
-ht-degree: 100%
+source-wordcount: '1953'
+ht-degree: 91%
 
 ---
 
@@ -29,19 +29,19 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->这是一份关于如何将批处理数据导入 Adobe Experience Platform 并在 Customer Journey Analytics 中使用的简化指南。强烈建议参考时研究附加信息。
+>本快速入门指南是一份有关如何将批量数据摄取到Adobe Experience Platform并在Customer Journey Analytics中使用的简化指南。 强烈建议参考时研究附加信息。
 
 ## 设置模式和数据集
 
 要将数据导入 Adobe Experience Platform，首先需要定义要收集的数据。引入 Adobe Experience Platform 的所有数据都必须符合标准的非规范化结构，以便下游功能和特性对其进行识别和操作。体验数据模型 (XDM) 是以模式形式提供此结构的标准框架。
 
-定义模式后，您可以使用一个或多个数据集来存储和管理数据集合。数据集是用于数据集合的存储和管理结构，通常是表格，其中包含模式（列）和字段（行）。
+定义模式后，您可以使用一个或多个数据集来存储和管理数据集合。数据集是用于数据集合（通常是表）的存储和管理结构，其中包含架构（列）和字段（行）。
 
 摄取到 Adobe Experience Platform 中的所有数据都必须符合预定义的模式，然后才能作为数据集保存。
 
 ### 设置模式
 
-为了快速开始，您需要收集一些忠诚度数据，例如忠诚度 id、忠诚度积分和忠诚度状态。为此，首先需要定义一个模型化该数据的模式。
+为了快速开始，您需要收集一些忠诚度数据，例如忠诚度 id、忠诚度积分和忠诚度状态。您必须首先定义一个模式来模拟此数据。
 
 设置您的模式：
 
@@ -88,7 +88,7 @@ ht-degree: 100%
 
    ![识别对象](./assets/identifcation-loyalty-field.png)
 
-   这会为您的模式添加识别功能。在您的情况下，您希望使用批处理数据中的电子邮件地址来识别忠诚度信息。
+   标识对象将标识功能添加到架构中。 在您的情况下，您希望使用批处理数据中的电子邮件地址来识别忠诚度信息。
 
    选择 **[!UICONTROL 应用]** 将此对象添加到您的模式中。
 
@@ -122,7 +122,7 @@ ht-degree: 100%
 
 ### 设置数据集
 
-使用您的模式，您已经定义了数据模型。您现在必须定义结构来存储和管理该数据。这是通过数据集完成的。
+使用您的模式，您已经定义了数据模型。现在，您必须定义构建来存储和管理这些数据，这通过数据集来完成。
 
 设置您的数据集
 
@@ -150,7 +150,7 @@ ht-degree: 100%
 
    >[!IMPORTANT]
    >
-   >    只有当数据集所依附的模式也为配置文件启用时，您才能为配置文件启用数据集。
+   >只有当数据集所依附的模式也为配置文件启用时，您才能为配置文件启用数据集。
 
    ![为配置文件启用模式](./assets/loyalty-dataset-profile.png)
 
@@ -207,14 +207,19 @@ ppales4@nsw.gov.au,365384,82.71,Silver
 
 6. 选择 **[!UICONTROL 完成]** 开始将您的批处理数据提取到 Adobe Experience Platform 中。
 
-请参阅[将 CSV 文件映射到现有 XDM 模式](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html)，了解有关在传入数据与 XDM 模式不兼容时如何映射数据、使用映射模板、使用计算的更多信息字段以确保您的批处理数据符合模式的预期，等等。
+请参阅 [将CSV文件映射到现有XDM架构](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html) 有关以下内容的更多信息：
+
+- 当传入数据与XDM架构不兼容时如何映射数据。
+- 使用映射模板，
+- 使用计算字段确保批次数据与架构预期一致，
+- 等等.
 
 
 ## 设置连接
 
 要在 Customer Journey Analytics 中使用 Adobe Experience Platform 数据，您需要创建一个连接，其中包含因设置模式、数据集和工作流所产生的数据。
 
-通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告这些数据集，您必须首先在 Adobe Experience Platform 和工作区中的数据集之间建立连接。
+通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告这些数据集，您必须首先在Adobe Experience Platform和工作区中的数据集之间建立连接。
 
 创建您的连接：
 
@@ -260,7 +265,7 @@ ppales4@nsw.gov.au,365384,82.71,Silver
 
 ## 设置数据视图
 
-数据视图是 Customer Journey Analytics 专属的容器，通过它，可决定如何解释来自连接的数据。 它指定所有可在 Analysis Workspace 中找到的维度和指标，以及这些维度和指标从哪些列获取其数据。为准备 Analysis Workspace 中的报表而定义数据视图。
+数据视图是 Customer Journey Analytics 专属的容器，通过它，可决定如何解释来自连接的数据。 它指定所有可在 Analysis Workspace 中找到的维度和量度，以及这些维度和量度从哪些列获取其数据。为准备 Analysis Workspace 中的报告而定义数据视图。
 
 创建您的数据视图：
 
@@ -317,7 +322,7 @@ Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分�
 
    ![工作区选择数据视图](./assets/cja-projects-3.png)
 
-5. 开始将维度和量度拖放到[!UICONTROL 面板]中的[!UICONTROL 自由表格]上，以创建您的第一个报告。例如，拖动 `Program Points Balance` 以及 `Page View` 作为量度和 `email` 作为维度，以快速查看访问过您的网站并已加入忠诚度计划收集忠诚度点的个人资料。
+5. 要创建您的第一个报表，请开始将维度和量度拖放到 [!UICONTROL 自由格式表] 在 [!UICONTROL 面板]. 例如，拖动 `Program Points Balance` 以及 `Page View` 作为量度和 `email` 作为维度，以快速查看访问过您的网站并已加入忠诚度计划收集忠诚度点的个人资料。
 
    ![工作区 – 第一份报告](./assets/cja-projects-5.png)
 

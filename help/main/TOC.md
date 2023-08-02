@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 92511d2bedf322097b4d70ccede5ac6e0df7b0c6
+source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 83%
+source-wordcount: '971'
+ht-degree: 85%
 
 ---
 
@@ -43,17 +43,20 @@ ht-degree: 83%
    + 与 Adobe Analytics 进行比较 {#cja-aa-comparison}
       + [在 Customer Journey Analytics 中使用 Adobe Analytics 数据](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Customer Journey Analytics 功能支持](../getting-started/aa-vs-cja/cja-aa.md)
-      + [比较通过Analytics Source Connector传递的Analytics数据的术语](../getting-started/aa-vs-cja/terminology.md)
+      + [比较通过 Analytics Source Connector 传递的 Analytics 数据的术语](../getting-started/aa-vs-cja/terminology.md)
       + [跨Adobe Analytics和Customer Journey Analytics比较数据处理](../getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [虚拟报告环境和沙盒环境](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
       + [处理规则、VISTA 和分类与数据准备](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
-      + [AAID、ECID、AACUSTOMID和Analytics源连接器](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
+      + [AAID、ECID、AACUSTOMID 和 Analytics Source Connector](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
 
 + 数据引入 {#cja-data-ingestion}
    + [数据摄取概述](../data-ingestion/data-ingestion.md)
    + 摄取并使用快速入门指南{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
-      + [Adobe Experience Platform Web SDK 和 Edge Network](../data-ingestion/aepwebsdk.md)
+      + Adobe Experience Platform Edge Network {#edge-network}
+         + [Web SDK](../data-ingestion/aepwebsdk.md)
+         + [Mobile SDK](../data-ingestion/aepmobilesdk.md)
+         + [服务器API](../data-ingestion/serverapi.md)
       + [批次数据](../data-ingestion/batch.md)
       + [流式数据](../data-ingestion/streaming.md)
       + [源连接器](../data-ingestion/sources.md)

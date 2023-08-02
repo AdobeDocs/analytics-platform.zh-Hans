@@ -4,10 +4,10 @@ description: 解释如何从传统 Adobe Analytics 获取数据
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 95%
+source-wordcount: '1159'
+ht-degree: 86%
 
 ---
 
@@ -27,9 +27,9 @@ ht-degree: 95%
 
 要完成此实施，您需要：
 
-- 在 Adobe Experience Platform 中&#x200B;**设置 Adobe Analytics 源连接器**。这将负责将您当前的 Adobe Analytics 数据导入 Adobe Experience Platform 中的数据集。
+- 在 Adobe Experience Platform 中&#x200B;**设置 Adobe Analytics 源连接器**。源连接器负责将您当前的Adobe Analytics数据摄取到Adobe Experience Platform中的数据集。
 
-- 在 Customer Journey Analytics 中&#x200B;**设置连接**。此连接应（至少）包含 Adobe Experience Platform 数据集。
+- 在 Customer Journey Analytics 中&#x200B;**设置连接**。该连接应该（至少）包含您的Adobe Experience Platform数据集。
 
 - 在 Customer Journey Analytics 中&#x200B;**设置数据视图**&#x200B;以定义要在 Analysis Workspace 中使用的量度和维度。
 
@@ -38,7 +38,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->这是一个关于如何使用 Adobe Analytics 源连接器获取数据并在 Customer Journey Analytics 中使用该数据的简化指南。强烈建议参考时研究附加信息。
+>本快速入门指南是一份关于如何使用Adobe Analytics源连接器摄取数据以及在Customer Journey Analytics中使用该数据的简化指南。 强烈建议参考时研究附加信息。
 
 
 ## 设置 Adobe Analytics 源连接器
@@ -78,7 +78,7 @@ Adobe Analytics 源连接器允许您将 Adobe Analytics 报告套件数据导�
    ![请查看](./assets/review.png)
 
 
-创建连接后，将自动创建数据流以使用报表包中的Adobe Analytics数据填充数据集，包括为生产沙盒摄取至多13个月的历史数据。 （请注意，从2023年4月26日开始，非生产沙盒中的回填限制为3个月。）
+创建连接后，将自动创建数据流以使用报表包中的Adobe Analytics数据填充数据集。 数据流最多可摄取13个月的生产沙盒的历史数据。 非生产沙盒中的回填限制为三个月。
 
 初始摄取完成后，您的 Adobe Analytics 报告套件数据即可供 Customer Journey Analytics 使用。
 
@@ -89,7 +89,7 @@ Adobe Analytics 源连接器允许您将 Adobe Analytics 报告套件数据导�
 
 要在 Customer Journey Analytics 中使用 Adobe Experience Platform 数据，您需要创建一个连接，其中包含因设置模式、数据集和工作流所产生的数据。
 
-通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告这些数据集，您必须首先在 Adobe Experience Platform 和工作区中的数据集之间建立连接。
+通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告这些数据集，您必须首先在Adobe Experience Platform和工作区中的数据集之间建立连接。
 
 创建您的连接：
 
@@ -135,7 +135,7 @@ Adobe Analytics 源连接器允许您将 Adobe Analytics 报告套件数据导�
 
 ## 设置数据视图
 
-数据视图是 Customer Journey Analytics 专属的容器，通过它，可决定如何解释来自连接的数据。 它指定所有可在 Analysis Workspace 中找到的维度和指标，以及这些维度和指标从哪些列获取其数据。为准备 Analysis Workspace 中的报表而定义数据视图。
+数据视图是 Customer Journey Analytics 专属的容器，通过它，可决定如何解释来自连接的数据。 它指定所有可在 Analysis Workspace 中找到的维度和量度，以及这些维度和量度从哪些列获取其数据。为准备 Analysis Workspace 中的报告而定义数据视图。
 
 创建您的数据视图：
 
@@ -192,7 +192,7 @@ Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分�
 
    ![工作区选择数据视图](./assets/cja-projects-3.png)
 
-5. 开始将维度和量度拖放到[!UICONTROL 面板]中的[!UICONTROL 自由表格]上，以创建您的第一个报告。例如，拖动 `Program Points Balance` 以及 `Page View` 作为量度和 `email` 作为维度，以快速查看访问过您的网站并已加入忠诚度计划收集忠诚度点的个人资料。
+5. 要创建您的第一个报表，请开始将维度和量度拖放到 [!UICONTROL 自由格式表] 在 [!UICONTROL 面板] . 例如，拖动 `Program Points Balance` 以及 `Page View` 作为量度和 `email` 作为维度，以快速查看访问过您的网站并已加入忠诚度计划收集忠诚度点的个人资料。
 
    ![工作区 – 第一份报告](./assets/cja-projects-5.png)
 
@@ -201,5 +201,5 @@ Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分�
 
 >[!SUCCESS]
 >
->您已完成所有步骤。通过设置 Adobe Analytics 数据源连接器并为报告套件配置该连接器，您的 Adobe Analytics 将自动上传到 Adobe Experience Platform。您在 Customer Journey Analytics 中定义了一个连接，以利用获取的 Adobe Analytics 数据和其他数据。您的数据视图定义允许您指定要使用的维度和量度，最后您创建了您的第一个项目来可视化和分析您的数据。
+>您已完成所有步骤。通过设置 Adobe Analytics 数据源连接器并为报告套件配置该连接器，您的 Adobe Analytics 将自动上传到 Adobe Experience Platform。您在Customer Journey Analytics中定义了一个连接，以使用摄取的Adobe Analytics数据和其他数据。 您的数据视图定义允许您指定要使用的维度和量度，最后您创建了您的第一个项目来可视化和分析您的数据。
 

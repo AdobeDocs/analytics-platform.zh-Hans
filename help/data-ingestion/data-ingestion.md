@@ -4,16 +4,16 @@ description: 了解将数据导入 Customer Journey Analytics 的不同方式
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
-source-git-commit: 94df90b64a25bfbeb5ed5e270925b1ef1ed89b8a
+source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 92%
+source-wordcount: '624'
+ht-degree: 90%
 
 ---
 
 # 数据摄取概述
 
-在将数据导入 Customer Journey Analytics 时您有多种选择。他们中的一些人假设你想移动传统的 Adobe Analytics 数据，有些人假设你使用的是从 Adobe Experience Platform 获取的数据。
+将数据摄取到Customer Journey Analytics时，有几个选项可供您选择。 他们中的一些人假设你想移动传统的 Adobe Analytics 数据，有些人假设你使用的是从 Adobe Experience Platform 获取的数据。
 
 >[!IMPORTANT]
 >
@@ -50,7 +50,7 @@ ht-degree: 92%
 
 您希望使用Adobe技术分析您的网站，从其他解决方案进行迁移或开始跟踪您的人员的行为。 您希望遵循 Adobe 的最佳实施实践，即使用 Adobe Experience Platform SDK 和 Edge Network 来获取数据。然后您可以在 Customer Journey Analytics 中使用、组合和分析摄入的数据与来自其他渠道和数据源的数据。
 
-参见 [通过Adobe Experience Platform Web SDK摄取和使用数据](./aepwebsdk.md) 了解更多信息。
+请参阅 [通过Adobe Experience Platform Web SDK摄取和使用数据](./aepwebsdk.md) 以了解更多信息。
 
 ## 摄取和使用批次数据
 
