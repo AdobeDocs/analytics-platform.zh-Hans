@@ -4,10 +4,10 @@ description: 了解将数据导入 Customer Journey Analytics 的不同方式
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
-source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
+source-git-commit: 89841edb40f8ac89a3142588fede383b87d246f9
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 90%
+source-wordcount: '866'
+ht-degree: 71%
 
 ---
 
@@ -32,7 +32,9 @@ ht-degree: 90%
 
 - 来自当前 Adobe Analytics 部署的数据，
 
-- 使用 Adobe Experience Platform Web/Mobile SDK 跟踪您的网站/移动应用程序的数据，或
+- 来自使用Adobe Experience Platform Web/Mobile SDK跟踪您的网站/移动应用程序的数据，
+
+- 来自使用Adobe Experience Platform Edge Network Server API跟踪桌面应用程序、控制台游戏、机顶盒或IoT设备的数据，或者
 
 - 来自 Adobe 提供源连接器的第三方数据提供商的数据。
 
@@ -46,11 +48,26 @@ ht-degree: 90%
 
 有关更多信息请参阅[摄取并使用传统 Adobe Analytics 的数据](./analytics.md)。
 
-## 通过Adobe Experience Platform Web SDK摄取和使用数据
+
+## 通过Edge Network引入和使用数据
+
+### 使用Adobe Experience Platform Web SDK
 
 您希望使用Adobe技术分析您的网站，从其他解决方案进行迁移或开始跟踪您的人员的行为。 您希望遵循 Adobe 的最佳实施实践，即使用 Adobe Experience Platform SDK 和 Edge Network 来获取数据。然后您可以在 Customer Journey Analytics 中使用、组合和分析摄入的数据与来自其他渠道和数据源的数据。
 
 请参阅 [通过Adobe Experience Platform Web SDK摄取和使用数据](./aepwebsdk.md) 以了解更多信息。
+
+### 使用Adobe Experience Platform Mobile SDK
+
+您要使用Adobe技术分析您的移动应用程序，并可能从其他解决方案进行迁移，或者从头开始跟踪人员在应用程序中的行为。 您希望遵循 Adobe 的最佳实施实践，即使用 Adobe Experience Platform SDK 和 Edge Network 来获取数据。然后您可以在 Customer Journey Analytics 中使用、组合和分析摄入的数据与来自其他渠道和数据源的数据。
+
+请参阅 [通过Adobe Experience Platform Mobile SDK摄取和使用数据](./aepmobilesdk.md) 以了解更多信息。
+
+### 使用Adobe Experience Platform Edge Network服务器API
+
+您想要分析桌面应用程序、游戏主机上所玩的游戏、机顶盒上的视频流应用程序的使用情况或使用Adobe技术的IoT设备。 可以从其他解决方案进行迁移，或从头开始跟踪人员在这些设备上的行为。 您需要遵循Adobe的最佳实施实践，即使用Adobe Experience Platform Edge Network服务器API和Edge Network来摄取数据。 然后您可以在 Customer Journey Analytics 中使用、组合和分析摄入的数据与来自其他渠道和数据源的数据。
+
+请参阅 [通过Adobe Experience Platform Edge Network服务器API摄取和使用数据](./serverapi.md) 以了解更多信息。
 
 ## 摄取和使用批次数据
 
