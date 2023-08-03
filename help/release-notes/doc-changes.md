@@ -22,7 +22,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | **2023 年 8 月** | |
 | 移动应用程序和其他平台的数据摄取快速入门指南 | 添加了其他数据摄取快速入门指南，概述如何在Customer Journey Analytics中从移动应用程序或其他平台（例如，桌面应用程序、控制台上的游戏、机顶盒和IoT设备上的应用程序）摄取和使用数据。 [了解详情](../data-ingestion/data-ingestion.md) |
 | **2023 年 7 月** | |
-| 上下文感知会话 | 已为此数据视图设置添加一个主题。[了解详情](/help/data-views/context-aware-sessions.md) |
+| 上下文感知会话 | 为此数据视图设置添加了一个主题。[了解详情](/help/data-views/context-aware-sessions.md) |
 | Adobe Product Analytics | Adobe Product Analytics 是一种与 Customer Journey Analytics 中的跨渠道数据和见解进行交互的新方式。这些新功能使产品团队能够通过[引导式分析](/help/guided-analysis/overview.md)工作流程自助提供有关其产品体验的数据和见解。 |
 | 派生字段 | 通过[派生字段](/help/data-views/derived-fields/derived-fields.md)和可自定义的规则生成器，即可迅速定义（一般较为复杂的）数据操作。 |
 | 配置文件和查找数据的扩展查找支持 | 提供将数据集添加为配置文件或查找数据集中的字段查找的功能。之前，仅支持事件数据集。[了解详情](/help/connections/create-connection.md) |
