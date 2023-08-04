@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: c1b92c9f30dc96a6058a320df9fd66cd316b212f
+source-git-commit: a08a237eadc3408e170d4a8b5a3e6d451c15efee
 workflow-type: tm+mt
-source-wordcount: '2430'
-ht-degree: 98%
+source-wordcount: '2485'
+ht-degree: 96%
 
 ---
 
@@ -20,6 +20,8 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2023 年 8 月** | |
+| Adobe Customer Journey Analytics 功能支持 | 在中添加了更多信息 *以新方式支持* 此表介绍了Customer Journey Analytics中与Adobe Analytics相比的会话流程功能。 [了解详情](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
+| Adobe Analytics 的演变 | 已更新 *（重新）配置营销渠道* 部分中关于派生字段营销渠道功能模板的引用。 [了解详情](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
 | 移动应用程序和其他平台的数据摄取快速入门指南 | 添加了其他数据摄取快速入门指南，概述如何在Customer Journey Analytics中从移动应用程序或其他平台（例如，桌面应用程序、控制台上的游戏、机顶盒和IoT设备上的应用程序）摄取和使用数据。 [了解详情](../data-ingestion/data-ingestion.md) |
 | **2023 年 7 月** | |
 | 上下文感知会话 | 为此数据视图设置添加了一个主题。[了解详情](/help/data-views/context-aware-sessions.md) |
