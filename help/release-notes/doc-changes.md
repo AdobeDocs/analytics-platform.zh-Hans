@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: a08a237eadc3408e170d4a8b5a3e6d451c15efee
 workflow-type: tm+mt
 source-wordcount: '2485'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | **2023 年 8 月** | |
 | Adobe Customer Journey Analytics 功能支持 | 在中添加了更多信息 *以新方式支持* 此表介绍了Customer Journey Analytics中与Adobe Analytics相比的会话流程功能。 [了解详情](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
 | Adobe Analytics 的演变 | 已更新 *（重新）配置营销渠道* 部分中关于派生字段营销渠道功能模板的引用。 [了解详情](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
-| 移动应用程序和其他平台的数据摄取快速入门指南 | 添加了其他数据摄取快速入门指南，概述如何在Customer Journey Analytics中从移动应用程序或其他平台（例如，桌面应用程序、控制台上的游戏、机顶盒和IoT设备上的应用程序）摄取和使用数据。 [了解详情](../data-ingestion/data-ingestion.md) |
+| 移动应用程序和其他平台的数据摄取快速入门指南 | 添加了额外的数据摄取快速入门指南，概述了如何在 Customer Journey Analytics 中摄取和使用来自移动应用程序或其他平台（例如桌面应用程序、控制台上的游戏、机顶盒和物联网设备上的应用程序）的数据。[了解详情](../data-ingestion/data-ingestion.md) |
 | **2023 年 7 月** | |
 | 上下文感知会话 | 为此数据视图设置添加了一个主题。[了解详情](/help/data-views/context-aware-sessions.md) |
 | Adobe Product Analytics | Adobe Product Analytics 是一种与 Customer Journey Analytics 中的跨渠道数据和见解进行交互的新方式。这些新功能使产品团队能够通过[引导式分析](/help/guided-analysis/overview.md)工作流程自助提供有关其产品体验的数据和见解。 |
