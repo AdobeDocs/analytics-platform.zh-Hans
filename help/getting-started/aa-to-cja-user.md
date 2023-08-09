@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 8f64e0a31ed3bca7185674490fc36b78598f5b1c
 workflow-type: tm+mt
-source-wordcount: '1480'
-ht-degree: 100%
+source-wordcount: '1479'
+ht-degree: 98%
 
 ---
 
@@ -110,4 +110,4 @@ Customer Journey Analytics 扩展了 ECID 之外的标识概念，以包含您�
 
 ## 对低流量维度项目概念的更改
 
-在传统Adobe Analytics中，接收过多唯一值的变量会开始将维度项存储在[!UICONTROL 低流量]下。Customer Journey Analytics 对高基数字段的限制较少。对报告模式所做的更改允许 Analysis Workspace 报告更多独特维度项目。请参阅[结果截断的维度项目](../analysis-workspace/workspace-faq/results-truncated.md)，了解有关 Customer Journey Analytics 如何优化报告具有许多独特值的维度方面的更多信息。
+在传统Adobe Analytics中，接收过多唯一值的变量会开始将维度项存储在[!UICONTROL 低流量]下。Customer Journey Analytics 对高基数字段的限制较少。对报告模式所做的更改允许 Analysis Workspace 报告更多独特维度项目。请参阅 [高基数维度](../components/dimensions/high-cardinality.md) 有关Customer Journey Analytics如何优化具有许多唯一值的维度报表的更多信息。
