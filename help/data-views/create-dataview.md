@@ -4,10 +4,10 @@ description: 为创建或编辑数据视图而可调整的所有设置。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 92511d2bedf322097b4d70ccede5ac6e0df7b0c6
+source-git-commit: 543ca5bf2513e09f9875a7a0826ad770e26d2cca
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 100%
+source-wordcount: '1418'
+ht-degree: 98%
 
 ---
 
@@ -115,6 +115,11 @@ ht-degree: 100%
 您可以根据[!UICONTROL 数据类型]、[!UICONTROL 数据集]、[!UICONTROL 数据治理]和[!UICONTROL 其他]标准（[!UICONTROL 包含数据]、[!UICONTROL 是标识]和[!UICONTROL 未弃用]），筛选左栏内的![“筛选条件”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)架构字段：
 
 ![筛选字段](assets/dataview-components-filter.png)
+
+>[!TIP]
+>
+>如果组件未在数据视图中正确加载，而您看到错误消息，请参阅 [缺少权限](../troubleshooting/lack-of-permissions.md) 以寻求解决方案。
+
 
 
 ## 设置
