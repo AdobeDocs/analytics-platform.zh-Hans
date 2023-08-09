@@ -3,33 +3,34 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: e6b2df9ae90ef5663206e768b985749de38e263c
+source-git-commit: 2dab438b956513eaff3f05d2ff8de2fff43d9977
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 100%
+source-wordcount: '571'
+ht-degree: 74%
 
 ---
 
-# 当前的 Adobe Customer Journey Analytics 发行说明（2023 年 7 月）
+# 当前Adobe Customer Journey Analytics发行说明（2023年8月）
 
-**上次更新日期**：2023 年 7 月 25 日
+**上次更新日期**：2023 年 8 月 9 日
 
-Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
+这些发行说明涵盖2023年8月9日至9月13日的发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
 ## 新增功能或更新后的功能
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Adobe Product Analytics** | Adobe Product Analytics 是一种与 Customer Journey Analytics 中的跨渠道数据和见解进行交互的新方式。这些新功能使产品团队能够通过引导式分析工作流自助提供有关其产品体验的数据和见解。团队可以：<ul><li>了解用户参与在一段时间内的模式</li><li>跟踪产品用户群的增长和保留</li><li>确定产品中出现分歧的方面</li><li>衡量功能发布和首次使用的影响</li><li>在产品的整个生命历程中，发现有意义的用户细分群体，与之互动并进行培养</li><li>连接到 Analysis Workspace 以进行更深入的分析并与分析师进行协作</li></ul>Adobe Product Analytics 是 Customer Journey Analytics 的付费加载项。如果您的组织想配置为使用此功能，请联系您的 Adobe 帐户团队。[了解详情](/help/guided-analysis/overview.md) | 不适用 | 2023 年 7 月 17 日 |
-| **派生字段** | 这代表派生字段的初始版本。通过派生字段和可自定义的规则生成器，即可迅速定义（一般较为复杂的）数据操作。可进一步将该派生字段定义为数据视图中的组件（量度或维度），然后将该派生字段用作 Workspace 中的组件。<p>此版本支持营销渠道模板和以下功能：</p><ul><li>拼接</li><li>Case When</li><li>查找和替换</li><li>查询</li><li>URL 解析</li></ul> <p>[了解详情](/help/data-views/derived-fields/derived-fields.md)</p> | 2023 年 5 月 10 日 | 2023 年 8 月 2 日 |
-| **配置文件和查找数据的扩展查找支持** | 提供将数据集添加为配置文件或查找数据集中的字段查找的功能。之前，仅支持事件数据集。[了解详情](/help/connections/create-connection.md) | 2023 年 6 月 21 日 | 2023 年 7 月 12 日 |
-| **Report Builder 增强功能** | <ul><li>从单元格中筛选多个数据块。您可以更改单元格中多个数据块的筛选条件。使用预定义的单元格，将它分配给多个数据块，并基于单元格中定义的筛选条件更新数据。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=zh-Hans)</li><li>显示和隐藏行标题和列标题。您可以显示或隐藏数据块表标题或行标题和列标题，以重新格式化表并对齐报告中的数据块。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=zh-Hans#build-the-data-block)</li></ul> | 不适用 | 2023 年 7 月 19 日 |
+| **Report Builder 增强功能** | <ul><li>从“历史记录”选项卡下载计划任务，您可以在其中查看计划任务的历史记录。 从该任务下载工作簿。 </li><li>以维度形式显示开始日期：允许用户在数据块输出中将数据块的开始日期显示为维度。 </li></ul> | 不适用 | 2023 年 8 月 17 日 |
+| **货币换算** | 客户历程增加了支持多种货币的能力。 您可以在数据视图设置中将货币转换为另一种货币。 [了解详情](/help/data-views/component-settings/format.md) | 不适用 | 2023 年 8 月 31 日 |
+| **Analytics Source Connector中支持A4T分类** | 我们将添加一个关联ID，以便轻松联接Adobe Target活动和体验事件的分类数据。 | 不适用 | 2023 年 8 月 31 日 |
+| **报表活动管理器** | 使管理员能够详细了解每个连接的报告消耗，从而使管理员能够轻松地诊断和修复在报告高峰期出现的容量问题。 | 不适用 | 2023年9月6日 |
+| **PowerBI 和 Tableau 访问 Customer Journey Analytics 数据视图** | 通过 Adobe Customer Journey Analytics SQL Connector，SQL 可访问您在 Customer Journey Analytics 中定义的数据视图。更熟悉 Power BI、Tableau 或其他商业智能和可视化工具的数据工程师和分析师现在可根据 Customer Journey Analytics 用户用于其 Analysis Workspace 项目的相同数据视图创建报表和仪表板。[了解详情](/help/data-views/sql-connector.md) | 不适用 | 2023年9月13日 |
 
 {style="table-layout:auto"}
 
 ## Customer Journey Analytics 中的修复
 
-AN-317971；AN-319234；AN-320439；AN-320519；AN-321740；AN-322444；AN-323116
+AN-309141； AN-319198； AN-324576； AN-324939； AN-325138； AN-325554
 
 ## Customer Journey Analytics 管理员的重要注意事项
 
