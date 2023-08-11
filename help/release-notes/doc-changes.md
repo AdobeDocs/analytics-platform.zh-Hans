@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: a08a237eadc3408e170d4a8b5a3e6d451c15efee
 workflow-type: tm+mt
 source-wordcount: '2485'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -20,8 +20,8 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2023 年 8 月** | |
-| Adobe Customer Journey Analytics 功能支持 | 在中添加了更多信息 *以新方式支持* 此表介绍了Customer Journey Analytics中与Adobe Analytics相比的会话流程功能。 [了解详情](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
-| Adobe Analytics 的演变 | 已更新 *（重新）配置营销渠道* 部分中关于派生字段营销渠道功能模板的引用。 [了解详情](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
+| 支持 Adobe Customer Journey Analytics 功能 | 在“Customer Journey Analytics 与 Adobe Analytics 相比”中关于会话化功能的&#x200B;*以新方式支持*&#x200B;表中添加了更多信息。[了解详情](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
+| Adobe Analytics 的演化 | 通过引用派生字段营销渠道功能模板，更新了&#x200B;*（重新）配置营销渠道*&#x200B;部分。[了解详情](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
 | 移动应用程序和其他平台的数据摄取快速入门指南 | 添加了额外的数据摄取快速入门指南，概述了如何在 Customer Journey Analytics 中摄取和使用来自移动应用程序或其他平台（例如桌面应用程序、控制台上的游戏、机顶盒和物联网设备上的应用程序）的数据。[了解详情](../data-ingestion/data-ingestion.md) |
 | **2023 年 7 月** | |
 | 上下文感知会话 | 为此数据视图设置添加了一个主题。[了解详情](/help/data-views/context-aware-sessions.md) |
@@ -126,7 +126,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 2022 年 3 月 | 关于[工作区批注](/help/components/annotations/overview.md)的新文档。 |
 | 2022 年 3 月 | 关于[估计连接大小](/help/getting-started/cja-faq.md)内容的大幅更新。 |
 | **2022 年 2 月** | |
-| 2022 年 2 月 | 面向从 Adobe Analytics 转移到 Customer Journey Analytics 的管理员的新指南：[从 Adobe Analytics 到 Customer Journey Analytics 的演变](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html?lang=zh-Hans) |
+| 2022 年 2 月 | 面向从 Adobe Analytics 转移到 Customer Journey Analytics 的管理员的新指南：[从 Adobe Analytics 到 Customer Journey Analytics 的演化](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html?lang=zh-Hans) |
 | **2022 年 1 月** | |
 | 2022 年 1 月 | [在 Customer Journey Analytics 中使用绑定维度和指标](/help/use-cases/data-views/binding-dimensions-metrics.md)的新用例 |
 | 2022 年 1 月 | 添加了有关[绑定维度和指标](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=zh-Hans#binding-dimension)以及新的[[!UICONTROL 第一个已知]和[!UICONTROL 最后一个已知]分配设置的新功能文档](/help/data-views/component-settings/persistence.md#allocation-settings) |
