@@ -1,18 +1,18 @@
 ---
-title: Adobe Analytics 的演变
+title: Adobe Analytics 的演化
 description: 将 Adobe Analytics 数据转换为 Customer Journey Analytics 数据的步骤
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: 264b5a3d3793ab6531f570d83cbd4fd96bfbd67a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1492'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Adobe Analytics 的演变
+# Adobe Analytics 的演化
 
 随着贵组织不断发展使用Customer Journey Analytics，请探索这些步骤以准备数据并了解这两种技术之间的关键差异。 本文针对管理员受众。
 
@@ -55,7 +55,7 @@ ht-degree: 97%
 
 Adobe 发布了](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html?lang=zh-Hans)营销渠道实施的[最新先进实践。这些最新的推荐可帮助您用 Attribution IQ 充分利用 Adobe Analytics 中已有的功能。他们还将帮助您在过渡到 Customer Journey Analytics 时取得成功。
 
-随着 [派生字段](../data-views/derived-fields/derived-fields.md) 作为Customer Journey Analytics数据视图的一部分，营销渠道还可通过以下方式以无损性和追溯性的方式受支持 [“营销渠道”功能模板](../data-views/derived-fields/derived-fields.md#function-templates).
+随着作为 Customer Journey Analytics 数据视图的一部分引入[派生字段](../data-views/derived-fields/derived-fields.md)，还使用[营销渠道功能模板](../data-views/derived-fields/derived-fields.md#function-templates)以非破坏并可追溯的方式支持营销渠道。
 
 ### 4. 决定使用 Analytics Source Connector 还是 Experience Platform SDK {#connector-vs-sdk}
 
