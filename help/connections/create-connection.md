@@ -4,9 +4,9 @@ description: 描述如何在 Customer Journey Analytics 中创建与 Platform �
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: cc12f77d3a0cb9b27a5d0c6a92c35faf2b6e6e35
 workflow-type: tm+mt
-source-wordcount: '2629'
+source-wordcount: '2630'
 ht-degree: 100%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 100%
 
 >[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
 
->[!IMPORTANT]
->
->您必须拥有&#x200B;**选择**&#x200B;包才能将无限数量的数据集添加到连接中。**基础**&#x200B;包仅限于一个数据集。如果您不确定您拥有的 Customer Journey Analytics 包，请联系您的管理员。&#x200B;
+## 先决条件
+
+您必须拥有&#x200B;**选择**&#x200B;包才能将无限数量的数据集添加到连接中。**基础**&#x200B;包仅限于一个数据集。如果您不确定您拥有的 Customer Journey Analytics 包，请联系您的管理员。&#x200B;
 
 ## 创建和配置连接 {#create-connection}
 
