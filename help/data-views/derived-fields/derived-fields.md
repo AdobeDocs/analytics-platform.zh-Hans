@@ -4,7 +4,7 @@ description: 派生字段通过一组可用函数和函数模板指定对架构�
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: bd017810cb0f7813bdada5e3e951b0f6d5b768e4
+source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
 workflow-type: tm+mt
 source-wordcount: '4348'
 ht-degree: 15%
@@ -18,11 +18,11 @@ ht-degree: 15%
 
 与在Customer Journey Analytics之外的其他位置转换或处理数据相比，派生字段可以节省大量时间和精力。 例如 [数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)， [数据Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)，或在您自己的提取转换加载(ETL)/提取加载转换(ELT)进程中。
 
-派生字段定义于 [数据视图](../data-views.md)基于一组定义为规则的函数，并应用于可用的标准和/或架构字段。
+派生字段可在以下位置定义： [数据视图](../data-views.md)基于一组定义为规则的函数，并应用于可用的标准和/或架构字段。
 
 示例用例包括：
 
-- 定义派生的“页面名称”字段，该字段可以更正不正确的收集页面名称值以更正页面名称值。
+- 定义派生的“页面名称”字段，该字段可更正不正确收集的页面名称值以更正页面名称值。
 
 - 定义派生的营销渠道字段，以根据一个或多个条件（例如URL参数、页面URL、页面名称）确定正确的营销渠道。
 
@@ -30,14 +30,14 @@ ht-degree: 15%
 
 创建或编辑派生字段时，使用派生字段界面。
 
-![派生字段对话框屏幕快照](assets/derived-field-dialog.png)
+![派生字段对话框屏幕截图](assets/derived-field-dialog.png)
 
 
 |  | 名称 | 描述 |
 |---------|----------|--------|
-| 1 | **选择器** | 您可以使用选择器区域选择您的函数、函数模板、架构字段或标准字段并将其拖放到规则生成器中。 <br/>使用下拉菜单在以下内容之间进行选择： <br/>![函数](assets/Smock_Function_18_N.svg) [!UICONTROL 函数]  — 列表可用 [函数](#function-reference)， </br>![“功能模板”图标](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL 函数模板]  — 列表可用 [函数模板](#function-templates)， <br/>![架构字段图标](assets/Smock_Folder_18_N.svg)  [!UICONTROL 架构字段]  — 列出数据集类别（事件、个人资料、查找）中可用的字段和以前定义的派生字段，以及 <br/>![“标准字段”图标](assets/Smock_DragHandle_18_N.svg) [!UICONTROL 标准字段]  — 标准可用字段（如Platform数据集ID）。 选择器中只显示字符串和数字标准字段。 如果函数支持其他数据类型，则可以为规则界面中的值或字段选择具有这些其他数据类型的标准字段。<br/>您可以使用以下内容搜索功能、功能模板、架构和标准字段 ![“搜索”图标](assets/Smock_Search_18_N.svg) 搜索框。 <br/>您可以通过选择来过滤所选对象列表 ![过滤器图标](assets/Smock_Filter_18_N.svg) 在中筛选和指定筛选器 [!UICONTROL 字段过滤条件] 对话框。 您可以使用轻松删除过滤器 ![“关闭”图标](assets/CrossSize75.svg) 每个过滤器的。 |
-| 2 | **规则生成器** | 可使用一个或多个规则按顺序构建派生字段。 规则是函数的特定实现，因此始终只与一个函数关联。 通过将函数拖放到规则生成器中来创建规则。 函数类型确定规则的接口。<br/>请参阅 [规则界面](#rule-interface) 了解更多信息。 <br/>您可以在规则生成器中已可用的规则的开头、结尾或之间插入函数。 规则生成器中的最后一个规则确定派生字段的最终输出。 |
-| 3 | **[!UICONTROL **&#x200B;字段设置&#x200B;**]** | 您可以命名和描述派生字段，并检查其字段类型。 |
+| 1 | **选择器** | 使用选择器区域选择您的函数、函数模板、架构字段或标准字段并将它们拖放到规则生成器中。 <br/>使用下拉菜单选择： <br/>![函数](assets/Smock_Function_18_N.svg) [!UICONTROL 函数]  — 列表可用 [函数](#function-reference)， </br>![“功能模板”图标](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL 函数模板]  — 列表可用 [函数模板](#function-templates)， <br/>![架构字段图标](assets/Smock_Folder_18_N.svg)  [!UICONTROL 架构字段]  — 列出数据集类别（事件、个人资料、查询）中可用的字段和以前定义的派生字段，以及 <br/>![“标准字段”图标](assets/Smock_DragHandle_18_N.svg) [!UICONTROL 标准字段]  — 标准可用字段（如Platform数据集ID）。 选择器中只显示字符串和数字标准字段。 如果函数支持其他数据类型，则可以为规则界面中的值或字段选择具有这些其他数据类型的标准字段。<br/>您可以使用以下搜索功能、功能模板、架构和标准字段 ![“搜索”图标](assets/Smock_Search_18_N.svg) 搜索框。 <br/>可以通过选择来过滤所选对象列表 ![过滤器图标](assets/Smock_Filter_18_N.svg) 在中筛选和指定筛选器 [!UICONTROL 字段过滤条件] 对话框。 您可以使用轻松删除过滤器 ![“关闭”图标](assets/CrossSize75.svg) 用于每个过滤器。 |
+| 2 | **规则生成器** | 您可以使用一个或多个规则按顺序构建派生字段。 规则是函数的特定实现，因此始终只与一个函数关联。 通过将函数拖放到规则生成器中来创建规则。 函数类型确定规则的接口。<br/>请参阅 [规则界面](#rule-interface) 以了解更多信息。 <br/>您可以在规则生成器中已存在的规则的开始、结束或之间插入函数。 规则生成器中的最后一个规则可确定派生字段的最终输出。 |
+| 3 | **[!UICONTROL **&#x200B;字段设置&#x200B;**]** | 您可以命名和描述派生字段并检查其字段类型。 |
 | 4 | **[!UICONTROL **&#x200B;最终输出&#x200B;**]** | 此区域根据过去30天的数据以及您在规则生成器中对派生字段所做的更改，显示输出值的动态更新预览。 |
 
 {style="table-layout:auto"}
@@ -49,7 +49,7 @@ ht-degree: 15%
 1. 选择最能描述您尝试创建的字段类型的模板。
 2. 选择 **[!UICONTROL **&#x200B;选择&#x200B;**]** 按钮以继续。
 
-派生的字段对话框中填充了所选字段类型所需的或有用的规则（和函数）。 参见 [函数模板](#function-templates) 以了解有关可用模板的详细信息。
+派生的字段对话框中填充了所选字段类型所需的或有用的规则（和函数）。 请参阅 [函数模板](#function-templates) 以了解有关可用模板的详细信息。
 
 ## 规则界面
 
@@ -60,21 +60,21 @@ ht-degree: 15%
 |  | 名称 | 描述 |
 |---------|----------|--------|
 | A | **规则名称** | 默认情况下，规则名称为 **规则X** （X表示序列号）。 要编辑规则的名称，请选择其名称，然后键入新名称，例如 `Query Parameter`. |
-| B | **函数名称** | 规则的选定函数名称，例如 [!UICONTROL URL分析]. 当函数是函数序列中的最后一个并确定最终输出值时，函数名称后面跟有 [!UICONTROL  — 最终输出]例如 [!UICONTROL URL分析 — 最终输出]. <br/>要显示包含函数详细信息的弹出窗口，请选择 ![“帮助”图标](assets/Smock_HelpOutline_18_N.svg). |
-| C | **规则描述** | 您可以选择向规则添加描述。<br/>选择 ![“更多”图标](assets/More.svg)，然后选择 **[!UICONTROL **&#x200B;添加描述&#x200B;**]** 添加描述或 **[!UICONTROL **&#x200B;编辑描述&#x200B;**]** 以编辑现有描述。<br/>使用编辑器输入说明。 您可以使用工具栏设置文本格式（使用样式选择器、粗体、斜体、下划线、右、左、居中、颜色、数字列表、项目符号列表）并向外部信息添加链接。 <br/>要完成编辑说明，请单击编辑器外部的。 |
-| D | **功能区域** | 定义函数的逻辑。 接口取决于函数的类型。 的下拉列表 [!UICONTROL 字段] 或 [!UICONTROL 值] 根据函数期望的输入类型，显示所有类别的可用字段（规则、标准字段、字段）。 参见 [函数引用](#function-reference) 每个受支持功能的详细信息。 |
+| B | **函数名称** | 规则的选定函数名称，例如 [!UICONTROL URL解析]. 当函数是函数序列中的最后一个并确定最终输出值时，函数名称后面将跟有 [!UICONTROL  — 最终输出]例如 [!UICONTROL URL分析 — 最终输出]. <br/>要显示包含函数详细信息的弹出窗口，请选择 ![“帮助”图标](assets/Smock_HelpOutline_18_N.svg). |
+| C | **规则描述** | 您可以选择向规则添加说明。<br/>选择 ![“更多”图标](assets/More.svg)，然后选择 **[!UICONTROL **&#x200B;添加说明&#x200B;**]** 添加说明或 **[!UICONTROL **&#x200B;编辑描述&#x200B;**]** 编辑现有描述。<br/>使用编辑器输入说明。 您可以使用工具栏设置文本格式（使用样式选择器、粗体、斜体、下划线、右、左、居中、颜色、数字列表、项目符号列表）并向外部信息添加链接。 <br/>要完成编辑说明，请单击编辑器外部的。 |
+| D | **功能区域** | 定义函数的逻辑。 接口取决于函数的类型。 的下拉菜单 [!UICONTROL 字段] 或 [!UICONTROL 值] 根据函数期望的输入类型，显示所有类别的可用字段（规则、标准字段、字段）。 请参阅 [函数引用](#function-reference) 每个受支持功能的详细信息。 |
 
 {style="table-layout:auto"}
 
 ## 创建派生字段
 
-1. 选择现有数据视图或创建数据视图。 参见 [数据视图](../data-views.md) 了解更多信息。
+1. 选择现有数据视图或创建数据视图。 请参阅 [数据视图](../data-views.md) 以了解更多信息。
 
-2. 选择 **[!UICONTROL **&#x200B;组件&#x200B;**]** 选项卡。
+2. 选择 **[!UICONTROL **&#x200B;组件&#x200B;**]** 数据视图的选项卡。
 
 3. 选择 **[!UICONTROL **&#x200B;创建派生字段&#x200B;**]** 从左边栏开始。
 
-4. 要定义派生字段，请使用 [!UICONTROL 创建派生字段] 界面。 参见 [派生字段界面](#derived-field-interface).
+4. 要定义派生字段，请使用 [!UICONTROL 创建派生字段] 界面。 请参阅 [派生字段界面](#derived-field-interface).
 
    要保存新的派生字段，请选择 **[!UICONTROL **&#x200B;保存&#x200B;**]**.
 
@@ -83,37 +83,37 @@ ht-degree: 15%
 
 ## 编辑派生字段
 
-1. 选择现有数据视图。 参见 [数据视图](../data-views.md) 了解更多信息。
+1. 选择现有数据视图。 请参阅 [数据视图](../data-views.md) 以了解更多信息。
 
-2. 选择 **[!UICONTROL **&#x200B;组件&#x200B;**]** 选项卡。
+2. 选择 **[!UICONTROL **&#x200B;组件&#x200B;**]** 数据视图的选项卡。
 
-3. 选择 **[!UICONTROL **&#x200B;架构字段&#x200B;**]** 在中选项卡 [!UICONTROL 连接] 左侧的窗格。
+3. 选择 **[!UICONTROL **&#x200B;架构字段&#x200B;**]** 选项卡 [!UICONTROL 连接] 窗格在左边。
 
 4. 选择 **[!UICONTROL **&#x200B;派生字段>**]** 容器。
 
 5. 将鼠标悬停在要编辑的派生字段上，然后选择 ![“编辑”图标](assets/Smock_Edit_18_N.svg).
 
-6. 要编辑派生字段，请使用 [!UICONTROL 编辑派生字段] 界面。 参见 [派生字段界面](#derived-field-interface).
+6. 要编辑派生字段，请使用 [!UICONTROL 编辑派生字段] 界面。 请参阅 [派生字段界面](#derived-field-interface).
 
    - 选择 **[!UICONTROL **&#x200B;保存&#x200B;**]** 以保存更新的派生字段。
 
    - 选择 **[!UICONTROL **&#x200B;取消&#x200B;**]** 以取消对派生字段所做的任何更改。
 
-   - 选择 **[!UICONTROL **&#x200B;另存为&#x200B;**]** 将派生字段另存为新派生字段。 新派生字段的名称与原始编辑的派生字段的名称相同， `(copy)` 已添加到其中。
+   - 选择 **[!UICONTROL **&#x200B;另存为&#x200B;**]** 将派生字段另存为新的派生字段。 新的派生字段与原始编辑的派生字段具有相同的名称 `(copy)` 已添加到其中。
 
 ## 删除派生字段
 
-1. 选择现有数据视图。 参见 [数据视图](../data-views.md) 了解更多信息。
+1. 选择现有数据视图。 请参阅 [数据视图](../data-views.md) 以了解更多信息。
 
-2. 选择 **[!UICONTROL **&#x200B;组件&#x200B;**]** 选项卡。
+2. 选择 **[!UICONTROL **&#x200B;组件&#x200B;**]** 数据视图的选项卡。
 
-3. 选择 **[!UICONTROL **&#x200B;架构字段&#x200B;**]** 按Tab键进入 [!UICONTROL 连接] 窗格。
+3. 选择 **[!UICONTROL **&#x200B;架构字段&#x200B;**]** tab in [!UICONTROL 连接] 窗格。
 
 4. 选择 **[!UICONTROL **&#x200B;派生字段>**]** 容器。
 
 5. 将鼠标悬停在要删除的派生字段上，然后选择 ![“编辑”图标](assets/Smock_Edit_18_N.svg).
 
-6. 使用中 **[!UICONTROL **&#x200B;编辑派生字段&#x200B;**]** 界面中，选择删除。
+6. 使用中 **[!UICONTROL **&#x200B;编辑派生字段&#x200B;**]** 界面上，选择删除。
 
    A [!UICONTROL 删除组件] 对话框要求您确认删除。 考虑对数据视图外部的派生字段可能存在的任何外部引用。
 
@@ -121,22 +121,22 @@ ht-degree: 15%
 
 >[!NOTE]
 >
->派生字段在Customer Journey Analytics中的连接级别进行管理。 对与该连接关联的任何数据视图中的派生字段所做的任何更改将应用于所有这些关联的数据视图。
+>派生字段在Customer Journey Analytics中的连接级别进行管理。 对与该连接关联的任何数据视图中派生字段所做的任何更改将应用于所有这些关联的数据视图。
 
 
 
 ## 函数模板
 
-要快速为特定用例创建派生字段，可使用函数模板。 这些函数模板可以从派生字段界面中的选择器区域访问，或者在首次使用时显示在中 [!UICONTROL 从字段模板开始] 向导。
+要快速为特定用例创建派生字段，可以使用函数模板。 这些函数模板可以从派生字段界面的选择器区域访问，或者在首次使用时显示在中 [!UICONTROL 从字段模板开始] 向导。
 
 
 ### 营销渠道
 
-此模板配置为使用 [Url分析](#dnl-url-parse) 和 [案例时间](#dnl-case-when) 函数多次以从URL获取适当的值。 然后，对这些值应用逻辑以将URL与特定营销渠道关联。
+此模板配置为使用 [Url分析](#dnl-url-parse) 和 [案例条件](#dnl-case-when) 多次函数，以从URL中获取适当的值。 然后，对这些值应用逻辑以将URL与特定营销渠道关联。
 
 +++ 详细信息
 
-要使用模板，必须为作为模板中规则的一部分列出的每个函数指定正确的参数。 参见 [函数引用](#function-reference) 了解更多信息。
+要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 请参阅 [函数引用](#function-reference) 以了解更多信息。
 
 ![营销渠道模板规则生成器的屏幕截图](assets/marketing-channel-template.png)
 
@@ -155,9 +155,11 @@ ht-degree: 15%
 
 ## 函数引用
 
-对于每个支持的功能，请查找以下详细信息：
+{{select-package}}
 
-- 规格：
+对于每个支持的功能，请在下面查找有关以下内容的详细信息：
+
+- 规范：
    - 输入数据类型：支持的数据类型，
    - 输入：输入的可能值，
    - 包含的运算符：此函数支持的运算符（如果有）、
@@ -176,7 +178,7 @@ ht-degree: 15%
 
 ### 拼接
 
-将字段值合并到一个具有定义的分隔符的新派生字段中。
+使用定义的分隔符将字段值组合到一个新的派生字段中。
 
 +++ 详细信息
 
@@ -191,14 +193,14 @@ ht-degree: 15%
 
 ## 用例 {#concatenate-uc}
 
-您当前收集起源机场代码和目的地机场代码作为单独的字段。 您希望取用这两个字段并将它们组合为一个维度，该维度由连字符(-)分隔。 因此，您可以分析起点和目的地的组合，以确定预订的排名最前的路由。
+您当前收集起源机场代码和目的地机场代码作为单独的字段。 您希望将这两个字段合并为一个维度，并以连字符(-)分隔。 因此，您可以分析来源和目的地的组合，以确定预订的排名最前的路由。
 
 假设：
 
 - 原始值和目标值收集在同一表中的单独字段中。
-- 用户确定在值之间使用分隔符“ — ”。
+- 用户决定在值之间使用分隔符“ — ”。
 
-想象一下发生以下预订的情况：
+想象一下会发生以下预订：
 
 - 客户ABC123预订盐湖城(SLC)和奥兰多(MCO)之间的航班
 - 客户ABC456预订盐湖城(SLC)和洛杉矶(LAX)之间的航班
@@ -218,7 +220,7 @@ ht-degree: 15%
 {style="table-layout:auto"}
 
 
-### 在此之前的数据 {#concatenate-uc-databefore}
+### 数据早于 {#concatenate-uc-databefore}
 
 | Origin | 目标 |
 |----|---:|
@@ -232,7 +234,7 @@ ht-degree: 15%
 
 ### 派生字段 {#concatenate-derivedfield}
 
-您定义新的 [!UICONTROL 来源 — 目标] 派生字段。 您使用 [!UICONTROL 连接] 函数来定义用于连接 [!UICONTROL 原始] 和 [!UICONTROL 目标] 字段使用 `-` [!UICONTROL 分隔符].
+您定义新的 [!UICONTROL 来源 — 目标] 派生字段。 您使用 [!UICONTROL 拼接] 函数来定义用于连接的规则 [!UICONTROL 原有] 和 [!UICONTROL 目标] 字段使用 `-` [!UICONTROL 分隔符].
 
 ![连接规则的屏幕截图](assets/concatenate.png)
 
@@ -254,7 +256,7 @@ ht-degree: 15%
 
 ### Case When
 
-根据一个或多个字段中的定义条件应用条件。 然后，这些标准用于根据条件的顺序定义新派生字段中的值。
+根据一个或多个字段中的定义条件应用条件。 然后，使用这些标准根据条件的顺序定义新派生字段中的值。
 
 +++ 详细信息
 
@@ -262,7 +264,7 @@ ht-degree: 15%
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 如果]， [!UICONTROL Else If] 容器：</p><ul><li>[!UICONTROL 值]</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul><li>[!UICONTROL 标准] （根据选定的值类型，请参阅包含的运算符）</li></ul></li><li>[!UICONTROL 然后将值设置为]， [!UICONTROL 否则，将值设置为]：</p><ul><li>[!UICONTROL 值]</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul></ul></li></ul> | <p>字符串</p><ul><li>等于</li><li>等于任何词语</li><li>包含该短语</li><li>包含任何词语</li><li>包含所有词语</li><li>开始于</li><li>以任意术语开头</li><li>结束于</li><li>以任意术语结尾</li><li>不等于</li><li>不等于任何词语</li><li>不包含该短语</li><li>不包含任何词语</li><li>不包含所有词语</li><li>未始于</li><li>不以任何术语开头</li><li>未止于</li><li>未以任何术语结尾</li><li>已设置</li><li>未设置</li></ul><p>数值</p><ul><li>等于</li><li>不等于</li><li>高于</li><li>高于或等于</li><li>低于</li><li>低于或等于</li><li>已设置</li><li>未设置</li></ul><p>日期</p><ul><li>等于</li><li>不等于</li><li>晚于</li><li>晚于或等于</li><li>早于</li><li>早于或等于</li><li>已设置</li><li>未设置</li></ul> | <ul><li>每个派生字段5个函数</li><li>每个派生字段200个运算符。 例如，“反向链接域包含google”就是一个运算符。 </li></ul> | <p>新建派生字段</p> |
+| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 如果]， [!UICONTROL 否则，如果] 容器：</p><ul><li>[!UICONTROL 值]</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul><li>[!UICONTROL 标准] （请参阅包含的运算符，基于选定的值类型）</li></ul></li><li>[!UICONTROL 然后将值设置为]， [!UICONTROL 否则，将值设置为]：</p><ul><li>[!UICONTROL 值]</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul></ul></li></ul> | <p>字符串</p><ul><li>等于</li><li>等于任何词语</li><li>包含该短语</li><li>包含任何词语</li><li>包含所有词语</li><li>开始于</li><li>以任意术语开头</li><li>结束于</li><li>以任意术语结束</li><li>不等于</li><li>不等于任何词语</li><li>不包含该短语</li><li>不包含任何词语</li><li>不包含所有词语</li><li>未始于</li><li>不以任何术语开头</li><li>未止于</li><li>未以任何术语结尾</li><li>已设置</li><li>未设置</li></ul><p>数值</p><ul><li>等于</li><li>不等于</li><li>高于</li><li>高于或等于</li><li>低于</li><li>低于或等于</li><li>已设置</li><li>未设置</li></ul><p>日期</p><ul><li>等于</li><li>不等于</li><li>晚于</li><li>晚于或等于</li><li>早于</li><li>早于或等于</li><li>已设置</li><li>未设置</li></ul> | <ul><li>每个派生字段5个函数</li><li>每个派生字段200个运算符。 例如，单个运算符为“反向链接域包含google”。 </li></ul> | <p>新建派生字段</p> |
 
 {style="table-layout:auto"}
 
@@ -270,12 +272,12 @@ ht-degree: 15%
 
 您需要定义规则以标识各种营销渠道，方法是应用层叠逻辑将营销渠道字段设置为适当的值：
 
-- 如果反向链接来自搜索引擎，并且页面具有一个查询字符串值，其中 `cid` 包含 `ps_`，则营销渠道应标识为 [!DNL *付费搜索*].
-- 如果反向链接来自搜索引擎，而页面没有查询字符串 `cid`，则营销渠道应标识为 [!DNL *免费搜索*].
-- 如果页面具有查询字符串值，其中 `cid` 包含 `em_`，则营销渠道应标识为 [!DNL *电子邮件*].
-- 如果页面具有查询字符串值，其中 `cid` 包含 `ds_`，则营销渠道应标识为 [!DNL *显示广告*].
-- 如果页面具有查询字符串值，其中 `cid` 包含 `so_`，则营销渠道应标识为 [!DNL *付费社交*].
-- 如果反向链接来自的反向链接域 [!DNL twitter.com]， [!DNL facebook.com]， [!DNL linkedin.com]，或 [!DNL tiktok.com]，则营销渠道应标识为 [!DNL *自然社交*].
+- 如果反向链接来自搜索引擎且页面具有一个查询字符串值，其中 `cid` 包含 `ps_`，营销渠道应标识为 [!DNL *付费搜索*].
+- 如果反向链接来自搜索引擎且页面没有查询字符串 `cid`，营销渠道应标识为 [!DNL *免费搜索*].
+- 如果页面具有查询字符串值，其中 `cid` 包含 `em_`，营销渠道应标识为 [!DNL *电子邮件*].
+- 如果页面具有查询字符串值，其中 `cid` 包含 `ds_`，营销渠道应标识为 [!DNL *显示广告*].
+- 如果页面具有查询字符串值，其中 `cid` 包含 `so_`，营销渠道应标识为 [!DNL *付费社交*].
+- 如果反向链接来自的反向链接域 [!DNL twitter.com]， [!DNL facebook.com]， [!DNL linkedin.com]，或 [!DNL tiktok.com]，营销渠道应标识为 [!DNL *自然社交*].
 - 如果上述规则都不匹配，则应将营销渠道标识为 [!DNL *其他反向链接*].
 
 如果您的站点收到以下示例事件，包含 [!UICONTROL 反向链接] 和 [!UICONTROL 页面URL]，这些事件的标识如下：
@@ -291,7 +293,7 @@ ht-degree: 15%
 
 {style="table-layout:auto"}
 
-### 在此之前的数据 {#casewhen-uc1-databefore}
+### 数据早于 {#casewhen-uc1-databefore}
 
 | [!DNL Referrer] | [!DNL Page URL] |
 |----|----|
@@ -306,9 +308,9 @@ ht-degree: 15%
 
 ### 派生字段 {#casewhen-uc1-derivedfield}
 
-您定义新的 `Marketing Channel` 派生字段。 您使用 [!UICONTROL 大小写条件] 函数定义规则，这些规则根据两者的现有值为创建值 `Page URL` 和 `Referring URL` 字段。
+您定义新的 `Marketing Channel` 派生字段。 您使用 [!UICONTROL 案例条件] 函数定义规则，这些规则根据两者的现有值为创建值 `Page URL` 和 `Referring URL` 字段。
 
-注意函数的用法 [!UICONTROL URL分析] 定义规则以获取值 `Page Url` 和 `Referring Url` 早于 [!UICONTROL 大小写条件] 应用规则。
+注意函数的用法 [!UICONTROL URL解析] 定义规则以获取值 `Page Url` 和 `Referring Url` 早于 [!UICONTROL 案例条件] 应用规则。
 
 ![规则1时案例的屏幕截图](assets/case-when-1.png)
 
@@ -328,7 +330,7 @@ ht-degree: 15%
 
 ## 用例2 {#casewhen-uc2}
 
-您已收集了以下网站中搜索的多个不同变体： [!DNL Product Finding Methods] 维度。 要了解搜索与浏览的整体性能，您必须花费大量时间手动组合结果。
+您已收集了您的网站中搜索的多个不同变体 [!DNL Product Finding Methods] 维度。 要了解搜索与浏览的整体性能，您必须花费大量时间手动组合结果。
 
 您的网站为收集以下值 [!DNL Product Finding Methods] 维度。 最后，所有这些值都表示搜索。
 
@@ -344,7 +346,7 @@ ht-degree: 15%
 {style="table-layout:auto"}
 
 
-### 在此之前的数据 {#casewhen-uc2-databefore}
+### 数据早于 {#casewhen-uc2-databefore}
 
 | [!DNL Product Finding Methods] |
 |----|
@@ -362,7 +364,7 @@ ht-degree: 15%
 
 ### 派生字段 {#casewhen-uc2-derivedfield}
 
-您定义 `Product Finding Methods (new)` 派生字段。 您可以创建以下内容 [!UICONTROL 大小写条件] 规则生成器的规则。 这些规则将逻辑应用于旧版本的所有可能变体 [!UICONTROL 产品查找方法] 字段值 `search` 和 `browse` 使用 [!UICONTROL 包含短语] 标准。
+您定义 `Product Finding Methods (new)` 派生字段。 您可以创建以下内容 [!UICONTROL 案例条件] 规则生成器中的规则。 这些规则将逻辑应用于旧版本的所有可能变体 [!UICONTROL 产品查找方法] 字段值 `search` 和 `browse` 使用 [!UICONTROL 包含短语] 标准。
 
 ![规则2时案例的屏幕截图](assets/case-when-2.png)
 
@@ -385,18 +387,18 @@ ht-degree: 15%
 
 ## 用例3 {#casewhen-uc3}
 
-作为一家旅游公司，您想要为预订的旅行报告分段旅行时长。
+作为一家旅游公司，您想要为预订的旅行设置分段旅行持续时间，以便报告分段旅行时长。
 
 假设：
 
-- 组织正在将行程持续时间收集到一个数值字段中。
-- 他们希望将1-3天的持续时间存储到一个名为&#39;的存储段中。[!DNL short trip]‘
-- 他们希望将4-7天的持续时间存储到一个名为&#39;的存储桶中。[!DNL medium trip]‘
-- 他们希望将8天以上的持续时间存储到一个名为“[!DNL long trip]‘
+- 组织正在将行程持续时间收集到数值字段中。
+- 他们希望将1-3天的持续时间存储到名为&#39;的存储桶中[!DNL short trip]’
+- 他们希望将4-7天的持续时间存储到名为&#39;的存储桶中。[!DNL medium trip]’
+- 他们希望将8天以上的持续时间存储到名为&#39;的存储桶中[!DNL long trip]’
 - 预订了132次旅行，为期1天
 - 预订了110次旅行，为期2天
 - 预订了105次旅行，为期3天
-- 预订了99次旅行，为期4天
+- 预订了99次4天旅行
 - 预订了92次旅行，为期5天
 - 预订了85次旅行，为期6天
 - 预订了82次旅行，为期7天
@@ -416,7 +418,7 @@ ht-degree: 15%
 
 {style="table-layout:auto"}
 
-### 在此之前的数据 {#casewhen-uc3-databefore}
+### 数据早于 {#casewhen-uc3-databefore}
 
 | [!DNL Trip Duration] |
 |---:|
@@ -435,7 +437,7 @@ ht-degree: 15%
 
 ### 派生字段 {#casewhen-uc3-derivedfield}
 
-您定义 `Trip Duration (bucketed)` 派生字段。 您可以创建以下内容 [!UICONTROL 大小写条件] 规则生成器的规则。 此规则将逻辑应用于存储旧的 [!UICONTROL 行程持续时间] 字段值分为三个值： `short trip`， `medium  trip`、和 `long trip`.
+您定义 `Trip Duration (bucketed)` 派生字段。 您可以创建以下内容 [!UICONTROL 案例条件] 规则生成器的规则。 此规则将逻辑应用于存储旧的 [!UICONTROL 行程持续时间] 字段值分为三个值： `short trip`， `medium  trip`、和 `long trip`.
 
 ![规则3时案例的屏幕截图](assets/case-when-3.png)
 
@@ -460,7 +462,7 @@ ht-degree: 15%
 
 ## 更多信息
 
-Customer Journey Analytics使用嵌套容器结构，该结构以Adobe Experience Platform的模式建模。 [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans) （体验数据模型）。 参见 [容器](../create-dataview.md#containers) 和 [筛选容器](../../components/filters/filters-overview.md#filter-containers) 了解更多背景信息。 虽然此容器模型本质上很灵活，但在使用规则生成器时施加了一些限制。
+Customer Journey Analytics使用嵌套容器结构，按照Adobe Experience Platform的样式建模 [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans) （体验数据模型）。 请参阅 [容器](../create-dataview.md#containers) 和 [过滤器容器](../../components/filters/filters-overview.md#filter-containers) 了解更多背景信息。 此容器模型虽然本质上较为灵活，但在使用规则生成器时施加了一些限制。
 
 Customer Journey Analytics使用以下默认容器模型：
 
@@ -468,13 +470,13 @@ Customer Journey Analytics使用以下默认容器模型：
 <img src="./assets/containers.png" width="50%" valign="middle">
 </p>
 
-以下限制条件适用，并在以下情况下强制执行 *选择* 和 *设置* 值。
+以下约束适用，并且强制执行 *选择* 和 *设置* 值。
 
 |  | 约束 |
 |:---:|----|
-| **<span style='color: red'>A</span>** | 您的价值 *选择* 在同一个 [!UICONTROL 如果]， [!UICONTROL Else If] 构造(使用 [!UICONTROL 和] 或 [!UICONTROL 或])，并且可以是任何类型（字符串） ![字符串](assets/Smock_ABC_18_N.svg)，数值 ![数值](assets/Smock_123_18_N.svg)，等等)。 <br/>![依赖项A屏幕截图](assets/dependency-a.png) |
-| **<span style='color: red'>B</span>** | 您的所有值 *设置* 跨规则必须来自同一容器并具有同一类型或同一类型的派生值。 <br/> ![依赖项B的屏幕截图](assets/dependency-b.png) |
-| **<span style='color: blue'>C</span>** | 您的值 *选择* 跨越 [!UICONTROL 如果]， [!UICONTROL Else If] 规则中的构造是 *非* 必须源自相同的容器，并且 *非* 必须是同一类型。 <br/> ![依赖项C屏幕截图](assets/dependency-c.png) |
+| **<span style='color: red'>A</span>** | 对您的评价 *选择* 在同一个 [!UICONTROL 如果]， [!UICONTROL 否则，如果] 构造(使用 [!UICONTROL 和] 或 [!UICONTROL 或])，并且可以是任何类型（字符串） ![字符串](assets/Smock_ABC_18_N.svg)，数值 ![数值](assets/Smock_123_18_N.svg)，等等)。 <br/>![依赖项A的屏幕截图](assets/dependency-a.png) |
+| **<span style='color: red'>B</span>** | 您所有的值 *设置* 跨规则必须来自同一容器并具有相同类型或相同类型的派生值。 <br/> ![依赖项B的屏幕截图](assets/dependency-b.png) |
+| **<span style='color: blue'>C</span>** | 您的值 *选择* 跨 [!UICONTROL 如果]， [!UICONTROL 否则，如果] 规则中的构造 *非* 必须来自同一容器，并且 *非* 必须是同一种类型。 <br/> ![依赖项C屏幕截图](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
 
@@ -485,7 +487,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 ### 查找和替换
 
-查找选定字段中的所有值，并在新的派生字段中将这些值替换为不同的值。
+查找选定字段中的所有值，并在新的派生字段中用不同的值替换这些值。
 
 +++ 详细信息
 
@@ -500,7 +502,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 ## 用例 {#findreplace-uc}
 
-例如，您收到的外部营销渠道报表的某些值格式不正确 `email%20 marketing` 而不是 `email marketing`. 这些格式错误的值会割裂您的报表，并使查看电子邮件的性能变得更加困难。 要替换的 `email%20marketing` 替换为 `email marketing`.
+例如，您收到的外部营销渠道报表值格式不正确 `email%20 marketing` 而不是 `email marketing`. 这些格式错误的值会断开您的报表，并使得查看电子邮件执行情况的难度增加。 要替换 `email%20marketing` 替换为 `email marketing`.
 
 **原始报告**
 
@@ -518,7 +520,7 @@ Customer Journey Analytics使用以下默认容器模型：
 | [!DNL email marketing] | 524 |
 
 
-### 在此之前的数据 {#findreplace-uc-databefore}
+### 数据早于 {#findreplace-uc-databefore}
 
 | [!DNL External Marketing] |
 |----|
@@ -534,7 +536,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 您定义 `Email Marketing (updated)` 派生字段。 您使用 [!UICONTROL 查找和替换] 函数来定义查找和替换所有出现的规则 `email%20marketing` 替换为 `email marketing`.
 
-![查找和替换规则的屏幕快照](assets/find-and-replace.png)
+![查找和替换规则的屏幕截图](assets/find-and-replace.png)
 
 ### 之后的数据 {#findreplace-uc-dataafter}
 
@@ -555,7 +557,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 ### 查询
 
-定义一组查找值，这些值将在新的派生字段中被相应值替换。
+定义由新派生字段中的相应值替换的一组查找值。
 
 +++ 详细信息
 
@@ -571,8 +573,8 @@ Customer Journey Analytics使用以下默认容器模型：
 
 ## 用例1 {#lookup-uc1}
 
-您的确有一个CSV文件，其中包含键列 `hotelID` 和一个或多个与关联的其他列 `hotelID`： `city`， `rooms`， `hotel name`.
-您正在收集 [!DNL Hotel ID] 但想要创建 [!DNL Hotel Name] 维度派生自 `hotelID` CSV文件。
+您的CSV文件确实包含键列 `hotelID` 以及与 `hotelID`： `city`， `rooms`， `hotel name`.
+您正在收集 [!DNL Hotel ID] 但想要创建 [!DNL Hotel Name] 维派生自 `hotelID` 在CSV文件中。
 
 **CSV文件结构和内容**
 
@@ -605,7 +607,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 {style="table-layout:auto"}
 
-### 在此之前的数据 {#lookup-uc1-databefore}
+### 数据早于 {#lookup-uc1-databefore}
 
 | [!DNL Hotel ID] |
 |----|
@@ -618,7 +620,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 ### 派生字段 {#lookup-uc1-derivedfield}
 
-您定义 `Hotel Name` 派生字段。 您使用 [!UICONTROL 查找] 函数来定义一个规则，您可以在其中查找 [!UICONTROL 酒店ID] 字段，并替换为新的值。
+您定义 `Hotel Name` 派生字段。 您使用 [!UICONTROL 查找] 函数来定义一个规则，您可以在其中查找 [!UICONTROL 酒店ID] 字段并使用新值替换。
 
 ![查找规则1的屏幕截图](assets/lookup-1.png)
 
@@ -635,9 +637,9 @@ Customer Journey Analytics使用以下默认容器模型：
 
 ## 用例2 {#lookup-uc2}
 
-您已收集了多个页面的URL而不是友好页面名称。 此混合值集合将破坏报表。
+您已收集了多个页面的URL，而不是友好页面名称。 此混合值集合将破坏报表。
 
-### 在此之前的数据 {#lookup-uc2-databefore}
+### 数据早于 {#lookup-uc2-databefore}
 
 | [!DNL Page Name] |
 |---|
@@ -653,7 +655,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 ### 派生字段 {#lookup-uc2-derivedfield}
 
-您定义 `Page Name (updated)` 派生字段。 您使用 [!UICONTROL 查找] 函数，定义可在其中查找现有值的规则 [!UICONTROL 页面名称] 字段和替换为更新的正确值。
+您定义 `Page Name (updated)` 派生字段。 您使用 [!UICONTROL 查找] 函数，定义可在其中查找现有值的规则 [!UICONTROL 页面名称] 字段并替换为更新的正确值。
 
 ![查找规则2的屏幕截图](assets/lookup-2.png)
 
@@ -689,9 +691,9 @@ Customer Journey Analytics使用以下默认容器模型：
 
 ## 用例 {#merge-fields-uc}
 
-您希望创建一个由页面名称字段和致电原因字段组成的新维度，以便跨渠道分析历程。
+您要创建一个由页面名称字段和致电原因字段组成的新维度，以便跨渠道分析历程。
 
-### 在此之前的数据 {#merge-fields-uc-databefore}
+### 数据早于 {#merge-fields-uc-databefore}
 
 | 页面名称 | 会话 | 访客 |
 |---|--:|--:|
@@ -703,17 +705,17 @@ Customer Journey Analytics使用以下默认容器模型：
 
 | 来电原因 | 会话 | 访客 |
 |---|--:|--:|
-| 关于我订单的问题 | 275 | 250 |
+| 有关我的订单的问题 | 275 | 250 |
 | 更改我的订单 | 150 | 145 |
-| 订购问题 | 100 | 95 |
+| 排序问题 | 100 | 95 |
 
 {style="table-layout:auto"}
 
 ### 派生字段 {#merge-fields-uc-derivedfield}
 
-您定义 `Cross Channel Interactions` 派生字段。 您使用 [!UICONTROL 合并字段] 函数来定义规则，以合并来自以下项的值： [!UICONTROL 页面名称] 字段和 [!UICONTROL 来电原因] 字段并将其存储在新的派生字段中。
+您定义 `Cross Channel Interactions` 派生字段。 您使用 [!UICONTROL 合并字段] 函数来定义规则，以合并来自 [!UICONTROL 页面名称] 字段和 [!UICONTROL 来电原因] 并将其存储在新的派生字段中。
 
-![“合并字段”规则的屏幕快照](assets/merge-fields.png)
+![合并字段规则的屏幕截图](assets/merge-fields.png)
 
 ### 之后的数据 {#merge-fields-uc-dataafter}
 
@@ -721,18 +723,18 @@ Customer Journey Analytics使用以下默认容器模型：
 |---|--:|--:|
 | home page | 500 | 250 |
 | 产品详细信息页面 | 300 | 200 |
-| 关于我订单的问题 | 275 | 250 |
+| 有关我的订单的问题 | 275 | 250 |
 | 帮助页面 | 250 | 200 |
 | 更改我的订单 | 150 | 145 |
-| 订购问题 | 100 | 95 |
+| 排序问题 | 100 | 95 |
 
 {style="table-layout:auto"}
 
 ## 更多信息 {#merge-fields-moreinfo}
 
-您必须在“合并字段”规则中选择相同类型的字段。 例如，如果您选择日期字段，则要合并的所有其他字段都必须是日期字段。
+您必须在合并字段规则中选择相同类型的字段。 例如，如果您选择日期字段，则要合并的所有其他字段都必须为日期字段。
 
-![合并字段约束屏幕截图](assets/merge-fields-constraint.png)
+![合并字段约束的屏幕截图](assets/merge-fields-constraint.png)
 
 +++
 
@@ -755,9 +757,9 @@ Customer Journey Analytics使用以下默认容器模型：
 
 ## 用例 {#regex-replace-uc}
 
-您希望获取URL的一个部分，并将其用作唯一页面标识符来分析流量。 您将使用 `[^/]+(?=/$|$)` 用于捕获URL结尾的正则表达式，并且 `$1` 作为输出模式。
+您希望获取URL的一个部分，并将其用作分析流量的唯一页面标识符。 您将使用 `[^/]+(?=/$|$)` 用于捕获URL结尾的正则表达式，以及 `$1` 作为输出模式。
 
-### 在此之前的数据 {#regex-replace-uc-databefore}
+### 数据早于 {#regex-replace-uc-databefore}
 
 | 页面 URL |
 |---|
@@ -772,7 +774,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 您创建 `Page Identifier` 派生字段。 您使用 [!UICONTROL 正则表达式替换] 函数来定义规则以替换 [!UICONTROL 反向链接URL] 字段使用 [!UICONTROL 正则表达式] 之 `[^/]+(?=/$|$)` 和 [!UICONTROL 输出格式] 之 `$1`.
 
-![Regex Replac规则的屏幕截图](assets/regex-replace.png)
+![Regex Replace规则的屏幕截图](assets/regex-replace.png)
 
 
 ### 之后的数据 {#regex-replace-uc-dataafter}
@@ -854,19 +856,19 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 您可以将语音应用程序响应收集到单个维度的分隔列表中。 您希望列表中的每个值在响应报表中都是唯一值。
 
-### 在此之前的数据 {#split-uc1-databefore}
+### 数据早于 {#split-uc1-databefore}
 
 | 语音应用程序响应 | 活动 |
 |---|--:|
-| 非常好，完全合理，会推荐给别人 | 1 |
-| 它很棒，有点令人困惑，会推荐给别人 | 1 |
-| 那不是很好，非常令人困惑，不会向别人推荐 | 1 |
+| 它非常棒，非常有意义，会推荐给其他人 | 1 |
+| 它很棒，有点混乱，会推荐给别人 | 1 |
+| 那不太好，很混乱，不会向别人推荐 | 1 |
 
 {style="table-layout:auto"}
 
 ### 派生字段 {#split-u1-derivedfield}
 
-您创建 `Responses` 派生字段。 您使用 [!UICONTROL SPLIT] 函数来定义规则以使用  [!UICONTROL 转换为数组] 方法转换以下位置的值： [!UICONTROL 语音应用程序响应] 字段使用 `,` 作为 [!UICONTROL 分隔符].
+您创建 `Responses` 派生字段。 您使用 [!UICONTROL SPLIT] 函数来定义使用  [!UICONTROL 转换为数组] 方法转换以下位置的值： [!UICONTROL 语音应用程序响应] 字段使用 `,` 作为 [!UICONTROL 分隔符].
 
 ![拆分规则1的屏幕截图](assets/split-1.png)
 
@@ -874,37 +876,37 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 | 响应 | 活动 |
 |---|--:|
-| 太棒了 | 2 |
+| 非常棒 | 2 |
 | 将推荐给其他人 | 2 |
-| 那可不怎么样 | 1 |
+| 不太好 | 1 |
 | 完全合理 | 1 |
 | 有点令人困惑 | 1 |
 | 非常令人困惑 | 1 |
-| 不会推荐给其他人 | 1 |
+| 不会向他人推荐 | 1 |
 
 {style="table-layout:auto"}
 
 ## 用例2 {#split-uc2}
 
-您可以将语音应用程序响应收集到单个维度的分隔列表中。 您希望将列表中第一个值的响应放入其自身的维度中。 您希望将列表中的最后一个值放入其自身的维度中。
+您可以将语音应用程序响应收集到单个维度的分隔列表中。 您希望将列表中第一个值的响应转换为其自身的维度。 您要将列表中的最后一个值放入其自身的维度中。
 
-### 在此之前的数据 {#split-uc2-databefore}
+### 数据早于 {#split-uc2-databefore}
 
 | 响应 | 活动 |
 |---|--:|
-| 非常好，完全合理，会推荐给别人 | 1 |
-| 它很棒，有点令人困惑，会推荐给别人 | 1 |
-| 那不是很好，非常令人困惑，不会向别人推荐 | 1 |
+| 非常棒，非常合理，会推荐给别人 | 1 |
+| 它很棒，有点混乱，会推荐给别人 | 1 |
+| 那不太好，很混乱，不会向别人推荐 | 1 |
 
 {style="table-layout:auto"}
 
 ### 派生字段 {#split-u2-derivedfield}
 
-您创建  `First Response` 派生字段。 您使用 [!UICONTROL SPLIT] 函数来定义一个规则，以从中获取第一个值。 [!UICONTROL 响应] 响应左侧的字段 `,` 作为分隔符。
+您创建  `First Response` 派生字段。 您使用 [!UICONTROL SPLIT] 函数来定义一个规则，以从中获取第一个值 [!UICONTROL 响应] 响应左侧的字段 `,` 作为分隔符。
 
 ![拆分规则 — 第一个值的屏幕截图](assets/split-2.png)
 
-您创建 `Second Response` 用于获取最后一个值的派生字段 [!UICONTROL 响应] 字段，方法是选择右侧的，选择1作为分隔符，选择1作为索引。
+您创建 `Second Response` 用于获取最后一个值的派生字段 [!UICONTROL 响应] 字段，其中选择从右侧，选择1作为分隔符，选择1作为索引。
 
 ![拆分规则 — 最后一个值的屏幕截图](assets/split-3.png)
 
@@ -912,15 +914,15 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 | 第一次响应 | 活动 |
 |---|--:|
-| 太棒了 | 2 |
-| 那可不怎么样 | 1 |
+| 非常棒 | 2 |
+| 不太好 | 1 |
 
 {style="table-layout:auto"}
 
-| 第二个响应 | 活动 |
+| 第二次响应 | 活动 |
 |---|--:|
 | 将推荐给其他人 | 2 |
-| 不会推荐给其他人 | 1 |
+| 不会向他人推荐 | 1 |
 
 {style="table-layout:auto"}
 
@@ -948,7 +950,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 您只需将反向链接URL中的反向链接域用作营销渠道规则集的一部分。
 
-### 在此之前的数据 {#urlparse-uc1-databefore}
+### 数据早于 {#urlparse-uc1-databefore}
 
 | [!DNL Referring URL] |
 |----|
@@ -961,7 +963,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 ### 派生字段 {#urlparse-uc1-derivedfield}
 
-您定义  `Referring Domain` 派生字段。 您使用 [!UICONTROL URL分析] 函数来定义从提取主机的规则。 [!UICONTROL 反向链接URL] 字段并将其存储在新的派生字段中。
+您定义  `Referring Domain` 派生字段。 您使用 [!UICONTROL URL解析] 函数来定义从中获取主机的规则 [!UICONTROL 反向链接URL] 并将其存储在新的派生字段中。
 
 ![Url解析规则1的屏幕截图](assets/url-parse-1.png)
 
@@ -981,7 +983,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 您希望使用 `cid` 中查询字符串的参数 [!DNL Page URL] 作为派生跟踪代码报表输出的一部分。
 
-### 在此之前的数据 {#urlparse-uc2-databefore}
+### 数据早于 {#urlparse-uc2-databefore}
 
 | [!DNL Page URL] |
 |----|
@@ -993,7 +995,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 ### 派生字段 {#urlparse-uc2-derivedfield}
 
-您定义 `Query String CID` 派生字段。 您使用 [!UICONTROL URL分析] 函数来定义规则以获取 [!UICONTROL 页面URL] 字段，指定 `cid` 作为查询参数。 输出值存储在新的派生字段中。
+您定义 `Query String CID` 派生字段。 您使用 [!UICONTROL URL解析] 函数来定义规则以获取 [!UICONTROL 页面URL] 字段，指定 `cid` 作为查询参数。 输出值存储在新的派生字段中。
 
 ![Url解析规则2的屏幕截图](assets/url-parse-2.png)
 
@@ -1013,13 +1015,13 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 以下限制通常适用于派生字段功能：
 
-- 为派生字段定义规则时，最多可以使用十个不同的架构字段（不包括标准字段）。
-   - 在这个最多十个不同的架构字段中，最多只允许三个查找架构或配置文件架构字段。
+- 在为派生字段定义规则时，您最多可以使用十个不同的架构字段（不包括标准字段）。
+   - 在这个最多十个不同的架构字段中，只允许三个查找架构或配置文件架构字段。
 - 每个Customer Journey Analytics连接最多可以有100个派生字段。
 
 ## 更多信息
 
 - [充分利用数据：用于在Customer Journey Analytics中使用派生字段的框架](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
 
-- [Customer Journey Analytics的派生字段用例](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
+- [用于Customer Journey Analytics的派生字段用例](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
 
