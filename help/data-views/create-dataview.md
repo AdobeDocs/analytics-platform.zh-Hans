@@ -4,10 +4,10 @@ description: 为创建或编辑数据视图而可调整的所有设置。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 543ca5bf2513e09f9875a7a0826ad770e26d2cca
+source-git-commit: 27214e6fc896243c0d29632cb0242b0d2e4f4653
 workflow-type: tm+mt
 source-wordcount: '1418'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -118,7 +118,7 @@ ht-degree: 98%
 
 >[!TIP]
 >
->如果组件未在数据视图中正确加载，而您看到错误消息，请参阅 [缺少权限](../troubleshooting/lack-of-permissions.md) 以寻求解决方案。
+>如果组件未在数据视图中正确加载，并且您看到错误消息，请参阅[缺乏权限](../troubleshooting/lack-of-permissions.md)，以获得解决方案。
 
 
 
@@ -135,6 +135,6 @@ ht-degree: 98%
 
 ### 会话设置
 
-决定在会话到期并开始新会话之前，事件之间无活动的时段。 时段为必填。还可选择在事件包含特定量度时强制开始新会话。有关更多详细信息，请参阅[上下文感知会话](context-aware-sessions.md)。
+决定在会话到期并开始新会话之前，事件之间无活动的时段。 时段为必填。还可选择在事件包含特定量度时强制开始新会话。请参阅 [会话设置](session-settings.md) 以了解更多详细信息。
 
 指定所有需要的设置后，单击&#x200B;**[!UICONTROL 保存并完成]**。
