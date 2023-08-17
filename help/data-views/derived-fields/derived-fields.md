@@ -4,9 +4,9 @@ description: 派生字段通过一组可用函数和函数模板指定对架构�
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
+source-git-commit: 29b7034dccb93ab78f340e142c3c26b1e86b6644
 workflow-type: tm+mt
-source-wordcount: '4348'
+source-wordcount: '4378'
 ht-degree: 15%
 
 ---
@@ -173,84 +173,9 @@ ht-degree: 15%
 
 - 约束（如果适用）。
 
-
-<!-- Concatenate -->
-
-### 拼接
-
-使用定义的分隔符将字段值组合到一个新的派生字段中。
-
-+++ 详细信息
-
-## 规范 {#concatenate-io}
-
-| 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
-|---|---|---|---|---|
-| <ul><li>字符串</li></ul> | <ul><li>[!UICONTROL 值]:<ul><li>规则</li><li>标准字段</li><li>字段</li><li>字符串</li></ul></li><li>[!UICONTROL 分隔符]:<ul><li>字符串</li></ul></li> </ul> | <p>不适用</p> | <p>每个派生字段有2个函数</p> | <p>新建派生字段</p> |
-
-{style="table-layout:auto"}
-
-
-## 用例 {#concatenate-uc}
-
-您当前收集起源机场代码和目的地机场代码作为单独的字段。 您希望将这两个字段合并为一个维度，并以连字符(-)分隔。 因此，您可以分析来源和目的地的组合，以确定预订的排名最前的路由。
-
-假设：
-
-- 原始值和目标值收集在同一表中的单独字段中。
-- 用户决定在值之间使用分隔符“ — ”。
-
-想象一下会发生以下预订：
-
-- 客户ABC123预订盐湖城(SLC)和奥兰多(MCO)之间的航班
-- 客户ABC456预订盐湖城(SLC)和洛杉矶(LAX)之间的航班
-- 客户ABC789预订盐湖城(SLC)和西雅图(SEA)之间的航班
-- 客户ABC987预订盐湖城(SLC)和圣何塞(SJO)之间的航班
-- 客户ABC654预订盐湖城(SLC)和奥兰多(MCO)之间的航班
-
-所需报表应如下所示：
-
-| 来源/目标 | 预订 |
-|----|---:|
-| SLC-MCO | 2 |
-| SLC-LAX | 1 |
-| SLC-SEA | 1 |
-| SLC-SJO | 1 |
-
-{style="table-layout:auto"}
-
-
-### 数据早于 {#concatenate-uc-databefore}
-
-| Origin | 目标 |
-|----|---:|
-| SLC | MCO |
-| SLC | LAX |
-| SLC | SEA |
-| SLC | SJO |
-| SLC | MCO |
-
-{style="table-layout:auto"}
-
-### 派生字段 {#concatenate-derivedfield}
-
-您定义新的 [!UICONTROL 来源 — 目标] 派生字段。 您使用 [!UICONTROL 拼接] 函数来定义用于连接的规则 [!UICONTROL 原有] 和 [!UICONTROL 目标] 字段使用 `-` [!UICONTROL 分隔符].
-
-![连接规则的屏幕截图](assets/concatenate.png)
-
-### 之后的数据 {#concatenate-dataafter}
-
-| 来源 — 目标<br/>（派生字段） |
-|---|
-| SLC-MCO |
-| SLC-LAX |
-| SLC-SEA |
-| SLC-SJO |
-| SLC-MCO |
-
-{style="table-layout:auto"}
-
-+++
+>[!NOTE]
+>
+>Lookup函数已重命名为 [分类](#classify). 请参阅 [分类](#classify) 函数以获取更多信息。
 
 <!-- CASE WHEN -->
 
@@ -482,6 +407,209 @@ Customer Journey Analytics使用以下默认容器模型：
 
 +++
 
+<!-- CLASSIFY -->
+
+### 分类
+
+定义由新派生字段中的相应值替换的一组值。
+
+
+
+
++++ 详细信息
+
+>[!NOTE]
+>
+>此函数最初名为Lookup ，但已重命名为Classification ，以适应即将推出的具有不同功能的查找函数。
+
+## 规范 {#classify-io}
+
+| 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
+|---|---|---|---|---|
+| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 要分类的字段]：<ul><li>规则</li><li>标准字段</li><li>字段</li></ul></li><li>[!UICONTROL 当值等于] 和 [!UICONTROL 替换值为]：</p><ul><li>字符串</li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段5个函数</p> | <p>新建派生字段</p> |
+
+{style="table-layout:auto"}
+
+
+## 用例1 {#classify-uc1}
+
+您的CSV文件确实包含键列 `hotelID` 以及与 `hotelID`： `city`， `rooms`， `hotel name`.
+您正在收集 [!DNL Hotel ID] 但想要创建 [!DNL Hotel Name] 维派生自 `hotelID` 在CSV文件中。
+
+**CSV文件结构和内容**
+
+| [!DNL hotelID] | [!DNL city] | [!DNL rooms] | [!DNL hotel name] |
+|---|---|---:|---|
+| [!DNL SLC123] | [!DNL Salt Lake City] | 40 | [!DNL SLC Downtown] |
+| [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
+| [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
+
+{style="table-layout:auto"}
+
+**当前报告**
+
+| [!DNL Hotel ID] | 产品查看次数 |
+|---|---:|
+| [!DNL SLC123] | 200 |
+| [!DNL LX342] | 198 |
+| [!DNL SFO456] | 190 |
+
+{style="table-layout:auto"}
+
+
+**所需报告**
+
+| [!DNL Hotel Name] | 产品查看次数 |
+|----|----:|
+| [!DNL SLC Downtown] | 200 |
+| [!DNL LA Airport] | 198 |
+| [!DNL Market Street] | 190 |
+
+{style="table-layout:auto"}
+
+### 数据早于 {#classify-uc1-databefore}
+
+| [!DNL Hotel ID] |
+|----|
+| [!DNL SLC123] |
+| [!DNL LAX342] |
+| [!DNL SFO456] |
+
+{style="table-layout:auto"}
+
+
+### 派生字段 {#classify-uc1-derivedfield}
+
+您定义 `Hotel Name` 派生字段。 您使用 [!UICONTROL 分类] 函数定义一个规则，在其中可以对 [!UICONTROL 酒店ID] 字段并使用新值替换。
+
+![分类规则1的屏幕截图](assets/lookup-1.png)
+
+### 之后的数据 {#classify-uc1-dataafter}
+
+| [!DNL Hotel Name] |
+|----|
+| [!DNL SLC Downtown] |
+| [!DNL LA Airport] |
+| [!DNL Market Street] |
+
+{style="table-layout:auto"}
+
+
+## 用例2 {#classify-uc2}
+
+您已收集了多个页面的URL，而不是友好页面名称。 此混合值集合将破坏报表。
+
+### 数据早于 {#classify-uc2-databefore}
+
+| [!DNL Page Name] |
+|---|
+| [!DNL Home Page] |
+| [!DNL Flight Search] |
+| `http://www.adobetravel.ca/Hotel-Search` |
+| `https://www.adobetravel.com/Package-Search` |
+| [!DNL Deals & Offers] |
+| `http://www.adobetravel.ca/user/reviews` |
+| `https://www.adobetravel.com.br/Generate-Quote/preview` |
+
+{style="table-layout:auto"}
+
+### 派生字段 {#classify-uc2-derivedfield}
+
+您定义 `Page Name (updated)` 派生字段。 您使用 [!UICONTROL 分类] 函数以定义一个规则，您可以通过该规则对现有 [!UICONTROL 页面名称] 字段并替换为更新的正确值。
+
+![分类规则2的屏幕截图](assets/lookup-2.png)
+
+### 之后的数据 {#classify-uc2-dataafter}
+
+| [!DNL Page Name (updated)] |
+|---|
+| [!DNL Home Page] |
+| [!DNL Flight Search] |
+| [!DNL Hotel Search] |
+| [!DNL Package Search] |
+| [!DNL Deals & Offers] |
+| [!DNL Reviews] |
+| [!DNL Generate Quote] |
+
++++
+
+<!-- CONCATENATE -->
+
+### 拼接
+
+使用定义的分隔符将字段值组合到一个新的派生字段中。
+
++++ 详细信息
+
+## 规范 {#concatenate-io}
+
+| 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
+|---|---|---|---|---|
+| <ul><li>字符串</li></ul> | <ul><li>[!UICONTROL 值]:<ul><li>规则</li><li>标准字段</li><li>字段</li><li>字符串</li></ul></li><li>[!UICONTROL 分隔符]:<ul><li>字符串</li></ul></li> </ul> | <p>不适用</p> | <p>每个派生字段有2个函数</p> | <p>新建派生字段</p> |
+
+{style="table-layout:auto"}
+
+
+## 用例 {#concatenate-uc}
+
+您当前收集起源机场代码和目的地机场代码作为单独的字段。 您希望将这两个字段合并为一个维度，并以连字符(-)分隔。 因此，您可以分析来源和目的地的组合，以确定预订的排名最前的路由。
+
+假设：
+
+- 原始值和目标值收集在同一表中的单独字段中。
+- 用户决定在值之间使用分隔符“ — ”。
+
+想象一下会发生以下预订：
+
+- 客户ABC123预订盐湖城(SLC)和奥兰多(MCO)之间的航班
+- 客户ABC456预订盐湖城(SLC)和洛杉矶(LAX)之间的航班
+- 客户ABC789预订盐湖城(SLC)和西雅图(SEA)之间的航班
+- 客户ABC987预订盐湖城(SLC)和圣何塞(SJO)之间的航班
+- 客户ABC654预订盐湖城(SLC)和奥兰多(MCO)之间的航班
+
+所需报表应如下所示：
+
+| 来源/目标 | 预订 |
+|----|---:|
+| SLC-MCO | 2 |
+| SLC-LAX | 1 |
+| SLC-SEA | 1 |
+| SLC-SJO | 1 |
+
+{style="table-layout:auto"}
+
+
+### 数据早于 {#concatenate-uc-databefore}
+
+| Origin | 目标 |
+|----|---:|
+| SLC | MCO |
+| SLC | LAX |
+| SLC | SEA |
+| SLC | SJO |
+| SLC | MCO |
+
+{style="table-layout:auto"}
+
+### 派生字段 {#concatenate-derivedfield}
+
+您定义新的 [!UICONTROL 来源 — 目标] 派生字段。 您使用 [!UICONTROL 拼接] 函数来定义用于连接的规则 [!UICONTROL 原有] 和 [!UICONTROL 目标] 字段使用 `-` [!UICONTROL 分隔符].
+
+![连接规则的屏幕截图](assets/concatenate.png)
+
+### 之后的数据 {#concatenate-dataafter}
+
+| 来源 — 目标<br/>（派生字段） |
+|---|
+| SLC-MCO |
+| SLC-LAX |
+| SLC-SEA |
+| SLC-SJO |
+| SLC-MCO |
+
+{style="table-layout:auto"}
+
++++
 
 <!-- FIND AND REPLACE -->
 
@@ -552,127 +680,6 @@ Customer Journey Analytics使用以下默认容器模型：
 
 +++
 
-
-<!-- LOOKUP -->
-
-### 查询
-
-定义由新派生字段中的相应值替换的一组查找值。
-
-+++ 详细信息
-
-
-## 规范 {#lookup-io}
-
-| 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
-|---|---|---|---|---|
-| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 应用查找的字段]:<ul><li>规则</li><li>标准字段</li><li>字段</li></ul></li><li>[!UICONTROL 当值等于] 和 [!UICONTROL 替换值为]：</p><ul><li>字符串</li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段5个函数</p> | <p>新建派生字段</p> |
-
-{style="table-layout:auto"}
-
-
-## 用例1 {#lookup-uc1}
-
-您的CSV文件确实包含键列 `hotelID` 以及与 `hotelID`： `city`， `rooms`， `hotel name`.
-您正在收集 [!DNL Hotel ID] 但想要创建 [!DNL Hotel Name] 维派生自 `hotelID` 在CSV文件中。
-
-**CSV文件结构和内容**
-
-| [!DNL hotelID] | [!DNL city] | [!DNL rooms] | [!DNL hotel name] |
-|---|---|---:|---|
-| [!DNL SLC123] | [!DNL Salt Lake City] | 40 | [!DNL SLC Downtown] |
-| [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
-| [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
-
-{style="table-layout:auto"}
-
-**当前报告**
-
-| [!DNL Hotel ID] | 产品查看次数 |
-|---|---:|
-| [!DNL SLC123] | 200 |
-| [!DNL LX342] | 198 |
-| [!DNL SFO456] | 190 |
-
-{style="table-layout:auto"}
-
-
-**所需报告**
-
-| [!DNL Hotel Name] | 产品查看次数 |
-|----|----:|
-| [!DNL SLC Downtown] | 200 |
-| [!DNL LA Airport] | 198 |
-| [!DNL Market Street] | 190 |
-
-{style="table-layout:auto"}
-
-### 数据早于 {#lookup-uc1-databefore}
-
-| [!DNL Hotel ID] |
-|----|
-| [!DNL SLC123] |
-| [!DNL LAX342] |
-| [!DNL SFO456] |
-
-{style="table-layout:auto"}
-
-
-### 派生字段 {#lookup-uc1-derivedfield}
-
-您定义 `Hotel Name` 派生字段。 您使用 [!UICONTROL 查找] 函数来定义一个规则，您可以在其中查找 [!UICONTROL 酒店ID] 字段并使用新值替换。
-
-![查找规则1的屏幕截图](assets/lookup-1.png)
-
-### 之后的数据 {#lookup-uc1-dataafter}
-
-| [!DNL Hotel Name] |
-|----|
-| [!DNL SLC Downtown] |
-| [!DNL LA Airport] |
-| [!DNL Market Street] |
-
-{style="table-layout:auto"}
-
-
-## 用例2 {#lookup-uc2}
-
-您已收集了多个页面的URL，而不是友好页面名称。 此混合值集合将破坏报表。
-
-### 数据早于 {#lookup-uc2-databefore}
-
-| [!DNL Page Name] |
-|---|
-| [!DNL Home Page] |
-| [!DNL Flight Search] |
-| `http://www.adobetravel.ca/Hotel-Search` |
-| `https://www.adobetravel.com/Package-Search` |
-| [!DNL Deals & Offers] |
-| `http://www.adobetravel.ca/user/reviews` |
-| `https://www.adobetravel.com.br/Generate-Quote/preview` |
-
-{style="table-layout:auto"}
-
-### 派生字段 {#lookup-uc2-derivedfield}
-
-您定义 `Page Name (updated)` 派生字段。 您使用 [!UICONTROL 查找] 函数，定义可在其中查找现有值的规则 [!UICONTROL 页面名称] 字段并替换为更新的正确值。
-
-![查找规则2的屏幕截图](assets/lookup-2.png)
-
-### 之后的数据 {#lookup-uc2-dataafter}
-
-| [!DNL Page Name (updated)] |
-|---|
-| [!DNL Home Page] |
-| [!DNL Flight Search] |
-| [!DNL Hotel Search] |
-| [!DNL Package Search] |
-| [!DNL Deals & Offers] |
-| [!DNL Reviews] |
-| [!DNL Generate Quote] |
-
-+++
-
 <!-- MERGE FIELDS -->
 
 ### 合并字段
@@ -691,7 +698,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 ## 用例 {#merge-fields-uc}
 
-您要创建一个由页面名称字段和致电原因字段组成的新维度，以便跨渠道分析历程。
+您要创建一个由页面名称字段和致电原因字段组成的维度，以便跨渠道分析历程。
 
 ### 数据早于 {#merge-fields-uc-databefore}
 
@@ -757,7 +764,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 ## 用例 {#regex-replace-uc}
 
-您希望获取URL的一个部分，并将其用作分析流量的唯一页面标识符。 您将使用 `[^/]+(?=/$|$)` 用于捕获URL结尾的正则表达式，以及 `$1` 作为输出模式。
+您希望获取URL的一个部分，并将其用作分析流量的唯一页面标识符。 您使用 `[^/]+(?=/$|$)` 用于捕获URL结尾的正则表达式，以及 `$1` 作为输出模式。
 
 ### 数据早于 {#regex-replace-uc-databefore}
 
