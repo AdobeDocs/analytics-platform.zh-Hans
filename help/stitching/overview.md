@@ -3,10 +3,10 @@ title: 拼接概述
 description: 拼接概述。
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
+source-git-commit: d7dd5f4f0ef53e61755cf02c49c2f7f081ff4b39
 workflow-type: tm+mt
-source-wordcount: '1246'
-ht-degree: 24%
+source-wordcount: '1265'
+ht-degree: 23%
 
 ---
 
@@ -117,10 +117,14 @@ Once the data view is set up, the cross-channel analysis in Customer Journey Ana
 * 临时ID字段应仅包含一种类型的ID（来自一个命名空间的ID）。 例如，临时 ID 字段不应包含登录 ID 和电子邮件 ID 的组合。
 * 如果对于同一持久ID发生了多个具有同一时间戳的事件，但临时ID字段中的值不同，则拼接操作会根据字母顺序选择该ID。 因此，如果持久ID A具有时间戳相同的两个事件，其中一个事件指定Bob，而另一个事件指定Ann，则拼接操作将选择Ann。
 * 如果一台设备由多人共享，并且用户之间的转换总数超过50,000，则Customer Journey Analytics将停止为该设备拼合数据。
+* 请小心临时ID包含占位符值（例如“未定义”）的情况。 请参阅 [常见问题解答](faq.md) 以了解更多信息。
 
 不要将拼接与以下内容混淆：
 
 * 两个或更多数据集的合并。 拼接仅适用于一个数据集。 数据集合并是设置Customer Journey Analytics连接并在该连接的所选数据集中选择相同的人员ID的结果。
 
 * 两个数据集的连接。 在Customer Journey Analytics中，连接通常用于Analysis Workspace中的查找或分类。 尽管拼接使用连接功能，但过程本身涉及到的远不止连接。
+
+
+
 
