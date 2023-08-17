@@ -4,9 +4,9 @@ description: 派生字段通过一组可用函数和函数模板指定对架构�
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 29b7034dccb93ab78f340e142c3c26b1e86b6644
+source-git-commit: f8ad8b651a9a50b4fc4663ee82e842e3e5da7432
 workflow-type: tm+mt
-source-wordcount: '4378'
+source-wordcount: '4433'
 ht-degree: 15%
 
 ---
@@ -426,7 +426,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 要分类的字段]：<ul><li>规则</li><li>标准字段</li><li>字段</li></ul></li><li>[!UICONTROL 当值等于] 和 [!UICONTROL 替换值为]：</p><ul><li>字符串</li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段5个函数</p> | <p>新建派生字段</p> |
+| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 要分类的字段]：<ul><li>规则</li><li>标准字段</li><li>字段</li></ul></li><li>[!UICONTROL 当值等于] 和 [!UICONTROL 替换值为]：</p><ul><li>字符串</li></ul><li>显示原始值<ul><li>布尔值</li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段5个函数</p> | <p>新建派生字段</p> |
 
 {style="table-layout:auto"}
 
@@ -443,6 +443,7 @@ Customer Journey Analytics使用以下默认容器模型：
 | [!DNL SLC123] | [!DNL Salt Lake City] | 40 | [!DNL SLC Downtown] |
 | [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
 | [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
+| [!DNL AMS789] | [!DNL Amsterdam] | 50 | [!DNL Okura] |
 
 {style="table-layout:auto"}
 
@@ -453,6 +454,7 @@ Customer Journey Analytics使用以下默认容器模型：
 | [!DNL SLC123] | 200 |
 | [!DNL LX342] | 198 |
 | [!DNL SFO456] | 190 |
+| [!DNL AMS789] | 150 |
 
 {style="table-layout:auto"}
 
@@ -474,6 +476,7 @@ Customer Journey Analytics使用以下默认容器模型：
 | [!DNL SLC123] |
 | [!DNL LAX342] |
 | [!DNL SFO456] |
+| [!DNL AMS789] |
 
 {style="table-layout:auto"}
 
@@ -482,7 +485,9 @@ Customer Journey Analytics使用以下默认容器模型：
 
 您定义 `Hotel Name` 派生字段。 您使用 [!UICONTROL 分类] 函数定义一个规则，在其中可以对 [!UICONTROL 酒店ID] 字段并使用新值替换。
 
-![分类规则1的屏幕截图](assets/lookup-1.png)
+如果要包含尚未定义为要分类的值的一部分的原始值（例如，Hotel ID AMS789），请确保选择 **[!UICONTROL 显示原始值]**. 这可确保AMS789将成为派生字段输出的一部分，尽管该值未进行分类。
+
+![分类规则1的屏幕截图](assets/classify-1.png)
 
 ### 之后的数据 {#classify-uc1-dataafter}
 
@@ -517,7 +522,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 您定义 `Page Name (updated)` 派生字段。 您使用 [!UICONTROL 分类] 函数以定义一个规则，您可以通过该规则对现有 [!UICONTROL 页面名称] 字段并替换为更新的正确值。
 
-![分类规则2的屏幕截图](assets/lookup-2.png)
+![分类规则2的屏幕截图](assets/classify-2.png)
 
 ### 之后的数据 {#classify-uc2-dataafter}
 
