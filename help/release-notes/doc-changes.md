@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 27214e6fc896243c0d29632cb0242b0d2e4f4653
+source-git-commit: 6f3ae14e4d34de17ed64ae30cee4611e4d6f3226
 workflow-type: tm+mt
-source-wordcount: '2485'
-ht-degree: 100%
+source-wordcount: '2518'
+ht-degree: 98%
 
 ---
 
@@ -20,6 +20,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2023 年 8 月** | |
+| 移动了关于管理计划项目的内容 | 在《Analytics组件指南》中新增了一篇文章，名为 [计划项目](/help/components/scheduled-projects-manager.md). 此内容先前位于 [计划项目](/help/analysis-workspace/curate-share/t-schedule-report.md) Analytics工具指南中的文章。 |
 | 支持 Adobe Customer Journey Analytics 功能 | 在“Customer Journey Analytics 与 Adobe Analytics 相比”中关于会话化功能的&#x200B;*以新方式支持*&#x200B;表中添加了更多信息。[了解详情](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
 | Adobe Analytics 的演化 | 通过引用派生字段营销渠道功能模板，更新了&#x200B;*（重新）配置营销渠道*&#x200B;部分。[了解详情](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
 | 移动应用程序和其他平台的数据摄取快速入门指南 | 添加了额外的数据摄取快速入门指南，概述了如何在 Customer Journey Analytics 中摄取和使用来自移动应用程序或其他平台（例如桌面应用程序、控制台上的游戏、机顶盒和物联网设备上的应用程序）的数据。[了解详情](../data-ingestion/data-ingestion.md) |
