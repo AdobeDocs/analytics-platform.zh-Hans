@@ -4,33 +4,33 @@ description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 source-git-commit: 2dab438b956513eaff3f05d2ff8de2fff43d9977
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '571'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
-# 当前Adobe Customer Journey Analytics发行说明（2023年8月）
+# 当前的 Adobe Customer Journey Analytics 发行说明（2023 年 8 月）
 
 **上次更新日期**：2023 年 8 月 9 日
 
-这些发行说明涵盖2023年8月9日至9月13日的发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
+这些发行说明涵盖 2023 年 8 月 9 日至 9 月 13 日的发行期。Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
 ## 新增功能或更新后的功能
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Report Builder 增强功能** | <ul><li>从“历史记录”选项卡下载计划任务，您可以在其中查看计划任务的历史记录。 从该任务下载工作簿。 </li><li>以维度形式显示开始日期：允许用户在数据块输出中将数据块的开始日期显示为维度。 </li></ul> | 不适用 | 2023 年 8 月 17 日 |
-| **货币换算** | 客户历程增加了支持多种货币的能力。 您可以在数据视图设置中将货币转换为另一种货币。 [了解详情](/help/data-views/component-settings/format.md) | 不适用 | 2023 年 8 月 31 日 |
-| **Analytics Source Connector中支持A4T分类** | 我们将添加一个关联ID，以便轻松联接Adobe Target活动和体验事件的分类数据。 | 不适用 | 2023 年 8 月 31 日 |
-| **报表活动管理器** | 使管理员能够详细了解每个连接的报告消耗，从而使管理员能够轻松地诊断和修复在报告高峰期出现的容量问题。 | 不适用 | 2023年9月6日 |
-| **PowerBI 和 Tableau 访问 Customer Journey Analytics 数据视图** | 通过 Adobe Customer Journey Analytics SQL Connector，SQL 可访问您在 Customer Journey Analytics 中定义的数据视图。更熟悉 Power BI、Tableau 或其他商业智能和可视化工具的数据工程师和分析师现在可根据 Customer Journey Analytics 用户用于其 Analysis Workspace 项目的相同数据视图创建报表和仪表板。[了解详情](/help/data-views/sql-connector.md) | 不适用 | 2023年9月13日 |
+| **Report Builder 增强功能** | <ul><li>从“历史记录”选项卡中下载计划的任务，您可以在其中查看计划任务的历史记录。从该任务下载工作簿。 </li><li>将开始日期作为维度：允许用户将数据块的开始日期显示为数据块输出中的维度。 </li></ul> | 不适用 | 2023 年 8 月 17 日 |
+| **货币换算** | 客户历程增加了支持多种货币的能力。您可以在数据视图设置中将一种货币转换为另一种货币。[了解详情](/help/data-views/component-settings/format.md) | 不适用 | 2023 年 8 月 31 日 |
+| **Analytics Source Connector 提供对 A4T 分类的支持** | 我们正在添加关联 ID，以便轻松加入 Adob&#x200B;&#x200B;e Target 活动和体验事件的分类数据。 | 不适用 | 2023 年 8 月 31 日 |
+| **报表活动管理器** | 管理员可以获得有关每个连接的报告消耗情况的详细信息，使管&#x200B;&#x200B;理员能够轻松诊断并修复报告高峰时段的容量问题。 | 不适用 | 2023 年 9 月 6 日 |
+| **PowerBI 和 Tableau 访问 Customer Journey Analytics 数据视图** | 通过 Adobe Customer Journey Analytics SQL Connector，SQL 可访问您在 Customer Journey Analytics 中定义的数据视图。更熟悉 Power BI、Tableau 或其他商业智能和可视化工具的数据工程师和分析师现在可根据 Customer Journey Analytics 用户用于其 Analysis Workspace 项目的相同数据视图创建报表和仪表板。[了解详情](/help/data-views/sql-connector.md) | 不适用 | 2023 年 9 月 13 日 |
 
 {style="table-layout:auto"}
 
 ## Customer Journey Analytics 中的修复
 
-AN-309141； AN-319198； AN-324576； AN-324939； AN-325138； AN-325554
+AN-309141; AN-319198; AN-324576; AN-324939; AN-325138; AN-325554
 
 ## Customer Journey Analytics 管理员的重要注意事项
 
