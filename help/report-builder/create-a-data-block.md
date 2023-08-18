@@ -1,15 +1,15 @@
 ---
-title: 如何在Customer Journey Analytics中使用Report Builder创建数据块
+title: 如何使用Customer Journey Analytics中的Report Builder创建数据块
 description: 介绍如何创建数据块。
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: fe52730e3904ba5ccc5d1e7e5ff89eed8a575fbc
+source-git-commit: bc82cd376a082b55f915c1e27f6fcec861989b00
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 83%
+source-wordcount: '607'
+ht-degree: 74%
 
 ---
 
@@ -63,6 +63,12 @@ ht-degree: 83%
    - 日期组件将添加到“列”部分。
    - 筛选器组件将添加到“筛选器”部分。
 
+   **Dimension形式的开始日期**
+
+   将开始日期设置为维度，以清楚地标识数据块的开始日期。 如果您有一个具有滚动日期范围的定期计划报表，或者如果您有一个非常规日期范围并且需要清除开始日期，则此功能非常有用。
+
+   ![显示维度列表中开始日期的屏幕截图。](./assets/start-date-dimension.png){width="15%"}
+
 1. 在“表”窗格中排列项目以自定义数据块的版面。
 
    在“表”窗格中拖放组件以重新排序组件，或者右键单击组件名称并从选项菜单中选择。
@@ -85,7 +91,7 @@ ht-degree: 83%
 
    ![占位符图像](./assets/row-heading.png){width="35%"}
 
-1. 单击隐藏或显示可切换维度标签或列标题。 默认显示所有标签。
+1. 单击隐藏或显示以切换维度标签或列标题。 默认显示所有标签。
 
 1. 单击&#x200B;**完成**。
 

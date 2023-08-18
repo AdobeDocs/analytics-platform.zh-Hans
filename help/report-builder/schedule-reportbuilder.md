@@ -1,15 +1,15 @@
 ---
 title: 如何在 Customer Journey Analytics 中使用 Report Builder 安排工作簿
-description: 描述如何使用 Report Builder 中的计划功能
+description: 了解如何在Report Builder中使用计划功能
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: cd3ed8873619c7fb5281d42b1f74c32b245400d0
-workflow-type: ht
-source-wordcount: '1078'
-ht-degree: 100%
+source-git-commit: d40638272263a389421adfe224649e2b905c652b
+workflow-type: tm+mt
+source-wordcount: '1114'
+ht-degree: 90%
 
 ---
 
@@ -91,17 +91,21 @@ ht-degree: 100%
 
 1. 在 Report Builder 中心的计划部分中，单击工作簿选项卡。使用此视图查看所有计划工作簿的列表。
 
-1. 选择一个工作簿将显示多个工具，允许您编辑工作簿、更改计划、暂停和重新启动计划或删除计划。
+1. 选择一个工作簿显示的多个工具允许您编辑工作簿、编辑计划任务、暂停和重新启动计划任务、下载计划任务报表或删除计划任务。
 
-   ![ alt 描述](./assets/edit-icons.png){width="55%"}
+   ![显示工作簿计划图标的屏幕截图。](./assets/schedule-icons.png){width="15%"}
 
-* （可选）单击铅笔图标编辑工作簿计划。
+* （可选）单击铅笔图标以编辑工作簿计划任务。
 
 * （可选）单击时钟图标以查看每个计划任务的历史记录。
 
-* （可选）单击暂停图标以暂停并重新启动分发计划。如果您需要在发送工作簿之前修改工作簿，这将很有帮助。当您想要重新启动分发时，请再次单击暂停图标。
+* （可选）单击暂停图标以暂停并重新启动分发计划任务。 如果您需要在发送工作簿之前修改工作簿，这将很有帮助。当您想要重新启动分发时，请再次单击暂停图标。
 
-* （可选）单击垃圾桶以删除计划。
+* （可选）单击下载图标以下载工作簿计划任务的副本。
+
+* （可选）单击垃圾桶以删除计划任务。
+
+  ![显示计划任务列表的屏幕截图。](./assets/selected-workbook.png){width="20%"}
 
 ## 查看计划任务的状态
 
