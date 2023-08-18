@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 6f3ae14e4d34de17ed64ae30cee4611e4d6f3226
+source-git-commit: 0160aee587c1f88e4889f26757b1962c3d59b9fa
 workflow-type: tm+mt
-source-wordcount: '2518'
-ht-degree: 98%
+source-wordcount: '2550'
+ht-degree: 97%
 
 ---
 
@@ -20,6 +20,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2023 年 8 月** | |
+| Report Builder 增强功能 | 已更新的内容 [计划工作簿](/help/report-builder/schedule-reportbuilder.md) 提供下载计划任务的信息。 已更新的内容  [创建数据块](/help/report-builder/create-a-data-block.md) 提供将开始日期用作维度的信息。 |
 | 移动了关于管理计划项目的内容 | 在《Analytics组件指南》中新增了一篇文章，名为 [计划项目](/help/components/scheduled-projects-manager.md). 此内容先前位于 [计划项目](/help/analysis-workspace/curate-share/t-schedule-report.md) Analytics工具指南中的文章。 |
 | 支持 Adobe Customer Journey Analytics 功能 | 在“Customer Journey Analytics 与 Adobe Analytics 相比”中关于会话化功能的&#x200B;*以新方式支持*&#x200B;表中添加了更多信息。[了解详情](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
 | Adobe Analytics 的演化 | 通过引用派生字段营销渠道功能模板，更新了&#x200B;*（重新）配置营销渠道*&#x200B;部分。[了解详情](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
