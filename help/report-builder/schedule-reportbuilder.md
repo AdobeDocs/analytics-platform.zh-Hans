@@ -6,7 +6,7 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: d40638272263a389421adfe224649e2b905c652b
+source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 90%
@@ -93,7 +93,7 @@ ht-degree: 90%
 
 1. 选择一个工作簿显示的多个工具允许您编辑工作簿、编辑计划任务、暂停和重新启动计划任务、下载计划任务报表或删除计划任务。
 
-   ![显示工作簿计划图标的屏幕截图。](./assets/schedule-icons.png){width="15%"}
+   ![显示工作簿计划图标的屏幕截图。](./assets/schedule-icons.png){width="20%"}
 
 * （可选）单击铅笔图标以编辑工作簿计划任务。
 
@@ -105,7 +105,7 @@ ht-degree: 90%
 
 * （可选）单击垃圾桶以删除计划任务。
 
-  ![显示计划任务列表的屏幕截图。](./assets/selected-workbook.png){width="20%"}
+  ![显示计划任务列表的屏幕截图。](./assets/selected-workbook.png){width="40%"}
 
 ## 查看计划任务的状态
 
