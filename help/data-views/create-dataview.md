@@ -7,7 +7,7 @@ feature: Data Views
 source-git-commit: 27214e6fc896243c0d29632cb0242b0d2e4f4653
 workflow-type: tm+mt
 source-wordcount: '1418'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -135,6 +135,6 @@ ht-degree: 99%
 
 ### 会话设置
 
-决定在会话到期并开始新会话之前，事件之间无活动的时段。 时段为必填。还可选择在事件包含特定量度时强制开始新会话。请参阅 [会话设置](session-settings.md) 以了解更多详细信息。
+决定在会话到期并开始新会话之前，事件之间无活动的时段。 时段为必填。还可选择在事件包含特定量度时强制开始新会话。有关更多详细信息，请参阅[会话设置](session-settings.md)。
 
 指定所有需要的设置后，单击&#x200B;**[!UICONTROL 保存并完成]**。
