@@ -3,10 +3,10 @@ title: 拼接概述
 description: 拼接概述。
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: d7dd5f4f0ef53e61755cf02c49c2f7f081ff4b39
+source-git-commit: 52d47e777e8c9f7e1e73f4131f19d7df280cb2a3
 workflow-type: tm+mt
-source-wordcount: '1265'
-ht-degree: 23%
+source-wordcount: '1322'
+ht-degree: 22%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 23%
 
 很遗憾，作为Customer Journey Analytics中连接一部分的所有基于事件的数据集并非都填充了足够的数据，开箱即用地支持此归因。 特别是，基于Web或基于移动设备的体验数据集通常没有可用于所有事件的实际人员ID信息。
 
-拼接允许为一个数据集行中的身份重新生成键，确保人员ID（拼接ID）在每个事件上可用。 拼接查看来自经过身份验证和未经身份验证的会话的用户数据，以确定可用作拼接ID的通用临时ID值。 这允许将不同的记录解析为单个拼接ID，以供在人员级别（而不是设备或Cookie级别）进行分析。
+拼接允许为一个数据集行中的身份重新生成键，确保人员ID（拼接ID）在每个事件上可用。 拼接查看来自经过身份验证和未经身份验证的会话的用户数据，以确定可用作拼接ID的通用临时ID值。 通过重新生成键值，可将不同的记录解析为单个拼合ID，以供在人员级别，而不是设备或Cookie级别进行分析。
 
 如果在定义Customer Journey Analytics连接时将一个或多个拼合数据集与其他数据集（例如呼叫中心数据）相结合，您将受益于跨渠道分析。 这假定其他那些数据集每行都已经包含一个人员ID，类似于拼合的ID。
 
@@ -102,9 +102,11 @@ Once the data view is set up, the cross-channel analysis in Customer Journey Ana
 
 >[!IMPORTANT]
 >
->将您对全局事件数据集架构所做的任何更改也应用于新拼接的数据集架构，否则这会断开拼接的数据集。
+>* 将您对全局事件数据集架构所做的任何更改也应用于新拼接的数据集架构，否则这会断开拼接的数据集。
 >
->此外，如果移除源数据集，缝合的数据集将停止处理并被系统移除。
+>* 如果删除源数据集，则拼接的数据集将停止处理并被系统删除。
+>
+>* 数据使用标签不会自动传播到拼接的数据集架构。 如果您已将数据使用标签应用于源数据集架构，则需要手动将这些数据使用标签应用于拼接的数据集架构。 请参阅 [管理Experience Platform中的数据使用标签](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/overview.html?lang=zh-Hans) 以了解更多信息。
 
 拼接是一项具有突破性的强大功能，但其使用方式存在限制。
 
@@ -123,7 +125,7 @@ Once the data view is set up, the cross-channel analysis in Customer Journey Ana
 
 * 两个或更多数据集的合并。 拼接仅适用于一个数据集。 数据集合并是设置Customer Journey Analytics连接并在该连接的所选数据集中选择相同的人员ID的结果。
 
-* 两个数据集的连接。 在Customer Journey Analytics中，连接通常用于Analysis Workspace中的查找或分类。 尽管拼接使用连接功能，但过程本身涉及到的远不止连接。
+* 两个数据集的连接。 在Customer Journey Analytics中，连接通常用于Analysis Workspace中的查找或分类。 尽管拼接使用连接功能，但过程本身涉及的连接还不止于。
 
 
 
