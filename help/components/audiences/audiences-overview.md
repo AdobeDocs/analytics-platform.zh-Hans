@@ -3,34 +3,34 @@ title: Customer Journey Analytics受众发布概述
 description: 了解 Customer Journey Analytics 中的受众发布的概念
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 3a3122934e0fb3d89ac94cc8be8799d43dd1c987
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '516'
 ht-degree: 54%
 
 ---
 
 # Customer Journey Analytics受众发布概述
 
-您现在可以创建在Customer Journey Analytics中发现的受众，并将其发布到 [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) (RTCDP)，用于Adobe Experience Platform中的客户定位和个性化。
+您现在可以创建在Customer Journey Analytics中发现的受众，并将其发布到 [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) 在Adobe Experience Platform中进行客户定位和个性化。
 
-通过发布受众，可以明确地激活在Customer Journey Analytics中找到的分析并对其执行操作。 这些行动可能包括：
+通过发布受众，可以提供一种清晰的方式来激活在Customer Journey Analytics中找到的分析并对其执行操作。 这些行动可能包括：
 
 * 在 Adobe Journey Optimizer 中将受众用于历程。
 * 通过 Experience Platform 目标将受众导出到第三方。
-* 使用从Customer Journey Analytics中基于事件的数据派生出的有用属性来扩充实时客户用户档案。
+* 使用从Customer Journey Analytics中基于事件的数据派生出的有用属性扩充实时客户档案。
 * 在发布受众后可以最低的延迟完成所有这些操作。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency)
 * 发布一次性受众或定期受众.
 
-您在Customer Journey Analytics中创建的受众不必基于为配置文件启用的数据集。 您可以将历史数据摄取到Experience Platform中，而无需为配置文件启用关联的数据集和架构。 然后，使用这些数据集发现Customer Journey Analytics中的相关受众，并将这些受众发布到Experience Platform中的RTCDP以供激活。
+您在Customer Journey Analytics中创建的受众不必基于为配置文件启用的数据集。 您可以将历史数据摄取到Experience Platform中，而无需为配置文件启用关联的数据集和架构。 然后，使用这些数据集发现Customer Journey Analytics中的相关受众，并将这些受众发布到Experience Platform中的实时客户档案以供激活。
 
 ## 关键术语
 
-**受众**：一组或一系列具有命名空间以及与该命名空间相关的特定 ID 的身份。受众可以从Adobe Experience Platform和位于其顶部的应用程序(如Customer Journey Analytics)中传输。 受众可以包含混合的命名空间。
+**受众**：一组或一系列具有命名空间以及与该命名空间相关的特定 ID 的身份。受众可从Adobe Experience Platform及其顶部的应用程序(如Customer Journey Analytics)中传输。 受众可以包含混合的命名空间。
 
 **过滤器**：一组规则，通过某个时段的一组数据评估这组规则时会生成一个数据子集。与其他支持服务结合使用时，可在创建受众的过程中使用过滤器。筛选器是在Customer Journey Analytics中定义和维护的。
 
-**筛选器** 对比 **区段**：Customer Journey Analytics不使用“区段”的概念，而是使用“过滤器”。 虽然两者都是一组可能包含相似逻辑的规则，但它们会生成不同的输出。过滤器用于缩小数据集以用于分析用途。区段用于生成可用于激活的身份列表。区段会在实时客户档案中生成受众，而（仅凭）过滤器不会。Customer Journey Analytics受众发布是我们使用Customer Journey Analytics过滤器创建可被实时客户档案使用的受众的过程。
+**过滤器** 对比 **区段**：Customer Journey Analytics不使用“区段”的概念，而是使用“过滤器”。 虽然两者都是一组可能包含相似逻辑的规则，但它们会生成不同的输出。过滤器用于缩小数据集以用于分析用途。区段用于生成可用于激活的身份列表。区段会在实时客户档案中生成受众，而（仅凭）过滤器不会。Customer Journey Analytics受众发布是我们使用Customer Journey Analytics过滤器创建可被实时客户档案使用的受众的过程。
 
 ## 权限
 
