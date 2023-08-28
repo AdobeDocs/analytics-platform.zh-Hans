@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: e9c6aba709d0e75a42a16b455612e0cad1428779
 workflow-type: tm+mt
 source-wordcount: '2566'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -21,8 +21,8 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | --- | --- |
 | **2023 年 8 月** | |
 | “Media Playback 耗时”面板 | 已更新的内容  [“Media Playback耗时”面板](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md) 以提高可读性。 |
-| Report Builder 增强功能 | 已更新的内容 [计划工作簿](/help/report-builder/schedule-reportbuilder.md) 提供下载计划任务的信息。 已更新的内容  [创建数据块](/help/report-builder/create-a-data-block.md) 提供将开始日期用作维度的信息。 |
-| 移动了关于管理计划项目的内容 | 在“分析组件指南”中创建了一篇新文章，名为[计划项目](/help/components/scheduled-projects-manager.md)。此内容之前位于“分析工具指南”中的[计划项目](/help/analysis-workspace/curate-share/t-schedule-report.md)一文中。 |
+| Report Builder 增强 | 更新了[安排工作簿](/help/report-builder/schedule-reportbuilder.md)的内容以提供下载计划任务的信息。更新了[创建数据块](/help/report-builder/create-a-data-block.md)的内容以提供使用开始日期作为维度的信息。 |
+| 移动了关于管理计划项目的内容 | 在《Analytics 组件指南》中创建了一篇名为[计划项目](/help/components/scheduled-projects-manager.md)的新文章。此内容以前位于《Analytics 工具指南》中的[计划项目](/help/analysis-workspace/curate-share/t-schedule-report.md)一文中。 |
 | 支持 Adobe Customer Journey Analytics 功能 | 在“Customer Journey Analytics 与 Adobe Analytics 相比”中关于会话化功能的&#x200B;*以新方式支持*&#x200B;表中添加了更多信息。[了解详情](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
 | Adobe Analytics 的演化 | 通过引用派生字段营销渠道功能模板，更新了&#x200B;*（重新）配置营销渠道*&#x200B;部分。[了解详情](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
 | 移动应用程序和其他平台的数据摄取快速入门指南 | 添加了额外的数据摄取快速入门指南，概述了如何在 Customer Journey Analytics 中摄取和使用来自移动应用程序或其他平台（例如桌面应用程序、控制台上的游戏、机顶盒和物联网设备上的应用程序）的数据。[了解详情](../data-ingestion/data-ingestion.md) |
@@ -31,7 +31,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | Adobe Product Analytics | Adobe Product Analytics 是一种与 Customer Journey Analytics 中的跨渠道数据和见解进行交互的新方式。这些新功能使产品团队能够通过[引导式分析](/help/guided-analysis/overview.md)工作流程自助提供有关其产品体验的数据和见解。 |
 | 派生字段 | 通过[派生字段](/help/data-views/derived-fields/derived-fields.md)和可自定义的规则生成器，即可迅速定义（一般较为复杂的）数据操作。 |
 | 配置文件和查找数据的扩展查找支持 | 提供将数据集添加为配置文件或查找数据集中的字段查找的功能。之前，仅支持事件数据集。[了解详情](/help/connections/create-connection.md) |
-| Report Builder 增强功能 | <ul><li>[从单元格中筛选多个数据块](/help/report-builder/select-data-view.md)</li><li>[显示和隐藏行标题和列标题](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=zh-Hans#build-the-data-block)</li></ul> |
+| Report Builder 增强 | <ul><li>[从单元格中筛选多个数据块](/help/report-builder/select-data-view.md)</li><li>[显示和隐藏行标题和列标题](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=zh-Hans#build-the-data-block)</li></ul> |
 | Experience Edge 地理位置查询 | [Adobe Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hans) 正在添加地理位置查找服务，可为所有 Experience Edge 用户提供统一的地理数据。 |
 | **2023 年 6 月** | |
 | 跨渠道分析和拼合 | 为了预测即将进行的更改，以支持拼合并进一步阐明如何使用拼合提升跨渠道分析，我们编辑了与跨渠道分析功能相关的文档，将[跨渠道分析](../use-cases/cross-channel/cross-channel.md)称作 Customer Journey Analytics 功能和用例，并将[拼合](../stitching/overview.md)作为实现此目的的重要功能。 |

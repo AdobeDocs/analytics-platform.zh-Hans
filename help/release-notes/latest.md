@@ -20,7 +20,7 @@ ht-degree: 100%
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Report Builder 增强功能** | <ul><li>您可以从“工作簿”选项卡下载计划任务，然后为其添加标题，保存并共享它。[了解详情](/help/report-builder/schedule-reportbuilder.md)</li><li>将开始日期作为维度，允许您将数据块的开始日期显示为数据块输出中的维度。[了解详情](/help/report-builder/create-a-data-block.md) </li></ul> | 不适用 | 2023 年 8 月 17 日 |
+| **Report Builder 增强** | <ul><li>可从“工作簿”选项卡下载某个计划任务，然后为其加标题、保存它和共享它。[了解详情](/help/report-builder/schedule-reportbuilder.md)</li><li>通过将开始日期作为维度，可将数据块的开始日期显示为数据块输出中的维度。[了解详情](/help/report-builder/create-a-data-block.md) </li></ul> | 不适用 | 2023 年 8 月 17 日 |
 | **货币换算** | 客户历程增加了支持多种货币的能力。您可以在数据视图设置中将一种货币转换为另一种货币。[了解详情](/help/data-views/component-settings/format.md) | 不适用 | 2023 年 8 月 30 日 |
 | **Analytics Source Connector 提供对 A4T 分类的支持** | 我们正在添加关联 ID，以便轻松加入 Adob&#x200B;&#x200B;e Target 活动和体验事件的分类数据。 | 不适用 | 2023 年 9 月 11 日 |
 | **报表活动管理器** | 管理员可以获得有关每个连接的报告消耗情况的详细信息，使管&#x200B;&#x200B;理员能够轻松诊断并修复报告高峰时段的容量问题。 | 不适用 | 2023 年 9 月 12 日 |
