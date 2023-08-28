@@ -1,11 +1,12 @@
 ---
 title: 指导分析概述
 description: 一种分析Customer Journey Analytics中的数据的方法，使产品团队能够快速获得高质量的见解。 也称为Product Analytics。
+keywords: 产品分析
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: bf34b4e1a7c1e28cbaae98e61492901b1d143e3e
+source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1130'
 ht-degree: 8%
 
 ---
@@ -23,7 +24,7 @@ Adobe Product Analytics使产品团队能够通过基于Customer Journey Analyti
 | 分析类型 | 视图类型 | 描述 |
 | --- | --- | --- |
 | [!UICONTROL 影响] | [版本](types/release.md) | 比较发布前和发布后相同时期的性能. |
-| [!UICONTROL 影响] | [首次使用](types/first-use.md) | 衡量首次功能使用对关键指标的影响. |
+| [!UICONTROL 影响] | [首次使用](types/first-use.md) | 衡量功能首次使用对关键指标的影响. |
 | [!UICONTROL 漏斗] | [摩擦](types/friction.md) | 比较步骤之间的转化率. |
 | [!UICONTROL 漏斗] | [转化趋势](types/conversion-trends.md) | 跟踪转化率随时间发生的变化. |
 | [!UICONTROL 用户增长] | [活动](types/active.md) | 确定新的、保留的、返回的或休眠的用户. |
@@ -60,7 +61,7 @@ Adobe Product Analytics使产品团队能够通过基于Customer Journey Analyti
 
 {style="table-layout:auto"}
 
-## 配置
+## 设置
 
 引导式分析是Adobe Product Analytics的一部分，是Customer Journey Analytics的付费附加功能。 如果贵组织希望开始使用这一组功能，请与您的Adobe客户团队联系。
 
