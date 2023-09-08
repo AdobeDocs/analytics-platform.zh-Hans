@@ -3,16 +3,16 @@ title: 创建受众并将受众发布到实时客户档案
 description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 15853fe7f37b1f0a3088f8dc108d7c65f1ef470a
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 61%
+source-wordcount: '1608'
+ht-degree: 60%
 
 ---
 
 # 创建并发布受众
 
-本主题讨论如何创建并发布Customer Journey Analytics中识别的受众到 [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans) 用于Adobe Experience Platform客户定位和个性化。
+本主题讨论如何创建并发布Customer Journey Analytics中识别的受众到 [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans) 在Adobe Experience Platform中进行客户定位和个性化。
 
 阅读此 [概述](/help/components/audiences/audiences-overview.md) 熟悉Customer Journey Analytics受众的概念。
 
@@ -39,7 +39,7 @@ ht-degree: 61%
    | [!UICONTROL 名称] | 受众的名称。 |
    | [!UICONTROL 标记] | 出于组织目的而要分配给受众的任何标记。您可以使用预先存在的标记或输入新标记。 |
    | [!UICONTROL 描述] | 添加合适的受众描述以将受众与其他人区分开来。 |
-   | [!UICONTROL 刷新频率] | 您刷新受众所要采用的频率。<ul><li>您可以选择创建不需要刷新的一次性受众（默认）。例如，这可能有助于特定的一次性营销活动。</li><li>您可以选择其他刷新间隔。对于4小时刷新频率，受众刷新限制为75到150次，具体取决于您的Customer Journey Analytics权限。</li></ul> |
+   | [!UICONTROL 刷新频率] | 您刷新受众所要采用的频率。<ul><li>您可以选择创建不需要刷新的一次性受众（默认）。例如，这可能有助于特定的一次性营销活动。</li><li>您可以选择其他刷新间隔。对于4小时的刷新频率，受众刷新限制为75至150次，具体取决于您的Customer Journey Analytics权限。</li></ul> |
    | 过期日期 | 当受众将停止刷新时。默认值为创建日期开始 1 年。对过期受众的处理方法与过期的计划报告类似——管理员在受众过期前一个月会收到一封电子邮件。 |
    | 刷新回顾时段 | 指定创建此受众时要在数据窗口中返回多远。最多为 90 天。 |
    | [!UICONTROL 一次性日期范围] | 您希望在其中发布一次性受众的日期范围。 |
@@ -52,7 +52,7 @@ ht-degree: 61%
 
    受众预览显示在右边栏中。它允许您对所创建的受众进行总结分析。
 
-   ![数据预览的屏幕快照](assets/data-preview.png)
+   ![数据预览的屏幕截图](assets/data-preview.png)
 
    | 预览设置 | 描述 |
    | --- | --- |
@@ -75,15 +75,15 @@ ht-degree: 61%
 
 ## 创建受众后会发生什么? {#after-audience-created}
 
-创建受众后，Adobe会为每个新的Experience Platform受众创建一个Customer Journey Analytics流区段。 仅当您的组织设置为进行流式划分时，才会创建Adobe Experience Platform流式区段。
+创建受众后，Adobe会为每个新的Experience Platform受众创建一个Customer Journey Analytics流区段。 仅当您的组织设置为流式分段时，才会创建Adobe Experience Platform流式区段。
 
-* Adobe Experience Platform区段与Customer Journey Analytics受众共享相同的名称/描述，但该名称将附加有Customer Journey Analytics受众ID，以确保它是唯一的。
+* Adobe Experience Platform区段与Customer Journey Analytics受众共享相同的名称/描述，但会将该名称附加到Customer Journey Analytics受众ID以确保它是唯一的。
 * 如果Customer Journey Analytics受众名称/描述发生更改，则Adobe Experience Platform区段名称/描述也会反映该更改。
-* 如果用户删除了Customer Journey Analytics受众，则不会删除Adobe Experience Platform区段。 原因是Customer Journey Analytics受众可能稍后被取消删除。
+* 如果用户删除了Customer Journey Analytics受众，则不会删除Adobe Experience Platform区段。 原因是Customer Journey Analytics受众可能以后不会被删除。
 
 ## 延迟注意事项 {#latency}
 
-在受众发布之前、期间和之后的多个时间点，可能会发生延迟。 以下是对可能出现的延迟情况的概述。
+在受众发布之前、期间和之后的多个时间点，可能会出现延迟。 以下是对可能出现的延迟情况的概述。
 
 ![受众发布的延迟，如本节所述。](assets/latency-diagram.png)
 
@@ -92,7 +92,7 @@ ht-degree: 61%
 | 未显示 | Adobe Analytics到Analytics源连接器(A4T) | 最多 30 分钟 |
 | 1 | 将数据摄取到数据湖（从Analytics源连接器或其他源） | 最多 90 分钟 |
 | 2 | 将数据从Experience Platform数据湖摄取到Customer Journey Analytics | 最多 90 分钟 |
-| 3 | 受众发布到实时客户配置文件，包括自动创建流式区段，并可让区段准备好接收数据。 | 约 60 分钟 |
+| 3 | 受众发布到实时客户配置文件，包括自动创建流式区段，并可让区段准备好接收数据。<p>**注意**：将在1-2分钟内在Experience Platform中创建/定义受众。 但是，大约需要60分钟之后，受众才会开始根据匹配的标准接收ID，并准备好进行激活。 | 约 60 分钟 |
 | 4 | 受众的刷新频率 | <ul><li>一次性刷新（延迟小于 5 分钟）</li><li>每 4 小时、每天、每周、每月刷新一次（延迟与刷新率密切相关） |
 | 5 | 在Adobe Experience Platform中创建目标：激活新区段 | 1-2 小时 |
 
@@ -100,7 +100,7 @@ ht-degree: 61%
 
 ## 在Experience Platform中使用Customer Journey Analytics受众 {#audiences-aep}
 
-Customer Journey Analytics会从已发布的受众中获取所有命名空间和ID组合，并将它们流式传输到实时客户个人资料(RTCP)中。 Customer Journey Analytics根据选定内容将受众发送到设置了主要身份的Experience Platform [!UICONTROL 人员ID] 配置连接时。
+Customer Journey Analytics会从已发布的受众中获取所有命名空间和ID组合，并将其以流式传输到实时客户个人资料(RTCP)中。 Customer Journey Analytics根据选择的内容，将受众发送到设置了主要身份的Experience Platform [!UICONTROL 人员ID] 配置连接时。
 
 然后，RTCP 会检查每个命名空间/ID 组合，并查找可能包含它的个人资料。个人资料其实就是由所链接的命名空间、ID 和设备组成的集群。如果它找到一份相关的个人资料，则会将命名空间和 ID 作为区段会员资格属性添加到此个人资料中的其他 ID。举个例子， <user@adobe.com> 可以跨其所有设备和渠道进行定位。 如果未找到相关的个人资料，则会创建一份新的个人资料。
 
@@ -116,13 +116,13 @@ Customer Journey Analytics您可以在Platform中通过转到 **[!UICONTROL 区�
 
 +++**如果用户不再是Customer Journey Analytics中的受众成员，会发生什么情况？**
 
-在这种情况下，会从Customer Journey Analytics向Experience Platform发送退出事件。
+在这种情况下，系统会从Customer Journey Analytics向Experience Platform发送退出事件。
 
 +++
 
 +++**如果删除Customer Journey Analytics中的受众会发生什么情况？**
 
-删除Customer Journey Analytics受众后，该受众将不再显示在Experience PlatformUI中。 然而，在 Platform 中并没有删除和该受众相关联的个人资料。
+删除Customer Journey Analytics受众后，该受众将不再出现在Experience PlatformUI中。 然而，在 Platform 中并没有删除和该受众相关联的个人资料。
 
 +++
 
@@ -132,7 +132,7 @@ Customer Journey Analytics您可以在Platform中通过转到 **[!UICONTROL 区�
 
 +++
 
-+++**Customer Journey Analytics是以管道事件的形式还是以同样发送到数据湖的平面文件的形式发送受众数据？**
++++**Customer Journey Analytics是将受众数据作为管道事件发送，还是作为也发送到数据湖的平面文件发送？**
 
 Customer Journey Analytics通过管道将数据流式传输到RTCP中，并且这些数据还会收集到数据湖中的系统数据集中。
 
@@ -150,21 +150,21 @@ Customer Journey Analytics通过管道将数据流式传输到RTCP中，并且�
 
 +++
 
-+++**RTCP是否也处理Customer Journey Analytics消息？ Customer Journey Analytics是否可以通过受众共享将身份添加到配置文件身份图？**
++++**RTCP是否也处理Customer Journey Analytics消息？ Customer Journey Analytics能否通过Audience Sharing将身份添加到配置文件身份图？**
 
 否。我们只为每个“人”发送一个标识，因此 RTCP 不会使用任何图边。
 
 +++
 
-+++**每天、每周和每月刷新在一天中的哪个时间进行？ 每周的哪一天进行刷新？**
++++**每天、每周和每月会在什么时间进行刷新？ 每周的哪一天进行刷新？**
 
-刷新时间基于原始受众的发布时间和该时间（以及星期或月）的锚点。
+刷新时间基于原始受众的发布时间和锚点到当天时间（以及星期或月）。
 
 +++
 
-+++**用户是否可以配置每日、每周和每月刷新时间？**
++++**用户是否可以配置每日、每周和每月的刷新时间？**
 
-不能，用户不能配置它们。
+不可以，用户无法配置它们。
 
 +++
 
