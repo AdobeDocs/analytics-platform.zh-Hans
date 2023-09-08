@@ -6,7 +6,7 @@ feature: SQL Connector
 hide: true
 hidefromtoc: true
 exl-id: 80feadef-3e2d-4901-8c82-25c56d296e9f
-source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
+source-git-commit: 1b03689820c91a823cd7cf8ff42e3f5ee46083e5
 workflow-type: tm+mt
 source-wordcount: '2938'
 ht-degree: 1%
@@ -116,7 +116,7 @@ Adobe Experience Platform [查询服务](https://experienceleague.adobe.com/docs
 
       2. 粘贴 **[!UICONTROL **&#x200B;数据库&#x200B;**]** Experience Platform查询中的参数 [!UICONTROL 凭据] 在 **[!UICONTROL **&#x200B;数据库&#x200B;**]** 文本字段。
 
-         添加 `?FLATTEN` 到 **[!UICONTROL **&#x200B;数据库&#x200B;**]** 参数，因此它显示为 `prod:all?FLATTEN` 例如。 请参阅 [拼合嵌套数据结构以用于第三方BI工具](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) 以了解更多信息。
+         添加 `?FLATTEN` 到 **[!UICONTROL **&#x200B;数据库&#x200B;**]** 参数，因此它显示为 `prod:cja?FLATTEN` 例如。 请参阅 [拼合嵌套数据结构以用于第三方BI工具](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) 以了解更多信息。
 
       3. 提示输入时 **[!UICONTROL **&#x200B;数据连接&#x200B;**]** 模式，选择 **[!UICONTROL ** Directquery **]** 以确保数据结构正确扁平化。
 
@@ -158,7 +158,7 @@ Adobe Experience Platform [查询服务](https://experienceleague.adobe.com/docs
 
       3. 粘贴 **[!UICONTROL **&#x200B;数据库&#x200B;**]** Experience Platform查询中的参数 [!UICONTROL 凭据] 到 **[!UICONTROL **&#x200B;数据库&#x200B;**]** 文本字段。
 
-         添加 `%3FFLATTEN` 到 **[!UICONTROL **&#x200B;数据库&#x200B;**]** 参数，因此它显示为 `prod:all%3FFLATTEN` 例如。 请参阅 [拼合嵌套数据结构以用于第三方BI工具](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) 以了解更多信息。
+         添加 `%3FFLATTEN` 到 **[!UICONTROL **&#x200B;数据库&#x200B;**]** 参数，因此它显示为 `prod:cja%3FFLATTEN` 例如。 请参阅 [拼合嵌套数据结构以用于第三方BI工具](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) 以了解更多信息。
 
       4. 选择 **[!UICONTROL **&#x200B;用户名和密码&#x200B;**]** 从 **[!UICONTROL **&#x200B;身份验证&#x200B;**]** 列表。
 
@@ -355,7 +355,7 @@ ORDER BY -metric1 DESC
 
 ### 一般功能支持
 
-| 函数 | 示例 | 详细信息 |
+| 功能 | 示例 | 详细信息 |
 |---|---|---|
 | [强制转换（列类型）](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` 或 <br/> `` `timestamp`::string `` | 当前不支持类型强制转换，但不会引发任何错误。 忽略该 `CAST` 函数。 |
 | [时间戳(timeString)](https://spark.apache.org/docs/latest/api/sql/index.html#timestamp) | `` WHERE `timestamp` >= TIMESTAMP('2022-01-01 00:00:00') AND   `timestamp` < TIMESTAMP('2022-01-02 00:00:00') `` | 将时间字符串解析为时间戳，以在 `WHERE` 子句。 |
@@ -371,7 +371,7 @@ ORDER BY -metric1 DESC
 
 **字符串函数**
 
-| 函数 | 示例 | 详细信息 |
+| 功能 | 示例 | 详细信息 |
 |---|---|---|
 | [LOWER(stringDimension)](https://spark.apache.org/docs/latest/api/sql/index.html#lower) | ``SELECT LOWER(name) AS lower_name`` | 在传递的字段上生成动态维度标识。 |
 
@@ -379,7 +379,7 @@ ORDER BY -metric1 DESC
 
 **日期时间函数**
 
-| 函数 | 示例 | 详细信息 |
+| 功能 | 示例 | 详细信息 |
 |---|---|---|
 | [YEAR（日期或日期时间）](https://spark.apache.org/docs/latest/api/sql/index.html#year) | ``SELECT YEAR(`timestamp`)`` | 在传递的字段上生成动态维度标识。 |
 | [MONTH（日期或日期时间）](https://spark.apache.org/docs/latest/api/sql/index.html#month) | ``SELECT MONTH(`timestamp`)`` | 在传递的字段上生成动态维度标识。 |

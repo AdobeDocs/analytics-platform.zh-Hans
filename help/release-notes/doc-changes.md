@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e9c6aba709d0e75a42a16b455612e0cad1428779
+source-git-commit: e4aa9a525fb2ae291cc0c753524d09a81b88c4c3
 workflow-type: tm+mt
-source-wordcount: '2566'
-ht-degree: 100%
+source-wordcount: '2583'
+ht-degree: 99%
 
 ---
 
@@ -19,6 +19,8 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 
 | 功能 | 描述 |
 | --- | --- |
+| **2023 年 9 月** | |
+| 地区数据收集 | 已更新 [常见问题解答](../getting-started/cja-faq.md#12-regional-data-collection) ，其中包含有关在使用Customer Journey Analytics时收集区域数据的信息。 |
 | **2023 年 8 月** | |
 | “媒体播放耗时”面板 | 更新了[“媒体播放耗时”面板](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)的内容以提高可读性。 |
 | Report Builder 增强 | 更新了[安排工作簿](/help/report-builder/schedule-reportbuilder.md)的内容以提供下载计划任务的信息。更新了[创建数据块](/help/report-builder/create-a-data-block.md)的内容以提供使用开始日期作为维度的信息。 |
