@@ -4,10 +4,10 @@ description: 派生字段通过一组可用函数和函数模板指定对架构�
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: f8ad8b651a9a50b4fc4663ee82e842e3e5da7432
+source-git-commit: 9dbda5000c1d0930fac782b5e3cf382ed6b99a85
 workflow-type: tm+mt
-source-wordcount: '4433'
-ht-degree: 15%
+source-wordcount: '5056'
+ht-degree: 16%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 15%
 | A | **规则名称** | 默认情况下，规则名称为 **规则X** （X表示序列号）。 要编辑规则的名称，请选择其名称，然后键入新名称，例如 `Query Parameter`. |
 | B | **函数名称** | 规则的选定函数名称，例如 [!UICONTROL URL解析]. 当函数是函数序列中的最后一个并确定最终输出值时，函数名称后面将跟有 [!UICONTROL  — 最终输出]例如 [!UICONTROL URL分析 — 最终输出]. <br/>要显示包含函数详细信息的弹出窗口，请选择 ![“帮助”图标](assets/Smock_HelpOutline_18_N.svg). |
 | C | **规则描述** | 您可以选择向规则添加说明。<br/>选择 ![“更多”图标](assets/More.svg)，然后选择 **[!UICONTROL **&#x200B;添加说明&#x200B;**]** 添加说明或 **[!UICONTROL **&#x200B;编辑描述&#x200B;**]** 编辑现有描述。<br/>使用编辑器输入说明。 您可以使用工具栏设置文本格式（使用样式选择器、粗体、斜体、下划线、右、左、居中、颜色、数字列表、项目符号列表）并向外部信息添加链接。 <br/>要完成编辑说明，请单击编辑器外部的。 |
-| D | **功能区域** | 定义函数的逻辑。 接口取决于函数的类型。 的下拉菜单 [!UICONTROL 字段] 或 [!UICONTROL 值] 根据函数期望的输入类型，显示所有类别的可用字段（规则、标准字段、字段）。 请参阅 [函数引用](#function-reference) 每个受支持功能的详细信息。 |
+| D | **功能区域** | 定义函数的逻辑。 接口取决于函数的类型。 的下拉菜单 [!UICONTROL 字段] 或 [!UICONTROL 值] 根据函数期望的输入类型，显示所有类别的可用字段（规则、标准字段、字段）。 <!-- Alternatively, you can drag and drop a field from the Schema and Standard fields selector on to a Field or Value. When that dragged field is originating from a Lookup dataset, a Lookup function is automatically inserted before the function you define.  See [Function reference](#function-reference) on detailed information for each of the functions supported. --> |
 
 {style="table-layout:auto"}
 
@@ -413,9 +413,6 @@ Customer Journey Analytics使用以下默认容器模型：
 
 定义由新派生字段中的相应值替换的一组值。
 
-
-
-
 +++ 详细信息
 
 >[!NOTE]
@@ -426,7 +423,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 要分类的字段]：<ul><li>规则</li><li>标准字段</li><li>字段</li></ul></li><li>[!UICONTROL 当值等于] 和 [!UICONTROL 替换值为]：</p><ul><li>字符串</li></ul><li>显示原始值<ul><li>布尔值</li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段5个函数</p> | <p>新建派生字段</p> |
+| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 要分类的字段]：<ul><li>规则</li><li>标准字段</li><li>字段</li></ul></li><li>[!UICONTROL 当值等于] 和 [!UICONTROL 替换值为]：</p><ul><li>字符串</li></ul><li>显示原始值<ul><li>布尔值</li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段5个函数<br/>每个函数100行</p> | <p>新建派生字段</p> |
 
 {style="table-layout:auto"}
 
@@ -535,6 +532,17 @@ Customer Journey Analytics使用以下默认容器模型：
 | [!DNL Deals & Offers] |
 | [!DNL Reviews] |
 | [!DNL Generate Quote] |
+
+
+## 更多信息 {#classify-moreinfo}
+
+分类规则界面中提供了以下附加功能：
+
+- 要快速清除所有表值，请选择 ![擦除](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Erase_18_N.svg) **[!UICONTROL 清除所有表值]**.
+- 要上载包含原始值（当值等于时）和新值（将值替换为）的CSV文件，请选择 ![CSV](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileCSV_18_N.svg) **[!UICONTROL 上传CSV]**.
+- 要下载用于创建具有要上传的原始值和新值的CSV文件的模板，请选择 ![下载](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL 下载CSV模板]**.
+- 要下载包含规则界面中填充的所有原始值和新值的CSV文件，请选择 ![下载](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL 下载CSV值]**.
+
 
 +++
 
@@ -680,6 +688,108 @@ Customer Journey Analytics使用以下默认容器模型：
 | [!DNL email marketing] |
 | [!DNL email marketing] |
 | [!DNL email marketing] |
+
+{style="table-layout:auto"}
+
++++
+
+
+<!-- LOOKUP
+
+### Lookup
+
+Lookup values using a field from a lookup dataset and returns value in a new derived field or for further rule processing.
+
++++ Details
+
+## Specification {#lookup-io}
+
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|---|---|
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field to apply lookup]:</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul><li>[!UICONTROL Lookup dataset]</li><ul><li>Dataset</li></ul><li>[!UICONTROL Matching key]<ul><li>Rules</li><li>Fields</li></ul></li><li>Values to return<ul><li>Rules</li><li>Fields</li></ul></li></ul> | <p>N/A</p> | <p>3 functions per derived field</p> | <p>New derived field or value for further processing in next rule</p> |
+
+{style="table-layout:auto"}
+
+## Use case {#lookup-uc}
+
+You would like to lookup the activity name using the activity id collected when your customers clicked on a personalized banner shown through Adobe Target. You want to use a lookup dataset with Analytics for Target (A4T) activities containing activity ids and activity names.
+
+### A4T lookup dataset {#lookup-uc-lookup}
+
+| Activity Id | Activity Name |
+|---|---|
+| 415851 | MVT Test Category Pages |
+| 415852 | Luma - Campaign Max 2022 |
+| 402922 | Home Page Banners |
+
+{style="table-layout:auto"}
+
+### Derived field {#lookup-uc-derivedfield}
+
+You define an `Activity Name` derived field. You use the [!UICONTROL LOOKUP] function to define a rule to lookup the value from your collected data, specified in the [!UICONTROL Field to apply lookup] field. You select the lookup dataset from the [!UICONTROL Lookup dataset] list, selecting the identifier field from the [!UICONTROL Matching key list] and the field to return from the [!UICONTROL Values to return] list.
+
+![Screenshot of the Lowercase rule](assets/lookup.png)
+
+## More info
+
+You can quickly insert a [!UICONTROL Lookup] function in the rule builder, already containing one or more other functions.
+
+  1. Select **[!UICONTROL Schema fields]** from selector.
+  1. Select ![Schema field icon](assets/Smock_Folder_18_N.svg) **[!UICONTROL Lookup datasets]**.
+  1. Select your lookup dataset and find the field you want to use for lookup.
+  1. Drag the lookup field and drop the field on any of the available input fields for a function (for example Case When). When valid, a blue **[!UICONTROL + Add box]** will allow you to drop the field and automatically insert a Lookup function before the function you dropped the lookup field on, and populate the Lookup function with relevant values for all fields.
+     ![Lookup drag](assets/lookup-drag.png) 
+
++++
+
+-->
+
+<!-- LOWERCASE -->
+
+### 小写
+
+将字段中的值转换为小写，并将其存储到新的派生字段中。
+
++++ 详细信息
+
+## 规范 {#lowercase-io}
+
+| 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
+|---|---|---|---|---|
+| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 字段]:</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul> | <p>不适用</p> | <p>每个派生字段有2个函数</p> | <p>新建派生字段</p> |
+
+{style="table-layout:auto"}
+
+## 用例 {#lowercase-uc}
+
+您希望将所有收集的产品名称转换为小写以便正确报告。
+
+### 数据早于 {#lowercase-uc-databefore}
+
+| 收集的产品名称 | 产品查看次数 |
+|---|---:|
+| 网球拍 | 35 |
+| 网球拍 | 33 |
+| 网球拍 | 21 |
+| 棒球棒 | 15 |
+| 棒球棒 | 12 |
+| 棒球棒 | 10 |
+
+{style="table-layout:auto"}
+
+### 派生字段 {#lowercase-uc-derivedfield}
+
+您定义 `Product Names` 派生字段。 您使用 [!UICONTROL 小写] 函数来定义一个规则，以将 [!UICONTROL 收集的产品名称] 字段转换为小写并将其存储在新的派生字段中。
+
+![小写规则的屏幕截图](assets/lowercase.png)
+
+
+### 之后的数据 {#lowercase-uc-dataafter}
+
+| 产品名称 | 产品查看次数 |
+|---|---|
+| 网球拍 | 89 |
+| 棒球棒 | 37 |
 
 {style="table-layout:auto"}
 
@@ -938,6 +1048,119 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 {style="table-layout:auto"}
 
++++
+
+
+<!-- TRIM -->
+
+### 修剪
+
+将来自字段值开头或结尾的空白、特殊字符或字符数修剪到新的派生字段中。
+
++++ 详细信息
+
+## 规范 {#trim-io}
+
+| 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
+|---|---|---|---|---|
+| <ul><li>字符串</li></ul> | <ul><li>[!UICONTROL 字段]<ul><li>规则</li><li>标准字段</li><li>字段</li></ul></li><li>修剪空格</li><li>修剪特殊字符<ul><li>输入特殊字符</li></ul></li><li>从左侧修剪<ul><li>From <ul><li>字符串开头</li><li>位置<ul><li>位置 #</li></ul></li><li>字符串<ul><li>字符串值</li><li>索引</li><li>标记以包含字符串</li></ul></li></ul></li><li>至<ul><li>字符串结尾</li><li>位置<ul><li>位置 #</li></ul></li><li>字符串<ul><li>字符串值</li><li>索引</li><li>标记以包含字符串</li></ul></li><li>长度</li></ul></li></ul></li><li>从右侧修剪<ul><li>From <ul><li>字符串结尾</li><li>位置<ul><li>位置 #</li></ul></li><li>字符串<ul><li>字符串值</li><li>索引</li><li>标记以包含字符串</li></ul></li></ul></li><li>至<ul><li>字符串开头</li><li>位置<ul><li>位置 #</li></ul></li><li>字符串<ul><li>字符串值</li><li>索引</li><li>标记以包含字符串</li></ul></li><li>长度</li></ul></li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段有1个函数</p> | <p>新建派生字段</p> |
+
+{style="table-layout:auto"}
+
+## 用例1 {#trim-uc1}
+
+您可以收集产品数据，但这些数据包含用于生成片段报表的隐藏空白字符。 您想要轻松修剪任何多余的空格
+
+### 数据早于 {#trim-uc1-databefore}
+
+| 产品 ID | 活动 |
+|---|--:|
+| `"prod12356 "` | 1 |
+| `"prod12356"` | 1 |
+| `" prod12356"` | 1 |
+
+{style="table-layout:auto"}
+
+### 派生字段 {#trim-u1-derivedfield}
+
+您创建 `Product Identifier` 派生字段。 您使用 [!UICONTROL TRIM] 函数以定义规则 **[!UICONTROL 修剪空白]** 从 **[!UICONTROL 产品ID]** 字段。
+
+![拆分规则1的屏幕截图](assets/trim-1.png)
+
+### 之后的数据 {#trim-uc1-dataafter}
+
+| 产品标识符 | 活动 |
+|---|--:|
+| `"prod12356 "` | 3 |
+
+{style="table-layout:auto"}
+
+## 用例2 {#trim-uc2}
+
+您在收集到的页面名称上的数据在页面名称末尾包含一些错误的特殊字符，这些字符需要删除。
+
+### 数据早于 {#trim-uc2-databefore}
+
+| 名称 | 活动 |
+|---|--:|
+| home page# | 1 |
+| home page? | 1 |
+| home page% | 1 |
+| home page&amp; | 1 |
+| home page/ | 1 |
+
+{style="table-layout:auto"}
+
+### 派生字段 {#trim-u2-derivedfield}
+
+您创建  `Page Name` 派生字段。 您使用 [!UICONTROL TRIM] 函数以定义规则 [!UICONTROL 修剪特殊字符] 从 [!UICONTROL 名称] 字段使用的 [!UICONTROL 特殊字符] `#?%&/`.
+
+![拆分规则 — 第一个值的屏幕截图](assets/trim-2.png)
+
+### 之后的数据 {#trim-uc2-dataafter}
+
+| 页面名称 | 活动 |
+|---|--:|
+| home page | 5 |
+
+{style="table-layout:auto"}
+
+
+## 用例3 {#trim-uc3}
+
+您收集包括storeID的数据。 storeID包含缩写的美国州代码作为前两个字符。 您只需在报表中使用该状态代码。
+
+### 数据早于 {#trim-uc3-databefore}
+
+| storeID | 活动 |
+|---|--:|
+| CA293842 | 1 |
+| CA423402 | 1 |
+| UT123418 | 1 |
+| UT189021 | 1 |
+| ID028930 | 1 |
+| OR234223 | 1 |
+| NV22342 | 1 |
+
+{style="table-layout:auto"}
+
+### 派生字段 {#trim-u3-derivedfield}
+
+您创建  `Store Identifier` 派生字段。 您使用 [!UICONTROL TRIM] 函数以定义规则 [!UICONTROL 从右侧截断] 该 [!UICONTROL storeID] 从字符串结束到位置的字段 `3`.
+
+![拆分规则 — 第一个值的屏幕截图](assets/trim-3.png)
+
+### 之后的数据 {#trim-uc3-dataafter}
+
+| 存储标识符 | 活动 |
+|---|--:|
+| CA | 2 |
+| UT | 2 |
+| ID | 1 |
+| 或者 | 1 |
+| NV | 1 |
+
+{style="table-layout:auto"}
 +++
 
 
