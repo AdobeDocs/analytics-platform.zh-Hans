@@ -3,9 +3,9 @@ title: 频率视图
 description: 按使用频率衡量参与度.
 feature: Guided Analysis
 keywords: 产品分析
-source-git-commit: 1e095720301f3e59e88674d086f5e0de9df88872
+source-git-commit: 77192426a58e1560abe91b904452b9cd46c862e9
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '539'
 ht-degree: 3%
 
 ---
@@ -13,6 +13,8 @@ ht-degree: 3%
 # [!UICONTROL 频率] 视图
 
 此 **[!UICONTROL 频率]** 查看按查看事件的频率对事件数据进行分组。 此报表的垂直轴包含存储段，这些存储段表示查看的事件或事件的频率。 水平轴测量每个时段的用户或会话数。
+
+![频率屏幕快照](../assets/frequency-stacked.png)
 
 ## 用例
 
