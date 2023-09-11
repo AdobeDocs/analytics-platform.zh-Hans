@@ -4,7 +4,7 @@ description: 派生字段通过一组可用函数和函数模板指定对架构�
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 9dbda5000c1d0930fac782b5e3cf382ed6b99a85
+source-git-commit: f1935947fe0273e5cdd5752ab7a9c871b02c990d
 workflow-type: tm+mt
 source-wordcount: '5056'
 ht-degree: 16%
@@ -1091,7 +1091,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 | 产品标识符 | 活动 |
 |---|--:|
-| `"prod12356 "` | 3 |
+| `"prod12356"` | 3 |
 
 {style="table-layout:auto"}
 
