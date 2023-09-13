@@ -4,16 +4,16 @@ description: 随着时间的推移衡量用户参与度.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
 keywords: 产品分析
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+source-git-commit: f41d4a6c8d181ed05fdb34657d4c7677d50ade5a
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '522'
 ht-degree: 2%
 
 ---
 
 # [!UICONTROL 使用情况] 视图
 
-此 **[!UICONTROL 使用情况]** 视图可提供有关产品或用户行为在一段时间内的宝贵见解。 此报告的水平轴是一个时间间隔，而垂直轴测量所需的事件。
+此 **[!UICONTROL 使用情况]** 视图提供关于您的产品性能或用户一段时间内行为的宝贵见解。 此报告的水平轴是一个时间间隔，而垂直轴测量所需的事件。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421666/?learn=on)
 
@@ -39,6 +39,12 @@ ht-degree: 2%
 
 * **[!UICONTROL 量度]**：要测量的量度。 选项包括“事件”、“会话”、“用户”、“每个会话的事件”和“每个用户的事件”。
 * **[!UICONTROL 图表类型]**：要使用的可视化图表类型。 选项包括折线图、条形图、栈叠条形图和栈叠面积图。
+
+## 叠加
+
+向图表添加其他数据。
+
+* **[!UICONTROL 显示异常]**：在分析上运行异常检测。 离群值显示为圆点，您可以将光标悬停在这些圆点上以获取更多信息。
 
 ## 应用时间比较
 
