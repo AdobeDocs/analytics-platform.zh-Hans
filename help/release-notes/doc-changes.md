@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 09414449c200199682b68cf5aa71c06cb192328f
+source-git-commit: 473d0851e537decc8a26f653e81b161c7b7dc551
 workflow-type: tm+mt
-source-wordcount: '2604'
-ht-degree: 99%
+source-wordcount: '2651'
+ht-degree: 97%
 
 ---
 
@@ -20,10 +20,11 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2023 年 9 月** | |
+| 更新了“媒体播放耗时”面板的文章结构 | 删除了名为“Media Playback Time Spent”（媒体播放耗时）的文件夹，并将该文件夹的内容合并为一篇文章： [“Media Playback耗时”面板](/help/analysis-workspace/c-panels/media-playback-time-spent.md). <p>此更改与其他面板的文档更加一致。</p> |
 | 其他派生字段功能 | 更新了新文档 [`Lowercase`](/help/data-views/derived-fields/derived-fields.md#lowercase) 和 [`Trim`](/help/data-views/derived-fields/derived-fields.md#trim) 函数以及添加到中的其他CSV功能 [`Classify`](/help/data-views/derived-fields/derived-fields.md#classify) 函数。 |
 | 地区数据收集 | 通过关于在使用 Customer Journey Analytics 时进行地区数据收集的信息更新了[常见问题解答](../getting-started/cja-faq.md#12-regional-data-collection)。 |
 | **2023 年 8 月** | |
-| “媒体播放耗时”面板 | 更新了[“媒体播放耗时”面板](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)的内容以提高可读性。 |
+| “媒体播放耗时”面板 | 更新了[“媒体播放耗时”面板](/help/analysis-workspace/c-panels/media-playback-time-spent.md)的内容以提高可读性。 |
 | Report Builder 增强 | 更新了[安排工作簿](/help/report-builder/schedule-reportbuilder.md)的内容以提供下载计划任务的信息。更新了[创建数据块](/help/report-builder/create-a-data-block.md)的内容以提供使用开始日期作为维度的信息。 |
 | 移动了关于管理计划项目的内容 | 在《Analytics 组件指南》中创建了一篇名为[计划项目](/help/components/scheduled-projects-manager.md)的新文章。此内容以前位于《Analytics 工具指南》中的[计划项目](/help/analysis-workspace/curate-share/t-schedule-report.md)一文中。 |
 | 支持 Adobe Customer Journey Analytics 功能 | 在“Customer Journey Analytics 与 Adobe Analytics 相比”中关于会话化功能的&#x200B;*以新方式支持*&#x200B;表中添加了更多信息。[了解详情](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
