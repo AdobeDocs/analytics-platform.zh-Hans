@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 09414449c200199682b68cf5aa71c06cb192328f
 workflow-type: tm+mt
 source-wordcount: '2604'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | --- | --- |
 | **2023 年 9 月** | |
 | 其他派生字段功能 | 更新了新文档 [`Lowercase`](/help/data-views/derived-fields/derived-fields.md#lowercase) 和 [`Trim`](/help/data-views/derived-fields/derived-fields.md#trim) 函数以及添加到中的其他CSV功能 [`Classify`](/help/data-views/derived-fields/derived-fields.md#classify) 函数。 |
-| 地区数据收集 | 已更新 [常见问题解答](../getting-started/cja-faq.md#12-regional-data-collection) ，其中包含有关在使用Customer Journey Analytics时收集区域数据的信息。 |
+| 地区数据收集 | 通过关于在使用 Customer Journey Analytics 时进行地区数据收集的信息更新了[常见问题解答](../getting-started/cja-faq.md#12-regional-data-collection)。 |
 | **2023 年 8 月** | |
 | “媒体播放耗时”面板 | 更新了[“媒体播放耗时”面板](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)的内容以提高可读性。 |
 | Report Builder 增强 | 更新了[安排工作簿](/help/report-builder/schedule-reportbuilder.md)的内容以提供下载计划任务的信息。更新了[创建数据块](/help/report-builder/create-a-data-block.md)的内容以提供使用开始日期作为维度的信息。 |
@@ -40,7 +40,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 跨渠道分析和拼合 | 为了预测即将进行的更改，以支持拼合并进一步阐明如何使用拼合提升跨渠道分析，我们编辑了与跨渠道分析功能相关的文档，将[跨渠道分析](../use-cases/cross-channel/cross-channel.md)称作 Customer Journey Analytics 功能和用例，并将[拼合](../stitching/overview.md)作为实现此目的的重要功能。 |
 | PowerBI 和 Tableau 访问 Customer Journey Analytics 数据视图 | 通过 Customer Journey Analytics SQL Connector，SQL 可访问您在 Customer Journey Analytics 中定义的数据视图。[了解详情](/help/data-views/sql-connector.md) |
 | Adobe Journey Optimizer 数据视图 | Customer Journey Analytics 管理员有权访问 Customer Journey Analytics 中某些名为“AJO 数据视图（沙盒名称）”的额外数据视图。[了解详情](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html)。 |
-| 货币兑换 | 更新了有关[货币兑换](../data-views/component-settings/format.md#currency)支持的文档。 |
+| 货币换算 | 更新了有关[货币换算](../data-views/component-settings/format.md#currency)支持的文档。 |
 | 计算量度更新 | 对计算量度文档作出了以下更新，以使其与当前的 Customer Journey Analytics 功能保持一致： <ul><li>更新了 Customer Journey Analytics 中提供的[默认计算量度](/help/components/calc-metrics/default-calcmetrics.md)的列表</li><li>更新了各种计算指标文章中的屏幕截图和过程 </li></ul> |
 | **2023 年 5 月** | |
 | 深层链接（移动应用程序）文档 | 使用户可发送记分卡的链接，而这些链接将引导用户直接进入应用程序中的记分卡项目。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) |
