@@ -5,15 +5,15 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 source-git-commit: 355b7a84274f56e392a718ef11002eb44a57c14e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2558'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
 # 常见问题解答
 
-Adobe Customer Journey Analytics是新一代分析产品。 本文提供了有关Customer Journey Analytics的常见问题解答。 有关更多信息，请查阅 [Customer Journey Analytics 功能支持](/help/getting-started/aa-vs-cja/cja-aa.md)。
+Adobe Customer Journey Analytics 是下一代分析产品。本文提供有关 Customer Journey Analytics 的常见问题解答。有关更多信息，请查阅 [Customer Journey Analytics 功能支持](/help/getting-started/aa-vs-cja/cja-aa.md)。
 
 ## 1. 先决条件 {#prerequisites}
 
@@ -33,7 +33,7 @@ Adobe Customer Journey Analytics是新一代分析产品。 本文提供了有�
 
 +++**如果在执行 [!UICONTROL Customer Journey Analytics] 之前需要对数据进行 ETL（提取、转换、加载）操作，该怎么办？**
 
-Customer Journey Analytics包括 [数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/api/overview.html?lang=zh-Hans) 帮助在将数据放入Adobe Experience Platform数据湖之前转换数据的功能。 如果您在数据被摄取后需要 ETL，[Adobe Experience Platform 查询服务](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html?lang=zh-Hans#queries)会提供一些有限选项，但可能额外收费。
+Customer Journey Analytics 包括[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/api/overview.html?lang=zh-Hans)功能以帮助转换您的数据，然后再将其放入 Adobe Experience Platform 数据湖。如果您在已摄取数据后需要 ETL，则 [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html?lang=zh-Hans#queries) 提供一些有限的选项，但可能额外收费。
 
 +++
 
@@ -42,8 +42,7 @@ Customer Journey Analytics包括 [数据准备](https://experienceleague.adobe.c
 
 +++**[!UICONTROL Customer Journey Analytics] 是否可以跨设备或跨数据集进行“拼合”？**
 
-是的。[!UICONTROL Customer Journey Analytics ]具有[拼合](../stitching/overview.md)功能，该功能适用于数据集中经过身份验证和未经身份验证的事件。此拼接允许将不同的记录解析为单个拼接ID，以在人员级别进行跨设备分析。
-此外，当在数据集间使用通用命名空间ID（人员ID）时， [连接](/help/connections/overview.md)，您能够对多个数据集的无缝组合运行分析，并在人员级别“拼接”。
+是的。[!UICONTROL Customer Journey Analytics ]具有[拼合](../stitching/overview.md)功能，该功能适用于数据集中经过身份验证和未经身份验证的事件。这样拼接可将完全不同的记录解析为单个经过拼接的 ID，以供在人员级别进行跨设备分析。此外，在[连接](/help/connections/overview.md)内的数据集间使用公共命名空间 ID（个人 ID）时，您可对在人员级别“拼接”的多个数据集的无缝组合运行分析。
 
 +++
 
@@ -71,7 +70,7 @@ Customer Journey Analytics包括 [数据准备](https://experienceleague.adobe.c
 
 +++**未拼合的配置文件数据集记录的预期行为是什么？**
 
-**示例场景**：使用在Customer Journey Analytics连接中连接两个数据集 `CRMid` 作为个人ID。 一个是 Web 事件数据集，所有记录中都包含 `CRMid`。另一个数据集是 CRM 配置文件数据集。CRM 数据集中 40% 的数据都在 Web 事件数据集中有 `CRMid`。其他60%的数据不在Web事件数据集中 — 这些记录是否显示在Analysis Workspace的报表中？<p> **回答**：不带关联的事件的配置文件行存储在 Customer Journey Analytics 中。但是，您无法在 Analysis Workspace 中查看它们，直到与该 ID 关联的事件出现。
+**示例场景**：通过使用 `CRMid` 作为人员 ID，您在 Customer Journey Analytics 连接中连接两个数据集。一个是 Web 事件数据集，所有记录中都包含 `CRMid`。另一个数据集是 CRM 配置文件数据集。CRM 数据集中 40% 的数据都在 Web 事件数据集中有 `CRMid`。Web 事件数据集中不存在另外 60% - 这些记录是否出现在 Analysis Workspace 的报表中？<p> **回答**：不带关联的事件的配置文件行存储在 Customer Journey Analytics 中。但是，您无法在 Analysis Workspace 中查看它们，直到与该 ID 关联的事件出现。
 
 +++
 
@@ -86,7 +85,7 @@ Customer Journey Analytics包括 [数据准备](https://experienceleague.adobe.c
 
 +++**如何在 [!UICONTROL Customer Journey Analytics] 中将在线数据与离线数据关联起来？**
 
-只要数据集之间的人员ID匹配， [!UICONTROL Customer Journey Analytics] 可以跨数据集连接过滤器、归因、流量、流失等。
+只要人员 ID 在数据集之间一致，[!UICONTROL Customer Journey Analytics] 即可跨数据集连接筛选条件、归因、流量、流失等。
 
 +++
 
@@ -121,7 +120,7 @@ Customer Journey Analytics包括 [数据准备](https://experienceleague.adobe.c
 
 +++**将过去或未来日期/时间戳摄取到 Customer Journey Analytics 事件数据集中有什么限制？**
 
-<ul><li>关于过去日期/时间戳：最多10年前的事件数据。</li><li>关于未来日期/时间戳：事件数据（预测性）最多为未来一个月。</li></ul>
+<ul><li>关于过去日期/时间戳：最多存在过去十年的事件数据。</li><li>关于未来日期/时间戳：最多存在未来一个月的事件数据（预测）。</li></ul>
 
 +++
 
@@ -129,38 +128,38 @@ Customer Journey Analytics包括 [数据准备](https://experienceleague.adobe.c
 ## 4. 延迟注意事项 {#latency}
 
 >[!NOTE]
->Customer Journey Analytics 中没有固定的数据大小，因此 Adobe 无法承诺标准摄取时间。Adobe正在积极工作，通过新的更新和摄取优化来缩短这些延迟。
+>Customer Journey Analytics 中没有固定的数据大小，因此 Adobe 无法承诺标准摄取时间。Adobe 正在积极地努力通过新的更新和摄取优化而缩短这些延迟。
 
-<ul><li>实时数据或事件：当数据在 Adobe Experience Platform 中可用后，在 90 分钟内处理和摄取。（批次大小 &gt; 500 万行：超过 90 分钟。）</li><li>少量回填：7天内<li>大量回填：30 天内</li></ul>
+<ul><li>实时数据或事件：当数据在 Adobe Experience Platform 中可用后，在 90 分钟内处理和摄取。（批次大小 &gt; 500 万行：超过 90 分钟。）</li><li>少量回填：七天内<li>大量回填：30 天内</li></ul>
 
-Adobe最近更改了在Customer Journey Analytics中处理数据的方式：
+Adobe 最近改变了在 Customer Journey Analytics 中处理数据的方式：
 
-<ul><li>任何时间戳少于 24 小时的事件数据都将流入。</li><li>时间戳超过24小时的任何事件数据（即使它与较新数据位于同一批次中）都被视为回填，并且以较低的优先级摄取。</li></ul>
+<ul><li>流入时间戳为小于 24 小时前的任何事件数据。</li><li>将时间戳为大于 24 小时前的任何事件数据（即使它与更新的数据属于同一批次）视为回填，并以更低的优先级摄取这些数据。</li></ul>
 
-## 5. 设置[!UICONTROL 连接]数据保留的时段 {#data-retention}
+## 5. 设置[!UICONTROL 连接]数据保留的滚动时段 {#data-retention}
 
-此 [**[!UICONTROL 启用滚动数据窗口&#x200B;]**设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans#create-connection) 可让您将Customer Journey Analytics数据保留定义为以月计的时段（三个月、六个月等）。 在[!UICONTROL 连接]级别而非[!UICONTROL 数据集]级别设置它。数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此个人资料或查找数据集没有数据保留设置。
+通过[**[!UICONTROL 启用滚动数据时段&#x200B;]**设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans#create-connection)，可将 Customer Journey Analytics 数据保留定义为按月（三个月、六个月等）计的滚动时段。在[!UICONTROL 连接]级别而非[!UICONTROL 数据集]级别设置它。数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此个人资料或查找数据集没有数据保留设置。
 
 主要好处是，您只需存储或报告适用且有用的数据，并且可删除不再有用的旧数据。它可以帮助您保持在合同限制范围内，并减少超出预期成本的风险。
 
 ## 6. 删除数据组件的后果 {#deletion}
 
-对于数据删除，您应该关注六种类型的组件：沙盒、架构、数据集、连接、数据视图和工作区项目。 下面是关于删除其中任何一个组件的一些可能情景：
+对于数据删除，您应关注六类组件：沙盒、架构、数据集、连接、数据视图和 Workspace 项目。下面是关于删除其中任何一个组件的一些可能情景：
 
 | 如果您... | 产生的后果... |
 | --- | --- |
-| 删除 [!UICONTROL Adobe Experience Platform] 中的沙盒 | 删除沙盒会阻止数据流向任意 [!UICONTROL Customer Journey Analytics] 到沙盒中数据集的连接。 现在，与已删除沙箱相关联的 Customer Journey Analytics 中的[!UICONTROL 连接]不会自动删除。 |
+| 删除 [!UICONTROL Adobe Experience Platform] 中的沙盒 | 删除沙盒将阻止数据流向任何与该沙盒中的数据集建立的 [!UICONTROL Customer Journey Analytics] 连接。现在，与已删除沙箱相关联的 Customer Journey Analytics 中的[!UICONTROL 连接]不会自动删除。 |
 | 删除 [!UICONTROL Adobe Experience Platform] 中的架构，但不删除与该架构关联的数据集 | [!UICONTROL Adobe Experience Platform][!UICONTROL  不允许删除具有一个或多个关联数据集的架构。]但是，具有相应权限集的管理员可以先删除关联数据集，然后再删除架构。 |
-| 删除中的数据集 [!UICONTROL Adobe Experience Platform] 数据湖 | 删除 Adob&#x200B;e Experience Platform 数据湖中的数据集会阻止数据从该数据集流向包含该数据集的任何 Customer Journey Analytics 连接。来自该数据集的任何数据都会自动从关联的Customer Journey Analytics连接中删除。 |
+| 删除 [!UICONTROL Adobe Experience Platform] 数据湖中的数据集 | 删除 Adobe Experience Platform 数据湖中的数据集将阻止数据从该数据集流向任何包括该数据集的 Customer Journey Analytics 连接。自动从关联的 Customer Journey Analytics 连接删除来自该数据集的任何数据。 |
 | 删除 [!UICONTROL Customer Journey Analytics] 中的数据集 | 请联系您的 Adobe 帐户团队，以启动删除已保存连接中数据集的过程。 |
-| 从数据集中删除批次（在 [!UICONTROL Adobe Experience Platform] 中） | 如果从 [!UICONTROL Adobe Experience Platform] 之后，该批次将从包含该特定批次的所有Customer Journey Analytics连接中删除。 Customer Journey Analytics 会收到批次已在 [!UICONTROL Adobe Experience Platform] 中删除的通知。 |
-| **批次被摄取**&#x200B;到 [!UICONTROL Customer Journey Analytics] 的同时删除批次 | 如果数据集中只有一个批次，则该批次中不会显示任何数据或部分数据 [!UICONTROL Customer Journey Analytics]. 回滚引入。 例如，如果数据集中共有5个批次，且在删除该数据集时已摄取其中3个批次，则这3个批次中的数据将显示在 [!UICONTROL Customer Journey Analytics]. |
-| 删除 [!UICONTROL Customer Journey Analytics] 中的连接 | 出现错误消息，其中指示：<ul><li>为已删除的连接创建的所有数据视图都将不再起作用。</li><li> 同样，任何依赖于已删除连接中的数据视图的工作区项目都将停止工作。</li></ul> |
-| 删除 [!UICONTROL Customer Journey Analytics] 中的数据视图 | 将显示一条错误消息，指示所有依赖于这个已删除数据视图的工作区项目都将停止运行。 |
+| 从数据集中删除批次（在 [!UICONTROL Adobe Experience Platform] 中） | 如果从 [!UICONTROL Adobe Experience Platform] 数据集删除了批次，则从任何包含该特定批次的 Customer Journey Analytics 连接删除同一批次。Customer Journey Analytics 会收到批次已在 [!UICONTROL Adobe Experience Platform] 中删除的通知。 |
+| **将批次摄取**&#x200B;到 [!UICONTROL Customer Journey Analytics] 中时删除该批次 | 如果数据集中只有一个批次，则没有来自该批次的数据或来自该批次的部分数据出现在 [!UICONTROL Customer Journey Analytics] 中。并且回滚该摄取。例如，如果数据集中有 5 个批次，而在删除该数据集时已摄取其中 3 个批次，则来自这 3 个批次的数据出现在 [!UICONTROL Customer Journey Analytics] 中。 |
+| 删除 [!UICONTROL Customer Journey Analytics] 中的连接 | 出现错误消息，其中指示：<ul><li>任何为已删除的连接创建的数据视图都将不再起作用。</li><li> 同样地，任何依赖于已删除的连接中的数据视图的 Workspace 项目都停止运行。</li></ul> |
+| 删除 [!UICONTROL Customer Journey Analytics] 中的数据视图 | 一条错误消息指示任何依赖于这个已删除的数据视图的 Workspace 项目都将停止运行。 |
 
-## 7. 在 Customer Journey Analytics 中合并报告包时的注意事项 {#merge-reportsuite}
+## 7. 在 Customer Journey Analytics 中合并报表包时的注意事项 {#merge-reportsuite}
 
-Adobe Analytics如果您计划通过 [Adobe Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans)，请在合并两个或更多Adobe Analytics报表包时考虑以下这些后果。
+如果打算通过 [Adobe Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans)摄取 Adobe Analytics 数据，请在合并两个或更多 Adobe Analytics 报表包时考虑以下这些后果。
 
 | 问题 | 注意事项 |
 | --- | --- |
@@ -175,13 +174,13 @@ Adobe Analytics如果您计划通过 [Adobe Analytics源连接器](https://exper
 
 +++**我能否将来自 [!DNL Customer Journey Analytics] 的[!UICONTROL 筛选条件]共享/发布到 Experience Platform Real-Time CDP 或其他 Experience Cloud 应用程序？**
 
-还不能，但Adobe正在努力提供此功能。
+还不能，但 Adobe 正在积极地努力提供此功能。
 
 +++
 
-+++**我之前的 [!UICONTROL eVar] 设置发生了什么变化？**
++++**我的旧 [!UICONTROL eVar] 设置发生了什么？**
 
-[!UICONTROL Customer Journey Analytics] 中不再存在 Adobe Analytics 意义上的 [!UICONTROL eVar]、[!UICONTROL prop ]和[!UICONTROL 事件。]您有无限的架构元素（维度、量度、列表字段）。因此，您在数据收集过程中曾经应用的所有归因设置现在都会在查询时应用。
+[!UICONTROL Customer Journey Analytics] 中不再存在 Adobe Analytics 意义上的 [!UICONTROL eVar]、[!UICONTROL prop ]和[!UICONTROL 事件。]您有不限量的架构元素（维度、量度、列表字段）。因此，现在将在查询时应用您过去常在数据收集期间使用的所有归因设置。
 
 +++
 
@@ -191,9 +190,9 @@ Adobe Analytics如果您计划通过 [Adobe Analytics源连接器](https://exper
 
 +++
 
-+++**您现有的区段/计算量度会发生什么情况？**
++++**您的现有区段/计算量度发生了什么？**
 
-[!UICONTROL Customer Journey Analytics] 不再使用 eVar、prop 或事件，而是会使用任何 Adobe Experience Platform 架构。这意味着，任何现有区段或计算量度都与 [!UICONTROL Customer Journey Analytics].
+[!UICONTROL Customer Journey Analytics] 不再使用 eVar、prop 或事件，改为使用任何 Adobe Experience Platform 架构。这意味着，任何现有区段或计算量度都与 [!UICONTROL Customer Journey Analytics] 不兼容。
 
 +++
 
@@ -205,7 +204,7 @@ Adobe Analytics如果您计划通过 [Adobe Analytics源连接器](https://exper
 
 +++**如果我是现有 [!DNL Data Workbench] 客户，是否可以立即转到 [!UICONTROL Customer Journey Analytics]？**
 
-这取决于您的用例，因此请与您的Adobe客户团队合作。 您当前的用例可能已经非常适合Customer Journey Analytics！
+这取决于您的用例，请与您的 Adobe 帐户团队合作。您的当前用例可能已经非常适合 Customer Journey Analytics！
 
 +++
 
@@ -217,32 +216,32 @@ Adobe Analytics如果您计划通过 [Adobe Analytics源连接器](https://exper
 
 Adobe 定期监控和执行使用限制。“数据行数”表示可供在 Customer Journey Analytics 中分析的数据的每日平均行数。
 
-例如，假设您的合同授权您拥有 100 万行数据。假设在使用 Customer Journey Analytics 的第 1 天，您上传了 200 万行数据。在第2天，您会删除100万行，并在剩余的许可证期限内将使用量保持在承诺的最大值（即100万行数据）。 根据您的合同条款，由于您超出了“数据行”许可证授权，因此您在第 1 天仍可能会收取按比例分摊的过度使用费用。
+例如，假设您的合同授权您拥有 100 万行数据。假设在使用 Customer Journey Analytics 的第 1 天，您上传了 200 万行数据。在第 2 天，您删除了 100 万行数据，并在许可期限的剩余时间将用量保持在承诺的最大值（即 100 万行数据）。根据您的合同条款，由于您超出了“数据行”许可证授权，因此您在第 1 天仍可能会收取按比例分摊的过度使用费用。
 
 ## 11. 诊断数据差异 {#discrepancies}
 
-有时，您可能会注意到您的连接所摄取的事件总数与中数据集的行数存在差异 [!UICONTROL Adobe Experience Platform]. 在此示例中，“B2B Impression”数据集的行数为 7650，而该数据集在 [!UICONTROL Adobe Experience Platform] 中的行数为 3830。导致差异的原因有多种，可采取以下步骤进行诊断：
+您有时可能会注意到您的连接摄取的事件总数与 [!UICONTROL Adobe Experience Platform] 中数据集中的行数不同。在此示例中，“B2B Impression”数据集的行数为 7650，而该数据集在 [!UICONTROL Adobe Experience Platform] 中的行数为 3830。导致差异的原因有多种，可采取以下步骤进行诊断：
 
-1. 此维度的划分依据 **[!UICONTROL 平台数据集ID]** 您会发现两个大小相同但大小不同的数据集 **[!UICONTROL Platform数据集ID]**. 每个数据集都包含 3825 条记录。这意味着 [!UICONTROL Customer Journey Analytics] 因缺少人员ID或缺少时间戳而忽略了5条记录：
+1. 按 **[!UICONTROL Platform 数据集 ID]** 划分此维度，您注意到有两个数据集的大小相同，但 **[!UICONTROL Platform 数据集 ID]** 不同。每个数据集有 3825 条记录。这意味着由于缺少人员 ID 或时间戳，[!UICONTROL Customer Journey Analytics] 忽略了五条记录：
 
    ![划分](assets/data-size2.png)
 
-1. 此外，如果您签入 [!UICONTROL Adobe Experience Platform]，则没有ID为“5f21c12b732044194bffc1d0”的数据集，因此有人从中删除了此特定数据集 [!UICONTROL Adobe Experience Platform] 创建初始连接的时间。 不过，之后又将此数据集重新添加到 Customer Journey Analytics 中，但 [!UICONTROL Adobe Experience Platform] 生成了一个不同的 [!UICONTROL Platform 数据集 ID]。
+1. 此外，如果您签入 [!UICONTROL Adobe Experience Platform]，发现不存在 ID 为“5f21c12b732044194bffc1d0”的数据集，因此表示有人在创建初始连接后从 [!UICONTROL Adobe Experience Platform] 中删除了这个特定的数据集。不过，之后又将此数据集重新添加到 Customer Journey Analytics 中，但 [!UICONTROL Adobe Experience Platform] 生成了一个不同的 [!UICONTROL Platform 数据集 ID]。
 
 有关更多信息，请参阅在 [!UICONTROL Customer Journey Analytics] 和 [!UICONTROL Adobe Experience Platform] 中[删除数据集和连接的后果。](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans#implications-of-deleting-data-components)
 
 
-## 12.区域数据收集
+## 12. 地区数据收集
 
-Adobe Experience Cloud使用区域数据收集(RDC)，以便访客与Adobe解决方案和非Adobe解决方案之间的交互尽可能靠近访客。 在数据收集中心（DCC，也称为边缘站点，Platform Edge Network的一部分）按地区收集数据后，系统会根据数据流配置和/或事件转发，通过安全连接将数据转发到相关解决方案。
+Adobe Experience Cloud 使用地区数据收集 (RDC)，以使您的访客与 Adobe 和非 Adobe 解决方案之间发生的交互尽可能接近您的访客。在数据收集中心（DCC，也称为边缘站点，它是 Platform 边缘网络的一部分）区域性地收集数据后，将根据您的数据流和/或事件转发的配置通过一个安全的连接将这些数据转发到相关的解决方案。
 
-![使用Edge网络的数据流](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png?lang=en)
+![使用边缘网络的数据流](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png?lang=en)
 
 区域数据收集过程使用以下步骤：
 
 1. DNS 会自动将收集主机名解析为距访客最近的数据收集中心的 IP 地址。
 1. 访客将数据发送到该地址。
-1. 通过安全连接立即将数据转发到由数据流或事件转发配置定义的解决方案。
+1. 立即将数据通过一个安全的连接转发到由数据流或事件转发配置定义的解决方案。
 
 使用区域数据收集提供了以下好处：
 
@@ -261,10 +260,10 @@ RDC 目前包括以下位置（可能发生变化）：
 
 {style="table-layout:auto"}
 
-当数据到达区域数据中心时，数据流配置将确定如何进一步路由数据。
+当数据到达区域数据中心时，数据流配置决定如何进一步路由这些数据。
 
-Customer Journey Analytics需要来自Adobe Experience Platform的数据集，因此您的数据流/事件转发配置需要Adobe Experience Platform服务将数据从区域数据中心路由到Adobe Experience Platform实例所在的数据中心。 Customer Journey Analytics及其支持服务和基础架构部署在同一Adobe Experience Platform实例中。
+Customer Journey Analytics 需要来自 Adobe Experience Platform 的数据集，因此，您的数据流/事件转发配置需要 Adobe Experience Platform 服务将数据从区域数据中心路由到 Adobe Experience Platform 实例所在的数据中心。Customer Journey Analytics 及其支持服务和基础设施部署在同一个 Adobe Experience Platform 实例中。
 
 
-请参阅 [数据收集概述](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=en) 了解有关Experience Edge网络及其区域数据中心之外的数据收集过程的更多信息。
+有关在 Experience 边缘网络及其区域数据中心之外收集数据的过程，请参阅[数据收集概述](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=zh-Hans)。
 
