@@ -3,9 +3,9 @@ description: 在计算量度管理器中，您可以通过标记区段来组织�
 title: 标记计算量度
 feature: Calculated Metrics
 exl-id: 25c9299b-34ae-475f-8e7f-5cc8540dab8a
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: 124834d0ad1c53fd5930b07a9aa0893a15a49875
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '277'
 ht-degree: 19%
 
 ---
@@ -20,15 +20,14 @@ ht-degree: 19%
 >
 >最有用的标记类型通常是基于以下条件的标记：
 >
->* **团队名称**，例如社交营销或移动营销。
+>* **团队名称**，例如社交媒体营销或移动营销。
 >* **项目** （分析标记），例如登入页面分析。
 >* **类别**，例如“女性”或“地理”。
->* **工作流**，如要批准或策划（特定的业务部门）。
+>* **工作流**，如要批准或策划的（特定的业务部门）。
 
+## 将标记应用到计算量度
 
-## 将标记应用于计算量度
-
-1. 在Customer Journey Analytics中，选择 [!UICONTROL **组件**] > [!UICONTROL **计算量度**] 以转到计算量度管理器。
+1. 在Customer Journey Analytics中，选择 [!UICONTROL **组件**] > [!UICONTROL **计算量度**].
 
 1. 在计算量度管理器中，选中要标记的任何量度旁边的复选框。
 
@@ -47,11 +46,11 @@ ht-degree: 19%
 
 1. 在计算量度管理器中，标记显示在 [!UICONTROL **标记**] 列。 （单击右上角的齿轮图标可管理您的列。）
 
-## 按标记筛选量度
+## 按标记过滤量度
 
 1. 在Customer Journey Analytics中，选择 [!UICONTROL **组件**] > [!UICONTROL **计算量度**] 以转到计算量度管理器。
 
-1. 在计算量度管理器中，选择 **筛选条件** 图标，然后选择要作为筛选依据的标记。
+1. 在计算量度管理器中，选择 **筛选** 图标，然后选择要作为筛选依据的标记。
 
    仅显示具有您选择的过滤器的量度。
 

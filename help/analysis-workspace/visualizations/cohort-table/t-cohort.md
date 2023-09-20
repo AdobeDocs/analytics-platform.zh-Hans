@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: 配置同类群组分析报表
 feature: Visualizations
 exl-id: c3fd9fbf-b2c8-4703-92de-e6fdc141ebc6
-source-git-commit: f6273b96d3851e02ea013a6496965567a4389a72
+source-git-commit: 3bbc34d4b003fab7dc935c8d3bb3afa4dfc3f675
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 91%
@@ -47,7 +47,7 @@ ht-degree: 91%
 
    选择单元格（连续的或不连续的），然后右键单击鼠标并选择&#x200B;**[!UICONTROL 根据选定的内容创建过滤器]**。
 
-1. 在[过滤器生成器](/help/components/filters/manage-filters.md)中，进一步编辑该过滤器，然后单击&#x200B;**[!UICONTROL 保存]**。
+1. 在[过滤器生成器](/help/components/filters/filter-builder.md)中，进一步编辑该过滤器，然后单击&#x200B;**[!UICONTROL 保存]**。
 
    保存后的过滤器可用于 [!UICONTROL Analysis Workspace] 的[!UICONTROL 过滤器]面板中。
 1. 命名并保存同类群组项目。
