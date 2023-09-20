@@ -4,9 +4,9 @@ description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 source-git-commit: 795a30719c29e6352133987d5d0aaefcf9184a52
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '515'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 95%
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **在 Analytics Source Connector 中支持 A4T 分类** | `_experience.decisioning.propositions.scopeDetails.correlationID` 字段现在在 Adob&#x200B;&#x200B;e Analytics 源连接器架构中可用。该字段用于支持 A4T 分类，并将会于 2023 年 9 月开始填充。 | | 不适用 | 2023 年 9 月 12 日 |
+| **在 Analytics Source Connector 中支持 A4T 分类** | 现在可在 Adobe Analytics 源连接器架构中找到 `_experience.decisioning.propositions.scopeDetails.correlationID` 字段。该字段用于支持 A4T 分类，并将会于 2023 年 9 月开始填充。 | | 不适用 | 2023 年 9 月 12 日 |
 | **更新了派生字段** | 对派生字段功能进行了以下更新：<ul><li>已将[!UICONTROL 查找]功能重命名为[!UICONTROL 分类]，并附带加载 CSV 数据的选项。**（2023 年 9 月 27 日发布）**</li><li>在定义派生字段时有附加功能可用：[!UICONTROL 修剪]、[!UICONTROL 小写]和[!UICONTROL 查找]。</li><li>派生字段定义现在还支持来自[!UICONTROL 查找]和[!UICONTROL 配置文件]数据集的字段。</li></ul>[了解详情](/help/data-views/derived-fields/derived-fields.md) | 不适用 | 2023 年 9 月 13 日 |
-| **Adobe Product Analytics 中的新功能** | <ul><li>**异常检测**：比较事件与从历史趋势派生的预期值。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/usage.html)</li><li>**使用频率趋势视图**：通过使用频率衡量您的功能的采用情况。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/frequency.html)</li><li>**用户首选项**：配置大量用户偏好设置，如调色板和数字格式。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/user-preferences.html)</li></ul> | 不适用 | 2023 年 9 月 18 日 |
+| **Adobe Product Analytics 中的新功能** | <ul><li>**异常检测**：比较事件与从历史趋势派生的预期值。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/usage.html)</li><li>**使用频率趋势视图**：通过使用频率衡量您的功能的采用情况。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/frequency.html)</li><li>**用户偏好设置**：配置许多用户偏好设置，例如调色板和数字格式。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/user-preferences.html)</li></ul> | 不适用 | 2023 年 9 月 18 日 |
 | **Experience Edge 设备查找** | 通过 Experience Platform Edge Network 实现自动收集设备类型数据。此 Experience Edge 服务有利于 Customer Journey Analytics 以及其他 Experience Platform 应用程序。（文档链接见下文） | 不适用 | 2023 年 9 月 27 日 |
 
 {style="table-layout:auto"}
