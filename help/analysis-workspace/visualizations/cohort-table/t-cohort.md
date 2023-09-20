@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: 配置同类群组分析报表
 feature: Visualizations
 exl-id: c3fd9fbf-b2c8-4703-92de-e6fdc141ebc6
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: f6273b96d3851e02ea013a6496965567a4389a72
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '982'
 ht-degree: 91%
 
 ---
@@ -59,4 +59,4 @@ ht-degree: 91%
 
 ## 下载同类群组可视化图表
 
-与Analysis Workspace中的其他可视化图表一样，您可以以CSV或PDF文件格式下载同类群组可视化图表。 有关更多信息，请参阅 [下载PDF或CSV文件](/help/analysis-workspace/curate-share/download-send.md).
+与Analysis Workspace中的其他可视化图表一样，您可以以CSV或PDF文件格式下载同类群组可视化图表。 有关更多信息，请参阅 [下载项目数据](/help/analysis-workspace/export/download-send.md).

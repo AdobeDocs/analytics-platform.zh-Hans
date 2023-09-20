@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: 可视化图表概述
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: f6273b96d3851e02ea013a6496965567a4389a72
 workflow-type: tm+mt
-source-wordcount: '1245'
-ht-degree: 87%
+source-wordcount: '1243'
+ht-degree: 86%
 
 ---
 
@@ -45,17 +45,17 @@ Analysis Workspace 中提供了以下可视化图表类型：
 
 1. 使用以下任意方法来添加可视化图表：
 
-   * 在左边栏中，选择 **可视化图表** 图标 <!-- add icon -->，然后将可视化图表拖动到要添加该可视化图表的面板。
+   * 在左边栏中，选择 **可视化图表** 图标 <!-- add icon -->，然后将可视化图表拖到要添加该可视化图表的面板中。
 
-      ![](assets/viz-rail.png)
+     ![](assets/viz-rail.png)
 
-   * 在要添加可视化图表的面板上，选择 **加号** 图标，然后选择表示要添加的可视化信息的图标。 将鼠标悬停在每个可视化图表的图标上可查看其名称。
+   * 在要添加可视化图表的面板上，选择 **加号** 图标，然后选择表示要添加的可视化图表的图标。 将鼠标悬停在每个可视化图表的图标上可查看其名称。
 
-      ![用于添加可视化图表的按钮](assets/visualization-add-to-panel.png)
+     ![用于添加可视化图表的按钮](assets/visualization-add-to-panel.png)
 
    * 添加 [空白面板](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html?lang=zh-Hans)，然后选择要添加的可视化图表。
 
-      ![空白面板](assets/blank_panel.png)
+     ![空白面板](assets/blank_panel.png)
 
    * 右键单击Analysis Workspace项目中的现有面板，然后选择 [!UICONTROL **复制可视化图表**] 或 [!UICONTROL **复制可视化图表**].
 
@@ -122,8 +122,8 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | --- | --- |
 | 插入复制的面板/可视化图表 | 使用此设置，您可以将复制的面板或可视化图表粘贴（“插入”）到项目中的其他位置或完全不同的项目中。 |
 | 复制可视化图表 | 此设置允许您右键单击并复制可视化图表，以便将其插入到项目中的其他位置或完全不同的项目中。 |
-| [以 CSV 格式下载项目](/help/analysis-workspace/curate-share/download-send.md) | 以 CSV 格式下载所选维度，最多下载 50,000 个维度项。 |
-| [将数据下载为 CSV](/help/analysis-workspace/curate-share/download-send.md) | 以 CSV 格式下载可视化图表数据源。 |
+| [下载项目数据](/help/analysis-workspace/export/download-send.md) | 以 CSV 格式下载所选维度，最多下载 50,000 个维度项。 |
+| [下载项目数据](/help/analysis-workspace/export/download-send.md) | 以 CSV 格式下载可视化图表数据源。 |
 | 复制可视化 | 生成一个与当前可视化图表完全相同的副本，然后可对其进行修改。 |
 | 编辑描述 | 添加（或编辑）可视化图表的文本描述。 |
 | 获取可视化图表链接 | 此设置允许您将用户引导至项目中的可视化图表。单击该链接时，收件人需要先登录，然后才能转至所链接到的确切可视化图表。 |

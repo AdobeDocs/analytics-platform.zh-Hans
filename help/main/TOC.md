@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: cfce67c9cbda272158288c04d5ecdbceee99beb7
+source-git-commit: 92580534f2a09bfd7e9cc2d4993cc05374922ca7
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 85%
+source-wordcount: '995'
+ht-degree: 82%
 
 ---
 
@@ -161,8 +161,11 @@ ht-degree: 85%
       + [共享项目](../analysis-workspace/curate-share/share-projects.md)
       + [创建可共享链接](../analysis-workspace/curate-share/shareable-links.md)
       + [仅供查看的项目](../analysis-workspace/curate-share/view-only-projects.md)
-      + [下载 PDF 或 CSV 文件](../analysis-workspace/curate-share/download-send.md)
-      + [计划项目](../analysis-workspace/curate-share/t-schedule-report.md)
+   + 导出 {#export}
+      + [导出概述](../analysis-workspace/export/export-project-overview.md)
+      + [下载](../analysis-workspace/export/download-send.md)
+      + [发送给其他人](../analysis-workspace/export/t-schedule-report.md)
+      + [导出到云](../analysis-workspace/export/export-cloud.md)
    + Virtual Analyst {#virtual-analyst}
       + [Virtual Analyst 概述](../analysis-workspace/virtual-analyst/overview.md)
       + 异常检测 {#anomaly-detection}
@@ -253,6 +256,13 @@ ht-degree: 85%
       + [管理日期范围](../components/date-ranges/manage.md)
       + [创建自定义日期范围](../components/date-ranges/custom-date-ranges.md)
       + [日期比较](../components/date-ranges/time-comparison.md)
+   + 导出 {#exports}
+      + [配置云导出帐户](/help/components/exports/cloud-export-accounts.md)
+      + [配置云导出位置](/help/components/exports/cloud-export-locations.md)
+      + [管理云导出位置](/help/components/exports/manage-export-locations.md)
+      + [管理导出](/help/components/exports/manage-exports.md)
+      + [管理导出日志](/help/components/exports/manage-export-logs.md)
+      + [排查导出问题](/help/components/exports/troubleshoot-exports.md)
    + 数据词典 {#data-dictionary}
       + [数据词典概述](../components/data-dictionary/data-dictionary-overview.md)
       + [查看数据词典中的组件信息](../components/data-dictionary/view-data-dictionary.md)
@@ -325,6 +335,7 @@ ht-degree: 85%
    + [查看和管理使用情况](../admin/estimate-usage.md)
    + [删除后果](../admin/cja-deletion.md)
    + [优化Customer Journey Analytics性能](../admin/optimizing-performance.md)
+   + [IP 地址](../admin/ip-addresses.md)
 
 + Labs {#labs}
    + [Labs 用户指南](../labs/labs.md)

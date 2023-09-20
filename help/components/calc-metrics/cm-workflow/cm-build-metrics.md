@@ -3,24 +3,24 @@ description: 计算量度生成器提供一个画布，可以将维度、量度�
 title: 生成指标
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 1c5ea3f49d47ffd833404260e6c21bd1e64a2734
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 66%
+source-wordcount: '982'
+ht-degree: 65%
 
 ---
 
-# 生成指标
+# 生成量度
 
-Customer Journey Analytics提供了一个画布以将维度、量度、过滤器和函数拖放到其中，从而根据容器层次结构逻辑、规则和运算符创建自定义量度。 通过这个集成的开发工具，可生成并保存简单的计算指标或复杂的高级计算指标。
+Customer Journey Analytics提供了一个画布以将维度、量度、筛选器和函数拖放到其中，从而根据容器层次结构逻辑、规则和运算符创建自定义量度。 通过这个集成的开发工具，可生成并保存简单的计算指标或复杂的高级计算指标。
 
 ## 开始构建计算量度
 
 您可以通过以下任意方式开始创建计算量度：
 
 * 在Analysis Workspace中，打开一个项目，然后选择 **[!UICONTROL 组件]** > **[!UICONTROL 创建量度]**.
-* 在Analysis Workspace中，打开一个项目，然后选择 **加号** 图标 [!UICONTROL **量度**] 部分。
-* In [!DNL Customer Journey Analytics]，转到 **[!UICONTROL 组件]** > **[!UICONTROL 计算量度]**，然后选择 **[!UICONTROL +添加]** “计算量度”页面的顶部。
+* 在Analysis Workspace中，打开一个项目，然后选择 **加号** 图标(位于 [!UICONTROL **量度**] 部分。
+* 在 [!DNL Customer Journey Analytics]，转到 **[!UICONTROL 组件]** > **[!UICONTROL 计算量度]**，然后选择 **[!UICONTROL +添加]** （在“计算量度”页面顶部）。
 
 ## 计算指标生成器的区域
 
@@ -36,17 +36,17 @@ Customer Journey Analytics提供了一个画布以将维度、量度、过滤器
 | 小数位数 | 显示将在报表中显示的小数位数。您可以指定的最大小数位数为 10。 |
 | 将上升趋势显示为... | 此指标极性设置显示 Analytics 应当将指标中的上升趋势视为有利（绿色）还是不利（红色）。最终，报表中的图表将在上升时显示为绿色或红色。 |
 | 货币 | 此数据视图的基础货币。 |
-| 标记 | 标记是一种用于组织指标的好方法。所有用户均可创建标记，并将一个或多个标记应用于指标。但是，您只能查看您所拥有的或与您共享的那些过滤器的标记。应创建哪种类型的标记？以下是对实用标记的一些建议：<ul><li>**团队名称**，如社交营销、移动营销。</li><li>**项目** （分析标记），例如登入页面分析。</li><li>**类别**，例如“Women&#39;s”（女性）、“Geography”（地理位置）。</li><li>**工作流**，如待批准；策划（为特定的业务部门）</li></ul> |
-| 概要 | <p>无论您何时对指标定义进行更改，摘要公式都会随之发生更新。当您将光标悬停在指标上方并单击 <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg" id="image_BDA0EAF89C19440CB02AE248BA3F968E" /> 图标。 </p> |
+| 标记 | 标记是一种用于组织指标的好方法。所有用户均可创建标记，并将一个或多个标记应用于指标。但是，您只能查看您所拥有的或与您共享的那些过滤器的标记。应创建哪种类型的标记？以下是对实用标记的一些建议：<ul><li>**团队名称**，如社交营销、移动营销。</li><li>**项目** （分析标记），例如登入页面分析。</li><li>**类别**，例如“Women&#39;s”（妇女）、“Geography”（地理位置）。</li><li>**工作流**，如待批准；策划（为特定的业务部门）</li></ul> |
+| 概要 | <p>无论您何时对指标定义进行更改，摘要公式都会随之发生更新。当您将光标悬停在量度上并单击 <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg" id="image_BDA0EAF89C19440CB02AE248BA3F968E" /> 图标。 </p> |
 | 定义 | 您应将量度/计算量度、筛选器和/或函数拖放到此处来构建计算量度。 <ul><li>如果拖入一个计算指标，则它将自动展开其指标定义。 </li> <li>您可以通过容器嵌套定义。但是，与过滤器容器不同，这些容器的功能与数学表达式类似，可决定操作的顺序。 </li> </ul> |
 | 运算符 | 除以( <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Divide_18_N.svg" width="15" id="image_320D7363DE024BDEB21E44606C8B367F" width="25px" /> )是默认运算符，另外还有+、 — 和x运算符。 |
 | 预览 | 提供对可能存在的任何错误的快速阅览。预览涵盖过去 90 天的范围。这种方式可用于初步评估您是否为指标选择了正确的组件。出现意外结果表示您需要重新检查指标定义。 |
 | 产品兼容性 | 对于您在Customer Journey Analytics中创建的任何计算指标，此值始终列为 [!UICONTROL **完全处理的数据**]. 计算量度只能包含事件数据集中的数据。 |
 | 添加 | 对于所有类型的计算量度，您可以向定义中添加容器和静态数字。对于高级计算量度，您还可以添加筛选器和函数。<ul><li>容器的作用类似于数学表达式，它们决定着运算的顺序。因此，容器中的任何内容都将在下次运算前得到处理。</li><li>将过滤器拖动到容器上会过滤该容器中的所有内容。 （仅限高级计算指标）</li><li>您可以在一个容器中堆叠多个筛选器。</li></ul> |
-| 齿轮图标（量度类型、归因） | 通过选择量度旁边的齿轮图标，您可以指定量度类型和归因模型。 |
+| 齿轮图标（量度类型、归因） | 通过选择量度旁边的齿轮图标，您可以指定量度类型和归因模型。 <!-- <p>**Note:** Consider the following when updating a component's attribution to a non-default attribution model:</p><ul><li>**When using the component in a report with *a single dimension*:** The component's attribution ignores the allocation model when a non-default attribution model is used.</li><li>**When using the component in a report with *multiple dimensions*:** The component's attribution retains the allocation model when a non-default attribution model is used.</li><li>Multiple dimensions are available only when [exporting data to the cloud](/help/analysis-workspace/export/export-cloud.md).</li></ul> --> <p>有关分配的更多信息，请参阅 [持久性组件设置](/help/data-views/component-settings/persistence.md).</p> |
 | 加号(+)图标 | 让您能够创建新组件，例如新筛选器（这会将您转到筛选器生成器）。 |
 | 搜索组件 | 通过此搜索栏，您可以搜索维度、量度、过滤器（仅限高级计算量度）和函数（仅限高级计算量度）。 |
-| 维度列表 | 要在筛选器生成器中构建一个简单的筛选器（例如“页面=主页”），您无需离开计算指标生成器，而是可以在“页面”中拖动并直接从计算指标生成器中选择“主页”。 这可以极大地简化用于创建筛选计算量度的工作流程。 |
+| 维度列表 | 要在筛选器生成器中构建一个简单的筛选器（例如“页面=主页”），您无需离开计算量度生成器，而是可以在“页面”中拖动并从计算量度生成器中直接选择“主页”。 这可以极大地简化用于创建筛选计算量度的工作流程。 |
 | 指标列表 | 指标有以下 3 种类别：<ul><li>标准量度</li><li>计算量度</li><li>量度模板 - 位于列表底部。</li></ul>将光标悬停在量度上时，您可以在其右侧看到信息图标。单击此图标会显示以下信息：<ul><li>有关如何计算指标的公式。</li><li>指标的预览趋势。</li><li>位于右上角的编辑（铅笔）图标可将您转到计算指标生成器，以便在其中编辑此计算指标。</li></ul> |
 | 筛选器列表 | （仅限高级计算量度）作为管理员，此列表显示在您的登录公司中创建的所有筛选器。如果您是非管理员用户，则此列表显示您拥有的筛选器以及与您共享的筛选器。 |
 | 函数列表 | （仅限高级计算指标）函数将分为两个列表：基本（最常用）和高级。 |
