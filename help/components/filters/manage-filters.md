@@ -3,10 +3,10 @@ title: 筛选器管理器
 description: 了解如何管理 Customer Journey Analytics 中的过滤器
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
-source-git-commit: 8d6dc1d220fc3719b13842e812aaf6ddc55ae47c
+source-git-commit: 4142cbc5798856d6357d7dadc29a1326c1779025
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 24%
+source-wordcount: '699'
+ht-degree: 22%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 24%
    | 标记（在列选择器中未选择，因此列不显示） | 应用到过滤器的标记，这些标记由您自己或与您共享该过滤器的人添加。 |
    | 共享对象 | 列出您与其共享该过滤器的个人或组（仅限管理员）或所有人（仅限管理员）。 <p>当您或与您共享某个过滤器时，该过滤器名称旁边会显示一个共享图标。</p> |
    | 修改日期 | 显示上次修改过滤器的日期。 |
-   | 使用位置 | **注意：** 此功能处于版本的有限测试阶段，在您的环境中可能尚未可用。 当该功能正式发布时，将删除此说明。有关Customer Journey Analytics发布过程的信息，请参阅 [Customer Journey Analytics功能发布](/help/release-notes/releases.md).<p>显示当前正在使用过滤器的以下组件类型之一：</p> <ul><li>计算量度</li><li>项目</li><li>计划项目</li><li>过滤器</li></ul> 例如，如果过滤器在40个项目和2个计算量度中使用，则此列显示 [!UICONTROL **计算量度(2)，项目(40)**]. <p>此信息可帮助您确定过滤器对贵组织中的用户是否有价值，或者是否应将其删除。</p><p>此信息不包括API或Report Builder的使用情况。</p><p>您可以使用 [数据字典](/help/components/data-dictionary/data-dictionary-overview.md) 以及此信息，以帮助您跟踪并更好地了解组织中如何使用组件。 |
+   | 使用位置 | **注意：** 此功能处于版本的有限测试阶段，在您的环境中可能尚未可用。 当该功能正式发布时，将删除此说明。有关Customer Journey Analytics发布过程的信息，请参阅 [Customer Journey Analytics功能发布](/help/release-notes/releases.md).<p>显示过滤器当前使用的组件数。 <p>例如，如果过滤器在40个项目和2个警报中使用，则此列的值显示为 [!UICONTROL **42个组件**].</p> <p>选择此列中的值可查看在其中使用该过滤器的划分(例如， [!UICONTROL **项目(40)**]， [!UICONTROL **警报(2)**])。</p><p>过滤器可用于以下任何组件类型：</p> <ul><li>警报</li><li>计算量度</li><li>项目</li><li>计划项目</li><li>过滤器</li></ul><p>此信息可帮助您确定组件是否对组织中的用户有用、组件的使用位置以及是否需要删除或修改它。</p><p>此信息不包括API、Report Builder或Data Warehouse的使用情况。</p><p>您可以使用 [数据字典](/help/components/data-dictionary/data-dictionary-overview.md) 以及此信息，以帮助您跟踪并更好地了解组织中如何使用组件。</p><p>此 [!UICONTROL **使用位置**] 默认情况下不显示列。 [配置列](#configure-columns) 以显示。</p> |
    | 上次使用 | **注意：** 此功能处于版本的有限测试阶段，在您的环境中可能尚未可用。 当该功能正式发布时，将删除此说明。有关Customer Journey Analytics发布过程的信息，请参阅 [Customer Journey Analytics功能发布](/help/release-notes/releases.md).<p>显示上次在以下任意组件类型中使用过滤器的日期：</p> <ul><li>计算量度</li><li>项目</li><li>计划项目</li><li>过滤器</li></ul> <p>此信息可帮助您确定组件是否对组织中的用户有价值，或者是否应将其删除。</p><p>此信息不包括API或Report Builder的使用情况。</p><p>您可以使用 [数据字典](/help/components/data-dictionary/data-dictionary-overview.md) 以及此信息，以帮助您跟踪并更好地了解组织中如何使用组件。 |
 
    {style="table-layout:auto"}
