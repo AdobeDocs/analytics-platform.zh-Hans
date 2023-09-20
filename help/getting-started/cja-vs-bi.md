@@ -5,7 +5,7 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-source-git-commit: 7991f2be316349fcfaa85c2338e16c41d5b130b1
+source-git-commit: dd83785ea67a48e2051c60568e6fe5b436edf4db
 workflow-type: ht
 source-wordcount: '1649'
 ht-degree: 100%
@@ -76,7 +76,7 @@ Customer Journey Analytics 使用一种强大的专有架构，该架构分散�
 
    * 为组织中的其他个人[策划](/help/analysis-workspace/curate-share/curate.md)以供持续探索、
    * 使用 [Report Builder](/help/report-builder/report-buider-overview.md)（专用插件）导出到 Excel、
-   * 以各种格式（包括 [PDF](/help/analysis-workspace/curate-share/download-send.md)、[CSV](/help/analysis-workspace/curate-share/download-send.md)）并通过[专用的移动应用程序](/help/mobile-app/home.md)[共享](/help/analysis-workspace/curate-share/share-projects.md)给对最终报告和/或可视化感兴趣的人士。
+   * 以各种格式（包括 [PDF](/help/analysis-workspace/export/download-send.md)、[CSV](/help/analysis-workspace/export/download-send.md)）并通过[专用的移动应用程序](/help/mobile-app/home.md)[共享](/help/analysis-workspace/curate-share/share-projects.md)给对最终报告和/或可视化感兴趣的人士。
 
 由于有多种多样的可视化可用，因此难以比较 Customer Journey Analytics 的可视化功能与 BI 工具提供的任何功能。某些 BI 工具拥有更高级的可视化，但 Customer Journey Analytics 专门关注交互式和可互操作的客户历程可视化，这样只需几秒时间即可分解数据，同时无需为每个额外的查询“付款”。
 

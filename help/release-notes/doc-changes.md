@@ -4,8 +4,8 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 473d0851e537decc8a26f653e81b161c7b7dc551
-workflow-type: tm+mt
+source-git-commit: 24e9e4151360597b099a7985a4566b3ca7bfff00
+workflow-type: ht
 source-wordcount: '2651'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | **2023 年 8 月** | |
 | “媒体播放耗时”面板 | 更新了[“媒体播放耗时”面板](/help/analysis-workspace/c-panels/media-playback-time-spent.md)的内容以提高可读性。 |
 | Report Builder 增强 | 更新了[安排工作簿](/help/report-builder/schedule-reportbuilder.md)的内容以提供下载计划任务的信息。更新了[创建数据块](/help/report-builder/create-a-data-block.md)的内容以提供使用开始日期作为维度的信息。 |
-| 移动了关于管理计划项目的内容 | 在《Analytics 组件指南》中创建了一篇名为[计划项目](/help/components/scheduled-projects-manager.md)的新文章。此内容以前位于《Analytics 工具指南》中的[计划项目](/help/analysis-workspace/curate-share/t-schedule-report.md)一文中。 |
+| 移动了关于管理计划项目的内容 | 在《Analytics 组件指南》中创建了一篇名为[计划项目](/help/components/scheduled-projects-manager.md)的新文章。此内容以前位于《Analytics 工具指南》中的[计划项目](/help/analysis-workspace/export/t-schedule-report.md)一文中。 |
 | 支持 Adobe Customer Journey Analytics 功能 | 在“Customer Journey Analytics 与 Adobe Analytics 相比”中关于会话化功能的&#x200B;*以新方式支持*&#x200B;表中添加了更多信息。[了解详情](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
 | Adobe Analytics 的演化 | 通过引用派生字段营销渠道功能模板，更新了&#x200B;*（重新）配置营销渠道*&#x200B;部分。[了解详情](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
 | 移动应用程序和其他平台的数据摄取快速入门指南 | 添加了额外的数据摄取快速入门指南，概述了如何在 Customer Journey Analytics 中摄取和使用来自移动应用程序或其他平台（例如桌面应用程序、控制台上的游戏、机顶盒和物联网设备上的应用程序）的数据。[了解详情](../data-ingestion/data-ingestion.md) |
@@ -169,7 +169,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 2021 年 4 月 | 有关工作区中对计划项目的支持的新文档。 |
 | 2021 年 4 月 | 有关[增强数据视图体验](/help/data-views/data-views.md)的新主题 |
 | 2021 年 4 月 | 有关[摄取 Google Analytics 数据](/help/use-cases/ga/overview.md)和[分析该数据](/help/use-cases/ga/report.md)的新主题。 |
-| 2021 年 4 月 | 增加了有关工作区中[计划报告](/help/analysis-workspace/curate-share/t-schedule-report.md)的主题。 |
+| 2021 年 4 月 | 增加了有关工作区中[计划报告](/help/analysis-workspace/export/t-schedule-report.md)的主题。 |
 | 2021 年 4 月 | 关于 [Customer Journey Analytics 中的高基数维度](/help/components/dimensions/high-cardinality.md)的新主题。 |
 | **2021 年 3 月** | |
 | 2021 年 3 月 | 增加了有关对 [Analytics 功能板](/help/mobile-app/home.md)（移动应用程序）支持的主题。 |
