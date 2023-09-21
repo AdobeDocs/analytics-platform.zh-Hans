@@ -5,16 +5,14 @@ title: 配置云导出位置
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: bcbd7ebb075a0d25b566fa8be164d6817bedf2e5
+source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 6%
+source-wordcount: '383'
+ht-degree: 5%
 
 ---
 
 # 管理云导出位置和帐户
-
-{{select-package}}
 
 您可以查看、编辑和删除云导出位置。
 
@@ -38,7 +36,7 @@ ht-degree: 6%
 
    | 过滤器 | 描述 |
    |---------|----------|
-   | [!UICONTROL **位置类型**]<!--should this be changed to Account type?--> | 与位置关联的帐户类型。 可以使用以下帐户类型： <ul><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li><li>[!UICONTROL **Adobe Experience Manager**]</li></ul> |
+   | [!UICONTROL **位置类型**]<!--should this be changed to Account type?--> | 与位置关联的帐户类型。 可以使用以下帐户类型： <ul><li>[!UICONTROL **Adobe Experience Platform数据登陆区**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
    | [!UICONTROL **帐户**] | 与位置关联的帐户的名称。 |
    | [!UICONTROL **创建者**] | 创建位置的用户的电子邮件地址。 |
 

@@ -5,18 +5,16 @@ title: 管理导出日志
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: f070f998758cead3709f6c48412b22b29de00164
+source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 7%
+source-wordcount: '681'
+ht-degree: 6%
 
 ---
 
 # 管理导出日志
 
-{{select-package}}
-
-导出日志提供有关每次导出的详细信息，并在每次将Analysis Workspace数据导出到云时生成。 (有关如何将数据导出到云的信息，请参阅 [将Customer Journey Analytics数据导出到云端](/help/analysis-workspace/export/export-cloud.md).)
+导出日志提供有关每次导出的详细信息，并在每次将Analysis Workspace数据导出到云时生成。 (有关如何将数据导出到云的信息，请参阅 [将Customer Journey Analytics报表导出到云端](/help/analysis-workspace/export/export-cloud.md).)
 
 对于计划的导出，日志反映发送日志时的导出设置。 无法删除日志。
 
@@ -38,7 +36,7 @@ ht-degree: 7%
 
    | 过滤器 | 描述 |
    |---------|----------|
-   | [!UICONTROL **帐户类型**] | 与日志关联的帐户类型。 可以使用以下帐户类型： <ul><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li><li>[!UICONTROL **Adobe Experience Manager**]</li></ul>。 |
+   | [!UICONTROL **帐户类型**] | 与日志关联的帐户类型。 可以使用以下帐户类型： <ul><li>[!UICONTROL **Adobe Experience Platform数据登陆区**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
    | [!UICONTROL **状态**] | 导出的状态。 可以使用以下状态： <ul><li>[!UICONTROL **待处理**]：导出的特定实例已启动，但尚未完成。<p>重新运行状态为“待定”的导出将会延迟导出过程。</p></li><li>[!UICONTROL **已完成**]：导出的特定实例已完成处理，可在导出帐户中使用。</li><li>[!UICONTROL **失败**]<p>以下情况可能会导致导出失败。 将鼠标悬停在失败状态上可查看有关失败的详细信息。 <ul><li>计划的导出过期</li><li>已达到计划导出的行限制 </li></ul> </p></li></ul> |
 
    {style="table-layout:auto"}
@@ -95,10 +93,10 @@ This option is not available when selecting multiple logs. -->
 
    | 可用列 | 描述 |
    |---------|----------|
-   | 导出名称 | 导出的名称。 用户在创建导出时为其命名，如中所述 [将Customer Journey Analytics数据导出到云端](/help/analysis-workspace/export/export-cloud.md). |
+   | 导出名称 | 导出的名称。 用户在创建导出时为其命名，如中所述 [将Customer Journey Analytics报表导出到云端](/help/analysis-workspace/export/export-cloud.md). |
    | 导出 ID | 创建导出时自动为其分配的ID。 <!-- True? --> |
    | 实例 ID | Customer Journey Analytics实例的ID。 <!-- True? --> |
-   | 数据视图名称 | 与导出关联的数据视图的名称。 用户可以在创建导出时选择数据视图，如中所述 [将Customer Journey Analytics数据导出到云端](/help/analysis-workspace/export/export-cloud.md). |
+   | 数据视图名称 | 与导出关联的数据视图的名称。 用户可以在创建导出时选择数据视图，如中所述 [将Customer Journey Analytics报表导出到云端](/help/analysis-workspace/export/export-cloud.md). |
    | 文件数 | 导出中包含的文件数。 |
    | 大小 | 导出的大小。<p>文件大小以1024为基数计算，有时表示为KIB和MIB。 如果您的云提供商计算的大小基数为1000，这可能会导致您的云提供商中显示的大小与此处显示的大小略有不同。</p> |
    | 位置 | 帐户上导出数据的位置。 |

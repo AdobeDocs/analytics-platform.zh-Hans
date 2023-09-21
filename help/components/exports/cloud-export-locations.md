@@ -5,18 +5,16 @@ title: 配置云导出位置
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: bcbd7ebb075a0d25b566fa8be164d6817bedf2e5
+source-git-commit: c8f855ad5b586ed9ac3cde6889b6e73ecb216efa
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 6%
+source-wordcount: '972'
+ht-degree: 5%
 
 ---
 
 # 配置云导出位置
 
-{{select-package}}
-
-在您可以将Customer Journey Analytics数据导出到云目标之前（如所述） [将Customer Journey Analytics数据导出到云端](/help/analysis-workspace/export/export-cloud.md)，您需要添加并配置发送数据的位置。
+在您可以将Customer Journey Analytics报表导出到Cloud目标之前（如所述） [将Customer Journey Analytics报表导出到云端](/help/analysis-workspace/export/export-cloud.md)，您需要添加并配置发送数据的位置。
 
 此过程包括添加和配置帐户(例如Amazon S3、Google Cloud Platform等)，如中所述 [配置云导出帐户](/help/components/exports/cloud-export-accounts.md)，然后在该帐户中添加和配置位置（例如帐户中的文件夹），如本文所述。
 
@@ -26,18 +24,36 @@ ht-degree: 6%
 
 1. 在添加位置之前，您需要添加帐户。 如果还没有帐户，请按照中的说明添加帐户 [配置云导出帐户](/help/components/exports/cloud-export-accounts.md).
 1. 在Customer Journey Analytics中，选择 [!UICONTROL **组件**] > [!UICONTROL **导出**].
-1. 在 [!UICONTROL 导出] 页面上，选择 [!UICONTROL **位置**] 选项卡。
-1. 选择 [!UICONTROL **添加位置**].
+1. 选择 [!UICONTROL **位置**] 选项卡，然后选择 [!UICONTROL **添加位置**].
 
    ![添加位置按钮](assets/location-add.png)
 
+   或
+
+   选择 [!UICONTROL **位置帐户**] 选项卡，选择要添加位置的现有帐户上的3点图标，然后选择 [!UICONTROL **添加位置**].
+
+   ![将位置添加到现有帐户](assets/add-location-existing-account.png)
+
    此时将显示“位置”对话框。
 
-1. 指定以下信息： |字段 |函数 | ------------------- | [!UICONTROL **名称**] |位置的名称。  | | [!UICONTROL **描述**] |提供帐户的简短描述，以帮助将其与相同帐户类型的其他帐户区分开来。 | | [!UICONTROL **位置帐户**] |选择您在中创建的位置帐户 [配置云导出帐户](/help/components/exports/cloud-export-accounts.md). |
+1. 指定以下信息： |字段 |函数 | ------------------- | [!UICONTROL **名称**] |位置的名称。  | | [!UICONTROL **描述**] |提供帐户的简短描述，以帮助将其与相同帐户类型的其他帐户区分开来。 | | [!UICONTROL **位置帐户**] |选择要创建位置的帐户。 有关如何创建帐户的信息，请参阅 [配置云导出帐户](/help/components/exports/cloud-export-accounts.md). |
 
 1. 在 [!UICONTROL **位置属性**] 部分，指定特定于您的位置帐户的帐户类型的信息。
 
    有关配置说明，请展开以下与您在 [!UICONTROL **位置帐户**] 字段。
+
+   +++Adobe Experience Platform数据登陆区
+
+   指定以下信息以配置Adobe Experience Platform数据登录区位置：
+
+   <!-- still need to update; can't create AEP account -->
+
+   | 字段 | 功能 |
+   |---------|----------|
+   | [!UICONTROL **IMS 组织 ID**] | IMS组织ID由Adobe提供。 单击旁边的复制图标 [!UICONTROL **IMS组织ID**] 字段以复制字段的内容，然后在您的AdobeExperience Platform帐户中使用ID。 |
+   | [!UICONTROL **前缀**] | 容器中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加反斜杠以创建文件夹。 例如，`folder_name/` |
+
++++
 
    +++Amazon S3 Role ARN
 
@@ -108,19 +124,6 @@ ht-degree: 6%
    | [!UICONTROL **阶段路径**] | 数据文件存储在Snowflake中的位置的路径。 <p>欲了解更多信息，请参见 [在Snowflake文档中选择“本地文件的内部暂存”页](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
 
    {style="table-layout:auto"}
-
-+++
-
-   +++Adobe Experience Platform
-
-   指定以下信息以配置Adobe Experience Platform位置：
-
-   <!-- still need to update; can't create AEP account -->
-
-   | 字段 | 功能 |
-   |---------|----------|
-   | [!UICONTROL **IMS 组织 ID**] | IMS组织ID由Adobe提供。 单击旁边的复制图标 [!UICONTROL **IMS组织ID**] 字段以复制字段的内容，然后在您的AdobeExperience Platform帐户中使用ID。 |
-   | [!UICONTROL **前缀**] | 容器中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加反斜杠以创建文件夹。 例如，`folder_name/` |
 
 +++
 

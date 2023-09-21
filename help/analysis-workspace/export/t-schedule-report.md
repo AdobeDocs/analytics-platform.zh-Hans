@@ -5,7 +5,7 @@ title: 通过电子邮件将Customer Journey Analytics数据发送给其他人
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 8eda6e9ed27ab458951cd4bd08f511987bc61eb0
+source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 63%
@@ -14,7 +14,7 @@ ht-degree: 63%
 
 # 通过电子邮件将Customer Journey Analytics数据发送给其他人
 
-您可以通过电子邮件将Customer Journey Analytics数据发送给选定的收件人来导出收件人数据。 您可以临时发送文件，也可以配置按计划发送的文件。 可以采用 CSV 或 PDF 格式发送文件。
+您可以通过电子邮件将Customer Journey Analytics报表发送给选定的收件人，以将其导出。 您可以临时发送文件，也可以配置按计划发送的文件。 可以采用 CSV 或 PDF 格式发送文件。
 
 应用于项目的所有标记都会自动应用于导出。
 
