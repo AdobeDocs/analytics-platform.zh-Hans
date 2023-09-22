@@ -5,9 +5,9 @@ title: 配置云导出帐户
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: 92b59f0e1f2668e5c2b2d1a73aee5ef6fbc7c420
 workflow-type: tm+mt
-source-wordcount: '1580'
+source-wordcount: '1551'
 ht-degree: 6%
 
 ---
@@ -189,8 +189,8 @@ ht-degree: 6%
    | 字段 | 功能 |
    |---------|----------|
    | [!UICONTROL **帐户标识符**] | 唯一地标识贵公司内的Snowflake帐户，以及遍布全球由Snowflake支持的云平台和云区域组成的网络。 <p>您需要从Snowflake帐户中获取帐户标识符，然后在此处粘贴信息。</p><p>要了解从何处获取此信息，请参阅 [“Snowflake标识符”页面](https://docs.snowflake.com/en/user-guide/admin-account-identifier).</p> |
-   | [!UICONTROL **用户**] | 用于连接的用户的登录名。 这是将专门用于Adobe的用户。 在此处指定名称，然后以Snowflake创建具有相同名称的用户。 <p>欲了解更多信息，请参见 [Snowflake文档中的“JDBC驱动程序连接参数参考”页](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
-   | [!UICONTROL **角色**] | 驱动程序启动的Snowflake会话中使用的默认访问控制角色。 此角色将专门用于Adobe。 在此处指定角色，然后在Snowflake中创建具有相同名称的角色，并授予其读取和写入权限。<p>欲了解更多信息，请参见 [Snowflake文档中的“JDBC驱动程序连接参数参考”页](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
+   | [!UICONTROL **用户**] | 用于连接的用户的登录名。 这是将专门用于Adobe的用户。 在此处指定名称，然后以Snowflake创建具有相同名称的用户。 <p>欲了解更多信息，请参见 [用户、角色和权限命令](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
+   | [!UICONTROL **角色**] | 此角色将专门用于Adobe。 在此处指定角色，然后在Snowflake中创建具有相同名称的角色，并将角色授予用户。 <p>欲了解更多信息，请参见 [用户、角色和权限命令](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
 
    {style="table-layout:auto"}
 
