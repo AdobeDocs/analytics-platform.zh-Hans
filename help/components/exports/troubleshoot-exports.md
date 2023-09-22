@@ -5,10 +5,10 @@ title: 导出失败疑难解答
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 9%
+source-wordcount: '271'
+ht-degree: 8%
 
 ---
 
@@ -42,8 +42,6 @@ ht-degree: 9%
 
 * 帐户
 
-* 公司名称
-
 * 连接
 
-* 数据视图
+* 公司名称

@@ -5,7 +5,7 @@ title: 管理导出
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 6%
@@ -36,7 +36,7 @@ ht-degree: 6%
 
    | 过滤器 | 描述 |
    |---------|----------|
-   | [!UICONTROL **帐户类型**] | 与导出关联的帐户类型。 可以使用以下帐户类型： <ul><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li><li>[!UICONTROL **Adobe Experience Manager登陆区**]</li></ul>。 |
+   | [!UICONTROL **帐户类型**] | 与导出关联的帐户类型。 可以使用以下帐户类型： <ul><li>[!UICONTROL **Adobe Experience Manager登陆区**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
    | [!UICONTROL **状态**] | 导出的状态。 可以使用以下状态： <ul><li>[!UICONTROL **活动**]：表示计划的导出尚未过期。 </li><li>[!UICONTROL **已完成**]：表示导出已成功导出。 对于计划的导出，这表示计划已过期。</li><li>[!UICONTROL **失败**]<p>以下情况可能会导致导出失败。 将鼠标悬停在失败状态上可查看有关失败的详细信息。 <ul><li>计划的导出过期</li><li>已达到计划导出的行限制 </li></ul> </p></li></ul> |
    | [!UICONTROL **频率**] | 导出的频率。 可以使用以下频率： <ul><li>[!UICONTROL **一次性**]</li><li>[!UICONTROL **每日**]</li><li>[!UICONTROL **每周**]</li><li>[!UICONTROL **每月**]</li><li>[!UICONTROL **每年**]</li></ul> |
 
