@@ -4,9 +4,9 @@ description: 随着时间的推移衡量用户参与度.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
 keywords: 产品分析
-source-git-commit: f41d4a6c8d181ed05fdb34657d4c7677d50ade5a
+source-git-commit: c7a370b4c83ceddcb3ec9542714f768d5562f297
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '523'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 2%
 
 向图表添加其他数据。
 
-* **[!UICONTROL 显示异常]**：在分析上运行异常检测。 离群值显示为圆点，您可以将光标悬停在这些圆点上以获取更多信息。
+* **[!UICONTROL 显示异常]**：运行 [异常检测](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) 趋势分析。 离群值显示为圆点，您可以将光标悬停在这些圆点上以获取更多信息。
 
 ## 应用时间比较
 
