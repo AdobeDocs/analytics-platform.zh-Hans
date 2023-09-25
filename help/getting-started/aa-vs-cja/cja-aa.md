@@ -4,10 +4,10 @@ description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 3149c50c14430c1960a9311b0464547b6e61bec7
-workflow-type: ht
-source-wordcount: '2080'
-ht-degree: 100%
+source-git-commit: e77dbb491178ffbe26fcec21d8b456cc3befbd1d
+workflow-type: tm+mt
+source-wordcount: '2140'
+ht-degree: 97%
 
 ---
 
@@ -136,5 +136,7 @@ ht-degree: 100%
 | 跨设备分析 | Customer Journey Analytics 支持来自未经身份验证和经过身份验证的会话的特定于设备的数据集的无缝组合。Customer Journey Analytics 可以将历史数据回填到已知设备。在 Analytics 中，此功能仅限于单个报告包和使用设备图时。 |
 | SQL 访问 | 通过使用 Data Distiller 选项，Customer Journey Analytics 可以消除 Adob&#x200B;e 后端处理中收集的数据的限制。您可以使用 SQL 修改数据、创建适合您的业务的值和数据集，并继续探索。Analytics 不支持对其数据进行任何类型的 SQL 访问。 |
 | 增强了安全和隐私选项 - HIPAA 就绪 | Customer Journey Analytics 符合 HIPAA 标准，并提供额外的安全选项，以确保符合相关法规。Adobe Analytics 尚未为 HIPAA 做好准备。 |
+| 能够合并数据集(如Adobe Analytics报表包) | Customer Journey Analytics允许您合并多个报表包的数据，就好像它们是Adobe Analytics中的单个报表包一样。 |
+| 派生字段 | 派生字段允许对您的数据进行报告时间转换。 数据可以动态合并、更正或创建，并可追溯应用于所有报表。 |
 
 {style="table-layout:auto"}
