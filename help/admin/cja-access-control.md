@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: ba59267dc39f1e564e555e0d5183613f9171403f
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 83%
@@ -14,7 +14,7 @@ ht-degree: 83%
 
 # Customer Journey Analytics 访问控制
 
-Customer Journey Analytics由三个访问级别或三个角色控制：产品管理员角色、产品配置文件管理员角色和用户级别访问权限。 本主题将更详细地解释这些角色。
+Customer Journey Analytics由三个访问级别或三个角色管理：产品管理员角色、产品配置文件管理员角色和用户级别访问。 本主题将更详细地解释这些角色。
 
 此外，我们还讨论了限制访问的更加细粒度化的方法，如工作区管理和行级以及值级访问控制。
 
@@ -49,11 +49,11 @@ Customer Journey Analytics 中的用户无法创建、编辑或查看数据视�
 
 ## 工作区项目策划
 
-可以在工作区报告级别使用另一级别的访问控制。您可以限制某些用户对特定组件的访问。有关如何在Workspace项目级别限制组件（维度、量度、过滤器、日期范围）以及如何将管理与数据视图绑定在一起的更多信息，请参阅 [策划项目](/help/analysis-workspace/curate-share/curate.md).
+可以在工作区报告级别使用另一级别的访问控制。您可以限制某些用户对特定组件的访问。有关如何在工作区项目级别限制组件（维度、量度、过滤器、日期范围）以及如何将管理与数据视图绑定在一起的更多信息，请参阅 [策划项目](/help/analysis-workspace/curate-share/curate.md).
 
 ## 授予对单个量度或维度的访问权限
 
-您不能像在传统的 Adobe Analytics 中那样，在 Customer Journey Analytics 中授予或拒绝针对单个量度或维度的权限。 量度和维度可以在以下位置修改： [数据视图](/help/data-views/data-views.md) 因此，随时可能发生Customer Journey Analytics变化。 更改它们也会追溯性地更改报告。
+您不能像在传统的 Adobe Analytics 中那样，在 Customer Journey Analytics 中授予或拒绝针对单个量度或维度的权限。 可以在以下位置修改量度和维度： [数据视图](/help/data-views/data-views.md) 因此，随时可能出现Customer Journey Analytics变化。 更改它们也会追溯性地更改报告。
 
 ## 用例
 
@@ -67,7 +67,7 @@ Customer Journey Analytics 中的用户无法创建、编辑或查看数据视�
 
 假设您想让用户只访问一天的数据，以下是如何限制对这些特定行的访问：
 
-1. 在Customer Journey Analytics中创建过滤器，其中 **[!UICONTROL 日]** 等于您希望他们访问数据的日期。
+1. 在Customer Journey Analytics中创建过滤器，其中 **[!UICONTROL 天]** 等于您希望他们访问数据的日期。
 1. 在“[!UICONTROL 数据视图]”>“[!UICONTROL 设置]”中，将该过滤器添加到数据视图。
 1. 保存数据视图，它会自动将过滤器应用于数据集。任何不符合过滤器定义的行现在将自动从编辑的数据视图中排除。
 1. 在 Admin Console 中创建新的产品配置文件，将用户添加到其中，并限制他们对此数据视图的访问。
@@ -93,9 +93,11 @@ Customer Journey Analytics 中的用户无法创建、编辑或查看数据视�
 | **[!UICONTROL 报告使用情况视图]** | 允许用户查看所有并发报告请求。 |
 | **[!UICONTROL 计算量度创建]** | 允许用户创建[计算量度](/help/components/calc-metrics/calc-metr-overview.md)。 |
 | **[!UICONTROL 过滤器创建]** | 允许用户创建[过滤器](/help/components/filters/filters-overview.md)。 |
-| **[!UICONTROL Labs 访问权限]** | 允许用户访问 [Labs](/help/labs/labs.md) 按Tab键进入Customer Journey Analytics。 |
+| **[!UICONTROL Labs 访问权限]** | 允许用户访问 [Labs](/help/labs/labs.md) 选项卡中的Customer Journey Analytics。 |
 | **[!UICONTROL 创建注释]** | 允许用户创建[注释](/help/components/annotations/overview.md)。 |
 | **[!UICONTROL 受众创建]** | 允许用户创建[受众](/help/components/audiences/audiences-overview.md)。 |
 | **[!UICONTROL 受众视图]** | 允许用户查看[受众](/help/components/audiences/audiences-overview.md)。 |
 
 {style="table-layout:auto"}
+
+<!-- Add this to the table above when FTE goes to Beta: | [!UICONTROL **Full Table Export**] | Lets users [export full tables to the cloud](/help/analysis-workspace/export/export-cloud.md). | -->

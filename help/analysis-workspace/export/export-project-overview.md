@@ -5,7 +5,7 @@ title: 导出项目数据概述
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
+source-git-commit: ba59267dc39f1e564e555e0d5183613f9171403f
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -39,4 +39,5 @@ ht-degree: 0%
 | [发送到云应用程序](/help/analysis-workspace/export/export-cloud.md) | 如果您想要： <ul><li>导出到共享位置，如Adobe Experience Platform Data Landing Zone、Google Cloud Platform、Microsoft Azure、Amazon S3或Snowflake。</li><li>可以是临时的，也可以是按计划进行的。</li><li>存储更多的Customer Journey Analytics数据。</li><li>导出包含数千行或数百万行的完整表。<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
 
 {style="table-layout:auto"}
+
 

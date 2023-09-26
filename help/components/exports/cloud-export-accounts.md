@@ -5,9 +5,9 @@ title: 配置云导出帐户
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: b773af6878f16266cbc8a502ec2e66d1380e8210
+source-git-commit: faae0b53b3df04794d1c57ffc20f46c1e442c2ba
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1604'
 ht-degree: 5%
 
 ---
@@ -189,8 +189,8 @@ ht-degree: 5%
    | 字段 | 功能 |
    |---------|----------|
    | [!UICONTROL **帐户标识符**] | 唯一地标识贵公司内的Snowflake帐户，以及遍布全球由Snowflake支持的云平台和云区域组成的网络。 <p>您需要从Snowflake帐户中获取帐户标识符，然后在此处粘贴信息。</p><p>要了解从何处获取此信息，请参阅 [“Snowflake标识符”页面](https://docs.snowflake.com/en/user-guide/admin-account-identifier).</p> |
-   | [!UICONTROL **用户**] | 用于连接的用户的登录名。 这是将专门用于Adobe的用户。 在此处指定名称，然后以Snowflake创建具有相同名称的用户。 <p>欲了解更多信息，请参见 [用户、角色和权限命令](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
-   | [!UICONTROL **角色**] | 此角色将专门用于Adobe。 在此处指定角色，然后在Snowflake中创建具有相同名称的角色，并将角色授予用户。 <p>欲了解更多信息，请参见 [用户、角色和权限命令](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
+   | [!UICONTROL **用户**] | 用于连接的用户的登录名。 我们建议创建一个将专门用于Adobe的新用户。 在此处指定名称，然后以Snowflake创建具有相同名称的用户。 您可以使用在Snowflake中创建用户 `CREATE USER` 命令。  <p>欲了解更多信息，请参见 [用户、角色和权限命令](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
+   | [!UICONTROL **角色**] | 将分配给用户的角色。 我们建议创建一个将专门用于Adobe的新角色。 在此处指定角色，然后在Snowflake中创建具有相同名称的角色，并将角色授予用户。 您可以使用在Snowflake中创建角色 `CREATE ROLE` 命令。 <p>欲了解更多信息，请参见 [用户、角色和权限命令](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
 
    {style="table-layout:auto"}
 
@@ -200,7 +200,17 @@ ht-degree: 5%
 
    <!-- add screen shot -->
 
-1. 复制 [!UICONTROL **公钥**] 字段到剪贴板。 公钥由Adobe提供。 在Snowflake中使用公钥连接到Snowflake帐户。 欲了解更多信息，请参见 [Snowflake文档中的“密钥对身份验证和密钥对轮换”页面](https://docs.snowflake.com/en/user-guide/key-pair-auth). |
+1. 复制 [!UICONTROL **公钥**] 字段到剪贴板。 公钥由Adobe提供。
+
+   在Snowflake中使用公钥连接到Snowflake帐户。 您必须将您创建的用户与此公钥相关联。
+
+   例如，在Snowflake中，指定以下命令：
+
+   ```
+   CREATE USER <your_adobe_user> RSA_PUBLIC_KEY = '<your_public_key>';
+   ```
+
+   欲了解更多信息，请参见 [Snowflake文档中的“密钥对身份验证和密钥对轮换”页面](https://docs.snowflake.com/en/user-guide/key-pair-auth).
 
 1. 选择 [!UICONTROL **确定**].
 

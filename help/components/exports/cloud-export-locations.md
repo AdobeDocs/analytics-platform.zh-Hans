@@ -5,9 +5,9 @@ title: 配置云导出位置
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 92b59f0e1f2668e5c2b2d1a73aee5ef6fbc7c420
+source-git-commit: faae0b53b3df04794d1c57ffc20f46c1e442c2ba
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1082'
 ht-degree: 5%
 
 ---
@@ -118,9 +118,9 @@ ht-degree: 5%
 
    | 字段 | 功能 |
    |---------|----------|
-   | [!UICONTROL **DB**] | 指定的数据库应为指定默认角色具有权限的现有数据库。<p>这是与阶段名称关联的数据库。</p> <p>欲了解更多信息，请参见 [Snowflake文档中的“数据库、方案和共享命令”页](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
-   | [!UICONTROL **架构**] | 指定的架构应为指定默认角色具有权限的现有架构。<p>这是与阶段名称关联的架构。</p><p>欲了解更多信息，请参见 [Snowflake文档中的“数据库、方案和共享命令”页](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
-   | [!UICONTROL **阶段名称**] | 以Snowflake存储数据文件的阶段的名称。 <p>请确保您在帐户中指定的角色对此阶段名称具有读写访问权限。 (由于您授予了读取和写入权限，因此我们建议使用仅由Adobe使用的阶段。) <p>有关向角色授予权限的信息，请参见 [在Snowflake文档中授予权限](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege). <p>有关阶段名称的更多信息，请参见 [在Snowflake文档中选择“本地文件的内部暂存”页](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
+   | [!UICONTROL **DB**] | 指定的数据库应为现有数据库。 您创建的角色需要拥有访问此数据库的权限。<p>这是与阶段名称关联的数据库。</p><p>可以使用以下命令将此角色权限授予Snowflake中的数据库： `GRANT USAGE ON DATABASE <your_database> TO ROLE <your_role>;`</p> <p>欲了解更多信息，请参见 [Snowflake文档中的“数据库、方案和共享命令”页](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
+   | [!UICONTROL **架构**] | 指定的架构应为现有架构。 您创建的角色需要拥有访问此方案的权限。<p>这是与阶段名称关联的架构。<p>可以使用以下命令将您创建的权限授予Snowflake中的方案： `GRANT USAGE ON SCHEMA <your_database>.<your_schema> TO ROLE <your_role>;`</p><p>欲了解更多信息，请参见 [Snowflake文档中的“数据库、方案和共享命令”页](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
+   | [!UICONTROL **阶段名称**] | 以Snowflake存储数据文件的内部阶段的名称。<p>请确保您在帐户中指定的角色对此阶段名称具有读写访问权限。 (由于您授予了读取和写入权限，因此我们建议使用仅由Adobe使用的阶段。)<p>可以使用以下命令授予Snowflake中阶段名称的读取和写入权限： `GRANT READ, WRITE ON STAGE <your_database>.<your_schema>.<your_stage_name> TO ROLE <your_role>;`</p> <p>有关向角色授予权限的信息，请参见 [在Snowflake文档中授予权限](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege). <p>有关阶段名称的更多信息，请参见 [在Snowflake文档中选择“本地文件的内部暂存”页](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
    | [!UICONTROL **阶段路径**] | 数据文件存储在Snowflake中的位置的路径。 <p>欲了解更多信息，请参见 [在Snowflake文档中选择“本地文件的内部暂存”页](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
 
    {style="table-layout:auto"}

@@ -5,9 +5,9 @@ title: 将Customer Journey Analytics报表导出到云端
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: 5ab26cec464051ace651d3ac9c2942f671b0df92
+source-git-commit: ba59267dc39f1e564e555e0d5183613f9171403f
 workflow-type: tm+mt
-source-wordcount: '1626'
+source-wordcount: '1716'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->在按本节所述导出数据之前，请确保您的表符合 [导出要求](#export-requirements).
+>在按本节所述导出数据之前，请确保 [导出要求](#export-requirements) 符合。
 
 要从Analysis Workspace导出完整表，请执行以下操作：
 
@@ -85,9 +85,13 @@ ht-degree: 4%
 
 ### 最低要求
 
-表必须在行中至少包含一个维度，并在每列中包含一个量度，才能支持完整表导出。
+确保您的表、环境和权限满足以下要求：
 
-管理员应确保IP地址列在 [Customer Journey Analytics使用的IP地址](/help/admin/ip-addresses.md) 防火墙允许列表中包含。
+* **表：** 所有表必须在行中至少包含一个维度，并在每列中包含一个量度，才能支持完整表导出。
+
+* **环境：** 管理员应确保IP地址列在 [Customer Journey Analytics使用的IP地址](/help/admin/ip-addresses.md) 防火墙允许列表中包含。
+
+* **权限：** 在Adobe Admin Console中，必须为用户分配一个产品配置文件，该配置文件具有 [!UICONTROL **完整表导出**] 为导出完整表而为其分配的权限。 有关在Admin Console中为产品配置文件分配权限的信息，请参阅 [Admin Console中的Customer Journey Analytics权限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html?lang=en#customer-journey-analytics-permissions-in-admin-console) 在 [Customer Journey Analytics访问控制](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
 
 ### 不支持的功能
 
