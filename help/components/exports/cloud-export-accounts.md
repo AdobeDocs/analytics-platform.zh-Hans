@@ -5,10 +5,10 @@ title: 配置云导出帐户
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 92b59f0e1f2668e5c2b2d1a73aee5ef6fbc7c420
+source-git-commit: b773af6878f16266cbc8a502ec2e66d1380e8210
 workflow-type: tm+mt
 source-wordcount: '1551'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
@@ -72,9 +72,9 @@ ht-degree: 6%
 
    <!-- add screen shot -->
 
-1. 复制 [!UICONTROL **SAS**] 字段到剪贴板。 使用此SAS令牌可访问从Analysis Workspace从AEP登录区域导出的数据。 了解如何访问您的数据” |
+1. 复制 [!UICONTROL **SAS**] 字段到剪贴板。 使用此SAS令牌可访问从Analysis Workspace从AEP登录区域导出的数据。 了解如何访问您的数据&quot; |
 
-1. 选择&#x200B;[!UICONTROL **关闭**]。
+1. 选择 [!UICONTROL **确定**].
 
 1. 继续 [配置云导出位置](/help/components/exports/cloud-export-locations.md).
 
@@ -98,7 +98,7 @@ ht-degree: 6%
 
 1. 复制 [!UICONTROL **用户ARN**] 字段到剪贴板。 用户ARN(Amazon资源名称)由Adobe提供。 您必须将此用户附加到您在Amazon S3角色ARN中创建的策略。
 
-1. 选择&#x200B;[!UICONTROL **关闭**]。
+1. 选择 [!UICONTROL **确定**].
 
 1. 继续 [配置云导出位置](/help/components/exports/cloud-export-locations.md).
 
@@ -122,7 +122,7 @@ ht-degree: 6%
 
 1. 复制 [!UICONTROL **主体**] 字段到剪贴板，然后确保您向主体授予权限，以便在Google Cloud Platform中将文件上传到此存储桶。 <!-- add link to Google Cloud docs on how to do this -->
 
-1. 选择&#x200B;[!UICONTROL **关闭**]。
+1. 选择 [!UICONTROL **确定**].
 
 1. 继续 [配置云导出位置](/help/components/exports/cloud-export-locations.md).
 
@@ -150,7 +150,7 @@ ht-degree: 6%
 
 1. 如果您尚未这样做，请确保您向Azure SAS中的存储段授予权限。 <!-- add link to Google Cloud docs on how to do this -->
 
-1. 选择&#x200B;[!UICONTROL **关闭**]。
+1. 选择 [!UICONTROL **确定**].
 
 1. 继续 [配置云导出位置](/help/components/exports/cloud-export-locations.md).
 
@@ -176,7 +176,7 @@ ht-degree: 6%
 
 1. 如果您尚未这样做，请确保您向Azure RBAC中的存储段授予权限。 <!-- add link to Google Cloud docs on how to do this -->
 
-1. 选择&#x200B;[!UICONTROL **关闭**]。
+1. 选择 [!UICONTROL **确定**].
 
 1. 继续 [配置云导出位置](/help/components/exports/cloud-export-locations.md).
 
@@ -202,7 +202,7 @@ ht-degree: 6%
 
 1. 复制 [!UICONTROL **公钥**] 字段到剪贴板。 公钥由Adobe提供。 在Snowflake中使用公钥连接到Snowflake帐户。 欲了解更多信息，请参见 [Snowflake文档中的“密钥对身份验证和密钥对轮换”页面](https://docs.snowflake.com/en/user-guide/key-pair-auth). |
 
-1. 选择&#x200B;[!UICONTROL **关闭**]。
+1. 选择 [!UICONTROL **确定**].
 
 1. 继续 [配置云导出位置](/help/components/exports/cloud-export-locations.md).
 

@@ -5,9 +5,9 @@ title: 将Customer Journey Analytics报表导出到云端
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
+source-git-commit: 5ab26cec464051ace651d3ac9c2942f671b0df92
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1626'
 ht-degree: 4%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 4%
 
   此类数据可用于检测长期趋势，以获取业务情报，最终做出更好的业务决策。
 
-* 导出包含数千行或数百万行的完整表。 其他导出方法最多允许50,000行。
+* 导出包含数千行或数百万行（300万、3000万或1.5亿行，具体取决于许可证类型）的完整表。 其他导出方法最多允许50,000行。
 
 * 在导出的Customer Journey Analytics数据中包含计算量度。
 
@@ -108,7 +108,7 @@ ht-degree: 4%
 
 以下组件不受支持，Analysis Workspace在执行完整表导出时会提示您从表中删除它们：
 
-* 在量度定义中使用高级函数的计算量度(请参阅 [高级功能](/help/components/calc-metrics/cm-adv-functions.md) 了解更多信息)
+* 在量度定义中使用基本或高级函数的计算量度(请参阅 [基本功能](/help/components/calc-metrics/cm-functions.md) 和 [高级功能](/help/components/calc-metrics/cm-adv-functions.md) 了解更多信息)
 * 管理员限制无法导出的组件(请参阅 *筛选数据视图中的数据治理策略* 中的部分 [标签和策略](/help/data-views/data-governance.md) 了解更多信息)
 * 每个报表有超过5个维度和5个量度（最多支持5个维度和5个量度）
 * 在表列中：
