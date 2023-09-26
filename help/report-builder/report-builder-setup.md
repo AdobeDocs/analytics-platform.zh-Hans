@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 97%
+source-wordcount: '491'
+ht-degree: 89%
 
 ---
 
@@ -72,11 +72,11 @@ ht-degree: 97%
 
 联系 IT 或安全团队，请求批准使用 Report Builder 插件。获得批准之后，在“Office 插件”对话框中，选择“管理员托管”选项卡。
 
-![](./assets/image1.png)
+![“Office加载项”对话框中的“管理员托管”选项卡。](./assets/image1.png)
 
 安装 Report Builder 插件后，Report Builder 图标显示现在 Excel 功能区的“开始”选项卡下。
 
-![](./assets/rb_app_icon.png)
+![Excel中的“Report Builder”图标](./assets/rb_app_icon.png)
 
 ## 登录 Report Builder
 
@@ -88,11 +88,11 @@ ht-degree: 97%
 
 1. 从 Adobe Report Builder 工具栏，单击&#x200B;**登录**。
 
-   ![](./assets/rb_login.png)
+   ![单击“Report Builder登录”按钮。](./assets/rb_login.png)
 
 1. 输入您的 Adobe Experience ID 帐户信息。您的帐户信息应该与您的 Customer Journey Analytics 凭据匹配。
 
-   ![](./assets/image4.png)
+   ![您的登录图标和组织。](./assets/image4.png)
 
 登录之后，您的登录图标和组织将显示在面板的顶部。
 
@@ -104,7 +104,7 @@ ht-degree: 97%
 
 1. 从可用组织列表中选择组织。只列出您有访问权限的组织。
 
-   ![](./assets/image5.png)
+   ![您可以访问的组织的列表。](./assets/image5.png)
 
 ## 注销
 
@@ -114,6 +114,6 @@ ht-degree: 97%
 
 1. 单击头像图标以显示您的用户配置文件。
 
-   ![](./assets/image6.png)
+   ![您的用户个人资料头像和“注销”按钮。](./assets/image6.png)
 
 1. 单击&#x200B;**注销**。

@@ -1,15 +1,15 @@
 ---
 title: 如何在 Customer Journey Analytics 的 Report Builder 中使用筛选器
-description: 介绍如何在Report Builder中使用过滤器进行Customer Journey Analytics
+description: 介绍如何在Customer Journey Analytics的Report Builder中使用筛选器
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 1f39d7f4-b508-45d8-9b97-81242c3805d3
 solution: Customer Journey Analytics
-source-git-commit: 8b0a4b06a2ebed196bab37e9befb61e0bf0f8902
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 68%
+source-wordcount: '850'
+ht-degree: 60%
 
 ---
 
@@ -25,9 +25,7 @@ ht-degree: 68%
 
 要将筛选器应用于单独的量度，请将筛选器拖放到表中的某个量度上。您还可以在“表”窗格中，单击量度右侧的 **...** 图标，然后选择&#x200B;**筛选量度**。要查看应用的筛选器，请将光标悬停在上方或者在“表”窗格中选择量度。已应用筛选器的量度会显示一个筛选器图标。
 
-<!-- ![](./assets/image24.png) -->
-
-![](./assets/filter_by.png)
+![显示量度的过滤器选项卡。](./assets/filter_by.png)
 
 ## 快速编辑筛选器
 
@@ -39,11 +37,11 @@ ht-degree: 68%
 
 1. 从一个或多个数据块选择单元格范围。
 
-   ![](./assets/select_multiple_dbs.png)
+   ![“快速编辑”筛选器面板显示数据视图、日期范围和筛选器的筛选器选项。](./assets/select_multiple_dbs.png)
 
 1. 单击“筛选器”链接以启动“快速编辑 - 筛选器”面板。
 
-   ![](./assets/quick_edit_filters.png)
+   ![显示“添加过滤器”字段和过滤器已应用列表的过滤器面板。](./assets/quick_edit_filters.png)
 
 ### 添加或删除筛选器
 
@@ -55,7 +53,7 @@ ht-degree: 68%
 
    所选数据块中有多个筛选器时，您可以使用&#x200B;**添加筛选器**&#x200B;搜索字段搜索特定筛选器。
 
-   ![](./assets/add_filter.png)
+   ![添加筛选器字段。](./assets/add_filter.png)
 
 1. 通过从&#x200B;**添加筛选器**&#x200B;下拉菜单中选择筛选器来添加筛选器。
 
@@ -75,7 +73,7 @@ ht-degree: 68%
 
 1. 在“快速编辑 - 筛选器”面板中选择&#x200B;**替换**&#x200B;选项卡。
 
-   ![](./assets/replace_filter.png)
+   ![选择替换选项卡。](./assets/replace_filter.png)
 
 1. 使用&#x200B;**搜索列表**&#x200B;搜索字段来查找特定筛选器。
 
@@ -85,41 +83,41 @@ ht-degree: 68%
 
    选择某个筛选器以将其添加到&#x200B;**替换为...** 列表中。
 
-   ![](./assets/replace_screen_new.png)
+   ![选中了“应用程序上的人员”数据块的“替换”选项卡，更新了“替换为”列表，显示“应用程序上的人员”已修订。](./assets/replace_screen_new.png)
 
 1. 单击&#x200B;**应用**。
 
    Report Builder 将更新筛选器列表以反映替换情况。
 
-### 从单元格定义数据块筛选器
+### 从单元格定义数据块过滤器
 
-数据块可以引用单元格中的筛选器。 多个数据块可以引用同一单元格作为过滤器，从而允许您一次轻松切换多个数据块的过滤器。
+数据块可以引用单元格中的筛选器。 多个数据块可以引用同一单元格进行筛选，从而允许您一次轻松切换多个数据块的筛选器。
 
 从单元格应用筛选器
 
-1. 导航到数据块创建或编辑过程中的步骤2。 参见 [创建数据块](./create-a-data-block.md).
-1. 单击 **筛选器** 选项卡，以定义过滤器。
+1. 导航到数据块创建或编辑过程中的步骤2。 请参阅 [创建数据块](./create-a-data-block.md).
+1. 单击 **过滤器** 选项卡以定义过滤器。
 1. 单击 **从单元格创建筛选器**.
 
-   ![](./assets/create-filter-from-cell.png)
+   ![从单元格创建过滤器图标。](./assets/create-filter-from-cell.png)
 
-1. 选择要数据块从中引用筛选器的单元格。
+1. 选择要数据块从中引用过滤器的单元格。
 
-1. 通过双击筛选器或者将其拖放到包含的筛选器部分来添加要添加到单元格的筛选器选择。
+1. 通过双击过滤器或者将其拖放到包含的过滤器部分来添加要添加到单元格的过滤器选项。
 
    注意：一次只能为给定单元格选择一个选项。
 
-   ![](./assets/select-filters.png)
+   ![显示所包含过滤器的“从单元格添加过滤器”窗口。](./assets/select-filters.png)
 
 1. 单击 **应用** 创建引用单元格。
 
-1. 从 **筛选器** 选项卡，将新创建的引用单元格筛选器添加到数据块。
+1. 从 **过滤器** 选项卡，将新创建的引用单元格筛选器添加到数据块。
 
-   ![](./assets/reference-cell-filter.png)
+   ![显示“Sheet1！J1(All Data)（所有数据）”筛选器添加到表的“筛选器”选项卡。](./assets/reference-cell-filter.png)
 
 1. 单击&#x200B;**完成**。
 
-   现在，此单元格可以被其筛选器中的其他数据块引用。 要将引用单元格作为过滤器应用于其他数据块，只需从过滤器选项卡中将单元格引用添加到其过滤器即可。
+   现在，此单元格可以被其筛选器中的其他数据块引用。 要将引用单元格作为过滤器应用到其他数据块，只需从过滤器选项卡中将单元格引用添加到其过滤器。
 
 #### 使用引用单元格更改数据块筛选器
 
@@ -127,10 +125,10 @@ ht-degree: 68%
 
 1. 单击下面的链接 **单元格中的筛选器** 在“快速编辑”菜单中。
 
-   ![](./assets/filters-from-cell-link.png)
+   ![显示Sheet1！J1（所有数据）的单元格链接中的筛选器](./assets/filters-from-cell-link.png)
 
 1. 从下拉菜单中选择您的筛选器。
 
-   ![](./assets/filter-drop-down.png)
+   ![筛选器下拉菜单](./assets/filter-drop-down.png)
 
 1. 单击&#x200B;**应用**。

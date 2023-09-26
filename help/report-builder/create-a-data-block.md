@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 74%
+source-wordcount: '649'
+ht-degree: 69%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 74%
 
 1. 单击&#x200B;**创建数据块**。
 
-   ![](./assets/create_db.png)
+   ![显示创建数据块选项的屏幕截图。](./assets/create_db.png)
 
 1. 设置&#x200B;**数据块位置**。
 
@@ -41,13 +41,9 @@ ht-degree: 74%
 
 1. 单击&#x200B;**下一步**。
 
-   ![](./assets/choose_date_data_view3.png)
+   ![显示日期范围选项和活动下一步按钮的屏幕截图。](./assets/choose_date_data_view3.png)
 
    配置数据块之后，您可以选择维度、量度和筛选器来构建数据块。“维度”、“量度”和“筛选器”选项卡显示在表生成器窗格的上方。
-<!--
-    ![](./assets/image9.png)
-  -->
-
 
 ## 构建数据块
 
@@ -75,13 +71,13 @@ ht-degree: 74%
 
    将组件添加到表时，数据块的预览显示在工作表中的“数据块”位置。在表中添加、移动或删除项目时，数据块版面的预览自动更新。
 
-   ![](./assets/image10.png)
+   ![显示已添加组件和已更新工作表的屏幕截图。](./assets/image10.png)
 
    **显示或隐藏行和列标题**
 
 1. 单击 **表** 设置图标。
 
-   ![占位符图像](./assets/table-settings.png){width="35%"}
+   ![显示“表设置”选项的屏幕截图。](./assets/table-settings.png){width="35%"}
 
 1. 选中或取消选中“显示行和列标题”选项。 默认显示标题。
 
@@ -89,7 +85,7 @@ ht-degree: 74%
 
 1. 单击维度或列标题上的省略号图标以显示设置。
 
-   ![占位符图像](./assets/row-heading.png){width="35%"}
+   ![行部分中的省略号图标。](./assets/row-heading.png){width="35%"}
 
 1. 单击隐藏或显示以切换维度标签或列标题。 默认显示所有标签。
 
@@ -97,8 +93,8 @@ ht-degree: 74%
 
    在检索分析数据时将显示正在处理消息。
 
-   ![](./assets/image11.png)
+   ![处理消息。](./assets/image11.png)
 
    Report Builder 检索数据并在工作表中显示已完成的数据块。
 
-   ![](./assets/image12.png)
+   ![已完成的数据块。](./assets/image12.png)

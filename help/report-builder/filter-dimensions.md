@@ -1,15 +1,15 @@
 ---
-title: 在Report Builder中筛选Dimension
-description: 介绍如何在Report Builder中使用筛选器维度进行Customer Journey Analytics
+title: 如何在Report Builder中筛选维度
+description: 描述如何在Customer Journey Analytics的Report Builder中使用筛选维度
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: d045ecf73f7e15940510b764814fb853222e88cc
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 98%
+source-wordcount: '988'
+ht-degree: 88%
 
 ---
 
@@ -25,13 +25,13 @@ ht-degree: 98%
 
 1. 单击表中组件名称旁边的 **...** 图标。
 
-   ![](./assets/image27.png)
+   ![省略号图标选项。](./assets/image27.png)
 
 1. 在弹出菜单中选择&#x200B;**筛选维度**&#x200B;以显示&#x200B;**筛选维度**&#x200B;窗格。
 
 1. 选择&#x200B;**最受欢迎**&#x200B;或&#x200B;**特定**。
 
-   ![](./assets/image28.png)
+   ![在筛选器维度窗格中选择的特定选项。](./assets/image28.png)
 
 1. 根据所选过滤器类型选择相应的选项。
 
@@ -49,7 +49,7 @@ ht-degree: 98%
 
 通过“最受欢迎”选项，您可以根据量度值动态筛选维度项。“最受欢迎”筛选条件根据量度值返回排名最高的维度项。默认情况下列出前 10 个维度项，按照添加到数据块的第一个量度排序。
 
-![图像文件](./assets/image29.png)
+![最受欢迎选项。](./assets/image29.png)
 
 
 ### “页面”和“行”选项
@@ -92,7 +92,7 @@ ht-degree: 98%
 
 1. 从下拉列表中选择运算符。
 
-   ![](./assets/image31.png)
+   ![运算符列表。](./assets/image31.png)
 
 1. 在搜索字段中输入值。
 
@@ -114,14 +114,14 @@ ht-degree: 98%
 
 2. 单击首选量度上的箭头。 
 
-   ![](./assets/image30.png)
+   ![表生成器和量度。](./assets/image30.png)
 
 
 ## 特定筛选
 
 使用“特定”选项，您可以为每个维度创建固定的维度项列表。使用&#x200B;**特定**&#x200B;筛选类型指定要包括在过滤器中的确切维度项。可从列表或从单元格范围中选择项。
 
-![](./assets/image32.png)
+![“特定”选项和选定项。](./assets/image32.png)
 
 ### 从列表
 
@@ -129,7 +129,7 @@ ht-degree: 98%
 
    选择&#x200B;**从列表**&#x200B;选项时，列表中填充维度项，具有最多事件的维度在前。
 
-   ![](./assets/image33.png)
+   ![“从列表”选项和可用项。](./assets/image33.png)
 
    **可用项**&#x200B;列表按照从最多事件到最少事件的顺序对维度项排序。
 
@@ -137,9 +137,9 @@ ht-degree: 98%
 
 1. 要搜索未包含在过去 90 天数据中的项，请单击&#x200B;**显示过去 6 个月的项**&#x200B;以扩大搜索。
 
-   ![](./assets/image34.png)
+   ![显示过去6个月内的项目列表。](./assets/image34.png)
 
-   加载了过去六个月的数据之后，Report Builder 更新链接以&#x200B;**显示过去 18 个月的项**。
+   加载过去6个月的数据后，Report Builder将更新指向的链接 **显示过去18个月的项**.
 
 1. 选择维度项。
 
@@ -151,7 +151,7 @@ ht-degree: 98%
 
    要在列表中移动项，请拖放该项或单击 ... 以显示移动菜单。
 
-   ![](./assets/image36.png)
+   ![维度项目列表。](./assets/image36.png)
 
 1. 单击&#x200B;**应用**。
 
@@ -161,7 +161,7 @@ ht-degree: 98%
 
 选择&#x200B;**从单元格范围**&#x200B;选项可选择包含要匹配的维度项列表的单元格范围。
 
-![](./assets/image37.png)
+![使用从单元格范围选项和字段选择一个单元格范围。](./assets/image37.png)
 
 选择单元格范围时，请考虑以下限制：
 
@@ -175,6 +175,6 @@ ht-degree: 98%
 
 从&#x200B;**维度**&#x200B;选项卡，单击维度名称旁边的 V 形图标以查看维度项列表。
 
-![](./assets/dimensions_chevron.png)
+![“Dimension”选项卡和维列表。](./assets/dimensions_chevron.png)
 
 您可以将项拖放到&#x200B;**表**&#x200B;上或者双击项名称以将其添加到&#x200B;**表**&#x200B;生成器。

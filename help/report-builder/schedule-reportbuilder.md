@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
+source-git-commit: 063fc71a9c0bbcadb1348aa4c41c64bed08a51f6
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 90%
+source-wordcount: '1166'
+ht-degree: 84%
 
 ---
 
@@ -29,15 +29,15 @@ ht-degree: 90%
 
 1. 单击 Report Builder 中心的计划按钮。
 
-   ![](./assets/schedule-button.png){width="55%"}
+   ![单击“调度”按钮可创建调度。](./assets/schedule-button.png){width="55%"}
 
 1. 单击计划工作簿或左上角的加号按钮以创建新的计划工作簿。
 
-   ![ alt 描述](./assets/schedule-workbook.png){width="55%"}
+   ![计划工作簿窗口。](./assets/schedule-workbook.png){width="55%"}
 
    计划窗格显示有关工作簿的一些预定义信息，例如工作簿名称和修改工作簿的最后日期。
 
-   ![ alt 描述](./assets/schedule-pane.png){width="55%"}
+   ![计划窗格。](./assets/schedule-pane.png){width="55%"}
 
 1. （可选）输入文件名。
 
@@ -51,13 +51,13 @@ ht-degree: 90%
 
    当您做出此选择时，系统会提示您输入密码以打开文件。如果您担心数据安全并希望使用密码保护工作簿，这将很有帮助。使用密码保护文件需要您选择 **.zip 压缩**。密码必须至少包含 8 个字符，并包含数字和特殊字符。
 
-   ![ alt 描述](./assets/zip-compression.png){width="55%"}
+   ![在“密码保护工作簿”字段中输入密码。](./assets/zip-compression.png){width="55%"}
 
 1. **输入收件人**。您可以输入组织中认可的人员姓名，也可以输入组织内部或外部人员的电子邮件地址。
 
 1. 输入电子邮件的&#x200B;**主题**&#x200B;和对收件人的描述。主题默认为工作簿文件名，但您可以根据需要修改主题。您可以在描述部分添加详细信息。
 
-   ![ alt 描述](./assets/recipients-subject.png){width="55%"}
+   ![在“主题”字段中输入主题。](./assets/recipients-subject.png){width="55%"}
 
 1. 设置计划选项以设置您希望将工作簿通过电子邮件发送给收件人的日期和时间。
 
@@ -65,15 +65,15 @@ ht-degree: 90%
 
    从下拉菜单中，设置&#x200B;**运算符**。您可以将频率设置为每小时、每天、每周、每月或每年的特定日期。例如，您可以设置一个时间表，在每个月的第一个星期日晚上发送工作簿，这样您的收件人将在星期一早上第一时间在他们的收件箱中收到电子邮件。
 
-   ![ alt 描述](./assets/frequency.png){width="55%"}
+   ![选择计划报表的频率。](./assets/frequency.png){width="55%"}
 
 1. 设置计划后，点击&#x200B;**按计划发送**。
 
-   ![ alt 描述](./assets/send-on-schedule.png){width="55%"}
+   ![单击按计划发送。](./assets/send-on-schedule.png){width="55%"}
 
    您将在 Report Builder 中心底部看到一个确认提示，计划的工作簿列在“工作簿”选项卡下。
 
-   ![ alt 描述](./assets/confirmation-toast.png){width="55%"}
+   ![确认toast](./assets/confirmation-toast.png){width="55%"}
 
 ## 仅发送一次工作簿
 
@@ -81,7 +81,7 @@ ht-degree: 90%
 
 1. 取消选中 **显示计划选项**
 
-   ![ alt 描述](./assets/send-now.png){width="40%"}
+   ![单击取消选中显示计划选项可一次性发送工作簿。](./assets/send-now.png){width="40%"}
 
 1. 单击&#x200B;**立即发送**。
 
@@ -115,14 +115,14 @@ ht-degree: 90%
 
 您可以通过单击搜索栏右侧的列设置图标来选择要在历史记录选项卡中显示的列。
 
-![ alt 描述](./assets/history.png){width="55%"}
+![单击列图标可显示或隐藏特定列。](./assets/history.png){width="55%"}
 
 您可以通过转到工作簿选项卡、选择工作簿并单击历史记录图标来过滤历史记录以仅查看单个计划工作簿的历史记录。
 
 您还可以从“工作簿”选项卡查看特定工作簿的历史记录。在工作簿选项卡上，选择工作簿，然后单击历史记录图标。
 
-![ alt 描述](./assets/history2.png){width="55%"}
+![工作簿历史记录图标](./assets/history2.png){width="55%"}
 
 然后工作簿过滤器将出现在历史记录的顶部。要再次查看所有计划任务的历史记录，请单击过滤器旁边的 x。
 
-![ alt 描述](./assets/history3.png){width="55%"}
+![工作簿筛选器。](./assets/history3.png){width="55%"}
