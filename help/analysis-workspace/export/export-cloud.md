@@ -5,9 +5,9 @@ title: 将Customer Journey Analytics报表导出到云端
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: ba59267dc39f1e564e555e0d5183613f9171403f
+source-git-commit: b984241de42b2db2992e18c17cd60ca14cc725c7
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1853'
 ht-degree: 4%
 
 ---
@@ -18,11 +18,35 @@ ht-degree: 4%
 
 此外，还提供了导出Customer Journey Analytics报表的其他方法，如中所述 [导出概述](/help/analysis-workspace/export/export-project-overview.md).
 
+## 了解完整的表导出
+
+您可以将完整的表从Analysis Workspace导出到Google、Azure、Amazon和Adobe等云提供商。
+
+[将全部表导出到云的优势](#advantages-of-exporting-to-the-cloud) 包括导出数百万行的功能，包括计算量度、将数据输出结构为串联值等。
+
+导出完整表时，请考虑以下事项：
+
+* 在导出到云之前，请确保您的表、环境和权限符合 [导出要求](#export-requirements).
+
+* 部分 [功能](#unsupported-features) 和 [组件](#unsupported-components) 将完整的表导出到云时不支持。
+
+将完整的表导出到云时，请使用以下流程：
+
+1. [配置云帐户](/help/components/exports/cloud-export-accounts.md)
+
+1. [在帐户上配置位置](/help/components/exports/cloud-export-locations.md)
+
+1. [从工作区中导出完整表](#export-full-tables-from-analysis-workspace)
+
+1. [在云中访问数据](#view-exported-data-and-manifest-file) 和 [在Adobe中管理导出](/help/components/exports/manage-exports.md)
+
+![完整表导出过程](assets/export-full-table-process.png)
+
 ## 从Analysis Workspace导出完整表
 
 >[!NOTE]
 >
->在按本节所述导出数据之前，请确保 [导出要求](#export-requirements) 符合。
+>在按本节所述导出数据之前，请参阅以了解有关完整表导出的更多信息。 [了解完整的表导出](#understand-full-table-export) 部分。
 
 要从Analysis Workspace导出完整表，请执行以下操作：
 
@@ -58,6 +82,38 @@ ht-degree: 4%
    数据会以您指定的频率发送到您指定的云帐户。
 
 1. （可选）创建导出后，无论您选择立即发送还是按定义的计划发送，都可以在 [“导出”页面](/help/components/exports/manage-exports.md) 并在 [导出日志](/help/components/exports/manage-export-logs.md).</p>
+
+## 管理导出
+
+从Analysis Workspace导出数据后，您可以编辑、重新导出、复制、标记或删除现有导出，如中所述 [管理导出](/help/components/exports/manage-exports.md).
+
+## 查看导出的数据和清单文件
+
+### 导出的数据
+
+导出的数据可在您配置的云目标中作为压缩文件使用，如中所述 [配置云导出帐户](/help/components/exports/cloud-export-accounts.md) 和 [配置云导出位置](/help/components/exports/cloud-export-locations.md).
+
+压缩文件的文件名如下所示，具体取决于您选择CSV还是JSON作为文件格式：
+
+* `cja-export-{reportInstanceId}-{idx}.csv.gz`
+
+* `cja-export-{reportInstanceId}-{idx}.json.gz`
+
+>[!NOTE]
+>
+>选择文件格式 [!UICONTROL **文件格式**] 字段，如中所述 [从Analysis Workspace导出完整表](#export-full-tables-from-analysis-workspace).
+
+### 清单文件
+
+文件名为的清单文件 `cja-export-{reportInstanceId}-{idx}.json.gz` 包含在任何至少包含一个文件的成功导出投放中。 利用清单文件，可确认是否已成功提交所有文件。 它包括以下信息：
+
+* 已传送的所有文件的列表
+
+* 每个文件的大小
+
+* 每个文件的时间戳
+
+<!-- add in  what the file name, structure, and file format will be -->
 
 ## 导出到云的优势
 
@@ -141,38 +197,6 @@ ht-degree: 4%
   >[!NOTE]
   >
   >仅当将数据导出到云中时，才支持多维报表，如本文所述。
-
-## 管理导出
-
-从Analysis Workspace导出数据后，您可以编辑、重新导出、复制、标记或删除现有导出，如中所述 [管理导出](/help/components/exports/manage-exports.md).
-
-## 查看导出的数据和清单文件
-
-### 导出的数据
-
-导出的数据可在您配置的云目标中作为压缩文件使用，如中所述 [配置云导出帐户](/help/components/exports/cloud-export-accounts.md) 和 [配置云导出位置](/help/components/exports/cloud-export-locations.md).
-
-压缩文件的文件名如下所示，具体取决于您选择CSV还是JSON作为文件格式：
-
-* `cja-export-{reportInstanceId}-{idx}.csv.gz`
-
-* `cja-export-{reportInstanceId}-{idx}.json.gz`
-
->[!NOTE]
->
->选择文件格式 [!UICONTROL **文件格式**] 字段，如中所述 [从Analysis Workspace导出完整表](#export-full-tables-from-analysis-workspace).
-
-### 清单文件
-
-文件名为的清单文件 `cja-export-{reportInstanceId}-{idx}.json.gz` 包含在任何至少包含一个文件的成功导出投放中。 利用清单文件，可确认是否已成功提交所有文件。 它包括以下信息：
-
-* 已传送的所有文件的列表
-
-* 每个文件的大小
-
-* 每个文件的时间戳
-
-<!-- add in  what the file name, structure, and file format will be -->
 
 ## 完整表格导出(在Customer Journey Analytics中)与Data Warehouse(在Adobe Analytics中)的比较
 
