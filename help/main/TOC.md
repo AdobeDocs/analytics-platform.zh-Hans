@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics 指南
 source-git-commit: dab672e07ddf834701279e108ad2daab1ad94efa
 workflow-type: tm+mt
 source-wordcount: '1023'
-ht-degree: 81%
+ht-degree: 82%
 
 ---
 
@@ -248,8 +248,8 @@ ht-degree: 81%
          + [过滤指标](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [堆叠和替换过滤器](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [过滤和加权指标](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
-         + [过滤计算量度](../components/calc-metrics/cm-workflow/cm-filter.md)
-         + [将计算量度标记为收藏](../components/calc-metrics/cm-workflow/cm-favorite.md)
+         + [筛选计算量度](../components/calc-metrics/cm-workflow/cm-filter.md)
+         + [将计算量度标记为收藏内容](../components/calc-metrics/cm-workflow/cm-favorite.md)
          + [复制计算量度](../components/calc-metrics/cm-workflow/cm-copy.md)
          + [使用函数](../components/calc-metrics/cm-workflow/cm-using-functions.md)
          + [标记计算量度](../components/calc-metrics/cm-workflow/cm-tagging.md)
