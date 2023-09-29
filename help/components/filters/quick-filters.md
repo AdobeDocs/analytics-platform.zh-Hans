@@ -4,9 +4,9 @@ title: 快速过滤器
 feature: Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 6b79243a2f12936208f6f04c249a81315ba8901b
+source-git-commit: 3d55105a7d4f4687ed0fc6d857c906eec707f6a6
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1168'
 ht-degree: 37%
 
 ---
@@ -61,7 +61,7 @@ Analysis Workspace中的任何用户都可以创建快速过滤器。
    | 加号 (+) | 添加另一条规则。 |
    | AND/OR 限定符 | 可将“AND”或“OR”限定符添加到规则，但不得在单个过滤器定义中混用“AND”和“OR”。 |
    | [!UICONTROL 应用] | 将此过滤器应用于面板。如果该过滤器不包含任何数据，则系统将询问您是否要继续。 |
-   | [!UICONTROL 打开生成器] | 打开过滤器生成器。 在筛选器生成器中保存或应用筛选器后，即不再将它视为“快速筛选器”。 它成为组件列表过滤器库的一部分。 <p>要使该组件在所有项目和左边栏中都可用，请选择选项 [!UICONTROL **使该过滤器对所有项目都可用，并将其添加到组件列表**].</p><p>有关更多信息，请参阅部分 [将快速筛选器另存为组件列表筛选器](#save-a-quick-filter-as-a-component-list-filter) 本文章中。</p><p>**注意：** 仅限在中具有过滤器创建权限的用户 [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html#analytics-tools?lang=zh-Hans) 可以打开过滤器生成器。</p> |
+   | [!UICONTROL 打开生成器] | 打开过滤器生成器。 在筛选器生成器中保存或应用筛选器后，即不再将它视为“快速筛选器”。 它成为组件列表过滤器库的一部分。 <p>要使该组件在所有项目和左边栏中都可用，请选择选项 [!UICONTROL **使该过滤器对所有项目都可用，并将其添加到组件列表**].</p><p>有关更多信息，请参阅部分 [将快速筛选器另存为组件列表筛选器](#save-a-quick-filter-as-a-component-list-filter) 本文章中。</p><p>**注意：** 仅限在中具有区段创建权限的用户 [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=zh-Hans) 可以打开过滤器生成器。</p> |
    | [!UICONTROL 取消] | 取消此快速过滤器（不要应用它）。 |
    | [!UICONTROL 日期范围] | 该验证器使用面板日期范围执行其数据查找。但在快速过滤器中应用的任何日期范围都将取代面板顶部的面板日期范围。 |
    | 预览（右上角） | 让您查看您的过滤器是否有效以及该过滤器的作用范围。 表示在应用此过滤器时预计将看到的数据集的划分方式。 您可能会收到一条通知，表明此过滤器没有数据。在这种情况下，可继续操作或更改过滤器定义。 |
@@ -83,7 +83,7 @@ Analysis Workspace中的任何用户都可以创建快速过滤器。
 >
 > 保存快速过滤器时，请考虑以下事项：
 > 
-> * 要保存快速过滤器，您需要以下项的过滤器创建权限： [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html#analytics-tools?lang=zh-Hans).
+> * 要保存快速过滤器，您需要以下项的区段创建权限： [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=zh-Hans).
 > 
 > * 保存或应用过滤器后，在快速过滤器生成器中无法再编辑它。 相反，您必须使用常规过滤器生成器。
 
