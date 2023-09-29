@@ -5,9 +5,9 @@ title: 配置云导出位置
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 2da2b4b2931f28dc373a2c634c38e9dfcbdd2788
+source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1415'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 4%
 
    继续下面的部分，该部分与您在 [!UICONTROL **位置帐户**] 字段。
 
-### Adobe Experience Platform数据登陆区
+### AEP数据登陆区
 
 >[!IMPORTANT]
 >

@@ -5,9 +5,9 @@ title: 配置云导出帐户
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: faae0b53b3df04794d1c57ffc20f46c1e442c2ba
+source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1600'
 ht-degree: 5%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 5%
 
 1. 在 [!UICONTROL **位置帐户说明**] 字段，提供帐户的简短描述，以帮助将其与同一帐户类型的其他帐户区分开来。
 
-1. 在 [!UICONTROL **帐户类型**] 字段中，选择要导出到的云帐户类型。 可用的帐户类型包括Amazon S3 Role ARN、Google Cloud Platform、Azure SAS、Azure RBAC、Snowflake和Adobe Experience Platform Data Landing Zone。
+1. 在 [!UICONTROL **帐户类型**] 字段中，选择要导出到的云帐户类型。 可用的帐户类型包括Amazon S3 Role ARN、Google Cloud Platform、Azure SAS、Azure RBAC、Snowflake和AEP Data Landing Zone。
 
 1. 继续下面的对应章节 [!UICONTROL **帐户类型**] 您已选择。
 
@@ -50,7 +50,7 @@ ht-degree: 5%
 
    * [Snowflake](#snowflake)
 
-### Adobe Experience Platform数据登陆区
+### AEP数据登陆区
 
 >[!IMPORTANT]
 >

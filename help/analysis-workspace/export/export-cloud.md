@@ -5,10 +5,10 @@ title: 将Customer Journey Analytics报表导出到云端
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: b984241de42b2db2992e18c17cd60ca14cc725c7
+source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
 workflow-type: tm+mt
-source-wordcount: '1853'
-ht-degree: 4%
+source-wordcount: '1928'
+ht-degree: 3%
 
 ---
 
@@ -66,7 +66,8 @@ ht-degree: 4%
    | 标记 | 您可以将现有标记应用于导出，也可以创建新标记并应用它。 <p>要将现有标记应用于导出，请从下拉菜单中选择任意标记。 您公司中的任何标记均可供应用<!-- double-check this -->.</p> <p>要创建新标记，请键入新标记的名称，然后按Enter。</p><p>将标记应用于导出时，请考虑以下事项： <ul><li>您可以在导出表中过滤或搜索您应用的标记。</li> <li>导出完整表格时，不会自动应用应用于项目的标记，如中的配置导出页面上的列中所述 [管理导出](/help/components/exports/manage-exports.md). (或者，当 [计划整个项目以供导出](/help/analysis-workspace/export/t-schedule-report.md)，则应用于项目的所有标记都会自动应用于导出。)  <!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></li></ul> |
    | 描述 | 为导出添加描述。 您可以选择在中以列的形式查看说明 [“导出”页面](/help/components/exports/manage-exports.md) 查看导出时。 |
    | 数据视图 | 选择包含要包含在导出中的组件的数据视图。 数据视图下拉菜单位于对话框的左上角，可通过数据视图图标进行标识![数据视图图标](assets/data-view-icon.png).  <p>**注意：** 如果选择的数据视图缺少已包括在数据表中的组件，则系统会提示您清除数据表并使用选定数据视图中包含的组件重新创建数据表。 </p> |
-   | 回顾时间范围 | 选择要包含在每个导出文件中的报表时间范围。 选项包括 [!UICONTROL **今天**]， [!UICONTROL **昨天**]， [!UICONTROL **最近7天**]， [!UICONTROL **最近30天**]， [!UICONTROL **本周**]、和 [!UICONTROL **本月**]. |
+   | 回顾时间范围 | 选择要包含在每个导出文件中的报表时间范围。 选项包括 [!UICONTROL **今天**]， [!UICONTROL **昨天**]， [!UICONTROL **最近7天**]， [!UICONTROL **最近30天**]， [!UICONTROL **本周**]、和 [!UICONTROL **本月**]. <p>在以下情况下，不会显示此选项： [!UICONTROL **导出频率**] 设置为 [!UICONTROL **立即发送（一次性）**]. |
+   | 数据表 | 显示要导出的自由格式表。 您可以通过将组件从左边栏拖到表来修改数据表。 在将组件添加到画布时，表格会动态更新。  <p>应用于项目中整个表的任何区段都会显示在表中每个单独列的顶部。</p> |
    | 清除 | 清除数据表的内容。 这样，您就可以直接在新增完整表格导出对话框中开始构建新表格。 |
    | 导出频率 | 设置导出的频率计划。 <p>您可以选择 [!UICONTROL **立即发送（一次）**] 以仅发送一次导出。 选择此选项后，将立即启动导出。<p>或者，您可以选择按定义的计划发送导出。 按计划发送时，选项包括 [!UICONTROL **每日**]， [!UICONTROL **每周**]， [!UICONTROL **按工作日的月度**]， [!UICONTROL **按月份日期**]， [!UICONTROL **按月份日期，每年**]、和 [!UICONTROL **按特定日期按年**]. </p><p>选择导出频率时，请考虑以下事项：</p><ul><li>中的选项 [!UICONTROL **回看窗口期**] 字段根据您在此处选择的内容而更改。<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>根据您选择的选项，还会显示其他配置字段。</li></ul> |
    | 开始日期 | 计划导出应开始的日期和时间。 <p>仅当选择计划的导出频率时，此选项才可用。</p> |

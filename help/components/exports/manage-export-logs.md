@@ -5,9 +5,9 @@ title: 管理导出日志
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '708'
 ht-degree: 6%
 
 ---
@@ -69,11 +69,15 @@ This option is not available when selecting multiple logs. -->
 
 1. 在Customer Journey Analytics中，选择 [!UICONTROL **组件**] > [!UICONTROL **导出**].
 
-1. 选择 [!UICONTROL **日志**] 选项卡，然后选择日志。
+1. 选择 [!UICONTROL **日志**] 选项卡。
 
-   <!-- add screenshot? -->
+1. 找到与要编辑的导出关联的日志。
 
-1. 选择 [!UICONTROL **编辑**].
+1. 选择 **编辑导出** 图标 ![导出日志图标](assets/export-icon.png) 日志旁边的。
+
+   或
+
+   选择日志，然后选择 [!UICONTROL **编辑导出**].
 
 ## 配置列
 
