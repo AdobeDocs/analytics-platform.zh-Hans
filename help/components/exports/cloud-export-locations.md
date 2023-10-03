@@ -5,9 +5,10 @@ title: 配置云导出位置
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
+exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
+source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
 workflow-type: tm+mt
-source-wordcount: '1415'
+source-wordcount: '1376'
 ht-degree: 4%
 
 ---
@@ -58,8 +59,7 @@ ht-degree: 4%
 
    | 字段 | 功能 |
    |---------|----------|
-   | [!UICONTROL **IMS 组织 ID**] | IMS组织ID由Adobe提供。 单击旁边的复制图标 [!UICONTROL **IMS组织ID**] 字段以复制字段的内容，然后在您的AdobeExperience Platform帐户中使用ID。 |
-   | [!UICONTROL **前缀**] | 容器中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加反斜杠以创建文件夹。 例如，`folder_name/` |
+   | [!UICONTROL **前缀**] | 容器中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，`folder_name/` |
 
    {style="table-layout:auto"}
 
@@ -78,7 +78,7 @@ ht-degree: 4%
    | 字段 | 功能 |
    |---------|----------|
    | [!UICONTROL **存储段**] | Amazon S3帐户中要将Adobe Analytics数据发送到的存储段。 确保Adobe提供的用户ARN有权将文件上传到此存储段。 |
-   | [!UICONTROL **前缀**] | 存储桶中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加反斜杠以创建文件夹。 例如， folder_name/ |
+   | [!UICONTROL **前缀**] | 存储桶中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如， folder_name/ |
 
    {style="table-layout:auto"}
 
@@ -97,7 +97,7 @@ ht-degree: 4%
    | 字段 | 功能 |
    |---------|----------|
    | [!UICONTROL **存储段**] | GCP帐户中要将Customer Journey Analytics数据发送到的存储段。 确保您已授予Adobe提供的承担者将文件上传到此存储段的权限。 (本金于呈报日期 [配置Google Cloud平台帐户](/help/components/exports/cloud-export-accounts.md).) 有关授予权限的信息，请参见 [将主体添加到存储段级别策略](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) 在Google Cloud文档中。 |
-   | [!UICONTROL **前缀**] | 存储桶中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加反斜杠以创建文件夹。 例如， folder_name/ |
+   | [!UICONTROL **前缀**] | 存储桶中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如， folder_name/ |
 
    {style="table-layout:auto"}
 
@@ -114,7 +114,7 @@ ht-degree: 4%
    | 字段 | 功能 |
    |---------|----------|
    | [!UICONTROL **容器名称**] | 您指定的帐户中要将Customer Journey Analytics数据发送到的容器。 |
-   | [!UICONTROL **前缀**] | 容器中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加反斜杠以创建文件夹。 例如，`folder_name/` |
+   | [!UICONTROL **前缀**] | 容器中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，`folder_name/` |
 
    {style="table-layout:auto"}
 
@@ -131,7 +131,7 @@ ht-degree: 4%
    | 字段 | 功能 |
    |---------|----------|
    | [!UICONTROL **容器**] | 您指定的帐户中要将Adobe Analytics数据发送到的容器。 确保授予将文件上载到您之前创建的Azure应用程序的权限。 |
-   | [!UICONTROL **前缀**] | 容器中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加反斜杠以创建文件夹。 例如，`folder_name/` |
+   | [!UICONTROL **前缀**] | 容器中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，`folder_name/` |
    | [!UICONTROL **帐户**] | Azure存储帐户。 |
 
    {style="table-layout:auto"}

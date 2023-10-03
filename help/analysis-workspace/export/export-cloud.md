@@ -5,10 +5,11 @@ title: 将Customer Journey Analytics报表导出到云端
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
+exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
+source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
 workflow-type: tm+mt
-source-wordcount: '1928'
-ht-degree: 3%
+source-wordcount: '1924'
+ht-degree: 4%
 
 ---
 
@@ -110,9 +111,7 @@ ht-degree: 3%
 
 * 已传送的所有文件的列表
 
-* 每个文件的大小
-
-* 每个文件的时间戳
+* 每个文件的MD5校验和
 
 <!-- add in  what the file name, structure, and file format will be -->
 
@@ -126,7 +125,7 @@ ht-degree: 3%
 
   此类数据可用于检测长期趋势，以获取业务情报，最终做出更好的业务决策。
 
-* 导出包含数千行或数百万行（300万、3000万或1.5亿行，具体取决于许可证类型）的完整表。 其他导出方法最多允许50,000行。
+* 导出包含数千行或数百万行的完整表（300万、3000万、1.5亿或3亿行，具体取决于许可证类型）。 其他导出方法最多允许50,000行。
 
 * 在导出的Customer Journey Analytics数据中包含计算量度。
 

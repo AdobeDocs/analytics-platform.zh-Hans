@@ -5,9 +5,10 @@ title: 配置云导出帐户
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
+exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
+source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
 workflow-type: tm+mt
-source-wordcount: '1600'
+source-wordcount: '1543'
 ht-degree: 5%
 
 ---
@@ -58,21 +59,13 @@ ht-degree: 5%
 
 1. [开始创建云导出帐户](#begin-creating-a-cloud-export-account)，如上所述。
 
-1. 在 [!UICONTROL **帐户属性**] 的部分 [!UICONTROL **添加帐户**] 对话框，将显示以下信息：
-
-   | 字段 | 功能 |
-   |---------|----------|
-   | [!UICONTROL **IMS 组织 ID**] | IMS组织ID由Adobe提供。 通常不需要此信息。 如果您遇到帐户问题并需要联系客户关怀团队，此功能可能会很有用。 |
-
-   {style="table-layout:auto"}
-
 1. 选择&#x200B;[!UICONTROL **保存**]。
 
    此 [!UICONTROL **已创建导出帐户**] 对话框随即显示。
 
    <!-- add screen shot -->
 
-1. 复制 [!UICONTROL **SAS**] 字段到剪贴板。 使用此SAS令牌可访问从Analysis Workspace从AEP登录区域导出的数据。 了解如何访问您的数据&quot; |
+1. 复制 [!UICONTROL **SAS**] 字段到剪贴板。 使用此SAS令牌可访问从Analysis Workspace从AEP登录区域导出的数据。
 
 1. 选择 [!UICONTROL **确定**].
 
@@ -215,6 +208,3 @@ ht-degree: 5%
 1. 选择 [!UICONTROL **确定**].
 
 1. 继续 [配置云导出位置](/help/components/exports/cloud-export-locations.md).
-
-
-
