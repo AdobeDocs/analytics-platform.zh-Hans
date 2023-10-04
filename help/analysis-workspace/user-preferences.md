@@ -4,10 +4,10 @@ description: 可设置用户的常规和项目首选项。
 feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 322f5a10b928a9bf679954aa1fe6415340ec675b
+source-git-commit: ed2de7ead2724a870fcd6ce1d32eb9b05e5f0576
 workflow-type: tm+mt
-source-wordcount: '3192'
-ht-degree: 85%
+source-wordcount: '3218'
+ht-degree: 84%
 
 ---
 
@@ -111,6 +111,7 @@ ht-degree: 85%
 | **[行](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)** | | |
 | | 按位置划分 | 如果您希望细目分类保留在项目的位置而不是项目本身，请选择此选项。有关细分的更多信息，请参阅[细分维度](/help/components/dimensions/t-breakdown-fa.md)。 |
 | | 百分比计算 | <ul><li>栏目</li><li>行</li></ul> |
+| | 列总计（仅限静态行） | <ul><li>显示行总和：显示单个行项目的总和 </li><li>显示总计：显示删除了重复项的行总和。</li></ul> |
 
 ## 可视化偏好设置
 
