@@ -3,9 +3,8 @@ description: 管理可发送Customer Journey Analytics数据的云导出位置
 keywords: Analysis Workspace
 title: 管理云导出位置和帐户
 feature: Components
-hide: true
-hidefromtoc: true
-source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
+exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 5%
@@ -13,6 +12,8 @@ ht-degree: 5%
 ---
 
 # 管理云导出位置和帐户
+
+{{release-limited-testing}}
 
 您可以查看、编辑和删除云导出位置。
 

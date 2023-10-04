@@ -3,9 +3,8 @@ description: 管理现有导出的日志
 keywords: Analysis Workspace
 title: 管理导出日志
 feature: Components
-hide: true
-hidefromtoc: true
-source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
+exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 6%
@@ -13,6 +12,8 @@ ht-degree: 6%
 ---
 
 # 管理导出日志
+
+{{release-limited-testing}}
 
 导出日志提供有关每次导出的详细信息，并在每次将Analysis Workspace数据导出到云时生成。 (有关如何将数据导出到云的信息，请参阅 [将Customer Journey Analytics报表导出到云端](/help/analysis-workspace/export/export-cloud.md).)
 

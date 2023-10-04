@@ -3,10 +3,8 @@ description: 配置云导出位置以发送Customer Journey Analytics数据
 keywords: Analysis Workspace
 title: 配置云导出位置
 feature: Components
-hide: true
-hidefromtoc: true
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
-source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 4%
@@ -14,6 +12,8 @@ ht-degree: 4%
 ---
 
 # 配置云导出位置
+
+{{release-limited-testing}}
 
 在您可以将Customer Journey Analytics报表导出到Cloud目标之前（如所述） [将Customer Journey Analytics报表导出到云端](/help/analysis-workspace/export/export-cloud.md)，您需要添加并配置发送数据的位置。
 
@@ -57,7 +57,7 @@ ht-degree: 4%
 
    <!-- still need to update; can't create AEP account -->
 
-   | 字段 | 功能 |
+   | 字段 | 函数 |
    |---------|----------|
    | [!UICONTROL **前缀**] | 容器中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，`folder_name/` |
 
@@ -75,7 +75,7 @@ ht-degree: 4%
 
    <!-- still need to update; can't create S3 role ARN account -->
 
-   | 字段 | 功能 |
+   | 字段 | 函数 |
    |---------|----------|
    | [!UICONTROL **存储段**] | Amazon S3帐户中要将Adobe Analytics数据发送到的存储段。 确保Adobe提供的用户ARN有权将文件上传到此存储段。 |
    | [!UICONTROL **前缀**] | 存储桶中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如， folder_name/ |
@@ -94,7 +94,7 @@ ht-degree: 4%
 
    <!-- still need to update; can't create GCP account -->
 
-   | 字段 | 功能 |
+   | 字段 | 函数 |
    |---------|----------|
    | [!UICONTROL **存储段**] | GCP帐户中要将Customer Journey Analytics数据发送到的存储段。 确保您已授予Adobe提供的承担者将文件上传到此存储段的权限。 (本金于呈报日期 [配置Google Cloud平台帐户](/help/components/exports/cloud-export-accounts.md).) 有关授予权限的信息，请参见 [将主体添加到存储段级别策略](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) 在Google Cloud文档中。 |
    | [!UICONTROL **前缀**] | 存储桶中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如， folder_name/ |
@@ -111,7 +111,7 @@ ht-degree: 4%
 
 1. 在 [!UICONTROL **位置属性**] 的部分 [!UICONTROL **添加位置**] 对话框，请指定以下信息以配置Azure SAS位置：
 
-   | 字段 | 功能 |
+   | 字段 | 函数 |
    |---------|----------|
    | [!UICONTROL **容器名称**] | 您指定的帐户中要将Customer Journey Analytics数据发送到的容器。 |
    | [!UICONTROL **前缀**] | 容器中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，`folder_name/` |
@@ -128,7 +128,7 @@ ht-degree: 4%
 
 1. 在 [!UICONTROL **位置属性**] 的部分 [!UICONTROL **添加位置**] 对话框，请指定以下信息以配置Azure RBAC位置：
 
-   | 字段 | 功能 |
+   | 字段 | 函数 |
    |---------|----------|
    | [!UICONTROL **容器**] | 您指定的帐户中要将Adobe Analytics数据发送到的容器。 确保授予将文件上载到您之前创建的Azure应用程序的权限。 |
    | [!UICONTROL **前缀**] | 容器中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，`folder_name/` |
@@ -146,7 +146,7 @@ ht-degree: 4%
 
 1. 在 [!UICONTROL **位置属性**] 的部分 [!UICONTROL **添加位置**] 对话框中，指定以下信息来配置Snowflake位置：
 
-   | 字段 | 功能 |
+   | 字段 | 函数 |
    |---------|----------|
    | [!UICONTROL **DB**] | 指定的数据库应为现有数据库。 您创建的角色需要拥有访问此数据库的权限。<p>这是与阶段名称关联的数据库。</p><p>可以使用以下命令将此角色权限授予Snowflake中的数据库： `GRANT USAGE ON DATABASE <your_database> TO ROLE <your_role>;`</p> <p>欲了解更多信息，请参见 [Snowflake文档中的“数据库、方案和共享命令”页](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
    | [!UICONTROL **架构**] | 指定的架构应为现有架构。 您创建的角色需要拥有访问此方案的权限。<p>这是与阶段名称关联的架构。<p>可以使用以下命令将您创建的权限授予Snowflake中的方案： `GRANT USAGE ON SCHEMA <your_database>.<your_schema> TO ROLE <your_role>;`</p><p>欲了解更多信息，请参见 [Snowflake文档中的“数据库、方案和共享命令”页](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |

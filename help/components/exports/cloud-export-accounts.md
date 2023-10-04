@@ -3,10 +3,8 @@ description: 配置可发送Customer Journey Analytics数据的云导出帐户
 keywords: Analysis Workspace
 title: 配置云导出帐户
 feature: Components
-hide: true
-hidefromtoc: true
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '1543'
 ht-degree: 5%
@@ -14,6 +12,8 @@ ht-degree: 5%
 ---
 
 # 配置云导出帐户
+
+{{release-limited-testing}}
 
 在您可以将Customer Journey Analytics报表导出到Cloud目标之前（如所述） [将Customer Journey Analytics报表导出到云端](/help/analysis-workspace/export/export-cloud.md)，您需要添加并配置要将数据发送到的目标。
 
@@ -65,7 +65,7 @@ ht-degree: 5%
 
    <!-- add screen shot -->
 
-1. 复制 [!UICONTROL **SAS**] 字段到剪贴板。 使用此SAS令牌可访问从Analysis Workspace从AEP登录区域导出的数据。
+1. 复制 [!UICONTROL **SAS**] 字段到剪贴板。 使用此SAS URI可访问从Analysis Workspace从AEP登陆区导出的数据。
 
 1. 选择 [!UICONTROL **确定**].
 
@@ -77,7 +77,7 @@ ht-degree: 5%
 
 1. 在 [!UICONTROL **帐户属性**] 的部分 [!UICONTROL **添加帐户**] 对话框，请指定以下信息：
 
-   | 字段 | 功能 |
+   | 字段 | 函数 |
    |---------|----------|
    | [!UICONTROL **角色 ARN**] | 您必须提供一个角色ARN(Amazon资源名称)，Adobe可以使用该角色来访问Amazon S3帐户。 为此，您需要为源帐户创建IAM权限策略，将策略附加到用户，然后为目标帐户创建角色。 有关具体信息，请参阅 [此AWS文档](https://aws.amazon.com/premiumsupport/knowledge-center/cross-account-access-iam/). |
 
@@ -101,7 +101,7 @@ ht-degree: 5%
 
 1. 在 [!UICONTROL **帐户属性**] 的部分 [!UICONTROL **添加帐户**] 对话框，请指定以下信息：
 
-   | 字段 | 功能 |
+   | 字段 | 函数 |
    |---------|----------|
    | [!UICONTROL **项目ID**] | 从Google Cloud帐户复制的Google Cloud项目ID。 请参阅 [Google Cloud有关获取项目ID的文档](https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects). |
 
@@ -125,7 +125,7 @@ ht-degree: 5%
 
 1. 在 [!UICONTROL **帐户属性**] 的部分 [!UICONTROL **添加帐户**] 对话框，请指定以下信息：
 
-   | 字段 | 功能 |
+   | 字段 | 函数 |
    |---------|----------|
    | [!UICONTROL **应用程序 ID**] | 从您创建的Azure应用程序中复制此ID。 在Microsoft Azure中，此信息位于 **概述** 选项卡。 欲了解更多信息，请参见 [Microsoft Azure有关如何使用Microsoft Identity Platform注册应用程序的文档](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
    | [!UICONTROL **租户 ID**] | 从您创建的Azure应用程序中复制此ID。 在Microsoft Azure中，此信息位于 **概述** 选项卡。 欲了解更多信息，请参见 [Microsoft Azure有关如何使用Microsoft Identity Platform注册应用程序的文档](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
@@ -153,7 +153,7 @@ ht-degree: 5%
 
 1. 在 [!UICONTROL **帐户属性**] 的部分 [!UICONTROL **添加帐户**] 对话框，请指定以下信息：
 
-   | 字段 | 功能 |
+   | 字段 | 函数 |
    |---------|----------|
    | [!UICONTROL **应用程序 ID**] | 从您创建的Azure应用程序中复制此ID。 在Microsoft Azure中，此信息位于 **概述** 选项卡。 欲了解更多信息，请参见 [Microsoft Azure有关如何使用Microsoft Identity Platform注册应用程序的文档](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
    | [!UICONTROL **租户 ID**] | 从您创建的Azure应用程序中复制此ID。 在Microsoft Azure中，此信息位于 **概述** 选项卡。 欲了解更多信息，请参见 [Microsoft Azure有关如何使用Microsoft Identity Platform注册应用程序的文档](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
@@ -179,7 +179,7 @@ ht-degree: 5%
 
 1. 在 [!UICONTROL **帐户属性**] 的部分 [!UICONTROL **添加帐户**] 对话框，请指定以下信息：
 
-   | 字段 | 功能 |
+   | 字段 | 函数 |
    |---------|----------|
    | [!UICONTROL **帐户标识符**] | 唯一地标识贵公司内的Snowflake帐户，以及遍布全球由Snowflake支持的云平台和云区域组成的网络。 <p>您需要从Snowflake帐户中获取帐户标识符，然后在此处粘贴信息。</p><p>要了解从何处获取此信息，请参阅 [“Snowflake标识符”页面](https://docs.snowflake.com/en/user-guide/admin-account-identifier).</p> |
    | [!UICONTROL **用户**] | 用于连接的用户的登录名。 我们建议创建一个将专门用于Adobe的新用户。 在此处指定名称，然后以Snowflake创建具有相同名称的用户。 您可以使用在Snowflake中创建用户 `CREATE USER` 命令。  <p>欲了解更多信息，请参见 [用户、角色和权限命令](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |

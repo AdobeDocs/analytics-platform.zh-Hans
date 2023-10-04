@@ -3,9 +3,8 @@ description: 管理现有导出
 keywords: Analysis Workspace
 title: 管理导出
 feature: Components
-hide: true
-hidefromtoc: true
-source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
+exl-id: 0c21802a-c46f-41be-9356-d836c038b174
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 6%
@@ -13,6 +12,8 @@ ht-degree: 6%
 ---
 
 # 管理导出
+
+{{release-limited-testing}}
 
 导出完整的表后（如中所述） [将Customer Journey Analytics报表导出到云端](/help/analysis-workspace/export/export-cloud.md)，则导出内容位于 [!UICONTROL 导出] 选项卡 [!UICONTROL 导出] 页面。
 

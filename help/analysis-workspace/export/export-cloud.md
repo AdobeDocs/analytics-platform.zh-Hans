@@ -3,10 +3,8 @@ description: 将Analysis Workspace项目导出到云位置。
 keywords: Analysis Workspace
 title: 将Customer Journey Analytics报表导出到云端
 feature: Curate and Share
-hide: true
-hidefromtoc: true
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
-source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 4%
@@ -14,6 +12,8 @@ ht-degree: 4%
 ---
 
 # 将Customer Journey Analytics报表导出到云端
+
+{{release-limited-testing}}
 
 您可以从Customer Journey Analytics中导出工作区完整表，并将导出发送到指定的云目标。
 
@@ -61,7 +61,7 @@ ht-degree: 4%
 
 1. 在 [!UICONTROL **新的完整表导出**] 对话框，请指定以下信息：
 
-   | 字段名称 | 功能 |
+   | 字段名称 | 函数 |
    |---------|----------|
    | 名称 | 指定导出的名称。 此名称将显示在导出列表中。 |
    | 标记 | 您可以将现有标记应用于导出，也可以创建新标记并应用它。 <p>要将现有标记应用于导出，请从下拉菜单中选择任意标记。 您公司中的任何标记均可供应用<!-- double-check this -->.</p> <p>要创建新标记，请键入新标记的名称，然后按Enter。</p><p>将标记应用于导出时，请考虑以下事项： <ul><li>您可以在导出表中过滤或搜索您应用的标记。</li> <li>导出完整表格时，不会自动应用应用于项目的标记，如中的配置导出页面上的列中所述 [管理导出](/help/components/exports/manage-exports.md). (或者，当 [计划整个项目以供导出](/help/analysis-workspace/export/t-schedule-report.md)，则应用于项目的所有标记都会自动应用于导出。)  <!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></li></ul> |

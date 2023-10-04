@@ -3,9 +3,8 @@ description: 管理现有导出的日志
 keywords: Analysis Workspace
 title: 导出失败疑难解答
 feature: Components
-hide: true
-hidefromtoc: true
-source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
+exl-id: fbc25150-4390-40a2-9f17-aadf254258ad
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 8%
@@ -13,6 +12,8 @@ ht-degree: 8%
 ---
 
 # 导出失败疑难解答
+
+{{release-limited-testing}}
 
 当您 [将完整表从Analysis Workspace导出到云目标](/help/analysis-workspace/export/export-cloud.md)，您可以从以下位置查看这些导出的状态 [“导出”选项卡](/help/components/exports/manage-exports.md) 和从 [“日志”选项卡](/help/components/exports/manage-export-logs.md). 失败的导出显示状态 [!UICONTROL **失败**].
 
