@@ -3,10 +3,10 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: e1254a5ecff0f638cbef1051564c1ce856f715bd
+source-git-commit: 84bcf59f27a942d28e71f41966c5de9e8f8bdab0
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 51%
+source-wordcount: '775'
+ht-degree: 52%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 51%
 | ----------- | ---------- | ------- | ---- |
 | **将整个表导出到云** | 通过Customer Journey Analytics完整表格导出，可将数百万个Workspace行导出到云目标。 导出完整表可提供设计在Workspace中的数据表的一次性或计划提交，最多支持五个划分、五个量度、过滤器和计算量度，所有这些都在一个级连表中完成。 它是Adobe Analytics中Data Warehouse报表的演变，具有许多现在在Data Warehouse中不可用的经常被请求的新功能。 云导出选项包括：<ul><li>Adobe Experience Platform数据登陆区</li><li>Amazon S3 Role ARN</li><li>Google Cloud Platform</li><li>Azure SAS</li><li>Azure RBAC</li><li>Snowflake</li></ul>有关更多信息，请参阅 [将Customer Journey Analytics报表导出到云端](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html). | 2023 年 10 月 4 日 | 2023 年 10 月 19 日 |
 | **管理组件时可用的新列** | 在管理组件时，现在可在[计算量度管理器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html)和[过滤器管理器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html)中找到以下新列：<ul><li>用在</li><li>上次使用时间</li></ul>此信息可帮助您确定某个组件是否对组织中的用户有用、在何处使用该组件以及是否需要删除或修改该组件。可使用数据词典配合此信息帮助您跟踪并更好地了解如何在您的组织中使用组件。 | 2023 年 9 月 23 日 | 2023 年 10 月 4 日 |
-| **将Adobe Analytics项目和任何包含的组件迁移到Customer Journey Analytics** | 您现在可以将Adobe Analytics项目迁移到Customer Journey Analytics。 此过程简化了从Adobe Analytics到Customer Journey Analytics的过渡。 在将项目迁移到Customer Journey Analytics时，资产会从Adobe Analytics报表包映射到Customer Journey Analytics数据视图。 **您可以从Adobe Analytics界面将项目迁移到Customer Journey Analytics。** [了解详情](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration.html) | 不适用 | 2023 年 10 月 4 日 |
-| **Adobe Product Analytics：显示/隐藏系列** | 单击图表图例或表行，以控制可视化图表中的系列可见性。  了解详情（即将推出） | 不适用 | 2023 年 10 月 4 日 |
-| **Adobe Product Analytics批注** | 现在，引导式分析项目支持查看注释的功能。 请参阅中的每种视图类型 [引导式分析](/help/guided-analysis/overview.md) 以了解有关它如何与注释交互的详细信息。 | 不适用 | 2023 年 10 月 4 日 |
+| **将Adobe Analytics项目和任何包含的组件迁移到Customer Journey Analytics** | 您现在可以将Adobe Analytics项目迁移到Customer Journey Analytics。 此过程简化了从Adobe Analytics到Customer Journey Analytics的过渡。 在将项目迁移到Customer Journey Analytics时，资产会从Adobe Analytics报表包映射到Customer Journey Analytics数据视图。 **您可以从Adobe Analytics界面将项目迁移到Customer Journey Analytics。** [了解详情](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration.html) | 2023 年 10 月 11 日 | 2023 年 10 月 25 日 |
+| **Adobe Product Analytics：显示/隐藏系列** | 单击图表图例或表行，以控制可视化图表中的系列可见性。  [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/overview.html?lang=en) | 不适用 | 2023 年 10 月 4 日 |
+| **Adobe Product Analytics批注** | 引导式分析现在支持查看在Customer Journey Analytics中创建的注释的功能。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/overview.html?lang=en) | 不适用 | 2023 年 10 月 4 日 |
 | **报告活动管理器** | 通过报告活动管理器，可查看组织中每个连接的报告容量。 它使管理员能够详细了解报告消耗，以便轻松地诊断和修复在报告高峰期出现的容量问题。 报告活动管理器的主要功能包括：<ul><li>取消当前报告请求（包括来自引导式分析和完整表导出的请求）</li><li>将后续请求限制在定义的时间段</li></ul>除了取消当前请求之外，管理员现在还可以限制定义时间段内的请求。 管理员可以按请求、项目或用户限制请求。  了解详情（即将推出） | 2023 年 10 月 17 日 | 2023 年 10 月 23 日 |
 
 {style="table-layout:auto"}
