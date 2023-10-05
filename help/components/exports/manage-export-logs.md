@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: 管理导出日志
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '725'
 ht-degree: 6%
 
 ---
@@ -37,8 +37,9 @@ ht-degree: 6%
 
    | 过滤器 | 描述 |
    |---------|----------|
-   | [!UICONTROL **帐户类型**] | 与日志关联的帐户类型。 可以使用以下帐户类型： <ul><li>[!UICONTROL **Adobe Experience Platform数据登陆区**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
-   | [!UICONTROL **状态**] | 导出的状态。 可以使用以下状态： <ul><li>[!UICONTROL **待处理**]：导出的特定实例已启动，但尚未完成。<p>重新运行状态为“待定”的导出将会延迟导出过程。</p></li><li>[!UICONTROL **已完成**]：导出的特定实例已完成处理，可在导出帐户中使用。</li><li>[!UICONTROL **失败**]<p>以下情况可能会导致导出失败。 将鼠标悬停在失败状态上可查看有关失败的详细信息。 <ul><li>计划的导出过期</li><li>已达到计划导出的行限制 </li></ul> </p></li></ul> |
+   | [!UICONTROL **导出 ID**] | 指定要查看的导出日志的导出ID。 |
+   | [!UICONTROL **帐户类型**] | 与日志关联的帐户类型。 可以使用以下帐户类型： <ul><li>[!UICONTROL **AEP数据登陆区**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
+   | [!UICONTROL **状态**] | 导出的状态。 可以使用以下状态： <ul><li>[!UICONTROL **待处理**]：导出的特定实例已启动，但尚未完成。<p>重新运行状态为“待定”的导出将会延迟导出过程。</p></li><li>[!UICONTROL **完成**]：导出的特定实例已完成处理，可在导出帐户中使用。</li><li>[!UICONTROL **失败**]<p>以下情况可能会导致导出失败。 将鼠标悬停在失败状态上可查看有关失败的详细信息。 <ul><li>计划的导出过期</li><li>已达到计划导出的行限制 </li></ul> </p></li></ul> |
 
    {style="table-layout:auto"}
 
@@ -48,7 +49,7 @@ ht-degree: 6%
 
 1. 选择 [!UICONTROL **日志**] 选项卡。
 
-1. 在搜索选项卡中，开始键入与要搜索的日志相关联的任何信息。 您可以从表中任何可用的列搜索数据。
+1. 在搜索字段中，开始键入与要搜索的日志相关联的任何信息。 您可以从表中任何可用的列搜索数据。
 
 <!-- removed for MVP: Retry an export You can re-run the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. 
 
@@ -74,11 +75,11 @@ This option is not available when selecting multiple logs. -->
 
 1. 找到与要编辑的导出关联的日志。
 
-1. 选择 **编辑导出** 图标 ![导出日志图标](assets/export-icon.png) 日志旁边的。
+1. 选择 **编辑导出** 图标 ![导出日志图标](assets/export-icon.png) 日志名称旁边。
 
    或
 
-   选择日志，然后选择 [!UICONTROL **编辑导出**].
+   选中日志旁边的复选框，然后选择 [!UICONTROL **编辑导出**].
 
 ## 配置列
 

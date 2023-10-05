@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: 配置云导出帐户
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1573'
 ht-degree: 5%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 5%
 
 1. 继续下面的对应章节 [!UICONTROL **帐户类型**] 您已选择。
 
-   * [Adobe Experience Platform数据登陆区](#adobe-experience-platform)
+   * [AEP数据登陆区](#adobe-experience-platform)
 
    * [Amazon S3 Role ARN](#amazon-s3-role-arn)
 
@@ -63,9 +63,9 @@ ht-degree: 5%
 
    此 [!UICONTROL **已创建导出帐户**] 对话框随即显示。
 
-   <!-- add screen shot -->
+   ![导出帐户对话框AEP数据登陆区](assets/export-account-aep.png)
 
-1. 复制 [!UICONTROL **SAS**] 字段到剪贴板。 使用此SAS URI可访问从Analysis Workspace从AEP登陆区导出的数据。
+1. 复制 [!UICONTROL **SAS URI**] 字段到剪贴板。 使用此SAS URI可访问从Analysis Workspace从AEP登陆区导出的数据。
 
 1. 选择 [!UICONTROL **确定**].
 
@@ -87,7 +87,7 @@ ht-degree: 5%
 
    此 [!UICONTROL **已创建导出帐户**] 对话框随即显示。
 
-   <!-- add screen shot -->
+   ![导出帐户创建对话框Amazon S3角色ARN](assets/export-account-amazons3.png)
 
 1. 复制 [!UICONTROL **用户ARN**] 字段到剪贴板。 用户ARN(Amazon资源名称)由Adobe提供。 您必须将此用户附加到您在Amazon S3角色ARN中创建的策略。
 
@@ -111,7 +111,7 @@ ht-degree: 5%
 
    此 [!UICONTROL **已创建导出帐户**] 对话框随即显示。
 
-   <!-- add screen shot -->
+   ![导出帐户创建对话框](assets/export-account-gcp.png)
 
 1. 复制 [!UICONTROL **主体**] 字段到剪贴板，然后确保您向主体授予权限，以便在Google Cloud Platform中将文件上传到此存储桶。 <!-- add link to Google Cloud docs on how to do this -->
 
@@ -139,7 +139,7 @@ ht-degree: 5%
 
    此 [!UICONTROL **已创建导出帐户**] 对话框随即显示。
 
-   <!-- add screen shot -->
+   ![导出帐户创建对话框](assets/export-account-azure.png)
 
 1. 如果您尚未这样做，请确保您向Azure SAS中的存储段授予权限。 <!-- add link to Google Cloud docs on how to do this -->
 
@@ -165,7 +165,7 @@ ht-degree: 5%
 
    此 [!UICONTROL **已创建导出帐户**] 对话框随即显示。
 
-   <!-- add screen shot -->
+   ![导出帐户创建对话框](assets/export-account-azure.png)
 
 1. 如果您尚未这样做，请确保您向Azure RBAC中的存储段授予权限。 <!-- add link to Google Cloud docs on how to do this -->
 
@@ -191,7 +191,7 @@ ht-degree: 5%
 
    此 [!UICONTROL **已创建导出帐户**] 对话框随即显示。
 
-   <!-- add screen shot -->
+   ![导出帐户创建对话框](assets/export-account-snowflake.png)
 
 1. 复制 [!UICONTROL **公钥**] 字段到剪贴板。 公钥由Adobe提供。
 

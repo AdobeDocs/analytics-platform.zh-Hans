@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: 管理云导出位置和帐户
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 5%
+source-wordcount: '467'
+ht-degree: 4%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 5%
 
    | 过滤器 | 描述 |
    |---------|----------|
-   | [!UICONTROL **位置类型**]<!--should this be changed to Account type?--> | 与位置关联的帐户类型。 可以使用以下帐户类型： <ul><li>[!UICONTROL **AEP数据登陆区**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
+   | [!UICONTROL **位置类型**]<!--should this be changed to Account type?--> | 与位置关联的帐户类型。 可以使用以下帐户类型： <ul><li>[!UICONTROL **AEP数据登陆区**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
    | [!UICONTROL **帐户**] | 与位置关联的帐户的名称。 |
    | [!UICONTROL **创建者**] | 创建位置的用户的电子邮件地址。 |
 
@@ -49,7 +49,7 @@ ht-degree: 5%
 
 1. 选择 [!UICONTROL **位置**] 选项卡。
 
-1. 在搜索选项卡中，开始键入与要搜索的位置相关联的任何信息。 您可以从表中任何可用的列搜索数据。
+1. 在搜索字段中，开始键入与要搜索的位置相关联的任何信息。 您可以从表中任何可用的列搜索数据。
 
 ## 编辑位置
 
@@ -57,7 +57,7 @@ ht-degree: 5%
 
 1. 选择 [!UICONTROL **位置**] 选项卡，然后选择要编辑的位置。
 
-   <!-- add screenshot? -->
+   ![编辑位置](assets/locations-edit.png)
 
 1. 选择 [!UICONTROL **编辑**].
 
@@ -77,7 +77,7 @@ ht-degree: 5%
 
 1. 选择 [!UICONTROL **位置**] 选项卡，然后选择要删除的一个或多个位置。
 
-   <!-- add screenshot? -->
+   ![编辑位置](assets/locations-edit.png)
 
 1. 选择 [!UICONTROL **删除**]，然后选择 [!UICONTROL **删除**] 确认对话框。
 
@@ -92,6 +92,20 @@ ht-degree: 5%
 1. 选择 [!UICONTROL **查看详细信息**] 在要编辑的帐户上。
 
 1. 进行任何所需的更改，然后选择 [!UICONTROL **保存**].
+
+## 查看帐户密钥
+
+创建帐户后，您可以查看该帐户的任何关联帐户密钥。 如果您没有通过云提供商完成帐户配置，则可能需要查看此信息 [当您最初配置帐户时](/help/components/exports/cloud-export-accounts.md).
+
+要查看与导出帐户关联的密钥，请执行以下操作：
+
+1. 在Customer Journey Analytics中，选择 [!UICONTROL **组件**] > [!UICONTROL **导出**].
+
+1. 选择 [!UICONTROL **位置帐户**] 选项卡。
+
+   ![帐户页面](assets/account-page.png)
+
+1. 在要编辑的帐户上选择3点图标，然后选择 [!UICONTROL **帐户密钥**].
 
 ## 删除帐户
 
