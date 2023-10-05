@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: 管理导出
 feature: Components
 exl-id: 0c21802a-c46f-41be-9356-d836c038b174
-source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
+source-git-commit: 2c9dfdf36e47b9467077310a31dc2c6258137d35
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '1029'
 ht-degree: 5%
 
 ---
@@ -62,6 +62,10 @@ ht-degree: 5%
    在选择多个导出时，此选项不可用。
 
 1. 选择 [!UICONTROL **编辑**].
+
+   此 [!UICONTROL **导出完整表**] 对话框随即显示。
+
+1. 更新任何可用选项。 有关每个选项的信息，请参阅 [从Analysis Workspace导出完整表](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) 在 [将Customer Journey Analytics报表导出到云端](/help/analysis-workspace/export/export-cloud.md).
 
 ## 复制导出
 
