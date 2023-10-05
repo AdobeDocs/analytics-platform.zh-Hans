@@ -1,21 +1,21 @@
 ---
 title: 跨渠道分析
-description: 了解如何重新生成多个数据集中的人员ID键值以对人员进行拼接。
+description: 了解如何在多个数据集中重新生成人员 ID 的键值，以对人员进行拼接。
 solution: Customer Journey Analytics
 feature: Connections
 exl-id: 5fb30b64-d305-4de4-ab84-66195ceb8386
 hide: true
 hidefromtoc: true
 source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '210'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # 跨渠道分析
 
-跨渠道分析 (CCA) 让您能够重新键入数据集的人员 ID，实现多个数据集的无缝组合。 CCA 将同时考虑来自经过身份验证和未经身份验证的会话的用户数据，以生成拼接 ID。通过使用跨渠道分析，您可以回答类似下面的问题：
+跨渠道分析 (CCA) 让您能够重新键入数据集的人员 ID，实现多个数据集的无缝组合。CCA 将同时考虑来自经过身份验证和未经身份验证的会话的用户数据，以生成拼接 ID。通过使用跨渠道分析，您可以回答类似下面的问题：
 
 * 有多少人在一个渠道开始体验，然后在另一个渠道结束体验？
 * 有多少人与我的品牌互动？他们使用多少台设备？设备的类型如何？这些设备如何进行交叠？
