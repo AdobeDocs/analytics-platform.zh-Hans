@@ -3,10 +3,10 @@ description: Analysis Workspace 中的异常检测使用一系列高级统计技
 title: 异常检测中使用的统计技术
 feature: Anomaly Detection
 exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+workflow-type: tm+mt
+source-wordcount: '805'
+ht-degree: 98%
 
 ---
 
@@ -55,7 +55,7 @@ Analysis Workspace 中的异常检测使用一系列高级统计技术来确定�
 
 请注意，下面的示例明显提高了圣诞节和元旦的性能：
 
-![](assets/anomaly_statistics.png)
+![两个折线图显示有无假日性能的性能变化。](assets/anomaly_statistics.png)
 
 ## 针对每小时粒度的异常分析
 

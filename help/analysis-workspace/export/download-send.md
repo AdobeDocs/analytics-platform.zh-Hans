@@ -3,10 +3,10 @@ description: 您可以通过复制数据或以 PDF 和 CSV 格式从 Analysis Wo
 title: 下载Customer Journey Analytics数据
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
-source-git-commit: 24e9e4151360597b099a7985a4566b3ca7bfff00
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 58%
+source-wordcount: '1133'
+ht-degree: 55%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 58%
 
      如果希望下载的文件是纯文本，请选择此选项。
 
-   ![](assets/download-project.png)
+   ![项目下拉菜单突出显示下载CSV和下载PDF选项。](assets/download-project.png)
 
 1. （视情况而定）如果您选择下载PDF，则在项目准备好下载后会显示一条消息。 选择 [!UICONTROL **下载**].
 
@@ -51,7 +51,7 @@ ht-degree: 58%
 >您可以使用热键 `Ctrl+C` 将所选内容复制到剪贴板，然后使用 `Ctrl+V` 以将其粘贴到第三方工具中。
 
 
-![](assets/copy-selection.png)
+![将所选内容复制到剪贴板选项。 ](assets/copy-selection.png)
 
 ## 下载为 CSV 格式 {#download-data}
 
@@ -66,7 +66,7 @@ ht-degree: 58%
 
 * 在表中，右键单击并选择 **[!UICONTROL 以CSV格式下载所选内容]**. 此选项仅下载所选内容，而不是下载所显示的完整表格。
 
-![](assets/download-data-viz.png)
+![将数据下载为CSV选项。](assets/download-data-viz.png)
 
 ## 以 CSV 格式下载项目 {#download-items}
 
@@ -78,7 +78,7 @@ ht-degree: 58%
 
 您可以在项目中执行多项任务，甚至可以在下载过程中导航到同一选项卡中的新 Workspace 项目。如果您打开新的浏览器选项卡，下载将暂停。 如果您完全离开Workspace或关闭浏览器选项卡，将取消下载。
 
-![](assets/download-items.png)
+![“以CSV格式下载项目（页面）”选项。](assets/download-items.png)
 
 ### 下载的项目文件 {#items-file}
 
@@ -90,7 +90,7 @@ ht-degree: 58%
 
 在上面的示例中，以过滤器形式应用了面板过滤器（新访客客户）及其上面的组件（营销渠道 = 电子邮件），从而下载了页面项目，并从下载的 CSV 中删除了下面的组件（移动设备类型）。
 
-![](assets/downloaded-file.png)
+![下载的.csv文件已在Excel中打开。](assets/downloaded-file.png)
 
 ### 下载通知 {#notifications}
 
@@ -100,7 +100,7 @@ ht-degree: 58%
 
 如果您同时请求多个下载，您将收到一条通知，说明每个额外的下载都将排队等待，直到前面的下载完成为止。
 
-![](assets/toast.png)
+![显示完成百分比的下载状态通知和取消下载链接。](assets/toast.png)
 
 ## 下载敏感数据 {#sensitive}
 

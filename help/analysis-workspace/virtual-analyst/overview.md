@@ -1,12 +1,12 @@
 ---
 title: Virtual Analyst
-description: 了解 Customer Journey Analytics 中的哪些功能包含 Virtual Analyst。
+description: 了解Customer Journey Analytics中的Virtual Analyst功能。
 feature: Anomaly Detection
 exl-id: 5fb6ac39-d09d-49f0-ae1f-13f223e20800
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+workflow-type: tm+mt
+source-wordcount: '102'
+ht-degree: 90%
 
 ---
 

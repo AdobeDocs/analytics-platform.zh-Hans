@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: 将项目保存到文件夹
 feature: Workspace Basics
 exl-id: d08a558b-a2bb-4002-b179-437e1885c6c4
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 100%
+source-wordcount: '93'
+ht-degree: 75%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 100%
 
 1. 在 Workspace 中创建一个新项目。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/save-to-folder1.png)
+   ![自由格式表窗口，可在其中创建新项目。](/help/analysis-workspace/build-workspace-project/assets/save-to-folder1.png)
 
 1. 在&#x200B;**项目** > **保存**&#x200B;对话框中，从“文件夹”下拉菜单中选择一个文件夹名称。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/save-to-folder2.png)
+   ![“保存”窗口，您可以在其中将新项目保存到文件夹。](/help/analysis-workspace/build-workspace-project/assets/save-to-folder2.png)
 
 1. 单击&#x200B;**保存**。
 

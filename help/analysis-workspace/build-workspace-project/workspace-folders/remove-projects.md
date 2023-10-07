@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: 从文件夹中删除项目
 feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 100%
+source-wordcount: '193'
+ht-degree: 91%
 
 ---
 
@@ -25,19 +25,19 @@ ht-degree: 100%
 
 1. 从某个项目的文件夹中，选择该项目名称旁的 **...** 省略号。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move1.png)
+   ![省略号选项。](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
 1. 选择&#x200B;**移至**，然后选择要将该项目移至的文件夹。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
+   ![“选择位置”窗口。](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
 
 1. 单击&#x200B;**移动**。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
+   ![单击“移动”。](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
 
    随后将有一个 toast 确认移动了该项目。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
+   ![移动确认toast。 ](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
 
 ## 从项目文件夹中删除项目 {#delete-project-in-folder}
 
@@ -45,7 +45,7 @@ ht-degree: 100%
 
 1. 从某个项目的文件夹中，选择该项目名称旁的 **...** 省略号。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move1.png)
+   ![省略号选项。](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
 1. 选择&#x200B;**删除**。
 

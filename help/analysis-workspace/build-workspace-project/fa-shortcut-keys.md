@@ -1,13 +1,13 @@
 ---
-description: 在 Analysis Workspace 中，可使用键盘交互、快捷键以及点击行为。
+description: 了解Analysis Workspace中提供的键盘交互、快捷键和点击行为。
 keywords: Analysis Workspace
 feature: Workspace Basics
-title: 热键（快捷方式）
+title: 如何使用工作区热键
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 378098861bde949a2224a9b8c6376aa7b5e8ec27
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 100%
+source-wordcount: '293'
+ht-degree: 93%
 
 ---
 

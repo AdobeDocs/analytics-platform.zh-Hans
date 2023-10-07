@@ -3,10 +3,10 @@ description: 面板是表格和可视化图表的集合
 title: 面板概述
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: 473d0851e537decc8a26f653e81b161c7b7dc551
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1232'
-ht-degree: 51%
+source-wordcount: '1313'
+ht-degree: 48%
 
 ---
 
@@ -27,7 +27,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 | [“媒体并行查看者”面板](media-concurrent-viewers.md) | 分析一段时间内的并发查看者，了解有关并发峰值的详细信息，并且可以进行细分和比较。 |
 | [“媒体播放逗留时间”面板](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | 分析播放耗时以了解发生并发高峰或发生播放量下降的位置。 |
 
-![](assets/panel-overview.png)
+![Customer Journey Analytics面板列出了可用的面板类型。](assets/panel-overview.png)
 
 [!UICONTROL 快速见解]、[!UICONTROL 空白]和[!UICONTROL 自由格式]面板非常适合开始您的分析，而[!UICONTROL Attribution IQ] 本身有助于进行更深入的分析。项目中有一个 `"+"` 按钮，通过该按钮，您可以随时添加空白面板。
 
@@ -39,7 +39,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 注意：如果在表格、可视化图表或面板拖放区域中使用了某个（紫色）日期范围组件，则该组件会覆盖面板日历。
 
-![](assets/panel-calendar.png)
+![显示所选日期范围的日历窗口。](assets/panel-calendar.png)
 
 您可以在面板日历的高级设置下应用分钟级日期范围。如果报告的日期范围跨越许多天，则开始时间适用于范围内的第一天，结束时间适用于最后一天。
 
@@ -51,7 +51,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 将任意过滤器从左边栏拖放到面板拖放区域以开始筛选面板。
 
-![](assets/segment-filter.png)
+![左边栏显示可用的量度和拖放到面板拖放区域的移动设备客户量度。](assets/segment-filter.png)
 
 ### 临时过滤器
 
@@ -61,7 +61,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 有关更多信息，请参阅 [快速过滤器](/help/components/filters/quick-filters.md).
 
-![](assets/adhoc-segment-filter.png)
+![已公开并放入放置区域的临时过滤器。](assets/adhoc-segment-filter.png)
 
 ### 静态下拉过滤器
 
@@ -69,7 +69,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 下拉过滤器也可用于将多个项目合并在一起。例如，如果您有一个项目的多个版本，每个版本具有不同的“国家/地区”过滤器，您可以将所有版本合并为一个项目并添加“国家/地区”下拉过滤器。
 
-![](assets/dropdown-filter-intro.png)
+![突出显示显示市场渠道“直接”过滤器的静态下拉过滤器。 ](assets/dropdown-filter-intro.png)
 
 要创建静态下拉过滤器，请执行以下操作：
 
@@ -79,7 +79,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 从下拉列表中选择一个选项，以更改面板中的数据。 您还可以通过选择不对面板数据中的任何数据进行过滤 **[!UICONTROL 无筛选器]**.
 
-![](assets/create-dropdown.png)
+![带有移动设备客户区段字段的“面板”窗口可用于放置静态下拉过滤器。 ](assets/create-dropdown.png)
 
 右键单击下拉过滤器可提供以下选项：
 
@@ -109,7 +109,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 面板的其他功能可通过在面板的标题上右键单击来使用。
 
-![](assets/right-click-menu.png)
+![面板标题的右键单击选项。](assets/right-click-menu.png)
 
 其中提供了以下设置：
 

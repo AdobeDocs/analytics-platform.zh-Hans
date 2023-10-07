@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: 文件夹概述
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 100%
+source-wordcount: '461'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ Workspace 中有两种类型的文件夹：公司文件夹和个人文件夹。
 
 当您登录到 Workspace 时，项目主页会显示您的项目列表以及您创建的公司文件夹和任何个人文件夹。
 
-![](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
+![项目主页列出了您的项目和公司文件夹。](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
 
 ## 关于公司文件夹 {#company-folder}
 
@@ -38,11 +38,11 @@ Workspace 中有两种类型的文件夹：公司文件夹和个人文件夹。
 
 管理员具有分配给公司文件夹的特殊权限。例如，只有管理员可在公司文件夹中添加或删除文件夹或项目。无管理员权限的用户可查看公司文件夹的内容。
 
-![](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
+![显示管理选项的“项目”页面。](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
 
 非管理员的选项有限。
 
-![](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
+![显示文件夹的非管理员选项的“项目”页面。](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
 
 ### 公司文件夹准则 {#company-folder-guidelines}
 

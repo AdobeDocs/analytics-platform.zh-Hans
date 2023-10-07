@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: 项目概述
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: 9a45b3a6f1c1b4da91fa6c79ad0e265cdd89e020
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 80%
+source-wordcount: '1371'
+ht-degree: 72%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 80%
 
 ## 项目列表 {#project-list}
 
-当您首次转到&#x200B;**[!UICONTROL “Analytics”]**>**[!UICONTROL “Workspace”]**&#x200B;时，该页面列出您拥有或与您共享的所有项目。这也是 Adobe Analytics 的登陆页面，除非您以前设置过自定义登陆页面。
+当您首次访问 **[!UICONTROL 分析]** > **[!UICONTROL 工作区]**，则页面会列出您拥有的所有项目或与您共享的项目。 这也是 Adobe Analytics 的登陆页面，除非您以前设置过自定义登陆页面。
 
-![](assets/sample-project.png)
+![显示项目列表的项目登陆页面。](assets/sample-project.png)
 
 “项目”页面包含以下信息：
 
@@ -55,7 +55,7 @@ ht-degree: 80%
 
 在项目中，菜单提供管理项目、添加组件、查找帮助等选项。还可通过键盘[快捷方式](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)访问每个菜单选项。
 
-![](assets/menu.png)
+![新的项目选项，包括项目、编辑、插入、组件、共享和帮助选项。](assets/menu.png)
 
 | 菜单项 | 描述 |
 |---|---|
@@ -71,7 +71,7 @@ ht-degree: 80%
 
 **[!UICONTROL Workspace]** > **[!UICONTROL 项目]** > **[!UICONTROL 项目信息和设置]** 提供有关当前活动项目的项目级信息。
 
-![](assets/projectinfo.png)
+![项目信息和设置窗口。](assets/projectinfo.png)
 
 这些设置包括：
 
@@ -94,7 +94,7 @@ ht-degree: 80%
 
 左侧边栏中的组件（维度、量度、过滤器、日期范围）与活动面板数据视图相关。活动面板在自身四周将有蓝色边框，而活动数据视图将列在组件边栏的顶部。
 
-![](assets/left-rail.png)
+![与跨行业演示数据视图的活动面板数据视图相关的组件。](assets/left-rail.png)
 
 ## 项目画布 {#canvas}
 
@@ -104,15 +104,15 @@ ht-degree: 80%
 
 根据您为项目选择的起点，您在画布中将首先使用[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)或[空面板](/help/analysis-workspace/c-panels/blank-panel.md)。最快开始分析的方法是选择一个或多个组件，然后将其拖放到项目画布中。随后将自动为您呈现数据表。[详细了解](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)构建表的不同选项，或利用我们的[培训教程](/help/analysis-workspace/home.md)就构建您的第一个项目获得更多指导。
 
-![](assets/canvas.png)
+![项目的自由格式表。](assets/canvas.png)
 
 ## 项目管理器 {#manager}
 
-可在&#x200B;**“Analytics”>“组件”>“项目”**&#x200B;下管理 Analysis Workspace 项目。项目管理器显示特定用户已创建的项。可在“管理员”>“Analytics 用户和资源”>“转移资源”下将项目所有权移交给新用户。
+可在&#x200B;**“Analytics”>“组件”>“项目”**&#x200B;下管理 Analysis Workspace 项目。项目管理器显示特定用户创建的项。 您可以在管理员> Analytics用户和资产>转移资产下将项目所有权转移给新用户。
 
-在项目管理器中，可执行添加、标记、共享、复制等操作。可在搜索栏中或通过使用左侧边栏中的过滤器选项搜索项目。可按标记、所有者、项目类型等进行筛选。
+在项目管理器中，您可以添加、标记、共享、复制/复制等。 可在搜索栏中或通过使用左侧边栏中的过滤器选项搜索项目。可按标记、所有者、项目类型等进行筛选。
 
-![](assets/project-manager.png)
+![“项目管理器标记”搜索字段和“标题”搜索字段。](assets/project-manager.png)
 
 以下是项目管理器中的常用操作，可同时对一个或多个项目执行此类操作：
 

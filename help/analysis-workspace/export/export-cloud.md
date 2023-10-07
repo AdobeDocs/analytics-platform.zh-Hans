@@ -1,12 +1,12 @@
 ---
-description: 将Analysis Workspace项目导出到云位置。
+description: 了解如何将Analysis Workspace项目导出到云位置。
 keywords: Analysis Workspace
 title: 将Customer Journey Analytics报表导出到云端
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
-source-git-commit: 3252a41f5ee1f439a3f233b06a8be1fdf6150234
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1955'
+source-wordcount: '1970'
 ht-degree: 3%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 3%
 
 1. [在云中访问数据](#view-exported-data-and-manifest-file) 和 [在Adobe中管理导出](/help/components/exports/manage-exports.md)
 
-![完整表导出过程](assets/export-full-table-process.png)
+![步骤1至4中描述的完整表格导出过程。](assets/export-full-table-process.png)
 
 ## 从Analysis Workspace导出完整表
 
@@ -57,7 +57,7 @@ ht-degree: 3%
 
 1. 选择 [!UICONTROL **导出完整表**].
 
-   ![导出完整表](assets/export-full-table.png)
+   ![“自由格式表”下拉菜单突出显示“导出完整表格”。](assets/export-full-table.png)
 
 1. 在 [!UICONTROL **新的完整表导出**] 对话框，请指定以下信息：
 

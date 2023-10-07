@@ -4,9 +4,9 @@ keywords: Analysis Workspace 共享
 title: 共享项目
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: bf700355597760b36441864de36f460b5996a1fe
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1960'
+source-wordcount: '1980'
 ht-degree: 36%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 36%
 
 如果存在未保存的更改，系统将提示您先保存项目。
 
-   ![](assets/share-proj-modal.png)
+   ![共享项目窗口。](assets/share-proj-modal.png)
 
    有关如何同时共享多个项目的信息，请参阅[在“项目”管理器中共享项目](#share-projects-in-the-project-manager)。
 
@@ -100,7 +100,7 @@ ht-degree: 36%
 
 1. 选择 **[!UICONTROL 共享]** > **[!UICONTROL 与Workspace用户共享]**，然后选择 **[!UICONTROL 复制]** 旁边的 **[!UICONTROL 通过链接共享]** 字段。
 
-   ![](assets/share-proj-modal.png)
+   ![共享项目，其中突出显示了按链接共享字段。](assets/share-proj-modal.png)
 
 1. 与组织中的用户共享项目链接。 例如，您可以将其粘贴到电子邮件、内部网站等。
 
@@ -146,7 +146,7 @@ ht-degree: 36%
 
    选择此选项将创建一个指向可与任何人共享的项目的链接。 通过禁用此选项，您可以随时禁用对项目的访问。
 
-   项目的所有者也是此链接的所有者。 仅在转移项目所有权时，才能将链接所有权转移给另一个用户，如中所述 [转移用户资产或设置帐户有效期](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=en) （在Analytics管理指南中）。
+   项目的所有者也是此链接的所有者。 仅在转移项目所有权时，才能将链接所有权转移给另一个用户，如中所述 [转移用户资产或设置帐户有效期](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=zh-Hans) （在Analytics管理指南中）。
 
 1. 选择是否启用以下安全选项(此选项可由您的Customer Journey Analytics管理员控制)：
 
@@ -184,7 +184,7 @@ ht-degree: 36%
 * 项目 A：1、2、3、4、7
 * 项目 B：4、5、6、7
 
-![](assets/mult-proj-sharing.png)
+![“将收件人添加到多个项目”窗口。](assets/mult-proj-sharing.png)
 
 ## 共享嵌入的组件
 

@@ -3,10 +3,10 @@ description: 了解如何在 Analysis Workspace 中调整视图密度。
 title: 视图密度
 feature: Workspace Basics
 exl-id: b02672e2-0728-472b-97fe-14637ab1c2df
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 100%
+source-wordcount: '114'
+ht-degree: 93%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 - **[!UICONTROL 舒适]**：与紧凑版本相比，这个版本的视图多留出了一些边距。
 - **[!UICONTROL 展开]**（默认）：这是在工作区中最常用的视图。
 
-![](assets/view-density.png)
+![“紧凑”、“舒适”和“展开”视图密度。](assets/view-density.png)
 
 要设置视图密度，请执行以下操作：
 

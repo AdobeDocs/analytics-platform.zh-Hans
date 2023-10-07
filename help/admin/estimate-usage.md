@@ -4,10 +4,10 @@ description: 展示了两种估算使用情况的方法和一种管理使用情�
 role: Admin
 feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 72%
+source-wordcount: '901'
+ht-degree: 73%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 72%
 
 1. 添加组织创建的每个连接的&#x200B;**[!UICONTROL 可用事件数据记录]**。（根据连接的大小，数字可能需要一段时间才能显示。）
 
-   ![](./assets/event-data.png)
+   ![事件数据记录可用.](./assets/event-data.png)
 
    >[!CAUTION]
    >
@@ -68,9 +68,9 @@ ht-degree: 72%
 >
 >    不要创建包含所有数据的新连接只是为了测量使用情况，因为这实际上会使您的使用量翻倍。
 
-1. 在工作区中，根据每个数据视图创建新项目并拉入所有事件(从 **[!UICONTROL 量度]** 下拉列表)，从当前Customer Journey Analytics合同的第一天开始，开始每月第一个星期五。
+1. 在工作区中，根据每个数据视图创建新项目并拉入所有事件(从 **[!UICONTROL 量度]** 下拉列表)，开始每月第一个星期五，从当前Customer Journey Analytics合同的第一天开始。
 
-   ![事件](./assets/events-usage.png)
+   ![自由格式表显示事件。](./assets/events-usage.png)
 
    这将使您很好地了解每月的使用趋势。
 
@@ -93,11 +93,11 @@ ht-degree: 72%
 
 ## 通过定义滚动数据窗口来管理您的使用情况 {#rolling}
 
-要管理您的使用情况，请 [连接用户界面](/help/connections/create-connection.md) 允许您在连接级别将Customer Journey Analytics数据保留定义为以月计的滚动时段（1个月、3个月、6个月等）。
+要管理您的使用情况，请 [连接Ui](/help/connections/create-connection.md) 可让您在连接级别将Customer Journey Analytics数据保留定义为以月计的滚动时段（1个月、3个月、6个月等）。
 
 主要好处是，您只需存储或报告适用且有用的数据，并且可删除不再有用的旧数据。它可以帮助您保持在合同限制范围内，并减少超出预期成本的风险。
 
-如果您保留默认值（未选中），则保留期将被 Adobe Experience Platform 数据保留设置所取代。如果您具有25个月的数据Experience Platform，则Customer Journey Analytics将通过回填获取25个月的数据。 如果您在Platform中删除了其中的10个月，则Customer Journey Analytics将保留剩余的15个月。
+如果您保留默认值（未选中），则保留期将被 Adobe Experience Platform 数据保留设置所取代。如果您在Experience Platform中有25个月的数据，则Customer Journey Analytics将通过回填获取25个月的数据。 如果您在 Platform 中删除了其中的 10 个月，则 Customer Journey Analytics 将会保留剩余的 15 个月。
 
 数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此配置文件或查找数据集不存在滚动数据窗口设置。如果您的连接包括任何配置文件或查找数据集，则由于它们与事件数据集相连，因此会根据事件数据集时间戳上的数据保留设置将数据保留在Customer Journey Analytics中。
 

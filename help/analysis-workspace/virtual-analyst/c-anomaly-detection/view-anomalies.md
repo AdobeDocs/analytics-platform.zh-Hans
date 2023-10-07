@@ -1,12 +1,12 @@
 ---
-description: 您可以在表格或折线图中查看异常。
-title: 在 Analysis Workspace 中查看异常
+description: 了解如何在表或折线图中查看异常。
+title: 如何在Analysis Workspace中查看异常
 feature: Anomaly Detection
 exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
-source-git-commit: 34566535589c84c96a8d7a47988cd155b743674e
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 97%
+source-wordcount: '482'
+ht-degree: 89%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 97%
 
 1. 在设置菜单之外单击以查看更新的表格。
 
-   ![](assets/anomaly_detected.png)
+   ![异常检测通知，指示比预期低15%。](assets/anomaly_detected.png)
 
 1. 异常情况如下表所示：
 
@@ -46,7 +46,7 @@ ht-degree: 97%
 
 1. 在设置菜单之外单击以查看更新的折线图。
 
-   ![](assets/anomaly_linechart.png)
+   ![包含异常检测消息的折线图，指示比预期高15%。](assets/anomaly_linechart.png)
 
    异常情况如下折线图所示：
 

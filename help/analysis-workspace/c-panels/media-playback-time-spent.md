@@ -4,10 +4,10 @@ description: 如何在 Analysis Workspace 中使用和解释“媒体播放耗�
 feature: Panels
 role: User, Admin
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
-source-git-commit: cfce67c9cbda272158288c04d5ecdbceee99beb7
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 75%
+source-wordcount: '924'
+ht-degree: 74%
 
 ---
 
@@ -55,7 +55,7 @@ Media Analytics客户可以分析播放耗时，以获取有关内容质量和�
 
 ## 默认视图
 
-![默认视图](assets/mpts_default_view.png)
+![媒体剧本逗留时间默认视图。](assets/mpts_default_view.png)
 
 ## 面板输出 {#Output}
 
@@ -65,7 +65,7 @@ Media Analytics客户可以分析播放耗时，以获取有关内容质量和�
 
 如果您选择了系列细分，则会为每一项在线形图上显示一条线以及概要数字：
 
-![媒体播放耗时输出](assets/mpts_outputs1.png)
+![媒体播放耗时输出显示折线图和摘要。](assets/mpts_outputs1.png)
 
 ### 数据源
 

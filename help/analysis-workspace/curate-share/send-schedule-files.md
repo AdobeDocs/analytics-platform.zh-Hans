@@ -1,18 +1,18 @@
 ---
-description: 您可以对贵组织中的收件人策划、共享和计划 PDF/CSV 项目。
+description: 了解工作区的“共享”菜单选项。
 title: “共享”菜单
 feature: Curate and Share
 exl-id: d7f92e59-18e9-43cd-8121-3c970434aaee
-source-git-commit: b36ba438a14f9fd257f2b6a38be7eb39baaa7d92
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 75%
+source-wordcount: '146'
+ht-degree: 56%
 
 ---
 
 # “共享”菜单
 
-您可以在 Workspace **共享** 菜单中为您组织中的收件人策划、共享和计划 PDF/CSV 项目。
+您可以在Workspace中策划、共享和计划PDF项目和CSV项目给组织中的收件人 **“共享”菜单**.
 
 | 菜单选项 | 描述 |
 |---|---|

@@ -5,10 +5,10 @@ title: 通过电子邮件将Customer Journey Analytics数据发送给其他人
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 63%
+source-wordcount: '1036'
+ht-degree: 59%
 
 ---
 
@@ -31,10 +31,10 @@ ht-degree: 63%
 1. （可选）添加要包含在电子邮件中的描述以说明正在接收的文件。
 1. 添加收件人或组。也可以输入电子邮件地址。
 1. （仅适用于 Healthcare Shield 客户）提供密码。请参阅“密码保护计划报告”部分。
-1. 单击&#x200B;**[!UICONTROL 立即发送]**。
 1. （可选）单击&#x200B;**[!UICONTROL 显示计划选项]**&#x200B;以指定发送计划。
+1. 单击&#x200B;**[!UICONTROL 立即发送]**。
 
-![立即发送文件](assets/send-file-no-scheduling-options.JPG)
+![“发送文件”窗口和“立即发送”按钮。](assets/send-file-no-scheduling-options.JPG)
 
 ## 按计划发送文件 {#schedule}
 
@@ -49,7 +49,7 @@ ht-degree: 63%
 1. 指定发送频率。每种频率均允许进行不同的自定义。
 1. 单击&#x200B;**[!UICONTROL 按计划发送]**。
 
-![](assets/send-file.JPG)
+![显示的“发送文件”窗口和计划选项可显示开始日期、结束日期以及每日频率设置。](assets/send-file.JPG)
 
 ## 计划项目管理器 {#manager}
 
@@ -97,7 +97,7 @@ Adobe 使用密码来加密计划项目，无论它们是以 .pdf 还是 .csv �
 
 * 即将发送现有的计划项目时。当前计划的项目在密码保护设置完成之前处于禁用状态。 计划项目的所有者会收到一封电子邮件，通知他们此要求。
 
-![密码保护](assets/password.png)
+![编辑计划项目窗口和密码加密通知，指示您的组织需要密码加密。](assets/password.png)
 
 ### 密码要求
 
@@ -112,7 +112,7 @@ Adobe 使用密码来加密计划项目，无论它们是以 .pdf 还是 .csv �
 
 在计划项目之前，项目所有者会收到类似于以下内容的电子邮件：
 
-![电子邮件](assets/email-password.png)
+![Customer Journey Analytics电子邮件通知，指示您的组织需要密码加密。](assets/email-password.png)
 
 1. 登录到Customer Journey Analytics。
 1. 选择 **[!UICONTROL 查看计划项目]**.

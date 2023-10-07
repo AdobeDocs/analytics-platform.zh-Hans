@@ -4,10 +4,10 @@ keywords: Analysis Workspace 共享
 title: 创建可共享链接
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
-source-git-commit: 7889c9e7c55dadfe0966f03365eabc4929a32d7a
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 62%
+source-wordcount: '395'
+ht-degree: 57%
 
 ---
 
@@ -36,7 +36,7 @@ Analysis Workspace 提供了多种将项目共享给用户的方法，包括能�
 
 请[观看视频](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=zh-Hans)，了解如何创建链接，并使用这些链接促使收件人访问项目的特定部分。
 
-![](assets/get-viz-link.png)
+![在标题上右键单击并突出显示获取可视化图表链接后，显示下拉菜单。](assets/get-viz-link.png)
 
 ## 在目录中使用链接 {#TOC}
 
@@ -44,4 +44,4 @@ Analysis Workspace 提供了多种将项目共享给用户的方法，包括能�
 
 请[观看视频](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html?lang=zh-Hans)，了解如何通过使用链接和工作区的富文本编辑器来构建目录。
 
-![](assets/toc.png)
+![项目目录。](assets/toc.png)

@@ -3,10 +3,10 @@ description: 如何更改可视化图表调色板或指定您自己的自定义�
 title: 可视化图表调色板
 feature: Workspace Basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 92%
+source-wordcount: '222'
+ht-degree: 88%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 92%
 >
 >Internet Explorer 11 未启用调色板支持。
 
-![](assets/color_palettes.png)
+![项目信息和设置窗口。](assets/color_palettes.png)
 
 请牢记：
 
@@ -28,9 +28,9 @@ ht-degree: 92%
 ## 更改调色板：
 
 1. 导航至&#x200B;**[!UICONTROL 工作区]** > **[!UICONTROL 项目]** > **[!UICONTROL 项目信息和设置]**。
-1. 从 **[!UICONTROL 项目调色板]** 在下拉列表中，您可以从5种预设配色方案中选取一种配色方案。
+1. 从 **[!UICONTROL 项目调色板]** 在下拉列表中，您可以从5种预设配色方案中选取一种。
 
-   ![](assets/custom_palette.png)
+   ![五种预设配色方案。](assets/custom_palette.png)
 
 1. 要指定自己的调色板，请选择预设选项下方的&#x200B;**[!UICONTROL 自定义调色板]**。
 1. 为要使用的颜色指定最多 16 个以逗号分隔的十六进制值（例如，#00a4e4）。例如，如果您只想使用 4 个值，那么将在包含更多颜色的可视化图表中重复使用这些颜色。

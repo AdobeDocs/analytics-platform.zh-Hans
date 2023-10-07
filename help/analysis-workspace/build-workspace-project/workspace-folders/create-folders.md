@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: 创建文件夹
 feature: Workspace Basics
 exl-id: c83c3526-a8d0-4094-b4c4-46cf70e1a365
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 100%
+source-wordcount: '203'
+ht-degree: 71%
 
 ---
 
@@ -25,15 +25,15 @@ ht-degree: 100%
 
 1. 从下拉菜单中选择标签或添加全新标签。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/select-tags.png)
+   ![创建新文件夹窗口，显示新文件夹名称和可用标记列表。](/help/analysis-workspace/build-workspace-project/assets/select-tags.png)
 
 1. 单击&#x200B;**创建**。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/create.png)
+   ![单击“创建”。](/help/analysis-workspace/build-workspace-project/assets/create.png)
 
    该新文件夹即添加到项目和文件夹的主列表。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
+   ![显示项目和文件夹更新列表的“项目”登录页面。](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
 
 ## 创建子文件夹 {#create-subfolder}
 
@@ -43,20 +43,20 @@ ht-degree: 100%
 
 1. 单击&#x200B;**创建新文件夹**。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder2.png)
+   ![单击“创建新文件夹”。](/help/analysis-workspace/build-workspace-project/assets/create-subfolder2.png)
 
 1. 输入子文件夹名称并添加任何必要的标记。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-name.png)
+   ![“创建新文件夹”窗口的“新名称”和“标记”字段。](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-name.png)
 
 1. 单击&#x200B;**创建**。
 
    该新子文件夹即添加到项目和子文件夹的列表。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-added.png)
+   ![单击“创建”。](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-added.png)
 
    >[!NOTE]
    >
    >可在单个文件夹中创建最多 10 级子文件夹。
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-limit.png)
+   ![文件夹下拉列表显示了文件夹中的所有子文件夹。](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-limit.png)

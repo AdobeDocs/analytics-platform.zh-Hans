@@ -4,10 +4,10 @@ keywords: Analysis Workspace 策划
 title: 策划项目
 feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '493'
-ht-degree: 100%
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+workflow-type: tm+mt
+source-wordcount: '513'
+ht-degree: 96%
 
 ---
 
@@ -26,13 +26,13 @@ ht-degree: 100%
 
 也可以通过单击&#x200B;**[!UICONTROL 策划和共享]**&#x200B;从[!UICONTROL 共享]菜单中应用策划。此选项会自动将项目策划为项目中使用的组件。您可以按照上述步骤添加更多组件。
 
-![](assets/curation-field.png)
+![“策划组件”窗口显示了项目中使用的组件。](assets/curation-field.png)
 
 ## 应用策划后的项目视图
 
 当收件人打开应用策划后的项目时，他们将只看到您在策划时定义的组件集：
 
-![](assets/curate-project.png)
+![显示您定义的组件的共享策划项目。](assets/curate-project.png)
 
 ## 删除项目策划
 

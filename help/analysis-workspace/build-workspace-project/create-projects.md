@@ -3,17 +3,17 @@ description: 了解如何在Analysis Workspace中创建项目
 title: 创建项目
 feature: Workspace Basics
 role: User, Admin
-exl-id: f5ea0a1f-5dd6-4c73-b316-33c15ca5443c
-source-git-commit: c52dd6d8a22d2092f5f70aeb79d24ecf897e012e
+exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '572'
-ht-degree: 4%
+source-wordcount: '602'
+ht-degree: 14%
 
 ---
 
 # 创建项目
 
-[项目](/help/analysis-workspace/build-workspace-project/freeform-overview.md) 在Analysis Workspace中，您可以查看业务关键型分析，这些分析可以与组织内部或外部的利益相关者共享。
+[项目](/help/analysis-workspace/build-workspace-project/freeform-overview.md) 在Analysis Workspace中，您可以查看可与组织内部或外部利益相关者共享的业务关键型分析。
 
 有关如何开始使用Analysis Workspace的一般信息，请参阅 [Analysis Workspace概述](/help/analysis-workspace/home.md).
 
@@ -32,7 +32,7 @@ ht-degree: 4%
 
 1. 选择&#x200B;[!UICONTROL **创建**]。
 
-1. 接下来，您需要向项目中添加面板、可视化图表和组件。 首先，在Analysis Workspace中将面板添加到您的项目，如中所述 [在项目中添加面板](#add-panels-to-the-project). 然后，您可以将可视化图表添加到任何面板。 最后，您可以将组件添加到任何面板或可视化图表中。
+1. 接下来，您需要将面板、可视化图表和组件添加到项目中。 首先，在Analysis Workspace中将面板添加到您的项目，如中所述 [在项目中添加面板](#add-panels-to-the-project). 然后，您可以向任何面板添加可视化图表。 最后，您可以将组件添加到任何面板或可视化图表。
 
 ## 在项目中添加面板 {#panels}
 
@@ -44,17 +44,17 @@ Analysis Workspace 中提供的许多面板都可以基于一些用户输入来�
 
 1. 选择 [!UICONTROL **面板**] 图标。
 
-   ![](assets/build-panels.png)
+   ![选择“面板”图标和可用面板的列表。](assets/build-panels.png)
 
-1. 搜索要添加的面板。 当它显示在左边栏中时，将其拖动到您的项目中。
+1. 搜索要添加的面板。 当它在左边栏中显示时，将其拖动到您的项目中。
 
-1. 向面板中添加可视化图表，如中所述 [向项目添加可视化图表](#add-visualizations-to-the-project).
+1. 将可视化图表添加到面板，如中所述 [在项目中添加可视化图表](#add-visualizations-to-the-project).
 
    或者，也可以将组件直接添加到面板，如中所述 [将组件添加到项目](#add-components-to-the-project).
 
-## 向项目添加可视化图表
+## 在项目中添加可视化图表
 
-[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) （例如自由格式表、条形图或折线图）可用于直观地将数据呈现出来。
+[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) （例如自由格式表、条形图或折线图）可用于直观地将数据变为现实。
 
 >[!TIP]
 >
@@ -64,7 +64,7 @@ Analysis Workspace 中提供的许多面板都可以基于一些用户输入来�
 
 1. 选择 **[!UICONTROL 可视化图表]** 图标。
 
-   ![](assets/build-visualizations.png)
+   ![选定的可视化图标和可用的可视化图表列表。](assets/build-visualizations.png)
 
 1. 搜索要添加的可视化图表。 当它显示在左边栏中时，将其拖动到项目中的面板。
 
@@ -82,14 +82,14 @@ Analysis Workspace 中提供的许多面板都可以基于一些用户输入来�
 
 1. 选择 **[!UICONTROL 组件]** 图标。
 
-   ![](assets/build-components.png)
+   ![选定的组件图标和可用维列表。](assets/build-components.png)
 
-1. 搜索要添加的组件。 当它显示在左边栏中时，将其拖动到项目中的面板或可视化图表中。
+1. 搜索要添加组件。 当它显示在左边栏中时，将其拖动到项目中的面板或可视化图表。
 
 1. （可选）按照中的说明共享项目 [保存并共享项目](#save-and-share-the-project).
 
 ## 保存并共享项目
 
-在Analysis Workspace中创建分析时，您的工作是 [自动保存](/help/analysis-workspace/build-workspace-project/save-projects.md).
+在 Analysis Workspace 中创建分析时，您的工作将[自动保存](/help/analysis-workspace/build-workspace-project/save-projects.md)。
 
-当您完成项目构建并收集可操作见解时，项目便可供其他人使用。 您可以与组织中的用户和组共享项目，甚至可以与组织外部的人员共享项目。 有关共享项目的信息，请参见 [共享项目](/help/analysis-workspace/curate-share/share-projects.md).
+在构建完项目并收集可操作洞察后，项目即可供其他人使用。您可以与组织内的用户和组甚至组织外的人员共享项目。有关共享项目的信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)。

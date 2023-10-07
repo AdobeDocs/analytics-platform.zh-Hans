@@ -4,18 +4,18 @@ keywords: 仅供查看的项目
 title: 仅供查看的项目
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 81%
+source-wordcount: '249'
+ht-degree: 80%
 
 ---
 
 # 仅供查看的项目
 
-您可以通过[项目共享工作流程](/help/analysis-workspace/curate-share/share-projects.md)与收件人共享“仅查看”项目。处于“可以查看”角色的收件人将获得更有限的项目体验。如果您要将项目共享给不太熟悉您组织的数据结构(通常为Analysis Workspace或Customer Journey Analytics)的用户，但您仍希望他们在安全的环境中使用数据和分析，则可能需要这样做。
+您可以通过[项目共享工作流程](/help/analysis-workspace/curate-share/share-projects.md)与收件人共享“仅查看”项目。处于“可以查看”角色的收件人将获得更有限的项目体验。如果您将项目共享给不太熟悉您组织的数据结构(通常情况下是Analysis Workspace或Customer Journey Analytics)的用户，但仍希望他们在安全的环境中使用数据和见解，则可能希望这样做。
 
-![](assets/view-only-project.png)
+![仅查看共享项目。](assets/view-only-project.png)
 
 ## 禁用的交互
 
