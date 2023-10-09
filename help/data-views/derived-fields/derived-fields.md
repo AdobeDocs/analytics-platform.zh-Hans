@@ -3,14 +3,13 @@ title: 派生字段
 description: 派生字段通过一组可用函数和函数模板指定对架构字段和/或标准组件的报告时间操作。
 solution: Customer Journey Analytics
 feature: Derived Fields
-exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: f1935947fe0273e5cdd5752ab7a9c871b02c990d
+exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
+source-git-commit: 4ec48fcdd62781720f7d648a0ec2169d2af03d23
 workflow-type: tm+mt
-source-wordcount: '5056'
-ht-degree: 16%
+source-wordcount: '5431'
+ht-degree: 15%
 
 ---
-
 
 # 派生字段
 
@@ -62,7 +61,7 @@ ht-degree: 16%
 | A | **规则名称** | 默认情况下，规则名称为 **规则X** （X表示序列号）。 要编辑规则的名称，请选择其名称，然后键入新名称，例如 `Query Parameter`. |
 | B | **函数名称** | 规则的选定函数名称，例如 [!UICONTROL URL解析]. 当函数是函数序列中的最后一个并确定最终输出值时，函数名称后面将跟有 [!UICONTROL  — 最终输出]例如 [!UICONTROL URL分析 — 最终输出]. <br/>要显示包含函数详细信息的弹出窗口，请选择 ![“帮助”图标](assets/Smock_HelpOutline_18_N.svg). |
 | C | **规则描述** | 您可以选择向规则添加说明。<br/>选择 ![“更多”图标](assets/More.svg)，然后选择 **[!UICONTROL **&#x200B;添加说明&#x200B;**]** 添加说明或 **[!UICONTROL **&#x200B;编辑描述&#x200B;**]** 编辑现有描述。<br/>使用编辑器输入说明。 您可以使用工具栏设置文本格式（使用样式选择器、粗体、斜体、下划线、右、左、居中、颜色、数字列表、项目符号列表）并向外部信息添加链接。 <br/>要完成编辑说明，请单击编辑器外部的。 |
-| D | **功能区域** | 定义函数的逻辑。 接口取决于函数的类型。 的下拉菜单 [!UICONTROL 字段] 或 [!UICONTROL 值] 根据函数期望的输入类型，显示所有类别的可用字段（规则、标准字段、字段）。 <!-- Alternatively, you can drag and drop a field from the Schema and Standard fields selector on to a Field or Value. When that dragged field is originating from a Lookup dataset, a Lookup function is automatically inserted before the function you define.  See [Function reference](#function-reference) on detailed information for each of the functions supported. --> |
+| D | **功能区域** | 定义函数的逻辑。 接口取决于函数的类型。 的下拉菜单 [!UICONTROL 字段] 或 [!UICONTROL 值] 根据函数期望的输入类型，显示所有类别的可用字段（规则、标准字段、字段）。 或者，您可以将架构和标准字段选择器中的字段拖放到字段或值中。 如果该拖动字段源自查找数据集，则将自动在定义的函数之前插入查找函数。 <br/>请参阅 [函数引用](#function-reference) 每个受支持功能的详细信息。 |
 
 {style="table-layout:auto"}
 
@@ -482,7 +481,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 您定义 `Hotel Name` 派生字段。 您使用 [!UICONTROL 分类] 函数定义一个规则，在其中可以对 [!UICONTROL 酒店ID] 字段并使用新值替换。
 
-如果要包含尚未定义为要分类的值的一部分的原始值（例如，Hotel ID AMS789），请确保选择 **[!UICONTROL 显示原始值]**. 这可确保AMS789将成为派生字段输出的一部分，尽管该值未进行分类。
+如果要包含尚未定义为要分类的值的一部分的原始值（例如，Hotel ID AMS789），请确保选择 **[!UICONTROL 显示原始值]**. 这可确保AMS789是派生字段输出的一部分，即使该值未进行分类。
 
 ![分类规则1的屏幕截图](assets/classify-1.png)
 
@@ -694,55 +693,54 @@ Customer Journey Analytics使用以下默认容器模型：
 +++
 
 
-<!-- LOOKUP
+<!-- LOOKUP -->
 
-### Lookup
+### 查询
 
-Lookup values using a field from a lookup dataset and returns value in a new derived field or for further rule processing.
+使用查找数据集中的字段查找值，并在新的派生字段中返回值或用于进一步规则处理。
 
-+++ Details
++++ 详细信息
 
-## Specification {#lookup-io}
+## 规范 {#lookup-io}
 
-| Input Data Type | Input | Included Operators | Limit | Output |
+| 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field to apply lookup]:</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul><li>[!UICONTROL Lookup dataset]</li><ul><li>Dataset</li></ul><li>[!UICONTROL Matching key]<ul><li>Rules</li><li>Fields</li></ul></li><li>Values to return<ul><li>Rules</li><li>Fields</li></ul></li></ul> | <p>N/A</p> | <p>3 functions per derived field</p> | <p>New derived field or value for further processing in next rule</p> |
+| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 应用查找的字段]:</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul><li>[!UICONTROL 查询数据集]</li><ul><li>数据集</li></ul><li>[!UICONTROL 匹配键]<ul><li>规则</li><li>字段</li></ul></li><li>要返回的值<ul><li>规则</li><li>字段</li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段3个函数</p> | <p>用于下一步规则中进一步处理的新派生字段或值</p> |
 
 {style="table-layout:auto"}
 
-## Use case {#lookup-uc}
+## 用例 {#lookup-uc}
 
-You would like to lookup the activity name using the activity id collected when your customers clicked on a personalized banner shown through Adobe Target. You want to use a lookup dataset with Analytics for Target (A4T) activities containing activity ids and activity names.
+您希望使用在您的客户单击通过Adobe Target显示的个性化横幅时收集的活动ID查找活动名称。 要将查找数据集用于Analytics for Target (A4T)活动，其中包含活动ID和活动名称。
 
-### A4T lookup dataset {#lookup-uc-lookup}
+### A4T查找数据集 {#lookup-uc-lookup}
 
-| Activity Id | Activity Name |
+| 活动ID | 活动名称 |
 |---|---|
-| 415851 | MVT Test Category Pages |
+| 415851 | MVT测试类别页面 |
 | 415852 | Luma - Campaign Max 2022 |
-| 402922 | Home Page Banners |
+| 402922 | 主页横幅 |
 
 {style="table-layout:auto"}
 
-### Derived field {#lookup-uc-derivedfield}
+### 派生字段 {#lookup-uc-derivedfield}
 
-You define an `Activity Name` derived field. You use the [!UICONTROL LOOKUP] function to define a rule to lookup the value from your collected data, specified in the [!UICONTROL Field to apply lookup] field. You select the lookup dataset from the [!UICONTROL Lookup dataset] list, selecting the identifier field from the [!UICONTROL Matching key list] and the field to return from the [!UICONTROL Values to return] list.
+您定义 `Activity Name` 派生字段。 您使用 [!UICONTROL 查找] 函数来定义一个规则，以从收集的数据中查找值，该值在 [!UICONTROL 要应用查找的字段] 字段(例如 **[!DNL ActivityIdentifier]**)。 您可以从中选择查找数据集 [!UICONTROL 查找数据集] 列表(例如 **[!DNL New CJA4T Activities]**)。 然后选择标识符字段(例如 **[!DNL ActivityIdentifier]**)中的 [!UICONTROL 匹配键] 列表和要从返回的字段 [!UICONTROL 要返回的值] 列表(例如 **[!DNL ActivityName]**)。
 
-![Screenshot of the Lowercase rule](assets/lookup.png)
+![小写规则的屏幕截图](assets/lookup.png)
 
-## More info
+## 更多信息
 
-You can quickly insert a [!UICONTROL Lookup] function in the rule builder, already containing one or more other functions.
+您可以快速插入 [!UICONTROL 查找] 函数中，已包含一个或多个其他函数。
 
-  1. Select **[!UICONTROL Schema fields]** from selector.
-  1. Select ![Schema field icon](assets/Smock_Folder_18_N.svg) **[!UICONTROL Lookup datasets]**.
-  1. Select your lookup dataset and find the field you want to use for lookup.
-  1. Drag the lookup field and drop the field on any of the available input fields for a function (for example Case When). When valid, a blue **[!UICONTROL + Add box]** will allow you to drop the field and automatically insert a Lookup function before the function you dropped the lookup field on, and populate the Lookup function with relevant values for all fields.
-     ![Lookup drag](assets/lookup-drag.png) 
+1. 选择 **[!UICONTROL 架构字段]** 从选择器中。
+1. 选择 ![架构字段图标](assets/Smock_Folder_18_N.svg) **[!UICONTROL 查找数据集]**.
+1. 选择您的查找数据集并查找要用于查找的字段。
+1. 将查找字段拖放到函数的任何可用输入字段上（例如Case When）。 有效时，将显示一个蓝色方框，标记为 **[!UICONTROL +添加]**，允许您删除该字段，并在放置查找字段的函数之前自动插入查找函数。 插入的Lookup函数将自动填充所有字段的相关值。
+   ![查找拖动](assets/lookup-drag.png)
 
 +++
 
--->
 
 <!-- LOWERCASE -->
 
@@ -854,7 +852,7 @@ You can quickly insert a [!UICONTROL Lookup] function in the rule builder, alrea
 
 ## 更多信息 {#merge-fields-moreinfo}
 
-您必须在合并字段规则中选择相同类型的字段。 例如，如果您选择日期字段，则要合并的所有其他字段都必须为日期字段。
+您必须在“合并字段”规则中选择相同类型的字段。 例如，如果您选择日期字段，则要合并的所有其他字段都必须为日期字段。
 
 ![合并字段约束的屏幕截图](assets/merge-fields-constraint.png)
 
@@ -949,7 +947,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 | 输出占位符序列 | 描述 |
 | --- | --- |
 | `$&` | 输出与整个表达式匹配的内容。 |
-| `$n` | 输出与第 n 个子表达式匹配的内容。 例如，`$1` 输出第一个子表达式。 |
+| `$n` | 输出与第n个子表达式匹配的内容。 例如， `$1` 输出第一个子表达式。 |
 | ``$` `` | 输出上一个匹配的结束（如果没有找到上一个匹配，则输出文本的开始）和当前匹配的开始之间的文本。 |
 | `$+` | 输出与正则表达式中最后标记的子表达式匹配的内容。 |
 | `$$` | 输出字符串 `"$"`。 |
@@ -1069,7 +1067,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 ## 用例1 {#trim-uc1}
 
-您可以收集产品数据，但这些数据包含用于生成片段报表的隐藏空白字符。 您想要轻松修剪任何多余的空格
+您可以收集产品数据，但这些数据包含隐藏的空白字符，会对报表产生碎片。 您希望轻松修剪任何多余的空格
 
 ### 数据早于 {#trim-uc1-databefore}
 
@@ -1097,7 +1095,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 ## 用例2 {#trim-uc2}
 
-您在收集到的页面名称上的数据在页面名称末尾包含一些错误的特殊字符，这些字符需要删除。
+您在收集到的页面名称上的数据在页面名称的末尾包含一些错误的特殊字符，必须删除这些字符。
 
 ### 数据早于 {#trim-uc2-databefore}
 
@@ -1259,4 +1257,3 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 - [充分利用数据：用于在Customer Journey Analytics中使用派生字段的框架](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
 
 - [用于Customer Journey Analytics的派生字段用例](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
-

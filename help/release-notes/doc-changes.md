@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 24e9e4151360597b099a7985a4566b3ca7bfff00
+source-git-commit: 4ec48fcdd62781720f7d648a0ec2169d2af03d23
 workflow-type: tm+mt
-source-wordcount: '2651'
-ht-degree: 100%
+source-wordcount: '2662'
+ht-degree: 99%
 
 ---
 
@@ -19,6 +19,8 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 
 | 功能 | 描述 |
 | --- | --- |
+| **2023 年 10 月** | |
+| 附加派生字段功能 | 更新了新文档 [`Lookup`](/help/data-views/derived-fields/derived-fields.md#lookup) 函数。 |
 | **2023 年 9 月** | |
 | 更新了“媒体播放耗时”面板的文章结构 | 删除了名为“媒体播放耗时”的文件夹，并将该文件夹的内容合并为一篇文章：[“媒体播放耗时”面板](/help/analysis-workspace/c-panels/media-playback-time-spent.md)。 <p>此更改与其他面板的文档更一致。</p> |
 | 附加派生字段功能 | 更新了有关新的 [`Lowercase`](/help/data-views/derived-fields/derived-fields.md#lowercase) 和 [`Trim`](/help/data-views/derived-fields/derived-fields.md#trim) 函数以及添加到 [`Classify`](/help/data-views/derived-fields/derived-fields.md#classify) 函数的附加 CSV 功能的文档。 |
