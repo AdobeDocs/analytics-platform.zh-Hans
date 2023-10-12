@@ -4,7 +4,7 @@ description: 解释如何在 Customer Journey Analytics 中接收和使用流数
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9984200a-71e6-4697-b46f-f53e8d4c507f
-source-git-commit: 7ed28afa9d98a581e2d648dcfb438f960900f602
+source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
 workflow-type: tm+mt
 source-wordcount: '2026'
 ht-degree: 85%
@@ -49,15 +49,17 @@ ht-degree: 85%
 1. 在 Adobe Experience Platform UI 的左边栏中，选择[!UICONTROL 数据管理]中的&#x200B;**[!UICONTROL 模式]**。
 
 1. 选择 **[!UICONTROL 创建架构]**..
-1. 在“创建架构”向导的“选择类”步骤中，选择 **[!UICONTROL 个人资料]**.
+1. 在“创建模式”向导的“选择类”步骤中：
 
-   ![创建模式](./assets/create-pr-schema-wizard-step-1.png)
+   1. 选择 **[!UICONTROL 个人资料]**.
 
-   >[!INFO]
-   >
-   >    Experience Event架构用于为 _行为_ 配置文件（如场景名称、要添加到购物车的按钮）的。 个人配置档案模式用于对个人配置档案&#x200B;_属性_（如姓名、电子邮件、性别）建模。
+      ![创建模式](./assets/create-pr-schema-wizard-step-1.png)
 
-   选择&#x200B;**[!UICONTROL 下一步]**。
+      >[!INFO]
+      >
+      >    Experience Event架构用于为 _行为_ 配置文件（如场景名称、要添加到购物车的按钮）的。 个人配置档案模式用于对个人配置档案&#x200B;_属性_（如姓名、电子邮件、性别）建模。
+
+   1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
 
 1. 在 [!UICONTROL 命名和审核步骤] 的 [!UICONTROL 创建架构] 向导：
