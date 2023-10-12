@@ -4,10 +4,10 @@ description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
+source-git-commit: 82e0fbb714852750963e08597b6b1606127e0ac6
 workflow-type: tm+mt
 source-wordcount: '2139'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -42,8 +42,8 @@ ht-degree: 100%
 | 报告 API 访问 | 全面支持；通过 [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/) 提供。 |
 | 计划报表/项目 | 全面支持 |
 | 区段 | 全面支持。现在称为“筛选条件”- 请注意，传统 Analysis Workspace 中的任何现有区段都不会移植到 Customer Journey Analytics。 |
-| 虚拟报表包 | 全面支持。现在称为[数据视图](/help/data-views/create-dataview.md)。 |
-| 虚拟报表包组件管理 | 全面支持。现在是“数据视图”的一部分。 |
+| 虚拟报表包 | 全面支持。现在称为 [数据视图](/help/data-views/create-dataview.md). |
+| 虚拟报表包组件管理 | 全面支持。现在是数据视图的一部分。 |
 | 流 Media Analytics | 使用作为 Workspace 中的“同时观看媒体的人数”面板和“媒体播放耗时”面板一部分的 Analytics Data Connector 即可获得媒体数据。 |
 
 {style="table-layout:auto"}
@@ -65,13 +65,13 @@ ht-degree: 100%
 | 归属地细分维度 | 收集到 Adobe Analytics 中的所有归属地细分/地理位置通过 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) 流入 Customer Journey Analytics。不使用 Analytics Source Connector 但依靠 Experience Platform Web SDK 收集数字数据的实施可使用 [Experience Edge 地理位置查找服务](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=zh-Hans)。 |
 | IP 模糊处理 | 对于使用 Analytics Source Connector 将数据从 Adobe Analytics 填充到 Customer Journey Analytics 中的 Customer Journey Analytics 客户：Adobe Analytics 中应用的 IP 模糊设置会传送到您的 Customer Journey Analytics 数据。您可以根据需要在 Adobe Analytics 中控制这些设置。<p>对于使用 Experience Platform Web SDK 将数据直接填充到 Platform 和 Customer Journey Analytics 中的 Customer Journey Analytics 客户。您可以使用 Platform 中的“数据收集数据准备”功能根据您公司的要求配置混淆 IP 地址的规则。 |
 | 营销渠道 | 使用 Analytics Source Connector 时，“营销渠道”数据会通过该连接器流入 Customer Journey Analytics。在传统的 Adobe Analytics 中配置营销渠道规则，其中不支持某些规则。有关更多信息，请参阅 [Customer Journey Analytics 营销渠道](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels.html)。<br/>对于 WebSDK 实施，通过[派生字段](../../data-views/derived-fields/derived-fields.md)支持报告时营销渠道处理规则。 |
-| 度量去重 | 现在对数据视图中的度量配置此项。在人员或会话级别，而非数据集、数据视图或连接级别进行度量去重。 |
+| 度量去重 | 现在对数据视图中的度量配置此项。量度去重发生在人员或会话级别，而不是数据集、数据视图或连接级别。 |
 | 新会话与重复会话报告 | 以前使用“访问次数”维度实现。新会话与重复会话均支持 [13 个月的回溯时段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/data-views/data-views-usecases.html?lang=zh-Hans)。 |
 | 处理规则、VISTA 规则、营销渠道处理规则 | 对基于 WebSDK 的数据集和来自 Analytics Source Connector 的数据使用 Adobe Experience Platform Data Prep 功能支持此项。 |
 | 产品变量 | 在 Experience Platform 中，用户可在数据集架构中使用对象数组满足此用例。在 Customer Journey Analytics 中，客户可使用任意数量的产品变量，而不像在 Adobe Analytics 中那样只能使用一个变量。 |
 | 项目共享 | 仅在 Customer Journey Analytics 的用户之间支持项目共享功能 - 在 Customer Journey Analytics 与传统 Analysis Workspace 之间无项目共享。 |
 | Report Builder | 通过一个新的 Office 365 Excel 插件支持此项。 |
-| 用户权限/数据访问控制 | Customer Journey Analytics 区分 [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) 产品管理员、产品配置文件管理员和用户。只有产品管理员可创建/更新/删除由其他用户创建的连接、项目、筛选条件或计算量度，而产品管理员和产品配置文件管理员可编辑数据视图。对于创建计算量度、筛选条件或注释等操作还有其他用户权限可用。 |
+| 用户权限/数据访问控制 | Customer Journey Analytics 区分 [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) 产品管理员、产品配置文件管理员和用户。只有产品管理员可以创建/更新/删除由其他用户创建的连接、项目、过滤器或计算量度，而产品管理员和产品配置文件管理员可以编辑数据视图。 对于创建计算量度、筛选条件或注释等操作还有其他用户权限可用。 |
 | 可视化图表 | 除地图可视化图表外，支持所有可视化图表。 |
 
 {style="table-layout:auto"}
