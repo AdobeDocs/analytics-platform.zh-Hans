@@ -4,14 +4,14 @@ description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: e77dbb491178ffbe26fcec21d8b456cc3befbd1d
-workflow-type: ht
-source-wordcount: '2140'
+source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
+workflow-type: tm+mt
+source-wordcount: '2139'
 ht-degree: 100%
 
 ---
 
-# 支持 Adobe Customer Journey Analytics 功能
+# Customer Journey Analytics 功能支持
 
 下表列出了 Customer Journey Analytics 支持、部分支持或不支持 Adob&#x200B;e Analytics 中的哪些功能，以及 Adob&#x200B;e Analytics 中不支持或不提供 Customer Journey Analytics 的哪些功能。由于后续会向 Customer Journey Analytics 添加其他功能，因此这些列表会随着时间而发生变化。
 
