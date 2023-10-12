@@ -3,7 +3,7 @@ title: 与 Adobe Analytics 进行比较
 description: 概述Customer Journey Analytics与Adobe Analytics的比较。
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
+source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 8%
@@ -47,7 +47,7 @@ Customer Journey Analytics使您可以灵活地定义维度和量度，而基于
 
 ## 虚拟报告环境和沙盒
 
-Adobe Analytics具有虚拟报表包的概念，通过虚拟报表包，可对收集的数据进行分段并控制对该分段数据的访问。
+Adobe Analytics具有虚拟报表包的概念，允许您对收集的数据进行分段并控制对该分段数据的访问。
 
 Customer Journey Analytics有一个相似的概念，名为数据视图。 数据视图是容器，允许您确定如何解释来自连接的数据。 它提供了终极的灵活性，可指定和配置维度和量度，为您的报告和分析做准备。
 

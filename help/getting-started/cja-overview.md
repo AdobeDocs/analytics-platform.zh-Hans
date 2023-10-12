@@ -4,10 +4,10 @@ description: 了解如何通过 Customer Journey Analytics 来使用 Analysis Wo
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 0b8fb4007ecb71be2186b8a83f2026b2e296e8a7
-workflow-type: ht
+source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
+workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -66,7 +66,7 @@ Customer Journey Analytics 的初始版本包括 Adobe Analytics 中的许多功
 与传统的 Adobe Analytics 相比，为了符合行业标准，Customer Journey Analytics 中的一些功能已重新命名。一些更新的术语包括：
 
 * “区段”现在称为“筛选条件”。
-* “虚拟报告包”现在称为“数据视图”。
+* “虚拟报表包”现在称为“数据视图”。
 * “分类”现在称为“查找数据集”。
 * “客户属性”现在称为“用户档案数据集”。
 * “点击”容器现在称为“事件”容器。
