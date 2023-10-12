@@ -4,10 +4,10 @@ description: 阐述如何通过 Adobe Experience Platform Web SDK 和 Edge Netwo
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: 662e9645cdb4b67f364525167e5191a52c474864
+source-git-commit: 7ed28afa9d98a581e2d648dcfb438f960900f602
 workflow-type: tm+mt
-source-wordcount: '3580'
-ht-degree: 87%
+source-wordcount: '3607'
+ht-degree: 86%
 
 ---
 
@@ -53,28 +53,35 @@ ht-degree: 87%
 
 1. 在 Adobe Experience Platform UI 的左边栏中，选择[!UICONTROL 数据管理]中的&#x200B;**[!UICONTROL 模式]**。
 
-2. 选择&#x200B;**[!UICONTROL “创建模式”]**。从选项列表中选择 **[!UICONTROL XDM ExperienceEvent]**。
+1. 选择 **[!UICONTROL 创建架构]**..
+1. 在“创建架构”向导的“选择类”步骤中，选择 **[!UICONTROL 体验事件]**.
 
-   ![创建模式](./assets/create-ee-schema.png)
+   ![创建模式](./assets/create-ee-schema-wizard-step-1.png)
 
    >[!INFO]
    >
-   >    Experience Event 模式用于对配置文件的&#x200B;_行为_&#x200B;建模（如页面查看、添加到购物车）。个人配置档案模式用于对个人配置档案&#x200B;_属性_（如姓名、电子邮件、性别）建模。
+   >    Experience Event架构用于为 _行为_ 配置文件（如场景名称、要添加到购物车的按钮）的。 个人配置档案模式用于对个人配置档案&#x200B;_属性_（如姓名、电子邮件、性别）建模。
+
+   选择&#x200B;**[!UICONTROL 下一步]**。
 
 
-3. 在[!UICONTROL 无标题模式]屏幕中：
+1. 在 [!UICONTROL 命名和审核步骤] 的 [!UICONTROL 创建架构] 向导：
 
-   1. 输入模式的显示名称和（可选）描述。
+   1. 输入 **[!UICONTROL 架构显示名称]** （可选）a **[!UICONTROL 描述]**.
 
-      ![命名您的模式](./assets/name-schema.png)
+      ![命名您的模式](./assets/create-ee-schema-wizard-step-2.png)
 
-   2. 在[!UICONTROL 字段组]中选择&#x200B;**[!UICONTROL + 添加]**。
+   1. 选择&#x200B;**[!UICONTROL 完成]**。
+
+1. 在示例架构的结构选项卡中：
+
+   1. 在[!UICONTROL 字段组]中选择&#x200B;**[!UICONTROL + 添加]**。
 
       ![添加字段组](./assets/add-field-group-button.png)
 
       字段组是可重用的对象和属性集合，可让您轻松扩展模式。
 
-   3. 在[!UICONTROL 添加字段组]对话框中，从列表中选择 **[!UICONTROL AEP Web SDK ExperienceEvent]** 字段组。
+   1. 在[!UICONTROL 添加字段组]对话框中，从列表中选择 **[!UICONTROL AEP Web SDK ExperienceEvent]** 字段组。
 
       ![AEP Web SDK ExperienceEvent 字段组](./assets/select-aepwebsdk-experienceevent.png)
 
@@ -84,13 +91,13 @@ ht-degree: 87%
 
       选择&#x200B;**[!UICONTROL 返回]**&#x200B;关闭预览。
 
-   4. 选择&#x200B;**[!UICONTROL 添加字段组]**。
+   1. 选择&#x200B;**[!UICONTROL 添加字段组]**。
 
-4. 在[!UICONTROL 结构]面板中选择模式名称旁边的 **[!UICONTROL +]**。
+1. 在[!UICONTROL 结构]面板中选择模式名称旁边的 **[!UICONTROL +]**。
 
    ![示例模式添加字段按钮](./assets/example-schema-plus.png)
 
-5. 在 [!UICONTROL  字段属性 ] 面板中，输入 `Identification`作为名称，**[!UICONTROL Identification]** 作为 [!UICONTROL Display name]，选择 **[!UICONTROL Object]** 作为 [!UICONTROL Type] 和选择 **[!UICONTROL ExperienceEvent Core v2.1]** 作为 [!UICONTROL Field Group]。
+1. 在 [!UICONTROL  字段属性 ] 面板中，输入 `Identification`作为名称，**[!UICONTROL Identification]** 作为 [!UICONTROL Display name]，选择 **[!UICONTROL Object]** 作为 [!UICONTROL Type] 和选择 **[!UICONTROL ExperienceEvent Core v2.1]** 作为 [!UICONTROL Field Group]。
 
    ![ 识别对象 ](./assets/identification-field.png)
 
@@ -98,7 +105,7 @@ ht-degree: 87%
 
    选择&#x200B;**[!UICONTROL 应用]**&#x200B;将此对象添加到您的模式中。
 
-6. 选择刚刚添加的标识对象中的&#x200B;**[!UICONTROL ecid]**&#x200B;字段，选择&#x200B;**[!UICONTROL 标识]**&#x200B;和&#x200B;**[!UICONTROL 主要标识]** 和 **[!UICONTROL ECID]** 来自右侧面板中的 [!UICONTROL 标识命名空间] 列表。
+1. 选择刚刚添加的标识对象中的&#x200B;**[!UICONTROL ecid]**&#x200B;字段，选择&#x200B;**[!UICONTROL 标识]**&#x200B;和&#x200B;**[!UICONTROL 主要标识]** 和 **[!UICONTROL ECID]** 来自右侧面板中的 [!UICONTROL 标识命名空间] 列表。
 
    ![指定 ECID 作为身份](./assets/specify-identity.png)
 
@@ -106,7 +113,7 @@ ht-degree: 87%
 
    选择 **[!UICONTROL 应用]**。您会看到 ecid 属性中出现指纹图标。
 
-7. 选择刚刚添加的标识对象中的&#x200B;**[!UICONTROL 邮件]**&#x200B;字段，选择&#x200B;**[!UICONTROL 标识]**&#x200B;和&#x200B;**[!UICONTROL 邮件]** 和 [!UICONTROL 标识命名空间] 列表中的 [!UICONTROL 字段属性] 面板。
+1. 选择刚刚添加的标识对象中的&#x200B;**[!UICONTROL 邮件]**&#x200B;字段，选择&#x200B;**[!UICONTROL 标识]**&#x200B;和&#x200B;**[!UICONTROL 邮件]** 和 [!UICONTROL 标识命名空间] 列表中的 [!UICONTROL 字段属性] 面板。
 
     ![将电子邮件指定为标识](./assets/specify-email-identity.png)
 
@@ -116,7 +123,7 @@ ht-degree: 87%
 
    选择&#x200B;**[!UICONTROL 保存]**。
 
-8. 选择显示模式名称的模式的根元素，然后选择 **[!UICONTROL 配置文件]** 开关。
+1. 选择显示模式名称的模式的根元素，然后选择 **[!UICONTROL 配置文件]** 开关。
 
    系统会提示您启用配置文件的模式。一旦启用，当数据被引入基于此模式的数据集中时，该数据将合并到实时客户配置文件。
 
@@ -128,7 +135,7 @@ ht-degree: 87%
 
    ![为配置文件启用模式](./assets/enable-for-profile.png)
 
-9. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存模式。
+1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存模式。
 
 您已经创建了一个最小模式，用于对您可以从您的网站捕获的数据进行建模。该模式允许使用 Experience Cloud Identity 和电子邮件地址来识别配置文件。通过启用配置文件模式，您可以确保从您的网站捕获的数据被添加到实时客户配置文件中。
 

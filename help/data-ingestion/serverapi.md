@@ -3,16 +3,17 @@ title: 通过Adobe Experience Platform Edge Network服务器API引入数据
 description: 说明如何通过Adobe Experience Platform Edge Network Server API和Edge Network将数据摄取到Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
+exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
+source-git-commit: 7ed28afa9d98a581e2d648dcfb438f960900f602
 workflow-type: tm+mt
-source-wordcount: '2329'
-ht-degree: 62%
+source-wordcount: '2353'
+ht-degree: 60%
 
 ---
 
 # 通过Adobe Experience Platform Edge Network服务器API引入数据
 
-本快速入门指南介绍如何使用Adobe Experience Platform Edge Network Server API和Edge Network将跟踪数据从物联网设备、机顶盒、游戏控制台和桌面应用程序等设备直接摄取到Adobe Experience Platform中。 然后，在Customer Journey Analytics中使用该数据。
+本快速入门指南介绍如何使用Adobe Experience Platform Edge Network Server API和Edge Network将跟踪数据从物联网设备、机顶盒、游戏控制台和桌面应用程序等设备直接摄取到Adobe Experience Platform中。 然后将这些数据用于Customer Journey Analytics。
 
 要完成此操作，您必须：
 
@@ -52,28 +53,35 @@ ht-degree: 62%
 
 1. 在 Adobe Experience Platform UI 的左边栏中，选择[!UICONTROL 数据管理]中的&#x200B;**[!UICONTROL 模式]**。
 
-2. 选择&#x200B;**[!UICONTROL “创建模式”]**。从选项列表中选择 **[!UICONTROL XDM ExperienceEvent]**。
+1. 选择 **[!UICONTROL 创建架构]**..
+1. 在“创建架构”向导的“选择类”步骤中，选择 **[!UICONTROL 体验事件]**.
 
-   ![创建模式](./assets/create-ee-schema.png)
+   ![创建模式](./assets/create-ee-schema-wizard-step-1.png)
 
    >[!INFO]
    >
-   >    Experience Event架构用于为 _行为_ 个人资料的（例如，在游戏中达到某个级别）。 个人配置档案模式用于对个人配置档案&#x200B;_属性_（如姓名、电子邮件、性别）建模。
+   >    Experience Event架构用于为 _行为_ 配置文件（如场景名称、要添加到购物车的按钮）的。 个人配置档案模式用于对个人配置档案&#x200B;_属性_（如姓名、电子邮件、性别）建模。
+
+   选择&#x200B;**[!UICONTROL 下一步]**。
 
 
-3. 在[!UICONTROL 无标题模式]屏幕中：
+1. 在 [!UICONTROL 命名和审核步骤] 的 [!UICONTROL 创建架构] 向导：
 
-   1. 输入模式的显示名称和（可选）描述。
+   1. 输入 **[!UICONTROL 架构显示名称]** （可选）a **[!UICONTROL 描述]**.
 
-      ![命名您的模式](./assets/name-schema.png)
+      ![命名您的模式](./assets/create-ee-schema-wizard-step-2.png)
 
-   2. 在[!UICONTROL 字段组]中选择&#x200B;**[!UICONTROL + 添加]**。
+   1. 选择&#x200B;**[!UICONTROL 完成]**。
+
+1. 在示例架构的结构选项卡中：
+
+   1. 在[!UICONTROL 字段组]中选择&#x200B;**[!UICONTROL + 添加]**。
 
       ![添加字段组](./assets/add-field-group-button.png)
 
       字段组是可重用的对象和属性集合，可让您轻松扩展模式。
 
-   3. 在 [!UICONTROL 添加字段组] 对话框，选择 **[!UICONTROL 闪光灯]** 列表中的字段组。 创建此字段组是为了跟踪用户在主机上玩名为Blinding Light的虚构游戏的进度。
+   1. 在 [!UICONTROL 添加字段组] 对话框，选择 **[!UICONTROL 闪光灯]** 列表中的字段组。 创建此字段组是为了跟踪用户在主机上玩名为Blinding Light的虚构游戏的进度。
 
       ![照明灯字段组](assets/schema-fieldgroup-blindinglight.png)
 
@@ -83,13 +91,13 @@ ht-degree: 62%
 
       选择&#x200B;**[!UICONTROL 返回]**&#x200B;关闭预览。
 
-   4. 选择&#x200B;**[!UICONTROL 添加字段组]**。
+   1. 选择&#x200B;**[!UICONTROL 添加字段组]**。
 
-4. 选择 **[!UICONTROL +]** 位于您的架构名称旁边。
+1. 选择 **[!UICONTROL +]** 位于您的架构名称旁边。
 
    ![示例模式添加字段按钮](./assets/example-gamingschema-plus.png)
 
-5. 在 [!UICONTROL 字段属性] 面板，输入 `identification` 作为 [!UICONTROL 字段名称]， **[!UICONTROL 标识]** 作为 [!UICONTROL 显示名称]，选择 **[!UICONTROL 对象]** 作为 [!UICONTROL 类型] 并选择 **[!UICONTROL ExperienceEvent Core v2.1]** 作为 [!UICONTROL 字段组].
+1. 在 [!UICONTROL 字段属性] 面板，输入 `identification` 作为 [!UICONTROL 字段名称]， **[!UICONTROL 标识]** 作为 [!UICONTROL 显示名称]，选择 **[!UICONTROL 对象]** 作为 [!UICONTROL 类型] 并选择 **[!UICONTROL ExperienceEvent Core v2.1]** 作为 [!UICONTROL 字段组].
 
    ![识别对象](./assets/identification-field-gaming.png)
 
@@ -97,7 +105,7 @@ ht-degree: 62%
 
    选择&#x200B;**[!UICONTROL 应用]**&#x200B;将此对象添加到您的模式中。
 
-6. 选择刚刚添加的标识对象中的&#x200B;**[!UICONTROL ecid]**&#x200B;字段，选择&#x200B;**[!UICONTROL 标识]**&#x200B;和&#x200B;**[!UICONTROL 主要标识]** 和 **[!UICONTROL ECID]** 来自右侧面板中的 [!UICONTROL 标识命名空间] 列表。
+1. 选择刚刚添加的标识对象中的&#x200B;**[!UICONTROL ecid]**&#x200B;字段，选择&#x200B;**[!UICONTROL 标识]**&#x200B;和&#x200B;**[!UICONTROL 主要标识]** 和 **[!UICONTROL ECID]** 来自右侧面板中的 [!UICONTROL 标识命名空间] 列表。
 
    ![指定 ECID 作为身份](./assets/specify-identity-gaming.png)
 
@@ -105,7 +113,7 @@ ht-degree: 62%
 
    选择 **[!UICONTROL 应用]**。您会看到 ecid 属性中出现指纹图标。
 
-7. 选择刚刚添加的标识对象中的&#x200B;**[!UICONTROL 邮件]**&#x200B;字段，选择&#x200B;**[!UICONTROL 标识]**&#x200B;和&#x200B;**[!UICONTROL 邮件]** 和 [!UICONTROL 标识命名空间] 列表中的 [!UICONTROL 字段属性] 面板。
+1. 选择刚刚添加的标识对象中的&#x200B;**[!UICONTROL 邮件]**&#x200B;字段，选择&#x200B;**[!UICONTROL 标识]**&#x200B;和&#x200B;**[!UICONTROL 邮件]** 和 [!UICONTROL 标识命名空间] 列表中的 [!UICONTROL 字段属性] 面板。
 
     ![将电子邮件指定为标识](./assets/specify-email-identity-gaming.png)
 
@@ -115,7 +123,7 @@ ht-degree: 62%
 
    选择&#x200B;**[!UICONTROL 保存]**。
 
-8. 选择显示模式名称的模式的根元素，然后选择 **[!UICONTROL 配置文件]** 开关。
+1. 选择显示模式名称的模式的根元素，然后选择 **[!UICONTROL 配置文件]** 开关。
 
    系统会提示您启用配置文件的模式。一旦启用，当数据被引入基于此模式的数据集中时，该数据将合并到实时客户配置文件。
 
@@ -127,7 +135,7 @@ ht-degree: 62%
 
    ![为配置文件启用模式](./assets/enable-for-profile.png)
 
-9. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存模式。
+1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存模式。
 
 您创建了一个最小架构，用于模拟您可以从游戏中捕获的数据。 该模式允许使用 Experience Cloud Identity 和电子邮件地址来识别配置文件。通过启用配置文件的架构，您可以确保将从控制台游戏中捕获的数据添加到实时客户配置文件中。
 

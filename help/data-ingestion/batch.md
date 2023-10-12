@@ -4,10 +4,10 @@ description: 解释如何在 Customer Journey Analytics 中获取和使用批处
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
-source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
+source-git-commit: 7ed28afa9d98a581e2d648dcfb438f960900f602
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 91%
+source-wordcount: '1977'
+ht-degree: 87%
 
 ---
 
@@ -47,28 +47,35 @@ ht-degree: 91%
 
 1. 在 Adobe Experience Platform UI 的左边栏中，选择[!UICONTROL 数据管理]中的&#x200B;**[!UICONTROL 模式]**。
 
-2. 选择&#x200B;**[!UICONTROL 创建模式]**。从选项列表中选择 **[!UICONTROL XDM 个人资料]**。
+1. 选择 **[!UICONTROL 创建架构]**..
+1. 在“创建架构”向导的“选择类”步骤中，选择 **[!UICONTROL 个人资料]**.
 
-   ![创建模式](./assets/create-schema.png)
+   ![创建模式](./assets/create-pr-schema-wizard-step-1.png)
 
    >[!INFO]
    >
-   >    个人配置档案模式用于对个人配置档案&#x200B;_属性_（如电子邮件、忠诚度状态、忠诚度积分）建模。Experience Event 模式用于对配置文件的&#x200B;_行为_&#x200B;建模（如页面查看、添加到购物车）。
+   >    Experience Event架构用于为 _行为_ 配置文件（如场景名称、要添加到购物车的按钮）的。 个人配置档案模式用于对个人配置档案&#x200B;_属性_（如姓名、电子邮件、性别）建模。
+
+   选择&#x200B;**[!UICONTROL 下一步]**。
 
 
-3. 在[!UICONTROL 无标题模式]屏幕中：
+1. 在 [!UICONTROL 命名和审核步骤] 的 [!UICONTROL 创建架构] 向导：
 
-   1. 输入模式的显示名称和（可选）描述。
+   1. 输入 **[!UICONTROL 架构显示名称]** （可选）a **[!UICONTROL 描述]**.
 
-      ![命名您的模式](./assets/name-loyalty-schema.png)
+      ![命名您的模式](./assets/create-pr-schema-wizard-step-2.png)
 
-   2. 在[!UICONTROL 字段组]中选择&#x200B;**[!UICONTROL + 添加]**。
+   1. 选择&#x200B;**[!UICONTROL 完成]**。
+
+1. 在示例架构的结构选项卡中：
+
+   1. 在[!UICONTROL 字段组]中选择&#x200B;**[!UICONTROL + 添加]**。
 
       ![添加字段组](./assets/add-field-group-button.png)
 
       字段组是可重用的对象和属性集合，可让您轻松扩展模式。
 
-   3. 在[!UICONTROL 添加字段组]对话框中，从列表中选择 **[!UICONTROL 忠诚度详细信息]** 字段组。
+   1. 在[!UICONTROL 添加字段组]对话框中，从列表中选择 **[!UICONTROL 忠诚度详细信息]** 字段组。
 
       ![AEP Web SDK ExperienceEvent 字段组](./assets/loyalty-fieldgroup.png)
 
@@ -78,13 +85,13 @@ ht-degree: 91%
 
       选择&#x200B;**[!UICONTROL 返回]**&#x200B;关闭预览。
 
-   4. 选择&#x200B;**[!UICONTROL 添加字段组]**。
+   1. 选择&#x200B;**[!UICONTROL 添加字段组]**。
 
-4. 在[!UICONTROL 结构]面板中选择模式名称旁边的 **[!UICONTROL +]**。
+1. 在[!UICONTROL 结构]面板中选择模式名称旁边的 **[!UICONTROL +]**。
 
    ![示例模式添加字段按钮](./assets/example-loalty-schema-plus.png)
 
-5. 在[!UICONTROL 字段属性]面板中，输入`Identification`作为名称，**[!UICONTROL 识别]**&#x200B;作为[!UICONTROL 显示名称]，选择&#x200B;**[!UICONTROL 对象]**&#x200B;作为[!UICONTROL 类型]和选择&#x200B;**[!UICONTROL 配置核心文件 v2]**&#x200B;作为[!UICONTROL 字段组]。
+1. 在[!UICONTROL 字段属性]面板中，输入`Identification`作为名称，**[!UICONTROL 识别]**&#x200B;作为[!UICONTROL 显示名称]，选择&#x200B;**[!UICONTROL 对象]**&#x200B;作为[!UICONTROL 类型]和选择&#x200B;**[!UICONTROL 配置核心文件 v2]**&#x200B;作为[!UICONTROL 字段组]。
 
    ![识别对象](./assets/identifcation-loyalty-field.png)
 
@@ -92,7 +99,7 @@ ht-degree: 91%
 
    选择 **[!UICONTROL 应用]** 将此对象添加到您的模式中。
 
-6. 选择刚刚添加的标识对象中的&#x200B;**[!UICONTROL 邮件]**&#x200B;字段，选择&#x200B;**[!UICONTROL 标识]**&#x200B;和&#x200B;**[!UICONTROL 邮件]**&#x200B;和[!UICONTROL 标识命名空间]中的[!UICONTROL 字段属性]面板。
+1. 选择刚刚添加的标识对象中的&#x200B;**[!UICONTROL 邮件]**&#x200B;字段，选择&#x200B;**[!UICONTROL 标识]**&#x200B;和&#x200B;**[!UICONTROL 邮件]**&#x200B;和[!UICONTROL 标识命名空间]中的[!UICONTROL 字段属性]面板。
 
     ![将电子邮件指定为标识](./assets/specify-email-loyalty-id.png)
 
@@ -102,7 +109,7 @@ ht-degree: 91%
 
    选择&#x200B;**[!UICONTROL 保存]**。
 
-7. 选择模式的根级别（使用模式名称），然后选择 **[!UICONTROL 配置]**&#x200B;开关。
+1. 选择模式的根级别（使用模式名称），然后选择 **[!UICONTROL 配置]**&#x200B;开关。
 
    系统会提示您启用配置文件的模式。一旦启用，当数据被引入基于此模式的数据集中时，该数据将合并到实时客户配置文件。
 
@@ -114,7 +121,7 @@ ht-degree: 91%
 
    ![为配置文件启用模式](./assets/enable-for-profile.png)
 
-8. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存模式。
+1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存模式。
 
 您已经创建了一个最小的模式，它可以对可以引入 Adobe Experience Platform 的忠诚度数据进行建模。该模式允许使用电子邮件地址标识配置文件。通过为概要文件启用模式，可以确保批处理文件中的数据添加到实时客户配置文件中。
 
