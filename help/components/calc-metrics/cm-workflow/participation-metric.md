@@ -3,9 +3,9 @@ description: 借助计算量度生成器，任何人都可以创建参与量度�
 title: 参与率量度
 feature: Calculated Metrics
 exl-id: 0d102f0f-3bcc-4f3a-93d2-c2b991c636cb
-source-git-commit: 6a9cae93011447fff0f74ca4ae15178e0a1f36aa
+source-git-commit: e7019722871dfac60408748aa183ca6d76f4993a
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '274'
 ht-degree: 6%
 
 ---
@@ -18,12 +18,12 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->具有其他归因模型（例如参与率）的量度也可以由管理员作为的一部分创建。 [数据视图](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html). 以下示例显示了任何有权访问工作区中的计算量度生成器的用户可怎样创建这些量度。
+>具有其他归因模型（例如参与率）的量度也可以由管理员作为的一部分创建。 [数据视图](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html). 请参阅 [归因组件设置](../../../data-views/component-settings/attribution.md) 以了解更多详细信息。<br/>以下示例显示了如何由任何有权访问工作区中的计算量度生成器的用户创建参与率量度。
 
 
 1. 开始构建量度，如中所述 [生成量度](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
-1. 在计算量度生成器中，将量度命名为“参与率”或类似名称。
-1. 将包含成功事件的量度（例如“订单”）拖到“定义”画布中。
+1. 在计算量度生成器中，命名该量度 `Participation` 或者类似的东西。
+1. 例如，拖动包含成功事件的量度 [!DNL Orders]，进入 [!UICONTROL 定义] 画布。
 1. 选择 ![齿轮](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) 对于量度。
 1. 在显示的弹出窗口中，选择 **[!UICONTROL 使用非默认归因模型]** 以定义 [归因模型](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) ，结束该事件 **[!UICONTROL 参与率]** 并选择 **[!UICONTROL 会话]** 对于 [!UICONTROL 回看窗口期]. 选择 **[!UICONTROL 应用]** 以确认。
 
