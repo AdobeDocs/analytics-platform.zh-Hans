@@ -9,7 +9,7 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 82e0fbb714852750963e08597b6b1606127e0ac6
+source-git-commit: 6a9cae93011447fff0f74ca4ae15178e0a1f36aa
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 82%
@@ -245,7 +245,7 @@ ht-degree: 82%
          + [查找量度](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [生成指标](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [指标类型和归因](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-         + [生成“参与率”指标](../components/calc-metrics/cm-workflow/participation-metric.md)
+         + [构建参与率量度](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [过滤指标](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [堆叠和替换过滤器](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [过滤和加权指标](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
