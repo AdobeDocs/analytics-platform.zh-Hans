@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: 配置云导出帐户
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: 02174836d246e6e7c4bf2056a69b8cfeb35ed981
+source-git-commit: 2828a38161222a5433b15045a70cb25cfbc8bae7
 workflow-type: tm+mt
-source-wordcount: '1783'
+source-wordcount: '1826'
 ht-degree: 4%
 
 ---
@@ -65,9 +65,9 @@ ht-degree: 4%
 
    ![导出帐户对话框AEP数据登陆区](assets/export-account-aep.png)
 
-1. 复制 [!UICONTROL **SAS URI**] 字段到剪贴板。
+1. 复制 [!UICONTROL **SAS URI**] 字段到剪贴板。 您将使用此SAS URI访问从Analysis Workspace从AEP数据登陆区导出的数据。
 
-   您将使用此SAS URI访问从Analysis Workspace从AEP数据登陆区导出的数据。
+   如果此字段为空，您需要被授予访问Adobe Experience Platform的权限。
 
 1. 在Adobe Experience Platform中，配置数据登陆区容器以使用您复制的SAS URI。
 
@@ -82,6 +82,11 @@ ht-degree: 4%
       您可以跳过一节中介绍的任务 [检索数据登录区的凭据](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#retrieve-dlz-credentials) 和 [更新数据登陆区域凭据](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#update-dlz-credentials)，因为您复制的URI包含这些凭据。
 
    1. 在遵循Adobe Experience Platform文档操作期间，您会 [!UICONTROL **Blob容器SAS URL**] 字段中，粘贴您在步骤3中复制的SAS URI。
+
+      >[!NOTE]
+      >
+      >您需要每7天执行一次此操作，因为SAS URI在创建后7天过期。 您可以创建一个脚本来自动执行此过程。
+
 
       ![SAS URL字段](assets/blob-container-sas-uri.png)
 
