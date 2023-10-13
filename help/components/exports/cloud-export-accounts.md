@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: 配置云导出帐户
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
+source-git-commit: 02174836d246e6e7c4bf2056a69b8cfeb35ed981
 workflow-type: tm+mt
-source-wordcount: '1573'
-ht-degree: 5%
+source-wordcount: '1783'
+ht-degree: 4%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 5%
 
 1. 继续下面的对应章节 [!UICONTROL **帐户类型**] 您已选择。
 
-   * [AEP数据登陆区](#adobe-experience-platform)
+   * [AEP 数据登陆区](#adobe-experience-platform)
 
    * [Amazon S3 Role ARN](#amazon-s3-role-arn)
 
@@ -51,7 +51,7 @@ ht-degree: 5%
 
    * [Snowflake](#snowflake)
 
-### AEP数据登陆区
+### AEP 数据登陆区
 
 >[!IMPORTANT]
 >
@@ -65,9 +65,31 @@ ht-degree: 5%
 
    ![导出帐户对话框AEP数据登陆区](assets/export-account-aep.png)
 
-1. 复制 [!UICONTROL **SAS URI**] 字段到剪贴板。 使用此SAS URI可访问从Analysis Workspace从AEP登陆区导出的数据。
+1. 复制 [!UICONTROL **SAS URI**] 字段到剪贴板。
 
-1. 选择 [!UICONTROL **确定**].
+   您将使用此SAS URI访问从Analysis Workspace从AEP数据登陆区导出的数据。
+
+1. 在Adobe Experience Platform中，配置数据登陆区容器以使用您复制的SAS URI。
+
+   >[!NOTE]
+   >
+   >由于AEP数据登陆区域帐户基于Azure，因此访问导出到AEP数据登陆区域的报告的最简单方法是使用Azure存储资源管理器。 以下步骤使用此方法。
+
+   1. 如果您还没有这样的文件，请下载 [Microsoft Azure存储资源管理器](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
+
+   1. 在Adobe Experience Platform文档中，遵循中所述的步骤 [将数据登陆区域容器连接到Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#connect-your-data-landing-zone-container-to-azure-storage-explorer).
+
+      您可以跳过一节中介绍的任务 [检索数据登录区的凭据](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#retrieve-dlz-credentials) 和 [更新数据登陆区域凭据](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#update-dlz-credentials)，因为您复制的URI包含这些凭据。
+
+   1. 在遵循Adobe Experience Platform文档操作期间，您会 [!UICONTROL **Blob容器SAS URL**] 字段中，粘贴您在步骤3中复制的SAS URI。
+
+      ![SAS URL字段](assets/blob-container-sas-uri.png)
+
+   1. 选择 [!UICONTROL **下一个**] > [!UICONTROL **连接**].
+
+1. 在Customer Journey Analytics中，在 [!UICONTROL **已创建导出帐户**] 对话框，选择 [!UICONTROL **确定**].
+
+   ![导出帐户对话框AEP数据登陆区](assets/export-account-aep.png)
 
 1. 继续 [配置云导出位置](/help/components/exports/cloud-export-locations.md).
 

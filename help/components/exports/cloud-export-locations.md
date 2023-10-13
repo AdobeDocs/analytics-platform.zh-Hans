@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: 配置云导出位置
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 3c1e256bb2197ed844d699e4a28076b014566b99
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1497'
 ht-degree: 4%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 4%
 
    继续下面的部分，该部分与您在 [!UICONTROL **位置帐户**] 字段。
 
-### AEP数据登陆区
+### AEP 数据登陆区
 
 >[!IMPORTANT]
 >
@@ -66,6 +66,21 @@ ht-degree: 4%
 1. 选择&#x200B;[!UICONTROL **保存**]。
 
 1. 您现在可以将数据从Analysis Workspace导出到您配置的帐户和位置。 有关如何将数据导出到云的信息，请参阅 [将项目数据导出到云](/help/analysis-workspace/export/export-cloud.md).
+
+1. 在AEP数据登录区中访问数据的最简单方法是使用Microsoft Azure Storage Explorer。 此工具与配置 [AEP数据登陆区帐户](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone).
+
+   1. 打开 [Microsoft Azure存储资源管理器](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
+
+   1. 转到 [!UICONTROL **存储帐户**] > [!UICONTROL **（附加的容器）**] > [!UICONTROL **Blob容器**] > **[!UICONTROL cjaexport-_数字_]**>*** your_container_name ***.
+
+      >[!NOTE]
+      >
+      >文件夹名称 **[!UICONTROL cjaexport-_数字_]**是Azure存储资源管理器提供的默认名称。 如果您只有与SAS URI关联的单个连接（正常），则此文件夹的名称将为&#x200B;**[!UICONTROL cjaexport-1]**.
+
+
+      ![访问Azure存储资源管理器中的文件](assets/azure-storage-explorer-access.png)
+
+   1. 选择要下载的导出，然后选择 [!UICONTROL **下载**] 下载。
 
 ### Amazon S3 Role ARN
 
