@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: 7b90ce212b6964fde6bdf2d47b2c751330e4f399
+source-git-commit: ec2778396f5090fb2ce71a991aa7a7bcaa913762
 workflow-type: tm+mt
 source-wordcount: '1822'
 ht-degree: 15%
@@ -300,9 +300,9 @@ The B2B Marketing List Member dataset contains member of marketing lists.
 
 通过正确定义的组件，您现在可以在工作区项目中构建特定的B2B可视化图表。
 
-以下是依赖于上述连接和数据视图的示例Workspace项目。 有关更多详细信息，请参阅每个可视化图表的描述。
+以下是依赖于上述连接和数据视图的示例项目。 有关更多详细信息，请参阅每个可视化图表的描述。
 
-+++ 项目
++++ 示例项目
 
 ![可视化图表](assets/visualizations.png)
 
