@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: d2bb21939f861d83b6c306ac548e4fb35cbd19a4
+source-git-commit: 980afb6d8344c04b431c596d39a8f0003b7201ba
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1822'
 ht-degree: 15%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 15%
 
 要在构建工作区项目时访问相关的B2B维度和量度，您必须相应地定义数据视图。
 
-本节提供了有关在定义 [组件](../../data-views/create-dataview.md#components) 的页面。
+本节提供了有关在定义 [组件](../../data-views/create-dataview.md#components) 数据视图中的B2B数据集。
 
 为每个组件提供了名称、架构类型、架构路径，以及有关配置的详细信息（如果适用）。
 
