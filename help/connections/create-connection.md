@@ -4,10 +4,10 @@ description: 描述如何在 Customer Journey Analytics 中创建与 Platform �
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: cc12f77d3a0cb9b27a5d0c6a92c35faf2b6e6e35
-workflow-type: ht
-source-wordcount: '2630'
-ht-degree: 100%
+source-git-commit: c4a4dcd0e4c0d7473570c2db3aa3d99e34c2a1cf
+workflow-type: tm+mt
+source-wordcount: '2797'
+ht-degree: 93%
 
 ---
 
@@ -60,9 +60,15 @@ ht-degree: 100%
 
 新的工作流允许您在创建连接时添加 Experience Platform 数据集。
 
-1. 在连接设置对话框中，单击&#x200B;**[!UICONTROL 添加数据集]**。
+1. 在连接设置对话框中，选择 **[!UICONTROL 添加数据集]**.
 
-2. 选择一个或多个数据集并单击&#x200B;**[!UICONTROL 下一个]**。连接中必须至少包含一个事件数据集。
+2. 在 [!UICONTROL 选择数据集] 步骤，选择一个或多个数据集并选择 **[!UICONTROL 下一个]**. 连接中必须至少包含一个事件数据集。
+   * 要更改为数据集列表显示的列，请选择 ![列设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) 并选择要显示在 [!UICONTROL 自定义表] 对话框。
+   * 要搜索特定数据集，请使用 ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) 搜索字段。
+   * 要在显示或隐藏选定数据集之间切换，请选择 ![选择](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg) **[!UICONTROL 隐藏选定项]** 或 **[!UICONTROL 显示选定项]**.
+   * 要从选定数据集的列表中移除数据集，请使用 ![关闭](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). 要删除所有选定的数据集，请选择 **[!UICONTROL 全部清除]**.
+
+   ![选择数据集](assets/select-datasets.png)
 
 3. 现在逐一配置数据集。
 
@@ -70,8 +76,10 @@ ht-degree: 100%
 
    | 设置 | 描述 |
    | --- | --- |
-   | **[!UICONTROL 人员 ID]** | 从可用标识的下拉列表中选择个人 ID。这些标识已在 Experience Platform 的数据集架构中定义。有关如何将标识映射用作人员 ID 的信息，请参见下文。<p>如果没有可供选择的人员 ID，则意味着架构中尚未定义一个或多个人员 ID。请查看这个视频，以了解如何在 Experience Platform 中定义标识。 |
+   | **[!UICONTROL 人员 ID]** | 仅适用于事件和配置文件数据集。 从可用标识的下拉列表中选择个人 ID。这些标识已在 Experience Platform 的数据集架构中定义。有关如何将标识映射用作人员 ID 的信息，请参见下文。<p>如果没有可供选择的人员 ID，则意味着架构中尚未定义一个或多个人员 ID。请查看这个视频，以了解如何在 Experience Platform 中定义标识。 |
    | **[!UICONTROL 时间戳]** | 仅对于事件数据集，此设置会自动设置为 Experience Platform 中基于事件的架构的默认时间戳字段。 |
+   | **[!UICONTROL 键]** | 仅适用于查找数据集。 用于查找数据集的键。 |
+   | **[!UICONTROL 匹配键]** | 仅适用于查找数据集。 要在某个事件数据集中联接的匹配键。 如果此列表为空，则可能尚未添加或配置事件数据集。 |
    | **[!UICONTROL 数据源类型]** | 选择数据源类型。<br/>数据源的类型包括： <ul><li>[!UICONTROL Web 数据]</li><li>[!UICONTROL 移动应用程序数据]</li><li>[!UICONTROL POS 数据]</li><li>[!UICONTROL CRM 数据]</li><li>[!UICONTROL 调查数据]</li><li>[!UICONTROL 呼叫中心数据]</li><li>[!UICONTROL 产品数据]</li><li> [!UICONTROL 帐户数据]</li><li> [!UICONTROL 事务数据]</li><li>[!UICONTROL 客户反馈数据]</li><li> [!UICONTROL 其他]</li></ul>该字段用于调查正在使用的数据源的类型。 |
    | **[!UICONTROL 导入新数据]** | 如果要创建持续连接，请选择此选项，以便要添加到此连接中数据集的任何新数据批次会自动流入工作区中。可以设置为[!UICONTROL 开]或[!UICONTROL 关。] |
    | **[!UICONTROL 数据集回填]** | 选择&#x200B;**[!UICONTROL 请求回填]**，以回填历史数据。<ul><li>您可以单独回填每个数据集。</li><li>您会优先处理新添加到此连接中数据集的新数据，因此这些新数据的滞后时间最短。</li><li>任何回填（历史）数据的导入速度都会比较慢。延迟受您拥有多少历史数据的影响。</li><li>Analytics Source Connector 会为生产沙盒导入最多 13 个月的数据（无论大小）。非生产沙盒的回填期限为 3 个月。</li></ul> |
@@ -81,7 +89,7 @@ ht-degree: 100%
    | **[!UICONTROL 数据集大小]** | 数据集的大小。 |
    | **[!UICONTROL 架构]** | 在 Adobe Experience Platform 中创建数据集所依据的架构。 |
    | **[!UICONTROL 数据集]** | 数据集的名称。 |
-   | **[!UICONTROL 预览]**: `<dataset name>` | 使用日期、我的 ID 和标识符列预览数据集。 |
+   | **[!UICONTROL 预览： *数据集名称&#x200B;*]** | 使用日期、我的 ID 和标识符列预览数据集。 |
    | **[!UICONTROL 删除]** | 您可以删除或移除数据集并更改人员 ID 而不删除整个连接。删除或移除会降低数据引入以及重新创建整个连接和相关数据视图这一繁琐过程所涉及的成本。 |
 
    {style="table-layout:auto"}

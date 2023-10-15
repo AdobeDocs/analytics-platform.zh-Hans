@@ -3,7 +3,7 @@ title: 报表活动管理器概述
 description: 了解如何使用报告活动管理器诊断和修复在报告高峰期出现的容量问题。
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 23509d26e08b50a6b7a133fdc9a3e2d2d3e8fe43
+source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 34%
@@ -29,6 +29,8 @@ ht-degree: 34%
 * 允许您将未来请求限制在指定的时间段。 您可以限制特定请求，也可以限制来自特定用户的所有请求或与特定项目关联的请求。
 
 ## 权限
+
+<!-- update for CJA -->
 
 要管理报表活动，您必须在Adobe Admin Console中具有Analytics产品管理员权限。
 

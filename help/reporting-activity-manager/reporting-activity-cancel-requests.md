@@ -3,7 +3,7 @@ title: 在报告活动管理器中取消报告请求
 description: 了解如何使用报告活动管理器诊断和修复在报告高峰期出现的容量问题。
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 23509d26e08b50a6b7a133fdc9a3e2d2d3e8fe43
+source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 7%
@@ -132,6 +132,8 @@ ht-degree: 7%
    Analysis Workspace中会显示通知，告知用户请求已被取消。 有关这如何在Analysis Workspace中显示的更多信息，请参阅 [用户访问已取消报告时的体验](#experience-when-users-access-a-cancelled-report).
 
 ## 用户访问已取消报告时的体验
+
+<!-- Update for CJA and AA -->
 
 在Analysis Workspace中，当用户尝试访问管理员已取消的报告时，会看到以下消息：
 

@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
+source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
 workflow-type: tm+mt
-source-wordcount: '2686'
-ht-degree: 99%
+source-wordcount: '2894'
+ht-degree: 96%
 
 ---
 
@@ -20,6 +20,9 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2023 年 10 月** | |
+| 将全表导出到云 | 添加了有关将包含数百万个Workspace行的完整表导出到云目标的文档。 <p>导出全表可一次性或按计划投放在 Workspace 中设计的数据表，其中支持最多五个细分、五个量度、过滤器和计算量度，所有这些都在一个连接在一起的表中。它从 Adobe Analytics 中的 Data Warehouse 报告演化而来，具有许多当今在 Data Warehouse 中不提供但经常有人要求提供的新功能。</p><p>有关详细信息，请参阅[将 Customer Journey Analytics 报告导出到云](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html)。 | 2023 年 10 月 4 日 |
+| 报告活动管理器 | 添加了有关报告活动管理器的文档。 <p>通过报告活动管理器，可查看组织中每个连接的报告容量。通过它，管理员可详细了解报告消耗情况，从而轻松地诊断和修复在报告高峰期出现的容量问题。</p> <p>添加了以下新文章：<ul><li>[报表活动管理器概述](/help/reporting-activity-manager/reporting-activity-overview.md)</li><li>[在报告活动管理器中查看报告活动](/help/reporting-activity-manager/reporting-activity.md)</li><li>[在报告活动管理器中取消请求](/help/reporting-activity-manager/reporting-activity-cancel-requests.md)</ul> |
+| 管理页面上的新列 | 记录新列，这些列现在位于 [计算量度管理器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html) 和 [筛选器管理器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html). |
 | 与 Adobe Analytics 进行比较 | 添加了 [“概述”页面](../getting-started/aa-vs-cja/overview.md) 作为比较和了解Customer Journey Analytics与Adobe Analytics之间差异的简介。 |
 | 附加派生字段功能 | 更新了新文档 [`Lookup`](/help/data-views/derived-fields/derived-fields.md#lookup) 函数。 |
 | **2023 年 9 月** | |
