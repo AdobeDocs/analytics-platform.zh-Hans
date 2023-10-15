@@ -1,17 +1,17 @@
 ---
-title: (B2B) 将帐户级别的数据作为查询数据集进行添加
+title: 将帐户级别的数据作为查询数据集进行添加
 description: 了解如何将基于帐户的数据作为查询数据集添加到Customer Journey Analytics
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 647257322dc4b7e64e0e17fbfde27f626b1012a1
+source-git-commit: d2bb21939f861d83b6c306ac548e4fb35cbd19a4
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '817'
 ht-degree: 74%
 
 ---
 
-# (B2B) 将帐户级别的数据作为查询数据集进行添加
+# 将帐户级别的数据作为查询数据集进行添加
 
 此 B2B 用例将向您展示如何指定帐户级别（而非个人级别）的数据来进行分析。帐户级别的数据分析可以回答以下问题：
 
