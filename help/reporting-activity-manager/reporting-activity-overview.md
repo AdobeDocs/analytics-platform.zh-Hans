@@ -3,10 +3,10 @@ title: 报表活动管理器概述
 description: 了解如何使用报告活动管理器诊断和修复在报告高峰期出现的容量问题。
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
+source-git-commit: c6896187173c70eedb370d0b4670640bab1d8827
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 34%
+source-wordcount: '289'
+ht-degree: 29%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 34%
 
 * 允许您监控和管理组织中每个连接的报告容量。
 * 实时通知您当前在各个连接上的报告容量。
-* 提供关于当前已排队或正在进行的报告请求的详细报告查询信息。
+* 提供关于当前已排队或正在进行的报告请求的详细报告信息。
 * 让您通过优先处理某些报告请求并取消其他报告请求以释放容量，从而优化报告队列。它回答的问题如：此时是否需要这个报告，或者能否取消它以用于更紧急的报告？
 * 允许您将未来请求限制在指定的时间段。 您可以限制特定请求，也可以限制来自特定用户的所有请求或与特定项目关联的请求。
 
