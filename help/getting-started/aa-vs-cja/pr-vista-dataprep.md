@@ -1,16 +1,16 @@
 ---
-title: 处理规则、VISTA和分类与Analytics Source Connector的数据准备
-description: 了解使用处理规则和 VISTA 与通过准备数据来进行数据转换的异同
+title: Analytics Source Connector 的处理规则、VISTA 和分类与数据准备
+description: 了解使用处理规则和 VISTA 与通过数据准备进行数据转换的区别
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 feature: Basics
 source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '619'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# 处理规则、VISTA和分类与数据准备
+# 处理规则、VISTA 和分类与数据准备
 
 Adobe Analytics [处理规则和 VISTA 规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/processing-rule-order.html?lang=zh-Hans)提供了转换和操作传递到 Adobe Analytics [数据收集](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=zh-Hans)中的数据的方法。在将数据存储在 Adobe Analytics 中用于报告和分析之前，这些转换是 Adobe 数据处理的一部分。
 
