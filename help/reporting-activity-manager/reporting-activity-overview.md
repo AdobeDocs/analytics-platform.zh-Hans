@@ -3,10 +3,10 @@ title: 报表活动管理器概述
 description: 了解如何使用报告活动管理器诊断和修复在报告高峰期出现的容量问题。
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: c6896187173c70eedb370d0b4670640bab1d8827
+source-git-commit: cdbe7953fca701d1791c74ec7fb7f6ff9fa40801
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 29%
+source-wordcount: '276'
+ht-degree: 23%
 
 ---
 
@@ -32,9 +32,7 @@ ht-degree: 29%
 
 <!-- update for CJA -->
 
-要管理报表活动，您必须在Adobe Admin Console中具有Analytics产品管理员权限。
-
-![权限](assets/rep-mgr-permission.png)
+要管理报告活动，您必须具有产品管理员角色。 有关更多信息，请参阅 [产品管理员角色](/help/admin/cja-access-control.md#product-admin-role) 在 [Customer Journey Analytics访问控制](/help/admin/cja-access-control.md).
 
 ## 查看报告活动
 
@@ -43,11 +41,3 @@ ht-degree: 29%
 ## 取消报告请求
 
 有关在报告活动管理器中取消报告请求的信息，请参阅 [在报告活动管理器中取消报告请求](/help/reporting-activity-manager/reporting-activity-cancel-requests.md).
-
-## 常见问题解答 {#faq}
-
-| 问题 | 回答 |
-| --- | --- |
-| 我可以购买额外的报告容量吗？ | 此功能将在不久的将来提供。 |
-
-{style="table-layout:auto"}

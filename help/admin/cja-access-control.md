@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: d5a46c4ffbacb0e05a637ee9e19875572a2aebf4
+source-git-commit: cdbe7953fca701d1791c74ec7fb7f6ff9fa40801
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '956'
 ht-degree: 82%
 
 ---
@@ -25,6 +25,7 @@ Customer Journey Analytics由三个访问级别或三个角色管理：产品管
 * 创建/更新/删除连接或数据视图
 * 更新/删除项目、过滤器、计算量度、受众、批注或其他用户创建的过滤器
 * 将工作区项目共享给所有用户
+* 在中管理报告活动 [报告活动管理器](/help/reporting-activity-manager/reporting-activity-overview.md)
 
 仅在 Customer Journey Analytics 中担任产品管理员不足以创建、更新或删除[连接](/help/connections/overview.md)。 要创建与 Experience Platform 数据集的连接，您还需要取得 Experience Platform 权限。具体而言，您必须属于授予您以下权限的 **Experience Platform 产品用户档案**：
 

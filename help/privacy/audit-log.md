@@ -3,9 +3,9 @@ title: 审核日志
 description: 了解如何查看和管理Customer Journey Analytics审核日志。
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: dcfc960019b1dbd1b0306f4a0f07d113ae3f1312
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '807'
 ht-degree: 67%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 67%
 
 从基本意义上讲，审核日志将说明&#x200B;**谁**&#x200B;执行了&#x200B;**什么**&#x200B;操作，以及在&#x200B;**什么时候**&#x200B;执行的。日志中记录的每个操作都包含元数据，这些元数据可指示操作类型、日期和时间、执行操作的用户的电子邮件 ID 以及与操作类型相关的其他属性。
 
-本主题介绍Customer Journey Analytics中的审核日志，包括如何在UI中查看和管理它们。
+本主题涵盖Customer Journey Analytics中的审核日志，包括如何在UI中查看和管理它们。
 
 ## 访问审核日志
 
 为您的组织启用该功能后，系统会在活动发生时自动收集审核日志。您无需手动启用日志收集。
 
-要查看和导出审核日志，您必须已在 Audit Logs Access 中获得&#x200B;**[!UICONTROL 审核日志访问]**&#x200B;访问控制权限。要了解如何管理Customer Journey Analytics功能的各个权限，请参阅 [访问控制文档](../admin/cja-access-control.md).
+要查看和导出审核日志，您必须已在 Audit Logs Access 中获得&#x200B;**[!UICONTROL 审核日志访问]**&#x200B;访问控制权限。要了解如何管理Customer Journey Analytics功能的各项权限，请参阅 [访问控制文档](../admin/cja-access-control.md).
 
 ## 在 UI 中查看审核日志
 
@@ -48,8 +48,9 @@ ht-degree: 67%
    * 创建
    * DELETE
    * 编辑
+   * 禁运
    * 导出
-   * 组织更改
+   * ORG_CHANGE
    * 刷新
    * 共享
    * 转移
@@ -59,10 +60,10 @@ ht-degree: 67%
 * **[!UICONTROL 描述]**：操作摘要。
 * **[!UICONTROL 用户名]**：执行操作的用户。
 * **[!UICONTROL 电子邮件]**：执行操作的用户的电子邮件地址。
-* **[!UICONTROL 组件名称]**：用户对其执行操作的组件。
+* **[!UICONTROL 组件名称]**：用户执行操作的组件。
 * **[!UICONTROL 组件类型]**：组件的类型。 可能的值包括：
    * 注释
-   * AUDIENCE
+   * 受众
    * CALCULATED_METRIC
    * 连接
    * 数据组
@@ -78,10 +79,10 @@ ht-degree: 67%
    * 计划项目
    * 用户
    * 用户组
-* **[!UICONTROL 组件Id]**：用户对其执行操作的组件的ID。
+* **[!UICONTROL 组件Id]**：用户执行操作的组件的ID。
 * **[!UICONTROL IMS组织ID]**：组织的IMS ID，采用格式 `ABC123@AdobeOrg`.
 * **[!UICONTROL 日志ID]**：标识此日志条目的唯一ID。
-* **[!UICONTROL 用户ID]**：标识执行操作的用户的唯一ID。
+* **[!UICONTROL 用户标识]**：标识执行操作的用户的唯一ID。
 * **[!UICONTROL 用户类型]**：使用的身份验证类型。 有效的值包括：
    * IMS
    * OKTA
@@ -137,4 +138,4 @@ ht-degree: 67%
 
 ## 在 API 中管理审核日志
 
-您在 UI 中可以执行的所有操作也可以使用 API 调用来完成。请参阅 [Customer Journey AnalyticsAPI参考文档](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) 了解更多信息。
+您在 UI 中可以执行的所有操作也可以使用 API 调用来完成。请参阅 [Customer Journey AnalyticsAPI参考文档](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) 以了解更多信息。
