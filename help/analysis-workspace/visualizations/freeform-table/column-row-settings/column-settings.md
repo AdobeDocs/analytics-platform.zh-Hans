@@ -3,10 +3,10 @@ description: 列设置允许您配置列格式，其中一些可以是条件格�
 title: 列设置
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
-source-git-commit: 1c5ea3f49d47ffd833404260e6c21bd1e64a2734
+source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 94%
+source-wordcount: '768'
+ht-degree: 84%
 
 ---
 
@@ -56,21 +56,17 @@ ht-degree: 94%
 
 允许您覆盖中设置的默认归因模型 [数据视图](/help/data-views/component-settings/attribution.md).
 
-<!--
-
 >[!NOTE]
 >
->Consider the following when updating a component's attribution to a non-default attribution model:
+>将组件的归因更新为非默认归因模型时，请考虑以下事项：
 >
->* **When using the component in a report with *a single dimension*:** The component's attribution ignores the allocation model when a non-default attribution model is used.
+>* **在报表中将组件与配合使用时 *单个维度*：** 当使用非默认归因模型时，组件的归因会忽略分配模型。
 >
->* **When using the component in a report with *multiple dimensions*:** The component's attribution retains the allocation model when a non-default attribution model is used.
+>* **在报表中将组件与配合使用时 *多个维度*：** 当使用非默认归因模型时，组件的归因将保留分配模型。
 >
->   Multiple dimensions are available only when [exporting data to the cloud](/help/analysis-workspace/export/export-cloud.md).
+>   仅当出现以下情况时，多个维度才可用 [将数据导出到云](/help/analysis-workspace/export/export-cloud.md).
 >
-> For more information about allocation, see [Persistence component settings](/help/data-views/component-settings/persistence.md).
-
--->
+> 有关分配的更多信息，请参阅 [持久性组件设置](/help/data-views/component-settings/persistence.md).
 
 要对Analysis Workspace中的量度使用非默认归因模型，请执行以下操作：
 

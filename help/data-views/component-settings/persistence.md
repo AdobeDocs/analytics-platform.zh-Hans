@@ -4,10 +4,10 @@ description: 决定维度值如何或是否从一个事件保持到下一个事�
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 1c5ea3f49d47ffd833404260e6c21bd1e64a2734
+source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 86%
+source-wordcount: '859'
+ht-degree: 81%
 
 ---
 
@@ -20,15 +20,11 @@ ht-degree: 86%
 
 * 通过&#x200B;**分配**，可决定一次可在单个列中保留多个维度项时保留哪个值。
 
-<!--
-
   >[!NOTE]
   >
-  >If you have a [non-default attribution model](/help/data-views/component-settings/attribution.md) set on a metric in a report, the attribution model ignores the allocation you set on the dimension for the same report.
+  >如果您拥有 [非默认归因模型](/help/data-views/component-settings/attribution.md) 如果在报表的量度上设置，则归因模型会忽略您为同一报表在维度上设置的分配。
   >
-  >However, when doing a [full table export](/help/analysis-workspace/export/export-cloud.md) that includes multiple dimensions, attribution retains the allocation models applied to each dimension.
-
--->
+  >但是，在执行 [完整表导出](/help/analysis-workspace/export/export-cloud.md) 归因包含多个维度，因此会保留应用于每个维度的分配模型。
 
 * 通过&#x200B;**到期**，可决定维度项在从中设置它的事件之外保持多久。
 

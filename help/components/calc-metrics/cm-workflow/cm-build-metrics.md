@@ -3,10 +3,10 @@ description: 计算量度生成器提供一个画布，可以将维度、量度�
 title: 生成指标
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 1c5ea3f49d47ffd833404260e6c21bd1e64a2734
+source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 65%
+source-wordcount: '1056'
+ht-degree: 61%
 
 ---
 
@@ -43,7 +43,7 @@ Customer Journey Analytics提供了一个画布以将维度、量度、筛选器
 | 预览 | 提供对可能存在的任何错误的快速阅览。预览涵盖过去 90 天的范围。这种方式可用于初步评估您是否为指标选择了正确的组件。出现意外结果表示您需要重新检查指标定义。 |
 | 产品兼容性 | 对于您在Customer Journey Analytics中创建的任何计算指标，此值始终列为 [!UICONTROL **完全处理的数据**]. 计算量度只能包含事件数据集中的数据。 |
 | 添加 | 对于所有类型的计算量度，您可以向定义中添加容器和静态数字。对于高级计算量度，您还可以添加筛选器和函数。<ul><li>容器的作用类似于数学表达式，它们决定着运算的顺序。因此，容器中的任何内容都将在下次运算前得到处理。</li><li>将过滤器拖动到容器上会过滤该容器中的所有内容。 （仅限高级计算指标）</li><li>您可以在一个容器中堆叠多个筛选器。</li></ul> |
-| 齿轮图标（量度类型、归因） | 通过选择量度旁边的齿轮图标，您可以指定量度类型和归因模型。 <!-- <p>**Note:** Consider the following when updating a component's attribution to a non-default attribution model:</p><ul><li>**When using the component in a report with *a single dimension*:** The component's attribution ignores the allocation model when a non-default attribution model is used.</li><li>**When using the component in a report with *multiple dimensions*:** The component's attribution retains the allocation model when a non-default attribution model is used.</li><li>Multiple dimensions are available only when [exporting data to the cloud](/help/analysis-workspace/export/export-cloud.md).</li></ul> --> <p>有关分配的更多信息，请参阅 [持久性组件设置](/help/data-views/component-settings/persistence.md).</p> |
+| 齿轮图标（量度类型、归因） | 通过选择量度旁边的齿轮图标，您可以指定量度类型和归因模型。 <p>**注意：** 将组件的归因更新为非默认归因模型时，请考虑以下事项：</p><ul><li>**在报表中将组件与配合使用时 *单个维度*：** 当使用非默认归因模型时，组件的归因会忽略分配模型。</li><li>**在报表中将组件与配合使用时 *多个维度*：** 当使用非默认归因模型时，组件的归因将保留分配模型。</li><li>仅当出现以下情况时，多个维度才可用 [将数据导出到云](/help/analysis-workspace/export/export-cloud.md).</li></ul> <p>有关分配的更多信息，请参阅 [持久性组件设置](/help/data-views/component-settings/persistence.md).</p> |
 | 加号(+)图标 | 让您能够创建新组件，例如新筛选器（这会将您转到筛选器生成器）。 |
 | 搜索组件 | 通过此搜索栏，您可以搜索维度、量度、过滤器（仅限高级计算量度）和函数（仅限高级计算量度）。 |
 | 维度列表 | 要在筛选器生成器中构建一个简单的筛选器（例如“页面=主页”），您无需离开计算量度生成器，而是可以在“页面”中拖动并从计算量度生成器中直接选择“主页”。 这可以极大地简化用于创建筛选计算量度的工作流程。 |

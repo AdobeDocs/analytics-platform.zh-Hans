@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: 导出失败疑难解答
 feature: Components
 exl-id: fbc25150-4390-40a2-9f17-aadf254258ad
-source-git-commit: 3252a41f5ee1f439a3f233b06a8be1fdf6150234
+source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 7%
@@ -12,8 +12,6 @@ ht-degree: 7%
 ---
 
 # 导出失败疑难解答
-
-{{release-limited-testing}}
 
 当您 [将完整表从Analysis Workspace导出到云目标](/help/analysis-workspace/export/export-cloud.md)，您可以从以下位置查看这些导出的状态 [“导出”选项卡](/help/components/exports/manage-exports.md) 和从 [“日志”选项卡](/help/components/exports/manage-export-logs.md). 失败的导出显示状态 [!UICONTROL **失败**].
 

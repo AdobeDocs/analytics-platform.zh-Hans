@@ -4,10 +4,10 @@ description: 使您可设置指标的默认归因。
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 1c5ea3f49d47ffd833404260e6c21bd1e64a2734
+source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
 workflow-type: tm+mt
-source-wordcount: '1859'
-ht-degree: 37%
+source-wordcount: '1937'
+ht-degree: 35%
 
 ---
 
@@ -28,21 +28,17 @@ ht-degree: 37%
 
 您可以通过更新数据视图中量度的设置，为给定量度设置默认归因模型。 只要量度在Analysis Workspace中使用，这样做就会覆盖该量度的归因模型。
 
-<!-- 
-
 >[!NOTE]
 >
->Consider the following when enabling attribution on a metric:
+>对量度启用归因时，请考虑以下事项：
 >
->* **When using the component in a report with *a single dimension*:** The component's attribution ignores the allocation model when a non-default attribution model is used.
+>* **在报表中将组件与配合使用时 *单个维度*：** 当使用非默认归因模型时，组件的归因会忽略分配模型。
 >
->* **When using the component in a report with *multiple dimensions*:** The component's attribution retains the allocation model when a non-default attribution model is used.
+>* **在报表中将组件与配合使用时 *多个维度*：** 当使用非默认归因模型时，组件的归因将保留分配模型。
 >
->   Multiple dimensions are available only when [exporting data to the cloud](/help/analysis-workspace/export/export-cloud.md).
+>   仅当出现以下情况时，多个维度才可用 [将数据导出到云](/help/analysis-workspace/export/export-cloud.md).
 >
-> For more information about allocation, see [Persistence component settings](/help/data-views/component-settings/persistence.md).
-
--->
+> 有关分配的更多信息，请参阅 [持久性组件设置](/help/data-views/component-settings/persistence.md).
 
 要更新组件的默认归因模型，请执行以下操作：
 
