@@ -4,10 +4,10 @@ description: 派生字段通过一组可用函数和函数模板指定对架构�
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
-source-git-commit: 4ec48fcdd62781720f7d648a0ec2169d2af03d23
+source-git-commit: 7a96c6b1f093a534e473de3bde8dc3044564c450
 workflow-type: tm+mt
-source-wordcount: '5431'
-ht-degree: 15%
+source-wordcount: '5641'
+ht-degree: 14%
 
 ---
 
@@ -100,6 +100,22 @@ ht-degree: 15%
 
    - 选择 **[!UICONTROL **&#x200B;另存为&#x200B;**]** 将派生字段另存为新的派生字段。 新的派生字段与原始编辑的派生字段具有相同的名称 `(copy)` 已添加到其中。
 
+或者，如果您已将派生字段用作数据视图中维度或量度的组件：
+
+1. 选择组件。 请注意，组件的名称可能与派生字段不同。
+
+1. 在组件面板中，选择 ![“编辑”图标](assets/Smock_Edit_18_N.svg) 位于派生字段旁边的架构字段名称下。
+
+1. 要编辑派生字段，请使用 [!UICONTROL 编辑派生字段] 界面。 请参阅 [派生字段界面](#derived-field-interface).
+
+   - 选择 **[!UICONTROL **&#x200B;保存&#x200B;**]** 以保存更新的派生字段。
+
+   - 选择 **[!UICONTROL **&#x200B;取消&#x200B;**]** 以取消对派生字段所做的任何更改。
+
+   - 选择 **[!UICONTROL **&#x200B;另存为&#x200B;**]** 将派生字段另存为新的派生字段。 新的派生字段与原始编辑的派生字段具有相同的名称 `(copy)` 已添加到其中。
+
+
+
 ## 删除派生字段
 
 1. 选择现有数据视图。 请参阅 [数据视图](../data-views.md) 以了解更多信息。
@@ -112,7 +128,19 @@ ht-degree: 15%
 
 5. 将鼠标悬停在要删除的派生字段上，然后选择 ![“编辑”图标](assets/Smock_Edit_18_N.svg).
 
-6. 使用中 **[!UICONTROL **&#x200B;编辑派生字段&#x200B;**]** 界面上，选择删除。
+6. 在 [!UICONTROL 编辑派生字段] 界面，选择 **[!UICONTROL 删除]**.
+
+   A [!UICONTROL 删除组件] 对话框要求您确认删除。 考虑对数据视图外部的派生字段可能存在的任何外部引用。
+
+   - 选择 **[!UICONTROL **&#x200B;继续&#x200B;**]** 以删除派生字段。
+
+或者，如果您已将派生字段用作数据视图中维度或量度的组件：
+
+1. 选择组件。 请注意，组件的名称可能与派生字段不同。
+
+1. 在组件面板中，选择 ![“编辑”图标](assets/Smock_Edit_18_N.svg) 位于派生字段旁边的架构字段名称下。
+
+1. 在 [!UICONTROL 编辑派生字段] 界面，选择 **[!UICONTROL 删除]**.
 
    A [!UICONTROL 删除组件] 对话框要求您确认删除。 考虑对数据视图外部的派生字段可能存在的任何外部引用。
 
