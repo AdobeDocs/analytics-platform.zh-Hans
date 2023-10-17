@@ -3,16 +3,16 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
+source-git-commit: 1482cc7b9da01b60e15d2e48b1156b603e20c6e3
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 100%
+source-wordcount: '793'
+ht-degree: 97%
 
 ---
 
 # 当前的 Adobe Customer Journey Analytics 发行说明（2023 年 10 月）
 
-**上次更新日期**：2023 年 10 月 13 日
+**上次更新日期**：2023 年 10 月 17 日
 
 这些发行说明涵盖 2023 年 10 月 4 日至 2023 年 10 月 24 日的发行期。Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
@@ -20,6 +20,7 @@ ht-degree: 100%
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **查找和配置文件数据集的行计数量度** | 这些量度以前仅适用于事件数据集。 | 2023 年 10 月 16 日 |
 | **将全表导出到云** | 通过 Customer Journey Analytics 全表导出，可将数百万个 Workspace 行导出到云目标。 <p>导出全表可一次性或按计划投放在 Workspace 中设计的数据表，其中支持最多五个细分、五个量度、过滤器和计算量度，所有这些都在一个连接在一起的表中。它从 Adobe Analytics 中的 Data Warehouse 报告演化而来，具有许多当今在 Data Warehouse 中不提供但经常有人要求提供的新功能。</p><p> 云导出选项包括：</p><ul><li>Adobe Experience Platform 数据登陆区</li><li>Amazon S3 Role ARN</li><li>Google Cloud Platform</li><li>Azure SAS</li><li>Azure RBAC</li><li>Snowflake</li></ul>有关详细信息，请参阅[将 Customer Journey Analytics 报告导出到云](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html)。 | 2023 年 10 月 4 日 | 2023 年 10 月 19 日 |
 | **管理组件时可用的新列** | 在管理组件时，现在可在[计算量度管理器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html)和[过滤器管理器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html)中找到以下新列：<ul><li>用在</li><li>上次使用时间</li></ul>此信息可帮助您确定某个组件是否对组织中的用户有用、在何处使用该组件以及是否需要删除或修改该组件。可使用数据词典配合此信息帮助您跟踪并更好地了解如何在您的组织中使用组件。 | 2023 年 9 月 23 日 | 2023 年 10 月 4 日 |
 | **将 Adobe Analytics 项目和其中包括的任何组件迁移到 Customer Journey Analytics** | 现在可将 Adobe Analytics 项目迁移到 Customer Journey Analytics。此过程简化了从 Adobe Analytics 到 Customer Journey Analytics 的过渡。 <p>将项目迁移到 Customer Journey Analytics 时，资源将从 Adobe Analytics 报表包映射到 Customer Journey Analytics 数据视图。</p> <p>从 Adobe Analytics 界面将项目迁移到 Customer Journey Analytics。[了解详情](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html)</p> | 不适用 | 2023 年 10 月 9 日 |
