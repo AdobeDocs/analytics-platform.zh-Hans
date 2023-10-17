@@ -1,16 +1,16 @@
 ---
-title: 虚拟报告包、数据视图、Adobe Experience Platform沙盒和Analytics源连接器
+title: 虚拟报告包、数据视图、Adobe Experience Platform 沙盒和 Analytics Source Connector
 description: 了解虚拟报告环境和沙盒环境。
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
 feature: Basics
 source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
 workflow-type: tm+mt
 source-wordcount: '771'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# 虚拟报告包、数据视图、Adobe Experience Platform沙盒和Analytics源连接器
+# 虚拟报告包、数据视图、Adobe Experience Platform 沙盒和 Analytics Source Connector
 
 Adobe 提供了多种方法来创建虚拟报告环境和沙盒环境。了解以下功能之间的异同以及这些功能与 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans) 的关系非常有用：
 
@@ -28,10 +28,10 @@ Adobe 提供了多种方法来创建虚拟报告环境和沙盒环境。了解�
 * 能够以非破坏性的方式应用于历史数据和新数据。
 * 允许您在 Adobe Analytics 报告包上创建一个或多个虚拟视图，以供不同的业务团队使用。
 * 可用于控制 Adobe Analytics 中不同用户对不同类型数据的访问和管理。
-* 为 Adobe Analytics 提供可选的[报告时处理](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=zh-Hans)功能。在这种情况下，可以使用虚拟报表包为“访问”创建自定义定义。
+* 为 Adobe Analytics 提供可选的[报告时处理](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=zh-Hans)功能。在这种情况下，虚拟报告包可用于创建对“访问”的自定义。
 * 在报告运行时应用，类似于区段评估。这会在收集数据并将其存储在 Adobe Analytics 中&#x200B;_之后_&#x200B;进行。
 * 在 Adobe Analytics 中进行[跨设备分析](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=zh-Hans)时需要。
-* 提供与标准Analytics报表包相同数量的变量（250个eVar、250个道具、1000个事件），但虚拟报表包管理可以限制用户可以看到哪些变量。
+* 提供要用作标准 Analytics 报告包的相同数量的变量（250 个 eVar、250 个 prop、1000 个事件），但虚拟报告包策划可限制对用户公开哪些变量。
 * 支持自定义日程表选项。
 
 虚拟报告包不是：

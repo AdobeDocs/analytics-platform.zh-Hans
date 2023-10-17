@@ -1,6 +1,6 @@
 ---
-title: 在Customer Journey Analytics中使用Adobe Analytics报表包数据
-description: 如何配置 Adob​e Analytics 报告包，以便纳入 Adob​e Experience Platform 和 Customer Journey Analytics
+title: 在 Customer Journey Analytics 中使用 Adobe Analytics 报告包数据
+description: 如何配置 Adobe Analytics 报告包以摄取到 Adobe Experience Platform 和 Customer Journey Analytics 中
 role: User
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,11 +8,11 @@ exl-id: db5506e0-6159-4d4b-8149-e4966dab9807
 source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
-# 在Customer Journey Analytics中使用Adobe Analytics报表包数据
+# 在 Customer Journey Analytics 中使用 Adobe Analytics 报告包数据
 
 Adobe Analytics 客户可以使用 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 在 Adobe Experience Platform 和 Customer Journey Analytics 中轻松利用他们的报告包。以下讨论解释了如何这样做。
 

@@ -6,11 +6,11 @@ feature: Basics
 source-git-commit: f2f85db4b670f1c4b1f6bc0954a5549c793edf5a
 workflow-type: tm+mt
 source-wordcount: '1221'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
-# 跨Adobe Analytics和Customer Journey Analytics比较数据处理
+# 比较 Adobe Analytics 和 Customer Journey Analytics 的数据处理
 
 您通常需要能够在数据可用于报告之前对其进行处理。您可以在从收集数据到生成报告或可视化的过程中的多个阶段处理这些数据。
 
