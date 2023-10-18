@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: 53cf026531ac5690a3e5a31acaa5654a52747b69
+source-git-commit: 69317871bae9ad2a0fecad6b1df1cc357094b05c
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '434'
 ht-degree: 2%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 2%
 
 ## 使用目标
 
-要在工作区项目中使用目标，请使用计算量度功能，将派生字段“标准化”回其原始静态值。
+要在工作区项目中使用目标，可使用计算量度功能将派生字段“标准化”回其原始静态值。 此标准化是必需的，因为您为定义目标的派生字段设置的静态值会随每个事件递增。
 
 ### 每月礼品证书订单目标
 
