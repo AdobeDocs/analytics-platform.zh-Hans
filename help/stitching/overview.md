@@ -3,10 +3,11 @@ title: 拼接概述
 description: 拼接概述。
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: 52d47e777e8c9f7e1e73f4131f19d7df280cb2a3
+exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
+source-git-commit: c83917d0d73c2a178d5479f2a0257bd3f400666c
 workflow-type: tm+mt
-source-wordcount: '1322'
-ht-degree: 22%
+source-wordcount: '1370'
+ht-degree: 21%
 
 ---
 
@@ -41,10 +42,11 @@ ht-degree: 22%
 * Adobe Experience Platform中要应用拼接的事件数据集必须具有两个帮助识别访客的列：
 
    * **持久 ID**，即每行都存在的标识符。例如，由Adobe AnalyticsAppMeasurement库生成的访客ID或由Adobe Experience Cloud Identity服务生成的ECID。
-   * **临时 ID**，即仅在部分行存在的标识符。例如，经过身份验证的访客的经过哈希处理的用户名或电子邮件地址。您实际上可以使用任何喜欢的标识符。 拼接会考虑使用此字段来保存实际人员ID信息。 为获得最佳的拼接结果，应在数据集的事件中为每个永久ID至少发送一次临时ID。
-如果计划在Customer Journey Analytics连接中包含此数据集，则最好其他数据集也具有类似的公共标识符。
+   * **临时 ID**，即仅在部分行存在的标识符。例如，经过身份验证的访客的经过哈希处理的用户名或电子邮件地址。您实际上可以使用任何喜欢的标识符。 拼接会考虑使用此字段来保存实际人员ID信息。 为获得最佳的拼接结果，应在数据集的事件中为每个永久ID至少发送一次临时ID。 如果计划在Customer Journey Analytics连接中包含此数据集，则最好其他数据集也具有类似的公共标识符。
 
-* 拼接包括合并的经过身份验证的用户数据和未经身份验证的用户数据。 在激活事件数据集的拼合之前，请确保遵守适用的法律和法规，包括获取必要的最终用户权限。
+  必须将两列（永久ID和临时ID）定义为标识字段，该字段在要拼合的数据集基础架构中具有标识命名空间。
+
+* 拼接包括合并的经过身份验证的用户数据和未经身份验证的用户数据。 在激活事件数据集的拼合之前，请确保遵守适用的法律和法规，包括获取必要的最终用户权限。 请参阅 [在UI中定义标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#) 以了解更多信息。
 
 
 ## 使用拼合
@@ -126,7 +128,3 @@ Once the data view is set up, the cross-channel analysis in Customer Journey Ana
 * 两个或更多数据集的合并。 拼接仅适用于一个数据集。 数据集合并是设置Customer Journey Analytics连接并在该连接的所选数据集中选择相同的人员ID的结果。
 
 * 两个数据集的连接。 在Customer Journey Analytics中，连接通常用于Analysis Workspace中的查找或分类。 尽管拼接使用连接功能，但过程本身涉及的连接还不止于。
-
-
-
-
