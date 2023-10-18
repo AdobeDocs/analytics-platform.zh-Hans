@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: 可视化图表概述
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: f6273b96d3851e02ea013a6496965567a4389a72
+source-git-commit: 0022df4fa6022d5b045e47b606f4a6d1687f7244
 workflow-type: tm+mt
-source-wordcount: '1243'
-ht-degree: 86%
+source-wordcount: '1285'
+ht-degree: 84%
 
 ---
 
@@ -20,24 +20,24 @@ ht-degree: 86%
 Analysis Workspace 中提供了以下可视化图表类型：
 
 | 可视化图表名称 | 描述 |
-| --- | --- |
-| [面积图](/help/analysis-workspace/visualizations/area.md) | 与线形图相似，但线条下有彩色区域。当您有多个指标并且希望显示两个或更多指标相交的区域时，可使用面积图。 |
-| [条形图](/help/analysis-workspace/visualizations/bar.md) | 显示一些垂直条，这些垂直条表示一个或多个指标中的各种值。 |
-| [项目符号图表](/help/analysis-workspace/visualizations/bullet-graph.md) | 显示您感兴趣的值与其他性能范围（目标）进行比较或衡量的结果。 |
-| [同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | *`cohort`* 是指一组在特定期限内共享相同特性的人员。同类群组分析对于保留、流失或延迟分析非常有用。 |
-| [圆环图](/help/analysis-workspace/visualizations/donut.md) | 此可视化图表与饼图类似，它将数据显示为整体的一部分或筛选条件。 |
-| [流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | 流失报表显示人员从何处离开（流失）或继续通过（流过）预定义的页面序列。 可以设置为有条件序列或确切序列。 |
-| [流](/help/analysis-workspace/visualizations/c-flow/flow.md) | 显示客户在您的网站和应用程序中的确切路径。 |
-| [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | 自由格式表不仅可以作为数据表，而且还是一个交互式可视化图表。这是在工作区中进行数据分析的基础。 |
-| [直方图](/help/analysis-workspace/visualizations/histogram.md) | 直方图根据量度数量，将人员、访问或事件划分到存储桶中。 |
-| [水平条](/help/analysis-workspace/visualizations/horizontal-bar.md) | 显示一些水平条，这些水平条表示一个或多个指标中的各种值。 |
-| [折线图](/help/analysis-workspace/visualizations/line.md) | 使用线条来表示指标，以显示一段时间内值的变化情况。将时间作为 x 轴的线形图。 |
-| [散点图](/help/analysis-workspace/visualizations/scatterplot.md) | 显示维度项目与最多三个指标之间的关系。 |
-| [概要数字](/help/analysis-workspace/visualizations/summary-number-change.md) | 将选择的单元格显示为 1 个多位数。 |
-| [概要变化](/help/analysis-workspace/visualizations/summary-number-change.md) | 将所选单元格之间的变化显示为 1 个多位数/百分比。 |
-| [文本](/help/analysis-workspace/visualizations/text.md) | 使您克将用户定义的文本添加到您的工作区。在利用面板/可视化图表描述之外，对于向您的分析和见解添加额外的上下文非常有用 |
-| [树形图](/help/analysis-workspace/visualizations/treemap.md) | 将分层（树结构）数据显示为一组嵌套的矩形。 |
-| [维恩图](/help/analysis-workspace/visualizations/venn.md) | 使用圆圈来描述最多 3 个过滤器之间的量度重叠。 |
+| --- | --- | 
+| [面积图](/help/analysis-workspace/visualizations/area.md)<p>![区域图标](assets/Smock_GraphArea_18_N.svg)</p> | 与线形图相似，但线条下有彩色区域。当您有多个指标并且希望显示两个或更多指标相交的区域时，可使用面积图。 | 回答类似下面的问题： <ul><li> |
+| [条形图](/help/analysis-workspace/visualizations/bar.md) <p>![条形图示](assets/Smock_GraphBarVertical_18_N.svg)</p> | 显示一些垂直条，这些垂直条表示一个或多个指标中的各种值。 |
+| [项目符号图表](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![“项目符号”图标](assets/Smock_GraphBullet_18_N.svg)</p> | 显示您感兴趣的值与其他性能范围（目标）进行比较或衡量的结果。 |
+| [同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![“同类群组表”图标](assets/Smock_TextNumbered_18_N.svg)</p> | *`cohort`* 是指一组在特定期限内共享相同特性的人员。同类群组分析对于保留、流失或延迟分析非常有用。 |
+| [圆环图](/help/analysis-workspace/visualizations/donut.md) <p>![“圆环图”图标](assets/Smock_GraphDonut_18_N.svg)</p> | 此可视化图表与饼图类似，它将数据显示为整体的一部分或筛选条件。 |
+| [流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)<p>![“流失”图标](assets/Smock_ConversionFunnel_18_N.svg)</p> | 流失报表显示人员从何处离开（流失）或继续通过（流过）预定义的页面序列。 可以设置为有条件序列或确切序列。 |
+| [流](/help/analysis-workspace/visualizations/c-flow/flow.md)<p>![“流”图标](assets/flow-icon.png)</p> | 显示客户在您的网站和应用程序中的确切路径。 |
+| [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)<p>![“自由格式表”图标](assets/Smock_ViewTable_18_N.svg)</p> | 自由格式表不仅可以作为数据表，而且还是一个交互式可视化图表。这是在工作区中进行数据分析的基础。 |
+| [直方图](/help/analysis-workspace/visualizations/histogram.md)<p>![“直方图”图标](assets/Smock_GraphHistogram_18_N.svg)</p> | 直方图根据量度数量，将人员、访问或事件划分到存储桶中。 |
+| [水平条](/help/analysis-workspace/visualizations/horizontal-bar.md)<p>![水平条形图示](assets//Smock_GraphBarHorizontal_18_N.svg)</p> | 显示一些水平条，这些水平条表示一个或多个指标中的各种值。 |
+| [折线图](/help/analysis-workspace/visualizations/line.md)<p>![折线图标](assets/Smock_GraphTrend_18_N.svg)</p> | 使用线条来表示指标，以显示一段时间内值的变化情况。将时间作为 x 轴的线形图。 |
+| [散点图](/help/analysis-workspace/visualizations/scatterplot.md) <p>![散点图图标](assets/Smock_GraphScatter_18_N.svg)</p> | 显示维度项目与最多三个指标之间的关系。 |
+| [概要数字](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![“摘要数字”图标](assets/summary-number-icon.png)</p> | 将选择的单元格显示为 1 个多位数。 |
+| [概要变化](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![“概要变化”图标](assets/summary-change-icon.png)</p> | 将所选单元格之间的变化显示为 1 个多位数/百分比。 |
+| [文本](/help/analysis-workspace/visualizations/text.md)<p>![散点图图标](assets/Smock_Text_18_N.svg)</p> | 使您克将用户定义的文本添加到您的工作区。在利用面板/可视化图表描述之外，对于向您的分析和见解添加额外的上下文非常有用 |
+| [树形图](/help/analysis-workspace/visualizations/treemap.md)<p>![树形图图标](assets/Smock_GraphTree_18_N.svg)</p> | 将分层（树结构）数据显示为一组嵌套的矩形。 |
+| [维恩图](/help/analysis-workspace/visualizations/venn.md)<p>![“维恩图”](assets/venn-icon.png)</p> | 使用圆圈来描述最多 3 个过滤器之间的量度重叠。 |
 
 ## 向面板添加可视化图表
 
