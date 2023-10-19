@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: 管理云导出位置和帐户
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: b0eff3702ce92bab8a3d75bc07e1b33c168805c2
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '482'
 ht-degree: 5%
 
 ---
@@ -63,11 +63,7 @@ ht-degree: 5%
 
 ## 删除位置
 
-如果删除位置，则使用该位置的所有导出也会被删除。
-
-在删除位置之前，请先通过选择位置名称旁边的信息图标来检查任何导出是否正在使用它。
-
-![连接的导出](assets/location-connected-exports.png)
+如果删除位置，则使用该位置的所有导出也会被删除。 删除时选中确认对话框，以确保没有导出与位置相关联。
 
 要删除位置，请执行以下操作：
 
@@ -77,7 +73,15 @@ ht-degree: 5%
 
    ![编辑位置](assets/locations-edit.png)
 
-1. 选择 [!UICONTROL **删除**]，然后选择 [!UICONTROL **删除**] 确认对话框。
+1. 选择&#x200B;[!UICONTROL **删除**]。
+
+   此时将显示“删除位置”对话框。
+
+1. 在“删除位置”对话框中，在确认删除之前，请确保该位置未与任何导出相关联。
+
+   ![删除位置确认对话框](assets/delete-location-confirmation-dialog.png)
+
+1. 选择 [!UICONTROL **删除**] 再次确认。
 
 ## 编辑帐户
 
@@ -85,7 +89,7 @@ ht-degree: 5%
 
 1. 选择 [!UICONTROL **位置帐户**] 选项卡。
 
-   ![帐户页面](assets/account-page.png)
+   ![帐户页面](assets/account-add.png)
 
 1. 选择 [!UICONTROL **查看详细信息**] 在要编辑的帐户上。
 
@@ -101,7 +105,7 @@ ht-degree: 5%
 
 1. 选择 [!UICONTROL **位置帐户**] 选项卡。
 
-   ![帐户页面](assets/account-page.png)
+   ![帐户页面](assets/account-add.png)
 
 1. 在要编辑的帐户上选择3点图标，然后选择 [!UICONTROL **帐户密钥**].
 
@@ -111,7 +115,7 @@ ht-degree: 5%
 
 1. 选择 [!UICONTROL **位置帐户**] 选项卡。
 
-   ![帐户页面](assets/account-page.png)
+   ![帐户页面](assets/account-add.png)
 
 1. 在要编辑的帐户上选择3点图标，然后选择 [!UICONTROL **删除帐户**].
 

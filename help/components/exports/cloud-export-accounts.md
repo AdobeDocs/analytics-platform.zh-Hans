@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: 配置云导出帐户
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: bbd916db1be05c5e52396ae0a6fa5cbaa368da38
 workflow-type: tm+mt
 source-wordcount: '1826'
 ht-degree: 4%
@@ -37,7 +37,7 @@ ht-degree: 4%
 
 1. 继续下面的对应章节 [!UICONTROL **帐户类型**] 您已选择。
 
-   * [AEP 数据登陆区](#adobe-experience-platform)
+   * [AEP 数据登陆区](#aep-data-landing-zone)
 
    * [Amazon S3 Role ARN](#amazon-s3-role-arn)
 

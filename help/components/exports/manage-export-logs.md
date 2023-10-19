@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: 管理导出日志
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: b0eff3702ce92bab8a3d75bc07e1b33c168805c2
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '825'
 ht-degree: 7%
 
 ---
@@ -16,6 +16,26 @@ ht-degree: 7%
 导出日志提供有关每次导出的详细信息，并在每次将Analysis Workspace数据导出到云时生成。 (有关如何将数据导出到云的信息，请参阅 [将Customer Journey Analytics报表导出到云端](/help/analysis-workspace/export/export-cloud.md).)
 
 对于计划的导出，日志反映发送日志时的导出设置。 无法删除日志。
+
+## 查看导出日志
+
+1. 在Customer Journey Analytics中，选择 [!UICONTROL **组件**] > [!UICONTROL **导出**].
+
+1. 选择 [!UICONTROL **日志**] 选项卡。
+
+   ![导出日志选项卡](assets/export-logs-tab.png)
+
+   每个日志的详细信息都显示在可用列中。
+
+1. 执行下列任一操作：
+
+   * [自定义列](#configure-columns) 显示的所有区段。
+
+   * 选择 **“信息”图标** ![“信息”图标](assets/information-icon.png) 在日志名称旁边，查看与日志关联的导出。
+
+   * 选择 **编辑导出图标** ![“信息”图标](assets/edit-export-icon.png) 在日志名称旁边，编辑与日志关联的导出。
+
+     有关编辑导出的更多信息，请参阅 [将Customer Journey Analytics报表导出到云端](/help/analysis-workspace/export/export-cloud.md).
 
 ## 过滤和搜索日志
 
