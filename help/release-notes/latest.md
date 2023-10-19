@@ -3,7 +3,7 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 1482cc7b9da01b60e15d2e48b1156b603e20c6e3
+source-git-commit: 328b95efb7ed9ff597b95979ecdeceaa8db92bb4
 workflow-type: tm+mt
 source-wordcount: '793'
 ht-degree: 97%
@@ -12,7 +12,7 @@ ht-degree: 97%
 
 # 当前的 Adobe Customer Journey Analytics 发行说明（2023 年 10 月）
 
-**上次更新日期**：2023 年 10 月 17 日
+**上次更新日期**：2023 年 10 月 19 日
 
 这些发行说明涵盖 2023 年 10 月 4 日至 2023 年 10 月 24 日的发行期。Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
@@ -26,7 +26,7 @@ ht-degree: 97%
 | **将 Adobe Analytics 项目和其中包括的任何组件迁移到 Customer Journey Analytics** | 现在可将 Adobe Analytics 项目迁移到 Customer Journey Analytics。此过程简化了从 Adobe Analytics 到 Customer Journey Analytics 的过渡。 <p>将项目迁移到 Customer Journey Analytics 时，资源将从 Adobe Analytics 报表包映射到 Customer Journey Analytics 数据视图。</p> <p>从 Adobe Analytics 界面将项目迁移到 Customer Journey Analytics。[了解详情](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html)</p> | 不适用 | 2023 年 10 月 9 日 |
 | **Adobe Product Analytics：显示/隐藏系列** | 单击图表图例或表行以控制可视化图表中各个系列的可见性。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/overview.html?lang=zh-Hans) | 不适用 | 2023 年 10 月 4 日 |
 | **Adobe Product Analytics 中的注释** | 引导式分析现在支持查看在 Customer Journey Analytics 中创建的注释的功能。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/overview.html?lang=zh-Hans) | 不适用 | 2023 年 10 月 4 日 |
-| **报告活动管理器** | 通过报告活动管理器，可查看组织中每个连接的报告容量。通过它，管理员可详细了解报告消耗情况，从而轻松地诊断和修复在报告高峰期出现的容量问题。报告活动管理器的主要功能包括：<ul><li>取消当前的报告请求（包括从引导式分析和全表导出提出的请求）</li><li>对所定义的时段限制后续请求</li></ul>除了取消当前请求之外，管理员现在还可对所定义的时段限制请求。管理员可以按请求、项目或用户限制请求。[了解详情](/help/reporting-activity-manager/reporting-activity-overview.md) | 2023 年 10 月 17 日 | 2023 年 10 月 23 日 |
+| **报告活动管理器** | 通过报告活动管理器，可查看组织中每个连接的报告容量。通过它，管理员可详细了解报告消耗情况，从而轻松地诊断和修复在报告高峰期出现的容量问题。报告活动管理器的主要功能包括：<ul><li>取消当前的报告请求（包括从引导式分析和全表导出提出的请求）</li><li>对所定义的时段限制后续请求</li></ul>除了取消当前请求之外，管理员现在还可对所定义的时段限制请求。管理员可以按请求、项目或用户限制请求。[了解详情](/help/reporting-activity-manager/reporting-activity-overview.md) | 2023 年 10 月 17 日 | 2023 年 10 月 24 日 |
 
 {style="table-layout:auto"}
 
