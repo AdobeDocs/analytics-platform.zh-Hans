@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: db5506e0-6159-4d4b-8149-e4966dab9807
 source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '878'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -44,6 +44,6 @@ Customer Journey Analytics 和 Adobe Analytics 有许多相似之处。例如，
 * [Customer Journey Analytics 功能支持](/help/getting-started/aa-vs-cja/cja-aa.md)
 * [比较通过 Analytics Source Connector 传递的 Analytics 数据的术语](/help/getting-started/aa-vs-cja/terminology.md)
 * [比较 Adobe Analytics 和 Customer Journey Analytics 报告功能的数据处理](/help/getting-started/aa-vs-cja/data-processing-comparisons.md)
-* [虚拟报告包、数据视图、Adobe Experience Platform沙盒和Analytics源连接器](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
+* [虚拟报告包、数据视图、Adobe Experience Platform 沙盒和 Analytics Source Connector](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
 * [处理规则、VISTA 和分类与数据准备](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md)
 * [AAID、ECID、AACUSTOMID 和 Analytics Source Connector](/help/getting-started/aa-vs-cja/aaid-ecid-adc.md)
