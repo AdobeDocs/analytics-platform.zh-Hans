@@ -1,12 +1,12 @@
 ---
 title: 使用情况视图
 description: 随着时间的推移衡量用户参与度.
-exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
+exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: 产品分析
-source-git-commit: c7a370b4c83ceddcb3ec9542714f768d5562f297
+source-git-commit: 96b50b205fe3b972da9660002f40b6fe2b80cf02
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '538'
 ht-degree: 2%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 2%
 
 * **[!UICONTROL 活动]**：要测量的事件。 每个选定事件均以彩色线条或条形集表示，具体取决于图表类型。 表格中添加了表示趋势事件的行。 您最多可以包含五个事件。
 * **[!UICONTROL 人员]**：要测量的区段。 每个选定区段都会将图表中的线数和表中的行数加倍。 您最多可以包含五个区段。
+* **[!UICONTROL 细分]**：为每个维度项目创建单独的趋势线。 支持单个划分维度。
 
 ## 图表设置
 
