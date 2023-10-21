@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: 配置同类群组分析报表
 feature: Visualizations
 exl-id: c3fd9fbf-b2c8-4703-92de-e6fdc141ebc6
-source-git-commit: 3bbc34d4b003fab7dc935c8d3bb3afa4dfc3f675
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 91%
+source-wordcount: '1003'
+ht-degree: 89%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 91%
 
 1. 在 Analysis Workspace 中，单击左边栏中的&#x200B;**[!UICONTROL 可视化图表]**&#x200B;图标，然后将一个&#x200B;**[!UICONTROL 同类群组表]**&#x200B;拖到画布上。
 
-   ![](assets/cohort-table.png)
+   ![显示包含标准和回访标准的示例同类群组表。](assets/cohort-table.png)
 
 1. 按照下表所示，定义&#x200B;**[!UICONTROL 包含标准]**、**[!UICONTROL 回访标准]**、**[!UICONTROL 同类群组类型]**&#x200B;和&#x200B;**[!UICONTROL 设置]**。
 
@@ -40,7 +40,7 @@ ht-degree: 91%
 
 1. 单击&#x200B;**[!UICONTROL 生成]**。
 
-   ![步骤结果](assets/cohort-report.png)
+   ![显示选定包含标准和回访标准的同类群组表视图。 单击生成。](assets/cohort-report.png)
 
    报表会显示下订单的人员( *`Included`* 列)，以及在后续访问中回访您网站的访客。 随着时间的推移，当出现访问次数减少时，该报表可帮助您查明问题并采取相应的措施。
 1. （可选）根据选定的内容创建过滤器。

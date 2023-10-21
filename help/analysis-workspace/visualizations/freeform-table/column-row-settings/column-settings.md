@@ -1,12 +1,12 @@
 ---
-description: 列设置允许您配置列格式，其中一些可以是条件格式。
+description: 了解如何编辑列设置以配置列格式，其中一些可以是条件格式。
 title: 列设置
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 84%
+source-wordcount: '806'
+ht-degree: 78%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 84%
 
 要访问“[!UICONTROL 列设置]”，请将自由格式表拖到项目中，然后单击列标题中的齿轮图标。
 
-![](assets/column_settings.png)
+![显示“总计”单元格、“表”单元格和“表”单元格预览的列设置。](assets/column_settings.png)
 
 您可以&#x200B;**一次编辑多个列**&#x200B;的设置。只需选择多个列并单击其中任意一列的设置图标。您所做的任何更改将应用于有单元格被选中的所有列。
 
@@ -42,7 +42,7 @@ ht-degree: 84%
 
 条件格式将格式应用于由您定义的上限、中点和下限。除非选择了“自定义”限制，否则对于各种划分，还将在自由格式表格中自动应用条件格式（颜色等）。
 
-![](assets/conditional-formatting.png)
+![已选中自定义的条件格式选项。](assets/conditional-formatting.png)
 
 | 元素 | 描述 |
 | --- | --- |
@@ -72,11 +72,11 @@ ht-degree: 84%
 
 1. 单击自由格式表列中量度上的“设置”（齿轮）图标。
 
-   ![“归因”复选框](assets/attribution-checkbox.png)
+   ![列设置选项高亮显示数据设置选项：使用非默认归因模式。](assets/attribution-checkbox.png)
 
 2. 在&#x200B;**[!UICONTROL 数据设置]**&#x200B;下，选中&#x200B;**[!UICONTROL 使用非默认归因模型]**。有关不同归因模型的更多信息，请参阅[归因模型](/help/data-views/component-settings/attribution.md)。
 
-   ![选择归因模型](assets/attribution-select.png)
+   ![“列归因模型”选项显示“线性”选定项。](assets/attribution-select.png)
 
 >[!MORELIKETHIS]
 >

@@ -3,10 +3,10 @@ description: 行设置因您拖入到表格中的组件而异。
 title: 行设置
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 93%
+source-wordcount: '463'
+ht-degree: 88%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 93%
 
 行设置因您拖入到表格中的组件而异。要访问表格行设置，请单击每个行内的维度、筛选器、量度、时间段或划分旁边的[!UICONTROL 设置]图标：
 
-![](assets/row-settings.png)
+![自由格式表，突出显示指标的“设置”图标](assets/row-settings.png)
 
 | 设置 | 描述 |
 | --- | --- |
@@ -33,6 +33,6 @@ ht-degree: 93%
 
 1. 单击表顶部的[!UICONTROL 行数]旁边的数字。
 
-   ![](assets/row-number.png)
+   ![自由格式表，显示所显示行数的下拉列表。 已选择400行。](assets/row-number.png)
 
 1. 从下拉列表中，选择您希望表显示的行数。

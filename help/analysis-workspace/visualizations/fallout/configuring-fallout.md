@@ -3,10 +3,10 @@ description: 了解如何指定接触点以创建多维度流失序列。
 title: 配置流失可视化
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 71%
+source-wordcount: '718'
+ht-degree: 68%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 71%
 
 对于可添加的步骤数量或可使用的维度数量，没有任何限制。
 
-您可以在eVar上执行路径分析，包括推销eVar和 [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) （每个事件可以有多个值的变量，例如products、listVar、推销eVar和列表属性）。 例如，假设某个用户在一个页面上查看鞋和衬衫，而在另一个页面上查看衬衫和袜子。鞋的下一个产品流量报表将是衬衫和袜子，而不是衬衫。
+您可以对eVar进行路径分析，包括推销eVar和 [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) （每个事件可以有多个值的变量，例如products、listVar、促销eVar和列表属性）。 例如，假设某个用户在一个页面上查看鞋和衬衫，而在另一个页面上查看衬衫和袜子。鞋的下一个产品流量报表将是衬衫和袜子，而不是衬衫。
 
 1. 将“[!UICONTROL 流失]”可视化从“可视化”下拉菜单中拖动到“[!UICONTROL 自由格式表]”中。
 
 1. 将页面维度拖动到自由格式表中，然后从此处将某个页面（在本例中为 Home — JJEsquire）拖动到&#x200B;**[!UICONTROL 添加接触点]**&#x200B;字段，作为第一个接触点。
 
-   ![](assets/fallout1.png)
+   ![显示所有访问次数下拉列表，其中显示了拖到添加接触点字段的JJEsquire。](assets/fallout1.png)
 
-   将鼠标悬停在某个接触点上可查看流失和该级别的其他相关信息，例如接触点的名称、该接触点的人员数，并查看该接触点的成功率（以及将成功率与其他接触点进行比较）。
+   将鼠标悬停在某个接触点上可查看流失和与该级别有关的其他信息，例如接触点的名称、该接触点的人员数，并可查看该接触点的成功率（以及将成功率与其他接触点进行比较）。
 
    条形图灰色部分中的带圆圈数字显示接触点之间的流失（而不是到该点的整体流失）。在流失报表中，接触点 % 显示从前一步骤到当前步骤的成功流过。
 
@@ -40,21 +40,21 @@ ht-degree: 71%
    >
    >多个过滤器通过 AND 相连，而多个项（如维度项）和量度通过 OR 相连。
 
-   ![](assets/multiple_obj_touchpoint.png)
+   ![已突出显示“页面：CamerRoll”或“页面：相机接触点”。](assets/multiple_obj_touchpoint.png)
 
 1. 您还可以 **将单个接触点限制为下一个事件** （而非“最终”）。 每个接触点下方都有一个选择器，其中包含“最终路径”和“下一次点击”选项，如下所示：
 
-   ![](assets/next-hit-eventually.png)
+   ![显示“最终路径”选项的“所有访问”视图会突出显示。 ](assets/next-hit-eventually.png)
 
 <table id="table_A91D99D9364B41929CC5A5BC907E8985"> 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>最终路径 </p> <p>(默认) </p> </td> 
-   <td colname="col2"> <p>计算访客数，这些访客“最终”登陆路径中的下一个页面，但不一定登陆下一个事件。 </p> </td> 
+   <td colname="col2"> <p>只计入将“最终”登陆路径中下一个页面的访客，但不一定登陆下一个事件。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>下一次点击 </p> </td> 
-   <td colname="col2"> <p>将计入到达下一个事件路径下一页的访客。 </p> </td> 
+   <td colname="col2"> <p>对将登陆下一个事件路径中下一页的访客进行计数。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -63,7 +63,7 @@ ht-degree: 71%
 
 | 设置 | 描述 |
 |--- |--- |
-| 流失容器 <ul><li>访问</li><li>访客</li></ul> | 用于在“访问”和“访客”之间切换以分析人员路径。 默认值为“访客”。这些设置可帮助您在人员级别（跨访问）了解人员参与度，或将分析限制为单次访问。 |
+| 流失容器 <ul><li>访问</li><li>访客</li></ul> | 用于在“访问”和“访客”之间切换以分析人员路径。 默认值为“访客”。这些设置可帮助您在人员级别（跨访问）了解人员参与情况，或将分析限制为单次访问。 |
 
 当您&#x200B;**右键单击某个接触点**&#x200B;时，将会显示以下选项：
 

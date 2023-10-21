@@ -1,20 +1,20 @@
 ---
-description: 流失可视化图表显示人员从何处离开（流失）或继续通过（流过）预定义的页面序列。
-title: 流失概述
+description: 了解流失报表和可视化图表。
+title: 关于流失报表和可视化图表
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 79%
+source-wordcount: '234'
+ht-degree: 82%
 
 ---
 
 # 流失概述
 
-流失可视化图表为构建流失报表提供了多个选项。流失报表显示人员从何处离开（流失）或继续通过（流过）预定义的页面序列。
+流失报表显示人员从何处离开（流失）或继续通过（流过）预定义的页面序列。
 
-流失可视化图表允许您
+流失可视化图表为构建流失报表提供了多个选项。流失可视化图表允许您:
 
 * 对同一个报表中的两个不同过滤器执行逐项比较
 * 拖放和重新排列漏斗步骤（接触点）

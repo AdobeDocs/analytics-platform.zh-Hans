@@ -1,13 +1,13 @@
 ---
-description: 在 Workspace 项目中使用流可视化。
-title: 配置流量可视化图表
+description: 了解如何在Workspace项目中使用流量可视化图表。
+title: 如何配置流量可视化图表
 feature: Visualizations
 role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: 558825dc4768372f232ddfb614442443c89e9a65
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '1539'
-ht-degree: 60%
+source-wordcount: '1581'
+ht-degree: 57%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 60%
 
 流量可视化允许您配置感兴趣的路径的起点或终点，或分析流经某个维度或维度项的所有路径。
 
-![新的流量 UI](assets/new-flow.png)
+![流量配置屏幕显示Starts with、Contains和Ends with字段。](assets/new-flow.png)
 
 ## 创建流量可视化图表 {#configure}
 
@@ -45,16 +45,16 @@ ht-degree: 60%
 
 1. 如果您选择量度，则还需要提供 [!UICONTROL **路径Dimension**] ，以用作通往或者离开您所选组件的路径，如下所示。 默认的是 [!UICONTROL **页面**]。
 
-   ![路径维度](assets/pathing-dim.png)
+   ![路径维度。](assets/pathing-dim.png)
 
 1. （可选）选择 **[!UICONTROL 显示高级设置]** 配置以下任一选项：
 
-   ![高级设置](assets/adv-settings.png)
+   ![高级设置，其中包含“显示”选项、“列数”和“流量”容器。](assets/adv-settings.png)
 
    | 设置 | 描述 |
    | --- | --- |
    | **[!UICONTROL 包装标签]** | 通常情况下，流量元素上的标签会被截断以节约屏幕资源，但您可以通过选中此框使整个标签可见。默认值 = 取消选中。 |
-   | **[!UICONTROL 包括重复实例]** | 流量可视化图表基于某个维度的实例。此设置使您可以选择包含还是排除重复实例，例如页面重新载入。但是，不能从包含多值维度（例如 listVar、listProp、s.product、推销 eVar 等）的流量可视化图表中删除重复项。 <p>此选项默认处于禁用状态。</p> |
+   | **[!UICONTROL 包括重复实例]** | 流量可视化图表基于某个维度的实例。此设置使您可以选择包含还是排除重复实例，例如页面重新载入。但是，不能从包含多值维度（例如 listVar、listProp、s.product、推销 eVar 等）的流量可视化图表中删除重复项。 <p>默认禁用此选项。</p> |
    | **[!UICONTROL 限制到第一次/最后一次发生次数]** | 将路径限制为以维度/项目/量度的第一次/最后一次发生次数开始/结束的路径。请参阅以下部分， [“限制到第一次/最后一次发生次数”的示例场景](#example-scenario-for-limit-to-firstlast-occurrence)，以了解更详细的说明。 |
    | **[!UICONTROL 列数]** | 您希望出现在流量图中的列数。 最多可指定5列。 |
    | **[!UICONTROL 每列扩展的项]** | 每列中所需的项目数。 您可以指定每列最多展开10个项目。 |
@@ -80,7 +80,7 @@ ht-degree: 60%
 
 ## 查看并更改流量输出。 {#output}
 
-![流量输出](assets/flow-output.png)
+![流量输出示例，显示以访问结束、路径维度：页面和流量容器：访客。](assets/flow-output.png)
 
 流量配置的摘要显示在图的顶部。图表中的路径按比例显示。活动越多，路径越粗。
 
@@ -90,7 +90,7 @@ ht-degree: 60%
 
 * 单击图表中的节点时，将显示该节点的详细信息。再次单击该节点以将其折叠。
 
-  ![节点详细信息](assets/node-details.png)
+  ![显示节点详细信息的交互流程图示例。](assets/node-details.png)
 
 * 您可以通过筛选列仅显示某些结果，例如包括和排除、指定条件等。
 
