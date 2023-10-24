@@ -4,9 +4,9 @@ description: 了解如何通过 Customer Journey Analytics 来使用 Analysis Wo
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
-workflow-type: ht
-source-wordcount: '993'
+source-git-commit: cd3747e0c9e041394db79d70fcd63294d0da9867
+workflow-type: tm+mt
+source-wordcount: '937'
 ht-degree: 100%
 
 ---
@@ -83,8 +83,7 @@ Adobe Experience Platform 让您可以实现源自任何系统的客户数据和
 
 * [Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans)：使用标准 SQL 从 Adobe Experience Platform 检索数据，如 Adobe 解决方案数据、客户第一方数据或任何其他 Platform 数据。它是一个无服务器工具，通过它，可加入任何数据集，并将查询结果捕获为新的数据集，以用于报告、数据科学工作区或摄取到个人资料服务中。可使用 Experience Platform Query Service 构建数据分析生态系统，在使用者的各种交互渠道上为使用者画像。这些渠道可能包括销售点系统、Web、移动、CRM 系统等。
 * [实时客户用户档案](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans)：
-* [Identity 服务](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hans)：
-* “开发人员”选项中的 [数据科学工作区](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=zh-Hans)：您可以使用 Adobe Experience Platform 中预建的人工智能 (AI) 和机器学习模型来影响客户历程的各个接触点。通过揭示暗藏的洞察信息，您可以在整个客户历程中做出更好的预测、提出最佳的后续步骤建议，或自动处理繁琐的流程。
+* [标识服务](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hans)
 
 ## 视频
 
