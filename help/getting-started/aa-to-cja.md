@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 264b5a3d3793ab6531f570d83cbd4fd96bfbd67a
-workflow-type: ht
-source-wordcount: '1492'
+source-git-commit: a67c12a7b5244b7802eba2cbcbfdb320802d088b
+workflow-type: tm+mt
+source-wordcount: '1488'
 ht-degree: 100%
 
 ---
@@ -78,7 +78,6 @@ Adobe Analytics 客户可以使用 Analytics Source Connector 在 Adobe Experien
 不支持以下 Adobe Analytics 功能或组件：
 
 * 机器人筛选
-* 地理、域、设备查找
 * 流媒体测量
 * 直播或直播触发器
 
