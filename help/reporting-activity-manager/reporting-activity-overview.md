@@ -3,7 +3,7 @@ title: 报表活动管理器概述
 description: 了解如何使用报告活动管理器诊断和修复在报告高峰期出现的容量问题。
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: cdbe7953fca701d1791c74ec7fb7f6ff9fa40801
+source-git-commit: 252b9849b904754fcf5841df51d01510ba9df53f
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 23%
@@ -11,8 +11,6 @@ ht-degree: 23%
 ---
 
 # 报告活动管理器概述
-
-{{release-limited-testing}}
 
 此 [!UICONTROL 报告活动管理器] 可供管理员使用。
 
