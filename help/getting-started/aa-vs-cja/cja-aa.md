@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2137'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 98%
 | 促销变量持久性 | 通过[绑定维度和绑定度量](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension)提供全面支持 |
 | 客户属性 | 现在称为“个人资料数据集”，不自动从 Experience Cloud 导入它们，而是必须先上传到 Experience Platform，然后才能在 Customer Journey Analytics 中找到它们。 |
 | 数据馈送 | 数据集的第一代数据导出可通过[ Experience Platform 数据访问 API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=zh-Hans)以及[ Experience Platform 目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=zh-Hans)实现。这些选项提供了事件/行级别的导出，可将收集或摄入的所有数据导出到 Experience Platform 数据湖中。后处理数据列不可用，因为后处理列是在查询时计算的。可通过报告导出帖子列。 |
-| Data Warehouse 报表 | [Customer Journey Analytics完整表导出](/help/analysis-workspace/export/export-cloud.md) 是Adobe Analytics中Data Warehouse报表的演变，其中许多新增的、经常请求的功能，目前在Data Warehouse中不可用。 |
+| Data Warehouse 报表 | [Customer Journey Analytics 全表导出](/help/analysis-workspace/export/export-cloud.md)从 Adobe Analytics 中的 Data Warehouse 报表演化而来，具有许多当今在 Data Warehouse 中不提供但经常有人要求提供的新功能。 |
 | 登录、退出和花费时间维度和度量 | 受支持（现在“进入次数”和“退出次数”称为“会话启动次数”和“会话结束次数”），但计算方式略有不同。 |
 | eVar 持久性设置 | Customer Journey Analytics 中不再包括 eVar。但是，持久性设置现在是数据视图的一部分，且可用于所有维度。请记住，持久基于报告时处理，而不是数据收集处理。数据视图中的纬度集限制为 90 天最大持久性，不支持无限持久性。 |
 | 归属地细分维度 | 收集到 Adobe Analytics 中的所有归属地细分/地理位置通过 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) 流入 Customer Journey Analytics。不使用 Analytics Source Connector 但依靠 Experience Platform Web SDK 收集数字数据的实施可使用 [Experience Edge 地理位置查找服务](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=zh-Hans)。 |
