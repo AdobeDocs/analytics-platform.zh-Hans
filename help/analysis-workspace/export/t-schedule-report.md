@@ -5,9 +5,9 @@ title: 通过电子邮件将Customer Journey Analytics数据发送给其他人
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+source-git-commit: 88cbea4ebebe68314a5de471bdf13a4d7760db0e
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1037'
 ht-degree: 59%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 59%
 
 >[!NOTE]
 >
->密码保护计划项目的选项仅对已购买的Customer Journey Analytics客户显示 [Health Shield](https://business.adobe.com/solutions/experience-cloud-for-healthcare.html) 附加产品。
+>密码保护计划项目的选项仅对已购买的Customer Journey Analytics客户显示 [Health Shield](https://business.adobe.com/solutions/industries/healthcare.html) 附加产品。
 
 Adobe 使用密码来加密计划项目，无论它们是以 .pdf 还是 .csv 格式发送。
 
