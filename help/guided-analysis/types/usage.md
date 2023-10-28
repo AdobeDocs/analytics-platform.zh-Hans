@@ -4,9 +4,9 @@ description: 随着时间的推移衡量用户参与度.
 exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: 产品分析
-source-git-commit: 96b50b205fe3b972da9660002f40b6fe2b80cf02
+source-git-commit: 713d70a444b3dba81a94d4f472b3ca7e0b39d742
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '621'
 ht-degree: 2%
 
 ---
@@ -46,6 +46,10 @@ ht-degree: 2%
 向图表添加其他数据。
 
 * **[!UICONTROL 显示异常]**：运行 [异常检测](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) 趋势分析。 离群值显示为圆点，您可以将光标悬停在这些圆点上以获取更多信息。
+* **[!UICONTROL 趋势线叠加]**：向图表添加一条趋势线，以便查看指定时间段内数据采用的整体方向。
+   * [!UICONTROL 线性]：线性回归模型。 建议用于以稳定速率增加或减少的数据。
+   * [!UICONTROL 对数]：曲线回归模型。 建议用于随时间推移而均衡的数据。
+   * [!UICONTROL 均线]：一条平滑的线，每点计算上一个时段的平均值。 建议用于具有定期周期的数据。 可用的移动平均期间取决于所选的日期范围。
 
 ## 应用时间比较
 
