@@ -3,15 +3,13 @@ title: 使用派生字段报告目标
 description: 了解如何使用派生字段报告工作区项目中的目标（目标）。
 solution: Customer Journey Analytics
 feature: Use Cases
-hide: true
-hidefromtoc: true
-source-git-commit: 69317871bae9ad2a0fecad6b1df1cc357094b05c
+exl-id: 5cd838f7-e394-4a67-9d2e-e1d08a864ca0
+source-git-commit: 150a46e59d7f76d90906c85332a94cd5974008c2
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 2%
 
 ---
-
 
 # 使用派生字段报告目标
 
