@@ -5,8 +5,8 @@ exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 4c6e968272b554188243b772bd159fe8174b3c3b
-workflow-type: ht
+source-git-commit: 98c0f2887789310dc387f1bf7ce5298722a0797e
+workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 100%
 
@@ -60,7 +60,6 @@ ht-degree: 100%
 * 临时 ID 字段应仅包含一种类型的 ID（即 ID 仅来自一个命名空间）。例如，临时 ID 字段不应包含登录 ID 和电子邮件 ID 的组合。
 * 如果对于同一持久 ID 发生了多个具有同一时间戳的事件，但临时 ID 字段中有多个不同的值，则基于字段的拼接将根据字母顺序进行选择。因此，如果持久 ID A 具有时间戳相同的两个事件，其中一个事件指定 Bob，而另一个指定 Ann，则基于字段的拼接将选择 Ann。
 * 如果一台设备由多人共享，且用户之间的转换总数超过 50.000，CCA 将停止为该设备缝合数据。
-
 
 ## 启用跨渠道分析
 
