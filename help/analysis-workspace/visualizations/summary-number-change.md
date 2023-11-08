@@ -3,9 +3,9 @@ description: 使用“概要数字”和“概要变化”可视化图表来显�
 title: 概要数字和概要变化
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '458'
+source-git-commit: 2f5d1c6c90df8ccd9e792a870891a817e7c2a93d
+workflow-type: tm+mt
+source-wordcount: '395'
 ht-degree: 100%
 
 ---
@@ -30,16 +30,7 @@ ht-degree: 100%
 | 缩写值 | 选择缩写值，最多显示 3 个小数位。 |
 | 值汇总方式 | 选择显示所选数据的最大值、最小值、平均值、中间值或总和。 |
 
-
-单击右上方的&#x200B;**可视化设置**&#x200B;齿轮，可配置“概要数字”设置：
-
-| 设置 | 定义 |
-|--- |--- |
-| 百分比 | 显示百分比，而不是原始数字。 |
-| 图例可见 | 显示有关所显示的量度的信息。 |
-| 缩写值 | 选择缩写值，最多显示 3 个小数位。 |
-| 值汇总方式 | 选择显示所选数据的最大值、最小值、平均值、中间值或总和。 |
-
+{style="table-layout:auto"}
 
 ## 概要更改可视化 {#summary-change}
 
