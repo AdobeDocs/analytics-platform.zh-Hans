@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 source-git-commit: 15fbbf26b58b474f65e6585ac72bdf247fb1678d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2135'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 96%
 | 区段 | 全面支持。现在称为“筛选条件”- 请注意，传统 Analysis Workspace 中的任何现有区段都不会移植到 Customer Journey Analytics。 |
 | 虚拟报表包 | 全面支持。现在称为[数据视图](/help/data-views/create-dataview.md)。 |
 | 虚拟报表包组件管理 | 全面支持。现在是数据视图的一部分。 |
-| 设备、浏览器、反向链接、技术维度 | 两者均支持 [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)基于的数据集和WebSDK生成的数据集。 请参阅[关于通过 ADC 支持哪些 Analytics 变量的文档。](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=zh-Hans)如果您使用 Experience Platform Web SDK 数据收藏集，则当前不支持基于设备查找的设备和维度。有计划以后支持。有关向Web SDK数据流添加设备和浏览器查找的信息，请参阅 [本文档](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=zh-Hans) |
+| 设备、浏览器、反向链接、技术维度 | 支持基于 [Analytics Source Connector ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)的数据集和 WebSDK 生成的数据集。请参阅[关于通过 ADC 支持哪些 Analytics 变量的文档。](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=zh-Hans)如果您使用 Experience Platform Web SDK 数据收藏集，则当前不支持基于设备查找的设备和维度。计划在以后提供支持。要将设备和浏览器查找功能添加到 Web SDK 数据流，请参阅[本文档](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html) |
 | 流 Media Analytics | 使用作为 Workspace 中的“同时观看媒体的人数”面板和“媒体播放耗时”面板一部分的 Analytics Data Connector 即可获得媒体数据。 |
 
 {style="table-layout:auto"}
@@ -69,7 +69,7 @@ ht-degree: 96%
 | 营销渠道 | 使用 Analytics Source Connector 时，“营销渠道”数据会通过该连接器流入 Customer Journey Analytics。在传统的 Adobe Analytics 中配置营销渠道规则，其中不支持某些规则。有关更多信息，请参阅 [Customer Journey Analytics 营销渠道](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels.html)。<br/>对于 WebSDK 实施，通过[派生字段](../../data-views/derived-fields/derived-fields.md)支持报告时营销渠道处理规则。 |
 | 度量去重 | 现在对数据视图中的度量配置此项。在人员或会话级别，而非数据集、数据视图或连接级别进行量度去重。 |
 | 新会话与重复会话报告 | 以前使用“访问次数”维度实现。新会话与重复会话均支持 [13 个月的回溯时段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/data-views/data-views-usecases.html?lang=zh-Hans)。 |
-| 处理规则、VISTA 规则、营销渠道处理规则 | 通过Adobe Experience Platform数据准备功能以及支持 [派生字段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/derived-fields.html) 适用于基于WebSDK的数据集和来自Analytics Source Connector的数据。 |
+| 处理规则、VISTA 规则、营销渠道处理规则 | 支持使用 Adobe Experience Platform 数据准备功能以及基于 WebSDK 的数据集和 Analytics Source Connector 的数据的[派生字段。](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/derived-fields.html) |
 | 产品变量 | 在 Experience Platform 中，用户可在数据集架构中使用对象数组满足此用例。在 Customer Journey Analytics 中，客户可使用任意数量的产品变量，而不像在 Adobe Analytics 中那样只能使用一个变量。 |
 | 项目共享 | 仅在 Customer Journey Analytics 的用户之间支持项目共享功能 - 在 Customer Journey Analytics 与传统 Analysis Workspace 之间无项目共享。 |
 | Report Builder | 通过一个新的 Office 365 Excel 插件支持此项。 |
@@ -136,6 +136,6 @@ ht-degree: 96%
 | SQL 访问 | 通过使用 Data Distiller 选项，Customer Journey Analytics 可以消除 Adob&#x200B;e 后端处理中收集的数据的限制。您可以使用 SQL 修改数据、创建适合您的业务的值和数据集，并继续探索。Analytics 不支持对其数据进行任何类型的 SQL 访问。 |
 | 增强了安全和隐私选项 - HIPAA 就绪 | Customer Journey Analytics 符合 HIPAA 标准，并提供额外的安全选项，以确保符合相关法规。Adobe Analytics 尚未为 HIPAA 做好准备。 |
 | 能够组合数据集（例如 Adobe Analytics 报告包） | 通过 Customer Journey Analytics，可从多个报告包组合数据，如同它们是 Adobe Analytics 中的单个报告包一样。 |
-| 派生字段 | 通过派生字段，可为数据转换报告时间。数据可以动态合并、更正或创建，并可追溯应用于所有报表。 |
+| 派生字段 | 通过派生字段，可为数据转换报告时间。可即时组合、更正或创建数据，并以追溯的方式将数据应用于所有报告。 |
 
 {style="table-layout:auto"}
