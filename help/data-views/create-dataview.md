@@ -4,10 +4,10 @@ description: 为创建或编辑数据视图而可调整的所有设置。
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 27214e6fc896243c0d29632cb0242b0d2e4f4653
+source-git-commit: c106e178c5aecdaf061001247a1ee6ef183d043e
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 100%
+source-wordcount: '1431'
+ht-degree: 99%
 
 ---
 
@@ -77,6 +77,10 @@ ht-degree: 100%
 ## 组件
 
 接下来，您可以设置数据视图的组件，也就是说您可以从架构元素创建量度和维度。您也可以使用标准组件。
+
+>[!IMPORTANT]
+>
+>最多可以将5,000个量度和5,000个维度添加到单个数据视图。
 
 1. 选择&#x200B;**[!UICONTROL “组件”]**&#x200B;选项卡。
 
