@@ -3,14 +3,15 @@ description: 描述如何在 Analysis Workspace 中筛选和排序表格的文�
 title: 排序和过滤表格
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 5469585897e483d721326fd6859ad74087407825
+source-git-commit: 2a60ed6dddf70b58c7c6e742eb01b9468cc2dd83
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 73%
+source-wordcount: '958'
+ht-degree: 67%
 
 ---
 
-# 排序和过滤表格
+
+# 筛选和排序自由格式表
 
 Analysis Workspace 中的自由格式表是进行交互式数据分析的基础。因此，它们可以包含数千行信息。对数据进行过滤和排序是有效地呈现最重要信息的关键部分。
 
@@ -18,13 +19,24 @@ Analysis Workspace 中的自由格式表是进行交互式数据分析的基础�
 
 >[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
-## 过滤表格 {#section_36E92E31442B4EBCB052073590C1F025}
+## 过滤表格
 
 Analysis Workspace 中的过滤器可帮助您显示最重要的信息。
 
 >[!NOTE]
 >
-> 只能筛选动态维度项，如本节所述。 无法筛选静态维度项目。 有关更多信息，请参阅 [自由格式表中的动态维度项与静态维度项](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
+> 仅可以过滤动态维度项，如本节所述。 无法筛选静态维度项目。 有关更多信息，请参阅 [自由格式表中的动态维度项与静态维度项](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
+
+## 筛选自由格式表行
+
+您可以使用多种方法来过滤自由格式表中的行。 
+
+- 单击行中的“X”
+- 右键单击>删除选定行
+- 表筛选器
+- 区段
+
+请务必阅读每种方法的影响 [自由格式表总计](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
 
 ### 从表中快速排除特定行
 
@@ -32,13 +44,20 @@ Analysis Workspace 中的过滤器可帮助您显示最重要的信息。
 
 >[!NOTE]
 >
->在按本节所述排除行时， [!UICONTROL **始终排除项目**] 规则将自动应用于高级过滤器对话框。 (您可以通过选择“过滤器”图标来查看应用的规则，然后 [**[!UICONTROL 显示高级]**](#apply-a-simple-or-advanced-filter-to-a-table).)
+>在按本节所述排除行时， [!UICONTROL **始终排除项目**] 规则将自动应用于高级过滤器对话框。 (您可以通过选择“过滤器”图标来查看应用的规则， [**[!UICONTROL 显示高级]**](#apply-a-simple-or-advanced-filter-to-a-table).)
 
 要从自由格式表中快速排除特定行，请执行以下操作：
 
 1. 将鼠标悬停在要排除的行上，然后选择x图标。
 
-   按住Shift键选择范围行，或按住Command键(在Mac上)或Ctrl键（在Windows上）选择多行。
+   按住Shift键选择一定范围的行，或按住Command键(在Mac上)或Ctrl键（在Windows上）选择多行。
+
+### 右键单击>删除选定的行
+
+1. 选择1行或更多行。
+1. 右键单击并选择 **[!UICONTROL 删除所选行]**.
+
+   此操作将从表中删除行并应用表过滤器。
 
 ### 对表应用简单或高级过滤器
 
@@ -54,12 +73,12 @@ Analysis Workspace 中的过滤器可帮助您显示最重要的信息。
 
    | 选项 | 函数 |
    |---------|----------|
-   | [!UICONTROL **搜索单词或短语**] | 指定要作为筛选依据的词或短语。 仅显示包含指定单词或确切短语的行。 |
+   | [!UICONTROL **搜索词或短语**] | 指定要作为过滤依据的单词或短语。 仅显示包含指定单词或确切短语的行。 |
    | [!UICONTROL **包括未指定的项（无）**] | 选择此选项可在表中显示不属于表格的任何维度的数据。<!--what is this?--> |
 
 1. （可选）要按不同条件或多个条件筛选，请选择&#x200B;[!UICONTROL **显示高级选项**]。
 
-   可以使用以下选项
+   可以使用以下高级筛选器选项：
 
    | 选项 | 函数 |
    |---------|----------|
@@ -72,6 +91,10 @@ Analysis Workspace 中的过滤器可帮助您显示最重要的信息。
 
    **过滤器**&#x200B;图标![蓝色过滤器图标过滤表格](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)在对表格应用过滤器时会变为蓝色。
 
+### 过滤器
+
+查看我们的 [筛选文档](/help/components/filters/filters-overview.md) 以了解更多详细信息。
+
 ## 对表格进行排序
 
 您可以按Analysis Workspace中作为维度或量度的任何列对自由格式表的数据进行排序。
@@ -82,8 +105,8 @@ Analysis Workspace 中的过滤器可帮助您显示最重要的信息。
 
    排序时考虑以下几点：
 
-   * 向下箭头按降序排序，向上箭头（默认）按升序排序。
-   * 您可以按字母顺序或数字顺序对维度进行排序。 例如，工作流程中可能有编号的步骤，并且可能希望按步骤编号排序。您可以按日期对与日期相关的维度进行排序。 或者，您也可以按字母顺序对数据源进行排序，如以下图像中所示。
+   - 向下箭头按降序排序，向上箭头（默认）按升序排序。
+   - 您可以按字母顺序或数字顺序对维度进行排序。 例如，工作流程中可能有编号的步骤，并且可能希望按步骤编号排序。您可以按日期对与日期相关的维度进行排序。 或者，您也可以按字母顺序对数据源进行排序，如以下图像中所示。
 
    ![](assets/sort-dimensions.png)
 
