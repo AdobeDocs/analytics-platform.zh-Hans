@@ -3,10 +3,10 @@ description: Analysis Workspace 中的日期比较允许您采用包含日期范
 title: 日期比较
 feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '729'
+ht-degree: 87%
 
 ---
 
@@ -21,7 +21,7 @@ Analysis Workspace 中的日期比较允许您采用包含日期范围的任何�
 1. 创建自由格式表，并且在该表中包含您要在一个时间段内比较的任何维度和量度。
 1. 右键单击表格行并选择&#x200B;**[!UICONTROL 比较时间段]**。
 
-   ![](assets/compare-time.png)
+   ![选择了比较时间段的表行](assets/compare-time.png)
 
    >[!IMPORTANT]
    >
@@ -41,13 +41,13 @@ Analysis Workspace 中的日期比较允许您采用包含日期范围的任何�
 
 1. 得出的比较与下图类似：
 
-   ![](assets/compare-time-result.png)
+   ![显示日期范围和百分比变化比较的自由格式表。](assets/compare-time-result.png)
 
    “百分比变化”列中的行在具有负值时显示红色，在具有正值时显示绿色。
 
 1. （可选）与在任何其他工作区项目中一样，您也可以根据这些时间比较创建可视化图表。例如，以下是一个条形图：
 
-   ![](assets/compare-time-barchart.png)
+   ![Workspace项目条形图。](assets/compare-time-barchart.png)
 
    请注意，为了在条形图中显示百分比变化，您必须在“[!UICONTROL 可视化设置]”中选中“[!UICONTROL 百分比]”设置。
 
@@ -55,7 +55,7 @@ Analysis Workspace 中的日期比较允许您采用包含日期范围的任何�
 
 现在，您可以向表中的每一列添加一个时间段，此操作允许您添加一个不用于日历设置的时间段。这是比较日期的另一种方法。
 
-1. 右键单击表格中的列并选择&#x200B;**[!UICONTROL 添加时间段列]** ![](assets/add-time-period-column.png)
+1. 右键单击表格中的列并选择&#x200B;**[!UICONTROL 添加时间段列]** ![突出显示添加时间段列的表列列表 ](assets/add-time-period-column.png)
 
 1. 根据您设置表格日期范围的具体方式，您可以使用以下选项进行比较：
 
@@ -71,11 +71,11 @@ Analysis Workspace 中的日期比较允许您采用包含日期范围的任何�
 
 1. 时间段将被插入到选定列的顶部：
 
-   ![](assets/add-time-period-column2.png)
+   ![显示当前日历期间和上一个日历月发生次数的自由格式表。](assets/add-time-period-column2.png)
 
 1. 您可以根据需要添加任意数量的时间列，还可以混合和匹配不同的日期范围：
 
-   ![](assets/add-time-period-column4.png)
+   ![自由格式表，显示本月、上个月、一年前的上一个月以及一年前的上一个月的一周的发生次数。](assets/add-time-period-column4.png)
 
 1. 此外，您也可以对每个列进行排序，这将根据排序所依据的列更改日顺序。
 
@@ -83,7 +83,7 @@ Analysis Workspace 中的日期比较允许您采用包含日期范围的任何�
 
 所有表格的新设置允许您&#x200B;**[!UICONTROL 将每列的日期调整为全部从同一行开始（适用于整个表）。]**。“适用于整个表”表示如果您要在表格中执行划分，并为划分更改此设置，那么它将更改整个表的设置。
 
-![](assets/date-comparison-setting.png)
+![“带有表设置的自由格式表”弹出窗口显示从每列到所有开始日期在选定同一行上的对齐日期。](assets/date-comparison-setting.png)
 
 >[!IMPORTANT]
 >
@@ -91,7 +91,7 @@ Analysis Workspace 中的日期比较允许您采用包含日期范围的任何�
 
 示例：如果选择调整日期，并在 2016 年 10 月和 9 月间进行月同比比较，那么左列将从 10 月 1 日开始，右列将从 9 月 1 日开始：
 
-![](assets/add-time-period-column3.png)
+![显示月同比百分比的比较。](assets/add-time-period-column3.png)
 
 <!-- 
 

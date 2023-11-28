@@ -4,10 +4,10 @@ description: 显示 Customer Journey Analytics 中数据视图的灵活性和强
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1317'
-ht-degree: 95%
+source-wordcount: '1382'
+ht-degree: 91%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 95%
 例如，在创建数据视图时，您可以根据字符串形式的 [!UICONTROL pageTitle] 架构字段创建一个[!UICONTROL 订单]量度。步骤如下：
 
 1. 在“组件”选项卡上，将 [!UICONTROL pageTitle] 拖入[!UICONTROL 包含的组件]下的[!UICONTROL 量度]部分中。
-   ![](../assets/use-case1a.png)
+   ![架构字段，其箭头指向组件名称列表中的pageTitle。](../assets/use-case1a.png)
 1. 现在，突出显示您刚才拖入的量度，并在右侧的[!UICONTROL 组件设置]下重命名它：
-   ![](../assets/orders.png)
+   ![在“组件设置”下突出显示“订单”的架构字段。](../assets/orders.png)
 1. 打开右侧的[!UICONTROL 添加/排除值]对话框，并指定以下内容：
-   ![](../assets/orders2.png)
+   ![在选定了“设置包含/排除值”和“区分大小写”的情况下，包含/排除值。](../assets/orders2.png)
 
    “确认”短语指示这是个订单。查看满足这些条件的所有页面标题后，系统会为每个实例统计“1”。结果是一个新量度（而非计算量度）。具有已添加/排除值的量度可用在可使用任何其他量度的任意位置。它可与 Attribution IQ、过滤器配合使用，以及用在可使用标准量度的任何其他位置。
 1. 您可以进一步为此量度指定归因模型，例如[!UICONTROL 回顾时间范围]为[!UICONTROL 会话]的[!UICONTROL 最近联系]。
@@ -34,15 +34,15 @@ ht-degree: 95%
 
 ## 2. 使用整数作为维度 {#integers}
 
-以前，整数会自动被视为Customer Journey Analytics中的量度。 现在，数字（包括 Adobe Analytics 中的自定义事件）可被视为维度。示例如下：
+以前，整数会被自动视为Customer Journey Analytics中的量度。 现在，数字（包括 Adobe Analytics 中的自定义事件）可被视为维度。示例如下：
 
 1. 将 [!UICONTROL call_length_min] 整数拖入[!UICONTROL 包含的组件]下的[!UICONTROL 维度]部分中：
 
-   ![](../assets/integers.png)
+   ![指向Dimension列表中call_length_mins的箭头。](../assets/integers.png)
 
 1. 您现在可以添加[!UICONTROL 值分段]以分段方式在报告中表示此维度。（若不添加分段，此维度的每个实例都会显示为 Workspace 报告中的一个行项目。）
 
-   ![](../assets/bucketing.png)
+   ![选择分段值的值分段。](../assets/bucketing.png)
 
 ## 3. 在流量图中将数值维度作为“量度” {#numeric}
 
@@ -51,7 +51,7 @@ ht-degree: 95%
 1. 在数据视图[组件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#configure-component-settings)选项卡上，将[!UICONTROL 营销渠道]架构字段拖动到[!UICONTROL [!UICONTROL 已包含组件]下的量度]区域。
 2. 在工作区报表中，此流程显示[!UICONTROL 营销渠道]流入[!UICONTROL 订单]:
 
-![](../assets/flow.png)
+![营销渠道从电子邮件流向退出/订单。](../assets/flow.png)
 
 ## 4. 子事件筛选 {#sub-event}
 
@@ -82,7 +82,7 @@ f. 指定“50”为值。
 
 不要忘记重命名每个量度以反映差异，例如“算法收入”：
 
-![](../assets/algo-revenue.png)
+![在“行为”列表下选择计数值的算法收入。](../assets/algo-revenue.png)
 
 有关数据视图设置的更多信息，请参阅[创建数据视图](/help/data-views/create-dataview.md)。
 有关数据视图的概念性概述，请参阅[数据视图概述](/help/data-views/data-views.md)。
@@ -99,9 +99,9 @@ f. 指定“50”为值。
 
 * [会话类型](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=zh-Hans#optional) - 此维度有两个值：1) [!UICONTROL New] 和 2) [!UICONTROL Returning]。[!UICONTROL 新的]行项目包括已确定为个人的首次会话的所有行为（即针对该维度的量度）。 其他所有内容都包含在[!UICONTROL 返回]的行项目中（假设所有内容都属于一个会话）。 如果量度不是任何会话的一部分，则它们属于该维度的“不适用”范围。 
 
-* [首次会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=zh-Hans#optional). 首次会话量度定义为个人在报告时段内定义的首次会话。
+* [首次会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=zh-Hans#optional). 首次会话量度被定义为个人在报告窗口内定义的首次会话。
 
-* [返回会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=zh-Hans#optional) 回归会话量度是非个人首次会话的会话数。—>
+* [返回会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=zh-Hans#optional) 回归会话指标是非个人首次会话的会话数。—>
 
 要访问这些组件，请执行以下操作：
 

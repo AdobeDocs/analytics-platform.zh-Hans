@@ -4,10 +4,10 @@ keywords: Analysis Workspace;将可视化与数据源同步
 title: 管理数据源
 feature: Visualizations
 exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '569'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '609'
+ht-degree: 93%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 1. 在数据表中，选择要与可视化图表关联的单元格（数据源）。
 1. 在可视化中，单击标题旁边的圆点，打开&#x200B;**[!UICONTROL 数据源]**&#x200B;对话框。选择&#x200B;**[!UICONTROL 显示数据源]**&#x200B;或&#x200B;**[!UICONTROL 锁定选择]**。
 
-   ![](assets/manage-data-source.png)
+   ![数据源选项对话框显示下一节中描述的选项。](assets/manage-data-source.png)
 
    如果将可视化图表同步到表格单元格，则可以创建新的（隐藏）表格并使用该表格对同步的可视化图表进行颜色编码。
 
@@ -39,10 +39,10 @@ ht-degree: 100%
 
 * 您可以创建一个概要可视化，并将其锁定到用于创建可视化图表的表格的单元格。当您启用“显示数据源”后，它会准确地显示表中信息的来源。源数据将会变成灰色：
 
-   ![](assets/data-source2.png)>
+  ![工作表中的数据源位置。](assets/data-source2.png)>
 * 您可以添加许多可视化图表，并在同一个表格的不同单元格中显示它们的来源，如下所示。此表与上述示例中的表相同，但显示来源的单元格（和量度）却不同：
 
-   ![](assets/data-source3.png)>
+  ![数据源位置，其中添加的可视化图表源自多个单元格](assets/data-source3.png)>
 * 单击左上侧的点（数据源设置），可查看是否有可视化图表连接到自由格式或对列表。将鼠标悬停在其上方将突出显示链接的可视化图表，单击它即会转到该可视化图表。
 
-   ![](assets/linked-visualizations.png)>
+  ![数据源设置突出显示热门页面查看次数的链接可视化图表。](assets/linked-visualizations.png)>

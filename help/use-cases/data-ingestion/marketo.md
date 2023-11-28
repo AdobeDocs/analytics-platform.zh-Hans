@@ -4,10 +4,10 @@ description: 了解如何将Marketo Engage数据引入Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 66%
+source-wordcount: '430'
+ht-degree: 63%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 66%
 
 ## 步骤3：在Customer Journey Analytics中设置与此数据集的连接
 
-要报告Experience Platform数据集，首先必须在Experience Platform和Customer Journey Analytics中的数据集之间建立连接。 在 [“创建连接”](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=cn) 下查找更多信息。
+为了报告Experience Platform数据集，您必须首先在Experience Platform和Customer Journey Analytics中的数据集之间建立连接。 在 [“创建连接”](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=cn) 下查找更多信息。
 
 ## 步骤 4：创建一个或多个数据视图
 
@@ -35,16 +35,16 @@ ht-degree: 66%
 
 您可以探索的一个用例是：2020 年 4 月至 6 月，潜在客户访问了多少网页？
 
-1. 打开 [Analytics Workspace](/help/analysis-workspace/home.md) 并创建新项目。拥有B2B/B2P CDP的客户可以在Customer Journey Analytics中进行B2C风格的分析。 B2B 对象尚不可用。
+1. 打开 [Analytics Workspace](/help/analysis-workspace/home.md) 并创建新项目。拥有B2B/B2P CDP的客户可以在Customer Journey Analytics中进行B2C风格分析。 B2B 对象尚不可用。
 
 1. 为网页视图创建一个[过滤器](/help/components/filters/create-filters.md)，如下所示：事件类型 = web.webpagedetails.pageViews :
 
-   ![](../assets/marketo-filter.png)
+   ![显示事件和事件类型的定义窗口](../assets/marketo-filter.png)
 
 1. 在自由格式表中，拉入您创建的过滤器“网页查看次数”，然后拉入月份日期范围。 这样，您可以每月通过潜在客户访问网页：
 
-   ![](../assets/marketo-freeform.png)
+   ![自由格式表，其中按月份显示事件。](../assets/marketo-freeform.png)
 
 1. 或者拉入以下维度：人员密钥或工作电子邮件地址。 这将为您提供每个潜在客户的网页访问：
 
-   ![](../assets/marketo-freeform2.png)
+   ![自由格式表，其中显示了事件和workEmail.Address及网页视图。](../assets/marketo-freeform2.png)

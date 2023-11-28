@@ -1,12 +1,12 @@
 ---
-description: 通过筛选单个量度，可在同一报表中进行量度比较。
-title: 筛选度量
+description: 通过筛选单个量度，可在同一报表中比较量度。
+title: 过滤指标
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 59%
+source-wordcount: '527'
+ht-degree: 53%
 
 ---
 
@@ -14,43 +14,43 @@ ht-degree: 59%
 
 在计算量度生成器中，可在量度定义中应用筛选器。如果要推导新量度以便在分析中使用，则这样做很有帮助。请记住，可通过筛选器生成器更新筛选器定义。如果作出了更改，则筛选器将在任何应用它的地方自动更新，其中包括它是计算量度定义的一部分的情况。
 
-![](assets/german-visitors.png)
+![国家/地区=德国和独特访客的过滤器的摘要和定义](assets/german-visitors.png)
 
 ## 创建筛选量度 {#create}
 
 假设我们要比较“德国访客”筛选器与“国际访客”筛选器的不同之处。您可以创建指标为您提供如下分析：
 
 * 两个群组之间的内容浏览行为是如何比较的？（另一个示例为：两个筛选器之间的转化率对比如何？）
-* 浏览某些页面的德国人与国际人相比，占总人数的百分比是多少？
+* 浏览某些页面的德国人与国际人相比占总人数的百分比是多少？
 * 在这些不同的筛选器访问哪些内容方面，最大的区别是什么？
 
-构建并保存名为“德国访客”的量度和名为“国际访客”的量度：
+生成并保存名为“德国访客”的量度和名为“国际访客”的量度：
 
 1. 在计算量度生成器中创建一个名为“德国访客”的临时过滤器，其中“国家/地区”等于“德国”。 将“国家/地区”维度拖入“定义”画布并选择 [!UICONTROL **德国**] 作为值：
 
-   ![](assets/segment-from-dimension.png)
+   ![显示国家/地区等于德国的临时筛选器](assets/segment-from-dimension.png)
 
    >[!NOTE]
    >
-   >您也可以在 [筛选器生成器](/help/components/filters/create-filters.md)，但我们通过在计算量度生成器中提供维度而简化了工作流程。 “临时”表示过滤器在 **[!UICONTROL 筛选器]** 左侧边栏中的列表。 但是，您可以将鼠标悬停在该列表旁边的“i”图标上，然后单击&#x200B;**[!UICONTROL 设为公用]**。
+   >您也可以在 [筛选器生成器](/help/components/filters/create-filters.md)，但我们已通过在计算量度生成器中提供维度而简化了该工作流程。 “临时”表示该过滤器在 **[!UICONTROL 过滤器]** 左侧边栏中的列表。 但是，您可以将鼠标悬停在该列表旁边的“i”图标上，然后单击&#x200B;**[!UICONTROL 设为公用]**。
 
 1. 将“德国”筛选器拖到“定义”画布中，并将“独特访客”量度拖动到其中：
 
-   ![](assets/german-visitors.png)
+   ![德国与独特访客平等国家概述与定义](assets/german-visitors.png)
 
 1. 选择 [!UICONTROL **保存**] 以保存计算指标。
 
 1. 在计算量度生成器中创建一个名为“国际访客”的临时过滤器，其中“国家/地区”不等于“德国”。
 
-   将“国家/地区”维度拖到“定义”画布中，然后选择 [!UICONTROL **德国**] 作为值，然后选择 [!UICONTROL **不等于**] 作为运算符。
+   将“国家/地区”维度拖入“定义”画布，然后选择 [!UICONTROL **德国**] 作为值，然后选择 [!UICONTROL **不等于**] 作为运算符。
 
-1. 将“独特访客”指标拖动到其中。
+1. 将独特访客指标拖动到其中。
 
 1. 选择 [!UICONTROL **保存**] 以保存计算指标。
 
 1. 在 Analysis Workspace 中，将&#x200B;**[!UICONTROL 页面]**&#x200B;维度拖动到自由格式表中，并将两个新的计算指标拖动到顶部且使它们彼此相邻：
 
-   ![](assets/workspace-pages.png)
+   ![显示德国访客和国际访客的“页面”维度的自由格式表](assets/workspace-pages.png)
 
 以下是一段视频概述：
 
@@ -63,8 +63,8 @@ ht-degree: 59%
 1. 将“德国（或国际）访客”筛选器拖到画布中。
 1. 将另一个“德国（或国际）访客”筛选器拖到下方。但这一次，请单击其配置（齿轮）图标以选择指标类型“合计”。格式应当为“百分比”。运算符应当为“除以”。您最终会获得以下指标定义：
 
-   ![](assets/cm_metric_total.png)
+   ![国家/地区等于德国和独特访客总数](assets/cm_metric_total.png)
 
 1. 将此指标应用于您的项目：
 
-   ![](assets/cm_percent_total.png)
+   ![包含页面和德国访客总数的百分比的自由格式表](assets/cm_percent_total.png)

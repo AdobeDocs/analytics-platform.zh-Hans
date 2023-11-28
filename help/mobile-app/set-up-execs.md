@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
-source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 76%
+source-wordcount: '717'
+ht-degree: 74%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 76%
 要确保执行用户可以在应用程序上访问您的记分卡，请确保：
 
 * 执行用户设备上的移动操作系统满足以下最低要求：iOS 版本 10 或更高版本，或者 Android 版本 4.4 (KitKat) 或更高版本
-* 用户具有有效的Customer Journey Analytics登录信息。
+* 执行用户已有效登录Customer Journey Analytics。
 * 您已为执行用户正确创建了移动记分卡，并与他们共享了这些记分卡。
 * 执行用户有权访问记分卡中包含的组件。请注意，在共享记分卡时，您可以选择&#x200B;**[!UICONTROL 共享嵌入的组件]**&#x200B;选项。
 
@@ -39,19 +39,19 @@ ht-degree: 76%
 
 **对于 iOS 上的执行用户：**
 
-单击以下链接(此链接也可在Customer Journey Analytics中找到，位于 **[!UICONTROL 工具]** > **[!UICONTROL Analytics功能板（移动设备OPP）]**)并按照提示下载、安装和打开应用程序：
+单击以下链接(此链接也可在Customer Journey Analytics下的链接中使用) **[!UICONTROL 工具]** > **[!UICONTROL Analytics功能板（移动操作）]**)并按照提示下载、安装和打开应用程序：
 
 `[iOS link](https://apple.co/2zXq0aN)`
 
 **对于 Android 上的执行用户：**
 
-单击以下链接(此链接也可在Customer Journey Analytics中找到，位于 **[!UICONTROL 工具]** > **[!UICONTROL Analytics功能板（移动应用程序）]**)并按照提示下载、安装和打开应用程序：
+单击以下链接(此链接也可在Customer Journey Analytics下的链接中使用) **[!UICONTROL 工具]** > **[!UICONTROL Analytics功能板（移动应用程序）]**)并按照提示下载、安装和打开应用程序：
 
 `[Android link](https://bit.ly/2LM38Oo)`
 
-下载并安装完毕后，执行用户可以使用其现有的Customer Journey Analytics凭据登录应用程序；我们同时支持AdobeID和Enterprise/Federated ID。
+下载并安装后，执行用户可以使用其现有的Customer Journey Analytics凭据登录应用程序；我们同时支持AdobeID和Enterprise/Federated ID。
 
-![应用程序欢迎屏幕](assets/welcome.png)
+![Adobe Analytics功能板欢迎屏幕](assets/welcome.png)
 
 ## 帮助执行用户访问您的记分卡
 
@@ -74,7 +74,7 @@ ht-degree: 76%
 
 向执行用户说明图块在您共享的记分卡中的显示方式。
 
-![说明图块](assets/newexplain.png)
+![说明图块，包括日期范围、区段过滤器以及选定的量度和维度](assets/newexplain.png)
 
 ![示例记分卡](assets/intro_scorecard.png)
 

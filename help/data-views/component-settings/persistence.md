@@ -4,10 +4,10 @@ description: 决定维度值如何或是否从一个事件保持到下一个事�
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 81%
+source-wordcount: '865'
+ht-degree: 80%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 81%
 
 [!UICONTROL 持久性]表示给定的维度值能否在从中设置它的事件之外与指标相关。它使用分配和到期的组合。
 
-![持久性](../assets/persistence.png)
+![突出显示持久性选项的数据视图窗口](../assets/persistence.png)
 
 * 通过&#x200B;**分配**，可决定一次可在单个列中保留多个维度项时保留哪个值。
 

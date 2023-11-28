@@ -5,11 +5,11 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-exl-id: 802a8f0b-10c2-4adc-a4ec-25f3d28f3002
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+exl-id: bf765144-34f8-465b-b06d-53e4ca91014a
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 4%
+source-wordcount: '355'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 4%
 
 1. 单击 *单元格图标* 在 *数据视图* 部分。
 
-   ![单击单元格图标。](/help/report-builder/assets/cell-icon.png)
+   ![创建单元格图标高亮显示的新数据块窗口。](/help/report-builder/assets/cell-icon.png)
 
 1. 选择单元格位置以将数据视图添加到所选单元格。
 
@@ -38,7 +38,7 @@ ht-degree: 4%
 
 1. 选择要分配给单元格的数据视图。
 
-   ![选择数据视图.](/help/report-builder/assets/select-data-view.png)
+   ![显示“选择数据”视图的“Report Builder快速编辑”窗格。](/help/report-builder/assets/select-data-view.png)
 
 1. 单击&#x200B;**应用**。
 

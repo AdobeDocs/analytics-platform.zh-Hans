@@ -3,10 +3,10 @@ title: 创建受众并将受众发布到实时客户档案
 description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: 5bb7e04deb52e4805e7151afce0bad476df7f13d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1613'
-ht-degree: 58%
+source-wordcount: '1641'
+ht-degree: 57%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 58%
 
    在发布受众之前，请配置这些设置。
 
-   ![如何创建受众的屏幕截图](assets/create-audience.png)
+   ![下一节中介绍的创建受众倾斜设置的屏幕截图。](assets/create-audience.png)
 
    | 设置 | 描述 |
    | --- | --- |
@@ -52,7 +52,7 @@ ht-degree: 58%
 
    受众预览显示在右边栏中。它允许您对所创建的受众进行总结分析。
 
-   ![数据预览的屏幕截图](assets/data-preview.png)
+   ![显示受众汇总分析的数据预览屏幕截图。](assets/data-preview.png)
 
    | 预览设置 | 描述 |
    | --- | --- |
@@ -108,7 +108,7 @@ Customer Journey Analytics您可以在Platform中通过转到 **[!UICONTROL 区�
 
 您可以将Customer Journey Analytics受众拖到Adobe Experience Platform区段的区段定义中。
 
-![](assets/audiences-aep.png)
+![AdobeExperience Platform UI在左窗格中突出显示区段，在主面板中突出显示CJA受众。](assets/audiences-aep.png)
 
 ## 常见问题解答 {#faq}
 

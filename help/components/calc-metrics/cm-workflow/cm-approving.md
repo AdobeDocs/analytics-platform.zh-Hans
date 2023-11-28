@@ -3,10 +3,10 @@ description: 在计算量度管理器内，您可以设置一个工作流程，�
 title: 批准计算量度
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: 124834d0ad1c53fd5930b07a9aa0893a15a49875
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 19%
+source-wordcount: '245'
+ht-degree: 18%
 
 ---
 
@@ -34,6 +34,6 @@ ht-degree: 19%
 
 1. 单击&#x200B;**[!UICONTROL 确定]**。
 
-   请注意列表中计算量度旁边的批准图标：![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_CheckmarkCircle_18_N.svg)
+   请注意列表中计算量度旁边的批准图标：![批准图标圆圈中的复选标记。](https://spectrum.adobe.com/static/icons/workflow_18/Smock_CheckmarkCircle_18_N.svg)
 
 1. （可选）要在计算量度管理器中过滤计算量度列表以仅显示批准的量度，请选择 **筛选** 图标，展开 **[!UICONTROL 其他筛选器]**，然后选择 **[!UICONTROL 已批准]**.

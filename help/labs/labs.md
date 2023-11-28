@@ -4,10 +4,10 @@ description: 预览 Customer Journey Analytics 的原型项目
 role: Admin
 exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
 feature: Labs
-source-git-commit: 9a4ae8ae8c545589de0556059520b31364de367c
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 91%
+source-wordcount: '425'
+ht-degree: 89%
 
 ---
 
@@ -55,13 +55,13 @@ ht-degree: 91%
 
 1. 单击&#x200B;**[!UICONTROL 提供反馈]**，以便在使用原型时随时在消息框中提供反馈。
 
-   ![feedback_box](assets/give_feedback.png)
+   ![反馈窗口](assets/give_feedback.png)
 
 1. 单击&#x200B;**[!UICONTROL 提交]**&#x200B;以发送您的反馈。
 
 1. 要尝试使用其他原型，或退出原型环境，请单击屏幕右上方的&#x200B;**[!UICONTROL 离开原型]**，并完成有关原型的简短调查。退出原型环境后，对原型项目所做的任何更改都将丢失。
 
-   ![新反馈框](assets/short-survey.png)
+   ![智能路径反馈窗口](assets/short-survey.png)
 
 1. 单击&#x200B;**[!UICONTROL 提交]**&#x200B;以返回主“预览”门户。
 

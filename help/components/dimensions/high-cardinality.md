@@ -4,9 +4,9 @@ description: 说明Customer Journey Analytics如何处理具有许多唯一值�
 feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
-source-git-commit: 8f64e0a31ed3bca7185674490fc36b78598f5b1c
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '526'
 ht-degree: 7%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 7%
 
 当您请求具有过多唯一值的报表时，Analysis Workspace会在维度标题中显示一个指示器，以说明并未包含所有维度项。 例如，“行：超过22,343,156的1-50”。 “大于”关键字表示已对报表应用了一些优化，以返回最重要的维度项目。
 
-![工作区预览](assets/high-cardinality.png)
+![工作区中显示“大于”关键字的自由格式表，可显示1-50个大于22,343,156的关键字](assets/high-cardinality.png)
 
 ## 确定要显示的维度项目
 

@@ -1,12 +1,12 @@
 ---
-description: Adobe Analysis Workspace 及其相关组件中的已知限制列表
+description: 了解AdobeAnalysis Workspace及其相关组件中的已知限制
 title: Analysis Workspace 中的已知限制
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
-source-git-commit: a69f9eef39c0eceee1964a3b8741b7538b218ece
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
 source-wordcount: '339'
-ht-degree: 88%
+ht-degree: 84%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 88%
 ## “组件”>“过滤器”
 
 * 某些量度和维度不可过滤，如[!UICONTROL 发生次数]、[!UICONTROL 独特访客]，等等。
-* 在 [面板拖放区域](/help/analysis-workspace/c-panels/panels.md) 是一种快速过滤器。 除非将它们公开，否则它们不会显示在工作区或过滤器组件管理器的左边栏中。 有关更多信息，请参阅 [快速过滤器](/help/components/filters/quick-filters.md).
+* 在中创建的临时过滤器 [面板拖放区域](/help/analysis-workspace/c-panels/panels.md) 是一种快速过滤器。 除非将这些变量公开，否则它们不会显示在工作区或过滤器组件管理器的左边栏中。 有关更多信息，请参阅 [快速过滤器](/help/components/filters/quick-filters.md).
 
 ## “组件”>“计算量度”
 

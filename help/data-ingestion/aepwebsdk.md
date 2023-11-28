@@ -4,10 +4,10 @@ description: 阐述如何通过 Adobe Experience Platform Web SDK 和 Edge Netwo
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '3607'
-ht-degree: 86%
+source-wordcount: '3616'
+ht-degree: 85%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 86%
 
    1. 选择 **[!UICONTROL 体验事件]**.
 
-      ![创建模式](./assets/create-ee-schema-wizard-step-1.png)
+      ![创建高亮显示体验事件的架构](./assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
@@ -71,7 +71,7 @@ ht-degree: 86%
 
    1. 输入 **[!UICONTROL 架构显示名称]** （可选）a **[!UICONTROL 描述]**.
 
-      ![命名您的模式](./assets/create-ee-schema-wizard-step-2.png)
+      ![创建架构窗口，其中显示为您的架构字段命名](./assets/create-ee-schema-wizard-step-2.png)
 
    1. 选择&#x200B;**[!UICONTROL 完成]**。
 

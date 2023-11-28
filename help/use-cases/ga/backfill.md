@@ -4,10 +4,10 @@ description: 介绍如何使用Adobe Customer Journey Analytics将Google Analyti
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 91%
+source-wordcount: '634'
+ht-degree: 90%
 
 ---
 
@@ -81,7 +81,7 @@ FROM
 
 您可以将 GA 事件数据映射到以前创建的现有数据集，或者使用所选择的任何 XDM 架构创建数据集。选择好架构后，Experience Platform 则应用机器学习，自动将 Google Analytics 数据中的每个字段预映射到您的 [XDM 架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html#ui)。
 
-![架构图](../assets/schema-map.png)
+![突出显示GA数据字段和目标架构映射的架构映射](../assets/schema-map.png)
 
 完成将字段映射到 XDM 架构中后，您可以定期计划此导入并在摄取过程中应用错误验证。此验证可确保您导入的数据没有任何问题。
 
@@ -97,7 +97,7 @@ Platform 中的某些 XDM 字段需要正确的格式才能正确处理数据。
 
   ![时间戳](../assets/timestamp.png)
 
-* **`_id`**：此字段必须具有值 — Customer Journey Analytics不管该值是什么。 您可以在字段中添加“1”：
+* **`_id`**：该字段中必须有一个值 — Customer Journey Analytics不关心该值是什么。 您可以在字段中添加“1”：
 
   ![ID](../assets/_id.png)
 

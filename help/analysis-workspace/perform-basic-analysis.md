@@ -4,10 +4,10 @@ description: 介绍如何使用基础的可视化图表来分析 Customer Journe
 feature: Workspace Basics
 exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
 solution: Customer Journey Analytics
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 100%
+source-wordcount: '153'
+ht-degree: 90%
 
 ---
 
@@ -23,6 +23,6 @@ ht-degree: 100%
 
 * 按数据源描述受众规模，例如广告展示数据、Customer Journey Analytics 数据、电子邮件数据、POS 数据、呼叫中心数据和调查数据。
 
-![](assets/cja-basic-analysis.png)
+![基本分析图表的可视化示例。 ](assets/cja-basic-analysis.png)
 
-![](assets/cja-basic-analysis2.png)
+![基本分析图表的可视化图表更多示例](assets/cja-basic-analysis2.png)

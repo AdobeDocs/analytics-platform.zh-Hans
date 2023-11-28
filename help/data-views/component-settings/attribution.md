@@ -4,9 +4,9 @@ description: 使您可设置指标的默认归因。
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '1953'
 ht-degree: 35%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 35%
 
 归因可让您自定义维度项如何获得成功事件的积分。
 
-![](../assets/attribution-settings.png)
+![突出显示“设置归因”选项的数据视图窗口](../assets/attribution-settings.png)
 
 例如：
 
@@ -46,7 +46,7 @@ ht-degree: 35%
 
 1. 选择组件，然后展开屏幕右侧的归因部分。
 
-   ![](../assets/attribution-settings.png)
+   ![突出显示“设置归因”选项的数据视图窗口](../assets/attribution-settings.png)
 
 1. 选择 [!UICONTROL **设置归因**]，然后在中选择归因模型 [!UICONTROL **归因模型**] 下拉菜单。
 

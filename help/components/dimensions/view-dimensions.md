@@ -3,10 +3,10 @@ description: 对于非时间维度显示前 5 个值（对于时间维度显示�
 title: 如何在Customer Journey Analytics工作区中预览维度
 feature: Dimensions
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 95%
+source-wordcount: '212'
+ht-degree: 90%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 95%
 
 将鼠标悬停在某个维度旁边的“信息”(i) 图标上。此时会显示非时间维度的前 5 个值（对于时间维度，显示前 15 个值）。过去，这些值会保持不变（例如，选定的 5 个值永远不会更改）。
 
-![](assets/dimension-preview.png)
+![非时间维度的前5个值。](assets/dimension-preview.png)
 
 但现在，默认情况下将显示动态值而非静态值，同时还会提供一个将动态值转变为静态值的选项。其他注意事项：
 
@@ -22,7 +22,7 @@ ht-degree: 95%
 * 如果移动或复制动态维度列，那么这些维度值将变为静态值。
 * 将鼠标悬停在一个静态维度列时，您会看到一个锁定图标，它表明该维度是静态的。
 
-![](assets/dimension_static.png)
+![突出显示锁定图标的Dimension列弹出窗口。](assets/dimension_static.png)
 
 ## 显示维度项目
 

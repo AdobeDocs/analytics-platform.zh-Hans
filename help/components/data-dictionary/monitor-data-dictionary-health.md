@@ -4,16 +4,16 @@ title: 监测数据词典健康状况
 feature: Components
 role: Admin
 exl-id: 8bc89ac7-078d-469d-8627-3905823d4100
-source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 89%
+source-wordcount: '241'
+ht-degree: 87%
 
 ---
 
 # 监测数据词典健康状况
 
-Customer Journey Analytics管理员负责维护正常的数据字典。
+Customer Journey Analytics管理员负责维护健康的数据字典。
 
 ## 健康数据词典的特征
 
@@ -37,9 +37,9 @@ Customer Journey Analytics管理员负责维护正常的数据字典。
 
    显示“数据词典”窗口。
 
-   ![数据词典管理员视图](assets/data-dictionary-admin.png)
+   ![显示字典运行状况的数据字典管理员视图](assets/data-dictionary-admin.png)
 
-1. 确保在下拉菜单中选择了正确的数据视图。
+1. 确保在下拉菜单中选择正确的数据视图。
 
 1. 在&#x200B;[!UICONTROL **词典健康状况**]&#x200B;选项卡上，选择以下任一选项旁边的&#x200B;[!UICONTROL **视图**]：
 

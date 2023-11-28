@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: 查询服务；查询服务；sql语法
-source-git-commit: 5caae6c8dd38eb5c6ef9cf02cdff965add75b312
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 69%
+source-wordcount: '886'
+ht-degree: 68%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 69%
 
 Adobe Analytics Adobe Experience Platform假设您通过 [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)，然后使用此数据集创建了Customer Journey Analytics连接。
 
-![数据流](assets/compare.png)
+![数据通过Data Connector从Adobe Analytics流入Adobe Experience Platform，并使用CJA连接流入客户历程Analytics。](assets/compare.png)
 
 接下来，您创建了一个数据视图，随后在Customer Journey Analytics中报告此数据时，您注意到与Adobe Analytics中的报告结果存在差异。
 

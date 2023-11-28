@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1307'
 ht-degree: 77%
 
 ---
@@ -41,19 +41,19 @@ ht-degree: 77%
 
 **对于 iOS 上的执行用户：**
 
-单击以下链接(此链接也可在Customer Journey Analytics中找到，位于 **[!UICONTROL 工具]** > **[!UICONTROL Analytics功能板（移动应用程序）]**)并按照提示下载、安装和打开应用程序：
+单击以下链接(此链接也可在Customer Journey Analytics下的链接中使用) **[!UICONTROL 工具]** > **[!UICONTROL Analytics功能板（移动应用程序）]**)并按照提示下载、安装和打开应用程序：
 
 [iOS 链接](https://apple.co/2zXq0aN)
 
 **对于 Android 上的执行用户：**
 
-单击以下链接(此链接也可在Customer Journey Analytics中找到，位于 **[!UICONTROL 工具]** > **[!UICONTROL Analytics功能板（移动应用程序）]**)并按照提示下载、安装和打开应用程序：
+单击以下链接(此链接也可在Customer Journey Analytics下的链接中使用) **[!UICONTROL 工具]** > **[!UICONTROL Analytics功能板（移动应用程序）]**)并按照提示下载、安装和打开应用程序：
 
 [Android 链接](https://bit.ly/2LM38Oo)
 
 下载并安装完毕后，执行用户可以使用其现有的Customer Journey Analytics凭据登录应用程序。
 
-![应用程序欢迎屏幕](assets/welcome.png)
+![Customer Journey Analytics应用程序欢迎屏幕](assets/welcome.png)
 
 ## 使用功能板 {#use-dashboards}
 
@@ -63,15 +63,15 @@ ht-degree: 77%
 
    ![登录序列](assets/signseq.png)
 
-1. 选择一个公司。登录功能板后，会显示&#x200B;**[!UICONTROL 选择公司]**&#x200B;屏幕。此屏幕会列出您所属的登录公司。点按与您共享的记分卡关联的公司名称。
+1. 选择一个公司。登录功能板后，会显示&#x200B;**[!UICONTROL 选择公司]**&#x200B;屏幕。此屏幕会列出您所属的登录公司。点按与您共享的记分卡所关联的公司名称。
 
    记分卡列表会显示与您共享的所有记分卡。
 
 1. 点按要查看的记分卡。
 
-   如果您通过一次登录可访问多个组织，则组织中的所有记分卡都可在记分卡列表中使用。
+   如果您在一次登录中有权访问多个组织，则组织中的所有记分卡都可在记分卡列表中使用。
 
-   您可以根据记分卡标题、组织名称或最近查看的记分卡对记分卡列表进行排序。 您甚至可以搜索特定的记分卡。
+   您可以根据记分卡标题、组织名称或最近查看的记分卡对记分卡列表进行排序。 您甚至可以搜索特定记分卡。
 
    ![选择公司](assets/mobile-home-screen.png)
 
@@ -153,7 +153,7 @@ ht-degree: 77%
 | 术语 | 定义 |
 |--- |--- |
 | 使用者 | 在移动设备上通过Customer Journey Analytics查看关键指标和见解的执行角色 |
-| 策划人 | 通晓数据的角色，可从Customer Journey Analytics中查找和分发见解并配置供使用者查看的记分卡 |
+| 策划人 | 精通数据的人员，可从Customer Journey Analytics中查找和分发见解并配置要供使用者查看的记分卡 |
 | 策划 | 创建或编辑移动记分卡的操作，记分卡中包含用户的相关量度、维度和其他组件 |
 | 记分卡 | 包含一个或多个图块的功能板视图 |
 | 图块 | “记分卡视图”中量度的呈现方式 |

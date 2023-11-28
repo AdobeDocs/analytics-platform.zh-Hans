@@ -3,10 +3,10 @@ title: 标签和政策
 description: 了解 Adobe Experience Platform 中定义的数据标签和政策如何影响 Customer Journey Analytics 中的数据视图和报告。
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
-source-git-commit: 72f4305558d1dfa7a7142ee7b6ff65972564b6bf
-workflow-type: ht
-source-wordcount: '501'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '530'
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 100%
 
 再次单击左边栏中的[!UICONTROL 过滤器]图标，在&#x200B;**[!UICONTROL 数据管理]**&#x200B;下，单击&#x200B;**[!UICONTROL 政策]**：
 
-![](assets/filter-policies.png)
+![按显示强制分析选定内容的列表过滤包含的组件](assets/filter-policies.png)
 
 单击&#x200B;**[!UICONTROL 应用]**&#x200B;查看已启用的策略。
 
@@ -67,7 +67,7 @@ ht-degree: 100%
 
 这些组件在左边栏[!UICONTROL 架构字段]列表中显示为灰色：
 
-![](assets/component-greyed.png)
+![组件呈灰显状态，策略消息指示策略已应用于此字段以限制数据的使用](assets/component-greyed.png)
 
 您也无法保存包含阻止字段的数据视图。
 

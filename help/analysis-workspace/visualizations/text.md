@@ -3,10 +3,10 @@ description: 允许您将用户定义的文本添加至您的 Workspace。
 title: 文本
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '168'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '193'
+ht-degree: 87%
 
 ---
 
@@ -18,16 +18,16 @@ ht-degree: 100%
 
 编辑文本框或描述时，您可以调整字体大小（标题级别）、样式（粗体、斜体、下划线）以及对齐所选文本。还可以添加项目符号和编号列表。
 
-![](assets/format.png)
+![突出显示文本调色板的Workspace项目的文本选项。](assets/format.png)
 
 ## 添加超链接 {#hyperlinks}
 
 要添加超链接，请突出显示文本并在菜单中单击超链接图标。超链接可以链接到外部网站、文档页面、[Workspace 项目/面板/可视化图表](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html?lang=zh-Hans) 等等，以进一步协助您项目的收件人。
 
-![](assets/hyperlink.png)
+![突出显示链接图标的文本选项。](assets/hyperlink.png)
 
 ## 添加图像 {#images}
 
 要将图像添加到项目，请在菜单中单击图像图标，然后插入公共图像 URL。该图像 URL 必须可公开访问、以 `https` 开头并且格式为 `.png`、`.jpeg`、`.jpg` 或 `.gif`。支持静态图像和动画图像。
 
-![](assets/image.png)
+![选中了图像图标的文本选项。](assets/image.png)

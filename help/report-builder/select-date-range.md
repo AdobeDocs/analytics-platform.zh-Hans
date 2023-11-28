@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 92%
+source-wordcount: '1087'
+ht-degree: 89%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 92%
 
 您可以通过选项在任意选择的日期范围上排除当天。
 
-![选择排除当天。](./assets/image17.png)
+![选择了日历并选择了排除当天的Report Builder快速编辑窗格。](./assets/image17.png)
 
 ## 使用日历
 
@@ -62,7 +62,7 @@ ht-degree: 92%
 
 要反向设置日期范围，请先单击结束日期，然后再单击开始日期。
 
-![单击结束日期，然后单击开始日期。](./assets/image18.png)
+![Report Builder日期范围窗格，其中显示选定的日历和结束日期以及开始日期。](./assets/image18.png)
 
 ### 预设下拉菜单
 
@@ -76,7 +76,7 @@ ht-degree: 92%
 
 1. 为您的开始和/或结束日期选择滚动表达式。
 
-   ![选择使用滚动日期，然后选择滚动表达式。](./assets/image19.png)
+   ![Report Builder日期范围窗格，其中显示使用选定的滚动日期和滚动表达式。](./assets/image19.png)
 
    **开始** - 允许您选择某天、周、月、季度或年的开始。
 
@@ -86,11 +86,11 @@ ht-degree: 92%
 
 1. 选择天、周、月、季度或年作为滚动时段。
 
-   ![选择当天。](./assets/image20.png)
+   ![显示所选当天的Report Builder日期范围窗格。](./assets/image20.png)
 
 1. 从滚动日期中加上或减去日、周、月、季度或年。
 
-   ![选择当天加14天。](./assets/image21.png)
+   ![Report Builder日期范围窗格，显示所选的当天加14天。](./assets/image21.png)
 
 1. 单击“下一步”定义日期范围。
 

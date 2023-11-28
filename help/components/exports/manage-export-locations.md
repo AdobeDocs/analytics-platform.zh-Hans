@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: 管理云导出位置和帐户
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
-source-git-commit: b0eff3702ce92bab8a3d75bc07e1b33c168805c2
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '508'
 ht-degree: 5%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 5%
 
 1. 选择 [!UICONTROL **位置**] 选项卡，然后选择要编辑的位置。
 
-   ![编辑位置](assets/locations-edit.png)
+   ![显示位置选项卡和位置列表的“导出”窗口。](assets/locations-edit.png)
 
 1. 选择 [!UICONTROL **编辑**].
 
@@ -71,7 +71,7 @@ ht-degree: 5%
 
 1. 选择 [!UICONTROL **位置**] 选项卡，然后选择要删除的一个或多个位置。
 
-   ![编辑位置](assets/locations-edit.png)
+   ![显示位置选项卡和位置列表的“导出”窗口](assets/locations-edit.png)
 
 1. 选择&#x200B;[!UICONTROL **删除**]。
 
@@ -89,7 +89,7 @@ ht-degree: 5%
 
 1. 选择 [!UICONTROL **位置帐户**] 选项卡。
 
-   ![帐户页面](assets/account-add.png)
+   ![显示位置帐户选项卡的“导出”窗口](assets/account-add.png)
 
 1. 选择 [!UICONTROL **查看详细信息**] 在要编辑的帐户上。
 
@@ -105,7 +105,7 @@ ht-degree: 5%
 
 1. 选择 [!UICONTROL **位置帐户**] 选项卡。
 
-   ![帐户页面](assets/account-add.png)
+   ![显示位置帐户选项卡的“导出”窗口](assets/account-add.png)
 
 1. 在要编辑的帐户上选择3点图标，然后选择 [!UICONTROL **帐户密钥**].
 
@@ -115,7 +115,7 @@ ht-degree: 5%
 
 1. 选择 [!UICONTROL **位置帐户**] 选项卡。
 
-   ![帐户页面](assets/account-add.png)
+   ![显示位置帐户选项卡的“导出”窗口](assets/account-add.png)
 
 1. 在要编辑的帐户上选择3点图标，然后选择 [!UICONTROL **删除帐户**].
 

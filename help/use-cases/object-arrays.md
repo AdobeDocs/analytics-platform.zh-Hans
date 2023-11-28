@@ -1,10 +1,10 @@
 ---
 title: 使用对象数组
-description: 了解Customer Journey Analytics如何报告数据层次结构。
+description: 了解如何Customer Journey Analytics数据层次结构报告。
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 66%
@@ -15,7 +15,7 @@ ht-degree: 66%
 
 某些平台模式可以具有对象数组。Adobe Customer Journey Analytics支持摄取和报告事件、查找和配置文件数据中的对象数组。 最常见的示例之一是包含多个产品的购物车。每个产品都有一个名称、SKU、类别、价格、数量以及要跟踪的任何其他维度。所有这些方面都有不同的要求，但必须都属于相同点击。
 
-在以前版本的 Adobe Analytics 中，此功能是通过 `products` 变量实现的。它是一个连接字符串，用分号 (`;`) 分隔以区分产品不同方面，同时用逗号 (`,`) 描述不同产品。它是有限支持“对象数组”的唯一变量。多值变量（如列表变量）可以支持数组的等效内容，但它们不能支持“对象数组”。Customer Journey Analytics通过支持单行数据中任意深度的层次结构扩展了此概念，任何以前版本的Adobe Analytics均不提供此功能。
+在以前版本的 Adobe Analytics 中，此功能是通过 `products` 变量实现的。它是一个连接字符串，用分号 (`;`) 分隔以区分产品不同方面，同时用逗号 (`,`) 描述不同产品。它是有限支持“对象数组”的唯一变量。多值变量（如列表变量）可以支持数组的等效内容，但它们不能支持“对象数组”。Customer Journey Analytics通过支持单行数据中任意深度的层次结构扩展了这一概念，任何以前版本的Adobe Analytics均不提供该功能。
 
 ## 相同事件示例
 
@@ -83,7 +83,7 @@ ht-degree: 66%
 
 ### 相同事件示例（报表行为）
 
-仅使用上述事件，下表显示了具有某些维度和量度组合的工作区报表。
+仅使用上述事件，下表显示了包含某些维度和量度组合的工作区报表。
 
 | `product : name` | `product : orders` | `product : revenue` |
 | --- | --- | --- |
@@ -143,7 +143,7 @@ Customer Journey Analytics会根据表有选择地查看对象的维度和量度
 | `extended` | `50` |
 | `Total` | `250` |
 
-Customer Journey Analytics会查看事件的以下部分以生成报告：
+Customer Journey Analytics会查看事件的这些部分以生成报表：
 
 ```diff
 {
@@ -245,7 +245,7 @@ Customer Journey Analytics会查看事件的以下部分以生成报告：
 
 ### 组合量度
 
-如果Customer Journey Analytics位于不同的对象级别，则它本身不会组合名称相似的指标。
+如果Customer Journey Analytics在不同的对象级别上，则它本身不会组合名称相似的指标。
 
 | `product : category` | `product : revenue` | `product : warranty : revenue` |
 | --- | --- | --- |

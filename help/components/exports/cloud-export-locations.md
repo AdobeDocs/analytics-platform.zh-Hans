@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: 配置云导出位置
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1502'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 4%
 
    选择 [!UICONTROL **位置帐户**] 选项卡，选择要添加位置的现有帐户上的3点图标，然后选择 [!UICONTROL **添加位置**].
 
-   ![将位置添加到现有帐户](assets/add-location-existing-account.png)
+   ![GCP帐户和省略号下拉菜单，其中显示已选择添加位置](assets/add-location-existing-account.png)
 
    此时将显示“位置”对话框。
 

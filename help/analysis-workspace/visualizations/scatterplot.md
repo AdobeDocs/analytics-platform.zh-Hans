@@ -3,10 +3,10 @@ title: 散点图
 description: 显示与最多三个量度之间的关系的可视化图表。
 feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '111'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '116'
+ht-degree: 94%
 
 ---
 
@@ -20,4 +20,4 @@ ht-degree: 100%
 * 第三列确定点的半径。
 * 散点图可视化图表将忽略自由格式表中的所有后续列。
 
-![散点图](assets/scatter.png)
+![显示多个维度项目的散点图示例 ](assets/scatter.png)

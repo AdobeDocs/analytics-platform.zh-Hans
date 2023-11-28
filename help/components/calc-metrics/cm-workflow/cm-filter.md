@@ -1,15 +1,16 @@
 ---
 description: 按标记、数据视图、所有者和其他筛选器（“全部显示”、“我的”、“已与我共享”、“收藏”和“已批准”）进行筛选。
-title: 过滤计算量度
+title: 筛选计算量度
 feature: Calculated Metrics
-source-git-commit: 59b120022fcb149e6bfcab0039efc5a802995b92
+exl-id: 902da464-14de-45b9-bd92-d2db064cb095
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 29%
+source-wordcount: '216'
+ht-degree: 30%
 
 ---
 
-# 过滤计算量度
+# 筛选计算量度
 
 按照标记、所有者和其他过滤器（全部显示、我的、已与我共享、收藏和已批准）进行过滤。
 
@@ -19,7 +20,7 @@ ht-degree: 29%
 
 1. 在计算量度管理器中，单击 **[!UICONTROL 过滤器]** 图标：  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)
 
-   ![](assets/filtering.png)
+   ![计算量度管理器显示“过滤器”图标和可用过滤器，如“标记”、“报表包”和“所有者”。](assets/filtering.png)
 
 1. 可用过滤器如下：
 

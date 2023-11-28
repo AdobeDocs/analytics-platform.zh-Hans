@@ -3,9 +3,9 @@ description: 借助计算量度生成器，任何人都可以创建参与量度�
 title: 参与率量度
 feature: Calculated Metrics
 exl-id: 0d102f0f-3bcc-4f3a-93d2-c2b991c636cb
-source-git-commit: e7019722871dfac60408748aa183ca6d76f4993a
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '297'
 ht-degree: 6%
 
 ---
@@ -29,13 +29,13 @@ ht-degree: 6%
 
    在“定义”框中，通过附加来更新选定的量度  **（参与|会话）** 到它的名字。
 
-   ![](assets/participation-setup.png)
+   ![列归因模型弹出窗口，其中显示已选择作为模型的参与率和为回顾窗口选择的会话。](assets/participation-setup.png)
 
 
 
 1. 选择 [!UICONTROL **保存**] 以保存指标。
 1. 在报表中使用计算量度。 例如，使用计算的 [!DNL Orders (Session Participation)] 量度（如步骤5中所定义），用于显示哪些客户层促成了（或参与了）包含订单的会话。
 
-   ![](assets/participation-pages-customer-tier.png)
+   ![显示客户层和订单的自由格式表。](assets/participation-pages-customer-tier.png)
 
 1. （可选）与组织中的其他用户共享该量度，如中所述 [共享计算量度](/help/components/calc-metrics/cm-workflow/cm-sharing.md).

@@ -3,10 +3,10 @@ description: 过滤器生成器提供了一个画布以将指标Dimension、过�
 title: 构建过滤器
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: 6b79243a2f12936208f6f04c249a81315ba8901b
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1251'
-ht-degree: 23%
+source-wordcount: '1261'
+ht-degree: 22%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 23%
 
 您可以添加规则定义和容器以定义过滤器。 (有关访问过滤器生成器的信息，请参阅 [访问过滤器生成器](#access-the-filter-builder).)
 
-![](assets/segment_builder_ui_2.png)
+![过滤器生成器显示本节所述的新过滤器选项。](assets/segment_builder_ui_2.png)
 
 | UI 元素 | 描述 |
 | --- | --- |

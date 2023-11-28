@@ -4,10 +4,10 @@ description: 可设置用户的常规和项目首选项。
 feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: ed2de7ead2724a870fcd6ce1d32eb9b05e5f0576
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '3218'
-ht-degree: 84%
+source-wordcount: '3228'
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 84%
 
 1. 在Customer Journey Analytics中，转到 [!UICONTROL **项目**] 登陆页面，然后选择 [!UICONTROL **编辑首选项**].
 
-   ![用户偏好设置](assets/user-preferences.png)
+   ![Workspace项目视图将突出显示此页面上描述的“编辑”首选项选项。](assets/user-preferences.png)
 
    或
 
@@ -31,7 +31,7 @@ ht-degree: 84%
 
    * [IMS组织首选项](#ims-organization-preferences)
 
-   * [项目和分析首选项](#project-preferences)
+   * [项目和分析偏好设置](#project-preferences)
 
    * [自由格式表偏好设置](#freeform-table-preferences)
 
@@ -59,7 +59,7 @@ ht-degree: 84%
 
 {style="table-layout:auto"}
 
-## 项目和分析首选项
+## 项目和分析偏好设置
 
 您可以为所有新的Analysis Workspace项目、新的Analysis Workspace面板和新的引导式分析自定义这些首选项。 有关如何访问这些偏好设置的信息，请参阅[更新偏好设置](#update-preferences)。
 
@@ -71,7 +71,7 @@ ht-degree: 84%
 | --- | --- | --- |
 | **显示** | | |
 |  | [视图密度](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html?lang=zh-Hans) | 通过减小左侧边栏、自由格式表和同类群组表的垂直边距，让您可在屏幕上选择显示内容的多少。 <ul><li>紧凑</li><li>舒适</li><li>展开（默认）</li></ul> |
-| | [调色板](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=zh-Hans) | 选择在Analysis Workspace和引导式分析中使用的可视化图表调色板。 <ul><li> 类别调色板：适用于Analysis Workspace和引导式分析中的许多可视化图表。 每种颜色代表一个不同的类别值。 从Adobe提供的选项中进行选择，或输入由逗号分隔的十六进制值定义的自定义调色板。</li><li> 差异调色板：适用于Analysis Workspace和用户增长引导式分析中的同类群组表。 此调色板具有数值含义，其中有两个极端并在中间有一个基线。<li> 顺序调色板：应用于频率趋势（栈叠条形图）引导式分析。 此调色板具有从浅到深的数字含义。</li></ul> |
+| | [调色板](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=zh-Hans) | 选择在Analysis Workspace和引导式分析中使用的可视化图表调色板。 <ul><li> 类别调色板：适用于Analysis Workspace和引导式分析中的许多可视化图表。 每种颜色均代表不同的分类值。从 Adobe 提供的选项中进行选择，或输入由逗号分隔的十六进制值定义的自定义调色板。</li><li> 差异调色板：适用于Analysis Workspace和用户增长引导式分析中的同类群组表。 此调色板包含两个极端和中间基线的数值含义。<li> 顺序调色板：适用于频率趋势（堆叠柱状图）引导分析。此调色板包含从浅色到深色的数值含义。</li></ul> |
 | **数据** | | |
 |  | [数据视图](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=zh-Hans?#report-suite) | 选择表格和可视化从中获取数据的位置。 <ul><li>最近（默认）</li><li>从列表中选择的特定数据视图</li></ul> |
 |  | [日历](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=zh-Hans?#calendar) | 从以下列表中选择： <ul><li>Adobe 提供的范围（默认为“本月”）</li><li>自定义范围</li></ul> |
@@ -111,7 +111,7 @@ ht-degree: 84%
 | **[行](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)** | | |
 | | 按位置划分 | 如果您希望细目分类保留在项目的位置而不是项目本身，请选择此选项。有关细分的更多信息，请参阅[细分维度](/help/components/dimensions/t-breakdown-fa.md)。 |
 | | 百分比计算 | <ul><li>栏目</li><li>行</li></ul> |
-| | 列总计（仅限静态行） | <ul><li>显示行总和：显示单个行项目的总和 </li><li>显示总计：显示删除了重复项的行总和。</li></ul> |
+| | 列总计（仅限静态行） | <ul><li>显示行总和：显示各个行项目的总和 </li><li>显示总计：显示进行重复数据删除后的行总和。</li></ul> |
 
 ## 可视化偏好设置
 

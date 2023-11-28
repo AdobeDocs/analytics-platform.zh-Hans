@@ -5,30 +5,30 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '2532'
-ht-degree: 74%
+source-wordcount: '2672'
+ht-degree: 69%
 
 ---
 
 # 创建移动记分卡
 
-以下信息指示Customer Journey Analytics数据策划人如何为执行用户配置和展示功能板。 要开始操作，您可以查看Analytics功能板记分卡生成器视频：
+以下信息指示Customer Journey Analytics数据策划人如何为执行用户配置和展示功能板。 要开始操作，您可以观看Analytics功能板记分卡生成器视频：
 
 >[!VIDEO](https://video.tv.adobe.com/v/343458)
 
 >[!NOTE]
 >
->此页面的Analytics记分卡屏幕截图取自Adobe Analytics UI，而非Customer Journey Analytics。 这些 UI 几乎完全相同。
+>此页面的Analytics记分卡屏幕截图获取自Adobe Analytics UI，而不是从Customer Journey Analytics获取。 这些 UI 几乎完全相同。
 
  Analytics 记分卡以平铺版面为执行用户显示关键数据可视化图表，如下所示：
 
-![示例记分卡](assets/intro_scorecard.png)
+![显示Mobile记分卡演示的Analytics记分卡示例](assets/intro_scorecard.png)
 
-作为此记分卡的策划人，您可以使用记分卡生成器来配置要在执行使用者的记分卡上显示的图块。 您还可以配置在点按图块后，如何调整详细视图或细分。记分卡生成器界面如下所示：
+作为此记分卡的策划人，您可以使用记分卡生成器来配置要在执行用户的记分卡上显示的图块。 您还可以配置在点按图块后，如何调整详细视图或细分。记分卡生成器界面如下所示：
 
-![记分卡生成器](assets/scorecard_builder.png)
+![显示新移动记分卡窗口的记分卡生成器。 ](assets/scorecard_builder.png)
 
 要创建记分卡，您需要执行以下操作：
 
@@ -45,7 +45,7 @@ ht-degree: 74%
 1. 单击&#x200B;**[!UICONTROL 创建新项目]**&#x200B;并选择&#x200B;**[!UICONTROL 空白移动记分卡]**&#x200B;项目模板。
 1. 单击&#x200B;**[!UICONTROL 创建]**。
 
-![记分卡模板](assets/new_template.png)
+![“所有模板”窗口，其中选择了“空白移动记分卡”。](assets/new_template.png)
 
 ### “工具”菜单
 
@@ -58,11 +58,11 @@ ht-degree: 74%
 
 1. 在&#x200B;**[!UICONTROL 属性]**（位于右侧边栏中）下，指定要从中使用数据的&#x200B;**[!UICONTROL 项目数据视图]**。
 
-   ![数据视图选择](assets/properties_save.png)
+   ![突出显示数据视图选择的新移动记分卡窗口](assets/properties_save.png)
 
-1. 要向记分卡中添加新图块，请将左侧面板中的某个量度拖放到 **[!UICONTROL 将指标拖放到此处]** 区域。 您也可以使用类似的工作流程，在两个图块之间插入指标。
+1. 要向记分卡中添加新图块，请将左侧面板中的某个量度拖放到 **[!UICONTROL 将量度拖放到此处]** 区域。 您也可以使用类似的工作流程，在两个图块之间插入指标。
 
-   ![添加图块](assets/build_list.png)
+   ![将带有指向指标（新KPI）的箭头的新移动记分卡窗口放入记分卡。 ](assets/build_list.png)
 
 
 1. 从每个图块中，您可以访问一个详细视图，该视图显示有关指标的其他信息，例如，相关维度列表的排名最前的项目。
@@ -73,37 +73,37 @@ ht-degree: 74%
 
 例如，您可以通过将适当的维度（如本示例中的 **[!DNL Marketing Channel]**）拖放到图块上来将它添加到&#x200B;**[!UICONTROL 独特访客]**&#x200B;指标。维度细分显示在图块特定的&#x200B;**[!UICONTROL 属性]**&#x200B;的[!UICONTROL 深入分析]（细分）部分的下方。可向每个图块中添加多个维度。
 
-![添加维度](assets/layer_dimensions.png)
+![带有从维度列表指向记分卡窗格的箭头的新移动记分卡窗口。](assets/layer_dimensions.png)
 
 ## 应用过滤器 {#filters}
 
-要将过滤器应用于单个图块，请将左侧面板中的过滤器(区段即Customer Journey Analytics中的过滤器)直接拖放到图块的顶部。
+要将过滤器应用于单个图块，请从左侧面板中拖动某个过滤器(区段就是Customer Journey Analytics中的过滤器)，然后将其直接拖放到图块的顶部。
 
 如果要将过滤器应用于记分卡中的所有图块，请将图块拖放到记分卡的顶部。 或者，您也可以通过在日期范围下方的过滤器菜单中选择过滤器来应用过滤器。您 [为记分卡配置和应用过滤器](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans) 与在Customer Journey Analytics工作区中操作的方式相同。
 
-![构建过滤器](assets/segment_ui.png)
+![突出显示内部版本筛选器的筛选器下拉选择器](assets/segment_ui.png)
 
 ## 添加日期范围 {#dates}
 
 通过选择日期范围下拉菜单来添加和移除可在记分卡中选择的日期范围组合。
 
-![新记分卡](assets/new_score_card.png)
+![突出显示昨天与上周同一天的新移动记分卡](assets/new_score_card.png)
 
 每个新记分卡都从 6 个日期范围组合开始，重点展示今天和昨天的数据。您可以单击 x 以移除不必要的日期范围，也可以单击铅笔图标以修改每个日期范围组合。
 
-![新记分卡 2](assets/new_score_card2.png)
+![突出显示铅笔图标的新移动记分卡](assets/new_score_card2.png)
 
 要创建或更改主要日期，请使用下拉菜单从可用日期范围中选择，或者将日期组件从右边栏拖放到放置区域中。
 
-![新记分卡 3](assets/new_score_card3.png)
+![新移动记分卡，突出显示已选择主要日期/昨天的日期范围](assets/new_score_card3.png)
 
 要创建比较日期，您可以在下拉菜单中选择方便的预设以进行常用的时间比较。您还可以从右边栏拖放日期组件。
 
-![新记分卡 4](assets/new_score_card4.png)
+![新移动记分卡，突出显示日期范围，其中比较日期设置为上周同一天](assets/new_score_card4.png)
 
 如果尚未创建所需的日期范围，则可以通过单击日历图标来创建一个新的日期范围。
 
-![新记分卡 5](assets/new_score_card5.png)
+![日历图标](assets/new_score_card5.png)
 
 这会将您带到日期范围生成器，您可以在其中创建和保存新的日期范围组件。
 
@@ -111,11 +111,11 @@ ht-degree: 74%
 
 要包括比较日期范围，请切换&#x200B;**包括比较日期**&#x200B;设置。
 
-![包括比较日期](assets/include-comparison-dates.png)
+![新的移动记分卡突出显示昨天与前一天，并包括比较日期](assets/include-comparison-dates.png)
 
 默认情况下&#x200B;*启用*&#x200B;此设置。 如果您不想查看比较日期，请将其切换为&#x200B;*关闭*。
 
-![已取消选择比较日期设置](assets/no-comparison-dates.png)
+![新的移动记分卡昨天突出显示，并包含比较日期](assets/no-comparison-dates.png)
 
 ## 应用可视化图表 {#viz}
 
@@ -131,25 +131,25 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 使用“摘要数字”可视化图表来突出显示项目中的大型重要数字。
 
-![摘要数字](assets/summary-number.png)
+![新的移动记分卡，其中摘要数字可视化图表突出显示1330次访问](assets/summary-number.png)
 
 ### [!UICONTROL 圆环图]
 
-此可视化与饼图类似，将数据显示为整体的一部分。在比较总数的百分比时使用圆环图。例如，假设您希望查看哪个广告平台对独特访客总数做出了贡献：
+此可视化与饼图类似，将数据显示为整体的一部分。在比较总数的百分比时使用圆环图。例如，假设您想查看哪个广告平台对独特访客总数做出了贡献：
 
-![圆环图可视化图表](assets/donut-viz.png)
+![显示圆环图可视化的新移动记分卡](assets/donut-viz.png)
 
 ### [!UICONTROL 折线图]
 
 此折线图可视化图表使用线条来表示指标，以显示一段时间内值的变化情况。折线图显示随时间变化的维度，但适用于任何可视化图表。在此示例中，您将可视化产品类别维度。
 
-![折线图可视化图表](assets/line.png)
+![显示折线图可视化的新移动记分卡](assets/line.png)
 
 ### [!UICONTROL 水平条形图]
 
 此可视化显示了一些水平条，这些水平条表示一个或多个指标中的各种值。例如，要轻松查看您的最热门产品，请使用[!UICONTROL 水平条形图]作为您的首选可视化图表。
 
-![水平条形图](assets/horizontal.png)
+![显示水平条形的新移动记分卡](assets/horizontal.png)
 
 ### 删除[!UICONTROL 未指定]维度项
 
@@ -158,13 +158,13 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 1. 选择正确的图块。
 1. 在右边栏中的&#x200B;**[!UICONTROL 深入分析]**&#x200B;下，选择要删除其&#x200B;**[!UICONTROL 未指定]**&#x200B;项的维度项旁边的右箭头。
 
-   ![未指定](assets/unspecified.png)
+   ![属性，其维度名称旁边的箭头指向右箭头。](assets/unspecified.png)
 
 1. 单击&#x200B;**[!UICONTROL 未指定]**&#x200B;旁边的图标以从报告中删除未指定数据。（您也可以删除任何其他维度项。）
 
 ## 查看和配置图块属性 {#tiles}
 
-在记分卡生成器中单击图块时，右侧边栏会显示与该图块及其详细信息幻灯片关联的属性和特征。 在此边栏中，可为该图块提供新的&#x200B;**标题**&#x200B;或通过应用过滤器而配置该图块。区段是Customer Journey Analytics中的过滤器。
+在记分卡生成器中单击某个图块时，右侧边栏会显示与该图块及其详细信息幻灯片关联的属性和特征。 在此边栏中，可为该图块提供新的&#x200B;**标题**&#x200B;或通过应用过滤器而配置该图块。区段是Customer Journey Analytics中的过滤器。
 
 ![“属性”图块](assets/properties-tile-new.png)
 
@@ -212,7 +212,7 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 ## 删除组件 {#remove}
 
-同样，要删除应用于整个记分卡的组件，请单击记分卡上图块外的任意位置，然后单击 **x** 将鼠标悬停在该组件上时显示，如下面的 **首次访问**：
+同样，要删除应用于整个记分卡的组件，请单击记分卡上图块外的任意位置，然后单击组件以删除组件 **x** 将鼠标悬停在该组件上时显示，如下面的 **首次访问**：
 
 ![Remove_components](assets/new_remove.png)
 
@@ -220,7 +220,7 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 数据故事是围绕中心主题或量度构建的辅助数据点、业务背景和相关量度的集合。
 
-例如，如果您专注于Web流量，则最重要的量度可能是访问量，但您也可能对新用户、独特用户感兴趣，并且您可能希望查看按网页或流量来源的设备类型细分的数据。 通过移动记分卡项目中的数据故事，可重点介绍对您最重要的量度，同时用多张详细信息幻灯片讲述这些量度背后的整个故事。
+例如，如果您专注于Web流量，则最重要的量度可能是访问次数，但您也可能对新用户、独特人员感兴趣，并且您可能希望查看按网页或流量来自哪个设备类型细分的数据。 通过移动记分卡项目中的数据故事，可重点介绍对您最重要的量度，同时用多张详细信息幻灯片讲述这些量度背后的整个故事。
 
 观看视频以详细了解如何在 Analysis Workspace 中的移动记分卡项目中创建数据故事。
 
@@ -318,13 +318,13 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 ![Share_Scorecards](assets/new_share.png)
 
-共享记分卡后，收件人可在其 Analytics 功能板中访问该记分卡。如果您在记分卡生成器中对记分卡进行后续更改，则已共享的记分卡会自动更新以反映这些更改。 然后，执行用户在其应用程序中刷新记分卡后，将会看到这些更改。
+共享记分卡后，收件人可在其 Analytics 功能板中访问该记分卡。如果您在记分卡生成器中对记分卡进行后续更改，则已共享的记分卡会自动更新以反映这些更改。 然后，执行用户在其应用程序中刷新记分卡后，便可看到这些更改。
 
 如果通过添加新组件来更新记分卡，则您可能需要再次共享记分卡（并选中&#x200B;**[!UICONTROL 共享嵌入的组件]**&#x200B;选项），以确保执行用户有权访问这些更改。
 
 ### 使用可共享链接共享记分卡
 
-使用可共享链接可轻松地在电子邮件、文档或短信应用程序中共享记分卡。 可共享链接允许收件人在其桌面或功能板移动设备应用程序上打开记分卡。 可共享的深层链接使共享项目并促进与利益相关者的互动变得更加容易。
+使用可共享链接，可以轻松地在电子邮件、文档或短信应用程序中共享记分卡。 通过可共享链接，收件人可在桌面上或功能板移动应用程序中打开记分卡。 可共享的深层链接可让您更轻松地共享项目并促进与利益相关者的互动。
 
 使用可共享链接共享记分卡
 
@@ -336,7 +336,7 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
    当收件人使用桌面应用程序或浏览器打开链接时，将在工作区中打开移动记分卡项目。
 
-   当收件人打开移动设备上的链接时，记分卡将直接在Adobe Analytics功能板应用程序中打开。
+   当收件人在移动设备上打开链接时，记分卡将直接在Adobe Analytics功能板应用程序中打开。
 
    如果收件人尚未下载移动设备应用程序，则会被定向到App Store或Google Play应用商店中的应用程序列表，以便他们下载。
 

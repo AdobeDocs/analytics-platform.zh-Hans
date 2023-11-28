@@ -4,10 +4,10 @@ description: 查看数据视图组件的核心设置。
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: cc12f77d3a0cb9b27a5d0c6a92c35faf2b6e6e35
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 70%
+source-wordcount: '490'
+ht-degree: 69%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 70%
 
 数据视图组件使用的核心设置。
 
-![组件设置](../assets/component-settings.png)
+![此部分描述的组件设置](../assets/component-settings.png)
 
 | 设置 | 描述/用例 |
 | --- | --- |

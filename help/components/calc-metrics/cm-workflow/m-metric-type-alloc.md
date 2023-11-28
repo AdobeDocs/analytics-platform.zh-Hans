@@ -3,10 +3,10 @@ description: 了解
 title: 指标类型和归因
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 5bb7e04deb52e4805e7151afce0bad476df7f13d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 37%
+source-wordcount: '225'
+ht-degree: 36%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 37%
 
 1. 选择要选择其类型的量度旁边的齿轮图标。
 
-   ![](assets/cm_type_alloc.png)
+   ![带有弹出窗口的齿轮图标，显示“量度”类型等于“标准”。](assets/cm_type_alloc.png)
 
 1. 从以下选项中进行选择：
 

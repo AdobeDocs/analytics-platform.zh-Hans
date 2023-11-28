@@ -3,9 +3,9 @@ title: 引用 - 高级函数
 description: 可通过以下方法访问这些函数：选中函数下拉列表中的显示高级。
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '3105'
+source-wordcount: '3123'
 ht-degree: 98%
 
 ---
@@ -61,11 +61,11 @@ Approximate Count Distinct (customer ID eVar) 是此函数的常见用例。
 
 新“近似客户”计算量度的定义：
 
-![](assets/approx-count-distinct.png)
+![显示客户ID的大致县别新维度定义(eVar1)](assets/approx-count-distinct.png)
 
 以下表示在报告中使用“近似客户”量度的方式：
 
-![](assets/approx-customers.png)
+![显示独特访客和近似客户的自由格式表 ](assets/approx-customers.png)
 
 ## 超出的独特数
 

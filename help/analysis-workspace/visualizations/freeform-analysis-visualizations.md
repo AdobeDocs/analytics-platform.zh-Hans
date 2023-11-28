@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: 可视化图表概述
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 0022df4fa6022d5b045e47b606f4a6d1687f7244
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 84%
+source-wordcount: '1323'
+ht-degree: 81%
 
 ---
 
@@ -47,7 +47,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 
    * 在左边栏中，选择 **可视化图表** 图标 <!-- add icon -->，然后将可视化图表拖到要添加该可视化图表的面板中。
 
-     ![](assets/viz-rail.png)
+     ![“可视化图表”面板 ](assets/viz-rail.png)
 
    * 在要添加可视化图表的面板上，选择 **加号** 图标，然后选择表示要添加的可视化图表的图标。 将鼠标悬停在每个可视化图表的图标上可查看其名称。
 
@@ -81,14 +81,14 @@ Analysis Workspace 中提供了以下可视化图表类型：
 
 每个可视化图表都有其自身的设置，您可以管理这些设置。要访问[!UICONTROL 可视化图表设置]，请单击[!UICONTROL 可视化图表设置]齿轮图标。
 
-![设置](assets/settings.png)
+![可视化图表设置显示下节中所述的设置选项。](assets/settings.png)
 
 | 设置 | 描述 |
 | --- | --- |
 | 可视化图表类型 | 更改描述数据所用的视觉效果的类型。 |
 | 粒度 | 对于趋势性的可视化图表，您可从此下拉菜单更改下拉列表中。 此更改也适用于数据源表。 |
 | 百分比 | 显示百分数值。 |
-| 100% 堆叠 | 在面积堆叠、条形堆叠或水平条形堆叠的可视化图表上的此设置将图表转换为“100% 堆叠”的可视化图表。示例：![堆叠 100%](assets/stacked_100_percent.png) |
+| 100% 堆叠 | 在面积堆叠、条形堆叠或水平条形堆叠的可视化图表上的此设置将图表转换为“100% 堆叠”的可视化图表。示例： ![显示栈叠100%选项视图的条形图。](assets/stacked_100_percent.png) |
 | 图例可见 | 此设置允许您为概要数字/概要变化可视化图表隐藏详细的图例文本。 |
 | 限制最大项目数 | 允许您限制可视化图表显示的项目数量。 |
 | 将 Y 轴定位为 0 | 如果图表上绘制的所有值都远远大于零，则图表默认会将 y 轴底部设置为非零值。如果选中此框，y 轴将被强制设置为零（并将重新绘制图表）。 |
@@ -107,7 +107,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 1. 右键单击某个图例标签。
 1. 单击&#x200B;**[!UICONTROL 编辑标签]**。
 
-   ![编辑标签](assets/edit-label.png)
+   ![图例标签和编辑标签选项。](assets/edit-label.png)
 
 1. 输入新的标签文本。
 1. 按 **[!UICONTROL Enter]** 键保存。
@@ -116,7 +116,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 
 可视化图表的其他功能可通过在可视化图表的标题上右键单击来使用。其设置因可视化图表而异。其中一些设置包括：
 
-![右键单击](assets/right-click.png)
+![显示了带有右键单击选项的其他可视化图表设置。 下一节将介绍相关选项。](assets/right-click.png)
 
 | 设置 | 描述 |
 | --- | --- |

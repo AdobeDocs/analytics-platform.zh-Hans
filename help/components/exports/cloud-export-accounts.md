@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: 配置云导出帐户
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: bbd916db1be05c5e52396ae0a6fa5cbaa368da38
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1826'
+source-wordcount: '1836'
 ht-degree: 4%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 4%
 1. 在 [!UICONTROL 导出] 页面上，选择 [!UICONTROL **位置帐户**] 选项卡。
 1. 选择 [!UICONTROL **添加帐户**].
 
-   ![添加帐户](assets/account-add.png)
+   ![导出页面选项显示添加其他帐户](assets/account-add.png)
 
    此时将显示添加帐户对话框。
 
@@ -86,7 +86,7 @@ ht-degree: 4%
       >您需要每7天执行一次此操作，因为SAS URI在创建后7天过期。 您可以创建一个脚本来自动执行此过程。
 
 
-      ![SAS URL字段](assets/blob-container-sas-uri.png)
+      ![输入显示SAS URL字段的连接信息窗口](assets/blob-container-sas-uri.png)
 
    1. 选择 [!UICONTROL **下一个**] > [!UICONTROL **连接**].
 

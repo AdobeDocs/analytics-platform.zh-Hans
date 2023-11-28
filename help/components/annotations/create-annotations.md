@@ -4,10 +4,10 @@ description: 如何在工作区中创建注释。
 role: User, Admin
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
-source-git-commit: 2f5d1c6c90df8ccd9e792a870891a817e7c2a93d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 76%
+source-wordcount: '711'
+ht-degree: 75%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 76%
 
 1. 填写[!UICONTROL 注释生成器]的各个元素。
 
-   ![](assets/ann-builder.png)
+   ![显示下节中所述字段和选项的注释详细信息窗口。](assets/ann-builder.png)
 
    | 元素 | 描述 |
    | --- | --- |

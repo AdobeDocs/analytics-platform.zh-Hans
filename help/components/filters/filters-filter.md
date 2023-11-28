@@ -2,10 +2,11 @@
 description: 按标记、所有者和其他过滤器（“全部显示”、“我的”、“已与我共享”、“收藏”和“已批准”）进行过滤。
 title: 筛选筛选器列表
 feature: Filters
-source-git-commit: 620f190e8b8a6947af019ee1e39c7db8614a5502
+exl-id: 25e617da-8249-4332-970a-c2ef00bf42e3
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 31%
+source-wordcount: '194'
+ht-degree: 30%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 31%
 
 1. 在过滤器管理器中，单击 **[!UICONTROL 过滤器]** 图标：  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)
 
-   ![](assets/filtering.png)
+   ![过滤器管理器，其中显示了“过滤器”图标和可用的过滤器。](assets/filtering.png)
 
 2. 可用过滤器如下：
 

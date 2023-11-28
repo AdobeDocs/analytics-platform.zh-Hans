@@ -4,9 +4,9 @@ description: 了解Customer Journey Analytics提供了哪些组件，以及如�
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1132'
 ht-degree: 79%
 
 ---
@@ -21,8 +21,8 @@ ht-degree: 79%
 您可以管理以下组件：
 
 * [**批注**](/help/components/annotations/overview.md)：向您的组织传达上下文数据的细微差别和见解。
-* [**受众**](/help/components/audiences/audiences-overview.md)：创建在Customer Journey Analytics中发现的受众并将其发布到 [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans) (RTCDP)，用于Adobe Experience Platform中的客户定位和个性化。
-* [**筛选器**](filters/filters-overview.md)：构建、管理、共享强大而集中的受众过滤器，并将其应用于您的报表。 通过过滤器，可根据人员特征或交互情况识别人员子集。
+* [**受众**](/help/components/audiences/audiences-overview.md)：创建在Customer Journey Analytics中发现的受众并将其发布到 [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans) Adobe Experience Platform (RTCDP)，用于客户定位和个性化。
+* [**过滤器**](filters/filters-overview.md)：构建、管理、共享强大集中的受众过滤器，并将其应用于您的报表。 过滤器让您可以根据用户特征或交互情况来识别用户子集。
 * [**计算量度**](calc-metrics/calc-metr-overview.md)：使用量度和公式作为新组件以便在报告中使用
 * [**数据字典**](/help/components/data-dictionary/data-dictionary-overview.md)：帮助用户和管理员跟踪并更好地了解其Analytics环境中的组件。
 * [**日期范围**](date-ranges/create.md)：自定义和优化 Analysis Workspace 中提供的日期范围.
@@ -36,7 +36,7 @@ Analysis Workspace 中的组件包括量度、维度、区段和时间粒度，�
 
 要访问“组件”面板，请单击左边栏中的&#x200B;**[!UICONTROL 组件]**&#x200B;图标。您可以使用左边栏图标或[热键](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)在面板（空白面板、[自由格式面板](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)、[快速分析面板](/help/analysis-workspace/c-panels/quickinsight.md)或[Attribution IQ](/help/analysis-workspace/c-panels/attribution.md) 面板）、[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)和“组件”之间切换。
 
-![](assets/components.png)
+![“组件”图标](assets/components.png)
 
 请参阅[创建项目](/help/analysis-workspace/home.md)，以了解有关在项目中使用组件的信息。
 
@@ -75,7 +75,7 @@ Analysis Workspace 中的组件包括量度、维度、区段和时间粒度，�
    >   通过按住 Shift 或按住 Command (Mac) 或 Ctrl (Windows) 可选择多个组件。
 
 
-   ![](assets/component-actions.png)
+   ![“组件操作”列表](assets/component-actions.png)
 
    | 组件操作 | 描述 |
    |--- |--- |
@@ -97,7 +97,7 @@ Analysis Workspace 中的组件包括量度、维度、区段和时间粒度，�
 
 2. 在搜索字段中，开始键入要在项目中使用的组件名称。
 
-   组件的类型可以通过颜色和图标来识别。**Dimension** ![Dimension图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) 是橙色的， **筛选器** ![过滤器图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) 是蓝色的， **日期范围** ![日期范围图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) 是紫色的，而且 **量度** ![“量度”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) 绿色。 Adobe图标 ![Adobe图标](assets/default-calc-metric-icon.png) 指示计算指标模板或过滤器模板以及计算器图标 ![计算器图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) 指示由贵组织中的Analytics管理员创建的计算指标。
+   组件的类型可以通过颜色和图标来识别。**Dimension** ![Dimension图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) 是橙色的， **过滤器** ![过滤器图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) 是蓝色的， **日期范围** ![日期范围图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) 是紫色的，而且 **量度** ![“量度”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) 是绿色的。 Adobe图标 ![Adobe图标](assets/default-calc-metric-icon.png) 指示计算指标模板或过滤器模板，以及计算器图标 ![计算器图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) 指示由贵组织中的Analytics管理员创建的计算指标。
 
 3. 当组件出现在下拉列表中时选中它。
 
@@ -105,7 +105,7 @@ Analysis Workspace 中的组件包括量度、维度、区段和时间粒度，�
 
 1. 在左侧边栏中选择&#x200B;**组件**&#x200B;图标 ![组件图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg)。
 
-2. 选择 **筛选条件** 图标 ![“数据字典过滤器”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg))。
+2. 选择 **筛选** 图标 ![“数据字典过滤器”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg))。
 
    或
 

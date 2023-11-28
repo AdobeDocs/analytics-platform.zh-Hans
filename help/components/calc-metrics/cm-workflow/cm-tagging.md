@@ -3,9 +3,9 @@ description: 在计算量度管理器中，您可以通过标记区段来组织�
 title: 标记计算量度
 feature: Calculated Metrics
 exl-id: 25c9299b-34ae-475f-8e7f-5cc8540dab8a
-source-git-commit: 124834d0ad1c53fd5930b07a9aa0893a15a49875
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '285'
 ht-degree: 19%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 19%
 
 1. 在计算量度管理器中，选中要标记的任何量度旁边的复选框。
 
-   ![](assets/cm_add_tags.png)
+   ![标记计算量度列表，并选定“移动设备营销”。](assets/cm_add_tags.png)
 
 1. 在 [!UICONTROL **标记计算量度**] 对话框：
 

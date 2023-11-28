@@ -3,10 +3,10 @@ description: 使用“概要数字”和“概要变化”可视化图表来显�
 title: 概要数字和概要变化
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
-source-git-commit: 2f5d1c6c90df8ccd9e792a870891a817e7c2a93d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 100%
+source-wordcount: '404'
+ht-degree: 97%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 100%
 * 如果选中了列，会将第一个值与其自身进行比较，结果会显示变化为 0。
 
 
-![](assets/summary-change.png)
+![显示两个数字之间差异的概要变化可视化图表。](assets/summary-change.png)
 
 
 单击右上方的&#x200B;**可视化设置**&#x200B;齿轮，可配置“概要变化”设置：

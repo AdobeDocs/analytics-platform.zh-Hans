@@ -4,10 +4,10 @@ description: 解释如何使用 Customer Journey Analytics 中的源连接器来
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 87%
+source-wordcount: '1997'
+ht-degree: 86%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 87%
 
    1. 选择 **[!UICONTROL 个人资料]**.
 
-      ![创建模式](./assets/create-pr-schema-wizard-step-1.png)
+      ![在选择了Individual Profile的情况下创建架构窗口](./assets/create-pr-schema-wizard-step-1.png)
 
       >[!INFO]
       >
@@ -68,7 +68,7 @@ ht-degree: 87%
 
    1. 输入 **[!UICONTROL 架构显示名称]** （可选）a **[!UICONTROL 描述]**.
 
-      ![命名您的模式](./assets/create-pr-schema-wizard-step-2.png)
+      ![“创建架构”窗口，其中显示了用于命名架构的字段 ](./assets/create-pr-schema-wizard-step-2.png)
 
    1. 选择&#x200B;**[!UICONTROL 完成]**。
 
@@ -76,7 +76,7 @@ ht-degree: 87%
 
    1. 在[!UICONTROL 字段组]中选择&#x200B;**[!UICONTROL + 添加]**。
 
-      ![添加字段组](./assets/add-field-group-button.png)
+      ![显示添加字段组的“创建架构”窗口](./assets/add-field-group-button.png)
 
       字段组是可重用的对象和属性集合，可让您轻松扩展模式。
 

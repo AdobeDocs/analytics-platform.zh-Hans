@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 32423cb4-1a4c-4ea3-ad4b-9520aff9ae4b
 solution: Customer Journey Analytics
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 93%
+source-wordcount: '281'
+ht-degree: 87%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 93%
 
 1. 单击&#x200B;**应用**。
 
-   ![单击应用按钮。](./assets/image38.png)
+   ![显示“取消并应用”按钮的Report Builder日期范围窗格。](./assets/image38.png)
 
 ## 离线模式
 
@@ -51,7 +51,7 @@ ht-degree: 93%
 
 1. 从&#x200B;**语言**&#x200B;下拉菜单中选择语言。
 
-   ![选择语言列表。](./assets/image39.png)
+   ![Report Builder日期范围窗格，其中显示选中了英语的“语言”列表。](./assets/image39.png)
 
 1. 单击&#x200B;**应用**。
 

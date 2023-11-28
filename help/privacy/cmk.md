@@ -3,10 +3,10 @@ title: 客户管理的密钥
 description: 了解如何设置客户管理的密钥以进行Customer Journey Analytics。
 exl-id: 08ece1cb-22b7-4b8d-be76-5414a810feb6
 feature: Privacy
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 66%
+source-wordcount: '338'
+ht-degree: 64%
 
 ---
 
@@ -22,13 +22,13 @@ Adobe Customer Journey Analytics为以下对象提供了选项 [Health Shield](h
 
 按照以下步骤为Customer Journey Analytics设置CMK：
 
-1. 与您的Adobe帐户团队核实，确保您有权使用Adobe Customer Journey Analytics CMK。
+1. 与您的Adobe客户团队核实，确保您有权使用Adobe Customer Journey Analytics CMK。
 1. 确保您在 Azure 中是具有特权角色的管理员，例如应用程序管理员、云应用程序管理员或全局管理员。[从 Microsoft 了解详情](https://learn.microsoft.com/zh-cn/azure/active-directory/roles/permissions-reference)
 1. 创建仅用于Customer Journey Analytics的新Azure密钥库。 [从 Microsoft 了解详情](https://learn.microsoft.com/zh-cn/azure/key-vault/general/)
 1. 授予 Adobe Azure 应用程序访问您在密钥库中的密钥的权限。这是 Adobe 应用程序 ID：251e3919-1940-4296-bb8b-6b9a5e8a4805。[从 Microsoft 了解详情](https://learn.microsoft.com/zh-cn/azure/storage/common/customer-managed-keys-configure-cross-tenant-existing-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&amp;tabs=powershell-preview%2Cazure-portal#the-customer-grants-the-service-providers-app-access-to-the-key-in-the-key-vault)
 1. 创建一个请求 CMK 设置的 Adobe 客户关怀票证。在您的票证中包含 Azure URI。可在 Azure Key 的&#x200B;**密钥标识符**&#x200B;字段中找到 URI。
 
-   ![](assets/key-identifier.png)
+   ![显示https://cmkoberontest.vault.azure.net URI的键标识符字段](assets/key-identifier.png)
 
 1. Adobe客户关怀部门将确认对您的Customer Journey Analytics数据完成了CMK应用。
 

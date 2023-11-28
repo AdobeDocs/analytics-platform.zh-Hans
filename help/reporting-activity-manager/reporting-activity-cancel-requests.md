@@ -3,9 +3,10 @@ title: 在报告活动管理器中取消报告请求
 description: 了解如何使用报告活动管理器诊断和修复在报告高峰期出现的容量问题。
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 252b9849b904754fcf5841df51d01510ba9df53f
+exl-id: 87da2447-f114-432a-9f63-e660c2541d0f
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1473'
 ht-degree: 14%
 
 ---
@@ -50,7 +51,7 @@ ht-degree: 14%
 
    1. 启用该选项 [!UICONTROL **限制后续请求**].
 
-      ![限制后续请求](assets/restrict-subsequent-requests.png)
+      ![取消1个请求，其中显示了“限制选定后续请求”和“取消”消息。](assets/restrict-subsequent-requests.png)
 
    1. 从以下选项中进行选择：
 
@@ -91,7 +92,7 @@ ht-degree: 14%
 
    1. 启用该选项 [!UICONTROL **限制后续请求**]
 
-      ![按用户限制后续请求](assets/restrict-subsequent-requests-user.png)
+      ![取消1个请求，其中显示“按选定的用户限制后续请求”。](assets/restrict-subsequent-requests-user.png)
 
    1. 从以下选项中进行选择：
 
@@ -99,7 +100,7 @@ ht-degree: 14%
       |---------|----------|
       | [!UICONTROL **用户和项目**] | 所选用户将会被暂时限制提交关联项目的任何报告请求。 <p>这是限制最少的选项。</p> |
       | [!UICONTROL **用户**] | 所选用户将会被暂时限制提交任何报告请求。 |
-      | [!UICONTROL **项目**] | 与所选用户相关的项目将限于任何用户提交的任何报告请求。 |
+      | [!UICONTROL **项目**] | 与所选用户相关的项目将限制任何用户提交的任何报告请求。 |
       | [!UICONTROL **限制进行**] | 选择限制请求的时长。 您可以选择1分钟（默认）、5分钟、10分钟、15分钟或30分钟。 <!--double-check this--> <p>设置限制后，不能提前删除限制。</p> |
 
       {style="table-layout:auto"}
@@ -132,13 +133,13 @@ ht-degree: 14%
 
    1. 启用该选项 [!UICONTROL **限制后续请求**].
 
-      ![按项目限制后续请求](assets/restrict-subsequent-requests-project.png)
+      ![取消1个请求，其中显示“按项目限制后续请求”](assets/restrict-subsequent-requests-project.png)
 
    1. 从以下选项中进行选择：
 
       | 选项 | 函数 |
       |---------|----------|
-      | [!UICONTROL **用户和项目**] | 所选项目将会被暂时限于关联用户提交的任何报告请求。<p>这是限制最少的选项。</p> |
+      | [!UICONTROL **用户和项目**] | 所选项目将会被暂时限制关联用户提交的任何报告请求。<p>这是限制最少的选项。</p> |
       | [!UICONTROL **用户**] | 与所选项目相关的用户将会被限制提交任何报告请求。 |
       | [!UICONTROL **项目**] | 选定项目将被暂时限制于任何用户发出的任何报告请求中。 |
       | [!UICONTROL **限制进行**] | 选择限制请求的时长。 您可以选择1分钟（默认）、5分钟、10分钟、15分钟或30分钟。 <!--double-check this--> <p>设置限制后，不能提前删除限制。</p> |
@@ -188,7 +189,7 @@ ht-degree: 14%
 
    1. 启用该选项 [!UICONTROL **限制后续请求**]
 
-      ![按应用程序限制后续请求](assets/restrict-subsequent-requests-application.png)
+      ![取消1个请求，该请求显示按所选应用程序限制后续请求。](assets/restrict-subsequent-requests-application.png)
 
    1. 从以下选项中进行选择：
 

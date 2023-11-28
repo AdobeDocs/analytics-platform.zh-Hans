@@ -4,10 +4,10 @@ description: 了解将数据导入 Customer Journey Analytics 的不同方式
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
-source-git-commit: 89841edb40f8ac89a3142588fede383b87d246f9
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 71%
+source-wordcount: '871'
+ht-degree: 70%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 71%
 
 请参阅前面[概述](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=zh-Hans)中所示的高级 Customer Journey Analytics 体系结构：
 
-![Customer Journey Analytics](./assets/cja-architecture.png)
+![本节中描述的Customer Journey Analytics架构](./assets/cja-architecture.png)
 
 上述模式中的数据集可以来自各种来源：
 

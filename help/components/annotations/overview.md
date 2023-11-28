@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
-source-git-commit: 5bb7e04deb52e4805e7151afce0bad476df7f13d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 57%
+source-wordcount: '314'
+ht-degree: 54%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 57%
 
 例如，假设您正在与您的组织共享项目。如果因营销活动而产生重大流量尖峰，则可创建“营销活动启动日期”注释，并将其用于您整个数据视图。 当您的用户查看任何包括该日期的数据集时，他们会在其项目中与其数据一起看到该注释。
 
-![](assets/multi-day.png)
+![突出显示注释的折线图。](assets/multi-day.png)
 
 请牢记这一点：
 
@@ -46,6 +46,6 @@ ht-degree: 57%
 
 * 在用户级别上：[!UICONTROL 组件] > [!UICONTROL 用户偏好] > [!UICONTROL 数据] > [!UICONTROL 显示注释]
 
-![](assets/show-ann.png)
+![突出显示显示批注的可视化设置对话框](assets/show-ann.png)
 
-![](assets/show-ann2.png)
+![用户首选项突出显示显示注释。](assets/show-ann2.png)

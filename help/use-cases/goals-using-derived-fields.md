@@ -4,9 +4,9 @@ description: 了解如何使用派生字段报告工作区项目中的目标（�
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: 5cd838f7-e394-4a67-9d2e-e1d08a864ca0
-source-git-commit: 150a46e59d7f76d90906c85332a94cd5974008c2
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '435'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 1. 使用CASE WHEN规则为每月设置静态值，方法是 **[!UICONTROL 自定义数值]**. 请参阅下面的每月产品目标规则。
 
-   ![产品目标](assets/goals-derived-field-product-goals-1.png)
+   ![每月产品目标](assets/goals-derived-field-product-goals-1.png)
 
 
 ### 营销渠道收入目标

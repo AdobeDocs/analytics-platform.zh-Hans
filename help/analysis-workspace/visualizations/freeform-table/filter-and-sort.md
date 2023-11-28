@@ -3,15 +3,15 @@ description: 描述如何在 Analysis Workspace 中筛选和排序表格的文�
 title: 排序和过滤表格
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 2a60ed6dddf70b58c7c6e742eb01b9468cc2dd83
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '966'
 ht-degree: 67%
 
 ---
 
 
-# 筛选和排序自由格式表
+# 自由格式表筛选和排序
 
 Analysis Workspace 中的自由格式表是进行交互式数据分析的基础。因此，它们可以包含数千行信息。对数据进行过滤和排序是有效地呈现最重要信息的关键部分。
 
@@ -67,7 +67,7 @@ Analysis Workspace 中的过滤器可帮助您显示最重要的信息。
 
 1. 当&#x200B;**过滤器**&#x200B;图标出现时选择它。
 
-   ![表格中的过滤器图标](assets/table-filter-icon.png)
+   ![突出显示过滤器图标的自由格式表。](assets/table-filter-icon.png)
 
    可以使用以下选项：
 
@@ -108,6 +108,6 @@ Analysis Workspace 中的过滤器可帮助您显示最重要的信息。
    - 向下箭头按降序排序，向上箭头（默认）按升序排序。
    - 您可以按字母顺序或数字顺序对维度进行排序。 例如，工作流程中可能有编号的步骤，并且可能希望按步骤编号排序。您可以按日期对与日期相关的维度进行排序。 或者，您也可以按字母顺序对数据源进行排序，如以下图像中所示。
 
-   ![](assets/sort-dimensions.png)
+   ![突出显示排序图标的数据源视图。](assets/sort-dimensions.png)
 
 

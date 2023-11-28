@@ -3,10 +3,10 @@ title: 审核日志
 description: 了解如何查看和管理Customer Journey Analytics审核日志。
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
-source-git-commit: dcfc960019b1dbd1b0306f4a0f07d113ae3f1312
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 67%
+source-wordcount: '825'
+ht-degree: 65%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 67%
 
 默认显示今天和昨天的审核日志。
 
-![审核日志](assets/audit_ui.png)
+![审核日志突出显示今天（2022年10月14日）和昨天（2022年10月13日）。 ](assets/audit_ui.png)
 
 您可以通过转到右上角的列选择器来选择可见的列。
 
@@ -38,7 +38,7 @@ ht-degree: 67%
 
 双击描述旁边的信息 (i) 按钮。
 
-![审核日志](assets/info-button-audit.png)
+![突出显示信息按钮的审核日志。 ](assets/info-button-audit.png)
 
 将显示以下项目：
 
@@ -91,7 +91,7 @@ ht-degree: 67%
 
 选择漏斗图标（![过滤器](assets/filter-icon.png)）以显示过滤器控件列表，帮助缩小结果范围。仅显示最后 1,000 条记录，这与选择的各种过滤器无关。
 
-![过滤器](assets/filters.png)
+![审核日志，其中显示了针对数据范围显示的过滤器。](assets/filters.png)
 
 在 UI 中有以下过滤器可用于审核事件：
 

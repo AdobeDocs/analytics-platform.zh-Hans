@@ -1,12 +1,12 @@
 ---
 title: 指导分析常见问题解答
 description: 有关引导式分析的常见问题解答。
-exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
+exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: 产品分析
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '425'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 2%
 
 | 指导分析词 | Analysis Workspace术语 |
 | --- | --- |
-| 事件 | 度量 |
+| 事件 | 量度 |
 | 用户 | 人员 |
 | 属性 | 维度 |
 | 值 | 维度项 |
@@ -61,7 +61,7 @@ ht-degree: 2%
 
 * **引导式分析是一种以事件为中心的体验。** 每个分析都从选择事件开始，然后可以添加维度和过滤器来优化该事件数据。
 
-![结构](assets/structure.png)
+![Analysis Workspace和引导式分析视图](assets/structure.png)
 
 请考虑以下示例，其中您侧重于网站主页的相关数据。 团队提出类似的问题，但分析方法可能不同。
 

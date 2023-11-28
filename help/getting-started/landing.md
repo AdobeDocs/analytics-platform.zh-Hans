@@ -4,10 +4,10 @@ title: Customer Journey Analytics 登陆页面
 role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 9a45b3a6f1c1b4da91fa6c79ad0e265cdd89e020
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 100%
+source-wordcount: '1524'
+ht-degree: 99%
 
 ---
 
@@ -21,8 +21,8 @@ Customer Journey Analytics 的登录页突出[!DNL Analysis Workspace]显示了�
 
 | 功能 | 描述 | 屏幕快照 |
 | --- | --- | --- |
-| 全屏展开[!UICONTROL 项目]表格 | 单击汉堡菜单图标，展开表格。此操作将折叠左边栏标签。 | ![展开表格](assets/landing-collapse2.png) |
-| 自定义列宽 | 以前，列宽是固定的。现在可以通过拖动列分隔符进行调整。 | ![列宽](assets/column-width.png) |
+| 全屏展开[!UICONTROL 项目]表格 | 单击汉堡菜单图标，展开表格。此操作将折叠左边栏标签。 | ![展开选定表格，仅显示没有左边栏选项卡的项目](assets/landing-collapse2.png) |
+| 自定义列宽 | 以前，列宽是固定的。现在可以通过拖动列分隔符进行调整。 | ![列宽选择器](assets/column-width.png) |
 | 重新排列固定项目 | 要上下移动固定项目，请单击固定项目旁边的省略号，然后选择&#x200B;**[!UICONTROL 向上移动]** 或 **[!UICONTROL 向下移动]**。 | ![移动固定项目](assets/move-up-down.png) |
 | 新表列 | 单击表格右上角的 [!UICONTROL 自定义表格] 图标。新表列包括： <ul><li>**[!UICONTROL 计划项目]**：当项目已计划时，设置为[!UICONTROL 开启]，或者，但项目未计划时，设置为[!UICONTROL 关闭]。点击 [!UICONTROL 开启] 链接，您可以看到有关计划项目的信息。如果您是项目所有者，也可[编辑项目计划](/help/analysis-workspace/export/t-schedule-report.md)。</li><li>**[!UICONTROL 项目 ID]**：项目 ID 可用于调试项目。</li><li>**[!UICONTROL 最长的日期范围]**：较长的日期范围会增加项目的复杂性，并可能增加处理和加载时间。 </li><li>**[!UICONTROL 查询次数]**：项目加载时向 Analytics 发出的请求总数。较多的项目查询次数会增加项目的复杂性，并可能增加处理和加载时间。此数据仅在加载项目或发送计划项目后可用。 </li></ul> | ![新列](assets/new-columns.png) |
 | **[!UICONTROL 创建项目]** | 当在 Workspace 中单击&#x200B;**[!UICONTROL 新建项目]**&#x200B;时，您可再次在[!UICONTROL 空白项目]和[!UICONTROL 空白移动记分卡]之间进行选择。 您也可以从公司创建的任何模板中进行选择。 | ![新建](assets/create-new.png) |

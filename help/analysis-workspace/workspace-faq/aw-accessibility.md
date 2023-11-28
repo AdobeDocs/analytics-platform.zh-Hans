@@ -3,10 +3,10 @@ description: Analysis Workspace 中的无障碍支持功能
 title: Analysis Workspace 中的辅助功能
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 99%
+source-wordcount: '618'
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 99%
 * `F6` 会导航到项目中的第一个面板，并在该面板内的可视化图表之间移动。然后，它将移到项目中的下一个面板并重复上述操作。
 * 我们应用焦点指示器，以便近视的键盘用户能够清楚地了解当前具有焦点的 UI 元素。指示器是指选定元素周围的蓝色边框。
 
-   ![焦点指示器](assets/focus-indicator.png)
+  ![自由格式表，显示自由格式表周围蓝色边框的焦点指示符。](assets/focus-indicator.png)
 
 ### 菜单栏的键盘导航
 
@@ -98,7 +98,7 @@ ht-degree: 99%
 
 完全组件验证后，按 `Save` 可关闭生成器。
 
-![错误验证](assets/error-validation.png)
+![区段生成器和错误验证指示器。](assets/error-validation.png)
 
 ## 支持操作系统无障碍功能
 

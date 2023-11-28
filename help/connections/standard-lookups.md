@@ -4,25 +4,25 @@ description: 使用标准查找可利用 Customer Journey Analytics 中的有用
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 675b3c24de2fdb47c8072d15fba168cc72feefbe
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 76%
+source-wordcount: '376'
+ht-degree: 73%
 
 ---
 
 # 向数据集添加标准查找
 
 >[!IMPORTANT]
->标准查找仅适用于Customer Journey Analytics中的Analytics源连接器数据源。 您可以将其用于标准 Adobe Analytics 实施、[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) 或 Experience Platform 数据收集 API。
+>标准查找仅适用于Customer Journey Analytics中的Analytics Source Connector数据源。 您可以将其用于标准 Adobe Analytics 实施、[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) 或 Experience Platform 数据收集 API。
 
 标准查找（也称为 Adobe 提供的查找）可以增强 Customer Journey Analytics 的功能，用于报告一些本身并不是非常有用但在与其他数据结合时可以发挥作用的维度/属性。示例包括移动设备属性、操作系统属性和浏览器维度，如浏览器版本号。“标准查找”类似于查找数据集。 标准查找适用于整个 Experience Cloud 组织。它们自动应用于包含某些 XDM 架构字段（有关具体字段见下文）的所有事件数据集。Adobe 分类的每个架构位置都存在一个标准查找数据集。
 
-在传统Adobe Analytics中，这些维度会自行显示，但在Customer Journey Analytics中，您必须在创建数据视图时主动包含这些维度。 在“连接”工作流中，选择具有标准查找键标志的数据集。数据视图 UI 自动知道包括所有标准查找维度以用于报告。查找文件会在所有区域和所有帐户中自动保持为最新版本和可用。这些文件将存储在与客户关联的特定于区域的组织中。
+在传统Adobe Analytics中，这些维度按自己的方式显示，但在Customer Journey Analytics中，您必须在创建数据视图时主动包含这些维度。 在“连接”工作流中，选择具有标准查找键标志的数据集。数据视图 UI 自动知道包括所有标准查找维度以用于报告。查找文件会在所有区域和所有帐户中自动保持为最新版本和可用。这些文件将存储在与客户关联的特定于区域的组织中。
 
 ## 对Analytics源连接器数据集使用标准查找
 
-标准查找数据集在报告时自动应用。如果您使用Analytics Source Connector并引入Adobe为其提供标准查找的维度，我们会自动应用此标准查找。 如果某个事件数据集包含 XDM 字段，我们可以对其应用标准查找。
+标准查找数据集在报告时自动应用。如果您使用Analytics Source Connector并且引入Adobe为其提供标准查找的维度，我们会自动应用此标准查找。 如果某个事件数据集包含 XDM 字段，我们可以对其应用标准查找。
 
 <!--
 ### Specific IDs that need to be populated
@@ -74,8 +74,8 @@ The catch here is that they can only populate those IDs today if they have a dir
 
 要报告标准查找维度，当您在 Customer Journey Analytics 中创建数据视图时需要添加这些维度。
 
-![](assets/global-lookup.png)
+![创建一个显示“添加组件”列表的数据视图](assets/global-lookup.png)
 
 然后，您便可以在工作区中查看查找数据：
 
-![](assets/gl-reporting.png)
+![显示数据的自由格式表](assets/gl-reporting.png)

@@ -3,10 +3,10 @@ description: 计算量度生成器提供一个画布，可以将维度、量度�
 title: 生成指标
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 61%
+source-wordcount: '1069'
+ht-degree: 60%
 
 ---
 
@@ -26,7 +26,7 @@ Customer Journey Analytics提供了一个画布以将维度、量度、筛选器
 
 下图及随附的表介绍了计算量度生成器的某些主要区域和功能。
 
-![](assets/cm_builder_ui.png)
+![新的计算量度窗口，其中显示了本节中描述的主要区域和功能。](assets/cm_builder_ui.png)
 
 | 字段 | 描述 |
 | --- | --- |

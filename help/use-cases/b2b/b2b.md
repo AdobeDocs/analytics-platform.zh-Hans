@@ -4,9 +4,9 @@ description: 了解如何将基于帐户的数据作为查询数据集添加到C
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: d2bb21939f861d83b6c306ac548e4fb35cbd19a4
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '821'
 ht-degree: 74%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 74%
 
 创建您自己的架构 [查找](/help/getting-started/cja-glossary.md) 表可确保所用的数据集能够以正确设置（记录类型）的Customer Journey Analytics使用。 最佳实践是[创建一个名为查找的自定义模式类](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans#create-new-class)，该类中没有任何元素，可以重新用于所有查找表。
 
-![](../assets/create-new-class.png)
+![“创建新类”对话框。](../assets/create-new-class.png)
 
 ## 2.创建查询数据集(Experience Platform)
 

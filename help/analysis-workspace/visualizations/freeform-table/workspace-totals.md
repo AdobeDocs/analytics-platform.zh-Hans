@@ -1,12 +1,12 @@
 ---
-description: 工作区总计的计算方式。
+description: 了解如何计算工作区总计。
 title: 工作区总计
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 81%
+source-wordcount: '522'
+ht-degree: 76%
 
 ---
 
@@ -17,22 +17,22 @@ ht-degree: 81%
 * **[!UICONTROL 总计]** （灰色的“共”数字） — 此总计表示已收集的所有事件。 当在面板级别或自由格式表中应用过滤器时，此总计会进行相应的调整以反映符合筛选条件的所有事件。
 * **[!UICONTROL 表总计]**（黑色数字）— 此总计通常等于[!UICONTROL 总计]或是其子集。它反映自由格式表内应用的任何表筛选器，包括[!UICONTROL 不包含任何内容]选项。
 
-![](assets/total-row.png)
+![自由格式表突出显示总计和表总计。](assets/total-row.png)
 
 ## 显示总计设置
 
 在&#x200B;**[!UICONTROL 列设置]**&#x200B;下，有&#x200B;**[!UICONTROL 显示总数]**&#x200B;和&#x200B;**[!UICONTROL 显示总计]**&#x200B;选项。如果未选中这些设置，则将从表中删除总计。当总计不合理（例如，在某些[计算量度场景](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals.html?lang=zh-Hans)中）时，可能需要此操作。
 
-![](assets/column-settings-total.png)
+![列设置选项显示“显示总计”和“显示授予总计”的复选标记。](assets/column-settings-total.png)
 
 ## 静态行总计设置
 
 [静态行](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)总计的行为方式不尽想同，可采用&#x200B;**[!UICONTROL 行设置]**&#x200B;来进行控制。
 
 * **[!UICONTROL 将当前行的总和显示为总计]**  — 此设置将显示表中行的客户端总和，这意味着总计将 **非** 删除重复的量度，如访问次数或人员。
-* **[!UICONTROL 显示全部总计]**  — 此设置将显示服务器端总和，这意味着总计将消除重复的量度，如访问次数或人员。
+* **[!UICONTROL 显示总计]**  — 此设置将显示服务器端总和，这意味着总计将消除重复的量度，如访问次数或人员。
 
-![](assets/static-rows.png)
+![显示选定的“显示总计”的行设置。](assets/static-rows.png)
 
 ## 常见问题解答
 

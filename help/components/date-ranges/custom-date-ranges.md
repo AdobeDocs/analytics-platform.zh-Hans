@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: 创建自定义日期范围
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '248'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '289'
+ht-degree: 85%
 
 ---
 
@@ -21,17 +21,17 @@ ht-degree: 100%
 
 ## “两个月之前”的日期范围
 
-下面的自定义日期范围显示了“两个月之前”的日期范围，其中，“概要更改”可视化信息显示了方向上的变化。
+下面的自定义日期范围显示了“两个月之前”的日期范围，其中，“概要更改”可视化图表显示了方向上的变化。
 
-![](assets/date-range-two-months-ago.png)
+![日期范围生成器显示两个月前的使用滚动日期](assets/date-range-two-months-ago.png)
 
 自定义日期范围显示在项目中“日期范围”组件面板的最上方：
 
-![](assets/date-range-panel-two-months-ago.png)
+![日期范围组件面板，带有指向两个月前的箭头。](assets/date-range-panel-two-months-ago.png)
 
 您可以将这个自定义日期范围拖至使用“上个月”预设的自定义月连续日期范围旁边的列中，以便进行比较。添加一个“概要更改”可视化图表并从每个列中选择总量，可显示方向上的变化：
 
-![](assets/date-range-two-months-table.png)
+![总变化显示和增加14.45%。](assets/date-range-two-months-table.png)
 
 ## 使用 7 天滚动日期范围
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 
 例如，您可以创建一个日期范围，指定一个于一周前结束的连续 7 天的时段。
 
-![](assets/create_date_range.png)
+![日期范围生成器，其中显示一个指定7天滚动窗口的日期范围。](assets/create_date_range.png)
 
 使用 *`rolling daily`*。
 

@@ -4,10 +4,10 @@ description: 解释如何从传统 Adobe Analytics 获取数据
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 86%
+source-wordcount: '1207'
+ht-degree: 82%
 
 ---
 
@@ -53,29 +53,29 @@ Adobe Analytics 源连接器允许您将 Adobe Analytics 报告套件数据导�
 
 3. 在 Adobe Analytics 互动程序中选择&#x200B;**[!UICONTROL 设置]**&#x200B;或&#x200B;**[!UICONTROL 添加数据]**。
 
-   ![源](./assets/sources-overview.png)
+   ![已选择源的Adobe Experience Platform窗口，同时突出显示Adobe应用程序和添加数据。](./assets/sources-overview.png)
 
 4. 选择&#x200B;**[!UICONTROL 报告套件]**&#x200B;从报表套件列表中，选择要使用的报表套件。
 
-   ![报表包](./assets/report-suites.png)
+   ![显示“报表包”列表的Adobe Experience Platform窗口](./assets/report-suites.png)
 
    选择&#x200B;**[!UICONTROL 下一步]**。
 
 5. 选择&#x200B;**[!UICONTROL 默认模式]**&#x200B;作为[!UICONTROL 目标模式]。Adobe Experience Platform 自动创建模式和相应的数据集，以映射所选 Adobe Analytics 报告套件中的所有标准字段。
 
-   ![默认模式](./assets/default-schema.png)
+   ![选择了默认架构的Adobe Experience Platform窗口](./assets/default-schema.png)
 
    选择&#x200B;**[!UICONTROL 下一步]**。
 
 6. 命名数据流并（可选）提供描述。
 
-   ![数据流详细信息](./assets/dataflow-detail.png)
+   ![Adobe Experience Platform窗口，突出显示数据流详细信息部分](./assets/dataflow-detail.png)
 
    选择&#x200B;**[!UICONTROL 下一步]**。
 
 7. 检查连接并选择&#x200B;**[!UICONTROL 完成]**。
 
-   ![请查看](./assets/review.png)
+   ![Adobe Experience Platform窗口，其中突出显示了供审阅的连接和数据类型部分](./assets/review.png)
 
 
 创建连接后，将自动创建数据流以使用报表包中的Adobe Analytics数据填充数据集。 数据流最多可摄取13个月的生产沙盒的历史数据。 非生产沙盒中的回填限制为三个月。
@@ -111,7 +111,7 @@ Adobe Analytics 源连接器允许您将 Adobe Analytics 报告套件数据导�
 
    - 选择由 Adobe Analytics 源连接器自动创建的数据集，以及要包含在连接中的任何其他数据集。
 
-     ![添加数据集](./assets/cja-connections-2a.png)
+     ![“添加数据集”窗口](./assets/cja-connections-2a.png)
 
    - 选择&#x200B;**[!UICONTROL 下一步]**。
 

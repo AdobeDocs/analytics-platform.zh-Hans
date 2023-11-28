@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: 管理导出日志
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
-source-git-commit: b0eff3702ce92bab8a3d75bc07e1b33c168805c2
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '835'
 ht-degree: 7%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 7%
 
 1. 选择 [!UICONTROL **日志**] 选项卡。
 
-   ![导出日志选项卡](assets/export-logs-tab.png)
+   ![显示“日志”选项卡的“导出”窗口](assets/export-logs-tab.png)
 
    每个日志的详细信息都显示在可用列中。
 
@@ -49,7 +49,7 @@ ht-degree: 7%
 
 1. 选择 **筛选** 图标。
 
-   ![筛选器信息](assets/export-log-filters.png)
+   ![显示“按帐户类型筛选”列表的“导出”窗口](assets/export-log-filters.png)
 
    您可以按以下条件进行筛选：
 
