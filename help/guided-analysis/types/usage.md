@@ -4,7 +4,7 @@ description: 随着时间的推移衡量用户参与度.
 exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: 产品分析
-source-git-commit: e39ab8af98e2bf2a4e63ef49e0ebce472cc1f45f
+source-git-commit: 170737214fea4dbd4d90d33ebf770920c8344fb1
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 2%
@@ -45,7 +45,7 @@ ht-degree: 2%
 
 向图表添加其他数据。 当图表上显示多个系列时，叠加仅显示在悬停上。
 
-* **[!UICONTROL 异常检测]**：运行 [异常检测](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) 趋势分析。 离群值显示为圆点，您可以将光标悬停在这些圆点上以获取更多信息。
+* **[!UICONTROL 异常检测]**：运行 [异常检测](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) 趋势分析。 离群值显示为圆点，您可以将光标悬停在这些圆点上以获取更多信息。
 * **[!UICONTROL 趋势线叠加]**：向图表添加趋势线，这有助于通过数据描述更清晰的模式。
    * [!UICONTROL 线性]：创建一条直的回归线。 最适合以稳定速率增加或减少的简单线性数据。 方程式：`y = a + b * x`
    * [!UICONTROL 对数]：创建曲线回归线。 最适合快速增加或减少的数据，然后变得更加均衡。 方程式：`y = a + b * log(x)`

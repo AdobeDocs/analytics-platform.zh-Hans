@@ -5,7 +5,7 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-source-git-commit: dd83785ea67a48e2051c60568e6fe5b436edf4db
+source-git-commit: 170737214fea4dbd4d90d33ebf770920c8344fb1
 workflow-type: tm+mt
 source-wordcount: '1649'
 ht-degree: 100%
@@ -60,7 +60,7 @@ Customer Journey Analytics 使用一种强大的专有架构，该架构分散�
 
 这些可视化组件中内置了智能功能，例如：
 
-* **虚拟分析师功能**，如[异常检测](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)，它使用预测算法和机器学习深入了解是什么促使您的数据中产生异常行为。
+* **虚拟分析师功能**，如[异常检测](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md)，它使用预测算法和机器学习深入了解是什么促使您的数据中产生异常行为。
 
 * 专门关注客户历程见解的&#x200B;**高级分析功能**，如[流量图](/help/analysis-workspace/visualizations/c-flow/flow.md)、[归因面板](/help/analysis-workspace/c-panels/attribution.md)、[流失图](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)和[维度细分。](/help/components/dimensions/t-breakdown-fa.md)开箱即用的可视化示例包括：
 
