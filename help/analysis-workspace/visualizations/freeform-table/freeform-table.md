@@ -3,7 +3,7 @@ title: 自由格式表
 description: 自由格式表是在 Analysis Workspace 中进行数据分析的基础
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 91%
@@ -20,7 +20,7 @@ ht-degree: 91%
 
 构建表最快捷的方法便是将组件直接拖到空白项目、面板或自由格式表中。随后将自动以建议的格式为您构建自由格式表。[观看教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/auto-build-freeform-tables-in-analysis-workspace.html?lang=zh-Hans)。
 
-![将带有访问组件的新面板拖放到工作空间中。](assets/automated-table.png)
+![将带有访问组件的新面板放入工作空间。](assets/automated-table.png)
 
 ## 自由格式表生成器
 

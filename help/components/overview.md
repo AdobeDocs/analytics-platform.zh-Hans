@@ -4,10 +4,10 @@ description: 了解Customer Journey Analytics提供了哪些组件，以及如�
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 79%
+source-wordcount: '1146'
+ht-degree: 78%
 
 ---
 
@@ -36,7 +36,7 @@ Analysis Workspace 中的组件包括量度、维度、区段和时间粒度，�
 
 要访问“组件”面板，请单击左边栏中的&#x200B;**[!UICONTROL 组件]**&#x200B;图标。您可以使用左边栏图标或[热键](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)在面板（空白面板、[自由格式面板](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)、[快速分析面板](/help/analysis-workspace/c-panels/quickinsight.md)或[Attribution IQ](/help/analysis-workspace/c-panels/attribution.md) 面板）、[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)和“组件”之间切换。
 
-![“组件”图标](assets/components.png)
+![工作区面板在左边栏中突出显示了组件图标](assets/components.png)
 
 请参阅[创建项目](/help/analysis-workspace/home.md)，以了解有关在项目中使用组件的信息。
 
@@ -75,7 +75,7 @@ Analysis Workspace 中的组件包括量度、维度、区段和时间粒度，�
    >   通过按住 Shift 或按住 Command (Mac) 或 Ctrl (Windows) 可选择多个组件。
 
 
-   ![“组件操作”列表](assets/component-actions.png)
+   ![显示“标记”、“收藏”、“批准”、“共享”和“删除”的“组件操作”列表。](assets/component-actions.png)
 
    | 组件操作 | 描述 |
    |--- |--- |
