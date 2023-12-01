@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 150a46e59d7f76d90906c85332a94cd5974008c2
+source-git-commit: 412cb540af4fd7500821f42d9d89e146644997db
 workflow-type: tm+mt
-source-wordcount: '2919'
-ht-degree: 95%
+source-wordcount: '2966'
+ht-degree: 94%
 
 ---
 
@@ -19,6 +19,8 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 
 | 功能 | 描述 |
 | --- | --- |
+| **2023 年 12 月** | |
+| 对异常检测文档的更新 | 异常检测文档以前位于有关Virtual Analyst的部分中。 进行了以下更改： <ul><li>术语Virtual Analyst已从文档中删除。</li><li>有关部分 [异常检测](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) 直接移动到Analysis Workspace部分下方。</li></ul> |
 | **2023 年 10 月** | |
 | 使用派生字段设置目标/目标 | 已添加 [用例](../use-cases/goals-using-derived-fields.md) 本文说明了如何使用派生字段设置目标/指标并报告这些目标/指标。 |
 | 将全表导出到云 | 添加了有关将包含数百万个Workspace行的完整表导出到云目标的文档。 <p>导出全表可一次性或按计划投放在 Workspace 中设计的数据表，其中支持最多五个细分、五个量度、过滤器和计算量度，所有这些都在一个连接在一起的表中。它从 Adobe Analytics 中的 Data Warehouse 报告演化而来，具有许多当今在 Data Warehouse 中不提供但经常有人要求提供的新功能。</p><p>有关详细信息，请参阅[将 Customer Journey Analytics 报告导出到云](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html)。 | 2023 年 10 月 4 日 |
