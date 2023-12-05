@@ -4,9 +4,9 @@ description: 了解 Adobe Experience Platform 中定义的数据标签和政策�
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '530'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 94%
 
 再次单击左边栏中的[!UICONTROL 过滤器]图标，在&#x200B;**[!UICONTROL 数据管理]**&#x200B;下，单击&#x200B;**[!UICONTROL 政策]**：
 
-![按显示强制分析选定内容的列表过滤包含的组件](assets/filter-policies.png)
+![所含组件的筛选依据列表，其中显示选择了“强制分析”](assets/filter-policies.png)
 
 单击&#x200B;**[!UICONTROL 应用]**&#x200B;查看已启用的策略。
 
@@ -67,9 +67,9 @@ ht-degree: 94%
 
 这些组件在左边栏[!UICONTROL 架构字段]列表中显示为灰色：
 
-![组件呈灰显状态，策略消息指示策略已应用于此字段以限制数据的使用](assets/component-greyed.png)
+![灰显的组件和策略消息表示已将策略应用于此字段，限制使用这些数据](assets/component-greyed.png)
 
-您也无法保存包含阻止字段的数据视图。
+您还无法保存其中有被阻止的字段的数据视图。
 
 >[!MORELIKETHIS]
 >[下载敏感数据](/help/analysis-workspace/export/download-send.md)

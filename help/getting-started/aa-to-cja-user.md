@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1483'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Customer Journey Analytics 中的几项功能已经过重命名和重新设计�
 
 您可以访问更多要分析的跨渠道数据。例如，您可以创建一个工作区项目来分析多个渠道的性能，前提是您的组织摄取的数据集包含在 Customer Journey Analytics 使用的数据视图中（请参阅下面的“数据架构的更改”）。
 
-![显示多渠道可视化图表的“数据源”视图](assets/cross-channel.png)
+![显示多渠道可视化的数据源视图](assets/cross-channel.png)
 
 ## 数据架构的更改 {#architecture}
 

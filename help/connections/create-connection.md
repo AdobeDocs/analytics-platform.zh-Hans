@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2798'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -30,9 +30,9 @@ ht-degree: 99%
 ## 创建和配置连接 {#create-connection}
 
 1. 在 Customer Journey Analytics 中，单击&#x200B;**[!UICONTROL 连接]**&#x200B;选项卡。
-1. 单击&#x200B;**[!UICONTROL “创建新连接”]**。
+1. 单击&#x200B;**[!UICONTROL 创建新连接]**。
 
-   ![无标题的连接设置](assets/create-conn1.png)
+   ![无标题连接设置](assets/create-conn1.png)
 
 1. 配置连接设置。
 

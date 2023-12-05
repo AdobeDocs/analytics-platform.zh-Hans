@@ -5,9 +5,9 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '941'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 99%
 
 Customer Journey Analytics 是 Adobe 推出的新一代 Analytics 解决方案，可让您运用 Analysis Workspace 的强大功能处理来自 Adobe Experience Platform 的数据。它可以划分、筛选、查询和可视化数年积累的有价值的数据，并结合 Platform 的功能来保存各种数据架构和类型。使用&#x200B;**体验数据模型 (XDM)**，可以采用统一的方式来表示和组织数据，以便进行数据合并和分析。通过 **Adobe Experience Platform Query Service**，可使用与 SQL 兼容的工具和框架查询和操作所有数据。
 
-高级 Customer Journey Analytics 架构如下所示：
+Customer Journey Analytics 架构大致如下所示：
 
-![本节中说明的Customer Journey Analytics架构](assets/cja-architecture.png)
+![在此部分中解释的 Customer Journey Analytics 架构](assets/cja-architecture.png)
 
 以下是 Customer Journey Analytics 的视频概述：
 
