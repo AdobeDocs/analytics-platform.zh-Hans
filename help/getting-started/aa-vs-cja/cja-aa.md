@@ -4,10 +4,10 @@ description: 将 Customer Journey Analytics 功能与 Adobe Analytics 功能集�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 15fbbf26b58b474f65e6585ac72bdf247fb1678d
-workflow-type: ht
-source-wordcount: '2135'
-ht-degree: 100%
+source-git-commit: 3482083fd5f99f133db79f682d3231cc75c969ff
+workflow-type: tm+mt
+source-wordcount: '2044'
+ht-degree: 96%
 
 ---
 
@@ -42,9 +42,9 @@ ht-degree: 100%
 | 报告 API 访问 | 全面支持；通过 [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/) 提供。 |
 | 计划报表/项目 | 全面支持 |
 | 区段 | 全面支持。现在称为“筛选条件”- 请注意，传统 Analysis Workspace 中的任何现有区段都不会移植到 Customer Journey Analytics。 |
-| 虚拟报表包 | 全面支持。现在称为[数据视图](/help/data-views/create-dataview.md)。 |
+| 虚拟报表包 | 全面支持。现在称为 [数据视图](/help/data-views/create-dataview.md). |
 | 虚拟报表包组件管理 | 全面支持。现在是数据视图的一部分。 |
-| 设备、浏览器、反向链接、技术维度 | 支持基于 [Analytics Source Connector ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)的数据集和 WebSDK 生成的数据集。请参阅[关于通过 ADC 支持哪些 Analytics 变量的文档。](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=zh-Hans)如果您使用 Experience Platform Web SDK 数据收藏集，则当前不支持基于设备查找的设备和维度。计划在以后提供支持。要将设备和浏览器查找功能添加到 Web SDK 数据流，请参阅[本文档](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html) |
+| 设备、浏览器、反向链接、技术维度 | 支持基于 [Analytics Source Connector ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)的数据集和 WebSDK 生成的数据集。请参阅 [关于通过ADC支持哪些Analytics变量的文档](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=zh-Hans)如果您使用Experience PlatformWeb SDK数据收集，则当前不支持基于设备查找的设备与维度。 计划在以后提供支持。要将设备和浏览器查找功能添加到 Web SDK 数据流，请参阅[本文档](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html) |
 | 流 Media Analytics | 使用作为 Workspace 中的“同时观看媒体的人数”面板和“媒体播放耗时”面板一部分的 Analytics Data Connector 即可获得媒体数据。 |
 
 {style="table-layout:auto"}
@@ -137,5 +137,6 @@ ht-degree: 100%
 | 增强了安全和隐私选项 - HIPAA 就绪 | Customer Journey Analytics 符合 HIPAA 标准，并提供额外的安全选项，以确保符合相关法规。Adobe Analytics 尚未为 HIPAA 做好准备。 |
 | 能够组合数据集（例如 Adobe Analytics 报告包） | 通过 Customer Journey Analytics，可从多个报告包组合数据，如同它们是 Adobe Analytics 中的单个报告包一样。 |
 | 派生字段 | 通过派生字段，可为数据转换报告时间。可即时组合、更正或创建数据，并以追溯的方式将数据应用于所有报告。 |
+| 引导式分析 | 引导式分析是一种报表格式，它允许用户快速满足其数据需求，以便他们能够快速获得高质量见解并做出更多数据驱动型决策。 引导式分析是Adobe Product Analytics的一部分，是Customer Journey Analytics的附加功能。 |
 
 {style="table-layout:auto"}
