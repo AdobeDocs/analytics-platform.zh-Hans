@@ -4,16 +4,16 @@ description: 指定维度或指标在报表中的行为方式。
 exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 485160fe362330bafbc07f958c4ada51d4d30089
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 94%
+source-wordcount: '312'
+ht-degree: 90%
 
 ---
 
 # 行为组件设置
 
-在维度和指标上均可找到行为设置。可用的设置取决于组件类型和架构数据类型。
+在维度和指标上均可找到行为设置。设置的可用性取决于组件类型和架构数据类型。
 
 ![行为设置](../assets/behavior-settings.png)
 
@@ -25,11 +25,11 @@ ht-degree: 94%
 
 {style="table-layout:auto"}
 
-![区分大小写的维度](../assets/case-sens-workspace.png)
-
 >[!NOTE]
 >
 >如果在查找数据集维度上启用[!UICONTROL 小写]，则对于同一标识符可存在多个查找值。如果发生此冲突，Customer Journey Analytics将使用第一个ASCII整理值（大写值在小写值之前）。 Adobe 建议不要在启用[!UICONTROL 小写]后使用包含相同值的查找数据集。
+
+![区分大小写的维度](../assets/case-sens-workspace.png)
 
 ## 指标行为设置
 
