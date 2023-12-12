@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: d6e10a00bf9afb2788f99800e09a7e80fd31e489
+source-git-commit: a4d9272b1e813a34f11e4b42c3369129b57c6ef0
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 1%
@@ -396,9 +396,4 @@ select identityMap,ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 >[!IMPORTANT]
 >
 >此用例涉及两个调度程序。 要保证模拟数据馈送功能正常工作，请确保在查询服务和数据导出中配置的计划不会干预。
-
-
-
-
-
 

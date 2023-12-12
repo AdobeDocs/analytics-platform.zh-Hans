@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 689235eb0b982f4e572282f1c73e4606f9d82b12
+source-git-commit: 3d53fbcfea341f0cf9c1cf7da5296565eafff0f9
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 82%
+source-wordcount: '1045'
+ht-degree: 80%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 82%
    + [数据摄取概述](../data-ingestion/data-ingestion.md)
    + 摄取并使用快速入门指南{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
-      + Adobe Experience Platform Edge Network {#edge-network}
+      + Adobe Experience Platform边缘网络 {#edge-network}
          + [Web SDK](../data-ingestion/aepwebsdk.md)
          + [Mobile SDK](../data-ingestion/aepmobilesdk.md)
          + [服务器API](../data-ingestion/serverapi.md)
@@ -298,7 +298,7 @@ ht-degree: 82%
    + [查看报告活动](../reporting-activity-manager/reporting-activity.md)
    + [取消报告请求](../reporting-activity-manager/reporting-activity-cancel-requests.md)
 
-+ 拼合 {#stitching}
++ 拼接 {#stitching}
    + [概述](../stitching/overview.md)
    + [拼合的工作原理](../stitching/explained.md)
    + [创建和管理拼合的数据集](../stitching/stitching-ui.md)
@@ -343,6 +343,7 @@ ht-degree: 82%
    + Adobe Analytics 数据 {#aa-data}
       + [使用“营销渠道”维度](../use-cases/aa-data/marketing-channels.md)
       + [将报告包与不同的架构相结合](../use-cases/aa-data/combine-report-suites.md)
+      + [模拟数据馈送](../use-cases/emulating-data-feeds.md)
    + 复杂的数据 {#complex-data}
       + [使用对象数组](../use-cases/object-arrays.md)
    + 派生字段 {#derived-fields}
