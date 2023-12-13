@@ -5,258 +5,127 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: d5719dddfb4cefda761370951973d55b3904032f
+source-git-commit: e49ea37f36d105e428bc6d04a6ed42a47e2d75fc
 workflow-type: tm+mt
-source-wordcount: '2107'
-ht-degree: 1%
+source-wordcount: '2555'
+ht-degree: 5%
 
 ---
 
 # 模拟数据馈送功能
 
-Adobe Analytics数据馈送是从Adobe Analytics中获取原始数据的有效方法。 此使用案例描述了如何从Experience Platform中获取相似类型的原始数据，以便在Adobe之外的其他平台中使用并根据贵组织的意愿使用。
-
-## 先决条件
-
-在使用本使用案例中所述的功能之前，请确保您满足以下所有要求：
-
-* 将在线和离线数据发送到Experience Platform数据湖的有效实施。
-* 访问查询服务，该服务将打包为基于平台的应用程序或Data Distiller加载项的一部分。 请参阅 [查询服务打包](https://experienceleague.adobe.com/docs/experience-platform/query/packaging.html?lang=en) 以了解更多信息。
-* 访问导出数据集功能，已购买Real-Time CDP Prime或Ultimate包、Adobe Journey Optimizer或Customer Journey Analytics的客户可以使用此功能。 请参阅 [将数据集导出到云存储目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=zh-Hans) 以了解更多信息。
-* 一个或多个目标(例如：Amazon S3、Google Cloud Storage)已配置为可在其中导出数据馈送的原始数据。
+Adobe Analytics数据馈送是从Adobe Analytics中获取原始数据的有效方法。 此使用案例描述了如何从Experience Platform中获得相似类型的原始数据，以便您可以在Adobe之外的其他平台和工具中使用数据，具体情况由贵组织自行决定。
 
 ## 简介
 
 模拟Adobe Analytics数据馈送的过程包括：
 
-* 定义 **计划查询** ，使用为您的数据馈送生成数据作为输出数据集 **查询服务**.
+* 定义 **计划查询** ，它将为数据馈送生成数据作为输出数据集 ![输出数据集](assets/output-dataset.svg)，使用 **查询服务**.
 * 定义 **计划的数据集导出** 用于使用以下方式将输出数据集导出到云存储目标 **数据集导出**.
 
-
 ![数据馈送](assets/data-feed.svg)
+
+
+## 先决条件
+
+在使用本使用案例中所述的功能之前，请确保您满足以下所有要求：
+
+* 将数据收集到Experience Platform数据湖中的有效实施。
+* 访问Data Distiller加载项，以确保您有权执行批量查询。 请参阅 [查询服务打包](https://experienceleague.adobe.com/docs/experience-platform/query/packaging.html?lang=en) 以了解更多信息。
+* 访问导出数据集功能，在您购买Real-Time CDP Prime或Ultimate包、Adobe Journey Optimizer或Customer Journey Analytics后可用。 请参阅 [将数据集导出到云存储目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=zh-Hans) 以了解更多信息。
+* 一个或多个目标(例如：Amazon S3、Google Cloud Storage)已配置为可在其中导出数据馈送的原始数据。
 
 
 ## 查询服务
 
 Experience Platform查询服务允许您查询和联接Experience Platform数据湖中的任何数据集，就像它是一个数据库表一样。 然后，您可以将结果捕获为新数据集，以供进一步在报表中使用或导出。
 
-使用查询服务 [用户界面](https://experienceleague.adobe.com/docs/experience-platform/query/ui/overview.html?lang=en)， a [客户端通过PostgresSQL协议连接](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=zh-Hans)，或 [RESTful API](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=en) 创建和计划收集数据馈送数据的查询。
+使用查询服务 [用户界面](https://experienceleague.adobe.com/docs/experience-platform/query/ui/overview.html?lang=en)， a [通过PostgresQL协议连接的客户端](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=zh-Hans)，或 [RESTful API](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=en) 创建和计划收集数据馈送数据的查询。
 
 ### 创建查询
 
-您可以使用标准ANSI SQL for SELECT语句的所有功能以及其他有限命令来创建和执行为数据馈送生成数据的查询。 请参阅 [SQL语法](https://experienceleague.adobe.com/docs/experience-platform/query/sql/syntax.html?lang=en) 以了解更多信息。 除了此SQL语法外，Adobe还支持：
+您可以使用标准ANSI SQL for SELECT语句的所有功能以及其他有限命令来创建和执行查询，以便为数据馈送生成数据。 请参阅 [SQL语法](https://experienceleague.adobe.com/docs/experience-platform/query/sql/syntax.html?lang=en) 以了解更多信息。 除了此SQL语法外，Adobe还支持：
 
-* 预建 [Adobe定义函数(ADF)](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en) 帮助执行有关存储在Experience Platform数据湖中的事件数据的常见业务相关任务，包括 [会话化](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-mobile-visit-processing.html?lang=zh-Hans) 和 [归因](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=zh-Hans)，
+* 预建 [Adobe定义函数(ADF)](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en) 这些函数帮助对存储在Experience Platform数据湖中的事件数据执行常见的业务相关任务，包括 [会话化](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-mobile-visit-processing.html?lang=zh-Hans) 和 [归因](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=zh-Hans)，
 * 多个内置 [Spark SQL函数](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en)，
 * [元数据PostgreSQL命令](https://experienceleague.adobe.com/docs/experience-platform/query/sql/metadata.html?lang=en)，
 * [预准备语句](https://experienceleague.adobe.com/docs/experience-platform/query/sql/prepared-statements.html?lang=en).
 
 
-#### 示例
-
-下面列出了为数据馈送收集数据的一些查询示例。 这些示例使用 `demo_system_event_dataset_for_website_global_v1_1` 作为示例体验事件数据集，其中包含从与网站交互的客户那里收集的数据。
-
-+++五大产品
-
-*在网站上查看的五大产品是什么？*
-
-```sql
-select productListItems.name, count(*)
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType = 'commerce.productViews'
-group  by productListItems.name
-order  by 2 desc
-limit 5;
-```
-
-+++
-
-+++产品交互漏斗
-
-*网站中的各种产品交互是什么？*
-
-```sql
-select eventType, count(*)
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType is not null
-and    eventType <> ''
-group  by eventType;
-```
-
-+++
-
-+++人们做什么
-
-*在作为会话的第三个页面访问“取消服务”页面之前，人们在网站上做什么？*
-
-此查询使用Adobe定义的函数 `SESS_TIMEOUT` 和 `NEXT`.
-
-* 此 `SESS_TIMEOUT()` 重现使用Adobe Analytics找到的访问分组。 它执行类似的基于时间的分组，但带有可自定义的参数。
-* `NEXT()` 和 `PREVIOUS()` 帮助您了解客户如何在您的站点中导航。
-
-```sql
-SELECT
-  webPage,
-  webPage_2,
-  webPage_3,
-  webPage_4,
-  count(*) journeys
-FROM
-  (
-      SELECT
-        webPage,
-        NEXT(webPage, 1, true)
-          OVER(PARTITION BY ecid, session.num
-                ORDER BY timestamp
-                ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING).value
-          AS webPage_2,
-        NEXT(webPage, 2, true)
-          OVER(PARTITION BY ecid, session.num
-                ORDER BY timestamp
-                ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING).value
-          AS webPage_3,
-        NEXT(webPage, 3, true)
-           OVER(PARTITION BY ecid, session.num
-                ORDER BY timestamp
-                ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING).value
-          AS webPage_4,
-        session.depth AS SessionPageDepth
-      FROM (
-            select a._sampleorg.identification.core.ecid as ecid,
-                   a.timestamp,
-                   web.webPageDetails.name as webPage,
-                    SESS_TIMEOUT(timestamp, 60 * 30)
-                       OVER (PARTITION BY a._sampleorg.identification.core.ecid
-                             ORDER BY timestamp
-                             ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
-                  AS session
-            from   demo_system_event_dataset_for_website_global_v1_1 a
-            where  a._sampleorg.identification.core.ecid in (
-                select b._sampleorg.identification.core.ecid
-                from   demo_system_event_dataset_for_website_global_v1_1 b
-                where  b.web.webPageDetails.name = 'Cancel Service'
-            )
-        )
-)
-WHERE SessionPageDepth=1
-and   webpage_3 = 'Cancel Service'
-GROUP BY webPage, webPage_2, webPage_3, webPage_4
-ORDER BY journeys DESC
-LIMIT 10;
-```
-
-+++
-
-+++多少时间
-
-*访问“取消服务”页面后，访客需要多长时间才能致电呼叫中心？*
-
-要回答此类查询，请使用 `TIME_BETWEEN_NEXT_MATCH()` Adobe定义的函数。 上一个匹配或下一个匹配之间的时间函数提供了一个新维度，该维度测量自特定事件以来经过的时间。
-
-```sql
-select * from (
-       select _sampleorg.identification.core.ecid as ecid,
-              web.webPageDetails.name as webPage,
-              TIME_BETWEEN_NEXT_MATCH(timestamp, web.webPageDetails.name='Call Start', 'seconds')
-              OVER(PARTITION BY _sampleorg.identification.core.ecid
-                  ORDER BY timestamp
-                  ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
-              AS contact_callcenter_after_seconds
-       from   demo_system_event_dataset_for_website_global_v1_1
-       where  web.webPageDetails.name in ('Cancel Service', 'Call Start')
-) r
-where r.webPage = 'Cancel Service'
-limit 15;
-```
-
-+++
-
-+++结果如何
-
-*客户致电呼叫中心会有什么结果？*
-
-对于此查询， `demo_system_event_dataset_for_website_global_v1_1` 数据集使用示例连接 `demo_system_event_dataset_for_call_center_global_v1_1` 包含呼叫中心交互的数据集。
-
-```sql
-select distinct r.*,
-       c._sampleorg.interactionDetails.core.callCenterAgent.callFeeling,
-       c._sampleorg.interactionDetails.core.callCenterAgent.callTopic,
-       c._sampleorg.interactionDetails.core.callCenterAgent.callContractCancelled
-from (
-       select _sampleorg.identification.core.ecid ecid,
-              web.webPageDetails.name as webPage,
-              TIME_BETWEEN_NEXT_MATCH(timestamp, web.webPageDetails.name='Call Start', 'seconds')
-              OVER(PARTITION BY _sampleorg.identification.core.ecid
-                  ORDER BY timestamp
-                  ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
-              AS contact_callcenter_after_seconds
-       from   demo_system_event_dataset_for_website_global_v1_1
-       where  web.webPageDetails.name in ('Cancel Service', 'Call Start')
-) r
-, demo_system_event_dataset_for_call_center_global_v1_1 c
-where r.ecid = c._sampleorg.identification.core.ecid
-and r.webPage = 'Cancel Service'
-and c._sampleorg.interactionDetails.core.callCenterAgent.callContractCancelled IN (true,false)
-and c._sampleorg.interactionDetails.core.callCenterAgent.callTopic IN ('contract', 'invoice','complaint','wifi')
-limit 15;
-```
-
-+++
-
-+++营销渠道参与(Adobe Analytics数据)
-
-*对于以意大利语为主的Web流量，各个营销渠道的参与情况如何？*
-
-例如，此示例使用由Adobe Analytics源连接器自动创建的数据集 `demo_data_sample_org_midvalues`.
-
-```sql
-select 
-    channel.typeAtSource, count(*) 
-from 
-    demo_data_sample_org_midvalues 
-where 
-    (channel.typeAtSource IS NOT NULL
-and
-    web.webPageDetails.URL LIKE '%/it/it/%')
-group by 
-    channel.typeAtSource
-order by 2 desc;
-```
-
-+++
-
-有关更多（高级）示例查询，请参阅 [已放弃的浏览](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/abandoned-browse.html?lang=en)， [归因分析](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/attribution-analysis.html?lang=en)， [机器人过滤](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/bot-filtering.html?lang=en)以及查询服务指南中的其他示例。
-
-
 #### 标识
 
-在Experience Platform中，可以使用各种标识。 确保正确查询标识。 在上述示例中，ECID被定义为核心对象的一部分，而核心对象本身又是标识对象的一部分，这两种对象都使用体验事件核心字段组添加到架构中(例如： `_sampleorg.identification.core.ecid`)。 ECID在架构中的组织方式可能有所不同。
+在Experience Platform中，可以使用各种标识。 创建查询时，请确保正确查询了标识。
+
+通常，您会在单独的字段组中找到身份。 在实施ECID (`ecid`)可以定义为字段组的一部分，使用 `core` 对象，它本身是 `identification` 对象。 (例如： `_sampleorg.identification.core.ecid`)。 ECID在架构中的组织方式可能有所不同。
 
 或者，您可以使用 `identityMap` 以查询身份。 此对象的类型为 `Map` 并使用 [嵌套数据结构](#nested-data-structure).
 
-对于使用Adobe Analytics源连接器摄取的数据，可能有多个标识可用。 主要标识符取决于ECID或AAID是否存在。 请参阅 [Adobe Analytics数据中的主标识符](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#how-the-analytics-source-treats-identities) 和 [AAID、ECID、AACUSTOMID和Analytics源连接器](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=zh-Hans) 了解更多信息
 
 #### 数据馈送列
 
-可在查询中使用的字段（列）取决于数据集所基于的架构定义。 确保您确实了解数据集背后的架构。
+可在查询中使用的XDM字段取决于数据集所基于的架构定义。 确保您确实了解数据集背后的架构。
 
-例如，在一些 [示例查询](#examples) 您已查询 *页面名称*.
+为了方便数据馈送列和XDM字段之间的映射，您应当考虑包含 [Adobe Analytics ExperienceEvent模板](https://github.com/adobe/xdm/blob/master/extensions/adobe/experience/analytics/experienceevent-all.schema.json) “体验事件”架构中的字段组。 请参阅 [数据建模的最佳实践](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) 更具体地说 [Adobe的应用程序架构字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en#adobe-application-schema-field-groups).
+
+例如，如果您要使用 *页面名称* 作为数据馈送的一部分：
 
 * 在Adobe Analytics数据馈送的UI中，您可以选择 **[!UICONTROL pagename]** 作为要添加到您的数据馈送定义的列。
-* 在查询服务中，您包括 `web.webPageDetails.name` 从 `demo_system_event_dataset_for_website_global_v1_1` 数据集(基于 **演示系统 — 网站的事件架构(Gobal v1.1)** 体验事件架构)。 请参阅 [Web详细信息架构字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/web-details.html?lang=en) 以了解更多信息。
+* 在查询服务中，您包括 `web.webPageDetails.name` 从 `sample_event_dataset_for_website_global_v1_1` 数据集(基于 **网站的示例事件架构(Gobal v1.1)** 体验事件架构)。 请参阅 [Web详细信息架构字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/web-details.html?lang=en) 以了解更多信息。
 
-要了解体验事件数据集中的前Adobe Analytics数据列和XDM字段与底层架构之间的映射，请参阅 [Analytics字段映射](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=zh-Hans) 和 [Adobe Analytics ExperienceEvent完整扩展架构字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) 以了解更多信息。
+要了解以前的Adobe Analytics数据馈送列与体验事件数据集中的XDM字段和基础架构之间的映射，请参阅 [Analytics字段映射](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=zh-Hans) 和 [Adobe Analytics ExperienceEvent完整扩展架构字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) 以了解更多信息。
 
-此外，Experience PlatformWeb SDK自动收集的信息（即装即用）可能与识别查询列相关。 请参阅 [自动收集的信息](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=en) 以了解更多信息。
+此外， [Experience PlatformWeb SDK自动收集的信息（开箱即用）](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=en) 可能与识别查询的列相关。
 
+#### 点击级别数据和识别
+
+根据实施情况，传统上在Adobe Analytics中收集的点击级别数据现在作为Experience Platform中的时间戳事件数据存储。 下表摘自 [Analytics字段映射](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en#generated-mapping-fields) 和显示了如何将点击级别特定的Adobe Analytics数据馈送列与查询中的相应XDM字段映射的示例。 该表还显示了如何使用XDM字段识别点击、访问和访客的示例。
+
+| 数据馈送列 | XDM字段 | 类型 | 描述 |
+|---|---|---|---|
+| hitid_high + hitid_low | _id | 字符串 | 用于标识点击的唯一标识符。 |
+| hitid_low | _id | 字符串 | 与hitid_high结合使用，用来唯一标识点击。 |
+| hitid_high | _id | 字符串 | 与hitid_high结合使用，用来唯一标识点击。 |
+| hit_time_gmt | receivedTimestamp | 字符串 | 点击的时间戳，基于Unix时间。 |
+| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | 字符串 | 访客第一次点击的时间戳（基于 Unix 时间）。 |
+| cust_hit_time_gmt | timestamp | 字符串 | 这仅在启用了时间戳的数据集中使用。 这是随该时间戳发送的时间戳，基于Unix时间。 |
+| visid_high + visid_low | identityMap | 对象 | 访问的唯一标识符。 |
+| visid_high + visid_low | endUserIDs._experience.aaid.id | 字符串 | 访问的唯一标识符。 |
+| visid_high | endUserIDs._experience.aaid.primary | 布尔值 | 与visid_low结合使用，用来唯一标识访问。 |
+| visid_high | endUserIDs._experience.aaid.namespace.code | 字符串 | 与visid_low结合使用，用来唯一标识访问。 |
+| visid_low | identityMap | 对象 | 与visid_high结合使用，用来唯一标识访问。 |
+| cust_visid | identityMap | 对象 | 客户访客ID |
+| cust_visid | endUserIDs._experience.aacustomid.id | 对象 | 客户访客ID。 |
+| cust_visid | endUserIDs._experience.aacustomid.primary | 布尔值 | 客户访客ID命名空间代码。 |
+| cust_visid | endUserIDs._experience.aacustomid.namespace.code | 与visid_low结合使用，用来唯一标识客户访客ID。 |
+| 地理\_* | placeContext.geo.* | 字符串，数字 | 地理位置数据，如国家/地区、地区、城市等 |
+| visit_page_num | _experience.analytics.session.depth | 数字 | 在点击深度维度中使用的变量。 对于用户生成的每次点击，此值增加1，并在每次访问后重置。 |
+| event_list | commerce.purchases、commerce.productViews、commerce.productListOpens、commerce.checkouts、commerce.productListAdds、commerce.productListRemovals、commerce.productListViews、\_experience.analytics.event101to200。*， ...， \_experience.analytics.event901_1000。\* | 字符串 | 点击时触发的标准商务和自定义事件。 |
+| page_event | web.webInteraction.type | 字符串 | 在图像请求中发送的点击类型（标准点击、下载链接、退出链接或单击的自定义链接）。 |
+| page_event | web.webInteraction.linkClicks.value | 数字 | 在图像请求中发送的点击类型（标准点击、下载链接、退出链接或单击的自定义链接）。 |
+| page_event_var_1 | web.webInteraction.URL | 字符串 | 仅在链接跟踪图像请求中使用的变量。 此变量包含下载链接、退出链接或单击的自定义链接的URL。 |
+| page_event_var_2 | web.webInteraction.name | 字符串 | 仅在链接跟踪图像请求中使用的变量。 这会列出链接的自定义名称（如果已指定）。 |
+| first_hit_ref_type | _experience.analytics.endUser.firstWeb.webReferrer.type | 字符串 | 数值ID，表示访客第一个反向链接的反向链接类型。 |
+| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | 整数 | 访客第一次点击的时间戳（基于 Unix 时间）。 |
+| paid_search | search.isPaid | 布尔值 | 如果点击与付费搜索检测相匹配，则设置此标记。 |
+| ref_type | web.webReferrertype | 字符串 | 表示点击的反向链接类型的数字 ID。 |
+
+#### 发布列
+
+Adobe Analytics数据馈送将列的概念与 `post_` 前缀，即包含处理后数据的列。 有关更多信息，请参阅[数据馈送常见问题解答](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/df-faq.html?lang=en#post)。
+
+通过Experience Platform边缘网络(Web SDK、Mobile SDK、Server API)在数据集中所收集的数据不概念 `post_` 字段，这解释了原因 `post_` 前缀和 *非* `post_` 在Analytics字段映射中，为数据馈送列加上前缀，以映射到相同的XDM字段。 例如，两者 `page_url` 和 `post_page_url` 数据馈送列映射到相同的 `web.webPageDetails.URL` XDM字段。
+
+请参阅 [跨Adobe Analytics和Customer Journey Analytics比较数据处理](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons.html?lang=zh-Hans) 以了解有关数据处理差异的概述。
+
+此 `post_` 前缀列类型数据在Experience Platform数据湖中收集时，但需要先进行高级转换，然后才能在数据馈送用例中成功使用。 在查询中执行这些高级转换涉及使用 [Adobe定义的函数](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en) 用于会话划分、归因和重复数据删除。 请参阅 [示例](#examples) 了解如何使用这些函数。
 
 #### 查找
 
-要从其他数据集查找数据，请使用标准SQL功能（WHERE子句、INNER JOIN、OUTER JOIN等）。 请参阅 [结果如何](#examples) 示例中的查询。
+若要从其他数据集查找数据，请使用标准SQL功能(`WHERE` 子句， `INNER JOIN`， `OUTER JOIN`、和其他人)。
 
 #### 计算
 
-要对字段（列）执行计算，只需使用标准SQL函数(例如 `COUNT(*)` 在 [产品交互漏斗](#examples) 查询)或 [数学和统计运算符及函数](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) Spark SQL的一部分。
+要对字段（列）执行计算，请使用标准SQL函数(例如 `COUNT(*)` 或 [数学和统计运算符及函数](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) Spark SQL的一部分。 此外， [窗口函数](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en#window-functions) 提供对更新聚合的支持，并为有序子集中的每一行返回单个项。 请参阅 [示例](#examples) 了解如何使用这些函数。
 
 #### 嵌套数据结构
 
@@ -281,9 +150,7 @@ order by 2 desc;
 }
 ```
 
-您可以使用 [`explode()` 或其他数组函数](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#arrays) 从Spark SQL获取嵌套数据结构中的数据。
-
-例如：
+您可以使用 [`explode()` 或其他数组函数](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#arrays) 从Spark SQL获取嵌套数据结构中的数据，例如：
 
 ```sql
 select explode(identityMap) from demosys_cja_ee_v1_website_global_v1_1 limit 15;
@@ -297,18 +164,29 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
 有关更多信息，请参阅[在 Query Service 中使用嵌套数据结构](https://experienceleague.adobe.com/docs/experience-platform/query/key-concepts/nested-data-structures.html?lang=en)。
 
+
+#### 示例
+
+例如，使用Experience Platform数据湖中的数据集中的数据、利用Adobe定义函数和/或Spark SQL的附加功能以及将提供与等效Adobe Analytics数据馈送类似结果的查询，请参见
+
+* [已放弃的浏览](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/abandoned-browse.html?lang=en)，
+* [归因分析](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/attribution-analysis.html?lang=en)，
+* [机器人过滤](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/bot-filtering.html?lang=en)，
+* 以及查询服务指南中的其他示例用例。
+
+
 ### 计划查询
 
-您可以计划查询，以确保按首选间隔执行查询并生成结果。 在计划查询时，您可以定义输出数据集。
+您可以计划查询，以确保按首选间隔执行查询并生成结果。
 
 #### 使用查询编辑器
 
-您可以使用查询编辑器计划查询。 定义查询的计划时，您可以定义输出数据集。 请参阅 [查询计划](https://experienceleague.adobe.com/docs/experience-platform/query/ui/query-schedules.html?lang=en) 以了解更多信息。
+您可以使用查询编辑器计划查询。 在计划查询时，您可以定义输出数据集。 请参阅 [查询计划](https://experienceleague.adobe.com/docs/experience-platform/query/ui/query-schedules.html?lang=en) 以了解更多信息。
 
 
 #### 使用查询服务API
 
-或者，您可以使用RESTful API为查询定义查询和计划。 请参阅 [查询服务API指南](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=en_) 以了解更多信息。
+或者，您可以使用RESTful API为查询定义查询和计划。 请参阅 [查询服务API指南](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=en) 以了解更多信息。
 确保将输出数据集定义为可选的一部分 `ctasParameters` 创建查询时的属性([创建查询](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Queries/operation/createQuery))或在为查询创建计划时([创建计划查询](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Schedules/operation/createSchedule))。
 
 
