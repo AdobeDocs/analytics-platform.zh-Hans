@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: e49ea37f36d105e428bc6d04a6ed42a47e2d75fc
+source-git-commit: b41adb3f3fa4abbfa7be491e5a1fbf81e1623598
 workflow-type: tm+mt
-source-wordcount: '2555'
+source-wordcount: '2556'
 ht-degree: 5%
 
 ---
@@ -96,7 +96,7 @@ Experience Platform查询服务允许您查询和联接Experience Platform数据
 | cust_visid | identityMap | 对象 | 客户访客ID |
 | cust_visid | endUserIDs._experience.aacustomid.id | 对象 | 客户访客ID。 |
 | cust_visid | endUserIDs._experience.aacustomid.primary | 布尔值 | 客户访客ID命名空间代码。 |
-| cust_visid | endUserIDs._experience.aacustomid.namespace.code | 与visid_low结合使用，用来唯一标识客户访客ID。 |
+| cust_visid | endUserIDs._experience.aacustomid.namespace.code | 字符串 | 与visid_low结合使用，用来唯一标识客户访客ID。 |
 | 地理\_* | placeContext.geo.* | 字符串，数字 | 地理位置数据，如国家/地区、地区、城市等 |
 | visit_page_num | _experience.analytics.session.depth | 数字 | 在点击深度维度中使用的变量。 对于用户生成的每次点击，此值增加1，并在每次访问后重置。 |
 | event_list | commerce.purchases、commerce.productViews、commerce.productListOpens、commerce.checkouts、commerce.productListAdds、commerce.productListRemovals、commerce.productListViews、\_experience.analytics.event101to200。*， ...， \_experience.analytics.event901_1000。\* | 字符串 | 点击时触发的标准商务和自定义事件。 |
