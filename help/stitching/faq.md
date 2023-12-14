@@ -3,10 +3,11 @@ title: 拼合常见问题解答
 description: 拼接常见问题解答
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: d7dd5f4f0ef53e61755cf02c49c2f7f081ff4b39
+exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
+source-git-commit: 53d394feb7d1132ad6339bae0e980f32bfe2ee6f
 workflow-type: tm+mt
-source-wordcount: '1299'
-ht-degree: 42%
+source-wordcount: '1269'
+ht-degree: 34%
 
 ---
 
@@ -49,7 +50,7 @@ ht-degree: 42%
 
 +++
 
-+++**在与 Adobe 帐户团队联系并提供所需信息后，已重新生成键值的数据集需要多长时间才可用？**
++++**在联系我的Adobe客户团队并提供所需信息后，已重新生成键值的数据集需要多长时间才可用？**
 
 在Adobe启用拼接后大约一周，实时拼接功能会可用。 回填可用性取决于现有数据的数量。小型数据集（每日的事件数量少于 100 万）通常需要几天时间，而大型数据集（每日的事件数量为 10 亿）可能需要一周或更长时间。
 
@@ -63,13 +64,13 @@ ht-degree: 42%
 
 +++
 
-+++**拼接如何处理GDPR和CCPA请求？**
++++**拼接如何处理隐私请求？**
 
-Adobe将根据当地和国际法规处理GDPR和CCPA请求。 Adobe 提供了 [Adobe Experience Platform 隐私服务](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans)来提交数据访问和删除请求。这些请求同时适用于原始数据集和已重新生成键值的数据集。
+Adobe将根据当地和国际法律处理隐私请求。 Adobe 提供了 [Adobe Experience Platform 隐私服务](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans)来提交数据访问和删除请求。这些请求同时适用于原始数据集和已重新生成键值的数据集。
 
 +++
 
-+++**如果一个或多个事件中的永久 ID 字段为空，会发生什么情况？**
++++**如果一个或多个事件中的Persistent ID字段为空，会发生什么情况？**
 
 如果在要拼合的数据集内，某个事件的持久ID字段为空，则会通过以下两种方式之一确定该事件的拼合ID：
 

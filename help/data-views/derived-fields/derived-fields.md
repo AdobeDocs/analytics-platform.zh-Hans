@@ -4,10 +4,10 @@ description: 派生字段通过一组可用函数和函数模板指定对架构�
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
-source-git-commit: 7a96c6b1f093a534e473de3bde8dc3044564c450
+source-git-commit: db61abfda71a26e4fae7134dfbb2f637b77e1e8c
 workflow-type: tm+mt
-source-wordcount: '5641'
-ht-degree: 14%
+source-wordcount: '5783'
+ht-degree: 12%
 
 ---
 
@@ -424,7 +424,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 以下约束适用，并且强制执行 *选择* 和 *设置* 值。
 
-|  | 约束 |
+|  | 限制 |
 |:---:|----|
 | **<span style='color: red'>A</span>** | 对您的评价 *选择* 在同一个 [!UICONTROL 如果]， [!UICONTROL 否则，如果] 构造(使用 [!UICONTROL 和] 或 [!UICONTROL 或])，并且可以是任何类型（字符串） ![字符串](assets/Smock_ABC_18_N.svg)，数值 ![数值](assets/Smock_123_18_N.svg)，等等)。 <br/>![依赖项A的屏幕截图](assets/dependency-a.png) |
 | **<span style='color: red'>B</span>** | 您所有的值 *设置* 跨规则必须来自同一容器并具有相同类型或相同类型的派生值。 <br/> ![依赖项B的屏幕截图](assets/dependency-b.png) |
@@ -585,7 +585,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>字符串</li></ul> | <ul><li>[!UICONTROL 值]:<ul><li>规则</li><li>标准字段</li><li>字段</li><li>字符串</li></ul></li><li>[!UICONTROL 分隔符]:<ul><li>字符串</li></ul></li> </ul> | <p>不适用</p> | <p>每个派生字段有2个函数</p> | <p>新建派生字段</p> |
+| <ul><li>字符串</li></ul> | <ul><li>[!UICONTROL 值]：<ul><li>规则</li><li>标准字段</li><li>字段</li><li>字符串</li></ul></li><li>[!UICONTROL 分隔符]：<ul><li>字符串</li></ul></li> </ul> | <p>不适用</p> | <p>每个派生字段有2个函数</p> | <p>新建派生字段</p> |
 
 {style="table-layout:auto"}
 
@@ -733,7 +733,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 应用查找的字段]:</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul><li>[!UICONTROL 查询数据集]</li><ul><li>数据集</li></ul><li>[!UICONTROL 匹配键]<ul><li>规则</li><li>字段</li></ul></li><li>要返回的值<ul><li>规则</li><li>字段</li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段3个函数</p> | <p>用于下一步规则中进一步处理的新派生字段或值</p> |
+| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 要应用查找的字段]：</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul><li>[!UICONTROL 查找数据集]</li><ul><li>Dataset</li></ul><li>[!UICONTROL 匹配键]<ul><li>规则</li><li>字段</li></ul></li><li>要返回的值<ul><li>规则</li><li>字段</li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段3个函数</p> | <p>用于下一步规则中进一步处理的新派生字段或值</p> |
 
 {style="table-layout:auto"}
 
@@ -782,7 +782,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 字段]:</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul> | <p>不适用</p> | <p>每个派生字段有2个函数</p> | <p>新建派生字段</p> |
+| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 字段]：</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul> | <p>不适用</p> | <p>每个派生字段有2个函数</p> | <p>新建派生字段</p> |
 
 {style="table-layout:auto"}
 
@@ -833,7 +833,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 字段]:</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul> | <p>不适用</p> | <p>每个派生字段5个函数</p> | <p>新建派生字段</p> |
+| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 字段]：</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul> | <p>不适用</p> | <p>每个派生字段5个函数</p> | <p>新建派生字段</p> |
 
 {style="table-layout:auto"}
 
@@ -846,7 +846,7 @@ Customer Journey Analytics使用以下默认容器模型：
 | 页面名称 | 会话 | 访客 |
 |---|--:|--:|
 | 帮助页面 | 250 | 200 |
-| home page | 500 | 250 |
+| 主页 | 500 | 250 |
 | 产品详细信息页面 | 300 | 200 |
 
 {style="table-layout:auto"}
@@ -869,7 +869,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 | 跨渠道交互 | 会话 | 访客 |
 |---|--:|--:|
-| home page | 500 | 250 |
+| 主页 | 500 | 250 |
 | 产品详细信息页面 | 300 | 200 |
 | 有关我的订单的问题 | 275 | 250 |
 | 帮助页面 | 250 | 200 |
@@ -899,7 +899,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>字符串</li><li>数值</li></ul> | <ul><li>[!UICONTROL 字段]:</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul></ul><ul><li>[!UICONTROL 正则表达式]:</li><ul><li>字符串</li></ul></li><li>[!UICONTROL Output Format（输出格式）]:<ul><li>字符串</li></ul></ul><ul><li>区分大小写</li><ul><li>布尔值</li></ul></li></ul></li> | <p>不适用</p> | <p>每个派生字段有1个函数</p> | <p>新建派生字段</p> |
+| <ul><li>字符串</li><li>数值</li></ul> | <ul><li>[!UICONTROL 字段]：</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul></ul><ul><li>[!UICONTROL 正则表达式]：</li><ul><li>字符串</li></ul></li><li>[!UICONTROL 输出格式]：<ul><li>字符串</li></ul></ul><ul><li>区分大小写</li><ul><li>布尔值</li></ul></li></ul></li> | <p>不适用</p> | <p>每个派生字段有1个函数</p> | <p>新建派生字段</p> |
 
 {style="table-layout:auto"}
 
@@ -996,7 +996,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>字符串</li><li>数值</li></ul> | <ul><li>[!UICONTROL 字段]:</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul></ul><ul><li>[!UICONTROL 方法]:</li><ul><li>从左侧</li><li>从右侧</li><li>转换为数组</li></ul></li><li>对于分隔符：<ul><li>字符串</li></ul><li>对于索引：<ul><li>数值</li></ul></li> | <p>不适用</p> | <p>每个派生字段5个函数</p> | <p>新建派生字段</p> |
+| <ul><li>字符串</li><li>数值</li></ul> | <ul><li>[!UICONTROL 字段]：</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul></ul><ul><li>[!UICONTROL 方法]：</li><ul><li>从左侧</li><li>从右侧</li><li>转换为数组</li></ul></li><li>对于分隔符：<ul><li>字符串</li></ul><li>对于索引：<ul><li>数值</li></ul></li> | <p>不适用</p> | <p>每个派生字段5个函数</p> | <p>新建派生字段</p> |
 
 {style="table-layout:auto"}
 
@@ -1089,7 +1089,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>字符串</li></ul> | <ul><li>[!UICONTROL 字段]<ul><li>规则</li><li>标准字段</li><li>字段</li></ul></li><li>修剪空格</li><li>修剪特殊字符<ul><li>输入特殊字符</li></ul></li><li>从左侧修剪<ul><li>From <ul><li>字符串开头</li><li>位置<ul><li>位置 #</li></ul></li><li>字符串<ul><li>字符串值</li><li>索引</li><li>标记以包含字符串</li></ul></li></ul></li><li>至<ul><li>字符串结尾</li><li>位置<ul><li>位置 #</li></ul></li><li>字符串<ul><li>字符串值</li><li>索引</li><li>标记以包含字符串</li></ul></li><li>长度</li></ul></li></ul></li><li>从右侧修剪<ul><li>From <ul><li>字符串结尾</li><li>位置<ul><li>位置 #</li></ul></li><li>字符串<ul><li>字符串值</li><li>索引</li><li>标记以包含字符串</li></ul></li></ul></li><li>至<ul><li>字符串开头</li><li>位置<ul><li>位置 #</li></ul></li><li>字符串<ul><li>字符串值</li><li>索引</li><li>标记以包含字符串</li></ul></li><li>长度</li></ul></li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段有1个函数</p> | <p>新建派生字段</p> |
+| <ul><li>字符串</li></ul> | <ul><li>[!UICONTROL 字段]<ul><li>规则</li><li>标准字段</li><li>字段</li></ul></li><li>修剪空格</li><li>修剪特殊字符<ul><li>输入特殊字符</li></ul></li><li>从左侧修剪<ul><li>从 <ul><li>字符串开始</li><li>位置<ul><li>位置#</li></ul></li><li>字符串<ul><li>字符串值</li><li>索引</li><li>标记以包含字符串</li></ul></li></ul></li><li>至<ul><li>字符串结束</li><li>位置<ul><li>位置#</li></ul></li><li>字符串<ul><li>字符串值</li><li>索引</li><li>标记以包含字符串</li></ul></li><li>长度</li></ul></li></ul></li><li>从右侧修剪<ul><li>从 <ul><li>字符串结束</li><li>位置<ul><li>位置#</li></ul></li><li>字符串<ul><li>字符串值</li><li>索引</li><li>标记以包含字符串</li></ul></li></ul></li><li>至<ul><li>字符串开始</li><li>位置<ul><li>位置#</li></ul></li><li>字符串<ul><li>字符串值</li><li>索引</li><li>标记以包含字符串</li></ul></li><li>长度</li></ul></li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段有1个函数</p> | <p>新建派生字段</p> |
 
 {style="table-layout:auto"}
 
@@ -1129,11 +1129,11 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 | 名称 | 活动 |
 |---|--:|
-| home page# | 1 |
-| home page? | 1 |
-| home page% | 1 |
-| home page&amp; | 1 |
-| home page/ | 1 |
+| 主页# | 1 |
+| 主页？ | 1 |
+| 主页% | 1 |
+| 主页&amp; | 1 |
+| 主页/ | 1 |
 
 {style="table-layout:auto"}
 
@@ -1147,7 +1147,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 | 页面名称 | 活动 |
 |---|--:|
-| home page | 5 |
+| 主页 | 5 |
 
 {style="table-layout:auto"}
 
@@ -1165,7 +1165,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 | UT123418 | 1 |
 | UT189021 | 1 |
 | ID028930 | 1 |
-| OR234223 | 1 |
+| 或234223 | 1 |
 | NV22342 | 1 |
 
 {style="table-layout:auto"}
@@ -1202,7 +1202,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>字符串</li></ul> | <ul><li>[!UICONTROL 字段]:</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul><li>[!UICONTROL 选项]:<ul><li>[!UICONTROL 获取协议]</li><li>[!UICONTROL 获取主机]</li><li>[!UICONTROL 获取路径]</li><li>[!UICONTROL 获取查询字符串值]<ul><li>[!UICONTROL 查询参数]:<ul><li>字符串</li></ul></li></ul></li><li>[!UICONTROL 获取哈希值]</li></ul></li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段5个函数</p> | <p>新建派生字段</p> |
+| <ul><li>字符串</li></ul> | <ul><li>[!UICONTROL 字段]：</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul><li>[!UICONTROL 选项]：<ul><li>[!UICONTROL 获取协议]</li><li>[!UICONTROL 获取主机]</li><li>[!UICONTROL 获取路径]</li><li>[!UICONTROL 获取查询字符串值]<ul><li>[!UICONTROL 查询参数]：<ul><li>字符串</li></ul></li></ul></li><li>[!UICONTROL 获取哈希值]</li></ul></li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段5个函数</p> | <p>新建派生字段</p> |
 
 {style="table-layout:auto"}
 
@@ -1281,6 +1281,12 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 - 每个Customer Journey Analytics连接最多可以有100个派生字段。
 
 ## 更多信息
+
+[`Trim`](#trim) 和 [`Lowercase`](#lowercase) 的组件设置中已提供的功能 [数据视图](../component-settings/overview.md). 通过使用派生字段，您可以组合这些函数，以直接在Customer Journey Analytics中进行更复杂的数据转换。 例如，您可以使用 `Lowercase` 删除事件字段中的区分大小写，然后使用 [`Lookup`](#lookup) 将新的小写字段与仅具有小写查找键的查找数据集匹配。 或者，您可以使用 `Trim` 在设置之前删除字符 `Lookup` 在新字段上。
+
+对派生字段中的查找和配置文件字段的支持允许您根据事件查找和配置文件属性转换数据。 在查找或用户档案数据集中具有帐户级别数据的B2B场景中，此项特别有用。 此外，此支持对于处理来自查找数据（如营销活动信息和选件类型）或来自配置文件数据（如成员层和帐户类型）的常用字段中的数据非常有用。
+
+有关派生字段的更多背景信息，请参阅：
 
 - [充分利用数据：用于在Customer Journey Analytics中使用派生字段的框架](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
 
