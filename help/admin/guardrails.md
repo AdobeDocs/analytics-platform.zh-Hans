@@ -1,12 +1,12 @@
 ---
 title: Customer Journey Analytics护栏
-description: 了解Customer Journey Analytics的护栏、静态限制、Performance Guardrail、范围参数和权限
+description: 了解用于Customer Journey Analytics的护栏
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
-source-git-commit: 2feea7e232f564b0bd72092ec6fd6d8a597ca716
+source-git-commit: 37cb4cc9ecb58f31fdcd53deaadbd124bf6e894c
 workflow-type: tm+mt
-source-wordcount: '1476'
+source-wordcount: '1467'
 ht-degree: 10%
 
 ---
