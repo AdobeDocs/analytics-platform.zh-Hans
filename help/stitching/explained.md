@@ -4,10 +4,10 @@ description: 了解拼接的概念
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 506838a0-0fe3-4b5b-bb9e-2ff20feea8bc
-source-git-commit: 8ca11b37ebda952d95ae38473a9c0d62be007e79
+source-git-commit: 2c650cf688112be1e6bf16c0863e743d61f9c35c
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 21%
+source-wordcount: '1109'
+ht-degree: 20%
 
 ---
 
@@ -51,29 +51,7 @@ ht-degree: 21%
 
 当标识的自定义变量与设备关联时，归因有效。 在以上示例中，除事件1、8、9和10之外的所有其他事件都将进行实时拼合(它们都使用 `Bob` 标识符)。 实时拼接“解析”事件4、6和12的拼接ID。
 
-
-<!--
-
-### Delayed data
-
-When incoming data for 'Live' stitching is delayed and over 24 hours old, and when no identities in that delayed data can be matched against identities already considered for 'Live' stitching, that delayed data is not added to the data considered for 'Live' stitching.
-
-In the example below, the data in event 2 is delayed but will be part of 'Live' stitching.
-
-| Event | Timestamp | Persistent ID (Cookie ID) | Transient ID (Login ID) | Stitched ID (after live stitch) | 
-|---|---|---|---|---|
-| 1 | 2023-05-12 12:01 | 246 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg)| - | **246** |
-| 2 | 2023-05-14 12:02 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob |
-
-In the example below, the data in event 2 is delayed and will NOT become part of 'Live' stitching.
-
-| Event | Timestamp | Persistent ID (Cookie ID) | Transient ID (Login ID) | Stitched ID (after live stitch) | 
-|---|---|---|---|---|
-| 1 | 2023-05-12 12:01 | 246 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg)| - | **246** |
-| ~~2~~ | ~~2023-05-14 12:02~~ | ~~891~~ |  | (not considered for 'Live' stitching) |
-
--->
-
+延迟的数据（时间戳超过24小时之前的数据）会尽最大努力处理，同时会优先拼合当前数据以获得最高质量。
 
 ## 步骤 2：重播拼接
 

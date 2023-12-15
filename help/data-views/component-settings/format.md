@@ -4,9 +4,9 @@ description: 配置指标的格式。
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 045037867063f6bb5a6be60132f8d7b1bb54917e
+source-git-commit: cf9e8c90eec78658e470d3a7a56cb2e3414591d4
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '709'
 ht-degree: 20%
 
 ---
@@ -24,8 +24,6 @@ ht-degree: 20%
 1. 选择包含要配置其格式设置的组件的数据视图。
 
 1. 选择&#x200B;[!UICONTROL **“组件”**]&#x200B;选项卡。
-
-   ![“组件”选项卡](../assets/format-settings-component-tab.png)
 
 1. 选择要配置的组件，然后展开 [!UICONTROL **格式**] 部分。
 
