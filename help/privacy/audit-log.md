@@ -3,9 +3,9 @@ title: 审核日志
 description: 了解如何查看和管理Customer Journey Analytics审核日志。
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 275d575d41a259bddb152074a55fedcdd6f9ecea
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '795'
 ht-degree: 65%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 65%
 
 默认显示今天和昨天的审核日志。
 
-![审核日志突出显示今天（2022年10月14日）和昨天（2022年10月13日）。 ](assets/audit_ui.png)
+![审核日志突出显示今天和昨天。 ](assets/audit_ui.png)
 
 您可以通过转到右上角的列选择器来选择可见的列。
 
@@ -71,7 +71,7 @@ ht-degree: 65%
    * DATASET_STITCHING
    * DATE_RANGE
    * 功能访问
-   * FILTER
+   * 筛选
    * IMS组织
    * 移动设备
    * 项目
