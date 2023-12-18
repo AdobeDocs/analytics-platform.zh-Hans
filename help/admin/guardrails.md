@@ -4,7 +4,7 @@ description: 了解用于Customer Journey Analytics的护栏
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
-source-git-commit: 37cb4cc9ecb58f31fdcd53deaadbd124bf6e894c
+source-git-commit: affe7fe57ba59a15458263afabe2715d4c5da5fe
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 10%
@@ -191,7 +191,7 @@ ht-degree: 10%
 
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
-| 每个报告的行数 | 300万 — 1.5亿 | 系统强制的护栏 | 每个报表的最大报表行数；该值基于许可的软件包。 |
+| 每个报告的行数 | 300万 — 3亿 | 系统强制的护栏 | 每个报表的最大报表行数；该值基于许可的软件包。 |
 | 每个表的细分 | 5 | 系统强制的护栏 | 每个表的最大划分数。 |
 | 每个表的量度 | 5 | 系统强制的护栏 | 每个表的最大量度数。 |
 | 计划频率 | 1 | 系统强制的护栏 | 导出可以安排在一天中执行一次(1)，也可以安排更长的导出时间（例如：每2天执行一次，或每周执行一次）。 |
