@@ -4,9 +4,9 @@ description: 有关引导式分析的常见问题解答。
 exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: 产品分析
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 2fe26bb906600a1987d9f4a07c5863030d52173a
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '434'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 +++**如何为我的组织配置引导式分析？**
 
-引导式分析是Customer Journey Analytics的一个付费附加功能。 如果您想开始使用此加载项，请与您的Adobe客户团队联系。
+引导式分析是Adobe Product Analytics的一部分，是Customer Journey Analytics的付费附加功能。 如果您想开始使用此加载项，请与您的Adobe客户团队联系。
 
 +++
 
@@ -46,7 +46,7 @@ ht-degree: 2%
 | 事件 | 量度 |
 | 用户 | 人员 |
 | 属性 | 维度 |
-| 值 | 维度项 |
+| 值 | Dimension项目 |
 | 区段 | 过滤器 |
 
 {style="table-layout:auto"}
@@ -59,7 +59,7 @@ ht-degree: 2%
 
 * **Analysis Workspace是一种以维度为中心的体验。** 表通常由维行组成，而列通常为量度。 可在行和列中应用过滤器以获取所需数据。
 
-* **引导式分析是一种以事件为中心的体验。** 每个分析都从选择事件开始，然后可以添加维度和过滤器来优化该事件数据。
+* **引导式分析是一种以事件和用户为中心的体验。** 每个分析都从选择事件开始，然后可以添加维度和过滤器来优化该事件数据。
 
 ![Analysis Workspace和引导式分析视图](assets/structure.png)
 
@@ -69,7 +69,7 @@ ht-degree: 2%
 
   ![以Dimension为中心](assets/dimension-centered.png)
 
-* 典型的以事件为中心的引导式分析方法是，“有多少用户查看了主页？”
+* 典型的事件和以用户为中心的引导式分析方法是：“有多少用户访问了我们的主页？”
 
   ![以事件为中心](assets/event-centered.png)
 
