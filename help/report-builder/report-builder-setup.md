@@ -1,21 +1,21 @@
 ---
 title: 如何在 Customer Journey Analytics 中设置 Report Builder
 description: 介绍如何在Customer Journey Analytics中设置Report Builder
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
 solution: Customer Journey Analytics
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+source-git-commit: 9efad7c7808a7a68bc25fc5f1700f4e4f8e18614
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 89%
+source-wordcount: '494'
+ht-degree: 87%
 
 ---
 
 # Report Builder 设置
 
-您可以使用 Excel 插件菜单快速访问 Report Builder。
+您可以使用Excel插件菜单快速访问Report Builder。
 
 ## 要求
 

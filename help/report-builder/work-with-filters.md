@@ -1,14 +1,14 @@
 ---
 title: 如何在 Customer Journey Analytics 的 Report Builder 中使用筛选器
 description: 介绍如何在Customer Journey Analytics的Report Builder中使用筛选器
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 exl-id: 1f39d7f4-b508-45d8-9b97-81242c3805d3
 solution: Customer Journey Analytics
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '849'
 ht-degree: 60%
 
 ---

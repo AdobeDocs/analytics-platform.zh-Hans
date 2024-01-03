@@ -1,12 +1,12 @@
 ---
 title: 如何在Customer Journey Analytics中配置Report Builder设置
 description: 介绍如何设置离线模式、语言、截止日期以及故障排除设置。
-role: Data Engineer, Data Architect, Admin, User
+role: Admin
 feature: Report Builder
 type: Documentation
 exl-id: 32423cb4-1a4c-4ea3-ad4b-9520aff9ae4b
 solution: Customer Journey Analytics
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 9efad7c7808a7a68bc25fc5f1700f4e4f8e18614
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 87%

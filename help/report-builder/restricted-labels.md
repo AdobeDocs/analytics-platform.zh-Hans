@@ -1,23 +1,23 @@
 ---
 title: Report Builder 中受到限制的标签是什么
 description: 描述 Report Builder 中受到限制的标签
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 99c3c66e-928e-4363-a6a9-bbcab792337a
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 57%
+source-wordcount: '323'
+ht-degree: 70%
 
 ---
 
 # Report Builder 中受到限制的标签
 
-通常，Customer Journey Analytics 中与数据治理相关的设置继承自 Adobe Experience Platform。Customer Journey Analytics与Adobe Experience Platform数据管理之间的集成允许标记敏感Customer Journey Analytics数据和实施隐私政策。
+通常，Customer Journey Analytics 中与数据治理相关的设置继承自 Adobe Experience Platform。Customer Journey Analytics 和 Adobe Experience Platform 数据管理之间的集成允许标记敏感的 Customer Journey Analytics 数据和实施隐私政策。
 
-在Experience Platform使用的数据集上创建的隐私标签和策略可以在Customer Journey Analytics数据视图工作流中显示。 这些标签会阻止或警告从敏感字段创建量度和/或维度的用户。有关数据集的更多信息，请参阅[数据集概述](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=zh_Hans)。
+在 Experience Platform 使用的数据集上创建的隐私标签和政策可以在 Customer Journey Analytics 数据视图工作流中显示。这些标签会阻止或警告从敏感字段创建量度和/或维度的用户。有关数据集的更多信息，请参阅[数据集概述](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=zh_Hans)。
 
 此外，从Customer Journey Analytics（通过报表、导出、API等）导出数据时，将添加警告或标签，以通知用户报表包含需要以特定方式处理的敏感信息。
 
