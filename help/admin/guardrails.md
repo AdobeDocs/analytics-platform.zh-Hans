@@ -4,9 +4,9 @@ description: 了解用于Customer Journey Analytics的护栏
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
-source-git-commit: affe7fe57ba59a15458263afabe2715d4c5da5fe
+source-git-commit: f436084d71f19e9cf3dd67287e510e07586d58f6
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1478'
 ht-degree: 10%
 
 ---
@@ -210,8 +210,9 @@ ht-degree: 10%
 | 到实时客户配置文件的Adobe Analytics源连接器（未启用A4T） | &lt; 2分钟 |
 | 实时客户配置文件的Adobe Analytics源连接器（已启用A4T） | &lt; 30分钟 |
 | 数据从Edge Network引入数据湖或流式引入 | &lt; 60分钟 |
-| 从Adobe Analytics源连接器将数据摄取到数据湖 | &lt; 90分钟 |
+| 从Adobe Analytics源连接器将数据摄取到数据湖 | &lt; 2.25小时 |
 | 将数据从数据湖摄取到Customer Journey Analytics | &lt; 90分钟 |
+| 拼合(可选功能，请参阅 [拼接概述](../stitching/overview.md) 了解更多信息) | &lt; 3.25小时 |
 | 少于100亿个事件的Adobe Analytics源连接器回填（最多13个月的历史数据） | &lt; 4周 |
 | 受众发布到实时客户配置文件，包括自动创建流式区段，并可让区段准备好接收数据。 | ≈ 60分钟 |
 | 受众的刷新频率 | 一次性刷新：少于5分钟的延迟。<br/>每4小时、每天、每周、每月刷新一次（延迟与刷新率密切相关）。 |
