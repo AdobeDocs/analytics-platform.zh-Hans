@@ -4,10 +4,11 @@ keywords: Analysis Workspace
 title: 管理导出
 feature: Components
 exl-id: 0c21802a-c46f-41be-9356-d836c038b174
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '1029'
-ht-degree: 6%
+ht-degree: 3%
 
 ---
 
@@ -35,9 +36,9 @@ ht-degree: 6%
 
    | 过滤器 | 描述 |
    |---------|----------|
-   | [!UICONTROL **帐户类型**] | 与导出关联的帐户类型。 可以使用以下帐户类型： <ul><li>[!UICONTROL **AEP 数据登陆区**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
+   | [!UICONTROL **帐户类型**] | 与导出关联的帐户类型。 可以使用以下帐户类型： <ul><li>[!UICONTROL **AEP数据登陆区**]</li><li>[!UICONTROL **Amazon S3角色ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud平台**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
    | [!UICONTROL **状态**] | 导出的状态。 可以使用以下状态： <ul><li>[!UICONTROL **活动**]：表示计划的导出尚未过期，或一次性导出尚未完成。 </li><li>[!UICONTROL **完成**]：表示导出已成功导出。 对于计划的导出，这表示计划已过期。</li><li>[!UICONTROL **失败**]<p>以下情况可能会导致导出失败。 将鼠标悬停在 [!UICONTROL **失败**] 状态，以查看有关失败的详细信息。 <ul><li>计划的导出过期</li><li>已达到计划导出的行限制 </li></ul> </p></li></ul> |
-   | [!UICONTROL **频率**] | 导出的频率。 可以使用以下频率： <ul><li>[!UICONTROL **一次性**]</li><li>[!UICONTROL **每日**]</li><li>[!UICONTROL **每周**]</li><li>[!UICONTROL **每月**]</li><li>[!UICONTROL **每年**]</li></ul> |
+   | [!UICONTROL **频率**] | 导出的频率。 可以使用以下频率： <ul><li>[!UICONTROL **一次**]</li><li>[!UICONTROL **每日**]</li><li>[!UICONTROL **每周**]</li><li>[!UICONTROL **每月**]</li><li>[!UICONTROL **每年**]</li></ul> |
 
    {style="table-layout:auto"}
 
@@ -146,7 +147,7 @@ ht-degree: 6%
    | 频率 | 发送导出的频率。 可用选项包括 [!UICONTROL 一次]， [!UICONTROL 每日]， [!UICONTROL 每周]， [!UICONTROL 按工作日的月度]， [!UICONTROL 按月份日期]， [!UICONTROL 按月份日期，每年]、和 [!UICONTROL 按特定日期按年]. |
    | 发送时间 | 发送导出的时间。 |
    | 上次发送 | 上次发送导出的时间。 |
-   | 上次修改时间 | 上次修改导出的时间。 默认情况下，“导出”页面上的项目将按此列排序。 |
+   | 最近修改 | 上次修改导出的时间。 默认情况下，“导出”页面上的项目将按此列排序。 |
    | 帐户类型 | 从中导出数据的云帐户的类型。 可用的帐户类型包括 [!UICONTROL Amazon S3角色ARN]， [!UICONTROL Google Cloud平台]， [!UICONTROL Azure SAS]， [!UICONTROL Azure RBAC]， [!UICONTROL Snowflake]、和 [!UICONTROL Adobe Experience Platform]. |
 
    {style="table-layout:auto"}

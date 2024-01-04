@@ -3,7 +3,8 @@ title: 审核日志
 description: 了解如何查看和管理Customer Journey Analytics审核日志。
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
-source-git-commit: 275d575d41a259bddb152074a55fedcdd6f9ecea
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 65%

@@ -3,9 +3,10 @@ description: 面板是表格和可视化图表的集合
 title: 面板概述
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1306'
 ht-degree: 48%
 
 ---
@@ -89,7 +90,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 [观看视频](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html)以详细了解如何将下拉过滤器添加到项目中。
 
-### 动态下拉筛选器
+### 动态下拉过滤器
 
 通过动态下拉过滤器，可根据面板报表范围内的数据以及其他下拉过滤器中的值来确定可用值。 例如，您可以使用国家/地区维度和城市维度创建两个动态下拉列表。 当您从“UICONTROL国家/地区”下拉列表中选择国家/地区时，“城市”下拉列表会进行动态调整以仅显示该国家/地区内的城市。
 

@@ -1,12 +1,14 @@
 ---
 title: 首次使用视图
-description: 衡量功能首次使用对关键指标的影响.
+description: 衡量首次使用功能对关键指标的影响。
 feature: Guided Analysis
 keywords: 产品分析
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 3%
+source-wordcount: '620'
+ht-degree: 1%
 
 ---
 

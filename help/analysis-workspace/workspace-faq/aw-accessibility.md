@@ -3,10 +3,11 @@ description: Analysis Workspace 中的无障碍支持功能
 title: Analysis Workspace 中的辅助功能
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 96%
+source-wordcount: '605'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 96%
 
 [!UICONTROL Analysis Workspace] 中的导航方式包括自上而下，以及从左至右。以下导航元素有助于促进无障碍功能：
 
-* `Tab` 键会启用地标快捷键，并在 Workspace 内的较大部分之间移动。在左侧边栏中，`Tab` 还允许您从一个可拖动选项移到下一个可拖动选项。
+* 此 `Tab` 键可启用地标快捷键，在工作区中较大的部分之间移动。 在左侧边栏中，`Tab` 还允许您从一个可拖动选项移到下一个可拖动选项。
 * `Tab` 突出显示单个元素后，`left/right arrows` 可在单个元素之间移动。
 * `F6` 会导航到项目中的第一个面板，并在该面板内的可视化图表之间移动。然后，它将移到项目中的下一个面板并重复上述操作。
 * 我们应用焦点指示器，以便近视的键盘用户能够清楚地了解当前具有焦点的 UI 元素。指示器是指选定元素周围的蓝色边框。

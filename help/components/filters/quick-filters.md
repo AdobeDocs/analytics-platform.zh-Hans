@@ -2,12 +2,12 @@
 description: 在 Analysis Workspace for Customer Journey Analytics 中使用快速过滤器。
 title: 快速过滤器
 feature: Workspace Basics
-role: User, Admin
+role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 3d55105a7d4f4687ed0fc6d857c906eec707f6a6
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 37%
+source-wordcount: '1145'
+ht-degree: 33%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 37%
 
 创建快速过滤器时，请考虑以下事项：
 
-* 快速筛选器仅适用于创建它们的项目。 此类过滤器在其他项目中不可用，无法共享给其他用户。 
+* 快速筛选器仅适用于创建它们的项目。 它们在其他项目中不可用，也不能共享给其他用户。
 * 最多允许3个规则。
 * 不支持嵌套容器或顺序规则。
 
@@ -127,7 +127,8 @@ Analysis Workspace中的任何用户都可以创建快速过滤器。
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
-   所有项目的过滤器组件列表中现在都显示该过滤器。还可与组织中的其他人员[共享该过滤器](/help/components/filters/filters-share.md)。
+   所有项目的筛选器组件列表中现在都显示该筛选器。
+还可与组织中的其他人员[共享该过滤器](/help/components/filters/filters-share.md)。
 
 ## 快速筛选器示例
 

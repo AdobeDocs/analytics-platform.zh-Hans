@@ -3,10 +3,11 @@ description: 有两种方式可使用 Analysis Workspace 中的指标。
 title: 量度
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
-source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 49%
+source-wordcount: '371'
+ht-degree: 40%
 
 ---
 
@@ -22,7 +23,7 @@ Adobe 提供了多种类型的指标，可供在 Analysis Workspace 中使用：
 
 * **计算量度** ![“计算量度”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg)：基于标准指标、静态数字或算法函数的用户定义指标。
 
-* **计算量度模板**  <img src="./assets/adobe-logo.svg" width="18"> ：Adobe定义的指标，其行为与计算指标类似。 您可以在 Workspace 项目中按原样使用它们，或保存副本以自定义其逻辑。
+* **计算量度模板**  <img src="./assets/adobe-logo.svg" width="18"> ：Adobe定义的指标，其行为与计算指标类似。 您可以在工作区项目中按原样使用它们，也可以保存副本以自定义其逻辑。
 
 
 ![工作区面板在左窗格中高亮显示量度。](assets/cja-metrics.png)
@@ -30,7 +31,7 @@ Adobe 提供了多种类型的指标，可供在 Analysis Workspace 中使用：
 您可以查看某个量度是否获得批准 ![“已批准”图标](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  也可能不会。 如果您想了解有关某个量度的更多详细信息，请将鼠标悬停在该量度上，然后选择 ![信息图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg).
 
 
-量度在Analysis Workspace中的使用非常灵活。 将一个指标拖到一个空的自由格式表中，以查看该指标在项目日期期间的趋势。此外，您还可以拖曳存在维度的量度，以便将该量度与每个维度项目进行比较。 将量度拖动到现有量度标题上方会替换该量度，如果将量度拖动到标题旁边，则可以并排查看这两个量度。
+量度在Analysis Workspace中的使用非常灵活。 将量度拖动到空的自由格式表，可查看在项目日期期间该量度的趋势。 此外，您还可以拖曳存在维度的量度，以便将该量度与每个维度项目进行比较。 将量度拖动到现有量度标题上方会替换该量度，如果将量度拖动到标题旁边，则可以并排查看这两个量度。
 
 ## 计算指标
 

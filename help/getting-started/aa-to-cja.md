@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: a67c12a7b5244b7802eba2cbcbfdb320802d088b
-workflow-type: ht
-source-wordcount: '1488'
-ht-degree: 100%
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+workflow-type: tm+mt
+source-wordcount: '1394'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 * ID 不包含 PII。将散列应用于任何可能敏感的内容。
 * ID 在所有源中使用相同的格式（相同的长度、相同的散列方法等）
 
-在 Adobe Analytics 等数据集中，可能并非每行数据都存在标识，但辅助标识确实存在。在这种情况下，跨频道分析（以前称为“基于字段的拼接”）可用于在仅通过其 ECID 识别客户以及收集标识时（例如，当客户认证时）。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=zh-Hans)
+在 Adobe Analytics 等数据集中，可能并非每行数据都存在标识，但辅助标识确实存在。在这种情况下，跨渠道分析（也称为“拼接”）可用于在仅通过其ECID识别客户以及收集标识时（例如，当客户进行身份验证时）。 [了解详情](../stitching/overview.md)。
 
 ### 2. 调整您的变量 {#variables}
 
@@ -70,7 +70,7 @@ Adobe Analytics 客户可以使用 Analytics Source Connector 在 Adobe Experien
 * 灵活的模式来定义您需要的任何字段
 * 不依赖于 Adobe Analytics 命名法（属性、eVar、事件等）
 * 没有字符限制问题（属性有 100 个字符）
-* Adobe Experience Platform 中更快的数据可用性推动[实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=zh-Hans)
+* 加快了Adobe Experience Platform中的数据可用性 [实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=zh-Hans)
 * [第一方设备 ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=zh-Hans) 可提高访客识别的准确性
 
 **使用 Experience Platform SDK 的缺点**

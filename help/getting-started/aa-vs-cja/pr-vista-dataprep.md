@@ -3,9 +3,10 @@ title: Analytics Source Connector 的处理规则、VISTA 和分类与数据准�
 description: 了解使用处理规则和 VISTA 与通过数据准备进行数据转换的区别
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 feature: Basics
-source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
-workflow-type: ht
-source-wordcount: '619'
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+workflow-type: tm+mt
+source-wordcount: '546'
 ht-degree: 100%
 
 ---

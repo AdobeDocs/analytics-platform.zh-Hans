@@ -3,10 +3,11 @@ description: Analysis Workspace 中的日期比较允许您采用包含日期范
 title: 日期比较
 feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 87%
+source-wordcount: '740'
+ht-degree: 86%
 
 ---
 
@@ -55,7 +56,7 @@ Analysis Workspace 中的日期比较允许您采用包含日期范围的任何�
 
 现在，您可以向表中的每一列添加一个时间段，此操作允许您添加一个不用于日历设置的时间段。这是比较日期的另一种方法。
 
-1. 右键单击表格中的列并选择&#x200B;**[!UICONTROL 添加时间段列]** ![突出显示添加时间段列的表列列表 ](assets/add-time-period-column.png)
+1. 右键单击表中的列，然后选择 **[!UICONTROL 添加时间段列]** ![突出显示添加时间段列的表列列表 ](assets/add-time-period-column.png)
 
 1. 根据您设置表格日期范围的具体方式，您可以使用以下选项进行比较：
 

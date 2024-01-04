@@ -1,13 +1,14 @@
 ---
 title: 将Adobe Experience Platform受众引入Customer Journey Analytics
-description: 说明如何将Adobe Experience Platform受众纳入Customer Journey Analytics以供进一步分析。
+description: 介绍如何将Adobe Experience Platform受众纳入Customer Journey Analytics以进行进一步分析。
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '996'
-ht-degree: 52%
+source-wordcount: '968'
+ht-degree: 50%
 
 ---
 
@@ -17,9 +18,9 @@ ht-degree: 52%
 
 ## 先决条件
 
-* 访问 Adobe Experience Platform (Adobe Experience Platform)，特别是实时客户档案。
+* 访问Adobe Experience Platform (Adobe Experience Platform)，尤其是实时客户资料。
 * 创建/管理Adobe Experience Platform架构和数据集的权限。
-* 访问Adobe Experience Platform查询服务（以及编写SQL的能力）或其他工具来执行一些轻量级转换。
+* 访问Adobe Experience Platform查询服务（以及编写SQL的能力）或其他工具来执行一些轻度转换。
 * 访问 Customer Journey Analytics. 您需要是Customer Journey Analytics产品管理员才能创建/修改Customer Journey Analytics连接和数据视图。
 * 能够使用 Adobe API（分段，可选其他）
 
@@ -27,11 +28,11 @@ ht-degree: 52%
 
 Adobe Experience Platform [实时客户档案](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans?lang=cn) (RTCP) 允许您通过组合来自多个渠道的数据（包括在线、离线、CRM 和第三方）来查看每个客户的整体视图。
 
-RTCP 中可能已经有来自不同来源的受众。 选择一个或多个受众以摄取到Customer Journey Analytics。
+RTCP 中可能已经有来自不同来源的受众。 选择一个或多个受众以引入Customer Journey Analytics。
 
 ## 步骤 2：为导出创建用户档案合并数据集
 
-为了将受众导出到最终可以添加到Customer Journey Analytics连接的数据集，您需要创建其架构是配置文件的数据集 [合并模式](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=zh-Hans?lang=cn#understanding-union-schemas).
+为了将受众导出到最终可以添加到Customer Journey Analytics连接的数据集，您需要创建其架构是用户档案的数据集 [合并架构](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=zh-Hans?lang=cn#understanding-union-schemas).
 
 合并模式由多个共享同一类并已启用用户档案的模式组成。 合并模式使您能够看到共享同一类的模式中包含的所有字段的合并。实时客户配置文件使用合并模式创建每个客户的整体视图。
 
@@ -39,11 +40,11 @@ RTCP 中可能已经有来自不同来源的受众。 选择一个或多个受�
 
 在将受众引入Customer Journey Analytics之前，您需要将其导出到Adobe Experience Platform数据集。 这只能使用分段 API，特别是 [导出作业 API 端点](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=zh-Hans?lang=cn)来完成。
 
-您可以使用所选受众ID创建导出作业，并将结果放入在步骤2中创建的配置文件合并Adobe Experience Platform数据集中。 尽管您可以为受众导出各种属性/事件，但您只需要导出与您将要利用的Customer Journey Analytics连接中使用的人员ID字段匹配的特定用户档案ID字段（请参阅下面的步骤5）。
+您可以使用所选的受众ID创建导出作业，并将结果放入在步骤2中创建的配置文件联合Adobe Experience Platform数据集中。 尽管您可以为受众导出各种属性/事件，但您只需要导出与您将要利用的Customer Journey Analytics连接中使用的个人ID字段相匹配的特定用户档案ID字段（请参阅下面的步骤5）。
 
 ## 步骤 4：编辑导出输出
 
-导出作业的结果需要转换为单独的用户档案数据集，才能被摄取到Customer Journey Analytics中。  此转换可以通过以下方式完成 [Adobe Experience Platform查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans?lang=cn)或您选择的其他转换工具进行转换。 我们只需要用户档案ID(与Customer Journey Analytics中的人员ID匹配)和一个或多个受众ID即可在Customer Journey Analytics中生成报表。
+导出作业的结果需要转换为单独的用户档案数据集，以便纳入Customer Journey Analytics。  此转换可以通过以下方式完成 [Adobe Experience Platform查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans?lang=cn)或您选择的其他转换工具进行转换。 我们只需要用户档案ID(与Customer Journey Analytics中的人员ID匹配)和一个或多个受众ID即可在Customer Journey Analytics中生成报表。
 
 然而，标准导出作业包含更多数据，因此我们需要编辑此输出以删除无关数据，并移动一些内容。  此外，在将转换后的数据添加到模式/数据集之前，需要先创建模式/数据集。
 
@@ -56,7 +57,7 @@ RTCP 中可能已经有来自不同来源的受众。 选择一个或多个受�
 * 受众 ID 包含在 `segmentmembership.ups.xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx.status` 下。
 * 状态必须为“已实现”或“已输入”，但不能为“已退出”。
 
-这是您可以发送到Customer Journey Analytics中的用户档案数据集的格式。
+这是可以发送到Customer Journey Analytics中的用户档案数据集的格式。
 
 ![已编辑输出](../assets/export-edited.png)
 
@@ -71,11 +72,11 @@ RTCP 中可能已经有来自不同来源的受众。 选择一个或多个受�
 
 * 如果需要，可以添加其他受众元数据。
 
-## 步骤5：将此配置文件数据集添加到Customer Journey Analytics中的现有连接
+## 步骤5：将此用户档案数据集添加到Customer Journey Analytics中的现有连接
 
 您可以 [创建新连接](/help/connections/create-connection.md)，但大多数客户都希望将用户档案数据集添加到现有连接。 受众ID“扩充”了Customer Journey Analytics中的现有数据。
 
-## 步骤6：修改现有（或新建）Customer Journey Analytics数据视图
+## 步骤6：修改现有（或创建新）Customer Journey Analytics数据视图
 
 将 `audienceMembershipId`、`audienceMembershipIdName` 和 `personID` 添加到数据视图中。
 

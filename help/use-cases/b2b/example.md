@@ -5,9 +5,11 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: ec2778396f5090fb2ce71a991aa7a7bcaa913762
+exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1822'
+source-wordcount: '1755'
 ht-degree: 15%
 
 ---
@@ -22,10 +24,10 @@ ht-degree: 15%
 
 可以考虑添加到连接的数据集：
 
-| 数据集 | 架构 | 架构类型 | 基类 | 描述 |
+| Dataset | 架构 | 架构类型 | 基类 | 描述 |
 |---|---|---|---|---|
 | B2B活动数据集 | B2B活动模式 | 事件 | XDM ExperienceEvent | ExperienceEvent是所发生情况的事实记录，包括时间点和所涉及的个人身份。 ExperienceEvents可以是显式的（可直接观察的人类行为）或隐式的（在没有直接人类行为的情况下引发），并且无需聚合或解释即可记录。 它们对于时域分析至关重要，因为它们允许观察和分析给定时间段内发生的变化，并比较多个时间段以跟踪趋势。 |
-| B2B人员数据集 | B2B人员模式 | 用户档案 | XDM 个人资料 | XDM个人资料形成已识别和部分识别的个人的属性和兴趣的单一表示。 识别度较低的用户档案可能仅包含匿名行为信号，如浏览器Cookie，而识别度较高的用户档案可能包含详细的个人信息，如姓名、出生日期、位置和电子邮件地址。 随着用户档案的发展，它成为个人信息、身份信息、联系人详细信息和个人通信偏好设置的强大存储库。 |
+| B2B人员数据集 | B2B人员模式 | 配置文件 | XDM个人资料 | XDM个人资料形成已识别和部分识别的个人的属性和兴趣的单一表示。 识别度较低的用户档案可能仅包含匿名行为信号，如浏览器Cookie，而识别度较高的用户档案可能包含详细的个人信息，如姓名、出生日期、位置和电子邮件地址。 随着用户档案的发展，它成为个人信息、身份信息、联系人详细信息和个人通信偏好设置的强大存储库。 |
 | B2B营销活动成员数据集 | B2B营销活动成员架构 | 查询 | XDM商业营销活动成员 | XDM商业营销活动成员是一个标准体验数据模型(XDM)类，它描述了与商业营销活动关联的联系人或商机。 |
 | B2B帐户数据集 | B2B帐户架构 | 查询 | XDM业务帐户 | XDM业务帐户是一个标准体验数据模型(XDM)类，可捕获业务帐户的最低要求属性。 |
 | B2B帐户人员关系数据集 | B2B帐户人员关系架构 | 查询 | XDM业务帐户人员关系 | XDM业务帐户人员关系是一个标准体验数据模型(XDM)类，可捕获与业务帐户关联的人员的最低要求属性。 |
@@ -47,7 +49,7 @@ ht-degree: 15%
 下表提供了 [!UICONTROL 人员ID]， [!UICONTROL 键]、和 [!UICONTROL 匹配键] 每个数据集的值。
 
 
-| 数据集 | 人员 ID | 键 | 匹配键（在事件数据集中） |
+| Dataset | 人员 ID | 键 | 匹配键（在事件数据集中） |
 |---|---|---|---|
 | B2B活动数据集 | `personKey.sourceKey` | | |
 | B2B人员数据集 | `b2b.personKey.sourceKey` | | |
@@ -94,7 +96,7 @@ ht-degree: 15%
 | 已开始表单 | 字符串 | `web.fillOutForm.webFormName` | |
 | 商机 | 字符串 | 事件类型 | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `leadOperation.newLead` |
 | 机会已更新 | 字符串 | `eventType` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `opportunityEvent.opportunityUpdated` |
-| 价格 | 双精度 | *_organizationID*`.interactions.products.price` |  |
+| 价格 | 双线 | *_organizationID*`.interactions.products.price` |  |
 | 优先级 | 整数 | `leadOperation.changeScore.priority` |  |
 | 生产列表添加 | 字符串 | `eventType` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `commerce.productListAdds.value` |
 | 生产列表打开 | 字符串 | `eventType` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `commerce.productListOpens.value` |
@@ -160,8 +162,8 @@ ht-degree: 15%
 
 | 组件名称 | 架构数据类型 | 架构路径 | 配置 |
 |---|---|---|---|
-| 预期收入 | 双精度 | `expectedRevenue.amount` | 行为： **[!UICONTROL 值计数]** |
-| 机会金额 | 双精度 | `opportunityAmount.amount` | 行为： **[!UICONTROL 值计数]** |
+| 预期收入 | 双线 | `expectedRevenue.amount` | 行为： **[!UICONTROL 值计数]** |
+| 机会金额 | 双线 | `opportunityAmount.amount` | 行为： **[!UICONTROL 值计数]** |
 | 机会阶段 — 已关闭的帐簿 | 字符串 | `opportunityStage` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `Closed - Booked` |
 | 机会阶段 — 潜在客户 | 字符串 | `opportunityStage` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `Prospect` |
 | 机会阶段 — 资格 | 字符串 | `opportunityStage` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `Opportunity Qualification` |
@@ -194,7 +196,7 @@ ht-degree: 15%
 
 | 组件名称 | 架构数据类型 | 架构路径 | 配置 |
 |---|---|---|---|
-| 促销活动成本 | 双精度 | `actualCost.amount` | |
+| 促销活动成本 | 双线 | `actualCost.amount` | |
 
 {style="table-layout:auto"}
 
@@ -221,7 +223,7 @@ ht-degree: 15%
 
 | 组件名称 | 架构数据类型 | 架构路径 | 配置 |
 |---|---|---|---|
-| 年收入 | 双精度 | `accountOrganization.annualRevenue.amount` | |
+| 年收入 | 双线 | `accountOrganization.annualRevenue.amount` | |
 | 员工数 | 整数 | `accountOrganization.numberOfEmployees` | |
 
 {style="table-layout:auto"}
@@ -307,4 +309,3 @@ The B2B Marketing List Member dataset contains member of marketing lists.
 ![可视化图表](assets/visualizations.png)
 
 +++
-

@@ -3,18 +3,19 @@ title: 创建过滤器
 description: 了解过滤器创建用户界面。
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 feature: Filters
-source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '308'
 ht-degree: 55%
 
 ---
 
 # 创建过滤器
 
-您可以在工作区中创建不同类型的过滤器，具体取决于这些过滤器需要实现的复杂程度、是否应将其仅应用于当前项目还是应用于所有项目等等。
+可在工作区中创建不同类型的过滤器，具体取决于这些过滤器需要实现的复杂程度、是否应将其仅应用于当前项目还是应用于所有项目等等。
 
-以下是可用的过滤器类型的摘要，其中包含指向有关如何创建这些过滤器类型的信息的链接：
+以下是可用的过滤器类型摘要，其中包含有关如何创建这些过滤器类型的信息的链接：
 
 | 过滤器类型 | 在何处创建？ | 适用于何处？ | 使用场合 |
 | --- | --- | --- | --- |
@@ -27,7 +28,7 @@ ht-degree: 55%
 
 | 操作 | 描述 |
 | --- | --- |
-| 根据选定的内容创建过滤器 | 创建内联过滤器。此过滤器仅应用于打开的项目，并且不能另存为Customer Journey Analytics过滤器。<p> 1. 选择要成为过滤器一部分的表行。2. 右键单击选定的内容。3. 单击&#x200B;*从所选内容创建过滤器*。 |
+| 根据选定的内容创建过滤器 | 创建内联过滤器。此过滤器仅应用于打开的项目并且不能另存为Customer Journey Analytics过滤器。<p> 1. 选择要成为过滤器一部分的表行。2. 右键单击选定的内容。3. 单击&#x200B;*从所选内容创建过滤器*。 |
 | 工作区[!UICONTROL 组件] > [!UICONTROL 新过滤器] | 屏幕上会显示“过滤器生成器”。有关过滤器的更多信息，请参阅[过滤器生成器](/help/components/filters/filter-builder.md)。 |
-| “共享”>“共享项目”或“共享”>“策划项目数据” | In [共享项目](/help/analysis-workspace/curate-share/share-projects.md) 或 [策划项目](/help/analysis-workspace/curate-share/curate.md)，了解应用到项目中的过滤器如何用于给收件人共享的分析中。 |
-| 使用过滤器作为维度 | 以下视频演示如何使用过滤器作为维度：  <p>[在 Analysis Workspace 中将过滤器用作维度](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html)</p> |
+| “共享”>“共享项目”或“共享”>“策划项目数据” | 在 [共享项目](/help/analysis-workspace/curate-share/share-projects.md) 或 [策划项目](/help/analysis-workspace/curate-share/curate.md)，了解应用到项目中的过滤器如何用于给收件人共享的分析当中。 |
+| 使用过滤器作为维度 | 以下视频演示了如何使用过滤器作为维度：  <p>[在 Analysis Workspace 中将过滤器用作维度](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html)</p> |

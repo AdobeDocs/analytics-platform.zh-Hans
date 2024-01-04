@@ -3,10 +3,11 @@ title: 引用 - 基本函数
 description: 计算量度生成器允许您将统计和数学函数应用于生成高级计算量度。
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '1044'
-ht-degree: 100%
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+workflow-type: tm+mt
+source-wordcount: '1078'
+ht-degree: 98%
 
 ---
 
@@ -320,4 +321,4 @@ VARIANCE(metric)
 
 3
 
-此列的平均值为 2。此列的变量将为 ((1 - 2)² + (2 - 2)² + (3 - 2)²/3 = 2/3。
+此列的平均值为 2。列的变量将为((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3 = 2/3。

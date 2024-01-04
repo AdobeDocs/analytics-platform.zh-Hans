@@ -1,14 +1,14 @@
 ---
 title: 移动记分卡批注
 description: 了解如何在移动记分卡中显示批注。
-role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '402'
-ht-degree: 91%
+ht-degree: 84%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 91%
 
 ![Scorecard Builder突出显示注释图标。](assets/view-annotations.png)
 
-当批注图标可见时，您无法在生成器画布中完全查看批注或与之交互。使用预览模式查看应用程序中出现的批注并与之交互。![“预览”图标](assets/preview-icon.png)
+当批注图标可见时，您无法在生成器画布中完全查看批注或与之交互。使用预览模式查看应用程序中出现的批注并与之交互。 ![“预览”图标](assets/preview-icon.png)
 
 在工作区中创建批注时选择批注颜色。灰色批注表示存在多个批注。 ![注释图标](assets/gray-annotations1.png) ![突出显示注释图标的移动记分卡。](assets/gray-annotations2.png)
 

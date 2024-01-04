@@ -4,9 +4,10 @@ description: 使用字符串的子集作为维度项。
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: 708dc7c69480534b118c8454d65a907946cfcce7
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '910'
 ht-degree: 94%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 94%
 
 ## 从左/右
 
-根据字符串开始或结束的位置提取字符串的一部分。**[!UICONTROL 从左侧]** 和 **[!UICONTROL 从右侧]** 方法提供了两个下拉列表： **[!UICONTROL 起始日期]** （输出开始处）和 **[!UICONTROL 至]** （输出结束处）。
+根据字符串开始或结束的位置提取字符串的一部分。**[!UICONTROL 从左侧]** 和 **[!UICONTROL 从右侧]** 方法提供了两个下拉列表： **[!UICONTROL 从]** （输出开始处）和 **[!UICONTROL 至]** （输出结束处）。
 
 * **[!UICONTROL 字符串开始]**：字符串的开始。
 * **[!UICONTROL 字符串结束]**：字符串的结束。

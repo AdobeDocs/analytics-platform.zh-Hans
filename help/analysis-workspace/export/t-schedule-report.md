@@ -5,10 +5,11 @@ title: 通过电子邮件将Customer Journey Analytics数据发送给其他人
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 88cbea4ebebe68314a5de471bdf13a4d7760db0e
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 59%
+source-wordcount: '1018'
+ht-degree: 57%
 
 ---
 
@@ -81,7 +82,8 @@ ht-degree: 59%
 | **[!UICONTROL 查看过期的计划]** | 导航到左边栏中的“其他过滤器”>“过期”以查看已过期的计划。单击计划的标题以设置新的投放计划。 |
 | **[!UICONTROL 查看计划 ID]** | 导航到右上方的列选项，并将“计划 ID”列添加到表中。计划 ID 通常对调试有用。 |
 
-计划项目管理器可显示特定用户已创建的项目。若应用程序中禁用此用户帐户，则会停止所有计划的投放。有关更多信息，请参阅 [计划项目](/help/components/scheduled-projects-manager.md).
+计划项目管理器可显示特定用户已创建的项目。如果应用程序中禁用该用户帐户，则会停止所有计划的提交。
+有关更多信息，请参阅 [计划项目](/help/components/scheduled-projects-manager.md).
 
 ## 密码保护计划项目 {#password}
 

@@ -2,7 +2,9 @@
 description: 您可以标记过滤器来组织过滤器。
 title: 标记过滤器
 feature: Filters
-source-git-commit: 620f190e8b8a6947af019ee1e39c7db8614a5502
+exl-id: d3b8d9f7-11a4-4eac-8c22-5c86601ec7f3
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 96%

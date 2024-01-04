@@ -4,10 +4,11 @@ keywords: Analysis Workspace 共享
 title: 共享项目
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 36%
+source-wordcount: '1966'
+ht-degree: 34%
 
 ---
 
@@ -50,7 +51,7 @@ ht-degree: 36%
 
 * 项目角色(**[!UICONTROL 编辑原始]**， **[!UICONTROL 编辑副本]**、和 **[!UICONTROL 只读]**)绑定到用户和特定项目ID。 项目角色与 [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html) 中管理的用户权限无关。
 
-* 在 Customer Journey Analytics 中，组由 [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html) 中的产品配置文件定义。管理员可以共享到任何组，包括“全部”组。 除“全部”组外，非管理员可以共享到其所属的任何组。
+* 在Customer Journey Analytics中，组由中的产品配置文件定义 [Adobe Experience Cloud admin console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html). 管理员可以共享到任何组，包括“全部”组。 除“全部”组外，非管理员可以共享到其所属的任何组。
 
 * 如果用户分配到了多个角色，将始终获得权限最高的角色体验。 如果同时将用户添加为个人和组成员，则可能发生这种情况。 例如，如果用户获得 **[!UICONTROL 编辑原始]** 个人角色和 **[!UICONTROL 只读]** 作为组成员的角色，他们将收到 **[!UICONTROL 编辑原始]** 项目体验。
 
@@ -59,8 +60,7 @@ ht-degree: 36%
 与组织中的用户或组共享特定项目角色：
 
 1. 转到要共享的项目，然后单击 **[!UICONTROL 共享]** > **[!UICONTROL 与Workspace用户共享]**.
-
-如果存在未保存的更改，系统将提示您先保存项目。
+如果存在未保存的更改，系统会提示您先保存项目。
 
    ![共享项目窗口。](assets/share-proj-modal.png)
 
@@ -96,7 +96,7 @@ ht-degree: 36%
 
 与组织中的用户共享项目链接：
 
-1. 保存项目。如果存在未保存的更改，则系统会提示您先保存项目，然后再共享链接。
+1. 保存项目。 如果存在未保存的更改，则系统会提示您先保存项目，然后再共享链接。
 
 1. 选择 **[!UICONTROL 共享]** > **[!UICONTROL 与Workspace用户共享]**，然后选择 **[!UICONTROL 复制]** 旁边的 **[!UICONTROL 通过链接共享]** 字段。
 
@@ -150,7 +150,7 @@ ht-degree: 36%
 
 1. 选择是否启用以下安全选项(此选项可由您的Customer Journey Analytics管理员控制)：
 
-   * **[!UICONTROL 需要 Experience Cloud 身份验证]:**
+   * **[!UICONTROL 需要Experience Cloud身份验证]：**
 
      启用此选项后，只有那些能够访问项目的用户才能登录到创建您共享的项目的Adobe Experience Cloud组织。 但是，与您共享的用户不需要具有访问Adobe Analytics的权限。
 

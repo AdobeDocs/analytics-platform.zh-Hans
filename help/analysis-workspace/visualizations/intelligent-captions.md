@@ -2,9 +2,9 @@
 description: 使用智能字幕生成自然语言洞察力以快速在可视化图表中显示趋势。
 title: 智能题注
 feature: Visualizations
-role: User, Admin
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 1%

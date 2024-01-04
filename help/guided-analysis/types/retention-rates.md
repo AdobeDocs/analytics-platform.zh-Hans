@@ -1,18 +1,20 @@
 ---
-title: 保留率
-description: 衡量有多少用户继续使用您的产品.
+title: 维系率
+description: 测量有多少用户继续使用您的产品。
 feature: Guided Analysis
 keywords: 产品分析
 hide: true
 hidefromtoc: true
-source-git-commit: 1cadf9d863c18f590a99e22d7b0e79b1074bf29f
+exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 2%
+source-wordcount: '889'
+ht-degree: 1%
 
 ---
 
-# 保留率
+# 维系率
 
 {{release-limited-testing}}
 

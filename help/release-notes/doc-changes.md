@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 9f48c2870cff0aac392de9b50c6acea9763553d7
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '2756'
-ht-degree: 91%
+ht-degree: 90%
 
 ---
 
@@ -198,7 +198,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 
 | 日期 | 更新描述 |
 | --- | --- |
-| 2020 年 11 月 13 日 | 添加了有关[跨渠道分析](/help/cca/overview.md)的新主题，该方案让您能够重新键入数据集的人员 ID，并实现多个数据集的无缝组合。 |
+| 2020 年 11 月 13 日 | 关于的新主题 [跨渠道分析](/help/stitching/overview.md)，允许您为数据集的人员ID重新生成键值，并实现多个数据集的无缝拼合。 |
 | 2020 年 11 月 13 日 | 添加了有关[导入呼叫中心和 Web 数据](/help/use-cases/cross-channel/call-center.md)的新用例。 |
 | 2020 年 11 月 10 日 | 将有关删除数据组件后果的部分添加到[常见问题解答](/help/getting-started/cja-faq.md)中。 |
 | 2020 年 11 月 2 日 | 对 [Customer Journey Analytics 功能支持](/help/getting-started/aa-vs-cja/cja-aa.md)页面进行了更新。 |

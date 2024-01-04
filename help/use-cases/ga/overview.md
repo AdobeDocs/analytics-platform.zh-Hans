@@ -3,7 +3,8 @@ title: 将数据从 Google Analytics 迁移到 Customer Journey Analytics
 description: 了解有关如何将数据从 Google Analytics 移动到 Adobe Experience Platform 以及在 Customer Journey Analytics 中查看报告的总体工作流。
 exl-id: 10c485c9-66ab-4925-a357-a66a374d4c6f
 feature: Use Cases
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 87%
@@ -20,7 +21,7 @@ ht-degree: 87%
 
 提取历史（回填）数据涉及从 Google 导出数据并将该数据导入 Adobe Experience Platform。查看[将 Google Analytics 数据摄取到 Adobe Experience Platform](backfill.md)。
 
-成功将历史数据引入平台后，您可以 [配置流当前数据](streaming.md)，或者立即开始报告Customer Journey Analytics中的回填数据，报告者为 [创建连接](/help/connections/create-connection.md).
+成功将历史数据引入平台后，您可以 [配置流式当前数据](streaming.md)，或者立即开始报告Customer Journey Analytics中的回填数据，报告者为 [创建连接](/help/connections/create-connection.md).
 
 ## 为 Adobe Experience Platform 配置现有的 Google Analytics 实施 {#configure}
 

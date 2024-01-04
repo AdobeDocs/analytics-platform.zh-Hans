@@ -4,10 +4,11 @@ keywords: Analysis Workspace
 title: 项目概述
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 72%
+source-wordcount: '1336'
+ht-degree: 69%
 
 ---
 
@@ -29,7 +30,7 @@ ht-degree: 72%
 
 | 元素 | 描述 |
 |---|---|
-| [编辑偏好设置](/help/analysis-workspace/user-preferences.md) | 为创建的所有新项目或面板管理 Analysis Workspace 及其相关组件的设置。 |
+| [编辑首选项](/help/analysis-workspace/user-preferences.md) | 为您创建的所有新项目或面板管理Analysis Workspace的设置及其相关的组件。 |
 | [创建文件夹](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | 向项目和文件夹列表中添加新文件夹或子文件夹。 |
 | [创建项目](/help/analysis-workspace/build-workspace-project/create-projects.md) | 从头开始新项目。 |
 | 展开 | 显示用于创建空白项目或移动记分卡的选项， [查看培训教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=zh-Hans)，或 [查看发行说明](/help/release-notes/latest.md). |
@@ -46,8 +47,8 @@ ht-degree: 72%
 | 共享对象 | 与项目共享的用户。 |
 | 上次修改时间 | 项目上次修改的日期和时间。 |
 | 上次打开时间 | 上次打开项目的日期和时间。 |
-| 项目ID | 项目的ID。 |
-| Longest Date Range | 项目的最长日期范围。 |
+| 项目编号 | 项目的ID。 |
+| 最长的日期范围 | 项目的最长日期范围。 |
 | 查询次数 | 项目中包含的查询总数。 |
 | 位置 | 项目所在的文件夹。 |
 
@@ -69,7 +70,7 @@ ht-degree: 72%
 
 ### 项目信息和设置 {#info-settings}
 
-**[!UICONTROL Workspace]** > **[!UICONTROL 项目]** > **[!UICONTROL 项目信息和设置]** 提供有关当前活动项目的项目级信息。
+**[!UICONTROL 工作区]** > **[!UICONTROL 项目]** > **[!UICONTROL 项目信息和设置]** 提供有关当前活动项目的项目级信息。
 
 ![项目信息和设置窗口。](assets/projectinfo.png)
 

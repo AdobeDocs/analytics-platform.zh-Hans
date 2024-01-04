@@ -3,10 +3,11 @@ description: 您可以设置一个工作流程，其中包含各种级别的申�
 title: 批准过滤器
 feature: Filters
 exl-id: 3892ef54-3f24-4c7a-868f-f566efaea400
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 72%
+source-wordcount: '132'
+ht-degree: 71%
 
 ---
 

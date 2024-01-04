@@ -2,12 +2,12 @@
 description: 了解如何在Analysis Workspace中创建项目
 title: 创建项目
 feature: Workspace Basics
-role: User, Admin
+role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '602'
-ht-degree: 14%
+ht-degree: 11%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 14%
 
 [面板](/help/analysis-workspace/c-panels/panels.md) 是Analysis Workspace中任何项目的基础。 面板用于组织项目的内容（可视化和组件）。
 
-Analysis Workspace 中提供的许多面板都可以基于一些用户输入来生成整套分析。
+Analysis Workspace中提供的许多面板都可以基于一些用户输入来生成整套分析。
 
 要添加面板，请执行以下操作：
 

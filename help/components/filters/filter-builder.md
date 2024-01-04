@@ -3,10 +3,11 @@ description: 过滤器生成器提供了一个画布以将指标Dimension、过�
 title: 构建过滤器
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1261'
-ht-degree: 22%
+source-wordcount: '1255'
+ht-degree: 20%
 
 ---
 
@@ -36,13 +37,13 @@ ht-degree: 22%
 | **[!UICONTROL 描述]** | 提供过滤器的详细说明。 |
 | **[!UICONTROL 标记]** | [标记过滤器](/help/components/filters/manage-filters.md) 您正在通过从现有标记列表中选取标记或创建新标记来进行创建。 |
 | **[!UICONTROL 定义]** | 这是您所在的位置 [构建和配置过滤器](/help/components/filters/filters-overview.md)，添加规则，以及嵌套和排列容器。 |
-| **[!UICONTROL 包含]** | (顶级容器选择器.) 允许您选择顶级 [容器](/help/components/filters/filters-overview.md) ( [!UICONTROL 人员]， [!UICONTROL 会话]， [!UICONTROL 事件])。 默认的顶级容器为“事件”容器。 |
+| **[!UICONTROL 包含]** | （顶部容器选择器。） 允许您选择顶级 [容器](/help/components/filters/filters-overview.md) ( [!UICONTROL 人员]， [!UICONTROL 会话]， [!UICONTROL 事件])。 默认的顶级容器为“事件”容器。 |
 | **[!UICONTROL 选项]** | （齿轮）图标 | <ul><li>**[!UICONTROL +添加容器]**：用于向筛选器定义添加新容器（在顶级容器下）。</li><li>**[!UICONTROL 排除]**：用于通过排除一个或多个维度、过滤器或量度来定义过滤器。</li></ul> |
 | **[!UICONTROL 维度]** | 从Dimension列表中拖放的组件（橙色侧栏）。 |
-| **[!UICONTROL 运算符]** | 您可以使用选定的运算符比较和约束值。（等于、不等于、包含、包含全部等） |
+| **[!UICONTROL 运算符]** | 您可以使用选定的运算符比较和约束值。 （等于、不等于、包含、包含全部等） |
 | **[!UICONTROL 值]** | 为维度、过滤器或量度输入或选择的值。 |
 | **[!UICONTROL 归因模型]** | 这些模型仅适用于维度，它们确定要过滤的维度值。 Dimension模型在连续过滤器中特别有用。<ul><li>**[!UICONTROL 重复]**（默认）：包含维度的实例和保留值。</li><li>**[!UICONTROL 实例]**：包含维度的实例。</li><li>**[!UICONTROL 非重复实例]**：包含维度的唯一实例（非重复）。这是排除重复实例时在“流量”中应用的模型。</li></ul>有关示例，请参阅下面的“归因模型”部分。 |
-| **[!UICONTROL And/Or/Then]** | 在容器或规则之间分配 [!UICONTROL AND/OR/THEN] 运算符。通过使用 THEN 运算符，您可以 [定义顺序过滤器](/help/components/filters/filters-overview.md). |
+| **[!UICONTROL And/Or/Then]** | 在容器或规则之间分配 [!UICONTROL AND/OR/THEN] 运算符。通过使用THEN运算符，您可以 [定义顺序过滤器](/help/components/filters/filters-overview.md). |
 | **[!UICONTROL 量度]** | （绿色侧栏）从指标列表中拖放的指标。 |
 | **[!UICONTROL X]** | （删除）用于删除此部分过滤器定义。 |
 | **[!UICONTROL 从过滤器创建受众]** | 通过从过滤器创建受众，可将该过滤器与Adobe Experience Platform共享以供激活。 [了解详情...](/help/components/audiences/audiences-overview.md) |

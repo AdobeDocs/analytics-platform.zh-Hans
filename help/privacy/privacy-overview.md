@@ -3,10 +3,11 @@ title: Customer Journey Analytics 和数据管理
 description: 描述数据管理在 Customer Journey Analytics 中的工作方式。
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 feature: Privacy
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 68%
+source-wordcount: '377'
+ht-degree: 74%
 
 ---
 
@@ -18,11 +19,11 @@ ht-degree: 68%
 
 Adobe Customer Journey Analytics与之间的集成 [Adobe Experience Platform数据管理](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=zh-Hans) 允许标记敏感Customer Journey Analytics数据并执行隐私政策。
 
-在Experience Platform使用的数据集上创建的隐私标签和策略可以在Customer Journey Analytics数据视图工作流中显示。 这些标签阻止或警告从敏感字段创建亮度和/或维度的用户。
+在 Experience Platform 使用的数据集上创建的隐私标签和政策可以在 Customer Journey Analytics 数据视图工作流中显示。这些标签阻止或警告从敏感字段创建亮度和/或维度的用户。
 
-此外，从Customer Journey Analytics（通过报表、导出、API等）导出数据时，还会添加警告或标签，以通知用户报表包含需要以特定方式处理的敏感信息。
+此外，从Customer Journey Analytics（通过报表、导出、API等）导出数据时，将添加警告或标签，以通知用户报表包含需要以特定方式处理的敏感信息。
 
-此集成允许您更轻松地管理合规性。 组织中的数据管理员可以设置策略以限制使用。 因此，您的Customer Journey Analytics用户可以更自信地使用数据，因为他们知道数据使用符合数据管理员定义的策略。
+此集成允许您更轻松地管理合规性。 组织中的数据管理员可以设置策略以限制使用。 因此，您的Customer Journey Analytics用户可以更自信地使用数据，因为他们知道此等数据使用符合数据管理员定义的策略。
 
 [了解详情](/help/data-views/data-governance.md)
 

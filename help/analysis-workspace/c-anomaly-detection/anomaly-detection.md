@@ -3,9 +3,10 @@ description: 了解Analysis Workspace中的数据异常检测。
 title: 异常检测的工作方式
 feature: Anomaly Detection
 exl-id: f706cdb9-bc80-42b9-9450-4f68bdb3fd85
-source-git-commit: 689235eb0b982f4e572282f1c73e4606f9d82b12
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '175'
 ht-degree: 93%
 
 ---

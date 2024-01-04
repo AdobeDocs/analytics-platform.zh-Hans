@@ -2,7 +2,9 @@
 description: 可通过两种方式在 Analysis Workspace 中使用量度。
 title: 量度
 feature: Components
-source-git-commit: 6f3ae14e4d34de17ed64ae30cee4611e4d6f3226
+exl-id: fa7c5a0f-4983-40ee-b9c1-3e10aab3fc28
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 96%

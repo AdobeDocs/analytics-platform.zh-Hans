@@ -3,10 +3,11 @@ description: 时间划分会采用所收集事件的时间戳，并将其划分�
 title: 时间划分维度
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 61%
+source-wordcount: '196'
+ht-degree: 62%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 61%
 
 时间划分维度基于数据视图的时区。这些维度可以在 Analysis Workspace 中使用，并且可以帮助您回答以下问题：
 
-* 在较大的日期范围内，一天中哪个时间最常让用户访问我的网站或应用程序？
+* 在较大的日期范围内，一天中哪个时间最常被访问我的网站或应用程序？
 * 在我的网站或应用程序上，是否每周有几天或每天有几个小时的转化率较高？
 * 周末的销售额与工作日的销售额相比如何？
 * 特定营销活动是在上午还是在下午产生更高的转化？

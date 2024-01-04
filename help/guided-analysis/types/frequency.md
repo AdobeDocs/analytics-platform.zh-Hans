@@ -1,12 +1,14 @@
 ---
 title: 频率视图
-description: 按使用频率衡量参与度.
+description: 按使用频率测量参与度。
 feature: Guided Analysis
 keywords: 产品分析
-source-git-commit: 645c7913aea309fc52f5a474050406d5e6cbc0e9
+exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '548'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 

@@ -4,7 +4,8 @@ description: 有关引导式分析的常见问题解答。
 exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: 产品分析
-source-git-commit: 2fe26bb906600a1987d9f4a07c5863030d52173a
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 2%

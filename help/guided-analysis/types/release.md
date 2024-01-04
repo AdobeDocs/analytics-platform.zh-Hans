@@ -1,13 +1,14 @@
 ---
 title: 版本视图
-description: 比较发布前和发布后相同时期的性能.
+description: 比较发布前和发布后各个相等时间段的性能。
 feature: Guided Analysis
 keywords: 产品分析
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
-source-git-commit: 02044961612a3d0f4f40bdc71c3f00585d702c92
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '484'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 

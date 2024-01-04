@@ -4,10 +4,11 @@ description: 一种分析Customer Journey Analytics中的数据的方法，使�
 keywords: 产品分析
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
-source-git-commit: f99d1ce1881cd1ed3262fa3d2b2a9e16f84aa288
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '1278'
-ht-degree: 8%
+ht-degree: 2%
 
 ---
 
@@ -23,14 +24,14 @@ Adobe Product Analytics使产品团队能够通过基于Customer Journey Analyti
 
 | 分析类型 | 视图类型 | 描述 |
 | --- | --- | --- |
-| [!UICONTROL 影响] | [版本](types/release.md) | 比较发布前和发布后相同时期的性能. |
-| [!UICONTROL 影响] | [首次使用](types/first-use.md) | 衡量功能首次使用对关键指标的影响. |
-| [!UICONTROL 漏斗] | [摩擦](types/friction.md) | 比较步骤之间的转化率. |
-| [!UICONTROL 漏斗] | [转化趋势](types/conversion-trends.md) | 跟踪转化率随时间发生的变化. |
-| [!UICONTROL 用户增长] | [活动](types/active.md) | 确定新的、保留的、返回的或休眠的用户. |
+| [!UICONTROL 影响] | [版本](types/release.md) | 比较发布前和发布后各个相等时间段的性能。 |
+| [!UICONTROL 影响] | [首次使用](types/first-use.md) | 衡量首次使用功能对关键指标的影响。 |
+| [!UICONTROL 漏斗] | [摩擦](types/friction.md) | 比较步骤之间的转化率。 |
+| [!UICONTROL 漏斗] | [转化趋势](types/conversion-trends.md) | 跟踪转化率随时间发生的变化。 |
+| [!UICONTROL 用户增长] | [活动](types/active.md) | 确定新人、留住人员、回访人员或休眠人员。 |
 | [!UICONTROL 用户增长] | [净增长](types/net-growth.md) | 您是在获得用户还是在失去用户？ |
-| [!UICONTROL 趋势] | [使用情况](types/usage.md) | 随着时间的推移衡量用户参与度. |
-| [!UICONTROL 趋势] | [频率](types/frequency.md) | 按使用频率衡量参与度. |
+| [!UICONTROL 趋势] | [用法](types/usage.md) | 测量一段时间内用户参与的情况。 |
+| [!UICONTROL 趋势] | [频率](types/frequency.md) | 按使用频率测量参与度。 |
 
 {style="table-layout:auto"}
 

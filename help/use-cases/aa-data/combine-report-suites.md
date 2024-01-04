@@ -3,16 +3,17 @@ title: 将报告包与不同的架构相结合
 description: 了解如何使用数据准备将报告包与不同的架构结合起来
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
 feature: Use Cases
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 59%
+source-wordcount: '1322'
+ht-degree: 57%
 
 ---
 
 # 将报告包与不同的架构相结合
 
-此 [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans) 将报表包数据从Adobe Analytics引入Adobe Experience Platform，以供Adobe Experience Platform应用程序(如Real-time Customer Data Platform和Customer Journey Analytics(Customer Journey Analytics))使用。 引入Adobe Experience Platform的每个报表包都会配置为单独的源连接数据流，而每个数据流都会作为Adobe Experience Platform数据湖中的数据集。 Analytics Source Connector为每个报表包创建一个数据集。
+此 [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans) 将Adobe Analytics中的报表包数据引入Adobe Experience Platform，以供Adobe Experience Platform应用程序(如Real-time Customer Data Platform和Customer Journey Analytics(Customer Journey Analytics))使用。 引入Adobe Experience Platform的每个报表包都会配置为单独的源连接数据流，而每个数据流都会作为Adobe Experience Platform数据湖中的数据集。 Analytics Source Connector会为每个报表包创建一个数据集。
 
 客户使用的Customer Journey Analytics [连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans) 将Adobe Experience Platform数据湖中的数据集集成到Customer Journey AnalyticsAnalysis Workspace中。 但是，在连接内组合报告包时，需要使用Adobe Experience Platform解决报告包之间的架构差异 [数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans) 功能。 其目的是确保Adobe Analytics变量（如prop和eVar）在Customer Journey Analytics中具有一致的含义。
 
@@ -29,8 +30,8 @@ ht-degree: 59%
 
 此外，假设您执行以下操作：
 
-- 创建用于引入的Analytics源连接（不使用数据准备） **报告包A** 到Adobe Experience Platform数据湖中作为 **数据集a**.
-- 创建用于引入的Analytics源连接（不使用数据准备） **报告包B** 到Adobe Experience Platform数据湖中作为 **数据集B**.
+- 创建用于摄取的Analytics源连接（不使用数据准备） **报告包A** 移入Adobe Experience Platform数据湖为 **数据集a**.
+- 创建用于摄取的Analytics源连接（不使用数据准备） **报告包B** 移入Adobe Experience Platform数据湖为 **数据集B**.
 - 创建 [Customer Journey Analytics连接](/help/connections/create-connection.md) 已调用 **所有报表包** 那个合并了数据集A和数据集B。
 - 创建 [Customer Journey Analytics数据视图](/help/data-views/create-dataview.md) 已调用 **全局视图** 该连接基于所有报表包连接。
 
@@ -84,7 +85,7 @@ Experience Platform数据准备功能与Analytics Source Connector集成，可�
    | \_experience.analytics.customDimensions.eVars.eVar1 | _\&lt;path>_.商业单位 |
    | _experience.analytics.customDimensions.eVars.eVar2 | _\&lt;path>_.搜索项 |
 
-1. 现在创建 **所有报表包** Customer Journey Analytics的连接，组合数据集A和数据集B。
+1. 现在创建 **所有报表包** 连接，用于组合Customer Journey AnalyticsA和数据集B。
 
 1. 创建 **全局视图** Customer Journey Analytics中的数据视图。 忽略原始 eVar 字段，仅包括统一字段字段组中的字段。
 
@@ -102,7 +103,7 @@ Experience Platform数据准备功能与Analytics Source Connector集成，可�
 
 >[!NOTE]
 >
->统一字段自定义字段组和关联的字段映射可以随时添加到现有Analytics Source Connector数据流和数据集。 但是，这仅会影响未来数据。
+>统一字段自定义字段组和关联的字段映射可以随时添加到现有的Analytics Source Connector数据流和数据集。 但是，这仅会影响未来数据。
 
 ## 不仅仅是报告包
 
@@ -157,6 +158,6 @@ Experience Platform数据准备功能与Analytics Source Connector集成，可�
 
 ## 数据准备与组件 ID
 
-如上所述，数据准备工具允许您跨多个 Adobe Analytics 报告包将不同字段映射到一起。当您要将多个数据集的数据合并到单个Customer Journey Analytics连接中时，这在Customer Journey Analytics中很有用。 但是，如果您打算将报表包保留在单独的Customer Journey Analytics连接中，但希望在这些连接和数据视图中使用一组报表，则更改Customer Journey Analytics中的基础组件ID可以在即使架构不同的情况下使报表兼容。 有关更多信息，请参阅 [组件设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=zh-Hans)。
+如上所述，数据准备工具允许您跨多个 Adobe Analytics 报告包将不同字段映射到一起。当您想要将多个数据集的数据组合到单个Customer Journey Analytics连接中时，这在Customer Journey Analytics中很有用。 但是，如果您打算将报表包保留在单独的Customer Journey Analytics连接中，但希望在这些连接和数据视图中使用一组报表，则更改Customer Journey Analytics中的基础组件ID可以在即使架构不同的情况下使报表兼容。 有关更多信息，请参阅 [组件设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=zh-Hans)。
 
-更改组件ID是一项仅限Customer Journey Analytics的功能，不会影响发送到Real-time Customer Profile和RTCDP的Analytics源连接器的数据。
+更改组件ID是一项仅限Customer Journey Analytics的功能，并且不会影响发送到Real-time Customer Profile和RTCDP的Analytics源连接器的数据。

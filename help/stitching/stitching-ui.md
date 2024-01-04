@@ -6,10 +6,11 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 exl-id: 8820a093-e573-45f9-bcd2-0933e21c231b
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 2%
+source-wordcount: '726'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +74,7 @@ ht-degree: 2%
 
         在 [!UICONTROL 试验样本值] 对话框，将显示一个表，其中包含示例值 [!UICONTROL 时间戳]， [!UICONTROL 永久ID]， [!UICONTROL 临时ID]， [!UICONTROL Stitched ID（正式启用）]， [!UICONTROL 拼合的ID（1天重放）]、和 [!UICONTROL 拼合的ID（7天重放）].
 
-            ![带示例值的试验](./assets/experiment-sample-values.png)
+            ！[使用示例值试验](./assets/experiment-sample-values.png)
             
             1.  输入**的值[!UICONTROL **永久ID**]**。
             
@@ -109,8 +110,8 @@ ht-degree: 2%
   | 值 | 说明 |
   |-----|-----|
   | **[!UICONTROL **&#x200B;已排队&#x200B;**]** | 已收到请求，很快就会处理该请求。 |
-  | **[!UICONTROL **&#x200B;正在进行创建&#x200B;**]** | 正在创建资源和新拼合的数据集。 |
-  | **[!UICONTROL **&#x200B;正在进行拼接&#x200B;**]** | 资源和拼合的数据集已存在，并且正在进行拼合 |
+  | **[!UICONTROL **&#x200B;创建&#x200B;**]** 进行中 | 正在创建资源和新拼合的数据集。 |
+  | **[!UICONTROL **&#x200B;正在进行拼合&#x200B;**]** | 资源和拼合的数据集已存在，并且正在进行拼合 |
   | **[!UICONTROL **&#x200B;错误&#x200B;**]** | 拼合时出现问题。 架构在源数据集与拼合数据集之间发生了更改，日流量过大，或者…… (_**此处需要更多信息……**_) |
 
   >[!INFO]

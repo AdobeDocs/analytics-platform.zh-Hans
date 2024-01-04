@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: 查询服务；查询服务；sql语法
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 68%
+source-wordcount: '839'
+ht-degree: 64%
 
 ---
 
@@ -49,7 +49,7 @@ Adobe Analytics Adobe Experience Platform假设您通过 [Analytics源连接器]
 
 >[!NOTE]
 >
->这仅适用于常规中间值数据集，不适用于拼合的数据集（借助[跨渠道分析](/help/cca/overview.md)）。请注意，考虑在Customer Journey Analytics中使用的人员ID对于使比较发挥作用至关重要。 在Adobe Analytics中可能并不总是容易复制这种方法，尤其是在已启用拼合的情况下。
+>这仅适用于常规中间值数据集，不适用于拼合的数据集(通过 [拼接](/help/stitching/overview.md))。 请注意，考虑在Customer Journey Analytics中使用的人员ID对于使比较发挥作用至关重要。 在Adobe Analytics中可能并不总是容易复制这种方法，尤其是在已启用拼合的情况下。
 
 1. 在 Adobe Experience Platform [查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html)中，运行以下的[!UICONTROL 按时间戳的总记录数]查询：
 

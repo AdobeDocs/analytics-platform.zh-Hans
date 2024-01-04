@@ -4,9 +4,10 @@ description: 了解 Customer Journey Analytics 中的连接。
 solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
-workflow-type: ht
-source-wordcount: '108'
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+workflow-type: tm+mt
+source-wordcount: '102'
 ht-degree: 100%
 
 ---

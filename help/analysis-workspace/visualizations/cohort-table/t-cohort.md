@@ -4,9 +4,10 @@ keywords: Analysis Workspace
 title: 配置同类群组分析报表
 feature: Visualizations
 exl-id: c3fd9fbf-b2c8-4703-92de-e6fdc141ebc6
-source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1010'
 ht-degree: 89%
 
 ---
@@ -40,7 +41,7 @@ ht-degree: 89%
 
 1. 单击&#x200B;**[!UICONTROL 生成]**。
 
-   ![显示选定包含标准和回访标准的同类群组表视图。 单击生成。](assets/cohort-report.png)
+   ![显示选定包含标准和回访标准的同类群组表视图。 单击Build。](assets/cohort-report.png)
 
    报表会显示下订单的人员( *`Included`* 列)，以及在后续访问中回访您网站的访客。 随着时间的推移，当出现访问次数减少时，该报表可帮助您查明问题并采取相应的措施。
 1. （可选）根据选定的内容创建过滤器。

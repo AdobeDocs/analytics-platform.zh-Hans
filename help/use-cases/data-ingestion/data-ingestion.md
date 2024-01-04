@@ -4,10 +4,11 @@ description: 了解将数据摄取到 Customer Journey Analytics 的不同方式
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 675b3c24de2fdb47c8072d15fba168cc72feefbe
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 91%
+source-wordcount: '676'
+ht-degree: 89%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 91%
 
 ## 从传统 Adobe Analytics 中摄取数据
 
-此工作流利用Analytics源连接器，并根据您使用DTM还是Launch作为Tag Manager而有所不同。
+此工作流利用Analytics源连接器，会因您使用DTM还是Launch作为标签管理器而有所不同。
 
 ### 通过 Adobe Experience Platform 中的标记（以前称为 [!UICONTROL Launch]）
 
@@ -30,7 +31,7 @@ ht-degree: 91%
 
 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) 是客户端 JavaScript 库，它允许 Adobe Experience Cloud 的客户通过 Adobe Experience Platform Edge Network 与 Experience Cloud 中的各种服务进行交互。
 
-1. [在标记中配置Adobe Experience Platform Web SDK扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html) 以通过Adobe Experience Platform Edge Network从Web资产向Adobe Experience Cloud发送数据。
+1. [在标记中配置Adobe Experience Platform Web SDK扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html) 以通过Adobe Experience Platform Edge Network从Web资产将数据发送到Adobe Experience Cloud。
 1. 请使用 [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) 创建一个或多个将通知跨渠道报告的[连接](/help/connections/create-connection.md)和[数据视图](/help/data-views/data-views.md)。
 
 ## 通过批量摄取和流式摄取来获取数据
@@ -51,7 +52,7 @@ Adobe Experience Platform 将来自多个来源的数据整合在一起，以帮
 
 阅读本教程，了解如何[使用 Customer Journey Analytics 分析 Google Analytics 数据](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module12/ex5.html?lang=zh-Hans)的详细步骤。
 
-## 使用Bulk Data Insertion API将数据导入Analytics，然后在Experience Platform中通过Analytics Source Connector进行摄取
+## 使用批量数据插入API将数据导入Analytics，然后在Experience Platform中通过Analytics源连接器进行摄取
 
 1. [使用批量数据摄取 API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md)，将服务器端收集数据提交到 Adobe Analytics。它允许您提交包含事件数据的 CSV 格式文件。
 1. [创建 Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)，将此使用者数据接入 Adobe Experience Platform。

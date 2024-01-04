@@ -2,11 +2,11 @@
 description: 让您轻松地在 Analysis Workspace 中进行数据的可视化比较，例如构建与上个月、去年等的比较。
 title: 组合图表可视化
 feature: Visualizations
-role: User, Admin
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '847'
 ht-degree: 85%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 85%
 
 通过[!UICONTROL 组合图表]可视化，可轻松快速地构建比较可视化图表，而无需先构建表格。您可以通过线条/条形组合轻松查看数据趋势。
 
-使用[!UICONTROL 组合图表]：：
+使用 [!UICONTROL 组合图表] 至：
 
 * 将本周的订单与上个月（和去年）同一时间的订单进行比较 – 只需点击几下即可。
 * 在同一张图表上快速分析和比较多个量度（例如[!UICONTROL 独特访客数]和[!UICONTROL 收入]）。

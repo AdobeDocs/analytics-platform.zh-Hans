@@ -3,10 +3,11 @@ title: 筛选器运算符
 description: 确定组件如何与筛选器中的值交互。
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
 feature: Filters
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 94%
+source-wordcount: '600'
+ht-degree: 93%
 
 ---
 
@@ -38,7 +39,7 @@ ht-degree: 94%
 
 ## 不同的计数运算符
 
-您可以根据维度中的项目非重复计数进行筛选。 例如，您可以为查看了5个以上不重复产品或查看了5个以上不重复页面的访问的用户创建过滤器。
+您可以按维度中项目的非重复计数进行筛选。 例如，您可以为查看了5个以上不重复产品或查看了5个以上不重复页面的访问的人创建过滤器。
 
 | 运算符 | 描述 |
 | --- | --- |

@@ -4,7 +4,8 @@ description: 使您可设置指标的默认归因。
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 485160fe362330bafbc07f958c4ada51d4d30089
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '2030'
 ht-degree: 28%
@@ -78,7 +79,7 @@ ht-degree: 28%
 | ![反向J](../assets/attribution-models/inverse_j.png) | 反向 J | 将 60% 的点数分给首次接触点，20% 的点数分给最后接触点，并将剩余 20% 的点数分给这两次接触点之间的任意接触点。对于具有单一接触点的转化，它将分得 100% 的点数。对于具有两个接触点的转化，将75%的点数分给首次交互，将25%的点数分给最后一次交互。 与J形类似，此归因模型更支持首次交互和最后交互，但更支持首次交互。 |
 | ![时间衰减](../assets/attribution-models/time_decay.png) | 时间衰减 | 采用具有自定义半衰期参数的指数衰减，默认值为 7 天。每个渠道的权重，取决于在接触点启动与最终转化之间流逝的时间。用于确定点数的公式是 `2^(-t/halflife)`，其中 `t` 是接触点与转化之间流逝的时间。然后，所有接触点均被标准化为100%。 非常适合您希望根据特定且重要的事件来衡量归因的情况。 发生此事件后转化的时间越长，获得的点数就越少。 |
 | ![自定义](../assets/attribution-models/custom.png) | 自定义 | 允许您指定要赋予给“首次接触点”、“最后接触点”以及“这两次接触点之间的任意接触点”的权重。 即便输入的自定义数字相加之和并不等于 100，指定的值也会被标准化为 100%。对于具有单一接触点的转化，它将分得 100% 的点数。对于具有两个接触点的交互，中间参数会被忽略。然后，首次接触点和最后接触点会被标准化为100%，并相应地分配点数。 此模型非常适合想要完全控制归因模型，并具有其他归因模型无法满足的特定需求的分析人员。 |
-| ![算法](../assets/attribution-models/algorithmic.png) | 算法 | 使用统计技术动态确定所选指标的最佳点数分配方式。 归因算法基于合作博弈理论中的 Harsanyi Dividend 算法。Harsanyi Dividend 算法是对“沙普利值”解决方案（以诺贝尔经济学奖获得者罗伊德·沙普利 (Lloyd Shapley) 命名）的推广形式，用于为对结果具有不同贡献的各参与者分配功能值（点数）。<br>在高层面上，归因的计算方式是参与者联盟，盈余必须公平分配到该联盟中。 按照递归方式，每个联盟的剩余价值分配取决于由先前的每个子联盟（即先前参与的维度项目）产生的剩余价值。 有关更多详细信息，请参阅约翰·海萨尼和劳埃德·沙普利的原稿：<br>夏普利，劳埃德S（1953年）。 A value for n-person games. *Contributions to the Theory of Games, 2(28)*, 307-317.<br>Harsanyi，约翰C（1963年）。 A simplified bargaining model for the n-person cooperative game. *International Economic Review 4(2)*, 194-220. |
+| ![算法](../assets/attribution-models/algorithmic.png) | 算法 | 使用统计技术动态确定所选指标的最佳点数分配方式。 归因算法基于合作博弈理论中的 Harsanyi Dividend 算法。Harsanyi Dividend 算法是对“沙普利值”解决方案（以诺贝尔经济学奖获得者罗伊德·沙普利 (Lloyd Shapley) 命名）的推广形式，用于为对结果具有不同贡献的各参与者分配功能值（点数）。<br>在高层面上，归因的计算方式是参与者联盟，盈余必须公平分配到该联盟中。 按照递归方式，每个联盟的剩余价值分配取决于由先前的每个子联盟（即先前参与的维度项目）产生的剩余价值。 有关更多详细信息，请参阅约翰·海萨尼和劳埃德·沙普利的原稿：<br>Shapley， Lloyd S. （1953年）。 A value for n-person games. *Contributions to the Theory of Games, 2(28)*, 307-317.<br>Harsanyi， John C. （1963年）。 A simplified bargaining model for the n-person cooperative game. *International Economic Review 4(2)*, 194-220. |
 
 {style="table-layout:auto"}
 

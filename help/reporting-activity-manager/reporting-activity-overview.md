@@ -3,18 +3,20 @@ title: 报表活动管理器概述
 description: 了解如何使用报告活动管理器诊断和修复在报告高峰期出现的容量问题。
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 252b9849b904754fcf5841df51d01510ba9df53f
+exl-id: c3964147-06f1-462a-aea1-e681c4ef15b1
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '276'
-ht-degree: 23%
+ht-degree: 15%
 
 ---
 
-# 报告活动管理器概述
+# 报表活动管理器概述
 
 此 [!UICONTROL 报告活动管理器] 可供管理员使用。
 
-如果您的组织在报表高峰期遇到报表性能下降的问题，可使用报表活动管理器进行自我诊断和修复容量问题，无需Adobe客户关怀部门的干预。 在单个界面中即可轻松地管理报告队列，并可立即采取行动以改善您用户的体验。
+如果您的组织在报表高峰期遇到报表性能下降的问题，可使用报表活动管理器进行自我诊断和修复容量问题，无需Adobe客户关怀部门的干预。 在单个界面中即可轻松地管理报表队列，并可立即&#x200B;操作&#x200B;以改善用户体验。
 
 ## 优点
 

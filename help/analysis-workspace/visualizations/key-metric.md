@@ -2,11 +2,11 @@
 description: 使用关键量度摘要可视化图表来比较两条时间线的量度表现。
 title: 关键量度摘要
 feature: Visualizations
-role: User, Admin
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '642'
 ht-degree: 85%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 85%
    | **[!UICONTROL 量度]** | 选择您希望检查的量度。 支持全部量度。 |
    | **[!UICONTROL 主要日期范围]** | 自由表格的当前日期范围。 |
    | **[!UICONTROL 比较日期范围。]** | 要与主日期范围进行比较的日期范围。 |
-   | **[!UICONTROL 筛选条件（可选）]** | 您对此摘要特别感兴趣的任何过滤器。 |
+   | **[!UICONTROL 过滤器（可选）]** | 您对此摘要特别感兴趣的任何过滤器。 |
 
    {style="table-layout:auto"}
 

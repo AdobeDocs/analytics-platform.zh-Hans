@@ -3,9 +3,10 @@ title: 比较 Adobe Analytics 和 Customer Journey Analytics 报告功能的数�
 description: 了解各种报告功能的数据处理差异
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
 feature: Basics
-source-git-commit: f2f85db4b670f1c4b1f6bc0954a5549c793edf5a
-workflow-type: ht
-source-wordcount: '1221'
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+workflow-type: tm+mt
+source-wordcount: '1081'
 ht-degree: 100%
 
 ---

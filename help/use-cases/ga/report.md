@@ -4,10 +4,11 @@ description: 在 Customer Journey Analytics 中就 Google Analytics 数据给出
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 86%
+source-wordcount: '690'
+ht-degree: 87%
 
 ---
 
@@ -35,7 +36,7 @@ ht-degree: 86%
 
 应用“致电原因”的维度细分，该示例显示“损坏的产品”维度项目。下一步就是联系质量控制部门，了解客户为什么会收到损坏的 T 恤。
 
-您可以查看哪些网站页面将呼叫吸引到呼叫中心。该报告可让您了解网站上体验欠佳的地方，并帮助您的产品经理解决这些挑战。以下示例使用具有参与率归因模型的计算量度来筛选数据，找出仅限于以呼叫中心呼叫结束的会话。
+您可以查看哪些网站页面将呼叫吸引到呼叫中心。该报告可让您了解网站上体验欠佳的地方，并帮助您的产品经理解决这些挑战。以下示例使用具有参与率归因模型的计算量度来筛选数据，找出仅限于以呼叫中心电话结束的会话。
 
 以下示例显示“购物车”和“结帐信息”页面驱动了大部分调用。
 
@@ -47,7 +48,7 @@ ht-degree: 86%
 
 ## 使用高级营销归因
 
-Customer Journey Analytics允许您对跨渠道数据使用复杂的归因模型。 在下面的示例中，您可以看到应用最近联系、首次联系、U 形和收入算法归因与 Google Analytics 渠道分组维度的比较。
+Customer Journey Analytics允许您在跨渠道数据上使用复杂的归因模型。 在下面的示例中，您可以看到应用最近联系、首次联系、U 形和收入算法归因与 Google Analytics 渠道分组维度的比较。
 
 ![营销属性](../assets/mktg-attribution.png)
 
@@ -63,6 +64,6 @@ Attribution IQ 还让您能够过滤数据。您可以看到仅针对特定用�
 
 ![Google ad](../assets/google-ad.png)
 
-通过合并Customer Journey Analytics中的数据集，您可以在此示例中看到在线广告对您在移动应用程序上购买的产品产生了任何影响。 以下可视化显示，与单独的网络相比，来自 Google Ads 的移动应用收入多出 14000 至 15000 美元。
+结合Customer Journey Analytics中的数据集，您可以在此示例中看到在线广告对您在移动应用程序上购买的产品产生了任何影响。 以下可视化显示，与单独的网络相比，来自 Google Ads 的移动应用收入多出 14000 至 15000 美元。
 
 ![Google ad 2](../assets/google-ad2.png)

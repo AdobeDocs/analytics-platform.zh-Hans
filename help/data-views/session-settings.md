@@ -3,13 +3,14 @@ title: 会话设置
 description: 数据视图中可用于定义会话长度以及发起新会话的触发器的设置
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: bb2061f9119b8391bf3cedce4029685537d1e239
+exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '424'
 ht-degree: 100%
 
 ---
-
 
 # 会话设置
 
@@ -45,4 +46,3 @@ ht-degree: 100%
 
 
 4. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;或&#x200B;**[!UICONTROL 保存并完成]**&#x200B;以保存会话设置定义。
-

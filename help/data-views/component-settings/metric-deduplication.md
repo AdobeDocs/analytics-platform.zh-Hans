@@ -4,7 +4,8 @@ description: 仅计入指标在报表中第一次出现的情况。
 exl-id: ced0c637-5cbe-47a4-897a-eb79961986a3
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 通过指标去重，可将指标配置为仅以非重复的方式计入值。
 
-![指标去重](../assets/metric-deduplication.png)
+![量度去重](../assets/metric-deduplication.png)
 
 | 设置 | 描述 |
 | --- | --- |

@@ -3,10 +3,11 @@ title: 将Adobe Journey Optimizer决策管理与Adobe Customer Journey Analytics
 description: 引入Adobe Journey Optimizer决策管理生成的数据，并在Customer Journey Analytics中使用Analysis Workspace分析这些数据。
 exl-id: fde45264-46cf-4c68-9872-7fb739748f21
 feature: Experience Platform Integration
-source-git-commit: 2429c60cab701017702e3312770232aa329e303c
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 20%
+source-wordcount: '710'
+ht-degree: 17%
 
 ---
 
@@ -29,19 +30,19 @@ Adobe Experience Platform作为中央数据源，连接决策管理和Customer J
 
 选择并配置以下数据集：
 
-| 数据集 | 数据集类型 | 连接设置 | 描述 |
+| Dataset | 数据集类型 | 连接设置 | 描述 |
 | --- | --- | --- | --- |
-| ODE决策事件 —  _沙盒_ 决策 | 事件 | 人员 ID: `IdentityMap` | 包含用于决策管理决策事件的自动生成数据。 _沙盒_ 是指特定的沙盒名称。 |
-| Adobe Journey Optimizer消息反馈事件数据集 | 事件 | 人员 ID: `IdentityMap` | 包含消息投放事件。 |
-| Adobe Journey Optimizer电子邮件跟踪体验事件数据集 | 事件 | 人员 ID: `IdentityMap` | 包含电子邮件跟踪事件。 |
-| Adobe Journey Optimizer推送跟踪体验事件数据集 | 事件 | 人员 ID: `IdentityMap` | 包含推送跟踪事件。 |
+| ODE决策事件 —  _沙盒_ 决策 | 事件 | 人员ID： `IdentityMap` | 包含用于决策管理决策事件的自动生成数据。 _沙盒_ 是指特定的沙盒名称。 |
+| Adobe Journey Optimizer消息反馈事件数据集 | 事件 | 人员ID： `IdentityMap` | 包含消息投放事件。 |
+| Adobe Journey Optimizer电子邮件跟踪体验事件数据集 | 事件 | 人员ID： `IdentityMap` | 包含电子邮件跟踪事件。 |
+| Adobe Journey Optimizer推送跟踪体验事件数据集 | 事件 | 人员ID： `IdentityMap` | 包含推送跟踪事件。 |
 | Adobe Journey Optimizer实体数据集 | 查询 | 键： `_id`<br>匹配键： `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | 包含将历程和促销活动元数据与所有Adobe Journey Optimizer事件数据关联的分类。 |
 
 {style="table-layout:auto"}
 
 ## 创建数据视图
 
-创建连接之后，可创建一个或多个[数据视图](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-Hans)配置可在 Customer Journey Analytics 中找到的所需的维度和度量。
+创建连接之后，可创建一个或多个[数据视图](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en)配置可在 Customer Journey Analytics 中找到的所需的维度和度量。
 
 >[!NOTE]
 >

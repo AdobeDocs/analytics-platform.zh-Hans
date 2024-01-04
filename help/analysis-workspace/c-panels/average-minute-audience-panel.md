@@ -2,11 +2,11 @@
 title: “媒体平均受众访问分钟数”面板
 description: 如何使用和解释 Analysis Workspace 中的“媒体平均受众访问分钟数”面板。
 feature: Panels
-role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+role: User
+source-git-commit: d5d81caff62d4fb56a57739ddffb81787f684e23
 workflow-type: tm+mt
-source-wordcount: '1331'
+source-wordcount: '1333'
 ht-degree: 88%
 
 ---

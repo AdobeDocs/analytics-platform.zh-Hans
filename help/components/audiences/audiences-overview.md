@@ -3,10 +3,11 @@ title: 了解Customer Journey Analytics受众发布概述
 description: 了解 Customer Journey Analytics 中的受众发布的概念
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 54%
+source-wordcount: '493'
+ht-degree: 50%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 54%
 * 通过 Experience Platform 目标将受众导出到第三方。
 * 使用从Customer Journey Analytics中基于事件的数据派生出的有用属性扩充实时客户档案。
 * 在发布受众后可以最低的延迟完成所有这些操作。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency)
-* 发布一次性受众或定期受众.
+* 发布一次性受众或定期受众。
 
 您在Customer Journey Analytics中创建的受众不必基于为配置文件启用的数据集。 您可以将历史数据摄取到Experience Platform中，而无需为配置文件启用关联的数据集和架构。 然后，使用这些数据集发现Customer Journey Analytics中的相关受众，并将这些受众发布到Experience Platform中的实时客户档案以供激活。
 

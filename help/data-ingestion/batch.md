@@ -4,9 +4,10 @@ description: 解释如何在 Customer Journey Analytics 中获取和使用批处
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1977'
+source-wordcount: '1948'
 ht-degree: 87%
 
 ---
@@ -221,7 +222,7 @@ ppales4@nsw.gov.au,365384,82.71,Silver
 - 当传入数据与XDM架构不兼容时如何映射数据。
 - 使用映射模板，
 - 使用计算字段确保批次数据与架构预期一致，
-- 等等.
+- 等等。
 
 
 ## 设置连接

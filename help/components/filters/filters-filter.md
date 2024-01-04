@@ -3,10 +3,11 @@ description: 按标记、所有者和其他过滤器（“全部显示”、“�
 title: 筛选筛选器列表
 feature: Filters
 exl-id: 25e617da-8249-4332-970a-c2ef00bf42e3
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 30%
+source-wordcount: '187'
+ht-degree: 25%
 
 ---
 
@@ -31,5 +32,5 @@ ht-degree: 30%
    | 其他过滤器 > 我的 | 显示您拥有的所有筛选器。 |
    | 其他过滤器 > 与我共享 | 显示其他人选择的所有筛选器 [共享](/help/components/filters/filters-share.md) 和你在一起。 |
    | “其他过滤器”>“收藏” | 显示所有标记为的筛选器 [收藏夹](/help/components/filters/filters-favorite.md). |
-   | “其他过滤器”>“已批准” | 显示所有正式[批准](/help/components/filters/filters-approve.md)的区段。 |
+   | “其他过滤器”>“已批准” | 全部正式显示 [已批准](/help/components/filters/filters-approve.md) 区段。 |
    | 搜索区段 | 用于按名称搜索区段。 |

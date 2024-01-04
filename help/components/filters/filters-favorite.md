@@ -2,7 +2,9 @@
 description: 将过滤器标记为收藏是另一种组织区段以便于使用的方式。
 title: 将过滤器标记为收藏
 feature: Filters
-source-git-commit: f1b2b453bc64b54d8c8c01cc562270879b20470f
+exl-id: b13457dd-06e5-4316-af7e-edcf4ee46408
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 51%

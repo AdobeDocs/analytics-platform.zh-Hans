@@ -4,10 +4,11 @@ description: 拼接概述。
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
-source-git-commit: d0f7d5f2fe3cce869d413ca014d086e1a64665be
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1463'
-ht-degree: 20%
+source-wordcount: '1428'
+ht-degree: 18%
 
 ---
 
@@ -58,7 +59,7 @@ ht-degree: 20%
 1. 请联系 Adobe 客户支持并提供以下信息：
 
    * 启用拼合的请求。
-   * 要重新生成键值的数据集的数据集 ID.
+   * 要重新生成键值的数据集的数据集ID。
    * 所需数据集永久ID的列名称（每行都显示的标识符）。
    * 所需数据集的“临时ID”列名称（人员标识符，也用作连接上下文中数据集之间的链接）。
    * 您的[重播](explained.md)频率和回顾时间范围首选项。选项包括每周重播一次（回顾时间范围为 7 天）或每天重播一次（回顾时间范围为 1 天）。

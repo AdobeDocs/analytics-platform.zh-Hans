@@ -3,10 +3,11 @@ title: 将 Adobe Journey Optimizer 与 Customer Journey Analytics 集成
 description: 引入Adobe Journey Optimizer生成的数据，并在Customer Journey Analytics中使用Analysis Workspace分析这些数据。
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
-source-git-commit: 2429c60cab701017702e3312770232aa329e303c
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 68%
+source-wordcount: '862'
+ht-degree: 63%
 
 ---
 
@@ -26,12 +27,12 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 
 选择并配置以下数据集：
 
-| 数据集 | 数据集类型 | 连接设置 | 描述 |
+| Dataset | 数据集类型 | 连接设置 | 描述 |
 | --- | --- | --- | --- |
-| AJO消息反馈事件数据集 | 事件 | 人员 ID: `IdentityMap` | 包含消息投放事件，如&#39;[!UICONTROL 发送]&#39;和&#39;[!UICONTROL 跳出次数]’。 |
-| AJO电子邮件跟踪体验事件数据集 | 事件 | 人员 ID: `IdentityMap` | 包含电子邮件跟踪事件，如[!UICONTROL 打开次数]&#39;， &#39;[!UICONTROL 点击次数]&#39;和&#39;[!UICONTROL 取消订阅]’。 |
-| AJO推送跟踪体验事件数据集 | 事件 | 人员 ID: `IdentityMap` | 包含推送跟踪事件，如[!UICONTROL 应用程序启动次数]’。 |
-| 历程步骤事件 | 事件 | 人员 ID: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | 包含显示哪些用户档案参与了历程的每个节点的事件。 |
+| AJO消息反馈事件数据集 | 事件 | 人员ID： `IdentityMap` | 包含消息投放事件，如&#39;[!UICONTROL 发送]&#39;和&#39;[!UICONTROL 跳出次数]’。 |
+| AJO电子邮件跟踪体验事件数据集 | 事件 | 人员ID： `IdentityMap` | 包含电子邮件跟踪事件，如[!UICONTROL 打开次数]&#39;， &#39;[!UICONTROL 点击次数]&#39;和&#39;[!UICONTROL 取消订阅]’。 |
+| AJO推送跟踪体验事件数据集 | 事件 | 人员ID： `IdentityMap` | 包含推送跟踪事件，如[!UICONTROL 应用程序启动次数]’。 |
+| 历程步骤事件 | 事件 | 人员ID： `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | 包含显示哪些用户档案参与了历程的每个节点的事件。 |
 | AJO实体数据集 | 查询 | 键： `_id`<br>匹配键： `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | 包含将历程和促销活动元数据与所有Adobe Journey Optimizer事件数据关联的分类。 |
 
 {style="table-layout:auto"}
@@ -75,11 +76,11 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 
 | 度量 | 描述 | 模式元素 | 组件设置 |
 | --- | --- | --- | --- |
-| 退信数 | 退回的邮件数，包括立即退回和投放后退回。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | 组件类型：度量<br>包括排除值：如果满足任意条件<br>等于：`bounce`，等于：`denylist` |
+| 退信数 | 退回的消息数量，包括立即退回和投放后退回。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | 组件类型：度量<br>包括排除值：如果满足任意条件<br>等于：`bounce`，等于：`denylist` |
 | 投放后退回 | 一些电子邮件服务会报告电子邮件已投放，稍后再将其退回。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.category` | 组件类型：度量<br>包括排除值：等于 `async` |
 | 电子邮件点击数 | 邮件中的点击数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | 组件类型：度量<br>包括排除值：等于 `click` |
 | 电子邮件打开次数 | 打开的邮件数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | 组件类型：度量<br>包括排除值：等于 `open` |
-| 错误数 | 出错的邮件数。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | 组件类型：度量<br>包括排除值：等于 `error` |
+| 错误数 | 出错的消息数。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | 组件类型：度量<br>包括排除值：等于 `error` |
 | 排除数 | 排除的邮件数。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | 组件类型：度量<br>包括排除值：等于 `exclude` |
 | 发送次数 | 电子邮件提供商接受的邮件数。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | 组件类型：度量<br>包括排除值：等于 `sent` |
 | 垃圾邮件投诉次数 | 垃圾邮件投诉的次数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | 组件类型：度量<br>包括排除值：等于 `spam_complaint` |

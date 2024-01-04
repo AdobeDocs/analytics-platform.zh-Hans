@@ -4,9 +4,10 @@ keywords: Analysis Workspace
 title: 可视化图表概述
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1325'
 ht-degree: 81%
 
 ---
@@ -47,7 +48,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 
    * 在左边栏中，选择 **可视化图表** 图标 <!-- add icon -->，然后将可视化图表拖到要添加该可视化图表的面板中。
 
-     ![“可视化图表”面板 ](assets/viz-rail.png)
+     ![“可视化图表”面板](assets/viz-rail.png)
 
    * 在要添加可视化图表的面板上，选择 **加号** 图标，然后选择表示要添加的可视化图表的图标。 将鼠标悬停在每个可视化图表的图标上可查看其名称。
 

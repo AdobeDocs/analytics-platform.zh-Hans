@@ -2,18 +2,18 @@
 description: 了解如何在Workspace项目中使用流量可视化图表。
 title: 如何配置流量可视化图表
 feature: Visualizations
-role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1581'
-ht-degree: 57%
+source-wordcount: '1595'
+ht-degree: 56%
 
 ---
 
 # 配置流量可视化图表
 
-流量可视化帮助您了解源于或导致网站或应用程序上的特定转化事件的历程。 它通过维度（和维度项）或量度跟踪路径。
+流量可视化帮助您了解源于或导致网站或应用程序上的特定转化事件的历程。 它通过维度（和维度项目）或量度跟踪路径。
 
 流量可视化允许您配置感兴趣的路径的起点或终点，或分析流经某个维度或维度项的所有路径。
 

@@ -2,10 +2,12 @@
 description: 根据您的权限，可以与整个组织、组或个人用户共享过滤器。
 title: 共享过滤器
 feature: Filters
-source-git-commit: 620f190e8b8a6947af019ee1e39c7db8614a5502
+exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 97%
+source-wordcount: '280'
+ht-degree: 96%
 
 ---
 
@@ -31,6 +33,6 @@ ht-degree: 97%
 
 1. 单击过滤器管理工具栏中的&#x200B;**[!UICONTROL 共享]**。
 
-1. 如果您是管理员，则可以选择“所有人”或组织中的“组”和“用户”。如果您不是管理员，则只能看到个人用户。使用搜索字段搜索组或用户。单击&#x200B;**[!UICONTROL 共享]**。“共享”图标将会显示在过滤器旁边：![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
+1. 如果您是管理员，则可以选择“所有人”或组织中的“组”和“用户”。如果您不是管理员，则只能看到个人用户。使用搜索字段搜索组或用户。单击&#x200B;**[!UICONTROL 共享]**。“共享”图标将在过滤器旁边显示： ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
 
 1. 您可以过滤与您共享的过滤器，方法是：转到“过滤器”>“其他过滤器”>“已与我共享”。
