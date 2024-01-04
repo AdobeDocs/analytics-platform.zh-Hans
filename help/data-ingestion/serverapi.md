@@ -4,10 +4,11 @@ description: 说明如何通过Adobe Experience Platform Edge Network Server API
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+role: Admin
+source-git-commit: 59da35ddbdf06da354af4ab469a357caae41bd26
 workflow-type: tm+mt
-source-wordcount: '2353'
-ht-degree: 60%
+source-wordcount: '2351'
+ht-degree: 59%
 
 ---
 
@@ -100,6 +101,10 @@ ht-degree: 60%
    ![示例模式添加字段按钮](./assets/example-gamingschema-plus.png)
 
 1. 在 [!UICONTROL 字段属性] 面板，输入 `identification` 作为 [!UICONTROL 字段名称]， **[!UICONTROL 标识]** 作为 [!UICONTROL 显示名称]，选择 **[!UICONTROL 对象]** 作为 [!UICONTROL 类型] 并选择 **[!UICONTROL ExperienceEvent Core v2.1]** 作为 [!UICONTROL 字段组].
+
+   >[!NOTE]
+   >
+   >如果该字段组不可用，请查找另一个包含标识字段的字段组。 或 [创建新字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en) 和 [添加新标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#define-a-identity-field) (点赞 `ecid`， `crmId`，然后选择该新字段组。
 
    ![识别对象](./assets/identification-field-gaming.png)
 
@@ -227,7 +232,7 @@ ht-degree: 60%
 
 您的数据流现在配置为将从游戏中收集的数据转发到Adobe Experience Platform中的数据集。
 
-有关如何配置数据流和如何处理敏感数据的更多信息，请参阅[数据流概述](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=zh-Hans)。
+有关如何配置数据流和如何处理敏感数据的更多信息，请参阅[数据流概述](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=en)。
 
 ## 使用Edge Network服务器API
 
@@ -375,4 +380,4 @@ Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分�
 
 >[!SUCCESS]
 >
->您已完成所有步骤。首先定义您要收集的数据（架构）以及在Adobe Experience Platform中存储这些数据（数据集）的位置。您在边缘网络上配置了一个数据流，以确保可以将数据转发到该数据集。 然后，您使用Edge Network服务器API将该数据发送到数据流。 您在Customer Journey Analytics中定义了一个连接以使用游戏数据和其他数据。 通过数据视图定义，您可以指定要使用的维度和量度，最后，您创建了第一个项目，用于可视化和分析游戏数据。
+>您已完成所有步骤。首先定义您要收集的数据（架构）以及在Adobe Experience Platform中存储这些数据（数据集）的位置。 您在边缘网络上配置了一个数据流，以确保可以将数据转发到该数据集。 然后，您使用Edge Network服务器API将该数据发送到数据流。 您在Customer Journey Analytics中定义了一个连接以使用游戏数据和其他数据。 通过数据视图定义，您可以指定要使用的维度和量度，最后，您创建了第一个项目，用于可视化和分析游戏数据。

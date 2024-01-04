@@ -4,10 +4,11 @@ description: 说明如何通过Adobe Experience Platform Mobile SDK和Edge Netwo
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+role: Admin
+source-git-commit: 59da35ddbdf06da354af4ab469a357caae41bd26
 workflow-type: tm+mt
-source-wordcount: '3435'
-ht-degree: 61%
+source-wordcount: '3385'
+ht-degree: 60%
 
 ---
 
@@ -100,6 +101,10 @@ ht-degree: 61%
    ![示例模式添加字段按钮](./assets/example-mobileschema-plus.png)
 
 1. 在 [!UICONTROL 字段属性] 面板，输入 `identification` 作为 [!UICONTROL 字段名称]， **[!UICONTROL 标识]** 作为 [!UICONTROL 显示名称]，选择 **[!UICONTROL 对象]** 作为 [!UICONTROL 类型] 并选择 **[!UICONTROL ExperienceEvent Core v2.1]** 作为 [!UICONTROL 字段组].
+
+   >[!NOTE]
+   >
+   >如果该字段组不可用，请查找另一个包含标识字段的字段组。 或 [创建新字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en) 和 [添加新标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#define-a-identity-field) (点赞 `ecid`， `crmId`，然后选择该新字段组。
 
    ![识别对象](./assets/identification-field-mobile.png)
 
@@ -258,7 +263,7 @@ ht-degree: 61%
 
 要创建并配置Adobe Experience Platform Mobile SDK扩展，请执行以下操作：
 
-1. 选择左边栏中的&#x200B;**[!UICONTROL 扩展]**。您会看到移动核心扩展和配置文件扩展已经可用。
+1. 选择 **[!UICONTROL 扩展]** 在左边栏中。 您会看到移动核心扩展和配置文件扩展已经可用。
 
 1. 在顶部栏中选择 **[!UICONTROL 目录]** 。
 
@@ -276,9 +281,9 @@ ht-degree: 61%
 
 您还需要从目录设置以下其他扩展：
 
-- 身份.
+- 身份。
 - AEP保证。
-- 同意.
+- 同意。
 
 请参阅 [配置标记属性](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=en) 在Experience Platform的移动应用程序教程中，了解有关扩展及其配置的更多信息。
 

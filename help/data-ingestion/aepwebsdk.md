@@ -4,10 +4,11 @@ description: 阐述如何通过 Adobe Experience Platform Web SDK 和 Edge Netwo
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: Admin
+source-git-commit: 59da35ddbdf06da354af4ab469a357caae41bd26
 workflow-type: tm+mt
-source-wordcount: '3616'
-ht-degree: 85%
+source-wordcount: '3603'
+ht-degree: 84%
 
 ---
 
@@ -101,7 +102,11 @@ ht-degree: 85%
 
 1. 在 [!UICONTROL  字段属性 ] 面板中，输入 `Identification`作为名称，**[!UICONTROL Identification]** 作为 [!UICONTROL Display name]，选择 **[!UICONTROL Object]** 作为 [!UICONTROL Type] 和选择 **[!UICONTROL ExperienceEvent Core v2.1]** 作为 [!UICONTROL Field Group]。
 
-   ![ 识别对象 ](./assets/identification-field.png)
+   >[!NOTE]
+   >
+   >如果该字段组不可用，请查找另一个包含标识字段的字段组。 或 [创建新字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en) 和 [添加新标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#define-a-identity-field) (点赞 `ecid`， `crmId`，然后选择该新字段组。
+
+   ![识别对象](./assets/identification-field.png)
 
    标识对象将标识功能添加到架构中。 在您的情况下，您希望使用 Experience Cloud Id 和电子邮件地址来识别访问您站点的配置文件。还有许多其他属性可用于跟踪您的人员标识（例如客户ID、忠诚度ID）。
 
@@ -227,7 +232,7 @@ ht-degree: 85%
 
 您的数据流现已配置为将从您的网站收集的数据转发到 Adobe Experience Platform 中的数据集。
 
-有关如何配置数据流和如何处理敏感数据的更多信息，请参阅[数据流概述](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=zh-Hans)。
+有关如何配置数据流和如何处理敏感数据的更多信息，请参阅[数据流概述](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=en)。
 
 
 
