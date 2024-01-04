@@ -5,7 +5,7 @@ title: 管理导出日志
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: ad43b199d4174894f0e428bcaf1748ca80bddb45
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 4%
@@ -58,7 +58,7 @@ ht-degree: 4%
    |---------|----------|
    | [!UICONTROL **导出ID**] | 指定要查看的导出日志的导出ID。 |
    | [!UICONTROL **帐户类型**] | 与日志关联的帐户类型。 可以使用以下帐户类型： <ul><li>[!UICONTROL **AEP数据登陆区**]</li><li>[!UICONTROL **Amazon S3角色ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud平台**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
-   | [!UICONTROL **状态**] | 导出的状态。 可以使用以下状态： <ul><li>[!UICONTROL **待处理**]：导出的特定实例已启动，但尚未完成。<p>重新运行状态为“待定”的导出将会延迟导出过程。</p></li><li>[!UICONTROL **完成**]：导出的特定实例已完成处理，可在导出帐户中使用。</li><li>[!UICONTROL **失败**]<p>各种情况都可能导致导出失败。 将鼠标悬停在失败状态上可查看有关失败的详细信息。<p>有关失败可能原因的更多信息，请参阅 [导出失败疑难解答](/help/components/exports/troubleshoot-exports.md).</p> |
+   | [!UICONTROL **状态**] | 导出的状态。 可以使用以下状态： <ul><li>[!UICONTROL **待处理**]：导出的特定实例已启动，但尚未完成。<p>重新运行状态为“待定”的导出将会延迟导出过程。</p></li><li>[!UICONTROL **已完成**]：导出的特定实例已完成处理，可在导出帐户中使用。</li><li>[!UICONTROL **失败**]<p>各种情况都可能导致导出失败。 将鼠标悬停在失败状态上可查看有关失败的详细信息。<p>有关失败可能原因的更多信息，请参阅 [导出失败疑难解答](/help/components/exports/troubleshoot-exports.md).</p> |
 
    {style="table-layout:auto"}
 
