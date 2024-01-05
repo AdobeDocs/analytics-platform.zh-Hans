@@ -6,9 +6,9 @@ feature: Use Cases
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 77f3c1c0f179ede05d9a10c50f74184953a16a84
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2558'
 ht-degree: 5%
 
 ---
@@ -66,7 +66,7 @@ Experience Platform查询服务允许您查询和联接Experience Platform数据
 
 可在查询中使用的XDM字段取决于数据集所基于的架构定义。 确保您确实了解数据集背后的架构。
 
-为了方便数据馈送列和XDM字段之间的映射，您应当考虑包含 [Adobe Analytics ExperienceEvent模板](https://github.com/adobe/xdm/blob/master/extensions/adobe/experience/analytics/experienceevent-all.schema.json) “体验事件”架构中的字段组。 请参阅 [数据建模的最佳实践](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) 更具体地说 [Adobe的应用程序架构字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en#adobe-application-schema-field-groups).
+要定义数据馈送列和XDM字段之间的映射，您应该考虑检查并有可能（重新）使用 [Adobe Analytics ExperienceEvent模板](https://github.com/adobe/xdm/blob/master/extensions/adobe/experience/analytics/experienceevent-all.schema.json) 字段组。 请参阅 [数据建模的最佳实践](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) 更具体地说 [Adobe的应用程序架构字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en#adobe-application-schema-field-groups).
 
 例如，如果您要使用 *页面名称* 作为数据馈送的一部分：
 
