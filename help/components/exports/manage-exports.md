@@ -5,7 +5,7 @@ title: 管理导出
 feature: Components
 exl-id: 0c21802a-c46f-41be-9356-d836c038b174
 role: User
-source-git-commit: ad43b199d4174894f0e428bcaf1748ca80bddb45
+source-git-commit: 6f8a43acfba23d6faeff078873742315f1506699
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 3%
@@ -137,7 +137,7 @@ ht-degree: 3%
    | 名称 | 导出的名称。 用户在创建导出时为其命名，如中所述 [将Customer Journey Analytics报表导出到云端](/help/analysis-workspace/export/export-cloud.md). |
    | ID | 创建导出时自动为其分配的ID。 <!-- True? --> |
    | 数据视图名称 | 与导出关联的数据视图的名称。 用户可以在创建导出时选择数据视图，如中所述 [将Customer Journey Analytics报表导出到云端](/help/analysis-workspace/export/export-cloud.md). |
-   | 状态 | 导出的状态。 可用状态包括 [!UICONTROL 活动]， [!UICONTROL 完成]、和 [!UICONTROL 失败].<p> **注意：** 有关导出失败疑难解答的信息，请参阅 [导出失败疑难解答](/help/components/exports/troubleshoot-exports.md).</p> |
+   | 状态 | 导出的状态。 可用状态包括 [!UICONTROL 活动]， [!UICONTROL 已完成]、和 [!UICONTROL 失败].<p> **注意：** 有关导出失败疑难解答的信息，请参阅 [导出失败疑难解答](/help/components/exports/troubleshoot-exports.md).</p> |
    | 标记 | 显示应用于导出的任何标记。 有关如何将标记应用于导出的信息，请参阅 [标记导出](#tag-an-export). |
    | 表大小（上次发送） | 上次发送导出的时间。 |
    | 创建者 | 创建导出的用户。 |
