@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1394'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -29,9 +29,9 @@ ht-degree: 96%
 * ID 不包含 PII。将散列应用于任何可能敏感的内容。
 * ID 在所有源中使用相同的格式（相同的长度、相同的散列方法等）
 
-在 Adobe Analytics 等数据集中，可能并非每行数据都存在标识，但辅助标识确实存在。在这种情况下，跨渠道分析（也称为“拼接”）可用于在仅通过其ECID识别客户以及收集标识时（例如，当客户进行身份验证时）。 [了解详情](../stitching/overview.md)。
+在 Adobe Analytics 等数据集中，可能并非每行数据都存在标识，但辅助标识确实存在。在这种情况下，当仅通过客户的 ECID 识别客户时以及收集标识时（例如，当客户进行身份验证时），可使用跨渠道分析（也称为“拼接”）消除行间差距。[了解详情](../stitching/overview.md)。
 
-### 2. 调整您的变量 {#variables}
+### 2. 使您的变量保持一致 {#variables}
 
 将 Adobe Analytics 数据转换为 Customer Journey Analytics 数据的最直接方法是使用 [Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=zh-Hans) 将[全局报告包](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)纳入 Experience Platform 中。该连接器会将您的 Adobe Analytics 变量直接映射到 Experience Platform 中的 XDM 架构和数据集，然后便可以轻松连接到 Customer Journey Analytics。
 
@@ -70,7 +70,7 @@ Adobe Analytics 客户可以使用 Analytics Source Connector 在 Adobe Experien
 * 灵活的模式来定义您需要的任何字段
 * 不依赖于 Adobe Analytics 命名法（属性、eVar、事件等）
 * 没有字符限制问题（属性有 100 个字符）
-* 加快了Adobe Experience Platform中的数据可用性 [实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=zh-Hans)
+* Adobe Experience Platform 中可更快地获得数据以促成[实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=zh-Hans)
 * [第一方设备 ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=zh-Hans) 可提高访客识别的准确性
 
 **使用 Experience Platform SDK 的缺点**

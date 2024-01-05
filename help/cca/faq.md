@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 hide: true
 hidefromtoc: true
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1057'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 97%
 
 [跨设备分析](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html)是传统 Adobe Analytics 特有的功能，它使您能够了解人们如何跨设备操作。该功能提供了两种将设备数据链接在一起的工作流：基于字段的拼接和设备图。
 
-[跨渠道分析](/help/stitching/overview.md) 是Customer Journey Analytics特有的功能，它使您能够同时了解人们如何跨设备和跨渠道操作。 该功能会对数据集的个人 ID 重新生成密钥，使该数据集可与其他数据集无缝结合。该功能在设计上与 CDA 字段拼接功能类似，但由于 Adobe Analytics 和 Customer Journey Analytics 之间的数据架构不同，实施方法也不同。
+[跨渠道分析](/help/stitching/overview.md)是 Customer Journey Analytics 特有的一项功能，通过它，可了解人群在各种设备和渠道上如何操作。该功能会对数据集的个人 ID 重新生成密钥，使该数据集可与其他数据集无缝结合。该功能在设计上与 CDA 字段拼接功能类似，但由于 Adobe Analytics 和 Customer Journey Analytics 之间的数据架构不同，实施方法也不同。
 
 ## 跨渠道分析如何处理 GDPR 和 CCPA 请求？
 
