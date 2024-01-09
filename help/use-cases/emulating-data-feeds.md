@@ -6,10 +6,10 @@ feature: Use Cases
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: a402c4b03c9d30235f2697e1b6ad5b1b22024c66
+source-git-commit: f062f8599dcc22b792369c310ceebcb283447d76
 workflow-type: tm+mt
-source-wordcount: '2537'
-ht-degree: 4%
+source-wordcount: '2402'
+ht-degree: 2%
 
 ---
 
@@ -52,30 +52,36 @@ Experience Platform查询服务允许您查询和联接Experience Platform数据
 * [元数据PostgreSQL命令](https://experienceleague.adobe.com/docs/experience-platform/query/sql/metadata.html?lang=en)，
 * [预准备语句](https://experienceleague.adobe.com/docs/experience-platform/query/sql/prepared-statements.html?lang=en).
 
-
-#### 标识
-
-在Experience Platform中，可以使用各种标识。 创建查询时，请确保正确查询了标识。
-
-通常，您会在单独的字段组中找到身份。 在实施ECID (`ecid`)可以定义为字段组的一部分，使用 `core` 对象，它本身是 `identification` 对象(例如： `_sampleorg.identification.core.ecid`)。 ECID在架构中的组织方式可能有所不同。
-
-或者，您可以使用 `identityMap` 以查询身份。 此对象的类型为 `Map` 并使用 [嵌套数据结构](#nested-data-structure).
-
-
 #### 数据馈送列
 
-可在查询中使用的XDM字段取决于数据集所基于的架构定义。 确保您确实了解数据集背后的架构。
+可在查询中使用的XDM字段取决于数据集所基于的架构定义。 确保您确实了解数据集背后的架构。 请参阅 [数据集UI指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=zh_Hans) 以了解更多信息。
 
-要定义数据馈送列和XDM字段之间的映射，应考虑检查并可能（重新）使用 [Adobe Analytics ExperienceEvent模板](https://github.com/adobe/xdm/blob/master/extensions/adobe/experience/analytics/experienceevent-all.schema.json) 字段组。 请参阅 [数据建模的最佳实践](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) 更具体地说 [Adobe的应用程序架构字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en#adobe-application-schema-field-groups).
+要帮助您定义数据馈送列和XDM字段之间的映射，请参阅 [Analytics字段映射](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=zh-Hans). 另请参阅 [架构UI概述](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en#defining-xdm-fields) 有关如何管理XDM资源（包括架构、类、字段组和数据类型）的详细信息。
 
 例如，如果您要使用 *页面名称* 作为数据馈送的一部分：
 
 * 在Adobe Analytics数据馈送的UI中，您可以选择 **[!UICONTROL pagename]** 作为要添加到您的数据馈送定义的列。
 * 在查询服务中，您包括 `web.webPageDetails.name` 从 `sample_event_dataset_for_website_global_v1_1` 数据集(基于 **网站(Global v1.1)的事件架构示例** 体验事件架构)。 请参阅 [Web详细信息架构字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/web-details.html?lang=en) 以了解更多信息。
 
-要了解Adobe Analytics数据馈送列与Experience事件数据集中的XDM字段和基础架构之间的映射，请参阅 [Analytics字段映射](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=zh-Hans) 和 [Adobe Analytics ExperienceEvent完整扩展架构字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) 以了解更多信息。
+<!--
+To understand the mapping between Adobe Analytics data feed columns and XDM fields in your experience event dataset and underlying schema, see [Analytics fields mapping](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en) and [Adobe Analytics ExperienceEvent Full Extension schema field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) for more information.
 
-此外， [Experience PlatformWeb SDK自动收集的信息（开箱即用）](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=en) 可能与识别查询的列相关。
+Furthermore, the [automatically collected information by the Experience Platform Web SDK (out of the box)](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=en) might be relevant to identify columns for your query.
+-->
+
+#### 标识
+
+在Experience Platform中，可以使用各种标识。 创建查询时，请确保正确查询了标识。
+
+
+通常，您会在单独的字段组中找到身份。 在实施ECID (`ecid`)可以定义为字段组的一部分，使用 `core` 对象，它本身是 `identification` 对象(例如： `_sampleorg.identification.core.ecid`)。 ECID在架构中的组织方式可能有所不同。
+
+或者，您可以使用 `identityMap` 以查询身份。 此对象的类型为 `Map` 并使用 [嵌套数据结构](#nested-data-structure).
+
+请参阅 [在UI中定义标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en) 有关如何在Experience Platform中定义标识字段的更多信息。
+
+请参阅 [Analytics数据中的主要标识符](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#primary-identifiers-in-analytics-data) 了解在使用Analytics Source Connector时，如何将Adobe Analytics身份映射到Experience Platform身份。 这可用作设置标识的指南，即使未使用Analytics Source Connector也是如此。
+
 
 #### 点击级别数据和识别
 
@@ -83,32 +89,28 @@ Experience Platform查询服务允许您查询和联接Experience Platform数据
 
 | 数据馈送列 | XDM字段 | 类型 | 描述 |
 |---|---|---|---|
-| hitid_high + hitid_low | _id | 字符串 | 用于标识点击的唯一标识符。 |
-| hitid_low | _id | 字符串 | 与hitid_high一起使用，唯一标识点击。 |
-| hitid_high | _id | 字符串 | 与hitid_high一起使用，唯一标识点击。 |
-| hit_time_gmt | receivedTimestamp | 字符串 | 点击的时间戳，基于UNIX®时间。 |
-| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | 字符串 | 访客第一次点击的时间戳(以UNIX®时间表示)。 |
-| cust_hit_time_gmt | timestamp | 字符串 | 这仅在启用了时间戳的数据集中使用。 这是随点击发送的时间戳，基于UNIX®时间。 |
-| visid_high + visid_low | identityMap | 对象 | 访问的唯一标识符。 |
-| visid_high + visid_low | endUserIDs._experience.aaid.id | 字符串 | 访问的唯一标识符。 |
-| visid_high | endUserIDs._experience.aaid.primary | 布尔值 | 与visid_low结合使用，用来唯一标识访问。 |
-| visid_high | endUserIDs._experience.aaid.namespace.code | 字符串 | 与visid_low结合使用，用来唯一标识访问。 |
-| visid_low | identityMap | 对象 | 与visid_high结合使用，用来唯一标识访问。 |
-| cust_visid | identityMap | 对象 | 客户访客ID |
-| cust_visid | endUserIDs._experience.aacustomid.id | 对象 | 客户访客ID。 |
-| cust_visid | endUserIDs._experience.aacustomid.primary | 布尔值 | 客户访客ID命名空间代码。 |
-| cust_visid | endUserIDs._experience.aacustomid.namespace.code | 字符串 | 与visid_low结合使用，用来唯一标识客户访客id。 |
-| 地理\_* | placeContext.geo.* | 字符串，数字 | 地理位置数据，如国家/地区、地区、城市等 |
-| visit_page_num | _experience.analytics.session.depth | 数字 | 在点击深度维度中使用的变量。 对于用户生成的每次点击，此值增加1，并在每次访问后重置。 |
-| event_list | commerce.purchases、commerce.productViews、commerce.productListOpens、commerce.checkouts、commerce.productListAdds、commerce.productListRemovals、commerce.productListViews、\_experience.analytics.event101to200。*， ...， \_experience.analytics.event901_1000。\* | 字符串 | 点击时触发的标准商务和自定义事件。 |
-| page_event | web.webInteraction.type | 字符串 | 在图像请求中发送的点击类型（标准点击、下载链接、退出链接或单击的自定义链接）。 |
-| page_event | web.webInteraction.linkClicks.value | 数字 | 在图像请求中发送的点击类型（标准点击、下载链接、退出链接或单击的自定义链接）。 |
-| page_event_var_1 | web.webInteraction.URL | 字符串 | 仅在链接跟踪图像请求中使用的变量。 此变量包含下载链接、退出链接或单击的自定义链接的URL。 |
-| page_event_var_2 | web.webInteraction.name | 字符串 | 仅在链接跟踪图像请求中使用的变量。 这会列出链接的自定义名称（如果已指定）。 |
-| first_hit_ref_type | _experience.analytics.endUser.firstWeb.webReferrer.type | 字符串 | 数值ID，表示访客的第一个反向链接的反向链接类型。 |
-| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | 整数 | 访客第一次点击的时间戳(以UNIX®时间表示)。 |
-| paid_search | search.isPaid | 布尔值 | 如果点击与付费搜索检测相匹配，则设置此标记。 |
-| ref_type | web.webReferrertype | 字符串 | 表示点击的反向链接类型的数字 ID。 |
+| `hitid_high` + `hitid_low` | `_id` | 字符串 | 用于标识点击的唯一标识符。 |
+| `hitid_low` | `_id` | 字符串 | 使用方式 `hitid_high` 用于唯一标识点击。 |
+| `hitid_high` | `_id` | 字符串 | 使用方式 `hitid_high` 用于唯一标识点击。 |
+| `hit_time_gmt` | `receivedTimestamp` | 字符串 | 点击的时间戳，基于UNIX®时间。 |
+| `cust_hit_time_gmt` | `timestamp` | 字符串 | 这仅在启用了时间戳的数据集中使用。 这是随点击发送的时间戳，基于UNIX®时间。 |
+| `visid_high` + `visid_low` | `identityMap` | 对象 | 访问的唯一标识符。 |
+| `visid_high` + `visid_low` | `endUserIDs._experience.aaid.id` | 字符串 | 访问的唯一标识符。 |
+| `visid_high` | `endUserIDs._experience.aaid.primary` | 布尔值 | 使用方式 `visid_low` 以唯一地标识访问。 |
+| `visid_high` | `endUserIDs._experience.aaid.namespace.code` | 字符串 | 使用方式 `visid_low` 以唯一地标识访问。 |
+| `visid_low` | `identityMap` | 对象 | 使用方式 `visid_high` 以唯一地标识访问。 |
+| `cust_visid` | `identityMap` | 对象 | 客户访客ID。 |
+| `cust_visid` | `endUserIDs._experience.aacustomid.id` | 对象 | 客户访客ID。 |
+| `cust_visid` | `endUserIDs._experience.aacustomid.primary` | 布尔值 | 客户访客ID命名空间代码。 |
+| `cust_visid` | `endUserIDs._experience.aacustomid.namespace.code` | 字符串 | 使用方式 `visid_low` 以唯一地标识客户访客id。 |
+| `geo\_*` | `placeContext.geo.* ` | 字符串，数字 | 地理位置数据，如国家/地区、地区、城市等 |
+| `event_list` | `commerce.purchases`， `commerce.productViews`， `commerce.productListOpens`， `commerce.checkouts`， `commerce.productListAdds`， `commerce.productListRemovals`， `commerce.productListViews`， `_experience.analytics.event101to200.*`， ...， `_experience.analytics.event901_1000.*` | 字符串 | 点击时触发的标准商务和自定义事件。 |
+| `page_event` | `web.webInteraction.type` | 字符串 | 在图像请求中发送的点击类型（标准点击、下载链接、退出链接或单击的自定义链接）。 |
+| `page_event` | `web.webInteraction.linkClicks.value` | 数字 | 在图像请求中发送的点击类型（标准点击、下载链接、退出链接或单击的自定义链接）。 |
+| `page_event_var_1` | `web.webInteraction.URL` | 字符串 | 仅在链接跟踪图像请求中使用的变量。 此变量包含下载链接、退出链接或单击的自定义链接的URL。 |
+| `page_event_var_2` | `web.webInteraction.name` | 字符串 | 仅在链接跟踪图像请求中使用的变量。 这会列出链接的自定义名称（如果已指定）。 |
+| `paid_search` | `search.isPaid` | 布尔值 | 如果点击与付费搜索检测相匹配，则设置此标记。 |
+| `ref_type` | `web.webReferrertype` | 字符串 | 表示点击的反向链接类型的数字 ID。 |
 
 #### 发布列
 
