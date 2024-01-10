@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 1d248ebfef9c5f31662f74535a005b6cd7ccea15
 workflow-type: tm+mt
-source-wordcount: '5783'
+source-wordcount: '5933'
 ht-degree: 12%
 
 ---
@@ -1280,6 +1280,34 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 - 在为派生字段定义规则时，您最多可以使用十个不同的架构字段（不包括标准字段）。
    - 在这个最多十个不同的架构字段中，只允许三个查找架构或配置文件架构字段。
 - 每个Customer Journey Analytics连接最多可以有100个派生字段。
+
+
+### 功能限制摘要
+
+| 函数 | 限制 |
+|---|---|
+| <p>Case When</p> | <ul><li>5大小写When每个派生字段的函数</li><li>每个派生字段200个运算符</li></ul> |
+| <p>分类</p> | <ul><li>5按派生字段对函数进行分类</li><li>每个函数100行</li></ul> |
+| <p>拼接</p> | <ul><li>2每个派生字段的拼接函数</li></ul> |
+| <p>查找和替换</p> | <ul><li>每个派生字段2个查找和替换函数</li></ul> |
+| <p>查询</p> | <ul><li>每个派生字段5个查找函数</li></ul> |
+| <p>小写</p> | <ul><li>每个派生字段有2个小写函数</li></ul> |
+| <p>合并字段</p> | <ul><li>每个派生字段有2个合并字段函数</li></ul> |
+| <p>正则表达式替换</p> | <ul><li>每个派生字段有1个正则表达式替换函数</li></ul> |
+| <p>拆分</p> | <ul><li>每个派生字段有5个拆分函数</li></ul> |
+| <p>修剪</p> | <ul><li>每个派生字段有1个修剪函数</li></ul> |
+| <p>URL 解析</p> | <ul><li>每个派生字段有5个URL解析函数</li></ul> |
+
+{style="table-layout:auto"}
+
+### 运算符
+
+If或Else If中的运算符在Case When函数中构造，是条件与的组合 **一** 值。 该条件的每个附加值都会增加运算符的数量。
+
+例如，以下条件使用13个运算符。
+
+![示例运算符](assets/operators-sample.png)
+
 
 ## 更多信息
 
