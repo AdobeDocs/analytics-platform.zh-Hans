@@ -4,9 +4,9 @@ description: 了解用于Customer Journey Analytics的护栏
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
-source-git-commit: f436084d71f19e9cf3dd67287e510e07586d58f6
+source-git-commit: 85aea47146d4079606ccdeb1bcc29d41bbf49837
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1480'
 ht-degree: 10%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 10%
 | 受众刷新频率 | 4 | 系统强制的护栏 | 最大频率（小时an） [受众](../components/audiences/audiences-overview.md) 可能更新。 | |
 | 受众刷新回顾窗口 | 90 | 系统强制的护栏 | 刷新回顾时间范围的最大天数。 |
 | 刷新受众过期日期 | 13 | 系统强制的护栏 | 受众从创建日期起停止刷新的最大月数。 客户可以将其延长13个月。 |
-| 刷新受众的数量 | 75， 100， 150 | 系统强制的护栏 | 刷新受众的最大数量，该值因包而异。 |
+| 刷新受众的数量 | 75， 100 | 系统强制的护栏 | 刷新受众的最大数量，该值因包而异（请参阅产品描述）。 |
 
 {style="table-layout:auto"}
 
