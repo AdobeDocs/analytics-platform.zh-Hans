@@ -4,9 +4,9 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 6ae65a3356df4ce1b72cd30b055d4db734488235
 workflow-type: tm+mt
-source-wordcount: '2756'
+source-wordcount: '2781'
 ht-degree: 90%
 
 ---
@@ -14,6 +14,16 @@ ht-degree: 90%
 # Customer Journey Analytics - 文档更新
 
 Customer Journey Analytics 文档自创建以来进行了以下更新。
+
+## 2024
+
+| 功能 | 描述 |
+| --- | --- |
+| **2024 年 1 月** | |
+| 派生字段 | 添加了函数摘要 [限制](/help/data-views/derived-fields/derived-fields.md#limitations) 有关如何确定 [运算符](/help/data-views/derived-fields/derived-fields.md#operators) 在函数中使用。 |
+
+{style="table-layout:auto"}
+
 
 ## 2023
 
@@ -94,6 +104,8 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 登陆页面 | 新的着陆页面更新[着陆页面](/help/getting-started/landing.md)。 |
 | 计划工作簿 | 专用页面描述如何在 Report Builder 中[计划工作簿](/help/report-builder/schedule-reportbuilder.md)。 |
 | 对象数组支持配置文件和查找数据集 | 更新了[使用对象数组](/help/use-cases/object-arrays.md)和[摄入 Adobe Experience Platform 受众](/help/use-cases/data-ingestion/ingest-aep-segments.md)以反映对配置文件和查找数据集的对象数组支持。 |
+
+{style="table-layout:auto"}
 
 ## 2022
 

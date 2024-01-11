@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 1d248ebfef9c5f31662f74535a005b6cd7ccea15
+source-git-commit: cdc82ee0b6562879afa2b955aa05f330e5cd225c
 workflow-type: tm+mt
-source-wordcount: '5933'
+source-wordcount: '5932'
 ht-degree: 12%
 
 ---
@@ -217,7 +217,7 @@ ht-degree: 12%
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 如果]， [!UICONTROL 否则，如果] 容器：</p><ul><li>[!UICONTROL 值]</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul><li>[!UICONTROL 标准] （请参阅包含的运算符，基于选定的值类型）</li></ul></li><li>[!UICONTROL 然后将值设置为]， [!UICONTROL 否则，将值设置为]：</p><ul><li>[!UICONTROL 值]</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul></ul></li></ul> | <p>字符串</p><ul><li>等于</li><li>等于任何词语</li><li>包含该短语</li><li>包含任何词语</li><li>包含所有词语</li><li>开始于</li><li>以任意术语开头</li><li>结束于</li><li>以任意术语结束</li><li>不等于</li><li>不等于任何词语</li><li>不包含该短语</li><li>不包含任何词语</li><li>不包含所有词语</li><li>未始于</li><li>不以任何术语开头</li><li>未止于</li><li>未以任何术语结尾</li><li>已设置</li><li>未设置</li></ul><p>数值</p><ul><li>等于</li><li>不等于</li><li>高于</li><li>高于或等于</li><li>低于</li><li>低于或等于</li><li>已设置</li><li>未设置</li></ul><p>日期</p><ul><li>等于</li><li>不等于</li><li>晚于</li><li>晚于或等于</li><li>早于</li><li>早于或等于</li><li>已设置</li><li>未设置</li></ul> | <ul><li>每个派生字段5个函数</li><li>每个派生字段200个运算符。 例如，单个运算符为“反向链接域包含google”。 </li></ul> | <p>新建派生字段</p> |
+| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 如果]， [!UICONTROL 否则，如果] 容器：</p><ul><li>[!UICONTROL 值]</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul><li>[!UICONTROL 标准] （请参阅包含的运算符，基于选定的值类型）</li></ul></li><li>[!UICONTROL 然后将值设置为]， [!UICONTROL 否则，将值设置为]：</p><ul><li>[!UICONTROL 值]</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul></ul></li></ul> | <p>字符串</p><ul><li>等于</li><li>等于任何词语</li><li>包含该短语</li><li>包含任何词语</li><li>包含所有词语</li><li>开始于</li><li>以任意术语开头</li><li>结束于</li><li>以任意术语结束</li><li>不等于</li><li>不等于任何词语</li><li>不包含该短语</li><li>不包含任何词语</li><li>不包含所有词语</li><li>未始于</li><li>不以任何术语开头</li><li>未止于</li><li>未以任何术语结尾</li><li>已设置</li><li>未设置</li></ul><p>数值</p><ul><li>等于</li><li>不等于</li><li>高于</li><li>高于或等于</li><li>低于</li><li>低于或等于</li><li>已设置</li><li>未设置</li></ul><p>日期</p><ul><li>等于</li><li>不等于</li><li>晚于</li><li>晚于或等于</li><li>早于</li><li>早于或等于</li><li>已设置</li><li>未设置</li></ul> | <ul><li>每个派生字段5个函数</li><li>200 [运算符](#operators) 每个派生字段。 例如，单个运算符为“反向链接域包含google”。 </li></ul> | <p>新建派生字段</p> |
 
 {style="table-layout:auto"}
 
@@ -1282,11 +1282,11 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 - 每个Customer Journey Analytics连接最多可以有100个派生字段。
 
 
-### 功能限制摘要
+### 函数限制摘要
 
 | 函数 | 限制 |
 |---|---|
-| <p>Case When</p> | <ul><li>5大小写When每个派生字段的函数</li><li>每个派生字段200个运算符</li></ul> |
+| <p>Case When</p> | <ul><li>5大小写When每个派生字段的函数</li><li>200 [运算符](#operators) 每个派生字段</li></ul> |
 | <p>分类</p> | <ul><li>5按派生字段对函数进行分类</li><li>每个函数100行</li></ul> |
 | <p>拼接</p> | <ul><li>2每个派生字段的拼接函数</li></ul> |
 | <p>查找和替换</p> | <ul><li>每个派生字段2个查找和替换函数</li></ul> |
@@ -1302,7 +1302,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 ### 运算符
 
-If或Else If中的运算符在Case When函数中构造，是条件与的组合 **一** 值。 该条件的每个附加值都会增加运算符的数量。
+If或Else If中的运算符在Case When函数中构造是条件与的组合 **一** 值。 该条件的每个附加值都会增加运算符的数量。
 
 例如，以下条件使用13个运算符。
 
