@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 05bd88ea215d0b41c58221b42581a8fd09a019b3
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 81%
+source-wordcount: '969'
+ht-degree: 76%
 
 ---
 
@@ -21,7 +21,7 @@ Customer Journey Analytics由三个访问级别或三个角色管理：产品管
 
 ## 产品管理员角色
 
-产品管理员有权完成Customer Journey Analytics中任何必要的任务。 必须将您作为产品管理员的角色添加到“[!UICONTROL Customer Journey Analytics]”>“[!UICONTROL 管理员]选项卡”>“[!UICONTROL 添加管理员]”下 [Admin Console](https://adminconsole.adobe.com/enterprise/) 中的&#x200B;**Customer Journey Analytics 产品配置文件**。产品管理员享有以下权限：
+产品管理员有权完成Customer Journey Analytics中任何必要的任务。 您必须作为产品管理员添加到 **Customer Journey Analytics产品配置文件** 在 [Admin Console](https://adminconsole.adobe.com/enterprise/) 下 [!UICONTROL Customer Journey Analytics] > [!UICONTROL 管理员] 选项卡> [!UICONTROL 添加管理员]. 产品管理员享有以下权限：
 
 * 创建/更新/删除连接或数据视图
 * 更新/删除项目、过滤器、计算量度、受众、批注或其他用户创建的过滤器
@@ -93,7 +93,7 @@ Customer Journey Analytics 中的用户无法创建、编辑或查看数据视�
 | **[!UICONTROL 审核日志访问]** | 此权限将强制对 [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) 和审核日志 UI 进行权限检查。 |
 | **[!UICONTROL 报告使用情况管理员]** | 允许用户查看和删除公司中运行的任何报告。 |
 | **[!UICONTROL 报告使用情况视图]** | 允许用户查看所有并发报告请求。 |
-| [!UICONTROL **完整表导出**] | 允许用户 [将整个表导出到云](/help/analysis-workspace/export/export-cloud.md). |
+| [!UICONTROL **完整表导出**] | 允许用户 [将整个表导出到云](/help/analysis-workspace/export/export-cloud.md). <p>有关如何在Adobe Experience Platform中为Customer Journey Analytics用户添加目标访问权限的信息，请参阅 [目标和访问控制](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en#access-controls) 在 [目标概述](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en)</p> |
 | **[!UICONTROL 计算量度创建]** | 允许用户创建[计算量度](/help/components/calc-metrics/calc-metr-overview.md)。 |
 | **[!UICONTROL 过滤器创建]** | 允许用户创建[过滤器](/help/components/filters/filters-overview.md)。 |
 | **[!UICONTROL Labs 访问权限]** | 允许用户访问 [Labs](/help/labs/labs.md) 选项卡中的Customer Journey Analytics。 |
