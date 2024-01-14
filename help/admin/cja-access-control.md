@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 05bd88ea215d0b41c58221b42581a8fd09a019b3
+source-git-commit: 75413a38b9291cc8c31de3f2389ae74a31e7b00c
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 76%
+source-wordcount: '942'
+ht-degree: 78%
 
 ---
 
@@ -93,7 +93,7 @@ Customer Journey Analytics 中的用户无法创建、编辑或查看数据视�
 | **[!UICONTROL 审核日志访问]** | 此权限将强制对 [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) 和审核日志 UI 进行权限检查。 |
 | **[!UICONTROL 报告使用情况管理员]** | 允许用户查看和删除公司中运行的任何报告。 |
 | **[!UICONTROL 报告使用情况视图]** | 允许用户查看所有并发报告请求。 |
-| [!UICONTROL **完整表导出**] | 允许用户 [将整个表导出到云](/help/analysis-workspace/export/export-cloud.md). <p>有关如何在Adobe Experience Platform中为Customer Journey Analytics用户添加目标访问权限的信息，请参阅 [目标和访问控制](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en#access-controls) 在 [目标概述](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en)</p> |
+| [!UICONTROL **完整表导出**] | 允许用户 [将整个表导出到云](/help/analysis-workspace/export/export-cloud.md). |
 | **[!UICONTROL 计算量度创建]** | 允许用户创建[计算量度](/help/components/calc-metrics/calc-metr-overview.md)。 |
 | **[!UICONTROL 过滤器创建]** | 允许用户创建[过滤器](/help/components/filters/filters-overview.md)。 |
 | **[!UICONTROL Labs 访问权限]** | 允许用户访问 [Labs](/help/labs/labs.md) 选项卡中的Customer Journey Analytics。 |
