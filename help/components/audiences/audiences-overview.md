@@ -3,8 +3,8 @@ title: 了解Customer Journey Analytics受众发布概述
 description: 了解 Customer Journey Analytics 中的受众发布的概念
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
-role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+role: User, Admin
+source-git-commit: e1815cad331b47b281f61d427ef342ea3b5b5d87
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 50%
