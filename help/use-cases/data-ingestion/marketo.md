@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 60%
+source-wordcount: '393'
+ht-degree: 58%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 60%
 
 ## 步骤3：在Customer Journey Analytics中设置与此数据集的连接
 
-为了报告Experience Platform数据集，您必须首先在Experience Platform和Customer Journey Analytics中的数据集之间建立连接。 在 [“创建连接”](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=cn) 下查找更多信息。
+为了报告Experience Platform数据集，您必须首先在Experience Platform和Customer Journey Analytics中的数据集之间建立连接。 有关详细信息，请参阅 [创建或编辑连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=cn).
 
 ## 步骤 4：创建一个或多个数据视图
 

@@ -5,10 +5,10 @@ exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 98c0f2887789310dc387f1bf7ce5298722a0797e
-workflow-type: ht
-source-wordcount: '1166'
-ht-degree: 100%
+source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
+workflow-type: tm+mt
+source-wordcount: '1159'
+ht-degree: 98%
 
 ---
 
@@ -75,7 +75,7 @@ ht-degree: 100%
    * 沙盒名称。
 1. Adobe 客户支持将与 Adobe 工程部门合作，在收到您的请求时启用跨渠道分析。一旦启用，Adobe Experience Platform 中就会出现一个更新了密钥的新数据集，其中包含新的人员 ID 列。Adobe 客户支持可以提供新的数据集 ID 和人员 ID 列名。
 1. 首次开启后，Adobe 将提供拼接数据的回填，最远可追溯到上月初（最多 60 天）。为进行此回填，当时的非拼接数据中必须存在临时 ID。
-1. 在 Customer Journey Analytics 中使用新生成的数据集以及任何其他要包含的数据集[创建连接](/help/connections/create-connection.md)。为每个数据集选择正确的人员 ID。
+1. [创建或编辑连接](/help/connections/create-connection.md) 使用新生成的数据集和任何其他要包含的数据集进行Customer Journey Analytics。 为每个数据集选择正确的人员 ID。
 1. 根据连接[创建数据视图](/help/data-views/create-dataview.md)。
 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->

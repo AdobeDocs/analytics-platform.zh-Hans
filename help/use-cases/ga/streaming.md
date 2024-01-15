@@ -4,10 +4,10 @@ description: 了解如何设置实施以将 Google 数据层发送到 Adobe Expe
 exl-id: 58854f4b-ae28-424e-a2cf-0e76219cb802
 feature: Use Cases
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
 workflow-type: tm+mt
 source-wordcount: '234'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -21,4 +21,4 @@ ht-degree: 100%
 1. 安装 [Google 数据层扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-data-layer/overview.html)。此扩展作为安装 Web SDK 扩展的替代方案，专门针对 Google 数据层。
 1. 在 Adobe Experience Platform 数据收集中[创建数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html)。配置数据流以将数据发送到 Adobe Experience Platform。您当前必须在此处将每个 Google 数据层对象映射到适用的 XDM 字段。Adobe 计划在未来简化此映射工作流。
 
-一旦您在您的网站上实施并发布了所需的标记，您就可以继续[创建连接](/help/connections/create-connection.md)，然后[创建数据视图](/help/data-views/create-dataview.md)。
+在您的网站上实施并发布所需的标记后，您可以继续 [创建连接](/help/connections/create-connection.md)，则 [创建数据视图](/help/data-views/create-dataview.md).

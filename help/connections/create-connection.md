@@ -1,18 +1,18 @@
 ---
-title: 创建连接
-description: 描述如何在 Customer Journey Analytics 中创建与 Platform 数据集的连接。
+title: 创建或编辑连接
+description: 描述如何在Customer Journey Analytics中创建或编辑与Experience Platform数据集的连接。
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '2741'
-ht-degree: 100%
+source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
+workflow-type: tm+mt
+source-wordcount: '2748'
+ht-degree: 99%
 
 ---
 
-# 创建连接
+# 创建或编辑连接
 
 连接创建和编辑工作流体验通过辅助工作流将所有数据集和连接配置设置引入屏幕中心。它提供了详细的数据集选择、配置和查看体验，以及数据集类型、大小、架构、数据集 ID、批次状态、回填状态、人员 ID 等关键信息，以降低错误连接配置的风险。以下是功能概述：
 
