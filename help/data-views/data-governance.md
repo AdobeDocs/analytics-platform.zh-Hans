@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Platform 中定义的数据标签和政策�
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '498'
-ht-degree: 100%
+source-git-commit: 3b089a3d358a1a39a4b572576e911faaa4ceb1d5
+workflow-type: tm+mt
+source-wordcount: '493'
+ht-degree: 94%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 100%
 
 ## 启用的策略如何影响数据视图
 
-如果启用&#x200B;**[!UICONTROL 强制分析]**&#x200B;或&#x200B;**[!UICONTROL 强制下载]**&#x200B;策略，则无法将具有特定数据标签（如 C8 或 C12）的架构组件添加到数据视图中。
+如果 **[!UICONTROL 强制分析]** 策略已启用，则无法将具有特定数据标签（如C8）的架构组件添加到数据视图。
 
 这些组件在左边栏[!UICONTROL 架构字段]列表中显示为灰色：
 
