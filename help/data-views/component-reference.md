@@ -5,8 +5,8 @@ exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
+source-git-commit: 20f48259881bade1978909610055d6b20b894092
+workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 100%
 
@@ -36,6 +36,9 @@ Customer Journey Analytics 中的大多数维度和指标都基于您 Adobe Expe
 | [!UICONTROL 月] | 维度 | 发生给定事件的那一个月。第一个维度项是日期范围内的第一个月，最后一个维度项是日期范围内的最后一个月。 |
 | [!UICONTROL 季度] | 维度 | 发生给定事件的那一季。第一个维度项是日期范围内的第一个季度，最后一个维度项是日期范围内的最后一个季度。 |
 | [!UICONTROL 年] | 维度 | 发生给定事件的那一年。第一个维度项是日期范围中的第一年，最后一个维度项是日期范围中的最后一年。 |
+| [!UICONTROL 会话开始] | 量度 | 会话的第一个事件的事件数。用在过滤器定义（例如，“[!UICONTROL 会话开始]”）中时，它会逐渐过滤以仅显示每个会话的第一个事件。<p>必须将此组件包含在您的数据视图中，才能在 Workspace 中使用[计算量度](/help/components/calc-metrics/default-calcmetrics.md)： <ul><li>会话开始比率</li></p> |
+| [!UICONTROL 会话结束] | 量度 | 会话的最后一个事件的事件数。与[!UICONTROL 会话开始]类似，它也用在过滤器定义中，逐渐过滤以仅显示每个会话的最后一个事件。<p>必须将此组件包含在您的数据视图中，才能在 Workspace 中使用[计算量度](/help/components/calc-metrics/default-calcmetrics.md)： <ul><li>会话结束比率</li></p> |
+| [!UICONTROL 逗留时间（秒）] | 量度 | 累计两个不同的维度值之间的时间。<p>必须将此组件包含在您的数据视图中，才能在 Workspace 中使用[计算量度](/help/components/calc-metrics/default-calcmetrics.md)： <ul><li>每人逗留时间</li><li>每个会话逗留时间</li></p> |
 
 {style="table-layout:auto"}
 
@@ -59,10 +62,7 @@ Customer Journey Analytics 中的大多数维度和指标都基于您 Adobe Expe
 | [!UICONTROL 人员 ID 命名空间] | 维度 | [!UICONTROL 人员 ID] 由哪种类型的 ID 组成。示例为：`email address`、`cookie ID`、`Analytics ID` |
 | [!UICONTROL 季度] | 时间划分维度 | 第一季度、第二季度、第三季度和第四季度 |
 | [!UICONTROL 重复会话] | 量度 | 非个人首次会话的会话数。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat) |
-| [!UICONTROL 会话开始] | 量度 | 会话的第一个事件的事件数。用在过滤器定义（例如，“[!UICONTROL 会话开始]”）中时，它会逐渐过滤以仅显示每个会话的第一个事件。<p>必须将此组件包含在您的数据视图中，才能在 Workspace 中使用[计算量度](/help/components/calc-metrics/default-calcmetrics.md)： <ul><li>会话开始比率</li></p> |
-| [!UICONTROL 会话结束] | 量度 | 会话的最后一个事件的事件数。与[!UICONTROL 会话开始]类似，它也用在过滤器定义中，逐渐过滤以仅显示每个会话的最后一个事件。<p>必须将此组件包含在您的数据视图中，才能在 Workspace 中使用[计算量度](/help/components/calc-metrics/default-calcmetrics.md)： <ul><li>会话结束比率</li></p> |
 | [!UICONTROL 会话类型] | 维度 | 此维度有两个值：1）[!UICONTROL 首次]及 2）返回。[!UICONTROL 首次]行项目包括已确定为个人的首次会话的所有行为（针对该维度的量度）。其他所有内容都包含在[!UICONTROL 返回]的行项目中（假设所有内容都属于一个会话）。如果量度不是任何会话的一部分，则它们将属于该维度的“不适用”分段。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat) |
-| [!UICONTROL 逗留时间（秒）] | 量度 | 累计两个不同的维度值之间的时间。<p>必须将此组件包含在您的数据视图中，才能在 Workspace 中使用[计算量度](/help/components/calc-metrics/default-calcmetrics.md)： <ul><li>每人逗留时间</li><li>每个会话逗留时间</li></p> |
 | [!UICONTROL 每个事件逗留时间] | 维度 | 将[!UICONTROL 耗时]指标装入[!UICONTROL “事件”]桶。 |
 | [!UICONTROL 每个会话逗留时间] | 维度 | 将[!UICONTROL 耗时]指标装入[!UICONTROL 会话]桶。 |
 | [!UICONTROL 每人逗留时间] | 维度 | 将[!UICONTROL 耗时]指标装入[!UICONTROL 人员]桶。 |
