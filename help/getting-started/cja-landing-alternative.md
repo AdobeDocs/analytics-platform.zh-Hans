@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 214616922aa157c390265f76138f8836c80b72d5
+source-git-commit: 171eb52940fabd422288d0f4f9eae512aafe3308
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '446'
 ht-degree: 13%
 
 ---
@@ -23,13 +23,13 @@ ht-degree: 13%
 
 >[!TAB 工作区：时间序列预测]
 
-预测是Analysis Workspace的一项新功能，可用于预测具有任何受支持时间粒度（每小时、每天、每周、每月和每年）的标准或计算量度。
+预测是Analysis Workspace的一项新功能，可用于预测具有任何受支持时间粒度（每小时、每天、每周、每月和每年）的标准或计算量度。 预测仅适用于与时间序列相关的数据。
 
 [![图像](assets/learn-more-button.svg)](../analysis-workspace/export/export-cloud.md)
 
 >[!TAB 连接：跳过的记录]
 
-现在，您可以在定义连接时检查跳过记录的原因。 有关详细信息，请参阅管理连接。
+现在，您可以在定义连接时检查跳过事件数据集中记录的原因。 您可以获取有关跳过记录的原因的详细信息，例如空访客ID、数据保留等。
 
 [![图像](assets/learn-more-button.svg)](/help/connections/manage-connections.md)
 
