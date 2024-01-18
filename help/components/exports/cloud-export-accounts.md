@@ -5,9 +5,9 @@ title: 配置云导出帐户
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: c60b48fa7bdc141e41a1df9ab9f9383cd2332713
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1733'
 ht-degree: 3%
 
 ---
@@ -22,6 +22,7 @@ ht-degree: 3%
 
 ## 开始创建云导出帐户
 
+1. 确保您符合 [最低要求](/help/analysis-workspace/export/export-cloud.md#minimum-requirements) 用于将报表导出到云。
 1. 在Customer Journey Analytics中，选择 [!UICONTROL **组件**] > [!UICONTROL **导出**].
 1. 在 [!UICONTROL 导出] 页面上，选择 [!UICONTROL **位置帐户**] 选项卡。
 1. 选择 [!UICONTROL **添加帐户**].
