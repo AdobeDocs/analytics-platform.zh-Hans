@@ -3,9 +3,9 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: efae6138159820414004a21de7c05b4373257876
+source-git-commit: 767170d382931423ff0ee60c037021bc87000150
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '448'
 ht-degree: 28%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 28%
 | **指导分析 — 保留率** | 一种新视图类型，显示初始参与后在所需日期范围内返回的用户百分比。 [了解详情](../guided-analysis/types/retention-rates.md) | 不适用 | 2024年1月8日 |
 | **时间序列预测** | 预测是Analysis Workspace的一项新功能，可用于预测具有任何受支持时间粒度（每小时、每天、每周、每月和每年）的标准或计算量度。 | 不适用 | 2024年1月31日 |
 | **引导式分析 — 趋势线** | 趋势线叠加图现在在以下位置提供： [使用情况](/help/guided-analysis/types/usage.md) 视图，这有助于更清晰地描述数据中的模式。 | 不适用 | 2024年1月17日 |
-| **“连接详细信息”页面 — 跳过的记录** | 现在，您可以在定义连接时检查跳过记录的原因。 [了解详情](../connections/manage-connections.md) | 不适用 | 2024年1月31日 |
+| **“连接详细信息”页面 — 跳过的记录** | 现在，您可以在定义连接时检查跳过记录的原因。 | 不适用 | 2024年1月31日 |
 | **关键量度摘要可视化图表的更新** | 在使用关键指标摘要可视化图表时，比较日期范围现在可以自动更新，具体取决于您选择的比较日期范围选项是相对于主日期范围还是相对于固定日期范围。 [了解详情](/help/analysis-workspace/visualizations/key-metric.md)。 | 不适用 | 2024年1月17日 |
 | **引导式分析 — 流** | 一种允许您浏览单个用户事件流的新视图类型。 此分析允许您查找体验模式并讲述更好的用户故事。 | 不适用 | 2024年1月31日 |
 | **引导式分析 — 改进了查询边栏** | 一些组件设置现已包含在查询边栏中，从而改进了可用性。 | 不适用 | 2024年1月31日 |
