@@ -5,9 +5,9 @@ title: 将Customer Journey Analytics报表导出到云端
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: b76f534a01326b911ffbf93f089d46c6fc860979
 workflow-type: tm+mt
-source-wordcount: '1974'
+source-wordcount: '1973'
 ht-degree: 3%
 
 ---
@@ -69,11 +69,11 @@ ht-degree: 3%
    | 回顾时间范围 | 选择要包含在每个导出文件中的报表时间范围。 选项包括 [!UICONTROL **今天**]， [!UICONTROL **昨天**]， [!UICONTROL **最近7天**]， [!UICONTROL **最近30天**]， [!UICONTROL **本周**]、和 [!UICONTROL **本月**]. <p>在以下情况下，不会显示此选项： [!UICONTROL **导出频率**] 设置为 [!UICONTROL **立即发送（一次性）**]. |
    | 数据表 | 显示要导出的自由格式表。 您可以通过将组件从左边栏拖到表来修改数据表。 在将组件添加到画布时，表格会动态更新。  <p>应用于项目中整个表的任何区段都会显示在表中每个单独列的顶部。</p> |
    | 清除 | 清除数据表的内容。 这样，您就可以直接在新增完整表格导出对话框中开始构建新表格。 |
-   | 导出频率 | 设置导出的频率计划。 <p>您可以选择 [!UICONTROL **立即发送（一次）**] 以仅发送一次导出。 选择此选项后，将立即启动导出。<p>或者，您可以选择按定义的计划发送导出。 按计划发送时，选项包括 [!UICONTROL **每日**]， [!UICONTROL **每周**]， [!UICONTROL **按工作日的月度**]， [!UICONTROL **按月份日期**]， [!UICONTROL **按月份日期，每年**]、和 [!UICONTROL **按特定日期按年**]. </p><p>选择导出频率时，请考虑以下事项：</p><ul><li>中的选项 [!UICONTROL **回看窗口期**] 字段根据您在此处选择的内容而更改。<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>根据您选择的选项，还会显示其他配置字段。</li></ul> |
+   | 导出频率 | 设置导出的频率计划。 <p>您可以选择 [!UICONTROL **立即发送（一次性）**] 以仅发送一次导出。 选择此选项后，将立即启动导出。<p>或者，您可以选择按定义的计划发送导出。 按计划发送时，选项包括 [!UICONTROL **每日**]， [!UICONTROL **每周**]， [!UICONTROL **按工作日的月度**]， [!UICONTROL **按月份日期**]， [!UICONTROL **按月份日期，每年**]、和 [!UICONTROL **按特定日期按年**]. </p><p>选择导出频率时，请考虑以下事项：</p><ul><li>中的选项 [!UICONTROL **回看窗口期**] 字段根据您在此处选择的内容而更改。<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>根据您选择的选项，还会显示其他配置字段。</li></ul> |
    | 开始日期 | 计划导出应开始的日期和时间。 <p>仅当选择计划的导出频率时，此选项才可用。</p> |
    | 结束日期 | 计划导出过期的日期和时间。 计划导出在设置的日期和时间后不再运行。 <p>仅当选择计划的导出频率时，此选项才可用。</p> |
    | 文件格式 | 选择导出的数据应采用.csv还是.json格式。 |
-   | 帐户 | 选择要将数据发送到的云导出帐户。 <p>有关更多信息，请参阅 [配置云导出帐户](/help/components/exports/cloud-export-accounts.md).</p> |
+   | 帐户 | 选择要将数据发送到的云导出帐户。 <p>有关详细信息，请参阅 [配置云导出帐户](/help/components/exports/cloud-export-accounts.md).</p> |
    | 位置名称 | 选择您希望发送导出数据的帐户位置。 <p>有关更多信息，请参阅 [配置云导出位置](/help/components/exports/cloud-export-locations.md).</p><p>您可以选择 [!UICONTROL **添加新位置**] 按钮来为现有导出帐户创建新位置。 |
 
    {style="table-layout:auto"}
@@ -130,7 +130,7 @@ ht-degree: 3%
 
 * 将数据输出构造为连接值。
 
-* 导出临时或按计划。 (也适用于 [其他导出选项](/help/analysis-workspace/export/export-project-overview.md).)
+* 导出一次或按计划。 (也适用于 [其他导出选项](/help/analysis-workspace/export/export-project-overview.md).)
 
 * 以CSV或JSON格式导出文件。 (也适用于 [其他导出选项](/help/analysis-workspace/export/export-project-overview.md).)
 
@@ -215,7 +215,7 @@ ht-degree: 3%
 | 量度 | 限制为5 | 无限制 |
 | 报告行 | 限制为300万、3000万、1.5亿或3亿，具体取决于层级 | 无限制 |
 | 报告数量 | 无限制 | 无限制 |
-| 临时投放 | 是 | 是 |
+| 临时（一次性）投放 | 是 | 是 |
 | 计划定期投放 | 是 | 是 |
 | 电子邮件投放 | 否 | 是 |
 | FTP/SFTP | 否 | 旧版支持 |

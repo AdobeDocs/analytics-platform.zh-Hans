@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 75413a38b9291cc8c31de3f2389ae74a31e7b00c
+source-git-commit: 24d8d03867cf9619bbee1dd647b2a2a57a36492b
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 78%
+source-wordcount: '1047'
+ht-degree: 63%
 
 ---
 
@@ -21,21 +21,48 @@ Customer Journey Analytics由三个访问级别或三个角色管理：产品管
 
 ## 产品管理员角色
 
-产品管理员有权完成Customer Journey Analytics中任何必要的任务。 您必须作为产品管理员添加到 **Customer Journey Analytics产品配置文件** 在 [Admin Console](https://adminconsole.adobe.com/enterprise/) 下 [!UICONTROL Customer Journey Analytics] > [!UICONTROL 管理员] 选项卡> [!UICONTROL 添加管理员]. 产品管理员享有以下权限：
+默认情况下，分配了产品管理员角色的用户将获得在Customer Journey Analytics中执行大多数任务的必要权限。 但是，某些任务需要附加权限。
 
-* 创建/更新/删除连接或数据视图
-* 更新/删除项目、过滤器、计算量度、受众、批注或其他用户创建的过滤器
+要将用户添加为产品管理员，请执行以下操作：
+
+1. 转到 [Admin Console](https://adminconsole.adobe.com/enterprise/).
+
+1. 选择 [!UICONTROL **Customer Journey Analytics**] > [!UICONTROL **管理员**] 选项卡> [!UICONTROL **添加管理员**].
+
+   您添加的用户将获得 [产品管理员默认权限](#product-admin-default-permissions). 您还可以授予他们 [其他权限](#product-admin-additional-permissions) 如果需要。
+
+### 产品管理员默认权限
+
+产品管理员有权完成Customer Journey Analytics中的大多数任务。
+
+默认情况下，产品管理员有权执行以下任务：
+
+* 创建、更新和删除数据视图
+* 更新和删除项目、过滤器、计算量度、受众、批注或其他用户创建的过滤器
 * 将工作区项目共享给所有用户
 * 在中管理报告活动 [报告活动管理器](/help/reporting-activity-manager/reporting-activity-overview.md)
 
-仅在 Customer Journey Analytics 中担任产品管理员不足以创建、更新或删除[连接](/help/connections/overview.md)。 要创建与 Experience Platform 数据集的连接，您还需要取得 Experience Platform 权限。具体而言，您必须属于授予您以下权限的 **Experience Platform 产品用户档案**：
+### 产品管理员其他权限
 
-* 数据建模：查看架构，管理架构
-* 数据管理：查看数据集，管理数据集
-* 数据摄取：管理源
-* 查看标识命名空间
+除了在中作为产品管理员添加外， **Customer Journey Analytics产品配置文件** 在 [Admin Console](https://adminconsole.adobe.com/enterprise/)，则需要其他权限才能在Customer Journey Analytics中完成以下任务：
 
-有关 Experience Platform 权限的更多信息，请参阅 [Adobe Experience Platform 中的访问控制](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hans)。
+* 创建、更新和删除数据 [连接](/help/connections/overview.md)
+
+  要执行此任务，用户必须属于 **Experience Platform产品配置文件** 提供了以下权限：
+   * 数据建模：查看架构，管理架构
+   * 数据管理：查看数据集，管理数据集
+   * 数据摄取：管理源
+   * 查看标识命名空间
+
+     有关 Experience Platform 权限的更多信息，请参阅 [Adobe Experience Platform 中的访问控制](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hans)。
+
+* 从AEP目标导出数据集
+
+  要执行此任务，用户还需要以下Experience Platform权限：
+   * 管理目标
+   * 激活目标
+
+     有关Experience Platform目标权限的更多信息，请参阅 [目标概述](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=zh-Hans).
 
 ## 产品配置文件管理员角色
 
