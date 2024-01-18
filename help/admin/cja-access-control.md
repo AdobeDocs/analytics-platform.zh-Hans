@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: ae968e46c5822c9209ecf78735df0914f33cb0d2
+source-git-commit: 5e4367c1e5dd8654ae888cf9b4258f9c06fe2961
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 61%
+source-wordcount: '1167'
+ht-degree: 58%
 
 ---
 
@@ -122,6 +122,9 @@ Customer Journey Analytics 中的用户无法创建、编辑或查看数据视�
 | **[!UICONTROL 数据视图]** | 如果您将&#x200B;**[!UICONTROL 自动包含]**&#x200B;切换到&#x200B;**[!UICONTROL 开启]**，则属于此产品配置文件的用户可以查看所有现有和新创建的数据视图。如果此设置被设置为&#x200B;**[!UICONTROL 关闭]**，则可以选择用户有权访问的特定数据视图。 |
 | **[!UICONTROL 报告工具]**： |   |
 | **[!UICONTROL 审核日志访问]** | 此权限将强制对 [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) 和审核日志 UI 进行权限检查。 |
+| **[!UICONTROL Analysis Workspace 访问权限]** | 允许用户在Customer Journey Analytics中访问Analysis Workspace。 |
+| [!UICONTROL **引导式分析访问**] | 允许用户创建 [指导分析项目](/help/guided-analysis/overview.md). |
+| [!UICONTROL **预测**] | 允许用户访问Analysis Workspace中的预测功能 |
 | **[!UICONTROL 报告使用情况管理员]** | 允许用户查看和删除公司中运行的任何报告。 |
 | **[!UICONTROL 报告使用情况视图]** | 允许用户查看所有并发报告请求。 |
 | [!UICONTROL **完整表导出**] | 允许用户 [将整个表导出到云](/help/analysis-workspace/export/export-cloud.md). |
@@ -131,5 +134,9 @@ Customer Journey Analytics 中的用户无法创建、编辑或查看数据视�
 | **[!UICONTROL 创建注释]** | 允许用户创建[注释](/help/components/annotations/overview.md)。 |
 | **[!UICONTROL 受众创建]** | 允许用户创建[受众](/help/components/audiences/audiences-overview.md)。 |
 | **[!UICONTROL 受众视图]** | 允许用户查看[受众](/help/components/audiences/audiences-overview.md)。 |
+| [!UICONTROL **与任何人共享项目链接**] | 允许用户 [与任何人共享项目。](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=zh-Hans#share-public-link) |
+| **[!UICONTROL 数据视图工具]**： |   |
+| [!UICONTROL **完整表导出**] | 允许用户 [将整个表导出到云](/help/analysis-workspace/export/export-cloud.md). |
+| [!UICONTROL **SQL查询服务访问**] | 允许用户访问 [aep中的查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html). |
 
 {style="table-layout:auto"}
