@@ -5,15 +5,18 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 171eb52940fabd422288d0f4f9eae512aafe3308
+source-git-commit: ef46598db68372b8b3b58dc06aa7d5faacca6cc2
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 13%
+source-wordcount: '520'
+ht-degree: 19%
 
 ---
 
 # Customer Journey Analytics 指南
 
+本技术文档指南为 Customer Journey Analytics 提供了自助服务。Customer Journey Analytics允许您从所选的任何渠道（在线和离线）将客户数据纳入到Adobe Experience Platform中，然后像现在使用Analysis Workspace分析现有数字数据一样分析这些数据。
+
+借助 Customer Journey Analytics，您可以控制如何在 Analysis Workspace 中将与任何通用客户 ID 相关的在线和离线数据进行关联，跨您的客户数据。
 
 ## 新增功能
 
@@ -21,23 +24,23 @@ ht-degree: 13%
 
 >[!BEGINTABS]
 
->[!TAB 工作区：时间序列预测]
+>[!TAB 指导分析 — 保留率]
 
-预测是Analysis Workspace的一项新功能，可用于预测具有任何受支持时间粒度（每小时、每天、每周、每月和每年）的标准或计算量度。 预测仅适用于与时间序列相关的数据。
+一种新视图类型，显示初始参与后在所需日期范围内返回的用户百分比
 
-[![图像](assets/learn-more-button.svg)](../analysis-workspace/export/export-cloud.md)
+[![图像](assets/learn-more-button.svg)](/help//guided-analysis/types/retention-rates.md)
 
->[!TAB 连接：跳过的记录]
+>[!TAB 引导式分析 — 趋势线]
 
-现在，您可以在定义连接时检查跳过事件数据集中记录的原因。 您可以获取有关跳过记录的原因的详细信息，例如空访客ID、数据保留等。
-
-[![图像](assets/learn-more-button.svg)](/help/connections/manage-connections.md)
-
->[!TAB Product Analytics：趋势线]
-
-趋势线叠加现在在引导式分析使用情况视图中可用，这有助于通过数据描述更清晰的模式。
+现在，使用视图中提供了趋势线叠加图，这有助于通过数据描述更清晰的模式。
 
 [![图像](assets/learn-more-button.svg)](/help/guided-analysis/types/usage.md)
+
+>[!TAB 关键量度摘要可视化]
+
+在使用关键指标摘要可视化图表时，比较日期范围现在可以自动更新，具体取决于您选择的比较日期范围选项是相对于主日期范围还是相对于固定日期范围。
+
+[![图像](assets/learn-more-button.svg)](/help/analysis-workspace/visualizations/key-metric.md)
 
 >[!ENDTABS]
 
