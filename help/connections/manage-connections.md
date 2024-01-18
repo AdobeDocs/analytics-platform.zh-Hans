@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 0b41cc80310c49bd1b0c73f1323f86c8b280e15f
+source-git-commit: 852dbce716e151d5feee52e813c9db9d76d9ccea
 workflow-type: tm+mt
-source-wordcount: '2487'
+source-wordcount: '2485'
 ht-degree: 27%
 
 ---
@@ -118,17 +118,11 @@ ht-degree: 27%
 
 ![显示小部件和设置的“所有数据集”窗口](assets/conn-details.png)
 
-“连接详细信息”屏幕提供连接状态的详细视图。 您可以:
+“连接详细信息”界面提供连接状态的详细视图。 您可以:
 
 * 检查连接的数据集的状态和摄取过程的状态。
 * 确定可能导致跳过或删除记录的配置问题。
 * 了解数据何时可用于报告。
-
->[!IMPORTANT]
->
->任何在2021年8月13日之前引入的数据均不反映在此报表中 [!UICONTROL 连接] 对话框。
-
-### 连接详细信息
 
 | 用户界面 | 描述 |
 | --- | --- |
@@ -154,6 +148,10 @@ ht-degree: 27%
 | 架构 | 数据集所基于的Experience Platform架构。 |
 | [!UICONTROL 导入新数据] | 显示为数据集导入新数据的状态： <p><span style="color:green">●</span>   **[!UICONTROL _x _开启]**如果数据集配置为导入新数据，并且<p><span style="color:gray">●</span>   **[!UICONTROL _x关_]** 如果数据集配置为不导入新的数据导入。 |
 | [!UICONTROL 回填数据] | 显示数据集的回填数据状态。<p><span style="color:red">●</span>   **[!UICONTROL _x _回填失败]**有关失败的回填数，<p><span style="color:orange">●</span>   **[!UICONTROL _x _正在处理回填]**对于正在处理的回填数，<p><span style="color:green">●</span>   **[!UICONTROL _x _回填已完成]**已完成回填的数量，以及<p><span style="color:grey">●</span>   **[!UICONTROL _关闭_]** 如果未配置回填。 |
+
+>[!IMPORTANT]
+>
+>2021年8月13日之前摄取的任何数据均不反映在 [!UICONTROL 连接] 界面。
 
 ### “连接”面板
 
