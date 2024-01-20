@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: 产品分析
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '505'
 ht-degree: 1%
 
 ---
@@ -30,22 +30,23 @@ ht-degree: 1%
 
 利用查询边栏，可配置以下组件：
 
+* **[!UICONTROL 视图]**：在此视图类型与之间切换 [摩擦](friction.md).
 * **[!UICONTROL 步骤]**：要跟踪的事件接触点。 图表中的每个条形表示一个步骤。 您最多可以包含十个步骤。
-* **[!UICONTROL 人员]**：要与其比较漏斗的区段。 所选的每个区段会将每个步骤拆分为多个条。 每种颜色代表不同的区段。 您最多可以包含三个区段。
+* **[!UICONTROL 计为]**：要测量的量度。 选项包括 [!UICONTROL 用户] 和 [!UICONTROL 会话].
+* **[!UICONTROL 区段]**：要与其比较漏斗的区段。 所选的每个区段会将每个步骤拆分为多个条。 每种颜色代表不同的区段。 您最多可以包含三个区段。
 
 ## 图表设置
 
-转化趋势视图提供了以下图表设置，可在图表上方的菜单中调整这些设置：
+此 [!UICONTROL 转化趋势] 视图提供了以下图表设置，可在图表上方的菜单中调整这些设置：
 
-* **[!UICONTROL 量度]**：要测量的量度。 选项包括“会话”和“用户”。
-* **[!UICONTROL 图表类型]**：要使用的可视化图表类型。 选项包括Line。
-* **[!UICONTROL 转换自]**：确定从一个步骤到另一个步骤的百分比计算。 选项包括从第一步或上一步计算转化。
+* **[!UICONTROL 图表类型]**：要使用的可视化图表类型。 选项包括 [!UICONTROL 折线图].
+* **[!UICONTROL 转换自]**：确定从一个步骤到另一个步骤的百分比计算。 选项包括从以下位置计算转化 [!UICONTROL 第一步] 或 [!UICONTROL 上一步].
 
 >[!NOTE]
 >
 >此 **Average** 转化趋势视图表中的列与 **总计** 中的列 [摩擦视图](friction.md) 表格。 前者是间隔列的平均值（例如，每日转化率的平均值），而后者是整个日期范围内的汇总计算。
 
-## 应用时间比较
+## 时间比较
 
 {{apply-time-comparison}}
 

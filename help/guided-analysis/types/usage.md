@@ -5,9 +5,9 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '701'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 1%
    * [!UICONTROL 对数]：创建曲线回归线。 最适合快速增加或减少的数据，然后变得更加均衡。 方程式：`y = a + b * log(x)`
    * [!UICONTROL 均线]：根据一组平均值创建平滑趋势线。 均线也称为滚动平均值，它使用特定数量的以前数据点（由您的选择确定），对其求平均值，并将平均值用作折线中的点。 示例包括7天均线或4周均线。 可用的移动平均值选项取决于您选择的间隔和日期范围。
 
-## 应用时间比较
+## 时间比较
 
 {{apply-time-comparison}}
 

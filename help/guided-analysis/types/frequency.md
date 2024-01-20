@@ -5,10 +5,10 @@ feature: Guided Analysis
 keywords: 产品分析
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 2%
+source-wordcount: '556'
+ht-degree: 1%
 
 ---
 
@@ -31,14 +31,15 @@ ht-degree: 2%
 
 利用查询边栏，可配置以下组件：
 
+* **[!UICONTROL 视图]**：在此视图类型与之间切换 [使用情况](usage.md).
 * **[!UICONTROL 活动]**：要测量的事件。 每个选定事件均表示为一个单独的图表。 将代表趋势事件的行添加到表中。 您最多可以包含五个事件。
-* **[!UICONTROL 人员]**：要测量的区段。 每个选定区段都会将图表中的条形数和表中的行数加倍。 您最多可以包含五个区段。
+* **[!UICONTROL 计为]**：要测量的量度。 选项包括 [!UICONTROL 用户]，  [!UICONTROL 会话]，  [!UICONTROL 用户百分比] 和  [!UICONTROL 会话百分比]. 此视图中基于百分比的量度的分母是执行选定事件的用户或会话，而不是产品的所有活动用户。
+* **[!UICONTROL 区段]**：要测量的区段。 每个选定区段都会将图表中的条形数和表中的行数加倍。 您最多可以包含五个区段。
 
 ## 图表设置
 
 此 [!UICONTROL 频率] 视图提供了以下图表设置，可在图表上方的菜单中调整这些设置：
 
-* **[!UICONTROL 量度]**：要测量的量度。 选项包括 [!UICONTROL 用户]，  [!UICONTROL 会话]，  [!UICONTROL 用户百分比] 和  [!UICONTROL 会话百分比]. 此视图中基于百分比的量度的分母是执行选定事件的用户或会话，而不是产品的所有活动用户。
 * **[!UICONTROL 图表类型]**：要使用的可视化图表类型。 选项包括 [!UICONTROL 水平条形图] 和 [!UICONTROL 栈叠条形图].
 
 ## 存储桶设置
@@ -51,7 +52,7 @@ ht-degree: 2%
    * [!UICONTROL 至]：大于此值的频率将分组到最后一个分段。
    * [!UICONTROL 大小]：分段间隔。
 
-## 应用时间比较
+## 时间比较
 
 {{apply-time-comparison}}
 

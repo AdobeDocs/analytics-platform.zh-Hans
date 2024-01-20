@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: 产品分析
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '485'
 ht-degree: 2%
 
 ---
@@ -32,14 +32,14 @@ ht-degree: 2%
 利用查询边栏，可配置以下组件：
 
 * **[!UICONTROL 关键指标]**：要为每个用户测量的事件。 每个所选关键指示符用彩色线条表示。 表示该事件的行将添加到表中。 您最多可以包含三个事件。
+* **[!UICONTROL 计为]**：要测量的量度。 选项包括 [!UICONTROL 每个用户的事件数]， [!UICONTROL 用户百分比]， [!UICONTROL 活动]， [!UICONTROL 会话]、和 [!UICONTROL 用户].
 * **[!UICONTROL 因素]**：要在前后比较的日期。
-* **[!UICONTROL 人员]**：要测量的区段。 所选区段会过滤您的数据，以仅关注符合您的区段标准的个人。
+* **[!UICONTROL 区段]**：要测量的区段。 所选区段会过滤您的数据，以仅关注符合您的区段标准的个人。
 
 ## 图表设置
 
 “版本”视图提供了以下图表设置，可以在图表上方的菜单中调整这些设置：
 
-* **[!UICONTROL 量度]**：要测量的量度。 选项包括 [!UICONTROL 每个用户的事件数]， [!UICONTROL 用户百分比]， [!UICONTROL 活动]， [!UICONTROL 会话]、和 [!UICONTROL 用户].
 * **[!UICONTROL 图表类型]**：要使用的可视化图表类型。 选项包括 [!UICONTROL 折线图] 和 [!UICONTROL 条形图].
 
 ## 日期范围

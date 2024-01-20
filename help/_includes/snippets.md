@@ -1,8 +1,8 @@
 ---
-source-git-commit: fb624689c91bfa25f9676a5823b800d918e24e18
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 67%
+ht-degree: 66%
 
 ---
 # 片段
@@ -43,7 +43,7 @@ ht-degree: 67%
    | [!UICONTROL **缺少描述**] | 仅显示在“描述”字段中尚未描述的组件。仅管理员有此选项可用。 |
    | [!UICONTROL **显示重复项**] | 仅显示与选定数据视图中另一个组件具有相同名称或相同说明的组件。 其中包括您创建的组件和 Adobe 提供的组件。名称或描述必须完全匹配才能显示为重复项。 此选项仅适用于管理员。 |
    | [!UICONTROL **没有最近的数据**] | 仅显示在过去 90 天内未收集任何数据的组件。仅管理员有此选项可用。 |
-   | [!UICONTROL **由 Adobe 创建**] <!-- I don't see this option--> | 仅显示由 Adobe 创建的组件。不会显示由管理员或您组织中的其他用户创建的组件。 |
+   | [!UICONTROL **由Adobe创建**] <!-- I don't see this option--> | 仅显示由 Adobe 创建的组件。不会显示由管理员或您组织中的其他用户创建的组件。 |
 
    {style="table-layout:auto"}
 
@@ -74,7 +74,7 @@ ht-degree: 67%
 
 {style="table-layout:auto"}
 
-## 应用时间比较 {#apply-time-comparison}
+## 时间比较 {#apply-time-comparison}
 
 您可以将当前时段与上一个时段进行比较。 如果在此菜单中选择一个选项，则每个数据点都会收到颜色相似的虚线对等项。 此对应项表示选定之前日期范围内的相同量度。 设置此选项可将图表上的项数和表中的行数加倍。
 

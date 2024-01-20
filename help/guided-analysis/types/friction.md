@@ -5,9 +5,9 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '496'
 ht-degree: 1%
 
 ---
@@ -31,18 +31,21 @@ ht-degree: 1%
 
 利用查询边栏，可配置以下组件：
 
+* **[!UICONTROL 视图]**：在此视图类型与之间切换 [转化趋势](conversion-trends.md).
 * **[!UICONTROL 步骤]**：要跟踪的事件接触点。 图表中的每个条形表示一个步骤。 您最多可以包含十个步骤。
-* **[!UICONTROL 人员]**：要与其比较漏斗的区段。 所选的每个区段会将每个步骤拆分为多个条。 每种颜色代表不同的区段。 您最多可以包含三个区段。
+* **[!UICONTROL 计为]**：要应用于漏斗的范围。 选项包括 [!UICONTROL 会话] 和 [!UICONTROL 用户].
+   * [!UICONTROL 会话]：所有步骤必须在同一会话中发生才能被计数。
+   * [!UICONTROL 用户]：所有步骤都必须在选定的报表时段内执行才能计数。
+* **[!UICONTROL 区段]**：要与其比较漏斗的区段。 所选的每个区段会将每个步骤拆分为多个条。 每种颜色代表不同的区段。 您最多可以包含三个区段。
 
 ## 图表设置
 
 摩擦视图提供以下图表设置，可以在图表上方的菜单中调整这些设置：
 
-* **[!UICONTROL 量度]**：要应用于漏斗的范围。 选项包括“会话”和“用户”。 通过选择会话，所有步骤必须在同一会话中发生才能被计数。 通过选择用户，所有步骤都必须在选定要计数的报表时段内发生。
-* **[!UICONTROL 图表类型]**：要使用的可视化图表类型。 选项包括步骤。
-* **[!UICONTROL 转换自]**：确定从一个步骤到另一个步骤的百分比计算。 选项包括从第一步或上一步计算转化。
+* **[!UICONTROL 图表类型]**：要使用的可视化图表类型。 选项包括 [!UICONTROL 步骤].
+* **[!UICONTROL 转换自]**：确定从一个步骤到另一个步骤的百分比计算。 选项包括从以下位置计算转化 [!UICONTROL 第一步] 或 [!UICONTROL 上一步].
 
-## 应用时间比较
+## 时间比较
 
 {{apply-time-comparison}}
 
