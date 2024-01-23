@@ -5,9 +5,9 @@ exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
 source-git-commit: 3b089a3d358a1a39a4b572576e911faaa4ceb1d5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '493'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 94%
 
 ## 启用的策略如何影响数据视图
 
-如果 **[!UICONTROL 强制分析]** 策略已启用，则无法将具有特定数据标签（如C8）的架构组件添加到数据视图。
+如果开启了&#x200B;**[!UICONTROL 强制分析]**&#x200B;策略，则无法将这些有某些数据标签（如 C8）与自身关联的架构组件添加到数据视图。
 
 这些组件在左边栏[!UICONTROL 架构字段]列表中显示为灰色：
 
