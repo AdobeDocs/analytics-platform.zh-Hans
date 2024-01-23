@@ -1,57 +1,134 @@
 ---
 title: Customer Journey Analytics 指南
 description: Customer Journey Analytics 登陆页面。
-exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: Basics
-role: User, Admin, Developer
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '299'
-ht-degree: 100%
+exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
+source-git-commit: 79234ee442e49ebf7f5a08bd0214e8c9d547485e
+workflow-type: tm+mt
+source-wordcount: '588'
+ht-degree: 21%
 
 ---
 
 # Customer Journey Analytics 指南
 
-本技术文档指南为 Customer Journey Analytics 提供了自助服务。Customer Journey Analytics 允许您从所选的任何渠道（在线和离线）将客户数据纳入到 Adobe Experience Platform 中，然后像现在使用 Analysis Workspace 分析现有数字数据一样分析这些数据。
+本技术文档指南为 Customer Journey Analytics 提供了自助服务。Customer Journey Analytics允许您从所选的任何渠道（在线和离线）将客户数据纳入到Adobe Experience Platform中，然后像现在使用Analysis Workspace分析现有数字数据一样分析这些数据。
 
-借助 Customer Journey Analytics，您可以控制如何在 Analysis Workspace 中将与任何通用客户 ID 相关的在线和离线数据进行关联，从而最终得以对 Customer Journey Analytics 中的整个客户数据集进行归因、筛选、流程、流失等操作。
+借助 Customer Journey Analytics，您可以控制如何在 Analysis Workspace 中将与任何通用客户 ID 相关的在线和离线数据进行关联，跨您的客户数据。
 
-<table frame="none"> 
- <tbody> 
-  <tr> 
-   <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>新增项目或特色项目</b> </p> <p> 
-     <ul>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/stitching/overview.html"> 跨渠道分析（在 Customer Journey Analytics 中拼接 ID）</a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html?lang=zh-Hans">在 Customer Journey Analytics 中使用 Adobe Analytics 报告包</a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=zh-Hans">将报告包与不同的架构相结合</a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/pr-vista-dataprep.html?lang=zh-Hans">处理规则、VISTA 和分类与数据准备</a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons.html?lang=zh-Hans"> 比较 Adobe Analytics 和 Customer Journey Analytics 报告功能的数据处理 </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html?lang=zh-Hans"> 虚拟报告包、数据视图、Adobe Experience Platform 沙盒和 Analytics Source Connector </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html?lang=zh-Hans">从 Adobe Analytics 演变到 Customer Journey Analytics</a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja-user.html?lang=zh-Hans"> Adobe Analytics 用户的 Customer Journey Analytics 用户指南 </a> </li>
-     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans#connection-detail">使用增强的连接管理功能</a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=zh-Hans#cja-dataviews">使用增强的数据视图功能</a> </li>
-   <td colname="col2" valign="top"><p class="head"> <b>快速入门</b> </p> 
-      <ul> 
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=zh-Hans">Customer Journey Analytics 入门</a> </li> 
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans"> 常见问题解答</a> </li> 
-   </ul> <p class="head"><b>发行说明</b> </p> 
-     <li>有关新增功能和修复，请参阅最新的 <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html?lang=zh-Hans" format="https" scope="external">Customer Journey Analytics 发行说明</a>。 </li>
-    <td colname="col3" valign="top"> <p class="head"><b>Customer Journey Analytics API</b> </p> 
-    <ul> 
-     <li>查看所有 <a href="https://developer.adobe.com/cja-apis/docs/" format="https" scope="external"> Customer Journey Analytics API</a>。 </li>
-      <li>查看最新的 <a href="https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API" format="https" scope="external"> Customer Journey Analytics 报告 API</a>。 </li>
-    </ul> <p class="head"> <b>Adobe Experience Platform 资源</b> </p> 
-    <ul> 
-     <li><a href="https://www.adobe.com/cn/experience-platform.html" format="http" scope="external"> Adobe Experience Platform</a> </li> 
-     <li> <a href="https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html?lang=zh-Hans" format="https" scope="external"> Adobe Experience Platform 教程</a> </li> 
-     <li><a href="https://www.adobe.io/apis/experienceplatform/home/api-reference.html" format="https" scope="external"> API 参考</a> </li> 
-     <li><a href="https://www.adobe.com/cn/experience-platform/documentation-and-developer-resources.html" format="https" scope="external">文档和开发人员资源</a> </li>
-     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/analytics.html?lang=zh-Hans" format="https" scope="external"> 有关如何从传统 Adobe Analytics 中摄取和使用数据的快速入门指南。
-     <li><a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans" format="https" scope="external">报告包数据的 Adobe Analytics Source Connector</a> </li>
-    </ul> </td> 
-  </tr> 
- </tbody> 
+## 新增功能
+
+大致了解Customer Journey Analytics产品和文档中的最新增强功能！ 有关功能、改进和修复的完整列表，请查看详细的[发行说明](../release-notes/latest.md)。要及时了解我们文档的最新更改，请访问[文档更新页面](../release-notes/doc-changes.md)。
+
+>[!BEGINTABS]
+
+>[!TAB 指导分析* — 保留率]
+
+一种新的视图类型，其中显示在所需日期范围内初次参与后返回的用户百分比。水平轴表示自用户初始参与后经过的天数。 垂直轴表示再次参与的用户百分比。
+
+[![图像](assets/learn-more-button.svg)](/help//guided-analysis/types/retention-rates.md)
+
+<span style="color:gray">*_引导式分析是Adobe Product Analytics的一部分，是Customer Journey Analytics的付费附加功能。_</span>
+
+
+
+
+>[!TAB 引导式分析* — 趋势线]
+
+现在，使用视图中提供了趋势线叠加图，这有助于通过数据描述更清晰的模式。 可用的趋势线类型包括线性、对数和平均线。
+
+[![图像](assets/learn-more-button.svg)](/help/guided-analysis/types/usage.md)
+
+<span style="color:gray">*_引导式分析是Adobe Product Analytics的一部分，是Customer Journey Analytics的付费附加功能。_</span>
+
+
+>[!TAB 关键量度摘要可视化]
+
+在使用关键指标摘要可视化图表时，比较日期范围现在可以自动更新，具体取决于您选择的比较日期范围选项是相对于主日期范围还是相对于固定日期范围。
+
+[![图像](assets/learn-more-button.svg)](/help/analysis-workspace/visualizations/key-metric.md)
+
+>[!ENDTABS]
+
+## 从基础知识开始
+
+首先请阅读以下链接中的材料，以熟悉Customer Journey Analytics功能和特性。
+
+<table style="table-layout:fixed">
+  <tr style="border: 0;">
+    <td>
+    <a href="/help/getting-started/aa-vs-cja/overview.md"><img src="./assets/aa-vs-cja.png"></a>
+    <div><strong>在线数据之外</strong><br/>了解Customer Journey Analytics与Adobe Analytics的比较、共享的功能以及您如何使用Analytics数据。</div>
+    </td>
+    <td>
+    <a href="/help/data-ingestion/data-ingestion.md"><img src="./assets/data-ingestion.png"></a>
+    <div><strong>摄取和使用数据</strong><br/>了解将数据摄取到Experience Platform并用于分析和在Customer Journey Analytics中生成报表必须具备的选项。</div>
+    </td>
+    <td>
+    <a href="/help/guided-analysis/overview.md"><img src="./assets/product-analytics.png"></a>
+    <div><strong>引导式分析</strong><br/>了解如何使用工作流获取有关客户产品体验的数据和见解。 通过引导式分析进行Product Analytics...
+    </div>
+    </td>
+    <td>
+    <a href="/help/analysis-workspace/home.md"><img src="./assets/workspace.png"></a>
+    <div><strong>Analysis Workspace</strong><br/>使用Analysis Workspace执行基本和高级分析，如归因、流量和流失图表、维度划分。</div>
+    </td>
+  </tr>
+  <tr style="border: 0;">
+    <td align="center"><a href="/help/getting-started/aa-vs-cja/overview.md"><img src="./assets/learn-more-button.svg"></a></td>
+    <td align="center"><a href="/help/data-ingestion/data-ingestion.md"><img src="./assets/learn-more-button.svg"></a></td>
+    <td align="center"><a href="/help/guided-analysis/overview.md"><img src="./assets/learn-more-button.svg"></a></td>
+    <td align="center"><a href="/help/analysis-workspace/home.md"><img src="./assets/learn-more-button.svg"></a></td>
+    </tr>
 </table>
+
+## 浏览文档
+
+了解Customer Journey Analytics与Adobe Analytics相比有何异同，以及如何在解决方案中获取您的数据，然后准备、查看、分析这些数据，并使其民主化，并生成分析和报告。
+
+<table style="table-layout:auto">
+  <tr style="border: 0;">
+    <td>
+      <img src="./assets/analytics.svg" width="35px"><br/>
+      <strong>与Adobe Analytics比较</strong><br/><a href="/help/getting-started/aa-vs-cja/overview.md">概述</a> - <a href="/help/getting-started/aa-to-cja.md">演变</a> - <a href="/help/getting-started/aa-vs-cja/aa-data-in-cja.md">使用Adobe Analytics数据</a> - <a href="/help/getting-started/aa-vs-cja/cja-aa.md">功能支持</a> - <a href="/help/getting-started/aa-vs-cja/terminology.md">术语</a> - <a href="/help/getting-started/aa-vs-cja/data-processing-comparisons.md">数据处理</a>
+    </td>
+    <td>
+      <img src="./assets/connections.svg" width="35px"><br/>
+      <strong>连接</strong><br/><a href="/help/connections/overview.md">概述</a> - <a href="/help/connections/create-connection.md">创建</a> - <a href="/help/connections/manage-connections.md">管理</a> - <a href="/help/stitching/overview.md">拼接</a> - <a href="/help/connections/combined-dataset.md">合并事件数据集</a> - <a href="/help/connections/standard-lookups.md">标准查找</a>
+    </td>
+     <td>
+      <img src="./assets/dataviews.svg" width="35px"><br/>
+      <strong>数据视图</strong><br/><a href="/help/data-views/data-views.md">概述</a> - <a href="/help/data-views/create-dataview.md">创建或编辑</a> - <a href="/help/data-views/session-settings.md">会话设置</a> - <a href="/help/data-views/derived-fields/derived-fields.md">派生字段</a> - <a href="/help/data-views/component-reference.md">组件引用</a>
+    </td>
+
+</tr>
+  <tr style="border: 0;">
+    <td>
+      <img src="./assets/workspace.svg" width="35px"><br/>
+      <strong>工作区项目</strong><br/><a href="/help/analysis-workspace/home.md">Analysis Workspace</a> - <a href="/help/analysis-workspace/perform-basic-analysis.md">基本 </a> 和 <a href="/help/analysis-workspace/perform-adv-analysis.md">高级分析</a> - <a href="/help/analysis-workspace/build-workspace-project/freeform-overview.md">项目</a> - <a href="/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md">可视化图表</a> - <a href="/help/analysis-workspace/c-panels/freeform-panel.md">面板</a>
+    </td>
+    <td>
+      <img src="./assets/guided-analysis.svg" width="35px"><br/>
+      <strong>引导式分析</strong><br/><a href="/help/guided-analysis/overview.md">概述</a> - <a href="/help/guided-analysis/types/active.md">用户增长</a> - <a href="/help/guided-analysis/types/usage.md">趋势</a> - <a href="/help/guided-analysis/types/friction.md">漏斗</a> - <a href="/help/guided-analysis/types/release.md">影响</a> - <a href="/help/guided-analysis/industry-use-cases.md">行业用例</a>
+    </td>
+    <td>
+      <img src="./assets/share.svg" width="35px"><br/>
+      <strong>共享、导出、集成</strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">项目</a> - <a href="/help/mobile-app/home.md">Analytics功能板</a> - <a href="/help/report-builder/report-buider-overview.md">Report Builder</a>  - <a href="/help/integrations/overview.md">集成</a>
+    </td>
+  </tr>
+</table>
+
+## 其他资源
+
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td><strong>Customer Journey Analytics</strong><br/>
+<a href="https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics产品描述</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics(Customer Journey Analytics插件)产品描述</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">CUSTOMER JOURNEY ANALYTICSAPI</a>
+</td>
+<td><strong>数据摄取</strong><br/><a href="/help/data-ingestion/data-ingestion.md">概述</a> - <a href="/help/data-ingestion/analytics.md">分析</a> - <a href="/help/data-ingestion/aepwebsdk.md">Web SDK</a> - <a href="/help/data-ingestion/aepmobilesdk.md">移动SDK</a> - <a href="/help/data-ingestion/batch.md">批次</a> - <a href="/help/data-ingestion/streaming.md">流</a> - <a href="/help/data-ingestion/sources.md">源</a> - <a href="/help/data-ingestion/serverapi.md">服务器API</a>
+</td>
+</tr></table>
+
+
+<table style="table-layout:auto" class="tablelayout-is-fixed"><tbody><tr style="border: 0;"><td><img src="./assets/newsletter.png"></td><td>
+<b>了解最新动态、为社区贡献内容并提升您的Customer Journey Analytics体验！</b><br>访问Adobe Analytics社区，与其他从业人员讨论功能。 <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community">立即加入社区！</a></td></tr></tbody></table>
