@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 227e1ca7f9652730c849a03fcf4e87f1c9ba98d7
+source-git-commit: c13dfaa5367210f48e419a3516d30f2c1fd5c24f
 workflow-type: tm+mt
-source-wordcount: '2809'
-ht-degree: 89%
+source-wordcount: '2879'
+ht-degree: 87%
 
 ---
 
@@ -20,6 +20,8 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2024 年 1 月** | |
+| 从Adobe Analytics迁移时的新组件迁移信息 | 向添加了信息 [Adobe Analytics的演变](/help/getting-started/aa-to-cja.md) 引用了新的 [组件迁移](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html) 《Adobe Analytics管理指南》中记录的功能。 |
+| 阐明某些信息仅供管理员使用 | 添加了信息来声明“上次使用”和“用于”列，详见 [计算量度管理器](/help/components/calc-metrics/cm-workflow/cm-manager.md) 和 [筛选器管理器](/help/components/filters/manage-filters.md) 仅适用于系统管理员。 |
 | 导出数据集所需的权限 | 添加了说明 [所需的权限](/help/admin/cja-access-control.md) 将数据集导出到云目标。 |
 | 管理连接 | 已更新 [管理连接](../connections/manage-connections.md) 文章，基于客户反馈。 |
 | 派生字段 | 添加了函数摘要 [限制](/help/data-views/derived-fields/derived-fields.md#limitations) 有关如何确定 [运算符](/help/data-views/derived-fields/derived-fields.md#operators) 在函数中使用。 |

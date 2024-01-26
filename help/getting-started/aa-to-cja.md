@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '1394'
-ht-degree: 100%
+source-git-commit: e84010b9ea9e6385574e8b1a04f7eccbba3ebc90
+workflow-type: tm+mt
+source-wordcount: '1462'
+ht-degree: 95%
 
 ---
 
@@ -80,6 +80,12 @@ Adobe Analytics 客户可以使用 Analytics Source Connector 在 Adobe Experien
 * 机器人筛选
 * 流媒体测量
 * 直播或直播触发器
+
+### 5.将项目和组件从Adobe Analytics映射到Customer Journey Analytics
+
+将您的项目及其关联的组件从Adobe Analytics迁移到Customer Journey Analytics。
+
+在组织中的任何人开始迁移项目之前，请按照中的说明开始迁移项目 [将组件和项目从Adobe Analytics迁移到Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/component-migration.html)，第一个 [准备将组件和项目从Adobe Analytics迁移到Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html)
 
 ## 为重要差异做好准备
 
