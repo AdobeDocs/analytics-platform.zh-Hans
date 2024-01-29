@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: e84010b9ea9e6385574e8b1a04f7eccbba3ebc90
+source-git-commit: 37d9e8e84e1982d63f2173601d75f0b7fa552b73
 workflow-type: tm+mt
-source-wordcount: '1462'
-ht-degree: 95%
+source-wordcount: '1495'
+ht-degree: 93%
 
 ---
 
@@ -83,9 +83,17 @@ Adobe Analytics 客户可以使用 Analytics Source Connector 在 Adobe Experien
 
 ### 5.将项目和组件从Adobe Analytics映射到Customer Journey Analytics
 
-将您的项目及其关联的组件从Adobe Analytics迁移到Customer Journey Analytics。
+Adobe Analytics管理员可以将Adobe Analytics项目及其相关组件迁移到Customer Journey Analytics。
 
-在组织中的任何人开始迁移项目之前，请按照中的说明开始迁移项目 [将组件和项目从Adobe Analytics迁移到Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/component-migration.html)，第一个 [准备将组件和项目从Adobe Analytics迁移到Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html)
+迁移过程包括：
+
+* 在Customer Journey Analytics中重新创建Adobe Analytics项目。
+
+* 将Adobe Analytics报表包中的维度和量度映射到Customer Journey Analytics数据视图中的维度和量度。
+
+在开始迁移之前，请先执行以下操作 [准备将组件和项目从Adobe Analytics迁移到Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html).
+
+完成所有必要的准备工作后，您可以 [将组件和项目从Adobe Analytics迁移到Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/component-migration.html).
 
 ## 为重要差异做好准备
 
