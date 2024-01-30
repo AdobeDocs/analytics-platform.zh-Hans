@@ -5,9 +5,9 @@ title: 将Customer Journey Analytics报表导出到云端
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: b76f534a01326b911ffbf93f089d46c6fc860979
+source-git-commit: e16d071df04d91ec6627efd250515fb2d54515bb
 workflow-type: tm+mt
-source-wordcount: '1973'
+source-wordcount: '2182'
 ht-degree: 3%
 
 ---
@@ -73,8 +73,8 @@ ht-degree: 3%
    | 开始日期 | 计划导出应开始的日期和时间。 <p>仅当选择计划的导出频率时，此选项才可用。</p> |
    | 结束日期 | 计划导出过期的日期和时间。 计划导出在设置的日期和时间后不再运行。 <p>仅当选择计划的导出频率时，此选项才可用。</p> |
    | 文件格式 | 选择导出的数据应采用.csv还是.json格式。 |
-   | 帐户 | 选择要将数据发送到的云导出帐户。 <p>有关详细信息，请参阅 [配置云导出帐户](/help/components/exports/cloud-export-accounts.md).</p> |
-   | 位置名称 | 选择您希望发送导出数据的帐户位置。 <p>有关更多信息，请参阅 [配置云导出位置](/help/components/exports/cloud-export-locations.md).</p><p>您可以选择 [!UICONTROL **添加新位置**] 按钮来为现有导出帐户创建新位置。 |
+   | 帐户 | 选择要将数据发送到的云导出帐户。 <p>或者，如果您尚未配置要使用的云帐户，则可以配置新帐户：<ol><li>选择 [!UICONTROL **添加帐户**]，然后指定以下信息：<ul><li>[!UICONTROL **位置帐户名称**]：指定位置帐户的名称。 创建位置时将显示此名称 </li><li>[!UICONTROL **位置帐户说明**]：提供帐户的简短描述，以帮助将其与同一帐户类型的其他帐户区分开来。</li><li>[!UICONTROL **帐户类型**]：选择您要导出到的云帐户类型。 可用的帐户类型包括Amazon S3 Role ARN、Google Cloud Platform、Azure SAS、Azure RBAC、Snowflake和AEP Data Landing Zone。</li></ul><li>要完成帐户配置，请继续使用以下与对应的链接 [!UICONTROL **帐户类型**] 您已选择：<ul><li>[AEP数据登陆区](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)</li><li>[Amazon S3角色ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud平台](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-accounts.md#snowflake)</li></ul></ol> |
+   | 位置名称 | 选择您希望发送导出数据的帐户位置。<p>或者，如果您尚未在选定的帐户上配置要使用的位置，则可以配置一个新位置：<ol><li>选择 [!UICONTROL **添加位置**]，然后指定以下信息： <ul><li>[!UICONTROL **名称**]：位置的名称。</li><li>[!UICONTROL **描述**]：提供位置的简短描述，以帮助将其与帐户上的其他位置区分开来。</li><li>[!UICONTROL **位置帐户**]：选择要创建位置的帐户。</li></ul><li>要完成位置配置，请继续下面的链接，该链接与您在 [!UICONTROL **位置帐户**] 字段：<ul><li>[AEP数据登陆区](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone).</li><li>[Amazon S3角色ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud平台](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
 
    {style="table-layout:auto"}
 

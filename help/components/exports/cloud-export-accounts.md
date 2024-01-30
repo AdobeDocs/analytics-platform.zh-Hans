@@ -5,9 +5,9 @@ title: 配置云导出帐户
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: c60b48fa7bdc141e41a1df9ab9f9383cd2332713
+source-git-commit: e16d071df04d91ec6627efd250515fb2d54515bb
 workflow-type: tm+mt
-source-wordcount: '1733'
+source-wordcount: '1877'
 ht-degree: 3%
 
 ---
@@ -57,7 +57,11 @@ ht-degree: 3%
 >
 >将Customer Journey Analytics报表导出到Adobe Experience Platform数据登陆区时，请确保在7天内下载数据，然后从AEP数据登陆区中删除该数据。 7天后，数据将自动从AEP数据登陆区中删除。
 
-1. [开始创建云导出帐户](#begin-creating-a-cloud-export-account)，如上所述。
+1. 通过以下任一方式开始创建云导出帐户：
+
+   * 从如上所述的“导出”页面，在 [开始创建云导出帐户](#begin-creating-a-cloud-export-account)
+
+   * 时间 [从Analysis Workspace导出全部表](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. 选择&#x200B;[!UICONTROL **保存**]。
 
@@ -100,7 +104,11 @@ ht-degree: 3%
 
 ### Amazon S3 Role ARN
 
-1. [开始创建云导出帐户](#begin-creating-a-cloud-export-account)，如上所述。
+1. 通过以下任一方式开始创建云导出帐户：
+
+   * 从如上所述的“导出”页面，在 [开始创建云导出帐户](#begin-creating-a-cloud-export-account)
+
+   * 时间 [从Analysis Workspace导出全部表](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. 在 [!UICONTROL **帐户属性**] 的部分 [!UICONTROL **添加帐户**] 对话框，请指定以下信息：
 
@@ -124,7 +132,11 @@ ht-degree: 3%
 
 ### Google Cloud Platform
 
-1. [开始创建云导出帐户](#begin-creating-a-cloud-export-account)，如上所述。
+1. 通过以下任一方式开始创建云导出帐户：
+
+   * 从如上所述的“导出”页面，在 [开始创建云导出帐户](#begin-creating-a-cloud-export-account)
+
+   * 时间 [从Analysis Workspace导出全部表](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. 在 [!UICONTROL **帐户属性**] 的部分 [!UICONTROL **添加帐户**] 对话框，请指定以下信息：
 
@@ -148,7 +160,11 @@ ht-degree: 3%
 
 ### Azure SAS
 
-1. [开始创建云导出帐户](#begin-creating-a-cloud-export-account)，如上所述。
+1. 通过以下任一方式开始创建云导出帐户：
+
+   * 从如上所述的“导出”页面，在 [开始创建云导出帐户](#begin-creating-a-cloud-export-account)
+
+   * 时间 [从Analysis Workspace导出全部表](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. 在 [!UICONTROL **帐户属性**] 的部分 [!UICONTROL **添加帐户**] 对话框，请指定以下信息：
 
@@ -176,7 +192,11 @@ ht-degree: 3%
 
 ### Azure RBAC
 
-1. [开始创建云导出帐户](#begin-creating-a-cloud-export-account)，如上所述。
+1. 通过以下任一方式开始创建云导出帐户：
+
+   * 从如上所述的“导出”页面，在 [开始创建云导出帐户](#begin-creating-a-cloud-export-account)
+
+   * 时间 [从Analysis Workspace导出全部表](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. 在 [!UICONTROL **帐户属性**] 的部分 [!UICONTROL **添加帐户**] 对话框，请指定以下信息：
 
@@ -202,7 +222,11 @@ ht-degree: 3%
 
 ### Snowflake
 
-1. [开始创建云导出帐户](#begin-creating-a-cloud-export-account)，如上所述。
+1. 通过以下任一方式开始创建云导出帐户：
+
+   * 从如上所述的“导出”页面，在 [开始创建云导出帐户](#begin-creating-a-cloud-export-account)
+
+   * 时间 [从Analysis Workspace导出全部表](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. 在 [!UICONTROL **帐户属性**] 的部分 [!UICONTROL **添加帐户**] 对话框，请指定以下信息：
 

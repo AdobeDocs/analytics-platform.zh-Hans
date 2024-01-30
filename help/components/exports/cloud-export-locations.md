@@ -5,10 +5,10 @@ title: 配置云导出位置
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: e16d071df04d91ec6627efd250515fb2d54515bb
 workflow-type: tm+mt
-source-wordcount: '1477'
-ht-degree: 3%
+source-wordcount: '1635'
+ht-degree: 4%
 
 ---
 
@@ -38,11 +38,18 @@ ht-degree: 3%
 
    此时将显示“位置”对话框。
 
-1. 指定以下信息： |字段 | 函数 | ------------------- | [!UICONTROL **名称**] | 位置的名称。  | | [!UICONTROL **描述**] | 提供帐户的简短描述，以帮助将其与同一帐户类型的其他帐户区分开来。 | | [!UICONTROL **位置帐户**] | 选择要创建位置的帐户。 有关如何创建帐户的信息，请参阅 [配置云导出帐户](/help/components/exports/cloud-export-accounts.md). |
+1. 指定以下信息： |字段 | 函数 | ------------------- | [!UICONTROL **名称**] | 位置的名称。  | | [!UICONTROL **描述**] | 提供位置的简短描述，以帮助将其与帐户上的其他位置区分开来。 | | [!UICONTROL **位置帐户**] | 选择要创建位置的帐户。 有关如何创建帐户的信息，请参阅 [配置云导出帐户](/help/components/exports/cloud-export-accounts.md). |
 
 1. 在 [!UICONTROL **位置属性**] 部分，指定特定于您的位置帐户的帐户类型的信息。
 
    继续下面的部分，该部分与您在 [!UICONTROL **位置帐户**] 字段。
+
+   * [AEP 数据登陆区](#aep-data-landing-zone)
+   * [Amazon S3 Role ARN](#amazon-s3-role-arn)
+   * [Google Cloud Platform](#google-cloud-platform)
+   * [Azure SAS](#azure-sas)
+   * [Azure RBAC](#azure-rbac)
+   * [Snowflake](#snowflake)
 
 ### AEP 数据登陆区
 
@@ -50,7 +57,11 @@ ht-degree: 3%
 >
 >将Customer Journey Analytics报表导出到Adobe Experience Platform数据登陆区时，请确保在7天内下载数据，然后从AEP数据登陆区中删除该数据。 7天后，数据将自动从AEP数据登陆区中删除。
 
-1. [开始创建云导出位置](#begin-creating-a-cloud-export-location)，如上所述。
+1. 通过下列任一方式开始创建云导出位置：
+
+   * 从如上所述的“导出”页面，在 [开始创建云导出位置](#begin-creating-a-cloud-export-location)
+
+   * 时间 [从Analysis Workspace导出全部表](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. 在 [!UICONTROL **位置属性**] 的部分 [!UICONTROL **添加位置**] 对话框中，指定以下信息来配置Adobe Experience Platform数据登录区位置：
 
@@ -83,7 +94,11 @@ ht-degree: 3%
 
 ### Amazon S3 Role ARN
 
-1. [开始创建云导出位置](#begin-creating-a-cloud-export-location)，如上所述。
+1. 通过下列任一方式开始创建云导出位置：
+
+   * 从如上所述的“导出”页面，在 [开始创建云导出位置](#begin-creating-a-cloud-export-location)
+
+   * 时间 [从Analysis Workspace导出全部表](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. 在 [!UICONTROL **位置属性**] 的部分 [!UICONTROL **添加位置**] 对话框中，指定以下信息来配置Amazon S3 Role ARN位置：
 
@@ -102,7 +117,11 @@ ht-degree: 3%
 
 ### Google Cloud Platform
 
-1. [开始创建云导出位置](#begin-creating-a-cloud-export-location)，如上所述。
+1. 通过下列任一方式开始创建云导出位置：
+
+   * 从如上所述的“导出”页面，在 [开始创建云导出位置](#begin-creating-a-cloud-export-location)
+
+   * 时间 [从Analysis Workspace导出全部表](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. 在 [!UICONTROL **位置属性**] 的部分 [!UICONTROL **添加位置**] 对话框中，指定以下信息来配置Google Cloud Platform位置：
 
@@ -121,7 +140,11 @@ ht-degree: 3%
 
 ### Azure SAS
 
-1. [开始创建云导出位置](#begin-creating-a-cloud-export-location)，如上所述。
+1. 通过下列任一方式开始创建云导出位置：
+
+   * 从如上所述的“导出”页面，在 [开始创建云导出位置](#begin-creating-a-cloud-export-location)
+
+   * 时间 [从Analysis Workspace导出全部表](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. 在 [!UICONTROL **位置属性**] 的部分 [!UICONTROL **添加位置**] 对话框，请指定以下信息以配置Azure SAS位置：
 
@@ -138,7 +161,11 @@ ht-degree: 3%
 
 ### Azure RBAC
 
-1. [开始创建云导出位置](#begin-creating-a-cloud-export-location)，如上所述。
+1. 通过下列任一方式开始创建云导出位置：
+
+   * 从如上所述的“导出”页面，在 [开始创建云导出位置](#begin-creating-a-cloud-export-location)
+
+   * 时间 [从Analysis Workspace导出全部表](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. 在 [!UICONTROL **位置属性**] 的部分 [!UICONTROL **添加位置**] 对话框，请指定以下信息以配置Azure RBAC位置：
 
@@ -156,7 +183,11 @@ ht-degree: 3%
 
 ### Snowflake
 
-1. [开始创建云导出位置](#begin-creating-a-cloud-export-location)，如上所述。
+1. 通过下列任一方式开始创建云导出位置：
+
+   * 从如上所述的“导出”页面，在 [开始创建云导出位置](#begin-creating-a-cloud-export-location)
+
+   * 时间 [从Analysis Workspace导出全部表](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. 在 [!UICONTROL **位置属性**] 的部分 [!UICONTROL **添加位置**] 对话框中，指定以下信息来配置Snowflake位置：
 

@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: c13dfaa5367210f48e419a3516d30f2c1fd5c24f
+source-git-commit: 1587f98d0650d07a2f496c239d7b6bf69611535e
 workflow-type: tm+mt
-source-wordcount: '2879'
-ht-degree: 87%
+source-wordcount: '2951'
+ht-degree: 85%
 
 ---
 
@@ -20,6 +20,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2024 年 1 月** | |
+| 更新了在导出完整表时添加帐户和位置的文档 | 更新了文档，以反映在配置新帐户或位置时 [从Analysis Workspace导出全部表](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace).<p>新 [!UICONTROL **添加帐户**] 选项现在位于 [!UICONTROL **帐户**] 下拉菜单。 此 [!UICONTROL **添加位置**] 之前作为按钮提供的选项 [!UICONTROL **位置名称**] 现在，菜单本身中提供了下拉菜单。 |
 | 从Adobe Analytics迁移时的新组件迁移信息 | 向添加了信息 [Adobe Analytics的演变](/help/getting-started/aa-to-cja.md) 引用了新的 [组件迁移](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html) 《Adobe Analytics管理指南》中记录的功能。 |
 | 阐明某些信息仅供管理员使用 | 添加了信息来声明“上次使用”和“用于”列，详见 [计算量度管理器](/help/components/calc-metrics/cm-workflow/cm-manager.md) 和 [筛选器管理器](/help/components/filters/manage-filters.md) 仅适用于系统管理员。 |
 | 导出数据集所需的权限 | 添加了说明 [所需的权限](/help/admin/cja-access-control.md) 将数据集导出到云目标。 |
