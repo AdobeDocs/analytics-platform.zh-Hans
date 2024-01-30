@@ -5,9 +5,9 @@ keywords: 产品分析
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: 6f80a1aa4ec9142d75fe1abb2f268dc60c7dd245
+source-git-commit: a5c2003a593917bce67346279a033a6041aff959
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1302'
 ht-degree: 2%
 
 ---
@@ -24,14 +24,15 @@ Adobe Product Analytics使产品团队能够通过基于Customer Journey Analyti
 
 | 分析类型 | 视图类型 | 描述 |
 | --- | --- | --- |
-| [!UICONTROL 影响] | [版本](types/release.md) | 比较发布前和发布后各个相等时间段的性能。 |
-| [!UICONTROL 影响] | [首次使用](types/first-use.md) | 衡量首次使用功能对关键指标的影响。 |
 | [!UICONTROL 漏斗] | [摩擦](types/friction.md) | 比较步骤之间的转化率。 |
 | [!UICONTROL 漏斗] | [转化趋势](types/conversion-trends.md) | 跟踪转化率随时间发生的变化。 |
-| [!UICONTROL 用户增长] | [活动](types/active.md) | 确定新人、留住人员、回访人员或休眠人员。 |
-| [!UICONTROL 用户增长] | [净增长](types/net-growth.md) | 您是在获得用户还是在失去用户？ |
+| [!UICONTROL 影响] | [版本](types/release.md) | 比较发布前和发布后各个相等时间段的性能。 |
+| [!UICONTROL 影响] | [首次使用](types/first-use.md) | 衡量首次使用功能对关键指标的影响。 |
+| [!UICONTROL 维系] | [留存率](types/retention-rates.md) | 衡量用户的持续回访习惯。 |
 | [!UICONTROL 趋势] | [用法](types/usage.md) | 测量一段时间内用户参与的情况。 |
 | [!UICONTROL 趋势] | [频率](types/frequency.md) | 按使用频率测量参与度。 |
+| [!UICONTROL 用户增长] | [活动](types/active.md) | 确定新人、留住人员、回访人员或休眠人员。 |
+| [!UICONTROL 用户增长] | [净增长](types/net-growth.md) | 您是在获得用户还是在失去用户？ |
 
 {style="table-layout:auto"}
 
