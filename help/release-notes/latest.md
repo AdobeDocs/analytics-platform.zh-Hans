@@ -3,10 +3,10 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 90d91f07296f8c961d1b60ddbdc3d6b086958141
+source-git-commit: 1e024f7f84f96be446a2a922bd026bc70a6edf7e
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 74%
+source-wordcount: '439'
+ht-degree: 71%
 
 ---
 
@@ -20,12 +20,12 @@ ht-degree: 74%
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Adobe Product Analytics — 保留率** | 维系率是一种新的引导式分析，可显示在所需日期范围内用户初次参与后回访的百分比。 [了解详情](../guided-analysis/types/retention-rates.md) | 不适用 | 2024 年 1 月 8 日 |
-| **Adobe Product Analytics — 趋势线** | 趋势线是中提供的全新引导式分析 [使用情况](/help/guided-analysis/types/usage.md) 视图，这有助于更清晰地描述数据中的模式。 | 不适用 | 2024 年 1 月 17 日 |
-| **关键量度摘要可视化的更新** | 在使用关键量度摘要可视化时，根据您选择的“比较日期范围”选项是相对于主要日期范围还是固定日期，现在可自动更新比较日期范围。[了解详情](/help/analysis-workspace/visualizations/key-metric.md)。 | 不适用 | 2024 年 1 月 17 日 |
-| **Adobe Product Analytics — 用户流** | 用户流是一种新的引导式分析，允许您浏览各个用户事件流。 通过此分析，可找到体验模式并更好地讲述用户案例。 | 不适用 | 2024年2月7日 |
-| **Adobe Product Analytics — 查询边栏改进** | 在引导式分析中，一些组件设置现已包含在查询边栏中，从而提高可用性。 | 不适用 | 2024 年 1 月 31 日 |
 | **时间序列预测** | 预测是 Analysis Workspace 的一项新功能，用于以任何支持的时间粒度（每小时、每天、每周、每月和每年）预测标准量度或计算量度。 | 2024 年 1 月 31 日 | 2024 年 2 月 21 日 |
+| **关键量度摘要可视化的更新** | 在使用关键量度摘要可视化时，根据您选择的“比较日期范围”选项是相对于主要日期范围还是固定日期，现在可自动更新比较日期范围。[了解详情](/help/analysis-workspace/visualizations/key-metric.md)。 | 不适用 | 2024 年 1 月 17 日 |
+| **Adobe Product Analytics — 留存率分析** | 留存率是一种新的引导式分析，使您能够衡量用户的持续回访习惯。 [了解详情](../guided-analysis/types/retention-rates.md) | 不适用 | 2024 年 1 月 8 日 |
+| **Adobe Product Analytics — 趋势线叠加** | 趋势线是中可用的新叠加设置 [使用趋势](/help/guided-analysis/types/usage.md) 查看并帮助描绘数据中更清晰的模式。 | 不适用 | 2024 年 1 月 17 日 |
+| **Adobe Product Analytics — 查询边栏增强功能** | 在引导式分析中，左查询边栏现在包括查看类型和计为设置，这些设置以前在可视化设置中可用。 | 不适用 | 2024 年 1 月 31 日 |
+| **Adobe Product Analytics — 用户流分析** | 用户流是一种新的引导式分析，允许您浏览各个用户事件流，这可以帮助您找到体验模式并讲述更好的用户故事。 | 不适用 | 2024年2月7日 |
 
 {style="table-layout:auto"}
 
