@@ -3,10 +3,10 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: c22f2d81eddbf9ee2fb3600fd5b727fb838de740
+source-git-commit: 6ea1cf5c59dd527ba1bed966b994a3c966c899d4
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 65%
+source-wordcount: '445'
+ht-degree: 64%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 65%
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **时间序列预测** | [预测](../analysis-workspace/c-forecast/forecasting.md) 是一项新的Analysis Workspace功能，可针对任何受支持的时间粒度（每小时、每日、每周、每月和每年）预测标准或计算量度。 | 2024 年 1 月 31 日 | 2024 年 2 月 21 日 |
+| **时间序列预测** | [预测](../analysis-workspace/c-forecast/forecasting.md) 是Analysis Workspace的一项新功能，它通过任何受支持的时间粒度（每小时、每天、每周、每月和每年）为自由格式表和折线图预测标准量度或计算量度。 | 2024 年 1 月 31 日 | 2024 年 2 月 21 日 |
 | **关键量度摘要可视化的更新** | 在使用关键量度摘要可视化时，根据您选择的“比较日期范围”选项是相对于主要日期范围还是固定日期，现在可自动更新比较日期范围。[了解详情](/help/analysis-workspace/visualizations/key-metric.md)。 | 不适用 | 2024 年 1 月 17 日 |
 | **Adobe Product Analytics — 留存率分析** | 留存率是一种新的引导式分析，使您能够衡量用户的持续回访习惯。 [了解详情](../guided-analysis/types/retention-rates.md) | 不适用 | 2024 年 1 月 8 日 |
 | **Adobe Product Analytics — 趋势线叠加** | 趋势线是中可用的新叠加设置 [使用趋势](/help/guided-analysis/types/usage.md) 查看并帮助描绘数据中更清晰的模式。 | 不适用 | 2024 年 1 月 17 日 |
