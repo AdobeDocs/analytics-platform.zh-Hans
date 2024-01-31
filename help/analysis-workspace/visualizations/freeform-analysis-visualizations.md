@@ -5,10 +5,10 @@ title: 可视化图表概述
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: c22f2d81eddbf9ee2fb3600fd5b727fb838de740
 workflow-type: tm+mt
-source-wordcount: '1325'
-ht-degree: 81%
+source-wordcount: '1326'
+ht-degree: 80%
 
 ---
 
@@ -22,7 +22,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 
 | 可视化图表名称 | 描述 |
 | --- | --- | 
-| [面积图](/help/analysis-workspace/visualizations/area.md)<p>![区域图标](assets/Smock_GraphArea_18_N.svg)</p> | 与线形图相似，但线条下有彩色区域。当您有多个指标并且希望显示两个或更多指标相交的区域时，可使用面积图。 | 回答类似下面的问题： <ul><li> |
+| [面积图](/help/analysis-workspace/visualizations/area.md)<p>![区域图标](assets/Smock_GraphArea_18_N.svg)</p> | 与线形图相似，但线条下有彩色区域。当您有多个指标并且希望显示两个或更多指标相交的区域时，可使用面积图。 |
 | [条形图](/help/analysis-workspace/visualizations/bar.md) <p>![条形图示](assets/Smock_GraphBarVertical_18_N.svg)</p> | 显示一些垂直条，这些垂直条表示一个或多个指标中的各种值。 |
 | [项目符号图表](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![“项目符号”图标](assets/Smock_GraphBullet_18_N.svg)</p> | 显示您感兴趣的值与其他性能范围（目标）进行比较或衡量的结果。 |
 | [同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![“同类群组表”图标](assets/Smock_TextNumbered_18_N.svg)</p> | *`cohort`* 是指一组在特定期限内共享相同特性的人员。同类群组分析对于保留、流失或延迟分析非常有用。 |
@@ -80,9 +80,9 @@ Analysis Workspace 中提供了以下可视化图表类型：
 
 ## 设置 {#settings}
 
-每个可视化图表都有其自身的设置，您可以管理这些设置。要访问[!UICONTROL 可视化图表设置]，请单击[!UICONTROL 可视化图表设置]齿轮图标。
+每个可视化图表都有其自身的设置，您可以管理这些设置。要访问可视化图表设置，请选择设置图标 ![列设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg).
 
-![可视化图表设置显示下节中所述的设置选项。](assets/settings.png)
+<img src="./assets/viz-settings-line.png" alt="可视化设置" width="50%" />
 
 | 设置 | 描述 |
 | --- | --- |
@@ -94,8 +94,9 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | 限制最大项目数 | 允许您限制可视化图表显示的项目数量。 |
 | 将 Y 轴定位为 0 | 如果图表上绘制的所有值都远远大于零，则图表默认会将 y 轴底部设置为非零值。如果选中此框，y 轴将被强制设置为零（并将重新绘制图表）。 |
 | 标准化 | 要求所有指标按等比例计算。在所绘制指标的数量级差别很大时，此项非常有用。 |
-| 显示双轴 | 仅适用于具有两个指标的情况，可以在左（用于一个指标）、右（用于另一个指标）两边各有一个 y 轴。在所绘制指标的数量级差别很大时，此项非常有用。 |
+| 显示双轴 | 仅适用于具有两个指标的情况，可以在左（用于一个指标）、右（用于另一个指标）两边各有一个 y 轴。在所绘制量度的数量级差别很大时，此项非常有用。 |
 | 显示异常 | 通过显示异常检测来增强线形图和自由格式表。线形可视化图表中的异常检测包括预期值（虚线）和预期范围（阴影带）。 |
+| 显示预测 | 通过显示预测值来增强线形图和自由格式表。 |
 
 ## 图例 {#legend}
 

@@ -4,10 +4,10 @@ title: 折线图
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 30f3e24533ab0e03ee7f819c7f94592776603764
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 84%
+source-wordcount: '524'
+ht-degree: 81%
 
 ---
 
@@ -21,13 +21,14 @@ ht-degree: 84%
 
 ![折线图可视化图表](assets/line-viz.png)
 
-单击折线图可视化图表右上角的齿轮图标，可访问&#x200B;[**可视化设置**](freeform-analysis-visualizations.md)。设置分为以下几类：
+选择设置图标 ![设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) 要访问的折线图可视化图表顶栏中的 [“可视化”设置](freeform-analysis-visualizations.md) 可用。 设置分为以下几类：
+
+<img src="./assets/viz-settings-line.png" alt="可视化设置" width="50%" />
 
 * **常规**：各种可视化图表类型中通用的设置
 * **轴**：影响折线图可视化图表的 x 轴或 y 轴的设置
 * **叠加图**：用于向在折线图可视化图表中显示的系列添加其他上下文的选项。
 
-![可视化设置](assets/viz-settings-modal.png)
 
 ## 更改粒度
 

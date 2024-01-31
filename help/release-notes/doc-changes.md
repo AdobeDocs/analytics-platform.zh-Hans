@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 1587f98d0650d07a2f496c239d7b6bf69611535e
+source-git-commit: c22f2d81eddbf9ee2fb3600fd5b727fb838de740
 workflow-type: tm+mt
-source-wordcount: '2951'
-ht-degree: 85%
+source-wordcount: '2984'
+ht-degree: 84%
 
 ---
 
@@ -20,9 +20,10 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2024 年 1 月** | |
+| 预测 | 已添加有关以下内容的文档： [预测](../analysis-workspace/c-forecast/forecasting.md)，新增的Analysis Workspace功能可使用任何受支持的时间粒度（每小时、每天、每周、每月和每年）为自由格式表和链接图预测标准或计算量度。 |
 | 更新了在导出完整表时添加帐户和位置的文档 | 更新了文档，以反映在配置新帐户或位置时 [从Analysis Workspace导出全部表](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace).<p>新 [!UICONTROL **添加帐户**] 选项现在位于 [!UICONTROL **帐户**] 下拉菜单。 此 [!UICONTROL **添加位置**] 之前作为按钮提供的选项 [!UICONTROL **位置名称**] 现在，菜单本身中提供了下拉菜单。 |
 | 从Adobe Analytics迁移时的新组件迁移信息 | 向添加了信息 [Adobe Analytics的演变](/help/getting-started/aa-to-cja.md) 引用了新的 [组件迁移](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html) 《Adobe Analytics管理指南》中记录的功能。 |
-| 阐明某些信息仅供管理员使用 | 添加了信息来声明“上次使用”和“用于”列，详见 [计算量度管理器](/help/components/calc-metrics/cm-workflow/cm-manager.md) 和 [筛选器管理器](/help/components/filters/manage-filters.md) 仅适用于系统管理员。 |
+| 阐明某些信息仅可供管理员使用 | 添加了信息来声明“上次使用”和“用于”列，详见 [计算量度管理器](/help/components/calc-metrics/cm-workflow/cm-manager.md) 和 [筛选器管理器](/help/components/filters/manage-filters.md) 仅适用于系统管理员。 |
 | 导出数据集所需的权限 | 添加了说明 [所需的权限](/help/admin/cja-access-control.md) 将数据集导出到云目标。 |
 | 管理连接 | 已更新 [管理连接](../connections/manage-connections.md) 文章，基于客户反馈。 |
 | 派生字段 | 添加了函数摘要 [限制](/help/data-views/derived-fields/derived-fields.md#limitations) 有关如何确定 [运算符](/help/data-views/derived-fields/derived-fields.md#operators) 在函数中使用。 |
@@ -41,7 +42,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 对异常检测文档的更新 | 异常检测文档以前位于有关Virtual Analyst的部分中。 进行了以下更改： <ul><li>术语 Virtual Analyst 已从文档中删除。</li><li>关于[异常检测](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md)的部分已直接移至 Analysis Workspace 部分下方。</li></ul> |
 | **2023 年 10 月** | |
 | 使用派生字段设置目标/目标 | 已添加 [用例](../use-cases/goals-using-derived-fields.md) 本文说明了如何使用派生字段设置目标/指标并报告这些目标/指标。 |
-| 将整个表导出到云 | 添加了有关将包含数百万个Workspace行的完整表导出到云目标的文档。 <p>导出全表可一次性或按计划投放在 Workspace 中设计的数据表，其中支持最多五个细分、五个量度、过滤器和计算量度，所有这些都在一个连接在一起的表中。它从 Adobe Analytics 中的 Data Warehouse 报告演化而来，具有许多当今在 Data Warehouse 中不提供但经常有人要求提供的新功能。</p><p>有关详细信息，请参阅[将 Customer Journey Analytics 报告导出到云](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html)。 | 2023 年 10 月 4 日 |
+| 将整个表导出到云 | 添加了有关将包含数百万个Workspace行的完整表导出到云目标的文档。 <p>导出全表可一次性或按计划投放在 Workspace 中设计的数据表，其中支持最多五个细分、五个量度、过滤器和计算量度，所有这些都在一个连接在一起的表中。它从 Adobe Analytics 中的 Data Warehouse 报告演化而来，具有许多当今在 Data Warehouse 中不提供但经常有人要求提供的新功能。</p><p>有关详细信息，请参阅[将 Customer Journey Analytics 报告导出到云](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html)。 |
 | 报告活动管理器 | 添加了有关报告活动管理器的文档。 <p>通过报告活动管理器，可查看组织中每个连接的报告容量。它使管理员能够详细了解报告消耗，以便轻松地诊断和修复在报告高峰期出现的容量问题。</p> <p>添加了以下新文章：<ul><li>[报表活动管理器概述](/help/reporting-activity-manager/reporting-activity-overview.md)</li><li>[在报告活动管理器中查看报告活动](/help/reporting-activity-manager/reporting-activity.md)</li><li>[在报告活动管理器中取消请求](/help/reporting-activity-manager/reporting-activity-cancel-requests.md)</ul> |
 | 管理页面上的新列 | 记录新列，这些列现在位于 [计算量度管理器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html) 和 [筛选器管理器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html). |
 | 与 Adobe Analytics 进行比较 | 添加了 [“概述”页面](../getting-started/aa-vs-cja/overview.md) 作为比较和了解Customer Journey Analytics与Adobe Analytics之间差异的简介。 |
