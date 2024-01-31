@@ -5,18 +5,16 @@ feature: Guided Analysis
 keywords: 产品分析
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: c5cc2a696ac1a5619b174163b2b6b87116e4f778
+source-git-commit: 715d6f33b3cd3f1188e0bd3e6aa3785346c4c302
 workflow-type: tm+mt
 source-wordcount: '889'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
 # 维系率
 
-{{release-limited-testing}}
-
-此 **[!UICONTROL 留存率]** 视图显示在所需日期范围内完成初始参与后返回的用户百分比。 水平轴表示自用户初始参与后经过的天数。 垂直轴表示再次参与的用户百分比。
+此 **[!UICONTROL 留存率]** 视图显示在所需日期范围内完成初始参与后返回的用户百分比。 横轴表示用户初次参与后经历的天数。纵轴表示再次参与的用户所占的百分比。
 
 此分析根据两个重要事件计算用户数：
 
