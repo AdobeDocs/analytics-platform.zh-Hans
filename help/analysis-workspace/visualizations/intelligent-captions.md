@@ -4,10 +4,10 @@ title: 智能题注
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 02e98b5ec1932e822c8d3805948d390eccc2b750
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 1%
+source-wordcount: '442'
+ht-degree: 2%
 
 ---
 
@@ -29,6 +29,10 @@ ht-degree: 1%
 ![显示“产品查看趋势”的智能字幕的“启动分析”窗口。 ](assets/intell-caps-1.png)
 
 自然语言洞察正在生成。
+
+请记住以下事项
+
+* 要成功生成字幕，至少需要3个数据点。 否则，您可能会收到显示“数据不足，无法分析”的错误。
 
 * 每次在支持可视化的表格中更改基础选定数据时，都会生成字幕。
 
