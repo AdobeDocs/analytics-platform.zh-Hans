@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 7fdaf5868fd1aacbfec526749729be1fb5486cf7
+source-git-commit: 85a921cf97efd33cc6264ce97c871f965f376a5a
 workflow-type: tm+mt
-source-wordcount: '2984'
-ht-degree: 84%
+source-wordcount: '3005'
+ht-degree: 83%
 
 ---
 
@@ -19,11 +19,13 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 
 | 功能 | 描述 |
 | --- | --- |
+| **2024 年 2 月** | |
+| 跳过的记录详细信息 | 添加了有关“连接”中跳过的记录详细信息功能的文档。 请参阅 [连接详细信息](../connections/manage-connections.md#connection-details) 以了解更多信息。 |
 | **2024 年 1 月** | |
 | 预测 | 已添加有关以下内容的文档： [预测](../analysis-workspace/c-forecast/forecasting.md)，新增的Analysis Workspace功能可使用任何受支持的时间粒度（每小时、每天、每周、每月和每年）为自由格式表和折线图预测标准或计算量度。 |
 | 更新了在导出完整表时添加帐户和位置的文档 | 更新了文档，以反映在配置新帐户或位置时 [从Analysis Workspace导出全部表](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace).<p>新 [!UICONTROL **添加帐户**] 选项现在位于 [!UICONTROL **帐户**] 下拉菜单。 此 [!UICONTROL **添加位置**] 之前作为按钮提供的选项 [!UICONTROL **位置名称**] 现在，菜单本身中提供了下拉菜单。 |
 | 从Adobe Analytics迁移时的新组件迁移信息 | 向添加了信息 [Adobe Analytics的演变](/help/getting-started/aa-to-cja.md) 引用了新的 [组件迁移](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html) 《Adobe Analytics管理指南》中记录的功能。 |
-| 阐明某些信息仅可供管理员使用 | 添加了信息来声明“上次使用”和“用于”列，详见 [计算量度管理器](/help/components/calc-metrics/cm-workflow/cm-manager.md) 和 [筛选器管理器](/help/components/filters/manage-filters.md) 仅适用于系统管理员。 |
+| 阐明了仅管理员有某些信息可用 | 添加了信息来声明“上次使用”和“用于”列，详见 [计算量度管理器](/help/components/calc-metrics/cm-workflow/cm-manager.md) 和 [筛选器管理器](/help/components/filters/manage-filters.md) 仅适用于系统管理员。 |
 | 导出数据集所需的权限 | 添加了说明 [所需的权限](/help/admin/cja-access-control.md) 将数据集导出到云目标。 |
 | 管理连接 | 已更新 [管理连接](../connections/manage-connections.md) 文章，基于客户反馈。 |
 | 派生字段 | 添加了函数摘要 [限制](/help/data-views/derived-fields/derived-fields.md#limitations) 有关如何确定 [运算符](/help/data-views/derived-fields/derived-fields.md#operators) 在函数中使用。 |
