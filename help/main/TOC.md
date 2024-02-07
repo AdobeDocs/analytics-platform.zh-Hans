@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: c22f2d81eddbf9ee2fb3600fd5b727fb838de740
+source-git-commit: aa0a6715c216730e0768cfa870ea75f315455101
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1056'
 ht-degree: 78%
 
 ---
@@ -191,12 +191,6 @@ ht-degree: 78%
 
 + 引导式分析 {#guided-analysis}
    + [概述](../guided-analysis/overview.md)
-   + 用户增长 {#user-growth}
-      + [活动视图](../guided-analysis/types/active.md)
-      + [净增长视图](../guided-analysis/types/net-growth.md)
-   + 趋势 {#trends}
-      + [使用情况视图](../guided-analysis/types/usage.md)
-      + [频率视图](../guided-analysis/types/frequency.md)
    + 漏斗 {#funnel}
       + [摩擦视图](../guided-analysis/types/friction.md)
       + [转化趋势视图](../guided-analysis/types/conversion-trends.md)
@@ -205,6 +199,14 @@ ht-degree: 78%
       + [首次使用视图](../guided-analysis/types/first-use.md)
    + 维系 {#retention}
       + [维系率](../guided-analysis/types/retention-rates.md)
+   + 趋势 {#trends}
+      + [使用情况视图](../guided-analysis/types/usage.md)
+      + [频率视图](../guided-analysis/types/frequency.md)
+   + 用户增长 {#user-growth}
+      + [活动视图](../guided-analysis/types/active.md)
+      + [净增长视图](../guided-analysis/types/net-growth.md)
+   + 用户流 {#streams}
+      + [时间表](../guided-analysis/types/timeline.md)
    + [行业用例](../guided-analysis/industry-use-cases.md)
    + [常见问题解答](../guided-analysis/faq.md)
 
