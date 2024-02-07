@@ -4,16 +4,16 @@ description: 浏览会话活动中的模式。
 feature: Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: 5cd54973b08285badbedce273ac28371158f194c
+source-git-commit: ecdbe1b68aa0824bd9db4acefd3ef9059d9ac927
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '390'
 ht-degree: 2%
 
 ---
 
 # [!UICONTROL 时间线] 视图
 
-此 **[!UICONTROL 时间线]** 视图允许您分析各个会话以确定行为模式。 右边栏允许您选择要分析的人员ID。 中心区域显示人员的时间、属性值和持续时间。
+此 **[!UICONTROL 时间线]** 视图允许您分析各个会话以确定行为模式。 右边栏允许您选择要分析的人员ID。 中心区域显示人员的时间、选定的属性值和每个事件的持续时间。
 
 此分析要求您添加 **[!UICONTROL 人员ID]** 标准组件到 [数据视图](/help/data-views/component-reference.md#optional). 如果您没有 [!UICONTROL 人员ID] 组件添加到数据视图，将显示以下消息：
 
@@ -47,5 +47,5 @@ ht-degree: 2%
 
 分析所需的日期范围。 此设置包含两个组件：
 
-* **[!UICONTROL 间隔]**：要查看趋势数据所依据的日期粒度。 此设置不会影响非趋势视图，例如频率。
+* **[!UICONTROL 间隔]**：要查看趋势数据所依据的日期粒度。 此设置不会影响非趋势视图，例如时间线。
 * **[!UICONTROL 日期]**：开始日期和结束日期。 您可以为方便起见，使用滚动日期范围预设和以前保存的自定义范围，也可以使用日历选择器来选择固定日期范围。
