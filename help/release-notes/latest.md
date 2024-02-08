@@ -21,12 +21,12 @@ ht-degree: 94%
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **跳过的记录详细信息** | 您可以检索有关在设置连接时跳过记录原因的详细信息。 请参阅 [连接详细信息](../connections/manage-connections.md#connection-details) 以了解更多信息。 | 2024年2月5日 | 2024年2月5日 |
-| **时间序列预测** | [预测](../analysis-workspace/c-forecast/forecasting.md) 是 Analysis Workspace 的一项新功能，用于针对自由格式表和折线图以任何支持的时间粒度（每小时、每天、每周、每月和每年）预测标准量度或计算量度。 | 2024 年 1 月 31 日 | 2024 年 2 月 21 日 |
+| **时间序列预测** | [预测](../analysis-workspace/c-forecast/forecasting.md)是 Analysis Workspace 的一项新功能，它可按任何支持的时间粒度（每小时、每天、每周、每月和每年）为自由格式表和折线图预测标准量度或计算量度。 | 2024 年 1 月 31 日 | 2024 年 2 月 21 日 |
 | **关键量度摘要可视化的更新** | 在使用关键量度摘要可视化时，根据您选择的“比较日期范围”选项是相对于主要日期范围还是固定日期，现在可自动更新比较日期范围。[了解详情](/help/analysis-workspace/visualizations/key-metric.md)。 | 不适用 | 2024 年 1 月 17 日 |
-| **Adobe Product Analytics - 留存率分析** | 留存率是一种新的引导式分析，可让您衡量用户的持续返回习惯。[了解详情](../guided-analysis/types/retention-rates.md) | 不适用 | 2024 年 1 月 8 日 |
-| **Adobe Product Analytics - 趋势线叠加** | 趋势线是[使用情况趋势](/help/guided-analysis/types/usage.md)视图中提供的新叠加设置，有助于更清晰地描绘数据中的模式。 | 不适用 | 2024 年 1 月 17 日 |
-| **Adobe Product Analytics - 查询边栏增强功能** | 在引导式分析中，左侧查询栏现在包括以前在“可视化设置”中提供的“视图类型”和“计为”设置。 | 不适用 | 2024 年 1 月 31 日 |
-| **Adobe Product Analytics - 用户流分析** | 用户流是一种新的引导式分析，可让您探索单个用户事件流，从而帮助找到体验模式并更好地讲述用户案例。 | 不适用 | 2024 年 2 月 7 日 |
+| **Adobe Product Analytics - 留存率分析** | 留存率是一种新的引导式分析，通过它可衡量用户的持续回访习惯。[了解详情](../guided-analysis/types/retention-rates.md) | 不适用 | 2024 年 1 月 8 日 |
+| **Adobe Product Analytics - 趋势线叠加** | 趋势线是可在[使用情况趋势](/help/guided-analysis/types/usage.md)视图中找到的一项新的叠加设置，它有助于更清晰地描绘数据中的模式。 | 不适用 | 2024 年 1 月 17 日 |
+| **Adobe Product Analytics - 查询边栏增强** | 在引导式分析中，左侧查询边栏现在包括以前可在“可视化设置”中找到的“视图类型”和“计为”设置。 | 不适用 | 2024 年 1 月 31 日 |
+| **Adobe Product Analytics - 用户流分析** | 用户流是一种新的引导式分析，通过它可探索个别用户事件流，这样可帮助您发现体验中的各种模式并更好地讲述用户案例。 | 不适用 | 2024 年 2 月 7 日 |
 
 {style="table-layout:auto"}
 
