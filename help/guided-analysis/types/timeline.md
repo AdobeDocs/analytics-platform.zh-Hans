@@ -1,47 +1,50 @@
 ---
 title: 时间线视图
-description: 浏览会话活动中的模式。
+description: 探索体验模式并讲述更好的用户故事。
 feature: Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: ecdbe1b68aa0824bd9db4acefd3ef9059d9ac927
+source-git-commit: 2836582b13ae9aa971b521db7ed1c54805eb0e94
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 2%
+source-wordcount: '536'
+ht-degree: 1%
 
 ---
 
 # [!UICONTROL 时间线] 视图
 
-此 **[!UICONTROL 时间线]** 视图允许您分析各个会话以确定行为模式。 右边栏允许您选择要分析的人员ID。 中心区域显示人员的时间、选定的属性值和每个事件的持续时间。
+此 **[!UICONTROL 时间线]** 视图允许您观察一段时间内用户级别的会话事件，以查找体验模式并讲述更好的用户故事。 左边栏允许您过滤到要流式处理的属性值，右边栏允许您选择要分析的人员ID。 中心区域按会话显示流，包括时间戳、属性值和持续时间。 请注意，持续时间不可用于给定会话中的最后一个事件。
 
-此分析要求您添加 **[!UICONTROL 人员ID]** 标准组件到 [数据视图](/help/data-views/component-reference.md#optional). 如果您没有 [!UICONTROL 人员ID] 组件添加到数据视图，将显示以下消息：
+>[!NOTE]
+>
+>时间轴视图要求 **[!UICONTROL 人员ID]** 标准组件在以下位置提供： [数据视图](/help/data-views/component-reference.md#optional). 在数据视图中包含人员ID由您的Adobe Analytics数据管理员进行管理，从而使组织能够完全控制谁可以访问此数据。 如果数据视图没有 [!UICONTROL 人员ID] 组件添加后，会显示以下消息：
 
-> 此分析需要PersonID属性。请将PersonID添加到数据视图。
+* **管理员**：此分析需要PersonID属性。 请将PersonID添加到数据视图。
+* **非管理员**：此分析需要PersonID属性。 请联系您的Adobe Analytics管理员。
 
 ## 用例
 
 此视图类型的用例包括：
 
-* **摩擦探究**：如果您发现 [摩擦](friction.md) 视图，您可以使用此视图调查该下降的潜在原因。
-* **错误行为**：如果用户在您的产品中遇到错误，您可以探索用户在看到该错误之前或之后做什么。
-* **数据收集验证**：数据管理员可以筛选此视图以隔离自己。 此视图提供了一种可靠的方法，可确保贵组织的实施按预期工作。
+* **摩擦探究**：如果您发现 [摩擦](friction.md) 视图中，您可以创建这些用户的区段并在此视图中应用该区段来调查潜在原因。
+* **错误行为**：如果用户遇到产品错误，您可以探索用户在看到该错误之前或之后做了什么。
+* **数据收集验证**：数据管理员可将此视图筛选为其自己的人员ID，并使用它验证贵组织的实施是否按预期工作。
 
 ## 查询边栏
 
 利用查询边栏，可配置以下组件：
 
-* **[!UICONTROL 属性]**：要查看其值的属性。 中心的会话分析显示此处所选属性的值。 您还可以按选定的属性过滤数据。 筛选器的有效运算符包括 [!UICONTROL 等于]， [!UICONTROL 不等于]， [!UICONTROL 开头为]， [!UICONTROL 结束于]， [!UICONTROL 包含]， [!UICONTROL 不包含]， [!UICONTROL 存在]、和 [!UICONTROL 不存在].
-* **[!UICONTROL 区段]**：要测量的区段。 所选区段会过滤您的数据，以仅关注符合您的区段标准的个人。 此视图支持一个区段。
+* **[!UICONTROL 属性]**：要查看其流式处理值的属性。 中心流显示选定属性的值。 您还可以应用过滤器来缩小流范围，以包含更多关联数据。 筛选器的有效运算符包括 [!UICONTROL 等于]， [!UICONTROL 不等于]， [!UICONTROL 开头为]， [!UICONTROL 结束于]， [!UICONTROL 包含]， [!UICONTROL 不包含]， [!UICONTROL 存在]、和 [!UICONTROL 不存在].
+* **[!UICONTROL 区段]**：要分析的区段。 所选区段会过滤您的数据，以仅关注符合您的区段标准的个人。 如果您希望将查看范围缩小到特定人员ID，则可以在此处筛选到该人员ID。 此视图支持一个区段。
 
 ## 图表设置
 
 此 [!UICONTROL 时间线] 视图提供了以下图表设置，可在图表上方的菜单中调整这些设置：
 
 * **[!UICONTROL 显示为]**：显示所需的属性值。
-   * [!UICONTROL 显示所有]
-   * [!UICONTROL 突出显示]
-   * [!UICONTROL 仅查看]
+   * [!UICONTROL 显示全部]：显示会话中的所有属性值。
+   * [!UICONTROL 突出显示]：以可视方式突出显示会话中匹配查询筛选器的属性值。
+   * [!UICONTROL 仅查看]：仅显示与查询过滤器匹配的会话中的属性值。
 
 ## 日期范围
 
