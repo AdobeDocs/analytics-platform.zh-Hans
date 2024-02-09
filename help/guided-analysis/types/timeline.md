@@ -4,9 +4,9 @@ description: 探索体验模式并讲述更好的用户故事。
 feature: Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: 2836582b13ae9aa971b521db7ed1c54805eb0e94
+source-git-commit: d7e1092e1b2b4e9decd8d601c4b6415b13f1e02a
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '546'
 ht-degree: 1%
 
 ---
@@ -17,10 +17,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->时间轴视图要求 **[!UICONTROL 人员ID]** 标准组件在以下位置提供： [数据视图](/help/data-views/component-reference.md#optional). 在数据视图中包含人员ID由您的Adobe Analytics数据管理员进行管理，从而使组织能够完全控制谁可以访问此数据。 如果数据视图没有 [!UICONTROL 人员ID] 组件添加后，会显示以下消息：
+>时间轴视图要求 **[!UICONTROL 人员ID]** 标准组件在以下位置提供： [数据视图](/help/data-views/component-reference.md#optional). 在数据视图中包含人员ID由您的Adobe Analytics数据管理员进行管理，从而使组织能够完全控制谁可以访问此数据。
 
-* **管理员**：此分析需要PersonID属性。 请将PersonID添加到数据视图。
-* **非管理员**：此分析需要PersonID属性。 请联系您的Adobe Analytics管理员。
+如果数据视图没有 [!UICONTROL 人员ID] 组件添加后，会显示以下消息：
+* **管理员**：此分析需要PersonID属性。 请向数据视图添加人员ID。
+* **非管理员**：此分析需要PersonID属性。 请与您的Customer Journey Analytics管理员合作，将人员ID添加到数据视图。
 
 ## 用例
 
