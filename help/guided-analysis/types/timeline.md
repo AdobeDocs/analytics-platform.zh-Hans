@@ -4,24 +4,27 @@ description: 探索体验模式并讲述更好的用户故事。
 feature: Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: d7e1092e1b2b4e9decd8d601c4b6415b13f1e02a
+source-git-commit: fef60995e9241eaad99f6f536b1f329757ea0830
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '540'
 ht-degree: 1%
 
 ---
 
 # [!UICONTROL 时间线] 视图
 
-此 **[!UICONTROL 时间线]** 视图允许您观察一段时间内用户级别的会话事件，以查找体验模式并讲述更好的用户故事。 左边栏允许您过滤到要流式处理的属性值，右边栏允许您选择要分析的人员ID。 中心区域按会话显示流，包括时间戳、属性值和持续时间。 请注意，持续时间不可用于给定会话中的最后一个事件。
+此 **[!UICONTROL 时间线]** 视图允许您观察一段时间内用户级别的会话事件，以找到体验模式并讲述更好的用户故事。 左边栏允许您过滤到要流式处理的属性值。 右边栏允许您选择要分析的人员ID。 中心区域按会话显示流，包括时间戳、属性值和持续时间。 持续时间不可用于给定会话中的最后一个事件。
 
 >[!NOTE]
 >
 >时间轴视图要求 **[!UICONTROL 人员ID]** 标准组件在以下位置提供： [数据视图](/help/data-views/component-reference.md#optional). 在数据视图中包含人员ID由您的Adobe Analytics数据管理员进行管理，从而使组织能够完全控制谁可以访问此数据。
 
 如果数据视图没有 [!UICONTROL 人员ID] 组件添加后，会显示以下消息：
-* **管理员**：此分析需要PersonID属性。 请向数据视图添加人员ID。
-* **非管理员**：此分析需要PersonID属性。 请与您的Customer Journey Analytics管理员合作，将人员ID添加到数据视图。
+
+* **管理员**： *此分析需要PersonID属性。 请向数据视图添加人员ID。*
+* **非管理员**： *此分析需要PersonID属性。 请与您的Customer Journey Analytics管理员合作，将人员ID添加到数据视图。*
+
+![时间轴屏幕截图](../assets/timeline.png)
 
 ## 用例
 
@@ -29,14 +32,14 @@ ht-degree: 1%
 
 * **摩擦探究**：如果您发现 [摩擦](friction.md) 视图中，您可以创建这些用户的区段并在此视图中应用该区段来调查潜在原因。
 * **错误行为**：如果用户遇到产品错误，您可以探索用户在看到该错误之前或之后做了什么。
-* **数据收集验证**：数据管理员可将此视图筛选为其自己的人员ID，并使用它验证贵组织的实施是否按预期工作。
+* **数据收集验证**：数据管理员可将此视图筛选为其自己的人员ID，以验证其组织的实施是否按预期运行。
 
 ## 查询边栏
 
 利用查询边栏，可配置以下组件：
 
-* **[!UICONTROL 属性]**：要查看其流式处理值的属性。 中心流显示选定属性的值。 您还可以应用过滤器来缩小流范围，以包含更多关联数据。 筛选器的有效运算符包括 [!UICONTROL 等于]， [!UICONTROL 不等于]， [!UICONTROL 开头为]， [!UICONTROL 结束于]， [!UICONTROL 包含]， [!UICONTROL 不包含]， [!UICONTROL 存在]、和 [!UICONTROL 不存在].
-* **[!UICONTROL 区段]**：要分析的区段。 所选区段会过滤您的数据，以仅关注符合您的区段标准的个人。 如果您希望将查看范围缩小到特定人员ID，则可以在此处筛选到该人员ID。 此视图支持一个区段。
+* **[!UICONTROL 属性]**：要查看其流式处理值的属性。 中心流显示选定属性的值。 您还可以应用过滤器来将流缩小到更相关的数据。 筛选器的有效运算符包括 [!UICONTROL 等于]， [!UICONTROL 不等于]， [!UICONTROL 开头为]， [!UICONTROL 结束于]， [!UICONTROL 包含]， [!UICONTROL 不包含]， [!UICONTROL 存在]、和 [!UICONTROL 不存在].
+* **[!UICONTROL 区段]**：要分析的区段。 所选区段会过滤您的数据，以仅关注符合您的区段标准的个人。 如果要将视图缩小到特定人员ID，则可以在此处筛选到该人员ID。 此视图支持一个区段。
 
 ## 图表设置
 
