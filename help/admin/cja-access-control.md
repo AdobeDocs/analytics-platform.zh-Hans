@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 6ea1cf5c59dd527ba1bed966b994a3c966c899d4
+source-git-commit: 4f9878372f05da86b08449eeb17efb79b7432341
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 58%
+source-wordcount: '1173'
+ht-degree: 57%
 
 ---
 
@@ -41,6 +41,7 @@ Customer Journey Analytics由三个访问级别或三个角色管理：产品管
 * 更新和删除项目、过滤器、计算量度、受众、批注或其他用户创建的过滤器
 * 将工作区项目共享给所有用户
 * 在中管理报告活动 [报告活动管理器](/help/reporting-activity-manager/reporting-activity-overview.md)
+* [导出全部表](/help/analysis-workspace/export/export-cloud.md) 来自Analysis Workspace
 
 ### 产品管理员其他权限
 

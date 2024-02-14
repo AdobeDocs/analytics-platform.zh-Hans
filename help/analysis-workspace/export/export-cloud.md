@@ -5,9 +5,9 @@ title: 将Customer Journey Analytics报表导出到云端
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: e16d071df04d91ec6627efd250515fb2d54515bb
+source-git-commit: 4f9878372f05da86b08449eeb17efb79b7432341
 workflow-type: tm+mt
-source-wordcount: '2182'
+source-wordcount: '2210'
 ht-degree: 3%
 
 ---
@@ -147,6 +147,11 @@ ht-degree: 3%
 * **环境：** 管理员应确保IP地址列在 [Customer Journey Analytics使用的IP地址](/help/admin/ip-addresses.md) 防火墙允许列表中包含。
 
 * **权限：** 在Adobe Admin Console中，必须为用户分配一个产品配置文件，该配置文件具有 [!UICONTROL **完整表导出**] 为导出完整表而为其分配的权限。 有关在Admin Console中为产品配置文件分配权限的信息，请参阅 [Admin Console中的Customer Journey Analytics权限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html?lang=en#customer-journey-analytics-permissions-in-admin-console) 在 [Customer Journey Analytics访问控制](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
+
+  >[!NOTE]
+  >
+  >  分配了以下内容的用户： [产品管理员角色](/help/admin/cja-access-control.md#product-admin-role) 始终具有导出完整表的权限；无需为这些用户分配 [!UICONTROL **完整表导出**] 许可。
+
 
 ### 不支持的功能
 
