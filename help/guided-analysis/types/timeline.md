@@ -4,7 +4,7 @@ description: 观察一段时间内用户级别的会话事件，以查找体验�
 feature: Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: 6f3725653453e31244bfed34670782fe9d9c0c2f
+source-git-commit: 2eeaedd1c478fb9ae7a264a0af4a35327268c499
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 1%
@@ -15,6 +15,8 @@ ht-degree: 1%
 
 此 **[!UICONTROL 时间线]** 视图允许您观察一段时间内用户级别的会话事件，以找到体验模式并讲述更好的用户故事。 左边栏允许您按属性值和区段过滤流。 右边栏允许您从符合筛选条件的随机用户列表中进行选择。 中心区域按会话显示选定用户的流，包括时间戳、属性值和持续时间。 持续时间不可用于给定会话中的最后一个事件。
 
+![时间轴屏幕截图](../assets/timeline.png)
+
 >[!NOTE]
 >
 >时间轴视图要求 **[!UICONTROL 人员ID]** 标准组件在以下位置提供： [数据视图](/help/data-views/component-reference.md#optional). 在数据视图中包括人员ID由您的Customer Journey Analytics管理员进行管理，这使您的组织能够完全控制谁可以访问此数据。
@@ -23,8 +25,6 @@ ht-degree: 1%
 
 * **管理员**： *此分析需要PersonID属性。 请向数据视图添加人员ID。*
 * **非管理员**： *此分析需要PersonID属性。 请与您的Customer Journey Analytics管理员合作，将人员ID添加到数据视图。*
-
-![时间轴屏幕截图](../assets/timeline.png)
 
 ## 用例
 
