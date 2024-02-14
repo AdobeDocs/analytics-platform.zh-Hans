@@ -6,10 +6,10 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: f9f42f3c069177338fe62eb90cccf0e12f5b9d2a
+source-git-commit: 0cf1f69d5623a827cba64427c8db614b690968a0
 workflow-type: tm+mt
-source-wordcount: '2535'
-ht-degree: 25%
+source-wordcount: '2484'
+ht-degree: 26%
 
 ---
 
@@ -131,9 +131,9 @@ ht-degree: 25%
 | 日期范围选择器 | 编辑开始和/或结束日期或选择 ![日历](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) 以打开数据范围选择器。 在日期范围选择器中，通过使用某个预定义期间来选择日期范围(例如 **[!UICONTROL 过去6个月]**)，或使用日历选择开始日期和结束日期。 选择 **[!UICONTROL 应用]** 以应用新的数据范围。 |
 | [!UICONTROL 可用的事件数据记录数] | 表示&#x200B;**对于整个连接**&#x200B;可用于报表的事件数据集总行数。此数与任何日历设置无关。如果您从数据集选择器中选择了一个数据集，或者在表中选择了一个数据集，则计数会发生变化。 添加数据后，数据延迟1-2个小时后才会显示在报表中。 |
 | [!UICONTROL 指标] | 汇总&#x200B;**对于所选择的数据集和日期范围**&#x200B;添加/跳过/删除的事件记录以及添加的批次数。<p>选择 **[!UICONTROL 检查详细信息]** 以显示 **[!UICONTROL 检查跳过的详细信息]** 弹出窗口，列出所有事件数据集或选定数据集的跳过的记录数及其原因。<p><img src="./assets/skipped-records.png" width="70%"/><p>选择 ![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) 弹出窗口，其中包含更多信息。 由于某些跳过的原因，例如 [!UICONTROL 访客ID为空]，此时弹出窗口显示可在其中使用的EQS示例PSQL(查询服务的Experience Platform) [查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans?lang=cn) 以查询数据集中跳过的记录。 选择 ![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL 复制EQS的示例PSQL]** 以复制SQL。 |
-| [!UICONTROL 添加的记录数] | 指示在选定时间段，**为您选择的数据集和日期范围**&#x200B;添加了多少行。每 10 分钟更新一次。 <p>**注意**：以下项的数据 **[!UICONTROL 添加的记录数]** 此时仅包括事件数据，而不包括配置文件或查找数据。 |
-| [!UICONTROL 跳过的记录数] | 指示在选定的时间段内跳过了多少行（对于您选择的数据集和日期范围&#x200B;**）。**&#x200B;跳过记录的原因包括：缺少时间戳、缺少人员ID或人员ID无效等。 每 10 分钟更新一次。 <p>无效的个人 ID（例如“undefined”或“00000000”，或者在某个事件中，[!UICONTROL 人员 ID] 中的任何数字和字母组合在指定月份出现超过 100 万次）无法归因到任何特定的用户或个人。它们无法提取到系统中，并会导致容易出错的提取和报告。要修复无效的人员 ID，您有 3 个选项：<ul><li>使用 [拼接](/help/stitching/overview.md) 使用有效用户ID填充未定义或全零用户ID。</li><li>将用户ID留空，在摄取期间将跳过这些ID（这要优于无效或全零用户ID）。</li><li>先修复系统中的任意无效用户 ID，然后再提取数据。</li></ul> <p>**注意**：以下项的数据 **[!UICONTROL 跳过的记录数]** 此时仅包括事件数据，而不包括配置文件或查找数据。 |
-| [!UICONTROL 记录] 已删除 | 指示在选定时间段，**为您选择的数据集和日期范围**&#x200B;删除了多少行。例如，有人可能在 Experience Platform 中删除了一个数据集。每 10 分钟更新一次。<p>**注意**：以下项的数据 **[!UICONTROL 已删除记录]** 此时仅包括事件数据，而不包括配置文件或查找数据。 |
+| [!UICONTROL 添加的记录数] | 指示在选定时间段，**为您选择的数据集和日期范围**&#x200B;添加了多少行。每 10 分钟更新一次。 |
+| [!UICONTROL 跳过的记录数] | 指示在选定的时间段内跳过了多少行（对于您选择的数据集和日期范围&#x200B;**）。**&#x200B;跳过记录的原因包括：缺少时间戳、缺少人员ID或人员ID无效等。 每 10 分钟更新一次。 <p>无效的个人 ID（例如“undefined”或“00000000”，或者在某个事件中，[!UICONTROL 人员 ID] 中的任何数字和字母组合在指定月份出现超过 100 万次）无法归因到任何特定的用户或个人。它们无法提取到系统中，并会导致容易出错的提取和报告。要修复无效的人员 ID，您有 3 个选项：<ul><li>使用 [拼接](/help/stitching/overview.md) 使用有效用户ID填充未定义或全零用户ID。</li><li>将用户ID留空，在摄取期间将跳过这些ID（这要优于无效或全零用户ID）。</li><li>先修复系统中的任意无效用户 ID，然后再提取数据。</li></ul> |
+| [!UICONTROL 记录] 已删除 | 指示在选定时间段，**为您选择的数据集和日期范围**&#x200B;删除了多少行。例如，有人可能在 Experience Platform 中删除了一个数据集。每 10 分钟更新一次。 |
 | ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) _搜索数据集名称或ID_ | 数据集搜索字段。 您可以按数据集名称搜索数据集表，或者 [!UICONTROL 数据集Id]. |
 | [!UICONTROL 数据集表] | 显示作为连接一部分的数据集。 |
 | [!UICONTROL 数据集] | 显示作为连接一部分的数据集的名称。 您可以选择超链接在新选项卡的Experience PlatformUI中打开数据集。 您可以选择行或复选框以仅显示选定数据集的详细信息。 |
