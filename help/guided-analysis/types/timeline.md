@@ -1,23 +1,23 @@
 ---
 title: 时间线视图
-description: 探索体验模式并讲述更好的用户故事。
+description: 观察一段时间内用户级别的会话事件，以查找体验模式。
 feature: Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: fef60995e9241eaad99f6f536b1f329757ea0830
+source-git-commit: 6f3725653453e31244bfed34670782fe9d9c0c2f
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '549'
 ht-degree: 1%
 
 ---
 
 # [!UICONTROL 时间线] 视图
 
-此 **[!UICONTROL 时间线]** 视图允许您观察一段时间内用户级别的会话事件，以找到体验模式并讲述更好的用户故事。 左边栏允许您过滤到要流式处理的属性值。 右边栏允许您选择要分析的人员ID。 中心区域按会话显示流，包括时间戳、属性值和持续时间。 持续时间不可用于给定会话中的最后一个事件。
+此 **[!UICONTROL 时间线]** 视图允许您观察一段时间内用户级别的会话事件，以找到体验模式并讲述更好的用户故事。 左边栏允许您按属性值和区段过滤流。 右边栏允许您从符合筛选条件的随机用户列表中进行选择。 中心区域按会话显示选定用户的流，包括时间戳、属性值和持续时间。 持续时间不可用于给定会话中的最后一个事件。
 
 >[!NOTE]
 >
->时间轴视图要求 **[!UICONTROL 人员ID]** 标准组件在以下位置提供： [数据视图](/help/data-views/component-reference.md#optional). 在数据视图中包含人员ID由您的Adobe Analytics数据管理员进行管理，从而使组织能够完全控制谁可以访问此数据。
+>时间轴视图要求 **[!UICONTROL 人员ID]** 标准组件在以下位置提供： [数据视图](/help/data-views/component-reference.md#optional). 在数据视图中包括人员ID由您的Customer Journey Analytics管理员进行管理，这使您的组织能够完全控制谁可以访问此数据。
 
 如果数据视图没有 [!UICONTROL 人员ID] 组件添加后，会显示以下消息：
 
