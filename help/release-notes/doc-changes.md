@@ -4,7 +4,7 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 4f9878372f05da86b08449eeb17efb79b7432341
+source-git-commit: b49db376cb62c0668b8433c5dc5f66481966c333
 workflow-type: tm+mt
 source-wordcount: '3065'
 ht-degree: 82%
@@ -20,7 +20,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2024 年 2 月** | |
-| 阐明了产品管理员始终有权导出全部表 | 进行了以下更改，以明确说明分配了产品管理员角色的用户在默认情况下有权从Analysis Workspace导出完整表： <ul><li>向添加了新项目符号 [产品管理员默认权限](/help/admin/cja-access-control.md#product-admin-default-permissions). <p>在下添加了注释 [将完整表导出到云的最低要求](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</p> |
+| 阐明了产品管理员始终有权导出全部表 | 进行了以下更改，以明确说明分配了产品管理员角色的用户在默认情况下有权从Analysis Workspace导出完整表： <ul><li>向添加了新项目符号 [产品管理员默认权限](/help/admin/cja-access-control.md#product-admin-default-permissions).</li><li>在下添加了注释 [将完整表导出到云的最低要求](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> |
 | 跳过的记录详细信息 | 添加了有关“连接”中跳过的记录详细信息功能的文档。 有关详细信息，请参阅[连接详细信息](../connections/manage-connections.md#connection-details)。 |
 | **2024 年 1 月** | |
 | 预测 | 已添加有关以下内容的文档： [预测](../analysis-workspace/c-forecast/forecasting.md)，新增的Analysis Workspace功能可使用任何受支持的时间粒度（每小时、每天、每周、每月和每年）为自由格式表和折线图预测标准或计算量度。 |
