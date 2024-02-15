@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: 产品分析
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: 715d6f33b3cd3f1188e0bd3e6aa3785346c4c302
+source-git-commit: b8e01079411d8a3edacb7e69a7bc529bf639c2b8
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '890'
 ht-degree: 4%
 
 ---
@@ -44,13 +44,13 @@ ht-degree: 4%
 利用查询边栏，可配置以下组件：
 
 * **[!UICONTROL 开始和返回事件]**：用户必须符合的事件标准才能符合包含在分析中的条件。 一个事件受支持，但您可以包含属性过滤器。
-* **[!UICONTROL 人员]**：要测量的区段。 每个选定区段都会向同类群组表添加一行。 您最多可以包含三个区段。
+* **[!UICONTROL 计为]**：您希望如何衡量保留的用户。 选项包括 [!UICONTROL 用户已保留] 和 [!UICONTROL 保留的用户百分比].
+* **[!UICONTROL 区段]**：要测量的区段。 每个选定区段都会向同类群组表添加一行。 您最多可以包含三个区段。
 
 ## 图表设置
 
 此 [!UICONTROL 留存率] 视图提供了以下图表设置，可在图表上方的菜单中调整这些设置：
 
-* **[!UICONTROL 量度]**：您希望如何衡量保留的用户。 选项包括 [!UICONTROL 用户已保留] 和 [!UICONTROL 保留的用户百分比].
 * **[!UICONTROL 图表类型]**：要使用的可视化图表类型。 选项包括 [!UICONTROL 条形图] 和 [!UICONTROL 折线图].
 
 ## 持续时间设置
