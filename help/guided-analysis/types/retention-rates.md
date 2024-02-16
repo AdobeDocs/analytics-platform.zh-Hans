@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: 产品分析
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: b8e01079411d8a3edacb7e69a7bc529bf639c2b8
+source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '894'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 4%
 利用查询边栏，可配置以下组件：
 
 * **[!UICONTROL 开始和返回事件]**：用户必须符合的事件标准才能符合包含在分析中的条件。 一个事件受支持，但您可以包含属性过滤器。
-* **[!UICONTROL 计为]**：您希望如何衡量保留的用户。 选项包括 [!UICONTROL 用户已保留] 和 [!UICONTROL 保留的用户百分比].
+* **[!UICONTROL 计为]**：要应用于保留用户的计数方法。 选项包括 [!UICONTROL 用户已保留] 和 [!UICONTROL 保留的用户百分比].
 * **[!UICONTROL 区段]**：要测量的区段。 每个选定区段都会向同类群组表添加一行。 您最多可以包含三个区段。
 
 ## 图表设置
