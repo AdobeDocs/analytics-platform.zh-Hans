@@ -5,9 +5,9 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
+source-git-commit: e7e3b4a64ded8af3fa8137194c160044da74db62
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '760'
 ht-degree: 1%
 
 ---
@@ -31,6 +31,7 @@ ht-degree: 1%
 
 利用查询边栏，可配置以下组件：
 
+* **[!UICONTROL 视图]**：在此视图类型与之间切换 [频率](frequency.md).
 * **[!UICONTROL 事件和量度]**：要测量的事件或量度。 每个选择都表示为图表系列和表格行。 无法在查询中组合事件和量度；一旦您进行了第一次选择，其余查询选择必须属于同一类型。 您最多可以包括5个选项。
 * **[!UICONTROL 计为]**：要应用于选定事件的计数方法。 选项包括事件、会话、用户、用户百分比、每个会话的事件和每个用户的事件。 计为选项仅适用于事件查询，因量度查询而被删除。
 * **[!UICONTROL 区段]**：要测量的区段。 每个选定区段都会使图表系列和表行的数量加倍。 您最多可以包含五个区段。

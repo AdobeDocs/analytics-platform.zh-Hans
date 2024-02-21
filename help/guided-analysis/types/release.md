@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: 产品分析
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
-source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
+source-git-commit: e7e3b4a64ded8af3fa8137194c160044da74db62
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '499'
 ht-degree: 2%
 
 ---
@@ -31,6 +31,7 @@ ht-degree: 2%
 
 利用查询边栏，可配置以下组件：
 
+* **[!UICONTROL 视图]**：在此视图类型与之间切换 [首次使用](first-use.md).
 * **[!UICONTROL 关键指标]**：要为每个用户测量的事件。 每个所选关键指示符用彩色线条表示。 表示该事件的行将添加到表中。 您最多可以包含三个事件。
 * **[!UICONTROL 计为]**：要应用于选定事件的计数方法。 选项包括 [!UICONTROL 每个用户的事件数]， [!UICONTROL 用户百分比]， [!UICONTROL 活动]， [!UICONTROL 会话]、和 [!UICONTROL 用户].
 * **[!UICONTROL 因素]**：要在前后比较的日期。
