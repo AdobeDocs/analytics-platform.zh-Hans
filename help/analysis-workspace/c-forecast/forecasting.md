@@ -3,20 +3,20 @@ description: 了解Analysis Workspace中的预测。
 title: 预测概述
 feature: Visualizations
 role: User
-source-git-commit: 6ea1cf5c59dd527ba1bed966b994a3c966c899d4
+source-git-commit: 2f5bd8bec1580077675d249fa0431d84ee2269fa
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
 
 # 预测概述
 
-{{release-limited-testing}}
+
 
 {{select-package}}
 
-预测是Analysis Workspace的一项新功能，可用于预测具有任何受支持时间粒度（每小时、每天、每周、每月和每年）的标准或计算量度。 预测仅适用于与时间序列相关的数据。
+预测功能是一种Analysis Workspace功能，可用于预测具有任何受支持时间粒度（每小时、每天、每周、每月和每年）的标准或计算量度。 预测仅适用于与时间序列相关的数据。
 
 您可以将预测用于以下方面：
 

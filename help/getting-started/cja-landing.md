@@ -4,10 +4,10 @@ description: Customer Journey Analytics 登陆页面。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 79234ee442e49ebf7f5a08bd0214e8c9d547485e
-workflow-type: ht
-source-wordcount: '588'
-ht-degree: 100%
+source-git-commit: 2f5bd8bec1580077675d249fa0431d84ee2269fa
+workflow-type: tm+mt
+source-wordcount: '622'
+ht-degree: 94%
 
 ---
 
@@ -23,15 +23,20 @@ ht-degree: 100%
 
 >[!BEGINTABS]
 
+>[!TAB 预测]
+
+预测功能是一种Analysis Workspace功能，可用于预测具有任何受支持时间粒度（每小时、每天、每周、每月和每年）的标准或计算量度。 预测仅适用于与时间序列相关的数据。
+
+[![图像](assets/learn-more-button.svg)](/help/analysis-workspace/c-forecast/forecasting.md)
+
+
 >[!TAB 引导式分析* - 留存率]
 
 一种新的视图类型，其中显示所需的日期范围内在其初次参与后回归的用户所占的百分比。横轴表示用户初次参与后经历的天数。纵轴表示再次参与的用户所占的百分比。
 
-[![图像](assets/learn-more-button.svg)](/help//guided-analysis/types/retention-rates.md)
+[![图像](assets/learn-more-button.svg)](/help/guided-analysis/types/retention-rates.md)
 
 <span style="color:gray">*_引导式分析是 Customer Journey Analytics 的付费附加组件 Adobe Product Analytics 的一部分。_</span>
-
-
 
 
 >[!TAB 引导式分析* - 趋势线]
