@@ -5,16 +5,17 @@ solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '102'
-ht-degree: 100%
+source-git-commit: 14cdc7bd8817dbf1d7a9950fa6ff62aedff82640
+workflow-type: tm+mt
+source-wordcount: '188'
+ht-degree: 39%
 
 ---
 
 # 连接概述
 
-通过连接，您可以将源自 [!DNL Adobe Experience Platform] 的数据集集成到[!UICONTROL 工作区]中。为了报告 [!DNL Experience Platform] 数据集，您必须首先在 [!DNL Experience Platform] 和[!UICONTROL 工作区]中的数据集之间建立连接。
+连接允许Customer Journey Analytics产品管理员与不同的AEP数据源（如事件、查找和配置文件数据集）建立连接。 这些连接允许将来自连接的数据集成到派生数据视图。 我们建议限制对核心管理组的连接管理访问。 连接级别的配置与用于Customer Journey Analytics数据的卷分配的合同有关。
+连接是CJA的基础，是从AEP源数据集创建的。 对连接的访问还提供了查看连接管理器的功能，通过该管理器可以查看组成连接的基础数据集，并进行关键的编辑和配置选择。
 
 以下是一段视频概述：
 

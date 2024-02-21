@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 4f9878372f05da86b08449eeb17efb79b7432341
+source-git-commit: 14cdc7bd8817dbf1d7a9950fa6ff62aedff82640
 workflow-type: tm+mt
-source-wordcount: '1173'
-ht-degree: 57%
+source-wordcount: '1247'
+ht-degree: 52%
 
 ---
 
@@ -79,7 +79,18 @@ Customer Journey Analytics由三个访问级别或三个角色管理：产品管
 
 ## 用户级别访问
 
-Customer Journey Analytics 中的用户无法创建、编辑或查看数据视图或连接。用户可以在 Admin Console 中创建具有特殊权限的过滤器、项目、受众和计算量度。
+下表概述了非产品管理员和CJA产品管理员的各种Customer Journey Analytics功能的主要访问权限。 了解这些权限有助于用户根据其在组织内的角色和职责有效地导航和利用CJA。
+
+| CJA产品功能 | 非产品管理员（用户） | 产品管理员 |
+| --- | --- | --- |
+| **数据视图** | 无法查看/更新/创建/删除 | 可以创建/更新/删除 |
+| **连接** | 无法查看/更新/创建/删除 | 可以创建/更新/删除 |
+| **筛选器** | 可以创建 | 可以创建 |
+| **项目** | 可以创建 | 可以创建/更新/删除 |
+| **受众** | 可以在Admin Console中创建具有特殊权限的 | 可以创建 |
+| **计算量度** | 可以在Admin Console中创建具有特殊权限的 | 可以创建 |
+
+{style="table-layout:auto"}
 
 ## 工作区项目策划
 
