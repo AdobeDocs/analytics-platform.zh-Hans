@@ -5,7 +5,7 @@ feature: Guided Analysis
 keywords: 产品分析
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
+source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 此 **[!UICONTROL 频率]** 查看按事件在产品中发生的频率对事件数据进行分组。 此视图的垂直轴包含表示事件频率的分段。 水平轴测量每个时段的用户或会话数。
 
-![频率屏幕快照](../assets/frequency-stacked.png)
+![频率屏幕快照](../assets/frequency-stacked.png){style="border:1px solid gray"}
 
 ## 用例
 

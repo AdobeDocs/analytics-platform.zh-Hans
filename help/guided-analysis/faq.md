@@ -5,7 +5,7 @@ exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 2%
@@ -62,16 +62,16 @@ ht-degree: 2%
 
 * **引导式分析是一种以事件和用户为中心的体验。** 每个分析都从选择事件开始，然后可以添加维度和过滤器来优化该事件数据。
 
-![Analysis Workspace和引导式分析视图](assets/structure.png)
+![Analysis Workspace和引导式分析视图](assets/structure.png){style="border:1px solid gray"}
 
 请考虑以下示例，其中您侧重于网站主页的相关数据。 团队提出类似的问题，但分析方法可能不同。
 
 * 典型的以维度为中心的Analysis Workspace方法是，“让我们看一下主页，看看它收到了多少次页面查看。”
 
-  ![以Dimension为中心](assets/dimension-centered.png)
+  ![以Dimension为中心](assets/dimension-centered.png){style="border:1px solid gray"}
 
-* 典型的事件和以用户为中心的引导式分析方法是：“有多少用户访问了我们的主页？”
+* 一个典型的事件和以用户为中心的引导式分析方法是这样的：“有多少用户访问了我们的主页？”
 
-  ![以事件为中心](assets/event-centered.png)
+  ![以事件为中心](assets/event-centered.png){style="border:1px solid gray"}
 
 +++

@@ -5,7 +5,7 @@ feature: Guided Analysis
 keywords: 产品分析
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
+source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 4%
@@ -29,7 +29,7 @@ ht-degree: 4%
 * 如果用户在最初有资格纳入分析后多天参与事件，则他们会出现在最新的符合条件持续时间分段中，以及导致该事件的所有持续时间分段中。 此类计算有时称为“无界保留”。
 * 如果用户在配置的日期范围内多次参与事件，则分析中仅包含第一个和最后一个事件。
 
-![保留率屏幕截图](../assets/retention-rates.png)
+![保留率屏幕截图](../assets/retention-rates.png){style="border:1px solid gray"}
 
 ## 用例
 
