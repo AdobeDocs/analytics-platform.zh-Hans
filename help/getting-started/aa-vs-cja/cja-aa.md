@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '2044'
-ht-degree: 100%
+source-git-commit: 2ed8f4c3768312bb8f6c108ef8b8b052acbfa574
+workflow-type: tm+mt
+source-wordcount: '2032'
+ht-degree: 94%
 
 ---
 
@@ -22,18 +22,20 @@ ht-degree: 100%
 | --- | --- |
 | 异常检测 | 全面支持 |
 | Attribution IQ | 全面支持 |
+| 机器人检测 | *即将推出！* 对象 [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)基于数据集，应用机器人筛选。 其他数据集的常规机器人检测逻辑由执行 [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=en). |
 | 计算量度 | 全面支持。传统 Analysis Workspace 中的任何现有计算量度都不会移植到 Customer Journey Analytics。 |
-| 日历事件 | 全面支持。日历事件在工作区中已作为[批注](/help/components/annotations/overview.md)实施。 |
+| 日程表事件 | 全面支持。日历事件在工作区中已作为[批注](/help/components/annotations/overview.md)实施。 |
 | CSV 下载 | 全面支持 |
 | 自定义日历 | 全面支持 |
 | 日期比较 | 全面支持 |
 | 日期范围 | 支持所有日期范围功能。 |
 | 维度 | 全面支持。Customer Journey Analytics 使用 XDM 并支持无限的维度。Customer Journey Analytics 不依赖于传统 Adob&#x200B;e Analytics 的自定义 eVar 或 prop。 |
-| GDPR 删除 | 全面支持；请注意，现在与 [!UICONTROL Adobe Experience Platform] 一起处理 GDPR。Customer Journey Analytics 继承 [!UICONTROL Experience Platform] 对底层数据集所作的任何数据更改。 |
-| 提升和置信度报告 | 通过[“试验”面板](/help/analysis-workspace/c-panels/experimentation.md)全面支持 |
+| GDPR 删除 | 全面支持；请注意，GDPR现在与协调处理 [!UICONTROL Adobe Experience Platform]. Customer Journey Analytics 继承 [!UICONTROL Experience Platform] 对底层数据集所作的任何数据更改。 |
+| 提升和置信度报告 | 全面支持，通过 [“试验”面板](/help/analysis-workspace/c-panels/experimentation.md) |
 | 列表变量/列表属性 | 全面支持。Customer Journey Analytics 使用 XDM 并支持无限的字符串数组，其使用方式与 listVars 类似。 |
-| 促销 eVar | 通过[绑定维度和绑定度量](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension)提供全面支持 |
-| 度量 | 全面支持；Customer Journey Analytics 利用体验数据模型 (XDM)，支持无限量的量度，并且不会与 Adobe Analytics 的自定义成功事件绑定。我们已对 Adobe Analytics 中的一些标准量度名称进行了重命名，例如：“访客”=“人员”、“访问”=“会话”、“点击”=“事件”。 |
+| 促销 eVar | 全面支持，通过 [绑定维度和绑定量度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
+| 量度 | 全面支持；Customer Journey Analytics使用Experience Data Model (XDM)，支持无限量的量度，并且不会与Adobe Analytics的自定义成功事件绑定。 我们已对 Adobe Analytics 中的一些标准量度名称进行了重命名，例如：“访客”=“人员”、“访问”=“会话”、“点击”=“事件”。 |
+| 将项目、筛选条件和计算量度从 Adobe Analytics 迁移到 Customer Journey Analytics | 全面支持。 |
 | 移动记分卡/功能板 | 全面支持 |
 | 面板 | 全面支持空白面板、“归因”面板、“任意形状”面板和“快速分析”面板。 |
 | PDF 导出 | 全面支持 |
@@ -75,7 +77,7 @@ ht-degree: 100%
 | 项目共享 | 仅在 Customer Journey Analytics 的用户之间支持项目共享功能 - 在 Customer Journey Analytics 与传统 Analysis Workspace 之间无项目共享。 |
 | Report Builder | 通过一个新的 Office 365 Excel 插件支持此项。 |
 | 用户权限/数据访问控制 | Customer Journey Analytics 区分 [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=zh-Hans) 产品管理员、产品配置文件管理员和用户。只有产品管理员可创建/更新/删除其他用户创建的连接、项目、筛选条件或计算量度，而产品管理员和产品配置文件管理员均可编辑数据视图。对于创建计算量度、筛选条件或注释等操作还有其他用户权限可用。 |
-| 可视化图表 | 除地图可视化图表外，支持所有可视化图表。 |
+| 可视化图表 | 除地图可视化图表外，支持所有Workspace可视化图表。 |
 | 跨设备/跨渠道拼接 | 支持直接包含标识信息的数据集（也称为“基于字段的”拼接）。尚不支持基于图形的拼接，但有计划以后支持。请参阅[拼接](../../stitching/overview.md)。 |
 
 {style="table-layout:auto"}
@@ -84,7 +86,6 @@ ht-degree: 100%
 
 | 功能 | 注释 |
 | --- | --- |
-| 机器人筛选 | 对于基于 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 的数据集，将应用机器人筛选。[!UICONTROL Experience Platform] 或 Customer Journey Analytics 不会对其他数据集应用常规机器人筛选逻辑。 |
 | 面板 | 全面支持空白面板、“归因”面板、“任意形状”面板和“快速分析”面板。不支持“区段比较面板”和“Analytics for Target (A4T) 面板”。 |
 | Analytics for Target (A4T) | 通过 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 中的字段提供部分支持。有计划在 Target 活动和体验上支持适合 A4T 的名称。 |
 
@@ -101,7 +102,6 @@ ht-degree: 100%
 | 实时报表 | 有计划以后支持。 |
 | 区段 IQ | 有计划以后支持。 |
 | 交易 ID 数据源 | 有计划以后支持。 |
-| 将项目、筛选条件和计算量度从 Adobe Analytics 迁移到 Customer Journey Analytics | 有计划以后支持。 |
 | 摘要级别数据源 | 有计划以后支持。 |
 
 {style="table-layout:auto"}
@@ -118,9 +118,6 @@ ht-degree: 100%
 ## 从未支持过 {#never}
 
 * 使用跨设备协作的人员度量
-* Reports &amp; Analytics 功能板
-* Reports &amp; Analytics 书签
-* Reports &amp; Analytics 目标
 
 ## Adobe Analytics 中不提供 Adob&#x200B;e Customer Journey Analytics 功能 {#cja-not-aa}
 
