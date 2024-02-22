@@ -1,8 +1,8 @@
 ---
-source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
+source-git-commit: 2f7e11106334560d3c4b54e6c5eaf84d5e1d4fb6
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 66%
+source-wordcount: '1158'
+ht-degree: 62%
 
 ---
 # 片段
@@ -23,7 +23,19 @@ ht-degree: 66%
 
 >[!NOTE]
 >
->您必须拥有 **选择** 包中，以便使用本节中描述的功能。 如果您不确定您拥有哪个Customer Journey Analytics包，请联系您的管理员。
+>您必须拥有 **选择** 软件包或更高版本，以便使用本节中描述的功能。 如果您不确定您拥有哪个Customer Journey Analytics包，请联系您的管理员。
+
+## Prime包 {#prime-package}
+
+>[!NOTE]
+>
+>您必须拥有 **Prime** 软件包或更高版本，以便使用本节中描述的功能。 如果您不确定您拥有哪个Customer Journey Analytics包，请联系您的管理员。
+
+## Ultimate包 {#ultimate-package}
+
+>[!NOTE]
+>
+>您必须拥有 **Ultimate** 包中，以便使用本节中描述的功能。 如果您不确定您拥有哪个Customer Journey Analytics包，请联系您的管理员。
 
 
 ## 数据词典过滤条件 {#dd-filter-criteria}
