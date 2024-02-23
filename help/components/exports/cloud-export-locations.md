@@ -5,10 +5,10 @@ title: 配置云导出位置
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 5f96aa52562c2281e4a0c8fa97fb8b4dff04042e
+source-git-commit: dadb22558c93d0f528986dfc033b6668467d1c01
 workflow-type: tm+mt
-source-wordcount: '1632'
-ht-degree: 4%
+source-wordcount: '1738'
+ht-degree: 3%
 
 ---
 
@@ -151,7 +151,7 @@ ht-degree: 4%
    | 字段 | 函数 |
    |---------|----------|
    | [!UICONTROL **容器名称**] | 您指定的帐户中要将Customer Journey Analytics数据发送到的容器。 |
-   | [!UICONTROL **前缀**] | 容器中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，`folder_name/` |
+   | [!UICONTROL **前缀**] | 容器中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，`folder_name/`<p>确保在配置Azure SAS帐户时，您在密钥库机密名称字段中指定的SAS令牌存储具有 `Write` 许可。 这允许SAS令牌在Azure容器中创建文件。 <p>如果您还希望SAS令牌覆盖文件，请确保SAS令牌存储具有 `Delete` 许可。</p><p>有关更多信息，请参阅 [Blob存储资源](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction#blob-storage-resources) 在Azure Blob Storage文档中。</p> |
 
    {style="table-layout:auto"}
 
@@ -172,7 +172,7 @@ ht-degree: 4%
    | 字段 | 函数 |
    |---------|----------|
    | [!UICONTROL **容器**] | 您指定的帐户中要将Adobe Analytics数据发送到的容器。 确保授予将文件上载到您之前创建的Azure应用程序的权限。 |
-   | [!UICONTROL **前缀**] | 容器中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，`folder_name/` |
+   | [!UICONTROL **前缀**] | 容器中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，`folder_name/`<p>确保已授予您在配置Azure RBAC帐户时指定的应用程序ID `Storage Blob Data Contributor` 角色以访问容器（文件夹）。</p> <p>有关更多信息，请参阅 [Azure内置角色](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles).</p> |
    | [!UICONTROL **帐户**] | Azure存储帐户。 |
 
    {style="table-layout:auto"}
