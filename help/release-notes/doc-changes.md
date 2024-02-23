@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: d9a54eca27b41a7d52e61a75e18850608fc97e5e
+source-git-commit: 534f163230ea7cafc97948fe0e8196d1dea47fa8
 workflow-type: tm+mt
-source-wordcount: '3188'
-ht-degree: 79%
+source-wordcount: '3214'
+ht-degree: 78%
 
 ---
 
@@ -20,6 +20,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2024 年 2 月** | |
+| 项目共享文档更新 | 添加了关于如何 [查看与您共享的项目](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>还简化了 [共享单个或多个项目](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role).</p> |
 | 添加了在配置云导出位置时将文件上传到Azure SAS和Azure RBAC的权限要求 | 添加了在以下情况下将文件上传到Azure SAS和Azure RBAC的确切权限要求 [配置云导出帐户](/help/components/exports/cloud-export-accounts.md) 和 [配置云导出位置](/help/components/exports/cloud-export-locations.md). |
 | 添加了在配置云导出位置时将文件上传到Amazon S3角色ARN和GCP存储桶的权限要求 | 添加了在以下情况下将文件上传到Amazon S3角色ARN和Google Cloud Platform存储桶的确切权限要求 [配置云导出位置](/help/components/exports/cloud-export-locations.md). |
 | 阐明了产品管理员始终有权导出全部表 | 进行了以下更改，以明确说明分配了产品管理员角色的用户在默认情况下有权从Analysis Workspace导出完整表： <ul><li>向添加了新项目符号 [产品管理员默认权限](/help/admin/cja-access-control.md#product-admin-default-permissions).</li><li>在下添加了注释 [将完整表导出到云的最低要求](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> |
