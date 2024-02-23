@@ -6,7 +6,8 @@ feature: Use Cases
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: f062f8599dcc22b792369c310ceebcb283447d76
+exl-id: 71dd9e4e-1d71-424b-b984-492a3e39af5f
+source-git-commit: 744c8cfc903ed841dd39b29fd3fef68ef2e7b7cb
 workflow-type: tm+mt
 source-wordcount: '2402'
 ht-degree: 2%
@@ -128,7 +129,7 @@ Adobe Analytics数据馈送将列的概念与 `post_` 前缀，即包含处理�
 
 #### 计算
 
-要对字段（列）执行计算，请使用标准SQL函数(例如 `COUNT(*)` 或 [数学和统计运算符及函数](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) Spark SQL的一部分。 另外， [窗口函数](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en#window-functions) 提供对更新聚合的支持，并为有序子集中的每一行返回单个项。 请参阅 [示例](#examples) 了解如何使用这些函数。
+要对字段（列）执行计算，请使用标准SQL函数(例如 `COUNT(*)`)，或 [数学和统计运算符及函数](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) Spark SQL的一部分。 另外， [窗口函数](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en#window-functions) 提供对更新聚合的支持，并为有序子集中的每一行返回单个项。 请参阅 [示例](#examples) 了解如何使用这些函数。
 
 #### 嵌套数据结构
 
@@ -238,7 +239,7 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
 或者，您可以使用API导出和计划导出输出数据集。 中记录了所涉及的步骤 [使用流服务API导出数据集](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html).
 
-#### 开始使用
+#### 快速入门
 
 要导出数据集，请确保您具有 [所需权限](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#permissions). 此外，还要验证要将输出数据集发送到的目标是否支持导出数据集。 然后，您必须 [收集必需标题和可选标题的值](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#gather-values-headers) 在API调用中使用的变量。 您还需要 [识别目标的连接规范和流规范ID](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#gather-connection-spec-flow-spec) 您打算将数据集导出到。
 
@@ -277,4 +278,3 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 >[!IMPORTANT]
 >
 >此用例涉及两个调度程序。 要保证模拟数据馈送功能正常工作，请确保在查询服务和数据导出中配置的计划不会干预。
-
