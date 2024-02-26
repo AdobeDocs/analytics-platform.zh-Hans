@@ -5,10 +5,10 @@ exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '1060'
-ht-degree: 100%
+source-git-commit: c1e6279d8e2f0b31a82c2588fce8b3c2e614e440
+workflow-type: tm+mt
+source-wordcount: '1106'
+ht-degree: 95%
 
 ---
 
@@ -61,6 +61,7 @@ Customer Journey Analytics 中的 Workspace 项目均基于数据视图。
 
 * 在创建数据视图之前，您需要[设置一个或多个与 Experience Platform 数据集的连接](/help/connections/create-connection.md)。
 * 要创建或管理数据视图，您需要[在 Adobe Admin Console 中拥有一组权限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html#admin-access-permissions)。
+* 如果您使用 [Adobe Analytics源连接器](/help/data-ingestion/analytics.md) 或者您是否了解Adobe Analytics背景知识，您可能希望了解作为连接一部分的架构和数据集中的字段与其Adobe Analytics对应字段之间的关系。 请参阅 [Analytics字段映射](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=zh-Hans) 以了解更多信息。
 
 ## 您可以在 Workspace 中覆盖的数据视图设置 {#settings-override}
 
