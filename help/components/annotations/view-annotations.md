@@ -5,9 +5,9 @@ role: User
 feature: Components
 exl-id: c0e4fb37-b20c-463c-b29a-310ca3adb2c7
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '283'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 86%
 
 | 日期 | 外观 |
 | --- | --- |
-| **一天** | ![带高亮批注的新的图表可视化](assets/single-day.png)<p>将鼠标悬停在注释上时，可以查看其详细信息，通过选择钢笔图标进行编辑，或者删除注释：<p> ![使用编辑或删除注释的选项查看注释详细信息。](assets/hover.png) |
+| **一天** | ![突出显示注释的可视化折线图](assets/single-day.png)<p>将鼠标悬停在注释上时，可以查看其详细信息，通过选择钢笔图标进行编辑，或者删除注释：<p> ![注释详细信息以及编辑或删除注释的选项。](assets/hover.png) |
 | **日期范围** | 图标会发生变化，当您将鼠标悬停在它上面时，会显示日期范围。<p>![日期范围注释图标](assets/multi-day.png)<p>在折线图中选择注释时，将显示注释元数据，您可以进行编辑或删除：![](assets/multi-hover.png)<p>在表中，会在日期范围内的每个日期上显示一个图标。<p>![](assets/multi-day-table.png) |
 | **重叠注释** | 在有多个注释与其关联的日期上，图标将为灰色。<p>![重叠注释的详细信息  ](assets/grey.png)<p>将鼠标悬停在灰色图标上时，将显示所有重叠的注释：<p>![](assets/overlap.png) |
 
@@ -29,7 +29,7 @@ ht-degree: 86%
 
 由于您无法将鼠标悬停在 .pdf 文件中的图标上，因此该文件（导出后）在面板底部提供了注释或说明。示例如下：
 
-![高亮显示注释说明的.pdf文件视图。](assets/ann-pdf.png)
+![显示注释说明的 .pdf 文件的高亮显示视图。](assets/ann-pdf.png)
 
 ## 查看带有非趋势数据的注释
 
@@ -39,4 +39,4 @@ ht-degree: 86%
 
 摘要图表出现在角落的所有可视化类型中，而不仅仅是非趋势自由表格和摘要数字中。它也出现在例如 [!UICONTROL Donut]、[!UICONTROL Flow]、[!UICONTROL Fallout]、[!UICONTROL Cohort] 等可视化中。
 
-![可视化中的摘要图表](assets/ann-summary.png)
+![可视化摘要图表](assets/ann-summary.png)

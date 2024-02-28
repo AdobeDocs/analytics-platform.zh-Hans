@@ -5,9 +5,9 @@ feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1140'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 92%
 
 为了帮助您解答这些问题，并根据贵公司对 [!UICONTROL Analysis Workspace] 中的数据组件的使用情况，[!UICONTROL 快速洞察]会利用算法来向您介绍贵公司可使用的一些最热门的维度、量度、过滤器和日期范围。事实上，您会在下拉列表中看到标记为[!UICONTROL 热门]的维度、量度和过滤器，如下所示：
 
-![快速分析面板。](assets/popular-tag.png)
+![“快速洞察”面板。](assets/popular-tag.png)
 
 [!UICONTROL 快速洞察]会帮助您
 
@@ -46,9 +46,9 @@ ht-degree: 92%
 1. 使用您获得的凭据，登录 Customer Journey Analytics。
 1. 转到[!UICONTROL 工作区]，单击&#x200B;**[!UICONTROL 创建新项目]**，然后单击&#x200B;**[!UICONTROL 快速洞察]**。（您还可以从左边栏的&#x200B;**[!UICONTROL 面板]**&#x200B;菜单访问此面板。）
 
-   ![突出显示“快速分析”选项的“所有模板”视图。](assets/qibuilder.png)
+   ![突出显示“快速洞察”选项的“所有模板”视图。](assets/qibuilder.png)
 
-   ![面板列表突出显示快速分析选项。](assets/qi-panel.png)
+   ![突出显示“快速洞察”选项的面板列表。](assets/qi-panel.png)
 
 1. 首次开始时，请阅读简短教程，其中介绍了一些[!UICONTROL 快速洞察面板]的基础知识。或者，单击以&#x200B;**[!UICONTROL 跳过教程]**。
 1. 选择构建基块（也称为组件）：维度（橙色）、量度（绿色）、过滤器（蓝色）或日期范围（紫色）。您必须为要自动构建的表至少选择一个维度和一个量度。
@@ -64,7 +64,7 @@ ht-degree: 92%
 
    * 一个自由形式表，其中顶部垂直显示量度（此处为“访问量”），水平显示维度（此处为“美国州”）。请查看此表：
 
-   ![自由格式表，其中垂直显示维度，水平显示量度。](assets/qibuilder3.png)
+   ![垂直显示维度、水平显示量度的自由格式表。](assets/qibuilder3.png)
 
    * 随附的可视化图表，在这个示例中是[条形图](/help/analysis-workspace/visualizations/bar.md)。生成的可视化图表以您添加到表中的数据类型为基础。任何基于时间的数据（例如每日/月的[!UICONTROL 访问量]）均默认显示为[!UICONTROL 折线图]。任何非基于时间的数据（例如[!UICONTROL 每台设备]的[!UICONTROL 访问次数]均默认显示为[!UICONTROL 条形图]。您可以通过单击可视化图表类型旁边的下拉箭头，来更改可视化图表类型。
 
@@ -78,30 +78,30 @@ ht-degree: 92%
 
 [!UICONTROL 快速洞察生成器]中会弹出其他有用提示，其中一些提示取决于您的上一个操作。
 
-* 首先，完成&#x200B;**[!UICONTROL 更多提示]**&#x200B;教程：通过[!UICONTROL 快速洞察] 标题旁边的帮助图标 (?) 来访问。在创建至少包含一个维度和一个度量的项目后 24 小时内会显示本教程。
+* 首先，完成&#x200B;**[!UICONTROL 更多提示]**&#x200B;教程：通过[!UICONTROL 快速洞察] 标题旁边的帮助图标 (?) 来访问。在创建至少包含一个维度和一个量度的项目后 24 小时内会显示本教程。
 
-  ![单击帮助图标后显示的快速分析面板通知。](assets/qibuilder4.png)
+  ![单击“帮助”图标后将显示“快速洞察面板”通知。](assets/qibuilder4.png)
 
 * **划分依据**：您最多可以使用 3 个级别对维度进行划分，以挖掘您真正需要的数据。
 
-  ![细分的子级别。](assets/qibuilder5.png)
+  ![细分内容的子级别。](assets/qibuilder5.png)
 
 * **添加更多量度**：使用 AND 运算符将最多 2 个量度添加到表中。
 
-  ![多个量度，包括访问次数和设备。](assets/qibuilder6.png)
+  ![包括访问次数和设备个数的多个量度。](assets/qibuilder6.png)
 
 * **添加更多过滤器**：通过使用 AND 或 OR 运算符将过滤器添加到表中，最多可以再添加 2 个过滤器。在添加“移动设备用户 OR 忠诚的访客”后，查看表格会发生什么变化。它们彼此相邻，位于量度上方。如果您添加了“移动设备用户 AND 忠诚的访客”，您将会看到这两个过滤器的结果，并且它们在表中会彼此堆叠。
 
-  ![显示添加的“移动设备用户”和“忠诚访客”的图表。](assets/qibuilder7.png)
+  ![显示添加的移动用户和忠实访客的图表。](assets/qibuilder7.png)
 
 ## 已知限制
 
 如果尝试直接在表中编辑，将导致[!UICONTROL 快速洞察]面板无法同步。单击面板右上方的&#x200B;**[!UICONTROL 重新同步生成器]**，可将其恢复为之前的[!UICONTROL 快速洞察]设置。
 
-![包含Resync Builder选项的快速分析面板。](assets/qibuilder9.png)
+![带有“重新同步生成器”选项的“快速洞察”面板。](assets/qibuilder9.png)
 
 在将任何内容直接添加到表之前，您会收到一则警告：
 
-![Resync Builder选项警告。](assets/qibuilder8.png)
+![重新同步生成器选项警告。](assets/qibuilder8.png)
 
 否则，直接构建会导致此表如传统的自由格式表那样，不含适用于新用户的有用功能。

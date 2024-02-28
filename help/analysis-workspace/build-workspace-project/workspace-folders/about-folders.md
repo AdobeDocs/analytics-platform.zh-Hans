@@ -1,14 +1,14 @@
 ---
-description: 了解 Workspace 中的文件夹
+description: 了解工作区中的文件夹
 keywords: Analysis Workspace
 title: 文件夹概述
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '461'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 94%
 
 Analytics 中的文件夹是在 Adobe Analytics 登陆页面上和选择“**Workspace**”>“**项目**”时显示的文件夹管理系统。
 
-Workspace 中的文件夹可帮助您组织和分类您的项目，以便更好地检索和访问。此外，共享的公司文件夹可让管理员轻松地创建内容并与所有 Workspace 用户共享内容。
+工作区中的文件夹可帮助您组织和分类您的项目，以便更好地检索和访问。此外，共享的公司文件夹可让管理员轻松地创建内容并与所有工作区用户共享内容。
 
 当项目众多时，导航到某个特定的项目堪称一项挑战。通过文件夹功能，可创建文件夹和子文件夹以管理项目，使得更容易找到所需的项目。
 
-Workspace 中有两种类型的文件夹：公司文件夹和个人文件夹。
+工作区中有两种类型的文件夹：公司文件夹和个人文件夹。
 
-当您登录到 Workspace 时，项目主页会显示您的项目列表以及您创建的公司文件夹和任何个人文件夹。
+当您登录到工作区时，项目主页会显示您的项目列表以及您创建的公司文件夹和任何个人文件夹。
 
-![项目主页列出了您的项目和公司文件夹。](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
+![列出您的项目和公司文件夹的项目主页。](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
 
 ## 关于公司文件夹 {#company-folder}
 
@@ -32,18 +32,18 @@ Workspace 中有两种类型的文件夹：公司文件夹和个人文件夹。
 
 管理员可快速地与所有用户共享项目以及将项目归入用户组的子文件夹中。例如，如果有一组项目要让营销人员用于开始进行其研究，则可在公司文件夹中创建一个“营销”文件夹，然后将所选项目放入该“营销”文件夹。这样即可快速地直接访问共享的项目，并且营销团队更容易知道从何处查找常用文件。
 
-当用户登录到 Workspace 时，公司文件夹即自动添加到用户的项目和文件夹列表。对于公司文件夹中包含的项目没有特定的权限。
+当用户登录到工作区时，公司文件夹即自动添加到用户的项目和文件夹列表。对于公司文件夹中包含的项目没有特定的权限。
 
 
 ### 管理员选项 {#admin-options}
 
 管理员具有分配给公司文件夹的特殊权限。例如，只有管理员可在公司文件夹中添加或删除文件夹或项目。无管理员权限的用户可查看公司文件夹的内容。
 
-![显示管理选项的“项目”页面。](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
+![显示管理选项的项目页面。](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
 
 非管理员的选项有限。
 
-![显示文件夹的非管理员选项的“项目”页面。](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
+![显示文件夹的非管理选项的项目页面。](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
 
 ### 公司文件夹准则 {#company-folder-guidelines}
 

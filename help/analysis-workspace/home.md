@@ -7,9 +7,9 @@ exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '717'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -25,14 +25,14 @@ ht-degree: 93%
 
 下面的图像和附表解释了 Analysis Workspace 中的一些主要区域：
 
-![Analysis Workspace窗口，突出显示最左边栏和左边栏、画布和数据视图下拉菜单。](assets/analysis-workspace-overvew.png)
+![突出显示最左侧和左侧边栏、画布和数据视图下拉菜单的 Analysis Workspace 窗口。](assets/analysis-workspace-overvew.png)
 
 | 图像中的位置 | 名称和功能 |
 |---------|----------|
 | A | **最左侧边栏：**&#x200B;包含用于向 Analysis Workspace 添加面板、可视化图表和组件的选项卡。还包含用于打开数据词典的数据词典图标。 |
 | B | **左边栏：**&#x200B;根据在最左侧边栏中选择的选项卡，此区域包含单独的面板、可视化图表或组件。 |
 | C | **画布：**&#x200B;这是您从左边栏拖动内容以构建项目的主要区域。当您向画布添加面板、可视化图表和组件时，项目将动态更新。 |
-| D | **数据视图下拉菜单：** 对于Analysis Workspace中的每个面板，通过数据视图下拉菜单，您可以选择要用作数据源的数据视图。 |
+| D | **数据视图下拉菜单：**&#x200B;对于 Analysis Workspace 中的每个面板，数据视图下拉菜单可让您选择要用作数据源的数据视图。 |
 
 ## Analysis Workspace 中的功能 {#analysis}
 
@@ -62,7 +62,7 @@ Analysis Workspace 中的组件包含：
 
 * 量度
 
-* 筛选器
+* 过滤器
 
 * 日期范围
 

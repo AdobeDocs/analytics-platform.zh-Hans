@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '286'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 75%
 
 1. 选择一个或多个要添加到文件夹的项目。
 
-   ![显示三个选定项目的“项目”表格视图。](/help/analysis-workspace/build-workspace-project/assets/move-tv-selected.png)
+   ![显示选定的三个项目的项目表格视图。](/help/analysis-workspace/build-workspace-project/assets/move-tv-selected.png)
 
 1. 选择&#x200B;**移至**。随后将显示“选择文件夹”对话框。
 
 1. 从下拉菜单中选择一个文件夹名称。
 
-   ![“选择文件夹”视图显示下拉菜单和可用的子文件夹。](/help/analysis-workspace/build-workspace-project/assets/move-select-folder.png)
+   ![显示下拉菜单和可用子文件夹的选择文件夹视图。](/help/analysis-workspace/build-workspace-project/assets/move-select-folder.png)
 
 1. 单击&#x200B;**添加**。
 
@@ -36,11 +36,11 @@ ht-degree: 75%
 
    所选的项目即添加到该文件夹。
 
-   ![显示三个已移动项目的所选子文件夹。](/help/analysis-workspace/build-workspace-project/assets/move-projects-added.png)
+   ![显示已移动的三个项目的选定的子文件夹。](/help/analysis-workspace/build-workspace-project/assets/move-projects-added.png)
 
    Workspace 登陆页现在显示该文件夹包含 (3) 个项目。
 
-   ![更新的项目主页列表显示了包含三个项目的子文件夹。](/help/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
+   ![更新后的项目主页列表会显示包含三个项目的子文件夹。](/help/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
 
 ## 从文件夹内 {#inside-folder}
 
@@ -58,11 +58,11 @@ ht-degree: 75%
 
 1. 选择&#x200B;**添加项目**，然后从下拉列表中选择要添加的项目。
 
-   ![“添加项目”列表。](/help/analysis-workspace/build-workspace-project/assets/select-add-projects.png)
+   ![添加项目列表。](/help/analysis-workspace/build-workspace-project/assets/select-add-projects.png)
 
    可将多个项目添加到该文件夹。
 
-   ![已添加显示三个项目的“添加项目”窗口](/help/analysis-workspace/build-workspace-project/assets/move-add-multiple-projects.png)
+   ![显示已添加三个项目的“添加项目”窗口](/help/analysis-workspace/build-workspace-project/assets/move-add-multiple-projects.png)
 
 1. 单击&#x200B;**添加**&#x200B;以将这些项目添加到该文件夹。
 
