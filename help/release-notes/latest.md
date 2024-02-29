@@ -3,7 +3,7 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 70705430e578ad49a919bc8ad172adf7d28c4887
+source-git-commit: fd12f9b90c3240d10bf2fd5e22a2983b844051b5
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 82%
@@ -21,7 +21,7 @@ ht-degree: 82%
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **时间序列预测** | [预测](../analysis-workspace/c-forecast/forecasting.md)是 Analysis Workspace 的一项新功能，用于按任何支持的时间粒度（每小时、每天、每周、每月和每年）为自由格式表和折线图预测标准量度或计算量度。 | 2024 年 1 月 31 日 | 2024 年 2 月 21 日 |
-| **Media Analytics 报告 - 平均受众访问分钟数 (AMA)** | CJA 中现已提供“平均受众访问分钟数”面板。Media Analytics 客户使用“平均受众访问分钟数”面板可更好地了解其内容的平均使用情况。平均受众访问分钟数可以比较任何长度或类型的编程。此外，客户可以将此数字平均受众访问分钟数与线性电视平均访问分钟数指标进行比较或附加到其上。此面板可更灵活地衡量自定义时段的平均受众以及在事后更新持续时间分类的时间。 |  | 2024 年 2 月 |
+| **Media Analytics 报告 - 平均受众访问分钟数 (AMA)** | CJA 中现已提供“平均受众访问分钟数”面板。Media Analytics 客户使用“平均受众访问分钟数”面板可更好地了解其内容的平均使用情况。平均受众访问分钟数可以比较任何长度或类型的编程。此外，客户可以将此数字平均受众访问分钟数与线性电视平均访问分钟数指标进行比较或附加到其上。此面板可更灵活地衡量自定义时段的平均受众以及在事后更新持续时间分类的时间。 |  | 2024 年 3 月 |
 | **查找和配置文件数据的行数量度** | 作为连接的一部分配置的数据集行数量度现在包括从配置文件和查找数据集添加、跳过或删除的记录。 |  | 2024 年 2 月 14 日 |
 | **体验边缘机器人检测** | 通过[机器人检测](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html)，可将 Web SDK、Mobile SDK 和 Server API 生成的事件视为由已知的蜘蛛程序和机器人生成。 | | 2024年4月29日 |
 | **使用情况量度** | 使用情况量度界面显示所有连接中摄取和可报告的行的使用情况。在此界面中可确定您的 Customer Journey Analytics 使用情况是否遵守合同条款。 | 2024 年 2 月 20 日 | 2024 年 3 月初 |
