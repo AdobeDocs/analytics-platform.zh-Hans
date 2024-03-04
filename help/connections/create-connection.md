@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 8303043d46365195d9ffde6eaa06f49c9d22101d
+source-git-commit: 449aa54d1a1dd1ff2ce9e7408926f61533fc3c02
 workflow-type: tm+mt
-source-wordcount: '2749'
-ht-degree: 98%
+source-wordcount: '2765'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,16 @@ ht-degree: 98%
 
 ## 先决条件
 
-您必须拥有 **选择** ，以便将无限数量的事件数据集添加到连接。 此 **基础** 程序包仅限于一个事件数据集。 您可以向连接添加无限数量的配置文件或查找数据集。 如果您不确定您拥有的 Customer Journey Analytics 包，请联系您的管理员。&#x200B;
+可添加到连接的数据集数量上限为100。 该组合取决于贵公司购买的Customer Journey Analytics包。
+
+| **选择** 包 | **基础** 包 |
+| --- | --- |
+| 事件/个人资料/查找数据集的任意组合，最多可添加100个 | 每个连接一个事件数据集 |
+|  | 每个连接最多99个配置文件或查找数据集 |
+
+{style="table-layout:auto"}
+
+如果您不确定您拥有哪个Customer Journey Analytics包，请联系您的管理员。&#x200B;
 
 ## 创建和配置连接 {#create-connection}
 
