@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 2be283e0abd32229be1921b106d166f47fb410a8
+source-git-commit: 8303043d46365195d9ffde6eaa06f49c9d22101d
 workflow-type: tm+mt
-source-wordcount: '2763'
+source-wordcount: '2749'
 ht-degree: 98%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 98%
    | **[!UICONTROL 键]** | 仅用于查找数据集（例如 _id）。 |
    | **[!UICONTROL 匹配键]** | 仅用于查找数据集（例如 _id）。 |
    | **[!UICONTROL 导入新数据]** | 设置为开或关。 |
-   | **[!UICONTROL 回填数据]** | 您可以请求根据事件时间戳回填数据集中的数据。例如，您可以请求回填过去 7 天的数据，配置正确的人员 ID 并测试您的连接是否配置正确。如果一切看起来正常，您可以轻松回填所有剩余数据。<p>此外，您可以启用按数据集导入新数据。例如，您可以仅对查找数据启用新数据导入。 |
+   | **[!UICONTROL 回填数据]** | 您可以请求根据事件时间戳回填数据集中的数据。例如，您可以请求回填过去 7 天的数据，配置正确的人员 ID 并测试您的连接是否配置正确。如果一切看起来正常，您可以轻松回填所有剩余数据。<p>此外，您还可以启用按数据集导入新数据。 |
    | **[!UICONTROL 回填状态]** | 指示是否正在处理任何回填数据。 |
 
    {style="table-layout:auto"}
