@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 2f5bd8bec1580077675d249fa0431d84ee2269fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '622'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 94%
 
 >[!TAB 预测]
 
-预测功能是一种Analysis Workspace功能，可用于预测具有任何受支持时间粒度（每小时、每天、每周、每月和每年）的标准或计算量度。 预测仅适用于与时间序列相关的数据。
+预测是 Analysis Workspace 的一项功能，用于以任何支持的时间粒度（每小时、每天、每周、每月和每年）预测标准量度或计算量度。预测仅适用于与时间序列相关的数据。
 
 [![图像](assets/learn-more-button.svg)](/help/analysis-workspace/c-forecast/forecasting.md)
 

@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: 9314aae4c62e5c7a21495beeea0a5d69c6e113a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1455'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Adobe 提供了多种将数据导入 Adobe Experience Platform 的方法，包�
 
 请参阅[数据视图用例](/help/use-cases/data-views/data-views-usecases.md)以了解有关此概念的更多信息。
 
-## 对eVar和prop概念的更改
+## 对 eVar 和 prop 概念的更改
 
 传统 Adobe Analytics 中的 [!UICONTROL eVars]、[!UICONTROL props] 和 [!UICONTROL 事件] 的概念在 [!UICONTROL Customer Journey Analytics] 中不再存在。在Adobe Analytics中，eVar和prop存储了内容、客户、营销活动等的描述。和事件会计入收入、订阅或产生的商机。Customer Journey Analytics 会保留这两种类型的数据，您可以以相同的方式访问它们 — 分别从 Analysis Workspace 左栏中的“维度”或“量度”下。
 
@@ -66,7 +66,7 @@ Adobe 提供了多种将数据导入 Adobe Experience Platform 的方法，包�
 
 ## 区段概念的更改
 
-虽然从技术上讲，区段不会从Adobe Analytics迁移到Customer Journey Analytics，但您可以使用组件迁移工具在Customer Journey Analytics中重新创建Adobe Analytics区段。 区段会根据映射的维度和指标在Customer Journey Analytics中重新创建。 有关更多信息，请参阅 [准备将组件和项目从Adobe Analytics迁移到Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html).
+虽然从技术上讲，区段并未从 Adobe Analytics 迁移到 Customer Journey Analytics，但您可以使用组件迁移工具在 Customer Journey Analytics 中重新创建 Adobe Analytics 区段。根据映射的维度和量度在 Customer Journey Analytics 中重新创建区段。有关更多信息，请参阅[准备将组件和项目从 Adobe Analytics 迁移到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html)。
 
 虽然您还不能从 [!DNL Customer Journey Analytics] 共享或发布[!UICONTROL 筛选条件]（[!UICONTROL 区段]）到 Experience Platform Unified Profile，但此功能正在开发中。
 

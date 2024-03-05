@@ -6,9 +6,9 @@ exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
 source-git-commit: 39486d83a446c8bcfe93824c06bee3c681922ff4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3259'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 99%
 | --- | --- | --- |
 | **显示** | | |
 |  | [视图密度](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html?lang=zh-Hans) | 通过减小左侧边栏、自由格式表和同类群组表的垂直边距，让您可在屏幕上选择显示内容的多少。 <ul><li>紧凑</li><li>舒适</li><li>展开（默认）</li></ul> |
-| | [调色板](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=zh-Hans) | 选择在Analysis Workspace和引导式分析中使用的可视化图表调色板。 <ul><li> 类别调色板：适用于Analysis Workspace和引导式分析中的许多可视化图表。 每种颜色均代表不同的分类值。从 Adobe 提供的选项中进行选择，或输入由逗号分隔的十六进制值定义的自定义调色板。</li><li> 发散调色板：应用于 Analysis Workspace 和用户增长引导式分析中的群组表。此调色板包含两个极端和中间基线的数值含义。<li> 顺序调色板：适用于频率趋势（堆叠柱状图）引导式分析。此调色板包含从浅色到深色的数值含义。</li></ul> |
+| | [调色板](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=zh-Hans) | 选择 Analysis Workspace 和引导式分析中使用的可视化调色板。 <ul><li> 分类调色板：适用于 Analysis Workspace 和引导式分析中的许多可视化图表。每种颜色均代表不同的分类值。从 Adobe 提供的选项中进行选择，或输入由逗号分隔的十六进制值定义的自定义调色板。</li><li> 发散调色板：应用于 Analysis Workspace 和用户增长引导式分析中的群组表。此调色板包含两个极端和中间基线的数值含义。<li> 顺序调色板：适用于频率趋势（堆叠柱状图）引导式分析。此调色板包含从浅色到深色的数值含义。</li></ul> |
 | **数据** | | |
 |  | [数据视图](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=zh-Hans?#report-suite) | 选择表格和可视化从中获取数据的位置。 <ul><li>最近（默认）</li><li>从列表中选择的特定数据视图</li></ul> |
 |  | [日历](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=zh-Hans?#calendar) | 从以下列表中选择： <ul><li>Adobe 提供的范围（默认为“本月”）</li><li>自定义范围</li></ul> |
@@ -98,7 +98,7 @@ ht-degree: 99%
 | | 默认表量度 | <ul><li>发生次数</li><li>独特访客</li><li>访问</li></ul> |
 | | 默认表维度 | 从分钟、小时、天、周、月、季度或年中选择。 |
 | | 调整日期 | 选择此选项可将每列的日期与同一行的所有开始日期对齐。 |
-| **[栏目](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)** | | |
+| **[行](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)** | | |
 | | 隐藏标头文本 | 允许您隐藏自由格式表中的标头文本，以使标头更加易读，表格更易共享。这对 .pdf 渲染和名称较长的量度非常有用。默认处于启用状态。 |
 | | 显示总数 | 此总数通常等于[!UICONTROL 全部总计]或者为其一部分。它反映自由格式表内应用的任何表过滤器，包括[!UICONTROL 不包含任何内容]选项。 |
 | | 显示总计 | 此总计表示已收集的所有事件数，有时候称为“数据视图总计”。当在面板级别或自由格式表中应用过滤器时，此总计会进行相应的调整以反映符合过滤器的所有事件。带有[统计行](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)的表或细分不支持全部总计。 |
@@ -112,7 +112,7 @@ ht-degree: 99%
 | | 单元格预览 | 显示应用当前所选的格式选项时，每个单元格的预览效果。 |
 | **[行](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)** | | |
 | | 按位置划分 | 如果您希望细目分类保留在项目的位置而不是项目本身，请选择此选项。有关细分的更多信息，请参阅[细分维度](/help/components/dimensions/t-breakdown-fa.md)。 |
-| | 百分比计算 | <ul><li>栏目</li><li>行</li></ul> |
+| | 百分比计算 | <ul><li>行</li><li>行</li></ul> |
 | | 列总计（仅限静态行） | <ul><li>显示行总和：显示各个行项目的总和 </li><li>显示总计：显示进行重复数据删除后的行总和。</li></ul> |
 
 ## 可视化偏好设置

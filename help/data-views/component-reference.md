@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 source-git-commit: 949f0870c8607879d4f685f4fbeb838ddb68f80a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1016'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Customer Journey Analytics 中的大多数维度和指标都基于您 Adobe Expe
 | [!UICONTROL 人员] | 量度 | 基于在[!UICONTROL 连接]中指定的人员 ID。 |
 | [!UICONTROL 会话] | 量度 | 基于数据视图的会话设置。 |
 | [!UICONTROL 事件] | 量度 | 来自[!UICONTROL 连接]中所有事件数据集的行数。 |
-| [!UICONTROL 秒] | 维度 | 发生给定事件的第二天（已向下取整）。 第一个维度项是日期范围内的第一个秒数，最后一个维度项是日期范围内的最后一个秒数。 |
+| [!UICONTROL 秒] | 维度 | 发生给定事件的那一秒钟（已向下取整）。第一个维度项是日期范围内的第一秒，最后一个维度项是日期范围内的最后一秒。 |
 | [!UICONTROL 分钟] | 维度 | 发生给定事件的那一分钟（已向下取整）。第一个维度项是日期范围中的第一分钟，最后一个维度项是日期范围中的最后一分钟。 |
 | [!UICONTROL 小时] | 维度 | 发生给定事件的那一小时（已向下取整）。第一个维度项是日期范围中的第一小时，最后一个维度项是日期范围中的最后一小时。 |
 | [!UICONTROL 日] | 维度 | 发生给定事件的那一天。第一个维度项是日期范围内的第一天，最后一个维度项是日期范围内的最后一天。 |
