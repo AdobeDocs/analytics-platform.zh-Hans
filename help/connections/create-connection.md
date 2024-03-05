@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 449aa54d1a1dd1ff2ce9e7408926f61533fc3c02
+source-git-commit: 42232ff87ee822ceccf624ad8655c2dce8776814
 workflow-type: tm+mt
-source-wordcount: '2765'
+source-wordcount: '2766'
 ht-degree: 97%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 97%
 
 ## 先决条件
 
-可添加到连接的数据集数量上限为100。 该组合取决于贵公司购买的Customer Journey Analytics包。
+您可以向连接添加的最大数据集数限制为100。 该组合取决于贵公司购买的Customer Journey Analytics包。
 
 | **选择** 包 | **基础** 包 |
 | --- | --- |
