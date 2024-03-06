@@ -1,14 +1,14 @@
 ---
 title: 维系率
 description: 测量有多少用户继续使用您的产品。
-feature: Guided Analysis
+feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '894'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 4%
 
 * **[!UICONTROL 开始和返回事件]**：用户必须符合的事件标准才能符合包含在分析中的条件。 一个事件受支持，但您可以包含属性过滤器。
 * **[!UICONTROL 计为]**：要应用于保留用户的计数方法。 选项包括 [!UICONTROL 用户已保留] 和 [!UICONTROL 保留的用户百分比].
-* **[!UICONTROL 区段]**：要测量的区段。 每个选定区段都会向同类群组表添加一行。 您最多可以包含三个区段。
+* **[!UICONTROL 区段]**：您要测量的区段。每个选定区段都会向同类群组表添加一行。 您最多可以包含三个区段。
 
 ## 图表设置
 

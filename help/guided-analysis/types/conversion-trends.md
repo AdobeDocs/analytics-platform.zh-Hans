@@ -1,14 +1,14 @@
 ---
 title: 转化趋势视图
 description: 跟踪转化率随时间的变化。
-feature: Guided Analysis
+feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '510'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 

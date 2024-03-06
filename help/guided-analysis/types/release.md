@@ -1,14 +1,14 @@
 ---
 title: 版本视图
-description: 比较发布前和发布后各个相等时间段的性能。
-feature: Guided Analysis
+description: 比较发布前和发布后相同时期的性能。
+feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
-source-git-commit: e7e3b4a64ded8af3fa8137194c160044da74db62
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '499'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 

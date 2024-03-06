@@ -1,14 +1,14 @@
 ---
 title: 活动视图
-description: 确定新人、留住人员、回访人员或休眠人员。
+description: 确定新的、保留的、返回的或非活跃的用户。
 exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
-feature: Guided Analysis
+feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '609'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 

@@ -1,14 +1,14 @@
 ---
 title: 频率视图
-description: 按使用频率测量参与度。
-feature: Guided Analysis
+description: 按使用频率衡量参与度。
+feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '561'
-ht-degree: 1%
+ht-degree: 6%
 
 ---
 
@@ -32,9 +32,9 @@ ht-degree: 1%
 利用查询边栏，可配置以下组件：
 
 * **[!UICONTROL 视图]**：在此视图类型与之间切换 [使用情况](usage.md).
-* **[!UICONTROL 活动]**：要测量的事件。 每个选定事件均表示为一个单独的图表。 将代表趋势事件的行添加到表中。 您最多可以包含五个事件。
+* **[!UICONTROL 活动]**：您要测量的事件。每个选定事件均表示为一个单独的图表。 将代表趋势事件的行添加到表中。 您最多可以包含五个事件。
 * **[!UICONTROL 计为]**：要应用于选定事件的计数方法。 选项包括 [!UICONTROL 用户]，  [!UICONTROL 会话]，  [!UICONTROL 用户百分比] 和  [!UICONTROL 会话百分比]. 此视图中基于百分比的量度的分母是执行选定事件的用户或会话，而不是产品的所有活动用户。
-* **[!UICONTROL 区段]**：要测量的区段。 每个选定区段都会将图表中的条形数和表中的行数加倍。 您最多可以包含五个区段。
+* **[!UICONTROL 区段]**：您要测量的区段。每个选定区段都会将图表中的条形数和表中的行数加倍。 您最多可以包含五个区段。
 
 ## 图表设置
 

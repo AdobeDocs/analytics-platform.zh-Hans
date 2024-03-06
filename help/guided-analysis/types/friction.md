@@ -2,13 +2,13 @@
 title: 摩擦视图
 description: 比较步骤之间的转化率。
 exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
-feature: Guided Analysis
+feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '496'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
