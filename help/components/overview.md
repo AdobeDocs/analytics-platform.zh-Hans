@@ -5,8 +5,8 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+workflow-type: tm+mt
 source-wordcount: '1068'
 ht-degree: 100%
 
@@ -114,7 +114,7 @@ Analysis Workspace 中的组件包括量度、维度、区段和时间粒度，�
 
 3. 选择以下任一过滤器选项以过滤组件列表：
 
-   | 选项 | 函数 |
+   | 选项 | 功能 |
    |---------|----------|
    | [!UICONTROL **已批准**] | 仅显示标记为由管理员批准的组件。 |
    | [!UICONTROL **收藏夹**] | 仅显示收藏夹列表中的组件。有关将组件添加到收藏夹列表的信息，请参阅[管理组件](#manage-components)。 |

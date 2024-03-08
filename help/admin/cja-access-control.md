@@ -6,7 +6,7 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 14cdc7bd8817dbf1d7a9950fa6ff62aedff82640
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 52%
@@ -57,7 +57,7 @@ Customer Journey Analytics由三个访问级别或三个角色管理：产品管
 
      有关 Experience Platform 权限的更多信息，请参阅 [Adobe Experience Platform 中的访问控制](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hans)。
 
-* 将数据集导出到云 [目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=zh-Hans)
+* 将数据集导出到云 [目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html)
 
   >[!AVAILABILITY]
   >
@@ -67,7 +67,7 @@ Customer Journey Analytics由三个访问级别或三个角色管理：产品管
    * 管理目标
    * 激活目标
 
-     有关Experience Platform目标权限的更多信息，请参阅 [目标概述](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en#access-controls).
+     有关Experience Platform目标权限的更多信息，请参阅 [目标概述](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html#access-controls).
 
 ## 产品配置文件管理员角色
 
@@ -85,7 +85,7 @@ Customer Journey Analytics由三个访问级别或三个角色管理：产品管
 | --- | --- | --- |
 | **数据视图** | 无法查看/更新/创建/删除 | 可以创建/更新/删除 |
 | **连接** | 无法查看/更新/创建/删除 | 可以创建/更新/删除 |
-| **筛选器** | 可以创建 | 可以创建 |
+| **过滤器** | 可以创建 | 可以创建 |
 | **项目** | 可以创建 | 可以创建/更新/删除 |
 | **受众** | 可以在Admin Console中创建具有特殊权限的 | 可以创建 |
 | **计算量度** | 可以在Admin Console中创建具有特殊权限的 | 可以创建 |
@@ -146,7 +146,7 @@ Customer Journey Analytics由三个访问级别或三个角色管理：产品管
 | **[!UICONTROL 创建注释]** | 允许用户创建[注释](/help/components/annotations/overview.md)。 |
 | **[!UICONTROL 受众创建]** | 允许用户创建[受众](/help/components/audiences/audiences-overview.md)。 |
 | **[!UICONTROL 受众视图]** | 允许用户查看[受众](/help/components/audiences/audiences-overview.md)。 |
-| [!UICONTROL **与任何人共享项目链接**] | 允许用户 [与任何人共享项目。](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=zh-Hans#share-public-link) |
+| [!UICONTROL **与任何人共享项目链接**] | 允许用户 [与任何人共享项目。](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html#share-public-link) |
 | **[!UICONTROL 数据视图工具]**： |   |
 | [!UICONTROL **完整表导出**] | 允许用户 [将整个表导出到云](/help/analysis-workspace/export/export-cloud.md). |
 | [!UICONTROL **SQL查询服务访问**] | 允许用户访问 [aep中的查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html). |

@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Troubleshooting
 exl-id: 341123b9-f4d6-4ef7-96f1-789850261b96
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
@@ -28,9 +28,9 @@ ht-degree: 0%
 
 1. 确保您拥有正确的访问控制：
 
-   * 对于具有Experience Platform产品的组织，您必须具有系统或产品管理员权限。 请参阅 [访问控制概述](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en#platform-permissions) 以了解更多信息。
+   * 对于具有Experience Platform产品的组织，您必须具有系统或产品管理员权限。 请参阅 [访问控制概述](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#platform-permissions) 以了解更多信息。
 
-   * 您必须是AEP-Default-All-Users产品配置文件中的用户。 如果您没有将您自己添加到此配置文件的权限，请咨询管理员。 请参阅 [访问控制层级和工作流](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en#access-control-hierarchy-and-workflow) 以了解更多信息。
+   * 您必须是AEP-Default-All-Users产品配置文件中的用户。 如果您没有将您自己添加到此配置文件的权限，请咨询管理员。 请参阅 [访问控制层级和工作流](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#access-control-hierarchy-and-workflow) 以了解更多信息。
 
 
 1. 导航到AdobeExperience Platform UI。

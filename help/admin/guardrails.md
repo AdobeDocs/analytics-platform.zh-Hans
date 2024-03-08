@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: d6837178bccc1a80130ec3fc282d2b44858d06b1
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 8%
@@ -81,7 +81,7 @@ ht-degree: 8%
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [Real-time Customer Data Platform护栏](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en).
+另请参阅Experience Platform [Real-time Customer Data Platform护栏](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hans).
 
 
 ## 自动数据集过期
@@ -101,7 +101,7 @@ ht-degree: 8%
 | 项目 | 2,000 | 系统强制的护栏 | 组织的最大项目数。 |
 | 数据视图 | 2,000 | 系统强制的护栏 | 最大数量 [数据视图](../data-views/data-views.md) 对于组织。 |
 | 数据视图 | 50 | 系统强制的护栏 | 连接的最大数据视图数 |
-| 数据集 | 100 | 系统强制的护栏 | 最大数量 [数据集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) 每个连接。 |
+| 数据集 | 100 | 系统强制的护栏 | 最大数量 [数据集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=zh_Hans) 每个连接。 |
 | 连接 | 1000 | 系统强制的护栏 | 最大数量 [连接](../connections/overview.md) 对于组织。 |
 | 连接标题 | 500 | 系统强制的护栏 | 连接标题的最大字符数。 |
 | 量度 | 5,000 | 系统强制的护栏 | 数据视图中的最大量度数。 |
@@ -126,7 +126,7 @@ ht-degree: 8%
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [数据引入的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=en).
+另请参阅Experience Platform [数据引入的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
 
 
 ## 数据登陆区
@@ -181,7 +181,7 @@ ht-degree: 8%
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
 | 工作簿文件大小 | 5 | 系统强制的护栏 | 计划工作簿的最大文件大小（以MB为单位）。 |
-| 数据块 | 1000 | 系统强制的护栏 | 最大数量 [个数据块](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=en) 每个工作簿。 |
+| 数据块 | 1000 | 系统强制的护栏 | 最大数量 [个数据块](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html) 每个工作簿。 |
 | 量度 | 20 | 系统强制的护栏 | 每个数据块的最大量度数。 |
 | 日期范围 | 13 | 系统强制的护栏 | 日期范围可跨每个数据块的最大月数。 |
 | 行 | 50,000 | 系统强制的护栏 | 每个数据块的最大行数。 |
@@ -204,7 +204,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 请参阅Experience Platform [数据引入的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/Guardrails.html?lang=en) 以了解更多信息。
+>以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 请参阅Experience Platform [数据引入的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/Guardrails.html) 以了解更多信息。
 
 | 数据流 | 预期延迟 |
 |---|---|

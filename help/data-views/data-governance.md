@@ -4,16 +4,16 @@ description: 了解 Adobe Experience Platform 中定义的数据标签和政策�
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
-source-git-commit: 3b089a3d358a1a39a4b572576e911faaa4ceb1d5
-workflow-type: ht
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+workflow-type: tm+mt
 source-wordcount: '493'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
 # 标签和政策
 
-在 Experience Platform 中创建数据集时，可以为数据集中的部分或所有元素创建[数据使用情况标签](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=zh-Hans)。可以在 Customer Journey Analytics 中查看这些标签和政策。
+在 Experience Platform 中创建数据集时，可以为数据集中的部分或所有元素创建[数据使用情况标签](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html)。可以在 Customer Journey Analytics 中查看这些标签和政策。
 
 以下标签对于 Customer Journey Analytics 特别有用：
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 >
 >数据使用情况标签不会自动传播到拼合数据集。但可以手动添加它们。
 
-标签本身并不意味着强制执行这些数据使用情况标签。这就是政策的用途。可以使用 [Experience Platform UI](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=zh-Hans) 或通过 Experience Platform 中的[政策服务 API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=zh-Hans) 创建政策。
+标签本身并不意味着强制执行这些数据使用情况标签。这就是政策的用途。可以使用 [Experience Platform UI](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html) 或通过 Experience Platform 中的[政策服务 API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html) 创建政策。
 
 两个 Adobe 定义的政策显示在 Customer Journey Analytics 中，并影响报告和下载/共享：
 
@@ -76,6 +76,6 @@ ht-degree: 100%
 >[下载敏感数据](/help/analysis-workspace/export/download-send.md)
 
 >[!MORELIKETHIS]
->[Report Builder 中受到限制的标签是什么？](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html?lang=zh-Hans)
+>[Report Builder 中受到限制的标签是什么？](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html)
 
 

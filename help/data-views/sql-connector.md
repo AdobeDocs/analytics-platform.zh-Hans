@@ -7,10 +7,10 @@ hide: true
 hidefromtoc: true
 exl-id: 1827a637-6c0f-43f2-862a-928089340d30
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+workflow-type: tm+mt
 source-wordcount: '2789'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 通过 [!DNL Customer Journey Analytics SQL Connector]，SQL 可访问您在 Customer Journey Analytics 中定义的[数据视图](./data-views.md)。您的数据工程师和分析师可能更熟悉 Power BI、Tableau 或其他商业智能和可视化工具（也称为 BI 工具）。他们现在可以基于 Customer Journey Analytics 用户在创建 Analysis Workspace 项目时使用的相同数据视图来创建报告和仪表板。
 
-Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans?lang=cn) 是 Experience Platform 数据湖中可用数据的 SQL 接口。启用 [!DNL Customer Journey Analytics SQL Connector] 后，[!DNL Query Service]的功能将得到扩展，以便在[!DNL Query Service]会话中以表或视图的形式查看 Customer Journey Analytics 数据视图。因此，将[!DNL Query Service]用作其 PostgresSQL 接口的商业智能工具可以无缝地从这项扩展的功能中受益。
+Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) 是 Experience Platform 数据湖中可用数据的 SQL 接口。启用 [!DNL Customer Journey Analytics SQL Connector] 后，[!DNL Query Service]的功能将得到扩展，以便在[!DNL Query Service]会话中以表或视图的形式查看 Customer Journey Analytics 数据视图。因此，将[!DNL Query Service]用作其 PostgresSQL 接口的商业智能工具可以无缝地从这项扩展的功能中受益。
 
 主要好处是：
 
@@ -44,7 +44,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/doc
    - Customer Journey Analytics Workspace 项目，以及
    - 要使用的 Customer Journey Analytics 数据视图。
 
-- 使用过期凭据或不过期凭据将 BI 工具连接到 Customer Journey Analytics SQL Connector。[凭据指南](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=zh-Hans)提供了有关如何设置过期凭据或不过期凭据的更多信息。
+- 使用过期凭据或不过期凭据将 BI 工具连接到 Customer Journey Analytics SQL Connector。[凭据指南](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html)提供了有关如何设置过期凭据或不过期凭据的更多信息。
 
 请参阅“Customer Journey Analytics 管理”部分中的[访问控制](../admin/cja-access-control.md)以了解更多信息。
 
@@ -117,7 +117,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/doc
 
       2. 将 Experience Platform 查询[!UICONTROL 凭据]中的&#x200B;**[!UICONTROL **&#x200B;数据库&#x200B;**]**&#x200B;参数粘贴到&#x200B;**[!UICONTROL **&#x200B;数据库&#x200B;**]**&#x200B;文本字段中。
 
-         将 `?FLATTEN` 添加到&#x200B;**[!UICONTROL **&#x200B;数据库&#x200B;**]**&#x200B;参数，例如，使其显示内容为 `prod:cja?FLATTEN`。有关更多信息，请参阅[扁平化处理嵌套数据结构以用于第三方 BI 工具](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=zh-Hans)。
+         将 `?FLATTEN` 添加到&#x200B;**[!UICONTROL **&#x200B;数据库&#x200B;**]**&#x200B;参数，例如，使其显示内容为 `prod:cja?FLATTEN`。有关更多信息，请参阅[扁平化处理嵌套数据结构以用于第三方 BI 工具](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html)。
 
       3. 在系统提示输入&#x200B;**[!UICONTROL **&#x200B;数据连接&#x200B;**]**&#x200B;模式时，选择 **[!UICONTROL ** DirectQuery **]** 以确保适当地扁平化处理数据结构。
 
@@ -131,7 +131,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/doc
 
    与一个或多个选定表关联的所有维度和量度都显示在右窗格中，可供您在可视化图表中使用。
 
-   有关更多信息，请参阅[将 Power BI 连接到 Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html?lang=zh-Hans)。
+   有关更多信息，请参阅[将 Power BI 连接到 Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html)。
 
 +++
 
@@ -159,7 +159,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/doc
 
       3. 将 Experience Platform 查询[!UICONTROL 凭据]中的&#x200B;**[!UICONTROL **&#x200B;数据库&#x200B;**]**&#x200B;参数粘贴到&#x200B;**[!UICONTROL **&#x200B;数据库&#x200B;**]**&#x200B;文本字段中。
 
-         将 `%3FFLATTEN` 添加到&#x200B;**[!UICONTROL **&#x200B;数据库&#x200B;**]**&#x200B;参数，例如，使其显示内容为 `prod:cja%3FFLATTEN`。有关更多信息，请参阅[扁平化处理嵌套数据结构以用于第三方 BI 工具](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=zh-Hans)。
+         将 `%3FFLATTEN` 添加到&#x200B;**[!UICONTROL **&#x200B;数据库&#x200B;**]**&#x200B;参数，例如，使其显示内容为 `prod:cja%3FFLATTEN`。有关更多信息，请参阅[扁平化处理嵌套数据结构以用于第三方 BI 工具](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html)。
 
       4. 从&#x200B;**[!UICONTROL **&#x200B;身份验证&#x200B;**]**&#x200B;列表中选择&#x200B;**[!UICONTROL **&#x200B;用户名和密码&#x200B;**]**。
 
@@ -175,11 +175,11 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/doc
 
    您现在可以使用数据视图表中的数据来构建报告和可视化图表。
 
-   有关更多信息，请参阅[将 Tableau 连接到 Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html?lang=zh-Hans)。
+   有关更多信息，请参阅[将 Tableau 连接到 Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html)。
 
 +++
 
-请参阅[将客户端连接到 Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=zh-Hans)，大致了解各种可用工具及其详细信息。
+请参阅[将客户端连接到 Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html)，大致了解各种可用工具及其详细信息。
 
 ## 功能
 
@@ -219,11 +219,11 @@ prod:all=> \dv
 
 ### 嵌套与扁平化处理
 
-默认情况下，数据视图架构使用嵌套结构，就像原始 XDM 架构一样。该集成还支持 `FLATTEN` 选项。您可以使用此选项实施要扁平化处理的数据视图（以及会话中的任何其他表）的架构。通过扁平化处理，可以更轻松地在不支持结构化架构的 BI 工具中使用。有关更多信息，请参阅[在 Query Service 中使用嵌套数据结构](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=zh-Hans)。
+默认情况下，数据视图架构使用嵌套结构，就像原始 XDM 架构一样。该集成还支持 `FLATTEN` 选项。您可以使用此选项实施要扁平化处理的数据视图（以及会话中的任何其他表）的架构。通过扁平化处理，可以更轻松地在不支持结构化架构的 BI 工具中使用。有关更多信息，请参阅[在 Query Service 中使用嵌套数据结构](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html)。
 
 ### 支持的 SQL
 
-有关支持的 SQL 类型的完整参考，请参阅 [Query Service SQL 参考](https://experienceleague.adobe.com/docs/experience-platform/query/sql/overview.html?lang=zh-Hans)。
+有关支持的 SQL 类型的完整参考，请参阅 [Query Service SQL 参考](https://experienceleague.adobe.com/docs/experience-platform/query/sql/overview.html)。
 
 有关可使用的 SQL 示例，请见下表。
 

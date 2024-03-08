@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 18%
@@ -45,9 +45,9 @@ ht-degree: 18%
    * **持久 ID**，即每行都存在的标识符。例如，由Adobe AnalyticsAppMeasurement库生成的访客ID或由Adobe Experience Cloud Identity服务生成的ECID。
    * **临时 ID**，即仅在部分行存在的标识符。例如，经过身份验证的访客的经过哈希处理的用户名或电子邮件地址。您实际上可以使用任何喜欢的标识符。 拼接会考虑使用此字段来保存实际人员ID信息。 为获得最佳的拼接结果，应在数据集的事件中为每个永久ID至少发送一次临时ID。 如果计划在Customer Journey Analytics连接中包含此数据集，则最好其他数据集也具有类似的公共标识符。
 
-  必须将两列（永久ID和临时ID）定义为标识字段，该字段在要拼合的数据集基础架构中具有标识命名空间。 在Real-time Customer Data Platform中使用身份拼接时，使用 [identityMap字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#identity)中，您仍需要添加具有身份命名空间的身份字段，因为本节中讨论的Customer Journey Analytics拼接不支持identityMap字段组。 在架构中添加标识字段同时使用identityMap字段组时，请勿将其他标识字段设置为主标识，因为这将影响用于Real-time Customer Data Platform的identityMap字段组。
+  必须将两列（永久ID和临时ID）定义为标识字段，该字段在要拼合的数据集基础架构中具有标识命名空间。 在Real-time Customer Data Platform中使用身份拼接时，使用 [identityMap字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#identity)中，您仍需要添加具有身份命名空间的身份字段，因为本节中讨论的Customer Journey Analytics拼接不支持identityMap字段组。 在架构中添加标识字段同时使用identityMap字段组时，请勿将其他标识字段设置为主标识，因为这将影响用于Real-time Customer Data Platform的identityMap字段组。
 
-* 拼接包括合并的经过身份验证的用户数据和未经身份验证的用户数据。 在激活事件数据集的拼合之前，请确保遵守适用的法律和法规，包括获取必要的最终用户权限。 请参阅 [在UI中定义标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#) 以了解更多信息。
+* 拼接包括合并的经过身份验证的用户数据和未经身份验证的用户数据。 在激活事件数据集的拼合之前，请确保遵守适用的法律和法规，包括获取必要的最终用户权限。 请参阅 [在UI中定义标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#) 以了解更多信息。
 
 
 ## 使用拼合

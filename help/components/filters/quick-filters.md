@@ -4,10 +4,10 @@ title: 快速过滤器
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 33%
+ht-degree: 40%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 33%
 
 创建快速过滤器时，请考虑以下事项：
 
-* 快速筛选器仅适用于创建它们的项目。 它们在其他项目中不可用，也不能共享给其他用户。
-* 最多允许3个规则。
+* 快速筛选器仅适用于创建它们的项目。 此类过滤器在其他项目中不可用，无法共享给其他用户。
+* 最多允许使用 3 个规则。
 * 不支持嵌套容器或顺序规则。
 
 以下视频演示了如何使用快速过滤器。 (注意：本视频使用术语“快速区段”而不是“快速过滤器”。 但是，功能是相同的。)
@@ -49,7 +49,7 @@ Analysis Workspace中的任何用户都可以创建快速过滤器。
 
      ![区段过滤器](assets/quick-seg1.png)
 
-1. 调整以下任意设置：
+1. 调整以下任一设置：
 
    | 设置 | 描述 |
    | --- | --- |
@@ -61,12 +61,12 @@ Analysis Workspace中的任何用户都可以创建快速过滤器。
    | 加号 (+) | 添加另一条规则。 |
    | AND/OR 限定符 | 可将“AND”或“OR”限定符添加到规则，但不得在单个过滤器定义中混用“AND”和“OR”。 |
    | [!UICONTROL 应用] | 将此过滤器应用于面板。如果该过滤器不包含任何数据，则系统将询问您是否要继续。 |
-   | [!UICONTROL 打开生成器] | 打开过滤器生成器。 在筛选器生成器中保存或应用筛选器后，即不再将它视为“快速筛选器”。 它成为组件列表过滤器库的一部分。 <p>要使该组件在所有项目和左边栏中都可用，请选择选项 [!UICONTROL **使该过滤器对所有项目都可用，并将其添加到组件列表**].</p><p>有关更多信息，请参阅部分 [将快速筛选器另存为组件列表筛选器](#save-a-quick-filter-as-a-component-list-filter) 本文章中。</p><p>**注意：** 仅限在中具有区段创建权限的用户 [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=zh-Hans) 可以打开过滤器生成器。</p> |
+   | [!UICONTROL 打开生成器] | 打开过滤器生成器。 在筛选器生成器中保存或应用筛选器后，即不再将它视为“快速筛选器”。 它成为组件列表过滤器库的一部分。 <p>要使该组件在所有项目和左边栏中都可用，请选择选项 [!UICONTROL **使该过滤器对所有项目都可用，并将其添加到组件列表**].</p><p>有关更多信息，请参阅部分 [将快速筛选器另存为组件列表筛选器](#save-a-quick-filter-as-a-component-list-filter) 本文章中。</p><p>**注意：** 仅限在中具有区段创建权限的用户 [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html) 可以打开过滤器生成器。</p> |
    | [!UICONTROL 取消] | 取消此快速过滤器（不要应用它）。 |
    | [!UICONTROL 日期范围] | 该验证器使用面板日期范围执行其数据查找。但在快速过滤器中应用的任何日期范围都将取代面板顶部的面板日期范围。 |
    | 预览（右上角） | 让您查看您的过滤器是否有效以及该过滤器的作用范围。 表示在应用此过滤器时预计将看到的数据集的划分方式。 您可能会收到一条通知，表明此过滤器没有数据。在这种情况下，可继续操作或更改过滤器定义。 |
 
-1. 选择 [!UICONTROL **应用**] 以保存更改。
+1. 选择&#x200B;[!UICONTROL **应用**]&#x200B;以保存您的更改。
 
 ## 编辑快速过滤器 {#edit}
 
@@ -75,7 +75,7 @@ Analysis Workspace中的任何用户都可以创建快速过滤器。
    ![编辑临时过滤器](assets/filter-adhoc-edit.png)
 
 1. 编辑过滤器定义或过滤器名称。
-1. 选择 [!UICONTROL **应用**] 以保存更改。
+1. 选择&#x200B;[!UICONTROL **应用**]&#x200B;以保存您的更改。
 
 ## 将快速筛选器另存为组件列表筛选器 {#save}
 
@@ -83,13 +83,13 @@ Analysis Workspace中的任何用户都可以创建快速过滤器。
 >
 > 保存快速过滤器时，请考虑以下事项：
 > 
-> * 要保存快速过滤器，您需要以下项的区段创建权限： [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=zh-Hans).
+> * 要保存快速过滤器，您需要以下项的区段创建权限： [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html).
 > 
 > * 保存或应用过滤器后，在快速过滤器生成器中无法再编辑它。 相反，您必须使用常规过滤器生成器。
 
 您可以选择将快速筛选器另存为组件列表筛选器。 组件列表过滤器的优势包括：
 
-* 在所有Workspace项目中均可用
+* 可跨所有 Workspace 项目使用
 * 支持更复杂的过滤器以及顺序过滤器
 
 您可以从快速过滤器生成器中保存过滤器，也可以从以下来源保存过滤器： [!UICONTROL 筛选器生成器].
@@ -97,7 +97,7 @@ Analysis Workspace中的任何用户都可以创建快速过滤器。
 ### 在快速过滤器生成器中保存 {#save2}
 
 1. 应用快速过滤器后，将光标悬停在其上并选择信息(“i”)图标。
-1. 选择 **[!UICONTROL 使其对所有项目都可用，并将它添加到组件列表]**.
+1. 选择&#x200B;**[!UICONTROL 使其对所有项目可用，并添加到组件列表]**。
 1. （可选）为过滤器重命名。
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
@@ -117,7 +117,7 @@ Analysis Workspace中的任何用户都可以创建快速过滤器。
 
 1. 将光标悬停在保存的过滤器上并选择铅笔图标。
 
-1. 选择 [!UICONTROL **打开生成器**].
+1. 选择&#x200B;[!UICONTROL **打开生成器**]。
 
 1. 在过滤器生成器的顶部，注意此对话框：
 

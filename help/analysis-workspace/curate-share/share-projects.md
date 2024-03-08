@@ -5,10 +5,10 @@ title: 共享项目
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 534f163230ea7cafc97948fe0e8196d1dea47fa8
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '2091'
-ht-degree: 57%
+ht-degree: 68%
 
 ---
 
@@ -59,22 +59,22 @@ ht-degree: 57%
 
 * 如果选择共享多个项目，则会将收件人添加到每个项目的现有收件人列表中。
 
-  例如，项目A已与收件人1、2和3共享，而项目B已与收件人4、5和6共享。
+  例如，已与收件人 1、2 和 3 共享项目 A，同时已与收件人 4、5 和 6 共享项目 B。
 
-  然后，与收件人4和7共享项目A和B。 项目A的新共享列表现在为1、2、3、4和7，而项目B的新共享列表为4、5、6和7。
+  之后，与收件人 4 和 7 共享项目 A 和 B。项目 A 的新共享列表现在为 1、2、3、4 和 7，项目 B 的新共享列表为 4、5、6 和 7。
 
 要与组织中的用户或组共享特定的项目角色，请执行以下操作：
 
 1. 在Customer Journey Analytics中，选择 [!UICONTROL **工作区**] 选项卡，然后选择 [!UICONTROL **项目**] 在左边栏中。
 
-1. 选中要共享的一个或多个项目旁边的复选框，然后选择 [!UICONTROL **共享**].
+1. 选中要共享的一个或多个项目旁边的复选框，然后选择&#x200B;[!UICONTROL **共享**]。
 
    或
 
-   要仅共享单个项目，您可以打开要共享的项目，然后选择 **[!UICONTROL 共享]** > **[!UICONTROL 与Workspace用户共享]**.
+   要仅共享单个项目，您可以打开要共享的项目，然后选择&#x200B;**[!UICONTROL 共享]** > **[!UICONTROL 与 Workspace 用户共享]**。
 如果存在未保存的更改，则将提示您首先保存您的项目。
 
-   此时将显示共享项目对话框。 此 [!UICONTROL **通过链接共享**] 和 [!UICONTROL **设置**] 仅在共享单个项目时，该对话框的部分才可见。
+   此时会显示“共享项目”对话框。该对话框的&#x200B;[!UICONTROL **通过链接分享**]&#x200B;和&#x200B;[!UICONTROL **设置**]&#x200B;部分仅在共享单个项目时可见。
 
    ![共享项目窗口。](assets/share-proj-modal.png)
 
@@ -92,11 +92,11 @@ ht-degree: 57%
 
    * **设置为收件人的登陆页面：** 将此页面设置为收件人的登陆页面。 此设置不具有持续性，属于分享时的一次性操作。
 
-1. 选择 **[!UICONTROL 共享]**. (如果项目已共享，请选择 [!UICONTROL **更新**].)
+1. 选择&#x200B;**[!UICONTROL 共享]**。（如果已共享该项目，请选择&#x200B;[!UICONTROL **更新**]。）
 
    或
 
-   选择 **[!UICONTROL 策划和共享]** 以自动应用项目策划。 (如果项目已共享，请选择 **[!UICONTROL 策划和更新]**.) 详细了解[项目策划](curate.md)。
+   选择&#x200B;**[!UICONTROL 策划和共享]**&#x200B;以自动应用项目策划。（如果已共享该项目，请选择&#x200B;**[!UICONTROL 策划和更新]**。）详细了解[项目策划](curate.md)。
 
 ## 共享项目链接
 
@@ -158,7 +158,7 @@ ht-degree: 57%
 
    选择此选项将创建可与任何人共享的项目链接。随时可通过禁用此选项而禁止访问项目。
 
-   项目的所有者也是此链接的所有者。只有移交项目所有权后，才能将链接所有权移交给另一用户，如 Analytics 管理指南中的[转移用户资源或设置帐户到期](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=zh-Hans)所述。
+   项目的所有者也是此链接的所有者。只有移交项目所有权后，才能将链接所有权移交给另一用户，如 Analytics 管理指南中的[转移用户资源或设置帐户到期](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html)所述。
 
 1. 选择是否启用以下安全选项(此选项可由您的Customer Journey Analytics管理员控制)：
 
@@ -184,9 +184,9 @@ ht-degree: 57%
 
 ## 查看与您共享的项目
 
-当有人通过以下方式与您共享项目时 [共享特定项目角色](#share-a-specific-project-role)，您可以从以下位置访问共享项目： [Analytics登陆页面上的“项目”选项卡](/help/getting-started/landing.md#navigate-the-projects-tab).
+当有人通过[共享特定项目角色](#share-a-specific-project-role)与您共享项目时，您可以从 [Analytics 登陆页面上的“项目”选项卡](/help/getting-started/landing.md#navigate-the-projects-tab)访问共享项目。
 
-当有人通过共享链接(来自 [“共享项目”选项卡](#share-a-link-to-a-project) 或使用 [“与任何人共享”链接](#share-a-project-with-anyone-no-login-required))，您必须使用与您共享的链接才能访问项目。 例如，链接可能已在一封电子邮件中、在内部网站上共享，依此类推。
+当有人通过共享链接(来自 [“共享项目”选项卡](#share-a-link-to-a-project) 或使用 [“与任何人共享”链接](#share-a-project-with-anyone-no-login-required))，您必须使用与您共享的链接才能访问项目。 例如，该链接可能已在电子邮件、内部网站等中共享。
 
 ## 共享嵌入的组件
 

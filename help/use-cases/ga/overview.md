@@ -4,10 +4,10 @@ description: 了解有关如何将数据从 Google Analytics 移动到 Adobe Exp
 exl-id: 10c485c9-66ab-4925-a357-a66a374d4c6f
 feature: Use Cases
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 87%
+source-wordcount: '311'
+ht-degree: 79%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 87%
 
 ## 为 Adobe Experience Platform 配置现有的 Google Analytics 实施 {#configure}
 
-摄取当前（流式传输）数据涉及将数据发送到 Adobe Experience Edge，然后由 Adobe Experience Edge 将该数据转发到 Adobe Experience Platform。查看[在 Adobe Experience Platform 中设置流式 Google Analytics 数据](streaming.md)。
+摄取当前（流）数据涉及将数据发送到Adobe Experience Platform Edge Network，然后将该数据转发到Adobe Experience Platform。 查看[在 Adobe Experience Platform 中设置流式 Google Analytics 数据](streaming.md)。
 
 ## 在Customer Journey Analytics中配置连接和数据视图
 

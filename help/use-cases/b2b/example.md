@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1755'
 ht-degree: 15%
@@ -24,7 +24,7 @@ ht-degree: 15%
 
 可以考虑添加到连接的数据集：
 
-| Dataset | 架构 | 架构类型 | 基类 | 描述 |
+| 数据集 | 架构 | 架构类型 | 基类 | 描述 |
 |---|---|---|---|---|
 | B2B活动数据集 | B2B活动模式 | 事件 | XDM ExperienceEvent | ExperienceEvent是所发生情况的事实记录，包括时间点和所涉及的个人身份。 ExperienceEvents可以是显式的（可直接观察的人类行为）或隐式的（在没有直接人类行为的情况下引发），并且无需聚合或解释即可记录。 它们对于时域分析至关重要，因为它们允许观察和分析给定时间段内发生的变化，并比较多个时间段以跟踪趋势。 |
 | B2B人员数据集 | B2B人员模式 | 配置文件 | XDM个人资料 | XDM个人资料形成已识别和部分识别的个人的属性和兴趣的单一表示。 识别度较低的用户档案可能仅包含匿名行为信号，如浏览器Cookie，而识别度较高的用户档案可能包含详细的个人信息，如姓名、出生日期、位置和电子邮件地址。 随着用户档案的发展，它成为个人信息、身份信息、联系人详细信息和个人通信偏好设置的强大存储库。 |
@@ -37,7 +37,7 @@ ht-degree: 15%
 | B2B营销列表数据集 | B2B营销列表架构 | 查询 | XDM营销列表 | XDM业务营销列表是一个标准体验数据模型(XDM)类，可捕获营销列表的最低要求属性。 营销列表允许您优先考虑最有可能购买您的产品的潜在客户。 |
 | B2B营销列表成员数据集 | B2B营销列表成员架构 | 查询 | XDM营销列表成员 | XDM业务营销列表成员是一个标准的体验数据模型(XDM)类，它描述了与营销列表关联的成员、人员或联系人。 |
 
-查找架构、配置文件架构和事件架构之间的关系在Experience Platform内的B2B设置中定义。 请参阅中的架构 [Real-time Customer Data Platform B2B版本](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html?lang=en) 和 [在Real-time Customer Data Platform B2B版本中定义两个架构之间的多对一关系](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html?lang=en) 以了解更多详细信息。
+查找架构、配置文件架构和事件架构之间的关系在Experience Platform内的B2B设置中定义。 请参阅中的架构 [Real-time Customer Data Platform B2B版本](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html) 和 [在Real-time Customer Data Platform B2B版本中定义两个架构之间的多对一关系](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html) 以了解更多详细信息。
 
 ![B2B架构之间的关系](assets/classes.png)
 
@@ -49,7 +49,7 @@ ht-degree: 15%
 下表提供了 [!UICONTROL 人员ID]， [!UICONTROL 键]、和 [!UICONTROL 匹配键] 每个数据集的值。
 
 
-| Dataset | 人员 ID | 键 | 匹配键（在事件数据集中） |
+| 数据集 | 人员 ID | 键 | 匹配键（在事件数据集中） |
 |---|---|---|---|
 | B2B活动数据集 | `personKey.sourceKey` | | |
 | B2B人员数据集 | `b2b.personKey.sourceKey` | | |
@@ -205,7 +205,7 @@ ht-degree: 15%
 
 | 组件名称 | 架构数据类型 | 架构路径 | 配置 |
 |---|---|---|---|
-| 促销活动 ID | 字符串 | `campaignID` | |
+| 营销活动 ID | 字符串 | `campaignID` | |
 | 营销活动名称 | 字符串 | `campaignName` | |
 | 促销活动开始日期 | 日期时间 | `campaignStartDate` | 日期时间格式： **[!UICONTROL 天]** |
 | 渠道名称 | 字符串 | `channelName` | |
@@ -268,7 +268,7 @@ ht-degree: 15%
 
 | 组件名称 | 架构数据类型 | 架构路径 | 配置 |
 |---|---|---|---|
-| 促销活动 ID | 字符串 | `campaignID` | |
+| 营销活动 ID | 字符串 | `campaignID` | |
 | 营销活动成员ID | 字符串 | `campaignMemberID` | |
 | 营销活动成员状态 | 字符串 | `memberStatus` | |
 | 营销活动成员状态原因 | 字符串 | `memberStatusReason` | |

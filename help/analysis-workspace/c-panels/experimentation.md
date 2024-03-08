@@ -4,7 +4,7 @@ title: 试验性面板
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1892'
 ht-degree: 58%
@@ -17,7 +17,7 @@ ht-degree: 58%
 
 >[!IMPORTANT]
 >
->此时， [Adobe Analytics目标版](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=zh-Hans) (A4T)数据 *无法* 在“试验”面板中分析。
+>此时， [Adobe Analytics目标版](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T)数据 *无法* 在“试验”面板中分析。
 
 ## 访问控制 {#access}
 
@@ -29,7 +29,7 @@ ht-degree: 58%
 
 ## 步骤 1：创建与试验数据集的连接 {#connection}
 
-推荐的数据架构将试验数据放在一个[对象数组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=zh-Hans)中，该数组在两个单独的维度中包含试验数据和变体数据。 两个维度都必须位于 **单身** 对象数组。 如果将试验数据放在单个维度中，其中在一个字符串中分隔试验数据和变体数据，则可在数据视图中使用[子字符串](/help/data-views/component-settings/substring.md)设置将这些数据一分为二以用于面板中。
+推荐的数据架构将试验数据放在一个[对象数组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html)中，该数组在两个单独的维度中包含试验数据和变体数据。 两个维度都必须位于 **单身** 对象数组。 如果将试验数据放在单个维度中，其中在一个字符串中分隔试验数据和变体数据，则可在数据视图中使用[子字符串](/help/data-views/component-settings/substring.md)设置将这些数据一分为二以用于面板中。
 
 在您的试验数据得 [已摄取](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans) 进入Adobe Experience Platform， [在Customer Journey Analytics中创建连接](/help/connections/create-connection.md) 到一个或多个试验数据集。
 
