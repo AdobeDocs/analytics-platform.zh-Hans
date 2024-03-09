@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 2380d1c176f2d0d6672714ee068ec198734bcdaf
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 8%
@@ -98,7 +98,7 @@ ht-degree: 8%
 
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
-| 项目 | 2,000 | 系统强制的护栏 | 组织的最大项目数。 |
+| 项目 | 50,000 | 系统强制的护栏 | 组织的最大项目数。 |
 | 数据视图 | 2,000 | 系统强制的护栏 | 最大数量 [数据视图](../data-views/data-views.md) 对于组织。 |
 | 数据视图 | 50 | 系统强制的护栏 | 连接的最大数据视图数 |
 | 数据集 | 100 | 系统强制的护栏 | 最大数量 [数据集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=zh_Hans) 每个连接。 |
