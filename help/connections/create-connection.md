@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '2766'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 99%
 
 ## 先决条件
 
-您可以向连接添加的最大数据集数限制为100。 具体的混合方式取决于您公司购买的 Customer Journey Analytics 包。
+可添加到连接的数据集数量上限为 100。具体的混合方式取决于您公司购买的 Customer Journey Analytics 包。
 
 | **Select** 包 | **Foundation** 包 |
 | --- | --- |
