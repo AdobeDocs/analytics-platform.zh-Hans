@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 2380d1c176f2d0d6672714ee068ec198734bcdaf
+source-git-commit: 56b909a542915cd64251fb8849e55df920668025
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 8%
@@ -204,7 +204,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 请参阅Experience Platform [数据引入的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/Guardrails.html) 以了解更多信息。
+>以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 请参阅Experience Platform [数据引入的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) 以了解更多信息。
 
 | 数据流 | 预期延迟 |
 |---|---|
