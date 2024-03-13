@@ -3,16 +3,16 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 1b39449fa58157fb61d619de82235cba326ffe2c
+source-git-commit: 7f0a348738d2f3a53ec57558d321a3501afe8d00
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 54%
+source-wordcount: '841'
+ht-degree: 48%
 
 ---
 
 # 当前Adobe Customer Journey Analytics发行说明（2024年3月）
 
-**上次更新**：2024年3月8日
+**上次更新**：2024年3月13日
 
 这些发行说明涵盖2024年3月13日至2024年4月的发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
@@ -20,9 +20,9 @@ ht-degree: 54%
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **项目登陆页上提供的新列** | 此 **[!UICONTROL 上次使用时间]** 列现在可用于查看上的项目选项卡 [Customer Journey Analytics登录页面](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html). 此信息可以显示上次打开项目的日期和时间，从而帮助您确定项目对组织中的用户是否有价值。 以前， **[!UICONTROL 上次使用时间]** 列仅在计算量度管理器、区段管理器和警报管理器中可用。 |  | 2024 年 3 月 13 日 |
-| **使用情况量度** | 使用情况量度界面显示所有连接中摄取和可报告的行的使用情况。在此界面中可确定您的 Customer Journey Analytics 使用情况是否遵守合同条款。 |  | 2024 年 3 月 13 日 |
-| **Media Analytics 报告 - 平均受众访问分钟数 (AMA)** | CJA 中现已提供“平均受众访问分钟数”面板。Media Analytics 客户使用“平均受众访问分钟数”面板可更好地了解其内容的平均使用情况。平均受众访问分钟数可以比较任何长度或类型的编程。此外，客户可以将此数字平均受众访问分钟数与线性电视平均访问分钟数指标进行比较或附加到其上。此面板可更灵活地衡量自定义时段的平均受众以及在事后更新持续时间分类的时间。 |  | 2024 年 3 月 12 日 |
+| **项目登陆页上提供的新列** | 此 **[!UICONTROL 上次使用时间]** 列现在可用于查看上的项目选项卡 [Customer Journey Analytics登录页面](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html). <p>此信息可以显示上次打开项目的日期和时间，从而帮助您确定项目对组织中的用户是否有价值。 以前， **[!UICONTROL 上次使用时间]** 列仅在计算量度管理器、区段管理器和警报管理器中可用。</p> |  | 2024 年 3 月 13 日 |
+| **使用情况量度** | 此 [使用量度界面](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans) 显示所有连接中摄取和可报告行的使用情况。 在此界面中可确定您的 Customer Journey Analytics 使用情况是否遵守合同条款。 |  | 2024 年 3 月 13 日 |
+| **Media Analytics 报告 - 平均受众访问分钟数 (AMA)** | CJA 中现已提供“平均受众访问分钟数”面板。Media Analytics客户可以使用“平均受众访问分钟数”面板来更好地了解其内容的平均使用情况。 <p>平均受众访问分钟数可以比较任何长度或类型的编程。此外，客户可以将此数字平均受众访问分钟数与线性电视平均访问分钟数指标进行比较或附加到其上。</p><p> 此面板可更灵活地衡量自定义时段的平均受众以及在事后更新持续时间分类的时间。</p><p>有关更多信息，请参阅 [“媒体平均受众访问分钟数”面板](/help/analysis-workspace/c-panels/average-minute-audience-panel.md).</p> |  | 2024 年 3 月 12 日 |
 | **人员到帐户的B2B架构转换** | 允许您转换数据集，以便更好地支持Customer Journey AnalyticsB2B报表方案中基于人员的查找。 此功能适用于基于以下类的B2B架构的数据集：<ul><li>XDM业务帐户人员关系</li><li>XDM业务机会人员关系</li><li>XDM商业营销列表成员</li><li>XDM商业营销活动成员</li></ul> | | 2024年3月26日 |
 | **Adobe Product Analytics：比较单个漏斗步骤中的事件** | 在“漏斗：摩擦”视图中，您现在可以比较单个漏斗步骤中的事件。 当您的历程具有步骤选项或正在运行A/B试验的步骤时，这尤其有用。 | 2024年3月29日 | 2024年4月12日 |
 | **管理员可以管理其组织中的所有位置** | “位置”页面上的新选项允许管理员查看和管理组织中的所有位置。 以前，管理员只能查看和管理他们创建的位置。 | | 2024 年 4 月 |

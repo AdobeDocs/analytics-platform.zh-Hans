@@ -4,10 +4,10 @@ title: Customer Journey Analytics 登陆页面
 role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
-workflow-type: ht
-source-wordcount: '1524'
-ht-degree: 100%
+source-git-commit: 6bd4a0462547966342a52115eb9d45e7c1e1ad25
+workflow-type: tm+mt
+source-wordcount: '1373'
+ht-degree: 89%
 
 ---
 
@@ -17,17 +17,11 @@ Customer Journey Analytics 的登录页突出[!DNL Analysis Workspace]显示了�
 
 >[!VIDEO](https://video.tv.adobe.com/v/334278/?quality=12)
 
-## 新的登陆页面功能 {#new-features}
+Customer Journey Analytics登录页面包含以下子选项卡：“项目”和“学习”。
 
-| 功能 | 描述 | 屏幕快照 |
-| --- | --- | --- |
-| 全屏展开[!UICONTROL 项目]表格 | 单击汉堡菜单图标，展开表格。此操作将折叠左边栏标签。 | ![展开所选表格，其中仅显示“项目”，无左侧边栏选项卡](assets/landing-collapse2.png) |
-| 自定义列宽 | 以前，列宽是固定的。现在可以通过拖动列分隔符进行调整。 | ![列宽选择器](assets/column-width.png) |
-| 重新排列固定项目 | 要上下移动固定项目，请单击固定项目旁边的省略号，然后选择&#x200B;**[!UICONTROL 向上移动]** 或 **[!UICONTROL 向下移动]**。 | ![移动固定项目](assets/move-up-down.png) |
-| 新表列 | 单击表格右上角的 [!UICONTROL 自定义表格] 图标。新表列包括： <ul><li>**[!UICONTROL 计划项目]**：当项目已计划时，设置为[!UICONTROL 开启]，或者，但项目未计划时，设置为[!UICONTROL 关闭]。点击 [!UICONTROL 开启] 链接，您可以看到有关计划项目的信息。如果您是项目所有者，也可[编辑项目计划](/help/analysis-workspace/export/t-schedule-report.md)。</li><li>**[!UICONTROL 项目 ID]**：项目 ID 可用于调试项目。</li><li>**[!UICONTROL 最长的日期范围]**：较长的日期范围会增加项目的复杂性，并可能增加处理和加载时间。 </li><li>**[!UICONTROL 查询次数]**：项目加载时向 Analytics 发出的请求总数。较多的项目查询次数会增加项目的复杂性，并可能增加处理和加载时间。此数据仅在加载项目或发送计划项目后可用。 </li></ul> | ![新列](assets/new-columns.png) |
-| **[!UICONTROL 创建项目]** | 当在 Workspace 中单击&#x200B;**[!UICONTROL 新建项目]**&#x200B;时，您可再次在[!UICONTROL 空白项目]和[!UICONTROL 空白移动记分卡]之间进行选择。 您也可以从公司创建的任何模板中进行选择。 | ![新建](assets/create-new.png) |
+**[!UICONTROL 项目]**&#x200B;是自定义的设计，结合了您构建的或其他人构建并与您共享的数据组件、表格和可视化图表。[!UICONTROL 项目]还指空白项目和空白移动记分卡。
 
-{style="table-layout:auto"}
+此 **[!UICONTROL 学习]** 选项卡包含实践视频导览、教程和文档链接。
 
 ## 在[!UICONTROL 项目]选项卡中导航 {#navigate-projects}
 
@@ -41,44 +35,53 @@ Customer Journey Analytics 的登录页突出[!DNL Analysis Workspace]显示了�
 >
 >以下几个设置在会话期间和会话之间保持不变。例如，您选择的选项卡、选择的筛选条件、选择的列以及列排序方向。搜索结果不是持久性的。
 
+### 自定义表列
+
+要自定义列宽，请拖动分隔每列的垂直条。
+
+要在项目列表中添加或删除列，请单击右上角的列图标（![全部登陆](assets/select-column.png)），然后选择或取消选择列标题。
+
+可用的列包括：
+
+| 列名称 | 描述 |
+|---------|----------|
+| [!UICONTROL **名称**] | 标识项目的名称。 |
+| [!UICONTROL **类型**] | 指示此类型是 Workspace 项目、移动记分卡还是文件夹。 |
+| [!UICONTROL **标记**] | 标记项目以将其整理到组中。 |
+| [!UICONTROL **已计划**] | 点击 [!UICONTROL 开启] 链接，您可以看到有关计划项目的信息。如果您是项目所有者，也可[编辑项目计划](/help/analysis-workspace/export/t-schedule-report.md)。 |
+| [!UICONTROL **项目角色**] | 标识项目角色：您是否为项目所有者，以及您是否具有编辑或复制项目的权限。 |
+| [!UICONTROL **报表包**] | 标识与项目关联的报告包。<br>面板中的表格和可视化图表从在面板的右上角选中的报告包中派生数据。报告包还确定在左边栏中有哪些组件可用。在项目中，您可以根据分析用例，使用一个或多个报告包。报告包列表按相关性排序。Adobe 在定义相关性时，依据当前用户在近期使用该包的频率以及该包在组织中的使用频率。 |
+| [!UICONTROL **所有者**] | 标识已创建项目的用户。 |
+| [!UICONTROL **共享对象**] | 显示当前与谁共享该项目。 |
+| [!UICONTROL **上次修改时间**] | 上次修改项目的日期和时间。 |
+| [!UICONTROL **上次打开时间**] | 标识当前查看项目页面的用户上次打开项目的日期。 |
+| [!UICONTROL **上次使用时间**] | 通过显示组织内任何用户上次打开项目的日期和时间，帮助确定项目对组织中的用户是否有价值。<p>此列仅供系统管理员使用。</p> |
+| [!UICONTROL **项目 ID**] | 可用于调试项目。 |
+| [!UICONTROL ****] | 较长的日期范围会增加项目的复杂性，并可能增加处理和加载时间。 |
+| [!UICONTROL **查询次数**] | 加载项目时向 Analytics 发出的请求总数。较多的项目查询次数会增加项目的复杂性，并可能增加处理和加载时间。此数据仅在加载项目或发送计划项目后可用。 |
+| [!UICONTROL **位置**] | 显示项目所在的文件夹。 |
+
+### 项目页面上的其他UI元素
+
 | UI 元素 | 定义 |
 | --- | --- |
 | 编辑偏好设置 | 可让您[!UICONTROL 查看教程]和[编辑用户偏好设置](/help/analysis-workspace/user-preferences.md)。 |
 | [!UICONTROL 新建] | 打开项目模式，您可以在其中创建 Workspace 项目或移动记分卡，也可以打开公司模板。 |
 | [!UICONTROL 显示更少<br> 显示更多] | 在不显示和显示横幅之间切换：![顶部横幅](assets/top-banner.png) |
-| [!UICONTROL Workspace 项目] | 创建一个空白 [Workspace 项目](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans)以便您进行设计和构建。 |
+| [!UICONTROL Workspace 项目] | 创建一个空白 [Workspace 项目](/help/analysis-workspace/home.md)以便您进行设计和构建。 |
 | [!UICONTROL 移动记分卡] | 创建一个空白[移动记分卡](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html)以便您进行设计和构建。 |
 | [!UICONTROL 打开培训教程] | 打开 Workspace 培训教程，它会通过分步教程指导您完成构建新的入门项目的过程。 |
 | [!UICONTROL 打开发行说明] | 打开最新的 Adobe Experience Cloud 发行说明的 Adobe Analytics 部分。 |
-| 筛选条件图标 | 按标记、数据视图、所有者、类型和其他筛选条件（“我的”、“已与我共享”、“收藏”和“已批准”）进行筛选 |
+| 筛选条件图标 | 按标记、报告包、所有者、类型和其他过滤器（“我的”、“已与我共享”、“收藏”和“已批准”）进行过滤 |
 | 搜索栏 | 搜索表中的所有列。 |
 | 选区框 | 选择一个或多个项目可显示您可以执行的项目管理操作：**删除**、**共享**、**重命名**、**复制**、**取消固定**、**上移**、**下移**、**标记**、**批准**、**导出 CSV** 和&#x200B;**移至**。您可能无权执行所有列出的操作。 |
 | [!UICONTROL 收藏] | 在可用作筛选条件的收藏项目或文件夹旁边添加星号。 |
 | [!UICONTROL 名称] | 标识项目的名称。 |
 | 固定图标 | 固定项目，使它们始终显示在列表顶部，但您可以通过上移或下移项目来重新调整其顺序。使用省略号选项菜单并在列表中选择&#x200B;**上移**&#x200B;或&#x200B;**下移**。 |
-| 信息 (i) 图标 | 显示有关项目的以下信息：类型、项目角色、所有者、描述及其共享对象。它还指示谁可以[编辑或复制](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=zh-Hans)此项目。 |
+| 信息 (i) 图标 | 显示有关项目的以下信息：类型、项目角色、所有者、描述及其共享对象。它还指示谁可以[编辑或复制](/help/analysis-workspace/curate-share/share-projects.md)此项目。 |
 | 省略号 (...) | 显示您可以执行的项目管理操作：**删除**、**共享**、**重命名**、**复制**、**取消固定**、**上移**、**下移**、**标记**、**批准**、**导出 CSV** 和&#x200B;**移至**。您可能无权执行所有列出的操作。 |
-| [!UICONTROL 类型] | 指示此类型是 Workspace 项目、移动记分卡还是文件夹。 |
-| [!UICONTROL 标记] | 标记项目以将其整理到组中。 |
-| [!UICONTROL 项目角色] | 标识项目角色：您是否为项目所有者，以及您是否具有编辑或复制项目的权限。 |
-|  | 标识与项目关联的数据视图。<br>面板中的表格和可视化图表从面板右上角选择的数据视图中派生数据。数据视图还确定了左侧边栏中可用的组件。在项目中，可以根据分析用例使用一个或多个数据视图。数据视图列表按相关性排序。Adobe 在定义相关性时，依据当前用户在近期使用该包的频率以及该包在组织中的使用频率。 |
-| [!UICONTROL 所有者] | 标识已创建项目的用户。 |
-| [!UICONTROL 上次打开时间] | 标识您上次打开项目的日期。 |
-| 自定义表格图标 | 选择要在表中查看的列。要在项目列表中添加或删除列，请单击右上角的列图标（![全部登陆](assets/select-column.png)），然后选择或取消选择列标题。 |
 | 显示：文件夹和项目或所有项目 | 更改表格上的视图设置可根据文件夹结构显示文件夹和项目&#x200B;**或**&#x200B;在无结构的列表中显示所有项目。 |
-| &lt;（“返回”按钮） | 返回工作区项目中最近的登录页配置。离开登录页时的页面配置将在返回时保持不变。 |
-
-### 弃用项目管理器页面 {#deprecate-pm-page}
-
-随着新登陆页面的发布，我们弃用了项目管理器，如组件管理器下所列。新登录页处理旧项目管理器页面的所有功能以及更多功能。
-
-项目经理页面的一个常见用例是查看所有项目。要使用筛选栏在新登录页上查看所有项目，请选择&#x200B;**其他筛选条件**，然后选择&#x200B;**全部显示**。
-
-![其他筛选条件](assets/other-filters.png)
-
-如果您在“文件夹和项目”视图中，将弹出一个模式，询问您是否要切换到“所有项目”视图，这样可以更轻松地查看所有项目，而不必查看它们可能组织在其中的文件夹。选择&#x200B;**切换到“所有项目”视图**&#x200B;可更好地查看您有权访问的所有项目。
-
-![切换到所有项目](assets/switch-all-projects-view.png)
+| &lt;（“返回”按钮） | 返回到 Workspace 项目或报告中最新的登陆页面配置。您离开登陆页面时的页面配置将在您返回时保留。 |
 
 ## 使用“学习”选项卡 {#navigate-learning}
 

@@ -3,7 +3,8 @@ description: 了解如何在表或折线图中查看预测。
 title: 如何在Analysis Workspace中查看预测
 feature: Visualizations
 role: User
-source-git-commit: e52cee369be75785a99798d5acfa9cfc5aba2986
+exl-id: 4a8b602c-e6aa-4a46-bba9-642387e6af88
+source-git-commit: fea1b12a594a820ab2e55f850ca95c5a373184f0
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 1%
@@ -16,7 +17,7 @@ ht-degree: 1%
 
 ## 在表中查看预测
 
-您可以在时间序列自由格式表中查看预测。 在中为自由格式表启用了显示预测时 [用户首选项](../user-preferences.md)，将自动为添加到表中的第一个指标列显示预测。 对于任何其他列：
+您可以在时间序列自由格式表中查看预测。 时间 [!UICONTROL 显示预测] 在中为自由格式表启用 [用户首选项](../user-preferences.md)，将自动为添加到表中的第一个指标列显示预测。 对于任何其他列：
 
 1. 选择列设置图标 ![列设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) 在列标题中，然后确保 **[!UICONTROL 显示预测]** 在选项列表中选中。 有关更多信息，请参阅[列设置](../visualizations/freeform-table/column-row-settings/column-settings.md)。
 
@@ -51,4 +52,3 @@ ht-degree: 1%
    * 量度的预测值上限
    * 量度的预测值下限
 * 阴影区域显示预测的置信带。
-

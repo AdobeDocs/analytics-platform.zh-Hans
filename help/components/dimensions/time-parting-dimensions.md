@@ -4,10 +4,10 @@ title: 时间划分维度
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: e3b80438f5bffc94efd24b80a93d2e4674906780
 workflow-type: tm+mt
 source-wordcount: '196'
-ht-degree: 62%
+ht-degree: 61%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 62%
 | 每天时间 | 0 时至 23 时 |
 | 上午/下午 | 上午、下午 |
 | 每周时间 | 星期一、星期二、星期三、星期四、星期五、星期六、星期日 |
-| 周末/工作日 | 周末、工作日 |
+| 工作日/周末 | 工作日、周末 |
 | 日期 | 1 日至 31 日 |
 | 月份 | 一月至十二月 |
 | 每年的某一天 | 第 1 天至第 366 天 |
