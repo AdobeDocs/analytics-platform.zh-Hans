@@ -6,10 +6,10 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 17956f66d0bed46b876ba83aba8782c664fe2530
 workflow-type: tm+mt
-source-wordcount: '2484'
-ht-degree: 26%
+source-wordcount: '2764'
+ht-degree: 23%
 
 ---
 
@@ -24,9 +24,16 @@ ht-degree: 26%
 * 查看一个连接中的全部数据集。
 * 检查连接数据集的状态和摄取过程的状态。 例如，您的数据何时可用，以便可以从Analysis Workspace中的报表和分析开始。
 * 识别因错误配置导致的数据差异。 您是否丢失了行？如果是这样，那么丢失了哪些行？为什么？ 您是否错误配置了连接并导致Customer Journey Analytics中数据丢失？
+* 深入了解所有连接中摄取和可报告行的使用情况。
+
+[!UICONTROL 连接] 有两个接口： [[!UICONTROL 列表]](#list) 和 [[!UICONTROL 使用情况]](#usage).
 
 
-此表显示所有可用的连接。 您可以使用搜索快速搜索连接 ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) 盒子。
+## 列表
+
+此 [!UICONTROL 列表] interface是Connections的默认接口。 如果未选定，请选择 **[!UICONTROL 列表]** 选项卡访问该界面。
+
+此 [!UICONTROL 列表] 接口显示所有可用连接的表。 您可以使用搜索快速搜索连接 ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) 盒子。
 
 表中提供以下列/图标。
 
@@ -46,7 +53,7 @@ ht-degree: 26%
 
 您可以使用配置要显示的列 ![列设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). 这将显示 **自定义表** 允许您打开/关闭表格中的列的对话框。
 
-## 编辑连接
+### 编辑连接
 
 允许管理员编辑连接。
 
@@ -69,7 +76,7 @@ ht-degree: 26%
 请参阅 [创建或编辑连接](create-connection.md) 以了解更多信息。
 
 
-## 删除连接 {#connections-delete}
+### 删除连接 {#connections-delete}
 
 允许管理员删除连接。
 
@@ -91,7 +98,7 @@ ht-degree: 26%
 请参阅 [删除后果](/help/admin/cja-deletion.md) 有关删除连接后果的更多信息。
 
 
-## 创建数据视图
+### 创建数据视图
 
 允许管理员为连接创建数据视图。
 
@@ -112,7 +119,7 @@ ht-degree: 26%
 
 有关更多信息，请参阅[创建或编辑数据视图](/help/data-views/create-dataview.md)。
 
-## 连接详细信息 {#connection-detail}
+### 连接详细信息 {#connection-detail}
 
 要转至连接的详细信息，请在连接表中选择一个连接名称。
 
@@ -153,7 +160,7 @@ ht-degree: 26%
 >
 >2021年8月13日之前摄取的任何数据均不反映在 [!UICONTROL 连接] 界面。
 
-### “连接”面板
+#### “连接”面板
 
 在数据集表中未选择数据集时，“连接”界面右侧的面板会显示连接选项和详细信息。
 
@@ -173,7 +180,7 @@ ht-degree: 26%
 | [!UICONTROL 上次修改时间] | 显示上次更改连接的时间戳。 |
 | [!UICONTROL 上次修改人] | 显示上次修改连接的人员。 |
 
-### 数据集面板
+#### 数据集面板
 
 在数据集表中选择某个数据集后，“连接”界面右侧的面板将显示选定数据集的详细信息。
 
@@ -195,6 +202,31 @@ ht-degree: 26%
 | [!UICONTROL 数据集类型] | [!UICONTROL 事件]、[!UICONTROL 查找]或[!UICONTROL 档案]。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#configure-dataset) |
 | [!UICONTROL 架构] | 显示此数据集所基于的Experience Platform架构。 |
 | [!UICONTROL 数据集 ID] | 此数据集ID以Experience Platform生成。 |
+
+
+## 使用情况
+
+此 [!UICONTROL 使用情况] 界面显示所有连接中摄取和可报告行的使用情况。 此界面支持您确定您的Customer Journey Analytics使用是否符合合同约定的内容。
+
+选择 **[!UICONTROL 使用情况]** 选项卡访问该界面。
+
+要报告使用情况，请执行以下操作：
+
+1. 选择 **[!UICONTROL 时间范围]**. 您可以选择 **[!UICONTROL 过去6个月]**， **[!UICONTROL 年初至今]**，或 **[!UICONTROL 过去2年]**.
+1. 选择 **[!UICONTROL 间隔]**. 您可以选择 **[!UICONTROL 每月]** 或 **[!UICONTROL 每季度]**.
+
+对象 [!UICONTROL 已摄取的行]：
+
+* 此时会有一个框显示 [!UICONTROL 总计] 引入的行数。
+* 此时将显示一个框，其中显示了 [!UICONTROL 上个月] 和百分比的变化(以 <span style="color:green">▲</span> 或 <span style="color:c64545">▼</span>)。
+* 折线图显示  <span style="color:53b2ad">◼︎</span> 累计摄取的行和 <span style="color:4046c3">◼︎</span> 每月摄取的行。<br/>您可以将鼠标悬停在折线图中每行的任何数据点上，查看显示选定数据点的日期和行数的弹出窗口。
+
+
+对象 [!UICONTROL 可报告行]：
+
+* 随即会显示一个框 [!UICONTROL 总计] 可报告行数。
+* 此时将显示一个框，其中显示了 [!UICONTROL 上个月] 和百分比的变化(以 <span style="color:green">▲</span> 或 <span style="color:c64545">▼</span>)。
+* 折线图显示  <span style="color:53b2ad">◼︎</span> 累积可报告行和 <span style="color:4046c3">◼︎</span> 每月可报告的行。<br/>您可以将鼠标悬停在折线图中每行的任何数据点上，查看显示选定数据点的日期和行数的弹出窗口。
 
 
 >[!MORELIKETHIS]
