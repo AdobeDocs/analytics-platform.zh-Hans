@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1443'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ Adobe 发布了](https://experienceleague.adobe.com/docs/analytics/components/ma
 
 Adobe Analytics 客户可以使用 Analytics Source Connector 在 Adobe Experience Platform 和 Customer Journey Analytics 中轻松利用他们的报告包。有关使用 Analytics Source Connector 的信息，请参阅有关如何[从 Adobe Analytics 中摄取数据并将其用于 Customer Journey Analytics](../data-ingestion/analytics.md) 的快速入门指南。有关更多信息，另请参阅[在 UI 中创建 Adobe Analytics 源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)。
 
-Adobe还提供了使用实施数据收集的功能 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=zh-Hans) 或 [Adobe Experience Platform移动SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hans). 这些方法极大地扩展了数据收集的可能性。 字段数量不再有限制，也不再需要将数据元素映射到Analytics中的prop、eVar和事件。 您可以使用不同类型的无限模式元素，并使用 Customer Journey Analytics [数据视图](/help/data-views/data-views.md)以多种方式表示它们。直接发送到 Adobe Experience Platform 时，数据可用性的速度会提高，因为通过 Adobe Analytics 进行数据处理的时间被去除了。
+Adobe 还提供使用 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=zh-Hans) 或 [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hans) 实施数据收集的功能。 这些方法极大地扩展了数据收集的可能性。不再有字段数量的限制，也不再需要将数据元素映射到属性、eVar 和 Analytics 中的事件。您可以使用不同类型的无限模式元素，并使用 Customer Journey Analytics [数据视图](/help/data-views/data-views.md)以多种方式表示它们。直接发送到 Adobe Experience Platform 时，数据可用性的速度会提高，因为通过 Adobe Analytics 进行数据处理的时间被去除了。
 
 **使用 Experience Platform SDK 的优势:**
 

@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: FAQ
 role: User
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2523'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -153,7 +153,7 @@ Adobe 最近改变了在 Customer Journey Analytics 中处理数据的方式：
 | 删除 [!UICONTROL Adobe Experience Platform] 中的架构，但不删除与该架构关联的数据集 | [!UICONTROL Adobe Experience Platform][!UICONTROL  不允许删除具有一个或多个关联数据集的架构。]但是，具有相应权限集的管理员可以先删除关联数据集，然后再删除架构。 |
 | 删除 [!UICONTROL Adobe Experience Platform] 数据湖中的数据集 | 删除 Adobe Experience Platform 数据湖中的数据集将阻止数据从该数据集流向任何包括该数据集的 Customer Journey Analytics 连接。自动从关联的 Customer Journey Analytics 连接删除来自该数据集的任何数据。 |
 | 删除 [!UICONTROL Customer Journey Analytics] 中的数据集 | 请联系您的 Adobe 帐户团队，以启动删除已保存连接中数据集的过程。 |
-| 从数据集中删除批次（在 [!UICONTROL Adobe Experience Platform] 中） | 如果从 [!UICONTROL Adobe Experience Platform] 数据集删除了批次，则从任何包含该特定批次的 Customer Journey Analytics 连接删除同一批次。Customer Journey Analytics 会收到批次已在 [!UICONTROL Adobe Experience Platform] 中删除的通知。 |
+| 从数据集中删除批次（在 [!UICONTROL Adobe Experience Platform] 中） | 如果从 [!UICONTROL Adobe Experience Platform] 数据集删除了批次，则从任何包含该特定批次的 Customer Journey Analytics 连接删除同一批次。Customer Journey Analytics 会接收到批次已在 [!UICONTROL Adobe Experience Platform] 中删除的通知。 |
 | **将批次摄取**&#x200B;到 [!UICONTROL Customer Journey Analytics] 中时删除该批次 | 如果数据集中只有一个批次，则没有来自该批次的数据或来自该批次的部分数据出现在 [!UICONTROL Customer Journey Analytics] 中。并且回滚该摄取。例如，如果数据集中有 5 个批次，而在删除该数据集时已摄取其中 3 个批次，则来自这 3 个批次的数据出现在 [!UICONTROL Customer Journey Analytics] 中。 |
 | 删除 [!UICONTROL Customer Journey Analytics] 中的连接 | 出现错误消息，其中指示：<ul><li>任何为已删除的连接创建的数据视图都将不再起作用。</li><li> 同样地，任何依赖于已删除的连接中的数据视图的 Workspace 项目都停止运行。</li></ul> |
 | 删除 [!UICONTROL Customer Journey Analytics] 中的数据视图 | 一条错误消息指示任何依赖于这个已删除的数据视图的 Workspace 项目都将停止运行。 |
@@ -266,4 +266,4 @@ RDC 目前包括以下位置（可能发生变化）：
 Customer Journey Analytics 需要来自 Adobe Experience Platform 的数据集，因此，您的数据流/事件转发配置需要 Adobe Experience Platform 服务将数据从区域数据中心路由到 Adobe Experience Platform 实例所在的数据中心。Customer Journey Analytics 及其支持服务和基础设施部署在同一个 Adobe Experience Platform 实例中。
 
 
-请参阅 [数据收集概述](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) 了解有关Adobe Experience Platform Edge Network及其区域数据中心之外的数据收集过程的更多信息。
+有关在 Adobe Experience Platform Edge Network 及其区域数据中心之外收集数据的过程，请参阅[数据收集概述](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html)。
