@@ -4,10 +4,10 @@ title: Customer Journey Analytics 登陆页面
 role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 6bd4a0462547966342a52115eb9d45e7c1e1ad25
+source-git-commit: 0fb09e9a7d23c88fb3d18f39816dfae32b131469
 workflow-type: tm+mt
-source-wordcount: '1373'
-ht-degree: 89%
+source-wordcount: '1388'
+ht-degree: 88%
 
 ---
 
@@ -55,7 +55,7 @@ Customer Journey Analytics登录页面包含以下子选项卡：“项目”和
 | [!UICONTROL **共享对象**] | 显示当前与谁共享该项目。 |
 | [!UICONTROL **上次修改时间**] | 上次修改项目的日期和时间。 |
 | [!UICONTROL **上次打开时间**] | 标识当前查看项目页面的用户上次打开项目的日期。 |
-| [!UICONTROL **上次使用时间**] | 通过显示组织内任何用户上次打开项目的日期和时间，帮助确定项目对组织中的用户是否有价值。<p>此列仅供系统管理员使用。</p> |
+| [!UICONTROL **上次使用时间**] | 通过显示组织内任何用户上次打开项目的日期和时间，帮助确定项目对组织中的用户是否有价值。<p>查看此列时，请考虑以下事项：</p><ul><li>使用情况信息自2023年9月起可用。</li><li>此列仅供系统管理员使用。</li></ul> |
 | [!UICONTROL **项目 ID**] | 可用于调试项目。 |
 | [!UICONTROL ****] | 较长的日期范围会增加项目的复杂性，并可能增加处理和加载时间。 |
 | [!UICONTROL **查询次数**] | 加载项目时向 Analytics 发出的请求总数。较多的项目查询次数会增加项目的复杂性，并可能增加处理和加载时间。此数据仅在加载项目或发送计划项目后可用。 |

@@ -3,10 +3,10 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 7f0a348738d2f3a53ec57558d321a3501afe8d00
+source-git-commit: f2c6c0624db091c49e3b3c3a3453e7a3e5b92f95
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 48%
+source-wordcount: '923'
+ht-degree: 43%
 
 ---
 
@@ -24,6 +24,7 @@ ht-degree: 48%
 | **使用情况量度** | 此 [使用量度界面](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans) 显示所有连接中摄取和可报告行的使用情况。 在此界面中可确定您的 Customer Journey Analytics 使用情况是否遵守合同条款。 |  | 2024 年 3 月 13 日 |
 | **Media Analytics 报告 - 平均受众访问分钟数 (AMA)** | CJA 中现已提供“平均受众访问分钟数”面板。Media Analytics客户可以使用“平均受众访问分钟数”面板来更好地了解其内容的平均使用情况。 <p>平均受众访问分钟数可以比较任何长度或类型的编程。此外，客户可以将此数字平均受众访问分钟数与线性电视平均访问分钟数指标进行比较或附加到其上。</p><p> 此面板可更灵活地衡量自定义时段的平均受众以及在事后更新持续时间分类的时间。</p><p>有关更多信息，请参阅 [“媒体平均受众访问分钟数”面板](/help/analysis-workspace/c-panels/average-minute-audience-panel.md).</p> |  | 2024 年 3 月 12 日 |
 | **人员到帐户的B2B架构转换** | 允许您转换数据集，以便更好地支持Customer Journey AnalyticsB2B报表方案中基于人员的查找。 此功能适用于基于以下类的B2B架构的数据集：<ul><li>XDM业务帐户人员关系</li><li>XDM业务机会人员关系</li><li>XDM商业营销列表成员</li><li>XDM商业营销活动成员</li></ul> | | 2024年3月26日 |
+| **计算指标管理器和过滤器管理器的“用于”列中包含的Report Builder使用情况** | 查看 **使用位置** 量度管理器或过滤器管理器中的列，现在提供了该Report Builder的使用情况数据。<p>以前，过滤器管理器中的使用情况数据仅可用于警报、项目、计划项目和计算量度；而计算量度管理器中的使用情况数据仅可用于警报、项目和计划项目。</p> |  | 3月底或4月初 |
 | **Adobe Product Analytics：比较单个漏斗步骤中的事件** | 在“漏斗：摩擦”视图中，您现在可以比较单个漏斗步骤中的事件。 当您的历程具有步骤选项或正在运行A/B试验的步骤时，这尤其有用。 | 2024年3月29日 | 2024年4月12日 |
 | **管理员可以管理其组织中的所有位置** | “位置”页面上的新选项允许管理员查看和管理组织中的所有位置。 以前，管理员只能查看和管理他们创建的位置。 | | 2024 年 4 月 |
 | **受众将发布到Experience Platform中新的“受众”部分** | 现在，从Customer Journey Analytics发布的受众可在Experience Platform中新增的“受众”部分中使用。 以前，从Customer Journey Analytics发布的受众可在Platform的“区段”部分下使用。 此改进提供了以下好处：<ul><li>受众在出现在Platform中之前不再有1小时的延迟；发布后，即可使用它们。</li><li>在Platform中，可以使用“来源”列对受众进行排序，该列显示了最初发布受众的应用程序。</li><li>通过Platform中的过滤和排序选项，您可以更快地找到相关受众。</li></ul>有关更多信息，请参阅部分 [在Experience Platform中使用Customer Journey Analytics受众](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#audiences-aep). |  | 2024 年 4 月 |
