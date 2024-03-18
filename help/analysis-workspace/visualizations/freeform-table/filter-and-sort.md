@@ -4,10 +4,10 @@ title: 排序和过滤表格
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 772fa17f013ef0543027a7f60be780e9cf8f634a
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 67%
+source-wordcount: '924'
+ht-degree: 69%
 
 ---
 
@@ -53,12 +53,15 @@ Analysis Workspace 中的过滤器可帮助您显示最重要的信息。
 
    按住Shift键选择一定范围的行，或按住Command键(在Mac上)或Ctrl键（在Windows上）选择多行。
 
-### 右键单击>删除选定的行
+<!--### Right-click > Delete selected rows
 
-1. 选择1行或更多行。
-1. 右键单击并选择 **[!UICONTROL 删除所选行]**.
+Note: this option does not seem to work. AN-338422
 
-   此操作将从表中删除行并应用表过滤器。
+1. Select 1 or more rows. 
+1. Right-click and select **[!UICONTROL Delete Selected Rows]**. 
+
+   This action will remove the rows from the table and apply a table filter.-->
+
 
 ### 对表应用简单或高级过滤器
 
@@ -72,7 +75,7 @@ Analysis Workspace 中的过滤器可帮助您显示最重要的信息。
 
    可以使用以下选项：
 
-   | 选项 | 函数 |
+   | 选项 | 功能 |
    |---------|----------|
    | [!UICONTROL **搜索词或短语**] | 指定要作为过滤依据的单词或短语。 仅显示包含指定单词或确切短语的行。 |
    | [!UICONTROL **包括未指定的项（无）**] | 选择此选项可在表中显示不属于表格的任何维度的数据。<!--what is this?--> |
