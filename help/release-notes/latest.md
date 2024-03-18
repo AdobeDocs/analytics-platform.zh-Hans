@@ -3,7 +3,7 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: f2c6c0624db091c49e3b3c3a3453e7a3e5b92f95
+source-git-commit: adb62f1a4c48955f890909d4f4b090786c3968d3
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 43%
