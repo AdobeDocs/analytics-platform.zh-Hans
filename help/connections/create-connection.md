@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 source-git-commit: 948f5d986d9cde2b2994165896e0a22baace88ab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2888'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 95%
 
 {style="table-layout:auto"}
 
-如果您不确定您拥有哪个Customer Journey Analytics包，请联系您的管理员。
+如果您不确定您拥有的是哪个 Customer Journey Analytics 包，请联系您的管理员。
 
 ## 创建和配置连接 {#create-connection}
 
@@ -187,10 +187,10 @@ Customer Journey Analytics 支持将标识映射作为个人 ID。Identity Map �
 2. 要显示 Adob&#x200B;e Experience Platform 中存在的所有数据集，请执行 `Show Tables` 查询。
 
 
-## 大型查找数据集的算法修剪
+## 对大型查找数据集进行算法修剪
 
-创建连接时，可添加大型数据集以进行查找。 例如，表示产品目录的数据集，以便在构建报告和可视化图表时查找描述性产品信息。 此类大型查找数据集可能会超过当前作为护栏实施的最大1000万个唯一查找，从而导致跳过其他数据。
+创建连接时，您可以添加大型数据集以进行查找。例如，表示产品目录的数据集，以便在构建报告和可视化图表时可以查找描述性产品信息。如此大的查找数据集可能会超过目前作为护栏实现的最大 1,000 万个唯一查找，从而导致跳过其他数据。
 
-您可以请求对如此大型的查找数据集进行算法修剪。 此修剪将只加载查找数据集中的数据，这些数据的键在连接的事件数据集部分可用。 算法中使用的引用计数可追溯到90天，每周刷新一次。
+您可以请求对如此大的查找数据集进行算法修剪。此修剪将仅加载查找数据集中的数据，这些数据的键在连接的事件数据集部分中可用。算法中使用的引用计数可以追溯到 90 天，并且每周刷新一次。
 
-请联系您的Adobe代表以获取更多信息。
+有关更多信息，请联系您的 Adobe 代表。
