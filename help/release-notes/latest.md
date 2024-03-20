@@ -3,16 +3,16 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: adb62f1a4c48955f890909d4f4b090786c3968d3
+source-git-commit: 20e99275a42312ed974ac4c1af28ede73180e748
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 91%
+source-wordcount: '957'
+ht-degree: 83%
 
 ---
 
 # 当前的 Adobe Customer Journey Analytics 发行说明（2024 年 3 月）
 
-**上次更新日期**：2024 年 3 月 13 日
+**上次更新**：2024年3月20日
 
 这些发行说明涵盖 2024 年 3 月 13 日至 2024 年 4 月的发行期。Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
@@ -26,7 +26,7 @@ ht-degree: 91%
 | **个人到帐户的 B2B 架构转换** | 允许您转换数据集以更好地支持 Customer Journey Analytics B2B 报告场景中基于人员的查找。该功能适用于基于以下类的 B2B 模式数据集：<ul><li>XDM 业务帐户人员关系</li><li>XDM 业务机会人员关系</li><li>XDM 商业营销列表成员</li><li>XDM 商业营销活动成员</li></ul> | | 2024 年 3 月 26 日 |
 | **计算指标管理器和过滤器管理器的“用于”列中包含的Report Builder使用情况** | 查看 **使用位置** 量度管理器或过滤器管理器中的列，现在提供了该Report Builder的使用情况数据。<p>以前，过滤器管理器中的使用情况数据仅可用于警报、项目、计划项目和计算量度；而计算量度管理器中的使用情况数据仅可用于警报、项目和计划项目。</p> |  | 3月底或4月初 |
 | **Adobe Product Analytics：比较单个漏斗步骤中的事件** | 在漏斗：摩擦视图中，您现在可以比较单个漏斗步骤内的事件。当您的历程有步骤选项或正在运行 A/B 实验的步骤时，这个功能特别有用。 | 2024 年 3 月 29 日 | 2024 年 4 月 12 日 |
-| **管理员可以管理其组织中的所有位置** | “位置”页面上的新选项允许管理员查看和管理组织中的所有位置。以前，管理员只能查看和管理他们创建的位置。 | | 2024 年 4 月 |
+| **管理员可以管理其组织中的所有位置和帐户** | 通过“位置”选项卡（位于“组件”>“导出”页面上）上的新选项，管理员可以查看和管理组织中的所有位置。 <p>Location accounts选项卡（位于Components > Exports页面上）上的新选项允许管理员查看和管理组织中的所有帐户。</p><p>以前，管理员只能查看和管理他们创建的位置和帐户。</p> | | 2024 年 4 月 |
 | **受众已发布到 Experience Platform 中的新“受众”部分** | 从 Customer Journey Analytics 中发布的受众现在可以在 Experience Platform 的新“受众”部分中找到。此前，从 Customer Journey Analytics 发布的受众可在 Platform 的“细分”部分下找到。此改进具有以下优点：<ul><li>受众出现在 Platform 前不再有 1 小时的延迟；它们在发布后几秒钟即可使用。</li><li>可以使用“来源”列在 Platform 中对受众进行排序，该列显示最初发布受众的应用程序。</li><li>Platform 中的筛选和排序选项使您能够更快地找到相关受众。</li></ul>有关详细信息，请参阅[在 Experience Platform 中使用 Customer Journey Analytics 受众](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-Hans#audiences-aep)部分。 |  | 2024 年 4 月 |
 | **Experience Edge 机器人检测** | 通过[机器人检测](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html)，可将 Web SDK、Mobile SDK 和 Server API 生成的事件视为由已知的蜘蛛程序和机器人生成。 | | 2024 年 4 月 29 日 |
 
