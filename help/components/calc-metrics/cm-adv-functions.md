@@ -4,9 +4,9 @@ description: 可通过以下方法访问这些函数：选中函数下拉列表�
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: cfaf29b8dd92325a4e5fdd2a960de798178db933
 workflow-type: tm+mt
-source-wordcount: '3062'
+source-wordcount: '3024'
 ht-degree: 98%
 
 ---
@@ -67,10 +67,6 @@ Approximate Count Distinct (customer ID eVar) 是此函数的常见用例。
 以下表示在报告中使用“近似客户”量度的方式：
 
 ![显示独特访客和近似客户的自由格式表 ](assets/approx-customers.png)
-
-## 超出的独特数
-
-Count()、RowCount() 和 Approximate Count Distinct() 会受到[“超出的独特数”限制](https://experienceleague.adobe.com/docs/analytics/technotes/low-traffic.html)的约束。如果维度在特定月份内达到“超出的独特数”限制，则该值将计数为 1 个维度项目。
 
 ## 比较计数函数
 
