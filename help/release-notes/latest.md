@@ -6,7 +6,7 @@ feature: Release Notes
 source-git-commit: 20e99275a42312ed974ac4c1af28ede73180e748
 workflow-type: tm+mt
 source-wordcount: '957'
-ht-degree: 83%
+ht-degree: 92%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 83%
 | **使用情况量度** | [使用量度界面](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html)显示所有连接中摄取和可报告的行的使用情况。在此界面中可确定您的 Customer Journey Analytics 使用情况是否遵守合同条款。 |  | 2024 年 3 月 13 日 |
 | **Media Analytics 报告 - 平均受众访问分钟数 (AMA)** | CJA 中现已提供“平均受众访问分钟数”面板。Media Analytics 客户使用“平均受众访问分钟数”面板可更好地了解其内容的平均使用情况。 <p>平均受众访问分钟数可对任何长度或类型的节目进行比较。此外，客户可以将此数字平均受众访问分钟数与线性电视平均访问分钟数量度进行比较或附加到其上。</p><p> 此面板可更灵活地衡量自定义时段的平均受众以及在事后更新持续时间分类的时间。</p><p>有关详细信息，请参阅[媒体平均受众访问分钟数面板](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)。</p> |  | 2024 年 3 月 12 日 |
 | **个人到帐户的 B2B 架构转换** | 允许您转换数据集以更好地支持 Customer Journey Analytics B2B 报告场景中基于人员的查找。该功能适用于基于以下类的 B2B 模式数据集：<ul><li>XDM 业务帐户人员关系</li><li>XDM 业务机会人员关系</li><li>XDM 商业营销列表成员</li><li>XDM 商业营销活动成员</li></ul> | | 2024 年 3 月 26 日 |
-| **计算指标管理器和过滤器管理器的“用于”列中包含的Report Builder使用情况** | 查看 **使用位置** 量度管理器或过滤器管理器中的列，现在提供了该Report Builder的使用情况数据。<p>以前，过滤器管理器中的使用情况数据仅可用于警报、项目、计划项目和计算量度；而计算量度管理器中的使用情况数据仅可用于警报、项目和计划项目。</p> |  | 3月底或4月初 |
+| **Report Builder 的使用情况包含在计算量度管理器和过滤器管理器的“用于”列中** | 在计算量度管理器或过滤器管理器中查看“**用于**”列时，Report Builder 现在可提供使用情况数据。<p>以前，过滤器管理器中的使用情况数据仅适用于警报、项目、已计划项目和计算量度；而计算量度管理器中的使用情况数据仅适用于警报、项目和已计划项目。</p> |  | 三月底或四月初 |
 | **Adobe Product Analytics：比较单个漏斗步骤中的事件** | 在漏斗：摩擦视图中，您现在可以比较单个漏斗步骤内的事件。当您的历程有步骤选项或正在运行 A/B 实验的步骤时，这个功能特别有用。 | 2024 年 3 月 29 日 | 2024 年 4 月 12 日 |
 | **管理员可以管理其组织中的所有位置和帐户** | 通过“位置”选项卡（位于“组件”>“导出”页面上）上的新选项，管理员可以查看和管理组织中的所有位置。 <p>Location accounts选项卡（位于Components > Exports页面上）上的新选项允许管理员查看和管理组织中的所有帐户。</p><p>以前，管理员只能查看和管理他们创建的位置和帐户。</p> | | 2024 年 4 月 |
 | **受众已发布到 Experience Platform 中的新“受众”部分** | 从 Customer Journey Analytics 中发布的受众现在可以在 Experience Platform 的新“受众”部分中找到。此前，从 Customer Journey Analytics 发布的受众可在 Platform 的“细分”部分下找到。此改进具有以下优点：<ul><li>受众出现在 Platform 前不再有 1 小时的延迟；它们在发布后几秒钟即可使用。</li><li>可以使用“来源”列在 Platform 中对受众进行排序，该列显示最初发布受众的应用程序。</li><li>Platform 中的筛选和排序选项使您能够更快地找到相关受众。</li></ul>有关详细信息，请参阅[在 Experience Platform 中使用 Customer Journey Analytics 受众](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-Hans#audiences-aep)部分。 |  | 2024 年 4 月 |
