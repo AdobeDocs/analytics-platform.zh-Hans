@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 0fb09e9a7d23c88fb3d18f39816dfae32b131469
+source-git-commit: 12007130027d152038b1210070f6ebd5de15c762
 workflow-type: tm+mt
 source-wordcount: '3246'
-ht-degree: 77%
+ht-degree: 78%
 
 ---
 
@@ -20,7 +20,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2024 年 3 月** | |
-| 有关“用于”列的使用情况信息仅从2023年9月开始提供。 | 澄清了关于 **使用位置** 上的列 [项目登陆页面](/help/getting-started/landing.md) 最早可追溯到2023年9月。 |
+| 有关“用于”列的使用情况信息仅从 2023 年 9 月开始提供。 | 阐明[项目登陆页面](/help/getting-started/landing.md)“**用于**”列的使用情况信息只能追溯到 2023 年 9 月。 |
 | **2024 年 2 月** | |
 | 项目共享文档更新 | 添加了关于如何 [查看与您共享的项目](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>还简化了有关[共享单个或多个项目](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role)的信息。</p> |
 | 添加了在配置云导出位置时将文件上传到Azure SAS和Azure RBAC的权限要求 | 添加了在以下情况下将文件上传到Azure SAS和Azure RBAC的确切权限要求 [配置云导出帐户](/help/components/exports/cloud-export-accounts.md) 和 [配置云导出位置](/help/components/exports/cloud-export-locations.md). |
@@ -76,7 +76,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | Edge Network地理查找 | [数据流设置](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hans) 地理查找服务如何提供统一的地理数据。 |
 | **2023 年 6 月** | |
 | 跨渠道分析和拼合 | 为了预测即将进行的更改，以支持拼合并进一步阐明如何使用拼合提升跨渠道分析，我们编辑了与跨渠道分析功能相关的文档，将[跨渠道分析](../use-cases/cross-channel/cross-channel.md)称作 Customer Journey Analytics 功能和用例，并将[拼合](../stitching/overview.md)作为实现此目的的重要功能。 |
-| PowerBI 和 Tableau 访问 Customer Journey Analytics 数据视图 | 通过 Customer Journey Analytics SQL Connector，SQL 可访问您在 Customer Journey Analytics 中定义的数据视图。[了解详情](/help/data-views/sql-connector.md) |
+| PowerBI 和 Tableau 访问 Customer Journey Analytics 数据视图 | Customer Journey AnalyticsBI扩展允许SQL访问您在Customer Journey Analytics中定义的数据视图。 [了解详情](/help/data-views/bi-extension.md) |
 | Adobe Journey Optimizer 数据视图 | Customer Journey Analytics 管理员有权访问 Customer Journey Analytics 中某些名为“AJO 数据视图（沙盒名称）”的额外数据视图。[了解详情](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html)。 |
 | 货币换算 | 更新了有关[货币换算](../data-views/component-settings/format.md#currency)支持的文档。 |
 | 计算量度更新 | 对计算量度文档作出了以下更新，以使其与当前的 Customer Journey Analytics 功能保持一致： <ul><li>更新了 Customer Journey Analytics 中提供的[默认计算量度](/help/components/calc-metrics/default-calcmetrics.md)的列表</li><li>更新了各种计算指标文章中的屏幕截图和过程 </li></ul> |
