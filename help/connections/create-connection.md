@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 948f5d986d9cde2b2994165896e0a22baace88ab
-workflow-type: ht
-source-wordcount: '2888'
-ht-degree: 100%
+source-git-commit: 18f7f4ab3ef368afb73445c5b6dccc3c4f468ef7
+workflow-type: tm+mt
+source-wordcount: '2910'
+ht-degree: 97%
 
 ---
 
@@ -191,6 +191,6 @@ Customer Journey Analytics 支持将标识映射作为个人 ID。Identity Map �
 
 创建连接时，您可以添加大型数据集以进行查找。例如，表示产品目录的数据集，以便在构建报告和可视化图表时可以查找描述性产品信息。如此大的查找数据集可能会超过目前作为护栏实现的最大 1,000 万个唯一查找，从而导致跳过其他数据。
 
-您可以请求对如此大的查找数据集进行算法修剪。此修剪将仅加载查找数据集中的数据，这些数据的键在连接的事件数据集部分中可用。算法中使用的引用计数可以追溯到 90 天，并且每周刷新一次。
+您可以请求对大型查找数据集进行算法修剪。 此算法修剪仅保留查找数据集中与事件数据集中的键匹配的数据。 这样，您就无需加载整个未修剪的查找数据集。 旧项目或不太常用的项目会被删除，这可能会对报表产生轻微影响，但会带来显着好处。 算法会回顾90天，并每周更新。
 
-有关更多信息，请联系您的 Adobe 代表。
+请联系您的Adobe支持团队以获取更多信息并启用此功能。
