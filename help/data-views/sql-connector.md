@@ -7,10 +7,10 @@ hide: true
 hidefromtoc: true
 exl-id: 1827a637-6c0f-43f2-862a-928089340d30
 role: Admin
-source-git-commit: 9489868fdf8de416c061239de1c0719f263288d1
+source-git-commit: a932d0d364761d949831ee261907b923a79a1f56
 workflow-type: tm+mt
-source-wordcount: '2731'
-ht-degree: 77%
+source-wordcount: '2730'
+ht-degree: 75%
 
 ---
 
@@ -63,7 +63,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/en/
 
 1. 选择![创建查询](assets/Smock_AddCircle_18_N.svg)**[!UICONTROL **&#x200B;创建查询&#x200B;**]**。
 
-1. 选择 `"cja"` **[!UICONTROL **&#x200B;数据库&#x200B;**]**.
+1. 选择 `cja` **[!UICONTROL **&#x200B;数据库&#x200B;**]**.
 
 1. 要执行查询，请键入您的SQL语句并选择 ![播放](assets/Smock_Play_18_N.svg) 按钮(或按 `[SHIFT]` + `[ENTER]`)。
 
@@ -78,7 +78,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/en/
 
    1. 从顶部栏中选择&#x200B;**[!UICONTROL **&#x200B;凭据&#x200B;**]**。
 
-   1. 选择 `"cja"` **[!UICONTROL **&#x200B;数据库&#x200B;**]**.
+   1. 选择 `cja` **[!UICONTROL **&#x200B;数据库&#x200B;**]**.
 
    1. 要复制命令字符串，请使用 ![复制](assets/Smock_Copy_18_N.svg) 在 **[!UICONTROL ** PSQL命令&#x200B;**]** 部分。
 
@@ -103,7 +103,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/en/
 
    1. 从顶部栏中选择&#x200B;**[!UICONTROL **&#x200B;凭据&#x200B;**]**。
 
-   1. 选择 `"cja"` **[!UICONTROL **&#x200B;数据库&#x200B;**]**.
+   1. 选择 `cja` **[!UICONTROL **&#x200B;数据库&#x200B;**]**.
 
    1. 如果需要，使用![复制](assets/Smock_Copy_18_N.svg)在 Power BI 中复制每个 Postgres 凭据参数（[!UICONTROL 主机]、[!UICONTROL 端口]、[!UICONTROL 数据库]、[!UICONTROL 用户名] 等）。
 
@@ -146,7 +146,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/en/
 
    1. 从顶部栏中选择&#x200B;**[!UICONTROL **&#x200B;凭据&#x200B;**]**。
 
-   1. 选择“cja” **[!UICONTROL **&#x200B;数据库&#x200B;**]**.
+   1. 选择 ` cja` **[!UICONTROL **&#x200B;数据库&#x200B;**]**.
 
    1. 如果需要，使用![复制](assets/Smock_Copy_18_N.svg)在 Tableau 中复制每个 Postgres 凭据参数（[!UICONTROL 主机]、[!UICONTROL 端口]、[!UICONTROL 数据库]、[!UICONTROL 用户名] 等）。
 
@@ -233,7 +233,7 @@ prod:all=> \dv
 | 多维度<br/>细分<br/>和顶部区别 | <pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1, dim2</pre><pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY 1, 2<br/>ORDER BY 1, 2</pre><pre>SELECT DISTINCT dim1, dim2<br/>FROM dv1</pre> |
 | 子选择：<br/>筛选其他<br/>个结果 | <pre>SELECT dim1, m1<br/>FROM (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;</br>  GROUP BY dim1<br/>)<br/>WHERE dim1 in (&#39;A&#39;, &#39;B&#39;)</pre> |
 | 子选择：<br/>正在跨以下位置查询<br/>数据视图 | <pre>SELECT key, SUM(m1) AS total<br/>FROM (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>  GROUP BY dim1<br/><br/>  UNION<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  FROM dv2<br/>  WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>  GROUP BY dim2<br/>GROUP BY key<br/>ORDER BY total</pre> |
-| 子选择： <br/>分层源， <br/>正在筛选， <br/>和聚合 | 使用子选择进行分层：<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FROM (<br/>  SELECT \_.dim1,\_.m1<br/>  FROM (<br/>    SELECT \* FROM dv1<br/>    WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>  ) \_<br/>  WHERE \_.dim1 in (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) rows<br/>GROUP BY 1<br/>ORDER BY total</pre><br/>使用 CTE WITH 的层：<br/><pre>WITH rows AS (<br/>  WITH \_ AS (<br/>    SELECT * FROM data_ares<br/>    WHERE \`timestamp\` BETWEEN &#39;2021-01-01&#39; AND &#39;2021-02-01&#39;<br/>  )<br/>  SELECT _.item, _.units FROM _<br/>  WHERE _.item IS NOT NULL<br/>)<br/>SELECT rows.item, SUM(rows.units) AS units<br/>FROM rows WHERE rows.item in (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>GROUP BY rows.item</pre> |
+| 子选择： <br/>分层源， <br/>正在筛选， <br/>和聚合 | 使用子选择进行分层：<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FROM (<br/>  SELECT \_.dim1,\_.m1<br/>  FROM (<br/>    SELECT \* FROM dv1<br/>    WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>  ) \_<br/>  WHERE \_.dim1 in (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) rows<br/>GROUP BY 1<br/>ORDER BY total</pre><br/>使用 CTE WITH 的层：<br/><pre>行为(<br/>  带有\_ AS (<br/>    选择*从数据区(_A)<br/>    其中\&#39;timestamp\&#39;介于&#39;2021-01-01&#39;和&#39;2021-02-01&#39;之间<br/>  )<br/>  选择\_.item， \_.units FROM \_<br/>  其中\_.item不为NULL<br/>)<br/>SELECT rows.item， SUM(rows.units) AS units<br/>FROM行，其中rows.item位于(&#39;A&#39;， &#39;B&#39;， &#39;C&#39;)<br/>GROUP BY rows.item</pre> |
 | 选择<br/>量度位于维度之前<br/>或与维度<br/>混合的情况 | <pre>SELECT SUM(metric1) AS m1, dim1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY 2</pre> |
 
 {style="table-layout:auto"}
