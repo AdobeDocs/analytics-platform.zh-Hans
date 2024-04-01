@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: ht
-source-wordcount: '1964'
-ht-degree: 100%
+source-git-commit: 5333034f70ca9ca8252af2874d443bd09e746384
+workflow-type: tm+mt
+source-wordcount: '1969'
+ht-degree: 99%
 
 ---
 
@@ -87,7 +87,7 @@ ht-degree: 100%
 | 功能 | 注释 |
 | --- | --- |
 | 面板 | 全面支持空白面板、“归因”面板、“任意形状”面板和“快速分析”面板。不支持“区段比较面板”和“Analytics for Target (A4T) 面板”。 |
-| Analytics for Target (A4T) | 通过 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 中的字段提供部分支持。有计划在 Target 活动和体验上支持适合 A4T 的名称。 |
+| Analytics for Target (A4T) | 目前为测试版。 通过 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 中的字段提供部分支持。有计划在 Target 活动和体验上支持适合 A4T 的名称。 |
 
 {style="table-layout:auto"}
 
@@ -115,7 +115,7 @@ ht-degree: 100%
 
 {style="table-layout:auto"}
 
-## 从未支持过 {#never}
+## 将永远不支持 {#never}
 
 * 使用跨设备协作的人员量度
 
