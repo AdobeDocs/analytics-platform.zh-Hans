@@ -3,9 +3,9 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 880bec05dbc14093f711ef54ee06ad2c8b178a7d
+source-git-commit: 7ba5a1d4d9f93cd15b76d26a880abe723120de72
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '1007'
 ht-degree: 94%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 94%
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **更改工作区项目的删除协议** | 以前，从未从系统中清除已删除的项目。 现在，我们将在180天后开始清除已删除的项目。 如果在删除后的180天内，用户拥有直接项目的URL，则仍可以通过Web界面访问项目。 | | 2024 年 3 月 14 日 |
+| **更改工作区项目的删除协议** | 以前，从未从系统中清除已删除的工作区项目。 现在，我们将在180天后开始清除已删除的项目。 如果在删除后的180天内，用户拥有直接项目的URL，那么他们仍可以通过Web界面访问已删除的项目。 | | 2024 年 3 月 14 日 |
 | **项目登陆页面新增一列** | 现在，在查看 **[!UICONTROL Customer Journey Analytics 登陆页面上的“项目”选项卡时，可以使用]**&#x200B;上次使用[列](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=zh-Hans)。 <p>通过显示项目上次打开的日期和时间，该信息可帮助您确定项目对组织中的用户是否有价值。以前，**[!UICONTROL 上次使用]**&#x200B;列仅在计算量度管理器、分段管理器和警报管理器中可用。</p> |  | 2024 年 3 月 13 日 |
 | **使用情况量度** | [使用量度界面](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans)显示所有连接中摄取和可报告的行的使用情况。在此界面中可确定您的 Customer Journey Analytics 使用情况是否遵守合同条款。 |  | 2024 年 3 月 13 日 |
 | **Media Analytics 报告 - 平均受众访问分钟数 (AMA)** | CJA 中现已提供“平均受众访问分钟数”面板。Media Analytics 客户使用“平均受众访问分钟数”面板可更好地了解其内容的平均使用情况。 <p>平均受众访问分钟数可对任何长度或类型的节目进行比较。此外，客户可以将此数字平均受众访问分钟数与线性电视平均访问分钟数量度进行比较或附加到其上。</p><p> 此面板可更灵活地衡量自定义时段的平均受众以及在事后更新持续时间分类的时间。</p><p>有关详细信息，请参阅[媒体平均受众访问分钟数面板](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)。</p> |  | 2024 年 3 月 12 日 |
