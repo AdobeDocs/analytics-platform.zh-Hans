@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 56b909a542915cd64251fb8849e55df920668025
+source-git-commit: eca9b101cea489b77af0ec5287ff96907e637d1e
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1523'
 ht-degree: 8%
 
 ---
@@ -121,7 +121,7 @@ ht-degree: 8%
 |---|--:|---|---|
 | 字段 | 10,000 | 系统强制的护栏 | 数据集中每行属性或字段的最大数量。 |
 | 唯一字符串 | 1000万 | 系统强制的护栏 | 每个查找数据集的最大唯一键数。 |
-| 行 | 100万 | 系统强制的护栏 | 连接中每个唯一人员ID的最大行数。 |
+| 行 | 100万 | 系统强制的护栏 | 连接内给定月份中每个唯一人员ID的最大行数。 |
 | 行大小 | 2 | 性能护栏/系统强制的护栏 | 引入Customer Journey Analytics的每行数据的平均大小（以KB为单位）（软限制）。 行大小的静态限制由Experience Platform中用于数据摄取的护栏决定。 |
 
 {style="table-layout:auto"}
