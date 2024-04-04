@@ -4,9 +4,9 @@ title: 智能题注
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 02e98b5ec1932e822c8d3805948d390eccc2b750
+source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '453'
 ht-degree: 2%
 
 ---
@@ -71,3 +71,7 @@ ht-degree: 2%
 如果您不希望生成智能字幕，可以通过转到可视化首选项并取消选中来关闭此功能 **[!UICONTROL 显示智能字幕]**.
 
 ![折线图可视化图表选项显示用于取消选中显示智能字幕的选项。](assets/toggle-captions.png)
+
+## 移动记分卡中的智能字幕
+
+有关更多信息，请参阅 [管理记分卡](/help/mobile-app/manage-scorecard.md)

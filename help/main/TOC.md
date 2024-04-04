@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: e8d55cfbb0bb50269e436bc3c38a88bc4830bed0
+source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1067'
 ht-degree: 79%
 
 ---
@@ -188,6 +188,7 @@ ht-degree: 79%
    + [Analytics 功能板 — 概述](../mobile-app/home.md)
    + [策划人任务](../mobile-app/curator.md)
    + [创建移动记分卡](../mobile-app/create-scorecard.md)
+   + [管理移动记分卡](../mobile-app/manage-scorecard.md)
    + [设置执行用户以使用功能板](../mobile-app/set-up-execs.md)
    + [执行用户快速入门指南](../mobile-app/executive.md)
 
