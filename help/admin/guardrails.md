@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: eca9b101cea489b77af0ec5287ff96907e637d1e
+source-git-commit: 8af2c48c4895e6015c16e3973b6cd213aff38441
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1606'
 ht-degree: 8%
 
 ---
@@ -127,6 +127,18 @@ ht-degree: 8%
 {style="table-layout:auto"}
 
 另请参阅Experience Platform [数据引入的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
+
+
+## 目标数据导出
+
+| 名称 | 值 | 限制类型 | 描述 |
+|---|--:|---|---|
+| 数据导出 | 授权的数据湖存储总数 | 性能护栏 | 客户可以使用目标数据集导出功能将数据湖中的客户数据导出到授权的数据湖存储总数。 |
+| 可用数据集 | 配置文件和事件 | 系统强制的护栏 | 通过源、Web SDK、Mobile SDK、Analytics Data Connector和Audience Manager摄取或收集数据后，在Experience PlatformUI中创建的配置文件和体验事件数据集。 |
+
+{style="table-layout:auto"}
+
+另请参阅Experience Platform [数据集导出护栏](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## 数据登陆区
