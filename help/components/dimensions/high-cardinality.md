@@ -5,9 +5,9 @@ feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: aaab21ef817e3acf67ca83cb6f9258b812625c8e
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '544'
 ht-degree: 6%
 
 ---
@@ -39,3 +39,4 @@ Customer Journey Analytics在运行报表时对其进行处理，将组合数据
 * 使用查找数据集维度。查找数据集维度将事件数据集维度项组合在一起，从而限制返回的唯一值的数量。
 * 使用 [包括/排除](/help/data-views/component-settings/include-exclude-values.md) 数据视图管理器中的组件设置。
 * 缩短请求的日期范围。 如果许多唯一值随时间累积，则缩短工作区报表的日期范围可以限制服务器要处理的唯一值的数量。
+* 考虑使用 [完整表导出](/help/analysis-workspace/export/export-cloud.md) 以返回表的所有行。
