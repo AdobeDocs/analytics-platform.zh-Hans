@@ -4,15 +4,15 @@ description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 source-git-commit: e27e2ad81ed997c5aa19a270a9d682ac6a03ce2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1007'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # 当前的 Adobe Customer Journey Analytics 发行说明（2024 年 3 月）
 
-**上次更新**：2024年4月3日
+**上次更新时间**：2024 年 4 月 3 日
 
 这些发行说明涵盖 2024 年 3 月 13 日至 2024 年 4 月的发行期。Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
@@ -20,11 +20,11 @@ ht-degree: 94%
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **更改工作区项目的删除协议** | 以前，从未从系统中清除已删除的工作区项目。 现在，我们将在180天后开始清除已删除的项目。 如果在删除后的180天内，用户拥有直接项目的URL，那么他们仍可以通过Web界面访问已删除的项目。 | | 2024 年 3 月 14 日 |
+| **更改 Workspace 项目的删除协议** | 之前，已删除的 Workspace 项目不会从系统中清除。现在，我们会在 180 天后开始清除已删除的项目。在删除后的 180 天内，如果用户有直接项目的 URL，仍可通过 Web 界面访问已删除的项目。 | | 2024 年 3 月 14 日 |
 | **项目登陆页面新增一列** | 现在，在查看 **[!UICONTROL Customer Journey Analytics 登陆页面上的“项目”选项卡时，可以使用]**&#x200B;上次使用[列](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=zh-Hans)。 <p>通过显示项目上次打开的日期和时间，该信息可帮助您确定项目对组织中的用户是否有价值。以前，**[!UICONTROL 上次使用]**&#x200B;列仅在计算量度管理器、分段管理器和警报管理器中可用。</p> |  | 2024 年 3 月 13 日 |
 | **使用情况量度** | [使用量度界面](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans)显示所有连接中摄取和可报告的行的使用情况。在此界面中可确定您的 Customer Journey Analytics 使用情况是否遵守合同条款。 |  | 2024 年 3 月 13 日 |
 | **Media Analytics 报告 - 平均受众访问分钟数 (AMA)** | CJA 中现已提供“平均受众访问分钟数”面板。Media Analytics 客户使用“平均受众访问分钟数”面板可更好地了解其内容的平均使用情况。 <p>平均受众访问分钟数可对任何长度或类型的节目进行比较。此外，客户可以将此数字平均受众访问分钟数与线性电视平均访问分钟数量度进行比较或附加到其上。</p><p> 此面板可更灵活地衡量自定义时段的平均受众以及在事后更新持续时间分类的时间。</p><p>有关详细信息，请参阅[媒体平均受众访问分钟数面板](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)。</p> |  | 2024 年 3 月 12 日 |
-| **个人到帐户的 B2B 架构转换** | 允许您转换数据集以更好地支持 Customer Journey Analytics B2B 报告场景中基于人员的查找。该功能适用于基于以下类的 B2B 模式数据集：<ul><li>XDM 业务帐户人员关系</li><li>XDM 业务机会人员关系</li><li>XDM 商业营销列表成员</li><li>XDM 商业营销活动成员</li></ul> | | 2024年4月17日 |
+| **个人到帐户的 B2B 架构转换** | 允许您转换数据集以更好地支持 Customer Journey Analytics B2B 报告场景中基于人员的查找。该功能适用于基于以下类的 B2B 模式数据集：<ul><li>XDM 业务帐户人员关系</li><li>XDM 业务机会人员关系</li><li>XDM 商业营销列表成员</li><li>XDM 商业营销活动成员</li></ul> | | 2024 年 4 月 17 日 |
 | **Report Builder 的使用情况包含在计算量度管理器和过滤器管理器的“用于”列中** | 在计算量度管理器或过滤器管理器中查看“**用于**”列时，Report Builder 现在可提供使用情况数据。<p>以前，过滤器管理器中的使用情况数据仅适用于警报、项目、已计划项目和计算量度；而计算量度管理器中的使用情况数据仅适用于警报、项目和已计划项目。</p> |  | 7 月 |
 | **Adobe Product Analytics：比较单个漏斗步骤中的事件** | 在漏斗：摩擦视图中，您现在可以比较单个漏斗步骤内的事件。当您的历程有步骤选项或正在运行 A/B 实验的步骤时，这个功能特别有用。 | 2024 年 3 月 29 日 | 2024 年 4 月 12 日 |
 | **管理员可以管理其组织中的所有位置和帐户** | “位置”选项卡（在组件 > 导出页面）上的新选项允许管理员查看和管理组织中的所有位置。 <p>“位置”帐户选项卡（在组件 > 导出页面）上的新选项允许管理员查看和管理组织中的所有帐户。</p><p>以前，管理员只能查看和管理他们创建的位置和帐户。</p> | | 2024 年 4 月 |
