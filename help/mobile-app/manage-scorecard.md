@@ -4,13 +4,13 @@ title: 管理记分卡
 feature: Analytics Dashboards
 role: User, Admin
 solution: Customer Journey Analytics
-source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
+exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
+source-git-commit: 6149d2cf23eb31f0aaa37546d3150017e155053c
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 72%
+source-wordcount: '1792'
+ht-degree: 66%
 
 ---
-
 
 # 管理记分卡
 
@@ -200,12 +200,30 @@ ht-degree: 72%
 
 1. 单击&#x200B;**[!UICONTROL 未指定]**&#x200B;旁边的图标以从报告中删除未指定数据。（您也可以删除任何其他维度项。）
 
-## 在记分卡中查看智能字幕
+## 在记分卡中查看智能字幕 {#captions}
 
 智能字幕可以帮助非分析师在没有分析师帮助的情况下更好地理解他们的数据。 智能字幕使用高级机器学习和创作AI为可视化图表提供有价值的自然语言见解。
 
-要查看智能字幕，请执行以下操作：
+这些字幕挑选出数据中的关键统计见解，并以自然语言短语，从而帮助非分析师培养他们的数据素养。
 
-1. 单击进入拼贴。
+智能题注可用于移动设备应用程序中的所有可视化图表，包括折线图、圆环图、条形图和概要数字。
 
-1. more
+要在移动记分卡中查看智能字幕，请执行以下操作：
+
+1. 在记分卡中，单击进入图块。 例如，在此记分卡中，单击进入底部的线形图。
+
+   ![包含折线图可视化图表的记分卡](assets/caption1.png)
+
+1. 点按右上方的蓝色图标以生成字幕。 字幕将显示在折线图的下方。
+
+   ![折线图可视化图表中的智能字幕](assets/caption2.png)
+
+1. 向右轻扫以查看所有智能字幕。
+
+   智能字幕可以指向数据激增、异常、趋势、下降、关联和其他现象。
+
+1. 点按描述内的黑色标记可报告问题，如有害或非法内容。
+
+   ![报告题注问题](assets/caption-report.png)
+
+1. 单击X退出 **[!UICONTROL 报告结果]** 对话框。
