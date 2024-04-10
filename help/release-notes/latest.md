@@ -3,7 +3,7 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 542cbb35d3870b8eef6fe252d1ac20962a1b2b8f
+source-git-commit: dea4a862f2e40e31bf96d0898418adfd7ca3a2f7
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 95%
@@ -20,7 +20,7 @@ ht-degree: 95%
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **移动记分卡中的智能字幕** | [智能字幕](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) 可帮助非分析人员在没有分析人员帮助的情况下更好地理解他们的数据。 它们现在可在Customer Journey Analytics记分卡中使用。 |  | 2024年4月10日 |
+| **移动记分卡中的智能字幕** | [智能字幕](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) 可帮助非分析人员在没有分析人员帮助的情况下更好地理解他们的数据。 它们现在可在Customer Journey Analytics记分卡中使用。 |  | 2024 年 4 月 17 日 |
 | **更改 Workspace 项目的删除协议** | 之前，已删除的 Workspace 项目不会从系统中清除。现在，我们会在 180 天后开始清除已删除的项目。在删除后的 180 天内，如果用户有直接项目的 URL，仍可通过 Web 界面访问已删除的项目。 | | 2024 年 3 月 14 日 |
 | **项目登陆页面新增一列** | 现在，在查看 **[!UICONTROL Customer Journey Analytics 登陆页面上的“项目”选项卡时，可以使用]**&#x200B;上次使用[列](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=zh-Hans)。 <p>通过显示项目上次打开的日期和时间，该信息可帮助您确定项目对组织中的用户是否有价值。以前，**[!UICONTROL 上次使用]**&#x200B;列仅在计算量度管理器、分段管理器和警报管理器中可用。</p> |  | 2024 年 3 月 13 日 |
 | **使用情况量度** | [使用量度界面](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans)显示所有连接中摄取和可报告的行的使用情况。在此界面中可确定您的 Customer Journey Analytics 使用情况是否遵守合同条款。 |  | 2024 年 3 月 13 日 |
