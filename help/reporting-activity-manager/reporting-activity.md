@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 role: Admin
-source-git-commit: d6f2d7129b472b32edc30dadfeb2303a92d790de
+source-git-commit: 4cb3c61a518b93119d8ffd503fc8653076ad56a1
 workflow-type: tm+mt
-source-wordcount: '2001'
+source-wordcount: '2007'
 ht-degree: 7%
 
 ---
@@ -24,11 +24,13 @@ ht-degree: 7%
 
    此时将显示已启用的基本连接的列表。
 
-   ![显示报表队列的报表活动](assets/reporting-activity1.png)
+   ![显示报表队列的报告活动](assets/reporting-activity1.png)
 
 1. 要查看组织中所有连接的报表请求总数，请展开 [!UICONTROL **显示更多**] 查看 [!UICONTROL **每月报表请求**] 图形。
 
    您可以查看贵组织内当月和上个月的报告请求数量。
+
+   ![显示报表队列的报告活动](assets/reporting-activity-monthly.png)
 
 1. （可选）您可以搜索或筛选连接列表：
 
