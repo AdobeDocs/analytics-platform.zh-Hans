@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: d6f2d7129b472b32edc30dadfeb2303a92d790de
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '2001'
 ht-degree: 7%
 
 ---
@@ -25,6 +25,10 @@ ht-degree: 7%
    此时将显示已启用的基本连接的列表。
 
    ![显示报表队列的报表活动](assets/reporting-activity1.png)
+
+1. 要查看组织中所有连接的报表请求总数，请展开 [!UICONTROL **显示更多**] 查看 [!UICONTROL **每月报表请求**] 图形。
+
+   您可以查看贵组织内当月和上个月的报告请求数量。
 
 1. （可选）您可以搜索或筛选连接列表：
 
@@ -145,7 +149,7 @@ ht-degree: 7%
 | [!UICONTROL **时间运行**] | 请求已运行多长时间。 |
 | [!UICONTROL **开始时间**] | 请求开始处理的时间（基于管理员的本地时间）。 |
 | [!UICONTROL **等待时间**] | 请求在处理之前等待了多长时间。 当有足够的容量时，该值通常为“0”。 |
-| [!UICONTROL **应用程序**] | [!UICONTROL 报告活动管理器]支持的应用程序包括： <ul><li>Analysis Workspace UI</li><li>工作区计划项目</li><li>Report Builder</li><li>生成器UI：区段、计算量度、注释、受众等。</li><li>来自2.0 API的API调用</li><li>智能警报<li>完整表导出</li><li>与任何人共享链接</li><li>引导式分析</li><li>查询Analytics报表引擎的任何其他应用程序</li></li></ul><p>**注意：** 如果此列的值为 [!UICONTROL **未知**]，这意味着请求元数据对用户不可用。</p> |
+| [!UICONTROL **应用程序**] | [!UICONTROL 报告活动管理器]支持的应用程序包括： <ul><li>Analysis Workspace UI</li><li>工作区计划项目</li><li>Report Builder</li><li>生成器UI：区段、计算量度、注释、受众等。</li><li>来自2.0 API的API调用</li><li>智能警报<li>整个表导出</li><li>与任何人共享链接</li><li>引导式分析</li><li>查询Analytics报表引擎的任何其他应用程序</li></li></ul><p>**注意：** 如果此列的值为 [!UICONTROL **未知**]，这意味着请求元数据对用户不可用。</p> |
 | [!UICONTROL **用户**] | 发起请求的用户。 <p>**注意：** 如果此列的值为 [!UICONTROL **未知**]，这意味着请求元数据对用户不可用。</p> |
 | [!UICONTROL **项目**] | 保存的工作区项目名称、API报表ID等。 （元数据可能因各种应用程序而异。）<p>**注意：** 如果此列的值为 [!UICONTROL **未知**]，这意味着项目尚未保存或请求元数据对用户不可用。</p> |
 | [!UICONTROL **状态**] | 状态指示器： <ul><li>**运行中**：请求当前正在处理中。</li><li>**等待中**：请求正在等待处理。</li></ul> |
@@ -165,7 +169,7 @@ ht-degree: 7%
 | [!UICONTROL **用户**] | 发起请求的用户。 如果此列的值为 [!UICONTROL **无法识别**]，这意味着用户所在的登录公司您没有管理权限。 |
 | [!UICONTROL **请求数**] | 用户发起的请求数。 |
 | [!UICONTROL **项目数**] | 与用户关联的项目数。 <!-- ??? --> |
-| [!UICONTROL **应用程序**] | [!UICONTROL 报告活动管理器]支持的应用程序包括： <ul><li>Analysis Workspace UI</li><li>工作区计划项目</li><li>Report Builder</li><li>生成器UI：区段、计算量度、注释、受众等。</li><li>来自2.0 API的API调用</li><li>智能警报<li>完整表导出</li><li>与任何人共享链接</li><li>引导式分析</li><li>查询Analytics报表引擎的任何其他应用程序</li></li></ul> |
+| [!UICONTROL **应用程序**] | [!UICONTROL 报告活动管理器]支持的应用程序包括： <ul><li>Analysis Workspace UI</li><li>工作区计划项目</li><li>Report Builder</li><li>生成器UI：区段、计算量度、注释、受众等。</li><li>来自2.0 API的API调用</li><li>智能警报<li>整个表导出</li><li>与任何人共享链接</li><li>引导式分析</li><li>查询Analytics报表引擎的任何其他应用程序</li></li></ul> |
 | [!UICONTROL **平均复杂性**] | 用户发起的请求的平均复杂性。 <p>并非所有请求都需要相同的处理时间。 请求复杂性有助于提供有关处理请求所需时间的一般概念。</p><p>此列中的值基于由以下列中的值决定的分数：</p><ul><li>[!UICONTROL **平均月边界**]</li><li>[!UICONTROL **平均列数**]</li><li>[!UICONTROL **平均区段**]</li></ul> |
 | [!UICONTROL **平均月边界**] | 请求中包含的平均月数。 更多的月份边界会增加请求的复杂性。 |
 | [!UICONTROL **平均列数**] | 包含的请求中的平均量度和细分数。 更多的列会增加请求的复杂性。 |
@@ -182,7 +186,7 @@ ht-degree: 7%
 | [!UICONTROL **项目**] | 发起请求的项目。 |
 | [!UICONTROL **请求数**] | 与项目关联的请求数。 |
 | [!UICONTROL **用户数量**] | 与项目关联的用户数。 <!-- ??? --> |
-| [!UICONTROL **应用程序**] | [!UICONTROL 报告活动管理器]支持的应用程序包括： <ul><li>Analysis Workspace UI</li><li>工作区计划项目</li><li>Report Builder</li><li>生成器UI：区段、计算量度、注释、受众等。</li><li>来自2.0 API的API调用</li><li>智能警报<li>完整表导出</li><li>与任何人共享链接</li><li>引导式分析</li><li>查询Analytics报表引擎的任何其他应用程序</li></li></ul> |
+| [!UICONTROL **应用程序**] | [!UICONTROL 报告活动管理器]支持的应用程序包括： <ul><li>Analysis Workspace UI</li><li>工作区计划项目</li><li>Report Builder</li><li>生成器UI：区段、计算量度、注释、受众等。</li><li>来自2.0 API的API调用</li><li>智能警报<li>整个表导出</li><li>与任何人共享链接</li><li>引导式分析</li><li>查询Analytics报表引擎的任何其他应用程序</li></li></ul> |
 | [!UICONTROL **平均复杂性**] | 项目中包含的请求的平均复杂性。 <p>并非所有请求都需要相同的处理时间。 请求复杂性有助于提供有关处理请求所需时间的一般概念。</p><p>此列中的值基于由以下列中的值决定的分数：</p><ul><li>[!UICONTROL **平均月边界**]</li><li>[!UICONTROL **平均列数**]</li><li>[!UICONTROL **平均区段**]</li></ul> |
 | [!UICONTROL **平均月边界**] | 请求中包含的平均月数。 更多的月份边界会增加请求的复杂性。 |
 | [!UICONTROL **平均列数**] | 包含的请求中的平均量度和细分数。 更多的列会增加请求的复杂性。 |
