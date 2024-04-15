@@ -14,13 +14,13 @@ ht-degree: 94%
 
 **上次更新时间**：2024 年 4 月 10 日
 
-这些发行说明涵盖 2024 年 3 月 13 日至 2024 年 4 月的发行期。Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
+这些发行说明涵盖 2024 年 3 月 13 日至 2024 年 4 月的发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
 ## 新增功能或更新后的功能
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **移动记分卡中的智能题注** | [智能题注](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) 可以帮助非分析师在没有分析师帮助的情况下更好地理解他们的数据。它们现在可以在 Customer Journey Analytics 记分卡中使用。 |  | 2024 年 4 月 17 日 |
+| **移动记分卡中的智能题注** | [智能题注](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions)可以帮助非分析师在没有分析师帮助的情况下更好地理解数据。这些数据现在可以在 Customer Journey Analytics 记分卡中使用。 |  | 2024 年 4 月 17 日 |
 | **更改 Workspace 项目的删除协议** | 之前，已删除的 Workspace 项目不会从系统中清除。现在，我们会在 180 天后开始清除已删除的项目。在删除后的 180 天内，如果用户有直接项目的 URL，仍可通过 Web 界面访问已删除的项目。 | | 2024 年 3 月 14 日 |
 | **项目登陆页面新增一列** | 现在，在查看 **[!UICONTROL Customer Journey Analytics 登陆页面上的“项目”选项卡时，可以使用]**&#x200B;上次使用[列](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html)。 <p>通过显示项目上次打开的日期和时间，该信息可帮助您确定项目对组织中的用户是否有价值。以前，**[!UICONTROL 上次使用]**&#x200B;列仅在计算量度管理器、分段管理器和警报管理器中可用。</p> |  | 2024 年 3 月 13 日 |
 | **Media Edge API的用例文档** | 两个新的用例可用于使用Media Edge API。 第一个用例描述了如何跟踪媒体会话，包括 [包含广告时间的两章](https://developer.adobe.com/cja-apis/docs/use-cases/media-edge/chapters-with-ad-timeline/). 第二个用例描述了如何跟踪媒体会话，包括 [缓冲状态和暂停](https://developer.adobe.com/cja-apis/docs/use-cases/media-edge/buffer-and-pause-timeline/). |  | 2024 年 3 月 13 日 |
