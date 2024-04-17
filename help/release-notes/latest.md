@@ -3,54 +3,53 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 6057084f26c85929d307f2b7d750358dce590ca6
+source-git-commit: 9c89f05c85ce7232bece6de08efbab222d51a644
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 94%
+source-wordcount: '828'
+ht-degree: 46%
 
 ---
 
-# 当前的 Adobe Customer Journey Analytics 发行说明（2024 年 3 月）
+# 当前Adobe Customer Journey Analytics发行说明（2024年4月）
 
-**上次更新时间**：2024 年 4 月 10 日
+**上次更新**：2024年4月17日
 
-这些发行说明涵盖 2024 年 3 月 13 日至 2024 年 4 月的发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
+这些发行说明涵盖2024年4月10日至2024年5月的发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
 ## 新增功能或更新后的功能
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **流媒体：将Roku数据发送到Adobe Experience Platform Edge** | 现在，当 [使用Experience PlatformEdge安装Media Analytics](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/edge-recommended/media-edge-sdk/implementation-edge)中，您可以使用Adobe Experience Platform Roku SDK将流媒体数据发送到Adobe Experience Platform。 |  | 2024 年 4 月 12 日 |
+| **在报告活动管理器中公开每月报告** | 现在，在报表活动管理器中查看所有连接的报表活动时，均可使用显示 [月度报告/请求](https://experienceleague.adobe.com/en/docs/analytics-platform/using/reporting-activity-manager/reporting-activity#view-all-report-suites) 当前和上个月在IMS组织级别运行的日志。<p>**注意：** 提供了从2024年3月中开始的数据。 | | 2024年4月15日 |
 | **移动记分卡中的智能题注** | [智能题注](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions)可以帮助非分析师在没有分析师帮助的情况下更好地理解数据。这些数据现在可以在 Customer Journey Analytics 记分卡中使用。 |  | 2024 年 4 月 17 日 |
-| **更改 Workspace 项目的删除协议** | 之前，已删除的 Workspace 项目不会从系统中清除。现在，我们会在 180 天后开始清除已删除的项目。在删除后的 180 天内，如果用户有直接项目的 URL，仍可通过 Web 界面访问已删除的项目。 | | 2024 年 3 月 14 日 |
-| **项目登陆页面新增一列** | 现在，在查看 **[!UICONTROL Customer Journey Analytics 登陆页面上的“项目”选项卡时，可以使用]**&#x200B;上次使用[列](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html)。 <p>通过显示项目上次打开的日期和时间，该信息可帮助您确定项目对组织中的用户是否有价值。以前，**[!UICONTROL 上次使用]**&#x200B;列仅在计算量度管理器、分段管理器和警报管理器中可用。</p> |  | 2024 年 3 月 13 日 |
-| **Media Edge API的用例文档** | 两个新的用例可用于使用Media Edge API。 第一个用例描述了如何跟踪媒体会话，包括 [包含广告时间的两章](https://developer.adobe.com/cja-apis/docs/use-cases/media-edge/chapters-with-ad-timeline/). 第二个用例描述了如何跟踪媒体会话，包括 [缓冲状态和暂停](https://developer.adobe.com/cja-apis/docs/use-cases/media-edge/buffer-and-pause-timeline/). |  | 2024 年 3 月 13 日 |
-| **使用情况量度** | [使用量度界面](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html)显示所有连接中摄取和可报告的行的使用情况。在此界面中可确定您的 Customer Journey Analytics 使用情况是否遵守合同条款。 |  | 2024 年 3 月 13 日 |
-| **Media Analytics 报告 - 平均受众访问分钟数 (AMA)** | CJA 中现已提供“平均受众访问分钟数”面板。Media Analytics 客户使用“平均受众访问分钟数”面板可更好地了解其内容的平均使用情况。 <p>平均受众访问分钟数可对任何长度或类型的节目进行比较。此外，客户可以将此数字平均受众访问分钟数与线性电视平均访问分钟数量度进行比较或附加到其上。</p><p> 此面板可更灵活地衡量自定义时段的平均受众以及在事后更新持续时间分类的时间。</p><p>有关详细信息，请参阅[媒体平均受众访问分钟数面板](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)。</p> |  | 2024 年 3 月 12 日 |
-| **个人到帐户的 B2B 架构转换** | 允许您转换数据集以更好地支持 Customer Journey Analytics B2B 报告场景中基于人员的查找。该功能适用于基于以下类的 B2B 模式数据集：<ul><li>XDM 业务帐户人员关系</li><li>XDM 业务机会人员关系</li><li>XDM 商业营销列表成员</li><li>XDM 商业营销活动成员</li></ul> | | 2024 年 4 月 17 日 |
-| **Report Builder 的使用情况包含在计算量度管理器和过滤器管理器的“用于”列中** | 在计算量度管理器或过滤器管理器中查看“**用于**”列时，Report Builder 现在可提供使用情况数据。<p>以前，过滤器管理器中的使用情况数据仅适用于警报、项目、已计划项目和计算量度；而计算量度管理器中的使用情况数据仅适用于警报、项目和已计划项目。</p> |  | 7 月 |
-| **Adobe Product Analytics：比较单个漏斗步骤中的事件** | 在漏斗：摩擦视图中，您现在可以比较单个漏斗步骤内的事件。当您的历程有步骤选项或正在运行 A/B 实验的步骤时，这个功能特别有用。 | 2024 年 3 月 29 日 | 2024 年 4 月 12 日 |
-| **管理员可以管理其组织中的所有位置和帐户** | “位置”选项卡（在组件 > 导出页面）上的新选项允许管理员查看和管理组织中的所有位置。 <p>“位置”帐户选项卡（在组件 > 导出页面）上的新选项允许管理员查看和管理组织中的所有帐户。</p><p>以前，管理员只能查看和管理他们创建的位置和帐户。</p> | | 2024 年 4 月 |
-| **受众已发布到 Experience Platform 中的新“受众”部分** | 从 Customer Journey Analytics 中发布的受众现在可以在 Experience Platform 的新“受众”部分中找到。此前，从 Customer Journey Analytics 发布的受众可在 Platform 的“细分”部分下找到。此改进具有以下优点：<ul><li>受众出现在 Platform 前不再有 1 小时的延迟；它们在发布后几秒钟即可使用。</li><li>可以使用“来源”列在 Platform 中对受众进行排序，该列显示最初发布受众的应用程序。</li><li>Platform 中的筛选和排序选项使您能够更快地找到相关受众。</li></ul>有关详细信息，请参阅[在 Experience Platform 中使用 Customer Journey Analytics 受众](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-hans#audiences-aep)部分。 |  | 2024 年 4 月 |
-| **Experience Edge 机器人检测** | 通过[机器人检测](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html)，可将 Web SDK、Mobile SDK 和 Server API 生成的事件视为由已知的蜘蛛程序和机器人生成。 | | 2024 年 4 月 29 日 |
+| **仅用于项目的权限增强 [!UICONTROL 工作区] 组件** | 以前，如果一个用户（用户A）与另一个用户（用户B）共享项目并授予用户B编辑项目的权限，则用户B将能够编辑项目。 但是，用户B无法编辑 [!UICONTROL 快速区段] 嵌入到项目中。 该限制现已移除 — 用户B可以编辑 [!UICONTROL 快速区段] 以及嵌入到共享项目中的其他仅用于项目的组件。 |  | 2024 年 4 月 17 日 |
+| **管理员可以管理其组织中的所有位置** | 上的新选项 [“位置”页面](https://experienceleague.adobe.com/en/docs/analytics/components/locations/locations-manager) 允许管理员查看和管理组织中的所有位置。 之前，管理员只能查看和管理他们创建的位置。 |  | 2024 年 4 月 17 日 |
+| **Adobe Product Analytics：功能表** | 通过了解您的核心、能力、一次性和可疑的特点来推动投资决策。 [!UICONTROL 特征矩阵] 按使用频率与%活动用户度量事件，并与中间使用率进行比较。 | 2024 年 4 月 17 日 | 2024 年 4 月 30 日 |
+| **Adobe Product Analytics：漏斗中的增强见解** | 在 [摩擦](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/funnel/friction) 视图，已增强书面见解以包括类别、增量及描述，从而进一步了解图表和表格。 | 2024 年 4 月 17 日 | 2024年4月26日 |
+| **Adobe Product Analytics：增强的保留视图** | 几项功能已添加到 [维系](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/retention/retention-rates) 费率视图以了解更深入且可自定义的维系率洞察：<ul><li>取消链接开始和返回事件</li><li>在单个视图中比较多个返回事件</li><li>自定义保留模型，该保留模型适用于以下设置：在设置上或之后（无限制）、在每个（有限制）和括号设置上</li><li>在图表中显示和隐藏单个同类群组行</li></ul> | 2024 年 4 月 10 日 | 2024年4月26日 |
+| **Adobe Product Analytics：比较单个漏斗步骤中的事件** | 您现在可以在中的单个漏斗步骤中比较事件 [摩擦](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/funnel/friction) 视图。 当您的历程有步骤选项或正在运行 A/B 实验的步骤时，这个功能特别有用。 | 2024 年 4 月 12 日 | 2024年4月26日 |
+| **个人到帐户的 B2B 架构转换** | 允许您转换数据集以更好地支持 Customer Journey Analytics B2B 报告场景中基于人员的查找。该功能适用于基于以下类的 B2B 模式数据集：<ul><li>XDM 业务帐户人员关系</li><li>XDM 业务机会人员关系</li><li>XDM 商业营销列表成员</li><li>XDM 商业营销活动成员</li></ul> | | 2024年5月1日 |
+| **Experience Edge 机器人检测** | 通过[机器人检测](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html)，可将 Web SDK、Mobile SDK 和 Server API 生成的事件视为由已知的蜘蛛程序和机器人生成。 | | 2024年5月1日 |
+| **派生字段：“下一个”或“上一个”函数** | 这些新功能让您可以将字段作为输入，然后识别n个前一个值或n个下一个值，以便更好地了解用户历程。 此功能还可以与中的其他功能结合使用 [!UICONTROL 派生字段]，例如 [!UICONTROL 拼接]，以创建新维度。 |  | 2024年5月1日 |
 
 {style="table-layout:auto"}
 
 ## Customer Journey Analytics 中的修复
 
-AN-340429、AN-341544、AN-341974、AN-342176、AN-342391
+AN-319662、AN-337894、AN-338469、AN-340147、AN-340200、AN-340443、AN-341594、AN-342442、AN-342976、AN-343020、AN-343469、AN-343703、AN-343938、AN-344614、AN-344677；
 
 ## Customer Journey Analytics 管理员的重要注意事项
 
 | 注意事项 | 添加或更新注意事项 | 描述 |
 | --- | --- | --- |
 | **更新了数据视图和连接 UI 中的链接** | 15 年 2 月 | 3 月初，Adobe 计划更新 Customer Journey Analytics 产品用户界面中的以下链接。请相应地更新您的书签。<ul><li>**数据视图页面，数据视图管理器**：[现有链接](https://experience.adobe.com/#/@aresstagevalidationco/platform/analytics/#/dataViewsCJA/manager) > [新链接](https://experience.adobe.com/#/@org/platform/analytics/#/apps/data-management/data-views)</li><li>**创建新数据视图**：[现有链接](https://experience.adobe.com/#/@aresstagevalidationco/platform/analytics/#/dataViewsCJA/new) > [新链接](https://experience.adobe.com/#/@org/platform/analytics/#/apps/data-management/data-views/new)</li><li>**编辑数据视图**：[现有链接](https://experience.adobe.com/#/@aresstagevalidationco/platform/analytics/#/dataViewsCJA/edit/dv_65b9f6eba2c6554743236e88) > [新链接](https://experience.adobe.com/#/@aresemeavalidationco/platform/analytics/#/apps/data-management/data-views/dv_62fde2e158324f2803c9e5d6/edit)</li><li>**连接管理器**：[现有链接](https://experience.adobe.com/#/@aresstagevalidationco/platform/analytics/#/connections2/manager) > [新链接](https://experience.adobe.com/#/@org/platform/analytics/#/apps/data-management/connections)</li><li>**连接信息**：[现有链接](https://experience.adobe.com/#/@aresstagevalidationco/platform/analytics/#/connections2/view/dg_66749c92-784b-45bb-b114-e9e8377a2fc1) > [新链接](https://experience.adobe.com/#/@org/platform/analytics/#/apps/data-management/connections/dg_a2b297a6-9220-440d-a403-ee8fbf627cd8)</li><li>**编辑连接**：[现有链接](https://experience.adobe.com/#/@aresstagevalidationco/platform/analytics/#/connections2/edit/dg_66749c92-784b-45bb-b114-e9e8377a2fc1) > [新链接](https://experience.adobe.com/#/@org/platform/analytics/#/apps/data-management/connections/dg_a2b297a6-9220-440d-a403-ee8fbf627cd8/edit)</li><li>**创建新数据连接**：[现有链接](https://experience.adobe.com/#/@aresstagevalidationco/platform/analytics/#/connections2/new) > [新链接](https://experience.adobe.com/#/@org/platform/analytics/#/apps/data-management/connections/new/edit)</li></ul> |
-| 添加了 Adobe API 对象成员 | 2024 年 1 月 17 日 | Adobe 可能会无通知或在版本控制中无变更地将可选的请求和响应成员（名称/值对）添加到现有的 API 对象。此类添加应为不令您的实施发生中断的更改。Adobe 建议您参考与我们的 API 集成的任何第三方工具的 API 文档，以便在处理过程中忽略不了解的此类添加。如果没有首先通过发行说明提供标准通知，Adobe 不会删除参数或添加所需参数。 |
 
 {style="table-layout:auto"}
 
 ## 相关资源
 
-* [之前的 2023 Customer Journey Analytics 发行说明](/help/release-notes/2023.md)
+* [之前的 2024 Customer Journey Analytics 发行说明](/help/release-notes/2024.md)
 * [Adobe Analytics 发行说明](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 * [Media Analytics 发行说明](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html)
 * [Adobe Experience Cloud 发行说明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
