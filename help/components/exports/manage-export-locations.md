@@ -5,9 +5,9 @@ title: 管理云导出位置和帐户
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: cdf99e31790f089950de8063445b6264158131dd
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '668'
 ht-degree: 1%
 
 ---
@@ -48,13 +48,19 @@ ht-degree: 1%
 
 1. 选择 [!UICONTROL **位置**] 选项卡。
 
+1. （视情况而定）如果您是系统管理员，则可以启用 [!UICONTROL **查看所有用户的位置**] 选项，用于查看由您组织中的所有用户创建的位置。
+
 1. 在搜索字段中，开始键入与要搜索的位置相关联的任何信息。 您可以从表中任何可用的列搜索数据。
 
 ## 编辑位置
 
 1. 在Customer Journey Analytics中，选择 [!UICONTROL **组件**] > [!UICONTROL **导出**].
 
-1. 选择 [!UICONTROL **位置**] 选项卡，然后选择要编辑的位置。
+1. 选择 [!UICONTROL **位置**] 选项卡。
+
+1. （视情况而定）如果您是系统管理员，则可以启用 [!UICONTROL **查看所有用户的位置**] 选项，用于查看由您组织中的所有用户创建的位置。
+
+1. 选择要编辑的位置。
 
    ![显示位置选项卡和位置列表的“导出”窗口。](assets/locations-edit.png)
 
@@ -70,7 +76,11 @@ ht-degree: 1%
 
 1. 在Customer Journey Analytics中，选择 [!UICONTROL **组件**] > [!UICONTROL **导出**].
 
-1. 选择 [!UICONTROL **位置**] 选项卡，然后选择要删除的一个或多个位置。
+1. 选择 [!UICONTROL **位置**] 选项卡。
+
+1. （视情况而定）如果您是系统管理员，则可以启用 [!UICONTROL **查看所有用户的位置**] 选项，用于查看由您组织中的所有用户创建的位置。
+
+1. 选择一个或多个要删除的位置。
 
    ![显示位置选项卡和位置列表的“导出”窗口](assets/locations-edit.png)
 
@@ -92,6 +102,8 @@ ht-degree: 1%
 
    ![显示位置帐户选项卡的“导出”窗口](assets/account-add.png)
 
+1. （视情况而定）如果您是系统管理员，则可以启用 [!UICONTROL **查看所有用户的帐户**] 选项，用于查看由您组织中的所有用户创建的位置。
+
 1. 选择 [!UICONTROL **查看详细信息**] 在要编辑的帐户上。
 
 1. 进行任何所需的更改，然后选择 [!UICONTROL **保存**].
@@ -108,6 +120,8 @@ ht-degree: 1%
 
    ![显示位置帐户选项卡的“导出”窗口](assets/account-add.png)
 
+1. （视情况而定）如果您是系统管理员，则可以启用 [!UICONTROL **查看所有用户的帐户**] 选项，用于查看由您组织中的所有用户创建的位置。
+
 1. 在要编辑的帐户上选择3点图标，然后选择 [!UICONTROL **帐户密钥**].
 
 ## 删除帐户
@@ -117,6 +131,8 @@ ht-degree: 1%
 1. 选择 [!UICONTROL **位置帐户**] 选项卡。
 
    ![显示位置帐户选项卡的“导出”窗口](assets/account-add.png)
+
+1. （视情况而定）如果您是系统管理员，则可以启用 [!UICONTROL **查看所有用户的帐户**] 选项，用于查看由您组织中的所有用户创建的位置。
 
 1. 在要编辑的帐户上选择3点图标，然后选择 [!UICONTROL **删除帐户**].
 

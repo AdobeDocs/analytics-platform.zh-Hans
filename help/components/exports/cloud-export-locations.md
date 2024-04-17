@@ -5,10 +5,10 @@ title: 配置云导出位置
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: dadb22558c93d0f528986dfc033b6668467d1c01
+source-git-commit: 067a9e3d5319a33bb5ae894d76f3445e2d968d0e
 workflow-type: tm+mt
-source-wordcount: '1738'
-ht-degree: 3%
+source-wordcount: '1789'
+ht-degree: 19%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 3%
 
 1. 指定以下信息： |字段 | 函数 | ------------------- | [!UICONTROL **名称**] | 位置的名称。  | | [!UICONTROL **描述**] | 提供位置的简短描述，以帮助将其与帐户上的其他位置区分开来。 | | [!UICONTROL **位置帐户**] | 选择要创建位置的帐户。 有关如何创建帐户的信息，请参阅 [配置云导出帐户](/help/components/exports/cloud-export-accounts.md). |
 
-1. 在 [!UICONTROL **位置属性**] 部分，指定特定于您的位置帐户的帐户类型的信息。
+1. 在&#x200B;[!UICONTROL **位置属性**]&#x200B;部分中，指定特定于位置帐户的帐户类型的信息。
 
    继续下面的部分，该部分与您在 [!UICONTROL **位置帐户**] 字段。
 
@@ -67,9 +67,9 @@ ht-degree: 3%
 
    <!-- still need to update; can't create AEP account -->
 
-   | 字段 | 函数 |
+   | 字段 | 功能 |
    |---------|----------|
-   | [!UICONTROL **前缀**] | 容器中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，`folder_name/` |
+   | [!UICONTROL **前缀**] | 容器中要用于放置数据的文件夹。指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，`folder_name/` |
 
    {style="table-layout:auto"}
 
@@ -104,10 +104,10 @@ ht-degree: 3%
 
    <!-- still need to update; can't create S3 role ARN account -->
 
-   | 字段 | 函数 |
+   | 字段 | 功能 |
    |---------|----------|
-   | [!UICONTROL **分段**] | Amazon S3帐户中要将Adobe Analytics数据发送到的存储段。 <p>确保Adobe提供的用户ARN具有 `S3:PutObject` 权限以将文件上传到此存储段。 </p> |
-   | [!UICONTROL **前缀**] | 存储桶中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如， folder_name/ |
+   | [!UICONTROL **分段**] | 您要将 Adobe Analytics 数据发送到的 Amazon S3 账户中的存储段。 <p>确保Adobe提供的用户ARN具有 `S3:PutObject` 权限以将文件上传到此存储段。 </p><p>存储段名称必须满足特定的命名规则。 例如，其长度必须介于3到63个字符之间，只能由小写字母、数字、点(.)和连字符(-)组成，并且必须以字母或数字开头和结尾。 [AWS文档中提供了命名规则的完整列表](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
+   | [!UICONTROL **前缀**] | 存储段中要用于放置数据的文件夹。指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，folder_name/ |
 
    {style="table-layout:auto"}
 
@@ -127,10 +127,10 @@ ht-degree: 3%
 
    <!-- still need to update; can't create GCP account -->
 
-   | 字段 | 函数 |
+   | 字段 | 功能 |
    |---------|----------|
-   | [!UICONTROL **分段**] | GCP帐户中要将Adobe Analytics数据发送到的存储段。 <p>确保您已授予 `roles/storage.objectCreator` Adobe提供的主体权限。 (本金于呈报日期 [配置Google Cloud平台帐户](/help/components/exports/cloud-export-accounts.md).) <p>有关授予权限的信息，请参见 [将主体添加到存储段级别策略](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) 在Google Cloud文档中。</p> |
-   | [!UICONTROL **前缀**] | 存储桶中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如， folder_name/ |
+   | [!UICONTROL **分段**] | 您要将 Adobe Analytics 数据发送到的 GCP 账户中的存储段。 <p>确保您已授予 `roles/storage.objectCreator` Adobe提供的主体权限。 (本金于呈报日期 [配置Google Cloud平台帐户](/help/components/exports/cloud-export-accounts.md).) <p>有关授予权限的信息，请参阅 Google Cloud 文档中的[将主体添加到存储段级策略](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add)。</p> |
+   | [!UICONTROL **前缀**] | 存储段中要用于放置数据的文件夹。指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，folder_name/ |
 
    {style="table-layout:auto"}
 
@@ -148,10 +148,10 @@ ht-degree: 3%
 
 1. 在 [!UICONTROL **位置属性**] 的部分 [!UICONTROL **添加位置**] 对话框，请指定以下信息以配置Azure SAS位置：
 
-   | 字段 | 函数 |
+   | 字段 | 功能 |
    |---------|----------|
    | [!UICONTROL **容器名称**] | 您指定的帐户中要将Customer Journey Analytics数据发送到的容器。 |
-   | [!UICONTROL **前缀**] | 容器中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，`folder_name/`<p>确保在配置Azure SAS帐户时，您在密钥库机密名称字段中指定的SAS令牌存储具有 `Write` 许可。 这允许SAS令牌在Azure容器中创建文件。 <p>如果您还希望SAS令牌覆盖文件，请确保SAS令牌存储具有 `Delete` 许可。</p><p>有关更多信息，请参阅 [Blob存储资源](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction#blob-storage-resources) 在Azure Blob Storage文档中。</p> |
+   | [!UICONTROL **前缀**] | 容器中要用于放置数据的文件夹。指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，`folder_name/`<p>确保在配置 Azure SAS 帐户时，在密钥保管库密码名称字段中指定的 SAS 令牌存储具有 `Write` 权限。这将允许 SAS 令牌在 Azure 容器中创建文件。 <p>如果您希望 SAS 令牌也覆盖文件，请确保 SAS 令牌存储具有 `Delete` 权限。</p><p>有关更多信息，请参阅 Azure Blob 存储文档中的 [Blob 存储资源](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction#blob-storage-resources)。</p> |
 
    {style="table-layout:auto"}
 
@@ -169,10 +169,10 @@ ht-degree: 3%
 
 1. 在 [!UICONTROL **位置属性**] 的部分 [!UICONTROL **添加位置**] 对话框，请指定以下信息以配置Azure RBAC位置：
 
-   | 字段 | 函数 |
+   | 字段 | 功能 |
    |---------|----------|
-   | [!UICONTROL **容器**] | 您指定的帐户中要将Adobe Analytics数据发送到的容器。 确保授予将文件上载到您之前创建的Azure应用程序的权限。 |
-   | [!UICONTROL **前缀**] | 容器中要放置数据的文件夹。 指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，`folder_name/`<p>确保已授予您在配置Azure RBAC帐户时指定的应用程序ID `Storage Blob Data Contributor` 角色以访问容器（文件夹）。</p> <p>有关更多信息，请参阅 [Azure内置角色](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles).</p> |
+   | [!UICONTROL **容器**] | 要将 Adobe Analytics 数据发送到的指定帐户中的容器。确保授予将文件上传到您之前创建的 Azure 应用程序的权限。 |
+   | [!UICONTROL **前缀**] | 容器中要用于放置数据的文件夹。指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，`folder_name/`<p>确保您在配置 Azure RBAC 帐户时指定的应用程序 ID 已被授予 `Storage Blob Data Contributor` 角色，以便访问容器（文件夹）。</p> <p>有关更多信息，请参阅 [Azure 内置角色](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles)。</p> |
    | [!UICONTROL **帐户**] | Azure存储帐户。 |
 
    {style="table-layout:auto"}
@@ -191,7 +191,7 @@ ht-degree: 3%
 
 1. 在 [!UICONTROL **位置属性**] 的部分 [!UICONTROL **添加位置**] 对话框中，指定以下信息来配置Snowflake位置：
 
-   | 字段 | 函数 |
+   | 字段 | 功能 |
    |---------|----------|
    | [!UICONTROL **DB**] | 指定的数据库应为现有数据库。 您创建的角色需要拥有访问此数据库的权限。<p>这是与阶段名称关联的数据库。</p><p>可以使用以下命令将此角色权限授予Snowflake中的数据库： `GRANT USAGE ON DATABASE <your_database> TO ROLE <your_role>;`</p> <p>欲了解更多信息，请参见 [Snowflake文档中的“数据库、方案和共享命令”页](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
    | [!UICONTROL **架构**] | 指定的架构应为现有架构。 您创建的角色需要拥有访问此方案的权限。<p>这是与阶段名称关联的架构。<p>可以使用以下命令将您创建的权限授予Snowflake中的方案： `GRANT USAGE ON SCHEMA <your_database>.<your_schema> TO ROLE <your_role>;`</p><p>欲了解更多信息，请参见 [Snowflake文档中的“数据库、方案和共享命令”页](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
