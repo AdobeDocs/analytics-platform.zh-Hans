@@ -3,10 +3,10 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 69566b840301f87a6362d6bd16b1e255a14d4e23
+source-git-commit: abaa747934ff2cdd0a3dab867165afb46fbc71db
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 46%
+source-wordcount: '945'
+ht-degree: 42%
 
 ---
 
@@ -32,6 +32,7 @@ ht-degree: 46%
 | **个人到帐户的 B2B 架构转换** | 允许您转换数据集以更好地支持 Customer Journey Analytics B2B 报告场景中基于人员的查找。该功能适用于基于以下类的 B2B 模式数据集：<ul><li>XDM 业务帐户人员关系</li><li>XDM 业务机会人员关系</li><li>XDM 商业营销列表成员</li><li>XDM 商业营销活动成员</li></ul> | | 2024年5月1日 |
 | **Experience Edge 机器人检测** | 通过[机器人检测](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html)，可将 Web SDK、Mobile SDK 和 Server API 生成的事件视为由已知的蜘蛛程序和机器人生成。 | | 2024年5月1日 |
 | **派生字段：“下一个”或“上一个”函数** | 这些新功能让您可以将字段作为输入，然后识别n个前一个值或n个下一个值，以便更好地了解用户历程。 此功能还可以与中的其他功能结合使用 [!UICONTROL 派生字段]，例如 [!UICONTROL 拼接]，以创建新维度。 |  | 2024年5月1日 |
+| **受众已发布到 Experience Platform 中的新“受众”部分** | 现在，通过Customer Journey Analytics发布的受众可在Adobe Experience Platform中新增的“受众”部分中使用。<p>以前，从Customer Journey Analytics发布的受众可在Experience Platform的“区段”部分下使用。</p><p>此改进具有以下优点：</p><ul><li>受众在出现在Experience Platform中之前不再有1小时的延迟；发布后，即可使用它们。</li><li>可以使用“来源”列按Experience Platform对受众进行排序，该列显示了最初发布受众的应用程序。</li><li>Experience Platform中的过滤和排序选项使您能够更快地找到相关受众。</li></ul> |  | 2024 年 5 月 |
 
 {style="table-layout:auto"}
 
