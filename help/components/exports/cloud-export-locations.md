@@ -5,10 +5,10 @@ title: 配置云导出位置
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 067a9e3d5319a33bb5ae894d76f3445e2d968d0e
+source-git-commit: d1fc7c0ab95e43a20cdfba8d0948c188fda8bec8
 workflow-type: tm+mt
-source-wordcount: '1789'
-ht-degree: 19%
+source-wordcount: '1792'
+ht-degree: 16%
 
 ---
 
@@ -106,7 +106,7 @@ ht-degree: 19%
 
    | 字段 | 功能 |
    |---------|----------|
-   | [!UICONTROL **分段**] | 您要将 Adobe Analytics 数据发送到的 Amazon S3 账户中的存储段。 <p>确保Adobe提供的用户ARN具有 `S3:PutObject` 权限以将文件上传到此存储段。 </p><p>存储段名称必须满足特定的命名规则。 例如，其长度必须介于3到63个字符之间，只能由小写字母、数字、点(.)和连字符(-)组成，并且必须以字母或数字开头和结尾。 [AWS文档中提供了命名规则的完整列表](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
+   | [!UICONTROL **分段**] | Amazon S3帐户中要将Customer Journey Analytics数据发送到的存储段。 <p>确保Adobe提供的用户ARN具有 `S3:PutObject` 权限以将文件上传到此存储段。 </p><p>存储段名称必须满足特定的命名规则。 例如，其长度必须介于3到63个字符之间，只能由小写字母、数字、点(.)和连字符(-)组成，并且必须以字母或数字开头和结尾。 [AWS文档中提供了命名规则的完整列表](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
    | [!UICONTROL **前缀**] | 存储段中要用于放置数据的文件夹。指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，folder_name/ |
 
    {style="table-layout:auto"}
@@ -129,7 +129,7 @@ ht-degree: 19%
 
    | 字段 | 功能 |
    |---------|----------|
-   | [!UICONTROL **分段**] | 您要将 Adobe Analytics 数据发送到的 GCP 账户中的存储段。 <p>确保您已授予 `roles/storage.objectCreator` Adobe提供的主体权限。 (本金于呈报日期 [配置Google Cloud平台帐户](/help/components/exports/cloud-export-accounts.md).) <p>有关授予权限的信息，请参阅 Google Cloud 文档中的[将主体添加到存储段级策略](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add)。</p> |
+   | [!UICONTROL **分段**] | GCP帐户中要将Customer Journey Analytics数据发送到的存储段。 <p>确保您已授予 `roles/storage.objectCreator` Adobe提供的主体权限。 (本金于呈报日期 [配置Google Cloud平台帐户](/help/components/exports/cloud-export-accounts.md).) <p>有关授予权限的信息，请参阅 Google Cloud 文档中的[将主体添加到存储段级策略](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add)。</p> |
    | [!UICONTROL **前缀**] | 存储段中要用于放置数据的文件夹。指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，folder_name/ |
 
    {style="table-layout:auto"}
@@ -171,7 +171,7 @@ ht-degree: 19%
 
    | 字段 | 功能 |
    |---------|----------|
-   | [!UICONTROL **容器**] | 要将 Adobe Analytics 数据发送到的指定帐户中的容器。确保授予将文件上传到您之前创建的 Azure 应用程序的权限。 |
+   | [!UICONTROL **容器**] | 您指定的帐户中要将Customer Journey Analytics数据发送到的容器。 确保授予将文件上传到您之前创建的 Azure 应用程序的权限。 |
    | [!UICONTROL **前缀**] | 容器中要用于放置数据的文件夹。指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，`folder_name/`<p>确保您在配置 Azure RBAC 帐户时指定的应用程序 ID 已被授予 `Storage Blob Data Contributor` 角色，以便访问容器（文件夹）。</p> <p>有关更多信息，请参阅 [Azure 内置角色](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles)。</p> |
    | [!UICONTROL **帐户**] | Azure存储帐户。 |
 
