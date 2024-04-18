@@ -4,7 +4,7 @@ description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 91ab1d3160db83979e1550f8f1b5135065cc6707
 workflow-type: tm+mt
 source-wordcount: '1631'
 ht-degree: 57%
@@ -86,7 +86,7 @@ ht-degree: 57%
 
 在受众发布之前、期间和之后的多个时间点，可能会出现延迟。 以下是对可能出现的延迟情况的概述。
 
-![受众发布的延迟，如本节所述。](assets/latency-diagram.png)
+![受众发布的延迟，如本节所述。](/help/components/audiences/assets/latency-diagram.png)
 
 | # | 延迟点 | 延迟持续时间 |
 | --- | --- | --- |
