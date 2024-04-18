@@ -3,7 +3,7 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 9c89f05c85ce7232bece6de08efbab222d51a644
+source-git-commit: 69566b840301f87a6362d6bd16b1e255a14d4e23
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 46%
@@ -27,8 +27,8 @@ ht-degree: 46%
 | **管理员可以管理其组织中的所有位置** | 上的新选项 [“位置”页面](https://experienceleague.adobe.com/en/docs/analytics/components/locations/locations-manager) 允许管理员查看和管理组织中的所有位置。 之前，管理员只能查看和管理他们创建的位置。 |  | 2024 年 4 月 17 日 |
 | **Adobe Product Analytics：功能表** | 通过了解您的核心、能力、一次性和可疑的特点来推动投资决策。 [!UICONTROL 特征矩阵] 按使用频率与%活动用户度量事件，并与中间使用率进行比较。 | 2024 年 4 月 17 日 | 2024 年 4 月 30 日 |
 | **Adobe Product Analytics：漏斗中的增强见解** | 在 [摩擦](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/funnel/friction) 视图，已增强书面见解以包括类别、增量及描述，从而进一步了解图表和表格。 | 2024 年 4 月 17 日 | 2024年4月26日 |
-| **Adobe Product Analytics：增强的保留视图** | 几项功能已添加到 [维系](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/retention/retention-rates) 费率视图以了解更深入且可自定义的维系率洞察：<ul><li>取消链接开始和返回事件</li><li>在单个视图中比较多个返回事件</li><li>自定义保留模型，该保留模型适用于以下设置：在设置上或之后（无限制）、在每个（有限制）和括号设置上</li><li>在图表中显示和隐藏单个同类群组行</li></ul> | 2024 年 4 月 10 日 | 2024年4月26日 |
-| **Adobe Product Analytics：比较单个漏斗步骤中的事件** | 您现在可以在中的单个漏斗步骤中比较事件 [摩擦](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/funnel/friction) 视图。 当您的历程有步骤选项或正在运行 A/B 实验的步骤时，这个功能特别有用。 | 2024 年 4 月 12 日 | 2024年4月26日 |
+| **Adobe Product Analytics：增强的保留视图** | 几项功能已添加到 [维系](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/retention/retention-rates) 费率视图以了解更深入且可自定义的维系率洞察：<ul><li>取消链接开始和返回事件</li><li>在单个视图中比较多个返回事件</li><li>自定义保留模型，该保留模型适用于以下设置：在设置上或之后（无限制）、在每个（有限制）和括号设置上</li><li>在图表中显示和隐藏单个同类群组行</li></ul> | 2024年4月24日 | 2024年5月8日 |
+| **Adobe Product Analytics：比较单个漏斗步骤中的事件** | 您现在可以在中的单个漏斗步骤中比较事件 [摩擦](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/funnel/friction) 视图。 当您的历程有步骤选项或正在运行 A/B 实验的步骤时，这个功能特别有用。 | 2024年4月23日 | 2024年5月3日 |
 | **个人到帐户的 B2B 架构转换** | 允许您转换数据集以更好地支持 Customer Journey Analytics B2B 报告场景中基于人员的查找。该功能适用于基于以下类的 B2B 模式数据集：<ul><li>XDM 业务帐户人员关系</li><li>XDM 业务机会人员关系</li><li>XDM 商业营销列表成员</li><li>XDM 商业营销活动成员</li></ul> | | 2024年5月1日 |
 | **Experience Edge 机器人检测** | 通过[机器人检测](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html)，可将 Web SDK、Mobile SDK 和 Server API 生成的事件视为由已知的蜘蛛程序和机器人生成。 | | 2024年5月1日 |
 | **派生字段：“下一个”或“上一个”函数** | 这些新功能让您可以将字段作为输入，然后识别n个前一个值或n个下一个值，以便更好地了解用户历程。 此功能还可以与中的其他功能结合使用 [!UICONTROL 派生字段]，例如 [!UICONTROL 拼接]，以创建新维度。 |  | 2024年5月1日 |
