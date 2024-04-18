@@ -5,17 +5,18 @@ solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: 14cdc7bd8817dbf1d7a9950fa6ff62aedff82640
-workflow-type: ht
-source-wordcount: '188'
-ht-degree: 100%
+source-git-commit: dc3a109f162adfe48f621ba3ece95fedead3c6e1
+workflow-type: tm+mt
+source-wordcount: '184'
+ht-degree: 55%
 
 ---
 
 # 连接概述
 
-利用连接，Customer Journey Analytics 产品管理员可以与不同的 AEP 数据源（例如事件、查找和配置文件数据集）建立连接。这些连接支持将连接中的数据集成到派生的数据视图中。我们建议仅允许核心管理组访问连接管理。连接级别的配置将对引入 Customer Journey Analytics 中的数据量分配产生合同性影响。
-连接是 CJA 的基础，它是从 AEP 源数据集创建的。通过访问连接，还可以查看连接管理器，这可让您查看构成连接的基础数据集，并进行重要的编辑和配置选择。
+连接允许Customer Journey Analytics产品管理员与其他用户建立连接 [!DNL Adobe Experience Platform] 数据源，例如事件、查找和配置文件数据集。 这些连接支持将连接中的数据集成到派生的数据视图中。连接是CJA的基础，创建自 [!DNL Experience Platform] 源数据集。 对连接的访问还允许您查看连接管理器，在其中可以查看组成连接的基础数据集，以及进行关键的编辑和配置选择。
+
+我们建议仅允许核心管理组访问连接管理。连接级别的配置与用于Customer Journey Analytics数据的卷分配的合同有关。
 
 以下是一段视频概述：
 

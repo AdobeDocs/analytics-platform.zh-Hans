@@ -4,9 +4,9 @@ title: 预测概述
 feature: Visualizations
 role: User
 exl-id: 9ec920c4-3273-4497-83a4-6a2e2fc92e2f
-source-git-commit: fea1b12a594a820ab2e55f850ca95c5a373184f0
+source-git-commit: dc3a109f162adfe48f621ba3ece95fedead3c6e1
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '220'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,9 @@ ht-degree: 0%
 
 {{select-package}}
 
-预测是一项Analysis Workspace功能，它有助于通过任何受支持的时间粒度（每小时、每天、每周、每月和每年）来预测标准或计算量度。 预测仅适用于与时间序列相关的数据。
+预测包括基于Customer Journey Analytics中已存在的历史数据的时间序列相关数据的统计预测。 预测可以显示在自由格式表和折线图可视化中。 用户可以通过其在Customer Journey AnalyticsUI中的用户首选项来控制是否自动包含预测。 他们可以在列设置中为每个列打开和关闭它们。 只有添加到表中的第一列已经启用了预测。
+
+预测功能在“选择”和更高的Customer Journey Analytics许可证层中可用。
 
 您可以将预测用于以下方面：
 
