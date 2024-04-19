@@ -4,9 +4,9 @@ title: 试验性面板
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 68289e274c8ea985b6d07bca228f5e6654e05aa4
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1889'
 ht-degree: 58%
 
 ---
@@ -15,9 +15,7 @@ ht-degree: 58%
 
 通过&#x200B;**[!UICONTROL 试验]**&#x200B;面板，分析师可以比较不同的用户体验、营销或消息传递方面的变化，以确定哪一种最能推动特定结果。您可以从任何试验平台来源评估任何 A/B 试验的提升和置信度：在线、离线、Adobe 解决方案、Adobe Journey Optimizer 甚至 BYO（自带）数据。 
 
->[!IMPORTANT]
->
->此时， [Adobe Analytics目标版](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T)数据 *无法* 在“试验”面板中分析。
+详细了解 [Adobe Customer Journey Analytics与Adobe Target之间的集成](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja4t/cja4t).
 
 ## 访问控制 {#access}
 
@@ -33,7 +31,7 @@ ht-degree: 58%
 
 在您的试验数据得 [已摄取](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans) 进入Adobe Experience Platform， [在Customer Journey Analytics中创建连接](/help/connections/create-connection.md) 到一个或多个试验数据集。
 
-## 步骤 2：在数据视图中添加上下文标签 {#contect-labels}
+## 步骤 2：在数据视图中添加上下文标签 {#context-labels}
 
 在Customer Journey Analytics数据视图设置中，管理员可以添加 [上下文标签](/help/data-views/component-settings/overview.md) 到维度或指标和Customer Journey Analytics服务，如 [!UICONTROL 试验] 面板可以出于其目的使用这些标签。 试验面板使用两个预定义标签：
 
