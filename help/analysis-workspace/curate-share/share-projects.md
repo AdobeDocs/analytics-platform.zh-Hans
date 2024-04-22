@@ -5,10 +5,10 @@ title: 共享项目
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 19923592c8c50d93e150ba908f23313513d3450b
 workflow-type: tm+mt
-source-wordcount: '2091'
-ht-degree: 68%
+source-wordcount: '2040'
+ht-degree: 69%
 
 ---
 
@@ -138,7 +138,7 @@ ht-degree: 68%
 >
 >* 如果许多用户尝试同时访问给定的链接，则项目可能会变得无法访问。默认情况下，每 5 分钟可有超过 190 人访问单个链接。如果您的组织达到此限制，请等待 5 分钟，然后再重试访问链接。
 >
->* 如果贵组织许可Healthcare Shield，则只能与通过单点登录(SSO)或Adobe ID进行身份验证的用户共享项目；不能与未经身份验证的用户共享项目。 您有责任按照公司的内部数据管理策略使用此功能，并且只与具有适当权限的用户共享包含个人健康信息(PHI)的项目链接。
+>* 此 [!UICONTROL 与任何人共享] Healthcare Shield和Privacy &amp; Security Shield许可证的功能均被阻止。
 
 以下视频演示和随附文档描述与任何人共享链接相关的选项：
 
