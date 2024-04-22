@@ -22,7 +22,7 @@ ht-degree: 42%
 | ----------- | ---------- | ------- | ---- |
 | **流媒体：将Roku数据发送到Adobe Experience Platform Edge** | 现在，当 [使用Experience PlatformEdge安装Media Analytics](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/edge-recommended/media-edge-sdk/implementation-edge)中，您可以使用Adobe Experience Platform Roku SDK将流媒体数据发送到Adobe Experience Platform。 |  | 2024 年 4 月 12 日 |
 | **在报告活动管理器中公开每月报告** | 现在，在报表活动管理器中查看所有连接的报表活动时，均可使用显示 [月度报告/请求](https://experienceleague.adobe.com/en/docs/analytics-platform/using/reporting-activity-manager/reporting-activity#view-all-report-suites) 当前和上个月在IMS组织级别运行的日志。<p>**注意：** 提供了从2024年3月中开始的数据。 | | 2024年4月15日 |
-| **移动记分卡中的智能题注** | [智能题注](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions)可以帮助非分析师在没有分析师帮助的情况下更好地理解数据。这些数据现在可以在 Customer Journey Analytics 记分卡中使用。 |  | 2024 年 4 月 17 日 |
+| **移动记分卡中的智能题注** | [智能题注](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions)可以帮助非分析师在没有分析师帮助的情况下更好地理解数据。这些数据现在可以在 Customer Journey Analytics 记分卡中使用。 |  | 2024 年 4 月 17 日 |
 | **仅用于项目的权限增强 [!UICONTROL 工作区] 组件** | 以前，如果一个用户（用户A）与另一个用户（用户B）共享项目并授予用户B编辑项目的权限，则用户B将能够编辑项目。 但是，用户B无法编辑 [!UICONTROL 快速区段] 嵌入到项目中。 该限制现已移除 — 用户B可以编辑 [!UICONTROL 快速区段] 以及嵌入到共享项目中的其他仅用于项目的组件。 |  | 2024 年 4 月 17 日 |
 | **管理员可以管理其组织中的所有位置** | 上的新选项 [“位置”页面](https://experienceleague.adobe.com/en/docs/analytics/components/locations/locations-manager) 允许管理员查看和管理组织中的所有位置。 之前，管理员只能查看和管理他们创建的位置。 |  | 2024 年 4 月 17 日 |
 | **Adobe Product Analytics：功能表** | 通过了解您的核心、能力、一次性和可疑的特点来推动投资决策。 [!UICONTROL 特征矩阵] 按使用频率与%活动用户度量事件，并与中间使用率进行比较。 | 2024 年 4 月 17 日 | 2024 年 4 月 30 日 |
