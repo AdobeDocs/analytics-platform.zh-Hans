@@ -5,22 +5,20 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: ht
-source-wordcount: '1443'
-ht-degree: 100%
+source-git-commit: 01188253d4a8d794e9cd9bbea9c0fef02180c940
+workflow-type: tm+mt
+source-wordcount: '1085'
+ht-degree: 91%
 
 ---
 
 # Adobe Analytics 的演化
 
-随着贵组织不断发展使用Customer Journey Analytics，请探索这些步骤以准备数据并了解这两种技术之间的关键差异。 本文针对管理员受众。
-
-## 准备您的数据
+## 步骤3：准备现有数据
 
 准备 Adobe Analytics 数据以无缝迁移到 Customer Journey Analytics 对于数据完整性和报告一致性至关重要。
 
-### 1. 收集标识 {#identities}
+### 收集身份
 
 了解客户历程最关键的组成部分也许是在每一步都知道客户是谁。对于 Customer Journey Analytics，拥有一个存在于所有渠道和相应数据的标识符允许在 Customer Journey Analytics 中将多个来源拼接在一起。标识示例可能是客户 ID、帐户 ID 或电子邮件 ID。无论标识是什么（可能有多个），请确保为每个 ID 考虑以下内容：
 
@@ -29,11 +27,11 @@ ht-degree: 100%
 * ID 不包含 PII。将散列应用于任何可能敏感的内容。
 * ID 在所有源中使用相同的格式（相同的长度、相同的散列方法等）
 
-在 Adobe Analytics 等数据集中，可能并非每行数据都存在标识，但辅助标识确实存在。在这种情况下，当仅通过客户的 ECID 识别客户时以及收集标识时（例如，当客户进行身份验证时），可使用跨渠道分析（也称为“拼接”）消除行间差距。[了解详情](../stitching/overview.md)。
+在 Adobe Analytics 等数据集中，可能并非每行数据都存在标识，但辅助标识确实存在。在本例中， [跨渠道分析（也称为“拼接”）](/help/stitching/overview.md) 当仅通过其ECID识别客户以及在收集标识时（例如，当客户进行身份验证时），可用于弥合行之间的差距。
 
-### 2. 使您的变量保持一致 {#variables}
+### 调整变量
 
-将 Adobe Analytics 数据转换为 Customer Journey Analytics 数据的最直接方法是使用 [Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=zh-Hans) 将[全局报告包](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)纳入 Experience Platform 中。该连接器会将您的 Adobe Analytics 变量直接映射到 Experience Platform 中的 XDM 架构和数据集，然后便可以轻松连接到 Customer Journey Analytics。
+将Adobe Analytics数据转换为Customer Journey Analytics数据的最直接方法是摄取 [全局报告包](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=zh-Hans) 使用Experience Platform [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans). 该连接器会将您的 Adobe Analytics 变量直接映射到 Experience Platform 中的 XDM 架构和数据集，然后便可以轻松连接到 Customer Journey Analytics。
 
 完整的全局报告包可能并不总是适用于实施。如果您计划将多个报告包引入Customer Journey Analytics，您有2个选项：
 
@@ -45,7 +43,7 @@ ht-degree: 100%
 
 以下是[将报告包与不同架构相结合](/help/use-cases/aa-data/combine-report-suites.md)的用例。
 
-### 3. （重新）配置您的营销渠道 {#marketing-channels}
+### （重新）配置您的营销渠道
 
 传统的 Adobe Analytics 营销渠道设置在 Customer Journey Analytics 中的执行方式不同。这有两个原因：
 
@@ -57,43 +55,9 @@ Adobe 发布了](https://experienceleague.adobe.com/docs/analytics/components/ma
 
 随着作为 Customer Journey Analytics 数据视图的一部分引入[派生字段](../data-views/derived-fields/derived-fields.md)，还使用[营销渠道功能模板](../data-views/derived-fields/derived-fields.md#function-templates)以非破坏并可追溯的方式支持营销渠道。
 
-### 4. 决定使用 Analytics Source Connector 还是 Experience Platform SDK {#connector-vs-sdk}
+## 在迁移到Customer Journey Analytics时为关键差异做好准备
 
-Adobe Analytics 客户可以使用 Analytics Source Connector 在 Adobe Experience Platform 和 Customer Journey Analytics 中轻松利用他们的报告包。有关使用 Analytics Source Connector 的信息，请参阅有关如何[从 Adobe Analytics 中摄取数据并将其用于 Customer Journey Analytics](../data-ingestion/analytics.md) 的快速入门指南。有关更多信息，另请参阅[在 UI 中创建 Adobe Analytics 源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)。
-
-Adobe 还提供使用 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=zh-Hans) 或 [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hans) 实施数据收集的功能。 这些方法极大地扩展了数据收集的可能性。不再有字段数量的限制，也不再需要将数据元素映射到属性、eVar 和 Analytics 中的事件。您可以使用不同类型的无限模式元素，并使用 Customer Journey Analytics [数据视图](/help/data-views/data-views.md)以多种方式表示它们。直接发送到 Adobe Experience Platform 时，数据可用性的速度会提高，因为通过 Adobe Analytics 进行数据处理的时间被去除了。
-
-**使用 Experience Platform SDK 的优势:**
-
-* 灵活的模式来定义您需要的任何字段
-* 不依赖于 Adobe Analytics 命名法（属性、eVar、事件等）
-* 没有字符限制问题（属性有 100 个字符）
-* Adobe Experience Platform 中可更快地获得数据以促成[实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)
-* [第一方设备 ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) 可提高访客识别的准确性
-
-**使用 Experience Platform SDK 的缺点**
-
-不支持以下 Adobe Analytics 功能或组件：
-
-* 机器人筛选
-* 流媒体测量
-* 直播或直播触发器
-
-### 5. 将项目和组件从 Adobe Analytics 映射到 Customer Journey Analytics
-
-Adobe Analytics 管理员可将 Adobe Analytics 项目及其关联的组件迁移到 Customer Journey Analytics。
-
-迁移过程包括：
-
-* 在 Customer Journey Analytics 中重新创建 Adobe Analytics 项目。
-
-* 将来自 Adobe Analytics 报告包的维度和指标映射到 Customer Journey Analytics 数据视图中的维度和指标。
-
-在开始迁移之前，首先[准备将组件和项目从 Adobe Analytics 迁移到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html)。
-
-作出所有必要的准备后，即可[将组件和项目从 Adobe Analytics 迁移到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/component-migration.html)。
-
-## 为重要差异做好准备
+随着贵组织不断发展使用Customer Journey Analytics，请探索这些步骤以准备数据并了解这两种技术之间的关键差异。 本文针对管理员受众。
 
 ### 熟悉报告时处理 {#report-time}
 
@@ -131,6 +95,6 @@ Adobe Analytics 区段（在 Customer Journey Analytics 中称为[!UICONTROL 筛
 
 * 考虑为用户提供数据字典，或扩展SDR以包含架构元素的Experience Platform字段名称。
 
-## 后续步骤
+### 后续步骤
 
 迁移到 Customer Journey Analytics 后，如果您发现任何数据差异，您可以将原始 Adobe Analytics 数据与现在位于 Customer Journey Analytics 中的 Adobe Analytics 数据进行比较。[了解详情](/help/troubleshooting/compare.md)
