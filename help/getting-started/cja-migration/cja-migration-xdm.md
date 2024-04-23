@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 86ce60cf-b3c7-43b5-aa18-9e16fa942e54
-source-git-commit: 923dfac33fcde368392fe29c6530069cc0d8fb9d
+source-git-commit: 3e362a62d2ffd6d15e3028706e3704264df80222
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 +++
 
-下表显示了实施方法要求您将数据映射到XDM架构：
+并非所有迁移方法都需要将Adobe Analytics数据映射到XDM架构。 下表显示了哪些实施方法需要XDM架构映射：
 
 
 | 迁移方法 | 是否需要XDM映射？ | 更多信息 |

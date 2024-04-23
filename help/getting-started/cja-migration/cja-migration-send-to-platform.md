@@ -6,9 +6,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d9d7f186-9077-4372-94ad-8dd5b97779ca
-source-git-commit: 21d77f06595993172460b724dc7991cb9a5a02a8
+source-git-commit: 3e362a62d2ffd6d15e3028706e3704264df80222
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '795'
 ht-degree: 1%
 
 ---
@@ -44,9 +44,9 @@ ht-degree: 1%
 
 | 迁移方法 | 将数据发送到Platform的过程 |
 |---------|----------|
-| Web SDK的新实施 | [通过Adobe Experience Platform Web SDK引入数据](/help/data-ingestion/aepwebsdk.md) |
-| 迁移Adobe Analytics实施以使用Web SDK | 如果您使用的是Analytics标记扩展： [从Adobe Analytics标记扩展迁移到Web SDK标记扩展](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)<p>或</p><p>如果您使用AppMeasurement： [从AppMeasurement迁移到Web SDK](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk) |
-| 配置现有的Adobe Analytics Web SDK实施以将数据发送到Customer Journey Analytics | [设置数据流](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-datastream) 在 [通过Adobe Experience Platform Web SDK引入数据](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk) |
+| Web SDK的新实施 | 由于这是Web SDK的新实施，因此您必须执行中描述的所有步骤 [通过Adobe Experience Platform Web SDK引入数据](/help/data-ingestion/aepwebsdk.md). |
+| 迁移Adobe Analytics实施以使用Web SDK | 根据您当前的实施是Analytics扩展还是AppMeasurement，迁移到Adobe Analytics Web SDK的步骤会有所不同。 <p>如果您使用的是Analytics标记扩展： [从Adobe Analytics标记扩展迁移到Web SDK标记扩展](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)</p><p>或</p><p>如果您使用AppMeasurement： [从AppMeasurement迁移到Web SDK](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk) |
+| 配置现有的Adobe Analytics Web SDK实施以将数据发送到Customer Journey Analytics | 由于您的Adobe Analytics实施已在使用Web SDK，因此您只需要 [设置数据流](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-datastream). 您可以忽略中的其他部分 [通过Adobe Experience Platform Web SDK引入数据](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk). |
 | Analytics源连接器 | [从传统 Adobe Analytics 摄取和使用数据](/help/data-ingestion/analytics.md) |
 
 ## 接下来，将数据映射到XDM架构

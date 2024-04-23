@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: 923dfac33fcde368392fe29c6530069cc0d8fb9d
+source-git-commit: 3e362a62d2ffd6d15e3028706e3704264df80222
 workflow-type: tm+mt
-source-wordcount: '1914'
-ht-degree: 4%
+source-wordcount: '2026'
+ht-degree: 2%
 
 ---
 
@@ -46,7 +46,15 @@ ht-degree: 4%
 
 * 您的未来目标
 
-请阅读以下章节，以确定哪种Customer Journey Analytics迁移方法最符合贵组织的当前实施和未来目标：
+使用本页上的信息可确定哪种Customer Journey Analytics迁移方法最符合贵组织的当前实施和未来目标。
+
+为了确定组织的最佳迁移方法，应按顺序阅读以下部分：
+
+1. 首先， [了解可用的迁移方法](#understand-migration-methods).
+
+1. 然后， [评估可用的迁移方法](#assess-the-migration-methods-available-to-you-based-on-your-current-adobe-analytics-implementation).
+
+1. 最后， [权衡每种迁移方法的优缺点](#weigh-the-advantages-and-disadvantages-of-the-migration-methods-available-to-you).
 
 ## 了解迁移方法
 
@@ -58,14 +66,14 @@ ht-degree: 4%
 
 | 迁移方法 | 工作量 | 长期生存能力 |
 |---------|----------|---------|
-| **Web SDK的新实施**</br>&#x200B;您可以执行新的Adobe Experience Platform Web SDK实施，以开始将数据发送到Adobe Experience PlatformEdge Network <!-- what is the correct branding -->. <p>对于尚未使用Web SDK的组织，此迁移方法可能是将数据导入Edge Network最直接的方法（所需的步骤最少），但所有工作都是预先完成的，例如创建XDM架构。</p><p>基本步骤为：</p><ol><li>为您的组织创建XDM架构</li><li>实施Web SDK</li><li>将数据发送到Platform</li></ol> | 高 | 高 |
-| **迁移Adobe Analytics实施以使用Web SDK**</br>&#x200B;如果您的Adobe Analytics实施AppMeasurement或Analytics扩展，则可以将其迁移以使用Adobe Experience Platform Web SDK在将数据发送到Customer Journey Analytics之前开始向Edge Network发送数据。 <!-- what else? --><p>这是将数据导入Edge Network的最简单、最顺畅的方法；它需要更多的步骤，但提供了更有条理的过渡，具有更具体的里程碑。</p><p>基本步骤为：</p><ol><li>将您现有的Adobe Analytics实施移动到Web SDK中，并验证在那里的所有组件是否都正常工作。</li><li>根据需要为您的组织创建XDM架构。</li><li>使用数据流映射将数据对象中的所有字段映射到您的XDM架构。</li><li>将数据发送到Platform</li></ol> | 审核 | 高 |
-| **配置现有的Adobe Analytics Web SDK实施以将数据发送到Customer Journey Analytics**</br>&#x200B;如果您的Adobe Analytics实施已经在使用Web SDK，则可以开始向Customer Journey Analytics发送数据。<p>在将数据发送到Customer Journey Analytics之前，请考虑更新您的Adobe Analytics架构，以满足贵组织的特定需求以及您将使用的任何其他平台应用程序。</p><p>基本步骤为：</p><ol><li>开始向Customer Journey Analytics发送数据。<!-- What's involved here? Just point it at CJA? --></li><li>（可选）根据需要为您的组织创建XDM架构。</li><li>使用数据流映射将数据对象中的所有字段映射到您的XDM架构。</li></ol> | 低 | 高 |
+| **Web SDK的新实施**</br>&#x200B;您可以执行新的Adobe Experience Platform Web SDK实施，以开始将数据发送到Adobe Experience PlatformEdge Network <!-- what is the correct branding -->. <p>对于尚未使用Web SDK的组织，此迁移方法可能是将数据导入Edge Network最直接的方法（所需的步骤最少）；但是，由于所有工作都是预先完成的（例如创建XDM架构），因此它需要更大的初始工作。</p><p>基本步骤为：</p><ol><li>为您的组织创建XDM架构。</li><li>实施Web SDK。</li><li>将数据发送到Platform。</li></ol> | 高 | 高 |
+| **迁移Adobe Analytics实施以使用Web SDK**</br>&#x200B;如果您的Adobe Analytics实施AppMeasurement或Analytics扩展，则可以将其迁移以使用Adobe Experience Platform Web SDK在将数据发送到Customer Journey Analytics之前开始向Edge Network发送数据。 <!-- what else? --><p>这是将数据导入Edge Network的最简单、最顺畅的方法；它需要更多的步骤，但提供了更有条理的过渡，具有更具体的里程碑。</p><p>基本步骤为：</p><ol><li>将您现有的Adobe Analytics实施移动到Web SDK中，并验证在那里的所有组件是否都正常工作。</li><li>根据需要为您的组织创建XDM架构。</li><li>使用数据流映射将数据对象中的所有字段映射到您的XDM架构。</li><li>将数据发送到Platform。</li></ol> | 审核 | 高 |
+| **配置现有的Adobe Analytics Web SDK实施以将数据发送到Customer Journey Analytics**</br>&#x200B;如果您的Adobe Analytics实施已经在使用Web SDK，则您可以开始轻而易举地将数据发送到Customer Journey Analytics。<p>在将数据发送到Customer Journey Analytics之前，请考虑更新您的Adobe Analytics架构，以满足贵组织的特定需求以及您将使用的任何其他平台应用程序。</p><p>基本步骤为：</p><ol><li>开始向Customer Journey Analytics发送数据。<!-- What's involved here? Just point it at CJA? --></li><li>（可选）根据需要为您的组织创建XDM架构。</li><li>（视情况而定）如果您创建了XDM架构，请使用数据流映射将数据对象中的所有字段映射到XDM架构。</li></ol> | 低 | 高 |
 | **Analytics源连接器**</br>&#x200B;如果您的Adobe Analytics实施AppMeasurement或Analytics扩展，则可以开始以Customer Journey Analytics将数据发送到数据视图。<p>这是将数据导入Customer Journey Analytics的最简单方法，但长期而言是最不可行的方法。</p> | 低 | 低 |
 
 {style="table-layout:auto"}
 
-使用下图帮助可视化每种迁移方法在工作量方面所处的阶段，以及每种迁移方法实现的长期可行性：
+使用下图帮助可视化每种迁移方法在工作量和长期可行性方面所处的范围：
 
 ![cja迁移方法](assets/cja-migration-methods.png)
 
@@ -73,7 +81,7 @@ ht-degree: 4%
 
 并非所有迁移方法都适用于每种类型的Adobe Analytics实施。
 
-请按照以下信息作为一般准则来帮助您了解哪种迁移方法最适合您的组织。
+请通过以下信息帮助您了解哪种迁移方法最适合您的组织。
 
 如果您需要更具体的建议、指导或支持，请联系您的Adobe代表。
 
@@ -91,19 +99,19 @@ ht-degree: 4%
 
 在使用以下信息确定适合您的迁移方法之前，请查看中的信息 [了解迁移方法](#understand-migration-methods) 如果你还没有的话。
 
-### AppMeasurement和Adobe Analytics扩展
+### 对于使用的Adobe Analytics实施：AppMeasurement和Adobe Analytics扩展
 
 下表显示了适用于已使用AppMeasurement或Adobe Analytics扩展实施Adobe Analytics的组织可用的迁移方法：
 
 | 迁移方法 | 优势 | 缺点 |
 |---------|----------|---------|
-| **Web SDK的新实施** | <ul><li>使用XDM架构，这是一种灵活的架构，可定义您需要的任何字段</li><li>不依赖于 Adobe Analytics 命名法（属性、eVar、事件等）</li><li>没有字符限制问题（属性有 100 个字符）</li><li>高性能报表和数据可用性，因为Adobe Experience Platform是专为提供强大功能而构建的 [实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>经得起未来考验（将获得所有最新特性和功能）</li><li>在其他Experience Cloud产品（AJO、RTCDP等）之间合并Adobe Experience Cloud数据收集的标记</li><li>[第一方设备 ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) 可提高访客识别的准确性</li></ul> | <ul><li>最耗时、最苛刻的迁移方法<p>必须先在XDM中重新创建完整架构，然后才能开始实施Web SDK</p></li></ul> |
-| **将Adobe Analytics迁移到Web SDK** | <ul><li>保留您的Adobe Analytics实施中已配置的规则和数据元素。</li><li>使您能够迁移至Web SDK而不影响您现有的Adobe Analytics报表。</li><li>提供了灵活性，以便稍后为您的组织创建XDM架构。</br>不需要Customer Journey Analytics中的Adobe Analytics Experience Event Field组。 <!-- With the new implementation, you're double-counting with 2 implementation; with the migration, you're double-counting, but both of them are through Edge Network. --></li><li>不依赖于 Adobe Analytics 命名法（属性、eVar、事件等）</li><li>没有字符限制问题（属性有 100 个字符）</li><li>高性能报表和数据可用性，因为Adobe Experience Platform是专为提供强大功能而构建的 [实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>经得起未来考验（将获得所有最新特性和功能）</li><li>在其他Experience Cloud产品（AJO、RTCDP等）之间合并Adobe Experience Cloud数据收集的标记</li><li>[第一方设备 ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) 可提高访客识别的准确性</li></ul> | <ul><li>在将来的某个时刻必须符合XDM架构，使用数据流映射。</li><li>会产生一些技术债务。 例如，可以保留旧版AppMeasurement或Analytics扩展代码。 </li></ul> |
+| **Web SDK的新实施** | <ul><li>使用XDM架构和灵活的架构来定义所需的任何字段，并且只定义相关的字段(让您从Adobe Analytics体验事件字段组中移开)</li><li>不依赖于Adobe Analytics命名法(属性、eVar、事件等)</li><li>没有字符限制问题（属性有 100 个字符）</li><li>高性能报表和数据可用性，因为Adobe Experience Platform是专为提供强大功能而构建的 [实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>经得起未来考验（将获得所有最新特性和功能）</li><li>在其他Experience Cloud产品（AJO、RTCDP等）之间合并Adobe Experience Cloud数据收集的标记</li><li>[第一方设备 ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) 可提高访客识别的准确性</li></ul> | <ul><li>最耗时、最苛刻的迁移方法<p>必须先在XDM中重新创建完整架构，然后才能开始实施Web SDK</p></li></ul> |
+| **将Adobe Analytics迁移到Web SDK** | <ul><li>保留您的Adobe Analytics实施中已配置的规则和数据元素。</li><li>使您能够迁移至Web SDK而不影响您现有的Adobe Analytics报表。</li><li>提供灵活性，以便以后为您的组织创建XDM架构：灵活的架构用于定义所需的任何字段，并且只定义相关的字段。</br>不需要Customer Journey Analytics中的Adobe Analytics Experience Event Field组。 <!-- With the new implementation, you're double-counting with 2 implementation; with the migration, you're double-counting, but both of them are through Edge Network. --></li><li>不依赖于Adobe Analytics命名法(属性、eVar、事件等)</li><li>没有字符限制问题（属性有 100 个字符）</li><li>高性能报表和数据可用性，因为Adobe Experience Platform是专为提供强大功能而构建的 [实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>经得起未来考验（将获得所有最新特性和功能）</li><li>在其他Experience Cloud产品（AJO、RTCDP等）之间合并Adobe Experience Cloud数据收集的标记</li><li>[第一方设备 ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) 可提高访客识别的准确性</li></ul> | <ul><li>在将来的某个时刻必须符合XDM架构，使用数据流映射。</li><li>会产生一些技术债务。 例如，可以保留旧版AppMeasurement或Analytics扩展代码。 </li></ul> |
 | **Analytics源连接器** | <ul><li>最省时和最苛刻的迁移方法。 <p>以最少的投资将数据快速迁移到Customer Journey Analytics</p></li></ul> | <ul><li>数据不会发送到Edge Network，并且无法与其他Adobe Experience Platform应用程序共享；它仅受Customer Journey Analytics限制<li>未来难以迁移到Web SDK</li><li>在架构中使用Analytics Experience Event字段组。</br>此字段组添加了许多Customer Journey Analytics架构中不需要的Adobe Analytics事件。  这可能会导致Customer Journey Analytics所需的架构更加杂乱、复杂。</li><li>最高级别的 [延迟](/help/admin/guardrails.md#latencies) 跨所有实施方法</li></ul> |
 
 {style="table-layout:auto"}
 
-### Web SDK
+### 对于使用的Adobe Analytics实施： Web SDK
 
 下表显示了适用于已使用Web SDK实施Adobe Analytics的组织可用的迁移方法：
 
