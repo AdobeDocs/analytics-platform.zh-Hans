@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: 7bc4425f11980780ab64a201029cd63e4bd7849c
+source-git-commit: 6d4fdb464775967074547f8401de679f181d29d7
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '1965'
 ht-degree: 2%
 
 ---
@@ -137,16 +137,6 @@ ht-degree: 2%
 
 +++
 
-## 接下来，将数据映射到XDM架构
+## 接下来，将数据发送到Adobe Experience Platform
 
-按照上表中的链接向Experience Platform发送数据后，您可能需要 [将数据映射到XDM架构](/help/getting-started/cja-migration/cja-migration-xdm.md)，具体取决于您选择的实施方法。
-
-以下实施方法要求您将数据映射到XDM架构：
-
-* 从Adobe Analytics标记扩展迁移到Web SDK标记扩展
-
-* 配置现有的Adobe Analytics Web SDK实施以将数据发送到Customer Journey Analytics
-
-或者，如果您选择重新实施Experience PlatformWeb SDK，则无需映射，因为您已经 [设置新的XDM架构](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-schema) 作为新实施的一部分。
-
-如果您选择使用Analytics Source Connector进行迁移，则不需要映射，因为Analytics Source Connector使用您现有的Adobe Analytics架构，而不是XDM架构。
+使用上述信息选择迁移路径后，了解如何 [将数据发送到Adobe Experience Platform](/help/getting-started/cja-migration/cja-migration-send-to-platform.md) 具体取决于您选择的迁移路径。

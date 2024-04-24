@@ -5,10 +5,10 @@ exl-id: cab218c0-009c-4669-9dfb-f8872a7f066b
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 7bc4425f11980780ab64a201029cd63e4bd7849c
+source-git-commit: 366fc232fad278f6a6448d68cda6d0e1f05718f3
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 51%
+source-wordcount: '742'
+ht-degree: 58%
 
 ---
 
@@ -33,7 +33,7 @@ Customer Journey Analytics 适用以下客户：
 | **步骤 4：创建数据视图** | 数据视图是数据的“筛选”视图。您可以使用不同的访问超时、归因等设置为同一连接创建不同的数据视图。您可以为单个数据集创建多个视图。<br>请参阅[创建数据视图](/help/data-views/create-dataview.md)。 |
 | **步骤5：移植报表API使用情况**</br>&#x200B;仅在从Adobe Analytics迁移时适用 | Customer Journey Analytics报表API采用相同的格式，但使用不同的端点。 将报表API使用情况从Adobe Analytics报表API移植到Customer Journey Analytics报表API。 |
 | **步骤6：考虑数据馈送和Data Warehouse用例**</br>&#x200B;仅在从Adobe Analytics迁移时适用 | 决定如何使用Customer Journey Analytics中可用的导出选项，以便最好地复制您在Adobe Analytics中使用的数据馈送和Data Warehouse功能。 <!-- link to docs Rob is creating --> |
-| **步骤7：迁移项目和组件**</br>&#x200B;仅在从Adobe Analytics迁移时适用 | 利用Adobe Analytics中的组件迁移区域，可将项目及其关联的组件从Adobe Analytics迁移到Customer Journey Analytics。<p>有关在Customer Journey Analytics中复制Adobe Analytics项目以及将项目组件从Adobe Analytics报表包映射到Customer Journey Analytics数据视图的信息，请参阅 [将组件和项目从Adobe Analytics迁移到Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration.html).</p> |
+| **步骤7：迁移项目和组件**</br>&#x200B;仅在从Adobe Analytics迁移时适用 | 利用Adobe Analytics中的组件迁移区域，可将项目及其关联的组件从Adobe Analytics迁移到Customer Journey Analytics。<p>迁移过程包括：</p><ul><li>在 Customer Journey Analytics 中重新创建 Adobe Analytics 项目。</li><li>将来自 Adobe Analytics 报告包的维度和指标映射到 Customer Journey Analytics 数据视图中的维度和指标。</li></ul><p>在开始迁移之前，首先[准备将组件和项目从 Adobe Analytics 迁移到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html)。</p><p>作出所有必要的准备后，即可[将组件和项目从 Adobe Analytics 迁移到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/component-migration.html)。</p> |
 | **步骤8：规划用户入门** | 与Adobe Analytics中一样，Analysis Workspace是Customer Journey Analytics中主要面向用户的工具。 但是，在Customer Journey Analytics中使用Analysis Workspace时存在一些用户需要注意的主要差异。<p>您应该给用户充足的时间（3 - 6个月），以熟悉Analysis Workspace在Customer Journey Analytics方面的主要差异。</p><p>有关Adobe Analytics与Customer Journey Analytics之间的一些主要差异的信息，请参阅 [适用于Adobe Analytics用户的用户指南](/help/getting-started/aa-to-cja-user.md).</p> |
 | **步骤 9：在工作区中报告跨渠道数据** | 创建连接和数据视图后，利用 Analysis Workspace 的强大功能和灵活性分析导入的数据。<br>请参阅[执行基本分析](/help/analysis-workspace/perform-basic-analysis.md)和[执行高级分析](/help/analysis-workspace/perform-adv-analysis.md)。 |
 
