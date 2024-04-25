@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: 2d35e49ca9afe37ed53d7c5da5aafd31dd2da632
+source-git-commit: 7d17ef31053bbf0d480bfa923fc961aeba4fc15e
 workflow-type: tm+mt
 source-wordcount: '1965'
 ht-degree: 2%
@@ -109,13 +109,21 @@ ht-degree: 2%
 
 +++
 
-+++将Adobe Analytics迁移到Web SDK | 优点 | 缺点 | ------------------- | <ul><li>使您能够迁移至Web SDK而不影响您现有的Adobe Analytics报表。</li><li>保留已在Adobe Analytics实施中配置的规则和数据元素（适用于使用Analytics扩展的组织）。</li><li>提供灵活性，以便以后为您的组织创建XDM架构：灵活的架构用于定义所需的任何字段，并且只定义相关的字段。</br>不需要Adobe Experience Platform中的“Adobe Analytics体验事件字段”组。 <!-- With the new implementation, you're double-counting with 2 implementation; with the migration, you're double-counting, but both of them are through Edge Network. --></li><li>不依赖于Adobe Analytics命名法(属性、eVar、事件等)</li><li>没有字符限制问题（属性有 100 个字符）</li><li>高性能报表和数据可用性，因为Adobe Experience Platform是专为提供强大功能而构建的 [实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>经得起未来考验（将获得所有最新特性和功能）</li><li>在其他Experience Cloud产品（AJO、RTCDP等）之间合并Adobe Experience Cloud数据收集的标记</li><li>[第一方设备 ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) 可提高访客识别的准确性</li></ul> | <ul><li>在将来的某个时刻必须符合XDM架构，使用数据流映射。</li><li>会产生一些技术债务。 例如，可以保留旧版AppMeasurement或Analytics扩展代码。 </li></ul> |
++++将Adobe Analytics迁移到Web SDK
+
+| 优势 | 缺点 |
+|----------|---------|
+| <ul><li>使您能够迁移至Web SDK而不影响您现有的Adobe Analytics报表。</li><li>保留已在Adobe Analytics实施中配置的规则和数据元素（适用于使用Analytics扩展的组织）。</li><li>提供灵活性，以便以后为您的组织创建XDM架构：灵活的架构用于定义所需的任何字段，并且只定义相关的字段。</br>不需要Adobe Experience Platform中的“Adobe Analytics体验事件字段”组。 <!-- With the new implementation, you're double-counting with 2 implementation; with the migration, you're double-counting, but both of them are through Edge Network. --></li><li>不依赖于Adobe Analytics命名法(属性、eVar、事件等)</li><li>没有字符限制问题（属性有 100 个字符）</li><li>高性能报表和数据可用性，因为Adobe Experience Platform是专为提供强大功能而构建的 [实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>经得起未来考验（将获得所有最新特性和功能）</li><li>在其他Experience Cloud产品（AJO、RTCDP等）之间合并Adobe Experience Cloud数据收集的标记</li><li>[第一方设备 ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) 可提高访客识别的准确性</li></ul> | <ul><li>在将来的某个时刻必须符合XDM架构，使用数据流映射。</li><li>会产生一些技术债务。 例如，可以保留旧版AppMeasurement或Analytics扩展代码。 </li></ul> |
 
 {style="table-layout:auto"}
 
 +++
 
-+++使用Analytics源连接器 | 优点 | 缺点 | ------------------- | <ul><li>最省时和最苛刻的迁移路径。 <p>以最少的投资将数据快速迁移到Customer Journey Analytics</p></li></ul> | <ul><li>数据不会发送到Edge Network，并且无法与其他Adobe Experience Platform应用程序共享；它仅受Customer Journey Analytics限制<li>未来难以迁移到Web SDK</li><li>在架构中使用Analytics Experience Event字段组。</br>此字段组添加了许多Customer Journey Analytics架构中不需要的Adobe Analytics事件。  这可能会导致Customer Journey Analytics所需的架构更加杂乱、复杂。</li><li>最高级别的 [延迟](/help/admin/guardrails.md#latencies) 跨所有实施方法</li></ul> |
++++使用Analytics源连接器
+
+| 优势 | 缺点 |
+|----------|---------|
+| <ul><li>最省时和最苛刻的迁移路径。 <p>以最少的投资将数据快速迁移到Customer Journey Analytics</p></li></ul> | <ul><li>数据不会发送到Edge Network，并且无法与其他Adobe Experience Platform应用程序共享；它仅受Customer Journey Analytics限制<li>未来难以迁移到Web SDK</li><li>在架构中使用Analytics Experience Event字段组。</br>此字段组添加了许多Customer Journey Analytics架构中不需要的Adobe Analytics事件。  这可能会导致Customer Journey Analytics所需的架构更加杂乱、复杂。</li><li>最高级别的 [延迟](/help/admin/guardrails.md#latencies) 跨所有实施方法</li></ul> |
 
 {style="table-layout:auto"}
 
