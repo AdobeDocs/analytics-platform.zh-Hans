@@ -4,10 +4,10 @@ title: 快速过滤器
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 284c73374ca3fdfc4afbc2824209bebdc764fb64
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 40%
+source-wordcount: '1170'
+ht-degree: 39%
 
 ---
 
@@ -20,6 +20,7 @@ ht-degree: 40%
 * 快速筛选器仅适用于创建它们的项目。 此类过滤器在其他项目中不可用，无法共享给其他用户。
 * 最多允许使用 3 个规则。
 * 不支持嵌套容器或顺序规则。
+* 如果与其他用户共享项目，则这些用户可以编辑快速筛选器以及嵌入到共享项目中的其他仅用于项目的组件。
 
 以下视频演示了如何使用快速过滤器。 (注意：本视频使用术语“快速区段”而不是“快速过滤器”。 但是，功能是相同的。)
 

@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 3ca28d9c9f1c6a9e14ce4c9080bd180a5699ad5b
+source-git-commit: c55daff7e2d96c96b985b0ec9609eb4db0370a45
 workflow-type: tm+mt
-source-wordcount: '3290'
-ht-degree: 77%
+source-wordcount: '3375'
+ht-degree: 75%
 
 ---
 
@@ -22,8 +22,11 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | **2024 年 4 月** | |
 | 预测统计技术 | 添加了描述 [预测服务中使用的统计技术](../analysis-workspace/c-forecast/statistics-forecasting.md). |
 | 添加了建议对高基数维度导出完整表的信息 | 在中添加了项目符号 [高基数维度的最佳实践](/help/components/dimensions/high-cardinality.md) 建议对高基数维度使用完全表导出。 |
+| 添加了关于移动记分卡中智能字幕的文档 | [智能字幕](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) 可帮助非分析人员在没有分析人员帮助的情况下更好地理解他们的数据。 |
+| 有关新Adobe Product Analytics功能的文档 | <ul><li>[特征矩阵](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>增强功能 [保留率](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[漏斗中的增强洞察](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>比较单个漏斗步骤中的事件</li></ul> |
 | **2024 年 3 月** | |
 | 有关“用于”列的使用情况信息仅从 2023 年 9 月开始提供。 | 阐明[项目登陆页面](/help/getting-started/landing.md)“**用于**”列的使用情况信息只能追溯到 2023 年 9 月。 |
+| 添加了有关仅用于项目的工作区组件的权限增强的文档 | 如果您与其他用户共享项目，则这些用户可以编辑 [快速过滤器](/help/components/filters/quick-filters.md) 以及嵌入到共享项目中的其他仅用于项目的组件。 |
 | **2024 年 2 月** | |
 | 项目共享文档更新 | 添加了关于如何 [查看与您共享的项目](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>还简化了有关[共享单个或多个项目](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role)的信息。</p> |
 | 添加了在配置云导出位置时将文件上传到Azure SAS和Azure RBAC的权限要求 | 添加了在以下情况下将文件上传到Azure SAS和Azure RBAC的确切权限要求 [配置云导出帐户](/help/components/exports/cloud-export-accounts.md) 和 [配置云导出位置](/help/components/exports/cloud-export-locations.md). |
