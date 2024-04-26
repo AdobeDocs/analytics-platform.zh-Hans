@@ -4,9 +4,9 @@ description: 迁移到Customer Journey Analytics时将数据发送到Adobe Exper
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: d9d7f186-9077-4372-94ad-8dd5b97779ca
-source-git-commit: 2d35e49ca9afe37ed53d7c5da5aafd31dd2da632
+source-git-commit: 1c789264a9867279f58a3ad139207fec8db29c1b
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '774'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 1%
 |---------|----------|----------|
 | Experience PlatformWeb SDK的新实施 | <ol><li>为您的组织创建XDM架构。<p>与您的数据团队合作，确定您组织适用于Customer Journey Analytics的理想架构设计。</p></li><li>实施Experience PlatformWeb SDK。</li><li>将数据发送到Platform。</li></ol><p>有关每个步骤的详细信息，请参阅 [通过Adobe Experience Platform Web SDK引入数据](/help/data-ingestion/aepwebsdk.md). | 由于这是Experience PlatformWeb SDK的新实施，因此不需要进行架构映射，因为您必须创建架构作为实施过程中的首要步骤之一。 |
 | 迁移Adobe Analytics实施以使用Web SDK | <ol><li>将现有的Adobe Analytics实施移动到Experience PlatformWeb SDK，然后验证所有内容在Adobe Analytics中是否都正常工作。<p>有关如何执行此操作的信息，请根据当前实施是Analytics标记扩展还是AppMeasurement，使用以下资源：</p><ul><li>如果您使用的是Analytics标记扩展，请参阅 [从Adobe Analytics标记扩展迁移到Web SDK标记扩展](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)</li><li>如果您正在使用AppMeasurement，请参阅 [从AppMeasurement迁移到Web SDK](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)</li></ul><li>[为您的组织创建XDM架构](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-schema-and-dataset).<p>与您的数据团队合作，确定您组织适用于Customer Journey Analytics的理想架构设计。</p></li><li>[使用数据准备将数据对象中的所有字段映射到您的XDM架构](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/home).</li><li>通过以下方式开始将数据发送到Platform [设置数据流](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-datastream).</li></ol> |  |
-| 配置现有的Adobe Analytics Web SDK实施以将数据发送到Customer Journey Analytics | <ol><li>通过以下方式开始将数据发送到Platform [设置数据流](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-datastream).<p>由于您的Adobe Analytics实施已在使用Experience PlatformWeb SDK，因此您可以忽略中的其他部分 [通过Adobe Experience Platform Web SDK引入数据](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk).</li><li>（可选） [为您的组织创建XDM架构](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-schema-and-dataset).<p>与您的数据团队合作，确定您组织适用于Customer Journey Analytics的理想架构设计。</p><p>注意：有关创建XDM架构的优势的信息，请参阅 [对于使用的Adobe Analytics实施： Web SDK](/help/getting-started/cja-migration/cja-migration-path.md#for-adobe-analytics-implementations-using-web-sdk).</li><li>（视情况而定）如果您创建了XDM架构， [使用数据准备将数据对象中的所有字段映射到您的XDM架构](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/home).</li></ol> |
+| 配置现有的Adobe Analytics Web SDK实施以将数据发送到Customer Journey Analytics | <ol><li>通过以下方式开始将数据发送到Platform [设置数据流](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-datastream).<p>由于您的Adobe Analytics实施已在使用Experience PlatformWeb SDK，因此您可以忽略中的其他部分 [通过Adobe Experience Platform Web SDK引入数据](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk).</li><li>（可选） [为您的组织创建XDM架构](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-schema-and-dataset).<p>与您的数据团队合作，确定您组织适用于Customer Journey Analytics的理想架构设计。</p><p>注意：有关创建XDM架构的优势的信息，请参阅 [选择您的架构](/help/getting-started/cja-migration/cja-migration-path.md#choose-your-schema).</li><li>（视情况而定）如果您创建了XDM架构， [使用数据准备将数据对象中的所有字段映射到您的XDM架构](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/home).</li></ol> |
 | 使用Analytics源连接器 | [从传统 Adobe Analytics 摄取和使用数据](/help/data-ingestion/analytics.md) | 当您使用Adobe Analytics源连接器时，Analytics数据会自动映射到XDM架构。 不需要其他映射。 |
 
 ## 接下来，保留历史数据

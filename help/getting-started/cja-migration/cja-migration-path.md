@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: 5a0c383104fa4df79bc3c24d4af3677d255612f6
+source-git-commit: 1c789264a9867279f58a3ad139207fec8db29c1b
 workflow-type: tm+mt
-source-wordcount: '2641'
+source-wordcount: '2422'
 ht-degree: 0%
 
 ---
@@ -97,13 +97,13 @@ ht-degree: 0%
 
 以下是适用于已使用AppMeasurement或Adobe Analytics扩展实施了Adobe Analytics的组织可用的迁移路径。 展开每个部分可查看每个迁移路径的优缺点。
 
-**迁移路径：**
+#### 迁移路径
 
 +++Experience PlatformWeb SDK的新实现
 
 | 优势 | 缺点 |
 |----------|---------|
-| <ul><li>**提供在Experience ExperienceEdge Network中托管数据的所有优势**： <p>这些优势包括：</p><ul><li>高性能报表和数据可用性，因为Adobe Experience Platform是专为提供强大功能而构建的 [实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>在其他Experience Cloud产品（AJO、RTCDP等）之间合并Adobe Experience Cloud数据收集的标记</li><li>不依赖于Adobe Analytics命名法(属性、eVar、事件等)</li></ul></li><li>**使用XDM架构**： [XDM架构](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home#xdm-schemas) 是一种灵活的架构，用于定义您需要的任何字段，并且只定义相关的字段。 使用XDM架构可让您从Adobe Analytics Experience Event字段组中移开。</li><li>**无字符限制**： XDM架构没有字符限制。</li><li>**面向未来**：Experience PlatformWeb SDK将接收所有最新特性和功能。</li><li>**提高访客识别的准确性**：Web SDK使用的Experience Platform [第一方设备Id](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) 以提高访客识别的准确性。</li></ul> | <ul><li>**需要从头开始的新实施**：要求从头开始执行新实施意味着以下缺点： </li><ul><li>**耗时**：这是最耗时、最苛刻的迁移路径，因为这要求您从头开始实施新版本。</li><li>**必须在XDM中重新创建完整架构**：您必须在XDM中重新创建完整架构，然后才能开始实施Web SDK。</li><li>**必须重新创建规则和数据元素**：在开始实施Web SDK之前，您必须从Adobe Analytics实施重新创建任何规则条件和数据元素。</li></ul></ul> |
+| <ul><li>**提供在Experience ExperienceEdge Network中托管数据的所有优势**： <p>这些优势包括：</p><ul><li>高性能报表和数据可用性，因为Adobe Experience Platform是专为提供强大功能而构建的 [实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>整合其他Experience Cloud产品（AJO、RTCDP等）之间Adobe Experience Cloud数据收集的实施</li><li>不依赖于Adobe Analytics命名法(属性、eVar、事件等)</li></ul></li><li>**面向未来**：未来的实施更新更轻松。</li></ul> | <ul><li>**需要从头开始的新实施**：要求从头开始执行新实施意味着以下缺点： </li><ul><li>**耗时**：这是最耗时、最苛刻的迁移路径，因为这要求您从头开始实施新版本。</li><li>**必须在XDM中重新创建完整架构**：您必须在XDM中重新创建完整架构，然后才能开始实施Web SDK。</li><li>**必须重新创建规则和数据元素**：在开始实施Web SDK之前，您必须从Adobe Analytics实施重新创建任何规则条件和数据元素。</li></ul></ul> |
 
 {style="table-layout:auto"}
 
@@ -113,7 +113,7 @@ ht-degree: 0%
 
 | 优势 | 缺点 |
 |----------|---------|
-| <ul><li>**提供在Experience ExperienceEdge Network中托管数据的所有优势**： <p>这些优势包括：</p><ul><li>高性能报表和数据可用性，因为Adobe Experience Platform是专为提供强大功能而构建的 [实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>在其他Experience Cloud产品（AJO、RTCDP等）之间合并Adobe Experience Cloud数据收集的标记</li><li>不依赖于Adobe Analytics命名法(属性、eVar、事件等)</li></ul><li>**使用您现有的实施**：虽然此方法要求对实施进行一些更改，但不需要从头开始实施全新的实施。 您可以在不影响现有Adobe Analytics报表的情况下，使用现有数据层和代码，只需对实施逻辑进行最低限度的更改即可。</li><li>**提供了灵活性，以便稍后为您的组织创建XDM架构**：您可以迁移现有的Adobe Analytics实施以使用Web SDK并验证一切都在Adobe Analytics中正常工作，然后创建XDM架构。 这种灵活性允许进行更有条理、更周到的迁移。</li><li>**使用XDM架构**： [XDM架构](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home#xdm-schemas) 是一种灵活的架构，用于定义您需要的任何字段，并且只定义相关的字段。 使用XDM架构可让您从Adobe Analytics Experience Event字段组中移开。</li><li>(从Adobe Analytics标记扩展迁移时) **保留规则和数据元素**：虽然它确实需要新的规则操作，但您可以用最小的更改重用现有的数据元素和规则条件。</li><li>**无字符限制**： XDM架构没有字符限制。</li><li>**面向未来**：Experience PlatformWeb SDK将接收所有最新特性和功能。</li><li>**提高访客识别的准确性**：Web SDK使用的Experience Platform [第一方设备Id](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) 以提高访客识别的准确性。</li></ul> | <ul><li>**需要映射才能将数据发送到Platform**：当您的组织准备好使用Customer Journey Analytics时，您必须将数据发送到Adobe Experience Platform中的数据集。 此操作要求数据对象中的每个字段都是数据流映射工具中的条目，并将其分配给XDM架构字段。 此工作流的映射只需执行一次，并且不涉及对实施进行更改。 但是，这是一个额外的步骤，在XDM对象中发送数据时不需要执行此步骤。</li><li>**技术债务**：由于此方法使用现有实施的修改形式，因此将来需要跟踪实施逻辑和执行更改会更加困难。 </li><li>(仅从AppMeasurement迁移时) **实施更改需要开发人员干预**：如果您要更改Web SDK实施，则必须与开发团队合作，以在您的网站上编辑代码。 从Analytics标记扩展迁移到Web SDK时，这不适用。</li></ul> |
+| <ul><li>**提供在Experience ExperienceEdge Network中托管数据的所有优势**： <p>这些优势包括：</p><ul><li>高性能报表和数据可用性，因为Adobe Experience Platform是专为提供强大功能而构建的 [实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>整合其他Experience Cloud产品（AJO、RTCDP等）之间Adobe Experience Cloud数据收集的实施</li><li>不依赖于Adobe Analytics命名法(属性、eVar、事件等)</li></ul><li>**使用您现有的实施**：虽然此方法要求对实施进行一些更改，但不需要从头开始实施全新的实施。 您可以在不影响现有Adobe Analytics报表的情况下，使用现有数据层和代码，只需对实施逻辑进行最低限度的更改即可。</li><li>**提供了灵活性，以便稍后为您的组织创建XDM架构**：您可以迁移现有的Adobe Analytics实施以使用Web SDK并验证一切都在Adobe Analytics中正常工作，然后创建XDM架构。 这种灵活性允许进行更有条理、更周到的迁移。</li></ul> | <ul><li>**需要映射才能将数据发送到Platform**：当您的组织准备好使用Customer Journey Analytics时，您必须将数据发送到Adobe Experience Platform中的数据集。 此操作要求数据对象中的每个字段都是数据流映射工具中的条目，并将其分配给XDM架构字段。 此工作流的映射只需执行一次，并且不涉及对实施进行更改。 但是，这是一个额外的步骤，在XDM对象中发送数据时不需要执行此步骤。</li><li>**技术债务**：由于此方法使用现有实施的修改形式，因此将来需要跟踪实施逻辑和执行更改会更加困难。 </li></ul> |
 
 {style="table-layout:auto"}
 
@@ -131,17 +131,41 @@ ht-degree: 0%
 
 ### 对于使用的Adobe Analytics实施： Web SDK
 
-以下迁移路径适用于已使用Experience PlatformWeb SDK实施Adobe Analytics的组织：
+以下迁移路径适用于已使用Experience PlatformWeb SDK实施Adobe Analytics的组织。
 
-**迁移路径：**
+选择此迁移路径时，您还需要选择架构。
+
+#### 迁移路径
 
 +++配置Adobe Analytics Web SDK实施以将数据发送到Customer Journey Analytics
 
 | 优势 | 缺点 |
 |----------|---------|
-| 如果您的Adobe Analytics实施已经在使用Web SDK，则这是首选的迁移路径。<ul><li>**提供在Experience ExperienceEdge Network中托管数据的所有优势**： <p>这些优势包括：</p><ul><li>高性能报表和数据可用性，因为Adobe Experience Platform是专为提供强大功能而构建的 [实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>在其他Experience Cloud产品（AJO、RTCDP等）之间合并Adobe Experience Cloud数据收集的标记</li><li>不依赖于Adobe Analytics命名法(属性、eVar、事件等)</li></ul><li>**使用您现有的实施**：虽然此方法要求对实施进行一些更改，但不需要从头开始实施全新的实施。 您可以在不影响现有Adobe Analytics报表的情况下，使用现有数据层和代码，只需对实施逻辑进行最低限度的更改即可。</li><li>**提供使用XDM架构的选项**：您可以选择使用现有Adobe Analytics架构或创建XDM架构，并将数据对象中的字段映射到XDM架构。 [XDM架构](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home#xdm-schemas) 是一种灵活的架构，用于定义您需要的任何字段，并且只定义相关的字段。 <p>请参阅下面的“使用XDM架构” ，以了解有关使用XDM架构优势的更多信息。</p></li><li>**保留规则和数据元素**：虽然它确实需要新的规则操作，但您可以用最小的更改重用现有的数据元素和规则条件。</li><li>**无字符限制**：如果您选择创建和使用XDM架构，则没有字符限制。</li><li>**面向未来**：Experience PlatformWeb SDK将接收所有最新特性和功能。</li><li>**提高访客识别的准确性**：Web SDK使用的Experience Platform [第一方设备Id](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) 以提高访客识别的准确性。</li></ul><p>**选择您的架构**</p><p>使用此迁移路径时，您可以选择是否使用现有Adobe Analytics架构，也可以更新到XDM架构以在开始使用其他Platform应用程序时更好地符合组织的需求。</p><p>**使用Adobe Analytics架构**</p><p>使用Adobe Analytics架构的优势包括：</p><ul><li>轻松迁移<p>如果您已使用Adobe Experience Platform Web SDK将数据发送到Adobe Analytics，则可以将其他服务添加到您的数据流以将数据发送到Adobe Experience Platform(然后可以在您的Customer Journey Analytics配置中使用)。</p></li></ul><p>使用Adobe Analytics架构的缺点包括：</p><ul><li>虽然使用Adobe Analytics架构不会限制您如何将其与其他Platform应用程序一起使用，但它的确会导致架构比不使用该架构时复杂得多。 这是因为Adobe Analytics架构包含许多特定于Adobe Analytics的对象，您的组织不太可能使用这些对象。<p>当需要对架构进行更改时，您必须筛选成千上万个未使用的字段以查找需要更新的字段。</p></li></ul><p>**使用XDM架构**</p><p>更新XDM架构的优点包括：</p><ul><li>简化架构，根据贵组织的需求以及您使用的特定平台应用程序量身定制。</li><p>当需要对架构进行更改时，您不必在数千个未使用的字段中进行筛选，即可找到需要更新的字段。</p></ul><p>更新XDM架构的缺点包括：</p><ul><li>在开始向Customer Journey Analytics发送数据之前，需要更新架构是一个耗时的过程。</li></ul> | 无 |
+| 如果您的Adobe Analytics实施已经在使用Web SDK，则这是首选的迁移路径。<ul><li>**提供在Experience ExperienceEdge Network中托管数据的所有优势**： <p>这些优势包括：</p><ul><li>高性能报表和数据可用性，因为Adobe Experience Platform是专为提供强大功能而构建的 [实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>整合其他Experience Cloud产品（AJO、RTCDP等）之间Adobe Experience Cloud数据收集的实施</li><li>不依赖于Adobe Analytics命名法(属性、eVar、事件等)</li></ul><li>**使用您现有的实施**：虽然此方法要求对实施进行一些更改，但不需要从头开始实施全新的实施。 您可以在不影响现有Adobe Analytics报表的情况下，使用现有数据层和代码，只需对实施逻辑进行最低限度的更改即可。</li><li>**提供使用XDM架构的选项**：您可以选择使用现有Adobe Analytics架构或创建XDM架构，并将数据对象中的字段映射到XDM架构。 [XDM架构](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home#xdm-schemas) 是一种灵活的架构，用于定义您需要的任何字段，并且只定义相关的字段。 <p>请参阅下面的“使用您自己的XDM架构”，详细了解使用您自己的XDM架构的优势。</p></li><li>**保留规则和数据元素**：虽然它确实需要新的规则操作，但您可以用最小的更改重用现有的数据元素和规则条件。</li><li>**面向未来**：如果您选择使用自己的XDM架构，则未来实施更新会更轻松。</li></ul> | 无 |
 
 {style="table-layout:auto"}
+
++++
+
+#### 选择您的架构
+
+如果选择允许将Adobe Analytics Web SDK实施配置为将数据发送到Customer Journey Analytics的迁移路径，则可以选择要使用的架构。
+
+您可以选择是否使用现有Adobe Analytics架构，也可以更新到您自己的XDM架构，以便在您开始使用其他Platform服务时更好地满足贵组织的需求。
+
++++将Adobe Analytics架构用于Adobe Analytics Web SDK实施
+
+| 优势 | 缺点 |
+|----------|---------|
+| <p>使用Adobe Analytics架构的优势包括：</p><ul><li>轻松迁移<p>如果您已使用Adobe Experience Platform Web SDK将数据发送到Adobe Analytics，则可以将其他服务添加到您的数据流以将数据发送到Adobe Experience Platform(然后可以在您的Customer Journey Analytics配置中使用)。</p></li></ul> | <p>使用Adobe Analytics架构的缺点包括：</p><ul><li>虽然使用Adobe Analytics架构不会限制您如何将其与其他Platform应用程序一起使用，但它的确会导致架构比不使用该架构时复杂得多。 这是因为Adobe Analytics架构包含许多特定于Adobe Analytics的对象，您的组织不太可能使用这些对象。<p>当需要对架构进行更改时，您必须筛选成千上万个未使用的字段以查找需要更新的字段。</p></li></ul> |
+
++++
+
++++在Adobe Analytics Web SDK实施中使用您自己的XDM架构
+
+| 优势 | 缺点 |
+|----------|---------|
+| <ul><p>更新到您自己的XDM架构的优势包括：</p><ul><li>简化架构，根据贵组织的需求以及您使用的特定平台应用程序量身定制。</li><p>当需要对架构进行更改时，您不必在数千个未使用的字段中进行筛选，即可找到需要更新的字段。</p></ul> | <p>更新到您自己的XDM架构的缺点包括：</p><ul><li>在开始向Customer Journey Analytics发送数据之前，需要更新架构是一个耗时的过程。</li></ul> |
 
 +++
 
