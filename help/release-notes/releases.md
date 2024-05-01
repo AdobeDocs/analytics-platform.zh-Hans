@@ -1,16 +1,16 @@
 ---
 description: 介绍 Customer Journey Analytics 的持续功能发布策略
-title: Customer Journey Analytics 功能发布
+title: Customer Journey Analytics功能发布策略
 exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
 feature: Release Notes
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
-workflow-type: ht
-source-wordcount: '391'
-ht-degree: 100%
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+workflow-type: tm+mt
+source-wordcount: '397'
+ht-degree: 88%
 
 ---
 
-# Customer Journey Analytics 功能发布
+# Customer Journey Analytics功能发布策略
 
 Customer Journey Analytics 版本在持续交付模型上运行，该模型允许采用可扩展的分阶段方法进行功能部署。
 
@@ -28,7 +28,7 @@ Customer Journey Analytics 版本在持续交付模型上运行，该模型允�
 
 ## 功能标记
 
-功能标记用于在发布过程中控制新功能的可见性。Adobe 建议将 `app.launchdarkly.com` 添加到防火墙的[允许列表](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html?lang=zh-Hans)，以在发布过程中获得出色体验。到达 GA 后不久，将删除该标记。
+功能标记用于在发布过程中控制新功能的可见性。Adobe建议允许 `app.launchdarkly.com` 通过贵组织的防火墙，在发布过程中获得最佳体验。 向所有人发布功能后，将删除这些标记。 请参阅 [Customer Journey Analytics使用的域](../technotes/domains.md) 以了解更多信息。
 
 您可以随时在&#x200B;**帮助 > 关于 Workspace > 活动功能标记**&#x200B;下查看活动功能标记。
 

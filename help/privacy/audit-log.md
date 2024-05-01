@@ -4,7 +4,7 @@ description: 了解如何查看和管理Customer Journey Analytics审核日志�
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 65%
@@ -23,7 +23,7 @@ ht-degree: 65%
 
 为您的组织启用该功能后，系统会在活动发生时自动收集审核日志。您无需手动启用日志收集。
 
-要查看和导出审核日志，您必须已在 Audit Logs Access 中获得&#x200B;**[!UICONTROL 审核日志访问]**&#x200B;访问控制权限。要了解如何管理Customer Journey Analytics功能的各项权限，请参阅 [访问控制文档](../admin/cja-access-control.md).
+要查看和导出审核日志，您必须已在 Audit Logs Access 中获得&#x200B;**[!UICONTROL 审核日志访问]**&#x200B;访问控制权限。要了解如何管理Customer Journey Analytics功能的各项权限，请参阅 [访问控制文档](../technotes/access-control.md).
 
 ## 在 UI 中查看审核日志
 

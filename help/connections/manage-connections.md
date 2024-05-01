@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: dc3a109f162adfe48f621ba3ece95fedead3c6e1
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
-source-wordcount: '2940'
+source-wordcount: '2937'
 ht-degree: 21%
 
 ---
@@ -95,7 +95,7 @@ ht-degree: 21%
 
 选择 **[!UICONTROL 继续]** 以删除连接。
 
-请参阅 [删除后果](/help/admin/cja-deletion.md) 有关删除连接后果的更多信息。
+请参阅 [删除后果](/help/technotes/deletion.md) 有关删除连接的详细信息。
 
 
 ### 创建数据视图

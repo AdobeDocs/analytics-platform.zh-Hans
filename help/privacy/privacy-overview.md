@@ -4,10 +4,10 @@ description: 描述数据管理在 Customer Journey Analytics 中的工作方式
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 feature: Privacy
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 74%
+source-wordcount: '375'
+ht-degree: 56%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Customer Journey Analytics与之间的集成 [Adobe Experience Platform数
 
 ## GDPR
 
-Customer Journey Analytics 将不直接订阅一般数据保护条例 (GDPR) 中央服务，而是会继承在 Experience Platform 中所做的所有数据集更改。我们依赖 Platform Data Lake 来执行 GDPR 删除请求，并在这些请求在 Pipeline 上完成时通知我们。我们会监听 Pipeline，并将所有更改同步到 Customer Journey Analytics 中事件数据集的受影响批次。受 GDPR 删除请求影响的配置文件和查找数据集将在每个删除请求后完全重新摄取。我们可以保证在数据湖中的删除事件发生 7 天内执行删除请求。
+Customer Journey Analytics 将不直接订阅一般数据保护条例 (GDPR) 中央服务，而是会继承在 Experience Platform 中所做的所有数据集更改。Customer Journey Analytics依赖于Platform Data Lake来执行GDPR删除请求，并在请求完成后通知Customer Journey Analytics。 对事件数据集Customer Journey Analytics中受影响的批次所做的所有更改都将与Platform数据同步。 受GDPR删除请求影响的配置文件和查找数据集将在每个删除请求后完全重新摄取。 删除请求通常在数据湖中的删除事件发生7天内完成。
 
 ## CCPA
 

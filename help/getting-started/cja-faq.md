@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: ht
-source-wordcount: '2523'
-ht-degree: 100%
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+workflow-type: tm+mt
+source-wordcount: '2522'
+ht-degree: 99%
 
 ---
 
@@ -211,7 +211,7 @@ Adobe 最近改变了在 Customer Journey Analytics 中处理数据的方式：
 
 ## 9. 估计连接大小 {#estimate-size}
 
-请参阅[估算和管理使用情况](/help/admin/estimate-usage.md)。
+请参阅 [估计和管理使用情况](/help/technotes/estimate-usage.md).
 
 ## 10. 关于使用过量 {#overage}
 

@@ -5,7 +5,7 @@ title: 项目概述
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 69%
@@ -42,7 +42,7 @@ ht-degree: 69%
 | 已计划 | 指示项目是否按计划通过电子邮件发送给收件人。 请参阅 [将项目数据发送给其他人](/help/analysis-workspace/export/t-schedule-report.md). |
 | 共享链接（任何人） | 项目可与任何人共享，即使与无权访问Analysis Workspace的人共享。 此列显示项目是否已以这种方式共享。 请参阅 [与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) 在 [共享项目](/help/analysis-workspace/curate-share/share-projects.md) 以了解更多信息。 |
 | 数据视图 | 与项目关联的数据视图。 |
-| [项目角色](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=zh-Hans) | 指示您在项目中的角色 — 所有者、编辑、复制、查看。 |
+| [项目角色](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=zh-Hans) | 指示您在项目中的角色 — 所有者、编辑、复制、查看。 |
 | 所有者 | 创建此项目的人员（您或与您共享此项目的人员）。 |
 | 共享对象 | 与项目共享的用户。 |
 | 上次修改时间 | 项目上次修改的日期和时间。 |
@@ -65,7 +65,7 @@ ht-degree: 69%
 | 插入 | 从此菜单插入新面板或可视化图表。还可从左侧边栏插入新面板和可视化图表。 |
 | [组件](/help/components/overview.md) | 从您的项目创建新过滤器、计算量度、日期范围或警报组件。还可从左侧边栏创建新组件。如果最近更改了组件定义，则“刷新组件”将检索最新定义。 |
 | [共享](/help/analysis-workspace/curate-share/send-schedule-files.md) | 策划、安排 PDF/CSV 项目以及将其共享给您组织中的接收方。 |
-| 帮助 | 访问帮助文档、视频和 Analytics [Experience League 社区](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community)。管理 Workspace 提示和[调试器](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md)的可见性。查找关于 Workspace 及影响项目[性能](/help/admin/optimizing-performance.md)的各种因素的详细信息。 |
+| 帮助 | 访问帮助文档、视频和 Analytics [Experience League 社区](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community)。管理 Workspace 提示和[调试器](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md)的可见性。查找关于 Workspace 及影响项目[性能](/help/technotes/optimizing-performance.md)的各种因素的详细信息。 |
 | “共享”按钮或“所有者” | 如果您处于项目的“拥有”或“编辑”角色，则通过右上方的“共享”按钮可一键管理项目接收方。如果您处于项目的“复制”或“查看”角色，则您将看到项目所有者的姓名。 |
 
 ### 项目信息和设置 {#info-settings}

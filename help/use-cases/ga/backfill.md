@@ -5,7 +5,7 @@ exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
 source-wordcount: '626'
 ht-degree: 90%
@@ -23,7 +23,7 @@ ht-degree: 90%
 
 * 访问 Adobe Experience Platform
 * 访问 Google Analytics（GA 标准版或 GA 360）
-* [管理员访问](/help/admin/cja-access-control.md) Customer Journey Analytics
+* [管理员访问](/help/technotes/access-control.md) Customer Journey Analytics
 
 ## 设置 BigQuery 导出
 

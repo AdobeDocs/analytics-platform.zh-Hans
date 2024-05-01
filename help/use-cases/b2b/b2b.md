@@ -5,7 +5,7 @@ exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: b4c77c3ef4d57aac6e914a2373b6a9169f4872df
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 73%
@@ -22,7 +22,7 @@ ht-degree: 73%
 * 与其他帐户相比，该帐户在特定营销活动中的整体表现如何？
 * 某些特定角色（如 IT 经理）在两个不同帐户中的行为是否存在差异？
 
-所有这些都可通过将帐户级别信息作为[查询](/help/getting-started/cja-glossary.md)数据集引入来实现。
+所有这些都可通过将帐户级别信息作为[查询](/help/technotes/glossary.md)数据集引入来实现。
 
 首先，在Adobe Experience Platform中创建一个查询架构，然后通过引入基于.csv的帐户级别数据来创建查询表数据集。 接下来，继续创建一个Customer Journey Analytics(Customer Journey Analytics)连接，该连接可合并各种数据集，包括您创建的查询数据集。 您随后创建一个数据视图，最后能够在 Workspace 中利用所有这些数据。
 
@@ -32,7 +32,7 @@ ht-degree: 73%
 
 ## 1. 创建查询模式 (Experience Platform)
 
-创建您自己的架构 [查找](/help/getting-started/cja-glossary.md) 表可确保所用的数据集能够以正确设置（记录类型）的Customer Journey Analytics使用。 最佳实践是[创建一个名为查找的自定义模式类](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans#create-new-class)，该类中没有任何元素，可以重新用于所有查找表。
+创建您自己的架构 [查找](/help/technotes/glossary.md) 表可确保所用的数据集能够以正确设置（记录类型）的Customer Journey Analytics使用。 最佳实践是[创建一个名为查找的自定义模式类](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans#create-new-class)，该类中没有任何元素，可以重新用于所有查找表。
 
 ![“创建新类”对话框。](../assets/create-new-class.png)
 
