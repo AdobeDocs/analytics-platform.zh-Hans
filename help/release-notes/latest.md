@@ -4,9 +4,9 @@ description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 source-git-commit: 284c73374ca3fdfc4afbc2824209bebdc764fb64
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '946'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 96%
 | **流媒体：将 Roku 数据发送到 Adobe Experience Platform Edge** | 现在，当 [使用 Experience Platform Edge 安装 Media Analytics ](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/edge-recommended/media-edge-sdk/implementation-edge)时，您可以使用 Adobe Experience Platform Roku SDK 将流媒体数据发送到 Adobe Experience Platform。 |  | 2024 年 4 月 12 日 |
 | **在 Reporting Activity Manager 中显示每月报告** | 在 Reporting Activity Manager 中查看所有连接的报告活动时，现在可以提供一个图表，其中显示在 IMS Org 级别运行的当前月份和上个月的 [月度报告/请求](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/reporting-activity-manager/reporting-activity#view-all-report-suites)。<p>**注意：** 数据从 2024 年 3 月中旬开始提供。 | | 2024 年 4 月 15 日 |
 | **移动记分卡中的智能题注** | [智能题注](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions)可以帮助非分析师在没有分析师帮助的情况下更好地理解数据。这些数据现在可以在 Customer Journey Analytics 记分卡中使用。 |  | 2024 年 4 月 17 日 |
-| **仅限项目 [!UICONTROL Workspace] 组件的权限增强** | 以前，如果一个用户（用户 A）与另一个用户（用户 B）共享一个项目，并授予用户 B 编辑该项目的访问权限，则用户 B 将能够编辑该项目。但是，用户B无法编辑 [!UICONTROL 快速过滤器] 嵌入到项目中。 该限制现已移除 — 用户B可以编辑 [快速过滤器](/help/components/filters/quick-filters.md) 以及嵌入到共享项目中的其他仅用于项目的组件。 |  | 2024 年 4 月 17 日 |
+| **仅限项目 [!UICONTROL Workspace] 组件的权限增强** | 以前，如果一个用户（用户 A）与另一个用户（用户 B）共享一个项目，并授予用户 B 编辑该项目的访问权限，则用户 B 将能够编辑该项目。但是，用户 B 无法编辑项目中嵌入的 [!UICONTROL 快速过滤器]。该限制现已取消 - 用户 B 可以编辑[快速过滤器](/help/components/filters/quick-filters.md)以及共享项目中嵌入的其他仅限项目的组件。 |  | 2024 年 4 月 17 日 |
 | **管理员可以管理其组织中的所有位置** | [位置页面](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/locations/locations-manager) 上的新选项允许管理员查看和管理组织中的所有位置。之前，管理员只能查看和管理他们创建的位置。 |  | 2024 年 4 月 |
 | **Adobe Product Analytics：特征矩阵** | 通过了解您的核心、力量、一次性和可疑特征来推动投资决策。[!UICONTROL 特征矩阵] 通过使用频率与活跃用户百分比来衡量事件，并与中位使用率进行比较。 | 2024 年 4 月 17 日 | 2024 年 4 月 30 日 |
 | **Adobe Product Analytics：增强漏斗洞察** | 在 [Friction](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/guided-analysis/funnel/friction) 视图中，书面见解已得到增强，包括类别、增量和描述，以进一步提高图表和表格的可理解性。 | 2024 年 4 月 17 日 | 2024 年 4 月 26 日 |

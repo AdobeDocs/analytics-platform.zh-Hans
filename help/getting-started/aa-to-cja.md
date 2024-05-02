@@ -6,19 +6,19 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: d20655293a8248d26fed675d6f38e5a8a49a15c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1083'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Adobe Analytics 的演化
 
-## 准备现有数据
+## 准备您的现有数据
 
 准备 Adobe Analytics 数据以无缝迁移到 Customer Journey Analytics 对于数据完整性和报告一致性至关重要。
 
-### 收集身份
+### 收集标识
 
 了解客户历程最关键的组成部分也许是在每一步都知道客户是谁。对于 Customer Journey Analytics，拥有一个存在于所有渠道和相应数据的标识符允许在 Customer Journey Analytics 中将多个来源拼接在一起。标识示例可能是客户 ID、帐户 ID 或电子邮件 ID。无论标识是什么（可能有多个），请确保为每个 ID 考虑以下内容：
 
@@ -27,11 +27,11 @@ ht-degree: 91%
 * ID 不包含 PII。将散列应用于任何可能敏感的内容。
 * ID 在所有源中使用相同的格式（相同的长度、相同的散列方法等）
 
-在 Adobe Analytics 等数据集中，可能并非每行数据都存在标识，但辅助标识确实存在。在本例中， [跨渠道分析（也称为“拼接”）](/help/stitching/overview.md) 当仅通过其ECID识别客户以及在收集标识时（例如，当客户进行身份验证时），可用于弥合行之间的差距。
+在 Adobe Analytics 等数据集中，可能并非每行数据都存在标识，但辅助标识确实存在。在这种情况下，当仅通过客户的 ECID 识别客户时以及收集标识时（例如，当客户进行身份验证时），可使用[跨渠道分析（也称为“拼接”）](/help/stitching/overview.md)消除行间差距。
 
-### 调整变量
+### 使您的变量保持一致
 
-将Adobe Analytics数据转换为Customer Journey Analytics数据的最直接方法是摄取 [全局报告包](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=zh-Hans) 使用Experience Platform [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans). 该连接器会将您的 Adobe Analytics 变量直接映射到 Experience Platform 中的 XDM 架构和数据集，然后便可以轻松连接到 Customer Journey Analytics。
+将 Analytics 数据转换为 Customer Journey Analytics 数据的最直接方法是使用 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=zh-Hans) 将[全局报告包](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)纳入 Experience Platform 中。该连接器会将您的 Adobe Analytics 变量直接映射到 Experience Platform 中的 XDM 架构和数据集，然后便可以轻松连接到 Customer Journey Analytics。
 
 完整的全局报告包可能并不总是适用于实施。如果您计划将多个报告包引入Customer Journey Analytics，您有2个选项：
 
@@ -55,9 +55,9 @@ Adobe 发布了](https://experienceleague.adobe.com/docs/analytics/components/ma
 
 随着作为 Customer Journey Analytics 数据视图的一部分引入[派生字段](../data-views/derived-fields/derived-fields.md)，还使用[营销渠道功能模板](../data-views/derived-fields/derived-fields.md#function-templates)以非破坏并可追溯的方式支持营销渠道。
 
-## 在迁移到Customer Journey Analytics时为关键差异做好准备
+## 迁移到 Customer Journey Analytics 时做好应对重大差异的准备
 
-随着贵组织不断发展使用Customer Journey Analytics，请探索这些步骤以准备数据并了解这两种技术之间的关键差异。 本文针对管理员受众。
+随着贵组织不断发展使用Customer Journey Analytics，请探索这些步骤以准备数据并了解这两种技术之间的关键差异。本文针对管理员受众。
 
 ### 熟悉报告时处理 {#report-time}
 
