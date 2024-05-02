@@ -9,7 +9,7 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: c64f7a1676f4fd3712e618e26357f430e7d9f019
 workflow-type: tm+mt
 source-wordcount: '1081'
 ht-degree: 78%
@@ -40,11 +40,11 @@ ht-degree: 78%
    + [比较 Customer Journey Analytics 和 BI 解决方案](../getting-started/cja-vs-bi.md)
 
 + Customer Journey Analytics 和 Adobe Analytics {#compare-aa-cja}
-   + 迁移到Customer Journey Analytics {#migrate-to-cja}
-      + [快速入门](/help/getting-started/cja-migration/cja-migration-getstarted.md)
-      + [选择迁移路径](/help/getting-started/cja-migration/cja-migration-path.md)
-      + [将数据发送到Platform](/help/getting-started/cja-migration/cja-migration-send-to-platform.md)
-      + [保留历史数据](/help/getting-started/cja-migration/cja-migration-historical-data.md)
+   + 升级到Customer Journey Analytics {#upgrade-to-cja}
+      + [快速入门](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
+      + [选择升级路径](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
+      + [将数据发送到Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
+      + [保留历史数据](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
    + 与 Adobe Analytics 进行比较 {#cja-aa-comparison}
       + [概述](../getting-started/aa-vs-cja/overview.md)
       + [在 Customer Journey Analytics 中使用 Adobe Analytics 数据](../getting-started/aa-vs-cja/aa-data-in-cja.md)
