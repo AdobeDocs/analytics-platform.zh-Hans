@@ -4,7 +4,7 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 355052289c5e613212030b7748b6116a12455953
 workflow-type: tm+mt
 source-wordcount: '3375'
 ht-degree: 75%
@@ -23,7 +23,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 预测统计技术 | 添加了描述 [预测服务中使用的统计技术](../analysis-workspace/c-forecast/statistics-forecasting.md). |
 | 添加了建议对高基数维度导出完整表的信息 | 在中添加了项目符号 [高基数维度的最佳实践](/help/components/dimensions/high-cardinality.md) 建议对高基数维度使用完全表导出。 |
 | 添加了关于移动记分卡中智能字幕的文档 | [智能字幕](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) 可帮助非分析人员在没有分析人员帮助的情况下更好地理解他们的数据。 |
-| 有关新Adobe Product Analytics功能的文档 | <ul><li>[特征矩阵](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>增强功能 [保留率](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[漏斗中的增强洞察](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>比较单个漏斗步骤中的事件</li></ul> |
+| 有关Adobe Product Analytics功能的新文档 | <ul><li>[特征矩阵](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>增强功能 [保留率](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[漏斗中的增强洞察](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>比较单个漏斗步骤中的事件</li></ul> |
 | **2024 年 3 月** | |
 | 有关“用于”列的使用情况信息仅从 2023 年 9 月开始提供。 | 阐明[项目登陆页面](/help/getting-started/landing.md)“**用于**”列的使用情况信息只能追溯到 2023 年 9 月。 |
 | 添加了有关仅用于项目的工作区组件的权限增强的文档 | 如果您与其他用户共享项目，则这些用户可以编辑 [快速过滤器](/help/components/filters/quick-filters.md) 以及嵌入到共享项目中的其他仅用于项目的组件。 |
