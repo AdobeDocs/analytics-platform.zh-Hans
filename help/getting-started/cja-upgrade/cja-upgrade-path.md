@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: c64f7a1676f4fd3712e618e26357f430e7d9f019
+source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
 workflow-type: tm+mt
 source-wordcount: '2420'
 ht-degree: 0%
@@ -61,7 +61,7 @@ ht-degree: 0%
 | 升级路径 | 工作量 | 长期生存能力 |
 |---------|----------|---------|
 | **Experience PlatformWeb SDK的新实施**</br>&#x200B;您可以通过重新实施Experience PlatformWeb SDK来开始使用Customer Journey Analytics。 这样，您就可以开始向Adobe Experience PlatformEdge Network和Customer Journey Analytics发送数据。 <p>对于尚未使用Web SDK的组织，此升级路径可能是将数据导入Edge Network的最直接方法，因为它所需的步骤最少；但是，由于所有工作都是预先完成的（例如创建XDM架构），因此它需要更大的初始工作。</p><p>基本步骤为：</p><ol><li>为您的组织创建XDM架构。</li><li>实施Web SDK。</li><li>将数据发送到Platform。</li></ol> | 高 | 高 |
-| **升级Adobe Analytics实施以使用Web SDK**</br>&#x200B;如果您的Adobe Analytics实施AppMeasurement或Analytics扩展，则可以对其进行迁移，以使用Adobe Experience Platform Web SDK在将数据发送到Customer Journey Analytics之前开始向Edge Network和Adobe Analytics发送数据。<p>对于尚未使用Web SDK的组织来说，这是将数据导入Edge Network的最简单、最顺畅的方法；它需要更多步骤，但提供了从Adobe Analytics到Customer Journey Analytics的更系统化的过渡，并且可实现更具体的里程碑。</p><p>基本步骤为：</p><ol><li>将您现有的Adobe Analytics实施移动到Web SDK中，并验证所有内容在Adobe Analytics中均可正常工作。</li><li>根据需要为您的组织创建XDM架构。</li><li>使用数据流映射将数据对象中的所有字段映射到您的XDM架构。</li><li>将数据发送到Platform。</li></ol> | 审核 | 高 |
+| **迁移Adobe Analytics实施以使用Web SDK**</br>&#x200B;如果您的Adobe Analytics实施AppMeasurement或Analytics扩展，则可以对其进行迁移，以使用Adobe Experience Platform Web SDK在将数据发送到Customer Journey Analytics之前开始向Edge Network和Adobe Analytics发送数据。<p>对于尚未使用Web SDK的组织来说，这是将数据导入Edge Network的最简单、最顺畅的方法；它需要更多步骤，但提供了从Adobe Analytics到Customer Journey Analytics的更系统化的过渡，并且可实现更具体的里程碑。</p><p>基本步骤为：</p><ol><li>将您现有的Adobe Analytics实施移动到Web SDK中，并验证所有内容在Adobe Analytics中均可正常工作。</li><li>根据需要为您的组织创建XDM架构。</li><li>使用数据流映射将数据对象中的所有字段映射到您的XDM架构。</li><li>将数据发送到Platform。</li></ol> | 审核 | 高 |
 | **配置现有的Adobe Analytics Web SDK实施**</br>&#x200B;如果您的Adobe Analytics实施已经在使用Adobe Experience Platform Web SDK，则您可以开始轻而易举地将数据发送到Customer Journey Analytics。<p>在将数据发送到Customer Journey Analytics之前，请考虑更新您的Adobe Analytics架构，以满足贵组织的特定需求以及您使用的任何其他平台应用程序。</p><p>基本步骤为：</p><ol><li>开始向Customer Journey Analytics发送数据。<!-- What's involved here? Just point it at CJA? --></li><li>（可选）根据需要为您的组织创建XDM架构。</li><li>（视情况而定）如果您创建了XDM架构，请使用数据流映射将数据对象中的所有字段映射到XDM架构。</li></ol> | 低 | 高 |
 | **使用Analytics源连接器**</br>&#x200B;如果您的Adobe Analytics实施AppMeasurement或Analytics扩展，则可以开始以Customer Journey Analytics将数据发送到数据视图。<p>这是将数据导入Customer Journey Analytics的最简单方法，但长期而言是最不可行的方法。</p> | 低 | 低 |
 

@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: c8796834de6b566783d53ba1602e44a8c91127bf
+source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
 workflow-type: tm+mt
-source-wordcount: '2138'
-ht-degree: 92%
+source-wordcount: '2141'
+ht-degree: 91%
 
 ---
 
@@ -137,7 +137,7 @@ ht-degree: 92%
 | 智能题注 | 智能题注使用先进的机器学习和生成式 AI 为工作区可视化提供有价值的自然语言见解。初始版本为 [Line](/help/analysis-workspace/visualizations/line.md) 可视化提供了自动生成的见解。 |
 | 报表时间转换 | 通过 Customer Journey Analytics 中的数据视图，可进一步解释从某个连接获得的数据。可不更改实施即更改或删除数据、使用子字符串操纵维度、从任意值创建量度或筛选子事件。以非破坏性的方式进行所有这些转换。Adobe Analytics 通过虚拟报表包和自定义会话长度提供有限的功能。 |
 | SQL 访问 | 通过使用 Data Distiller 选项，Customer Journey Analytics 可以消除 Adob&#x200B;e 后端处理中收集的数据的限制。您可以使用 SQL 修改数据、创建适合您的业务的值和数据集，并继续探索。Analytics 不支持对其数据进行任何类型的 SQL 访问。 |
-| 无限量的客户维度和量度 | Customer Journey Analytics 维度是无限的；值可以是数字、文本、对象、列表或它们的组合。维度可以是嵌套的或分层的。Analytics 最多支持 75 个 prop 和 250 个 eVar。 |
+| 无限量的客户维度和量度 | Customer Journey Analytics 维度是无限的；值可以是数字、文本、对象、列表或它们的组合。Dimension可以嵌套或分层。 <p>相反，Adobe Analytics最多支持75个prop和250个eVar。</p> |
 | 无限量的唯一值 | Customer Journey Analytics支持在单个维度中报告的无限唯一值或维度项目。<p>没有 [维度的基数限制](/help/components/dimensions/high-cardinality.md)，允许显示和计数任何唯一值。</p><p>这种方法移除了大型Adobe Analytics实施可能存在的Reporting And Analysis限制，导致 [!UICONTROL 低流量] 标签。</p><p>在Customer Journey Analytics中，可以看到 [!UICONTROL 超出唯一值] 标签进行标记，但这种情况发生的频率要低得多，可以通过向数据应用过滤器或区段来缓解这种情况。</p> |
 
 {style="table-layout:auto"}

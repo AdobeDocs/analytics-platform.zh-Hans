@@ -5,10 +5,10 @@ title: 文件夹概述
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '461'
-ht-degree: 100%
+source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
+workflow-type: tm+mt
+source-wordcount: '459'
+ht-degree: 93%
 
 ---
 
@@ -24,7 +24,7 @@ Analytics 中的文件夹是在 Adobe Analytics 登陆页面上和选择“**Wor
 
 当您登录到工作区时，项目主页会显示您的项目列表以及您创建的公司文件夹和任何个人文件夹。
 
-![列出您的项目和公司文件夹的项目主页。](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
+![项目主页](../assets/landing-page2.png)
 
 ## 关于公司文件夹 {#company-folder}
 
@@ -34,7 +34,6 @@ Analytics 中的文件夹是在 Adobe Analytics 登陆页面上和选择“**Wor
 
 当用户登录到工作区时，公司文件夹即自动添加到用户的项目和文件夹列表。对于公司文件夹中包含的项目没有特定的权限。
 
-
 ### 管理员选项 {#admin-options}
 
 管理员具有分配给公司文件夹的特殊权限。例如，只有管理员可在公司文件夹中添加或删除文件夹或项目。无管理员权限的用户可查看公司文件夹的内容。
@@ -43,7 +42,7 @@ Analytics 中的文件夹是在 Adobe Analytics 登陆页面上和选择“**Wor
 
 非管理员的选项有限。
 
-![显示文件夹的非管理选项的项目页面。](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
+![显示文件夹的非管理选项的项目页面。](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png)
 
 ### 公司文件夹准则 {#company-folder-guidelines}
 
@@ -53,6 +52,6 @@ Analytics 中的文件夹是在 Adobe Analytics 登陆页面上和选择“**Wor
 
 - 管理员可删除另一管理员在公司文件夹内创建的文件夹。管理员可能需要与其他管理员协调以将文件夹和项目访问权限保持一致。
 
-- 当管理员将某个项目移至公司文件夹时，即使原有的共享权限受限，也将与所有人共享该项目。
+- 当管理员将某个项目移至公司文件夹时，该项目将与所有人共享，同时具有 **编辑副本** 角色，即使原始共享权限受限制也是如此。
 
 - 当管理员将某个项目移出公司文件夹时，将遵循原有或以前的共享权限。

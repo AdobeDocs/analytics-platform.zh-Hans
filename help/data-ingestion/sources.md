@@ -5,14 +5,14 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
 workflow-type: tm+mt
-source-wordcount: '1967'
-ht-degree: 85%
+source-wordcount: '1978'
+ht-degree: 84%
 
 ---
 
-# 使用源连接器摄取和使用数据。
+# 使用源连接器摄取和使用数据
 
 本快速入门指南介绍了如何使用数据提供程序的源连接器将数据引入 Adobe Experience Platform，然后在 Customer Journey Analytics 中使用该数据。
 
@@ -217,43 +217,43 @@ ht-degree: 85%
 
 1. 在 Customer Journey Analytics UI 中，选择顶部导航中的&#x200B;**[!UICONTROL 连接]**。
 
-2. 选择&#x200B;**[!UICONTROL 创建新连接]**。
+1. 选择&#x200B;**[!UICONTROL 创建新连接]**。
 
-3. 在[!UICONTROL 无标题连接]屏幕中：
+1. 在&#x200B;**[!UICONTROL 无标题连接]**&#x200B;屏幕中：
 
-   在[!UICONTROL 连接设置]中命名并描述您的连接。
+   1. 在&#x200B;**[!UICONTROL 连接设置]**&#x200B;中命名并描述您的连接。
 
-   从[!UICONTROL 数据设置]中的[!UICONTROL 沙盒]列表中选择正确的沙盒，并从[!UICONTROL 平均每日事件数]列表中选定每日事件数。
+   1. 从&#x200B;**[!UICONTROL 数据设置]**&#x200B;中的&#x200B;**[!UICONTROL 沙盒]**&#x200B;列表中选择正确的沙盒，并从&#x200B;**[!UICONTROL 平均每日事件数]**&#x200B;列表中选定每日事件数。
 
-   ![连接设置](./assets/cja-connections-1.png)
+      ![连接设置](./assets/cja-connections-1.png)
 
-   选择&#x200B;**[!UICONTROL 添加数据集]**。
+   1. 选择&#x200B;**[!UICONTROL 添加数据集]**。
 
-   在[!UICONTROL 添加数据集]的[!UICONTROL 选择数据集]步骤中：
+1. 在&#x200B;**[!UICONTROL 添加数据集]**&#x200B;的&#x200B;**[!UICONTROL 选择数据集]**&#x200B;步骤中：
 
-   - 选择先前(`Example Loyalty Dataset`)创建的数据集以及要包含在连接中的任何其他数据集。
+   1. 选择先前(`Example Loyalty Dataset`)创建的数据集以及要包含在连接中的任何其他数据集。
 
-     ![添加数据集](./assets/cja-connections-2.png)
+      ![添加数据集](./assets/cja-connections-2.png)
 
-   - 选择&#x200B;**[!UICONTROL 下一步]**。
+   1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
-   在[!UICONTROL 添加数据集]的[!UICONTROL 设置数据集]步骤中：
+1. 在&#x200B;**[!UICONTROL 添加数据集]**&#x200B;的&#x200B;**[!UICONTROL 设置数据集]**&#x200B;步骤中：
 
-   - 对于每个数据集：
+   对于每个数据集：
 
-      - 在 Adobe Experience Platform 中，从在数据集模式中定义的可用身份中选择[!UICONTROL 人员 ID]。
+   1. 在 Adobe Experience Platform 中，从在数据集模式中定义的可用身份中选择[!UICONTROL 人员 ID]。
 
-      - 从[!UICONTROL 数据源类型]列表中选择正确的数据源。如果指定&#x200B;**[!UICONTROL 其他]**，则为您的数据源添加描述。
+   1. 从[!UICONTROL 数据源类型]列表中选择正确的数据源。如果指定&#x200B;**[!UICONTROL 其他]**，则为您的数据源添加描述。
 
-      - 根据您的首选项设置&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;和&#x200B;**[!UICONTROL 数据集回填现有数据]**。
+   1. 根据您的首选项设置&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;和&#x200B;**[!UICONTROL 数据集回填现有数据]**。
 
-     ![配置数据集](./assets/cja-connections-3.png)
+      ![配置数据集](./assets/cja-connections-3.png)
 
-   - 选择&#x200B;**[!UICONTROL 添加数据集]**。
+   1. 选择&#x200B;**[!UICONTROL 添加数据集]**。
 
-   选择&#x200B;**[!UICONTROL 保存]**。
+   1. 选择&#x200B;**[!UICONTROL 保存]**。
 
-有关如何创建和管理连接以及如何选择和组合数据集的更多信息请参阅[连接概述](../connections/overview.md)。
+创建之后 [连接](/help/connections/overview.md)，您可以执行各种管理任务，例如 [选择和组合数据集](/help/connections/combined-dataset.md)， [检查连接数据集的状态以及数据摄取的状态](/help/connections/manage-connections.md)，等等。
 
 ## 设置数据视图
 
