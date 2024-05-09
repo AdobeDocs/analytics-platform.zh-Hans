@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 3d2ce208e468a68a45d900c4437639ad5145b8cb
+source-git-commit: 47b7747b37f82e4d75d5272ce1d8d37f4e497bb5
 workflow-type: tm+mt
-source-wordcount: '3481'
-ht-degree: 73%
+source-wordcount: '3515'
+ht-degree: 72%
 
 ---
 
@@ -21,6 +21,8 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | --- | --- |
 | **2024 年 5 月** | |
 | 关于从Adobe Analytics升级到Customer Journey Analytics的新文档 | 对于从Adobe Analytics升级到Customer Journey Analytics的组织，根据组织当前的Adobe Analytics实施和长期目标，需要牢记有多个升级选项和许多注意事项。<p>现在提供了新的文档资源，以帮助您更好地了解：</p><ul><li>现有的各种升级路径</li><li>根据组织当前的Adobe Analytics实施，提供了哪些升级路径</li><li>每种升级路径的优缺点</li><li>每个升级路径的分步指南</li><li>处理历史数据的注意事项</li><li>等等！</li></ul><p>[Customer Journey Analytics升级入门](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md).</p> |
+| 更新了有关自定义日期范围的文档 | 更新了相关屏幕截图和程序 [创建自定义日期范围](/help/components/date-ranges/custom-date-ranges.md) 以便与当前的产品功能和设计相匹配。 |
+| 有关Dimension的概述信息 | 添加了关于以下内容的信息 [维度](/help/components/dimensions/overview.md). |
 | **2024 年 4 月** | |
 | 预测统计技术 | 添加了描述 [预测服务中使用的统计技术](../analysis-workspace/c-forecast/statistics-forecasting.md). |
 | 添加了建议对高基数维度导出完整表的信息 | 在中添加了项目符号 [高基数维度的最佳实践](/help/components/dimensions/high-cardinality.md) 建议对高基数维度使用完全表导出。 |
@@ -39,7 +41,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | **2024 年 1 月** | |
 | 预测 | 已添加有关以下内容的文档： [预测](../analysis-workspace/c-forecast/forecasting.md)，新增的Analysis Workspace功能可使用任何受支持的时间粒度（每小时、每天、每周、每月和每年）为自由格式表和折线图预测标准或计算量度。 |
 | 更新了在导出完整表时添加帐户和位置的文档 | 更新了文档，以反映在配置新帐户或位置时 [从Analysis Workspace导出全部表](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace).<p>新 [!UICONTROL **添加帐户**] 选项现在位于 [!UICONTROL **帐户**] 下拉菜单。 此 [!UICONTROL **添加位置**] 之前作为按钮提供的选项 [!UICONTROL **位置名称**] 现在，菜单本身中提供了下拉菜单。 |
-| 从Adobe Analytics迁移时的新组件迁移信息 | 向添加了信息 [Adobe Analytics的演变](/help/getting-started/aa-to-cja.md) 引用了新的 [组件迁移](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html) 《Adobe Analytics管理指南》中记录的功能。 |
+| 从Adobe Analytics迁移时的新组件迁移信息 | 向添加了信息 [Adobe Analytics的演变](/help/getting-started/aa-to-cja.md) 引用了新的 [组件迁移](https://experienceleague.adobe.com/cn/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html) 《Adobe Analytics管理指南》中记录的功能。 |
 | 阐明了仅管理员有某些信息可用 | 添加了信息来声明“上次使用”和“用于”列，详见 [计算量度管理器](/help/components/calc-metrics/cm-workflow/cm-manager.md) 和 [筛选器管理器](/help/components/filters/manage-filters.md) 仅适用于系统管理员。 |
 | 导出数据集所需的权限 | 添加了说明 [所需的权限](/help/technotes/access-control.md) 将数据集导出到云目标。 |
 | 管理连接 | 已更新 [管理连接](../connections/manage-connections.md) 文章，基于客户反馈。 |
