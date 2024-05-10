@@ -2,9 +2,10 @@
 title: 维度概述
 description: 了解维度是什么以及在Customer Journey Analytics中使用维度的方式
 feature: Dimensions
-source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
+exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
+source-git-commit: 1564c91616015311393a643fe7fcecd429cf3a36
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '190'
 ht-degree: 37%
 
 ---
@@ -29,7 +30,7 @@ Customer Journey Analytics中的基本报表根据量度列（通常是数值）
 
 ## 创建维度
 
-Customer Journey Analytics管理员可以 [在数据视图中创建基于数值的维度](/help/data-views/create-dataview.md#components).
+Customer Journey Analytics管理员可以 [在数据视图中创建维度](/help/data-views/create-dataview.md#components).
 
 ## 添加维度描述
 

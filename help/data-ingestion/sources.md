@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
 role: Admin
-source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
+source-git-commit: 1564c91616015311393a643fe7fcecd429cf3a36
 workflow-type: tm+mt
-source-wordcount: '1978'
-ht-degree: 84%
+source-wordcount: '2041'
+ht-degree: 78%
 
 ---
 
@@ -172,37 +172,45 @@ ht-degree: 84%
 
 根据您从何处接收忠诚度数据，您可以选择 Adobe Experience Platform 中可用的相关源连接器。
 
+您可以从各种来源摄取数据。 以下只是众多可用源中的几个：
+
+- Adobe应用程序(源连接器包括 [Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics)， [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager)、等)
+
+- 云存储(源连接器包括 [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3)， [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob)、等)
+
+- 数据库(源连接器包括 [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)， [Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server)、等)
+
 要设置源连接器：
 
-1. 在 Adobe Experience Platform UI 的左边栏中，选择[!UICONTROL 连接]中的&#x200B;**[!UICONTROL 源]**。
+1. 在Adobe Experience Platform中，选择 **[!UICONTROL 源]** 从 [!UICONTROL 连接] 在左边栏中。
 
-2. 从可用源连接器列表中选择您的源连接器。每个连接器都遵循类似的工作流程：
+1. 从可用源连接器列表中选择源连接器。
 
-   - **[!UICONTROL 身份验证]**。您提供身份验证详细信息以访问数据源。
+   每个连接器都遵循类似的工作流程：
 
-   - **[!UICONTROL 选择数据]**： 您选择要摄取的源数据。
+   1. **[!UICONTROL 身份验证]**。您提供身份验证详细信息以访问数据源。
 
-   - **[!UICONTROL 数据流详细信息]**：提供有关数据流的更多详细信息，例如名称和要使用的数据集。
+   1. **[!UICONTROL 选择数据]**： 您选择要摄取的源数据。
 
-   - **[!UICONTROL 映射]**：您将传入的源数据字段映射到与您选择的数据集关联的模式中的属性。
+   1. **[!UICONTROL 数据流详细信息]**：提供有关数据流的更多详细信息，例如名称和要使用的数据集。
 
-   - **[!UICONTROL 计划]**：如果可用，您可以安排数据的摄取。
+   1. **[!UICONTROL 映射]**：您将传入的源数据字段映射到与您选择的数据集关联的模式中的属性。
 
-   - **[!UICONTROL 回顾]**：您将看到源连接器定义的回顾。
+   1. **[!UICONTROL 计划]**：如果可用，您可以安排数据的摄取。
 
-   每个连接器都提供了详细的文档。
+   1. **[!UICONTROL 回顾]**：您将看到源连接器定义的回顾。
 
-   要访问此文档：
+1. 每个连接器都提供了详细的文档。 要访问此文档：
 
-   - 在连接器磁贴上，选择 [!UICONTROL 设置]或 [!UICONTROL 旁边的&#x200B;**[!UICONTROL ...]**&#x200B;添加数据]。
+   1. 在连接器磁贴上，选择 [!UICONTROL 设置]或 [!UICONTROL 旁边的&#x200B;**[!UICONTROL ...]**&#x200B;添加数据]。
 
-     ![查看文档](./assets/sourceconnector-documentation.png)
+      ![查看文档](./assets/sourceconnector-documentation.png)
 
-   - 选择&#x200B;**[!UICONTROL 查看文档]**。
+   1. 选择&#x200B;**[!UICONTROL 查看文档]**。
 
-请参阅[从传统 Adobe Analytics 获取和使用数据](./analytics.md)如何使用 Adobe Analytics 源连接器。
+请参阅 [从传统Adobe Analytics中摄取和使用数据](./analytics.md) 有关如何使用Adobe Analytics源连接器的信息。
 
-请参阅[获取和使用流数据](./streaming.md)如何使用 HTTP API 源连接器。
+请参阅 [摄取和使用流数据](./streaming.md) 有关如何使用HTTP API源连接器的信息。
 
 请参阅[源连接器概述](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions)了解源连接器的概述，包括指向每个连接器更多信息的链接。
 
