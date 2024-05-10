@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: d1497c20c0e986ae27fd7c64a14fd92630081650
+source-git-commit: a968ab150ed5fe3df9c0759c186b01444583cedf
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1102'
 ht-degree: 77%
 
 ---
@@ -344,6 +344,12 @@ ht-degree: 77%
    + 数据视图 {#data-views}
       + [数据视图用例](../use-cases/data-views/data-views-usecases.md)
       + [使用绑定维度和指标](../use-cases/data-views/binding-dimensions-metrics.md)
+   + 数据导出 {#data-export}
+      + [概述](../use-cases/data-export/overview.md)
+      + [BI扩展](../use-cases/data-export/bi-extension.md)
+      + [导出数据集](../use-cases/data-export/export-datasets.md)
+      + [导出整个表](../use-cases/data-export/export-full-table.md)
+      + [查询服务和导出数据集](../use-cases/data-export/queryservice-export-datasets.md)
    + B2B {#b2b}
       + [示例B2B项目](../use-cases/b2b/example.md)
       + [将帐户级别的数据作为查询数据集进行添加](../use-cases/b2b/b2b.md)
@@ -353,7 +359,6 @@ ht-degree: 77%
    + Adobe Analytics 数据 {#aa-data}
       + [使用“营销渠道”维度](../use-cases/aa-data/marketing-channels.md)
       + [将报告包与不同的架构相结合](../use-cases/aa-data/combine-report-suites.md)
-      + [模拟数据馈送](../use-cases/emulating-data-feeds.md)
    + 复杂的数据 {#complex-data}
       + [使用对象数组](../use-cases/object-arrays.md)
    + 派生字段 {#derived-fields}
