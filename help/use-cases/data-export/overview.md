@@ -1,16 +1,16 @@
 ---
-title: 数据馈送用例
+title: 数据导出用例
 description: 了解用于Customer Journey Analytics的各种数据导出用例
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 19018e31bb2a46e88a27643fe10c388b40de243e
+exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
+source-git-commit: 8118435a3982c405f76de9070afa05b8fd71ebf3
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 0%
 
 ---
-
 
 # 数据导出用例
 
@@ -77,4 +77,3 @@ Adobe Analytics和Customer Journey Analytics之间的独特区别之一与归因
 | **数据验证**<br/>&#x200B;评估点击流数据的数据收集准确性。 | **Experience Platform**： [**查询服务(数据Distiller)和导出数据集**](queryservice-export-datasets.md)<br/> Interactive PostgreSQL接口使用您喜爱的SQL工具执行临时SQL查询，以验证数据集中的数据。<br/><br/>**Customer Journey Analytics**： [**导出完整表**](export-full-table.md)<br/>&#x200B;验证应用了归因和会话化的CJA中已处理的数据。 |
 | **数据湖、Data Warehouse或BI工具**<br/>&#x200B;将数字数据纳入您自己的BI工具或数据湖以与其他数据集一起使用。 | **Customer Journey Analytics**： [**BI扩展**](bi-extension.md)<br/>&#x200B;将Customer Journey Analytics处理的指标添加到数据可视化工具(如Power BI)，并将其与自定义报表的附加数据相结合&#x200B;<br/><br/>**Experience Platform**： [**查询服务(数据Distiller)和导出数据集**](queryservice-export-datasets.md)<br>&#x200B;使用SQL生成要传送到云目标的自定义点击流数据。 |
 | **为AI/ML做好准备**<br/>&#x200B;使用Customer Journey Analytics数据增强人工智能/机器学习模型和任务。 | **Customer Journey Analytics**： [**导出完整表**](export-full-table.md)<br/>&#x200B;一次性或循环将Customer Journey Analytics处理的维度和量度导出到Cloud Destinations，包括计算量度和分段。<br/><br/>**Experience Platform**： [**查询服务(数据Distiller)和导出数据集**](queryservice-export-datasets.md)<br/>&#x200B;使用SQL生成自定义点击流数据以丰富AI/ML模型。 |
-
