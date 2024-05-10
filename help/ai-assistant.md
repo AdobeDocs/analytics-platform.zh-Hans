@@ -3,13 +3,13 @@ description: 如何向Customer Journey Analytics文档提问
 title: Adobe Customer Journey Analytics的人工智能助手
 role: User, Admin
 solution: Customer Journey Analytics
-source-git-commit: 4ffdb6f963386079ce2f09a8538d2bdf5c394588
+exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
+source-git-commit: 02a0ad53d8c3ef0c10e2b9c2b11bb75a6a962cf0
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Customer Journey Analytics的人工智能助手
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >用于Customer Journey Analytics的AI助手当前为测试版。 该功能及其文档可能会发生更改。
 
-AI助手是一项UI功能，可用于导航和了解Adobe Customer Journey Analytics概念和术语。 AI Assistant通过查询数据库，然后将数据库中的数据转换为人类可读的答案来响应您提交的问题。
+AI助手是一项UI功能，可用于导航和了解Adobe Customer Journey Analytics概念和术语。 对Customer Journey AnalyticsAI助手进行Adobe Experience League文档培训。 当被问到问题时，AI Assistant会给出一个有助于快速学习的有用答案。
 
 作为新手，您可以使用AI Assistant学习Customer Journey Analytics概念，并熟悉不熟悉的产品和功能。 作为经验丰富的用户，您可以使用AI Assistant提供更高级的用例或提示和技巧。
 
@@ -27,15 +27,13 @@ AI助手是一项UI功能，可用于导航和了解Adobe Customer Journey Analy
 * Customer Journey Analytics的最佳用途是什么？
 * 如何设置数据视图？
 
-目前，文档索引涵盖有关Customer Journey Analytics的Adobe Experience League文档。 索引会定期更新。
-
 文档检索模型是根据Customer Journey Analytics进行训练的。 Customer Journey Analytics范围之外的问题，例如有关Adobe Target和Adobe Creative Cloud Suite等其他Adobe产品的问题，则无法回答。
 
 用于Customer Journey Analytics的AI助手可用于所有产品层。
 
 >[!IMPORTANT]
 >
->目前，Customer Journey Analytics中的AI助手无法回答有关组织内数据对象的使用问题。
+>目前，用于Customer Journey Analytics的AI Assistant不回答有关组织内数据对象的使用问题。
 
 ## 在Customer Journey AnalyticsUI中访问AI助手
 
