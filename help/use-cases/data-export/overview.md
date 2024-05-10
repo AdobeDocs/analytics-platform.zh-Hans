@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
-source-git-commit: 8118435a3982c405f76de9070afa05b8fd71ebf3
+source-git-commit: 40e4c3bd8f3c37e9a6143200b85ffe0ac4bcb2ca
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
 
 # 数据导出用例
 
-本节提供了数据导出用例。 每个用例都在其自己的文章中进行了描述。 对于某些用例，提供了多个解决方案。
+本节提供了数据导出用例，以及如何通过Customer Journey Analytics或Experience Platform的一项或多项功能实施这些用例。 在单独的文章中进一步详细介绍了每个功能。
 
 ## 简介
 
@@ -67,7 +67,7 @@ Adobe Analytics和Customer Journey Analytics之间的独特区别之一与归因
    * 设置传送问题警报和计划传送时间范围限制。
 
 
-## 用例和解决方案
+## 用例和功能
 
 通常，数据导出支持许多用例。 在所需数据以及如何访问和导出该数据方面，每个用例均不同。 Experience Platform和Customer Journey Analytics提供了许多功能，这些功能可以独立使用或组合使用来解决各种用例。 下表概述了已确定的数据导出用例以及实施这些用例的Experience Platform和Customer Journey Analytics功能。
 
