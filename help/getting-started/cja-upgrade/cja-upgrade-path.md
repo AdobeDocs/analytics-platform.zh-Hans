@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: 6cceeaa3b57808a82012b124435aa1b7dbf1b3f2
+source-git-commit: f1e1fdd5ca8aa51a28de13cdb028bf585a0324e7
 workflow-type: tm+mt
-source-wordcount: '2483'
+source-wordcount: '2475'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 0%
 |---------|----------|
 | AppMeasurement | <ul><li>Experience PlatformWeb SDK的新实施</li><li>将Adobe Analytics迁移到Web SDK</li><li>Analytics源连接器</li></ul> |
 | Adobe Analytics 扩展 | <ul><li>Experience PlatformWeb SDK的新实施</li><li>将Adobe Analytics迁移到Web SDK</li><li>Analytics源连接器</li></ul> |
-| Web SDK | <ul><li>配置Adobe Analytics Web SDK实施以将数据发送到Customer Journey Analytics</li></ul> |
+| Web SDK | <ul><li>配置Adobe Analytics Web SDK实施以将数据发送到Platform</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -137,7 +137,7 @@ ht-degree: 0%
 
 #### 升级路径
 
-+++配置Adobe Analytics Web SDK实施以将数据发送到Customer Journey Analytics
++++配置Adobe Analytics Web SDK实施以将数据发送到Platform
 
 | 优势 | 缺点 |
 |----------|---------|
@@ -149,7 +149,7 @@ ht-degree: 0%
 
 #### 选择您的架构
 
-如果选择了Adobe Analytics Web SDK实施配置为将数据发送到Customer Journey Analytics的升级路径，则可以选择要使用的架构。
+如果选择了Adobe Analytics Web SDK实施配置为将数据发送到Platform的升级路径，则可以选择要使用的架构。
 
 您可以选择是否使用现有Adobe Analytics架构，也可以更新到您自己的XDM架构，以便在您开始使用其他Platform服务时更好地满足贵组织的需求。
 
@@ -165,7 +165,7 @@ ht-degree: 0%
 
 | 优势 | 缺点 |
 |----------|---------|
-| <ul><p>更新到您自己的XDM架构的优势包括：</p><ul><li>简化架构，根据贵组织的需求以及您使用的特定平台应用程序量身定制。</li><p>当需要对架构进行更改时，您不必在数千个未使用的字段中进行筛选，即可找到需要更新的字段。</p></ul> | <p>更新到您自己的XDM架构的缺点包括：</p><ul><li>在开始向Customer Journey Analytics发送数据之前，需要更新架构是一个耗时的过程。</li></ul> |
+| <ul><p>更新到您自己的XDM架构的优势包括：</p><ul><li>简化架构，根据贵组织的需求以及您使用的特定平台应用程序量身定制。</li><p>当需要对架构进行更改时，您不必在数千个未使用的字段中进行筛选，即可找到需要更新的字段。</p></ul> | <p>更新到您自己的XDM架构的缺点包括：</p><ul><li>在开始向Platform发送数据之前，需要更新架构，这是一个非常耗时的过程。</li></ul> |
 
 +++
 
