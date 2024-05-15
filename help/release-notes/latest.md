@@ -3,7 +3,7 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 36badebf0710131b2f831feb645f20d8dd888b9b
+source-git-commit: 4ad92a72f0ced81f84198da744fef9fe4c0a6b0b
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 43%
@@ -12,7 +12,7 @@ ht-degree: 43%
 
 # 当前Adobe Customer Journey Analytics发行说明（2024年5月）
 
-**上次更新**：2024年5月9日
+**上次更新**：2024年5月15日
 
 这些发行说明涵盖2024年5月15日至2024年6月的发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
