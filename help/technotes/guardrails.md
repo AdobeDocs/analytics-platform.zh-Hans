@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: c3293e2ce93113dd22157bb6470a780b20813d80
 workflow-type: tm+mt
-source-wordcount: '1606'
-ht-degree: 8%
+source-wordcount: '1632'
+ht-degree: 7%
 
 ---
 
@@ -73,11 +73,11 @@ ht-degree: 8%
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
 | 受众筛选器 | 20 | 系统强制的护栏 | 最大数量 [过滤器](../components/filters/filters-overview.md) 每个受众。 |
-| 受众标识数量 | 2000万 | 系统强制的护栏 | 每个受众的最大身份数。 |
+| 受众身份数量 | 2000万 | 系统强制的护栏 | 每个受众的最大身份数。 |
 | 受众刷新频率 | 4 | 系统强制的护栏 | 最大频率（小时an） [受众](../components/audiences/audiences-overview.md) 可能更新。 |
 | 受众刷新回顾窗口 | 90 | 系统强制的护栏 | 刷新回顾时间范围的最大天数。 |
 | 刷新受众过期日期 | 13 | 系统强制的护栏 | 受众从创建日期起停止刷新的最大月数。 客户可以将其延长13个月。 |
-| 刷新受众的数量 | 75， 100 | 系统强制的护栏 | 刷新受众的最大数量，该值因包而异（请参阅产品描述）。 |
+| 刷新受众的数量 | 75， 150 | 系统强制的护栏 | 刷新受众的最大数量，该值会因Customer Journey Analytics包而异（请参阅产品描述）。 |
 
 {style="table-layout:auto"}
 
@@ -110,7 +110,7 @@ ht-degree: 8%
 | 注释描述 | 250 | 系统强制的护栏 | 注释描述的最大字符数。 |
 | 架构字段 | 10 | 系统强制的护栏 | 为定义规则时架构字段的最大数量（不包括标准字段） [派生字段](../data-views/derived-fields/derived-fields.md). |
 | 查找/配置文件字段 | 3 | 系统强制的护栏 | 定义派生字段的规则时，架构字段（不包括标准字段）最大数量内的查找或配置文件架构字段的最大数量。 |
-| 派生字段 | 100 | 系统强制的护栏 | 每个连接的最大派生字段数。 |
+| 派生字段 | 100 - 500 | 系统强制的护栏 | 每个连接派生字段的最大数量；该值因Customer Journey Analytics包而异（请参阅产品描述）。 |
 
 {style="table-layout:auto"}
 
@@ -134,7 +134,7 @@ ht-degree: 8%
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
 | 数据导出 | 授权的数据湖存储总数 | 性能护栏 | 客户可以使用目标数据集导出功能将数据湖中的客户数据导出到授权的数据湖存储总数。 |
-| 可用数据集 | 配置文件和事件 | 系统强制的护栏 | 通过源、Web SDK、Mobile SDK、Analytics Data Connector和Audience Manager摄取或收集数据后，在Experience PlatformUI中创建的配置文件和体验事件数据集。 |
+| 可用数据集 | 配置文件和事件 | 系统强制的护栏 | 通过源、Web SDK、Mobile SDK、Analytics Data Connector和Audience Manager摄取或收集数据后，在Experience PlatformUI中创建的事件、配置文件或查找数据集。 |
 
 {style="table-layout:auto"}
 
@@ -155,8 +155,8 @@ ht-degree: 8%
 
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
-| 拼接数据集 | 10 | 系统强制的护栏 | 每位客户的最大拼接数据集数，该值因适用的Customer Journey Analytics包而异（请参阅适用的产品描述）。 |
-| 回填数据 | 60 | 系统强制的护栏 | 回填数据的最大天数。 |
+| 拼接数据集 | 5 - 50 | 系统强制的护栏 | 每个客户的最大拼接数据集数；该值因Customer Journey Analytics包而异（请参阅产品描述）。 |
+| 回填数据 | 60 - 395 | 系统强制的护栏 | 回填数据的最大天数；该值因Customer Journey Analytics包而异（请参阅产品描述）。 |
 
 {style="table-layout:auto"}
 
@@ -205,7 +205,7 @@ ht-degree: 8%
 
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
-| 每个报告的行数 | 300万 — 3亿 | 系统强制的护栏 | 每个报表的最大报表行数；该值因适用的Customer Journey Analytics包而异（请参阅适用的产品描述）。 |
+| 每个报告的行数 | 300万 — 3亿 | 系统强制的护栏 | 每个报表的最大报表行数；该值因Customer Journey Analytics包而异（请参阅产品描述）。 |
 | 每个表的细分 | 5 | 系统强制的护栏 | 每个表的最大划分数。 |
 | 每个表的量度 | 5 | 系统强制的护栏 | 每个表的最大量度数。 |
 | 计划频率 | 1 | 系统强制的护栏 | 导出可以安排在一天中执行一次(1)，也可以安排更长的导出时间（例如：每2天执行一次，或每周执行一次）。 |
