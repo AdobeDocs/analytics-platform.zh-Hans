@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
 source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '459'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -52,6 +52,6 @@ Analytics 中的文件夹是在 Adobe Analytics 登陆页面上和选择“**Wor
 
 - 管理员可删除另一管理员在公司文件夹内创建的文件夹。管理员可能需要与其他管理员协调以将文件夹和项目访问权限保持一致。
 
-- 当管理员将某个项目移至公司文件夹时，该项目将与所有人共享，同时具有 **编辑副本** 角色，即使原始共享权限受限制也是如此。
+- 当管理员将项目移动到“公司”文件夹时，即使原始共享权限受到限制，也会与具有&#x200B;**“编辑副本”**&#x200B;角色的所有人共享该项目。
 
 - 当管理员将某个项目移出公司文件夹时，将遵循原有或以前的共享权限。

@@ -6,19 +6,19 @@ feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
 source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '411'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # 会话设置
 
-在Customer Journey Analytics中，您可以以任何方式定义会话，以匹配人员与您的数字体验的交互方式。 可在数据视图中配置会话设置。
+在 Customer Journey Analytics 中，你可通过任何方式定义会话，以匹配人员与您的数字体验交互的方式。您可以在数据视图中配置会话设置。
 
 会话设置定义是非破坏性的，因此不会改变底层数据。可设置多个数据视图（其中每个数据视图都有其特定的会话设置定义）作为工作区项目的基础。
 
-要定义数据视图中会话的上下文，请执行以下操作：
+要在数据视图中定义会话的上下文，请执行以下操作：
 
 1. 在 Customer Journey Analytics UI 中，选择&#x200B;**[!UICONTROL 数据视图]**。
 
