@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 hide: true
 hidefromtoc: true
-source-git-commit: d993f46821e6236f4536fea953585219ec8096b5
+source-git-commit: 9659ebfc267be769c7a87c01b129245c97b82a95
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ AI助手是一项UI功能，可用于导航和了解Adobe Customer Journey Analy
 
 * **解决方案访问**： AI助手在Customer Journey Analytics中可用，但在Adobe Analytics中不可用。 Adobe Experience Platform、Adobe Journey Optimizer、Adobe Real-Time CDP及其他Experience Platform应用程序中也提供了此功能。
 
-* **合同访问**：您的Adobe销售合同需要包括条款6.2，该条款允许Adobe在AI/ML模型开发中使用您的数据。
+* **合同访问**：如果您无法使用AI助手，请联系贵组织的管理员或Adobe客户代表。 贵公司必须同意某些与GenAI相关的法律条款，贵组织才能使用AI Assistant。
 
 * **权限**：和 [!UICONTROL Adobe Admin Console] [!UICONTROL 报告工具] “AI助手文档”权限确定对此工具的访问权限。 此权限将于5月中旬添加到“报表工具”部分。 您需要确保创建 [产品配置文件](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) Admin Console，并手动将用户添加到此配置文件。
 
