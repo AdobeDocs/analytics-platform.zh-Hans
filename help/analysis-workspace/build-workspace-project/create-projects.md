@@ -4,10 +4,10 @@ title: 创建项目
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '602'
-ht-degree: 100%
+source-git-commit: 53d367e51f739ebf324390ba4114ddb58138fac8
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 84%
 
 ---
 
@@ -25,10 +25,10 @@ Analysis Workspace 中的[项目](/help/analysis-workspace/build-workspace-proje
 
 1. 在&#x200B;[!UICONTROL **工作空间**]&#x200B;选项卡上，选择页面左侧的&#x200B;[!UICONTROL **项目**]&#x200B;选项卡，然后选择&#x200B;[!UICONTROL **创建项目**]。
 
-1. 选择是否创建空白项目或空白移动记分卡
+1. 选择是创建空白项目还是空白移动记分卡
 
-   * 如果您打算通过浏览器分享您的分析内容，则创建&#x200B;**空白项目** 
-   * 如果您计划通过 Adobe Analytics 功能板移动应用程序共享您的分析，则创建&#x200B;[**空白移动记分卡**](/help/mobile-app/curator.md) 。
+   * 如果您计划通过浏览器共享您的分析，请创建&#x200B;**空白项目**
+   * 如果您计划通过 Adobe Analytics 功能板移动设备应用程序共享您的分析，请创建&#x200B;[**空白移动记分卡**](/help/mobile-app/curator.md)。
 
 1. 选择&#x200B;[!UICONTROL **创建**]。
 
@@ -40,13 +40,13 @@ Analysis Workspace 中的[项目](/help/analysis-workspace/build-workspace-proje
 
 Analysis Workspace 中提供的许多面板都可以基于一些用户输入来生成整套分析。
 
-要添加一个面板：
+要添加面板，请执行以下操作：
 
 1. 选择左侧边栏中的&#x200B;[!UICONTROL **面板**]&#x200B;图标。
 
    ![选择“面板”图标和可用面板列表。](assets/build-panels.png)
 
-1. 搜索您要添加的面板。当它出现在左侧边栏时，将其拖到您的项目中。
+1. 搜索您要添加的面板。当它出现在左边栏中时，将它拖到您的项目中。
 
 1. 在面板中添加可视化效果，如[在项目中添加可视化效果](#add-visualizations-to-the-project)中所述。
 
@@ -60,33 +60,41 @@ Analysis Workspace 中提供的许多面板都可以基于一些用户输入来�
 >
 >自由格式表是最常见的可视化类型，也是交互式数据分析的基础。有关如何在 Analysis Workspace 中使用自由格式表的更多详细信息，请参阅[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)。
 
-若要添加可视化效果：
+要添加可视化效果，请执行以下操作：
 
 1. 选择左侧边栏中的&#x200B;**[!UICONTROL 可视化]**&#x200B;图标。
 
    ![选定的可视化图标和可用的可视化效果列表。](assets/build-visualizations.png)
 
-1. 搜索您要添加的可视化效果。当它出现在左侧边栏时，将其拖动到项目中的面板内。
+1. 搜索您要添加的可视化效果。当它出现在左边栏中时，将它拖动到项目中的面板内。
 
 1. 将组件添加到可视化效果中，如[将组件添加到项目](#add-components-to-the-project)中所述。
 
 ## 将组件添加到项目中
 
-[组件](/help/components/overview.md) 构成任何项目的实际数据。您可以将组件添加到可视化效果或面板中。
+[组件](/help/components/overview.md)构成任何项目的实际数据。您可以将组件添加到可视化效果或面板中。
 
 >[!TIP]
 >
 >有关每个组件的信息，请选择左侧边栏中组件名称旁边的“信息”图标，或参阅[组件概述](/help/components/overview.md)。
 
-若要添加一个组件：
+以下是有关如何将组件添加到Analysis Workspace中的项目的基本信息。 有关添加各种类型的组件（维度、量度、过滤器和日期范围）的更多详细信息，请参阅 [在Analysis Workspace中使用组件](/help/components/use-components-in-workspace.md).
+
+要在Analysis Workspace中将组件添加到项目，请执行以下操作：
 
 1. 选择左侧边栏中的&#x200B;**[!UICONTROL 组件]**&#x200B;图标。
 
    ![选定的“组件”图标和可用的维度列表。](assets/build-components.png)
 
-1. 搜索您要添加的组件。当它出现在左侧边栏时，将其拖动到项目中的面板或可视化效果内。
+1. 滚动到或搜索要添加组件，然后将其拖动到项目中的面板或可视化图表。
 
-1. （可选）按照[保存并共享项目](#save-and-share-the-project)中的说明共享项目。
+   例如，您可以将过滤器拖到面板标题中的过滤器拖放区域。
+
+   ![在拖放区域放置过滤器](assets/filter-dropzone.png)
+
+   有关将组件添加到项目的更多信息，请参阅 [在Analysis Workspace中使用组件](/help/components/use-components-in-workspace.md).
+
+1. （可选）按照[保存和共享项目](#save-and-share-the-project)中的说明共享项目。
 
 ## 保存和共享项目
 

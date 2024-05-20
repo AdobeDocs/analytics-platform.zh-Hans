@@ -4,9 +4,9 @@ title: 量度
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 53d367e51f739ebf324390ba4114ddb58138fac8
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '407'
 ht-degree: 40%
 
 ---
@@ -32,6 +32,10 @@ Adobe 提供了多种类型的指标，可供在 Analysis Workspace 中使用：
 
 
 量度在Analysis Workspace中的使用非常灵活。 将量度拖动到空的自由格式表，可查看在项目日期期间该量度的趋势。 此外，您还可以拖曳存在维度的量度，以便将该量度与每个维度项目进行比较。 将量度拖动到现有量度标题上方会替换该量度，如果将量度拖动到标题旁边，则可以并排查看这两个量度。
+
+## 在 Analysis Workspace 中使用指标
+
+指标可以在 Analysis Workspace 中以各种方式使用。有关如何将量度和其他类型的组件添加到Analysis Workspace的信息，请参阅 [在Analysis Workspace中使用组件](/help/components/use-components-in-workspace.md).
 
 ## 计算指标
 

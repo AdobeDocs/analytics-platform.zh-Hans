@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 0014515b29885bf3eb44e8e49fc605fc76e4b439
+source-git-commit: 53d367e51f739ebf324390ba4114ddb58138fac8
 workflow-type: tm+mt
-source-wordcount: '3567'
-ht-degree: 71%
+source-wordcount: '3590'
+ht-degree: 74%
 
 ---
 
@@ -20,16 +20,17 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2024 年 5 月** | |
+| 有关将组件添加到项目的文档 | 添加了有关如何执行操作的一般信息 [将各种类型的组件添加到Analysis Workspace中的项目](/help/components/use-components-in-workspace.md). |
 | 数据导出用例 | 一组新文章描述 [数据导出用例](/help/use-cases/data-export/overview.md) 以及如何使用Experience Platform和Customer Journey Analytics功能实施这些用例 |
-| 关于从Adobe Analytics升级到Customer Journey Analytics的新文档 | 对于从Adobe Analytics升级到Customer Journey Analytics的组织，根据组织当前的Adobe Analytics实施和长期目标，需要牢记有多个升级选项和许多注意事项。<p>现在提供了新的文档资源，以帮助您更好地了解：</p><ul><li>现有的各种升级路径</li><li>根据组织当前的Adobe Analytics实施，提供了哪些升级路径</li><li>每种升级路径的优缺点</li><li>每个升级路径的分步指南</li><li>处理历史数据的注意事项</li><li>等等！</li></ul><p>[Customer Journey Analytics升级入门](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md).</p> |
-| 更新了有关自定义日期范围的文档 | 更新了相关屏幕截图和程序 [创建自定义日期范围](/help/components/date-ranges/custom-date-ranges.md) 以便与当前的产品功能和设计相匹配。 |
+| 有关从 Adobe Analytics 升级到 Customer Journey Analytics 的新文档 | 对于从 Adobe Analytics 升级到 Customer Journey Analytics 的组织，需要考虑组织当前的 Adobe Analytics 实施和长期目标，有多种升级选项和许多注意事项需要牢记。<p>现提供新的文档资源来帮助您更好地理解：</p><ul><li>现有的各种升级路径</li><li>根据组织当前的 Adobe Analytics 实施情况，有哪些升级路径可用</li><li>每种升级路径的优缺点</li><li>每种升级路径的分步指导</li><li>处理历史数据的注意事项</li><li>等等！</li></ul><p>[开始使升级到 Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)。</p> |
+| 更新了有关自定义日期范围的文档 | 更新了与 [创建自定义日期范围](/help/components/date-ranges/custom-date-ranges.md) 相关的屏幕截图和程序，以匹配当前的产品功能和设计。 |
 | 有关Dimension的概述信息 | 添加了关于以下内容的信息 [维度](/help/components/dimensions/overview.md). |
 | 源连接器的示例 | 添加了源连接器的示例，这些示例在描述如何 [使用源连接器](/help/data-ingestion/sources.md#use-a-source-connector) 用于摄取数据。 |
 | **2024 年 4 月** | |
 | 预测统计技术 | 添加了描述 [预测服务中使用的统计技术](../analysis-workspace/c-forecast/statistics-forecasting.md). |
 | 添加了建议对高基数维度导出完整表的信息 | 在中添加了项目符号 [高基数维度的最佳实践](/help/components/dimensions/high-cardinality.md) 建议对高基数维度使用完全表导出。 |
 | 添加了关于移动记分卡中智能字幕的文档 | [智能字幕](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) 可帮助非分析人员在没有分析人员帮助的情况下更好地理解他们的数据。 |
-| 有关Adobe Product Analytics功能的新文档 | <ul><li>[特征矩阵](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>增强功能 [保留率](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[漏斗中的增强洞察](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>比较单个漏斗步骤中的事件</li></ul> |
+| 有关Adobe Product Analytics功能的新文档 | <ul><li>[功能矩阵](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>增强功能 [保留率](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[漏斗中的增强洞察](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>比较单个漏斗步骤中的事件</li></ul> |
 | **2024 年 3 月** | |
 | 有关“用于”列的使用情况信息仅从 2023 年 9 月开始提供。 | 阐明[项目登陆页面](/help/getting-started/landing.md)“**用于**”列的使用情况信息只能追溯到 2023 年 9 月。 |
 | 添加了有关仅用于项目的工作区组件的权限增强的文档 | 如果您与其他用户共享项目，则这些用户可以编辑 [快速过滤器](/help/components/filters/quick-filters.md) 以及嵌入到共享项目中的其他仅用于项目的组件。 |

@@ -4,9 +4,9 @@ title: 快速过滤器
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 284c73374ca3fdfc4afbc2824209bebdc764fb64
+source-git-commit: 53d367e51f739ebf324390ba4114ddb58138fac8
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1173'
 ht-degree: 39%
 
 ---
@@ -34,9 +34,11 @@ Analysis Workspace中的任何用户都可以创建快速过滤器。
 
 1. 选择以下方法之一开始创建快速过滤器：
 
-   * **临时（拖放）：** 从左边栏中，将组件拖到旁边的拖放区域 **筛选** 图标，然后选择 **编辑** 图标以调整过滤器。
+   * **临时（拖放）：** 从左边栏中，将组件拖到面板标题中的过滤器拖放区域。
 
-     ![编辑临时过滤器](assets/filter-adhoc-edit.png)
+     ![将区段放入放置区域](assets/filter-dropzone.png)
+
+     您可以按中所述编辑快速过滤器 [编辑快速过滤器](#edit-a-quick-filter).
 
      >[!NOTE]
      >
