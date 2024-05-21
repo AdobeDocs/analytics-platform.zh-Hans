@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 17ffd1865c9d24a6ed99577b4679b72ef855e898
 workflow-type: tm+mt
-source-wordcount: '5932'
-ht-degree: 13%
+source-wordcount: '5986'
+ht-degree: 12%
 
 ---
 
@@ -255,7 +255,7 @@ ht-degree: 13%
 |  | `https://site.com/?cid=em_12345678` |
 | `https://google.com` | `https://site.com/?cid=ps_abc098765` |
 | `https://google.com` | `https://site.com/?cid=em_765544332` |
-| `https://google.com` |
+| `https://google.com` | |
 
 {style="table-layout:auto"}
 
@@ -415,7 +415,7 @@ ht-degree: 13%
 
 ## 更多信息
 
-Customer Journey Analytics使用嵌套容器结构，按照Adobe Experience Platform的样式建模 [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) （体验数据模型）。 请参阅 [容器](../create-dataview.md#containers) 和 [过滤器容器](../../components/filters/filters-overview.md#filter-containers) 了解更多背景信息。 此容器模型虽然本质上较为灵活，但在使用规则生成器时施加了一些限制。
+Customer Journey Analytics使用嵌套容器结构，按照Adobe Experience Platform的样式建模 [XDM](https://experienceleague.adobe.com/cn/docs/experience-platform/xdm/home.html?lang=zh-Hans) （体验数据模型）。 请参阅 [容器](../create-dataview.md#containers) 和 [过滤器容器](../../components/filters/filters-overview.md#filter-containers) 了解更多背景信息。 此容器模型虽然本质上较为灵活，但在使用规则生成器时施加了一些限制。
 
 Customer Journey Analytics使用以下默认容器模型：
 
@@ -445,13 +445,13 @@ Customer Journey Analytics使用以下默认容器模型：
 
 >[!NOTE]
 >
->此函数最初名为Lookup ，但已重命名为Classification ，以适应即将推出的具有不同功能的查找函数。
+>此函数最初名为Lookup ，但已重命名为Classification ，以适应具有不同功能的Lookup函数。
 
 ## 规范 {#classify-io}
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 要分类的字段]：<ul><li>规则</li><li>标准字段</li><li>字段</li></ul></li><li>[!UICONTROL 当值等于] 和 [!UICONTROL 替换值为]：</p><ul><li>字符串</li></ul><li>显示原始值<ul><li>布尔值</li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段5个函数<br/>每个函数100行</p> | <p>新建派生字段</p> |
+| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 要分类的字段]：<ul><li>规则</li><li>标准字段</li><li>字段</li></ul></li><li>[!UICONTROL 当值等于] 和 [!UICONTROL 替换值为]：</p><ul><li>字符串</li></ul><li>显示原始值<ul><li>布尔值</li></ul></li></ul> | <p>不适用</p> | <ul><li>每个派生字段5个函数</li><li>200 [运算符](#operators) 每个派生字段。 每个条目 [!UICONTROL 当值等于原始值时] [!UICONTROL 用新值替换值] 被视为一项操作。</li></ul> | <p>新建派生字段</p> |
 
 {style="table-layout:auto"}
 
@@ -1307,6 +1307,12 @@ If或Else If中的运算符在Case When函数中构造是条件与的组合 **�
 例如，以下条件使用13个运算符。
 
 ![示例运算符](assets/operators-sample.png)
+
+“分类”函数中的运算符是以下项的单个条目 [!UICONTROL 当值等于原始值时] [!UICONTROL 用新值替换值].
+
+例如，下面的分类规则使用3个运算符。
+
+![分类规则1的屏幕截图](assets/classify-1.png)
 
 
 ## 更多信息
