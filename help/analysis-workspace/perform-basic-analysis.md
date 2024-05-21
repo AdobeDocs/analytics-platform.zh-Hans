@@ -6,19 +6,19 @@ exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
 solution: Customer Journey Analytics
 role: User
 source-git-commit: 1564c91616015311393a643fe7fcecd429cf3a36
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '188'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
 # 执行基本分析
 
-Customer Journey Analytics让您可以使用Analysis Workspace的强大功能和灵活性分析数据。
+通过 Customer Journey Analytics，您可以使用 Analysis Workspace 的强大功能和灵活性来分析数据。
 
 >[!TIP]
 >
->如果Analysis Workspace中没有可用的数据，请确保您遵循 [数据获取过程](/help/data-ingestion/data-ingestion.md)，其中包括：<ul><li>[创建连接](/help/connections/create-connection.md#create-and-configure-the-connection) </br>确保将连接配置为导入新数据和/或回填数据。</li><li>[添加数据集](/help/connections/create-connection.md#add-and-configure-datasets)</li><li>[创建数据视图](/help/data-views/create-dataview.md)</li></ul>
+>如果 Analysis Workspace 中没有可用数据，请确保您遵循了 [数据提取流程](/help/data-ingestion/data-ingestion.md)，其中包括以下内容：<ul><li>[创建连接](/help/connections/create-connection.md#create-and-configure-the-connection) </br>确保连接配置为导入新数据、补填数据或两者。</li><li>[添加数据集](/help/connections/create-connection.md#add-and-configure-datasets)</li><li>[创建数据视图](/help/data-views/create-dataview.md)</li></ul>
 
 您可以随意尝试和拖动维度和量度，更改维度和量度归因设置、友好名称、时区、会话设置等。
 
