@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
+source-git-commit: 481e52bbfe06268642522b908f9b7ac66c882433
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '559'
 ht-degree: 6%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 此 **[!UICONTROL 频率]** 查看按事件在产品中发生的频率对事件数据进行分组。 此视图的垂直轴包含表示事件频率的分段。 水平轴测量每个时段的用户或会话数。
 
-![频率屏幕快照](../assets/frequency-stacked.png){style="border:1px solid gray"}
+>[!VIDEO](https://video.tv.adobe.com/v/3428089/?learn=on)
 
 ## 用例
 
@@ -33,7 +33,7 @@ ht-degree: 6%
 
 * **[!UICONTROL 视图]**：在此视图类型与之间切换 [使用情况](usage.md).
 * **[!UICONTROL 活动]**：您要测量的事件。每个选定事件均表示为一个单独的图表。 将代表趋势事件的行添加到表中。 您最多可以包含五个事件。
-* **[!UICONTROL 计为]**：要应用于选定事件的计数方法。 选项包括 [!UICONTROL 用户]，  [!UICONTROL 会话]，  [!UICONTROL 用户百分比] 和  [!UICONTROL 会话百分比]. 此视图中基于百分比的量度的分母是执行选定事件的用户或会话，而不是产品的所有活动用户。
+* **[!UICONTROL 计为]**：要应用于选定事件的计数方法。 选项包括 [!UICONTROL 用户]， [!UICONTROL 会话]， [!UICONTROL 用户百分比] 和 [!UICONTROL 会话百分比]. 此视图中基于百分比的量度的分母是执行选定事件的用户或会话，而不是产品的所有活动用户。
 * **[!UICONTROL 区段]**：您要测量的区段。每个选定区段都会将图表中的条形数和表中的行数加倍。 您最多可以包含五个区段。
 
 ## 图表设置
