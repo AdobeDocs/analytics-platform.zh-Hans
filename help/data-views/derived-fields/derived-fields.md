@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 17ffd1865c9d24a6ed99577b4679b72ef855e898
+source-git-commit: 09da072a3863a2d0a0ed7d90802f65b64f6f753c
 workflow-type: tm+mt
-source-wordcount: '5986'
+source-wordcount: '5987'
 ht-degree: 12%
 
 ---
@@ -1287,7 +1287,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 | 功能 | 限制 |
 |---|---|
 | <p>Case When</p> | <ul><li>5大小写When每个派生字段的函数</li><li>200 [运算符](#operators) 每个派生字段</li></ul> |
-| <p>分类</p> | <ul><li>5按派生字段对函数进行分类</li><li>每个函数100行</li></ul> |
+| <p>分类</p> | <ul><li>5按派生字段对函数进行分类</li><li>200 [运算符](#operators) 每个派生字段</li></ul> |
 | <p>拼接</p> | <ul><li>2每个派生字段的拼接函数</li></ul> |
 | <p>查找和替换</p> | <ul><li>每个派生字段2个查找和替换函数</li></ul> |
 | <p>查询</p> | <ul><li>每个派生字段5个查找函数</li></ul> |
