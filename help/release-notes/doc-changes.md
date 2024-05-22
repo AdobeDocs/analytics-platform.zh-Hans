@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 53d367e51f739ebf324390ba4114ddb58138fac8
+source-git-commit: cfc019133473cb7509677d03e897d4eeb934ef38
 workflow-type: tm+mt
-source-wordcount: '3590'
-ht-degree: 74%
+source-wordcount: '3650'
+ht-degree: 73%
 
 ---
 
@@ -20,9 +20,10 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2024 年 5 月** | |
+| 使用组织策略限制将Customer Journey Analytics报表导出到Google Cloud Platform时需要的信息 | 已将Adobe拥有的Google Cloud Platform组织ID添加到 [配置云导出位置](/help/components/exports/cloud-export-locations.md) 用于将Customer Journey Analytics报表导出到Google Cloud Platform的文档。 <p>只有在使用以下功能的组织才需要此信息： [组织策略约束](https://cloud.google.com/storage/docs/org-policy-constraints) 在Google Cloud Platform中。</p> |
 | 有关将组件添加到项目的文档 | 添加了有关如何执行操作的一般信息 [将各种类型的组件添加到Analysis Workspace中的项目](/help/components/use-components-in-workspace.md). |
 | 数据导出用例 | 一组新文章描述 [数据导出用例](/help/use-cases/data-export/overview.md) 以及如何使用Experience Platform和Customer Journey Analytics功能实施这些用例 |
-| 有关从 Adobe Analytics 升级到 Customer Journey Analytics 的新文档 | 对于从 Adobe Analytics 升级到 Customer Journey Analytics 的组织，需要考虑组织当前的 Adobe Analytics 实施和长期目标，有多种升级选项和许多注意事项需要牢记。<p>现提供新的文档资源来帮助您更好地理解：</p><ul><li>现有的各种升级路径</li><li>根据组织当前的 Adobe Analytics 实施情况，有哪些升级路径可用</li><li>每种升级路径的优缺点</li><li>每种升级路径的分步指导</li><li>处理历史数据的注意事项</li><li>等等！</li></ul><p>[开始使升级到 Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)。</p> |
+| 有关从 Adobe Analytics 升级到 Customer Journey Analytics 的新文档 | 对于从 Adobe Analytics 升级到 Customer Journey Analytics 的组织，需要考虑组织当前的 Adobe Analytics 实施和长期目标，有多种升级选项和许多注意事项需要牢记。<p>现提供新的文档资源来帮助您更好地理解：</p><ul><li>现有的各种升级路径</li><li>根据组织当前的 Adobe Analytics 实施情况，有哪些升级路径可用</li><li>每种升级路径的优缺点</li><li>每种升级路径的分步指导</li><li>处理历史数据的注意事项</li><li>等等！</li></ul><p>[开始升级到 Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)。</p> |
 | 更新了有关自定义日期范围的文档 | 更新了与 [创建自定义日期范围](/help/components/date-ranges/custom-date-ranges.md) 相关的屏幕截图和程序，以匹配当前的产品功能和设计。 |
 | 有关Dimension的概述信息 | 添加了关于以下内容的信息 [维度](/help/components/dimensions/overview.md). |
 | 源连接器的示例 | 添加了源连接器的示例，这些示例在描述如何 [使用源连接器](/help/data-ingestion/sources.md#use-a-source-connector) 用于摄取数据。 |

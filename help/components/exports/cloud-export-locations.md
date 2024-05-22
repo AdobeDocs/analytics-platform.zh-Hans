@@ -5,10 +5,10 @@ title: 配置云导出位置
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: d1fc7c0ab95e43a20cdfba8d0948c188fda8bec8
+source-git-commit: cfc019133473cb7509677d03e897d4eeb934ef38
 workflow-type: tm+mt
-source-wordcount: '1792'
-ht-degree: 16%
+source-wordcount: '1823'
+ht-degree: 18%
 
 ---
 
@@ -106,7 +106,7 @@ ht-degree: 16%
 
    | 字段 | 功能 |
    |---------|----------|
-   | [!UICONTROL **分段**] | Amazon S3帐户中要将Customer Journey Analytics数据发送到的存储段。 <p>确保Adobe提供的用户ARN具有 `S3:PutObject` 权限以将文件上传到此存储段。 </p><p>存储段名称必须满足特定的命名规则。 例如，其长度必须介于3到63个字符之间，只能由小写字母、数字、点(.)和连字符(-)组成，并且必须以字母或数字开头和结尾。 [AWS文档中提供了命名规则的完整列表](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
+   | [!UICONTROL **分段**] | Amazon S3帐户中要将Customer Journey Analytics数据发送到的存储段。 <p>确保Adobe提供的用户ARN具有 `S3:PutObject` 权限以将文件上传到此存储段。 </p><p>桶名称必须符合特定的命名规则。例如，它们的长度必须在 3 到 63 个字符之间，只能由小写字母、数字、点 (.) 和连字符 (-) 组成，并且必须以字母或数字开头和结尾。[若要了解完整的命名规则列表，请参阅 AWS 文档](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html)。 </p> |
    | [!UICONTROL **前缀**] | 存储段中要用于放置数据的文件夹。指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，folder_name/ |
 
    {style="table-layout:auto"}
@@ -125,11 +125,9 @@ ht-degree: 16%
 
 1. 在 [!UICONTROL **位置属性**] 的部分 [!UICONTROL **添加位置**] 对话框中，指定以下信息来配置Google Cloud Platform位置：
 
-   <!-- still need to update; can't create GCP account -->
-
    | 字段 | 功能 |
    |---------|----------|
-   | [!UICONTROL **分段**] | GCP帐户中要将Customer Journey Analytics数据发送到的存储段。 <p>确保您已授予 `roles/storage.objectCreator` Adobe提供的主体权限。 (本金于呈报日期 [配置Google Cloud平台帐户](/help/components/exports/cloud-export-accounts.md).) <p>有关授予权限的信息，请参阅 Google Cloud 文档中的[将主体添加到存储段级策略](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add)。</p> |
+   | [!UICONTROL **分段**] | GCP帐户中要将Customer Journey Analytics数据发送到的存储段。 <p>确保您已授予 `roles/storage.objectCreator` Adobe提供的主体权限。 (本金于呈报日期 [配置Google Cloud平台帐户](/help/components/exports/cloud-export-accounts.md).) <p>有关授予权限的信息，请参阅 Google Cloud 文档中的[将主体添加到存储段级策略](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add)。</p><p>如果您的组织使用 [组织策略约束](https://cloud.google.com/storage/docs/org-policy-constraints) 要在允许列表中仅允许Google Cloud Platform帐户，您需要以下Adobe拥有的Google Cloud Platform组织ID： <ul><li>`DISPLAY_NAME`： `adobe.com`</li><li>`ID`： `178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`： `C02jo8puj`</li></ul> </p> |
    | [!UICONTROL **前缀**] | 存储段中要用于放置数据的文件夹。指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，folder_name/ |
 
    {style="table-layout:auto"}
