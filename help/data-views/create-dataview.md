@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '1423'
-ht-degree: 100%
+source-git-commit: 5ed1622d4e9f1bcc25931cbf3d3cbd6796d0ac15
+workflow-type: tm+mt
+source-wordcount: '1468'
+ht-degree: 97%
 
 ---
 
@@ -45,6 +45,7 @@ ht-degree: 100%
 | --- | --- |
 | [!UICONTROL 连接] | 此字段将数据视图链接到您之前建立的连接，其中包含一个或多个 Adobe Experience Platform 数据集。 |
 | [!UICONTROL 名称] | 必填。数据视图的名称。此值显示在 Analysis Workspace 右上角的下拉列表中。 |
+| 外部 ID | 必需。可在外部源（如商业智能工具）中使用的数据视图的名称。 默认为 `unspecified`. 如果不指定外部ID，将从数据视图的“名称”生成名称，并将空格替换为下划线。 |
 | [!UICONTROL 描述] | 可选。Adobe 建议输入详细描述，以便用户了解为什么存在该数据视图以及为谁设计了它。 |
 
 {style="table-layout:auto"}

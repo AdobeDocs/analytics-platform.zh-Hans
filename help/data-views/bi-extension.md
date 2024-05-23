@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: SQL Connector
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 87661e0000d050652d9510bb4830ca6f30bfeae9
+source-git-commit: 5ed1622d4e9f1bcc25931cbf3d3cbd6796d0ac15
 workflow-type: tm+mt
-source-wordcount: '2747'
-ht-degree: 97%
+source-wordcount: '2770'
+ht-degree: 96%
 
 ---
 
@@ -184,7 +184,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/en/
 
 ## 功能
 
-默认情况下，您的数据视图具有从其友好名称生成的表安全名称。例如，名为[!UICONTROL 我的 Web 数据视图]的数据视图的视图名称为 `my_web_data_view`。
+默认情况下，您的数据视图具有从其友好名称生成的表安全名称。例如，名为的数据视图 [!UICONTROL 我的Web数据视图] 具有视图名称 `my_web_data_view`. 您可以为数据视图定义要在BI工具中使用的首选名称。 请参阅 [数据视图设置](create-dataview.md#settings) 以了解更多信息。
 
 如果要使用数据视图 ID 作为表名称，可以在连接时将可选的 `CJA_USE_IDS` 设置添加到数据库名称。例如，`prod:cja?CJA_USE_IDS` 显示具有 `dv_ABC123` 等名称的数据视图。
 
