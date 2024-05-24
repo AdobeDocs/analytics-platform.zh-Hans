@@ -3,16 +3,16 @@ description: 了解如何在Analysis Workspace中将组件添加到项目
 title: 在Analysis Workspace中使用组件
 feature: Components
 role: User
-source-git-commit: d3f90414494b52aba9736fef83423e4a1b2508b5
+source-git-commit: b02a3954e7b531caabfbea1f7df4e322eb4af741
 workflow-type: tm+mt
 source-wordcount: '963'
-ht-degree: 16%
+ht-degree: 23%
 
 ---
 
 # 在Analysis Workspace中使用组件
 
-组件构成了Analysis Workspace中任何项目的实际数据。 组件由维度、量度、区段和日期范围组成。 您可以将组件拖到可视化图表或面板中，以将其添加到项目中。
+组件构成了Analysis Workspace中任何项目的实际数据。 组件由维度、量度、过滤器和日期范围组成。 您可以将组件拖到可视化图表或面板中，以将其添加到项目中。
 
 有关可添加组件类型的概述信息，请参见 [组件概述](/help/components/overview.md).
 
@@ -32,11 +32,11 @@ ht-degree: 16%
 
    ![](assets/build-components.png)
 
-1. 滚动到或搜索要添加组件，然后将其拖动到项目中的面板或可视化图表。
+1. 滚动到或搜索要添加的组件，然后将其拖到项目内的面板或可视化中。
 
-   例如，您可以将区段拖到面板标题中的区段放置区域。
+   例如，您可以将某个筛选器拖到面板标题中的筛选器放置区。
 
-   ![将区段放入放置区域](assets/filter-dropzone.png)
+   ![将筛选器放入拖放区](assets/filter-dropzone.png)
 
 1. 有关更多详细信息，请根据要添加的组件类型，继续执行以下部分之一：
 
@@ -44,7 +44,7 @@ ht-degree: 16%
 
    * [将量度添加到项目](#add-metrics-to-a-project)
 
-   * [将区段添加到项目](#add-segments-to-a-project)
+   * [将过滤器添加到项目](#add-filters-to-a-project)
 
    * [向项目添加日期范围](#add-date-ranges-to-a-project)
 
@@ -60,7 +60,7 @@ ht-degree: 16%
 
      ![将维度添加到项目](assets/add-dimensions.png)
 
-   * 将一个或多个维度从左边栏拖至区段拖放区域以创建临时区段，如中所述 [将区段添加到项目](#add-segments-to-a-project).
+   * 将一个或多个维度从左边栏拖至过滤器拖放区域以创建临时过滤器，如中所述 [将过滤器添加到项目](#add-filters-to-a-project).
 
 有关如何在Analysis Workspace中使用维度的更多信息，请参阅 [预览维度](/help/components/dimensions/view-dimensions.md)， [划分维度](/help/components/dimensions/t-breakdown-fa.md)、和 [时间划分维度](/help/components/dimensions/time-parting-dimensions.md).
 
@@ -96,11 +96,11 @@ ht-degree: 16%
 
 1. 选择下列方法之一以开始筛选面板：
 
-   * 将单个过滤器从左边栏拖至区段拖放区域。
+   * 将单个过滤器从左边栏拖至过滤器拖放区域。
 
-     ![在拖放区域放置过滤器](assets/filter-dropzone.png)
+     ![将筛选器放入拖放区](assets/filter-dropzone.png)
 
-   * 按住Shift或Ctrl键在左边栏中选择多个区段，然后按住Shift键，将多个区段拖放到区段拖放区域。
+   * 按住Shift或Ctrl键在左边栏中选择多个过滤器，然后按住Shift键，将多个过滤器拖放到过滤器拖放区域。
 
      ![将多个筛选器拖放到拖放区域中](assets/filter-dropzone-multiple.png)
 
@@ -108,13 +108,13 @@ ht-degree: 16%
 
      您可以从下拉菜单中选择(x)以删除任何选项。 如果您删除 [!UICONTROL **无筛选器**] 选项，则需要过滤器。
 
-   * 通过将非区段组件拖放到拖放区域来创建临时区段。 这可以节省转到区段生成器的时间和精力。 通过这种方式创建的区段自动定义为点击级别区段。通过单击区段旁的信息图标 (i)、单击铅笔形状编辑图标并在区段生成器中进行编辑，可以修改此定义。
+   * 通过将非过滤器组件拖放到拖放区域来创建临时过滤器。 这可以节省转到过滤器生成器的时间和精力。 通过这种方式创建的过滤器自动定义为点击级别过滤器。通过单击过滤器旁的信息图标 (i)、单击铅笔形状编辑图标并在过滤器生成器中进行编辑，可以修改此定义。
 
-     临时区段是一种快速区段，在项目本地。 除非您将其公开，否则它们不会出现在左侧栏中。
+     临时过滤器是一种快速过滤器，是项目的本地过滤器。除非您将其公开，否则它们不会出现在左侧栏中。
 
      有关更多信息，请参阅[快速过滤器](/help/components/filters/quick-filters.md)。
 
-有关如何使用面板上的区段拖放区域来筛选面板的更多信息，请参阅 [放置区域](/help/analysis-workspace/c-panels/panels.md#drop-zone) 在 [面板概述](/help/analysis-workspace/c-panels/panels.md).
+有关如何在面板上使用过滤器拖放区域来过滤面板的更多信息，请参阅 [放置区域](/help/analysis-workspace/c-panels/panels.md#drop-zone) 在 [面板概述](/help/analysis-workspace/c-panels/panels.md).
 
 ## 向项目添加日期范围
 
