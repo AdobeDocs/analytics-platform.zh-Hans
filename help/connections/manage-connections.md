@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 73b9aa3bc7568c90c3e92b6fa8197577a904a6a2
+source-git-commit: 5ad3f9c85c583390e6c5ba933ee59c3d0b3f8c59
 workflow-type: tm+mt
-source-wordcount: '2993'
+source-wordcount: '2996'
 ht-degree: 14%
 
 ---
@@ -32,6 +32,8 @@ ht-degree: 14%
 ## 列表
 
 此 [!UICONTROL 列表] interface是Connections的默认接口。 如果未选定，请选择 **[!UICONTROL 列表]** 选项卡访问该界面。
+
+![列表视图](assets/list-view.png)
 
 此 [!UICONTROL 列表] 接口显示所有可用连接的表。 您可以使用搜索快速搜索连接 ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) 盒子。
 
@@ -202,6 +204,8 @@ ht-degree: 14%
 
 此 [!UICONTROL 使用情况] 界面显示所有连接中摄取和可报告行的使用情况。 此界面支持您确定您的Customer Journey Analytics使用是否符合合同约定的内容。
 
+![usage-view](assets/usage-view.png)
+
 选择 **[!UICONTROL 使用情况]** 选项卡访问该界面。
 
 要报告使用情况，请执行以下操作：
@@ -211,7 +215,7 @@ ht-degree: 14%
 
 对象 [!UICONTROL 已摄取的行]：
 
-* 一个面板显示摄取的总行数，其中包含所有连接中在每月第2天更新的所有事件数据。 在面板中：
+* 一个面板可显示摄取的总行数，其中包含所有连接中每个月第2天更新的所有事件数据。 在面板中：
    * 一个框会显示上个月引入的行数以及在%中的变化(表示为 <span style="color:green">▲</span> 或 <span style="color:c64545">▼</span>)。
    * 折线图显示 <span style="color:53b2ad">◼︎</span> [!UICONTROL 每月摄取的行].<br/>要查看显示每月摄取行数的弹出窗口，请将鼠标悬停在折线图中的任何数据点上。
 
