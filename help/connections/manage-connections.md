@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 5ad3f9c85c583390e6c5ba933ee59c3d0b3f8c59
+source-git-commit: bba51d1354d14d6e7eb236b787b419571fea6423
 workflow-type: tm+mt
-source-wordcount: '2996'
+source-wordcount: '2995'
 ht-degree: 14%
 
 ---
@@ -208,7 +208,7 @@ ht-degree: 14%
 
 选择 **[!UICONTROL 使用情况]** 选项卡访问该界面。
 
-要报告使用情况，请执行以下操作：
+### 使用情况报表
 
 1. 选择 **[!UICONTROL 时间范围]**. 您可以选择 **[!UICONTROL 过去6个月]**， **[!UICONTROL 年初至今]**，或 **[!UICONTROL 过去2年]**.
 1. 选择 **[!UICONTROL 间隔]**. 您可以选择 **[!UICONTROL 每月]** 或 **[!UICONTROL 每季度]**.
