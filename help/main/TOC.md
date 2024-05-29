@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: e8057ea64c8a5393790700da2fee6144161cb58a
+source-git-commit: 6b1761baec8cb1b102943ef7145403ccd2dbf840
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 76%
+source-wordcount: '1088'
+ht-degree: 77%
 
 ---
 
@@ -323,11 +323,12 @@ ht-degree: 76%
    + [常见问题解答](../stitching/faq.md)
 
 + Adobe 集成 {#integrations}
-   + [将Adobe解决方案与Customer Journey Analytics集成概述](/help/integrations/overview.md)
-   + [将 Adobe Analytics 与 Customer Journey Analytics 集成](/help/integrations/aa.md)
-   + [将Journey Optimizer数据与Customer Journey Analytics集成](/help/integrations/ajo.md)
-   + [将决策管理数据与Customer Journey Analytics集成](/help/integrations/ajo-od.md)
-   + [将客户人工智能与Customer Journey Analytics集成](/help/integrations/customer-ai.md)
+   + [概述](/help/integrations/overview.md)
+   + [集成Adobe Analytics](/help/integrations/aa.md)
+   + [集成Target](/help/integrations/cja4t.md)
+   + [集成Journey Optimizer数据](/help/integrations/ajo.md)
+   + [集成决策管理数据](/help/integrations/ajo-od.md)
+   + [集成客户人工智能](/help/integrations/customer-ai.md)
 
 + 数据管理 {#cja-privacy}
    + [数据管理](../privacy/privacy-overview.md)
