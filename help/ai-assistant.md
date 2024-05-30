@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 hide: true
 hidefromtoc: true
-source-git-commit: b21dba5b7bef0d9add116f1e9bca0403e9a8c1d5
+source-git-commit: c0ed9f09f9fc0c9bb1e4c002986866677aebfb1f
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,9 @@ ht-degree: 0%
 >
 >用于Customer Journey Analytics的AI助手当前为测试版。 该功能及其文档可能会发生更改。
 
-AI助手是一项UI功能，可用于导航和了解Adobe Customer Journey Analytics概念和术语。 对Customer Journey AnalyticsAI助手进行Adobe Experience League文档培训。 当被问到问题时，AI Assistant会给出一个有助于快速学习的有用答案。
+AI助手是一种对话体验，允许从业人员快速执行任务，无论其理解概念、排除问题还是搜索信息。 它还使非专家能够执行专家任务，并提高整体工作质量。
+
+对Customer Journey AnalyticsAI助手进行Adobe Experience League文档培训。 当被问到问题时，AI Assistant会给出一个有助于快速学习的有用答案。
 
 作为新手，您可以使用AI Assistant学习Customer Journey Analytics概念，并熟悉不熟悉的产品和功能。 作为经验丰富的用户，您可以使用AI Assistant提供更高级的用例或提示和技巧。
 
@@ -58,6 +60,6 @@ Customer Journey Analytics范围之外的问题，例如有关Adobe Target和Ado
 
    ![问题框](assets/ai-asst2.png)
 
-1. （可选）要显示源，请单击 **[!UICONTROL 显示源]**，并显示通知答案的文档源。
+1. （可选）要显示源，请单击 **[!UICONTROL 显示源]**，并显示通知答案的一个或多个文档源。
 
 1. （可选）您还可以对任何给定答案的效用提供大拇指支持或大拇指反对的投票。
