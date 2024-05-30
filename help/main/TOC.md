@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 6b1761baec8cb1b102943ef7145403ccd2dbf840
+source-git-commit: f3ac14fd144f7b038c0d0f7983bb99353ce250b5
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1091'
 ht-degree: 77%
 
 ---
@@ -246,6 +246,7 @@ ht-degree: 77%
    + 过滤器 {#cja-filters}
       + [过滤器概述](../components/filters/filters-overview.md)
       + [创建过滤器](../components/filters/create-filters.md)
+      + [创建顺序过滤器](../components/filters/seg-sequential-build.md)
       + [共享过滤器](../components/filters/filters-share.md)
       + [标记过滤器](../components/filters/filters-tag.md)
       + [筛选筛选器列表](../components/filters/filters-filter.md)
