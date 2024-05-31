@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 5db0a92a94d9683a414813ac302b49f908c3e324
+source-git-commit: 3acf29b703d52145d8679d60ed664cf794b5ee30
 workflow-type: tm+mt
-source-wordcount: '2201'
-ht-degree: 96%
+source-wordcount: '2255'
+ht-degree: 86%
 
 ---
 
@@ -125,19 +125,20 @@ ht-degree: 96%
 
 | 功能 | 更多详细信息 |
 | --- | --- |
-| 能够组合数据集（例如 Adobe Analytics 报告包） | 通过 Customer Journey Analytics，可从多个报告包组合数据，如同它们是 Adobe Analytics 中的单个报告包一样。 |
+| 能够组合数据集（例如 Adobe Analytics 报告包） | Customer Journey Analytics允许您 [合并数据](/help/connections/combined-dataset.md) (从多个报表包，就好像它们是Adobe Analytics中的单个报表包一样)。 |
 | 适用于任何类型的数据 | Customer Journey Analytics 与 Experience Platform 保存各种数据架构和类型的能力相结合。使用[体验数据模型 (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)，可以采用统一的方式来表示和组织数据，以便进行数据合并和分析。Adobe Analytics 主要专注于 Web 和移动分析数据，并具有一些[数据导入](https://experienceleague.adobe.com/docs/analytics/import/home.html)功能。 |
-| 跨设备分析 | Customer Journey Analytics 支持来自未经身份验证和经过身份验证的会话的特定于设备的数据集的无缝组合。Customer Journey Analytics 可以将历史数据回填到已知设备。在 Analytics 中，此功能仅限于单个报告包和使用设备图时。 |
+| 跨设备分析 | Customer Journey Analytics 支持来自未经身份验证和经过身份验证的会话的特定于设备的数据集的无缝组合。Customer Journey Analytics 可以将历史数据回填到已知设备。在Adobe Analytics中，此功能仅限于单个报表包和设备图的使用。 |
 | 维度增强功能 | Customer Journey Analytics 为使用维度提供了更大的灵活性： <ul><li>**自定义基于数值的维度**：[在数据视图中创建你自己的基于数值的维度](/help/data-views/create-dataview.md#components)。</li><li>**对基于字符串的维度进行排序**：[在自由格式表中按字母顺序对基于字符串的维度进行排序。](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#sort-tables) </li></ul><p>在 Adobe Analytics 中，只有少数内置数值维度可用，并且无法按基于字符串的维度进行排序。</p> |
-| 派生字段 | 通过派生字段，可为数据转换报告时间。可即时组合、更正或创建数据，并以追溯的方式将数据应用于所有报告。 |
-| 增强了安全和隐私选项 - HIPAA 就绪 | Customer Journey Analytics 符合 HIPAA 标准，并提供额外的安全选项，以确保符合相关法规。Adobe Analytics 尚未为 HIPAA 做好准备。 |
-| 试验分析 | Customer Journey Analytics 可以评估来自定义为连接一部分的任何数据源的任何试验的提升度和置信度。通过此评估，您可以了解跨约任何渠道的客户互动之间的因果关系。Analytics 仅限用于通过 A4T 进行的试验分析。 |
-| 预测 | 预测是一种 AI/ML 功能，包括基于 Customer Journey Analytics 中已有的历史数据对时间序列相关数据进行统计预测。预测可以出现在自由格式的表格和折线图可视化中。 |
-| 引导式分析 | 引导式分析是一种报告格式，它使用户可快速地自助满足其数据需求，以使其可快速地获得高质量见解并作出更加以数据为导向的决策。引导式分析是 Customer Journey Analytics 的附加组件 Adobe Product Analytics 的一部分。 |
+| 派生字段 | [派生字段](/help/data-views/derived-fields/derived-fields.md) 允许对您的数据进行报告时间转换。 可即时组合、更正或创建数据，并以追溯的方式将数据应用于所有报告。 |
+| 增强了安全和隐私选项 - HIPAA 就绪 | Customer Journey Analytics已支持HIPAA并提供 [其他安全选项](/help/privacy/cmk.md) 合规性。 Adobe Analytics 尚未为 HIPAA 做好准备。 |
+| 试验分析 | Customer Journey Analytics可以 [评估任何试验的提升和置信度](/help/analysis-workspace/c-panels/experimentation.md) 来自任何定义为连接一部分的数据源。 通过此评估，您可以了解跨约任何渠道的客户互动之间的因果关系。Analytics 仅限用于通过 A4T 进行的试验分析。 |
+| 预测 | [预测](/help/analysis-workspace/c-forecast/forecasting.md) 是一种AI/ML功能，包括基于Customer Journey Analytics中已存在的历史数据对时间序列相关数据的统计预测。 预测可以出现在自由格式的表格和折线图可视化中。 |
+| 引导式分析 | [引导式分析](/help/guided-analysis/overview.md) 是一种报表格式，它允许用户快速自助满足其数据需求，以便他们能够快速获得高质量见解并做出更多数据驱动型决策。 引导式分析是 Customer Journey Analytics 的附加组件 Adobe Product Analytics 的一部分。 |
 | 智能题注 | 智能题注使用先进的机器学习和生成式 AI 为工作区可视化提供有价值的自然语言见解。初始版本为 [Line](/help/analysis-workspace/visualizations/line.md) 可视化提供了自动生成的见解。 |
-| 报表时间转换 | 通过 Customer Journey Analytics 中的数据视图，可进一步解释从某个连接获得的数据。可不更改实施即更改或删除数据、使用子字符串操纵维度、从任意值创建量度或筛选子事件。以非破坏性的方式进行所有这些转换。Adobe Analytics 通过虚拟报表包和自定义会话长度提供有限的功能。 |
+| 报表时间转换 | [数据视图](/help/data-views/data-views.md) Customer Journey Analytics允许您进一步解释来自连接的数据。 可不更改实施即更改或删除数据、使用子字符串操纵维度、从任意值创建量度或筛选子事件。以非破坏性的方式进行所有这些转换。Adobe Analytics 通过虚拟报表包和自定义会话长度提供有限的功能。 |
 | BI扩展 | 此 [BI扩展](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-export/bi-extension) 允许您将CJA直接连接到常用的BI可视化工具，如PowerBI或Tableau。 通过使用此扩展，您的BI报告可以与Analysis Workspace和其他CJA报告界面中看到的内容完全匹配。 这是一种更轻松地获取CJA的BI报告的方法，而无需从原始数据重新创建报告/量度。 |
 | SQL 访问 | 通过使用 Data Distiller 选项，Customer Journey Analytics 可以消除 Adob&#x200B;e 后端处理中收集的数据的限制。您可以使用 SQL 修改数据、创建适合您的业务的值和数据集，并继续探索。Analytics 不支持对其数据进行任何类型的 SQL 访问。 |
+| 拼合 | [身份拼接](/help/stitching/overview.md) （或者更简单地说，拼接）是一项强大的功能，可以提高事件数据集进行跨渠道分析的适用性。 跨渠道分析是Customer Journey Analytics可以处理的主要用例，允许您基于通用标识符（人员ID）无缝组合和运行来自不同渠道的多个数据集的报表。 |
 | 无限量的客户维度和量度 | Customer Journey Analytics 维度是无限的；值可以是数字、文本、对象、列表或它们的组合。维度可以是嵌套的或分层的。 <p>根据对比度，Adobe Analytics 最多支持 75 个 prop 和 250 个 eVar。</p> |
 | 无限量的唯一值 | Customer Journey Analytics 不限制可以在单个维度上报告的唯一值或维度项目的数量。<p> [维度上没有基数限制](/help/components/dimensions/high-cardinality.md)，允许任何唯一值出现并被计算。</p><p>这种方法消除了大规模 Adobe Analytics 实施中可能存在的报告和分析限制，从而产生 [!UICONTROL ”低流量“] 标签。</p><p>在 Customer Journey Analytics 中，可以看到 [!UICONTROL Uniques Exceeded] 标签，但这种情况发生的频率要低得多，可以通过对数据应用筛选条件或细分来缓解。</p> |
 
