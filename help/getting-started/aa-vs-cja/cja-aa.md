@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: e767639d1e6276e4f9a52ce3f1bdb53b7c42ac04
+source-git-commit: 8e6f16acc475fb89c9b9ba50ccef174d3c7b10ea
 workflow-type: tm+mt
-source-wordcount: '2135'
-ht-degree: 99%
+source-wordcount: '2198'
+ht-degree: 96%
 
 ---
 
@@ -136,6 +136,7 @@ ht-degree: 99%
 | 引导式分析 | 引导式分析是一种报告格式，它使用户可快速地自助满足其数据需求，以使其可快速地获得高质量见解并作出更加以数据为导向的决策。引导式分析是 Customer Journey Analytics 的附加组件 Adobe Product Analytics 的一部分。 |
 | 智能题注 | 智能题注使用先进的机器学习和生成式 AI 为工作区可视化提供有价值的自然语言见解。初始版本为 [Line](/help/analysis-workspace/visualizations/line.md) 可视化提供了自动生成的见解。 |
 | 报表时间转换 | 通过 Customer Journey Analytics 中的数据视图，可进一步解释从某个连接获得的数据。可不更改实施即更改或删除数据、使用子字符串操纵维度、从任意值创建量度或筛选子事件。以非破坏性的方式进行所有这些转换。Adobe Analytics 通过虚拟报表包和自定义会话长度提供有限的功能。 |
+| BI扩展 | BI扩展允许您将CJA直接连接到常用的BI可视化工具，例如PowerBI或Tableau，从而让您的BI报告与您在Analysis Workspace和其他CJA报告界面中看到的内容完全匹配。 这是一种更轻松地获取CJA的BI报告的方法，而无需从原始数据重新创建报告/量度。 |
 | SQL 访问 | 通过使用 Data Distiller 选项，Customer Journey Analytics 可以消除 Adob&#x200B;e 后端处理中收集的数据的限制。您可以使用 SQL 修改数据、创建适合您的业务的值和数据集，并继续探索。Analytics 不支持对其数据进行任何类型的 SQL 访问。 |
 | 无限量的客户维度和量度 | Customer Journey Analytics 维度是无限的；值可以是数字、文本、对象、列表或它们的组合。维度可以是嵌套的或分层的。 <p>根据对比度，Adobe Analytics 最多支持 75 个 prop 和 250 个 eVar。</p> |
 | 无限量的唯一值 | Customer Journey Analytics 不限制可以在单个维度上报告的唯一值或维度项目的数量。<p> [维度上没有基数限制](/help/components/dimensions/high-cardinality.md)，允许任何唯一值出现并被计算。</p><p>这种方法消除了大规模 Adobe Analytics 实施中可能存在的报告和分析限制，从而产生 [!UICONTROL ”低流量“] 标签。</p><p>在 Customer Journey Analytics 中，可以看到 [!UICONTROL Uniques Exceeded] 标签，但这种情况发生的频率要低得多，可以通过对数据应用筛选条件或细分来缓解。</p> |
