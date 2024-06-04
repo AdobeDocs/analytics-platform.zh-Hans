@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 24b2cdcc2ab2c56775191950af0603f7bedf102b
-workflow-type: ht
-source-wordcount: '2913'
-ht-degree: 100%
+source-git-commit: ce1a6b631baefaccf7daac5ebaf272bd5c7ed88a
+workflow-type: tm+mt
+source-wordcount: '3027'
+ht-degree: 96%
 
 ---
 
@@ -91,8 +91,9 @@ ht-degree: 100%
    | **[!UICONTROL 键]** | 仅适用于查找数据集。用于查找数据集的键。 |
    | **[!UICONTROL 匹配键]** | 仅适用于查找数据集。某个事件数据集中要按其连接在一起的匹配键。如果此列表为空，则可能尚未添加或配置事件数据集。 |
    | **[!UICONTROL 数据源类型]** | 选择数据源类型。<br/>数据源的类型包括： <ul><li>[!UICONTROL Web 数据]</li><li>[!UICONTROL 移动应用程序数据]</li><li>[!UICONTROL POS 数据]</li><li>[!UICONTROL CRM 数据]</li><li>[!UICONTROL 调查数据]</li><li>[!UICONTROL 呼叫中心数据]</li><li>[!UICONTROL 产品数据]</li><li> [!UICONTROL 帐户数据]</li><li> [!UICONTROL 事务数据]</li><li>[!UICONTROL 客户反馈数据]</li><li> [!UICONTROL 其他]</li></ul>该字段用于调查正在使用的数据源的类型。 |
-   | **[!UICONTROL 导入新数据]** | 如果您想建立持续连接，请 [!UICONTROL 打开] 此选项。当选择任何添加到此连接中的数据集的新数据批次时，它们都会自动流入工作区。 |
-   | **[!UICONTROL 数据集回填]** | 选择&#x200B;**[!UICONTROL 请求回填]**，以回填历史数据。<ul><li>您可以单独回填每个数据集。</li><li>您会优先处理新添加到此连接中数据集的新数据，因此这些新数据的滞后时间最短。</li><li>任何回填（历史）数据的导入速度都会比较慢。历史数据的数量会影响延迟。</li><li>Analytics Source Connector 会为生产沙盒导入最多 13 个月的数据（无论大小）。非生产沙盒的回填期限为 3 个月。</li></ul> |
+   | **[!UICONTROL 导入新数据]** | 如果要创建持续连接，请选择此选项，以便要添加到此连接中数据集的任何新数据批次会自动流入工作区中。可以设置为[!UICONTROL 开]或[!UICONTROL 关。] |
+   | **[!UICONTROL 数据集回填]** | 启用 **[!UICONTROL 回填所有现有数据]** 以确保回填所有现有数据。<br/><br/>选择 **[!UICONTROL 请求回填]** 以回填特定时段的历史数据。 您最多可以定义10个数据集回填时段。<ol><li>通过输入起始和终止数据或使用以下方式选择日期来定义期间 ![日历](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).</li><li>选择 **[!UICONTROL 队列回填]** 将回填添加到列表，或者 **[!UICONTROL 取消]** 以取消。</li></ol>对于每个条目，选择 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 以编辑期间，或选择 ![删除](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) 以删除条目。<br/><br/>在回填中：<ul><li>您可以单独回填每个数据集。</li><li>您会优先处理新添加到此连接中数据集的新数据，因此这些新数据的滞后时间最短。</li><li>任何回填（历史）数据的导入速度都会比较慢。延迟受您拥有多少历史数据的影响。</li><li>Analytics Source Connector 会为生产沙盒导入最多 13 个月的数据（无论大小）。非生产沙盒的回填期限为 3 个月。</li></ul> |
+   | **[!UICONTROL 转换数据集]** | 对于特定的B2B查找数据集，您可以为适当的基于B2B人员的报表方案启用数据集转换。 请参阅 [转换数据集以进行B2B查找](transform-datasets-b2b-lookups.md) 以了解更多信息。 |
    | **[!UICONTROL 回填状态]** | 可能的状态指示符有：<ul><li>成功</li><li>X 回填处理</li><li>关</li></ul> |
    | **[!UICONTROL 数据集 ID]** | 此 ID 是自动生成的。 |
    | **[!UICONTROL 描述]** | 创建此数据集时给出的描述。 |

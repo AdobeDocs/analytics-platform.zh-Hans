@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: bba51d1354d14d6e7eb236b787b419571fea6423
+source-git-commit: ce1a6b631baefaccf7daac5ebaf272bd5c7ed88a
 workflow-type: tm+mt
-source-wordcount: '2995'
+source-wordcount: '3155'
 ht-degree: 14%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 14%
 | [!UICONTROL 数据集] | 显示一个或多个指向作为连接一部分的数据集的链接。 您可以选择数据集超链接以查看连接中的数据集。 如果所选连接中包含更多数据集，请选择 **[!UICONTROL +*x* 更多]** 以显示 **[!UICONTROL 包含的数据集]** 面板。 此面板会显示指向所有数据集的链接以及一个用于搜索属于连接的特定数据集的选项。<p><img src="./assets/datasets-included.png" alt="包含的数据资产" width="400"/><p>选择数据集名称会在Experience PlatformUI中的新选项卡中打开该数据集。 |
 | [!UICONTROL 沙盒] | 显示 [Experience Platform沙盒](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) 此连接从中获取其数据集。 这是您在首次创建连接时选择的沙盒。不能更改。 |
 | [!UICONTROL 所有者] | 创建连接的人员。 |
-| [!UICONTROL 导入新数据] | 显示导入数据集新数据的状态： <p><span style="color:green">●</span>   **[!UICONTROL _x _开启]**，以了解将多少数据集配置为导入新数据，以及&lt;/<p><span style="color:gray">●</span>   **[!UICONTROL _x关_]** 关闭了多少个数据集的新数据导入。 |
+| [!UICONTROL 导入新数据] | 显示导入数据集新数据的状态： <p><span style="color:green">●</span>   **[!UICONTROL _x _开启]**针对配置为导入新数据的数据集，以及<p><span style="color:gray">●</span>   **[!UICONTROL _x关_]** 用于未配置为导入新数据的数据集。 |
 | [!UICONTROL 创建日期] | 创建连接时的时间戳。 |
 | [!UICONTROL 上次修改时间] | 上次更新连接时的时间戳。 |
 | [!UICONTROL 回填数据] | 显示跨数据集的回填数据的状态。<p><span style="color:red">●</span>   **[!UICONTROL _x _回填失败]**要了解跨数据集的失败回填数，<p><span style="color:orange">●</span>   **[!UICONTROL _x _正在处理回填]**有关跨数据集处理回填的数量，<p><span style="color:green">●</span>   **[!UICONTROL _x _回填已完成]**获取数据集的已完成回填数，并且<p><span style="color:grey">●</span>   **[!UICONTROL _关闭_]** 如果未为连接中的数据集定义回填。 |
@@ -149,6 +149,9 @@ ht-degree: 14%
 | [!UICONTROL 数据源类型] | 数据集的源类型。 在创建连接时定义源类型。 |
 | [!UICONTROL 数据集类型] | 此数据集的数据集类型。 类型可以是 [!UICONTROL 事件]， [!UICONTROL 查找]，或 [!UICONTROL 个人资料]. [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#configure-dataset) |
 | 架构 | 数据集所基于的Experience Platform架构。 |
+| [!UICONTROL 导入新数据] | 显示为数据集导入新数据的状态： <p><span style="color:green">●</span>   **[!UICONTROL _x _开启]**如果数据集配置为导入新数据，并且<p><span style="color:gray">●</span>   **[!UICONTROL _x关_]** 如果数据集配置为不导入新的数据导入。 |
+| [!UICONTROL 转换数据] | 显示适用的B2B查找数据集的转换状态。 请参阅 [转换数据集以进行B2B查找](transform-datasets-b2b-lookups.md) 以了解更多信息。<p><span style="color:green">●</span>   **[!UICONTROL _x _开启]**对于启用转换的适用数据集， <p><span style="color:gray">●</span>   **[!UICONTROL _x关_]** 未启用转换的适用数据集，以及<p>**[!UICONTROL 不适用]** 适用于所有其他数据集，不适用于转换。 |
+| [!UICONTROL 回填数据] | 显示数据集的回填数据状态。<p><span style="color:red">●</span>   **[!UICONTROL _x _回填失败]**有关失败的回填数，<p><span style="color:orange">●</span>   **[!UICONTROL _x _正在处理回填]**对于正在处理的回填数，<p><span style="color:green">●</span>   **[!UICONTROL _x _回填已完成]**已完成回填的数量，以及<p><span style="color:grey">●</span>   **[!UICONTROL _关闭_]** 如果未配置回填。 |
 | [!UICONTROL 导入新数据] | 显示为数据集导入新数据的状态： <p><span style="color:green">●</span>   **[!UICONTROL _x _开启]**如果数据集配置为导入新数据，并且<p><span style="color:gray">●</span>   **[!UICONTROL _x关_]** 如果数据集配置为不导入新数据。 |
 | [!UICONTROL 回填数据] | 显示数据集的回填数据状态。<p><span style="color:red">●</span>   **[!UICONTROL _x _回填失败]**有关失败的回填数，<p><span style="color:orange">●</span>   **[!UICONTROL _x _正在处理回填]**对于正在处理的回填数，<p><span style="color:green">●</span>   **[!UICONTROL _x _回填已完成]**已完成回填的数量，以及<p><span style="color:grey">●</span>   **[!UICONTROL _关闭_]** 如果未配置回填。 |
 
@@ -172,6 +175,7 @@ ht-degree: 14%
 | [!UICONTROL 使用连接的数据视图] | 列出使用此连接的所有数据视图。 |
 | [!UICONTROL 导入新数据] | 显示导入数据集新数据的状态： <p><span style="color:green">●</span>   **[!UICONTROL _x _开启]**了解有多少数据集配置为导入新数据，以及<p><span style="color:gray">●</span>   **[!UICONTROL _x关_]** 关闭了多少个数据集的新数据导入。 |
 | [!UICONTROL 回填数据] | 显示数据集的回填数据状态。<p><span style="color:red">●</span>   **[!UICONTROL _x _回填失败]**要了解跨数据集的失败回填数，<p><span style="color:orange">●</span>   **[!UICONTROL _x _正在处理回填]**有关跨数据集处理回填的数量，<p><span style="color:green">●</span>   **[!UICONTROL _x _回填已完成]**获取数据集的已完成回填数，并且<p><span style="color:grey">●</span>   **[!UICONTROL _关闭_]** 如果未为连接中的数据集定义回填。 |
+| 转换数据 | 显示适用的B2B查找数据集的转换状态。 请参阅 [转换数据集以进行B2B查找](transform-datasets-b2b-lookups.md) 以了解更多信息。<p><span style="color:green">●</span>   **[!UICONTROL _x _开启]**用于启用转换的数据集数量。 |
 | [!UICONTROL 创建者] | 显示创建连接的人员的姓名。 |
 | [!UICONTROL 上次修改时间] | 显示上次更改连接的时间戳。 |
 | [!UICONTROL 上次修改人] | 显示上次修改连接的人员。 |

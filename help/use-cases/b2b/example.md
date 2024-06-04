@@ -7,20 +7,20 @@ hide: true
 hidefromtoc: true
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 9c60c00818e82a6ca891ab9d90260922437c6cca
 workflow-type: tm+mt
-source-wordcount: '1755'
-ht-degree: 15%
+source-wordcount: '793'
+ht-degree: 8%
 
 ---
 
 # 示例B2B项目
 
-本文通过示例说明如何在Customer Journey Analytics中设置、配置和报告B2B数据。
+本文介绍了如何在Customer Journey Analytics中设置、配置和报告基于用户档案（人员）级别的B2B数据。
 
 ## 连接
 
-定义您的连接以包含Experience Platform中的所有相关B2B数据集。 这包括Experience Platform中的典型B2B设置所需的重要查找数据集。 请参阅 [添加帐户级别的数据作为查询数据集](b2b.md) 以了解更多信息。
+定义您的连接以包含Experience Platform中的所有相关B2B数据集。 确保包含并转换典型的、基于B2B人员的报表方案所需的所有相关查找数据集。 请参阅 [转换B2B查找数据集](/help/connections/transform-datasets-b2b-lookups.md) 以了解更多信息。
 
 可以考虑添加到连接的数据集：
 
@@ -28,23 +28,34 @@ ht-degree: 15%
 |---|---|---|---|---|
 | B2B活动数据集 | B2B活动模式 | 事件 | XDM ExperienceEvent | ExperienceEvent是所发生情况的事实记录，包括时间点和所涉及的个人身份。 ExperienceEvents可以是显式的（可直接观察的人类行为）或隐式的（在没有直接人类行为的情况下引发），并且无需聚合或解释即可记录。 它们对于时域分析至关重要，因为它们允许观察和分析给定时间段内发生的变化，并比较多个时间段以跟踪趋势。 |
 | B2B人员数据集 | B2B人员模式 | 配置文件 | XDM个人资料 | XDM个人资料形成已识别和部分识别的个人的属性和兴趣的单一表示。 识别度较低的用户档案可能仅包含匿名行为信号，如浏览器Cookie，而识别度较高的用户档案可能包含详细的个人信息，如姓名、出生日期、位置和电子邮件地址。 随着用户档案的发展，它成为个人信息、身份信息、联系人详细信息和个人通信偏好设置的强大存储库。 |
-| B2B营销活动成员数据集 | B2B营销活动成员架构 | 查询 | XDM商业营销活动成员 | XDM商业营销活动成员是一个标准体验数据模型(XDM)类，它描述了与商业营销活动关联的联系人或商机。 |
-| B2B帐户数据集 | B2B帐户架构 | 查询 | XDM业务帐户 | XDM业务帐户是一个标准体验数据模型(XDM)类，可捕获业务帐户的最低要求属性。 |
-| B2B帐户人员关系数据集 | B2B帐户人员关系架构 | 查询 | XDM业务帐户人员关系 | XDM业务帐户人员关系是一个标准体验数据模型(XDM)类，可捕获与业务帐户关联的人员的最低要求属性。 |
-| B2B Opportunity数据集 | B2B机会架构 | 查询 | XDM商业机会 | XDM业务机会是一个标准体验数据模型(XDM)类，可捕获业务机会的最低要求属性。 |
-| B2B机会人员关系数据集 | B2B机会人员关系架构 | 查询 | XDM业务机会人员关系 | XDM业务机会人员关系是一个标准体验数据模型(XDM)类，可捕获与业务机会关联的人员的最低要求属性。 |
-| B2B Campaign数据集 | B2B营销活动模式 | 查询 | XDM商业营销活动 | XDM商业营销活动是一个标准体验数据模型(XDM)类，可捕获商业营销活动的最低要求属性。 |
-| B2B营销列表数据集 | B2B营销列表架构 | 查询 | XDM营销列表 | XDM业务营销列表是一个标准体验数据模型(XDM)类，可捕获营销列表的最低要求属性。 营销列表允许您优先考虑最有可能购买您的产品的潜在客户。 |
+| B2B帐户人员关系数据集 | B2B帐户人员关系架构 | 查询 | XDM 业务帐户人员关系 | XDM业务帐户人员关系是一个标准体验数据模型(XDM)类，可捕获与业务帐户关联的人员的最低要求属性。 |
+| B2B机会人员关系数据集 | B2B机会人员关系架构 | 查询 | XDM 业务机会人员关系 | XDM业务机会人员关系是一个标准体验数据模型(XDM)类，可捕获与业务机会关联的人员的最低要求属性。 |
 | B2B营销列表成员数据集 | B2B营销列表成员架构 | 查询 | XDM营销列表成员 | XDM业务营销列表成员是一个标准的体验数据模型(XDM)类，它描述了与营销列表关联的成员、人员或联系人。 |
+| B2B营销活动成员数据集 | B2B营销活动成员架构 | 查询 | XDM 商业营销活动成员 | XDM商业营销活动成员是一个标准体验数据模型(XDM)类，它描述了与商业营销活动关联的联系人或商机。 |
+<!--
+| B2B Account Dataset | B2B Account Schema | Lookup | XDM Business Account | XDM Business Account is a standard Experience Data Model (XDM) class that captures the minimum required properties of a business account.  |
+| B2B Opportunity Dataset | B2B Opportunity Schema | Lookup | XDM Business Opportunity | XDM Business Opportunity is a standard Experience Data Model (XDM) class that captures the minimum required properties of a business opportunity.  |
+| B2B Campaign Dataset | B2B Campaign Schema | Lookup | XDM Business Campaign | XDM Business Campaign is a standard Experience Data Model (XDM) class that captures the minimum required properties of a business campaign.  |
+| B2B Marketing List Dataset | B2B Marketing List Schema | Lookup | XDM Marketing List | XDM Business Marketing List is a standard Experience Data Model (XDM) class that captures the minimum required properties of a marketing list. Marketing lists allow you to prioritize on prospect clients who are most likely to buy your product.  |
+-->
+
 
 查找架构、配置文件架构和事件架构之间的关系在Experience Platform内的B2B设置中定义。 请参阅中的架构 [Real-time Customer Data Platform B2B版本](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html) 和 [在Real-time Customer Data Platform B2B版本中定义两个架构之间的多对一关系](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html) 以了解更多详细信息。
 
 ![B2B架构之间的关系](assets/classes.png)
 
-对于添加到连接的每个查找数据集，必须使用“编辑数据集”对话框中的键和匹配键显式定义与事件数据集的关系。 例如：
+对于您添加到连接的每个查找数据集，您必须使用明确定义与事件数据集的关系 **[!UICONTROL 键]** 和 **[!UICONTROL 匹配键]** 在 **[!UICONTROL 编辑数据集]** 对话框。 例如：
 
 ![键 — 匹配键](assets/key-matchingkey.png)
 
+明确使用四个架构将人员架构与其他相关架构相关联：帐户、机会、营销活动和营销列表。 这些架构基于以下架构类：
+
+* XDM 业务帐户人员关系
+* XDM 业务机会人员关系
+* XDM 商业营销列表成员
+* XDM 商业营销活动成员
+
+对于每个查找数据集，对于基于此类架构类的架构，您还启用 **[!UICONTROL 转换数据集]** 以确保为基于人员的查找转换数据。 请参阅 [转换数据集以进行B2B查找](/help/connections/transform-datasets-b2b-lookups.md) 以了解更多信息。
 
 下表提供了 [!UICONTROL 人员ID]， [!UICONTROL 键]、和 [!UICONTROL 匹配键] 每个数据集的值。
 
@@ -53,15 +64,12 @@ ht-degree: 15%
 |---|---|---|---|
 | B2B活动数据集 | `personKey.sourceKey` | | |
 | B2B人员数据集 | `b2b.personKey.sourceKey` | | |
-| B2B帐户数据集 | | `accountKey.sourceKey` | *_organizationID*`.interactions.accountKey.sourceKey` |
-| B2B Opportunity数据集 | | `accountKey.sourceKey` | *_organizationID*`.interactions.accountKey.sourceKey` |
-| B2B Campaign数据集 | | `campaignKey.sourceKey` | *_organizationID*`.interactions.campaignKey.sourceKey` |
-| B2B营销列表数据集 | | `listKey.sourceKey` | `listOperations.listKey.sourceKey` |
+| B2B帐户人员数据集 | | `personKey.sourceKey` | `personKey.sourceKey` |
+| B2B Opportunity数据集 | | `personKey.sourceKey` | `personKey.sourceKey` |
+| B2B营销活动成员数据集 | | `personKey.sourceKey` | `personKey.sourceKey` |
+| B2B营销列表数据集 | | `personKey.sourceKey` | `personKey.sourceKey` |
 
 {style="table-layout:auto"}
-
-
-在表中 *_organizationID*`.interaction.*`，是指您添加到B2B活动架构以定义与B2B帐户和B2B机会架构的关系的自定义字段组。 此 `listOperations.listKey.sourceKey` 指的是添加到B2B活动架构的“添加到列表”字段组，用于跟踪人员添加到特定列表的时间。
 
 请参阅 [添加和配置数据集](../../connections/create-connection.md) 有关如何配置数据集设置的更多信息。
 
@@ -70,242 +78,237 @@ ht-degree: 15%
 
 要在构建工作区项目时访问相关的B2B维度和量度，您必须相应地定义数据视图。
 
-本节提供了有关在定义 [组件](../../data-views/create-dataview.md#components) 数据视图中的B2B数据集。
+可将以下组件作为维度添加到数据视图，以确保可根据B2B数据报告基于人员的级别。 为清楚起见，将修改组件名称。
 
-为每个组件提供了名称、架构类型、架构路径，以及有关配置的详细信息（如果适用）。
-
-+++ B2B活动数据集
-
-### 量度
-
-| 组件名称 | 架构数据类型 | 架构路径 | 配置 |
+| 组件名称 | 数据集 | 架构数据类型 | 架构路径 |
 |---|---|---|---|
-| 添加到营销活动 | 字符串 | `eventType` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `leadOperation.addToCampaign` |
-| 添加到机会 | 字符串 | `eventType` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `opportunityEvent.addToOpportunity` |
-| 应用程序已关闭 | 字符串 | `eventType` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `application.close` |
-| 应用程序启动 | 字符串 | `eventType` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `application.launch` |
-| 营销活动流 | 字符串 | `eventType` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** ` leadOperation.changeCampaignStream` |
-| 结账 | 字符串 | `eventType` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `commerce.checkouts` |
-| 转化商机 | 字符串 | `eventType` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `leadOperation.convertLead` |
-| 电子邮件已点击 | 字符串 | `eventType` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `directMarketing.emailClicked` |
-| 电子邮件已送达 | 字符串 | `eventType` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `directMarketing.emailDelivered` |
-| 电子邮件已打开 | 字符串 | `eventType` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `directMarketing.emailOpened` |
-| 已发送电子邮件 | 字符串 | 事件类型 | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `directMarketing.emailSent` |
-| 电子邮件已取消订阅 | 字符串 | `eventType` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `directMarketing.emailUnsubscribed` |
-| 表单已填写 | 字符串 | `eventType` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `web.formFilledOut` |
-| 已开始表单 | 字符串 | `web.fillOutForm.webFormName` | |
-| 商机 | 字符串 | 事件类型 | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `leadOperation.newLead` |
-| 机会已更新 | 字符串 | `eventType` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `opportunityEvent.opportunityUpdated` |
-| 价格 | 双线 | *_organizationID*`.interactions.products.price` |  |
-| 优先级 | 整数 | `leadOperation.changeScore.priority` |  |
-| 生产列表添加 | 字符串 | `eventType` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `commerce.productListAdds.value` |
-| 生产列表打开 | 字符串 | `eventType` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `commerce.productListOpens.value` |
-| 生产视图 | 字符串 | `eventType` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `commerce.productViews.value` |
-| 购买 | 字符串 | `eventType` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `commerce.purchases.value` |
-| 从机会中移除 | 字符串 | `eventType` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `opportunityEvent.removeFromOpportunity` |
-| 保存留待后用 | 字符串 | 事件类型 | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `commerce.productViews.value` |
+| 人员 | B2B活动 | 字符串 | `personID` |
+| 帐户 | B2B帐户人员 | 字符串 | `accountKey.sourceID` |
+| 促销活动 | B2B营销活动成员 | 字符串 | `campaignKey.sourceKey` |
+| 营销列表名称 | B2B营销列表 | 字符串 | `marketingListID` |
+| 机会 | B2B机会人员 | 字符串 | `opportunityKey.sourceID` |
 
-{style="table-layout:auto"}
-
-
-### 维度
-
-| 组件名称 | 架构数据类型 | 架构路径 | 配置 |
-|---|---|---|---|
-| 帐户密钥（源密钥） | 字符串 | *_organizationID*`.Interactions.accountKey.sourceKey` | |
-| 转化状态 | 字符串 | `leadOperation.convertLead.convertedStatus` | |
-| 事件类型 | 字符串 | `eventType` | |
-| 表单名称 | 字符串 | `leadOperation.newLead.formName` | |
-| 标识符 | 字符串 | `_id` | |
-| 已发送通知 | 布尔值 | `leadOperation.convertLead.isSentNotificationEmail` | |
-| 关键字 | 字符串 | `search.keywords` | |
-| 列表Id | 字符串 | `listOperations.listID` | |
-| 列表名称 | 字符串 | `leadOperation.newLead.listName` | |
-| 页面名称 | 字符串 | `web.webPageDetails.name` | |
-| 人员密钥（源密钥） | 字符串 | `personKey.sourceKey` | |
-| 制作者 | 字符串 | productedBy | |
-| 产品名称 | 字符串 | *_organizationID*`.Interactions.products.name` | |
-| 角色 | 字符串 | `opportunityEvent.role` | |
-| 时间戳 | 日期时间 | `timestamp` | 日期时间格式： **[!UICONTROL 天]** |
-| URL | 字符串 | `web.webPageDetails.URL` | |
-| Web窗体名称 | 字符串 | `web.fillOutForm.webFormName` | |
-| 产品URL | 字符串 | *_organizationID*`.Interactions.products.url` | |
-
-{style="table-layout:auto"}
-
-+++
-
-
-+++ B2B人员数据集
-
-
-### 量度
-
-没有量度组件被定义为此数据集的一部分。
-
-
-### 维度
-
-| 组件名称 | 架构数据类型 | 架构路径 | 配置 |
-|---|---|---|---|
-| 上次活动日期 | 日期时间 | `extSourceSystemAudit.lastActivityDate` | 日期时间格式： **[!UICONTROL 天]** |
-| 人员 ID | 字符串 | `personID` | |
-
-{style="table-layout:auto"}
-
-+++
-
-
-+++  B2B Opportunity数据集
-
-### 量度
-
-| 组件名称 | 架构数据类型 | 架构路径 | 配置 |
-|---|---|---|---|
-| 预期收入 | 双线 | `expectedRevenue.amount` | 行为： **[!UICONTROL 值计数]** |
-| 机会金额 | 双线 | `opportunityAmount.amount` | 行为： **[!UICONTROL 值计数]** |
-| 机会阶段 — 已关闭的帐簿 | 字符串 | `opportunityStage` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `Closed - Booked` |
-| 机会阶段 — 潜在客户 | 字符串 | `opportunityStage` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `Prospect` |
-| 机会阶段 — 资格 | 字符串 | `opportunityStage` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `Opportunity Qualification` |
-| 机会阶段 — 解决方案定义 | 字符串 | `opportunityStage` | **[!UICONTROL 设置包括/排除值]**<br/>**[!UICONTROL 区分大小写]**<br/>匹配：**[!UICONTROL &#x200B;如果满足所有条件]**<br/>标准： **[!UICONTROL 等于]** `Solution Definition and Validation` |
-
-{style="table-layout:auto"}
-
-
-### 维度
-
-| 组件名称 | 架构数据类型 | 架构路径 | 配置 |
-|---|---|---|---|
-| 已关闭标志 | 布尔值 | `isClosed` | |
-| 公司标识 | 字符串 | `opportunityID` | |
-| 预测类别 | 字符串 | `forecastCategoryName` | |
-| 上次活动日期 | 日期时间 | `lastActivityDate` | 日期时间格式： **[!UICONTROL 天]** |
-| 商机来源 | 字符串 | `leadSource` | |
-| 机会名称 | 字符串 | `opportunityName` | |
-| 机会状态 | 字符串 | `opportunityStage` | |
-| 赢单标志 | 布尔值 | `isWon` | |
-
-{style="table-layout:auto"}
-
-+++
-
-
-+++ B2B Campaign数据集
-
-### 量度
-
-| 组件名称 | 架构数据类型 | 架构路径 | 配置 |
-|---|---|---|---|
-| 促销活动成本 | 双线 | `actualCost.amount` | |
-
-{style="table-layout:auto"}
-
-
-### 维度
-
-| 组件名称 | 架构数据类型 | 架构路径 | 配置 |
-|---|---|---|---|
-| 营销活动 ID | 字符串 | `campaignID` | |
-| 营销活动名称 | 字符串 | `campaignName` | |
-| 促销活动开始日期 | 日期时间 | `campaignStartDate` | 日期时间格式： **[!UICONTROL 天]** |
-| 渠道名称 | 字符串 | `channelName` | |
-| 父营销活动ID | 字符串 | `parentCampaignID` | |
-
-{style="table-layout:auto"}
-
-+++
-
-
-
-+++ B2B帐户数据集
-
-### 量度
-
-| 组件名称 | 架构数据类型 | 架构路径 | 配置 |
-|---|---|---|---|
-| 年收入 | 双线 | `accountOrganization.annualRevenue.amount` | |
-| 员工数 | 整数 | `accountOrganization.numberOfEmployees` | |
-
-{style="table-layout:auto"}
-
-
-### 维度
-
-| 组件名称 | 架构数据类型 | 架构路径 | 配置 |
-|---|---|---|---|
-| 帐户标识符 | 字符串 | `accountID` | |
-| 帐户类型 | 字符串 | `accountType` | |
-| 城市 | 字符串 | `accountBillingAddress.city` | |
-| 国家/地区 | 字符串 | `accountBillingAddress.country` | |
-| 行业 | 字符串 | `accountOrganization.industry` | |
-| 区域 | 字符串 | `accountBillingAddress.region` | |
-| 源 ID | 字符串 | `accountKey.sourceID` | |
-| 源实例ID | 字符串 | `accountKey.sourceInstanceID` | |
-| 源密钥 | 字符串 | `accountKey.sourceKey` | |
-| 源类型 | 字符串 | `accountKey.sourceType` | |
-
-{style="table-layout:auto"}
-
-+++
-
-
-+++ B2B营销活动成员数据集
-
-### 量度
-
-| 组件名称 | 架构数据类型 | 架构路径 | 配置 |
-|---|---|---|---|
-| 已退回 | 长型 | *_organizationID*`.campaignBounced` | 行为： **[!UICONTROL 值计数]** |
-| 已点击 | 长型 | *_organizationID*`.campaignClicked` | 行为： **[!UICONTROL 值计数]** |
-| 已打开 | 长型 | *_organizationID*`.CampaignOpened` | 行为： **[!UICONTROL 值计数]** |
-| 已发送 | 长型 | *_organizationID*`.campaignSent` | 行为： **[!UICONTROL 值计数]** |
-| 已订阅 | 长型 | *_organizationID*`.campaignSubscribed` | 行为： **[!UICONTROL 值计数]** |
-| 网络研讨会注册 | 长型 | *_organizationID*`.Registrations` | 行为： **[!UICONTROL 值计数]** |
-
-{style="table-layout:auto"}
-
-### 维度
-
-| 组件名称 | 架构数据类型 | 架构路径 | 配置 |
-|---|---|---|---|
-| 营销活动 ID | 字符串 | `campaignID` | |
-| 营销活动成员ID | 字符串 | `campaignMemberID` | |
-| 营销活动成员状态 | 字符串 | `memberStatus` | |
-| 营销活动成员状态原因 | 字符串 | `memberStatusReason` | |
-| 创建日期 | 日期时间 | `extSourceSystemAudit.createdDate` | 日期时间格式： **[!UICONTROL 天]** |
-| 首次响应日期 | 字符串 | `firstRespondedDate` | 日期时间格式： **[!UICONTROL 天]** |
-| 已取得成功 | 布尔值 | `hasReachedSuccess` | |
-| 已响应 | 布尔值 | `hasResponded` | |
-| 上次状态 | 字符串 | `lastStatus` | |
-| 上次更新日期 | 日期时间 | `extSourceSystemAudit.lastUpdatedDate` | 日期时间格式： **[!UICONTROL 天]** |
-| 成员资格日期 | 日期时间 | `membershipDate` | 日期时间格式： **[!UICONTROL 天]** |
-| 培养节奏 | 字符串 | `nurtureCadence` | |
-| 培养轨迹名称 | 字符串 | `nurtureTrackName` | |
-| 人员 ID | 字符串 | `personID` | |
-| 已达到成功日期 | 日期时间 | `reachedSuccessDate` | 日期时间格式： **[!UICONTROL 天]** |
-| 网络研讨会注册ID | 字符串 | `webinarRegistrationID` | |
-| 网络研讨会注册URL | 字符串 | `webinarConfirmationUrl` | |
-| isExhausted | 布尔值 | isExhausted | |
-
-{style="table-layout:auto"}
-
-+++
 
 <!--
-### B2B Marketing List Member dataset
+This section provides recommendations and suggestions on what dimensions and metrics to include when defining the [components](../../data-views/create-dataview.md#components) for B2B datasets in your data view.
 
-The B2B Marketing List Member dataset contains member of marketing lists.
+For each component, the name, schema type, schema path, and (when applicable) details about the configuration are provided.
+
+
++++ B2B Activity dataset
+
+### Metrics
+
+| Component Name | Schema data type | Schema path | Configuration |
+|---|---|---|---|
+| Add To Campaign | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `leadOperation.addToCampaign` |
+| Add To Opportunity | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `opportunityEvent.addToOpportunity` |
+| Application Closed | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `application.close` |
+| Application Launch | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `application.launch` |
+| Campaign Stream | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** ` leadOperation.changeCampaignStream` |
+| Checkout | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `commerce.checkouts` |
+| Convert Lead | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `leadOperation.convertLead` |
+| Email Clicked | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `directMarketing.emailClicked` |
+| Email Delivered | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `directMarketing.emailDelivered` |
+| Email Opened | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `directMarketing.emailOpened` |
+| Email Sent | String | eventType | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `directMarketing.emailSent` |
+| Email Unsubscribed | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `directMarketing.emailUnsubscribed` |
+| Form Filled Out | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `web.formFilledOut` |
+| Form Started | String | `web.fillOutForm.webFormName` | |
+| Leads | String | eventType | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `leadOperation.newLead` |
+| Opportunity Updated | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `opportunityEvent.opportunityUpdated` |
+| Price | Double | *_organizationID*`.interactions.products.price` |  |
+| Priority | Integer | `leadOperation.changeScore.priority` |  |
+| Prod List Add | String | `eventType` |  **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `commerce.productListAdds.value` |
+| Prod List Open | String | `eventType` |  **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `commerce.productListOpens.value` |
+| Prod View | String | `eventType` |  **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `commerce.productViews.value` |
+| Purchases | String | `eventType` |  **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `commerce.purchases.value` |
+| Remove From Opportunity | String | `eventType` |  **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `opportunityEvent.removeFromOpportunity` |
+| Save for Laters | String | eventType |  **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `commerce.productViews.value` |
+
+{style="table-layout:auto"}
+
+
+### Dimensions
+
+| Component Name | Schema data type | Schema path | Configuration |
+|---|---|---|---|
+| Account Key (Source Key) | String | *_organizationID*`.Interactions.accountKey.sourceKey` | |
+| Converted Status | String | `leadOperation.convertLead.convertedStatus` | |
+| Event Type | String | `eventType` | |
+| Form Name | String | `leadOperation.newLead.formName` | |
+| Identifier | String | `_id` | |
+| Is Sent Notification | Boolean | `leadOperation.convertLead.isSentNotificationEmail` | |
+| Keywords | String | `search.keywords` | |
+| List ID | String | `listOperations.listID` | |
+| List Name | String | `leadOperation.newLead.listName` | |
+| Page Name | String | `web.webPageDetails.name` | |
+| Person Key (Source Key) | String | `personKey.sourceKey` | |
+| Produced By | String | producedBy | |
+| Product Name | String | *_organizationID*`.Interactions.products.name` | |
+| Role | String | `opportunityEvent.role` | | 
+| Timestamp | Date-time | `timestamp` | Date-Time format: **[!UICONTROL Day]** |
+| URL | String | `web.webPageDetails.URL` | |
+| Web Form Name | String | `web.fillOutForm.webFormName` | |
+| Product URL | String | *_organizationID*`.Interactions.products.url` | |
+
+{style="table-layout:auto"}
+
++++
+
+
++++ B2B Person dataset
+
+
+### Metrics
+
+No metric components are defined as part of this dataset.
+
+
+### Dimensions
+
+| Component Name | Schema data type | Schema path | Configuration |
+|---|---|---|---|
+| Last Activity Date | Date-time | `extSourceSystemAudit.lastActivityDate` | Date-Time format: **[!UICONTROL Day]** |
+| Person ID | String | `personID` | |
+
+{style="table-layout:auto"}
+
++++
+
++++ B2B Account Person dataset
+
+### Metrics
+
+| Component Name | Schema data type | Schema path | Configuration |
+|---|---|---|---|
+| Annual Revenue | Double | `accountOrganization.annualRevenue.amount` | |
+| Number of employees | Integer | `accountOrganization.numberOfEmployees` | |
+
+{style="table-layout:auto"}
+
+
+### Dimensions
+
+| Component Name | Schema data type | Schema path | Configuration |
+|---|---|---|---|
+| Acount | String | `accountKey.sourceID` | 
+
+{style="table-layout:auto"}
+
+| Account Identifier | String | `accountID` | |
+| Account Type | String | `accountType` | |
+| City | String | `accountBillingAddress.city` | |
+| Country | String | `accountBillingAddress.country` | |
+| Industry | String | `accountOrganization.industry` | |
+| Region | String | `accountBillingAddress.region` | |
+| Source ID | String | `accountKey.sourceID` | |
+| Source Instance ID | String | `accountKey.sourceInstanceID` | |
+| Source Key | String | `accountKey.sourceKey` | |
+| Source Type | String | `accountKey.sourceType` | |
+
+
++++
+
++++  B2B Opportunity Person dataset
+
+### Metrics
+
+| Component Name | Schema data type | Schema path | Configuration |
+|---|---|---|---|
+| Expected Revenue | Double | `expectedRevenue.amount` | Behavior: **[!UICONTROL Count values]** |
+| Opportunity Amount | Double | `opportunityAmount.amount` | Behavior: **[!UICONTROL Count values]** |
+| Opportunity Stage - Closed Book | String | `opportunityStage` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `Closed - Booked` |
+| Opportunity Stage - Prospect | String | `opportunityStage` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `Prospect` |
+| Opportunity Stage - Qualification | String | `opportunityStage` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `Opportunity Qualification` |
+| Opportunity Stage - Solution Definition | String | `opportunityStage` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `Solution Definition and Validation` |
+
+{style="table-layout:auto"}
+
+
+### Dimensions
+
+| Component Name | Schema data type | Schema path | Configuration |
+|---|---|---|---|
+| Closed Flag | Boolean | `isClosed` | |
+| Company ID | String | `opportunityID` | |
+| Forecast Category | String | `forecastCategoryName` | |
+| Last Activity Date | Date-time | `lastActivityDate` | Date-time format: **[!UICONTROL Day]** |
+| Lead Source | String | `leadSource` | |
+| Opportunity Name | String | `opportunityName` | | 
+| Opportunity Status | String | `opportunityStage` | |
+| Won Flag | Boolean | `isWon` | |
+
+{style="table-layout:auto"}
+
++++
+
+
++++ B2B Campaign Member dataset
+
+### Metrics
+
+| Component Name | Schema data type | Schema path | Configuration |
+|---|---|---|---|
+| Bounced | Long | *_organizationID*`.campaignBounced` | Behavior: **[!UICONTROL Count values]** |
+| Clicked | Long | *_organizationID*`.campaignClicked` | Behavior: **[!UICONTROL Count values]** |
+| Opened | Long | *_organizationID*`.CampaignOpened` | Behavior: **[!UICONTROL Count values]** |
+| Sent | Long | *_organizationID*`.campaignSent` | Behavior: **[!UICONTROL Count values]** |
+| Subscribed | Long | *_organizationID*`.campaignSubscribed` | Behavior: **[!UICONTROL Count values]** |
+| Webinar Registrations | Long | *_organizationID*`.Registrations` | Behavior: **[!UICONTROL Count values]** |
+
+{style="table-layout:auto"}
+
+### Dimensions
+
+| Component Name | Schema data type | Schema path | Configuration |
+|---|---|---|---|
+| Campaign ID | String | `campaignID` | |
+| Campaign Member ID | String | `campaignMemberID` | |
+| Campaign Member Status | String | `memberStatus` | |
+| Campaign Member Status Reason | String | `memberStatusReason` | |
+| Created Date | Date-time | `extSourceSystemAudit.createdDate` | Date-time format: **[!UICONTROL Day]** |
+| First Responded Date | String | `firstRespondedDate` | Date-time format: **[!UICONTROL Day]** |
+| Has Reached Success | Boolean | `hasReachedSuccess` | |
+| Has Responded | Boolean | `hasResponded` | |
+| Last Status | String | `lastStatus` | |
+| Last Updated Date | Date-time | `extSourceSystemAudit.lastUpdatedDate` | Date-time format: **[!UICONTROL Day]** |
+| Membership Date | Date-time | `membershipDate` | Date-time format: **[!UICONTROL Day]** |
+| Nurture Cadence | String | `nurtureCadence` | |
+| Nurture Track Name | String | `nurtureTrackName` | |
+| Person ID | String | `personID` | |
+| Reached Success Date | Date-time | `reachedSuccessDate` | Date-time format: **[!UICONTROL Day]** |
+| Webinar Registration ID | String | `webinarRegistrationID` | |
+| Webinar Registration URL | String | `webinarConfirmationUrl` | |
+| isExhausted | Boolean | isExhausted | |
+
+{style="table-layout:auto"}
+
++++
+
++++ B2B Marketing List Member dataset
+
+### Metrics
+
+### Dimensions
+
++++
 
 -->
 
 ## 工作区
 
-通过正确定义的组件，您现在可以在工作区项目中构建特定的B2B可视化图表。
+在数据视图中正确定义组件后，您现在可以在工作区项目中构建特定的B2B报告和可视化图表。
 
-以下是依赖于上述连接和数据视图的示例项目。 有关更多详细信息，请参阅每个可视化图表的描述。
+以下是依赖于上述连接和数据视图的示例项目。
 
-+++ 示例项目
+![示例项目](assets/sample-project.png)
 
-![可视化图表](assets/visualizations.png)
+<!-- See the descriptions for each visualization for more details.
+
++++ Example project
+
+![Visualizations](assets/visualizations.png)
 
 +++
+-->
