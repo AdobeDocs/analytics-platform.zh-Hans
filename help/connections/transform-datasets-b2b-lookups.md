@@ -4,10 +4,11 @@ description: 描述如何转换特定B2B查找架构的数据集中的数据
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: ffa57c19174bf1618957efe7191c8486c8e3a900
+exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
+source-git-commit: 6e50e9341c2eedd6e4882cc3eb943cbcb8dfc332
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 5%
+source-wordcount: '327'
+ht-degree: 0%
 
 ---
 
@@ -17,10 +18,10 @@ ht-degree: 5%
 
 此转换仅适用于包含B2B查找架构数据的数据集，它基于以下类：
 
-* XDM 业务帐户人员关系
-* XDM 业务机会人员关系
-* XDM 商业营销列表成员
-* XDM 商业营销活动成员
+* [XDM业务帐户人员关系](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [XDM业务机会人员关系](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [XDM商业营销列表成员](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [XDM商业营销活动成员](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 要为此类数据集启用转换，请执行以下操作：
 
