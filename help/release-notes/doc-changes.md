@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: dcce03959018a34362d8f6cc1d3f44d4ffde916b
+source-git-commit: 4396f6046f8a7aa27f04d2327c5b3c0ee967774b
 workflow-type: tm+mt
-source-wordcount: '3667'
-ht-degree: 74%
+source-wordcount: '3711'
+ht-degree: 73%
 
 ---
 
@@ -19,6 +19,9 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 
 | 功能 | 描述 |
 | --- | --- |
+| **2024 年 6 月** | |
+| 转换数据集以进行B2B查找 | 有关如何支持的文档 [对B2B数据进行基于人员的查找](/help/connections//transform-datasets-b2b-lookups.md) （包括客户、机会、营销列表和营销活动），需要转换B2B查找数据集。 |
+| 派生字段函数模板 | 相关文档 [派生字段的其他函数模板](/help/data-views/derived-fields/derived-fields.md#function-templates). |
 | **2024 年 5 月** | |
 | Target集成 | 已添加 [文章到Adobe集成部分](/help/integrations/cja4t.md) 介绍如何将Target与Customer Journey Analytics集成。 |
 | 使用组织策略限制将Customer Journey Analytics报表导出到Google Cloud Platform时需要的信息 | 已将Adobe拥有的Google Cloud Platform组织ID添加到 [配置云导出位置](/help/components/exports/cloud-export-locations.md) 用于将Customer Journey Analytics报表导出到Google Cloud Platform的文档。 <p>仅当组织在 Google Cloud Platform 中使用[组织策略约束](https://cloud.google.com/storage/docs/org-policy-constraints)时才需要此信息。</p> |

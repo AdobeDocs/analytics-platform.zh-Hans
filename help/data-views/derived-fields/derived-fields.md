@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: d9ec1dfe99ad77f7b995ef97b71eb31f28eafd35
+source-git-commit: 4396f6046f8a7aa27f04d2327c5b3c0ee967774b
 workflow-type: tm+mt
-source-wordcount: '5987'
-ht-degree: 13%
+source-wordcount: '6717'
+ht-degree: 12%
 
 ---
 
@@ -160,13 +160,193 @@ ht-degree: 13%
 
 ### 营销渠道
 
-此模板配置为使用 [Url分析](#dnl-url-parse) 和 [案例条件](#dnl-case-when) 多次函数，以从URL中获取适当的值。 然后，对这些值应用逻辑以将URL与特定营销渠道关联。
+此函数模板使用规则集合来构建营销渠道。
 
 +++ 详细信息
 
 要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 请参阅 [函数引用](#function-reference) 以了解更多信息。
 
-![营销渠道模板规则生成器的屏幕截图](assets/marketing-channel-template.png)
+![营销渠道模板规则生成器的屏幕截图](assets/function-template-marketing-channel-template.png)
+
++++
+
+### 退信数
+
+此函数模板使用规则集合来标识网站退回。
+
++++ 详细信息
+
+要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 请参阅 [函数引用](#function-reference) 以了解更多信息。
+
+![退回规则生成器的屏幕截图](assets/function-template-bounces.png)
+
++++
+
+### 多维度合并
+
+此函数模板将两个值合并为一个。
+
++++ 详细信息
+
+要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 请参阅 [函数引用](#function-reference) 以了解更多信息。
+
+![多Dimension组合规则生成器的屏幕截图](assets/function-template-multi-dimension-combine.png)
+
++++
+
+### 简单易记的数据集名称
+
+此函数模板提供了一个可读的数据集名称。
+
++++ 详细信息
+
+要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 请参阅 [函数引用](#function-reference) 以了解更多信息。
+
+![友好数据集名称规则生成器的屏幕截图](assets/function-template-friendly-dataset-name.png)
+
++++
+
+### URL 中的页面名称
+
+此函数模板创建一个简单的页面名称。
+
++++ 详细信息
+
+要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 请参阅 [函数引用](#function-reference) 以了解更多信息。
+
+![URL规则生成器中的页面名称屏幕截图](assets/function-template-page-name-from-url.png)
+
++++
+
+### 节假日
+
+此函数模板对每年的关键时间进行分类。
+
++++ 详细信息
+
+要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 请参阅 [函数引用](#function-reference) 以了解更多信息。
+
+![Holiday Season规则生成器的屏幕截图](assets/function-template-holiday-season.png)
+
++++
+
+### 每月目标
+
+此函数模板可设置自定义的每月目标。
+
++++ 详细信息
+
+要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 请参阅 [函数引用](#function-reference) 以了解更多信息。
+
+![每月目标规则生成器的屏幕截图](assets/function-template-monthly-goals.png)
+
++++
+
+### 获取带分隔符的列表中的所有值
+
+此函数模板将受限列表转换为数组。
+
++++ 详细信息
+
+要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 请参阅 [函数引用](#function-reference) 以了解更多信息。
+
+![获取分隔列表规则生成器中的所有值的屏幕截图](assets/function-template-get-all-values-in-delimited-list.png)
+
++++
+
+### 获取带分隔符的列表中的第一个值
+
+此函数模板获取分隔列表中的第一个值。
+
++++ 详细信息
+
+要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 请参阅 [函数引用](#function-reference) 以了解更多信息。
+
+![在分隔列表规则生成器中获取第一个值的屏幕截图](assets/function-template-get-first-value-in-delimited-list.png)
+
++++
+
+### 获取带分隔符的列表中的最后一个值
+
+此函数模板获取分隔列表中的最后一个值。
+
++++ 详细信息
+
+要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 请参阅 [函数引用](#function-reference) 以了解更多信息。
+
+![分隔列表规则生成器中的获取最后一个值的屏幕截图](assets/function-template-get-last-value-in-delimited-list.png)
+
++++
+
+### 域名
+
+此函数模板使用正则表达式提取域名。
+
++++ 详细信息
+
+要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 请参阅 [函数引用](#function-reference) 以了解更多信息。
+
+![域名规则生成器的屏幕截图](assets/function-template-domain-name.png)
+
++++
+
+### 获取查询字符串参数
+
+此函数模板可提取查询字符串值。
+
++++ 详细信息
+
+要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 请参阅 [函数引用](#function-reference) 以了解更多信息。
+
+![获取查询字符串参数规则生成器的屏幕截图](assets/function-template-get-query-string-parameter.png)
+
++++
+
+### 转换字段
+
+此函数模板可将报告从一个字段转移到另一个字段。
+
++++ 详细信息
+
+要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 请参阅 [函数引用](#function-reference) 以了解更多信息。
+
+![过渡字段规则生成器的屏幕截图](assets/function-template-transition-field.png)
+
++++
+
+### 简单易用的机器人检测
+
+此函数模板实现了轻量级机器人识别。
+
++++ 详细信息
+
+要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 请参阅 [函数引用](#function-reference) 以了解更多信息。
+
+![简单机器人检测规则生成器的屏幕截图](assets/function-template-simple-bot-detection.png)
+
++++
+
+### 退出链接
+
+此函数模板可识别会话中最后点击的链接。
+
++++ 详细信息
+
+要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 请参阅 [函数引用](#function-reference) 以了解更多信息。
+
+![退出链接规则生成器的屏幕截图](assets/function-template-exit-link.png)
+
++++
+
+### 下载链接
+
+此函数模板可标记常见的下载链接。
+
++++ 详细信息
+
+要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 请参阅 [函数引用](#function-reference) 以了解更多信息。
+
+![下载链接规则生成器的屏幕截图](assets/function-template-download-link.png)
 
 +++
 
