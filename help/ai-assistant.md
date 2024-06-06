@@ -4,9 +4,9 @@ title: Adobe Customer Journey Analytics的人工智能助手
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
-source-git-commit: c3fbf86e06e47583165a661683bc7490ecd1b17f
+source-git-commit: 3ed6eabae8607a10920c8917a818f0497b337893
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
@@ -68,3 +68,5 @@ Customer Journey Analytics范围之外的问题，例如有关Adobe Target和Ado
 1. （可选）要显示源，请单击 **[!UICONTROL 显示源]**，并显示通知答案的一个或多个文档源。
 
 1. （可选）您还可以对任何给定答案的效用提供大拇指支持或大拇指反对的投票。
+
+1. （可选）您可以标记不适当或有害内容的答案。
