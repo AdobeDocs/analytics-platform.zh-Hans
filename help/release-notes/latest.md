@@ -3,16 +3,16 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 7e2a372d6e1fcbcfc26a63ddc804a592d6ee1725
+source-git-commit: c3fbf86e06e47583165a661683bc7490ecd1b17f
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '707'
 ht-degree: 99%
 
 ---
 
 # 当前的 Adobe Customer Journey Analytics 发行说明（2024 年 5 月）
 
-**上次更新**：2024年6月4日
+**上次更新**：2024年6月6日
 
 这些发行说明涵盖 2024 年 5 月 15 日至 2024 年 6 月的发行期。Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
@@ -20,9 +20,9 @@ ht-degree: 99%
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Customer Journey Analytics 的 AI 助手** | 允许您在 Customer Journey Analytics UI 中提出自然语言问题，并根据 Customer Journey Analytics 文档获取答案。[了解详情](/help/ai-assistant.md) | | 2024年6月6日 |
 | **BI 扩展** | BI 扩展允许 SQL 访问您在 Customer Journey Analytics 中定义的数据视图。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/bi-extension) | | 2024 年 5 月 15 日 |
 | **Audiences 已发布到 Experience Platform 中的新“Audiences”部分** | 从 Customer Journey Analytics 中发布的受众现在可以在 Adobe Experience Platform 的新“受众”部分中找到。<p>此前，从 Customer Journey Analytics 发布的受众可在 Experience Platform 的“细分”部分下找到。</p><p>此改进具有以下优点：</p><ul><li>受众出现在 Experience Platform 前不再有 1 小时的延迟；它们在发布后几秒钟即可使用。</li><li>可以使用 Experience Platform 中“来源”列对受众进行排序，该列显示了最初发布受众的应用程序。</li><li>Experience Platform 中的筛选和排序选项使您能够更快地找到相关受众。</li></ul> <p>（更新文档链接见下文）</p> |  | 2024 年 5 月下旬至 6 月上旬 |
-| **Customer Journey Analytics 的 AI 助手** | 允许您在 Customer Journey Analytics UI 中提出自然语言问题，并根据 Customer Journey Analytics 文档获取答案。 <p>（更新文档链接见下文）</p> | | 2024年6月6日 |
 | **流媒体：使用 web SDK 将 web 数据发送到 Adobe Experience Platform Edge Network** | 您现在可以使用 Adobe Experience Platform Web SDK 将流媒体 Web 数据发送到 Adobe Experience Platform Edge Network，从而可以构建更加个性化的营销活动并提供更加个性化的内容，从而生成更多可供报告的跟踪数据。<p>此增强功能为所有平台解决方案（例如 Customer Journey Analytics、RT-CDP、AJO 和事件转发）的 Web 实现提供了统一的收集方法。以前，将流媒体网络数据发送到 Edge Network 的唯一方法是使用 Edge Network API。 <p>[了解详情](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/edge-recommended/media-edge-sdk/edge-web-sdk)</p> | | 2024 年 5 月 29 日 |
 | **派生字段 - 数学函数** | 允许您在数据视图中执行简单的数学运算符来回答有关用户的问题。例如，您可以将产品、保修和运输收入结合起来。 <p>（更新文档链接见下文）</p> | | 2024 年 6 月 5 日 |
 | **共享用于导出和导入的账户和位置** | 用户现在可以将他们创建的帐户和位置提供给其组织内的所有用户。只有帐户和位置所有者以及系统管理员可以编辑和删除帐户和位置。<p>以前，帐户和位置只能由创建它们的用户使用。</p><p>当用户配置云导出帐户以及配置云导出位置时，这些设置适用。</p> <p>（更新文档链接见下文）</p> | 2024 年 6 月 12 日 | 2024 年 6 月 30 日 |
