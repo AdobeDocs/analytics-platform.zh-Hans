@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 4396f6046f8a7aa27f04d2327c5b3c0ee967774b
+source-git-commit: 4d3d53ecb44a69bcf3f46ca0c358ef794a437add
 workflow-type: tm+mt
-source-wordcount: '6717'
+source-wordcount: '7147'
 ht-degree: 12%
 
 ---
@@ -435,7 +435,7 @@ ht-degree: 12%
 |  | `https://site.com/?cid=em_12345678` |
 | `https://google.com` | `https://site.com/?cid=ps_abc098765` |
 | `https://google.com` | `https://site.com/?cid=em_765544332` |
-| `https://google.com` | |
+| `https://google.com` |  |
 
 {style="table-layout:auto"}
 
@@ -1067,6 +1067,78 @@ Customer Journey Analytics使用以下默认容器模型：
 
 +++
 
+
+<!-- NEXT OR PREVIOUS -->
+
+### 下一个或上一个
+
+将某个字段作为输入，并解析该字段在会话或使用的范围内的下一个或上一个值。 这仅适用于“访问”和“事件”表格字段。
+
++++ 详细信息
+
+## 规范 {#prevornext-io}
+
+| 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
+|---|---|---|---|---|
+| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 字段]：</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul><li>[!UICONTROL 方法]：<ul><li>上一个值</li><li>下一个值</li></ul></li><li>[!UICONTROL 范围]：<ul><li>人员</li><li>会话</li></ul></li><li>[!UICONTROL 索引]：<ul><li>数值</li></ul><li>[!UICONTROL 包括重复项]：<ul><li>布尔值</li></ul></li><li>[!UICONTROL 包括“无值”]：<ul><li>布尔值</li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段3个函数</p> | <p>新建派生字段</p> |
+
+{style="table-layout:auto"}
+
+## 用例 {#prevornext-uc1}
+
+您想要了解 **下一个** 或 **上一个** 值是您收到的数据，考虑重复值。
+
+### 数据 {#prevornext-uc1-databefore}
+
+**示例1 — 处理包含重复项**
+
+| 已接收数据 | 下一个值<br/>会话<br/>索引= 1<br/>包含重复项 | 下一个值<br/>会话<br/>索引= 1<br/>NOT Include重复 | 上一个值<br/>会话<br/>索引= 1<br/>包含重复项 | 上一个值<br/>会话<br/>索引= 1<br/>NOT Include重复 |
+|---|---|---|---|---|
+| 主页 | 主页 | 搜索 | *无值* | *无值* |
+| 主页 | 搜索 | 搜索 | 主页 | *无值* |
+| 搜索 | 搜索 | 产品详细信息 | 主页 | 主页 |
+| 搜索 | 产品详细信息 | 产品详细信息 | 搜索 | 主页 |
+| 产品详细信息 | 搜索 | 搜索 | 搜索 | 搜索 |
+| 搜索 | 产品详细信息 | 产品详细信息 | 产品详细信息 | 产品详细信息 |
+| 产品详细信息 | 搜索 | 搜索 | 搜索 | 搜索 |
+| 搜索 | 搜索 | *无值* | 产品详细信息 | 产品详细信息 |
+| 搜索 | *无值* | *无值* | 搜索 | 产品详细信息 |
+
+{style="table-layout:auto"}
+
+**示例2 — 处理将在收到的数据中包含具有空白值的重复项**
+
+| 已接收数据 | 下一个值<br/>会话<br/>索引= 1<br/>包含重复项 | 下一个值<br/>会话<br/>索引= 1<br/>NOT Include重复 | 上一个值<br/>会话<br/>索引= 1<br/>包含重复项 | 上一个值<br/>会话<br/>索引= 1<br/>NOT Include重复 |
+|---|---|---|---|---|
+| 主页 | 主页 | 搜索 | *无值* | *无值* |
+| 主页 | 主页 | 搜索 | 主页 | *无值* |
+| 主页 | 搜索 | 搜索 | 主页 | *无值* |
+| 搜索 | 搜索 | 产品详细信息 | 主页 | 主页 |
+|   |   |   |   |   |
+| 搜索 | 搜索 | 产品详细信息 | 搜索 | 主页 |
+| 搜索 | 产品详细信息 | 产品详细信息 | 搜索 | 主页 |
+| 产品详细信息 | *无值* | *无值* | 搜索 | 搜索 |
+|   |   |   |   |   |
+
+{style="table-layout:auto"}
+
+### 派生字段 {#prevnext-uc1-derivedfield}
+
+您定义 `Next Value` 或 `Previous value` 派生字段。 您使用 [!UICONTROL 下一个或上一个] 函数来定义一个规则，用于选择 [!UICONTROL 已接收数据] 字段，选择 [!UICONTROL 下一个值] 或 [!UICONTROL 上一个值] 作为 [!UICONTROL 方法]， [!UICONTROL 会话] 作为范围，并设置值 [!UICONTROL 索引] 到 `1`.
+
+![合并字段规则的屏幕截图](assets/prevnext-next.png)
+
+## 更多信息 {#prevnext-moreinfo}
+
+您只能选择属于“访问”或“事件”表的字段。
+
+[!UICONTROL 包括重复项] 确定如何处理重复值 [!UICONTROL 下一个或上一个] 函数。
+
+- 包括重复外观，以及下一个或上一个值。 如果 [!UICONTROL 包含重复项] 选中时，将忽略当前点击中下一个或上一个值的所有连续重复项。
+
+- 对于选定字段，没有（空白）值的行将不会返回下一个或上一个值，作为的 [!UICONTROL 下一个或上一个] 函数输出。
+
++++
 
 <!-- REGEX REPLACE -->
 
