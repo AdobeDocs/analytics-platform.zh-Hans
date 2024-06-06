@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 4d3d53ecb44a69bcf3f46ca0c358ef794a437add
+source-git-commit: 81554c8fd48d3aa34976347c0c0cc2e52f4db2ad
 workflow-type: tm+mt
-source-wordcount: '7147'
+source-wordcount: '7542'
 ht-degree: 12%
 
 ---
@@ -435,7 +435,7 @@ ht-degree: 12%
 |  | `https://site.com/?cid=em_12345678` |
 | `https://google.com` | `https://site.com/?cid=ps_abc098765` |
 | `https://google.com` | `https://site.com/?cid=em_765544332` |
-| `https://google.com` |  |
+| `https://google.com` | |
 
 {style="table-layout:auto"}
 
@@ -1002,6 +1002,85 @@ Customer Journey Analytics使用以下默认容器模型：
 
 +++
 
+<!-- MATH -->
+
+### 数学
+
+对数值字段使用基本的数学运算符（加、减、乘、除和加幂）。
+
++++ 详细信息
+
+## 规范 {#math-io}
+
+| 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
+|---|---|---|---|---|
+| <ul><li>数值</li></ul> | <ul><li>一个或多个数字字段</li><li>一个或多个运算符（加、减、乘、除、升幂）</li><li>用户输入值</li></ul> | <ul><li>`+` （添加）</li><li>`-` （减）</li><li>`*` （乘）</li><li>`/` （除）</li><li>`^` （提升至权力）</li></ul> | <ul><li>每个派生字段25个操作</li><li>每个派生字段5个数学函数</li></ul> | <p>新建派生字段</p> |
+
+{style="table-layout:auto"}
+
+## 用例 {#math-uc}
+
+由于通货膨胀，您需要使用5%的通货膨胀率来更正摄取的CRM数据的收入数。
+
+### 数据早于 {#math-uc-databefore}
+
+| CRM ID | 年收入 |
+|---|---:|
+| 1234 | 35,070,000 |
+| 4133 | 7,500,000 |
+| 8110 | 10,980 |
+| 2201 | 42,620 |
+
+{style="table-layout:auto"}
+
+### 派生字段 {#math-uc-derivedfield}
+
+您定义 `Corrected Annual Revenue` 派生字段。 您使用 [!UICONTROL MATH] 函数来定义将原始年收入数字乘以1.05的规则。
+
+![数学规则的屏幕截图](assets/math.png)
+
+
+### 之后的数据 {#math-uc-dataafter}
+
+| CRM ID | 更正后的年收入 |
+|---|---:|
+| 1234 | 36,823,500 |
+| 4133 | 7,875,000 |
+| 8110 | 11,529,00 |
+| 2201 | 44,751 |
+
+{style="table-layout:auto"}
+
+## 更多信息 {#math-more-info}
+
+要创建公式，请执行以下操作：
+
+1. 只需在公式字段中开始输入，与所键入内容匹配的数字字段即会显示在弹出菜单中。 或者，您可以从左窗格的可用字段中拖放数值字段。
+   ![数学详细信息1](assets/math-more-info-1.png)
+
+1. 添加操作数(例如 `*` ，后跟另一个字段或静态值。 可以使用括号定义更复杂的公式。
+
+1. 插入静态值(例如 `1.05`)，键入值并选择 **[!UICONTROL 添加 *x* 作为静态值]** 或 **[!UICONTROL 添加 — *x* 作为负静态值]** 从弹出菜单中。
+   ![数学详细信息2](assets/math-more-info-2.png)
+
+1. 绿色复选标记 ![复选标记](./assets/checkmark.svg)</span> 指示数学公式是否有效，否则您将看到警告 <span style="color:red">![警报](./assets/alert.svg)</span> 和消息 <span style="color:#ea3829">[!UICONTROL 公式表达式无效].</span>
+   ![数学详细信息3](assets/math-more-info-3.png)
+
+在中使用静态数字时，有一些重要的注意事项 [!UICONTROL MATH] 函数：
+
+- 静态值需要与字段关联。 例如，使用 [!UICONTROL MATH] 不支持仅具有静态字段的函数。
+- 不能使用raise to power运算符(`ˆ`)。
+- 如果在一个公式中使用多个静态值，则应该使用括号对这些静态值进行分组，以使公式有效。 例如：
+
+   - 此公式返回错误。
+     ![数学详细信息4](assets/math-more-info-4.png)
+
+   - 此公式有效。
+     ![数学详细信息5](assets/math-more-info-5.png)
+
++++
+
+
 <!-- MERGE FIELDS -->
 
 ### 合并字段
@@ -1544,7 +1623,9 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 | <p>查找和替换</p> | <ul><li>每个派生字段2个查找和替换函数</li></ul> |
 | <p>查询</p> | <ul><li>每个派生字段5个查找函数</li></ul> |
 | <p>小写</p> | <ul><li>每个派生字段有2个小写函数</li></ul> |
+| <p>数学</p> | <ul><li>每个派生字段25个操作</li><li>每个派生字段5个数学函数</li></ul> |
 | <p>合并字段</p> | <ul><li>每个派生字段有2个合并字段函数</li></ul> |
+| <p>下一个或上一个</p> | <ul><li>3每个派生字段的下一个或上一个函数</li></ul> |
 | <p>正则表达式替换</p> | <ul><li>每个派生字段有1个正则表达式替换函数</li></ul> |
 | <p>拆分</p> | <ul><li>每个派生字段有5个拆分函数</li></ul> |
 | <p>修剪</p> | <ul><li>每个派生字段有1个修剪函数</li></ul> |
