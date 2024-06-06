@@ -4,10 +4,10 @@ description: Customer Journey Analytics 登陆页面。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 6b5a9050d6c13e3c9d637a3ed992840a46058cee
-workflow-type: ht
-source-wordcount: '688'
-ht-degree: 100%
+source-git-commit: 344dfb2e4e5191fb30ff4dd4ed35e45fb7b6cfd1
+workflow-type: tm+mt
+source-wordcount: '669'
+ht-degree: 86%
 
 ---
 
@@ -22,6 +22,24 @@ ht-degree: 100%
 大致了解 Customer Journey Analytics 产品和文档中的最新增强！有关功能、改进和修复的完整列表，请查看详细的[发行说明](../release-notes/latest.md)。访问 [文档更新页面](../release-notes/doc-changes.md) 以了解最新更改。
 
 >[!BEGINTABS]
+
+>[!TAB AI助手]
+
+AI助手是一种对话体验，允许从业人员快速执行任务，无论其理解概念、排除问题还是搜索信息。 它还使非专家能够执行专家任务，并提高整体工作质量。
+
+[![图像](assets/learn-more-button.svg)](/help/ai-assistant.md)
+
+>[!TAB B2B查找]
+
+在配置连接时，您可以转换特定B2B查找架构的数据集，以便更好地支持对B2B数据进行基于人员的查找。
+
+[![图像](assets/learn-more-button.svg)](/help/connections/transform-datasets-b2b-lookups.md)
+
+>[!TAB 派生字段]
+
+可以使用新的派生字段函数（数学、下一个或上一个）和其他函数模板（例如跳出数、每月目标、简单机器人检测等）。
+
+[![图像](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
 >[!TAB BI 扩展*]
 
@@ -41,35 +59,17 @@ Audiences that are published from Customer Journey Analytics are now available i
 
 -->
 
-
->[!TAB 新文档]
-
-新文档现已发布在：<ul><li>如何从 Adobe Analytics 升级到 Customer Journey Analytics。</li><li>数据导出用例和所需的 Experience Platform 和 Customer Journey 功能。 </li></ul>选择 **[!UICONTROL 了解详情]** 以了解此更新和其他文档更新。
-
-[![图像](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
-
 >[!TAB 预测]
 
 预测是 Analysis Workspace 的一项功能，用于以任何支持的时间粒度（每小时、每天、每周、每月和每年）预测标准量度或计算量度。预测仅适用于与时间序列相关的数据。
 
 [![图像](assets/learn-more-button.svg)](/help/analysis-workspace/c-forecast/forecasting.md)
 
->[!TAB 引导式分析* - 留存率]
+>[!TAB 新文档]
 
-一种新的视图类型，其中显示所需的日期范围内在其初次参与后回归的用户所占的百分比。横轴表示用户初次参与后经历的天数。纵轴表示再次参与的用户所占的百分比。
+新文档现已发布在：<ul><li>如何从 Adobe Analytics 升级到 Customer Journey Analytics。</li><li>数据导出用例和所需的 Experience Platform 和 Customer Journey 功能。 </li></ul>选择 **[!UICONTROL 了解详情]** 以了解此更新和其他文档更新。
 
-[![图像](assets/learn-more-button.svg)](/help/guided-analysis/types/retention-rates.md)
-
-<span style="color:gray">*_引导式分析是 Customer Journey Analytics 的付费附加组件 Adobe Product Analytics 的一部分。_</span>
-
-
->[!TAB 引导式分析* - 趋势线]
-
-“使用情况”视图中现在有趋势线叠加层可用，它们有助于更清晰地描绘数据中的模式。可用的趋势线的类型包括线性趋势线、对数趋势线和均线。
-
-[![图像](assets/learn-more-button.svg)](/help/guided-analysis/types/usage.md)
-
-<span style="color:gray">*_引导式分析是 Customer Journey Analytics 的付费附加组件 Adobe Product Analytics 的一部分。_</span>
+[![图像](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
 
 >[!ENDTABS]
 
