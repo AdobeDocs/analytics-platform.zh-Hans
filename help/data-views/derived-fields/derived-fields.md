@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 81554c8fd48d3aa34976347c0c0cc2e52f4db2ad
+source-git-commit: 67a249ab291201926eb50df296e031b616de6e6f
 workflow-type: tm+mt
 source-wordcount: '7542'
 ht-degree: 12%
@@ -1035,7 +1035,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 ### 派生字段 {#math-uc-derivedfield}
 
-您定义 `Corrected Annual Revenue` 派生字段。 您使用 [!UICONTROL MATH] 函数来定义将原始年收入数字乘以1.05的规则。
+您定义 `Corrected Annual Revenue` 派生字段。 您使用 [!UICONTROL MATH] 函数定义一个规则，将原始年收入数字乘以1.05。
 
 ![数学规则的屏幕截图](assets/math.png)
 

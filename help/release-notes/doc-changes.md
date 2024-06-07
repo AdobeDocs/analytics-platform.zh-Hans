@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 83696cb3289ab564ebc08ee3d16e82d9fb92ebda
+source-git-commit: 67a249ab291201926eb50df296e031b616de6e6f
 workflow-type: tm+mt
-source-wordcount: '3718'
-ht-degree: 73%
+source-wordcount: '3732'
+ht-degree: 72%
 
 ---
 
@@ -20,8 +20,9 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2024 年 6 月** | |
-| 转换数据集以进行B2B查找 | 有关如何支持的文档 [对B2B数据进行基于人员的查找](/help/connections//transform-datasets-b2b-lookups.md) （包括客户、机会、营销列表和营销活动），需要转换B2B查找数据集。 |
-| 派生字段函数和函数模板 | 有关其他派生字段函数的文档([数学](/help/data-views/derived-fields/derived-fields.md#math)， [下一个或上一个](/help/data-views/derived-fields/derived-fields.md#next-or-previous))和 [函数模板](/help/data-views/derived-fields/derived-fields.md#function-templates). |
+| AI 助手 | 已添加 [文档](../ai-assistant.md) 在AICustomer Journey Analytics助手上。 |
+| 转换数据集以进行B2B查找 | 添加了有关如何支持的文档 [对B2B数据进行基于人员的查找](/help/connections//transform-datasets-b2b-lookups.md) （包括客户、机会、营销列表和营销活动），需要转换B2B查找数据集。 |
+| 派生字段函数和函数模板 | 添加了关于其他派生字段函数的文档([数学](/help/data-views/derived-fields/derived-fields.md#math)， [下一个或上一个](/help/data-views/derived-fields/derived-fields.md#next-or-previous))和 [函数模板](/help/data-views/derived-fields/derived-fields.md#function-templates). |
 | **2024 年 5 月** | |
 | Target集成 | 已添加 [文章到Adobe集成部分](/help/integrations/cja4t.md) 介绍如何将Target与Customer Journey Analytics集成。 |
 | 使用组织策略限制将Customer Journey Analytics报表导出到Google Cloud Platform时需要的信息 | 已将Adobe拥有的Google Cloud Platform组织ID添加到 [配置云导出位置](/help/components/exports/cloud-export-locations.md) 用于将Customer Journey Analytics报表导出到Google Cloud Platform的文档。 <p>仅当组织在 Google Cloud Platform 中使用[组织策略约束](https://cloud.google.com/storage/docs/org-policy-constraints)时才需要此信息。</p> |
