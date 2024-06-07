@@ -8,7 +8,7 @@ role: User
 source-git-commit: 3acf29b703d52145d8679d60ed664cf794b5ee30
 workflow-type: tm+mt
 source-wordcount: '2255'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 86%
 
 | 功能 | 注释 |
 | --- | --- |
-| Analytics for Target (A4T) | 此 [Adobe Customer Journey Analytics与Target之间的集成](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja) 为您的优化项目提供功能强大的分析和省时的工具。 |
+| Analytics for Target (A4T) | [Adobe Customer Journey Analytics 和 Target 进行集成](https://experienceleague.adobe.com/cn/docs/target/using/integrate/cja/target-reporting-in-cja)，为优化项目提供强大而又节省时间的分析工具。 |
 | 受众发布 | 如果与 Adobe 的客户数据平台或 Journey Optimizer 产品一起获得许可即支持。[受众发布](/help/components/audiences/audiences-overview.md)将受众发送到 Experience Platform 中的 Real-time Customer Profile。 |
 | 分类 | 现在称为“查找数据集”。Analytics 中使用的分类可以通过分析分类源连接器导入到 Experience Platform 和 Customer Journey Analytics。 查找数据集还可以直接上传到 Experience Platform 并在 Customer Journey Analytics 中提供。 |
 | 分类规则生成器 | 支持在 Customer Journey Analytics 中使用[子字符串。](/help/data-views/component-settings/substring.md)在报告时使用字符串操作，而不使用查找数据集。 |
