@@ -5,9 +5,9 @@ title: 管理云导出位置和帐户
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: cdf99e31790f089950de8063445b6264158131dd
+source-git-commit: 6e36885cfba60c808b9f069159670db6834fe41f
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '710'
 ht-degree: 1%
 
 ---
@@ -54,6 +54,10 @@ ht-degree: 1%
 
 ## 编辑位置
 
+位置只能由创建该位置的用户或系统管理员编辑。
+
+要编辑位置，请执行以下操作：
+
 1. 在Customer Journey Analytics中，选择 [!UICONTROL **组件**] > [!UICONTROL **导出**].
 
 1. 选择 [!UICONTROL **位置**] 选项卡。
@@ -95,6 +99,10 @@ ht-degree: 1%
 1. 选择 [!UICONTROL **删除**] 再次确认。
 
 ## 编辑帐户
+
+帐户只能由创建该帐户的用户或系统管理员编辑。
+
+要编辑帐户，请执行以下操作：
 
 1. 在Customer Journey Analytics中，选择 [!UICONTROL **组件**] > [!UICONTROL **导出**].
 
