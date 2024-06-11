@@ -2,10 +2,10 @@
 title: Customer Journey Analytics BI 扩展
 description: 了解如何使用查询服务、Power BI、Tableau 或其他 BI 和 SQL 工具，通过 Customer Journey Analytics BI 扩展来访问数据视图。
 solution: Customer Journey Analytics
-feature: SQL Connector
+feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 5ed1622d4e9f1bcc25931cbf3d3cbd6796d0ac15
+source-git-commit: 963b8788f9657844d56449bf315abc5018deb5d8
 workflow-type: tm+mt
 source-wordcount: '2770'
 ht-degree: 96%
