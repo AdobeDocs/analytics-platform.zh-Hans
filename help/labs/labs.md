@@ -4,16 +4,20 @@ description: 预览 Customer Journey Analytics 的原型项目
 exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
 feature: Labs
 role: User
-source-git-commit: d5d81caff62d4fb56a57739ddffb81787f684e23
+source-git-commit: fd033854a3b871c802c38c098d0907062a1c9c07
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 89%
+source-wordcount: '469'
+ht-degree: 81%
 
 ---
 
 # [!UICONTROL Labs] 用户指南
 
 [!UICONTROL Labs] 允许更快地为早期创意制作原型。它以客户为中心，整合了工具和流程，可加快开发速度并提高开发透明度。它允许用户与新兴技术交互，发掘有价值的分析，并影响未来的功能开发和优先级。您可以通过Labs抢先试用Adobe Customer Journey Analytics创新，并在您自己的业务用例和数据范围内评估即将推出的功能。
+
+>[!IMPORTANT]
+>
+>Customer Journey Analytics实验室不是HIPAA就绪服务，可能无法用于处理您的组织在Customer Journey Analytics中可能获准使用的任何敏感个人数据，包括允许的健康数据（例如个人健康信息或PHI）。
 
 ## 要求
 
