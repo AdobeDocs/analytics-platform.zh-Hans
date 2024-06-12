@@ -10,17 +10,17 @@ user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
 source-git-commit: cf399df3a8043f5ec9fe723a531bf2f8af68799a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1093'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 
-# Adobe Customer Journey Analytics指南 {#using}
+# Adobe Customer Journey Analytics 指南 {#using}
 
-+ [Adobe Customer Journey Analytics指南](../getting-started/cja-landing.md)
-+ [Adobe Customer Journey Analytics的人工智能助手](../ai-assistant.md)
++ [Adobe Customer Journey Analytics 指南](../getting-started/cja-landing.md)
++ [Adobe Customer Journey Analytics 的 AI 助手](../ai-assistant.md)
 + 发行说明 {#releases}
    + [最新版本](../release-notes/latest.md)
    + [2024 版](../release-notes/2024.md)
@@ -35,19 +35,19 @@ ht-degree: 76%
    + [Customer Journey Analytics 概述](../getting-started/cja-overview.md)
    + [快速入门指南](../getting-started/cja-getting-started.md)
    + [登陆页面](../getting-started/landing.md)
-   + [登陆页面（旧）](../getting-started/cja-landing-old.md)
+   + [登陆页面（旧的）](../getting-started/cja-landing-old.md)
    + [常见问题解答](../getting-started/cja-faq.md)
    + [比较 Customer Journey Analytics 和 BI 解决方案](../getting-started/cja-vs-bi.md)
 
 + Customer Journey Analytics 和 Adobe Analytics {#compare-aa-cja}
-   + 升级到Customer Journey Analytics {#upgrade-to-cja}
+   + 升级到 Customer Journey Analytics {#upgrade-to-cja}
       + [快速入门](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
-      + [选择升级路径](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
-      + [将数据发送到Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
+      + [选择你的升级路径](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
+      + [向平台发送数据](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + [保留历史数据](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
    + 与 Adobe Analytics 进行比较 {#cja-aa-comparison}
       + [概述](../getting-started/aa-vs-cja/overview.md)
-      + [在Customer Journey Analytics中使用Adobe Analytics数据](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+      + [在 Customer Journey Analytics 中使用 Adobe Analytics 数据](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Customer Journey Analytics 功能支持](../getting-started/aa-vs-cja/cja-aa.md)
       + [比较通过 Analytics Source Connector 传递的 Analytics 数据的术语](../getting-started/aa-vs-cja/terminology.md)
       + [比较 Adobe Analytics 和 Customer Journey Analytics 的数据处理](../getting-started/aa-vs-cja/data-processing-comparisons.md)
@@ -61,10 +61,10 @@ ht-degree: 76%
    + [数据摄取概述](../data-ingestion/data-ingestion.md)
    + 摄取并使用快速入门指南{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
-      + Adobe Experience Platform边缘网络 {#edge-network}
+      + Adobe Experience Platform Edge Network {#edge-network}
          + [Web SDK](../data-ingestion/aepwebsdk.md)
          + [Mobile SDK](../data-ingestion/aepmobilesdk.md)
-         + [服务器API](../data-ingestion/serverapi.md)
+         + [服务器 API](../data-ingestion/serverapi.md)
       + [批次数据](../data-ingestion/batch.md)
       + [流式数据](../data-ingestion/streaming.md)
       + [源连接器](../data-ingestion/sources.md)
@@ -75,7 +75,7 @@ ht-degree: 76%
    + [管理连接](../connections/manage-connections.md)
    + [合并事件数据集](../connections/combined-dataset.md)
    + [标准查找](../connections/standard-lookups.md)
-   + [B2B查找](../connections/transform-datasets-b2b-lookups.md)
+   + [查找 B2B](../connections/transform-datasets-b2b-lookups.md)
 
 + 数据视图 {#cja-dataviews}
    + [数据视图概述](../data-views/data-views.md)
@@ -93,7 +93,7 @@ ht-degree: 76%
       + [子字符串](../data-views/component-settings/substring.md)
       + [值分段](../data-views/component-settings/value-bucketing.md)
    + [标准组件参考](../data-views/component-reference.md)
-   + [BI扩展](../data-views/bi-extension.md)
+   + [BI 扩展](../data-views/bi-extension.md)
    + [派生字段](../data-views/derived-fields/derived-fields.md)
    + [标签和策略](../data-views/data-governance.md)
 
@@ -181,7 +181,7 @@ ht-degree: 76%
       + [异常检测中使用的统计技术](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
    + 预测 {#forecasting}
       + [预测概述](../analysis-workspace/c-forecast/forecasting.md)
-      + [在Analysis Workspace中查看预测](../analysis-workspace/c-forecast/view-forecasts.md)
+      + [在 Analysis Workspace 中查看预测](../analysis-workspace/c-forecast/view-forecasts.md)
       + [预测服务中使用的统计技术](../analysis-workspace/c-forecast/statistics-forecasting.md)
    + [用户偏好设置](../analysis-workspace/user-preferences.md)
    + Workspace 常见问题解答 {#workspace-faq}
@@ -201,15 +201,15 @@ ht-degree: 76%
 
 + 引导式分析 {#guided-analysis}
    + [概述](../guided-analysis/overview.md)
-   + 特征矩阵 {#feature-matrix}
+   + 功能矩阵{#feature-matrix}
       + [参与](../guided-analysis/types/engagement.md)
    + 漏斗 {#funnel}
-      + [摩擦视图](../guided-analysis/types/friction.md)
+      + [阻力视图](../guided-analysis/types/friction.md)
       + [转化趋势视图](../guided-analysis/types/conversion-trends.md)
    + 影响 {#impact}
-      + [版本视图](../guided-analysis/types/release.md)
+      + [发布视图](../guided-analysis/types/release.md)
       + [首次使用视图](../guided-analysis/types/first-use.md)
-   + 维系 {#retention}
+   + 维系{#retention}
       + [维系率](../guided-analysis/types/retention-rates.md)
    + 趋势 {#trends}
       + [使用情况视图](../guided-analysis/types/usage.md)
@@ -224,7 +224,7 @@ ht-degree: 76%
 
 + 组件 {#cja-components}
    + [组件概述](../components/overview.md)
-   + [在Analysis Workspace中使用组件](../components/use-components-in-workspace.md)
+   + [使用 Analysis Workspace 中的组件](../components/use-components-in-workspace.md)
    + [添加组件描述](../components/add-component-descriptions.md)
    + 批注 {#annotations}
       + [批注概述](../components/annotations/overview.md)
@@ -232,7 +232,7 @@ ht-degree: 76%
       + [管理批注](../components/annotations/manage-annotations.md)
       + [查看批注](../components/annotations/view-annotations.md)
       + [移动批注](../components/annotations/mobile-annotations.md)
-   + [计划项目](../components/scheduled-projects-manager.md)
+   + [计划的项目](../components/scheduled-projects-manager.md)
    + 受众{#audiences}
       + [受众概述](../components/audiences/audiences-overview.md)
       + [创建并发布受众](../components/audiences/publish.md)
@@ -250,10 +250,10 @@ ht-degree: 76%
       + [创建顺序过滤器](../components/filters/seg-sequential-build.md)
       + [共享过滤器](../components/filters/filters-share.md)
       + [标记过滤器](../components/filters/filters-tag.md)
-      + [筛选筛选器列表](../components/filters/filters-filter.md)
+      + [过滤过滤器列表](../components/filters/filters-filter.md)
       + [将过滤器标记为收藏](../components/filters/filters-favorite.md)
       + [批准过滤器](../components/filters/filters-approve.md)
-      + [复制筛选器](../components/filters/filters-copy.md)
+      + [复制过滤器](../components/filters/filters-copy.md)
       + [快速过滤器](../components/filters/quick-filters.md)
       + [过滤器生成器](../components/filters/filter-builder.md)
       + [管理过滤器](../components/filters/manage-filters.md)
@@ -265,7 +265,7 @@ ht-degree: 76%
          + [查找量度](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [生成指标](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [指标类型和归因](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-         + [构建参与率量度](../components/calc-metrics/cm-workflow/participation-metric.md)
+         + [生成参与率量度](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [过滤指标](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [堆叠和替换过滤器](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [过滤和加权指标](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
@@ -292,7 +292,7 @@ ht-degree: 76%
       + [管理云导出位置](/help/components/exports/manage-export-locations.md)
       + [管理导出](/help/components/exports/manage-exports.md)
       + [管理导出日志](/help/components/exports/manage-export-logs.md)
-      + [排查导出问题](/help/components/exports/troubleshoot-exports.md)
+      + [导出故障诊断](/help/components/exports/troubleshoot-exports.md)
    + 数据词典 {#data-dictionary}
       + [数据词典概述](../components/data-dictionary/data-dictionary-overview.md)
       + [查看数据词典中的组件信息](../components/data-dictionary/view-data-dictionary.md)
@@ -318,19 +318,19 @@ ht-degree: 76%
    + [查看报告活动](../reporting-activity-manager/reporting-activity.md)
    + [取消报告请求](../reporting-activity-manager/reporting-activity-cancel-requests.md)
 
-+ 拼接 {#stitching}
++ 拼合 {#stitching}
    + [概述](../stitching/overview.md)
    + [拼合的工作原理](../stitching/explained.md)
-   + [创建和管理拼合的数据集](../stitching/stitching-ui.md)
+   + [创建和管理拼合数据集](../stitching/stitching-ui.md)
    + [常见问题解答](../stitching/faq.md)
 
 + Adobe 集成 {#integrations}
    + [概述](/help/integrations/overview.md)
-   + [集成Adobe Analytics](/help/integrations/aa.md)
-   + [集成Target](/help/integrations/cja4t.md)
-   + [集成Journey Optimizer数据](/help/integrations/ajo.md)
+   + [集成 Adobe Analytics](/help/integrations/aa.md)
+   + [集成 Target](/help/integrations/cja4t.md)
+   + [集成 Journey Optimizer 数据](/help/integrations/ajo.md)
    + [集成决策管理数据](/help/integrations/ajo-od.md)
-   + [集成客户人工智能](/help/integrations/customer-ai.md)
+   + [集成 Customer AI](/help/integrations/customer-ai.md)
 
 + 数据管理 {#cja-privacy}
    + [数据管理](../privacy/privacy-overview.md)
@@ -340,24 +340,24 @@ ht-degree: 76%
 + 用例 {#cja-usecases}
    + [Customer Journey Analytics 用例](../use-cases/cja-usecases.md)
    + Google Analytics 数据{#ga}
-      + [将数据从Google Analytics迁移到Customer Journey Analytics概述](../use-cases/ga/overview.md)
+      + [将数据从 Google Analytics 迁移到 Customer Journey Analytics 概述](../use-cases/ga/overview.md)
       + [将 Google Analytics 历史数据提取到平台](../use-cases/ga/backfill.md)
       + [将流式 Google Analytics 数据配置到 Platform](../use-cases/ga/streaming.md)
       + [在 Customer Journey Analytics 中就 Google Analytics 数据给出报告](../use-cases/ga/report.md)
    + 数据摄取 {#data-ingestion}
-      + [将Marketo Engage数据摄取到Adobe Experience Platform并在Customer Journey Analytics中报告](../use-cases/data-ingestion/marketo.md)
-      + [将Adobe Experience Platform受众引入Customer Journey Analytics](../use-cases/data-ingestion/ingest-aep-segments.md)
+      + [将 Marketo Engage 数据收录到 Adobe Experience Platform 并在 Customer Journey Analytics 中报告](../use-cases/data-ingestion/marketo.md)
+      + [将 Adobe Experience Platform 受众收录到 Customer Journey Analytics](../use-cases/data-ingestion/ingest-aep-segments.md)
    + 数据视图 {#data-views}
       + [数据视图用例](../use-cases/data-views/data-views-usecases.md)
       + [使用绑定维度和指标](../use-cases/data-views/binding-dimensions-metrics.md)
    + 数据导出 {#data-export}
       + [概述](../use-cases/data-export/overview.md)
-      + [BI扩展](../use-cases/data-export/bi-extension.md)
+      + [BI 扩展](../use-cases/data-export/bi-extension.md)
       + [导出数据集](../use-cases/data-export/export-datasets.md)
       + [导出整个表](../use-cases/data-export/export-full-table.md)
       + [查询服务和导出数据集](../use-cases/data-export/queryservice-export-datasets.md)
    + B2B {#b2b}
-      + [示例B2B项目](../use-cases/b2b/example.md)
+      + [B2B 项目示例](../use-cases/b2b/example.md)
       + [将帐户级别的数据作为查询数据集进行添加](../use-cases/b2b/b2b.md)
    + 跨渠道数据 {#cross-channel}
       + [跨渠道分析数据](../use-cases/cross-channel/cross-channel.md)
@@ -375,8 +375,8 @@ ht-degree: 76%
 
 + 故障排除 {#troubleshooting}
    + [比较 Adobe Analytics 数据和 Customer Journey Analytics 数据](../troubleshooting/compare.md)
-   + [Real-time CDP与Customer Journey Analytics之间量度和受众会员计数的一致性](../troubleshooting/consistency-rcdp-cja.md)
-   + [缺少权限](../troubleshooting/lack-of-permissions.md)
+   + [Real-time CDP 与 Customer Journey Analytics 之间指标和受众成员计数的一致性](../troubleshooting/consistency-rcdp-cja.md)
+   + [缺乏权限](../troubleshooting/lack-of-permissions.md)
 
 + 技术说明 {#technotes}
    + [访问控制](../technotes/access-control.md)
@@ -386,7 +386,7 @@ ht-degree: 76%
    + [术语表](../technotes/glossary.md)
    + [护栏](../technotes/guardrails.md)
    + [IP 地址](../technotes/ip-addresses.md)
-   + [优化Customer Journey Analytics性能](../technotes/optimizing-performance.md)
+   + [优化 Customer Journey Analytics 性能](../technotes/optimizing-performance.md)
    + [查看和管理使用情况](../technotes/estimate-usage.md)
 
 + [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)

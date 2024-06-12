@@ -6,9 +6,9 @@ exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
 source-git-commit: a55224d91dbcf7323ccd481b4a7469d5b80f12c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1397'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 99%
 
 | 分析类型 | 视图类型 | 描述 |
 | --- | --- | --- |
-| [!UICONTROL 功能矩阵] | [参与度](types/engagement.md) | 了解功能互动的广度和深度。 |
+| [!UICONTROL 功能矩阵] | [参与度](types/engagement.md) | 了解功能参与的广度和深度。 |
 | [!UICONTROL 漏斗] | [摩擦](types/friction.md) | 比较步骤之间的转化率。 |
 | [!UICONTROL 漏斗] | [转化趋势](types/conversion-trends.md) | 跟踪转化率随时间发生的变化。 |
 | [!UICONTROL 影响] | [发布](types/release.md) | 比较发布前和发布后相同时期的性能。 |

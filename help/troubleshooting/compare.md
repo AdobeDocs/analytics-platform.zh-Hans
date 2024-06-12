@@ -5,29 +5,29 @@ role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
-keywords: 查询服务；查询服务；sql语法
+keywords: 查询服务；查询服务；sql 语法
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '839'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
 # 比较 Adobe Analytics 数据和 Customer Journey Analytics 数据
 
-随着贵组织采用Customer Journey Analytics，您可能会注意到Adobe Analytics与Customer Journey Analytics之间的数据有些差异。 这是正常情况，并且可能由于若干原因出现这种情况。Customer Journey Analytics旨在使您可改善对AA中数据的某些限制。 但是，可能会出现意外和意外差异。 本文旨在帮助您诊断和解决这些差异，以便您和您的团队可以使用Customer Journey Analytics，而不受数据完整性问题的影响。
+当您的组织采用 Customer Journey Analytics 时，您可能会注意到 Adobe Analytics 和 Customer Journey Analytics 之间的数据存在一些差异。这是正常情况，并且可能由于若干原因出现这种情况。Customer Journey Analytics 旨在使您可改善对于您在 AA 中的数据存在的某些限制。但是，可能会出现意外和非预期的差异。本文旨在帮助您诊断和解决这些差异，以便您和您的团队可以使用 Customer Journey Analytics，而不受数据完整性问题的影响。
 
-Adobe Analytics Adobe Experience Platform假设您通过 [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)，然后使用此数据集创建了Customer Journey Analytics连接。
+假设您通过 [Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)将 Adobe Analytics 数据导入 Adobe Experience Platform，然后使用此数据集创建了 Customer Journey Analytics 连接。
 
-![数据通过Data Connector从Adobe Analytics流入Adobe Experience Platform，并使用CJA连接流入客户历程Analytics。](assets/compare.png)
+![数据从 Adobe Analytics 通过数据连接器流向 Adobe Experience Platform，然后使用 CJA 连接流向 Customer Journey Analytics](assets/compare.png)。
 
-接下来，您创建了一个数据视图，随后在Customer Journey Analytics中报告此数据时，您注意到与Adobe Analytics中的报告结果存在差异。
+接下来，您创建了一个数据视图，随后在 Customer Journey Analytics 上制作此数据的报告时，您注意到与 Adobe Analytics 中的报告结果存在差异。
 
 将原始 Adobe Analytics 数据与 Customer Journey Analytics 中的现有 Adobe Analytics 数据进行比较所要遵循的步骤如下。
 
 ## 先决条件
 
-* 确保Adobe Experience Platform中的Analytics数据集包含您正在调查的日期范围的数据。
+* 确保 Adobe Experience Platform 中的 Analytics 数据集包含您正在调查的日期范围的数据。
 
 * 确保您在 Analytics 中选择的报表包与引入到 Adobe Experience Platform 中的报表包一致。
 
@@ -41,7 +41,7 @@ Adobe Analytics Adobe Experience Platform假设您通过 [Analytics源连接器]
 
 1. 保存此项目，以使您可在比较中使用它。
 
-## 步骤2：将结果与 [!UICONTROL 按时间戳的总记录数] 在Customer Journey Analytics中
+## 步骤 2：将结果与 Customer Journey Analytics 中的[!UICONTROL 按时间戳的总记录数]进行比较
 
 现在比较 Analytics 中的[!UICONTROL 发生次数]与 Customer Journey Analytics 中的“按时间戳的总记录数”。
 
@@ -49,7 +49,7 @@ Adobe Analytics Adobe Experience Platform假设您通过 [Analytics源连接器]
 
 >[!NOTE]
 >
->这仅适用于常规中间值数据集，不适用于拼合的数据集(通过 [拼接](/help/stitching/overview.md))。 请注意，考虑在Customer Journey Analytics中使用的人员ID对于使比较发挥作用至关重要。 在Adobe Analytics中可能并不总是容易复制这种方法，尤其是在已启用拼合的情况下。
+>这仅适用于常规中间值数据集，不适用于拼合的数据集（通过 [Stitching](/help/stitching/overview.md)）。请注意，将在 Customer Journey Analytics 中使用的人员 ID 考虑在内对于使这一比较发挥作用至关重要。可能并非总是很容易在 Adobe Analytics 中复制该内容，尤其是在已启用 Stitching 的情况下。
 
 1. 在 Adobe Experience Platform [查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html)中，运行以下的[!UICONTROL 按时间戳的总记录数]查询：
 
@@ -83,11 +83,11 @@ Adobe Analytics Adobe Experience Platform假设您通过 [Analytics源连接器]
 
 1. 如果连接器过滤某些行，则将从[!UICONTROL 发生次数]量度中去除这些行。得到的数字应与 Adobe Experience Platform 数据集中的事件数一致。
 
-## 为什么在从Adobe Experience Platform引入数据期间可能会过滤或跳过一些记录
+## 为什么在从 Adobe Experience Platform 引入数据期间可能会过滤或跳过一些记录
 
-Customer Journey Analytics [连接](/help/connections/create-connection.md) 允许您跨数据集基于共同的人员ID将多个数据集聚集并连接在一起。 在后端，我们应用重复数据删除：首先，基于时间戳针对事件数据集进行完全的外部连接或合并，然后基于人员 ID 对配置文件和查找数据集进行内部连接。
+Customer Journey Analytics [连接](/help/connections/create-connection.md)允许您根据数据集中的通用人员 ID 将多个数据集汇集并合并在一起。在后端，我们应用重复数据删除：首先，基于时间戳针对事件数据集进行完全的外部连接或合并，然后基于人员 ID 对配置文件和查找数据集进行内部连接。
 
-以下是从Adobe Experience Platform中摄取数据时可能跳过记录的一些原因。
+以下是从 Adobe Experience Platform 中引入数据时可能会跳过记录的一些原因。
 
 * **缺少时间戳** – 如果事件数据集中缺少时间戳，则在引入期间将完全忽略或跳过这些记录。
 
