@@ -3,9 +3,9 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 61209c4f86052059ab2f1ef3a3d68e9c16f8e621
+source-git-commit: 933046a371407491b6e68749b63d48057fdf0e48
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '993'
 ht-degree: 38%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 38%
 | **基于图形的拼接：使用UIS图形导出进行拼接** | 通过基于图表的拼合，您可以使用身份图通过以下方式更好地查看客户历程：<ul><li>使用不同的标识符连接数据集，而不必提取、转换和加载额外的数据以反映单个标识符。</li><li>通过跨数据集共享身份，提高单个数据集的首选或黄金身份覆盖率。</li><li>将Real-time Customer Data Platform和Journey Optimizer中创建的用户档案与Customer Journey Analytics中的人员保持一致。</li></ul>（文档链接见下文） |  | 2024年6月28日 |
 | **个人到帐户的 B2B 架构转换** | 为了支持对B2B数据（包括客户、机会、营销列表和营销活动）进行基于人员的查找，您可以转换B2B查找数据集。 此转换仅适用于包含B2B查找架构数据的数据集，它基于以下类：<ul><li>XDM 业务帐户人员关系</li><li>XDM 业务机会人员关系</li><li>XDM 商业营销列表成员</li><li>XDM 商业营销活动成员</li></ul>[了解详情](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/transform-datasets-b2b-lookups) |  | 2024 年 6 月 5 日 |
 | **派生字段 - 数学函数** | 允许您在数据视图中执行简单的数学运算符来回答有关用户的问题。例如，您可以将产品、保修和运输收入结合起来。 <p>[了解详情](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/derived-fields#math)</p> | | 2024 年 6 月 5 日 |
-| **派生字段 — 派生字段 — 下一个或上一个函数** | 让您查看下一个或上一个值是什么。 例如，在选定营销渠道之前，用户与之交互的上一个营销渠道是什么？ 或者，在选定页面之前或之后，用户与哪个页面进行了交互？ 在店内访问之前，最受欢迎的渠道用户与什么进行交互？ <p>[了解详情](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/derived-fields#next-or-previous)</p> | | 2024 年 6 月 12 日 |
+| **派生字段 — 下一个或上一个函数** | 让您查看下一个或上一个值是什么。 例如，在选定营销渠道之前，用户与之交互的上一个营销渠道是什么？ 或者，在选定页面之前或之后，用户与哪个页面进行了交互？ 在店内访问之前，最受欢迎的渠道用户与什么进行交互？ <p>[了解详情](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/derived-fields#next-or-previous)</p> | | 2024 年 6 月 12 日 |
 | **派生字段 — 摘要函数** | 提供在事件、会话和用户级别将聚合类型函数应用于量度或维度的功能。 （文档链接见下文） | | 2024年6月26日 |
 | **派生字段 — 重复数据删除函数** | 有助于防止重复计算某个值。 可以在用户或会话级别应用，也可以根据维度的唯一值应用。 （文档链接见下文） |  | 2024年6月26日 |
 | **摄取优先级和延迟** | 现在，无论事件数据是在24小时、48小时还是7天之前，您都可以在90分钟(SLT)内以Customer Journey Analytics摄取该数据。 请注意，此功能因您公司购买的SKU软件包而异：<ul><li>CJA优先级摄取基本：90分钟SLT处理内24小时旧数据（可用于CJA Foundation和CJA Select）</li><li>CJA优先摄取中间：90分钟SLT处理内72小时旧数据（适用于CJA Prime）</li><li>CJA优先级摄取高级：90分钟SLT处理内1周前的数据（适用于CJA Ultimate）</li></ul> |  | 2024 年 6 月 12 日 |
