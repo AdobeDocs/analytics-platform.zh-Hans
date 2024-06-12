@@ -3,10 +3,10 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 43e160aa68ca0eed08027be18cdab74083be3a10
+source-git-commit: e71fe4bc1b854dcb904dfbfd770233cdadd5c8eb
 workflow-type: tm+mt
-source-wordcount: '1131'
-ht-degree: 37%
+source-wordcount: '994'
+ht-degree: 38%
 
 ---
 
@@ -28,11 +28,10 @@ ht-degree: 37%
 | **派生字段 — 摘要函数** | 提供在事件、会话和用户级别将聚合类型函数应用于量度或维度的功能。 （文档链接见下文） | | 2024年6月26日 |
 | **派生字段 — 高级重复数据删除功能** | 有助于防止重复计算某个值。 可以在用户或会话级别应用，也可以根据维度的唯一值应用。 （文档链接见下文） |  | 2024年6月26日 |
 | **摄取优先级和延迟** | 现在，无论事件数据是在24小时、48小时还是7天之前，您都可以在90分钟(SLT)内以Customer Journey Analytics摄取该数据。 请注意，此功能因您公司购买的SKU软件包而异：<ul><li>CJA优先级摄取基本：90分钟SLT处理内24小时旧数据（可用于CJA Foundation和CJA Select）</li><li>CJA优先摄取中间：90分钟SLT处理内72小时旧数据（适用于CJA Prime）</li><li>CJA优先级摄取高级：90分钟SLT处理内1周前的数据（适用于CJA Ultimate）</li></ul> |  | 2024 年 6 月 12 日 |
-| **用于控制用于导出和导入的帐户和位置的管理员设置** | 新 [位置管理器中的“管理员设置”选项卡](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/locations/locations-manager) 管理员可控制用户是否可以创建和编辑帐户和位置。 这些设置适用于用户 [配置云导入和导出帐户](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/locations/configure-import-accounts) 和 [配置云导入和导出位置](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/locations/configure-import-locations). 管理员还可以限制用户可以创建和使用的帐户类型（Google Cloud Platform、Azure RBAC、Amazon S3 等）。<p>以前，任何用户都可以创建、编辑和使用任何类型帐户的帐户和位置。 |  | 2024年6月18日 |
-| **共享用于导出和导入的账户和位置** | 用户现在可以将他们创建的帐户和位置提供给其组织内的所有用户。只有帐户和位置所有者和系统管理员可以编辑和删除帐户和位置。 以前，帐户和位置只能由创建它们的用户使用。 当用户[配置云导出帐户](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/exports/cloud-export-accounts)以及[配置云导出位置时，这些设置适用](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/exports/cloud-export-locations)。 |  | 2024年6月18日 |
-| **在自由格式表的下拉菜单中选择多个可用过滤器** | 当多个过滤器作为下拉菜单添加到自由格式表时，自由格式表的用户现在可以同时选择多个过滤器。 自由格式表将进行筛选，以包含任何选定的过滤器。 以前，用户在过滤器下拉菜单中一次只能选择一个过滤器。<p>（文档链接随后提供。）&lt;! — 有关更多信息，请参阅在Analysis Workspace中使用组件中的“将过滤器添加到项目”。—> |  | 2024年6月19日 |
-| **工作区项目的目录** | 现在有新的目录可用于项目。 目录提供了使用户能够快速跳转到项目中的面板和可视化图表的链接。 可以为单个项目或给定用户的所有项目启用目录。<p>（文档链接随后提供。）&lt;! — 有关更多信息，请参阅创建项目中的“显示项目目录”。—> |  | 2024年6月19日 |
-| **在自由格式表中为维度项目创建超链接** | <ul><li>您可以为一个或多个维度项目创建超链接，以使它们可在Analysis Workspace的自由格式表中点击。 </li><li>您可以为具有URL值的维度项创建超链接，也可以为具有非URL值的维度项创建自定义URL。</li><li>您可以使用变量为多个维度项目创建动态自定义URL。 变量可以引用维度项的值，也可以引用划分维度。</li></ul>（文档链接随后提供。）&lt;! — 有关更多信息，请参阅“向自由格式表中的维度添加超链接”。—> |  | 2024年6月19日 |
+| **共享用于导出和导入的账户和位置** | 用户现在可以将他们创建的帐户和位置提供给其组织内的所有用户。只有帐户和位置所有者和系统管理员可以编辑和删除帐户和位置。 以前，帐户和位置只能由创建它们的用户使用。 当用户[配置云导出帐户](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/exports/cloud-export-accounts)以及[配置云导出位置时，这些设置适用](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/exports/cloud-export-locations)。 | 2024 年 6 月 12 日 | 2024年6月18日 |
+| **在自由格式表的下拉菜单中选择多个可用过滤器** | 当多个过滤器作为下拉菜单添加到自由格式表时，自由格式表的用户现在可以同时选择多个过滤器。 自由格式表将进行筛选，以包含任何选定的过滤器。 <p>以前，用户在过滤器下拉菜单中一次只能选择一个过滤器。</p><p>（文档链接随后提供。）<!--For more information, see "Add filters to a project" in "Use components in Analysis Workspace."--> |  | 2024年6月19日 |
+| **工作区项目的目录** | 现在有新的目录可用于项目。 目录提供了使用户能够快速跳转到项目中的面板和可视化图表的链接。 <p>可以为单个项目或给定用户的所有项目启用目录。</p><p>（文档链接随后提供。）<!--For more information, see "Display the project table of contents" in "Create projects".--> |  | 2024年6月19日 |
+| **在自由格式表中为维度项目创建超链接** | 您可以为一个或多个维度项目创建超链接，以使它们可在Analysis Workspace的自由格式表中点击。 <p>您可以为具有URL值的维度项创建超链接，也可以为具有非URL值的维度项创建自定义URL。</p><p>您可以使用变量为多个维度项目创建动态自定义URL。 变量可以引用维度项的值，也可以引用划分维度。</p><p>（文档链接随后提供。）<!--For more information, see "Add hyperlinks to dimensions in a freeform table."--></p> |  | 2024年6月19日 |
 | **Audiences 已发布到 Experience Platform 中的新“Audiences”部分** | 从 Customer Journey Analytics 中发布的受众现在可以在 Adobe Experience Platform 的新“受众”部分中找到。<p>此前，从 Customer Journey Analytics 发布的受众可在 Experience Platform 的“细分”部分下找到。</p><p>此改进具有以下优点：</p><ul><li>受众出现在 Experience Platform 前不再有 1 小时的延迟；它们在发布后几秒钟即可使用。</li><li>可以使用 Experience Platform 中“来源”列对受众进行排序，该列显示了最初发布受众的应用程序。</li><li>Experience Platform 中的筛选和排序选项使您能够更快地找到相关受众。</li></ul> <p>（文档链接见下文）</p> |  | 2024年7月14日 |
 
 {style="table-layout:auto"}
