@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: f4a235d90ad44dbb192b74a03accc7ad4a39e986
+source-git-commit: 6b8d9abf7d807a1e19aa86386eb2dae9bb18f472
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1234'
 ht-degree: 2%
 
 ---
@@ -16,8 +16,8 @@ ht-degree: 2%
 
 此 **[!UICONTROL 留存率]** 查看可衡量用户如何随着时间的推移继续使用您的产品，这可以帮助您了解您的产品是否适合市场。 该分析基于两个重要事件计算用户：
 
-* 开始事件：用户在日期范围内第一次参与开始事件
-* 返回事件：在分析日期范围内，用户最近参与返回事件的时间
+* 开始事件：用于使用户有资格包含在您的分析中的事件。
+* 返回事件：用户必须与之参与才能在分析中计为返回用户的事件。
 
 在此视图中，图表的x轴表示自用户的初始开始事件以来的时间，y轴表示与返回事件互动的用户百分比。 您可以跨持续时间查看保留和流失，显示的持续时间可通过查询设置进行自定义。 在图表下方，表格提供了汇总数据，并且可以选择显示单个同类群组，即一组在同一日期执行了开始事件的人员。
 
