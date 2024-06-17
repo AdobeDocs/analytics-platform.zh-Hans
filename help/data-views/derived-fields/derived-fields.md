@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 6a77107680b4882a64b01bf1606761d4f6d5a3d1
+source-git-commit: 6f99a732688f59e3950fc9b4336ad5b0434f24a7
 workflow-type: tm+mt
-source-wordcount: '7843'
+source-wordcount: '8377'
 ht-degree: 12%
 
 ---
@@ -593,7 +593,7 @@ ht-degree: 12%
 | [!DNL long trip] |
 
 
-## 更多信息
+## 更多信息 {#casewhen-more-info}
 
 Customer Journey Analytics使用嵌套容器结构，按照Adobe Experience Platform的样式建模 [XDM](https://experienceleague.adobe.com/cn/docs/experience-platform/xdm/home.html?lang=zh-Hans) （体验数据模型）。 请参阅 [容器](../create-dataview.md#containers) 和 [过滤器容器](../../components/filters/filters-overview.md#filter-containers) 了解更多背景信息。 此容器模型虽然本质上较为灵活，但在使用规则生成器时施加了一些限制。
 
@@ -841,6 +841,8 @@ Customer Journey Analytics使用以下默认容器模型：
 
 +++ 详细信息
 
+{{release-limited-testing}}
+
 ## 规范 {#deduplicate-io}
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
@@ -1022,7 +1024,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 ![小写规则的屏幕截图](assets/lookup.png)
 
-## 更多信息
+## 更多信息 {#lookup-more-info}
 
 您可以快速插入 [!UICONTROL 查找] 函数中，已包含一个或多个其他函数。
 
@@ -1161,6 +1163,8 @@ Customer Journey Analytics使用以下默认容器模型：
 
    - 此公式有效。
      ![数学详细信息5](assets/math-more-info-5.png)
+
+使用Math函数进行基于点击级别的计算。 使用 [总结](#summarize) 用于基于事件、会话或人员范围计算的函数。
 
 +++
 
@@ -1350,7 +1354,7 @@ Customer Journey Analytics使用以下默认容器模型：
 | customer-journey-analytics.html |
 | adobe-experience-platform.html |
 
-## 更多信息
+## 更多信息 {#regex-replace-more-info}
 
 Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以下表达式：
 
@@ -1492,6 +1496,75 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 +++
 
+<!-- SUMMARIZE -->
+
+### 总结
+
+在事件、会话和用户级别将聚合类型函数应用于量度或维度。
+
++++ 详细信息
+
+{{release-limited-testing}}
+
+## 规范 {#summarize-io}
+
+| 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
+|---|---|---|---|---|
+| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>值<ul><li>规则</li><li>标准字段</li><li>字段</li></ul></li><li>总结方法</li><li>范围<ul><li>事件</li><li>会话</li><li>人员</li></ul></li></ul> | <ul><li>数值<ul><li>MAX — 从一组值中返回最大值</li><li>MIN — 返回一组值中的最小值</li><li>MEDIAN — 返回一组值的中位数</li><li>MEAN — 返回一组值的平均值</li><li>SUM — 返回一组值的和</li><li>COUNT — 返回收到的值的数量</li><li>DISTINCT — 返回一组不同的值</li></ul></li><li>字符串<ul><li>DISTINCT — 返回一组不同的值</li><li>COUNT DISTINCT — 返回非重复值的数量</li><li>最常见 — 返回最常收到的字符串值</li><li>LEAST COMMON — 返回最不常收到的字符串值</li><li>FIRST — 收到的第一个值；仅适用于会话和事件表</li><li>LAST — 收到的最后一个值；仅适用于会话和事件表</li></ul></li><li>日期<ul><li>DISTINCT — 返回一组不同的值</li><li>COUNT DISTINCT — 返回非重复值的数量</li><li>最常见 — 返回最常收到的字符串值</li><li>LEAST COMMON — 返回最不常收到的字符串值</li><li>FIRST — 收到的第一个值；仅适用于会话和事件表</li><li>LAST — 收到的最后一个值；仅适用于会话和事件表</li><li>EARLIEST — 收到的最早值（由时间确定）；仅适用于会话和事件表</li><li>LATEST — 收到的最新值（由时间确定）；仅适用于会话和事件表</li></ul></li></ul> | 每个派生字段有3个函数 | 新建派生字段 |
+
+{style="table-layout:auto"}
+
+## 用例 {#summarize-uc}
+
+您要将添加到购物车收入分为三个不同的类别：小、中和大。 这使您能够分析和识别高价值客户的特征。
+
+### 数据早于 {#summarize-uc-databefore}
+
+假设：
+
+- 添加到购物车收入作为数值字段收集。
+
+方案：
+
+- CustomerABC123将ProductABC的35美元添加到购物车，然后将ProductDEF以75美元单独添加到购物车。
+- CustomerDEF456为其购物车中添加50美元的ProductGHI ，然后单独将ProductJKL添加到购物车中，价格为275美元。
+- CustomerGHI789为他们的购物车增加了500美元的ProductMNO。
+
+逻辑：
+
+- 如果访客的添加到购物车的总收入少于$150，则设置为小。
+- 如果访客的添加到购物车的总收入大于$150但小于$500，则设置为中。
+- 如果访客的添加到购物车的总收入大于或等于$500，则设置为大。
+
+结果：
+
+- CustomerABC123的添加到购物车收入的总价$110。
+- CustomerDEF456的添加到购物车总收入为$325。
+- CustomerGHI789的合计添加到购物车收入为500美元。
+
+### 派生字段 {#summarize-uc-derivedfield}
+
+您创建 `Add To Cart Revenue Size` 派生字段。 您使用 [!UICONTROL 摘要] 函数和 [!UICONTROL 总和] [!UICONTROL 摘要方法] 替换为 [!UICONTROL 范围] 设置为 [!UICONTROL 人员] 对以下各项的值求和 [!UICONTROL cart_add] 字段。 然后你再用一秒 [!UICONTROL 案例条件] 规则以树类别大小拆分结果。
+
+![摘要规则1的屏幕截图](assets/summarize.png)
+
+
+
+### 之后的数据 {#summarize-uc-dataafter}
+
+| 添加到购物车收入大小 | 访客 |
+|---|--:|
+| 小 | 1 |
+| 媒介 | 1 |
+| 大 | 1 |
+
+{style="table-layout:auto"}
+
+## 更多信息 {#summarize-more-info}
+
+使用汇总函数进行基于事件、会话或人员范围的计算。 使用 [数学](#math) 函数进行基于点击级别的计算。
+
++++
 
 <!-- TRIM -->
 
@@ -1507,7 +1580,6 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 |---|---|---|---|---|
 | <ul><li>字符串</li></ul> | <ul><li>[!UICONTROL 字段]<ul><li>规则</li><li>标准字段</li><li>字段</li></ul></li><li>修剪空格</li><li>修剪特殊字符<ul><li>输入特殊字符</li></ul></li><li>从左侧修剪<ul><li>从 <ul><li>字符串开始</li><li>位置<ul><li>位置#</li></ul></li><li>字符串<ul><li>字符串值</li><li>索引</li><li>标记以包含字符串</li></ul></li></ul></li><li>至<ul><li>字符串结束</li><li>位置<ul><li>位置#</li></ul></li><li>字符串<ul><li>字符串值</li><li>索引</li><li>标记以包含字符串</li></ul></li><li>长度</li></ul></li></ul></li><li>从右侧修剪<ul><li>从 <ul><li>字符串结束</li><li>位置<ul><li>位置#</li></ul></li><li>字符串<ul><li>字符串值</li><li>索引</li><li>标记以包含字符串</li></ul></li></ul></li><li>至<ul><li>字符串开始</li><li>位置<ul><li>位置#</li></ul></li><li>字符串<ul><li>字符串值</li><li>索引</li><li>标记以包含字符串</li></ul></li><li>长度</li></ul></li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段有1个函数</p> | <p>新建派生字段</p> |
 
-{style="table-layout:auto"}
 
 ## 用例1 {#trim-uc1}
 
@@ -1713,6 +1785,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 | <p>下一个或上一个</p> | <ul><li>3每个派生字段的下一个或上一个函数</li></ul> |
 | <p>正则表达式替换</p> | <ul><li>每个派生字段有1个正则表达式替换函数</li></ul> |
 | <p>拆分</p> | <ul><li>每个派生字段有5个拆分函数</li></ul> |
+| <p>总结</p> | <ul><li>3每个派生字段的函数摘要</li></ul> |
 | <p>修剪</p> | <ul><li>每个派生字段有1个修剪函数</li></ul> |
 | <p>URL 解析</p> | <ul><li>每个派生字段有5个URL解析函数</li></ul> |
 
@@ -1733,7 +1806,7 @@ If或Else If中的运算符在Case When函数中构造是条件与的组合 **�
 ![分类规则1的屏幕截图](assets/classify-1.png)
 
 
-## 更多信息
+## 更多信息 {#trim-more-info}
 
 [`Trim`](#trim) 和 [`Lowercase`](#lowercase) 的组件设置中已提供的功能 [数据视图](../component-settings/overview.md). 通过使用派生字段，您可以组合这些函数，以直接在Customer Journey Analytics中进行更复杂的数据转换。 例如，您可以使用 `Lowercase` 删除事件字段中的区分大小写，然后使用 [`Lookup`](#lookup) 将新的小写字段与仅具有小写查找键的查找数据集匹配。 或者，您可以使用 `Trim` 在设置之前删除字符 `Lookup` 在新字段上。
 
