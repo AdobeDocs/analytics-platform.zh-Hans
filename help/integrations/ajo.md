@@ -4,8 +4,8 @@ description: 引入 Adobe Journey Optimizer 生成的数据，并使用 Customer
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
+source-git-commit: 5d89d6c3dae4964bc4085110d7baa51199e27044
+workflow-type: tm+mt
 source-wordcount: '862'
 ht-degree: 100%
 
@@ -55,7 +55,7 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 | --- | --- | --- |
 | 历程名称 | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | 组件类型：维度 |
 | 历程名称和版本 | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNameAndVersion` | 组件类型：维度 |
-| 历程节点名称 | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | 组件类型：维度 |
+| 历程节点名称 | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeName` | 组件类型：维度 |
 | 历程节点类型 | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeType` | 组件类型：维度 |
 | 营销活动名称 | `_experience.customerJourneyManagement.`<br>`entities.campaign.name` | 组件类型：维度 |
 | 渠道 | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.channel._id` | 组件类型：维度 |
@@ -85,11 +85,11 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 | 发送次数 | 电子邮件提供商接受的邮件数。 | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | 组件类型：量度<br>包括排除值：等于 `sent` |
 | 垃圾邮件投诉次数 | 垃圾邮件投诉的次数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | 组件类型：量度<br>包括排除值：等于 `spam_complaint` |
 | 取消订阅次数 | 取消订阅的次数。 | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | 组件类型：量度<br>包括排除值：等于 `unsubscribe` |
-| Edge 发送次数 | Edge 网络向 Web 或移动 SDK 发送消息的次数 | 使用架构字符串元素 `_experience.decisioning.propositionEventType.send` |
-| 入站显示次数 | 向用户显示 Web 或应用程序内消息的次数 | 使用架构字符串元素 `_experience.decisioning.propositionEventType.display` |
-| 入站点击次数 | Web 或应用程序内消息点击次数 | 使用架构字符串元素 `_experience.decisioning.propositionEventType.interact` |
-| 应用程序内触发器 | 决策引擎建议应显示消息的次数。移动 SDK 可以推翻减少实际显示次数的决定。 | 使用架构字符串元素 `_experience.decisioning.propositionEventType.trigger` |
-| 应用程序内解除 | SDK 从 UI 中删除应用程序内消息的次数 | 使用架构字符串元素 `_experience.decisioning.propositionEventType.dismiss` |
+| Edge 发送次数 | Edge 网络向 Web 或移动 SDK 发送消息的次数 | 使用架构字符串元素 `_experience.decisioning.propositionEventType.send` | |
+| 入站显示次数 | 向用户显示 Web 或应用程序内消息的次数 | 使用架构字符串元素 `_experience.decisioning.propositionEventType.display` | |
+| 入站点击次数 | Web 或应用程序内消息点击次数 | 使用架构字符串元素 `_experience.decisioning.propositionEventType.interact` | |
+| 应用程序内触发器 | 决策引擎建议应显示消息的次数。移动 SDK 可以推翻减少实际显示次数的决定。 | 使用架构字符串元素 `_experience.decisioning.propositionEventType.trigger` | |
+| 应用程序内解除 | SDK 从 UI 中删除应用程序内消息的次数 | 使用架构字符串元素 `_experience.decisioning.propositionEventType.dismiss` | |
 
 {style="table-layout:auto"}
 
