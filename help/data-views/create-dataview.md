@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 162d1c6878a906d831a4f27f0b2c5105171e16e8
-workflow-type: ht
-source-wordcount: '1468'
-ht-degree: 100%
+source-git-commit: 8ff130a20c719a594207f854ff3b85619f38b512
+workflow-type: tm+mt
+source-wordcount: '1714'
+ht-degree: 85%
 
 ---
 
@@ -43,10 +43,20 @@ ht-degree: 100%
 
 | 设置 | 描述 |
 | --- | --- |
-| [!UICONTROL 连接] | 此字段将数据视图链接到您之前建立的连接，其中包含一个或多个 Adobe Experience Platform 数据集。 |
-| [!UICONTROL 名称] | 必填。数据视图的名称。此值显示在 Analysis Workspace 右上角的下拉列表中。 |
-| [!UICONTROL 外部 ID] | 必填。您可以在外部源（例如商业智能工具）中使用的数据视图的名称。默认值为 `unspecified`。如果您未指定外部 ID，则名称将从数据视图的名称生成，并用下划线替换空格。 |
-| [!UICONTROL 描述] | 可选。Adobe 建议输入详细描述，以便用户了解为什么存在该数据视图以及为谁设计了它。 |
+| [!UICONTROL **连接**] | 此字段将数据视图链接到您之前建立的连接，其中包含一个或多个 Adobe Experience Platform 数据集。 |
+| [!UICONTROL **名称**] | 必填。数据视图的名称。此值显示在 Analysis Workspace 右上角的下拉列表中。 |
+| [!UICONTROL **外部 ID**] | 必填。您可以在外部源（例如商业智能工具）中使用的数据视图的名称。默认值为 `unspecified`。如果您未指定外部 ID，则名称将从数据视图的名称生成，并用下划线替换空格。 |
+| [!UICONTROL **描述**] | 可选。Adobe 建议输入详细描述，以便用户了解为什么存在该数据视图以及为谁设计了它。 |
+
+{style="table-layout:auto"}
+
+### 兼容性
+
+除了Customer Journey Analytics之外，还提供在使用Adobe Journey Optimizer时适用的设置。
+
+| 设置 | 描述 |
+| --- | --- |
+| [!UICONTROL **在Adobe Journey Optimizer中设置为默认数据视图**] | 此配置选项可标准化跨Journey Optimizer和Customer Journey Analytics的报表。 它还允许您在Customer Journey Analytics中对Adobe Journey Optimizer数据执行高级分析(通过选择 [!UICONTROL **在CJA中分析**] Journey Optimizer按钮)。<p>要执行此类分析，Journey Optimizer需要访问Customer Journey Analytics数据视图。<p>启用此选项可使其成为Journey Optimizer报表中使用的默认数据视图。</p><p>此配置选项会自动：</p><ul><li>在Customer Journey Analytics的关联连接中配置所有必需的Journey Optimizer数据集，以与Journey Optimizer一起使用。</li><li>在数据视图中创建一组Journey Optimizer指标和维度（包括派生字段和计算量度）。 上下文标签会在所有这些量度和维度上自动设置。<p>**注意：** 如果需要，您可以对数据视图中可用于Journey Optimizer和Customer Journey Analytics的数据集、维度或指标进行额外的手动自定义，如中所述 [将Adobe Journey Optimizer与Adobe Customer Journey Analytics集成](/help/integrations/ajo.md). </p></li></ul><p>您可以稍后更改默认数据视图，但这样做可能会更改Journey Optimizer报表数据。 如果选择在启用此选项后禁用此选项，系统将提示您选择新的默认数据视图。</p> |
 
 {style="table-layout:auto"}
 
@@ -56,9 +66,9 @@ ht-degree: 100%
 
 | 设置 | 描述 |
 | --- | --- |
-| [!UICONTROL 人员容器名称] | [!UICONTROL 人员]（默认）。[!UICONTROL 人员]容器包括人员在指定的时间范围内的每个会话和事件。如果您的组织使用不同的用语（例如，“访客”或“用户”），可在此处将该容器重命名。 |
-| [!UICONTROL 会话容器名称] | [!UICONTROL 会话]（默认）。通过[!UICONTROL 会话]容器可以识别页面交互、营销活动或特定会话的转化。可将此容器重命名为“访问”或您的组织更喜欢的任何其他用语。 |
-| [!UICONTROL 事件容器名称] | [!UICONTROL 事件]（默认）。[!UICONTROL 事件]容器定义数据集中的个别事件。如果您的组织使用不同的用语（例如，“点击”或“页面查看”），可在此处将该容器重命名。 |
+| [!UICONTROL **人员容器名称**] | [!UICONTROL 人员]（默认）。[!UICONTROL 人员]容器包括人员在指定的时间范围内的每个会话和事件。如果您的组织使用不同的用语（例如，“访客”或“用户”），可在此处将该容器重命名。 |
+| [!UICONTROL **会话容器名称**] | [!UICONTROL 会话]（默认）。通过[!UICONTROL 会话]容器可以识别页面交互、营销活动或特定会话的转化。可将此容器重命名为“访问”或您的组织更喜欢的任何其他用语。 |
+| [!UICONTROL **事件容器名称**] | [!UICONTROL 事件]（默认）。[!UICONTROL 事件]容器定义数据集中的个别事件。如果您的组织使用不同的用语（例如，“点击”或“页面查看”），可在此处将该容器重命名。 |
 
 {style="table-layout:auto"}
 
@@ -68,11 +78,11 @@ ht-degree: 100%
 
 | 设置 | 描述 |
 | --- | --- |
-| [!UICONTROL 时区] | 选择要用哪个时区表示数据。如果选择执行夏令时的时区，则将自动调整数据以反映这一点。春季将时钟向前调整一小时，产生一小时差距。秋季将时钟向后调整一小时，在夏令时转换期间将有一小时重复。 |
-| [!UICONTROL 日历类型] | 决定每个月的周数如何分组。<br>**公历：**&#x200B;标准日历格式。季度按月分组。<br>**4-5-4 零售：**&#x200B;标准化的 4-5-4 零售日历。季度的第一个月和最后一个月包含 4 周，而季度的第二个月包含 5 周。<br>**自定义 (4-5-4)：**&#x200B;类似于 4-5-4 日历，但可选择一年的第一天以及哪年出现“额外的”一周。<br>**自定义 (4-4-5)：**&#x200B;每个季度的第一个月和第二个月包含 4 周，而每个季度的最后一个月包含 5 周。<br>**自定义 (5-4-4)：**&#x200B;每个季度的第一个包含为 5 周，而每个季度的第二个月和第三个月包含 4 周。 |
-| [!UICONTROL 一年的第一个月]和[!UICONTROL 一周的第一天] | 对“公历”日历类型可见。指定要让日历年从哪一个月开始，以及每周从哪一天开始。 |
-| [!UICONTROL 当年的第一天] | 对自定义日历类型可见。指定要让当年在一年中的哪一天开始。日历自动根据此值设置每周第一天的格式。 |
-| [!UICONTROL 出现“额外的”一周的年份] | 对于大多数 364 天日历（52 周，每周 7 天），每年都会积累多出的天数，直到它们加起来形成额外的一周。然后，将这额外的一周添加到当年的最后一个月。指定要将额外的一周添加到哪年。 |
+| [!UICONTROL **时区**] | 选择要用哪个时区表示数据。如果选择执行夏令时的时区，则将自动调整数据以反映这一点。春季将时钟向前调整一小时，产生一小时差距。秋季将时钟向后调整一小时，在夏令时转换期间将有一小时重复。 |
+| [!UICONTROL **日历类型**] | 决定每个月的周数如何分组。<br>**公历：**&#x200B;标准日历格式。季度按月分组。<br>**4-5-4 零售：**&#x200B;标准化的 4-5-4 零售日历。季度的第一个月和最后一个月包含 4 周，而季度的第二个月包含 5 周。<br>**自定义 (4-5-4)：**&#x200B;类似于 4-5-4 日历，但可选择一年的第一天以及哪年出现“额外的”一周。<br>**自定义 (4-4-5)：**&#x200B;每个季度的第一个月和第二个月包含 4 周，而每个季度的最后一个月包含 5 周。<br>**自定义 (5-4-4)：**&#x200B;每个季度的第一个包含为 5 周，而每个季度的第二个月和第三个月包含 4 周。 |
+| [!UICONTROL **一年的第一个月**]&#x200B;和&#x200B;[!UICONTROL **一周的第一天**] | 对“公历”日历类型可见。指定要让日历年从哪一个月开始，以及每周从哪一天开始。 |
+| [!UICONTROL **当年的第一天**] | 对自定义日历类型可见。指定要让当年在一年中的哪一天开始。日历自动根据此值设置每周第一天的格式。 |
+| [!UICONTROL **出现“额外的”一周的年份**] | 对于大多数 364 天日历（52 周，每周 7 天），每年都会积累多出的天数，直到它们加起来形成额外的一周。然后，将这额外的一周添加到当年的最后一个月。指定要将额外的一周添加到哪年。 |
 
 {style="table-layout:auto"}
 
