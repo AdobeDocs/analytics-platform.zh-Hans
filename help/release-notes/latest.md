@@ -3,9 +3,9 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: f01e6c1f4abe57b8af42fc3939c312ff79785a06
+source-git-commit: 4c6578d500ccd86c9e64256aebb65e27de7896be
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1108'
 ht-degree: 48%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 48%
 | **派生字段 — 摘要函数** | 提供在事件、会话和用户级别将聚合类型函数应用于量度或维度的功能。 （文档链接见下文） | | 2024年6月26日 |
 | **派生字段 — 重复数据删除函数** | 有助于防止重复计算某个值。 可以在用户或会话级别应用，也可以根据维度的唯一值应用。 （文档链接见下文） |  | 2024年6月26日 |
 | **摄取优先级和延迟** | 现在，无论事件数据是在24小时、48小时还是7天之前，您都可以在90分钟(SLT)内以Customer Journey Analytics摄取该数据。 请注意，此功能因您公司购买的SKU软件包而异：<ul><li>CJA优先级摄取基本：90分钟SLT处理内24小时旧数据（可用于CJA Foundation和CJA Select）</li><li>CJA优先摄取中间：90分钟SLT处理内72小时旧数据（适用于CJA Prime）</li><li>CJA优先级摄取高级：90分钟SLT处理内1周前的数据（适用于CJA Ultimate）</li></ul> |  | 2024 年 6 月 12 日 |
-| **共享用于导出和导入的账户和位置** | 用户现在可以将他们创建的帐户和位置提供给其组织内的所有用户。只有帐户和位置所有者和系统管理员可以编辑和删除帐户和位置。 以前，帐户和位置只能由创建它们的用户使用。 当用户[配置云导出帐户](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/exports/cloud-export-accounts)以及[配置云导出位置时，这些设置适用](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/exports/cloud-export-locations)。 | 2024 年 6 月 12 日 | 2024年6月18日 |
+| **共享用于导出和导入的账户和位置** | 用户现在可以将他们创建的帐户和位置提供给其组织内的所有用户。只有帐户和位置所有者和系统管理员可以编辑和删除帐户和位置。 以前，帐户和位置只能由创建它们的用户使用。 当用户[配置云导出帐户](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/exports/cloud-export-accounts)以及[配置云导出位置时，这些设置适用](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/exports/cloud-export-locations)。 | 2024 年 6 月 12 日 | 2024年7月中 |
 | **在下拉筛选条件中选择多个字段** | 当下拉筛选条件中添加多个字段时，用户现在可以一次选择多个字段。面板经过过滤，可包含任何选定的字段。 <p>以前，用户在下拉筛选条件中一次只能选择一个字段。</p><p>右键单击下拉筛选器时，需要在下拉筛选器中进行选择的选项（已移至菜单）。</p><p>以前，用户可以单击下拉菜单中“无过滤器”选项旁边的(x)。</p><p>有关更多信息，请参阅 [静态下拉过滤器](/help/analysis-workspace/c-panels/panels.md#static-drop-down-filters) 在 [面板概述](/help/analysis-workspace/c-panels/panels.md).</p> |  | 2024 年 6 月 19 日 |
 | **Workspace 项目目录** | 现在可以为项目提供新的目录。目录提供的链接使用户能够在项目中的面板和可视化图表之间快速移动。 <p>该目录在所有项目的左边栏中均可用。</p><p>有关更多信息，请参阅 [项目目录](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md). |  | 2024 年 6 月 19 日 |
 | **为自由格式表中的维度项目创建超链接** | 您可以为一个或多个维度项目创建超链接，使其在 Analysis Workspace 中的自由格式表中可点击。 <p>您可以为具有 URL 值的维度项目创建超链接，也可以为具有非 URL 值的维度项目创建自定义 URL。</p><p>您可以使用变量为多个维度项目创建动态自定义 URL。变量可以引用维度项的值，也可以引用细分维度。</p><p>有关更多信息，请参阅 [在自由格式表中为维度创建超链接](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md).</p> |  | 2024 年 6 月 19 日 |
