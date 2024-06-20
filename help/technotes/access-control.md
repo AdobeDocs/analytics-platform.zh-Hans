@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 7280bd21882e2baa31e76dbb6f983ccaf1af8633
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 52%
+source-wordcount: '1195'
+ht-degree: 53%
 
 ---
 
@@ -59,11 +59,7 @@ Customer Journey Analytics由三个访问级别或三个角色管理：产品管
 
 * 将数据集导出到云 [目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html)
 
-  >[!AVAILABILITY]
-  >
-  >将数据集导出到云的功能处于版本的有限测试阶段，可能在您的环境中尚不可用。 当该功能正式发布时，将删除此说明。有关Customer Journey Analytics发布过程的信息，请参阅 [Customer Journey Analytics功能发布](/help/release-notes/releases.md).
-
-  要执行此任务，用户还需要以下Experience Platform权限：
+  要执行此任务，用户需要以下Experience Platform权限：
    * 管理目标
    * 激活目标
 
@@ -149,6 +145,6 @@ Customer Journey Analytics由三个访问级别或三个角色管理：产品管
 | [!UICONTROL **与任何人共享项目链接**] | 允许用户 [与任何人共享项目。](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html#share-public-link) |
 | **[!UICONTROL 数据视图工具]**： |   |
 | [!UICONTROL **完整表导出**] | 允许用户 [将整个表导出到云](/help/analysis-workspace/export/export-cloud.md). |
-| [!UICONTROL **SQL查询服务访问**] | 允许用户访问 [aep中的查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html). |
+| [!UICONTROL **SQL查询服务访问**] | 允许用户访问 [aep中的查询服务](https://experienceleague.adobe.com/cn/docs/experience-platform/query/home.html?lang=zh-Hans). |
 
 {style="table-layout:auto"}
