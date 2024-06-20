@@ -1,16 +1,17 @@
 ---
 description: 了解如何在Analysis Workspace中将组件添加到项目
-title: 在Analysis Workspace中使用组件
+title: 使用 Analysis Workspace 中的组件
 feature: Components
 role: User
-source-git-commit: b02a3954e7b531caabfbea1f7df4e322eb4af741
+exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
+source-git-commit: 697503bba56f44159df7a2f6a0e60a0a4178266d
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 23%
+source-wordcount: '849'
+ht-degree: 16%
 
 ---
 
-# 在Analysis Workspace中使用组件
+# 使用 Analysis Workspace 中的组件
 
 组件构成了Analysis Workspace中任何项目的实际数据。 组件由维度、量度、过滤器和日期范围组成。 您可以将组件拖到可视化图表或面板中，以将其添加到项目中。
 
@@ -34,7 +35,11 @@ ht-degree: 23%
 
 1. 滚动到或搜索要添加的组件，然后将其拖到项目内的面板或可视化中。
 
-   例如，您可以将某个筛选器拖到面板标题中的筛选器放置区。
+1. （可选）将组件拖到面板标题中的过滤器拖放区域。
+
+   过滤器适用于面板中的所有内容。
+
+   有关如何使用面板上的过滤器拖放区域来过滤面板的信息，请参阅 [放置区域](/help/analysis-workspace/c-panels/panels.md#drop-zone) 在 [面板概述](/help/analysis-workspace/c-panels/panels.md).
 
    ![将筛选器放入拖放区](assets/filter-dropzone.png)
 
@@ -61,6 +66,10 @@ ht-degree: 23%
      ![将维度添加到项目](assets/add-dimensions.png)
 
    * 将一个或多个维度从左边栏拖至过滤器拖放区域以创建临时过滤器，如中所述 [将过滤器添加到项目](#add-filters-to-a-project).
+
+1. （可选）您可以在Analysis Workspace中通过其他组件划分维度和维度项。
+
+   有关更多信息，请参阅 [在工作区中划分维度](/help/components/dimensions/t-breakdown-fa.md).
 
 有关如何在Analysis Workspace中使用维度的更多信息，请参阅 [预览维度](/help/components/dimensions/view-dimensions.md)， [划分维度](/help/components/dimensions/t-breakdown-fa.md)、和 [时间划分维度](/help/components/dimensions/time-parting-dimensions.md).
 
@@ -90,31 +99,23 @@ ht-degree: 23%
 
 [过滤器](/help/components/filters/filters-overview.md) 允许您根据特性或特定交互来识别访客的子集。
 
-要将过滤器添加到Analysis Workspace中的项目，请执行以下操作：
+您可以通过以下任意方式在Analysis Workspace中使用筛选器：
 
-1. 在Analysis Workspace中开始将过滤器添加到项目，如中所述 [开始将组件添加到项目](#begin-adding-components-to-a-project).
+### 将过滤器添加到面板
 
-1. 选择下列方法之一以开始筛选面板：
+将过滤器添加到面板时，过滤器将应用于面板中的所有内容。
 
-   * 将单个过滤器从左边栏拖至过滤器拖放区域。
+有关如何使用面板上的过滤器拖放区域来过滤面板的信息，请参阅 [放置区域](/help/analysis-workspace/c-panels/panels.md#drop-zone) 在 [面板概述](/help/analysis-workspace/c-panels/panels.md).
 
-     ![将筛选器放入拖放区](assets/filter-dropzone.png)
+### 将过滤器添加到自由格式表中的列
 
-   * 按住Shift或Ctrl键在左边栏中选择多个过滤器，然后按住Shift键，将多个过滤器拖放到过滤器拖放区域。
+将过滤器添加到自由格式表的列时，过滤器应用于表列中的所有内容。
 
-     ![将多个筛选器拖放到拖放区域中](assets/filter-dropzone-multiple.png)
+### 创建计算量度时使用过滤器
 
-     这将创建一个下拉菜单，通过该菜单，面板的用户可以选择要应用的过滤器。 下拉菜单包含 [!UICONTROL **无筛选器**] 用户可以选择的选项，这将使面板保持未过滤状态。
+在计算量度生成器中，可在量度定义中应用筛选器。
 
-     您可以从下拉菜单中选择(x)以删除任何选项。 如果您删除 [!UICONTROL **无筛选器**] 选项，则需要过滤器。
-
-   * 通过将非过滤器组件拖放到拖放区域来创建临时过滤器。 这可以节省转到过滤器生成器的时间和精力。 通过这种方式创建的过滤器自动定义为点击级别过滤器。通过单击过滤器旁的信息图标 (i)、单击铅笔形状编辑图标并在过滤器生成器中进行编辑，可以修改此定义。
-
-     临时过滤器是一种快速过滤器，是项目的本地过滤器。除非您将其公开，否则它们不会出现在左侧栏中。
-
-     有关更多信息，请参阅[快速过滤器](/help/components/filters/quick-filters.md)。
-
-有关如何在面板上使用过滤器拖放区域来过滤面板的更多信息，请参阅 [放置区域](/help/analysis-workspace/c-panels/panels.md#drop-zone) 在 [面板概述](/help/analysis-workspace/c-panels/panels.md).
+有关更多信息，请参阅 [过滤量度](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md).
 
 ## 向项目添加日期范围
 

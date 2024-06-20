@@ -4,10 +4,10 @@ description: 引入 Adobe Journey Optimizer 生成的数据，并使用 Customer
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 5d89d6c3dae4964bc4085110d7baa51199e27044
+source-git-commit: 6e1db2351aa9fcc4682b892334430c1896cee914
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 100%
+source-wordcount: '1006'
+ht-degree: 83%
 
 ---
 
@@ -15,13 +15,21 @@ ht-degree: 100%
 
 [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) 帮助您营造紧密联系、与上下文相关且个性化的体验。它还有助于让客户了解其客户历程的下一步。
 
-可通过执行以下步骤而导入 Journey Optimizer 生成的数据以在 Customer Journey Analytics 中执行高级分析：
+您可以导入Journey Optimizer生成的数据，以在Customer Journey Analytics中执行高级分析。 您可以自动执行此操作。 如果需要，您可以对数据视图中可用于Adobe Journey Optimizer和Customer Journey Analytics的数据集、维度或指标进行额外的手动自定义。
 
-## 将数据从 Journey Optimizer 发送到 Adobe Experience Platform
+## 自动配置要与Journey Optimizer一起使用的Customer Journey Analytics数据视图
+
+Customer Journey Analytics中的配置选项允许您指定要与Journey Optimizer一起使用的Customer Journey Analytics数据视图，而无需手动配置。 <p>有关如何启用此配置选项的信息，请参见 [兼容性](/help/data-views/create-dataview.md#compatibility) 中的部分 [创建或编辑数据视图](/help/data-views/create-dataview.md).
+
+## 手动配置要与Journey Optimizer一起使用的Customer Journey Analytics数据视图
+
+以下部分介绍了如何手动导入Journey Optimizer生成的数据以在Customer Journey Analytics中执行高级分析。 仅当满足以下条件时，才需要 [自动配置选项](#automatically-configure-a-customer-journey-analytics-data-view-to-be-used-with-adobe-journey-optimizer) 不足以满足您的需求。
+
+### 将数据从 Journey Optimizer 发送到 Adobe Experience Platform
 
 Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 Customer Journey Analytics。有关如何将 Journey Optimizer 数据发送到 Platform as a Dataset 的步骤，请参阅 Journey Optimizer 用户指南中的[开始使用数据集](https://experienceleague.adobe.com/docs/journey-optimizer/using/data-management/datasets/get-started-datasets.html)。
 
-## 在 Customer Journey Analytics 中创建连接
+### 在 Customer Journey Analytics 中创建连接
 
 一旦 Journey Optimizer 数据进入 Adobe Experience Platform，即可根据 Journey Optimizer 数据集[创建连接](/help/connections/create-connection.md)。或者，您可以将 Journey Optimizer 数据集添加到现有连接。
 
@@ -38,7 +46,7 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 {style="table-layout:auto"}
 
 
-## 配置数据视图以容纳 Journey Optimizer 维度和量度
+### 配置数据视图以容纳 Journey Optimizer 维度和量度
 
 创建连接之后，可创建一个或多个[数据视图](/help/data-views/create-dataview.md)配置可在 Customer Journey Analytics 中找到的所需的维度和量度。
 
@@ -47,7 +55,7 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 >Adobe Journey Optimizer 和 Customer Journey Analytics 之间的数据差异通常小于 1-2%。过去两小时内收集到的数据可能存在较大差异。请使用排除今天的日期范围以缓解涉及处理时间的差异。
 
 
-### 在数据视图中配置维度
+#### 在数据视图中配置维度
 
 可在数据视图中创建以下维度，以实现与 Journey Optimizer 中类似的维度大致对等。有关维度自定义选项的详细信息，请参阅数据视图管理器中的[组件设置](/help/data-views/component-settings/overview.md)。
 
@@ -70,7 +78,7 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 
 {style="table-layout:auto"}
 
-### 在数据视图中配置量度
+#### 在数据视图中配置量度
 
 可在数据视图中创建以下量度，以实现与 Journey Optimizer 中类似的量度大致对等。有关量度自定义选项的详细信息，请参阅数据视图管理器中的[组件设置](/help/data-views/component-settings/overview.md)。
 
@@ -93,7 +101,7 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 
 {style="table-layout:auto"}
 
-### 在 Analysis Workspace 中配置计算量度
+#### 在 Analysis Workspace 中配置计算量度
 
 配置要用于 Journey Optimizer 数据集的维度和量度后，还可为关于这些数据的其他见解配置[计算量度](/help/components/calc-metrics/calc-metr-overview.md)。这些计算量度基于上述在数据视图管理器中创建的量度。
 

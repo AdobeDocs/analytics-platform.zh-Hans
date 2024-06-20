@@ -5,10 +5,10 @@ title: 项目概述
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 10751991e3c40cfefac7d32cea0b5cc557133232
 workflow-type: tm+mt
-source-wordcount: '1336'
-ht-degree: 69%
+source-wordcount: '1342'
+ht-degree: 64%
 
 ---
 
@@ -89,11 +89,19 @@ ht-degree: 69%
 
 ## 左侧边栏 {#left-rail}
 
-在项目中，可从左侧边栏访问[面板](/help/analysis-workspace/c-panels/panels.md)、表格、[可视化](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)和[组件]。这些都是项目的构建基块。
+在项目中，左边栏中提供了各种图标，每种图标都表示项目的重要组成部分：
 
-还可从[空面板](/help/analysis-workspace/c-panels/blank-panel.md)访问可视化和面板。
+* [面板](/help/analysis-workspace/c-panels/panels.md) ![面板图标](assets/panels-icon.png)
 
-左侧边栏中的组件（维度、量度、过滤器、日期范围）与活动面板数据视图相关。活动面板在自身四周将有蓝色边框，而活动数据视图将列在组件边栏的顶部。
+* [可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)![“可视化”图标](assets/visualizations-icon.png)
+
+* [组件](/help/components/overview.md)![组件图标](assets/components-icon.png)
+
+* [数据字典](/help/components/data-dictionary/data-dictionary-overview.md)![数据字典图标](assets/data-dictionary-icon.png)
+
+* [目录](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) ![目录图标](assets/toc-icon.png)
+
+左侧边栏中的组件（维度、量度、过滤器、日期范围）与活动面板数据视图相关。活动面板由它周围的蓝色边框来标识，活动数据视图列在组件边栏的顶部。
 
 ![与跨行业演示数据视图的活动面板数据视图相关的组件。](assets/left-rail.png)
 
