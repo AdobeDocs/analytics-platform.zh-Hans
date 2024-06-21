@@ -4,10 +4,10 @@ description: 了解 Analytics Source Connector 如何处理 Adobe Analytics 标�
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
 feature: Basics
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: ht
-source-wordcount: '503'
-ht-degree: 100%
+source-git-commit: 0dc99750126ed5b88b1d1f2d4afc28acad0fe84e
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 92%
 
 ---
 
@@ -51,6 +51,12 @@ Analytics Source Connector 将这些标识以 XDM 形式传递到 Adobe Experien
 
 * 如果存在 ECID，则会将它标记为事件的主标识。请注意，在此情况下，AAID 可能基于 ECID，如上面的讨论中所述。否则，会将 AAID 标记为事件的主标识。
 * 绝不会将 AACUSTOMID 标记为事件的主要 ID。不过，如果存在 AACUSTOMID，则 AAID 将基于 AACUSTOMID，如上面的讨论中所述。
+
+将一个或多个身份复制到时 `identityMap`， `endUserIDs._experience.mcid.namespace.code` 在同一事件中设置：
+
+* 如果AAID存在， `endUserIDs._experience.aaid.namespace.code` 设置为“AAID”。
+* 如果ECID存在， `endUserIDs._experience.mcid.namespace.code` 设置为“ECID”。
+* 如果AACUSTOMID存在， `endUserIDs._experience.aacustomid.namespace.code` 设置为“AACUSTOMID”。
 
 ## Customer Journey Analytics 和主要 ID
 
