@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: ca7e8db5f439d5447725473cb5c3a47c4d801ffa
+source-git-commit: a0515c68407b01dd39bed9f0bf9121b575d02dea
 workflow-type: tm+mt
-source-wordcount: '8377'
+source-wordcount: '8373'
 ht-degree: 12%
 
 ---
@@ -1247,7 +1247,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 字段]：</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul><li>[!UICONTROL 方法]：<ul><li>上一个值</li><li>下一个值</li></ul></li><li>[!UICONTROL 范围]：<ul><li>人员</li><li>会话</li></ul></li><li>[!UICONTROL 索引]：<ul><li>数值</li></ul><li>[!UICONTROL 包括重复项]：<ul><li>布尔值</li></ul></li><li>[!UICONTROL 包括“无值”]：<ul><li>布尔值</li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段3个函数</p> | <p>新建派生字段</p> |
+| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 字段]：</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul><li>[!UICONTROL 方法]：<ul><li>上一个值</li><li>下一个值</li></ul></li><li>[!UICONTROL 范围]：<ul><li>人员</li><li>会话</li></ul></li><li>[!UICONTROL 索引]：<ul><li>数值</li></ul><li>[!UICONTROL 包括重复项]：<ul><li>布尔值</li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段3个函数</p> | <p>新建派生字段</p> |
 
 {style="table-layout:auto"}
 
