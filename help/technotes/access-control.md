@@ -6,18 +6,18 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 7280bd21882e2baa31e76dbb6f983ccaf1af8633
+source-git-commit: 1a470345a6a2748b992263c3ad25e4cd7d3daa9e
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 53%
+source-wordcount: '1288'
+ht-degree: 42%
 
 ---
 
 # Customer Journey Analytics 访问控制
 
-Customer Journey Analytics由三个访问级别或三个角色管理：产品管理员角色、产品配置文件管理员角色和用户级别访问。 本主题将更详细地解释这些角色。
+Customer Journey Analytics由三个访问级别或三个角色控制：产品管理员角色、产品配置文件管理员角色和用户级别访问。 本主题将更详细地解释这些角色。
 
-此外，我们还讨论了限制访问的更加细粒度化的方法，如工作区管理和行级以及值级访问控制。
+此外，本文还讨论了限制访问的更加细粒度化的方法，如工作区管理和行级以及值级访问控制。
 
 ## 产品管理员角色
 
@@ -45,7 +45,7 @@ Customer Journey Analytics由三个访问级别或三个角色管理：产品管
 
 ### 产品管理员其他权限
 
-除了在中作为产品管理员添加外， **Customer Journey Analytics产品配置文件** 在 [Admin Console](https://adminconsole.adobe.com/enterprise/)，则需要其他权限才能在Customer Journey Analytics中完成以下任务：
+除了在中作为产品管理员添加外， **Customer Journey Analytics产品配置文件** 在 [Admin Console](https://adminconsole.adobe.com/enterprise/)，需要其他权限才能在Customer Journey Analytics中完成以下任务：
 
 * 创建、更新和删除数据 [连接](/help/connections/overview.md)
 
@@ -55,29 +55,39 @@ Customer Journey Analytics由三个访问级别或三个角色管理：产品管
    * 数据摄取：管理源
    * 查看标识命名空间
 
-     有关 Experience Platform 权限的更多信息，请参阅 [Adobe Experience Platform 中的访问控制](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hans)。
+     有关 Experience Platform 权限的更多信息，请参阅 [Adobe Experience Platform 中的访问控制](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home)。
 
 * 将数据集导出到云 [目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html)
 
   要执行此任务，用户需要以下Experience Platform权限：
+
    * 管理目标
    * 激活目标
 
-     有关Experience Platform目标权限的更多信息，请参阅 [目标概述](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html#access-controls).
+     有关Experience Platform目标权限的更多信息，请参阅 [目标概述](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home).
+
+* 使用 [BI扩展](../data-views/bi-extension.md)
+
+  对于要使用BI扩展的用户，需担任产品管理员
+
+   * 必须确保用户的Experience Platform权限包括具有查询服务资源的角色，该资源具有“管理查询”和“管理查询服务集成”选项。 请参阅 [管理产品配置文件的权限](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
+   * 必须确保用户具有适当的Customer Journey Analytics权限：
+      * 相关数据视图的访问权限。 请参阅中的数据视图 [Admin Console中的Customer Journey Analytics权限](#customer-journey-analytics-permissions-in-admin-console).
+      * 访问CJA BI扩展的权限。 请参阅中的数据视图工具，位于 [Admin Console中的Customer Journey Analytics权限](#customer-journey-analytics-permissions-in-admin-console).
 
 ## 产品配置文件管理员角色
 
 产品配置文件是一组权限。产品配置文件管理员可以
 
-* 创建和管理单个产品配置文件，例如添加新用户或管理用户组及其关联的产品配置文件。
+* 创建和管理单个产品配置文件。 例如，添加新用户或管理用户组及其关联的产品配置文件。
 
 * 在Customer Journey Analytics中，编辑作为其管理的产品配置文件一部分的数据视图。 他们无法创建新的数据视图。
 
 ## 用户级别访问
 
-下表概述了非产品管理员和CJA产品管理员的各种Customer Journey Analytics功能的主要访问权限。 了解这些权限有助于用户根据其在组织内的角色和职责有效地导航和利用CJA。
+下表概述了非产品管理员和Customer Journey Analytics产品管理员的各种Customer Journey Analytics功能的主要访问权限。 了解这些权限有助于用户根据其在该组织中的角色和职责有效地导航和使用Customer Journey Analytics。
 
-| CJA产品功能 | 非产品管理员（用户） | 产品管理员 |
+| 产品功能 | 非产品管理员（用户） | 产品管理员 |
 | --- | --- | --- |
 | **数据视图** | 无法查看/更新/创建/删除 | 可以创建/更新/删除 |
 | **连接** | 无法查看/更新/创建/删除 | 可以创建/更新/删除 |
@@ -102,7 +112,7 @@ Customer Journey Analytics由三个访问级别或三个角色管理：产品管
 
 ### 第三方访问
 
-与您公司合作的第三方有一个团队负责人，该团队负责人可以成为产品配置文件管理员。然后，该管理员可以将其团队中的用户添加到此产品配置文件。此管理员可以授予访问特定数据视图的权限，并将其他用户添加到此产品配置文件。他们还可以修改自己具有控制权的数据视图，以满足团队的需要。
+与您公司合作的第三方有一个团队负责人，该团队负责人可以成为产品配置文件管理员。此管理员可以将公司团队中的用户添加到此产品配置文件。 此管理员可以授予访问特定数据视图的权限，并将其他用户添加到此产品配置文件。他们还可以修改自己具有控制权的数据视图，以满足团队的需要。
 
 ### 行级访问控制
 
@@ -129,22 +139,22 @@ Customer Journey Analytics由三个访问级别或三个角色管理：产品管
 | --- | --- |
 | **[!UICONTROL 数据视图]** | 如果您将&#x200B;**[!UICONTROL 自动包含]**&#x200B;切换到&#x200B;**[!UICONTROL 开启]**，则属于此产品配置文件的用户可以查看所有现有和新创建的数据视图。如果此设置被设置为&#x200B;**[!UICONTROL 关闭]**，则可以选择用户有权访问的特定数据视图。 |
 | **[!UICONTROL 报告工具]**： |   |
-| **[!UICONTROL 审核日志访问]** | 此权限将强制对 [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) 和审核日志 UI 进行权限检查。 |
+| **[!UICONTROL 审核日志访问]** | 此权限将强制对 [API](https://www.adobe.io/cja-apis/docs/endpoints/auditlogs/) 和审核日志 UI 进行权限检查。 |
 | **[!UICONTROL Analysis Workspace 访问权限]** | 允许用户在Customer Journey Analytics中访问Analysis Workspace。 |
 | [!UICONTROL **引导式分析访问**] | 允许用户创建 [指导分析项目](/help/guided-analysis/overview.md). |
 | [!UICONTROL **预测**] | 允许用户访问Analysis Workspace中的预测功能 |
 | **[!UICONTROL 报告使用情况管理员]** | 允许用户查看和删除公司中运行的任何报告。 |
-| **[!UICONTROL 报告使用情况视图]** | 允许用户查看所有并发报告请求。 |
-| [!UICONTROL **完整表导出**] | 允许用户 [将整个表导出到云](/help/analysis-workspace/export/export-cloud.md). |
-| **[!UICONTROL 计算量度创建]** | 允许用户创建[计算量度](/help/components/calc-metrics/calc-metr-overview.md)。 |
-| **[!UICONTROL 过滤器创建]** | 允许用户创建[过滤器](/help/components/filters/filters-overview.md)。 |
+| **[!UICONTROL 报告使用情况视图]** | 允许用户查看所有并发报表请求。 |
+| [!UICONTROL **完整表导出**] | Let users [将整个表导出到云](/help/analysis-workspace/export/export-cloud.md). |
+| **[!UICONTROL 计算量度创建]** | 允许用户创建 [计算量度](/help/components/calc-metrics/calc-metr-overview.md). |
+| **[!UICONTROL 过滤器创建]** | 允许用户创建 [过滤器](/help/components/filters/filters-overview.md). |
 | **[!UICONTROL Labs 访问权限]** | 允许用户访问 [Labs](/help/labs/labs.md) 选项卡中的Customer Journey Analytics。 |
-| **[!UICONTROL 创建注释]** | 允许用户创建[注释](/help/components/annotations/overview.md)。 |
-| **[!UICONTROL 受众创建]** | 允许用户创建[受众](/help/components/audiences/audiences-overview.md)。 |
-| **[!UICONTROL 受众视图]** | 允许用户查看[受众](/help/components/audiences/audiences-overview.md)。 |
-| [!UICONTROL **与任何人共享项目链接**] | 允许用户 [与任何人共享项目。](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html#share-public-link) |
+| **[!UICONTROL 创建注释]** | 允许用户创建 [注释](/help/components/annotations/overview.md). |
+| **[!UICONTROL 受众创建]** | 允许用户创建 [受众](/help/components/audiences/audiences-overview.md). |
+| **[!UICONTROL 受众视图]** | 允许用户查看 [受众](/help/components/audiences/audiences-overview.md). |
+| [!UICONTROL **与任何人共享项目链接**] | Let users [与任何人共享项目。](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
 | **[!UICONTROL 数据视图工具]**： |   |
-| [!UICONTROL **完整表导出**] | 允许用户 [将整个表导出到云](/help/analysis-workspace/export/export-cloud.md). |
-| [!UICONTROL **SQL查询服务访问**] | 允许用户访问 [aep中的查询服务](https://experienceleague.adobe.com/cn/docs/experience-platform/query/home.html?lang=zh-Hans). |
+| [!UICONTROL **完整表导出**] | Let users [将整个表导出到云](/help/analysis-workspace/export/export-cloud.md). |
+| **[!UICONTROL [!UICONTROL CJA BI扩展]]** | 允许用户使用 [BI扩展](../data-views/bi-extension.md). |
 
 {style="table-layout:auto"}
