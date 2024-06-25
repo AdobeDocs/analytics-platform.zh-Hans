@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: cef43e45a647674c6f2472e9402224b5cbc617da
+source-git-commit: 9691e60e0ecb4cb6b48355c653fa66d824560f80
 workflow-type: tm+mt
 source-wordcount: '1105'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -121,7 +121,7 @@ ht-degree: 98%
       + [管理数据源](../analysis-workspace/visualizations/t-sync-visualization.md)
       + 自由格式表 {#freeform-table}
          + [自由格式表](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
-         + [在自由格式表中为维度创建超链接](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
+         + [为自由格式表中的维度创建超链接](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
          + 列和行设置 {#column-row-settings}
             + [列设置](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [行设置](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
@@ -329,7 +329,7 @@ ht-degree: 98%
 + Adobe 集成 {#integrations}
    + [概述](/help/integrations/overview.md)
    + [集成 Adobe Analytics](/help/integrations/aa.md)
-   + [集成 Target](/help/integrations/cja4t.md)
+   + [集成 Target](/help/integrations/at.md)
    + [集成 Journey Optimizer 数据](/help/integrations/ajo.md)
    + [集成决策管理数据](/help/integrations/ajo-od.md)
    + [集成 Customer AI](/help/integrations/customer-ai.md)
