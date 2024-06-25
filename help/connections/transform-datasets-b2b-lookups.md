@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
-source-git-commit: 6e50e9341c2eedd6e4882cc3eb943cbcb8dfc332
+source-git-commit: eef9b420f1016254dece0a916b82bc99e2ca866e
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,11 @@ ht-degree: 0%
 * [XDM业务机会人员关系](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
 * [XDM商业营销列表成员](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
 * [XDM商业营销活动成员](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
+
+>[!NOTE]
+>
+>每个id最多有10,000个项目。 此限制意味着对于任何给定人员ID，您只能拥有10,000个帐户、10,000个机会、10,000个营销列表或10,000个营销活动。
+
 
 要为此类数据集启用转换，请执行以下操作：
 
@@ -44,7 +49,7 @@ ht-degree: 0%
 
 1. 从连接中删除数据集。
 1. 保存连接。
-1. 为数据集启用转换时将数据集添加到连接
+1. 为数据集启用转换时，将数据集添加到连接。
 
 ## 背景信息
 
