@@ -4,9 +4,9 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 81ad9a41f1fa323f2e0149ce634904ceb1bc3198
+source-git-commit: bad5e71a51d9bf5f2155ea5c711763fafebc1bcf
 workflow-type: tm+mt
-source-wordcount: '3731'
+source-wordcount: '3742'
 ht-degree: 72%
 
 ---
@@ -20,6 +20,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2024 年 6 月** | |
+| 基于图形的拼合 | 更新了拼合文档，引入了基于图形的拼合。 |
 | AI 助手 | 已添加 [文档](../ai-assistant.md) 在AICustomer Journey Analytics助手上。 |
 | 转换数据集以进行B2B查找 | 添加了有关如何支持的文档 [对B2B数据进行基于人员的查找](/help/connections//transform-datasets-b2b-lookups.md) （包括客户、机会、营销列表和营销活动）使用转换B2B查找数据集。 |
 | 派生字段函数和函数模板 | 添加了关于其他派生字段函数的文档([数学](/help/data-views/derived-fields/derived-fields.md#math)， [下一个或上一个](/help/data-views/derived-fields/derived-fields.md#next-or-previous))和 [函数模板](/help/data-views/derived-fields/derived-fields.md#function-templates). |

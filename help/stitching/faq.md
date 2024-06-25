@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 34%
+source-wordcount: '1428'
+ht-degree: 29%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 34%
 
 +++**拼合重播访客可追溯到多久之前？**
 
-重新生成键值的回顾时间范围取决于您所需的数据[重播](explained.md)频率。例如，如果将拼合设置为每周重播一次数据，则重新生成键值的回顾时间范围为7天。 如果将拼合设置为每天重播一次数据，则重新生成键值的回顾时间范围为一天。
+重新生成键值的回顾时间范围取决于您所需的数据重播频率。 例如，如果将拼合设置为每周重播一次数据，则重新生成键值的回顾时间范围为7天。 如果将拼合设置为每天重播一次数据，则重新生成键值的回顾时间范围为一天。
 
 +++
 
@@ -47,7 +47,9 @@ ht-degree: 34%
 
 在某些情况下，单个用户可以与许多永久性 ID 相关联。例如，经常清除浏览器的Cookie或使用浏览器私人/隐身模式的用户。
 
-永久 ID 的数量与临时 ID 的使用无关。单个用户可以属于任意数量的设备，而不会影响Customer Journey Analytics跨设备拼合的功能。
+对于基于字段的拼合，永久ID的数量与临时ID的数量无关。 单个用户可以属于任意数量的设备，而不会影响Customer Journey Analytics跨设备拼合的功能。
+
+对于基于图的拼合，一个人在身份图中可以具有多个永久ID。 基于图形的拼接使用基于指定命名空间的永久ID。 如果同一命名空间存在更多永久ID，则使用词典编排的第一个永久ID。
 
 +++
 
@@ -120,3 +122,21 @@ Customer Journey Analytics和Adobe Analytics中的其他指标可能类似。 �
 否，Customer Journey Analytics当前无法使用身份映射字段进行拼接。
 
 +++
+
++++**是否需要摄取数据才能从基于字段的拼合切换到基于图形的拼合？**
+数据不必重新摄取到Experience Platform中，但需要在Customer Journey Analytics中重新配置。 请按照以下步骤操作：
+
+1. 设置新的基于图形的拼合数据集。
+1. 在Customer Journey Analytics中将新数据集配置为新连接的一部分。
+1. 切换现有数据视图以使用新连接（以及基于图形的新拼接数据集）
+1. 删除使用基于字段的拼合数据集的旧连接。
+
++++
+
++++**现有报告是否会受到干扰？**
+
+如果您按照上述步骤操作，则不然。 否则，请咨询Adobe咨询以获得其他支持。
+
++++
+
+
