@@ -1,14 +1,14 @@
 ---
 title: 参与视图
-description: 了解功能互动的广度和深度。
+description: 了解功能参与的广度和深度。
 feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: a4c35466b225d44130bb55204e2fdb155fa7dee6
+source-git-commit: 670443a8caf6b71f49fc63a23b5328609864a9be
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 3%
+source-wordcount: '721'
+ht-degree: 4%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 3%
 * 矩阵左下角的功能是 **低影响** 功能；它们没有被广泛使用或经常使用。
 * 矩阵右下方的功能是您的 **一次性** 功能；它们被广泛采用，但不常用。
 
-![Engagement屏幕快照](../assets/feature-matrix.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3429489/&learn=on)
 
 ## 用例
 
