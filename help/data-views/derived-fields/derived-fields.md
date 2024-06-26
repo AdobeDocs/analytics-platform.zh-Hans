@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: a0515c68407b01dd39bed9f0bf9121b575d02dea
+source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
 workflow-type: tm+mt
-source-wordcount: '8373'
+source-wordcount: '8075'
 ht-degree: 12%
 
 ---
@@ -833,32 +833,32 @@ Customer Journey Analytics使用以下默认容器模型：
 +++
 
 
-<!-- DEDUPLICATE -->
+<!-- DEDUPLICATE
 
-### 删除重复数据
+### Deduplicate
 
-避免对值计数多次。
+Prevents counting a value multiple times.
 
-+++ 详细信息
++++ Details
 
 {{release-limited-testing-section}}
 
-## 规范 {#deduplicate-io}
+## Specifications {#deduplicate-io}
 
-| 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
+| Input Data Type | Input | Included Operators | Limitations | Output |
 |---|---|---|---|---|
-| <ul><li>字符串</li><li>数值</li></ul> | <ul><li>[!UICONTROL 值]：<ul><li>规则</li><li>标准字段</li><li>字段</li><li>字符串</li></ul></li><li>[!UICONTROL 范围]：<ul><li>人员</li><li>会话</li></ul></li><li>[!UICONTROL 重复数据删除ID]：<ul><li>规则</li><li>标准字段</li><li>字段</li><li>字符串</li></ul><li>[!UICONTROL 要保留的值]：<ul><li>保留第一个实例</li><li>保留最后一个实例</li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段5个函数</p> | <p>新建派生字段</p> |
+| <ul><li>String</li><li>Numeric</li></ul> | <ul><li>[!UICONTROL Value]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li><li>String</li></ul></li><li>[!UICONTROL Scope]:<ul><li>Person</li><li>Session</li></ul></li><li>[!UICONTROL Deduplication ID]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li><li>String</li></ul><li>[!UICONTROL Value to keep]:<ul><li>Keep first instance</li><li>Keep last instance</li></ul></li></ul> | <p>N/A</p>| <p>5 functions per derived field</p> | <p>New derived field</p> |
 
 {style="table-layout:auto"}
 
 
-## 用例1 {#deduplicate-uc1}
+## Use case 1 {#deduplicate-uc1}
 
-您希望防止在用户重新加载预订确认页面时计数重复收入。 在标识符处使用预订确认ID，以便在同一事件中收到收入时不再次对其进行计数。
+You want to prevent counting duplicate revenue when a user reloads the booking confirmation page. You use the booking confirmation ID at the identifier to not count the revenue again, when received on the same event.
 
-### 数据早于 {#deduplicate-uc1-databefore}
+### Data before {#deduplicate-uc1-databefore}
 
-| 预订确认ID | 收入 |
+| Booking Confirmation ID | Revenue |
 |----|---:|
 | ABC123456789 | 359 |
 | ABC123456789 | 359 |
@@ -866,15 +866,15 @@ Customer Journey Analytics使用以下默认容器模型：
 
 {style="table-layout:auto"}
 
-### 派生字段 {#deduplicate-uc1-derivedfield}
+### Derived field {#deduplicate-uc1-derivedfield}
 
-您定义 `Booking Confirmation` 派生字段。 您使用 [!UICONTROL 删除重复项] 函数来定义用于删除重复数据的规则 [!UICONTROL 值] [!DNL Booking] 对象 [!UICONTROL 范围] [!DNL Person] 使用 [!UICONTROL 重复数据删除ID] [!UICONTROL 预订确认ID]. 您选择 [!UICONTROL 保留第一个实例] 作为 [!UICONTROL 要保留的值].
+You define a `Booking Confirmation` derived field. You use the [!UICONTROL DEDUPLICATE] function to define a rule to deduplicate the [!UICONTROL Value] [!DNL Booking] for [!UICONTROL Scope] [!DNL Person] using [!UICONTROL Deduplication ID] [!UICONTROL Booking Confirmation ID]. You select [!UICONTROL Keep first instance] as [!UICONTROL Value to keep].
 
-![连接规则的屏幕截图](assets/deduplicate-1.png)
+![Screenshot of the Concatenate rule](assets/deduplicate-1.png)
 
-### 之后的数据 {#deduplicate-uc1-dataafter}
+### Data after {#deduplicate-uc1-dataafter}
 
-| 预订确认ID | 收入 |
+| Booking Confirmation ID | Revenue |
 |----|---:|
 | ABC123456789 | 359 |
 | ABC123456789 | 0 |
@@ -882,41 +882,43 @@ Customer Journey Analytics使用以下默认容器模型：
 
 {style="table-layout:auto"}
 
-## 用例2 {#deduplicate-uc2}
+## Use case 2 {#deduplicate-uc2}
 
-您可以使用事件作为外部营销活动的促销活动点进代理。 重新加载和重定向导致事件量度虚增。 您希望删除重复的跟踪代码维度，以便仅收集第一个维度并将事件过度计数降至最低。
+You use events as a proxy for campaign click-throughs with external marketing campaigns. Reloads & redirects are causing the event metric to be inflated. You would like to deduplicate the tracking code dimension so only the first is collected and minimize the event overcounting.
 
-### 数据早于 {#deduplicate-uc2-databefore}
+### Data before {#deduplicate-uc2-databefore}
 
-| 访客 ID | 营销渠道 | 活动 |
+| Visitor ID | Marketing Channel | Events |
 |----|---|---:|
-| ABC123 | 付费搜索 | 1 |
-| ABC123 | 付费搜索 | 1 |
-| ABC123 | 付费搜索 | 1 |
-| DEF123 | 电子邮件 | 1 |
-| DEF123 | 电子邮件 | 1 |
-| JKL123 | 免费搜索 | 1 |
-| JKL123 | 免费搜索 | 1 |
+| ABC123 | paid search | 1 |
+| ABC123 | paid search | 1 |
+| ABC123 | paid search | 1 |
+| DEF123 | email | 1 |
+| DEF123 | email | 1 |
+| JKL123 | natural search | 1 |
+| JKL123 | natural search | 1 |
 
 {style="table-layout:auto"}
 
-### 派生字段 {#deduplicate-uc2-derivedfield}
+### Derived field {#deduplicate-uc2-derivedfield}
 
-您定义新的 `Tracking Code (deduplicated)` 派生字段。 您使用 [!UICONTROL 删除重复项] 函数来定义用于删除重复数据的规则 [!UICONTROL 跟踪代码] 带有 [!UICONTROL 去重范围] 之 [!UICONTROL 会话] 和 [!UICONTROL 保留第一个实例] 作为 [!UICONTROL 要保留的值].
+You define a new `Tracking Code (deduplicated)` derived field. You use the [!UICONTROL DEDUPLICATE] function to define a rule to deduplicate the [!UICONTROL Tracking Code] with a [!UICONTROL Deduplication scope] of [!UICONTROL Session] and [!UICONTROL Keep first instance] as the [!UICONTROL Value to keep].
 
-![连接规则的屏幕截图](assets/deduplicate-2.png)
+![Screenshot of the Concatenate rule](assets/deduplicate-2.png)
 
-### 之后的数据 {#deduplicate-uc2-dataafter}
+### Data after {#deduplicate-uc2-dataafter}
 
-| 访客 ID | 营销渠道 | 活动 |
+| Visitor ID | Marketing Channel | Events |
 |----|---|---:|
-| ABC123 | 付费搜索 | 1 |
-| DEF123 | 电子邮件 | 1 |
-| JKL123 | 免费搜索 | 1 |
+| ABC123 | paid search | 1 |
+| DEF123 | email | 1 |
+| JKL123 | natural search | 1 |
 
 {style="table-layout:auto"}
 
 +++
+
+-->
 
 <!-- FIND AND REPLACE -->
 
@@ -1503,8 +1505,6 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 在事件、会话和用户级别将聚合类型函数应用于量度或维度。
 
 +++ 详细信息
-
-{{release-limited-testing-section}}
 
 ## 规范 {#summarize-io}
 

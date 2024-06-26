@@ -4,10 +4,10 @@ description: Customer Journey Analytics 登陆页面。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 67a249ab291201926eb50df296e031b616de6e6f
-workflow-type: ht
-source-wordcount: '677'
-ht-degree: 100%
+source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
+workflow-type: tm+mt
+source-wordcount: '758'
+ht-degree: 85%
 
 ---
 
@@ -29,6 +29,12 @@ AI 助手 是一种对话体验，允许从业者快速执行任务——无论�
 
 [![图像](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
+>[!TAB 基于图形的拼合]
+
+通过基于图表的拼合，您可以使用Experience Platform身份服务中的身份图通过以下方式更好地查看客户历程： <ul><li>使用不同的标识符连接数据集，而不必提取、转换和加载额外的数据以反映单个标识符。</li> <li>通过跨数据集共享身份来提高单个数据集的首选或黄金身份覆盖率，</li><li>将Real-time Customer Data Platform和Journey Optimizer中创建的用户档案与Customer Journey Analytics中的人员保持一致。</li></ul>
+
+[![图像](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
+
 >[!TAB 查找 B2B]
 
 作为配置连接的一部分，您可以转换特定 B2B 查找模式的数据集，以更好地支持基于人员的 B2B 数据查找。
@@ -37,7 +43,7 @@ AI 助手 是一种对话体验，允许从业者快速执行任务——无论�
 
 >[!TAB 派生字段]
 
-现在可以使用新的派生字段函数（数学、下一个或上一个）和附加函数模板（如跳出率、友好数据集名称、假日季节、月度目标、简单机器人检测等）。
+现在提供了新的派生字段函数（数学、下一个或上一个、汇总）和其他函数模板（例如跳出次数、友好数据集名称、假日季节、每月目标、简单机器人检测等）。
 
 [![图像](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
