@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 3acf29b703d52145d8679d60ed664cf794b5ee30
-workflow-type: ht
-source-wordcount: '2255'
-ht-degree: 100%
+source-git-commit: e4d4ff530d28e692301ca0671e055a164b9f7035
+workflow-type: tm+mt
+source-wordcount: '2258'
+ht-degree: 98%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 100%
 | 虚拟报表包 | 全面支持。现在称为[数据视图](/help/data-views/create-dataview.md)。 |
 | 虚拟报表包组件管理 | 全面支持。现在是数据视图的一部分。 |
 | 设备、浏览器、反向链接、技术维度 | 支持基于 [Analytics Source Connector ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)的数据集和 WebSDK 生成的数据集。请参阅[有关通过 ADC 支持哪些 Analytics 变量的文档](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=zh-Hans)。如果您使用 Experience Platform Web SDK 数据收集，则当前不支持基于设备查找的设备和维度。计划在以后提供支持。要将设备和浏览器查找功能添加到 Web SDK 数据流，请参阅[本文档](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html) |
-| 流 Media Analytics | 使用作为 Workspace 中的“同时观看媒体的人数”面板和“媒体播放耗时”面板一部分的 Analytics Data Connector 即可获得媒体数据。 |
+| 流媒体收集加载项 | 使用作为Workspace中的“同时观看媒体的人数”面板和“媒体播放耗时”面板一部分的Analytics源连接器即可获得流媒体数据。 |
 
 {style="table-layout:auto"}
 

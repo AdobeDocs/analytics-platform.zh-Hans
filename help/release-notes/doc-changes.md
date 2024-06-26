@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
+source-git-commit: e4d4ff530d28e692301ca0671e055a164b9f7035
 workflow-type: tm+mt
-source-wordcount: '3746'
-ht-degree: 72%
+source-wordcount: '3810'
+ht-degree: 71%
 
 ---
 
@@ -20,6 +20,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2024 年 6 月** | |
+| 更新了引用流媒体功能的产品名称 | 在引用一组流媒体功能时，将名为“Streaming Media Collection Add-on”的“Media Analytics”和“Streaming Media”实例替换为“Streaming Media Collection Add-on”，这些功能收集流媒体数据并将其显示在Analysis Workspace中。 <p>这些更新可在整个Customer Journey Analytics文档以及 [流媒体收藏集附加组件文档](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/media-overview).</p> |
 | 基于图形的拼合 | 更新并重组 [拼合文档](/help/stitching/overview.md) 引入了基于图形的拼合。 |
 | AI 助手 | 已添加 [文档](../ai-assistant.md) 在AICustomer Journey Analytics助手上。 |
 | 转换数据集以进行B2B查找 | 添加了有关如何支持的文档 [对B2B数据进行基于人员的查找](/help/connections//transform-datasets-b2b-lookups.md) （包括客户、机会、营销列表和营销活动）使用转换B2B查找数据集。 |
@@ -40,7 +41,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 有关Adobe Product Analytics功能的新文档 | <ul><li>[功能矩阵](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>增强功能 [保留率](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[漏斗中的增强洞察](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>比较单个漏斗步骤中的事件</li></ul> |
 | **2024 年 3 月** | |
 | 有关“用于”列的使用情况信息仅从 2023 年 9 月开始提供。 | 阐明[项目登陆页面](/help/getting-started/landing.md)“**用于**”列的使用情况信息只能追溯到 2023 年 9 月。 |
-| 添加了有关仅用于项目的工作区组件的权限增强的文档 | 如果您与其他用户共享项目，则这些用户可以编辑 [快速过滤器](/help/components/filters/quick-filters.md) 以及嵌入到共享项目中的其他仅用于项目的组件。 |
+| 添加了有关仅用于项目的Workspace组件的权限增强的文档 | 如果您与其他用户共享项目，则这些用户可以编辑 [快速过滤器](/help/components/filters/quick-filters.md) 以及嵌入到共享项目中的其他仅用于项目的组件。 |
 | **2024 年 2 月** | |
 | 项目共享文档更新 | 添加了关于如何 [查看与您共享的项目](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>还简化了有关[共享单个或多个项目](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role)的信息。</p> |
 | 添加了在配置云导出位置时将文件上传到Azure SAS和Azure RBAC的权限要求 | 添加了在以下情况下将文件上传到Azure SAS和Azure RBAC的确切权限要求 [配置云导出帐户](/help/components/exports/cloud-export-accounts.md) 和 [配置云导出位置](/help/components/exports/cloud-export-locations.md). |
@@ -71,7 +72,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 对异常检测文档的更新 | 异常检测文档以前位于有关Virtual Analyst的部分中。 进行了以下更改： <ul><li>术语 Virtual Analyst 已从文档中删除。</li><li>关于[异常检测](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md)的部分已直接移至 Analysis Workspace 部分下方。</li></ul> |
 | **2023 年 10 月** | |
 | 使用派生字段设置目标/目标 | 已添加 [用例](../use-cases/goals-using-derived-fields.md) 本文说明了如何使用派生字段设置目标/指标并报告这些目标/指标。 |
-| 将整个表导出到云 | 添加了有关将包含数百万个Workspace行的完整表导出到云目标的文档。 <p>导出全表可一次性或按计划投放在 Workspace 中设计的数据表，其中支持最多五个细分、五个量度、过滤器和计算量度，所有这些都在一个连接在一起的表中。它从 Adobe Analytics 中的 Data Warehouse 报告演化而来，具有许多当今在 Data Warehouse 中不提供但经常有人要求提供的新功能。</p><p>有关详细信息，请参阅[将 Customer Journey Analytics 报告导出到云](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html)。 |
+| 将整个表导出到云 | 添加了有关将包含数百万行Workspace的完整表导出到云目标的文档。 <p>导出全表可一次性或按计划投放在 Workspace 中设计的数据表，其中支持最多五个细分、五个量度、过滤器和计算量度，所有这些都在一个连接在一起的表中。它从 Adobe Analytics 中的 Data Warehouse 报告演化而来，具有许多当今在 Data Warehouse 中不提供但经常有人要求提供的新功能。</p><p>有关详细信息，请参阅[将 Customer Journey Analytics 报告导出到云](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html)。 |
 | 报告活动管理器 | 添加了有关报告活动管理器的文档。 <p>通过报告活动管理器，可查看组织中每个连接的报告容量。它使管理员能够详细了解报告消耗，以便轻松地诊断和修复在报告高峰期出现的容量问题。</p> <p>添加了以下新文章：<ul><li>[报表活动管理器概述](/help/reporting-activity-manager/reporting-activity-overview.md)</li><li>[在报告活动管理器中查看报告活动](/help/reporting-activity-manager/reporting-activity.md)</li><li>[在报告活动管理器中取消请求](/help/reporting-activity-manager/reporting-activity-cancel-requests.md)</ul> |
 | 管理页面上的新列 | 记录新列，这些列现在位于 [计算量度管理器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html) 和 [筛选器管理器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html). |
 | 与 Adobe Analytics 进行比较 | 添加了 [“概述”页面](../getting-started/aa-vs-cja/overview.md) 作为比较和了解Customer Journey Analytics与Adobe Analytics之间差异的简介。 |

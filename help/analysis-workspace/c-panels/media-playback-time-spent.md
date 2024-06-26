@@ -4,10 +4,10 @@ description: 如何在 Analysis Workspace 中使用和解释“媒体播放耗�
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: 1c9f3d1de499eda5aeeb4e6763871c8a2e7d075d
+source-git-commit: e4d4ff530d28e692301ca0671e055a164b9f7035
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 67%
+source-wordcount: '942'
+ht-degree: 66%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 67%
 
 “媒体播放耗时”面板支持长期分析播放，其中提供关于并发高峰的详细信息，并可进行分解和比较。
 
-Media Analytics客户可以分析播放耗时，以获取有关内容质量和查看者参与情况的宝贵见解，并在排除故障或规划数量或规模时提供帮助。
+已购买流媒体收集加载项的客户可以分析播放耗时，以获得关于内容质量和查看者参与情况的宝贵见解，并在排除故障或规划数量或规模时提供帮助。
 
 播放耗时可帮助您了解：
 
@@ -31,7 +31,7 @@ Media Analytics客户可以分析播放耗时，以获取有关内容质量和�
 
 ## 使用“Media Playback耗时”面板
 
-1. 转到启用了Media Analytics组件的报表包。
+1. 转到包含从流媒体收集加载项启用的组件的报表包。
 
 1. 选择最左侧的面板图标，然后将面板拖放到您的Analysis Workspace项目中。
 

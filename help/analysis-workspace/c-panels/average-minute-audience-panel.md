@@ -3,9 +3,10 @@ title: “媒体平均受众访问分钟数”面板
 description: 如何使用和解释 Analysis Workspace 中的“媒体平均受众访问分钟数”面板。
 feature: Panels
 role: User, Admin
-source-git-commit: 907a627720910794d77f016d797f1b95d2d3ce13
+exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
+source-git-commit: e4d4ff530d28e692301ca0671e055a164b9f7035
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1664'
 ht-degree: 31%
 
 ---
@@ -14,9 +15,9 @@ ht-degree: 31%
 
 >[!NOTE]
 >
->“媒体平均受众访问分钟数”面板仅适用于已购买用于Customer Journey Analytics的Media Analytics加载项的客户。
+>“媒体平均受众访问分钟数”面板仅适用于已购买流媒体收集加载项进行Customer Journey Analytics的客户。
 >
->请联系您的Adobe销售代表或Adobe客户团队以购买Media Analytics。
+>请联系您的Adobe销售代表或Adobe客户团队以购买流媒体收集加载项。
 
 在 Analysis Workspace 中，平均受众访问分钟数是查看媒体流所花费的时间除以内容的持续时间或所选总时段和所选粒度。
 
@@ -34,7 +35,7 @@ ht-degree: 31%
 
 ## 访问“媒体平均受众访问分钟数”面板
 
-1. 在Analysis Workspace中，转到已启用Media Analytics组件的报表包。
+1. 在Analysis Workspace中，转到具有从流媒体收集加载项启用的组件的报表包。
 
 1. 在左侧导航栏中，选择 **面板** 图标。
 
