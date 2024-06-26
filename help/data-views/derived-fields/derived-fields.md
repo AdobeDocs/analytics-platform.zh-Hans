@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
+source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
 workflow-type: tm+mt
 source-wordcount: '8075'
 ht-degree: 12%
@@ -14,7 +14,7 @@ ht-degree: 12%
 
 # 派生字段
 
-派生字段是Adobe Customer Journey Analytics中实时报表功能的一个重要方面。 通过派生字段和可自定义的规则生成器，即可迅速定义（一般较为复杂的）数据操作。然后，您可以将该派生字段用作中的组件（量度或维度） [工作区](../../analysis-workspace/home.md) 或者甚至进一步将派生字段定义为中的组件 [数据视图](../data-views.md).
+派生字段是Adobe Customer Journey Analytics中实时报表功能的一个重要方面。 通过派生字段和可自定义的规则生成器，即可迅速定义（一般较为复杂的）数据操作。然后，您可以将该派生字段用作中的组件（量度或维度） [Workspace](../../analysis-workspace/home.md) 或者甚至进一步将派生字段定义为中的组件 [数据视图](../data-views.md).
 
 与在Customer Journey Analytics之外的其他位置转换或处理数据相比，派生字段可以节省大量时间和精力。 例如 [数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)， [数据Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html)，或在您自己的提取转换加载(ETL)/提取加载转换(ELT)进程中。
 
@@ -607,9 +607,9 @@ Customer Journey Analytics使用以下默认容器模型：
 
 |  | 限制 |
 |:---:|----|
-| **<span style='color: red'>A</span>** | 对您的评价 *选择* 在同一个 [!UICONTROL 如果]， [!UICONTROL 否则，如果] 构造(使用 [!UICONTROL 和] 或 [!UICONTROL 或])，并且可以是任何类型（字符串） ![字符串](assets/Smock_ABC_18_N.svg)，数值 ![数值](assets/Smock_123_18_N.svg)，等等)。 <br/>![依赖项A的屏幕截图](assets/dependency-a.png) |
-| **<span style='color: red'>B</span>** | 您所有的值 *设置* 跨规则必须来自同一容器并具有相同类型或相同类型的派生值。 <br/> ![依赖项B的屏幕截图](assets/dependency-b.png) |
-| **<span style='color: blue'>C</span>** | 您的值 *选择* 跨 [!UICONTROL 如果]， [!UICONTROL 否则，如果] 规则中的构造 *非* 必须来自同一容器，并且 *非* 必须是同一种类型。 <br/> ![依赖项C屏幕截图](assets/dependency-c.png) |
+| **A** | 对您的评价 *选择* 在同一个 [!UICONTROL 如果]， [!UICONTROL 否则，如果] 构造(使用 [!UICONTROL 和] 或 [!UICONTROL 或])，并且可以是任何类型（字符串） ![字符串](assets/Smock_ABC_18_N.svg)，数值 ![数值](assets/Smock_123_18_N.svg)，等等)。 <br/>![依赖项A的屏幕截图](assets/dependency-a.png) |
+| **B** | 您所有的值 *设置* 跨规则必须来自同一容器并具有相同类型或相同类型的派生值。 <br/> ![依赖项B的屏幕截图](assets/dependency-b.png) |
+| **C** | 您的值 *选择* 跨 [!UICONTROL 如果]， [!UICONTROL 否则，如果] 规则中的构造 *非* 必须来自同一容器，并且 *非* 必须是同一种类型。 <br/> ![依赖项C屏幕截图](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
 
@@ -1151,7 +1151,7 @@ You define a new `Tracking Code (deduplicated)` derived field. You use the [!UIC
 1. 插入静态值(例如 `1.05`)，键入值并选择 **[!UICONTROL 添加 *x* 作为静态值]** 或 **[!UICONTROL 添加 — *x* 作为负静态值]** 从弹出菜单中。
    ![数学详细信息2](assets/math-more-info-2.png)
 
-1. 绿色复选标记 ![复选标记](./assets/checkmark.svg)</span> 指示数学公式是否有效，否则您将看到警告 <span style="color:red">![警报](./assets/alert.svg)</span> 和消息 <span style="color:#ea3829">[!UICONTROL 公式表达式无效].</span>
+1. 绿色复选标记 ![复选标记](./assets/checkmark.svg)</span> 指示数学公式是否有效，否则您将看到警告 ![警报](./assets/alert.svg) 和消息 [!UICONTROL 公式表达式无效].
    ![数学详细信息3](assets/math-more-info-3.png)
 
 在中使用静态数字时，有一些重要的注意事项 [!UICONTROL MATH] 函数：
@@ -1516,7 +1516,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 ## 用例 {#summarize-uc}
 
-您要将添加到购物车收入分为三个不同的类别：小、中和大。 这使您能够分析和识别高价值客户的特征。
+您要将添加到购物车收入分为三个不同的类别：小、Medium和大。 这使您能够分析和识别高价值客户的特征。
 
 ### 数据早于 {#summarize-uc-databefore}
 
@@ -1533,7 +1533,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 逻辑：
 
 - 如果访客的添加到购物车的总收入少于$150，则设置为小。
-- 如果访客的添加到购物车的总收入大于$150但小于$500，则设置为中。
+- 如果访客的添加到购物车的总收入大于$150但小于$500，则设置为Medium。
 - 如果访客的添加到购物车的总收入大于或等于$500，则设置为大。
 
 结果：

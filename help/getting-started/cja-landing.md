@@ -4,10 +4,10 @@ description: Customer Journey Analytics 登陆页面。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
+source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 85%
+ht-degree: 88%
 
 ---
 
@@ -31,7 +31,7 @@ AI 助手 是一种对话体验，允许从业者快速执行任务——无论�
 
 >[!TAB 基于图形的拼合]
 
-通过基于图表的拼合，您可以使用Experience Platform身份服务中的身份图通过以下方式更好地查看客户历程： <ul><li>使用不同的标识符连接数据集，而不必提取、转换和加载额外的数据以反映单个标识符。</li> <li>通过跨数据集共享身份来提高单个数据集的首选或黄金身份覆盖率，</li><li>将Real-time Customer Data Platform和Journey Optimizer中创建的用户档案与Customer Journey Analytics中的人员保持一致。</li></ul>
+通过基于图表的拼合，您可以使用Experience Platform身份服务中的身份图通过以下方式更好地查看客户历程： <ul><li>连接具有不同标识符的数据集，无需提取、转换和加载额外数据以反映单个标识符。</li> <li>通过跨数据集共享身份来提高单个数据集的首选或黄金身份覆盖率，</li><li>将 Real-Time Customer Data Platform 和 Journey Optimizer 中创建的轮廓与 Customer Journey Analytics 中的人员进行对齐。</li></ul>
 
 [![图像](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
 
@@ -53,7 +53,7 @@ BI 扩展允许 SQL 访问您在 Customer Journey Analytics 中定义的数据�
 
 [![图像](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
 
-<span style="color:gray">*_您必须拥有 Select 包或更高版本才能使用 BI 扩展。_</span>
+*_您必须具有Select程序包或更高版本才能使用BI扩展。_*
 
 
 <!--
