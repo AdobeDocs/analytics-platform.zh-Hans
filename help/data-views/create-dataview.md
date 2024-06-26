@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 8ff130a20c719a594207f854ff3b85619f38b512
+source-git-commit: f6b0088522a821a006d1c7fb4c55b4b2e11ff310
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 85%
+source-wordcount: '1761'
+ht-degree: 92%
 
 ---
 
@@ -52,11 +52,15 @@ ht-degree: 85%
 
 ### 兼容性
 
-除了Customer Journey Analytics之外，还提供在使用Adobe Journey Optimizer时适用的设置。
+{{release-limited-testing-section}}
+
+此设置适用于在使用 Adobe Journey Optimizer 的同时使用 Customer Journey Analytics。
+
+此部分仅对配置了Journey Optimizer的管理员可见。
 
 | 设置 | 描述 |
 | --- | --- |
-| [!UICONTROL **在Adobe Journey Optimizer中设置为默认数据视图**] | 此配置选项可标准化跨Journey Optimizer和Customer Journey Analytics的报表。 它还允许您在Customer Journey Analytics中对Adobe Journey Optimizer数据执行高级分析(通过选择 [!UICONTROL **在CJA中分析**] Journey Optimizer按钮)。<p>要执行此类分析，Journey Optimizer需要访问Customer Journey Analytics数据视图。<p>启用此选项可使其成为Journey Optimizer报表中使用的默认数据视图。</p><p>此配置选项会自动：</p><ul><li>在Customer Journey Analytics的关联连接中配置所有必需的Journey Optimizer数据集，以与Journey Optimizer一起使用。</li><li>在数据视图中创建一组Journey Optimizer指标和维度（包括派生字段和计算量度）。 上下文标签会在所有这些量度和维度上自动设置。<p>**注意：** 如果需要，您可以对数据视图中可用于Journey Optimizer和Customer Journey Analytics的数据集、维度或指标进行额外的手动自定义，如中所述 [将Adobe Journey Optimizer与Adobe Customer Journey Analytics集成](/help/integrations/ajo.md). </p></li></ul><p>您可以稍后更改默认数据视图，但这样做可能会更改Journey Optimizer报表数据。 如果选择在启用此选项后禁用此选项，系统将提示您选择新的默认数据视图。</p> |
+| [!UICONTROL **在 Adobe Journey Optimizer 中设置为默认数据视图**] | 此配置选项使 Journey Optimizer 和 Customer Journey Analytics 的报告标准化。它还允许您在Customer Journey Analytics中对Adobe Journey Optimizer数据执行高级分析(通过选择 ![打开](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) [!UICONTROL **在CJA中分析**] 在Journey Optimizer时)。<p>进行此类分析时，Journey Optimizer 需要访问 Customer Journey Analytics 数据视图。<p>启用此选项以使其成为沙盒的Journey Optimizer报表中使用的默认数据视图。</p><p>此配置选项将自动执行以下操作：</p><ul><li>在 Customer Journey Analytics 的相关连接中配置所有必需的 Journey Optimizer 数据集，以便与 Journey Optimizer 配合使用。</li><li>在数据视图中创建一组 Journey Optimizer 量度和维度（包括派生字段和计算量度）。在所有这些量度和维度上自动设置上下文标签。</li></ul><p><p>启用此选项时，请考虑以下事项： <ul><li>您可以稍后更改默认数据视图，但这样做可能会更改您的 Journey Optimizer 报告数据。如果启用此选项后选择禁用，系统将提示您选择新的默认数据视图。</li><li>如果您已在Customer Journey Analytics数据视图中手动自定义数据集、维度或量度，则在启用此配置选项时，手动自定义将保持不变。 此选项提供了额外的自定义设置，可进一步标准化Journey Optimizer和Customer Journey Analytics中的报表。 在启用此选项后，您还可以进行手动自定义。</li></ul>请参阅 [将Adobe Journey Optimizer与Adobe Customer Journey Analytics集成](/help/integrations/ajo.md) 以了解更多信息。 |
 
 {style="table-layout:auto"}
 
