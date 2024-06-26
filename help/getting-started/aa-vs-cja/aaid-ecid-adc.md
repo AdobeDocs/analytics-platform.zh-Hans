@@ -4,7 +4,7 @@ description: 了解 Analytics Source Connector 如何处理 Adobe Analytics 标�
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
 feature: Basics
 role: User
-source-git-commit: 0dc99750126ed5b88b1d1f2d4afc28acad0fe84e
+source-git-commit: 5c5f276711f39abb1b3f3b955ad99e17cb0ac09c
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 92%
@@ -19,7 +19,7 @@ Adobe Analytics 数据包含多个标识字段。[Analytics Source Connector](ht
 
 Adobe Analytics ID (AAID) 是 Adobe Analytics 中的主要设备标识符，并且必定存在于通过 Analytics Source Connector 传递的每个事件中。AAID 有时称作“旧版 Analytics ID”或 `s_vi` Cookie Id。不过，即使 `s_vi` Cookie不存在，也会创建 AAID。在 [Adobe Analytics 数据馈送](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=zh-Hans#columns%2C-descriptions%2C-and-data-types?lang=zh-Hans)中，AAID 由 `post_visid_high/post_visid_low` 列表示。
 
-在 Analytics Source Connector 中，AAID 将转换为 `HEX(post_visid_high) + "-" + HEX(post_visid_low)`。给定事件的 AAID 字段包含单个标识，它可能是 [Analytics ID 操作顺序](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html%5B%5D)中所述的几种不同类型之一。（在整个报告包中，AAID 可能包含各种事件的类型组合。每个事件的类型由 Analytics 数据馈送中的 `post_visid_type` 列表示。）另请参阅：[数据列引用](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html)。
+在 Analytics Source Connector 中，AAID 将转换为 `HEX(post_visid_high) + "-" + HEX(post_visid_low)`。给定事件的 AAID 字段包含单个标识，它可能是 [Analytics ID 操作顺序](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html)中所述的几种不同类型之一。（在整个报告包中，AAID 可能包含各种事件的类型组合。每个事件的类型由 Analytics 数据馈送中的 `post_visid_type` 列表示。）另请参阅：[数据列引用](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html)。
 
 ## ECID
 
