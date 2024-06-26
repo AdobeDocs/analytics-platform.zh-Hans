@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: dca1cc33058ba57815c3534ab21da86d5247531a
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 70%
+source-wordcount: '943'
+ht-degree: 65%
 
 ---
 
@@ -19,7 +19,6 @@ ht-degree: 70%
 >[!IMPORTANT]
 >
 >在所有情况下，您希望在 Customer Journey Analytics 中&#x200B;_使用的_&#x200B;数据实际上都是在 Adobe Experience Platform 中&#x200B;_获取的_。
-
 
 请参阅前面[概述](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=zh-Hans)中所示的高级 Customer Journey Analytics 体系结构：
 
@@ -35,13 +34,25 @@ ht-degree: 70%
 
 - 来自使用Adobe Experience Platform Web/Mobile SDK跟踪您的网站/移动应用程序的数据，
 
-- 来自使用Adobe Experience Platform Edge Network Server API跟踪桌面应用程序、控制台游戏、机顶盒或IoT设备的数据，或者
+- 来自使用Adobe Experience PlatformEdge Network服务器API跟踪桌面应用程序、控制台游戏、机顶盒或IoT设备的数据，或者
 
 - 来自 Adobe 提供源连接器的第三方数据提供商的数据。
 
 您可以拥有许多这些数据集。
 
 文档的这一部分提供了各种场景的快速入门指南。
+
+## 摄取优先级和延迟
+
+无论事件数据是在24小时、48小时还是7天之前，您都可以在90分钟(SLT)内以Customer Journey Analytics摄取该数据。
+
+请注意，此功能根据贵公司购买的 SKU 包而有所不同：
+
+- 优先摄取基本：90分钟SLT处理内24小时生成的数据(适用于 **CJA基础** 和 **CJA选择**)
+
+- 优先级摄取中间：90分钟SLT处理内72小时之前的数据(适用于 **CJA Prime**)
+
+- 优先摄取高级：90分钟SLT处理内1周前的数据(适用于 **CJA Ultimate**)
 
 ## 从传统 Adobe Analytics 中获取和使用数据
 
@@ -50,7 +61,7 @@ ht-degree: 70%
 有关更多信息请参阅[摄取并使用传统 Adobe Analytics 的数据](./analytics.md)。
 
 
-## 通过Edge Network引入和使用数据
+## 通过Edge Network摄取和使用数据
 
 ### 使用Adobe Experience Platform Web SDK
 
@@ -64,11 +75,11 @@ ht-degree: 70%
 
 请参阅 [通过Adobe Experience Platform Mobile SDK摄取和使用数据](./aepmobilesdk.md) 以了解更多信息。
 
-### 使用Adobe Experience Platform Edge Network服务器API
+### 使用Adobe Experience PlatformEdge Network服务器API
 
-您想要分析桌面应用程序、游戏主机上所玩的游戏、机顶盒上的视频流应用程序的使用情况或使用Adobe技术的IoT设备。 可以从其他解决方案进行迁移，或从头开始跟踪人员在这些设备上的行为。 您需要遵循Adobe的最佳实施实践，即使用Adobe Experience Platform Edge Network服务器API和Edge Network来摄取数据。 然后您可以在 Customer Journey Analytics 中使用、组合和分析摄入的数据与来自其他渠道和数据源的数据。
+您想要分析桌面应用程序、游戏主机上所玩的游戏、机顶盒上的视频流应用程序的使用情况或使用Adobe技术的IoT设备。 可以从其他解决方案进行迁移，或从头开始跟踪人员在这些设备上的行为。 您需要遵循Adobe的实施最佳实践，即使用Adobe Experience PlatformEdge Network服务器API和Edge Network来摄取数据。 然后您可以在 Customer Journey Analytics 中使用、组合和分析摄入的数据与来自其他渠道和数据源的数据。
 
-请参阅 [通过Adobe Experience Platform Edge Network服务器API摄取和使用数据](./serverapi.md) 以了解更多信息。
+请参阅 [通过Adobe Experience PlatformEdge Network服务器API摄取和使用数据](./serverapi.md) 以了解更多信息。
 
 ## 摄取和使用批次数据
 
