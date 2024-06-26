@@ -6,7 +6,7 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
+source-git-commit: 71931b85de6b238c0c6c6fd7b72d06f25103b906
 workflow-type: tm+mt
 source-wordcount: '3188'
 ht-degree: 14%
@@ -51,7 +51,7 @@ ht-degree: 14%
 | [!UICONTROL 导入新数据] | 显示导入数据集新数据的状态： <p>![状态绿色](assets/status-green.svg))    **[!UICONTROL _x _开启]**针对配置为导入新数据的数据集，以及<p>![状态灰色](assets/status-gray.svg)   **[!UICONTROL _x关_]** 用于未配置为导入新数据的数据集。 |
 | [!UICONTROL 创建日期] | 创建连接时的时间戳。 |
 | [!UICONTROL 上次修改时间] | 上次更新连接时的时间戳。 |
-| [!UICONTROL 回填数据] | 显示跨数据集的回填数据的状态。<p>![状态红色](assets/status-red.svg)   **[!UICONTROL _x _回填失败]**要了解跨数据集的失败回填数，<p>![状态橙色](assets/status-orange.svg)   **[!UICONTROL _x _正在处理回填]**有关跨数据集处理回填的数量，<p>![状态绿色](assets/status-green.svg))   **[!UICONTROL _x _回填已完成]**获取数据集的已完成回填数，并且<p>![状态灰色](assets/status-gray.svg)   **[!UICONTROL _关闭_]** 如果未为连接中的数据集定义回填。 |
+| [!UICONTROL 回填数据] | 显示跨数据集的回填数据的状态。<p>![状态红色](assets/status-red.svg)   **[!UICONTROL _x _回填失败]**要了解跨数据集的失败回填数，<p>![状态橙色](assets/status-orange.svg)   **[!UICONTROL _x _正在处理回填]**有关跨数据集处理回填的数量，<p>![状态绿色](assets/status-green.svg)   **[!UICONTROL _x _回填已完成]**获取数据集的已完成回填数，并且<p>![状态灰色](assets/status-gray.svg)   **[!UICONTROL _关闭_]** 如果未为连接中的数据集定义回填。 |
 
 要配置要显示的列，请选择 ![列设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)，它显示 **自定义表** 允许您在表中打开或关闭列的对话框。
 
@@ -89,7 +89,7 @@ ht-degree: 14%
 
 删除连接时， **[!UICONTROL 删除连接]** 面板指示删除的数据视图以及受影响的工作区项目。
 
-<img src="./assets/delete-connection.png" alt="删除连接" width="400"/>
+![删除连接](assets/delete-connection.png)
 
 选择 **[!UICONTROL 继续]** 以删除连接。
 
