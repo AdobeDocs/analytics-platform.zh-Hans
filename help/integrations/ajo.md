@@ -4,9 +4,9 @@ description: 引入 Adobe Journey Optimizer 生成的数据，并使用 Customer
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 529dd2ed2af60f8b417a5bf7d728a201dad70218
+source-git-commit: 5185c28c7a2cf1a0690e783633bbfbf851a1dcd1
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1541'
 ht-degree: 54%
 
 ---
@@ -45,7 +45,7 @@ Journey Optimizer支持使用Customer Journey Analytics作为报表引擎。 请
 
 | 数据集名称 | 架构 | 数据集类型 | 数据源类型 | 人员ID | 键 | 匹配键 | 导入新数据 | 回填数据 |
 |---|---|---|---|---|---|---|---|---|
-| [!UICONTROL AJO实体数据集] | [!UICONTROL AJO实体记录架构] | [!UICONTROL 查询] | [!UICONTROL 其他] | - | ` _id` | `_experience.decisioning.`<br/>`propositions.scopeDetails.`<br/>`correlationID` | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
+| [!UICONTROL AJO实体数据集] | [!UICONTROL AJO实体记录架构] | [!UICONTROL 查询] | [!UICONTROL 其他] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
 | [!UICONTROL 历程步骤事件] | [!UICONTROL 用于Journey Orchestration的历程步骤事件架构] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL  Identitymap(\&lt;primary>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
 | [!UICONTROL AJO电子邮件跟踪体验事件数据集] | [!UICONTROL AJO电子邮件跟踪体验事件架构] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL Identitymap(\&lt;primary>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
 | [!UICONTROL AJO电子邮件跟踪体验事件数据集] | [!UICONTROL AJO电子邮件跟踪体验事件架构] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL Identitymap(\&lt;primary>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
@@ -87,10 +87,10 @@ Journey Optimizer支持使用Customer Journey Analytics作为报表引擎。 请
 
 
 - 在 **组件** 选项卡：
-   - 所有具有 **[!UICONTROL (AJO)]** 附加到其名称的后面会作为此自动配置的一部分自动添加。
-   - 一些自动添加的量度或维度基于派生字段。 这些派生字段是专门为此集成创建的。 例如，登陆页面点击量(AJO)量度基于登陆页面点击量派生字段。
-   - 某些量度或维度具有其他配置。 例如，垃圾邮件投诉(AJO)应用了格式和包括排除值设置。
-   - 所有自动添加的量度和维度都有一个名为的上下文标签 **[!UICONTROL ：*name_of_metric_or_dimension *]**. 例如，[!UICONTROL 登陆页面点击量(AJO)] 量度具有上下文标签 [!UICONTROL ：登陆页面点击量(AJO)].
+   - 所有具有 [!UICONTROL (AJO)] 附加到其名称的后面会作为此自动配置的一部分自动添加。
+   - 一些自动添加的量度或维度基于派生字段。 这些派生字段是专门为此集成创建的。 例如，量度 [!UICONTROL 登陆页面点击量(AJO)] 基于 [!UICONTROL 登陆页面点击次数] 派生字段。
+   - 某些量度或维度具有其他配置。 例如， [!UICONTROL 垃圾邮件投诉(AJO)] 有 [!UICONTROL 格式] 和 [!UICONTROL 包括/排除值] 设置已应用。
+   - 所有自动添加的量度和维度都有一个名为的上下文标签 `:`*`name_of_metric_or_dimension`*. 例如， [!UICONTROL 登陆页面点击量(AJO)] 量度具有上下文标签 `: Landing page clicks (AJO)`.
 
 - 在 **[!UICONTROL 设置]** 选项卡，不应用特定配置值
 
