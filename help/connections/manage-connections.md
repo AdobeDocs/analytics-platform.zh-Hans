@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 71931b85de6b238c0c6c6fd7b72d06f25103b906
+source-git-commit: c0599526e6a6a9ac9788a4ce29bcf44256b6c4df
 workflow-type: tm+mt
-source-wordcount: '3188'
+source-wordcount: '3277'
 ht-degree: 14%
 
 ---
@@ -206,7 +206,12 @@ ht-degree: 14%
 
 ## 使用情况
 
-此 [!UICONTROL 使用情况] 界面显示所有连接中摄取和可报告行的使用情况。 此界面支持您确定您的Customer Journey Analytics使用是否符合合同约定的内容。
+此 [!UICONTROL 使用情况] 界面显示所有连接中摄取和可报告行的使用情况。 此界面支持您确定您的Customer Journey Analytics使用是否符合合同约定的内容。 除了用于监控目的之外，您还可以使用使用情况UI来更好地计划Customer Journey Analytics许可证续订。
+
+您可以选择时间范围（最近6个月、年初至今或最近2年之间）和间隔（每月或每季度之间）来监控Customer Journey Analytics使用情况。 该界面分为两个部分：
+
+* 已摄取的行：从所有CJA连接的事件数据集摄取/发送的总行数，包括摄取期间跳过的记录
+* 可报告行：包含所有CJA连接中的所有事件数据的可报告行总数
 
 ![usage-view](assets/usage-view.png)
 
