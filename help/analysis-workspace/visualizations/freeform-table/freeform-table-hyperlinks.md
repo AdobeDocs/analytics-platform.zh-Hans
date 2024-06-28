@@ -4,9 +4,9 @@ description: 了解如何在Analysis Workspace的自由格式表中为维度项�
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
-source-git-commit: 1534b628841a5b4588379b944822073f3288d710
+source-git-commit: afa6a3cf8763a2d6419ec859385abc4cf095f214
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1737'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 下面是此功能的视频演示：
 
->[!VIDEO](https://video.tv.adobe.com/v/3430412/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3430411/?learn=on)
 
 ## 为一个或多个维度项目创建超链接
 
@@ -79,7 +79,7 @@ ht-degree: 1%
 
      | 字段 | 描述 |
      |---------|----------|
-     | [!UICONTROL **自定义URL**] | 指定要用于超链接的自定义URL。 URL必须作为完全限定的URL输入。 例如： https://www.example.com<p>您创建的自定义URL可以是静态或动态：</p> <ul><li>**静态URL：** 如果要为单个维度项目创建超链接，则使用静态URL可能就足够了。 <p>请考虑以下示例：例如，如果您有一个“页面名称”维度项目，则可以创建一个静态URL，以将用户链接到要与页面名称关联的特定网页。</p><p>假设您要为维度项目列表创建超链接，每个链接均链接到内部Wiki页面中的文档中的相应定义。</p><p>您可以通过为每个维度项目创建静态URL来实现这一点。 例如：</p><p>https://wiki.internal.company_name/page_name#item_definition</p></li><li>**动态URL：** 如果要为多个维度项目或维度列中的所有维度项目创建超链接，则动态URL可能更实用。 <p>要使自定义URL成为动态变量，您需要在URL中包含一些变量，以便允许URL根据维度本身的值或划分维度的值动态更改。</p><p>使用变量时，任何包含在URL中无效字符（例如空格）的维度项目都将进行URL编码。</p><p>以下变量可用： (**注意**：虽然您可以在同一URL中使用这些变量，但可能更常见的是单独使用这些变量。)</p> <ul><li>**`$value`：** 允许您将维度项目的值插入到指定的URL中。 <p>以以下方案为例：</p><p>假设您要为自由格式表中的所有“页面名称”维度项目创建超链接，其中每个维度项目的值都是网页URL的一部分。 在这种情况下，您可以构建一个自定义URL，以动态调整每个维度项目。 </p><p>您可以通过添加 `$value` 变量到您指定的自定义URL的结尾。 例如：</p> <p>https://company-name.com/browse/product#$value</p><p>当此自定义URL应用于值为“ProductY”和“ProductZ”的“页面名称”维度项时，生成的超链接将如下所示： </p><p>https://company-name.com/browse/product#ProductY</p><p>和</p><p> https://company-name.com/browse/product#ProductZ </p><p>![在超链接中使用值](assets/table-hyperlinks-vaule.png)</p><p>**提示**：如果您只添加 `$value` 变量，则选择 [!UICONTROL **使用维度项目的值**] 选项。</p></li><li>**`$breakdown`：** 允许您将划分维度项目的值插入到指定的URL中。 这样，您可以在报表中使用具有用户友好名称的维度（例如产品名称维度）同时基于用户友好程度可能较低的划分维度（例如产品ID或页面URL维度）创建超链接。<p>在引用划分维度时，通常给定维度项目只具有一个划分项目。 如果给定维度项目有多个划分项目，则在URL中使用第一个划分项目的值。 如果未列出任何划分项目，则URL将无效。 对划分项目应用的排序顺序与对表应用的排序顺序相同。</p><p>您可在以下位置指定划分维度 [!UICONTROL **划分维度**] 字段。</p> <p>考虑以下示例情景： [!UICONTROL **划分维度**] 字段。</p></li></ul> |
+     | [!UICONTROL **自定义URL**] | 指定要用于超链接的自定义URL。 URL必须作为完全限定的URL输入。 例如：<https://www.example.com><p>您创建的自定义URL可以是静态或动态：</p> <ul><li>**静态URL：** 如果要为单个维度项目创建超链接，则使用静态URL可能就足够了。 <p>请考虑以下示例：例如，如果您有一个“页面名称”维度项目，则可以创建一个静态URL，以将用户链接到要与页面名称关联的特定网页。</p><p>假设您要为维度项目列表创建超链接，每个链接均链接到内部Wiki页面中的文档中的相应定义。</p><p>您可以通过为每个维度项目创建静态URL来实现这一点。 例如：</p><p>https://wiki.internal.company_name/page_name#item_definition</p></li><li>**动态URL：** 如果要为多个维度项目或维度列中的所有维度项目创建超链接，则动态URL可能更实用。 <p>要使自定义URL成为动态变量，您需要在URL中包含一些变量，以便允许URL根据维度本身的值或划分维度的值动态更改。</p><p>使用变量时，任何包含在URL中无效字符（例如空格）的维度项目都将进行URL编码。</p><p>以下变量可用： (**注意**：虽然您可以在同一URL中使用这些变量，但可能更常见的是单独使用这些变量。)</p> <ul><li>**`$value`：** 允许您将维度项目的值插入到指定的URL中。 <p>以以下方案为例：</p><p>假设您要为自由格式表中的所有“页面名称”维度项目创建超链接，其中每个维度项目的值都是网页URL的一部分。 在这种情况下，您可以构建一个自定义URL，以动态调整每个维度项目。 </p><p>您可以通过添加 `$value` 变量到您指定的自定义URL的结尾。 例如：</p> <p>https://company-name.com/browse/product#\$value</p><p>当此自定义URL应用于值为“ProductY”和“ProductZ”的“页面名称”维度项时，生成的超链接将如下所示： </p><p>https://company-name.com/browse/product#ProductY</p><p>和</p><p> https://company-name.com/browse/product#ProductZ </p><p>![在超链接中使用值](assets/table-hyperlinks-vaule.png)</p><p>**提示**：如果您只添加 `$value` 变量，则选择 [!UICONTROL **使用维度项目的值**] 选项。</p></li><li>**`$breakdown`：** 允许您将划分维度项目的值插入到指定的URL中。 这样，您可以在报表中使用具有用户友好名称的维度（例如产品名称维度）同时基于用户友好程度可能较低的划分维度（例如产品ID或页面URL维度）创建超链接。<p>在引用划分维度时，通常给定维度项目只具有一个划分项目。 如果给定维度项目有多个划分项目，则在URL中使用第一个划分项目的值。 如果未列出任何划分项目，则URL将无效。 对划分项目应用的排序顺序与对表应用的排序顺序相同。</p><p>您可在以下位置指定划分维度 [!UICONTROL **划分维度**] 字段。</p> <p>考虑以下示例情景： [!UICONTROL **划分维度**] 字段。</p></li></ul> |
      | [!UICONTROL **划分维度（可选）**] | 开始键入要使用的划分维度的名称，然后从下拉列表中选择该名称。 <p>如果在此字段中选择划分维度，则必须使用 `$breakdown` 变量标识 [!UICONTROL **自定义URL**] 字段。</p><p>以以下方案为例：</p><p>假设您要为自由格式表中的所有“产品名称”维度项目创建超链接。 每个产品名称维度项都包含产品ID维度的细分。</p></p>在这种情况下，您可以为每个产品名称维度创建超链接，以便使用产品ID划分维度的值将用户引导至产品页面。 </p><p>您可以通过添加 `$breakdown` 变量填充到您在中指定的自定义URL的结尾 [!UICONTROL **自定义URL**] 字段。 例如：</p><p>https://company-name.com/browse/product/$breakdown</p><p>当此自定义URL应用于您的产品名称维度项目（具有值为“ProductY”和“ProductZ”的划分维度项目）时，生成的超链接将如下所示：</p><p>https://company-name.com/browse/product/ProductY</p><p>和</p><p>https://company-name.com/browse/product/ProductZ</p><p>然后，您可以选择中的产品ID维度 [!UICONTROL **划分维度**] 字段 </p><p>![在超链接中使用划分](assets/table-hyperlinks-breakdown.png)</p> |
 
 1. 选择&#x200B;[!UICONTROL **创建**]。
