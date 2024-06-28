@@ -5,20 +5,20 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
+source-git-commit: 2f2e4ac68f7a410b8046daae2f90af75ffdedab5
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 61%
+source-wordcount: '676'
+ht-degree: 41%
 
 ---
 
 
 # 合并事件数据集
 
-创建连接后，Customer Journey Analytics会将所有架构和数据集合并到单个数据集中。 Customer Journey Analytics将此“合并事件数据集”用于报表。 如果您将多个架构或数据集纳入单个连接，则：
+创建连接时，Customer Journey Analytics会将所有事件数据集合并到单个数据集中。 此合并事件数据集是Customer Journey Analytics用于报表的数据集（以及配置文件和查找数据集）。 在连接中包含多个事件数据集时：
 
-* 架构会被合并。重复架构字段会被合并。
-* 每个数据集的“人员 ID”列将合并到单列中，无论其名称如何。此列是识别Customer Journey Analytics中独特人员的基础。
+* 数据集中字段的数据，基于 **相同架构路径** 在合并的数据集中被合并到一列中。
+* 为每个数据集指定的“人员ID”列将合并到合并数据集的单个列中， **无论其名称如何**. 此列是识别Customer Journey Analytics中独特人员的基础。
 * 根据时间戳处理各行。
 * 事件被解析到毫秒级别。
 
@@ -28,7 +28,7 @@ ht-degree: 61%
 
 >[!NOTE]
 >
->Adobe Experience Platform 通常以 Unix 毫秒为单位存储时间戳。为了便于阅读和理解，本示例中使用了日期和时间。
+>Adobe Experience Platform通常以UNIX®毫秒为单位存储时间戳。 为了便于阅读，本示例中使用了日期和时间。
 
 | `example_id` | `timestamp` | `string_color` | `string_animal` | `metric_a` |
 | --- | --- | --- | --- | --- |
@@ -45,7 +45,12 @@ ht-degree: 61%
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | `Square` | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` | | `Triangle` | `3.1` |
 
-使用这两个事件数据集创建连接时，将使用下表进行报告。
+使用这两个事件数据集创建连接时，并且已识别
+
+* `example_id` 作为第一个数据集的人员ID，并且
+* `different_id` 作为第二个数据集的人员ID，
+
+以下组合数据集用于报表。
 
 | `id` | `timestamp` | `string_color` | `string_animal` | `string_shape` | `metric_a` | `metric_b` |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -59,7 +64,9 @@ ht-degree: 61%
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | | `Square` | | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` | | | `Triangle` | | `3.1` |
 
-此合并事件数据集就是报表中使用的数据集。不管某行数据源自哪个数据集，Customer Journey Analytics都会像所有数据都位于同一数据集中一样来处理它们。 如果两个数据集中都出现了匹配的人员ID，则它们被视为相同的唯一人员。 如果两个包含时间戳（30 分钟内）都出现了匹配的人员 ID，则它们被视为属于同一个会话。
+为了说明架构路径的重要性，请考虑此方案。 在第一个数据集中， `string_color` 基于架构路径 `_experience.whatever.string_color` 和模式路径上的第二个数据集  `_experience.somethingelse.string_color`. 在此方案中，数据为 **非** 合并到生成的合并数据集中的一列。 相反，结果是两个 `string_color` 组合数据集中的列。
+
+此合并事件数据集就是报表中使用的数据集。某行数据源自哪个数据集并不重要。 Customer Journey Analytics将所有数据视为位于同一数据集中。 如果两个数据集中都出现了匹配的人员ID，则它们被视为相同的唯一人员。 如果两个包含时间戳（30 分钟内）都出现了匹配的人员 ID，则它们被视为属于同一个会话。
 
 这种概念也适用于归因。不管某行数据源自哪个数据集，归因会像所有事件均源自单个数据集来进行处理。以上表为例：
 
@@ -81,7 +88,7 @@ ht-degree: 61%
 
 ## 跨渠道分析
 
-合并数据集的下一个级别是跨渠道分析，在此分析中，基于通用标识符（人员ID）合并来自不同渠道的数据集。 跨渠道分析可能受益于拼接功能，允许您重新生成数据集的人员ID键值，以便正确更新数据集以实现多个数据集的无缝组合。 拼接查看来自经过身份验证和未经身份验证的会话的用户数据以生成拼接ID。
+合并数据集的下一个级别是跨渠道分析，在此分析中，根据通用标识符（人员ID）来合并来自不同渠道的数据集。 跨渠道分析可能受益于拼接功能，允许您重新生成数据集的人员ID键值，以便正确更新数据集以实现多个数据集的无缝组合。 拼接查看来自经过身份验证和未经身份验证的会话的用户数据以生成拼接ID。
 
 跨渠道分析允许您回答类似下面的问题：
 
@@ -97,7 +104,7 @@ ht-degree: 61%
 
 * [跨渠道分析](../use-cases/cross-channel/cross-channel.md)
 
-有关更深入的讨论拼合功能，请转到：
+有关拼接功能的更深入讨论，请转到：
 
 * [拼接概述](/help/stitching/overview.md)
 * [常见问题解答](/help/stitching/faq.md)
