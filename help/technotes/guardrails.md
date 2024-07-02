@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: ffa7899b8ece8c39079ed64401ec6cad111e9a84
+source-git-commit: a0124ee6c4534cbaf607367ee3ae79f1cbfc239c
 workflow-type: tm+mt
-source-wordcount: '1632'
+source-wordcount: '1747'
 ht-degree: 7%
 
 ---
@@ -58,8 +58,6 @@ ht-degree: 7%
 
 <!--
 ## Attribution AI
-
-
 
 | Name |  Value | Description | PD? |
 |---|--:|---|:---:|
@@ -158,9 +156,19 @@ ht-degree: 7%
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
 | 拼接数据集 | 5 - 50 | 系统强制的护栏 | 每个客户的最大拼接数据集数；该值因Customer Journey Analytics包而异（请参阅产品描述）。 |
-| 回填数据 | 60 - 395 | 系统强制的护栏 | 回填数据的最大天数；该值因Customer Journey Analytics包而异（请参阅产品描述）。 |
+| 回填长度 | 6 - 25 | 系统强制的护栏 | 回填数据的最大月数；该值因Customer Journey Analytics包而异（请参阅产品描述）。 |
+| 回看窗口期/重放频率 | 1/1 - 30/7 | 系统强制的护栏 | 最大回看时段（以天为单位）/重放频率；值因Customer Journey Analytics包而异（请参阅产品说明）。 |
 
 {style="table-layout:auto"}
+
+
+## 基于图形的拼合
+
+| 名称 | 值 | 限制类型 | 描述 |
+|---|--:|---|---|
+| 拼接数据集 | 10 - 50 | 系统强制的护栏 | 每个客户的最大拼接数据集数；该值因Customer Journey Analytics包而异（请参阅产品描述）。 |
+| 回填长度 | 13 - 25 | 系统强制的护栏 | 回填数据的最大月数；该值因Customer Journey Analytics包而异（请参阅产品描述）。 |
+| 回看窗口期/重放频率 | 1/1 - 30/7 | 系统强制的护栏 | 最大回看时段（以天为单位）/重放频率；值因Customer Journey Analytics包而异（请参阅产品说明）。 |
 
 
 ## 过滤器和计算量度
@@ -222,14 +230,14 @@ ht-degree: 7%
 
 | 数据流 | 预期延迟 |
 |---|---|
-| Adobe Analytics到Adobe Analytics源连接器（已启用A4T） | &lt; 30分钟 |
-| Adobe Analytics Source Connector to Real-time Customer Profile（未启用A4T） | &lt; 2分钟 |
-| Adobe Analytics Source Connector到Real-time Customer Profile（启用A4T） | &lt; 30分钟 |
+| Adobe Analytics到Adobe Analytics Source的连接器（已启用A4T） | &lt; 30分钟 |
+| 到实时客户配置文件的Adobe Analytics Source连接器（未启用A4T） | &lt; 2分钟 |
+| Adobe Analytics Source连接器到Real-time Customer Profile（启用A4T） | &lt; 30分钟 |
 | 数据从Edge Network摄取到数据湖或流式摄取 | &lt; 60分钟 |
 | 从Adobe Analytics Source Connector将数据摄取到数据湖 | &lt; 2.25小时 |
 | 数据从数据湖摄取到Customer Journey Analytics | &lt; 90分钟 |
 | 拼合(可选功能，请参阅 [拼接概述](../stitching/overview.md) 了解更多信息) | &lt; 3.25小时 |
-| 少于100亿个事件的Adobe Analytics源连接器回填（最多13个月的历史数据） | &lt; 4周 |
+| 少于100亿个事件的Adobe Analytics Source Connector回填（最多13个月的历史数据） | &lt; 4周 |
 | 将受众发布到实时客户个人资料，包括自动创建流区段，并允许区段准备好接收数据。 | ≈ 60分钟 |
 | 刷新受众的频率 | 一次性刷新：少于5分钟的延迟。<br/>每4小时、每天、每周、每月刷新一次（延迟与刷新率密切相关）。 |
 

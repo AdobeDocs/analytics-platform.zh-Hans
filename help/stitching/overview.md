@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 328939daf3e4dfe7f586d6c3822ce331cf24b97d
+source-git-commit: 32f0da9ea54952dbe3a765661b800e061ac5f039
 workflow-type: tm+mt
-source-wordcount: '3712'
+source-wordcount: '3723'
 ht-degree: 12%
 
 ---
@@ -345,13 +345,13 @@ Customer Journey Analytics支持两种类型的拼合：基于字段的拼合和
 
 ### 选项
 
-选择用于拼接的选项。 Customer Journey Analytics包可确定以下选项的可用值：初始回填持续时间、回看窗口期、重放频率和允许拼合的最大数据集数。
+选择用于拼接的选项。 Customer Journey Analytics包可确定以下选项的可用值：初始回填持续时间、回看窗口期、重放频率和允许拼合的最大数据集数。 请参阅 [Customer Journey Analytics产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/customer-journey-analytics.html) 以了解更多详细信息。
 
 | | Customer Journey Analytics<br/>选择 | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
 | 一次性拼接回填持续时间 | 13 个月 | 13 个月 | 25 个月 |
 | 回顾窗口和重放频率 | <li>1天，每天</li><li>长达7天，每周</li> | <li>1天，每天</li><li>长达14天，每周</li> | <li>1天，每天</li><li>长达30天，每周</li> |
-| 允许拼合的最大数据集数 | 5 | 10 | 15 |
+| 允许拼合的最大数据集数 | 5 | 10 | 50 |
 
 ### 请求支持
 
