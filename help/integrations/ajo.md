@@ -7,27 +7,27 @@ role: Admin
 source-git-commit: 13c3f99dba7725553c775df4492803f759ebead5
 workflow-type: tm+mt
 source-wordcount: '1541'
-ht-degree: 54%
+ht-degree: 94%
 
 ---
 
-# 将Journey Optimizer与Customer Journey Analytics集成
+# 将 Journey Optimizer 与 Customer Journey Analytics 集成
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/get-started) 帮助您营造紧密联系、与上下文相关且个性化的体验。它还有助于让客户了解其客户历程的下一步。
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/zh-hans/docs//journey-optimizer/using/get-started/get-started) 帮助您营造紧密联系、与上下文相关且个性化的体验。它还有助于让客户了解其客户历程的下一步。
 
-您可以配置Journey Optimizer生成的数据，以在Customer Journey Analytics中执行高级分析。 您可以自动配置此集成。 如果需要，您可以对连接或数据视图中可用的数据集、维度或量度进行额外的手动自定义。
+您可以配置 Journey Optimizer 生成的数据，在 Customer Journey Analytics 中执行高级分析。您可以自动配置此集成。如果需要，您可以对连接或数据视图中可用的数据集、维度或量度进行额外的手动自定义。
 
-## 自动配置Journey Optimizer集成
+## 自动配置 Journey Optimizer 集成
 
 {{release-limited-testing-section}}
 
-Journey Optimizer支持使用Customer Journey Analytics作为报表引擎。 请参阅 [开始使用新的报表界面](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channel-report/report-gs-cja) 请参阅Journey Optimizer文档。
+Journey Optimizer 支持使用 Customer Journey Analytics 作为报告引擎。请参阅 Journey Optimizer 文档中的[开始使用新的报告界面。](https://experienceleague.adobe.com/zh-hans/docs//journey-optimizer/using/channel-report/report-gs-cja)
 
-为Journey Optimizer启用Customer Journey Analytics报表后，自动 [连接](/help/connections/overview.md) 和 [数据视图](/help/data-views/data-views.md) 为特定沙盒创建。
+当您为 Journey Optimizer 启用 Customer Journey Analytics 报告后，系统会自动为特定沙盒创建[连接](/help/connections/overview.md)和[数据视图。](/help/data-views/data-views.md)
 
 ### 连接
 
-连接的名称为 **[!UICONTROL 启用AJO的连接(*沙盒名称*)]** 和具有以下开箱即用的配置和数据集值：
+该连接的名称为 **[!UICONTROL AJO Enabled Connection（*沙盒名称*）]**，并具有以下用于配置和数据集的开箱即用值：
 
 | **连接设置** | 值 |
 |---|---| 
@@ -38,39 +38,39 @@ Journey Optimizer支持使用Customer Journey Analytics作为报表引擎。 请
 
 | **数据设置** | 值 |
 |---|---| 
-| [!UICONTROL 启用滚动数据窗口] | 已启用。 [!UICONTROL 选定的月数] `13`. |
-| [!UICONTROL 沙盒] | [!UICONTROL *沙盒的名称*] （已禁用；您无法修改此设置）。 |
-| [!UICONTROL 平均每日事件数] | 小于100万（已禁用；您无法修改此设置）。 |
+| [!UICONTROL 启用滚动数据窗口] | 已启用。[!UICONTROL 选定的月数。]`13` |
+| [!UICONTROL 沙盒] | [!UICONTROL *沙盒名称*]（已禁用；您无法修改此设置）。 |
+| [!UICONTROL 平均每日事件数] | 少于 100 万（已禁用；您无法修改此设置）。 |
 
 
-| 数据集名称 | 架构 | 数据集类型 | 数据源类型 | 人员ID | 键 | 匹配键 | 导入新数据 | 回填数据 |
+| 数据集名称 | 架构 | 数据集类型 | 数据源类型 | 人员 ID | 键 | 匹配键 | 导入新数据 | 回填数据 |
 |---|---|---|---|---|---|---|---|---|
-| [!UICONTROL AJO实体数据集] | [!UICONTROL AJO实体记录架构] | [!UICONTROL 查询] | [!UICONTROL 其他] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
-| [!UICONTROL 历程步骤事件] | [!UICONTROL 用于Journey Orchestration的历程步骤事件架构] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL  Identitymap(\&lt;primary>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
-| [!UICONTROL AJO电子邮件跟踪体验事件数据集] | [!UICONTROL AJO电子邮件跟踪体验事件架构] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL Identitymap(\&lt;primary>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
-| [!UICONTROL AJO电子邮件跟踪体验事件数据集] | [!UICONTROL AJO电子邮件跟踪体验事件架构] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL Identitymap(\&lt;primary>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
-| [!UICONTROL AJO消息反馈事件数据集] | [!UICONTROL AJO消息反馈事件架构] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL Identitymap(\&lt;primary>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
-| [!UICONTROL AJO推送跟踪体验事件数据集] | [!UICONTROL AJO推送跟踪体验事件架构] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL Identitymap(\&lt;primary>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
+| [!UICONTROL AJO 实体数据集] | [!UICONTROL AJO 实体记录模式] | [!UICONTROL 查询] | [!UICONTROL 其他] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
+| [!UICONTROL 历程步骤事件] | [!UICONTROL Journey Orchestration 的历程步骤事件模式] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
+| [!UICONTROL AJO 电子邮件跟踪体验事件数据集] | [!UICONTROL AJO 电子邮件跟踪体验事件模式] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
+| [!UICONTROL AJO 电子邮件跟踪体验事件数据集] | [!UICONTROL AJO 电子邮件跟踪体验事件模式] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
+| [!UICONTROL AJO 消息反馈事件数据集] | [!UICONTROL AJO 消息反馈事件模式] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
+| [!UICONTROL AJO 推送跟踪体验事件数据集] | [!UICONTROL AJO 推送跟踪体验事件模式] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
 
 
 ### 数据视图
 
-数据视图的名称为 **AJO启用数据视图(*沙盒名称*)**.
+数据视图的名称为 **AJO Enable Data View（*沙盒名称*）。**
 
-- 在 **[!UICONTROL 配置]** 选项卡中，以下值是现成配置的。
+- 在&#x200B;**[!UICONTROL 配置]**&#x200B;选项卡中，以下是现成的配置。
 
   | 设置 | 值 |
   |---|---|
-  | [!UICONTROL 连接] | 启用AJO的连接(*沙盒名称*) |
+  | [!UICONTROL 连接] | AJO Enabled Connection（*沙盒名称*） |
   | [!UICONTROL 名称] | `AJO Enabled Data View (`_`sandbox name`_`)` |
-  | [!UICONTROL 外部 ID] | `AJO_Enabled_Data_View__`_`sandbox_name`_`_` （派生自名称） |
+  | [!UICONTROL 外部 ID] | `AJO_Enabled_Data_View__`_`sandbox_name`_`_`（源自名称） |
   | [!UICONTROL 描述] | `undefined` |
 
   {style="table-layout:fixed"}
 
   | 兼容性 | 值 |
   |---|---|
-  | [!UICONTROL 在 Adobe Journey Optimizer 中设置为默认数据视图] | 已启用（默认）。<br/><br/>通过此配置选项，可指定要与Journey Optimizer一起使用的数据视图，而无需手动配置。 有关如何启用此配置选项（如果默认情况下尚未启用）的信息，请参阅 [兼容性](/help/data-views/create-dataview.md#compatibility) 中的部分 [创建或编辑数据视图](/help/data-views/create-dataview.md). <br/><br/>禁用此选项时，会出现一个对话框，提示您是否要继续更改默认数据视图。 当您选择时 **[!UICONTROL 继续]**&#x200B;中，您需要选择另一个数据视图作为默认数据视图。 选择 **[!UICONTROL 确认]** 以确认您的选择。 选择 **[!UICONTROL 取消]** 以取消更改默认数据视图。 |
+  | [!UICONTROL 在 Adobe Journey Optimizer 中设置为默认数据视图] | 已启用（默认）。<br/><br/>此配置选项允许您指定与 Journey Optimizer 一起使用的数据视图，而无需手动配置。有关如何启用此配置选项的更多信息（如果默认没有启用），请参阅[创建或编辑数据视图](/help/data-views/create-dataview.md)中的[兼容性](/help/data-views/create-dataview.md#compatibility)部分。<br/><br/>当您禁用该选项时，会出现一个对话框提示您是否要继续更改默认数据视图。当您选择&#x200B;**[!UICONTROL 继续]**&#x200B;时，您需要选择另一个数据视图作为默认数据视图。选择&#x200B;**[!UICONTROL 确认]**&#x200B;以确认您的选择。选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消更改默认数据视图。 |
 
   | 容器 | 值 |
   |---|---|
@@ -82,30 +82,30 @@ Journey Optimizer支持使用Customer Journey Analytics作为报表引擎。 请
   |---|---|
   | [!UICONTROL 时区] | 符合您所在位置的时区 |
   | [!UICONTROL 日历类型] | 公历 |
-  | [!UICONTROL 一年的第一个月] | 1 月 |
-  | [!UICONTROL 一周的第一天] | 星期日 |
+  | [!UICONTROL 每年第一个月] | 1 月 |
+  | [!UICONTROL 每周的第一天] | 星期日 |
 
 
-- 在 **组件** 选项卡：
-   - 所有具有 [!UICONTROL (AJO)] 附加到其名称的后面会作为此自动配置的一部分自动添加。
-   - 一些自动添加的量度或维度基于派生字段。 这些派生字段是专门为此集成创建的。 例如，量度 [!UICONTROL 登陆页面点击量(AJO)] 基于 [!UICONTROL 登陆页面点击次数] 派生字段。
+- 在&#x200B;**组件**&#x200B;选项卡中：
+   - 所有名称中附加有 [!UICONTROL (AJO)] 的量度和维度均会作为此自动配置的一部分自动添加。
+   - 一些自动添加的量度或维度基于派生字段。 这些派生字段是专门为此集成创建的。例如，量度 [!UICONTROL 登陆页面点击量(AJO)] 基于 [!UICONTROL 登陆页面点击次数] 派生字段。
    - 某些量度或维度具有其他配置。 例如， [!UICONTROL 垃圾邮件投诉(AJO)] 有 [!UICONTROL 格式] 和 [!UICONTROL 包括/排除值] 设置已应用。
    - 所有自动添加的量度和维度都有一个名为的上下文标签 `:`*`name_of_metric_or_dimension`*. 例如， [!UICONTROL 登陆页面点击量(AJO)] 量度具有上下文标签 `:Landing page clicks (AJO)`.
 
-- 在 **[!UICONTROL 设置]** 选项卡，不应用特定配置值
+- 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中，未应用任何特定配置值
 
 >[!IMPORTANT]
 >
->修改自动为连接和数据视图配置的任何值都会对依赖并使用自动配置的Customer Journey Analytics集成的Journey Optimizer报表产生影响。
+>修改连接和数据视图的任何自动配置的值都会对依赖和使用自动配置的 Customer Journey Analytics 集成的 Journey Optimizer 报告产生影响。
 
 
-## 手动配置要与Journey Optimizer一起使用的数据视图
+## 手动配置与 Journey Optimizer 一起使用的数据视图
 
-以下各节介绍如何手动使用Journey Optimizer生成的数据在Customer Journey Analytics中执行高级分析。 仅在[自动配置选项](#automatically-configure-a-customer-journey-analytics-data-view-to-be-used-with-adobe-journey-optimizer)无法满足您的需求时才需要进行此操作。
+以下部分介绍如何手动使用 Journey Optimizer 生成的数据，以便在 Customer Journey Analytics 中执行高级分析。仅在[自动配置选项](#automatically-configure-a-customer-journey-analytics-data-view-to-be-used-with-adobe-journey-optimizer)无法满足您的需求时才需要进行此操作。
 
-### 将数据从Journey Optimizer发送到Experience Platform
+### 将数据从 Journey Optimizer 发送到 Experience Platform
 
-Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 Customer Journey Analytics。请参阅 [数据集入门](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/data-management/datasets/get-started-datasets) 《Journey Optimizer用户指南》中的步骤，以了解如何将Journey Optimizer数据作为Dataset发送到Experience Platform。
+Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 Customer Journey Analytics。有关如何将 Journey Optimizer 数据以数据集的形式发送到 Platform as a Dataset 的步骤，请参阅 Journey Optimizer 用户指南中的[开始使用数据集](https://experienceleague.adobe.com/zh-hans/docs//journey-optimizer/using/data-management/datasets/get-started-datasets)。
 
 ### 在 Customer Journey Analytics 中创建连接
 
@@ -119,7 +119,7 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 | AJO 电子邮件跟踪体验事件数据集 | 事件 | 人员 ID：`IdentityMap` | 包含电子邮件跟踪事件，例如“[!UICONTROL 打开]”、“[!UICONTROL 点击]”和“[!UICONTROL 取消订阅]”。 |
 | AJO 推送跟踪体验事件数据集 | 事件 | 人员 ID：`IdentityMap` | 包含推送跟踪事件，例如“[!UICONTROL 应用程序启动]”。 |
 | 历程步骤事件 | 事件 | 人员 ID：`_experience.journeyOrchestration.`<br>`stepEvents.profileID` | 包含显示哪些配置文件参与了历程的每个节点的事件。 |
-| AJO 实体数据集 | 查询 | 键：`_id`<br>匹配键：`_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | 包含将历程和促销活动元数据与所有Journey Optimizer事件数据关联的分类。 |
+| AJO 实体数据集 | 查询 | 键：`_id`<br>匹配键：`_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | 包含将历程和营销活动元数据与所有 Journey Optimizer 事件数据相关联的分类。 |
 
 {style="table-layout:auto"}
 
@@ -130,12 +130,12 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 
 >[!NOTE]
 >
->Journey Optimizer与Customer Journey Analytics之间的数据差异通常小于1-2%。 过去两小时内收集到的数据可能存在较大差异。请使用排除今天的日期范围以缓解涉及处理时间的差异。
+>Journey Optimizer 和 Customer Journey Analytics 之间的数据差异通常小于 1-2%。过去两小时内收集到的数据可能存在较大差异。请使用排除今天的日期范围以缓解涉及处理时间的差异。
 
 
 #### 在数据视图中配置维度
 
-可在数据视图中创建以下维度，以实现与 Journey Optimizer 中类似的维度大致对等。请参阅 [组件设置](/help/data-views/component-settings/overview.md) 有关维度自定义选项的详细信息，请参阅数据视图管理器。
+可在数据视图中创建以下维度，以实现与 Journey Optimizer 中类似的维度大致对等。有关维度自定义选项的详细信息，请参阅数据视图管理器中的[组件设置](/help/data-views/component-settings/overview.md)。
 
 | 维度 | 模式元素 | 组件设置 |
 | --- | --- | --- |
@@ -174,7 +174,7 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 | Edge 发送次数 | Edge 网络向 Web 或移动 SDK 发送消息的次数 | 使用架构字符串元素 `_experience.decisioning.propositionEventType.send` | |
 | 入站显示次数 | 向用户显示 Web 或应用程序内消息的次数 | 使用架构字符串元素 `_experience.decisioning.propositionEventType.display` | |
 | 入站点击次数 | Web 或应用程序内消息点击次数 | 使用架构字符串元素 `_experience.decisioning.propositionEventType.interact` | |
-| 应用程序内触发器 | 决策引擎建议应显示消息的次数。Mobile SDK可以覆盖决策，从而减少实际显示的数量。 | 使用架构字符串元素 `_experience.decisioning.propositionEventType.trigger` | |
+| 应用程序内触发器 | 决策引擎建议应显示消息的次数。移动 SDK 可以推翻减少实际显示次数的决定。 | 使用架构字符串元素 `_experience.decisioning.propositionEventType.trigger` | |
 | 应用程序内解除 | SDK 从 UI 中删除应用程序内消息的次数 | 使用架构字符串元素 `_experience.decisioning.propositionEventType.dismiss` | |
 
 {style="table-layout:auto"}
