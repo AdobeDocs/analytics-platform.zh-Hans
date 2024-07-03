@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 805eb9dc9ab287934dd15eb56d3ac35187c979d7
+source-git-commit: 38bcb262023773763c0ff710a6aba4e06b864d01
 workflow-type: tm+mt
 source-wordcount: '3752'
 ht-degree: 11%
@@ -326,7 +326,7 @@ Customer Journey Analytics支持两种类型的拼合：基于字段的拼合和
 
 >[!NOTE]
 >
->您需要 **非** 需要Real-time Customer Data Platform许可证才能进行基于图形的拼合。 此 **选择** 或更高的Customer Journey Analytics包包含所需的User Identity Service权限。
+>您需要 **非** 需要Real-time Customer Data Platform许可证才能进行基于图形的拼合。 此 **选择** 或更高版本的Customer Journey Analytics包包括所需的User Identity Service权限。
 
 
 
