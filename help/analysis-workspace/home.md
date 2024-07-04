@@ -6,14 +6,20 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '717'
-ht-degree: 100%
+source-git-commit: ea5209d8729a024126e9b9de32e737e87b08a0ef
+workflow-type: tm+mt
+source-wordcount: '749'
+ht-degree: 95%
 
 ---
 
-# Analysis Workspace 概述
+# Analysis Workspace 概述 {#analysis-workspace-overview}
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_fundamentals"
+>title="Analysis Workspace基础知识"
+>abstract="按照以下导览了解Analysis Workspace的一些基础知识，包括构建表格、添加可视化图表、更改日期范围等。"
+>additional-url="https://experience.adobe.com/#/@demosystem4/platform/analytics/?AnalyticsUI-core_version=prod20240625165945" text="导览指南"
 
 利用 Analysis Workspace，可以快速生成分析以收集见解，然后与其他人共享这些见解。可以使用拖放浏览器界面进行分析、添加可视化图表以便直观地呈现数据、梳理数据集以及与您选定的任何人员共享和安排项目。
 
