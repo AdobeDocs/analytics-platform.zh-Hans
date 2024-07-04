@@ -5,16 +5,19 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 38bcb262023773763c0ff710a6aba4e06b864d01
+source-git-commit: 195659d6665e5a3c0e4bf5a4f02ce2af5b95749c
 workflow-type: tm+mt
-source-wordcount: '3752'
-ht-degree: 11%
+source-wordcount: '3793'
+ht-degree: 12%
 
 ---
 
 # 拼合
 
-{{select-package}}
+>[!NOTE]
+>
+>您必须拥有 **选择** 包或更高版本（用于基于字段的拼接）或 **Prime** 软件包或更高版本（用于基于图形的拼接），以使用本节中描述的功能。 如果您不确定您拥有的是哪个 Customer Journey Analytics 包，请联系您的管理员。
+
 
 身份拼接（或简单地说，拼接）是一项强大的功能，可以提高事件数据集进行跨渠道分析的适用性。 跨渠道分析是Customer Journey Analytics可以处理的主要用例，允许您基于通用标识符（人员ID）对不同渠道的多个数据集无缝组合和运行报告。
 
@@ -189,7 +192,7 @@ Customer Journey Analytics支持两种类型的拼合：基于字段的拼合和
 
 - Adobe Experience Platform中的事件数据集（您要对其应用拼接）必须具有两个帮助识别访客的列：
 
-   - A **永久ID**，每行都可用的标识符。 例如，由Adobe AnalyticsAppMeasurement库生成的访客ID或由Adobe Experience Cloud Identity服务生成的ECID。
+   - A **永久ID**，每行都可用的标识符。 例如，由Adobe AnalyticsAppMeasurement库生成的访客ID或由Adobe Experience Platform Identity服务生成的ECID。
    - A **临时ID**，该标识符仅在部分行可用。 例如，经过身份验证的访客的经过哈希处理的用户名或电子邮件地址。您实际上可以使用任何喜欢的标识符。 拼接会将此字段视为保存实际人员ID信息。 为获得最佳的拼接结果，应在数据集的事件中为每个永久ID至少发送一次临时ID。 如果计划在Customer Journey Analytics连接中包含此数据集，则最好其他数据集也具有类似的公共标识符。
 
 - 对于要拼合的数据集，必须将两列（永久ID和临时ID）定义为架构中具有标识命名空间的标识字段。 在Real-time Customer Data Platform中使用身份拼接时，使用 [`identityMap` 字段组](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity)，您仍需要添加具有身份命名空间的身份字段。 由于Customer Journey Analytics拼接不支持 `identityMap` 字段组。 在架构中添加标识字段时，同时使用 `identityMap` 字段组，不要将附加标识字段设置为主标识。 将附加标识字段设置为主标识会干扰 `identityMap` Real-time Customer Data Platform使用的字段组。
@@ -321,13 +324,12 @@ Customer Journey Analytics支持两种类型的拼合：基于字段的拼合和
 
 以下先决条件专门适用于基于图形的拼接：
 
-- Adobe Experience Platform中的事件数据集（您要对其应用拼接）必须有一列用于在每行上标识访客，即 **永久ID**. 例如，由Adobe AnalyticsAppMeasurement库生成的访客ID或由Adobe Experience Cloud Identity服务生成的ECID。
-- 来自Experience Cloud身份服务的身份图必须具有命名空间(例如 `Email`，或 `Phone`)，您希望在拼合期间使用来解析 **临时ID**. 请参阅 [Experience Platform标识服务](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) 以了解更多信息。
+- Adobe Experience Platform中的事件数据集（您要对其应用拼接）必须有一列用于在每行上标识访客，即 **永久ID**. 例如，由Adobe AnalyticsAppMeasurement库生成的访客ID或由Adobe Experience Platform Identity服务生成的ECID。
+- 来自Experience Platform身份服务的身份图必须具有命名空间(例如 `Email`，或 `Phone`)，您希望在拼合期间使用来解析 **临时ID**. 请参阅 [Experience Platform标识服务](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) 以了解更多信息。
 
 >[!NOTE]
 >
->您需要 **非** 需要Real-time Customer Data Platform许可证才能进行基于图形的拼合。 此 **选择** 或更高版本的Customer Journey Analytics包包括所需的User Identity Service权限。
-
+>您需要 **非** 需要Real-time Customer Data Platform许可证才能进行基于图形的拼合。 此 **Prime** Customer Journey Analytics包或更高版本包括所需的Experience PlatformIdentity Service权限。
 
 
 ### 限制
