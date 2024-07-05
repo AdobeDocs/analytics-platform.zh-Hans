@@ -4,14 +4,21 @@ description: 在 Analysis Workspace 中如何使用和解读归因面板。
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 4ed05334a3866ec784901d273fcb13bd24b2d449
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 77%
+source-wordcount: '554'
+ht-degree: 75%
 
 ---
 
-# 归因面板
+# 归因面板 {#attribution-panel}
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_attribution"
+>title="归因"
+>abstract="使用任意维度和转化量度，快速比较和可视化任意数量的归因模型"
+>additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ面板"
+
 
 [!UICONTROL 归因]面板是一种简单的方式，用于构建分析来比较各种归因模型。此功能为您提供专用工作区来使用和比较归因模型。
 
