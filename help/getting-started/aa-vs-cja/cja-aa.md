@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: f091dda08391bad3974493e93dce942b8a2fc4d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2287'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 97%
 | 虚拟报表包 | 全面支持。现在称为[数据视图](/help/data-views/create-dataview.md)。 |
 | 虚拟报表包组件管理 | 全面支持。现在是数据视图的一部分。 |
 | 设备、浏览器、反向链接、技术维度 | 支持基于 [Analytics Source Connector ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)的数据集和 WebSDK 生成的数据集。请参阅[有关通过 ADC 支持哪些 Analytics 变量的文档](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=zh-Hans)。如果您使用 Experience Platform Web SDK 数据收集，则当前不支持基于设备查找的设备和维度。计划在以后提供支持。要将设备和浏览器查找功能添加到 Web SDK 数据流，请参阅[本文档](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html) |
-| 流媒体收集加载项 | 使用作为Workspace中的“同时观看媒体的人数”面板和“媒体播放耗时”面板一部分的Analytics源连接器即可获得流媒体数据。 |
+| 流媒体收藏集附加组件 | 使用作为 Workspace 中的“同时观看媒体的人数”面板和“媒体播放耗时”面板一部分的 Analytics Data Connector 即可获取流媒体数据。 |
 
 {style="table-layout:auto"}
 
@@ -56,7 +56,7 @@ ht-degree: 97%
 
 | 功能 | 注释 |
 | --- | --- |
-| Analytics for Target (A4T) | [Adobe Customer Journey Analytics 和 Target 进行集成](https://experienceleague.adobe.com/cn/docs/target/using/integrate/cja/target-reporting-in-cja)，为优化项目提供强大而又节省时间的分析工具。 |
+| Analytics for Target (A4T) | [Adobe Customer Journey Analytics 和 Target 进行集成](https://experienceleague.adobe.com/zh-hans/docs/target/using/integrate/cja/target-reporting-in-cja)，为优化项目提供强大而又节省时间的分析工具。 |
 | 受众发布 | 如果与 Adobe 的客户数据平台或 Journey Optimizer 产品一起获得许可即支持。[受众发布](/help/components/audiences/audiences-overview.md)将受众发送到 Experience Platform 中的 Real-time Customer Profile。 |
 | 分类 | 现在称为“查找数据集”。Analytics 中使用的分类可以通过分析分类源连接器导入到 Experience Platform 和 Customer Journey Analytics。 查找数据集还可以直接上传到 Experience Platform 并在 Customer Journey Analytics 中提供。 |
 | 分类规则生成器 | 支持在 Customer Journey Analytics 中使用[子字符串。](/help/data-views/component-settings/substring.md)在报告时使用字符串操作，而不使用查找数据集。 |
@@ -68,7 +68,7 @@ ht-degree: 97%
 | 登录、退出和花费时间维度和量度 | 受支持（现在“进入次数”和“退出次数”称为“会话启动次数”和“会话结束次数”），但计算方式略有不同。 |
 | eVar 持久性设置 | Customer Journey Analytics 中不再包括 eVar。但是，持久性设置现在是数据视图的一部分，且可用于所有维度。请记住，持久基于报告时处理，而不是数据收集处理。数据视图中的纬度集限制为 90 天最大持久性，不支持无限持久性。 |
 | 归属地细分维度 | [全面支持](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html) |
-| 基于图形的拼合 | 到 [基于图形的拼接](https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview#graph-based-stitching)，您可以在中利用身份图的强大功能 [Adobe Experience Platform Identity服务](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) 提升数据集到其首选身份。 |
+| 基于图形的拼接 | 通过 [基于图形的拼接](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/stitching/overview#graph-based-stitching)，您可以利用 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home) 中身份图的强大功能将数据集提升到其首选身份。 |
 | IP 模糊处理 | 对于使用 Analytics Source Connector 将数据从 Adobe Analytics 填充到 Customer Journey Analytics 中的 Customer Journey Analytics 客户：Adobe Analytics 中应用的 IP 模糊设置会传送到您的 Customer Journey Analytics 数据。您可以根据需要在 Adobe Analytics 中控制这些设置。<p>对于使用 Experience Platform Web SDK 将数据直接填充到 Platform 和 Customer Journey Analytics 中的 Customer Journey Analytics 客户。您可以使用 Platform 中的“数据收集数据准备”功能根据您公司的要求配置混淆 IP 地址的规则。 |
 | 营销渠道 | 使用 Analytics Source Connector 时，“营销渠道”数据会通过该连接器流入 Customer Journey Analytics。在传统的 Adobe Analytics 中配置营销渠道规则，其中不支持某些规则。有关更多信息，请参阅 [Customer Journey Analytics 营销渠道](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels.html)。<br/>对于 WebSDK 实施，通过[派生字段](../../data-views/derived-fields/derived-fields.md)支持报告时营销渠道处理规则。 |
 | 促销变量持久性 | 通过[绑定维度和绑定量度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension)提供全面支持 |
@@ -137,7 +137,7 @@ ht-degree: 97%
 | 引导式分析 | [引导式分析](/help/guided-analysis/overview.md)是一种报告格式，它使用户可快速地自助满足其数据需求，以使其可快速地获得高质量见解并作出更加以数据为导向的决策。引导式分析是 Customer Journey Analytics 的附加组件 Adobe Product Analytics 的一部分。 |
 | 智能题注 | 智能题注使用先进的机器学习和生成式 AI 为工作区可视化提供有价值的自然语言见解。初始版本为 [Line](/help/analysis-workspace/visualizations/line.md) 可视化提供了自动生成的见解。 |
 | 报表时间转换 | 通过 Customer Journey Analytics 中的[数据视图](/help/data-views/data-views.md)，可进一步解释从某个连接获得的数据。可不更改实施即更改或删除数据、使用子字符串操纵维度、从任意值创建量度或筛选子事件。以非破坏性的方式进行所有这些转换。Adobe Analytics 通过虚拟报表包和自定义会话长度提供有限的功能。 |
-| BI 扩展 | [BI 扩展](https://experienceleague.adobe.com/cn/docs/analytics-platform/using/cja-usecases/data-export/bi-extension) 可让您将 CJA 直接连接到流行的 BI 可视化工具，例如 PowerBI 或 Tableau。通过使用此扩展，您可以让您的 BI 报告与您在 Analysis Workspace 和其他 CJA 报告界面中看到的内容完全匹配。这是获取 CJA 的 BI 报告的一种更简单的方法，无需根据原始数据重新创建报告/指标。 |
+| BI 扩展 | [BI 扩展](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/data-export/bi-extension) 可让您将 CJA 直接连接到流行的 BI 可视化工具，例如 PowerBI 或 Tableau。通过使用此扩展，您可以让您的 BI 报告与您在 Analysis Workspace 和其他 CJA 报告界面中看到的内容完全匹配。这是获取 CJA 的 BI 报告的一种更简单的方法，无需根据原始数据重新创建报告/指标。 |
 | SQL 访问 | 通过使用 Data Distiller 选项，Customer Journey Analytics 可以消除 Adob&#x200B;e 后端处理中收集的数据的限制。您可以使用 SQL 修改数据、创建适合您的业务的值和数据集，并继续探索。Analytics 不支持对其数据进行任何类型的 SQL 访问。 |
 | 拼合 | [标识拼接](/help/stitching/overview.md)（或简称为拼接）是一项强大的功能，可提升事件数据集对跨渠道分析的适用性。跨渠道分析是 Customer Journey Analytics 可以处理的主要用例，允许您基于通用标识符（人员 ID）无缝组合并运行来自不同渠道的多个数据集的报告。 |
 | 无限量的客户维度和量度 | Customer Journey Analytics 维度是无限的；值可以是数字、文本、对象、列表或它们的组合。维度可以是嵌套的或分层的。 <p>根据对比度，Adobe Analytics 最多支持 75 个 prop 和 250 个 eVar。</p> |

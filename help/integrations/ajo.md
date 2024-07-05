@@ -5,15 +5,15 @@ exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
 source-git-commit: 13c3f99dba7725553c775df4492803f759ebead5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1541'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # 将 Journey Optimizer 与 Customer Journey Analytics 集成
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/zh-hans/docs//journey-optimizer/using/get-started/get-started) 帮助您营造紧密联系、与上下文相关且个性化的体验。它还有助于让客户了解其客户历程的下一步。
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/get-started/get-started) 帮助您营造紧密联系、与上下文相关且个性化的体验。它还有助于让客户了解其客户历程的下一步。
 
 您可以配置 Journey Optimizer 生成的数据，在 Customer Journey Analytics 中执行高级分析。您可以自动配置此集成。如果需要，您可以对连接或数据视图中可用的数据集、维度或量度进行额外的手动自定义。
 
@@ -21,7 +21,7 @@ ht-degree: 94%
 
 {{release-limited-testing-section}}
 
-Journey Optimizer 支持使用 Customer Journey Analytics 作为报告引擎。请参阅 Journey Optimizer 文档中的[开始使用新的报告界面。](https://experienceleague.adobe.com/zh-hans/docs//journey-optimizer/using/channel-report/report-gs-cja)
+Journey Optimizer 支持使用 Customer Journey Analytics 作为报告引擎。请参阅 Journey Optimizer 文档中的[开始使用新的报告界面。](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/channel-report/report-gs-cja)
 
 当您为 Journey Optimizer 启用 Customer Journey Analytics 报告后，系统会自动为特定沙盒创建[连接](/help/connections/overview.md)和[数据视图。](/help/data-views/data-views.md)
 
@@ -88,9 +88,9 @@ Journey Optimizer 支持使用 Customer Journey Analytics 作为报告引擎。�
 
 - 在&#x200B;**组件**&#x200B;选项卡中：
    - 所有名称中附加有 [!UICONTROL (AJO)] 的量度和维度均会作为此自动配置的一部分自动添加。
-   - 一些自动添加的量度或维度基于派生字段。 这些派生字段是专门为此集成创建的。例如，量度 [!UICONTROL 登陆页面点击量(AJO)] 基于 [!UICONTROL 登陆页面点击次数] 派生字段。
-   - 某些量度或维度具有其他配置。 例如， [!UICONTROL 垃圾邮件投诉(AJO)] 有 [!UICONTROL 格式] 和 [!UICONTROL 包括/排除值] 设置已应用。
-   - 所有自动添加的量度和维度都有一个名为的上下文标签 `:`*`name_of_metric_or_dimension`*. 例如， [!UICONTROL 登陆页面点击量(AJO)] 量度具有上下文标签 `:Landing page clicks (AJO)`.
+   - 一些自动添加的量度或维度是基于派生字段的。这些派生字段是专门为此集成创建的。例如，量度“[!UICONTROL 登陆页面点击次数”（AJO）]基于“[!UICONTROL 登陆页面点击次数]”派生字段。
+   - 某些量度或维度有额外的配置。例如，[!UICONTROL 垃圾邮件投诉 (AJO) ]的确应用了“[!UICONTROL 格式]”和“[!UICONTROL 包含排除值]”设置。
+   - 所有自动添加的量度和维度都有一个名为 `:`*`name_of_metric_or_dimension`*的上下文标签。例如，[!UICONTROL 登陆页点击次数（AJO）] 量度具有上下文标签 `:Landing page clicks (AJO)`。
 
 - 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中，未应用任何特定配置值
 
@@ -105,7 +105,7 @@ Journey Optimizer 支持使用 Customer Journey Analytics 作为报告引擎。�
 
 ### 将数据从 Journey Optimizer 发送到 Experience Platform
 
-Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 Customer Journey Analytics。有关如何将 Journey Optimizer 数据以数据集的形式发送到 Platform as a Dataset 的步骤，请参阅 Journey Optimizer 用户指南中的[开始使用数据集](https://experienceleague.adobe.com/zh-hans/docs//journey-optimizer/using/data-management/datasets/get-started-datasets)。
+Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 Customer Journey Analytics。有关如何将 Journey Optimizer 数据以数据集的形式发送到 Platform as a Dataset 的步骤，请参阅 Journey Optimizer 用户指南中的[开始使用数据集](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/data-management/datasets/get-started-datasets)。
 
 ### 在 Customer Journey Analytics 中创建连接
 
