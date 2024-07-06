@@ -4,10 +4,10 @@ description: Customer Journey Analytics 登陆页面。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
-workflow-type: ht
-source-wordcount: '758'
-ht-degree: 100%
+source-git-commit: 52021e557171754901fe6a64c7fa544243af70f1
+workflow-type: tm+mt
+source-wordcount: '767'
+ht-degree: 98%
 
 ---
 
@@ -29,11 +29,13 @@ AI 助手 是一种对话体验，允许从业者快速执行任务——无论�
 
 [![图像](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
->[!TAB 基于图形的拼接]
+>[!TAB 基于图形的拼合*]
 
 通过基于图形的拼接，您可以使用体验平台标识服务提供的标识图更好地了解客户历程： <ul><li>连接具有不同标识符的数据集，无需提取、转换和加载额外数据以反映单个标识符。</li> <li>通过跨数据集共享标识，提高单个数据集中首选或黄金标识的覆盖率。</li><li>将 Real-Time Customer Data Platform 和 Journey Optimizer 中创建的轮廓与 Customer Journey Analytics 中的人员进行对齐。</li></ul>
 
 [![图像](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
+
+*_您必须具有用于基于图形的拼合的Prime包。_*
 
 >[!TAB 查找 B2B]
 
