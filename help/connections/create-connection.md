@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 3176be3fe1a117718cd675a4ed79df978d1f33f6
+source-git-commit: 8fe3fb966f559aa12f3203e02a1766436e45a24a
 workflow-type: tm+mt
-source-wordcount: '3174'
+source-wordcount: '3172'
 ht-degree: 95%
 
 ---
@@ -82,7 +82,7 @@ ht-degree: 95%
    |---|---|
    | 数据集 | 数据集的名称。 选择名称以将您定向到Experience Platform中的数据集。 选择 ![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) 以显示包含数据集更多详细信息的弹出窗口。 在弹出窗口中，您可以选择 **[!UICONTROL 在Platform中编辑]** 直接在Experience Platform中编辑数据集。 |
    | 数据集类型 | 数据集的类型：事件、配置文件或查找。 |
-   | 记录数 | Experience Platform中最后一批数据集的可用记录数。 |
+   | 记录数 | Experience Platform中的数据集在上个月的总记录数。 |
    | 架构 | 数据集所基于的架构。 选择名称以将您定向到Experience Platform中的架构。 |
    | 上一批次 | Experience Platform中摄取的上一个批次的状态。 请参阅 [批次状态](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting#batch-states) 更多信息。 |
    | 数据集 ID | 数据集的id。 |
