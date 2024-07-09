@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 195659d6665e5a3c0e4bf5a4f02ce2af5b95749c
+source-git-commit: d8487c48b4ca4c2a7e5f407d73e71d227aa0de1c
 workflow-type: tm+mt
-source-wordcount: '3793'
+source-wordcount: '3809'
 ht-degree: 12%
 
 ---
@@ -211,7 +211,7 @@ Customer Journey Analytics支持两种类型的拼合：基于字段的拼合和
 - 对于临时ID包含占位符值的情况（例如），请务必谨慎 `Undefined`. 请参阅 [常见问题解答](faq.md) 以了解更多信息。
 
 
-## 基于图形的拼合
+## 基于图形的拼接
 
 您可以为该数据集指定事件数据集、永久ID (Cookie)和临时ID （人员ID）的命名空间。 基于图形的拼合会在新拼合的数据集中为拼合的ID创建新列。 然后，使用持久ID使用指定的命名空间从Experience Platform身份服务查询身份图以更新拼合的ID。
 
@@ -325,7 +325,7 @@ Customer Journey Analytics支持两种类型的拼合：基于字段的拼合和
 以下先决条件专门适用于基于图形的拼接：
 
 - Adobe Experience Platform中的事件数据集（您要对其应用拼接）必须有一列用于在每行上标识访客，即 **永久ID**. 例如，由Adobe AnalyticsAppMeasurement库生成的访客ID或由Adobe Experience Platform Identity服务生成的ECID。
-- 来自Experience Platform身份服务的身份图必须具有命名空间(例如 `Email`，或 `Phone`)，您希望在拼合期间使用来解析 **临时ID**. 请参阅 [Experience Platform标识服务](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) 以了解更多信息。
+- 来自Experience Platform身份服务的身份图必须具有命名空间(例如 `Email`，或 `Phone`)，您希望在拼合期间使用来解析 **临时ID**. 请参阅 [Experience Platform标识服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home) 以了解更多信息。
 
 >[!NOTE]
 >
@@ -352,10 +352,11 @@ Customer Journey Analytics支持两种类型的拼合：基于字段的拼合和
 
 ### 选项
 
-选择用于拼接的选项。 Customer Journey Analytics包可确定以下选项的可用值：初始回填持续时间、回看窗口期、重放频率和允许拼合的最大数据集数。 请参阅 [Customer Journey Analytics产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/customer-journey-analytics.html) 以了解更多详细信息。
+选择用于拼接的选项。 Customer Journey Analytics包可确定可用的拼接方法、初始回填持续时间、回顾时间范围、重放频度和允许拼接的最大数据集数选项。 请参阅 [Customer Journey Analytics产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/customer-journey-analytics.html) 以了解更多详细信息。
 
 | | Customer Journey Analytics<br/>选择 | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
+| 可用的拼接方法 | <li>基于字段的拼合</li> | <li>基于字段的拼合</li><li>基于图形的拼接</li> | <li>基于字段的拼合</li><li>基于图形的拼接</li> |
 | 一次性拼接回填持续时间 | 13 个月 | 13 个月 | 25 个月 |
 | 回顾窗口和重放频率 | <li>1天，每天</li><li>长达7天，每周</li> | <li>1天，每天</li><li>长达14天，每周</li> | <li>1天，每天</li><li>长达30天，每周</li> |
 | 允许拼合的最大数据集数 | 5 | 10 | 50 |
