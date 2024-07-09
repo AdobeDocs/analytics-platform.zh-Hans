@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
+source-git-commit: 543443fa6483034f5604fca082fcb75f409006a1
 workflow-type: tm+mt
-source-wordcount: '8075'
+source-wordcount: '8068'
 ht-degree: 12%
 
 ---
@@ -381,9 +381,6 @@ ht-degree: 12%
 
 - 约束（如果适用）。
 
->[!NOTE]
->
->Lookup函数已重命名为 [分类](#classify). 请参阅 [分类](#classify) 函数以获取更多信息。
 
 <!-- CASE WHEN -->
 
@@ -622,10 +619,6 @@ Customer Journey Analytics使用以下默认容器模型：
 定义由新派生字段中的相应值替换的一组值。
 
 +++ 详细信息
-
->[!NOTE]
->
->此函数最初名为Lookup ，但已重命名为Classification ，以适应具有不同功能的Lookup函数。
 
 ## 规范 {#classify-io}
 
@@ -1027,6 +1020,8 @@ You define a new `Tracking Code (deduplicated)` derived field. You use the [!UIC
 ![小写规则的屏幕截图](assets/lookup.png)
 
 ## 更多信息 {#lookup-more-info}
+
+查找函数在报告时将应用于由Customer Journey Analytics从您配置为连接一部分的查找数据集检索的数据。
 
 您可以快速插入 [!UICONTROL 查找] 函数中，已包含一个或多个其他函数。
 
