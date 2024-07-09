@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: d8487c48b4ca4c2a7e5f407d73e71d227aa0de1c
+source-git-commit: ca2387c2dd4c6c0ccdf6cec245c5d66ecea93bd5
 workflow-type: tm+mt
-source-wordcount: '3809'
+source-wordcount: '3817'
 ht-degree: 12%
 
 ---
@@ -350,9 +350,9 @@ Customer Journey Analytics支持两种类型的拼合：基于字段的拼合和
 
 您的组织满足所有条件后 [先决条件](#prerequisites) 并了解常见的 [限制](#limitations) 和拼接方法特定的([基于字段](#limitations-1) 和 [基于图](#limitations-2))限制，您可以按照以下步骤开始在Customer Journey Analytics中使用拼合。
 
-### 选项
+### 选择选项
 
-选择用于拼接的选项。 Customer Journey Analytics包可确定可用的拼接方法、初始回填持续时间、回顾时间范围、重放频度和允许拼接的最大数据集数选项。 请参阅 [Customer Journey Analytics产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/customer-journey-analytics.html) 以了解更多详细信息。
+您有权使用的Customer Journey Analytics包将决定可用的拼接方法、初始回填持续时间的选项、回顾时间范围、重放频率和允许拼接的最大数据集数。 请参阅 [Customer Journey Analytics产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/customer-journey-analytics.html) 以了解更多详细信息。 在请求支持之前决定可用的选项。
 
 | | Customer Journey Analytics<br/>选择 | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
