@@ -7,9 +7,9 @@ exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
 source-git-commit: e766858a93f8dcfadda2e7518b0d74468ff1ae4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '750'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 96%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_fundamentals"
->title="Analysis Workspace基础知识"
->abstract="按照以下导览了解Analysis Workspace的一些基础知识，包括构建表格、添加可视化图表、更改日期范围等。"
+>title="Analysis Workspace 基础"
+>abstract="按照以下导览学习 Analysis Workspace 的一些基础知识，包括构建表、添加可视化、更改日期范围等等。"
 >additional-url="https://images-tv.adobe.com/mpcv3/7381/7a0633f8-972f-4367-a2ed-b169981efa7b_1681135724.854x480at800_h264.mp4" text="Analysis Workspace 概述"
 
 利用 Analysis Workspace，可以快速生成分析以收集见解，然后与其他人共享这些见解。可以使用拖放浏览器界面进行分析、添加可视化图表以便直观地呈现数据、梳理数据集以及与您选定的任何人员共享和安排项目。
