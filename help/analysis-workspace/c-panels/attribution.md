@@ -7,7 +7,7 @@ role: User
 source-git-commit: c89a28323c9d40a7265cd22994a0d1c484f4c7ee
 workflow-type: tm+mt
 source-wordcount: '620'
-ht-degree: 70%
+ht-degree: 73%
 
 ---
 
@@ -16,14 +16,14 @@ ht-degree: 70%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_attribution_button"
 >title="归因"
->abstract="使用任意维度和转化量度，快速比较和可视化任意数量的归因模型"
->additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ面板"
+>abstract="使用任意维度和转化量度，快速比较和可视化任意数量的属性模型"
+>additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ 面板"
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_attribution_panel"
 >title="归因面板"
 >abstract="使用任意维度和转化指标，快速比较和可视化任意数量的归因模型。<br/><br/>**参数&#x200B;**<br/>**渠道**<br/>&#x200B;要归因的维度。 这可以是营销渠道、营销活动或任何其他维度。<br/>**模型**<br/>&#x200B;该模型可确定如何将点数分配给接触点。<br/>**回看窗口期**<br/>&#x200B;此设置确定每次转化时应用的数据归因窗口。"
->additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ面板"
+>additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ 面板"
 
 
 [!UICONTROL 归因]面板是一种简单的方式，用于构建分析来比较各种归因模型。此功能为您提供专用工作区来使用和比较归因模型。
