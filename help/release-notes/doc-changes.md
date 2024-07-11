@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 466bcd2d790dae9eccb5d9114a375c5b9666c435
+source-git-commit: f0ff4abcfdb7361aed62bd35b50c4b014b223ec9
 workflow-type: tm+mt
-source-wordcount: '3810'
-ht-degree: 71%
+source-wordcount: '3824'
+ht-degree: 72%
 
 ---
 
@@ -19,9 +19,11 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 
 | 功能 | 描述 |
 | --- | --- |
+| **2024 年 7 月** | |
+| 更新了常见错误消息 | 已对 [常见错误消息](/help/analysis-workspace/workspace-faq/error-messages.md). |
 | **2024 年 6 月** | |
-| 更新了引用流媒体功能的产品名称 | 在引用一组流媒体功能时，将名为“Streaming Media Collection Add-on”的“Media Analytics”和“Streaming Media”实例替换为“Streaming Media Collection Add-on”，这些功能收集流媒体数据并将其显示在Analysis Workspace中。 <p>这些更新可在整个Customer Journey Analytics文档以及 [流媒体收藏集附加组件文档](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/media-overview).</p> |
-| 基于图形的拼合 | 更新并重组 [拼合文档](/help/stitching/overview.md) 引入了基于图形的拼合。 |
+| 更新了涉及流媒体功能的产品名称 | 当引用收集流媒体数据并将其显示在 Analysis Workspace 中的一组流媒体功能时，将“媒体分析”和“流媒体”的实例替换为名称“流媒体收藏集附加组件”。 <p>这些更新可在整个Customer Journey Analytics文档以及 [流媒体收藏集附加组件文档](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/media-overview).</p> |
+| 基于图形的拼接 | 更新并重组 [拼合文档](/help/stitching/overview.md) 引入了基于图形的拼合。 |
 | AI 助手 | 已添加 [文档](../ai-assistant.md) 在AICustomer Journey Analytics助手上。 |
 | 转换数据集以进行B2B查找 | 添加了有关如何支持的文档 [对B2B数据进行基于人员的查找](/help/connections//transform-datasets-b2b-lookups.md) （包括客户、机会、营销列表和营销活动）使用转换B2B查找数据集。 |
 | 派生字段函数和函数模板 | 添加了关于其他派生字段函数的文档([数学](/help/data-views/derived-fields/derived-fields.md#math)， [下一个或上一个](/help/data-views/derived-fields/derived-fields.md#next-or-previous)、和 [总结](/help/data-views/derived-fields/derived-fields.md#summarize))和 [函数模板](/help/data-views/derived-fields/derived-fields.md#function-templates). |
@@ -98,7 +100,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | **2023 年 6 月** | |
 | 跨渠道分析和拼合 | 为了预测即将进行的更改，以支持拼合并进一步阐明如何使用拼合提升跨渠道分析，我们编辑了与跨渠道分析功能相关的文档，将[跨渠道分析](../use-cases/cross-channel/cross-channel.md)称作 Customer Journey Analytics 功能和用例，并将[拼合](../stitching/overview.md)作为实现此目的的重要功能。 |
 | PowerBI 和 Tableau 访问 Customer Journey Analytics 数据视图 | Customer Journey AnalyticsBI扩展允许SQL访问您在Customer Journey Analytics中定义的数据视图。 [了解详情](/help/data-views/bi-extension.md) |
-| Adobe Journey Optimizer 数据视图 | Customer Journey Analytics 管理员有权访问 Customer Journey Analytics 中某些名为“AJO 数据视图（沙盒名称）”的额外数据视图。[了解详情](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/reporting-configuration)。 |
+| Adobe Journey Optimizer 数据视图 | Customer Journey Analytics 管理员有权访问 Customer Journey Analytics 中某些名为“AJO 数据视图（沙盒名称）”的额外数据视图。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/content-management/content-experiment/reporting-configuration)。 |
 | 货币换算 | 更新了有关[货币换算](../data-views/component-settings/format.md#currency)支持的文档。 |
 | 计算量度更新 | 对计算量度文档作出了以下更新，以使其与当前的 Customer Journey Analytics 功能保持一致： <ul><li>更新了 Customer Journey Analytics 中提供的[默认计算量度](/help/components/calc-metrics/default-calcmetrics.md)的列表</li><li>更新了各种计算指标文章中的屏幕截图和过程 </li></ul> |
 | **2023 年 5 月** | |
