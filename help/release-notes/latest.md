@@ -3,16 +3,16 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 1534b628841a5b4588379b944822073f3288d710
-workflow-type: ht
-source-wordcount: '1129'
-ht-degree: 100%
+source-git-commit: 2ea7c9ec4d02685164a10da3e3f3a38526fc9730
+workflow-type: tm+mt
+source-wordcount: '1232'
+ht-degree: 92%
 
 ---
 
 # 当前的 Adobe Customer Journey Analytics 发行说明（2024 年 6 月）
 
-**上次更新时间**：2024 年 6 月 18 日
+**上次更新日期**：2024年7月12日
 
 这些发行说明涵盖 2024 年 6 月 6 日至 2024 年 7 月的发行期。Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
@@ -20,6 +20,7 @@ ht-degree: 100%
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **管理员设置，用于控制将报告导出到云时使用的帐户和位置** | 位置管理器](/help/components/exports/manage-export-locations.md#configure-company-wide-settings-administrators-only)中新增的[“管理员设置”选项卡可让管理员控制用户是否可以创建和编辑帐户和位置。<p>当用户[配置云导出帐户](/help/components/exports/cloud-export-accounts.md)和[配置云导出位置](/help/components/exports/cloud-export-locations.md)时，这些设置适用。</p><p>管理员还可以限制用户可以创建和使用的帐户类型。 帐户类型包括Google Cloud Platform、Azure RBAC、Amazon S3、AEP Data Landing Zone、Snowflake等。</p><p>以前，任何用户都可以创建、编辑和使用任何类型帐户的帐户和位置。</p> | 2024年7月11日 | 2024年7月19日 |
 | **Customer Journey Analytics 的 AI 助手** | 允许您在 Customer Journey Analytics UI 中提出自然语言问题，并根据 Customer Journey Analytics 文档获取答案。[了解详情](/help/ai-assistant.md) | | 2024 年 6 月 6 日 |
 | **基于图形的拼接** | 通过基于图形的拼接，您可以使用体验平台标识服务提供的标识图更好地了解客户历程：<ul><li>连接具有不同标识符的数据集，无需提取、转换和加载额外数据以反映单个标识符。</li><li>通过跨数据集共享标识，提高单个数据集中首选或黄金标识的覆盖率。</li><li>将 Real-Time Customer Data Platform 和 Journey Optimizer 中创建的轮廓与 Customer Journey Analytics 中的人员进行对齐。</li></ul>[了解详情](/help/stitching/overview.md) |  | 2024 年 6 月 28 日 |
 | **个人到帐户的 B2B 架构转换** | 要在 B2B 数据（包括帐户、机会、营销列表和营销活动）上支持基于人的查找，您可以转换 B2B 查找数据集。此转换仅适用于包含以下类别的 B2B 查找模式数据的数据集：<ul><li>XDM 业务帐户人员关系</li><li>XDM 业务机会人员关系</li><li>XDM 商业营销列表成员</li><li>XDM 商业营销活动成员</li></ul>[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/transform-datasets-b2b-lookups) |  | 2024 年 6 月 5 日 |
