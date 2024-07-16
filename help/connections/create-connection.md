@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 source-git-commit: 8fe3fb966f559aa12f3203e02a1766436e45a24a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3172'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -72,24 +72,24 @@ ht-degree: 95%
 
 1. 在“连接设置”对话框中，选择&#x200B;**[!UICONTROL 添加数据集]**。
 
-1. 在 [!UICONTROL 选择数据集] 步骤，您将看到Experience Platform数据集的列表。
+1. 在 [!UICONTROL 选择数据集] 步骤中，你会看到 Experience Platform 数据集的列表。
 
    ![选择数据集](assets/select-datasets.png)
 
-   对于每个数据集，列表都显示：
+   对于每个数据集，列表显示：
 
    | 栏目 | 描述 |
    |---|---|
-   | 数据集 | 数据集的名称。 选择名称以将您定向到Experience Platform中的数据集。 选择 ![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) 以显示包含数据集更多详细信息的弹出窗口。 在弹出窗口中，您可以选择 **[!UICONTROL 在Platform中编辑]** 直接在Experience Platform中编辑数据集。 |
-   | 数据集类型 | 数据集的类型：事件、配置文件或查找。 |
-   | 记录数 | Experience Platform中的数据集在上个月的总记录数。 |
-   | 架构 | 数据集所基于的架构。 选择名称以将您定向到Experience Platform中的架构。 |
-   | 上一批次 | Experience Platform中摄取的上一个批次的状态。 请参阅 [批次状态](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting#batch-states) 更多信息。 |
-   | 数据集 ID | 数据集的id。 |
-   | 上次更新时间 | 数据集的上次更新时间戳。 |
+   | 数据集 | 数据集的名称。选择名称即可将您定向到 Experience Platform 中的数据集。选择 ![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) 以显示一个包含数据集更多详细信息的弹出窗口。在弹出窗口中，您可以选择 **[!UICONTROL 在平台中编辑]** 以直接在 Experience Platform 中编辑数据集。 |
+   | 数据集类型 | 数据集的类型：事件、个人资料或查找。 |
+   | 记录数 | Experience Platform 中数据集上个月的总记录数。 |
+   | 架构 | 数据集所基于的模式。选择名称即可将您定向到 Experience Platform 中的模式。 |
+   | 上一批次 | Experience Platform 中最后提取的批次的状态。查看 [批次状态](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ingestion/batch/troubleshooting#batch-states) 更多信息。 |
+   | 数据集 ID | 数据集 ID 的名称。 |
+   | 上次更新时间 | 数据集的最后更新时间戳。 |
 
 
-1. 选择一个或多个数据集并选择 **[!UICONTROL 下一个]**. 必须有至少一个事件数据集是该连接的一部分。
+1. 选择一个或多个数据集并选择&#x200B;**[!UICONTROL 下一个]**。必须有至少一个事件数据集是该连接的一部分。
    * 要更改为数据集列表显示的列，请选择 ![列设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)，然后选择要在[!UICONTROL 自定义表]对话框中显示的列。
    * 要搜索特定数据集，请使用 ![搜索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) 搜索字段。
    * 要在显示或隐藏所选数据集之间切换，请选择 ![选择](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg) **[!UICONTROL 隐藏所选项]**&#x200B;或&#x200B;**[!UICONTROL 显示所选项]**。
@@ -182,7 +182,7 @@ Customer Journey Analytics 支持将标识映射作为个人 ID。Identity Map �
 
 下表显示了当存在边缘情况时两种配置方案及其处理方式：
 
-| 选项 | “标识映射”中不存在 ID。 | 多个 ID，没有一个标记为主要 ID | 多个 ID 均标记为主要 ID | 单个 ID，是否标记为主要 ID | 一个 ID 标记为主要 ID 的无效命名空间 |
+| 选项 | 标识映射中不存在 ID。 | 多个 ID，没有一个标记为主要 ID | 多个 ID 均标记为主要 ID | 单个 ID，是否标记为主要 ID | 一个 ID 标记为主要 ID 的无效命名空间 |
 |---|---|---|---|---|---|
 | **[!UICONTROL 使用主要 ID 命名空间]已选中** | Customer Journey Analytics 删除了该行。 | Customer Journey Analytics 删除了该行，因为未指定主要 ID。 | 所有命名空间下标记为主要 ID 的 ID 都将被提取到列表中，随后，这些 ID 会按字母顺序排序；根据这种新的排序方式，排在第一个命名空间中的首个 ID 将被用作人员 ID。 | 单个 ID 用作个人 ID。 | 即使命名空间可能无效（Adobe Experience Platform 中不存在），Customer Journey Analytics 也会使用该命名空间下的主要 ID 作为人员 ID。 |
 | **[!UICONTROL 特定的标识映射命名空间]已选择** | Customer Journey Analytics 删除了该行。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。（由于在创建连接时，只能选择有效的命名空间，因此无效的命名空间/ID 不可能用作人员 ID） |
@@ -208,7 +208,7 @@ Customer Journey Analytics 支持将标识映射作为个人 ID。Identity Map �
 
 ## 对大型查找数据集进行算法修剪
 
-创建连接时，您可以添加大型数据集以进行查找。例如，表示产品目录的数据集，以便在构建报告和可视化图表时可以查找描述性产品信息。如此大的查找数据集可能会超过目前作为护栏实现的最大 1,000 万个唯一查找，从而导致跳过其他数据。
+创建连接时，您可以添加大型数据集以进行查找。例如，表示产品目录的数据集，以便在构建报告和可视化图表时可以查找描述性产品信息。如此大的查找数据集可能会超过目前作为护栏实现的最大 1000 万个唯一查找，从而导致跳过其他数据。
 
 您可以请求对大型查找数据集进行算法修剪。此算法修剪仅保留查找数据集中与事件数据集中的键匹配的数据。这样，您不需要加载整个未修剪的查找数据集。旧的或不常用的项目被删除，这可能会对报告产生轻微影响，但会带来明显的好处。该算法回顾 90 天并每周更新。
 

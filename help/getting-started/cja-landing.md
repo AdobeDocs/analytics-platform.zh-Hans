@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 52021e557171754901fe6a64c7fa544243af70f1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '767'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 98%
 
 本技术文档指南为 Customer Journey Analytics 提供了自助服务。通过 Customer Journey Analytics，您可以将客户数据从您选择的任何渠道（在线和离线）带入 Adobe Experience Platform。然后，就像现在使用 Analysis Workspace 分析现有数字数据一样分析这些数据。
 
-借助 Customer Journey Analytics，您可以控制如何在 Analysis Workspace 的任何常见客户 ID 上连接在线和离线数据，从而进行属性、筛选条件、流量、沉降等操作。等分析。
+借助 Customer Journey Analytics，您可以控制如何在 Analysis Workspace 的任何常见客户 ID 上连接在线和离线数据，从而进行属性、筛选条件、流量、沉降等操作。 
 
 ## 新增功能
 
@@ -25,17 +25,17 @@ ht-degree: 98%
 
 >[!TAB AI 助手]
 
-AI 助手 是一种对话体验，允许从业者快速执行任务——无论是理解概念、解决问题还是搜索信息。它还允许非专家执行专家任务并提高整体工作质量。
+AI 助手是一种对话体验，允许从业者快速执行任务——无论是理解概念、解决问题还是搜索信息。它还允许非专家执行专家任务并提高整体工作质量。
 
 [![图像](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
->[!TAB 基于图形的拼合*]
+>[!TAB 基于图形的拼接*]
 
 通过基于图形的拼接，您可以使用体验平台标识服务提供的标识图更好地了解客户历程： <ul><li>连接具有不同标识符的数据集，无需提取、转换和加载额外数据以反映单个标识符。</li> <li>通过跨数据集共享标识，提高单个数据集中首选或黄金标识的覆盖率。</li><li>将 Real-Time Customer Data Platform 和 Journey Optimizer 中创建的轮廓与 Customer Journey Analytics 中的人员进行对齐。</li></ul>
 
 [![图像](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
 
-*_您必须具有用于基于图形的拼合的Prime包。_*
+*_您必须拥有 Prime 包才能进行基于图形的拼接。_*
 
 >[!TAB 查找 B2B]
 
