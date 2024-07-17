@@ -3,44 +3,36 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 2ea7c9ec4d02685164a10da3e3f3a38526fc9730
+source-git-commit: a2673763fce0766b732ac7ab557d3a0a193173fd
 workflow-type: tm+mt
-source-wordcount: '1232'
-ht-degree: 92%
+source-wordcount: '781'
+ht-degree: 41%
 
 ---
 
-# 当前的 Adobe Customer Journey Analytics 发行说明（2024 年 6 月）
+# 当前的 Adobe Customer Journey Analytics 发行说明（2024 年 7 月）
 
-**上次更新日期**：2024年7月12日
+**上次更新日期**：2024年7月17日
 
-这些发行说明涵盖 2024 年 6 月 6 日至 2024 年 7 月的发行期。Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
+这些发行说明涵盖2024年7月17日至2024年8月的发行期。 Adobe Customer Journey Analytics版本在[连续交付模型](releases.md)上运行，该模型允许采用更具可扩展性、分阶段的方法部署功能。 因此，这些发行说明每月更新几次。请定期检查。
 
 ## 新增功能或更新后的功能
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **智能警报** | 智能警报现在可以在Customer Journey Analytics中使用，当数据中出现异常事件时，您会立即收到通知。<p>您可以设置要根据异常阈值、更改的百分比或特定数据点触发的警报。 警报提供了与异常检测集成的粒度控制，可在您最需要它们时触发。</p><p>在Customer Journey Analytics中使用智能警报的过程与在Adobe Analytics中使用智能警报的过程几乎相同。 一个关键区别在于Customer Journey Analytics中不存在每小时警报。 此差异在于可摄取的各种事件数据的数据摄取仅在延迟后才能完成，延迟时间通常比数据事件时间晚3到9个小时。</p><p>（更新了要遵循的文档链接）</p><!--<p>[Learn more](/help/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md)</p> --> |  | 2024年7月26日 |
 | **管理员设置，用于控制将报告导出到云时使用的帐户和位置** | 位置管理器](/help/components/exports/manage-export-locations.md#configure-company-wide-settings-administrators-only)中新增的[“管理员设置”选项卡可让管理员控制用户是否可以创建和编辑帐户和位置。<p>当用户[配置云导出帐户](/help/components/exports/cloud-export-accounts.md)和[配置云导出位置](/help/components/exports/cloud-export-locations.md)时，这些设置适用。</p><p>管理员还可以限制用户可以创建和使用的帐户类型。 帐户类型包括Google Cloud Platform、Azure RBAC、Amazon S3、AEP Data Landing Zone、Snowflake等。</p><p>以前，任何用户都可以创建、编辑和使用任何类型帐户的帐户和位置。</p> | 2024年7月11日 | 2024年7月19日 |
-| **Customer Journey Analytics 的 AI 助手** | 允许您在 Customer Journey Analytics UI 中提出自然语言问题，并根据 Customer Journey Analytics 文档获取答案。[了解详情](/help/ai-assistant.md) | | 2024 年 6 月 6 日 |
-| **基于图形的拼接** | 通过基于图形的拼接，您可以使用体验平台标识服务提供的标识图更好地了解客户历程：<ul><li>连接具有不同标识符的数据集，无需提取、转换和加载额外数据以反映单个标识符。</li><li>通过跨数据集共享标识，提高单个数据集中首选或黄金标识的覆盖率。</li><li>将 Real-Time Customer Data Platform 和 Journey Optimizer 中创建的轮廓与 Customer Journey Analytics 中的人员进行对齐。</li></ul>[了解详情](/help/stitching/overview.md) |  | 2024 年 6 月 28 日 |
-| **个人到帐户的 B2B 架构转换** | 要在 B2B 数据（包括帐户、机会、营销列表和营销活动）上支持基于人的查找，您可以转换 B2B 查找数据集。此转换仅适用于包含以下类别的 B2B 查找模式数据的数据集：<ul><li>XDM 业务帐户人员关系</li><li>XDM 业务机会人员关系</li><li>XDM 商业营销列表成员</li><li>XDM 商业营销活动成员</li></ul>[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/transform-datasets-b2b-lookups) |  | 2024 年 6 月 5 日 |
-| **派生字段 - 数学函数** | 允许您在数据视图中执行简单的数学运算符来回答有关用户的问题。例如，您可以将产品、保修和运输收入结合起来。[了解详情](/help/data-views/derived-fields/derived-fields.md#math)</p> | | 2024 年 6 月 5 日 |
-| **派生字段：下一个或上一个函数** | 允许您查看下一个或上一个值。例如，在所选营销渠道之前，用户与哪些营销渠道进行了互动？或者，在所选页面之前或之后，用户与哪个页面进行了互动？在前往实体店之前，用户最常交互的渠道是什么？[了解详情](/help/data-views/derived-fields/derived-fields.md#next-or-previous)</p> | | 2024 年 6 月 12 日 |
-| **派生字段：汇总函数** | 允许在事件、会话和用户级别对量度或维度应用聚合类型函数。[了解详情](/help/data-views/derived-fields/derived-fields.md#summarize) | | 2024 年 6 月 26 日 |
-| **派生字段：重复数据删除函数** | 有助于防止重复计算某个值。可以在用户或会话级别或基于维度的唯一值应用此函数。（文档链接见下文） |  | 2024 年 7 月 10 日 |
-| **数据摄取优先级和延迟** | 现在，无论数据是 24 小时、48 小时还是 7 天前的，您都可以在 90 分钟 (SLT) 内将事件数据摄取到 Customer Journey Analytics 中。请注意，此功能根据贵公司购买的 SKU 包而有所不同：<ul><li>CJA 优先输入基本版：在 90 分钟 SLT 处理时间内处理 24 小时前的数据（适用于 CJA Foundation 和 CJA Select）</li><li>CJA 优先摄取中级版：在 90 分钟 SLT 处理时间内处理 72 小时前的数据（适用于 CJA Prime）</li><li>CJA 优先摄取高级版：在 90 分钟 SLT 处理时间内处理 1 周前的数据（适用于 CJA Ultimate）</li></ul> |  | 2024 年 6 月 12 日 |
+| **摘要级数据源** | 允许您引入没有人员ID的时间系列数据。 此时间序列数据可用于支持各种用例，例如：<ul><li>将高级别绩效指标作为事件级别数据的一部分或旁边显示。 这可能包括简单的日期和单个量度值等，也可能包括多个维度和量度，如广告展示次数、电子邮件打开次数、广告支出、商品销售成本等。</li><li>每天、每周、每月或每季度上传目标或目标，并根据事件级别的量度定位这些目标或目标，以帮助可视化量度相对于组织目标或目标的趋势。</li></ul><p>（更新了要遵循的文档链接）</p> |  | 2024年7月31日 |
+| **派生字段 — 删除重复函数** | Derived Fields中的Deduplicate函数有助于避免对一个值多次计数。<p>（文档链接见下文）</p> |  | 2024年7月16日 |
+| **针对CJA客户的引导式分析配置** | 引导式分析使用户能够通过基于Customer Journey Analytics的跨渠道数据构建的引导式工作流为客户历程提供高质量数据和见解。 <p>从营销到产品的跨职能团队可以实时连接，以使用和理解这些报告。</p><p>CJA包中现在提供最多11个引导式分析视图。 [了解详情](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/overview)</p> |  | 2024年7月17日 |
 | **共享用于导出和导入的账户和位置** | 用户现在可以将他们创建的帐户和位置提供给其组织内的所有用户。只有帐户和位置所有者以及系统管理员可以编辑和删除帐户和位置。以前，帐户和位置只能由创建它们的用户使用。当用户[配置云导出帐户](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/exports/cloud-export-accounts)以及[配置云导出位置时，这些设置适用](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/exports/cloud-export-locations)。 | 2024 年 6 月 12 日 | 2024 年 7 月中旬 |
-| **在下拉筛选条件中选择多个字段** | 当下拉筛选条件中添加多个字段时，用户现在可以一次选择多个字段。面板经过过滤，可包含任何选定的字段。 <p>以前，用户在下拉筛选条件中一次只能选择一个字段。</p><p>右键单击下拉过滤器时，要求在下拉过滤器中进行选择的选项已移至菜单中。</p><p>以前，用户可以在下拉菜单中单击“无过滤器”选项旁边的 (x) 符号。</p><p>有关详细信息，请参阅[面板概述](/help/analysis-workspace/c-panels/panels.md)中的[静态下拉过滤器](/help/analysis-workspace/c-panels/panels.md#static-drop-down-filters)。</p><p>[观看此功能的视频演示。](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/use-multi-select-drop-down-filters)</p> |  | 2024 年 6 月 19 日 |
-| **Workspace 项目目录** | 现在可以为项目提供新的目录。目录提供了链接，使用户能够快速在项目内的面板和可视化内容之间移动。 <p>所有项目的左侧边栏中均可查看目录。</p><p>有关详细信息，请参阅[项目目录](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)。</p><p>[观看此功能的视频演示。](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace)</p> |  | 2024 年 6 月 19 日 |
-| **为自由格式表中的维度项目创建超链接** | 您可以为一个或多个维度项目创建超链接，使其在 Analysis Workspace 中的自由格式表中可点击。 <p>您可以为具有 URL 值的维度项目创建超链接，也可以为具有非 URL 值的维度项目创建自定义 URL。</p><p>您可以使用变量为多个维度项目创建动态自定义 URL。变量可以引用维度项目的值，也可以引用细分维度。</p><p>有关详细信息，请参阅[在自由格式表中为维度创建超链接](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)。</p><p>[观看此功能的视频演示。](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/analysis-workspace/tips-and-tricks/create-hyperlinks-in-freeform-tables)</p> |  | 2024 年 6 月 19 日 |
-| **在 Adobe Journey Optimizer 中使用 Customer Journey Analytics 数据视图** | Customer Journey Analytics 中的新配置选项允许您指定一个 Customer Journey Analytics 数据视图，以便与 Adobe Journey Optimizer 一起使用，而无需手动配置。 <p>有关如何启用此配置选项的更多信息，请参阅[创建或编辑数据视图](/help/data-views/create-dataview.md)中的[兼容性](/help/data-views/create-dataview.md#compatibility)部分。</p><p>之前，在 Customer Journey Analytics 中查看 Journey Optimizer 数据时，您必须手动配置连接和数据视图。</p> |  | 2024 年 6 月 19 日 |
-| **Audiences 已发布到 Experience Platform 中的新“Audiences”部分** | 从 Customer Journey Analytics 中发布的受众现在可以在 Adobe Experience Platform 的新“受众”部分中找到。<p>此前，从 Customer Journey Analytics 发布的受众可在 Experience Platform 的“细分”部分下找到。</p><p>此改进具有以下优点：</p><ul><li>受众出现在 Experience Platform 前不再有 1 小时的延迟；它们在发布后几秒钟即可使用。</li><li>可以使用 Experience Platform 中“来源”列对受众进行排序，该列显示了最初发布受众的应用程序。</li><li>Experience Platform 中的筛选和排序选项使您能够更快地找到相关受众。</li></ul> <p>（文档链接见下文）</p> |  | 2024 年 7 月 14 日 |
+| **Audiences 已发布到 Experience Platform 中的新“Audiences”部分** | 从 Customer Journey Analytics 中发布的受众现在可以在 Adobe Experience Platform 的新“受众”部分中找到。<p>此前，从 Customer Journey Analytics 发布的受众可在 Experience Platform 的“细分”部分下找到。</p><p>此改进具有以下优点：</p><ul><li>受众出现在 Experience Platform 前不再有 1 小时的延迟；它们在发布后几秒钟即可使用。</li><li>可以使用 Experience Platform 中“来源”列对受众进行排序，该列显示了最初发布受众的应用程序。</li><li>Experience Platform中的过滤和排序选项使您能够更快地找到相关受众。</li></ul> <p>（文档链接见下文）</p> |  | 待定 |
 
 {style="table-layout:auto"}
 
 ## Customer Journey Analytics 中的修复
 
-AN-345454; AN-349816; AN-349905; AN-350617
+AN-306000； AN-288748； AN-351547； AN-351110
 
 ## Customer Journey Analytics 管理员的重要注意事项
 
