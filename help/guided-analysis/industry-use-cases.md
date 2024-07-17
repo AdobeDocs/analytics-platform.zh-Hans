@@ -5,16 +5,16 @@ feature: Guided Analysis
 keywords: 产品分析
 exl-id: 2e004894-dc1b-42a7-a060-240f0151b2f2
 role: User
-source-git-commit: 2b503ba784762d60efe8581c9ee06587aed416eb
+source-git-commit: 5752d3952987f8447cd12f953a57921044fa3c65
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1483'
 ht-degree: 98%
 
 ---
 
 # 行业用例
 
-本页提供了一些说明性示例，说明通过引导式分析可以跨不同行业实现哪些产品团队。
+此页面提供了一些说明性的行业示例，说明了客户体验团队（从分析人员到产品团队再到营销人员）可以通过引导式分析完成哪些工作。
 
 +++**零售**
 
