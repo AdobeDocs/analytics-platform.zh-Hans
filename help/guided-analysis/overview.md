@@ -5,20 +5,16 @@ keywords: 产品分析
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: a55224d91dbcf7323ccd481b4a7469d5b80f12c4
-workflow-type: ht
-source-wordcount: '1397'
-ht-degree: 100%
+source-git-commit: 2addd3d17f62da69eb6636d987931fc21df07af5
+workflow-type: tm+mt
+source-wordcount: '1399'
+ht-degree: 92%
 
 ---
 
 # 引导式分析概述
 
 引导式分析使用户能够通过基于 Customer Journey Analytics 的跨渠道数据的引导式工作流程，自助提供有关客户历程的高质量数据和见解。从营销到产品的跨职能团队可以实时连接，以使用和理解这些报告。
-
->[!NOTE]
->
-> 引导式分析目前仅作为 Adobe Product Analytics 的一部分提供，Adobe Product Analytics 是 Customer Journey Analytics 的付费附加组件。如果您的组织想要开始使用这组功能，请联系您的 Adobe 客户团队。
 
 与 Analysis Workspace 和移动记分卡类似，引导式分析使用来自[数据视图](../data-views/data-views.md)中的数据，该视图通过[连接](../connections/overview.md)引用 Adobe Experience Platform 中的数据。在引导式分析中创建的许多报告均可以无缝传输到 Analysis Workspace 以进行其他研究。
 
@@ -72,9 +68,19 @@ ht-degree: 100%
 
 ## 设置
 
-引导式分析是 Customer Journey Analytics 的付费附加组件 Adobe Product Analytics 的一部分。如果您的组织想要开始使用这组功能，请联系您的 Adobe 客户团队。
+引导式分析视图通过以下方式包含在Customer Journey Analytics包中：
 
-当您的组织配置为可使用引导式分析时，产品配置文件管理员就可以在 Adobe Admin Console 中添加或删除对其的访问权限。
+| 包 | 可用视图 |
+| --- | --- |
+| [!UICONTROL CJA加载项] | 趋势：使用情况，趋势：频率，漏斗：摩擦，漏斗：转化趋势，维系率：维系率，用户增长：活动，用户增长：净增长 |
+| [!UICONTROL CJA Foundation] | 趋势：使用情况 |
+| [!UICONTROL CJA选择] | 基础视图+趋势：频率，漏斗：摩擦，漏斗：转化趋势，维系率：保留率，用户增长：活动，用户增长：净增长 |
+| [!UICONTROL CJA Prime] | 选择视图+用户流：时间线，功能矩阵：参与，影响：发布，影响：首次使用 |
+| [!UICONTROL CJA Ultimate] | Prime视图 |
+
+{style="table-layout:auto"}
+
+产品配置文件管理员可以添加或删除对Adobe Admin Console中引导分析的访问权限。
 
 1. 登录到 [Adobe Admin Console](https://adminconsole.adobe.com)。
 1. 在产品列表中选择 **[!UICONTROL Customer Journey Analytics]**。
