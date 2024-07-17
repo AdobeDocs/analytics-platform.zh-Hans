@@ -7,7 +7,7 @@ role: User
 source-git-commit: c89a28323c9d40a7265cd22994a0d1c484f4c7ee
 workflow-type: tm+mt
 source-wordcount: '620'
-ht-degree: 73%
+ht-degree: 80%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 73%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_attribution_button"
 >title="归因"
->abstract="使用任意维度和转化量度，快速比较和可视化任意数量的属性模型"
+>abstract="使用任意维度和转化指标，快速比较和可视化任意数量的归因模型"
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ 面板"
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_attribution_panel"
 >title="归因面板"
->abstract="使用任意维度和转化指标，快速比较和可视化任意数量的归因模型。<br/><br/>**参数&#x200B;**<br/>**渠道**<br/>&#x200B;要归因的维度。 这可以是营销渠道、营销活动或任何其他维度。<br/>**模型**<br/>&#x200B;该模型可确定如何将点数分配给接触点。<br/>**回看窗口期**<br/>&#x200B;此设置确定每次转化时应用的数据归因窗口。"
+>abstract="使用任意维度和转化指标，快速比较和可视化任意数量的归因模型。<br/><br/>**参数&#x200B;**<br/>**渠道**<br/>&#x200B;归因的对比维度。这可以是营销渠道、营销活动或任何其他维度。<br/>**模型**<br/>&#x200B;该模型可以确定如何将点数分配给各个接触点。<br/>**回顾窗口**<br/>&#x200B;此设置可以确定将要对每次转化应用的数据归因窗口。"
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ 面板"
 
 
@@ -48,13 +48,13 @@ Customer Journey Analytics 通过让您能够执行以下操作来增强归因�
 
 1. 添加要归因的量度，并添加要归因的对比维度。例如“营销渠道”或自定义维度，如内部促销。
 
-   ![“归因”面板窗口会显示多个选定的维度和量度。](assets/attribution_panel2.png)
+   ![显示多个选定维度和量度的“归因”面板窗口。](assets/attribution_panel2.png)
 
 1. 选择要比较的归因模型和回顾时间范围。
 
 1. “归因”面板会返回一组丰富的数据和可视化图表，其中对选定维度和度量进行了归因比较。
 
-   ![“归因”面板中提供了可比较选定量度和维度的可视化图表。](assets/attr_panel_vizs.png)
+   ![比较选定量度和维度的“归因”面板可视化图表。](assets/attr_panel_vizs.png)
 
 ## 归因可视化图表
 
