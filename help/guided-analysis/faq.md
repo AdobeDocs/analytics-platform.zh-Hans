@@ -1,24 +1,24 @@
 ---
 title: 引导式分析常见问题
-description: 有关引导式分析的常见问题。
+description: 引导式分析的常见问题解答。
 exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
-workflow-type: ht
-source-wordcount: '434'
-ht-degree: 100%
+source-git-commit: df00d954de5db89f0ccc40f7eb2474523d9e774e
+workflow-type: tm+mt
+source-wordcount: '435'
+ht-degree: 71%
 
 ---
 
 # 引导式分析常见问题
 
-有关引导式分析的常见问题。
+引导式分析的常见问题解答。
 
-+++**如何为我的组织提供引导式分析？**
++++**我的组织是否有权访问引导式分析？**
 
-引导式分析是 Customer Journey Analytics 的付费附加组件 Adobe Product Analytics 的一部分。如果您想开始使用此插件，请联系您的 Adobe 客户团队。
+指导性分析视图包含在所有Customer Journey Analytics包中。 请参阅概述页面上的[配置](overview.md#provisioning)部分，了解有关CJA包解锁的视图的更多信息。
 
 +++
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 如果您现在已经在使用 Customer Journey Analytics，则无需进行其他实施更改。引导式分析使用与其他 CJA 界面（例如 [Analysis Workspace](../analysis-workspace/home.md)）相同的[数据视图](../data-views/data-views.md)和[连接](../connections/overview.md)。
 
-为了使您的最终用户能够最大限度地利用引导式分析，建议您在 Adobe Experience Platform 和[数据视图](../data-views/data-views.md)中制定强大的事件架构和管理策略。
+为了让最终用户在引导式分析方面获得最大成功，建议您在Adobe Experience Platform和[数据视图](../data-views/data-views.md)中制定强有力的事件架构和管理策略。
 
 +++
 
@@ -38,7 +38,7 @@ ht-degree: 100%
 
 +++
 
-+++**引导式分析和 Analysis Workspace 之间的术语有何差异？**
++++**引导式分析与Analysis Workspace的术语有何异同？**
 
 引导式分析会使用在产品团队中更常用的术语。在引导式分析和 [Analysis Workspace](../analysis-workspace/home.md) 之间切换时，您可以参考此表。
 
@@ -54,7 +54,7 @@ ht-degree: 100%
 
 +++
 
-+++**引导式分析和 Analysis Workspace 处理报告的方式有哪些差异？**
++++**引导式分析与Analysis Workspace方法报告有哪些区别？**
 
 虽然 [Analysis Workspace](../analysis-workspace/home.md) 和引导式分析使用相同的基础数据，但每个工具支持您生成数据查询的方式是不同的。
 
@@ -70,7 +70,7 @@ ht-degree: 100%
 
   ![以维度为中心](assets/dimension-centered.png){style="border:1px solid gray"}
 
-* 典型的事件和以用户为中心的引导式分析方法会提出的问题是“有多少用户访问过我们的主页？”
+* 一种以事件和用户为中心的引导式分析方法是这样的：“有多少用户访问过主页？”
 
   ![以事件为中心](assets/event-centered.png){style="border:1px solid gray"}
 
