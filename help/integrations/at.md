@@ -33,6 +33,6 @@ ht-degree: 40%
 
 ## 更多详细信息
 
-有关更多信息，请参阅 Target 文档中的 [Adobe Customer Journey Analytics 中的 Target 报告](https://experienceleague.adobe.com/cn/docs/target/using/integrate/cja/target-reporting-in-cja) 。
+有关更多信息，请参阅 Target 文档中的 [Adobe Customer Journey Analytics 中的 Target 报告](https://experienceleague.adobe.com/zh-hans/docs/target/using/integrate/cja/target-reporting-in-cja) 。
 
 请参阅[实验面板](../analysis-workspace/c-panels/experimentation.md)，以获取有关分析师如何比较不同的用户体验、营销或消息传递变化以确定哪种方式最能推动特定结果的更多信息。您可以从任何试验平台评估任何 A/B 试验的提升度和置信度：在线、离线、来自 Target 或 Adobe Journey Optimizer 等 Adobe 解决方案、甚至是 BYO（自带）数据。

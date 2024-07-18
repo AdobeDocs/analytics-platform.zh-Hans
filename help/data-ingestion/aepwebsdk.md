@@ -54,25 +54,26 @@ ht-degree: 83%
 
 1. 在 Adobe Experience Platform UI 的左边栏中，选择[!UICONTROL 数据管理]中的&#x200B;**[!UICONTROL 模式]**。
 
-1. 选择 **[!UICONTROL 创建架构]**..
+1. 选择&#x200B;**[!UICONTROL 创建架构]**。
+.
 1. 在“创建模式”向导的“选择类”步骤中：
 
-   1. 选择 **[!UICONTROL 体验事件]**.
+   1. 选择&#x200B;**[!UICONTROL 体验事件]**。
 
-      ![创建高亮显示体验事件的架构](./assets/create-ee-schema-wizard-step-1.png)
+      ![创建突出显示Experience Event的架构](./assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    Experience Event架构用于为 _行为_ 配置文件（如场景名称、要添加到购物车的按钮）的。 个人配置档案模式用于对个人配置档案&#x200B;_属性_（如姓名、电子邮件、性别）建模。
+      >    体验事件架构用于为配置文件的&#x200B;_行为_&#x200B;建模（如场景名称、要添加到购物车的按钮）。 个人配置档案模式用于对个人配置档案&#x200B;_属性_（如姓名、电子邮件、性别）建模。
 
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
 
-1. 在 [!UICONTROL 命名和审核步骤] 的 [!UICONTROL 创建架构] 向导：
+1. 在[!UICONTROL 创建架构]向导的[!UICONTROL 名称和审核步骤]中：
 
-   1. 输入 **[!UICONTROL 架构显示名称]** （可选）a **[!UICONTROL 描述]**.
+   1. 为您的架构输入&#x200B;**[!UICONTROL 架构显示名称]**&#x200B;和（可选）**[!UICONTROL 描述]**。
 
-      ![创建架构窗口，其中显示为您的架构字段命名](./assets/create-ee-schema-wizard-step-2.png)
+      ![创建架构窗口，显示架构字段的名称名称](./assets/create-ee-schema-wizard-step-2.png)
 
    1. 选择&#x200B;**[!UICONTROL 完成]**。
 
@@ -104,7 +105,7 @@ ht-degree: 83%
 
    >[!NOTE]
    >
-   >如果该字段组不可用，请查找另一个包含标识字段的字段组。 或 [创建新字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) 和 [添加新标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) (点赞 `ecid`， `crmId`，然后选择该新字段组。
+   >如果该字段组不可用，请查找另一个包含标识字段的字段组。 或者[创建新的字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html)和[将新的标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field)（如`ecid`、`crmId`和其他您需要的字段）添加到该字段组，并选择该新字段组。
 
    ![识别对象](./assets/identification-field.png)
 
@@ -279,7 +280,7 @@ ht-degree: 83%
 
 有关详细信息，请参阅[配置 Adobe Experience Platform Web SDK 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html)。
 
-Web SDK包含 [!UICONTROL Adobe Experience Cloud ID服务] 本机，因此您无需将ID服务扩展添加到您的标记中。
+Web SDK本身包含[!UICONTROL Adobe Experience Cloud ID服务]，因此您无需将ID服务扩展添加到标记中。
 
 #### **数据元素**
 
@@ -488,7 +489,7 @@ Adobe Experience Platform 标签支持简单到复杂的发布工作流，这些
 
 要在 Customer Journey Analytics 中使用 Adobe Experience Platform 数据，您需要创建一个连接，其中包含因设置模式、数据集和工作流所产生的数据。
 
-通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告这些数据集，您必须首先在Adobe Experience Platform和工作区中的数据集之间建立连接。
+通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告这些数据集，您必须首先在Adobe Experience Platform和Workspace中的数据集之间建立连接。
 
 创建您的连接：
 
@@ -591,7 +592,7 @@ Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分�
 
    ![工作区选择数据视图](./assets/cja-projects-3.png)
 
-5. 要创建您的第一个报表，请开始将维度和量度拖放到 [!UICONTROL 自由格式表] 在 [!UICONTROL 面板]. 例如，拖动 `Program Points Balance` 以及 `Page View` 作为量度和 `email` 作为维度，以快速查看访问过您的网站并已加入忠诚度计划收集忠诚度点的个人资料。
+5. 要创建您的第一个报告，请在[!UICONTROL 面板]的[!UICONTROL 自由格式表]上开始拖放维度和量度。 例如，拖动 `Program Points Balance` 以及 `Page View` 作为量度和 `email` 作为维度，以快速查看访问过您的网站并已加入忠诚度计划收集忠诚度点的个人资料。
 
    ![工作区 – 第一份报告](./assets/cja-projects-5.png)
 

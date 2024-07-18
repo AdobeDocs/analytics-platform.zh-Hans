@@ -13,9 +13,9 @@ ht-degree: 57%
 
 # 创建并发布受众
 
-本主题讨论如何创建并发布Customer Journey Analytics中识别的受众到 [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans) 在Adobe Experience Platform中进行客户定位和个性化。
+本主题讨论如何在Adobe Experience Platform中创建并将在Customer Journey Analytics中识别的受众发布到[实时客户个人资料](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans)，以实现客户定位和个性化。
 
-阅读此 [概述](/help/components/audiences/audiences-overview.md) 熟悉Customer Journey Analytics受众的概念。
+阅读此[概述](/help/components/audiences/audiences-overview.md)，了解Customer Journey Analytics受众的概念。
 
 ## 创建受众 {#create}
 
@@ -53,7 +53,7 @@ ht-degree: 57%
 
    受众预览显示在右边栏中。它允许您对所创建的受众进行总结分析。
 
-   ![显示受众汇总分析的数据预览屏幕截图。](assets/data-preview.png)
+   ![显示受众摘要分析的数据预览屏幕截图。](assets/data-preview.png)
 
    | 预览设置 | 描述 |
    | --- | --- |
@@ -101,11 +101,11 @@ ht-degree: 57%
 
 ## 在Experience Platform中使用Customer Journey Analytics受众 {#audiences-aep}
 
-Customer Journey Analytics会从已发布的受众中获取所有命名空间和ID组合，并将其以流式传输到实时客户个人资料(RTCP)中。 Customer Journey Analytics根据选择的内容，将受众发送到设置了主要身份的Experience Platform [!UICONTROL 人员ID] 配置连接时。
+Customer Journey Analytics会从已发布的受众中获取所有命名空间和ID组合，并将其以流式传输到实时客户个人资料(RTCP)中。 Customer Journey Analytics根据配置连接时选定的[!UICONTROL 人员ID]内容，将受众发送到设置了主标识的Experience Platform。
 
-然后，RTCP 会检查每个命名空间/ID 组合，并查找可能包含它的个人资料。个人资料其实就是由所链接的命名空间、ID 和设备组成的集群。如果它找到一份相关的个人资料，则会将命名空间和 ID 作为区段会员资格属性添加到此个人资料中的其他 ID。举个例子， <user@adobe.com> 可以跨其所有设备和渠道进行定位。 如果未找到相关的个人资料，则会创建一份新的个人资料。
+然后，RTCP 会检查每个命名空间/ID 组合，并查找可能包含它的个人资料。个人资料其实就是由所链接的命名空间、ID 和设备组成的集群。如果它找到一份相关的个人资料，则会将命名空间和 ID 作为区段会员资格属性添加到此个人资料中的其他 ID。例如，现在可以跨其所有设备和渠道定位<user@adobe.com>。 如果未找到相关的个人资料，则会创建一份新的个人资料。
 
-Customer Journey Analytics您可以在Platform中通过转到 **[!UICONTROL 区段]** > **[!UICONTROL 创建区段]** > **[!UICONTROL 受众]** 选项卡> **[!UICONTROL cja受众]**.
+您可以在Platform中查看Customer Journey Analytics受众，方法是转到&#x200B;**[!UICONTROL 区段]** > **[!UICONTROL 创建区段]** > **[!UICONTROL 受众]**&#x200B;选项卡> **[!UICONTROL CJA受众]**。
 
 您可以将Customer Journey Analytics受众拖到Adobe Experience Platform区段的区段定义中。
 
@@ -133,7 +133,7 @@ Customer Journey Analytics您可以在Platform中通过转到 **[!UICONTROL 区�
 
 +++
 
-+++**Customer Journey Analytics是将受众数据作为管道事件发送，还是作为也发送到数据湖的平面文件发送？**
++++**Customer Journey Analytics是将受众数据作为管道事件发送，还是作为同样发送到数据湖的平面文件发送？**
 
 Customer Journey Analytics通过管道将数据流式传输到RTCP中，并且这些数据还会收集到数据湖中的系统数据集中。
 
@@ -141,7 +141,7 @@ Customer Journey Analytics通过管道将数据流式传输到RTCP中，并且�
 
 +++**Customer Journey Analytics发送了哪些标识？**
 
-中指定的任何标识/命名空间对 [连接设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection). 具体来说，用户选择要用作其“个人 ID”的字段时的步骤。
+在[连接设置](https://experienceleague.adobe.com/cn/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection)中指定的任何标识/命名空间对。 具体来说，用户选择要用作其“个人 ID”的字段时的步骤。
 
 +++
 
@@ -151,13 +151,13 @@ Customer Journey Analytics通过管道将数据流式传输到RTCP中，并且�
 
 +++
 
-+++**RTCP是否也处理Customer Journey Analytics消息？ Customer Journey Analytics能否通过Audience Sharing将身份添加到配置文件身份图？**
++++**RTCP是否也处理Customer Journey Analytics消息？ Customer Journey Analytics是否可以通过受众共享将身份添加到配置文件身份图？**
 
 否。我们只为每个“人”发送一个标识，因此 RTCP 不会使用任何图边。
 
 +++
 
-+++**每天、每周和每月会在什么时间进行刷新？ 每周的哪一天进行刷新？**
++++**在一天中的哪个时间进行每日、每周和每月的刷新？ 每周的哪一天进行刷新？**
 
 刷新时间基于原始受众的发布时间和锚点到当天时间（以及星期或月）。
 

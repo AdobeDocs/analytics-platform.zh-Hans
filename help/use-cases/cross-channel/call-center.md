@@ -42,14 +42,14 @@ Customer Journey Analytics 提供了一项非常有用的强大功能，就是�
 
 ## 拼合人员 ID
 
-Customer Journey Analytics需要使用通用标识符来生成 [组合数据集](/help/connections/combined-dataset.md).
+Customer Journey Analytics需要一个通用标识符来生成[组合数据集](/help/connections/combined-dataset.md)。
 
 * 如果这两个数据集都已经有适用于其所含的每个事件的通用标识符，则可以跳过此步骤并继续创建连接。
-* 如果其中任一一个数据集具有仅对某些事件通用的标识符，则可以使用拼合数据 [拼接](/help/stitching/overview.md) 有关为这两个数据集启用跨渠道分析的步骤。
+* 如果其中任一一个数据集具有仅对某些事件通用的标识符，则可以使用[拼接](/help/stitching/overview.md)来拼合数据，以了解为这两个数据集启用跨渠道分析的步骤。
 
 ## 在 Customer Journey Analytics 中创建连接
 
-[创建连接](/help/connections/create-connection.md) Customer Journey Analytics中。
+在Customer Journey Analytics中[创建连接](/help/connections/create-connection.md)。
 
 * 如果使用 CCA，则会有新的拼合数据集可供您使用。使用新创建的拼合 ID 字段作为人员 ID。
 * 否则，可以选择在连接中使用的原始网站数据集和呼叫中心数据集。

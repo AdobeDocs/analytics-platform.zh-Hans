@@ -18,7 +18,7 @@ ht-degree: 6%
 
 当您请求具有过多唯一值的报表时，Analysis Workspace会在维度标题中显示一个指示器，以说明并未包含所有维度项。 例如，“行：超过22,343,156的1-50”。 “大于”关键字表示已对报表应用了一些优化，以返回最重要的维度项目。
 
-![工作区中显示“大于”关键字的自由格式表，可显示1-50个大于22,343,156的关键字](assets/high-cardinality.png)
+![Workspace中的自由格式表显示“大于”关键字，可显示1-50个大于22,343,156](assets/high-cardinality.png)
 
 ## 确定要显示的维度项目
 
@@ -34,9 +34,9 @@ Customer Journey Analytics在运行报表时对其进行处理，将组合数据
 
 适应高基数维度的最佳方法是限制报表处理的维度项目数。 由于所有报表在请求时都会进行处理，因此您可以调整报表参数以即时获得结果。 Adobe建议对高基数维度进行以下任何优化：
 
-* 使用 [筛选](/help/components/filters/create-filters.md). 过滤器在每个服务器处理数据子集时应用。
+* 使用[筛选器](/help/components/filters/create-filters.md)。 过滤器在每个服务器处理数据子集时应用。
 * 使用搜索。 从搜索词中排除的Dimension项目将从报表结果中删除，这样您更有可能看到所需的维度项目。
 * 使用查找数据集维度。查找数据集维度将事件数据集维度项组合在一起，从而限制返回的唯一值的数量。
-* 使用 [包括/排除](/help/data-views/component-settings/include-exclude-values.md) 数据视图管理器中的组件设置。
-* 缩短请求的日期范围。 如果许多唯一值随时间累积，则缩短工作区报表的日期范围可以限制服务器要处理的唯一值的数量。
-* 考虑使用 [完整表导出](/help/analysis-workspace/export/export-cloud.md) 以返回表的所有行。
+* 在数据视图管理器中使用[包含/排除](/help/data-views/component-settings/include-exclude-values.md)组件设置。
+* 缩短请求的日期范围。 如果许多唯一值随时间累积，则缩短Workspace报表的日期范围可以限制要处理的服务器唯一值的数量。
+* 考虑使用[完全表导出](/help/analysis-workspace/export/export-cloud.md)返回表的所有行。

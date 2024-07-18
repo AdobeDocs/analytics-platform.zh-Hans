@@ -18,31 +18,31 @@ ht-degree: 64%
 
 ## 项目列表 {#project-list}
 
-当您首次访问 **[!UICONTROL 分析]** > **[!UICONTROL 工作区]**，则页面会列出您拥有的所有项目或与您共享的项目。 这也是 Adobe Analytics 的登陆页面，除非您以前设置过自定义登陆页面。
+当您首次访问&#x200B;**[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**&#x200B;时，该页面会列出您拥有的所有项目或与您共享的项目。 这也是 Adobe Analytics 的登陆页面，除非您以前设置过自定义登陆页面。
 
-![显示项目列表的项目登陆页面。](assets/sample-project.png)
+![显示项目列表的项目登录页面。](assets/sample-project.png)
 
 “项目”页面包含以下信息：
 
 >[!NOTE]
 >
->默认情况下，某些列不显示。 要自定义显示的列，请单击 **自定义表** 图标 ![自定义表](assets/projects-page-customize-columns-icon.png).
+>默认情况下，某些列不显示。 若要自定义您看到的列，请单击&#x200B;**自定义表**&#x200B;图标![自定义表](assets/projects-page-customize-columns-icon.png)。
 
 | 元素 | 描述 |
 |---|---|
 | [编辑首选项](/help/analysis-workspace/user-preferences.md) | 为您创建的所有新项目或面板管理Analysis Workspace的设置及其相关的组件。 |
 | [创建文件夹](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | 向项目和文件夹列表中添加新文件夹或子文件夹。 |
 | [创建项目](/help/analysis-workspace/build-workspace-project/create-projects.md) | 从头开始新项目。 |
-| 展开 | 显示用于创建空白项目或移动记分卡的选项， [查看培训教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=zh-Hans)，或 [查看发行说明](/help/release-notes/latest.md). |
+| 展开 | 显示用于创建空白项目或移动记分卡、[查看培训教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=zh-Hans)或[查看发行说明](/help/release-notes/latest.md)的选项。 |
 | 显示文件夹和项目 | 选择是否显示项目的文件夹结构。 有关更多信息，请参阅[关于 Analytics 中的文件夹](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)。 |
 | 自定义表（图标） | 允许您自定义在项目页面上为每个项目显示的信息。 |
 | 名称 | Workspace 项目名称。 |
-| 类型 | 指示这是Workspace项目、文件夹还是 [移动记分卡](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html?lang=zh-Hans). |
+| 类型 | 指示这是Workspace项目、文件夹还是[移动记分卡](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html?lang=zh-Hans)。 |
 | 标记 | 应用于项目的标记。 |
-| 已计划 | 指示项目是否按计划通过电子邮件发送给收件人。 请参阅 [将项目数据发送给其他人](/help/analysis-workspace/export/t-schedule-report.md). |
-| 共享链接（任何人） | 项目可与任何人共享，即使与无权访问Analysis Workspace的人共享。 此列显示项目是否已以这种方式共享。 请参阅 [与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) 在 [共享项目](/help/analysis-workspace/curate-share/share-projects.md) 以了解更多信息。 |
+| 已计划 | 指示项目是否按计划通过电子邮件发送给收件人。 查看[将项目数据发送给其他人](/help/analysis-workspace/export/t-schedule-report.md)。 |
+| 共享链接（任何人） | 项目可与任何人共享，即使与无权访问Analysis Workspace的人共享。 此列显示项目是否已以这种方式共享。 有关详细信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)。 |
 | 数据视图 | 与项目关联的数据视图。 |
-| [项目角色](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=zh-Hans) | 指示您在项目中的角色 — 所有者、编辑、复制、查看。 |
+| [项目角色](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=zh-Hans) | 指示您在项目中的角色 — 所有者、编辑、复制、查看。 |
 | 所有者 | 创建此项目的人员（您或与您共享此项目的人员）。 |
 | 共享对象 | 与项目共享的用户。 |
 | 上次修改时间 | 项目上次修改的日期和时间。 |
@@ -56,11 +56,11 @@ ht-degree: 64%
 
 在项目中，菜单提供管理项目、添加组件、查找帮助等选项。还可通过键盘[快捷方式](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)访问每个菜单选项。
 
-![新的项目选项，包括项目、编辑、插入、组件、共享和帮助选项。](assets/menu.png)
+![新项目选项，包括“项目”、“编辑”、“插入”、“组件”、“共享”和“帮助”选项。](assets/menu.png)
 
 | 菜单项 | 描述 |
 |---|---|
-| 项目 | 包括常用于项目管理的操作，如新建、打开、保存和另存为。 还可通过单击“刷新项目”而刷新整个项目以检索最新的数据和定义。[下载项目数据](/help/analysis-workspace/export/download-send.md) 选项允许您从工作区导出数据。 **项目信息和设置**（见下文）提供多种用于管理项目的选项。 |
+| 项目 | 包括常用于项目管理的操作，如新建、打开、保存和另存为。 还可通过单击“刷新项目”而刷新整个项目以检索最新的数据和定义。通过[下载项目数据](/help/analysis-workspace/export/download-send.md)选项，可从Workspace导出数据。 **项目信息和设置**（见下文）提供多种用于管理项目的选项。 |
 | 编辑 | 撤消或重做您的上一项操作。“全部清除”将您的项目重置为空起点。 |
 | 插入 | 从此菜单插入新面板或可视化图表。还可从左侧边栏插入新面板和可视化图表。 |
 | [组件](/help/components/overview.md) | 从您的项目创建新过滤器、计算量度、日期范围或警报组件。还可从左侧边栏创建新组件。如果最近更改了组件定义，则“刷新组件”将检索最新定义。 |
@@ -70,7 +70,7 @@ ht-degree: 64%
 
 ### 项目信息和设置 {#info-settings}
 
-**[!UICONTROL 工作区]** > **[!UICONTROL 项目]** > **[!UICONTROL 项目信息和设置]** 提供有关当前活动项目的项目级信息。
+**[!UICONTROL Workspace]** > **[!UICONTROL 项目]** > **[!UICONTROL 项目信息和设置]**&#x200B;提供有关当前活动项目的项目级信息。
 
 ![项目信息和设置窗口。](assets/projectinfo.png)
 
@@ -93,7 +93,7 @@ ht-degree: 64%
 
 * [面板](/help/analysis-workspace/c-panels/panels.md) ![面板图标](assets/panels-icon.png)
 
-* [可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)![“可视化”图标](assets/visualizations-icon.png)
+* [可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)![可视化图表图标](assets/visualizations-icon.png)
 
 * [组件](/help/components/overview.md)![组件图标](assets/components-icon.png)
 
@@ -117,11 +117,11 @@ ht-degree: 64%
 
 ## 项目管理器 {#manager}
 
-可在&#x200B;**“Analytics”>“组件”>“项目”**&#x200B;下管理 Analysis Workspace 项目。项目管理器显示特定用户创建的项。 您可以在管理员> Analytics用户和资产>转移资产下将项目所有权转移给新用户。
+可在&#x200B;**“Analytics”>“组件”>“项目”**&#x200B;下管理 Analysis Workspace 项目。项目管理器显示特定用户创建的项。 您可以在管理员> Analytics用户和Assets >转移Assets下将项目所有权转移给新用户。
 
 在项目管理器中，您可以添加、标记、共享、复制/复制等。 可在搜索栏中或通过使用左侧边栏中的过滤器选项搜索项目。可按标记、所有者、项目类型等进行筛选。
 
-![“项目管理器标记”搜索字段和“标题”搜索字段。](assets/project-manager.png)
+![项目管理器标记搜索字段和标题搜索字段。](assets/project-manager.png)
 
 以下是项目管理器中的常用操作，可同时对一个或多个项目执行此类操作：
 

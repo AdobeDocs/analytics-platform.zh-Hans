@@ -18,8 +18,8 @@ ht-degree: 68%
 * **计划或取消计划**&#x200B;自动受众刷新/更新。计划的最长有效期为 1 年。
 * 即将到期时&#x200B;**续订受众刷新计划**。针对即将过期的受众的处理方式与针对即将过期的计划报告的处理方式类似 - 管理员会在计划过期前一个月收到一封电子邮件。
 * 查看&#x200B;**刷新间隔**&#x200B;和&#x200B;**上次更新受众的时间**
-* 深入了解 **生成受众所用的时间** Customer Journey Analytics以及让受众出现在实时客户档案中以进行激活所花费的时间。
-* 查看Customer Journey Analytics中的受众是否为 **由实时客户资料积极使用** 或（理想情况下）使用由Customer Journey Analytics创建的Experience Platform的受众的任何受众应用程序。
+* 深入了解从Customer Journey Analytics生成受众所花费的&#x200B;**时间**，以及为激活目的而让受众出现在实时客户配置文件中所需的时间。
+* 查看Customer Journey Analytics中的受众是&#x200B;**正由实时客户档案**&#x200B;积极使用，还是（理想情况下）由任何使用Customer Journey Analytics创建的受众的Experience Platform应用程序积极使用。
 
 ## 管理 UI
 

@@ -37,7 +37,7 @@ Customer Journey Analytics管理员负责维护健康的数据字典。
 
    显示“数据词典”窗口。
 
-   ![显示字典运行状况的数据字典管理员视图](assets/data-dictionary-admin.png)
+   ![数据字典管理员的视图，显示字典运行状况](assets/data-dictionary-admin.png)
 
 1. 确保在下拉菜单中选择正确的数据视图。
 

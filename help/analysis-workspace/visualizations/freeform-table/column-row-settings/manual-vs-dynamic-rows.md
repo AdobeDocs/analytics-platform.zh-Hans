@@ -23,7 +23,7 @@ ht-degree: 81%
 
 例如，将“浏览器类型”维度拖入表中后，则排名靠前的“浏览器类型”维度项目（例如 Microsoft、Apple、Google 等）会动态返回到表行。如果拖放到列中，则会动态返回排名前 5 的“浏览器类型”维度项目。
 
-动态维度项目具有行过滤器选项和X图标，可以 **非** 出现锁图标。 <!--do they have the lock icon? --> 单击动态维度项旁边的x时，将自动应用过滤器。 有关将过滤器应用于表的详细信息，请参见 [对表格进行过滤和排序](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
+动态维度项目具有行筛选器选项和X图标，并且&#x200B;**不**&#x200B;存在锁图标。 <!--do they have the lock icon? -->当您单击动态维度项旁边的x时，将自动应用过滤器。 有关将筛选器应用到表的详细信息，请参阅[筛选和排序表](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)。
 
 
 ![突出显示过滤器图标的自由格式表。](assets/dynamic-items.png)
@@ -41,7 +41,7 @@ ht-degree: 81%
 
 静态维度项目&#x200B;**没有**&#x200B;行过滤器选项。而锁图标和 X 图标则会显示在每个项目上。单击 X 图标可从表中删除该维度项目。
 
-![显示浏览器类型和带有锁图标的Microsoft行的自由格式表。注意：此维度项目是静态的，不会随时间而改变。](assets/static-items.png)
+![显示浏览器类型和带有锁图标的Microsoft行的自由格式表注意：此维度项是静态的，不会随时间而改变。](assets/static-items.png)
 
 ## 混合维度项目
 

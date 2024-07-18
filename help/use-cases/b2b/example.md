@@ -1,5 +1,5 @@
 ---
-title: 示例B2B项目
+title: B2B 项目示例
 description: 了解如何设置、配置和报告B2B数据
 solution: Customer Journey Analytics
 feature: Use Cases
@@ -10,17 +10,17 @@ role: User
 source-git-commit: 9c60c00818e82a6ca891ab9d90260922437c6cca
 workflow-type: tm+mt
 source-wordcount: '793'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
-# 示例B2B项目
+# B2B 项目示例
 
 本文介绍了如何在Customer Journey Analytics中设置、配置和报告基于用户档案（人员）级别的B2B数据。
 
 ## 连接
 
-定义您的连接以包含Experience Platform中的所有相关B2B数据集。 确保包含并转换典型的、基于B2B人员的报表方案所需的所有相关查找数据集。 请参阅 [转换B2B查找数据集](/help/connections/transform-datasets-b2b-lookups.md) 以了解更多信息。
+定义您的连接以包含Experience Platform中的所有相关B2B数据集。 确保包含并转换典型的、基于B2B人员的报表方案所需的所有相关查找数据集。 有关详细信息，请参阅[转换B2B查找数据集](/help/connections/transform-datasets-b2b-lookups.md)。
 
 可以考虑添加到连接的数据集：
 
@@ -40,13 +40,13 @@ ht-degree: 8%
 -->
 
 
-查找架构、配置文件架构和事件架构之间的关系在Experience Platform内的B2B设置中定义。 请参阅中的架构 [Real-time Customer Data Platform B2B版本](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html) 和 [在Real-time Customer Data Platform B2B版本中定义两个架构之间的多对一关系](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html) 以了解更多详细信息。
+查找架构、配置文件架构和事件架构之间的关系在Experience Platform内的B2B设置中定义。 有关更多详细信息，请参阅[Real-time Customer Data Platform B2B版本](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html)中的架构和[在Real-time Customer Data Platform B2B版本](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html)中定义两个架构之间的多对一关系。
 
 ![B2B架构之间的关系](assets/classes.png)
 
-对于您添加到连接的每个查找数据集，您必须使用明确定义与事件数据集的关系 **[!UICONTROL 键]** 和 **[!UICONTROL 匹配键]** 在 **[!UICONTROL 编辑数据集]** 对话框。 例如：
+对于您添加到连接的每个查找数据集，必须在&#x200B;**[!UICONTROL 编辑数据集]**&#x200B;对话框中使用&#x200B;**[!UICONTROL 键]**&#x200B;和&#x200B;**[!UICONTROL 匹配键]**&#x200B;显式定义与事件数据集的关系。 例如：
 
-![键 — 匹配键](assets/key-matchingkey.png)
+![键 — 匹配的键](assets/key-matchingkey.png)
 
 明确使用四个架构将人员架构与其他相关架构相关联：帐户、机会、营销活动和营销列表。 这些架构基于以下架构类：
 
@@ -55,9 +55,9 @@ ht-degree: 8%
 * XDM 商业营销列表成员
 * XDM 商业营销活动成员
 
-对于每个查找数据集，对于基于此类架构类的架构，您还启用 **[!UICONTROL 转换数据集]** 以确保为基于人员的查找转换数据。 请参阅 [转换数据集以进行B2B查找](/help/connections/transform-datasets-b2b-lookups.md) 以了解更多信息。
+对于每个查找数据集，对于基于此类架构类的架构，您还可以启用&#x200B;**[!UICONTROL 转换数据集]**&#x200B;以确保转换数据以用于基于人员的查找。 参见 [转换数据集以进行 B2B 查找](/help/connections/transform-datasets-b2b-lookups.md) 了解更多信息。
 
-下表提供了 [!UICONTROL 人员ID]， [!UICONTROL 键]、和 [!UICONTROL 匹配键] 每个数据集的值。
+下表提供了每个数据集的[!UICONTROL 人员ID]、[!UICONTROL 键]和[!UICONTROL 匹配键]值的示例概述。
 
 
 | 数据集 | 人员 ID | 键 | 匹配键（在事件数据集中） |
@@ -71,12 +71,12 @@ ht-degree: 8%
 
 {style="table-layout:auto"}
 
-请参阅 [添加和配置数据集](../../connections/create-connection.md) 有关如何配置数据集设置的更多信息。
+有关如何为数据集配置设置的详细信息，请参阅[添加和配置数据集](../../connections/create-connection.md)。
 
 
 ## 数据视图
 
-要在构建工作区项目时访问相关的B2B维度和量度，您必须相应地定义数据视图。
+要在构建Workspace项目时访问相关的B2B维度和量度，您必须相应地定义数据视图。
 
 可将以下组件作为维度添加到数据视图，以确保可根据B2B数据报告基于人员的级别。 为清楚起见，将修改组件名称。
 
@@ -298,7 +298,7 @@ No metric components are defined as part of this dataset.
 
 ## 工作区
 
-在数据视图中正确定义组件后，您现在可以在工作区项目中构建特定的B2B报告和可视化图表。
+通过在数据视图中正确定义组件，您现在可以在Workspace项目中构建特定的B2B报告和可视化图表。
 
 以下是依赖于上述连接和数据视图的示例项目。
 

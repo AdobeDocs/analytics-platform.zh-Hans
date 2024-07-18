@@ -15,19 +15,19 @@ ht-degree: 90%
 
 在 Analysis Workspace 中，自由格式表是进行交互式数据分析的基础。可以将[组件](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html?lang=zh-Hans)组合拖放到行和列中，以创建自定义表格供您分析。在拖放每个组件后，表都将立即更新，以便您能够快速分析和深入探索。
 
-![自由格式表以行和列显示组件，包括多个网页的访问和在线订单。](assets/opening-section.png)
+![自由格式表显示行和列中的组件，包括多个网页的访问和在线订单。](assets/opening-section.png)
 
 ## 自动化表
 
 构建表最快捷的方法便是将组件直接拖到空白项目、面板或自由格式表中。随后将自动以建议的格式为您构建自由格式表。[观看教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/auto-build-freeform-tables-in-analysis-workspace.html?lang=zh-Hans)。
 
-![将带有访问组件的新面板放入工作空间。](assets/automated-table.png)
+![将带有访问组件的新面板拖放到工作空间。](assets/automated-table.png)
 
 ## 自由格式表生成器
 
 如果您希望先向表中添加多个组件，然后再渲染数据，则可以启用自由格式表生成器。启用该生成器后，您可以通过拖放多个维度、划分、量度和过滤器来构建可解答更复杂业务问题的表格。数据不会即时更新，单击&#x200B;**[!UICONTROL 构建]**&#x200B;后，数据将会更新。
 
-![自由格式表生成器显示 ](assets/table-builder.png)
+![显示](assets/table-builder.png)的自由格式表生成器
 
 ## 表交互
 
@@ -54,4 +54,4 @@ ht-degree: 90%
 
 了解有关用于 Analysis Workspace 的所有数据[导出选项](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?lang=zh-Hans)的更多信息。
 
-![显示导出选项和将数据复制到剪贴板的自由格式表。](assets/export-options.png)
+![自由格式表，其中显示了所选导出选项和将数据复制到剪贴板。](assets/export-options.png)

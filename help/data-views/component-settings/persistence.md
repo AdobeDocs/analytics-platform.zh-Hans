@@ -23,9 +23,9 @@ ht-degree: 80%
 
   >[!NOTE]
   >
-  >如果您拥有 [非默认归因模型](/help/data-views/component-settings/attribution.md) 如果在报表的量度上设置，则归因模型会忽略您为同一报表在维度上设置的分配。
+  >如果您在报表中的某个量度上设置了[非默认归因模型](/help/data-views/component-settings/attribution.md)，则该归因模型会忽略您为同一报表的维度设置的分配。
   >
-  >但是，在执行 [完整表导出](/help/analysis-workspace/export/export-cloud.md) 归因包含多个维度，因此会保留应用于每个维度的分配模型。
+  >但是，在执行包含多个维度的[完整表导出](/help/analysis-workspace/export/export-cloud.md)时，归因会保留应用于每个维度的分配模型。
 
 * 通过&#x200B;**到期**，可决定维度项在从中设置它的事件之外保持多久。
 
@@ -80,13 +80,13 @@ ht-degree: 80%
 * **会话**：在给定会话后到期。默认到期时段。
 * **人员**：在报表时段结束时到期。
 * **自定义时间**：在指定时段（最多 90 天）后过期。仅对“原有”和“最近”分配模型有此到期选项。在使用基于时间的到期时，将考虑报告时段（最长 90 天）开始之前的值。
-* **量度**：当在事件中看到此量度时，请让维度中的保留值立即过期。 可将任何指标用作此维度的到期结束。仅对“原有”和“最近”分配设置有此到期选项。
+* **量度**：当在事件中看到此量度时，请立即使维度中的保留值过期。 可将任何指标用作此维度的到期结束。仅对“原有”和“最近”分配设置有此到期选项。
 
 ## [!UICONTROL 绑定维度]
 
 一个下拉列表，可让您将维度值的持久性绑定到另一个维度中的维度值。 有效选项包括数据视图中包含的其他维度。
 
-请参阅 [在Customer Journey Analytics中使用绑定维度和量度](../../use-cases/data-views/binding-dimensions-metrics.md) 有关如何有效使用绑定维度的示例。
+有关如何有效使用绑定维度的示例，请参阅Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md)中的[使用绑定维度和量度。
 
 >[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
 
@@ -96,4 +96,4 @@ ht-degree: 80%
 
 此设置仅在对象数组中的绑定维度低于组件时显示。当绑定量度显示在事件中时，维度值会从事件级别维度向下复制到绑定维度的较低架构级别。
 
-请参阅下的第二个示例 [在Customer Journey Analytics中使用绑定维度和量度](../../use-cases/data-views/binding-dimensions-metrics.md) 有关如何有效使用绑定量度的更多信息。
+有关如何有效使用绑定量度的详细信息，请参阅[在Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md)中使用绑定维度和量度下的第二个示例。

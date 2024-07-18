@@ -23,22 +23,22 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | 可视化图表名称 | 描述 |
 | --- | --- | 
 | [面积图](/help/analysis-workspace/visualizations/area.md)<p>![区域图标](assets/Smock_GraphArea_18_N.svg)</p> | 与线形图相似，但线条下有彩色区域。当您有多个指标并且希望显示两个或更多指标相交的区域时，可使用面积图。 |
-| [条形图](/help/analysis-workspace/visualizations/bar.md) <p>![条形图示](assets/Smock_GraphBarVertical_18_N.svg)</p> | 显示一些垂直条，这些垂直条表示一个或多个指标中的各种值。 |
-| [项目符号图表](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![“项目符号”图标](assets/Smock_GraphBullet_18_N.svg)</p> | 显示您感兴趣的值与其他性能范围（目标）进行比较或衡量的结果。 |
-| [同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![“同类群组表”图标](assets/Smock_TextNumbered_18_N.svg)</p> | *`cohort`* 是指一组在特定期限内共享相同特性的人员。同类群组分析对于保留、流失或延迟分析非常有用。 |
-| [圆环图](/help/analysis-workspace/visualizations/donut.md) <p>![“圆环图”图标](assets/Smock_GraphDonut_18_N.svg)</p> | 此可视化图表与饼图类似，它将数据显示为整体的一部分或筛选条件。 |
-| [流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)<p>![“流失”图标](assets/Smock_ConversionFunnel_18_N.svg)</p> | 流失报表显示人员从何处离开（流失）或继续通过（流过）预定义的页面序列。 可以设置为有条件序列或确切序列。 |
-| [流](/help/analysis-workspace/visualizations/c-flow/flow.md)<p>![“流”图标](assets/flow-icon.png)</p> | 显示客户在您的网站和应用程序中的确切路径。 |
-| [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)<p>![“自由格式表”图标](assets/Smock_ViewTable_18_N.svg)</p> | 自由格式表不仅可以作为数据表，而且还是一个交互式可视化图表。这是在工作区中进行数据分析的基础。 |
-| [直方图](/help/analysis-workspace/visualizations/histogram.md)<p>![“直方图”图标](assets/Smock_GraphHistogram_18_N.svg)</p> | 直方图根据量度数量，将人员、访问或事件划分到存储桶中。 |
-| [水平条](/help/analysis-workspace/visualizations/horizontal-bar.md)<p>![水平条形图示](assets//Smock_GraphBarHorizontal_18_N.svg)</p> | 显示一些水平条，这些水平条表示一个或多个指标中的各种值。 |
-| [折线图](/help/analysis-workspace/visualizations/line.md)<p>![折线图标](assets/Smock_GraphTrend_18_N.svg)</p> | 使用线条来表示指标，以显示一段时间内值的变化情况。将时间作为 x 轴的线形图。 |
+| [条形图](/help/analysis-workspace/visualizations/bar.md) <p>![栏图标](assets/Smock_GraphBarVertical_18_N.svg)</p> | 显示一些垂直条，这些垂直条表示一个或多个指标中的各种值。 |
+| [项目符号图表](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![项目符号图标](assets/Smock_GraphBullet_18_N.svg)</p> | 显示您感兴趣的值与其他性能范围（目标）进行比较或衡量的结果。 |
+| [同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![同类群组表图标](assets/Smock_TextNumbered_18_N.svg)</p> | *`cohort`* 是指一组在特定期限内共享相同特性的人员。同类群组分析对于保留、流失或延迟分析非常有用。 |
+| [圆环图](/help/analysis-workspace/visualizations/donut.md) <p>![圆环图标](assets/Smock_GraphDonut_18_N.svg)</p> | 此可视化图表与饼图类似，它将数据显示为整体的一部分或筛选条件。 |
+| [流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)<p>![流失图标](assets/Smock_ConversionFunnel_18_N.svg)</p> | 流失报表显示人员从何处离开（流失）或继续通过（流过）预定义的页面序列。 可以设置为有条件序列或确切序列。 |
+| [流](/help/analysis-workspace/visualizations/c-flow/flow.md)<p>![流程图标](assets/flow-icon.png)</p> | 显示客户在您的网站和应用程序中的确切路径。 |
+| [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)<p>![自由格式表图标](assets/Smock_ViewTable_18_N.svg)</p> | 自由格式表不仅可以作为数据表，而且还是一个交互式可视化图表。这是在工作区中进行数据分析的基础。 |
+| [直方图](/help/analysis-workspace/visualizations/histogram.md)<p>![直方图图标](assets/Smock_GraphHistogram_18_N.svg)</p> | 直方图根据量度数量，将人员、访问或事件划分到存储桶中。 |
+| [水平条](/help/analysis-workspace/visualizations/horizontal-bar.md)<p>![水平条形图标](assets//Smock_GraphBarHorizontal_18_N.svg)</p> | 显示一些水平条，这些水平条表示一个或多个指标中的各种值。 |
+| [折线图](/help/analysis-workspace/visualizations/line.md)<p>![行图标](assets/Smock_GraphTrend_18_N.svg)</p> | 使用线条来表示指标，以显示一段时间内值的变化情况。将时间作为 x 轴的线形图。 |
 | [散点图](/help/analysis-workspace/visualizations/scatterplot.md) <p>![散点图图标](assets/Smock_GraphScatter_18_N.svg)</p> | 显示维度项目与最多三个指标之间的关系。 |
-| [概要数字](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![“摘要数字”图标](assets/summary-number-icon.png)</p> | 将选择的单元格显示为 1 个多位数。 |
-| [概要变化](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![“概要变化”图标](assets/summary-change-icon.png)</p> | 将所选单元格之间的变化显示为 1 个多位数/百分比。 |
+| [概要数字](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![摘要数字图标](assets/summary-number-icon.png)</p> | 将选择的单元格显示为 1 个多位数。 |
+| [概要变化](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![摘要更改图标](assets/summary-change-icon.png)</p> | 将所选单元格之间的变化显示为 1 个多位数/百分比。 |
 | [文本](/help/analysis-workspace/visualizations/text.md)<p>![散点图图标](assets/Smock_Text_18_N.svg)</p> | 使您克将用户定义的文本添加到您的工作区。在利用面板/可视化图表描述之外，对于向您的分析和见解添加额外的上下文非常有用 |
-| [树形图](/help/analysis-workspace/visualizations/treemap.md)<p>![树形图图标](assets/Smock_GraphTree_18_N.svg)</p> | 将分层（树结构）数据显示为一组嵌套的矩形。 |
-| [维恩图](/help/analysis-workspace/visualizations/venn.md)<p>![“维恩图”](assets/venn-icon.png)</p> | 使用圆圈来描述最多 3 个过滤器之间的量度重叠。 |
+| [树形图](/help/analysis-workspace/visualizations/treemap.md)<p>![树状图图标](assets/Smock_GraphTree_18_N.svg)</p> | 将分层（树结构）数据显示为一组嵌套的矩形。 |
+| [维恩图](/help/analysis-workspace/visualizations/venn.md)<p>![维恩图标](assets/venn-icon.png)</p> | 使用圆圈来描述最多 3 个过滤器之间的量度重叠。 |
 
 ## 向面板添加可视化图表
 
@@ -46,19 +46,19 @@ Analysis Workspace 中提供了以下可视化图表类型：
 
 1. 使用以下任意方法来添加可视化图表：
 
-   * 在左边栏中，选择 **可视化图表** 图标 <!-- add icon -->，然后将可视化图表拖到要添加该可视化图表的面板中。
+   * 在左边栏中，选择&#x200B;**可视化图表**&#x200B;图标<!-- add icon -->，然后将可视化图表拖到要添加该可视化图表的面板中。
 
-     ![“可视化图表”面板](assets/viz-rail.png)
+     ![可视化面板](assets/viz-rail.png)
 
-   * 在要添加可视化图表的面板上，选择 **加号** 图标，然后选择表示要添加的可视化图表的图标。 将鼠标悬停在每个可视化图表的图标上可查看其名称。
+   * 在要添加可视化图表的面板上，选择&#x200B;**加号**&#x200B;图标，然后选择表示要添加的可视化图表的图标。 将鼠标悬停在每个可视化图表的图标上可查看其名称。
 
-     ![用于添加可视化图表的按钮](assets/visualization-add-to-panel.png)
+     用于添加可视化图表的![按钮](assets/visualization-add-to-panel.png)
 
-   * 添加 [空白面板](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html?lang=zh-Hans)，然后选择要添加的可视化图表。
+   * 添加[空白面板](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html?lang=zh-Hans)，然后选择要添加的可视化图表。
 
      ![空白面板](assets/blank_panel.png)
 
-   * 右键单击Analysis Workspace项目中的现有面板，然后选择 [!UICONTROL **复制可视化图表**] 或 [!UICONTROL **复制可视化图表**].
+   * 右键单击Analysis Workspace项目中的现有面板，然后选择&#x200B;[!UICONTROL **复制可视化图表**]&#x200B;或&#x200B;[!UICONTROL **复制可视化图表**]。
 
 ## 自定义可视化图表设置
 
@@ -80,7 +80,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 
 ## 设置 {#settings}
 
-每个可视化图表都有其自身的设置，您可以管理这些设置。要访问可视化图表设置，请选择设置图标 ![列设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg).
+每个可视化图表都有其自身的设置，您可以管理这些设置。要访问可视化设置，请选择设置图标![列设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg)。
 
 <img src="./assets/viz-settings-line.png" alt="可视化设置" width="50%" />
 
@@ -118,7 +118,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 
 可视化图表的其他功能可通过在可视化图表的标题上右键单击来使用。其设置因可视化图表而异。其中一些设置包括：
 
-![显示了带有右键单击选项的其他可视化图表设置。 下一节将介绍相关选项。](assets/right-click.png)
+![显示右键单击选项的其他可视化设置。 下一节将介绍这些选项。](assets/right-click.png)
 
 | 设置 | 描述 |
 | --- | --- |

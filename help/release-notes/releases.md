@@ -1,16 +1,16 @@
 ---
 description: 介绍 Customer Journey Analytics 的持续功能发布策略
-title: Customer Journey Analytics功能发布策略
+title: Customer Journey Analytics 功能发布策略
 exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
 feature: Release Notes
 source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
 source-wordcount: '397'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-# Customer Journey Analytics功能发布策略
+# Customer Journey Analytics 功能发布策略
 
 Customer Journey Analytics 版本在持续交付模型上运行，该模型允许采用可扩展的分阶段方法进行功能部署。
 
@@ -28,7 +28,7 @@ Customer Journey Analytics 版本在持续交付模型上运行，该模型允�
 
 ## 功能标记
 
-功能标记用于在发布过程中控制新功能的可见性。Adobe建议允许 `app.launchdarkly.com` 通过贵组织的防火墙，在发布过程中获得最佳体验。 向所有人发布功能后，将删除这些标记。 请参阅 [Customer Journey Analytics使用的域](../technotes/domains.md) 以了解更多信息。
+功能标记用于在发布过程中控制新功能的可见性。Adobe 建议允许 `app.launchdarkly.com` 通过您所在组织的防火墙，以便在发布期间获得最佳体验。在功能向所有人发布后，这些标志会移除。有关更多信息，请参阅 [Customer Journey Analytics 使用的域](../technotes/domains.md)。
 
 您可以随时在&#x200B;**帮助 > 关于 Workspace > 活动功能标记**&#x200B;下查看活动功能标记。
 
@@ -40,5 +40,5 @@ Customer Journey Analytics 版本在持续交付模型上运行，该模型允�
 
 | 问题 | 回答 |
 | --- | --- |
-| 我是否可以请求提前访问某个功能？ | 不会。不会授予提前访问权限。<br>如果您想要提前测试 Analytics 概念，我们建议您试用 [Adobe Analytics Labs](https://experienceleague.adobe.com/docs/analytics/analyze/labs.html?lang=zh-Hans)，就我们行业领先的创新技术提供反馈。 |
+| 我是否可以请求提前访问某个功能？ | 不会。不会授予提前访问权限。<br>如果您想要提前测试 Analytics 概念，我们建议您试用 [Adobe Analytics Labs](https://experienceleague.adobe.com/cn/docs/analytics/analyze/labs.html?lang=zh-Hans)，就我们行业领先的创新技术提供反馈。 |
 | 此发布策略是否会影响我对功能的访问？ | 不会。一旦某个功能达到 GA 阶段，您将有权访问该功能，前提是它包含在您的 Analytics 程序包中。 |

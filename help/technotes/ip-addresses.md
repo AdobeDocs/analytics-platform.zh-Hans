@@ -16,7 +16,7 @@ ht-degree: 31%
 
 一些防火墙配置会阻止源自 Adobe 数据收集服务器或负责访问数据的服务器的 IP 地址。您可以使用此范围列表来更改贵组织的防火墙设置，以允许从组织内访问和发送数据。
 
-此页面包含您需要添加到IP地址的IP地址，以便出站允许列表正常工作，例如 [将数据导出到云提供商](/help/analysis-workspace/export/export-cloud.md).
+此页面包含您需要添加到允许列表的ip地址，以便出站系统正常工作，例如[将数据导出到云提供商](/help/analysis-workspace/export/export-cloud.md)。
 
 >[!IMPORTANT]
 >
@@ -143,4 +143,4 @@ ht-degree: 31%
 >
 >[Customer Journey Analytics使用的域](domains.md)
 >
->[Adobe Experience Cloud使用的IP地址](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)
+>Adobe Experience Cloud使用的[IP地址](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)

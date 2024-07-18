@@ -7,15 +7,15 @@ role: User
 source-git-commit: e0cf556a094726edbee35b21bf71d5d1f227fcc7
 workflow-type: tm+mt
 source-wordcount: '1885'
-ht-degree: 34%
+ht-degree: 35%
 
 ---
 
 # 试验性面板
 
-通过&#x200B;**[!UICONTROL 试验]**&#x200B;面板，分析师可以比较不同的用户体验、营销或消息传递方面的变化，以确定哪一种最能推动特定结果。您可以从任何试验平台评估任何A/B试验的提升和置信度：在线、离线、Target或Journey Optimizer等Adobe解决方案，甚至BYO（自带）数据。
+通过&#x200B;**[!UICONTROL 试验]**&#x200B;面板，分析师可以比较不同的用户体验、营销或消息传递方面的变化，以确定哪一种最能推动特定结果。您可以从任何试验平台评估任何 A/B 试验的提升度和置信度：在线、离线、来自 Target 或 Adobe Journey Optimizer 等 Adobe 解决方案、甚至是 BYO（自带）数据。
 
-详细了解 [Adobe Customer Journey Analytics与Adobe Target之间的集成](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja).
+详细了解Adobe Customer Journey Analytics与Adobe Target之间的[集成](https://experienceleague.adobe.com/zh-hans/docs/target/using/integrate/cja/target-reporting-in-cja)。
 
 ## 访问控制 {#access}
 
@@ -27,32 +27,32 @@ ht-degree: 34%
 
 ## 步骤 1：创建与试验数据集的连接 {#connection}
 
-推荐的数据架构将试验数据放在一个[对象数组](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array)中，该数组在两个单独的维度中包含试验数据和变体数据。 两个维度都必须位于 **单身** 对象数组。 如果将试验数据放在单个维度中（试验数据与变量数据放在分隔字符串中），则可以使用 [子字符串](/help/data-views/component-settings/substring.md) 在数据视图中设置，将维一分为二以用于面板。
+推荐的数据架构将试验数据放在一个[对象数组](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array)中，该数组在两个单独的维度中包含试验数据和变体数据。 两个维度都必须位于&#x200B;**单个**&#x200B;对象数组中。 如果您的试验数据位于单个维度中（试验数据和变体数据位于分隔字符串中），则可以在数据视图中使用[子字符串](/help/data-views/component-settings/substring.md)设置将该维度一分为二以用于面板中。
 
-在您的试验数据得 [已摄取](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) 进入Adobe Experience Platform， [在Customer Journey Analytics中创建连接](/help/connections/create-connection.md) 到一个或多个试验数据集。
+在Adobe Experience Platform中[引入试验数据](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home)后，[在Customer Journey Analytics](/help/connections/create-connection.md)中创建与一个或多个试验数据集的连接。
 
 ## 步骤 2：在数据视图中添加上下文标签 {#context-labels}
 
-在Customer Journey Analytics数据视图设置中，管理员可以添加 [上下文标签](/help/data-views/component-settings/overview.md) 到维度或指标和Customer Journey Analytics服务，如 [!UICONTROL 试验] 面板可以出于其目的使用这些标签。 试验面板使用两个预定义标签：
+在Customer Journey Analytics数据视图设置中，管理员可以将[上下文标签](/help/data-views/component-settings/overview.md)添加到维度或量度，并且Customer Journey Analytics服务（如[!UICONTROL 试验]面板）可以使用这些标签。 试验面板使用两个预定义标签：
 
 * [!UICONTROL 试验试验]
 * [!UICONTROL 试验变体]
 
 在包含试验数据的数据视图中，选择两个维度，一个包含试验数据，另一个包含变量数据。然后用&#x200B;**[!UICONTROL 试验]**&#x200B;和&#x200B;**[!UICONTROL 变量]**&#x200B;标签标注这些维度。
 
-![试验和试验变体的上下文标签选项。](assets/context-label.png)
+试验变体和试验变体的![上下文标签选项。](assets/context-label.png)
 
 如果没有这些标签，则由于没有试验可使用，因此“试验”面板不工作。
 
 ## 步骤 3：配置试验面板 {#configure}
 
-1. 在Customer Journey Analytics工作区中，将试验面板拖动到项目中。
+1. 在Customer Journey AnalyticsWorkspace中，将试验面板拖动到项目中。
 
-![“体验”面板拖入到项目中。](assets/experiment.png)
+![Experiention面板拖入了一个项目。](assets/experiment.png)
 
 >[!IMPORTANT]
 >
->如果尚未完成Customer Journey Analytics数据视图中的必要设置，则在可继续操作之前会收到此消息： ”[!UICONTROL 请在数据视图中配置试验和变体维度]“。
+>如果尚未完成Customer Journey Analytics数据视图中的必要设置，则在可继续操作之前会收到此消息：“[!UICONTROL 请配置数据视图中的试验维度和变体维度]”。
 >
 
 1. 配置面板输入设置。
@@ -62,7 +62,7 @@ ht-degree: 34%
    | **[!UICONTROL 试验]** | 向最终用户展示的一组体验变体，用于确定哪一种变体最好永久保留。 试验由两个或多个变量组成，其中一个变量视为控制变量。该设置预先填充了数据视图中已标记为&#x200B;**[!UICONTROL 试验]**&#x200B;标签的维度，以及过去 3 个月的试验数据。 |
    | **[!UICONTROL 控制变量]** | 最终用户体验中的两种或多种变化中的一种，并会为了确定更好的替代方案而对其进行比较。必须选择一个变量作为控制变量，并且只能将一个变量视为控制变量。 该设置预先填充了数据视图中已标记为&#x200B;**[!UICONTROL 变量]**&#x200B;标签的维度。此设置将会调出与此试验相关的变量数据。 |
    | **[!UICONTROL 成功量度]** | 用户正在与变量进行比较的一个或多个量度。可产生最理想的转化量度结果（最高或最低）的变量会成为某项试验中具有“最佳性能的变量”。最多可添加 5 个量度。 |
-   | **[!UICONTROL 标准化量度]** | 基础([!UICONTROL 人员]， [!UICONTROL 会话]，或 [!UICONTROL 活动])，测试将在其上运行。 例如，测试可以比较几种变化的转换率，其中&#x200B;**[!UICONTROL 转化率]**&#x200B;会计为每个会话的&#x200B;**[!UICONTROL 转化率]**&#x200B;或每个人的&#x200B;**[!UICONTROL 转化率]**。 |
+   | **[!UICONTROL 标准化量度]** | 运行测试的基础（[!UICONTROL 人员]、[!UICONTROL 会话]或[!UICONTROL 事件]）。 例如，测试可以比较几种变化的转换率，其中&#x200B;**[!UICONTROL 转化率]**&#x200B;会计为每个会话的&#x200B;**[!UICONTROL 转化率]**&#x200B;或每个人的&#x200B;**[!UICONTROL 转化率]**。 |
    | **[!UICONTROL 日期范围]** | 日期范围会根据为选定试验在Customer Journey Analytics中收到的第一个事件自动设置。 如果需要，可以将日期范围限制或扩展到更具体的时间范围。 |
 
 1. 单击&#x200B;**[!UICONTROL 生成]**。
@@ -79,7 +79,7 @@ ht-degree: 34%
 
 [!UICONTROL 线]图给出了[!UICONTROL 控制]与[!UICONTROL 控制变量]性能：
 
-![线图输出显示控制与控制变量性能。](assets/exp-output2.png)
+![显示控制与控制变量性能的折线图输出。](assets/exp-output2.png)
 
 >[!NOTE]
 >
@@ -87,7 +87,7 @@ ht-degree: 34%
 
 ## 第 5 步：诠释结果 {#interpret}
 
-1. **试验已有定论**：每次查看试验报告时，都会分析到目前为止在试验中积累的数据。 并且会在任意时间有效置信度超过95%的阈值时声明某个试验具有“结论性”。 *至少一个* （当有两臂以上时，应用Benjamini-Hochberg校正，以校正多重假设检验）。
+1. **试验有结论**：每次查看试验报告时，都会分析到目前为止在试验中积累的数据。 并且，当任意时间有效置信度超过&#x200B;*至少一个*&#x200B;变量的阈值95%时，将试验声明为“结论性”（当有两臂以上时，应用Benjamini-Hochberg校正，以校正多假设检验）。
 
 2. **最佳性能变量**：当一项试验被宣布为具有结论性时，具有最高转化率的变量会被标记为“最佳性能变量”。请注意，此变量必须是控制变量或基线变量，或者是超过95%随时有效置信阈值的变量之一（应用Benjamini-Hochberg校正）。
 
@@ -95,7 +95,7 @@ ht-degree: 34%
 
 4. **提升**：试验报告摘要显示超过基线的部分，这是对给定变量转换率超过基线的改进百分比的衡量。 精确地来说，它是给定变量与基线之间的性能差异除以基线的性能，并以百分比表示。
 
-5. **置信度**：所示的随时有效置信度是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。 置信度越高，表明支持控制变量和非控制变量具有相同性能的假设的证据越少。更准确地说，所显示的置信度是一种概率（以百分比表示），即如果实际中真实的基本转化率没有差异，您会观察到给定变量和对照之间的转化率差异较小。 就 *p* 值而言，显示的置信度为1-*p*-值。
+5. **置信度**：显示的随时有效置信度是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。 置信度越高，表明支持控制变量和非控制变量具有相同性能的假设的证据越少。更准确地说，所显示的置信度是一种概率（以百分比表示），即如果实际中真实的基本转化率没有差异，您会观察到给定变量和对照之间的转化率差异较小。 就 *p* 值而言，显示的置信度为1-*p*-值。
 
 >[!NOTE]
 >
@@ -105,7 +105,7 @@ ht-degree: 34%
 
 为了提供易于解释且安全的统计推断，Adobe 采用了基于[随时有效置信序列（Anytime Valid Confidence Sequences）](https://arxiv.org/abs/2103.06476)的统计方法。
 
-置信序列是 *顺序* 置信区间的模拟。 为了理解置信序列的含义，请设想对以下内容重复100次实验的情况，并计算平均业务量度（例如电子邮件的打开率）的估计值及其相关的95%置信序列 *每个新用户* 进入实验的那个。
+置信序列是置信区间的&#x200B;*连续*&#x200B;模拟。 为了理解置信序列的含义，请设想对每个进入试验的新用户&#x200B;*重复100次实验的情况，并计算平均业务量度（例如电子邮件的打开率）的估计值及其相关的95%置信序列。*
 
 95%置信度序列包括您运行的100次实验中的95次实验中业务量度的“真”值。 （每个试验只能计算一次95%置信区间，以提供相同的95%覆盖率保证；而不是针对每个新用户）。 因此，通过使用置信序列，您可以连续监控试验，而不会增加误报错误率，即这些序列允许“窥视”结果。
 
@@ -129,4 +129,4 @@ A/B测试是行业内客观衡量此类干预效果的黄金标准。 A/B测试�
 
 ## 在试验面板中使用计算量度
 
-请参阅这篇博客文章，了解有关 [在试验面板中使用派生量度](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
+请参阅这篇博客帖子，了解有关在“试验”面板](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119)中使用派生量度的[的信息。

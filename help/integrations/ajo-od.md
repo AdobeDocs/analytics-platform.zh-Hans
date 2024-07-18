@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 027ff3983c67481dd8284667d97f59f427b18928
 workflow-type: tm+mt
 source-wordcount: '711'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Adobe Experience Platform 作为中心数据源，联系着决策管理与 Custo
 | 回退决策选项分数 | 单个范围上下文中回退决策选项的计算值。 | `_experience.decisioning.`<br/>`propositionDetails.fallback.score` | 组件类型：量度 |
 | 优惠驳回 | 在没有任何其他直接互动的情况下被驳回或拒绝的优惠数量。 | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | 组件类型：量度 |
 | 优惠显示 | 显示在配置文件中的优惠数量。 | `_experience.decisioning.`<br/>`propositionEventType.display` | 组件类型：量度 |
-| 优惠互动 | 配置文件与之交互的优惠数量。 | `_experience.decisioning.`<br/>`propositionEventType.interact` | 组件类型：量度 |
+| 优惠互动 | 与配置文件互动的优惠数量。 | `_experience.decisioning.`<br/>`propositionEventType.interact` | 组件类型：量度 |
 | 优惠发送 | 发送到配置文件的优惠数量。 | `_experience.decisioning.`<br/>`propositionEventType.send` | 组件类型：量度 |
 | 优惠触发 | 客户端 SDK 选择显示的优惠数量。 | `_experience.decisioning.`<br/>`propositionEventType.trigger` | 组件类型：量度 |
 | 优惠取消订阅 | 配置文件请求的在将来不显示的优惠数量。 | `_experience.decisioning.`<br/>`propositionEventType.unsubscribe` | 组件类型：量度 |

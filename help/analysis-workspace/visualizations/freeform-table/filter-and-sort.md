@@ -25,7 +25,7 @@ Analysis Workspace 中的过滤器可帮助您显示最重要的信息。
 
 >[!NOTE]
 >
-> 仅可以过滤动态维度项，如本节所述。 无法筛选静态维度项目。 有关更多信息，请参阅 [自由格式表中的动态维度项与静态维度项](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
+> 仅可以过滤动态维度项，如本节所述。 无法筛选静态维度项目。 有关详细信息，请参阅自由格式表中的[动态与静态维度项](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)。
 
 ## 筛选自由格式表行
 
@@ -35,7 +35,7 @@ Analysis Workspace 中的过滤器可帮助您显示最重要的信息。
 - 表筛选器
 - 区段
 
-请务必阅读每种方法的影响 [自由格式表总计](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
+请务必阅读每种方法如何影响[自由格式表总计](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)。
 
 ### 从表中快速排除特定行
 
@@ -43,7 +43,7 @@ Analysis Workspace 中的过滤器可帮助您显示最重要的信息。
 
 >[!NOTE]
 >
->在按本节所述排除行时， [!UICONTROL **始终排除项目**] 规则将自动应用于高级过滤器对话框。 (您可以通过选择“过滤器”图标来查看应用的规则， [**[!UICONTROL 显示高级]**](#apply-a-simple-or-advanced-filter-to-a-table).)
+>如本节所述排除行时，在高级筛选器对话框中自动应用&#x200B;[!UICONTROL **始终排除项**]&#x200B;规则。 （您可以通过选择“筛选器”图标，然后选择[**[!UICONTROL 显示高级选项]**](#apply-a-simple-or-advanced-filter-to-a-table)来查看应用的规则。）
 
 要从自由格式表中快速排除特定行，请执行以下操作：
 
@@ -65,17 +65,17 @@ Note: this option does not seem to work. AN-338422
 
 过滤自由格式表中的数据：
 
-1. 将鼠标悬停在包含要过滤的数据的列上。 <!--only some types of columns show the filter... Which? Just Dimensions?-->
+1. 将鼠标悬停在包含要过滤的数据的列上。<!--only some types of columns show the filter... Which? Just Dimensions?-->
 
 1. 当&#x200B;**过滤器**&#x200B;图标出现时选择它。
 
-   ![突出显示过滤器图标的自由格式表。](assets/table-filter-icon.png)
+   ![自由格式表突出显示“筛选器”图标。](assets/table-filter-icon.png)
 
    可以使用以下选项：
 
    | 选项 | 功能 |
    |---------|----------|
-   | [!UICONTROL **搜索词或短语**] | 指定要作为过滤依据的单词或短语。 仅显示包含指定单词或确切短语的行。 |
+   | [!UICONTROL **搜索单词或短语**] | 指定要作为过滤依据的单词或短语。 仅显示包含指定单词或确切短语的行。 |
    | [!UICONTROL **包括未指定的项（无）**] | 选择此选项可在表中显示不属于表格的任何维度的数据。<!--what is this?--> |
 
 1. （可选）要按不同条件或多个条件筛选，请选择&#x200B;[!UICONTROL **显示高级选项**]。
@@ -95,7 +95,7 @@ Note: this option does not seem to work. AN-338422
 
 ### 过滤器
 
-查看我们的 [筛选文档](/help/components/filters/filters-overview.md) 以了解更多详细信息。
+有关更多详细信息，请参阅我们的[筛选文档](/help/components/filters/filters-overview.md)。
 
 ## 对表格进行排序
 
@@ -110,6 +110,6 @@ Note: this option does not seem to work. AN-338422
    - 向下箭头按降序排序，向上箭头（默认）按升序排序。
    - 您可以按字母顺序或数字顺序对维度进行排序。 例如，工作流程中可能有编号的步骤，并且可能希望按步骤编号排序。您可以按日期对与日期相关的维度进行排序。 或者，您也可以按字母顺序对数据源进行排序，如以下图像中所示。
 
-   ![突出显示排序图标的数据源视图。](assets/sort-dimensions.png)
+   ![数据源视图突出显示排序图标。](assets/sort-dimensions.png)
 
 

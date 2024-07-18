@@ -31,4 +31,4 @@ ht-degree: 92%
 
 ## 博客帖子
 
-以下是一篇相关的博客文章，内容涉及 [在Customer Journey Analytics中处理“无值”](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).
+以下是一篇关于[在Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339)中处理“无值”的相关博客文章。

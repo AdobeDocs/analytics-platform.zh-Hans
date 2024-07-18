@@ -22,7 +22,7 @@ ht-degree: 60%
 
 - **设置数据流** 以配置 Adobe Experience Platform Edge Network，将您收集的数据路由到您在 Adobe Experience Platform 中配置的数据集。
 
-- **使用标记** 以轻松针对移动应用程序中的数据配置规则和数据元素。 然后确保数据发送到在 Adobe Experience Platform Edge Network 上配置的数据流。
+- **使用标记**&#x200B;针对移动应用程序中的数据轻松配置规则和数据元素。 然后确保数据发送到在 Adobe Experience Platform Edge Network 上配置的数据流。
 
 - **部署和验证**。拥有一个可以迭代标签开发的环境，一旦所有内容都经过验证，就可以在您的生产环境中实时发布。
 
@@ -54,23 +54,24 @@ ht-degree: 60%
 
 1. 在 Adobe Experience Platform UI 的左边栏中，选择[!UICONTROL 数据管理]中的&#x200B;**[!UICONTROL 模式]**。
 
-1. 选择 **[!UICONTROL 创建架构]**..
+1. 选择&#x200B;**[!UICONTROL 创建架构]**。
+.
 1. 在“创建模式”向导的“选择类”步骤中：
 
-   1. 选择 **[!UICONTROL 体验事件]**.
+   1. 选择&#x200B;**[!UICONTROL 体验事件]**。
 
       ![创建模式](./assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    Experience Event架构用于为 _行为_ 配置文件（如场景名称、要添加到购物车的按钮）的。 个人配置档案模式用于对个人配置档案&#x200B;_属性_（如姓名、电子邮件、性别）建模。
+      >    体验事件架构用于为配置文件的&#x200B;_行为_&#x200B;建模（如场景名称、要添加到购物车的按钮）。 个人配置档案模式用于对个人配置档案&#x200B;_属性_（如姓名、电子邮件、性别）建模。
 
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
 
-1. 在 [!UICONTROL 命名和审核步骤] 的 [!UICONTROL 创建架构] 向导：
+1. 在[!UICONTROL 创建架构]向导的[!UICONTROL 名称和审核步骤]中：
 
-   1. 输入 **[!UICONTROL 架构显示名称]** （可选）a **[!UICONTROL 描述]**.
+   1. 为您的架构输入&#x200B;**[!UICONTROL 架构显示名称]**&#x200B;和（可选）**[!UICONTROL 描述]**。
 
       ![命名您的模式](./assets/create-ee-schema-wizard-step-2.png)
 
@@ -84,7 +85,7 @@ ht-degree: 60%
 
       字段组是可重用的对象和属性集合，可让您轻松扩展模式。
 
-   1. 在 [!UICONTROL 添加字段组] 对话框，选择 **[!UICONTROL AEP Mobile SDK ExperienceEvent]** 列表中的字段组。
+   1. 在[!UICONTROL 添加字段组]对话框中，从列表中选择&#x200B;**[!UICONTROL AEP Mobile SDK ExperienceEvent]**&#x200B;字段组。
 
       ![AEP移动生命周期详细信息字段组](./assets/select-aepmobilesdk-experienceevent.png)
 
@@ -100,11 +101,11 @@ ht-degree: 60%
 
    ![示例模式添加字段按钮](./assets/example-mobileschema-plus.png)
 
-1. 在 [!UICONTROL 字段属性] 面板，输入 `identification` 作为 [!UICONTROL 字段名称]， **[!UICONTROL 标识]** 作为 [!UICONTROL 显示名称]，选择 **[!UICONTROL 对象]** 作为 [!UICONTROL 类型] 并选择 **[!UICONTROL ExperienceEvent Core v2.1]** 作为 [!UICONTROL 字段组].
+1. 在[!UICONTROL 字段属性]面板中，输入`identification`作为[!UICONTROL 字段名称]，输入&#x200B;**[!UICONTROL 标识]**&#x200B;作为[!UICONTROL 显示名称]，选择&#x200B;**[!UICONTROL 对象]**&#x200B;作为[!UICONTROL 类型]，并选择&#x200B;**[!UICONTROL ExperienceEvent Core v2.1]**&#x200B;作为[!UICONTROL 字段组]。
 
    >[!NOTE]
    >
-   >如果该字段组不可用，请查找另一个包含标识字段的字段组。 或 [创建新字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) 和 [添加新标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) (点赞 `ecid`， `crmId`，然后选择该新字段组。
+   >如果该字段组不可用，请查找另一个包含标识字段的字段组。 或者[创建新的字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html)和[将新的标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field)（如`ecid`、`crmId`和其他您需要的字段）添加到该字段组，并选择该新字段组。
 
    ![识别对象](./assets/identification-field-mobile.png)
 
@@ -246,7 +247,7 @@ ht-degree: 60%
 
 2. 选择&#x200B;**[!UICONTROL 新属性]**。
 
-   命名标记，选择 **[!UICONTROL 移动设备]**. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;继续。
+   为标记命名，选择&#x200B;**[!UICONTROL 移动设备]**。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;继续。
 
    ![创建资产](./assets/create-mobile-property.png)
 
@@ -254,30 +255,30 @@ ht-degree: 60%
 
 创建标签后，您需要使用正确的扩展名对其进行配置，并根据您希望如何跟踪站点并将数据发送到 Adobe Experience Platform 配置数据元素和规则。
 
-要配置，请从列表中选择新创建的标记 [!UICONTROL 标记属性].
+要配置，请从[!UICONTROL 标记属性]列表中选择新创建的标记。
 
 
 #### **扩展**
 
-将AdobePlatform Edge Network扩展添加到您的标记中，以确保您可以（通过数据流）将数据发送到Adobe Experience Platform。
+将Adobe平台Edge Network扩展添加到您的标记中，以确保您可以（通过数据流）将数据发送到Adobe Experience Platform。
 
 要创建并配置Adobe Experience Platform Mobile SDK扩展，请执行以下操作：
 
-1. 选择 **[!UICONTROL 扩展]** 在左边栏中。 您会看到移动核心扩展和配置文件扩展已经可用。
+1. 在左边栏中选择&#x200B;**[!UICONTROL 扩展]**。 您会看到移动核心扩展和配置文件扩展已经可用。
 
 1. 在顶部栏中选择 **[!UICONTROL 目录]** 。
 
-1. 搜索或滚动到 **[!UICONTROL Adobe Experience Platform边缘网络]** 扩展并选择 **[!UICONTROL 安装]** 在右窗格中安装。
+1. 搜索或滚动到&#x200B;**[!UICONTROL Adobe Experience PlatformEdge Network]**&#x200B;扩展，然后在右侧窗格中选择&#x200B;**[!UICONTROL 安装]**&#x200B;以安装该扩展。
 
 1. 选择您的沙盒和您之前为您的[!UICONTROL 生产环境]和（可选）[!UICONTROL 暂存环境]和[!UICONTROL 创建的数据流开发环境]。
 
    ![AEP Mobile SDK扩展配置](./assets/aepmobilesdk-extension-datastream.png)
 
-1. 输入您的 **[!UICONTROL Edge Network域]** 下 [!UICONTROL 域配置]. 通常使用 `<organizationName>.data.adobedc.net`.
+1. 在[!UICONTROL 域配置]下输入您的&#x200B;**[!UICONTROL Edge Network域]**。 通常使用`<organizationName>.data.adobedc.net`。
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
-请参阅 [配置Adobe Experience Platform Edge Network扩展](https://developer.adobe.com/client-sdks/documentation/edge-network) 以了解更多信息。
+有关详细信息，请参阅[配置Adobe Experience PlatformEdge Network扩展](https://developer.adobe.com/client-sdks/documentation/edge-network)。
 
 您还需要从目录设置以下其他扩展：
 
@@ -285,7 +286,7 @@ ht-degree: 60%
 - AEP保证。
 - 同意。
 
-请参阅 [配置标记属性](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html) 在Experience Platform的移动应用程序教程中，了解有关扩展及其配置的更多信息。
+有关扩展及其配置的更多信息，请参阅Experience Platform的移动应用程序教程中的[配置标记属性](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html)。
 
 #### **数据元素**
 
@@ -303,9 +304,9 @@ ht-degree: 60%
 
    - 为数据元素命名，例如，`Carrier Name`。
 
-   - 选择 **[!UICONTROL 移动核心]** 从 [!UICONTROL 扩展名] 列表。
+   - 从[!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL 移动核心]**。
 
-   - 选择 **[!UICONTROL 运营商名称]** 从 [!UICONTROL 数据元素类型] 列表。
+   - 从[!UICONTROL 数据元素类型]列表中选择&#x200B;**[!UICONTROL 运营商名称]**。
 
 
      ![使用页面信息创建日期元素](./assets/create-dataelement-mobile.png)
@@ -317,7 +318,7 @@ ht-degree: 60%
 
 #### **规则**
 
-Adobe Experience Platform 中的标签遵循基于规则的系统。他们寻找用户交互和相关数据。如果满足您的规则中所列的标准，则规则会触发您已识别的扩展、脚本或客户端代码。您可以使用规则通过Adobe Experience Platform Edge Network扩展将数据发送到Adobe Experience Platform中（如XDM对象）。
+Adobe Experience Platform 中的标签遵循基于规则的系统。他们寻找用户交互和相关数据。如果满足您的规则中所列的标准，则规则会触发您已识别的扩展、脚本或客户端代码。您可以使用规则通过Adobe Experience PlatformEdge Network扩展将数据发送到Adobe Experience Platform中（如XDM对象）。
 
 例如，您希望在使用移动设备应用程序时（在前台）和不使用移动设备应用程序时（推送回后台）发送事件数据。
 
@@ -335,25 +336,25 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。他们寻找
 
    - 在[!UICONTROL 事件配置]对话框中：
 
-      - 选择 **[!UICONTROL 移动核心]** 从 [!UICONTROL 扩展名] 列表。
+      - 从[!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL 移动核心]**。
 
-      - 选择 **[!UICONTROL 前景]** 从 [!UICONTROL 事件类型] 列表。
-
-      - 选择&#x200B;**[!UICONTROL 保留更改]**。
-
-   - 单击 ![加号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 旁边 [!UICONTROL 移动核心 — 前台].
-
-      - 选择 **[!UICONTROL 移动核心]** 从 [!UICONTROL 扩展名] 列表。
-
-      - 选择 **[!UICONTROL 背景]** 从 [!UICONTROL 事件类型] 列表。
+      - 从[!UICONTROL 事件类型]列表中选择&#x200B;**[!UICONTROL 前台]**。
 
       - 选择&#x200B;**[!UICONTROL 保留更改]**。
 
-   - 单击 ![加号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在下面添加 [!UICONTROL 操作]. 在[!UICONTROL 操作配置]对话框中：
+   - 单击[!UICONTROL 移动核心 — 前台]旁边的![加号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)。
 
-      - 选择 **[!UICONTROL Adobe Experience Platform边缘网络]** 从 [!UICONTROL 扩展名] 列表。
+      - 从[!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL 移动核心]**。
 
-      - 选择 **[!UICONTROL 将事件转发到Edge Network]** 从 [!UICONTROL 操作类型] 列表。
+      - 从[!UICONTROL 事件类型]列表中选择&#x200B;**[!UICONTROL 背景]**。
+
+      - 选择&#x200B;**[!UICONTROL 保留更改]**。
+
+   - 单击[!UICONTROL ACTIONS]下的![加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)“添加”。 在[!UICONTROL 操作配置]对话框中：
+
+      - 从[!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL Adobe Experience PlatformEdge Network]**。
+
+      - 从[!UICONTROL 操作类型]列表中选择&#x200B;**[!UICONTROL 将事件转发到Edge Network]**。
 
       - 选择&#x200B;**[!UICONTROL 保留更改]**。
 
@@ -395,7 +396,7 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。他们寻找
 
 4. 您可以选择&#x200B;**[!UICONTROL ...]** 重建库或将库移动到临时或生产环境。
 
-Adobe Experience Platform标记支持从简单到复杂的发布工作流程，应该可以适应Adobe Experience Platform Edge Network的部署。
+Adobe Experience Platform标记支持从简单到复杂的发布工作流程，这些工作流程应该可以适应Adobe Experience PlatformEdge Network的部署。
 
 有关详细信息，请参阅 [发布概述](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#publish-the-configuration) 。
 
@@ -408,9 +409,9 @@ Adobe Experience Platform标记支持从简单到复杂的发布工作流程，�
 
 1. 选择左边栏中的&#x200B;**[!UICONTROL 环境]**。
 
-2. 从环境列表中，选择正确的安装 ![盒子](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) 按钮。
+2. 从环境列表中选择正确的安装![Box](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg)按钮。
 
-   在 [!UICONTROL 移动设备安装说明] 对话框，选择适当的平台([!UICONTROL iOS]， [!UICONTROL Android])。 然后使用副本 ![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) 按钮来设置和初始化移动设备应用程序，您需要使用每个相关的代码片段旁边的按钮：
+   在[!UICONTROL 移动设备安装说明]对话框中，选择适当的平台([!UICONTROL iOS]，[!UICONTROL Android])。 然后，使用要用于设置和初始化移动设备应用程序的每个相关代码片段旁边的复制![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)按钮：
 
    ![环境](./assets/environment-mobile.png)
 
@@ -426,13 +427,13 @@ Adobe Experience Platform标记支持从简单到复杂的发布工作流程，�
 
 验证您的实现，在必要时进行更正，更正后，使用标签的发布工作流功能将其部署到您的暂存和生产环境中。
 
-请参阅 [在移动应用程序中实施Adobe Experience Cloud教程](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html) 了解更多详细信息。
+有关更多详细信息，请参阅[在移动应用程序中实施Adobe Experience Cloud教程](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)。
 
 ## 设置连接
 
 要在 Customer Journey Analytics 中使用 Adobe Experience Platform 数据，您需要创建一个连接，其中包含因设置模式、数据集和工作流所产生的数据。
 
-通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告这些数据集，您必须首先在Adobe Experience Platform和工作区中的数据集之间建立连接。
+通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告这些数据集，您必须首先在Adobe Experience Platform和Workspace中的数据集之间建立连接。
 
 创建您的连接：
 
@@ -535,7 +536,7 @@ Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分�
 
    ![工作区选择数据视图](./assets/cja-projects-3.png)
 
-5. 要创建您的第一个报表，请开始将维度和量度拖放到 [!UICONTROL 自由格式表] 在 [!UICONTROL 面板] . 例如，拖动 `Events` 作为量度和 `Push Title` 作为维度，划分依据 `Event Type` 大致了解您的移动应用程序的推送通知以及发生的情况。
+5. 要创建您的第一个报告，请在[!UICONTROL 面板]中的[!UICONTROL 自由格式表]上开始拖放维度和量度。 例如，将`Events`作为量度拖动，将`Push Title`作为维度拖动，并按`Event Type`进行划分，即可大致了解移动应用程序的推送通知以及推送通知发生的情况。
 
    ![工作区 – 第一份报告](./assets/cja-projects-5-mobile.png)
 
@@ -543,4 +544,4 @@ Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分�
 
 >[!SUCCESS]
 >
->您已完成所有步骤。 从定义要在 Adobe Experience Platform 中收集的数据（模式）和存储数据的位置（数据集）开始，您在 Edge Network 上配置了一个数据流，以确保数据可以转发到该数据集。然后，您定义和部署了包含扩展(Adobe Experience Platform Edge Network等)、数据元素和规则的标记，以便从移动应用程序中捕获数据并将该数据发送到数据流。 您在Customer Journey Analytics中定义了一个连接，以使用您的移动应用程序推送通知跟踪数据和其他数据。 通过数据视图定义，您可以指定要使用的维度和量度，最后，您创建了第一个项目，用于可视化和分析移动应用程序数据。
+>您已完成所有步骤。 从定义要在 Adobe Experience Platform 中收集的数据（模式）和存储数据的位置（数据集）开始，您在 Edge Network 上配置了一个数据流，以确保数据可以转发到该数据集。然后，您定义和部署了包含扩展(Adobe Experience PlatformEdge Network及其他)、数据元素和规则的标记，以便从移动应用程序中捕获数据并将该数据发送到数据流。 您在Customer Journey Analytics中定义了一个连接，以使用您的移动应用程序推送通知跟踪数据和其他数据。 通过数据视图定义，您可以指定要使用的维度和量度，最后，您创建了第一个项目，用于可视化和分析移动应用程序数据。

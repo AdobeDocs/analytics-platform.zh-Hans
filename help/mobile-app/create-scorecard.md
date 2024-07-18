@@ -24,11 +24,11 @@ ht-degree: 68%
 
 Analytics记分卡以平铺布局为执行用户显示关键数据可视化图表，如下所示：
 
-![显示Mobile记分卡演示的Analytics记分卡示例](assets/intro_scorecard.png)
+显示Mobile记分卡演示的![Analytics记分卡示例](assets/intro_scorecard.png)
 
 作为此记分卡的策划人，您可以使用记分卡生成器来配置要在执行用户的记分卡上显示的图块。 您还可以配置在点按图块后，如何调整详细视图或细分。记分卡生成器界面如下所示：
 
-![显示新移动记分卡窗口的记分卡生成器。 ](assets/scorecard_builder.png)
+![记分卡生成器显示新的移动记分卡窗口。](assets/scorecard_builder.png)
 
 要创建记分卡，您需要执行以下操作：
 
@@ -41,11 +41,11 @@ Analytics记分卡以平铺布局为执行用户显示关键数据可视化图�
 
 ### 创建新项目 {#create}
 
-1. 打开Customer Journey Analytics并单击 **[!UICONTROL 工作区]** 选项卡。
+1. 打开Customer Journey Analytics并单击&#x200B;**[!UICONTROL Workspace]**&#x200B;选项卡。
 1. 单击&#x200B;**[!UICONTROL 创建新项目]**&#x200B;并选择&#x200B;**[!UICONTROL 空白移动记分卡]**&#x200B;项目模板。
 1. 单击&#x200B;**[!UICONTROL 创建]**。
 
-![“所有模板”窗口，其中选择了“空白移动记分卡”。](assets/new_template.png)
+![选择了空白MObile记分卡的“所有模板”窗口。](assets/new_template.png)
 
 ### “工具”菜单
 
@@ -60,9 +60,9 @@ Analytics记分卡以平铺布局为执行用户显示关键数据可视化图�
 
    ![突出显示数据视图选择的新移动记分卡窗口](assets/properties_save.png)
 
-1. 要向记分卡中添加新图块，请将左侧面板中的某个量度拖放到 **[!UICONTROL 将量度拖放到此处]** 区域。 您也可以使用类似的工作流程，在两个图块之间插入指标。
+1. 要向记分卡中添加新图块，请将左侧面板中的某个量度拖放到&#x200B;**[!UICONTROL 在此处拖放量度]**&#x200B;区域。 您也可以使用类似的工作流程，在两个图块之间插入指标。
 
-   ![将带有指向指标（新KPI）的箭头的新移动记分卡窗口放入记分卡。 ](assets/build_list.png)
+   ![新移动记分卡窗口已放入记分卡，其中带有一个指向指标（新KPI）的箭头。](assets/build_list.png)
 
 
 1. 从每个图块中，您可以访问一个详细视图，该视图显示有关指标的其他信息，例如，相关维度列表的排名最前的项目。
@@ -73,21 +73,21 @@ Analytics记分卡以平铺布局为执行用户显示关键数据可视化图�
 
 例如，您可以通过将适当的维度（如本示例中的 **[!DNL Marketing Channel]**）拖放到图块上来将它添加到&#x200B;**[!UICONTROL 独特访客]**&#x200B;指标。维度细分显示在图块特定的&#x200B;**[!UICONTROL 属性]**&#x200B;的[!UICONTROL 深入分析]（细分）部分的下方。可向每个图块中添加多个维度。
 
-![带有从维度列表指向记分卡窗格的箭头的新移动记分卡窗口。](assets/layer_dimensions.png)
+![新移动记分卡窗口，带有从维度列表指向记分卡窗格的箭头。](assets/layer_dimensions.png)
 
 ## 应用过滤器 {#filters}
 
 要将过滤器应用于单个图块，请从左侧面板中拖动某个过滤器(区段就是Customer Journey Analytics中的过滤器)，然后将其直接拖放到图块的顶部。
 
-如果要将过滤器应用于记分卡中的所有图块，请将图块拖放到记分卡的顶部。 或者，您也可以通过在日期范围下方的过滤器菜单中选择过滤器来应用过滤器。您 [为记分卡配置和应用过滤器](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans) 与在Customer Journey Analytics工作区中操作的方式相同。
+如果要将过滤器应用于记分卡中的所有图块，请将图块拖放到记分卡的顶部。 或者，您也可以通过在日期范围下方的过滤器菜单中选择过滤器来应用过滤器。您[像在Customer Journey AnalyticsWorkspace中一样为记分卡配置和应用筛选器](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans)。
 
-![突出显示内部版本筛选器的筛选器下拉选择器](assets/segment_ui.png)
+![筛选器下拉选择器突出显示生成筛选器](assets/segment_ui.png)
 
 ## 添加日期范围 {#dates}
 
 通过选择日期范围下拉菜单来添加和移除可在记分卡中选择的日期范围组合。
 
-![突出显示昨天与上周同一天的新移动记分卡](assets/new_score_card.png)
+![新的移动记分卡突出显示昨天与上周同日](assets/new_score_card.png)
 
 每个新记分卡都从 6 个日期范围组合开始，重点展示今天和昨天的数据。您可以单击 x 以移除不必要的日期范围，也可以单击铅笔图标以修改每个日期范围组合。
 
@@ -95,11 +95,11 @@ Analytics记分卡以平铺布局为执行用户显示关键数据可视化图�
 
 要创建或更改主要日期，请使用下拉菜单从可用日期范围中选择，或者将日期组件从右边栏拖放到放置区域中。
 
-![新移动记分卡，突出显示已选择主要日期/昨天的日期范围](assets/new_score_card3.png)
+![新移动记分卡，突出显示选择了主要日期/昨天的日期范围](assets/new_score_card3.png)
 
 要创建比较日期，您可以在下拉菜单中选择方便的预设以进行常用的时间比较。您还可以从右边栏拖放日期组件。
 
-![新移动记分卡，突出显示日期范围，其中比较日期设置为上周同一天](assets/new_score_card4.png)
+![新移动记分卡，突出显示日期范围，比较日期设置为选定上周的同一天](assets/new_score_card4.png)
 
 如果尚未创建所需的日期范围，则可以通过单击日历图标来创建一个新的日期范围。
 
@@ -111,11 +111,11 @@ Analytics记分卡以平铺布局为执行用户显示关键数据可视化图�
 
 要包括比较日期范围，请切换&#x200B;**包括比较日期**&#x200B;设置。
 
-![新的移动记分卡突出显示昨天与前一天，并包括比较日期](assets/include-comparison-dates.png)
+![新的移动记分卡突出显示昨天与前一天的对比日期](assets/include-comparison-dates.png)
 
 默认情况下&#x200B;*启用*&#x200B;此设置。 如果您不想查看比较日期，请将其切换为&#x200B;*关闭*。
 
-![新的移动记分卡昨天突出显示，并包含比较日期](assets/no-comparison-dates.png)
+![昨天突出显示的新移动记分卡和包括比较日期](assets/no-comparison-dates.png)
 
 ## 应用可视化图表 {#viz}
 
@@ -131,7 +131,7 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 使用“摘要数字”可视化图表来突出显示项目中的大型重要数字。
 
-![新的移动记分卡，其中摘要数字可视化图表突出显示1330次访问](assets/summary-number.png)
+![新的移动记分卡，摘要数字可视化图表突出显示13,300次访问](assets/summary-number.png)
 
 ### [!UICONTROL 圆环图]
 
@@ -164,7 +164,7 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 1. 选择正确的图块。
 1. 在右边栏中的&#x200B;**[!UICONTROL 深入分析]**&#x200B;下，选择要删除其&#x200B;**[!UICONTROL 未指定]**&#x200B;项的维度项旁边的右箭头。
 
-   ![属性，其维度名称旁边的箭头指向右箭头。](assets/unspecified.png)
+   ![属性，其指向维度名称旁边的右箭头。](assets/unspecified.png)
 
 1. 单击&#x200B;**[!UICONTROL 未指定]**&#x200B;旁边的图标以从报告中删除未指定数据。（您也可以删除任何其他维度项。）
 
@@ -218,7 +218,7 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 ## 删除组件 {#remove}
 
-同样，要删除应用于整个记分卡的组件，请单击记分卡上图块外的任意位置，然后单击组件以删除组件 **x** 将鼠标悬停在该组件上时显示，如下面的 **首次访问**：
+同样，要删除应用于整个记分卡的组件，请单击记分卡上图块外的任意位置，然后单击将鼠标悬停在该组件上时显示的&#x200B;**x**&#x200B;来删除组件，如下面的&#x200B;**首次访问**&#x200B;所示：
 
 ![Remove_components](assets/new_remove.png)
 
@@ -307,7 +307,7 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 1. 单击&#x200B;**[!UICONTROL 共享]**&#x200B;菜单，然后选择&#x200B;**[!UICONTROL 共享记分卡]**。
 
-1. 在 **[!UICONTROL 共享移动记分卡]** 表单，通过以下方式填写字段：
+1. 在&#x200B;**[!UICONTROL 共享移动记分卡]**&#x200B;表单中，通过以下方式填写字段：
 
    * 提供记分卡的名称
    * 提供记分卡的说明
@@ -334,7 +334,7 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 1. 复制链接并将其粘贴到电子邮件、文档或即时消息应用程序中。
 
-   当收件人使用桌面应用程序或浏览器打开链接时，将在工作区中打开移动记分卡项目。
+   当收件人使用桌面应用程序或浏览器打开该链接时，将在Workspace中打开移动记分卡项目。
 
    当收件人在移动设备上打开链接时，记分卡将直接在Adobe Analytics功能板应用程序中打开。
 

@@ -15,7 +15,7 @@ ht-degree: 85%
 
 通过[!UICONTROL 组合图表]可视化，可轻松快速地构建比较可视化图表，而无需先构建表格。您可以通过线条/条形组合轻松查看数据趋势。
 
-使用 [!UICONTROL 组合图表] 至：
+使用[!UICONTROL 组合图表]可以：
 
 * 将本周的订单与上个月（和去年）同一时间的订单进行比较 – 只需点击几下即可。
 * 在同一张图表上快速分析和比较多个量度（例如[!UICONTROL 独特访客数]和[!UICONTROL 收入]）。
@@ -41,9 +41,9 @@ ht-degree: 85%
 
    | 线形比较类型 | 定义 |
    | --- | --- |
-   | **[!UICONTROL 时间比较]** | 最常见的比较类型 – 例如，将此时间段与 4 周前进行比较。如果您选择了[!UICONTROL 时间比较]，则对要比较的时间段进行二次选择。<p>![与选定的时间段和时间段的辅助选择字段进行的一次比较。](assets/combo-time-period.png) |
-   | **[!UICONTROL 函数]** | 您可以在比较中引入函数（例如[!UICONTROL 平均值]）。请参阅下面的支持函数列表。<p>![“比较”下拉菜单显示选定的函数和可用受支持函数的列表。](assets/combo-functions.png) |
-   | **[!UICONTROL 辅助量度]** | 例如，您可以将[!UICONTROL 收入]与另一个量度进行比较。<p>![比较两个指标的组合图表。](assets/combo-2metrics.png) |
+   | **[!UICONTROL 时间比较]** | 最常见的比较类型 – 例如，将此时间段与 4 周前进行比较。如果您选择了[!UICONTROL 时间比较]，则对要比较的时间段进行二次选择。<p>![与选定时段和选定时段的辅助选择字段进行比较。](assets/combo-time-period.png) |
+   | **[!UICONTROL 函数]** | 您可以在比较中引入函数（例如[!UICONTROL 平均值]）。请参阅下面的支持函数列表。<p>![LIne比较下拉菜单，其中显示选定函数和可用受支持函数的列表。](assets/combo-functions.png) |
+   | **[!UICONTROL 辅助量度]** | 例如，您可以将[!UICONTROL 收入]与另一个量度进行比较。<p>![比较两个量度的组合图表。](assets/combo-2metrics.png) |
 
    {style="table-layout:auto"}
 
@@ -51,7 +51,7 @@ ht-degree: 85%
 
    输出将类似于下面这样：
 
-   ![在条形图中显示当前时段的组合图表和在折线图中显示比较时段的组合图表 ](assets/combo-output.png)
+   ![在条形图中显示当前时段的组合图表，在折线图](assets/combo-output.png)中显示比较时段
 
    当前时期以条形图显示，对比时期以线形图表示。线形图上的点被称为“条形铃”。
 
@@ -77,13 +77,13 @@ ht-degree: 85%
 
 以下是使用了累积平均值和均值函数的组合图表的示例：
 
-![显示累积平均值和均值函数的组合图表。](assets/combo-two-functions.png)
+![显示累积平均和平均函数的组合图表。](assets/combo-two-functions.png)
 
 ## 组合图表设置
 
 单击组合图表右上角的齿轮图标以更改其设置。
 
-![组合图表“设置”视图，其中显示了如下所述的选项。](assets/combo-settings.png)
+![组合图表设置视图，显示如下所述的选项。](assets/combo-settings.png)
 
 | 设置 | 定义 |
 | --- | --- |

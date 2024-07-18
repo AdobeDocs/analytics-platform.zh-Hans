@@ -21,11 +21,11 @@ ht-degree: 79%
 
 提取历史（回填）数据涉及从 Google 导出数据并将该数据导入 Adobe Experience Platform。查看[将 Google Analytics 数据摄取到 Adobe Experience Platform](backfill.md)。
 
-成功将历史数据引入平台后，您可以 [配置流式当前数据](streaming.md)，或者立即开始报告Customer Journey Analytics中的回填数据，报告者为 [创建连接](/help/connections/create-connection.md).
+成功将历史数据引入平台后，您可以[配置流式当前数据](streaming.md)，或通过[创建连接](/help/connections/create-connection.md)立即开始报告Customer Journey Analytics中的回填数据。
 
 ## 为 Adobe Experience Platform 配置现有的 Google Analytics 实施 {#configure}
 
-摄取当前（流）数据涉及将数据发送到Adobe Experience Platform Edge Network，然后将该数据转发到Adobe Experience Platform。 查看[在 Adobe Experience Platform 中设置流式 Google Analytics 数据](streaming.md)。
+摄取当前（流）数据涉及将数据发送到Adobe Experience PlatformEdge Network，然后将该数据转发到Adobe Experience Platform。 查看[在 Adobe Experience Platform 中设置流式 Google Analytics 数据](streaming.md)。
 
 ## 在Customer Journey Analytics中配置连接和数据视图
 

@@ -31,7 +31,7 @@ ht-degree: 81%
 
 1. 如果您还没有[!UICONTROL 工作区]和 [!UICONTROL Labs] 的访问权限，请联系管理员以获取相应权限。
 
-1. 在Customer Journey Analytics中，单击 **[!UICONTROL Labs]** 选项卡。
+1. 在Customer Journey Analytics中，单击&#x200B;**[!UICONTROL Labs]**&#x200B;选项卡。
 
 ## 评估原型
 

@@ -47,7 +47,7 @@ ht-degree: 89%
 
 1. 在设置菜单之外单击以查看更新的折线图。
 
-   ![包含异常检测消息的折线图，指示比预期高15%。](assets/anomaly_linechart.png)
+   ![检测到异常消息的折线图指示比预期值高15%。](assets/anomaly_linechart.png)
 
    异常情况如下折线图所示：
 

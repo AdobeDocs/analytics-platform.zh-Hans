@@ -31,7 +31,7 @@ ht-degree: 89%
 
 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) 是客户端 JavaScript 库，它允许 Adobe Experience Cloud 的客户通过 Adobe Experience Platform Edge Network 与 Experience Cloud 中的各种服务进行交互。
 
-1. [在标记中配置Adobe Experience Platform Web SDK扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html) 以通过Adobe Experience Platform Edge Network从Web资产将数据发送到Adobe Experience Cloud。
+1. [在标记](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html)中配置Adobe Experience Platform Web SDK扩展，以通过Adobe Experience PlatformEdge Network从Web资产向Adobe Experience Cloud发送数据。
 1. 请使用 [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) 创建一个或多个将通知跨渠道报告的[连接](/help/connections/create-connection.md)和[数据视图](/help/data-views/data-views.md)。
 
 ## 通过批量摄取和流式摄取来获取数据

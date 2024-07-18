@@ -38,7 +38,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/en/
 * 已授予对CJA BI扩展的访问权限。
 * 使用过期或不过期凭据将 BI 工具连接到 [!DNL Customer Journey Analytics BI extension]。[凭据指南](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)提供了有关如何设置过期凭据或不过期凭据的更多信息。
 
-请参阅 [客户历程访问控制](../technotes/access-control.md) 欲了解更多信息，请参见 [产品管理员其他权限](../technotes/access-control.md#product-admin-additional-permissions) 和 [Admin Console中的Customer Journey Analytics权限](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
+请参阅[客户历程访问控制](../technotes/access-control.md)以了解详细信息，特别是[产品管理员附加权限](../technotes/access-control.md#product-admin-additional-permissions)和Admin Console中的[Customer Journey Analytics权限](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console)。
 
 
 ## 使用情况
@@ -82,7 +82,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/en/
 
 +++
 
-请参阅 [查询编辑器UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/user-guide) 以了解更多信息。
+有关详细信息，请参阅[查询编辑器UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/user-guide)。
 
 
 ### BI 工具
@@ -111,9 +111,9 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/en/
 
    1. 在 **[!UICONTROL ** PostgressSQL 数据库&#x200B;**]**&#x200B;对话框中：
 
-      1. 粘贴 **[!UICONTROL **&#x200B;主机&#x200B;**]** Experience Platform查询中的参数 [!UICONTROL 凭据] 在  **[!UICONTROL **&#x200B;服务器&#x200B;**]** 文本字段。
+      1. 将Experience Platform查询[!UICONTROL 凭据]中的&#x200B;**[!UICONTROL ** Host **]**&#x200B;参数粘贴到&#x200B;**[!UICONTROL **&#x200B;服务器&#x200B;**]**&#x200B;文本字段中。
 
-      1. 粘贴 **[!UICONTROL **&#x200B;数据库&#x200B;**]** Experience Platform查询中的参数 [!UICONTROL 凭据] 在 **[!UICONTROL **&#x200B;数据库&#x200B;**]** 文本字段。
+      1. 将Experience Platform查询[!UICONTROL 凭据]中的&#x200B;**[!UICONTROL **&#x200B;数据库&#x200B;**]**&#x200B;参数粘贴到&#x200B;**[!UICONTROL **&#x200B;数据库&#x200B;**]**&#x200B;文本字段中。
 
          将 `?FLATTEN` 添加到&#x200B;**[!UICONTROL **&#x200B;数据库&#x200B;**]**&#x200B;参数，例如，使其显示内容为 `prod:cja?FLATTEN`。有关更多信息，请参阅[扁平化处理嵌套数据结构以用于第三方 BI 工具](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data)。
 
@@ -122,7 +122,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/en/
       1. 系统会提示您输入&#x200B;**[!UICONTROL 用户名]**&#x200B;和&#x200B;**[!UICONTROL 密码]**。使用 Experience Platform 查询[!UICONTROL 凭据]中的等效参数。
 
 
-   1. 成功登录后，Customer Journey Analytics数据视图表会显示在Power BI中 **[!UICONTROL **&#x200B;导航器&#x200B;**]**.
+   1. 成功登录后，Customer Journey Analytics数据视图表将出现在Power BI **[!UICONTROL **&#x200B;导航器&#x200B;**]**&#x200B;中。
 
    1. 选择要使用的数据视图表，然后选择&#x200B;**[!UICONTROL **&#x200B;加载&#x200B;**]**。
 
@@ -152,11 +152,11 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/en/
 
    1. 在 [!UICONTROL PostgresSQL] 对话框中：
 
-      1. 粘贴 **[!UICONTROL **&#x200B;主机&#x200B;**]** Experience Platform查询中的参数 [!UICONTROL 凭据] 到 **[!UICONTROL **&#x200B;服务器&#x200B;**]** 文本字段。
+      1. 将Experience Platform查询[!UICONTROL 凭据]中的&#x200B;**[!UICONTROL **&#x200B;主机&#x200B;**]**&#x200B;参数粘贴到&#x200B;**[!UICONTROL **&#x200B;服务器&#x200B;**]**&#x200B;文本字段中。
 
-      1. 粘贴 **[!UICONTROL **&#x200B;端口&#x200B;**]** Experience Platform查询中的参数 [!UICONTROL 凭据] 到 **[!UICONTROL **&#x200B;端口&#x200B;**]** 文本字段。
+      1. 将Experience Platform查询[!UICONTROL 凭据]中的&#x200B;**[!UICONTROL **&#x200B;端口&#x200B;**]**&#x200B;参数粘贴到&#x200B;**[!UICONTROL **&#x200B;端口&#x200B;**]**&#x200B;文本字段中。
 
-      1. 粘贴 **[!UICONTROL **&#x200B;数据库&#x200B;**]** Experience Platform查询中的参数 [!UICONTROL 凭据] 到 **[!UICONTROL **&#x200B;数据库&#x200B;**]** 文本字段。
+      1. 将Experience Platform查询[!UICONTROL 凭据]中的&#x200B;**[!UICONTROL **&#x200B;数据库&#x200B;**]**&#x200B;参数粘贴到&#x200B;**[!UICONTROL **&#x200B;数据库&#x200B;**]**&#x200B;文本字段中。
 
          将 `%3FFLATTEN` 添加到&#x200B;**[!UICONTROL **&#x200B;数据库&#x200B;**]**&#x200B;参数，例如，使其显示内容为 `prod:cja%3FFLATTEN`。有关更多信息，请参阅[扁平化处理嵌套数据结构以用于第三方 BI 工具](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data)。
 
@@ -164,9 +164,9 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/en/
 
       1. 将 Experience Platform 查询[!UICONTROL 凭据]中的&#x200B;**[!UICONTROL **&#x200B;用户名&#x200B;**]**&#x200B;参数粘贴到&#x200B;**[!UICONTROL **&#x200B;用户名&#x200B;**]**&#x200B;文本字段中。
 
-      1. 粘贴 **[!UICONTROL **&#x200B;密码&#x200B;**]** Experience Platform查询中的参数 [!UICONTROL 凭据] 到 **[!UICONTROL **&#x200B;密码&#x200B;**]** 文本字段。
+      1. 将Experience Platform查询[!UICONTROL 凭据]中的&#x200B;**[!UICONTROL **&#x200B;密码&#x200B;**]**&#x200B;参数粘贴到&#x200B;**[!UICONTROL **&#x200B;密码&#x200B;**]**&#x200B;文本字段中。
 
-      1. 选择 **[!UICONTROL **&#x200B;登录&#x200B;**]**.
+      1. 选择&#x200B;**[!UICONTROL **&#x200B;登录&#x200B;**]**。
 
    1. Customer Journey Analytics 数据视图显示为&#x200B;**[!UICONTROL **&#x200B;表&#x200B;**]**&#x200B;列表中的表。
 
@@ -182,7 +182,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/en/
 
 ## 功能
 
-默认情况下，您的数据视图具有从其友好名称生成的表安全名称。例如，名为的数据视图 [!UICONTROL 我的Web数据视图] 具有视图名称 `my_web_data_view`. 您可以为数据视图定义要在BI工具中使用的首选名称。 请参阅 [数据视图设置](create-dataview.md#settings) 以了解更多信息。
+默认情况下，您的数据视图具有从其友好名称生成的表安全名称。例如，名为[!UICONTROL 我的Web数据视图]的数据视图具有视图名称`my_web_data_view`。 您可以为数据视图定义要在BI工具中使用的首选名称。 有关详细信息，请参阅[数据视图设置](create-dataview.md#settings)。
 
 如果要使用数据视图 ID 作为表名称，可以在连接时将可选的 `CJA_USE_IDS` 设置添加到数据库名称。例如，`prod:cja?CJA_USE_IDS` 显示具有 `dv_ABC123` 等名称的数据视图。
 
@@ -227,7 +227,7 @@ prod:all=> \dv
 | 多维度<br/>细分<br/>和顶部区别 | <pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1, dim2</pre><pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY 1, 2<br/>ORDER BY 1, 2</pre><pre>SELECT DISTINCT dim1, dim2<br/>FROM dv1</pre> |
 | 子选择：<br/>筛选其他<br/>结果 | <pre>SELECT dim1, m1<br/>FROM (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;</br>  GROUP BY dim1<br/>)<br/>WHERE dim1 in (&#39;A&#39;, &#39;B&#39;)</pre> |
 | 子选择：跨数据视图<br/>查询<br/> | <pre>SELECT key, SUM(m1) AS total<br/>FROM (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>  GROUP BY dim1<br/><br/>  UNION<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  FROM dv2<br/>  WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>  GROUP BY dim2<br/>GROUP BY key<br/>ORDER BY total</pre> |
-| 子选择：<br/>分层来源，<br/>过滤<br/>和聚合 | 使用子选择进行分层：<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FROM (<br/>  SELECT \_.dim1,\_.m1<br/>  FROM (<br/>    SELECT \* FROM dv1<br/>    WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>  ) \_<br/>  WHERE \_.dim1 in (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) rows<br/>GROUP BY 1<br/>ORDER BY total</pre><br/>使用 CTE WITH 的层：<br/><pre>行为(<br/>  带有\_ AS (<br/>    选择*从数据区(_A)<br/>    其中\&#39;timestamp\&#39;介于&#39;2021-01-01&#39;和&#39;2021-02-01&#39;之间<br/>  )<br/>  选择\_.item， \_.units FROM \_<br/>  其中\_.item不为NULL<br/>)<br/>SELECT rows.item， SUM(rows.units) AS units<br/>FROM行，其中rows.item位于(&#39;A&#39;， &#39;B&#39;， &#39;C&#39;)<br/>GROUP BY rows.item</pre> |
+| 子选择：<br/>分层来源，<br/>过滤<br/>和聚合 | 使用子选择进行分层：<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FROM (<br/>  SELECT \_.dim1,\_.m1<br/>  FROM (<br/>    SELECT \* FROM dv1<br/>    WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>  ) \_<br/>  WHERE \_.dim1 in (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) rows<br/>GROUP BY 1<br/>ORDER BY total</pre><br/>使用 CTE WITH 的层：<br/><pre>行为(<br/>，\_ AS (<br/>)    从data_ares<br/>中选择*    其中\&#39;timestamp\&#39;介于&#39;2021-01-01&#39;和&#39;2021-02-01&#39;<br/> )<br/>从\_<br/>中选择\_.item， \_.units FROM \_ WHERE \_.item IS NOT NULL<br/>)<br/>选择rows.item， SUM(rows.units)作为单位<br/>从rows.item的行(&#39;A&#39;， &#39;B&#39;， &#39;C&#39;)<br/>按行分组.item</pre> |
 | 选择<br/>量度位于维度之前<br/>或与维度<br/>混合的情况 | <pre>SELECT SUM(metric1) AS m1, dim1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY 2</pre> |
 
 {style="table-layout:auto"}
@@ -256,7 +256,7 @@ prod:all=> \dv
 
 #### 计算不同的值
 
-由于 Customer Journey Analytics 工作方式的基本特性，您可以获得准确的不同计数的唯一维度是 `adobe_personid` 维度。以下SQL语句 `SELECT COUNT(DISTINCT adobe_personid)` 或 `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` 返回默认人员量度的值，该量度是不同人员的计数。 对于其他维度，返回近似的非重复计数。
+由于 Customer Journey Analytics 工作方式的基本特性，您可以获得准确的不同计数的唯一维度是 `adobe_personid` 维度。以下SQL语句`SELECT COUNT(DISTINCT adobe_personid)`或`SELECT APPROX_COUNT_DISTINCT(adobe_personid)`返回默认人员量度的值，该量度是不同人员的计数。 对于其他维度，返回近似的非重复计数。
 
 #### 条件量度
 
@@ -274,7 +274,7 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 
 #### 内联计算
 
-您可以将其他数学应用于中的量度表达式 `SELECT`. 可以使用此数学，而不是在计算量度中定义数学。 下表列出了支持的表达式的类型。
+您可以对`SELECT`中的量度表达式应用附加的数学公式。 可以使用此数学，而不是在计算量度中定义数学。 下表列出了支持的表达式的类型。
 
 | 运算符或函数 | 详细信息 |
 |---|---|
@@ -302,19 +302,19 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 
 #### 日期范围
 
-此 `daterange` 特殊列的工作方式类似于 `timestamp`；但筛选时间限制为全天。 `daterange` 也是可选的，并具有与 `timestamp` 相同的范围默认值。
+`daterange`特殊列的工作方式与`timestamp`类似；但筛选限制为全天。 `daterange` 也是可选的，并具有与 `timestamp` 相同的范围默认值。
 `daterange` 字段也可以在日期/时间函数中用于解析或截断事件日期。
 
  `daterangeName` 特殊列可用于使用命名的日期范围（例如 `Last Quarter`）来过滤查询。
 
 >[!NOTE]
 >
->Power BI不支持 `daterange` 小于一天的量度（小时、30分钟、5分钟等）。
+>Power BI不支持少于一天的`daterange`指标（小时、30分钟、5分钟等）。
 
 
 #### 筛选条件 ID
 
-`filterId` 特殊列是可选的，用于将外部定义的过滤器应用于查询。将外部定义的过滤器应用于查询类似于将过滤器拖动到 Workspace 中的面板上。可以使用多个筛选器ID `AND` — 他们。
+`filterId` 特殊列是可选的，用于将外部定义的过滤器应用于查询。将外部定义的过滤器应用于查询类似于将过滤器拖动到 Workspace 中的面板上。`AND`可以使用多个筛选器ID。
 
 除了 `filterId`，您可以使用 `filterName` 来使用筛选条件的名称而不是 ID。
 

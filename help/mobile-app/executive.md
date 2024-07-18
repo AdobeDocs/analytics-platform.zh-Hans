@@ -41,19 +41,19 @@ ht-degree: 75%
 
 **对于 iOS 上的执行用户：**
 
-单击以下链接(此链接也可在Customer Journey Analytics下的链接中使用) **[!UICONTROL 工具]** > **[!UICONTROL Analytics功能板（移动应用程序）]**)并按照提示下载、安装和打开应用程序：
+单击以下链接(也可在Customer Journey Analytics中的&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Analytics功能板（移动应用程序）]**&#x200B;下找到该链接)，然后按照提示下载、安装和打开应用程序：
 
 [iOS 链接](https://apple.co/2zXq0aN)
 
 **对于 Android 上的执行用户：**
 
-单击以下链接(此链接也可在Customer Journey Analytics下的链接中使用) **[!UICONTROL 工具]** > **[!UICONTROL Analytics功能板（移动应用程序）]**)并按照提示下载、安装和打开应用程序：
+单击以下链接(也可在Customer Journey Analytics中的&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Analytics功能板（移动应用程序）]**&#x200B;下找到该链接)，然后按照提示下载、安装和打开应用程序：
 
 [Android 链接](https://bit.ly/2LM38Oo)
 
 下载并安装完毕后，执行用户可以使用其现有的Customer Journey Analytics凭据登录应用程序。
 
-![Customer Journey Analytics应用程序欢迎屏幕](assets/welcome.png)
+![Customer Journey Analytics应用欢迎屏幕](assets/welcome.png)
 
 ## 使用功能板 {#use-dashboards}
 
@@ -115,7 +115,7 @@ ht-degree: 75%
 
    * 根据点按的时间间隔（**日**、**周**、**月**&#x200B;或&#x200B;**年**），您将看到两个日期范围选项，即当前时间范围或紧随其前的时间范围。点按这两个选项之一，以选择第一个范围。在&#x200B;**[!UICONTROL 比较对象]**&#x200B;列表下，点按其中显示的一个选项，以将此时间段的数据与您选择的第一个日期范围进行比较。点按屏幕右上角的&#x200B;**[!UICONTROL 完成]**。**[!UICONTROL 日期范围]**&#x200B;字段和记分卡图块会更新以显示您选择的新范围中的新比较数据。
 
-1. 要将区段过滤器应用于记分卡，请点按过滤器下拉列表，然后选择由策划人配置的区段。 [过滤器](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans) 在应用程序中的运行方式与在Workspace中的运行方式相同。
+1. 要将区段过滤器应用于记分卡，请点按过滤器下拉列表，然后选择由策划人配置的区段。 应用程序中的[筛选器](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans)的工作方式与在Workspace中相同。
 
    ![区段过滤器](assets/segment_filter.png)
 

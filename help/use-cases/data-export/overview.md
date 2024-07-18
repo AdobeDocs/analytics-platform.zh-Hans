@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 简介
 
-Adobe Analytics和Customer Journey Analytics之间的独特区别之一与归因和会话化数据的处理有关。 请参阅 [跨Adobe Analytics和Customer Journey Analytics比较数据处理](/help/getting-started/aa-vs-cja/data-processing-comparisons.md) 以了解更多信息。
+Adobe Analytics和Customer Journey Analytics之间的独特区别之一与归因和会话化数据的处理有关。 有关详细信息，请参阅[跨Adobe Analytics和Customer Journey Analytics比较数据处理](/help/getting-started/aa-vs-cja/data-processing-comparisons.md)。
 
 ### Adobe Analytics：收集时间归因和会话化。
 
@@ -38,7 +38,7 @@ Adobe Analytics和Customer Journey Analytics之间的独特区别之一与归因
 
 在Customer Journey Analytics中，事件未按顺序收集，并且使用了人员ID而不是设备ID，从而允许Customer Journey Analytics在报告时更新归因和会话处理。 此类型的数据收集引入了灵活性，例如：
 
-* 拼接可以 _重播_ 每日或每周发送数据，将匿名事件与已知事件关联。 请参阅 [拼接](../../stitching/overview.md) 以了解更多信息。
+* 拼接可以每天或每周&#x200B;_重播_&#x200B;数据，从而将匿名事件与已知事件相关联。 有关详细信息，请参阅[拼接](../../stitching/overview.md)。
 * 会话和保留值每次都会更改
    * 收集新数据或
    * 拼接可将事件添加到人员的历史记录中。
@@ -73,7 +73,7 @@ Adobe Analytics和Customer Journey Analytics之间的独特区别之一与归因
 
 | 数据导出用例 | Experience Platform和Customer Journey Analytics功能 |
 |---|---|
-| **数据备份**<br/>&#x200B;出于法规遵从性或管理法规目的，保留数字数据的完整拷贝。 | **Experience Platform**： [**导出数据集**](export-datasets.md)<br/>&#x200B;按计划或临时将Experience Platform收集的数据直接导出到云目标。<br/>*目前有限版本，预计2024年6月针对Customer Journey Analytics客户的完整版本。* |
-| **数据验证**<br/>&#x200B;评估点击流数据的数据收集准确性。 | **Experience Platform**： [**查询服务(数据Distiller)和导出数据集**](queryservice-export-datasets.md)<br/> Interactive PostgreSQL接口使用您喜爱的SQL工具执行临时SQL查询，以验证数据集中的数据。<br/><br/>**Customer Journey Analytics**： [**导出完整表**](export-full-table.md)<br/>&#x200B;验证应用了归因和会话化的CJA中已处理的数据。 |
-| **数据湖、Data Warehouse或BI工具**<br/>&#x200B;将数字数据纳入您自己的BI工具或数据湖以与其他数据集一起使用。 | **Customer Journey Analytics**： [**BI扩展**](bi-extension.md)<br/>&#x200B;将Customer Journey Analytics处理的指标添加到数据可视化工具(如Power BI)，并将其与自定义报表的附加数据相结合&#x200B;<br/><br/>**Experience Platform**： [**查询服务(数据Distiller)和导出数据集**](queryservice-export-datasets.md)<br>&#x200B;使用SQL生成要传送到云目标的自定义点击流数据。 |
-| **为AI/ML做好准备**<br/>&#x200B;使用Customer Journey Analytics数据增强人工智能/机器学习模型和任务。 | **Customer Journey Analytics**： [**导出完整表**](export-full-table.md)<br/>&#x200B;一次性或循环将Customer Journey Analytics处理的维度和量度导出到Cloud Destinations，包括计算量度和分段。<br/><br/>**Experience Platform**： [**查询服务(数据Distiller)和导出数据集**](queryservice-export-datasets.md)<br/>&#x200B;使用SQL生成自定义点击流数据以丰富AI/ML模型。 |
+| **数据备份**<br/>&#x200B;保留数字数据的完整副本，以供合规性或法规使用。 | **Experience Platform**： [**导出数据集**](export-datasets.md)<br/>&#x200B;按计划或临时将Experience Platform收集的数据直接导出到云目标。<br/>*目前限量发布，Customer Journey Analytics客户的完整发布预计在2024年6月发布。* |
+| **数据验证**<br/>&#x200B;评估点击流数据的数据收集准确性。 | **Experience Platform**： [**查询服务(Data Distiller)和导出数据集**](queryservice-export-datasets.md)<br/> Interactive PostgreSQL接口使用您喜爱的SQL工具执行临时SQL查询，以验证数据集中的数据。<br/><br/>**Customer Journey Analytics**： [**导出完整表**](export-full-table.md)<br/>&#x200B;验证应用了归因和会话化的CJA中已处理数据。 |
+| **数据湖、Data Warehouse或BI工具**<br/>&#x200B;将数字数据引入您自己的BI工具或数据湖，以便与其他数据集一起使用。 | **Customer Journey Analytics**： [**BI扩展**](bi-extension.md)<br/>&#x200B;将Customer Journey Analytics处理的指标添加到数据可视化Power BI中，并与自定义报表的其他数据相结合&#x200B;<br/><br/>**Experience Platform**： [**查询服务(数据Distiller)和导出数据集**](queryservice-export-datasets.md)<br>&#x200B;使用SQL生成自定义点击流数据以传送到Cloud目标。 |
+| **AI/ML准备就绪**<br/>&#x200B;使用Customer Journey Analytics数据增强人工智能/机器学习模型和任务。 | **Customer Journey Analytics**： [**导出完整表**](export-full-table.md)<br/>&#x200B;将Customer Journey Analytics处理的维度和量度一次性或循环导出到Cloud目标，包括计算量度和分段。<br/><br/>**Experience Platform**： [**查询服务(Data Distiller)和导出数据集**](queryservice-export-datasets.md)<br/>&#x200B;使用SQL生成自定义点击流数据以扩充AI/ML模型。 |

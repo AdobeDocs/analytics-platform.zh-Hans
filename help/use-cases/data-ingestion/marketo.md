@@ -1,5 +1,5 @@
 ---
-title: 将Marketo Engage数据摄取到Adobe Experience Platform并在Customer Journey Analytics中报告
+title: 将 Marketo Engage 数据收录到 Adobe Experience Platform 并在 Customer Journey Analytics 中报告
 description: 了解如何将Marketo Engage数据引入Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Use Cases
@@ -8,11 +8,11 @@ role: Admin
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '393'
-ht-degree: 57%
+ht-degree: 64%
 
 ---
 
-# 将Marketo Engage数据摄取到Adobe Experience Platform并在Customer Journey Analytics中报告
+# 将 Marketo Engage 数据收录到 Adobe Experience Platform 并在 Customer Journey Analytics 中报告
 
 您可以利用Adobe Experience Platform (Adobe Experience Platform)中新提供的Marketo Engage数据集，为B2B营销人员提供有价值的分析和报表解决方案。 然后在Adobe Customer Journey Analytics中报告这些数据集。
 
@@ -26,7 +26,7 @@ ht-degree: 57%
 
 ## 步骤3：在Customer Journey Analytics中设置与此数据集的连接
 
-为了报告Experience Platform数据集，您必须首先在Experience Platform和Customer Journey Analytics中的数据集之间建立连接。 有关详细信息，请参阅 [创建或编辑连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans).
+为了报告Experience Platform数据集，您必须首先在Experience Platform和Customer Journey Analytics中的数据集之间建立连接。 有关详细信息[创建或编辑连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans)，请参阅。
 
 ## 步骤 4：创建一个或多个数据视图
 
@@ -40,12 +40,12 @@ ht-degree: 57%
 
 1. 为网页视图创建一个[过滤器](/help/components/filters/create-filters.md)，如下所示：事件类型 = web.webpagedetails.pageViews :
 
-   ![显示事件和事件类型的定义窗口](../assets/marketo-filter.png)
+   显示事件和事件类型的![定义窗口](../assets/marketo-filter.png)
 
 1. 在自由格式表中，拉入您创建的过滤器“网页查看次数”，然后拉入月份日期范围。 这样，您可以每月通过潜在客户访问网页：
 
-   ![自由格式表，其中按月份显示事件。](../assets/marketo-freeform.png)
+   ![自由格式表，按月份显示事件。](../assets/marketo-freeform.png)
 
 1. 或者拉入以下维度：人员密钥或工作电子邮件地址。 这将为您提供每个潜在客户的网页访问：
 
-   ![自由格式表，其中显示了事件和workEmail.Address及网页视图。](../assets/marketo-freeform2.png)
+   ![自由格式表，显示事件和workEmail.Address及网页视图。](../assets/marketo-freeform2.png)

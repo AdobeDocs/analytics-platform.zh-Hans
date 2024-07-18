@@ -14,7 +14,7 @@ ht-degree: 7%
 
 # Customer Journey Analytics护栏
 
-本文档对Customer Journey Analytics的各个组件进行了限制。 有关护栏、范围参数和权限，请参阅 [Customer Journey Analytics的产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/customer-journey-analytics.html) 或 [Adobe Analytics加载项的产品描述：Customer Journey Analytics](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html).
+本文档对Customer Journey Analytics的各个组件进行了限制。 有关护栏、范围参数和权利，请参阅[Customer Journey Analytics](https://helpx.adobe.com/cn/legal/product-descriptions/customer-journey-analytics.html)的产品描述或[Adobe Analytics加载项的产品描述：Customer Journey Analytics](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html)。
 
 ## 限制类型
 
@@ -50,8 +50,8 @@ ht-degree: 7%
 |---|--:|---|---|
 | 每个表的可见行数 | 400 | 系统强制的护栏 | Analysis Workspace项目中任何自由格式表中的最大可见行数。 |
 | 每个表的可导出行数 | 50,000 | 系统强制的护栏 | 每个维度可导出的最大行数。 |
-| 每个项目的面板数 | 15 | 系统强制的护栏 | 最大数量 [面板](../analysis-workspace/home.md#panels) 每个项目。 |
-| 每个面板的可视化图表 | 25 | 系统强制的护栏 | 最大数量 [可视化图表](../analysis-workspace/home.md#visualizations) 每个面板。 |
+| 每个项目的面板数 | 15 | 系统强制的护栏 | 每个项目的最大[面板](../analysis-workspace/home.md#panels)数。 |
+| 每个面板的可视化图表 | 25 | 系统强制的护栏 | 每个面板的[可视化图表的最大数量](../analysis-workspace/home.md#visualizations)。 |
 | 每个自由格式表的派生字段 | 5 | 系统强制的护栏 | 单个自由格式表中不同派生字段的最大数量。 |
 
 {style="table-layout:auto"}
@@ -72,16 +72,16 @@ ht-degree: 7%
 
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
-| 受众筛选器 | 20 | 系统强制的护栏 | 最大数量 [过滤器](../components/filters/filters-overview.md) 每个受众。 |
+| 受众筛选器 | 20 | 系统强制的护栏 | 每个受众最多[个过滤器](../components/filters/filters-overview.md)。 |
 | 受众身份数量 | 2000万 | 系统强制的护栏 | 每个受众的最大身份数。 |
-| 受众刷新频率 | 4 | 系统强制的护栏 | 最大频率（小时an） [受众](../components/audiences/audiences-overview.md) 可能更新。 |
+| 受众刷新频率 | 4 | 系统强制的护栏 | 可以刷新[受众](../components/audiences/audiences-overview.md)的最大频率（小时）。 |
 | 受众刷新回顾窗口 | 90 | 系统强制的护栏 | 刷新回顾时间范围的最大天数。 |
 | 刷新受众过期日期 | 13 | 系统强制的护栏 | 受众从创建日期起停止刷新的最大月数。 客户可以将其延长13个月。 |
 | 刷新受众的数量 | 75， 150 | 系统强制的护栏 | 刷新受众的最大数量，该值会因Customer Journey Analytics包而异（请参阅产品描述）。 |
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [Real-time Customer Data Platform护栏](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hans).
+另请参阅Experience Platform[Real-time Customer Data Platform护栏](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hans)。
 
 
 ## 自动数据集过期
@@ -99,16 +99,16 @@ ht-degree: 7%
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
 | 项目 | 50,000 | 系统强制的护栏 | 组织的最大项目数。 |
-| 数据视图 | 2,000 | 系统强制的护栏 | 最大数量 [数据视图](../data-views/data-views.md) 对于组织。 |
+| 数据视图 | 2,000 | 系统强制的护栏 | 组织的最大[数据视图](../data-views/data-views.md)数。 |
 | 数据视图 | 50 | 系统强制的护栏 | 连接的最大数据视图数 |
-| 数据集 | 100 | 系统强制的护栏 | 最大数量 [数据集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=zh_Hans) 每个连接。 |
-| 连接 | 1000 | 系统强制的护栏 | 最大数量 [连接](../connections/overview.md) 对于组织。 |
+| 数据集 | 100 | 系统强制的护栏 | 每个连接最多[个数据集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=zh_Hans)。 |
+| 连接 | 1000 | 系统强制的护栏 | 组织的最大[连接数](../connections/overview.md)。 |
 | 连接标题 | 500 | 系统强制的护栏 | 连接标题的最大字符数。 |
 | 量度 | 5,000 | 系统强制的护栏 | 数据视图中的最大量度数。 |
 | 维度 | 5,000 | 系统强制的护栏 | 数据视图中的最大维度数。 |
 | 批注标题 | 100 | 系统强制的护栏 | 批注标题的最大字符数。 |
 | 注释描述 | 250 | 系统强制的护栏 | 注释描述的最大字符数。 |
-| 架构字段 | 10 | 系统强制的护栏 | 为定义规则时架构字段的最大数量（不包括标准字段） [派生字段](../data-views/derived-fields/derived-fields.md). |
+| 架构字段 | 10 | 系统强制的护栏 | 定义[派生字段](../data-views/derived-fields/derived-fields.md)的规则时架构字段（不包括标准字段）的最大数量。 |
 | 查找/配置文件字段 | 3 | 系统强制的护栏 | 定义派生字段的规则时，架构字段（不包括标准字段）最大数量内的查找或配置文件架构字段的最大数量。 |
 | 派生字段 | 100 - 500 | 系统强制的护栏 | 每个连接派生字段的最大数量；该值因Customer Journey Analytics包而异（请参阅产品描述）。 |
 
@@ -126,7 +126,7 @@ ht-degree: 7%
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [数据引入的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
+另请参阅Experience Platform[数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
 
 
 ## 目标数据导出
@@ -138,7 +138,7 @@ ht-degree: 7%
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [数据集导出护栏](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
+另请参阅Experience Platform[数据集导出护栏](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## 数据登陆区
@@ -162,7 +162,7 @@ ht-degree: 7%
 {style="table-layout:auto"}
 
 
-## 基于图形的拼合
+## 基于图形的拼接
 
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
@@ -203,7 +203,7 @@ ht-degree: 7%
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
 | 工作簿文件大小 | 5 | 系统强制的护栏 | 计划工作簿的最大文件大小（以MB为单位）。 |
-| 数据块 | 1000 | 系统强制的护栏 | 最大数量 [个数据块](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html) 每个工作簿。 |
+| 数据块 | 1000 | 系统强制的护栏 | 每个工作簿[个数据块](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html)的最大数量。 |
 | 量度 | 20 | 系统强制的护栏 | 每个数据块的最大量度数。 |
 | 日期范围 | 13 | 系统强制的护栏 | 日期范围可跨每个数据块的最大月数。 |
 | 行 | 50,000 | 系统强制的护栏 | 每个数据块的最大行数。 |
@@ -226,7 +226,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 请参阅Experience Platform [数据引入的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) 以了解更多信息。
+>以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 有关详细信息，请参阅数据摄取Experience Platform[护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
 
 | 数据流 | 预期延迟 |
 |---|---|
@@ -236,9 +236,9 @@ ht-degree: 7%
 | 数据从Edge Network摄取到数据湖或流式摄取 | &lt; 60分钟 |
 | 从Adobe Analytics Source Connector将数据摄取到数据湖 | &lt; 2.25小时 |
 | 数据从数据湖摄取到Customer Journey Analytics | &lt; 90分钟 |
-| 拼合(可选功能，请参阅 [拼接概述](../stitching/overview.md) 了解更多信息) | &lt; 3.25小时 |
+| 拼接（可选功能；有关详细信息，请参阅[拼接概述](../stitching/overview.md)） | &lt; 3.25小时 |
 | 少于100亿个事件的Adobe Analytics Source Connector回填（最多13个月的历史数据） | &lt; 4周 |
 | 将受众发布到实时客户个人资料，包括自动创建流区段，并允许区段准备好接收数据。 | ≈ 60分钟 |
-| 刷新受众的频率 | 一次性刷新：少于5分钟的延迟。<br/>每4小时、每天、每周、每月刷新一次（延迟与刷新率密切相关）。 |
+| 刷新受众的频率 | 一次性刷新：少于5分钟的延迟。<br/>每4小时刷新一次，每天、每周、每月（延迟与刷新率密切相关）。 |
 
 {style="table-layout:auto"}

@@ -1,6 +1,6 @@
 ---
 description: 对于非时间维度显示前 5 个值（对于时间维度显示前 15 个值）。
-title: 如何在Customer Journey Analytics工作区中预览维度
+title: 如何在Customer Journey AnalyticsWorkspace中预览维度
 feature: Dimensions
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
 role: User

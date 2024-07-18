@@ -21,7 +21,7 @@ ht-degree: 74%
 
 ## 编辑[!UICONTROL 列设置] {#edit-column-settings}
 
-要访问 [!UICONTROL 列设置]，将自由格式表拖到项目中，然后单击设置图标 ![列设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) 在列标题中。
+要访问[!UICONTROL 列设置]，请将自由格式表拖到项目中，然后单击列标题中的设置图标![列设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg)。
 
 <img src="./assets/column-settings.png" alt="显示“总计”单元格、“表”单元格和“表”单元格预览的列设置。" width="50%" />
 
@@ -56,29 +56,29 @@ ht-degree: 74%
 
 ## 使用非默认的属性模型 {#attribution}
 
-允许您覆盖中设置的默认归因模型 [数据视图](/help/data-views/component-settings/attribution.md).
+允许您覆盖[数据视图](/help/data-views/component-settings/attribution.md)中设置的默认归因模型。
 
 >[!NOTE]
 >
 >将组件的归因更新为非默认归因模型时，请考虑以下事项：
 >
->* **在报表中将组件与配合使用时 *单个维度*：** 当使用非默认归因模型时，组件的归因会忽略分配模型。
+>* **在具有&#x200B;*单个维度*：**&#x200B;的报表中使用组件时，如果使用非默认归因模型，组件的归因将忽略分配模型。
 >
->* **在报表中将组件与配合使用时 *多个维度*：** 当使用非默认归因模型时，组件的归因将保留分配模型。
+>* **在具有&#x200B;*多个维度*：**&#x200B;的报表中使用组件时，如果使用了非默认归因模型，则组件的归因将保留分配模型。
 >
->   仅当出现以下情况时，多个维度才可用 [将数据导出到云](/help/analysis-workspace/export/export-cloud.md).
+>   仅当[将数据导出到云](/help/analysis-workspace/export/export-cloud.md)时，多个维度才可用。
 >
-> 有关分配的更多信息，请参阅 [持久性组件设置](/help/data-views/component-settings/persistence.md).
+> 有关分配的更多信息，请参阅[持久性组件设置](/help/data-views/component-settings/persistence.md)。
 
 要对Analysis Workspace中的量度使用非默认归因模型，请执行以下操作：
 
 1. 单击自由格式表列中量度上的“设置”（齿轮）图标。
 
-   ![列设置选项高亮显示数据设置选项：使用非默认归因模式。](assets/attribution-checkbox.png)
+   ![列设置选项突出显示“数据设置”选项：使用非默认归因模式。](assets/attribution-checkbox.png)
 
 2. 在&#x200B;**[!UICONTROL 数据设置]**&#x200B;下，选中&#x200B;**[!UICONTROL 使用非默认归因模型]**。有关不同归因模型的更多信息，请参阅[归因模型](/help/data-views/component-settings/attribution.md)。
 
-   ![“列归因模型”选项显示“线性”选定项。](assets/attribution-select.png)
+   ![显示线性选择的列归因模型选项。](assets/attribution-select.png)
 
 >[!MORELIKETHIS]
 >

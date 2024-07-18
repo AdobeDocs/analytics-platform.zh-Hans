@@ -13,7 +13,7 @@ ht-degree: 50%
 
 # Customer Journey Analytics受众发布概述
 
-您现在可以创建在Customer Journey Analytics中发现的受众，并将其发布到 [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans) 在Adobe Experience Platform中进行客户定位和个性化。
+您现在可以在Adobe Experience Platform中创建并将在Customer Journey Analytics中发现的受众发布到[实时客户个人资料](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans)，以实现客户定位和个性化。
 
 通过发布受众，可以提供一种清晰的方式来激活在Customer Journey Analytics中找到的分析并对其执行操作。 这些行动可能包括：
 
@@ -31,7 +31,7 @@ ht-degree: 50%
 
 **过滤器**：一组规则，通过某个时段的一组数据评估这组规则时会生成一个数据子集。与其他支持服务结合使用时，可在创建受众的过程中使用过滤器。筛选器是在Customer Journey Analytics中定义和维护的。
 
-**过滤器** 对比 **区段**：Customer Journey Analytics不使用“区段”的概念，而是使用“过滤器”。 虽然两者都是一组可能包含相似逻辑的规则，但它们会生成不同的输出。过滤器用于缩小数据集以用于分析用途。区段用于生成可用于激活的身份列表。区段会在实时客户档案中生成受众，而（仅凭）过滤器不会。Customer Journey Analytics受众发布是我们使用Customer Journey Analytics过滤器创建可被实时客户档案使用的受众的过程。
+**筛选器**&#x200B;与&#x200B;**区段**：Customer Journey Analytics不使用“区段”的概念，而是使用“筛选器”。 虽然两者都是一组可能包含相似逻辑的规则，但它们会生成不同的输出。过滤器用于缩小数据集以用于分析用途。区段用于生成可用于激活的身份列表。区段会在实时客户档案中生成受众，而（仅凭）过滤器不会。Customer Journey Analytics受众发布是我们使用Customer Journey Analytics过滤器创建可被实时客户档案使用的受众的过程。
 
 ## 权限
 

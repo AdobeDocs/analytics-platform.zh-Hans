@@ -1,20 +1,20 @@
 ---
 description: 如何向Customer Journey Analytics文档提问
-title: Adobe Customer Journey Analytics的人工智能助手
+title: Adobe Customer Journey Analytics 的 AI 助手
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 source-git-commit: 3ed6eabae8607a10920c8917a818f0497b337893
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# Adobe Customer Journey Analytics的人工智能助手
+# Adobe Customer Journey Analytics 的 AI 助手
 
-AI助手是一种对话式体验，允许从业人员快速执行任务，无论是理解概念、排除问题还是搜索信息。 它还使非专家能够执行专家任务，并提高整体工作质量。
+AI助手是一种对话式体验，允许从业人员快速执行任务，无论是理解概念、排除问题还是搜索信息。 它还允许非专家执行专家任务并提高整体工作质量。
 
 对Customer Journey AnalyticsAI助手进行Adobe Experience League文档培训。 当被问到问题时，AI Assistant会给出一个有助于快速学习的有用答案。
 
@@ -37,7 +37,7 @@ Customer Journey Analytics范围之外的问题，例如有关Adobe Target和Ado
 | 产品知识 | 示例 |
 | --- | --- |
 | 点式学习 | <ul><li>Adobe Analytics与Customer Journey Analytics之间有何区别？</li><li>如何构建计算量度？</li></ul> |
-| 打开发现 | <ul><li>如何导出工作区项目？</li><li>如何查找重复的工作区组件？</li></ul> |
+| 打开发现 | <ul><li>如何导出Workspace项目？</li><li>如何查找重复的Workspace组件？</li></ul> |
 | 故障排除 | <ul><li>数据进入CJA需要多长时间？</li><li>Customer Journey Analytics连接中可以包含多少个派生字段？</li></ul> |
 
 ## 功能访问
@@ -46,10 +46,10 @@ Customer Journey Analytics范围之外的问题，例如有关Adobe Target和Ado
 
 * **解决方案访问**： AI助手在Customer Journey Analytics中可用，但在Adobe Analytics中不可用。 Adobe Experience Platform、Adobe Journey Optimizer、Adobe Real-Time CDP及其他Experience Platform应用程序中也提供了此功能。
 
-* **合同访问**：如果您无法使用AI助手，请联系贵组织的管理员或Adobe客户代表。 贵公司必须同意某些与GenAI相关的法律条款，贵组织才能使用AI Assistant。
+* **合同访问权限**：如果您无法使用AI助手，请联系您组织的管理员或Adobe客户代表。 贵公司必须同意某些与GenAI相关的法律条款，贵组织才能使用AI Assistant。
 
-* **权限**：在 [!UICONTROL Adobe Admin Console]， [!UICONTROL 报告工具] “AI助手：产品知识”权限确定对此工具的访问权限。 A [产品配置文件管理员](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) 需要在Admin Console中执行以下步骤：
-   1. 导航到 [!UICONTROL Admin Console] > [!UICONTROL 产品和服务] > [!UICONTROL Customer Journey Analytics] > [!UICONTROL 产品配置文件] > [!UICONTROL 权限] > [!UICONTROL 编辑报告工具].
+* **权限**：在[!UICONTROL Adobe Admin Console]中，[!UICONTROL 报表工具]“AI助手：产品知识”权限确定对此工具的访问权限。 [产品配置文件管理员](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)需要在Admin Console中执行以下步骤：
+   1. 导航到[!UICONTROL Admin Console] > [!UICONTROL 产品和服务] > [!UICONTROL Customer Journey Analytics] > [!UICONTROL 产品配置文件] > [!UICONTROL 权限] > [!UICONTROL 编辑报表工具]。
    1. 添加“AI助手：产品知识”。
       ![添加权限](assets/image.png)
 
@@ -65,7 +65,7 @@ Customer Journey Analytics范围之外的问题，例如有关Adobe Target和Ado
 
    ![问题框](assets/ai-asst2.png)
 
-1. （可选）要显示源，请单击 **[!UICONTROL 显示源]**，并显示通知答案的一个或多个文档源。
+1. （可选）要显示源，请单击&#x200B;**[!UICONTROL 显示源]**，此时将显示通知答案的一个或多个文档源。
 
 1. （可选）您还可以对任何给定答案的效用提供大拇指支持或大拇指反对的投票。
 

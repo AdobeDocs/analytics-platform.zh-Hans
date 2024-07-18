@@ -7,7 +7,7 @@ role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 86%
+ht-degree: 93%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 86%
 
 ## 配置流量可视化图表
 
-有关如何配置流量可视化的信息，请参阅 [配置流量可视化](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
+有关如何配置流量可视化图表的信息，请参阅[配置流量可视化图表](/help/analysis-workspace/visualizations/c-flow/create-flow.md)。
 
 ## 将流量图导出为项目 .CSV 文件的一部分 {#section_BACD2639A0FC4C49A75398F7D0363D9D}
 

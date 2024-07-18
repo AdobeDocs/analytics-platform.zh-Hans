@@ -23,7 +23,7 @@ ht-degree: 80%
 1. 将&#x200B;**[!UICONTROL 直方图]**&#x200B;拖到面板中。
 1. 选择要拖到直方图可视化中的量度，并单击&#x200B;**[!UICONTROL 生成]**。
 
-![空白直方图面板显示“将量度放置到下方”字段。](assets/histogram.png)
+![空白直方图面板显示“将指标拖放到字段下”字段。](assets/histogram.png)
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ ht-degree: 80%
 
 要查看或更改直方图图表的数据源，请单击直方图标题旁边的点，以转到&#x200B;**[!UICONTROL 数据源设置]** > **[!UICONTROL 显示数据源]**。
 
-![已选中“显示数据源”和“锁定选择”的“数据源设置”选项。](assets/manage-data-source.png)
+![已选择“显示数据Source”和“锁定选择”的“数据Source设置”选项。](assets/manage-data-source.png)
 
 表格中显示的预置过滤器是内部过滤器，将不会在过滤器选择器中显示。单击过滤器名称旁边的“i”图标，然后单击&#x200B;**[!UICONTROL 设为公用]**&#x200B;以将过滤器设为公用。
 
@@ -65,4 +65,4 @@ ht-degree: 80%
 
 ## 博客帖子
 
-请参阅这篇博客帖子，了解有关以下内容的信息： [使用直方图识别意外的数据值](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168).
+请参阅这篇博客文章，了解有关[使用直方图识别意外数据值](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168)的信息。

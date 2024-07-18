@@ -19,13 +19,13 @@ ht-degree: 67%
 
 对于可添加的步骤数量或可使用的维度数量，没有任何限制。
 
-您可以对eVar进行路径分析，包括推销eVar和 [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) （每个事件可以有多个值的变量，例如products、listVar、促销eVar和列表属性）。 例如，假设某个用户在一个页面上查看鞋和衬衫，而在另一个页面上查看衬衫和袜子。鞋的下一个产品流量报表将是衬衫和袜子，而不是衬衫。
+您可以对eVar执行路径分析，包括推销eVar和[listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html)（每个事件可以有多个值的变量，如产品、listVars、推销eVar和列表属性）。 例如，假设某个用户在一个页面上查看鞋和衬衫，而在另一个页面上查看衬衫和袜子。鞋的下一个产品流量报表将是衬衫和袜子，而不是衬衫。
 
 1. 将“[!UICONTROL 流失]”可视化从“可视化”下拉菜单中拖动到“[!UICONTROL 自由格式表]”中。
 
 1. 将页面维度拖动到自由格式表中，然后从此处将某个页面（在本例中为 Home — JJEsquire）拖动到&#x200B;**[!UICONTROL 添加接触点]**&#x200B;字段，作为第一个接触点。
 
-   ![显示所有访问次数下拉列表，其中显示了拖到添加接触点字段的JJEsquire。](assets/fallout1.png)
+   ![显示JJEsquire的“所有访问”下拉列表已拖到“添加接触点”字段。](assets/fallout1.png)
 
    将鼠标悬停在某个接触点上可查看流失和与该级别有关的其他信息，例如接触点的名称、该接触点的人员数，并可查看该接触点的成功率（以及将成功率与其他接触点进行比较）。
 
@@ -41,11 +41,11 @@ ht-degree: 67%
    >
    >多个过滤器通过 AND 相连，而多个项（如维度项）和量度通过 OR 相连。
 
-   ![已突出显示“页面：CamerRoll”或“页面：相机接触点”。](assets/multiple_obj_touchpoint.png)
+   ![Page：CamerRoll或Page：摄像头接触点已突出显示。](assets/multiple_obj_touchpoint.png)
 
-1. 您还可以 **将单个接触点限制为下一个事件** （而非“最终”）。 每个接触点下方都有一个选择器，其中包含“最终路径”和“下一次点击”选项，如下所示：
+1. 您还可以&#x200B;**将路径中的各个接触点限制为下一个事件**（而不是“最终”）。 每个接触点下方都有一个选择器，其中包含“最终路径”和“下一次点击”选项，如下所示：
 
-   ![显示“最终路径”选项的“所有访问”视图会突出显示。 ](assets/next-hit-eventually.png)
+   ![显示“最终路径”选项的“所有访问”视图突出显示。](assets/next-hit-eventually.png)
 
 <table id="table_A91D99D9364B41929CC5A5BC907E8985"> 
  <tbody> 

@@ -18,22 +18,22 @@ ht-degree: 61%
 
 ## 实施步骤
 
-![实施步骤的流程，如本节所述。](../assets/cca-architecture.png)
+![此部分所述的实施步骤流程。](../assets/cca-architecture.png)
 
 1. 为要引入的数据[创建架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans)。
 1. 为要引入的数据[创建数据集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html)。
 1. [将数据摄取到Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html)：
-   1. 基于事件的数据 ![事件](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) 通过Edge Network或Analytics源连接器从网站或移动应用程序访问。
-   2. 配置文件数据 ![个人资料](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) （例如，从CRM系统、呼叫中心应用程序、忠诚度应用程序访问）。
-   3. 查找数据 ![查找](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) （例如，产品名称、产品信息系统中的类别）。
+   1. 通过Event或Analytics源连接器从网站或移动设备应用程序获取基于Edge Network的数据![event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg)。
+   2. 配置文件数据![配置文件](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg)（例如，来自CRM系统、呼叫中心应用程序、忠诚度应用程序）。
+   3. 查找数据![查找](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)（例如，产品信息系统中的产品名称和类别）。
 
-1. 跨数据集使用通用命名空间ID。 使用 [拼接](../../stitching/overview.md) 提升任何基于事件的数据集 ![数据刷新](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataRefresh_18_N.svg) 与每行提供通用ID有关。 注意，Customer Journey Analytics 当前不使用 Experience Platform 配置文件或标识服务进行拼接。
+1. 跨数据集使用通用命名空间ID。 使用[拼接](../../stitching/overview.md)提升任何基于事件的数据集![数据刷新](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataRefresh_18_N.svg)，以便在每行提供通用ID。 注意，Customer Journey Analytics 当前不使用 Experience Platform 配置文件或标识服务进行拼接。
 1. 执行任何自定义数据准备，以确保将一个在时序数据集间公用的键引入 Customer Journey Analytics。
 1. 为查找数据给予一个主 ID，后者可连接到事件数据中的某个字段。在许可中计为行。
 1. 为配置文件数据设置同一主 ID 作为事件数据的主 ID。
-1. [创建连接](../../connections/overview.md) 将相关数据集从Experience Platform摄取到Customer Journey Analytics。
+1. [创建连接](../../connections/overview.md)以将相关数据集从Experience Platform摄取到Customer Journey Analytics。
 1. 在连接上[创建数据视图](/help/data-views/create-dataview.md)以选择要包括在该视图中的特定维度和指标。还在该数据视图中配置归因和分配设置。在报告时计算这些设置。
-1. [创建项目](/help/analysis-workspace/home.md) 在Analysis Workspace中配置功能板和报表。
+1. [创建项目](/help/analysis-workspace/home.md)以在Analysis Workspace中配置功能板和报表。
 
 ## 注意事项
 

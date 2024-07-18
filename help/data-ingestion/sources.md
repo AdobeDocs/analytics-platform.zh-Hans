@@ -51,25 +51,26 @@ ht-degree: 78%
 
 1. 在 Adobe Experience Platform UI 的左边栏中，选择[!UICONTROL 数据管理]中的&#x200B;**[!UICONTROL 模式]**。
 
-1. 选择 **[!UICONTROL 创建架构]**..
+1. 选择&#x200B;**[!UICONTROL 创建架构]**。
+.
 1. 在“创建模式”向导的“选择类”步骤中：
 
-   1. 选择 **[!UICONTROL 个人资料]**.
+   1. 选择&#x200B;**[!UICONTROL 个人资料]**。
 
-      ![在选择了Individual Profile的情况下创建架构窗口](./assets/create-pr-schema-wizard-step-1.png)
+      ![创建选择了个人配置文件的架构窗口](./assets/create-pr-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    Experience Event架构用于为 _行为_ 配置文件（如场景名称、要添加到购物车的按钮）的。 个人配置档案模式用于对个人配置档案&#x200B;_属性_（如姓名、电子邮件、性别）建模。
+      >    体验事件架构用于为配置文件的&#x200B;_行为_&#x200B;建模（如场景名称、要添加到购物车的按钮）。 个人配置档案模式用于对个人配置档案&#x200B;_属性_（如姓名、电子邮件、性别）建模。
 
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
 
-1. 在 [!UICONTROL 命名和审核步骤] 的 [!UICONTROL 创建架构] 向导：
+1. 在[!UICONTROL 创建架构]向导的[!UICONTROL 名称和审核步骤]中：
 
-   1. 输入 **[!UICONTROL 架构显示名称]** （可选）a **[!UICONTROL 描述]**.
+   1. 为您的架构输入&#x200B;**[!UICONTROL 架构显示名称]**&#x200B;和（可选）**[!UICONTROL 描述]**。
 
-      ![“创建架构”窗口，其中显示了用于命名架构的字段 ](./assets/create-pr-schema-wizard-step-2.png)
+      ![创建架构窗口，其中显示用于命名架构的字段](./assets/create-pr-schema-wizard-step-2.png)
 
    1. 选择&#x200B;**[!UICONTROL 完成]**。
 
@@ -77,7 +78,7 @@ ht-degree: 78%
 
    1. 在[!UICONTROL 字段组]中选择&#x200B;**[!UICONTROL + 添加]**。
 
-      ![显示添加字段组的“创建架构”窗口](./assets/add-field-group-button.png)
+      ![显示“添加”字段组的“创建架构”窗口](./assets/add-field-group-button.png)
 
       字段组是可重用的对象和属性集合，可让您轻松扩展模式。
 
@@ -174,15 +175,15 @@ ht-degree: 78%
 
 您可以从各种来源摄取数据。 以下只是众多可用源中的几个：
 
-- Adobe应用程序(源连接器包括 [Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics)， [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager)、等)
+- Adobe应用程序(源连接器包括[Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics)、[Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager)等)
 
-- 云存储(源连接器包括 [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3)， [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob)、等)
+- 云存储(源连接器包括[Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3)、[Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob)等)
 
-- 数据库(源连接器包括 [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)， [Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server)、等)
+- 数据库(源连接器包括[Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)、[Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server)等)
 
 要设置源连接器：
 
-1. 在Adobe Experience Platform中，选择 **[!UICONTROL 源]** 从 [!UICONTROL 连接] 在左边栏中。
+1. 在Adobe Experience Platform中，从左边栏中的[!UICONTROL CONNECTIONS]中选择&#x200B;**[!UICONTROL 源]**。
 
 1. 从可用源连接器列表中选择源连接器。
 
@@ -208,9 +209,9 @@ ht-degree: 78%
 
    1. 选择&#x200B;**[!UICONTROL 查看文档]**。
 
-请参阅 [从传统Adobe Analytics中摄取和使用数据](./analytics.md) 有关如何使用Adobe Analytics源连接器的信息。
+有关如何使用Adobe Analytics源连接器的信息，请参阅[从传统Adobe Analytics引入和使用数据](./analytics.md)。
 
-请参阅 [摄取和使用流数据](./streaming.md) 有关如何使用HTTP API源连接器的信息。
+有关如何使用HTTP API源连接器的信息，请参阅[摄取和使用流数据](./streaming.md)。
 
 请参阅[源连接器概述](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions)了解源连接器的概述，包括指向每个连接器更多信息的链接。
 
@@ -219,7 +220,7 @@ ht-degree: 78%
 
 要在 Customer Journey Analytics 中使用 Adobe Experience Platform 数据，您需要创建一个连接，其中包含因设置模式、数据集和工作流所产生的数据。
 
-通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告这些数据集，您必须首先在Adobe Experience Platform和工作区中的数据集之间建立连接。
+通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告这些数据集，您必须首先在Adobe Experience Platform和Workspace中的数据集之间建立连接。
 
 创建您的连接：
 
@@ -261,7 +262,7 @@ ht-degree: 78%
 
    1. 选择&#x200B;**[!UICONTROL 保存]**。
 
-创建之后 [连接](/help/connections/overview.md)，您可以执行各种管理任务，例如 [选择和组合数据集](/help/connections/combined-dataset.md)， [检查连接数据集的状态以及数据摄取的状态](/help/connections/manage-connections.md)，等等。
+创建[连接](/help/connections/overview.md)后，您可以执行各种管理任务，如[选择和组合数据集](/help/connections/combined-dataset.md)、[检查连接的数据集的状态以及数据摄取的状态](/help/connections/manage-connections.md)等等。
 
 ## 设置数据视图
 
@@ -322,7 +323,7 @@ Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分�
 
    ![工作区选择数据视图](./assets/cja-projects-3.png)
 
-5. 要创建您的第一个报表，请开始将维度和量度拖放到 [!UICONTROL 自由格式表] 在 [!UICONTROL 面板] . 例如，拖动 `Program Points Balance` 以及 `Page View` 作为量度和 `email` 作为维度，以快速查看访问过您的网站并已加入忠诚度计划收集忠诚度点的个人资料。
+5. 要创建您的第一个报告，请在[!UICONTROL 面板]中的[!UICONTROL 自由格式表]上开始拖放维度和量度。 例如，拖动 `Program Points Balance` 以及 `Page View` 作为量度和 `email` 作为维度，以快速查看访问过您的网站并已加入忠诚度计划收集忠诚度点的个人资料。
 
    ![工作区 – 第一份报告](./assets/cja-projects-5.png)
 

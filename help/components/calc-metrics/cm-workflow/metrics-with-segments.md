@@ -5,7 +5,7 @@ feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '528'
 ht-degree: 53%
 
 ---
@@ -26,31 +26,31 @@ ht-degree: 53%
 
 生成并保存名为“德国访客”的量度和名为“国际访客”的量度：
 
-1. 在计算量度生成器中创建一个名为“德国访客”的临时过滤器，其中“国家/地区”等于“德国”。 将“国家/地区”维度拖入“定义”画布并选择 [!UICONTROL **德国**] 作为值：
+1. 在计算量度生成器中创建一个名为“德国访客”的临时过滤器，其中“国家/地区”等于“德国”。 将“国家/地区”维度拖到“定义”画布中，并选择&#x200B;[!UICONTROL **Germany**]&#x200B;作为值：
 
-   ![显示国家/地区等于德国的临时筛选器](assets/segment-from-dimension.png)
+   显示国家/地区等于德国的![临时筛选器](assets/segment-from-dimension.png)
 
    >[!NOTE]
    >
-   >您也可以在 [筛选器生成器](/help/components/filters/create-filters.md)，但我们已通过在计算量度生成器中提供维度而简化了该工作流程。 “临时”表示该过滤器在 **[!UICONTROL 过滤器]** 左侧边栏中的列表。 但是，您可以将鼠标悬停在该列表旁边的“i”图标上，然后单击&#x200B;**[!UICONTROL 设为公用]**。
+   >也可在[筛选器生成器](/help/components/filters/create-filters.md)中这样做，但我们已通过在计算量度生成器中提供维度而简化了该工作流程。 “临时”表示该筛选器在左边栏的&#x200B;**[!UICONTROL 筛选器]**&#x200B;列表中不可见。 但是，您可以将鼠标悬停在该列表旁边的“i”图标上，然后单击&#x200B;**[!UICONTROL 设为公用]**。
 
 1. 将“德国”筛选器拖到“定义”画布中，并将“独特访客”量度拖动到其中：
 
-   ![德国与独特访客平等国家概述与定义](assets/german-visitors.png)
+   ![德国与独特访客相等的国家汇总和定义](assets/german-visitors.png)
 
-1. 选择 [!UICONTROL **保存**] 以保存计算指标。
+1. 选择&#x200B;[!UICONTROL **保存**]&#x200B;以保存计算量度。
 
 1. 在计算量度生成器中创建一个名为“国际访客”的临时过滤器，其中“国家/地区”不等于“德国”。
 
-   将“国家/地区”维度拖入“定义”画布，然后选择 [!UICONTROL **德国**] 作为值，然后选择 [!UICONTROL **不等于**] 作为运算符。
+   将“国家/地区”维度拖入“定义”画布，选择&#x200B;[!UICONTROL **Germany**]&#x200B;作为值，然后选择&#x200B;[!UICONTROL **does not equal**]&#x200B;作为运算符。
 
 1. 将独特访客指标拖动到其中。
 
-1. 选择 [!UICONTROL **保存**] 以保存计算指标。
+1. 选择&#x200B;[!UICONTROL **保存**]&#x200B;以保存计算量度。
 
 1. 在 Analysis Workspace 中，将&#x200B;**[!UICONTROL 页面]**&#x200B;维度拖动到自由格式表中，并将两个新的计算指标拖动到顶部且使它们彼此相邻：
 
-   ![显示德国访客和国际访客的“页面”维度的自由格式表](assets/workspace-pages.png)
+   ![显示德国访客和国际访客页面维度的自由格式表](assets/workspace-pages.png)
 
 以下是一段视频概述：
 
@@ -67,4 +67,4 @@ ht-degree: 53%
 
 1. 将此指标应用于您的项目：
 
-   ![包含页面和德国访客总数的百分比的自由格式表](assets/cm_percent_total.png)
+   ![包含页面和德国访客总数百分比的自由格式表](assets/cm_percent_total.png)

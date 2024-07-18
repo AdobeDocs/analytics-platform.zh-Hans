@@ -15,7 +15,7 @@ ht-degree: 64%
 
 您可以将Customer Journey Analytics数据下载到个人工作站。 这可以是复制的数据、CSV或PDF的形式。 如果您希望在下载的文件中包含可视化图表，通常首选PDF。 如果只想要文本数据，则首选 CSV 和复制的数据。
 
-此外，还提供了导出Customer Journey Analytics数据的其他方法，如中所述 [导出概述](/help/analysis-workspace/export/export-project-overview.md).
+导出Customer Journey Analytics数据的其他方法也可用，如[导出概述](/help/analysis-workspace/export/export-project-overview.md)中所述。
 
 ## 下载为CSV或PDF {#download-project}
 
@@ -26,8 +26,8 @@ ht-degree: 64%
 * 将项目下载为PDF时：
    * 导出下载可能需要几分钟的时间，因为项目在以PDF格式呈现之前会在Adobe服务器上重新运行。 我们建议在浏览器中下载 PDF 之前不要离开项目。但是，在等待过程中，您仍可以继续对项目进行更改。如果 PDF 的呈现时间超过 5 分钟，则系统将提示您改为通过电子邮件发送。
    * 下载内容呈现为单个页面，未应用分页。
-   * PDF渲染包含工作区中页面上的内容。 如果项目具有自定义大小的可视化和面板，则需要将它们更改为自动调整大小（右上角的按钮），以便内容将不会被截断。
-   * 任何 [超链接](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) 自由格式表内的那些文件在下载的PDF中无法正常工作。
+   * PDF渲染包含Workspace中页面上显示的内容。 如果项目具有自定义大小的可视化和面板，则需要将它们更改为自动调整大小（右上角的按钮），以便内容将不会被截断。
+   * 任何存在于自由格式表中的[超链接](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)在下载的PDF中都无法正常工作。
 
 要将项目下载为CSV或PDF文件，请执行以下操作：
 
@@ -41,13 +41,13 @@ ht-degree: 64%
 
      如果希望下载的文件是纯文本，请选择此选项。
 
-   ![项目下拉菜单突出显示下载CSV和下载PDF选项。](assets/download-project.png)
+   ![项目下拉菜单高亮显示了“下载CSV”和“下载PDF”选项。](assets/download-project.png)
 
-1. （视情况而定）如果您选择下载 PDF，则在准备好下载项目后显示一条消息。选择 [!UICONTROL **下载**].
+1. （视情况而定）如果您选择下载 PDF，则在准备好下载项目后显示一条消息。选择&#x200B;[!UICONTROL **下载**]。
 
 ## 复制到剪贴板（热键：Ctrl+C） {#copy-data}
 
-右键单击选项 **[!UICONTROL 复制到剪贴板]** 可让您从Workspace中快速复制Customer Journey Analytics数据并将其粘贴到第三方工具中。
+右键单击选项&#x200B;**[!UICONTROL 复制到剪贴板]**&#x200B;允许您从Workspace中快速复制Customer Journey Analytics数据并将其粘贴到第三方工具中。
 
 * 如果要复制所显示的表，请右键单击表标题并选择&#x200B;**将数据复制到剪贴板**。
 * 如果要复制数据的子集，请在表中作出选择，然后单击右键并选择&#x200B;**将所选内容复制到剪贴板**。
@@ -57,11 +57,11 @@ ht-degree: 64%
 >可使用热键 `Ctrl+C` 将您选择的内容复制到剪贴板，然后使用 `Ctrl+V` 将它粘贴到第三方工具中。
 
 
-![将所选内容复制到剪贴板选项。 ](assets/copy-selection.png)
+![将所选内容复制到剪贴板选项。](assets/copy-selection.png)
 
 ## 下载为 CSV 格式 {#download-data}
 
-右键单击选项 **[!UICONTROL 以CSV格式下载数据]** 允许您以CSV格式下载Customer Journey Analytics数据表或任何可视化图表的数据源。
+右键单击选项&#x200B;**[!UICONTROL 以CSV格式下载数据]**&#x200B;允许您以CSV格式下载Customer Journey Analytics数据表或任何可视化图表的数据源。
 
 * 从任何表或可视化的标题中，单击右键并选择&#x200B;**[!UICONTROL 以 CSV 格式下载数据]**。这会以CSV格式下载表中显示的Customer Journey Analytics数据或可视化图表的基础数据源。
 
@@ -84,7 +84,7 @@ ht-degree: 64%
 
 您可以在项目中执行多项任务，甚至可以在下载过程中导航到同一选项卡中的新 Workspace 项目。如果打开新的浏览器标签页，则下载暂停。如果完全离开 Workspace 或关闭浏览器标签页，则取消下载。
 
-![“以CSV格式下载项目（页面）”选项。](assets/download-items.png)
+![以CSV格式下载项目（页面）选项。](assets/download-items.png)
 
 ### 下载的项目文件 {#items-file}
 
@@ -106,13 +106,13 @@ ht-degree: 64%
 
 如果您同时请求多个下载，您将收到一条通知，说明每个额外的下载都将排队等待，直到前面的下载完成为止。
 
-![显示完成百分比的下载状态通知和取消下载链接。](assets/toast.png)
+![显示完成百分比和取消下载链接的下载状态通知。](assets/toast.png)
 
 ## 下载敏感数据 {#sensitive}
 
-如果 **[!UICONTROL 强制下载]** [数据治理策略](/help/data-views/data-governance.md) 在报表的数据视图中处于打开状态，则Workspace项目的任何下载(如通过电子邮件发送或共享PDF文件)都将散列标记为敏感的数据字段。 您仍然可以在工作区中对这些字段进行分析，但如果您尝试发送电子邮件或以其他方式共享项目，被阻止的字段将在 .pdf 或 .csv 文件中显示为空。
+如果在您报告的数据视图中启用了&#x200B;**[!UICONTROL 强制下载]** [数据管理策略](/help/data-views/data-governance.md)，则Workspace项目的任何下载(如通过电子邮件发送或共享PDF文件)都将散列标记为敏感的数据字段。 您仍然可以在工作区中对这些字段进行分析，但如果您尝试发送电子邮件或以其他方式共享项目，被阻止的字段将在 .pdf 或 .csv 文件中显示为空。
 
-如果标记为敏感的数据字段包含在 [!UICONTROL 数据视图]，则从屏幕中选择和复制数据的选项仅限于以下位置的所有数据： [!UICONTROL 数据视图].
+如果[!UICONTROL 数据视图]中包含任何标记为敏感的数据字段，则[!UICONTROL 数据视图]中的所有数据将限制从屏幕中选择和复制数据的选项。
 
 ## 常见问题解答 {#faq}
 

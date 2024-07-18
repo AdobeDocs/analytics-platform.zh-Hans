@@ -78,11 +78,11 @@ FROM
 
 >[!TIP]
 >
->如果您计划同时导入历史和实时流式 Google Analytics 数据，请确保对两个数据集使用相同的架构。您可以使用合并Customer Journey Analytics中的数据集 [组合的数据集](/help/connections/combined-dataset.md).
+>如果您计划同时导入历史和实时流式 Google Analytics 数据，请确保对两个数据集使用相同的架构。您可以使用[组合数据集](/help/connections/combined-dataset.md)合并Customer Journey Analytics中的数据集。
 
 您可以将 GA 事件数据映射到以前创建的现有数据集，或者使用所选择的任何 XDM 架构创建数据集。选择好架构后，Experience Platform 则应用机器学习，自动将 Google Analytics 数据中的每个字段预映射到您的 [XDM 架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html#ui)。
 
-![突出显示GA数据字段和目标架构映射的架构映射](../assets/schema-map.png)
+![突出显示GA数据字段和Target架构映射的架构映射](../assets/schema-map.png)
 
 完成将字段映射到 XDM 架构中后，您可以定期计划此导入并在摄取过程中应用错误验证。此验证可确保您导入的数据没有任何问题。
 
@@ -98,7 +98,7 @@ Platform 中的某些 XDM 字段需要正确的格式才能正确处理数据。
 
   ![时间戳](../assets/timestamp.png)
 
-* **`_id`**：该字段中必须有一个值 — Customer Journey Analytics不关心该值是什么。 您可以在字段中添加“1”：
+* **`_id`**：该字段中必须具有值 — Customer Journey Analytics不管该值是什么。 您可以在字段中添加“1”：
 
   ![ID](../assets/_id.png)
 

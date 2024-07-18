@@ -23,15 +23,15 @@ ht-degree: 65%
 
 为您的组织启用该功能后，系统会在活动发生时自动收集审核日志。您无需手动启用日志收集。
 
-要查看和导出审核日志，您必须已在 Audit Logs Access 中获得&#x200B;**[!UICONTROL 审核日志访问]**&#x200B;访问控制权限。要了解如何管理Customer Journey Analytics功能的各项权限，请参阅 [访问控制文档](../technotes/access-control.md).
+要查看和导出审核日志，您必须已在 Audit Logs Access 中获得&#x200B;**[!UICONTROL 审核日志访问]**&#x200B;访问控制权限。要了解如何管理Customer Journey Analytics功能的各个权限，请参阅[访问控制文档](../technotes/access-control.md)。
 
 ## 在 UI 中查看审核日志
 
-在Customer Journey Analytics中，导航到 **[!UICONTROL 工具]** > **[!UICONTROL 审核日志]**.
+在Customer Journey Analytics中，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 审核日志]**。
 
 默认显示今天和昨天的审核日志。
 
-![审核日志突出显示今天和昨天。 ](assets/audit_ui.png)
+![审核日志突出显示今天和昨天。](assets/audit_ui.png)
 
 您可以通过转到右上角的列选择器来选择可见的列。
 
@@ -39,11 +39,11 @@ ht-degree: 65%
 
 双击描述旁边的信息 (i) 按钮。
 
-![突出显示信息按钮的审核日志。 ](assets/info-button-audit.png)
+![审核日志突出显示信息按钮。](assets/info-button-audit.png)
 
 将显示以下项目：
 
-* **[!UICONTROL 操作名称]**：采取的操作。 可能的值包括：
+* **[!UICONTROL 操作名称]**：执行的操作。 可能的值包括：
    * API请求
    * 批准
    * 创建
@@ -58,10 +58,10 @@ ht-degree: 65%
    * 取消批准
    * 取消共享
 * **[!UICONTROL 创建日期]**：执行操作的日期和时间。
-* **[!UICONTROL 描述]**：操作摘要。
+* **[!UICONTROL 描述]**：操作的摘要。
 * **[!UICONTROL 用户名]**：执行操作的用户。
 * **[!UICONTROL 电子邮件]**：执行操作的用户的电子邮件地址。
-* **[!UICONTROL 组件名称]**：用户执行操作的组件。
+* **[!UICONTROL 组件名称]**：用户对其执行操作的组件。
 * **[!UICONTROL 组件类型]**：组件的类型。 可能的值包括：
    * 注释
    * 受众
@@ -80,10 +80,10 @@ ht-degree: 65%
    * 计划项目
    * 用户
    * 用户组
-* **[!UICONTROL 组件Id]**：用户执行操作的组件的ID。
-* **[!UICONTROL IMS组织ID]**：组织的IMS ID，采用格式 `ABC123@AdobeOrg`.
+* **[!UICONTROL 组件ID]**：用户对其执行操作的组件的ID。
+* **[!UICONTROL IMS组织ID]**：组织的IMS ID，格式为`ABC123@AdobeOrg`。
 * **[!UICONTROL 日志ID]**：标识此日志条目的唯一ID。
-* **[!UICONTROL 用户标识]**：标识执行操作的用户的唯一ID。
+* **[!UICONTROL 用户ID]**：标识执行操作的用户的唯一ID。
 * **[!UICONTROL 用户类型]**：使用的身份验证类型。 有效的值包括：
    * IMS
    * OKTA
@@ -92,7 +92,7 @@ ht-degree: 65%
 
 选择漏斗图标（![过滤器](assets/filter-icon.png)）以显示过滤器控件列表，帮助缩小结果范围。仅显示最后 1,000 条记录，这与选择的各种过滤器无关。
 
-![审核日志，其中显示了针对数据范围显示的过滤器。](assets/filters.png)
+![审核日志，显示针对数据范围显示的筛选器。](assets/filters.png)
 
 在 UI 中有以下过滤器可用于审核事件：
 
@@ -139,4 +139,4 @@ ht-degree: 65%
 
 ## 在 API 中管理审核日志
 
-您在 UI 中可以执行的所有操作也可以使用 API 调用来完成。请参阅 [Customer Journey AnalyticsAPI参考文档](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) 以了解更多信息。
+您在 UI 中可以执行的所有操作也可以使用 API 调用来完成。有关详细信息，请参阅[Customer Journey AnalyticsAPI参考文档](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs)。

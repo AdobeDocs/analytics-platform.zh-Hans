@@ -15,13 +15,13 @@ ht-degree: 81%
 
 >[!NOTE]
 >
->折线图可视化图表即将推出 [智能字幕](/help/analysis-workspace/visualizations/intelligent-captions.md).
+>折线图可视化图表很快将提供[智能字幕](/help/analysis-workspace/visualizations/intelligent-captions.md)。
 
 此折线图可视化图表使用线条来表示量度，以显示一段时间内值的变化情况。仅当使用时间作为维度时，才可以使用折线图。
 
 ![折线图可视化图表](assets/line-viz.png)
 
-选择设置图标 ![设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) 要访问的折线图可视化图表顶栏中的 [“可视化”设置](freeform-analysis-visualizations.md) 可用。 设置分为以下几类：
+选择折线图可视化图表顶栏中的设置图标![设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg)以访问可用的[可视化图表设置](freeform-analysis-visualizations.md)。 设置分为以下几类：
 
 <img src="./assets/viz-settings-line.png" alt="可视化设置" width="50%" />
 

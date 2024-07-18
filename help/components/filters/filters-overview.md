@@ -26,13 +26,13 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 
 您可以在过滤器生成器中构建和保存过滤器，或从“流失”可视化图表（在工作区中）生成过滤器。此外，过滤器可以一起用作堆叠过滤器。
 
-过滤功能包括 [筛选器生成器](/help/components/filters/filter-builder.md) 构建过滤器并运行预测试，以及 [筛选器管理器](/help/components/filters/manage-filters.md) 用于在您的组织内收集、标记、批准、设置安全和共享过滤器。
+筛选器包括[筛选器生成器](/help/components/filters/filter-builder.md)和[筛选器管理器](/help/components/filters/manage-filters.md)，前者用于构造筛选器并运行预测试，后者用于在您的组织内收集、标记、批准、设置安全和共享筛选器。
 
 每个 IMS 组织可创建的最大过滤器数为 50000。
 
 ## 过滤器类型 {#types}
 
-有关可用过滤器类型以及如何创建这些过滤器的信息，请参阅 [创建过滤器](/help/components/filters/create-filters.md).
+有关可用筛选器类型以及如何创建这些类型的信息，请参阅[创建筛选器](/help/components/filters/create-filters.md)。
 
 ## 顺序过滤器 {#sequential}
 
@@ -40,7 +40,7 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 
 >[!IMPORTANT]
 >
->您必须拥有 **选择** 包以创建跨渠道顺序过滤器。 如果您不确定您拥有哪个Customer Journey Analytics包，请联系您的管理员。
+>您必须具有&#x200B;**Select**&#x200B;包才能创建跨渠道顺序过滤器。 如果您不确定您拥有哪个Customer Journey Analytics包，请联系您的管理员。
 
 示例如下：
 
@@ -102,7 +102,7 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 - 参与率指标
 - 线性分配的指标
 
-通过Customer Journey Analytics中的数据视图，可决定会话的持续时间以及应创建新会话的时间。 例如，您可以根据用户每次启动您的移动设备应用程序时定义一个新的移动设备应用程序会话。 请参阅 [会话设置](/help/data-views/session-settings.md) 以了解更多信息。
+通过Customer Journey Analytics中的数据视图，可决定会话的持续时间以及应创建新会话的时间。 例如，您可以根据用户每次启动您的移动设备应用程序时定义一个新的移动设备应用程序会话。 有关详细信息，请参阅[会话设置](/help/data-views/session-settings.md)。
 
 ### 事件容器 {#event}
 

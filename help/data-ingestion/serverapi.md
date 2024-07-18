@@ -1,6 +1,6 @@
 ---
-title: 通过Adobe Experience Platform Edge Network服务器API引入数据
-description: 说明如何通过Adobe Experience Platform Edge Network Server API和Edge Network将数据摄取到Customer Journey Analytics
+title: 通过Adobe Experience PlatformEdge Network服务器API引入数据
+description: 说明如何通过Adobe Experience PlatformEdge Network服务器API和Edge Network将数据摄取到Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
@@ -12,9 +12,9 @@ ht-degree: 59%
 
 ---
 
-# 通过Adobe Experience Platform Edge Network服务器API引入数据
+# 通过Adobe Experience PlatformEdge Network服务器API引入数据
 
-本快速入门指南介绍如何使用Adobe Experience Platform Edge Network Server API和Edge Network将跟踪数据从物联网设备、机顶盒、游戏控制台和桌面应用程序等设备直接摄取到Adobe Experience Platform中。 然后将这些数据用于Customer Journey Analytics。
+本快速入门指南介绍如何使用Adobe Experience PlatformEdge Network服务器API和Edge Network，将跟踪数据从物联网设备、机顶盒、游戏控制台和桌面应用程序等设备直接摄取到Adobe Experience Platform中。 然后将这些数据用于Customer Journey Analytics。
 
 要完成此操作，您必须：
 
@@ -22,7 +22,7 @@ ht-degree: 59%
 
 - **设置数据流** 以配置 Adobe Experience Platform Edge Network，将您收集的数据路由到您在 Adobe Experience Platform 中配置的数据集。
 
-- **使用服务器API** 将数据直接从桌面、游戏机、物联网设备或机顶盒上运行的应用程序或游戏发送到数据流。
+- **使用服务器API**&#x200B;将数据直接从桌面、游戏机、物联网设备或机顶盒上运行的应用程序或游戏发送到数据流。
 
 - **部署和验证**。拥有一个可在其中进行迭代开发的环境，一旦一切通过验证，就将其实时发布到生产环境中。
 
@@ -54,23 +54,24 @@ ht-degree: 59%
 
 1. 在 Adobe Experience Platform UI 的左边栏中，选择[!UICONTROL 数据管理]中的&#x200B;**[!UICONTROL 模式]**。
 
-1. 选择 **[!UICONTROL 创建架构]**..
+1. 选择&#x200B;**[!UICONTROL 创建架构]**。
+.
 1. 在“创建模式”向导的“选择类”步骤中：
 
-   1. 选择 **[!UICONTROL 体验事件]**.
+   1. 选择&#x200B;**[!UICONTROL 体验事件]**。
 
       ![创建模式](./assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    Experience Event架构用于为 _行为_ 配置文件（如场景名称、要添加到购物车的按钮）的。 个人配置档案模式用于对个人配置档案&#x200B;_属性_（如姓名、电子邮件、性别）建模。
+      >    体验事件架构用于为配置文件的&#x200B;_行为_&#x200B;建模（如场景名称、要添加到购物车的按钮）。 个人配置档案模式用于对个人配置档案&#x200B;_属性_（如姓名、电子邮件、性别）建模。
 
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
 
-1. 在 [!UICONTROL 命名和审核步骤] 的 [!UICONTROL 创建架构] 向导：
+1. 在[!UICONTROL 创建架构]向导的[!UICONTROL 名称和审核步骤]中：
 
-   1. 输入 **[!UICONTROL 架构显示名称]** （可选）a **[!UICONTROL 描述]**.
+   1. 为您的架构输入&#x200B;**[!UICONTROL 架构显示名称]**&#x200B;和（可选）**[!UICONTROL 描述]**。
 
       ![命名您的模式](./assets/create-ee-schema-wizard-step-2.png)
 
@@ -84,9 +85,9 @@ ht-degree: 59%
 
       字段组是可重用的对象和属性集合，可让您轻松扩展模式。
 
-   1. 在 [!UICONTROL 添加字段组] 对话框，选择 **[!UICONTROL 闪光灯]** 列表中的字段组。 创建此字段组是为了跟踪用户在主机上玩名为Blinding Light的虚构游戏的进度。
+   1. 在[!UICONTROL 添加字段组]对话框中，从列表中选择&#x200B;**[!UICONTROL 照明灯]**&#x200B;字段组。 创建此字段组是为了跟踪用户在主机上玩名为Blinding Light的虚构游戏的进度。
 
-      ![照明灯字段组](assets/schema-fieldgroup-blindinglight.png)
+      ![照明字段组](assets/schema-fieldgroup-blindinglight.png)
 
       您可以选择预览按钮，以查看属于该字段组的字段的预览，例如 `scores > afterMatch`。
 
@@ -96,15 +97,15 @@ ht-degree: 59%
 
    1. 选择&#x200B;**[!UICONTROL 添加字段组]**。
 
-1. 选择 **[!UICONTROL +]** 位于您的架构名称旁边。
+1. 选择架构名称旁边的&#x200B;**[!UICONTROL +]**。
 
    ![示例模式添加字段按钮](./assets/example-gamingschema-plus.png)
 
-1. 在 [!UICONTROL 字段属性] 面板，输入 `identification` 作为 [!UICONTROL 字段名称]， **[!UICONTROL 标识]** 作为 [!UICONTROL 显示名称]，选择 **[!UICONTROL 对象]** 作为 [!UICONTROL 类型] 并选择 **[!UICONTROL ExperienceEvent Core v2.1]** 作为 [!UICONTROL 字段组].
+1. 在[!UICONTROL 字段属性]面板中，输入`identification`作为[!UICONTROL 字段名称]，输入&#x200B;**[!UICONTROL 标识]**&#x200B;作为[!UICONTROL 显示名称]，选择&#x200B;**[!UICONTROL 对象]**&#x200B;作为[!UICONTROL 类型]，并选择&#x200B;**[!UICONTROL ExperienceEvent Core v2.1]**&#x200B;作为[!UICONTROL 字段组]。
 
    >[!NOTE]
    >
-   >如果该字段组不可用，请查找另一个包含标识字段的字段组。 或 [创建新字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) 和 [添加新标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) (点赞 `ecid`， `crmId`，然后选择该新字段组。
+   >如果该字段组不可用，请查找另一个包含标识字段的字段组。 或者[创建新的字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html)和[将新的标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field)（如`ecid`、`crmId`和其他您需要的字段）添加到该字段组，并选择该新字段组。
 
    ![识别对象](./assets/identification-field-gaming.png)
 
@@ -200,7 +201,7 @@ ht-degree: 59%
 
 ## 设置数据流
 
-数据流表示在实施Adobe Experience Platform Web SDK和Mobile SDK以及Adobe Experience Platform Edge Network服务器API时的服务器端配置。 使用Adobe Experience Platform SDK和边缘网络服务器API收集数据时，数据会发送到Adobe Experience Platform边缘网络。 它是确定数据转发到哪些服务的数据流。
+数据流表示在实施Adobe Experience Platform Web SDK和Mobile SDK以及Adobe Experience PlatformEdge Network服务器API时的服务器端配置。 使用Adobe Experience Platform SDK和Edge Network服务器API收集数据时，会将数据发送到Adobe Experience PlatformEdge Network。 它是确定数据转发到哪些服务的数据流。
 
 在设置中，您希望将从游戏中收集的数据发送到Adobe Experience Platform中的数据集。
 
@@ -236,7 +237,7 @@ ht-degree: 59%
 
 ## 使用Edge Network服务器API
 
-在游戏开发中，您可以根据需要向Adobe Experience Platform Edge Network服务器API添加相关调用。
+在游戏开发中，您可以根据需要向Adobe Experience PlatformEdge Network服务器API添加相关调用。
 
 例如，要更新播放器的得分，您将使用：
 
@@ -269,15 +270,15 @@ curl -X POST "https://server.adobedc.net/ee/v2/interact?dataStreamId={DATASTREAM
 }'
 ```
 
-在示例POST请求中， `{DATASTREAM_ID}` 指向您之前配置的示例数据流的标识符。 `{sandbox}` 是沙盒的唯一名称，用于标识自定义Blinding Light字段组的路径。
+在示例POST请求中，`{DATASTREAM_ID}`指向您之前配置的示例数据流的标识符。 `{sandbox}`是沙盒的唯一名称，用于标识自定义Blinding Light字段组的路径。
 
-请参阅 [交互式数据收集](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html) 和 [非交互式数据收集](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html) 有关如何使用Edge Network服务器API的更多信息。
+有关如何使用Edge Network服务器API的详细信息，请参阅[交互式数据收集](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html)和[非交互式数据收集](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html)。
 
 ## 设置连接
 
 要在 Customer Journey Analytics 中使用 Adobe Experience Platform 数据，您需要创建一个连接，其中包含因设置模式、数据集和工作流所产生的数据。
 
-通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告这些数据集，您必须首先在Adobe Experience Platform和工作区中的数据集之间建立连接。
+通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告这些数据集，您必须首先在Adobe Experience Platform和Workspace中的数据集之间建立连接。
 
 创建您的连接：
 
@@ -374,10 +375,10 @@ Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分�
 
    ![工作区选择数据视图](./assets/cja-projects-3.png)
 
-5. 要创建您的第一个报表，请开始将维度和量度拖放到 [!UICONTROL 自由格式表] 在 [!UICONTROL 面板].
+5. 要创建您的第一个报告，请在[!UICONTROL 面板]的[!UICONTROL 自由格式表]上开始拖放维度和量度。
 
 请参阅 [Analysis Workspace 概述](../analysis-workspace/home.md)，了解有关如何使用组件、可视化和面板创建项目和构建分析的更多信息。
 
 >[!SUCCESS]
 >
->您已完成所有步骤。首先定义您要收集的数据（架构）以及在Adobe Experience Platform中存储这些数据（数据集）的位置。 您在边缘网络上配置了一个数据流，以确保可以将数据转发到该数据集。 然后，您使用Edge Network服务器API将该数据发送到数据流。 您在Customer Journey Analytics中定义了一个连接以使用游戏数据和其他数据。 通过数据视图定义，您可以指定要使用的维度和量度，最后，您创建了第一个项目，用于可视化和分析游戏数据。
+>您已完成所有步骤。首先定义您要收集的数据（架构）以及在Adobe Experience Platform中存储这些数据（数据集）的位置。 您在Edge Network上配置了数据流，以确保可以将数据转发到该数据集。 然后，您使用Edge Network服务器API将该数据发送到数据流。 您在Customer Journey Analytics中定义了一个连接以使用游戏数据和其他数据。 通过数据视图定义，您可以指定要使用的维度和量度，最后，您创建了第一个项目，用于可视化和分析游戏数据。

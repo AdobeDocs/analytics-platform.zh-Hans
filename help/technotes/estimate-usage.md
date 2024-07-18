@@ -15,7 +15,7 @@ ht-degree: 71%
 
 要查看您的Customer Journey Analytics使用情况，您可以使用多种方法：
 
-* 为每个连接添加事件数据行。请参阅 [估算连接大小](#estimate-connection-size) 下。 这是查看特定时间戳的每个连接的事件行数据的简单方法。
+* 为每个连接添加事件数据行。请参阅下面的[估算连接大小](#estimate-connection-size)。 这是查看特定时间戳的每个连接的事件行数据的简单方法。
 
 * 通过三种方式查看您的使用情况，下面对每种方式进行了更详细的描述：
    * 使用 Analysis Workspace 报告的上个月的事件。
@@ -42,7 +42,7 @@ ht-degree: 71%
 
 1. 添加组织创建的每个连接的&#x200B;**[!UICONTROL 可用事件数据记录]**。（根据连接的大小，数字可能需要一段时间才能显示。）
 
-   ![可用的事件数据记录。](./assets/event-data.png)
+   ![可用的事件数据记录数。](./assets/event-data.png)
 
    >[!CAUTION]
    >
@@ -56,7 +56,7 @@ ht-degree: 71%
 
    * 更改[数据保留设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans#set-rolling-window-for-connection-data-retention)。
    * [删除任何未使用的连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans#implications-of-deleting-data-components)。
-   * [删除Adobe Experience Platform中的数据集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans#implications-of-deleting-data-components).
+   * [删除Adobe Experience Platform中的数据集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans#implications-of-deleting-data-components)。
    * 请联系您的Adobe客户团队以许可额外容量。
 
 ## 使用所有事件数据创建工作区项目 {#workspace-event-data}
@@ -69,7 +69,7 @@ ht-degree: 71%
 >
 >    不要创建包含所有数据的新连接只是为了测量使用情况，因为这实际上会使您的使用量翻倍。
 
-1. 在工作区中，根据每个数据视图创建新项目并拉入所有事件(从 **[!UICONTROL 量度]** 下拉列表)，开始每月第一个星期五，从当前Customer Journey Analytics合同的第一天开始。
+1. 在Workspace中，根据每个数据视图创建新项目并拉入所有事件（从&#x200B;**[!UICONTROL 量度]**&#x200B;下拉列表中），一直到当月第一个星期五，从当前Customer Journey Analytics合同的第一天开始。
 
    ![自由格式表显示事件。](./assets/events-usage.png)
 
@@ -83,7 +83,7 @@ ht-degree: 71%
 
 ## 在Customer Journey AnalyticsAPI中创建自动报表 {#api-report}
 
-1. 使用 [Customer Journey Analytics报表API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) 要对您的所有事件数据运行报告， **每个连接**. 设置它以便报告运行
+1. 使用[Customer Journey Analytics报告API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API)对所有事件数据（**用于每个连接**）运行报告。 设置它以便报告运行
 
    * 每个月的第一个星期五。
    * 回到您当前Customer Journey Analytics合同的第一天。
@@ -94,7 +94,7 @@ ht-degree: 71%
 
 ## 通过定义滚动数据窗口来管理您的使用情况 {#rolling}
 
-要管理您的使用情况，请 [连接Ui](/help/connections/create-connection.md) 可让您在连接级别将Customer Journey Analytics数据保留定义为以月计的滚动时段（1个月、3个月、6个月等）。
+为了管理您的使用情况，[连接UI](/help/connections/create-connection.md)允许您在连接级别将Customer Journey Analytics数据保留定义为以月计的时段（1个月、3个月、6个月等）。
 
 主要好处是，您只需存储或报告适用且有用的数据，并且可删除不再有用的旧数据。它可以帮助您保持在合同限制范围内，并减少超出预期成本的风险。
 

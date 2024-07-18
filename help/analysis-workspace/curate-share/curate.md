@@ -8,7 +8,7 @@ role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '509'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 92%
 
 也可以通过单击&#x200B;**[!UICONTROL 策划和共享]**&#x200B;从[!UICONTROL 共享]菜单中应用策划。此选项会自动将项目策划为项目中使用的组件。您可以按照上述步骤添加更多组件。
 
-![“策划组件”窗口显示了项目中使用的组件。](assets/curation-field.png)
+![显示项目中正在使用的组件的“策划组件”窗口。](assets/curation-field.png)
 
 ## 应用策划后的项目视图
 
@@ -45,7 +45,7 @@ ht-degree: 92%
 
 ## 组件策划选项
 
-在策划的项目中，收件人将看到左边栏中显示的&#x200B;**[!UICONTROL 显示所有组件]**&#x200B;选项。[!UICONTROL 显示所有组件]选项将显示不同的组件集，具体取决于：
+在策划的项目中，收件人将看到左边栏中显示的&#x200B;**[!UICONTROL 显示所有组件]**&#x200B;选项。[!UICONTROL 显示所有组件]根据以下各项显示不同的组件集：
 
 * 用户的权限级别（管理员或非管理员）
 * 项目角色（所有者/编辑者或非所有者/编辑者）

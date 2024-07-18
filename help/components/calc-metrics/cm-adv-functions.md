@@ -62,11 +62,11 @@ Approximate Count Distinct (customer ID eVar) 是此函数的常见用例。
 
 新“近似客户”计算量度的定义：
 
-![显示客户ID的大致县别新维度定义(eVar1)](assets/approx-count-distinct.png)
+![显示客户ID (eVar1)的近似县别不同新维度定义](assets/approx-count-distinct.png)
 
 以下表示在报告中使用“近似客户”量度的方式：
 
-![显示独特访客和近似客户的自由格式表 ](assets/approx-customers.png)
+![显示独特访客和大约客户的自由格式表](assets/approx-customers.png)
 
 ## 比较计数函数
 

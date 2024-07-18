@@ -6,8 +6,8 @@ role: Admin
 exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 69%
+source-wordcount: '324'
+ht-degree: 64%
 
 ---
 
@@ -29,7 +29,7 @@ Customer Journey Analytics管理员可以在数据字典中编辑给定数据视
 
 1. （可选）在搜索字段中，开始键入要编辑的组件的名称。
 
-组件的类型可以通过颜色和图标来识别。**Dimension** ![Dimension图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) 是橙色的， **过滤器** ![“区段”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) 是蓝色的， **日期范围** ![日期范围图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) 是紫色的，而且 **量度** ![“量度”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) 是绿色的。 Adobe图标表示计算指标模板或过滤器模板，以及计算器图标 ![计算器图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) 指示由贵组织中的Analytics管理员创建的计算指标。
+组件的类型可以通过颜色和图标来识别。**Dimension** ![Dimension图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)为橙色，**筛选器** ![区段图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg)为蓝色，**日期范围** ![日期范围图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)为紫色，**量度** ![量度图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg)为绿色。 Adobe图标表示计算指标模板或过滤器模板，计算器图标![计算器图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg)表示由您组织中的Analytics管理员创建的计算指标。
 
 {{dd-filter-criteria}}
 

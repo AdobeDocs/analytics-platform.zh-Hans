@@ -8,7 +8,7 @@ role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '304'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 0%
 
 您可以将Customer Journey Analytics报表导出为PDF、CSV或JSON文件。
 
-* **PDF：** 提供了一种与利益相关者共享可视化数据的简单方法。 PDF文件包含项目中所有显示（可见）的表格和可视化图表。
+* **PDF：**&#x200B;提供了一种与利益相关者共享视觉数据的简单方法。 PDF文件包含项目中所有显示（可见）的表格和可视化图表。
 
-* **CSV：** 允许您在电子表格应用程序（如Excel）中查看原始数据。 CSV文件包含纯文本数据。
+* **CSV：**&#x200B;允许您在电子表格应用程序（如Excel）中查看原始数据。 CSV文件包含纯文本数据。
 
-* **JSON：** 提供用于共享数据的开放标准文件格式。
+* **JSON：**&#x200B;为共享数据提供开放的标准文件格式。
 
 ## 导出方法
 

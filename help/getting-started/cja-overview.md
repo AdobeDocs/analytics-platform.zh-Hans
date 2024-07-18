@@ -8,7 +8,7 @@ role: User, Admin
 source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
 source-wordcount: '916'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Customer Journey Analytics 的初始版本包括 Adobe Analytics 中的许多功
 
 ## 访问控制
 
-请参阅 [访问控制](/help/technotes/access-control.md).
+请参阅[访问控制](/help/technotes/access-control.md)。
 
 ## 术语更新
 
@@ -78,13 +78,13 @@ Customer Journey Analytics 的初始版本包括 Adobe Analytics 中的许多功
 
 Customer Journey Analytics 是依赖于 Adobe Experience Platform 的众多功能之一。此外，基于 Experience Platform 构建的几项其他功能也可让您充分利用数据。
 
-Adobe Experience Platform 让您可以实现源自任何系统的客户数据和内容的集中化和标准化，并应用数据科学和机器学习来优化个性化体验的设计和交付。Platform 中的客户数据将作为数据集存储，数据集由一个架构和批量数据组成。有关 Platform 的更多详细信息，请参阅 [Adobe Experience Platform 体系架构概述](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=zh-Hans)。
+Adobe Experience Platform 让您可以实现源自任何系统的客户数据和内容的集中化和标准化，并应用数据科学和机器学习来优化个性化体验的设计和交付。Platform 中的客户数据将作为数据集存储，数据集由一个架构和批量数据组成。有关 Platform 的更多详细信息，请参阅 [Adobe Experience Platform 体系架构概述](https://experienceleague.adobe.com/cn/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=zh-Hans)。
 
 从数据摄取到 SQL 直接访问，Experience Platform 的多个组件在 Customer Journey Analytics 中发挥着极为重要的作用，并且与之相辅相成：
 
-* [Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans)：使用标准 SQL 从 Adobe Experience Platform 检索数据，如 Adobe 解决方案数据、客户第一方数据或任何其他 Platform 数据。它是一个无服务器工具，通过它可连接任何数据集，并将查询结果记录为新数据集，以供在报告中使用或摄取到配置文件服务。可使用 Experience Platform Query Service 构建数据分析生态系统，在使用者的各种交互渠道上为使用者画像。这些渠道可能包括销售点系统、Web、移动、CRM 系统等。
-* [实时客户配置文件](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans)：
-* [标识服务](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hans)
+* [Experience Platform Query Service](https://experienceleague.adobe.com/cn/docs/experience-platform/query/home.html?lang=zh-Hans)：使用标准 SQL 从 Adobe Experience Platform 检索数据，如 Adobe 解决方案数据、客户第一方数据或任何其他 Platform 数据。它是一个无服务器工具，通过它可连接任何数据集，并将查询结果记录为新数据集，以供在报告中使用或摄取到配置文件服务。可使用 Experience Platform Query Service 构建数据分析生态系统，在使用者的各种交互渠道上为使用者画像。这些渠道可能包括销售点系统、Web、移动、CRM 系统等。
+* [实时客户配置文件](https://experienceleague.adobe.com/cn/docs/experience-platform/profile/home.html?lang=zh-Hans)：
+* [标识服务](https://experienceleague.adobe.com/cn/docs/experience-platform/identity/home.html?lang=zh-Hans)
 
 ## 视频
 

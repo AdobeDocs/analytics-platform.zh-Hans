@@ -25,7 +25,7 @@ ht-degree: 87%
 
 1. 单击&#x200B;**应用**。
 
-   ![显示“取消并应用”按钮的Report Builder日期范围窗格。](./assets/image38.png)
+   显示“取消并应用”按钮的![Report Builder日期范围窗格。](./assets/image38.png)
 
 ## 离线模式
 
@@ -51,7 +51,7 @@ ht-degree: 87%
 
 1. 从&#x200B;**语言**&#x200B;下拉菜单中选择语言。
 
-   ![Report Builder日期范围窗格，其中显示选中了英语的“语言”列表。](./assets/image39.png)
+   ![Report Builder日期范围窗格，显示选择了英语的语言列表。](./assets/image39.png)
 
 1. 单击&#x200B;**应用**。
 

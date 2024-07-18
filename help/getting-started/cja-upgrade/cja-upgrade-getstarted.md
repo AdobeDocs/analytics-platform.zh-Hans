@@ -8,7 +8,7 @@ exl-id: fd3b36ab-72c1-469a-b2c7-419813c82425
 source-git-commit: c64f7a1676f4fd3712e618e26357f430e7d9f019
 workflow-type: tm+mt
 source-wordcount: '635'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -20,7 +20,7 @@ Customer Journey Analytics是下一代分析。 它允许多渠道数据收集�
 
 ## 了解Customer Journey Analytics的好处
 
-以下是一些主要优势：(有关所有这些主要功能的完整列表以及更多信息，请参阅 [仅在Customer Journey Analytics中可用的功能](/help/getting-started/aa-vs-cja/cja-aa.md#adobe-customer-journey-analytics-features-not-available-in-adobe-analytics).)
+以下是一些主要优势：(有关这些主要功能的完整列表以及详细信息，请参阅[仅在Customer Journey Analytics中提供的功能](/help/getting-started/aa-vs-cja/cja-aa.md#adobe-customer-journey-analytics-features-not-available-in-adobe-analytics)。)
 
 * [多渠道报表](/help/getting-started/aa-to-cja-user.md#changes-to-data-architecture)
 
@@ -44,7 +44,7 @@ Customer Journey Analytics是下一代分析。 它允许多渠道数据收集�
 
 * [无限量的客户维度和量度](/help/getting-started/aa-to-cja-user.md#changes-to-the-concept-of-evars-and-props)
 
-  值可以是数字、文本、对象、列表或所有这些的混合。 Dimension可以嵌套或分层。
+  值可以是数字、文本、对象、列表或所有这些的混合。 维度可以是嵌套的或分层的。
 
 ## 了解升级过程
 
@@ -53,16 +53,16 @@ Customer Journey Analytics是下一代分析。 它允许多渠道数据收集�
 
 | 升级任务 | 详细信息 |
 |---------|----------|
-| <span class="preview">**步骤1：升级入门**</span> | <span class="preview">了解升级到Customer Journey Analytics的好处以及基本的升级过程。</span> |
-| **第2步： [选择升级路径](/help/getting-started/cja-upgrade/cja-upgrade-path.md)** | 有多种方法可用于升级到Customer Journey Analytics。 根据贵组织当前的Adobe Analytics环境和长期目标，选择最适合贵组织的方法。 |
-| **步骤3： [将数据发送到Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)** | 将数据发送到Adobe Experience Platform的过程因您在步骤2中选择的升级路径而异。 |
-| **第4步： [保留历史数据](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)** | 大多数组织都需要将其历史Adobe Analytics数据保留一定时间。 可以使用各种选项来完成此操作。 |
-| **步骤5： [执行其他实施任务](/help/getting-started/cja-getting-started.md)** | 在升级过程的这一阶段，您需要在Customer Journey Analytics环境准备就绪之前执行各种任务。<p>这些附加任务适用于从Adobe Analytics升级以及新的Customer Journey Analytics实施。</p><p>这些任务包括：</p><ul><li>将其他数据引入Experience Platform</li><li>在Platform数据集与Customer Journey Analytics之间创建连接</li><li>创建数据视图</li><li>移植报表API使用情况</li><li>考虑数据馈送和Data Warehouse</li><li>迁移项目和组件</li><li>Planning用户载入</li></ul> <p>有关更多信息，请参阅 [Customer Journey Analytics快速入门](/help/getting-started/cja-getting-started.md). |
+| <span class="preview">**步骤1：开始升级**</span> | <span class="preview">了解升级到Customer Journey Analytics的好处以及基本的升级过程。</span> |
+| **步骤2：[选择升级路径](/help/getting-started/cja-upgrade/cja-upgrade-path.md)** | 有多种方法可用于升级到Customer Journey Analytics。 根据贵组织当前的Adobe Analytics环境和长期目标，选择最适合贵组织的方法。 |
+| **步骤3：[将数据发送到Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)** | 将数据发送到Adobe Experience Platform的过程因您在步骤2中选择的升级路径而异。 |
+| **步骤4：[保留历史数据](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)** | 大多数组织都需要将其历史Adobe Analytics数据保留一定时间。 可以使用各种选项来完成此操作。 |
+| **步骤5：[执行其他实施任务](/help/getting-started/cja-getting-started.md)** | 在升级过程的这一阶段，您需要在Customer Journey Analytics环境准备就绪之前执行各种任务。<p>这些附加任务适用于从Adobe Analytics升级以及新的Customer Journey Analytics实施。</p><p>这些任务包括：</p><ul><li>将其他数据引入Experience Platform</li><li>在Platform数据集与Customer Journey Analytics之间创建连接</li><li>创建数据视图</li><li>移植报表API使用情况</li><li>考虑数据馈送和Data Warehouse</li><li>迁移项目和组件</li><li>Planning用户载入</li></ul> <p>有关详细信息，请参阅[Customer Journey Analytics快速入门](/help/getting-started/cja-getting-started.md)。 |
 
 {style="table-layout:auto"}
 
 ## 首先，选择升级路径
 
-有多种方法可用于升级到Customer Journey Analytics。 [选择最适合您组织的方法](/help/getting-started/cja-upgrade/cja-upgrade-path.md).
+有多种方法可用于升级到Customer Journey Analytics。 [选择最适合您组织的方法](/help/getting-started/cja-upgrade/cja-upgrade-path.md)。
 
 您选择的升级路径取决于贵组织当前的Adobe Analytics环境和长期目标。

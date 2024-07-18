@@ -41,7 +41,7 @@ ht-degree: 75%
 
 ### 系列细分视图
 
-![“媒体并行查看者系列”划分视图将显示10个维度、区段或日期范围中的7个。](assets/concurrent-viewers-series-breakdown.png)
+![媒体并行查看者系列细分视图显示10个维度、区段或日期范围中的7个。](assets/concurrent-viewers-series-breakdown.png)
 
 ## 面板输出 {#Output}
 
@@ -51,7 +51,7 @@ ht-degree: 75%
 
 如果您选择了系列细分，则会为每一项在线形图上显示一条线以及概要数字：
 
-![“媒体并行查看者”输出。](assets/concurrent-viewers-output.png)
+![媒体并行查看者输出。](assets/concurrent-viewers-output.png)
 
 ### 数据源
 
@@ -64,7 +64,7 @@ ht-degree: 75%
 自由格式表在此视图中不可用。为了查看数据源，您可以右键单击线形图并将其下载为 .csv 文件。其中将包括系列细分。
 
 
-![突出显示“以CSV格式下载数据”的并行查看者输出选项。](assets/concurrent-viewers-download-csv.png)
+![突出显示“以CSV格式下载数据”的“并行查看者输出”选项。](assets/concurrent-viewers-download-csv.png)
 
 ## 常见问题解答 {#FAQ}
 

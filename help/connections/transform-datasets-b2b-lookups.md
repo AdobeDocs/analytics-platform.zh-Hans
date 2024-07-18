@@ -32,11 +32,11 @@ ht-degree: 0%
 
 ![启用转换数据集](assets/transform-dataset.gif)
 
-* 请确保选择正确的标识符 **[!UICONTROL 键]** 和 **[!UICONTROL 匹配键]**&#x200B;例如 `personKey.sourceKey`.
+* 请确保为&#x200B;**[!UICONTROL 键]**&#x200B;和&#x200B;**[!UICONTROL 匹配键]**&#x200B;选择正确的标识符，例如`personKey.sourceKey`。
 
 * 选择用于导入新数据和数据集回填的选项。
 
-* 选择 **[!UICONTROL 转换B2B查找的数据集]**.
+* 为B2B查找选择&#x200B;**[!UICONTROL 转换数据集]**。
 
   此选项会转换数据集，以便在B2B场景下用于基于人员的查找。
 

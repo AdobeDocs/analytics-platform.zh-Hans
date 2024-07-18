@@ -7,7 +7,7 @@ exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '712'
 ht-degree: 74%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 74%
 
 ## 确保应用程序用户具有 Adobe Analytics 访问权限
 
-1. 在 [Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=zh-Hans) 中设置新用户。
+1. 在 [Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html) 中设置新用户。
 
 1. 要能够共享记分卡，您必须向应用程序用户授予对记分卡组件（例如 Analysis Workspace）、记分卡所基于的数据视图以及筛选器、量度和维度的访问权限。
 
@@ -39,13 +39,13 @@ ht-degree: 74%
 
 **对于 iOS 上的执行用户：**
 
-单击以下链接(此链接也可在Customer Journey Analytics下的链接中使用) **[!UICONTROL 工具]** > **[!UICONTROL Analytics功能板（移动操作）]**)并按照提示下载、安装和打开应用程序：
+单击以下链接(也可在Customer Journey Analytics中的&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Analytics功能板（移动操作窗口）]**&#x200B;下找到该链接)，然后按照提示下载、安装和打开应用程序：
 
 `[iOS link](https://apple.co/2zXq0aN)`
 
 **对于 Android 上的执行用户：**
 
-单击以下链接(此链接也可在Customer Journey Analytics下的链接中使用) **[!UICONTROL 工具]** > **[!UICONTROL Analytics功能板（移动应用程序）]**)并按照提示下载、安装和打开应用程序：
+单击以下链接(也可在Customer Journey Analytics中的&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Analytics功能板（移动应用程序）]**&#x200B;下找到该链接)，然后按照提示下载、安装和打开应用程序：
 
 `[Android link](https://bit.ly/2LM38Oo)`
 
@@ -74,7 +74,7 @@ ht-degree: 74%
 
 向执行用户说明图块在您共享的记分卡中的显示方式。
 
-![说明图块，包括日期范围、区段过滤器以及选定的量度和维度](assets/newexplain.png)
+![说明图块，包括选定的日期范围、区段过滤器以及量度和维度](assets/newexplain.png)
 
 ![示例记分卡](assets/intro_scorecard.png)
 

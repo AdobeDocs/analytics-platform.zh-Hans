@@ -51,7 +51,7 @@ Analytics 管理员负责整理有关数据词典中每个组件的信息，并�
 
   同样，对数据视图中组件描述所做的任何更新都会反映在Analysis Workspace中。
 
-  有关在Analysis Workspace或数据视图中添加组件说明的更多信息，请参阅 [添加组件描述](/help/components/add-component-descriptions.md).
+  有关在Analysis Workspace或数据视图中添加组件说明的详细信息，请参阅[添加组件说明](/help/components/add-component-descriptions.md)。
 
 ## 访问数据词典
 
@@ -72,9 +72,9 @@ Analytics 管理员负责整理有关数据词典中每个组件的信息，并�
 
 ## 更新和整理数据词典
 
-Customer Journey Analytics管理员负责为其组织维护健康的数据字典，如中所述 [监测数据字典运行状况](/help/components/data-dictionary/monitor-data-dictionary-health.md).
+Customer Journey Analytics管理员负责维护其组织的健康数据字典，如[监控数据字典运行状况](/help/components/data-dictionary/monitor-data-dictionary-health.md)中所述。
 
-在此过程中，Customer Journey Analytics管理员可以编辑数据字典中有关每个组件的信息，如中所述 [编辑数据字典中的组件条目](/help/components/data-dictionary/edit-entries-data-dictionary.md).
+在此过程中，Customer Journey Analytics管理员可以编辑数据字典中每个组件的相关信息，如数据字典中的[编辑组件条目](/help/components/data-dictionary/edit-entries-data-dictionary.md)中所述。
 
 ## 移动、最小化或关闭数据词典
 

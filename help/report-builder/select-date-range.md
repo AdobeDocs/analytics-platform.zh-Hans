@@ -36,7 +36,7 @@ ht-degree: 89%
 
 您可以通过选项在任意选择的日期范围上排除当天。
 
-![选择了日历并选择了排除当天的Report Builder快速编辑窗格。](./assets/image17.png)
+![选择了日历且选择了排除今天的Report Builder快速编辑窗格。](./assets/image17.png)
 
 ## 使用日历
 
@@ -62,7 +62,7 @@ ht-degree: 89%
 
 要反向设置日期范围，请先单击结束日期，然后再单击开始日期。
 
-![Report Builder日期范围窗格，其中显示选定的日历和结束日期以及开始日期。](./assets/image18.png)
+![Report Builder日期范围窗格，显示日历和结束日期以及选定的开始日期。](./assets/image18.png)
 
 ### 预设下拉菜单
 
@@ -86,11 +86,11 @@ ht-degree: 89%
 
 1. 选择天、周、月、季度或年作为滚动时段。
 
-   ![显示所选当天的Report Builder日期范围窗格。](./assets/image20.png)
+   ![Report Builder日期范围窗格，显示所选的当前日期。](./assets/image20.png)
 
 1. 从滚动日期中加上或减去日、周、月、季度或年。
 
-   ![Report Builder日期范围窗格，显示所选的当天加14天。](./assets/image21.png)
+   ![Report Builder日期范围窗格，显示当前日期加上14天选定日期。](./assets/image21.png)
 
 1. 单击“下一步”定义日期范围。
 
@@ -106,7 +106,7 @@ ht-degree: 89%
 
    选择&#x200B;**使用自定义表达式**&#x200B;选项时，标准滚动日期范围控件将禁用。
 
-   ![选择使用显示tm-1m到td-1d的自定义表达式。](./assets/custom_expression.png)
+   ![选择使用自定义表达式，显示tm-1m到td-1d。](./assets/custom_expression.png)
 
 1. 输入自定义表达式。
 
@@ -163,7 +163,7 @@ ht-degree: 89%
 
 日期范围可以在工作表单元格中指定。使用&#x200B;**来自单元格中的日期范围**&#x200B;选项从所选单元格选择数据块的开始日期和结束日期。选择&#x200B;**来自单元格**&#x200B;选项时，面板会显示&#x200B;**自**&#x200B;和&#x200B;**至**&#x200B;字段，您可以在其中输入单元格位置。
 
-![从单元格表1！H4选择到表1！I4](./assets/image23.png)
+![从单元格工作表1！H4选择到工作表1！I4](./assets/image23.png)
 
 ## 排除当天
 

@@ -19,4 +19,4 @@ Adobe Customer Journey Analytics在北美洲（加拿大安大略弗吉尼亚）
 
 ![CJA数据中心](assets/data-centers.png)
 
-请参阅 [地区数据收集](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc) 有关更多信息，请参阅Adobe Experience Cloud文档。
+有关详细信息，请参阅Adobe Experience Cloud文档中的[区域数据收集](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc)。

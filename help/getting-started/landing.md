@@ -5,7 +5,7 @@ role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
 source-git-commit: 0fb09e9a7d23c88fb3d18f39816dfae32b131469
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 100%
 
@@ -50,7 +50,7 @@ Customer Journey Analytics 登陆页面由以下子选项卡组成：项目和�
 | [!UICONTROL **标记**] | 标记项目以将其整理到组中。 |
 | [!UICONTROL **已计划**] | 点击 [!UICONTROL 开启] 链接，您可以看到有关计划项目的信息。如果您是项目所有者，也可[编辑项目计划](/help/analysis-workspace/export/t-schedule-report.md)。 |
 | [!UICONTROL **项目角色**] | 标识项目角色：您是否为项目所有者，以及您是否具有编辑或复制项目的权限。 |
-| [!UICONTROL **报表包**] | 标识与项目关联的报告包。<br>面板中的表格和可视化图表从在面板的右上角选中的报告包中派生数据。报告包还确定在左边栏中有哪些组件可用。在项目中，您可以根据分析用例，使用一个或多个报告包。报告包列表按相关性排序。Adobe 在定义相关性时，依据当前用户在近期使用该包的频率以及该包在组织中的使用频率。 |
+| [!UICONTROL **报告包**] | 标识与项目关联的报告包。<br>面板中的表格和可视化图表从在面板的右上角选中的报告包中派生数据。报告包还确定在左边栏中有哪些组件可用。在项目中，您可以根据分析用例，使用一个或多个报告包。报告包列表按相关性排序。Adobe 在定义相关性时，依据当前用户在近期使用该包的频率以及该包在组织中的使用频率。 |
 | [!UICONTROL **所有者**] | 标识已创建项目的用户。 |
 | [!UICONTROL **共享对象**] | 显示当前与谁共享项目。 |
 | [!UICONTROL **上次修改时间**] | 项目上次修改的日期和时间。 |

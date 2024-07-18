@@ -5,7 +5,7 @@ feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 source-git-commit: 53d367e51f739ebf324390ba4114ddb58138fac8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '681'
 ht-degree: 100%
 
@@ -82,7 +82,7 @@ Analysis Workspace 中提供的许多面板都可以基于一些用户输入来�
 
 要将组件添加到 Analysis Workspace 中的项目：
 
-1. 选择左侧边栏中的&#x200B;**[!UICONTROL 组件]**&#x200B;图标。
+1. 选择左边栏中的&#x200B;**[!UICONTROL 组件]**&#x200B;图标。
 
    ![选定的“组件”图标和可用的维度列表。](assets/build-components.png)
 

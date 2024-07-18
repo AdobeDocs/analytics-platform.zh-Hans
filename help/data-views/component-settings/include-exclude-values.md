@@ -16,7 +16,7 @@ ht-degree: 97%
 
 通过“包括排除值”，可创建依赖于维度项的值的规则。在 Analysis Workspace 中将不符合您设置的条件的值视为其从未存在，尽管基础数据集中仍存在这些数据。
 
-![突出显示包括排除值的数据视图窗口](../assets/include-exclude.png)
+![突出显示“包括/排除”值的数据视图窗口](../assets/include-exclude.png)
 
 | 设置 | 描述/用例 |
 | --- | --- |

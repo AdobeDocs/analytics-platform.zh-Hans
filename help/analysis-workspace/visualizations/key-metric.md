@@ -37,14 +37,14 @@ ht-degree: 85%
 
 1. 通过选择量度、主要日期范围、比较日期范围和过滤器（如果需要）来配置可视化图表：
 
-   ![显示指标、主日期范围、比较日期范围和区段选项的关键指标配置。](assets/key-metric-config.png)
+   ![显示指标、主要日期范围、比较日期范围和区段选项的关键指标配置。](assets/key-metric-config.png)
 
    | 配置设置 | 定义 |
    | --- | --- |
    | **[!UICONTROL 量度]** | 选择您希望检查的量度。 支持全部量度。 |
    | **[!UICONTROL 主要日期范围]** | 自由表格的当前日期范围。 |
    | **[!UICONTROL 比较日期范围。]** | 要与主日期范围进行比较的日期范围。 |
-   | **[!UICONTROL 过滤器（可选）]** | 您对此摘要特别感兴趣的任何过滤器。 |
+   | **[!UICONTROL 筛选器（可选）]** | 您对此摘要特别感兴趣的任何过滤器。 |
 
    {style="table-layout:auto"}
 
@@ -79,7 +79,7 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 ## 查看输出
 
-![显示量度、摘要变化、摘要编号和折线图的关键量度输出。](assets/key-metric-output.png)
+![显示量度、摘要变化、摘要数字和折线图的关键量度输出。](assets/key-metric-output.png)
 
 请注意：
 
@@ -89,13 +89,13 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 * 从此处，您可以将鼠标悬停在线形图上，查看各个日期的统计数据：
 
-![访问统计数据](assets/key-metric-output2.png)
+![访问统计信息](assets/key-metric-output2.png)
 
 ## 可视化设置
 
 关键量度摘要提供了多种灵活的设置，以便更好地报告和沟通重要量度。 可以通过可视化图表右上角的齿轮图标访问设置。
 
-![显示“摘要”显示类型、常规和显示选项的关键量度摘要设置。](assets/key-metric-settings.png)
+![显示摘要显示类型、常规和显示选项的关键量度摘要设置。](assets/key-metric-settings.png)
 
 | 设置 | 描述 |
 | --- | --- |
@@ -116,7 +116,7 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 1. 单击可视化右上角的铅笔图标（设置齿轮图标旁边）。
 
-   ![可视化编辑图标](assets/edit-icon.png)
+   ![可视化编辑图标.s](assets/edit-icon.png)
 
    现在，您将返回到原始配置视图。
 

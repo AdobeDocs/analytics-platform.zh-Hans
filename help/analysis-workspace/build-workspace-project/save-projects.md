@@ -44,7 +44,7 @@ Analysis Workspace 中的所有项目每 2 分钟自动保存到本地计算机�
 
    1. 转到 Analysis Workspace 登录页面上的&#x200B;[!UICONTROL **已恢复的项目**]&#x200B;文件夹。
 
-      ![突出显示“恢复的项目”文件夹的文件夹列表。](assets/recovered-folder.png)
+      ![突出显示已恢复项目文件夹的文件夹列表。](assets/recovered-folder.png)
 
    1. 打开您的项目并将其保存到所需位置。
 
@@ -63,13 +63,13 @@ Analysis Workspace 中的所有项目每 2 分钟自动保存到本地计算机�
 * **另存为：** 将您最近的更改另存为新项目。原始项目仅保存最新的自动保存的更改。
 * **放弃更改：**&#x200B;放弃您最近的更改。该项目保留最近自动保存的更改。
 
-![单击保存以保存对项目所做的更改。](assets/existing-save.png)
+![单击“保存”将更改保存到项目。](assets/existing-save.png)
 
 ### 离开或关闭选项卡
 
 如果您在查看包含尚未自动保存的更改的项目时离开页面或关闭浏览器选项卡，浏览器会警告您未保存的更改将丢失。您可以选择离开或取消。
 
-![单击“离开”以离开站点，或单击“取消”以导航而不保存更改。 ](assets/browser-image.png)
+![单击“离开”离开网站，或单击“取消”导航而不保存更改。](assets/browser-image.png)
 
 ### 浏览器崩溃或会话超时
 
@@ -91,7 +91,7 @@ Analysis Workspace 中的所有项目每 2 分钟自动保存到本地计算机�
 
 1. 转到&#x200B;**[!UICONTROL 项目]** > **[!UICONTROL 打开以前的版本]**
 
-   ![以前保存的项目版本列表和选项可显示“所有版本”或“仅版本”并带有注释。](assets/previous-versions.png)
+   ![以前保存的项目版本列表和选项显示“所有版本”或“仅带注释的版本”。](assets/previous-versions.png)
 
 1. 查看可用的先前版本列表。
    此时会显示[!UICONTROL 时间戳]和[!UICONTROL 编辑者]，如果在[!UICONTROL 编辑者]保存时添加了注释，还会显示[!UICONTROL 注释]。不带注释的版本会存储 90 天；带注释的版本会存储 1 年。

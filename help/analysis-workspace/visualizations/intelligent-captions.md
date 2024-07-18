@@ -7,13 +7,13 @@ role: User
 source-git-commit: 542cbb35d3870b8eef6fe252d1ac20962a1b2b8f
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
 # 智能题注
 
-智能字幕使用高级机器学习和创作AI为Workspace可视化提供有价值的自然语言见解。 初始版本为提供自动生成的见解 [折线图](line.md) 可视化。 （随后将提供其他可视化图表。）
+智能题注使用先进的机器学习和生成式 AI 为工作区可视化提供有价值的自然语言见解。初始版本为[折线图](line.md)可视化图表提供了自动生成的见解。 （随后将提供其他可视化图表。）
 
 智能字幕面向：
 
@@ -24,9 +24,9 @@ ht-degree: 2%
 
 ## 启动智能字幕 {#launch}
 
-要为折线图可视化启动自动生成的字幕，请单击 **[!UICONTROL 智能字幕]** 图标（位于可视化图表右上方）。
+要为折线图可视化启动自动生成的字幕，请单击可视化右上角的&#x200B;**[!UICONTROL 智能字幕]**&#x200B;图标。
 
-![显示“产品查看趋势”的智能字幕的“启动分析”窗口。 ](assets/intell-caps-1.png)
+![显示产品查看趋势智能字幕的“启动分析”窗口。](assets/intell-caps-1.png)
 
 自然语言洞察正在生成。
 
@@ -48,13 +48,13 @@ ht-degree: 2%
 
 ## 复制到剪贴板 {#copy}
 
-您可以将字幕复制到剪贴板并将它们粘贴到Powerpoint或其他工具中。 查找 **[!UICONTROL 将字幕复制到剪贴板]** 图标（在题注对话框的右上角）。
+您可以将字幕复制到剪贴板并将它们粘贴到Powerpoint或其他工具中。 在字幕对话框的右上角找到&#x200B;**[!UICONTROL 将字幕复制到剪贴板]**&#x200B;图标。
 
 ## 编辑字幕 {#edit}
 
 您可以编辑字幕，如隐藏或取消隐藏特定类别的洞察。 例如，如果您不想了解有关最小订单的分析，则只需隐藏该信息，然后单击应用，它就不会再次显示。
 
-1. 单击 **[!UICONTROL 编辑智能字幕显示]** 图标（位于剪贴板图标旁边）。
+1. 单击剪贴板图标旁边的&#x200B;**[!UICONTROL 编辑智能字幕显示]**&#x200B;图标。
 
 1. 在“编辑”对话框中，单击要隐藏的洞察旁边的眼睛图标。
 
@@ -64,14 +64,14 @@ ht-degree: 2%
 
 ## 导出字幕 {#export}
 
-您可以 **通过PDF导出字幕**，只要使用生成的字幕保存项目。
+您可以&#x200B;**通过PDF**&#x200B;导出字幕，但前提是项目是在生成的字幕下保存的。
 
 ## 关闭字幕 {#toggle}
 
-如果您不希望生成智能字幕，可以通过转到可视化首选项并取消选中来关闭此功能 **[!UICONTROL 显示智能字幕]**.
+如果不希望生成智能字幕，可以转到可视化首选项并取消选中&#x200B;**[!UICONTROL 显示智能字幕]**&#x200B;来关闭此功能。
 
-![折线图可视化图表选项显示用于取消选中显示智能字幕的选项。](assets/toggle-captions.png)
+![显示取消选中显示智能字幕选项的折线图可视化选项。](assets/toggle-captions.png)
 
 ## 移动记分卡中的智能字幕
 
-Customer Journey Analytics中还提供了智能字幕 [移动记分卡](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions).
+智能字幕还在Customer Journey Analytics[移动记分卡](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions)中可用。

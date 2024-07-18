@@ -16,15 +16,15 @@ ht-degree: 57%
 
 您可以在Analysis Workspace中创建自定义日期范围并将其另存为时间组件。
 
-有关将现有日期范围添加到项目的信息，请参阅 [日历和日期范围概述](/help/components/date-ranges/calendar.md).
+有关将现有日期范围添加到项目的信息，请参阅[日历和日期范围概述](/help/components/date-ranges/calendar.md)。
 
 要创建自定义日期范围，请执行以下操作：
 
-1. 在Adobe Analytics中，选择 **[!UICONTROL 组件]** > **[!UICONTROL 日期范围]**.
+1. 在Adobe Analytics中，选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 日期范围]**。
 
    ![日期范围页面](assets/date-ranges.png)
 
-1. 选择 [!UICONTROL **创建新日期范围**].
+1. 选择&#x200B;[!UICONTROL **新建日期范围**]。
 
 1. 在日期范围生成器中，指定以下信息：
 
@@ -34,7 +34,7 @@ ht-degree: 57%
    | [!UICONTROL **描述**] | 日期范围的描述。 |
    | [!UICONTROL **标记**] | 要应用于日期范围的任何标记。 |
    | [!UICONTROL **日期范围**] | 允许您选择自定义日期范围。 默认情况下，选择最近30天。 |
-   | [!UICONTROL **预设**] | 从预设日期范围列表中选择，例如 [!UICONTROL **昨天**]， [!UICONTROL **最近7天**]， [!UICONTROL **最近30天**]，等等。 |
+   | [!UICONTROL **预设**] | 从预设日期范围的列表中进行选择，如&#x200B;[!UICONTROL **昨天**]、[!UICONTROL **最近7天**]、[!UICONTROL **最近30天**]&#x200B;等。 |
    | [!UICONTROL **开始时间**] | 日期范围在一天中的开始时间。 |
    | [!UICONTROL **结束时间**] | 日期范围结束的时间。 |
    | [!UICONTROL **使用滚动日期**] | 滚动日期允许您生成一个动态报告，从而可根据您运行报告的时间向前或向后查看一段特定的时间段。例如，如果您要报告“上个月”安排的所有订单（基于“创建日期”字段）并在十二月运行该报告，则会看到十一月安排的订单。如果您在一月运行同一报告，则会看到十二月安排的订单。<ul><li>**[!UICONTROL 日期预览]**：指示滚动日程表包含哪些时间段。</li><li>**[!UICONTROL 开始]**：您可以在当天、当周、当月、当季、当年之间进行选择。</li><li>**[!UICONTROL 结束]**：您可以在当天、当周、当月、当季、当年之间进行选择。</li></ul><br>默认选定。 |

@@ -22,11 +22,11 @@ ht-degree: 0%
 
 | 升级任务 | 详细信息 |
 |---------|----------|
-| **第1步： [升级入门](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)** | 了解升级到Customer Journey Analytics的好处以及基本的升级过程。 |
+| **步骤1：[开始升级](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)** | 了解升级到Customer Journey Analytics的好处以及基本的升级过程。 |
 | <span class="preview">**步骤2：选择升级路径**</span> | <span class="preview">有多种方法可用于升级到Customer Journey Analytics。 根据贵组织当前的Adobe Analytics环境和长期目标，选择最适合贵组织的方法。</span> |
-| **步骤3： [将数据发送到Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)** | 将数据发送到Adobe Experience Platform的过程因您在步骤2中选择的升级路径而异。 |
-| **第4步： [保留历史数据](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)** | 大多数组织都需要将其历史Adobe Analytics数据保留一定时间。 可以使用各种选项来完成此操作。 |
-| **步骤5： [执行其他实施任务](/help/getting-started/cja-getting-started.md)** | 在升级过程的这一阶段，您需要在Customer Journey Analytics环境准备就绪之前执行各种任务。<p>这些附加任务适用于从Adobe Analytics升级以及新的Customer Journey Analytics实施。</p><p>这些任务包括：</p><ul><li>将其他数据引入Experience Platform</li><li>在Platform数据集与Customer Journey Analytics之间创建连接</li><li>创建数据视图</li><li>移植报表API使用情况</li><li>考虑数据馈送和Data Warehouse</li><li>迁移项目和组件</li><li>Planning用户载入</li></ul> <p>有关更多信息，请参阅 [Customer Journey Analytics快速入门](/help/getting-started/cja-getting-started.md). |
+| **步骤3：[将数据发送到Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)** | 将数据发送到Adobe Experience Platform的过程因您在步骤2中选择的升级路径而异。 |
+| **步骤4：[保留历史数据](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)** | 大多数组织都需要将其历史Adobe Analytics数据保留一定时间。 可以使用各种选项来完成此操作。 |
+| **步骤5：[执行其他实施任务](/help/getting-started/cja-getting-started.md)** | 在升级过程的这一阶段，您需要在Customer Journey Analytics环境准备就绪之前执行各种任务。<p>这些附加任务适用于从Adobe Analytics升级以及新的Customer Journey Analytics实施。</p><p>这些任务包括：</p><ul><li>将其他数据引入Experience Platform</li><li>在Platform数据集与Customer Journey Analytics之间创建连接</li><li>创建数据视图</li><li>移植报表API使用情况</li><li>考虑数据馈送和Data Warehouse</li><li>迁移项目和组件</li><li>Planning用户载入</li></ul> <p>有关详细信息，请参阅[Customer Journey Analytics快速入门](/help/getting-started/cja-getting-started.md)。 |
 
 {style="table-layout:auto"}
 
@@ -44,11 +44,11 @@ ht-degree: 0%
 
 要确定组织的最佳升级路径，应按顺序阅读以下部分：
 
-1. 首先， [了解可用的升级路径](#understand-upgrade-paths).
+1. 首先，[了解可用的升级路径](#understand-upgrade-paths)。
 
-1. 然后， [评估哪些升级路径可供您使用](#assess-the-upgrade-paths-available-to-you-based-on-your-current-adobe-analytics-implementation).
+1. 然后，[评估您可用的升级路径](#assess-the-upgrade-paths-available-to-you-based-on-your-current-adobe-analytics-implementation)。
 
-1. 最后， [权衡每个升级路径的优缺点](#weigh-the-advantages-and-disadvantages-of-the-upgrade-paths-available-to-you).
+1. 最后，[权衡每个升级路径](#weigh-the-advantages-and-disadvantages-of-the-upgrade-paths-available-to-you)的优缺点。
 
 ## 了解升级路径
 
@@ -60,10 +60,10 @@ ht-degree: 0%
 
 | 升级路径 | 工作量 | 长期生存能力 |
 |---------|----------|---------|
-| **Experience PlatformWeb SDK的新实施**</br>&#x200B;您可以通过重新实施Experience PlatformWeb SDK来开始使用Customer Journey Analytics。 这样，您就可以开始向Adobe Experience PlatformEdge Network和Customer Journey Analytics发送数据。 <p>对于尚未使用Web SDK的组织，此升级路径可能是将数据导入Edge Network的最直接方法，因为它所需的步骤最少；但是，由于所有工作都是预先完成的（例如创建XDM架构），因此它需要更大的初始工作。</p><p>基本步骤为：</p><ol><li>为您的组织创建XDM架构。</li><li>实施Web SDK。</li><li>将数据发送到Platform。</li></ol> | 高 | 高 |
-| **迁移Adobe Analytics实施以使用Web SDK**</br>&#x200B;如果您的Adobe Analytics实施AppMeasurement或Analytics扩展，则可以对其进行迁移，以使用Adobe Experience Platform Web SDK在将数据发送到Customer Journey Analytics之前开始向Edge Network和Adobe Analytics发送数据。<p>对于尚未使用Web SDK的组织来说，这是将数据导入Edge Network的最简单、最顺畅的方法；它需要更多步骤，但提供了从Adobe Analytics到Customer Journey Analytics的更系统化的过渡，并且可实现更具体的里程碑。</p><p>基本步骤为：</p><ol><li>将您现有的Adobe Analytics实施移动到Web SDK中，并验证所有内容在Adobe Analytics中均可正常工作。</li><li>根据需要为您的组织创建XDM架构。</li><li>使用数据流映射将数据对象中的所有字段映射到您的XDM架构。</li><li>将数据发送到Platform。</li></ol> | 审核 | 高 |
-| **配置现有的Adobe Analytics Web SDK实施**</br>&#x200B;如果您的Adobe Analytics实施已经在使用Adobe Experience Platform Web SDK，则可以通过设置数据流开始向Platform发送数据。 或者，如果您已经将数据发送到Platform，则只需在Platform数据集和Customer Journey Analytics之间创建连接即可。<p>在将数据发送到Platform以用于Customer Journey Analytics之前，请考虑更新您的Adobe Analytics架构以满足您组织的特定需求以及您使用的任何其他平台应用程序。</p><p>基本步骤为：</p><ol><li>开始将数据发送到Platform。<p>如果您已经使用Adobe Analytics实施将数据发送到Platform，则不需要执行此步骤。 您只需在Platform数据集与Customer Journey Analytics之间创建连接即可，如本流程后面部分所述。</p></li><li>（可选）根据需要为您的组织创建XDM架构。</li><li>（视情况而定）如果您创建了XDM架构，请使用数据流映射将数据对象中的所有字段映射到XDM架构。</li></ol> | 低 | 高 |
-| **使用Analytics源连接器**</br>&#x200B;如果您的Adobe Analytics实施AppMeasurement或Analytics扩展，则可以开始以Customer Journey Analytics将数据发送到数据视图。<p>这是将数据导入Customer Journey Analytics的最简单方法，但长期而言是最不可行的方法。</p> | 低 | 低 |
+| **Experience PlatformWeb SDK的新实现**</br>&#x200B;您可以通过执行Customer Journey AnalyticsWeb SDK的新实现来开始使用Experience Platform。 这样，您就可以开始向Adobe Experience PlatformEdge Network和Customer Journey Analytics发送数据。 <p>对于尚未使用Web SDK的组织，此升级路径可能是将数据导入Edge Network的最直接方法，因为它所需的步骤最少；但是，由于所有工作都是预先完成的（例如创建XDM架构），因此它需要更大的初始工作。</p><p>基本步骤为：</p><ol><li>为您的组织创建XDM架构。</li><li>实施Web SDK。</li><li>将数据发送到Platform。</li></ol> | 高 | 高 |
+| **迁移您的Adobe Analytics实施以使用Web SDK**</br>&#x200B;如果您的Adobe Analytics实施AppMeasurement或Analytics扩展，您可以迁移它以使用Adobe Experience Platform Web SDK在将数据发送到Customer Journey Analytics之前开始将数据发送到Edge Network和Adobe Analytics。<p>对于尚未使用Web SDK的组织来说，这是将数据导入Edge Network的最简单、最顺畅的方法；它需要更多步骤，但提供了从Adobe Analytics到Customer Journey Analytics的更系统化的过渡，并且可实现更具体的里程碑。</p><p>基本步骤为：</p><ol><li>将您现有的Adobe Analytics实施移动到Web SDK中，并验证所有内容在Adobe Analytics中均可正常工作。</li><li>根据需要为您的组织创建XDM架构。</li><li>使用数据流映射将数据对象中的所有字段映射到您的XDM架构。</li><li>将数据发送到Platform。</li></ol> | 审核 | 高 |
+| **配置您现有的Adobe Analytics Web SDK实施**</br>&#x200B;如果您的Adobe Analytics实施已经在使用Adobe Experience Platform Web SDK，则可以通过设置数据流开始向Platform发送数据。 或者，如果您已经将数据发送到Platform，则只需在Platform数据集和Customer Journey Analytics之间创建连接即可。<p>在将数据发送到Platform以用于Customer Journey Analytics之前，请考虑更新您的Adobe Analytics架构以满足您组织的特定需求以及您使用的任何其他平台应用程序。</p><p>基本步骤为：</p><ol><li>开始将数据发送到Platform。<p>如果您已经使用Adobe Analytics实施将数据发送到Platform，则不需要执行此步骤。 您只需在Platform数据集与Customer Journey Analytics之间创建连接即可，如本流程后面部分所述。</p></li><li>（可选）根据需要为您的组织创建XDM架构。</li><li>（视情况而定）如果您创建了XDM架构，请使用数据流映射将数据对象中的所有字段映射到XDM架构。</li></ol> | 低 | 高 |
+| **使用Analytics Source Connector**</br>&#x200B;如果您的Adobe Analytics实施AppMeasurement或Analytics扩展，则可以开始以Customer Journey Analytics将数据发送到数据视图。<p>这是将数据导入Customer Journey Analytics的最简单方法，但长期而言是最不可行的方法。</p> | 低 | 低 |
 
 {style="table-layout:auto"}
 
@@ -81,8 +81,8 @@ ht-degree: 0%
 
 | 现有Adobe Analytics实施 | 可用的升级路径 |
 |---------|----------|
-| AppMeasurement | <ul><li>Experience PlatformWeb SDK的新实施</li><li>将Adobe Analytics迁移到Web SDK</li><li>Analytics源连接器</li></ul> |
-| Adobe Analytics 扩展 | <ul><li>Experience PlatformWeb SDK的新实施</li><li>将Adobe Analytics迁移到Web SDK</li><li>Analytics源连接器</li></ul> |
+| AppMeasurement | <ul><li>Experience PlatformWeb SDK的新实施</li><li>将Adobe Analytics迁移到Web SDK</li><li>Analytics Source Connector</li></ul> |
+| Adobe Analytics 扩展 | <ul><li>Experience PlatformWeb SDK的新实施</li><li>将Adobe Analytics迁移到Web SDK</li><li>Analytics Source Connector</li></ul> |
 | Web SDK | <ul><li>配置Adobe Analytics Web SDK实施以将数据发送到Platform</li></ul> |
 
 {style="table-layout:auto"}
@@ -91,7 +91,7 @@ ht-degree: 0%
 
 给定升级路径的优缺点因您现有的Adobe Analytics实施而异。
 
-在使用以下信息确定适合您的升级路径之前，请查看 [了解升级路径](#understand-migration-methods) 如果你还没有的话。
+在使用以下信息确定适合您的升级路径之前，请查看[了解升级路径](#understand-migration-methods)（如果尚未了解）中的信息。
 
 ### 对于使用的Adobe Analytics实施：AppMeasurement和Adobe Analytics扩展
 
@@ -103,7 +103,7 @@ ht-degree: 0%
 
 | 优势 | 缺点 |
 |----------|---------|
-| <ul><li>**提供在Experience ExperienceEdge Network中托管数据的所有优势**： <p>这些优势包括：</p><ul><li>高性能报表和数据可用性，因为Adobe Experience Platform是专为提供强大功能而构建的 [实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>整合其他Experience Cloud产品（AJO、RTCDP等）之间Adobe Experience Cloud数据收集的实施</li><li>不依赖于Adobe Analytics命名法(属性、eVar、事件等)</li></ul></li><li>**面向未来**：未来的实施更新更轻松。</li></ul> | <ul><li>**需要从头开始的新实施**：要求从头开始执行新实施意味着以下缺点： </li><ul><li>**耗时**：这是最耗时、最苛刻的升级路径，因为这要求您从头开始实施新版本。</li><li>**必须在XDM中重新创建完整架构**：您必须在XDM中重新创建完整架构，然后才能开始实施Web SDK。</li><li>**必须重新创建规则和数据元素**：在开始实施Web SDK之前，您必须从Adobe Analytics实施重新创建任何规则条件和数据元素。</li></ul></ul> |
+| <ul><li>**提供在ExperienceEdge Network中托管数据的所有优点**： <p>这些优势包括：</p><ul><li>高性能报表和数据可用性，因为Adobe Experience Platform旨在支持[实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>在其他Experience Cloud产品(AJO、RTCDP等)之间整合Adobe Experience Cloud数据收集的实施</li><li>不依赖于Adobe Analytics命名法(属性、eVar、事件等)</li></ul></li><li>**未来校对**：未来实施更新更容易。</li></ul> | <ul><li>**需要从头开始的新实施**：要求从头开始执行新实施意味着以下缺点： </li><ul><li>**耗时**：这是最耗时、要求最高的升级路径，因为它要求您从新的实施重新开始。</li><li>**必须在XDM中重新创建完整架构**：必须先在XDM中重新创建完整架构，然后才能开始实施Web SDK。</li><li>**必须重新创建规则和数据元素**：在开始实施Web SDK之前，必须从Adobe Analytics实施重新创建任何规则条件和数据元素。</li></ul></ul> |
 
 {style="table-layout:auto"}
 
@@ -113,17 +113,17 @@ ht-degree: 0%
 
 | 优势 | 缺点 |
 |----------|---------|
-| <ul><li>**提供在Experience ExperienceEdge Network中托管数据的所有优势**： <p>这些优势包括：</p><ul><li>高性能报表和数据可用性，因为Adobe Experience Platform是专为提供强大功能而构建的 [实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>整合其他Experience Cloud产品（AJO、RTCDP等）之间Adobe Experience Cloud数据收集的实施</li><li>不依赖于Adobe Analytics命名法(属性、eVar、事件等)</li></ul><li>**使用您现有的实施**：虽然此方法要求对实施进行一些更改，但不需要从头开始实施全新的实施。 您可以在不影响现有Adobe Analytics报表的情况下，使用现有数据层和代码，只需对实施逻辑进行最低限度的更改即可。</li><li>**提供了灵活性，以便稍后为您的组织创建XDM架构**：您可以迁移现有的Adobe Analytics实施以使用Web SDK并验证一切都在Adobe Analytics中正常工作，然后创建XDM架构。 这种灵活性使得升级到Customer Journey Analytics的过程更加有条不紊，而且更加深思熟虑。</li></ul> | <ul><li>**需要映射才能将数据发送到Platform**：当您的组织准备好使用Customer Journey Analytics时，您必须将数据发送到Adobe Experience Platform中的数据集。 此操作要求数据对象中的每个字段都是数据流映射工具中的条目，并将其分配给XDM架构字段。 此工作流的映射只需执行一次，并且不涉及对实施进行更改。 但是，这是一个额外的步骤，在XDM对象中发送数据时不需要执行此步骤。</li><li>**技术债务**：由于此方法使用现有实施的修改形式，因此将来需要跟踪实施逻辑和执行更改会更加困难。 </li></ul> |
+| <ul><li>**提供在ExperienceEdge Network中托管数据的所有优点**： <p>这些优势包括：</p><ul><li>高性能报表和数据可用性，因为Adobe Experience Platform旨在支持[实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>在其他Experience Cloud产品(AJO、RTCDP等)之间整合Adobe Experience Cloud数据收集的实施</li><li>不依赖于Adobe Analytics命名法(属性、eVar、事件等)</li></ul><li>**使用您现有的实施**：虽然此方法需要一些实施更改，但它不需要从头开始的全新实施。 您可以在不影响现有Adobe Analytics报表的情况下，使用现有数据层和代码，只需对实施逻辑进行最低限度的更改即可。</li><li>**提供灵活性，以便稍后为您的组织创建XDM架构**：您可以迁移现有的Adobe Analytics实施以使用Web SDK并验证所有内容在Adobe Analytics中是否都正常工作，然后创建XDM架构。 这种灵活性使得升级到Customer Journey Analytics的过程更加有条不紊，而且更加深思熟虑。</li></ul> | <ul><li>**需要映射才能将数据发送到Platform**：当您的组织准备好使用Customer Journey Analytics时，您必须将数据发送到Adobe Experience Platform中的数据集。 此操作要求数据对象中的每个字段都是数据流映射工具中的条目，并将其分配给XDM架构字段。 此工作流的映射只需执行一次，并且不涉及对实施进行更改。 但是，这是一个额外的步骤，在XDM对象中发送数据时不需要执行此步骤。</li><li>**技术债务**：由于此方法使用现有实施的修改形式，因此将来需要跟踪实施逻辑和执行更改会更加困难。 </li></ul> |
 
 {style="table-layout:auto"}
 
 +++
 
-+++使用Analytics源连接器
++++使用Analytics Source Connector
 
 | 优势 | 缺点 |
 |----------|---------|
-| <ul><li>最省时和最苛刻的升级路径。 <p>以最少的投资将数据快速迁移到Customer Journey Analytics</p></li></ul> | <ul><li>**数据未发送到Edge Network**： <p>这会导致以下缺点：</p><ul><li>最高级别的 [延迟](/help/technotes/guardrails.md#latencies) 在所有升级路径的报告中；未针对实时个性化用例进行优化。</li><li>数据不能与其他Adobe Experience Platform应用程序共享；它只限于Customer Journey Analytics</li><li>依赖于Adobe Analytics命名法(属性、eVar、事件等)</li></ul><li>**未来难以迁移到Web SDK**： </li><li>**在架构中使用Analytics Experience Event字段组**：此字段组添加了许多Customer Journey Analytics架构中不需要的Adobe Analytics事件。  这可能会导致Customer Journey Analytics所需的架构更加杂乱、复杂。</li></ul> |
+| <ul><li>最省时和最苛刻的升级路径。 <p>以最少的投资将数据快速迁移到Customer Journey Analytics</p></li></ul> | <ul><li>**数据未发送到Edge Network**： <p>这会导致以下缺点：</p><ul><li>在所有升级路径上的报表中达到[延迟](/help/technotes/guardrails.md#latencies)的最高级别；未针对实时个性化用例进行优化。</li><li>数据不能与其他Adobe Experience Platform应用程序共享；它只限于Customer Journey Analytics</li><li>依赖于Adobe Analytics命名法(属性、eVar、事件等)</li></ul><li>**将来难以移动到Web SDK**： </li><li>**在您的架构中使用Analytics Experience Event字段组**：此字段组添加了许多Customer Journey Analytics架构中不需要的Adobe Analytics事件。  这可能会导致Customer Journey Analytics所需的架构更加杂乱、复杂。</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -141,7 +141,7 @@ ht-degree: 0%
 
 | 优势 | 缺点 |
 |----------|---------|
-| 如果您的Adobe Analytics实施已经在使用Web SDK，则这是首选升级路径。<ul><li>**提供在Experience ExperienceEdge Network中托管数据的所有优势**： <p>这些优势包括：</p><ul><li>高性能报表和数据可用性，因为Adobe Experience Platform是专为提供强大功能而构建的 [实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>整合其他Experience Cloud产品（AJO、RTCDP等）之间Adobe Experience Cloud数据收集的实施</li><li>不依赖于Adobe Analytics命名法(属性、eVar、事件等)</li></ul><li>**使用您现有的实施**：虽然此方法要求对实施进行一些更改，但不需要从头开始实施全新的实施。 您可以在不影响现有Adobe Analytics报表的情况下，使用现有数据层和代码，只需对实施逻辑进行最低限度的更改即可。</li><li>**提供使用XDM架构的选项**：您可以选择使用现有Adobe Analytics架构或创建XDM架构，并将数据对象中的字段映射到XDM架构。 [XDM架构](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home#xdm-schemas) 是一种灵活的架构，用于定义您需要的任何字段，并且只定义相关的字段。 <p>请参阅下面的“使用您自己的XDM架构”，详细了解使用您自己的XDM架构的优势。</p></li><li>**保留规则和数据元素**：虽然它确实需要新的规则操作，但您可以用最小的更改重用现有的数据元素和规则条件。</li><li>**面向未来**：如果您选择使用自己的XDM架构，则未来实施更新会更轻松。</li></ul> | 无 |
+| 如果您的Adobe Analytics实施已经在使用Web SDK，则这是首选升级路径。<ul><li>**提供在ExperienceEdge Network中托管数据的所有优点**： <p>这些优势包括：</p><ul><li>高性能报表和数据可用性，因为Adobe Experience Platform旨在支持[实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>在其他Experience Cloud产品(AJO、RTCDP等)之间整合Adobe Experience Cloud数据收集的实施</li><li>不依赖于Adobe Analytics命名法(属性、eVar、事件等)</li></ul><li>**使用您现有的实施**：虽然此方法需要一些实施更改，但它不需要从头开始的全新实施。 您可以在不影响现有Adobe Analytics报表的情况下，使用现有数据层和代码，只需对实施逻辑进行最低限度的更改即可。</li><li>**提供使用XDM架构的选项**：您可以选择使用现有的Adobe Analytics架构，也可以创建XDM架构并将数据对象中的字段映射到XDM架构。 [XDM架构](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home#xdm-schemas)是一个灵活的架构，用于定义您需要的任何字段，并且只定义相关的字段。 <p>请参阅下面的“使用您自己的XDM架构”，详细了解使用您自己的XDM架构的优势。</p></li><li>**保留规则和数据元素**：虽然它确实需要新的规则操作，但您可以重复使用现有的数据元素和规则条件，只需很少的更改。</li><li>**未来验证**：如果您选择使用自己的XDM架构，则未来实施更新会更轻松。</li></ul> | 无 |
 
 {style="table-layout:auto"}
 
@@ -171,4 +171,4 @@ ht-degree: 0%
 
 ## 接下来，将数据发送到Adobe Experience Platform
 
-使用上述信息选择升级路径后，了解如何 [将数据发送到Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md) 取决于您选择的升级路径。
+使用上述信息选择升级路径后，了解如何根据您选择的升级路径[将数据发送到Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)。

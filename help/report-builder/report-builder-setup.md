@@ -72,11 +72,11 @@ ht-degree: 87%
 
 联系 IT 或安全团队，请求批准使用 Report Builder 插件。获得批准之后，在“Office 插件”对话框中，选择“管理员托管”选项卡。
 
-![“Office加载项”对话框中的“管理员托管”选项卡。](./assets/image1.png)
+![Office加载项对话框中的管理员管理选项卡。](./assets/image1.png)
 
 安装 Report Builder 插件后，Report Builder 图标显示现在 Excel 功能区的“开始”选项卡下。
 
-![Excel中的“Report Builder”图标](./assets/rb_app_icon.png)
+![Excel中的Report Builder图标](./assets/rb_app_icon.png)
 
 ## 登录 Report Builder
 
@@ -104,7 +104,7 @@ ht-degree: 87%
 
 1. 从可用组织列表中选择组织。只列出您有访问权限的组织。
 
-   ![您可以访问的组织的列表。](./assets/image5.png)
+   ![您可以访问的组织列表。](./assets/image5.png)
 
 ## 注销
 

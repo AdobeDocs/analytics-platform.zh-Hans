@@ -22,7 +22,7 @@ ht-degree: 95%
 1. [创建项目](/help/analysis-workspace/home.md)，其中包含一个数据表。
 1. 在数据表中，右键单击某个行项目，然后选择&#x200B;**[!UICONTROL 划分]** > *`<item>`*。
 
-   ![步骤结果显示“从选定范围中创建警报”。](assets/fa_data_table_actions.png)
+   ![显示从所选内容创建警报的步骤结果。](assets/fa_data_table_actions.png)
 
    您可以跨选定的时段，按维度项目或者受众筛选条件来划分指标。此外，您还可以进一步深入到更精细的粒度级别。
 

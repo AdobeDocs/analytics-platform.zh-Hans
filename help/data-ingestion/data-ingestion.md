@@ -22,7 +22,7 @@ ht-degree: 65%
 
 请参阅前面[概述](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=zh-Hans)中所示的高级 Customer Journey Analytics 体系结构：
 
-![本节中描述的Customer Journey Analytics架构](./assets/cja-architecture.png)
+![Customer Journey Analytics架构（如本节所述）](./assets/cja-architecture.png)
 
 上述模式中的数据集可以来自各种来源：
 
@@ -48,11 +48,11 @@ ht-degree: 65%
 
 请注意，此功能根据贵公司购买的 SKU 包而有所不同：
 
-- 优先摄取基本：90分钟SLT处理内24小时生成的数据(适用于 **CJA基础** 和 **CJA选择**)
+- 优先摄取基本：90分钟SLT处理内24小时之前的数据（可用于&#x200B;**CJA Foundation**&#x200B;和&#x200B;**CJA Select**）
 
-- 优先级摄取中间：90分钟SLT处理内72小时之前的数据(适用于 **CJA Prime**)
+- 优先级摄取中间：90分钟SLT处理内72小时的旧数据（可用于&#x200B;**CJA Prime**）
 
-- 优先摄取高级：90分钟SLT处理内1周前的数据(适用于 **CJA Ultimate**)
+- 高级优先级摄取：90分钟SLT处理内的一周前数据（可用于&#x200B;**CJA Ultimate**）
 
 ## 从传统 Adobe Analytics 中获取和使用数据
 
@@ -67,19 +67,19 @@ ht-degree: 65%
 
 您希望使用Adobe技术分析您的网站，从其他解决方案进行迁移或开始跟踪您的人员的行为。 您希望遵循 Adobe 的最佳实施实践，即使用 Adobe Experience Platform SDK 和 Edge Network 来获取数据。然后您可以在 Customer Journey Analytics 中使用、组合和分析摄入的数据与来自其他渠道和数据源的数据。
 
-请参阅 [通过Adobe Experience Platform Web SDK摄取和使用数据](./aepwebsdk.md) 以了解更多信息。
+有关详细信息，请参阅[通过Adobe Experience Platform Web SDK摄取和使用数据](./aepwebsdk.md)。
 
 ### 使用Adobe Experience Platform Mobile SDK
 
 您要使用Adobe技术分析您的移动应用程序，并可能从其他解决方案进行迁移，或者从头开始跟踪人员在应用程序中的行为。 您希望遵循 Adobe 的最佳实施实践，即使用 Adobe Experience Platform SDK 和 Edge Network 来获取数据。然后您可以在 Customer Journey Analytics 中使用、组合和分析摄入的数据与来自其他渠道和数据源的数据。
 
-请参阅 [通过Adobe Experience Platform Mobile SDK摄取和使用数据](./aepmobilesdk.md) 以了解更多信息。
+有关详细信息，请参阅[通过Adobe Experience Platform Mobile SDK摄取和使用数据](./aepmobilesdk.md)。
 
 ### 使用Adobe Experience PlatformEdge Network服务器API
 
 您想要分析桌面应用程序、游戏主机上所玩的游戏、机顶盒上的视频流应用程序的使用情况或使用Adobe技术的IoT设备。 可以从其他解决方案进行迁移，或从头开始跟踪人员在这些设备上的行为。 您需要遵循Adobe的实施最佳实践，即使用Adobe Experience PlatformEdge Network服务器API和Edge Network来摄取数据。 然后您可以在 Customer Journey Analytics 中使用、组合和分析摄入的数据与来自其他渠道和数据源的数据。
 
-请参阅 [通过Adobe Experience PlatformEdge Network服务器API摄取和使用数据](./serverapi.md) 以了解更多信息。
+有关详细信息，请参阅[通过Adobe Experience PlatformEdge Network服务器API摄取和使用数据](./serverapi.md)。
 
 ## 摄取和使用批次数据
 

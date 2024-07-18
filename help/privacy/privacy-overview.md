@@ -17,7 +17,7 @@ ht-degree: 56%
 
 ## 数据管理
 
-Adobe Customer Journey Analytics与之间的集成 [Adobe Experience Platform数据管理](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=zh-Hans) 允许标记敏感Customer Journey Analytics数据并执行隐私政策。
+Adobe Customer Journey Analytics与[Adobe Experience Platform数据管理](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=zh-Hans)之间的集成允许标记敏感Customer Journey Analytics数据和实施隐私政策。
 
 在 Experience Platform 使用的数据集上创建的隐私标签和政策可以在 Customer Journey Analytics 数据视图工作流中显示。这些标签阻止或警告从敏感字段创建亮度和/或维度的用户。
 

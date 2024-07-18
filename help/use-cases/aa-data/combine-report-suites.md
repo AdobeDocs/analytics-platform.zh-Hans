@@ -13,9 +13,9 @@ ht-degree: 57%
 
 # 将报告包与不同的架构相结合
 
-此 [Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) 将Adobe Analytics中的报表包数据引入Adobe Experience Platform，以供Adobe Experience Platform应用程序(如Real-time Customer Data Platform和Customer Journey Analytics(Customer Journey Analytics))使用。 引入Adobe Experience Platform的每个报表包都会配置为单独的源连接数据流，而每个数据流都会作为Adobe Experience Platform数据湖中的数据集。 Analytics Source Connector会为每个报表包创建一个数据集。
+[Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)将来自Adobe Analytics的报告包数据引入Adobe Experience Platform，以供Adobe Experience Platform应用程序(如Real-time Customer Data Platform和Customer Journey Analytics(Customer Journey Analytics))使用。 引入Adobe Experience Platform的每个报表包都会配置为单独的源连接数据流，而每个数据流都会作为Adobe Experience Platform数据湖中的数据集。 Analytics Source Connector会为每个报表包创建一个数据集。
 
-客户使用的Customer Journey Analytics [连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans) 将Adobe Experience Platform数据湖中的数据集集成到Customer Journey AnalyticsAnalysis Workspace中。 但是，在连接内组合报告包时，需要使用Adobe Experience Platform解决报告包之间的架构差异 [数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans) 功能。 其目的是确保Adobe Analytics变量（如prop和eVar）在Customer Journey Analytics中具有一致的含义。
+Customer Journey Analytics客户使用[连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans)将Adobe Experience Platform数据湖中的数据集集成到Customer Journey AnalyticsAnalysis Workspace中。 但是，在连接内组合报告包时，需要使用Adobe Experience Platform [数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)功能解决报告包之间的架构差异。 其目的是确保Adobe Analytics变量（如prop和eVar）在Customer Journey Analytics中具有一致的含义。
 
 ## 报告包之间的架构差异存在问题
 
@@ -30,10 +30,10 @@ ht-degree: 57%
 
 此外，假设您执行以下操作：
 
-- 创建用于摄取的Analytics源连接（不使用数据准备） **报告包A** 移入Adobe Experience Platform数据湖为 **数据集a**.
-- 创建用于摄取的Analytics源连接（不使用数据准备） **报告包B** 移入Adobe Experience Platform数据湖为 **数据集B**.
-- 创建 [Customer Journey Analytics连接](/help/connections/create-connection.md) 已调用 **所有报表包** 那个合并了数据集A和数据集B。
-- 创建 [Customer Journey Analytics数据视图](/help/data-views/create-dataview.md) 已调用 **全局视图** 该连接基于所有报表包连接。
+- 创建Analytics源连接（不使用数据准备），将&#x200B;**报告包A**&#x200B;作为&#x200B;**数据集A**&#x200B;摄入Adobe Experience Platform数据湖。
+- 创建Analytics源连接（不使用数据准备），将&#x200B;**报告包B**&#x200B;作为&#x200B;**数据集B**&#x200B;摄入Adobe Experience Platform数据湖。
+- 创建名为&#x200B;**所有报表包**&#x200B;的[Customer Journey Analytics连接](/help/connections/create-connection.md)，该连接结合了数据集A和数据集B。
+- 创建名为&#x200B;**全局视图**&#x200B;的[Customer Journey Analytics数据视图](/help/data-views/create-dataview.md)，该视图基于所有报表包连接。
 
 如果不使用数据准备来解决数据集 A 和数据集 B 之间的架构差异，全局视图数据视图中的 eVar 将包含以下混合值：
 
@@ -52,7 +52,7 @@ ht-degree: 57%
 
 Experience Platform数据准备功能与Analytics Source Connector集成，可用于解决上述场景中描述的架构差异。 这会导致eVar在Customer Journey Analytics数据视图中具有一致的含义。 （以下使用的命名惯例可以通过自定义来满足您的需要。）
 
-1. 在为报告包A和报告包B创建源连接数据流之前， [创建新架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=zh-Hans) 在Adobe Experience Platform中(我们将其称为 **统一架构** 在我们的示例中。) 将以下内容添加到该架构中：
+1. 在为报告包A和报告包B创建源连接数据流之前，[在Adobe Experience Platform中创建新架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=zh-Hans)（在我们的示例中，我们将其称为&#x200B;**统一架构**。） 将以下内容添加到该架构中：
 
    | “统一架构” |
    | --- |
@@ -85,11 +85,11 @@ Experience Platform数据准备功能与Analytics Source Connector集成，可�
    | \_experience.analytics.customDimensions.eVars.eVar1 | _\&lt;path>_.商业单位 |
    | _experience.analytics.customDimensions.eVars.eVar2 | _\&lt;path>_.搜索项 |
 
-1. 现在创建 **所有报表包** 连接，用于组合Customer Journey AnalyticsA和数据集B。
+1. 现在，结合数据集A和数据集B，为Customer Journey Analytics创建一个&#x200B;**所有报表包**&#x200B;连接。
 
-1. 创建 **全局视图** Customer Journey Analytics中的数据视图。 忽略原始 eVar 字段，仅包括统一字段字段组中的字段。
+1. 在Customer Journey Analytics中创建&#x200B;**全局视图**&#x200B;数据视图。 忽略原始 eVar 字段，仅包括统一字段字段组中的字段。
 
-   **全局视图** Customer Journey Analytics中的数据视图：
+   Customer Journey Analytics中的&#x200B;**全局视图**&#x200B;数据视图：
 
    | 源字段 | 是否包含在数据视图中？ |
    | --- | --- | 

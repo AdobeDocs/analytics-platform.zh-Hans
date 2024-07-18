@@ -8,7 +8,7 @@ role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '242'
-ht-degree: 79%
+ht-degree: 80%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 79%
 
 您可以通过[项目共享工作流程](/help/analysis-workspace/curate-share/share-projects.md)与收件人共享“仅查看”项目。处于“可以查看”角色的收件人将获得更有限的项目体验。如果您将项目共享给不太熟悉您组织的数据结构(通常情况下是Analysis Workspace或Customer Journey Analytics)的用户，但仍希望他们在安全的环境中使用数据和见解，则可能希望这样做。
 
-![仅查看共享项目。](assets/view-only-project.png)
+![仅查看的共享项目。](assets/view-only-project.png)
 
 ## 禁用的交互
 

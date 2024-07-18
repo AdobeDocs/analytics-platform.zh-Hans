@@ -48,23 +48,24 @@ ht-degree: 87%
 
 1. 在 Adobe Experience Platform UI 的左边栏中，选择[!UICONTROL 数据管理]中的&#x200B;**[!UICONTROL 模式]**。
 
-1. 选择 **[!UICONTROL 创建架构]**..
+1. 选择&#x200B;**[!UICONTROL 创建架构]**。
+.
 1. 在“创建模式”向导的“选择类”步骤中：
 
-   1. 选择 **[!UICONTROL 个人资料]**.
+   1. 选择&#x200B;**[!UICONTROL 个人资料]**。
 
       ![创建模式](./assets/create-pr-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    Experience Event架构用于为 _行为_ 配置文件（如场景名称、要添加到购物车的按钮）的。 个人配置档案模式用于对个人配置档案&#x200B;_属性_（如姓名、电子邮件、性别）建模。
+      >    体验事件架构用于为配置文件的&#x200B;_行为_&#x200B;建模（如场景名称、要添加到购物车的按钮）。 个人配置档案模式用于对个人配置档案&#x200B;_属性_（如姓名、电子邮件、性别）建模。
 
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
 
-1. 在 [!UICONTROL 命名和审核步骤] 的 [!UICONTROL 创建架构] 向导：
+1. 在[!UICONTROL 创建架构]向导的[!UICONTROL 名称和审核步骤]中：
 
-   1. 输入 **[!UICONTROL 架构显示名称]** （可选）a **[!UICONTROL 描述]**.
+   1. 为您的架构输入&#x200B;**[!UICONTROL 架构显示名称]**&#x200B;和（可选）**[!UICONTROL 描述]**。
 
       ![命名您的模式](./assets/create-pr-schema-wizard-step-2.png)
 
@@ -217,7 +218,7 @@ ppales4@nsw.gov.au,365384,82.71,Silver
 
 6. 选择 **[!UICONTROL 完成]** 开始将您的批处理数据提取到 Adobe Experience Platform 中。
 
-请参阅 [将CSV文件映射到现有XDM架构](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html) 有关以下内容的更多信息：
+有关以下内容的更多信息，请参阅[将CSV文件映射到现有XDM架构](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html)：
 
 - 当传入数据与XDM架构不兼容时如何映射数据。
 - 使用映射模板，
@@ -229,7 +230,7 @@ ppales4@nsw.gov.au,365384,82.71,Silver
 
 要在 Customer Journey Analytics 中使用 Adobe Experience Platform 数据，您需要创建一个连接，其中包含因设置模式、数据集和工作流所产生的数据。
 
-通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告这些数据集，您必须首先在Adobe Experience Platform和工作区中的数据集之间建立连接。
+通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告这些数据集，您必须首先在Adobe Experience Platform和Workspace中的数据集之间建立连接。
 
 创建您的连接：
 
@@ -332,7 +333,7 @@ Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分�
 
    ![工作区选择数据视图](./assets/cja-projects-3.png)
 
-5. 要创建您的第一个报表，请开始将维度和量度拖放到 [!UICONTROL 自由格式表] 在 [!UICONTROL 面板]. 例如，拖动 `Program Points Balance` 以及 `Page View` 作为量度和 `email` 作为维度，以快速查看访问过您的网站并已加入忠诚度计划收集忠诚度点的个人资料。
+5. 要创建您的第一个报告，请在[!UICONTROL 面板]的[!UICONTROL 自由格式表]上开始拖放维度和量度。 例如，拖动 `Program Points Balance` 以及 `Page View` 作为量度和 `email` 作为维度，以快速查看访问过您的网站并已加入忠诚度计划收集忠诚度点的个人资料。
 
    ![工作区 – 第一份报告](./assets/cja-projects-5.png)
 

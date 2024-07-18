@@ -19,7 +19,7 @@ ht-degree: 93%
 - **[!UICONTROL 舒适]**：与紧凑版本相比，这个版本的视图多留出了一些边距。
 - **[!UICONTROL 展开]**（默认）：这是在工作区中最常用的视图。
 
-![“紧凑”、“舒适”和“展开”视图密度。](assets/view-density.png)
+![紧凑、舒适和扩展的视图密度。](assets/view-density.png)
 
 要设置视图密度，请执行以下操作：
 

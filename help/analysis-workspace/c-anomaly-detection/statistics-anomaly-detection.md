@@ -56,7 +56,7 @@ Analysis Workspace 中的异常检测使用一系列高级统计技术来确定�
 
 请注意，下面的示例明显提高了圣诞节和元旦的性能：
 
-![两个折线图显示有无假日性能的性能变化。](assets/anomaly_statistics.png)
+![两个折线图显示有或没有假日性能的性能变化。](assets/anomaly_statistics.png)
 
 ## 针对每小时粒度的异常分析
 

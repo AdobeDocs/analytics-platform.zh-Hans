@@ -26,7 +26,7 @@ ht-degree: 7%
 
 1. 在Analysis Workspace中，转到要查看目录的项目。
 
-1. 在左侧导航中，选择目录图标 ![目录图标](assets/toc-icon.png).
+1. 在左侧导航中，选择目录图标![目录图标](assets/toc-icon.png)。
 
    此时将显示项目的目录，并且默认情况下展开每个面板。
 

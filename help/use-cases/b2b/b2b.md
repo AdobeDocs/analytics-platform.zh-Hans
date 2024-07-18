@@ -32,9 +32,9 @@ ht-degree: 73%
 
 ## 1. 创建查询模式 (Experience Platform)
 
-创建您自己的架构 [查找](/help/technotes/glossary.md) 表可确保所用的数据集能够以正确设置（记录类型）的Customer Journey Analytics使用。 最佳实践是[创建一个名为查找的自定义模式类](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans#create-new-class)，该类中没有任何元素，可以重新用于所有查找表。
+为[lookup](/help/technotes/glossary.md)表创建自己的架构，以确保使用的数据集能够以正确设置（记录类型）的Customer Journey Analytics提供。 最佳实践是[创建一个名为查找的自定义模式类](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans#create-new-class)，该类中没有任何元素，可以重新用于所有查找表。
 
-![“创建新类”对话框。](../assets/create-new-class.png)
+![创建新类对话框。](../assets/create-new-class.png)
 
 ## 2.创建查询数据集(Experience Platform)
 
@@ -63,8 +63,8 @@ ht-degree: 73%
 | 数据集名称 | 描述 | Adobe Experience Platform架构类 | 数据集详细信息 |
 | --- | --- | --- | --- |
 | B2B Impression | 包含帐户级别的点击流（事件级）数据。例如，包含用于运行营销广告的电子邮件 ID 和相应的帐户 ID 以及营销活动名称。此外，还包含这些广告对每个用户的展示次数。 | 基于 XDM ExperienceEvent 模式类 | `emailID` 用作主标识，并分配到一个 `Customer ID` 命名空间。因此，它将在 Customer Journey Analytics 中显示为默认的&#x200B;**[!UICONTROL 人员 ID]**。![展示次数](../assets/impressions-mixins.png) |
-| B2B Profile | 此用户档案数据集可告知有关帐户中用户的更多信息，例如其职务、其所属帐户、其 LinkedIn 个人档案等。 | 基于“XDM 个人用户档案”模式类 | 选择 `emailID` 作为此架构中的主ID。 |
-| B2B Info | 请参阅上面的“创建查询数据集”。 | B2BAccount（自定义查询模式类） | 关系介于 `accountID` 并且，通过在Customer Journey Analytics中将B2B Info数据集与B2B Impressions数据集连接，已自动创建B2B Impressions数据集，如以下步骤中所述。 ![查询](../assets/lookup-mixins.png) |
+| B2B Profile | 此用户档案数据集可告知有关帐户中用户的更多信息，例如其职务、其所属帐户、其 LinkedIn 个人档案等。 | 基于“XDM 个人用户档案”模式类 | 选择`emailID`作为此架构中的主ID。 |
+| B2B Info | 请参阅上面的“创建查询数据集”。 | B2BAccount（自定义查询模式类） | 通过将B2B Info数据集与Customer Journey Analytics中的B2B Impression数据集连接，`accountID`和B2B Impressions数据集之间的关系已自动创建，如以下步骤所述。 ![查询](../assets/lookup-mixins.png) |
 
 要合并数据集，请按以下步骤操作：
 

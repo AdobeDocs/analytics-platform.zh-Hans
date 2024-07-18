@@ -95,11 +95,11 @@ ht-degree: 12%
 
 6. 要编辑派生字段，请使用[!UICONTROL 编辑派生字段]接口。 请参阅[派生字段接口](#derived-field-interface)。
 
-   - 选择&#x200B;**[!UICONTROL **&#x200B;保存&#x200B;**]**&#x200B;以保存更新后的派生字段。
+   - 选择&#x200B;**[!UICONTROL **&#x200B;保存&#x200B;**]**&#x200B;以保存更新的派生字段。
 
-   - 选择&#x200B;**[!UICONTROL **&#x200B;取消&#x200B;**]**&#x200B;以取消对派生字段所做的任何更改。
+   - 选择&#x200B;**[!UICONTROL **&#x200B;取消&#x200B;**]**&#x200B;可取消您对派生字段所做的任何更改。
 
-   - 选择“**[!UICONTROL **&#x200B;另存为&#x200B;**]**”，将派生字段另存为新的派生字段。 新派生字段的名称与添加了`(copy)`的原始已编辑派生字段的名称相同。
+   - 选择&#x200B;**[!UICONTROL **&#x200B;另存为&#x200B;**]**&#x200B;将派生字段另存为新派生字段。 新派生字段的名称与添加了`(copy)`的原始已编辑派生字段的名称相同。
 
 或者，如果您已将派生字段用作数据视图中维度或量度的组件：
 
@@ -224,7 +224,7 @@ ht-degree: 12%
 
 +++ 详细信息
 
-要使用模板，必须为作为模板中规则的一部分列出的每个函数指定正确的参数。 有关详细信息，请参阅[函数引用](#function-reference)。
+要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 有关详细信息，请参阅[函数引用](#function-reference)。
 
 ![假日季节规则生成器的屏幕截图](assets/function-template-holiday-season.png)
 
@@ -1333,9 +1333,9 @@ Customer Journey Analytics使用以下默认容器模型：
 
 ### 派生字段 {#regex-replace-uc-derivedfield}
 
-您创建了一个`Page Identifier`派生字段。 使用[!UICONTROL REGEX REPLACE]函数定义规则，以使用`[^/]+(?=/$|$)`的[!UICONTROL Regex]和`$1`的[!UICONTROL 输出格式]替换[!UICONTROL 引用URL]字段的值。
+您创建了一个`Page Identifier`派生字段。 您使用[!UICONTROL REGEX REPLACE]函数定义规则以使用`[^/]+(?=/$|$)`的[!UICONTROL Regex]和`$1`的[!UICONTROL 输出格式]替换[!UICONTROL 反向链接URL]字段的值。
 
-![Regex替换规则的屏幕截图](assets/regex-replace.png)
+![Regex Replac规则的屏幕快照](assets/regex-replace.png)
 
 
 ### 之后的数据 {#regex-replace-uc-dataafter}
@@ -1463,7 +1463,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 ### 派生字段 {#split-u2-derivedfield}
 
-您创建了一个`First Response`派生字段。 使用[!UICONTROL SPLIT]函数定义一个规则，以从响应`,`左侧的[!UICONTROL 响应]字段中获取第一个值作为分隔符。
+您创建了一个`First Response`派生字段。 您使用[!UICONTROL SPLIT]函数定义一个规则，以从响应`,`左侧的[!UICONTROL 响应]字段中获取第一个值作为分隔符。
 
 ![拆分规则的屏幕截图 — 第一个值](assets/split-2.png)
 
@@ -1618,7 +1618,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 ### 派生字段 {#trim-u2-derivedfield}
 
-您创建了一个`Page Name`派生字段。 使用[!UICONTROL TRIM]函数，使用[!UICONTROL 特殊字符] `#?%&/`从[!UICONTROL 名称]字段中定义一个规则，用于[!UICONTROL 修剪特殊字符]。
+您创建了一个`Page Name`派生字段。 您使用[!UICONTROL TRIM]函数定义一个规则，使用[!UICONTROL 特殊字符] `#?%&/`从[!UICONTROL 名称]字段中[!UICONTROL 修剪特殊字符]。
 
 ![拆分规则的屏幕截图 — 第一个值](assets/trim-2.png)
 
@@ -1776,7 +1776,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 | <p>下一个或上一个</p> | <ul><li>3每个派生字段的下一个或上一个函数</li></ul> |
 | <p>正则表达式替换</p> | <ul><li>每个派生字段有1个正则表达式替换函数</li></ul> |
 | <p>拆分</p> | <ul><li>每个派生字段有5个拆分函数</li></ul> |
-| <p>总结</p> | <ul><li>3汇总每个派生字段的函数</li></ul> |
+| <p>总结</p> | <ul><li>3每个派生字段的函数摘要</li></ul> |
 | <p>修剪</p> | <ul><li>每个派生字段有1个修剪函数</li></ul> |
 | <p>URL 解析</p> | <ul><li>每个派生字段有5个URL解析函数</li></ul> |
 
