@@ -4,10 +4,10 @@ title: 如何配置流量可视化图表
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: b196b8c05ba05a3f46d71c10fdcaa2ad8ef0dcd6
 workflow-type: tm+mt
-source-wordcount: '1595'
-ht-degree: 80%
+source-wordcount: '1594'
+ht-degree: 78%
 
 ---
 
@@ -75,7 +75,7 @@ ht-degree: 80%
 >
 >1. 开始创建流量可视化图表，如上所述。
 >1. 将&#x200B;[!UICONTROL **页面**]&#x200B;维度拖入&#x200B;**[!UICONTROL 包含]**&#x200B;字段中，然后选择&#x200B;[!UICONTROL **生成**]。
->1. 流量可视化图表使用可视化图表中心的关注节点中可见的查看次数最多的页面来生成。您还可以看到进入该关注页面的浏览次数最多的页面（位于关注节点的左侧）以及离开该关注页面的浏览次数最多的页面（位于关注节点的右侧）。
+>1. 流量可视化图表使用可视化图表中心的关注节点中可见的查看次数最多的页面来生成。您还可以看到进入该页面的顶部页面（焦点节点的左侧）以及进入该页面的顶部页面（焦点节点的右侧）。
 >1. 分析流量中的数据，如[查看和更改流量输出](#view-and-change-the-flow-output)中所述。
 
 ## 查看并更改流量输出。 {#output}
