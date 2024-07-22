@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: ca2387c2dd4c6c0ccdf6cec245c5d66ecea93bd5
+source-git-commit: f390789287721a777947093123f672e0a854540a
 workflow-type: tm+mt
-source-wordcount: '3817'
+source-wordcount: '3830'
 ht-degree: 12%
 
 ---
@@ -324,7 +324,8 @@ Customer Journey Analytics支持两种类型的拼合：基于字段的拼合和
 
 以下先决条件专门适用于基于图形的拼接：
 
-- Adobe Experience Platform中的事件数据集（您要对其应用拼接）必须有一列用于在每行上标识访客，即&#x200B;**永久ID**。 例如，由Adobe AnalyticsAppMeasurement库生成的访客ID或由Adobe Experience Platform Identity服务生成的ECID。
+- Adobe Experience Platform中的事件数据集（您要对其应用拼接）必须有一列用于在每行上标识访客，即&#x200B;**永久ID**。 例如，由Adobe AnalyticsAppMeasurement库生成的访客ID或由Experience PlatformIdentity服务生成的ECID。
+- 永久性ID还必须在架构中定义为[标识](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)。
 - 来自Experience Platform身份服务的身份图形必须具有要在拼接期间用于解析&#x200B;**临时ID**&#x200B;的命名空间（例如`Email`或`Phone`）。 有关详细信息，请参阅[Experience Platform标识服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home)。
 
 >[!NOTE]
