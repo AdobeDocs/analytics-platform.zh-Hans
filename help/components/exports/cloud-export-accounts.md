@@ -5,10 +5,10 @@ title: 配置云导出帐户
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: 9a0e6ed66a20eac1fa5f94efd378842a579826c0
+source-git-commit: 8fc8e3e4057663bd4bdf38e41bb3129df442f749
 workflow-type: tm+mt
-source-wordcount: '2009'
-ht-degree: 30%
+source-wordcount: '1965'
+ht-degree: 29%
 
 ---
 
@@ -45,8 +45,6 @@ ht-degree: 30%
    * 共享帐户只能由帐户的所有者编辑。
 
    * 任何人都可以为共享帐户创建位置。
-
-   **注意：**&#x200B;此功能处于版本的有限测试阶段，可能尚未在您的环境中可用。 当该功能正式发布时，将删除此说明。有关 Analytics 发布流程的信息，请参阅 [Customer Journey Analytics 功能发布](/help/release-notes/releases.md)。
 
 1. 在&#x200B;[!UICONTROL **帐户类型**]&#x200B;字段中，选择要导出到的云帐户类型。 可用的帐户类型包括Amazon S3 Role ARN、Google Cloud Platform、Azure SAS、Azure RBAC、Snowflake和AEP Data Landing Zone。
 

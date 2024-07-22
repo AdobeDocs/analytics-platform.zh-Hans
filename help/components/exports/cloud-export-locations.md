@@ -5,10 +5,10 @@ title: 配置云导出位置
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 1bf36f60b0b3aec04bb1452e5f63f97051d9bb50
+source-git-commit: 8fc8e3e4057663bd4bdf38e41bb3129df442f749
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 21%
+source-wordcount: '1888'
+ht-degree: 20%
 
 ---
 
@@ -40,10 +40,10 @@ ht-degree: 21%
 
 1. 指定以下信息：
 |字段 | 函数 |
-&#x200B;-------------------
+-------------------
 | [!UICONTROL **名称**] | 位置的名称。  |
 | [!UICONTROL **描述**] | 提供位置的简短描述，以帮助将其与帐户上的其他位置区分开来。 |
-| [!UICONTROL **使位置对组织中的所有用户都可用**] | **注意：**&#x200B;此功能处于版本的有限测试阶段，可能尚未在您的环境中可用。 当该功能正式发布时，将删除此说明。有关 Analytics 发布流程的信息，请参阅 [Customer Journey Analytics 功能发布](/help/release-notes/releases.md)。 <p>启用此选项可允许组织中的其他用户使用该位置。</p> <p>共享位置时，请考虑以下事项：</p><ul><li>无法取消共享您共享的位置。</li><li>共享位置只能由位置的所有者编辑。</li><li>仅当与位置关联的帐户也共享时，才能共享位置。</li></ul> |
+| [!UICONTROL **使位置对组织中的所有用户都可用**] | 启用此选项可允许组织中的其他用户使用该位置。 <p>共享位置时，请考虑以下事项：</p><ul><li>无法取消共享您共享的位置。</li><li>共享位置只能由位置的所有者编辑。</li><li>仅当与位置关联的帐户也共享时，才能共享位置。</li></ul> |
 | [!UICONTROL **位置帐户**] | 选择要创建位置的帐户。 有关如何创建帐户的信息，请参阅[配置云导出帐户](/help/components/exports/cloud-export-accounts.md)。 |
 
 1. 在&#x200B;[!UICONTROL **位置属性**]&#x200B;部分中，指定特定于位置帐户的帐户类型的信息。

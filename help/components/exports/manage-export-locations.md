@@ -5,7 +5,7 @@ title: 管理云导出位置和帐户
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: 9f3182ed33fc5ad537b05e9effbdd25caf4e87d7
+source-git-commit: 8fc8e3e4057663bd4bdf38e41bb3129df442f749
 workflow-type: tm+mt
 source-wordcount: '1370'
 ht-degree: 1%
@@ -147,8 +147,6 @@ ht-degree: 1%
 1. 在确认对话框上再次选择&#x200B;[!UICONTROL **删除**]。
 
 ## 配置公司范围的设置（仅限管理员）
-
-{{release-limited-testing-section}}
 
 系统管理员可以限制用户创建帐户和位置，也可以限制用户可以创建和使用的帐户类型。
 
