@@ -4,10 +4,10 @@ title: 量度
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 53d367e51f739ebf324390ba4114ddb58138fac8
+source-git-commit: cdab5d8b674527a1c3f950284daac65d0ab01900
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 40%
+source-wordcount: '537'
+ht-degree: 18%
 
 ---
 
@@ -37,15 +37,41 @@ Adobe 提供了多种类型的指标，可供在 Analysis Workspace 中使用：
 
 指标可以在 Analysis Workspace 中以各种方式使用。有关如何将量度和其他类型的组件添加到Analysis Workspace的信息，请参阅[在Analysis Workspace中使用组件](/help/components/use-components-in-workspace.md)。
 
-## 计算指标
+## 创建计算量度
 
-通过计算指标，您可以使用简单的运算符或统计函数轻松查看指标之间的相互关系。可通过以下几种方式创建计算指标：
+计算量度允许您使用简单的运算符或统计函数轻松查看量度之间的相互关系。
 
-您可以选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 计算量度]**。 这会将您转到[计算量度生成器](/help/components/calc-metrics/calc-metr-overview.md)，您可以从现有量度生成自定义量度。
+可通过多种方式创建计算量度。 您选择的方法确定计算量度是从所有项目的组件列表中可用，还是仅用于创建该量度的项目。
 
-为了更便于快速创建计算量度，**[!UICONTROL 从所选内容创建量度]**&#x200B;已添加到自由格式表中的列右键单击菜单。在选定一个或多个标头列单元格时，会显示该选项。
+### 为所有项目创建计算指标
 
-![Workspace面板高亮显示从所选内容创建](assets/create-metric-from-selection.png)
+您可以使用计算指标生成器创建计算指标。 通过这种方式创建时，计算量度在组件列表中可用，然后可在整个组织的项目中使用。
+
+有关如何访问计算量度生成器的信息，请参阅[生成量度](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)。
+
+### 为单个项目创建计算指标
+
+您可以创建快速计算量度，这些量度仅可用于创建它们的项目。
+
+要为单个项目创建计算指标，请执行以下操作：
+
+1. 在Analysis Workspace中，打开要在其中创建计算指标的项目。
+
+1. 在自由格式表中，右键单击一个或多个标题列单元格，然后选择&#x200B;**[!UICONTROL 从所选内容创建指标]**
+
+   ![Workspace面板高亮显示从所选内容创建](assets/create-metric-from-selection.png)
+
+1. 要仅为此项目创建计算量度，请从以下选项中进行选择：
+
+   * [!UICONTROL **除**]
+
+   * [!UICONTROL **减**]
+
+   * [!UICONTROL **添加**]
+
+   * [!UICONTROL **乘**]
+
+   或者，要打开计算指标生成器并为所有项目创建计算指标，请选择&#x200B;[!UICONTROL **在计算指标生成器中打开**]，然后继续执行[生成指标](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)。
 
 [计算指标：无实施指标](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html?lang=zh-Hans) (3:42)
 

@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 7d915fc9b50163b7ec9c48232b99a85a3b063a77
+source-git-commit: cdab5d8b674527a1c3f950284daac65d0ab01900
 workflow-type: tm+mt
-source-wordcount: '3836'
-ht-degree: 72%
+source-wordcount: '3940'
+ht-degree: 70%
 
 ---
 
@@ -20,8 +20,9 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2024 年 7 月** | |
+| 添加了关于快速计算量度的信息 | 更新了[量度](/help/components/apply-create-metrics.md)中的信息，以阐明在计算量度生成器](/help/components/apply-create-metrics.md#create-calculated-metrics-for-all-projects)中创建的[计算量度与在单个项目](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project)中作为快速计算量度创建的[计算量度之间的区别。 此外，还添加了有关用于创建快速计算量度的方法的更多详细信息。<p>在计算量度生成器中创建的计算量度在组件列表中可用，并且可以应用于整个组织的项目，而作为快速计算量度创建的计算量度仅在创建它们的项目中可用。</p><p>还更新了[生成量度](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)中的信息以进行类似说明。</p> |
 | 派生字段重复项删除函数 | 添加了关于派生字段[deduplicate](/help/data-views/derived-fields/derived-fields.md#deduplicate)函数的文档。 |
-| 更新了常见错误消息 | 对[常见错误消息](/help/analysis-workspace/workspace-faq/error-messages.md)进行了小幅更新。 |
+| 已更新的常见错误消息 | 对 [常见错误消息](/help/analysis-workspace/workspace-faq/error-messages.md)做了小更新。 |
 | **2024 年 6 月** | |
 | 更新了涉及流媒体功能的产品名称 | 当引用收集流媒体数据并将其显示在 Analysis Workspace 中的一组流媒体功能时，将“媒体分析”和“流媒体”的实例替换为名称“流媒体收藏集附加组件”。 <p>这些更新在Customer Journey Analytics文档以及[流媒体收藏集附加组件文档](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/media-overview)中提供。</p> |
 | 基于图形的拼接 | 通过引入基于图形的拼接，更新并重组了[拼接文档](/help/stitching/overview.md)。 |
