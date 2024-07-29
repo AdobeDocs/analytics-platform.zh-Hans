@@ -1,24 +1,24 @@
 ---
 title: 引导式分析常见问题
-description: 引导式分析的常见问题解答。
+description: 引导式分析的常见问题。
 exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: df00d954de5db89f0ccc40f7eb2474523d9e774e
+source-git-commit: d6f26da108a2c840838ac71d9b98f45cd145ad3e
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 71%
+source-wordcount: '439'
+ht-degree: 94%
 
 ---
 
 # 引导式分析常见问题
 
-引导式分析的常见问题解答。
+引导式分析的常见问题。
 
-+++**我的组织是否有权访问引导式分析？**
++++**我的组织是否可以访问引导式分析？**
 
-指导性分析视图包含在所有Customer Journey Analytics包中。 请参阅概述页面上的[配置](overview.md#provisioning)部分，了解有关CJA包解锁的视图的更多信息。
+所有 Customer Journey Analytics 包均包含引导分析视图。请参阅概览页面上的 [配置](overview.md#provisioning) 部分，了解有关 CJA 包解锁的视图的更多信息。
 
 +++
 
@@ -26,7 +26,7 @@ ht-degree: 71%
 
 如果您现在已经在使用 Customer Journey Analytics，则无需进行其他实施更改。引导式分析使用与其他 CJA 界面（例如 [Analysis Workspace](../analysis-workspace/home.md)）相同的[数据视图](../data-views/data-views.md)和[连接](../connections/overview.md)。
 
-为了让最终用户在引导式分析方面获得最大成功，建议您在Adobe Experience Platform和[数据视图](../data-views/data-views.md)中制定强有力的事件架构和管理策略。
+为了使您的最终用户能够最大限度地利用引导式分析，建议您在 Adobe Experience Platform 和[数据视图](../data-views/data-views.md)中制定强大的事件架构和管理策略。
 
 +++
 
@@ -38,23 +38,25 @@ ht-degree: 71%
 
 +++
 
-+++**引导式分析与Analysis Workspace的术语有何异同？**
++++**引导式分析和 Analysis Workspace 之间的术语有何差异？**
 
-引导式分析会使用在产品团队中更常用的术语。在引导式分析和 [Analysis Workspace](../analysis-workspace/home.md) 之间切换时，您可以参考此表。
+引导式分析和[Analysis Workspace](../analysis-workspace/home.md)与大多数关键术语保持一致，但存在一些细微差异。
 
 | 引导式分析术语 | Analysis Workspace 术语 |
 | --- | --- |
-| 事件 | 量度 |
+| 事件（二进制1/0量度） | 量度 |
 | 用户 | 人员 |
-| 属性 | 维度 |
-| 值 | 维度项 |
+| 维度 | 维度 |
+| 维度项 | 维度项 |
 | 区段 | 过滤器 |
+| 筛选 | 报告筛选器 |
+| 计算量度，量度 | 计算量度 |
 
 {style="table-layout:auto"}
 
 +++
 
-+++**引导式分析与Analysis Workspace方法报告有哪些区别？**
++++**引导式分析和 Analysis Workspace 处理报告的方式有哪些差异？**
 
 虽然 [Analysis Workspace](../analysis-workspace/home.md) 和引导式分析使用相同的基础数据，但每个工具支持您生成数据查询的方式是不同的。
 
@@ -70,7 +72,7 @@ ht-degree: 71%
 
   ![以维度为中心](assets/dimension-centered.png){style="border:1px solid gray"}
 
-* 一种以事件和用户为中心的引导式分析方法是这样的：“有多少用户访问过主页？”
+* 典型的事件和以用户为中心的引导式分析方法会提出的问题是“有多少用户访问过主页？”
 
   ![以事件为中心](assets/event-centered.png){style="border:1px solid gray"}
 
