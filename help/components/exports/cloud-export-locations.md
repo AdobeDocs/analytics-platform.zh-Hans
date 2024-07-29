@@ -5,7 +5,7 @@ title: 配置云导出位置
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 8fc8e3e4057663bd4bdf38e41bb3129df442f749
+source-git-commit: ec8f6c3c8cc1c0b12821e3b61fbef9f5fe875258
 workflow-type: tm+mt
 source-wordcount: '1888'
 ht-degree: 20%
@@ -39,12 +39,13 @@ ht-degree: 20%
    此时将显示“位置”对话框。
 
 1. 指定以下信息：
-|字段 | 函数 |
-&#x200B;-------------------
-| [!UICONTROL **名称**] | 位置的名称。  |
-| [!UICONTROL **描述**] | 提供位置的简短描述，以帮助将其与帐户上的其他位置区分开来。 |
-| [!UICONTROL **使位置对组织中的所有用户都可用**] | 启用此选项可允许组织中的其他用户使用该位置。 <p>共享位置时，请考虑以下事项：</p><ul><li>无法取消共享您共享的位置。</li><li>共享位置只能由位置的所有者编辑。</li><li>仅当与位置关联的帐户也共享时，才能共享位置。</li></ul> |
-| [!UICONTROL **位置帐户**] | 选择要创建位置的帐户。 有关如何创建帐户的信息，请参阅[配置云导出帐户](/help/components/exports/cloud-export-accounts.md)。 |
+
+   | 字段 | 功能 |
+   |---------|----------|
+   | [!UICONTROL **名称**] | 位置的名称。 |
+   | [!UICONTROL **描述**] | 提供位置的简短描述，以帮助将其与帐户上的其他位置区分开来。 |
+   | [!UICONTROL **使位置对组织中的所有用户都可用**] | 启用此选项可允许组织中的其他用户使用该位置。 <p>共享位置时，请考虑以下事项：</p><ul><li>无法取消共享您共享的位置。</li><li>共享位置只能由位置的所有者编辑。</li><li>仅当与位置关联的帐户也共享时，才能共享位置。</li></ul> |
+   | [!UICONTROL **位置帐户**] | 选择要创建位置的帐户。 有关如何创建帐户的信息，请参阅[配置云导出帐户](/help/components/exports/cloud-export-accounts.md)。 |
 
 1. 在&#x200B;[!UICONTROL **位置属性**]&#x200B;部分中，指定特定于位置帐户的帐户类型的信息。
 
