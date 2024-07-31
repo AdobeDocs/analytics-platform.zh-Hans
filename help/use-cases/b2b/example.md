@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: 9c60c00818e82a6ca891ab9d90260922437c6cca
+source-git-commit: c3d97fe2353011f4747d0c1742e49189cc91b85c
 workflow-type: tm+mt
 source-wordcount: '793'
 ht-degree: 10%
@@ -32,6 +32,7 @@ ht-degree: 10%
 | B2B机会人员关系数据集 | B2B机会人员关系架构 | 查询 | XDM 业务机会人员关系 | XDM业务机会人员关系是一个标准体验数据模型(XDM)类，可捕获与业务机会关联的人员的最低要求属性。 |
 | B2B营销列表成员数据集 | B2B营销列表成员架构 | 查询 | XDM营销列表成员 | XDM业务营销列表成员是一个标准的体验数据模型(XDM)类，它描述了与营销列表关联的成员、人员或联系人。 |
 | B2B营销活动成员数据集 | B2B营销活动成员架构 | 查询 | XDM 商业营销活动成员 | XDM商业营销活动成员是一个标准体验数据模型(XDM)类，它描述了与商业营销活动关联的联系人或商机。 |
+
 <!--
 | B2B Account Dataset | B2B Account Schema | Lookup | XDM Business Account | XDM Business Account is a standard Experience Data Model (XDM) class that captures the minimum required properties of a business account.  |
 | B2B Opportunity Dataset | B2B Opportunity Schema | Lookup | XDM Business Opportunity | XDM Business Opportunity is a standard Experience Data Model (XDM) class that captures the minimum required properties of a business opportunity.  |
