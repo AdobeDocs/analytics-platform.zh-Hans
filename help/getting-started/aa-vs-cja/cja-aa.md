@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 1abd23ded188697a910d4e6d04675f96f51e9b0e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2273'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ ht-degree: 99%
 | Report Builder | 通过一个新的 Office 365 Excel 插件支持此项。 |
 | 用户权限/数据访问控制 | Customer Journey Analytics 区分 [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) 产品管理员、产品配置文件管理员和用户。只有产品管理员可创建/更新/删除其他用户创建的连接、项目、筛选条件或计算量度，而产品管理员和产品配置文件管理员均可编辑数据视图。对于创建计算量度、筛选条件或注释等操作还有其他用户权限可用。 |
 | 可视化图表 | 除地图可视化图表外，支持所有 Workspace 可视化图表。 |
-| 跨设备/跨渠道拼接 | 对于包含身份信息的事件数据集支持。 请参阅[拼接](../../stitching/overview.md)。 |
+| 跨设备/跨渠道拼接 | 支持包含身份信息的事件数据集。请参阅[拼接](../../stitching/overview.md)。 |
 
 {style="table-layout:auto"}
 

@@ -6,9 +6,9 @@ feature: Guided Analysis
 keywords: 产品分析
 role: User
 source-git-commit: d6f26da108a2c840838ac71d9b98f45cd145ad3e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '439'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -40,17 +40,17 @@ ht-degree: 94%
 
 +++**引导式分析和 Analysis Workspace 之间的术语有何差异？**
 
-引导式分析和[Analysis Workspace](../analysis-workspace/home.md)与大多数关键术语保持一致，但存在一些细微差异。
+引导式分析和 [Analysis Workspace](../analysis-workspace/home.md) 在大多数关键术语上保持一致，但存在一些细微差别。
 
 | 引导式分析术语 | Analysis Workspace 术语 |
 | --- | --- |
-| 事件（二进制1/0量度） | 量度 |
+| 事件（二进制 1/0 指标） | 量度 |
 | 用户 | 人员 |
 | 维度 | 维度 |
 | 维度项 | 维度项 |
 | 区段 | 过滤器 |
-| 筛选 | 报告筛选器 |
-| 计算量度，量度 | 计算量度 |
+| 筛选 | 报告过滤器 |
+| 计算量度，Metrics | 计算量度 |
 
 {style="table-layout:auto"}
 
