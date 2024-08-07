@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: FAQ
 role: User
 source-git-commit: 252ddfd3a321d94d14fbe2593b942ac36bf932a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2547'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Adobe Customer Journey Analytics 是下一代分析产品。本文提供有关 C
 
 +++**如果在执行 [!UICONTROL Customer Journey Analytics] 之前需要对数据进行 ETL（提取、转换、加载）操作，该怎么办？**
 
-Customer Journey Analytics 包括[数据准备](https://experienceleague.adobe.com/cn/docs/experience-platform/data-prep/api/overview.html?lang=zh-Hans)功能以帮助转换您的数据，然后再将其放入 Adobe Experience Platform 数据湖。如果您在已摄取数据后需要 ETL，则 [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/cn/docs/platform-learn/tutorials/queries/understanding-query-service.html?lang=zh-Hans#queries) 提供一些有限的选项，但可能额外收费。
+Customer Journey Analytics 包括[数据准备](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/api/overview.html?lang=zh-hans)功能以帮助转换您的数据，然后再将其放入 Adobe Experience Platform 数据湖。如果您在已摄取数据后需要 ETL，则 [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorials/queries/understanding-query-service.html?lang=zh-hans#queries) 提供一些有限的选项，但可能额外收费。
 
 +++
 
@@ -64,7 +64,7 @@ Customer Journey Analytics 包括[数据准备](https://experienceleague.adobe.c
 
 +++**如何拼合历史数据（回填）？**
 
-首次打开时，Adobe会提供回填的拼接数据，最晚可追溯到您选择的日期(最长为25个月，具体取决于您有权访问的Customer Journey Analytics包)。 为实现此回填，当时的未拼合数据中必须存在过渡 ID。[了解详情](../stitching/overview.md)
+首次开启时，Adobe 会提供一个回填的拼接数据，这些数据可以追溯到您选择的时间（最多可达 25 个月，具体取决于您所享有的 Customer Journey Analytics 包）。为实现此回填，当时的未拼合数据中必须存在过渡 ID。[了解详情](../stitching/overview.md)
 
 +++
 
@@ -79,7 +79,7 @@ Customer Journey Analytics 包括[数据准备](https://experienceleague.adobe.c
 
 +++**是否可以将来自不同 [!UICONTROL Adobe Experience Platform] 沙盒的数据合并到一个 [!UICONTROL Customer Journey Analytics] 连接中？**
 
-不能，您不能跨沙盒访问数据。您只能合并位于同一沙盒中的数据集。[了解详情](https://experienceleague.adobe.com/cn/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans#select-sandbox-and-datasets)
+不能，您不能跨沙盒访问数据。您只能合并位于同一沙盒中的数据集。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-hans#select-sandbox-and-datasets)
 
 +++
 
@@ -100,7 +100,7 @@ Customer Journey Analytics 包括[数据准备](https://experienceleague.adobe.c
 
 +++**如何将 [!UICONTROL Adobe Analytics] 数据载入到 [!UICONTROL Customer Journey Analytics]？**
 
-[!UICONTROL Adobe Analytics] 数据可以通过 [Analytics source connector](https://experienceleague.adobe.com/cn/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 连接到 Experience Platform。大多数 [!UICONTROL Adobe Analytics] 字段以 XDM 格式转入，但其他字段尚不可用。
+[!UICONTROL Adobe Analytics] 数据可以通过 [Analytics source connector](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-hans) 连接到 Experience Platform。大多数 [!UICONTROL Adobe Analytics] 字段以 XDM 格式转入，但其他字段尚不可用。
 
 +++
 
@@ -139,7 +139,7 @@ Adobe 最近改变了在 Customer Journey Analytics 中处理数据的方式：
 
 ## 5. 设置[!UICONTROL 连接]数据保留的滚动时段 {#data-retention}
 
-通过[**[!UICONTROL 启用滚动数据时段&#x200B;]**设置](https://experienceleague.adobe.com/cn/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection)，可将 Customer Journey Analytics 数据保留定义为按月（三个月、六个月等）计的滚动时段。在[!UICONTROL 连接]级别而非[!UICONTROL 数据集]级别设置它。数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此个人资料或查找数据集没有数据保留设置。
+通过[**[!UICONTROL 启用滚动数据时段&#x200B;]**设置](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection)，可将 Customer Journey Analytics 数据保留定义为按月（三个月、六个月等）计的滚动时段。在[!UICONTROL 连接]级别而非[!UICONTROL 数据集]级别设置它。数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此个人资料或查找数据集没有数据保留设置。
 
 主要好处是，您只需存储或报告适用且有用的数据，并且可删除不再有用的旧数据。它可以帮助您保持在合同限制范围内，并减少超出预期成本的风险。
 
@@ -160,7 +160,7 @@ Adobe 最近改变了在 Customer Journey Analytics 中处理数据的方式：
 
 ## 7. 在 Customer Journey Analytics 中合并报表包时的注意事项 {#merge-reportsuite}
 
-如果打算通过 [Adobe Analytics 源连接器](https://experienceleague.adobe.com/cn/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)摄取 Adobe Analytics 数据，请在合并两个或更多 Adobe Analytics 报表包时考虑以下这些后果。
+如果打算通过 [Adobe Analytics 源连接器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)摄取 Adobe Analytics 数据，请在合并两个或更多 Adobe Analytics 报表包时考虑以下这些后果。
 
 | 问题 | 注意事项 |
 | --- | --- |
@@ -229,14 +229,14 @@ Adobe 定期监控和执行使用限制。“数据行数”表示可供在 Cust
 
 1. 此外，如果您签入 [!UICONTROL Adobe Experience Platform]，发现不存在 ID 为“5f21c12b732044194bffc1d0”的数据集，因此表示有人在创建初始连接后从 [!UICONTROL Adobe Experience Platform] 中删除了这个特定的数据集。不过，之后又将此数据集重新添加到 Customer Journey Analytics 中，但 [!UICONTROL Adobe Experience Platform] 生成了一个不同的 [!UICONTROL Platform 数据集 ID]。
 
-有关更多信息，请参阅在 [!UICONTROL Customer Journey Analytics] 和 [!UICONTROL Adobe Experience Platform] 中[删除数据集和连接的后果。](https://experienceleague.adobe.com/cn/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans#implications-of-deleting-data-components)
+有关更多信息，请参阅在 [!UICONTROL Customer Journey Analytics] 和 [!UICONTROL Adobe Experience Platform] 中[删除数据集和连接的后果。](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-hans#implications-of-deleting-data-components)
 
 
 ## 12. 地区数据收集
 
 Adobe Experience Cloud 使用地区数据收集 (RDC)，以使您的访客与 Adobe 和非 Adobe 解决方案之间发生的交互尽可能接近您的访客。在数据收集中心（DCC，也称为边缘站点，它是 Platform 边缘网络的一部分）区域性地收集数据后，将根据您的数据流和/或事件转发的配置通过一个安全的连接将这些数据转发到相关的解决方案。
 
-![使用边缘网络的数据流](https://experienceleague.adobe.com/cn/docs/experience-platform/assets/collection.png)
+![使用边缘网络的数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/assets/collection.png)
 
 区域数据收集过程使用以下步骤：
 
@@ -266,4 +266,4 @@ RDC 目前包括以下位置（可能发生变化）：
 Customer Journey Analytics 需要来自 Adobe Experience Platform 的数据集，因此，您的数据流/事件转发配置需要 Adobe Experience Platform 服务将数据从区域数据中心路由到 Adobe Experience Platform 实例所在的数据中心。Customer Journey Analytics 及其支持服务和基础设施部署在同一个 Adobe Experience Platform 实例中。
 
 
-有关在 Adobe Experience Platform Edge Network 及其区域数据中心之外收集数据的过程，请参阅[数据收集概述](https://experienceleague.adobe.com/cn/docs/experience-platform/collection/home.html)。
+有关在 Adobe Experience Platform Edge Network 及其区域数据中心之外收集数据的过程，请参阅[数据收集概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/home.html)。
