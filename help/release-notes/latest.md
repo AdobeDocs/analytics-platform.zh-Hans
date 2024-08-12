@@ -4,15 +4,15 @@ description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 source-git-commit: 466b4e22ba39197208a191a7298bf37a0b3e36c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '777'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # 当前的 Adobe Customer Journey Analytics 发行说明（2024 年 7 月）
 
-**上次更新日期**：2024年8月7日
+**最后更新**: 2024 年 8 月 7 日
 
 这些发行说明涵盖 2024 年 7 月 17 日至 2024 年 8 月的发行期。Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
@@ -26,7 +26,7 @@ ht-degree: 99%
 | **派生字段：重复数据删除函数** | 派生字段中的 [重复数据删除函数](/help/data-views/derived-fields/derived-fields.md#deduplicate) 可帮助您避免多次计算某个值。 |  | 2024 年 7 月 17日 |
 | **为 CJA 客户提供指导分析配置** | 引导式分析使用户能够通过基于 Customer Journey Analytics 的跨渠道数据的引导式工作流程，自助提供有关客户历程的高质量数据和洞察。 <p>从营销到产品的跨职能团队可以实时连接，以使用和理解这些报告。</p><p>CJA 包中现在最多可提供 11 个引导分析视图。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/guided-analysis/overview)</p> |  | 2024 年 7 月 17日 |
 | **共享用于导出和导入的账户和位置** | 用户现在可以将他们创建的帐户和位置提供给其组织内的所有用户。只有帐户和位置所有者以及系统管理员可以编辑和删除帐户和位置。以前，帐户和位置只能由创建它们的用户使用。当用户[配置云导出帐户](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/exports/cloud-export-accounts)以及[配置云导出位置时，这些设置适用](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/exports/cloud-export-locations)。 | 2024 年 6 月 12 日 | 2024 年 7 月 19 日 |
-| **Audiences 已发布到 Experience Platform 中的新“Audiences”部分** | 从 Customer Journey Analytics 中发布的受众现在可以在 Adobe Experience Platform 的新“受众”部分中找到。<p>此前，从 Customer Journey Analytics 发布的受众可在 Experience Platform 的“细分”部分下找到。</p><p>此改进具有以下优点：</p><ul><li>受众出现在 Experience Platform 前不再有 1 小时的延迟；它们在发布后几秒钟即可使用。</li><li>可以使用 Experience Platform 中“来源”列对受众进行排序，该列显示了最初发布受众的应用程序。</li><li>Experience Platform 中的筛选条件和排序选项使您能够更快地找到相关受众。</li></ul> <p>（文档链接见下文）</p> | 2024年8月14日 | 2024年8月22日 |
+| **Audiences 已发布到 Experience Platform 中的新“Audiences”部分** | 从 Customer Journey Analytics 中发布的受众现在可以在 Adobe Experience Platform 的新“受众”部分中找到。<p>此前，从 Customer Journey Analytics 发布的受众可在 Experience Platform 的“细分”部分下找到。</p><p>此改进具有以下优点：</p><ul><li>受众出现在 Experience Platform 前不再有 1 小时的延迟；它们在发布后几秒钟即可使用。</li><li>可以使用 Experience Platform 中“来源”列对受众进行排序，该列显示了最初发布受众的应用程序。</li><li>Experience Platform 中的筛选条件和排序选项使您能够更快地找到相关受众。</li></ul> <p>（文档链接见下文）</p> | 2024 年 8 月 14 日 | 2024 年 8 月 22 日 |
 
 {style="table-layout:auto"}
 
