@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 6d4dd1cd0e2c9b89ed37ca713ecc6d5db7d9e745
+source-git-commit: 9c022dba63fd837aee28393aceb4eac851a993ec
 workflow-type: tm+mt
-source-wordcount: '1102'
-ht-degree: 100%
+source-wordcount: '1099'
+ht-degree: 98%
 
 ---
 
@@ -91,10 +91,12 @@ ht-degree: 100%
       + [无值选项](../data-views/component-settings/no-value-options.md)
       + [持久性](../data-views/component-settings/persistence.md)
       + [子字符串](../data-views/component-settings/substring.md)
+      + [摘要数据组](../data-views/component-settings/summary-data-group.md)
       + [值分段](../data-views/component-settings/value-bucketing.md)
    + [标准组件参考](../data-views/component-reference.md)
    + [BI 扩展](../data-views/bi-extension.md)
    + [派生字段](../data-views/derived-fields/derived-fields.md)
+   + [摘要数据](../data-views/summary-data.md)
    + [标签和策略](../data-views/data-governance.md)
 
 + Workspace 项目 {#cja-workspace}
@@ -346,11 +348,12 @@ ht-degree: 100%
       + [将流式 Google Analytics 数据配置到 Platform](../use-cases/ga/streaming.md)
       + [在 Customer Journey Analytics 中就 Google Analytics 数据给出报告](../use-cases/ga/report.md)
    + 数据摄取 {#data-ingestion}
-      + [将 Marketo Engage 数据收录到 Adobe Experience Platform 并在 Customer Journey Analytics 中报告](../use-cases/data-ingestion/marketo.md)
-      + [将 Adobe Experience Platform 受众收录到 Customer Journey Analytics](../use-cases/data-ingestion/ingest-aep-segments.md)
+      + [摄取和使用Marketo Engage数据](../use-cases/data-ingestion/marketo.md)
+      + [摄取和使用Experience Platform受众](../use-cases/data-ingestion/ingest-aep-segments.md)
    + 数据视图 {#data-views}
       + [数据视图用例](../use-cases/data-views/data-views-usecases.md)
       + [使用绑定维度和指标](../use-cases/data-views/binding-dimensions-metrics.md)
+      + [使用摘要数据](../use-cases/data-views/summary-data.md)
    + 数据导出 {#data-export}
       + [概述](../use-cases/data-export/overview.md)
       + [BI 扩展](../use-cases/data-export/bi-extension.md)
