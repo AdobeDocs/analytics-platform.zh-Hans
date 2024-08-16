@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: cdab5d8b674527a1c3f950284daac65d0ab01900
+source-git-commit: 3568aad27001b322da77f5d1fb762db5ba6d433d
 workflow-type: tm+mt
-source-wordcount: '3940'
-ht-degree: 70%
+source-wordcount: '3990'
+ht-degree: 72%
 
 ---
 
@@ -19,8 +19,11 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 
 | 功能 | 描述 |
 | --- | --- |
+| 2024 年 8 月 | |
+| 更新了数据导出用例 | 向[查询服务(Data Distiller)和导出数据集](/help/use-cases/data-export/queryservice-export-datasets.md)添加了更详细的查询示例，以说明如何使用回顾窗口跨会话正确应用归因。 |
+| 摘要数据 | 添加了有关[摘要数据](/help/data-views/summary-data.md)、[摘要数据组组件设置](/help/data-views/component-settings/summary-data-group.md)和[摘要数据用例](/help/use-cases/data-views/summary-data.md)的文档。 |
 | **2024 年 7 月** | |
-| 添加了关于快速计算量度的信息 | 更新了[量度](/help/components/apply-create-metrics.md)中的信息，以阐明在计算量度生成器](/help/components/apply-create-metrics.md#create-calculated-metrics-for-all-projects)中创建的[计算量度与在单个项目](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project)中作为快速计算量度创建的[计算量度之间的区别。 此外，还添加了有关用于创建快速计算量度的方法的更多详细信息。<p>在计算量度生成器中创建的计算量度在组件列表中可用，并且可以应用于整个组织的项目，而作为快速计算量度创建的计算量度仅在创建它们的项目中可用。</p><p>还更新了[生成量度](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)中的信息以进行类似说明。</p> |
+| 添加了有关快速计算量度的信息 | 更新了 [量度](/help/components/apply-create-metrics.md) 中的信息，以阐明 [在计算量度生成器中创建的计算量度](/help/components/apply-create-metrics.md#create-calculated-metrics-for-all-projects) 与 [在单个项目内作为快速计算量度创建的计算量度之间的区别](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project)。还添加了有关软管的更多详细信息，以创建快速计算的量度。<p>在计算量度生成器中创建的计算量度在组件列表中可用，并可应用于整个组织的项目，而作为快速计算量度创建的计算量度仅在创建它们的项目中可用。</p><p>还更新了 [构建量度](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) 中的信息，以做出类似的澄清。</p> |
 | 派生字段重复项删除函数 | 添加了关于派生字段[deduplicate](/help/data-views/derived-fields/derived-fields.md#deduplicate)函数的文档。 |
 | 已更新的常见错误消息 | 对 [常见错误消息](/help/analysis-workspace/workspace-faq/error-messages.md)做了小更新。 |
 | **2024 年 6 月** | |
