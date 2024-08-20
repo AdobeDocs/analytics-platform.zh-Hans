@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: a0124ee6c4534cbaf607367ee3ae79f1cbfc239c
+source-git-commit: a80b20eb2e0395445e8f2e7fd0e76e2eef40522a
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1760'
 ht-degree: 7%
 
 ---
@@ -77,7 +77,7 @@ ht-degree: 7%
 | 受众刷新频率 | 4 | 系统强制的护栏 | 可以刷新[受众](../components/audiences/audiences-overview.md)的最大频率（小时）。 |
 | 受众刷新回顾窗口 | 90 | 系统强制的护栏 | 刷新回顾时间范围的最大天数。 |
 | 刷新受众过期日期 | 13 | 系统强制的护栏 | 受众从创建日期起停止刷新的最大月数。 客户可以将其延长13个月。 |
-| 刷新受众的数量 | 75， 150 | 系统强制的护栏 | 刷新受众的最大数量，该值会因Customer Journey Analytics包而异（请参阅产品描述）。 |
+| 刷新受众的数量 | 75， 150 | 系统强制的护栏 | 刷新受众的最大数量。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
 
 {style="table-layout:auto"}
 
@@ -100,7 +100,7 @@ ht-degree: 7%
 |---|--:|---|---|
 | 项目 | 50,000 | 系统强制的护栏 | 组织的最大项目数。 |
 | 数据视图 | 2,000 | 系统强制的护栏 | 组织的最大[数据视图](../data-views/data-views.md)数。 |
-| 数据视图 | 50 | 系统强制的护栏 | 连接的最大数据视图数 |
+| 数据视图 | 500-1000 | 系统强制的护栏 | 连接的最大数据视图数。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
 | 数据集 | 100 | 系统强制的护栏 | 每个连接最多[个数据集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=zh_Hans)。 |
 | 连接 | 1000 | 系统强制的护栏 | 组织的最大[连接数](../connections/overview.md)。 |
 | 连接标题 | 500 | 系统强制的护栏 | 连接标题的最大字符数。 |
@@ -110,7 +110,7 @@ ht-degree: 7%
 | 注释描述 | 250 | 系统强制的护栏 | 注释描述的最大字符数。 |
 | 架构字段 | 10 | 系统强制的护栏 | 定义[派生字段](../data-views/derived-fields/derived-fields.md)的规则时架构字段（不包括标准字段）的最大数量。 |
 | 查找/配置文件字段 | 3 | 系统强制的护栏 | 定义派生字段的规则时，架构字段（不包括标准字段）最大数量内的查找或配置文件架构字段的最大数量。 |
-| 派生字段 | 100 - 500 | 系统强制的护栏 | 每个连接派生字段的最大数量；该值因Customer Journey Analytics包而异（请参阅产品描述）。 |
+| 派生字段 | 100 - 500 | 系统强制的护栏 | 每个连接的最大派生字段数。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
 
 {style="table-layout:auto"}
 
@@ -155,9 +155,9 @@ ht-degree: 7%
 
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
-| 拼接数据集 | 5 - 50 | 系统强制的护栏 | 每个客户的最大拼接数据集数；该值因Customer Journey Analytics包而异（请参阅产品描述）。 |
-| 回填长度 | 6 - 25 | 系统强制的护栏 | 回填数据的最大月数；该值因Customer Journey Analytics包而异（请参阅产品描述）。 |
-| 回看窗口期/重放频率 | 1/1 - 30/7 | 系统强制的护栏 | 最大回看时段（以天为单位）/重放频率；值因Customer Journey Analytics包而异（请参阅产品说明）。 |
+| 拼接数据集 | 5 - 50 | 系统强制的护栏 | 每个客户的最大拼合数据集数。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
+| 回填长度 | 6 - 25 | 系统强制的护栏 | 回填数据的最大月数。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
+| 回看窗口期/重放频率 | 1/1 - 30/7 | 系统强制的护栏 | 最大回看时段（以天为单位）/重放频率。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
 
 {style="table-layout:auto"}
 
@@ -166,9 +166,9 @@ ht-degree: 7%
 
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
-| 拼接数据集 | 10 - 50 | 系统强制的护栏 | 每个客户的最大拼接数据集数；该值因Customer Journey Analytics包而异（请参阅产品描述）。 |
-| 回填长度 | 13 - 25 | 系统强制的护栏 | 回填数据的最大月数；该值因Customer Journey Analytics包而异（请参阅产品描述）。 |
-| 回看窗口期/重放频率 | 1/1 - 30/7 | 系统强制的护栏 | 最大回看时段（以天为单位）/重放频率；值因Customer Journey Analytics包而异（请参阅产品说明）。 |
+| 拼接数据集 | 10 - 50 | 系统强制的护栏 | 每个客户的最大拼合数据集数。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
+| 回填长度 | 13 - 25 | 系统强制的护栏 | 回填数据的最大月数。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
+| 回看窗口期/重放频率 | 1/1 - 30/7 | 系统强制的护栏 | 最大回看时段（以天为单位）/重放频率。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
 
 
 ## 过滤器和计算量度
@@ -215,7 +215,7 @@ ht-degree: 7%
 
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
-| 每个报告的行数 | 300万 — 3亿 | 系统强制的护栏 | 每个报表的最大报表行数；该值因Customer Journey Analytics包而异（请参阅产品描述）。 |
+| 每个报告的行数 | 300万 — 3亿 | 系统强制的护栏 | 每个报表的最大报表行数。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
 | 每个表的细分 | 5 | 系统强制的护栏 | 每个表的最大划分数。 |
 | 每个表的量度 | 5 | 系统强制的护栏 | 每个表的最大量度数。 |
 | 计划频率 | 1 | 系统强制的护栏 | 导出可以安排在一天中执行一次(1)，也可以安排更长的导出时间（例如：每2天执行一次，或每周执行一次）。 |
