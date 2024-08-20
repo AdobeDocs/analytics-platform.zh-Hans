@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 9c022dba63fd837aee28393aceb4eac851a993ec
+source-git-commit: 056c23c584823c7b3633d04585d15197692a2ee2
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 98%
+source-wordcount: '1102'
+ht-degree: 99%
 
 ---
 
@@ -348,8 +348,8 @@ ht-degree: 98%
       + [将流式 Google Analytics 数据配置到 Platform](../use-cases/ga/streaming.md)
       + [在 Customer Journey Analytics 中就 Google Analytics 数据给出报告](../use-cases/ga/report.md)
    + 数据摄取 {#data-ingestion}
-      + [摄取和使用Marketo Engage数据](../use-cases/data-ingestion/marketo.md)
-      + [摄取和使用Experience Platform受众](../use-cases/data-ingestion/ingest-aep-segments.md)
+      + [收錄并使用 Marketo Engage 数据](../use-cases/data-ingestion/marketo.md)
+      + [收錄和使用 Experience Platform 受众](../use-cases/data-ingestion/ingest-aep-segments.md)
    + 数据视图 {#data-views}
       + [数据视图用例](../use-cases/data-views/data-views-usecases.md)
       + [使用绑定维度和指标](../use-cases/data-views/binding-dimensions-metrics.md)
@@ -366,6 +366,8 @@ ht-degree: 98%
    + 跨渠道数据 {#cross-channel}
       + [跨渠道分析数据](../use-cases/cross-channel/cross-channel.md)
       + [导入呼叫中心数据和网站数据](../use-cases/cross-channel/call-center.md)
+   + 拼合 {#stitching}
+      + [共享设备](/help/use-cases/stitching/shared-devices.md)
    + Adobe Analytics 数据 {#aa-data}
       + [使用“营销渠道”维度](../use-cases/aa-data/marketing-channels.md)
       + [将报告包与不同的架构相结合](../use-cases/aa-data/combine-report-suites.md)
