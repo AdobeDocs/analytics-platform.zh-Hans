@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hide-from-toc: true
 role: Admin
-source-git-commit: 97fcb5f16962b85aa4f95bfbe2f16295d8bb3452
+source-git-commit: f17d2ebdf9a45ebb3a4e923a34c4b9b3d629f038
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '993'
 ht-degree: 6%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 6%
 
 #### 最后验证归因
 
-上次身份验证将共享设备中的所有未知活动归因于上次进行身份验证的用户。 最后验证用于Audience Manager，是实时客户数据配置文件用例的首选方法。 Experience PlatformIdentity服务基于最后验证归因构建图形，因此用于基于图形的拼合。
+上次身份验证将共享设备中的所有未知活动归因于上次进行身份验证的用户。 最后验证用于Audience Manager，是实时客户数据配置文件用例的首选方法。 Experience PlatformIdentity服务基于最后验证归因构建图形，因此用于基于图形的拼合。 有关详细信息，请参阅[身份图链接规则概述](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview)。
 
 在拼接中使用最后验证归因时，拼接ID会解析，如下表所示。
 
@@ -65,7 +65,7 @@ ht-degree: 6%
 
 #### 设备拆分
 
-设备拆分将来自共享设备的匿名活动归因于最接近匿名活动的用户。 设备拆分是分析用例的首选方法，因为设备拆分将未经身份验证和经过身份验证的活动的点数都授予最接近的已知人员。 设备拆分当前用于基于字段的拼合。
+设备拆分将来自共享设备的匿名活动归因于最接近匿名活动的用户。 设备拆分当前用于基于字段的拼合。 设备拆分是分析用例的首选方法，因为设备拆分将未经身份验证和经过身份验证的活动的点数都授予最接近的已知人员。 设备拆分当前用于基于字段的拼合。
 
 在拼接中使用设备拆分归因时，拼接ID会解析，如下表所示。
 
