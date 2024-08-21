@@ -6,10 +6,10 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: d94f6d6b592b2ddecfa0b1024b9ae045b3c3ce11
+source-git-commit: 63bdb36f7c33a129f294157a814f9fb15868006e
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 6%
+source-wordcount: '950'
+ht-degree: 7%
 
 ---
 
@@ -102,7 +102,9 @@ ht-degree: 6%
 
 要了解共享设备泄露，可以考虑执行以下查询。
 
-1. 了解共享的设备数量。 您可以使用查询来计数具有两个或多个与设备ID关联的人员ID的设备ID。 示例查询可能如下所示：
+1. **识别共享设备**
+
+   要了解共享的设备数量，请执行查询，以使用两个或更多关联的人员ID来计算设备ID。 这有助于识别由多个用户使用的设备。
 
    ```sql
    SELECT COUNT(*)
@@ -116,7 +118,9 @@ ht-degree: 6%
    ```
 
 
-2. 对于首次查询产生的共享设备，您需要了解可以将总事件中的多少个事件归因到这些共享设备。 此归因使您能够更好地了解共享设备对数据的影响以及执行分析时的影响。 示例查询可能如下所示：
+2. **将事件归因到共享设备**
+
+   对于已识别的共享设备，确定总计中有多少事件可归因于这些设备。 通过此视图，可深入了解共享设备对您的数据产生的影响以及进行分析的影响。
 
    ```sql
    SELECT COUNT(*) AS total_events,
@@ -141,7 +145,9 @@ ht-degree: 6%
    ON events.persistent_id = shared_persistent_ids.persistent_id; 
    ```
 
-3. 对于归因于共享设备的事件（第二次查询的结果），您需要了解其中有多少事件没有人员ID。 否则，将说明有多少共享设备事件是匿名事件。 最终，您选择的用于提高数据质量的算法(last-auth、device-split、ECID-reset)确实会影响这些匿名共享设备事件。 示例查询可能如下所示：
+3. **识别共享设备上的匿名事件**
+
+   在归因于共享设备的事件中，确定有多少事件缺少人员ID，这表示匿名事件。 您选择的用于提高数据质量的算法（例如last-auth、device-split或ECID-reset）将影响这些匿名事件。
 
    ```sql
    SELECT COUNT(IF(shared_persistent_ids.persistent_id IS NOT NULL, 1, null)) shared_persistent_ids_events,
@@ -166,7 +172,9 @@ ht-degree: 6%
    ON events.persistent_id = shared_persistent_ids.persistent_id; 
    ```
 
-4. 最后，您要了解由于事件分类错误导致每个客户面临的风险。 要获得此公开信息，您需要为每个共享设备计算与事件总数相关的匿名事件百分比。 示例查询可能如下所示：
+4. **根据事件分类错误计算曝光率**
+
+   最后，评估每个客户因事件分类错误而可能面临的风险。 计算每个共享设备的匿名事件占事件总数的百分比。 这有助于了解对客户数据准确性的潜在影响。
 
    ```sql
    SELECT COUNT(*) AS total_events,
