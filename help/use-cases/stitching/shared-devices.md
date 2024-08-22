@@ -6,10 +6,10 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: c1ed707f63db87566331783ea24f33cc69721af9
+source-git-commit: 1a5646700dba6362a35158890f2917fc472fbddd
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 5%
+source-wordcount: '977'
+ht-degree: 4%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 5%
 
 ## 改进以人为中心的分析
 
-为了改进对共享设备进行以人为中心的分析，您有两个选择：您可以使用拼接，或者实施ECID重置功能。 下面各节将更详细地讨论这两种方法。
+示例数据是同一设备的已验证和未验证活动的组合。 难题是将人员分配给未经身份验证的流量，这样您就可以执行以人员为中心的分析，并阻止Customer Analytics删除没有人员ID值的活动。历程 要解决此难题，您有两个选择：您可以使用拼接，或者实施ECID重置功能。 以下各节将更详细地讨论这两个选项。
 
 ### 拼合
 
