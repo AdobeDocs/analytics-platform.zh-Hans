@@ -4,10 +4,10 @@ description: Customer Journey Analytics 登陆页面。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 7d915fc9b50163b7ec9c48232b99a85a3b063a77
+source-git-commit: bdf13331967a1b2e51ce9d1dab650fb3dba1606d
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 95%
+source-wordcount: '843'
+ht-degree: 90%
 
 ---
 
@@ -29,6 +29,15 @@ AI 助手是一种对话体验，允许从业者快速执行任务——无论�
 
 [![图像](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
+>[!TAB 摘要数据]
+
+允许您引入没有人员 ID 的时间序列数据。此时间序列数据可用于支持各种用例，例如
+
+- 将高级别绩效指标作为事件级别数据的一部分或旁边显示。
+- 以每小时或每天上传一次目标或目标，然后根据事件级别的量度定位这些目标或目标。
+
+[![图像](assets/learn-more-button.svg)](/help/data-views/summary-data.md)
+
 >[!TAB 基于图形的拼接*]
 
 通过基于图形的拼接，您可以使用体验平台标识服务提供的标识图更好地了解客户历程： <ul><li>连接具有不同标识符的数据集，无需提取、转换和加载额外数据以反映单个标识符。</li> <li>通过跨数据集共享标识，提高单个数据集中首选或黄金标识的覆盖率。</li><li>将 Real-Time Customer Data Platform 和 Journey Optimizer 中创建的轮廓与 Customer Journey Analytics 中的人员进行对齐。</li></ul>
@@ -45,7 +54,7 @@ AI 助手是一种对话体验，允许从业者快速执行任务——无论�
 
 >[!TAB 派生字段]
 
-现在提供了新的派生字段函数（数学、下一个或上一个、汇总、重复数据删除）和其他函数模板（例如跳出次数、友好数据集名称、假日季节、每月目标、简单机器人检测等）。
+现在可以使用新的派生字段函数（数学、下一个、上一个、总结、重复数据删除）和附加函数模板（如跳出率、友好数据集名称、假日季节、月度目标、简单机器人检测等）。
 
 [![图像](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
@@ -75,7 +84,7 @@ Audiences that are published from Customer Journey Analytics are now available i
 
 >[!TAB 新文档]
 
-新的文档部分现已发布于：<ul><li>如何从 Adobe Analytics 升级到 Customer Journey Analytics。</li><li>数据导出用例和所需的 Experience Platform 和 Customer Journey 功能。 </li></ul>选择 **[!UICONTROL 了解详情]** 以了解此更新和其他文档更新。
+新的文档部分现已发布于：<ul><li>概要数据用例和B2B示例用例。</li><li>如何从 Adobe Analytics 升级到 Customer Journey Analytics。</li><li>数据导出用例和所需的 Experience Platform 和 Customer Journey 功能。 </li></ul>选择 **[!UICONTROL 了解详情]** 以了解此更新和其他文档更新。
 
 [![图像](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
 
@@ -130,7 +139,7 @@ Audiences that are published from Customer Journey Analytics are now available i
     </td>
      <td>
       <img src="./assets/dataviews.svg" width="35px"><br/>
-      <strong>数据视图</strong><br/><a href="/help/data-views/data-views.md">概述</a> - <a href="/help/data-views/create-dataview.md">创建或编辑</a> - <a href="/help/data-views/session-settings.md">会话设置</a> - <a href="/help/data-views/derived-fields/derived-fields.md">派生字段</a> - <a href="/help/data-views/component-reference.md">组件参考</a>
+      <strong>数据视图</strong><br/><a href="/help/data-views/data-views.md">概述</a> - <a href="/help/data-views/create-dataview.md">创建或编辑</a> - <a href="/help/data-views/session-settings.md">会话设置</a> - <a href="/help/data-views/derived-fields/derived-fields.md">派生字段</a> - <a href="/help/data-views/summary-data.md">摘要数据</a> - <a href="/help/data-views/component-reference.md">组件引用</a>
     </td>
 
 </tr>
@@ -145,7 +154,7 @@ Audiences that are published from Customer Journey Analytics are now available i
     </td>
     <td>
       <img src="./assets/share.svg" width="35px"><br/>
-      <strong>共享、导出、集成</strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">项目</a> - <a href="/help/mobile-app/home.md">Analytics 功能板</a> - <a href="/help/report-builder/report-buider-overview.md">Report Builder</a>  - <a href="/help/integrations/overview.md">集成</a>
+      <strong>共享、导出、集成</strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">项目</a> - <a href="/help/mobile-app/home.md">Analytics功能板</a> - <a href="/help/report-builder/report-buider-overview.md">Report Builder</a> - <a href="/help/components/exports/manage-exports.md">云导出</a> - <a href="/help/integrations/overview.md">集成</a>
     </td>
   </tr>
 </table>

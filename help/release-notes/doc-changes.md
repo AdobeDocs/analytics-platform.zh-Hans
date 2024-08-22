@@ -4,7 +4,7 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 20756b289912dfcc4e0539db4d1ae36d1496a266
+source-git-commit: bdf13331967a1b2e51ce9d1dab650fb3dba1606d
 workflow-type: tm+mt
 source-wordcount: '4026'
 ht-degree: 71%
@@ -19,7 +19,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 
 | 功能 | 描述 |
 | --- | --- |
-| 2024 年 8 月 | |
+| **2024 年 8 月** | |
 | B2B 项目示例 | 添加了[用例](/help/use-cases/b2b/example.md)，以说明如何使用新的[转换数据集进行B2B查找](/help/connections/transform-datasets-b2b-lookups.md)功能，在Customer Journey Analytics中设置、配置和报告基于配置文件（人员）级别的B2B数据。 |
 | 更新了数据导出用例 | 向[查询服务(Data Distiller)和导出数据集](/help/use-cases/data-export/queryservice-export-datasets.md)添加了更详细的查询示例，以说明如何使用回顾窗口跨会话正确应用归因。 |
 | 摘要数据 | 添加了有关[摘要数据](/help/data-views/summary-data.md)、[摘要数据组组件设置](/help/data-views/component-settings/summary-data-group.md)和[摘要数据用例](/help/use-cases/data-views/summary-data.md)的文档。 |

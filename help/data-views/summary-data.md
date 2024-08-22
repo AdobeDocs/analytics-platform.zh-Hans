@@ -4,19 +4,17 @@ description: 有关如何在数据视图中使用和配置摘要数据的详细�
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 9517d698acf41a25fa972ced32faa75de540a080
+source-git-commit: bdf13331967a1b2e51ce9d1dab650fb3dba1606d
 workflow-type: tm+mt
 source-wordcount: '1033'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 
 
 # 摘要数据
 
-{{release-limited-testing}}
-
-摘要数据是与个人ID无关的时间系列数据。 摘要数据表示不同聚合级别的聚合数据，例如促销活动。 您可以在Customer Journey Analytics中使用此数据来支持各种用例。 例如，包含日期和单个量度值的数据，或者包含多个维度和量度的数据。
+摘要数据是与个人ID无关的时间系列数据。 摘要数据代表不同聚合级别的聚合数据，例如活动。您可以在 Customer Journey Analytics 中使用这些数据来支持各种用例。例如，包含日期和单个量度值的数据，或者包含多个维度和量度的数据。
 
 然后，可使用此概要数据来呈现高级别性能指标或执行分析。 概要数据的示例包括广告展示次数、电子邮件打开次数、广告支出、已售商品成本、标准普尔(S&amp;P)指数等。 您还可以使用概要数据每小时或每天上传目标或目标。
 
