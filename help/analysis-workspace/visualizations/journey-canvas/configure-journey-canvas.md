@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: e06793a0ce73fa8d6aa9b798209bfc044e696931
+source-git-commit: 777c37dbd8bc678021ced5f1697058dc7812f5a8
 workflow-type: tm+mt
-source-wordcount: '4087'
+source-wordcount: '4138'
 ht-degree: 1%
 
 ---
@@ -220,6 +220,12 @@ ht-degree: 1%
 ### 连接节点
 
 您可以连接画布上已存在的节点，也可以在将节点添加到画布时连接该节点。
+
+#### 连接节点时的逻辑
+
+连接历程画布中的节点时，使用THEN运算符连接它们。 这也称为[连续筛选](/help/components/filters/seg-sequential-build.md)。
+
+您可以查看已连接节点的逻辑，方法是右键单击该节点，然后选择&#x200B;[!UICONTROL **从节点**]&#x200B;创建过滤器。 该逻辑显示在&#x200B;[!UICONTROL **定义**]&#x200B;部分中。
 
 #### 连接现有节点
 

@@ -5,10 +5,10 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: fb2a24d6f7a93e941a76db0d10c515381c476c31
+source-git-commit: 777c37dbd8bc678021ced5f1697058dc7812f5a8
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 3%
+source-wordcount: '1193'
+ht-degree: 2%
 
 ---
 
@@ -94,16 +94,25 @@ ht-degree: 3%
 
 使用历程画布分析在Journey Optimizer中创建的历程具有多种好处：
 
-| 功能 | 好处 |
-|---------|----------|
-| **创建事件** | 使用任何Customer Journey Analytics维度、量度或过滤器轻松创建事件。 <p>在Journey Optimizer中，技术用户必须先创建事件，然后才能将其添加到旅程。</p> |
-| **从自定义节点创建受众** | 根据您在历程画布可视化图表的历程中创建的自定义节点创建受众。 (启动Customer Journey Analytics受众生成器。) <p>在Journey Optimizer中，您只能为预定义的活动创建受众。</p> |
-| **流过和流失** | B3 |
-| **划分事件** | B3 |
-| **重命名事件** | B3 |
-| **删除事件** | B3 |
-| **合并事件** | B3 |
-| **连接事件** | B3 |
+* 使用任何Customer Journey Analytics维度、量度、过滤器或日期范围创建事件。
+
+  在Journey Optimizer中，技术用户必须先创建事件，然后才能将其添加到旅程。
+
+* 基于您创建的自定义节点创建受众(启动Customer Journey Analytics受众生成器)。
+
+  在Journey Optimizer中，您只能为预定义的活动创建受众。
+
+* 分析流过和流失
+
+* 使用任何维度划分事件
+
+* 合并事件
+
+* 连接事件
+
+* 重命名和删除事件
+
+* 更多内容
 
 ### Journey Optimizer和历程画布之间的同步
 
@@ -144,8 +153,6 @@ ht-degree: 3%
 | 术语 | 历程画布 | Journey Optimizer |
 |---------|----------|---------|
 | **事件** | Customer Journey Analytics中可用的几个标准指标之一。 此量度会计入收入、订阅或生成的商机等。 | 触发个性化历程（如在线购买）的活动类别。 |
-| A2 | B2 | C2 |
-| A3 | B3 | C3 |
 
 ### 在历程画布中分析Journey Optimizer历程
 
