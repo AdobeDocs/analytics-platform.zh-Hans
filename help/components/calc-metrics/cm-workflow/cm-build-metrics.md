@@ -3,10 +3,10 @@ description: 计算量度生成器提供一个画布，可以将维度、量度�
 title: 生成指标
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: cdab5d8b674527a1c3f950284daac65d0ab01900
+source-git-commit: 7cdd81c9e38219d2d17decd5b9c3e987b814fc53
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 50%
+source-wordcount: '1214'
+ht-degree: 48%
 
 ---
 
@@ -30,6 +30,18 @@ Customer Journey Analytics提供了一个画布以将维度、量度、筛选器
 
 ## 计算量度生成器的区域
 
+<!-- 
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_viz_product_compatibility"
+>title="Product compatibility"
+>abstract="Indicates where in Customer Journey Analytics this calculated metric can be used, such as in Analysis Workspace, Report Builder, and so forth."  
+>"Some calculated metrics cannot be used with experimentation. Calculated metrics that are not compatible with experimentation have the following value: "Everywhere in Customer Journey Analytics (excluding experimentation)" "
+>"Various factors affect whether a calculated metric is compatible with experimentation. Learn more (https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation) ."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Use calculated metrics in experimentation"
+
+-->
+
 下图及随附的表介绍了计算量度生成器的某些主要区域和功能。
 
 ![新计算指标窗口，显示本节中描述的主要区域和功能。](assets/cm_builder_ui.png)
@@ -47,7 +59,7 @@ Customer Journey Analytics提供了一个画布以将维度、量度、筛选器
 | 定义 | 在此处，您可以拖入量度/计算量度、筛选器和/或函数来构建计算量度。 <ul><li>如果拖入一个计算指标，则它将自动展开其指标定义。 </li> <li>您可以通过容器嵌套定义。但是，与过滤器容器不同，这些容器的功能与数学表达式类似，可决定操作的顺序。 </li> </ul> |
 | 运算符 | 除以( <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Divide_18_N.svg" width="15" id="image_320D7363DE024BDEB21E44606C8B367F" width="25px" /> )是默认运算符，另外还有+、 — 和x运算符。 |
 | 预览 | 提供对可能存在的任何错误的快速阅览。预览涵盖过去 90 天的范围。这种方式可用于初步评估您是否为指标选择了正确的组件。出现意外结果表示您需要重新检查指标定义。 |
-| 产品兼容性 | 对于您在Customer Journey Analytics中创建的任何计算量度，此值始终列为&#x200B;[!UICONTROL **完全处理的数据**]。 计算量度只能包含事件数据集中的数据。 |
+| 产品兼容性 | 指示Customer Journey Analytics中可以使用此计算量度的位置。 <p>可能的值包括：</p><ul><li>[!UICONTROL **Customer Journey Analytics中的所有位置**]：计算指标可在所有Customer Journey Analytics中使用，包括在Analysis Workspace、Report Builder等中。</li><li>[!UICONTROL **Customer Journey Analytics中的任意位置（不包括试验）**]：计算指标可在所有Customer Journey Analytics中使用，试验面板除外。</li> <p>有关确定计算量度是否可用于试验的标准的信息，请参阅[试验面板](/help/analysis-workspace/c-panels/experimentation.md)中的[在试验面板中使用计算量度](/help/analysis-workspace/c-panels/experimentation.md#use-calculated-metrics-in-the-experimentation-panel)。</p></ul> |
 | 添加 | 对于所有类型的计算量度，您可以向定义中添加容器和静态数字。对于高级计算量度，您还可以添加筛选器和函数。<ul><li>容器的作用类似于数学表达式，它们决定着运算的顺序。因此，容器中的任何内容都将在下次运算前得到处理。</li><li>将过滤器拖动到容器上会过滤该容器中的所有内容。 （仅限高级计算指标）</li><li>您可以在一个容器中堆叠多个筛选器。</li></ul> |
 | 齿轮图标（量度类型、归因） | 通过选择量度旁边的齿轮图标，您可以指定量度类型和归因模型。 <p>**注意：**&#x200B;将组件的归因更新为非默认归因模型时，请考虑以下事项：</p><ul><li>**在具有&#x200B;*单个维度*：**&#x200B;的报表中使用组件时，如果使用非默认归因模型，组件的归因将忽略分配模型。</li><li>**在具有&#x200B;*多个维度*：**&#x200B;的报表中使用组件时，如果使用了非默认归因模型，则组件的归因将保留分配模型。</li><li>仅当[将数据导出到云](/help/analysis-workspace/export/export-cloud.md)时，多个维度才可用。</li></ul> <p>有关分配的更多信息，请参阅[持久性组件设置](/help/data-views/component-settings/persistence.md)。</p> |
 | 加号(+)图标 | 让您能够创建新组件，例如新筛选器（这会将您转到筛选器生成器）。 |

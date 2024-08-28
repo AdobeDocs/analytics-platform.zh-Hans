@@ -4,16 +4,16 @@ title: 试验性面板
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: e0cf556a094726edbee35b21bf71d5d1f227fcc7
+source-git-commit: 36718581c9a070bb5f5547f18be643ca91838bae
 workflow-type: tm+mt
-source-wordcount: '1885'
-ht-degree: 35%
+source-wordcount: '2069'
+ht-degree: 29%
 
 ---
 
 # 试验性面板
 
-通过&#x200B;**[!UICONTROL 试验]**&#x200B;面板，分析师可以比较不同的用户体验、营销或消息传递方面的变化，以确定哪一种最能推动特定结果。您可以从任何试验平台评估任何 A/B 试验的提升度和置信度：在线、离线、来自 Target 或 Adobe Journey Optimizer 等 Adobe 解决方案、甚至是 BYO（自带）数据。
+通过&#x200B;**[!UICONTROL 试验]**&#x200B;面板，分析师可以比较不同的用户体验、营销或消息传递方面的变化，以确定哪一种最能推动特定结果。您可以从任何试验平台评估任何A/B试验的提升和置信度：在线、离线、Adobe解决方案(如Target或Journey Optimizer)，甚至BYO（自带）数据。
 
 详细了解Adobe Customer Journey Analytics与Adobe Target之间的[集成](https://experienceleague.adobe.com/zh-hans/docs/target/using/integrate/cja/target-reporting-in-cja)。
 
@@ -21,11 +21,11 @@ ht-degree: 35%
 
 试验面板可供所有Customer Journey Analytics用户使用。 不需要管理员权限或其他权限。但是，设置流程中（下面的步骤 1 和 2）需要只有管理员才能执行的操作。
 
-## 计算指标中新增了函数 {#functions}
+## 计算量度中的新函数 {#functions}
 
 添加了两个新的高级函数：[!UICONTROL 提升]和[!UICONTROL 置信度]。有关详细信息，请参阅[参考 - 高级函数](/help/components/calc-metrics/cm-adv-functions.md)。
 
-## 步骤 1：创建与试验数据集的连接 {#connection}
+## 步骤1：创建与试验数据集的连接 {#connection}
 
 推荐的数据架构将试验数据放在一个[对象数组](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array)中，该数组在两个单独的维度中包含试验数据和变体数据。 两个维度都必须位于&#x200B;**单个**&#x200B;对象数组中。 如果您的试验数据位于单个维度中（试验数据和变体数据位于分隔字符串中），则可以在数据视图中使用[子字符串](/help/data-views/component-settings/substring.md)设置将该维度一分为二以用于面板中。
 
@@ -44,32 +44,33 @@ ht-degree: 35%
 
 如果没有这些标签，则由于没有试验可使用，因此“试验”面板不工作。
 
-## 步骤 3：配置试验面板 {#configure}
+## 步骤3：配置试验面板 {#configure}
 
-1. 在Customer Journey AnalyticsWorkspace中，将试验面板拖动到项目中。
+1. 在Customer Journey Analytics的Analysis Workspace中，将试验面板添加到项目中。 有关向项目添加面板的详细信息，请参阅[创建项目](/help/analysis-workspace/build-workspace-project/create-projects.md)中的[向项目添加面板](/help/analysis-workspace/build-workspace-project/create-projects.md#add-panels-to-the-project)。
 
-![Experiention面板拖入了一个项目。](assets/experiment.png)
+   ![Experiention面板拖入了一个项目。](assets/experiment.png)
 
->[!IMPORTANT]
->
->如果尚未完成Customer Journey Analytics数据视图中的必要设置，则在可继续操作之前会收到此消息：“[!UICONTROL 请配置数据视图中的试验维度和变体维度]”。
->
+   >[!IMPORTANT]
+   >
+   >如果尚未完成Customer Journey Analytics数据视图中的必要设置，则在可继续操作之前会收到此消息：“[!UICONTROL 请配置数据视图中的试验维度和变体维度]”。
+   >
 
 1. 配置面板输入设置。
 
    | 设置 | 定义 |
    | --- | --- |
    | **[!UICONTROL 试验]** | 向最终用户展示的一组体验变体，用于确定哪一种变体最好永久保留。 试验由两个或多个变量组成，其中一个变量视为控制变量。该设置预先填充了数据视图中已标记为&#x200B;**[!UICONTROL 试验]**&#x200B;标签的维度，以及过去 3 个月的试验数据。 |
-   | **[!UICONTROL 控制变量]** | 最终用户体验中的两种或多种变化中的一种，并会为了确定更好的替代方案而对其进行比较。必须选择一个变量作为控制变量，并且只能将一个变量视为控制变量。 该设置预先填充了数据视图中已标记为&#x200B;**[!UICONTROL 变量]**&#x200B;标签的维度。此设置将会调出与此试验相关的变量数据。 |
-   | **[!UICONTROL 成功量度]** | 用户正在与变量进行比较的一个或多个量度。可产生最理想的转化量度结果（最高或最低）的变量会成为某项试验中具有“最佳性能的变量”。最多可添加 5 个量度。 |
+   | **[!UICONTROL 控件变体]** | 最终用户体验中的两种或多种变化中的一种，并会为了确定更好的替代方案而对其进行比较。必须选择一个变量作为控制变量，并且只能将一个变量视为控制变量。 该设置预先填充了数据视图中已标记为&#x200B;**[!UICONTROL 变量]**&#x200B;标签的维度。此设置将会调出与此试验相关的变量数据。 |
+   | **[!UICONTROL 成功量度]** | 用户正在与变量进行比较的一个或多个量度。可产生最理想的转化量度结果（最高或最低）的变量会成为某项试验中具有“最佳性能的变量”。最多可添加 5 个量度。 <p>也可以使用符合必要标准的计算量度。 有关详细信息，请参阅[在试验面板中使用计算量度](#use-calculated-metrics-in-the-experimentation-panel)。</p> |
    | **[!UICONTROL 标准化量度]** | 运行测试的基础（[!UICONTROL 人员]、[!UICONTROL 会话]或[!UICONTROL 事件]）。 例如，测试可以比较几种变化的转换率，其中&#x200B;**[!UICONTROL 转化率]**&#x200B;会计为每个会话的&#x200B;**[!UICONTROL 转化率]**&#x200B;或每个人的&#x200B;**[!UICONTROL 转化率]**。 |
+   | [!UICONTROL **包含置信度上/下限**] |  |
    | **[!UICONTROL 日期范围]** | 日期范围会根据为选定试验在Customer Journey Analytics中收到的第一个事件自动设置。 如果需要，可以将日期范围限制或扩展到更具体的时间范围。 |
 
-1. 单击&#x200B;**[!UICONTROL 生成]**。
+1. 选择&#x200B;**[!UICONTROL 生成]**。
 
 ## 第 4 步：查看面板输出 {#view}
 
-试验面板会返回一组丰富的数据和可视化图表，帮助您更好地了解试验的执行情况。在该面板顶部，提供了一个摘要行，用于提醒您选择的面板设置。在任何时候，您都可以通过单击右上角的编辑铅笔来编辑面板。
+试验面板会返回一组丰富的数据和可视化图表，帮助您更好地了解试验的执行情况。在该面板顶部，提供了一个摘要行，用于提醒您选择的面板设置。您可以随时通过选择右上方的编辑铅笔来编辑面板。
 
 您还可以获得一份文本摘要，其中会指出试验是否具有结论性，并会总结结果。结论性基于统计显著性。（见下文“统计方法”）您可以看到具有最高提升和置信度的最佳性能变量的摘要数字。
 
@@ -113,13 +114,13 @@ ht-degree: 35%
 
 Customer Journey Analytics允许分析人员选择任何维度作为“试验”。 但是，当选择的实验维度不是随机人员的维度时，您如何解释该分析？
 
-例如，以用户看到的广告为例。 如果您决定向人员显示“广告B”而不是“广告A”，则您可能有兴趣衡量某些量度的变化（例如，平均收入）。 显示广告B代替广告A的因果关系对于做出营销决策至关重要。 这种因果关系可以通过测量整个群体的平均收入来衡量，如果您使用显示广告B的替代策略来替换显示广告A的现状。
+例如，以用户看到的广告为例。 如果您决定向人员显示“广告B”而不是“广告A”，则您可能有兴趣衡量某些量度的变化（例如，平均收入）。 显示广告B代替广告A的因果关系对于做出营销决策至关重要。 如果您使用显示广告B的替代策略替换了显示广告A的现状，则此因果效应可以测量为整个群体的平均收入。
 
 A/B测试是行业内客观衡量此类干预效果的黄金标准。 A/B测试产生因果估计的关键原因是，接收可能变体之一的人员随机化。
 
 现在，考虑一个不是通过随机化实现的维度，例如，人的美国状态。 假设人员主要来自两个州：纽约和加利福尼亚。 由于地区天气差异，冬衣品牌在两个州的平均销售收入可能有所不同。 在这种情况下，天气可能是冬季服装销售背后的真正因果因素，而不是人的地理状态不同这一事实。
 
-通过Customer Journey Analytics中的“试验”面板，可按人员的各个状态的平均收入差异分析数据。 在这种情况下，产出没有因果解释。 然而，这种分析可能仍然有意义。 它提供了按各州划分的平均收入差异的估计（以及不确定性的衡量标准）。  此值也称为“统计假设检验”。 此分析的输出可能很有趣，但不一定可操作，因为您没有，有时也无法将人员随机化为维度的可能值之一。
+通过Customer Journey Analytics中的试验面板，可按人员的各个状态的平均收入差异分析数据。 在这种情况下，产出没有因果解释。 然而，这种分析可能仍然有意义。 它提供了按各州划分的平均收入差异的估计（以及不确定性的衡量标准）。  此值也称为“统计假设检验”。 此分析的输出可能很有趣，但不一定可操作，因为您没有，有时也无法将人员随机化为维度的可能值之一。
 
 下图比较了这两种情况：
 
@@ -127,6 +128,26 @@ A/B测试是行业内客观衡量此类干预效果的黄金标准。 A/B测试�
 
 如果想衡量干预措施X对结果Y的影响，那么两者真正的原因可能是混淆因素C。如果数据不是通过X上的随机化实现的，影响更难测量，并且分析明确说明了C。随机化打破了X对C的依赖，让我们不必担心其他变量就可以测量X对Y的影响。
 
-## 在试验面板中使用计算量度
+## 在试验中使用计算量度 {#use-in-experimentation}
+
+>[!NOTE]
+>
+>对于同时使用Customer Journey Analytics和Adobe Journey Optimizer的组织，此部分中的信息还适用于Journey Optimizer中的试验功能。
+
+
+并非所有计算量度都与试验面板兼容。
+
+包含以下任何量度或常量的计算量度与试验面板不兼容：
+
+* 摘要数据集<!--add link to Rob's "Summary data" doc when it's published -->中的基本量度
+* 基本量度彼此相除或相乘（例如，`Revenue`/`Orders`）
+* 添加到基本量度或从基本量度减去的常量（例如，`Revenue+50`）
+* 以下任一基本量度：
+   * 人员
+   * （还有什么？）
+
+创建计算量度时，与“试验”面板不兼容的计算量度在&#x200B;[!UICONTROL **产品兼容性**]&#x200B;字段中的Customer Journey Analytics（不包括试验）处具有值&#x200B;[!UICONTROL **Everywhere**]。 有关创建计算量度的信息，请参阅[生成量度](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)。
+
+## 在试验面板中使用派生量度
 
 请参阅这篇博客帖子，了解有关在“试验”面板](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119)中使用派生量度的[的信息。

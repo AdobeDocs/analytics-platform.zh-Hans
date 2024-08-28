@@ -5,10 +5,10 @@ title: 可视化图表概述
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: c22f2d81eddbf9ee2fb3600fd5b727fb838de740
+source-git-commit: d903745e105edb11ef6f43b6137e1e03d43e5e07
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 80%
+source-wordcount: '1344'
+ht-degree: 78%
 
 ---
 
@@ -27,7 +27,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | [项目符号图表](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![项目符号图标](assets/Smock_GraphBullet_18_N.svg)</p> | 显示您感兴趣的值与其他性能范围（目标）进行比较或衡量的结果。 |
 | [同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![同类群组表图标](assets/Smock_TextNumbered_18_N.svg)</p> | *`cohort`* 是指一组在特定期限内共享相同特性的人员。同类群组分析对于保留、流失或延迟分析非常有用。 |
 | [圆环图](/help/analysis-workspace/visualizations/donut.md) <p>![圆环图标](assets/Smock_GraphDonut_18_N.svg)</p> | 此可视化图表与饼图类似，它将数据显示为整体的一部分或筛选条件。 |
-| [流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)<p>![流失图标](assets/Smock_ConversionFunnel_18_N.svg)</p> | 流失报表显示人员从何处离开（流失）或继续通过（流过）预定义的页面序列。 可以设置为有条件序列或确切序列。 |
+| [流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)<p>![流失图标](assets/Smock_ConversionFunnel_18_N.svg)</p> | <!-- Similar to Journey canvas, -->“流失”可视化图表显示人员从何处离开（流失）或继续通过（流过）预定义的页面序列。 流失可视化图表可以设置为最终序列或确切序列。 <p><!-- Unlike Journey canvas, -->流失可视化图表仅为具有单个已知开始和结束的线性历程提供分析。</p> |
 | [流](/help/analysis-workspace/visualizations/c-flow/flow.md)<p>![流程图标](assets/flow-icon.png)</p> | 显示客户在您的网站和应用程序中的确切路径。 |
 | [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)<p>![自由格式表图标](assets/Smock_ViewTable_18_N.svg)</p> | 自由格式表不仅可以作为数据表，而且还是一个交互式可视化图表。这是在工作区中进行数据分析的基础。 |
 | [直方图](/help/analysis-workspace/visualizations/histogram.md)<p>![直方图图标](assets/Smock_GraphHistogram_18_N.svg)</p> | 直方图根据量度数量，将人员、访问或事件划分到存储桶中。 |
@@ -39,6 +39,8 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | [文本](/help/analysis-workspace/visualizations/text.md)<p>![散点图图标](assets/Smock_Text_18_N.svg)</p> | 使您克将用户定义的文本添加到您的工作区。在利用面板/可视化图表描述之外，对于向您的分析和见解添加额外的上下文非常有用 |
 | [树形图](/help/analysis-workspace/visualizations/treemap.md)<p>![树状图图标](assets/Smock_GraphTree_18_N.svg)</p> | 将分层（树结构）数据显示为一组嵌套的矩形。 |
 | [维恩图](/help/analysis-workspace/visualizations/venn.md)<p>![维恩图标](assets/venn-icon.png)</p> | 使用圆圈来描述最多 3 个过滤器之间的量度重叠。 |
+
+<!-- Add beneath Horizontal bar in the table above: | [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Similar to Fallout, Journey canvas shows where persons left (fell out) and continued through (fell through) a predefined sequence of pages. <p>Unlike Fallout, Journey canvas supports not only linear journeys, but any number of entry points and paths. Furthermore, journeys can be created in Adobe Journey Optimizer and then analyzed in Journey canvas.</p> | -->
 
 ## 向面板添加可视化图表
 
