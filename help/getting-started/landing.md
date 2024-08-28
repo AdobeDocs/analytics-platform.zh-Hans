@@ -5,9 +5,9 @@ role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
 source-git-commit: a9dd06a7b9d7c1ee6d5be5b944564e971cfe5192
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1398'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 99%
 
 Customer Journey Analytics 的登录页突出[!DNL Analysis Workspace]显示了项目经理主页和学习部分，以帮助您更有效地管理客户历程数据。
 
-+++ 请观看视频，了解Customer Journey Analytics的简介……
++++ 请观看视频，了解针对 Customer Journey Analytics 的简介。
 
 >[!VIDEO](https://video.tv.adobe.com/v/334278/?quality=12)
 
