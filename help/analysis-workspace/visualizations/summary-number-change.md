@@ -4,7 +4,7 @@ title: 概要数字和概要变化
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 3a63c22c080b0d4d4848d707c6219902de687abd
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 97%
@@ -35,7 +35,7 @@ ht-degree: 97%
 
 ## 概要更改可视化 {#summary-change}
 
-使用“概要变化”可视化图表来显示两个数字之间的增量（变化）。可通过[自定义事件极性](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html?lang=zh-Hans)或计算量度的[将上升趋势显示为](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html?lang=zh-Hans)选项来控制“概要变化”的绿色和红色。
+使用“概要变化”可视化图表来显示两个数字之间的增量（变化）。可通过[自定义事件极性](https://experienceleague.adobe.com/docs/analytics/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md)或计算量度的[将上升趋势显示为](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html?lang=zh-Hans)选项来控制“概要变化”的绿色和红色。
 
 此可视化图表的行为方式如下：
 
