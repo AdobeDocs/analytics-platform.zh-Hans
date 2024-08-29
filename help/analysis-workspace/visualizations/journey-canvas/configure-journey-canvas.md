@@ -5,14 +5,17 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 777c37dbd8bc678021ced5f1697058dc7812f5a8
+exl-id: 53984934-6fba-4f15-aeeb-d91039260553
+source-git-commit: 707bfbf6d34d999bc1b275b24cd6a78b8ef65e74
 workflow-type: tm+mt
-source-wordcount: '4138'
+source-wordcount: '4276'
 ht-degree: 1%
 
 ---
 
 # 配置历程画布可视化
+
+{{release-limited-testing}}
 
 历程画布可视化图表允许您分析提供给用户和客户的旅程，并获取有关这些旅程的深入见解。
 
@@ -78,9 +81,9 @@ ht-degree: 1%
    | 设置 | 功能 |
    |---------|----------|
    | [!UICONTROL **节点类型**] | 允许您配置在可视化图表中显示的节点类型。 要在可视化图表中隐藏节点类型，请选择该节点类型旁边的(x)，或从下拉菜单中取消选择它。 要显示隐藏的节点类型，请从下拉菜单中选择它。 <p>根据可视化图表的内容，可能的节点类型包括：</p><ul><li>[!UICONTROL **读取区段**]</li><li>[!UICONTROL **结束**]</li><li>[!UICONTROL **维度**]</li><li>[!UICONTROL **量度**]</li></ul><p>**注意**：使用此字段时请考虑以下事项：</p><ul><li>仅当在Analysis Workspace面板（您要添加可视化图表）中选择的数据视图中检测到Journey Optimizer数据时，才会显示此选项。 有关更改Analysis Workspace中面板的数据视图的信息，请参阅[Analysis Workspace概述](/help/analysis-workspace/home.md)。</li><li>在历程画布中修改Journey Optimizer历程后，此选项不再可用。 有关详细信息，请参阅历程画布中修改历程后的[视觉差异](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas)</li></ul></p> |
-   | [!UICONTROL **百分比值**] | 从以下选项中进行选择： <ul><li>总数的&#x200B;[!UICONTROL **百分比**]：在面板的日期范围内包含在数据视图中的所有人员的百分比。</li><li>[!UICONTROL **开始节点的百分比**]：开始节点中包含的所有人员的百分比。<p>仅当只有一个启动节点时，此选项才可用。 如果您有多个开始节点，则该节点为隐藏状态。</p></li></ul> |
+   | [!UICONTROL **百分比值**] | 从以下选项中进行选择： <ul><li>总数的&#x200B;[!UICONTROL **百分比**]：在面板的日期范围内包含在数据视图中的所有人员的百分比。</li><li>[!UICONTROL **开始节点的百分比**]：在面板的日期范围内，数据视图中包含的、同时满足历程开始节点条件的所有人员的百分比。 (此选项仅在具有单个开始节点的历程中可用；在具有多个开始节点的历程中禁用此选项。 起始节点定义为没有连接进入它的任何节点。)</li></ul> |
    | [!UICONTROL **箭头设置**] | 从以下选项中进行选择：<ul><li>[!UICONTROL **无**]： </li><li>[!UICONTROL **条件**]： </li><li>[!UICONTROL **所有标签**]： </li></ul><p>**注意**：只有在您添加可视化图表的Journey Optimizer面板中选择的数据视图中检测到Analysis Workspace数据时，才会显示此选项。 有关更改Analysis Workspace中面板的数据视图的信息，请参阅[Analysis Workspace概述](/help/analysis-workspace/home.md)。</p> |
-   | [!UICONTROL **显示流失**] | 显示每个节点的流失数据，以显示在给定节点离开旅程的人员数量和百分比。 |
+   | [!UICONTROL **显示流失**] | 显示每个节点的流失数据。 这显示在给定节点离开历程的人员的数量和百分比。 <p>退出旅程的人可能已在该网站上执行了其他操作，但他们从未满足旅程中下一个节点定义的标准。</p> |
 
 1. 继续[添加节点](#add-a-node)。
 
@@ -92,7 +95,7 @@ ht-degree: 1%
 
 1. 在Analysis Workspace中，打开现有的历程画布可视化图表，或[开始构建新的可视化图表](#begin-building-a-journey-canvas-visualization)。
 
-1. 将量度、维度、维度项、过滤器或日期范围从左边栏拖到画布上。 不支持计算量度。 此外，不支持任何基于[摘要数据集](/help/data-views/summary-data.md)的量度或维度。
+1. 将量度、维度、维度项、过滤器或日期范围从左边栏拖到画布上。 支持基于[派生字段](/help/data-views/derived-fields/derived-fields.md)的量度。 但是，不支持计算指标以及基于[摘要数据集](/help/data-views/summary-data.md)的任何指标或维度。
 
    按住Shift键或按住Command键(在Mac上)或Ctrl键（在Windows上）可在左边栏中选择多个组件。
 
@@ -221,15 +224,25 @@ ht-degree: 1%
 
 您可以连接画布上已存在的节点，也可以在将节点添加到画布时连接该节点。
 
+#### 节点之间的箭头
+
+节点通过箭头连接。 箭头方向和宽度都有意义：
+
+* **方向**：指示历程事件的序列
+
+* **宽度**：表示从一个节点到另一个节点的卷百分比
+
 #### 连接节点时的逻辑
 
 连接历程画布中的节点时，使用THEN运算符连接它们。 这也称为[连续筛选](/help/components/filters/seg-sequential-build.md)。
+
+节点作为“最终路径”连接，这意味着访客只要最终从一个节点移动到另一个节点即被计入，而不考虑在这两个节点之间发生的任何事件。
 
 您可以查看已连接节点的逻辑，方法是右键单击该节点，然后选择&#x200B;[!UICONTROL **从节点**]&#x200B;创建过滤器。 该逻辑显示在&#x200B;[!UICONTROL **定义**]&#x200B;部分中。
 
 #### 连接现有节点
 
-历程画布中的节点之间的箭头决定了旅程中的事件顺序。
+历程不能是循环的，循环回以前连接的节点。
 
 要连接历程画布中的节点，请执行以下操作：
 
@@ -239,7 +252,7 @@ ht-degree: 1%
 
 1. 将4个蓝色圆点中的任意一个拖到您要连接的节点的4个边中的任何一个。
 
-   出现一个箭头，连接这2个节点。 箭头指示人员在旅程中移动的方向。
+   出现一个箭头，连接这2个节点。 有关详细信息，请参阅节点之间的[箭头](#arrows-between-nodes)。
 
 #### 添加节点时连接节点
 
@@ -249,7 +262,7 @@ ht-degree: 1%
 
 ### 更改节点或箭头的颜色
 
-您可以更改画布上节点或箭头的颜色。
+您可以通过更改画布上任何节点或箭头的颜色来以可视方式自定义历程。 例如，您可以调整颜色以指示所需或不所需的事件。
 
 更改颜色的选项可用于画布上的以下对象：
 
@@ -339,7 +352,7 @@ ht-degree: 1%
 
 ### 查看趋势数据
 
-您可以在折线图中查看历程画布中对象的趋势数据。 &lt;！ — 包含一些预建的异常检测数据（这是流失中的定义）>
+您可以在折线图中查看历程画布中对象的趋势数据。<!--, with some prebuilt anomaly detection data (this is the definition in Fallout) -->
 
 趋势选项适用于画布上的以下对象：
 
@@ -474,4 +487,3 @@ from Travis: You can set time to be within X amount of time or after X amount of
 在Journey Optimizer中，打开要在历程画布中分析的旅程。
 
 1. 选择&#x200B;[!UICONTROL **在CJA**]&#x200B;中分析。<!-- ?? -->
-

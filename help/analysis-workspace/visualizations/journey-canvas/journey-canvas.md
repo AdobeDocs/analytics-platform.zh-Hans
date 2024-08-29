@@ -5,7 +5,8 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 777c37dbd8bc678021ced5f1697058dc7812f5a8
+exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
+source-git-commit: 707bfbf6d34d999bc1b275b24cd6a78b8ef65e74
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 2%
@@ -14,9 +15,11 @@ ht-degree: 2%
 
 # 历程画布概述
 
+{{release-limited-testing}}
+
 历程画布可视化图表允许您分析提供给用户和客户的旅程，并获取有关这些旅程的深入见解。 它允许您从头开始定义旅程或从Journey Optimizer查看旅程，然后查看人员如何离开（流失）或继续通过（流过）旅程。
 
-您可以使用事件、维度项、过滤器和日期范围的任意组合来创建历程节点，从而构建用户历程的分析。 连接节点以创建历程流，并包含多个路径和决策点。 拖动画布上的节点以重新排列历程的事件和条件。 在进行更改时实时更新数据。
+您可以[通过使用事件、维度项、过滤器和日期范围的任意组合来创建用户旅程](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)的分析以创建旅程节点。 连接节点以创建历程流，并包含多个路径和决策点。 拖动画布上的节点以重新排列历程的事件和条件。 在进行更改时实时更新数据。
 
 ## 主要功能
 
@@ -161,5 +164,3 @@ ht-degree: 2%
 ## 在历程画布中构建分析
 
 您可以在历程画布中基于Analysis Workspace中可用的任何维度或指标构建分析。 或者，您可以分析在Journey Optimizer中创建的历程。 有关详细信息，请参阅[配置历程画布可视化](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。
-
-
