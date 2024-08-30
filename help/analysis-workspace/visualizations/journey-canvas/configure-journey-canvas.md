@@ -6,9 +6,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 707bfbf6d34d999bc1b275b24cd6a78b8ef65e74
+source-git-commit: bd50c5bdcce0617da78eed918338e44474419e31
 workflow-type: tm+mt
-source-wordcount: '4276'
+source-wordcount: '4359'
 ht-degree: 1%
 
 ---
@@ -65,16 +65,20 @@ ht-degree: 1%
 
    <!-- add screen shot -->
 
-1. 无论您是从空白画布创建新分析，还是正在分析Journey Optimizer历程，都可以按照[配置历程画布可视化图表](#begin-building-a-journey-canvas-visualization)中所述配置历程。
+1. 无论您是从空白画布创建新分析还是分析Journey Optimizer历程，都可以按照[配置可视化设置](#configure-visualization-settings)中所述配置历程。
 
 
-## 配置历程画布可视化
+## 配置可视化设置
 
-您需要[开始构建历程画布可视化图表](#begin-building-a-journey-canvas-visualization)，然后才能按照以下部分所述对其进行配置。
+历程画布标题中提供了各种配置选项。
 
-### 配置设置
+要配置历程画布可视化图表的设置，请执行以下操作：
 
 1. 在Analysis Workspace中，打开现有的历程画布可视化图表，或[开始构建新的可视化图表](#begin-building-a-journey-canvas-visualization)。
+
+   标题中提供了允许您配置历程画布可视化图表的选项：
+
+   ![历程画布标题选项](assets/journey-canvas-header.png)
 
 1. 配置可视化图表顶部显示的以下任意设置：
 
@@ -83,15 +87,17 @@ ht-degree: 1%
    | [!UICONTROL **节点类型**] | 允许您配置在可视化图表中显示的节点类型。 要在可视化图表中隐藏节点类型，请选择该节点类型旁边的(x)，或从下拉菜单中取消选择它。 要显示隐藏的节点类型，请从下拉菜单中选择它。 <p>根据可视化图表的内容，可能的节点类型包括：</p><ul><li>[!UICONTROL **读取区段**]</li><li>[!UICONTROL **结束**]</li><li>[!UICONTROL **维度**]</li><li>[!UICONTROL **量度**]</li></ul><p>**注意**：使用此字段时请考虑以下事项：</p><ul><li>仅当在Analysis Workspace面板（您要添加可视化图表）中选择的数据视图中检测到Journey Optimizer数据时，才会显示此选项。 有关更改Analysis Workspace中面板的数据视图的信息，请参阅[Analysis Workspace概述](/help/analysis-workspace/home.md)。</li><li>在历程画布中修改Journey Optimizer历程后，此选项不再可用。 有关详细信息，请参阅历程画布中修改历程后的[视觉差异](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas)</li></ul></p> |
    | [!UICONTROL **百分比值**] | 从以下选项中进行选择： <ul><li>总数的&#x200B;[!UICONTROL **百分比**]：在面板的日期范围内包含在数据视图中的所有人员的百分比。</li><li>[!UICONTROL **开始节点的百分比**]：在面板的日期范围内，数据视图中包含的、同时满足历程开始节点条件的所有人员的百分比。 (此选项仅在具有单个开始节点的历程中可用；在具有多个开始节点的历程中禁用此选项。 起始节点定义为没有连接进入它的任何节点。)</li></ul> |
    | [!UICONTROL **箭头设置**] | 从以下选项中进行选择：<ul><li>[!UICONTROL **无**]： </li><li>[!UICONTROL **条件**]： </li><li>[!UICONTROL **所有标签**]： </li></ul><p>**注意**：只有在您添加可视化图表的Journey Optimizer面板中选择的数据视图中检测到Analysis Workspace数据时，才会显示此选项。 有关更改Analysis Workspace中面板的数据视图的信息，请参阅[Analysis Workspace概述](/help/analysis-workspace/home.md)。</p> |
-   | [!UICONTROL **显示流失**] | 显示每个节点的流失数据。 这显示在给定节点离开历程的人员的数量和百分比。 <p>退出旅程的人可能已在该网站上执行了其他操作，但他们从未满足旅程中下一个节点定义的标准。</p> |
+   | [!UICONTROL **显示流失**] | 显示每个节点的流失数据。 这显示在给定节点后离开历程的人员的数量和百分比。 <p>退出旅程的人可能已在该网站上执行了其他操作，但他们从未满足旅程中下一个节点定义的标准。</p> |
 
-1. 继续[添加节点](#add-a-node)。
+1. 继续添加[添加节点](#add-nodes)。
 
-### 添加节点
+## 添加节点
 
-历程画布可视化图表中的节点表示用户旅程的事件或操作。 您可以将Workspace组件从左边栏拖到画布以创建节点。
+历程画布可视化图表中的节点表示用户旅程的事件或操作。
 
-要向历程画布可视化图表添加节点，请执行以下操作：
+您可以通过以下方式创建节点：将Workspace组件从左边栏拖到画布中，允许历程画布基于现有节点选择最上层的下一个或上一个节点，或者复制现有节点。
+
+### 从左边栏拖动组件
 
 1. 在Analysis Workspace中，打开现有的历程画布可视化图表，或[开始构建新的可视化图表](#begin-building-a-journey-canvas-visualization)。
 
@@ -180,6 +186,24 @@ ht-degree: 1%
 
    前3个节点添加到这2个现有节点之间，每个节点都作为单独的分支连接。
 
+### 复制节点
+
+复制选项可用于画布上的以下对象：
+
+* 多个节点
+
+要复制节点，请执行以下操作：
+
+1. 选择多个要复制的节点。
+
+1. 右键单击其中一个选定的节点，然后选择&#x200B;[!UICONTROL **复制**]。
+
+## 设计旅程
+
+节点的顺序以及它们之间的连接影响历程画布数据。 历程应直观而准确地反映要报告的事件顺序。
+
+将节点添加到画布后，您可以重新排列节点、组合节点、连接节点并在节点之间添加时间限制。
+
 ### 重新排列节点
 
 历程画布中的历程由表示事件、维度项和过滤器的任意组合的节点和箭头灵活图形组成。
@@ -260,9 +284,30 @@ ht-degree: 1%
 
 有关详细信息，请参阅[添加节点](#add-a-node)。
 
+### 在节点之间添加时间限制
+
+可以在节点之间设置时间限制。 当设置时间限制时，如果人员遵循定义的旅程，但在节点之间移动所花费的时间超过分配的时间段，则被视为已退出旅程。
+
+添加时间约束的选项可用于画布上的以下对象：
+
+* 节点之间的箭头
+
+要添加时间限制，请执行以下操作：
+
+1. 右键单击2个节点之间的箭头，然后选择&#x200B;[!UICONTROL **添加时间约束**]。
+
+<!-- 
+
+from Travis: You can set time to be within X amount of time or after X amount of time (those are the only two options I think, but we can check with Brandon). 
+1. Choose from the following options: 
+
+-->
+
+## 管理节点或箭头
+
 ### 更改节点或箭头的颜色
 
-您可以通过更改画布上任何节点或箭头的颜色来以可视方式自定义历程。 例如，您可以调整颜色以指示所需或不所需的事件。
+您可以通过更改画布上任何节点或箭头的颜色来以可视方式自定义历程。 例如，您可以调整颜色以指示所需或不需要的事件。
 
 更改颜色的选项可用于画布上的以下对象：
 
@@ -310,7 +355,7 @@ ht-degree: 1%
 
 * 节点之间的多个箭头
 
-### 将划分应用于一个或多个节点或箭头
+#### 将划分应用于一个或多个节点或箭头
 
 1. 选择要应用划分的一个或多个节点，然后右键单击其中一个选定的节点。
 
@@ -320,7 +365,7 @@ ht-degree: 1%
 
 1. 选择&#x200B;[!UICONTROL **划分**]。
 
-### 将划分应用于单个节点
+#### 将划分应用于单个节点
 
 您可以将左侧边栏中的某个维度拖到画布上要应用划分的节点上。
 
@@ -374,37 +419,6 @@ ht-degree: 1%
 
 1. 选择&#x200B;[!UICONTROL **趋势**]。
 
-### 复制节点
-
-复制选项可用于画布上的以下对象：
-
-* 多个节点
-
-要复制节点，请执行以下操作：
-
-1. 选择多个要复制的节点。
-
-1. 右键单击其中一个选定的节点，然后选择&#x200B;[!UICONTROL **复制**]。
-
-
-### 在节点之间添加时间限制
-
-可以在节点之间设置时间限制。 当设置时间限制时，如果人员遵循定义的旅程，但在节点之间移动所花费的时间超过分配的时间段，则被视为已退出旅程。
-
-添加时间约束的选项可用于画布上的以下对象：
-
-* 节点之间的箭头
-
-要添加时间限制，请执行以下操作：
-
-1. 右键单击2个节点之间的箭头，然后选择&#x200B;[!UICONTROL **添加时间约束**]。
-
-<!-- 
-
-from Travis: You can set time to be within X amount of time or after X amount of time (those are the only two options I think, but we can check with Brandon). 
-1. Choose from the following options: 
-
--->
 
 ### 根据节点或箭头创建过滤器
 
