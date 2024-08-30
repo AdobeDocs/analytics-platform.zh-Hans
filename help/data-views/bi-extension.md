@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 81bde9f61f208fd01b3ba1c3df57609104109800
+source-git-commit: 27749382a311330e6ece76c663f4c610ef20d8c1
 workflow-type: tm+mt
 source-wordcount: '2928'
 ht-degree: 82%
@@ -192,19 +192,6 @@ Customer Journey Analytics 中与数据管理相关的设置继承自 Adobe Expe
 
 在 Experience Platform 使用的数据集上创建的隐私标签和政策可以在 Customer Journey Analytics 数据视图工作流中显示。因此，在未遵循定义的隐私标签和政策时，使用 [!DNL Customer Journey Analytics BI extension] 查询的数据会显示相应的警告或错误。
 
-#### 默认值和限制
-
-出于数据治理的原因，以下其他默认值和限制也适用。
-
-* BI扩展要求对查询结果进行行限制。 默认值为50，但您可以使用`LIMIT n`在SQL中覆盖此值，其中`n`为1 - 50000。
-* BI扩展需要一个日期范围来限制用于计算的行。 默认值为最近30天，但您可以在SQL `WHERE`子句中使用特殊的[`timestamp`](#timestamp)或[`daterange`](#date-range)列覆盖此值。
-* BI扩展需要聚合查询。 无法使用诸如`SELECT * FROM ...`之类的SQL获取原始基础行。 从较高层面来看，您的聚合查询应使用：
-   * 使用`SUM`和/或`COUNT`选择总计。<br/>例如，`SELECT SUM(metric1), COUNT(*) FROM ...`
-   * 选择按维度划分的量度。 <br/>例如，`SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
-   * 选择不同的量度值。<br/>例如，`SELECT DISTINCT dimension1 FROM ...`
-
-     查看更多详细信息[支持的SQL](#supported-sql)。
-
 ### 列出数据视图
 
 在标准 PostgreSQL CLI 中，可以使用 `\dv` 列出视图
@@ -221,6 +208,21 @@ prod:all=> \dv
 ### 嵌套与扁平化处理
 
 默认情况下，数据视图架构使用嵌套结构，就像原始 XDM 架构一样。该集成还支持 `FLATTEN` 选项。您可以使用此选项实施要扁平化处理的数据视图（以及会话中的任何其他表）的架构。通过扁平化处理，可以更轻松地在不支持结构化架构的 BI 工具中使用。有关更多信息，请参阅[在 Query Service 中使用嵌套数据结构](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data)。
+
+
+### 默认值和限制
+
+使用BI扩展时，以下附加默认值和限制也适用：
+
+* BI扩展要求对查询结果进行行限制。 默认值为50，但您可以使用`LIMIT n`在SQL中覆盖此值，其中`n`为1 - 50000。
+* BI扩展需要一个日期范围来限制用于计算的行。 默认值为最近30天，但您可以在SQL `WHERE`子句中使用特殊的[`timestamp`](#timestamp)或[`daterange`](#date-range)列覆盖此值。
+* BI扩展需要聚合查询。 无法使用诸如`SELECT * FROM ...`之类的SQL获取原始基础行。 从较高层面来看，您的聚合查询应使用：
+   * 使用`SUM`和/或`COUNT`选择总计。<br/>例如，`SELECT SUM(metric1), COUNT(*) FROM ...`
+   * 选择按维度划分的量度。 <br/>例如，`SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
+   * 选择不同的量度值。<br/>例如，`SELECT DISTINCT dimension1 FROM ...`
+
+     查看更多详细信息[支持的SQL](#supported-sql)。
+
 
 ### 支持的 SQL
 
