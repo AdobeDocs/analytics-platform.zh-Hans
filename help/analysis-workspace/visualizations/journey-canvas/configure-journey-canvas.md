@@ -1,19 +1,19 @@
 ---
-description: 配置历程画布可视化
+description: 配置“历程”画布可视化
 title: 历程画布
 feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: bd50c5bdcce0617da78eed918338e44474419e31
+source-git-commit: 6fc4645bba82e0f844dbf98df9f1cc7f05455bef
 workflow-type: tm+mt
-source-wordcount: '4359'
+source-wordcount: '4484'
 ht-degree: 1%
 
 ---
 
-# 配置历程画布可视化
+# 配置“历程”画布可视化
 
 {{release-limited-testing}}
 
@@ -47,7 +47,7 @@ ht-degree: 1%
    |---------|----------|
    | [!UICONTROL **主要指标**] | 主要指标影响历程画布可视化的以下方面：  <ul><li>定义人员在旅程中的移动方式。</li><li>每个节点上显示的总数。<p>例如，如果人员是主要指标，则每个节点显示到达历程中该节点的人数。</p></li><li>每个节点上显示的百分比。 （构建可视化图表后，您可以选择显示总数百分比或起始节点百分比。）</li><p>例如，如果人员是主要指标，则每个节点显示到达历程中该节点的人员百分比（总数的百分比或起始节点的百分比）。</p></li><li>将维度添加到可视化图表后，会根据主要指标添加可视化图表的前3个节点。</li></ul> |
    | [!UICONTROL **辅助量度**] | 辅助量度是可选的。 选择一个节点后，主指标下方的每个节点上都将显示以下信息： <ul><li>总数<p>例如，如果会话是辅助量度，则每个节点显示到达历程中该节点的会话数。</p></li><li>百分比（构建可视化图表后，您可以选择显示总数百分比或开始节点百分比。）</li><p>例如，如果会话是辅助量度，则每个节点显示到达历程中该节点的会话的百分比（总数的百分比或起始节点的百分比）。</p></li></ul> |
-   | [!UICONTROL **Journey Optimizer历程**]<!-- name? --> | 选择要用作在历程画布中分析的基础的Journey Optimizer历程。 (或者，如果您希望在Analysis Workspace中通过空白画布构建分析，则可以将此选项留空。)</p> <p>在历程画布中分析Journey Optimizer历程时，该历程的显示顺序、顺序和结构与Journey Optimizer中的相同。 有关详细信息，请参阅[历程画布概述](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)中的[分析Journey Optimizer历程](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#analyze-journey-optimizer-journeys)。</p><p>**注意**：只有在您添加可视化图表的Journey Optimizer面板中选择的数据视图中检测到Analysis Workspace数据时，才会显示此选项。 有关更改Analysis Workspace中面板的数据视图的信息，请参阅[Analysis Workspace概述](/help/analysis-workspace/home.md)。</p> |
+   | [!UICONTROL **Journey Optimizer历程**]<!-- name? --> | 选择要用作在历程画布中分析的基础的Journey Optimizer历程。 (或者，如果您希望在Analysis Workspace中通过空白画布构建分析，则可以将此选项留空。)</p> <p>在历程画布中分析Journey Optimizer历程时，该历程的显示顺序、顺序和结构与Journey Optimizer中的相同。 有关详细信息，请参阅[历程画布概述](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)中的[分析Journey Optimizer历程](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#analyze-journey-optimizer-journeys)。</p><p>**注意**：仅当在添加可视化图表的Journey Optimizer面板中选择的同一数据视图中检测到Analysis Workspace数据时，才会显示此选项。 有关更改Analysis Workspace中面板的数据视图的信息，请参阅[Analysis Workspace概述](/help/analysis-workspace/home.md)。</p> |
 
 1. （可选）选择&#x200B;[!UICONTROL **显示高级设置**]，然后指定以下信息：
 
@@ -84,10 +84,11 @@ ht-degree: 1%
 
    | 设置 | 功能 |
    |---------|----------|
-   | [!UICONTROL **节点类型**] | 允许您配置在可视化图表中显示的节点类型。 要在可视化图表中隐藏节点类型，请选择该节点类型旁边的(x)，或从下拉菜单中取消选择它。 要显示隐藏的节点类型，请从下拉菜单中选择它。 <p>根据可视化图表的内容，可能的节点类型包括：</p><ul><li>[!UICONTROL **读取区段**]</li><li>[!UICONTROL **结束**]</li><li>[!UICONTROL **维度**]</li><li>[!UICONTROL **量度**]</li></ul><p>**注意**：使用此字段时请考虑以下事项：</p><ul><li>仅当在Analysis Workspace面板（您要添加可视化图表）中选择的数据视图中检测到Journey Optimizer数据时，才会显示此选项。 有关更改Analysis Workspace中面板的数据视图的信息，请参阅[Analysis Workspace概述](/help/analysis-workspace/home.md)。</li><li>在历程画布中修改Journey Optimizer历程后，此选项不再可用。 有关详细信息，请参阅历程画布中修改历程后的[视觉差异](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas)</li></ul></p> |
+   | [!UICONTROL **节点类型**] | 允许您配置在可视化图表中显示的节点类型。 要在可视化图表中隐藏节点类型，请选择该节点类型旁边的(x)，或从下拉菜单中取消选择它。 要显示隐藏的节点类型，请从下拉菜单中选择它。 <p>根据可视化图表的内容，可能的节点类型包括：</p><ul><li>[!UICONTROL **读取区段**]</li><li>[!UICONTROL **结束**]</li><li>[!UICONTROL **维度**]</li><li>[!UICONTROL **量度**]</li></ul><p>**注意**：使用此字段时请考虑以下事项：</p><ul><li>只有在您将可视化图表添加到的Journey Optimizer面板中选择的同一数据视图中检测到Analysis Workspace数据时，才会显示此选项。 有关更改Analysis Workspace中面板的数据视图的信息，请参阅[Analysis Workspace概述](/help/analysis-workspace/home.md)。</li><li>在历程画布中修改Journey Optimizer历程后，此选项不再可用。 有关详细信息，请参阅历程画布中修改历程后的[视觉差异](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas)</li></ul></p> |
    | [!UICONTROL **百分比值**] | 从以下选项中进行选择： <ul><li>总数的&#x200B;[!UICONTROL **百分比**]：在面板的日期范围内包含在数据视图中的所有人员的百分比。</li><li>[!UICONTROL **开始节点的百分比**]：在面板的日期范围内，数据视图中包含的、同时满足历程开始节点条件的所有人员的百分比。 (此选项仅在具有单个开始节点的历程中可用；在具有多个开始节点的历程中禁用此选项。 起始节点定义为没有连接进入它的任何节点。)</li></ul> |
-   | [!UICONTROL **箭头设置**] | 从以下选项中进行选择：<ul><li>[!UICONTROL **无**]： </li><li>[!UICONTROL **条件**]： </li><li>[!UICONTROL **所有标签**]： </li></ul><p>**注意**：只有在您添加可视化图表的Journey Optimizer面板中选择的数据视图中检测到Analysis Workspace数据时，才会显示此选项。 有关更改Analysis Workspace中面板的数据视图的信息，请参阅[Analysis Workspace概述](/help/analysis-workspace/home.md)。</p> |
+   | [!UICONTROL **箭头设置**] | 从以下选项中进行选择：<ul><li>[!UICONTROL **无**]： </li><li>[!UICONTROL **条件**]： </li><li>[!UICONTROL **所有标签**]： </li></ul><p>**注意**：仅当在添加可视化图表的Journey Optimizer面板中选择的同一数据视图中检测到Analysis Workspace数据时，才会显示此选项。 有关更改Analysis Workspace中面板的数据视图的信息，请参阅[Analysis Workspace概述](/help/analysis-workspace/home.md)。</p> |
    | [!UICONTROL **显示流失**] | 显示每个节点的流失数据。 这显示在给定节点后离开历程的人员的数量和百分比。 <p>退出旅程的人可能已在该网站上执行了其他操作，但他们从未满足旅程中下一个节点定义的标准。</p> |
+   | **缩放控件** | 以下缩放控件在画布的右上角可用：<ul><li>**放大** ![放大图标](assets/zoom-in-icon.png)：放大可视化图表的特定区域。<p>您也可以使用鼠标控件，例如按住触控板。</p></li><li>**缩小** ![缩小图标](assets/zoom-out-icon.png)：缩小可视化图表以在画布上留出更多空间。<p>您也可以使用鼠标控件，例如按住触控板。</p></li><li>**适应屏幕** ![适应屏幕图标](assets/fill-screen-icon.png)：调整当前缩放和平移设置以使用完整可视化填充屏幕。</li></ul><p>要在放大或缩小后跨画布平移，请单击鼠标并拖动到所需的位置。</p> |
 
 1. 继续添加[添加节点](#add-nodes)。
 
@@ -208,7 +209,9 @@ ht-degree: 1%
 
 历程画布中的历程由表示事件、维度项和过滤器的任意组合的节点和箭头灵活图形组成。
 
-您可以将节点拖动到画布上，以重新排列历程的事件和条件。 在执行此操作时，数据会相应地更新。
+您可以将节点拖动到画布上，以重新排列历程的事件和条件。 按住Command键(在Mac上)或Ctrl键（在Windows上）可选取多个节点。
+
+当您重新排列旅程中的节点顺序时，数据会相应地更新。
 
 ### 合并节点
 
@@ -282,7 +285,7 @@ ht-degree: 1%
 
 将节点添加到画布时，可以将其放在两个连接的节点之间。 该节点将添加到旅程的2个现有节点之间的流中。
 
-有关详细信息，请参阅[添加节点](#add-a-node)。
+有关详细信息，请参阅[添加节点](#add-nodes)。
 
 ### 在节点之间添加时间限制
 
@@ -369,7 +372,7 @@ from Travis: You can set time to be within X amount of time or after X amount of
 
 您可以将左侧边栏中的某个维度拖到画布上要应用划分的节点上。
 
-有关详细信息，请参阅[添加节点](#add-a-node)。
+有关详细信息，请参阅[添加节点](#add-nodes)。
 
 ### 创建受众
 
