@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: fb106077949cc5a1a2fbaf7702bd0c872152499f
+source-git-commit: 30133a5d825c3623a5f46a972e787cf60626edf3
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1463'
 ht-degree: 14%
 
 ---
@@ -110,7 +110,7 @@ Customer Journey Analytics由三个访问级别或三个角色控制：产品管
 
 | 类别 | 权限 | 描述 |
 | --- | --- | ---|
-| [!UICONTROL 数据视图] | 数据视图的&#x200B;*名称* | 如果您将&#x200B;**[!UICONTROL 自动包含]**&#x200B;切换到&#x200B;**[!UICONTROL 开启]**，则属于此产品配置文件的用户可以查看所有现有和新创建的数据视图。如果此设置被设置为&#x200B;**[!UICONTROL 关闭]**，则可以选择用户有权访问的特定数据视图。 |
+| [!UICONTROL 数据视图] | *数据视图名称* | 如果您将&#x200B;**[!UICONTROL 自动包含]**&#x200B;切换到&#x200B;**[!UICONTROL 开启]**，则属于此产品配置文件的用户可以查看所有现有和新创建的数据视图。如果此设置被设置为&#x200B;**[!UICONTROL 关闭]**，则可以选择用户有权访问的特定数据视图。 |
 | [!UICONTROL 报告工具] | [!UICONTROL Analysis Workspace 访问权限] | 允许用户访问[Analysis Workspace](/help/analysis-workspace/home.md)。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 引导式分析访问] | 允许用户访问[引导分析](/help/guided-analysis/overview.md)。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 计算量度创建] | 允许用户创建[计算量度](/help/components/calc-metrics/calc-metr-overview.md)。 用户只能标记、共享、删除、重命名、批准和取消批准其创建的计算指标或与他们共享的计算指标。 |
