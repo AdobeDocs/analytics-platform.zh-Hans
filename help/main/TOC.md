@@ -10,9 +10,9 @@ user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
 source-git-commit: 91e28c2919ab5ace21ae9407ca758288370c7eca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1112'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -143,7 +143,7 @@ ht-degree: 99%
          + [流量概述](../analysis-workspace/visualizations/c-flow/flow.md)
          + [配置流量可视化图表](../analysis-workspace/visualizations/c-flow/create-flow.md)
          + [维度间流量](../analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
-      + 历程画布{#journey-canvas}
+      + 历程画布 {#journey-canvas}
          + [历程画布概述](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
          + [配置历程画布可视化](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
       + [面积图和堆叠的面积图](../analysis-workspace/visualizations/area.md)
