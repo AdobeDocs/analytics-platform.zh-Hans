@@ -6,7 +6,7 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 30133a5d825c3623a5f46a972e787cf60626edf3
+source-git-commit: c6800f1fa36298f3d2aa53c36c78398d9d3fd670
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 14%
@@ -92,7 +92,7 @@ Customer Journey Analytics由三个访问级别或三个角色控制：产品管
       * 相关数据视图的访问权限。 在[用户级访问](#user-level-access)中查看[!UICONTROL 数据视图]。
       * 访问Customer Journey AnalyticsBI扩展的权限。 在[用户级访问](#user-level-access)中查看[!UICONTROL 数据视图工具]。
 
-## 产品配置文件管理员角色
+### 产品配置文件管理员角色
 
 产品配置文件是一组权限。产品管理员可创建产品配置文件，并可分配产品配置文件管理员以管理一个或多个产品配置文件。 然后，产品配置文件管理员可以：
 
@@ -100,7 +100,7 @@ Customer Journey Analytics由三个访问级别或三个角色控制：产品管
 
 * 在Customer Journey Analytics中，编辑属于已分配产品配置文件的数据视图。 产品配置文件管理员无法创建新数据视图。
 
-## 用户级别访问
+### 用户级别访问
 
 下表概述了可为相关Customer Journey Analytics配置的各种用户功能的主要访问权限。 您可以通过产品配置文件管理不同级别的用户访问权限。 产品配置文件将组合大量权限，然后您可以将这些权限分配给单个用户或用户组。
 
