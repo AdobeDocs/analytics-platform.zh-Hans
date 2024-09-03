@@ -4,7 +4,7 @@ title: 试验性面板
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 36718581c9a070bb5f5547f18be643ca91838bae
+source-git-commit: 61c1fe48ebe8ebff5b7104cebae1ce7b62289b7d
 workflow-type: tm+mt
 source-wordcount: '2069'
 ht-degree: 29%
@@ -148,6 +148,6 @@ A/B测试是行业内客观衡量此类干预效果的黄金标准。 A/B测试�
 
 创建计算量度时，与“试验”面板不兼容的计算量度在&#x200B;[!UICONTROL **产品兼容性**]&#x200B;字段中的Customer Journey Analytics（不包括试验）处具有值&#x200B;[!UICONTROL **Everywhere**]。 有关创建计算量度的信息，请参阅[生成量度](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)。
 
-## 在试验面板中使用派生量度
+## 在试验面板中使用计算量度
 
-请参阅这篇博客帖子，了解有关在“试验”面板](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119)中使用派生量度的[的信息。
+请参阅这篇博客帖子，了解有关在试验面板](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119)中使用计算量度的[的信息。
