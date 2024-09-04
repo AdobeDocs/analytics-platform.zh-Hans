@@ -1,19 +1,19 @@
 ---
-description: 配置“历程”画布可视化
+description: 配置历程画布可视化
 title: 历程画布
 feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 6fc4645bba82e0f844dbf98df9f1cc7f05455bef
+source-git-commit: 2f42c64443cc5798388287e6f84b125fb8694812
 workflow-type: tm+mt
-source-wordcount: '4484'
+source-wordcount: '4526'
 ht-degree: 1%
 
 ---
 
-# 配置“历程”画布可视化
+# 配置历程画布可视化
 
 {{release-limited-testing}}
 
@@ -145,6 +145,10 @@ ht-degree: 1%
 
 ### 根据现有节点添加顶级节点
 
+>[!AVAILABILITY]
+>
+>此功能尚不可用。
+
 您可以根据画布上已存在的节点自动添加顶级节点。
 
 此选项适用于画布上的以下对象：
@@ -188,6 +192,10 @@ ht-degree: 1%
    前3个节点添加到这2个现有节点之间，每个节点都作为单独的分支连接。
 
 ### 复制节点
+
+>[!AVAILABILITY]
+>
+>此功能尚不可用。
 
 复制选项可用于画布上的以下对象：
 
@@ -289,6 +297,10 @@ ht-degree: 1%
 
 ### 在节点之间添加时间限制
 
+>[!AVAILABILITY]
+>
+>此功能尚不可用。
+
 可以在节点之间设置时间限制。 当设置时间限制时，如果人员遵循定义的旅程，但在节点之间移动所花费的时间超过分配的时间段，则被视为已退出旅程。
 
 添加时间约束的选项可用于画布上的以下对象：
@@ -310,6 +322,10 @@ from Travis: You can set time to be within X amount of time or after X amount of
 
 ### 更改节点或箭头的颜色
 
+>[!AVAILABILITY]
+>
+>此功能尚不可用。
+
 您可以通过更改画布上任何节点或箭头的颜色来以可视方式自定义历程。 例如，您可以调整颜色以指示所需或不需要的事件。
 
 更改颜色的选项可用于画布上的以下对象：
@@ -329,6 +345,10 @@ from Travis: You can set time to be within X amount of time or after X amount of
    可以使用以下颜色： <!--look into this interaction and color list-->
 
 ### 重命名节点或箭头
+
+>[!AVAILABILITY]
+>
+>此功能尚不可用。
 
 将组件拖动到历程画布可视化时，它将创建一个与组件名称同名的节点。 您可以重命名节点，以更好地匹配节点表示的历程步骤。
 
@@ -359,6 +379,10 @@ from Travis: You can set time to be within X amount of time or after X amount of
 * 节点之间的多个箭头
 
 #### 将划分应用于一个或多个节点或箭头
+
+>[!AVAILABILITY]
+>
+>此功能尚不可用。
 
 1. 选择要应用划分的一个或多个节点，然后右键单击其中一个选定的节点。
 
@@ -400,6 +424,10 @@ from Travis: You can set time to be within X amount of time or after X amount of
 
 ### 查看趋势数据
 
+>[!AVAILABILITY]
+>
+>此功能尚不可用。
+
 您可以在折线图中查看历程画布中对象的趋势数据。<!--, with some prebuilt anomaly detection data (this is the definition in Fallout) -->
 
 趋势选项适用于画布上的以下对象：
@@ -421,7 +449,6 @@ from Travis: You can set time to be within X amount of time or after X amount of
    在2个要查看其趋势数据的节点之间选择一个或多个箭头，然后右键单击其中一个选定的箭头。
 
 1. 选择&#x200B;[!UICONTROL **趋势**]。
-
 
 ### 根据节点或箭头创建过滤器
 
