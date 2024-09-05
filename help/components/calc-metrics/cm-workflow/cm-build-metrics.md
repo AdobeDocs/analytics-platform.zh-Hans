@@ -6,7 +6,7 @@ exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
 source-git-commit: 7cdd81c9e38219d2d17decd5b9c3e987b814fc53
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 48%
+ht-degree: 49%
 
 ---
 
@@ -28,7 +28,7 @@ Customer Journey Analytics提供了一个画布以将维度、量度、筛选器
 
 1. 继续计算指标生成器](#areas-of-the-calculated-metrics-builder)的[区域。
 
-## 计算量度生成器的区域
+## 计算量度构建器的区域
 
 <!-- 
 
