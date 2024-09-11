@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 91e28c2919ab5ace21ae9407ca758288370c7eca
-workflow-type: ht
-source-wordcount: '1112'
-ht-degree: 100%
+source-git-commit: f25c6e2bb7a9644a7356b3a1fc42a3b383d6f5e6
+workflow-type: tm+mt
+source-wordcount: '1128'
+ht-degree: 99%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 100%
    + [适用于 Adobe Analytics 用户的用户指南](../getting-started/aa-to-cja-user.md)
 
 + 数据引入 {#cja-data-ingestion}
-   + [数据摄取概述](../data-ingestion/data-ingestion.md)
+   + [数据引入概述](../data-ingestion/data-ingestion.md)
    + 摄取并使用快速入门指南{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + Adobe Experience Platform Edge Network {#edge-network}
@@ -190,6 +190,12 @@ ht-degree: 100%
       + [预测概述](../analysis-workspace/c-forecast/forecasting.md)
       + [在 Analysis Workspace 中查看预测](../analysis-workspace/c-forecast/view-forecasts.md)
       + [预测服务中使用的统计技术](../analysis-workspace/c-forecast/statistics-forecasting.md)
+   + 智能警报 {#alerts}
+      + [智能警报概述](/help/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md)
+      + [Customer Journey Analytics差异](/help/analysis-workspace/c-intelligent-alerts/alerts-feature-comparison.md)
+      + [创建警报](/help/analysis-workspace/c-intelligent-alerts/alert-builder.md)
+      + [管理警报](/help/analysis-workspace/c-intelligent-alerts/alert-manager.md)
+      + [用例](/help/analysis-workspace/c-intelligent-alerts/alerts-use-cases.md)
    + [用户偏好设置](../analysis-workspace/user-preferences.md)
    + Workspace 常见问题解答 {#workspace-faq}
       + [常见问题解答](../analysis-workspace/workspace-faq/faq.md)
