@@ -3,10 +3,10 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: d0315fe645e62a2c67148cb0fc3fbd4c1b780187
+source-git-commit: b74b2dce2f392fe45ba03b213a3a10af877ea0a5
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 42%
+source-wordcount: '547'
+ht-degree: 40%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 42%
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **使用情况分析** | 了解您的组织如何使用Customer Journey Analytics。 启用此功能可在Adobe Experience Platform中创建数据集，以便在贵组织中的任何人使用Analysis Workspace时收集数据。 系统还会自动创建连接和数据视图，以便您访问项目中最热门的类型、最活跃的用户以及在项目中使用的最受欢迎的组件等维度。 （文档链接见下文） |  | 2024 年 9 月 18 日 |
-| **计算指标管理器和筛选器管理器的“用于”列中的其他信息** | 计算量度管理器和过滤器管理器中的“用于”列包含以下新报表区域：<ul><li>**Report Builder**：显示Report Builder中使用的计算量度或筛选器数。</li><li>**临时组件**：显示项目中使用的临时计算量度或临时过滤器数。 这些临时计算量度和过滤器（也称为“快速计算量度”和“快速过滤器”）只能在创建它们的项目中使用，因此它们会与“用于”列中的“项目”报表区域分开报告。</li></ul>（文档链接见下文） |  | 2024年9月11日 |
-| **引导式分析：嵌入到Workspace** | 在Analysis Workspace中将多个引导式分析合并到单个视图中。 （文档链接见下文） | 2024年9月22日 | 2024年10月2 |
-| **智能警报** | Customer Journey Analytics 中的智能警报允许您在数据中出现异常事件时立即收到通知。<p>您可以设置根据异常阈值、变化的百分比或特定数据点触发的警报。警报提供与异常检测集成的细粒度控制，在您最需要时触发。</p><p>在 Customer Journey Analytics 中使用智能警报的过程与在 Adobe Analytics 中使用智能警报的过程几乎相同。一个主要的区别是 Customer Journey Analytics 不提供每小时警报。此差异在于可摄取的各种事件数据的数据摄取仅在延迟后才能完成，延迟时间通常比数据事件时间晚3到9个小时。 （文档链接见下文）</p><p><!--[Learn more](/help/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md)--></p> |  | 2024年9月11日 |
+| **计算指标管理器和筛选器管理器的“用于”列中的其他信息** | 计算量度管理器和过滤器管理器中的“用于”列包含以下新报表区域：<ul><li>**Report Builder**：显示Report Builder中使用的计算量度或筛选器数。</li><li>**临时组件**：显示项目中使用的临时计算量度或临时过滤器数。 这些临时计算量度和过滤器（也称为“快速计算量度”和“快速过滤器”）只能在创建它们的项目中使用，因此它们会与“用于”列中的“项目”报表区域分开报告。</li></ul>有关详细信息，请参阅[计算量度管理器](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager)和[筛选器管理器](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-filters/manage-filters)。 |  | 2024年9月11日 |
+| **智能警报** | Customer Journey Analytics 中的智能警报允许您在数据中出现异常事件时立即收到通知。<p>您可以设置根据异常阈值、变化的百分比或特定数据点触发的警报。警报提供与异常检测集成的细粒度控制，在您最需要时触发。</p><p>在 Customer Journey Analytics 中使用智能警报的过程与在 Adobe Analytics 中使用智能警报的过程几乎相同。一个主要的区别是 Customer Journey Analytics 不提供每小时警报。此差异在于可摄取的各种事件数据的数据摄取仅在延迟后才能完成，延迟时间通常比数据事件时间晚3到9个小时。 [了解详情](/help/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md) |  | 2024年9月中旬 |
 | **Adobe Analytics源连接器的更新** | 数据集活动页面不显示有关批次的信息，因为Analytics Source Connector完全由Adobe管理。 您可以通过查看所摄取记录的相关量度来监控数据流动。 有关详细信息，请阅读有关[为Analytics数据创建源连接](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics)的指南。 |  | 现在可用 |
+| **使用情况分析** | 了解您的组织如何使用Customer Journey Analytics。 启用此功能可在Adobe Experience Platform中创建数据集，以便在贵组织中的任何人使用Analysis Workspace时收集数据。 系统还会自动创建连接和数据视图，以便您访问项目中最热门的类型、最活跃的用户以及在项目中使用的最受欢迎的组件等维度。 （文档链接见下文） |  | 2024 年 9 月 18 日 |
+| **引导式分析：嵌入到Workspace** | 在Analysis Workspace中将多个引导式分析合并到单个视图中。 （文档链接见下文） | 2024年9月22日 | 2024年10月2 |
 
 
 ## Customer Journey Analytics 中的修复
