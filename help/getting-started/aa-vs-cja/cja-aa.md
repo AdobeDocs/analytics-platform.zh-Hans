@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 789e461bf45f272e4c93ea5aa77e5bcaf4ee6a29
+source-git-commit: a1f037ff907efd20d31c5567e09bb3ac0eb3130e
 workflow-type: tm+mt
-source-wordcount: '2307'
-ht-degree: 97%
+source-wordcount: '2336'
+ht-degree: 96%
 
 ---
 
@@ -71,6 +71,7 @@ ht-degree: 97%
 | eVar 持久性设置 | Customer Journey Analytics 中不再包括 eVar。但是，持久性设置现在是数据视图的一部分，且可用于所有维度。请记住，持久基于报告时处理，而不是数据收集处理。数据视图中的纬度集限制为 90 天最大持久性，不支持无限持久性。 |
 | 归属地细分维度 | [全面支持](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html) |
 | 基于图形的拼接 | 通过 [基于图形的拼接](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/stitching/overview#graph-based-stitching)，您可以利用 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home) 中身份图的强大功能将数据集提升到其首选身份。 |
+| 智能警报 | 在Customer Journey Analytics中使用[智能警报](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/alerts/intellligent-alerts)的过程与在Adobe Analytics中使用智能警报的过程几乎相同。 但是，存在[重要差异](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/alerts/alerts-feature-comparison)。 |
 | IP 模糊处理 | 对于使用 Analytics Source Connector 将数据从 Adobe Analytics 填充到 Customer Journey Analytics 中的 Customer Journey Analytics 客户：Adobe Analytics 中应用的 IP 模糊设置会传送到您的 Customer Journey Analytics 数据。您可以根据需要在 Adobe Analytics 中控制这些设置。<p>对于使用 Experience Platform Web SDK 将数据直接填充到 Platform 和 Customer Journey Analytics 中的 Customer Journey Analytics 客户。您可以使用 Platform 中的“数据收集数据准备”功能根据您公司的要求配置混淆 IP 地址的规则。 |
 | 营销渠道 | 使用 Analytics Source Connector 时，“营销渠道”数据会通过该连接器流入 Customer Journey Analytics。在传统的 Adobe Analytics 中配置营销渠道规则，其中不支持某些规则。有关更多信息，请参阅 [Customer Journey Analytics 营销渠道](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels.html)。<br/>对于 WebSDK 实施，通过[派生字段](../../data-views/derived-fields/derived-fields.md)支持报告时营销渠道处理规则。 |
 | 促销变量持久性 | 通过[绑定维度和绑定量度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension)提供全面支持 |
