@@ -3,9 +3,9 @@ description: 了解智能警报与Adobe Analytics的Customer Journey Analytics�
 title: “智能警报”功能比较Customer Journey Analytics和Adobe Analytics
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 1613b3fc7e9cce1fb74b86bb7435612b2d469eb1
+source-git-commit: d6f800a6e3e79556026291387e984a35949b3c46
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '449'
 ht-degree: 4%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 4%
 
 您可以将默认延迟9小时调整为0到24小时之间的任何时间。 但是，将延迟降低到9小时以下可能意味着您报告的数据不完整，这会导致警报信息不准确。
 
-有关如何调整延迟以及调整延迟时应考虑的因素的更多信息，请参阅<!--add link -->。
+有关如何调整延迟以及调整延迟时应考虑的因素的更多信息，请参阅[创建警报](/help/analysis-workspace/c-intelligent-alerts/alert-builder.md)。
 
 <!-- Starting with "However," the rest of this information should probably go into the actual documentation where we document the option to adjust the delay. -->
 
