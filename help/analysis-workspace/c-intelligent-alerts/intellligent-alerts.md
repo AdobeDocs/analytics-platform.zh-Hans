@@ -3,14 +3,18 @@ description: 新的智能警报系统允许对警报进行更多粒度控制，�
 title: 智能警报概述
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 1613b3fc7e9cce1fb74b86bb7435612b2d469eb1
+source-git-commit: 17a7e794533c1536e362ca1fd11f45b053954c0a
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 56%
+source-wordcount: '356'
+ht-degree: 52%
 
 ---
 
 # 智能警报概述
+
+>[!NOTE]
+>
+>智能警报适用于所有客户。 但是，要在智能警报中使用异常检测，您必须具有Customer Journey AnalyticsSelect、Prime或Ultimate。
 
 Customer Journey Analytics中的“智能警报”（或“警报”）允许您在数据中发生异常事件时收到通知。
 
