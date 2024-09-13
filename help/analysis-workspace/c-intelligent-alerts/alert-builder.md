@@ -3,7 +3,7 @@ description: 当项目组件达到一定的阈值时获取警报。
 title: 创建警报(Analysis Workspace)
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 74ad39f6ccc6436f7c8540b7d8b69b20b93d2b5c
+source-git-commit: 1613b3fc7e9cce1fb74b86bb7435612b2d469eb1
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 22%
@@ -11,8 +11,6 @@ ht-degree: 22%
 ---
 
 # 创建警报
-
-{{release-limited-testing}}
 
 >[!NOTE]
 >

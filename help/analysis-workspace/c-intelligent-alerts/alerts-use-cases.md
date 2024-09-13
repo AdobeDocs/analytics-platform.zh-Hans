@@ -3,7 +3,7 @@ description: 智能警报的用例。
 title: 智能警报 — 用例
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 2dbd2dd614decb6b72c667297bba24f949197aa9
+source-git-commit: 1613b3fc7e9cce1fb74b86bb7435612b2d469eb1
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 55%
@@ -11,8 +11,6 @@ ht-degree: 55%
 ---
 
 # 智能警报 — 用例
-
-{{release-limited-testing}}
 
 您可以按照[创建警报](/help/analysis-workspace/c-intelligent-alerts/alert-builder.md)中的说明创建智能警报。
 

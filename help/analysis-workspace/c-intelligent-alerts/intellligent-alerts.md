@@ -3,7 +3,7 @@ description: 新的智能警报系统允许对警报进行更多粒度控制，�
 title: 智能警报概述
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 74ad39f6ccc6436f7c8540b7d8b69b20b93d2b5c
+source-git-commit: 1613b3fc7e9cce1fb74b86bb7435612b2d469eb1
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 56%
@@ -11,8 +11,6 @@ ht-degree: 56%
 ---
 
 # 智能警报概述
-
-{{release-limited-testing}}
 
 Customer Journey Analytics中的“智能警报”（或“警报”）允许您在数据中发生异常事件时收到通知。
 
