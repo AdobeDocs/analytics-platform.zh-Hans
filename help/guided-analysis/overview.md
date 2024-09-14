@@ -8,7 +8,7 @@ role: User
 source-git-commit: 2addd3d17f62da69eb6636d987931fc21df07af5
 workflow-type: tm+mt
 source-wordcount: '1399'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -68,19 +68,19 @@ ht-degree: 92%
 
 ## 设置
 
-引导式分析视图通过以下方式包含在Customer Journey Analytics包中：
+引导式分析视图以下方式包含在 Customer Journey Analytics 包中：
 
 | 包 | 可用视图 |
 | --- | --- |
-| [!UICONTROL CJA加载项] | 趋势：使用情况，趋势：频率，漏斗：摩擦，漏斗：转化趋势，维系率：维系率，用户增长：活动，用户增长：净增长 |
-| [!UICONTROL CJA Foundation] | 趋势：使用情况 |
-| [!UICONTROL CJA选择] | 基础视图+趋势：频率，漏斗：摩擦，漏斗：转化趋势，维系率：保留率，用户增长：活动，用户增长：净增长 |
-| [!UICONTROL CJA Prime] | 选择视图+用户流：时间线，功能矩阵：参与，影响：发布，影响：首次使用 |
-| [!UICONTROL CJA Ultimate] | Prime视图 |
+| [!UICONTROL CJA 附加功能] | 趋势：使用情况、趋势：频率、漏斗：阻力、漏斗：转化趋势、留存：留存率、用户增长：活跃、用户增长：净增长 |
+| [!UICONTROL CJA 基础] | 趋势：使用情况 |
+| [!UICONTROL CJA 选择 ] | 基础视图 + 趋势：使用情况、趋势：频率、漏斗：阻力、漏斗：转化趋势、留存：留存率、用户增长：活跃、用户增长：净增长 |
+| [!UICONTROL CJA Prime ] | 选择查看次数 + 用户流：时间线、功能矩阵：参与度、影响：发布、影响：首次使用 |
+| [!UICONTROL CJA Ultimate] | 最佳视图 |
 
 {style="table-layout:auto"}
 
-产品配置文件管理员可以添加或删除对Adobe Admin Console中引导分析的访问权限。
+产品配置文件管理员可以在 Adobe Admin Console 中添加或删除对引导分析的访问权限。
 
 1. 登录到 [Adobe Admin Console](https://adminconsole.adobe.com)。
 1. 在产品列表中选择 **[!UICONTROL Customer Journey Analytics]**。
