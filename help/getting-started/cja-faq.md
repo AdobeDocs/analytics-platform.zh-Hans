@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 252ddfd3a321d94d14fbe2593b942ac36bf932a5
-workflow-type: ht
-source-wordcount: '2547'
-ht-degree: 100%
+source-git-commit: 64a05e72f512bc68cfd324ab20810ade8c0c5f66
+workflow-type: tm+mt
+source-wordcount: '2566'
+ht-degree: 98%
 
 ---
 
@@ -135,7 +135,7 @@ Customer Journey Analytics 包括[数据准备](https://experienceleague.adobe.c
 
 Adobe 最近改变了在 Customer Journey Analytics 中处理数据的方式：
 
-<ul><li>流入时间戳为小于 24 小时前的任何事件数据。</li><li>将时间戳为大于 24 小时前的任何事件数据（即使它与更新的数据属于同一批次）视为回填，并以更低的优先级摄取这些数据。</li></ul>
+<ul><li>“当前”天的事件数据将作为实时数据流式传输。 事件时间早于前一天11:59:59 (23:59:59)的任何数据均被视为回填。</li><li>将时间戳为大于 24 小时前的任何事件数据（即使它与更新的数据属于同一批次）视为回填，并以更低的优先级摄取这些数据。</li></ul>
 
 ## 5. 设置[!UICONTROL 连接]数据保留的滚动时段 {#data-retention}
 
