@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: f25c6e2bb7a9644a7356b3a1fc42a3b383d6f5e6
+source-git-commit: 640624ab017d8fc0e7b942c2f00c71cf255c4296
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1124'
 ht-degree: 99%
 
 ---
@@ -190,12 +190,6 @@ ht-degree: 99%
       + [预测概述](../analysis-workspace/c-forecast/forecasting.md)
       + [在 Analysis Workspace 中查看预测](../analysis-workspace/c-forecast/view-forecasts.md)
       + [预测服务中使用的统计技术](../analysis-workspace/c-forecast/statistics-forecasting.md)
-   + 智能警报 {#alerts}
-      + [智能警报概述](/help/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md)
-      + [Customer Journey Analytics差异](/help/analysis-workspace/c-intelligent-alerts/alerts-feature-comparison.md)
-      + [创建警报](/help/analysis-workspace/c-intelligent-alerts/alert-builder.md)
-      + [管理警报](/help/analysis-workspace/c-intelligent-alerts/alert-manager.md)
-      + [用例](/help/analysis-workspace/c-intelligent-alerts/alerts-use-cases.md)
    + [用户偏好设置](../analysis-workspace/user-preferences.md)
    + Workspace 常见问题解答 {#workspace-faq}
       + [常见问题解答](../analysis-workspace/workspace-faq/faq.md)
@@ -299,6 +293,12 @@ ht-degree: 99%
       + [管理日期范围](../components/date-ranges/manage.md)
       + [创建自定义日期范围](../components/date-ranges/custom-date-ranges.md)
       + [日期比较](../components/date-ranges/time-comparison.md)
+   + 智能警报 {#alerts}
+      + [概述](/help/components/c-intelligent-alerts/intellligent-alerts.md)
+      + [Customer Journey Analytics差异](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
+      + [创建](/help/components/c-intelligent-alerts/alert-builder.md)
+      + [管理](/help/components/c-intelligent-alerts/alert-manager.md)
+      + [用例](/help/components/c-intelligent-alerts/alerts-use-cases.md)
    + 导出 {#exports}
       + [配置云导出帐户](/help/components/exports/cloud-export-accounts.md)
       + [配置云导出位置](/help/components/exports/cloud-export-locations.md)

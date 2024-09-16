@@ -5,7 +5,7 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 33602a2c82d14463ebe4317704dbfa47b7b8ae35
+source-git-commit: 640624ab017d8fc0e7b942c2f00c71cf255c4296
 workflow-type: tm+mt
 source-wordcount: '2321'
 ht-degree: 85%
@@ -78,7 +78,7 @@ ht-degree: 85%
 
 | 功能 | 注释 |
 | --- | --- |
-| **警报** | 在Customer Journey Analytics](/help/analysis-workspace/c-intelligent-alerts/alerts-feature-comparison.md)中使用智能警报的[过程与在Adobe Analytics中使用智能警报的过程几乎相同。 <p>但是，由于Customer Journey Analytics中数据收集的时间，每小时警报不可用。 在Customer Journey Analytics中，可以配置每日、每周或每月警报。</p> |
+| **警报** | 在Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)中使用智能警报的[过程与在Adobe Analytics中使用智能警报的过程几乎相同。 <p>但是，由于Customer Journey Analytics中数据收集的时间，每小时警报不可用。 在Customer Journey Analytics中，可以配置每日、每周或每月警报。</p> |
 | **Analytics for Target (A4T)** | [Adobe Customer Journey Analytics 和 Target 进行集成](https://experienceleague.adobe.com/zh-hans/docs/target/using/integrate/cja/target-reporting-in-cja)，为优化项目提供强大而又节省时间的分析工具。 |
 | **受众发布** | 如果与 Adobe 的客户数据平台或 Journey Optimizer 产品一起获得许可即支持。[受众发布](/help/components/audiences/audiences-overview.md)将受众发送到 Experience Platform 中的 Real-time Customer Profile。 |
 | **分类** | 现在称为“查找数据集”。Analytics 中使用的分类可以通过分析分类源连接器导入到 Experience Platform 和 Customer Journey Analytics。 查找数据集还可以直接上传到 Experience Platform 并在 Customer Journey Analytics 中提供。 |
