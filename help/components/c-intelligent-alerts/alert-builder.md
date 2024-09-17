@@ -3,7 +3,7 @@ description: 当项目组件达到一定的阈值时获取警报。
 title: 创建警报(Analysis Workspace)
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 640624ab017d8fc0e7b942c2f00c71cf255c4296
+source-git-commit: 4155f486c8398b75c2bed41d93562483d35c1477
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 22%
@@ -18,7 +18,7 @@ ht-degree: 22%
 
 Customer Journey Analytics中的智能警报（或只是“警报”）允许您在数据中发生异常事件时立即收到通知。
 
-有关智能警报的更多详细概述信息，请参阅[智能警报概述](/help/components/c-intelligent-alerts/intellligent-alerts.md)。
+有关智能警报的更多详细概述信息，请参阅[智能警报概述](/help/components/c-intelligent-alerts/intelligent-alerts.md)。
 
 要创建警报，请执行以下操作：
 

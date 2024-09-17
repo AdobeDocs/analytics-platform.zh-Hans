@@ -9,7 +9,7 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 640624ab017d8fc0e7b942c2f00c71cf255c4296
+source-git-commit: 8017754adfde8a7d6ecea6d17138368d5430c1a6
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 99%
@@ -294,7 +294,7 @@ ht-degree: 99%
       + [创建自定义日期范围](../components/date-ranges/custom-date-ranges.md)
       + [日期比较](../components/date-ranges/time-comparison.md)
    + 智能警报 {#alerts}
-      + [概述](/help/components/c-intelligent-alerts/intellligent-alerts.md)
+      + [概述](/help/components/c-intelligent-alerts/intelligent-alerts.md)
       + [Customer Journey Analytics差异](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
       + [创建](/help/components/c-intelligent-alerts/alert-builder.md)
       + [管理](/help/components/c-intelligent-alerts/alert-manager.md)
