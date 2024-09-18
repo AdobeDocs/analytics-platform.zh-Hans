@@ -5,9 +5,9 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 64a05e72f512bc68cfd324ab20810ade8c0c5f66
+source-git-commit: 22ae84479142d45f400f6ae39fe1416c9aaf7229
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2567'
 ht-degree: 98%
 
 ---
@@ -135,7 +135,7 @@ Customer Journey Analytics 包括[数据准备](https://experienceleague.adobe.c
 
 Adobe 最近改变了在 Customer Journey Analytics 中处理数据的方式：
 
-<ul><li>“当前”天的事件数据将作为实时数据流式传输。 事件时间早于前一天11:59:59 (23:59:59)的任何数据均被视为回填。</li><li>将时间戳为大于 24 小时前的任何事件数据（即使它与更新的数据属于同一批次）视为回填，并以更低的优先级摄取这些数据。</li></ul>
+<ul><li>“当前”天的事件数据将作为实时数据流式传输。 事件时间早于前一天晚上11:59:59 (23:59:59)的任何数据均被视为回填。</li><li>将时间戳为大于 24 小时前的任何事件数据（即使它与更新的数据属于同一批次）视为回填，并以更低的优先级摄取这些数据。</li></ul>
 
 ## 5. 设置[!UICONTROL 连接]数据保留的滚动时段 {#data-retention}
 
@@ -149,7 +149,7 @@ Adobe 最近改变了在 Customer Journey Analytics 中处理数据的方式：
 
 | 如果您... | 产生的后果... |
 | --- | --- |
-| 删除 [!UICONTROL Adobe Experience Platform] 中的沙盒 | 删除沙盒将阻止数据流向任何与该沙盒中的数据集建立的 [!UICONTROL Customer Journey Analytics] 连接。现在，与已删除沙箱相关联的 Customer Journey Analytics 中的[!UICONTROL 连接]不会自动删除。 |
+| 删除 [!UICONTROL Adobe Experience Platform] 中的沙盒 | 删除沙盒将阻止数据流向任何与该沙盒中的数据集建立的 [!UICONTROL Customer Journey Analytics] 连接。与此已删除的沙盒相关的连接、数据视图、量度和维度也将被删除。 | |
 | 删除 [!UICONTROL Adobe Experience Platform] 中的架构，但不删除与该架构关联的数据集 | [!UICONTROL Adobe Experience Platform][!UICONTROL  不允许删除具有一个或多个关联数据集的架构。]但是，具有相应权限集的管理员可以先删除关联数据集，然后再删除架构。 |
 | 删除 [!UICONTROL Adobe Experience Platform] 数据湖中的数据集 | 删除 Adobe Experience Platform 数据湖中的数据集将阻止数据从该数据集流向任何包括该数据集的 Customer Journey Analytics 连接。自动从关联的 Customer Journey Analytics 连接删除来自该数据集的任何数据。 |
 | 删除 [!UICONTROL Customer Journey Analytics] 中的数据集 | 请联系您的 Adobe 帐户团队，以启动删除已保存连接中数据集的过程。 |
