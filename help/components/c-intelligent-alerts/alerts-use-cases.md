@@ -1,18 +1,18 @@
 ---
-description: 智能警报的用例。
-title: 智能警报 — 用例
+description: 警报的用例。
+title: 警报 — 用例
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 640624ab017d8fc0e7b942c2f00c71cf255c4296
+source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
 workflow-type: tm+mt
-source-wordcount: '67'
-ht-degree: 55%
+source-wordcount: '63'
+ht-degree: 38%
 
 ---
 
-# 智能警报 — 用例
+# 警报 — 用例
 
-您可以按照[创建警报](/help/components/c-intelligent-alerts/alert-builder.md)中的说明创建智能警报。
+您可以按照[创建警报](/help/components/c-intelligent-alerts/alert-builder.md)中的说明创建警报。
 
 以下各节说明了创建警报时要考虑的示例用例。
 

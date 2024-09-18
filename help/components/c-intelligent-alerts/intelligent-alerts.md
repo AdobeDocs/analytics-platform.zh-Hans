@@ -1,41 +1,41 @@
 ---
-description: 新的智能警报系统允许对警报进行更多粒度控制，而且还将异常检测与警报系统集成在一起。
-title: 智能警报概述
+description: 警报允许对通知进行粒度控制，并集成异常检测。
+title: 警报概述
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 8017754adfde8a7d6ecea6d17138368d5430c1a6
+source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 52%
+source-wordcount: '359'
+ht-degree: 27%
 
 ---
 
-# 智能警报概述
+# 警报概述
 
->[!NOTE]
->
->智能警报适用于所有客户。 但是，要在智能警报中使用异常检测，您必须具有Customer Journey AnalyticsSelect、Prime或Ultimate。
+Customer Journey Analytics中的警报允许您根据更改的百分比或特定数据点接收通知。
 
-Customer Journey Analytics中的“智能警报”（或“警报”）允许您在数据中发生异常事件时收到通知。
+根据您的Customer Journey Analytics包，您还可以使用要基于异常阈值触发的警报。 这些警报（也称为“智能警报”）提供了与[异常检测](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md)集成的粒度控制，在您最需要它们时触发。
 
-您可以设置根据异常阈值、变化的百分比或特定数据点触发的警报。警报提供与[异常检测](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md)集成的粒度控件，在您最需要它们时触发。
+警报允许您：
 
-智能警报允许您：
-
-* 构建基于异常的警报（90%、95%、99%、99.75% 和 99.9% 阈值；% 更改；以上/以下）。
 * 预览警报触发的频率
 * 通过含链接的电子邮件或短信将警报发送到自动生成的 Analysis Workspace 项目
 * 创建可在一个警报中捕获了多个指标的“堆栈式”警报。
+* 构建基于异常（90%、95%、99%、99.75%和99.9%阈值；百分比更改；以上/以下）的警报(仅适用于具有Select、Prime或Ultimate程序包的Customer Journey Analytics客户)
 
-以下视频教程提供了警报的基本概述： [智能警报](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html?lang=zh-Hans) (5:34)
+以下视频教程提供了警报的基本概述： [警报](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html?lang=zh-Hans) (5:34)
 
 ## 了解警报与Adobe AnalyticsCustomer Journey Analytics有何不同
 
-在 Customer Journey Analytics 中使用智能警报的过程与在 Adobe Analytics 中使用智能警报的过程几乎相同。然而，两者之间有着重要的区别。
+在Customer Journey Analytics中使用警报的流程与在Adobe Analytics中使用警报的流程几乎相同。 然而，两者之间有着重要的区别。
 
-有关详细信息，请参阅[智能警报功能比较：Customer Journey Analytics和Adobe Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)。
+有关详细信息，请参阅[警报功能比较：Customer Journey Analytics和Adobe Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)。
 
 ## 警报的异常回顾
+
+>[!NOTE]
+>
+>使用具有异常检测（也称为&#x200B;_智能警报_）的警报仅适用于具有Select、Prime或UltimateCustomer Journey Analytics包的组织。
 
 如果警报使用异常检测，则培训期会根据为警报选择的粒度而有所不同。
 
@@ -52,7 +52,7 @@ Customer Journey Analytics中的“智能警报”（或“警报”）允许您
 
 >[!IMPORTANT]
 >
->使用带时间戳的数据创建警报可能会导致警报无法正确触发。Adobe 建议对智能警报使用不带时间戳的数据。
+>使用带时间戳的数据创建警报可能会导致警报无法正确触发。Adobe建议对警报使用不带时间戳的数据。
 
 ## 管理警报
 
