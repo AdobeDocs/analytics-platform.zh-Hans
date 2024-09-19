@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics 指南
 source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
 workflow-type: tm+mt
 source-wordcount: '1123'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 99%
    + [适用于 Adobe Analytics 用户的用户指南](../getting-started/aa-to-cja-user.md)
 
 + 数据引入 {#cja-data-ingestion}
-   + [数据引入概述](../data-ingestion/data-ingestion.md)
+   + [数据摄取概述](../data-ingestion/data-ingestion.md)
    + 摄取并使用快速入门指南{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + Adobe Experience Platform Edge Network {#edge-network}
@@ -295,7 +295,7 @@ ht-degree: 99%
       + [日期比较](../components/date-ranges/time-comparison.md)
    + 警报 {#alerts}
       + [概述](/help/components/c-intelligent-alerts/intelligent-alerts.md)
-      + [Customer Journey Analytics差异](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
+      + [Customer Journey Analytics 中的差异](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
       + [创建](/help/components/c-intelligent-alerts/alert-builder.md)
       + [管理](/help/components/c-intelligent-alerts/alert-manager.md)
       + [用例](/help/components/c-intelligent-alerts/alerts-use-cases.md)

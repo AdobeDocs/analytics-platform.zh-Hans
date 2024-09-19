@@ -8,7 +8,7 @@ role: User
 source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
 workflow-type: tm+mt
 source-wordcount: '2315'
-ht-degree: 85%
+ht-degree: 86%
 
 ---
 
@@ -72,13 +72,13 @@ ht-degree: 85%
 | **摘要级数据源** | 全面支持 |
 | **虚拟报表包** | 全面支持。现在称为[数据视图](/help/data-views/create-dataview.md)。 |
 | **虚拟报表包组件管理** | 全面支持。现在是数据视图的一部分。 |
-| **设备、浏览器、反向链接、技术维度** | 支持基于 [Analytics Source Connector ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)的数据集和 WebSDK 生成的数据集。请参阅[文档，了解通过ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=zh-Hans)支持哪些Analytics变量。 如果您使用 Experience Platform Web SDK 数据收藏集，则当前不支持基于设备查找的设备和维度。计划在以后提供支持。要将设备和浏览器查找功能添加到 Web SDK 数据流，请参阅[本文档](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html) |
+| **设备、浏览器、反向链接、技术维度** | 支持基于 [Analytics Source Connector ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)的数据集和 WebSDK 生成的数据集。请参阅[文档，了解通过ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=zh-hans)支持哪些Analytics变量。 如果您使用 Experience Platform Web SDK 数据收藏集，则当前不支持基于设备查找的设备和维度。计划在以后提供支持。要将设备和浏览器查找功能添加到 Web SDK 数据流，请参阅[本文档](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html) |
 
 ## 以新方式支持 {#new-support}
 
 | 功能 | 注释 |
 | --- | --- |
-| **警报** | 在Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)中使用警报[的进程与在Adobe Analytics中使用警报的进程几乎相同。 <p>但是，由于Customer Journey Analytics中数据收集的时间，每小时警报不可用。 在Customer Journey Analytics中，可以配置每日、每周或每月警报。</p> |
+| **警报** | 在Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)中使用警报[的进程与在Adobe Analytics中使用警报的进程几乎相同。 <p>但是，由于 Customer Journey Analytics 中数据收集的时间，无法提供每小时警报。在 Customer Journey Analytics 中，可以将警报配置为每日、每周或每月。</p> |
 | **Analytics for Target (A4T)** | [Adobe Customer Journey Analytics 和 Target 进行集成](https://experienceleague.adobe.com/zh-hans/docs/target/using/integrate/cja/target-reporting-in-cja)，为优化项目提供强大而又节省时间的分析工具。 |
 | **受众发布** | 如果与 Adobe 的客户数据平台或 Journey Optimizer 产品一起获得许可即支持。[受众发布](/help/components/audiences/audiences-overview.md)将受众发送到 Experience Platform 中的 Real-time Customer Profile。 |
 | **分类** | 现在称为“查找数据集”。Analytics 中使用的分类可以通过分析分类源连接器导入到 Experience Platform 和 Customer Journey Analytics。 查找数据集还可以直接上传到 Experience Platform 并在 Customer Journey Analytics 中提供。 |
