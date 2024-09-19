@@ -4,9 +4,10 @@ description: 使用说明有关如何将摘要数据带入Customer Journey Analy
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 1590b7fbdedfacf4665d191220156c887f9c562a
+exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
+source-git-commit: e6f57b03689bd9aaaec12c13fc95da5b079b901e
 workflow-type: tm+mt
-source-wordcount: '4974'
+source-wordcount: '5187'
 ht-degree: 8%
 
 ---
@@ -487,6 +488,26 @@ ht-degree: 8%
             1. 在&#x200B;**[!UICONTROL 营销活动]**&#x200B;列表中选择&#x200B;**[!UICONTROL DimensionID]**&#x200B;维度。
             1. 您注意到现在已在&#x200B;**[!UICONTROL 组件设置]**&#x200B;中自动启用&#x200B;**[!UICONTROL 隐藏报表中的组件]**。
 
+      1. 创建新的派生字段，例如`Campaign Name (Lookup Derived Field)`，以确保您可以使用示例查找数据数据集中的“促销活动名称（查找）”维度在Workspace中报告。
+
+         营销活动名称](../aa-data/../assets/summary-derived-field.png)的![派生字段
+
+         1. 为&#x200B;**[!UICONTROL 值]**&#x200B;选择&#x200B;**[!UICONTROL campaign_id]**。
+         1. 从&#x200B;**[!UICONTROL 查找数据集]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 示例查找数据数据集]**。
+         1. 从&#x200B;**[!UICONTROL 匹配键]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL tracking_code]**。
+         1. 从&#x200B;**[!UICONTROL 要返回的值]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL campaign_name]**。
+         1. 选择&#x200B;**[!UICONTROL 保存]**。
+
+      1. 将新创建的派生字段&#x200B;**[!UICONTROL 促销活动名称（查找派生字段）]**&#x200B;添加到&#x200B;**[!UICONTROL Dimension]**&#x200B;组件列表。
+
+      1. 在&#x200B;**[!UICONTROL Dimension]**&#x200B;列表中选择&#x200B;**[!UICONTROL 促销活动名称（查找）]**&#x200B;维度。 在组件面板中：
+
+         ![派生字段摘要数据组](../assets/derived-field-summary-data-group.png)
+
+         1. 展开![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL 摘要数据组]**。
+         1. 启用&#x200B;**[!UICONTROL 创建分组]**。
+         1. 从&#x200B;**[!UICONTROL Dimension]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 促销活动名称（查找派生字段）]**。 此步骤确保示例查找数据数据集中的促销活动名称（查找）可以在报表中安全使用(请参阅[Workspace](#workspace))。
+
       1. 从&#x200B;**[!UICONTROL 指标]**&#x200B;列表中选择&#x200B;**[!UICONTROL 收入]**&#x200B;指标。 在组件面板中：
 
          ![收入摘要数据](../assets/revenue-summary-data.png)
@@ -566,6 +587,14 @@ ht-degree: 8%
          1. 选择首选的&#x200B;**[!UICONTROL 条件格式调色板]**。
    1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存您的项目。
 
+如果要报告促销活动名称而不是跟踪代码（事件），请执行以下步骤：
+
+1. 复制&#x200B;**[!UICONTROL 摘要数据报表]**&#x200B;自由格式表可视化图表。
+1. 将重复的可视化图表重命名为`Summary Data Report (using Campaign Name)`。
+1. 将![Switch](/help/assets/icons/Switch.svg)的&#x200B;**[!UICONTROL 跟踪代码（事件）]**&#x200B;维度替换为&#x200B;**[!UICONTROL 促销活动名称（查找）]**&#x200B;维度。
+
+由于您创建的派生字段以及促销活动名称（查找）的摘要数据组组件配置，因此您可以正确报告促销活动名称（查找）。 查看[数据视图](#data-view)。
+
 您的最终项目应该如下所示。
 
 ![使用摘要数据的示例项目，显示带有摘要数据报告的摘要数据面板](../assets/summary-workspace.png)
@@ -575,4 +604,3 @@ ht-degree: 8%
 >
 >[摘要数据](/help/data-views/summary-data.md)
 >[摘要数据组组件设置](/help/data-views/component-settings/summary-data-group.md)
-
