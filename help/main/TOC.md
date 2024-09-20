@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
+source-git-commit: a4b838f7813d78681eba072e4febd90ba0c7111d
 workflow-type: tm+mt
-source-wordcount: '1123'
+source-wordcount: '1116'
 ht-degree: 100%
 
 ---
@@ -371,7 +371,6 @@ ht-degree: 100%
       + [查询服务和导出数据集](../use-cases/data-export/queryservice-export-datasets.md)
    + B2B {#b2b}
       + [B2B 项目示例](../use-cases/b2b/example.md)
-      + [将帐户级别的数据作为查询数据集进行添加](../use-cases/b2b/b2b.md)
    + 跨渠道数据 {#cross-channel}
       + [跨渠道分析数据](../use-cases/cross-channel/cross-channel.md)
       + [导入呼叫中心数据和网站数据](../use-cases/cross-channel/call-center.md)
