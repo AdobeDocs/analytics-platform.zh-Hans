@@ -6,10 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 2f42c64443cc5798388287e6f84b125fb8694812
+source-git-commit: 5d65f2cee34741d985ae7b85ad62f65a68c6289a
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 3%
+source-wordcount: '1300'
+ht-degree: 2%
 
 ---
 
@@ -127,6 +127,16 @@ ht-degree: 3%
 
 在历程画布中修改Journey Optimizer历程后，数据处理、可用功能和同步行为可能会发生更改。
 
+如果您在历程画布中对Journey Optimizer历程进行了重大修改，则可能会更改数据处理、可用功能和同步行为。 重大修改包括以下任何一项：
+
+* 添加或删除节点
+
+* 在节点之间添加或删除箭头
+
+* 更改节点上的组件
+
+如果您对历程画布中的Journey Optimizer历程进行了其他更改，例如拖动节点或添加划分，则以下部分中描述的差异不适用。
+
 >[!NOTE]
 >
 >要将历程恢复到其原始状态，可以在历程画布中进行首次更改后按Ctrl+z。 或者，您可以在历程画布中删除并[重新创建历程](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
@@ -139,9 +149,13 @@ ht-degree: 3%
 
 #### 功能差异
 
-在历程画布中修改Journey Optimizer历程后，[!UICONTROL **Node type**]&#x200B;下拉字段不再可用。
+在历程画布中修改Journey Optimizer历程后，功能可能会因以下功能而异，具体取决于您的修改：
 
-有关此字段的详细信息，请参阅[配置设置](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。
+* [!UICONTROL **节点类型**]&#x200B;字段中显示的值发生了更改。
+
+* [!UICONTROL **箭头设置**]&#x200B;下拉字段中可用的选项更改。
+
+有关这些字段的详细信息，请参阅[配置设置](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。
 
 #### 同步差异
 

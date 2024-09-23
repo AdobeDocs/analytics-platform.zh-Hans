@@ -6,9 +6,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: c94544baf4c934b16b2fc9ce837dd41e07a3dcac
+source-git-commit: 90180e1231ab8b50f1f6b8552e00d1c251d10a2f
 workflow-type: tm+mt
-source-wordcount: '5141'
+source-wordcount: '5408'
 ht-degree: 1%
 
 ---
@@ -84,9 +84,9 @@ ht-degree: 1%
 
    | 设置 | 功能 |
    |---------|----------|
-   | [!UICONTROL **节点类型**] | 允许您配置在可视化图表中显示的节点类型。 要在可视化图表中隐藏节点类型，请选择该节点类型旁边的(x)，或从下拉菜单中取消选择它。 要显示隐藏的节点类型，请从下拉菜单中选择它。 <p>根据可视化图表的内容，可能的节点类型包括：</p><ul><li>[!UICONTROL **读取区段**]</li><li>[!UICONTROL **结束**]</li><li>[!UICONTROL **维度**]</li><li>[!UICONTROL **量度**]</li></ul><p>**注意**：使用此字段时请考虑以下事项：</p><ul><li>只有在您将可视化图表添加到的Journey Optimizer面板中选择的同一数据视图中检测到Analysis Workspace数据时，才会显示此选项。 有关更改Analysis Workspace中面板的数据视图的信息，请参阅[Analysis Workspace概述](/help/analysis-workspace/home.md)。</li><li>在历程画布中修改Journey Optimizer历程后，此选项不再可用。 有关详细信息，请参阅历程画布中修改历程后的[视觉差异](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas)</li><li>隐藏节点时，不会从历程中删除它们。 有关如何删除节点的信息，请参阅[删除节点](#delete-nodes)。</li></ul></p> |
-   | [!UICONTROL **百分比值**] | 从以下选项中进行选择： <ul><li>总数的&#x200B;[!UICONTROL **百分比**]：在面板的日期范围内包含在数据视图中的所有人员的百分比。</li><li>[!UICONTROL **开始节点的百分比**]：在面板的日期范围内，数据视图中包含的、同时符合历程开始节点条件的所有人员的百分比。 (此选项仅在具有单个开始节点的历程中可用；在具有多个开始节点的历程中禁用此选项。 起始节点定义为没有连接进入它的任何节点。)</li></ul> |
-   | [!UICONTROL **箭头设置**] | 历程画布中的节点之间显示的箭头可以包含自定义名称、Journey Optimizer标签和Journey Optimizer条件。 从以下选项中进行选择，以确定要显示的选项：<ul><li>[!UICONTROL **无**]：历程画布的箭头上不显示自定义名称、Journey Optimizer标签或Journey Optimizer条件。 </li><li>[!UICONTROL **条件**]：在Journey Optimizer中配置的任何条件标签均显示在历程画布的箭头上。 任何自定义名称或其他Journey Optimizer标签都不会显示。</li><li>[!UICONTROL **所有标签**]：如果箭头包含自定义名称、标签或条件，则它显示在历程画布的箭头上。 每个箭头只显示一个名称、标签或条件，其优先顺序如下： <ol><li>从历程画布添加的自定义名称（如[重命名节点或箭头](#rename-a-node-or-arrow)中所述）</li><li>Journey Optimizer标签</li><li>Journey Optimizer条件</li></ol></li></ul><p>**注意**：仅当在添加可视化图表的Journey Optimizer面板中选择的同一数据视图中检测到Analysis Workspace数据时，才会显示此选项。 有关更改Analysis Workspace中面板的数据视图的信息，请参阅[Analysis Workspace概述](/help/analysis-workspace/home.md)。</p> |
+   | [!UICONTROL **节点类型**] | 允许您配置在可视化图表中显示的节点类型。<p>要在可视化图表中隐藏节点类型，请选择该节点类型旁边的(x)，或从下拉菜单中取消选择它。 要显示隐藏的节点类型，请从下拉菜单中选择它。 (当您隐藏节点时，不会将其从历程中删除。 有关如何删除节点的信息，请参阅[删除节点](#delete-nodes)。</p><p>此字段可以包含Journey Optimizer节点类型（[!UICONTROL **读取区段**]、[!UICONTROL **结束**]&#x200B;等）和组件节点类型([!UICONTROL **Dimension**]、[!UICONTROL **指标**]、[!UICONTROL **筛选器**]&#x200B;和&#x200B;[!UICONTROL **日期范围**])，如下所示： </p><ul><li>**如果旅程是Journey Optimizer旅程，并且未在包含以下任何修改的历程画布中对其进行修改，则仅显示Journey Optimizer节点类型**：<ul><li>已添加或删除的节点</li><li>添加或删除的箭头</li><li>更改了节点上的组件</li></ul></li><li>**如果历程是Journey Optimizer历程，且在历程画布中进行了以下任何修改后进行了修改，则同时显示Journey Optimizer节点类型和组件节点类型**：<ul><li>已添加或删除的节点</li><li>添加或删除的箭头</li><li>更改了节点上的组件</li></ul></li><li>**如果历程不是Journey Optimizer历程，则仅显示组件节点类型**。</li></ul></p> |
+   | [!UICONTROL **百分比值**] | 旅程中每个节点上显示的百分比值。 此百分比仅包括面板日期范围内数据视图中所包括的人员。 <p>从以下选项中进行选择：</p> <ul><li>[!UICONTROL **开始节点的百分比**]：符合历程中开始节点标准的所有人员的百分比。 <p>_启动节点_&#x200B;是一个没有连接节点的节点。</p><p>历程可以包含多个开始节点。 但是，如果历程包含2个或更多指向公共节点的启动节点，则使用总数的&#x200B;[!UICONTROL **Percent of**]。 如果要使用起始节点&#x200B;**]的[!UICONTROL **&#x200B;百分比，请更新历程，以便历程中的每个节点都可以跟踪回单个起始节点。</p></li><li>[!UICONTROL **上一节点的百分比**]：上一节点中所有人员的百分比。</li><li>总数的&#x200B;[!UICONTROL **百分比**]：在面板的日期范围内包含在数据视图中的所有人员的百分比。</li></ul> |
+   | [!UICONTROL **箭头设置**] | 可以将历程画布中节点之间显示的箭头配置为显示自定义标签和值。 <p>_标签_&#x200B;是显示在箭头上的自定义名称。 给定箭头上只显示单个标签。 标签可以是以下任意标签，并按以下优先顺序显示：</p><ol><li>从历程画布添加的自定义名称（如[重命名节点或箭头](#rename-a-node-or-arrow)中所述）</li><li>Journey Optimizer标签</li><li>Journey Optimizer条件</li></ol><p>_值_&#x200B;是箭头上显示的数字和百分比，它们表示从历程中的一个节点移动到下一个节点的人员或会话。 （换言之，就是那些没有在给定步骤中退出旅程的人。 ） </p><p>以下选项适用于并非源自Journey Optimizer的旅程，以及在历程画布中未进行重大修改的Journey Optimizer旅程：（重大修改包括添加或删除节点、添加或删除箭头或更改节点的组件。）</p><ul><li>[!UICONTROL **无标签**]：历程中的箭头上不显示标签。 </br>此选项仅在历程在中被修改时可用 </li><li>[!UICONTROL **仅标签**]：标签显示在历程的箭头上。</li></ul><p>以下选项适用于在历程画布中进行了显着修改的Journey Optimizer历程：（显着修改包括添加或删除节点、添加或删除箭头或更改节点的组件。）(**注意**：只有在要在其中添加可视化的Journey Optimizer面板中选择的同一数据视图中检测到Analysis Workspace数据时，才会显示这些选项。 有关更改Analysis Workspace中面板的数据视图的信息，请参阅[Analysis Workspace概述](/help/analysis-workspace/home.md)。</p><ul><li>[!UICONTROL **无标签或值**]：历程中的箭头上不显示标签或值。</li><li>[!UICONTROL **仅标签**]：历程中的箭头上只显示标签。 不显示值。</li><li>[!UICONTROL **仅限值**]：历程中的箭头上只显示值。 不显示标签。</li><li>[!UICONTROL **值和标签**]：标签和值都显示在历程的箭头上。</li></ul> |
    | [!UICONTROL **显示流失**] | 显示每个节点的流失数据。 这显示在给定节点后离开历程的人员的数量和百分比。 <p>退出旅程的人可能已在该网站上执行了其他操作，但他们从未满足旅程中下一个节点定义的标准。</p> |
    | **缩放控件** | 以下缩放控件在画布的右上角可用：<ul><li>**放大** ![放大图标](assets/zoom-in-icon.png)：放大可视化图表的特定区域。<p>您也可以使用鼠标控件，例如按住触控板。</p></li><li>**缩小** ![缩小图标](assets/zoom-out-icon.png)：缩小可视化图表以在画布上留出更多空间。<p>您也可以使用鼠标控件，例如按住触控板。</p></li><li>**适应屏幕** ![适应屏幕图标](assets/fill-screen-icon.png)：调整当前缩放和平移设置以使用完整可视化填充屏幕。</li></ul><p>要在放大或缩小后跨画布平移，请单击鼠标并拖动到所需的位置。</p> |
 
@@ -273,7 +273,8 @@ ht-degree: 1%
 | 要组合的组件类型 | 使用的逻辑（运算符） |
 |---------|----------|
 | 指标+指标 | 已使用OR连接 |
-| Dimension+Dimension | 已使用OR连接 |
+| Dimension项+Dimension项（来自同一父维度） | 已使用OR连接 |
+| Dimension项+Dimension项（来自其他父维度） | 与AND连接 |
 | 筛选+筛选 | 与AND连接 |
 | Dimension+指标、日期范围或过滤器 | 与AND连接 |
 | 日期范围+指标、过滤器或Dimension | 与AND连接 |
