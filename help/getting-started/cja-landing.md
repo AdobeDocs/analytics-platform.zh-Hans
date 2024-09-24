@@ -4,10 +4,10 @@ description: Customer Journey Analytics 登陆页面。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: a9dd06a7b9d7c1ee6d5be5b944564e971cfe5192
-workflow-type: ht
-source-wordcount: '842'
-ht-degree: 100%
+source-git-commit: 0325b48e7144ac3e334ab57448b9adba9fcea21d
+workflow-type: tm+mt
+source-wordcount: '878'
+ht-degree: 96%
 
 ---
 
@@ -28,6 +28,12 @@ ht-degree: 100%
 AI 助手是一种对话体验，允许从业者快速执行任务——无论是理解概念、解决问题还是搜索信息。它还允许非专家执行专家任务并提高整体工作质量。
 
 [![图像](assets/learn-more-button.svg)](/help/ai-assistant.md)
+
+>[!TAB 警报]
+
+警报允许您根据更改的百分比或特定数据点接收通知。 您可以预览警报触发的频率、通过电子邮件或短信发送警报、创建栈叠警报等。
+
+[![图像](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
 
 >[!TAB 摘要数据]
 
