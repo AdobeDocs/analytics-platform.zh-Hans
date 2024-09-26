@@ -4,9 +4,9 @@ title: 智能题注
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 6a193f2fd179809afac6808f3fb958c020f53a8d
+source-git-commit: 9d94d52b14a4f119193696c1e5fc6df9538f77cb
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '632'
 ht-degree: 5%
 
 ---
@@ -19,8 +19,6 @@ ht-degree: 5%
 
 * 需要与其他用户共享叙述的分析师。 分析师需要这些见解才能为其用户提供上下文。
 * 希望快速发现高级外卖的业务用户。
-
-字幕可供所有Customer Journey Analytics用户使用，并且不需要特殊权限。
 
 ## 启动智能字幕 {#launch}
 
@@ -101,7 +99,7 @@ ht-degree: 5%
 
 * **解决方案访问**：智能字幕功能在Customer Journey Analytics中可用，但在Adobe Analytics中不可用。
 
-* **合同访问权限**：如果您无法使用智能字幕，请联系贵组织的管理员或Adobe客户代表。 在组织中使用Intelligent之前，您必须同意某些与GenAI相关的法律条款。
+* **合同访问权限**：如果您无法使用智能字幕，请联系贵组织的管理员或Adobe客户代表。 在组织中使用智能字幕之前，您必须同意某些与GenAI相关的法律条款。
 
 * **权限**：在[!UICONTROL Adobe Admin Console]中，[!UICONTROL 报告工具] **[!UICONTROL 智能字幕]**&#x200B;权限决定了访问权限。 [产品配置文件管理员](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)需要在[!UICONTROL Admin Console]中执行这些步骤：
    1. 导航到&#x200B;**[!UICONTROL Admin Console]** > **[!UICONTROL 产品和服务]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL 产品配置文件]**。
