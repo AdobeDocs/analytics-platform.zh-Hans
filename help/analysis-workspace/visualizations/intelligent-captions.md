@@ -4,7 +4,7 @@ title: 智能题注
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 9d94d52b14a4f119193696c1e5fc6df9538f77cb
+source-git-commit: 93b4426bc3e46540d3b4c9d6ae816a6d1f96f6ed
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 5%
@@ -17,8 +17,8 @@ ht-degree: 5%
 
 智能字幕面向：
 
-* 需要与其他用户共享叙述的分析师。 分析师需要这些见解才能为其用户提供上下文。
-* 希望快速发现高级外卖的业务用户。
+* 分析师，他们需要与其他用户分享叙述。 分析师需要这些见解才能为其用户提供上下文。
+* 希望快速发现高级外卖的企业用户。
 
 ## 启动智能字幕 {#launch}
 
