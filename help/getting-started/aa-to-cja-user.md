@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: a4b838f7813d78681eba072e4febd90ba0c7111d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1442'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -92,7 +92,7 @@ Adobe Analytics 和 Customer Journey Analytics 之间的计算量度名称类似
 
 ## 对分类概念的更改
 
-“分类”现在称为&#x200B;*查找数据集*。 查找数据集用于查找在您的事件或个人资料数据中找到的值或键。例如，您可以上传将事件数据中的数字 ID 映射到产品名称的查找数据。
+“分类”现在称为&#x200B;*“查找数据集”*。查找数据集用于查找在您的事件或个人资料数据中找到的值或键。例如，您可以上传将事件数据中的数字 ID 映射到产品名称的查找数据。
 
 ## 对客户属性概念的更改
 
