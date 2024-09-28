@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: f1e29025292a71b0734210d57eef60cb1eaa6d50
-workflow-type: ht
-source-wordcount: '1116'
-ht-degree: 100%
+source-git-commit: 8310e67ea42c44e9cc6d9cfcbd27642b068ef1ed
+workflow-type: tm+mt
+source-wordcount: '1124'
+ht-degree: 99%
 
 ---
 
@@ -97,7 +97,13 @@ ht-degree: 100%
    + [BI 扩展](../data-views/bi-extension.md)
    + [派生字段](../data-views/derived-fields/derived-fields.md)
    + [摘要数据](../data-views/summary-data.md)
-   + [标签和策略](../data-views/data-governance.md)
+   + [标签和政策](../data-views/data-governance.md)
+
++ 工具 {#tools}
+   + 产品使用情况{#product-usage}
+      + [概述](../tools/product-usage/usage-overview.md)
+      + [数据设置](../tools/product-usage/data-settings.md)
+      + [“选择禁用”设置](../tools/product-usage/opt-out-settings.md)
 
 + Workspace 项目 {#cja-workspace}
    + [Analysis Workspace 概述](../analysis-workspace/home.md)
