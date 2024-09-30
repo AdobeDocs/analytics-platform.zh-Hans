@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
-workflow-type: ht
-source-wordcount: '2315'
-ht-degree: 100%
+source-git-commit: 6820adc70412f6abeae81bf8389227999d13f0d5
+workflow-type: tm+mt
+source-wordcount: '2306'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 100%
 | **增强了安全和隐私选项** - HIPAA 就绪 | Customer Journey Analytics 符合 HIPAA 标准，并提供[附加安全选项](/help/privacy/cmk.md)，以确保符合相关法规。Adobe Analytics 尚未为 HIPAA 做好准备。 |
 | **试验分析** | Customer Journey Analytics 可以[评估来自定义为连接一部分的任何数据源的任何试验](/help/analysis-workspace/c-panels/experimentation.md)的提升度和置信度。通过此评估，您可以了解跨任何渠道的客户互动之间的因果关系。Analytics 仅限用于通过 A4T 进行的试验分析。 |
 | **预测** | [预测](/help/analysis-workspace/c-forecast/forecasting.md)是一种 AI/ML 功能，包括基于 Customer Journey Analytics 中已有的历史数据对时间序列相关数据进行统计预测。预测可以出现在自由格式的表格和折线图可视化中。 |
-| **引导式分析** | [引导式分析](/help/guided-analysis/overview.md)是一种报告格式，它使用户可快速地自助满足其数据需求，以使其可快速地获得高质量见解并作出更加以数据为导向的决策。引导分析是 Adobe Product Analytics 的一部分。 |
+| **引导式分析** | [引导式分析](/help/guided-analysis/overview.md)使用户能够通过基于Customer Journey Analytics的跨渠道数据构建的引导式工作流自助提供有关客户历程的高质量数据和见解。 |
 | **智能题注** | 智能题注使用先进的机器学习和生成式 AI 为工作区可视化提供有价值的自然语言见解。初始版本为 [Line](/help/analysis-workspace/visualizations/line.md) 可视化提供了自动生成的见解。 |
 | **报告时间变换** | 通过 Customer Journey Analytics 中的[数据视图](/help/data-views/data-views.md)，可进一步解释从某个连接获得的数据。可不更改实施即更改或删除数据、使用子字符串操纵维度、从任意值创建量度或筛选子事件。以非破坏性的方式进行所有这些转换。Adobe Analytics 通过虚拟报表包和自定义会话长度提供有限的功能。 |
 | **BI 扩展** | [BI 扩展](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/data-export/bi-extension) 可让您将 CJA 直接连接到流行的 BI 可视化工具，例如 PowerBI 或 Tableau。通过使用此扩展，您可以让您的 BI 报告与您在 Analysis Workspace 和其他 CJA 报告界面中看到的内容完全匹配。这是获取 CJA 的 BI 报告的一种更简单的方法，无需根据原始数据重新创建报告/指标。 |
