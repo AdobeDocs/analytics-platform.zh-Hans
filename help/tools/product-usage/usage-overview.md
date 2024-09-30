@@ -3,7 +3,7 @@ title: 产品使用情况概述
 description: 查看有关贵组织如何使用Customer Journey Analytics的见解和报表。
 hide: true
 hidefromtoc: true
-source-git-commit: 60c53b29f8e4105f96bf312462610024517605b8
+source-git-commit: 18686285efbdbc9e8fdac93e215adc4061bb0022
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 11%
