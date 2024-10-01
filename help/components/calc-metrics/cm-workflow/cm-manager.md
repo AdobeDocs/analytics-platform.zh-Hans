@@ -3,7 +3,7 @@ description: 计算量度管理器允许您共享、筛选、标记、批准、�
 title: 计算量度管理器
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
+source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 5%
@@ -34,7 +34,7 @@ ht-degree: 5%
 | 栏目 | 描述 |
 | --- | --- | 
 | ![星形大纲](/help/assets/icons/StarOutline.svg) | 选择支持![Star](/help/assets/icons/Star.svg)或取消支持![StarOutline](/help/assets/icons/StarOutline.svg)计算量度。 查看[将计算量度标记为收藏](/help/components/filters/filters-favorite.md) |
-| **[!UICONTROL 标题和描述]** | 要编辑计算量度，请选择标题链接，这会打开[计算量度生成器](cm-build-metrics.md)。 共享的计算量度以![共享](/help/assets/icons/ShareLight.svg)表示。 |
+| **[!UICONTROL 标题和描述]** | 要编辑计算量度，请选择标题链接，这会打开[计算量度生成器](cm-build-metrics.md)。 共享的计算量度以![共享](/help/assets/icons/ShareAlt.svg)表示。 |
 | **[!UICONTROL 数据视图]** | 此计算量度应用于的数据视图。 |
 | **[!UICONTROL 所有者]** | 计算指标的所有者。 作为用户，您只会看到自己拥有的注释或与您共享的注释。 |
 | **[!UICONTROL 标记]** | 列出此计算指标的标记。 |
@@ -56,7 +56,7 @@ ht-degree: 5%
 | ![添加圆圈](/help/assets/icons/AddCircle.svg) **[!UICONTROL 添加]** | 使用[计算量度生成器](cm-build-metrics.md)添加其他计算量度。 |
 | ![搜索](/help/assets/icons/Search.svg) [!UICONTROL *按标题搜索*] | 在列表中未选择计算指标时，使用此搜索字段搜索筛选器。 |
 | ![标签](/help/assets/icons/Label.svg) **[!UICONTROL 标签]** | 标记所选的计算指标。 在&#x200B;**[!UICONTROL 标记计算量度]**&#x200B;对话框中，选择或取消选择所选计算量度的标记。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存选定计算量度的标记。 有关详细信息，请参阅[标记计算量度](cm-tagging.md)。 |
-| ![共享](/help/assets/icons/ShareLight.svg) **[!UICONTROL 共享]** | 共享所选的计算指标。 在&#x200B;**[!UICONTROL 共享计算量度]**&#x200B;对话框中，您可以![搜索](/help/assets/icons/Search.svg) *搜索个人或组*，也可以选择&#x200B;**[!UICONTROL 组织]**&#x200B;或&#x200B;**[!UICONTROL 组]**。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存所选计算量度的共享详细信息。 有关详细信息，请参阅[共享计算量度](cm-sharing.md)。 |
+| ![共享](/help/assets/icons/ShareAlt.svg) **[!UICONTROL 共享]** | 共享所选的计算指标。 在&#x200B;**[!UICONTROL 共享计算量度]**&#x200B;对话框中，您可以![搜索](/help/assets/icons/Search.svg) *搜索个人或组*，也可以选择&#x200B;**[!UICONTROL 组织]**&#x200B;或&#x200B;**[!UICONTROL 组]**。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存所选计算量度的共享详细信息。 有关详细信息，请参阅[共享计算量度](cm-sharing.md)。 |
 | ![删除](/help/assets/icons/Delete.svg) **[!UICONTROL 删除]** | 删除所选的计算指标。 系统会提示您进行确认。 |
 | ![编辑](/help/assets/icons/Edit.svg)**[!UICONTROL 重命名]** | 重命名单个选定的计算指标。 选中后，您可以内联重命名计算指标。 |
 | ![复选标记Circle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 批准]** | 批准所选的计算指标。 请参阅[批准计算量度](cm-approving.md)。 |

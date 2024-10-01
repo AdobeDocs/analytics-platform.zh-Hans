@@ -4,7 +4,7 @@ title: 共享过滤器
 feature: Filters
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
-source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
+source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 10%
@@ -21,7 +21,7 @@ ht-degree: 10%
 要共享一个或多个过滤器，请执行以下操作：
 
 1. 在[筛选器管理器](manage-filters.md)中，选择要共享的一个或多个筛选器。
-1. 从操作栏中选择![共享](/help/assets/icons/ShareLight.svg) **[!UICONTROL 共享]**。
+1. 从操作栏中选择![共享](/help/assets/icons/ShareAlt.svg) **[!UICONTROL 共享]**。
 1. 在&#x200B;**[!UICONTROL 共享筛选器]**&#x200B;对话框中：
 
    ![共享筛选器对话框](assets/share-filter-dialog.png)

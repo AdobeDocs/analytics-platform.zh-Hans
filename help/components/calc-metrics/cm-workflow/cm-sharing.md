@@ -3,7 +3,7 @@ description: 根据您的权限，您可以与整个组织、群组或个人用�
 title: 共享计算量度
 feature: Calculated Metrics
 exl-id: b2a3e4e3-f0aa-4505-b3f5-7d9f14dc1640
-source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
+source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 10%
@@ -20,7 +20,7 @@ ht-degree: 10%
 要共享一个或多个计算指标，请执行以下操作：
 
 1. 在[计算量度管理器](cm-manager.md)中，选择要共享的一个或多个计算量度。
-1. 从操作栏中选择![共享](/help/assets/icons/ShareLight.svg) **[!UICONTROL 共享]**。
+1. 从操作栏中选择![共享](/help/assets/icons/ShareAlt.svg) **[!UICONTROL 共享]**。
 1. 在&#x200B;**[!UICONTROL 共享计算量度]**&#x200B;对话框中：
 
    ![共享计算量度对话框](assets/share-calculated-metrics-dialog.png)

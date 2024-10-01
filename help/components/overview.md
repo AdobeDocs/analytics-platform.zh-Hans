@@ -5,7 +5,7 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
+source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 33%
@@ -75,7 +75,7 @@ Analysis Workspace中的组件包括量度、维度、过滤器和日期范围�
    | ![星级](/help/assets/icons/Star.svg) [!UICONTROL **收藏**] | 将组件添加到您的收藏夹列表中。与标记类似，您可以在左侧面板中按“收藏夹”进行搜索，然后在组件管理器中对其进行过滤。 |
    | ![星形大纲](/help/assets/icons/StarOutline.svg) **[!UICONTROL 取消收藏]** | 从收藏夹列表中删除该组件。 |
    | ![复选标记](/help/assets/icons/Checkmark.svg) [!UICONTROL **批准**] | 将组件标记为“已批准”可告知用户该组件得到了组织的批准。与标记类似，您可在左侧面板中按“已批准”进行搜索和过滤。 ![复选标记](/help/assets/icons/Checkmark.svg)标识已批准的组件。 |
-   | ![共享](/help/assets/icons/ShareLight.svg) [!UICONTROL **共享**] | 将组件与组织中的用户共享。此选项仅对自定义组件可用，例如过滤器或计算量度。 |
+   | ![共享](/help/assets/icons/ShareAlt.svg) [!UICONTROL **共享**] | 将组件与组织中的用户共享。此选项仅对自定义组件可用，例如过滤器或计算量度。 |
    | ![删除](/help/assets/icons/Delete.svg) [!UICONTROL **删除**] | 删除不再需要的组件。此选项仅对自定义组件可用，例如过滤器或计算量度。 |
 
 自定义组件也可通过其相应的组件管理器进行管理。例如，请参阅[管理筛选器](/help/components/filters/manage-filters.md)。

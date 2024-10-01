@@ -4,7 +4,7 @@ description: 在 Analysis Workspace 中共享、重命名或删除日期范围�
 feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
 role: User
-source-git-commit: 19d2130f4fae736a8553c1a3dd573706d4fb8083
+source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 9%
@@ -51,7 +51,7 @@ ht-degree: 9%
 | ![添加圆圈](/help/assets/icons/AddCircle.svg) **[!UICONTROL 添加]** | 使用[日期范围生成器](create.md#date-range-builder)添加另一个日期范围。 |
 | ![搜索](/help/assets/icons/Search.svg) [!UICONTROL *按标题搜索*] | 在列表中未选择日期范围时，使用此搜索字段搜索日期范围。 |
 | ![标签](/help/assets/icons/Label.svg) **[!UICONTROL 标签]** | 标记选定的日期范围。 在&#x200B;**[!UICONTROL 标记日期范围]**&#x200B;对话框中，选择或取消选择选定日期范围的标记。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存选定日期范围的标记。 |
-| ![共享](/help/assets/icons/ShareLight.svg) **[!UICONTROL 共享]** | 共享选定的日期范围。 在&#x200B;**[!UICONTROL 共享日期范围]**&#x200B;对话框中，您可以![搜索](/help/assets/icons/Search.svg) *搜索个人或组*，也可以选择&#x200B;**[!UICONTROL 组织]**&#x200B;或&#x200B;**[!UICONTROL 组]**。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存所选日期范围的共享详细信息。 |
+| ![共享](/help/assets/icons/ShareAlt.svg) **[!UICONTROL 共享]** | 共享选定的日期范围。 在&#x200B;**[!UICONTROL 共享日期范围]**&#x200B;对话框中，您可以![搜索](/help/assets/icons/Search.svg) *搜索个人或组*，也可以选择&#x200B;**[!UICONTROL 组织]**&#x200B;或&#x200B;**[!UICONTROL 组]**。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存所选日期范围的共享详细信息。 |
 | ![删除](/help/assets/icons/Delete.svg) **[!UICONTROL 删除]** | 删除选定的日期范围。 系统会提示您进行确认。 |
 | ![编辑](/help/assets/icons/Edit.svg)**[!UICONTROL 重命名]** | 重命名单个选定的日期范围。 选中后，您可以内联重命名日期范围。 |
 | ![复选标记Circle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 批准]** | 批准选定的日期范围。 |
