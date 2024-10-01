@@ -4,9 +4,9 @@ description: 如何在工作区中管理注释。
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
-source-git-commit: 01f862997503cb36502145eddb47873bc7cb28fe
+source-git-commit: 19d2130f4fae736a8553c1a3dd573706d4fb8083
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '763'
 ht-degree: 6%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 6%
 | 栏目 | 描述 |
 | --- | --- | 
 | ![星形大纲](/help/assets/icons/StarOutline.svg) | 选择支持![Star](/help/assets/icons/Star.svg)或取消支持![StarOutline](/help/assets/icons/StarOutline.svg)注释。 |
-| **[!UICONTROL 标题和描述]** | 在 Annotation Builder 中提供。要编辑标题和描述，请选择标题链接 — 打开[注释生成器](/help/components/annotations/create-annotations.md#annotation-builder)。 共享批注以![共享](/help/assets/icons/Share.svg)表示。 |
+| **[!UICONTROL 标题和描述]** | 在 Annotation Builder 中提供。要编辑标题和描述，请选择标题链接 — 打开[注释生成器](/help/components/annotations/create-annotations.md#annotation-builder)。 共享批注以![共享](/help/assets/icons/ShareLight.svg)表示。 |
 | **[!UICONTROL 数据视图]** | 此注释应用于的数据视图。 |
 | **[!UICONTROL 所有者]** | 注释的所有者。 作为用户，您只会看到自己拥有的注释或与您共享的注释。 |
 | **[!UICONTROL 应用的日期范围]** | 此注释应用于的日期或日期范围。 |
@@ -57,7 +57,7 @@ ht-degree: 6%
 | ![添加圆圈](/help/assets/icons/AddCircle.svg) **[!UICONTROL 添加]** | 使用[Annotation Builder](create-annotations.md#annotation-builder)添加另一个注释。 |
 | ![搜索](/help/assets/icons/Search.svg) [!UICONTROL *按标题搜索*] | 在列表中未选择批注时，使用此搜索字段搜索批注。 |
 | ![标签](/help/assets/icons/Label.svg) **[!UICONTROL 标签]** | 标记选定的注释。 在&#x200B;**[!UICONTROL 标记组件]**&#x200B;对话框中，选择或取消选择所选批注的标记。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存选定批注的标记。 |
-| ![共享](/help/assets/icons/Share.svg) **[!UICONTROL 共享]** | 共享所选批注。 在&#x200B;**[!UICONTROL 共享组件]**&#x200B;对话框中，您可以![搜索](/help/assets/icons/Search.svg) *搜索个人或组*，也可以选择&#x200B;**[!UICONTROL 组织]**&#x200B;或&#x200B;**[!UICONTROL 组]**。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存所选批注的共享详细信息。 有关更多详细信息，请参阅[共享注释](#share-annotations)。 |
+| ![共享](/help/assets/icons/ShareLight.svg) **[!UICONTROL 共享]** | 共享所选批注。 在&#x200B;**[!UICONTROL 共享组件]**&#x200B;对话框中，您可以![搜索](/help/assets/icons/Search.svg) *搜索个人或组*，也可以选择&#x200B;**[!UICONTROL 组织]**&#x200B;或&#x200B;**[!UICONTROL 组]**。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存所选批注的共享详细信息。 有关更多详细信息，请参阅[共享注释](#share-annotations)。 |
 | ![删除](/help/assets/icons/Delete.svg) **[!UICONTROL 删除]** | 删除所选注释。 系统会提示您进行确认。 |
 | ![编辑](/help/assets/icons/Edit.svg)**[!UICONTROL 重命名]** | 重命名单个选定的注释。 选中后，可以内联重命名注释。 |
 | ![副本](/help/assets/icons/Copy.svg) **[!UICONTROL 副本]** | 复制所选注释。 创建具有相同名称和后缀的新注释（复制） |
@@ -69,7 +69,7 @@ ht-degree: 6%
 
 ### 过滤器面板
 
-您可以使用![筛选器](/help/assets/icons/Filter.svg) **[!UICONTROL 筛选器]**&#x200B;左侧面板筛选批注➍。 过滤器面板显示过滤器的类型和遵循过滤器的注释数。 选择![筛选器](/help/assets/icons/Filter.svg)以切换筛选器面板的显示。
+您可以使用&#x200B;**[!UICONTROL 筛选器]**&#x200B;左侧面板筛选批注➍。 过滤器面板显示过滤器的类型和遵循过滤器的注释数。 选择![筛选器](/help/assets/icons/Filter.svg)以切换筛选器面板的显示。
 
 要筛选筛选器列表，请执行以下操作：
 
