@@ -3,12 +3,10 @@ description: 历程画布概述
 title: 历程画布
 feature: Visualizations
 role: User
-hide: true
-hidefromtoc: true
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 5d65f2cee34741d985ae7b85ad62f65a68c6289a
+source-git-commit: c42858908aa8e73c5f3b622b9911ff9e9724f2dc
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1318'
 ht-degree: 2%
 
 ---
@@ -35,7 +33,7 @@ ht-degree: 2%
 
 ## 潜在见解
 
-以下是历程画布可帮助提供的分析类型的一些示例。 您可以选择这些见解是基于数据视图中的所有人员还是基于历程的所有开始者。
+以下是历程画布可帮助提供的分析类型的一些示例。 您可以选择这些见解是基于数据视图中的所有人员、所有开始历程的人员还是历程之前节点的所有人员。
 
 **流过**
 
@@ -47,7 +45,7 @@ ht-degree: 2%
 
 **流失**
 
-* 人员最常退出旅程的旅程点（节点）
+* 人员最常退出旅程的点（节点）（从未到达任何紧接的后续节点）
 
 **其他**
 
