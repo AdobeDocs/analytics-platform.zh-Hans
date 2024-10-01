@@ -3,7 +3,7 @@ title: 产品使用情况概述
 description: 查看有关贵组织如何使用Customer Journey Analytics的见解和报表。
 hide: true
 hidefromtoc: true
-source-git-commit: 5c18fd78a71ddffef62dc3ac69f1abc3b42bddda
+source-git-commit: 8f2a340f59d8cdf97a5309ec20dc36f49b8f1129
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 7%
@@ -11,6 +11,8 @@ ht-degree: 7%
 ---
 
 # 产品使用情况概述
+
+{{release-limited-testing}}
 
 产品使用情况使贵组织能够查看有关贵组织如何使用Customer Journey Analytics的分析数据。 它适用于使用Customer Journey Analytics的所有组织。 启用后，将自动为您创建并关联以下Adobe Experience Platform组件：
 

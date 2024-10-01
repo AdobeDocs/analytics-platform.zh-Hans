@@ -3,16 +3,18 @@ title: 产品使用情况选择退出设置
 description: 管理组织中各个用户的选择退出设置。
 hide: true
 hidefromtoc: true
-source-git-commit: 5c18fd78a71ddffef62dc3ac69f1abc3b42bddda
+source-git-commit: 8f2a340f59d8cdf97a5309ec20dc36f49b8f1129
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
 
 # 产品使用情况选择退出设置 {#product-usage-opt-out-settings}
 
-_选择退出设置_&#x200B;页面允许您从产品使用情况跟踪中排除或重新包含组织内的用户。
+{{release-limited-testing}}
+
+_选择退出设置_&#x200B;页面允许您从产品使用情况跟踪中排除或重新包含组织内的用户。 它仅对产品管理员可见。
 
 **Customer Journey Analytics** > **[!UICONTROL 工具]** > **[!UICONTROL 产品使用情况]** > **[!UICONTROL 选择退出设置]**
 
