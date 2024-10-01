@@ -3,68 +3,94 @@ description: 通过筛选单个量度，可在同一报表中比较量度。
 title: 过滤指标
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 65eafd65358d9370b452338ce1036e59b3c69d1a
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 53%
+source-wordcount: '487'
+ht-degree: 1%
 
 ---
 
-# 筛选量度
+# 过滤指标
 
-在计算量度生成器中，可在量度定义中应用筛选器。如果要推导新量度以便在分析中使用，则这样做很有帮助。请记住，可通过筛选器生成器更新筛选器定义。如果作出了更改，则筛选器将在任何应用它的地方自动更新，其中包括它是计算量度定义的一部分的情况。
+在[计算量度生成器](cm-build-metrics.md#definition-builder)中，您可以在量度定义中应用筛选器。 如果要在分析中为数据子集使用量度，应用过滤器会很有帮助。
 
-![国家/地区=德国和独特访客的过滤器的摘要和定义](assets/german-visitors.png)
+>[!NOTE]
+>
+>筛选器定义已通过[筛选器生成器](/help/components/filters/filter-builder.md)更新。 如果您对过滤器进行了更改，则无论何时使用该过滤器，都会自动更新该过滤器，其中包括该过滤器是否为计算指标定义的一部分。
+>
 
-## 创建筛选量度 {#create}
+您希望比较与您的品牌互动的德国人员与德国以外人员的量度。 因此，您可以回答类似下面的问题：
 
-假设我们要比较“德国访客”筛选器与“国际访客”筛选器的不同之处。您可以创建指标为您提供如下分析：
+1. 有多少德国和国际人士访问您最受欢迎的[页面](#popular-pages)。
+1. 本月[总计](#totals)有多少德国和国际人员与您的品牌进行了在线互动。
+1. 访问您热门页面的德国人和国际人士的[百分比](#percentages)是多少？
 
-* 两个群组之间的内容浏览行为是如何比较的？（另一个示例为：两个筛选器之间的转化率对比如何？）
-* 浏览某些页面的德国人与国际人相比占总人数的百分比是多少？
-* 在这些不同的筛选器访问哪些内容方面，最大的区别是什么？
+请参阅以下部分，以说明过滤量度如何帮助您回答这些问题。 在适当的情况下，会参考更详细的文档。
 
-生成并保存名为“德国访客”的量度和名为“国际访客”的量度：
+## 受欢迎页面
 
-1. 在计算量度生成器中创建一个名为“德国访客”的临时过滤器，其中“国家/地区”等于“德国”。 将“国家/地区”维度拖到“定义”画布中，并选择&#x200B;[!UICONTROL **Germany**]&#x200B;作为值：
+1. [从名为`German people`的Workspace项目创建计算量度](cm-workflow.md)。
+1. 在[计算量度生成器](cm-build-metrics.md)中，[创建一个名为`Germany`的筛选器](/help/components/filters/filter-builder.md)，该筛选器使用您CRM数据中的“CRM国家/地区”字段来确定人员的来源。
 
-   显示国家/地区等于德国的![临时筛选器](assets/segment-from-dimension.png)
-
-   >[!NOTE]
+   >[!TIP]
    >
-   >也可在[筛选器生成器](/help/components/filters/create-filters.md)中这样做，但我们已通过在计算量度生成器中提供维度而简化了该工作流程。 “临时”表示该筛选器在左边栏的&#x200B;**[!UICONTROL 筛选器]**&#x200B;列表中不可见。 但是，您可以将鼠标悬停在该列表旁边的“i”图标上，然后单击&#x200B;**[!UICONTROL 设为公用]**。
+   >在计算量度生成器中，您可以使用组件面板直接创建过滤器。
+   >   
 
-1. 将“德国”筛选器拖到“定义”画布中，并将“独特访客”量度拖动到其中：
+   您的过滤器可能如下所示。
 
-   ![德国与独特访客相等的国家汇总和定义](assets/german-visitors.png)
+   ![筛选器德国](assets/filter-germany.png)
 
-1. 选择&#x200B;[!UICONTROL **保存**]&#x200B;以保存计算量度。
+1. 返回计算指标生成器，然后使用该过滤器更新计算指标。
 
-1. 在计算量度生成器中创建一个名为“国际访客”的临时过滤器，其中“国家/地区”不等于“德国”。
+   ![计算量度Germany](assets/calculated-metric-germany.png)
 
-   将“国家/地区”维度拖入“定义”画布，选择&#x200B;[!UICONTROL **Germany**]&#x200B;作为值，然后选择&#x200B;[!UICONTROL **does not equal**]&#x200B;作为运算符。
+对计算指标的国际版本重复上述步骤。
 
-1. 将独特访客指标拖动到其中。
+1. 从您的Workspace项目创建一个名为`International people`的计算指标。
+1. 在计算量度生成器中，创建一个名为`Not Germany`的筛选器，该筛选器使用您CRM数据中的CRM国家/地区字段来确定人员的来源。
 
-1. 选择&#x200B;[!UICONTROL **保存**]&#x200B;以保存计算量度。
+   您的过滤器应类似于。
 
-1. 在 Analysis Workspace 中，将&#x200B;**[!UICONTROL 页面]**&#x200B;维度拖动到自由格式表中，并将两个新的计算指标拖动到顶部且使它们彼此相邻：
+   ![筛选器德国](assets/filter-not-germany.png)
 
-   ![显示德国访客和国际访客页面维度的自由格式表](assets/workspace-pages.png)
+1. 返回计算指标生成器，然后使用该过滤器更新计算指标。
 
-以下是一段视频概述：
+   ![计算量度Germany](assets/calculated-metric-notgermany.png)
+
+
+1. 在Analysis Workspace中创建一个项目，该项目可让您查看德国和国际人士访问的页面。
+
+   ![Workspace自由格式表可视化图表，显示德语人员与国际人员](assets/workspace-german-vs-international.png)
+
+
+## 总计
+
+1. 根据总计创建两个新筛选器。 打开之前创建的每个筛选器，重命名筛选器，将&#x200B;**[!UICONTROL 人员]**&#x200B;的&#x200B;**[!UICONTROL 度量类型]**&#x200B;设置为&#x200B;**[!UICONTROL 总计]**，并使用&#x200B;**[!UICONTROL 另存为]**&#x200B;以使用新名称保存筛选器。 例如：
+
+   德国![总量度](assets/calculated-metric-germany-total.png)
+
+1. 在您的Workspace项目中添加一个新的自由格式表可视化图表，以显示当月的总页数。
+
+   ![Workspace自由格式表可视化图表，显示德语人员与国际人员总数](assets/workspace-german-vs-international-totals.png)
+
+
+## 百分比
+
+1. 创建两个新的计算量度，以根据您之前创建的计算量度计算百分比。
+
+   ![Workspace自由格式表可视化图表显示德语人员与国际总人员百分比](assets/calculated-metric-germany-total-percentage.png)
+
+
+1. 更新您的Workspace项目。
+
+   ![Workspace自由格式表可视化图表，显示德语人员与国际人员总数](assets/workspace-german-vs-international-totals-percentage.png)
+
+
++++ 以下视频演示了如何将过滤的计算量度用作无实施量度。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25407/?quality=12)
 
-## 占总指标的百分比 {#percent-total}
+{{videoaa}}
 
-对于上述示例，可更进一步比较您的筛选器与总人口。为此，请创建两个新量度，“德国访客总数的百分比”和“国际访客总数的百分比”：
-
-1. 将“德国（或国际）访客”筛选器拖到画布中。
-1. 将另一个“德国（或国际）访客”筛选器拖到下方。但这一次，请单击其配置（齿轮）图标以选择指标类型“合计”。格式应当为“百分比”。运算符应当为“除以”。您最终会获得以下指标定义：
-
-   ![国家/地区等于德国和独特访客总数](assets/cm_metric_total.png)
-
-1. 将此指标应用于您的项目：
-
-   ![包含页面和德国访客总数百分比的自由格式表](assets/cm_percent_total.png)
++++

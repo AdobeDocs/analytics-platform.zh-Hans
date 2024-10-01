@@ -4,10 +4,10 @@ description: 了解如何管理 Customer Journey Analytics 中的受众
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
 workflow-type: tm+mt
 source-wordcount: '285'
-ht-degree: 68%
+ht-degree: 64%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 68%
 
 | UI 设置 | 定义 |
 | --- | --- |
-| 隐藏/显示过滤器 | 允许您在左边栏中显示或隐藏以下过滤器： <ul><li>[!UICONTROL 数据视图]</li><li>[!UICONTROL 所有者]</li><li>[!UICONTROL 刷新频率]</li><li>[!UICONTROL 标记]</li></ul> |
+| 隐藏/显示过滤器 | 允许您在左侧面板中显示或隐藏以下筛选器： <ul><li>[!UICONTROL 数据视图]</li><li>[!UICONTROL 所有者]</li><li>[!UICONTROL 刷新频率]</li><li>[!UICONTROL 标记]</li></ul> |
 | [!UICONTROL 标题和描述] | 创建时提供给受众的标题和描述。 |
 | [!UICONTROL 数据视图] | 创建此受众的数据视图。 |
 | [!UICONTROL 受众规模] | 该受众中的总人数。 |

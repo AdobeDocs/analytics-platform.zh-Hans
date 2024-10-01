@@ -4,31 +4,32 @@ description: 了解过滤器创建用户界面。
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 feature: Filters
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 01f862997503cb36502145eddb47873bc7cb28fe
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 55%
+source-wordcount: '262'
+ht-degree: 3%
 
 ---
 
 # 创建过滤器
 
-您可以在Workspace中创建不同类型的过滤器，具体取决于这些过滤器需要实现的复杂程度、是否应将其仅应用于当前项目还是应用于所有项目等等。
+您可以在Customer Journey Analytics中创建不同类型的过滤器。  您选择的类型取决于过滤器需要达到的复杂程度，以及过滤器是应仅应用于当前Workspace项目，还是应用于所有项目。 可直接在Customer Journey Analytics的主界面中或在Workspace项目中工作时创建过滤器。
 
-以下是可用的过滤器类型摘要，其中包含有关如何创建这些过滤器类型的信息的链接：
+默认情况下，只有管理员可以创建过滤器。 用户有权查看过滤器，类似于用户查看其他组件的方式（例如注释、计算量度等）。
 
-| 过滤器类型 | 在何处创建？ | 适用于何处？ | 使用场合 |
-| --- | --- | --- | --- |
-| 组件列表过滤器 | 单击 +，这将会转到[过滤器生成器](/help/components/filters/filter-builder.md) | 您的所有工作区项目 | 对于更复杂的过滤器、顺序过滤器 |
-| 快速过滤器 | [快速过滤器生成器](/help/components/filters/quick-filters.md) | 仅用于项目，但可保存并添加到您的区段列表。 | 可用于临时单规则过滤器（使用拖放），或添加/编辑多个规则（通过单击“过滤器”图标） |
-| 流失分析中的过滤器 | Analysis Workspace 中的[流失可视化图表](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) | 单独的流失可视化图表 | 从接触点创建过滤器、添加过滤器作为接触点，并比较多个过滤器之间的关键工作流程 |
-| 基于计算量度的过滤器 | [计算指标生成器](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md) | 适用于个别计算指标 | 在您的量度定义中应用过滤器 |
+但是，管理员可以通过[Admin Console](/help/technotes/access-control.md#user-level-access)向用户授予&#x200B;**[!UICONTROL 编辑CJA Workspace访问权限]**&#x200B;中&#x200B;**[!UICONTROL 报告工具]**&#x200B;的&#x200B;**[!UICONTROL 过滤器创建]**&#x200B;权限。
 
-将过滤器应用于自由格式项目时，还可以使用其他几种方法：
+您可以通过以下方式创建过滤器：
 
-| 操作 | 描述 |
-| --- | --- |
-| 根据选定的内容创建过滤器 | 创建内联过滤器。此过滤器仅应用于打开的项目并且不能另存为Customer Journey Analytics过滤器。<p> 1. 选择要成为过滤器一部分的表行。2. 右键单击选定的内容。3. 单击&#x200B;*从所选内容创建过滤器*。 |
-| 工作区[!UICONTROL 组件] > [!UICONTROL 新过滤器] | 屏幕上会显示“过滤器生成器”。有关过滤器的更多信息，请参阅[过滤器生成器](/help/components/filters/filter-builder.md)。 |
-| “共享”>“共享项目”或“共享”>“策划项目数据” | 在[共享项目](/help/analysis-workspace/curate-share/share-projects.md)或[策划项目](/help/analysis-workspace/curate-share/curate.md)中，了解应用到项目中的筛选器如何用于给收件人共享的分析中。 |
-| 使用过滤器作为维度 | 以下视频演示了如何使用过滤器作为维度：  <p>[在 Analysis Workspace 中将过滤器用作维度](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html)</p> |
+![创建筛选器的方式](assets/create-filter.png)
+
+* ??在主界面中，选择&#x200B;**[!UICONTROL 组件]**&#x200B;并选择&#x200B;**[!UICONTROL 筛选器]**。 从[[!UICONTROL 筛选器]管理器](/help/components/filters/manage-filters.md)中选择![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**]。
+* ??在Workspace项目中，从“组件”左侧面板中选择![区段](/help/assets/icons/Segmentation.svg) **筛选器**&#x200B;上的![添加](/help/assets/icons/Add.svg)。
+* ??在Workspace项目中，从可视化图表的上下文菜单中，选择&#x200B;**[!UICONTROL 从所选内容创建过滤器]**。
+* ??在Workspace项目中，从菜单中选择&#x200B;**[!UICONTROL 组件]**，然后选择&#x200B;**[!UICONTROL 创建筛选器]**。
+* ??在Workspace项目中，使用快捷键&#x200B;**[!UICONTROL shift+cmd+e]** (macOS)或&#x200B;**[!UICONTROL shift+ctrl+e]** (Windows)。
+* ??选择![添加](/help/assets/icons/Add.svg)(在&#x200B;***在此处放置筛选器（或任何其他组件）***&#x200B;放置区域)。 此操作创建仅用于项目的过滤器。
+
+要定义新筛选器，请使用[筛选器生成器](/help/components/filters/filter-builder.md)。
+
+当您在Workspace项目中时，还可以使用[快速筛选器](/help/components/filters/quick-filters.md)快速创建筛选器。

@@ -4,10 +4,10 @@ title: 时间划分维度
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
 role: User
-source-git-commit: e3b80438f5bffc94efd24b80a93d2e4674906780
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '196'
-ht-degree: 61%
+ht-degree: 58%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 61%
 
 | 维度 | 示例值 |
 |--- |--- |
-| 每天时间 | 0 时至 23 时 |
-| 上午/下午 | 上午、下午 |
-| 每周时间 | 星期一、星期二、星期三、星期四、星期五、星期六、星期日 |
-| 工作日/周末 | 工作日、周末 |
-| 日期 | 1 日至 31 日 |
-| 月份 | 一月至十二月 |
-| 每年的某一天 | 第 1 天至第 366 天 |
-| 季度 | 第一季度、第二季度、第三季度和第四季度 |
+| **[!UICONTROL 小时]** | 0 时至 23 时 |
+| **[!UICONTROL 上午/下午]** | 上午、下午 |
+| **[!UICONTROL 每周时间]** | 星期一、星期二、星期三、星期四、星期五、星期六、星期日 |
+| **[!UICONTROL 工作日/周末]** | 工作日、周末 |
+| **[!UICONTROL 日期]** | 1 日至 31 日 |
+| **[!UICONTROL 月份]** | 一月至十二月 |
+| **[!UICONTROL 每年的某一天]** | 第 1 天至第 366 天 |
+| **[!UICONTROL 季度]** | 第一季度、第二季度、第三季度和第四季度 |

@@ -4,10 +4,10 @@ title: 查看数据词典
 feature: Components
 role: User, Admin
 exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
 workflow-type: tm+mt
 source-wordcount: '320'
-ht-degree: 79%
+ht-degree: 75%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 79%
 
 1. 前往包含要查看组件的 Analysis Workspace 项目。
 
-1. 选择 Analysis Workspace 左侧栏中的&#x200B;[!UICONTROL **数据词典**]&#x200B;图标。（[数据字典概述](/help/components/data-dictionary/data-dictionary-overview.md)中的“访问数据字典”一节中描述了访问数据词典的其他方法。）
+1. 选择Analysis Workspace左侧面板中的&#x200B;[!UICONTROL **数据字典**]&#x200B;图标。 （[数据字典概述](/help/components/data-dictionary/data-dictionary-overview.md)中的“访问数据字典”一节中描述了访问数据词典的其他方法。）
 
    显示“数据词典”窗口。
 

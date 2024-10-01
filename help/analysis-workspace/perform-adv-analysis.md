@@ -5,16 +5,16 @@ feature: Workspace Basics
 exl-id: 17f50618-54eb-4d60-9f5e-62aab9a3c49b
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 1564c91616015311393a643fe7fcecd429cf3a36
+source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 100%
+source-wordcount: '71'
+ht-degree: 73%
 
 ---
 
 # 执行高级分析
 
-在进行下面描述的高级分析之前，请确保您了解 [基本分析](/help/analysis-workspace/perform-basic-analysis.md)。
+开始构建高级分析报告和可视化图表之前（如下所述），请确保您了解[基本分析](/help/analysis-workspace/perform-basic-analysis.md)。
 
 高级分析利用[流量](/help/analysis-workspace/visualizations/c-flow/flow.md)图、[Attribution](/help/analysis-workspace/c-panels/attribution.md)、[流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)图和[维度细分](/help/components/dimensions/t-breakdown-fa.md)等功能。
 

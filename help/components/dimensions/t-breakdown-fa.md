@@ -6,43 +6,42 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 95%
+source-wordcount: '520'
+ht-degree: 58%
 
 ---
 
 # 在工作区中划分维度
 
-在分析工作区中划分维度和维度项目。
+您可以根据特定需求，以无限方式细分数据；使用相关量度、维度、过滤器、时间线和其他分析细分值构建查询。
 
-根据特定需求，按照不计其数的方式划分您的数据；使用相关的指标、维度、筛选条件、时间线以及其他分析细分值构建查询。
+1. 在[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)中，从一个或多个选定行的上下文菜单中，选择&#x200B;**[!UICONTROL 划分]** ![V形右](/help/assets/icons/ChevronRight.svg)。
 
-1. [创建项目](/help/analysis-workspace/home.md)，其中包含一个数据表。
-1. 在数据表中，右键单击某个行项目，然后选择&#x200B;**[!UICONTROL 划分]** > *`<item>`*。
+   ![显示从所选内容创建警报的步骤结果。](assets/breakdown.png)
 
-   ![显示从所选内容创建警报的步骤结果。](assets/fa_data_table_actions.png)
+1. 从子菜单中选择&#x200B;**[!UICONTROL Dimension]**、**[!UICONTROL 指标]**、**[!UICONTROL 筛选器]**&#x200B;或&#x200B;**[!UICONTROL 数据范围]**，然后选择一个项。
 
-   您可以跨选定的时段，按维度项目或者受众筛选条件来划分指标。此外，您还可以进一步深入到更精细的粒度级别。
+您可以跨选定的时段，按维度项目或者受众筛选条件来划分指标。此外，您还可以进一步深入到更精细的粒度级别。
 
-   >[!NOTE]
-   >
-   >数据表可显示的细分数量最多为 200 个。导出细分时此限制数量会增加。
+>[!NOTE]
+>
+>数据表可显示的细分数量最多为 200 个。导出细分时此限制数量会增加。
 
-**视频：分析工作区中的维度**
+## 按位置划分
 
->[!VIDEO](https://video.tv.adobe.com/v/23971)
+默认情况下，划分固定在静态行项目。 例如，假设您按营销渠道划分排名前3的“页面”维度项目（主页、搜索结果、结账）。 然后，您离开项目，两周后返回。再次打开项目时，排名前 3 的页面已更改，此时“主页”、“搜索结果”和“结账”页面成为排名第 4-6 的页面。默认情况下，营销渠道划分仍会显示在“主页”、“搜索结果”和“结账”下方，即使三者现在分别位于第4-6行中。
 
-**视频：划分维度**
+相反，**按位置**&#x200B;划分，始终划分排名前3的项目，而不管这些项目是什么。 回顾示例，当您重新打开项目时，营销渠道划分会绑定到表中排名前3的页面。 而不是主页、搜索结果和结帐，三者现在位于第4-6行中。 请参阅[行设置](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)如何配置此设置。
 
->[!VIDEO](https://video.tv.adobe.com/v/23969)
+
 
 ## 将归因模型应用于划分
 
-也可以对表中的任何划分应用归因模型。此归因模型可能与父列相同或不同。例如，您可以对“营销渠道”维度上的线性订单进行分析，但同时将 U 型订单应用于渠道中的特定跟踪代码。要编辑已应用于划分的归因模型，只需将鼠标悬停在划分模型上，然后单击&#x200B;**[!UICONTROL 编辑]**：
+也可以对表中的任何划分应用归因模型。此归因模型可能与父列相同或不同。例如，您可以对“营销渠道”维度上的线性订单进行分析，但同时将 U 型订单应用于渠道中的特定跟踪代码。要编辑已应用于划分的归因模型，请将鼠标悬停在划分模型上并选择&#x200B;**[!UICONTROL 编辑]**。
 
-![显示划分设置的订单归因比较](assets/breakdown_settings.png)
+![显示划分设置的订单归因比较](assets/breakdown-attribution.png)
 
 将归因模型应用到细分或者编辑它们时的预期行为如下：
 
@@ -52,7 +51,15 @@ ht-degree: 95%
 
 * 如果列树中已有归因，更改该归因仅影响您正在编辑的列。
 
-## 视频
++++ 查看说明划分的视频
+
+Analysis Workspace中的Dimension
+
+>[!VIDEO](https://video.tv.adobe.com/v/23971)
+
+Dimension划分
+
+>[!VIDEO](https://video.tv.adobe.com/v/23969)
 
 在分析工作区中将维度和量度添加到项目：
 
@@ -65,3 +72,7 @@ ht-degree: 95%
 按位置划分维度：
 
 >[!VIDEO](https://video.tv.adobe.com/v/24033)
+
+{{videoaa}}
+
++++

@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 0325b48e7144ac3e334ab57448b9adba9fcea21d
+source-git-commit: d0dbdcb6fa1402bce73584d1dd9165c1b3f00b33
 workflow-type: tm+mt
-source-wordcount: '4065'
-ht-degree: 71%
+source-wordcount: '4064'
+ht-degree: 70%
 
 ---
 
@@ -43,7 +43,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 有关向项目添加组件的文档 | 添加了有关如何 [将各种类型的组件添加到 Analysis Workspace 中的项目](/help/components/use-components-in-workspace.md)的一般信息。 |
 | 数据导出用例 | 一组新文章，介绍[数据导出用例](/help/use-cases/data-export/overview.md)以及如何使用Experience Platform和Customer Journey Analytics功能实施这些用例 |
 | 有关从 Adobe Analytics 升级到 Customer Journey Analytics 的新文档 | 对于从 Adobe Analytics 升级到 Customer Journey Analytics 的组织，需要考虑组织当前的 Adobe Analytics 实施和长期目标，有多种升级选项和许多注意事项需要牢记。<p>现提供新的文档资产来帮助您更好地理解：</p><ul><li>现有的各种升级路径</li><li>根据组织当前的 Adobe Analytics 实施情况，有哪些升级路径可用</li><li>每种升级路径的优缺点</li><li>每种升级路径的分步指导</li><li>处理历史数据的注意事项</li><li>等等！</li></ul><p>[开始升级到 Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)。</p> |
-| 更新了有关自定义日期范围的文档 | 更新了与 [创建自定义日期范围](/help/components/date-ranges/custom-date-ranges.md) 相关的屏幕截图和程序，以匹配当前的产品功能和设计。 |
+| 更新了有关自定义日期范围的文档 | 更新了与[示例日期范围](/help/components/date-ranges/custom-date-ranges.md)相关的屏幕截图和过程，以匹配当前产品功能和设计。 |
 | 有关Dimension的概述信息 | 添加了有关[维度](/help/components/dimensions/overview.md)的信息。 |
 | 源连接器的示例 | 添加了在描述如何[使用源连接器](/help/data-ingestion/sources.md#use-a-source-connector)摄取数据时可用的源连接器示例。 |
 | **2024 年 4 月** | |
@@ -141,7 +141,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 比较 Customer Journey Analytics 和 BI 解决方案 | 新增了有关 Customer Journey Analytics 与典型 BI 解决方案的[比较](../getting-started/cja-vs-bi.md)的文档。 |
 | 对 Audiences 文档的更新 | 有关[延迟注意事项](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#latency)的新章节。 |
 | 对 Audiences 文档的更新 | 在您创建受众后，Adobe [为每个新的 Customer Journey Analytics 受众创建一个 Experience Platform 流式区段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-Hans#after-audience-created)。 |
-| 工作区日历和日期范围 | 更新内容以描述相对日期范围、公式计算更新和日程表 UI 更改。请参阅[关于相对面板日期范围](/help/components/date-ranges/calendar.md#relative-panel-dates)。 |
+| 工作区日历和日期范围 | 更新内容以描述相对日期范围、公式计算更新和日程表 UI 更改。请参阅[关于相对面板日期范围](/help/components/date-ranges/overview.md#custom-date-ranges)。 |
 | 移动记分卡 | 新文档部分描述如何显示和隐藏比较日期范围。请参阅 Customer Journey Analytics 中的[显示比较日期范围](/help/mobile-app/create-scorecard.md#show-comparison-dates)。 |
 | **2023 年 1 月** | |
 | 排序和过滤表格 | 更新了[对表格进行筛选和排序](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)一文中的内容（包括添加过程和解释可用选项）。本文从“对表格进行分页、筛选和排序”更名而成。 |

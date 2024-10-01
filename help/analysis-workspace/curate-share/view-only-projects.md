@@ -5,10 +5,10 @@ title: 仅供查看的项目
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
 workflow-type: tm+mt
 source-wordcount: '242'
-ht-degree: 80%
+ht-degree: 79%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 80%
 
 仅查看项目中已禁用的交互包括：
 
-* 隐藏的左边栏
+* 隐藏的左侧面板
 * 面板日历日期范围。注意：如果要向收件人授予日历控制权，请添加[包含日期范围的下拉过滤器](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans)。
 * 自由格式过滤
 * 自由格式的可见行数

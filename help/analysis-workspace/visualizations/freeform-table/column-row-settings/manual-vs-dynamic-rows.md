@@ -4,14 +4,14 @@ description: 如何与表中的动态维度项和静态维度项交互
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 388042e24a7b9d33ac88e05a68689308e6258339
 workflow-type: tm+mt
 source-wordcount: '550'
-ht-degree: 81%
+ht-degree: 79%
 
 ---
 
-# 自由格式表中的动态维度项与静态维度项
+# 自由格式表中的动态和静态维度项目
 
 在自由格式表中，行和列包含各种组件值。这些值可能是动态的（随时间而改变），也可能是静态的（不随时间而改变），具体取决于您要构建的分析。
 

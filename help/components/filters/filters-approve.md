@@ -4,29 +4,26 @@ title: 批准过滤器
 feature: Filters
 exl-id: 3892ef54-3f24-4c7a-868f-f566efaea400
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 65eafd65358d9370b452338ce1036e59b3c69d1a
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 71%
+source-wordcount: '131'
+ht-degree: 3%
 
 ---
 
-# 批准过滤器 {#approve}
+# 批准过滤器
 
-您可以在过滤器管理器内设置一个工作流程，其中包含各种级别的申请和特定部门或组的批准过滤器，并与报表策略相一致。
+在[筛选器管理器](manage-filters.md)中，您可以批准和取消批准筛选器。 只有管理员可以批准过滤器。
 
-下面是如何将过滤器标记为已批准的方法：
+要批准过滤器，请执行以下操作：
 
-1. 在过滤器管理器中，选中“过滤器”标题左侧的复选框。
+1. 在[筛选器管理器](manage-filters.md)中，选择要批准的一个或多个筛选器。
+1. 从操作栏中选择![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 批准]**。 已批准的筛选器以![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)表示
 
-1. 单击过滤器管理任务栏中的 **[!UICONTROL 批准]**。
+要取消批准过滤器，请执行以下操作：
 
-1. 考虑将批准的过滤器与您的组织分享。
+1. 在[筛选器管理器](manage-filters.md)中，选择一个或多个要取消批准的筛选器。
+1. 从操作栏中选择![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 取消批准]**。
 
-1. 单击&#x200B;**[!UICONTROL 确定]**。
 
-   请注意列表中过滤器旁的批准图标：
-
-   ![筛选器管理器显示超过100的订单已批准共享。](assets/seg_approved.png)
-
-1. 您也可以通过单击&#x200B;**[!UICONTROL 取消批准]**&#x200B;来取消批准已批准的过滤器。
+您可以按批准的筛选器筛选筛选器列表。 从![筛选器](/help/assets/icons/Filter.svg)**[!UICONTROL 筛选器]**&#x200B;面板中选择&#x200B;**[!UICONTROL 其他筛选器]**&#x200B;并选择&#x200B;**[!UICONTROL 已批准]**。 有关详细信息，请参阅[筛选筛选器列表](/help/components/filters/filters-filter.md)。

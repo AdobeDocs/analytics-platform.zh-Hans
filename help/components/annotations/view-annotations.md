@@ -4,10 +4,10 @@ description: 如何在工作区中查看注释。
 role: User
 feature: Components
 exl-id: c0e4fb37-b20c-463c-b29a-310ca3adb2c7
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: e04f07ba674ed55c53888d5c606ecb4d4aa5ffe5
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 100%
+source-wordcount: '214'
+ht-degree: 21%
 
 ---
 
@@ -17,26 +17,16 @@ ht-degree: 100%
 
 ## 在折线图或表中查看注释
 
-| 日期 | 外观 |
+| 可视化图表<br/>类型 | 描述 |
 | --- | --- |
-| **一天** | ![突出显示注释的可视化折线图](assets/single-day.png)<p>将鼠标悬停在注释上时，可以查看其详细信息，通过选择钢笔图标进行编辑，或者删除注释：<p> ![注释详细信息以及编辑或删除注释的选项。](assets/hover.png) |
-| **日期范围** | 图标会发生变化，当您将鼠标悬停在它上面时，会显示日期范围。<p>![日期范围注释图标](assets/multi-day.png)<p>在折线图中选择注释时，将显示注释元数据，您可以进行编辑或删除：![](assets/multi-hover.png)<p>在表中，会在日期范围内的每个日期上显示一个图标。<p>![](assets/multi-day-table.png) |
-| **重叠注释** | 在有多个注释与其关联的日期上，图标将为灰色。<p>![重叠注释的详细信息  ](assets/grey.png)<p>将鼠标悬停在灰色图标上时，将显示所有重叠的注释：<p>![](assets/overlap.png) |
+| **行&#x200B;**<br/>**一天** | 在折线图可视化图表中选择![注释](/help/assets/icons/Annotate.svg)时，您会看到包含注释详细信息的弹出窗口。<br/>![注释一天](assets/annotation-single-day.png)<br/>要在[注释生成器](create-annotations.md#annotation-builder)中编辑注释，请选择![编辑](/help/assets/icons/Edit.svg)。 要删除该注释，请选择![删除](/help/assets/icons/Delete.svg)。 |
+| **行&#x200B;**<br/>**日期范围** | 选择![注释范围](/help/assets/icons/AnnotateRange.svg)时，您会看到一个包含注释详细信息的弹出窗口，并在底部显示一行表示日期范围。<br/>![注释范围](assets/annotation-range.png)要在[注释生成器](create-annotations.md#annotation-builder)中编辑注释，请选择![编辑](/help/assets/icons/Edit.svg)。 要删除该注释，请选择![删除](/help/assets/icons/Delete.svg)。 |
+| **自由格式表** | 在自由格式表中，您可以通过可视化图表右上角的注释按钮访问所有注释。 选择![注释](/help/assets/icons/Annotate.svg)查看所有注释的（滚动列表）。<br/>![批注表](assets/annotations-table.png)<br/>对于每个批注，您可以选择![编辑](/help/assets/icons/Edit.svg)在[批注生成器](create-annotations.md#annotation-builder)中编辑批注，选择![删除](/help/assets/icons/Delete.svg)删除该批注。 |
 
 {style="table-layout:auto"}
 
-## 在 .pdf 文件中查看注释
+## 在PDF中查看注释
 
-由于您无法将鼠标悬停在 .pdf 文件中的图标上，因此该文件（导出后）在面板底部提供了注释或说明。示例如下：
+以PDF形式下载项目或以PDF形式发送项目时，注释摘要部分会在PDF中摘要。
 
-![显示注释说明的 .pdf 文件的高亮显示视图。](assets/ann-pdf.png)
-
-## 查看带有非趋势数据的注释
-
-有时，注释与非趋势数据一起显示，但与特定维度相关联。在这种情况下，此类注释仅显示在右下角的摘要注释中。示例如下：
-
-![](assets/non-date.png)
-
-摘要图表出现在角落的所有可视化类型中，而不仅仅是非趋势自由表格和摘要数字中。它也出现在例如 [!UICONTROL Donut]、[!UICONTROL Flow]、[!UICONTROL Fallout]、[!UICONTROL Cohort] 等可视化中。
-
-![可视化摘要图表](assets/ann-summary.png)
+![显示注释说明的 .pdf 文件的高亮显示视图。](assets/annotations-pdf.png)

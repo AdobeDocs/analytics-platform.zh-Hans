@@ -3,23 +3,20 @@ description: 描述如何在计算量度管理器中复制计算量度
 title: 复制计算量度
 feature: Calculated Metrics
 exl-id: b1cc1171-aebf-4b97-99db-9bbcef5ea9d7
-source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
+source-git-commit: 1907d94a0f53ee65a3839d879da6c06092f75e0f
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '100'
 ht-degree: 6%
 
 ---
 
 # 复制计算量度
 
-创建新计算量度时，复制与您要创建的计算量度接近的现有计算量度有时比较轻松，然后修改您复制的版本。
+创建新计算指标时，您不必从头开始。 您可以复制现有的计算指标（该指标已提供了可从中开始的适当定义），然后修改所复制的版本。
 
-要在计算量度管理器中复制计算量度，请执行以下操作：
+要在[计算量度管理器](cm-manager.md)中复制计算量度，请执行以下操作：
 
-1. 在Customer Journey Analytics中，选择&#x200B;**[!UICONTROL 组件]**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL 计算量度]**。
+1. 在[计算量度管理器](cm-manager.md)中，选择要复制的一个或多个计算量度。
+1. 从操作栏中选择![复制](/help/assets/icons/Copy.svg) **[!UICONTROL 复制]**。
 
-1. 在计算指标管理器中，选择要复制的计算指标。
-
-   此时将显示计算量度管理工具栏。
-
-1. 选择&#x200B;**[!UICONTROL 复制]**。
+新计算量度是使用相同的名称和后缀`(Copy)`创建的。

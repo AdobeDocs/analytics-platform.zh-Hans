@@ -4,19 +4,19 @@ description: 了解过滤器的用途以及如何创建简单的过滤器。
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '1172'
-ht-degree: 23%
+source-wordcount: '1386'
+ht-degree: 8%
 
 ---
 
 
-# 过滤器概述 {#overview}
+# 过滤器概述
 
-Customer Journey Analytics 让您可以构建、管理、共享强大集中的受众过滤器，并将这些过滤器应用到您的报表。过滤器让您可以根据用户特征或交互情况来识别用户子集。 过滤器是指正式设计编码的受众洞察，您可以根据自己的特定需求来构建，然后验证、编辑并与其他团队成员共享。
+Customer Journey Analytics 让您可以构建、管理、共享强大集中的受众过滤器，并将这些过滤器应用到您的报表。过滤器让您可以根据用户特征或交互情况来识别人员、会话或事件的子集。 过滤器是指正式设计编码的受众洞察，您可以根据自己的特定需求来构建，然后验证、编辑并与其他团队成员共享。
 
-筛选器可以基于
+过滤器可以基于：
 
 - 属性（浏览器类型、设备、访问次数、国家/地区、性别）、
 - 交互（促销活动、关键词搜索、搜索引擎）、
@@ -24,36 +24,63 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 - 自定义变量（表单字段、定义的类别、客户ID）、
 - 和其他标准。
 
-您可以在过滤器生成器中构建和保存过滤器，或从“流失”可视化图表（在工作区中）生成过滤器。此外，过滤器可以一起用作堆叠过滤器。
+有关可用于创建筛选器的各种选项，请参阅[创建筛选器](/help/components/filters/create-filters.md)。 然后，在[筛选器生成器](filter-builder.md)中生成、修改和保存筛选器的定义。 或者，您可以使用[快速筛选器生成器](quick-filters.md)创建快速筛选器。 此外，您还可以从Workspace中的可视化图表生成过滤器，例如使用[流失](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md#context-menu)可视化图表。
 
-筛选器包括[筛选器生成器](/help/components/filters/filter-builder.md)和[筛选器管理器](/help/components/filters/manage-filters.md)，前者用于构造筛选器并运行预测试，后者用于在您的组织内收集、标记、批准、设置安全和共享筛选器。
+您使用[筛选器管理器](manage-filters.md)管理筛选器。
 
-每个 IMS 组织可创建的最大过滤器数为 50000。
+## 规划过滤器
 
-## 过滤器类型 {#types}
+尤其是作为管理员，正确规划过滤器可以提高使用过滤器的机会。 规划过滤器时，请考虑以下事项：
 
-有关可用筛选器类型以及如何创建这些类型的信息，请参阅[创建筛选器](/help/components/filters/create-filters.md)。
+- **受众**：谁将使用您的筛选器？ 确保您提供准确的过滤器描述，以便受众了解：
+   - 此过滤器有何用途？
 
-## 顺序过滤器 {#sequential}
+   - 此过滤器应何时使用？
 
-通过顺序过滤器，您可以根据导航（网站中的页面查看次数、与移动应用程序中场景的交互或使用机顶盒上的菜单）来识别人员。 顺序过滤器提供已定义操作和交互的过滤器，帮助您识别人员喜欢和避开的内容。 生成顺序过滤器时，使用THEN运算符来定义和排序人员导航。
+- **作用域**：哪个[筛选器容器](#filter-containers)最能代表您想要的数据？ 尽可能使用最小的容器。
+
+- **组件**：决定筛选器定义中要包含哪些组件，以及条件应针对哪些值进行验证。
+
+- **进程**：考虑您的筛选器的批准进程。 Customer Journey Analytics中没有审批工作流，但您仍然可以组织流程以确定是否审批过滤器。
+
+- **模块性**：定义考虑到模块性的筛选器。 因此，您的筛选器的用户可以轻松[栈叠筛选器](filter-builder.md#stack-filters)以创建强大的新筛选器。
+
+
+## 过滤器类型
+
+您可以创建三种类型的过滤器：
+
+### 快速过滤器
+
+快速筛选器允许您轻松地浏览给定Workspace项目中的数据，而无需在[筛选器生成器](/help/components/filters/create-filters.md)中创建筛选器。 可直接在Workspace界面中定义过滤器。 有关详细信息，请参阅[快速筛选器](quick-filters.md)。
+
+### 常规过滤器
+
+常规过滤器允许您根据一个或多个条件识别数据（人员、会话、事件）。 如果存在多个条件，则可以使用逻辑运算符（如And和Or）来进一步定义过滤器。 您可以使用容器对条件进行分组，并构建更复杂的过滤器。 有关详细信息，请参阅[筛选器生成器](filter-builder.md)。
+
+### 顺序过滤器
 
 >[!IMPORTANT]
 >
 >您必须具有&#x200B;**Select**&#x200B;包才能创建跨渠道顺序过滤器。 如果您不确定您拥有哪个Customer Journey Analytics包，请联系您的管理员。
 
-示例如下：
+通过顺序过滤器，您可以根据导航（网站中的页面查看次数、与移动应用程序中场景的交互或使用机顶盒上的菜单）来识别数据（人员、会话、事件）。 顺序过滤器可帮助您识别（例如）一个人喜欢什么，以及一个人避开什么。 可以使用Then逻辑运算符定义顺序过滤器。 有关详细信息，请参阅[顺序筛选器](seg-sequential-build.md)。
 
-| 会话一 | 第二场会议 | 第三场会议 |
+
+<!--
+An example of a complex sequential filter if you want to find the persons that 
+
+| Session One | Session Two | Session Three |
 | --- | --- | --- |
-| 该人员转到主登陆页面A，排除促销活动页面B，然后查看产品页面C。 | 该人员再次转到主登陆页面A，排除促销活动页面B，再次转到产品页面C，然后转到新页面D。 | 人员进入并按照第一和第二次访问中的相同路径操作，然后排除页面F，直接转到目标产品页面G。 |
+| The person went to the main landing page A, excluded the campaign page B, and then viewed the Product page C.| The person again went to the main landing page A, excluded the campaign page B, and went again to the Product page C, and then to a new page D. | The person entered and followed that same path as in the first and second visits, then excluded page F to go directly to a targeted product on page G. |
+-->
 
 ## 过滤器容器 {#containers}
 
-过滤器使用嵌套容器模型，并基于人员、会话和事件级别的层次结构。 您可以使用嵌套的容器，根据各容器之间和容器内的规则定义人员属性和操作。
+过滤器使用嵌套容器模型，并基于人员、会话和事件级别的层次结构。 利用嵌套的容器，可定义容器之间和容器内的条件。
 
 
-<table style="table-layout: fixed; border: none;">
+<table style="table-layout: fixed; border: none;" width="100%">
 
 <tr>
 <td style="background-color: #E5E4E2;" colspan="3" width="200" height="100"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg"/> 人员</td>
@@ -72,53 +99,104 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 </table>
 
 >[!NOTE]
->“人员”容器以前称为“访客”容器。“会话”容器以前称为“访问”容器，“事件”容器以前则称为“点击”容器。
+>
+>对于Adobe Analytics用户：
+> 
+> - 在Adobe Analytics中，**人员**&#x200B;容器称为&#x200B;**访客**&#x200B;容器。
+> - **会话**&#x200B;容器在Adobe Analytics中称为&#x200B;**访问**&#x200B;容器。
+> - **Event**&#x200B;容器在Adobe Analytics中称为&#x200B;**点击**&#x200B;容器。
+>
 
-过滤器根据人员的属性或与您的网站、移动设备应用程序或从中收集数据的其他设备类型的交互来设置条件以过滤人员。 要在过滤器中设置条件，您需要设置规则以根据人员特征和/或导航特征来过滤人员。 要进一步划分人员数据，您可以根据每个人员的特定访问和/或页面查看点击、屏幕点击、机顶盒上的菜单选项进行过滤。 但也会根据您从CRM或忠诚度系统中摄取的属性进行过滤。 过滤器生成器提供了一个简单的架构来生成这些子集，并将规则应用为嵌套的分层“人员”、“会话”或“事件”容器。
+过滤器设置条件以根据条件过滤人员、会话或事件。 例如，根据人员特性和导航特征筛选人员的条件。 要进一步划分数据，可以对特定会话、页面查看事件、屏幕点击、机顶盒上的菜单选项等内容进行过滤。 但也会根据您从CRM或忠诚度系统中摄取的属性进行过滤。 [筛选器生成器](/help/components/filters/filter-builder.md)提供了一个简单的界面来生成这些子集，并在嵌套的分层“人员”、“会话”或“事件”容器中应用条件。
 
-过滤器生成器中使用的容器架构将“人员”定义为最外部的容器。 容器包含特定于某个人员的总体数据，该数据在机顶盒上的访问和页面查看、移动应用程序屏幕或菜单屏幕之间有效。 通过嵌套的“会话”容器可设置规则来根据会话对人员的数据进行划分，通过嵌套的“事件”容器可根据各个交互对人员信息进行划分。 通过每个容器，可跨人员的历史记录和按会话划分的交互进行报告，或者对各个体验事件进行划分。
+[筛选器生成器](/help/components/filters/filter-builder.md)中使用的容器架构将“人员”定义为最外部的容器。 容器包含特定于人员的所有会话和事件（如页面查看、移动应用程序屏幕或机顶盒上的菜单屏幕）数据。 通过嵌套的“会话”容器，可设置规则以根据会话划分人员数据。 通过嵌套的事件容器，可根据各个交互划分人员信息。 通过每个容器，可跨人员的历史记录和按会话划分的交互进行报告，或者对各个事件进行划分。
 
-### 人员容器 {#person}
+### 人员容器
 
-人员容器包括指定时间段内人员的每次访问和页面查看、移动设备应用程序屏幕、机顶盒或主机游戏交互。 基本上，每个Experience Event都是您在Customer Journey Analytics连接中定义的数据集的一部分。 人员级别的过滤器会返回符合条件的页面查看次数、移动设备应用程序或机顶盒屏幕。 加上同一人在线上和线下渠道的所有其他交互（且仅受定义的日期范围的约束）。 作为定义最为广泛的容器，在人员容器级别生成的报表可返回跨所有访问的页面查看次数、移动设备应用程序屏幕等，并允许您生成多访问跨渠道分析。 因此，根据定义的日期范围，人员容器是最容易更改的。
+人员容器包括符合容器中指定条件的人员的每个会话和每个事件。 当您使用简单条件（如`Page Name equals Checkout`）定义过滤器时，“人员”容器解析为：
+
+- 所有访问过名为`Checkout`的页面的人员。
+- 所有这些人员的会议。
+- 这些人员的所有事件数据。
+
+作为定义范围最广的容器，在人员容器级别生成的报表将返回符合筛选条件的所有人员的事件和会话。 根据定义的日期范围，人员容器是最容易更改的。
 人员容器可以包含基于人员整体历史记录的值：
 
-- 首次购买间隔天数
-- 原始登录页面或移动设备应用程序主屏幕
-- 原始反向链接域名
+- 距首次购买间隔的天数。
+- 原始登入页面或移动设备应用程序主屏幕。
+- 原始反向链接域名。
 
-### 会话容器 {#session}
+### 会话容器
 
-通过会话容器可以识别页面交互或移动设备应用程序交互、促销活动或特定会话的转化。 会话容器是最常使用的容器，因为每当符合规则，会话容器便会立即捕获整个访问会话的行为。 通过会话容器，还可定义在生成和应用过滤器时要包含或排除的会话。 它可以帮助您回答以下问题：
+通过会话容器可以识别页面交互或移动设备应用程序交互、促销活动或特定会话的转化。 会话容器是最常使用的容器，因为每当符合规则，会话容器就会捕获整个会话的行为。 通过会话容器，还可定义在生成和应用过滤器时要包含或排除的会话。  当您使用简单条件（如`Page Name equals Checkout`）定义过滤器时，会话容器解析为：
 
-- 有多少会话同时使用 Web 和呼叫中心数据源？
+- 访问名为`Checkout`的页面的所有会话。
+- 这些会话的所有事件数据。
+
+会话容器可以帮助您回答以下问题：
+
+- 有多少场会议同时涉及网络和呼叫中心数据源？
 - 哪些页面有助于成功转化为销售？
 
-会话包含的值以每次会话的发生次数为基础：
+会话容器包含的值以每个会话的事件为基础：
 
-- 会话类型
-- 登录页面
-- 回访频度
-- 参与率指标
-- 线性分配的指标
+- 会话类型。
+- 进入页面。
+- 回访频度。
+- 参与率量度。
+- 线性分配的指标。
 
-通过Customer Journey Analytics中的数据视图，可决定会话的持续时间以及应创建新会话的时间。 例如，您可以根据用户每次启动您的移动设备应用程序时定义一个新的移动设备应用程序会话。 有关详细信息，请参阅[会话设置](/help/data-views/session-settings.md)。
+通过Customer Journey Analytics中的数据视图，可决定会话的持续时间，以及应何时创建新会话。 例如，您可以根据用户每次启动您的移动设备应用程序时定义一个新的移动设备应用程序会话。 有关详细信息，请参阅[会话设置](/help/data-views/session-settings.md)。
 
-### 事件容器 {#event}
+### 事件容器
 
-事件容器定义要在过滤器中包含或排除的页面、移动应用程序或其他类型事件。 这是可用容器中最窄的一个，可用于识别条件为true的移动应用程序中的特定点击、页面查看、点按按钮的情况。 事件容器允许您查看单个跟踪代码，或隔离移动应用程序特定区域中的行为。 当出现某个行为时，您也可能需要准确查明某个特定值，比如下订单时的市场营销渠道。
+事件容器定义要在过滤器中包含或排除的页面、移动应用程序或其他类型事件。 这是可用容器中最窄的一个，可用于识别条件为true的移动应用程序中的特定点击、页面查看、点按按钮的情况。 事件容器允许您查看单个跟踪代码，或隔离移动应用程序特定区域中的行为。 您可能还希望在发生操作时查明特定值，例如下订单时的营销渠道。 当您使用简单条件（如`Page Name equals Checkout`）定义过滤器时，事件容器解析为：
 
-事件容器包含基于值的单页划分，用于：
+- 页面名称等于`Checkout`的所有页面查看事件。
+
+事件容器包含基于值的单页面划分，用于：
 
 - 产品
 - 列表属性
 - 列表维度
 - 促销维度（在事件上下文中）
 
-## 现成的过滤器模板 {#template}
 
-传统Analytics提供大量现成的模板和计算量度。 其中许多在Customer Journey Analytics中不适用，或者必须重命名或重新创建。 其他则依赖于Customer Journey Analytics中的上下文感知变量的解决方案。
+### 逻辑组容器
 
-| 过滤器名称 | 描述 |
+使用逻辑组，您可以将条件分组到单个顺序过滤器检查点中。 作为序列的一部分，在标识为[!UICONTROL 逻辑组]的容器中定义的逻辑将在任何先前顺序检查点之后和任何后续顺序检查点之前进行评估。 有关详细信息，请参阅[逻辑组](seg-sequential-build.md#logic-group)。
+
+### 嵌套容器
+
+在其他容器中创建容器时，您实际上是在过滤器中创建过滤器。 以下逻辑将应用于嵌套容器：
+
+1. 确定使用最外部的容器包含哪些数据。在报表中，任何与此外部规则不匹配的数据都将被丢弃。
+2. 将嵌套筛选器定义应用于剩余数据。 嵌套筛选器定义不适用于第一个定义放弃的任何数据。
+3. 重复以上操作直到计算完所有嵌套的容器过滤器定义为止。 剩余的数据随后包含在结果中并用于报表。
+
+
+<!--
+You can use nesting between containers and between conditions within a container. Here is what you can nest in each container:
+
+| Container | What container you can nest inside |
+| Event | Only event conditions |
+| Session | Session
+
+
+## Out-of-the-box filter template {#template}
+
+Traditional Analytics comes with numerous out-of-the-box templates and calculated metrics. Many of them do not apply in Customer Journey Analytics, or have to be renamed or recreated. Others depend on a solution for context-aware variables in Customer Journey Analytics.
+
+| Filter Name | Description |
 | --- | --- |
-| 所有数据 | “所有数据”是一个必需过滤器，当有指标添加到自由格式表的行时，即动态地将此过滤器添加到报表。 |
+| All Data | All Data is a required filter that gets dynamically added to reporting when a metric is added to the row of a Freeform table. |
+-->
+
+>[!MORELIKETHIS]
+>
+>[创建筛选器](create-filters.md)
+>[筛选器生成器](filter-builder.md)
+>[快速筛选器](quick-filters.md)
+>[顺序筛选器](seg-sequential-build.md)
+>[管理筛选器](manage-filters.md)
+>

@@ -1,24 +1,21 @@
 ---
-description: 了解如何从文件夹中删除项目
+description: 了解如何从文件夹重命名项目
 keywords: Analysis Workspace
 title: 从文件夹中删除项目
 feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 role: User
-source-git-commit: 7ba5a1d4d9f93cd15b76d26a880abe723120de72
+source-git-commit: 6cf6fa977a2c5dee28dcfe6f9446d294a9d9fd0f
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 100%
+source-wordcount: '157'
+ht-degree: 94%
 
 ---
 
-# 从文件夹中删除项目
+# 删除项目
 
-要从文件夹中删除一个项目，可将该项目移至另一位置或删除该项目。
+<!-- Is this article still needed -->
 
->[!NOTE]
->
->当管理员将某个项目移至公司文件夹时，即使原有的共享权限受限，也将与所有人共享该文件夹。当管理员将某个项目移出公司文件夹时，将遵循原有或以前的共享权限。
 
 ## 移动项目 {#move-project-in-folder}
 

@@ -1,73 +1,57 @@
 ---
-description: 了解如何在 Workspace 中添加文件夹
+description: 了解如何在Workspace中添加或移动文件夹
 keywords: Analysis Workspace
-title: 在 Workspace 中添加文件夹
+title: 添加或移动文件夹
 feature: Workspace Basics
 exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 98a92fff2a0fae7ad3e6d94e61f8babed3c11eb7
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 100%
+source-wordcount: '257'
+ht-degree: 22%
 
 ---
 
-# 将项目添加到文件夹
+# 将项目添加或移动到文件夹
 
-可在表格视图中或从文件夹内将项目添加到文件夹。
+您可以直接从[项目列表](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list)添加项目或将项目移动到文件夹中。
 
-## 从表格视图中 {#table-view}
+## 将项目移至文件夹
 
-从主页上的表格视图中将项目添加到文件夹。
+>[!NOTE]
+>
+>当管理员将项目移至公司文件夹时，即使现有共享权限受限，也将与所有人共享该文件夹。 当管理员将项目移出公司文件夹时，将重新应用现有的共享权限。
+>
 
-1. 选择一个或多个要添加到文件夹的项目。
+要将项目从[项目列表](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list)移至文件夹，请执行以下操作：
 
-   ![显示选定的三个项目的项目表格视图。](/help/analysis-workspace/build-workspace-project/assets/move-tv-selected.png)
+1. 选择![SelectBox](/help/assets/icons/SelectBox.svg)一个或多个要移至文件夹的项目。
 
-1. 选择&#x200B;**移至**。随后将显示“选择文件夹”对话框。
+1. 从可能的[操作列表中选择![FolderAddTo](/help/assets/icons/FolderAddTo.svg)**移至**](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions)。 将显示&#x200B;**[!UICONTROL 选择文件夹]**&#x200B;对话框。
 
-1. 从下拉菜单中选择一个文件夹名称。
+1. 从&#x200B;**[!UICONTROL 文件夹]**&#x200B;下拉菜单中选择一个文件夹名称。 下拉菜单可让您遍历文件夹层次结构以在任何级别选择子文件夹。
 
-   ![显示下拉菜单和可用子文件夹的选择文件夹视图。](/help/analysis-workspace/build-workspace-project/assets/move-select-folder.png)
+   ![显示下拉菜单和可用子文件夹的选择文件夹视图。](/help/analysis-workspace/build-workspace-project/assets/add-projects.png)
 
-1. 单击&#x200B;**添加**。
+1. 选择&#x200B;**[!UICONTROL 移动]**。
 
-   ![单击“添加”。](/help/analysis-workspace/build-workspace-project/assets/move-add.png)
 
    所选的项目即添加到该文件夹。
 
-   ![显示已移动的三个项目的选定的子文件夹。](/help/analysis-workspace/build-workspace-project/assets/move-projects-added.png)
 
-   Workspace 登陆页现在显示该文件夹包含 (3) 个项目。
+## 将项目添加到文件夹
 
-   ![更新后的项目主页列表会显示包含三个项目的子文件夹。](/help/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
+要将项目从[项目列表](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list)添加到文件夹，请执行以下操作：
 
-## 从文件夹内 {#inside-folder}
+1. 选择![SelectBox](/help/assets/icons/SelectBox.svg)要将项目添加到的文件夹。
 
-还可使用省略号链接从文件夹内添加项目。
+1. 从可能的[操作列表中选择![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **添加项目**](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions)。 将显示&#x200B;**[!UICONTROL 选择文件夹]**&#x200B;对话框。
 
-1. 从表格视图中选择并打开一个文件夹。
+1. 从&#x200B;[!UICONTROL *选择要添加到文件夹*]&#x200B;的项目中选择一个或多个项目。
 
-   ![不包含任何项目的子文件夹](/help/analysis-workspace/build-workspace-project/assets/move-open-folder.png)
+   ![显示下拉菜单和可用子文件夹的选择文件夹视图。](/help/analysis-workspace/build-workspace-project/assets/add-projects-folder.png)
 
-1. 单击右上角的 **...** 省略号图标。
-
-   ![省略号下拉菜单选项。](/help/analysis-workspace/build-workspace-project/assets/add-projects-elipsis.png)
-
-   随后有一个下拉菜单显示将项目添加到该文件夹的选项。通过其他选项，可重命名、移动或删除该文件夹以及管理文件夹权限。
-
-1. 选择&#x200B;**添加项目**，然后从下拉列表中选择要添加的项目。
-
-   ![添加项目列表。](/help/analysis-workspace/build-workspace-project/assets/select-add-projects.png)
-
-   可将多个项目添加到该文件夹。
-
-   ![显示已添加三个项目的“添加项目”窗口](/help/analysis-workspace/build-workspace-project/assets/move-add-multiple-projects.png)
-
-1. 单击&#x200B;**添加**&#x200B;以将这些项目添加到该文件夹。
-
-   ![单击“添加”。](/help/analysis-workspace/build-workspace-project/assets/move-added-items.png)
-
+1. 选择&#x200B;**[!UICONTROL 添加]**。
 
 >[!NOTE]
 >

@@ -3,22 +3,20 @@ description: 了解警报与Adobe Analytics的Customer Journey Analytics有何�
 title: 警报功能比较Customer Journey Analytics和Adobe Analytics
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 0%
+source-wordcount: '560'
+ht-degree: 5%
 
 ---
 
-# 警报功能比较：Customer Journey Analytics和Adobe Analytics
+# 警报功能比较
 
-在Customer Journey Analytics中使用警报的流程与在Adobe Analytics中使用警报的流程几乎相同。 然而，两者之间有着重要的区别。
-
-以下各节描述了主要差异。
+在 Customer Journey Analytics 中使用警报的过程与在 Adobe Analytics 中使用警报的过程几乎相同。然而，两者之间有着重要的区别。 以下各节描述了主要差异。
 
 ## 每小时警报在Customer Journey Analytics中不可用
 
-在Adobe Analytics中，小时警报在Customer Journey Analytics中不可用。 在Customer Journey Analytics中，可以配置每日、每周或每月警报。
+在Adobe Analytics中，小时警报在Customer Journey Analytics中不可用。 在 Customer Journey Analytics 中，可以将警报配置为每日、每周或每月。
 
 这是因为在Customer Journey Analytics中报告数据之前，可以将数据摄取到Adobe Experience Platform中的各种方式。 数据完整性和可用性无法在一小时内可靠地实现，因此由于数据不完整的可能性很高，每小时警报变得不切实际。 有关详细信息，请参阅[不同的数据摄取时间](#data-ingestion-times-vary-in-customer-journey-analytics)。
 

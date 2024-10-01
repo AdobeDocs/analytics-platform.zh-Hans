@@ -5,7 +5,7 @@ feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 role: User
-source-git-commit: aaab21ef817e3acf67ca83cb6f9258b812625c8e
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 6%
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 使用包含许多唯一值的维度时，生成的报表可能包含太多要显示或计算的唯一维度项。 通过删除被认为最不重要的维度项目，截断结果。 这些优化是为了保持项目和产品性能。
 
-当您请求具有过多唯一值的报表时，Analysis Workspace会在维度标题中显示一个指示器，以说明并未包含所有维度项。 例如，“行：超过22,343,156的1-50”。 “大于”关键字表示已对报表应用了一些优化，以返回最重要的维度项目。
+当您请求具有过多唯一值的报表时，Analysis Workspace会在维度标题中显示一个指示器，以说明并未包含所有维度项。 例如，**[!UICONTROL 行：超过22,343,156]**&#x200B;的1-50。 **[!UICONTROL 大于]**&#x200B;关键字表示已对报表应用了一些优化，以返回最重要的维度项。
 
 ![Workspace中的自由格式表显示“大于”关键字，可显示1-50个大于22,343,156](assets/high-cardinality.png)
 

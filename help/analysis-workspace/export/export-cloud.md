@@ -5,7 +5,7 @@ title: 将Customer Journey Analytics报表导出到云端
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
 workflow-type: tm+mt
 source-wordcount: '2205'
 ht-degree: 3%
@@ -67,7 +67,7 @@ ht-degree: 3%
    | 描述 | 为导出添加描述。 查看导出时，可以选择在[导出页面](/help/components/exports/manage-exports.md)中将说明作为列查看。 |
    | 数据视图 | 选择包含要包含在导出中的组件的数据视图。 数据视图下拉菜单位于对话框的左上角，可以通过数据视图图标![数据视图图标](assets/data-view-icon.png)来标识。  <p>**注意：**&#x200B;如果选择的数据视图缺少已包含在数据表中的组件，则系统会提示您清除数据表并使用选定数据视图中包含的组件重新创建数据表。 </p> |
    | 回顾时间范围 | 选择要包含在每个导出文件中的报表时间范围。 选项包括&#x200B;[!UICONTROL **今天**]、[!UICONTROL **昨天**]、[!UICONTROL **最近7天**]、[!UICONTROL **最近30天**]、[!UICONTROL **本周**]&#x200B;和&#x200B;[!UICONTROL **本月**]。 <p>当&#x200B;[!UICONTROL **导出频率**]&#x200B;设置为&#x200B;[!UICONTROL **立即发送（一次性）**]&#x200B;时，不显示此选项。 |
-   | 数据表 | 显示要导出的自由格式表。 您可以通过将组件从左边栏拖到表来修改数据表。 在将组件添加到画布时，表格会动态更新。  <p>应用于项目中整个表的任何区段都会显示在表中每个单独列的顶部。</p> |
+   | 数据表 | 显示要导出的自由格式表。 可以通过将组件从左侧面板拖到表中来修改数据表。 在将组件添加到画布时，表格会动态更新。  <p>应用于项目中整个表的任何区段都会显示在表中每个单独列的顶部。</p> |
    | 清除 | 清除数据表的内容。 这样，您就可以直接在新增完整表格导出对话框中开始构建新表格。 |
    | 导出频率 | 设置导出的频率计划。 <p>您可以选择&#x200B;[!UICONTROL **立即发送（一次性）**]&#x200B;以仅发送导出一次。 选择此选项后，将立即启动导出。<p>或者，您可以选择按定义的计划发送导出。 按计划发送时，选项包括&#x200B;[!UICONTROL **每日**]、[!UICONTROL **每周**]、[!UICONTROL **按一周的某一天每月发送**]、[!UICONTROL **按月份的某一天每月发送**]、[!UICONTROL **按月份的某一天每月发送**]&#x200B;以及&#x200B;[!UICONTROL **按特定日期每年发送**]。 </p><p>选择导出频率时，请考虑以下事项：</p><ul><li>[!UICONTROL **回顾窗口**]&#x200B;字段中的选项会根据您在此选择的内容而更改。<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>根据您选择的选项，还会显示其他配置字段。</li></ul> |
    | 开始日期 | 计划导出应开始的日期和时间。 <p>仅当选择计划的导出频率时，此选项才可用。</p> |

@@ -1,30 +1,30 @@
 ---
-description: Analysis Workspace 中的流失允许您将维度和量度作为漏斗和工作流程中的接触点来进行混合和匹配。这在定义要调查的用户步骤方面具有更大的灵活性。
+description: Analysis Workspace中的流失让您可以将维度和量度作为漏斗和工作流中的接触点来进行混合和匹配。 在定义要调查的用户步骤时，流失会为您提供更大的灵活性。
 title: 维度间流失
 feature: Visualizations
 exl-id: 7975324c-4efc-4c36-bc83-dcde85d2febc
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 37158b4e614435724205c505f322c1d7a434c35d
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 74%
+source-wordcount: '220'
+ht-degree: 7%
 
 ---
 
 # 维度间流失
 
-Analysis Workspace 中的流失允许您将维度和量度作为漏斗和工作流程中的接触点来进行混合和匹配。这在定义要调查的用户步骤方面具有更大的灵活性。
+Analysis Workspace中的流失让您可以将维度和量度作为漏斗和工作流中的接触点来进行混合和匹配。 在定义要调查的用户步骤时，流失会为您提供更大的灵活性。
 
-例如，除了页面维度之外，您还可以向流失可视化图表添加基于操作的维度项目。 这让您可以可视化客户路径中页面和某些操作是怎样相互作用的。
+例如，除了页面维度之外，您还可以将其他维度项目（如设备名称维度中的特定设备名称）添加到流失可视化图表。 通过组合维度，您可以可视化页面和某些操作在客户路径中的交互方式。
 
-![所有访问视图将多个维度显示为接触点。](assets/interdimensional-fallout1.png)
+![所有访问视图将多个维度显示为接触点。](assets/fallout-otherdimension.png)
 
 流失会动态更新，并且允许您查看多个维度中的流失。
 
-您还可以向此组合添加量度。在本例中，我们添加了“共享照片”量度来补充客户的浏览路径：
+您还可以添加量度。 例如，您可以添加量度“呼叫”以仅显示存在呼叫且已联系呼叫中心的用户的路径：
 
-![显示添加量度的“所有访问”视图：“共享照片”。](assets/interdimensional-fallout2.png)
+![显示添加量度的“所有访问”视图：“共享照片”。](assets/fallout-metrics.png)
 
-此外，您可以将不同的维度和量度合并为 AND 检查点。您只需将其他维度或量度拖动到现有维度或量度的顶部即可：
+您可以组合维度和量度。 将另一个维度或量度拖动到现有维度或量度之上。 例如，了解拥有iPhone并联系呼叫中心的人的流失。
 
-![显示添加的操作名称的“所有访问”视图：“共享”和“共享照片”量度。](assets/interdimensional-fallout3.png)
+![显示添加的操作名称的“所有访问”视图：“共享”和“共享照片”量度。](assets/fallout-combined.png)

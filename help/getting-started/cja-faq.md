@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 22ae84479142d45f400f6ae39fe1416c9aaf7229
-workflow-type: ht
-source-wordcount: '2567'
-ht-degree: 100%
+source-git-commit: 6cd4fadc28117ed88b68d17274ab8de2b0edff10
+workflow-type: tm+mt
+source-wordcount: '2565'
+ht-degree: 99%
 
 ---
 
@@ -217,7 +217,7 @@ Adobe 最近改变了在 Customer Journey Analytics 中处理数据的方式：
 
 Adobe 定期监控和执行使用限制。“数据行数”表示可供在 Customer Journey Analytics 中分析的数据的每日平均行数。
 
-例如，假设您的合同授权您拥有 100 万行数据。假设在使用 Customer Journey Analytics 的第 1 天，您上传了 200 万行数据。在第 2 天，您删除了 100 万行数据，并在许可期限的剩余时间将用量保持在承诺的最大值（即 100 万行数据）。根据您的合同条款，由于您超出了“数据行”许可证授权，因此您在第 1 天仍可能会收取按比例分摊的过度使用费用。
+例如，您的合同授权您拥有100万行数据。 假设在使用 Customer Journey Analytics 的第 1 天，您上传了 200 万行数据。在第 2 天，您删除了 100 万行数据，并在许可期限的剩余时间将用量保持在承诺的最大值（即 100 万行数据）。根据您的合同条款，由于您超出了“数据行”许可证授权，因此您在第 1 天仍可能会收取按比例分摊的过度使用费用。
 
 ## 11. 诊断数据差异 {#discrepancies}
 

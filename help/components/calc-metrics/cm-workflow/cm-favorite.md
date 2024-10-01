@@ -3,21 +3,19 @@ description: 将计算量度标记为收藏是另一种组织计算量度以便�
 title: 将计算量度标记为收藏内容
 feature: Calculated Metrics
 exl-id: f0c9387f-16a4-40c5-9bed-73b871efd22e
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 65eafd65358d9370b452338ce1036e59b3c69d1a
 workflow-type: tm+mt
-source-wordcount: '98'
-ht-degree: 29%
+source-wordcount: '108'
+ht-degree: 9%
 
 ---
 
 # 将计算量度标记为收藏内容
 
-将计算量度标记为收藏是另一种组织计算量度以便于使用的方式。
+您可以将计算量度标记为收藏。 将计算量度标记为收藏有助于您组织计算量度。 所有用户都可以青睐计算量度。
 
-1. 在Customer Journey Analytics中，选择&#x200B;**[!UICONTROL 组件]**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL 计算量度]**。
+要支持或不支持计算量度，请在[计算量度管理器](/help/components/calc-metrics/cm-workflow/cm-manager.md)中：
 
-1. 在计算量度管理器中，选中任意要标记为收藏的计算量度旁边的星标。 星标现在应当显示为黄色：
+* 选择![星形大纲](/help/assets/icons/StarOutline.svg)表示支持，或选择![星形大纲](/help/assets/icons/Star.svg)表示不支持计算量度。
 
-   显示来自Bing的访客的![黄色星号。](assets/favorites.png)
-
-1. 您也可以在“**[!UICONTROL 过滤器]**”>“**[!UICONTROL 其他过滤器]**”>“**[!UICONTROL 收藏]**”下对收藏进行过滤。
+您可以按收藏夹筛选计算量度列表。 从![筛选器](/help/assets/icons/Filter.svg) **[!UICONTROL 筛选器]**&#x200B;面板中选择&#x200B;**[!UICONTROL 其他筛选器]**&#x200B;并选择&#x200B;**[!UICONTROL 收藏夹]**。 有关详细信息，请参阅[筛选计算量度列表](/help/components/calc-metrics/cm-workflow/cm-filter.md)。

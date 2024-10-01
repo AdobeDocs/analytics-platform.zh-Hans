@@ -4,78 +4,114 @@ description: 如何在工作区中管理注释。
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 01f862997503cb36502145eddb47873bc7cb28fe
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 100%
+source-wordcount: '764'
+ht-degree: 6%
 
 ---
 
 # 管理注释
 
-[!UICONTROL 组件] > [!UICONTROL 注释]管理器提供了许多种管理注释的方式，例如共享、筛选、标记、审批、复制、删除和标记为收藏。
+您可以从中心[!UICONTROL 注释]管理界面共享、筛选、标记、批准、复制、删除注释并将注释标记为收藏。 要管理注释，请执行以下操作：
 
-[!UICONTROL 注释]管理器显示了您拥有、已覆盖到您的所有项目并且已与您共享的所有注释。
+* 在主界面中选择&#x200B;**[!UICONTROL 组件]**，然后选择&#x200B;**[!UICONTROL 注释]**。
+
 
 >[!NOTE]
 >
->您专为特定项目创建的[!UICONTROL 注释]不会出现在管理器中。
+>您在特定Workspace项目内创建的注释不会出现在[!UICONTROL 注释]管理器中，除非您使注释对所有项目都可用。
+>
 
-## 注释管理器用户界面
+## 注释管理器
 
-![注释选项，例如共享、标记或复制，这些内容会在下一节中介绍。](assets/annotation-mgr.png)
+注释管理器具有以下界面元素：
 
-| UI 元素 | 描述 |
+![注释界面](assets/annotations-manager.png)
+
+### 注释列表
+
+注释列表会➊显示您拥有的所有注释、已覆盖到您的所有项目的注释以及与您共享的注释。 该列表具有以下列：
+
+| 栏目 | 描述 |
 | --- | --- | 
-| [!UICONTROL 标题和描述] | 在 Annotation Builder 中提供。要编辑标题和描述，请单击标题链接 - 这可以让您返回 Annotation Builder。 |
-| [!UICONTROL 数据视图] | 此注释应用于的数据视图。 |
-| [!UICONTROL 所有者] | 指示注释的所有者。如果您不是管理员，则只能看到您拥有的注释或与您共享的注释。 |
-| [!UICONTROL 应用的日期范围] | 此注释应用于的日期或日期范围。 |
-| [!UICONTROL 共享对象] | 列出您与多少个人或组共享注释。单击以了解更多详细信息。 |
-| [!UICONTROL 修改日期] | 显示上次修改注释的日期和时间。 |
+| ![星形大纲](/help/assets/icons/StarOutline.svg) | 选择支持![Star](/help/assets/icons/Star.svg)或取消支持![StarOutline](/help/assets/icons/StarOutline.svg)注释。 |
+| **[!UICONTROL 标题和描述]** | 在 Annotation Builder 中提供。要编辑标题和描述，请选择标题链接 — 打开[注释生成器](/help/components/annotations/create-annotations.md#annotation-builder)。 共享批注以![共享](/help/assets/icons/Share.svg)表示。 |
+| **[!UICONTROL 数据视图]** | 此注释应用于的数据视图。 |
+| **[!UICONTROL 所有者]** | 注释的所有者。 作为用户，您只会看到自己拥有的注释或与您共享的注释。 |
+| **[!UICONTROL 应用的日期范围]** | 此注释应用于的日期或日期范围。 |
+| **[!UICONTROL 标记]** | 此注释的标记。 |
+| **[!UICONTROL 共享对象]** | 您与其共享注释的个人或组。 选择以打开&#x200B;**[!UICONTROL 共享组件]**&#x200B;对话框。 |
+| **[!UICONTROL 修改日期]** | 显示上次修改注释的日期和时间。 |
 
 {style="table-layout:auto"}
+
+使用![ColumnSetting](/help/assets/icons/ColumnSetting.svg)指定要显示的列。
+
+### 操作栏
+
+您可以使用操作栏对注释进➋行操作。 操作栏包含以下操作：
+
+| 操作 | 描述 |
+|---|---|
+| ![添加圆圈](/help/assets/icons/AddCircle.svg) **[!UICONTROL 添加]** | 使用[Annotation Builder](create-annotations.md#annotation-builder)添加另一个注释。 |
+| ![搜索](/help/assets/icons/Search.svg) [!UICONTROL *按标题搜索*] | 在列表中未选择批注时，使用此搜索字段搜索批注。 |
+| ![标签](/help/assets/icons/Label.svg) **[!UICONTROL 标签]** | 标记选定的注释。 在&#x200B;**[!UICONTROL 标记组件]**&#x200B;对话框中，选择或取消选择所选批注的标记。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存选定批注的标记。 |
+| ![共享](/help/assets/icons/Share.svg) **[!UICONTROL 共享]** | 共享所选批注。 在&#x200B;**[!UICONTROL 共享组件]**&#x200B;对话框中，您可以![搜索](/help/assets/icons/Search.svg) *搜索个人或组*，也可以选择&#x200B;**[!UICONTROL 组织]**&#x200B;或&#x200B;**[!UICONTROL 组]**。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存所选批注的共享详细信息。 有关更多详细信息，请参阅[共享注释](#share-annotations)。 |
+| ![删除](/help/assets/icons/Delete.svg) **[!UICONTROL 删除]** | 删除所选注释。 系统会提示您进行确认。 |
+| ![编辑](/help/assets/icons/Edit.svg)**[!UICONTROL 重命名]** | 重命名单个选定的注释。 选中后，可以内联重命名注释。 |
+| ![副本](/help/assets/icons/Copy.svg) **[!UICONTROL 副本]** | 复制所选注释。 创建具有相同名称和后缀的新注释（复制） |
+| ![文件CSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL 导出到CSV]** | 将注释导出到`Annotations List.csv`文件。 |
+
+### 活动筛选栏
+
+筛选器栏➌显示活动的筛选器（如果有）。 您可以使用![CrossSize75](/help/assets/icons/CrossSize75.svg)快速删除筛选器。 如果指定了多个筛选器，则可以使用&#x200B;**[!UICONTROL 删除所有]**&#x200B;来删除所有筛选器。
+
+### 过滤器面板
+
+您可以使用![筛选器](/help/assets/icons/Filter.svg) **[!UICONTROL 筛选器]**&#x200B;左侧面板筛选批注➍。 过滤器面板显示过滤器的类型和遵循过滤器的注释数。 选择![筛选器](/help/assets/icons/Filter.svg)以切换筛选器面板的显示。
+
+要筛选筛选器列表，请执行以下操作：
+
+1. 选择![筛选器](/help/assets/icons/Filter.svg)以打开筛选器面板。 如果筛选器列表需要更多空间，您可以再次选择![筛选器](/help/assets/icons/Filter.svg)以关闭面板。
+1. 您可以使用任何可用的[过滤部分](#filter-sections)来过滤注释。
+
+   >[!INFO]
+   >
+   >*项目*&#x200B;引用了[批注列表](manage-annotations.md#annotations-list)中显示的批注项目。
+   > 
+
+#### 筛选区域
+
+{{tagfiltersection}}
+{{dataviewfiltersection}}
+{{ownerfiltersection}}
+{{daterangefiltersection}}
+{{otherfiltersfiltersection}}
+
+
+[注释列表](manage-annotations.md#annotations-list)会根据您的筛选器配置自动更新。 您可以在[活动筛选器栏](manage-annotations.md#active-filter-bar)中查看配置的筛选器。
+
 
 ## 编辑注释
 
-编辑注释意味着您可以调整日期范围、颜色、范围，或者它是否适用于所有数据视图或项目。您可以通过两种方式编辑注释：
+可通过两种方式编辑注释：
 
-* 在折线图中，将鼠标悬停在注释上，然后单击弹出框内的铅笔图标。
+* 在Workspace项目中，使用[组件信息](/help/components/use-components-in-workspace.md#component-info)图标。
 
-* 在[!UICONTROL 注释管理器]中，单击注释的标题。
+* 在[[!UICONTROL 注释]列表](#annotations-list)中，选择注释的标题。
 
-这两个选项都会让您回到 Annotation Builder。在那里，您可以进行必要的调整并保存新版本。
+您使用[Annotation Builder](/help/components/annotations/create-annotations.md#annotation-builder)编辑注释。
 
 ## 共享注释
 
-在共享注释或使用与您共享的注释时，请记住：
+以下内容适用于共享注释或使用与您共享的注释：
 
-* 假设您创建附有纯项目注释的项目，然后与另一个用户共享该项目。这些注释将会显示，但与您共享项目的任何人都无法编辑或删除它们。
+* 在与其他用户共享的项目中，将为这些用户显示仅用于项目的注释。 用户无法编辑或删除这些仅用于项目的注释。
+* 如果保存注释并直接与用户共享注释，则该用户只有在具有管理员权限的情况下才能编辑和删除注释。
 
-* 如果保存注释并直接与用户共享，则只有在拥有管理员权限的情况下，用户才能编辑/删除注释。
-
-* 总而言之，如果项目与您共享，则它将只显示在该项目中。如果注释直接与您共享，则它将显示在可以显示该注释的所有项目中。
+* 如果某个项目与您共享，则该项目中创建的注释仅会显示在该项目中。 如果注释直接与您共享，则该注释会显示在可以显示该注释的所有项目中。
 
 ## 注释和时区
 
-所有注释都使用时间戳创建，但没有“时间”或“时区”信息。 在报告时，始终应用面板数据视图的时区。 因此，无论您处于哪个数据视图时区，为圣诞节创建的注释均发生在 12 月 25 日。
-
-另一个例子是元旦。新年开始时，每个小时都会有不同的时区燃放烟花。美国山区时间晚上 10 点，美国东海岸开始燃放烟花，因为此时已是东部时间凌晨 12 点。
-
-## 其他注释任务
-
-注释管理器允许管理员编辑、添加、标记、删除、重命名、批准、复制、导出和筛选注释。虚拟报表包管理器对非管理员用户不可见。
-
-只需选择一个或多个注释，任务栏就会出现。
-
-| 任务 | 描述 |
-| --- | --- |
-| 添加 | 将您带到 Annotation Builder，您可以在其中创建新注释。 |
-| 标记 | 所有用户均可为注释创建标记，并将一个或多个标记应用于注释。但是，您只能看到自己拥有的那些过滤器的标记。应创建哪种类型的标记？以下是对实用标记的一些建议：<ul><li>基于团队名称的标记，如社交营销、移动营销</li><li>项目标记（分析标记），如登录页面分析</li><li>类别标记：男士；地理位置</li><li>工作流程标记：管理对象（具体业务单位）；已批准</li></ul> |
-| 删除 | 删除注释会将其从组织中的任何项目中删除。 |
-| 重命名 | 重命名注释会在它应用于的所有项目中重命名它。 |
-| 复制 | 创建一个独特副本，使其具有自身的注释 ID，但使用相同的名称和定义。 |
-| 导出到 CSV | 将注释定义导出到 .csv 文件。 |
-| 筛选（左边栏） | 按标记、数据视图、所有者和其他过滤器（“我的”、“已批准”、“收藏”、“已与我共享”和“全部显示”）进行筛选。 |
-
-{style="table-layout:auto"}
+所有注释都使用时间戳创建，但没有小时或时区信息。 在报告时，将使用为面板配置的数据视图的时区。

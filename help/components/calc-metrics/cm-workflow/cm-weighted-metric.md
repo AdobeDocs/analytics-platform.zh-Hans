@@ -1,35 +1,64 @@
 ---
-description: 显示筛选量度和加权量度的示例。
-title: 过滤和加权量度
+description: 显示计算指标的示例。
+title: 计算量度示例
 feature: Calculated Metrics
 exl-id: 5e73ab52-627a-4064-bfb7-354c0ba1e4ee
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 76%
+source-wordcount: '235'
+ht-degree: 5%
 
 ---
 
-# 过滤和加权量度
+# 计算量度示例
 
-显示筛选量度和加权量度的示例。
+本文举例说明如何定义更高级的计算指标。
 
-## 过滤跳出率 {#section_D42F2452E4464948934063EB6F2DAAB4}
+## 跳出率
 
-这个简单的过滤量度仅显示访问次数超过 100 的页面的跳出率：
+您希望计算跳出率。
 
-![摘要窗口，其中显示应用于列1 （访问次数）和列2 (100)的量度以及跳出率。](assets/cm_fbr.png)
++++ 详细信息
 
-请记住，此公式依赖于一致的时间范围。如果您运行报表的时间范围为一天，则任何访问次数超过 20 的页面都值得查看。如果您运行报表的时间范围为一个月，则可能希望过滤器包含更多的访问次数。
+跳出的定义将在另一讨论中讨论，但在本例中，您定义了一个跳出事件过滤器，其中会话开始等于1，会话结束等于1。 使用此过滤器可以定义会话的退回率。
 
-## 通过百分位数过滤的跳出率 {#section_4F3E6D33A1FD438A932FA662B3510552}
 
-此过滤器显示前 30% 的页面（按访问次数排序）的跳出率。
+### 筛选
 
-![如果为，则筛选器显示按访问排序的前30%页面的跳出率。](assets/cm_wbr_2.png)
+![退回事件](assets/example-bounce-bouncedevents.png)
 
-## 加权量度 {#section_F2D16B14569948289CF1310F9E6E3FC2}
+### 计算量度
 
-假定您希望大致按跳出率排序，但具有更多访问次数的页面应当在列表中的排位更高。您可以创建与如下所示类似的加权跳出率：
+![跳出率](assets/example-bounce-rate.png)
 
-![包含访问跳出率时间定义的摘要。](assets/cm_wbr.png)
+
+### 派生字段
+
+或者，您可以使用派生字段](/help/data-views/derived-fields/derived-fields.md#bounces)定义[跳出率。
+
+派生字段是数据视图的一部分，其优点是并非每个用户都可以覆盖或修改跳出率量度的定义。 这一优势也带来了局限性。 无权访问数据视图的用户无法使用派生字段，并且必须诉诸过滤器和计算量度来定义跳出率。
+
+有关如何计算Customer Journey Analytics中的跳出率和跳出率的更多背景信息，请参阅此[博客帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446)。
+
++++
+
+
+## 条件页面查看次数
+
+您要定义一个计算度量，该度量只计算100多个会话中已访问页面的页面查看次数。
+
++++ 详细信息
+
+![条件页面查看次数](assets/conditional-page-views.png)
+
++++
+
+## 前30%会话的页面查看次数
+
+您要定义一个计算度量，该度量只计算前30%会话的页面查看次数。
+
++++ 详细信息
+
+![前30%页面查看次数](assets/top30-page-views.png)
+
++++

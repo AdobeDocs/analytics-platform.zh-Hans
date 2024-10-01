@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: d20655293a8248d26fed675d6f38e5a8a49a15c1
+source-git-commit: e93f4875bbb5940d9182aadcefcc7166644434c4
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 100%
@@ -89,7 +89,7 @@ Adobe Analytics 区段（在 Customer Journey Analytics 中称为[!UICONTROL 筛
 
 * 使用 Customer Journey Analytics 数据视图的强大功能，您可以在 Customer Journey Analytics 中定义量度和维度时更加灵活。例如，您可以使用维度的值来定义度量。[了解详情](/help/use-cases/data-views/data-views-usecases.md)
 
-* 如果您在 Adobe Analytics 中定义了自定义日程表，那么 Customer Journey Analytics 中也将具有类似的[自定义日程表功能。](/help/components/date-ranges/custom-date-ranges.md)您需要确保正确定义日历。
+* 如果您在 Adobe Analytics 中定义了自定义日程表，那么 Customer Journey Analytics 中也将具有类似的[自定义日程表功能。](/help/components/date-ranges/overview.md)您需要确保正确定义日历。
 
 * 在 Customer Journey Analytics 中，您可以定义自定义访问/会话超时，以及定义将启动新会话的量度。您可以创建具有不同会话定义的数据视图，以获得超越 Adobe Analytics 的洞察力。此功能可能对移动数据集特别有益。
 

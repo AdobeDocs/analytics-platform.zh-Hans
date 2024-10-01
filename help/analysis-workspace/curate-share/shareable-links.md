@@ -5,16 +5,16 @@ title: 创建可共享链接
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 79%
+source-wordcount: '381'
+ht-degree: 67%
 
 ---
 
 # 创建可共享链接
 
-Analysis Workspace 提供了多种将项目共享给用户的方法，包括能够获得指向项目或项目特定部分的链接。某些链接类型要求收件人登录到 Adobe Analytics 后再访问项目，而其他链接类型无此要求。
+Analysis Workspace 提供了多种将项目共享给用户的方法，包括能够获得指向项目或项目特定部分的链接。某些链接类型要求收件人先登录Customer Journey Analytics才能访问项目，而其他链接类型则不要求登录。
 
 ## 获取项目链接以与其他 Workspace 用户共享 {#project-link}
 
@@ -32,8 +32,8 @@ Analysis Workspace 提供了多种将项目共享给用户的方法，包括能�
 
 您还可以共享指向项目特定部分的链接，如面板或单个可视化图表。这种链接有时被称为内部链接。内部链接对于吸引用户关注项目中的关键问题分析非常有帮助。
 
-* 在任意面板标题中，右键单击&#x200B;**[!UICONTROL 获取面板链接]**
-* 在任意表或可视化图表标题中，右键单击&#x200B;**[!UICONTROL 获取可视化图表链接]**
+* 从面板标题的上下文菜单中，选择&#x200B;**[!UICONTROL 获取面板链接]**
+* 从可视化图表标题的上下文菜单中，选择&#x200B;**[!UICONTROL 获取可视化图表链接]**
 
 请[观看视频](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=zh-Hans)，了解如何创建链接，并使用这些链接促使收件人访问项目的特定部分。
 

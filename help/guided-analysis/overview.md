@@ -5,10 +5,10 @@ keywords: 产品分析
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: 2addd3d17f62da69eb6636d987931fc21df07af5
+source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
 workflow-type: tm+mt
-source-wordcount: '1399'
-ht-degree: 100%
+source-wordcount: '1392'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 100%
 
 ## 访问
 
-如果您的组织配置了引导式分析，您可以从 Customer Journey Analytics 主页访问它。
+您可以从Customer Journey Analytics主页访问引导式分析。
 
 1. 点击主页上的&#x200B;**[!UICONTROL 引导式分析]**，您可以直接进入[使用趋势视图](types/usage.md)。
 

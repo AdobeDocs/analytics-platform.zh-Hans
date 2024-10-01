@@ -4,16 +4,17 @@ description: 计算量度生成器允许您将统计和数学函数应用于生�
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 100%
+source-wordcount: '1071'
+ht-degree: 97%
 
 ---
 
 # 引用 - 基本函数
 
-计算指标生成器允许您将统计和数学函数应用于生成高级计算指标。
+
+[计算量度生成器](cm-workflow/cm-build-metrics.md)允许您应用统计和数学函数。
 
 这里有一个按字母顺序排列的函数及其定义列表。
 
@@ -21,9 +22,12 @@ ht-degree: 100%
 >
 >当 [!DNL metric] 被标识为函数中的参数时，还允许使用其他量度表达式。例如，[!DNL MAXV(metrics)] 还允许使用 [!DNL MAXV(PageViews + Visits).]
 
+
 ## table 函数与 row 函数
 
 在 table 函数中，输出对于表中的每一行都是相同的。在 row 函数中，输出对于表中的每一行都是不同的。
+
+
 
 ## 绝对值 (Row)
 
@@ -101,9 +105,9 @@ EXP(metric)
 
 幂运算符
 
-<pre>
-pow(x,y) = x<sup>y</sup> = x*x*x*… (y 次)
-</pre>
+
+pow(x，y) = x<sup>y</sup> = x *x* x*... （y次）
+
 
 ## 平均值 (Table)
 
@@ -313,7 +317,7 @@ VARIANCE(metric)
 
 对整列进行迭代后，您将得到一个总数。然后，将该总数除以列中的项目数。得出的数值就是列变量。它是单个数字。但它会显示为一列数字。
 
-例如，假定有一列，其中包含三个项目：
+对于包含三个项目的列：
 
 1
 

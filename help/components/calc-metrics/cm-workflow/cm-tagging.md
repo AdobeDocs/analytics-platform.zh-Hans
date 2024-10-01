@@ -3,54 +3,80 @@ description: 在计算量度管理器中，您可以通过标记区段来组织�
 title: 标记计算量度
 feature: Calculated Metrics
 exl-id: 25c9299b-34ae-475f-8e7f-5cc8540dab8a
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 1907d94a0f53ee65a3839d879da6c06092f75e0f
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 12%
+source-wordcount: '171'
+ht-degree: 10%
 
 ---
 
 # 标记计算量度
 
-在计算量度管理器中，您可以通过标记过滤器来组织过滤器。
 
-所有用户均可为计算量度创建标记，并将一个或多个标记应用于量度。但是，您只能查看您所拥有的或与您共享的计算指标的标记。
+在[计算量度管理器](cm-manager.md)中，您可以使用标记来组织计算量度。 管理员可以标记所有计算量度。 非管理员只能标记他们创建或与他们共享的计算指标。
+
+要标记一个或多个计算指标，请执行以下操作：
+
+1. 在[计算量度管理器](cm-manager.md)中，选择要标记的一个或多个计算量度。
+1. 从操作栏中选择![标签](/help/assets/icons/Labels.svg) **[!UICONTROL 标签]**。
+1. 在&#x200B;**[!UICONTROL 标记计算量度]**&#x200B;对话框中
+
+   ![标记计算量度对话框](assets/tag-calculated-metric-dialog.png)
+
+   1. （可选）使用![搜索](/help/assets/icons/Search.svg)来搜索和限制标记列表。
+
+   2. 根据标记列表：
+
+      * 从列表中选择一个或多个现有标记，或
+      * 输入新标记并按&#x200B;**[!UICONTROL ENTER]**。 重复以上步骤以添加多个新标记。
+
+1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存计算指标的标记。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消。
+
+保存后，标记将在[计算量度生成器](cm-tagging.md)中选定计算量度的[!UICONTROL 标记]字段中列出。
+
+<!--
+
+In the Calculated metric manager, you can organize filters by tagging them.
+
+All users can create tags for calculated metrics and apply one or more tags to a metric. However, you can see tags only for those calculated metrics that you own or that have been shared with you. 
 
 >[!TIP]
 >
->最有用的标记类型通常是基于以下条件的标记：
+>The most useful types of tags are usually tags that are based on the following criteria:
 >
->* **团队名称**，如社交营销或移动营销。
->* **项目** （分析标记），如登录页分析。
->* **类别**，如女性或地理位置。
->* **工作流**，例如，要批准或策划（特定的业务部门）。
+>* **Team names**, such as Social Marketing or Mobile Marketing.
+>* **Project** (analysis tags), such as Entry-page analysis.
+>* **Categories**, such as Women's or Geography.
+>* **Workflows**, such as To be approved or Curated for (a specific business unit).
 
-## 将标记应用到计算量度
+## Apply tags to a calculated metric
 
-1. 在Customer Journey Analytics中，选择&#x200B;[!UICONTROL **组件**] > [!UICONTROL **计算量度**]。
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Calculated metrics**].
 
-1. 在计算量度管理器中，选中要标记的任何量度旁边的复选框。
+1. In the Calculated metrics manager, select the checkbox next to any metrics that you want to tag.
 
-   ![标记选定了移动营销的计算指标列表。](assets/cm_add_tags.png)
+   ![Tag Calculated metric list with Mobile marketing selected.](assets/cm_add_tags.png)
 
-1. 在&#x200B;[!UICONTROL **标记计算量度**]&#x200B;对话框中：
+1. In the [!UICONTROL **Tag Calculated metric**] dialog box: 
 
-   * 添加新标记。 在&#x200B;**[!UICONTROL 添加标记]**&#x200B;字段中键入名称，然后按Enter。
-   * 选择一个或多个要应用于所选量度的现有标记。
+   * Add a new tag. Type the name in the **[!UICONTROL Add tags]** field, then press Enter.
+   * Select one or more existing tags to apply to the selected metrics.
 
-1. 选择&#x200B;[!UICONTROL **保存**]&#x200B;以应用标记。
+1. Select [!UICONTROL **Save**] to apply the tags.
 
-## 查看应用的标记
+## View applied tags
 
-1. 在Customer Journey Analytics中，选择&#x200B;[!UICONTROL **组件**] > [!UICONTROL **计算量度**]&#x200B;以转到计算量度管理器。
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Calculated metrics**] to go to the Calculated metrics manager.
 
-1. 在计算量度管理器中，标记显示在&#x200B;[!UICONTROL **标记**]&#x200B;列中。 （单击右上角的齿轮图标可管理您的列。）
+1. In the Calculated metrics manager, tags appear in the [!UICONTROL **Tags**] column. (Click the gear icon on the top-right to manage your columns.)
 
-## 按标记过滤量度
+## Filter metrics by tags
 
-1. 在Customer Journey Analytics中，选择&#x200B;[!UICONTROL **组件**] > [!UICONTROL **计算量度**]&#x200B;以转到计算量度管理器。
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Calculated metrics**] to go to the Calculated metrics manager.
 
-1. 在计算量度管理器中，选择&#x200B;**过滤器**&#x200B;图标，然后选择要作为过滤依据的标记。
+1. In the Calculated metrics manager, select the **Filter** icon, then select the tags that you want to filter by. 
 
-   仅显示具有您选择的过滤器的量度。
+   Only metrics that have the filter you select are shown.
+
+-->
 

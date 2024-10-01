@@ -4,10 +4,10 @@ description: 了解如何使用数据准备将报告包与不同的架构结合�
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
 feature: Use Cases
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 664576605b8be098a751609536e388c304c65513
 workflow-type: tm+mt
-source-wordcount: '1322'
-ht-degree: 57%
+source-wordcount: '1321'
+ht-degree: 55%
 
 ---
 
@@ -26,7 +26,7 @@ Customer Journey Analytics客户使用[连接](https://experienceleague.adobe.co
 | eVar1 = 搜索项 | eVar1 = 商业单位 |
 | eVar2 = 客户类别 | eVar2 = 搜索项 |
 
-为了简单起见，假设这是两个报告包中定义的唯一 eVar。
+为了简单起见，假设这是两个报表包中定义的唯一eVar。
 
 此外，假设您执行以下操作：
 

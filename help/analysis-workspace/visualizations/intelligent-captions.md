@@ -1,12 +1,12 @@
 ---
-description: 使用智能字幕生成自然语言洞察力以在可视化图表中快速呈现趋势。
+description: 使用智能字幕生成自然语言洞察力以显示可视化图表中的趋势。
 title: 智能题注
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 93b4426bc3e46540d3b4c9d6ae816a6d1f96f6ed
+source-git-commit: c65efad313df660467f5738d3fcbbb327060a502
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '630'
 ht-degree: 5%
 
 ---
@@ -22,13 +22,13 @@ ht-degree: 5%
 
 ## 启动智能字幕 {#launch}
 
-要为折线图可视化启动自动生成的字幕，请单击可视化右上角的&#x200B;**[!UICONTROL 智能字幕]**&#x200B;图标。
+要为折线图可视化启动自动生成的字幕，请选择可视化右上角的![AEMScreen](/help/assets/icons/AI.svg) **[!UICONTROL 智能字幕]**。
 
 ![显示产品查看趋势智能字幕的“启动分析”窗口。](assets/intell-caps-1.png)
 
 自然语言洞察正在生成。
 
-请记住以下事项
+请记住以下事项：
 
 * 至少需要3个数据点才能成功生成字幕。 否则，您可能会收到诸如&#x200B;**[!UICONTROL 数据不足]**&#x200B;之类的错误。
 

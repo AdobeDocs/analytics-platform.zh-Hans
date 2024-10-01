@@ -4,16 +4,16 @@ description: 可通过以下方法访问这些函数：选中函数下拉列表�
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: cfaf29b8dd92325a4e5fdd2a960de798178db933
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '3024'
-ht-degree: 98%
+source-wordcount: '3036'
+ht-degree: 97%
 
 ---
 
 # 引用 - 高级函数
 
-可通过以下方法访问这些函数：选中&#x200B;**[!UICONTROL 函数]**&#x200B;下拉列表中的&#x200B;**[!UICONTROL 显示高级]**。
+通过在“组件”面板中选择![效果](/help/assets/icons/Effect.svg)**[!UICONTROL 函数]**&#x200B;列表下的&#x200B;**[!UICONTROL 显示所有]**&#x200B;来访问这些函数。 向下滚动以查看高级函数的列表。
 
 ## table 函数与 row 函数
 
@@ -26,6 +26,7 @@ ht-degree: 98%
 例如，如果您有收入量度，然后又将页面查看次数量度添加到报表中，则您的收入会突然多出一些全部为零的行。您也许不希望这影响到收入列中已有的任何 MEAN、MIN、QUARTILE 等计算。在这种情况下，您需要检查 include-zeros 参数。
 
 另一方面，如果您有两个感兴趣的量度，则因为其中一个量度的某些行是零而说该量度具有更高的平均值或最小值，这是不合理的，因此，在这种情况下，您不需要检查参数是否包含零。
+
 
 ## AND
 
@@ -56,7 +57,7 @@ Approximate Count Distinct (dimension)
 |---|---|
 | *dimension* | 您想要的非重复近似项目计数的维度 |
 
-## 用例示例
+### 用例示例
 
 Approximate Count Distinct (customer ID eVar) 是此函数的常见用例。
 
@@ -68,7 +69,7 @@ Approximate Count Distinct (customer ID eVar) 是此函数的常见用例。
 
 ![显示独特访客和大约客户的自由格式表](assets/approx-customers.png)
 
-## 比较计数函数
+### 比较计数函数
 
 Approximate Count Distinct() 是对 Count() 和 RowCount() 函数所做出的改进，因为创建的量度可用于任何维度报表，以呈现单独维度项目的近似计数。例如，“移动设备类型”报表中使用的客户 ID 计数。
 

@@ -4,96 +4,165 @@ title: 保存项目
 feature: Workspace Basics
 role: User
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 93%
+source-wordcount: '824'
+ht-degree: 18%
 
 ---
 
 # 保存项目
 
-Analysis Workspace 中的项目每 2 分钟自动保存一次。
+Analysis Workspace中的项目每2分钟自动保存一次。 您也可以自行保存项目，将项目另存为重复项目或保存具有版本注释的项目。
 
-您也可以手动保存项目。手动保存项目时，可以使用其他选项，例如添加标记或注释。
+## 保存
 
-## 保存项目选项 {#Save}
+若要在Analysis Workspace中打开项目的情况下手动保存项目，请选择&#x200B;**[!UICONTROL 项目]**，然后从以下选项中进行选择：
 
-在 Analysis Workspace 中手动保存项目时可以使用各种选项。
+* **[!UICONTROL 保存]**
 
-手动保存项目：
+  将更改保存到项目。如果项目已共享，项目的收件人也会看到所做的更改。
 
-1. 在 Analysis Workspace 中打开您的项目，选择&#x200B;**[!UICONTROL 项目]**，然后从以下选项中进行选择：
+  首次保存项目时，将显示&#x200B;**[!UICONTROL 保存]**&#x200B;对话框。
 
-   | 操作 | 描述 |
-   |---|---| 
-   | **[!UICONTROL 保存]** | 将更改保存到项目。如果项目已共享，项目的收件人也会看到所做的更改。首次保存项目时，系统会提示您提供项目的名称和（可选）描述并添加（可选）标记。 |
-   | **[!UICONTROL 保存并添加注释]** | 在保存项目之前，添加有关项目中进行了哪些更改的注释。注释与项目版本一起存储，并且在[!UICONTROL 项目] > [!UICONTROL 打开以前的版本]下面可供所有编辑者使用。 |
-   | **[!UICONTROL 另存为]** | 创建项目副本。原始项目不受影响。 |
-   | **[!UICONTROL 另存为模板]** | 将您的项目另存为[自定义模板](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=zh-Hans)，贵组织可在&#x200B;**[!UICONTROL 项目 > 新建]**&#x200B;下使用该模板。 |
+  ![保存项目](assets/save-project.png)
 
-## 自动保存 {#Autosave}
+   1. 指定以下内容：
 
-Analysis Workspace 中的所有项目每 2 分钟自动保存到本地计算机。这包括尚未手动保存的新创建项目。
+      * **[!UICONTROL 名称]**（必需）。 项目的名称。
+      * **[!UICONTROL 描述]**。 项目的描述。
+      * **[!UICONTROL 标记]**。 在&#x200B;[!UICONTROL *搜索标记*]&#x200B;字段中搜索标记或使用&#x200B;**[!UICONTROL ENTER]**&#x200B;添加新标记。
+      * **[!UICONTROL 文件夹]**。 从&#x200B;[!UICONTROL *选择文件夹*]&#x200B;下拉菜单中选择文件夹。 如果不指定文件夹，则项目将保存在从中创建新项目的当前文件夹中。
+      * **[!UICONTROL 版本说明]**。 在&#x200B;*添加注释*&#x200B;文本区域中添加版本注释。
 
-* **新项目：**&#x200B;尽管新项目是自动保存的，但您必须在第一次手动保存每个新项目。在切换到另一个项目、关闭浏览器选项卡等时，Analysis Workspace 会提示您手动保存新项目。
+   1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存您的项目。
 
-  如果出于任何原因您在手动保存之前意外失去对新创建项目的访问权限，您的项目的恢复版本将保存在 Analysis Workspace 登录页面上名为`Recovered Projects (Last 7 Days)`的文件夹中。您必须恢复已恢复的项目并将其手动保存到所需位置。
+  保存您的项目实际上会保存一个项目版本，该版本会存储90天。
 
-  要恢复已恢复的项目：
+  如果保存已共享的项目，则&#x200B;**[!UICONTROL 保存对共享项目的更改]**&#x200B;警告对话框会提示您进行确认。
 
-   1. 转到 Analysis Workspace 登录页面上的&#x200B;[!UICONTROL **已恢复的项目**]&#x200B;文件夹。
+  ![保存共享的项目](assets/save-project-shared.png)
 
-      ![突出显示已恢复项目文件夹的文件夹列表。](assets/recovered-folder.png)
-
-   1. 打开您的项目并将其保存到所需位置。
+   * 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存项目。
+   * 选择&#x200B;**[!UICONTROL 另存为]**&#x200B;以使用新名称将该项目另存为重复项目。
 
 
-* **现有项目：**&#x200B;如果出于任何原因您离开的项目包含尚未自动保存的更改，Analysis Workspace 会提示您保存更改或提供警告消息。
+* **[!UICONTROL 保存并添加注释]**
 
-  以下是一些常见的场景：
+  ![保存并添加注释](assets/save-version-notes.png)
 
-### 打开另一个项目
+  在保存项目时，添加有关项目中进行了哪些更改的注释。 在保存版本注释对话框中：
 
-如果您在处理包含尚未自动保存的更改的项目时打开其他项目，Analysis Workspace 会提示您在离开前保存当前项目。
+   1. 在&#x200B;**[!UICONTROL 添加注释]**&#x200B;文本区域中输入&#x200B;**[!UICONTROL 版本注释]**。
+   1. 选择&#x200B;**[!UICONTROL 保存]**。
+
+  注释与项目版本一起存储，并且在[打开项目的先前版本](open-projects.md#open-previous-version)时可用。 与注释一起保存的版本会自动存储一年。
+
+* **[!UICONTROL 另存为]**
+
+  ![将项目另存为](assets/save-project-as.png)
+
+  使用新名称创建项目副本。 此时将显示“另存为”对话框。
+
+   1. 指定以下内容：
+
+      * **[!UICONTROL 名称]**（必需）。 项目的名称。
+      * **[!UICONTROL 描述]**。 项目的描述。
+      * **[!UICONTROL 标记]**。 在&#x200B;[!UICONTROL *搜索标记*]&#x200B;字段中搜索标记或使用&#x200B;**[!UICONTROL ENTER]**&#x200B;添加新标记。
+      * **[!UICONTROL 文件夹]**。 从&#x200B;[!UICONTROL *选择文件夹*]&#x200B;下拉菜单中选择文件夹。 如果不指定文件夹，则项目将保存在从中创建新项目的当前文件夹中。
+      * **[!UICONTROL 版本说明]**。 在&#x200B;*添加注释*&#x200B;文本区域中添加版本注释。
+
+   1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存您的项目。
+
+  您可以将项目保存到其他文件夹。 原始项目不受影响。
+
+
+<!-- Cannot find this option in CJA 
+| **[!UICONTROL Save as template]** | Save your project as a [custom template](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) that becomes available to your organization under **[!UICONTROL Project > New]** | 
+-->
+
+## 自动保存
+
+
+>[!IMPORTANT]
+>
+>即使自动保存了新项目，您也必须在&#x200B;**前**&#x200B;次手动保存每个新项目。
+>
+
+Analysis Workspace 中的所有项目每 2 分钟自动保存到本地计算机。此自动保存包括尚未手动保存的新创建项目。
+
+### 新项目
+
+在切换到另一个项目、关闭浏览器选项卡等时，Analysis Workspace 会提示您手动保存新项目。
+
+如果由于任何原因，您在手动保存新创建的项目之前意外失去了对它的访问权限，则项目的恢复版本将保存在Analysis Workspace登录页上的名为&#x200B;**[!UICONTROL 已恢复项目（过去7天）]**&#x200B;的文件夹中。 恢复恢复的项目并手动将其保存到所需位置。
+
+要恢复已恢复的项目：
+
+1. 转到Analysis Workspace登录页上的&#x200B;**[!UICONTROL 恢复的项目（过去7天）]**&#x200B;文件夹。
+
+<!-- 
+     ![The list of folders highlighting the Recovered Project folder.](assets/recovered-folder.png)
+  -->
+
+1. 打开您的项目并将其保存到所需位置。
+
+
+### 现有项目
+
+如果由于任何原因而离开项目时更改尚未自动保存，Analysis Workspace会提示您保存更改或提供警告消息。
+
+
+一些常见的情况是：
+
+#### 打开另一个项目
+
+如果在处理包含尚未自动保存的更改的项目时打开另一个项目，Analysis Workspace会提示您保存当前项目。
 
 可以使用以下选项：
 
-* **保存：** 用您的最新更改替换项目的最新自动保存的本地副本。
-* **另存为：** 将您最近的更改另存为新项目。原始项目仅保存最新的自动保存的更改。
-* **放弃更改：**&#x200B;放弃您最近的更改。该项目保留最近自动保存的更改。
+* **[!UICONTROL 保存]**：将项目的最新自动保存本地副本替换为最新更改。
+* **[!UICONTROL 放弃更改]**：放弃您的最新更改。 项目将保留最近自动保存的本地副本。
+* **[!UICONTROL 取消]**：取消操作以打开另一个项目并保持现有项目处于打开状态。
 
-![单击“保存”将更改保存到项目。](assets/existing-save.png)
+<!-- ![Click Save to save changes to a project.](assets/existing-save.png) -->
 
-### 离开或关闭选项卡
+#### 离开或关闭选项卡
 
-如果您在查看包含尚未自动保存的更改的项目时离开页面或关闭浏览器选项卡，浏览器会警告您未保存的更改将丢失。您可以选择离开或取消。
+如果您在查看包含尚未自动保存的更改的项目时离开页面或关闭浏览器选项卡，则浏览器会警告您未保存的更改将丢失。 您可以选择离开或取消。 浏览器如何警告您取决于您使用的浏览器。
 
-![单击“离开”离开网站，或单击“取消”导航而不保存更改。](assets/browser-image.png)
 
 ### 浏览器崩溃或会话超时
 
-如果浏览器崩溃或会话超时，则下次访问 Analysis Workspace 时，系统会提示您恢复尚未自动保存的项目更改。
+如果浏览器崩溃或会话超时，则下次访问Analysis Workspace时，系统会提示您恢复对项目所做的任何尚未自动保存的更改。
 
-以下是您在崩溃或超时后首次访问 Analysis Workspace 时显示的项目恢复对话框。
+* 选择&#x200B;**[!UICONTROL 是]**&#x200B;将从最近自动保存的副本中恢复项目。
 
-选择&#x200B;**是**&#x200B;将从最近自动保存的副本中恢复项目。
+* 选择&#x200B;**[!UICONTROL 否]**&#x200B;将删除自动保存的副本并打开项目的最后一个用户保存的版本。
 
-选择&#x200B;**否**&#x200B;将删除自动保存的副本并打开项目的最后一个用户保存的版本。
+<!--![The Project Recovery dialog box.](assets/project-recovery.png)-->
 
-![项目恢复对话框。](assets/project-recovery.png)
+
 
 对于从未保存的&#x200B;**新**&#x200B;项目，未保存的更改将无法恢复。
 
-## 打开以前的版本 {#previous-version}
 
-要打开以前的项目版本，请执行以下操作: 
+<!-- Shouldn't this belong to another page?  Moved it to a new open projects page
 
-1. 转到&#x200B;**[!UICONTROL 项目]** > **[!UICONTROL 打开以前的版本]**
 
-   ![以前保存的项目版本列表和选项显示“所有版本”或“仅带注释的版本”。](assets/previous-versions.png)
+## Open previously saved version
 
-1. 查看可用的先前版本列表。
-   此时会显示[!UICONTROL 时间戳]和[!UICONTROL 编辑者]，如果在[!UICONTROL 编辑者]保存时添加了注释，还会显示[!UICONTROL 注释]。不带注释的版本会存储 90 天；带注释的版本会存储 1 年。
-1. 选择以前的版本，并单击&#x200B;**[!UICONTROL 加载]**。
-然后，以前的版本会加载并出现一条通知。在单击**[!UICONTROL 保存]**&#x200B;之前，以前的版本不会成为项目的当前保存版本。如果您离开加载的版本，返回时将看到上次保存的项目版本。
+To open a previously saved version of a project:
+
+1. Select **[!UICONTROL Open previous version]** from the **[!UICONTROL Project]** menu.
+
+   ![The Previously saved project versions list and options to show All versions or Only versions with notes.](assets/open-previously-saved.png)
+
+1. Review the list of previous versions available. You can switch between **[!UICONTROL All versions]** and **[!UICONTROL Only versions with notes]**.
+
+   For each version, the list shows a timestamp
+   [!UICONTROL Timestamp] and [!UICONTROL Editor] are shown, in addition to [!UICONTROL Notes] if they were added when the [!UICONTROL Editor] saved. Versions without notes are stored for 90 days; versions with notes are stored for 1 year.
+1. Select a previous version and click **[!UICONTROL Load]**.
+   The previous version then loads with a notification. The previous version does not become the current saved version of your project until you click **[!UICONTROL Save]**. If you navigate away from the loaded version, when you return, you will see the last saved version of the project.
+
+-->
