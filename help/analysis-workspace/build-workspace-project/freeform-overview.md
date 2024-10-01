@@ -5,7 +5,7 @@ title: 项目概述
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 98a92fff2a0fae7ad3e6d94e61f8babed3c11eb7
+source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 6%
@@ -52,7 +52,7 @@ ht-degree: 6%
 | --- | --- | 
 | ![SelectBox](/help/assets/icons/SelectBox.svg) | 选择一个或多个项目后，“项目”界面的底部会显示一个蓝色操作栏。 有关详细信息，请参阅[操作](#actions)。 |
 | ![星形大纲](/help/assets/icons/StarOutline.svg) | 选择支持![Star](/help/assets/icons/Star.svg)或取消支持![StarOutline](/help/assets/icons/StarOutline.svg)项目。 |
-| **[!UICONTROL 标题和描述]** | 要编辑项目，请选择标题链接，这会打开[Workspace项目](/help/analysis-workspace/home.md)。 与您共享的项目以![共享](/help/assets/icons/Share.svg)表示。 选择![信息大纲](/help/assets/icons/InfoOutline.svg)以显示包含项目更多详细信息的弹出菜单。 选择![更多](/help/assets/icons/More.svg)以打开包含操作的上下文菜单。 有关详细信息，请参阅[操作](#actions)。 |
+| **[!UICONTROL 标题和描述]** | 要编辑项目，请选择标题链接，这会打开[Workspace项目](/help/analysis-workspace/home.md)。 与您共享的项目以![共享](/help/assets/icons/ShareLight.svg)表示。 选择![信息大纲](/help/assets/icons/InfoOutline.svg)以显示包含项目更多详细信息的弹出菜单。 选择![更多](/help/assets/icons/More.svg)以打开包含操作的上下文菜单。 有关详细信息，请参阅[操作](#actions)。 |
 | **[!UICONTROL 类型]** | Workspace项目、![FolderUser](/help/assets/icons/FolderUser.svg)文件夹或[移动记分卡](https://experienceleague.adobe.com/en/docs/analytics/analyze/mobapp/home)。 |
 | **[!UICONTROL 标记]** | 应用于项目的标记。 |
 | 已计划 | 项目是否计划通过电子邮件发送给收件人。 选项为![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL 开启]**&#x200B;或![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL 关闭]**。 查看[将项目数据发送给其他人](/help/analysis-workspace/export/t-schedule-report.md)。 |
@@ -82,7 +82,7 @@ ht-degree: 6%
 |---|---|
 | 已选择![CrossSize75](/help/assets/icons/CrossSize75.svg) **[!UICONTROL *x *]** | 取消选择选定的项目和文件夹，并删除蓝色操作栏。 |
 | ![删除](/help/assets/icons/Delete.svg) **[!UICONTROL 删除]** | 删除一个或多个项目或文件夹。 系统会提示您进行确认。 |
-| ![共享](/help/assets/icons/Share.svg) **[!UICONTROL 共享]** | 共享项目。 有关详细信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)。 |
+| ![共享](/help/assets/icons/ShareLight.svg) **[!UICONTROL 共享]** | 共享项目。 有关详细信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)。 |
 | ![编辑](/help/assets/icons/Edit.svg)重命名 | 重命名项目。 打开&#x200B;**[!UICONTROL 重命名： *项目名称对话框&#x200B;*]**。 输入新名称，然后选择**[!UICONTROL 保存&#x200B;]**。 |
 | ![副本](/help/assets/icons/Copy.svg) **[!UICONTROL 副本]** | 复制一个或多个项目。 项目的名称和后缀`(Copy)`相同。 |
 | ![PinOnff](/help/assets/icons/PinOff.svg) **[!UICONTROL Pin]**&#x200B;或&#x200B;**[!UICONTROL 取消固定]** | 固定或取消固定一个或多个项目或文件夹。 固定项目和文件夹显示在列表顶部，并忽略您指定的排序顺序。 |

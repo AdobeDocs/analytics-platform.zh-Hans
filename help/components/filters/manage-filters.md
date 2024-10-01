@@ -4,7 +4,7 @@ description: 了解如何管理Customer Journey Analytics中的筛选器
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
 role: User
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 4%
@@ -37,7 +37,7 @@ ht-degree: 4%
 | 栏目 | 描述 |
 | --- | --- | 
 | ![星形大纲](/help/assets/icons/StarOutline.svg) | 选择支持![星型](/help/assets/icons/Star.svg)或取消支持![星型大纲](/help/assets/icons/StarOutline.svg)筛选器。 查看[将筛选器标记为收藏](/help/components/filters/filters-favorite.md) |
-| **[!UICONTROL 标题和描述]** | 要编辑筛选器，请选择标题链接，这将打开[筛选器生成器](filter-builder.md)。 通过![共享](/help/assets/icons/Share.svg)指示共享筛选器。 |
+| **[!UICONTROL 标题和描述]** | 要编辑筛选器，请选择标题链接，这将打开[筛选器生成器](filter-builder.md)。 通过![共享](/help/assets/icons/ShareLight.svg)指示共享筛选器。 |
 | **[!UICONTROL 数据视图]** | 此过滤器应用于的数据视图。 |
 | **[!UICONTROL 所有者]** | 筛选器的所有者。 作为用户，您只会看到自己拥有的过滤器或与您共享的注释。 |
 | **[!UICONTROL 标记]** | 此过滤器的标记。 |
@@ -59,7 +59,7 @@ ht-degree: 4%
 | ![添加圆圈](/help/assets/icons/AddCircle.svg) **[!UICONTROL 添加]** | 使用[筛选器生成器](filter-builder.md)添加另一个筛选器。 |
 | ![搜索](/help/assets/icons/Search.svg) [!UICONTROL *按标题搜索*] | 在列表中未选择筛选器时，使用此搜索字段搜索筛选器。 |
 | ![标签](/help/assets/icons/Label.svg) **[!UICONTROL 标签]** | 标记所选过滤器。 在&#x200B;**[!UICONTROL 标记筛选器]**&#x200B;对话框中，选择或取消选择所选筛选器的标记。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存所选筛选器的标记。 有关详细信息，请参阅[标记筛选器](/help/components/filters/filters-tag.md)。 |
-| ![共享](/help/assets/icons/Share.svg) **[!UICONTROL 共享]** | 共享所选的过滤器。 在&#x200B;**[!UICONTROL 共享筛选器]**&#x200B;对话框中，您可以![搜索](/help/assets/icons/Search.svg) *搜索个人或组*，也可以选择&#x200B;**[!UICONTROL 组织]**&#x200B;或&#x200B;**[!UICONTROL 组]**。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存所选筛选器的共享详细信息。 有关详细信息，请参阅[共享筛选器](filters-share.md)。 |
+| ![共享](/help/assets/icons/ShareLight.svg) **[!UICONTROL 共享]** | 共享所选的过滤器。 在&#x200B;**[!UICONTROL 共享筛选器]**&#x200B;对话框中，您可以![搜索](/help/assets/icons/Search.svg) *搜索个人或组*，也可以选择&#x200B;**[!UICONTROL 组织]**&#x200B;或&#x200B;**[!UICONTROL 组]**。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存所选筛选器的共享详细信息。 有关详细信息，请参阅[共享筛选器](filters-share.md)。 |
 | ![删除](/help/assets/icons/Delete.svg) **[!UICONTROL 删除]** | 删除所选的过滤器。 系统会提示您进行确认。 |
 | ![编辑](/help/assets/icons/Edit.svg)**[!UICONTROL 重命名]** | 重命名单个选定的筛选器。 选中后，可以内联重命名筛选器。 |
 | ![复选标记Circle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 批准]** | 批准所选过滤器。 有关详细信息，请参阅[批准筛选器](filters-approve.md)。 |
