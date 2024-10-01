@@ -5,104 +5,72 @@ title: 可视化图表概述
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: d903745e105edb11ef6f43b6137e1e03d43e5e07
+source-git-commit: 714e37433b12713e45a66ebd64771c050edb89a5
 workflow-type: tm+mt
-source-wordcount: '1344'
-ht-degree: 78%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # 可视化图表概述
 
-工作区提供了许多可视化图表，使您能够生成数据的可视化表示形式，如条形图、圆环图、直方图、折线图、地图、散点图等。如果您使用 Customer Journey Analytics，则您已经熟悉了大多数可视化图表类型。但是，Analysis Workspace 提供了可视化图表设置，以及许多全新或独特的具有交互功能的可视化图表类型。
+Workspace提供了许多可视化图表，可让您生成数据的可视化表示形式。 如条形图、圆环图、直方图、折线图、地图、散点图等。
 
-## 可视化图表类型 
+## 类型
 
 Analysis Workspace 中提供了以下可视化图表类型：
 
-| 可视化图表名称 | 描述 |
-| --- | --- | 
-| [面积图](/help/analysis-workspace/visualizations/area.md)<p>![区域图标](assets/Smock_GraphArea_18_N.svg)</p> | 与线形图相似，但线条下有彩色区域。当您有多个指标并且希望显示两个或更多指标相交的区域时，可使用面积图。 |
-| [条形图](/help/analysis-workspace/visualizations/bar.md) <p>![栏图标](assets/Smock_GraphBarVertical_18_N.svg)</p> | 显示一些垂直条，这些垂直条表示一个或多个指标中的各种值。 |
-| [项目符号图表](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![项目符号图标](assets/Smock_GraphBullet_18_N.svg)</p> | 显示您感兴趣的值与其他性能范围（目标）进行比较或衡量的结果。 |
-| [同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![同类群组表图标](assets/Smock_TextNumbered_18_N.svg)</p> | *`cohort`* 是指一组在特定期限内共享相同特性的人员。同类群组分析对于保留、流失或延迟分析非常有用。 |
-| [圆环图](/help/analysis-workspace/visualizations/donut.md) <p>![圆环图标](assets/Smock_GraphDonut_18_N.svg)</p> | 此可视化图表与饼图类似，它将数据显示为整体的一部分或筛选条件。 |
-| [流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)<p>![流失图标](assets/Smock_ConversionFunnel_18_N.svg)</p> | <!-- Similar to Journey canvas, -->“流失”可视化图表显示人员从何处离开（流失）或继续通过（流过）预定义的页面序列。 流失可视化图表可以设置为最终序列或确切序列。 <p><!-- Unlike Journey canvas, -->流失可视化图表仅为具有单个已知开始和结束的线性历程提供分析。</p> |
-| [流](/help/analysis-workspace/visualizations/c-flow/flow.md)<p>![流程图标](assets/flow-icon.png)</p> | 显示客户在您的网站和应用程序中的确切路径。 |
-| [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)<p>![自由格式表图标](assets/Smock_ViewTable_18_N.svg)</p> | 自由格式表不仅可以作为数据表，而且还是一个交互式可视化图表。这是在工作区中进行数据分析的基础。 |
-| [直方图](/help/analysis-workspace/visualizations/histogram.md)<p>![直方图图标](assets/Smock_GraphHistogram_18_N.svg)</p> | 直方图根据量度数量，将人员、访问或事件划分到存储桶中。 |
-| [水平条](/help/analysis-workspace/visualizations/horizontal-bar.md)<p>![水平条形图标](assets//Smock_GraphBarHorizontal_18_N.svg)</p> | 显示一些水平条，这些水平条表示一个或多个指标中的各种值。 |
-| [折线图](/help/analysis-workspace/visualizations/line.md)<p>![行图标](assets/Smock_GraphTrend_18_N.svg)</p> | 使用线条来表示指标，以显示一段时间内值的变化情况。将时间作为 x 轴的线形图。 |
-| [散点图](/help/analysis-workspace/visualizations/scatterplot.md) <p>![散点图图标](assets/Smock_GraphScatter_18_N.svg)</p> | 显示维度项目与最多三个指标之间的关系。 |
-| [概要数字](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![摘要数字图标](assets/summary-number-icon.png)</p> | 将选择的单元格显示为 1 个多位数。 |
-| [概要变化](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![摘要更改图标](assets/summary-change-icon.png)</p> | 将所选单元格之间的变化显示为 1 个多位数/百分比。 |
-| [文本](/help/analysis-workspace/visualizations/text.md)<p>![散点图图标](assets/Smock_Text_18_N.svg)</p> | 使您克将用户定义的文本添加到您的工作区。在利用面板/可视化图表描述之外，对于向您的分析和见解添加额外的上下文非常有用 |
-| [树形图](/help/analysis-workspace/visualizations/treemap.md)<p>![树状图图标](assets/Smock_GraphTree_18_N.svg)</p> | 将分层（树结构）数据显示为一组嵌套的矩形。 |
-| [维恩图](/help/analysis-workspace/visualizations/venn.md)<p>![维恩图标](assets/venn-icon.png)</p> | 使用圆圈来描述最多 3 个过滤器之间的量度重叠。 |
+| 图标 | 名称 | 描述 |
+| :---: | --- | ---| 
+| ![GraphArea](/help/assets/icons/GraphArea.svg) | [面积图](/help/analysis-workspace/visualizations/area.md) | 面积图可视化。 与线形图相似，但线条下有彩色区域。当您有多个指标并且希望显示两个或更多指标相交的区域时，可使用面积图。 |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [条形图](/help/analysis-workspace/visualizations/bar.md) | 条形图可视化图表，其中垂直条形表示一个或多个量度中的各种值。 |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVerticalStacked.svg) | [栈叠的条形图](/help/analysis-workspace/visualizations/bar.md) | 栈叠条形图可视化图表，其中垂直条形表示一个或多个量度中的各种值。 |
+| ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p> | [项目符号](/help/analysis-workspace/visualizations/bullet-graph.md) | 项目符号可视化图表，用于显示您感兴趣的值与其他性能范围（目标）进行比较或衡量的结果。 |
+| ![文本编号](/help/assets/icons/TextNumbered.svg) | [同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | 同类群组可视化是指一组在特定期限内共享相同特性的人员。 同类群组表对于保留、流失或延迟分析非常有用。 |
+| ![组合](/help/assets/icons/ComboChart.svg) | [组合](combo-charts.md) | 通过组合图表，可快速构建比较可视化图表，而无需先构建表格。 |
+| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [圆环图](/help/analysis-workspace/visualizations/donut.md) | 圆环图可视化图表与饼图类似，它将数据显示为整体的一部分或过滤器。 |
+| ![转化漏斗](/help/assets/icons/ConversionFunnel.svg) | [流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | 流失可视化图表显示人员从何处离开（流失）或继续通过（流过）预定义的页面序列。 |
+| ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [流](/help/analysis-workspace/visualizations/c-flow/flow.md) | 流量可视化图表可显示客户浏览您的网站和应用程序的确切路径。 |
+| ![视图表](/help/assets/icons/ViewTable.svg)</p> | [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | 自由格式表可视化图表是一种交互式可视化图表。 自由格式表可视化图表是Workspace中进行数据分析的基础。 |
+| ![GraphHistogram](/help/assets/icons/Histogram.svg) | [直方图](/help/analysis-workspace/visualizations/histogram.md) | 直方图可视化图表根据量度数量，将人员、访问次数或事件划分到存储桶中。 |
+| ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [水平条](/help/analysis-workspace/visualizations/horizontal-bar.md) | 水平条形图可视化显示一些水平条，这些水平条表示一个或多个量度中的各种值。 |
+| ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [栈叠的水平条形图](/help/analysis-workspace/visualizations/horizontal-bar.md) | 栈叠的水平条形图可视化显示一些水平条，这些水平条表示一个或多个量度中的各种值。 |
+| ![关键量度](/help/assets/icons/KeyMetrics.svg) | [关键量度摘要](/help/analysis-workspace/visualizations/key-metric.md) | 关键量度摘要可视化图表将线条、摘要更改和摘要编号可视化图表组合在一起。 |
+| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [折线图](/help/analysis-workspace/visualizations/line.md) | 折线图可视化图表使用线条来表示量度，以显示一段时间内值的变化情况。 将时间作为 x 轴的线形图。 |
+| ![图形散点图](/help/assets/icons/GraphScatter.svg) | [散点图](/help/analysis-workspace/visualizations/scatterplot.md) | 散点图可视化图表显示维度项目与最多三个量度之间的关系。 |
+| ![页面规则](/help/assets/icons/PageRule.svg) | [节标题](section-header.md) | 标识和连接面板中的截面。 |
+| ![上移下移](/help/assets/icons/MoveUpDown.svg) | [概要变化](/help/analysis-workspace/visualizations/summary-number-change.md) | 概要变化可视化图表将选定单元格之间的变化显示为较大的数字或百分比。 |
+| ![123](/help/assets/icons/123.svg)</p> | [摘要数字](/help/analysis-workspace/visualizations/summary-number-change.md) | 概要数字可视化图表将选定的单元格显示为一个大数字。 |
+| ![文本](/help/assets/icons/Text.svg) | [文本](/help/analysis-workspace/visualizations/text.md) | 文本可视化图表允许您将用户定义的文本添加到Workspace。 在利用面板/可视化图表描述之外，对于向您的分析和见解添加额外的上下文非常有用 |
+| ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [树形图](/help/analysis-workspace/visualizations/treemap.md)<p> | 树形图可视化图表将分层（树结构）数据显示为一组嵌套的矩形。 |
+| ![类型](/help/assets/icons/TwoDots.svg) | [维恩图](/help/analysis-workspace/visualizations/venn.md) | 维恩图可视化图表使用圆圈来描述最多3个过滤器之间的量度重叠。 |
 
 <!-- Add beneath Horizontal bar in the table above: | [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Similar to Fallout, Journey canvas shows where persons left (fell out) and continued through (fell through) a predefined sequence of pages. <p>Unlike Fallout, Journey canvas supports not only linear journeys, but any number of entry points and paths. Furthermore, journeys can be created in Adobe Journey Optimizer and then analyzed in Journey canvas.</p> | -->
 
 ## 向面板添加可视化图表
 
-1. 打开要添加可视化图表的Analysis Workspace项目。
+1. 打开要添加可视化图表的Workspace项目。
 
 1. 使用以下任意方法来添加可视化图表：
 
-   * 在左边栏中，选择&#x200B;**可视化图表**&#x200B;图标<!-- add icon -->，然后将可视化图表拖到要添加该可视化图表的面板中。
+   ![添加可视化图表](assets/add-visualization.png)
 
-     ![可视化面板](assets/viz-rail.png)
+   * 在左侧面板中，选择![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **可视化图表**，然后将可视化图表拖动到要将可视化图表添加到的面板。
 
-   * 在要添加可视化图表的面板上，选择&#x200B;**加号**&#x200B;图标，然后选择表示要添加的可视化图表的图标。 将鼠标悬停在每个可视化图表的图标上可查看其名称。
+   * 在要添加可视化图表的面板上，选择![AddCircle](/help/assets/icons/AddCircle.svg)，然后选择表示要添加的可视化图表的图标。 将鼠标悬停在每个可视化图表的图标上可查看名称。
 
-     用于添加可视化图表的![按钮](assets/visualization-add-to-panel.png)
+   * 添加[空白面板](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/blank-panel)，然后选择要添加的可视化图表。
 
-   * 添加[空白面板](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html?lang=zh-Hans)，然后选择要添加的可视化图表。
+   * 从Analysis Workspace项目中现有可视化图表的上下文菜单中，选择&#x200B;**[!UICONTROL 复制可视化图表]**&#x200B;或&#x200B;**[!UICONTROL 复制可视化图表]**。
 
-     ![空白面板](assets/blank_panel.png)
+   * 使用Workspace **[!UICONTROL 插入]**&#x200B;菜单插入可视化图表。
 
-   * 右键单击Analysis Workspace项目中的现有面板，然后选择&#x200B;[!UICONTROL **复制可视化图表**]&#x200B;或&#x200B;[!UICONTROL **复制可视化图表**]。
+   * 从自由格式表的上下文菜单中，选择&#x200B;**[!UICONTROL 可视化]**。 然后从子菜单中选择可视化。 Workspace会根据表中的当前选择，确定要提供的可视化图表，并对数据进行解释以构建请求的可视化图表。
 
-## 自定义可视化图表设置
 
-您可以为单个可视化图表或您创建的所有可视化图表自定义可视化图表设置。
+## 图例
 
-### 为单个可视化图表自定义可视化图表设置
-
-要访问单个可视化图表的[!UICONTROL 可视化设置]，请执行以下操作：
-
-1. 在 Analysis Workspace 中，将鼠标悬停在要自定义其设置的可视化图表上。
-
-1. 单击齿轮图标。
-
-   每种类型的可视化图表都具有可自定义的独特设置。有关可用设置的信息，请参阅[设置](#settings)。
-
-### 为您创建的所有可视化图表自定义可视化图表设置
-
-您可以为您创建的所有可视化图表自定义设置。有关更多信息，请参阅[用户偏好设置](/help/analysis-workspace/user-preferences.md)。
-
-## 设置 {#settings}
-
-每个可视化图表都有其自身的设置，您可以管理这些设置。要访问可视化设置，请选择设置图标![列设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg)。
-
-<img src="./assets/viz-settings-line.png" alt="可视化设置" width="50%" />
-
-| 设置 | 描述 |
-| --- | --- |
-| 可视化图表类型 | 更改描述数据所用的视觉效果的类型。 |
-| 粒度 | 对于趋势性的可视化图表，您可从此下拉菜单更改下拉列表中。 此更改也适用于数据源表。 |
-| 百分比 | 显示百分数值。 |
-| 100% 堆叠 | 在面积堆叠、条形堆叠或水平条形堆叠的可视化图表上的此设置将图表转换为“100% 堆叠”的可视化图表。示例： ![显示栈叠100%选项视图的条形图。](assets/stacked_100_percent.png) |
-| 图例可见 | 此设置允许您为概要数字/概要变化可视化图表隐藏详细的图例文本。 |
-| 限制最大项目数 | 允许您限制可视化图表显示的项目数量。 |
-| 将 Y 轴定位为 0 | 如果图表上绘制的所有值都远远大于零，则图表默认会将 y 轴底部设置为非零值。如果选中此框，y 轴将被强制设置为零（并将重新绘制图表）。 |
-| 标准化 | 要求所有指标按等比例计算。在所绘制指标的数量级差别很大时，此项非常有用。 |
-| 显示双轴 | 仅适用于具有两个指标的情况，可以在左（用于一个指标）、右（用于另一个指标）两边各有一个 y 轴。在所绘制量度的数量级差别很大时，此项非常有用。 |
-| 显示异常 | 通过显示异常检测来增强线形图和自由格式表。线形可视化图表中的异常检测包括预期值（虚线）和预期范围（阴影带）。 |
-| 显示预测 | 通过显示预测值来增强线形图和自由格式表。 |
-
-## 图例 {#legend}
-
-可视化图表图例可帮助您将源表中的日期与可视化图表中绘制的系列关联起来。图例是交互式的，在可视化图表中单击某个图例项可显示/隐藏一个系列。在需要简化所显示的数据时，这非常有用。
+可视化图表图例可帮助您将源表中的日期与可视化图表中绘制的系列关联起来。图例是交互式的 — 您可以选择图例项来显示/隐藏可视化图表中的系列，这在要简化所显示的数据时很有用。
 
 此外，可以重命名图例标签，这样有助于更好地使用视觉效果。注意：图例编辑&#x200B;**不会**&#x200B;应用到：树形图、项目符号、概要变化/概要数字、文本、自由格式表、直方图、同类群组或流可视化图表。
 
@@ -116,25 +84,81 @@ Analysis Workspace 中提供了以下可视化图表类型：
 1. 输入新的标签文本。
 1. 按 **[!UICONTROL Enter]** 键保存。
 
-## 右键单击菜单 {#right-click}
 
-可视化图表的其他功能可通过在可视化图表的标题上右键单击来使用。其设置因可视化图表而异。其中一些设置包括：
+## 设置
+
+每个可视化图表都有自己的设置。 要访问可视化图表设置，请在可视化图表标题中选择![设置](/help/assets/icons/Setting.svg) **[!UICONTROL 设置]**&#x200B;以显示弹出窗口。
+
+根据可视化图表，您可以配置
+
+* 通过[**[!UICONTROL 数据源]**](#data-source)选项卡显示的可视化数据源的详细信息，并且
+* 通过[**[!UICONTROL 设置]**](#settings-1)选项卡的可视化设置。
+
+![可视化设置](assets/visualization-settings.png)
+
+### 数据源
+
+您可以控制数据源中的哪些数据源以及项或位置对应于可视化图表。 有关详细信息，请参阅[管理数据源](t-sync-visualization.md)。
+
+### 设置
+
+可视化决定了哪些可视化设置可用。 下表总结了最常见的设置。 某些可视化图表具有特定的设置。 有关更多详细信息，请参阅单个可视化图表文档。
+
+| 选项 | 描述 |
+| --- | --- |
+| **[!UICONTROL 可视化类型]** | 更改用于可视化数据的可视化图表类型。 |
+| **[!UICONTROL 粒度]** | 更改趋势可视化图表的时间粒度。 此更改也适用于数据源表。 |
+| **[!UICONTROL 百分比]** | 以百分比显示值。 |
+| **[!UICONTROL 100%栈叠]** | 将图表转换为100%栈叠的可视化图表。  仅适用于面积图、条形图和栈叠的水平条形图可视化图表。 |
+| **[!UICONTROL 图例可见]** | 显示图例文本。 |
+| **[!UICONTROL 限制最大项目数]** | 限制可视化图表显示的项目数。 选中后，定义最大项数。 |
+| **[!UICONTROL 显示注释]** | 显示为此可视化图表所做的批注。 |
+| **[!UICONTROL 隐藏标题]** | 隐藏可视化图表的标题。 |
+| **[!UICONTROL 将 Y 轴固定在 0]** | 强制y轴底部为零。 如果图表上绘制的所有值都显着高于零，则图表默认值会使y轴底部非零。 如果启用此选项，Y轴将被强制为零（并且图表将被重绘）。 |
+| **[!UICONTROL 显示双轴]** | 显示两个不同量度的左右两侧Y轴。 此选项仅适用于具有两个量度的情况。 当绘制的量度数量级不同时，双轴很有用。 |
+| **[!UICONTROL 显示 X 轴]** | 在可视化图表中显示X轴。 |
+| **[!UICONTROL 显示 Y 轴]** | 在可视化图表中显示Y轴。 |
+| **[!UICONTROL 在线上显示杠铃]** | 在组合图表可视化图表的折线图可视化图表上显示杠铃。 |
+| **[!UICONTROL 标准化]** | 强制实施等比例指标。 当绘制的指标处于不同程度时，同等比例会很有帮助。 |
+| **[!UICONTROL 显示异常]** | 通过显示异常检测来增强线形图和自由格式表。 线形可视化图表中的异常检测包括预期值（虚线）和预期范围（阴影带）。 |
+| **[!UICONTROL 显示预测]** | 通过显示预测值来增强线形图和自由格式表。 |
+| **[!UICONTROL 显示最小值]** | 在可视化中显示最小值。 |
+| **[!UICONTROL 显示最大值]** | 在可视化中显示最大值。 |
+| **[!UICONTROL 显示趋势线]** | 在可视化图表中显示趋势线。 选中后，您可以从下拉菜单中选择趋势线类型。 |
+
+
+
+您可以自定义创建的所有可视化图表的设置。 有关更多信息，请参阅[用户偏好设置](/help/analysis-workspace/user-preferences.md)。
+
+
+## 上下文菜单 {#right-click}
+
+在可视化图表的标题上使用上下文菜单（可通过替代选择使用，例如，使用鼠标时右键单击）来访问可视化图表的附加功能。 并非所有选项都可用于所有可视化图表。
 
 ![显示右键单击选项的其他可视化设置。 下一节将介绍这些选项。](assets/right-click.png)
 
-| 设置 | 描述 |
+| 选项 | 描述 |
 | --- | --- |
-| 插入复制的面板/可视化图表 | 使用此设置，您可以将复制的面板或可视化图表粘贴（“插入”）到项目中的其他位置或完全不同的项目中。 |
-| 复制可视化图表 | 此设置允许您右键单击并复制可视化图表，以便将其插入到项目中的其他位置或完全不同的项目中。 |
-| [下载项目数据](/help/analysis-workspace/export/download-send.md) | 以 CSV 格式下载所选维度，最多下载 50,000 个维度项。 |
-| [下载项目数据](/help/analysis-workspace/export/download-send.md) | 以 CSV 格式下载可视化图表数据源。 |
-| 复制可视化 | 生成一个与当前可视化图表完全相同的副本，然后可对其进行修改。 |
-| 编辑描述 | 添加（或编辑）可视化图表的文本描述。 |
-| 获取可视化图表链接 | 此设置允许您将用户引导至项目中的可视化图表。单击该链接时，收件人需要先登录，然后才能转至所链接到的确切可视化图表。 |
-| 从头开始 | （适用于流、维恩图、直方图）删除当前可视化图表的设置，以便您从头开始重新配置。 |
+| **[!UICONTROL 插入复制的可视化图表]** | 将复制的可视化图表粘贴（插入）到项目中的其他位置或完全不同的项目中。 |
+| **[!UICONTROL 将数据复制到剪贴板]** | 将数据从可视化图表复制到剪贴板。 |
+| **[!UICONTROL 将选定内容复制到剪贴板]** | 将可视化图表中的选定内容复制到剪贴板。 |
+| **[!UICONTROL 以CSV格式下载项目（*维度名称*）]** | 将可视化的维度项目（最多50,000个）下载到您的本地设备。 所选维度的最大维度项为50,000个。 |
+| **[!UICONTROL 复制可视化图表]** | 复制可视化图表，以便您可以将该可视化图表插入到项目中的其他位置或完全不同的项目中。 |
+| **[!UICONTROL 下载数据CSV]** | 将可视化图表显示的数据下载到您的本地设备。 |
+| **[!UICONTROL 导出完整表]** | 将整个表导出到指定的云位置。 请参阅[将Customer Journey Analytics报告导出到云](../export/export-cloud.md) |
+| **[!UICONTROL 重复的可视化图表]** | 生成一个与可视化图表完全相同的副本。 |
+| **[!UICONTROL 编辑描述]** | 添加（或编辑）可视化图表的文本描述。 查看[文本](text.md)。 |
+| **[!UICONTROL 获取可视化图表链接]** | 直接复制并共享可视化图表的链接。 共享链接对话框会显示该链接。 选择复制以将链接复制到剪贴板。 |
+| **[!UICONTROL 从头开始]** | 删除当前可视化图表的配置，以便您可以从头开始重新配置。 |
 
-## “创建可视化”图标 {#quick-viz}
+## 配置
 
-如果您不确定所要创建的可视化图表，请单击任意表行中的&#x200B;**[!UICONTROL 创建可视化]**&#x200B;图标（将光标悬停于上方即可显示）。这是添加可视化图表最快的方法。单击此图标将提示 Analysis Workspace 针对哪种可视化图表最适合您的数据做出有根据的推测。例如，如果您选择了 1 行，则会创建趋势线形图。如果您选择了 3 个过滤器行，则会创建维恩图。
+某些可视化图表（例如同类群组表、流失、流量等）具有配置对话框以帮助您构建可视化图表。 使用可视化图表顶部的![编辑](/help/assets/icons/Edit.svg)来访问和更改配置。
+
+![配置窗格](assets/configuration.png)
+
+## 可视化
+
+如果不确定应选取哪个可视化图表，请在任意自由格式表行中选择![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) **[!UICONTROL 可视化]**（悬停时可用）。 此选择是添加可视化图表最快的方法。 Analysis Workspace会针对哪种可视化图表最适合您的数据做出有根据的猜测。 例如，如果您选择了一行，它将创建趋势[折线图](line.md)。 如果您选择了三个筛选器行，则会创建一个[维恩图](venn.md)。
 
 ![快速可视化](assets/quick-viz.png)
