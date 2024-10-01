@@ -4,141 +4,207 @@ title: 构建过滤器
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: e1f1e37293f1a18616b11fea685d372ec499c407
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '1255'
-ht-degree: 20%
+source-wordcount: '1450'
+ht-degree: 4%
 
 ---
 
-# 过滤器生成器
+# 构建过滤器 {#build-filters}
 
-通过[!UICONTROL 筛选器生成器]，可生成简单或复杂的筛选器，这些筛选器可标识跨访问和事件的人员属性和操作。 它提供了一个画布以将指标维度、事件或其他过滤器拖放到其中，从而根据层次结构逻辑、规则和运算符筛选人员。
+<!-- markdownlint-disable MD034 -->
 
-有关如何创建仅应用于创建快速筛选器的项目的信息，请参阅[快速筛选](/help/components/filters/quick-filters.md)。
+>[!CONTEXTUALHELP]
+>id="cja_components_filters_createaudience"
+>title="创建受众"
+>abstract="可以从过滤器创建受众并与 Adobe Experience Platform 共享以进行激活。"
 
-## 访问过滤器生成器
+<!-- markdownlint-enable MD034 -->
 
-您可以通过以下任意方式访问过滤器生成器：
 
-* **顶部导航**：单击&#x200B;**[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL 组件]** > **[!UICONTROL 筛选器]**。
-* **[!UICONTROL Analysis Workspace]**：在Analysis Workspace中打开一个项目，选择&#x200B;**[!UICONTROL +组件]** > **[!UICONTROL 创建筛选器]**。
-* **[!UICONTROL Report Builder]**： [使用Report Builder](/help/report-builder/work-with-filters.md)中的筛选器。
+**[!UICONTROL 筛选器生成器]**&#x200B;对话框用于创建新筛选器或编辑现有筛选器。 该对话框的标题为&#x200B;**[!UICONTROL 新筛选器]**&#x200B;或&#x200B;**[!UICONTROL 编辑筛选器]**，用于从[[!UICONTROL 筛选器]管理器](/help/components/filters/manage-filters.md)创建或管理的筛选器。
 
-## 生成器条件概述 {#section_F61C4268A5974C788629399ADE1E6E7C}
+>[!BEGINTABS]
 
-您可以添加规则定义和容器以定义过滤器。 （有关访问筛选器生成器的信息，请参阅[访问筛选器生成器](#access-the-filter-builder)。）
+>[!TAB 筛选器生成器]
 
-![筛选器生成器显示本节所述的新筛选器选项。](assets/segment_builder_ui_2.png)
+![显示下一节中描述的字段和选项的筛选器详细信息窗口。](assets/filter-builder.png)
 
-| UI 元素 | 描述 |
-| --- | --- |
-| **[!UICONTROL 标题]** | 命名过滤器 |
-| **[!UICONTROL 描述]** | 提供过滤器的详细说明。 |
-| **[!UICONTROL 标记]** | [通过从现有标记列表中选取标记或创建新标记来标记您创建的过滤器](/help/components/filters/manage-filters.md)。 |
-| **[!UICONTROL 定义]** | 在这里，您可以[生成和配置过滤器](/help/components/filters/filters-overview.md)、添加规则、嵌套和排列容器。 |
-| **[!UICONTROL 包含]** | （顶部容器选择器。） 允许您选择顶级[容器](/help/components/filters/filters-overview.md)（[!UICONTROL 人员]，[!UICONTROL 会话]，[!UICONTROL 事件]）。 默认的顶级容器为“事件”容器。 |
-| **[!UICONTROL 选项]** | （齿轮）图标 | <ul><li>**[!UICONTROL +添加容器]**：用于向筛选器定义添加新容器（在顶级容器下）。</li><li>**[!UICONTROL 排除]**：允许您通过排除一个或多个维度、过滤器或量度来定义过滤器。</li></ul> |
-| **[!UICONTROL 维度]** | 从Dimension列表中拖放的组件（橙色侧栏）。 |
-| **[!UICONTROL 运算符]** | 您可以使用选定的运算符比较和约束值。 （等于、不等于、包含、包含全部等） |
-| **[!UICONTROL 值]** | 为维度、过滤器或量度输入或选择的值。 |
-| **[!UICONTROL 归因模型]** | 这些模型仅适用于维度，它们确定要过滤的维度值。 Dimension模型在连续过滤器中特别有用。<ul><li>**[!UICONTROL 重复]**（默认）：包含维度的实例和保留值。</li><li>**[!UICONTROL 实例]**：包含维度的实例。</li><li>**[!UICONTROL 非重复实例]**：包含维度的唯一实例（非重复）。这是排除重复实例时在“流量”中应用的模型。</li></ul>有关示例，请参阅下面的“归因模型”部分。 |
-| **[!UICONTROL And/Or/Then]** | 在容器或规则之间分配 [!UICONTROL AND/OR/THEN] 运算符。THEN运算符允许您[定义顺序筛选器](/help/components/filters/filters-overview.md)。 |
-| **[!UICONTROL 量度]** | （绿色侧栏）从指标列表中拖放的指标。 |
-| **[!UICONTROL X]** | （删除）用于删除此部分过滤器定义。 |
-| **[!UICONTROL 从筛选器创建受众]** | 通过从过滤器创建受众，可将该过滤器与Adobe Experience Platform共享以供激活。 [了解详情...](/help/components/audiences/audiences-overview.md) |
-| **[!UICONTROL 搜索组件]** | 搜索维度、过滤器或量度列表。 |
-| **[!UICONTROL 维度]** | （列表）可包含在过滤器中的维度列表。 单击标题可展开。 |
-| **[!UICONTROL 指标]** | 可包含在过滤器中的量度列表。 单击标题可展开。 |
-| **[!UICONTROL 过滤器]** | 可包含在筛选器中的现有筛选器列表。 单击标题可展开。 |
-| **[!UICONTROL 数据视图选择器]** | 允许您选择保存此过滤器的报表包。 您仍然可以在所有数据视图中使用过滤器。 |
-| **[!UICONTROL 筛选器预览]** | 允许您预览关键量度，以查看您的过滤器是否有效以及该过滤器的作用范围。 表示预计将看到是否应用此筛选器的数据集的划分方式。 显示3个同心圆和一个列表，以针对数据集运行过滤器时显示[!UICONTROL 人员]、[!UICONTROL 会话]和[!UICONTROL 报告运行]的匹配数量和百分比。<p>此图表将在您创建或更改筛选器定义后立即更新。 |
-| **[!UICONTROL 保存]**&#x200B;或&#x200B;**[!UICONTROL 取消]** | 保存或取消过滤器。 单击&#x200B;**[!UICONTROL 保存]**&#x200B;后，将转到过滤器管理器，您可以在其中管理过滤器。 |
+>[!TAB 创建或编辑筛选器]
 
-## 构建过滤器 {#build-filters}
+![显示下一节中描述的字段和选项的筛选器详细信息窗口。](assets/create-edit-filter.png)
 
-1. 只需将Dimension、筛选器或量度事件从左窗格拖到[!UICONTROL 定义]字段。
+>[!ENDTABS]
 
-   ![](assets/drag_n_drop_dimension.png)
+1. 指定以下详细信息（![必需](/help/assets/icons/Required.svg)为必需）：
 
-1. 从下拉菜单中，设置[运算符](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segment-reference/seg-operators.html?lang=zh-Hans)。
-1. 输入或选择所选项目的值。
-1. 如果需要，可使用“**[!UICONTROL And]**”、“**[!UICONTROL Or]**”或“**[!UICONTROL Then]**”规则添加其他容器。
-1. 放置容器并设置规则后，可在右上角的验证图表中查看筛选器的结果。 验证器指示与您创建的过滤器匹配的页面查看次数、访问次数和独特访客的百分比和绝对数量。
-1. 在&#x200B;**[!UICONTROL 标记]**&#x200B;下，[标记](/help/components/filters/filters-tag.md)容器，方法是选择现有标记或创建新标记。
-1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以保存筛选器。
+   | 元素 | 描述 |
+   | --- | --- |
+   | **[!UICONTROL 数据视图]** | 您可以为筛选器选择数据视图。  您定义的筛选器可在数据视图的[设置](/help/data-views/create-dataview.md#settings-filters)选项卡中作为筛选器使用。 |
+   | **[!UICONTROL 仅用于项目的筛选器]** | 一个信息框，用于说明该过滤器仅在创建它的项目中可见，并且不会添加到组件列表中。 启用&#x200B;**[!UICONTROL 使此筛选器对所有项目都可用，并将其添加到组件列表]**&#x200B;以更改该设置。 仅当您使用[!UICONTROL 快速筛选器]界面中的&#x200B;**[!UICONTROL 打开生成器]**&#x200B;创建[快速筛选器](quick-filters.md)并将快速筛选器信息转换为常规筛选器时，此信息框才可见。 |
+   | **[!UICONTROL 标题]** ![必填](/help/assets/icons/Required.svg) | 为筛选器命名，例如`Last month mobile customers`。 |
+   | **[!UICONTROL 描述]** | 提供筛选器的描述，例如`Filter to define the mobile customers for the last month`。 |
+   | **[!UICONTROL 标记]** | 通过创建或应用一个或多个标记来组织过滤器。 开始键入以查找您可以选择的现有标记。 或按&#x200B;**[!UICONTROL ENTER]**&#x200B;添加新标记。 选择![CrossSize75](/help/assets/icons/CrossSize75.svg)以删除标记。 |
+   | **[!UICONTROL 定义]** ![必需](/help/assets/icons/Required.svg) | 使用[定义生成器](#definition-builder)定义您的筛选器。 |
 
-   您将转到[筛选器管理器](/help/components/filters/manage-filters.md)，在此处，可以通过多种方式标记、共享和管理筛选器。
+   {style="table-layout:auto"}
 
-## 添加容器 {#containers}
+1. 要验证您的过滤器定义是否正确，请使用右上角的不断更新的过滤器结果预览。
+1. 要从筛选器创建受众并与Experience Platform共享受众，请选择&#x200B;**[!UICONTROL 从筛选器创建受众]**。 有关详细信息，请参阅[创建和发布受众](/help/components/audiences/publish.md)。
+1. 选择：
+   * **[!UICONTROL 保存]**&#x200B;以保存筛选器。
+   * **[!UICONTROL 另存为]**&#x200B;以保存筛选器的副本。
+   * **[!UICONTROL 删除]**&#x200B;以删除该筛选器。
+   * **[!UICONTROL 取消]**&#x200B;以取消您对筛选器所做的任何更改或取消创建新筛选器。
 
-您可以[生成容器框架](/help/components/filters/filters-overview.md)，然后在其中放置逻辑规则和运算符。
 
-1. 单击&#x200B;**[!UICONTROL 选项>添加容器]**。
+## 定义生成器
 
-   打开新的&#x200B;[!UICONTROL **Event**]&#x200B;容器，但未识别&#x200B;[!UICONTROL **Event**] （页面查看）。
+可使用定义生成器构建过滤器定义。 在该构造中，使用组件、容器、运算符和逻辑。
 
-   ![](assets/new_container.png)
+您可以配置定义的类型和范围：
 
-1. 根据需要更改容器类型。
-1. 将Dimension、筛选器或事件从左窗格拖动到容器。
-1. 继续通过定义顶部的顶级“**[!UICONTROL 选项]** > **[!UICONTROL 添加容器]**”按钮添加新容器，或者从容器中添加容器以嵌套逻辑。
+1. 要指定定义的类型，请指定希望生成是包含还是排除定义。 选择![设置](/help/assets/icons/Setting.svg) **[!UICONTROL 选项]**，然后从下拉列表中选择&#x200B;**[!UICONTROL 包含]**&#x200B;或&#x200B;**[!UICONTROL 排除]**。
+1. 要指定定义的范围，请从&#x200B;**[!UICONTROL 包含]**&#x200B;或&#x200B;**[!UICONTROL 排除]**&#x200B;下拉菜单中选择是希望定义的范围是&#x200B;**[!UICONTROL 事件]**、**[!UICONTROL 会话]**&#x200B;还是&#x200B;**[!UICONTROL 人员]**。
 
-   **或者**
+您以后始终可以更改这些设置。
 
-   选择一个或多个规则，然后单击“**[!UICONTROL 选项]** > **[!UICONTROL 通过选择添加容器]**”。这会将您的选择转换为单独的容器。
+### 组件
 
-## 使用日期范围 {#date-ranges}
+构建过滤器定义的重要部分是使用维度、量度、现有过滤器和日期范围。 所有这些组件都可从筛选器生成器的组件面板中使用。
 
-您可以构建包含滚动日期范围的过滤器，以获取有关持续促销活动或事件问题的解答。
+![开始生成定义](assets/start-building-filter.gif){width=100%}
 
-例如，您可以轻松构建一个过滤器，包含“过去60天内购买过产品的用户”。
+要添加组件，请执行以下操作：
 
-您可以创建一个会话容器，并在其中添加[!UICONTROL 最近60天]时间范围和量度[!UICONTROL 订单大于或等于1]（使用AND运算符）。
+1. 将组件从组件面板拖放到&#x200B;**[!UICONTROL 将指标、筛选器和/或Dimension拖放到此处]**。 您可以使用组件栏中的![搜索](/help/assets/icons/Search.svg)来搜索特定组件。
+1. 指定组件的详细信息。 例如，从&#x200B;**[!UICONTROL 选择值]**&#x200B;中选择一个值。 或者输入一个值。 指定一个或多个值的内容和方式取决于组件和运算符。
+1. （可选）修改默认运算符。 例如，从&#x200B;**[!UICONTROL 等于]**&#x200B;到&#x200B;**[!UICONTROL 等于任意]**。 有关可用运算符的详细概述，请参阅[运算符](operators.md)。
 
-以下是一段关于在过滤器中使用滚动日期范围的视频：
+要编辑组件，请执行以下操作：
+
+* 从运算符下拉菜单中选择组件的新运算符。
+* 选择或为运算符指定其他值（如果适用）。
+* 如果元件类型是尺寸，则可以定义归因模型。 有关详细信息，请参阅[归因模型](#attribution-models)。
+
+要删除组件，请执行以下操作：
+
+* 在组件中选择![CrossSize75](/help/assets/icons/CrossSize75.svg)。
+
+### 容器
+
+您可以将多个组件分组到一个或多个容器中，并在容器内和容器之间定义逻辑。 容器允许您为过滤器构建复杂的定义。
+
+![添加容器](assets/add-container.gif){Width=100%}
+
+* 要添加容器，请从![设置](/help/assets/icons/Setting.svg) **[!UICONTROL 选项]**&#x200B;中选择&#x200B;**[!UICONTROL 添加容器]**。
+* 要将现有组件添加到容器，请将该组件拖放到容器中。
+* 要将另一个组件添加到容器，请将组件面板中的组件拖放到容器中。 使用蓝色插入线作为指导。
+* 要在容器外部添加另一个组件，请从组件面板中将组件拖放到容器外部（但位于主定义容器内）中。 使用蓝色插入线作为指导。
+* 要修改容器中的组件之间、容器之间或容器与组件之间的逻辑，请选择适当的&#x200B;**[!UICONTROL And]**、**[!UICONTROL Or]**、**[!UICONTROL Then]**。 选择“Then”时，将该过滤器转换为顺序过滤器。 有关详细信息，请参阅[创建顺序筛选器](seg-sequential-build.md)。
+* 若要切换容器级别，请选择![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL 事件]**、![访问](/help/assets/icons/Visit.svg) **[!UICONTROL 会话]**&#x200B;或![用户](/help/assets/icons/User.svg) **[!UICONTROL 人员]**。
+
+您可以在容器中使用![Setting](/help/assets/icons/Setting.svg)进行以下操作：
+
+| 容器操作 | 描述 |
+|---|---|
+| **[!UICONTROL 添加容器]** | 向容器添加嵌套容器。 |
+| **[!UICONTROL 排除]** | 在筛选器定义中排除容器中的结果。 一个红色细左栏用于标识排除容器。 |
+| **[!UICONTROL 包含]** | 在筛选器定义中包含来自容器的结果。 默认为“包括”。 左侧的细灰色条用于标识包含容器。 |
+| **[!UICONTROL 名称容器]** | 从容器的默认描述重命名容器。 在文本字段中键入名称。 如果未提供输入，则使用默认描述。 |
+| **[!UICONTROL 删除容器]** | 从定义中删除容器。 |
+
+
+## 日期范围
+
+您可以构建包含滚动日期范围的过滤器。 因此，您可以回答有关持续促销活动或事件的问题。 例如，您可以构建一个过滤器，其中包含过去60天内在线购买过的&#x200B;*每个人*。
+
+![使用滚动日期范围进行筛选](assets/filter-rolling-date-range.gif)
+
++++ 以下是一段关于在过滤器中使用滚动日期范围的视频
 
 >[!VIDEO](https://video.tv.adobe.com/v/25403/?quality=12)
 
+{{videoaa}}
+
++++
+
 ## 堆叠筛选器 {#stack}
 
-栈叠筛选器的工作方式是使用“and”运算符组合每个筛选器中的条件，然后应用该组合条件。 可以直接在Workspace项目中或在筛选器生成器中完成此操作。
+您可以使用过滤器构建过滤器。 在过滤器中使用过滤器时，可以优化过滤器并降低复杂性。
 
-例如，栈叠“移动电话用户”过滤器和“美国地区”过滤器将只返回美国的移动电话用户的数据。
+假设您要根据设备类型(2)和美国状态(50)的组合进行过滤。 您可以构建100个过滤器，每个过滤器针对设备类型（手机与平板电脑）和美国州的独特组合。 要获得加州的平板电脑用户，你可以使用100个过滤器中的一个：
 
-您可以将这些过滤器视为构建块或模块，并将其包含在过滤器库中，以便用户酌情使用。 这样，您就可以显着减少所需的过滤器数量。 例如，假设您有40个过滤器：
+![CA和平板电脑的简单筛选器](assets/filter-ca-tablet-single.png)
 
-* 20 个用于不同国家/地区的移动电话用户（US_mobile、Germany_mobile、France_mobile、Brazil_mobile 等）
-* 20 个用于不同国家/地区的平板电脑用户（US_tablet、Germany_tablet、France_tablet、Brazil_tablet 等）
+或者，您可以定义52个过滤器：50个过滤器适用于美国各州，一个适用于手机，一个适用于平板电脑。 然后栈叠过滤器以获得相同的结果。 要获得加州的平板电脑用户，可以栈叠两个过滤器：
 
-通过使用过滤器栈叠，您可以将过滤器数量减少到22个，然后根据需要进行栈叠。 您需要创建以下过滤器：
+用于CA和平板电脑的![栈叠筛选器](assets/filter-ca-tablet-stacked.png)
 
-* 适用于移动用户的单一筛选器
-* 一个适用于平板电脑用户的过滤器
-* 适用于不同地理区域的20个过滤器
 
->[!NOTE]
->
->栈叠两个筛选器时，默认使用AND语句联接。 无法更改为 OR 语句。
+## 归因 {#attribution}
 
-1. 转到过滤器生成器。
+<!-- markdownlint-disable MD034 -->
 
-1. 提供过滤器的标题和描述。
+>[!CONTEXTUALHELP]
+>id="cja_components_filters_attribution_repeating"
+>title="重复"
+>abstract="包含维度的实例和持久值。"
 
-1. 单击&#x200B;**[!UICONTROL 显示筛选器]**&#x200B;以在左侧导航中显示筛选器列表。
+<!-- markdownlint-enable MD034 -->
 
-1. 将要栈叠的筛选器拖到筛选器定义画布上。
+<!-- markdownlint-disable MD034 -->
 
-1. 选择&#x200B;[!UICONTROL **保存**]。
+>[!CONTEXTUALHELP]
+>id="cja_components_filters_attribution_instance"
+>title="实例"
+>abstract="包含维度的实例和持久值。"
 
-## 归因模型 {#attribution}
+<!-- markdownlint-enable MD034 -->
 
-![](assets/attribution-models.jpg)
+<!-- markdownlint-disable MD034 -->
 
-**示例：eVar1 = A**&#x200B;的事件筛选器
+>[!CONTEXTUALHELP]
+>id="cja_components_filters_attribution_nonrepeatinginstance"
+>title="非重复实例"
+>abstract="包含维度的唯一（非重复）实例。"
 
-| 示例 | A | A | A（保留） | B | A | C |
-|---|---|---|---|---|---|---|
-| 重复 | X | X | X | - | X | - |
-| 实例 | X | X | - | - | X | - |
-| 非重复实例 | X | - | - | - | X | - |
+<!-- markdownlint-enable MD034 -->
+
+
+
+在过滤器生成器中使用维度时，您可以选择为该维度指定归因模型。 您选择的归因模型决定了数据是否符合您为维度组件指定的条件。
+
+在维度组件中选择![设置](/help/assets/icons/Setting.svg)，然后从弹出窗口中选择一个归因模型：
+
+| 模型 | 描述 |
+|---|---|
+| **[!UICONTROL 重复模型（默认）]** | 包括维度的实例和持久值以确定资格。 |
+| **[!UICONTROL 实例]** | 仅包含维度的实例值以确定资格。 |
+| **[!UICONTROL 非重复实例]** | 包含维度的唯一实例（非重复）值以确定资格。 |
+
+
+构建筛选器时![维度上的归因模型](assets/filter-dimension-attribution.png)
+
+### 示例
+
+作为过滤器定义的一部分，您已指定以下条件：“页面名称”等于“女性”。 与上述示例类似。 使用其他两个归因模型重复此过滤器定义。 因此，您有三个过滤器，每个都有自己的归因模型：
+
+* 女性页面 — 归因 — 重复（默认）
+* 女性页面 — 归因 — 实例
+* 女性页面 — 归因 — 非重复实例
+
+
+下表为每个归因模型说明了哪些传入事件符合该条件的![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)。
+
+
+| 女性页面 — 归因 — <br/>*归因模型* | 事件1：<br/>页面名称等于<br/>女性 | 事件2：<br/>页面名称=<br/>男 | 事件3：<br/>页面名称等于<br/>女性 | 事件4：<br/>页面名称等于<br/>女性<br/>（已保留） | 事件5：<br/>页面名称等于<br/>签出 | 事件6：<br/>页面名称等于<br/>女性 | 事件7：<br/>页面名称等于<br/>主页 |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:--:|
+| 重复（默认） | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | ![删除](/help/assets/icons/Remove.svg) | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | ![删除](/help/assets/icons/Remove.svg) | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | ![删除](/help/assets/icons/Remove.svg) |
+| 实例 | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | ![删除](/help/assets/icons/Remove.svg) | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | ![删除](/help/assets/icons/Remove.svg) | ![删除](/help/assets/icons/Remove.svg) | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | ![删除](/help/assets/icons/Remove.svg) |
+| 非重复实例 | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | ![删除](/help/assets/icons/Remove.svg) | ![删除](/help/assets/icons/Remove.svg) | ![删除](/help/assets/icons/Remove.svg) | ![删除](/help/assets/icons/Remove.svg) | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | ![删除](/help/assets/icons/Remove.svg) |
+
+有关使用三个过滤器的事件的示例报告如下所示：
+
+![筛选归因模型结果](assets/filter-dimension-attribution-results.png)

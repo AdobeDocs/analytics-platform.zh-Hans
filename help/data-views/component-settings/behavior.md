@@ -5,14 +5,24 @@ exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 90%
+source-wordcount: '340'
+ht-degree: 82%
 
 ---
 
-# 行为组件设置
+# 行为组件设置 {#behavior-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_behavior"
+>title="行为"
+>abstract="确定如何汇总此维度中的行项目。<br/><br/>**参数&#x200B;**<br/>**小写**：允许您指定字段中的字符串值是否应小写。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 在维度和指标上均可找到行为设置。设置的可用性取决于组件类型和架构数据类型。
 

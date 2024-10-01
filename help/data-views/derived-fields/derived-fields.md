@@ -5,14 +5,24 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 1fddf0e8421b35021a1f1641a684cacbc0ec1f0d
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '8366'
-ht-degree: 12%
+source-wordcount: '8842'
+ht-degree: 16%
 
 ---
 
-# 派生字段
+# 派生字段 {#derived-fields}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields"
+>title="派生字段"
+>abstract="利用派生字段，可以通过可自定义的规则生成器来动态定义数据操作。之后，您可以将该派生的字段用作工作区中的组件（量度或维度），甚至可以进一步将它定义为数据视图中的组件。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 派生字段是Adobe Customer Journey Analytics中实时报表功能的一个重要方面。 通过派生字段和可自定义的规则生成器，即可迅速定义（一般较为复杂的）数据操作。然后，您可以在[Workspace](../../analysis-workspace/home.md)中将该派生字段用作组件（量度或维度），甚至在[数据视图](../data-views.md)中将该派生字段进一步定义为组件。
 
@@ -32,6 +42,8 @@ ht-degree: 12%
 
 ![派生字段对话框屏幕截图](assets/derived-field-dialog.png)
 
+
+![项目概述](/help/assets/icons/ProgramOverview.svg)
 
 |  | 名称 | 描述 |
 |---------|----------|--------|
@@ -386,6 +398,16 @@ ht-degree: 12%
 
 ### Case When {#casewhen}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_casewhen"
+>title="Case When"
+>abstract="此函数提供了根据一个或多个字段中定义的标准应用条件的功能。然后根据条件的顺序使用这些标准来定义新派生字段中的值。"
+
+<!-- markdownlint-enable MD034 -->
+
+
 根据一个或多个字段中的定义条件应用条件。 然后，使用这些标准根据条件的顺序定义新派生字段中的值。
 
 +++ 详细信息
@@ -616,6 +638,16 @@ Customer Journey Analytics使用以下默认容器模型：
 
 ### 分类 {#classify}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_classify"
+>title="分类"
+>abstract="此函数提供了定义一组值的功能，这些值通过文本输入被相应的值替换。"
+
+<!-- markdownlint-enable MD034 -->
+
+
 定义由新派生字段中的相应值替换的一组值。
 
 +++ 详细信息
@@ -751,6 +783,16 @@ Customer Journey Analytics使用以下默认容器模型：
 
 ### 拼接 {#concatenate}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_concatenate"
+>title="拼接"
+>abstract="此函数提供了将两个或多个字段、派生字段或用户输入的字符串值组合到具有定义的分隔符的单个字段中的能力。"
+
+<!-- markdownlint-enable MD034 -->
+
+
 使用定义的分隔符将字段值组合到一个新的派生字段中。
 
 +++ 详细信息
@@ -827,6 +869,16 @@ Customer Journey Analytics使用以下默认容器模型：
 
 
 ### 删除重复数据 {#dedup}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_deduplicate"
+>title="删除重复数据"
+>abstract="使用此功能您可以配置字段，以在会话或人员级别仅以非重复的方式对值进行计数。此外，可以使用重复数据删除 ID 来确保根据给定的 ID（例如购买 ID），只使用一个值（第一个实例或最后一个实例）。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 避免对值计数多次。
 
@@ -911,7 +963,17 @@ Customer Journey Analytics使用以下默认容器模型：
 
 <!-- FIND AND REPLACE -->
 
-### 查找和替换 {#find-replace}
+### 查找和替换 {#find-and-replace}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_findandreplace"
+>title="查找并替换"
+>abstract="此函数提供了在选定字段中查找所有值并将这些值替换为新派生字段中的不同值的功能。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 查找选定字段中的所有值，并在新的派生字段中用不同的值替换这些值。
 
@@ -983,6 +1045,16 @@ Customer Journey Analytics使用以下默认容器模型：
 
 ### 查询 {#lookup}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_lookup"
+>title="查询"
+>abstract="此函数提供了利用数据集之间的匹配键来使用查找数据集中的字段的能力。"
+
+<!-- markdownlint-enable MD034 -->
+
+
 使用查找数据集中的字段查找值，并在新的派生字段中返回值或用于进一步规则处理。
 
 +++ 详细信息
@@ -1034,6 +1106,16 @@ Customer Journey Analytics使用以下默认容器模型：
 
 ### 小写 {#lowercase}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_lowercase"
+>title="小写"
+>abstract="此函数将整个字符串文本转换为小写值。"
+
+<!-- markdownlint-enable MD034 -->
+
+
 将字段中的值转换为小写，并将其存储到新的派生字段中。
 
 +++ 详细信息
@@ -1084,6 +1166,16 @@ Customer Journey Analytics使用以下默认容器模型：
 <!-- MATH -->
 
 ### 数学 {#math}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_math"
+>title="数学"
+>abstract="此函数提供了在字段上执行数学运算的能力。该函数可用于执行基本算术运算，例如加法、减法、乘法和除法。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 对数值字段使用基本的数学运算符（加、减、乘、除和加幂）。
 
@@ -1166,6 +1258,16 @@ Customer Journey Analytics使用以下默认容器模型：
 
 ### 合并字段 {#merge}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_mergefields"
+>title="合并字段"
+>abstract="利用此函数，可以从两个不同的字段获取值并在一个维度中包含它们各自的值。该规则首先检查是否设置了第一个值。如果未设置，它将使用第二个值，依此类推。"
+
+<!-- markdownlint-enable MD034 -->
+
+
 将来自两个不同字段的值合并到一个新的派生字段中。
 
 +++ 详细信息
@@ -1231,6 +1333,16 @@ Customer Journey Analytics使用以下默认容器模型：
 <!-- NEXT OR PREVIOUS -->
 
 ### 下一个或上一个 {#next-previous}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_nextprevious"
+>title="下一个或上一个"
+>abstract="此函数提供查看为给定字段收集的下一个或上一个值的功能。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 将某个字段作为输入，并解析该字段在会话或使用的范围内的下一个或上一个值。 这仅适用于“访问”和“事件”表格字段。
 
@@ -1303,6 +1415,16 @@ Customer Journey Analytics使用以下默认容器模型：
 <!-- REGEX REPLACE -->
 
 ### 正则表达式替换 {#regex-replace}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_regexreplace"
+>title="正则表达式替换"
+>abstract="此函数提供使用正则表达式提取部分字符串的功能。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 使用正则表达式将字段中的值替换为新派生字段。
 
@@ -1401,6 +1523,16 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 ### 拆分 {#split}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_split"
+>title="拆分"
+>abstract="利用此函数，可以根据分隔符将一个字段拆分为多个字段。"
+
+<!-- markdownlint-enable MD034 -->
+
+
 将字段中的值拆分为新的派生字段。
 
 +++ 详细信息
@@ -1493,6 +1625,16 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 ### 总结 {#summarize}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_summarize"
+>title="总结"
+>abstract="此功能提供在事件、会话或人员级别聚合值的功能。根据选择字段的字段类型，会提供不同的选项。"
+
+<!-- markdownlint-enable MD034 -->
+
+
 在事件、会话和用户级别将聚合类型函数应用于量度或维度。
 
 +++ 详细信息
@@ -1560,6 +1702,16 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 <!-- TRIM -->
 
 ### 修剪
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_trim"
+>title="修剪"
+>abstract="此函数提供了从字符串的开头或结尾裁剪空格或特殊字符的功能。并且还能够从字符串的前面或末尾指定用于返回值的字符数。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 将来自字段值开头或结尾的空白、特殊字符或字符数修剪到新的派生字段中。
 
@@ -1672,6 +1824,16 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 <!-- URL PARSE -->
 
 ### URL 解析
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_urlparse"
+>title="URL 解析"
+>abstract="此函数可用于解析出 URL 的不同部分，包括主机、路径或查询参数。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 解析URL的不同部分，包括协议、主机、路径或查询参数。
 

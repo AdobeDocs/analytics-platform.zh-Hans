@@ -4,19 +4,39 @@ title: 树状图
 feature: Visualizations
 exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 91%
+source-wordcount: '133'
+ht-degree: 23%
 
 ---
 
-# 树状图
+# 树状图 {#treemap}
 
-将分层（树结构）数据显示为一组嵌套的矩形。
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_treemap_button"
+>title="树状图"
+>abstract="创建树形图可视化以显示具有嵌套矩形的分层（树结构）数据。"
+
+<!-- markdownlint-enable MD034 -->
+
+
+使用![GraphTree](/help/assets/icons/GraphTree.svg) **[!UICONTROL 树状图]**&#x200B;可视化将分层（树结构）数据显示为一组嵌套的矩形。
 
 树上的每个分支都被给予一个矩形，然后为其贴上代表子分支的更小矩形。
 
 ![树状图示例，显示代表子分支的较小矩形图块。](assets/treemap.png)
 
-当颜色和大小维度以某种方式与树结构关联时，用户通常可以轻松地查看平时很难以其他方式见到的模式，例如当有某个颜色特别重要时。树形图的第二个优势在于，它们可以通过精心的构建有效地利用空间。
+通过树状图，你可以看到用其他方法很难发现的模式。 使用维度的颜色和大小，您可以发现维度的关联方式以及特定维度是否特别相关。 树状图的第二个优势在于，通过构造，树状图有效地利用了空间。
+
+
+>[!MORELIKETHIS]
+>
+>[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[可视化设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[可视化上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
+
+

@@ -5,14 +5,24 @@ exl-id: ced0c637-5cbe-47a4-897a-eb79961986a3
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '293'
 ht-degree: 100%
 
 ---
 
-# 指标去重组件设置
+# 指标去重组件设置 {#metric-deduplication-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_metric_deduplication"
+>title="量度去重"
+>abstract="将某个量度配置为只有非重复发生的数量值。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 通过指标去重，可将指标配置为仅以非重复的方式计入值。
 

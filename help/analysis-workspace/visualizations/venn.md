@@ -4,25 +4,44 @@ title: 维恩图
 feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 79%
+source-wordcount: '136'
+ht-degree: 17%
 
 ---
 
-# 维恩图
+# 维恩图 {#venn}
 
-通过维恩图可视化，最多可拖入 3 个过滤器（从“组件”中）和一个量度来构建维恩图。
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_venn_button"
+>title="维恩图"
+>abstract="创建维恩图可视化图表，以便快速直观地比较两个元素及其重叠的大小。"
+
+<!-- markdownlint-enable MD034 -->
+
+
+![类型](/help/assets/icons/TwoDots.svg) **[!UICONTROL 维恩图]**&#x200B;可视化图表允许您最多拖入3个筛选器和一个量度（从“组件”面板）来构建维恩图。
 
 ![包含三个筛选器的维恩图可视化图表。](assets/venn.png)
 
-然后，可以将光标悬停在这些过滤器上以更加深入地了解百分比等信息。
+您可以将鼠标悬停在这些过滤器上以更加深入地了解百分比等信息。
 
-![维恩图可视化图表，其中包含有关2015年秋季室外参与者过滤器的扩展信息。](assets/venn_hover.png)
+若要从[!UICONTROL 维恩图]可视化图表生成[!UICONTROL 自由格式表]，请选择&#x200B;**[!UICONTROL 维恩图]**&#x200B;标题旁边的彩色![StatusOrange](/help/assets/icons/StatusOrange.svg)，然后选择&#x200B;**[!UICONTROL 显示数据源]**。 您将会看到&#x200B;**[!UICONTROL 维恩数据]**&#x200B;自由格式表，其中包含用于创建[!UICONTROL 维恩图]可视化图表的数据。
 
-要将维恩图转换为自由格式表，请单击&#x200B;**[!UICONTROL 维恩图]**&#x200B;标题旁边的彩色圆点，然后选择&#x200B;**[!UICONTROL 管理数据源]** > **[!UICONTROL 可用的数据源]** > **[!UICONTROL 自由格式表]**。
+<!--
+To normalize the Venn diagram (take the size out of it), go select ![Setting](/help/assets/icons/Setting.svg) and select **[!UICONTROL Normalization]**.
 
-要标准化维恩图（提取其大小），请转到维恩图的“可视化设置”图标，然后选择&#x200B;**[!UICONTROL 标准化]**。
+![Visualization Settings option for Visualization type: Venn diagram.](assets/normalization.png)
 
-可视化图表类型的![可视化图表设置选项：维恩图。](assets/normalization.png)
+-->
+
+>[!MORELIKETHIS]
+>
+>[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[可视化设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[可视化上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
+

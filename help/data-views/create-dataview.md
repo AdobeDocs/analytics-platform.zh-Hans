@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: f6b0088522a821a006d1c7fb4c55b4b2e11ff310
+source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 100%
+source-wordcount: '1832'
+ht-degree: 96%
 
 ---
 
@@ -16,9 +16,11 @@ ht-degree: 100%
 
 创建数据视图涉及从架构元素创建量度和维度或利用标准组件。大多数架构元素既可为维度，也可为量度，具体取决于您的业务要求。将架构元素拖入数据视图后，右侧即显示选项，从中可调整维度或量度在 Customer Journey Analytics 中的操作方式。
 
-以下是一段关于该主题的视频：
++++ 观看视频，说明Customer Journey Analytics中的数据视图
 
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
+
++++
 
 要创建或编辑数据视图：
 
@@ -26,7 +28,17 @@ ht-degree: 100%
 1. 要创建数据视图，请选择&#x200B;**[!UICONTROL “创建新的数据视图”。]**&#x200B;或者，您可以从数据视图列表中选择现有数据视图进行编辑。
 
 
-## 配置
+## 配置 {#configure}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_externalid"
+>title="外部 ID"
+>abstract="更改外部 ID 可能会影响数据视图名称在外部源（例如商业智能工具）中的显示方式。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 要配置新的或现有的数据视图：
 
@@ -50,9 +62,20 @@ ht-degree: 100%
 
 {style="table-layout:auto"}
 
-### 兼容性
+### 兼容性 {#compatibility}
 
 {{release-limited-testing-section}}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_dataviewsinadobejourneyoptimizer"
+>title="Journey Optimizer中的数据视图"
+>abstract="Journey Optimizer需要使用配置了Customer Journey Analytics的数据视图。<br/>启用此选项可使其成为Adobe Journey Optimizer报表中使用的默认数据视图。"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#connection" text="添加了哪些组件和数据集。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 此设置适用于在使用 Adobe Journey Optimizer 的同时使用 Customer Journey Analytics。
 

@@ -4,20 +4,37 @@ title: 数据词典概述
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 80%
+source-wordcount: '564'
+ht-degree: 69%
 
 ---
 
-# 数据词典概述
+# 数据词典概述 {#data-dictionary-overview}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_component_datadictionary"
+>title="数据字典"
+>abstract="数据字典可帮助用户和管理员跟踪并更好地了解其Analytics环境中的组件。 <br/>Analytics管理员负责向用户组织有关数据字典中每个组件的信息。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 Analysis Workspace 中的数据词典可帮助用户和管理员跟踪并更好地了解其 Analytics 环境中的组件。
 
 Analytics 管理员负责整理有关数据词典中每个组件的信息，并将其提供给用户。
 
+
++++ 观看演示数据字典的视频
+
 >[!VIDEO](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on)
+
+{{videoaa}}
+
++++
 
 ## 对用户的好处
 
@@ -57,16 +74,14 @@ Analytics 管理员负责整理有关数据词典中每个组件的信息，并�
 
 您可以在 Analysis Workspace 中通过以下任何方式访问数据词典：
 
-* 来自左边栏中的&#x200B;**数据词典**&#x200B;图标。
+左侧面板中的![数据字典图标](assets/data-dictionary-access.png)
 
-  ![来自左边栏中的“数据词典”图标](assets/data-dictionary-access-icon.png)
+* 从按钮面板中的![书签](/help/assets/icons/Bookmark.svg)。
 
-* 来自组件信息弹出框内的&#x200B;**数据词典**&#x200B;图标。
 
-  ![信息弹出窗口中的“数据词典”图标](assets/data-dictionary-access-infopopover.png)
-  <!--update screenshot; this was taken from a mock-->
 
-* 从菜单：[!UICONTROL **帮助**] > [!UICONTROL **数据词典**]。
+* 从组件的信息弹出框中的![书签](/help/assets/icons/Bookmark.svg)。
+
 
 有关数据词典中提供的不同选项的详细信息，请参阅[查看数据词典中的组件信息](/help/components/data-dictionary/view-data-dictionary.md)。
 

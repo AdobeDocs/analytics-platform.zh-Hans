@@ -5,14 +5,24 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
+source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
 workflow-type: tm+mt
-source-wordcount: '2659'
-ht-degree: 68%
+source-wordcount: '2672'
+ht-degree: 67%
 
 ---
 
-# 创建移动记分卡
+# 创建移动记分卡 {#create-a-mobile-scorecard}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_mobilescorecard_annotations"
+>title="批注"
+>abstract="可以在工作区项目内部的组件管理器中创建注释。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 以下信息指示Customer Journey Analytics数据策划人如何为执行用户配置和展示功能板。 要开始操作，您可以观看Analytics功能板记分卡生成器视频：
 
@@ -135,7 +145,7 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 ### [!UICONTROL 圆环图]
 
-此可视化与饼图类似，将数据显示为整体的一部分。在比较总数的百分比时使用圆环图。例如，假设您想查看哪个广告平台对独特访客总数做出了贡献：
+此可视化与饼图类似，将数据显示为整体的一部分。在比较总数的百分比时使用圆环图。例如，您希望了解哪个广告平台对独特访客总数做出了贡献：
 
 ![显示圆环图可视化的新移动记分卡](assets/donut-viz.png)
 

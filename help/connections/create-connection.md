@@ -5,14 +5,60 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: a4b838f7813d78681eba072e4febd90ba0c7111d
-workflow-type: ht
-source-wordcount: '3300'
-ht-degree: 100%
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
+workflow-type: tm+mt
+source-wordcount: '3507'
+ht-degree: 97%
 
 ---
 
-# 创建或编辑连接
+# 创建或编辑连接 {#create-or-edit-a-connection}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_recordsadded"
+>title="添加的记录数"
+>abstract="在选定数据集的选定时间间隔内添加到连接的记录数（行数）。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_recordsskipped"
+>title="跳过的记录数"
+>abstract="在选定数据集的选定时间间隔内，为连接传输数据期间跳过的记录数（行数）。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_recordsdeleted"
+>title="删除的记录数"
+>abstract="在选定数据集的选定时间间隔内从连接中删除的记录数（行数）"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_lastadded"
+>title="上次添加"
+>abstract="从任何数据集传输到连接的最新批次的时间戳。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_enablerollingdatawindow"
+>title="启用滚动数据窗口"
+>abstract="在连接级别将数据保留定义为以月为单位的滚动窗口。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 连接创建和编辑工作流体验通过辅助工作流将所有数据集和连接配置设置引入屏幕中心。它提供详细的数据集选择、配置和审查体验。并允许您指定关键信息，如数据集类型、大小、架构、数据集 ID、批处理状态、回填状态、人员 ID 等，以降低错误连接配置的风险。以下是功能概述：
 
@@ -22,7 +68,11 @@ ht-degree: 100%
 * 您可以编辑数据集，例如请求另一个回填。
 * 您可以按数据集导入现有数据。
 
++++ 说明创建和编辑连接体验的视频
+
 >[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
+
++++
 
 ## 先决条件
 
@@ -70,6 +120,42 @@ ht-degree: 100%
    {style="table-layout:auto"}
 
 ## 添加和配置数据集 {#add-dataset}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_matchingkey"
+>title="匹配键"
+>abstract="选择要在某个事件数据集中联接的字段。如果此列表为空，则可能尚未添加或配置事件数据集。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_importnewdata"
+>title="导入新数据"
+>abstract="任何添加到Experience Platform数据集中的新批次将自动添加到此连接中，并可供分析。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_datasetbackfill"
+>title="数据集回填"
+>abstract="此选项将从 Experience Platform 为连接中的此数据集回填现有（历史）数据。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_transformdataset"
+>title="转换数据集"
+>abstract="此选项将会转换数据集，使其可用于 B2B 场景中基于人员的查找。开启后，数据集的转换是不可逆的。"
+
+<!-- markdownlint-enable MD034 -->
 
 新的工作流允许您在创建连接时添加 Experience Platform 数据集。
 

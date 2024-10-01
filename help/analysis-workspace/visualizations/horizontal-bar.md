@@ -4,27 +4,56 @@ title: 水平条形图和堆叠的水平条形图
 feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 68%
+source-wordcount: '153'
+ht-degree: 15%
 
 ---
 
-# 水平条形图和堆叠的水平条形图
+# 水平条形图和栈叠的水平条形图
 
-## 水平条形图 {#section_73A4D6F6C8864045A97B0B32B5FFFEDB}
+## 水平条形图 {#horizontal-bar}
 
-此可视化显示了一些水平条，这些水平条表示一个或多个量度中的各种值。
+<!-- markdownlint-disable MD034 -->
 
-![显示页面查看次数、页面速度、访问次数、登录次数和退出次数量度的水平条。](assets/horizontal_bar.png)
+>[!CONTEXTUALHELP]
+>id="cja_workspace_horizontalbar_button"
+>title="水平条形图"
+>abstract="创建水平条形图可视化图表，以表示一个或多个量度中的各种值。"
 
-## 堆叠的水平条形图 {#section_50C08E9E20A94024A6553BC352ADB597}
+<!-- markdownlint-enable MD034 -->
 
-此可视化与[!UICONTROL 水平条形图]类似，只是系列条以堆叠方式显示。
+
+此![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONTROL 水平条]**&#x200B;可视化显示一些水平条，这些水平条表示一个或多个量度中的各种值。
+
+![显示页面查看次数、页面速度、访问次数、登录次数和退出次数量度的水平条。](assets/horizontal-bar.png)
+
+## 栈叠的水平条形图 {#horizontal-bar-stacked}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_horizontalbarstacked_button"
+>title="栈叠的水平条形图"
+>abstract="创建水平条形图可视化图表，以表示一个或多个栈叠量度的各种值。"
+
+<!-- markdownlint-enable MD034 -->
+
+
+![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) **[!UICONTROL 栈叠的水平条形图]**&#x200B;可视化与[!UICONTROL 水平条形图]类似，但序列条形图显示为栈叠的。
 
 ![显示页面查看次数、访问次数、登入次数和退出次数的栈叠水平条形图。](assets/horizontal-bar-stacked.png)
 
-堆叠的条形可视化中的[!UICONTROL 堆叠的水平条形图]设置将图表变为“100% 堆叠”可视化：
+在![设置](/help/assets/icons/Setting.svg) **[!UICONTROL 设置]**&#x200B;中使用&#x200B;**[!UICONTROL 100%栈叠]**&#x200B;选项可将图表转换为100%栈叠可视化图表。
 
-![100%栈叠的水平条形图，显示访问次数、页面查看次数和独特访客。](assets/horizstacked100.png)
+![100%栈叠的水平条形图](assets/horizontal-bar-stacked100.png)
+
+
+>[!MORELIKETHIS]
+>
+>[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[可视化设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[可视化上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
+

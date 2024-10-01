@@ -5,14 +5,33 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: aa0a6715c216730e0768cfa870ea75f315455101
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 100%
+source-wordcount: '554'
+ht-degree: 94%
 
 ---
 
-# 组件设置
+# 组件设置 {#component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_settings"
+>title="组件设置"
+>abstract="查看和配置名称、描述以及其他与组件相关的设置。<br/><br/>**参数&#x200B;**<br/>**隐藏报告中的组件**：选中此框将在报告中隐藏此组件，使非管理员用户无法查看。 管理员仍可通过在Workspace项目中选择&#x200B;**[!UICONTROL 显示所有组件]**&#x200B;来访问该组件。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_contextlabels"
+>title="上下文标签"
+>abstract="移除上下文标签可能会影响需要该组件的特定面板或报告。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 以下信息描述了数据视图组件使用的设置。
 

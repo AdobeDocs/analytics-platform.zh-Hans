@@ -5,91 +5,146 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 39486d83a446c8bcfe93824c06bee3c681922ff4
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '3259'
-ht-degree: 100%
+source-wordcount: '3466'
+ht-degree: 73%
 
 ---
 
 # 用户偏好设置
 
-可以为创建的所有新项目或面板管理 Analysis Workspace 及其相关组件的设置。现有项目和面板不受影响。
+您可以为您创建的所有新项目或面板管理Analysis Workspace和相关组件的用户设置或首选项。 现有项目和面板不受影响。
 
 ## 更新偏好设置
 
-1. 在 Customer Journey Analytics 中，前往&#x200B;[!UICONTROL **项目**]&#x200B;登陆页面，然后选择&#x200B;[!UICONTROL **编辑偏好设置**]。
+您可以通过以下方式更新您的首选项：
 
-   ![Workspace 项目视图突出显示了本页描述的“编辑”偏好设置选项。](assets/user-preferences.png)
+- 从Workspace主界面选择![用户管理员](/help/assets/icons/UserAdmin.svg) **[!UICONTROL 编辑首选项]**。
+- 在Workspace项目中工作时，从菜单中选择&#x200B;**[!UICONTROL 项目]** > **[!UICONTROL 用户首选项]**。
+- 从主Customer Journey Analytics顶部栏中选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 首选项]**（仅适用于产品管理员）。
 
-   或
+## 配置首选项
 
-   产品管理员可以通过进入&#x200B;[!UICONTROL **组件**]&#x200B;选项卡，然后选择&#x200B;[!UICONTROL **偏好设置**]&#x200B;来更新 IMS 组织偏好设置。
+您可以配置以下首选项：
 
-1. 有关每个选项卡上可用偏好设置的信息，请继续阅读本文中的以下任一部分：
-
-   * [常规偏好设置](#general-preferences)
-
-   * [IMS 组织偏好设置](#ims-organization-preferences)
-
-   * [项目和分析偏好设置](#project-preferences)
-
-   * [自由格式表偏好设置](#freeform-table-preferences)
-
-   * [可视化偏好设置](#visualizations-preferences)
-
-## 常规偏好设置
+### 常规偏好设置
 
 常规偏好设置适用于您在浏览器中体验 Customer Journey Analytics。有关如何访问这些偏好设置的信息，请参阅[更新偏好设置](#update-preferences)。
 
 | 偏好设置 | 选项 |
 | --- | --- |
-| 登陆页面 | 选择访问 Adobe Analytics 时显示为默认页面的页面： <ul><li>项目列表（默认）</li><li>空白项目</li><li>从列表中选择的具体项目</li></ul> |
-| 显示提示 | 在 Analysis Workspace 右下方区域的蓝色框中显示提示。 <p>默认启用选项。</p> |
-| 左边栏组中显示的组件 | 选择要在左边栏的“组件”菜单中显示的每个组件的数量。 <p>如果选择 0，则无法再从工作区的左边栏访问该组件。</p><p>默认情况下，为以下各项显示 5 个组件：</p> <ul><li>维度</li><li>量度</li><li>过滤器</li><li>日期范围</li></ul> <p>有关 Analysis Workspace 中组件的更多信息，请参阅[组件概述](/help/components/overview.md)。</p> |
+| **[!UICONTROL 登陆页面]** | 选择访问Customer Journey Analytics时默认显示的页面： <ul><li>项目列表（默认）</li><li>空白项目</li><li>空白趋势引导式分析</li><li>从列表中选择的特定项目</li></ul> |
+| **[!UICONTROL 提示]** | 在 Analysis Workspace 右下方区域的蓝色框中显示提示。 <p>默认启用选项。</p> |
+| **[!UICONTROL 左侧面板组中显示的组件]** | 在左侧面板的“组件”菜单中，选择要显示的每个组件组的数量。 <p>如果为组件组选择0，则无法再从左侧面板访问该组件组。</p><p>默认情况下，将为以下每个组件组显示5个组件：</p> <ul><li>维度</li><li>量度</li><li>过滤器</li><li>日期范围</li></ul> <p>有关 Analysis Workspace 中组件的更多信息，请参阅[组件概述](/help/components/overview.md)。</p> |
 
-## IMS 组织偏好设置
+### IMS 组织偏好设置 {#ims-organization-preferences}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_shareonlyworkspace"
+>title="仅允许与 Workspace 用户共享"
+>abstract="启用后，在共享Analysis Workspace项目时，**[!UICONTROL 与任何人共享]**&#x200B;选项不再可供用户使用。 之前通过此共享选项获得项目访问权限的用户无法再访问该项目。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_requireexperiencecloudauth"
+>title="需要 Experience Cloud 身份验证"
+>abstract="启用后，通过Analysis Workspace中的与任何人共享选项授予项目访问权限的用户必须使用其Experience Cloud凭据进行身份验证。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 您可以更新适用于组织内所有用户和项目的公司偏好设置。有关如何访问这些偏好设置的信息，请参阅[更新偏好设置](#update-preferences)。
 
 | 部分 | 偏好设置 | 选项 |
 | --- | --- | --- |
 | **项目共享** | | |
-| | 仅允许与 Workspace 用户共享 | <p>启用此选项后，组织内的用户将无法在“共享”菜单中看到“与任何人共享”选项。这意味着，用户无法与已在您的组织中拥有 Analysis Workspace 帐户的人员共享项目，如[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)中所述。</p><p>默认情况下，除许可了 Healthcare Shield 的客户外，所有组织均禁用此选项（这意味着用户可以与组织外部的人员共享项目）。 </p><p>在启用或禁用此选项时，请考虑以下事项：</p> <ul><li><p>启用此选项后，之前通过“与任何人共享”共享选项获得项目访问权限的人员将无法再访问该项目。</p></li><li><p>如果启用此选项（仅允许与工作区用户共享），然后将其禁用（允许与任何人共享），则之前通过“与任何人共享”共享选项获得项目访问权限的人员不会自动重新获得对项目的访问权限。在这种情况下，已共享项目的用户必须启用在与任何人共享项目时可用的&#x200B;[!UICONTROL **链接已激活**]&#x200B;选项（[!UICONTROL **共享**] > [!UICONTROL **与任何人共享**]），如[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)中所述。</p></li><li><p>**对于许可 Healthcare Shield 的客户：**&#x200B;该选项默认启用且无法禁用。在禁用此选项以便用户可以使用“与任何人共享”的共享选项之前，您首先需要在 Adobe Admin Console 中添加&#x200B;[!UICONTROL **与任何人共享项目链接**]&#x200B;权限（位于&#x200B;[!UICONTROL **报告工具**]&#x200B;下）。添加权限后，您可以禁用此选项，然后接受由此产生的法律声明。有关如何在 Admin Console 中添加权限的信息，请参阅[在 Admin Console 中管理产品权限](https://helpx.adobe.com/cn/enterprise/using/manage-permissions-and-roles.html)。</p></li> |
-| | 需要 Experience Cloud 身份验证 | <p>启用后，通过 Analysis Workspace 中的“与任何人共享”选项获得项目访问权限的人员必须使用其 Experience Cloud 凭据进行身份验证。</p> <p>启用此选项后，当用户使用“与任何人共享”共享选项来共享项目时，共享对话框中都会启用“需要 Experience Cloud 身份验证”选项，并且共享项目的用户无法禁用该选项。（有关用户如何与任何人共享项目的信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)。）</p> <p>启用此选项时，请考虑以下事项：</p><ul><li><p>启用此选项后，所有之前通过“与任何人共享”共享选项共享且未启用“需要 Experience Cloud 身份验证”选项的项目都将被停用。</p></li> <li><p>如果启用此选项（以要求进行 Experience Cloud 身份验证），然后将其禁用（以允许拥有链接的任何人员访问项目），则之前通过“与任何人共享”共享选项获得项目访问权限的人员不会自动重新获得对项目的访问权限。在这种情况下，已共享项目的用户必须启用在与任何人共享项目时可用的“链接已激活”选项（[!UICONTROL **共享**] > [!UICONTROL **与任何人共享**] > [!UICONTROL **链接已激活**]），如[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)中所述。</p></li> <li><p>仅在组织内实施 SSO 后，此选项才可用。有关系统管理员如何为组织启用 SSO 的信息，请参阅[设置标识和单点登录](https://helpx.adobe.com/cn/enterprise/using/set-up-identity.html){target=_blank}。</p><p>如果已为组织配置 SSO，请检查控制台中是否实施了任何类型的自动帐户创建。通常，系统管理员会进行此设置，如[启用自动帐户创建](https://helpx.adobe.com/cn/enterprise/using/automatic-account-creation.html){target=_blank}中所述。</p></li><li><p>如果您的组织许可 Healthcare Shield，则默认情况下会启用此选项且无法禁用。</p></li></ul> |
+| | 仅允许与 Workspace 用户共享 | 启用此选项后，您组织中的用户在&#x200B;**[!UICONTROL 共享]**&#x200B;菜单中看不到&#x200B;**[!UICONTROL 与任何人共享]**&#x200B;选项。 这意味着，用户无法与已在您的组织中拥有 Analysis Workspace 帐户的人员共享项目，如[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)中所述。<br/>默认情况下对所有组织禁用此选项（这意味着用户可以与组织外的人员共享项目），但拥有Healthcare Shield许可的客户除外。 <p>在启用或禁用此选项时，请考虑以下事项：<ul><li>启用此选项后，以前通过[!UICONTROL 与任何人共享]共享选项获得项目访问权限的用户无法再访问该项目。</li><li>如果启用此选项(仅允许与Workspace用户共享)，然后禁用此选项（允许与任何人共享），则之前通过[!UICONTROL 与任何人共享]共享选项获得项目访问权限的用户不会自动重新获得对项目的访问权限。 在这种情况下，共享项目的用户必须启用&#x200B;[!UICONTROL **链接**]&#x200B;选项，该选项在与任何人&#x200B;**共享项目时可用（[!UICONTROL 共享]** > **[!UICONTROL 与任何人共享]**），如[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)中所述。</li><li>**对于许可 Healthcare Shield 的客户：**&#x200B;该选项默认启用且无法禁用。在禁用此选项以便用户可以使用[!UICONTROL 与任何人共享]共享选项之前，您首先需要在Adobe Admin Console中添加[!UICONTROL 与任何人共享项目链接]权限（位于[!UICONTROL 报告工具]下）。 添加权限后，您可以禁用此选项，然后接受由此产生的法律声明。有关如何在 Admin Console 中添加权限的信息，请参阅[在 Admin Console 中管理产品权限](https://helpx.adobe.com/cn/enterprise/using/manage-permissions-and-roles.html)。</li></ul> |
+| | 需要 Experience Cloud 身份验证 | 启用后，通过Analysis Workspace中的与任何人共享选项授予项目访问权限的用户必须使用其Experience Cloud凭据进行身份验证。<p>启用此选项后，每当用户使用[!UICONTROL 与任何人共享]共享选项共享项目时，[!UICONTROL 需要Experience Cloud身份验证]选项就会在“共享”对话框中启用，并且共享项目的用户无法禁用该选项。 有关用户如何与任何人共享项目的信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)。 <p> <p>启用此选项时，请考虑以下事项： <ul><li>启用此选项后，之前与[!UICONTROL 与任何人共享]共享选项共享的所有项目，以及未启用[!UICONTROL 需要Experience Cloud身份验证]选项的所有项目都将停用。<p>如果启用此选项(要求Experience Cloud身份验证)，稍后又禁用（允许具有链接的任何人访问该项目），则之前通过[!UICONTROL 与任何人共享]共享选项获得项目访问权限的用户不会自动重新获得对该项目的访问权限。 在这种情况下，共享项目的用户必须启用[!UICONTROL 链接]*选项，该选项在与任何人共享项目时可用&#x200B;**（[!UICONTROL 共享]** > **[!UICONTROL 与任何人共享]** > **[!UICONTROL 链接处于活动状态]**），如[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)中所述。</li><li>仅在组织内实施 SSO 后，此选项才可用。有关系统管理员如何为您的组织启用SSO的信息，请参阅[设置标识和单点登录](https://helpx.adobe.com/cn/enterprise/using/set-up-identity.html)。</p><p>如果已为组织配置 SSO，请检查控制台中是否实施了任何类型的自动帐户创建。通常，系统管理员会设置此项，如[启用自动帐户创建](https://helpx.adobe.com/cn/enterprise/using/automatic-account-creation.html)中所述。</li><li>如果您的组织许可 Healthcare Shield，则默认情况下会启用此选项且无法禁用。</li></ul> |
 
 {style="table-layout:auto"}
 
-## 项目和分析偏好设置
+### 项目和分析偏好设置 {#project-and-analysis-preferences}
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_categoricalpalette"
+>title="分类调色板"
+>abstract="应用于 Analysis Workspace 和引导分析中的许多可视化功能。每种颜色代表不同的类别值。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_divergingpalette"
+>title="发散调色板"
+>abstract="应用于 Analysis Workspace 和用户增长引导分析中的群组表。该调色板具有数字含义，其中带有两个极端以及中间的基线。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_sequentialpalette"
+>title="顺序调色板"
+>abstract="应用于频率趋势（堆积条）引导分析。该调色板具有从浅到深的数字含义。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 您可以为所有新的 Analysis Workspace 项目、新的 Analysis Workspace 面板和新的引导式分析自定义这些偏好设置。有关如何访问这些偏好设置的信息，请参阅[更新偏好设置](#update-preferences)。
 
 如[项目概述](/help/analysis-workspace/build-workspace-project/freeform-overview.md)中所述，也可以为 Analysis Workspace 中的个别项目自定义其中一些相同的偏好设置。
 
-单击链接的偏好设置标题以获取有关每个偏好设置的更多信息和上下文。
-
 | 部分 | 偏好设置 | 选项 |
 | --- | --- | --- |
 | **显示** | | |
-|  | [视图密度](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html?lang=zh-Hans) | 通过减小左侧边栏、自由格式表和同类群组表的垂直边距，让您可在屏幕上选择显示内容的多少。 <ul><li>紧凑</li><li>舒适</li><li>展开（默认）</li></ul> |
+|  | [视图密度](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html?lang=zh-Hans) | 通过减小左侧面板、自由格式表和同类群组表的垂直边距，选择要在屏幕上显示多少内容。 <ul><li>紧凑</li><li>舒适</li><li>展开（默认）</li></ul> |
 | | [调色板](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=zh-Hans) | 选择 Analysis Workspace 和引导式分析中使用的可视化调色板。 <ul><li> 分类调色板：适用于 Analysis Workspace 和引导式分析中的许多可视化图表。每种颜色均代表不同的分类值。从 Adobe 提供的选项中进行选择，或输入由逗号分隔的十六进制值定义的自定义调色板。</li><li> 发散调色板：应用于 Analysis Workspace 和用户增长引导式分析中的群组表。此调色板包含两个极端和中间基线的数值含义。<li> 顺序调色板：适用于频率趋势（堆叠柱状图）引导式分析。此调色板包含从浅色到深色的数值含义。</li></ul> |
 | **数据** | | |
-|  | [数据视图](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=zh-Hans?#report-suite) | 选择表格和可视化从中获取数据的位置。 <ul><li>最近（默认）</li><li>从列表中选择的特定数据视图</li></ul> |
-|  | [日历](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=zh-Hans?#calendar) | 从以下列表中选择： <ul><li>Adobe 提供的范围（默认为“本月”）</li><li>自定义范围</li></ul> |
+|  | [数据视图](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=zh-Hans?#report-suite) | 选择表和可视化图表从中派生数据的数据。 <ul><li>最近（默认）</li><li>从列表中选择的特定数据视图</li></ul> |
+|  | [日历](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=zh-Hans?#calendar) | 从以下列表中选择： <ul><li>Adobe 提供的范围（默认为“本月”）</li><li>默认情况下，您可以启用[!UICONTROL 使日期范围组件相对于面板日历]。</li></ul> |
 |  | [面板类型](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=zh-Hans) | <ul><li>自由格式（默认）</li><li>空白</li><li>快速见解</li></ul> |
-|  | 计数重复实例 | 指定是否将重复实例计入报表中。例如，此设置（激活时）会将同一页面的多次连续页面查看视为多次页面查看。关闭它后，它们将计为单个页面视图。 <p>**注意：**&#x200B;此设置仅影响某些量度（例如单页访问），不适用于流量或流失可视化。</p> |
+|  | 实例计数 | 启用[!UICONTROL 计算重复实例]以指定是否将重复实例计入报表中。 例如，启用时，同一页面的多次连续页面查看被视为多次页面查看。 在禁用时，同一页面的多次连续页面查看计为一次页面查看。 <p>**注意：**&#x200B;此设置仅影响某些量度（例如会话），而不适用于“流量”或“流失”可视化图表。</p> |
 |  | 数字格式 | <ul><li>1,000.00（默认）</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | CSV 分隔符字符 | <ul><li>逗号（默认）</li><li>分号</li><li>冒号</li><li>竖线</li><li>句点</li><li>空格</li><li>制表符</li></ul> |
 |  | 显示注释 | 选择注释是否在您的项目中可见。有关注释的更多信息，请参阅[注释概述](/help/components/annotations/overview.md)。 |
 
 
-## 自由格式表偏好设置
+### 自由格式表偏好设置 {#freeform-table-preferences}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_showanomalies"
+>title="显示异常"
+>abstract="选择&#x200B;**[!UICONTROL 显示异常]**&#x200B;将自动对添加到时间序列自由格式表可视化图表的第一个量度列运行异常检测。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_showforecast"
+>title="显示预测"
+>abstract="选择&#x200B;**[!UICONTROL 显示预测]**&#x200B;将自动预测添加到时间序列自由格式表可视化图表的第一个量度列。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 您可以为在 Analysis Workspace 中创建的所有新项目自定义自由格式表偏好设置。有关如何访问这些偏好设置的信息，请参阅[更新偏好设置](#update-preferences)。
 
 这些相同的偏好设置中的一些也可以针对单个表进行自定义。
 
-单击链接的分区标题以获取有关可用偏好设置的更多信息和上下文。
+选择链接节标题，了解有关可用首选项的更多信息和上下文。
 
 | 部分 | 偏好设置 | 选项 |
 | --- | --- | --- |
@@ -115,13 +170,13 @@ ht-degree: 100%
 | | 百分比计算 | <ul><li>行</li><li>行</li></ul> |
 | | 列总计（仅限静态行） | <ul><li>显示行总和：显示各个行项目的总和 </li><li>显示总计：显示进行重复数据删除后的行总和。</li></ul> |
 
-## 可视化偏好设置
+### 可视化偏好设置
 
 您可以更新在 Analysis Workspace 中创建的所有新项目的可视化偏好设置。有关如何访问这些偏好设置的信息，请参阅[更新偏好设置](#update-preferences)。
 
 这些相同的偏好设置中的一些也可以针对单个可视化进行自定义。
 
-单击链接的分区标题以获取有关可用偏好设置的更多信息和上下文。
+选择链接节标题，了解有关可用首选项的更多信息和上下文。
 
 | 部分 | 偏好设置 | 选项 |
 | --- | --- | --- |
@@ -132,6 +187,7 @@ ht-degree: 100%
 | | 显示双轴（适用时） | 仅适用于具有两个量度的情况，可以在左（用于一个量度）、右（用于另一个量度）两边各有一个 y 轴。在所绘制量度的数量级差别很大时，此项非常有用。 |
 | | 标准化（适用时） | 要求所有量度按等比例计算。在所绘制量度的数量级差别很大时，此项非常有用。 |
 | | 将 Y 轴定位在零 | 如果图表上绘制的所有值都远远大于零，则图表默认会将 y 轴底部设置为非零值。如果选中此框，y 轴将被强制设置为零（并将重新绘制图表）。 |
+| | 锚点异常以缩放Y轴 | Y轴将使用异常值进行缩放。 |
 | **[折线图](/help/analysis-workspace/visualizations/line.md)** | | |
 | | 百分比 | 以百分比显示线条可视化的值。 |
 | | 图例可见 | 允许您为折线图可视化隐藏详细的图例文本。 |
@@ -162,9 +218,9 @@ ht-degree: 100%
 | | 显示比较 | 显示对比数据。隐藏时，比较线形图和汇总更改对象将从视图中隐藏。 |
 | | 数值选项 | 在&#x200B;[!UICONTROL **关键量度摘要**]&#x200B;部分 <ul><li>显示百分比变化</li><li>显示原始差异</li>主要日期范围和次要日期范围中量度的总值之间的原始差异</ul> |
 | **[流失](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)** | | |
-| | 容器 | 用于在“访问”和“访客”之间切换以分析访客路径。默认值为“访客”。这些设置可帮助您在人员级别（跨会话）了解人员参与程度，或将分析限定于单次会话。 <p>可以使用以下选项：</p> <ul><li>访问</li><li>访客</li></ul> |
+| | 容器 | 允许您在&#x200B;**[!UICONTROL 会话]**&#x200B;和&#x200B;**[!UICONTROL 人员]**&#x200B;之间切换以分析人员路径。 默认值为&#x200B;**[!UICONTROL 人员]**。 这些设置可帮助您在人员级别（跨会话）了解人员参与程度，或将分析限定于单次会话。 <p>可以使用以下选项：</p> <ul><li>会话</li><li>人员</li></ul> |
 | **[流](/help/analysis-workspace/visualizations/c-flow/create-flow.md)** | | |
-| | 容器 | 在&#x200B;[!UICONTROL **流**]&#x200B;部分 <ul><li>访问</li><li>访客</li></ul> |
+| | 容器 | 在&#x200B;[!UICONTROL **流**]&#x200B;部分 <ul><li>会话</li><li>人员</li></ul> |
 | | 包装标签 | 通常情况下，流量元素上的标签会被截断以节约屏幕资源，但您可以通过选中此框使整个标签可见。默认值 = 取消选中。 |
 | | 包括重复实例 | 流量可视化图表基于某个维度的实例。此设置使您可以选择包含还是排除重复实例，例如页面重新载入。但是，不能从包含多值维度（例如 listVar、listProp、s.product、推销 eVar 等）的流量可视化图表中删除重复项。默认值 = 取消选中。 |
 | | 显示工具提示 | 确定将光标悬停在流量可视化图表中的各个节点上时是否显示包含节点数据的工具提示。 |
@@ -174,7 +230,7 @@ ht-degree: 100%
 | | 100% 堆叠 | 在面积堆叠、条形堆叠或水平条形堆叠的可视化图表上的此设置将图表转换为“100% 堆叠”的可视化图表。 <p>如需了解更多信息，请参阅[条形和堆叠条形](/help/analysis-workspace/visualizations/bar.md)。</p> |
 | **[直方图](/help/analysis-workspace/visualizations/histogram.md)** | | |
 | | 存储体数量 | 在可视化中选择数据范围（储存体）的数量。存储段的最大数量为 50。 <p>有关更多信息，请参阅[直方图](/help/analysis-workspace/visualizations/histogram.md)。</p> |
-| | 计算方法 | 从以下选项中进行选择： <ul><li>点击</li><li>访问</li><li>访客</li></ul> <p>例如，当与页面查看量结合使用时，您可以选择每个人员的页面查看量、访问的页面查看量或每次事件的页面查看量。对于点击来说，“发生次数”可作为自由格式表中的 y 轴量度。</p> |
+| | 计算方法 | 从以下选项中进行选择： <ul><li>点击</li><li>会话</li><li>人员</li></ul> <p>例如，当与页面查看量结合使用时，您可以选择每个人员的页面查看量、访问的页面查看量或每次事件的页面查看量。对于点击来说，“发生次数”可作为自由格式表中的 y 轴量度。</p> |
 | **[概要变化](/help/analysis-workspace/visualizations/summary-number-change.md)** | | |
 | | 值 | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>比例更改</li><li>原始差异</li></ul> |
 | | 百分比 | 以百分比显示摘要更改可视化效果的值。 |
@@ -201,21 +257,19 @@ ht-degree: 100%
 
 此操作无法撤销。
 
-1. 在 Customer Journey Analytics 中，选择&#x200B;[!UICONTROL **组件**] **>** [!UICONTROL **偏好设置**]。
-
-   ![用户偏好设置](assets/user-preferences.png)
+1. 在Customer Journey Analytics中，从顶部菜单中选择&#x200B;[!UICONTROL **组件**] **>** [!UICONTROL **首选项**]。 或者从Workspace菜单中选择&#x200B;**[!UICONTROL 项目]** > **[!UICONTROL 用户设置]**。
 
 1. 在右上角，选择&#x200B;**[!UICONTROL 恢复默认]**。
 
-1. 出现提示时，选择&#x200B;**[!UICONTROL 恢复默认]**。
+1. 在&#x200B;**[!UICONTROL 还原系统默认设置]**&#x200B;中选择&#x200B;**[!UICONTROL 还原默认值]**。
 
 ## [!UICONTROL 深色主题]
 
-如果您偏好为 Adobe Analytics 用户界面使用深色背景，可以切换到[!UICONTROL 深色主题]。
+如果您更希望为 Customer Journey Analytics 用户界面使用深色背景，可以切换到[!UICONTROL 深色主题]。
 
-1. 单击右上角的 Experience Cloud 用户图标。
+1. 选择右上角的Experience Cloud用户图标。
 
    ![dark-theme](assets/dark-theme.png)
 
-1. 将&#x200B;**[!UICONTROL 深色主题]**&#x200B;开关移动到右侧。
+1. 启用&#x200B;**[!UICONTROL 深色主题]**..
 

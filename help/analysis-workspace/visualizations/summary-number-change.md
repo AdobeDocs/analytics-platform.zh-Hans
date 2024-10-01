@@ -1,41 +1,58 @@
 ---
-description: 使用“概要数字”和“概要变化”可视化图表来显示项目中的重要数据点。
-title: 概要数字和概要变化
+description: 使用汇总数字和汇总变更可视化图表来显示项目中的重要数据点。
+title: 摘要数字和摘要变化
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
-source-git-commit: 61c1fe48ebe8ebff5b7104cebae1ce7b62289b7d
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 94%
+source-wordcount: '467'
+ht-degree: 44%
 
 ---
 
 # 概要数字和概要变化
 
-## “概要数字”可视化图表 {#summary-number}
+## 摘要数字 {#summary-number}
 
-使用“概要数字”可视化图表来突出显示项目中的大型重要数字。此可视化图表的行为方式如下：
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_summarynumber_button"
+>title="摘要数字"
+>abstract="创建一个显示总计和小计的可视化图表。"
+
+<!-- markdownlint-enable MD034 -->
+
+使用![摘要](/help/assets/icons/123.svg) **[!UICONTROL 摘要数字]**&#x200B;可视化图表突出显示项目中的大型重要数字。 此可视化图表的行为方式如下，使用关联的数据源：
 
 * 如果未选中单元格，此可视化则会选择总列数。
 * 如果选中了单个单元格，此可视化则会显示该单元格的概要。
 * 如果选中了多个单元格，此可视化则会显示所选单元格的第一个单元格。
 * 如果选中了列，此可视化则会选择列中的第一个单元格值。
 
-单击右上方的&#x200B;**可视化设置**&#x200B;齿轮，可配置“概要数字”设置：
+![概要数字可视化](asses/../assets/summary-number.png)
 
-| 设置 | 定义 |
+作为可视化图表设置的一部分，可以使用特定的概要数字选项。
+
+| 选项 | 定义 |
 |--- |--- |
-| 百分比 | 显示百分比，而不是原始数字。 |
-| 图例可见 | 显示有关所显示的量度的信息。 |
-| 缩写值 | 选择缩写值，最多显示 3 个小数位。 |
-| 值汇总方式 | 选择显示所选数据的最大值、最小值、平均值、中间值或总和。 |
+| **[!UICONTROL 缩写值]** | 选择&#x200B;**[!UICONTROL 缩写值]**&#x200B;智能缩写数值。 选中后，输入数字以定义缩写金额。 例如：<br/><table><tr><td>**原始值**</td><td>**缩写值**</td><td>**结果**</td></tr><tr><td>12,011,141.25美元</td><td>未选择</td><td  align="right">12,011,141.25美元</td></tr><tr><td>12,011,141.25美元</td><td>已选定，设置为`0`</td><td align="right">1200万美元</td></tr><tr><td>12,011,141.25美元</td><td> 已选定，设置为`1`</td><td  align="right">1200万美元</td></tr><tr><td>12,011,141.25美元</td><td>已选定，设置为`2`</td><td align="right">1201万美元</td></tr><tr><td>12,011,141.25美元</td><td>已选定，设置为`3`</td><td align="right">1201.1万美元</td></tr></table> |
+| **[!UICONTROL 值汇总方式]** | 选择显示所选数据的最大值、最小值、平均值、中间值或总和。 |
 
-{style="table-layout:auto"}
+## 概要变化 {#summary-change}
 
-## 概要更改可视化 {#summary-change}
+<!-- markdownlint-disable MD034 -->
 
-使用“概要变化”可视化图表来显示两个数字之间的增量（变化）。
+>[!CONTEXTUALHELP]
+>id="cja_workspace_summarychange_button"
+>title="概要变化"
+>abstract="创建一个可视化图表，以显示两个数字之间的增量（变化）"
+
+<!-- markdownlint-enable MD034 -->
+
+
+使用![MoveUpDown](/help/assets/icons/MoveUpDown.svg) **[!UICONTROL 摘要变化]**&#x200B;可视化图表显示两个数字之间的增量（变化）。<!-- This is applicable for AA, not CJA: The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.-->
 
 <!--
 The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.
@@ -54,11 +71,17 @@ The green and red color of the Summary Change can be controlled through [custom 
 ![显示两个数字之间差异的摘要更改可视化图表。s](assets/summary-change.png)
 
 
-单击右上方的&#x200B;**可视化设置**&#x200B;齿轮，可配置“概要变化”设置：
+作为可视化设置的一部分，可以使用特定的&#x200B;**[!UICONTROL 摘要更改选项]**。
 
-| 设置 | 定义 |
+| 选项 | 定义 |
 |--- |--- |
-| 百分比 | 显示百分比，而不是原始数字。 |
-| 图例可见 | 显示有关所显示的量度的信息。 |
-| 显示百分比变化 | 显示 2 个数字之间的百分比变化。 |
-| 显示原始差异 | 显示 2 个数字之间的原始差异。您还可以对此选项使用缩写值，并最多显示 3 个小数位。 |
+| **[!UICONTROL 显示百分比变化]** | 显示2个数字之间的百分比变化。 |
+| **[!UICONTROL 显示原始差异]** | 显示2个数字之间的原始差异。 您还可以对此选项使用缩写值，并最多显示 3 个小数位。 |
+| **[!UICONTROL 缩写值]** | 选择&#x200B;**[!UICONTROL 缩写值]**&#x200B;以智能地缩写更改的值。 选中后，输入数字以定义缩写金额。 例如：<br/><table><tr><td>**原始值**</td><td>**缩写值**</td><td>**结果**</td></tr><tr><td>12,011,141.25美元</td><td>未选择</td><td  align="right">12,011,141.25美元</td></tr><tr><td>12,011,141.25美元</td><td>已选定，设置为`0`</td><td align="right">1200万美元</td></tr><tr><td>12,011,141.25美元</td><td> 已选定，设置为`1`</td><td  align="right">1200万美元</td></tr><tr><td>12,011,141.25美元</td><td>已选定，设置为`2`</td><td align="right">1201万美元</td></tr><tr><td>12,011,141.25美元</td><td>已选定，设置为`3`</td><td align="right">1201.1万美元</td></tr></table> |
+
+>[!MORELIKETHIS]
+>
+>[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[可视化设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[可视化上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>

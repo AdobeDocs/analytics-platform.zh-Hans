@@ -5,14 +5,24 @@ exl-id: 52f9abf6-69f1-47d0-86ab-57123bc178d5
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '208'
 ht-degree: 100%
 
 ---
 
-# [!UICONTROL 值分段]组件设置
+# [!UICONTROL 值分段]组件设置 {#value-bucketing-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_valuebucketing"
+>title="值分段"
+>abstract="将值装入特定范围。这些范围在报表中表现为维度项。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 在创建或编辑数据视图时，通过值分段，可根据范围组合数值。仅限使用 Integer 或 Double 架构数据类型的维度有此功能可用。
 

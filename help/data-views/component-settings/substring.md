@@ -5,14 +5,24 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '921'
 ht-degree: 94%
 
 ---
 
-# [!UICONTROL 子字符串] 组件设置
+# 子字符串组件设置 {#substring-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_substring"
+>title="子字符串"
+>abstract="使用规则或正则表达式提取字符串的各个部分。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 [!UICONTROL 子字符串] 组件设置允许您执行多种字符串操作方法，以在报告中获取所需的维度项。
 

@@ -1,21 +1,21 @@
 ---
 description: 通过电子邮件发送Analysis Workspace项目，或者计划项目的提交时间。
 keywords: Analysis Workspace
-title: 通过电子邮件将Customer Journey Analytics数据发送给其他人
+title: 通过电子邮件将报告发送给其他人
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 388e008f4ee092dd8224bfacd020cdf762d4fb82
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 63%
+source-wordcount: '1034'
+ht-degree: 60%
 
 ---
 
-# 通过电子邮件将Customer Journey Analytics数据发送给其他人
+# 将文件发送给其他人
 
-您可以通过电子邮件将Customer Journey Analytics报表发送给选定的收件人，以将其导出。 您可以临时发送文件，也可以配置按计划发送的文件。 可以采用 CSV 或 PDF 格式发送文件。
+您可以通过电子邮件将Customer Journey Analytics报表作为文件发送给选定的用户。 您可以临时发送文件，也可以配置按计划发送的文件。 可以采用 CSV 或 PDF 格式发送文件。
 
 应用于项目的所有标记都会自动应用于导出。
 
@@ -56,7 +56,7 @@ ht-degree: 63%
 
 可以在 **[!UICONTROL Analytics] > [!UICONTROL 组件] > [!UICONTROL 计划项目]**&#x200B;下管理计划的 Analysis Workspace 项目。
 
-在计划项目管理器中，您可以编辑和删除重复的项目计划。在搜索栏中搜索计划，或者使用左边栏中的过滤器选项搜索计划。您可以按标记、批准的计划、所有者等进行过滤。
+在计划项目管理器中，您可以编辑和删除重复的项目计划。在搜索栏中搜索计划，或者使用左侧面板中的过滤器选项搜索计划。 您可以按标记、批准的计划、所有者等进行过滤。
 
 | 字段 | 描述 |
 | --- | --- |
@@ -78,14 +78,24 @@ ht-degree: 63%
 | **[!UICONTROL 编辑计划]** | 单击计划的标题以更新其发送设置。 |
 | **[!UICONTROL 删除计划]** | 在列表中选择计划项目，然后从菜单中选择“删除”。这将删除项目的选定计划；但不会删除项目本身。 |
 | **[!UICONTROL 添加标记]** | 在列表中选择计划项目，然后选择“标记”或“批准”以整理计划并使这些计划更易于搜索。 |
-| **[!UICONTROL 查看失败的计划]** | 导航到左边栏中的“其他过滤器”>“失败”以查看已失败的计划。 |
-| **[!UICONTROL 查看过期的计划]** | 导航到左边栏中的“其他过滤器”>“过期”以查看已过期的计划。单击计划的标题以设置新的投放计划。 |
+| **[!UICONTROL 查看失败的计划]** | 导航到左侧面板>“其他过滤器”>“失败”以查看已失败的计划。 |
+| **[!UICONTROL 查看过期的计划]** | 导航到左侧面板>“其他过滤器”>“过期”以查看已过期的计划。 单击计划的标题以设置新的投放计划。 |
 | **[!UICONTROL 查看计划 ID]** | 导航到右上方的列选项，并将“计划 ID”列添加到表中。计划 ID 通常对调试有用。 |
 
 计划项目管理器可显示特定用户已创建的项目。如果应用程序中禁用该用户帐户，则会停止所有计划的提交。
 有关详细信息，请参阅[计划项目](/help/components/scheduled-projects-manager.md)。
 
 ## 密码保护计划项目 {#password}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_sendfile_password"
+>title="密码加密"
+>abstract="提供的密码将用于加密计划项目的文件。您的组织的安全要求需要进行密码加密。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 >[!NOTE]
 >

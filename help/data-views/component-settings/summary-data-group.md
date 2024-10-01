@@ -4,14 +4,25 @@ description: 详细信息以及如何配置数据集中的维度以确保您可�
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: cba5904191b0602557903b5b9f32a2b793c8207d
+exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 9%
+source-wordcount: '343'
+ht-degree: 17%
 
 ---
 
-# [!UICONTROL 摘要数据组]组件设置
+# [!UICONTROL 摘要数据组]组件设置 {#summary-data-group-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_summarydatagroup"
+>title="摘要数据组"
+>abstract="摘要数据组在分组中的所有维度之间创建关联，并用于将摘要数据集中的维度与其他维度相结合以进行报告。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 摘要数据组在分组中的所有维度之间创建关联，并用于将摘要数据集中的维度与其他维度相结合以进行报告。
 
@@ -31,7 +42,7 @@ ht-degree: 9%
 在对维度进行分组时，必须确保组内每个维度的[!UICONTROL Substring]、[!UICONTROL Behavior （小写）]和[!UICONTROL Include exclude values]设置相同。 否则，在分组之前，组的每个维度都可能会返回不同的结果。
 例如：
 
-1. 您已为`campaign_code` （摘要数据的一部分）和`tracking_code` （事件数据的一部分）创建摘要数据组。
+1. 您已为`campaign_code`（摘要数据的一部分）和`tracking_code`（事件数据的一部分）创建摘要数据组。
 1. 您已将[!UICONTROL 行为（小写）]应用于`campaign_code`，但未应用于`tracking_code`维度。
 
 `tracking_code`中的值可能显示为`campaign_code`以外的值。
@@ -40,5 +51,3 @@ ht-degree: 9%
 >
 >确保仅从一个维度对维度进行分组，而不应用来自多个维度的分组。 例如，如果通过将`campaign_name`维度添加到`tracking_code`维度来创建分组，则不要同时为`campaign_name`维度创建分组。
 >
-
-

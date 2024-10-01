@@ -5,20 +5,30 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 role: Admin
-source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
+source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
 workflow-type: tm+mt
-source-wordcount: '2004'
-ht-degree: 7%
+source-wordcount: '2016'
+ht-degree: 8%
 
 ---
 
-# 在报告活动管理器中查看报告活动
+# 查看报告活动 {#view-reporting-activity}
 
 [!UICONTROL 报告活动管理器]使管理员能够在报告高峰期快速诊断和修复报告容量问题。
 
 有关报告活动管理器的详细信息，包括主要权益和权限要求，请参阅[报告活动管理器概述](/help/reporting-activity-manager/reporting-activity-overview.md)。
 
-## 查看所有连接的报告活动 {#view-all-report-suites}
+## 对于所有连接 {#view-all-report-suites}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_tools_reportingactivitymanager_connections"
+>title="连接"
+>abstract="此表显示您有权管理报告活动的连接。表中的每个列均提供有关每个连接的信息。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 1. 在Customer Journey Analytics中，转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 报告活动管理器]**。
 
@@ -36,7 +46,7 @@ ht-degree: 7%
 
    * 使用搜索字段搜索特定连接。 开始键入连接名称或ID，并在键入内容时键入连接更新列表。
 
-   * 选择&#x200B;[!UICONTROL **筛选器**]&#x200B;图标![筛选器图标](assets/filter-icon.png)以展开筛选器选项列表。 您可以按&#x200B;[!UICONTROL **收藏夹**]&#x200B;或&#x200B;[!UICONTROL **状态**]&#x200B;进行筛选。
+   * 选择![筛选器](/help/assets/icons/Filter.svg)以展开筛选器选项列表。 您可以按&#x200B;[!UICONTROL **收藏夹**]&#x200B;或&#x200B;[!UICONTROL **状态**]&#x200B;进行筛选。
 
      要将连接标记为收藏，请选择连接名称左侧的星形图标。
 
@@ -57,7 +67,7 @@ ht-degree: 7%
 
    {style="table-layout:auto"}
 
-## 查看单个连接的报告活动
+## 对于单个连接
 
 1. 在Customer Journey Analytics中，选择&#x200B;[!UICONTROL **工具**] > [!UICONTROL **报告活动管理器**]。
 

@@ -4,14 +4,32 @@ description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 7d21f6816412b45b795d223d351d4b48bd679c6d
+source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 50%
+source-wordcount: '1726'
+ht-degree: 49%
 
 ---
 
-# 创建并发布受众
+# 创建并发布受众 {#create-and-publish-audiences}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_audiences_refreshfrequency"
+>title="刷新频率"
+>abstract="查看重新评估受众成员资格的频率。<br/>一次性受众只评估一次。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_audiences_audiencelimit"
+>title="受众限制"
+>abstract="根据刷新频率，刷新受众受到了限制。"
+
+<!-- markdownlint-enable MD034 -->
 
 本主题讨论如何在Adobe Experience Platform中创建并将在Customer Journey Analytics中识别的受众发布到[实时客户个人资料](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans)，以实现客户定位和个性化。
 
@@ -53,7 +71,7 @@ ht-degree: 50%
 
 1. 解释数据预览。
 
-   受众预览显示在右边栏中。它允许您对所创建的受众进行总结分析。
+   受众预览显示在右侧面板中。 它允许您对所创建的受众进行总结分析。
 
    ![显示受众摘要分析的数据预览屏幕截图。](assets/data-preview.png)
 
@@ -115,7 +133,7 @@ Customer Journey Analytics会从已发布的受众中获取所有命名空间和
 >
 >当该功能正式发布时，将删除此说明。有关Customer Journey Analytics发布过程的信息，请参阅[Customer Journey Analytics功能发布](/help/release-notes/releases.md)。
 
-1. 在左边栏中展开&#x200B;[!UICONTROL **客户**]，然后选择&#x200B;[!UICONTROL **受众**]。<!-- is there a folder called "Customer Journey Analytics? -->
+1. 在左侧面板中展开&#x200B;[!UICONTROL **客户**]，然后选择&#x200B;[!UICONTROL **受众**]。<!-- is there a folder called "Customer Journey Analytics? -->
 
 1. 选择&#x200B;[!UICONTROL **浏览**]&#x200B;选项卡。
 

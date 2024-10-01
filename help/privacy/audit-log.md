@@ -4,14 +4,33 @@ description: 了解如何查看和管理Customer Journey Analytics审核日志�
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 65%
+source-wordcount: '837'
+ht-degree: 66%
 
 ---
 
-# 审核日志
+# 审核日志 {#audit-logs}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_tools_auditlog_userid"
+>title="用户 ID"
+>abstract="在包含所需用户的日志条目上单击“信息”按钮即可找到用户 ID。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_tools_auditlog_componentid"
+>title="组件 ID"
+>abstract="在包含所需组件的日志条目上单击“信息”按钮即可找到组件 ID。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 为了提高系统中所执行活动的透明度和可见性，Adobe Customer Journey Analytics允许您以“审核日志”的形式审核各种服务和功能的用户活动。 这些日志形成审核记录，可以帮助解决问题，并帮助您的企业有效遵守公司数据管理政策和监管要求，例如“健康保险流通与责任法案”(HIPAA)。
 

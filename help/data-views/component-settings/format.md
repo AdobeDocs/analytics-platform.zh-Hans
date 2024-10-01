@@ -5,14 +5,24 @@ exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 20%
+source-wordcount: '720'
+ht-degree: 21%
 
 ---
 
-# 格式组件设置
+# 格式组件设置 {#format-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_metric_format"
+>title="格式"
+>abstract="确定在报表中使用某个组件时如何显示该组件。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 通过格式，可决定给定的量度在报表中使用的显示方式。
 

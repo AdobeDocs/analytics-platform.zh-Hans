@@ -1,71 +1,206 @@
 ---
 description: 计算量度生成器提供一个画布，可以将维度、量度、筛选器和函数拖放到画布上，以基于容器层次结构逻辑、规则和运算符创建自定义量度。通过此集成式开发工具，您可以生成并保存简单的计算量度或复杂的高级计算量度。
-title: 生成指标
+title: 生成计算量度
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 7cdd81c9e38219d2d17decd5b9c3e987b814fc53
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 49%
+source-wordcount: '1526'
+ht-degree: 6%
 
 ---
 
-# 生成量度
+# 生成计算量度 {#build-metrics}
 
-Customer Journey Analytics提供了一个画布以将维度、量度、筛选器和函数拖放到其中，从而根据容器层次结构逻辑、规则和运算符创建自定义量度。 通过这个集成的开发工具，可生成并保存简单的计算指标或复杂的高级计算指标。
-
-## 开始构建计算量度
-
-您可以使用计算指标生成器创建计算指标。 通过这种方式创建时，计算量度在组件列表中可用，然后可在整个组织的项目中使用。 或者，还可创建快速计算量度，如[量度](/help/components/apply-create-metrics.md)中的[为单个项目](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project)创建计算量度中所述。
-
-访问计算量度生成器，以开始创建组件列表中可用的计算量度。
-
-1. 通过以下任意方式访问计算指标生成器：
-
-   * 在Analysis Workspace中，打开一个项目，然后选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 创建指标]**。
-   * 在Analysis Workspace中，打开一个项目，然后选择左边栏中&#x200B;[!UICONTROL **量度**]&#x200B;部分旁边的&#x200B;**加号**&#x200B;图标。
-   * 在[!DNL Customer Journey Analytics]中，转到&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 计算量度]**，然后选择计算量度页面顶部的&#x200B;**[!UICONTROL +添加]**。
-
-1. 继续计算指标生成器](#areas-of-the-calculated-metrics-builder)的[区域。
-
-## 计算量度构建器的区域
-
-<!-- 
+<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_journeycanvas_viz_product_compatibility"
->title="Product compatibility"
->abstract="Indicates where in Customer Journey Analytics this calculated metric can be used, such as in Analysis Workspace, Report Builder, and so forth."  
->"Some calculated metrics cannot be used with experimentation. Calculated metrics that are not compatible with experimentation have the following value: "Everywhere in Customer Journey Analytics (excluding experimentation)" "
->"Various factors affect whether a calculated metric is compatible with experimentation. Learn more (https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation) ."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Use calculated metrics in experimentation"
+>id="cja_components_calculatedmetrics_productcompatibility"
+>title="产品兼容性"
+>abstract="指示可以在Customer Journey Analytics中使用此计算指标的位置，例如在Analysis Workspace、Report Builder等。 某些计算量度无法用于实验。"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="在实验中使用计算量度。"
 
--->
+<!-- markdownlint-enable MD034 -->
 
-下图及随附的表介绍了计算量度生成器的某些主要区域和功能。
+<!-- markdownlint-disable MD034 -->
 
-![新计算指标窗口，显示本节中描述的主要区域和功能。](assets/cm_builder_ui.png)
+>[!CONTEXTUALHELP]
+>id="cja_components_calculatedmetrics_externalid"
+>title="外部 ID"
+>abstract="更改外部ID可能会影响计算量度在外部源（如商业智能工具）中的显示方式"
 
-| 字段 | 描述 |
-| --- | --- |
-| 标题 | 必须为指标命名。如果没有命名，则无法保存指标。 |
-| 描述 | 给指标一个便于用户理解的描述，以展示其用途并区分它与类似的指标。 <p>该描述还会显示在报表内。最好不要在描述中放入公式，而是描述此指标应当用于哪些方面，不应当用于哪些方面。（公式会在您创建指标时生成，它位于“摘要”标题的下面。因此，无需将公式添加到描述中。） </p> |
-| 格式 | 选项包括“小数”、“时间”、“百分比”和“货币”。 |
-| 小数位数 | 显示将在报表中显示的小数位数。您可以指定的最大小数位数为 10。 |
-| 将上升趋势显示为... | 此指标极性设置显示 Analytics 应当将指标中的上升趋势视为有利（绿色）还是不利（红色）。最终，报表中的图表将在上升时显示为绿色或红色。 |
-| 货币 | 此数据视图的基础货币。 |
-| 标记 | 标记是一种用于组织指标的好方法。所有用户均可创建标记，并将一个或多个标记应用于指标。但是，您只能查看自己拥有的过滤器或已与您共享的过滤器的标记。 应创建哪种类型的标记？以下是对实用标记的一些建议：<ul><li>**团队名称**，如社交营销、移动营销。</li><li>**项目** （分析标记），如登录页分析。</li><li>**类别**，如女性；地理位置。</li><li>**工作流**，如“待批准”；策划（为特定的业务部门）</li></ul> |
-| 概要 | <p>无论您何时对量度定义进行更改，概要公式都会随之发生更新。 当您将光标悬停在量度上并单击 <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg" id="image_BDA0EAF89C19440CB02AE248BA3F968E" />图标。 </p> |
-| 定义 | 在此处，您可以拖入量度/计算量度、筛选器和/或函数来构建计算量度。 <ul><li>如果拖入一个计算指标，则它将自动展开其指标定义。 </li> <li>您可以通过容器嵌套定义。但是，与过滤器容器不同，这些容器的功能与数学表达式类似，可决定操作的顺序。 </li> </ul> |
-| 运算符 | 除以( <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Divide_18_N.svg" width="15" id="image_320D7363DE024BDEB21E44606C8B367F" width="25px" /> )是默认运算符，另外还有+、 — 和x运算符。 |
-| 预览 | 提供对可能存在的任何错误的快速阅览。预览涵盖过去 90 天的范围。这种方式可用于初步评估您是否为指标选择了正确的组件。出现意外结果表示您需要重新检查指标定义。 |
-| 产品兼容性 | 指示Customer Journey Analytics中可以使用此计算量度的位置。 <p>可能的值包括：</p><ul><li>[!UICONTROL **Customer Journey Analytics中的所有位置**]：计算指标可在所有Customer Journey Analytics中使用，包括在Analysis Workspace、Report Builder等中。</li><li>[!UICONTROL **Customer Journey Analytics中的任意位置（不包括试验）**]：计算指标可在所有Customer Journey Analytics中使用，试验面板除外。</li> <p>有关确定计算量度是否可用于试验的标准的信息，请参阅[试验面板](/help/analysis-workspace/c-panels/experimentation.md)中的[在试验面板中使用计算量度](/help/analysis-workspace/c-panels/experimentation.md#use-calculated-metrics-in-the-experimentation-panel)。</p></ul> |
-| 添加 | 对于所有类型的计算量度，您可以向定义中添加容器和静态数字。对于高级计算量度，您还可以添加筛选器和函数。<ul><li>容器的作用类似于数学表达式，它们决定着运算的顺序。因此，容器中的任何内容都将在下次运算前得到处理。</li><li>将过滤器拖动到容器上会过滤该容器中的所有内容。 （仅限高级计算指标）</li><li>您可以在一个容器中堆叠多个筛选器。</li></ul> |
-| 齿轮图标（量度类型、归因） | 通过选择量度旁边的齿轮图标，您可以指定量度类型和归因模型。 <p>**注意：**&#x200B;将组件的归因更新为非默认归因模型时，请考虑以下事项：</p><ul><li>**在具有&#x200B;*单个维度*：**&#x200B;的报表中使用组件时，如果使用非默认归因模型，组件的归因将忽略分配模型。</li><li>**在具有&#x200B;*多个维度*：**&#x200B;的报表中使用组件时，如果使用了非默认归因模型，则组件的归因将保留分配模型。</li><li>仅当[将数据导出到云](/help/analysis-workspace/export/export-cloud.md)时，多个维度才可用。</li></ul> <p>有关分配的更多信息，请参阅[持久性组件设置](/help/data-views/component-settings/persistence.md)。</p> |
-| 加号(+)图标 | 让您能够创建新组件，例如新筛选器（这会将您转到筛选器生成器）。 |
-| 搜索组件 | 通过此搜索栏，您可以搜索维度、量度、过滤器（仅限高级计算量度）和函数（仅限高级计算量度）。 |
-| 维度列表 | 要在筛选器生成器中构建一个简单的筛选器（例如“页面=主页”），您无需离开计算量度生成器，而是可以在“页面”中拖动并从计算量度生成器中直接选择“主页”。 这可以极大地简化用于创建筛选计算量度的工作流程。 |
-| 指标列表 | 指标有以下 3 种类别：<ul><li>标准量度</li><li>计算量度</li><li>量度模板 - 位于列表底部。</li></ul>将光标悬停在量度上时，您可以在其右侧看到信息图标。单击此图标会显示以下信息：<ul><li>有关如何计算指标的公式。</li><li>指标的预览趋势。</li><li>位于右上角的编辑（铅笔）图标可将您转到计算指标生成器，以便在其中编辑此计算指标。</li></ul> |
-| 筛选器列表 | （仅限高级计算量度）作为管理员，此列表显示在您的登录公司中创建的所有筛选器。如果您是非管理员用户，则此列表显示您拥有的筛选器以及与您共享的筛选器。 |
-| 函数列表 | （仅限高级计算指标）函数将分为两个列表：基本（最常使用）和高级。 |
-| 数据视图选择器 | 此选择器（位于右上角）让您可以切换到不同的数据视图。 |
+<!-- markdownlint-enable MD034 -->
+
+
+**[!UICONTROL 计算量度生成器]**&#x200B;对话框用于创建新计算量度或编辑现有计算量度。 该对话框的标题为&#x200B;**[!UICONTROL 新建计算量度]**&#x200B;或&#x200B;**[!UICONTROL 编辑从[[!UICONTROL 计算量度]管理器](/help/components/calc-metrics/cm-workflow/cm-manager.md)创建或管理的量度的计算量度]**。
+
+>[!BEGINTABS]
+
+>[!TAB 计算指标生成器]
+
+![计算度量详细信息窗口，其中显示下一节中描述的字段和选项。](assets/calculated-metric-builder.png)
+
+>[!TAB 创建或编辑计算量度]
+
+![计算度量详细信息窗口，其中显示下一节中描述的字段和选项。](assets/create-edit-calculated-metric.png)
+
+>[!ENDTABS]
+
+1. 指定以下详细信息（![必需](/help/assets/icons/Required.svg)为必需）：
+
+   | 元素 | 描述 |
+   | --- | --- |
+   | **[!UICONTROL 数据视图]** | 您可以选择计算指标的数据视图。  您定义的计算指标基于所选的数据视图在Workspace项目中可用。 |
+   | **[!UICONTROL 仅用于项目的量度]** | 一个信息框，用于说明该量度仅在创建它的项目中可见，并且不会将该量度添加到组件列表。 启用&#x200B;**[!UICONTROL 使此量度对所有项目都可用，并将其添加到组件列表]**&#x200B;以更改该设置。 仅当您使用&#x200B;**[!UICONTROL 从所选内容创建指标]**&#x200B;在Workspace中创建指标并选择函数（如&#x200B;**[!UICONTROL 平均值]**&#x200B;或&#x200B;**[!UICONTROL 中间值]**）时，此信息框才可见。 稍后使用[组件信息](/help/components/use-components-in-workspace.md#component-info)编辑该创建的量度。 |
+   | **[!UICONTROL 标题]** ![必填](/help/assets/icons/Required.svg) | 命名计算量度，例如`Conversion Rate`。 |
+   | **[!UICONTROL 外部ID]** ![必需](/help/assets/icons/Required.svg) | 使用外部BI工具和BI扩展时计算量度的名称。 除非您覆盖该值，否则该值将自动定义为`undefined_xxx`。 |
+   | **[!UICONTROL 描述]** | 提供筛选器的说明，例如`Calculated metric to define the conversion rate.`。无需说明计算量度的公式，因为该公式已在[!UICONTROL 摘要]中自动可用。 |
+   | **[!UICONTROL 格式]** | 为计算量度选择格式：您可以选择介于&#x200B;**[!UICONTROL Decimal]**、**[!UICONTROL Time]**、**[!UICONTROL Percent]**&#x200B;和&#x200B;**[!UICONTROL Currency]**&#x200B;之间。 |
+   | **[!UICONTROL 小数位]** | 指定所选格式的小数位数。 仅当选择的格式为“小数”、“货币”和“百分比”时才启用。 |
+   | **[!UICONTROL 将上升趋势显示为]** | 指定计算量度的上升趋势显示为▲**[!UICONTROL 良好（绿色）]**&#x200B;还是▼**[!UICONTROL 不良（红色）]**。 |
+   | **[!UICONTROL 货币]** | 指定计算指标的货币。 仅当选择的格式为货币时启用。 |
+   | **[!UICONTROL 标记]** | 通过创建或应用一个或多个标记来组织计算量度。 开始键入以查找您可以选择的现有标记。 或按&#x200B;**[!UICONTROL ENTER]**&#x200B;添加新标记。 选择![CrossSize75](/help/assets/icons/CrossSize75.svg)以删除标记。 |
+   | **[!UICONTROL 预览]** | 预览涵盖过去90天，是一种衡量您是否已正确定义指标的方法。 |
+   | **[!UICONTROL 摘要]** | 显示计算指标定义的摘要。 <br/>例如：![事件](/help/assets/icons/Event.svg) **[!UICONTROL 总订单]** ![除](/help/assets/icons/Divide.svg) ![事件](/help/assets/icons/Event.svg) **[!UICONTROL 会话]**。 |
+   | **[!UICONTROL 定义]** ![必需](/help/assets/icons/Required.svg) | 使用[定义生成器](#definition-builder)定义您的筛选器。 |
+
+1. 要验证计算量度定义是否正确，请使用计算量度结果不断更新的&#x200B;**[!UICONTROL 预览]**。 **[!UICONTROL 预览]**&#x200B;涵盖过去90天，并持续评估计算指标的定义。
+
+   **[!UICONTROL 产品兼容性]**&#x200B;指示计算度量是否可用于实验。 可能的值包括：
+   * **[!UICONTROL Customer Journey Analytics中的所有位置]**：计算指标可在所有Customer Journey Analytics中使用，试验面板除外。
+   * **[!UICONTROL Customer Journey Analytics中的任意位置（不包括试验）]**：计算指标可在所有Customer Journey Analytics中使用。
+
+1. 选择：
+   * **[!UICONTROL 保存]**&#x200B;以保存计算量度。
+   * **[!UICONTROL 另存为]**&#x200B;以保存计算量度的副本。
+   * **[!UICONTROL 取消]**&#x200B;以取消对计算量度所做的任何更改或取消创建新计算量度。
+
+
+## 定义生成器
+
+您可以使用定义生成器将维度、量度、筛选器和函数拖放到容器层次结构逻辑、规则和运算符的基础上创建自定义量度。 在该构造中，您可以使用标准量度、Adobe定义的量度、计算量度、过滤器、维度和函数。 所有这些组件在计算量度生成器的组件面板中均可用。 此外，您可以在定义中使用运算符和容器。
+
+![创建计算量度](/help/components/calc-metrics/cm-workflow/assets/create-calculated-metric.gif)
+
+在&#x200B;**[!UICONTROL 定义]**&#x200B;区域中，只有量度被定义为单个组件。 所有其他组件都定义为容器、包装量度或其他容器。 有关详细信息，请参阅[容器](#containers)。
+
+### 量度
+
+要添加量度，请执行以下操作：
+
+* 将![事件](/help/assets/icons/Event.svg) **[!UICONTROL 量度]**&#x200B;组件从组件面板拖放到&#x200B;**[!UICONTROL 将量度、维度、维度项、筛选器和/或函数拖放到此处]**。 您可以使用组件栏中的![搜索](/help/assets/icons/Search.svg)来搜索特定组件。
+
+当您在定义中使用计算量度时，计算量度是展开的。
+
+要修改指标，请执行以下操作：
+
+1. 在&#x200B;**[!UICONTROL 定义]**&#x200B;区域中选择量度组件中的![设置](/help/assets/icons/Setting.svg)。
+1. 在弹出对话框中，您可以定义量度类型和归因模型。 请参阅[量度类型和归因](m-metric-type-alloc.md)。
+
+要删除指标，请执行以下操作：
+
+* 在量度中选择![关闭](/help/assets/icons/Close.svg)。
+
+### 运算符
+
+运算符允许您指定组件或容器之间的运算符。 运算符自动显示介于
+
+* 容器中的两个或多个量度，
+* 一个容器中的两个或多个容器，
+* 容器中的一个或多个量度和一个或多个容器。
+
+您可以选择︰
+
+| 符号 | 运算符 |
+|:---:|---|
+| ![除](/help/assets/icons/Divide.svg) | 除（默认） |
+| ![关闭](/help/assets/icons/Close.svg) | 乘 |
+| ![删除](/help/assets/icons/Remove.svg) | 减 |
+| ![添加](/help/assets/icons/Add.svg) | 添加 |
+
+### 静态数字
+
+您可以向计算指标定义添加静态数字。 添加静态数字：
+
+* 从容器中选择![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]**。
+* 选择&#x200B;**[!UICONTROL 静态数字]**。 此时将显示一个静态编号容器。
+* 选择&#x200B;[!UICONTROL *单击以添加值*]&#x200B;并键入值。
+
+
+### 容器
+
+将维度、过滤器和函数作为容器添加到计算量度定义。 您还可以添加通用容器。 容器的作用类似于数学表达式，它们决定着运算的顺序。容器中的任何内容都将在下一个组件或容器之前进行处理。
+
+
+#### 筛选器容器
+
+使用筛选器容器的概念创建[筛选量度](metrics-with-segments.md)。 您可以使用过滤器或根据维度创建的过滤器来构建过滤器容器。
+
+* 要从维度添加过滤器容器，请执行以下操作：
+
+   1. 将![Dimension](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimension]**&#x200B;组件从组件面板拖放到&#x200B;**[!UICONTROL 将指标、维度、维度项、筛选器和/或函数拖放到此处]**。 您可以使用组件栏中的![搜索](/help/assets/icons/Search.svg)来搜索特定组件。
+   1. 在&#x200B;**[!UICONTROL 从Dimension]**&#x200B;创建过滤器弹出窗口中，定义过滤器的条件。 从运算符列表中进行选择，然后选择一个值或输入一个值。 例如，**[!UICONTROL Month]** **[!UICONTROL 等于]** ![V形下降](/help/assets/icons/ChevronDown.svg) `Sep 2024`。
+   1. 选择&#x200B;**[!UICONTROL 完成]**。 筛选器容器已添加到&#x200B;**[!UICONTROL 定义]**。
+
+
+* 要从筛选器添加筛选器容器，您可以使用：
+
+   * 将![分段](/help/assets/icons/Segmentation.svg) **[!UICONTROL 筛选器]**&#x200B;组件从组件面板拖放到&#x200B;**[!UICONTROL 将量度、维度、维度项、筛选器和/或函数拖放到此处]**。 您可以使用组件栏中的![搜索](/help/assets/icons/Search.svg)来搜索特定筛选器。
+使用该筛选器的名称，自动将筛选器容器添加到**[!UICONTROL 定义]**。
+
+   * 将![分段](/help/assets/icons/Segmentation.svg) **[!UICONTROL 筛选器]**&#x200B;组件从组件面板拖放到通用容器上。 将该容器修改为过滤器容器。
+
+   * 从容器中选择![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]**：
+
+      1. 选择&#x200B;**[!UICONTROL 筛选器]**。 筛选器容器已添加到&#x200B;**[!UICONTROL 定义]**。
+      1. 在新筛选器容器中，从&#x200B;[!UICONTROL *选择……*]&#x200B;下拉菜单中选择一个筛选器。
+
+  >[!TIP]
+  >
+  >您可以向容器添加多个过滤器。
+
+  容器中的过滤器以过滤器组件命名。 例如，![分段](/help/assets/icons/Segmentation.svg) **[!UICONTROL Web会话]**。 选择![信息大纲](/help/assets/icons/InfoOutline.svg)以显示包含筛选器详细信息的弹出窗口。 在弹出窗口中，选择![编辑](/help/assets/icons/Edit.svg)以编辑筛选器定义。
+
+要从容器中删除过滤器，请执行以下操作：
+
+* 选择筛选器名称旁边的![关闭](/help/assets/icons/Close.svg)。
+
+有关更多详细信息和示例，请参阅[过滤的量度](metrics-with-segments.md)。
+
+#### 函数容器
+
+要添加函数容器，您可以使用：
+
+* 拖放：
+
+   1. 将![函数](/help/assets/icons/Effect.svg) **[!UICONTROL 函数]**&#x200B;组件从组件面板拖放到&#x200B;**[!UICONTROL 将量度、维度、维度项、筛选器和/或函数拖放到此处]**。 您可以使用组件栏中的![搜索](/help/assets/icons/Search.svg)来搜索特定功能。
+   1. 自动使用函数名称将函数容器添加到&#x200B;**[!UICONTROL 定义]**。
+
+* 从容器中选择![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]**：
+
+   1. 选择&#x200B;**[!UICONTROL 函数]**。
+   1. 在容器中，从&#x200B;[!UICONTROL *选择……*]&#x200B;下拉菜单中选择一个函数。
+
+函数容器以函数组件命名。 例如，![函数](/help/assets/icons/Effect.svg) **[!UICONTROL 平方根（量度）]**。 选择![信息大纲](/help/assets/icons/InfoOutline.svg)以显示包含函数详细信息的弹出窗口。 选择&#x200B;**[!UICONTROL 了解更多]**&#x200B;以了解有关该函数的更多信息。
+
+有关如何使用函数以及哪些函数可用于创建计算量度的详细信息，请参阅[使用函数](cm-using-functions.md)。
+
+
+#### 通用容器
+
+要添加通用容器，请执行以下操作：
+
+* 从容器中选择![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]**
+* 选择&#x200B;**[!UICONTROL 容器]**。 向&#x200B;**[!UICONTROL 定义]**&#x200B;添加了新的空泛型容器。 您可以使用通用容器在计算指标的定义中嵌套或创建层次结构。
+
+
+#### 删除容器
+
+要删除容器，请选择容器级别的![关闭](/help/assets/icons/Close.svg)。
+
+>[!MORELIKETHIS]
+>
+>[使用函数](cm-using-functions.md)
+>[过滤器](/help/components/filters/filters-overview.md)
+>
+
