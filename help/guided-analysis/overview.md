@@ -5,10 +5,10 @@ keywords: 产品分析
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
+source-git-commit: cfc48aea3f474fedece022898f224ee68fb2b649
 workflow-type: tm+mt
-source-wordcount: '1392'
-ht-degree: 99%
+source-wordcount: '1435'
+ht-degree: 91%
 
 ---
 
@@ -20,19 +20,19 @@ ht-degree: 99%
 
 以下引导式分析视图可供使用：
 
-| 分析类型 | 视图类型 | 描述 |
-| --- | --- | --- |
-| [!UICONTROL 功能矩阵] | [参与度](types/engagement.md) | 了解功能参与的广度和深度。 |
-| [!UICONTROL 漏斗] | [摩擦](types/friction.md) | 比较步骤之间的转化率。 |
-| [!UICONTROL 漏斗] | [转化趋势](types/conversion-trends.md) | 跟踪转化率随时间发生的变化。 |
-| [!UICONTROL 影响] | [发布](types/release.md) | 比较发布前和发布后相同时期的性能。 |
-| [!UICONTROL 影响] | [首次使用](types/first-use.md) | 衡量功能首次使用对关键指标的影响。 |
-| [!UICONTROL 保留] | [保留率](types/retention-rates.md) | 衡量用户持续的返回习惯。 |
-| [!UICONTROL 趋势] | [用法](types/usage.md) | 随着时间的推移衡量用户参与度。 |
-| [!UICONTROL 趋势] | [频率](types/frequency.md) | 按使用频率衡量参与度。 |
-| [!UICONTROL 用户增长] | [活动](types/active.md) | 确定新的、保留的、返回的或非活跃的用户。 |
-| [!UICONTROL 用户增长] | [净增长](types/net-growth.md) | 您是在获得用户还是在失去用户？ |
-| [!UICONTROL 用户流] | [时间表](types/timeline.md) | 探索会话活动中的模式。 |
+| 视图类型 | 描述 |
+| --- | --- |
+| [参与度](types/engagement.md) | 了解功能参与的广度和深度。 |
+| [摩擦](types/friction.md) | 比较步骤之间的转化率。 |
+| [转化趋势](types/conversion-trends.md) | 跟踪转化率随时间发生的变化。 |
+| [发布](types/release.md) | 比较发布前和发布后相同时期的性能。 |
+| [首次使用](types/first-use.md) | 衡量功能首次使用对关键指标的影响。 |
+| [保留率](types/retention-rates.md) | 衡量用户持续的返回习惯。 |
+| [用法](types/usage.md) | 随着时间的推移衡量用户参与度。 |
+| [频率](types/frequency.md) | 按使用频率衡量参与度。 |
+| [活动](types/active.md) | 确定新的、保留的、返回的或非活跃的用户。 |
+| [净增长](types/net-growth.md) | 您是在获得用户还是在失去用户？ |
+| [时间表](types/timeline.md) | 探索会话活动中的模式。 |
 
 {style="table-layout:auto"}
 
@@ -40,15 +40,27 @@ ht-degree: 99%
 
 您可以从Customer Journey Analytics主页访问引导式分析。
 
-1. 点击主页上的&#x200B;**[!UICONTROL 引导式分析]**，您可以直接进入[使用趋势视图](types/usage.md)。
+1. 从主页中选择&#x200B;**[!UICONTROL 引导式分析]**，该操作将直接转到[使用情况趋势视图](types/usage.md)。
 
    ![登陆页面图块](assets/landing-page-tile.png){style="border:1px solid gray"}
 
-1. 点击&#x200B;**[!UICONTROL 新建]**，查看不同的视图选项，并选择不同的分析起点。
+1. 选择&#x200B;**[!UICONTROL 新建]**&#x200B;以查看不同的视图选项，并为您的分析选择不同的起点。
 
    ![新建模式](assets/create-new-modal.png){style="border:1px solid gray"}
 
-如果您的组织尚未配置引导式分析，请联系您的 Adobe 客户团队。
+您还可以从Analysis Workspace项目访问引导式分析。
+
+1. 从主页中选择&#x200B;**[!UICONTROL 空白项目]**&#x200B;以创建空的Workspace项目。
+
+   ![创建空白项目](assets/blank-project.png){style="border:1px solid gray"}
+
+1. 在左边栏中选择![引导分析](/help/assets/icons/GuidedAnalysis.svg) **[!UICONTROL 引导分析]**。
+
+   ![Workspace左边栏](assets/workspace-left-rail.png){style="border:1px solid gray"}
+
+1. 将任何视图类型拖动到Workspace画布上，然后选择&#x200B;**[!UICONTROL 创建]**&#x200B;按钮以生成所需的分析。 您还可以将现有分析从&#x200B;**[!UICONTROL 已保存]**&#x200B;部分下拖到Workspace画布上。
+
+   ![创建面板](assets/create-panel.png)
 
 ## 界面
 
