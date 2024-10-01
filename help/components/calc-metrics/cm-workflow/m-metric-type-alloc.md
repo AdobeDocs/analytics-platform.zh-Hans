@@ -3,10 +3,10 @@ description: 了解量度类型和归因
 title: 量度类型和归因
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 23%
+source-wordcount: '947'
+ht-degree: 24%
 
 ---
 
@@ -148,8 +148,8 @@ ht-degree: 23%
 
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_custom"
->title="时间衰减"
->abstract="时间上最接近转化的Dimension值将获得最大的点数。"
+>title="自定义"
+>abstract="根据归因权重，自行定义您的位置。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -161,7 +161,6 @@ ht-degree: 23%
 >abstract="信用是根据统计算法动态确定的。"
 
 <!-- markdownlint-enable MD034 -->
-
 
 
 {{attribution-models-details}}

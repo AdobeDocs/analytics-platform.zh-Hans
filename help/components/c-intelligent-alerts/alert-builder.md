@@ -3,14 +3,24 @@ description: 当项目组件达到一定的阈值时获取警报。
 title: 创建警报(Analysis Workspace)
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '993'
 ht-degree: 19%
 
 ---
 
 # 创建警报 {#create-alerts}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_alerts_timegranularity"
+>title="时间粒度"
+>abstract="时间粒度是指查看警报的频率以及包含的内容"
+
+<!-- markdownlint-enable MD034 -->
+
 
 >[!NOTE]
 >

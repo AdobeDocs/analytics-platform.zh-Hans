@@ -4,14 +4,24 @@ description: 自由格式表是在 Analysis Workspace 中进行数据分析的�
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '761'
 ht-degree: 21%
 
 ---
 
-# 自由格式表概述
+# 自由格式表概述 {#freeform-table-overview}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_freeformtable_button"
+>title="自由格式表"
+>abstract="创建一个空的自由格式表可视化图表，您可以使用维度、区段、量度和日期范围构建该可视化图表。 您可以将自由格式表用作其他可视化的基础。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 在Analysis Workspace中，![表](/help/assets/icons/Table.svg) **[!UICONTROL 自由格式表]**&#x200B;可视化是交互式数据分析的基础。 可以将[组件](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components)组合拖放到行和列中，以创建自定义表格供您分析。拖动每个组件后，表格会立即更新，以便您能够快速分析和深入探索。
 

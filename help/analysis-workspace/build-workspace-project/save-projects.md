@@ -4,14 +4,24 @@ title: 保存项目
 feature: Workspace Basics
 role: User
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
+source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 18%
+source-wordcount: '851'
+ht-degree: 17%
 
 ---
 
-# 保存项目
+# 保存项目 {#save-projects}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_project_addnotes"
+>title="添加注释"
+>abstract="添加有关正在保存的项目版本的注释。 这些笔记将与版本一起存储，并可通过&#x200B;**[!UICONTROL 项目]** > **[!UICONTROL 打开以前的版本]**&#x200B;菜单访问。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 Analysis Workspace中的项目每2分钟自动保存一次。 您也可以自行保存项目，将项目另存为重复项目或保存具有版本注释的项目。
 

@@ -4,14 +4,24 @@ title: 创建项目
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 383fad799944f7405af6de1754aa2e0af83e2cab
+source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '412'
 ht-degree: 40%
 
 ---
 
-# 创建项目
+# 创建项目 {#create-projects}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_project_countrepeatinstances"
+>title="计数重复实例"
+>abstract="指定是否将重复实例计入报表中。<br/><br/>注意：此设置不适用于“流”或“流失”可视化。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 Analysis Workspace中的[项目](/help/analysis-workspace/build-workspace-project/freeform-overview.md)允许您创建和查看业务关键型分析。  这些分析可与组织内部或外部的利益相关者共享。
 
