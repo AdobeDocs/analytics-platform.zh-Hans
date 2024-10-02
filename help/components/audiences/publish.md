@@ -4,10 +4,10 @@ description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 17b684a3662caf68b4c4a097caad9cf6d0eb3d9f
+source-git-commit: 905d8e0bfe2e0dbc9c6a03d9eb9a6efd4926fbbf
 workflow-type: tm+mt
-source-wordcount: '1651'
-ht-degree: 51%
+source-wordcount: '1767'
+ht-degree: 48%
 
 ---
 
@@ -42,12 +42,10 @@ ht-degree: 51%
    | 创建方法 | 详细信息 |
    | --- | --- |
    | 从主要&#x200B;**[!UICONTROL 组件] > [!UICONTROL 受众]**&#x200B;菜单 | “受众管理器”页面将打开。单击&#x200B;**[!UICONTROL 创建受众]**，然后将打开[!UICONTROL 受众生成器]。 |
-   | 通过自由格式表 | 右键单击自由格式表中的项目并选择&#x200B;**[!UICONTROL 从所选内容创建受众]**。 使用此方法时会用您在表中选择的维度或维度项目预填充过滤器。 |
+   | 从Analysis Workspace中的可视化图表 | Analysis Workspace中的许多可视化图表都允许您使用右键单击菜单创建受众。 例如，您可以右键单击自由格式表中的项目，或者右键单击历程画布中的节点，然后选择&#x200B;**[!UICONTROL 创建受众]**。 <p>使用此方法时会用您在表中选择的维度或维度项目预填充过滤器。</p><p>通过以下可视化图表，可使用右键单击菜单创建受众：</p><ul><li>同类组</li><li>流失</li><li>流量</li><li>自由格式表</li><li>历程画布</li><li>维恩图</li></ul><p>**注意：**&#x200B;受众不能包含计算量度。 如果尝试创建的受众包含计算量度，则该计算量度将不会包含在受众定义中。</p> |
    | 通过过滤器创建/编辑 UI | 选中显示&#x200B;**[!UICONTROL 从此过滤器创建受众]**&#x200B;的框。使用此方法时会预填充过滤器。 |
 
    {style="table-layout:auto"}
-
-   <!-- add beneath the Freeform table row above: | From within a Journey canvas visualization | Right-click a node in a Journey canvas visualization and select **[!UICONTROL Create audience]**. Using this method pre-populates the filter with the dimension or dimension item you selected in the table. | -->
 
 1. 生成受众。
 
@@ -64,7 +62,7 @@ ht-degree: 51%
    | 过期日期 | 当受众将停止刷新时。默认值为创建日期开始 1 年。对过期受众的处理方法与过期的计划报告类似——管理员在受众过期前一个月会收到一封电子邮件。 |
    | 刷新回顾时段 | 指定创建此受众时要在数据窗口中返回多远。最多为 90 天。 |
    | [!UICONTROL 一次性日期范围] | 您希望在其中发布一次性受众的日期范围。 |
-   | [!UICONTROL 过滤器] | 过滤器是受众的主要输入。您最多可以添加 20 个过滤器。这些过滤器可以与 `And` 或 `Or` 运算符相连。 |
+   | [!UICONTROL 过滤器] | 过滤器是受众的主要输入。您最多可以添加 20 个过滤器。这些过滤器可以与 `And` 或 `Or` 运算符相连。<p>从Analysis Workspace中的可视化图表(例如自由格式表或历程画布)创建受众时，应用于面板或列的任何过滤器都会保留。 您可以删除任何自动应用的过滤器。</p> |
    | [!UICONTROL 查看样本 ID] | 受众中的 ID 示例。使用搜索栏搜索 ID 示例。 |
 
    {style="table-layout:auto"}
