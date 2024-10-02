@@ -3,31 +3,32 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: b7e8c535d178ef406e1563408cee83c638d6858b
+source-git-commit: c403e2bbf20de3dca4440160ef3f69a9d0d60a2f
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 99%
+source-wordcount: '485'
+ht-degree: 51%
 
 ---
 
-# 当前的 Adobe Customer Journey Analytics 发行说明（2024 年 9 月）
+# 当前的 Adobe Customer Journey Analytics 发行说明（2024 年 10 月）
 
-**上次更新日期**：2024 年 9 月 11 日
+**上次更新时间**：2024年10月2日
 
-这些发行说明涵盖 2024 年 9 月 11 日至 2024 年 10 月初的发行期。Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
+这些发行说明涵盖2024年10月2日至2024年10月22日的发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
 ## 新增功能或更新后的功能
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **计算量度管理器和过滤管理器中“用于”列中的附加信息** | 计算量度管理器和过滤管理器中的“用于”列包含以下新的报告区域：<ul><li>**Report Builder：**&#x200B;显示 Report Builder 中正在使用的计算量度或过滤器的数量。</li><li>**临时组件：**&#x200B;显示项目中使用的临时计算量度或临时过滤器的数量。这些临时的计算量度和过滤器（也称为“快速计算量度”和“快速过滤器”）只能在创建它们的项目中使用，因此它们在“用于”列中的“项目”报告区域中是分开报告的。</li></ul>有关更多信息，请参阅 [计算量度管理器](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager) 和 [过滤器管理器](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/cja-filters/manage-filters)。 |  | 2024 年 9 月 11 日 |
-| **警报** | Customer Journey Analytics 中的警报允许您根据变化的百分比或特定数据点收到通知。<p>根据您的 Customer Journey Analytics 包，您还可以使用基于异常阈值触发的警报。这些警报（也称为“智能警报”）提供与异常检测集成的细粒度控制，在您最需要时触发。</p><p>在 Customer Journey Analytics 中使用警报的过程与在 Adobe Analytics 中使用警报的过程几乎相同。一个主要的区别是 Customer Journey Analytics 不提供每小时警报。这种差异是因为，各种事件数据摄取只能在延迟之后才能完成，通常是数据事件时间之后的 3 到 9 个小时。</p><p>有关使用 Adobe Analytics 的 Customer Journey Analytics 中的警报时的差异的更多信息，请参阅 [警报功能比较](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)。</p><p>要了解有关警报的更多信息，请参阅[警报概述](/help/components/c-intelligent-alerts/intelligent-alerts.md)。 |  | 2024 年 9 月 13 日 |
-| **Adobe Analytics Source Connector 的更新** | 由于 Analytics Source Connector 完全由 Adobe 管理，因此数据集活动页面不会显示有关批次的信息。您可以通过查看与引入的记录相关的量度来监控数据流动的情况。请阅读有关 [创建 Analytics 数据的源连接](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics)的指南以了解更多信息。 |  | 现在可用 |
-| **引导分析：嵌入工作区** | 将多个引导分析合并到 Analysis Workspace 中的单个视图中。（文档链接见下文） | 2024 年 10 月 2 日 | 2024年10月31日 |
+| **引导分析：嵌入工作区** | [引导式分析](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/guided-analysis/overview)现在可在Analysis Workspace中直接使用，用户可通过面板、可视化图表和引导式分析创建具有综合见解的功能板。 从新的左边栏部分中，您可以创建新的引导式分析以添加到项目中。 您还可以访问已保存的引导式分析，这些分析可以重复用作多个项目的构建块。 | 2024 年 10 月 2 日 | 2024 年 10 月 31 日 |
+| **产品使用情况** | 了解您的组织如何使用 Customer Journey Analytics。启用此功能会在 Adobe Experience Platform 中创建一个数据集，当组织中的任何人使用 Analysis Workspace 时，该数据集都会收集数据。还会自动创建连接和数据视图，让您可以访问诸如顶级项目类型、最活跃的用户以及项目中最常用的组件等维度。[了解详情](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview) | 2024年10月3日 | 2024年10月23日 |
+| **历程画布可视化图表** | 历程画布是Analysis Workspace中的可视化图表，用于分析人员如何通过定义的历程或从中退出。 通过创建灵活的节点和箭头图形来构建用户历程分析，该图形可表示事件、维度项目和过滤器的任意组合。拖动画布上的节点可重新排列历程的事件和条件。当您进行该操作时，数据会相应更新。<p>有权访问 Adobe Journey Optimizer 的客户可以分析现有的 Journey Optimizer 历程。<p>要了解有关历程画布的更多信息，请参阅[历程画布概述](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas)。<p>要了解如何构建历程画布可视化图表，请参阅[配置历程画布](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/configure-journey-canvas)。 | 2024 年 10 月 2 日 | 2024年10月14 |
+| 创建受众时，现在包括&#x200B;**面板筛选器和列筛选器** | 现在，从Analysis Workspace中的可视化图表创建受众时，面板过滤器和列过滤器作为附加标准包含在内。 如果不需要过滤器，则可以在发布受众之前删除它们。 以前，在创建受众时，应用到面板或Analysis Workspace中可视化图表列的任何过滤器都将被忽略。<p>有关如何从Customer Journey Analytics创建受众的信息，请参阅[创建和发布受众](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/audiences/publish)。 |  | 2024 年 10 月 2 日 |
+
 
 ## Customer Journey Analytics 中的修复
 
-AN-352461、AN-355446：AN-355665
+AN-354085、AN-355870、AN-356037、AN-356881、AN-357100、AN-358193、AN-358364、AN-358911、AN-359000、AN-359160
 
 ## Customer Journey Analytics 管理员的重要注意事项
 
@@ -35,7 +36,6 @@ AN-352461、AN-355446：AN-355665
 | --- | --- | --- |
 | 不适用 | | |
 
-{style="table-layout:auto"}
 
 ## 相关资源
 
