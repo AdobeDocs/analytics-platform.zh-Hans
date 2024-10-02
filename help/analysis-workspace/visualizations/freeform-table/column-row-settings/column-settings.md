@@ -4,9 +4,9 @@ title: 列设置
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '882'
 ht-degree: 19%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 19%
 
 条件格式将格式应用于由您定义的上限、中点和下限。除非选择了[!UICONTROL 自定义]限制，否则对于各种划分，还将在自由格式表中自动应用条件格式。
 
-<img src="./assets/conditional-formatting.png" alt="已选中自定义的条件格式选项" width="40%" />
+![条件格式](./assets/conditional-formatting.png)
 
 | 条件格式选项 | 描述 |
 | --- | --- |
@@ -67,9 +67,19 @@ ht-degree: 19%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_freeformtable_column_usenondefaultattributionmodel"
 >title="使用非默认的属性模型"
->abstract="为所选列启用非默认归因模型"
+>abstract="为所选列启用非默认归因模型。"
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
+>title="使用非默认的属性模型"
+>abstract="非默认归因模式不适用于此量度。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 您可以覆盖在[数据视图](/help/data-views/component-settings/attribution.md)中配置的默认归因模型。
