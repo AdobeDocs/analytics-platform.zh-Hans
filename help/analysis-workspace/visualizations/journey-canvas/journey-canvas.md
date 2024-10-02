@@ -4,9 +4,9 @@ title: 历程画布
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: c42858908aa8e73c5f3b622b9911ff9e9724f2dc
+source-git-commit: c79d1174d78c0bfb1c9b082eb93855bdab4283e4
 workflow-type: tm+mt
-source-wordcount: '1318'
+source-wordcount: '1367'
 ht-degree: 2%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 2%
 历程画布可视化图表允许您分析提供给用户和客户的旅程，并获取有关这些旅程的深入见解。 它允许您从头开始定义旅程或从Journey Optimizer查看旅程，然后查看人员如何离开（流失）或继续通过（流过）旅程。
 
 您可以[通过使用事件、维度项、过滤器和日期范围的任意组合来创建用户旅程](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)的分析以创建旅程节点。 连接节点以创建历程流，并包含多个路径和决策点。 拖动画布上的节点以重新排列历程的事件和条件。 在进行更改时实时更新数据。
+
+[节点已连接](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes)作为“最终路径”，这意味着只要访客最终从一个节点移动到另一个节点，就会计入访客，而不考虑在这两个节点之间发生的任何事件。 为用户沿路径移动所分配的时间由容器设置确定。
+
+![历程画布](assets/journey-canvas.png)
 
 ## 主要功能
 
@@ -39,13 +43,13 @@ ht-degree: 2%
 
 * 已完成历程（到达结束节点）的人员数量和百分比
 
-* 到达历程的给定点（节点）的人员数量和百分比
+* 到达历程的给定节点的人数和百分比
 
-* 在历程的给定点（节点）之后或之前执行的最常见步骤
+* 在历程的给定节点之后或之前执行的最常见步骤
 
 **流失**
 
-* 人员最常退出旅程的点（节点）（从未到达任何紧接的后续节点）
+* 人最常退出旅程的旅程节点（从未到达任何紧接的后续节点）
 
 **其他**
 

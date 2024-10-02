@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 057c9f4a0e8fb163bfb23cea1870f949ad4ae1c0
+source-git-commit: c79d1174d78c0bfb1c9b082eb93855bdab4283e4
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '587'
 ht-degree: 1%
 
 ---
@@ -41,10 +41,23 @@ ht-degree: 1%
 
 以下配置可能导致节点显示超过100%的百分比：
 
-* 当&#x200B;**[!UICONTROL 百分比值]**&#x200B;字段设置为总共&#x200B;]**的**[!UICONTROL &#x200B;百分比，并且选择了主量度时，这会使开始节点的数据少于后续节点上的数据。
+* 当&#x200B;**[!UICONTROL 百分比值]**&#x200B;字段设置为总计&#x200B;]**的**[!UICONTROL &#x200B;百分比或起始节点&#x200B;]**的**[!UICONTROL &#x200B;百分比，并且选择了主量度，这会使起始节点的数据少于后续节点上的数据。
 
   例如，如果选择“收入”作为主要量度，并且在主要量度上没有实现收入，则在实现收入的任何节点上，将显示超过100%。
 
+## 具有比以前的节点更高的百分比或值的节点
+
+## 具有比前面的节点更高的百分比或值的节点
+
+## 历程中较晚的节点比历程中较早的节点具有更高的百分比或值
+
+## 具有比历程中其前面的节点更高的百分比或值的节点
+
+## 具有比以前的节点更高的百分比或值的节点
+
+## 节点
+
+## 后续节点中的较高百分比或值
 
 ## 非漏斗形状的历程
 

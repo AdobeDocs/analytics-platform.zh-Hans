@@ -4,9 +4,9 @@ title: 历程画布
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: c42858908aa8e73c5f3b622b9911ff9e9724f2dc
+source-git-commit: c79d1174d78c0bfb1c9b082eb93855bdab4283e4
 workflow-type: tm+mt
-source-wordcount: '6520'
+source-wordcount: '6593'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,8 @@ ht-degree: 1%
 {{release-limited-testing}}
 
 历程画布可视化图表允许您分析提供给用户和客户的旅程，并获取有关这些旅程的深入见解。
+
+![历程画布](assets/journey-canvas.png)
 
 ## 历程画布概述
 
@@ -33,11 +35,13 @@ ht-degree: 1%
 
 ## 开始构建历程画布可视化
 
-1. 在项目中添加一个空白面板，选择左边栏中的&#x200B;[!UICONTROL **可视化**]&#x200B;图标，然后将&#x200B;[!UICONTROL **历程画布**]&#x200B;可视化拖动到面板中。
+1. 在项目中添加一个空白面板，选择左边栏中的&#x200B;[!UICONTROL **可视化**]&#x200B;图标，然后将![GraphPathing](/help/assets/icons/Branch3.svg) [!UICONTROL **历程画布**]&#x200B;可视化拖动到面板中。
 
    或
 
    使用[可视化概述](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)中的[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)部分中所述的任何方式添加历程画布可视化图表。
+
+   ![历程画布配置](assets/journey-canvas-configure.png)
 
 1. 指定以下基本信息以配置历程画布：
 
@@ -83,9 +87,9 @@ ht-degree: 1%
    | 设置 | 功能 |
    |---------|----------|
    | [!UICONTROL **节点类型**] | 允许您配置在可视化图表中显示的节点类型。<p>要在可视化图表中隐藏节点类型，请选择该节点类型旁边的(x)，或从下拉菜单中取消选择它。 要显示隐藏的节点类型，请从下拉菜单中选择它。 (当您隐藏节点时，不会将其从历程中删除。 有关如何删除节点的信息，请参阅[删除节点](#delete-nodes)。</p><p>此字段可以包含Journey Optimizer节点类型（[!UICONTROL **读取区段**]、[!UICONTROL **结束**]&#x200B;等）和组件节点类型([!UICONTROL **Dimension**]、[!UICONTROL **指标**]、[!UICONTROL **筛选器**]&#x200B;和&#x200B;[!UICONTROL **日期范围**])，如下所示： </p><ul><li>**如果旅程是Journey Optimizer旅程，并且未在包含以下任何修改的历程画布中对其进行修改，则仅显示Journey Optimizer节点类型**：<ul><li>已添加或删除的节点</li><li>添加或删除的箭头</li><li>更改了节点上的组件</li></ul></li><li>**如果历程是Journey Optimizer历程，且在历程画布中进行了以下任何修改后进行了修改，则同时显示Journey Optimizer节点类型和组件节点类型**：<ul><li>已添加或删除的节点</li><li>添加或删除的箭头</li><li>更改了节点上的组件</li></ul></li><li>**如果历程不是Journey Optimizer历程，则仅显示组件节点类型**。</li></ul></p> |
-   | [!UICONTROL **百分比值**] | 旅程中每个节点上显示的百分比值。 <p>在配置旅程中节点上显示的百分比值时，请考虑以下事项：</p><ul><li>主量度的百分比显示在每个节点上。 如果配置了辅助量度，则还会显示辅助量度的百分比。 (有关主要和次要指标设置的详细信息，请参阅[开始构建历程画布可视化图表](#begin-building-a-journey-canvas-visualization)。)</li><li>百分比包括面板日期范围内数据视图中包含的所有人员或会话。 是否使用&#x200B;_人员_&#x200B;或&#x200B;_会话_&#x200B;取决于容器设置。 (有关容器设置的详细信息，请参阅[开始构建历程画布可视化图表](#begin-building-a-journey-canvas-visualization)。)</li></ul> <p>从以下选项中进行选择：</p> <ul><li>[!UICONTROL **开始节点的百分比**]：计算每个节点上显示的相对于开始节点的百分比。 百分比基于您选择的主要和次要量度。 <p>_启动节点_&#x200B;是一个没有连接节点的节点。</p><p>历程可以包含多个开始节点。 但是，如果历程包含2个或更多指向公共节点的启动节点，则使用总数的&#x200B;[!UICONTROL **Percent of**]。 如果要使用起始节点&#x200B;**]的[!UICONTROL **&#x200B;百分比，请更新历程，以便历程中的每个节点都可以跟踪回单个起始节点。</p></li><li>[!UICONTROL **上一个节点的百分比**]：计算每个节点上显示的相对于上一个节点的百分比。 百分比基于您选择的主要和次要量度。</li><li>[!UICONTROL **合计百分比**]：计算每个节点上显示的与数据视图中所有数据的百分比。 百分比基于您选择的主要和次要量度。</li></ul> |
-   | [!UICONTROL **箭头设置**] | 可以将历程画布中节点之间显示的箭头配置为显示自定义标签和值。 <p>_标签_&#x200B;是显示在箭头上的自定义名称。 给定箭头上只显示单个标签。 标签可以是以下任意标签，并按以下优先顺序显示：</p><ol><li>从历程画布添加的自定义名称（如[添加或更新箭头上的标签](#add-or-update-a-label-on-an-arrow)中所述）</li><li>Journey Optimizer标签</li><li>Journey Optimizer条件</li></ol><p>_值_&#x200B;是箭头上显示的数字和百分比，它们表示从历程中的一个节点移动到下一个节点的人员或会话。 （换言之，就是那些没有在给定步骤中退出旅程的人。 ） </p><p>以下选项适用于并非源自Journey Optimizer的旅程，以及在历程画布中未进行重大修改的Journey Optimizer旅程：（重大修改包括添加或删除节点、添加或删除箭头或更改节点的组件。）</p><ul><li>[!UICONTROL **无标签**]：历程中的箭头上不显示标签。 </br>此选项仅在历程在中被修改时可用 </li><li>[!UICONTROL **仅标签**]：标签显示在历程的箭头上。</li></ul><p>以下选项适用于在历程画布中进行了显着修改的Journey Optimizer历程：（显着修改包括添加或删除节点、添加或删除箭头或更改节点的组件。）(**注意**：只有在要在其中添加可视化的Journey Optimizer面板中选择的同一数据视图中检测到Analysis Workspace数据时，才会显示这些选项。 有关更改Analysis Workspace中面板的数据视图的信息，请参阅[Analysis Workspace概述](/help/analysis-workspace/home.md)。</p><ul><li>[!UICONTROL **无标签或值**]：历程中的箭头上不显示标签或值。</li><li>[!UICONTROL **仅标签**]：历程中的箭头上只显示标签。 不显示值。</li><li>[!UICONTROL **仅限值**]：历程中的箭头上只显示值。 不显示标签。</li><li>[!UICONTROL **值和标签**]：标签和值都显示在历程的箭头上。</li></ul> |
-   | [!UICONTROL **显示流失**] | 流失数据显示从历程的每个节点流失的百分比和数量。 流失数据基于与历程的容器设置关联的量度；而不是基于主要或次要量度。<p>默认情况下，容器为&#x200B;_人员_，因此用于流失数据的量度为&#x200B;_人员_。 如果容器更改为&#x200B;_会话_，则用于流失数据的量度是&#x200B;_会话_，依此类推。</p><p>例如，使用&#x200B;_人员_&#x200B;作为容器设置，流失显示历程中从未到达任何紧接的后续节点的人员的百分比和人数。 执行其他操作时，客户可能会在网站上执行操作，但不符合任何紧随其后的节点所定义的标准。</p> <p>有关历程画布容器设置的详细信息，请参阅[开始构建历程画布可视化图表](#begin-building-a-journey-canvas-visualization)。 |
+   | [!UICONTROL **百分比值**] | 旅程中每个节点上显示的百分比值。<p>![百分比值](assets/journey-canvas-percentage.png)</p> <p>在配置旅程中节点上显示的百分比值时，请考虑以下事项：</p><ul><li>主量度的百分比显示在每个节点上。 如果配置了辅助量度，则还会显示辅助量度的百分比。 (有关主要和次要指标设置的详细信息，请参阅[开始构建历程画布可视化图表](#begin-building-a-journey-canvas-visualization)。)</li><li>百分比包括面板日期范围内数据视图中包含的所有人员或会话。 是否使用&#x200B;_人员_&#x200B;或&#x200B;_会话_&#x200B;取决于容器设置。 (有关容器设置的详细信息，请参阅[开始构建历程画布可视化图表](#begin-building-a-journey-canvas-visualization)。)</li></ul> <p>从以下选项中进行选择：</p> <ul><li>[!UICONTROL **开始节点的百分比**]：计算每个节点上显示的相对于开始节点的百分比。 百分比基于您选择的主要和次要量度。 <p>_启动节点_&#x200B;是一个没有连接节点的节点。</p><p>历程可以包含多个开始节点。 但是，如果历程包含2个或更多指向公共节点的启动节点，则使用总数的&#x200B;[!UICONTROL **Percent of**]。 如果要使用起始节点&#x200B;**]的[!UICONTROL **&#x200B;百分比，请更新历程，以便历程中的每个节点都可以跟踪回单个起始节点。</p></li><li>[!UICONTROL **上一个节点的百分比**]：计算每个节点上显示的相对于上一个节点的百分比。 百分比基于您选择的主要和次要量度。</li><li>[!UICONTROL **合计百分比**]：计算每个节点上显示的与数据视图中所有数据的百分比。 百分比基于您选择的主要和次要量度。</li></ul> |
+   | [!UICONTROL **箭头设置**] | 可以将历程画布中节点之间显示的箭头配置为显示自定义标签和值。 <p>![箭头设置](assets/journey-canvas-arrow-settings.png)</p><p>_标签_&#x200B;是显示在箭头上的自定义名称。 给定箭头上只显示单个标签。 标签可以是以下任意标签，并按以下优先顺序显示：</p><ol><li>从历程画布添加的自定义名称（如[添加或更新箭头上的标签](#add-or-update-a-label-on-an-arrow)中所述）</li><li>Journey Optimizer标签</li><li>Journey Optimizer条件</li></ol><p>_值_&#x200B;是箭头上显示的数字和百分比，它们表示从历程中的一个节点移动到下一个节点的人员或会话。 （换言之，就是那些没有在给定步骤中退出旅程的人。 ） </p><p>以下选项适用于并非源自Journey Optimizer的旅程，以及在历程画布中未进行重大修改的Journey Optimizer旅程：（重大修改包括添加或删除节点、添加或删除箭头或更改节点的组件。）</p><ul><li>[!UICONTROL **无标签**]：历程中的箭头上不显示标签。 </br>此选项仅在历程在中被修改时可用 </li><li>[!UICONTROL **仅标签**]：标签显示在历程的箭头上。</li></ul><p>以下选项适用于在历程画布中进行了显着修改的Journey Optimizer历程：（显着修改包括添加或删除节点、添加或删除箭头或更改节点的组件。）(**注意**：只有在要在其中添加可视化的Journey Optimizer面板中选择的同一数据视图中检测到Analysis Workspace数据时，才会显示这些选项。 有关更改Analysis Workspace中面板的数据视图的信息，请参阅[Analysis Workspace概述](/help/analysis-workspace/home.md)。</p><ul><li>[!UICONTROL **无标签或值**]：历程中的箭头上不显示标签或值。</li><li>[!UICONTROL **仅标签**]：历程中的箭头上只显示标签。 不显示值。</li><li>[!UICONTROL **仅限值**]：历程中的箭头上只显示值。 不显示标签。</li><li>[!UICONTROL **值和标签**]：标签和值都显示在历程的箭头上。</li></ul> |
+   | [!UICONTROL **显示流失**] | 流失数据显示从历程的每个节点流失的百分比和数量。 流失数据基于与历程的容器设置关联的量度；而不是基于主要或次要量度。 <p>![流失](assets/journey-canvas-fallout.png)</p><p>默认情况下，容器为&#x200B;_人员_，因此用于流失数据的量度为&#x200B;_人员_。 如果容器更改为&#x200B;_会话_，则用于流失数据的量度是&#x200B;_会话_，依此类推。</p><p>例如，使用&#x200B;_人员_&#x200B;作为容器设置，流失显示历程中从未到达任何紧接的后续节点的人员的百分比和人数。 执行其他操作时，客户可能会在网站上执行操作，但不符合任何紧随其后的节点所定义的标准。</p> <p>有关历程画布容器设置的详细信息，请参阅[开始构建历程画布可视化图表](#begin-building-a-journey-canvas-visualization)。 |
    | **缩放控件** | 以下缩放控件在画布的右上角可用：<ul><li>**放大** ![放大图标](assets/zoom-in-icon.png)：放大可视化图表的特定区域。<p>您也可以使用鼠标控件，例如按住触控板。</p></li><li>**缩小** ![缩小图标](assets/zoom-out-icon.png)：缩小可视化图表以在画布上留出更多空间。<p>您也可以使用鼠标控件，例如按住触控板。</p></li><li>**适应屏幕** ![适应屏幕图标](assets/fill-screen-icon.png)：调整当前缩放和平移设置以使用完整可视化填充屏幕。</li></ul><p>要在放大或缩小后跨画布平移，请单击鼠标并拖动到所需的位置。</p> |
 
 1. 继续添加[添加节点](#add-nodes)。
@@ -284,6 +288,8 @@ ht-degree: 1%
 
 您可以连接画布上已存在的节点，也可以在将节点添加到画布时连接该节点。
 
+您可以连接节点以定义历程的事件序列。
+
 #### 节点之间的箭头
 
 节点通过箭头连接。 箭头方向和宽度都有意义：
@@ -292,11 +298,13 @@ ht-degree: 1%
 
 * **宽度**：表示从一个节点到另一个节点的卷百分比
 
+  ![箭头方向和宽度](assets/journey-canvas-arrow-width.png)
+
 #### 连接节点时的逻辑
 
 连接历程画布中的节点时，使用THEN运算符连接它们。 这也称为[连续筛选](/help/components/filters/seg-sequential-build.md)。
 
-节点作为“最终路径”连接，这意味着访客只要最终从一个节点移动到另一个节点即被计入，而不考虑在这两个节点之间发生的任何事件。
+节点作为“最终路径”连接，这意味着访客只要最终从一个节点移动到另一个节点即被计入，而不考虑在这两个节点之间发生的任何事件。 为用户沿路径移动所分配的时间由容器设置确定。 也可以通过[添加时间约束](#add-a-time-constraint-between-nodes)来控制该时间。
 
 您可以查看已连接节点的逻辑，方法是右键单击该节点，然后选择&#x200B;[!UICONTROL **从节点**]&#x200B;创建过滤器。 该逻辑显示在&#x200B;[!UICONTROL **定义**]&#x200B;部分中。
 
@@ -474,6 +482,14 @@ from Travis: You can set time to be within X amount of time or after X amount of
 您可以将左侧边栏中的某个维度拖到画布上要应用划分的节点上。
 
 有关详细信息，请参阅[添加节点](#add-nodes)。
+
+#### 删除划分
+
+要删除已应用的细分，请执行以下操作：
+
+1. 右键单击应用了划分的节点。
+
+1. 选择&#x200B;**[!UICONTROL 删除划分]**。
 
 ### 创建受众
 

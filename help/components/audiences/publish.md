@@ -4,10 +4,10 @@ description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
+source-git-commit: 17b684a3662caf68b4c4a097caad9cf6d0eb3d9f
 workflow-type: tm+mt
-source-wordcount: '1726'
-ht-degree: 49%
+source-wordcount: '1651'
+ht-degree: 51%
 
 ---
 
@@ -126,12 +126,6 @@ Customer Journey Analytics会从已发布的受众中获取所有命名空间和
 然后，RTCP 会检查每个命名空间/ID 组合，并查找可能包含它的个人资料。个人资料其实就是由所链接的命名空间、ID 和设备组成的集群。如果它找到配置文件，则会将命名空间和ID作为区段成员资格属性添加到此配置文件中的其他ID。 例如，可以跨其所有设备和渠道定位<user@adobe.com>。 如果未找到相关的个人资料，则会创建一份新的个人资料。
 
 要在Platform中查看Customer Journey Analytics受众，请执行以下操作：
-
->[!AVAILABILITY]
->
->以下步骤中描述的功能处于版本的有限测试阶段，可能尚未在您的环境中可用。 如果这些步骤与您在环境中看到的不匹配，请改用以下步骤：转到&#x200B;[!UICONTROL **区段**] > [!UICONTROL **创建区段**] > [!UICONTROL **受众**]&#x200B;选项卡> [!UICONTROL **CJA受众**]。
->
->当该功能正式发布时，将删除此说明。有关Customer Journey Analytics发布过程的信息，请参阅[Customer Journey Analytics功能发布](/help/release-notes/releases.md)。
 
 1. 在左侧面板中展开&#x200B;[!UICONTROL **客户**]，然后选择&#x200B;[!UICONTROL **受众**]。<!-- is there a folder called "Customer Journey Analytics? -->
 
