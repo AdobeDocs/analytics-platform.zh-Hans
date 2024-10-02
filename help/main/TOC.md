@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 0e627d536682f62b499f7f6d477c1d906de13f24
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 91%
+source-wordcount: '1052'
+ht-degree: 90%
 
 ---
 
@@ -173,11 +173,11 @@ ht-degree: 91%
       + [归因](../analysis-workspace/c-panels/attribution.md)
       + [试验](../analysis-workspace/c-panels/experimentation.md)
       + [自由格式表](../analysis-workspace/c-panels/freeform-panel.md)
-      + [媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
+      + [媒体平均分钟观众数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
       + [媒体并行查看者](../analysis-workspace/c-panels/media-concurrent-viewers.md)
-      + [Media Playback 耗时](../analysis-workspace/c-panels/media-playback-time-spent.md)
+      + [媒体播放耗时](../analysis-workspace/c-panels/media-playback-time-spent.md)
       + [下一个或上一个项目](../analysis-workspace/c-panels/next-previous.md)
-      + [快速见解](../analysis-workspace/c-panels/quickinsight.md)
+      + [快速洞察](../analysis-workspace/c-panels/quickinsight.md)
    + 策划、共享和计划项目 {#curate-share}
       + [“共享”菜单](../analysis-workspace/curate-share/send-schedule-files.md)
       + [策划项目](../analysis-workspace/curate-share/curate.md)
@@ -257,7 +257,7 @@ ht-degree: 91%
       + [预览维度](../components/dimensions/view-dimensions.md)
       + [划分维度](../components/dimensions/t-breakdown-fa.md)
       + [时间划分维度](../components/dimensions/time-parting-dimensions.md)
-      + [具有很高基数的维度](../components/dimensions/high-cardinality.md)
+      + [高基数维度](../components/dimensions/high-cardinality.md)
    + [指标](../components/apply-create-metrics.md)
    + 过滤器 {#cja-filters}
       + [过滤器概述](../components/filters/filters-overview.md)

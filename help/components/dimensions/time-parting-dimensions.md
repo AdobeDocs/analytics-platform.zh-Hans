@@ -4,7 +4,7 @@ title: 时间划分维度
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 58%
@@ -13,7 +13,7 @@ ht-degree: 58%
 
 # Analysis Workspace中的时间划分维度
 
-时间划分会采用所收集事件的时间戳，并将其划分为更有意义的维度，例如“每天时间”或“每周时间”。
+时间划分会采用所收集事件的时间戳，并将其划分为更有意义的维度，例如&#x200B;**小时**&#x200B;或&#x200B;**星期**。
 
 时间划分维度基于数据视图的时区。这些维度可以在 Analysis Workspace 中使用，并且可以帮助您回答以下问题：
 

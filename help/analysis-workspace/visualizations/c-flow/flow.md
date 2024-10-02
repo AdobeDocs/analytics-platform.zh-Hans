@@ -4,7 +4,7 @@ title: 流量概述
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 383fad799944f7405af6de1754aa2e0af83e2cab
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 30%
@@ -29,7 +29,7 @@ ht-degree: 30%
 
 
 
-![GraphPathing](/help/assets/icons/GraphPathing.svg) [!UICONTROL 流量]可视化图表显示客户浏览您的网站和应用程序的路径。
+![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL 流量]**&#x200B;可视化图表显示客户浏览您的网站和应用程序的路径。
 
 通过可视化，您可以：
 
@@ -37,7 +37,7 @@ ht-degree: 30%
 * 分析客户在所指定检查点（例如登入、特定维度或退出）之前和之后的位置。
 * 通过在选定路径中指定一个特定点来创建过滤器
 
-+++ 查看[!UICONTROL 流量]可视化图表的视频演示。
++++ 观看流量可视化图表的视频演示。
 
 >[!VIDEO](https://video.tv.adobe.com/v/346063/?quality=12)
 

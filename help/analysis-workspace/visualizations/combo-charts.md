@@ -4,10 +4,10 @@ title: 组合图表可视化
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 42%
+source-wordcount: '579'
+ht-degree: 41%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 42%
    | 线形比较类型 | 定义 |
    | --- | --- |
    | **[!UICONTROL 时间比较]** | 最常见的比较类型 – 例如，将此时间段与 4 周前进行比较。如果您选择了[!UICONTROL 时间比较]，则对要比较的时间段进行二次选择。<p>![与选定时段和选定时段的辅助选择字段进行比较。](assets/combo-time-period.png) |
-   | **[!UICONTROL 函数]** | 您可以在比较中引入函数（例如[!UICONTROL 平均值]）。请参阅下面的支持函数列表。<p>![LIne比较下拉菜单，其中显示选定函数和可用受支持函数的列表。](assets/combo-functions.png) |
+   | **[!UICONTROL 函数]** | 您可以在比较中引入函数（例如[!UICONTROL 平均值]）。查看[支持的函数的列表](#supported-functions)。<p>![LIne比较下拉菜单，其中显示选定函数和可用受支持函数的列表。](assets/combo-functions.png) |
    | **[!UICONTROL 辅助量度]** | 例如，您可以将[!UICONTROL 收入]与另一个量度进行比较。<p>![比较两个量度的组合图表。](assets/combo-2metrics-settings.png) |
 
    {style="table-layout:auto"}

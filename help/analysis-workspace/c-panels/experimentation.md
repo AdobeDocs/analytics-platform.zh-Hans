@@ -4,9 +4,9 @@ title: 试验性面板
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '2169'
+source-wordcount: '2167'
 ht-degree: 23%
 
 ---
@@ -180,7 +180,6 @@ A/B测试是行业内客观衡量此类干预效果的黄金标准。 A/B测试�
 * 添加到基本量度或从基本量度减去的常量（例如，`Revenue+50`）
 * 以下任一基本量度：
    * 人员
-   * （还有什么？）
 
 创建计算量度时，与“试验”面板不兼容的计算量度在&#x200B;[!UICONTROL **产品兼容性**]&#x200B;字段中的Customer Journey Analytics（不包括试验）处具有值&#x200B;[!UICONTROL **Everywhere**]。 有关创建计算量度的信息，请参阅[生成量度](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)。
 

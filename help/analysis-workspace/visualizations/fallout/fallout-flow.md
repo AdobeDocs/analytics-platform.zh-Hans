@@ -4,7 +4,7 @@ title: 关于流失报表和可视化图表
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: b38e9052618f7326cd5ea22b6cda8b96624a3f84
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 46%
@@ -23,7 +23,7 @@ ht-degree: 46%
 <!-- markdownlint-enable MD034 -->
 
 
-![转化漏斗](/help/assets/icons/ConversionFunnel.svg) [!UICONTROL 流失]可视化图表显示人员从何处离开（流失）或继续通过（流过）预定义的页面序列。
+![转化漏斗](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL 流失]**&#x200B;可视化图表显示人员从何处离开（流失）或继续通过（流过）预定义的页面序列。
 
 +++ 观看[!UICONTROL 流失可视化图表]的视频演示。
 

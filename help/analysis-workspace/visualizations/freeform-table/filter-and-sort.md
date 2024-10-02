@@ -4,9 +4,9 @@ title: 排序和过滤表格
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: a9976a053021b2b0ac26daaad2cfe89f8af61a96
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '846'
 ht-degree: 42%
 
 ---
@@ -47,7 +47,7 @@ Analysis Workspace 中的过滤器可帮助您显示最重要的信息。
 
 1. 将鼠标悬停在要排除的行上，然后选择![关闭](/help/assets/icons/Close.svg)。
 
-   按住Shift键选择一定范围的行，或按住Command键(在Mac上)或Ctrl键（在Windows上）选择多行。
+   按住&#x200B;***shift***&#x200B;以选择一定范围的行，或按住&#x200B;***cmd***&#x200B;键(在Mac上)或&#x200B;***ctrl***&#x200B;键（在Windows上）以选择多行。
 
 <!--### Right-click > Delete selected rows
 

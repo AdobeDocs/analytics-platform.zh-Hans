@@ -3,10 +3,10 @@ description: 创建、编辑或删除警报。
 title: 管理警报
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: bd58af0680fc9524453e072ecb60e3ada72ce634
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 4%
+source-wordcount: '567'
+ht-degree: 7%
 
 ---
 
@@ -50,17 +50,17 @@ ht-degree: 4%
 
 您可以使用操作栏➋对警报执行操作。 操作栏包含以下操作：
 
-| 操作 | 描述 |
-|---|---|
-| ![添加圆圈](/help/assets/icons/AddCircle.svg) **[!UICONTROL 添加]** | 使用[警报生成器](alert-builder.md#alert-builder)添加另一个警报。 |
-| ![搜索](/help/assets/icons/Search.svg) [!UICONTROL *按标题搜索*] | 在列表中未选择警报时，使用此搜索字段搜索警报。 |
-| ![标签](/help/assets/icons/Label.svg) **[!UICONTROL 标签]** | 标记所选警报。 在&#x200B;**[!UICONTROL 标记警报]**&#x200B;对话框中，选择或取消选择所选警报的标记。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存选定警报的标记。 |
-| ![删除](/help/assets/icons/Delete.svg) **[!UICONTROL 删除]** | 删除所选警报。 系统会提示您进行确认。 |
-| ![编辑](/help/assets/icons/Edit.svg)**[!UICONTROL 重命名]** | 重命名单个选定警报。 选中后，可以内联重命名警报。 |
-| ![副本](/help/assets/icons/Copy.svg) **[!UICONTROL 副本]** | 复制所选警报。 创建的新警报具有相同的名称和后缀`(Copy)`。 |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 启用]**&#x200B;或&#x200B;**[!UICONTROL 禁用]** | 启用或禁用所选警报。 |
-| ![刷新](/help/assets/icons/Refresh.svg) **[!UICONTROL 续订]** | 更新警报到期日期。 过期日期从选择此选项之日起延长1年，与原始过期日期无关。 |
-| ![文件CSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL 导出到CSV]** | 将警报导出到`Alerts List.csv`文件。 |
+| 图标 | 操作 | 描述 |
+|:---:|---|---|
+| ![添加圆圈](/help/assets/icons/AddCircle.svg) | **[!UICONTROL 添加]** | 使用[警报生成器](alert-builder.md#alert-builder)添加另一个警报。 |
+| ![搜索](/help/assets/icons/Search.svg) | [!UICONTROL *按标题搜索*] | 在列表中未选择警报时，使用此搜索字段搜索警报。 |
+| ![标签](/help/assets/icons/Label.svg) | **[!UICONTROL 标记]** | 标记所选警报。 在&#x200B;**[!UICONTROL 标记警报]**&#x200B;对话框中，选择或取消选择所选警报的标记。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存选定警报的标记。 |
+| ![删除](/help/assets/icons/Delete.svg) | **[!UICONTROL 删除]** | 删除所选警报。 系统会提示您进行确认。 |
+| ![编辑](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名单个选定警报。 选中后，可以内联重命名警报。 |
+| ![Copy](/help/assets/icons/Copy.svg) | **[!UICONTROL Copy]** | 复制所选警报。 创建的新警报具有相同的名称和后缀`(Copy)`。 |
+| ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL 启用]**&#x200B;或&#x200B;**[!UICONTROL 禁用]** | 启用或禁用所选警报。 |
+| ![刷新](/help/assets/icons/Refresh.svg) | **[!UICONTROL 续订]** | 更新警报到期日期。 过期日期从选择此选项之日起延长1年，与原始过期日期无关。 |
+| ![文件CSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL 导出到 CSV]** | 将警报导出到`Alerts List.csv`文件。 |
 
 
 ### 活动筛选栏
