@@ -4,9 +4,9 @@ title: 历程画布
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: c79d1174d78c0bfb1c9b082eb93855bdab4283e4
+source-git-commit: 3b9f477001747a96359f77f2e48baf7589b7a1e4
 workflow-type: tm+mt
-source-wordcount: '6593'
+source-wordcount: '6391'
 ht-degree: 1%
 
 ---
@@ -149,10 +149,6 @@ ht-degree: 1%
 
 ### 基于现有节点显示顶级节点
 
->[!AVAILABILITY]
->
->此功能尚不可用。
-
 您可以根据画布上已存在的节点自动显示顶级节点。 您可以将顶级节点添加到历程画布或在自由格式表中查看它们。
 
 此选项适用于画布上的以下对象：
@@ -221,17 +217,17 @@ ht-degree: 1%
 
 ### 复制节点
 
->[!AVAILABILITY]
->
->此功能尚不可用。
-
 复制选项可用于画布上的以下对象：
+
+* 单个节点
 
 * 多个节点
 
 要复制节点，请执行以下操作：
 
-1. 选择多个要复制的节点。
+1. 选择一个或多个要复制的节点。
+
+   要选择多个节点，请按住Command键(在Mac上)或Ctrl键（在Windows上）。
 
 1. 右键单击其中一个选定的节点，然后选择&#x200B;[!UICONTROL **复制**]。
 
@@ -263,7 +259,7 @@ ht-degree: 1%
 
 * 从左边栏中，按住Shift键，同时将多个组件拖动到画布的空白区域。
 
-* 在画布上，选择要合并的节点，右键单击其中一个选定的节点，然后选择&#x200B;**合并**。<!--Is there a limit on how many you can combine? -->
+<!-- * On the canvas, select the nodes that you want to combine, right-click one of the selected nodes, then select **Combine**. Is there a limit on how many you can combine? -->
 
 #### 组合节点时的逻辑
 
@@ -304,7 +300,7 @@ ht-degree: 1%
 
 连接历程画布中的节点时，使用THEN运算符连接它们。 这也称为[连续筛选](/help/components/filters/seg-sequential-build.md)。
 
-节点作为“最终路径”连接，这意味着访客只要最终从一个节点移动到另一个节点即被计入，而不考虑在这两个节点之间发生的任何事件。 为用户沿路径移动所分配的时间由容器设置确定。 也可以通过[添加时间约束](#add-a-time-constraint-between-nodes)来控制该时间。
+节点作为“最终路径”连接，这意味着访客只要最终从一个节点移动到另一个节点即被计入，而不考虑在这两个节点之间发生的任何事件。 为用户沿路径移动所分配的时间由容器设置确定。<!-- It can also be controlled by [adding a time constraint](#add-a-time-constraint-between-nodes). -->
 
 您可以查看已连接节点的逻辑，方法是右键单击该节点，然后选择&#x200B;[!UICONTROL **从节点**]&#x200B;创建过滤器。 该逻辑显示在&#x200B;[!UICONTROL **定义**]&#x200B;部分中。
 
@@ -328,23 +324,23 @@ ht-degree: 1%
 
 有关详细信息，请参阅[添加节点](#add-nodes)。
 
-### 在节点之间添加时间限制
+<!--
+
+### Add a time constraint between nodes
 
 >[!AVAILABILITY]
 >
->此功能尚不可用。
+>This feature is not yet available.
 
-可以在节点之间设置时间限制。 当设置时间限制时，如果人员遵循定义的旅程，但在节点之间移动所花费的时间超过分配的时间段，则被视为已退出旅程。
+You can set a time constraint between nodes. When a time constraint is in place, people are considered to have fallen out of the journey if they follow the defined journey but take longer than the allotted time period to move between the nodes.
 
-添加时间约束的选项可用于画布上的以下对象：
+The option to add a time constraint is available for the following objects on the canvas:
 
-* 节点之间的箭头
+* The arrow between nodes
 
-要添加时间限制，请执行以下操作：
+To add a time constraint:
 
-1. 在历程画布可视化中，右键单击2个节点之间的箭头，然后选择&#x200B;[!UICONTROL **添加时间约束**]。
-
-<!-- 
+1. In a Journey canvas visualization, right-click the arrow between 2 nodes, then select [!UICONTROL **Add time constraint**].
 
 from Travis: You can set time to be within X amount of time or after X amount of time (those are the only two options I think, but we can check with Brandon). 
 1. Choose from the following options: 
@@ -353,35 +349,35 @@ from Travis: You can set time to be within X amount of time or after X amount of
 
 ## 管理节点或箭头
 
-### 更改节点或箭头的颜色
+<!--
+
+### Change the color of a node or arrow
 
 >[!AVAILABILITY]
 >
->此功能尚不可用。
+>This feature is not yet available.
 
-您可以通过更改画布上任何节点或箭头的颜色来以可视方式自定义历程。 例如，您可以调整颜色以指示所需或不需要的事件。
+You can visually customize a journey by changing the color of any node or arrow on the canvas. For example, you could adjust colors to indicate a desirable or undesirable event.
 
-更改颜色的选项可用于画布上的以下对象：
+The option to change the color is available for the following objects on the canvas:
 
-* 单个节点
+* Individual nodes
 
-* 节点之间的箭头
+* The arrow between nodes
 
-要更改节点或箭头的颜色：
+To change the color of a node or arrow:
 
-1. 在历程画布可视化图表中，右键单击要更改其颜色的节点或箭头。
+1. In a Journey canvas visualization, right-click the node or arrow whose color you want to change.
 
-1. 选择&#x200B;[!UICONTROL **更改颜色**]。<!--make sure "color" isn't capitalized. It is in the req doc-->
+1. Select [!UICONTROL **Change color**]. 
 
-1. 选择所需的颜色。
+1. Select the desired color. 
 
-   可以使用以下颜色： <!--look into this interaction and color list-->
+   The following colors are available: 
+
+-->
 
 ### 重命名节点
-
->[!AVAILABILITY]
->
->此功能尚不可用。
 
 将组件拖动到历程画布可视化时，它将创建一个与组件名称同名的节点。 您可以重命名节点，以更好地匹配节点表示的历程步骤。
 
@@ -453,15 +449,13 @@ from Travis: You can set time to be within X amount of time or after X amount of
 
 #### 将划分应用于一个或多个节点或箭头
 
->[!AVAILABILITY]
->
->此功能尚不可用。
-
 1. 在历程画布可视化图表中，选择要应用划分的一个或多个节点，然后右键单击其中一个选定节点。
 
    或
 
    在历程画布可视化图表中，选择要应用划分的2个节点之间的一个或多个箭头，然后右键单击其中一个选定的箭头。
+
+   要选择多个节点或箭头，请按住Command键(在Mac上)或Ctrl键（在Windows上）。
 
 1. 选择&#x200B;[!UICONTROL **划分**]。
 
@@ -513,6 +507,8 @@ from Travis: You can set time to be within X amount of time or after X amount of
 
    在历程画布可视化中，在要创建受众的2个节点之间选择一个或多个箭头，然后右键单击其中一个选定的箭头。
 
+   要选择多个节点或箭头，请按住Command键(在Mac上)或Ctrl键（在Windows上）。
+
    >[!NOTE]
    >
    >受众不能包含计算量度或任何基于[摘要数据集](/help/data-views/summary-data.md)的量度。 如果尝试从历程画布的任何区域创建受众，而这些区域包含计算量度或基于摘要数据集的量度，则该计算量度将不会包含在受众定义中。
@@ -522,10 +518,6 @@ from Travis: You can set time to be within X amount of time or after X amount of
 1. 按照[创建和发布受众](/help/components/audiences/publish.md)中的说明继续创建和发布受众。
 
 ### 查看趋势数据
-
->[!AVAILABILITY]
->
->此功能尚不可用。
 
 您可以在折线图中查看历程画布中对象的趋势数据。<!--, with some prebuilt anomaly detection data (this is the definition in Fallout) -->
 
@@ -546,6 +538,8 @@ from Travis: You can set time to be within X amount of time or after X amount of
    或
 
    在历程画布可视化中，在2个要查看其趋势数据的节点之间选择一个或多个箭头，然后右键单击其中一个选定的箭头。
+
+   要选择多个节点或箭头，请按住Command键(在Mac上)或Ctrl键（在Windows上）。
 
 1. 选择&#x200B;[!UICONTROL **趋势**]。
 
