@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 82f8ba3fb04b50e352b76fd1ce866c0615971335
+source-git-commit: 2fc2bd660b017140b8dfa660cf71054af9efb87e
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1271'
 ht-degree: 0%
 
 ---
@@ -48,21 +48,21 @@ ht-degree: 0%
 
 #### 场景1 — 用户A遵循第一个会话中的历程路径，然后仅遵循后续会话中的后续节点
 
-假设用户A访问网站并遵循历程路径（节点1：访问网站>节点2：查看产品A >节点3：结账）。 在此场景中，事件计入历程的每个节点。
+假设用户A访问网站并完成历程（节点1：“访问网站”>节点2：“查看产品A”>节点3：“结账”）。 由于用户A已完成历程，因此事件将计入历程的每个节点。
 
-现在，假设用户A在以后的会话中再次访问网站。 由于用户A已通过在前一会话中跟踪历程路径而满足了历程的要求，这意味着只要用户A签出 — 即使用户A没有在当前会话中跟踪历程路径 — 就会有事件计入历程的第三个节点“签出”中。 这会导致“检出”节点上的百分比和数量高于前一个节点“查看产品A”上的百分比和数量。
+现在，假设用户A在以后的会话中再次访问网站。 由于用户A已通过遵循历程路径在上一会话中完成了历程，这意味着只要用户A具有的事件与历程中的任何节点匹配 — 即使用户A未在其当前会话中遵循历程路径 — 事件就会计入历程的相关节点中。 例如，如果用户A签出，则在“签出”节点中会计入一个事件。 这会导致“检出”节点上的百分比和数量高于前一个节点“查看产品A”上的百分比和数量。
 
-在本例中，历程的容器设置将发挥关键作用，确定第三个节点上的事件（“签出”）是否计入后续会话。
+在本例中，历程的“人员”容器设置在确定将第三个节点上的事件（“签出”）计入后续会话中时，将发挥关键作用。
 
-或者，如果将“会话”设置为容器（而不是“人员”），则仅在后续访问中发生在第三个节点上的事件将不会计入旅程，因为旅程中显示的统计信息将被限制为给定人员的单个已定义会话。 要了解有关容器设置的更多信息，请参阅[配置历程画布可视化](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)一文中的[开始构建历程画布可视化](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization)
+或者，如果将容器设置设为“会话”，则仅在后续访问中发生在第三个节点上的事件将不会计入旅程，因为旅程中显示的统计信息将被限制为给定人员的单个已定义会话。 要了解有关容器设置的更多信息，请参阅[配置历程画布可视化](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)一文中的[开始构建历程画布可视化](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization)
 
 <!-- The time allotted for users to move along the path is determined by the container setting. Because "Person" is selected as the container setting in this example, people who followed the journey's path in one session (moving from Node 1 to Node 2 and to Node 3) met the criteria of the journey. On any subsequent visits to the site, any event they have that matches any node on the journey is counted on that node. -->
 
 #### 场景2 — 用户B退出历程
 
-假设用户B访问网站但不遵循历程路径（访问网站，查看产品B，然后签出），事件计入历程的开始节点“访问网站”，但事件不计入其余节点，并且用户B退出历程。 即使用户B已签出，事件也不会计入第三个节点“签出”中，因为用户B未通过查看产品A而遵循历程路径。
+假设用户B访问网站但未完成历程（访问网站，查看产品B，然后签出）。 在这种情况下，事件计入历程的开始节点“访问站点”，但事件不计入其余节点，并且用户B退出历程。 即使用户B已签出，事件也不会计入第三个节点（“签出”）中，因为用户B在签出之前未通过查看产品A完成历程。
 
-这是因为仅当人员遵循历程的“最终路径”时，才会为每个节点计算事件，这意味着只要人员最终从一个节点移动到另一个节点，而不考虑在这两个节点之间发生的任何事件，就会计算事件。
+这是因为仅当人员遵循历程的“最终路径”时，才会计算每个节点的事件，这意味着仅当人员最终从一个节点移动到另一个节点时，才会计算事件，而不考虑在这两个节点之间发生的任何事件。
 
 ### 历程具有收敛到单个节点的多个路径
 
