@@ -1,17 +1,17 @@
 ---
-title: 将数据从 Google Analytics 迁移到 Customer Journey Analytics
+title: 从Google Analytics迁移数据
 description: 了解有关如何将数据从 Google Analytics 移动到 Adobe Experience Platform 以及在 Customer Journey Analytics 中查看报告的总体工作流。
 exl-id: 10c485c9-66ab-4925-a357-a66a374d4c6f
 feature: Use Cases
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 79%
+source-wordcount: '303'
+ht-degree: 75%
 
 ---
 
-# 将数据从 Google Analytics 迁移到 Customer Journey Analytics
+# 从Google Analytics迁移数据
 
 如果您是 Customer Journey Analytics 的新手，您的组织可能在另一个分析平台（例如 Google Analytics）上拥有现有数据。您可以按照这些总体步骤将该数据移动到 Adobe Experience Platform，从而允许您在 Customer Journey Analytics 中查看报告。
 

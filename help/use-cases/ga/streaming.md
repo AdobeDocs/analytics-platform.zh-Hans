@@ -1,17 +1,17 @@
 ---
-title: 将流式 Google Analytics 数据配置到 Adobe Experience Platform
+title: 配置流Google Analytics数据
 description: 了解如何设置实施以将 Google 数据层发送到 Adobe Experience Platform
 exl-id: 58854f4b-ae28-424e-a2cf-0e76219cb802
 feature: Use Cases
 role: Admin
-source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 89%
+source-wordcount: '226'
+ht-degree: 84%
 
 ---
 
-# 将流式 Google Analytics 数据配置到 Adobe Experience Platform
+# 配置流Google Analytics数据
 
 本页面重点介绍如何将您的实时 Google Analytics 数据提取到 Adobe Experience Platform，从而允许您在 Customer Journey Analytics 的数据视图中引用该数据集。您可以将此页面上的步骤与[将 Google Analytics 历史数据提取到 Adobe Experience Platform](backfill.md)结合使用，后者会生成包含历史数据的数据集。将流式数据集与回填数据集相结合，在 Customer Journey Analytics 中无缝查看过去和现在的数据。
 

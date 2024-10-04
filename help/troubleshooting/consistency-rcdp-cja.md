@@ -1,18 +1,18 @@
 ---
 description: 解释了哪些因素会影响 Real-time Customer Data Platform (Real-Time CDP) 和 Customer Journey Analytics 之间量度和受众会员计数的一致性。
-title: Real-time CDP 与 Customer Journey Analytics 之间指标和受众成员计数的一致性
+title: 量度和受众成员资格的一致性
 role: Admin
 feature: Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 100%
+source-wordcount: '592'
+ht-degree: 97%
 
 ---
 
 
-# Real-time CDP 与 Adobe Customer Journey Analytics 之间量度和受众成员计数的一致性
+# 量度和受众成员资格的一致性
 
 在现实情景中，无法保证跨 Real-time Customer Data Platform（Real-time CDP）和 Customer Journey Analytics 的量度和受众会员计数的一致性。本文档解释了原因。
 

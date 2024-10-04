@@ -4,9 +4,9 @@ description: 了解如何管理 Customer Journey Analytics 中的受众
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
+source-git-commit: e131fd78ceee67a05a1ea7256e58b4b34ce44ae5
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '677'
 ht-degree: 20%
 
 ---
@@ -24,6 +24,8 @@ ht-degree: 20%
 * 查看Customer Journey Analytics中的受众是否被Real-time Customer Platform **主动使用**。 或者（理想情况下）任何使用Customer Journey Analytics创建的Experience Platform的受众应用程序。
 
 如果您有[受众视图](/help/technotes/access-control.md#user-level-access)访问权限，则可以查看受众。 如果您有[受众创建](/help/technotes/access-control.md#user-level-access)权限，则可以编辑和删除受众。 [受众列表](#audiences-list)显示受众。
+
+![受众管理器](assets/audiences-manager.png)
 
 ## “受众”列表
 

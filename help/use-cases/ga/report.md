@@ -1,18 +1,18 @@
 ---
-title: 在 Customer Journey Analytics 中就 Google Analytics 数据给出报告
+title: 报告Google Analytics数据
 description: 在 Customer Journey Analytics 中就 Google Analytics 数据给出有价值的报告
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 87%
+source-wordcount: '682'
+ht-degree: 85%
 
 ---
 
-# 在 Customer Journey Analytics 中就 Google Analytics 数据给出报告
+# 报告Google Analytics数据
 
 在 Customer Journey Analytics 中获得可用数据后，以下示例提供了用于报告该数据的有用方案。
 

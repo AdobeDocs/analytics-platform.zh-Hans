@@ -4,10 +4,10 @@ description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
+source-git-commit: e131fd78ceee67a05a1ea7256e58b4b34ce44ae5
 workflow-type: tm+mt
-source-wordcount: '1931'
-ht-degree: 17%
+source-wordcount: '1952'
+ht-degree: 16%
 
 ---
 
@@ -147,25 +147,25 @@ ht-degree: 17%
 
 ## 在Experience Platform中使用Customer Journey Analytics受众 {#audiences-aep}
 
-Customer Journey Analytics会从已发布的受众中获取所有命名空间和ID组合，并将其以流式传输到实时客户个人资料(RTCP)中。 Customer Journey Analytics根据配置连接时选择作为[!UICONTROL 人员ID]的内容，将受众发送到设置了主标识的Experience Platform。
+Customer Journey Analytics会从已发布的受众中获取所有命名空间和ID组合，并将其流式传输到Real-time Customer Data Platform中。 Customer Journey Analytics根据配置连接时选择作为[!UICONTROL 人员ID]的内容，将受众发送到设置了主标识的Experience Platform。
 
-然后，RTCP 会检查每个命名空间/ID 组合，并查找可能包含它的个人资料。个人资料其实就是由所链接的命名空间、ID 和设备组成的集群。如果它找到配置文件，则会将命名空间和ID作为区段成员资格属性添加到此配置文件中的其他ID。 例如，可以跨其所有设备和渠道定位<user@adobe.com>。 如果未找到相关的个人资料，则会创建一份新的个人资料。
+然后，Real-time Customer Data Platform会检查每个命名空间/ID组合，并查找可能包含该组合的配置文件。 个人资料其实就是由所链接的命名空间、ID 和设备组成的集群。如果它找到配置文件，则会将命名空间和ID作为区段成员资格属性添加到此配置文件中的其他ID。 例如，可以跨其所有设备和渠道定位<user@adobe.com>。 如果未找到相关的个人资料，则会创建一份新的个人资料。
 
 要在Platform中查看Customer Journey Analytics受众，请执行以下操作：
 
-1. 在左侧面板中展开&#x200B;[!UICONTROL **客户**]，然后选择&#x200B;[!UICONTROL **受众**]。<!-- is there a folder called "Customer Journey Analytics? -->
+1. 在左侧面板中展开&#x200B;**[!UICONTROL 客户]**，然后选择&#x200B;**[!UICONTROL 受众]**。<!-- is there a folder called "Customer Journey Analytics? -->
 
-1. 选择&#x200B;[!UICONTROL **浏览**]&#x200B;选项卡。
-
-   左侧面板中的![受众选项](assets/audiences-aep.png)
+1. 选择&#x200B;**[!UICONTROL 浏览]**&#x200B;选项卡。
 
 1. 要查找您从Customer Journey Analytics发布的受众，请执行以下任一操作：
 
-   * 按&#x200B;[!UICONTROL **Origin**]&#x200B;列对表进行排序，以查看将&#x200B;[!UICONTROL **Customer Journey Analytics**]&#x200B;显示为源的受众。
+   左侧面板中的![受众选项](assets/aep-audiences.png)
 
-   * 选择过滤器图标。
+   * 按&#x200B;**[!UICONTROL Origin]**&#x200B;列对表进行排序，以查看将&#x200B;[!UICONTROL **Customer Journey Analytics**]&#x200B;显示为源的受众。
 
-   * 使用搜索字段。
+   * 筛选&#x200B;**[!UICONTROL 原点]**&#x200B;上的![筛选器](/help/assets/icons/Filter.svg)并选择&#x200B;**[!UICONTROL Customer Journey Analytics]**。
+
+   * 使用![搜索](/help/assets/icons/Search.svg)搜索字段。
 
 有关在Platform中使用受众的更多信息，请参阅Experience Platform文档的[区段生成器UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)中的[受众](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)部分。
 
@@ -186,7 +186,7 @@ Customer Journey Analytics会从已发布的受众中获取所有命名空间和
 
 +++
 
-+++**如果RTCDP中不存在相应的配置文件，是否会创建新的配置文件？**
++++**如果Real-time Customer Data Platform中不存在相应的配置文件，是否会创建新的配置文件？**
 
 是的，会的。
 
@@ -194,7 +194,7 @@ Customer Journey Analytics会从已发布的受众中获取所有命名空间和
 
 +++**Customer Journey Analytics是以管道事件的形式还是以同样发送到数据湖的平面文件的形式发送受众数据？**
 
-Customer Journey Analytics通过管道将数据流式传输到RTCP中，并且这些数据还会收集到数据湖中的系统数据集中。
+Customer Journey Analytics通过pipeline将数据流式传输到Real-time Customer Data Platform中，并且这些数据还会收集到数据湖的系统数据集中。
 
 +++
 
@@ -210,9 +210,9 @@ Customer Journey Analytics通过管道将数据流式传输到RTCP中，并且�
 
 +++
 
-+++**RTCP是否也处理Customer Journey Analytics消息？ Customer Journey Analytics是否可以通过受众共享将身份添加到配置文件身份图？**
++++**Real-time Customer Data Platform是否也处理Customer Journey Analytics消息？ Customer Journey Analytics是否可以通过受众共享将身份添加到配置文件身份图？**
 
-否。每个用户仅发送一个身份，因此RTCP不会使用任何图形边缘。
+否。由于每人只发送一个身份，因此Real-time Customer Data Platform将不会使用任何图形边缘。
 
 +++
 

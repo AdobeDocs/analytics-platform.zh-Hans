@@ -5,14 +5,14 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
-source-git-commit: f078bf7b9b9d87335f435db2bbba87b078412738
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '3385'
+source-wordcount: '3382'
 ht-degree: 60%
 
 ---
 
-# 通过Adobe Experience Platform Mobile SDK引入数据
+# 通过Mobile SDK引入数据
 
 本快速入门指南介绍如何使用Adobe Experience Platform Mobile SDK和Edge Network将移动应用程序跟踪数据直接摄取到Adobe Experience Platform。 然后将这些数据用于Customer Journey Analytics。
 
@@ -283,7 +283,7 @@ ht-degree: 60%
 您还需要从目录设置以下其他扩展：
 
 - 身份。
-- AEP保证。
+- AEP Assurance。
 - 同意。
 
 有关扩展及其配置的更多信息，请参阅Experience Platform的移动应用程序教程中的[配置标记属性](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html)。

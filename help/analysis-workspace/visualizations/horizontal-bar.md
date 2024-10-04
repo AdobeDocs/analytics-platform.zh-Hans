@@ -4,14 +4,16 @@ title: 水平条形图和堆叠的水平条形图
 feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: e8d9132ec9920d649f6694f02f987deadb93b77d
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 15%
+source-wordcount: '160'
+ht-degree: 14%
 
 ---
 
-# 水平条形图和栈叠的水平条形图
+# 水平条形图（栈叠）
+
+水平条形图可视化图表具有标准和栈叠选项。
 
 ## 水平条形图 {#horizontal-bar}
 

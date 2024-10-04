@@ -1,17 +1,17 @@
 ---
-title: 自由格式表中的动态维度项与静态维度项
+title: 动态维度项与静态维度项
 description: 如何与表中的动态维度项和静态维度项交互
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 50%
+source-wordcount: '543'
+ht-degree: 49%
 
 ---
 
-# 自由格式表中的动态和静态维度项目
+# 动态和静态维度项目
 
 在自由格式表中，行和列包含各种组件值。这些值可以是动态的（随时间而改变）或静态的（不随时间而改变），具体取决于您要构建的分析。
 
@@ -53,4 +53,4 @@ ht-degree: 50%
 动态行和静态行在自由格式表总计行中的行为方式有所不同。默认情况下：
 
 * 动态行是服务器端总和，并且去除了重复量度，例如会话或人员。
-* 静态行是客户端总和，并且&#x200B;**不会**&#x200B;去除重复量度。要计算服务器端总计行，请将“行”设置更改为&#x200B;**“显示总计”**。[了解详情](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html?lang=zh-Hans)
+* 静态行是客户端总和，并且&#x200B;**不会**&#x200B;去除重复量度。要计算服务器端总计行，请将“行”设置更改为&#x200B;**“显示总计”**。[了解详情](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html?lang=zh-hans)

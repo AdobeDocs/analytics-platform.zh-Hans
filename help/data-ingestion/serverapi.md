@@ -5,14 +5,14 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '2351'
+source-wordcount: '2348'
 ht-degree: 59%
 
 ---
 
-# 通过Adobe Experience PlatformEdge Network服务器API引入数据
+# 通过Edge Network服务器API引入数据
 
 本快速入门指南介绍如何使用Adobe Experience PlatformEdge Network服务器API和Edge Network，将跟踪数据从物联网设备、机顶盒、游戏控制台和桌面应用程序等设备直接摄取到Adobe Experience Platform中。 然后将这些数据用于Customer Journey Analytics。
 

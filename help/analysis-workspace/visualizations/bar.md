@@ -4,14 +4,16 @@ title: 条形图和堆叠的条形图
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
+source-git-commit: e8d9132ec9920d649f6694f02f987deadb93b77d
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 16%
+source-wordcount: '174'
+ht-degree: 13%
 
 ---
 
-# 条形图和堆叠的条形图
+# 条形图（栈叠）
+
+条形图可视化图表具有标准和栈叠选项。
 
 ## 条形图 {#bar}
 

@@ -4,9 +4,9 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 51d4f05d7d28befed0a5c0d1b47b53c2e045f7f7
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '4090'
+source-wordcount: '4094'
 ht-degree: 70%
 
 ---
@@ -20,7 +20,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2024 年 10 月** | |
-| Workspace和组件 | 刷新了有关Workspace项目（项目、可视化和面板）和组件(注释、维度、（计算）指标、过滤器、日期范围和警报)的文档。 |
+| Workspace和组件 | 刷新了有关Analysis Workspace项目（项目、可视化和面板）和组件(注释、维度、（计算）量度、过滤器、日期范围、警报、计划项目和受众)的文档。 |
 | **2024 年 9 月** | |
 | 摘要数据更新 | 更新了摘要数据文章，其中包含有关如何在报告摘要数据时正确使用[查找数据](/help/data-views/summary-data.md#lookup-data)的信息。 |
 | BI扩展更新 | 向BI扩展文档添加了[默认值和限制](/help/data-views/bi-extension.md#defaults-and-limitations)部分。 |

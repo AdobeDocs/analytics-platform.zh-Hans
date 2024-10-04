@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 04a95b6e502a8a1c1e686738d490d2a40936e738
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 92%
+source-wordcount: '964'
+ht-degree: 86%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 92%
    + [数据摄取概述](../data-ingestion/data-ingestion.md)
    + 摄取并使用快速入门指南{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
-      + Adobe Experience Platform Edge Network {#edge-network}
+      + Experience PlatformEdge Network{#edge-network}
          + [Web SDK](../data-ingestion/aepwebsdk.md)
          + [Mobile SDK](../data-ingestion/aepmobilesdk.md)
          + [服务器 API](../data-ingestion/serverapi.md)
@@ -115,7 +115,7 @@ ht-degree: 92%
       + [打开项目](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [保存项目](../analysis-workspace/build-workspace-project/save-projects.md)
       + Workspace 中的文件夹 {#workspace-folders}
-         + [关于Workspace中的文件夹](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+         + [关于文件夹](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [创建文件夹和子文件夹](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [管理文件夹](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
          + [将项目添加或移动到文件夹](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
@@ -191,20 +191,20 @@ ht-degree: 92%
       + [导出到云](../analysis-workspace/export/export-cloud.md)
    + 异常检测 {#anomaly-detection}
       + [概述](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
-      + [在 Analysis Workspace 中查看异常](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
-      + [异常检测中使用的统计技术](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
+      + [查看异常](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
+      + [统计技术](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
    + 预测 {#forecasting}
       + [概述](../analysis-workspace/c-forecast/forecasting.md)
-      + [在 Analysis Workspace 中查看预测](../analysis-workspace/c-forecast/view-forecasts.md)
-      + [预测服务中使用的统计技术](../analysis-workspace/c-forecast/statistics-forecasting.md)
-      + [目录](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
+      + [查看预测](../analysis-workspace/c-forecast/view-forecasts.md)
+      + [统计技术](../analysis-workspace/c-forecast/statistics-forecasting.md)
+   + [目录](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [用户偏好设置](../analysis-workspace/user-preferences.md)
-   + Workspace 常见问题解答 {#workspace-faq}
+   + Workspace常见问题解答和更多{#workspace-faq}
       + [常见问题解答](../analysis-workspace/workspace-faq/faq.md)
       + [错误消息](../analysis-workspace/workspace-faq/error-messages.md)
-      + [Analysis Workspace 限制](../analysis-workspace/workspace-faq/aw-limitations.md)
+      + [限制](../analysis-workspace/workspace-faq/aw-limitations.md)
       + [管理要求](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
-      + [Analysis Workspace 中的辅助功能](../analysis-workspace/workspace-faq/aw-accessibility.md)
+      + [辅助功能](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
 + Analytics 功能板{#cja-dashboards}
    + [Analytics 功能板 — 概述](../mobile-app/home.md)
@@ -360,10 +360,10 @@ ht-degree: 92%
 + 用例 {#cja-usecases}
    + [Customer Journey Analytics 用例](../use-cases/cja-usecases.md)
    + Google Analytics 数据{#ga}
-      + [将数据从 Google Analytics 迁移到 Customer Journey Analytics 概述](../use-cases/ga/overview.md)
-      + [将 Google Analytics 历史数据提取到平台](../use-cases/ga/backfill.md)
-      + [将流式 Google Analytics 数据配置到 Platform](../use-cases/ga/streaming.md)
-      + [在 Customer Journey Analytics 中就 Google Analytics 数据给出报告](../use-cases/ga/report.md)
+      + [从Google Analytics迁移数据](../use-cases/ga/overview.md)
+      + [摄取Google Analytics历史数据](../use-cases/ga/backfill.md)
+      + [配置流Google Analytics数据](../use-cases/ga/streaming.md)
+      + [报告Google Analytics数据](../use-cases/ga/report.md)
    + 数据摄取 {#data-ingestion}
       + [收錄并使用 Marketo Engage 数据](../use-cases/data-ingestion/marketo.md)
       + [收錄和使用 Experience Platform 受众](../use-cases/data-ingestion/ingest-aep-segments.md)
@@ -390,14 +390,14 @@ ht-degree: 92%
    + 拼合 {#stitching}
       + [共享设备](/help/use-cases/stitching/shared-devices.md)
    + 派生字段 {#derived-fields}
-      + [使用派生字段报告目标](../use-cases/goals-using-derived-fields.md)
+      + [目标报告](../use-cases/goals-using-derived-fields.md)
 
 + Labs {#labs}
    + [Labs 用户指南](../labs/labs.md)
 
 + 故障排除 {#troubleshooting}
-   + [比较 Adobe Analytics 数据和 Customer Journey Analytics 数据](../troubleshooting/compare.md)
-   + [Real-time CDP 与 Customer Journey Analytics 之间指标和受众成员计数的一致性](../troubleshooting/consistency-rcdp-cja.md)
+   + [比较数据](../troubleshooting/compare.md)
+   + [量度和受众的一致性](../troubleshooting/consistency-rcdp-cja.md)
    + [缺乏权限](../troubleshooting/lack-of-permissions.md)
 
 + 技术说明 {#technotes}
@@ -408,7 +408,7 @@ ht-degree: 92%
    + [术语表](../technotes/glossary.md)
    + [护栏](../technotes/guardrails.md)
    + [IP 地址](../technotes/ip-addresses.md)
-   + [优化 Customer Journey Analytics 性能](../technotes/optimizing-performance.md)
+   + [优化性能](../technotes/optimizing-performance.md)
    + [查看和管理使用情况](../technotes/estimate-usage.md)
 
 + [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)
