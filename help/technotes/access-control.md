@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 664576605b8be098a751609536e388c304c65513
+source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
 workflow-type: tm+mt
-source-wordcount: '1461'
-ht-degree: 14%
+source-wordcount: '1469'
+ht-degree: 15%
 
 ---
 
@@ -117,6 +117,7 @@ Customer Journey Analytics由三个访问级别或三个角色控制：产品管
 | [!UICONTROL 报告工具] | [!UICONTROL 过滤器创建] | 允许用户创建[筛选器](/help/components/filters/filters-overview.md)。 用户只能标记、共享、删除、重命名、批准、取消批准他们创建的过滤器或与他们共享的过滤器。 |
 | [!UICONTROL 报告工具] | [!UICONTROL Labs 访问权限] | 允许用户访问Customer Journey Analytics中的[Labs](/help/labs/labs.md)选项卡。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 创建注释] | 允许用户创建[注释](/help/components/annotations/overview.md)。 用户只能标记、共享、删除和重命名他们创建的注释或与他们共享的注释。 |
+| [!UICONTROL 报告工具] | [!UICONTROL 受众视图] | 允许用户查看[受众](/help/components/audiences/audiences-overview.md)。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 受众创建] | 允许用户创建[受众](/help/components/audiences/audiences-overview.md)。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 审核日志访问] | 强制对[API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/)和审核日志UI进行权限检查。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 与任何人共享项目链接] | 允许用户[与任何人共享项目。](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |

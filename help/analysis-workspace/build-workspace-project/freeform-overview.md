@@ -5,10 +5,10 @@ title: 项目概述
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
+source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
-source-wordcount: '1627'
-ht-degree: 6%
+source-wordcount: '1628'
+ht-degree: 7%
 
 ---
 
@@ -78,21 +78,21 @@ ht-degree: 6%
 
 您可以使用上下文菜单![More](/help/assets/icons/More.svg)或蓝色操作栏对一个或多个项目执行操作。
 
-| 操作 | 描述 |
-|---|---|
-| 已选择![CrossSize75](/help/assets/icons/CrossSize75.svg) **[!UICONTROL *x *]** | 取消选择选定的项目和文件夹，并删除蓝色操作栏。 |
-| ![删除](/help/assets/icons/Delete.svg) **[!UICONTROL 删除]** | 删除一个或多个项目或文件夹。 系统会提示您进行确认。 |
-| ![共享](/help/assets/icons/ShareAlt.svg) **[!UICONTROL 共享]** | 共享项目。 有关详细信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)。 |
-| ![编辑](/help/assets/icons/Edit.svg)重命名 | 重命名项目。 打开&#x200B;**[!UICONTROL 重命名： *项目名称对话框&#x200B;*]**。 输入新名称，然后选择**[!UICONTROL 保存&#x200B;]**。 |
-| ![副本](/help/assets/icons/Copy.svg) **[!UICONTROL 副本]** | 复制一个或多个项目。 项目的名称和后缀`(Copy)`相同。 |
-| ![PinOnff](/help/assets/icons/PinOff.svg) **[!UICONTROL Pin]**&#x200B;或&#x200B;**[!UICONTROL 取消固定]** | 固定或取消固定一个或多个项目或文件夹。 固定项目和文件夹显示在列表顶部，并忽略您指定的排序顺序。 |
-| ![向上箭头](/help/assets/icons/ArrowUp.svg)**[!UICONTROL 向上移动]** | 在项目列表中向上移动固定项目或文件夹。 |
-| ![向下箭头](/help/assets/icons/ArrowDown.svg)**[!UICONTROL 向下移动]** | 在项目列表中向下移动固定项目或文件夹。 |
-| ![标签](/help/assets/icons/Label.svg) **[!UICONTROL 标签]** | 标记一个或多个项目或文件夹。 显示&#x200B;**[!UICONTROL 标记组件]**&#x200B;对话框以选择一个或多个标记。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存所选项目或文件夹的标记。 |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 批准]**&#x200B;或&#x200B;**[!UICONTROL 取消批准]** | 批准或取消批准项目。 只有管理员可以批准项目。 |
-| ![文件CSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL 导出CSV]** | 将所选项目导出到名为`Project List.csv`的CSV文件。 |
-| ![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL 添加项目]** | 将一个或多个项目添加到选定文件夹。 在&#x200B;**[!UICONTROL 添加项目]**&#x200B;中，您可以选择一个或多个项目。 选择&#x200B;**[!UICONTROL 添加]**&#x200B;以将这些项目添加到该文件夹。 有关详细信息，请参阅[将项目添加到文件夹](workspace-folders/add-projects.md#from-inside-a-folder)。 |
-| ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) **[!UICONTROL 移动到]** | 将一个或多个选定项目移至文件夹。 在&#x200B;**[!UICONTROL 选择文件夹]**&#x200B;中，选择要将选定项目移动到的文件夹，然后选择&#x200B;**[!UICONTROL 移动]**。 有关详细信息，请参阅[将项目添加到文件夹](workspace-folders/add-projects.md#from-the-project-list)。 |
+| 图标 | 操作 | 描述 |
+|:---:| ---|---|
+| ![CrossSize75](/help/assets/icons/Close.svg) | 已选择&#x200B;**[!UICONTROL *x *]** | 取消选择选定的项目和文件夹，并删除蓝色操作栏。 |
+| ![删除](/help/assets/icons/Delete.svg) | **[!UICONTROL 删除]** | 删除一个或多个项目或文件夹。 系统会提示您进行确认。 |
+| ![共享](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL 共享]** | 共享项目。 有关详细信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)。 |
+| ![编辑](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名项目。 打开&#x200B;**[!UICONTROL 重命名： *项目名称对话框&#x200B;*]**。 输入新名称，然后选择**[!UICONTROL 保存&#x200B;]**。 |
+| ![Copy](/help/assets/icons/Copy.svg) | **[!UICONTROL Copy]** | 复制一个或多个项目。 项目的名称和后缀`(Copy)`相同。 |
+| ![PinOnff](/help/assets/icons/PinOff.svg) | **[!UICONTROL 固定]**&#x200B;或&#x200B;**[!UICONTROL 取消固定]** | 固定或取消固定一个或多个项目或文件夹。 固定项目和文件夹显示在列表顶部，并忽略您指定的排序顺序。 |
+| ![向上箭头](/help/assets/icons/ArrowUp.svg) | **[!UICONTROL 上移]** | 在项目列表中向上移动固定项目或文件夹。 |
+| ![向下箭头](/help/assets/icons/ArrowDown.svg) | **[!UICONTROL 下移]** | 在项目列表中向下移动固定项目或文件夹。 |
+| ![标签](/help/assets/icons/Label.svg) | **[!UICONTROL 标记]** | 标记一个或多个项目或文件夹。 显示&#x200B;**[!UICONTROL 标记组件]**&#x200B;对话框以选择一个或多个标记。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存所选项目或文件夹的标记。 |
+| ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL 批准]**&#x200B;或&#x200B;**[!UICONTROL 取消批准]** | 批准或取消批准项目。 只有管理员可以批准项目。 |
+| ![文件CSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL 导出CSV]** | 将所选项目导出到名为`Project List.csv`的CSV文件。 |
+| ![项目添加](/help/assets/icons/ProjectAdd.svg) | **[!UICONTROL 添加项目]** | 将一个或多个项目添加到选定文件夹。 在&#x200B;**[!UICONTROL 添加项目]**&#x200B;中，您可以选择一个或多个项目。 选择&#x200B;**[!UICONTROL 添加]**&#x200B;以将这些项目添加到该文件夹。 有关详细信息，请参阅[将项目添加到文件夹](workspace-folders/add-projects.md#from-inside-a-folder)。 |
+| ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) | **[!UICONTROL 移至]** | 将一个或多个选定项目移至文件夹。 在&#x200B;**[!UICONTROL 选择文件夹]**&#x200B;中，选择要将选定项目移动到的文件夹，然后选择&#x200B;**[!UICONTROL 移动]**。 有关详细信息，请参阅[将项目添加到文件夹](workspace-folders/add-projects.md#from-the-project-list)。 |
 
 
 

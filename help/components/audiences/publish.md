@@ -4,10 +4,10 @@ description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 905d8e0bfe2e0dbc9c6a03d9eb9a6efd4926fbbf
+source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 48%
+source-wordcount: '1931'
+ht-degree: 17%
 
 ---
 
@@ -31,74 +31,102 @@ ht-degree: 48%
 
 <!-- markdownlint-enable MD034 -->
 
-本主题讨论如何在Adobe Experience Platform中创建并将在Customer Journey Analytics中识别的受众发布到[实时客户个人资料](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans)，以实现客户定位和个性化。
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_component_audiences_refreshlookbackwindow"
+>title="刷新回顾时段"
+>abstract="定义从今天开始评估受众的回顾天数。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_component_audiences_audiencesizelimit"
+>title="受众规模限制"
+>abstract="受众人数不得超过20亿成员。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_component_audiences_namespacesincluded"
+>title="命名空间已包含"
+>abstract="此受众中的身份由以下命名空间组成。"
+
+<!-- markdownlint-enable MD034 -->
+
+
+
+
+本主题讨论如何在Adobe Experience Platform中创建并将在Customer Journey Analytics中识别的受众发布到[实时客户个人资料](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)，以实现客户定位和个性化。
 
 阅读此[概述](/help/components/audiences/audiences-overview.md)，了解Customer Journey Analytics受众的概念。
 
 ## 创建和发布受众 {#create}
 
-1. 要开始创建和发布受众，请执行以下操作之一：
+1. 要创建并发布受众，请执行以下操作之一：
 
    | 创建方法 | 详细信息 |
    | --- | --- |
-   | 从主要&#x200B;**[!UICONTROL 组件] > [!UICONTROL 受众]**&#x200B;菜单 | “受众管理器”页面将打开。单击&#x200B;**[!UICONTROL 创建受众]**，然后将打开[!UICONTROL 受众生成器]。 |
-   | 从Analysis Workspace中的可视化图表 | Analysis Workspace中的许多可视化图表都允许您使用右键单击菜单创建受众。 例如，您可以右键单击自由格式表中的项目，或者右键单击历程画布中的节点，然后选择&#x200B;**[!UICONTROL 创建受众]**。 <p>使用此方法时会用您在表中选择的维度或维度项目预填充过滤器。</p><p>通过以下可视化图表，可使用右键单击菜单创建受众：</p><ul><li>同类组</li><li>流失</li><li>流量</li><li>自由格式表</li><li>历程画布</li><li>维恩图</li></ul><p>**注意：**&#x200B;受众不能包含计算量度。 如果尝试创建的受众包含计算量度，则该计算量度将不会包含在受众定义中。</p> |
-   | 通过过滤器创建/编辑 UI | 选中显示&#x200B;**[!UICONTROL 从此过滤器创建受众]**&#x200B;的框。使用此方法时会预填充过滤器。 |
+   | 从&#x200B;**[!UICONTROL 受众]**&#x200B;界面中。 | 从主Customer Journey Analytics菜单中选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 受众]**。 此时将显示“受众”界面。 选择&#x200B;**[!UICONTROL 创建受众]**，此时将打开[!UICONTROL 受众生成器]。 |
+   | 从Analysis Workspace中的可视化图表 | Analysis Workspace中的许多可视化图表都允许您使用上下文菜单创建受众。 例如，您可以从[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)中项目的上下文菜单或在[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)中的节点中选择&#x200B;**[!UICONTROL 创建受众]**。<p>使用此方法时会使用您选择的维度或维度项目预填充受众生成器中的过滤器。</p><p>通过以下可视化图表，可使用右键单击菜单创建受众：</p><ul><li>[同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[流](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[维恩图](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**注意：**&#x200B;受众不能包含计算量度。 如果尝试创建的受众包含计算量度，则该计算量度不会包含在受众定义中。</p> |
+   | 通过过滤器创建/编辑 UI | 选中显示&#x200B;**[!UICONTROL 从此过滤器创建受众]**&#x200B;的框。使用此方法时会预填充过滤器。 有关详细信息，请参阅[创建筛选器](/help/components/filters/create-filters.md)。 |
 
    {style="table-layout:auto"}
 
-1. 生成受众。
+1. 使用[受众生成器](#audience-builder)生成受众。
 
-   在发布受众之前，请配置这些设置。
+1. 使用[日期预览](#data-preview)面板解释数据。
 
-   ![下一节中介绍的创建受众倾斜设置的屏幕截图。](assets/create-audience.png)
+1. 选择&#x200B;**[!UICONTROL [!UICONTROL 查看样本ID]]**&#x200B;以查看此受众中的ID示例。 在&#x200B;**[!UICONTROL 示例ID]**&#x200B;对话框中，您可以使用![搜索](/help/assets/icons/Search.svg) [!UICONTROL *搜索示例ID*]&#x200B;来搜索示例ID。
 
-   | 设置 | 描述 |
-   | --- | --- |
-   | [!UICONTROL 名称] | 受众的名称。 |
-   | [!UICONTROL 标记] | 出于组织目的而要分配给受众的任何标记。您可以使用预先存在的标记或输入新标记。 |
-   | [!UICONTROL 描述] | 添加合适的受众描述以将受众与其他人区分开来。 |
-   | [!UICONTROL 刷新频率] | 您刷新受众所要采用的频率。<ul><li>您可以选择创建不需要刷新的一次性受众（默认）。例如，这可能有助于特定的一次性营销活动。</li><li>您可以选择其他刷新间隔。对于4小时的刷新频率，受众刷新限制为75至150次，具体取决于您的Customer Journey Analytics权限。</li></ul> |
-   | 过期日期 | 当受众将停止刷新时。默认值为创建日期开始 1 年。对过期受众的处理方法与过期的计划报告类似——管理员在受众过期前一个月会收到一封电子邮件。 |
-   | 刷新回顾时段 | 指定创建此受众时要在数据窗口中返回多远。最多为 90 天。 |
-   | [!UICONTROL 一次性日期范围] | 您希望在其中发布一次性受众的日期范围。 |
-   | [!UICONTROL 过滤器] | 过滤器是受众的主要输入。您最多可以添加 20 个过滤器。这些过滤器可以与 `And` 或 `Or` 运算符相连。<p>从Analysis Workspace中的可视化图表(例如自由格式表或历程画布)创建受众时，应用于面板或列的任何过滤器都会保留。 您可以删除任何自动应用的过滤器。</p> |
-   | [!UICONTROL 查看样本 ID] | 受众中的 ID 示例。使用搜索栏搜索 ID 示例。 |
+1. 仔细检查受众配置并选择&#x200B;**[!UICONTROL Publish]**。
+您会收到一条关于受众已发布的确认消息。 发布只需要一两分钟，该受众就会出现在Experience Platform中。
 
-   {style="table-layout:auto"}
+1. 在同一条消息中选择&#x200B;**[!UICONTROL 在AEP中查看受众]**，您将转到Adobe Experience Platform中的[区段UI](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/overview)。 有关详细信息，请参阅下文。
 
-1. 解释数据预览。
+## 受众生成器
 
-   受众预览显示在右侧面板中。 它允许您对所创建的受众进行总结分析。
+配置这些设置以定义或更新受众。
 
-   ![显示受众摘要分析的数据预览屏幕截图。](assets/data-preview.png)
+![下一节中介绍的创建受众倾斜设置的屏幕截图。](assets/create-audience.png)
 
-   | 预览设置 | 描述 |
-   | --- | --- |
-   | [!UICONTROL 数据预览]窗口 | 受众的日期范围。 |
-   | [!UICONTROL 总人数] | 该受众中总人数的汇总。可高达 20 亿人。 如果您的受众超过 20 亿人，则必须先缩小受众规模，然后才能发布。 |
-   | [!UICONTROL 受众规模限制] | 显示受众人数离 2000 万的上限还有多远。 |
-   | [!UICONTROL 预计会返回的受众] | 此设置对于重新定位该受众中那些返回您的网站、移动应用程序或其他渠道（换言之，再次出现在此数据集中的）的客户非常有用。 <p>在这里，您可以为可能返回的估计客户数选择时间范围（未来 7 天、未来 2 周、下个月）。 |
-   | [!UICONTROL 预计会返回] | 该数字为您提供了在您从下拉列表中选择的时间范围内返回的客户的估计数量。我们通过观察该受众的历史流失率来预测这一数字。 |
-   | [!UICONTROL 预览量度] | 通过此设置，您可以查看特定量度，以查看该受众为此量度做出的贡献是否不成比例，例如[!UICONTROL 收入]或[!UICONTROL 平均网站逗留时间。]它提供了度量的聚合计数，以及它所代表的总数的百分比。您可以选择数据视图中可用的任何量度。 |
-   | [!UICONTROL 命名空间包含] | 与受众中的人关联的特定命名空间。例如 ECID、CRM ID、电子邮件地址等。 |
-   | [!UICONTROL 沙盒] | 受众所在的 [Experience Platform sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) 沙盒。当您将此受众发布到平台时，您只能在这个沙盒的范围内使用它。 |
+| 设置 | 描述 |
+| --- | --- |
+| ![数据](/help/assets/icons/Data.svg) | 选择用于创建受众的数据视图。 |
+| **[!UICONTROL 名称]** | 受众的名称。 例如，`Really Interested in Potential Car Buyers` |
+| **[!UICONTROL 标记]** | 出于组织目的而要分配给受众的任何标记。 您可以选择一个或多个预先存在的标记或输入新标记。 |
+| **[!UICONTROL 描述]** | 受众的描述，用于区分其他受众。 例如，`Build an audience of really interested potential car buyers` |
+| **[!UICONTROL 刷新频率]** | 您刷新受众所要采用的频率。<p/>您可以选择 <ul><li>**[!UICONTROL 一次]**&#x200B;受众：一个无需刷新的受众（默认）。 例如，此选项可能有助于特定的一次性营销活动。<br/>您必须指定&#x200B;**[!UICONTROL 一次性日期范围]**。 您可以使用![日历](/help/assets/icons/Calendar.svg)输入日期范围。</li><li>正在刷新受众。 您可以从下列选项中进行选择：<ul><li>**[!UICONTROL 每4小时]**&#x200B;秒：每4小时刷新的受众。</li><li>**[!UICONTROL 每日]**：每天刷新的受众</li><li>**[!UICONTROL 每周]**：每周刷新的受众。</li><li>**[!UICONTROL 每月]**：每月刷新的受众</li></ul></li><br/>要刷新受众，您必须指定：<ul><li>**[!UICONTROL 刷新回顾窗口]**。 定义从今天开始评估受众的回顾天数。 您可以从选项中进行选择或定义自定义时间。 最长为90天。</li><li>**[!UICONTROL 过期日期]**：定义受众何时停止刷新。 您可以使用![日历](/help/assets/icons/Calendar.svg)选择日期。 默认值为创建日期开始 1 年。即将过期的受众的处理方式与即将过期的计划报表的处理方式类似。 管理员会在受众过期前一个月收到一封电子邮件。</li></ul> 请注意，根据您的Customer Journey Analytics权限，受众刷新限制为75到150次。</li></ul> |
+| **[!UICONTROL 过滤器]** | 过滤器是受众的主要输入。从左侧![分段](/help/assets/icons/Segmentation.svg) **[!UICONTROL 筛选器]**&#x200B;面板将一个或多个筛选器拖放到筛选器区域。 您可以使用![搜索](/help/assets/icons/Search.svg) [!UICONTROL *搜索筛选器*]&#x200B;来搜索筛选器。 您最多可以添加 20 个过滤器。筛选器可以与&#x200B;**[!UICONTROL And]**&#x200B;或&#x200B;**[!UICONTROL Or]**&#x200B;运算符相连。<p>从Analysis Workspace中的可视化图表(例如自由格式表或历程画布)创建受众时，应用于面板或列的任何过滤器都会保留。 您可以删除任何自动应用的过滤器。</p> |
+| **[!UICONTROL 数据预览]** | 选择![信息](/help/assets/icons/Info.svg)以显示或隐藏所选日期范围的[数据预览](#data-preview)。 |
 
-   {style="table-layout:auto"}
+## 数据预览
 
-1. 双击受众配置，然后单击&#x200B;**[!UICONTROL 发布]**。
+数据预览面板提供以下信息。
 
-   如果一切顺利，您会收到一条确认消息，确认已发布受众。此受众只需一两分钟就能出现在 Experience Platform 中。（即使是拥有数百万成员的受众，也不会超过 5 分钟的时间。）
+| 元素 | 描述 |
+| --- | --- |
+| **[!UICONTROL 总人数]** | 该受众中总人数的汇总。最大规模为2000万人。 如果您的受众超过2000万人，则必须先缩小受众规模，然后才能发布。 |
+| **[!UICONTROL 受众规模限制]** | 用于显示受众距离2000万这一限制有多远的可视化图表。 |
+| **[!UICONTROL 预计会返回的受众]** | 您可以使用此值重新定位此受众中会返回您的网站、移动应用程序或其他渠道的人员。<p>您可以为可能返回的估计客户数选择时间范围（**[!UICONTROL Next 7天]**、**[!UICONTROL Next 2周]**&#x200B;或&#x200B;**[!UICONTROL Next month]**）。 |
+| **[!UICONTROL 预计会返回]** | 该数字为您提供了所选时间范围内回访客户的估计数量。 此数字是使用此受众的历史客户流失率预测的。 |
+| **[!UICONTROL 预览量度]** | 您可以选择特定量度，以查看该量度的数据如何基于您定义的受众。  每个预览量度会根据受众显示量度的总计。 以及基于受众的量度在量度总数中所占的百分比，如数据视图所定义。 例如，381人（您选择的量度）是受众定义的结果，相当于数据视图中可用总人数的5%。 您可以选择数据视图中可用的任何量度。 |
+| **[!UICONTROL 命名空间包含]** | 与受众中的人关联的特定命名空间。例如 ECID、CRM ID、电子邮件地址等。 |
+| **[!UICONTROL 沙盒]** | 受众所在的 [Experience Platform sandbox](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sandbox/home) 沙盒。当您将此受众发布到Platform时，您只能在此沙盒的范围内处理受众。 |
 
-1. 在同一条消息中单击&#x200B;**[!UICONTROL 在 AEP 中查看受众]**，则可进入 Adobe Experience Platform 中的 [Segment UI](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=zh-Hans)。有关详细信息，请参阅下文。
+{style="table-layout:auto"}
 
 ## 创建和发布受众后会发生什么？ {#after-audience-created}
 
-在Customer Journey Analytics中创建和发布受众后，该受众可在Experience Platform中使用。 仅当您的组织设置为流式分段时，才会创建Adobe Experience Platform流式区段。
+在Customer Journey Analytics中创建和发布受众后，该受众可在Experience Platform中使用。 仅当您的组织设置为进行流式分段时，才会创建Adobe Experience Platform流式区段。
 
-* Platform中的受众共享与Customer Journey Analytics受众相同的名称/描述，但名称后将附加Customer Journey Analytics受众ID，以确保其唯一。
-* 对Customer Journey Analytics中的受众名称或描述所做的任何更改都会反映在Platform中。
-* 如果在Customer Journey Analytics中删除了某个受众，则该受众将继续在Platform中可用。
+* Platform中的受众与Customer Journey Analytics受众共享相同的名称和描述。 该名称将附加有Customer Journey Analytics的受众ID，以确保受众是唯一的。
+* 对Customer Journey Analytics中的受众名称或描述所做的任何更改都会反映在Experience Platform中。
+* 如果在Customer Journey Analytics中删除了某个受众，则该受众将继续在Experience Platform中可用。
 
 ## 延迟注意事项 {#latency}
 
@@ -106,7 +134,7 @@ ht-degree: 48%
 
 ![受众发布的延迟，如本节所述。](assets/latency-diagram.svg)
 
-| # | 延迟点 | 延迟持续时间 |
+|  | 延迟点 | 延迟持续时间 |
 | --- | --- | --- |
 | 未显示 | Adobe Analytics到Analytics源连接器(A4T) | 最多 30 分钟 |
 | 1 | 将数据摄取到数据湖（从Analytics源连接器或其他源） | 最多 90 分钟 |
@@ -139,7 +167,7 @@ Customer Journey Analytics会从已发布的受众中获取所有命名空间和
 
    * 使用搜索字段。
 
-有关在Platform中使用受众的更多信息，请参阅Experience Platform文档的[区段生成器UI指南](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html)中的[受众](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#audiences)部分。
+有关在Platform中使用受众的更多信息，请参阅Experience Platform文档的[区段生成器UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)中的[受众](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)部分。
 
 
 ## 常见问题解答 {#faq}
@@ -154,17 +182,17 @@ Customer Journey Analytics会从已发布的受众中获取所有命名空间和
 
 +++**如果删除Customer Journey Analytics中的受众会发生什么情况？**
 
-删除Customer Journey Analytics受众后，该受众将不再出现在Experience PlatformUI中。 然而，在 Platform 中并没有删除和该受众相关联的个人资料。
+删除Customer Journey Analytics受众后，该受众不再显示在Experience PlatformUI中。 但是，与该受众关联的用户档案不会在Experience Platform中删除。
 
 +++
 
-+++**如果 RTCDP 中不存在相应的配置文件，是否会创建新的配置文件？**
++++**如果RTCDP中不存在相应的配置文件，是否会创建新的配置文件？**
 
 是的，会的。
 
 +++
 
-+++**Customer Journey Analytics是将受众数据作为管道事件发送，还是作为同样发送到数据湖的平面文件发送？**
++++**Customer Journey Analytics是以管道事件的形式还是以同样发送到数据湖的平面文件的形式发送受众数据？**
 
 Customer Journey Analytics通过管道将数据流式传输到RTCP中，并且这些数据还会收集到数据湖中的系统数据集中。
 
@@ -172,19 +200,19 @@ Customer Journey Analytics通过管道将数据流式传输到RTCP中，并且�
 
 +++**Customer Journey Analytics发送了哪些标识？**
 
-在[连接设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection)中指定的任何标识/命名空间对。 具体来说，用户选择要用作其“个人 ID”的字段时的步骤。
+在[连接设置](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection)中指定的任何标识/命名空间对。 具体而言，用户选择要用作人员ID的字段时的步骤。
 
 +++
 
 +++**选择什么 ID 作为主要标识？**
 
-请参阅上面的内容。我们只为每个Customer Journey Analytics“人员”发送一个身份。
+请参阅上面的内容。每个Customer Journey Analytics只发送一个身份。
 
 +++
 
 +++**RTCP是否也处理Customer Journey Analytics消息？ Customer Journey Analytics是否可以通过受众共享将身份添加到配置文件身份图？**
 
-否。我们只为每个“人”发送一个标识，因此 RTCP 不会使用任何图边。
+否。每个用户仅发送一个身份，因此RTCP不会使用任何图形边缘。
 
 +++
 
@@ -194,9 +222,9 @@ Customer Journey Analytics通过管道将数据流式传输到RTCP中，并且�
 
 +++
 
-+++**用户是否可以配置每日、每周和每月的刷新时间？**
++++**是否可以配置每日、每周和每月刷新时间？**
 
-不可以，用户无法配置它们。
+否，用户无法配置刷新时间。
 
 +++
 

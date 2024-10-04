@@ -4,9 +4,9 @@ title: 关键量度摘要
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '584'
 ht-degree: 35%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 35%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_keymetricsummary_button"
 >title="关键量度摘要"
->abstract="创建类似于折线图、汇总变化图和汇总数字图组合的可视化图表。 使用此可视化图表可比较两个时间段之间量度的重要性趋势。"
+>abstract="创建折线图、汇总变化图和汇总数字图组合的可视化图表。 使用此可视化图表可比较两个时间段之间量度的重要性趋势。"
 
 <!-- markdownlint-enable MD034 -->
 

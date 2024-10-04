@@ -4,14 +4,14 @@ description: 了解 Customer Journey Analytics 中的受众发布的概念
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-source-git-commit: 4d71aaaaa0ac0162588dd6767e6c6209676dfc18
+source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 50%
+source-wordcount: '506'
+ht-degree: 42%
 
 ---
 
-# Customer Journey Analytics受众发布概述
+# 受众发布概述
 
 您现在可以在Adobe Experience Platform中创建并将在Customer Journey Analytics中发现的受众发布到[实时客户个人资料](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans)，以实现客户定位和个性化。
 
@@ -31,15 +31,15 @@ ht-degree: 50%
 
 **过滤器**：一组规则，通过某个时段的一组数据评估这组规则时会生成一个数据子集。与其他支持服务结合使用时，可在创建受众的过程中使用过滤器。筛选器是在Customer Journey Analytics中定义和维护的。
 
-**筛选器**&#x200B;与&#x200B;**区段**：Customer Journey Analytics不使用“区段”的概念，而是使用“筛选器”。 虽然两者都是一组可能包含相似逻辑的规则，但它们会生成不同的输出。过滤器用于缩小数据集以用于分析用途。区段用于生成可用于激活的身份列表。区段会在实时客户档案中生成受众，而（仅凭）过滤器不会。Customer Journey Analytics受众发布是我们使用Customer Journey Analytics过滤器创建可被实时客户档案使用的受众的过程。
+**筛选器**&#x200B;与&#x200B;**区段**：Customer Journey Analytics不使用&#x200B;*区段*&#x200B;的概念，而是使用&#x200B;*筛选器*。 虽然两者都是一组可能包含相似逻辑的规则，但它们会生成不同的输出。过滤器用于缩小数据集以用于分析用途。区段用于生成可用于激活的身份列表。区段会在实时客户档案中生成受众，而（仅凭）过滤器不会。Customer Journey Analytics受众发布是我们使用Customer Journey Analytics过滤器创建可被实时客户档案使用的受众的过程。
 
 ## 权限
 
-* 管理员在 Adobe Admin Console 中被自动授予&#x200B;**[!UICONTROL 受众发布]**&#x200B;权限。
+* 管理员在Adobe Admin Console中被自动授予&#x200B;**[!UICONTROL 受众发布]**&#x200B;权限。
 
-* 管理员可以将此权限授予个人用户。
+* 管理员和产品配置文件管理员可以向个人用户授予&#x200B;**[!UICONTROL 受众创建]**&#x200B;和&#x200B;**[!UICONTROL 受众视图]**&#x200B;权限。 有关详细信息，请参阅[用户级访问控制](/help/technotes/access-control.md#user-level-access)。
 
-* 管理员还需要 Adobe Experience Platform 中的&#x200B;**[!UICONTROL 管理个人资料]**&#x200B;权限。
+* 管理员还需要Adobe Experience Platform中的&#x200B;**[!UICONTROL 管理配置文件]**&#x200B;权限。
 
 ## 数据治理和同意
 

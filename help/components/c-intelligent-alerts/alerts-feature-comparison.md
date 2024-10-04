@@ -3,9 +3,9 @@ description: 了解警报与Adobe Analytics的Customer Journey Analytics有何�
 title: 警报功能比较Customer Journey Analytics和Adobe Analytics
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '569'
 ht-degree: 5%
 
 ---
@@ -56,9 +56,8 @@ ht-degree: 5%
 
 * 在Analysis Workspace中打开一个项目，然后选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 创建警报]**。
 
-* 在Analysis Workspace中打开一个项目，然后使用以下快捷方式：
+* 在Analysis Workspace中打开项目，然后使用以下快捷方式： **[!UICONTROL *ctrl *]**+**[!UICONTROL * shift *]** + **[!UICONTROL *a *]**(Windows)或**[!UICONTROL * cmd *]** + **[!UICONTROL *shift *]**+**[!UICONTROL * a *]** (macOS)。
 
-  `ctrl (or cmd) + shift + a`
 
 
 
