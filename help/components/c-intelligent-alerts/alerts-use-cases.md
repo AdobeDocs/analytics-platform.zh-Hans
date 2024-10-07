@@ -3,14 +3,14 @@ description: 警报的用例。
 title: 警报用例
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 0%
 
 ---
 
-# 警报 — 用例
+# 警报用例
 
 您可以按照[创建警报](/help/components/c-intelligent-alerts/alert-builder.md)中的说明创建警报。
 
@@ -20,11 +20,6 @@ ht-degree: 0%
 
 您可以使用过滤器创建简单警报。 例如，为通过移动应用程序会话访问主页的访客定义会话数警报。
 
-<!-- 
-
-Update screenshots for better readability.
-
- -->
 
 ![](assets/alerts-example1.png)
 

@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '950'
 ht-degree: 86%
 
 ---
@@ -110,7 +110,7 @@ ht-degree: 86%
    + [执行基本分析](../analysis-workspace/perform-basic-analysis.md)
    + [执行高级分析](../analysis-workspace/perform-adv-analysis.md)
    + 项目 {#build-workspace-project}
-      + [项目概述](../analysis-workspace/build-workspace-project/freeform-overview.md)
+      + [概述](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [创建项目](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [打开项目](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [保存项目](../analysis-workspace/build-workspace-project/save-projects.md)
@@ -122,8 +122,8 @@ ht-degree: 86%
       + [热键（快捷方式）](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [调色板](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [视图密度](../analysis-workspace/build-workspace-project/view-density.md)
-   + 可视化图表 {#visualizations}
-      + [可视化图表概述](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
+   + 可视化 {#visualizations}
+      + [概述](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [管理数据源](../analysis-workspace/visualizations/t-sync-visualization.md)
       + [智能题注](../analysis-workspace/visualizations/intelligent-captions.md)
       + 自由格式表 {#freeform-table}
@@ -179,7 +179,7 @@ ht-degree: 86%
       + [下一个或上一个项目](../analysis-workspace/c-panels/next-previous.md)
       + [快速洞察](../analysis-workspace/c-panels/quickinsight.md)
    + 策划、共享和计划项目 {#curate-share}
-      + [“共享”菜单](../analysis-workspace/curate-share/send-schedule-files.md)
+      + [概述](../analysis-workspace/curate-share/send-schedule-files.md)
       + [策划项目](../analysis-workspace/curate-share/curate.md)
       + [共享项目](../analysis-workspace/curate-share/share-projects.md)
       + [创建可共享链接](../analysis-workspace/curate-share/shareable-links.md)
@@ -206,8 +206,8 @@ ht-degree: 86%
       + [管理要求](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [辅助功能](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
-+ Analytics 功能板{#cja-dashboards}
-   + [Analytics 功能板 — 概述](../mobile-app/home.md)
++ Analytics 功能板 {#cja-dashboards}
+   + [概述](../mobile-app/home.md)
    + [策划人任务](../mobile-app/curator.md)
    + [创建移动记分卡](../mobile-app/create-scorecard.md)
    + [管理移动记分卡](../mobile-app/manage-scorecard.md)
@@ -238,7 +238,7 @@ ht-degree: 86%
    + [常见问题解答](../guided-analysis/faq.md)
 
 + 组件 {#cja-components}
-   + [组件概述](../components/overview.md)
+   + [概述](../components/overview.md)
    + [使用 Analysis Workspace 中的组件](../components/use-components-in-workspace.md)
    + [添加组件描述](../components/add-component-descriptions.md)
    + 批注 {#annotations}
@@ -260,7 +260,7 @@ ht-degree: 86%
       + [高基数维度](../components/dimensions/high-cardinality.md)
    + [指标](../components/apply-create-metrics.md)
    + 过滤器 {#cja-filters}
-      + [过滤器概述](../components/filters/filters-overview.md)
+      + [概述](../components/filters/filters-overview.md)
       + [创建过滤器](../components/filters/create-filters.md)
       + [构建过滤器](../components/filters/filter-builder.md)
       + [快速过滤器](../components/filters/quick-filters.md)
@@ -274,8 +274,8 @@ ht-degree: 86%
       + [管理过滤器](../components/filters/manage-filters.md)
       + [运算符](../components/filters/operators.md)
    + 计算指标 {#cja-calcmetrics}
-      + [计算指标概述](../components/calc-metrics/calc-metr-overview.md)
-      + 计算指标工作流程 {#cm-workflow}
+      + [概述](../components/calc-metrics/calc-metr-overview.md)
+      + 计算量度工作流程 {#cm-workflow}
          + [创建计算量度](../components/calc-metrics/cm-workflow/cm-workflow.md)
          + [生成计算量度](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [查找量度](../components/calc-metrics/cm-workflow/cm-finding.md)
@@ -315,13 +315,13 @@ ht-degree: 86%
       + [管理导出日志](/help/components/exports/manage-export-logs.md)
       + [导出故障诊断](/help/components/exports/troubleshoot-exports.md)
    + 数据词典 {#data-dictionary}
-      + [数据词典概述](../components/data-dictionary/data-dictionary-overview.md)
+      + [概述](../components/data-dictionary/data-dictionary-overview.md)
       + [查看数据词典中的组件信息](../components/data-dictionary/view-data-dictionary.md)
       + [编辑数据词典中的组件条目](../components/data-dictionary/edit-entries-data-dictionary.md)
       + [监测数据词典健康状况](../components/data-dictionary/monitor-data-dictionary-health.md)
 
 + Report Builder {#cja-reportbuilder}
-   + [Report Builder 概述](../report-builder/report-buider-overview.md)
+   + [概述](../report-builder/report-buider-overview.md)
    + [Report Builder 设置](../report-builder/report-builder-setup.md)
    + [创建数据块](../report-builder/create-a-data-block.md)
    + [Report Builder 中心](../report-builder/report-builder-hub.md)

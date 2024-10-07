@@ -1,12 +1,12 @@
 ---
-title: 创建受众并将受众发布到实时客户档案
+title: 创建并发布受众
 description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: e131fd78ceee67a05a1ea7256e58b4b34ce44ae5
+source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
-source-wordcount: '1952'
+source-wordcount: '1948'
 ht-degree: 16%
 
 ---
@@ -100,7 +100,7 @@ ht-degree: 16%
 | **[!UICONTROL 名称]** | 受众的名称。 例如，`Really Interested in Potential Car Buyers` |
 | **[!UICONTROL 标记]** | 出于组织目的而要分配给受众的任何标记。 您可以选择一个或多个预先存在的标记或输入新标记。 |
 | **[!UICONTROL 描述]** | 受众的描述，用于区分其他受众。 例如，`Build an audience of really interested potential car buyers` |
-| **[!UICONTROL 刷新频率]** | 您刷新受众所要采用的频率。<p/>您可以选择 <ul><li>**[!UICONTROL 一次]**&#x200B;受众：一个无需刷新的受众（默认）。 例如，此选项可能有助于特定的一次性营销活动。<br/>您必须指定&#x200B;**[!UICONTROL 一次性日期范围]**。 您可以使用![日历](/help/assets/icons/Calendar.svg)输入日期范围。</li><li>正在刷新受众。 您可以从下列选项中进行选择：<ul><li>**[!UICONTROL 每4小时]**&#x200B;秒：每4小时刷新的受众。</li><li>**[!UICONTROL 每日]**：每天刷新的受众</li><li>**[!UICONTROL 每周]**：每周刷新的受众。</li><li>**[!UICONTROL 每月]**：每月刷新的受众</li></ul></li><br/>要刷新受众，您必须指定：<ul><li>**[!UICONTROL 刷新回顾窗口]**。 定义从今天开始评估受众的回顾天数。 您可以从选项中进行选择或定义自定义时间。 最长为90天。</li><li>**[!UICONTROL 过期日期]**：定义受众何时停止刷新。 您可以使用![日历](/help/assets/icons/Calendar.svg)选择日期。 默认值为创建日期开始 1 年。即将过期的受众的处理方式与即将过期的计划报表的处理方式类似。 管理员会在受众过期前一个月收到一封电子邮件。</li></ul> 请注意，根据您的Customer Journey Analytics权限，受众刷新限制为75到150次。</li></ul> |
+| **[!UICONTROL 刷新频率]** | 您刷新受众所要采用的频率。<p/>您可以选择 <ul><li>**[!UICONTROL 一次]**&#x200B;受众：一个无需刷新的受众（默认）。 例如，此选项可能有助于特定的一次性营销活动。<br/>您必须指定&#x200B;**[!UICONTROL 一次性日期范围]**。 您可以使用![日历](/help/assets/icons/Calendar.svg)输入日期范围。</li><li>正在刷新受众。 您可以从下列选项中进行选择：<ul><li>**[!UICONTROL 每4小时]**&#x200B;秒：每4小时刷新的受众。</li><li>**[!UICONTROL 每日]**：每天刷新的受众</li><li>**[!UICONTROL 每周]**：每周刷新的受众。</li><li>**[!UICONTROL 每月]**：每月刷新的受众</li></ul></li>要刷新受众，您必须指定：<ul><li>**[!UICONTROL 刷新回顾窗口]**。 定义从今天开始评估受众的回顾天数。 您可以从选项中进行选择或定义自定义时间。 最长为90天。</li><li>**[!UICONTROL 过期日期]**：定义受众何时停止刷新。 您可以使用![日历](/help/assets/icons/Calendar.svg)选择日期。 默认值为创建日期开始 1 年。即将过期的受众的处理方式与即将过期的计划报表的处理方式类似。 管理员会在受众过期前一个月收到一封电子邮件。</li></ul> 请注意，根据您的Customer Journey Analytics权限，受众刷新限制为75到150次。</li></ul> |
 | **[!UICONTROL 过滤器]** | 过滤器是受众的主要输入。从左侧![分段](/help/assets/icons/Segmentation.svg) **[!UICONTROL 筛选器]**&#x200B;面板将一个或多个筛选器拖放到筛选器区域。 您可以使用![搜索](/help/assets/icons/Search.svg) [!UICONTROL *搜索筛选器*]&#x200B;来搜索筛选器。 您最多可以添加 20 个过滤器。筛选器可以与&#x200B;**[!UICONTROL And]**&#x200B;或&#x200B;**[!UICONTROL Or]**&#x200B;运算符相连。<p>从Analysis Workspace中的可视化图表(例如自由格式表或历程画布)创建受众时，应用于面板或列的任何过滤器都会保留。 您可以删除任何自动应用的过滤器。</p> |
 | **[!UICONTROL 数据预览]** | 选择![信息](/help/assets/icons/Info.svg)以显示或隐藏所选日期范围的[数据预览](#data-preview)。 |
 

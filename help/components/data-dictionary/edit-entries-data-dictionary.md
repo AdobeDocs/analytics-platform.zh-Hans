@@ -1,17 +1,17 @@
 ---
 description: Analysis Workspace 中的数据词典允许用户对 Analysis Workspace 中的各种组件进行编目和跟踪，包括组件的预期用途、批准情况、重复情况等等。
-title: 编辑数据词典中的条目
+title: 编辑组件条目
 feature: Components
 role: Admin
 exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
-source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
+source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 60%
+source-wordcount: '317'
+ht-degree: 57%
 
 ---
 
-# 编辑数据词典中的组件条目
+# 编辑组件条目
 
 Customer Journey Analytics管理员可以在数据字典中编辑给定数据视图的组件条目。 所做的任何更改均对数据视图的所有用户可见。
 

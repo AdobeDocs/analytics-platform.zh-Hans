@@ -5,10 +5,10 @@ keywords: 产品分析
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: cfc48aea3f474fedece022898f224ee68fb2b649
+source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 91%
+source-wordcount: '1444'
+ht-degree: 83%
 
 ---
 
@@ -58,9 +58,9 @@ ht-degree: 91%
 
    ![Workspace左边栏](assets/workspace-left-rail.png){style="border:1px solid gray"}
 
-1. 将任何视图类型拖动到Workspace画布上，然后选择&#x200B;**[!UICONTROL 创建]**&#x200B;按钮以生成所需的分析。 您还可以将现有分析从&#x200B;**[!UICONTROL 已保存]**&#x200B;部分下拖到Workspace画布上。
+1. 将任何视图类型拖到Workspace画布上，然后选择&#x200B;**[!UICONTROL 创建&#x200B;*引导式分析&#x200B;*]**以生成所需的分析（例如：**[!UICONTROL 创建趋势&#x200B;]**）。 您还可以将现有分析从**[!UICONTROL 已保存&#x200B;]**部分下拖到Workspace画布上。
 
-   ![创建面板](assets/create-panel.png)
+   ![创建面板](assets/create-guided-analysis-panel.gif)
 
 ## 界面
 
@@ -71,8 +71,8 @@ ht-degree: 91%
 | 界面预览 | UI 元素 | 描述 |
 | --- | --- | --- |
 | ![查询边栏](assets/query-rail.png){style="border:1px solid gray"} | 查询边栏 | 通过选择构成分析的所需组件（事件、属性和区段）来配置您的“问题”。以下选项适用于所有视图类型，并且每个视图都可以使用其他设置。 <ul><li>**分析选择器**：可以切换到新的分析类型的下拉菜单。您的查询选择将会保持在新分析类型允许的限制内。</li><li>**视图选择器**：可根据所生成的查询切换到新视图（“答案”）的下拉菜单。您的查询选择将会保持在新视图类型允许的限制内。</li><li>**活动**：您要测量的事件。每种视图类型对您可以配置的事件数量实施不同的限制。</li><li>**过滤器**：使用“事件”或“区段”部分中的![过滤器](assets/filter.png)图标按特定属性缩小范围。选择属性后，标准过滤条件（例如[!UICONTROL 等于]、[!UICONTROL 包含]或[!UICONTROL 结束于]）和前 1000 个属性值都可用。</li><li>**计为**：要应用于所选事件的计数方法。</li><li>**区段**：您要测量的区段。每种视图类型对您可以配置的区段数量实施不同的限制。</li></ul> |
-| ![图表](assets/chart.png){style="border:1px solid gray"} | 图表 | 根据查询边栏和设置的输入返回的数据生成的可视化内容。您看到的可视化效果取决于图表上方的视图和设置。该图表还包括： <ul><li>**工具提示**：将鼠标悬停在任何图表数据点上可显示包含更多信息的工具提示。</li><li>**图例**：将鼠标悬停在图表图例系列上可查看可用的定义、关注该系列并暂时隐藏其他系列。单击图例中的系列可隐藏它。</li><li>**注释**：适用的[注释](../components/annotations/overview.md)在可视化和图例之间可见。它以注释的配置颜色显示为![注释图标](assets/annotation.png)图标。随时间显示数据的视图类型将![注释图标](assets/annotation.png)图标置于配置的日期或日期范围下。不随时间显示数据的视图类型在图表的右下角显示![注释图标](assets/annotation.png)图标。</li><li>**单击操作**：通过左键单击任何数据点来显示可用的下一步操作。选项包括&#x200B;**保存区段**。</li></ul> |
-| ![表格](assets/table.png){style="border:1px solid gray"} | 表格 | 根据查询边栏和设置的输入内容返回的数据的表格表示形式。表中的列取决于图表上方的视图类型。该表还包括： <ul><li>**点击操作**：通过切换每行中的![显示隐藏图标](assets/hide-in-chart.png)图标来隐藏或显示图表系列。单击&#x200B;**[!UICONTROL 更多]**&#x200B;菜单可以执行其他操作。选项包括&#x200B;**保存区段**。</li></ul> |
+| ![图表](assets/chart.png){style="border:1px solid gray"} | 图表 | 根据查询边栏和设置的输入返回的数据生成的可视化内容。您看到的可视化效果取决于图表上方的视图和设置。该图表还包括： <ul><li>**工具提示**：将鼠标悬停在任何图表数据点上可显示包含更多信息的工具提示。</li><li>**图例**：将鼠标悬停在图表图例系列上可查看可用的定义、关注该系列并暂时隐藏其他系列。单击图例中的系列可隐藏它。</li><li>**注释**：适用的[注释](../components/annotations/overview.md)在可视化和图例之间可见。它以注释的配置颜色显示为![注释图标](assets/annotation.png)图标。随时间显示数据的视图类型将![注释图标](assets/annotation.png)图标置于配置的日期或日期范围下。不随时间显示数据的视图类型在图表的右下角显示![注释图标](assets/annotation.png)图标。</li><li>**选择操作**：通过选择任何数据点来公开可用的后续操作。 选项包括&#x200B;**保存区段**。</li></ul> |
+| ![表格](assets/table.png){style="border:1px solid gray"} | 表格 | 根据查询边栏和设置的输入内容返回的数据的表格表示形式。表中的列取决于图表上方的视图类型。该表还包括： <ul><li>**选择操作**：通过切换每行中的![显示隐藏图标](assets/hide-in-chart.png)图标来隐藏或公开图表系列。 通过选择&#x200B;**[!UICONTROL 更多]**&#x200B;菜单，可以使用其他操作。 选项包括&#x200B;**保存区段**。</li></ul> |
 | ![可视化设置](assets/visualization-settings.png){style="border:1px solid gray"} | 可视化设置 | 图表上方的选项允许您提出下一个问题，并自定义图表和表格返回数据的方式。以下选项适用于所有视图类型，并且每个视图都可以使用其他设置。 <ul><li>**图表设置**：微调图表和表格的显示内容。可用选项取决于所选视图。</li><li>**日期范围**：用于确定分析的日期范围的日程表选择器。您还可以选择趋势视图的时间间隔，例如每日、每周或每月。</li><li>**洞察**：上下文的洞察取决于您查看的分析。这些见解为当前的分析提供了洞察结果。如果有多个洞察，您可以使用右侧的箭头查看它们。您可以使用右上角的灯泡图标切换此框的可见性。</li></ul> |
 | ![菜单](assets/menu.png){style="border:1px solid gray"} |  菜单 | 引导式分析右上角的命令为您的分析提供总体操作。<ul><li>**数据视图选择器**：更改分析使用的数据视图。当您更改数据视图时，查询边栏中的可用组件也会更改。</li><li>**复制链接**：将分析链接复制到剪贴板。系统会提示您在共享之前进行保存。</li><li>**共享**：打开共享模式，其中包含用于共享给个人用户或群组的更多选项。您可以与其他用户分享分析，或生成链接与任何人分享。</li><li>**保存**：保存分析。如果您要保存新的分析，则会出现一个模式窗口，要求输入名称和描述。</li><li>**另存为**：将分析与当前分析分开保存，创建副本。将会出现一个模式窗口，要求输入新名称和描述。</li><li>**在 Workspace 中打开**：在 Analysis Workspace 中重新创建当前的引导式分析。Workspace 项目会在新选项卡中创建，以防止在引导式分析中出现中断。它是分析的副本，打开后不会与原始引导式分析保持同步。当您想要将任务移交给分析师团队，或者想要比引导式分析更近一步分析数据时，请使用此命令。</li><li>**复制到剪贴板**：将图表图形复制到剪贴板，以便粘贴到其他应用程序中。图形中不包含查询边栏和表格。</li><li>**下载 PNG**：将图表图形下载为  `.png`。图形中不包含查询边栏和表格。</li><li>**下载 CSV**：将表数据下载为  `.csv`。查询边栏和图表不包含在文件中。</li></ul> |
 
@@ -86,8 +86,8 @@ ht-degree: 91%
 | --- | --- |
 | [!UICONTROL CJA 附加功能] | 趋势：使用情况、趋势：频率、漏斗：阻力、漏斗：转化趋势、留存：留存率、用户增长：活跃、用户增长：净增长 |
 | [!UICONTROL CJA 基础] | 趋势：使用情况 |
-| [!UICONTROL CJA 选择 ] | 基础视图 + 趋势：使用情况、趋势：频率、漏斗：阻力、漏斗：转化趋势、留存：留存率、用户增长：活跃、用户增长：净增长 |
-| [!UICONTROL CJA Prime ] | 选择查看次数 + 用户流：时间线、功能矩阵：参与度、影响：发布、影响：首次使用 |
+| [!UICONTROL CJA 选择 ] | 基础视图+趋势：频率，漏斗：摩擦，漏斗：转化趋势，维系率：保留率，用户增长：活动，用户增长：净增长 |
+| [!UICONTROL CJA Prime ] | 选择视图+用户流：时间线，功能矩阵：参与，影响：发布，影响：首次使用 |
 | [!UICONTROL CJA Ultimate] | 最佳视图 |
 
 {style="table-layout:auto"}
@@ -97,9 +97,11 @@ ht-degree: 91%
 1. 登录到 [Adobe Admin Console](https://adminconsole.adobe.com)。
 1. 在产品列表中选择 **[!UICONTROL Customer Journey Analytics]**。
 1. 为您要编辑的权限选择所需的产品配置文件。
-1. 单击&#x200B;**[!UICONTROL 权限]**&#x200B;选项卡，然后单击[!UICONTROL 报告工具]下的&#x200B;**[!UICONTROL 编辑]**。
-1. 单击 [!UICONTROL 可用权限项目]列表中&#x200B;**[!UICONTROL Guided Analysis Access]**&#x200B;旁边的加号图标，这会将其添加到[!UICONTROL 包含的权限项目]列表中。
-1. 单击&#x200B;**[!UICONTROL 保存]**。
+1. 选择&#x200B;**[!UICONTROL 权限]**&#x200B;选项卡，然后单击[!UICONTROL 报告工具]下的&#x200B;**[!UICONTROL 编辑]**。
+1. 在[!UICONTROL 可用权限项]的列表中选择&#x200B;**[!UICONTROL 引导式分析访问]**&#x200B;旁边的![AddCircle](/help/assets/icons/AddCircle.svg)，以将其添加到[!UICONTROL 包含的权限项]的列表。
+1. 选择&#x200B;**[!UICONTROL 保存]**。
+
+有关详细信息，请参阅[用户级访问权限](/help/technotes/access-control.md#user-level-access)。
 
 >[!TIP]
 >

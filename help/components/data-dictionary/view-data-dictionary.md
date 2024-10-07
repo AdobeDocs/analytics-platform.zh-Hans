@@ -1,17 +1,17 @@
 ---
 description: Analysis Workspace 中的数据词典允许用户对 Analysis Workspace 中的各种组件进行编目和跟踪，包括组件的预期用途、批准情况、重复情况等等。
-title: 查看数据词典
+title: 查看组件信息
 feature: Components
 role: User, Admin
 exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
-source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
+source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 75%
+source-wordcount: '315'
+ht-degree: 73%
 
 ---
 
-# 查看数据词典中的组件信息
+# 查看组件信息
 
 “数据词典”允许您查看有关组件的信息，包括组件描述、相似组件、组件经常使用的其他组件等等。
 

@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: cfc48aea3f474fedece022898f224ee68fb2b649
+source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1479'
 ht-degree: 13%
 
 ---
@@ -34,8 +34,8 @@ Analysis Workspace允许您快速构建分析以收集见解，然后与其他�
 
 | 位置 | 名称和功能 |
 |:---------:|----------|
-| ?? | 包含项目名称、用于访问功能的菜单结构、用于返回到“项目”列表的按钮![ChevronLeft](/help/assets/icons/ChevronLeft.svg)以及用于共享Workspace项目的&#x200B;**[!UICONTROL 共享]**&#x200B;按钮。 <br/>随时选择项目的名称（例如：示例项目）以更改名称。 <br/>选择![星形大纲](/help/assets/icons/StarOutline.svg)以将您的项目添加为收藏项目![星形](/help/assets/icons/Star.svg)。 |
-| ?? | **按钮面板：**&#x200B;包含用于访问Analysis Workspace的[功能](#features)键的按钮：<br/>![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL 面板]**<br/>![引导式分析](/help/assets/icons/GuidedAnalysis.svg)**[!UICONTROL &#x200B;引导式分析]**<br/>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **[!UICONTROL 可视化图表]**<br/>![策划](/help/assets/icons/Curate.svg)**[!UICONTROL &#x200B;组件]**<br/>![视图列表](/help/assets/icons/ViewList.svg) **[!UICONTROL 目录]**<br/>![书签](/help/assets/icons/Bookmark.svg)**[!UICONTROL &#x200B;数据字典&#x200B;]** |
+| ?? | 包含项目名称、用于访问功能的菜单结构、用于返回到“项目”列表的按钮![ChevronLeft](/help/assets/icons/ChevronLeft.svg)以及用于[共享您的Workspace项目](/help/analysis-workspace/curate-share/share-projects.md)的&#x200B;**[!UICONTROL 共享]**&#x200B;按钮。 <br/>随时选择项目的名称（例如：新建项目）以更改名称。 <br/>选择![星形大纲](/help/assets/icons/StarOutline.svg)以将您的项目标记为收藏项目![星形](/help/assets/icons/Star.svg)。 |
+| ?? | **按钮面板：**&#x200B;包含用于访问Analysis Workspace的[功能](#features)键的按钮：<ul><li>![网页](/help/assets/icons/WebPage.svg) [[!UICONTROL 面板]](/help/analysis-workspace/c-panels/panels.md)</li><li>![引导分析](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL 引导分析]](/help/guided-analysis/overview.md)</li><li>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL 可视化图表]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![策划](/help/assets/icons/Curate.svg) [[!UICONTROL 组件]](/help/components/overview.md)</li><li>![ViewList](/help/assets/icons/ViewList.svg) [[!UICONTROL 目录]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![书签](/help/assets/icons/Bookmark.svg) [[!UICONTROL 数据字典]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
 | ?? | **左侧面板：**&#x200B;此区域包含单独的面板、可视化图表、组件或列表。 内容取决于在按钮面板中选择的按钮。 |
 | ?? | **画布：**&#x200B;从左侧面板拖动内容以生成项目的主区域。 当您添加面板、向面板添加可视化图表并向可视化图表添加组件时，项目会动态更新。 您可以创建多个面板，并在每个面板中创建多个可视化图表。<br/>每个面板都基于所选的数据视图。 所选数据视图确定量度和维度等可用组件。 有关详细信息，请参阅[面板 — 数据视图](/help/analysis-workspace/c-panels/panels.md#data-view)。 |
 
@@ -45,7 +45,7 @@ Analysis Workspace的主要功能可通过按钮面板使用：
 
 | 图标 | 功能 | 描述 |
 |:---:|---|---|
-| ![网页](/help/assets/icons/WebPage.svg) | **[!UICONTROL 面板]** | [“面板”](/help/analysis-workspace/c-panels/panels.md)可以包含许多表格和可视化图表，用于在项目中对分析进行组织和整理。Analysis Workspace 中提供的许多面板都可以基于一些用户输入来生成整套分析。在按钮面板上，选择![WebPage](/help/assets/icons/WebPage.svg)以查看可用面板的完整列表。 |
+| ![网页](/help/assets/icons/WebPage.svg) | **[!UICONTROL 面板]** | [“面板”](/help/analysis-workspace/c-panels/panels.md)可以包含许多表格和可视化图表，用于在项目中对分析进行组织和整理。Analysis Workspace 中提供的许多面板都可以基于一些用户输入来生成整套分析。 |
 | ![引导式分析](/help/assets/icons/GuidedAnalysis.svg) | **[!UICONTROL 引导式分析]** | [引导式分析](../guided-analysis/overview.md)允许您通过引导式工作流自助提供有关客户历程的高质量数据和见解。 您可以创建要包含在Workspace项目中的分析，也可以包含之前保存的现有分析。 |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | **[!UICONTROL 可视化图表]** | [可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)（如条形图或折线图）可用于直观地呈现数据。 在最左侧的面板中，选择中间的&#x200B;**[!UICONTROL 可视化图表]**&#x200B;图标，以查看所有可用的可视化图表。 |
 | ![策划](/help/assets/icons/Curate.svg) | **[!UICONTROL 组件]** | [组件](/help/components/overview.md)包含以下元素：<ul><li>![Dimension](/help/assets/icons/Dimensions.svg) [Dimension](/help/components/dimensions/overview.md)</li><li>![事件](/help/assets/icons/Event.svg) [量度](/help/components/apply-create-metrics.md)</li><li>![分段](/help/assets/icons/Segmentation.svg) [筛选器](/help/components/filters/filters-overview.md)</li><li>![日历](/help/assets/icons/Calendar.svg) [日期范围](/help/components/date-ranges/overview.md)</li></ul> |
