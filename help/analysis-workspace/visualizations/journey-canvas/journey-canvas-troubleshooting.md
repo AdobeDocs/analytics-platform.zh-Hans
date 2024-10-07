@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 2fc2bd660b017140b8dfa660cf71054af9efb87e
+source-git-commit: cbe713c08269fd3cc4e1076181020ff3fdc947b3
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
@@ -40,15 +40,15 @@ ht-degree: 0%
 
 ![历程的百分比高于前一个节点](assets/journey-canvas-higher-percentage.png)
 
-以下方案中使用的历程使用以下设置进行配置：
+以下方案中使用的历程配置有这些设置：
 
 * 将&#x200B;**[!UICONTROL 人员]**&#x200B;设置为容器
 
 * **[!UICONTROL Event]**&#x200B;设置为主要量度
 
-#### 场景1 — 用户A遵循第一个会话中的历程路径，然后仅遵循后续会话中的后续节点
+#### 场景1：用户A遵循第一个会话中的历程路径。 在后续会话中，用户有一个事件仅与后面的节点匹配。
 
-假设用户A访问网站并完成历程（节点1：“访问网站”>节点2：“查看产品A”>节点3：“结账”）。 由于用户A已完成历程，因此事件将计入历程的每个节点。
+假设用户A访问网站并完成历程（节点1：“访问网站”>节点2：“查看产品A”>节点3：“结账”）。 由于用户A具有按顺序匹配历程每个节点的事件，因此事件将计入历程的每个节点上。
 
 现在，假设用户A在以后的会话中再次访问网站。 由于用户A已通过遵循历程路径在上一会话中完成了历程，这意味着只要用户A具有的事件与历程中的任何节点匹配 — 即使用户A未在其当前会话中遵循历程路径 — 事件就会计入历程的相关节点中。 例如，如果用户A签出，则在“签出”节点中会计入一个事件。 这会导致“检出”节点上的百分比和数量高于前一个节点“查看产品A”上的百分比和数量。
 
@@ -58,11 +58,11 @@ ht-degree: 0%
 
 <!-- The time allotted for users to move along the path is determined by the container setting. Because "Person" is selected as the container setting in this example, people who followed the journey's path in one session (moving from Node 1 to Node 2 and to Node 3) met the criteria of the journey. On any subsequent visits to the site, any event they have that matches any node on the journey is counted on that node. -->
 
-#### 场景2 — 用户B退出历程
+#### 场景2：用户B退出历程
 
 假设用户B访问网站但未完成历程（访问网站，查看产品B，然后签出）。 在这种情况下，事件计入历程的开始节点“访问站点”，但事件不计入其余节点，并且用户B退出历程。 即使用户B已签出，事件也不会计入第三个节点（“签出”）中，因为用户B在签出之前未通过查看产品A完成历程。
 
-这是因为仅当人员遵循历程的“最终路径”时，才会计算每个节点的事件，这意味着仅当人员最终从一个节点移动到另一个节点时，才会计算事件，而不考虑在这两个节点之间发生的任何事件。
+这是因为仅当用户遵循历程的“最终路径”时，才会为每个节点计算事件。 这意味着仅当人员最终从一个节点移动到另一个节点时，才会计入事件，而不考虑在这两个节点之间发生的任何事件。
 
 ### 历程具有收敛到单个节点的多个路径
 
