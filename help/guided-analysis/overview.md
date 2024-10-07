@@ -5,10 +5,10 @@ keywords: 产品分析
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
+source-git-commit: c403a660e1d60b1ee2e5552d615dffc2b52930a4
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 83%
+source-wordcount: '1454'
+ht-degree: 82%
 
 ---
 
@@ -84,11 +84,11 @@ ht-degree: 83%
 
 | 包 | 可用视图 |
 | --- | --- |
-| [!UICONTROL CJA 附加功能] | 趋势：使用情况、趋势：频率、漏斗：阻力、漏斗：转化趋势、留存：留存率、用户增长：活跃、用户增长：净增长 |
-| [!UICONTROL CJA 基础] | 趋势：使用情况 |
-| [!UICONTROL CJA 选择 ] | 基础视图+趋势：频率，漏斗：摩擦，漏斗：转化趋势，维系率：保留率，用户增长：活动，用户增长：净增长 |
-| [!UICONTROL CJA Prime ] | 选择视图+用户流：时间线，功能矩阵：参与，影响：发布，影响：首次使用 |
-| [!UICONTROL CJA Ultimate] | 最佳视图 |
+| [!UICONTROL Customer Journey Analytics加载项] | 趋势：使用情况、趋势：频率、漏斗：阻力、漏斗：转化趋势、留存：留存率、用户增长：活跃、用户增长：净增长 |
+| [!UICONTROL Customer Journey Analytics基础] | 趋势：使用情况 |
+| [!UICONTROL Customer Journey Analytics选择] | 基础视图+趋势：频率，漏斗：摩擦，漏斗：转化趋势，维系率：保留率，用户增长：活动，用户增长：净增长 |
+| [!UICONTROL Customer Journey AnalyticsPrime] | 选择视图+用户流：时间线，功能矩阵：参与，影响：发布，影响：首次使用 |
+| [!UICONTROL Customer Journey AnalyticsUltimate] | 最佳视图 |
 
 {style="table-layout:auto"}
 
