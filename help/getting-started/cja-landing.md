@@ -4,10 +4,10 @@ description: Customer Journey Analytics 登陆页面。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 0325b48e7144ac3e334ab57448b9adba9fcea21d
-workflow-type: ht
-source-wordcount: '878'
-ht-degree: 100%
+source-git-commit: ba7b16bd7bae75c3ecb72797236405519d361921
+workflow-type: tm+mt
+source-wordcount: '820'
+ht-degree: 96%
 
 ---
 
@@ -28,6 +28,13 @@ ht-degree: 100%
 AI 助手是一种对话体验，允许从业者快速执行任务——无论是理解概念、解决问题还是搜索信息。它还允许非专家执行专家任务并提高整体工作质量。
 
 [![图像](assets/learn-more-button.svg)](/help/ai-assistant.md)
+
+
+>[!TAB 引导式分析]
+
+现在，引导式分析可直接从Analysis Workspace中使用，它使用户能够从面板、可视化图表和引导式分析创建具有综合见解的功能板。
+
+[![图像](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
 
 >[!TAB 警报]
 
@@ -72,27 +79,6 @@ BI 扩展允许 SQL 访问您在 Customer Journey Analytics 中定义的数据�
 
 *_您必须拥有 Select 包或更高版本才能使用 BI 扩展。_*
 
-
-<!--
->[!TAB Improved Audience Publising] 
-
-Audiences that are published from Customer Journey Analytics are now available in the new **Audiences** section in Adobe Experience Platform. Audiences are now available in Experience Platform seconds after they are published from Customer Journey Analytics. Improved sorting and filter options in Experience Platform for Customer Journey Analytics audiences. 
-
-[![image](assets/learn-more-button.svg)](/help/components/audiences/publish.md)
-
--->
-
->[!TAB 预测]
-
-预测是 Analysis Workspace 的一项功能，用于以任何支持的时间粒度（每小时、每天、每周、每月和每年）预测标准量度或计算量度。预测仅适用于与时间序列相关的数据。
-
-[![图像](assets/learn-more-button.svg)](/help/analysis-workspace/c-forecast/forecasting.md)
-
->[!TAB 新文档]
-
-新的文档部分现已发布于：<ul><li>摘要数据用例和 B2B 示例用例。</li><li>如何从 Adobe Analytics 升级到 Customer Journey Analytics。</li><li>数据导出用例和所需的 Experience Platform 和 Customer Journey 功能。 </li></ul>选择 **[!UICONTROL 了解详情]** 以了解此更新和其他文档更新。
-
-[![图像](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
 
 >[!ENDTABS]
 
