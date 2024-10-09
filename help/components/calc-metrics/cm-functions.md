@@ -4,10 +4,10 @@ description: 计算量度生成器允许您将统计和数学函数应用于生�
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: ecf8156df0b31e81f1a5546829c6100831b2a600
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 97%
+source-wordcount: '1060'
+ht-degree: 32%
 
 ---
 
@@ -20,130 +20,417 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->当 [!DNL metric] 被标识为函数中的参数时，还允许使用其他量度表达式。例如，[!DNL MAXV(metrics)] 还允许使用 [!DNL MAXV(PageViews + Visits).]
+>当 [!DNL metric] 被标识为函数中的参数时，还允许使用其他指标表达式。例如，[COLUMN MAXIMUM(METRICS)](#column-maximum)还允许[COLUMN MAXIMUM(PageViews + Visits)](#column-maximum)。
 
 
-## table 函数与 row 函数
+## table函数与row函数
 
-在 table 函数中，输出对于表中的每一行都是相同的。在 row 函数中，输出对于表中的每一行都是不同的。
+在 table 函数中，输出对于表中的每一行都是相同的。行函数是指其中表的每一行的输出都不同的函数。 在适用和相关的情况下，使用函数类型对函数进行注释。
+
+
+## 绝对值
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 绝对值（量度）]**
+
+[!BADGE 行]{type="Neutral"}
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 要为其计算绝对值的指标。 |
+
+
+## 列最大值
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 列最大值（量度，include_zeros）]**
+
+返回某指标列的一组维度元素中的最大值。MAXV 可以在一个列（指标）内跨维度元素垂直估值。
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 至少需要一个量度，但可将任意数量的量度作为参数。 |
+| include_zeros | 是否在计算中包括零值。 |
+
+
+## 列最小值
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 列最小值（量度，include_zeros）]**
+
+返回某指标列的一组维度元素中的最小值。MINV 可以在一个列（指标）内跨维度元素垂直估值。
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 至少需要一个量度，但可将任意数量的量度作为参数。 |
+| include_zeros | 是否在计算中包括零值。 |
+
+
+## 列总和
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 列总和（量度）]**
+
+添加列中某指标的所有数值（跨维度元素）。
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 至少需要一个量度，但可将任意数量的量度作为参数。 |
+
+
+## 计数
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 计数（量度）]**
+
+[!BADGE 表格]{type="Neutral"}
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 您希望计数的量度。 |
+
+
+## 指数
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 指数（量度）]**
+
+[!BADGE 行]{type="Neutral"}
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 应用于基础e的指数。 |
+
+
+## 平均值
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL MEAN(metric， include_zeros)]**
+
+[!BADGE 表格]{type="Neutral"}
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 要为其计算平均值的指标。 |
+| include_zeros | 是否在计算中包括零值。 |
+
+
+## 中间值
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN(metric， include_zeros)]**
+
+[!BADGE 表格]{type="Neutral"}
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 您希望计算中间值的指标。 |
+| include_zeros | 是否在计算中包括零值。 |
+
+
+## 取模
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL MODULO(metric_X， metric_Y)]**
+
+使用带余除法，将 x 除以 y 之后返回余数。
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 您希望除的第一个量度。 |
+| metric_Y | 您要除的第二个量度。 |
+
+### 示例
+
+返回值具有与输入值相同的符号（或为零）。
+
+```
+MODULO(4,3) = 1
+MODULO(-4,3) = -1
+MODULO(-3,3) = 0
+```
+
+为确保始终获得正数，请使用
+
+```
+MODULO(MODULO(x,y)+y,y)
+```
+
+## 百分点值
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 百分位数(metric， k， include_zeros)]**
+
+[!BADGE 表格]{type="Neutral"}
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 介于 0 到 100 之间（包括 0 和 100）的百分位数值。 |
+| k | 用于定义相对位置的指标列。 |
+| include_zeros | 是否在计算中包括零值。 |
 
 
 
-## 绝对值 (Row)
+## 幂运算符
 
-返回某数字的绝对值。某数字的绝对值是一个具有正值的数字。
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 乘幂运算符(metric_X， metrix_Y)]**
+
+返回x的幂y。
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 您希望提升到metric_Y次幂的量度。 |
+| metric_Y | 您希望将metric_X提升到的幂。 |
+
+
+## 四分位数
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE(metric， quartile， include_zeros)]**
+
+[!BADGE 表格]{type="Neutral"}当QUARTILE分别等于`0` （零）、`2`和`4`时，[COLUMN MINIMUM](#column-minimum)、[MEDIAN](#median)和[COLUMN MAXIMUM](#column-maximum)返回与[QUARTILE](#quartile)相同的值。
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 您要为其计算四分位数值的指标。 |
+| 四分位数 | 指示要返回的四分位数值。 |
+| include_zeros | 是否在计算中包括零值。 |
+
+
+## 轮次
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ROUND(metric， number)]**
+
+不带&#x200B;*number*&#x200B;参数的四舍五入与带&#x200B;*number*&#x200B;参数为0的四舍五入相同，也就是四舍五入到最接近的整数。  使用&#x200B;*number*&#x200B;参数时，ROUND将返回小数点右边的&#x200B;*number*&#x200B;位数。  如果&#x200B;*number*&#x200B;为负数，则返回小数点左边的0。
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 要舍入的量度。 |
+| 数字 | 要返回的小数点右侧的位数。 （如果为负，则在小数点左边返回零）。 |
+
+### 示例
+
+```
+ROUND( 314.15, 0) = 314
+ROUND( 314.15, 1) = 314.1
+ROUND( 314.15, -1) = 310
+ROUND( 314.15, -2) = 300
+```
+
+
+## 行计数
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 行计数()]**
+
+返回给定列的行计数（一个维度中报告的独特元素计数）。超过&#x200B;*个唯一值*&#x200B;将被计为1。
+
+
+## 行最大值
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 行MAX（指标，include_zeros）]**
+
+每行列数的最大值。
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 至少需要一个量度，但可将任意数量的量度作为参数。 |
+| include_zeros | 是否在计算中包括零值。 |
+
+## 行最小值
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 行最小值（量度，include_zeros）]**
+
+每行列数的最小值。
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 至少需要一个量度，但可将任意数量的量度作为参数。 |
+| include_zeros | 是否在计算中包括零值。 |
+
+
+
+## 行总和
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 行SUM（量度，include_zeros）]**
+
+每一行中所有列的总和。
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 至少需要一个量度，但可将任意数量的量度作为参数。 |
+
+
+## 平方根
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 平方根（量度，include_zeros）]**
+
+[!BADGE 行]{type="Neutral"}
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 要为其计算平方根的指标。 |
+
+
+## 标准偏差
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 标准偏差（量度，include_zeros）]**
+
+[!BADGE 表格]{type="Neutral"}
+
+| 参数 | 描述 |
+|---|---|
+| | 要为其计算标准偏差的指标。 |
+| include_zeros | 是否在计算中包括零值。 |
+
+
+## 方差
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE(metric， include_zeros)]**
+
+[!BADGE 表格]{type="Neutral"}
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 要为其计算方差的量度。 |
+| include_zeros | 是否在计算中包括零值。 |
+
+
+VARIANCE 的方程式为：
+
+![](assets/variance_eq.png){width="100"}
+
+其中&#x200B;*x*&#x200B;为样本平均值，[MEAN（*个度量*）](#mean)和&#x200B;*n*&#x200B;为样本大小。
+
+
+要计算方差，您需要查看整列数字。 首先，从该数字列表计算平均值。获得平均值后，请浏览每个条目并执行以下操作：
+
+1. 从数字中减去平均值。
+
+1. 将结果求平方。
+
+1. 再相加求和。
+
+一旦您迭代了整列，就会得到一个总计。 然后，将该总数除以列中的项目数。得出的数值就是列变量。它是单个数字。但它会显示为一列数字。
+
+在以下三项列的示例中：
+
+| 列 |
+|:---:|
+| 1 |
+| 2 |
+| 3 |
+
+此列的平均值为 2。列的变量为((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3) = 2/3。
+
+
+
+
+<!--
+
+## Absolute Value (Row)
+
+Returns the absolute value of a number. The absolute value of a number is the number with a positive value.
 
 ```
 ABS(metric)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric* | 您希望求绝对值的指标。 |
+|  *metric* | The metric for which you want the absolute value.  |
 
-## 列最大值
+## Column Maximum
 
-返回某指标列的一组维度元素中的最大值。MAXV 可以在一个列（指标）内跨维度元素垂直估值。
+Returns the largest value in a set of dimension elements for a metric column. MAXV evaluates vertically within a single column (metric) across dimension elements.
 
 ```
 MAXV(metric)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric* | 您希望计算的指标。 |
+|  *metric* | A metric that you would like to have evaluated.  |
 
-## 列最小值
+## Column Minimum 
 
-返回某指标列的一组维度元素中的最小值。MINV 可以在一个列（指标）内跨维度元素垂直估值。
+Returns the smallest value in a set of dimension elements for a metric column. MINV evaluates vertically within a single column (metric) across dimension elements.
 
 ```
 MINV(metric)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric* | 您希望计算的指标。 |
+|  *metric* | A metric that you would like to have evaluated.  |
 
-## 列总和
+## Column Sum 
 
-添加列中某指标的所有数字值（跨维度元素）。
+Adds all of the numeric values for a metric within a column (across the elements of a dimension).
 
 ```
 SUM(metric)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric* | 您希望求总值或总和的指标。 |
+|  *metric* | The metric for which you want the total value or sum.  |
 
-## 计数 (Table)
+## Count (Table) 
 
-返回列中某指标的非零值的数量或计数（某个维度内报告的独特元素数）。
+Returns the number, or count, of non-zero values for a metric within a column (the number of unique elements reported within a dimension).
 
 ```
 COUNT(metric)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric* | 您希望计数的指标。 |
+|  *metric* | The metric that you want to count.  |
 
-## 指数 (Row)
+## Exponent (Row) 
 
-返回 *e* 的给定次幂。常数 *e* 等于 2.71828182845904，它是自然对数的底数。EXP 是 LN 的反函数，LN 是某数字的自然对数。
+Returns *e* raised to the power of a given number. The constant *e* equals 2.71828182845904, the base of the natural logarithm. EXP is the inverse of LN, the natural logarithm of a number.
 
 ```
 EXP(metric)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric* | 应用于底数 *e* 的指数。 |
+|  *metric* | The exponent applied to the base *e*.  |
 
-## 求幂
+## Exponentiation 
 
-幂运算符
-
-
-pow(x，y) = x<sup>y</sup> = x *x* x*... （y次）
+Power Operator
 
 
-## 平均值 (Table)
+pow(x,y) = x<sup>y</sup> = x*x*x*… (y times)
 
-返回列中某指标的算术平均值或平均数。
+
+## Mean (Table) 
+
+Returns the arithmetic mean, or average, for a metric in a column.
 
 ```
 MEAN(metric)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric* | 您希望求平均数的指标。 |
+|  *metric* | The metric for which you want the average.  |
 
-## 中间值 (Table)
+## Median (Table) 
 
-返回列中某指标的中间值。中间值是指位于一组数字正中间的那个数字，也就是说有一半数字的值大于或等于该中间值，还有一半数字的值小于或等于该中间值。
+Returns the median for a metric in a column. The median is the number in the middle of a set of numbers—that is, half the numbers have values that are greater than or equal to the median, and half are less than or equal to the median.
 
 ```
 MEDIAN(metric)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric* | 您希望求中间值的指标。 |
+|  *metric* | The metric for which you want the median.  |
 
-## 取模
+## Modulo 
 
-使用欧几里得除法求得 col1 / col2 的余数。
+The remainder of col1 / col2, using Euclidean division.
 
-返回 x 除以 y 之后的余数。
+Returns the remainder after dividing x by y.
 
 ```
 x = floor(x/y) + modulo(x,y)
 ```
 
-返回值具有与输入值相同的符号（或为零）。
+The return value has the same sign as the input (or is zero).
 
 ```
 modulo(4,3) = 1 
@@ -151,15 +438,15 @@ modulo(-4,3) = -1
 modulo(-3,3) = 0
 ```
 
-要始终获得正数，请使用
+To always get a positive number, use 
 
 ```
 modulo(modulo(x,y)+y,y)
 ```
 
-## 百分位数 (Table)
+## Percentile (Table) 
 
-返回某指标的 k-th 百分位数形式的值。您可以使用此函数确立一个接受阈值。例如，您可以决定检查其分数大于第 90 个百分位数的维度元素。
+Returns the k-th percentile of values for a metric. You can use this function to establish a threshold of acceptance. For example, you can decide to examine dimension elements who score above the 90  percentile.
 
 ```
 PERCENTILE(metric,k)
@@ -168,25 +455,25 @@ PERCENTILE(metric,k)
 <table id="table_35CD840ACFB44CD9979881DB8823CC53"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 参数 </th> 
-   <th colname="col2" class="entry"> 描述 </th> 
+   <th colname="col1" class="entry"> Argument </th> 
+   <th colname="col2" class="entry"> Description </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <i>metric</i> </td> 
-   <td colname="col2"> 用于定义相对位置的指标列。 </td> 
+   <td colname="col2"> The metric column that defines relative standing. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>k </p> </td> 
-   <td colname="col2"> 介于 0 到 100 之间（包括 0 和 100）的百分位数值。 </td> 
+   <td colname="col2"> The percentile value in the range 0 to 100, inclusive. </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 四分位数 (Table)
+## Quartile (Table) 
 
-返回某指标的四分位数形式的值。例如，四分位数可用于查找在获得的收入方面排名前 25% 的产品。当 quart 分别等于 0（零）、2 和 4 时，MINV、MEDIAN 和 MAXV 可返回与 QUARTILE 相同的值。
+Returns the quartile of values for a metric. For example, quartiles can be used to find the top 25% of products driving the most revenue. MINV, MEDIAN, and MAXV return the same value as QUARTILE when quart is equal to 0 (zero), 2, and 4, respectively.
 
 ```
 QUARTILE(metric,quart)
@@ -195,37 +482,37 @@ QUARTILE(metric,quart)
 <table id="table_64EA3DAAE77541439D59FAF0353F83A2"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 参数 </th> 
-   <th colname="col2" class="entry"> 描述 </th> 
+   <th colname="col1" class="entry"> Argument </th> 
+   <th colname="col2" class="entry"> Description </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <i>metric</i> </td> 
-   <td colname="col2"> 您希望求四分位数值的指标。 </td> 
+   <td colname="col2"> The metric for which you want the quartile value. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>quart </p> </td> 
-   <td colname="col2"> 指示要返回哪个*值。 </td> 
+   <td colname="col2"> Indicates which *value to return. </td> 
   </tr> 
  </tbody> 
 </table>
 
-&#42;如果 *quart* = 0，则 QUARTILE 会返回最小值。如果 *quart* = 1，则 QUARTILE 返回第一个四分位数（第 25 个百分位数）。如果 *quart* = 2，则 QUARTILE 返回第一个四分位数（第 50 个百分位数）。如果 *quart* = 3，则 QUARTILE 返回第一个四分位数（第 75 个百分位数）。如果 *quart* = 4，则 QUARTILE 返回最大值。
+&#42;If *quart* = 0, QUARTILE returns the minimum value. If *quart* = 1, QUARTILE returns the first quartile (25 percentile). If *quart* = 2, QUARTILE returns the first quartile (50 percentile). If *quart* = 3, QUARTILE returns the first quartile (75 percentile). If *quart* = 4, QUARTILE returns the maximum value.
 
-## 轮次
+## Round 
 
-返回给定值的最接近整数。例如，如果您要避免在报告收入时出现货币小数位数，而某产品的收入为 $569.34，则使用公式 Round(*Revenue*) 可将收入四舍五入为最接近的美元数 $569。报告 $569.51 的产品将四舍五入为最接近的美元数 $570。
+Returns the nearest integer for a given value. For example, if you want to avoid reporting currency decimals for revenue and a product has $569.34, use the formula Round( *Revenue*) to round revenue to the nearest dollar, or $569. A product reporting $569.51 will be round to the nearest dollar, or $570.
 
 ```
 ROUND(metric)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *数字* | 您希望舍入的指标。 |
+|  *number* | The metric you want to round.  |
 
-在没有位数参数的情况下四舍五入，与在位数参数为 0 的情况下四舍五入是相同的，都会四舍五入为最接近的整数。使用位数参数，可在小数点右侧返回多位数字。如果位数为负，则在小数点左侧返回 0。
+Round without a digits parameter is the same as round with a digits parameter of 0, namely round to the nearest integer. With a digits parameter it returns that many digits to the right of the decimal. If digits is negative, it returns 0's to the left of the decimal.
 
 ```
 round( 314.15, 0) = 314 
@@ -234,43 +521,43 @@ round( 314.15, -1) = 310
 round( 314.15, -2) = 300
 ```
 
-## 行计数
+## Row Count 
 
-返回给定列的行数（某个维度内报告的独特元素数）。“超出的独特数”将记为 1。
+Returns the count of rows for a given column (the number of unique elements reported within a dimension). "Uniques exceeded" is counted as 1.
 
-## 行最大值
+## Row Max 
 
-每行列数的最大值。
+The maximum of the columns in each row.
 
-## 行最小值
+## Row Min 
 
-每行列数的最小值。
+The minimum of the columns in each row.
 
-## 行总和
+## Row Sum
 
-每行列数的总值。
+The sum of the columns of each row.
 
-## 平方根 (Row)
+## Square Root (Row) 
 
-返回某数字的正平方根。某数字的平方根是该数字二分之一次幂的值。
+Returns the positive square root of a number. The square root of a number is the value of that number raised to the power of 1/2.
 
 ```
 SQRT(metric)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *数字* | 您希望求平方根的指标。 |
+|  *number* | The metric for which you want the square root.  |
 
-## 标准偏差 (Table)
+## Standard Deviation (Table) 
 
-基于数据的抽样群体，返回变量的标准偏差或平方根。
+Returns the standard deviation, or square root of the variance, based on a sample population of data.
 
-STDEV 的方程式为：
+The equation for STDEV is:
 
 ![](assets/std_dev.png)
 
-其中，x 为抽样平均值 (*metric*)，*n* 为抽样大小。
+where x is the sample mean (*metric*) and *n* is the sample size.
 
 ```
 STDEV(metric)
@@ -279,45 +566,45 @@ STDEV(metric)
 <table id="table_8BCF2E4B02434AABAAD026FB3C4E8B2F"> 
  <tbody> 
   <tr> 
-   <td> <b> 参数</b> </td> 
-   <td> <b> 描述</b> </td> 
+   <td> <b> Argument</b> </td> 
+   <td> <b> Description</b> </td> 
   </tr> 
   <tr> 
    <td> <b> <i> metric</i> </b> </td> 
-   <td> <p> 您希望求标准偏差的量度。 </p> </td> 
+   <td> <p> The metric for which you want for standard deviation. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 变量 (Table)
+## Variance (Table) 
 
-基于数据的抽样群体返回变量。
+Returns the variance based on a sample population of data.
 
-VARIANCE 的方程式为：
+The equation for VARIANCE is:
 
 ![](assets/variance_eq.png)
 
-其中，x 为抽样平均值 MEAN(*metric*)，*n* 为抽样大小。
+where x is the sample mean, MEAN(*metric*), and *n* is the sample size.
 
 ```
 VARIANCE(metric)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric* | 您希望求变量的指标。 |
+|  *metric* | The metric for which you want the variance.  |
 
-为了计算变量，需要查看整列数字。首先，从该数字列表计算平均值。得出平均值后，浏览每个条目，然后执行以下操作：
+In order to calculate a variance you look at an entire column of numbers. From that list of numbers you first calculate the average. Once you have the average you go through each entry and do the following:
 
-1. 从数字中减去平均值。
+1. Subtract the average from the number.
 
-2. 将结果求平方。
+2. Square the result.
 
-3. 再相加求和。
+3. Add that to the total.
 
-对整列进行迭代后，您将得到一个总数。然后，将该总数除以列中的项目数。得出的数值就是列变量。它是单个数字。但它会显示为一列数字。
+Once you have iterated over the entire column you have a single total. You then divide that total by the number of items in the column. That number is the variance for the column. It is a single number. It is, however, displayed as a column of numbers.
 
-对于包含三个项目的列：
+In case of a three-item column:
 
 1
 
@@ -325,4 +612,6 @@ VARIANCE(metric)
 
 3
 
-此列的平均值为 2。此列的变量将为 ((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3 = 2/3。
+The average of this column is 2. The variance for the column will be ((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3 = 2/3.
+
+-->

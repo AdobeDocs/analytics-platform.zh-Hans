@@ -4,10 +4,10 @@ description: 可通过以下方法访问这些函数：选中函数下拉列表�
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: ecf8156df0b31e81f1a5546829c6100831b2a600
 workflow-type: tm+mt
-source-wordcount: '3036'
-ht-degree: 97%
+source-wordcount: '3100'
+ht-degree: 20%
 
 ---
 
@@ -15,118 +15,1093 @@ ht-degree: 97%
 
 通过在“组件”面板中选择![效果](/help/assets/icons/Effect.svg)**[!UICONTROL 函数]**&#x200B;列表下的&#x200B;**[!UICONTROL 显示所有]**&#x200B;来访问这些函数。 向下滚动以查看高级函数的列表。
 
-## table 函数与 row 函数
+## table函数与row函数
 
-在 table 函数中，输出对于表中的每一行都是相同的。在 row 函数中，输出对于表中的每一行都是不同的。
+在 table 函数中，输出对于表中的每一行都是相同的。行函数是指其中表的每一行的输出都不同的函数。 在适用和相关的情况下，使用函数类型对函数进行注释。
 
-## Include-Zeros 参数的含义
+## include-zeros参数的含义是什么？
 
-它可告知计算中是否包含零。零有时表示“无”，有时又十分重要。
+它可告知计算中是否包含零。有时零表示&#x200B;*无*，但有时它很重要。
 
-例如，如果您有收入量度，然后又将页面查看次数量度添加到报表中，则您的收入会突然多出一些全部为零的行。您也许不希望这影响到收入列中已有的任何 MEAN、MIN、QUARTILE 等计算。在这种情况下，您需要检查 include-zeros 参数。
+例如，如果您有一个收入指标，然后向报表中添加了一个页面查看次数量度，那么您的收入会突然出现更多的行，这些行全部为零。 您可能不希望该额外的量度影响收入列中的任何[MEAN](cm-functions.md#mean)、[MIN](cm-functions.md#row-min)、[QUARTILE](cm-functions.md#quartile)以及更多计算。 在这种情况下，您需要检查`include-zeros`参数。
 
-另一方面，如果您有两个感兴趣的量度，则因为其中一个量度的某些行是零而说该量度具有更高的平均值或最小值，这是不合理的，因此，在这种情况下，您不需要检查参数是否包含零。
+另一种情况是，您有两个感兴趣的量度，而其中一个量度的平均值或最小值较高，因为某些行为零。  在这种情况下，您可以选择不检查参数以包含零。
 
 
-## AND
+## “逻辑与”
 
-返回其参数的值。使用 NOT 确保值不等于某一特定值。
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL AND(logical_test)]**
+
+
+结合。 不等于零则视为true，等于零则视为false。 输出为0 (false)或1 (true)。
+
+
+| 参数 | 描述 |
+|---|---|
+| logical_test | 至少需要一个参数，但可以接受任意数量的参数。 可计算为TRUE或FALSE的任何值或表达式 |
+
+## 非重复近似计数
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 近似非重复计数（维度）]**
+
+
+针对所选维度，返回其维度项目的非重复近似计数。
+
+
+| 参数 | 描述 |
+|---|---|
+| 维度 | 要为其计算近似非重复项目计数的维度 |
+
+### 示例
+
+此函数的常见用例是当您希望获得大致数量的客户时。
+
+
+
+
+## 反余弦
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 反余弦（量度）]**
+
+
+[!BADGE 行]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 所需角度的余弦从–1到1 |
+
+
+
+## 反正弦
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 反正弦（量度）]**
+
+
+[!BADGE 行]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 您希望从–1到1的角度的正弦值 |
+
+
+
+## 反正切
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 反正切（量度）]**
+
+
+[!BADGE 行]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 您希望从–1到1的角度的正切 |
+
+
+
+## Cdf-T
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-T（量度，数字）]**
+
+
+返回自由度为n的学生t分布中，随机变量z分数小于列值的概率。
+
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 您希望求学生t分布的累积分布函数的指标 |
+| 数字 | 学生t分布累积分布函数的自由度 |
+
+### 示例
+
+```
+CDF-T(-∞, n) = 0
+CDF-T(∞, n) = 1
+CDF-T(3, 5) ? 0.99865
+CDF-T(-2, 7) ? 0.0227501
+CDF-T(x, ∞) ? cdf_z(x)
+```
+
+
+## Cdf-Z
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-Z（量度，数字）]**
+
+
+返回正态分布中随机变量z分数小于列值的概率。
+
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 您希望使用标准正态分布的累积分布函数的指标 |
+
+### 示例
+
+```
+CDF-Z(-∞) = 0
+CDF-Z(∞) = 1
+CDF-Z(0) = 0.5
+CDF-Z(2) ? 0.97725
+CDF-Z(-3) ? 0.0013499
+```
+
+## 上限
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 上限（量度）]**
+
+
+[!BADGE 行]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 您希望舍入的指标 |
+
+
+## 置信度（下限）
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 置信度(normalizing-container， success-metric， control， importance-treshold)]**
+
+使用[时间均匀中心极限理论和渐近置信序列](http://arxiv.org/pdf/2103.06476)中所述的WASKR方法计算随时有效置信度&#x200B;**lower**。
+
+置信度是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。 置信度越高，表明支持控制变量和非控制变量具有相同性能的假设的证据越少。
+
+| 参数 | 描述 |
+| --- | --- |
+| normalization-container | 运行测试的基础（人员、会话或事件）。 |
+| success-metric | 用户正在将变量与之比较的一个或多个指标。 |
+| 控件 | 试验中所有其他变量要与之进行比较的变量。输入控制变量维度项的名称。 |
+| 显着性阈值 | 此函数中的阈值默认设置为 95%。 |
+
+## 置信度（上限）
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 置信度(normalizing-container， success-metric， control， importance-treshold)]**
+
+使用[时间均匀中心极限理论和渐近置信序列](http://arxiv.org/pdf/2103.06476)中所述的WASKR方法计算随时有效置信度&#x200B;**upper**。
+
+置信度是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。 置信度越高，表明支持控制变量和非控制变量具有相同性能的假设的证据越少。
+
+| 参数 | 描述 |
+| --- | --- |
+| normalization-container | 运行测试的基础（人员、会话或事件）。 |
+| success-metric | 用户正在将变量与之比较的一个或多个指标。 |
+| 控件 | 试验中所有其他变量要与之进行比较的变量。输入控制变量维度项的名称。 |
+| 显着性阈值 | 此函数中的阈值默认设置为 95%。 |
+
+
+## 余弦
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 余弦（量度）]**
+
+[!BADGE 行]{type="Neutral"}
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 您希望求余弦的角度（弧度） |
+
+
+## 立方根
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 多维数据集根（量度）]**
+
+
+返回某数字的正立方根。某数字的立方根是该数字三分之一次幂的值。
+
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 要为其计算立方根的度量 |
+
+
+
+## 累积
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 累积（数字，指标）]**
+
+返回列x的最后n个元素的总和。如果n > 0，则对最后n个元素或x求和。如果n &lt; 0，则对上述元素求和。
+
+| 参数 | 描述 |
+| --- | --- |
+| 数字 | 要返回总和的最后N行数。 如果N &lt;= 0，则使用所有以前的行。 |
+| 量度 | 您希望求累计总和的指标。 |
+
+### 示例
+
+| 日期 | 收入 | 累积（0，收入） | 累计（2，收入） |
+|------|------:|--------------:|--------------:|
+| 5 月 | 500美元 | 500美元 | 500美元 |
+| 6 月 | 200美元 | 700美元 | 700美元 |
+| 7 月 | $400 | 1100美元 | $600 |
+
+
+## 累积（平均）
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 累积平均值（数值，指标）]**
+
+返回列x最后n个元素的平均值。如果n > 0，则对最后n个元素或x求和。如果n &lt; 0，则对上述元素求和。
+
+| 参数 | 描述 |
+| --- | --- |
+| 数字 | 最后N行数返回的平均值。 如果N &lt;= 0，则使用所有以前的行。 |
+| 量度 | 您希望求累积平均数的指标。 |
+
+>[!NOTE]
+>
+>此函数不适用于费率量度，例如每人收入。 此函数计算比率的平均值，而不是总计最后N行的收入并总计最后N行的人员数，然后将二者相除。 <br/>请改用[**[!UICONTROL 累积（收入）]**](#cumulative) ![除](/help/assets/icons/Divide.svg) [**[!UICONTROL 累积（人员）]**](#cumulative)。
+>
+
+
+## 等于
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 等于()]**
+
+
+等于。 输出为0 (false)或1 (true)。
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | |
+| metric_Y | |
+
+### 示例
+
+`Metric 1 = Metric 2`
+
+
+
+## 指数回归：相关系数
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 指数回归：相关系数(metric_X， metric_Y， include_zeros)]**
+
+
+[!BADGE 表格]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 要与metric_Y关联的量度 |
+| metric_Y | 要与metric_X关联的量度 |
+| include_zeros | 是否在计算中包括零值 |
+
+## 指数回归：预测的Y
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 指数回归：预测的Y(metric_X， metric_Y， include_zeros)]**
+
+
+[!BADGE 行]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 要指定为自变数的量度。 |
+| metric_Y | 要指定为因变数的量度。 |
+| include_zeros | 是否在计算中包括零值 |
+
+
+## 指数回归：截距
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 指数回归：截距(metric_X， metric_Y， include_zeros)]**
+
+
+[!BADGE 表格]{type="Neutral"}
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 要指定为依赖数据的量度 |
+| metric_Y | 要指定为独立数据的量度 |
+| include_zeros | 是否在计算中包括零值 |
+
+
+## 指数回归：斜率
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 指数回归：斜率(metric_X， metric_Y， include_zeros)]**
+
+
+[!BADGE 表格]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 要指定为依赖数据的量度 |
+| metric_Y | 要指定为独立数据的量度 |
+| include_zeros | 是否在计算中包括零值 |
+
+
+## Floor
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL FLOOR(metric_X， metric_Y， include_zeros)]**
+
+[!BADGE 行]{type="Neutral"}
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 要舍入的量度。 |
+
+
+## 大于
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 大于()]**
+
+
+输出为0 (false)或1 (true)。
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | |
+| metric_Y | |
+
+### 示例
+
+`Metric 1 > Metric 2`
+
+## 大于或等于
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 大于或等于()]**
+
+
+大于或等于。 输出为0 (false)或1 (true)。
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X |  |
+| metric_Y |  |
+
+### 示例
+
+`Metric 1 >= Metric 2`
+
+
+
+## 双曲余弦
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 双曲余弦（量度）]**
+
+
+[!BADGE 行]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 您希望求双曲余弦的角度（弧度） |
+
+
+
+## 双曲正弦
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 双曲正弦（量度）]**
+
+
+[!BADGE 行]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 您希望求得其双曲正弦的角（弧度） |
+
+
+
+## 双曲正切
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 双曲正切（量度）]**
+
+
+[!BADGE 行]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 您希望求其双曲正切的角（弧度） |
+
+
+## 如果
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL IF(logical_test， value_if_true， value_if_false)]**
+
+
+[!BADGE 行]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| logical_test | 必填。可计算为TRUE或FALSE的任何值或表达式 |
+| value_if_true | 当logical_test参数的计算结果为TRUE时，您希望返回的值。 （如果未包含此参数，则此参数默认为 0。） |
+| value_if_false | 当 logical_test 参数的计算结果为 FALSE 时，您希望返回的值。（如果不包含，则此参数默认为 0。） |
+
+
+## 小于
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 小于()]**
+
+
+输出为0 (false)或1 (true)。
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | |
+| metric_Y | |
+
+
+### 示例
+
+`Metric 1 < Metric 2`
+
+## 小于或等于
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 小于或等于()]**
+
+小于或等于。 输出为0 (false)或1 (true)。
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | |
+| metric_Y | |
+
+### 示例
+
+`Metric 1 <= Metric 2`
+
+
+
+## 线性回归：相关系数
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 线性回归：相关系数(metric_X， metric_Y， include_zeros)]**
+
+
+[!BADGE 表格]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 要与metric_Y关联的量度 |
+| metric_Y | 要与metric_X关联的量度 |
+| include_zeros | 是否在计算中包括零值 |
+
+
+
+## 线性回归：截距
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 线性回归：截距(metric_X， metric_Y， include_zeros)]**
+
+
+[!BADGE 表格]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 要指定为依赖数据的量度 |
+| metric_Y | 要指定为独立数据的量度 |
+| include_zeros | 是否在计算中包括零值 |
+
+
+
+## 线性回归：预测的Y
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 线性回归：预测的Y(metric_X， metric_Y， include_zeros)]**
+
+
+[!BADGE 行]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 要指定为依赖数据的量度 |
+| metric_Y | 要指定为独立数据的量度 |
+| include_zeros | 是否在计算中包括零值 |
+
+
+
+## 线性回归：斜率
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 线性回归：斜率(metric_X， metric_Y， include_zeros)]**
+
+
+[!BADGE 表格]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 要指定为依赖数据的量度 |
+| metric_Y | 要指定为独立数据的量度 |
+| include_zeros | 是否在计算中包括零值 |
+
+
+## 以10为底的对数
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 以10为底的日志（量度）]**
+
+
+[!BADGE 行]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 您希望以10为底的对数的正实数 |
+
+
+## 对数回归：相关系数
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 对数回归：相关系数(metric_X， metric_Y， include_zeros)]**
+
+
+[!BADGE 表格]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 要与metric_Y关联的量度 |
+| metric_Y | 要与metric_X关联的量度 |
+| include_zeros | 是否在计算中包括零值 |
+
+
+## 对数回归：截距
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 对数回归：截距(metric_X， metric_Y， include_zeros)]**
+
+
+[!BADGE 表格]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 要指定为依赖数据的量度 |
+| metric_Y | 要指定为独立数据的量度 |
+| include_zeros | 是否在计算中包括零值 |
+
+
+
+## 对数回归：预测的Y
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 对数回归：预测的Y(metric_X， metric_Y， include_zeros)]**
+
+
+[!BADGE 行]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 要指定为依赖数据的量度 |
+| metric_Y | 要指定为独立数据的量度 |
+| include_zeros | 是否在计算中包括零值 |
+
+
+
+## 对数回归：斜率
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 对数回归：斜率(metric_X， metric_Y， include_zeros)]**
+
+
+[!BADGE 表格]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 要指定为依赖数据的量度 |
+| metric_Y | 要指定为独立数据的量度 |
+| include_zeros | 是否在计算中包括零值 |
+
+
+
+## 自然对数
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 自然日志（量度）]**
+
+
+返回某数字的自然对数。自然对数以常数 e (2.71828182845904) 为底数。LN 是 EXP 函数的反函数。
+
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 您希望求自然对数的正实数 |
+
+
+
+## 不为
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL NOT（逻辑）]**
+
+
+否定是一种布尔值。 输出为0 (false)或1 (true)。
+
+
+| 参数 | 描述 |
+|---|---|
+| 逻辑 | 必填。可计算为TRUE或FALSE的值或表达式 |
+
+
+
+## 不等于
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 不等于()]**
+
+
+不等于。 输出为0 (false)或1 (true)。
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | |
+| metric_Y | |
+
+### 示例
+
+`Metric 1 != Metric 2`
+
+
+## 或
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL OR(logical_test)]**
+
+
+[!BADGE 行]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| logical_test | 至少需要一个参数，但可以接受任意数量的参数。 可计算为TRUE或FALSE的任何值或表达式 |
+
 
 >[!NOTE]
 >
 >0（零）表示 False，而任何其他值均表示 True。
 
+
+## Pi
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL PI()]**
+
+返回Pi：3.14159...
+
+
+## 幂回归：相关系数
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 幂回归：相关系数(metric_X， metric_Y， include_zeros)]**
+
+
+[!BADGE 表格]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 要与metric_Y关联的量度 |
+| metric_Y | 要与metric_X关联的量度 |
+| include_zeros | 是否在计算中包括零值 |
+
+
+
+## 幂回归：截距
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 幂回归：截距(metric_X， metric_Y， include_zeros)]**
+
+
+[!BADGE 表格]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 要指定为依赖数据的量度 |
+| metric_Y | 要指定为独立数据的量度 |
+| include_zeros | 是否在计算中包括零值 |
+
+
+## 幂回归：预测的Y
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 幂回归：预测的Y(metric_X， metric_Y， include_zeros)]**
+
+
+[!BADGE 行]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 要指定为依赖数据的量度 |
+| metric_Y | 要指定为独立数据的量度 |
+| include_zeros | 是否在计算中包括零值 |
+
+
+
+## 幂回归：斜率
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 幂回归：斜率(metric_X， metric_Y， include_zeros)]**
+
+
+[!BADGE 表格]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 要指定为依赖数据的量度 |
+| metric_Y | 要指定为独立数据的量度 |
+| include_zeros | 是否在计算中包括零值 |
+
+
+
+## 二次回归：相关系数
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 二次回归：相关系数(metric_X， metric_Y， include_zeros)]**
+
+
+[!BADGE 表格]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 要与metric_Y关联的量度 |
+| metric_Y | 要与metric_X关联的量度 |
+| include_zeros | 是否在计算中包括零值 |
+
+## 二次回归：截距
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 二次回归：截距(metric_X， metric_Y， include_zeros)]**
+
+
+[!BADGE 表格]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 要指定为依赖数据的量度 |
+| metric_Y | 要指定为独立数据的量度 |
+| include_zeros | 是否在计算中包括零值 |
+
+
+## 二次回归：预测的Y
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 二次回归：预测的Y(metric_X， metric_Y， include_zeros)]**
+
+
+[!BADGE 行]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 要指定为依赖数据的量度 |
+| metric_Y | 要指定为独立数据的量度 |
+| include_zeros | 是否在计算中包括零值 |
+
+## 二次回归：斜率
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 二次回归：斜率(metric_X， metric_Y， include_zeros)]**
+
+
+[!BADGE 表格]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 要指定为依赖数据的量度 |
+| metric_Y | 要指定为独立数据的量度 |
+| include_zeros | 是否在计算中包括零值 |
+
+
+
+## 倒数回归：相关系数
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 倒数回归：相关系数(metric_X， metric_Y， include_zeros)]**
+
+
+[!BADGE 表格]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 要与metric_Y关联的量度 |
+| metric_Y | 要与metric_X关联的量度 |
+| include_zeros | 是否在计算中包括零值 |
+
+
+## 倒数回归：截距
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 倒数回归：截距(metric_X， metric_Y， include_zeros)]**
+
+
+[!BADGE 表格]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 要指定为依赖数据的量度 |
+| metric_Y | 要指定为独立数据的量度 |
+| include_zeros | 是否在计算中包括零值 |
+
+
+## 倒数回归：预测的Y
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 倒数回归：预测的Y(metric_X， metric_Y， include_zeros)]**
+
+
+[!BADGE 行]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 要指定为依赖数据的量度 |
+| metric_Y | 要指定为独立数据的量度 |
+| include_zeros | 是否在计算中包括零值 |
+
+
+## 倒数回归：斜率
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 倒数回归：斜率(metric_X， metric_Y， include_zeros)]**
+
+
+[!BADGE 表格]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| metric_X | 要指定为依赖数据的量度 |
+| metric_Y | 要指定为独立数据的量度 |
+| include_zeros | 是否在计算中包括零值 |
+
+
+
+
+## 正弦
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 正弦（量度）]**
+
+
+[!BADGE 行]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 您希望求正弦值的角度（弧度） |
+
+
+
+
+## T 分数
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL T-SCORE(metric， include_zeros)]**
+
+
+[MEAN](cm-functions.md#mean)的偏差除以标准偏差。 [Z分数](#z-score)的别名。
+
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 您希望求得T分数的指标 |
+| include_zeros | 是否在计算中包括零值 |
+
+
+## T 测试
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL T测试（度量、度、尾）]**
+
+
+执行尾长为 m 的 t 检验，其中 x 为 t 分数，n 为自由度。
+
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 要对其执行T测试的指标 |
+| 度 | 自由度 |
+| 尾部 | 用于执行T测试的尾的长度 |
+
+### 详细信息
+
+特征码为T-TEST(metric， degrees， tails)。 在下面，它只是调用&#x200B;***m*** ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[[!DNL CDF-T(-ABSOLUTE VALUE(tails), degrees)]](#cdf-t)**。 此函数类似于&#x200B;**[Z-TEST](#z-test)**&#x200B;函数，该函数运行&#x200B;***m*** ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[[!DNL CDF-Z(-ABSOLUTE VALUE(tails))]](#cdf-z)**。
+
+- ***m***&#x200B;是尾数。
+- ***n***&#x200B;是自由度，它应该是整个报告的常数数字，也就是说，不能逐行更改。
+- ***x***&#x200B;是T测试统计数据，通常是基于量度的公式（例如，**[Z-SCORE](#z-score)**），每行都对其进行评估。
+
+返回值是指在给定自由度和尾数的情况下，获得测试统计数据 x 的几率。
+
+**示例：**
+
+1. 用其查找离群值：
+
+   ```
+   T-TEST(Z-SCORE(bouncerate), ROW COUNT - 1, 2)
+   ```
+
+1. 将其与&#x200B;**[IF](#if)**&#x200B;结合使用，以忽略过高或过低的跳出率，并对其他所有方面的会话进行计数：
+
+   ```
+   IF(T-TEST(Z-SCORE(bouncerate), ROW COUNT - 1, 2) < 0.01, 0, sessions )
+   ```
+
+
+
+
+## 正切
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 正切（量度）]**
+
+
+返回给定角的正切。如果角以角度表示，则将该角乘以 PI( )/180。
+
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 您希望求正切的角度（弧度） |
+
+
+
+## Z分数
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL Z-SCORE(metric， include_zeros)]**
+
+
+[!BADGE 行]{type="Neutral"}
+
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 您希望求得Z分数的指标 |
+| include_zeros | 是否在计算中包括零值 |
+
+Z得分为0（零）意味着得分与平均值相同。 Z 分数可以为正数或负数，用于指示该分数在平均值之上还是之下，以及依据多少个标准偏差。
+
+Z 分数的方程式为：
+
+![](assets/z_score.png)
+
+其中&#x200B;***[!DNL x]***&#x200B;是原始分数，***[!DNL μ]***&#x200B;是群体平均值，***[!DNL σ]***&#x200B;是群体标准偏差。
+
+>[!NOTE]
+>
+>***[!DNL μ]*** (mu)和&#x200B;***[!DNL σ]*** (sigma)将自动从该量度中计算。
+
+
+
+## Z 测试
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL Z-TEST(metric_tails)]**
+
+
+执行n尾z检验，z分数为x。
+
+
+| 参数 | 描述 |
+|---|---|
+| 量度 | 要对其执行Z测试的指标 |
+| 尾部 | 用于执行Z测试的尾的长度 |
+
+>[!NOTE]
+>
+>假定值为正态分布。
+
+
+
+
+
+
+
+
+
+<!--
+
+
+
+## AND
+
+Returns the value of its argument. Use NOT to make sure that a value is not equal to one particular value.
+
+>[!NOTE]
+>
+>0 (zero) means False, and any other value is True.
+
 ```
 AND(logical_test1,[logical_test2],...)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *logical_test1* | 必需。任何可被计算为 TRUE 或 FALSE 的值或表达式。 |
-| *logical_test2* | 可选。您希望计算为 TRUE 或 FALSE 的其他条件。 |
+|  *logical_test1* | Required. Any value or expression that can be evaluated to TRUE or FALSE.  |
+|  *logical_test2* | Optional. Additional conditions that you want to evaluate as TRUE or FALSE  |
 
-## 非重复近似计数（维度）
+## Approximate Count Distinct (dimension)
 
-返回适用于所选维度的维度项目的非重复近似计数。该函数使用非重复近似计数的 HyperLogLog (HLL) 方法。该函数已配置为保证该值在 95% 的实际值的 5% 以内。
+Returns the approximated distinct count of dimension items for the selected dimension. The function uses the HyperLogLog (HLL) method of approximating distinct counts.&nbsp; It is configured to guarantee the value is within 5% of the actual value 95% of the time.
 
 ```
 Approximate Count Distinct (dimension)
 ```
 
-| 参数 |  |
+|  Argument  |  |
 |---|---|
-| *dimension* | 您想要的非重复近似项目计数的维度 |
+|  *dimension* | The dimension for which you want the approximate distinct item count.  |
 
-### 用例示例
+### Example Use Case
 
-Approximate Count Distinct (customer ID eVar) 是此函数的常见用例。
+Approximate Count Distinct (customer ID eVar) is a common use case for this function.
 
-新“近似客户”计算量度的定义：
+Definition for a new 'Approximate Customers' calculated metric:
 
-![显示客户ID (eVar1)的近似县别不同新维度定义](assets/approx-count-distinct.png)
+![Approximate county distinct new dimension definition showing Customer ID (eVar1)](assets/approx-count-distinct.png)
 
-以下表示在报告中使用“近似客户”量度的方式：
+This is how the "Approximate Customers" metric could be used in reporting:
 
-![显示独特访客和大约客户的自由格式表](assets/approx-customers.png)
+![Freeform Table showing Unique Visitors and Approximate Customers ](assets/approx-customers.png)
 
-### 比较计数函数
+### Comparing Count Functions
 
-Approximate Count Distinct() 是对 Count() 和 RowCount() 函数所做出的改进，因为创建的量度可用于任何维度报表，以呈现单独维度项目的近似计数。例如，“移动设备类型”报表中使用的客户 ID 计数。
+Approximate Count Distinct() is an improvement over Count() and RowCount() functions because the metric created can be used in any dimensional report to render an approximated count of items for a separate dimension. For example, a count of customer IDs used in a Mobile Device Type report.
 
-由于 Approximate Count Distinct() 使用了 HLL 方法，而 Count() 和 RowCount() 属于精确计数，因而此函数的准确性要略小于 Count() 和 RowCount()。
+This function will be marginally less accurate than Count() and RowCount() because it uses the HLL method, whereas Count() and RowCount() are exact counts.
 
-## 反余弦 (Row)
+## Arc Cosine (Row)
 
-返回某量度的反余弦。反余弦是一个其余弦为数字的角。返回的角为范围在 0（零）到 pi 之间的弧度。如果要将结果从弧度转换为角度，请将其乘以 180/PI( )。
+Returns the arccosine, or inverse of the cosine, of a metric. The arccosine is the angle whose cosine is number. The returned angle is given in radians in the range 0 (zero) to pi. If you want to convert the result from radians to degrees, multiply it by 180/PI( ).
 
 ```
 ACOS(metric)
 ```
 
-| 参数 |  |
+|  Argument  |  |
 |---|---|
-| *metric* | 所需角的余弦，其范围介于 -1 到 1 之间。 |
+|  *metric* | The cosine of the angle you want from -1 to 1. |
 
-## 反正弦 (Row)
+## Arc Sine (Row)
 
-返回某数字的反正弦。反正弦是一个其正弦为数字的角。返回的角为范围在 -pi/2 到 pi/2 之间的弧度。要以角度表示反正弦，请将结果乘以 180/PI( )。
+Returns the arcsine, or inverse sine, of a number. The arcsine is the angle whose sine is number. The returned angle is given in radians in the range -pi/2 to pi/2. To express the arcsine in degrees, multiply the result by 180/PI( ).
 
 ```
 ASIN(metric)
 ```
 
-| 参数 |  |
+|  Argument  |  |
 |---|---|
-| *metric* | 所需角的余弦，其范围介于 -1 到 1 之间。 |
+|  *metric* | The cosine of the angle you want from -1 to 1. |
 
-## 反正切 (Row)
+## Arc Tangent (Row)
 
-返回某数字的反正切。反正切是一个其正切为数字的角。返回的角为范围在 -pi/2 到 pi/2 之间的弧度。要以角度表示反正切，请将结果乘以 180/PI( )。
+Returns the arctangent, or inverse tangent, of a number. The arctangent is the angle whose tangent is number. The returned angle is given in radians in the range -pi/2 to pi/2. To express the arctangent in degrees, multiply the result by 180/PI( ).
 
 ```
 ATAN(metric)
 ```
 
-| 参数 |  |
+|  Argument  |  |
 |---|---|
-| *metric* | 所需角的余弦，其范围介于 -1 到 1 之间。 |
+|  *metric* | The cosine of the angle you want from -1 to 1. |
 
-## 指数回归：预测的 Y (Row)
+## Exponential Regression: Predicted Y (Row)
 
-计算预测的 y 值 (metric_Y)，假定已知的 x 值 (metric_X) 使用“最小二乘法”计算基于以下方程式的最佳拟合直线。
+Calculates the predicted y-values (metric_Y), given the known x-values (metric_X) using the "least squares" method for calculating the line of best fit based on .
 
 ```
 ESTIMATE.EXP(metric_X, metric_Y)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric_X* | 要指定为因变数的量度。 |
-| *metric_Y* | 要指定为自变数的量度。 |
+|  *metric_X* | A metric that you would like to designate as the dependent data.  |
+|  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
 ## Cdf-T
 
-返回在 n 自由度的学生 t 分布下，其 Z 分数小于 x 的值的百分比。
+Returns the percentage of values in a student's t-distribution with n degrees of freedom that have a z-score less than x.
 
 ```
 cdf_t( -∞, n ) = 0
@@ -138,7 +1113,7 @@ cdf_t( x, ∞ ) ? cdf_z( x )
 
 ## Cdf-Z
 
-返回在正态分布下，其 Z 分数小于 x 的值的百分比。
+Returns the percentage of values in a normal distribution that have a z-score less than x.
 
 ```
 cdf_z( -∞ ) = 0
@@ -146,612 +1121,517 @@ cdf_z( ∞ ) = 1
 cdf_z( 0 ) = 0.5
 cdf_z( 2 ) ? 0.97725
 cdf_z( -3 ) ? 0.0013499
-```
-
-## 向上取整 (Row)
-
-返回不小于给定值的最小整数。例如，如果您要避免在报告收入时出现货币小数位数，而某产品的收入为 $569.34，则使用公式 CEILING(*Revenue*) 可将收入向上舍入为最接近的美元数 $570。
 
 ```
-CEILING(metric)
-```
 
-| 参数 | 描述 |
-|---|---|
-| *metric* | 要舍入的量度。 |
+## Exponential Regression: Intercept (Table)
 
-## 置信度
-
-[!UICONTROL 置信度]是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。置信度越高，表明支持控制变量和非控制变量具有相同性能的假设的证据越少。
-
-```
-fx Confidence (normalizing-container, success-metric, control, significance-threshold)
-```
-
-| 参数 | 描述 |
-| --- | --- |
-| 标准化容器 | 运行测试的基础（人、会话或事件）。 |
-| 成功指标 | 用户正在将变量与之比较的一个或多个指标。 |
-| 控制 | 试验中所有其他变量要与之进行比较的变量。输入控制变量维度项目的名称。 |
-| 显著性阈值 | 此函数中的阈值默认设置为 95%。 |
-
-{style="table-layout:auto"}
-
-## 余弦 (Row)
-
-返回给定角的余弦。如果角以角度表示，则将该角乘以 PI( )/180。
-
-```
-COS(metric)
-```
-
-| 参数 | 描述 |
-|---|---|
-| *metric* | 您希望求余弦的弧度角。 |
-
-## 立方根
-
-返回某数字的正立方根。某数字的立方根是该数字三分之一次幂的值。
-
-```
-CBRT(metric)
-```
-
-| 参数 | 描述 |
-|---|---|
-| *metric* | 您希望求立方根的量度。 |
-
-## 累积
-
-返回最后 N 行的 x 总和（按维度排序，将哈希值用于基于字符串的字段）。
-
-如果 N &lt;= 0，则使用所有之前的行。由于它是按维度排序的，因此它仅对于具有自然顺序的维度（例如日期或路径长度）有用。
-
-```
-| Date | Rev  | cumul(0,Rev) | cumul(2,Rev) |
-|------+------+--------------+--------------|
-| May  | $500 | $500         | $500         |
-| June | $200 | $700         | $700         |
-| July | $400 | $1100        | $600         |
-```
-
-## 累积平均数
-
-返回最后 N 行的平均数。
-
-如果 N &lt;= 0，则使用所有之前的行。由于它是按维度排序的，因此它仅对于具有自然顺序的维度（例如日期或路径长度）有用。
-
->[!NOTE]
->
->使用收入/人员之类的比率量度时，它可能不会按预期工作：它会计算比率的平均值，而不是总计最后N行的收入并总计最后N行的人员数，然后将二者相除。 它使用的是
-
-```
-cumul(revenue)/cumul(person)
-```
-
-## 等于
-
-返回与某一数字或字符串值完全匹配的项目。
-
-## 指数回归_ 相关系数 (Table)
-
-返回相关系数 *r*，它介于回归方程式的两个量度列（*metric_A* 和 *metric_B*）之间。
-
-```
-CORREL.EXP(metric_X, metric_Y)
-```
-
-| 参数 | 描述 |
-|---|---|
-| *metric_X* | 您希望与 *metric_Y* 关联的量度。 |
-| *metric_Y* | 您希望与 *metric_X* 关联的量度。 |
-
-## 指数回归：截距 (Table)
-
-返回截距 *b*，它介于以下方程式的两个量度列（*metric_X* 和 *metric_Y*）之间。
+Returns the intercept, *b*, between two metric columns ( *metric_X* and *metric_Y*) for
 
 ```
 INTERCEPT.EXP(metric_X, metric_Y)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric_X* | 要指定为因变数的量度。 |
-| *metric_Y* | 要指定为自变数的量度。 |
+|  *metric_X* | A metric that you would like to designate as the dependent data.  |
+|  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
-## 指数回归：斜率 (Table)
+## Exponential Regression: Slope (Table)
 
-返回斜率 *a*，它介于以下方程式的两个量度列（*metric_X* 和 *metric_Y*）之间。
+Returns the slope, *a*, between two metric columns ( *metric_X* and *metric_Y*) for .
 
 ```
 SLOPE.EXP(metric_X, metric_Y)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric_X* | 要指定为因变数的量度。 |
-| *metric_Y* | 要指定为自变数的量度。 |
+|  *metric_X* | A metric that you would like to designate as the dependent data.  |
+|  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
-## 向下取整 (Row)
+## Floor (Row)
 
-返回不大于给定值的最大整数。例如，如果您要避免在报告收入时出现货币小数位数，而某产品的收入为 $569.34，则使用公式 FLOOR(*Revenue*) 可将收入向下舍入为最接近的美元数 $569。
+Returns the largest integer not greater than a given value. For example, if you want to avoid reporting currency decimals for revenue and a product has $569.34, use the formula FLOOR( *Revenue*) to round revenue down to the nearest dollar, or $569.
 
 ```
 FLOOR(metric)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric* | 您希望舍入的量度。 |
+|  *metric* | The metric you want to round.  |
 
-## 大于
+## Greater Than
 
-返回数字计数大于输入值的项目。
+Returns items whose numeric count is greater than the value entered.
 
-## 大于或等于
+## Greater Than or Equal
 
-返回数字计数大于或等于输入值的项目。
+Returns items whose numeric count is greater than or equal to the value entered.
 
-## 双曲余弦 (Row)
+## Hyperbolic Cosine (Row)
 
-返回某数字的双曲余弦。
+Returns the hyperbolic cosine of a number.
 
 ```
 COSH(metric)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric* | 您希望求双曲余弦的弧度角。 |
+|  *metric* | The angle in radians for which you want to find the hyperbolic cosine.  |
 
-## 双曲正弦 (Row)
+## Hyperbolic Sine (Row)
 
-返回某数字的双曲正弦。
+Returns the hyperbolic sine of a number.
 
 ```
 SINH(metric)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric* | 您希望求双曲正弦的弧度角。 |
+|  *metric* | The angle in radians for which you want to find the hyperbolic sine.  |
 
-## 双曲正切 (Row)
+## Hyperbolic Tangent (Row)
 
-返回某数字的双曲正切。
+Returns the hyperbolic tangent of a number.
 
 ```
 TANH(metric)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric* | 您希望求双曲正切的弧度角。 |
+|  *metric* | The angle in radians for which you want to find the hyperbolic tanget.  |
 
 ## IF (Row)
 
-IF 函数可在您指定的条件计算为 TRUE 时返回一个值，在该条件计算为 FALSE 时返回另一个值。
+The IF function returns one value if a condition you specify evaluates to TRUE, and another value if that condition evaluates to FALSE.
 
 ```
 IF(logical_test, [value_if_true], [value_if_false])
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *logical_test* | 必需。任何可被计算为 TRUE 或 FALSE 的值或表达式。 |
-| *[value_if_true]* | 您希望在 *logical_test* 参数计算为 TRUE 时返回的值。（如果未包含此参数，则此参数默认为 0。） |
-| *[value_if_false]* | 您希望在 *logical_test* 参数计算为 FALSE 时返回的值。（如果未包含此参数，则此参数默认为 0。） |
+|  *logical_test* | Required. Any value or expression that can be evaluated to TRUE or FALSE.  |
+|  *[value_if_true]* | The value that you want to be returned if the *logical_test* argument evaluates to TRUE. (This argument defaults to 0 if not included.)  |
+|  *[value_if_false]* | The value that you want to be returned if the *logical_test* argument evaluates to FALSE. (This argument defaults to 0 if not included.)  |
 
-## 小于
+## Less Than
 
-返回数字计数小于输入值的项目。
+Returns items whose numeric count is less than the value entered.
 
-## 小于或等于
+## Less Than or Equal
 
-返回数字计数小于或等于输入值的项目。
+Returns items whose numeric count is less than or equal to the value entered.
 
-## 提升
+## Lift
 
-返回某个特定变量在向控件变量进行转化时具有的提升。它是给定变量与基线之间的性能差异除以基线的性能，并以百分比表示。
+Returns the Lift a particular variant had in conversions over a control variant. It is the difference in performance between a given variant and the baseline, divided by the performance of the baseline, expressed as a percentage. 
 
 ```
 fx Lift (normalizing-container, success-metric, control)
 ```
 
-| 参数 | 描述 |
+| Argument | Description |
 | --- | --- |
-| 标准化容器 | 运行测试的基础（人、会话或事件）。 |
-| 成功指标 | 用户正在将变量与之比较的一个或多个指标。 |
-| 控制 | 试验中所有其他变量要与之进行比较的变量。输入控制变量维度项的名称。 |
+| Normalizing Container | The basis (People, Sessions, or Events) on which a test will be run. |
+| Success Metric | The metric or metrics that a user is comparing variants with. |
+| Control | The variant that all other variants in the experiment are being compared with. Enter the name of the control variant dimension item. |
 
 {style="table-layout:auto"}
 
-## 线性回归_ 相关系数
+## Linear regression_ Correlation Coefficient
 
-Y = a X + b。返回相关系数。
+Y = a X + b. Returns the correlation coefficient
 
-## 线性回归_ 截距
+## Linear regression_ Intercept
 
-Y = a X + b。返回 b。
+Y = a X + b. Returns b.
 
-## 线性回归_ 预测的 Y
+## Linear regression_ Predicted Y
 
-Y = a X + b。返回 Y。
+Y = a X + b. Returns Y.
 
-## 线性回归_ 斜率
+## Linear regression_ Slope
 
-Y = a X + b。返回 a。
+Y = a X + b. Returns a.
 
-## 以 10 为底的对数 (Row)
+## Log Base 10 (Row)
 
-返回某数字以 10 为底数的对数。
+Returns the base-10 logarithm of a number.
 
 ```
 LOG10(metric)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric* | 您希望求以 10 为底数的对数的正实数。 |
+|  *metric* | The positive real number for which you want the base-10 logarithm.  |
 
-## 对数回归：相关系数 (Table)
+## Log regression: Correlation coefficient (Table)
 
-返回相关系数 *r*，它介于回归方程式 [!DNL Y = a ln(X) + b] 的两个量度列（*metric_X* 和 *metric_Y*）之间。它是使用 CORREL 方程式计算的。
+Returns the correlation coefficient, *r*, between two metric columns (*metric_X* and *metric_Y*) for the regression equation [!DNL Y = a ln(X) + b]. It is calculated using the CORREL equation.
 
 ```
 CORREL.LOG(metric_X,metric_Y)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric_X* | 您希望与 *metric_Y* 关联的量度。 |
-| *metric_Y* | 您希望与 *metric_X* 关联的量度。 |
+|  *metric_X* | A metric that you would like to correlate with *metric_Y*.  |
+|  *metric_Y* | A metric that you would like to correlate with *metric_X*.  |
 
-## 对数回归：截距 (Table)
+## Log regression: Intercept (Table)
 
-返回截距 *b* 作为最小二乘法回归，它介于回归方程式 [!DNL Y = a ln(X) + b] 的两个量度列（*metric_X* 和 *metric_Y*）之间。它是使用 INTERCEPT 方程式计算的。
+Returns the intercept *b* as the least squares regression between two metric columns (*metric_X* and *metric_Y*) for the regression equation [!DNL Y = a ln(X) + b]. It is calculated using the INTERCEPT equation.
 
 ```
 INTERCEPT.LOG(metric_X, metric_Y)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric_X* | 要指定为因变数的量度。 |
-| *metric_Y* | 要指定为自变数的量度。 |
+|  *metric_X* | A metric that you would like to designate as the dependent data.  |
+|  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
-## 对数回归：预测的 Y（行）
+## Log Regression: Predicted Y (Row)
 
-计算预测的 [!DNL y] 值 (metric_Y)，假定已知的 [!DNL x] 值 (metric_X) 使用“最小二乘法”计算基于 [!DNL Y = a ln(X) + b] 的最佳拟合直线。该值使用 ESTIMATE 方程式进行计算。
+Calculates the predicted [!DNL y] values (metric_Y), given the known [!DNL x] values (metric_X) using the "least squares" method for calculating the line of best fit based on [!DNL Y = a ln(X) + b]. It is calculated using the ESTIMATE equation.
 
-在回归分析中，此函数计算预测的 [!DNL y] 值 (*metric_Y*)，假定已知的 [!DNL x] 值 (*metric_X*) 使用对数计算 [!DNL Y = a ln(X) + b] 的最佳拟合直线。[!DNL a] 值对应每个 x 值，而 [!DNL b] 则是一个常数值。
+In regression analysis, this function calculates the predicted [!DNL y] values (*metric_Y*), given the known [!DNL x] values (*metric_X*) using the logarithm for calculating the line of best fit for the regression equation [!DNL Y = a ln(X) + b]. The [!DNL a] values correspond to each x value, and [!DNL b] is a constant value.
 
 ```
 ESTIMATE.LOG(metric_X, metric_Y)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric_X* | 要指定为因变数的量度。 |
-| *metric_Y* | 要指定为自变数的量度。 |
+|  *metric_X* | A metric that you would like to designate as the dependent data.  |
+|  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
-## 对数回归：斜率 (Table)
+## Log regression: Slope (Table)
 
-返回斜率 *a*，它介于回归方程式 [!DNL Y = a ln(X) + b] 的两个量度列（*metric_X* 和 *metric_Y*）之间。它是使用 SLOPE 方程式计算的。
+Returns the slope, *a*, between two metric columns (*metric_X* and *metric_Y*) for the regression equation [!DNL Y = a ln(X) + b]. It is calculated using the SLOPE equation.
 
 ```
 SLOPE.LOG(metric_A, metric_B)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric_A* | 要指定为因变数的量度。 |
-| *metric_B* | 要指定为自变数的量度。 |
+|  *metric_A* | A metric that you would like to designate as the dependent data.  |
+|  *metric_B* | A metric that you would like to designate as the independent data.  |
 
-## 自然对数
+## Natural Log
 
-返回某数字的自然对数。自然对数以常数 *e* (2.71828182845904) 为底数。LN 是 EXP 函数的反函数。
+Returns the natural logarithm of a number. Natural logarithms are based on the constant *e* (2.71828182845904). LN is the inverse of the EXP function.
 
 ```
 LN(metric)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric* | 您希望求自然对数的正实数。 |
+|  *metric* | The positive real number for which you want the natural logarithm.  |
 
 ## NOT
 
-如果数字为 0，则返回 1；如果为其他数字，则返回 0。
+Returns 1 if the number is 0 or returns 0 if another number.
 
 ```
 NOT(logical)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *logical* | 必需。可被计算为 TRUE 或 FALSE 的值或表达式。 |
+|  *logical* | Required. A value or expression that can be evaluated to TRUE or FALSE.  |
 
-使用 NOT 时，需要知道表达式（&lt;、>、=、&lt;> 等）返回值 0 还是 1。
+Using NOT requires knowing if the expressions (<, >, =, <> , etc.) return 0 or 1 values.
 
-## 不等于
+## Not equal
 
-返回不包含输入值的完全匹配项的所有项目。
+Returns all items that do not contain the exact match of the value entered.
 
-## 或 (Row)
+## Or (Row)
 
-如果有任何参数为 TRUE，则返回 TRUE；如果所有参数均为 FALSE，则返回 FALSE。
+Returns TRUE if any argument is TRUE, or returns FALSE if all arguments are FALSE.
 
 >[!NOTE]
 >
->0（零）表示 False，而任何其他值均表示 True。
+>0 (zero) means False, and any other value is True.
 
 ```
 OR(logical_test1,[logical_test2],...)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *logical_test1* | 必需。任何可被计算为 TRUE 或 FALSE 的值或表达式。 |
-| *logical_test2* | 可选。您希望计算为 TRUE 或 FALSE 的其他条件。 |
+|  *logical_test1* | Required. Any value or expression that can be evaluated to TRUE or FALSE.  |
+|  *logical_test2* | Optional. Additional conditions that you want to evaluate as TRUE or FALSE  |
 
 ## Pi
 
-返回常数 PI (3.14159265358979)，精确到 15 位数字。
+Returns the constant PI, 3.14159265358979, accurate to 15 digits.
 
 ```
 PI()
 ```
 
-[!DNL PI] 函数没有参数。
+The [!DNL PI]function has no arguments.
 
-## 幂回归：相关系数 (Table)
+## Power regression: Correlation coefficient (Table)
 
-返回相关系数 *r*，它介于 [!DNL Y = b*X] 的两个量度列（*metric_X* 和 *metric_Y*）之间。
+Returns the correlation coefficient, *r*, between two metric columns (*metric_X* and *metric_Y*) for [!DNL Y = b*X].
 
 ```
 CORREL.POWER(metric_X, metric_Y)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric_X* | 您希望与 *metric_Y* 关联的量度。 |
-| *metric_Y* | 您希望与 *metric_X* 关联的量度。 |
+|  *metric_X* | A metric that you would like to correlate with *metric_Y*.  |
+|  *metric_Y* | A metric that you would like to correlate with *metric_X*.  |
 
-## 幂回归：截距 (Table)
+## Power regression: Intercept (Table)
 
-返回截距 *b*，它介于 [!DNL Y = b*X] 的两个量度列（*metric_X* 和 *metric_Y*）之间。
+Returns the intercept, *b*, between two metric columns (*metric_X* and *metric_Y*) for [!DNL Y = b*X].
 
 ```
  INTERCEPT.POWER(metric_X, metric_Y)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric_X* | 要指定为因变数的量度。 |
-| *metric_Y* | 要指定为自变数的量度。 |
+|  *metric_X* | A metric that you would like to designate as the dependent data.  |
+|  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
-## 幂回归：预测的 Y (Row)
+## Power regression: Predicted Y (Row)
 
-计算预测的 [!DNL y] 值 ([!DNL metric_Y])，假定已知的 [!DNL x] 值 ([!DNL metric_X]) 使用“最小二乘法”计算 [!DNL Y = b*X] 的最佳拟合直线。
+Calculates the predicted [!DNL y] values ( [!DNL metric_Y]), given the known [!DNL x] values ( [!DNL metric_X]) using the "least squares" method for calculating the line of best fit for [!DNL Y = b*X].
 
 ```
  ESTIMATE.POWER(metric_X, metric_Y)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric_X* | 要指定为因变数的量度。 |
-| *metric_Y* | 要指定为自变数的量度。 |
+|  *metric_X* | A metric that you would like to designate as the dependent data.  |
+|  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
-## 幂回归：斜率 (Table)
+## Power regression: Slope (Table)
 
-返回斜率 *a*，它介于 [!DNL Y = b*X] 的两个量度列（*metric_X* 和 *metric_Y*）之间。
+Returns the slope, *a*, between two metric columns (*metric_X* and *metric_Y*) for [!DNL Y = b*X].
 
 ```
 SLOPE.POWER(metric_X, metric_Y)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric_X* | 要指定为因变数的量度。 |
-| *metric_Y* | 要指定为自变数的量度。 |
+|  *metric_X* | A metric that you would like to designate as the dependent data.  |
+|  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
-## 二次回归：相关系数 (Table)
+## Quadratic regression: Correlation coefficient (Table)
 
-返回相关系数 *r*，它介于 [!DNL Y=(a*X+b)]**** 的两个量度列（*metric_X* 和 *metric_Y*）之间。
+Returns the correlation coefficient, *r*, between two metric columns (*metric_X* and *metric_Y*) for [!DNL Y=(a*X+b)]****.
 
 ```
 CORREL.QUADRATIC(metric_X, metric_Y)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric_X* | 您希望与 *metric_Y* 关联的量度。 |
-| *metric_Y* | 您希望与 *metric_X* 关联的量度。 |
+|  *metric_X* | A metric that you would like to correlate with *metric_Y*.  |
+|  *metric_Y* | A metric that you would like to correlate with *metric_X*.  |
 
-## 二次回归：截距 (Table)
+## Quadratic regression: Intercept (Table)
 
-返回截距 *b*，它介于 [!DNL Y=(a*X+b)]**** 的两个量度列（*metric_X* 和 *metric_Y*）之间。
+Returns the intercept, *b*, between two metric columns (*metric_X* and *metric_Y*) for [!DNL Y=(a*X+b)]****.
 
 ```
 INTERCEPT.POWER(metric_X, metric_Y)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric_X* | 要指定为因变数的量度。 |
-| *metric_Y* | 要指定为自变数的量度。 |
+|  *metric_X* | A metric that you would like to designate as the dependent data.  |
+|  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
-## 二次回归：预测的 Y (Row)
+## Quadratic regression: Predicted Y (Row)
 
-计算预测的 [!DNL y] 值 (metric_Y)，假定已知的 [!DNL x] 值 (metric_X) 使用最小二乘法计算使用 [!DNL Y=(a*X+b)]**** 的最佳拟合直线。
+Calculates the predicted [!DNL y] values (metric_Y), given the known [!DNL x] values (metric_X) using the least squares method for calculating the line of best fit using [!DNL Y=(a*X+b)]**** .
 
 ```
 ESTIMATE.QUADRATIC(metric_A, metric_B)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric_A* | 要指定为因变数的量度。 |
-| *metric_B* | 要指定为因变数的量度。 |
+|  *metric_A* | A metric that you would like to designate as the dependent data.  |
+|  *metric_B* | A metric that you would like to designate as the dependent data.  |
 
-## 二次回归：斜率 (Table)
+## Quadratic regression: Slope (Table)
 
-返回斜率 *a*，它介于 [!DNL Y=(a*X+b)]**** 的两个量度列（*metric_X* 和 metric_Y）之间。
+Returns the slope, *a*, between two metric columns (*metric_X* and metric_Y) for [!DNL Y=(a*X+b)]****.
 
 ```
 SLOPE.QUADRATIC(metric_X, metric_Y)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric_X* | 要指定为因变数的量度。 |
-| *metric_Y* | 要指定为自变数的量度。 |
+|  *metric_X* | A metric that you would like to designate as the dependent data.  |
+|  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
-## 倒数回归：相关系数 (Table)
+## Reciprocal regression: Correlation coefficient (Table)
 
-返回相关系数 *r*，它介于 [!DNL Y = a/X+b] 的两个量度列（*metric_X* 和 *metric_Y*）之间。
+Returns the correlation coefficient, *r*, between two metric columns (*metric_X)* and *metric_Y*) for [!DNL Y = a/X+b].
 
 ```
 CORREL.RECIPROCAL(metric_X, metric_Y)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric_X* | 您希望与 *metric_Y* 关联的量度。 |
-| *metric_Y* | 您希望与 *metric_X* 关联的量度。 |
+|  *metric_X* | A metric that you would like to correlate with *metric_Y*.  |
+|  *metric_Y* | A metric that you would like to correlate with *metric_X*.  |
 
-## 倒数回归：截距 (Table)
+## Reciprocal regression: Intercept (Table)
 
-返回截距 *b*，它介于 [!DNL Y = a/X+b] 的两个量度列（*metric_X* 和 *metric_Y*）之间。
+Returns the intercept, *b*, between two metric columns (*metric_X* and *metric_Y*) for [!DNL Y = a/X+b].
 
 ```
 INTERCEPT.RECIPROCAL(metric_A, metric_B)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric_X* | 要指定为因变数的量度。 |
-| *metric_Y* | 要指定为自变数的量度。 |
+|  *metric_X* | A metric that you would like to designate as the dependent data.  |
+|  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
-## 倒数回归：预测的 Y (Row)
+## Reciprocal regression: Predicted Y (Row)
 
-计算预测的 [!DNL y] 值 (metric_Y)，假定已知的 [!DNL x] 值 (metric_X) 使用最小二乘法计算使用 [!DNL Y = a/X+b] 的最佳拟合直线。
+Calculates the predicted [!DNL y] values (metric_Y), given the known [!DNL x] values (metric_X) using the least squares method for calculating the line of best fit using [!DNL Y = a/X+b].
 
 ```
 ESTIMATE.RECIPROCAL(metric_X, metric_Y)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric_X* | 要指定为因变数的量度。 |
-| *metric_Y* | 要指定为自变数的量度。 |
+|  *metric_X* | A metric that you would like to designate as the dependent data.  |
+|  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
-## 倒数回归：斜率 (Table)
+## Reciprocal regression: Slope (Table)
 
-返回斜率 *a*，它介于 [!DNL Y = a/X+b] 的两个量度列（*metric_X* 和 *metric_Y*）之间。
+Returns the slope, *a*, between two metric columns (*metric_X* and *metric_Y*) for [!DNL Y = a/X+b].
 
 ```
 SLOPE.RECIPROCAL(metric_X, metric_Y)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric_X* | 要指定为因变数的量度。 |
-| *metric_Y* | 要指定为自变数的量度。 |
+|  *metric_X* | A metric that you would like to designate as the dependent data.  |
+|  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
-## 正弦 (Row)
+## Sine (Row)
 
-返回给定角的正弦。如果角以角度表示，则将该角乘以 PI( )/180。
+Returns the sine of the given angle. If the angle is in degrees, multiply the angle by PI( )/180.
 
 ```
 SIN(metric)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric* | 您希望求正弦的弧度角。 |
+|  *metric* | The angle in radians for which you want the sine.  |
 
-## T 分数
+## T-Score
 
-Z 分数的别名，即由平均值偏差除以标准偏差
+Alias for Z-Score, namely the deviation from the mean divided by the standard deviation
 
-## T 测试
+## T-Test
 
-通过 col 的 t 分数和 n 自由度，执行以 m 结尾的 t 测试。
+Performs an m-tailed t-test with t-score of col and n degrees of freedom.
 
-签名为 `t_test( x, n, m )`。在下面，它只是调用 `m*cdf_t(-abs(x),n)`。（这类似于运行 `m*cdf_z(-abs(x))` 的 z 测试函数。）
+The signature is `t_test( x, n, m )`. Underneath, it simply calls `m*cdf_t(-abs(x),n)`. (This is similar to the z-test function which runs `m*cdf_z(-abs(x))`.
 
-其中，`m` 为尾数，`n` 为自由度。这些应为数字（整个报表的常量，即不按行发生变化）。
+Here, `m` is the number of tails, and `n` is the degrees of freedom. These should be numbers (constant for the whole report, i.e. not changing on a row by row basis).
 
-`X` 为 t 测试统计数据，通常是基于量度的公式（例如 zscore），每行都将对其进行评估。
+`X` is the t-test statistic, and would often be a formula (e.g. zscore) based on a metric and will be evaluated on every row.
 
-返回值是指在给定自由度和尾数的情况下，获得测试统计数据 x 的几率。
+The return value is the probability of seeing the test statistic x given the degrees of freedom and number of tails.
 
-**示例：**
+**Examples:**
 
-1. 用其查找离群值：
+1. Use it to find outliers:
 
    ```
    t_test( zscore(bouncerate), row-count-1, 2)
    ```
 
-1. 将其与 `if` 结合使用，以忽略过高或过低的跳出率，并对其他内容的访问次数进行计数：
+1. Combine it with `if` to ignore very high or low bounce rates, and count visits on everything else:
 
    ```
    if ( t_test( z-score(bouncerate), row-count, 2) < 0.01, 0, visits )
    ```
 
-## 正切
+## Tangent
 
-返回给定角的正切。如果角以角度表示，则将该角乘以 PI( )/180。
+Returns the tangent of the given angle. If the angle is in degrees, multiply the angle by PI( )/180.
 
 ```
 TAN (metric)
 ```
 
-| 参数 | 描述 |
+|  Argument  | Description  |
 |---|---|
-| *metric* | 您希望求正切的弧度角。 |
+|  *metric* | The angle in radians for which you want the tangent.  |
 
-## Z 分数 (Row)
+## Z-Score (Row)
 
-返回基于正态分布的 Z 分数，或正态分数。Z 分数是一个标准偏差数，观测分数来自平均值。Z 分数为 0（零）表示分数与平均值相同。Z 分数可以为正数或负数，用于指示该分数在平均值之上还是之下，以及依据多少个标准偏差。
+Returns the Z-score, or normal score, based upon a normal distribution. The Z-score is the number of standard deviations an observation is from the mean. A Z-score of 0 (zero) means the score is the same as the mean. A Z-score can be positive or negative, indicating whether it is above or below the mean and by how many standard deviations.
 
-Z 分数的方程式为：
+The equation for Z-score is:
 
 ![](assets/z_score.png)
 
-其中，[!DNL x] 为原始分数，[!DNL μ] 为群体平均值，[!DNL σ] 为群体标准偏差。
+where [!DNL x] is the raw score, [!DNL μ] is the mean of the population, and [!DNL σ] is the standard deviation of the population.
 
 >[!NOTE]
 >
->[!DNL μ] (mu) 和 [!DNL σ] (sigma) 会使用该量度自动计算。
+>[!DNL μ] (mu) and[!DNL σ] (sigma) are automatically calculated from the metric.
 
-Z 分数（量度）
+Z-score(metric)
 
 <table id="table_AEA3622A58F54EA495468A9402651E1B">
  <thead>
   <tr>
-   <th colname="col1" class="entry"> 参数 </th>
-   <th colname="col2" class="entry"> 描述 </th>
+   <th colname="col1" class="entry"> Argument </th>
+   <th colname="col2" class="entry"> Description </th>
   </tr>
  </thead>
  <tbody>
   <tr>
    <td colname="col1"> <i>metric</i> </td>
-   <td colname="col2"> <p> 返回其首个非零参数的值。 </p> </td>
+   <td colname="col2"> <p> Returns the value of its first non-zero argument. </p> </td>
   </tr>
  </tbody>
 </table>
 
-## Z 测试
+## Z-Test
 
-通过 A 的 Z 分数，执行以 n 结尾的 Z 测试。
+Performs an n-tailed Z-test with Z-score of A.
 
-返回当前行在列中偶然可见的几率。
+Returns the probability that the current row could be seen by chance in the column.
 
 >[!NOTE]
 >
->假定值为正态分布。
+>Assumes that the values are normally distributed.
+
+-->

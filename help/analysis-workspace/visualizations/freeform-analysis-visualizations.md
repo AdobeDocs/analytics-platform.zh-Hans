@@ -5,10 +5,10 @@ title: 可视化图表概述
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 714e37433b12713e45a66ebd64771c050edb89a5
+source-git-commit: b85ad91a80f277aaf35f1e3aa3366a46f6478215
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1617'
+ht-degree: 15%
 
 ---
 
@@ -35,6 +35,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | ![GraphHistogram](/help/assets/icons/Histogram.svg) | [直方图](/help/analysis-workspace/visualizations/histogram.md) | 直方图可视化图表根据量度数量，将人员、访问次数或事件划分到存储桶中。 |
 | ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [水平条](/help/analysis-workspace/visualizations/horizontal-bar.md) | 水平条形图可视化显示一些水平条，这些水平条表示一个或多个量度中的各种值。 |
 | ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [栈叠的水平条形图](/help/analysis-workspace/visualizations/horizontal-bar.md) | 栈叠的水平条形图可视化显示一些水平条，这些水平条表示一个或多个量度中的各种值。 |
+| ![分支3](/help/assets/icons/Branch3.svg) | [历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | 历程画布可视化图表可帮助您分析和了解您向用户和客户提供的历程。 |
 | ![关键量度](/help/assets/icons/KeyMetrics.svg) | [关键量度摘要](/help/analysis-workspace/visualizations/key-metric.md) | 关键量度摘要可视化图表将线条、摘要更改和摘要编号可视化图表组合在一起。 |
 | ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [折线图](/help/analysis-workspace/visualizations/line.md) | 折线图可视化图表使用线条来表示量度，以显示一段时间内值的变化情况。 将时间作为 x 轴的线形图。 |
 | ![图形散点图](/help/assets/icons/GraphScatter.svg) | [散点图](/help/analysis-workspace/visualizations/scatterplot.md) | 散点图可视化图表显示维度项目与最多三个量度之间的关系。 |
