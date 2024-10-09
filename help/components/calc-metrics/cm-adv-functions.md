@@ -4,7 +4,7 @@ description: 可通过以下方法访问这些函数：选中函数下拉列表�
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
+source-git-commit: e355194d6699128ac817ea564940c0afdea61efc
 workflow-type: tm+mt
 source-wordcount: '3126'
 ht-degree: 20%
@@ -168,7 +168,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 置信度(normalizing-container， success-metric， control， importance-treshold)]**
 
-使用[时间均匀中心极限理论和渐近置信序列](http://arxiv.org/pdf/2103.06476)中所述的WASKR方法计算随时有效置信度&#x200B;**lower**。
+使用[时间均匀中心极限理论和渐近置信序列](https://arxiv.org/pdf/2103.06476)中所述的WASKR方法计算随时有效置信度&#x200B;**lower**。
 
 置信度是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。 置信度越高，表明支持控制变量和非控制变量具有相同性能的假设的证据越少。
 
@@ -183,7 +183,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 置信度(normalizing-container， success-metric， control， importance-treshold)]**
 
-使用[时间均匀中心极限理论和渐近置信序列](http://arxiv.org/pdf/2103.06476)中所述的WASKR方法计算随时有效置信度&#x200B;**upper**。
+使用[时间均匀中心极限理论和渐近置信序列](https://arxiv.org/pdf/2103.06476)中所述的WASKR方法计算随时有效置信度&#x200B;**upper**。
 
 置信度是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。 置信度越高，表明支持控制变量和非控制变量具有相同性能的假设的证据越少。
 

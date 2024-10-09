@@ -5,9 +5,9 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: 216783872bf4dd26fe2137dffe8994d03193b604
+source-git-commit: e355194d6699128ac817ea564940c0afdea61efc
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '649'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 2%
 
 * **[!UICONTROL 视图]**：在此视图类型和[转换趋势](conversion-trends.md)之间切换。
 * **[!UICONTROL 步骤]**：要跟踪的事件接触点。 图表中的每个条形表示一个步骤。 您最多可以包含十个步骤。
-   * [!UICONTROL 比较]：每个步骤都提供一个选项，用于比较单个漏斗步骤中的多个事件，从而创建一个“分支漏斗”。 此功能允许您并排比较两个历程的摩擦力，而无需创建两个单独的分析。 当存在步骤选项或在漏斗内运行A/B试验时，此插件非常有用。 请参阅Customer Journey Analytics教程中的[漏斗摩擦分析](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/funnel/funnel-friction-analysis)，观看介绍如何比较漏斗的视频。
+   * [!UICONTROL 比较]：每个步骤都提供一个选项，用于比较单个漏斗步骤中的多个事件，从而创建一个“分支漏斗”。 此功能允许您并排比较两个历程的摩擦力，而无需创建两个单独的分析。 当存在步骤选项或在漏斗内运行A/B试验时，此插件非常有用。 请参阅Customer Journey Analytics教程中的[漏斗](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/funnel)，观看介绍如何比较漏斗的视频。
 * **[!UICONTROL 计为]**：要应用于漏斗的范围。 选项包括[!UICONTROL 会话]和[!UICONTROL 用户]。
    * [!UICONTROL 会话]：所有步骤必须发生在同一会话中才能被计数。
    * [!UICONTROL 用户]：所有步骤都必须在选定的报表时段内执行才能被计数。
