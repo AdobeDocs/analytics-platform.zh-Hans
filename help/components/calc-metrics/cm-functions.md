@@ -1,31 +1,41 @@
 ---
-title: 引用 - 基本函数
-description: 计算量度生成器允许您将统计和数学函数应用于生成高级计算量度。
+title: 基本功能
+description: 计算指标生成器允许您将统计和数学函数应用于生成高级计算指标。
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: ecf8156df0b31e81f1a5546829c6100831b2a600
+source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 32%
+source-wordcount: '1185'
+ht-degree: 30%
 
 ---
 
-# 引用 - 基本函数
+# 基本功能
 
 
-[计算量度生成器](cm-workflow/cm-build-metrics.md)允许您应用统计和数学函数。
-
-这里有一个按字母顺序排列的函数及其定义列表。
+[计算量度生成器](cm-workflow/cm-build-metrics.md)允许您应用统计和数学函数。 本文按字母顺序列出了各个函数及其定义。
 
 >[!NOTE]
 >
 >当 [!DNL metric] 被标识为函数中的参数时，还允许使用其他指标表达式。例如，[COLUMN MAXIMUM(METRICS)](#column-maximum)还允许[COLUMN MAXIMUM(PageViews + Visits)](#column-maximum)。
 
 
+
 ## table函数与row函数
 
-在 table 函数中，输出对于表中的每一行都是相同的。行函数是指其中表的每一行的输出都不同的函数。 在适用和相关的情况下，使用函数类型对函数进行注释。
+在 table 函数中，输出对于表中的每一行都是相同的。在 row 函数中，输出对于表中的每一行都是不同的。
+
+在适用和相关的情况下，使用函数类型对函数进行注释： [!BADGE 表]{type="Neutral"}[!BADGE 行]{type="Neutral"}
+
+## include-zeros参数的含义是什么？
+
+它可告知计算中是否包含零。有时零表示&#x200B;*无*，但有时它很重要。
+
+例如，如果您有一个收入指标，然后向报表中添加了一个页面查看次数量度，那么您的收入会突然出现更多的行，这些行全部为零。 您可能不希望该额外的量度影响收入列中的任何&#x200B;**[MEAN](cm-functions.md#mean)**、**[ROW MINIMUM](cm-functions.md#row-min)**、**[QUARTILE](cm-functions.md#quartile)**&#x200B;以及更多计算。 在这种情况下，您需要检查`include-zeros`参数。
+
+另一种情况是，您有两个感兴趣的量度，而其中一个量度的平均值或最小值较高，因为某些行为零。  在这种情况下，您可以选择不检查参数以包含零
+
 
 
 ## 绝对值

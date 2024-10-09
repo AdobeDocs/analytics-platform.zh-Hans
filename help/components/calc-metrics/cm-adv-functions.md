@@ -1,29 +1,33 @@
 ---
-title: 引用 - 高级函数
+title: 高级功能
 description: 可通过以下方法访问这些函数：选中函数下拉列表中的显示高级。
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: ecf8156df0b31e81f1a5546829c6100831b2a600
+source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
 workflow-type: tm+mt
-source-wordcount: '3100'
+source-wordcount: '3126'
 ht-degree: 20%
 
 ---
 
-# 引用 - 高级函数
+# 高级功能
 
-通过在“组件”面板中选择![效果](/help/assets/icons/Effect.svg)**[!UICONTROL 函数]**&#x200B;列表下的&#x200B;**[!UICONTROL 显示所有]**&#x200B;来访问这些函数。 向下滚动以查看高级函数的列表。
+[计算量度生成器](cm-workflow/cm-build-metrics.md)允许您应用统计和数学函数。 本文按字母顺序列出了高级功能及其定义。
+
+通过在“组件”面板中选择![效果](/help/assets/icons/Effect.svg)**[!UICONTROL 函数]**&#x200B;列表下的&#x200B;**[!UICONTROL 显示所有]**&#x200B;来访问这些函数。 向下滚动以查看&#x200B;**[!UICONTROL 高级函数]**&#x200B;的列表。
 
 ## table函数与row函数
 
-在 table 函数中，输出对于表中的每一行都是相同的。行函数是指其中表的每一行的输出都不同的函数。 在适用和相关的情况下，使用函数类型对函数进行注释。
+在 table 函数中，输出对于表中的每一行都是相同的。在 row 函数中，输出对于表中的每一行都是不同的。
+
+在适用和相关的情况下，使用函数类型对函数进行注释： [!BADGE 表]{type="Neutral"}[!BADGE 行]{type="Neutral"}
 
 ## include-zeros参数的含义是什么？
 
 它可告知计算中是否包含零。有时零表示&#x200B;*无*，但有时它很重要。
 
-例如，如果您有一个收入指标，然后向报表中添加了一个页面查看次数量度，那么您的收入会突然出现更多的行，这些行全部为零。 您可能不希望该额外的量度影响收入列中的任何[MEAN](cm-functions.md#mean)、[MIN](cm-functions.md#row-min)、[QUARTILE](cm-functions.md#quartile)以及更多计算。 在这种情况下，您需要检查`include-zeros`参数。
+例如，如果您有一个收入指标，然后向报表中添加了一个页面查看次数量度，那么您的收入会突然出现更多的行，这些行全部为零。 您可能不希望该额外的量度影响收入列中的任何&#x200B;**[MEAN](cm-functions.md#mean)**、**[ROW MINIMUM](cm-functions.md#row-min)**、**[QUARTILE](cm-functions.md#quartile)**&#x200B;以及更多计算。 在这种情况下，您需要检查`include-zeros`参数。
 
 另一种情况是，您有两个感兴趣的量度，而其中一个量度的平均值或最小值较高，因为某些行为零。  在这种情况下，您可以选择不检查参数以包含零。
 
@@ -918,13 +922,13 @@ CDF-Z(-3) ? 0.0013499
 
 **示例：**
 
-1. 用其查找离群值：
+1. 使用函数查找离群值：
 
    ```
    T-TEST(Z-SCORE(bouncerate), ROW COUNT - 1, 2)
    ```
 
-1. 将其与&#x200B;**[IF](#if)**&#x200B;结合使用，以忽略过高或过低的跳出率，并对其他所有方面的会话进行计数：
+1. 将该函数与&#x200B;**[IF](#if)**&#x200B;结合使用，以忽略过高或过低的跳出率，并对其他所有项目上的会话进行计数：
 
    ```
    IF(T-TEST(Z-SCORE(bouncerate), ROW COUNT - 1, 2) < 0.01, 0, sessions )
