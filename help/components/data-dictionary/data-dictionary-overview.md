@@ -7,7 +7,7 @@ exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '564'
-ht-degree: 69%
+ht-degree: 76%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 69%
 >[!CONTEXTUALHELP]
 >id="cja_component_datadictionary"
 >title="数据字典"
->abstract="数据字典可帮助用户和管理员跟踪并更好地了解其Analytics环境中的组件。 <br/>Analytics管理员负责向用户组织有关数据字典中每个组件的信息。"
+>abstract="数据字典能够帮助用户和管理员跟踪并更好地理解 Analytics 环境中的组件。<br/>Analytics 管理员负责为用户整理数据字典中每个组件的信息。"
 
 <!-- markdownlint-enable MD034 -->
 

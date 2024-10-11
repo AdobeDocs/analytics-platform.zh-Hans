@@ -7,7 +7,7 @@ role: User, Admin
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '872'
-ht-degree: 17%
+ht-degree: 24%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="cja_components_annotations_details"
 >title="注释详细信息"
->abstract="注释使您能够有效地将上下文数据的细微差别和见解传达给贵组织。 它们可让您将日历事件与特定维度/指标关联起来。"
+>abstract="注释使您能够有效地将上下文数据的细微差别和见解传达给贵组织。 它们可让您将日程表活动与特定维度/量度关联起来。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -50,7 +50,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="cja_components_annotations_scope"
 >title="范围"
->abstract="范围允许您自定义要注释的数据。 计算量度和区段不会自动继承应用于其定义中所用组件的注释。 您可以将新的计算指标添加到现有注释的范围部分。 新区段需要新注释。"
+>abstract="您可以利用范围来自定义将要注释的数据。计算量度和区段不会自动继承其定义中使用的组件的注释。您可以将新的计算量度添加到现有注释的范围部分。新的区段需要新的注释。"
 
 <!-- markdownlint-enable MD034 -->
 

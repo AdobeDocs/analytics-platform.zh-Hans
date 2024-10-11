@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
 source-wordcount: '353'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_metric_includeexcludevalues"
 >title="包括/排除值"
->abstract="将量度筛选到只对符合特定条件的值计数。"
+>abstract="将量度只筛选到具有符合特定条件的数量值。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,7 +28,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_includeexcludevalues"
 >title="包括/排除值"
->abstract="缩小维度范围以使其仅包括符合特定条件的值。在报表中进行分配和筛选之前进行包括和排除。<br/><br/>**参数&#x200B;**<br/>**区分大小写**：确定下面的筛选逻辑是否区分大小写。"
+>abstract="缩小维度以仅包含符合特定条件的值。包含和排除发生在报告中的分配和过滤之前。<br/><br/>**参数&#x200B;**<br/>**区分大小写**：确定下方的筛选逻辑是否区分大小写。"
 
 <!-- markdownlint-enable MD034 -->
 

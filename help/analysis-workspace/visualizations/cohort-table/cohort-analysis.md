@@ -7,7 +7,7 @@ role: User
 source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
 source-wordcount: '597'
-ht-degree: 28%
+ht-degree: 37%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 28%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_cohorttable_button"
 >title="同类群组表"
->abstract="创建一个同类群组可视化图表，用于根据事件的完成情况对用户进行分组，并分析一段时间的持续参与和流失情况。"
+>abstract="创建可视化同类群组，根据事件的完成情况对用户进行分组，并分析持续的参与度和一段时间内的流失率。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -26,8 +26,8 @@ ht-degree: 28%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_cohorttable_panel"
->title="选择表"
->abstract="根据事件的完成情况分组用户，然后分析这些用户在一段时间内的持续参与和流失程度。<br/><br/>**参数&#x200B;**<br/>**包含条件**：用于定义初始访客同类群组的组件。<br/>**返回标准**：用于确定访客是否已返回的组件。"
+>title="同类群组表"
+>abstract="根据事件的完成情况分组用户，然后分析这些用户在一段时间内的持续参与和流失程度。<br/><br/>**参数&#x200B;**<br/>**纳入标准**：用于定义您的初始访客同类群组的组件。<br/>**回访标准**：用于确定访客是否已回访的组件。"
 
 <!-- markdownlint-enable MD034 -->
 

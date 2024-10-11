@@ -7,7 +7,7 @@ role: User
 source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
 source-wordcount: '244'
-ht-degree: 46%
+ht-degree: 51%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_fallout_button"
 >title="流失"
->abstract="创建一个可视化图表，以查看人员如何成功进入所需的检查点。"
+>abstract="创建可视化效果来查看人们如何成功到达所需的检查点。"
 
 <!-- markdownlint-enable MD034 -->
 

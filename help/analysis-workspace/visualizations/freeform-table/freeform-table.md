@@ -7,7 +7,7 @@ role: User
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '761'
-ht-degree: 21%
+ht-degree: 26%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 21%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_freeformtable_button"
 >title="自由格式表"
->abstract="创建一个空的自由格式表可视化图表，您可以使用维度、区段、量度和日期范围构建该可视化图表。 您可以将自由格式表用作其他可视化的基础。"
+>abstract="创建一个您可以使用维度、区段、量度和日期范围来构建的空的可视化自由格式表格。您可以使用自由格式表作为其他可视化的基础。"
 
 <!-- markdownlint-enable MD034 -->
 

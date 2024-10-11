@@ -19,7 +19,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_valuebucketing"
 >title="值分段"
->abstract="将值装入特定范围。这些范围在报表中表现为维度项。"
+>abstract="将值划分到特定范围内。这些范围在报告中显示为维度项目。"
 
 <!-- markdownlint-enable MD034 -->
 

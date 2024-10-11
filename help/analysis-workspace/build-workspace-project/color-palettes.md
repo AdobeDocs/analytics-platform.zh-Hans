@@ -7,7 +7,7 @@ role: User
 source-git-commit: 383fad799944f7405af6de1754aa2e0af83e2cab
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 28%
+ht-degree: 33%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 28%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_project_colorpalette"
 >title="项目调色板"
->abstract="更改此项目中使用的调色板。"
+>abstract="更改此项目中使用的颜色调色板。"
 
 <!-- markdownlint-enable MD034 -->
 

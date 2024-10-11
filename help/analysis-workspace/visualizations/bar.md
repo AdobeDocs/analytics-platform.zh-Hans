@@ -7,7 +7,7 @@ role: User
 source-git-commit: e8d9132ec9920d649f6694f02f987deadb93b77d
 workflow-type: tm+mt
 source-wordcount: '174'
-ht-degree: 13%
+ht-degree: 21%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 13%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_bar_button"
 >title="条形图"
->abstract="创建条形图可视化以表示一个或多个量度中的各种值。"
+>abstract="创建可视化条形图来表示一个或多个量度的各种值。"
 
 <!-- markdownlint-enable MD034 -->
 

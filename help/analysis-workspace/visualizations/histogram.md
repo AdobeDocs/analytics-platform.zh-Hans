@@ -7,7 +7,7 @@ role: User
 source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
 source-wordcount: '330'
-ht-degree: 37%
+ht-degree: 42%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 37%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_histogram_button"
 >title="直方图"
->abstract="创建直方图可视化以表示数字数据在范围组中的分布。"
+>abstract="创建可视化直方图来表示范围组中数值数据的分布。"
 
 <!-- markdownlint-enable MD034 -->
 

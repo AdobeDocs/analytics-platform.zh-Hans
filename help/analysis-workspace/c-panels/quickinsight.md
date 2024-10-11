@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '1127'
-ht-degree: 24%
+ht-degree: 26%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 24%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_quickinsights_button"
 >title="快速洞察"
->abstract="创建一个面板以快速构建自由格式表和随附的可视化图表，从而更快地分析和发现见解。"
+>abstract="创建一个面板，快速构建自由格式表和随附的可视化图表，以便更快地分析和发现洞察。"
 
 <!-- markdownlint-enable MD034 -->
 

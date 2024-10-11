@@ -7,7 +7,7 @@ role: User
 source-git-commit: e8d9132ec9920d649f6694f02f987deadb93b77d
 workflow-type: tm+mt
 source-wordcount: '160'
-ht-degree: 14%
+ht-degree: 36%
 
 ---
 
@@ -15,14 +15,14 @@ ht-degree: 14%
 
 水平条形图可视化图表具有标准和栈叠选项。
 
-## 水平条形图 {#horizontal-bar}
+## 水平条 {#horizontal-bar}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_horizontalbar_button"
->title="水平条形图"
->abstract="创建水平条形图可视化图表，以表示一个或多个量度中的各种值。"
+>title="水平条"
+>abstract="创建可视化水平条形图来表示一个或多个量度的各种值。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -31,14 +31,14 @@ ht-degree: 14%
 
 ![显示页面查看次数、页面速度、访问次数、登录次数和退出次数量度的水平条。](assets/horizontal-bar.png)
 
-## 栈叠的水平条形图 {#horizontal-bar-stacked}
+## 堆叠的水平条形图 {#horizontal-bar-stacked}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_horizontalbarstacked_button"
->title="栈叠的水平条形图"
->abstract="创建水平条形图可视化图表，以表示一个或多个栈叠量度的各种值。"
+>title="堆叠的水平条形图"
+>abstract="创建可视化水平条形图来表示一个或多个堆叠的量度的各种值。"
 
 <!-- markdownlint-enable MD034 -->
 

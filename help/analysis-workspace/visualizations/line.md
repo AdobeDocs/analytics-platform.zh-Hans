@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 18%
+ht-degree: 23%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 18%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_line_button"
 >title="折线图"
->abstract="创建一个折线图可视化图表，以显示一段时间内值的变化情况。 仅当使用时间作为维度时，才可以使用折线图可视化图表。"
+>abstract="创建一个可视化线条图表，展示值在一段时间内的变化情况。仅当使用时间作为维度时，才可以使用可视化线条图表。"
 
 <!-- markdownlint-enable MD034 -->
 

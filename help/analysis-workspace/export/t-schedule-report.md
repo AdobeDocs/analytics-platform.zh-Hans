@@ -92,7 +92,7 @@ ht-degree: 60%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_sendfile_password"
 >title="密码加密"
->abstract="提供的密码将用于加密计划项目的文件。您的组织的安全要求需要进行密码加密。"
+>abstract="所提供的密码将会用于对计划项目的文件进行加密。您组织的安全要求需要密码加密。"
 
 <!-- markdownlint-enable MD034 -->
 

@@ -7,7 +7,7 @@ role: User
 source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
 source-wordcount: '579'
-ht-degree: 41%
+ht-degree: 44%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 41%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_combo_button"
 >title="组合"
->abstract="快速创建组合图表可视化，而无需先创建自由格式表。"
+>abstract="快速创建可视化组合图表，无需先创建自由格式表。"
 
 <!-- markdownlint-enable MD034 -->
 

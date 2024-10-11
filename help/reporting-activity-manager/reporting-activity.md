@@ -25,7 +25,7 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="cja_tools_reportingactivitymanager_connections"
 >title="连接"
->abstract="此表显示您有权管理报告活动的连接。表中的每个列均提供有关每个连接的信息。"
+>abstract="此表显示您有权管理报告活动的连接。表格的每一列都提供了有关每个连接的信息。"
 
 <!-- markdownlint-enable MD034 -->
 

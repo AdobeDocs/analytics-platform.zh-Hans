@@ -7,7 +7,7 @@ exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '851'
-ht-degree: 17%
+ht-degree: 20%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_project_addnotes"
 >title="添加注释"
->abstract="添加有关正在保存的项目版本的注释。 这些笔记将与版本一起存储，并可通过&#x200B;**[!UICONTROL 项目]** > **[!UICONTROL 打开以前的版本]**&#x200B;菜单访问。"
+>abstract="添加有关正在保存的项目版本的注释。这些注释将会与该版本一起存储，并且可以通过&#x200B;**[!UICONTROL 项目]** > **[!UICONTROL 打开上一个版本]**&#x200B;菜单访问。"
 
 <!-- markdownlint-enable MD034 -->
 

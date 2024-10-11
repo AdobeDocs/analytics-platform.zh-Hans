@@ -6,7 +6,7 @@ hidefromtoc: true
 source-git-commit: 40b761928697d1d55e1177aa7b2b3c056739ecc9
 workflow-type: tm+mt
 source-wordcount: '318'
-ht-degree: 0%
+ht-degree: 14%
 
 ---
 
@@ -30,10 +30,10 @@ _数据设置_&#x200B;页面处理您的产品使用情况配置。 您可以使
 
 >[!CONTEXTUALHELP]
 >id="cja_product_usage_sandbox"
->title="Adobe Experience Platform沙盒"
->abstract="确定架构和数据集创建所在的Adobe Experience Platform沙盒。"
+>title="Adobe Experience Platform 沙盒"
+>abstract="确定在其下创建架构和数据集的 Adobe Experience Platform 沙盒。"
 
 >[!CONTEXTUALHELP]
 >id="cja_product_usage_data_retention"
 >title="覆盖数据保留窗口"
->abstract="缩短产品使用数据的可用性，以帮助降低成本或遵守隐私准则。"
+>abstract="缩短产品使用情况数据的可用性，以帮助降低成本或遵守隐私准则。"

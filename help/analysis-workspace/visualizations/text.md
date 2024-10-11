@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 25%
+ht-degree: 29%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 25%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_text_button"
 >title="文本"
->abstract="向项目添加用户定义的富文本可视化图表。"
+>abstract="向您的项目添加用户定义的富文本可视化图表。"
 
 <!-- markdownlint-enable MD034 -->
 

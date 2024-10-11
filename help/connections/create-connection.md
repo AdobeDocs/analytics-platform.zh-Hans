@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '3526'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsadded"
 >title="添加的记录数"
->abstract="在选定数据集的选定时间间隔内添加到连接的记录数（行数）。"
+>abstract="所选数据集的所选时间间隔期间添加到连接的记录数（行数）。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,7 +28,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsskipped"
 >title="跳过的记录数"
->abstract="在选定数据集的选定时间间隔内，为连接传输数据期间跳过的记录数（行数）。"
+>abstract="所选数据集的所选时间间隔期间为连接传输数据期间跳过的记录数（行数）。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -37,7 +37,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsdeleted"
 >title="删除的记录数"
->abstract="在选定数据集的选定时间间隔内从连接中删除的记录数（行数）"
+>abstract="所选数据集在所选时间间隔期间从连接删除的记录数（行数）"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -136,7 +136,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
 >title="匹配键"
->abstract="选择要在某个事件数据集中联接的字段。如果此列表为空，则可能尚未添加或配置事件数据集。"
+>abstract="在其中一个事件数据集中选择要加入的字段。如果此列表为空，则可能尚未添加或配置事件数据集。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -145,7 +145,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_connection_importnewdata"
 >title="导入新数据"
->abstract="任何添加到Experience Platform数据集中的新批次将自动添加到此连接中，并可供分析。"
+>abstract="任何添加到 Experience Platform 数据集中的新批次都会自动被添加到此连接中，并可用于分析。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -163,7 +163,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_connection_transformdataset"
 >title="转换数据集"
->abstract="此选项将会转换数据集，使其可用于 B2B 场景中基于人员的查找。开启后，数据集的转换是不可逆的。"
+>abstract="此选项将会转换数据集，以便其可用于 B2B 场景中的基于人员的查找。启用后，数据集的转换是不可逆的。"
 
 <!-- markdownlint-enable MD034 -->
 

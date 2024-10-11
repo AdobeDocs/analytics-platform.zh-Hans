@@ -7,7 +7,7 @@ role: User
 source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 4%
 >[!CONTEXTUALHELP]
 >id="cja_components_dateranges_endtime"
 >title="结束时间"
->abstract="结束时间始终为59秒。"
+>abstract="结束时间始终包括 59 秒。"
 
 <!-- markdownlint-enable MD034 -->
 

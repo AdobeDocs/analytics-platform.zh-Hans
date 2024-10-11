@@ -7,7 +7,7 @@ role: User
 source-git-commit: b9abcf48c5334d71639d7d96558a63611a4a491c
 workflow-type: tm+mt
 source-wordcount: '496'
-ht-degree: 15%
+ht-degree: 18%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 15%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_freeformtable_grandtotal"
 >title="总计"
->abstract="带有静态行的表或细分不支持全部总计"
+>abstract="带有统计行的表或细分不支持全部总计"
 
 <!-- markdownlint-enable MD034 -->
 

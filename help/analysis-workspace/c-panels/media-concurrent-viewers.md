@@ -7,11 +7,11 @@ role: User
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '1208'
-ht-degree: 36%
+ht-degree: 43%
 
 ---
 
-# “媒体并行查看者”面板 {#media-concurrent-viewers-panel}
+# “媒体并发查看者”面板 {#media-concurrent-viewers-panel}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 36%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaconcurrentviewers_panel"
 >title="媒体并行查看者"
->abstract="分析一段时间内的并发查看者、查看并发峰值或进行细分和比较。<br/><br>**粒度**：选择查看并行查看者所依据的时间段。<br/>**面板摘要数字**：<br/>用于显示每行具有日期或时间详细信息的摘要数字的选项。 最大值将显示并发峰值的详细信息。 “最小值”将显示低谷期的详细信息。<br/>**系列细分（可选）**：按区段、维度、维度项或日期范围细分可视化图表。 一次最多可查看10行。 细分仅限一个级别。"
+>abstract="分析一段时间内的并发查看者，查看并发峰值，或进行细分和比较。<br/><br>**粒度**：选择查看并发查看者的时段。<br/>**面板摘要数字**：<br/>选择显示每行带有日期或时间详细信息的摘要数字。“最大值”显示并发峰值的详细信息。“最小值”显示低谷期的详细信息。<br/>**系列细分（可选）**：按区段、维度、维度项或日期范围细分可视化图表。一次最多查看 10 行。细分仅限一个级别。"
 
 <!-- markdownlint-enable MD034 -->
 

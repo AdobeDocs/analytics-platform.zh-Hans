@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
 source-wordcount: '8842'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields"
 >title="派生字段"
->abstract="利用派生字段，可以通过可自定义的规则生成器来动态定义数据操作。之后，您可以将该派生的字段用作工作区中的组件（量度或维度），甚至可以进一步将它定义为数据视图中的组件。"
+>abstract="派生字段允许您通过可自定义的规则生成器动态定义数据操作。然后，您可以将该派生字段用作工作区中的组件（度量或维度），甚至可以在“数据”视图中进一步定义为组件。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -403,7 +403,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_casewhen"
 >title="Case When"
->abstract="此函数提供了根据一个或多个字段中定义的标准应用条件的功能。然后根据条件的顺序使用这些标准来定义新派生字段中的值。"
+>abstract="此函数提供了根据一个或多个字段中定义的标准应用条件的能力。然后使用这些标准根据条件序列来定义新派生字段中的值。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -875,7 +875,7 @@ Customer Journey Analytics使用以下默认容器模型：
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_deduplicate"
 >title="删除重复数据"
->abstract="使用此功能您可以配置字段，以在会话或人员级别仅以非重复的方式对值进行计数。此外，可以使用重复数据删除 ID 来确保根据给定的 ID（例如购买 ID），只使用一个值（第一个实例或最后一个实例）。"
+>abstract="此函数可以配置字段，以仅在线程或人员级别非重复地计算值。此外，可以使用重复数据删除 ID 来确保基于给定的 ID（例如购买 ID），仅使用一个值（第一个实例或最后一个实例）。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -969,7 +969,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_findandreplace"
->title="查找并替换"
+>title="查找和替换"
 >abstract="此函数提供了在选定字段中查找所有值并将这些值替换为新派生字段中的不同值的功能。"
 
 <!-- markdownlint-enable MD034 -->
@@ -1104,14 +1104,14 @@ Customer Journey Analytics使用以下默认容器模型：
 
 <!-- LOWERCASE -->
 
-### 小写 {#lowercase}
+### 小写字母 {#lowercase}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_lowercase"
->title="小写"
->abstract="此函数将整个字符串文本转换为小写值。"
+>title="小写字母"
+>abstract="该函数可将整个字符串文本转换为小写值。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1172,7 +1172,7 @@ Customer Journey Analytics使用以下默认容器模型：
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_math"
 >title="数学"
->abstract="此函数提供了在字段上执行数学运算的能力。该函数可用于执行基本算术运算，例如加法、减法、乘法和除法。"
+>abstract="该函数提供对字段执行数学运算的能力。该函数可用于执行基本算术运算，例如加法、减法、乘法和除法。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1263,7 +1263,7 @@ Customer Journey Analytics使用以下默认容器模型：
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_mergefields"
 >title="合并字段"
->abstract="利用此函数，可以从两个不同的字段获取值并在一个维度中包含它们各自的值。该规则首先检查是否设置了第一个值。如果未设置，它将使用第二个值，依此类推。"
+>abstract="此函数可以从两个不同的字段中获取值，并在单个维度中包含其各自的值。该规则首先会检查第一个值是否已设置。如果没有，那么它会使用第二个值，依此类推。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1339,7 +1339,7 @@ Customer Journey Analytics使用以下默认容器模型：
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_nextprevious"
 >title="下一个或上一个"
->abstract="此函数提供查看为给定字段收集的下一个或上一个值的功能。"
+>abstract="此函数可以查看针对给定字段收集的下一个或上一个值。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1630,7 +1630,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_summarize"
 >title="总结"
->abstract="此功能提供在事件、会话或人员级别聚合值的功能。根据选择字段的字段类型，会提供不同的选项。"
+>abstract="此函数提供在事件、线程或人员级别聚合值的能力。根据选择字段的字段类型，将会提供不同的选项。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1708,7 +1708,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_trim"
 >title="修剪"
->abstract="此函数提供了从字符串的开头或结尾裁剪空格或特殊字符的功能。并且还能够从字符串的前面或末尾指定用于返回值的字符数。"
+>abstract="此函数可以从字符串的开头或结尾修剪空格或特殊字符。此外，还可以指定用于返回值的字符数，无论是从字符串的前面还是末尾。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1932,7 +1932,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 | <p>删除重复数据</p> | <ul><li>5每个派生字段删除重复函数</li></ul> |
 | <p>查找和替换</p> | <ul><li>每个派生字段2个查找和替换函数</li></ul> |
 | <p>查询</p> | <ul><li>每个派生字段5个查找函数</li></ul> |
-| <p>小写</p> | <ul><li>每个派生字段有2个小写函数</li></ul> |
+| <p>小写字母</p> | <ul><li>每个派生字段有2个小写函数</li></ul> |
 | <p>数学</p> | <ul><li>每个派生字段25个操作</li><li>每个派生字段5个数学函数</li></ul> |
 | <p>合并字段</p> | <ul><li>每个派生字段有2个合并字段函数</li></ul> |
 | <p>下一个或上一个</p> | <ul><li>3每个派生字段的下一个或上一个函数</li></ul> |

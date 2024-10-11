@@ -6,7 +6,7 @@ role: User, Admin
 source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
 source-wordcount: '991'
-ht-degree: 19%
+ht-degree: 21%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 19%
 >[!CONTEXTUALHELP]
 >id="cja_components_alerts_timegranularity"
 >title="时间粒度"
->abstract="时间粒度是指查看警报的频率以及包含的内容"
+>abstract="时间粒度是指检查警报的频率以及将包含的内容"
 
 <!-- markdownlint-enable MD034 -->
 

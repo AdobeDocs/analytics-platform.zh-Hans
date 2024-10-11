@@ -6,7 +6,7 @@ exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '947'
-ht-degree: 24%
+ht-degree: 39%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 24%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_lasttouch"
 >title="最后接触"
->abstract="100%功劳归于访客看到的最后一个维度值。"
+>abstract="100% 的积分归于访问者看到的最后一个维度值。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -77,7 +77,7 @@ ht-degree: 24%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_firsttouch"
 >title="首次接触"
->abstract="100%功劳归于访客看到的第一个维度值。"
+>abstract="100% 的积分归于访问者看到的第一个维度值。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -86,7 +86,7 @@ ht-degree: 24%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_linear"
 >title="线性"
->abstract="信用平均分配到所有维度值。"
+>abstract="积分均匀分布于所有维度值上。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -95,7 +95,7 @@ ht-degree: 24%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_participation"
 >title="参与率"
->abstract="100%功劳归于访客看到的每个维度值。<br/>列总数被夸大。"
+>abstract="100% 的积分归于访客所见的每个维度值。<br/>列总数被夸大了。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -104,7 +104,7 @@ ht-degree: 24%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_sametouch"
 >title="同一接触"
->abstract="点数仅给予发生于转化同一事件的维度值。"
+>abstract="仅对与转化发生在同一事件上的维度值给予积分。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -113,7 +113,7 @@ ht-degree: 24%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_ushaped"
 >title="U 型"
->abstract="40%点数归于第一个维度值，40%归于最后一个维度值，20%分配到中间的维度值。"
+>abstract="第一个维度值占 40%，最后一个维度值占 40%，中间维度值占 20%。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -122,7 +122,7 @@ ht-degree: 24%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_jcurve"
 >title="J 曲线"
->abstract="60%点数归于最后一个维度值，20%归于第一个维度值，20%分配到中间的维度值。"
+>abstract="最后一个维度值占 60%，第一个维度值占 20%，中间维度值占 20%。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -131,7 +131,7 @@ ht-degree: 24%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_inversej"
 >title="反向 J"
->abstract="60%的点数归于第一个维度值，20%归于最后一个维度值，20%分配到中间的维度值。"
+>abstract="第一个维度值占 60%，最后一个维度值占 20%，中间维度值占 20%。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -140,7 +140,7 @@ ht-degree: 24%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_timedecay"
 >title="时间衰减"
->abstract="时间上最接近转化的Dimension值将获得最大的点数。"
+>abstract="距离转化时间最近的维度值将获得最多的积分。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -158,7 +158,7 @@ ht-degree: 24%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_algorithmic"
 >title="算法"
->abstract="信用是根据统计算法动态确定的。"
+>abstract="积分是根据统计算法动态确定的。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -173,7 +173,7 @@ ht-degree: 24%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_lookbackwindow"
 >title="回顾时间范围"
->abstract="此设置确定将应用于每次转换的数据归因窗口。"
+>abstract="此设置可以确定将要对每次转化应用的数据归因时间窗口。"
 
 <!-- markdownlint-enable MD034 -->
 

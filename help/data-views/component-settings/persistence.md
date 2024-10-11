@@ -20,7 +20,7 @@ ht-degree: 81%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_persistence"
 >title="持久性"
->abstract="配置应用于某个维度的默认分配模型。在报告中先应用分配，后应用筛选。"
+>abstract="配置应用于维度的默认分配模型。分配在报告中应用于过滤器之前。"
 
 <!-- markdownlint-enable MD034 -->
 

@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '96'
-ht-degree: 14%
+ht-degree: 32%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 14%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_donut_button"
 >title="圆环"
->abstract="创建圆环图可视化图表来比较各个部分在总体中所占的百分比，通常具有少量项目。"
+>abstract="创建一个可视化饼状图，以比较总数的百分比（通常具有少量项目）。"
 
 <!-- markdownlint-enable MD034 -->
 

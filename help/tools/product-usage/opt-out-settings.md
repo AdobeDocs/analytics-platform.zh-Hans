@@ -6,7 +6,7 @@ hidefromtoc: true
 source-git-commit: 8f2a340f59d8cdf97a5309ec20dc36f49b8f1129
 workflow-type: tm+mt
 source-wordcount: '213'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
@@ -27,5 +27,5 @@ Adobe使用客户端和服务器端跟踪的组合来收集贵组织的产品使
 
 >[!CONTEXTUALHELP]
 >id="cja_product_usage_opt_out_settings"
->title="选择退出用户"
->abstract="从产品使用情况跟踪中排除用户。"
+>title="选择退出的用户"
+>abstract="将用户排除在产品使用情况跟踪之外。"

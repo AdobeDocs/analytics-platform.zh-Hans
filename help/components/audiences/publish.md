@@ -7,7 +7,7 @@ role: User
 source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
 source-wordcount: '1948'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="cja_components_audiences_refreshfrequency"
 >title="刷新频率"
->abstract="查看重新评估受众成员资格的频率。<br/>一次性受众只评估一次。"
+>abstract="查看重新评估受众成员资格的频率。<br/>一次性受众仅会评估一次。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="cja_components_audiences_audiencelimit"
 >title="受众限制"
->abstract="根据刷新频率，刷新受众受到了限制。"
+>abstract="根据刷新频率，刷新受众会受到限制。"
 
 <!-- markdownlint-enable MD034 -->
 

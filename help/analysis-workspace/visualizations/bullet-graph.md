@@ -7,7 +7,7 @@ role: User
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '228'
-ht-degree: 23%
+ht-degree: 64%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 23%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_bullet_goalvalue"
 >title="目标值"
->abstract="**[!UICONTROL 高目标]**&#x200B;是您瞄准的主要目标。 **[!UICONTROL 低目标]**&#x200B;和&#x200B;**[!UICONTROL 中间目标]**&#x200B;创建低于[!UICONTROL 高目标]的范围。 注意：选中&#x200B;**[!UICONTROL 百分比]**&#x200B;选项时，将目标输入为整数。 例如：如果您的目标是百分之二十，则为`20`。"
+>abstract="**[!UICONTROL 高目标]**&#x200B;是您的主要目标。**[!UICONTROL 低目标]**&#x200B;和&#x200B;**[!UICONTROL 中目标]**&#x200B;创建的是低于[!UICONTROL 高目标]的范围。注意：选中&#x200B;**[!UICONTROL 百分比]**&#x200B;选项时，请以整数形式输入目标。例如：如果您的目标是百分之二十，则输入 `20`。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 23%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_bullet_button"
 >title="项目符号"
->abstract="创建项目符号图可视化图表，以显示量度与性能范围（目标）进行比较或衡量的方式。"
+>abstract="创建可视化项目符号图表来显示量度与性能范围（目标）之间的比较。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -44,7 +44,7 @@ ht-degree: 23%
 
 | 设置 | 描述 |
 |---|---|
-| **[!UICONTROL 项目符号选项]** | 在[!UICONTROL 项目符号]可视化图表中指定&#x200B;**[!UICONTROL 高目标]**、**[!UICONTROL 中间目标]**&#x200B;和&#x200B;**[!UICONTROL 低目标]**&#x200B;的值。 <br/>**[!UICONTROL 高目标&#x200B;]**是您瞄准的主要目标。**[!UICONTROL &#x200B;低目标&#x200B;]**和**[!UICONTROL &#x200B;中间目标&#x200B;]**创建低于高目标的范围。 注意：选中**[!UICONTROL &#x200B;百分比&#x200B;]**选项时，将目标输入为整数。 例如：如果您的目标是百分之二十，则为`20`。 |
+| **[!UICONTROL 项目符号选项]** | 在[!UICONTROL 项目符号]可视化图表中指定&#x200B;**[!UICONTROL 高目标]**、**[!UICONTROL 中间目标]**&#x200B;和&#x200B;**[!UICONTROL 低目标]**&#x200B;的值。 <br/>**[!UICONTROL 高目标&#x200B;]**是您的主要目标。**[!UICONTROL &#x200B;低目标&#x200B;]**和**[!UICONTROL &#x200B;中间目标&#x200B;]**创建低于高目标的范围。 注意：选中**[!UICONTROL &#x200B;百分比&#x200B;]**选项时，请以整数形式输入目标。例如：如果您的目标是百分之二十，则输入 `20`。 |
 
 >[!MORELIKETHIS]
 >

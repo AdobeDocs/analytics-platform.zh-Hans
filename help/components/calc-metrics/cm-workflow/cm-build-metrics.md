@@ -6,7 +6,7 @@ exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
 source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
 source-wordcount: '1526'
-ht-degree: 6%
+ht-degree: 10%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_productcompatibility"
 >title="产品兼容性"
->abstract="指示可以在Customer Journey Analytics中使用此计算指标的位置，例如在Analysis Workspace、Report Builder等。 某些计算量度无法用于实验。"
+>abstract="表示此计算量度可用于 Customer Journey Analytics，例如 Analysis Workspace、Report Builder 等。某些计算量度无法与试验相结合。"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="在实验中使用计算量度。"
 
 <!-- markdownlint-enable MD034 -->
@@ -27,7 +27,7 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_externalid"
 >title="外部 ID"
->abstract="更改外部ID可能会影响计算量度在外部源（如商业智能工具）中的显示方式"
+>abstract="更改外部 ID 可能会影响计算量度在外部源（例如商业智能工具）中的显示方式"
 
 <!-- markdownlint-enable MD034 -->
 

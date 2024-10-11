@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 40%
+ht-degree: 44%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 40%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_attribution_button"
 >title="归因"
->abstract="使用任意维度和转化指标，快速比较和可视化任意数量的归因模型"
+>abstract="使用任意维度和转化量度，快速比较和可视化任意数量的归因模型"
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ 面板"
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_attribution_panel"
 >title="归因面板"
->abstract="使用任意维度和转化指标，快速比较和可视化任意数量的归因模型。<br/><br/>**参数&#x200B;**<br/>**渠道**<br/>&#x200B;归因的对比维度。此维度可以是营销渠道、营销活动或任何其他维度。<br/>**模型**<br/>&#x200B;该模型可以确定如何将点数分配给各个接触点。<br/>**回顾时间范围**<br/>&#x200B;此设置确定应用于每次转换的数据归因时间范围。"
+>abstract="使用任意维度和转化指标，快速比较和可视化任意数量的归因模型。<br/><br/>**参数&#x200B;**<br/>**渠道**<br/>&#x200B;归因的对比维度。该维度可以是营销渠道、营销活动或任何其他维度。<br/>**模型**<br/>&#x200B;该模型可以确定如何将点数分配给各个接触点。<br/>**回顾窗口**<br/>&#x200B;此设置可以确定应用于每次转化的数据归因窗口。"
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ 面板"
 
 <!-- markdownlint-enable MD034 -->

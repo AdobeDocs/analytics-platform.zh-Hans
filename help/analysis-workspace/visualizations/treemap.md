@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '133'
-ht-degree: 23%
+ht-degree: 32%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 23%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_treemap_button"
 >title="树状图"
->abstract="创建树形图可视化以显示具有嵌套矩形的分层（树结构）数据。"
+>abstract="创建树状图可视化图表，以使用嵌套矩形显示分层（树状结构）数据。"
 
 <!-- markdownlint-enable MD034 -->
 

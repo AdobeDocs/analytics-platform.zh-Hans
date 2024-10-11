@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 66%
+ht-degree: 77%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 66%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_scatter_button"
 >title="散点图"
->abstract="创建一个散点可视化图表，以显示维度项目与最多三个量度之间的关系。"
+>abstract="创建一个可视化散点图，显示维度项目与最多三个量度之间的关系。"
 
 <!-- markdownlint-enable MD034 -->
 

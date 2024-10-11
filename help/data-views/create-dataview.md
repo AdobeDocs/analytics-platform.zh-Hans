@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
 workflow-type: tm+mt
 source-wordcount: '1832'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -70,9 +70,9 @@ ht-degree: 96%
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_dataviewsinadobejourneyoptimizer"
->title="Journey Optimizer中的数据视图"
->abstract="Journey Optimizer需要使用配置了Customer Journey Analytics的数据视图。<br/>启用此选项可使其成为Adobe Journey Optimizer报表中使用的默认数据视图。"
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#connection" text="添加了哪些组件和数据集。"
+>title="Journey Optimizer 中的数据视图"
+>abstract="Journey Optimizer 需要使用与 Customer Journey Analytics 一起配置的数据视图。<br/>启用此选项可使其成为 Adobe Journey Optimizer 报告中使用的默认数据视图。"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/integrations/ajo#connection" text="添加了哪些组件和数据集。"
 
 <!-- markdownlint-enable MD034 -->
 

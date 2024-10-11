@@ -7,18 +7,18 @@ role: User
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 41%
+ht-degree: 54%
 
 ---
 
-# “媒体播放耗时”面板 {#media-playback-time-spent-panel}
+# 媒体播放耗时面板 {#media-playback-time-spent-panel}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaplaybacktimespent_button"
 >title="媒体播放耗时"
->abstract="创建一个面板以分析一段时间的视频使用情况，并具有各种级别的粒度，以及分解和比较的功能。"
+>abstract="创建一个面板来分析一段时间内的视频消耗情况，其中具有不同级别的粒度，以及细分和比较的能力。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 41%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaplaybacktimespent_panel"
 >title="媒体播放耗时"
->abstract="分析一段时间的视频观看情况，选择各种粒度，进行细分和比较。<br/><br/>**粒度**：选择查看并行查看者所依据的时间段。<br/>**面板摘要数字（可选）**：用于显示每行带有日期或时间详细信息的摘要数字的选项。 “最大值”将显示播放峰值时间点的详细信息。 “最小值”将显示低谷期的详细信息。 “总和”将显示播放耗时的总和的详细信息。<br/>**系列细分（可选）**：按区段、维度、维度项或日期范围细分可视化图表。 一次最多可查看10行。 细分仅限一个级别。<br/>**时间格式**：用于以小时或分钟为单位显示可视化图表时间格式的选项。"
+>abstract="分析一段时间内的视频消耗情况，选择各种粒度，并进行细分和比较。<br/><br/>**粒度**：选择查看并发查看者的时段。<br/>**面板摘要数字（可选）**：选择显示每行带有日期或时间详细信息的摘要数字。最大值将会显示播放耗时峰值的详细信息。最小值显示低谷期的详细信息。总和显示播放耗时总和的详细信息。<br/>**系列细分（可选）**：按区段、维度、维度项或日期范围细分可视化图表。一次最多查看 10 行。细分仅限一个级别。<br/>**时间格式**：以小时或分钟显示可视化时间格式的选项。"
 
 <!-- markdownlint-enable MD034 -->
 

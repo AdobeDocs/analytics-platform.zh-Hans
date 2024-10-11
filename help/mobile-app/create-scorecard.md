@@ -8,7 +8,7 @@ solution: Customer Journey Analytics
 source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
 workflow-type: tm+mt
 source-wordcount: '2672'
-ht-degree: 67%
+ht-degree: 68%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 67%
 >[!CONTEXTUALHELP]
 >id="cja_mobilescorecard_annotations"
 >title="批注"
->abstract="可以在工作区项目内部的组件管理器中创建注释。"
+>abstract="可以在组件管理器或工作区项目内部创建注释。"
 
 <!-- markdownlint-enable MD034 -->
 

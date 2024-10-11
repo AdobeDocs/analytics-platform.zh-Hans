@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '467'
-ht-degree: 44%
+ht-degree: 50%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 44%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_summarynumber_button"
 >title="摘要数字"
->abstract="创建一个显示总计和小计的可视化图表。"
+>abstract="创建显示总计和小计的可视化效果。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -47,7 +47,7 @@ ht-degree: 44%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_summarychange_button"
 >title="概要变化"
->abstract="创建一个可视化图表，以显示两个数字之间的增量（变化）"
+>abstract="创建一个显示两个数字之间增量（变化）的可视化图表"
 
 <!-- markdownlint-enable MD034 -->
 

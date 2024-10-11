@@ -7,7 +7,7 @@ role: User
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '168'
-ht-degree: 17%
+ht-degree: 25%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_area_button"
 >title="面积图"
->abstract="创建面积图可视化以表示多个量度的交集。"
+>abstract="创建一份可视化面积图来表示多个量度的交集。"
 
 <!-- markdownlint-enable MD034 -->
 

@@ -7,7 +7,7 @@ exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '1796'
-ht-degree: 18%
+ht-degree: 27%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 18%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaminuteaverageaudience_button"
->title="媒体平均分钟观众数"
+>title="媒体平均受众访问分钟数"
 >abstract="创建一个面板来分析特定内容或特定时段内的平均受众访问分钟数。"
 
 
@@ -27,10 +27,10 @@ ht-degree: 18%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaaverageminuteaudience_panel"
->title="媒体平均分钟观众数"
->abstract="显示特定媒体内容或在自定义时段内的性能。<br/><br/>**常规参数&#x200B;**<br/>**计算**&#x200B;的量度：选择要用于面板的量度。 选择&#x200B;**特定内容**&#x200B;以根据内容长度分析特定内容或事件的平均受众访问分钟数。 **选择自定义时段**&#x200B;以分析在自定义选定时段内平均受众访问分钟数的变化情况。<br/>**报告维度**：选择按&#x200B;**内容ID**&#x200B;维度的&#x200B;**视频名称**&#x200B;报告。 仅在选择了“特定内容”作为量度时可用。<br/>**粒度**：选择报表的粒度。 仅在选择自定义时段作为量度时可用。<br/>**过滤内容依据（可选）**：选择特定节目、季节、集数，或选择自定义维度以过滤内容。<br/><br/>**高级设置&#x200B;**<br/>**表设置**：选择是否在表中显示计算值。<br/>**逗留时间量度**：选择要用于特定内容计算的逗留时间量度。 仅在选择了“特定内容”作为量度时可用。"
->additional-url="https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel#specific-content" text="特定内容"
->additional-url="https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel#custom-time-period" text="自定义时段"
+>title="媒体平均受众访问分钟数"
+>abstract="显示特定媒体内容或自定义时段内的性能。<br/><br/>**常规参数&#x200B;**<br/>**计算量度**：选择面板使用的量度。选择&#x200B;**特定内容**&#x200B;以根据内容长度分析特定内容或事件的平均受众访问分钟数。**选择自定义时段**&#x200B;来分析平均受众访问分钟数在自定义选定时段内的变化情况。<br/>**报告维度**：选择按&#x200B;**内容 ID** 维度的&#x200B;**视频名称**&#x200B;进行报告。仅当您选择特定内容作为量度时可用。<br/>**粒度**：选择报告的粒度。仅当您选择自定义时段作为量度时可用。<br/>**按以下条件过滤内容（可选）**：选择特定的节目、季、剧集，或选择自定义维度来过滤内容。<br/><br/>**高级设置&#x200B;**<br/>**表格设置**：选择是否在表格中显示计算值。<br/>**逗留时间量度**：选择您想要用于特定内容计算的逗留时间量度。仅当您选择特定内容作为量度时可用。"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel#specific-content" text="特定内容"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel#custom-time-period" text="自定义时段"
 
 <!-- markdownlint-enable MD034 -->
 

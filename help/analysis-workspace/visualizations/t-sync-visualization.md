@@ -8,7 +8,7 @@ role: User
 source-git-commit: 388e008f4ee092dd8224bfacd020cdf762d4fb82
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 17%
+ht-degree: 27%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 17%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_freeformtable_lockselection_showtable"
->title="显示表"
->abstract="选择&#x200B;**[!UICONTROL 显示表]**&#x200B;将为当前可视化图表生成新的数据源，它独立于原始数据源。"
+>title="显示表格"
+>abstract="选择&#x200B;**[!UICONTROL 显示表格]**&#x200B;将会为当前可视化图表生成一个新的数据源，并将其与原始数据源分开。"
 
 <!-- markdownlint-enable MD034 -->
 
