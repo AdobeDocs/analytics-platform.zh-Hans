@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
+source-git-commit: 1a0422144b795be7f129b13208e93f8d3645a8e7
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 86%
+source-wordcount: '954'
+ht-degree: 93%
 
 ---
 
@@ -42,18 +42,18 @@ ht-degree: 86%
 + Customer Journey Analytics 和 Adobe Analytics {#compare-aa-cja}
    + 升级到 Customer Journey Analytics {#upgrade-to-cja}
       + [快速入门](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
-      + [选择你的升级路径](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
+      + [选择您的升级路径](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
       + [向平台发送数据](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + [保留历史数据](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
    + 与 Adobe Analytics 进行比较 {#cja-aa-comparison}
       + [概述](../getting-started/aa-vs-cja/overview.md)
-      + [使用Adobe Analytics数据](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+      + [实用 Adobe Analytics 数据 ](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [功能支持](../getting-started/aa-vs-cja/cja-aa.md)
       + [比较术语](../getting-started/aa-vs-cja/terminology.md)
       + [比较数据处理](../getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [环境](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
-      + [Analytics处理与数据准备](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
-      + [Analytics标识](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
+      + [分析处理与数据准备](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
+      + [分析标识](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
    + [Adobe Analytics 的演变](../getting-started/aa-to-cja.md)
    + [适用于 Adobe Analytics 用户的用户指南](../getting-started/aa-to-cja-user.md)
 
@@ -87,7 +87,7 @@ ht-degree: 86%
       + [行为](../data-views/component-settings/behavior.md)
       + [格式](../data-views/component-settings/format.md)
       + [包括/排除值](../data-views/component-settings/include-exclude-values.md)
-      + [指标去重](../data-views/component-settings/metric-deduplication.md)
+      + [量度去重](../data-views/component-settings/metric-deduplication.md)
       + [无值选项](../data-views/component-settings/no-value-options.md)
       + [持久性](../data-views/component-settings/persistence.md)
       + [子字符串](../data-views/component-settings/substring.md)
@@ -100,7 +100,9 @@ ht-degree: 86%
    + [标签和政策](../data-views/data-governance.md)
 
 + 工具 {#tools}
-   + 产品使用情况{#product-usage}
+   + 资产转移{#asset-transfer}
+      + [转移资产](../tools/asset-transfer/transfer-assets.md)
+   + 产品使用情况 {#product-usage}
       + [概述](../tools/product-usage/usage-overview.md)
       + [数据设置](../tools/product-usage/data-settings.md)
       + [“选择禁用”设置](../tools/product-usage/opt-out-settings.md)
@@ -122,7 +124,7 @@ ht-degree: 86%
       + [热键（快捷方式）](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [调色板](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [视图密度](../analysis-workspace/build-workspace-project/view-density.md)
-   + 可视化 {#visualizations}
+   + 可视化内容 {#visualizations}
       + [概述](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [管理数据源](../analysis-workspace/visualizations/t-sync-visualization.md)
       + [智能题注](../analysis-workspace/visualizations/intelligent-captions.md)
@@ -134,7 +136,7 @@ ht-degree: 86%
             + [行设置](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [动态项和静态项](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
          + [排序和过滤表格](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
-         + [工作区总计](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+         + [Workspace 总计](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + 同类群组表 {#cohort-table}
          + [概述](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [配置](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
@@ -151,18 +153,18 @@ ht-degree: 86%
       + 历程画布 {#journey-canvas}
          + [概述](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
          + [配置](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
-         + [疑难解答](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
-      + [面积图（栈叠）](../analysis-workspace/visualizations/area.md)
-      + [条形图（栈叠）](../analysis-workspace/visualizations/bar.md)
+         + [疑难解答 ](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
+      + [面积（堆叠）](../analysis-workspace/visualizations/area.md)
+      + [条形图（堆叠）](../analysis-workspace/visualizations/bar.md)
       + [项目符号](../analysis-workspace/visualizations/bullet-graph.md)
       + [组合](../analysis-workspace/visualizations/combo-charts.md)
       + [圆环图](../analysis-workspace/visualizations/donut.md)
       + [直方图](../analysis-workspace/visualizations/histogram.md)
-      + [水平条形图（栈叠）](../analysis-workspace/visualizations/horizontal-bar.md)
-      + [关键指标摘要](../analysis-workspace/visualizations/key-metric.md)
+      + [水平条形图（堆叠）](../analysis-workspace/visualizations/horizontal-bar.md)
+      + [关键量度摘要](../analysis-workspace/visualizations/key-metric.md)
       + [线形图](../analysis-workspace/visualizations/line.md)
       + [散点图](../analysis-workspace/visualizations/scatterplot.md)
-      + [概要数字和变化](../analysis-workspace/visualizations/summary-number-change.md)
+      + [摘要数字和变化](../analysis-workspace/visualizations/summary-number-change.md)
       + [节头](/help/analysis-workspace/visualizations/section-header.md)
       + [文本](../analysis-workspace/visualizations/text.md)
       + [树形图](../analysis-workspace/visualizations/treemap.md)
@@ -173,10 +175,10 @@ ht-degree: 86%
       + [归因](../analysis-workspace/c-panels/attribution.md)
       + [试验](../analysis-workspace/c-panels/experimentation.md)
       + [自由格式表](../analysis-workspace/c-panels/freeform-panel.md)
-      + [媒体平均分钟观众数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
+      + [媒体受众平均逗留分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
       + [媒体并行查看者](../analysis-workspace/c-panels/media-concurrent-viewers.md)
       + [媒体播放耗时](../analysis-workspace/c-panels/media-playback-time-spent.md)
-      + [下一个或上一个项目](../analysis-workspace/c-panels/next-previous.md)
+      + [下一项或上一项](../analysis-workspace/c-panels/next-previous.md)
       + [快速洞察](../analysis-workspace/c-panels/quickinsight.md)
    + 策划、共享和计划项目 {#curate-share}
       + [概述](../analysis-workspace/curate-share/send-schedule-files.md)
@@ -241,13 +243,13 @@ ht-degree: 86%
    + [概述](../components/overview.md)
    + [使用 Analysis Workspace 中的组件](../components/use-components-in-workspace.md)
    + [添加组件描述](../components/add-component-descriptions.md)
-   + 批注 {#annotations}
-      + [批注概述](../components/annotations/overview.md)
-      + [创建批注](../components/annotations/create-annotations.md)
-      + [管理批注](../components/annotations/manage-annotations.md)
-      + [查看批注](../components/annotations/view-annotations.md)
-      + [移动批注](../components/annotations/mobile-annotations.md)
-   + [计划项目](../components/scheduled-projects-manager.md)
+   + 注释 {#annotations}
+      + [注释概述](../components/annotations/overview.md)
+      + [创建注释](../components/annotations/create-annotations.md)
+      + [管理注释](../components/annotations/manage-annotations.md)
+      + [查看注释](../components/annotations/view-annotations.md)
+      + [移动注释](../components/annotations/mobile-annotations.md)
+   + [计划的项目](../components/scheduled-projects-manager.md)
    + 受众{#audiences}
       + [受众概述](../components/audiences/audiences-overview.md)
       + [创建并发布受众](../components/audiences/publish.md)
@@ -258,7 +260,7 @@ ht-degree: 86%
       + [划分维度](../components/dimensions/t-breakdown-fa.md)
       + [时间划分维度](../components/dimensions/time-parting-dimensions.md)
       + [高基数维度](../components/dimensions/high-cardinality.md)
-   + [指标](../components/apply-create-metrics.md)
+   + [量度](../components/apply-create-metrics.md)
    + 过滤器 {#cja-filters}
       + [概述](../components/filters/filters-overview.md)
       + [创建过滤器](../components/filters/create-filters.md)
@@ -273,15 +275,15 @@ ht-degree: 86%
       + [复制过滤器](../components/filters/filters-copy.md)
       + [管理过滤器](../components/filters/manage-filters.md)
       + [运算符](../components/filters/operators.md)
-   + 计算指标 {#cja-calcmetrics}
+   + 计算量度 {#cja-calcmetrics}
       + [概述](../components/calc-metrics/calc-metr-overview.md)
-      + 计算量度工作流程 {#cm-workflow}
+      + 计算量度工作流 {#cm-workflow}
          + [创建计算量度](../components/calc-metrics/cm-workflow/cm-workflow.md)
          + [生成计算量度](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [查找量度](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [量度类型和归因](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
          + [生成参与率量度](../components/calc-metrics/cm-workflow/participation-metric.md)
-         + [过滤指标](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
+         + [过滤量度](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [堆叠和替换过滤器](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [筛选计算量度](../components/calc-metrics/cm-workflow/cm-filter.md)
          + [将计算量度标记为收藏内容](../components/calc-metrics/cm-workflow/cm-favorite.md)
@@ -292,7 +294,7 @@ ht-degree: 86%
          + [共享计算量度](../components/calc-metrics/cm-workflow/cm-sharing.md)
          + [管理计算量度](../components/calc-metrics/cm-workflow/cm-manager.md)
          + [示例](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
-      + [默认计算指标](../components/calc-metrics/default-calcmetrics.md)
+      + [默认计算量度](../components/calc-metrics/default-calcmetrics.md)
       + [基本功能](../components/calc-metrics/cm-functions.md)
       + [高级功能](../components/calc-metrics/cm-adv-functions.md)
    + 日期范围 {#cja-date-ranges}
@@ -305,7 +307,7 @@ ht-degree: 86%
       + [概述](/help/components/c-intelligent-alerts/intelligent-alerts.md)
       + [创建警报](/help/components/c-intelligent-alerts/alert-builder.md)
       + [管理警报](/help/components/c-intelligent-alerts/alert-manager.md)
-      + [功能比较](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
+      + [功能比较 ](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
       + [用例](/help/components/c-intelligent-alerts/alerts-use-cases.md)
    + 导出 {#exports}
       + [配置云导出帐户](/help/components/exports/cloud-export-accounts.md)
@@ -369,7 +371,7 @@ ht-degree: 86%
       + [收錄和使用 Experience Platform 受众](../use-cases/data-ingestion/ingest-aep-segments.md)
    + 数据视图 {#data-views}
       + [数据视图用例](../use-cases/data-views/data-views-usecases.md)
-      + [使用绑定维度和指标](../use-cases/data-views/binding-dimensions-metrics.md)
+      + [使用绑定维度和量度](../use-cases/data-views/binding-dimensions-metrics.md)
       + [使用摘要数据](../use-cases/data-views/summary-data.md)
    + 数据导出 {#data-export}
       + [概述](../use-cases/data-export/overview.md)
