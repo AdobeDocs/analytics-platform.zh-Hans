@@ -1,17 +1,17 @@
 ---
-title: 将 Adobe Journey Optimizer 决策管理与 Adobe Customer Journey Analytics 集成
+title: 集成Adobe Journey Optimizer决策管理
 description: 引入 Adobe Journey Optimizer 决策管理生成的数据，并使用 Customer Journey Analytics 中的 Analysis Workspace 对其进行分析。
 exl-id: fde45264-46cf-4c68-9872-7fb739748f21
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 027ff3983c67481dd8284667d97f59f427b18928
+source-git-commit: 979564d0249abadd454ce43aba9aeae2c78a44f0
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 100%
+source-wordcount: '701'
+ht-degree: 98%
 
 ---
 
-# 将决策管理与 Adobe Customer Journey Analytics 集成
+# 集成决策管理
 
 
 Adobe Journey Optimizer [决策管理](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html)通过集中的营销优惠库和决策引擎（该引擎可将规则和约束应用于 Adobe Experience Platform 创建的丰富实时用户档案）帮助您在适当的时间向客户发送合适的优惠，从而轻松实现个性化。

@@ -5,10 +5,10 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
+source-git-commit: 979564d0249abadd454ce43aba9aeae2c78a44f0
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 94%
+source-wordcount: '570'
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_settings"
 >title="组件设置"
->abstract="查看和配置名称、描述以及其他与组件相关的设置。<br/><br/>**参数&#x200B;**<br/>**隐藏报告中的组件**：选中此框将在报告中隐藏此组件，使非管理员用户无法查看。 管理员仍可通过在Workspace项目中选择&#x200B;**[!UICONTROL 显示所有组件]**&#x200B;来访问该组件。"
+>abstract="查看和配置名称、描述以及其他与组件相关的设置。<br/><br/>**参数&#x200B;**<br/>**隐藏报告中的组件**：选中此框将会在报告中对非管理员用户隐藏此组件。管理员仍可通过在工作区项目中选择&#x200B;**[!UICONTROL 显示所有组件]**&#x200B;来访问该组件。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -43,7 +43,7 @@ ht-degree: 94%
 | [!UICONTROL 组件名称] | 必填。使您可指定在分析工作区中显示的易记名称。可将组件重命名以给予其一个数据视图专属的名称。 |
 | [!UICONTROL 描述] | 可选，但推荐。向其他用户提供有关组件的信息。 |
 | [!UICONTROL 标记] | 可选。可让您使用自定义或现成标记为组件添加标签，以便于在分析工作区 UI 中搜索/筛选。 |
-| [!UICONTROL 上下文标签] | 可选。可应用于组件的现有系统定义标签的下拉列表。可能需要这些标签来定义用于在 Analysis 工作区项目或面板中报告的一组组件。 |
+| [!UICONTROL 上下文标签] | 可选。可应用于组件的现有系统定义标签的下拉列表。可能需要这些标签来定义一组可以在实验报表中使用Analysis Workspace项目中的[实验面板](/help/analysis-workspace/c-panels/experimentation.md)的组件。 有关详细信息，请参阅[与Journey Optimizer](/help/integrations/ajo.md#data-view)和[Target报表](/help/integrations/at.md)集成。 |
 | [!UICONTROL 架构字段名] | 架构字段的名称。 |
 | [!UICONTROL 数据集类型] | 必填。显示组件来自哪个数据集类型（事件、查询或个人资料）的不可编辑字段。 |
 | [!UICONTROL 数据集] | 一个不可编辑的字段，它显示该组件来源于哪个数据集。此字段可以包含多个数据集。 |
