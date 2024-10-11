@@ -4,10 +4,10 @@ title: 历程画布
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 7a8c1dd1135f827acfe09f39823c6fbefbcd444d
+source-git-commit: 609aac6e0a2231b15296945dbf9dd4f917fb9a19
 workflow-type: tm+mt
-source-wordcount: '1697'
-ht-degree: 2%
+source-wordcount: '1606'
+ht-degree: 1%
 
 ---
 
@@ -82,32 +82,31 @@ ht-degree: 2%
 
 * 在历程的任何节点上添加划分维度，以查看该特定节点的其他数据
 
-## 在历程画布和流失可视化图表之间进行选择
+## 在历程画布、流失或流量可视化图表之间进行选择
 
-历程画布可视化图表与[流失可视化图表](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)类似，因为这两个可视化图表都显示了人员从何处离开（流失）或继续通过（流过）预定义的页面序列。
-
-然而，两者之间有着重要的区别。
+历程画布可视化图表与[流失可视化图表](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)和[流量可视化图表](/help/analysis-workspace/visualizations/c-flow/flow.md)相似，但存在重要差异。
 
 ### 了解差异
 
-下表显示了“历程画布”可视化图表和“流失”可视化图表支持的分析类型：
+<!-- Information in this snippet is shared between Journey canvas, Fallout, and Flow visualization docs -->
 
-| 功能 | 历程画布可视化 | 流失可视化 |
-|---------|----------|---------|
-| 线性历程 | 是 | 是 |
-| 具有多个入口点和路径的非线性历程 | 是 | 否 |
-| Adobe Journey Optimizer历程 | 是 | 否 |
-| 主要量度 | 任何量度，包括计算量度 | 只能使用会话或用户量度 |
-| 辅助指标 | 是<p>任何量度，包括计算量度</p> | 否 |
-| 比较过滤器 | 否 | 是<p>比较[无限数量的过滤器](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md#compare-filters-in-fallout)</p> |
+{{journey-visualization-comparisons}}
 
-### 选择要使用的可视化图表
+### 何时使用历程画布
 
-在选择使用历程画布或流失之前，请确保您[了解这两者之间的差异](#understand-the-differences)。
+历程画布对于以下各项至关重要：
 
-如果您的流失分析仅涉及具有单个已知开始和结束的线性历程，请考虑使用[流失可视化图表](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)作为这些更直接的用户历程的更简单选项。
+* 涉及具有多个入口点和路径的历程的流失分析。
 
-历程画布对于涉及具有多个入口点和路径的历程的流失分析或对于分析在Journey Optimizer中创建的历程至关重要。
+* 具有多个入口点和路径的非线性历程，并具有预定义的页面序列。
+
+* 基于预定义历程的探索性Ad Hoc Analysis。
+
+* 需要会话、人员或发生次数以外的主要指标的分析。
+
+* 对源自Adobe Journey Optimizer的历程的更深入分析。
+
+使用[上表](#understand-the-differences)了解历程画布、流失和流量可视化图表之间的差异。
 
 ## 分析Journey Optimizer历程
 

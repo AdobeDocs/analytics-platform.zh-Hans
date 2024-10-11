@@ -4,10 +4,10 @@ title: 流量概述
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 609aac6e0a2231b15296945dbf9dd4f917fb9a19
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 73%
+source-wordcount: '362'
+ht-degree: 53%
 
 ---
 
@@ -56,3 +56,22 @@ ht-degree: 73%
 >[配置流量可视化图表](/help/analysis-workspace/visualizations/c-flow/create-flow.md)。
 >
 
+## 在“流量”、“流失”或“历程画布”可视化之间选择
+
+流量可视化图表与[流失可视化图表](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)和[历程画布可视化图表](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)相似，但存在重要差异。
+
+### 了解差异
+
+<!-- Information in this snippet is shared between Journey canvas, Fallout, and Flow visualization docs -->
+
+{{journey-visualization-comparisons}}
+
+### 何时使用流量
+
+流量可视化图表最适合：
+
+* 探索性的Ad Hoc Analysis，了解路径上的下一个即时接触点。 (对于具有预定义历程序列的旅程，或者使用最终路径的旅程，请使用页面画布。)
+
+* 具有多个入口点和路径的非线性历程。 (对于具有预定义历程序列的旅程，使用页面画布。)
+
+使用[上表](#understand-the-differences)了解“流量”、“流失”和“历程”画布之间的区别。
