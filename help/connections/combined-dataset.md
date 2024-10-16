@@ -5,7 +5,7 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 50019cc5c66eee98f02d24bc55f3d993d9114dd0
+source-git-commit: 8241bcc4a2653da456c1577eb95d5504ca118cd9
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 33%
@@ -66,7 +66,7 @@ ht-degree: 33%
 
 为了说明架构路径的重要性，请考虑此方案。 在第一个数据集中，`string_color`基于架构路径`_experience.whatever.string_color`，在架构路径`_experience.somethingelse.string_color`的第二个数据集中。 在此方案中，数据&#x200B;**不是**&#x200B;合并到结果合并数据集中的一列中。 相反，结果是在组合数据集中的两个`string_color`列：
 
-| ID | timestamp | 体验(_E)。<br/>随便。<br/>string_color | 体验。<br/>其他内容。<br/>string_color | string_animal | string_shape | metric_a | metric_b |
+| ID | timestamp | 体验(_E)。<br/>随便。<br/>string_color | 体验(_E)。<br/>其他内容。<br/>string_color | string_animal | string_shape | metric_a | metric_b |
 | --- | --- | --- | --- | --- | --- | ---: | ---:|
 | user_310 | 1月1日早上7时02分 | 红色 | | Fox | | | |
 | user_310 | 1月1日早上7时04分 | | | | | 2 | |

@@ -3,16 +3,16 @@ description: 顺序过滤器是使用THEN运算符定义过滤器条件顺序的
 title: 顺序过滤器
 feature: Filters
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: d6ea541de7c8b97151f16a01f61a002c5b877e7c
 workflow-type: tm+mt
-source-wordcount: '2491'
+source-wordcount: '2460'
 ht-degree: 2%
 
 ---
 
 # 顺序过滤器
 
-您可以使用Then逻辑运算符创建顺序过滤器，而不是在组件、容器和组件或容器之间使用And或Or逻辑运算符。 Then逻辑运算符表示出现一个筛选条件，然后出现另一个筛选条件。
+在组件、容器和组件或容器之间使用Then逻辑运算符创建顺序过滤器。 Then逻辑运算符表示出现一个筛选条件，然后出现另一个筛选条件。
 
 +++ 以下是一段演示顺序区段的视频。
 
@@ -23,13 +23,13 @@ ht-degree: 2%
 +++
 
 
-顺序筛选器具有一些[基本功能](#basics)以及可以配置的其他选项，以增加顺序筛选器的复杂性：
+顺序筛选器具有一些[基本功能](#basics)和其他选项，您可以配置这些选项来增加顺序筛选器的复杂性：
 
 ![顺序筛选器](assets/sequential-filter.gif)
 
 * 序列筛选器定义中Then逻辑的[After和within](#after-and-within)约束：
 
-* [包含哪些数据作为过滤器定义的整体序列的一部分](#include)。 或者，对于定义为容器一部分的序列。 默认情况下，所有匹配数据都将被考虑，由![用户组](/help/assets/icons/UserGroup.svg) [!UICONTROL 包含每个人]识别。
+* [包含哪些数据作为过滤器定义的整体序列的一部分](#include)。 或者，对于定义为容器一部分的序列。 默认情况下，会考虑所有匹配数据。 该数据由![用户组](/help/assets/icons/UserGroup.svg) [!UICONTROL 包含每个人]标识。
 
    * 选择![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]**&#x200B;以仅考虑序列之前的数据。
    * 选择![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After After Sequence]**&#x200B;以仅考虑序列之后的数据。
@@ -50,7 +50,7 @@ ht-degree: 2%
 
 #### 简单序列
 
-识别查看了某个页面然后又查看了另一个页面的人员。 事件级别的数据将过滤此序列，而不考虑以前、过去或临时人员会话或会话之间发生的页面查看时间或数量。
+识别查看了某个页面然后又查看了另一个页面的人员。 使用此序列过滤事件级别的数据。 不考虑以前、过去或临时人员会话，也不考虑会话之间发生的页面查看时间或次数。
 
 ![顺序筛选器包括每个人](assets/sequence-include-everyone.png)
 
@@ -75,7 +75,7 @@ ht-degree: 2%
 
 #### 嵌套序列
 
-识别人员先访问一个页面，然后进行涉及其他两个页面的跟进会话的所有会话。 例如，确定人员首先访问主页，然后访问类别1页面，然后又访问其他会话，其中每个会话访问类别2和类别3页面。
+确定以下所有会话：用户先访问一个页面，然后再访问另一个页面，然后进行涉及其他两个页面的跟进会话。 例如，确定人员首先访问主页，然后访问类别1页面，然后又访问其他会话，其中每个会话访问类别2和类别3页面。
 
 ![嵌套序列](assets/sequence-nested.png)
 
@@ -92,13 +92,13 @@ ht-degree: 2%
 1. 指定一个时间段（**[!UICONTROL 分钟]**，**[!UICONTROL 小时]**，最多&#x200B;**[!UICONTROL 年]**）。
 1. 选择![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**以打开一个弹出窗口，允许您使用**[!UICONTROL -]**或**[!UICONTROL +]**键入或指定数字。
 
-要删除时间约束，请使用![CrossSize75](/help/assets/icons/CrossSize75.svg)。
+若要移除时间限制，请使用![CrossSize75](/help/assets/icons/CrossSize75.svg)。
 
 下表更详细地说明了时间限制运算符。
 
 | 运算符 | 描述 |
 |--- |--- |
-| **[!UICONTROL After]** | [!UICONTROL After]运算符用于指定两个检查点之间的时间长度的最小限制。 设置After值后，时间限制将从应用过滤器时算起。 例如，如果在容器上设置After运算符以识别访问页面A，但直到一天后才返回访问页面B的人，则访客离开页面A时就会开始一天。 对于要包含在过滤器中的访客，离开页面A后必须至少经过1440分钟（一天）才能查看页面B。 |
+| **[!UICONTROL After]** | [!UICONTROL After]运算符用于指定两个检查点之间的时间长度的最小限制。 设置After值时，时间限制从应用过滤器时开始。 例如，如果在容器上设置[!UICONTROL After]运算符以识别访问页面A，但直到一天后才返回访问页面B的人员，则访客离开页面A时将会开始该日期。 对于要包含在过滤器中的访客，离开页面A后必须至少经过1440分钟（一天）才能查看页面B。 |
 | **[!UICONTROL Within]** | [!UICONTROL Within]运算符用于指定两个检查点之间的时间长度的最大限制。 例如，如果在容器上设置[!UICONTROL Within]运算符以识别访问页面A，然后在一天内返回访问页面B的人员，则该时间将从该人员离开页面A时开始。要包含在过滤器中，人员最多需要在一天之后打开页面B。对于要包含在过滤器中的人员，在离开页面A以查看页面B后最多1440分钟（一天）内必须出现打开页面B。 |
 | **[!UICONTROL 晚于]**&#x200B;之内 | 同时使用[!UICONTROL After]和[!UICONTROL Within]运算符时，这两个运算符是并行开始和结束的，而不是按顺序开始和结束。 <br/>例如，您生成了一个容器设置为`After = 1 Week(s) and Within = 2 Week(s)`的筛选器。<br/>此筛选条件中用于识别访客的条件仅在一周到两周之间满足。 这两个条件是从第一次查看页面时开始执行的。 |
 
@@ -113,7 +113,7 @@ ht-degree: 2%
 
 ![序列在](assets/sequence-after.png)之后
 
-如果主页的页面查看发生在2024年6月1日00:01，则页面查看针对页面女性 | 只要2024年6月15日00:01之后发生页面查看，鞋就会匹配。
+如果主页的页面查看发生在2024年6月1日00:01，则页面查看针对页面女性 | 只要该页面查看发生在2024年6月15日00:01之后，鞋就会匹配。
 
 ##### Within运算符
 
@@ -138,7 +138,7 @@ ht-degree: 2%
 
 #### 示例
 
-以下是顺序过滤器的示例，该过滤器会查找访问过一个产品类别页面的人员（女性） | 鞋子)，然后是结帐页面（结帐） | 谢谢)。
+以下是顺序过滤器的示例，该过滤器查找访问过一个产品类别页面的人员（女性） | 鞋子)，然后是结帐页面（结帐） | 谢谢)。
 
 ![在](assets/sequence-filter-within.png)内进行序列筛选
 
@@ -163,18 +163,18 @@ ht-degree: 2%
 
 以下示例序列匹配或不匹配：
 
-| 序列 | ![ApproveReject](/help/assets/icons/ApproveReject.svg) |
-|--- | --- |
-| A然后B，在同一会话中 | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) |
-| A -> C -> D -> B（跨不同的会话） | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) |
-| B -> A | ![删除圆圈](/help/assets/icons/RemoveCircle.svg) |
+| | 序列 | ![ApproveReject](/help/assets/icons/ApproveReject.svg) |
+|---:|--- | --- |
+| 1 | 在同一会话中`Women \| Shoes`然后`Checkout \| Thank You` | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) |
+| 2 | `Women \| Shoes`然后`Men \| Shoes`然后`Checkout \| Thank You`（跨不同会话） | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) |
+| 3 | `Checkout \| Thank You`，然后`Women \| Shoes` | ![删除圆圈](/help/assets/icons/RemoveCircle.svg) |
 
 ### “仅在序列前”和“仅在序列后”
 
 选项![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]**&#x200B;和![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only Before Sequence]**&#x200B;将数据过滤到指定序列之前或之后的子集。
 
-* ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **Only Before Sequence**：包含序列之前的所有数据和序列本身的第一个数据（见示例1、3）。 如果序列作为数据的一部分出现多次，则[!UICONTROL 仅在序列之前]包括该序列最后一个实例的第一次点击和所有先前的点击（见示例2）。
-* ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **Only After Sequence**：包含序列之后的所有点击以及该序列本身的最后一个数据（请参阅示例1、3）。 如果序列作为数据的一部分出现多次，则“仅在序列后”包括该序列首个实例的最后一次点击和所有后续点击（见示例2）。
+* ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **Only Before Sequence**：包含序列之前的所有数据和序列本身的第一个数据。 如果序列作为数据的一部分出现多次，则[!UICONTROL 仅在序列之前]包括该序列最后一个实例的第一次点击和所有先前的点击。
+* ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **Only After Sequence**：包含序列之后的所有点击以及该序列本身的最后一个数据。 如果序列作为数据的一部分出现多次，则[!UICONTROL 仅在序列之后]包括该序列第一个实例的最后一次点击以及所有后续点击。
 
 考虑一个定义，该定义指定具有由B标识的标准、后跟(Then)具有由D标识的标准的组件序列的组件。三个选项将按以下方式标识数据：
 
@@ -199,7 +199,7 @@ ht-degree: 2%
 
 ![序列筛选器](assets/site-section-filters.png)
 
-使用这三个过滤器报告网站区域时，这将是自由格式表中的示例输出。
+使用这三个过滤器报告网站区域时，自由格式表中的示例输出如下所示：
 
 ![连续筛选器报告](assets/sequential-filter-freeform-table.png)
 
@@ -215,7 +215,7 @@ ht-degree: 2%
 * **排除反向链接域**。请使用仅包含来自Google.com的反向链接域并排除所有其他域的定义。
 * **确定非顾客**。识别订单大于零的时间，然后排除[!UICONTROL 人员]。
 
-[!UICONTROL Exclude]可用于识别人员未执行特定会话或事件的序列。 [!UICONTROL 排除]也可以包含在逻辑组中（请参阅下文）。
+[!UICONTROL Exclude]可用于识别人员未执行特定会话或事件的序列。 [!UICONTROL 排除]也可以包含在[!UICONTROL 逻辑组]中（请参阅下文）。
 
 您可以排除容器而非组件。
 
@@ -225,7 +225,7 @@ ht-degree: 2%
 
 #### 排除范围
 
-识别访问了一个页面、未访问另一个页面、然后又访问另一个页面的人员。 您使用![设置](/help/assets/icons/Setting.svg)排除来排除容器。 排除的容器由左侧的红色细条标识。
+识别访问了一个页面、未访问另一个页面、然后又访问另一个页面的人员。 您使用![设置](/help/assets/icons/Setting.svg) [!UICONTROL 排除]排除容器。 排除的容器由左侧的红色细条标识。
 
 ![排除序列](assets/sequence-exclude.png)
 
@@ -239,7 +239,7 @@ ht-degree: 2%
 
 #### 在末尾排除
 
-识别访问过一个页面但从未访问过其他页面的人员。 例如，访问过您的主页但从未访问过任何结帐页面的人员。
+识别访问过一个页面但从未访问过其他页面的人员。 例如，访问过您的主页但从未访问过任何结账页面的人员。
 
 ![序列排除结束](assets/sequence-exclude-end.png)
 
@@ -252,7 +252,7 @@ ht-degree: 2%
 
 使用逻辑组，您可以将条件分组到单个顺序过滤器检查点中。 作为序列的一部分，在标识为逻辑组的容器中定义的逻辑将在任何先前顺序检查点之后和任何后续顺序检查点之前进行评估。
 
-可以按任意顺序满足逻辑组本身中的条件。 相反，非顺序容器（事件、会话、人员）不要求在整个序列中满足其条件，如果与Then运算符一起使用，则会产生可能的不直观结果。
+可以按任意顺序满足逻辑组本身中的条件。 相反，非顺序容器（事件、会话、人员）不要求在整个序列中满足其条件，如果与Then运算符一起使用，则会产生可能不直观的结果。
 
 [!UICONTROL 逻辑组]设计成将&#x200B;*多个条件视为一个组，在分组条件中没有任何排序*。 除此以外，逻辑组中条件的顺序无关。
 
@@ -267,9 +267,9 @@ ht-degree: 2%
 
 #### 任何订单
 
-识别访问一个页面，然后以任意顺序从另一组页面中查看每个页面的人员。 例如，访问过主页，然后依次访问“男性”页面、“女性”页面和“儿童”页面的人员，而不管顺序如何。
+识别访问了一个页面，然后以任意顺序从另一组页面中查看了每个页面的人员。 例如，访客访问了主页，然后又访问了“男性”页面、“女性”页面和“儿童”页面，而不管顺序如何。
 
-您可以在不使用[!UICONTROL 逻辑组]的情况下构建此筛选器，但构建过程将会非常复杂和费力。 您必须指定访客可以查看的每个页面序列。 为清楚起见，仅打开第一个容器![V形Down](/help/assets/icons/ChevronDown.svg)，关闭其他容器![V形Right](/help/assets/icons/ChevronRight.svg)。 您可以通过标题来派生其他容器的内容。
+您可以在不使用[!UICONTROL 逻辑组]的情况下构建此筛选器，但构建过程将会非常复杂和费力。 指定访客可以查看的每个页面序列。 为清楚起见，仅打开第一个容器![ChevronDown](/help/assets/icons/ChevronDown.svg)，关闭其他容器![ChevronRight](/help/assets/icons/ChevronRight.svg)。 您可以通过标题来派生其他容器的内容。
 
 ![示例不使用逻辑组](assets/logicgroup-example-notusing.png)
 
@@ -285,13 +285,13 @@ ht-degree: 2%
 
 #### 排除和
 
-识别访问了一个页面，然后明确未访问一组其他页面，但确实访问了另一页面的人员。 例如，访问过主页的人员，没有访问男性页面或女性页面，但访问了儿童页面。
+识别访问了一个页面，然后明确未访问一组其他页面，但又访问了另一页面的人员。 例如，访问过主页的人员，没有访问男性页面或女性页面，但访问了儿童页面。
 
 ![逻辑组排除和](assets/logicgroup-exclude-and.png)
 
 #### 排除或
 
-识别访问了一个页面，然后明确未访问一组页面的任何页面，但访问了另一个页面的人员。 例如，访问主页的人没有访问“男女”页面，但访问了“孩子”页面。
+识别访问了一个页面，然后明确不访问一组页面中的任何页面，但又访问另一个页面的人员。 例如，访问主页的人没有访问“男女”页面，但访问了“孩子”页面。
 
 ![逻辑组排除和](assets/logicgroup-exclude-or.png)
 
@@ -307,7 +307,7 @@ An example of a complex sequential filter if you want to find the persons that
 
 ## 最后一个示例
 
-最后，您希望识别了解特定产品页面的用户，以免这些用户被您的“启用您的移动”营销活动所触及。 在第一次访问网上商店时，他们浏览了主页，但没有进一步查看“男性”类别的任何健身（装备）产品。 但是，在随后的下一个会话中，他们直接转到产品页面并下达在线订单，而没有先访问主页。
+最后一个示例，您希望识别学习了特定产品页面的人员，并且这些人员从未被您的“启用您的移动”营销活动所接触。 在第一次访问网上商店时，他们浏览了主页，但没有进一步查看“男性”类别的任何健身（装备）产品。 但是，在随后的下一个会话中，他们直接转到产品页面并下达在线订单，而没有先访问主页。
 
 
 ![复杂顺序筛选器示例](assets/sequential-complex.png)
