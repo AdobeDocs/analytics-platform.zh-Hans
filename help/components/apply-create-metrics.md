@@ -4,16 +4,23 @@ title: 量度
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: d317f6bb9892d0d13fc7723f7e8c2d9ba2ce4f63
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 20%
+source-wordcount: '441'
+ht-degree: 14%
 
 ---
 
 # 指标
 
 指标允许您量化 Analysis Workspace 中的数据点。它们最常用作可视化中的列，并与维度相关联。
+
+## 在 Analysis Workspace 中使用量度
+
+量度在Analysis Workspace中的使用非常灵活。 将量度拖动到空的自由格式表，可查看在项目日期期间该量度的趋势。 此外，您还可以拖曳存在维度的量度，以便将该量度与每个维度项目进行比较。 将量度拖动到现有量度标题上方会替换该量度，如果将量度拖动到标题旁边，则可以并排查看这两个量度。
+
+有关如何将量度和其他类型的组件添加到Analysis Workspace的信息，请参阅[在Analysis Workspace中使用组件](/help/components/use-components-in-workspace.md)。
+
 
 ## 指标类型
 
@@ -22,19 +29,19 @@ Adobe 提供了多种类型的指标，可供在 Analysis Workspace 中使用：
 
 * **标准量度**：标准量度的示例包括人员、会话、事件。
 
+  与Adobe Analytics相反，Customer Journey Analytics允许您在连接和数据视图范围内灵活定义标准指标。
+
+   * **人员**：Customer Journey Analytics中的人员指标是与人员ID不同的计数。 根据您在连接中配置数据集时选择作为人员ID，人员量度可能具有不同的含义。
+   * **会话**：Customer Journey Analytics中的会话量度是您在数据视图中的会话设置配置中定义的量度。 查看[会话设置](/help/data-views/session-settings.md)。
+   * **事件**：Customer Journey Analytics中的事件量度由事件组成，这些事件是您已配置为连接一部分的任何事件数据集的一部分。
+
 * **计算指标** ![计算器](/help/assets/icons/Calculator.svg)：基于标准指标、静态数字或算法函数的用户定义指标。
 
-* **计算量度模板** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) ：Adobe定义的与计算量度行为相似的量度。 您可以在Workspace项目中按原样使用它们，也可以保存副本以自定义逻辑。
+* **计算量度模板** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) ：Adobe定义的与计算量度行为相似的量度。 您可以在Workspace项目中按原样使用它们，也可以保存副本以自定义逻辑。 查看[默认的计算指标](calc-metrics/cm-workflow/../default-calcmetrics.md)。
 
 您可以查看某个量度是否获得批准![批准图标](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)。 如果您想了解有关某个量度的更多详细信息，请将鼠标悬停在该量度上，然后选择![信息图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)。 有关详细信息，请参阅[组件信息](use-components-in-workspace.md#component-info)。
 
 
-
-## 在 Analysis Workspace 中使用量度
-
-量度在Analysis Workspace中的使用非常灵活。 将量度拖动到空的自由格式表，可查看在项目日期期间该量度的趋势。 此外，您还可以拖曳存在维度的量度，以便将该量度与每个维度项目进行比较。 将量度拖动到现有量度标题上方会替换该量度，如果将量度拖动到标题旁边，则可以并排查看这两个量度。
-
-有关如何将量度和其他类型的组件添加到Analysis Workspace的信息，请参阅[在Analysis Workspace中使用组件](/help/components/use-components-in-workspace.md)。
 
 ## 计算量度
 

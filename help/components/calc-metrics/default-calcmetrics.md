@@ -1,19 +1,19 @@
 ---
 description: Adobe提供了多种您可以使用的计算指标。 本页列出了这些量度及其预期用途。
-title: 默认计算量度
+title: 计算量度模板
 feature: Calculated Metrics
 exl-id: 08d11cce-170e-42a2-806f-e0a28b70a2dc
 role: User
-source-git-commit: a507417c945f827ebb8bc92f7b5f54a9c4e6faa0
+source-git-commit: d37734ae415722fc609715868c37a36f2becdbf6
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 9%
+source-wordcount: '386'
+ht-degree: 8%
 
 ---
 
-# 默认计算量度
+# 计算量度模板
 
-Customer Journey Analytics提供了以下默认计算指标以涵盖最常见的用例。 这些Adobe定义的默认计算指标由小型![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg)徽标标识。 若要快速筛选这些指标，请在[组件筛选器](/help/components/overview.md#filter)中选择![标签](/help/assets/icons/Label.svg) **[!UICONTROL Adobe模板]**。
+Customer Journey Analytics提供了以下计算指标模板，用于涵盖最常见的用例。 这些Adobe定义的计算指标由小型![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg)徽标标识。 若要快速筛选这些指标，请在[组件筛选器](/help/components/overview.md#filter)中选择![标签](/help/assets/icons/Label.svg) **[!UICONTROL Adobe模板]**。
 
 | 计算量度名称 | 描述<br/>公式 |
 |---------|----------|

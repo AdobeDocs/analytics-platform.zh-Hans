@@ -3,10 +3,10 @@ title: 维度概述
 description: 了解维度是什么以及在Customer Journey Analytics中使用维度的方式
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: d37734ae415722fc609715868c37a36f2becdbf6
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 28%
+source-wordcount: '262'
+ht-degree: 36%
 
 ---
 
@@ -34,6 +34,29 @@ Customer Journey Analytics中的基本报表根据量度列（通常是数值）
 ## 创建维度
 
 Customer Journey Analytics管理员可以[在数据视图](/help/data-views/create-dataview.md#components)中创建维度。
+
+## 默认维度
+
+创建数据视图时，默认情况下会将以下基于时间的组件作为维度添加到数据视图中：
+
+- 15 分钟
+- 30 分钟
+- 5 分钟
+- 日
+- 月中几号
+- 每周时间
+- 年中哪天
+- 小时
+- 小时
+- 分钟
+- 一小时中的第几分钟
+- 月
+- 月份
+- 季度
+- 季度
+- 秒
+- 一年中的第几周
+- 年
 
 ## 添加维度描述
 
