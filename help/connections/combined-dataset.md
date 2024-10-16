@@ -5,10 +5,10 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 22f3519445564ebdb2092db04cc966001bda8b1c
+source-git-commit: 50019cc5c66eee98f02d24bc55f3d993d9114dd0
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 35%
+source-wordcount: '919'
+ht-degree: 33%
 
 ---
 
@@ -30,20 +30,20 @@ ht-degree: 35%
 >
 >Adobe Experience Platform通常以UNIX®毫秒为单位存储时间戳。 为了便于阅读，本示例中使用了日期和时间。
 
-| `example_id` | `timestamp` | `string_color` | `string_animal` | `metric_a` |
-| --- | --- | --- | --- | --- |
-| `user_310` | `1 Jan 7:02 AM` | `Red` | `Fox` | |
-| `user_310` | `1 Jan 7:04 AM` | | | `2` |
-| `user_310` | `1 Jan 7:08 AM` | `Blue` | | `3` |
-| `user_847` | `2 Jan 12:31 PM` | | `Turtle` | `4` |
-| `user_847` | `2 Jan 12:44 PM` | | | `2` |
+| example_id | timestamp | string_color | string_animal | metric_a |
+| --- | --- | --- | --- | ---: |
+| user_310 | 1月1日早上7时02分 | 红色 | Fox | |
+| user_310 | 1月1日早上7时04分 | | | 2 |
+| user_310 | 1月1日早上7时08分 | 蓝色 | | 3 |
+| user_847 | 1月2日中午12:31 | | 乌龟 | 4 |
+| user_847 | 1月2日中午12:44 | | | 2 |
 
-| `different_id` | `timestamp` | `string_color` | `string_shape` | `metric_b` |
-| --- | --- | --- | --- | --- |
-| `user_847` | `2 Jan 12:26 PM` | `Yellow` | `Circle` | `8.5` |
-| `user_847` | `2 Jan 1:01 PM` | `Red` | | |
-| `alternateid_656` | `2 Jan 8:58 PM` | `Red` | `Square` | `4.2` |
-| `alternateid_656` | `2 Jan 9:03 PM` | | `Triangle` | `3.1` |
+| different_id | timestamp | string_color | string_shape | metric_b |
+| --- | --- | --- | --- | ---: |
+| user_847 | 1月2日中午12:26 | 黄色 | 圆形 | 8.5 |
+| user_847 | 1月2日下午1:01 | 红色 | | |
+| alternateid_656 | 1月2日晚上8:58 | 红色 | 正方形 | 4.2 |
+| alternateid_656 | 1月2日晚上9:03 | | 三角形 | 3.1 |
 
 使用这两个事件数据集创建连接时，并且已识别
 
@@ -52,19 +52,31 @@ ht-degree: 35%
 
 以下组合数据集用于报表。
 
-| `id` | `timestamp` | `string_color` | `string_animal` | `string_shape` | `metric_a` | `metric_b` |
-| --- | --- | --- | --- | --- | --- | --- |
-| `user_310` | `1 Jan 7:02 AM` | `Red` | `Fox` | | | |
-| `user_310` | `1 Jan 7:04 AM` | | | | `2` | |
-| `user_310` | `1 Jan 7:08 AM` | `Blue` | | | `3` | |
-| `user_847` | `2 Jan 12:26 PM` | `Yellow` | | `Circle` | | `8.5` |
-| `user_847` | `2 Jan 12:31 PM` | | `Turtle` | | `4` | |
-| `user_847` | `2 Jan 12:44 PM` | | | | `2` | |
-| `user_847` | `2 Jan 1:01 PM` | `Red` | | | | |
-| `alternateid_656` | `2 Jan 8:58 PM` | `Red` | | `Square` | | `4.2` |
-| `alternateid_656` | `2 Jan 9:03 PM` | | | `Triangle` | | `3.1` |
+| ID | timestamp | string_color | string_animal | string_shape | metric_a | metric_b |
+| --- | --- | --- | --- | --- | ---: | ---: |
+| user_310 | 1月1日早上7时02分 | 红色 | Fox | | | |
+| user_310 | 1月1日早上7时04分 | | | | 2 | |
+| user_310 | 1月1日早上7时08分 | 蓝色 | | | 3 | |
+| user_847 | 1月2日中午12:26 | 黄色 | | 圆形 | | 8.5 |
+| user_847 | 1月2日中午12:31 | | 乌龟 | | 4 | |
+| user_847 | 1月2日中午12:44 | | | | 2 | |
+| user_847 | 1月2日下午1:01 | 红色 | | | | |
+| alternateid_656 | 1月2日晚上8:58 | 红色 | | 正方形 | | 4.2 |
+| alternateid_656 | 1月2日晚上9:03 | | | 三角形 | | 3.1 |
 
-为了说明架构路径的重要性，请考虑此方案。 在第一个数据集中，`string_color`基于架构路径`_experience.whatever.string_color`，在架构路径`_experience.somethingelse.string_color`的第二个数据集中。 在此方案中，数据&#x200B;**不是**&#x200B;合并到结果合并数据集中的一列中。 相反，结果是在组合数据集中的两个`string_color`列。
+为了说明架构路径的重要性，请考虑此方案。 在第一个数据集中，`string_color`基于架构路径`_experience.whatever.string_color`，在架构路径`_experience.somethingelse.string_color`的第二个数据集中。 在此方案中，数据&#x200B;**不是**&#x200B;合并到结果合并数据集中的一列中。 相反，结果是在组合数据集中的两个`string_color`列：
+
+| ID | timestamp | 体验(_E)。<br/>随便。<br/>string_color | 体验。<br/>其他内容。<br/>string_color | string_animal | string_shape | metric_a | metric_b |
+| --- | --- | --- | --- | --- | --- | ---: | ---:|
+| user_310 | 1月1日早上7时02分 | 红色 | | Fox | | | |
+| user_310 | 1月1日早上7时04分 | | | | | 2 | |
+| user_310 | 1月1日早上7时08分 | 蓝色 | | | | 3 | |
+| user_847 | 1月2日中午12:26 | | 黄色 | | 圆形 | | 8.5 |
+| user_847 | 1月2日中午12:31 | | | 乌龟 |  | 4 | |
+| user_847 | 1月2日中午12:44 | | | | | 2 | |
+| user_847 | 1月2日下午1:01 | | 红色 | | | | |
+| alternateid_656 | 1月2日晚上8:58 | | 红色 | | 正方形 | | 4.2 |
+| alternateid_656 | 1月2日晚上9:03 | | | | 三角形 | | 3.1 |
 
 此合并事件数据集就是报表中使用的数据集。某行数据源自哪个数据集并不重要。 Customer Journey Analytics将所有数据视为位于同一数据集中。 如果两个数据集中都出现了匹配的人员ID，则它们被视为相同的唯一人员。 如果两个包含时间戳（30分钟内）都出现了匹配的人员ID，则它们被视为属于同一会话。 合并具有相同架构路径的字段。
 
@@ -73,7 +85,7 @@ ht-degree: 35%
 如果您的连接仅包含第一个表而不包含第二个表，则在采用使用最后接触归因的 `string_color` 维度和 `metric_a` 量度来提取报表时将会显示：
 
 | string_color | metric_a |
-| --- | --- |
+| --- | ---: |
 | 未指定 | 6 |
 | 蓝色 | 3 |
 | 红色 | 2 |
@@ -81,7 +93,7 @@ ht-degree: 35%
 但是，如果连接中同时包含两个表，则归因会发生更改，因为两个数据集中都有 `user_847`。第二个数据集中的某行将 `metric_a` 归因为“黄色”，也就是之前的“未指定”：
 
 | string_color | metric_a |
-| --- | --- |
+| --- | ---: |
 | 黄色 | 6 |
 | 蓝色 | 3 |
 | 红色 | 2 |
