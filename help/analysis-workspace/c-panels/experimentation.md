@@ -4,10 +4,10 @@ title: 试验性面板
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 835f061a5fdc52b39a7c8fee1e3ce474118d0e68
+source-git-commit: 3e2d92003f8b89a20edfcfb8358854c7fbd15577
 workflow-type: tm+mt
-source-wordcount: '2145'
-ht-degree: 22%
+source-wordcount: '2144'
+ht-degree: 20%
 
 ---
 
@@ -27,13 +27,13 @@ ht-degree: 22%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_experimentation_panel"
 >title="试验"
->abstract="比较不同的用户体验、营销或消息变化，以确定哪种变化最能推动特定结果。<br/><br/>**参数&#x200B;**<br/>**试验**：分析的试验。<br>**控制变量**：所选试验的控制变量。<br/>**成功量度**：最多 5 个标准（非计算）成功量度来分析试验。<br/>**标准化量度**：人员、会话或事件。 此指标（也称为计数方法）将作为提升计算的分母。该量度也会在应用置信度计算之前影响数据汇总的方式。"
+>abstract="比较不同的用户体验、营销或消息变化，以确定哪些最能推动特定结果。<br/><br/>**参数&#x200B;**<br/>**试验**：分析的试验。<br>**控制变量**：所选试验的控制变量。<br/>**成功量度**：最多 5 个标准（非计算）成功量度来分析试验。<br/>**标准化量度**：人员、会话或事件。 此指标（也称为计数方法）将作为提升计算的分母。该量度也会在应用置信度计算之前影响数据汇总的方式。"
 
 <!-- markdownlint-enable MD034 -->
 
 
 
-通过&#x200B;**[!UICONTROL 试验]**&#x200B;面板，分析师可以比较不同的用户体验、营销或消息传递方面的变化，以确定哪一种最能推动特定结果。您可以从任何试验平台评估任何A/B试验的提升和置信度：在线、离线、Target或Journey Optimizer等Adobe解决方案，甚至BYO（自带）数据。
+通过&#x200B;**[!UICONTROL 试验]**&#x200B;面板，分析师可以比较不同的用户体验、营销或消息传递变化，以确定哪一种最能推动特定结果。 您可以从任何试验平台评估任何A/B试验的提升和置信度：在线、离线、Target或Journey Optimizer等Adobe解决方案，甚至BYO（自带）数据。
 
 详细了解Adobe Customer Journey Analytics与Adobe Target之间的[集成](https://experienceleague.adobe.com/zh-hans/docs/target/using/integrate/cja/target-reporting-in-cja)。
 
@@ -41,9 +41,9 @@ ht-degree: 22%
 
 试验面板可供所有Customer Journey Analytics用户使用。 不需要管理员权限或其他权限。但是，前提条件要求只有管理员才能执行的操作。
 
-## 计算量度中的新函数
+## 计算量度中的函数
 
-添加了两个新的高级函数：提升和置信度。 有关详细信息，请参阅[参考 - 高级函数](/help/components/calc-metrics/cm-adv-functions.md)。
+提供了两个高级函数：提升和置信度。 有关详细信息，请参阅[参考 - 高级函数](/help/components/calc-metrics/cm-adv-functions.md)。
 
 ## 先决条件
 
@@ -51,10 +51,10 @@ ht-degree: 22%
 
 ### 创建与试验数据集的连接
 
-推荐的数据架构将试验数据放在一个[对象数组](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array)中，该数组在两个单独的维度中包含试验数据和变体数据。 两个维度都必须位于&#x200B;**单个**&#x200B;对象数组中。 如果您的试验数据位于单个维度中（试验数据和变体数据位于分隔字符串中），则可以在数据视图中使用[子字符串](/help/data-views/component-settings/substring.md)设置将该维度一分为二以用于面板中。
+建议的数据架构将试验数据放在[对象数组](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array)中，该数组在两个单独的维度中包含试验数据和变体数据。 两个维度都必须位于&#x200B;**单个**&#x200B;对象数组中。 如果您的试验数据位于单个维度中（试验数据和变体数据位于分隔字符串中），则可在数据视图中使用[子字符串](/help/data-views/component-settings/substring.md)设置将该维度一分为二以用于面板中。
 
 
-在Adobe Experience Platform中[引入试验数据](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home)后，[在Customer Journey Analytics](/help/connections/create-connection.md)中创建与一个或多个试验数据集的连接。
+将试验数据[引入Adobe Experience Platform后，[在Customer Journey Analytics](/help/connections/create-connection.md)中创建与一个或多个试验数据集的连接。](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home)
 
 ### 在数据视图中添加上下文标签
 
@@ -63,7 +63,7 @@ ht-degree: 22%
 * [!UICONTROL 试验试验]
 * [!UICONTROL 试验变体]
 
-在包含试验数据的数据视图中，选择两个维度，一个包含试验数据，另一个包含变量数据。然后用&#x200B;**[!UICONTROL 试验试验]**&#x200B;和&#x200B;**[!UICONTROL 试验变体]**&#x200B;标签标记这些维度。
+在包含试验数据的数据视图中，选择两个维度，一个包含试验数据，另一个包含变量数据。 然后用&#x200B;**[!UICONTROL 试验试验]**&#x200B;和&#x200B;**[!UICONTROL 试验变体]**&#x200B;标签标记这些维度。
 
 试验变体和试验变体的![上下文标签选项。](assets/context-label.png)
 
@@ -76,7 +76,7 @@ ht-degree: 22%
 1. 创建&#x200B;**[!UICONTROL 试验]**&#x200B;面板。 有关如何创建面板的信息，请参阅[创建面板](panels.md#create-a-panel)。
 
 
-1. 为面板指定[输入](#panel-input)。
+1. 指定面板的[输入](#panel-input)。
 
 1. 观察面板的[输出](#panel-output)。
 
@@ -91,7 +91,7 @@ ht-degree: 22%
 
 1. 配置面板输入设置：
 
-   ![Experiention面板拖入了一个项目。](assets/experiment-input.png)
+   ![实验面板被拖入项目中。](assets/experiment-input.png)
 
    | 设置 | 定义 |
    | --- | --- |
@@ -168,12 +168,11 @@ A/B测试是行业内客观衡量此类干预效果的黄金标准。 A/B测试�
 >
 >对于同时使用Customer Journey Analytics和Adobe Journey Optimizer的组织，此部分中的信息还适用于Journey Optimizer中的试验功能。
 
-
 并非所有计算量度都与试验面板兼容。
 
 包含以下任何量度或常量的计算量度与试验面板不兼容：
 
-* 摘要数据集<!--add link to Rob's "Summary data" doc when it's published -->中的基本量度
+* 来自[摘要数据集](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/summary-data)的基本量度
 * 基本量度彼此相除或相乘（例如，`Revenue`/`Orders`）
 * 添加到基本量度或从基本量度减去的常量（例如，`Revenue+50`）
 * 以下任一基本量度：

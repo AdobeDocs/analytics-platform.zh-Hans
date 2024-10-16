@@ -3,10 +3,10 @@ description: 计算量度生成器提供一个画布，可以将维度、量度�
 title: 生成计算量度
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 37209097327ffb142068b5df184c07c7c8021442
 workflow-type: tm+mt
 source-wordcount: '1526'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 10%
 
 >[!ENDTABS]
 
-1. 指定以下详细信息（![必需](/help/assets/icons/Required.svg)为必需）：
+1. 指定以下详细信息（![必填](/help/assets/icons/Required.svg)为必填项）：
 
    | 元素 | 描述 |
    | --- | --- |
@@ -59,7 +59,7 @@ ht-degree: 10%
    | **[!UICONTROL 小数位]** | 指定所选格式的小数位数。 仅当选择的格式为“小数”、“货币”和“百分比”时才启用。 |
    | **[!UICONTROL 将上升趋势显示为]** | 指定计算量度的上升趋势显示为▲**[!UICONTROL 良好（绿色）]**&#x200B;还是▼**[!UICONTROL 不良（红色）]**。 |
    | **[!UICONTROL 货币]** | 指定计算指标的货币。 仅当选择的格式为货币时启用。 |
-   | **[!UICONTROL 标记]** | 通过创建或应用一个或多个标记来组织计算量度。 开始键入以查找您可以选择的现有标记。 或按&#x200B;**[!UICONTROL ENTER]**&#x200B;添加新标记。 选择![CrossSize75](/help/assets/icons/CrossSize75.svg)以删除标记。 |
+   | **[!UICONTROL 标记]** | 通过创建或应用一个或多个标记来组织计算量度。 开始键入，以查找您可以选择的现有标记。或按&#x200B;**[!UICONTROL ENTER]**&#x200B;添加新标记。 选择 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 以移除标记。 |
    | **[!UICONTROL 预览]** | 预览涵盖过去90天，是一种衡量您是否已正确定义指标的方法。 |
    | **[!UICONTROL 摘要]** | 显示计算指标定义的摘要。 <br/>例如：![事件](/help/assets/icons/Event.svg) **[!UICONTROL 总订单]** ![除](/help/assets/icons/Divide.svg) ![事件](/help/assets/icons/Event.svg) **[!UICONTROL 会话]**。 |
    | **[!UICONTROL 定义]** ![必需](/help/assets/icons/Required.svg) | 使用[定义生成器](#definition-builder)定义您的筛选器。 |
@@ -67,8 +67,8 @@ ht-degree: 10%
 1. 要验证计算量度定义是否正确，请使用计算量度结果不断更新的&#x200B;**[!UICONTROL 预览]**。 **[!UICONTROL 预览]**&#x200B;涵盖过去90天，并持续评估计算指标的定义。
 
    **[!UICONTROL 产品兼容性]**&#x200B;指示计算度量是否可用于实验。 可能的值包括：
-   * **[!UICONTROL Customer Journey Analytics中的所有位置]**：计算指标可在所有Customer Journey Analytics中使用，试验面板除外。
-   * **[!UICONTROL Customer Journey Analytics中的任意位置（不包括试验）]**：计算指标可在所有Customer Journey Analytics中使用。
+   * **[!UICONTROL Customer Journey Analytics中的所有位置]**：计算指标可在所有Customer Journey Analytics中使用。
+   * **[!UICONTROL Customer Journey Analytics中的任意位置（不包括试验）]**：计算指标可在所有Customer Journey Analytics中使用，试验面板除外。
 
 1. 选择：
    * **[!UICONTROL 保存]**&#x200B;以保存计算量度。
