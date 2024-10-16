@@ -4,10 +4,10 @@ description: Customer Journey Analytics 登陆页面。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: ba7b16bd7bae75c3ecb72797236405519d361921
+source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
 workflow-type: tm+mt
 source-wordcount: '820'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -142,7 +142,7 @@ BI 扩展允许 SQL 访问您在 Customer Journey Analytics 中定义的数据�
     </td>
     <td>
       <img src="./assets/guided-analysis.svg" width="35px"><br/>
-      <strong>引导式分析</strong><br/><a href="/help/guided-analysis/overview.md">概述</a> - <a href="/help/guided-analysis/types/active.md">用户增长</a> - <a href="/help/guided-analysis/types/usage.md">趋势</a> - <a href="/help/guided-analysis/types/friction.md">漏斗</a> - <a href="/help/guided-analysis/types/release.md">影响</a> - <a href="/help/guided-analysis/industry-use-cases.md">行业用例</a>
+      <strong>引导式分析</strong><br/><a href="/help/guided-analysis/overview.md">概述</a> - <a href="/help/guided-analysis/types/active-growth.md">用户增长</a> - <a href="/help/guided-analysis/types/trends.md">趋势</a> - <a href="/help/guided-analysis/types/funnel.md">漏斗</a> - <a href="/help/guided-analysis/types/release-impact.md">影响</a> - <a href="/help/guided-analysis/industry-use-cases.md">行业用例</a>
     </td>
     <td>
       <img src="./assets/share.svg" width="35px"><br/>

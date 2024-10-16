@@ -5,10 +5,10 @@ role: User, Admin
 feature: Basics
 hide: true
 hide-from-toc: true
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: 39f9ef07088eb9595e5057d21008ecd2f5ea44fe
 workflow-type: tm+mt
-source-wordcount: '1956'
-ht-degree: 13%
+source-wordcount: '1954'
+ht-degree: 14%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 13%
 
 | 名称 | 插入的代码片段 | 图像 |
 |---|---|:---:|
-| 123 | `![123](/help/assets/icons/123.svg)` | ![123](/help/assets/icons/123.svg) |
+| 123 | `![123](/help/assets/icons/123.svg)` | ![ 123](/help/assets/icons/123.svg) |
 | 3D材料 | `![3DMaterial](/help/assets/icons/3DMaterial.svg)` | ![3DMaterial](/help/assets/icons/3DMaterial.svg) |
 | ABC | `![ABC](/help/assets/icons/ABC.svg)` | ![ABC](/help/assets/icons/ABC.svg) |
 | AEMS屏幕 | `![AEMScreen](/help/assets/icons/AEMScreen.svg)` | ![AEMScreen](/help/assets/icons/AEMScreen.svg) |
@@ -35,7 +35,7 @@ ht-degree: 13%
 | AdDisplay | `![AdDisplay](/help/assets/icons/AdDisplay.svg)` | ![AdDisplay](/help/assets/icons/AdDisplay.svg) |
 | AdPrint | `![AdPrint](/help/assets/icons/AdPrint.svg)` | ![广告打印](/help/assets/icons/AdPrint.svg) |
 | 添加 | `![Add](/help/assets/icons/Add.svg)` | ![添加](/help/assets/icons/Add.svg) |
-| 添加圆 | `![AddCircle](/help/assets/icons/AddCircle.svg)` | ![添加圆圈](/help/assets/icons/AddCircle.svg) |
+| 添加圆 | `![AddCircle](/help/assets/icons/AddCircle.svg)` | ![AddCircle](/help/assets/icons/AddCircle.svg) |
 | AddTo | `![AddTo](/help/assets/icons/AddTo.svg)` | ![添加至](/help/assets/icons/AddTo.svg) |
 | AddToSelection | `![AddToSelection](/help/assets/icons/AddToSelection.svg)` | ![AddToSelection](/help/assets/icons/AddToSelection.svg) |
 | AdobeLogo | `![AdobeLogo](/help/assets/icons/AdobeLogo.svg)` | ![AdobeLogo](/help/assets/icons/AdobeLogo.svg) |
@@ -145,7 +145,7 @@ ht-degree: 13%
 | 按钮 | `![Button](/help/assets/icons/Button.svg)` | ![按钮](/help/assets/icons/Button.svg) |
 | CCLibrary | `![CCLibrary](/help/assets/icons/CCLibrary.svg)` | ![CCLibrary](/help/assets/icons/CCLibrary.svg) |
 | 计算器 | `![Calculator](/help/assets/icons/Calculator.svg)` | ![计算器](/help/assets/icons/Calculator.svg) |
-| 日历 | `![Calendar](/help/assets/icons/Calendar.svg)` | ![日程表](/help/assets/icons/Calendar.svg) |
+| 日程表 | `![Calendar](/help/assets/icons/Calendar.svg)` | ![日程表](/help/assets/icons/Calendar.svg) |
 | CalendarAdd | `![CalendarAdd](/help/assets/icons/CalendarAdd.svg)` | ![日历添加](/help/assets/icons/CalendarAdd.svg) |
 | 日历已锁定 | `![CalendarLocked](/help/assets/icons/CalendarLocked.svg)` | ![日历已锁定](/help/assets/icons/CalendarLocked.svg) |
 | 日历已解锁 | `![CalendarUnlocked](/help/assets/icons/CalendarUnlocked.svg)` | ![日历已解锁](/help/assets/icons/CalendarUnlocked.svg) |
@@ -214,9 +214,9 @@ ht-degree: 13%
 | ConfidenceThree | `![ConfidenceThree](/help/assets/icons/ConfidenceThree.svg)` | ![置信度三](/help/assets/icons/ConfidenceThree.svg) |
 | ConfidenceTwo | `![ConfidenceTwo](/help/assets/icons/ConfidenceTwo.svg)` | ![置信度Two](/help/assets/icons/ConfidenceTwo.svg) |
 | 对比度 | `![Contrast](/help/assets/icons/Contrast.svg)` | ![对比度](/help/assets/icons/Contrast.svg) |
-| 转化漏斗 | `![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)` | ![转化漏斗](/help/assets/icons/ConversionFunnel.svg) |
+| 转化漏斗 | `![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)` | ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) |
 | ConversionTrends | `![ConversionTrends](/help/assets/icons/ConversionTrends.svg)` | ![ConversionTrends](/help/assets/icons/ConversionTrends.svg) |
-| 复制 | `![Copy](/help/assets/icons/Copy.svg)` | ![Copy](/help/assets/icons/Copy.svg) |
+| 复制 | `![Copy](/help/assets/icons/Copy.svg)` | ![复制](/help/assets/icons/Copy.svg) |
 | 封面图像 | `![CoverImage](/help/assets/icons/CoverImage.svg)` | ![封面图像](/help/assets/icons/CoverImage.svg) |
 | 信用卡 | `![CreditCard](/help/assets/icons/CreditCard.svg)` | ![信用卡](/help/assets/icons/CreditCard.svg) |
 | 裁剪 | `![Crop](/help/assets/icons/Crop.svg)` | ![裁切](/help/assets/icons/Crop.svg) |
@@ -340,7 +340,7 @@ ht-degree: 13%
 | 信息源管理 | `![FeedManagement](/help/assets/icons/FeedManagement.svg)` | ![信息源管理](/help/assets/icons/FeedManagement.svg) |
 | 反馈 | `![Feedback](/help/assets/icons/Feedback.svg)` | ![反馈](/help/assets/icons/Feedback.svg) |
 | 文件添加 | `![FileAdd](/help/assets/icons/FileAdd.svg)` | ![文件添加](/help/assets/icons/FileAdd.svg) |
-| 文件CSV | `![FileCSV](/help/assets/icons/FileCSV.svg)` | ![文件CSV](/help/assets/icons/FileCSV.svg) |
+| 文件CSV | `![FileCSV](/help/assets/icons/FileCSV.svg)` | ![FileCSV](/help/assets/icons/FileCSV.svg) |
 | FileCampaign | `![FileCampaign](/help/assets/icons/FileCampaign.svg)` | ![文件营销活动](/help/assets/icons/FileCampaign.svg) |
 | 文件图表 | `![FileChart](/help/assets/icons/FileChart.svg)` | ![文件图表](/help/assets/icons/FileChart.svg) |
 | 文件签出 | `![FileCheckedOut](/help/assets/icons/FileCheckedOut.svg)` | ![FileCheckedOut](/help/assets/icons/FileCheckedOut.svg) |
@@ -408,7 +408,6 @@ ht-degree: 13%
 | 预测 | `![Forecast](/help/assets/icons/Forecast.svg)` | ![预测](/help/assets/icons/Forecast.svg) |
 | 表单 | `![Form](/help/assets/icons/Form.svg)` | ![表单](/help/assets/icons/Form.svg) |
 | 转发 | `![Forward](/help/assets/icons/Forward.svg)` | ![转发](/help/assets/icons/Forward.svg) |
-| 频率 | `![Frequency](/help/assets/icons/Frequency.svg)` | ![频率](/help/assets/icons/Frequency.svg) |
 | 全屏 | `![FullScreen](/help/assets/icons/FullScreen.svg)` | ![全屏](/help/assets/icons/FullScreen.svg) |
 | FullscreenExit | `![FullScreenExit](/help/assets/icons/FullScreenExit.svg)` | ![FullScreenExit](/help/assets/icons/FullScreenExit.svg) |
 | 功能 | `![Function](/help/assets/icons/Function.svg)` | ![函数](/help/assets/icons/Function.svg) |
@@ -456,7 +455,7 @@ ht-degree: 13%
 | GraphPathing | `![GraphPathing](/help/assets/icons/GraphPathing.svg)` | ![GraphPathing](/help/assets/icons/GraphPathing.svg) |
 | 图形饼图 | `![GraphPie](/help/assets/icons/GraphPie.svg)` | ![图形饼图](/help/assets/icons/GraphPie.svg) |
 | GraphProfitCurve | `![GraphProfitCurve](/help/assets/icons/GraphProfitCurve.svg)` | ![GraphProfitCurve](/help/assets/icons/GraphProfitCurve.svg) |
-| 图形散点图 | `![GraphScatter](/help/assets/icons/GraphScatter.svg)` | ![图形散点图](/help/assets/icons/GraphScatter.svg) |
+| 图形散点图 | `![GraphScatter](/help/assets/icons/GraphScatter.svg)` | ![GraphScatter](/help/assets/icons/GraphScatter.svg) |
 | Graphstream | `![GraphStream](/help/assets/icons/GraphStream.svg)` | ![GraphStream](/help/assets/icons/GraphStream.svg) |
 | GraphStreamRanking | `![GraphStreamRanked](/help/assets/icons/GraphStreamRanked.svg)` | ![GraphStreamRanking](/help/assets/icons/GraphStreamRanked.svg) |
 | GraphStreamRankingAdd | `![GraphStreamRankedAdd](/help/assets/icons/GraphStreamRankedAdd.svg)` | ![GraphStreamRankingAdd](/help/assets/icons/GraphStreamRankedAdd.svg) |
@@ -569,7 +568,7 @@ ht-degree: 13%
 | 营销活动 | `![MarketingActivitie](/help/assets/icons/MarketingActivitie.svg)` | ![营销活动](/help/assets/icons/MarketingActivitie.svg) |
 | 最大化 | `![Maximize](/help/assets/icons/Maximize.svg)` | ![最大化](/help/assets/icons/Maximize.svg) |
 | 衡量 | `![Measure](/help/assets/icons/Measure.svg)` | ![度量值](/help/assets/icons/Measure.svg) |
-|  菜单 | `![Menu](/help/assets/icons/Menu.svg)` | ![菜单](/help/assets/icons/Menu.svg) |
+| 菜单 | `![Menu](/help/assets/icons/Menu.svg)` | ![菜单](/help/assets/icons/Menu.svg) |
 | 合并 | `![Merge](/help/assets/icons/Merge.svg)` | ![Merge](/help/assets/icons/Merge.svg) |
 | 合并图层 | `![MergeLayer](/help/assets/icons/MergeLayer.svg)` | ![合并层](/help/assets/icons/MergeLayer.svg) |
 | Messenger | `![Messenger](/help/assets/icons/Messenger.svg)` | ![Messenger](/help/assets/icons/Messenger.svg) |
@@ -588,7 +587,7 @@ ht-degree: 13%
 | 移动 | `![Move](/help/assets/icons/Move.svg)` | ![移动](/help/assets/icons/Move.svg) |
 | 左移 | `![MoveLeftRight](/help/assets/icons/MoveLeftRight.svg)` | ![MoveLeftRight](/help/assets/icons/MoveLeftRight.svg) |
 | 移至 | `![MoveTo](/help/assets/icons/MoveTo.svg)` | ![移动到](/help/assets/icons/MoveTo.svg) |
-| MoveUpDown | `![MoveUpDown](/help/assets/icons/MoveUpDown.svg)` | ![上移下移](/help/assets/icons/MoveUpDown.svg) |
+| MoveUpDown | `![MoveUpDown](/help/assets/icons/MoveUpDown.svg)` | ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) |
 | MovieCamera | `![MovieCamera](/help/assets/icons/MovieCamera.svg)` | ![电影摄像机](/help/assets/icons/MovieCamera.svg) |
 | 多种 | `![Multiple](/help/assets/icons/Multiple.svg)` | ![多个](/help/assets/icons/Multiple.svg) |
 | Multipleadd | `![MultipleAdd](/help/assets/icons/MultipleAdd.svg)` | ![MultipleAdd](/help/assets/icons/MultipleAdd.svg) |
@@ -706,6 +705,7 @@ ht-degree: 13%
 | 必需 | `![Required](/help/assets/icons/Required.svg)` | ![必填](/help/assets/icons/Required.svg) |
 | 调整大小 | `![Resize](/help/assets/icons/Resize.svg)` | ![调整大小](/help/assets/icons/Resize.svg) |
 | 已解决的注释 | `![ResolvedComment](/help/assets/icons/ResolvedComment.svg)` | ![已解决的评论](/help/assets/icons/ResolvedComment.svg) |
+| 维系 | `![Retention](/help/assets/icons/Retention.svg)` | ![保留](/help/assets/icons/Retention.svg) |
 | 保留率 | `![RetentionRates](/help/assets/icons/RetentionRates.svg)` | ![保留率](/help/assets/icons/RetentionRates.svg) |
 | 转推 | `![Retweet](/help/assets/icons/Retweet.svg)` | ![转推](/help/assets/icons/Retweet.svg) |
 | 重用 | `![Reuse](/help/assets/icons/Reuse.svg)` | ![重用](/help/assets/icons/Reuse.svg) |
@@ -792,8 +792,8 @@ ht-degree: 13%
 | 体育场 | `![Stadium](/help/assets/icons/Stadium.svg)` | ![体育场](/help/assets/icons/Stadium.svg) |
 | Stage（阶段） | `![Stage](/help/assets/icons/Stage.svg)` | ![阶段](/help/assets/icons/Stage.svg) |
 | 图章 | `![Stamp](/help/assets/icons/Stamp.svg)` | ![戳](/help/assets/icons/Stamp.svg) |
-| 星形 | `![Star](/help/assets/icons/Star.svg)` | ![颗星](/help/assets/icons/Star.svg) |
-| 星形轮廓 | `![StarOutline](/help/assets/icons/StarOutline.svg)` | ![星形大纲](/help/assets/icons/StarOutline.svg) |
+| 星形 | `![Star](/help/assets/icons/Star.svg)` | ![Star](/help/assets/icons/Star.svg) |
+| 星形轮廓 | `![StarOutline](/help/assets/icons/StarOutline.svg)` | ![StarOutline](/help/assets/icons/StarOutline.svg) |
 | 星暴 | `![Starburst](/help/assets/icons/Starburst.svg)` | ![星暴](/help/assets/icons/Starburst.svg) |
 | 状态蓝色 | `![StatusBlue](/help/assets/icons/StatusBlue.svg)` | ![状态蓝色](/help/assets/icons/StatusBlue.svg) |
 | 状态灰色 | `![StatusGray](/help/assets/icons/StatusGray.svg)` | ![状态灰色](/help/assets/icons/StatusGray.svg) |
@@ -875,7 +875,7 @@ ht-degree: 13%
 | 文本字距微调 | `![TextKerning](/help/assets/icons/TextKerning.svg)` | ![文本字距微调](/help/assets/icons/TextKerning.svg) |
 | TextLetterLowerCase | `![TextLetteredLowerCase](/help/assets/icons/TextLetteredLowerCase.svg)` | ![TextLetterLowerCase](/help/assets/icons/TextLetteredLowerCase.svg) |
 | TextLetterUpperCase | `![TextLetteredUpperCase](/help/assets/icons/TextLetteredUpperCase.svg)` | ![TextLetterUpperCase](/help/assets/icons/TextLetteredUpperCase.svg) |
-| 文本编号 | `![TextNumbered](/help/assets/icons/TextNumbered.svg)` | ![文本编号](/help/assets/icons/TextNumbered.svg) |
+| 文本编号 | `![TextNumbered](/help/assets/icons/TextNumbered.svg)` | ![TextNumbered](/help/assets/icons/TextNumbered.svg) |
 | 文本段落 | `![TextParagraph](/help/assets/icons/TextParagraph.svg)` | ![文本段落](/help/assets/icons/TextParagraph.svg) |
 | TextRomanLowercase | `![TextRomanLowercase](/help/assets/icons/TextRomanLowercase.svg)` | ![TextRomanLowercase](/help/assets/icons/TextRomanLowercase.svg) |
 | 文本罗马大写 | `![TextRomanUppercase](/help/assets/icons/TextRomanUppercase.svg)` | ![文本罗马大写](/help/assets/icons/TextRomanUppercase.svg) |
@@ -911,14 +911,13 @@ ht-degree: 13%
 | 类型 | `![Type](/help/assets/icons/Type.svg)` | ![类型](/help/assets/icons/Type.svg) |
 | 美国 | `![USA](/help/assets/icons/USA.svg)` | ![美国](/help/assets/icons/USA.svg) |
 | 下划线 | `![Underline](/help/assets/icons/Underline.svg)` | ![下划线](/help/assets/icons/Underline.svg) |
-| 撤销 | `![Undo](/help/assets/icons/Undo.svg)` | ![撤消](/help/assets/icons/Undo.svg) |
+| 撤销 | `![Undo](/help/assets/icons/Undo.svg)` | ![撤销](/help/assets/icons/Undo.svg) |
 | 取消分组 | `![Ungroup](/help/assets/icons/Ungroup.svg)` | ![取消分组](/help/assets/icons/Ungroup.svg) |
 | 取消链接 | `![Unlink](/help/assets/icons/Unlink.svg)` | ![取消链接](/help/assets/icons/Unlink.svg) |
 | 取消合并 | `![Unmerge](/help/assets/icons/Unmerge.svg)` | ![取消合并](/help/assets/icons/Unmerge.svg) |
 | 未解决评论 | `![UnresolvedComment](/help/assets/icons/UnresolvedComment.svg)` | ![UnresolvedComment](/help/assets/icons/UnresolvedComment.svg) |
 | UploadToCloud | `![UploadToCloud](/help/assets/icons/UploadToCloud.svg)` | ![UploadToCloud](/help/assets/icons/UploadToCloud.svg) |
 | UploadToCloudOutline | `![UploadToCloudOutline](/help/assets/icons/UploadToCloudOutline.svg)` | ![UploadToCloudOutline](/help/assets/icons/UploadToCloudOutline.svg) |
-| 使用情况 | `![Usage](/help/assets/icons/Usage.svg)` | ![用法](/help/assets/icons/Usage.svg) |
 | 用户 | `![User](/help/assets/icons/User.svg)` | ![用户](/help/assets/icons/User.svg) |
 | 用户活动 | `![UserActivity](/help/assets/icons/UserActivity.svg)` | ![用户活动](/help/assets/icons/UserActivity.svg) |
 | 用户添加 | `![UserAdd](/help/assets/icons/UserAdd.svg)` | ![用户添加](/help/assets/icons/UserAdd.svg) |
@@ -949,7 +948,7 @@ ht-degree: 13%
 | ViewDay | `![ViewDay](/help/assets/icons/ViewDay.svg)` | ![ViewDay](/help/assets/icons/ViewDay.svg) |
 | 视图详细信息 | `![ViewDetail](/help/assets/icons/ViewDetail.svg)` | ![视图详细信息](/help/assets/icons/ViewDetail.svg) |
 | 视图网格 | `![ViewGrid](/help/assets/icons/ViewGrid.svg)` | ![视图网格](/help/assets/icons/ViewGrid.svg) |
-| 视图列表 | `![ViewList](/help/assets/icons/ViewList.svg)` | ![视图列表](/help/assets/icons/ViewList.svg) |
+| 视图列表 | `![ViewList](/help/assets/icons/ViewList.svg)` | ![ViewList](/help/assets/icons/ViewList.svg) |
 | 视图行 | `![ViewRow](/help/assets/icons/ViewRow.svg)` | ![视图行](/help/assets/icons/ViewRow.svg) |
 | ViewSingle | `![ViewSingle](/help/assets/icons/ViewSingle.svg)` | ![查看单个](/help/assets/icons/ViewSingle.svg) |
 | 视图栈栈 | `![ViewStack](/help/assets/icons/ViewStack.svg)` | ![视图栈栈](/help/assets/icons/ViewStack.svg) |

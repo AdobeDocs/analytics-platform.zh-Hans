@@ -5,16 +5,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
+source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '653'
 ht-degree: 2%
 
 ---
 
 # [!UICONTROL 净增长]视图
 
-**[!UICONTROL 净增长]**&#x200B;视图类型提供有关特定时段内用户增减速率的见解。 水平轴是时间间隔，垂直轴是生长测量值。
+![NetGrowth](/help/assets/icons/NetGrowth.svg) **[!UICONTROL Net Growth]**&#x200B;视图类型提供了有关特定时段内用户增减速率的见解。 水平轴是时间间隔，垂直轴是生长测量值。
 
 每个数据点表示净增长，使用下列公式计算净增长：
 
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 此公式的结果是比率。 `1`的净增长代表均衡；该产品获得的用户数与其失去的用户数相同。 大于`1`的净增长表示正增长；新+回访用户多于休眠用户。 同样，净增长低于`1`意味着损失；休眠用户多于新回访用户。
 
-与[活动](active.md)视图类型类似，用户定义如下：
+与[活动](active-growth.md)视图类型类似，用户定义如下：
 
 * **[!UICONTROL 新]**：用户在当前时段处于活动状态，但之前未处于活动状态。 将鼠标悬停在图表图例中的“[!UICONTROL 新用户]”上，查看分析回顾到多远以确定新用户。 回看范围基于所选日期范围和间隔动态确定。
 * **[!UICONTROL 返回]**：用户在当前时段处于活动状态，在刚刚的上一个时段处于非活动状态，但在某个时间点以前处于活动状态。 查看分析在图表图例中通过将鼠标悬停在“[!UICONTROL 回访用户]”上来确定回访用户的回顾范围。 回看范围基于所选日期范围和间隔动态确定。
@@ -46,7 +46,7 @@ ht-degree: 2%
 
 利用查询边栏，可配置以下组件：
 
-* **[!UICONTROL 视图]**：在此视图类型和[活动](active.md)之间切换。
+* **[!UICONTROL 视图]**：在此视图类型和[活动](active-growth.md)之间切换。
 * **[!UICONTROL 事件]**：要测量的事件。 由于此视图类型基于用户，因此在该时段内与事件交互一次的用户将被计为活动用户。 您可以在查询中包含一个事件。
 * **[!UICONTROL 计为]**：要应用于选定事件的计数方法。 选项包括[!UICONTROL 用户数]和[!UICONTROL 用户百分比]。
 * **[!UICONTROL 区段]**：要测量的区段。 您可以在查询中包含一个区段。

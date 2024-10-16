@@ -5,9 +5,9 @@ keywords: 产品分析
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: 6497a73aaf7ab7ab597d7a9b00315d126ce402f8
+source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '1393'
 ht-degree: 79%
 
 ---
@@ -18,19 +18,19 @@ ht-degree: 79%
 
 可以使用以下引导式分析：
 
-| 分析 | 描述 |
-| --- | --- |
-| [活动增长](types/active.md) | 确定新的、保留的、返回的或非活跃的用户。 |
-| [转化趋势](types/conversion-trends.md) | 跟踪转化率随时间发生的变化。 |
-| [参与度](types/engagement.md) | 了解功能参与的广度和深度。 |
-| [首次使用影响](types/first-use.md) | 衡量功能首次使用对关键量度的影响。 |
-| [频率](types/frequency.md) | 按使用频率衡量参与度。 |
-| [漏斗](types/friction.md) | 比较步骤之间的转化率。 |
-| [净增长](types/net-growth.md) | 您是在获得用户还是在失去用户？ |
-| [版本影响](types/release.md) | 比较发布前和发布后相同时期的性能。 |
-| [保留](types/retention-rates.md) | 衡量用户持续的返回习惯。 |
-| [时间表](types/timeline.md) | 探索会话活动中的模式。 |
-| [趋势](types/usage.md) | 随着时间的推移衡量用户参与度。 |
+| 图标 | 分析 | 描述 |
+| :----:|--- | --- |
+| ![人员组](/help/assets/icons/PeopleGroup.svg) | [活动增长](types/active-growth.md) | 确定新的、保留的、返回的或非活跃的用户。 |
+| ![转化趋势](/help/assets/icons/ConversionTrends.svg) | [转化趋势](types/conversion-trends.md) | 跟踪转化率随时间发生的变化。 |
+| ![参与图形](/help/assets/icons/EngagementGraph.svg) | [参与度](types/engagement.md) | 了解功能参与的广度和深度。 |
+| ![FirstUse](/help/assets/icons/FirstUse.svg) | [首次使用影响](types/first-use-impact.md) | 衡量功能首次使用对关键量度的影响。 |
+| ![直方图](/help/assets/icons/Histogram.svg) | [频率](types/frequency.md) | 按使用频率衡量参与度。 |
+| ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) | [漏斗](types/funnel.md) | 比较步骤之间的转化率。 |
+| ![网络增长](/help/assets/icons/NetGrowth.svg) | [净增长](types/net-growth.md) | 您是在获得用户还是在失去用户？ |
+| ![发布](/help/assets/icons/Release.svg) | [版本影响](types/release-impact.md) | 比较发布前和发布后相同时期的性能。 |
+| ![保留](/help/assets/icons/Retention.svg) | [保留](types/retention.md) | 衡量用户持续的返回习惯。 |
+| ![时间表](/help/assets/icons/Timeline.svg) | [时间表](types/timeline.md) | 探索会话活动中的模式。 |
+| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [趋势](types/trends.md) | 随着时间的推移衡量用户参与度。 |
 
 {style="table-layout:auto"}
 
@@ -38,7 +38,7 @@ ht-degree: 79%
 
 您可以从 Customer Journey Analytics 主页访问引导式分析。
 
-1. 通过选择主页上的&#x200B;**[!UICONTROL 引导式分析]**，您可以直接进入[使用趋势视图](types/usage.md)。
+1. 通过选择主页上的&#x200B;**[!UICONTROL 引导式分析]**，您可以直接进入[使用趋势视图](types/trends.md)。
 
    ![登陆页面图块](assets/landing-page-tile.png){style="border:1px solid gray"}
 

@@ -5,16 +5,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: 670443a8caf6b71f49fc63a23b5328609864a9be
+source-git-commit: 39f9ef07088eb9595e5057d21008ecd2f5ea44fe
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '722'
 ht-degree: 4%
 
 ---
 
 # [!UICONTROL 参与]视图
 
-**[!UICONTROL 参与度]**&#x200B;视图可让您深入了解某个功能的使用频率以及有多少人使用它。 将多个功能相互比较时，此分析效果最佳。 它有助于通过了解您的核心、能力、一次性和可疑特性来推动投资决策。
+![EngagementGraph](/help/assets/icons/EngagementGraph.svg) **[!UICONTROL Engagement]**&#x200B;视图提供了有关某个功能使用频率以及有多少人使用它的分析。 将多个功能相互比较时，此分析效果最佳。 它有助于通过了解您的核心、能力、一次性和可疑特性来推动投资决策。
 
 绘制到此可视化图表顶部的功能表明，它们经常在参与的用户中使用。 绘制于此可视化图表右侧的功能表明，它们已在活动用户中广泛采用。 使用特征的中间次数将图形水平分割。 活动用户的中位数百分比垂直划分图表。 媒体是根据在查询中选择的事件计算的，而不是所有数据。
 
