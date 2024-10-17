@@ -3,10 +3,10 @@ title: 产品使用情况数据设置
 description: 启用、禁用或配置产品使用设置。
 hide: true
 hidefromtoc: true
-source-git-commit: f337dfbd780aab4ae40534c5c1151dba35681b21
+source-git-commit: b3d33561cc29aa1d37efa9f943bc145c16be814c
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 13%
+source-wordcount: '318'
+ht-degree: 14%
 
 ---
 
@@ -19,8 +19,7 @@ _数据设置_&#x200B;页面处理您的产品使用情况配置。 您可以使
 **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL 工具]** > **[!UICONTROL 产品使用情况]** > **[!UICONTROL 数据设置]**
 
 >[!IMPORTANT]
->
->启用此功能时，必须先接受条款和条件，然后才能使用它。 当您接受这些条款和条件时，您会代表整个组织进行接受。 接受这些条款和条件的个人拥有在启用此功能时自动创建的数据视图。
+>启用此功能时，必须先接受条款和条件，然后才能使用它。 当您接受这些条款和条件时，您会代表整个组织进行接受。
 
 此页面上提供以下设置：
 

@@ -3,9 +3,9 @@ title: 产品使用情况概述
 description: 查看有关贵组织如何使用Customer Journey Analytics的见解和报表。
 hide: true
 hidefromtoc: true
-source-git-commit: f337dfbd780aab4ae40534c5c1151dba35681b21
+source-git-commit: b3d33561cc29aa1d37efa9f943bc145c16be814c
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '336'
 ht-degree: 6%
 
 ---
@@ -14,12 +14,12 @@ ht-degree: 6%
 
 {{release-limited-testing}}
 
-产品使用情况使贵组织能够查看有关贵组织如何使用Customer Journey Analytics的分析数据。 它适用于使用Customer Journey Analytics的所有组织。 启用后，将自动为您创建并关联以下Adobe Experience Platform组件：
+产品使用情况使贵组织能够查看有关贵组织如何使用Customer Journey Analytics的分析数据。 它适用于使用Customer Journey Analytics的所有组织。 启用后，将自动创建并关联以下Adobe Experience Platform组件。 这些组件全部为系统所有、只读，无法编辑。
 
-* Adobe Experience Platform中的架构。 此架构为系统所有、只读，无法编辑。
-* Adobe Experience Platform中的数据集。 此数据集是系统拥有的、只读的，无法编辑。
-* Customer Journey Analytics中的连接。 此连接是系统拥有的、只读的，无法编辑。
-* Customer Journey Analytics中的数据视图。 您可以使用上述连接编辑此数据视图或创建更多数据视图。 数据视图的所有者是允许您的组织使用产品的个人。
+* Adobe Experience Platform中的架构
+* Adobe Experience Platform中的数据集
+* Customer Journey Analytics中的连接
+* Customer Journey Analytics中的数据视图
 
 启用后，将自动为您配置所有数据收集和设置。 无论用户何时在Analysis Workspace中执行操作，都会跟踪该操作并可用于报表。
 
@@ -29,7 +29,7 @@ ht-degree: 6%
 
 ## 可用维度
 
-启用“产品使用”后，以下维度将可用：
+启用产品使用情况时，以下维度可用。 如果要更改任何维度设置，请创建系统拥有的数据视图的副本，并在Analysis Workspace中使用复制的数据视图。
 
 | 维度 | 描述 |
 | --- | --- |
