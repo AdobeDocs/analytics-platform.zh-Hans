@@ -9,7 +9,7 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: ee463e2d2394505621c92ef827eb5788dc543304
+source-git-commit: aaf23560b69c90fdbaee3fa401b5fe58e6a4e5d1
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 93%
@@ -19,7 +19,6 @@ ht-degree: 93%
 # Adobe Customer Journey Analytics 指南 {#using}
 
 + [Adobe Customer Journey Analytics 指南](../getting-started/cja-landing.md)
-
 + [Adobe Customer Journey Analytics 的 AI 助手](../ai-assistant.md)
 
 + 发行说明 {#releases}
