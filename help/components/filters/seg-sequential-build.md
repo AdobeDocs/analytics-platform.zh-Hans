@@ -3,16 +3,16 @@ description: 顺序过滤器是使用THEN运算符定义过滤器条件顺序的
 title: 顺序过滤器
 feature: Filters
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: d6ea541de7c8b97151f16a01f61a002c5b877e7c
+source-git-commit: 8cf8af1d1d84f4db93ab627e76554f3fe618ef92
 workflow-type: tm+mt
-source-wordcount: '2460'
-ht-degree: 2%
+source-wordcount: '2459'
+ht-degree: 3%
 
 ---
 
 # 顺序过滤器
 
-在组件、容器和组件或容器之间使用Then逻辑运算符创建顺序过滤器。 Then逻辑运算符表示出现一个筛选条件，然后出现另一个筛选条件。
+在组件、容器和组件或容器之间使用[!UICONTROL Then]逻辑运算符创建顺序筛选器。 [!UICONTROL Then]逻辑运算符表示出现一个筛选条件，然后出现另一个筛选条件。
 
 +++ 以下是一段演示顺序区段的视频。
 
@@ -21,7 +21,6 @@ ht-degree: 2%
 {{videoaa}}
 
 +++
-
 
 顺序筛选器具有一些[基本功能](#basics)和其他选项，您可以配置这些选项来增加顺序筛选器的复杂性：
 
@@ -42,7 +41,7 @@ ht-degree: 2%
 
 
 
-生成顺序过滤器的基本原理与使用[过滤器生成器](filter-builder.md)生成常规过滤器相同。 您使用[定义生成器](filter-builder.md#definition-builder)来构造您的筛选器定义。 在该构造中，使用组件、容器、运算符和逻辑。 当您在主定义或您在[定义生成器](filter-builder.md#definition-builder)中使用的任何容器中选择&#x200B;**[!UICONTROL Then]**&#x200B;运算符时，常规筛选器就会自动变为顺序筛选器。
+生成顺序过滤器的基本原理与使用[过滤器生成器](filter-builder.md)生成常规过滤器相同。 您可以使用[定义生成器](filter-builder.md#definition-builder)来构造您的筛选器定义。 在该构造中，使用组件、容器、运算符和逻辑。 当您在主定义或您在[定义生成器](filter-builder.md#definition-builder)中使用的任何容器中选择&#x200B;**[!UICONTROL Then]**&#x200B;运算符时，常规筛选器就会自动变为顺序筛选器。
 
 ### 示例
 
@@ -79,7 +78,7 @@ ht-degree: 2%
 
 ![嵌套序列](assets/sequence-nested.png)
 
-## After和within
+## [!UICONTROL After]和[!UICONTROL Within]
 
 您可以使用![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]**&#x200B;和![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** **[!UICONTROL Then]**&#x200B;运算符为事件、会话或Dimension](#event-session-and-dimension-constraints)定义其他[时间约束](#time-constraints)或[约束。
 
@@ -99,7 +98,7 @@ ht-degree: 2%
 | 运算符 | 描述 |
 |--- |--- |
 | **[!UICONTROL After]** | [!UICONTROL After]运算符用于指定两个检查点之间的时间长度的最小限制。 设置After值时，时间限制从应用过滤器时开始。 例如，如果在容器上设置[!UICONTROL After]运算符以识别访问页面A，但直到一天后才返回访问页面B的人员，则访客离开页面A时将会开始该日期。 对于要包含在过滤器中的访客，离开页面A后必须至少经过1440分钟（一天）才能查看页面B。 |
-| **[!UICONTROL Within]** | [!UICONTROL Within]运算符用于指定两个检查点之间的时间长度的最大限制。 例如，如果在容器上设置[!UICONTROL Within]运算符以识别访问页面A，然后在一天内返回访问页面B的人员，则该时间将从该人员离开页面A时开始。要包含在过滤器中，人员最多需要在一天之后打开页面B。对于要包含在过滤器中的人员，在离开页面A以查看页面B后最多1440分钟（一天）内必须出现打开页面B。 |
+| **[!UICONTROL Within]** | [!UICONTROL Within] 运算符用于指定两个检查点之间的时间长度的最大限制。例如，如果在容器上设置[!UICONTROL Within]运算符以识别访问页面A，然后在一天内返回访问页面B的人员，则该时间将从该人员离开页面A时开始。要包含在过滤器中，人员最多需要在一天之后打开页面B。对于要包含在过滤器中的人员，在离开页面A以查看页面B后最多1440分钟（一天）内必须出现打开页面B。 |
 | **[!UICONTROL 晚于]**&#x200B;之内 | 同时使用[!UICONTROL After]和[!UICONTROL Within]运算符时，这两个运算符是并行开始和结束的，而不是按顺序开始和结束。 <br/>例如，您生成了一个容器设置为`After = 1 Week(s) and Within = 2 Week(s)`的筛选器。<br/>此筛选条件中用于识别访客的条件仅在一周到两周之间满足。 这两个条件是从第一次查看页面时开始执行的。 |
 
 
@@ -107,7 +106,7 @@ ht-degree: 2%
 
 有关使用时间约束的一些示例。
 
-##### After运算符
+##### [!UICONTROL After]运算符
 
 识别仅两周后访问了一个页面然后又访问另一个页面的人员。 例如，访问主页的人员，但 | 仅两周后才能翻页。
 
@@ -115,7 +114,7 @@ ht-degree: 2%
 
 如果主页的页面查看发生在2024年6月1日00:01，则页面查看针对页面女性 | 只要该页面查看发生在2024年6月15日00:01之后，鞋就会匹配。
 
-##### Within运算符
+##### [!UICONTROL Within]运算符
 
 识别在五分钟内访问了一个页面然后访问另一个页面的人员。 例如，访问主页的人，然后访问妇女 | 在5分钟内完成“鞋子”页面。
 
@@ -123,7 +122,7 @@ ht-degree: 2%
 
 如果主页的页面查看发生在2024年6月1日12:01，则页面查看针对页面女性 | 只要该页面查看发生在2024年6月15日12:16之前，鞋就会匹配。
 
-##### After but Within运算符
+##### [!UICONTROL After]但[!UICONTROL Within]运算符
 
 识别访问了一个页面然后在两周后但在一个月内访问另一个页面的人员。 例如，访问主页的人，两周后在一个月内访问的女性 | “鞋子”页面。
 
@@ -132,7 +131,7 @@ ht-degree: 2%
 2024年6月1日点击主页并返回妇女之家的任何人 | 2019年6月15日00:01之后但2019年7月1日之前的“鞋子”页面符合该区段的条件。
 
 
-### 事件、会话和Dimension限制
+### [!UICONTROL 事件]、[!UICONTROL 会话]和[!UICONTROL Dimension]约束
 
 ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]**&#x200B;和![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]**&#x200B;约束不仅允许您指定时间约束，还可以指定事件、会话或维度约束。 选择&#x200B;**[!UICONTROL 事件]**、**[!UICONTROL 会话]**&#x200B;或&#x200B;**[!UICONTROL 其他维度]** ![ChevronRight](/help/assets/icons/ChevronRight.svg) **[!UICONTROL *Dimension名称&#x200B;*]**。 您可以使用&#x200B;[!UICONTROL *搜索*]字段来搜索维度。
 
@@ -149,11 +148,11 @@ ht-degree: 2%
 | 页面`Women \| Shoes`后跟页面`Checkout \| Thank You` | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) |
 | 页面`Women \| Shoes`后跟页面`Women \| Tops`，后跟页面`Checkout \| Thank You` | ![删除圆圈](/help/assets/icons/RemoveCircle.svg) |
 
-## 包含
+## [!UICONTROL 包含]
 
 您可以指定在顺序过滤器或作为顺序过滤器一部分的顺序容器中包含哪些数据。
 
-### 每个人 {#include_everyone}
+### [!UICONTROL 每个人] {#include_everyone}
 
 要创建包含每个人的顺序筛选器，请选择选项![用户组](/help/assets/icons/UserGroup.svg) **[!UICONTROL 包含每个人]**。
 
@@ -169,7 +168,7 @@ ht-degree: 2%
 | 2 | `Women \| Shoes`然后`Men \| Shoes`然后`Checkout \| Thank You`（跨不同会话） | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) |
 | 3 | `Checkout \| Thank You`，然后`Women \| Shoes` | ![删除圆圈](/help/assets/icons/RemoveCircle.svg) |
 
-### “仅在序列前”和“仅在序列后”
+### [!UICONTROL 仅在序列之前]，[!UICONTROL 仅在序列之后]
 
 选项![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]**&#x200B;和![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only Before Sequence]**&#x200B;将数据过滤到指定序列之前或之后的子集。
 
@@ -203,7 +202,7 @@ ht-degree: 2%
 
 ![连续筛选器报告](assets/sequential-filter-freeform-table.png)
 
-## 排除
+## [!UICONTROL 排除]
 
 筛选器定义包括所有数据，除非您使用&#x200B;**[!UICONTROL 排除]**&#x200B;专门排除![用户](/help/assets/icons/User.svg) [!UICONTROL 人员]、![访问](/help/assets/icons/Visit.svg) [!UICONTROL 会话]或![网页](/help/assets/icons/WebPage.svg) [!UICONTROL 事件]数据。
 
@@ -215,7 +214,7 @@ ht-degree: 2%
 * **排除反向链接域**。请使用仅包含来自Google.com的反向链接域并排除所有其他域的定义。
 * **确定非顾客**。识别订单大于零的时间，然后排除[!UICONTROL 人员]。
 
-[!UICONTROL Exclude]可用于识别人员未执行特定会话或事件的序列。 [!UICONTROL 排除]也可以包含在[!UICONTROL 逻辑组]中（请参阅下文）。
+[!UICONTROL Exclude]可用于识别人员不是特定会话一部分的序列或执行特定事件。 [!UICONTROL 排除]也可以包含在[!UICONTROL 逻辑组]中（请参阅下文）。
 
 您可以排除容器而非组件。
 
@@ -223,28 +222,28 @@ ht-degree: 2%
 
 有关使用[!UICONTROL 排除]的示例，请参见下文。
 
-#### 排除范围
+#### [!UICONTROL 排除]，在
 
 识别访问了一个页面、未访问另一个页面、然后又访问另一个页面的人员。 您使用![设置](/help/assets/icons/Setting.svg) [!UICONTROL 排除]排除容器。 排除的容器由左侧的红色细条标识。
 
 ![排除序列](assets/sequence-exclude.png)
 
 
-#### 开头排除
+#### 开始时[!UICONTROL 排除]
 
 识别从未访问过某个页面就访问过另一个页面的人员。 例如，访客结帐后从未访问过主页。
 
 ![序列排除开始](assets/sequence-exclude-start.png)
 
 
-#### 在末尾排除
+#### 在末尾[!UICONTROL 排除]
 
 识别访问过一个页面但从未访问过其他页面的人员。 例如，访问过您的主页但从未访问过任何结账页面的人员。
 
 ![序列排除结束](assets/sequence-exclude-end.png)
 
 
-## 逻辑组
+## [!UICONTROL 逻辑组]
 
 >[!NOTE]
 >
@@ -283,13 +282,13 @@ ht-degree: 2%
 
 ![示例将第一个匹配与逻辑组一起使用](assets/logicgroup-example-firstmatch.png)
 
-#### 排除和
+#### [!UICONTROL 排除] [!UICONTROL 和]
 
 识别访问了一个页面，然后明确未访问一组其他页面，但又访问了另一页面的人员。 例如，访问过主页的人员，没有访问男性页面或女性页面，但访问了儿童页面。
 
 ![逻辑组排除和](assets/logicgroup-exclude-and.png)
 
-#### 排除或
+#### [!UICONTROL 排除] [!UICONTROL 或]
 
 识别访问了一个页面，然后明确不访问一组页面中的任何页面，但又访问另一个页面的人员。 例如，访问主页的人没有访问“男女”页面，但访问了“孩子”页面。
 
