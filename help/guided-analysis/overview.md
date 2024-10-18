@@ -24,7 +24,7 @@ ht-degree: 79%
 | ![转化趋势](/help/assets/icons/ConversionTrends.svg) | [转化趋势](types/conversion-trends.md) | 跟踪转化率随时间发生的变化。 |
 | ![参与图形](/help/assets/icons/EngagementGraph.svg) | [参与度](types/engagement.md) | 了解功能参与的广度和深度。 |
 | ![FirstUse](/help/assets/icons/FirstUse.svg) | [首次使用影响](types/first-use-impact.md) | 衡量功能首次使用对关键量度的影响。 |
-| ![直方图](/help/assets/icons/Histogram.svg) | [频率](types/frequency.md) | 按使用频率衡量参与度。 |
+| ![Histogram](/help/assets/icons/Histogram.svg) | [频率](types/frequency.md) | 按使用频率衡量参与度。 |
 | ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) | [漏斗](types/funnel.md) | 比较步骤之间的转化率。 |
 | ![网络增长](/help/assets/icons/NetGrowth.svg) | [净增长](types/net-growth.md) | 您是在获得用户还是在失去用户？ |
 | ![发布](/help/assets/icons/Release.svg) | [版本影响](types/release-impact.md) | 比较发布前和发布后相同时期的性能。 |
@@ -40,25 +40,25 @@ ht-degree: 79%
 
 1. 通过选择主页上的&#x200B;**[!UICONTROL 引导式分析]**，您可以直接进入[使用趋势视图](types/trends.md)。
 
-   ![登陆页面图块](assets/landing-page-tile.png){style="border:1px solid gray"}
+   ![Landing page tile](assets/landing-page-tile.png){style="border:1px solid gray"}
 
 1. 选择&#x200B;**[!UICONTROL 新建]**，查看不同的视图选项，并选择不同的分析起点。
 
-   ![新建模式](assets/create-new-modal.png){style="border:1px solid gray"}
+   ![Create a new modal](assets/create-new-modal.png){style="border:1px solid gray"}
 
 您还可以从 Analysis Workspace 项目中访问引导式分析。
 
 1. 从主页中选择&#x200B;**[!UICONTROL 空白项目]**&#x200B;来创建一个空的 Workspace 项目。
 
-   ![创建空白项目](assets/blank-project.png){style="border:1px solid gray"}
+   ![Create blank project](assets/blank-project.png){style="border:1px solid gray"}
 
-1. 选择左侧边栏中的![引导式分析](/help/assets/icons/GuidedAnalysis.svg) **[!UICONTROL 引导式分析]**。
+1. 选择左侧边栏中的![Guided analysis](/help/assets/icons/GuidedAnalysis.svg) **[!UICONTROL 引导式分析]**。
 
-   ![Workspace 左侧边栏](assets/workspace-left-rail.png){style="border:1px solid gray"}
+   ![Workspace left rail](assets/workspace-left-rail.png){style="border:1px solid gray"}
 
 1. 将任何新分析拖到Workspace画布上，然后选择&#x200B;**[!UICONTROL 创建]**&#x200B;以生成所需的分析（例如： **[!UICONTROL 创建趋势]**）。 您还可以将现有分析从&#x200B;**[!UICONTROL 已保存]**&#x200B;部分拖动到 Workspace 画布上。
 
-   ![创建面板](assets/create-guided-analysis-panel.gif)
+   ![Create panel](assets/create-guided-analysis-panel.gif)
 
 ## 界面
 

@@ -21,14 +21,14 @@ ht-degree: 94%
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **资产转移** | 允许您将组件（如项目、筛选器和计算量度）的所有权转移给其他用户，以确保连续性和适当的访问权限。 [了解详情](/help/tools/asset-transfer/transfer-assets.md) |  | 10 年 15 月 |
-| **引导式分析：嵌入 Workspace** | [引导式分析](https://experienceleague.adobe.com/zh-hans//docs/analytics-platform/using/guided-analysis/overview)现在可直接在 Analysis Workspace 中使用，用户使用该功能可以创建具有来自面板、可视化内容和引导式分析的全面洞察的仪表板。从新的左侧边栏部分，您可以创建新的引导式分析，以将其添加到您的项目中。您还可以访问已保存的引导式分析，这些分析可以在许多项目中重新用作构建基块。 | 2024 年 10 月 2 日 | 2024 年 10 月 31 日 |
-| **产品使用情况** | 了解您的组织如何使用 Customer Journey Analytics。启用此功能会在 Adobe Experience Platform 中创建一个数据集，当组织中的任何人使用 Analysis Workspace 时，该数据集都会收集数据。还会自动创建连接和数据视图，让您可以访问诸如顶级项目类型、最活跃的用户以及项目中最常用的组件等维度。[了解详情](https://experienceleague.adobe.com/zh-hans//docs/analytics-platform/using/tools/product-usage/usage-overview) | 2024 年 10 月 23 日 | 2025年1月 |
-| **历程画布可视化** | 历程画布是 Analysis workspace 中的一项可视化功能，您使用它可以分析人们如何完成或退出所定义的历程。通过创建灵活的节点和箭头图形来构建用户历程分析，该图形可表示事件、维度项目和过滤器的任意组合。拖动画布上的节点可重新排列历程的事件和条件。当您进行该操作时，数据会相应更新。<p>有权访问 Adobe Journey Optimizer 的客户可以分析现有的 Journey Optimizer 历程。<p>要了解有关历程画布的更多信息，请参阅[历程画布概述](https://experienceleague.adobe.com/zh-hans//docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas)。<p>要了解如何构建历程画布可视化内容，请参阅[配置历程画布](https://experienceleague.adobe.com/zh-hans//docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/configure-journey-canvas)。 | 2024 年 10 月 2 日 | 2024 年 10 月 14 日 |
-| **创建受众时现在包含面板过滤器和列过滤器** | 在 Analysis Workspace 中通过可视化内容创建受众时，面板过滤器和列过滤器现在作为附加条件包含在内。如果不需要过滤器，则可以在发布受众之前将其移除。以前，在创建受众时，应用于 Analysis Workspace 中可视化内容的面板或列的任何过滤器都会被忽略。<p>有关如何从 Customer Journey Analytics 创建受众的信息，请参阅[创建和发布受众](https://experienceleague.adobe.com/zh-hans//docs/analytics-platform/using/cja-components/audiences/publish)。 |  | 2024 年 10 月 2 日 |
+| **引导式分析：嵌入 Workspace** | [引导式分析](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/guided-analysis/overview)现在可直接在 Analysis Workspace 中使用，用户使用该功能可以创建具有来自面板、可视化内容和引导式分析的全面洞察的仪表板。从新的左侧边栏部分，您可以创建新的引导式分析，以将其添加到您的项目中。您还可以访问已保存的引导式分析，这些分析可以在许多项目中重新用作构建基块。 | 2024 年 10 月 2 日 | 2024 年 10 月 31 日 |
+| **产品使用情况** | 了解您的组织如何使用 Customer Journey Analytics。启用此功能会在 Adobe Experience Platform 中创建一个数据集，当组织中的任何人使用 Analysis Workspace 时，该数据集都会收集数据。还会自动创建连接和数据视图，让您可以访问诸如顶级项目类型、最活跃的用户以及项目中最常用的组件等维度。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/tools/product-usage/usage-overview) | 2024 年 10 月 23 日 | 2025年1月 |
+| **历程画布可视化** | 历程画布是 Analysis workspace 中的一项可视化功能，您使用它可以分析人们如何完成或退出所定义的历程。通过创建灵活的节点和箭头图形来构建用户历程分析，该图形可表示事件、维度项目和过滤器的任意组合。拖动画布上的节点可重新排列历程的事件和条件。当您进行该操作时，数据会相应更新。<p>有权访问 Adobe Journey Optimizer 的客户可以分析现有的 Journey Optimizer 历程。<p>要了解有关历程画布的更多信息，请参阅[历程画布概述](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas)。<p>要了解如何构建历程画布可视化内容，请参阅[配置历程画布](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/configure-journey-canvas)。 | 2024 年 10 月 2 日 | 2024 年 10 月 14 日 |
+| **创建受众时现在包含面板过滤器和列过滤器** | 在 Analysis Workspace 中通过可视化内容创建受众时，面板过滤器和列过滤器现在作为附加条件包含在内。如果不需要过滤器，则可以在发布受众之前将其移除。以前，在创建受众时，应用于 Analysis Workspace 中可视化内容的面板或列的任何过滤器都会被忽略。<p>有关如何从 Customer Journey Analytics 创建受众的信息，请参阅[创建和发布受众](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/audiences/publish)。 |  | 2024 年 10 月 2 日 |
 
 ## Customer Journey Analytics 中的修复
 
-AN-354085；AN-355870；AN-356037；AN-356881；AN-357100；AN-358193；AN-358364；AN-358911；AN-359000；AN-359160
+AN-354085; AN-355870; AN-356037; AN-356881; AN-357100; AN-358193; AN-358364; AN-358911; AN-359000; AN-359160
 
 ## Customer Journey Analytics 管理员的重要注意事项
 

@@ -53,7 +53,7 @@ ht-degree: 93%
       + [比较数据处理](../getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [环境](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
       + [分析处理与数据准备](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
-      + [分析标识](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
+      + [Analytics 标识](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
    + [Adobe Analytics 的演变](../getting-started/aa-to-cja.md)
    + [适用于 Adobe Analytics 用户的用户指南](../getting-started/aa-to-cja-user.md)
 

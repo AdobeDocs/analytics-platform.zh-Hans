@@ -53,7 +53,7 @@ ht-degree: 30%
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 列最大值（量度，include_zeros）]**
 
-返回某指标列的一组维度元素中的最大值。MAXV 可以在一个列（指标）内跨维度元素垂直估值。
+返回某量度列的一组维度元素中的最大值。MAXV 可以在一个列（量度）内跨维度元素垂直估值。
 
 | 参数 | 描述 |
 |---|---|
@@ -65,7 +65,7 @@ ht-degree: 30%
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 列最小值（量度，include_zeros）]**
 
-返回某指标列的一组维度元素中的最小值。MINV 可以在一个列（指标）内跨维度元素垂直估值。
+返回某量度列的一组维度元素中的最小值。MINV 可以在一个列（量度）内跨维度元素垂直估值。
 
 | 参数 | 描述 |
 |---|---|
@@ -88,7 +88,7 @@ ht-degree: 30%
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 计数（量度）]**
 
-[!BADGE 表格]{type="Neutral"}
+[!BADGE Table]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
@@ -110,7 +110,7 @@ ht-degree: 30%
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL MEAN(metric， include_zeros)]**
 
-[!BADGE 表格]{type="Neutral"}
+[!BADGE Table]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
@@ -122,7 +122,7 @@ ht-degree: 30%
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN(metric， include_zeros)]**
 
-[!BADGE 表格]{type="Neutral"}
+[!BADGE Table]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
@@ -161,12 +161,12 @@ MODULO(MODULO(x,y)+y,y)
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 百分位数(metric， k， include_zeros)]**
 
-[!BADGE 表格]{type="Neutral"}
+[!BADGE Table]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
 | 量度 | 介于 0 到 100 之间（包括 0 和 100）的百分位数值。 |
-| k | 用于定义相对位置的指标列。 |
+| k | 用于定义相对位置的量度列。 |
 | include_zeros | 是否在计算中包括零值。 |
 
 
@@ -187,7 +187,7 @@ MODULO(MODULO(x,y)+y,y)
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE(metric， quartile， include_zeros)]**
 
-[!BADGE 表格]{type="Neutral"}当QUARTILE分别等于`0` （零）、`2`和`4`时，[COLUMN MINIMUM](#column-minimum)、[MEDIAN](#median)和[COLUMN MAXIMUM](#column-maximum)返回与[QUARTILE](#quartile)相同的值。
+[!BADGE Table]{type="Neutral"}当QUARTILE分别等于`0` （零）、`2`和`4`时，[COLUMN MINIMUM](#column-minimum)、[MEDIAN](#median)和[COLUMN MAXIMUM](#column-maximum)返回与[QUARTILE](#quartile)相同的值。
 
 | 参数 | 描述 |
 |---|---|
@@ -274,7 +274,7 @@ ROUND( 314.15, -2) = 300
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 标准偏差（量度，include_zeros）]**
 
-[!BADGE 表格]{type="Neutral"}
+[!BADGE Table]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
@@ -286,7 +286,7 @@ ROUND( 314.15, -2) = 300
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE(metric， include_zeros)]**
 
-[!BADGE 表格]{type="Neutral"}
+[!BADGE Table]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
