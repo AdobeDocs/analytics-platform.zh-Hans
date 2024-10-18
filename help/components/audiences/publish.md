@@ -7,7 +7,7 @@ role: User
 source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
 source-wordcount: '1948'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="cja_components_audiences_refreshfrequency"
 >title="刷新频率"
->abstract="查看重新评估受众成员资格的频率。<br/>一次性受众仅会评估一次。"
+>abstract="了解如何实现受众会员资格的重新评估。<br/>一次性受众仅会评估一次。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,7 +45,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="cja_component_audiences_audiencesizelimit"
 >title="受众规模限制"
->abstract="受众人数不得超过20亿成员。"
+>abstract="受众不得超过 2 000 万会员。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -53,15 +53,15 @@ ht-degree: 17%
 
 >[!CONTEXTUALHELP]
 >id="cja_component_audiences_namespacesincluded"
->title="命名空间已包含"
->abstract="此受众中的身份由以下命名空间组成。"
+>title="已包括命名空间"
+>abstract="该受众的身份由以下命名空间组成。"
 
 <!-- markdownlint-enable MD034 -->
 
 
 
 
-本主题讨论如何在Adobe Experience Platform中创建并将在Customer Journey Analytics中识别的受众发布到[实时客户个人资料](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)，以实现客户定位和个性化。
+本主题讨论如何在Adobe Experience Platform中创建并将在Customer Journey Analytics中识别的受众发布到[实时客户个人资料](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/home)，以实现客户定位和个性化。
 
 阅读此[概述](/help/components/audiences/audiences-overview.md)，了解Customer Journey Analytics受众的概念。
 

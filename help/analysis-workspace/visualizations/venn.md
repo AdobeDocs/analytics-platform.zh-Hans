@@ -7,7 +7,7 @@ role: User
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '136'
-ht-degree: 17%
+ht-degree: 30%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_venn_button"
 >title="维恩图"
->abstract="创建维恩图可视化图表，以便快速直观地比较两个元素及其重叠的大小。"
+>abstract="创建维恩图可视化，以快速直观地比较两个元素及其重叠尺寸。"
 
 <!-- markdownlint-enable MD034 -->
 

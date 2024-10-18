@@ -7,11 +7,11 @@ role: User
 source-git-commit: e8d9132ec9920d649f6694f02f987deadb93b77d
 workflow-type: tm+mt
 source-wordcount: '174'
-ht-degree: 21%
+ht-degree: 30%
 
 ---
 
-# 条形图（栈叠）
+# 条形图（堆叠）
 
 条形图可视化图表具有标准和栈叠选项。
 
@@ -40,7 +40,7 @@ ht-degree: 21%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_barstacked_button"
 >title="堆叠的条形图"
->abstract="创建条形图可视化以表示一个或多个栈叠量度中的各种值。"
+>abstract="创建条形图可视化来表示一个或多个堆叠量度中的多个值。"
 
 <!-- markdownlint-enable MD034 -->
 

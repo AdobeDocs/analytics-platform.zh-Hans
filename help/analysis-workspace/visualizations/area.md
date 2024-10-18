@@ -7,7 +7,7 @@ role: User
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '168'
-ht-degree: 25%
+ht-degree: 32%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 25%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_areastacked_button"
 >title="堆叠的面积图"
->abstract="创建面积图可视化以表示多个量度的栈叠。"
+>abstract="创建面积图可视化来表示多个量度的堆叠。"
 
 <!-- markdownlint-enable MD034 -->
 
