@@ -1,14 +1,14 @@
 ---
-description: 了解如何从文件夹重命名项目
+description: 了解如何从文件夹中重命名项目
 keywords: Analysis Workspace
 title: 从文件夹中删除项目
 feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 role: User
 source-git-commit: 6cf6fa977a2c5dee28dcfe6f9446d294a9d9fd0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '157'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 

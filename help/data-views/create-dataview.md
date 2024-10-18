@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1832'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 创建数据视图涉及从架构元素创建量度和维度或利用标准组件。大多数架构元素既可为维度，也可为量度，具体取决于您的业务要求。将架构元素拖入数据视图后，右侧即显示选项，从中可调整维度或量度在 Customer Journey Analytics 中的操作方式。
 
-+++ 观看视频，说明Customer Journey Analytics中的数据视图
++++ 观看视频以说明 Customer Journey Analytics 中的数据视图
 
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
 
@@ -72,7 +72,7 @@ ht-degree: 99%
 >id="cja_dataview_dataviewsinadobejourneyoptimizer"
 >title="Journey Optimizer 中的数据视图"
 >abstract="Journey Optimizer 需要使用与 Customer Journey Analytics 一起配置的数据视图。<br/>启用此选项可使其成为 Adobe Journey Optimizer 报告中使用的默认数据视图。"
->additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/integrations/ajo#connection" text="添加了哪些组件和数据集。"
+>additional-url="https://experienceleague.adobe.com/zh-hans//docs/analytics-platform/using/integrations/ajo#connection" text="添加了哪些组件和数据集。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -99,17 +99,17 @@ ht-degree: 99%
 
 {style="table-layout:auto"}
 
-### 日历
+### 日程表
 
-指示您希望数据视图遵循的日历格式。可有多个数据视图基于同一个[连接](/help/connections/create-connection.md)，并可为其赋予不同的日历类型或时区。这些数据视图可让使用不同日历类型的团队用相同的基础数据满足其各自的需求。
+指示您希望数据视图遵循的日程表格式。可有多个数据视图基于同一个[连接](/help/connections/create-connection.md)，并可为其赋予不同的日程表类型或时区。这些数据视图可让使用不同日程表类型的团队用相同的基础数据满足其各自的需求。
 
 | 设置 | 描述 |
 | --- | --- |
 | [!UICONTROL **时区**] | 选择要用哪个时区表示数据。如果选择执行夏令时的时区，则将自动调整数据以反映这一点。春季将时钟向前调整一小时，产生一小时差距。秋季将时钟向后调整一小时，在夏令时转换期间将有一小时重复。 |
-| [!UICONTROL **日历类型**] | 决定每个月的周数如何分组。<br>**公历：**&#x200B;标准日历格式。季度按月分组。<br>**4-5-4 零售：**&#x200B;标准化的 4-5-4 零售日历。季度的第一个月和最后一个月包含 4 周，而季度的第二个月包含 5 周。<br>**自定义 (4-5-4)：**&#x200B;类似于 4-5-4 日历，但可选择一年的第一天以及哪年出现“额外的”一周。<br>**自定义 (4-4-5)：**&#x200B;每个季度的第一个月和第二个月包含 4 周，而每个季度的最后一个月包含 5 周。<br>**自定义 (5-4-4)：**&#x200B;每个季度的第一个包含为 5 周，而每个季度的第二个月和第三个月包含 4 周。 |
-| [!UICONTROL **一年的第一个月**]&#x200B;和&#x200B;[!UICONTROL **一周的第一天**] | 对“公历”日历类型可见。指定要让日历年从哪一个月开始，以及每周从哪一天开始。 |
-| [!UICONTROL **当年的第一天**] | 对自定义日历类型可见。指定要让当年在一年中的哪一天开始。日历自动根据此值设置每周第一天的格式。 |
-| [!UICONTROL **出现“额外的”一周的年份**] | 对于大多数 364 天日历（52 周，每周 7 天），每年都会积累多出的天数，直到它们加起来形成额外的一周。然后，将这额外的一周添加到当年的最后一个月。指定要将额外的一周添加到哪年。 |
+| [!UICONTROL **日程表类型**] | 决定每个月的周数如何分组。<br>**公历：**&#x200B;标准日程表格式。季度按月分组。<br>**4-5-4 零售：**&#x200B;标准化的 4-5-4 零售日程表。季度的第一个月和最后一个月包含 4 周，而季度的第二个月包含 5 周。<br>**自定义 (4-5-4)：**&#x200B;类似于 4-5-4 日程表，但可选择一年的第一天以及哪年出现“额外的”一周。<br>**自定义 (4-4-5)：**&#x200B;每个季度的第一个月和第二个月包含 4 周，而每个季度的最后一个月包含 5 周。<br>**自定义 (5-4-4)：**&#x200B;每个季度的第一个包含为 5 周，而每个季度的第二个月和第三个月包含 4 周。 |
+| [!UICONTROL **一年的第一个月**]&#x200B;和&#x200B;[!UICONTROL **一周的第一天**] | 对“公历”日程表类型可见。指定要让日程表年从哪一个月开始，以及每周从哪一天开始。 |
+| [!UICONTROL **当年的第一天**] | 对自定义日程表类型可见。指定要让当年在一年中的哪一天开始。日程表自动根据此值设置每周第一天的格式。 |
+| [!UICONTROL **出现“额外的”一周的年份**] | 对于大多数 364 天日程表（52 周，每周 7 天），每年都会积累多出的天数，直到它们加起来形成额外的一周。然后，将这额外的一周添加到当年的最后一个月。指定要将额外的一周添加到哪年。 |
 
 {style="table-layout:auto"}
 
@@ -178,6 +178,6 @@ ht-degree: 99%
 
 ### 会话设置
 
-决定在会话到期并开始新会话之前，事件之间无活动的时段。 时段为必填。还可选择在事件包含特定量度时强制开始新会话。有关更多详细信息，请参阅[会话设置](session-settings.md)。
+决定在会话到期并开始新会话之前，事件之间无活动的时段。时段为必填。还可选择在事件包含特定量度时强制开始新会话。有关更多详细信息，请参阅[会话设置](session-settings.md)。
 
 指定所有需要的设置后，单击&#x200B;**[!UICONTROL 保存并完成]**。

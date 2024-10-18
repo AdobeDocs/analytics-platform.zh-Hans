@@ -5,7 +5,7 @@ feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '412'
 ht-degree: 100%
 
@@ -38,7 +38,7 @@ ht-degree: 100%
 
 现在您已经创建了一个空白 Workspace 项目，请确保您熟悉 [Analysis Workspace](/help/analysis-workspace/home.md) 用户界面。完成后，您就可以构建您的项目了。操作方法：
 
-![示例项目](assets/example-project.png)
+![Example project](assets/example-project.png)
 
 * 将[面板](/help/analysis-workspace/c-panels/panels.md)添加到您的项目中。例如，**[!DNL Example Panel]** ➊。
 
@@ -68,7 +68,7 @@ ht-degree: 100%
 
 项目设置提供有关当前活动项目的项目级信息。
 
-![项目信息和设置窗口。](./assets/projectinfo.png)
+![The Project Info &amp; Settings window.](./assets/projectinfo.png)
 
 这些设置包括：
 

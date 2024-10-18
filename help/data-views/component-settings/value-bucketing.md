@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '208'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_valuebucketing"
 >title="值分段"
->abstract="将值划分到特定范围内。这些范围在报告中显示为维度项目。"
+>abstract="将值装入特定范围。这些范围在报告中表现为维度项。"
 
 <!-- markdownlint-enable MD034 -->
 

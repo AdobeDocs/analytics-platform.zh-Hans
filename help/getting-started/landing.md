@@ -5,9 +5,9 @@ role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
 source-git-commit: 373d0c9989fb692da23efe371c65344093801140
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '496'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 52%
 
 Customer Journey Analytics 的登录页突出[!DNL Analysis Workspace]显示了项目经理主页和学习部分，以帮助您更有效地管理客户历程数据。
 
-+++ 有关介绍，请参阅视频。
++++ 请观看视频了解相关的介绍。
 
 >[!VIDEO](https://video.tv.adobe.com/v/334278/?quality=12)
 
@@ -25,7 +25,7 @@ Customer Journey Analytics 的登录页突出[!DNL Analysis Workspace]显示了�
 
 Customer Journey Analytics 登陆页面由以下子选项卡组成：项目和学习。
 
-**[!UICONTROL 项目]**&#x200B;是自定义的设计，结合了您构建的或其他人构建并与您共享的数据组件、表格和可视化图表。[!UICONTROL 项目]还指空白项目和空白移动记分卡。
+**[!UICONTROL 项目]**&#x200B;是自定义的设计，结合了您构建的或其他人构建并与您共享的数据组件、表格和可视化内容。[!UICONTROL 项目]还指空白项目和空白移动记分卡。
 
 **[!UICONTROL “学习”]**&#x200B;选项卡包含实践视频导览、教程以及文档链接。
 
@@ -33,27 +33,27 @@ Customer Journey Analytics 登陆页面由以下子选项卡组成：项目和�
 
 >[!TAB 项目]
 
-![项目登陆页面](assets/landing-projects.png)
+![Projects landing page](assets/landing-projects.png)
 
 >[!TAB 学习]
 
-![学习登陆页面](assets/landing-learning.png)
+![Learning landing page](assets/landing-learning.png)
 
 
 >[!ENDTABS]
 
 ## 项目
 
-[!UICONTROL 项目]用作 [!UICONTROL Workspace] 主页。**[!UICONTROL 项目]**&#x200B;选项卡显示公司文件夹、您创建的所有个人文件夹、您的Workspace项目以及移动记分卡。 使用此页面可查看、创建和修改文件夹、项目和移动记分卡。有关详细信息，请参阅[项目](/help/analysis-workspace/build-workspace-project/freeform-overview.md)。
+[!UICONTROL 项目]用作 [!UICONTROL Workspace] 主页。**[!UICONTROL 项目]**&#x200B;选项卡显示公司文件夹、您创建的任何个人文件夹、您的 Workspace 项目和移动记分卡。使用此页面可查看、创建和修改文件夹、项目和移动记分卡。有关更多信息，请参阅[项目](/help/analysis-workspace/build-workspace-project/freeform-overview.md)。
 
 
-**[!UICONTROL 项目]**&#x200B;是自定义的设计，结合了您构建的或其他人构建并与您共享的数据组件、表格和可视化图表。[!UICONTROL 项目]还指空白项目和空白移动记分卡。
+**[!UICONTROL 项目]**&#x200B;是自定义的设计，结合了您构建的或其他人构建并与您共享的数据组件、表格和可视化内容。[!UICONTROL 项目]还指空白项目和空白移动记分卡。
 
 >[!NOTE]
 >
 >以下几个设置在会话期间和会话之间保持不变。例如，您选择的选项卡、选择的筛选条件、选择的列以及列排序方向。搜索结果不是持久性的。
 
-有关详细信息，请参阅[项目](/help/analysis-workspace/build-workspace-project/freeform-overview.md)。
+有关更多信息，请参阅[项目](/help/analysis-workspace/build-workspace-project/freeform-overview.md)。
 
 <!--
 
@@ -113,27 +113,27 @@ The available columns are:
 
 使用 Customer Journey Analytics 中的“学习”页面来学习：
 
-* Customer Journey Analytics中的初级、中间或高级功能和用例
-* 如何更顺畅地从Adobe Analytics过渡到Customer Journey Analytics
+* Customer Journey Analytics 中的初级、中级或高级功能和用例
+* 如何从 Adobe Analytics 顺利过渡到 Customer Journey Analytics。
 
-要访问学习内容，请执行以下操作：
+访问学习内容：
 
-* 在Customer Journey Analytics中，从顶部菜单中选择&#x200B;[!UICONTROL **Workspace**]，然后从左侧面板中选择&#x200B;[!UICONTROL **学习**]。
+* 在 Customer Journey Analytics 中，从顶部菜单中选择 [!UICONTROL **Workspace**]，然后从左侧面板中选择&#x200B;[!UICONTROL **学习**]。
 
 ### 功能
 
 学习页面提供以下功能
 
-* **筛选内容：**&#x200B;使用![筛选器](/help/assets/icons/Filter.svg)按&#x200B;**[!UICONTROL 类型]** （**[!UICONTROL 文档]**、**[!UICONTROL 视频]**&#x200B;和&#x200B;**[!UICONTROL 导览和教程]**）和&#x200B;**[!UICONTROL 体验级别]** （**[!UICONTROL 初学者]**、**[!UICONTROL 中级]**&#x200B;或&#x200B;**[!UICONTROL 高级]**）筛选学习内容。
-* **跟踪进度：**&#x200B;在您选择一段内容后，将显示![复选标记圆圈](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 已查看]**&#x200B;标记。 此标记有助于跟踪您在整个学习内容中的进度。您可以选择![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 已查看]**&#x200B;标记以将其从某段内容中删除。
-* **查看其他内容：**&#x200B;在查看任何视频时，选择&#x200B;**[!UICONTROL 了解更多]**&#x200B;查看有关Experience League的相关文档内容。 或者，从“学习”页面中，选择下列选项之一以查看其他内容：
+* **过滤内容：**&#x200B;使用![Filter](/help/assets/icons/Filter.svg)按&#x200B;**[!UICONTROL 类型]**（**[!UICONTROL 文档]**、**[!UICONTROL 视频]**&#x200B;和&#x200B;**[!UICONTROL 导览和教程]**）以及&#x200B;**[!UICONTROL 经验级别]**（**[!UICONTROL 初级]**、**[!UICONTROL 中级]**&#x200B;或&#x200B;**[!UICONTROL 高级]**）过滤学习内容。
+* **跟踪进度**：选择一段内容后，系统会显示 ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 已查看]**&#x200B;标记。此标记有助于跟踪您在整个学习内容中的进度。您可以选择 ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 已查看]**&#x200B;标记，以将其从一段内容中删除。
+* **查看附加内容：**&#x200B;在观看任何视频时，选择&#x200B;**[!UICONTROL 了解更多]**&#x200B;以查看 Experience League 的相关文档内容。或者，从“学习”页面中，选择下列选项之一以查看其他内容：
    * **[!UICONTROL 访问 YouTube]：**&#x200B;查看完整的 Analysis Workspace YouTube 播放列表。
-   * [!UICONTROL **访问Experience League**]：查看有关Experience League的整套Customer Journey Analytics文档。
-* **新用户的基础知识：**&#x200B;建议新用户参加[!UICONTROL Workspace基础知识学习]教程。 此导览会将您直接转到 Workspace 并向您介绍最常用操作。此导览也可以随时在Workspace中通过[自由格式面板](/help/analysis-workspace/c-panels/freeform-panel.md)或[空白面板](/help/analysis-workspace/c-panels/blank-panel.md)标题的工具提示重新启动。
+   * [!UICONTROL **访问 Experience League**]：查看 Experience League 上的完整 Customer Journey Analytics 文档集。
+* **面向新用户的基础知识：**&#x200B;建议新用户使用[!UICONTROL 学习 Workspace 基础知识]导览。此导览会将您直接转到 Workspace 并向您介绍最常用操作。也可以随时通过[自由格式面板](/help/analysis-workspace/c-panels/freeform-panel.md)或[空白面板](/help/analysis-workspace/c-panels/blank-panel.md)标题中的工具提示在 Workspace 中重新启动此导览。
 
 ## 首选登陆页面
 
-您可以设置首选登陆页面。 有关详细信息，请参阅[用户首选项](/help/analysis-workspace/user-preferences.md#general-preferences)。
+您可以设置您喜欢的登陆页面。有关更多信息，请参阅[用户偏好设置](/help/analysis-workspace/user-preferences.md#general-preferences)。
 
 <!--
 ## Landing page FAQ {#landing-faq}

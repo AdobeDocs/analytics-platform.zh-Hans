@@ -5,9 +5,9 @@ exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 feature: Basics
 role: User
 source-git-commit: 664576605b8be098a751609536e388c304c65513
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '545'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Analytics [处理规则和 VISTA 规则](https://experienceleague.adobe.co
 
 Adobe Analytics 收集并存储的数据可以通过处理规则或 VISTA 规则或同时使用两者进行转换。但随后通过 Analytics Source Connector 转发到 Platform 的报告包可能会再次使用数据准备进行转换。这可以用于许多目的：
 
-* **解决 Customer Journey Analytics 和/或 RTCDP 中使用的报告包之间的架构差异。**&#x200B;例如，报告包A将`eVar1`定义为“搜索项”，报告包B将`eVar2`定义为“搜索项”。 您可以使用数据准备将两个不同的 eVar 映射到一个公共字段中，该字段包含来自两个 eVar 的数据。这使得在 [Customer Journey Analytics 连接](/help/connections/overview.md)中或在 [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html) 中能够[合并具有不同架构的报告包。](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html)
+* **解决 Customer Journey Analytics 和/或 RTCDP 中使用的报告包之间的架构差异。**&#x200B;例如，报告包 A 将 `eVar1` 定义为“搜索词”，报告包 B 将 `eVar2` 定义为“搜索词”。您可以使用数据准备功能将两个不同的 eVar 映射到一个公共字段中，该字段包含来自两个 eVar 的数据。这使得在 [Customer Journey Analytics 连接](/help/connections/overview.md)中或在 [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html) 中能够[合并具有不同架构的报告包。](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html)
 * **将 `eVars` 字段映射到语义上有意义的名称**。通过 Analytics Source Connector 的 `eVars` 和 `props` 被映射到 _\_experience.analytics.customDimensions.eVars.eVar1_ 等字段。数据准备可用于将 `eVar` 和 `prop` 字段映射到名称对用户更有意义或与来自其他数据源的名称相匹配的新字段。（这也可以通过其他方式实现，例如重命名 [Customer Journey Analytics 数据视图](/help/data-views/create-dataview.md)中的字段。）
 * **通常转换数据**。数据准备有数百个映射函数，可用于根据通过 Analytics Source Connector 获得的数据计算新字段。您可以将分隔字段拆分为单独的字段。您可以合并字段。您可以操纵字符串。您可以基于正则表达式从字段中提取信息，等等。
 

@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3526'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 99%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsadded"
 >title="添加的记录数"
->abstract="所选数据集的所选时间间隔期间添加到连接的记录数（行数）。"
+>abstract="在所选数据集的所选时间间隔期间添加到连接的记录数（行数）。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,7 +28,7 @@ ht-degree: 99%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsskipped"
 >title="跳过的记录数"
->abstract="所选数据集的所选时间间隔期间为连接传输数据期间跳过的记录数（行数）。"
+>abstract="在所选数据集的所选时间间隔期间为连接传输数据期间跳过的记录数（行数）。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -37,7 +37,7 @@ ht-degree: 99%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsdeleted"
 >title="删除的记录数"
->abstract="所选数据集在所选时间间隔期间从连接删除的记录数（行数）"
+>abstract="在所选数据集在所选时间间隔期间从连接删除的记录数（行数）"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -78,7 +78,7 @@ ht-degree: 99%
 * 您可以编辑数据集，例如请求另一个回填。
 * 您可以按数据集导入现有数据。
 
-+++ 说明创建和编辑连接体验的视频
++++ 演示创建和编辑连接体验的视频
 
 >[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
 
@@ -136,7 +136,7 @@ ht-degree: 99%
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
 >title="匹配键"
->abstract="在其中一个事件数据集中选择要加入的字段。如果此列表为空，则可能尚未添加或配置事件数据集。"
+>abstract="选择要在某个事件数据集中联接的字段。如果此列表为空，则可能尚未添加或配置事件数据集。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -163,7 +163,7 @@ ht-degree: 99%
 >[!CONTEXTUALHELP]
 >id="cja_connection_transformdataset"
 >title="转换数据集"
->abstract="此选项将会转换数据集，以便其可用于 B2B 场景中的基于人员的查找。启用后，数据集的转换是不可逆的。"
+>abstract="此选项将会转换数据集，使其可用于 B2B 场景中基于人员的查找。开启后，数据集的转换是不可逆的。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -171,7 +171,7 @@ ht-degree: 99%
 
 1. 在“连接设置”对话框中，选择&#x200B;**[!UICONTROL 添加数据集]**。
 
-1. 在 [!UICONTROL 选择数据集] 步骤中，你会看到 Experience Platform 数据集的列表。
+1. 在 [!UICONTROL 选择数据集] 步骤中，您会看到 Experience Platform 数据集的列表。
 
    ![选择数据集](assets/select-datasets.png)
 
@@ -209,8 +209,8 @@ ht-degree: 99%
    | **[!UICONTROL 匹配键]** | 仅适用于查找数据集。某个事件数据集中要按其连接在一起的匹配键。如果此列表为空，则可能尚未添加或配置事件数据集。 |
    | **[!UICONTROL 时区]** | 仅适用于摘要数据。为时间序列摘要数据选择适当的时区。 |
    | **[!UICONTROL 数据源类型]** | 选择数据源类型。<br/>数据源的类型包括： <ul><li>[!UICONTROL Web 数据]</li><li>[!UICONTROL 移动应用程序数据]</li><li>[!UICONTROL POS 数据]</li><li>[!UICONTROL CRM 数据]</li><li>[!UICONTROL 调查数据]</li><li>[!UICONTROL 呼叫中心数据]</li><li>[!UICONTROL 产品数据]</li><li> [!UICONTROL 帐户数据]</li><li> [!UICONTROL 事务数据]</li><li>[!UICONTROL 客户反馈数据]</li><li> [!UICONTROL 其他]</li></ul>该字段用于调查正在使用的数据源的类型。 |
-   | **[!UICONTROL 导入新数据]** | 如果您想建立持续连接，请启用此选项。通过持续的连接，添加到数据集的新数据批次会自动在工作区中提供。 |
-   | **[!UICONTROL 数据集回填]** | 启用 **[!UICONTROL 回填所有现有数据]** 以确保所有现有数据均已回填。<br/><br/>选择 **[!UICONTROL 请求补填]** 填充特定时期的历史数据。您最多可以定义 10 个数据集回填期。<ol><li>通过输入开始和结束数据或使用![日历](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)选择日期来定义期间。</li><li>选择 **[!UICONTROL 队列补填]** 将回填内容添加到列表中，或 **[!UICONTROL 取消]** 取消。</li></ol>对于每个条目，选择 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 编辑时间段，或选择 ![删除](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) 删除该条目。<br/><br/>在回填上：<ul><li>您可以单独回填每个数据集。</li><li>您会优先处理新添加到此连接中数据集的新数据，因此这些新数据的滞后时间最短。</li><li>任何回填（历史）数据的导入速度都会比较慢。历史数据的数量会影响延迟。</li><li>Analytics Source Connector 会为生产沙盒导入最多 13 个月的数据（无论大小）。非生产沙盒的回填期限为 3 个月。</li></ul> |
+   | **[!UICONTROL 导入新数据]** | 如果您想建立持续连接，请启用此选项。通过持续的连接，添加到数据集的新数据批次会自动在 Workspace 中提供。 |
+   | **[!UICONTROL 数据集回填]** | 启用 **[!UICONTROL 回填所有现有数据]** 以确保所有现有数据均已回填。<br/><br/>选择 **[!UICONTROL 请求补填]** 填充特定时期的历史数据。您最多可以定义 10 个数据集回填期。<ol><li>通过输入开始和结束数据或使用![日程表](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)选择日期来定义期间。</li><li>选择 **[!UICONTROL 队列补填]** 将回填内容添加到列表中，或 **[!UICONTROL 取消]** 取消。</li></ol>对于每个条目，选择 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 编辑时段，或选择 ![删除](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) 删除该条目。<br/><br/>在回填上：<ul><li>您可以单独回填每个数据集。</li><li>您会优先处理新添加到此连接中数据集的新数据，因此这些新数据的滞后时间最短。</li><li>任何回填（历史）数据的导入速度都会比较慢。历史数据的数量会影响延迟。</li><li>Analytics Source Connector 会为生产沙盒导入最多 13 个月的数据（无论大小）。非生产沙盒的回填期限为 3 个月。</li></ul> |
    | **[!UICONTROL 转换数据集]** | 对于特定的 B2B 查找数据集，您可以启用数据集转换以适应适当的 B2B 基于人员的报告场景。 参见 [转换数据集以进行 B2B 查找](transform-datasets-b2b-lookups.md) 了解更多信息。 |
    | **[!UICONTROL 回填状态]** | 可能的状态指示符有：<ul><li>成功</li><li>X 回填处理</li><li>关</li></ul> |
    | **[!UICONTROL 数据集 ID]** | 此 ID 是自动生成的。 |
@@ -309,7 +309,7 @@ Customer Journey Analytics 支持将标识映射作为个人 ID。Identity Map �
 
 ## 对大型查找数据集进行算法修剪
 
-创建连接时，您可以添加大型数据集以进行查找。例如，表示产品目录的数据集，以便在构建报告和可视化图表时可以查找描述性产品信息。如此大的查找数据集可能会超过目前作为护栏实现的最大 1000 万个唯一查找，从而导致跳过其他数据。
+创建连接时，您可以添加大型数据集以进行查找。例如，表示产品目录的数据集，以便在构建报告和可视化内容时可以查找描述性产品信息。如此大的查找数据集可能会超过目前作为护栏实现的最大 1000 万个唯一查找，从而导致跳过其他数据。
 
 您可以请求对大型查找数据集进行算法修剪。此算法修剪仅保留查找数据集中与事件数据集中的键匹配的数据。这样，您不需要加载整个未修剪的查找数据集。旧的或不常用的项目被删除，这可能会对报告产生轻微影响，但会带来明显的好处。该算法回顾 90 天并每周更新。
 

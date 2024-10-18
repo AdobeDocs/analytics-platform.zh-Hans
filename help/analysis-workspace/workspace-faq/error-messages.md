@@ -1,39 +1,39 @@
 ---
-description: 了解错误消息以及如何对AdobeAnalysis Workspace进行故障排除
-title: Analysis Workspace中的常见错误和疑难解答
+description: 了解 Adobe Analysis Workspace 中的错误消息以及如何进行故障排除
+title: Analysis Workspace 中的常见错误及故障排除
 feature: FAQ
 exl-id: 792c3b2e-bd24-4e98-b9ea-983c1189d52e
 role: User
 source-git-commit: ec32b7bca6fd4fc4b2652d1265048ec788f19718
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '590'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 # 错误和故障排除
 
-在与Analysis Workspace交互时，您可能会遇到可能影响其功能或性能的错误。 下面列出了最常见的错误类型、发生原因以及优化方案。
+当您与 Analysis Workspace 交互时，可能会遇到影响其功能或性能的错误。下面列出了最常见的错误类型、发生原因以及优化方案。
 
 ## 错误消息
 
-您在使用Analysis Workspace时可能会看到的一些常见错误消息：
+使用 Analysis Workspace 时可能会看到的一些常见错误消息：
 
-| 错误消息 | 为什么出现错误？ | 优化 |
+| 错误消息 | 为什么会出现这个错误？ | 优化 |
 | --- | --- | --- |
 | [!UICONTROL 数据视图正在经历异常繁重的报告。请稍后重试。] | 您的组织针对特定数据查看尝试运行的并发请求过多。导致此错误的因素包括：API 请求、计划项目、计划报告、计划警报，以及提出报告请求的并发用户数量。 | 将数据查看的请求和计划较为均匀地分布在一天当中。<p>管理员可以使用 [报告活动管理器来识别和取消](/help/reporting-activity-manager/reporting-activity-overview.md) 正在消耗报告容量的请求。</p> |
-| [!UICONTROL 这份报告太复杂了。请查看构建 Analysis Workspace 报告的最佳实践。] | 您的报告请求过大，无法执行。造成此错误的原因是由于请求的复杂性而导致的超时。 | 简化您的请求。 例如，缩短日期范围，或者简化筛选条件，或者删除表中的某些列或行。 您还可以考虑将表拆分为单独的请求。 |
+| [!UICONTROL 这份报告太复杂了。请查看构建 Analysis Workspace 报告的最佳实践。] | 您的报告请求过大，无法执行。造成此错误的原因是由于请求的复杂性而导致的超时。 | 简化您的请求。例如，缩短日期范围，或简化过滤条件，或移除表格中的某些列或行。您也可以考虑将表拆分为单独的请求。 |
 | [!UICONTROL 数据视图目前已超出其报告容量。请简化请求或稍后重试。] | 您的组织针对特定数据查看尝试运行的并发请求过多。导致此错误的因素包括：API 请求、计划项目，以及提出报告请求的并发用户数量。 | 将数据查看的请求和计划较为均匀地分布在一天当中。 |
 | [!UICONTROL 发生系统错误。请在&#x200B;**[!UICONTROL 帮助 > 提交支持票证]**&#x200B;下记录一条客户关怀团队请求，并将您的错误代码包含在内。] | Adobe 遇到了一个需要解决的问题。 | 将错误代码提交给客户关怀团队。 |
-| [!UICONTROL 错误 500：无法加载页面] | 本地网络的问题（如公司[防火墙设置](https://experienceleague.adobe.com/en/docs/analytics/technotes/ip-addresses)），是引发该错误的一个因素。此外，Adobe 可能遇到了需要解决的问题。 | 请在几分钟后再次尝试登录。如果问题仍然存在，请向客户关怀团队提交 EIM 实例 ID 代码。 |
+| [!UICONTROL 错误 500：无法加载页面] | 本地网络的问题（如公司[防火墙设置](https://experienceleague.adobe.com/zh-hans//docs/analytics/technotes/ip-addresses)），是引发该错误的一个因素。此外，Adobe 可能遇到了需要解决的问题。 | 请在几分钟后再次尝试登录。如果问题仍然存在，请向客户关怀团队提交 EIM 实例 ID 代码。 |
 | [!UICONTROL 由于列或预配置行过多，导致请求失败。] | 表格中自由格式单元格（行数乘以列数）过多。 | 移除表格中的列或行，或考虑将表格拆分为单独的请求。 |
 
 
 ## 故障排除
 
-使用Analysis Workspace时，您可以使用以下信息解决某些常见问题。
+使用 Analysis Workspace 时，您可以使用以下信息来解决一些常见问题。
 
 | 问题 | 如何排除故障 |
 |---|---|
-| 当我将量度拖动到上面时，显示&#x200B;*数据无效*。 | 无效数据意味着 Adobe 无法通过报告中使用的维度和指标组合返回数据。例如，两个彼此堆叠的指标不能作为数据返回，因为无法以这种堆叠方式显示这两个指标。相反，应将两个指标并排放置。 |
-| 当我将量度拖动到上面时，看不到任何实际数据 — 只有零。 | 如果您成功创建了工作区报告，但报告中没有数据，则可以检查以下几项内容：<ul><li>如果在报表中应用了过滤器，过滤器标准可能与所有数据不匹配。请尝试移除过滤器或调整过滤器定义。</li><li>检查右上角的日期范围，并确保它已设置为预期的值。</li><li>导航到您的网站，然后使用 [Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html) 验证正在收集的数据。</li></ul> |
+| 当我拖动一个量度时，它会显示&#x200B;*无效数据*。 | 无效数据意味着 Adobe 无法通过报告中使用的维度和量度组合返回数据。例如，两个彼此堆叠的量度不能作为数据返回，因为无法以这种堆叠方式显示这两个量度。相反，应将两个量度并排放置。 |
+| 当我将量度拖动到上面时，看不到任何实际数据 - 只有零。 | 如果您成功创建了 Workspace 报告，但报告中没有数据，则可以检查以下几项内容：<ul><li>如果在报告中应用了过滤器，过滤器标准可能与所有数据不匹配。请尝试移除过滤器或调整过滤器定义。</li><li>检查右上角的日期范围，并确保它已设置为预期的值。</li><li>导航到您的网站，然后使用 [Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html) 验证正在收集的数据。</li></ul> |
