@@ -1,20 +1,20 @@
 ---
-title: 活跃增长视图
+title: 主动式成长分析
 description: 确定新的、保留的、返回的或非活跃的用户。
 exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: 8592d6d5d4a9d7b8ac6a40963059d386ec5ee804
+source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '632'
 ht-degree: 3%
 
 ---
 
-# [!UICONTROL 活动增长]视图
+# [!UICONTROL 活动增长]分析
 
-![人员组](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL 活动增长]**&#x200B;视图提供了有关特定时间段内用户增长和客户获取的见解。 水平轴是时间间隔，而垂直轴是用户的测量值。 用户分为四个类别：
+![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL 主动增长]**&#x200B;分析提供了有关特定时间段内用户增长和获取情况的见解。 水平轴是时间间隔，而垂直轴是用户的测量值。 用户分为四个类别：
 
 * **[!UICONTROL 新]**：用户在当前时段处于活动状态，但之前未处于活动状态。 将鼠标悬停在图表图例中的&#x200B;_[!UICONTROL 新用户]_&#x200B;上，查看分析回顾的距离。 回看范围基于所选日期范围和间隔动态确定。
 * **[!UICONTROL 重复]**：用户在当前时段和上一时段处于活动状态。
@@ -23,38 +23,46 @@ ht-degree: 3%
 
 所有活动用户（新+重复+返回）在水平轴上方显示为蓝绿色，而所有休眠用户在水平轴下方显示为橙色。
 
++++ 演示视频
+
 >[!VIDEO](https://video.tv.adobe.com/v/3421667/?learn=on)
+
++++
+
+![活动时间比较](../assets/active-growth-compare.png){style="border:1px solid gray"}
 
 ## 用例
 
-此视图类型的用例包括：
+此分析的用例包括：
 
 * **用户保留率和流失率：**&#x200B;提供高或低用户保留率期间的清晰可视化图表。 认识到保留率高或低的时段有助于您做出产品决策，以鼓励高保留率或帮助将流失降至最低。
 * **营销活动评估**：查看特定营销活动可以帮助您了解它产生了多少流量，以及它在多大程度上帮助用户保持参与。
 * **用户生命周期分析**：分析用户在整个用户生命周期中的活跃用户增长可帮助确定用户参与度下降的特定阶段。 例如，如果处于入门阶段的个人的休眠用户比例很高，它可能会指示可用性问题或需要更好的产品内指导。
 
-## 查询边栏
+## 界面
+
+有关引导式分析界面的概述，请参阅[界面](../overview.md#interface)。 以下设置特定于此分析：
+
+### 查询边栏
 
 利用查询边栏，可配置以下组件：
 
-* **[!UICONTROL 视图]**：在此视图类型与[净增长](net-growth.md)之间切换。
-* **[!UICONTROL 事件]**：要测量的事件。 由于此视图类型基于用户，因此在该时段内与事件交互一次的用户将被计为活动用户。 您可以在查询中包含一个事件。
+* **[!UICONTROL 视图]**：在此分析和[净增长](net-growth.md)之间切换。
+* **[!UICONTROL 事件]**：要测量的事件。 由于此分析基于用户，因此在该时段内与事件交互一次的用户将被计为活动用户。 您可以在查询中包含一个事件。
 * **[!UICONTROL 计为]**：要应用于选定事件的计数方法。 选项包括[!UICONTROL 用户数]和[!UICONTROL 用户百分比]。
 * **[!UICONTROL 区段]**：要用作筛选数据依据的区段。 您可以在查询中包含一个区段。
 
-## 图表设置
+### 图表设置
 
-[!UICONTROL 活动]视图提供了以下图表设置，可在图表上方的菜单中调整这些设置：
+[!UICONTROL 活动增长]分析提供了以下图表设置，可在图表上方的菜单中调整这些设置：
 
 * **[!UICONTROL 图表类型]**：要使用的可视化图表类型。 选项包括[!UICONTROL 栈叠条形图]和[!UICONTROL 栈叠面积图]。
 
-## 时间比较
+### 时间比较
 
 {{apply-time-comparison}}
 
-![活动时间比较](../assets/active-compare.png){style="border:1px solid gray"}
-
-## 日期范围
+### 日期范围
 
 分析所需的日期范围。 此设置包含两个组件：
 
