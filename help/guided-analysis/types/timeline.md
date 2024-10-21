@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
 exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '580'
 ht-degree: 2%
 
 ---
@@ -25,14 +25,9 @@ ht-degree: 2%
 >* **管理员**： *此分析需要PersonID属性。 请向数据视图添加人员ID。*
 >* **非管理员**： *此分析需要PersonID属性。 请与您的Customer Journey Analytics管理员合作，将人员ID添加到数据视图。*
 
-
-+++ 演示视频
-
 >[!VIDEO](https://video.tv.adobe.com/v/3427810/?learn=on)
 
-+++
 
-![时间表](../assets/timeline-new.png)
 
 ## 用例
 
@@ -68,3 +63,10 @@ ht-degree: 2%
 
 * **[!UICONTROL 时间间隔]**：要查看趋势数据的日期粒度。 此设置不会影响非趋势分析，例如时间线。
 * **[!UICONTROL 日期]**：开始和结束日期。 您可以为方便起见，使用滚动日期范围预设和以前保存的自定义范围，也可以使用日历选择器来选择固定日期范围。
+
+
+## 示例
+
+有关分析的示例，请参见下文。
+
+![时间表](../assets/timeline-new.png)

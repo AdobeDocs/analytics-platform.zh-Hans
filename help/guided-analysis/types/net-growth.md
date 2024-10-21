@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '680'
 ht-degree: 2%
 
 ---
@@ -32,13 +32,8 @@ ht-degree: 2%
 >
 >重复用户不计入此计算，因为它们不表示用户的任何收益或损失。
 
-+++ 演示视频
-
 >[!VIDEO](https://video.tv.adobe.com/v/3421664/?learn=on)
 
-+++
-
-![净增长比较](../assets/net-growth-compare.png)
 
 ## 用例
 
@@ -71,3 +66,10 @@ ht-degree: 2%
 
 * **[!UICONTROL 时间间隔]**：要查看趋势数据的日期粒度。 有效选项包括每小时、每天、每周、每月和每季度。 相同日期范围可以有不同的时间间隔，这会影响图表中的数据点数和表中的列数。 例如，查看具有每日粒度的跨三天的分析将只显示三个数据点，而具有每小时粒度的跨三天的分析将显示72个数据点。
 * **[!UICONTROL 日期]**：开始和结束日期。 您可以为方便起见，使用滚动日期范围预设和以前保存的自定义范围，也可以使用日历选择器来选择固定日期范围。
+
+
+## 示例
+
+有关分析的示例，请参见下文。
+
+![净增长比较](../assets/net-growth-compare.png)

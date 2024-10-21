@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 4%
+source-wordcount: '739'
+ht-degree: 5%
 
 ---
 
@@ -23,13 +23,8 @@ ht-degree: 4%
 * 矩阵左下角的功能是您的&#x200B;**低影响**&#x200B;功能；它们未被广泛采用或经常使用。
 * 矩阵右下方的功能是您的&#x200B;**一次性**&#x200B;功能；它们被广泛采用，但不常使用。
 
-+++ 演示视频
-
 >[!VIDEO](https://video.tv.adobe.com/v/3429489/&learn=on)
 
-+++
-
-![参与比较](../assets/engagement-compare.png)
 
 ## 用例
 
@@ -76,3 +71,11 @@ ht-degree: 4%
 
 * **[!UICONTROL 时间间隔]**：要查看趋势数据的日期粒度。 此分析将[!UICONTROL 间隔]视为查询边栏中[!UICONTROL 的]类型。 不支持每小时活动用户。
 * **[!UICONTROL 日期]**：开始和结束日期。 您可以为方便起见，使用滚动日期范围预设和以前保存的自定义范围，也可以使用日历选择器来选择固定日期范围。
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![Enagement compare](../assets/engagement-compare.png)
+-->

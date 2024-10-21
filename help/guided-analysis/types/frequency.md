@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '647'
 ht-degree: 5%
 
 ---
@@ -16,13 +16,7 @@ ht-degree: 5%
 
 ![频率](/help/assets/icons/Histogram.svg) **[!UICONTROL 频率]**&#x200B;分析按事件在产品中发生的频率对事件数据进行分组。 此分析的垂直轴包含表示事件频率的分段。 水平轴测量每个时段的用户或会话数。
 
-+++ 演示视频
-
 >[!VIDEO](https://video.tv.adobe.com/v/3428089/?learn=on)
-
-+++
-
-![频率](../assets/frequency.png)
 
 ## 用例
 
@@ -72,3 +66,13 @@ ht-degree: 5%
 
 * **[!UICONTROL 时间间隔]**：要查看趋势数据的日期粒度。 默认情况下，图表和表会显示聚合的数据，并可以选择将表展开为趋势视图。 在趋势视图中，用户根据总使用频度和每个间隔中的使用频度进行分段，这意味着1个用户可以按不同间隔计入不同的存储段。
 * **[!UICONTROL 日期]**：开始和结束日期。 您可以为方便起见，使用滚动日期范围预设和以前保存的自定义范围，也可以使用日历选择器来选择固定日期范围。
+
+
+<!--
+## Example
+
+See below foran example of the analysis.
+
+![Frequency](../assets/frequency.png)
+
+-->

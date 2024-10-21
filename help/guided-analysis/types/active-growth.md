@@ -5,9 +5,9 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: f71abfb76a22171004a6f2a501c8ec70d8485478
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '627'
 ht-degree: 3%
 
 ---
@@ -23,13 +23,8 @@ ht-degree: 3%
 
 所有活动用户（新+重复+返回）在水平轴上方显示为蓝绿色，而所有休眠用户在水平轴下方显示为橙色。
 
-+++ 演示视频
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421667/?learn=on)
-
-+++
-
-![活动时间比较](../assets/active-growth-compare.png)
 
 ## 用例
 
@@ -68,3 +63,12 @@ ht-degree: 3%
 
 * **[!UICONTROL 时间间隔]**：要查看趋势数据的日期粒度。 有效选项包括每小时、每天、每周、每月和每季度。 同一日期范围可以有不同的时间间隔，这会影响图表中的数据点数和表中的列数。 例如，查看具有每日粒度的跨三天的分析将只显示三个数据点，而具有每小时粒度的跨三天的分析将显示72个数据点。
 * **[!UICONTROL 日期]**：开始和结束日期。 您可以为方便起见，使用滚动日期范围预设和以前保存的自定义范围，也可以使用日历选择器来选择固定日期范围。
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![Active time compare](../assets/active-growth-compare.png)
+
+-->

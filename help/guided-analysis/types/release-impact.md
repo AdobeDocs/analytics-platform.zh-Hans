@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '520'
 ht-degree: 5%
 
 ---
@@ -16,13 +16,7 @@ ht-degree: 5%
 
 ![版本](/help/assets/icons/Release.svg) **[!UICONTROL 版本影响]**&#x200B;分析显示了给定日期之前和之后关键指标执行情况的比较。 此报告的水平轴是一个时间间隔，而垂直轴测量所需的关键指标。 图表中间有一个垂直条形图，表示要在前后比较的日期。 此日期通常表示要衡量的产品发生了显着更改，例如产品更新或促销活动启动。
 
-+++ 演示视频
-
 >[!VIDEO](https://video.tv.adobe.com/v/3421665/?learn=on)
-
-+++
-
-![版本影响](../assets/release-impact.png)
 
 ## 用例
 
@@ -59,3 +53,13 @@ ht-degree: 5%
 
 * **[!UICONTROL 时间间隔]**：要查看趋势数据的日期粒度。 有效选项包括[!UICONTROL Daily]、[!UICONTROL Weekly]、[!UICONTROL Monthly]和[!UICONTROL Quarterly]。 更改间隔将影响“之前”和“之后”时段可用的选项。
 * **[!UICONTROL 时段之前和之后]**：在查询边栏中指定的日期之前和之后要分析的时间量。 可用选项取决于[!UICONTROL 间隔]选择。
+
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![Release impact](../assets/release-impact.png)
+
+-->

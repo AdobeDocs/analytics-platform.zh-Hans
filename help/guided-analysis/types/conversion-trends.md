@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: f71abfb76a22171004a6f2a501c8ec70d8485478
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '527'
 ht-degree: 2%
 
 ---
@@ -16,13 +16,9 @@ ht-degree: 2%
 
 ![转化趋势](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL 转化趋势]**&#x200B;分析提供了转化率随时间变化的趋势可视化图表。 水平轴是一个时间间隔，而垂直轴表示转化率。
 
-+++ 演示视频
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421662/?learn=on)
 
-+++
-
-![转化趋势时间比较](../assets/conversion-trends-compare.png)
 
 ## 用例
 
@@ -67,3 +63,12 @@ ht-degree: 2%
 
 * **[!UICONTROL 时间间隔]**：要查看趋势数据的日期粒度。 有效选项包括每小时、每天、每周、每月和每季度。 同一日期范围可以有不同的时间间隔，这会影响图表中的数据点数和表中的列数。 例如，查看具有每日粒度的跨三天的分析将只显示三个数据点，而具有每小时粒度的跨三天的分析将显示72个数据点。
 * **[!UICONTROL 日期]**：开始和结束日期。 您可以为方便起见，使用滚动日期范围预设和以前保存的自定义范围，也可以使用日历选择器来选择固定日期范围。
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![Conversion trends time compare](../assets/conversion-trends-compare.png)
+
+-->

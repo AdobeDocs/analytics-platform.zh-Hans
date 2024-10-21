@@ -5,9 +5,9 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: f71abfb76a22171004a6f2a501c8ec70d8485478
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '786'
 ht-degree: 3%
 
 ---
@@ -16,13 +16,7 @@ ht-degree: 3%
 
 ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Trends]**&#x200B;分析可针对产品性能或用户在一段时间内的行为提供宝贵的见解。 此报告的水平轴是一个时间间隔，而垂直轴测量所需的事件。
 
-+++ 演示视频
-
 >[!VIDEO](https://video.tv.adobe.com/v/3421666/?learn=on)
-
-+++
-
-![趋势比较](../assets/trends-compare.png)
 
 ## 用例
 
@@ -75,3 +69,8 @@ ht-degree: 3%
 * **[!UICONTROL 时间间隔]**：要查看趋势数据的日期粒度。 有效选项包括每小时、每天、每周、每月和每季度。 相同日期范围可以有不同的时间间隔，这会影响图表中的数据点数和表中的列数。 例如，查看具有每日粒度的跨三天的分析将只显示三个数据点，而具有每小时粒度的跨三天的分析将显示72个数据点。
 * **[!UICONTROL 日期]**：开始和结束日期。 您可以为方便起见，使用滚动日期范围预设和以前保存的自定义范围，也可以使用日历选择器来选择固定日期范围。
 
+## 示例
+
+有关分析的示例，请参见下文。
+
+![趋势比较](../assets/trends-compare.png)
