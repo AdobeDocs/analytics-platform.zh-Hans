@@ -72,7 +72,7 @@ ht-degree: 100%
 >id="cja_dataview_dataviewsinadobejourneyoptimizer"
 >title="Journey Optimizer 中的数据视图"
 >abstract="Journey Optimizer 需要使用与 Customer Journey Analytics 一起配置的数据视图。<br/>启用此选项可使其成为 Adobe Journey Optimizer 报告中使用的默认数据视图。"
->additional-url="https://experienceleague.adobe.com/zh-hans//docs/analytics-platform/using/integrations/ajo#connection" text="添加了哪些组件和数据集。"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/integrations/ajo#connection" text="添加了哪些组件和数据集。"
 
 <!-- markdownlint-enable MD034 -->
 
