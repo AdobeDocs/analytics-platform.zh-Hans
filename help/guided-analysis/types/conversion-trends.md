@@ -5,7 +5,7 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: f71abfb76a22171004a6f2a501c8ec70d8485478
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 2%
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 +++
 
-![转化趋势时间比较](../assets/conversion-trends-compare.png){style="border:1px solid gray"}
+![转化趋势时间比较](../assets/conversion-trends-compare.png)
 
 ## 用例
 
