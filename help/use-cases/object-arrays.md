@@ -5,10 +5,10 @@ exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 66%
+source-wordcount: '489'
+ht-degree: 61%
 
 ---
 
@@ -265,3 +265,10 @@ Customer Journey Analytics会查看事件的这些部分以生成报表：
 | `Washing Machines` | `1850` |
 | `Dryers` | `500` |
 | `Total` | `2350` |
+
+
+
+## 限制
+
+限制确实适用于Customer Journey Analytics使用的数据中的数组，并作为Experience Platform中的架构的一部分建模。 查看[实时客户个人资料数据和分段默认护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/guardrails)中的[数据模型限制](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits)和[数据大小限制](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits)。
+

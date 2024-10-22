@@ -5,9 +5,9 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '775'
 ht-degree: 3%
 
 ---
@@ -69,8 +69,13 @@ ht-degree: 3%
 * **[!UICONTROL 时间间隔]**：要查看趋势数据的日期粒度。 有效选项包括每小时、每天、每周、每月和每季度。 相同日期范围可以有不同的时间间隔，这会影响图表中的数据点数和表中的列数。 例如，查看具有每日粒度的跨三天的分析将只显示三个数据点，而具有每小时粒度的跨三天的分析将显示72个数据点。
 * **[!UICONTROL 日期]**：开始和结束日期。 您可以为方便起见，使用滚动日期范围预设和以前保存的自定义范围，也可以使用日历选择器来选择固定日期范围。
 
-## 示例
 
-有关分析的示例，请参见下文。
+<!--
 
-![趋势比较](../assets/trends-compare.png)
+## Example
+
+See below for an example of the analysis.
+
+![Trends compare](../assets/trends-compare.png)
+
+-->

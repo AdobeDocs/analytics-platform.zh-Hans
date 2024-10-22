@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1249'
 ht-degree: 2%
 
 ---
@@ -74,8 +74,11 @@ ht-degree: 2%
 * **[!UICONTROL 分析在[日期间隔]]**&#x200B;内执行了开始事件的用户：如果某个用户在此日期范围内参与该事件，则这些用户将包含在分析中。 此日期范围可确保所有用户有足够的时间符合所有持续时间段的条件。 如果此日期范围更接近当天，则该日期范围可能与您的选择不同。
 * **[!UICONTROL 保留来自[日期间隔]的数据以完成分析]**：如果用户在此时间段内首次参与分析，则它们&#x200B;**不包括在分析中**。 对于最近的日期范围，这些用户将没有机会获得所有持续时间段的资格。 对于过去的日期范围，这些用户在选定日期范围之外处于活动状态。
 
-## 示例
+<!--
+## Example
 
-有关分析的示例，请参见下文。
+See below for an example of the analysis.
 
-![保留](../assets/retention.png)
+![Retention](../assets/retention.png)
+
+-->
