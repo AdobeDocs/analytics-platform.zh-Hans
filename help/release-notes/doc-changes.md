@@ -4,9 +4,9 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 18131b0ccabbc8043e2638c735a4a603029f4b93
+source-git-commit: fc3aee031808d7a6c12ed2a2cbcad8f7ae6caa82
 workflow-type: tm+mt
-source-wordcount: '4104'
+source-wordcount: '4138'
 ht-degree: 69%
 
 ---
@@ -20,6 +20,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2024 年 10 月** | |
+| 有关Analysis Workspace性能中的请求因素的新信息 | [优化Analysis Workspace性能](/help/technotes/optimizing-performance.md)文章中新增的[请求因子](/help/technotes/optimizing-performance.md#request-factors)部分介绍了如何处理请求以及影响处理时间的各种因素。 |
 | Workspace和组件 | 刷新了有关Analysis Workspace项目（项目、可视化和面板）和组件(注释、维度、（计算）量度、过滤器、日期范围、警报、计划项目和受众)的文档。 |
 | 引导式分析 | 更新了相关文档，以提供Analysis Workspace中的[引导式分析](/help/guided-analysis/overview.md)。 |
 | **2024 年 9 月** | |
