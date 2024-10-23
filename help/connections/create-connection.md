@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: ea95b576a9d8309d2c6c2aeba589db1fd28ce499
+source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
 workflow-type: tm+mt
-source-wordcount: '3676'
-ht-degree: 95%
+source-wordcount: '3747'
+ht-degree: 94%
 
 ---
 
@@ -194,6 +194,16 @@ ht-degree: 95%
 >abstract="从Experience Platform的数据集架构中定义的可用标识中选择购买组ID（购买组的唯一标识符）。"
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_matchingkey"
+>title="匹配键"
+>abstract="选择连接方式：基于匹配键或匹配容器。<br/><br/>**[!UICONTROL 匹配键&#x200B;]**：选择要与某个事件数据集连接的字段。 如果此列表为空，则可能尚未添加或配置事件数据集。<br/>**[!UICONTROL 匹配的容器]**：选择用于与某个事件数据集连接的容器。 如果此列表为空，则可能尚未配置一个或多个容器。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 <!-- markdownlint-disable MD034 -->
