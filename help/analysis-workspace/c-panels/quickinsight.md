@@ -4,10 +4,10 @@ title: 快速洞察面板
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
-workflow-type: ht
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+workflow-type: tm+mt
 source-wordcount: '1127'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 100%
 * **[!UICONTROL 分析]** - 指定一个维度（橙色）
 * **[!UICONTROL 依据]** - 指定一个量度（绿色）
 * **[!UICONTROL 筛选条件]** - 指定一个筛选条件（蓝色）
-* **[!UICONTROL 时间]** - 指定一个数据范围（紫色）。
+* **[!UICONTROL 日期]** — 指定日期范围（紫色）。
 
 您必须选择至少一个维度和一个量度才能使可视化效果正常运行。
 
@@ -114,7 +114,7 @@ ht-degree: 100%
 
   ![The Quick Insights Panel notification displayed after you select the Help icon.](assets/qibuilder4.png)
 
-* 您可以分析多个维度和量度、组合或比较筛选条件并指定数据范围：
+* 您可以分析多个维度和量度，组合或比较过滤器，以及指定日期范围：
 
   ![Quick Insights Builder Result](assets/qibuilder-result.png)
 
@@ -124,7 +124,7 @@ ht-degree: 100%
 
    * **[!UICONTROL 过滤依据]**：您最多可以添加 2 个筛选条件。例如，将“预订”添加为筛选条件，并将该筛选条件与您所比较的“预订常客”和“首次飞行的客人”筛选条件结合起来。请参阅 ➏、➐ 和 ➑。
 
-   * 时间：可以指定数据范围。请参阅 ➒。
+   * 日期：您可以指定日期范围。 请参阅 ➒。
 
 ## 已知限制
 

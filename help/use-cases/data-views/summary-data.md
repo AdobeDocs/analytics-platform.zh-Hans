@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: 6cd4fadc28117ed88b68d17274ab8de2b0edff10
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '5188'
 ht-degree: 8%
@@ -430,7 +430,7 @@ ht-degree: 8%
 1. 从中选择&#x200B;**[!UICONTROL Customer Journey Analytics]**   ![应用](/help/assets/icons/Apps.svg)   应用程序切换器。
 1. 从顶部菜单中选择&#x200B;**[!UICONTROL 连接]**。
 1. 选择您的连接，例如&#x200B;**[!UICONTROL 使用摘要数据的连接示例]**。
-1. 在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL 使用摘要数据的连接示例]**&#x200B;详细信息中选择适当的数据范围。
+1. 在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL 使用摘要数据的连接示例]**&#x200B;详细信息中选择适当的日期范围。
    1. 选择![日历](/help/assets/icons/Calendar.svg)，然后选择&#x200B;**[!UICONTROL 最近7天]**。
    1. 选择&#x200B;**[!UICONTROL 应用]**。
 
@@ -454,7 +454,7 @@ ht-degree: 8%
    1. 在&#x200B;**[!UICONTROL 数据视图]** > **[!UICONTROL 使用摘要数据的示例数据视图的**[!UICONTROL &#x200B;组件&#x200B;]**步骤中]**：
       1. 将以下组件添加到“Dimension和量度”列表。 请注意，为清楚起见，组件名称是从其默认名称修改的，在组件面板的&#x200B;**[!UICONTROL 组件设置]**&#x200B;中使用&#x200B;**[!UICONTROL 组件名称]**（在右侧）。
 
-         **指标**
+         **量度**
 
          | 组件名称 | 数据集 | 架构数据类型 | 架构路径 |
          |---|---|---|---|
@@ -463,7 +463,7 @@ ht-degree: 8%
          | 订单数 | 示例事件数据数据集 | 整数 | *_tenant*.订单 |
          | 收入 | 示例事件数据数据集 | 双线 | *_tenant*.revenue_amount |
 
-         **维度**
+         **Dimensions**
 
          | 组件名称 | 数据集 | 架构数据类型 | 架构路径 |
          |---|---|---|---|
@@ -550,7 +550,7 @@ ht-degree: 8%
 您看到一个带有[!UICONTROL 自由格式]面板的空画布，它包含一个空的[!UICONTROL 自由格式表]。
 
 1. 确保为面板选择的数据视图是指包含摘要数据配置的数据视图。 例如，**[!UICONTROL 使用摘要数据的示例数据视图。]**
-1. 确保该数据范围对您要报告的数据有效。 例如：**[!UICONTROL 最近2个月]**。
+1. 确保日期范围对您要报告的数据有效。 例如：**[!UICONTROL 最近2个月]**。
 1. 从&#x200B;**[!UICONTROL Dimension]**&#x200B;中拖动&#x200B;**[!UICONTROL 跟踪代码（事件）]**&#x200B;并将维度拖放到空的自由格式表中。
 1. 将&#x200B;**[!UICONTROL 订单]**&#x200B;从&#x200B;**[!UICONTROL 指标]**&#x200B;拖放到&#x200B;**[!UICONTROL 事件]**&#x200B;列以替换自由格式表中的该列。
 1. 从&#x200B;**[!UICONTROL 量度]**&#x200B;中拖动&#x200B;**[!UICONTROL 收入]**，并放置要作为附加列添加到自由格式表的量度。

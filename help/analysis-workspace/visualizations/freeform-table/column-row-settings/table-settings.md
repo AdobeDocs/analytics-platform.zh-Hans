@@ -4,7 +4,7 @@ title: 行设置
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: 347ab5b400fb8a5fddc02878f779be7112d693ab
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 15%
@@ -54,7 +54,7 @@ ht-degree: 15%
 | **[!UICONTROL 为所有维度项目创建超链接]** | 为所有维度项目创建超链接。 查看自由格式表中维度的[超链接](../freeform-table-hyperlinks.md) |
 | **[!UICONTROL 编辑所有维度项目的超链接]** | 编辑所有维度项目的超链接。 查看自由格式表中维度的[超链接](../freeform-table-hyperlinks.md) |
 | **[!UICONTROL 删除所有维度项目的超链接]** | 删除所有维度项目的超链接。 查看自由格式表中维度的[超链接](../freeform-table-hyperlinks.md) |
-| **[!UICONTROL 删除]** | 从表中删除维度。 |
+| **[!UICONTROL Delete]** | 从表中删除维度。 |
 | **[!UICONTROL 可视化]** | 使用任何可用的可视化图表来可视化维度。 |
 | **[!UICONTROL 仅显示选定的行]** | 在可视化图表中仅显示选定项目。 |
 | **[!UICONTROL 从选定范围中创建批注]** | 打开&#x200B;**[!UICONTROL 批注详细信息]**&#x200B;以添加批注。 |
@@ -80,8 +80,8 @@ ht-degree: 15%
 | 选项 | 描述 |
 |---|---|
 | **[!UICONTROL 从所选内容创建量度]** | 从所选指标创建新指标。 量度可以是“平均值”、“媒体”、“列最大值”、“列最小值”、“列总和”。 您还可以选择在计算指标生成器中打开以创建计算指标。 |
-| **[!UICONTROL 添加时间段列]** | 添加时间段列。 提供了多个选项，其中面板的日历范围确定&#x200B;*日期范围*： <li>在此数据范围&#x200B;]**之前**[!UICONTROL &#x200B;的&#x200B;*日期范围*</li><li>**[!UICONTROL 这些&#x200B;*日期范围*至此日期范围]**。</li><li>**[!UICONTROL 自定义数据范围到此日期范围]**。 打开&#x200B;**[!UICONTROL 日期范围生成器]**&#x200B;以指定日期范围。</li>有关详细信息，请参阅[日期比较](/help/components/date-ranges/time-comparison.md)。 |
-| **[!UICONTROL 比较时间段]** | 添加比较时间段列。 仅在维度不基于时间时可用。 为您提供了几个确定&#x200B;*日期范围*&#x200B;的选项： <li>在此数据范围&#x200B;]**之前**[!UICONTROL &#x200B;的&#x200B;*日期范围*</li><li>**[!UICONTROL 自定义数据范围到此日期范围]**。 打开&#x200B;**[!UICONTROL 日期范围生成器]**&#x200B;以指定日期范围。</li>有关详细信息，请参阅[日期比较](/help/components/date-ranges/time-comparison.md)。 |
+| **[!UICONTROL 添加时间段列]** | 添加时间段列。 提供了多个选项，其中面板的日历范围确定&#x200B;*日期范围*： <li>**[!UICONTROL 在此日期范围]**&#x200B;之前&#x200B;*的日期范围*</li><li>**[!UICONTROL 这些&#x200B;*日期范围*至此日期范围]**。</li><li>**[!UICONTROL 自定义日期范围到此日期范围]**。 打开&#x200B;**[!UICONTROL 日期范围生成器]**&#x200B;以指定日期范围。</li>有关详细信息，请参阅[日期比较](/help/components/date-ranges/time-comparison.md)。 |
+| **[!UICONTROL 比较时间段]** | 添加比较时间段列。 仅在维度不基于时间时可用。 为您提供了几个确定&#x200B;*日期范围*&#x200B;的选项： <li>**[!UICONTROL 在此日期范围]**&#x200B;之前&#x200B;*的日期范围*</li><li>**[!UICONTROL 自定义日期范围到此日期范围]**。 打开&#x200B;**[!UICONTROL 日期范围生成器]**&#x200B;以指定日期范围。</li>有关详细信息，请参阅[日期比较](/help/components/date-ranges/time-comparison.md)。 |
 | **[!UICONTROL 修改归因模型]** | 修改列的归因模型。 |
 | **[!UICONTROL 比较归因模型]** | 指定新的归因模型，并将其与所选列的归因模型进行比较。 将添加新列，其中包含新的归因模型量度。 此外，还添加了“百分比变化”列以进行比较。 |
 | **[!UICONTROL 重置列宽]** | 将列宽重置为默认宽度。 |

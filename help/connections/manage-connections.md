@@ -6,7 +6,7 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: bafe2bfdd62065b58ebe5ea6f54a892e0177bbce
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '3263'
 ht-degree: 14%
@@ -131,9 +131,9 @@ ht-degree: 14%
 | --- | --- |
 | ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)[!UICONTROL 编辑连接] | 要编辑连接的详细信息，请选择![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 编辑连接]**。 有关详细信息，请参阅[创建或编辑连接](create-connection.md)。 |
 | 数据集选择器 | 允许您选择连接中的一个或全部数据集。不能选择其他数量的数据集。默认为[!UICONTROL 全部数据集]。 |
-| 日期范围选择器 | 编辑开始日期、结束日期或选择![日历](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)以打开数据范围选择器。 在日期范围选择器中，使用某个预定义期间来选择日期范围（例如&#x200B;**[!UICONTROL 最近6个月]**），或使用日历选择开始和结束日期。 选择&#x200B;**[!UICONTROL 应用]**&#x200B;以应用新数据范围。 |
+| 日期范围选择器 | 编辑开始日期、结束日期或选择![日历](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)以打开日期范围选择器。 在日期范围选择器中，使用某个预定义期间来选择日期范围（例如&#x200B;**[!UICONTROL 最近6个月]**），或使用日历选择开始和结束日期。 选择&#x200B;**[!UICONTROL 应用]**&#x200B;以应用新的日期范围。 |
 | [!UICONTROL 可用的事件数据记录数] | 可用于报告的事件数据集总行数，**表示整个连接**。 此数与任何日历设置无关。如果您从数据集选择器中选择了一个数据集，或者在表中选择了一个数据集，则计数会发生变化。 添加数据后，数据延迟1-2个小时后才会显示在报表中。 |
-| [!UICONTROL 指标] | 汇总已添加、跳过和删除的事件、查找、配置文件和摘要数据集记录，以及添加的批次数。 这些量度基于&#x200B;**您选择的数据集和日期范围**。<p>选择&#x200B;**[!UICONTROL 检查详细信息]**&#x200B;以显示&#x200B;**[!UICONTROL 检查跳过的详细信息]**&#x200B;弹出窗口。 弹出窗口会列出跳过的记录数以及所有事件数据集或选定数据集的原因。<p><img src="./assets/skipped-records.png" width="500"/><p>选择包含详细信息的![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)弹出窗口。 由于某些跳过的原因（如[!UICONTROL 访客ID为空]），弹出窗口显示了EQS的示例PSQL(查询服务的Experience Platform)，您可以在[查询服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/home)中使用它来查询数据集中跳过的记录。 选择![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL 复制EQS的示例PSQL]**&#x200B;以复制SQL。 |
+| [!UICONTROL 量度] | 汇总已添加、跳过和删除的事件、查找、配置文件和摘要数据集记录，以及添加的批次数。 这些量度基于&#x200B;**您选择的数据集和日期范围**。<p>选择&#x200B;**[!UICONTROL 检查详细信息]**&#x200B;以显示&#x200B;**[!UICONTROL 检查跳过的详细信息]**&#x200B;弹出窗口。 弹出窗口会列出跳过的记录数以及所有事件数据集或选定数据集的原因。<p><img src="./assets/skipped-records.png" width="500"/><p>选择包含详细信息的![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)弹出窗口。 由于某些跳过的原因（如[!UICONTROL 访客ID为空]），弹出窗口显示了EQS的示例PSQL(查询服务的Experience Platform)，您可以在[查询服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/home)中使用它来查询数据集中跳过的记录。 选择![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL 复制EQS的示例PSQL]**&#x200B;以复制SQL。 |
 | [!UICONTROL 添加的记录数] | 指示在选定时间段，**为您选择的数据集和日期范围**&#x200B;添加了多少行。每 10 分钟更新一次。 |
 | [!UICONTROL 跳过的记录数] | 指示在选定的时间段内跳过了多少行（对于您选择的数据集和日期范围&#x200B;**）。**&#x200B;跳过记录的原因包括：缺少时间戳、缺少人员ID或人员ID无效等。 每 10 分钟更新一次。 <p>无效的个人ID（如`undefined`或`00000000`，或者[!UICONTROL 个人ID]中的任何数字和字母组合，在指定月份在某个事件中出现超过100万次）是无法归因到任何特定用户或个人的ID。 这些行无法引入到系统中，并将导致引入和报表容易出错。 要修复无效的人员 ID，您有 3 个选项：<ul><li>使用[拼接](/help/stitching/overview.md)以有效用户ID填充未定义或全零用户ID。</li><li>将用户ID留空，在引入期间这些用户ID会被跳过（这要优于无效或全零用户ID）。</li><li>先修复系统中的任意无效用户 ID，然后再提取数据。</li></ul> |
 | [!UICONTROL 条记录]已删除 | 指示在选定时间段，**为您选择的数据集和日期范围**&#x200B;删除了多少行。例如，有人可能在[!DNL Experience Platform]中删除了一个数据集。 每 10 分钟更新一次。<p>在某些情况下，该值可能还包含替换的记录，例如拼接或某些查找数据集更新。 请看以下示例：</p><ul><li>您将一个记录上传到XDM个人资料数据集，该Customer Journey Analytics配置为摄取作为个人资料查找数据。 在连接详细信息中，此数据集将显示已添加1条记录。</li><li>将原始记录的副本上传到同一AEP数据集中，该数据集现在包含两个记录。 Customer Journey Analytics从配置文件查找数据集中摄取其他记录。 Customer Journey Analytics会看到它已经在连接中摄取了人员ID的配置文件记录，因此会删除其早期版本并添加新的配置文件数据。 在连接详细信息中，此操作将表示添加了1条记录并删除了1条记录，因为Customer Journey Analytics仅保留任何引入的人员ID的最新配置文件查找数据。</li><li>AEP数据集总共包含两个碰巧相同的记录。 另外，Customer Journey Analytics连接详细信息会显示其摄取数据的状态：此用户档案数据集添加了2条记录并删除了1条记录。 </li></ul> |
@@ -166,7 +166,7 @@ ht-degree: 14%
 | 选项 | 描述 |
 | --- | --- |
 | ![刷新](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) [!UICONTROL 刷新] | 要刷新连接并允许反映最近添加的记录，请选择![刷新](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) **[!UICONTROL 刷新]**。 |
-| ![删除](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL 删除]** | [删除](#delete-a-connection)此连接。 |
+| ![Delete](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL 删除]** | [删除](#delete-a-connection)此连接。 |
 | ![添加数据视图](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL 创建数据视图]** | [基于此连接创建数据视图](#create-a-data-view)。 有关详细信息，请参阅[数据视图](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views)。 |
 | [!UICONTROL 连接名称] | 连接的友好名称。 |
 | [!UICONTROL 连接说明] | 描述此连接目的的更详细的描述。 |

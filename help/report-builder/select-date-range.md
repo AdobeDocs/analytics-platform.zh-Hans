@@ -1,15 +1,15 @@
 ---
-title: 如何在Customer Journey Analytics中选择Report Builder中的数据范围
+title: 如何在Customer Journey Analytics中选择Report Builder中的日期范围
 description: 介绍如何在Report Builder中使用日历、滚动日期和自定义表达式进行Customer Journey Analytics
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: 9efad7c7808a7a68bc25fc5f1700f4e4f8e18614
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '1091'
-ht-degree: 89%
+ht-degree: 87%
 
 ---
 
@@ -92,7 +92,7 @@ ht-degree: 89%
 
    ![Report Builder日期范围窗格，显示当前日期加上14天选定日期。](./assets/image21.png)
 
-1. 单击“下一步”定义日期范围。
+1. 单击下一步以定义日期范围。
 
    使用日期预览以确认生成的日期范围是所需的范围。
 

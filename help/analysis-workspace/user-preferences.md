@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
-workflow-type: ht
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+workflow-type: tm+mt
 source-wordcount: '3466'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -229,7 +229,7 @@ ht-degree: 100%
 | **堆栈图** | | |
 | | 100% 堆叠 | 在面积堆叠、条形堆叠或水平条形堆叠的可视化内容上的此设置将图表转换为“100% 堆叠”的可视化内容。 <p>如需了解更多信息，请参阅[条形和堆叠条形](/help/analysis-workspace/visualizations/bar.md)。</p> |
 | **[直方图](/help/analysis-workspace/visualizations/histogram.md)** | | |
-| | 存储体数量 | 在可视化中选择数据范围（储存体）的数量。存储段的最大数量为 50。 <p>有关更多信息，请参阅[直方图](/help/analysis-workspace/visualizations/histogram.md)。</p> |
+| | 存储体数量 | 在可视化图表中选择日期范围（存储段）的数量。 存储段的最大数量为 50。 <p>有关更多信息，请参阅[直方图](/help/analysis-workspace/visualizations/histogram.md)。</p> |
 | | 计算方法 | 从以下选项中进行选择： <ul><li>点击</li><li>会话</li><li>人员</li></ul> <p>例如，当与页面查看量结合使用时，您可以选择每个人员的页面查看量、访问的页面查看量或每次事件的页面查看量。对于点击来说，“发生次数”可作为自由格式表中的 y 轴量度。</p> |
 | **[概要变化](/help/analysis-workspace/visualizations/summary-number-change.md)** | | |
 | | 值 | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>比例更改</li><li>原始差异</li></ul> |

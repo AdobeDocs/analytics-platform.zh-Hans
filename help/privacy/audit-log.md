@@ -4,7 +4,7 @@ description: 了解如何查看和管理Customer Journey Analytics审核日志�
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 66%
@@ -111,7 +111,7 @@ ht-degree: 66%
 
 选择漏斗图标（![过滤器](assets/filter-icon.png)）以显示过滤器控件列表，帮助缩小结果范围。仅显示最后 1,000 条记录，这与选择的各种过滤器无关。
 
-![审核日志，显示针对数据范围显示的筛选器。](assets/filters.png)
+![审核日志，显示针对日期范围显示的筛选器。](assets/filters.png)
 
 在 UI 中有以下过滤器可用于审核事件：
 

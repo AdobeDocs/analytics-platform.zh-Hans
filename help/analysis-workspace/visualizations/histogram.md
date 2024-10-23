@@ -4,7 +4,7 @@ title: 直方图
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 42%
@@ -38,7 +38,7 @@ ht-degree: 42%
 >
 >直方图仅支持标准量度，而不支持计算量度。
 
-在下面的示例中，直方图用于为人员数存储会话。 直方图显示，大多数人在所选数据范围内有16-21个会话。
+在下面的示例中，直方图用于为人员数存储会话。 直方图显示，大多数人在所选日期范围内有16-21个会话。
 
 ![](assets/histogram.png)
 

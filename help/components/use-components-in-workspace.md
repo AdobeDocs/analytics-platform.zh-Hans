@@ -4,7 +4,7 @@ title: 使用 Analysis Workspace 中的组件
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 7%
@@ -120,7 +120,7 @@ ht-degree: 7%
 
      ![删除日期范围](assets/add-date-range.gif)
 
-   * 自由格式表可视化图表中的量度或维度。 有关详细信息，请参阅[使用数据范围](/help/components/date-ranges/overview.md#use-date-ranges)。
+   * 自由格式表可视化图表中的量度或维度。 有关详细信息，请参阅[使用日期范围](/help/components/date-ranges/overview.md#use-date-ranges)。
 
 有关如何在Analysis Workspace中使用和管理日期范围的更多信息，请参阅[日期范围概述](/help/components/date-ranges/overview.md)。
 

@@ -6,7 +6,7 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 role: User
-source-git-commit: b85ad91a80f277aaf35f1e3aa3366a46f6478215
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 58%
@@ -21,7 +21,7 @@ ht-degree: 58%
 
    ![显示从所选内容创建警报的步骤结果。](assets/breakdown.png)
 
-1. 从子菜单中选择&#x200B;**[!UICONTROL Dimension]**、**[!UICONTROL 指标]**、**[!UICONTROL 筛选器]**&#x200B;或&#x200B;**[!UICONTROL 数据范围]**，然后选择一个项。
+1. 从子菜单中选择&#x200B;**[!UICONTROL Dimension]**、**[!UICONTROL 指标]**、**[!UICONTROL 筛选器]**&#x200B;或&#x200B;**[!UICONTROL 日期范围]**，然后选择一个项目。
 
 您可以跨选定的时段，按维度项目或者受众筛选条件来划分指标。此外，您还可以进一步深入到更精细的粒度级别。
 
