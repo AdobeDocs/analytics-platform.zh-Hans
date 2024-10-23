@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
+source-git-commit: e5d66bfbc39d3b20b2833b6a83485b106b3d4231
 workflow-type: tm+mt
-source-wordcount: '3078'
+source-wordcount: '3091'
 ht-degree: 77%
 
 ---
@@ -34,16 +34,22 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/en/
 
 ### 过期凭据
 
-* 已授予对Experience Platform和Customer Journey Analytics的访问权限。
-* 已授予产品管理员访问Customer Journey Analytics的权限，以便您可以查看、编辑、更新或删除连接和数据视图。
-* 或者
-* 已授予您要访问的数据视图的访问权限。
-* 已授予对CJA BI扩展的访问权限。
+要使用过期凭据，您可以：
+
+* 授予对Experience Platform和Customer Journey Analytics的访问权限。
+* 授予产品管理员访问Customer Journey Analytics的权限，以便您可以查看、编辑、更新或删除连接和数据视图。
+
+或者，您可以：
+
+* 授予对要访问的数据视图的访问权限。
+* 授予对Customer Journey AnalyticsBI扩展的访问权限。
 
 ### 未过期的凭据
 
-* 在AdobeExperience Platform中创建不会过期的凭据。
-* 按照[过期凭据](#Expiring-credentials)中所述的相同步骤授予对未过期凭据的访问权限。
+要使用不会过期的凭据，请执行以下操作：
+
+* 在Experience Platform中创建不会过期的凭据。
+* 按照[过期凭据](#Expiring-credentials)中所述的步骤授予访问未过期凭据的权限。
 
 请参阅[客户历程访问控制](../technotes/access-control.md)以了解详细信息，特别是[产品管理员附加权限](../technotes/access-control.md#product-admin-additional-permissions)和Admin Console中的[Customer Journey Analytics权限](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console)。
 
