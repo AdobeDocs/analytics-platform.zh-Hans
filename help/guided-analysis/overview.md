@@ -5,9 +5,9 @@ keywords: 产品分析
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 1e7d61f05a8351a1bd9e4d289c9d31906676f909
 workflow-type: tm+mt
-source-wordcount: '1823'
+source-wordcount: '1806'
 ht-degree: 47%
 
 ---
@@ -15,11 +15,6 @@ ht-degree: 47%
 # 引导式分析概述
 
 引导式分析使从营销到产品再到分析师的用户，能够通过基于 Customer Journey Analytics 的跨渠道数据构建的引导式工作流，自助提供有关客户历程的高质量数据和洞察。与 Analysis Workspace 和移动记分卡类似，引导式分析使用来自 [数据视图](/help/data-views/data-views.md)中的数据，该视图通过[连接](../connections/overview.md)引用 Adobe Experience Platform 中的数据。在引导式分析中创建的许多报告均可以无缝传输到 Analysis Workspace 以进行其他研究。
-
->[!NOTE]
->
->请参阅[常见问题解答](faq.md)，以了解引导式分析与Analysis Workspace在术语（区段、过滤器等）方面的差异。
-
 
 以下引导式分析可供使用：
 
