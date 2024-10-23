@@ -4,10 +4,10 @@ title: 历程画布
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 5e4666b81f23e09a4208f0efed17a7bc44dff0fc
+source-git-commit: 27c76e5090e4dfcfc00fd11c7a67574dc6af1c63
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1654'
+ht-degree: 1%
 
 ---
 
@@ -45,7 +45,13 @@ ht-degree: 0%
 
 此标题总结了历程中的所有路径中哪些路径的转化率最高。
 
+当历程包含多个开始节点时，描述如下所示：
+
 ![历程画布分析标题](assets/journey-canvas-caption.png)
+
+当历程包含单个开始节点时，描述如下所示：
+
+![历程画布分析标题单个开始节点](assets/journey-canvas-caption-singlestart.png)
 
 在解释此标题时，请考虑以下事项：
 
@@ -176,13 +182,9 @@ ht-degree: 0%
 
 #### 功能差异
 
-在历程画布中修改Journey Optimizer历程后，功能可能会因以下功能而异，具体取决于您的修改：
+在历程画布中修改Journey Optimizer历程后，[!UICONTROL **箭头设置**]&#x200B;下拉字段中可用的选项会根据您的修改进行更改。 有关详细信息，请参阅[配置设置](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。
 
-* [!UICONTROL **节点类型**]&#x200B;字段中显示的值发生了更改。
-
-* [!UICONTROL **箭头设置**]&#x200B;下拉字段中可用的选项更改。
-
-有关这些字段的详细信息，请参阅[配置设置](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。
+[!UICONTROL **节点类型**]&#x200B;字段仅在Journey Optimizer中可用。 在历程画布中查看Journey Optimizer旅程时，无论是否在历程画布中修改旅程，该变量均不可用。
 
 #### 同步差异
 
@@ -196,7 +198,7 @@ ht-degree: 0%
 
 | 术语 | 历程画布 | Journey Optimizer |
 |---------|----------|---------|
-| **事件** | Customer Journey Analytics中可用的几个标准指标之一。 此量度会计入收入、订阅或生成的商机等。 | 触发个性化历程（如在线购买）的活动类别。 |
+| **Event** | Customer Journey Analytics中可用的几个标准指标之一。 此量度会计入收入、订阅或生成的商机等。 | 触发个性化历程（如在线购买）的活动类别。 |
 
 ### 在历程画布中分析Journey Optimizer历程
 
