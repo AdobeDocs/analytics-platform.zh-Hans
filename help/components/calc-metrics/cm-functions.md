@@ -1,94 +1,94 @@
 ---
 title: 基本功能
-description: 计算指标生成器允许您将统计和数学函数应用于生成高级计算指标。
+description: 计算量度生成器允许您将统计和数学函数应用于生成高级计算指标。
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
 source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1185'
-ht-degree: 30%
+ht-degree: 100%
 
 ---
 
 # 基本功能
 
 
-[计算量度生成器](cm-workflow/cm-build-metrics.md)允许您应用统计和数学函数。 本文按字母顺序列出了各个函数及其定义。
+使用[计算量度生成器](cm-workflow/cm-build-metrics.md)可以应用统计和数学函数。本文按字母顺序列出了这些函数及其定义。
 
 >[!NOTE]
 >
->当 [!DNL metric] 被标识为函数中的参数时，还允许使用其他指标表达式。例如，[COLUMN MAXIMUM(METRICS)](#column-maximum)还允许[COLUMN MAXIMUM(PageViews + Visits)](#column-maximum)。
+>当 [!DNL metric] 被标识为函数中的参数时，还允许使用其他指标表达式。例如，[COLUMN MAXIMUM(metrics)](#column-maximum) 还允许 [COLUMN MAXIMUM(PageViews + Visits)](#column-maximum)。
 
 
 
-## table函数与row函数
+## 表函数与行函数
 
 在 table 函数中，输出对于表中的每一行都是相同的。在 row 函数中，输出对于表中的每一行都是不同的。
 
-在适用和相关的情况下，使用函数类型对函数进行注释： [!BADGE 表]{type="Neutral"}[!BADGE 行]{type="Neutral"}
+在适用且相关的情况下，函数会用函数类型注释：[!BADGE 表]{type="Neutral"}[!BADGE 行]{type="Neutral"}
 
-## include-zeros参数的含义是什么？
+## Include-Zeros 参数的含义是什么？
 
-它可告知计算中是否包含零。有时零表示&#x200B;*无*，但有时它很重要。
+它可告知计算中是否包含零。零有时表示&#x200B;*无*，有时又十分重要。
 
-例如，如果您有一个收入指标，然后向报表中添加了一个页面查看次数量度，那么您的收入会突然出现更多的行，这些行全部为零。 您可能不希望该额外的量度影响收入列中的任何&#x200B;**[MEAN](cm-functions.md#mean)**、**[ROW MINIMUM](cm-functions.md#row-min)**、**[QUARTILE](cm-functions.md#quartile)**&#x200B;以及更多计算。 在这种情况下，您需要检查`include-zeros`参数。
+例如，如果您有收入量度，然后又将页面查看次数量度添加到报表中，则您的收入会突然多出一些全部为零的行。您可能不希望该附加量度影响收入栏中的任何&#x200B;**[平均值](cm-functions.md#mean)**、**[行最小值](cm-functions.md#row-min)**、**[四分位数](cm-functions.md#quartile)**&#x200B;以及其他计算。在这种情况下，您需要检查 `include-zeros` 参数。
 
-另一种情况是，您有两个感兴趣的量度，而其中一个量度的平均值或最小值较高，因为某些行为零。  在这种情况下，您可以选择不检查参数以包含零
+另一种情况是，您有两个感兴趣的指标，其中一个指标的平均值或最小值较高，因为其中有些行为零。在这种情况下，您可以选择不检查参数，以包含零
 
 
 
 ## 绝对值
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 绝对值（量度）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ABSOLUTE VALUE(metric)]**
 
 [!BADGE 行]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 要为其计算绝对值的指标。 |
+| 量度 | 您想要计算绝对值的指标。 |
 
 
 ## 列最大值
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 列最大值（量度，include_zeros）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MAXIMUM(metric, include_zeros)]**
 
 返回某量度列的一组维度元素中的最大值。MAXV 可以在一个列（量度）内跨维度元素垂直估值。
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 至少需要一个量度，但可将任意数量的量度作为参数。 |
-| include_zeros | 是否在计算中包括零值。 |
+| 量度 | 至少需要一个指标，但可以将任意数量的指标作为参数。 |
+| include_zeros | 是否在计算中包含零值。 |
 
 
 ## 列最小值
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 列最小值（量度，include_zeros）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MINIMUM(metric, include_zeros)]**
 
 返回某量度列的一组维度元素中的最小值。MINV 可以在一个列（量度）内跨维度元素垂直估值。
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 至少需要一个量度，但可将任意数量的量度作为参数。 |
-| include_zeros | 是否在计算中包括零值。 |
+| 量度 | 至少需要一个指标，但可以将任意数量的指标作为参数。 |
+| include_zeros | 是否在计算中包含零值。 |
 
 
 ## 列总和
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 列总和（量度）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN SUM(metric)]**
 
-添加列中某指标的所有数值（跨维度元素）。
+添加列中某量度的所有数值（跨维度元素）。
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 至少需要一个量度，但可将任意数量的量度作为参数。 |
+| 量度 | 至少需要一个指标，但可以将任意数量的指标作为参数。 |
 
 
 ## 计数
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 计数（量度）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL COUNT(metric)]**
 
-[!BADGE Table]{type="Neutral"}
+[!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
@@ -97,49 +97,49 @@ ht-degree: 30%
 
 ## 指数
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 指数（量度）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT(metric)]**
 
 [!BADGE 行]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 应用于基础e的指数。 |
+| 量度 | 应用于底数 e 的指数。 |
 
 
 ## 平均值
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL MEAN(metric， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL MEAN(metric, include_zeros)]**
 
-[!BADGE Table]{type="Neutral"}
+[!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 要为其计算平均值的指标。 |
-| include_zeros | 是否在计算中包括零值。 |
+| 量度 | 您希望计算平均数的量度。 |
+| include_zeros | 是否在计算中包含零值。 |
 
 
 ## 中间值
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN(metric， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN(metric, include_zeros)]**
 
-[!BADGE Table]{type="Neutral"}
+[!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 您希望计算中间值的指标。 |
-| include_zeros | 是否在计算中包括零值。 |
+| 量度 | 您希望计算中位数的量度。 |
+| include_zeros | 是否在计算中包含零值。 |
 
 
 ## 取模
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL MODULO(metric_X， metric_Y)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL MODULO(metric_X, metric_Y)]**
 
 使用带余除法，将 x 除以 y 之后返回余数。
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 您希望除的第一个量度。 |
-| metric_Y | 您要除的第二个量度。 |
+| metric_X | 您想要划分的第一个指标。 |
+| metric_Y | 您想要划分的第二个指标。 |
 
 ### 示例
 
@@ -151,61 +151,61 @@ MODULO(-4,3) = -1
 MODULO(-3,3) = 0
 ```
 
-为确保始终获得正数，请使用
+要确保您始终获得正数，请使用
 
 ```
 MODULO(MODULO(x,y)+y,y)
 ```
 
-## 百分点值
+## 百分位数
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 百分位数(metric， k， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL PERCENTILE(metric, k, include_zeros)]**
 
-[!BADGE Table]{type="Neutral"}
+[!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
 | 量度 | 介于 0 到 100 之间（包括 0 和 100）的百分位数值。 |
 | k | 用于定义相对位置的量度列。 |
-| include_zeros | 是否在计算中包括零值。 |
+| include_zeros | 是否在计算中包含零值。 |
 
 
 
 ## 幂运算符
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 乘幂运算符(metric_X， metrix_Y)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL POWER OPERATOR(metric_X, metrix_Y)]**
 
-返回x的幂y。
+返回 x 的 y 次方。
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 您希望提升到metric_Y次幂的量度。 |
-| metric_Y | 您希望将metric_X提升到的幂。 |
+| metric_X | 您想要计算其 metric_Y 次方的指标。 |
+| metric_Y | 您想要将 metric_X 提升到的次方。 |
 
 
 ## 四分位数
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE(metric， quartile， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE(metric, quartile, include_zeros)]**
 
-[!BADGE Table]{type="Neutral"}当QUARTILE分别等于`0` （零）、`2`和`4`时，[COLUMN MINIMUM](#column-minimum)、[MEDIAN](#median)和[COLUMN MAXIMUM](#column-maximum)返回与[QUARTILE](#quartile)相同的值。
+[!BADGE 表]{type="Neutral"}当四分位数分别等于 `0`（零）、`2` 和 `4` 时，[COLUMN MINIMUM](#column-minimum), [MEDIAN](#median) 和 [COLUMN MAXIMUM](#column-maximum) 返回与 [QUARTILE](#quartile) 相同的值。
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 您要为其计算四分位数值的指标。 |
-| 四分位数 | 指示要返回的四分位数值。 |
-| include_zeros | 是否在计算中包括零值。 |
+| 量度 | 您想要计算四分位数值的指标。 |
+| 四分位数 | 指示要返回哪个四分位数值。 |
+| include_zeros | 是否在计算中包含零值。 |
 
 
 ## 轮次
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ROUND(metric， number)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ROUND(metric, number)]**
 
-不带&#x200B;*number*&#x200B;参数的四舍五入与带&#x200B;*number*&#x200B;参数为0的四舍五入相同，也就是四舍五入到最接近的整数。  使用&#x200B;*number*&#x200B;参数时，ROUND将返回小数点右边的&#x200B;*number*&#x200B;位数。  如果&#x200B;*number*&#x200B;为负数，则返回小数点左边的0。
+在没有&#x200B;*数字*&#x200B;参数的情况下四舍五入，与在&#x200B;*数字*&#x200B;参数为 0 的情况下四舍五入是相同的，都会四舍五入为最接近的整数。使用&#x200B;*数字*&#x200B;参数，ROUND 返回小数点右侧的&#x200B;*数字*&#x200B;位数。如果&#x200B;*数字*&#x200B;为负，则在小数点左侧返回 0。
 
 | 参数 | 描述 |
 |---|---|
 | 量度 | 要舍入的量度。 |
-| 数字 | 要返回的小数点右侧的位数。 （如果为负，则在小数点左边返回零）。 |
+| 数字 | 返回小数点右边的多少位数字。（如果负数返回小数点左侧的零）。 |
 
 ### 示例
 
@@ -219,89 +219,89 @@ ROUND( 314.15, -2) = 300
 
 ## 行计数
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 行计数()]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ROW COUNT()]**
 
-返回给定列的行计数（一个维度中报告的独特元素计数）。超过&#x200B;*个唯一值*&#x200B;将被计为1。
+返回给定列的行计数（一个维度中报告的独特元素计数）。将&#x200B;*超出的独特数*&#x200B;计为 1。
 
 
 ## 行最大值
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 行MAX（指标，include_zeros）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ROW MAX(metric, include_zeros)]**
 
-每行列数的最大值。
+每一行中所有列的最大值。
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 至少需要一个量度，但可将任意数量的量度作为参数。 |
-| include_zeros | 是否在计算中包括零值。 |
+| 量度 | 至少需要一个指标，但可以将任意数量的指标作为参数。 |
+| include_zeros | 是否在计算中包含零值。 |
 
 ## 行最小值
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 行最小值（量度，include_zeros）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ROW MIN(metric, include_zeros)]**
 
-每行列数的最小值。
+每一行中所有列的最小值。
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 至少需要一个量度，但可将任意数量的量度作为参数。 |
-| include_zeros | 是否在计算中包括零值。 |
+| 量度 | 至少需要一个指标，但可以将任意数量的指标作为参数。 |
+| include_zeros | 是否在计算中包含零值。 |
 
 
 
 ## 行总和
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 行SUM（量度，include_zeros）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ROW SUM(metric, include_zeros)]**
 
 每一行中所有列的总和。
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 至少需要一个量度，但可将任意数量的量度作为参数。 |
+| 量度 | 至少需要一个指标，但可以将任意数量的指标作为参数。 |
 
 
 ## 平方根
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 平方根（量度，include_zeros）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT(metric, include_zeros)]**
 
 [!BADGE 行]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 要为其计算平方根的指标。 |
+| 量度 | 您希望计算平方根的量度。 |
 
 
 ## 标准偏差
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 标准偏差（量度，include_zeros）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL STANDARD DEVIATION(metric, include_zeros)]**
 
-[!BADGE Table]{type="Neutral"}
+[!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| | 要为其计算标准偏差的指标。 |
-| include_zeros | 是否在计算中包括零值。 |
+| | 您想要计算标准差的指标。 |
+| include_zeros | 是否在计算中包含零值。 |
 
 
 ## 方差
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE(metric， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE(metric, include_zeros)]**
 
-[!BADGE Table]{type="Neutral"}
+[!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 要为其计算方差的量度。 |
-| include_zeros | 是否在计算中包括零值。 |
+| 量度 | 您希望计算变量的量度。 |
+| include_zeros | 是否在计算中包含零值。 |
 
 
 VARIANCE 的方程式为：
 
 ![](assets/variance_eq.png){width="100"}
 
-其中&#x200B;*x*&#x200B;为样本平均值，[MEAN（*个度量*）](#mean)和&#x200B;*n*&#x200B;为样本大小。
+其中 *x* 为抽样平均值，[MEAN(*metric*)](#mean)，*n* 为抽样大小。
 
 
-要计算方差，您需要查看整列数字。 首先，从该数字列表计算平均值。获得平均值后，请浏览每个条目并执行以下操作：
+为了计算变量，需要查看整列数字。首先，从该数字列表计算平均值。得出平均值后，浏览每个条目，然后执行以下操作：
 
 1. 从数字中减去平均值。
 
@@ -309,7 +309,7 @@ VARIANCE 的方程式为：
 
 1. 再相加求和。
 
-一旦您迭代了整列，就会得到一个总计。 然后，将该总数除以列中的项目数。得出的数值就是列变量。它是单个数字。但它会显示为一列数字。
+对整列进行迭代后，您将得到一个总数。然后，将该总数除以列中的项目数。得出的数值就是列变量。它是单个数字。但它会显示为一列数字。
 
 在以下三项列的示例中：
 
@@ -319,7 +319,7 @@ VARIANCE 的方程式为：
 | 2 |
 | 3 |
 
-此列的平均值为 2。列的变量为((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3) = 2/3。
+此列的平均值为 2。此列的变量将为 ((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3 = 2/3。
 
 
 

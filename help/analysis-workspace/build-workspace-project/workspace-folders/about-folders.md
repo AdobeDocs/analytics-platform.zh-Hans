@@ -6,13 +6,13 @@ feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
 source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '435'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# 关于Analysis Workspace中的文件夹
+# 关于 Analysis Workspace 中的文件夹
 
 当您选择[显示文件夹和项目](../freeform-overview.md#show-selector)时，Customer Journey Analytics 中的文件夹可在 Workspace 登陆页面上使用。
 

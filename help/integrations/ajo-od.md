@@ -1,13 +1,13 @@
 ---
-title: 集成Adobe Journey Optimizer决策管理
+title: 集成 Adobe Journey Optimizer 决策管理
 description: 引入 Adobe Journey Optimizer 决策管理生成的数据，并使用 Customer Journey Analytics 中的 Analysis Workspace 对其进行分析。
 exl-id: fde45264-46cf-4c68-9872-7fb739748f21
 feature: Experience Platform Integration
 role: Admin
 source-git-commit: 979564d0249abadd454ce43aba9aeae2c78a44f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '701'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

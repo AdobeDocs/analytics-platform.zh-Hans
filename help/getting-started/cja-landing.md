@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '820'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ AI 助手是一种对话体验，允许从业者快速执行任务——无论�
 
 >[!TAB 引导式分析]
 
-现在，引导式分析可直接从Analysis Workspace中使用，它使用户能够从面板、可视化图表和引导式分析创建具有综合见解的功能板。
+引导式分析现在可直接在 Analysis Workspace 中使用，用户使用该功能可以创建具有来自面板、可视化内容和引导式分析的全面洞察的仪表板。
 
 [![图像](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
 

@@ -10,9 +10,9 @@ user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
 source-git-commit: aaf23560b69c90fdbaee3fa401b5fe58e6a4e5d1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '938'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 93%
    + [数据摄取概述](../data-ingestion/data-ingestion.md)
    + 摄取并使用快速入门指南{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
-      + Experience PlatformEdge Network{#edge-network}
+      + Experience Platform Edge Network {#edge-network}
          + [Web SDK](../data-ingestion/aepwebsdk.md)
          + [Mobile SDK](../data-ingestion/aepmobilesdk.md)
          + [服务器 API](../data-ingestion/serverapi.md)
@@ -100,7 +100,7 @@ ht-degree: 93%
    + [标签和政策](../data-views/data-governance.md)
 
 + 工具 {#tools}
-   + 资产转移{#asset-transfer}
+   + 资产转移 {#asset-transfer}
       + [转移资产](../tools/asset-transfer/transfer-assets.md)
    + 产品使用情况 {#product-usage}
       + [概述](../tools/product-usage/usage-overview.md)
@@ -201,7 +201,7 @@ ht-degree: 93%
       + [统计技术](../analysis-workspace/c-forecast/statistics-forecasting.md)
    + [目录](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [用户偏好设置](../analysis-workspace/user-preferences.md)
-   + Workspace常见问题解答和更多{#workspace-faq}
+   + Workspace 常见问题解答及更多信息 {#workspace-faq}
       + [常见问题解答](../analysis-workspace/workspace-faq/faq.md)
       + [错误消息](../analysis-workspace/workspace-faq/error-messages.md)
       + [限制](../analysis-workspace/workspace-faq/aw-limitations.md)
@@ -355,10 +355,10 @@ ht-degree: 93%
 + 用例 {#cja-usecases}
    + [Customer Journey Analytics 用例](../use-cases/cja-usecases.md)
    + Google Analytics 数据{#ga}
-      + [从Google Analytics迁移数据](../use-cases/ga/overview.md)
-      + [摄取Google Analytics历史数据](../use-cases/ga/backfill.md)
-      + [配置流Google Analytics数据](../use-cases/ga/streaming.md)
-      + [报告Google Analytics数据](../use-cases/ga/report.md)
+      + [从 Google Analytics 迁移数据](../use-cases/ga/overview.md)
+      + [引入 Google Analytics 历史数据](../use-cases/ga/backfill.md)
+      + [配置流式处理 Google Analytics 数据](../use-cases/ga/streaming.md)
+      + [报告 Google Analytics 数据](../use-cases/ga/report.md)
    + 数据摄取 {#data-ingestion}
       + [收錄并使用 Marketo Engage 数据](../use-cases/data-ingestion/marketo.md)
       + [收錄和使用 Experience Platform 受众](../use-cases/data-ingestion/ingest-aep-segments.md)
@@ -385,14 +385,14 @@ ht-degree: 93%
    + 拼合 {#stitching}
       + [共享设备](/help/use-cases/stitching/shared-devices.md)
    + 派生字段 {#derived-fields}
-      + [目标报告](../use-cases/goals-using-derived-fields.md)
+      + [报告目标](../use-cases/goals-using-derived-fields.md)
 
 + Labs {#labs}
    + [Labs 用户指南](../labs/labs.md)
 
 + 故障排除 {#troubleshooting}
    + [比较数据](../troubleshooting/compare.md)
-   + [量度和受众的一致性](../troubleshooting/consistency-rcdp-cja.md)
+   + [指标和受众的一致性](../troubleshooting/consistency-rcdp-cja.md)
    + [缺乏权限](../troubleshooting/lack-of-permissions.md)
 
 + 技术说明 {#technotes}
