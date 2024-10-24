@@ -4,7 +4,7 @@ title: 历程画布
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 27c76e5090e4dfcfc00fd11c7a67574dc6af1c63
+source-git-commit: 820251833eae9fed1574a0010f726b0ba6e12cd1
 workflow-type: tm+mt
 source-wordcount: '1654'
 ht-degree: 1%
@@ -12,8 +12,6 @@ ht-degree: 1%
 ---
 
 # 历程画布概述
-
-{{release-limited-testing}}
 
 历程画布可视化图表允许您分析提供给用户和客户的旅程，并获取有关这些旅程的深入见解。 它允许您从头开始定义旅程或从Journey Optimizer查看旅程，然后查看人员如何离开（流失）或继续通过（流过）旅程。
 

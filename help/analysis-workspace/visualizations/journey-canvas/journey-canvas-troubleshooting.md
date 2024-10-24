@@ -3,9 +3,7 @@ description: 配置历程画布可视化图表时的示例
 title: 历程画布示例
 feature: Visualizations
 role: User
-hide: true
-hidefromtoc: true
-source-git-commit: cbe713c08269fd3cc4e1076181020ff3fdc947b3
+source-git-commit: 820251833eae9fed1574a0010f726b0ba6e12cd1
 workflow-type: tm+mt
 source-wordcount: '1287'
 ht-degree: 0%
@@ -13,8 +11,6 @@ ht-degree: 0%
 ---
 
 # 历程画布疑难解答
-
-{{release-limited-testing}}
 
 历程画布可视化图表允许您分析提供给用户和客户的旅程，并获取有关这些旅程的深入见解。
 
