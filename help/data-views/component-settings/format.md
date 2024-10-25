@@ -5,10 +5,10 @@ exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
+source-git-commit: bd89162aa81648133cbf05357fb7f8911ba91002
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 21%
+source-wordcount: '737'
+ht-degree: 23%
 
 ---
 
@@ -22,6 +22,16 @@ ht-degree: 21%
 >abstract="确定在报表中使用某个组件时如何显示该组件。"
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_metric_format_currencyconversion"
+>title="货币换算"
+>abstract="选择货币代码维度以配置和显示所选货币类型的货币。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 通过格式，可决定给定的量度在报表中使用的显示方式。

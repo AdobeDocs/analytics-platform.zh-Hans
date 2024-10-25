@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: aaf23560b69c90fdbaee3fa401b5fe58e6a4e5d1
-workflow-type: ht
-source-wordcount: '938'
-ht-degree: 100%
+source-git-commit: 925eae6eb1b23e761432081f0dbcdcada9ce9be4
+workflow-type: tm+mt
+source-wordcount: '942'
+ht-degree: 99%
 
 ---
 
@@ -363,9 +363,10 @@ ht-degree: 100%
       + [收錄并使用 Marketo Engage 数据](../use-cases/data-ingestion/marketo.md)
       + [收錄和使用 Experience Platform 受众](../use-cases/data-ingestion/ingest-aep-segments.md)
    + 数据视图 {#data-views}
-      + [数据视图用例](../use-cases/data-views/data-views-usecases.md)
-      + [使用绑定维度和量度](../use-cases/data-views/binding-dimensions-metrics.md)
-      + [使用摘要数据](../use-cases/data-views/summary-data.md)
+      + [数据视图用例](/help/use-cases/data-views/data-views-usecases.md)
+      + [使用绑定维度和量度](/help/use-cases/data-views/binding-dimensions-metrics.md)
+      + [使用摘要数据](/help/use-cases/data-views/summary-data.md)
+      + [BI扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)
    + 数据导出 {#data-export}
       + [概述](../use-cases/data-export/overview.md)
       + [BI 扩展](../use-cases/data-export/bi-extension.md)

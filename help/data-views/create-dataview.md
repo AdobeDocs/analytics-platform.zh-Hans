@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
-workflow-type: ht
-source-wordcount: '1832'
-ht-degree: 100%
+source-git-commit: bd89162aa81648133cbf05357fb7f8911ba91002
+workflow-type: tm+mt
+source-wordcount: '1884'
+ht-degree: 97%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_dataviewsinadobejourneyoptimizer"
 >title="Journey Optimizer 中的数据视图"
->abstract="Journey Optimizer 需要使用与 Customer Journey Analytics 一起配置的数据视图。<br/>启用此选项可使其成为 Adobe Journey Optimizer 报告中使用的默认数据视图。"
+>abstract="Customer Journey Analytics 需要使用与 Adobe Journey Optimizer 兼容的连接和数据视图。默认情况下，系统会自动为此目的创建连接和数据视图。<br/>或者，您可以启用此选项，以使其成为Adobe Journey Optimizer报表中使用的默认数据视图。启用后，Journey Optimizer所需的所有组件都将添加到此数据视图，并且所有必需的Journey Optimizer数据集都将添加到与此数据视图关联的连接。"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/integrations/ajo#connection" text="添加了哪些组件和数据集。"
 
 <!-- markdownlint-enable MD034 -->
