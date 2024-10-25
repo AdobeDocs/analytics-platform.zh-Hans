@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
 workflow-type: tm+mt
 source-wordcount: '3747'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -135,8 +135,8 @@ ht-degree: 94%
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_primaryID"
->title="主 ID"
->abstract="为您的连接选择适当的主ID：B2C场景的人员。 B2B方案的帐户。"
+>title="主要 ID"
+>abstract="为您的连接选择正确的主要 ID：B2C 场景的人员。B2B 场景帐户。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -146,7 +146,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connection_optionalContainers"
 >title="可选容器"
->abstract="选择其他容器。<br/><br/>**[!UICONTROL 全局帐户&#x200B;]**：启用连接中全局帐户的配置。<br/>**[!UICONTROL 机会]**：启用连接中的机会配置。<br/>**[!UICONTROL 购买群组&#x200B;]**：启用连接中的购买群组的配置。"
+>abstract="选择其他容器。<br/><br/>**[!UICONTROL 全球帐户&#x200B;]**：启用连接中的全球帐户配置。<br/>**[!UICONTROL 机会]**：启用连接中的机会配置。<br/>**[!UICONTROL 购买群组&#x200B;]**：启用连接中的购买群组配置。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -155,7 +155,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connection_personID"
 >title="人员 ID"
->abstract="在 Experience Platform 中，从在数据集架构中定义的可用身份中选择人员 ID。"
+>abstract="在 Experience Platform 的数据集架构中定义的可用标识中选择一个人员 ID。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -164,7 +164,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountID"
 >title="帐户 ID"
->abstract="从Experience Platform的数据集架构中定义的可用标识中选择一个帐户ID（帐户的唯一标识符）。"
+>abstract="从 Experience Platform 的数据集架构中定义的可用标识中选择一个帐户 ID（帐户的唯一标识符）。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -172,8 +172,8 @@ ht-degree: 94%
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_globalAccountID"
->title="全局帐户ID"
->abstract="从Experience Platform的数据集架构中定义的可用标识中选择一个全局帐户ID（全局帐户的唯一标识符）。"
+>title="全球帐户 ID"
+>abstract="从 Experience Platform 的数据集架构中定义的可用标识中选择一个全球帐户 ID（全球帐户的唯一标识符）。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -182,7 +182,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connection_opportunityID"
 >title="机会 ID"
->abstract="从Experience Platform的数据集架构中定义的可用身份中选择一个机会ID（机会的唯一标识符）。"
+>abstract="从 Experience Platform 的数据集架构中定义的可用标识中选择一个机会 ID（机会的唯一标识符）。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -190,8 +190,8 @@ ht-degree: 94%
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_buyingGroupID"
->title="购买组ID"
->abstract="从Experience Platform的数据集架构中定义的可用标识中选择购买组ID（购买组的唯一标识符）。"
+>title="购买群组 ID"
+>abstract="从 Experience Platform 的数据集架构中定义的可用标识中选择一个购买群组 ID（购买群组的唯一标识符）。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -200,7 +200,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
 >title="匹配键"
->abstract="选择连接方式：基于匹配键或匹配容器。<br/><br/>**[!UICONTROL 匹配键&#x200B;]**：选择要与某个事件数据集连接的字段。 如果此列表为空，则可能尚未添加或配置事件数据集。<br/>**[!UICONTROL 匹配的容器]**：选择用于与某个事件数据集连接的容器。 如果此列表为空，则可能尚未配置一个或多个容器。"
+>abstract="选择如何加入：基于匹配的键或匹配的容器。<br/><br/>**[!UICONTROL 匹配的键&#x200B;]**：选择要与某个事件数据集连接的字段如果此列表为空，则可能尚未添加或配置事件数据集。<br/>**[!UICONTROL 匹配容器]**：选择一个容器来用于与其中一个事件数据集连接。如果此列表为空，则您可能尚未配置一个或多个容器。"
 
 <!-- markdownlint-enable MD034 -->
 
