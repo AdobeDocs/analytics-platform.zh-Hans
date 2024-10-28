@@ -5,14 +5,23 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 5%
+source-wordcount: '657'
+ht-degree: 7%
 
 ---
 
-# [!UICONTROL 频率]分析
+# [!UICONTROL 频率]分析 {#frequency}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_frequency_button"
+>title="频率"
+>abstract="查看特定事件的重复用户活动分布。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![频率](/help/assets/icons/Histogram.svg) **[!UICONTROL 频率]**&#x200B;分析按事件在产品中发生的频率对事件数据进行分组。 此分析的垂直轴包含表示事件频率的分段。 水平轴测量每个时段的用户或会话数。
 

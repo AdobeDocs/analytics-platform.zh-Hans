@@ -5,14 +5,23 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '1249'
-ht-degree: 2%
+source-wordcount: '1259'
+ht-degree: 3%
 
 ---
 
-# 维系率分析
+# 维系率分析 {#retention}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_retention_button"
+>title="维系"
+>abstract="衡量有多少用户继续使用您的产品。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![维系](/help/assets/icons/Retention.svg) **[!UICONTROL 维系]**&#x200B;分析可衡量用户如何随着时间继续使用您的产品，这有助于您了解您的产品是否适合市场。 该分析基于两个重要事件计算用户：
 

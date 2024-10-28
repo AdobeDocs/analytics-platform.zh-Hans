@@ -5,14 +5,24 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 3%
+source-wordcount: '637'
+ht-degree: 4%
 
 ---
 
-# [!UICONTROL 活动增长]分析
+# [!UICONTROL 活动增长]分析 {#active-growth}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_activegrowth_button"
+>title="积极增长"
+>abstract="确定新的、保留的、返回的或非活跃的用户。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL 主动增长]**&#x200B;分析提供了有关特定时间段内用户增长和获取情况的见解。 水平轴是时间间隔，而垂直轴是用户的测量值。 用户分为四个类别：
 

@@ -5,14 +5,23 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 4%
+source-wordcount: '674'
+ht-degree: 6%
 
 ---
 
-# [!UICONTROL 首次使用影响]分析
+# [!UICONTROL 首次使用影响]分析 {#first-use-impact}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_firstuseimpact_button"
+>title="首次使用影响"
+>abstract="衡量功能首次使用对关键量度的影响。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![FirstUse](/help/assets/icons/FirstUse.svg) **[!UICONTROL 首次使用影响]**&#x200B;分析显示了用户首次使用产品功能之前和之后关键指示器执行的比较。 此报告的水平轴是事件之前和之后的相对时间间隔，而垂直轴测量所需的关键指示器。 图表中央的垂直条形表示给定用户首次使用功能时的第0天。 由于用户并不总是在同一天采用功能，并且您的转出可能会持续数天，因此第0天对于每位用户都意味着不同的内容。
 

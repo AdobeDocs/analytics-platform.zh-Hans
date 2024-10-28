@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
-source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
+source-git-commit: ad446f55855696cf7721f34f779883792b7958fa
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 18%
+source-wordcount: '376'
+ht-degree: 17%
 
 ---
 
@@ -22,6 +22,16 @@ ht-degree: 18%
 >abstract="摘要数据组在分组中的所有维度之间创建关联，并用于将摘要数据集中的维度与其他维度相结合以进行报告。"
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_summarydatagroup_hideinreporting"
+>title="在报告中隐藏"
+>abstract="选择此选项将为该维度启用&#x200B;**[!UICONTROL 隐藏报表]**&#x200B;中的组件，并将阻止该组件显示在Analysis Workspace和其他Customer Journey Analytics报表工具中。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 摘要数据组在分组中的所有维度之间创建关联，并用于将摘要数据集中的维度与其他维度相结合以进行报告。

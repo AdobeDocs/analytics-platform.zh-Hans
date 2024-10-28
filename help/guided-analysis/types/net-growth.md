@@ -5,14 +5,23 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '668'
-ht-degree: 2%
+source-wordcount: '676'
+ht-degree: 3%
 
 ---
 
-# [!UICONTROL 净增长]分析
+# [!UICONTROL 净增长]分析 {#net-growth}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_netgrowth_button"
+>title="净增长"
+>abstract="您是在获得用户还是在失去用户？"
+
+<!-- markdownlint-enable MD034 -->
 
 ![NetGrowth](/help/assets/icons/NetGrowth.svg) **[!UICONTROL Net Growth]**&#x200B;分析提供有关特定时间段内用户增减速率的见解。 水平轴是时间间隔，垂直轴是生长测量值。
 

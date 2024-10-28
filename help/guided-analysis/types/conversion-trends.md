@@ -5,14 +5,24 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 2%
+source-wordcount: '536'
+ht-degree: 4%
 
 ---
 
-# [!UICONTROL 转化趋势]分析
+# [!UICONTROL 转化趋势]分析 {#conversion-trends}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_conversiontrends_button"
+>title="转化趋势"
+>abstract="跟踪转化率随时间发生的变化。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![转化趋势](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL 转化趋势]**&#x200B;分析提供了转化率随时间变化的趋势可视化图表。 水平轴是一个时间间隔，而垂直轴表示转化率。
 

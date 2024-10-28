@@ -5,14 +5,23 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
 exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
-source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 1%
+source-wordcount: '577'
+ht-degree: 3%
 
 ---
 
-# [!UICONTROL 时间线]分析
+# [!UICONTROL 时间线]分析 {#timeline}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_timeline_button"
+>title="时间表"
+>abstract="观察一段时间内的用户级会话事件。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![时间线](/help/assets/icons/Timeline.svg) **[!UICONTROL 时间线]**&#x200B;分析允许您观察一段时间内用户级别的会话事件，以查找体验模式并讲述更好的用户故事。 左边栏允许您按属性值和区段过滤流。 右边栏允许您从符合筛选条件的随机用户列表中进行选择。 中心区域按会话显示选定用户的流，包括时间戳、属性值和持续时间。 持续时间不可用于给定会话中的最后一个事件。
 

@@ -5,14 +5,23 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 2%
+source-wordcount: '670'
+ht-degree: 3%
 
 ---
 
-# [!UICONTROL 漏斗]分析
+# [!UICONTROL 漏斗]分析 {#funnel}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_funnel_button"
+>title="漏斗"
+>abstract="比较步骤之间的转化率。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Funnel ]**分析提供了产品中关键用户历程的可视表示形式。 水平轴表示用户必须执行的每个步骤。 垂直轴表示每个步骤中用户或会话的百分比。 所有步骤必须按最终顺序完成，但可以在报告窗口内的任何时间执行。
 

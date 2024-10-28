@@ -5,14 +5,23 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 5%
+source-wordcount: '530'
+ht-degree: 6%
 
 ---
 
-# [!UICONTROL 版本影响]分析
+# [!UICONTROL 版本影响]分析 {#release-impact}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_releaseimpact_button"
+>title="发布影响"
+>abstract="比较发布前和发布后相同时期的性能。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![版本](/help/assets/icons/Release.svg) **[!UICONTROL 版本影响]**&#x200B;分析显示了给定日期之前和之后关键指标执行情况的比较。 此报告的水平轴是一个时间间隔，而垂直轴测量所需的关键指标。 图表中间有一个垂直条形图，表示要在前后比较的日期。 此日期通常表示要衡量的产品发生了显着更改，例如产品更新或促销活动启动。
 
