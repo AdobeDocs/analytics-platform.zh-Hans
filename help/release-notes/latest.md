@@ -3,9 +3,9 @@ title: 查看当前 Customer Journey Analytics 发行说明
 description: 最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: da5c47f6572664f22cf2aa30d4551ab47326115a
+source-git-commit: 1fffde84a332a7ae2911b8d8e8bb62717e5f2043
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '375'
 ht-degree: 72%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 72%
 | ----------- | ---------- | ------- | ---- |
 | **资产转移** | 允许您将项目、过滤器和计算量度等组件的所有权转移给其他用户，以确保具备连续性和相应的访问权限。[了解详情](/help/tools/asset-transfer/transfer-assets.md) |  | 10 年 15 月 |
 | **引导式分析：嵌入 Workspace** | [引导式分析](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/guided-analysis/overview)现在可直接在 Analysis Workspace 中使用，用户使用该功能可以创建具有来自面板、可视化内容和引导式分析的全面洞察的仪表板。从新的左侧边栏部分，您可以创建新的引导式分析，以将其添加到您的项目中。您还可以访问已保存的引导式分析，这些分析可以在许多项目中重新用作构建基块。 | 2024 年 10 月 2 日 | 2024 年 10 月 23 日 |
-| **产品使用情况** | 了解您的组织如何使用 Customer Journey Analytics。启用此功能会在 Adobe Experience Platform 中创建一个数据集，当组织中的任何人使用 Analysis Workspace 时，该数据集都会收集数据。还会自动创建连接和数据视图，让您可以访问诸如顶级项目类型、最活跃的用户以及项目中最常用的组件等维度。[文档链接见下面] | 2024 年 10 月 23 日 | 2025 年 1 月 |
+| **产品使用情况** | 了解您的组织如何使用 Customer Journey Analytics。启用此功能会在 Adobe Experience Platform 中创建一个数据集，当组织中的任何人使用 Analysis Workspace 时，该数据集都会收集数据。还会自动创建连接和数据视图，让您可以访问诸如顶级项目类型、最活跃的用户以及项目中最常用的组件等维度。[了解详情](/help/tools/product-usage/usage-overview.md) | 2024 年 10 月 23 日 | 2025 年 1 月 |
 | **有关Analysis Workspace性能中的请求因素的新信息** | 在Analysis Workspace中分析性能时，现在有新的“请求因素”部分可用。 要了解有关如何处理请求以及影响处理时间的各种因素的详细信息，请参阅[优化Analysis Workspace性能](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/optimizing-performance#request-factors)中的“请求因素”。 |  | 2024年10月1日 |
 
 
