@@ -5,10 +5,10 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
+source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 81%
+source-wordcount: '913'
+ht-degree: 79%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 81%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_persistence"
 >title="持久性"
->abstract="配置应用于维度的默认分配模型。分配在报告中应用于过滤器之前。"
+>abstract="配置应用于维度的默认分配模型。分配在报表中的过滤器之前应用。 有关详细信息，请参阅[分配设置](/help/data-views/component-settings/persistence.md#allocation-settings)、[到期设置](/help/data-views/component-settings/persistence.md#expiration-settings)、[绑定维度](/help/data-views/component-settings/persistence.md#binding-dimension)和绑定量度。"
 
 <!-- markdownlint-enable MD034 -->
 
