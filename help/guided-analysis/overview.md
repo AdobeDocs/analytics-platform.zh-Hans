@@ -6,9 +6,9 @@ exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
 source-git-commit: 1e7d61f05a8351a1bd9e4d289c9d31906676f909
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1806'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
@@ -36,9 +36,9 @@ ht-degree: 47%
 
 ## 访问
 
-您可以从Customer Journey Analytics主页访问引导式分析。
+您可以从 Customer Journey Analytics 主页访问引导式分析。
 
-1. 从主页中选择&#x200B;**[!UICONTROL 引导式分析]**，该操作将直接转到[趋势分析](types/trends.md)。
+1. 通过选择主页上的&#x200B;**[!UICONTROL 引导式分析]**，您可以直接进入[趋势分析](types/trends.md)。
 
    ![Landing page tile](assets/landing-page-tile.png){style="border:1px solid gray"}
 
@@ -46,7 +46,7 @@ ht-degree: 47%
 
    ![Create a new modal](assets/create-new-modal.png){style="border:1px solid gray"}
 
-您还可以从Analysis Workspace项目访问引导式分析。
+您还可以从 Analysis Workspace 项目访问引导式分析。
 
 1. 从主页中选择&#x200B;**[!UICONTROL 空白项目]**&#x200B;来创建一个空的 Workspace 项目。
 
@@ -56,24 +56,24 @@ ht-degree: 47%
 
    ![Workspace left rail](assets/workspace-left-rail.png){style="border:1px solid gray"}
 
-1. 将任何新分析拖到Workspace画布上，然后选择&#x200B;**[!UICONTROL 创建]**&#x200B;以生成所需的分析（例如： **[!UICONTROL 创建趋势]**）。 您还可以将现有分析从&#x200B;**[!UICONTROL 已保存]**&#x200B;部分拖动到 Workspace 画布上。
+1. 将任何新分析拖到 Workspace 画布上，然后选择&#x200B;**[!UICONTROL 创建]**，以生成所需的分析（例如：**[!UICONTROL 创建趋势]**）。您还可以将现有分析从&#x200B;**[!UICONTROL 已保存]**&#x200B;部分拖动到 Workspace 画布上。
 
    ![Create panel](assets/create-guided-analysis-panel.gif)
 
 ## 界面
 
-引导式分析的界面遵循问答格式。 在查询边栏中生成您的问题，然后通过书面洞察、图表和表格获得答案。然后，您可以通过分析和可视化设置来询问下一个问题。
+引导式分析的界面遵循问答格式。在查询边栏中生成您的问题，然后通过书面洞察、图表和表格获得答案。然后，您可以使用分析和可视化设置提出下一个问题。
 
 引导式分析使用以下 UI 元素：
 
 | 界面预览 | UI 元素 | 描述 |
 | --- | --- | --- |
-| ![查询边栏](assets/query-rail.png){style="border:1px solid gray"} | **[!UICONTROL 查询边栏]** | 通过选择构成分析的所需组件（事件、属性和区段）来配置&#x200B;*问题*。 以下选项在所有分析中均可用，以及基于每个视图提供的其他设置。 <ul><li>**视图**：从选项中选择以切换到新分析。 您的查询选择将维持在新分析的允许限制之内。</li><li>**活动**：您要测量的事件。每个分析对可配置的事件数都施加不同的限制。  事件有时标记为&#x200B;**[!UICONTROL 开始并返回事件]**、**[!UICONTROL 步骤]**&#x200B;或&#x200B;**[!UICONTROL 关键指示器]**。 在分析中使用1、2、...<br/>选择![添加](/help/assets/icons/Add.svg) **[!UICONTROL 添加事件]**&#x200B;以添加新事件。</li><li>**[!UICONTROL 因素]**：如果可用，则允许您指定因素，例如自首次事件以来的日期和首次事件。</li><li>**计为**：要应用于选定事件的计数方法。 从下拉菜单中选择。</li><li>**区段**：您要测量的区段。每个分析对可配置的区段数都实施不同的限制。 区段在分析中使用A、B、...<br/>选择![添加](/help/assets/icons/Add.svg) **[!UICONTROL 添加区段]**&#x200B;以添加新区段。</li><li>**[!UICONTROL 划分]**：如果可用，则将要应用的划分应用于分析。</li></ul>在某些设置中，还提供其他配置。<ul><li>**筛选器**：使用![筛选器](assets/filter.png)按特定维度缩小事件或区段的范围。 选择维度后，标准过滤条件（例如&#x200B;**[!UICONTROL 等于]**、**[!UICONTROL 包含]**&#x200B;或&#x200B;**[!UICONTROL 结束于]**）和前 1000 个维度值都可用。<br/>选择![筛选器](/help/assets/icons/Filter.svg)以添加其他筛选器。<br/>选择![删除](/help/assets/icons/Remove.svg)以删除筛选器。</li><li>**更多操作**：使用![更多](/help/assets/icons/More.svg)选择操作，如<ul><li>![重命名](/help/assets/icons/Rename.svg) **[!UICONTROL 重命名]**：重命名事件或区段。</li><li>![复制](/help/assets/icons/Duplicate.svg) **[!UICONTROL 复制]**：复制事件或区段。</li><li>![删除](/help/assets/icons/Delete.svg) **[!UICONTROL 移除]**：移除事件、区段或划分。</li><li>![编辑区段](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑区段]**：在[筛选器生成器](/help/components/filters/filter-builder.md)中编辑区段。</li><li>![开始](/help/assets/icons/Star.svg) **[!UICONTROL 添加到收藏夹]**：将该区段添加到[筛选器管理器](/help/components/filters/manage-filters.md)中的收藏夹筛选器列表。</li><li>![SaveAsFloppy](/help/assets/icons/SaveAsFloppy.svg) **[!UICONTROL 另存为]**：将区段另存为新组件。 在&#x200B;**[!UICONTROL 将区段保存到组件]**&#x200B;对话框中，可以指定区段名称和描述。 您可以选择![星形大纲](/help/assets/icons/StarOutline.svg)将新区段标记为收藏。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以将区段另存为新筛选器。</li><li>![链接](/help/assets/icons/Link.svg) **[!UICONTROL 链接开始并返回事件]**。：在[保留](types/retention.md)分析中链接开始和返回事件。</li><li>![取消链接](/help/assets/icons/Unlink.svg) **[!UICONTROL 取消链接开始和返回事件]**：在[保留](types/retention.md)分析中取消链接开始和返回事件。</li></ul></li></ul> |
-| ![图表](assets/chart.png){style="border:1px solid gray"} | **[!UICONTROL 图表]** | 根据查询边栏和设置的输入返回的数据生成的可视化内容。您看到的可视化效果取决于图表上方的视图和设置。该图表还包括： <ul><li>**工具提示**：将鼠标悬停在任何图表数据点上可显示包含更多信息的工具提示。</li><li>**图例**：将鼠标悬停在图表图例系列上可查看可用的定义、关注该系列并暂时隐藏其他系列。在图例中选择一个系列以隐藏该系列。</li><li>**注释**：适用的[注释](../components/annotations/overview.md)在可视化和图例之间可见。它以注释的配置颜色显示为![注释图标](assets/annotation.png)图标。分析显示随时间变化的数据，将![注释图标](assets/annotation.png)图标放在配置的日期或日期范围下。 不会随时间显示数据的分析会在图表的右下角显示![注释图标](assets/annotation.png)图标。</li><li>**选择操作**：通过选择任何数据点来公开下一个可用的操作。 选项包括&#x200B;**保存区段**。</li></ul> |
-| ![表格](assets/table.png){style="border:1px solid gray"} | **[!UICONTROL 表]** | 根据查询边栏和设置的输入内容返回的数据的表格表示形式。表中使用事件(1， 2， ...)和区段标识符(A， B， ...)引用的行。 表中的列取决于图表上方的分析。 该表还包括每行的内容： <ul><li>**选择操作**：切换![显示隐藏图标](assets/hide-in-chart.png)以隐藏或公开某行的图表系列。 选择![更多](/help/assets/icons/More.svg)以执行其他操作。 选项包括&#x200B;**保存区段**。</li></ul> |
-| ![可视化设置](assets/visualization-settings.png){style="border:1px solid gray"} | **[!UICONTROL 可视化设置]** | 图表上方的选项允许您提出下一个问题，并自定义图表和表格返回数据的方式。以下选项在所有分析中均可用，并根据分析提供其他设置。 <ul><li>![GraphTrend](/help/assets/icons/GraphTrend.svg) **图表设置**：微调图表和表的显示内容。 可用选项取决于所选分析。</li><li>![图层](/help/assets/icons/Layer.svg) **叠加设置**：添加叠加。 可用选项取决于所选分析。</li><li>![存储桶](/help/assets/icons/Bucket.svg) **[!UICONTROL 存储桶设置]**：自动存储桶或应用自定义存储桶设置到数据。 可用选项取决于所选分析。<li>![DataCorrelated](/help/assets/icons/DataCorrelated.svg) **[!UICONTROL 比较设置]**：比较数据与特定日期范围。 可用选项取决于所选分析。</li><li>![脚步](/help/assets/icons/Footsteps.svg) **[!UICONTROL 显示设置]**：选择如何显示数据。 可用选项取决于所选分析。<li>![日历](/help/assets/icons/Calendar.svg) **日期范围**：允许您确定分析日期范围的日历选取器。 您还可以为趋势分析选择一个间隔，如每日、每周或每月。</li><li>![LightBulb](/help/assets/icons/LightBulb.svg) **Insights**：上下文分析取决于您查看的分析。 这些洞察为当前的分析提供了洞察结果。如果有多个洞察，您可以使用右侧的箭头查看它们。您可以使用右上角的灯泡图标切换此框的可见性。</li></ul> |
-| ![菜单](assets/menu.png){style="border:1px solid gray"} | 引导式分析项目中提供了&#x200B;**[!UICONTROL 菜单]**<br/> | 引导式分析项目右上角的命令，这些命令可为您的分析提供总体操作。<ul><li>![数据](/help/assets/icons/Data.svg) ***数据视图的名称***：更改分析使用的数据视图。 当您更改数据视图时，查询边栏中的可用组件也会更改。</li><li>![链接](/help/assets/icons/Link.svg) **复制链接**：将分析链接复制到剪贴板。 系统会提示您在共享之前进行保存。</li><li>**共享**：打开共享模式，其中包含用于共享给个人用户或群组的更多选项。您可以与其他用户分享分析，或生成链接与任何人分享。</li><li>**保存**：保存分析。如果您正在保存新分析，将出现&#x200B;**[!UICONTROL 保存分析]**&#x200B;对话框，其中请求提供名称和描述。 保存后，**[!UICONTROL 分析已保存]**&#x200B;对话框允许您共享分析。</li></ul>选择![更多](/help/assets/icons/More.svg)以获取更多操作，例如：<ul><li>**另存为**：将分析与当前分析分开保存，创建副本。将出现一个对话框，要求提供新的名称和说明。</li><li>**导出到Workspace**：在Analysis Workspace中重新创建当前的引导式分析查询。 Workspace 项目会在新选项卡中创建，以防止在引导式分析中出现中断。它是分析的副本，在打开后不会与原始分析保持同步。 当您想要移交给分析团队或深入了解分析所允许的数据时，请使用此命令。</li><li>**将图表复制到剪贴板**：将图表图形复制到剪贴板，以粘贴到其他应用程序中。 图形中不包含查询边栏和表格。</li><li>**下载 PNG**：将图表图形下载为  `.png`。图形中不包含查询边栏和表格。</li><li>**下载 CSV**：将表数据下载为  `.csv`。查询边栏和图表不包含在文件中。</li></ul> |
-| ![菜单可视化图表](assets/menu-visualization.png){style="border:1px solid gray"} | **菜单**<br/>&#x200B;在Analysis Workspace的引导式分析可视化图表中可用。 | Analysis Workspace中的引导式分析可视化图表中的命令。<ul><li>![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONTROL 图表]**：仅显示分析图表。</li><li>![表](/help/assets/icons/Table.svg) **[!UICONTROL 表]**：只显示分析的表。</li><li>![TableAndChart](/help/assets/icons/TableAndChart.svg) **[!UICONTROL All]**：显示分析的图表和表。</li><li>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**：编辑分析的配置</li><li>![日历](/help/assets/icons/Calendar.svg) **[!UICONTROL *日期范围&#x200B;*]**：配置分析的日期范围。</li></ul> |
+| ![查询边栏](assets/query-rail.png){style="border:1px solid gray"} | **[!UICONTROL 查询边栏]** | 通过选择构成分析的所需组件（事件、属性和区段）来配置您的&#x200B;*“问题”*。以下选项适用于所有分析，并且每个视图都可以使用其他设置。 <ul><li>**查看**：从选项中选择以切换到新的分析。您的查询选择将保持在新分析允许的范围内。</li><li>**活动**：您要测量的事件。每个分析对您可以配置的事件数量实施不同的限制。事件有时被标记为 **[!UICONTROL 开始和返回事件]**、**[!UICONTROL 步骤]**&#x200B;或 **[!UICONTROL 关键指标]**。在分析中使用 1、2、... 来识别事件<br/>选择 ![添加](/help/assets/icons/Add.svg) **[!UICONTROL 添加事件]** 来添加新事件。</li><li>**[!UICONTROL 因素]**：如果可用，允许您指定诸如自日期和首次事件等因素。</li><li>**计为**：要应用于所选事件的计数方法。从下拉菜单选择。</li><li>**区段**：您要测量的区段。每种分析对您可以配置的区段数量实施不同的限制。在分析中使用 A、B、... 来识别片段<br/>选择 ![添加](/help/assets/icons/Add.svg) **[!UICONTROL 添加片段]** 以添加新片段。</li><li>**[!UICONTROL 细分]**：如果可用，则为您想要应用于分析的细分。</li></ul>在某些设置上，可以进行额外的配置。<ul><li>**过滤器**：使用“事件”或“区段”部分中的![过滤器](assets/filter.png)按特定维度缩小范围。选择维度后，标准过滤条件（例如&#x200B;**[!UICONTROL 等于]**、**[!UICONTROL 包含]**&#x200B;或&#x200B;**[!UICONTROL 结束于]**）和前 1000 个维度值都可用。<br/>选择 ![过滤器](/help/assets/icons/Filter.svg) 以添加其他过滤器。<br/>选择 ![删除](/help/assets/icons/Remove.svg) 以删除过滤器。</li><li>**更多操作**：使用 ![更多](/help/assets/icons/More.svg) 选择操作，例如<ul><li>![重命名](/help/assets/icons/Rename.svg) **[!UICONTROL 重命名]**：重命名事件或片段。</li><li>![复制](/help/assets/icons/Duplicate.svg) **[!UICONTROL 复制]**：复制事件或片段。</li><li>![删除](/help/assets/icons/Delete.svg) **[!UICONTROL 移除]**：移除事件、片段或细分。</li><li>![编辑片段](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑片段]**：在 [过滤器生成器](/help/components/filters/filter-builder.md)中编辑片段。</li><li>![星号](/help/assets/icons/Star.svg) **[!UICONTROL 添加到收藏夹]**：将该片段添加到 [过滤器管理器](/help/components/filters/manage-filters.md)中的收藏过滤器列表。</li><li>![SaveAsFloppy](/help/assets/icons/SaveAsFloppy.svg) **[!UICONTROL 另存为]**：将该段保存为新组件。在 **[!UICONTROL 将段保存到组件]** 对话框中，您可以指定段名称和描述。您可以选择 ![StarOutline](/help/assets/icons/StarOutline.svg) 将新片段标记为收藏。选择 **[!UICONTROL 保存]** 将该片段保存为新过滤器。</li><li>![链接](/help/assets/icons/Link.svg) **[!UICONTROL 开始和返回事件]**。：在 [留存](types/retention.md) 分析中链接开始事件和返回事件。</li><li>![取消链接](/help/assets/icons/Unlink.svg) **[!UICONTROL 取消链接开始和返回事件]**：在 [留存](types/retention.md) 分析中取消链接开始和返回事件。</li></ul></li></ul> |
+| ![图表](assets/chart.png){style="border:1px solid gray"} | **[!UICONTROL 图表]** | 根据查询边栏和设置的输入返回的数据生成的可视化内容。您看到的可视化效果取决于图表上方的视图和设置。该图表还包括： <ul><li>**工具提示**：将鼠标悬停在任何图表数据点上可显示包含更多信息的工具提示。</li><li>**图例**：将鼠标悬停在图表图例系列上可查看可用的定义、关注该系列并暂时隐藏其他系列。选择图例中的一个系列以隐藏该系列。</li><li>**注释**：适用的[注释](../components/annotations/overview.md)在可视化和图例之间可见。它以注释的配置颜色显示为![注释图标](assets/annotation.png)图标。随时间显示数据的分析将![注释图标](assets/annotation.png)图标置于配置的日期或日期范围下。不随时间显示数据的分析在图表的右下角显示![注释图标](assets/annotation.png)图标。</li><li>**选择操作**：通过选择任何数据点来显示下一步可用操作。选项包括&#x200B;**保存区段**。</li></ul> |
+| ![表格](assets/table.png){style="border:1px solid gray"} | **[!UICONTROL 表]** | 根据查询边栏和设置的输入内容返回的数据的表格表示形式。表中的行使用事件（1、2、...）和段标识符（A、B、...）作为参考。表中的列取决于图表上方的分析。该表的每一行还包括： <ul><li>**选择操作**：切换 ![显示隐藏图标](assets/hide-in-chart.png) 以隐藏或显示某一行的图表系列。选择 ![更多](/help/assets/icons/More.svg) 以执行其他操作。选项包括&#x200B;**保存区段**。</li></ul> |
+| ![可视化设置](assets/visualization-settings.png){style="border:1px solid gray"} | **[!UICONTROL 可视化设置]** | 图表上方的选项允许您提出下一个问题，并自定义图表和表格返回数据的方式。以下选项适用于所有分析，并且每个分析都可以使用其他设置。 <ul><li>![GraphTrend](/help/assets/icons/GraphTrend.svg) **图表设置**：微调图表和表格的显示内容。可用选项取决于所选分析。</li><li>![图层](/help/assets/icons/Layer.svg) **叠加设置**：添加叠加。可用选项取决于所选分析。</li><li>![存储桶](/help/assets/icons/Bucket.svg) **[!UICONTROL 存储桶设置]**：自动存储桶或将自定义存储桶设置应用于数据。可用选项取决于所选分析。<li>![DataCorrelated](/help/assets/icons/DataCorrelated.svg) **[!UICONTROL 比较设置]**：将数据与特定日期范围进行比较。可用选项取决于所选分析。</li><li>![足迹](/help/assets/icons/Footsteps.svg) **[!UICONTROL 显示设置]**：选择如何显示数据。可用选项取决于所选分析。<li>![日程表](/help/assets/icons/Calendar.svg) **日期范围**：用于确定分析的日期范围的日程表选择器。您还可以选择趋势分析的时间间隔，例如每日、每周或每月。</li><li>![LightBulb](/help/assets/icons/LightBulb.svg) **Insights**：上下文的洞察取决于您查看的分析。这些洞察为当前的分析提供了洞察结果。如果有多个洞察，您可以使用右侧的箭头查看它们。您可以使用右上角的灯泡图标切换此框的可见性。</li></ul> |
+| ![菜单](assets/menu.png){style="border:1px solid gray"} | **[!UICONTROL 菜单]**<br/>可在引导分析项目中使用 | 引导分析项目右上角的命令为您的分析提供总体操作。<ul><li>![数据](/help/assets/icons/Data.svg) ***数据视图名称***：更改分析使用的数据视图。当您更改数据视图时，查询边栏中的可用组件也会更改。</li><li>![链接](/help/assets/icons/Link.svg) **复制链接**：将分析链接复制到剪贴板。系统会提示您在共享之前进行保存。</li><li>**共享**：打开共享模式，其中包含用于共享给个人用户或群组的更多选项。您可以与其他用户分享分析，或生成链接与任何人分享。</li><li>**保存**：保存分析。如果您要保存新的分析，则会出现&#x200B;**[!UICONTROL 保存分析]**&#x200B;对话框，要求输入名称和描述。保存后，您可以通过 **[!UICONTROL 已保存分析]** 对话框分享您的分析。</li></ul>选择 ![更多](/help/assets/icons/More.svg) 以进行更多操作，例如：<ul><li>**另存为**：将分析与当前分析分开保存，创建副本。将会出现一个对话框，要求输入新名称和描述。</li><li>**导出至 Workspace**：在 Analysis Workspace 中重新创建当前的引导式分析查询。Workspace 项目会在新选项卡中创建，以防止在引导式分析中出现中断。它是分析的副本，打开后不会与原始分析保持同步。当您想要交给分析团队，或者深入研究超出分析范围的数据时，请使用此命令。</li><li>**复制到剪贴板**：将图表图形复制到剪贴板，以便粘贴到其他的应用程序中。图形中不包含查询边栏和表格。</li><li>**下载 PNG**：将图表图形下载为  `.png`。图形中不包含查询边栏和表格。</li><li>**下载 CSV**：将表数据下载为  `.csv`。查询边栏和图表不包含在文件中。</li></ul> |
+| ![菜单可视化](assets/menu-visualization.png){style="border:1px solid gray"} | **菜单**<br/>&#x200B;可在分析工作区的引导分析可视化中使用。 | 分析工作区中引导分析可视化中的命令。<ul><li>![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONTROL Chart]**：仅显示分析的图表。</li><li>![表格](/help/assets/icons/Table.svg) **[!UICONTROL 表格]**：仅显示分析的表格。</li><li>![TableAndChart](/help/assets/icons/TableAndChart.svg) **[!UICONTROL 所有的]**：显示分析的图表和表格。</li><li>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**：编辑分析的配置</li><li>![日历](/help/assets/icons/Calendar.svg) **[!UICONTROL *日期范围&#x200B;*]**：配置分析的日期范围。</li></ul> |
 
 
 ## 设置
@@ -90,7 +90,7 @@ ht-degree: 47%
 
 {style="table-layout:auto"}
 
-产品配置文件管理员可以在Adobe Admin Console中添加或删除对引导式分析的访问权限。
+产品轮廓管理员可以在 Adobe Admin Console 中添加或删除对引导式分析的访问权限。
 
 1. 登录到 [Adobe Admin Console](https://adminconsole.adobe.com)。
 1. 在产品列表中选择 **[!UICONTROL Customer Journey Analytics]**。

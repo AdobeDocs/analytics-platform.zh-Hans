@@ -5,9 +5,9 @@ feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
 source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '872'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ ht-degree: 94%
    | **[!UICONTROL 标题]** ![Required](/help/assets/icons/Required.svg) | 对该注释进行命名，例如 `Needs further investigation`。 |
    | **[!UICONTROL 描述]** | 提供对该注释的描述，例如 `We never expected such a fluctuation in numbers.`。 |
    | **[!UICONTROL 标记]** | 通过创建或应用一个或多个标记来组织注释。开始键入，以查找您可以选择的现有标记。或者按&#x200B;**[!UICONTROL 输入]**&#x200B;键添加新的标记。选择 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 以移除标记。 |
-   | **[!UICONTROL 应用日期]** ![Required](/help/assets/icons/Required.svg) | 选择为了让注释可见所需的日期或日期范围。使用快捷方式创建批注时，批注默认为仅包含一天的日期范围。 使用可视化图表中的选定内容创建批注时，批注会根据可视化图表所属面板中的日期范围默认为日期范围。 |
+   | **[!UICONTROL 应用日期]** ![Required](/help/assets/icons/Required.svg) | 选择为了让注释可见所需的日期或日期范围。当您使用快捷方式创建注释时，注释默认为当天的日期范围。当您使用可视化中的选择创建注释时，注释默认为基于可视化所属面板的日期范围的日期范围。 |
    | **[!UICONTROL 颜色]** | 将颜色应用于注释。注释以选定的颜色出现在项目中。颜色可用于对注释进行分类，例如公共假日、外部活动、跟踪问题等。 |
    | **[!UICONTROL 范围]** | 从组件面板中拖放触发注释的量度。例如人物、会话和事件。然后从组件面板中拖放任何用作过滤器的维度或过滤器，以确定是否显示注释。如果不指定范围，则注释会应用于您的所有数据。<br/>您有两个选项：<ul><li>**[!UICONTROL 存在以下任一量度]**：拖放最多 10 个会触发注释显示的量度。<br/>例如，收入量度已停止收集特定日期范围内的数据。将收入量度拖到此框中。</li><li>**[!UICONTROL 使用所有这些过滤条件]**：拖放最多 10 个过滤注释是否显示的维度或过滤器。</li></ul><p><p>**请注意：**&#x200B;任何应用于组件、随后用作计算量度或过滤器定义的一部分的注释，均不会自动继承注释。还必须将所需的计算量度添加到范围部分才能显示注释。但是，应为要用相同信息进行注释的任何过滤器创建新的注释。例如，您在某一天的[!UICONTROL 订单]中应用注释。然后，在相同日期范围的某个计算量度中使用[!UICONTROL 订单]。新的计算量度不会自动显示订单的注释。还要将计算量度添加到范围部分才能显示注释。 |
    | **[!UICONTROL 应用于所有数据视图]** | 默认情况下，注释应用于原始数据视图。通过选中此框，您可以在公司内的所有数据视图中应用注释。 |

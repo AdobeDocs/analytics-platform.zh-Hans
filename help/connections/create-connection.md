@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3747'
 ht-degree: 100%
 
@@ -135,7 +135,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_primaryID"
->title="主要 ID"
+>title="主 ID"
 >abstract="为您的连接选择正确的主要 ID：B2C 场景的人员。B2B 场景帐户。"
 
 <!-- markdownlint-enable MD034 -->
@@ -155,7 +155,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja_connection_personID"
 >title="人员 ID"
->abstract="在 Experience Platform 的数据集架构中定义的可用标识中选择一个人员 ID。"
+>abstract="在 Experience Platform 中，从在数据集架构中定义的可用身份中选择人员 ID。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -243,7 +243,7 @@ ht-degree: 100%
 
    对于每个数据集，列表显示：
 
-   | 栏目 | 描述 |
+   | 列 | 描述 |
    |---|---|
    | 数据集 | 数据集的名称。选择名称即可将您定向到 Experience Platform 中的数据集。选择 ![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) 以显示一个包含数据集更多详细信息的弹出窗口。您可以选择 **[!UICONTROL 在平台中编辑]** 以直接在 Experience Platform 中编辑数据集。 |
    | 数据集类型 | 数据集的类型：事件、轮廓、查找或摘要。 |
@@ -269,7 +269,7 @@ ht-degree: 100%
 
    | 设置 | 描述 |
    | --- | --- |
-   | **[!UICONTROL 人员 ID]** | 仅适用于事件和配置文件数据集。从可用标识的下拉列表中选择人员 ID。这些标识已在 Experience Platform 的数据集架构中定义。有关如何将标识映射用作人员 ID 的信息，请参见下文。<p>如果没有可供选择的人员 ID，则意味着架构中尚未定义一个或多个人员 ID。请参阅 [在 UI 中定义标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity) 以了解更多信息。 <p>所选人员 ID 的值区分大小写。例如，`abc123` 和 `ABC123` 是两个不同的值。 |
+   | **[!UICONTROL 人员 ID]** | 仅适用于事件和配置文件数据集。从可用标识的下拉列表中选择人员 ID。这些标识已在 Experience Platform 的数据集架构中定义。有关如何将标识映射用作人员 ID 的信息，请参见下文。<p>如果没有可供选择的人员 ID，则意味着架构中尚未定义一个或多个人员 ID。请参阅[在 UI 中定义标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)以了解更多信息。 <p>所选人员 ID 的值区分大小写。例如，`abc123` 和 `ABC123` 是两个不同的值。 |
    | **[!UICONTROL 时间戳]** | 仅对事件和摘要数据集，此设置会自动设置为 Experience Platform 中基于事件的模式的默认时间戳字段。 |
    | **[!UICONTROL 键]** | 仅适用于查找数据集。用于查找数据集的键。 |
    | **[!UICONTROL 匹配键]** | 仅适用于查找数据集。某个事件数据集中要按其连接在一起的匹配键。如果此列表为空，则可能尚未添加或配置事件数据集。 |

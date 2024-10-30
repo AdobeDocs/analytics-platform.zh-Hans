@@ -7,9 +7,9 @@ exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
 source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1479'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Analysis Workspace 的主要功能可通过按钮面板使用：
 
 | 图标 | 功能 | 描述 |
 |:---:|---|---|
-| ![WebPage](/help/assets/icons/WebPage.svg) | **[!UICONTROL 面板]** | [“面板”](/help/analysis-workspace/c-panels/panels.md)可以包含许多表格和可视化内容，用于在项目中对分析进行组织和整理。Analysis Workspace 中提供的许多面板都可以基于一些用户输入来生成整套分析。 |
+| ![WebPage](/help/assets/icons/WebPage.svg) | **[!UICONTROL 面板]** | [面板](/help/analysis-workspace/c-panels/panels.md)可以包含许多表格和可视化内容，用于在项目中对分析进行组织和整理。Analysis Workspace 中提供的许多面板都可以基于一些用户输入来生成整套分析。 |
 | ![Guided Analysis](/help/assets/icons/GuidedAnalysis.svg) | **[!UICONTROL 引导式分析]** | [引导式分析](../guided-analysis/overview.md)允许您通过引导式工作流自助获取有关客户历程的高质量数据和洞察。您可以创建一个分析，以将其纳入您的 Workspace 项目中，或包含之前保存的现有分析。 |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | **[!UICONTROL 可视化内容]** | [可视化内容](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)（例如条形图或折线图）可用于直观地呈现数据。在最左侧面板中，选择中间的&#x200B;**[!UICONTROL 可视化内容]**&#x200B;图标可查看所有可用的可视化内容。 |
 | ![Curate](/help/assets/icons/Curate.svg) | **[!UICONTROL 组件]** | [组件](/help/components/overview.md)包括以下元素：<ul><li>![Dimensions](/help/assets/icons/Dimensions.svg) [维度](/help/components/dimensions/overview.md)</li><li>![Event](/help/assets/icons/Event.svg) [量度](/help/components/apply-create-metrics.md)</li><li>![Segmentation](/help/assets/icons/Segmentation.svg) [筛选](/help/components/filters/filters-overview.md)</li><li>![Calendar](/help/assets/icons/Calendar.svg) [日期范围](/help/components/date-ranges/overview.md)</li></ul> |
@@ -133,7 +133,7 @@ Analysis Workspace 的大部分功能可通过拖放以及面板、可视化内�
 | **[!UICONTROL 启用调试器]** |  | | 启用调试器。您的项目将重新加载。 |
 | **[!UICONTROL 禁用调试器]** | | | 禁用调试器。您的项目将重新加载。 |
 | **[!UICONTROL 绩效]** | | | 显示一个对话框，其中显示有关 **[!UICONTROL Analysis Workspace 绩效]**&#x200B;的量度。使用&#x200B;**[!UICONTROL 下载为 CSV]**&#x200B;以下载绩效量度的 CSV 文件。 |
-| **[!UICONTROL 关于 Workspace]** | | | 显示&#x200B;**[!UICONTROL 关于 Analysis Workspace]**&#x200B;对话框，其中包含版本信息、功能访问级别和活动功能标志。 |
+| **[!UICONTROL 关于 Workspace]** | | | 显示 **[!UICONTROL 关于 Analysis Workspace]** 对话框，其中包含版本信息、功能访问级别和活动功能标志。 |
 
 ## 数据源
 
