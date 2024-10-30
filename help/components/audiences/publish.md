@@ -4,9 +4,9 @@ description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
+source-git-commit: 126d2213b97b71ff3116ff53e56217b8b6e7a479
 workflow-type: tm+mt
-source-wordcount: '1948'
+source-wordcount: '1973'
 ht-degree: 18%
 
 ---
@@ -126,7 +126,7 @@ ht-degree: 18%
 
 * Platform中的受众与Customer Journey Analytics受众共享相同的名称和描述。 该名称将附加有Customer Journey Analytics的受众ID，以确保受众是唯一的。
 * 对Customer Journey Analytics中的受众名称或描述所做的任何更改都会反映在Experience Platform中。
-* 如果在Customer Journey Analytics中删除了某个受众，则该受众将继续在Experience Platform中可用。
+* 如果在Customer Journey Analytics中删除了某个受众，则该受众将继续在Experience Platform中可用，直到受众的个人资料成员资格过期为止。 对于一次性受众，配置文件成员资格将在420天后过期，对于定期受众，配置文件成员资格将在16天后过期。
 
 ## 延迟注意事项 {#latency}
 
