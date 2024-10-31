@@ -4,9 +4,9 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: fc3aee031808d7a6c12ed2a2cbcad8f7ae6caa82
+source-git-commit: 8ff3a1c874a0eb67e4b7a6edda6156c4d07edc9f
 workflow-type: tm+mt
-source-wordcount: '4138'
+source-wordcount: '4173'
 ht-degree: 69%
 
 ---
@@ -20,7 +20,8 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2024 年 10 月** | |
-| 有关Analysis Workspace性能中的请求因素的新信息 | [优化Analysis Workspace性能](/help/technotes/optimizing-performance.md)文章中新增的[请求因子](/help/technotes/optimizing-performance.md#request-factors)部分介绍了如何处理请求以及影响处理时间的各种因素。 |
+| 共享设备 | 添加了一篇用例文章，其中提供了有关共享设备的上下文、如何使用拼合处理和缓解共享设备中的数据，以及使用查询服务了解数据中的共享设备暴露情况。 |
+| 有关 Analysis Workspace 性能中的请求因素的新信息 | [优化 Analysis Workspace 性能](/help/technotes/optimizing-performance.md)文章中新增的[请求因素](/help/technotes/optimizing-performance.md#request-factors)部分介绍了如何处理请求以及影响处理时间的各种因素。 |
 | Workspace和组件 | 刷新了有关Analysis Workspace项目（项目、可视化和面板）和组件(注释、维度、（计算）量度、过滤器、日期范围、警报、计划项目和受众)的文档。 |
 | 引导式分析 | 更新了相关文档，以提供Analysis Workspace中的[引导式分析](/help/guided-analysis/overview.md)。 |
 | **2024 年 9 月** | |
@@ -114,7 +115,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | **2023 年 6 月** | |
 | 跨渠道分析和拼合 | 为了预测即将进行的更改，以支持拼合并进一步阐明如何使用拼合提升跨渠道分析，我们编辑了与跨渠道分析功能相关的文档，将[跨渠道分析](../use-cases/cross-channel/cross-channel.md)称作 Customer Journey Analytics 功能和用例，并将[拼合](../stitching/overview.md)作为实现此目的的重要功能。 |
 | PowerBI 和 Tableau 访问 Customer Journey Analytics 数据视图 | Customer Journey AnalyticsBI扩展允许SQL访问您在Customer Journey Analytics中定义的数据视图。 [了解详情](/help/data-views/bi-extension.md) |
-| Adobe Journey Optimizer 数据视图 | Customer Journey Analytics 管理员有权访问 Customer Journey Analytics 中某些名为“AJO 数据视图（沙盒名称）”的额外数据视图。[了解详情](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channel-report/reporting-configuration)。 |
+| Adobe Journey Optimizer 数据视图 | Customer Journey Analytics 管理员有权访问 Customer Journey Analytics 中某些名为“AJO 数据视图（沙盒名称）”的额外数据视图。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/channel-report/reporting-configuration)。 |
 | 货币换算 | 更新了有关[货币换算](../data-views/component-settings/format.md#currency)支持的文档。 |
 | 计算量度更新 | 对计算量度文档作出了以下更新，以使其与当前的 Customer Journey Analytics 功能保持一致： <ul><li>更新了 Customer Journey Analytics 中提供的[默认计算量度](/help/components/calc-metrics/default-calcmetrics.md)的列表</li><li>更新了各种计算指标文章中的屏幕截图和过程 </li></ul> |
 | **2023 年 5 月** | |

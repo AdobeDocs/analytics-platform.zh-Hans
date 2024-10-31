@@ -3,13 +3,11 @@ title: 共享设备
 description: 说明如何使用拼合和其他技术处理共享设备。
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-hide: true
-hidefromtoc: true
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
-source-git-commit: c0dae5f1255a986df5ab2551aabdf1bd0727e949
+source-git-commit: 81d1c6abbda63c4ac8cdcc96d1b730974b137ad9
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '659'
 ht-degree: 6%
 
 ---
@@ -67,7 +65,7 @@ The order success (purchase) events assign the data accurately to the correct em
 
 ### 设备拆分
 
-设备拆分将来自共享设备的匿名活动归因于最接近匿名活动的用户。 设备拆分是分析用例的首选方法，因为设备拆分将未经身份验证和经过身份验证的活动的点数都授予最接近的已知人员。 设备拆分当前用于基于字段的拼合。
+设备拆分将来自共享设备的匿名活动归因于最接近匿名活动的用户。 设备拆分当前用于基于字段的拼合。
 
 在拼合中使用设备拆分归因时，拼合ID会解析，如下表所示。
 
