@@ -5,40 +5,85 @@ role: User, Admin
 solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
-source-git-commit: 70bd42d7974f1b65f3d77474a3ae8d62009cdfc7
+source-git-commit: 1442aa9be5e6a6dc283ba559a2ff6c46de862425
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 1%
+source-wordcount: '852'
+ht-degree: 3%
 
 ---
 
 
 # Customer Journey Analytics中的数据分析AI助手 — Alpha
 
-Data Analysis AI Assistant是一个智能的上下文感知会话代理，可帮助您更快、更高效地回答Customer Journey Analytics中有关Analysis Workspace数据的问题。 该助手会查看数据视图中的所有数据，包括不同类型的量度和组件，并将您的提示转换为此分析的正确维度、量度和日期范围。 您无需熟悉数据视图组件，然后以最佳组合拖放这些组件来回答您的问题，只需在AI助手中键入问题即可。
+Data Analysis AI Assistant是一个智能的上下文感知会话代理，可帮助您更快、更高效地回答Customer Journey Analytics中有关Analysis Workspace数据的问题。
+
+该助手会查看数据视图中的所有数据，包括不同类型的量度和组件，并将您的提示转换为此分析的正确维度、量度和日期范围。 您无需熟悉数据视图组件，然后以最佳组合拖放这些组件来回答您的问题，只需在AI助手中键入问题即可。
 
 ## Alpha版本的作用域内与作用域外功能
 
-包含的功能：
+范围内的功能：
 
-- 构建和更新可视化图表
-- 折线图、多行、自由格式、条形图、圆环图、摘要数字可视化图表
-- 范围外提示检测
-- 为宽泛的用户提示（例如上个月的网站访问）澄清问题
-- 多圈 — 响应来自先前提示的上下文
-- 反馈
+| 支持的功能 | 描述 |
+| --- | --- |
+| 构建和更新可视化图表 | 生成自由格式表和相关的可视化图表（例如折线图、条形图、圆环图等）。<p>示例：*从2月到5月，跨SKU的利润是多少？* |
+| 支持的可视化图表类型 | 折线图、多行、自由格式、条形图、圆环图、摘要数字可视化图表 |
+| 范围外提示检测 | 如果提交超出范围的提示（如“导出此项目”），助理将通过告知您问题超出范围来进行响应。 |
+| 澄清问题 | 如果您提出的问题，没有足够上下文可供AI助手回答或过于宽泛，则AI助手会用一个澄清问题和/或建议的选项进行响应。 示例： <p>**组件**<ul><li>量度：*您指的是哪个“收入”量度？*</li><li>Dimension： *您要关注以下“地区”中的哪一个？*</li><li>筛选器：*您要应用哪个“帐户”筛选器？*</li><li>日期范围： *对于“上个月”，您是指“上个月”还是“最近30天”？*</li></ul>**Dimension项目**：您指的是哪个“商店名称”？ (例如，Store #5274、Store #2949等) |
+| 多圈 | AI Assistant使用上一个提示的上下文对提示进行响应，允许用户更新可视化并询问后续问题。 示例：*改为向我显示从3月到4月的数据。* |
+| 反馈 | <ul><li>竖起大拇指</li><li>拇指朝下</li><li>标志</li></ul> |
 
 超出范围的功能：
 
-
+| 不支持的功能 | 描述 |
+| --- | --- |
+| 内联摘要或响应 | AI助手无法在聊天边栏中以用户提示的摘要答案进行内联响应。范围外提示示例：<ul><li>*给我上一个提示的见解摘要。*</li><li>*从折线图可视化图表摘要突出显示内容。*</li></ul> |
+| 澄清问题 | 澄清问题仅限于组件和维度项目。 AI Assistant无法阐明数据视图、可视化图表、数据粒度、比较、范围等。 如果不澄清问题，助理将默认使用用户最可能要求的内容。 如果它返回意外的可视化或数据粒度，则用户可以使用多圈/更新功能来调整可视化图表和数据。 |
+| Workspace操作/功能 | 除了构建和更新可视化图表之外，AI助手无法为Workspace中的用户执行操作。 例如，它不能执行以下任何操作：<ul><li>上下文操作UI按钮（添加到图表、新面板、新表）</li><li>共享</li><li>导出</li><li>下载</li><li>管理用户首选项</li><li>策划</li><li>管理数据视图</li><li>Analytics功能板应用程序</li><li>归因</li></ul> |
+| 不支持的可视化图表类型 | <ul><li>流量</li><li>流失</li><li>同类群组表</li><li>面积图，栈叠的面积图</li><li>堆叠的条形图</li><li>项目符号</li><li>组合</li><li>直方图</li><li>水平条形图、栈叠的水平条形图</li><li>关键量度摘要</li><li>散点图</li><li>概要变化</li><li>文本</li><li>树状图</li><li>维恩图</li></ul> |
+| 解释性和可验证性 | 对AI助手如何生成响应的透明描述或引用，并为您提供一种确认答案是否正确的方法。 |
 
 ## Customer Journey AnalyticsUI中的功能访问
 
-待定
+[Alpha是否需要此分区？]
+
+以下参数控制对数据分析AI助手功能的访问：
+
+* **解决方案访问**： Data Analysis AI Assistant可供Analysis Prime和Ultimate客户使用Customer Journey Analytics。 在Adobe Analytics中不可用。
+
+Adobe Experience Platform、Adobe Journey Optimizer、Adobe Real-Time CDP及其他Experience Platform应用程序中也提供了此功能。
+
+* **合同访问权限**：如果您无法使用AI助手，请联系您组织的管理员或Adobe客户代表。 在您的组织能够使用Data Analysis AI Assistant之前，您必须同意某些与GenAI相关的法律条款。
+
+* **权限**：在[!UICONTROL Adobe Admin Console]中，[!UICONTROL 报表工具] **[!UICONTROL AI Assistant：数据分析]**&#x200B;权限确定对此工具的访问权限。 [产品配置文件管理员](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)需要在[!UICONTROL Admin Console]中执行这些步骤：
+   1. 导航到&#x200B;**[!UICONTROL Admin Console]** > **[!UICONTROL 产品和服务]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL 产品配置文件]**
+   1. 选择要为其提供[!UICONTROL AI助手：产品知识]访问权限的产品配置文件的标题。
+   1. 在特定产品配置文件中，选择&#x200B;**[!UICONTROL 权限]**。
+   1. 选择![编辑](/help/assets/icons/Edit.svg)以编辑&#x200B;**[!UICONTROL 报告工具]**。
+   1. 选择![AddCircle](/help/assets/icons/AddCircle.svg)以将&#x200B;**AI助手：数据分析**&#x200B;添加到&#x200B;**[!UICONTROL 包含的权限项]**。
+
+      ![添加权限](assets/ai-assistant-permissions.png)。
+
+   1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存权限。
+
+有关详细信息，请参阅[访问控制](/help/technotes/access-control.md#access-control)。
+
+## 访问数据分析AI助手
+
+
+
+
+## 使用数据分析AI助手
+
+1. 在Customer Journey Analytics中，导航到已设置的沙盒。
+
+1. 打开Workspace项目。
+
 
 ## 示例数据分析提示
 
-以下是AI助手如何响应提示的一些示例：
+以下是AI助手如何响应提示的一些示例以及预期的可视化：
+
+
 
 ## 提示最佳实践
 
