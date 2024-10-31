@@ -7,12 +7,12 @@ exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
 source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '536'
+ht-degree: 7%
 
 ---
 
-# [!UICONTROL 转化趋势]分析 {#conversion-trends}
+# [!UICONTROL 转化趋势] 分析 {#conversion-trends}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 * **[!UICONTROL 视图]**：在此分析和[漏斗](funnel.md)之间切换。
 * **[!UICONTROL 步骤]**：要跟踪的事件接触点。 图表中的每个条形表示一个步骤。 您最多可以包含十个步骤。
-* **[!UICONTROL 计为]**：要应用于选定事件的计数方法。 选项包括[!UICONTROL 用户]和[!UICONTROL 会话]。
+* **[!UICONTROL 计为]**：要应用于所选事件的计数方法。选项包括[!UICONTROL 用户]和[!UICONTROL 会话]。
 * **[!UICONTROL 区段]**：要与其比较漏斗的区段。 所选的每个区段会将每个步骤拆分为多个条。 每种颜色代表不同的区段。 您最多可以包含三个区段。
 
 ### 图表设置

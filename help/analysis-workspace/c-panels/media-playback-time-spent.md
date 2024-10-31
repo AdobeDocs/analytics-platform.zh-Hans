@@ -7,11 +7,11 @@ role: User
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 54%
+ht-degree: 56%
 
 ---
 
-# 媒体播放耗时面板 {#media-playback-time-spent-panel}
+# “媒体播放耗时”面板 {#media-playback-time-spent-panel}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -65,7 +65,7 @@ ht-degree: 54%
 
 1. 确保为面板选择数据视图，该面板具有从流媒体收集加载项配置的组件。
 
-1. 为面板指定[输入](#panel-input)。
+1. 指定面板的[输入](#panel-input)。
 
 1. 观察面板的[输出](#panel-output)。
 
@@ -118,7 +118,7 @@ ht-degree: 54%
 
 >[!MORELIKETHIS]
 >
->[创建面板](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+>[Create a panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
 >[“媒体平均受众访问分钟数”面板](average-minute-audience-panel.md)
 >[媒体并行查看者面板](media-concurrent-viewers.md)
 >

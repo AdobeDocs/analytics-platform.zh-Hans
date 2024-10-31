@@ -7,12 +7,12 @@ keywords: 产品分析
 role: User
 source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '781'
+ht-degree: 6%
 
 ---
 
-# [!UICONTROL 趋势]分析 {#trends}
+# [!UICONTROL 趋势] 分析 {#trends}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 * **[!UICONTROL 视图]**：在此分析和[频率](frequency.md)之间切换。
 * **[!UICONTROL 事件和量度]**：要测量的事件或量度。 每个选择都表示为图表系列和表格行。 无法在查询中组合事件和量度；一旦您进行了第一次选择，其余查询选择必须属于同一类型。 您最多可以包括5个选项。
-* **[!UICONTROL 计为]**：要应用于选定事件的计数方法。 选项包括事件、会话、用户、用户百分比、每个会话的事件和每个用户的事件。 计为选项仅适用于事件查询，因量度查询而被删除。
+* **[!UICONTROL 计为]**：要应用于所选事件的计数方法。选项包括事件、会话、用户、用户百分比、每个会话的事件和每个用户的事件。 计为选项仅适用于事件查询，因量度查询而被删除。
 * **[!UICONTROL 区段]**：您要测量的区段。每个选定区段都会使图表系列和表行的数量加倍。 您最多可以包含五个区段。
 * **[!UICONTROL 划分属性]**：按选定属性的值划分图表系列和表行。 支持单个划分属性。 表中显示前20个值，最多可以在图表中查看10个值。 通过切换![显示隐藏图标](../assets/hide-in-chart.png)图标，可以隐藏或显示图表中的行。
 

@@ -61,7 +61,7 @@ ht-degree: 23%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_metric_format_currencyconversion"
 >title="货币换算"
->abstract="选择货币代码维度以配置和显示所选货币类型的货币。"
+>abstract="选择货币代码维度来配置和显示所选货币类型的货币。"
 
 <!-- markdownlint-enable MD034 -->
 

@@ -7,7 +7,7 @@ exl-id: 160021f1-6942-4682-9114-d375307d9912
 source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
 source-wordcount: '1450'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -37,15 +37,15 @@ ht-degree: 6%
 
 >[!ENDTABS]
 
-1. 指定以下详细信息（![必需](/help/assets/icons/Required.svg)为必需）：
+1. 指定以下详细信息（![Required](/help/assets/icons/Required.svg)为必要项）：
 
    | 元素 | 描述 |
    | --- | --- |
    | **[!UICONTROL 数据视图]** | 您可以为筛选器选择数据视图。  您定义的筛选器可在数据视图的[设置](/help/data-views/create-dataview.md#settings-filters)选项卡中作为筛选器使用。 |
    | **[!UICONTROL 仅用于项目的筛选器]** | 一个信息框，用于说明该过滤器仅在创建它的项目中可见，并且不会添加到组件列表中。 启用&#x200B;**[!UICONTROL 使此筛选器对所有项目都可用，并将其添加到组件列表]**&#x200B;以更改该设置。 仅当您使用[!UICONTROL 快速筛选器]界面中的&#x200B;**[!UICONTROL 打开生成器]**&#x200B;创建[快速筛选器](quick-filters.md)并将快速筛选器信息转换为常规筛选器时，此信息框才可见。 |
-   | **[!UICONTROL 标题]** ![必填](/help/assets/icons/Required.svg) | 为筛选器命名，例如`Last month mobile customers`。 |
+   | **[!UICONTROL 标题]** ![Required](/help/assets/icons/Required.svg) | 为筛选器命名，例如`Last month mobile customers`。 |
    | **[!UICONTROL 描述]** | 提供筛选器的描述，例如`Filter to define the mobile customers for the last month`。 |
-   | **[!UICONTROL 标记]** | 通过创建或应用一个或多个标记来组织过滤器。 开始键入以查找您可以选择的现有标记。 或按&#x200B;**[!UICONTROL ENTER]**&#x200B;添加新标记。 选择![CrossSize75](/help/assets/icons/CrossSize75.svg)以删除标记。 |
+   | **[!UICONTROL 标记]** | 通过创建或应用一个或多个标记来组织过滤器。 开始键入，以查找您可以选择的现有标记。或按&#x200B;**[!UICONTROL ENTER]**&#x200B;添加新标记。 选择 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 以移除标记。 |
    | **[!UICONTROL 定义]** ![必需](/help/assets/icons/Required.svg) | 使用[定义生成器](#definition-builder)定义您的筛选器。 |
 
    {style="table-layout:auto"}

@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 44%
+ht-degree: 49%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 44%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_attribution_panel"
 >title="归因面板"
->abstract="使用任意维度和转化指标，快速比较和可视化任意数量的归因模型。<br/><br/>**参数&#x200B;**<br/>**渠道**<br/>&#x200B;归因的对比维度。该维度可以是营销渠道、营销活动或任何其他维度。<br/>**模型**<br/>&#x200B;该模型可以确定如何将点数分配给各个接触点。<br/>**回顾窗口**<br/>&#x200B;此设置可以确定应用于每次转化的数据归因窗口。"
+>abstract="使用任意维度和转化量度，快速比较并可视化任意数量的归因模型。<br/><br/>**参数&#x200B;**<br/>**渠道**<br/>&#x200B;归因的对比维度。该维度可以是营销渠道、营销活动或任何其他维度。<br/>**模型**<br/>&#x200B;该模型可以确定如何将点数分配给各个接触点。<br/>**回顾窗口**<br/>&#x200B;此设置可以确定应用于每次转化的数据归因窗口。"
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ 面板"
 
 <!-- markdownlint-enable MD034 -->
@@ -49,7 +49,7 @@ Customer Journey Analytics 通过让您能够执行以下操作来增强归因�
 
 1. 创建&#x200B;**[!UICONTROL 归因]**&#x200B;面板。 有关如何创建面板的信息，请参阅[创建面板](panels.md#create-a-panel)。
 
-1. 为面板指定[输入](#panel-input)。
+1. 指定面板的[输入](#panel-input)。
 
 1. 观察面板的[输出](#panel-output)。
 
@@ -93,5 +93,5 @@ Customer Journey Analytics 通过让您能够执行以下操作来增强归因�
 
 >[!MORELIKETHIS]
 >
-> [创建面板](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+> [Create a panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
 >

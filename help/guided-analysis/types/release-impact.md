@@ -7,12 +7,12 @@ exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
 source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '530'
+ht-degree: 10%
 
 ---
 
-# [!UICONTROL 版本影响]分析 {#release-impact}
+# [!UICONTROL 发布影响] 分析 {#release-impact}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 * **[!UICONTROL 视图]**：在此分析和[首次使用影响](first-use-impact.md)之间切换。
 * **[!UICONTROL 关键指示器]**：每个用户要测量的事件。 每个所选关键指示符用彩色线条表示。 表示该事件的行将添加到表中。 您最多可以包含三个事件。
-* **[!UICONTROL 计为]**：要应用于选定事件的计数方法。 选项包括每个用户的[!UICONTROL 事件]、[!UICONTROL 用户百分比]、[!UICONTROL 事件]、[!UICONTROL 会话]和[!UICONTROL 用户]。
+* **[!UICONTROL 计为]**：要应用于所选事件的计数方法。选项包括每个用户的[!UICONTROL 事件]、[!UICONTROL 用户百分比]、[!UICONTROL 事件]、[!UICONTROL 会话]和[!UICONTROL 用户]。
 * **[!UICONTROL 因素]**：您要在前后比较的日期。
 * **[!UICONTROL 区段]**：要测量的区段。 所选区段会过滤您的数据，以仅关注符合您的区段标准的个人。
 

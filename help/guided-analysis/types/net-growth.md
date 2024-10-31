@@ -7,12 +7,12 @@ exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
 source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '676'
+ht-degree: 6%
 
 ---
 
-# [!UICONTROL 净增长]分析 {#net-growth}
+# [!UICONTROL 净增长] 分析 {#net-growth}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 * **[!UICONTROL 视图]**：在此分析和[活动增长](active-growth.md)之间切换。
 * **[!UICONTROL 事件]**：要测量的事件。 由于此分析基于用户，因此在该时段内与事件交互一次的用户将被计为活动用户。 您可以在查询中包含一个事件。
-* **[!UICONTROL 计为]**：要应用于选定事件的计数方法。 选项包括[!UICONTROL 用户数]和[!UICONTROL 用户百分比]。
+* **[!UICONTROL 计为]**：要应用于所选事件的计数方法。选项包括[!UICONTROL 用户数]和[!UICONTROL 用户百分比]。
 * **[!UICONTROL 区段]**：要测量的区段。 您可以在查询中包含一个区段。
 
 ### 时间比较

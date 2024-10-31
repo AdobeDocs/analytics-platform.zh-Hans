@@ -1,5 +1,5 @@
 ---
-title: 维系率分析
+title: 留存分析
 description: 衡量有多少用户继续使用您的产品。
 feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
@@ -7,12 +7,12 @@ exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
 source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1259'
+ht-degree: 3%
 
 ---
 
-# 维系率分析 {#retention}
+# 留存分析 {#retention}
 
 <!-- markdownlint-disable MD034 -->
 
