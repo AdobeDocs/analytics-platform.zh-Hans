@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
-source-git-commit: 1442aa9be5e6a6dc283ba559a2ff6c46de862425
+source-git-commit: e723339831bf835b43096affd4e0f15f41462f54
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 3%
+source-wordcount: '1058'
+ht-degree: 4%
 
 ---
 
@@ -37,7 +37,7 @@ Data Analysis AI Assistant是一个智能的上下文感知会话代理，可帮
 | 不支持的功能 | 描述 |
 | --- | --- |
 | 内联摘要或响应 | AI助手无法在聊天边栏中以用户提示的摘要答案进行内联响应。范围外提示示例：<ul><li>*给我上一个提示的见解摘要。*</li><li>*从折线图可视化图表摘要突出显示内容。*</li></ul> |
-| 澄清问题 | 澄清问题仅限于组件和维度项目。 AI Assistant无法阐明数据视图、可视化图表、数据粒度、比较、范围等。 如果不澄清问题，助理将默认使用用户最可能要求的内容。 如果它返回意外的可视化或数据粒度，则用户可以使用多圈/更新功能来调整可视化图表和数据。 |
+| 澄清问题 | 澄清问题仅限于组件和维度项目。 AI Assistant无法阐明数据视图、可视化图表、数据粒度、比较、范围等。 如果不澄清问题，助理将默认使用您最可能要求的内容。 如果它返回意外的可视化或数据粒度，则您随后可以使用多轮/更新功能来调整可视化图表和数据。 |
 | Workspace操作/功能 | 除了构建和更新可视化图表之外，AI助手无法为Workspace中的用户执行操作。 例如，它不能执行以下任何操作：<ul><li>上下文操作UI按钮（添加到图表、新面板、新表）</li><li>共享</li><li>导出</li><li>下载</li><li>管理用户首选项</li><li>策划</li><li>管理数据视图</li><li>Analytics功能板应用程序</li><li>归因</li></ul> |
 | 不支持的可视化图表类型 | <ul><li>流量</li><li>流失</li><li>同类群组表</li><li>面积图，栈叠的面积图</li><li>堆叠的条形图</li><li>项目符号</li><li>组合</li><li>直方图</li><li>水平条形图、栈叠的水平条形图</li><li>关键量度摘要</li><li>散点图</li><li>概要变化</li><li>文本</li><li>树状图</li><li>维恩图</li></ul> |
 | 解释性和可验证性 | 对AI助手如何生成响应的透明描述或引用，并为您提供一种确认答案是否正确的方法。 |
@@ -67,22 +67,40 @@ Adobe Experience Platform、Adobe Journey Optimizer、Adobe Real-Time CDP及其�
 
 有关详细信息，请参阅[访问控制](/help/technotes/access-control.md#access-control)。
 
-## 访问数据分析AI助手
+## 访问和使用数据分析AI助手
 
+1. 转到此链接以在Labs IMS组织（暂存中）中打开Workspace，然后使用您的Adobe ID登录。
 
+1. 在项目页面顶部的横幅中单击&#x200B;**[!UICONTROL 空白项目]**&#x200B;以打开一个新的空白项目。
 
+1. 单击右上角的AI助手聊天图标。
 
-## 使用数据分析AI助手
+   ![AI助手图标](/help/assets/ai-asst-icon.png)
 
-1. 在Customer Journey Analytics中，导航到已设置的沙盒。
+1. 在底部的&#x200B;**[!UICONTROL 询问Customer Journey Analytics]**&#x200B;对话框中，在AI助手中询问您的第一个数据分析问题。
 
-1. 打开Workspace项目。
+   例如，假设您对您的企业在7月份收到的订单感兴趣。 所以你可以输入“7月显示订单”
+
+   ![AI提示](/help/assets/ai-asst-prompt1.png)
 
 
 ## 示例数据分析提示
 
 以下是AI助手如何响应提示的一些示例以及预期的可视化：
 
+| 示例提示 | 预期可视化图表 |
+| --- | --- |
+| 显示[个月]的利润 | 线形图<p>默认情况下，按特定时间范围请求趋势或量度将返回折线图可视化图表。 |
+| [月]的订单趋势 | 线形图 |
+| 在[月]内按地区显示收入 | 条形图 |
+| 按产品类别分列的收入份额 | 圆环图 |
+| 按1月至5月的周内日订单数 | 条形图 |
+| 按性别显示从3月到6月的订单 | 条形图 |
+| 从2月到5月，跨SKU的利润如何 | 条形图 |
+| [月]内按商店名称列出的收入 | 条形图 |
+| 按[月]的利润计算，我的前10个SKU是什么？ | 条形图 |
+| 按月份划分的购买比例 | 圆环图 |
+| [个月]的总利润 | 摘要数字<p>如果要求提供特定时间范围内的量度“总计”，应当会返回“摘要数字”可视化图表。 |
 
 
 ## 提示最佳实践
@@ -91,7 +109,7 @@ Adobe Experience Platform、Adobe Journey Optimizer、Adobe Real-Time CDP及其�
 
 ## Alpha测试期望并请求反馈
 
-TB D
+待定
 
 ## 问题和联系
 
