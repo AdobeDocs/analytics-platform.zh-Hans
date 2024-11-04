@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
-source-git-commit: e18d8facbd54ae65d158ce2c72f47709ef988f8f
+source-git-commit: ab8a4c65de59e725d7d181ee699d7a196988bf98
 workflow-type: tm+mt
-source-wordcount: '1422'
+source-wordcount: '1210'
 ht-degree: 4%
 
 ---
@@ -42,30 +42,30 @@ Data Analysis AI Assistant是一个智能的上下文感知会话代理，可帮
 | **不支持的可视化图表类型** | <ul><li>流量</li><li>流失</li><li>同类群组表</li><li>面积图，栈叠的面积图</li><li>堆叠的条形图</li><li>项目符号</li><li>组合</li><li>直方图</li><li>水平条形图、栈叠的水平条形图</li><li>关键量度摘要</li><li>散点图</li><li>概要变化</li><li>文本</li><li>树状图</li><li>维恩图</li></ul> |
 | **解释性和可验证性** | 对AI助手如何生成响应的透明描述或引用，并为您提供一种确认答案是否正确的方法。 |
 
-## Customer Journey AnalyticsUI中的功能访问
+<!---## Feature access in the Customer Journey Analytics UI
 
-[Alpha是否需要此分区？]
+[Do we even need this section for the Alpha?]
 
-以下参数控制对数据分析AI助手功能的访问：
+The following parameters govern access to the Data Analysis AI Assistant feature:
 
-* **解决方案访问**： Data Analysis AI Assistant可供Analysis Prime和Ultimate客户使用Customer Journey Analytics。 在Adobe Analytics中不可用。
+* **Solution access**: The Data Analysis AI Assistant is available for Customer Journey Analytics Prime and Ultimate customers. It is not available in Adobe Analytics. 
 
-Adobe Experience Platform、Adobe Journey Optimizer、Adobe Real-Time CDP及其他Experience Platform应用程序中也提供了此功能。
+It is also available in Adobe Experience Platform, Adobe Journey Optimizer, Adobe Real-Time CDP and additional Experience Platform apps.
 
-* **合同访问权限**：如果您无法使用AI助手，请联系您组织的管理员或Adobe客户代表。 在您的组织能够使用Data Analysis AI Assistant之前，您必须同意某些与GenAI相关的法律条款。
+* **Contractual access**: If you are not able to use AI Assistant, please contact your organization's administrator or Adobe Account Representative. Before your organization can use Data Analysis AI Assistant, your must agree to certain GenAI-related legal terms.
 
-* **权限**：在[!UICONTROL Adobe Admin Console]中，[!UICONTROL 报表工具] **[!UICONTROL AI Assistant：数据分析]**&#x200B;权限确定对此工具的访问权限。 [产品配置文件管理员](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)需要在[!UICONTROL Admin Console]中执行这些步骤：
-   1. 导航到&#x200B;**[!UICONTROL Admin Console]** > **[!UICONTROL 产品和服务]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL 产品配置文件]**
-   1. 选择要为其提供[!UICONTROL AI助手：产品知识]访问权限的产品配置文件的标题。
-   1. 在特定产品配置文件中，选择&#x200B;**[!UICONTROL 权限]**。
-   1. 选择![编辑](/help/assets/icons/Edit.svg)以编辑&#x200B;**[!UICONTROL 报告工具]**。
-   1. 选择![AddCircle](/help/assets/icons/AddCircle.svg)以将&#x200B;**AI助手：数据分析**&#x200B;添加到&#x200B;**[!UICONTROL 包含的权限项]**。
+* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL AI Assistant: Data Analysis]** permission determines access to this tool. A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in the [!UICONTROL Admin Console]:
+   1. Navigate to **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**
+   1. Select the title of the product profile for which you want to provide access to [!UICONTROL AI Assistant: Product Knowledge].
+   1. In the specific product profile, select **[!UICONTROL Permissions]**.
+   1. Select ![Edit](/help/assets/icons/Edit.svg) to edit **[!UICONTROL Reporting Tools]**.
+   1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) to add **AI Assistant: Data Analysis** to **[!UICONTROL Included permission items]**.
+   
+      ![Add permission](assets/ai-assistant-permissions.png).
 
-      ![添加权限](assets/ai-assistant-permissions.png)。
+   1. Select **[!UICONTROL Save]** to save the permissions.
 
-   1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存权限。
-
-有关详细信息，请参阅[访问控制](/help/technotes/access-control.md#access-control)。
+See [Access control](/help/technotes/access-control.md#access-control) for more information.--->
 
 ## 访问和使用数据分析AI助手
 
@@ -166,7 +166,7 @@ Adobe Experience Platform、Adobe Journey Optimizer、Adobe Real-Time CDP及其�
 
 ## 问题和联系
 
-电子邮件`taylorb@adobe.com` （下午）
-在AlphaSlack频道中发送问题和反馈： #aep-cja-ai-assistant-testers ???
+* 电子邮件`taylorb@adobe.com` （下午）
+* 在AlphaSlack频道中发送问题和反馈： #aep-cja-ai-assistant-testers ???
 
 
