@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
+source-git-commit: 64df8670418524be8879aa6362bb8b7c229025b6
 workflow-type: tm+mt
-source-wordcount: '8842'
+source-wordcount: '8841'
 ht-degree: 17%
 
 ---
@@ -43,7 +43,6 @@ ht-degree: 17%
 ![派生字段对话框屏幕截图](assets/derived-field-dialog.png)
 
 
-![项目概述](/help/assets/icons/ProgramOverview.svg)
 
 |  | 名称 | 描述 |
 |---------|----------|--------|
@@ -188,6 +187,8 @@ ht-degree: 17%
 
 +++ 详细信息
 
+{{select-package}}
+
 要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 有关详细信息，请参阅[函数引用](#function-reference)。
 
 ![退回规则生成器的屏幕截图](assets/function-template-bounces.png)
@@ -199,6 +200,8 @@ ht-degree: 17%
 此函数模板将两个值合并为一个。
 
 +++ 详细信息
+
+{{select-package}}
 
 要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 有关详细信息，请参阅[函数引用](#function-reference)。
 
@@ -212,6 +215,8 @@ ht-degree: 17%
 
 +++ 详细信息
 
+{{select-package}}
+
 要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 有关详细信息，请参阅[函数引用](#function-reference)。
 
 ![友好数据集名称规则生成器的屏幕截图](assets/function-template-friendly-dataset-name.png)
@@ -223,6 +228,8 @@ ht-degree: 17%
 此函数模板创建一个简单的页面名称。
 
 +++ 详细信息
+
+{{select-package}}
 
 要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 有关详细信息，请参阅[函数引用](#function-reference)。
 
@@ -236,6 +243,8 @@ ht-degree: 17%
 
 +++ 详细信息
 
+{{select-package}}
+
 要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 有关详细信息，请参阅[函数引用](#function-reference)。
 
 ![假日季节规则生成器的屏幕截图](assets/function-template-holiday-season.png)
@@ -247,6 +256,8 @@ ht-degree: 17%
 此函数模板可设置自定义的每月目标。
 
 +++ 详细信息
+
+{{select-package}}
 
 要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 有关详细信息，请参阅[函数引用](#function-reference)。
 
@@ -260,6 +271,8 @@ ht-degree: 17%
 
 +++ 详细信息
 
+{{select-package}}
+
 要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 有关详细信息，请参阅[函数引用](#function-reference)。
 
 ![在分隔列表规则生成器中获取所有值的屏幕截图](assets/function-template-get-all-values-in-delimited-list.png)
@@ -271,6 +284,8 @@ ht-degree: 17%
 此函数模板获取分隔列表中的第一个值。
 
 +++ 详细信息
+
+{{select-package}}
 
 要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 有关详细信息，请参阅[函数引用](#function-reference)。
 
@@ -284,6 +299,8 @@ ht-degree: 17%
 
 +++ 详细信息
 
+{{select-package}}
+
 要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 有关详细信息，请参阅[函数引用](#function-reference)。
 
 ![在分隔列表规则生成器中获取最后一个值的屏幕截图](assets/function-template-get-last-value-in-delimited-list.png)
@@ -295,6 +312,8 @@ ht-degree: 17%
 此函数模板使用正则表达式提取域名。
 
 +++ 详细信息
+
+{{select-package}}
 
 要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 有关详细信息，请参阅[函数引用](#function-reference)。
 
@@ -308,6 +327,8 @@ ht-degree: 17%
 
 +++ 详细信息
 
+{{select-package}}
+
 要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 有关详细信息，请参阅[函数引用](#function-reference)。
 
 ![获取查询字符串参数规则生成器的屏幕截图](assets/function-template-get-query-string-parameter.png)
@@ -319,6 +340,8 @@ ht-degree: 17%
 此函数模板可将报告从一个字段转移到另一个字段。
 
 +++ 详细信息
+
+{{select-package}}
 
 要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 有关详细信息，请参阅[函数引用](#function-reference)。
 
@@ -332,6 +355,8 @@ ht-degree: 17%
 
 +++ 详细信息
 
+{{select-package}}
+
 要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 有关详细信息，请参阅[函数引用](#function-reference)。
 
 ![简单机器人检测规则生成器的屏幕截图](assets/function-template-simple-bot-detection.png)
@@ -344,6 +369,8 @@ ht-degree: 17%
 
 +++ 详细信息
 
+{{select-package}}
+
 要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 有关详细信息，请参阅[函数引用](#function-reference)。
 
 ![退出链接规则生成器的屏幕截图](assets/function-template-exit-link.png)
@@ -355,6 +382,8 @@ ht-degree: 17%
 此函数模板可标记常见的下载链接。
 
 +++ 详细信息
+
+{{select-package}}
 
 要使用模板，必须为作为模板规则的一部分列出的每个函数指定正确的参数。 有关详细信息，请参阅[函数引用](#function-reference)。
 
