@@ -4,10 +4,10 @@ description: 引入 Adobe Journey Optimizer 生成的数据，并使用 Customer
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 5e239753928f5c994245025c8b5d2aee3eee6091
+source-git-commit: d5e8c75f1e3a207b625421a13219674f8da6c3f5
 workflow-type: tm+mt
 source-wordcount: '3020'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## 自动配置 Journey Optimizer 集成
 
-Journey Optimizer 支持使用 Customer Journey Analytics 作为报告引擎。请参阅 Journey Optimizer 文档中的[开始使用新的报告界面。](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/channel-report/report-gs-cja)
+Journey Optimizer 支持使用 Customer Journey Analytics 作为报告引擎。请参阅 Journey Optimizer 文档中的[开始使用新的报告界面。](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja)
 
 当您为 Journey Optimizer 启用 Customer Journey Analytics 报告后，系统会自动为特定沙盒创建[连接](/help/connections/overview.md)和[数据视图。](/help/data-views/data-views.md)
 
