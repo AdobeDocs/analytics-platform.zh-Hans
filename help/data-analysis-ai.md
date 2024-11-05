@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
-source-git-commit: 37be5b159b756db2c8b523db6602f274541e2a81
+source-git-commit: 376ad62c3883eef675f9b1df639e8c46ee259229
 workflow-type: tm+mt
-source-wordcount: '1541'
+source-wordcount: '1596'
 ht-degree: 4%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 4%
 
 # Customer Journey Analytics中的数据分析AI助手 — Alpha
 
-Data Analysis AI Assistant是一个智能的上下文感知会话代理，可帮助您更快、更高效地回答Customer Journey Analytics中有关Analysis Workspace数据的问题。
+Data Analysis AI Assistant是一个创新型人工智能对话代理，可帮助您更快、更高效地回答有关Customer Journey AnalyticsAnalysis Workspace数据的问题。
 
-该助手会查看数据视图中的所有数据，包括不同类型的量度和组件，并将您的提示转换为正确的维度、量度和日期范围以供您分析。 您无需熟悉数据视图组件，然后以最佳组合拖放这些组件来回答您的问题，只需在AI助手中键入问题即可。
+当您在AI Assistant中提出问题时，AI Assistant会扫描数据视图中的所有组件（包括不同类型的量度和组件），并将提示转换为正确的维度、量度和日期范围以供您分析。 您无需熟悉数据视图组件，然后以最佳组合拖放这些组件来回答您的问题，只需在AI助手中键入问题即可。
 
 ![数据分析AI助手](assets/cja-ai-asst-da.gif)
 
@@ -32,6 +32,7 @@ Data Analysis AI Assistant是一个智能的上下文感知会话代理，可帮
 | **范围外提示检测** | 如果提交超出范围的提示（如“导出此项目”），助理将通过告知您问题超出范围来进行响应。 |
 | **澄清问题** | 如果您提出的问题，没有足够上下文可供AI助手回答或过于宽泛，则AI助手会用一个澄清问题和/或建议的选项进行响应。 示例： <p>**组件**<ul><li>量度：*您指的是哪个“收入”量度？*</li><li>Dimension： *您要关注以下“地区”中的哪一个？*</li><li>筛选器：*您要应用哪个“帐户”筛选器？*</li><li>日期范围： *对于“上个月”，您是指“上个月”还是“最近30天”？*</li></ul>**Dimension项目**：您指的是哪个“商店名称”？ (例如，Store #5274、Store #2949等) |
 | **多圈** | AI Assistant使用先前提示中的上下文对提示进行响应，允许用户更新可视化并询问后续问题。示例： <ul><li>提示1：*从3月开始的趋势事件。*</li><li>提示2： *改为向我显示从3月到4月的数据*</li></ul> |
+| **可验证性** | 通过生成的自由格式表和数据可视化，可以验证数据的可验证性和正确性。 例如，如果用户询问了&#x200B;*上个月*&#x200B;的趋势订单，您可以确认在新生成的面板、数据可视化和自由格式表中选择了正确的量度（“订单”）和日期范围（“上个月”）。 |
 | **反馈** | <ul><li>竖起大拇指</li><li>拇指朝下</li><li>标志</li></ul> |
 
 ### 超出范围的Alpha功能
@@ -42,7 +43,6 @@ Data Analysis AI Assistant是一个智能的上下文感知会话代理，可帮
 | **澄清问题** | 澄清问题仅限于组件和维度项目。 AI Assistant无法阐明数据视图、可视化图表、数据粒度、比较、范围等。 如果不澄清问题，助理将默认使用您最可能要求的内容。 如果它返回意外的可视化或数据粒度，则您随后可以使用多轮/更新功能来调整可视化图表和数据。 |
 | **Workspace操作/功能** | 除了构建和更新可视化图表之外，AI助手无法为Workspace中的用户执行操作。 例如，它不能执行以下任何操作：<ul><li>上下文操作UI按钮（添加到图表、新面板、新表）</li><li>共享</li><li>导出</li><li>下载</li><li>管理用户首选项</li><li>策划</li><li>管理数据视图</li><li>Analytics功能板应用程序</li><li>归因</li></ul> |
 | **不支持的可视化图表类型** | <ul><li>流量</li><li>流失</li><li>同类群组表</li><li>面积图，栈叠的面积图</li><li>堆叠的条形图</li><li>项目符号</li><li>组合</li><li>直方图</li><li>水平条形图、栈叠的水平条形图</li><li>关键量度摘要</li><li>散点图</li><li>概要变化</li><li>文本</li><li>树状图</li><li>维恩图</li></ul> |
-| **解释性和可验证性** | 对AI助手如何生成响应的透明描述或引用，并为您提供一种确认答案是否正确的方法。 |
 
 <!---## Feature access in the Customer Journey Analytics UI
 
@@ -77,7 +77,7 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 3. 在项目页面顶部的横幅中单击&#x200B;**[!UICONTROL 空白项目]**&#x200B;以打开一个新的空白项目。
 
-4. 确保为面板选择的数据视图是为AI助手启用以进行Alpha测试的数据视图(如果您不确定，请联系taylorb@adobe.com或在AlphaSlack渠道中)
+4. 确保为面板选择的数据视图是为AI助手启用以进行Alpha测试的数据视图(如果您不确定，请在AlphaSlack频道中联系)
 
 5. 单击右上角的AI助手聊天图标。
 
@@ -111,23 +111,23 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 ### 示例 3
 
-现在，我们来了解一下按产品类别划分的收入。
+接下来，除了按地区了解收入之外，您还需要按地区查看利润数据。 您可以要求AI助手更新最新的可视化和自由格式表，而不必重新键入最后一个提示。
+
+1. 在提示窗口中，键入&#x200B;*“添加利润”*。
+
+2. **[!UICONTROL 条形]**&#x200B;图表仍提供最简洁的答案，但利润量度已添加为自由格式表中的列：
+
+   ![条形图](/help/assets/ai-asst-result4.png)
+
+### 示例 4
+
+最后，我们来了解一下按产品类别划分的收入。
 
 1. 在提示窗口中，输入&#x200B;*“按产品类别列出的收入比例”。*
 
 2. 再次重申，数据分析AI助手会选取最适合的可视化图表（在本例中为&#x200B;**[!UICONTROL 圆环图]**&#x200B;可视化图表）来回答问题。
 
    ![圆环图](/help/assets/ai-asst-result3.png)
-
-### 示例 4
-
-最后，您想知道哪个SKU最有利可图，以及在何处投资营销资源。
-
-1. 在提示窗口中，询问&#x200B;*“从2月到5月，SKU间利润是多少？”*
-
-2. 简单的&#x200B;**[!UICONTROL 条形图]**&#x200B;提供了最简洁的答案：
-
-   ![条形图](/help/assets/ai-asst-result4.png)
 
 ## 示例数据分析提示
 
@@ -180,7 +180,6 @@ AI Assistant处理每个用户提示提供的上下文，并尝试使用最合�
 
 ## 问题和联系
 
-* 电子邮件`taylorb@adobe.com` （下午）
 * 在AlphaSlack频道中发送问题和反馈： #aep-cja-ai-assistant-testers ???
 
 
