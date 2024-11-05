@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics 指南
 source-git-commit: 64662195842ae799d2020c226ca34293905d13ae
 workflow-type: tm+mt
 source-wordcount: '991'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -46,8 +46,8 @@ ht-degree: 95%
       + [选择您的升级路径](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
       + [向平台发送数据](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + [保留历史数据](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
-      + [推荐的流程](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
-      + [架构您的架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
+      + [建议流程](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
+      + [构建您的架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
       + [创建您的架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
       + [使用现有架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
       + [创建数据集](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
@@ -379,7 +379,7 @@ ht-degree: 95%
       + [数据视图用例](/help/use-cases/data-views/data-views-usecases.md)
       + [使用绑定维度和量度](/help/use-cases/data-views/binding-dimensions-metrics.md)
       + [使用摘要数据](/help/use-cases/data-views/summary-data.md)
-      + [BI扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)
+      + [BI 扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)
    + 数据导出 {#data-export}
       + [概述](../use-cases/data-export/overview.md)
       + [BI 扩展](../use-cases/data-export/bi-extension.md)
