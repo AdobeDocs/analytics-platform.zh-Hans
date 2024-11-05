@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 01df8b8b55ff8e8c0826bf98adfbd85d3412e6bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '787'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Customer Journey Analytics 适用以下客户：
 
 | 任务 | 详细信息 |
 | --- | --- |
-| **步骤1：如果您要从Adobe Analytics升级到Customer Journey Analytics：请选择升级路径并将数据发送到Adobe Experience Platform** | 从 Adobe Analytics 升级到 Customer Journey Analytics 时，有多种可用的路径。每种可能的升级路径都有其优点和缺点，适合一个组织的路径可能对另一个组织来说并不适用。 <p>要开始从Adobe Analytics升级到Customer Journey Analytics，请执行以下任一操作：</p><ul><li>按照Adobe建议的升级路径操作。 有关详细信息，请参阅[从Adobe Analytics升级到Customer Journey Analytics时推荐的路径](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)。</li><li>了解所有可用的升级路径，并选择最适合您组织的路径。 有关详细信息，请参阅[开始升级到Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)。</li></ul> |
+| **步骤 1：如果您要从 Adobe Analytics 升级到 Customer Journey Analytics：选择一个升级路径，并将数据发送到 Adobe Experience Platform** | 从 Adobe Analytics 升级到 Customer Journey Analytics 时，有多种可用的路径。每种可能的升级路径都有其优点和缺点，适合一个组织的路径可能对另一个组织来说并不适用。 <p>要开始从 Adobe Analytics 升级到 Customer Journey Analytics，请执行以下操作之一：</p><ul><li>按照 Adobe 推荐的升级路径进行操作。有关详细信息，请参阅[从 Adobe Analytics 升级到 Customer Journey Analytics 时的推荐路径](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)。</li><li>了解所有可用的升级路径并选择最适合您组织的路径。有关详细信息，请参阅[开始升级到 Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)。</li></ul> |
 | **步骤 2：将其他数据导入 Adobe Experience Platform** | 此步骤在 Adobe Experience Platform 中执行，包含若干子步骤：<ul><li>**步骤 2a：准备数据架构**：使用 [Adobe Experience Data Model (XDM)](https://experienceleague.adobe.com/cn/docs/experience-platform/xdm/home.html?lang=zh-Hans) 标准化客户体验数据并[定义用于客户体验管理的架构](https://experienceleague.adobe.com/cn/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans)。</li><li>**步骤 2b：基于架构创建数据集**：Platform 中的数据由数据集组成，例如电子邮件数据集、CRM 数据集、POS 数据集、Adobe Analytics 数据集等。每个数据集都由一个架构和批量数据组成。您可以[在 Experience Platform 中创建数据集。](https://experienceleague.adobe.com/cn/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets.html?lang=zh-Hans)</li><li>**步骤 2c：将数据摄取到 Experience Platform**：在此，您有多个选项。</li></ul> |
 | **步骤 3：在 Platform 数据集与 Customer Journey Analytics 之间创建连接** | 通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告 Experience Platform 数据集，您必须首先在 Experience Platform 和工作区中的数据集之间建立连接。<br>请参阅[创建或编辑连接](/help/connections/create-connection.md)。 |
 | **步骤 4：创建数据视图** | 数据视图是数据的“筛选”视图。您可以使用不同的访问超时、归因等设置为同一连接创建不同的数据视图。您可以为单个数据集创建多个视图。<br>请参阅[创建数据视图](/help/data-views/create-dataview.md)。 |
