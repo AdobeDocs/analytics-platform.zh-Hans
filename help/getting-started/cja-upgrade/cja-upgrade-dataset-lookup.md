@@ -8,12 +8,12 @@ hide: true
 hidefromtoc: true
 source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 27%
+source-wordcount: '240'
+ht-degree: 0%
 
 ---
 
-# 创建数据流以用于Customer Journey Analytics
+# 创建查找数据集以对Customer Journey Analytics中的数据分类
 
 >[!NOTE]
 > 
@@ -21,23 +21,18 @@ ht-degree: 27%
 >
 >完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
 
-<!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
+与Adobe Analytics中的分类数据类似，查找数据集是在Customer Journey Analytics中对数据进行分类的方法。
 
-数据流表示实施 Adobe Experience Platform Web 和移动 SDK 时的服务器端配置。使用 Adobe Experience Platform SDK 收集数据时，数据会发送到 Adobe Experience Platform Edge Network。它是确定数据转发到哪些服务的数据流。
+使用Analytics Source Connector时，某些标准查找数据集会在报告时自动应用。 有关详细信息，请参阅[向数据集添加标准查找](/help/connections/standard-lookups.md)。
 
-在您的设置中，您希望配置数据流以将收集的数据发送到Adobe Experience Platform中的数据集。
+要使用Experience PlatformWeb SDK的新实施对数据进行分类，您需要为包含要分类的数据的每个维度创建一个查找数据集。
 
-设置您的数据流
+要创建在Customer Journey Analytics中使用的查找数据集，请执行以下操作：
 
-1. 在Adobe Experience Platform中，从左边栏中的[!UICONTROL 数据收集]中选择&#x200B;**[!UICONTROL 数据流]**。
+1. 在AEP中，创建新架构。 这是一个专用于查找数据集的新架构。 无法使用现有架构。
 
-1. 选择&#x200B;**[!UICONTROL 新数据流]**。
+1. 您必须创建一个用于查找的新架构类。
 
-1. 命名并描述您的数据流。从 [!UICONTROL 事件模式] 列表中选择您的模式。
-
-   ![新数据流](assets/new-datastream.png)
-
-1. 选择&#x200B;**[!UICONTROL 保存]**。
+1. 根据这些创建查询数据集。
 
 1. 继续执行[建议的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)或[动态生成的升级步骤](https://gigazelle.github.io/cja-ttv/)。
-

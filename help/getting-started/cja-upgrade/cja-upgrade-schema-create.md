@@ -6,22 +6,20 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 711e92db7084592dc562eda3d0dcf33bcb4a62d4
+source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 53%
+source-wordcount: '987'
+ht-degree: 50%
 
 ---
 
 # 创建要与Customer Journey Analytics一起使用的XDM架构
 
 >[!NOTE]
->
->在完成[Adobe Analytics以Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)之后，应使用此文档。
 > 
->只有在完成之前为您的组织动态生成的所有步骤后，才应执行此页面上的步骤。
+>只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics为您的组织动态生成的升级步骤来Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
 >
->完成此页面上的步骤后，继续执行从[Adobe Analytics为您的组织动态生成的升级步骤，以Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
+>完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
 
 >[!IMPORTANT]
 >
@@ -62,13 +60,13 @@ Adobe建议在升级到Customer Journey Analytics时创建Experience Data Model 
 
    1. 选择&#x200B;**[!UICONTROL 完成]**。
 
-1. 在示例架构的结构选项卡中：
+1. 在架构的&#x200B;[!UICONTROL **结构**]&#x200B;选项卡中：
 
-   1. 在[!UICONTROL 字段组]中选择&#x200B;**[!UICONTROL + 添加]**。
-
-      ![添加字段组](assets/add-field-group-button.png)
+   1. 在&#x200B;**[!UICONTROL 字段组]**&#x200B;部分中，选择&#x200B;**[!UICONTROL +添加]**。
 
       字段组是可重用的对象和属性集合，可让您轻松扩展模式。
+
+      ![添加字段组](assets/add-field-group-button.png)
 
    1. 在[!UICONTROL 添加字段组]对话框中，从列表中选择 **[!UICONTROL AEP Web SDK ExperienceEvent]** 字段组。
 
@@ -116,7 +114,7 @@ Adobe建议在升级到Customer Journey Analytics时创建Experience Data Model 
 
    选择&#x200B;**[!UICONTROL 保存]**。
 
-1. 选择显示模式名称的模式的根元素，然后选择 **[!UICONTROL 配置文件]** 开关。
+1. （可选）如果要将Customer Journey Analytics与RTCDP集成，请选择显示架构名称的架构根元素，然后选择&#x200B;**[!UICONTROL 配置文件]**&#x200B;开关。
 
    系统会提示您启用配置文件的模式。一旦启用，当数据被引入基于此模式的数据集中时，该数据将合并到实时客户配置文件。
 
@@ -124,7 +122,7 @@ Adobe建议在升级到Customer Journey Analytics时创建Experience Data Model 
 
    >[!IMPORTANT]
    >
-   >    一旦您保存了为配置文件启用的模式，就不能再为配置文件禁用它。
+   >为配置文件启用架构后，无法为配置文件禁用该架构。
 
    ![为配置文件启用模式](./assets/enable-for-profile.png)
 
@@ -148,5 +146,5 @@ Adobe建议在升级到Customer Journey Analytics时创建Experience Data Model 
 
    请参阅[在 UI 中创建和编辑模式](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html)，了解有关向模式添加和删除字段组和单个字段的更多信息。
 
-1. 继续执行从[Adobe Analytics为您的组织动态生成的升级步骤，以Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
+1. 继续执行[建议的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)或[动态生成的升级步骤](https://gigazelle.github.io/cja-ttv/)。
 

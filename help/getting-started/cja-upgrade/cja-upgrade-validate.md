@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 711e92db7084592dc562eda3d0dcf33bcb4a62d4
+source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '169'
 ht-degree: 0%
 
 ---
@@ -16,12 +16,10 @@ ht-degree: 0%
 # 验证数据是否正在流入Customer Journey Analytics
 
 >[!NOTE]
->
->在完成[Adobe Analytics以Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)之后，应使用此文档。
 > 
->只有在完成之前为您的组织动态生成的所有步骤后，才应执行此页面上的步骤。
+>只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics为您的组织动态生成的升级步骤来Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
 >
->完成此页面上的步骤后，继续执行从[Adobe Analytics为您的组织动态生成的升级步骤，以Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
+>完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
 
 您可以验证连接是否处于活动状态以及数据是否以Customer Journey Analytics流向Data Views。
 
@@ -35,6 +33,6 @@ ht-degree: 0%
 
 1. 有关每个连接的可用详细信息，请参阅[管理连接](/help/connections/manage-connections.md)中的[连接详细信息](/help/connections/manage-connections.md#manage-connections)。
 
-1. 继续执行从[Adobe Analytics为您的组织动态生成的升级步骤，以Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
+1. 继续执行[建议的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)或[动态生成的升级步骤](https://gigazelle.github.io/cja-ttv/)。
 
 <!-- Should we duplicate the content here or single source it with /help/connections/manage-connections.md -->
