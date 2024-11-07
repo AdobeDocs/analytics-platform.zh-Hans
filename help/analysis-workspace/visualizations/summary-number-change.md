@@ -7,7 +7,7 @@ role: User
 source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
 workflow-type: tm+mt
 source-wordcount: '467'
-ht-degree: 47%
+ht-degree: 50%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 47%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_summarychange_button"
 >title="概要变化"
->abstract="创建一个可视化图表，以显示两个数字之间的增量（变化）"
+>abstract="创建一个显示两个数字之间增量（变化）的可视化图表"
 
 <!-- markdownlint-enable MD034 -->
 
