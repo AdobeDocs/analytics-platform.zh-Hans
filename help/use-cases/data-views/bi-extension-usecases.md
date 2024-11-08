@@ -7,16 +7,16 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: adc9e888eece72031ed234e634b206475d1539d7
+source-git-commit: 7fc625fcca51deebf860829ac67ca1b88b64cd1a
 workflow-type: tm+mt
-source-wordcount: '9056'
+source-wordcount: '9048'
 ht-degree: 2%
 
 ---
 
 # BI 扩展用例
 
-本文记录如何使用Customer Journey AnalyticsBI扩展完成多个用例。 对于每个用例，都说明了Customer Journey Analytics功能，然后是支持的每个BI工具的详细信息：
+本文记录如何使用Customer Journey AnalyticsBI扩展完成多个用例。 每个用例都说明了Customer Journey Analytics功能，以及所支持的每个BI工具的详细信息：
 
 * **Power BI桌面**。 使用的版本为2.137.1102.0 64位（2024年10月）。
 * **Tableau桌面**。 使用的版本为2024.1.5 (20241.24.0705.0334) 64位。
@@ -1479,12 +1479,12 @@ Customer Journey Analytics中的指标由[!UICONTROL 组件ID]标识。 已在Cu
 您在Customer Journey Analytics中定义的日期范围可作为**[!UICONTROL daterangeName]**&#x200B;字段的一部分使用。 当您使用&#x200B;**[!UICONTROL daterangeName]**&#x200B;字段时，您可以指定要使用的日期范围。
 
 **自定义转换**
-Power BI桌面使用[Data Analysis表达式(DAX)](https://learn.microsoft.com/en-us/dax/dax-overview)提供自定义转换功能。 例如，您希望执行产品名称为小写的单维度排名用例。 请按以下步骤执行此操作：
+Power BI桌面使用[Data Analysis表达式(DAX)](https://learn.microsoft.com/en-us/dax/dax-overview)提供自定义转换功能。 例如，您希望执行产品名称为小写的单维度排名用例。
 
 1. 在报表视图中，选择条形图可视化图表。
 1. 在“数据”窗格中选择product_name。
 1. 在工具栏中选择新建列。
-1. 在公式编辑器中定义名为`product_name_lower`的新列，如`product_name_lower = LOWER('public.cc_data_view[product_name])`。
+1. 在公式编辑器中，定义名为`product_name_lower`的新列，如`product_name_lower = LOWER('public.cc_data_view[product_name])`。
    ![桌面转换到Lower](assets/uc14-powerbi-transformation.png)Power BI
 1. 确保在“数据”窗格中选择新的product_name_lower列而不是product_name列。
 1. 在表可视化图表中，从![更多](/help/assets/icons/More.svg)中选择“以表形式报告”。
@@ -1554,7 +1554,7 @@ Customer Journey Analytics中的指标由[!UICONTROL 组件名称]标识。 已�
 您在Customer Journey Analytics中定义的日期范围可作为**[!UICONTROL 日期范围名称]**&#x200B;字段的一部分使用。 当您使用&#x200B;**[!UICONTROL 日期范围名称]**&#x200B;字段时，您可以指定要使用的日期范围。
 
 **自定义转换**
-Tableau Desktop提供了使用[计算字段](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm)的自定义转换功能。 例如，您希望执行产品名称为小写的单维度排名用例。 请按以下步骤执行此操作：
+Tableau Desktop提供了使用[计算字段](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm)的自定义转换功能。 例如，您希望执行产品名称为小写的单维度排名用例。
 
 1. 从主菜单中选择&#x200B;**[!UICONTROL 分析]** > **[!UICONTROL 创建计算字段]**。
    1. 使用函数`LOWER([Product Name])`定义&#x200B;**[!UICONTROL 小写的产品名称]**。
