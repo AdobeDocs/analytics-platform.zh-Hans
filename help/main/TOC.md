@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: dcb01aa4ca885e00c5fe8b4c3373f0b57bace1e4
+source-git-commit: 1e4c14334da54a5a6e4a0f36b3538c6e4d1a0b6f
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 97%
+source-wordcount: '1009'
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 97%
 
 + [Adobe Customer Journey Analytics 指南](../getting-started/cja-landing.md)
 + [Adobe Customer Journey Analytics 的 AI 助手](../ai-assistant.md)
-+ [用于Customer Journey Analytics的数据分析AI支持](../data-analysis-ai.md)
++ [数据分析AI协助Customer Journey Analytics](../data-analysis-ai.md)
 
 + 发行说明 {#releases}
    + [最新版本](../release-notes/latest.md)
@@ -49,6 +49,7 @@ ht-degree: 97%
       + [建议流程](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
       + [了解Analytics实施](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
       + [为分类创建查找数据集](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
+      + [创建营销渠道派生的字段](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
       + [使用标记进行升级](/help/getting-started/cja-upgrade/cja-upgrade-websdk-tags.md)
       + [构建您的架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
       + [创建您的架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
@@ -59,7 +60,7 @@ ht-degree: 97%
       + [创建连接](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
       + [创建数据视图](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
       + [验证数据流](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
-      + [升级快捷方式：迁移到Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-shortcut-websdk.md)
+      + [升级快捷键：迁移至 Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-shortcut-websdk.md)
    + 与 Adobe Analytics 进行比较 {#cja-aa-comparison}
       + [概述](../getting-started/aa-vs-cja/overview.md)
       + [实用 Adobe Analytics 数据 ](../getting-started/aa-vs-cja/aa-data-in-cja.md)

@@ -1,15 +1,15 @@
 ---
-title: 创建用于Customer Journey Analytics的架构
-description: 了解从Adobe Analytics升级到Customer Journey Analytics时推荐的路径
+title: 创建查找数据集以对Customer Journey Analytics中的数据分类
+description: 了解如何创建查找数据集以在Customer Journey Analytics中对数据进行分类
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 3827bafd85a03e8574667095b372aa61afb6756b
+source-git-commit: 1e4c14334da54a5a6e4a0f36b3538c6e4d1a0b6f
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '853'
 ht-degree: 2%
 
 ---
