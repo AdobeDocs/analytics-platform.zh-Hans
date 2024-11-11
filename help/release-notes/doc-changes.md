@@ -4,9 +4,9 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: b9fd070c03df2947947227feb2de9cc7a5baf2c7
+source-git-commit: a8d983255e3922bd619b614acedd21f66cc563b9
 workflow-type: tm+mt
-source-wordcount: '4173'
+source-wordcount: '4195'
 ht-degree: 99%
 
 ---
@@ -19,8 +19,10 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 
 | 功能 | 描述 |
 | --- | --- |
+| **2024 年 11 月** | |
+| 拼合和隐私请求 | 添加了关于由隐私请求产生的解拼合进程](/help/stitching/faq.md#frequently-asked-questions)中[即将进行的更改的通知。 |
 | **2024 年 10 月** | |
-| 共享设备 | 添加了[用例文章](/help/use-cases/stitching/shared-devices.md)，其中提供了有关共享设备的上下文、如何使用拼接处理和缓解共享设备中的数据，以及使用查询服务了解数据中的共享设备暴露情况。 |
+| 共享设备 | 添加了 [用例文章](/help/use-cases/stitching/shared-devices.md) ，提供有关共享设备的上下文、如何使用拼接处理和缓解来自共享设备的数据，以及如何使用查询服务了解数据中的共享设备曝光度。 |
 | 有关 Analysis Workspace 性能中的请求因素的新信息 | [优化 Analysis Workspace 性能](/help/technotes/optimizing-performance.md)文章中新增的[请求因素](/help/technotes/optimizing-performance.md#request-factors)部分介绍了如何处理请求以及影响处理时间的各种因素。 |
 | Workspace 和组件 | 刷新了有关 Analysis Workspace 项目（项目、可视化和面板）和组件（注释、维度、（计算）量度、过滤器、日期范围、警报、计划项目和受众）的文档。 |
 | 引导式分析 | 更新了文档，其中包含来自 Analysis Workspace 中的[引导式分析](/help/guided-analysis/overview.md)。 |

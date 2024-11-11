@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
+source-git-commit: 059a091fb41efee6f508b4260b1d943f881f5087
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 29%
+source-wordcount: '1871'
+ht-degree: 26%
 
 ---
 
@@ -70,6 +70,80 @@ ht-degree: 29%
 +++**拼接如何处理隐私请求？**
 
 Adobe将根据当地和国际法律处理隐私请求。 Adobe 提供了 [Adobe Experience Platform 隐私服务](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans)来提交数据访问和删除请求。这些请求同时适用于原始数据集和已重新生成键值的数据集。
+
+>[!IMPORTANT]
+>
+>作为隐私请求的一部分，取消拼合过程在2025年初发生变化。 当前的取消拼接过程使用最新版本的已知身份重置事件。 将事件重新分配给另一个身份可能会产生不良的法律后果。 为了消除这些疑虑，从2025年开始，新的解拼接流程将使用永久ID更新隐私请求中的事件。
+> 
+
+举例来说，可以想象以下用于标识的数据，即拼接之前和拼接之后的事件。
+
+| 标识映射 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 |
+|---|---|---|---|---|---|---|
+|  | 1 | ts1 | 123 | ecid | Bob | CustId |
+|  | 2 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| 事件数据集 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 |
+|---|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | |
+| | 2 | ts1 | 123 | ecid | Bob | CustId |
+| | 3 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| 拼接数据集 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 | 拼接 ID | 拼接的命名空间 |
+|---|---|---|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | | Bob | CustId |
+| | 2 | ts1 | 123 | ecid | Bob | CustId | Bob | CustId |
+| | 3 | ts2 | 123 | ecid | Alex | CustId | Alex | CustId |
+
+
+**隐私请求的当前进程**
+
+当收到具有CustID Bob的客户的隐私请求时，将删除具有删除线条目的行。 使用标识映射重新获取其他事件。 例如，拼接数据集中的第一个拼接ID已更新为&#x200B;**Alex**。
+
+| 标识映射 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 |
+|:---:|---|---|---|---|---|---|
+| ![删除大纲](/help/assets/icons/DeleteOutline.svg) | ~~1~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
+|  | 2 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| 事件数据集 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 |
+|:---:|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | |
+| ![删除大纲](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
+| | 3 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| 拼接数据集 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 | 拼接 ID | 拼接的命名空间 |
+|:---:|---|---|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | | **Alex** | CustId |
+| ![删除大纲](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ | ~~Bob~~ | ~~CustId~~ |
+| | 3 | ts2 | 123 | ecid | Alex | CustId | Alex | CustId |
+
+
+**隐私请求的新流程**
+
+当收到具有CustID Bob的客户的隐私请求时，将删除具有删除线条目的行。 使用永久id重新获取其他事件。 例如，拼接数据集中的第一个拼接ID已更新为&#x200B;**123**。
+
+| 标识映射 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 |
+|:---:|---|---|---|---|---|---|
+| ![删除大纲](/help/assets/icons/DeleteOutline.svg) | ~~1~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
+|  | 2 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| 事件数据集 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 |
+|:---:|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | |
+| ![删除大纲](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
+| | 3 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| 拼接数据集 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 | 拼接 ID | 拼接的命名空间 |
+|:---:|---|---|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | | **123** | ecid |
+| ![删除大纲](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ | ~~Bob~~ | ~~CustId~~ |
+| | 3 | ts2 | 123 | ecid | Alex | CustId | Alex | CustId |
 
 +++
 
