@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 6fe081690782272f550c8f9c33dfd9ae6b227d13
+exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
+source-git-commit: ae2f9220829c897c8f1e0425ec192035dcf0097d
 workflow-type: tm+mt
-source-wordcount: '1471'
+source-wordcount: '1490'
 ht-degree: 5%
 
 ---
@@ -27,7 +28,7 @@ ht-degree: 5%
 >
 >但是，根据时间表和资源限制等多个因素，建议的升级步骤可能对您的组织不实用。 在这种情况下，请使用[Adobe AnalyticsCustomer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)来动态生成针对贵组织独特环境量身定制的升级步骤。
 
-从Adobe Analytics升级到Customer Journey Analytics时，建议的步骤是实施Experience PlatformWeb SDK的新步骤，此方法是Customer Journey Analytics的首选数据收集方法。 在与Web SDK结合使用时，Adobe还建议使用Analytics源连接器，以便保留Adobe Analytics历史数据并执行并排数据比较。
+建议的从Adobe Analytics升级到Customer Journey Analytics的过程是Experience PlatformWeb SDK的新实现，该方法是Customer Journey Analytics的首选数据收集方法。 在与Web SDK结合使用时，Adobe还建议使用Analytics源连接器来帮助您过渡到Customer Journey Analytics。 使用Analytics Source Connector保留Adobe Analytics历史数据并执行并排数据比较。
 
 完全过渡到Customer Journey Analytics后，可以关闭Analytics源连接器，并且可以专门使用Experience PlatformWeb SDK。
 
@@ -79,7 +80,7 @@ ht-degree: 5%
 
 1. （可选）如果在Adobe Analytics中使用分类数据，则可以在Customer Journey Analytics中将分类数据添加到数据集。
 
-   为包含分类数据的每个维度创建查找数据集。
+   为此，[为每个包含分类数据的维度创建一个查找数据集](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)。
 
 1. 对于使用AppMeasurement或Analytics扩展（标记）的Adobe Analytics实施，[在Adobe Experience Platform中创建数据流](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)。<!-- Is this correct? Will customers on the Web SDK already have a datastream that they only need to add AEP as a service to? Or does this step apply to everyone?-->
 
@@ -93,7 +94,7 @@ ht-degree: 5%
 
    有关详细信息，请参阅[使用源连接器](/help/data-ingestion/sources.md)摄取和使用数据[使用源连接器](/help/data-ingestion/sources.md#use-a-source-connector)。
 
-1. 展开描述所需Customer Journey Analytics实施的部分，然后完成相关步骤：
+1. 展开描述如何为Customer Journey Analytics实施实施Experience PlatformWeb SDK的部分，然后完成相关步骤：
 
    +++手动实施（JS文件）
 
@@ -105,13 +106,11 @@ ht-degree: 5%
 
    +++标记
 
-   1. [在Adobe Experience Platform数据收集中创建标记属性](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/quick-start#create-a-property)。
+   1. [在您的网站上实施加载器标记](/help/getting-started/cja-upgrade/cja-upgrage-tag-loader.md)。
 
-   1. 添加Adobe Experience Platform Web SDK扩展。
+   1. [创建标记属性并添加Adobe Experience Platform Web SDK扩展](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)。
 
-   1. 在您的网站上实施加载器标记。
-
-   1. 将XDM数据收集逻辑添加到您的标记。
+   1. [将XDM数据收集逻辑添加到您的标记](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)。
 
 +++
 
@@ -220,12 +219,3 @@ Generic upgrade steps are also available.
    The Analytics source connector as a stand-alone implementation is not a recommended long-term method for using Customer Journey Analytics. This is because of high latency, cluttered and complex schemas, reliance on Adobe Analytics nomenclature (prop, eVar, and so forth), and difficulty in eventually moving from the source connector to the recommended Web SDK implementation. 
    
 -->
-
-
-
-
-
-
-
-
-
