@@ -4,9 +4,9 @@ description: 了解过滤器的用途以及如何创建简单的过滤器。
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 5fbb228fc02304be2246f0b49cb49de7f160b227
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1423'
 ht-degree: 8%
 
 ---
@@ -50,7 +50,7 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 
 您可以创建三种类型的过滤器：
 
-### 快速过滤器
+### 快速筛选条件
 
 快速筛选器允许您轻松地浏览给定Workspace项目中的数据，而无需在[筛选器生成器](/help/components/filters/create-filters.md)中创建筛选器。 可直接在Workspace界面中定义过滤器。 有关详细信息，请参阅[快速筛选器](quick-filters.md)。
 
@@ -174,9 +174,13 @@ An example of a complex sequential filter if you want to find the persons that
 2. 将嵌套筛选器定义应用于剩余数据。 嵌套筛选器定义不适用于第一个定义放弃的任何数据。
 3. 重复以上操作直到计算完所有嵌套的容器过滤器定义为止。 剩余的数据随后包含在结果中并用于报表。
 
+>[!NOTE]
+>
+>在筛选器内嵌套筛选器时（例如，将筛选器从“组件”面板拖动到筛选器定义上），将创建一个包含拖动的筛选器定义的副本（而非引用）的容器。
 
 <!--
 You can use nesting between containers and between conditions within a container. Here is what you can nest in each container:
+
 
 | Container | What container you can nest inside |
 | Event | Only event conditions |
