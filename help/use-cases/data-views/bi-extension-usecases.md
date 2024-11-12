@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: ae07aa8a275a37f88d7626bac2f59e21d4c40e5a
+source-git-commit: 552b7fe20759036a0919fa622019e87b2722bb31
 workflow-type: tm+mt
 source-wordcount: '9752'
 ht-degree: 1%
@@ -70,7 +70,7 @@ ht-degree: 1%
 * 量度：**[!UICONTROL 购买收入]**??和&#x200B;**[!UICONTROL 购买]**??。
 * 筛选器： **[!UICONTROL 个钓鱼产品]**??。
 
-![Customer Journey Analytics基本设置](assets/cja-base.png)
+![Customer Journey Analytics基本设置](assets/cja-base.png){zoomable="yes"}
 
 当您完成使用案例时，请将这些示例对象替换为适合您特定环境的对象。
 
@@ -89,7 +89,7 @@ ht-degree: 1%
    1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;界面中选择&#x200B;**[!UICONTROL 凭据]**&#x200B;选项卡。
    1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单中选择`prod:cja`。
 
-      ![查询服务凭据](assets/queryservice-credentials.png)
+      ![查询服务凭据](assets/queryservice-credentials.png){width="100" zoomable="yes"}
 
 1. 启动Power BI桌面。
    1. 从主界面中选择&#x200B;**[!UICONTROL 从其他源获取数据]**。
@@ -129,7 +129,7 @@ ht-degree: 1%
    1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;界面中选择&#x200B;**[!UICONTROL 凭据]**&#x200B;选项卡。
    1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单中选择`prod:cja`。
 
-      ![查询服务凭据](assets/queryservice-credentials.png)
+      ![查询服务凭据](assets/queryservice-credentials.png){zoomable="yes"}
 
 1. 启动“表格”。
    1. 从&#x200B;**[!UICONTROL To a Server]**&#x200B;下的左边栏中选择&#x200B;**[!UICONTROL PostgreSQL]**。 如果不可用，请选择&#x200B;**[!UICONTROL 更多……]**，然后从&#x200B;**[!UICONTROL 安装的连接器]**&#x200B;中选择&#x200B;**[!UICONTROL PostgreSQL]**。
