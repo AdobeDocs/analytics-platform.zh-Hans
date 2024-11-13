@@ -7,10 +7,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: 749fbd5ae370995d772b6880c9949cf14042ed8c
+source-git-commit: d6d6777f3d40a979eefecea6ab6d4bd818be2401
 workflow-type: tm+mt
-source-wordcount: '9752'
-ht-degree: 1%
+source-wordcount: '9736'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,6 @@ ht-degree: 1%
 
 * **连接**
    * [连接并列出数据视图](#connect-and-validate)
-   * [是否扁平化](#to-flatten-or-not)
 
 * **报告和分析**
    * [每日趋势](#daily-trend)
@@ -120,6 +119,25 @@ ht-degree: 1%
       ![Power BIDestkop服务器数据已加载](assets/powerbi-navigator-loaded.png){zoomable="yes"}
 
 
+### 是否扁平化
+
+Power BI桌面支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼合嵌套数据](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data)。
+
+| FLATTEN参数 | 示例 | 受支持 | 备注 |
+|---|---|:---:|---|
+| 无 | `prod:cja` | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | **推荐使用的选项！** |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![闭合圆圈](/help/assets/icons/CloseCircle.svg) | Power BI桌面显示错误： **[!UICONTROL 无法使用提供的凭据进行身份验证。 请重试。]** |
+
+### 更多信息
+
+* [先决条件](/help/data-views/bi-extension.md#prerequisites)
+* [凭据指南](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [将Power BI连接到查询服务](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi)。
+
+
+
+
 >[!TAB Tableau桌面]
 
 1. 从Experience Platform查询服务UI访问所需的凭据和参数。
@@ -155,56 +173,23 @@ ht-degree: 1%
    1. 主窗口显示&#x200B;**[!UICONTROL cc_data_view]**数据视图的详细信息。
       ![已连接Tableau](assets/tableau-validation.png){zoomable="yes"}
 
->[!ENDTABS]
+### 是否扁平化
 
-+++
-
-## 是否扁平化
-
-在此使用案例中，您希望了解在使用BI扩展连接到Customer Journey Analytics时，是否必须为数据库使用额外的`FLATTEN`参数。
-
-+++ Customer Journey Analytics
-
-Customer Journey Analytics提供了有关如何在Experience Platform界面中连接的信息。
-
-1. 导航到您的Experience Platform沙盒。
-1. 从左边栏中选择![查询](/help/assets/icons/DataSearch.svg) **[!UICONTROL 查询]**。
-1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;界面中选择&#x200B;**[!UICONTROL 凭据]**&#x200B;选项卡。
-1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单中选择`prod:cja`。
-
-![查询服务凭据](assets/queryservice-credentials.png){zoomable="yes"}
-
-
-+++
-
-+++ BI 工具
-
->[!PREREQUISITES]
->
->请确保已验证[连接是否成功，可以列出数据视图，并为要为其尝试此用例的BI工具使用数据视图](#connect-and-validate)。 请参阅BI工具部分，了解正确连接所需的显式`FLATTEN`参数选项。
->
-
->[!BEGINTABS]
-
->[!TAB Power BI桌面]
-
-Power BI桌面支持`FLATTEN`参数的以下方案。
+Tableau Desktop支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼合嵌套数据](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data)。
 
 | FLATTEN参数 | 示例 | 受支持 | 备注 |
 |---|---|:---:|---|
 | 无 | `prod:cja` | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | |
 | `?FLATTEN` | `prod:cja?FLATTEN` | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | |
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![闭合圆圈](/help/assets/icons/CloseCircle.svg) | Power BI桌面显示错误： **[!UICONTROL 无法使用提供的凭据进行身份验证。 请重试。]** |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | **推荐使用的选项**。 请注意，`%3FFLATTEN`是`?FLATTEN`的URL编码版本。 |
 
->[!TAB Tableau桌面]
+### 更多信息
 
-Tableau Desktop支持`FLATTEN`参数的以下方案。
+* [先决条件](/help/data-views/bi-extension.md#prerequisites)
+* [凭据指南](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [将Tableau桌面连接到查询服务](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau)。
 
-| FLATTEN参数 | 示例 | 受支持 | 备注 |
-|---|---|:---:|---|
-| 无 | `prod:cja` | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | |
-| `?FLATTEN` | `prod:cja?FLATTEN` | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | |
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | |
+
 
 >[!ENDTABS]
 
@@ -277,7 +262,7 @@ Tableau Desktop支持`FLATTEN`参数的以下方案。
       * 从&#x200B;**[!UICONTROL Daterangeday]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL Day]**，以便将该值更新为&#x200B;**[!UICONTROL DAY(Daterangeday)]**。
    1. 从&#x200B;**[!UICONTROL 数据]**&#x200B;窗格中的&#x200B;**[!UICONTROL 表（*度量值名称*）]**&#x200B;列表中拖放&#x200B;**[!UICONTROL 发生次数]**，并将条目拖放到&#x200B;**[!UICONTROL 行]**&#x200B;旁边的字段中。
       * 值会自动转换为&#x200B;**[!UICONTROL SUM（发生次数）]**。
-   1. 从工具栏中的&#x200B;**[IUICONTROL适应]**&#x200B;下拉菜单，将&#x200B;**[!UICONTROL 标准]**&#x200B;修改为&#x200B;**[!UICONTROL 整个视图]**。
+   1. 从工具栏中的&#x200B;**[!UICONTROL 适应]**&#x200B;下拉菜单将&#x200B;**[!UICONTROL 标准]**&#x200B;修改为&#x200B;**[!UICONTROL 整个视图]**。
 
       您的Tableau桌面应该如下所示。
 
@@ -289,7 +274,7 @@ Tableau Desktop支持`FLATTEN`参数的以下方案。
 1. 确保已选择&#x200B;**[!UICONTROL 数据]**&#x200B;工作表。 在&#x200B;**[!UICONTROL 数据]**&#x200B;视图中：
    1. 选择右上角的&#x200B;**[!UICONTROL 向我显示]**&#x200B;并选择&#x200B;**[!UICONTROL 文本表]**（左上角可视化图表）以将数据视图的内容修改为表。
    1. 从工具栏中选择&#x200B;**[!UICONTROL 交换行和列]**。
-   1. 从工具栏中的&#x200B;**[IUICONTROL适应]**&#x200B;下拉菜单，将&#x200B;**[!UICONTROL 标准]**&#x200B;修改为&#x200B;**[!UICONTROL 整个视图]**。
+   1. 从工具栏中的&#x200B;**[!UICONTROL 适应]**&#x200B;下拉菜单将&#x200B;**[!UICONTROL 标准]**&#x200B;修改为&#x200B;**[!UICONTROL 整个视图]**。
 
       您的Tableau桌面应该如下所示。
 
@@ -347,7 +332,7 @@ Tableau Desktop支持`FLATTEN`参数的以下方案。
       * 从&#x200B;**[!UICONTROL Daterangeday]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL More]** > **[!UICONTROL Hours]**，以便将该值更新为&#x200B;**[!UICONTROL HOUR(Daterangeday)]**。
    1. 从&#x200B;**[!UICONTROL 数据]**&#x200B;窗格中的&#x200B;**[!UICONTROL 表（*度量值名称*）]**&#x200B;列表中拖放&#x200B;**[!UICONTROL 发生次数]**，并将条目拖放到&#x200B;**[!UICONTROL 行]**&#x200B;旁边的字段中。
       * 值会自动转换为&#x200B;**[!UICONTROL SUM（发生次数）]**。
-   1. 从工具栏中的&#x200B;**[IUICONTROL适应]**&#x200B;下拉菜单，将&#x200B;**[!UICONTROL 标准]**&#x200B;修改为&#x200B;**[!UICONTROL 整个视图]**。
+   1. 从工具栏中的&#x200B;**[!UICONTROL 适应]**&#x200B;下拉菜单将&#x200B;**[!UICONTROL 标准]**&#x200B;修改为&#x200B;**[!UICONTROL 整个视图]**。
 
       您的Tableau桌面应该如下所示。
 
@@ -359,7 +344,7 @@ Tableau Desktop支持`FLATTEN`参数的以下方案。
 1. 确保已选择&#x200B;**[!UICONTROL 数据]**&#x200B;工作表。 在&#x200B;**[!UICONTROL 数据]**&#x200B;视图中：
    1. 选择右上角的&#x200B;**[!UICONTROL 向我显示]**&#x200B;并选择&#x200B;**[!UICONTROL 文本表]**（左上角可视化图表）以将数据视图的内容修改为表。
    1. 将&#x200B;**[!UICONTROL HOUR(Daterangeday)]**&#x200B;从&#x200B;**[!UICONTROL 列]**&#x200B;拖到&#x200B;**[!UICONTROL 行]**。
-   1. 从工具栏中的&#x200B;**[IUICONTROL适应]**&#x200B;下拉菜单，将&#x200B;**[!UICONTROL 标准]**&#x200B;修改为&#x200B;**[!UICONTROL 整个视图]**。
+   1. 从工具栏中的&#x200B;**[!UICONTROL 适应]**&#x200B;下拉菜单将&#x200B;**[!UICONTROL 标准]**&#x200B;修改为&#x200B;**[!UICONTROL 整个视图]**。
 
       您的Tableau桌面应该如下所示。
 
@@ -448,7 +433,7 @@ Tableau Desktop支持`FLATTEN`参数的以下方案。
       * 从&#x200B;**[!UICONTROL Daterangeday]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL MONTH]**，以便将该值更新为&#x200B;**[!UICONTROL MONTH(Daterangeday)]**。
    1. 从&#x200B;**[!UICONTROL 数据]**&#x200B;窗格中的&#x200B;**[!UICONTROL 表（*度量值名称*）]**&#x200B;列表中拖放&#x200B;**[!UICONTROL 发生次数]**，并将条目拖放到&#x200B;**[!UICONTROL 行]**&#x200B;旁边的字段中。
       * 值会自动转换为&#x200B;**[!UICONTROL SUM（发生次数）]**。
-   1. 从工具栏中的&#x200B;**[IUICONTROL适应]**&#x200B;下拉菜单，将&#x200B;**[!UICONTROL 标准]**&#x200B;修改为&#x200B;**[!UICONTROL 整个视图]**。
+   1. 从工具栏中的&#x200B;**[!UICONTROL 适应]**&#x200B;下拉菜单将&#x200B;**[!UICONTROL 标准]**&#x200B;修改为&#x200B;**[!UICONTROL 整个视图]**。
 
       您的Tableau桌面应该如下所示。
 
@@ -460,7 +445,7 @@ Tableau Desktop支持`FLATTEN`参数的以下方案。
 1. 确保已选择&#x200B;**[!UICONTROL 数据]**&#x200B;工作表。 在“数据”视图中：
    1. 选择右上角的&#x200B;**[!UICONTROL 向我显示]**&#x200B;并选择&#x200B;**[!UICONTROL 文本表]**（左上角可视化图表）以将数据视图的内容修改为表。
    1. 将&#x200B;**[!UICONTROL MONTH(Daterangeday)]**&#x200B;从&#x200B;**[!UICONTROL 列]**&#x200B;拖到&#x200B;**[!UICONTROL 行]**。
-   1. 从工具栏中的&#x200B;**[IUICONTROL适应]**&#x200B;下拉菜单，将&#x200B;**[!UICONTROL 标准]**&#x200B;修改为&#x200B;**[!UICONTROL 整个视图]**。
+   1. 从工具栏中的&#x200B;**[!UICONTROL 适应]**&#x200B;下拉菜单将&#x200B;**[!UICONTROL 标准]**&#x200B;修改为&#x200B;**[!UICONTROL 整个视图]**。
 
       您的Tableau桌面应该如下所示。
 
@@ -823,6 +808,15 @@ Tableau Desktop支持`FLATTEN`参数的以下方案。
 
    ![Power BI桌面多个非重复计数表](assets/uc7-powerbi-final.png){zoomable="yes"}
 
+或者，您可以使用Power BI中的不同计数功能。
+
+1. 选择&#x200B;**[!UICONTROL product_name]**&#x200B;维度。
+1. 对&#x200B;**[!UICONTROL 列]**&#x200B;中的&#x200B;**[!UICONTROL product_name]**&#x200B;维度应用&#x200B;**[!UICONTROL Count (Distinct)]**&#x200B;函数。
+
+   ![非重复Power BI计数](assets/uc7-powerbi-alternative.png){zoomable="yes"}
+
+
+
 >[!TAB Tableau桌面]
 
 1. 选择底部的&#x200B;**[!UICONTROL 表1]**&#x200B;选项卡以从&#x200B;**[!UICONTROL 数据源]**&#x200B;切换。 在&#x200B;**[!UICONTROL 表1]**&#x200B;视图中：
@@ -861,6 +855,14 @@ Tableau Desktop支持`FLATTEN`参数的以下方案。
    您的&#x200B;**[!UICONTROL 仪表板1]**&#x200B;视图应如下所示。
 
    ![Tableau桌面功能板1](assets/uc7-tableau-final.png){zoomable="yes"}
+
+
+或者，您可以使用Tableau Desktop中的非重复计数功能。
+
+1. 使用&#x200B;**[!UICONTROL 产品名称]**，而不是&#x200B;**[!UICONTROL Cm产品名称计数Distinct]**。
+1. 在&#x200B;**[!UICONTROL 标记]**&#x200B;中的&#x200B;**[!UICONTROL 产品名称]**&#x200B;上应用&#x200B;**[!UICONTROL 度量]** > **[!UICONTROL 计数（非重复）]**。
+
+   ![非重复Power BI计数](assets/uc7-tableau-alternative.png){zoomable="yes"}
 
 >[!ENDTABS]
 
