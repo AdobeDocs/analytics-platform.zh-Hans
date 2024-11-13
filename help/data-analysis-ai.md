@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: d0507dab387b9174aa3a119bdb22139edd0e8ca4
+source-git-commit: 6f264ffd30bb1308f95a913a16fb587f36d95a04
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 4%
+source-wordcount: '1637'
+ht-degree: 3%
 
 ---
 
@@ -79,7 +79,7 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 4. 确保为面板选择的数据视图是为AI助手启用以进行Alpha测试的数据视图(如果您不确定，请在AlphaSlack频道中联系)
 
-5. 单击右上角的AI助手聊天图标。
+5. 单击右上角的AI助手聊天图标。 注意：如果看不到右上角的聊天图标，请联系您的管理员，让其按照[这些说明](https://experienceleague.adobe.com/en/docs/analytics-platform/using/ai-assistant#feature-access)在Admin Console中启用“AI助手：产品知识”和“AI助手：数据分析”。
 
    ![AI助手图标](/help/assets/ai-asst-icon.png)
 
