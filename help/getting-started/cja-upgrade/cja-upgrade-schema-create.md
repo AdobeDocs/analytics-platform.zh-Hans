@@ -6,14 +6,15 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
+source-git-commit: ce19cf00d70220b6d7dcdfaeb1d4c9ec5c14e5dd
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 50%
+source-wordcount: '1072'
+ht-degree: 46%
 
 ---
 
-# 创建要与Customer Journey Analytics一起使用的XDM架构
+# 创建一个XDM架构以用于您的Customer Journey AnalyticsWeb SDK实施
 
 >[!NOTE]
 > 
@@ -39,7 +40,7 @@ Adobe建议在升级到Customer Journey Analytics时创建Experience Data Model 
 
 1. 选择&#x200B;**[!UICONTROL 创建架构]**。
 
-1. 在“创建模式”向导的“选择类”步骤中：
+1. 在创建架构向导的&#x200B;**[!UICONTROL 选择类]**&#x200B;步骤中：
 
    1. 选择&#x200B;**[!UICONTROL 体验事件]**。
 
@@ -60,11 +61,11 @@ Adobe建议在升级到Customer Journey Analytics时创建Experience Data Model 
 
    1. 选择&#x200B;**[!UICONTROL 完成]**。
 
-1. 在架构的&#x200B;[!UICONTROL **结构**]&#x200B;选项卡中：
+1. 添加所有字段组，这些字段组包含您要包含在架构中的任何字段。
+
+   字段组是可重用的对象和属性集合，可让您轻松扩展模式。
 
    1. 在&#x200B;**[!UICONTROL 字段组]**&#x200B;部分中，选择&#x200B;**[!UICONTROL +添加]**。
-
-      字段组是可重用的对象和属性集合，可让您轻松扩展模式。
 
       ![添加字段组](assets/add-field-group-button.png)
 
@@ -78,7 +79,19 @@ Adobe建议在升级到Customer Journey Analytics时创建Experience Data Model 
 
       选择&#x200B;**[!UICONTROL 返回]**&#x200B;关闭预览。
 
+   1. （可选）选择要包含的任何其他字段组。
+
    1. 选择&#x200B;**[!UICONTROL 添加字段组]**。
+
+1. （可选）如果您要在架构中包含自定义字段，请创建自定义字段组并将自定义字段添加到字段组。
+
+   1. 在&#x200B;**[!UICONTROL 字段组]**&#x200B;部分中，选择&#x200B;**[!UICONTROL +添加]**。
+
+      ![添加字段组](assets/add-field-group-button.png)
+
+   1. 在[!UICONTROL 添加字段组]对话框中，选择&#x200B;**[!UICONTROL 新建字段组]**。
+
+   1. 指定显示名称和可选说明，然后选择&#x200B;**[!UICONTROL 添加字段组]**。
 
 1. 在[!UICONTROL 结构]面板中选择模式名称旁边的 **[!UICONTROL +]**。
 
@@ -147,4 +160,3 @@ Adobe建议在升级到Customer Journey Analytics时创建Experience Data Model 
    请参阅[在 UI 中创建和编辑模式](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html)，了解有关向模式添加和删除字段组和单个字段的更多信息。
 
 1. 继续执行[建议的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)或[动态生成的升级步骤](https://gigazelle.github.io/cja-ttv/)。
-
