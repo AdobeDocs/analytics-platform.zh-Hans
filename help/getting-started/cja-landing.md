@@ -4,10 +4,10 @@ description: Customer Journey Analytics 登陆页面。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
-workflow-type: ht
-source-wordcount: '820'
-ht-degree: 100%
+source-git-commit: 8b90f74d64ef35f4a9f0f1177dab27c9680ccb4c
+workflow-type: tm+mt
+source-wordcount: '824'
+ht-degree: 95%
 
 ---
 
@@ -73,7 +73,7 @@ AI 助手是一种对话体验，允许从业者快速执行任务——无论�
 
 >[!TAB BI 扩展*]
 
-BI 扩展允许 SQL 访问您在 Customer Journey Analytics 中定义的数据视图。现在，您可以使用您最喜欢的 BI 工具，根据 Customer Journey Analytics 用户在创建 Analysis Workspace 项目时使用的相同数据视图来创建报告和仪表板。
+BI 扩展允许 SQL 访问您在 Customer Journey Analytics 中定义的数据视图。您现在可以使用常用的BI工具，根据Customer Journey Analytics用户在其Analysis Workspace项目中使用的数据视图创建报表和功能板。 提供了[用例](/help/use-cases/data-views/bi-extension-usecases.md)。
 
 [![图像](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
 

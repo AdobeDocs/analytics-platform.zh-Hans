@@ -5,10 +5,10 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 62779154e889158c62e4713a951fb3633c16d5e1
+source-git-commit: 629935d66b0f2c5731806a68cc2fcda5fb11fc9a
 workflow-type: tm+mt
-source-wordcount: '1346'
-ht-degree: 35%
+source-wordcount: '1372'
+ht-degree: 33%
 
 ---
 
@@ -24,6 +24,10 @@ ht-degree: 35%
 
 有关详细信息，请参阅[使用摘要数据](summary-data.md)用例。
 
+## BI 扩展用例
+
+请参阅[BI扩展用例](bi-extension-usecases.md)，了解如何使用Customer Journey AnalyticsBI扩展完成多个用例。
+
 ## 根据字符串架构字段创建量度 {#string}
 
 例如，在创建数据视图时，您可以根据字符串形式的[!UICONTROL 页面标题]架构字段创建一个[!UICONTROL 订单]量度。
@@ -35,7 +39,7 @@ ht-degree: 35%
 1. 打开&#x200B;**[!UICONTROL 包括/排除值]**&#x200B;部分，并指定以下内容：
    1. 启用&#x200B;**[!UICONTROL 设置包括排除值]**。
    1. 从&#x200B;**[!UICONTROL 匹配]**&#x200B;中选择&#x200B;**[!UICONTROL 如果满足所有条件]**。
-   1. 指定`confirmation`。 page_title的此文本表示此页面与下订单有关。 在查看满足这些条件的所有页面标题后，将为每个实例计算`1`。 结果是一个新量度（而非计算量度）。具有已添加/排除值的量度可用在可使用任何其他量度的任意位置。它可与 Attribution IQ、过滤器配合使用，以及用在可使用标准量度的任何其他位置。
+   1. 指定`confirmation`。 page_title的此文本表示此页面与下订单有关。 在查看满足这些条件的所有页面标题后，将为每个实例计算`1`。 结果是一个新量度（而非计算量度）。具有已添加/排除值的量度可用于可使用任何其他量度的任何位置。 它可与 Attribution IQ、过滤器配合使用，以及用在可使用标准量度的任何其他位置。
 
    ![指标](../assets/string-to-metric.gif)Dimension{width=100%}
 1. 您可以进一步为此量度指定归因模型，例如[!UICONTROL 回顾时间范围]为[!UICONTROL 会话]的[!UICONTROL 最近联系]。

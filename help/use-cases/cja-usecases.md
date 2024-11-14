@@ -5,10 +5,10 @@ exl-id: 90746eb0-99df-463a-8f01-330fd460a4a8
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User, Admin
-source-git-commit: f078bf7b9b9d87335f435db2bbba87b078412738
+source-git-commit: 8b90f74d64ef35f4a9f0f1177dab27c9680ccb4c
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 100%
+source-wordcount: '217'
+ht-degree: 90%
 
 ---
 
@@ -21,4 +21,4 @@ Customer Journey Analytics 支持以下主要用例：
 * **助力分析师充分利用数据科学的强大力量**：Customer Journey Analytics 让普通人能够运用数据科学获得深入的分析和洞察信息。
 * **使用临时报告可视化您的数据集并与之交互**：工作区可以使用 Adobe Experience Platform 中符合某些基本规则的任何数据集。
 * **查看非 Web 数据**：工作区不再局限于“点击”或“事件”的严格定义。自定义架构允许完全控制数据和定义。
-* **更好地控制数据操作**：更改您上传的数据，创建新数据集，并将这些数据导入工作区。Adobe Experience Platform 通过 Experience Platform Query Service 提供查询、提取、转换和加载工具。
+* **更好地控制数据操作**：更改您上传的数据，创建新数据集，并将这些数据导入工作区。Adobe Experience Platform通过Experience Platform查询服务和BI扩展提供查询、提取、转换和加载工具。

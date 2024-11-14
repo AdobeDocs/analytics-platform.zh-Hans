@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a8d983255e3922bd619b614acedd21f66cc563b9
-workflow-type: ht
-source-wordcount: '4195'
-ht-degree: 100%
+source-git-commit: 5f02b6eff63f7efcfbec586186506f2c50ec52d7
+workflow-type: tm+mt
+source-wordcount: '4216'
+ht-degree: 99%
 
 ---
 
@@ -20,6 +20,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2024 年 11 月** | |
+| BI 扩展用例 | 介绍了几个BI工具(如Power BI桌面和Tableau桌面)的[BI扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)。 |
 | 拼接和隐私请求 | 添加了关于 [拆线过程中即将发生的变更](/help/stitching/faq.md#frequently-asked-questions) 的通知，这些变更是由于隐私请求而产生的。 |
 | **2024 年 10 月** | |
 | 共享设备 | 添加了 [用例文章](/help/use-cases/stitching/shared-devices.md) ，提供有关共享设备的上下文、如何使用拼接处理和缓解来自共享设备的数据，以及如何使用查询服务了解数据中的共享设备曝光度。 |
