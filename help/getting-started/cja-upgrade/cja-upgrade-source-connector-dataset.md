@@ -6,10 +6,11 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: d30a1a7cbe441529f5b094215c0ea1131c1f67fc
+exl-id: 424485a3-a076-4656-83b6-733f16cc2326
+source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 37%
+source-wordcount: '818'
+ht-degree: 25%
 
 ---
 
@@ -20,6 +21,30 @@ ht-degree: 37%
 >只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics为您的组织动态生成的升级步骤来Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
 >
 >完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
+
+>[!NOTE]
+>
+>本页上的信息假定以下内容：
+>
+>* 您正在从Adobe Analytics升级到Customer Journey Analytics。
+>* 您正在将Web SDK用于未来的Customer Journey Analytics数据收集。
+>* 您希望使用Analytics Source Connector将历史Adobe分析数据纳入Customer Journey Analytics。
+
+## 了解Analytics Source Connector可怎样将历史数据引入Customer Journey Analytics
+
+您可以使用Analytics Source Connector将Adobe Analytics报表包数据引入Adobe Experience Platform。 然后，此数据可用作Customer Journey Analytics中的历史数据。
+
+此过程假设在升级到Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)时您要[创建XDM架构，因为您需要一个根据您的组织需求以及您使用的特定Platform应用程序量身定制的简化架构。
+
+要使用Analytics Source Connector将历史数据纳入Customer Journey Analytics，您需要：
+
+1. [为Analytics源连接器创建XDM架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+
+1. [创建Analytics源连接器和映射字段](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+
+1. 将Analytics Source Connector数据集添加到连接，如下所述。
+
+## 将Analytics源连接器数据集添加到连接
 
 在您[为历史数据创建Analytics Source Connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)之后，将自动为Analytics数据创建数据集。
 
@@ -68,7 +93,7 @@ ht-degree: 37%
 
 1. 通过输入开始和结束日期或选择日历图标![日历](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)，定义要包含回填的期间。
 
-   Analytics Source Connector 会为生产沙盒导入最多 13 个月的数据（无论大小）。非生产沙盒的回填期限为 3 个月。
+   Analytics Source Connector为生产沙盒导入13个月的数据（不考虑数据大小）。 非生产沙盒中的回填时间为3个月。
 
    >[!IMPORTANT]
    >
@@ -83,4 +108,3 @@ ht-degree: 37%
 1. 选择&#x200B;**[!UICONTROL 添加数据集]**，然后选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存连接。
 
 1. 继续执行[建议的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)或[动态生成的升级步骤](https://gigazelle.github.io/cja-ttv/)。
-

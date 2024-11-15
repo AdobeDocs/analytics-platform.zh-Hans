@@ -6,10 +6,11 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 8e51e97b0616a5406c5c3a29431fde87a551ab9f
+exl-id: f96565a2-f556-4b45-b88e-984613614d2e
+source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 3%
+source-wordcount: '636'
+ht-degree: 2%
 
 ---
 
@@ -21,13 +22,23 @@ ht-degree: 3%
 >
 >完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
 
+## 了解Analytics Source Connector可怎样将历史数据引入Customer Journey Analytics
+
 您可以使用Analytics Source Connector将Adobe Analytics报表包数据引入Adobe Experience Platform。 然后，此数据可用作Customer Journey Analytics中的历史数据。
 
-以下步骤假设在升级到Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)时您要[创建XDM架构，因为您需要一个根据您的组织以及您使用的特定Platform应用程序的需求而定制的简化架构。
+此过程假设在升级到Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)时您要[创建XDM架构，因为您需要一个根据您的组织需求以及您使用的特定Platform应用程序量身定制的简化架构。
 
-创建XDM架构后，您需要创建Adobe Analytics源连接器以用于历史数据。
+要使用Analytics Source Connector将历史数据纳入Customer Journey Analytics，您需要：
 
-有关创建源连接器的更全面的一般准则，请参阅[在UI中创建Adobe Analytics源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)。
+1. [为Analytics源连接器创建XDM架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+
+1. 创建Analytics源连接器和映射字段，如下所述。
+
+1. [将Analytics源连接器数据集添加到连接](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+
+## 创建Analytics源连接器和映射字段
+
+创建XDM架构后，您需要创建Adobe Analytics源连接器以用于历史数据。 (有关创建源连接器的更全面的一般准则，请参阅[在UI中创建Adobe Analytics源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)。)
 
 要创建用于历史数据的Adobe Analytics源连接器，请执行以下操作：
 
@@ -78,7 +89,3 @@ ht-degree: 3%
    如果您使用Analytics Source Connector将历史数据引入Customer Journey AnalyticsWeb SDK实施，则需要将此自动创建的数据集添加到您为Web SDK实施创建的连接。
 
 1. 继续执行[建议的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)或[动态生成的升级步骤](https://gigazelle.github.io/cja-ttv/)。
-
-
-
-
