@@ -12,7 +12,7 @@ ht-degree: 3%
 
 ---
 
-# [!UICONTROL 漏斗] 分析 {#funnel}
+# [!UICONTROL 漏斗]分析 {#funnel}
 
 <!-- markdownlint-disable MD034 -->
 

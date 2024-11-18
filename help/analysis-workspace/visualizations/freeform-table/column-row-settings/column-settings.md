@@ -76,7 +76,7 @@ ht-degree: 21%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
 >title="使用非默认的属性模型"
->abstract="非默认归因模式不可用于此指标。"
+>abstract="非默认归因模式不可用于此量度。"
 
 <!-- markdownlint-enable MD034 -->
 

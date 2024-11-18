@@ -12,7 +12,7 @@ ht-degree: 6%
 
 ---
 
-# [!UICONTROL 净增长] 分析 {#net-growth}
+# [!UICONTROL 净增长]分析 {#net-growth}
 
 <!-- markdownlint-disable MD034 -->
 

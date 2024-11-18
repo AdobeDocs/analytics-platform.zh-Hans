@@ -12,7 +12,7 @@ ht-degree: 9%
 
 ---
 
-# [!UICONTROL 频率] 分析 {#frequency}
+# [!UICONTROL 频率]分析 {#frequency}
 
 <!-- markdownlint-disable MD034 -->
 

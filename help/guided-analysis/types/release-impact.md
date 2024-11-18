@@ -12,7 +12,7 @@ ht-degree: 10%
 
 ---
 
-# [!UICONTROL 发布影响] 分析 {#release-impact}
+# [!UICONTROL 发布影响]分析 {#release-impact}
 
 <!-- markdownlint-disable MD034 -->
 

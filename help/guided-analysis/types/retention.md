@@ -1,5 +1,5 @@
 ---
-title: 留存分析
+title: 保留分析
 description: 衡量有多少用户继续使用您的产品。
 feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 ---
 
-# 留存分析 {#retention}
+# 保留分析 {#retention}
 
 <!-- markdownlint-disable MD034 -->
 

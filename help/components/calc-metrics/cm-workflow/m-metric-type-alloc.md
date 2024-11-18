@@ -68,7 +68,7 @@ ht-degree: 39%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_lasttouch"
 >title="最后接触"
->abstract="100% 的积分归于访问者看到的最后一个维度值。"
+>abstract="100% 的积分归于访客看到的最后一个维度值。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -77,7 +77,7 @@ ht-degree: 39%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_firsttouch"
 >title="首次接触"
->abstract="100% 的积分归于访问者看到的第一个维度值。"
+>abstract="100% 的积分归于访客看到的第一个维度值。"
 
 <!-- markdownlint-enable MD034 -->
 

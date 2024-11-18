@@ -6,14 +6,15 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 8ef60cc3918b79919674e3c0478a2c1b1bd21d27
+exl-id: 83927cf0-b3b4-42b4-9ca5-0c81c091383f
+source-git-commit: daa07b603caa613ca49b61c2e8e461d558459f57
 workflow-type: tm+mt
 source-wordcount: '645'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
-# 升级快捷方式：迁移AppMeasurement或Analytics扩展实施以使用Web SDK {#shortcut-migrate-websdk}
+# 升级快捷键：迁移 AppMeasurement 或 Analytics 扩展实施，以使用 Web SDK {#shortcut-migrate-websdk}
 
 >[!NOTE]
 >
@@ -23,8 +24,8 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="cja_migrate_aa_to_websdk"
->title="迁移Analytics实施以使用Web SDK"
->abstract="您可以通过该数据对象以AppMeasurement格式发送所有变量，而不是通过XDM对象发送数据。 此快捷方式允许您继续使用AppMeasurement逻辑将数据发送到Platform。"
+>title="迁移您的 Analytics 实施，以使用 Web SDK"
+>abstract="您可以通过数据对象以 AppMeasurement 格式发送所有变量，而不是通过 XDM 对象发送数据。此快捷方式允许您继续使用 AppMeasurement 逻辑将数据发送到 Platform。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -55,4 +56,3 @@ ht-degree: 0%
 1. （可选）根据需要为您的组织创建XDM架构。
 
 1. （视情况而定）如果您创建了XDM架构，请使用数据流映射将数据对象中的所有字段映射到XDM架构。
-

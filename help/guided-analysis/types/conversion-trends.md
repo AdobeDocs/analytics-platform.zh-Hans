@@ -12,7 +12,7 @@ ht-degree: 7%
 
 ---
 
-# [!UICONTROL 转化趋势] 分析 {#conversion-trends}
+# [!UICONTROL 转化趋势]分析 {#conversion-trends}
 
 <!-- markdownlint-disable MD034 -->
 
