@@ -4,10 +4,10 @@ description: 展示了两种估算使用情况的方法和一种管理使用情�
 role: Admin
 feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 400dc032be5d491cade84b0e98d88ff8a5949a2f
 workflow-type: tm+mt
-source-wordcount: '881'
-ht-degree: 71%
+source-wordcount: '875'
+ht-degree: 69%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 71%
 
    >[!CAUTION]
    >
-   >   此计数仅适用于事件数据，不适用于配置文件或查找数据。如果您有配置文件和查找数据，则计数会略高。但是，目前无法在用户界面中报告配置文件和查找数据的使用情况。此功能定于 2023 年推出。
+   >   此计数仅适用于事件数据，不适用于配置文件或查找数据。如果您有配置文件和查找数据，则计数会略高。但是，当前无法在用户界面中报告配置文件和查找数据的使用情况。
 
 1. 获得所有事件数据行的总和后，在您的公司与 Adobe 签署的 Customer Journey Analytics 合同中查找“数据行”权利。
 
