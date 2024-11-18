@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
-source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
+source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 9%
+source-wordcount: '590'
+ht-degree: 10%
 
 ---
 
@@ -18,13 +18,11 @@ ht-degree: 9%
 
 >[!NOTE]
 > 
->只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics为您的组织动态生成的升级步骤来Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
->
->完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
+>在回答[Customer Journey Analytics升级核对清单](https://gigazelle.github.io/cja-ttv/)中的问题时，使用此页上的信息。
 
-有多种升级到Customer Journey Analytics的方法，但并非所有升级路径都适用于每种类型的Adobe Analytics实施。 但是，无论Adobe Analytics在您的组织中如何实施，建议的升级路径都可用。
+Adobe Analytics有多种实施方式。 升级到Customer Journey Analytics时，并非所有升级路径都可用于所有Adobe Analytics实施。 但是，无论Adobe Analytics在您的组织中如何实施，建议的升级路径都可用。
 
-请通过以下信息帮助您了解当前的Adobe Analytics实施以及贵组织可用的升级路径。
+请通过以下信息了解您当前的Adobe Analytics实施以及贵组织可用的升级路径。
 
 如果您需要更具体的建议、指导或支持，请联系您的Adobe代表。
 

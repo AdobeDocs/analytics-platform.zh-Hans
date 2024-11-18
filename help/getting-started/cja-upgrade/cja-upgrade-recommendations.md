@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: dbeb3cabeaa7586e8a024a46e7ae42984e9c1c09
+source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1545'
 ht-degree: 5%
 
 ---
@@ -90,14 +90,6 @@ ht-degree: 5%
 
 1. （可选）如果要将Customer Journey Analytics与Adobe Journey Optimizer集成，请在实施中使用个性化对象，以便在Adobe Journey Optimizer中使用。
 
-1. （可选）使用Analytics Source Connector从Adobe Analytics引入历史数据：
-
-   1. [为Analytics源连接器创建架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)。
-
-   1. [创建Analytics源连接器并映射字段](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)。
-
-   1. [将Analytics源连接器数据集添加到连接](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)。
-
 1. 展开描述如何为Customer Journey Analytics实施实施Experience PlatformWeb SDK的部分，然后完成相关步骤：
 
    +++手动实施（JS文件）
@@ -135,6 +127,20 @@ ht-degree: 5%
 1. [在Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)中创建数据视图。
 
 1. [验证数据是否流入Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)。
+
+1. （可选）使用Analytics Source Connector从Adobe Analytics引入历史数据：
+
+   >[!NOTE]
+   >
+   >如果之前未创建Analytics源连接器，请使用以下步骤。
+   >
+   >如果您已将Analytics源连接器用于Customer Journey Analytics，请按照[从Analytics源连接器移动到Web SDK以进行Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)中的步骤操作。
+
+   1. [为Analytics源连接器创建XDM架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)。
+
+   1. [创建Analytics源连接器并映射字段](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)。
+
+   1. [将Analytics源连接器数据集添加到连接](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)。
 
 1. [迁移项目和组件](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration)。
 
