@@ -6,9 +6,9 @@ feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
 source-git-commit: 2f78905c2a1e94174a52269becc15474baf59f71
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '224'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -24,20 +24,20 @@ ht-degree: 69%
 
 ## 所需权限
 
-要创建Customer Journey Analytics连接，您需要以下权限。 有关权限的其他详细信息，请参阅[Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html)和[Adobe Experience Platform权限](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home)的文档。
+要创建 Customer Journey Analytics 连接，您需要以下权限。有关权限的更多详细信息，请参阅 [Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) 和 [Adobe Experience Platform 权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/home)文档。
 
-### 在Adobe Admin Console中：
+### 在 Adobe Admin Console 中：
 
 * Customer Journey Analytics：产品管理员
-* Adobe Experience Platform：已添加到名为&#x200B;*AEP-Default-All-Users*&#x200B;的产品配置文件
+* Adobe Experience Platform：已添加到名为 *AEP-Default-All-Users* 的产品轮廓中
 
-### 在Adobe Experience Platform权限内：
+### 在 Adobe Experience Platform 权限内：
 
 * 数据建模：查看架构，管理架构
 * 数据管理：查看数据集，管理数据集
 * 数据摄取：管理源
-* Identity Management：查看身份命名空间
-* 沙盒：相关Customer Journey Analytics连接中使用的沙盒
+* Identity Management：查看标识命名空间
+* 沙盒：相关 Customer Journey Analytics 连接中使用的沙盒
 
 >[!IMPORTANT]
 >
