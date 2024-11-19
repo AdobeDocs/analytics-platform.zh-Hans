@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
+exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
+source-git-commit: a1feb2e8458169ed208da2c42fab62d25e1015bb
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -33,17 +34,17 @@ Adobe建议将Analytics源连接器（用于引入历史数据）与Web SDK的�
 
 1. 创建Web SDK实现，如[详细推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#detailed-recommended-upgrade-steps) (在文章[从Adobe Analytics升级到Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)中)中所述。
 
-   配置Web SDK实施后，继续执行以下步骤。
+   配置Web SDK实施后，请继续执行以下步骤。
 
 1. 决定您在Web SDK实施中是使用Adobe Analytics模式还是XDM模式。
 
    有关详细信息，请参阅[为Customer Journey Analytics选择架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)。
 
-1. （视情况而定）如果您计划使用Adobe Analytics架构，请将Analytics源连接器自动创建的数据集添加到您的Customer Journey Analytics连接。
+1. （视情况而定）如果您计划将Adobe Analytics架构用于Web SDK实施，请将Analytics源连接器自动创建的数据集添加到Customer Journey Analytics连接。
 
    有关详细信息，请参阅[将Analytics源连接器数据集添加到连接](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)。
 
-1. （视情况而定）如果您计划创建XDM架构：
+1. （视情况而定）如果您计划创建一个XDM架构以用于您的Web SDK实施，请执行以下操作：
 
    1. [为Analytics源连接器创建XDM架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)。
 
@@ -54,11 +55,3 @@ Adobe建议将Analytics源连接器（用于引入历史数据）与Web SDK的�
    1. 删除原始Analytics源连接器。<!-- need to add steps somewhere about how to do this -->
 
    1. [创建新的Analytics Source Connector并映射字段](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)。
-
-
-
-
-
-
-
-
