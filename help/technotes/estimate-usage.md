@@ -4,10 +4,10 @@ description: 展示了两种估算使用情况的方法和一种管理使用情�
 role: Admin
 feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 400dc032be5d491cade84b0e98d88ff8a5949a2f
+source-git-commit: 191d1b7a4b851e93a44487dad4794709cbbd0374
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 69%
+source-wordcount: '856'
+ht-degree: 68%
 
 ---
 
@@ -29,10 +29,6 @@ ht-degree: 69%
 ## 估计连接大小 {#estimate-size}
 
 您可能需要知道 [!UICONTROL Customer Journey Analytics] 中当前有多少行事件数据。要准确了解贵组织的事件数据记录（数据行）使用情况，**对于贵组织创建的每个连接**，请执行以下操作。
-
->[!NOTE]
->
->在每个月的第一个星期五执行此操作，因为 Adobe 会在那天运行您的最新使用报告。
 
 1. 在 [!UICONTROL Customer Journey Analytics] 中，单击&#x200B;**[!UICONTROL 连接]**&#x200B;选项卡。
 
