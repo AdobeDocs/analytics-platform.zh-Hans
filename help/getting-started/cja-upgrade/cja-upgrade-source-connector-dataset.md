@@ -1,5 +1,5 @@
 ---
-title: 将Analytics源连接器数据集添加到连接
+title: 将 Analytics 源连接器数据集添加到连接
 description: 了解如何将Analytics源连接器数据集添加到连接
 role: Admin
 solution: Customer Journey Analytics
@@ -7,14 +7,14 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 424485a3-a076-4656-83b6-733f16cc2326
-source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
+source-git-commit: 0a47796a8b673ef7074a4f9fe865ff59fcf50aab
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 27%
+source-wordcount: '889'
+ht-degree: 28%
 
 ---
 
-# 将Analytics源连接器数据集添加到连接
+# 将 Analytics 源连接器数据集添加到连接
 
 >[!NOTE]
 > 
@@ -30,13 +30,17 @@ ht-degree: 27%
 
 要使用Analytics Source Connector将历史数据纳入Customer Journey Analytics，您需要：
 
-1. [为Analytics源连接器创建XDM架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+1. [为 Analytics 源连接器创建 XDM 架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
-1. [创建Analytics源连接器和映射字段](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+1. 如果您还没有Analytics源连接器，请[创建Analytics源连接器并将字段映射到XDM架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)。
+
+   或
+
+   如果您已有Analytics源连接器，请将源连接器中的[字段映射到XDM架构](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)。
 
 1. 将Analytics Source Connector数据集添加到连接，如下所述。
 
-## 将Analytics源连接器数据集添加到连接
+## 将 Analytics 源连接器数据集添加到连接
 
 在您[为历史数据创建Analytics Source Connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)之后，将自动为Analytics数据创建数据集。
 
@@ -83,20 +87,26 @@ ht-degree: 27%
 
 1. 在&#x200B;**[!UICONTROL 数据集回填]**&#x200B;部分中，选择&#x200B;**[!UICONTROL 请求回填]**。
 
-1. 通过输入开始和结束日期或选择日历图标![日历](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)，定义要包含回填的期间。
+1. 通过输入开始和结束日期或选择日历图标![日历](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)，定义希望连接回填包含在Customer Journey Analytics中的期间。
 
-   Analytics Source Connector为生产沙盒导入13个月的数据（不考虑数据大小）。 非生产沙盒中的回填时间为3个月。
+   在指定请求回填的日期时务必明确。 根据多种因素，您可能需要执行以下任一操作：
 
-   >[!IMPORTANT]
-   >
-   >在指定请求回填的日期时务必明确。 结束日期应该是您首次开始从Web SDK实施中收集数据的日期。
-   >
-   >或者，您可以选择在首次开始通过Web SDK实施收集数据的日期之后不久的日期，然后使用区段过滤掉重叠数据。
+   * 选择一个与首次开始使用Web SDK实施收集数据的日期相同的结束日期。
+
+   * 选择一个结束日期，该日期紧跟您首次开始通过Web SDK实施收集数据的日期，然后使用数据视图区段过滤掉重叠数据。
+
+   * 选择导致数据更大重叠的结束日期，然后使用数据视图区段过滤掉重叠数据。
+
+     **注意：**&#x200B;此选项将导致成本增加，因为连接中会有更多的行。
 
    <!-- Include any of the following?  Make sure you're explicit as to the dates you request backfill to. You want to request it to the date that you start gathering data with your Web SDK implementation. Also possibly include segments for any overlapping date. So you could request everything and then use a segment to exclude data that you don't want. That way if you need to move up the date, then you could change the date in the filter. Downside would be that you might pay for double rows.  When they do that, they're going to see all schema fields from both their custom schema and their Analytics schema. So they'll need to be cognizant to select the right fields, and never select any Analytics fields, because they will be mapped as part of the source connector. Never select any Analytics field group fields because they'll be mapped.  -->
 
 1. 选择&#x200B;**[!UICONTROL 队列回填]**。
 
 1. 选择&#x200B;**[!UICONTROL 添加数据集]**，然后选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存连接。
+
+1. （视情况而定）如果您使用的是查找数据集，则必须创建查找数据集并将其添加到连接中。 有关详细信息，请参阅[创建查找数据集以对Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)中的数据分类。
+
+   只有在配置Web SDK实施时尚未这样做的情况下，才需要执行此操作。
 
 1. 继续执行[建议的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)或[动态生成的升级步骤](https://gigazelle.github.io/cja-ttv/)。

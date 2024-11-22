@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 1e4c14334da54a5a6e4a0f36b3538c6e4d1a0b6f
+source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 2%
+source-wordcount: '847'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 在使用Experience PlatformWeb SDK时，为了对Customer Journey Analytics中的数据分类，您需要为包含要分类的数据的每个维度创建XDM架构和查找数据集。
 
-## 创建 XDM 架构
+## 创建要与查找数据集一起使用的XDM架构
 
 为包含要在Customer Journey Analytics中分类的数据的每个维度创建新的XDM架构。 在后续步骤中创建查找数据集时，它将引用此架构。
 
@@ -100,7 +100,7 @@ ht-degree: 2%
 
 ## 在Customer Journey Analytics中将查找数据集添加到您的连接
 
-在您[创建XDM架构](#create-an-xdm-schema-for-lookup-datasets)和[创建查找数据集](#create-a-lookup-dataset)之后，您需要在Customer Journey Analytics中将查找数据集添加到您的连接。
+在您[创建XDM架构](#create-an-xdm-schema-for-lookup-datasets)并[创建查找数据集](#create-a-lookup-dataset)之后，您需要在Customer Journey Analytics中将查找数据集添加到您的连接。
 
 对包含要分类的数据的每个维度重复此过程。
 
@@ -120,9 +120,9 @@ ht-degree: 2%
 
 1. 选择&#x200B;**[!UICONTROL 添加数据集]**，然后选择&#x200B;**[!UICONTROL 保存]**。
 
+   <!-- is there a step right in between here where you select the dataset -->
+
 1. 使用&#x200B;**[!UICONTROL 键]**&#x200B;字段和&#x200B;**[!UICONTROL 匹配键]**&#x200B;字段，在查询数据集中的字段与事件或摘要数据集中的字段之间建立关联。
 
 1. 在Customer Journey Analytics中将所有查找数据集添加到连接后，继续执行[建议的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)或[动态生成的升级步骤](https://gigazelle.github.io/cja-ttv/)。
-
-1. 继续执行[建议的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)或[动态生成的升级步骤](https://gigazelle.github.io/cja-ttv/)。
 

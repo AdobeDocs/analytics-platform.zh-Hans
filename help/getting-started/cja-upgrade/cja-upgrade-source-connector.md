@@ -1,5 +1,5 @@
 ---
-title: 创建Analytics源连接器和映射字段
+title: 创建 Analytics 源连接器并映射字段
 description: 了解如何创建Analytics源连接器和映射字段
 role: Admin
 solution: Customer Journey Analytics
@@ -7,14 +7,14 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
-source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
+source-git-commit: 0a47796a8b673ef7074a4f9fe865ff59fcf50aab
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 2%
+source-wordcount: '689'
+ht-degree: 8%
 
 ---
 
-# 创建Analytics源连接器和映射字段
+# 创建 Analytics 源连接器并映射字段
 
 >[!NOTE]
 > 
@@ -30,13 +30,17 @@ ht-degree: 2%
 
 要使用Analytics Source Connector将历史数据纳入Customer Journey Analytics，您需要：
 
-1. [为Analytics源连接器创建XDM架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+1. [为 Analytics 源连接器创建 XDM 架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
-1. 创建Analytics源连接器和映射字段，如下所述。
+1. 如果您还没有Analytics Source Connector，请创建Analytics Source Connector并将字段映射到XDM架构，如下所述。
 
-1. [将Analytics源连接器数据集添加到连接](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+   或
 
-## 创建Analytics源连接器和映射字段
+   如果您已有Analytics源连接器，请将源连接器中的[字段映射到XDM架构](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)。
+
+1. [将 Analytics 源连接器数据集添加到连接](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+
+## 创建 Analytics 源连接器并映射字段
 
 创建XDM架构后，您需要创建Adobe Analytics源连接器以用于历史数据。 (有关创建源连接器的更全面的一般准则，请参阅[在UI中创建Adobe Analytics源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)。)
 
@@ -69,6 +73,8 @@ ht-degree: 2%
    ![映射架构字段](assets/schema-mapping.png)
 
    1. 在&#x200B;**[!UICONTROL Source字段]**&#x200B;中，从“Adobe Analytics ExperienceEvent模板”字段组中选择一个Adobe Analytics字段。 然后，在&#x200B;**[!UICONTROL 目标字段]**&#x200B;中，选择要将其映射到的XDM字段。
+
+      由于AppMeasurement和XDM之间固有的架构差异，并非所有Adobe Analytics字段在XDM中都拥有相应的字段。
 
    1. 为您用于在Adobe Analytics中收集数据的Adobe Analytics ExperienceEvent Template字段组中的每个字段重复此过程。
 

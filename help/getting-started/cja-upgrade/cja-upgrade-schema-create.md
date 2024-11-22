@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
-source-git-commit: ce19cf00d70220b6d7dcdfaeb1d4c9ec5c14e5dd
+source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1073'
 ht-degree: 46%
 
 ---
@@ -26,13 +26,13 @@ ht-degree: 46%
 >
 >在开始创建XDM架构之前，请与您的数据团队和整个组织中的其他利益相关者合作，确定您组织的理想架构设计，以便用于Customer Journey Analytics和您使用的其他Adobe Experience Platform应用程序。 有关详细信息，请参阅[架构您的架构以用于Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)。
 
-Adobe建议在升级到Customer Journey Analytics时创建Experience Data Model (XDM)架构。 XDM架构允许精简架构，根据您的组织和您使用的特定Platform应用程序的需求量身定制。 当需要对架构进行更改时，您不必在数千个未使用的字段中进行筛选，即可找到需要更新的字段。
+Adobe建议在升级到Customer Journey Analytics时创建自定义Experience Data Model (XDM)架构。 自定义架构允许精简架构，根据您的组织和您使用的特定Platform应用程序的需求量身定制。 当需要对架构进行更改时，您不必在数千个未使用的字段中进行筛选，即可找到需要更新的字段。
 
 ## 创建架构
 
 您定义的XDM架构表示您收集到Adobe Experience Platform中的数据模型。
 
-要创建方案，请执行以下操作：
+要创建自定义方案，请执行以下操作：
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
