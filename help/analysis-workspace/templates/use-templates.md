@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 1345981ac78272935ffa8bfc50de8c41223a132f
+source-git-commit: 658fce422d8d5b59d113b5aa512eedee987afd06
 workflow-type: tm+mt
-source-wordcount: '15295'
+source-wordcount: '15373'
 ht-degree: 58%
 
 ---
@@ -33,9 +33,17 @@ Analysis Workspace中的模板（或公司模板）可快速分析最常见的�
 
 1. 在 Analysis Workspace 中，选择 [!UICONTROL **Workspace**] 选项卡。
 
-1. 选择&#x200B;[!UICONTROL **模板**]。
+   ![模板选项卡](assets/view-prebuilt-templates.png)
 
-   ![“报告”选项卡](assets/view-prebuilt-reports.png)
+1. 在&#x200B;[!UICONTROL **模板**]&#x200B;部分中，选择以下任一选项卡：
+
+   * **[!UICONTROL Adobe模板]**：显示Adobe提供的所有模板。
+
+   * **[!UICONTROL _login_company_name _模板]**：显示组织中为创建的所有公司模板。
+
+     公司模板只能由管理员创建。
+
+1. 通过选择列视图![列视图图标](assets/column-view-icon.png)或卡片视图![卡片视图图标](assets/card-view-icon.png)图标，选择是在列视图还是卡片视图中查看模板。
 
 1. 在搜索字段中，开始键入要查找的模板的名称，然后从模板列表中选择该模板。
 
@@ -61,19 +69,19 @@ Analysis Workspace中的模板（或公司模板）可快速分析最常见的�
 
 1. 选择模板以根据所选模板创建报告。
 
-## 自定义并保存模板 {#use-reports}
+## 基于模板创建项目 {#use-reports}
 
-模板可能并不完全适合您的需求，但它可以让您接近模板。 在这些情况下，您可以使用模板作为起点，然后对其进行自定义以最符合您的特定目的。
+模板可能并不完全适合您的需求，但它可以让您接近模板。 在这些情况下，您可以使用模板作为项目的起点，然后对其进行自定义以最符合您的特定目的。
 
 如果在进行更改后离开模板，系统将提示您保存或放弃更改。 将更改保存到模板可将模板另存为新项目。
 
-要自定义并保存模板，请执行以下操作：
+要自定义模板并将其另存为项目，请执行以下操作：
 
 1. 在 Adobe Analytics 中，选择 [!UICONTROL **Workspace**] 选项卡。
 
 1. 选择&#x200B;[!UICONTROL **模板**]&#x200B;选项卡。
 
-1. 选择要查看的模板。 例如，在&#x200B;[!UICONTROL **最受欢迎**]&#x200B;部分，选择&#x200B;[!UICONTROL **页面**]&#x200B;报告。
+1. 选择要查看的模板。 例如，在&#x200B;[!UICONTROL **最受欢迎**]&#x200B;下，选择&#x200B;[!UICONTROL **页面**]&#x200B;模板。
 
    Analysis Workspace中显示的“页面”模板显示了两个[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)（[条状图](/help/analysis-workspace/visualizations/bar.md)和[摘要数字](/help/analysis-workspace/visualizations/summary-number-change.md)）和一个[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)。 使用的量度为“发生次数”。
 
@@ -82,7 +90,7 @@ Analysis Workspace中的模板（或公司模板）可快速分析最常见的�
 1. 执行下列任一操作：
 
    * 查看模板。
-   * 将一个或多个区段拖到顶部的“区段”放置区中。例如，拖动区段&#x200B;[!UICONTROL **移动客户**]&#x200B;并查看结果。
+   * 将一个或多个筛选器拖到顶部的筛选器拖放区域中。 例如，拖动筛选器&#x200B;[!UICONTROL **移动客户**]&#x200B;并查看结果。
    * 转到右上方的日历来更改日期范围。
    * 添加维度细分、拖入其他量度，并且通常根据您的需求自定义模板。
 
