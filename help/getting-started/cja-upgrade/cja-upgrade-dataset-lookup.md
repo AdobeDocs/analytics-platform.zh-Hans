@@ -7,7 +7,7 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 1%
@@ -26,11 +26,11 @@ ht-degree: 1%
 
 使用Analytics Source Connector时，某些标准查找数据集会在报告时自动应用。 有关详细信息，请参阅[向数据集添加标准查找](/help/connections/standard-lookups.md)。
 
-在使用Experience PlatformWeb SDK时，为了对Customer Journey Analytics中的数据分类，您需要为包含要分类的数据的每个维度创建XDM架构和查找数据集。
+在使用Experience PlatformWeb SDK时，为了对Customer Journey Analytics中的数据分类，您需要为包含要分类的数据的每个维度创建自定义架构和查找数据集。
 
-## 创建要与查找数据集一起使用的XDM架构
+## 创建要用于查找数据集的自定义架构
 
-为包含要在Customer Journey Analytics中分类的数据的每个维度创建新的XDM架构。 在后续步骤中创建查找数据集时，它将引用此架构。
+为每个维度创建一个新的自定义架构，这些维度包含您要在Customer Journey Analytics中分类的数据。 在后续步骤中创建查找数据集时，它将引用此架构。
 
 对包含要分类的数据的每个维度重复此过程。
 
@@ -58,7 +58,7 @@ ht-degree: 1%
 
 ## 创建查询数据集
 
-在您[创建用于查找数据集的XDM架构](#create-an-xdm-schema-for-lookup-datasets)之后，您需要创建查找数据集并将其映射到您的架构。
+在您[创建自定义架构](#create-a-custom-schema-to-use-with-the-lookup-dataset)以用于查询数据集后，您需要创建查询数据集并将其映射到您的架构。
 
 对包含要分类的数据的每个维度重复此过程。
 
@@ -100,7 +100,7 @@ ht-degree: 1%
 
 ## 在Customer Journey Analytics中将查找数据集添加到您的连接
 
-在您[创建XDM架构](#create-an-xdm-schema-for-lookup-datasets)并[创建查找数据集](#create-a-lookup-dataset)之后，您需要在Customer Journey Analytics中将查找数据集添加到您的连接。
+在您[创建自定义架构](#create-a-custom-schema-to-use-with-the-lookup-dataset)并[创建查询数据集](#create-a-lookup-dataset)之后，您需要在Customer Journey Analytics中将查询数据集添加到您的连接。
 
 对包含要分类的数据的每个维度重复此过程。
 

@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
-source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -22,17 +22,17 @@ ht-degree: 0%
 
 <!-- this page exists as the "Learn more" link in the info icons for the options "I am comfortable using my Adobe Analytics schema as a basis" and "I want to use a schema tailored to my organization" -->
 
-升级到Customer Journey Analytics时，Adobe建议创建新的XDM模式，以便在您开始使用其他Platform服务时更好地满足贵组织的需求。 或者，您也可以选择使用现有的Adobe Analytics架构。
+升级到Customer Journey Analytics时，Adobe建议创建一个自定义Experience Data Model (XDM)架构，以便在您开始使用其他Platform服务时更好地满足贵组织的需求。 或者，您也可以选择使用现有的Adobe Analytics架构。
 
 考虑每种方法的优缺点。
 
-## 创建为您的组织定制的XDM架构（推荐）
+## 创建为您的组织定制的自定义架构（推荐）
 
-Adobe建议在升级到Customer Journey Analytics时创建新的XDM架构。
+Adobe建议在升级到Customer Journey Analytics时创建自定义架构。
 
 | 优势 | 缺点 |
 |----------|---------|
-| <ul><p>更新到您自己的XDM架构的优势包括：</p><ul><li>简化架构，根据贵组织的需求以及您使用的特定平台应用程序量身定制。</li><p>当需要对架构进行更改时，您不必在数千个未使用的字段中进行筛选，即可找到需要更新的字段。</p></ul> | <p>更新到您自己的XDM架构的缺点包括：</p><ul><li>在开始向Platform发送数据之前，需要更新架构，这是一个非常耗时的过程。</li></ul> |
+| <ul><p>将更新到您自己的自定义架构的优点包括：</p><ul><li>简化架构，根据贵组织的需求以及您使用的特定平台应用程序量身定制。</li><p>当需要对架构进行更改时，您不必在数千个未使用的字段中进行筛选，即可找到需要更新的字段。</p></ul> | <p>更新到您自己的自定义架构的缺点包括：</p><ul><li>在开始向Platform发送数据之前，需要更新架构，这是一个非常耗时的过程。</li></ul> |
 
 ## 使用您现有的Adobe Analytics架构
 

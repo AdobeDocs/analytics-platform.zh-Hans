@@ -1,20 +1,20 @@
 ---
-title: 为 Analytics 源连接器创建 XDM 架构
-description: 了解如何为Analytics源连接器创建XDM架构
+title: 为Analytics源连接器创建自定义架构
+description: 了解如何为Analytics源连接器创建自定义架构
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
-source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 8%
+source-wordcount: '545'
+ht-degree: 3%
 
 ---
 
-# 为 Analytics 源连接器创建 XDM 架构
+# 为Analytics源连接器创建自定义架构
 
 >[!NOTE]
 > 
@@ -26,13 +26,13 @@ ht-degree: 8%
 
 您可以使用Analytics Source Connector将Adobe Analytics报表包数据引入Adobe Experience Platform。 然后，此数据可用作Customer Journey Analytics中的历史数据。
 
-此过程假设在升级到Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)时您要[创建XDM架构，因为您需要一个根据您的组织需求以及您使用的特定Platform应用程序量身定制的简化架构。
+此过程假定您希望[创建一个自定义架构以用于您的Customer Journey AnalyticsWeb SDK实施](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)，因为您需要一个针对您的组织需求以及您使用的特定Platform应用程序量身定制的简化架构。
 
 要使用Analytics Source Connector将历史数据纳入Customer Journey Analytics，您需要：
 
-1. 为Analytics源连接器创建XDM架构，如下所述。
+1. 为Analytics源连接器创建自定义架构，如下所述。
 
-1. 如果您还没有Analytics源连接器，请[创建Analytics源连接器并将字段映射到XDM架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)。
+1. 如果您还没有Analytics源连接器，请[创建Analytics源连接器并将字段映射到您的自定义架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)。
 
    或
 
@@ -40,9 +40,9 @@ ht-degree: 8%
 
 1. [将 Analytics 源连接器数据集添加到连接](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
 
-## 为 Analytics 源连接器创建 XDM 架构
+## 为Analytics源连接器创建自定义架构
 
-您应该已经[为Experience PlatformWeb SDK实现创建了新的XDM架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)以用于Customer Journey Analytics。 此架构应包含您计划收集其数据的字段的任何字段组。
+您应该已经[为Experience PlatformWeb SDK实现创建了新的自定义架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)以用于Customer Journey Analytics。 此架构应包含您计划收集其数据的字段的任何字段组。
 
 您现在需要使用Web SDK架构中的这些相同的字段组，并将其添加到可以与Analytics Source Connector一起使用的新架构中。
 
@@ -52,9 +52,9 @@ Analytics Source Connector的此架构需要包含：
 
 * “Adobe Analytics ExperienceEvent模板”字段组
 
-要创建用于Analytics源连接器的XDM架构，请执行以下操作：
+要创建与Analytics Source Connector一起使用的自定义架构，请执行以下操作：
 
-1. 在Adobe Experience Platform中，开始创建新的XDM架构，如[创建要与Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)一起使用的XDM架构中所述。
+1. 在Adobe Experience Platform中，开始创建新的自定义架构，如[创建自定义架构以用于Customer Journey AnalyticsWeb SDK实施](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)中所述。
 
 1. 添加您为Web SDK实施创建的架构中包含的所有字段组（包括任何自定义字段组）。
 

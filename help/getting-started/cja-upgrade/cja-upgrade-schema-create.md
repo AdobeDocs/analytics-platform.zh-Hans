@@ -1,20 +1,20 @@
 ---
-title: 创建用于Customer Journey Analytics的架构
-description: 了解从Adobe Analytics升级到Customer Journey Analytics时推荐的路径
+title: 创建用于Customer Journey Analytics的自定义架构
+description: 了解如何为Customer Journey Analytics创建自定义架构
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
-source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 46%
+source-wordcount: '1083'
+ht-degree: 45%
 
 ---
 
-# 创建一个XDM架构以用于您的Customer Journey AnalyticsWeb SDK实施
+# 创建用于您的Customer Journey AnalyticsWeb SDK实施的自定义架构
 
 >[!NOTE]
 > 
@@ -24,15 +24,15 @@ ht-degree: 46%
 
 >[!IMPORTANT]
 >
->在开始创建XDM架构之前，请与您的数据团队和整个组织中的其他利益相关者合作，确定您组织的理想架构设计，以便用于Customer Journey Analytics和您使用的其他Adobe Experience Platform应用程序。 有关详细信息，请参阅[架构您的架构以用于Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)。
+>在开始创建自定义架构之前，请与您的数据团队和整个组织中的其他利益相关者合作，确定您组织的理想架构设计，以便用于Customer Journey Analytics和您使用的其他Adobe Experience Platform应用程序。 有关详细信息，请参阅[架构您的架构以用于Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)。
 
-Adobe建议在升级到Customer Journey Analytics时创建自定义Experience Data Model (XDM)架构。 自定义架构允许精简架构，根据您的组织和您使用的特定Platform应用程序的需求量身定制。 当需要对架构进行更改时，您不必在数千个未使用的字段中进行筛选，即可找到需要更新的字段。
+Adobe建议在升级到Customer Journey Analytics时创建要与Web SDK一起使用的自定义Experience Data Model (XDM)架构。 自定义架构允许精简架构，根据您的组织和您使用的特定Platform应用程序的需求量身定制。 当需要对架构进行更改时，您不必在数千个未使用的字段中进行筛选，即可找到需要更新的字段。
 
 ## 创建架构
 
-您定义的XDM架构表示您收集到Adobe Experience Platform中的数据模型。
+您为Web SDK实施定义的自定义架构表示您收集到Adobe Experience Platform中的数据模型。
 
-要创建自定义方案，请执行以下操作：
+要创建自定义架构，请执行以下操作：
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
@@ -48,7 +48,7 @@ Adobe建议在升级到Customer Journey Analytics时创建自定义Experience Da
 
       >[!INFO]
       >
-      >    体验事件架构用于为配置文件的&#x200B;_行为_&#x200B;建模（如场景名称、要添加到购物车的按钮）。 个人配置档案模式用于对个人配置档案&#x200B;_属性_（如姓名、电子邮件、性别）建模。
+      >    体验事件架构用于为配置文件的&#x200B;_行为_&#x200B;建模（如场景名称、要添加到购物车的按钮）。 个人轮廓模式用于对轮廓&#x200B;_属性_（如姓名、电子邮件、性别）建模。
 
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
@@ -113,7 +113,7 @@ Adobe建议在升级到Customer Journey Analytics时创建自定义Experience Da
 
    ![指定 ECID 作为身份](./assets/specify-identity.png)
 
-   您将 Experience Cloud Identity 指定为 Adobe Experience Platform Identity 服务可用于组合（缝合）具有相同 ECID 的配置文件行为的主要身份。
+   您将 Experience Cloud Identity 指定为 Adobe Experience Platform Identity 服务可用于组合（缝合）具有相同 ECID 的轮廓行为的主要身份。
 
    选择 **[!UICONTROL 应用]**。您会看到 ecid 属性中出现指纹图标。
 
@@ -121,7 +121,7 @@ Adobe建议在升级到Customer Journey Analytics时创建自定义Experience Da
 
     ![将电子邮件指定为标识](./assets/specify-email-identity.png)
 
-   您将电子邮件地址指定为 Adobe Experience Platform Identity 服务可用于组合（拼接）配置文件行为的另一个标识。
+   您将电子邮件地址指定为 Adobe Experience Platform Identity 服务可用于组合（拼接）轮廓行为的另一个标识。
 
    选择 **[!UICONTROL 应用]**。您会看到电子邮件属性中显示指纹图标。
 
@@ -129,25 +129,25 @@ Adobe建议在升级到Customer Journey Analytics时创建自定义Experience Da
 
 1. （可选）如果要将Customer Journey Analytics与RTCDP集成，请选择显示架构名称的架构根元素，然后选择&#x200B;**[!UICONTROL 配置文件]**&#x200B;开关。
 
-   系统会提示您启用配置文件的模式。一旦启用，当数据被引入基于此模式的数据集中时，该数据将合并到实时客户配置文件。
+   系统会提示您启用轮廓的模式。一旦启用，当数据被引入基于此模式的数据集中时，该数据将合并到实时客户轮廓。
 
-   有关详细信息，请参阅[启用模式以在实时客户配置文件中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile)。
+   有关详细信息，请参阅[启用模式以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile)。
 
    >[!IMPORTANT]
    >
    >为配置文件启用架构后，无法为配置文件禁用该架构。
 
-   ![为配置文件启用模式](./assets/enable-for-profile.png)
+   ![为轮廓启用模式](./assets/enable-for-profile.png)
 
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存模式。
 
-   您已经创建了一个最小模式，用于对您可以从您的网站捕获的数据进行建模。该模式允许使用 Experience Cloud Identity 和电子邮件地址来识别配置文件。通过启用配置文件模式，您可以确保从您的网站捕获的数据被添加到实时客户配置文件中。
+   您已经创建了一个最小模式，用于对您可以从您的网站捕获的数据进行建模。该模式允许使用 Experience Cloud Identity 和电子邮件地址来识别轮廓。通过启用轮廓模式，您可以确保从您的网站捕获的数据被添加到实时客户轮廓中。
 
-   除了行为数据之外，您还可以从您的站点捕获配置文件属性数据（例如订阅时事通讯的配置文件的详细信息）。
+   除了行为数据之外，您还可以从您的站点捕获轮廓属性数据（例如订阅时事通讯的轮廓的详细信息）。
 
-   要捕获此配置文件数据，您需要：
+   要捕获此轮廓数据，您需要：
 
-   * 基于 XDM 个人配置文件类创建模式。
+   * 基于 XDM 个人轮廓类创建模式。
 
    * 将 Profile Core v2 字段组添加到模式中。
 
@@ -155,7 +155,7 @@ Adobe建议在升级到Customer Journey Analytics时创建自定义Experience Da
 
    * 将Experience CloudID定义为主标识符，将电子邮件定义为标识符。
 
-   * 为配置文件启用模式
+   * 为轮廓启用模式
 
    请参阅[在 UI 中创建和编辑模式](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html)，了解有关向模式添加和删除字段组和单个字段的更多信息。
 
