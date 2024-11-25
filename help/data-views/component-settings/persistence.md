@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: ce1f27b00b55d5c3780907c50107b081264000bd
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 80%
+ht-degree: 81%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 80%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_persistence"
 >title="持久性"
->abstract="配置应用于维度的默认分配模型。分配在报告中应用于过滤器之前。有关详细信息，请参阅[分配设置](/help/data-views/component-settings/persistence.md#allocation-settings)、[到期设置](/help/data-views/component-settings/persistence.md#expiration-settings)、[绑定维度](/help/data-views/component-settings/persistence.md#binding-dimension)和[绑定量度](/help/data-views/component-settings/persistence.md#binding-metric)。"
+>abstract="配置应用于维度的默认分配模型。分配在报告中应用于过滤器之前。请参阅[分配设置](/help/data-views/component-settings/persistence.md#allocation-settings)、[过期设置](/help/data-views/component-settings/persistence.md#expiration-settings)、[绑定维度](/help/data-views/component-settings/persistence.md#binding-dimension)和[绑定量度](/help/data-views/component-settings/persistence.md#binding-metric)的详细信息。"
 
 <!-- markdownlint-enable MD034 -->
 
