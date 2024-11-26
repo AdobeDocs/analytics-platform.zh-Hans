@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
+source-git-commit: 354bdb440e36dc990f54d887908f9fb9c0a50110
 workflow-type: tm+mt
-source-wordcount: '1469'
-ht-degree: 15%
+source-wordcount: '1549'
+ht-degree: 14%
 
 ---
 
@@ -65,6 +65,16 @@ Customer Journey Analytics由三个访问级别或三个角色控制：产品管
   | [!UICONTROL Identity Management] | [!UICONTROL 查看身份命名空间] | 对身份命名空间的只读访问。 |
 
   有关Experience Platform权限的详细信息，请参阅[管理产品配置文件的权限](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions)。
+
+
+* 如果Adobe Journey Optimizer与存在AJO连接的CJA集成，则还必须添加历程权限才能访问连接：
+
+  | 类别 | 权限 | 描述 |
+  |---|---|---|
+  | [!UICONTROL 历程] | [!UICONTROL 查看历程事件、数据源和操作] | 对历程事件、历程自定义操作和历程数据源的只读访问权限。 |
+  | [!UICONTROL 历程] | [!UICONTROL 管理历程事件、数据源和操作] | 读取、创建、编辑和删除事件、源或操作。 |
+  | [!UICONTROL 历程] | [!UICONTROL 查看历程] | 对历程的只读访问权限。 |
+  | [!UICONTROL 历程] | [!UICONTROL 管理历程] | 读取、创建、编辑和删除历程。 |
 
 * 将数据集导出到[目标](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets)
 
