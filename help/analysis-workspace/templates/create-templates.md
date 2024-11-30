@@ -5,9 +5,10 @@ feature: Workspace Basics
 role: User, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 96844fae07734e979e9dd4689d5eded6a7a3b926
+exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
+source-git-commit: b9ab9a7cb07759f4be8eae0f1d29eba4d5fa1be3
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '573'
 ht-degree: 4%
 
 ---
@@ -20,15 +21,13 @@ ht-degree: 4%
 
 ## 创建模板
 
-<!-- is this only admins? -->
-
 要创建可供登录公司人员使用的新模板，请执行以下操作：
 
 1. 在Analysis Workspace中，将项目构建到所需的状态。
 
 1. 选择&#x200B;[!UICONTROL **项目**] > **[!UICONTROL 另存为模板……]**。
 
-   ![公司报告](assets/company-template-save.png)
+   ![公司模板](assets/company-template-save.png)
 
 1. 在[!UICONTROL 另存为模板]对话框中指定以下信息：
 
@@ -45,11 +44,37 @@ ht-degree: 4%
 
 有关用户如何基于模板创建项目的信息，请参阅[使用模板](/help/analysis-workspace/templates/use-templates.md)中的[基于模板创建项目](/help/analysis-workspace/templates/use-templates.md#create-a-project-based-on-a-template)。
 
-## 管理公司模板
+## 编辑或删除模板
 
-管理员可以删除、重命名、标记和批准公司模板。
+管理员可以编辑或删除公司模板。
 
-要显示和管理公司模板，请执行以下操作：
+1. 在Analysis Workspace中，选择&#x200B;[!UICONTROL **Workspace**]&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL _login_company_name _模板]**。
+
+1. 如果您在列视图![列视图图标](assets/column-view-icon.png)中查看模板：
+
+   1. 转到要编辑或删除的模板，选择模板名称旁边的信息图标。
+
+      ![公司模板信息](assets/company-template-info.png)
+
+   1. 选择&#x200B;**[!UICONTROL 预览]**。
+
+   1. 选择更多图标，然后选择&#x200B;**[!UICONTROL 编辑]**&#x200B;或&#x200B;**[!UICONTROL 删除]**。
+
+      ![编辑或删除模板](assets/company-template-edit-delete.png)
+
+1. 如果您在卡片视图![卡片视图图标](assets/card-view-icon.png)中查看模板：
+
+   1. 找到要编辑或删除的模板。
+
+      ![公司模板卡片视图](assets/company-template-cards.png)
+
+   1. 选择更多图标，然后选择&#x200B;**[!UICONTROL 编辑]**&#x200B;或&#x200B;**[!UICONTROL 删除]**。
+
+      ![公司模板信息卡编辑或删除](assets/company-template-card-edit-delete.png)
+
+## 重命名、标记或批准模板
+
+管理员可以重命名、标记和批准公司模板。
 
 1. 在Analysis Workspace中，选择&#x200B;[!UICONTROL **Workspace**]&#x200B;选项卡，然后在左边栏中选择&#x200B;**[!UICONTROL 项目选项卡]**。
 
@@ -61,24 +86,20 @@ ht-degree: 4%
 
    公司模板可由模板名称前面的![模板图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileTemplate_18_N.svg)来标识。
 
-   <!-- Update screenshot -->
-
-   ![显示公司模板筛选器](assets/company-reports-filter.png)
-
-1. 在模板列表中，选择一个或多个公司模板。
+   ![显示公司模板筛选器](assets/company-templates-filter.png)
 
 1. 单击模板旁边的&#x200B;**...**&#x200B;省略号图标以查看可用选项。
 
-   <!-- Update screenshot -->
+   ![公司模板操作](assets/company-templates-actions.png)
 
-   ![公司模板操作](assets/company-reports-actions.png)
+1. 选择&#x200B;**[!UICONTROL 重命名]**、**[!UICONTROL 标记]**&#x200B;或&#x200B;**[!UICONTROL 批准]**。
 
-1. 选择&#x200B;**[!UICONTROL 删除]**、**[!UICONTROL 重命名]**、**[!UICONTROL 标记]**&#x200B;或&#x200B;**[!UICONTROL 批准]**。
+   您也可以删除模板，也可以按照[编辑或删除模板](#edit-or-delete-templates)中的说明删除模板。
 
 1. （可选）要返回到常规视图，请在筛选器边栏中取消选择&#x200B;**[!UICONTROL 公司模板]**。
 
 ## 访问公司模板
 
-与Adobe提供的模板一样，您可以访问组织中人员创建的模板。
+与Adobe提供的模板一样，组织内的用户可以访问管理员创建的模板。
 
 有关如何访问公司模板的信息，请参阅[使用模板](/help/analysis-workspace/templates/use-templates.md)中的[访问和运行模板](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template)。
