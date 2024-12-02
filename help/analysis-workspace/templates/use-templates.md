@@ -6,10 +6,10 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: b9ab9a7cb07759f4be8eae0f1d29eba4d5fa1be3
+source-git-commit: 8561f14d5b428e55614fe1465f75d2be6660468d
 workflow-type: tm+mt
-source-wordcount: '15383'
-ht-degree: 79%
+source-wordcount: '15449'
+ht-degree: 78%
 
 ---
 
@@ -43,7 +43,11 @@ Analysis Workspace中的模板（或公司模板）可快速分析最常见的�
 
      公司模板只能由管理员创建。 有关如何创建公司模板的信息，请参阅[创建和管理模板](/help/analysis-workspace/templates/create-templates.md)。
 
-1. 通过选择列视图![列视图图标](assets/column-view-icon.png)或卡片视图![卡片视图图标](assets/card-view-icon.png)图标，选择是在列视图还是卡片视图中查看模板。
+1. 使用以下任一选项可更改查看可用模板的方式：
+
+   * 通过选择列视图![列视图图标](assets/column-view-icon.png)或卡片视图![卡片视图图标](assets/card-view-icon.png)图标，选择是在列视图还是卡片视图中查看模板。
+
+   * 使用卡片视图![卡片视图图标](assets/card-view-icon.png)时，请从以下排序顺序中进行选择： **[!UICONTROL 最近使用]**、**[!UICONTROL 最受欢迎]**、**[!UICONTROL 按字母顺序]**、**[!UICONTROL 类别]**。
 
 1. 在搜索字段中，开始键入要查找的模板的名称，然后从模板列表中选择该模板。
 
@@ -57,17 +61,23 @@ Analysis Workspace中的模板（或公司模板）可快速分析最常见的�
 
    有关可用模板的列表，请参阅下面的[可用模板](#available-templates)部分。
 
-1. （可选）查看并使用包含数据视图中不可用组件的模板。 （默认情况下，显示的模板仅限于使用数据视图中可用组件的模板。）
+1. （可选）查看并使用包含数据视图中不可用组件的模板。 （默认情况下，仅当模板使用数据视图中可用的组件时，才会显示模板。）
 
-   1. 选择（筛选器选项的名称？） 以显示需要其他组件的模板。
+   1. 选择过滤器图标。
 
-      <!-- add screenshot -->
+   1. 选择&#x200B;**[!UICONTROL 未准备就绪]**&#x200B;以显示需要其他组件的模板。
 
-   1. 选择要使用的模板。
-
-   1. 如果模板包含数据视图中不可用的组件，则会显示一条消息，指示缺少哪些组件。 单击（按钮？） 转到数据视图，您可以在其中自动创建它们。<!--how do you do this? Walk through the process -->
+      ![使用缺少组件的模板](assets/template-not-ready.png)
 
 1. 选择模板以根据所选模板创建报告。
+
+1. （视情况而定）如果模板包含数据视图中不可用的组件，则会显示“不兼容的数据视图”对话框，说明数据视图与模板不兼容，并显示缺少哪些组件。
+
+   执行以下任一操作：
+
+   * 在&#x200B;**[!UICONTROL 更改数据视图]**&#x200B;下拉菜单中选择其他数据视图。
+
+   * 选择&#x200B;**[!UICONTROL 仍要继续]**&#x200B;以查看缺少组件的模板。
 
 ## 基于模板创建项目 {#use-reports}
 
