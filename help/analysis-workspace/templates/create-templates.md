@@ -6,10 +6,10 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: 8561f14d5b428e55614fe1465f75d2be6660468d
+source-git-commit: d1aee7ccdcea2794efd9db5d6dbf46cba4087030
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 4%
+source-wordcount: '1041'
+ht-degree: 2%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 4%
 
 管理员可以编辑或删除公司模板。
 
-1. 在Analysis Workspace中，选择&#x200B;[!UICONTROL **Workspace**]&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL _login_company_name _模板]**。
+1. 在Analysis Workspace中，选择&#x200B;[!UICONTROL **Workspace**]&#x200B;选项卡，然后在左边栏中的&#x200B;**[!UICONTROL 模板]**&#x200B;下选择&#x200B;**[!UICONTROL _login_company_name _模板]**。
 
 1. 如果您在列视图![列视图图标](assets/column-view-icon.png)中查看模板：
 
@@ -67,6 +67,8 @@ ht-degree: 4%
    1. 找到要编辑或删除的模板。
 
       ![公司模板卡片视图](assets/company-template-cards.png)
+
+   1. 将鼠标悬停在模板上，然后选择&#x200B;**[!UICONTROL 预览]**。
 
    1. 选择更多图标，然后选择&#x200B;**[!UICONTROL 编辑]**&#x200B;或&#x200B;**[!UICONTROL 删除]**。
 
@@ -97,6 +99,73 @@ ht-degree: 4%
    您也可以删除模板，也可以按照[编辑或删除模板](#edit-or-delete-templates)中的说明删除模板。
 
 1. （可选）要返回到常规视图，请在筛选器边栏中取消选择&#x200B;**[!UICONTROL 公司模板]**。
+
+## 将缺少的组件添加到给定模板的数据视图
+
+默认情况下，Adobe提供的某些模板将无法使用，因为它们包含的数据视图中没有的组件。
+
+对于每个缺少的组件，您的数据视图中都提供了匹配的上下文标签。 您需要将匹配的上下文标签添加到数据视图中已存在的组件，或者您需要将新组件添加到数据视图并将上下文标签添加到其中。
+
+要将缺少的组件添加到模板，请执行以下操作：
+
+1. 在Analysis Workspace中，选择&#x200B;[!UICONTROL **Workspace**]&#x200B;选项卡，然后在左边栏中的&#x200B;**[!UICONTROL 模板]**&#x200B;下，选择&#x200B;**[!UICONTROL Adobe模板]**。
+
+1. 选择过滤器图标以过滤模板列表。
+
+1. 选择&#x200B;**[!UICONTROL 未准备就绪]**&#x200B;以显示需要不在数据视图中的组件的模板。
+
+   ![使用缺少组件的模板](assets/template-not-ready.png)
+
+1. 找到尚未准备好用于数据视图的模板。
+
+1. 执行以下任一操作：
+
+   * **如果您在列视图中查看模板** ![列视图图标](assets/column-view-icon.png)：
+
+      1. 转到尚未准备好用于数据视图的模板，然后选择模板名称旁边的信息图标。
+
+         ![公司模板信息](assets/company-template-info.png)
+
+      1. 选择&#x200B;**[!UICONTROL 预览]**。
+
+         ![模板预览页](assets/template-preview.png)
+
+   * **如果您在卡片视图中查看模板** ![卡片视图图标](assets/card-view-icon.png)：
+
+      1. 找到尚未准备好用于数据视图的模板。
+
+         ![公司模板卡片视图](assets/company-template-cards.png)
+
+      1. 将鼠标悬停在模板上，然后选择&#x200B;**[!UICONTROL 预览]**。
+
+         ![模板预览页](assets/template-preview.png)
+
+1. 在&#x200B;**[!UICONTROL 缺少的组件]**&#x200B;部分中，将显示数据视图中缺少的组件列表。 选择&#x200B;**[!UICONTROL 将这些组件添加到您的数据视图]**。
+
+   数据视图的配置页面将显示在新选项卡中。
+
+1. 为数据视图选择&#x200B;**[!UICONTROL 组件]**&#x200B;选项卡。
+
+   ![数据视图组件选项卡](assets/template-dataview.png)
+
+1. 对于模板中列为缺失的每个组件，在&#x200B;**[!UICONTROL 组件]**&#x200B;选项卡上执行以下任一操作：
+
+   * 在&#x200B;**[!UICONTROL 包含的组件]**&#x200B;部分中，选择要用于缺少的组件的数据视图中已包含的组件。
+
+   * 将新组件添加到要用于缺失组件的数据视图，然后选择该组件。
+
+     要向数据视图添加新组件，请搜索架构字段列表，然后将其拖到&#x200B;**[!UICONTROL 包含的组件]**&#x200B;部分。
+
+1. 选择组件后，在右列找到&#x200B;**[!UICONTROL 上下文标签]**&#x200B;下拉菜单。
+
+   ![数据视图组件选项卡](assets/template-dataview-context-label.png)
+
+1. 在&#x200B;**[!UICONTROL 上下文标签]**&#x200B;下拉菜单中，选择与缺少的组件同名的上下文标签。
+
+1. 选择&#x200B;**[!UICONTROL 保存并继续]**。
+
+1. 对于每个缺少的组件，重复将匹配的上下文标签添加到数据视图中的组件的过程。
+
 
 ## 访问公司模板
 
