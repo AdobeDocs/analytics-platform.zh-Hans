@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 source-git-commit: 1158064d46e09435ec2507c47e6e484306ac5a53
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '570'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 95%
 | [!UICONTROL 组件名称] | 必填。使您可指定在 Analysis Workspace 中显示的易记名称。可将组件重命名以给予其一个数据视图专属的名称。 |
 | [!UICONTROL 描述] | 可选，但推荐。向其他用户提供有关组件的信息。 |
 | [!UICONTROL 标记] | 可选。可让您使用自定义或现成标记为组件添加标记，以便于在 Analysis Workspace UI 中搜索/筛选。 |
-| [!UICONTROL 上下文标签] | 可选。可应用于组件的现有系统定义标签的下拉列表。可能需要这些标签来定义一组可以在实验报表中使用Analysis Workspace项目中的[实验面板](/help/analysis-workspace/c-panels/experimentation.md)的组件。 请参阅[与 Journey Optimizer 集成](/help/integrations/ajo.md#data-view)以及[ Target 报告](/help/integrations/at.md)，以了解更多信息。 |
+| [!UICONTROL 上下文标签] | 可选。可应用于组件的现有系统定义标签的下拉列表。可能需要这些标签来定义一组组件，您可以使用 Analysis Workspace 项目中的[“试验”面板](/help/analysis-workspace/c-panels/experimentation.md)在试验报告中使用这些组件。请参阅[与 Journey Optimizer 集成](/help/integrations/ajo.md#data-view)以及[ Target 报告](/help/integrations/at.md)，以了解更多信息。 |
 | [!UICONTROL 架构字段名] | 架构字段的名称。 |
 | [!UICONTROL 数据集类型] | 必填。显示组件来自哪个数据集类型（事件、查询或轮廓）的不可编辑字段。 |
 | [!UICONTROL 数据集] | 一个不可编辑的字段，它显示该组件来源于哪个数据集。此字段可以包含多个数据集。 |
