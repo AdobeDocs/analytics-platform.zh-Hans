@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: aa1615be6eaeb5c098659ec6b58829ca8efe64a4
+source-git-commit: 912e6a3200cdc8463667266f9cae75e4f6278337
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 7%
+source-wordcount: '1262'
+ht-degree: 6%
 
 ---
 
 # B2B 项目示例
 
-本文介绍了如何在Customer Journey Analytics中设置、配置和报告基于用户档案（人员）级别的B2B数据。
+本文描述了一个用例，其中您想要在典型B2B配置的上下文中在Customer Journey Analytics中正确报告人员数据。 此类配置是[Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview)的一部分。  此用例说明了如何在Customer Journey Analytics中设置、配置和报告基于配置文件（人员）级别的B2B数据。
 
 ## 连接
 
@@ -23,7 +23,7 @@ ht-degree: 7%
 | 数据集 | 架构 | 架构类型 | 基类 | 描述 |
 |---|---|---|---|---|
 | B2B活动数据集 | B2B活动模式 | 事件 | XDM ExperienceEvent | ExperienceEvent是所发生情况的事实记录，包括时间点和所涉及的个人身份。 ExperienceEvents可以是显式的（可直接观察的人类行为）或隐式的（在没有直接人类行为的情况下引发），并且无需聚合或解释即可记录。 体验事件对于时域分析至关重要，因为它们允许观察和分析给定时间段内发生的变化，并在多个时间段之间进行比较以跟踪趋势。 |
-| B2B人员数据集 | B2B人员模式 | 配置文件 | XDM个人资料 | XDM个人资料形成已识别和部分识别的个人的属性和兴趣的单一表示。 识别度较低的用户档案可能仅包含匿名行为信号，如浏览器Cookie，而识别度较高的用户档案可能包含详细的个人信息，如姓名、出生日期、位置和电子邮件地址。 随着用户档案的发展，它成为个人信息、身份信息、联系人详细信息和个人通信偏好设置的强大存储库。 |
+| B2B人员数据集 | B2B人员模式 | 轮廓 | XDM个人资料 | XDM个人资料形成已识别和部分识别的个人的属性和兴趣的单一表示。 识别度较低的用户档案可能仅包含匿名行为信号，如浏览器Cookie，而识别度较高的用户档案可能包含详细的个人信息，如姓名、出生日期、位置和电子邮件地址。 随着用户档案的发展，它成为个人信息、身份信息、联系人详细信息和个人通信偏好设置的强大存储库。 |
 | B2B帐户数据集 | B2B帐户架构 | 查询 | XDM业务帐户 | XDM业务帐户是一个标准体验数据模型(XDM)类，可捕获业务帐户的最低要求属性。 此XDM类只能包含在具有B2B或B2P版本的客户的配置文件中。 |
 | B2B Opportunity数据集 | B2B机会架构 | 查询 | XDM商业机会 | XDM业务机会是一个标准体验数据模型(XDM)类，可捕获业务机会的最低要求属性。 此XDM类只能包含在具有B2B或B2P版本的客户的配置文件中。 |
 | B2B Campaign数据集 | B2B营销活动模式 | 查询 | XDM商业营销活动 | XDM商业营销活动是一个标准体验数据模型(XDM)类，可捕获商业营销活动的最低要求属性。 此XDM类只能包含在具有B2B或B2P版本的客户的配置文件中。 |
@@ -41,7 +41,7 @@ ht-degree: 7%
 -->
 
 
-B2B查找架构、配置文件架构和事件架构之间的关系在Experience Platform内的B2B设置中定义。 查看[Real-time Customer Data Platform B2B版本](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)中的架构和[在Real-time Customer Data Platform B2B版本](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b)中定义两个架构之间的多对一关系。
+B2B查找架构、配置文件架构和事件架构之间的关系在Experience Platform内的B2B设置中定义。 查看[Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)中的架构，以及[在Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b)中定义两个架构之间的多对一关系。
 
 
 要确保正确设置支持B2B数据基于人员的查找的连接，请使用下图进行概述并执行以下步骤：
