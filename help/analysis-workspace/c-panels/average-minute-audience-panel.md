@@ -4,10 +4,10 @@ description: 如何使用和解读Analysis Workspace中的“媒体平均受众�
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: 28a43ef92bee1359509c0c3f92d51a08653830c3
 workflow-type: tm+mt
-source-wordcount: '1796'
-ht-degree: 27%
+source-wordcount: '1789'
+ht-degree: 30%
 
 ---
 
@@ -17,9 +17,8 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaminuteaverageaudience_button"
->title="媒体平均受众访问分钟数"
+>title="媒体受众平均逗留分钟数"
 >abstract="创建一个面板来分析特定内容或特定时段内的平均受众访问分钟数。"
-
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,10 +26,8 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaaverageminuteaudience_panel"
->title="媒体平均受众访问分钟数"
+>title="媒体受众平均逗留分钟数"
 >abstract="显示特定媒体内容或自定义时段内的性能。<br/><br/>**常规参数&#x200B;**<br/>**计算量度**：选择面板使用的量度。选择&#x200B;**特定内容**&#x200B;以根据内容长度分析特定内容或事件的平均受众访问分钟数。**选择自定义时段**&#x200B;来分析平均受众访问分钟数在自定义选定时段内的变化情况。<br/>**报告维度**：选择按&#x200B;**内容 ID** 维度的&#x200B;**视频名称**&#x200B;进行报告。仅当您选择特定内容作为量度时可用。<br/>**粒度**：选择报告的粒度。仅当您选择自定义时段作为量度时可用。<br/>**按以下条件过滤内容（可选）**：选择特定的节目、季、剧集，或选择自定义维度来过滤内容。<br/><br/>**高级设置&#x200B;**<br/>**表格设置**：选择是否在表格中显示计算值。<br/>**逗留时间量度**：选择您想要用于特定内容计算的逗留时间量度。仅当您选择特定内容作为量度时可用。"
->additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel#specific-content" text="特定内容"
->additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel#custom-time-period" text="自定义时段"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -68,7 +65,7 @@ ht-degree: 27%
 1. 确保为面板选择数据视图，该面板具有从流媒体收集加载项配置的组件。
 
 
-1. 为面板指定[输入](#panel-input)。
+1. 指定面板的[输入](#panel-input)。
 
 1. 观察面板的[输出](#panel-output)。
 
@@ -185,7 +182,7 @@ ht-degree: 27%
 
 >[!MORELIKETHIS]
 >
-> [创建面板](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+> [Create a panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
 > [媒体并行查看者面板](media-concurrent-viewers.md)
 > [“媒体播放耗时”面板](media-playback-time-spent.md)
 >
