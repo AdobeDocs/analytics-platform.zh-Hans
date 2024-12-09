@@ -4,9 +4,9 @@ title: Analysis Workspace 中的辅助功能
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 role: User
-source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
+source-git-commit: dca8b99dad97e939e8021a681cb21ab14ca1ff87
 workflow-type: ht
-source-wordcount: '544'
+source-wordcount: '542'
 ht-degree: 100%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 100%
 
 ### 键盘快捷键（热键）
 
-[!UICONTROL Analysis Workspace] 提供丰富的[键盘快捷键](https://experienceleague.adobe.com/zh-hans//docs/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys)，以实现更顺畅的工作流。
+[!UICONTROL Analysis Workspace] 提供丰富的[键盘快捷键](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)，以实现更顺畅的工作流。
 
 ## 支持屏幕阅读器和屏幕放大镜
 
@@ -64,7 +64,7 @@ ht-degree: 100%
 
 [!UICONTROL Analysis Workspace] 致力于符合 WCAG 2.1 AA 合规性标准，包括对颜色对比度的要求。
 
-此外，用户还可以在&#x200B;**[!UICONTROL 项目]** > **[!UICONTROL 项目设置]** > [项目调色板](https://experienceleague.adobe.com/zh-hans//docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes)下为项目设置各自的首选调色板。
+此外，用户还可以在&#x200B;**[!UICONTROL 项目]** > **[!UICONTROL 项目设置]** > [项目调色板](/help/analysis-workspace/build-workspace-project/color-palettes.md)下为项目设置各自的首选调色板。
 
 ## 必填字段验证
 

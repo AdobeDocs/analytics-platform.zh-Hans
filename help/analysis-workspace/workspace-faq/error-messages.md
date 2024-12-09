@@ -4,9 +4,9 @@ title: Analysis Workspace 中的常见错误及故障排除
 feature: FAQ
 exl-id: 792c3b2e-bd24-4e98-b9ea-983c1189d52e
 role: User
-source-git-commit: ec32b7bca6fd4fc4b2652d1265048ec788f19718
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: ht
-source-wordcount: '590'
+source-wordcount: '589'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 100%
 | [!UICONTROL 这份报告太复杂了。请查看构建 Analysis Workspace 报告的最佳实践。] | 您的报告请求过大，无法执行。造成此错误的原因是由于请求的复杂性而导致的超时。 | 简化您的请求。例如，缩短日期范围，或简化过滤条件，或移除表格中的某些列或行。您也可以考虑将表拆分为单独的请求。 |
 | [!UICONTROL 数据视图目前已超出其报告容量。请简化请求或稍后重试。] | 您的组织针对特定数据查看尝试运行的并发请求过多。导致此错误的因素包括：API 请求、计划项目，以及提出报告请求的并发用户数量。 | 将数据查看的请求和计划较为均匀地分布在一天当中。 |
 | [!UICONTROL 发生系统错误。请在&#x200B;**[!UICONTROL 帮助 > 提交支持票证]**&#x200B;下记录一条客户关怀团队请求，并将您的错误代码包含在内。] | Adobe 遇到了一个需要解决的问题。 | 将错误代码提交给客户关怀团队。 |
-| [!UICONTROL 错误 500：无法加载页面] | 本地网络的问题（如公司[防火墙设置](https://experienceleague.adobe.com/zh-hans//docs/analytics/technotes/ip-addresses)），是引发该错误的一个因素。此外，Adobe 可能遇到了需要解决的问题。 | 请在几分钟后再次尝试登录。如果问题仍然存在，请向客户关怀团队提交 EIM 实例 ID 代码。 |
+| [!UICONTROL 错误 500：无法加载页面] | 本地网络的问题（如公司[防火墙设置](/help/technotes/ip-addresses.md)），是引发该错误的一个因素。此外，Adobe 可能遇到了需要解决的问题。 | 请在几分钟后再次尝试登录。如果问题仍然存在，请向客户关怀团队提交 EIM 实例 ID 代码。 |
 | [!UICONTROL 由于列或预配置行过多，导致请求失败。] | 表格中自由格式单元格（行数乘以列数）过多。 | 移除表格中的列或行，或考虑将表格拆分为单独的请求。 |
 
 
