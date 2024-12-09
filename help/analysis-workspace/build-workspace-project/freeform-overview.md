@@ -5,10 +5,10 @@ title: 项目概述
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '1628'
-ht-degree: 7%
+source-wordcount: '1627'
+ht-degree: 8%
 
 ---
 
@@ -46,14 +46,14 @@ ht-degree: 7%
 ## 项目列表
 
 
-项目列表➋会显示您拥有并与您共享的所有项目。 该列表具有以下列：
+项目列表➋会显示您拥有并与您共享的所有项目。 该列表具有以下各列：
 
-| 栏目 | 描述 |
+| 列 | 描述 |
 | --- | --- | 
 | ![SelectBox](/help/assets/icons/SelectBox.svg) | 选择一个或多个项目后，“项目”界面的底部会显示一个蓝色操作栏。 有关详细信息，请参阅[操作](#actions)。 |
-| ![星形大纲](/help/assets/icons/StarOutline.svg) | 选择支持![Star](/help/assets/icons/Star.svg)或取消支持![StarOutline](/help/assets/icons/StarOutline.svg)项目。 |
+| ![StarOutline](/help/assets/icons/StarOutline.svg) | 选择支持![Star](/help/assets/icons/Star.svg)或取消支持![StarOutline](/help/assets/icons/StarOutline.svg)项目。 |
 | **[!UICONTROL 标题和描述]** | 要编辑项目，请选择标题链接，这会打开[Workspace项目](/help/analysis-workspace/home.md)。 与您共享的项目以![共享](/help/assets/icons/ShareAlt.svg)表示。 选择![信息大纲](/help/assets/icons/InfoOutline.svg)以显示包含项目更多详细信息的弹出菜单。 选择![更多](/help/assets/icons/More.svg)以打开包含操作的上下文菜单。 有关详细信息，请参阅[操作](#actions)。 |
-| **[!UICONTROL 类型]** | Workspace项目、![FolderUser](/help/assets/icons/FolderUser.svg)文件夹或[移动记分卡](https://experienceleague.adobe.com/en/docs/analytics/analyze/mobapp/home)。 |
+| **[!UICONTROL Type]** | Workspace项目、![FolderUser](/help/assets/icons/FolderUser.svg)文件夹或[移动记分卡](/help/mobile-app/home.md)。 |
 | **[!UICONTROL 标记]** | 应用于项目的标记。 |
 | 已计划 | 项目是否计划通过电子邮件发送给收件人。 选项为![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL 开启]**&#x200B;或![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL 关闭]**。 查看[将项目数据发送给其他人](/help/analysis-workspace/export/t-schedule-report.md)。 |
 | **[!UICONTROL 共享链接（任何人）]** | 项目是否与任何人共享，即使与无权访问Analysis Workspace的人共享。 选项为![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL 活动]**&#x200B;或![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL 非活动]**。 有关详细信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required)。 |
@@ -81,16 +81,16 @@ ht-degree: 7%
 | 图标 | 操作 | 描述 |
 |:---:| ---|---|
 | ![CrossSize75](/help/assets/icons/Close.svg) | 已选择&#x200B;**[!UICONTROL *x *]** | 取消选择选定的项目和文件夹，并删除蓝色操作栏。 |
-| ![删除](/help/assets/icons/Delete.svg) | **[!UICONTROL 删除]** | 删除一个或多个项目或文件夹。 系统会提示您进行确认。 |
-| ![共享](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL 共享]** | 共享项目。 有关详细信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)。 |
-| ![编辑](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名项目。 打开&#x200B;**[!UICONTROL 重命名： *项目名称对话框&#x200B;*]**。 输入新名称，然后选择**[!UICONTROL 保存&#x200B;]**。 |
-| ![Copy](/help/assets/icons/Copy.svg) | **[!UICONTROL Copy]** | 复制一个或多个项目。 项目的名称和后缀`(Copy)`相同。 |
+| ![Delete](/help/assets/icons/Delete.svg) | **[!UICONTROL 删除]** | 删除一个或多个项目或文件夹。 系统将提示您确认。 |
+| ![Share](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL 共享]** | 共享项目。 有关详细信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)。 |
+| ![Edit](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名项目。 打开&#x200B;**[!UICONTROL 重命名： *项目名称对话框&#x200B;*]**。 输入新名称，然后选择**[!UICONTROL 保存&#x200B;]**。 |
+| ![Copy](/help/assets/icons/Copy.svg) | **[!UICONTROL 复制]** | 复制一个或多个项目。 项目的名称和后缀`(Copy)`相同。 |
 | ![PinOnff](/help/assets/icons/PinOff.svg) | **[!UICONTROL 固定]**&#x200B;或&#x200B;**[!UICONTROL 取消固定]** | 固定或取消固定一个或多个项目或文件夹。 固定项目和文件夹显示在列表顶部，并忽略您指定的排序顺序。 |
 | ![向上箭头](/help/assets/icons/ArrowUp.svg) | **[!UICONTROL 上移]** | 在项目列表中向上移动固定项目或文件夹。 |
 | ![向下箭头](/help/assets/icons/ArrowDown.svg) | **[!UICONTROL 下移]** | 在项目列表中向下移动固定项目或文件夹。 |
-| ![标签](/help/assets/icons/Label.svg) | **[!UICONTROL 标记]** | 标记一个或多个项目或文件夹。 显示&#x200B;**[!UICONTROL 标记组件]**&#x200B;对话框以选择一个或多个标记。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存所选项目或文件夹的标记。 |
+| ![Label](/help/assets/icons/Label.svg) | **[!UICONTROL 标记]** | 标记一个或多个项目或文件夹。 显示&#x200B;**[!UICONTROL 标记组件]**&#x200B;对话框以选择一个或多个标记。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存所选项目或文件夹的标记。 |
 | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL 批准]**&#x200B;或&#x200B;**[!UICONTROL 取消批准]** | 批准或取消批准项目。 只有管理员可以批准项目。 |
-| ![文件CSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL 导出CSV]** | 将所选项目导出到名为`Project List.csv`的CSV文件。 |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL 导出CSV]** | 将所选项目导出到名为`Project List.csv`的CSV文件。 |
 | ![项目添加](/help/assets/icons/ProjectAdd.svg) | **[!UICONTROL 添加项目]** | 将一个或多个项目添加到选定文件夹。 在&#x200B;**[!UICONTROL 添加项目]**&#x200B;中，您可以选择一个或多个项目。 选择&#x200B;**[!UICONTROL 添加]**&#x200B;以将这些项目添加到该文件夹。 有关详细信息，请参阅[将项目添加到文件夹](workspace-folders/add-projects.md#from-inside-a-folder)。 |
 | ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) | **[!UICONTROL 移至]** | 将一个或多个选定项目移至文件夹。 在&#x200B;**[!UICONTROL 选择文件夹]**&#x200B;中，选择要将选定项目移动到的文件夹，然后选择&#x200B;**[!UICONTROL 移动]**。 有关详细信息，请参阅[将项目添加到文件夹](workspace-folders/add-projects.md#from-the-project-list)。 |
 
@@ -104,7 +104,7 @@ ht-degree: 7%
 
 * 要定义为[项目列表](#project-list)显示的列，请选择![列设置](/help/assets/icons/ColumnSetting.svg)，然后从&#x200B;**[!UICONTROL 自定义表]**&#x200B;对话框中选择或取消选择列。 选择&#x200B;**[!UICONTROL 应用]**&#x200B;以应用自定义。 有关列的更多详细信息，请参阅[项目列表](#project-list)。
 
-## 过滤器面板
+## 筛选面板
 
 您可以使用筛选器面板筛选[项目列表](#project-list)中的项目和文件夹➍。 若要显示或隐藏筛选器面板，请使用![筛选器](/help/assets/icons/Filter.svg)。
 
@@ -135,7 +135,7 @@ ht-degree: 7%
 
 | 类型 | 描述 |
 |---|---|
-| ![类型](/help/analysis-workspace/build-workspace-project/assets/projects-filters-type.png){width="300"} | **[!UICONTROL 类型]**&#x200B;部分允许您筛选项目或文件夹的类型。<ul><li>您可以选择以下一个或多个选项：<ul><li> **[!UICONTROL 文件夹]**</li><li>**[!UICONTROL Workspace 项目]**</li><li>**[!UICONTROL 移动记分卡]**</li></ul> <li>您可以选择多个其他过滤器。 可用的其他筛选器取决于在筛选器面板的其他部分中所做的选择。</li><li>这些数字表示：<ul><li>**5︎⃣**：由当前筛选器生成的项目可用的其他筛选器数。</li><li>⃣4︎：与特定其他过滤器关联的项目数。</li></ul></li></ul> |
+| ![Type](/help/analysis-workspace/build-workspace-project/assets/projects-filters-type.png){width="300"} | **[!UICONTROL 类型]**&#x200B;部分允许您筛选项目或文件夹的类型。<ul><li>您可以选择以下一个或多个选项：<ul><li> **[!UICONTROL 文件夹]**</li><li>**[!UICONTROL Workspace 项目]**</li><li>**[!UICONTROL 移动记分卡]**</li></ul> <li>您可以选择多个其他过滤器。 可用的其他筛选器取决于在筛选器面板的其他部分中所做的选择。</li><li>这些数字表示：<ul><li>**5︎⃣**：由当前筛选器生成的项目可用的其他筛选器数。</li><li>⃣4︎：与特定其他过滤器关联的项目数。</li></ul></li></ul> |
 
 
 ### 其他筛选器

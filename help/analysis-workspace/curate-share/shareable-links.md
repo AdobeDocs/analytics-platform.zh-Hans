@@ -5,10 +5,10 @@ title: 创建可共享链接
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 67%
+source-wordcount: '379'
+ht-degree: 61%
 
 ---
 
@@ -18,9 +18,9 @@ Analysis Workspace 提供了多种将项目共享给用户的方法，包括能�
 
 ## 获取项目链接以与其他 Workspace 用户共享 {#project-link}
 
-要共享项目的链接，请转到要共享的项目，然后选择转到&#x200B;[!UICONTROL **共享**] > [!UICONTROL **获取项目链接**](或&#x200B;**共享**] > [!UICONTROL **与Workspace用户共享**] > [！UICONTROL **通过链接共享**)。 要求您与其共享该链接的用户登录。
+要共享项目链接，请转到要共享的项目，然后选择转到&#x200B;**[!UICONTROL 共享]** > **[!UICONTROL 获取项目链接]**(或&#x200B;**[!UICONTROL 共享]** > **[!UICONTROL 与Workspace用户共享]** > **[!UICONTROL 通过链接共享]**)。 要求您与其共享该链接的用户登录。
 
-如果没有为链接的收件人分配[项目角色](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=zh-Hans)，则管理员获得&#x200B;**[!UICONTROL 编辑原件]**&#x200B;体验，非管理员获得&#x200B;**[!UICONTROL 编辑副本]**&#x200B;体验。
+如果尚未为链接的收件人分配[项目角色](/help/analysis-workspace/curate-share/share-projects.md)，则管理员将获得&#x200B;**[!UICONTROL 编辑原始项目]**，非管理员将获得&#x200B;**[!UICONTROL 编辑副本]**&#x200B;体验。
 
 ## 获取只读链接以与任何人共享
 

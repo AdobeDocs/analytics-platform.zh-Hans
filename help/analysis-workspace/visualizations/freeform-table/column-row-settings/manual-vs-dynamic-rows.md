@@ -4,10 +4,10 @@ description: 如何与表中的动态维度项和静态维度项交互
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
 role: User
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 49%
+source-wordcount: '542'
+ht-degree: 44%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 49%
 
 将维度拖放到自由格式表后，将返回动态行。动态行表示与给定量度和时间段的维度对应的排名最前的项目。 此外，您还可以将某个维度拖放到自由格式表的列中，该维度会自动扩展为排名前 5 的维度项目。
 
-例如，将“浏览器类型”维度拖入表中后，则排名靠前的“浏览器类型”维度项目（例如 Microsoft、Apple、Google 等）会动态返回到表行。如果拖放到列中，则会动态返回排名前 5 的“浏览器类型”维度项目。
+例如，将“浏览器类型”维度拖入表中后，排名靠前的“浏览器类型”维度项目(例如Microsoft、Apple、Google等)会动态返回到表行。 如果拖放到列中，则会动态返回排名前 5 的“浏览器类型”维度项目。
 
 动态维度项目具有行筛选器选项![筛选器](/help/assets/icons/Filter.svg)和![关闭](/help/assets/icons/Close.svg)，并且&#x200B;**不**&#x200B;存在锁![LockClosed](/help/assets/icons/LockClosed.svg)。 <!--do they have the lock icon? -->当您单击动态维度项旁边的![关闭](/help/assets/icons/Close.svg)时，将自动应用筛选器。 有关将筛选器应用到表的详细信息，请参阅[筛选和排序表](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)。
 
@@ -53,4 +53,4 @@ ht-degree: 49%
 动态行和静态行在自由格式表总计行中的行为方式有所不同。默认情况下：
 
 * 动态行是服务器端总和，并且去除了重复量度，例如会话或人员。
-* 静态行是客户端总和，并且&#x200B;**不会**&#x200B;去除重复量度。要计算服务器端总计行，请将“行”设置更改为&#x200B;**“显示总计”**。[了解详情](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html?lang=zh-hans)
+* 静态行是客户端总和，并且&#x200B;**不会**&#x200B;去除重复量度。要计算服务器端总计行，请将“行”设置更改为&#x200B;**“显示总计”**。[了解详情](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)

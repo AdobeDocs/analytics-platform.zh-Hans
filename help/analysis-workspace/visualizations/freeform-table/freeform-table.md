@@ -4,9 +4,9 @@ description: 自由格式表是在 Analysis Workspace 中进行数据分析的�
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '754'
 ht-degree: 26%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 26%
 <!-- markdownlint-enable MD034 -->
 
 
-在Analysis Workspace中，![表](/help/assets/icons/Table.svg) **[!UICONTROL 自由格式表]**&#x200B;可视化是交互式数据分析的基础。 可以将[组件](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components)组合拖放到行和列中，以创建自定义表格供您分析。拖动每个组件后，表格会立即更新，以便您能够快速分析和深入探索。
+在Analysis Workspace中，![表](/help/assets/icons/Table.svg) **[!UICONTROL 自由格式表]**&#x200B;可视化是交互式数据分析的基础。 可以将[组件](/help/components/overview.md)组合拖放到行和列中，以创建自定义表格供您分析。拖动每个组件后，表格会立即更新，以便您能够快速分析和深入探索。
 
 ![自由格式表显示行和列中的组件，包括多个网页的访问和在线订单。](assets/opening-section.png)
 
@@ -54,16 +54,16 @@ ht-degree: 26%
 ### 行
 
 * 您可以使用![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg)从一个或多个行快速[创建新的可视化图表](../freeform-analysis-visualizations.md#visualize)。
-* 您可以通过调整项目的[视图密度](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density)，将更多行放入单个屏幕中。
+* 您可以通过调整项目的[视图密度](/help/analysis-workspace/build-workspace-project/view-density.md)，将更多行放入单个屏幕中。
 * 在执行分页之前，每个维度行最多可显示 400 行。选择第一列标题中&#x200B;**[!UICONTROL 行]**&#x200B;旁边的数字，以在页面上显示更多行。 在第一列标题中使用![ChevronRight](/help/assets/icons/ChevronRight.svg)导航到其他页面。
-* 您可以按其他组件划分行。 要同时划分多行，请选择多行，然后将下一个组件拖动到选定行上。 了解有关[划分](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/components/dimensions/t-breakdown-fa)的更多信息。
-* 可以[过滤](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/filter-and-sort)行，以显示缩减的项目集。在[行设置](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings)下，提供了其他设置。
+* 您可以按其他组件划分行。 要同时划分多行，请选择多行，然后将下一个组件拖动到选定行上。 了解有关[划分](/help/components/dimensions/t-breakdown-fa.md)的更多信息。
+* 可以[过滤](/help/components/filters/filters-overview.md)行，以显示缩减的项目集。在[行设置](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)下，提供了其他设置。
 
 ### 列
 
 * 可以将组件堆放在列中，以创建过滤量度、跨标签分析等。
-* 可以在[列设置](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/column-row-settings/column-settings)下调整每列的视图。
-* 可通过[上下文菜单](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/right-click-for-workspace-efficiency)执行多个操作。 根据您选择的是表标题、行还是列，菜单会提供不同的操作。
+* 可以在[列设置](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)下调整每列的视图。
+* 可通过[上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)执行多个操作。 根据您选择的是表标题、行还是列，菜单会提供不同的操作。
 
 
 ## 设置

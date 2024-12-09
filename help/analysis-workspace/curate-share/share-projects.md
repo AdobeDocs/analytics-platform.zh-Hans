@@ -5,10 +5,10 @@ title: 共享项目
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '2047'
-ht-degree: 65%
+source-wordcount: '2042'
+ht-degree: 64%
 
 ---
 
@@ -109,7 +109,7 @@ ht-degree: 65%
 
    或
 
-   选择&#x200B;**[!UICONTROL 策划和共享]**&#x200B;以自动应用项目策划。（如果已共享该项目，请选择&#x200B;**[!UICONTROL 策划和更新]**。）详细了解[项目策划](curate.md)。
+   选择&#x200B;**[!UICONTROL 策划和共享]**&#x200B;以自动应用项目策划。（如果项目已共享，请选择&#x200B;**[!UICONTROL 策划和更新]**。）了解有关[项目策划](curate.md)的更多信息。
 
 ## 共享项目链接
 
@@ -171,7 +171,7 @@ ht-degree: 65%
 
    选择此选项将创建可与任何人共享的项目链接。随时可通过禁用此选项而禁止访问项目。
 
-   项目的所有者也是此链接的所有者。只有移交项目所有权后，才能将链接所有权移交给另一用户，如 Analytics 管理指南中的[转移用户资源或设置帐户到期](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html)所述。
+   项目的所有者也是此链接的所有者。仅在项目所有权转移时才能将链接所有权转移给另一个用户，如Analytics管理员指南中的[转移用户资产](/help/tools/asset-transfer/transfer-assets.md)中所述。
 
 1. 选择是否启用以下安全选项(此选项可由您的Customer Journey Analytics管理员控制)：
 
