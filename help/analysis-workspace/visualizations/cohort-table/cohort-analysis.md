@@ -4,10 +4,10 @@ description: 了解如何在Analysis Workspace中使用同类群组表进行同�
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: c16ad9f490abed1e15e1012a5a9347e2628b7642
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 37%
+source-wordcount: '641'
+ht-degree: 34%
 
 ---
 
@@ -56,6 +56,8 @@ ht-degree: 37%
 >[!IMPORTANT]
 >
 >[!UICONTROL 同类群组分析]不支持不可过滤的量度（包括计算量度）、非整数量度（如收入）或发生次数。 只有可在筛选器中使用的量度才能在[!UICONTROL 同类群组分析]中使用，并且这些量度一次只能递增1。
+
+Customer Journey Analytics中的同类群组表支持基于双精度指标（或任何基于数字的指标）。 例如，Purchase.Value(a double)可用作包含/返回量度。 此外，通过Analytics Source Connector传递到Adobe Experience Platform的所有量度也是双精度的。
 
 ## 同类群组表功能
 

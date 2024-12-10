@@ -4,7 +4,7 @@ title: 快速过滤器
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4ce1b22cce3416b8a82e5c56e605475ae6c27d88
 workflow-type: tm+mt
 source-wordcount: '1168'
 ht-degree: 2%
@@ -94,7 +94,7 @@ ht-degree: 2%
 | 按钮 | 描述 |
 |---|---|
 | **[!UICONTROL 和]**<br/>**[!UICONTROL 或]** | 仅在定义多个条件时可用。 从条件之间的下拉列表![ChevronDown](/help/assets/icons/ChevronDown.svg)中选择。 该选择确定快速过滤器的布尔逻辑。 当有三个条件时，不能混用逻辑。 布尔逻辑为&#x200B;**[!UICONTROL AND]**&#x200B;或&#x200B;**[!UICONTROL OR]**。 |
-| ![添加圆圈](/help/assets/icons/AddCircle.svg) | 向快速筛选器添加另一个条件。 仅当为快速过滤器定义了一个或两个条件时，此按钮才可用。 |
+| ![AddCircle](/help/assets/icons/AddCircle.svg) | 向快速筛选器添加另一个条件。 仅当为快速过滤器定义了一个或两个条件时，此按钮才可用。 |
 | **[!UICONTROL 应用]** | 将更改应用于快速过滤器。 |
 | **[!UICONTROL 打开生成器]** | 系统将提示您使用&#x200B;**[!UICONTROL 进行确认。是否确定？]**&#x200B;对话框。 如果您选择&#x200B;**[!UICONTROL 确定]**，则无法再在[快速筛选器生成器](#quick-filter-builder)中修改您的筛选器。您的快速筛选器已重命名为&#x200B;**[!UICONTROL 筛选器]**，现在左栏中的蓝色细条较深。<br/>常规[筛选器生成器](filter-builder.md)打开，其中包含&#x200B;**[!UICONTROL 使此筛选器对所有项目都可用，并将其添加到组件列表]**。 <ul><li>如果选择此选项并选择&#x200B;**[!UICONTROL 应用]**，则筛选器将添加到组件面板中的![筛选器](/help/assets/icons/Segmentation.svg) **[!UICONTROL 筛选器]**&#x200B;组件列表中。</li><li>如果不选择此选项并选择&#x200B;**[!UICONTROL 应用]**，则筛选器仍然是仅用于Workspace项目的筛选器。</li></ul> |
 | **[!UICONTROL 取消]** | 选择可取消创建或编辑快速过滤器。 |
