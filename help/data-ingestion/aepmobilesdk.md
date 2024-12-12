@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 9849d686e886426124842ce210b423ac6c74fb89
 workflow-type: tm+mt
 source-wordcount: '3382'
 ht-degree: 60%
@@ -64,7 +64,7 @@ ht-degree: 60%
 
       >[!INFO]
       >
-      >    体验事件架构用于为配置文件的&#x200B;_行为_&#x200B;建模（如场景名称、要添加到购物车的按钮）。 个人配置档案模式用于对个人配置档案&#x200B;_属性_（如姓名、电子邮件、性别）建模。
+      >    体验事件架构用于为配置文件的&#x200B;_行为_&#x200B;建模（如场景名称、要添加到购物车的按钮）。 个人轮廓模式用于对轮廓&#x200B;_属性_（如姓名、电子邮件、性别）建模。
 
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
@@ -113,45 +113,45 @@ ht-degree: 60%
 
    选择&#x200B;**[!UICONTROL 应用]**&#x200B;将此对象添加到您的模式中。
 
-1. 选择刚刚添加的标识对象中的&#x200B;**[!UICONTROL ecid]**&#x200B;字段，选择&#x200B;**[!UICONTROL 标识]**&#x200B;和&#x200B;**[!UICONTROL 主要标识]** 和 **[!UICONTROL ECID]** 来自右侧面板中的 [!UICONTROL 标识命名空间] 列表。
+1. 选择刚刚添加的身份标识对象中的&#x200B;**[!UICONTROL ecid]**&#x200B;字段，选择&#x200B;**[!UICONTROL 身份标识]**&#x200B;和&#x200B;**[!UICONTROL 主要身份标识]** 和 **[!UICONTROL ECID]** 来自右侧面板中的 [!UICONTROL 身份标识命名空间] 列表。
 
-   ![指定 ECID 作为身份](./assets/specify-identity-mobile.png)
+   ![指定 ECID 作为身份标识](./assets/specify-identity-mobile.png)
 
-   您将 Experience Cloud Identity 指定为 Adobe Experience Platform Identity 服务可用于组合（缝合）具有相同 ECID 的配置文件行为的主要身份。
+   您将 Experience Cloud Identity 指定为 Adobe Experience Platform Identity 服务可用于组合（缝合）具有相同 ECID 的轮廓行为的主要身份。
 
    选择 **[!UICONTROL 应用]**。您会看到 ecid 属性中出现指纹图标。
 
-1. 选择刚刚添加的标识对象中的&#x200B;**[!UICONTROL 邮件]**&#x200B;字段，选择&#x200B;**[!UICONTROL 标识]**&#x200B;和&#x200B;**[!UICONTROL 邮件]** 和 [!UICONTROL 标识命名空间] 列表中的 [!UICONTROL 字段属性] 面板。
+1. 选择刚刚添加的身份标识对象中的&#x200B;**[!UICONTROL 邮件]**&#x200B;字段，选择&#x200B;**[!UICONTROL 身份标识]**&#x200B;和&#x200B;**[!UICONTROL 邮件]** 和 [!UICONTROL 身份标识命名空间] 列表中的 [!UICONTROL 字段属性] 面板。
 
-    ![将电子邮件指定为标识](./assets/specify-email-identity-mobile.png)
+    ![将电子邮件指定为身份标识](./assets/specify-email-identity-mobile.png)
 
-   您将电子邮件地址指定为 Adobe Experience Platform Identity 服务可用于组合（拼接）配置文件行为的另一个标识。
+   您将电子邮件地址指定为 Adobe Experience Platform Identity 服务可用于组合（拼接）轮廓行为的另一个标识。
 
    选择 **[!UICONTROL 应用]**。您会看到电子邮件属性中显示指纹图标。
 
    选择&#x200B;**[!UICONTROL 保存]**。
 
-1. 选择显示模式名称的模式的根元素，然后选择 **[!UICONTROL 配置文件]** 开关。
+1. 选择显示模式名称的模式的根元素，然后选择 **[!UICONTROL 轮廓]** 开关。
 
-   系统会提示您启用配置文件的模式。一旦启用，当数据被引入基于此模式的数据集中时，该数据将合并到实时客户配置文件。
+   系统会提示您启用轮廓的模式。一旦启用，当数据被引入基于此模式的数据集中时，该数据将合并到实时客户轮廓。
 
-   有关详细信息，请参阅[启用模式以在实时客户配置文件中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile)。
+   有关详细信息，请参阅[启用模式以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile)。
 
    >[!IMPORTANT]
    >
-   >    一旦您保存了为配置文件启用的模式，就不能再为配置文件禁用它。
+   >    一旦您保存了为轮廓启用的模式，就不能再为轮廓禁用它。
 
-   ![为配置文件启用模式](./assets/enable-for-profile.png)
+   ![为轮廓启用模式](./assets/enable-for-profile.png)
 
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存模式。
 
-您已创建一个最小架构，用于为您可从移动应用程序中捕获的数据建模。 该模式允许使用 Experience Cloud Identity 和电子邮件地址来识别配置文件。通过为配置文件启用架构，您可以确保将从移动应用程序捕获的数据添加到实时客户配置文件。
+您已创建一个最小架构，用于为您可从移动应用程序中捕获的数据建模。 该模式允许使用 Experience Cloud Identity 和电子邮件地址来识别轮廓。通过为配置文件启用架构，您可以确保将从移动应用程序捕获的数据添加到实时客户配置文件。
 
 除了行为数据之外，您还可以从移动应用程序捕获配置文件属性数据（例如订阅新闻通讯的配置文件详细信息）。
 
 要捕获用户档案数据，您应：
 
-- 基于 XDM 个人配置文件类创建模式。
+- 基于 XDM 个人轮廓类创建模式。
 
 - 将 Profile Core v2 字段组添加到模式中。
 
@@ -159,7 +159,7 @@ ht-degree: 60%
 
 - 将Experience CloudID定义为主标识符，将电子邮件定义为标识符。
 
-- 为配置文件启用模式
+- 为轮廓启用模式
 
 请参阅[在 UI 中创建和编辑模式](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html)，了解有关向模式添加和删除字段组和单个字段的更多信息。
 
@@ -187,17 +187,17 @@ ht-degree: 60%
 
 6. 选择&#x200B;**[!UICONTROL 完成]**。
 
-7. 选择&#x200B;**[!UICONTROL 配置文件]**&#x200B;开关
+7. 选择&#x200B;**[!UICONTROL 轮廓]**&#x200B;开关
 
-   系统会提示您启用配置文件的数据集。启用后，数据集会使用其摄取的数据丰富实时客户配置文件。
+   系统会提示您启用轮廓的数据集。启用后，数据集会使用其摄取的数据丰富实时客户轮廓。
 
    >[!IMPORTANT]
    >
-   >    只有当数据集所依附的模式也为配置文件启用时，您才能为配置文件启用数据集。
+   >    只有当数据集所依附的模式也为轮廓启用时，您才能为轮廓启用数据集。
 
-   ![为配置文件启用模式](./assets/aepwebsdk-dataset-profile.png)
+   ![为轮廓启用模式](./assets/aepwebsdk-dataset-profile.png)
 
-有关如何查看、预览、创建和删除数据集的更多信息，请参阅[数据集 UI 指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=zh-Hans)。以及如何为实时客户配置文件启用数据集。
+有关如何查看、预览、创建和删除数据集的更多信息，请参阅[数据集 UI 指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=zh-Hans)。以及如何为实时客户轮廓启用数据集。
 
 ## 设置数据流
 
@@ -239,7 +239,7 @@ ht-degree: 60%
 
 ## 使用标签
 
-要在您的网站上实施代码以实际收集数据，请使用Adobe Experience Platform中的标记功能。 这一款标记管理解决方案，可让您在满足其他标记要求的同时部署代码。标记通过Adobe Experience Platform Mobile SDK扩展提供了与Adobe Experience Platform的无缝集成。
+要在您的网站上实施代码以实际收集数据，请使用Adobe Experience Platform中的标记功能。 这一款标记管理解决方案，可让您在满足其他标记要求的同时部署代码。标记通过Adobe Experience Platform Mobile Adobe Experience Platform扩展提供了与SDK的无缝集成。
 
 ### 创建您的标记
 
@@ -392,7 +392,7 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。他们寻找
 
    - 选择&#x200B;**[!UICONTROL 保存并生成到开发]**。
 
-   您的标记已保存，并为开发环境构建。 绿色圆点表示在开发环境中成功构建了标记。
+   您的标记已保存并为开发环境构建。 绿色圆点表示在开发环境中成功构建了标记。
 
 4. 您可以选择&#x200B;**[!UICONTROL ...]** 重建库或将库移动到临时或生产环境。
 
@@ -417,7 +417,7 @@ Adobe Experience Platform标记支持从简单到复杂的发布工作流程，�
 
 3. 选择&#x200B;**[!UICONTROL 关闭]**。
 
-您可能已根据部署Adobe Experience Platform Mobile SDK的位置选择其他环境（暂存、生产），而不是开发环境的代码。
+您可能已根据部署Adobe Experience Platform Mobile SDK的过程中所处的位置选择其他环境（暂存、生产），而不是开发环境的代码。
 
 有关详细信息，请参阅 [环境](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?) 。
 
@@ -463,7 +463,7 @@ Adobe Experience Platform标记支持从简单到复杂的发布工作流程，�
 
    - 对于每个数据集：
 
-      - 在 Adobe Experience Platform 中，从在数据集模式中定义的可用身份中选择[!UICONTROL 人员 ID]。
+      - 在 Adobe Experience Platform 中，从在数据集模式中定义的可用身份标识中选择[!UICONTROL 人员 ID]。
 
       - 从[!UICONTROL 数据源类型]列表中选择正确的数据源。如果指定&#x200B;**[!UICONTROL 其他]**，则为您的数据源添加描述。
 

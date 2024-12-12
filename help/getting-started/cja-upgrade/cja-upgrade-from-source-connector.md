@@ -1,5 +1,5 @@
 ---
-title: 从Analytics源连接器过渡到Web SDK以进行Customer Journey Analytics
+title: 从Analytics Source Connector过渡到Web SDK以进行Customer Journey Analytics
 description: 了解在升级到Customer Journey Analytics时如何从Analytics源连接器转换到Web SDK
 role: Admin
 solution: Customer Journey Analytics
@@ -7,14 +7,14 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
-source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
+source-git-commit: f4fd3c1932a736577d480e86cad70f55de75cb21
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
 
-# 从Analytics源连接器过渡到Web SDK以进行Customer Journey Analytics
+# 从Analytics Source Connector过渡到Web SDK以进行Customer Journey Analytics
 
 >[!NOTE]
 > 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 使用Analytics Source Connector作为Customer Journey Analytics的唯一实施存在一些固有缺点。
 
-如果您的组织已升级到Customer Journey Analytics仅使用Analytics Source Connector实施，则应考虑过渡到使用Analytics Source Connector的实施（用于引入历史数据），同时结合使用Web SDK的新实施（用于持续数据收集）。
+如果您的组织已升级到Customer Journey Analytics仅使用Analytics Source Connector实施，则Adobe建议迁移到使用Analytics Source Connector（用于历史数据）的实施，然后再迁移到使用Web SDK的新实施（用于持续数据收集）。
 
 ## 了解专门使用Analytics Source Connector的优缺点
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 下面是从专门使用Analytics源连接器过渡到由Analytics源连接器和Web SDK实施组成的实施的高级流程：
 
-1. 创建Web SDK实现，如[详细推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#detailed-recommended-upgrade-steps) (在文章[从Adobe Analytics升级到Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)中)中所述。
+1. 创建Web SDK实施，如[从Adobe Analytics升级到Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)一文中的[详细的建议升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#detailed-recommended-upgrade-steps)中所述。
 
    配置Web SDK实施后，请继续执行以下步骤。
 

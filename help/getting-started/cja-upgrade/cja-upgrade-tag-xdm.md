@@ -1,19 +1,20 @@
 ---
-title: 将XDM数据收集逻辑添加到标记
+title: 将 XDM 数据收集逻辑添加到您的标记中
 description: 了解如何将XDM数据收集逻辑添加到标记中
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: ccc6df56771cd9f83bbd7a8570e32d7ed63a0ced
+exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
+source-git-commit: 9849d686e886426124842ce210b423ac6c74fb89
 workflow-type: tm+mt
 source-wordcount: '1224'
-ht-degree: 48%
+ht-degree: 49%
 
 ---
 
-# 将XDM数据收集逻辑添加到标记
+# 将 XDM 数据收集逻辑添加到您的标记中
 
 >[!NOTE]
 > 
@@ -220,9 +221,8 @@ Adobe Experience Platform标记支持从简单到复杂的发布工作流程，�
 
 1. 选择&#x200B;**[!UICONTROL 保存并生成到开发]**。
 
-   您的标记已保存，并为开发环境构建。 绿色圆点表示在开发环境中成功构建了标记。
+   您的标记已保存并为开发环境构建。 绿色圆点表示在开发环境中成功构建了标记。
 
 1. 您可以选择&#x200B;**[!UICONTROL ...]** 重建库或将库移动到临时或生产环境。
 
    ![发布 – 生成文档库](assets/build-library.png)
-

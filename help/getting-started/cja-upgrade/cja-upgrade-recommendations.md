@@ -7,34 +7,34 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
+source-git-commit: f4fd3c1932a736577d480e86cad70f55de75cb21
 workflow-type: tm+mt
-source-wordcount: '1594'
+source-wordcount: '1596'
 ht-degree: 5%
 
 ---
 
 # 从Adobe Analytics升级到Customer Journey Analytics
 
-从Adobe Analytics升级到Customer Journey Analytics时，Adobe建议与Analytics源连接器一起实施新的Experience PlatformWeb SDK，如[为大多数组织推荐的升级步骤](#recommended-upgrade-steps-for-most-organizations)中所述。
+从Adobe Analytics升级到Customer Journey Analytics时，Adobe建议结合Analytics源连接器来实施新的Experience PlatformWeb SDK，如[为大多数组织推荐的升级步骤](#recommended-upgrade-steps-for-most-organizations)中所述。
 
 根据时间表和资源限制等多个因素，建议的升级步骤可能对您的组织不实用。 在这种情况下，请使用[Adobe AnalyticsCustomer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)来动态生成针对贵组织独特环境量身定制的升级步骤。
 
 ## 为大多数组织推荐的升级步骤
 
-建议的从Adobe Analytics升级到Customer Journey Analytics的过程是Experience PlatformWeb SDK的新实现，该方法是Customer Journey Analytics的首选数据收集方法。 在与Web SDK结合使用时，Adobe还建议使用Analytics源连接器来帮助您过渡到Customer Journey Analytics。 使用Analytics Source Connector保留Adobe Analytics历史数据并执行并排数据比较。
+建议的从Adobe Analytics升级到Customer Journey Analytics的过程是Experience PlatformWeb SDK的新实施，该方法是Customer Journey Analytics的首选数据收集方法。 在与Web SDK结合使用时，Adobe还建议使用Analytics Source Connector来帮助过渡到Customer Journey Analytics。 使用Analytics Source Connector保留Adobe Analytics历史数据并执行并排数据比较。
 
-在使用Experience PlatformWeb SDK获取足够的历史数据并完全过渡到Customer Journey Analytics后，可以关闭Analytics源连接器并专门使用Web SDK。
+在使用Experience PlatformWeb SDK获得足够的历史数据并完全过渡到Customer Journey Analytics后，可以关闭Analytics源连接器并专门使用Web SDK。
 
 >[!NOTE]
 >
->此部分描述的升级步骤对贵组织不切实际，请使用[Adobe AnalyticsCustomer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)动态生成针对贵组织独特环境量身定制的升级步骤。
+>如果本节中描述的升级步骤对贵组织不切实际，请使用[Adobe AnalyticsCustomer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)动态生成针对贵组织独特环境量身定制的升级步骤。
 
 ### 高级别建议的升级过程
 
 1. **实施Experience PlatformWeb SDK（用于持续的数据收集）**
 
-   新实施的Experience PlatformWeb SDK是收集数据以进行Customer Journey Analytics的最佳方式。 它提供了充分利用Customer Journey Analytics的最佳基础，因为它是用于实现Customer Journey Analytics的最高性能、最简单且经得起未来考验的方法。
+   Experience PlatformWeb SDK的新实施是收集数据以进行Customer Journey Analytics的最佳方式。 它提供了充分利用Customer Journey Analytics的最佳基础，因为它是用于实现Customer Journey Analytics的最高性能、最简单且经得起未来考验的方法。
 
    * 高性能报表和数据可用性，因为Adobe Experience Platform构建用于支持实时个性化用例
 
@@ -44,7 +44,7 @@ ht-degree: 5%
 
 1. **设置Adobe Analytics源连接器（用于引入历史数据）**
 
-   为了帮助顺利过渡到在Customer Journey Analytics中使用Experience PlatformWeb SDK，Adobe还建议使用Adobe Analytics源连接器。 这样，您就可以保留历史数据，并Customer Journey Analytics查看现有Adobe Analytics实施的数据，以及新Experience PlatformWeb SDK实施的数据。
+   为了帮助顺利过渡到在Customer Journey Analytics中使用Experience PlatformWeb SDK，Adobe还建议使用Adobe Analytics源连接器。 这样，您可以将现有Adobe Analytics实施中的历史数据和查看数据保留在Customer Journey Analytics中，与新Experience PlatformWeb SDK实施中的数据并排。
 
    Analytics源连接器允许您：
 
@@ -114,7 +114,7 @@ ht-degree: 5%
 
 +++
 
-1. 验证Web SDK实施是否向数据集发送数据。
+1. [验证您的Web SDK实施是否正在将数据发送到数据集](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)。
 
 1. [在Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)中创建连接。
 
@@ -134,7 +134,7 @@ ht-degree: 5%
 
    派生字段是Customer Journey Analytics中实时报表的一个重要方面。 利用派生字段，可通过可自定义的规则生成器，即时定义（通常非常复杂的）数据操作。
 
-   派生字段的一种用法是定义派生营销渠道字段，该字段根据一个或多个条件（例如，URL参数、页面URL、页面名称）确定正确的营销渠道。
+   派生字段的一种用法是定义派生营销渠道字段，该字段根据一个或多个条件（例如，URL参数、页面URL或页面名称）确定正确的营销渠道。
 
    在派生字段中使用[营销渠道函数模板](/help/data-views/derived-fields/derived-fields.md#marketing-channels)快速创建营销渠道的派生字段。
 
@@ -146,7 +146,7 @@ ht-degree: 5%
    >
    >如果之前未创建Analytics源连接器，请使用以下步骤。
    >
-   >如果您已将Analytics源连接器用于Customer Journey Analytics，请按照[从Analytics源连接器移动到Web SDK以进行Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)中的步骤操作。
+   >如果您已将Analytics源连接器用于Customer Journey Analytics，请按照[从Analytics源连接器过渡到Web SDK以进行Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)中的步骤操作。
 
    1. [为 Analytics 源连接器创建 XDM 架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
@@ -168,11 +168,11 @@ ht-degree: 5%
 
 1. 了解Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md)中的[功能支持。 Customer Journey Analytics支持大多数Adobe Analytics功能，Customer Journey Analytics还提供了许多其他功能。
 
-1. [在Web SDK实现完成并且您对正在收集的数据感到满意时，禁用AppMeasurement数据收集](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)。
+1. 当您的Web SDK实施完成并且您对正在收集的数据感到满意时，[禁用AppMeasurement数据收集](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)。
 
 1. 在所有Analytics源连接器数据离开您的数据保留期后，禁用Analytics源连接器。
 
-   对于Experience PlatformWeb SDK实施，仅需要Analytics Source Connector才能使用Adobe Analytics历史数据，并且将原始实施的数据与新实施的数据进行比较。
+   对于Experience PlatformWeb SDK实施，仅需要Analytics Source Connector才能使用Adobe Analytics历史数据，以及将原始实施的数据与新实施的数据进行比较。
 
    当您的新实施中有足够的历史数据并且熟悉Customer Journey Analytics中的报表差异时，您应该关闭Analytics Source Connector。
 
