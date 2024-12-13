@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 221b73ef8dc0f7d28d13b8571955792367519849
-workflow-type: ht
-source-wordcount: '2320'
-ht-degree: 100%
+source-git-commit: 532f3a30e65d715f5b5b4caea85885a13d82641c
+workflow-type: tm+mt
+source-wordcount: '2319'
+ht-degree: 99%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 100%
 | **报告 API 访问** | 全面支持；通过 [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/) 提供。 |
 | **计划报告/项目** | 全面支持 |
 | **区段** | 全面支持。现在称为“筛选条件”- 请注意，传统 Analysis Workspace 中的任何现有区段都不会移植到 Customer Journey Analytics。 |
-| **流媒体收藏集附加组件** | 使用作为 Workspace 中的“同时观看媒体的人数”面板和“媒体播放耗时”面板一部分的 Analytics Source Connector 即可获取流媒体数据。 |
+| **流媒体收藏集** | 使用作为 Workspace 中的“同时观看媒体的人数”面板和“媒体播放耗时”面板一部分的 Analytics Source Connector 即可获取流媒体数据。 |
 | **汇总级数据源** | 全面支持 |
 | **虚拟报告包** | 全面支持。现在称为[数据视图](/help/data-views/create-dataview.md)。 |
 | **虚拟报告包组件管理** | 全面支持。现在是数据视图的一部分。 |
@@ -105,7 +105,7 @@ ht-degree: 100%
 | **Report Builder** | 通过一个新的 Office 365 Excel 插件支持此项。 |
 | **用户权限/数据访问控制** | Customer Journey Analytics 区分 [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) 产品管理员、产品配置文件管理员和用户。只有产品管理员可创建/更新/删除其他用户创建的连接、项目、筛选条件或计算量度，而产品管理员和产品配置文件管理员均可编辑数据视图。对于创建计算量度、筛选条件或注释等操作还有其他用户权限可用。 |
 | **可视化内容** | 除地图可视化内容外，支持所有 Workspace 可视化内容。 |
-| **跨设备/跨渠道拼合** | 支持包含身份信息的事件数据集。请参阅[拼合](../../stitching/overview.md)。 |
+| **跨设备/跨渠道拼合** | 支持包含身份标识信息的事件数据集。请参阅[拼合](../../stitching/overview.md)。 |
 
 ## 部分支持 {#partial}
 

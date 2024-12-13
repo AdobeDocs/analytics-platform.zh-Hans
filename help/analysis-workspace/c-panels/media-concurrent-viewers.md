@@ -4,9 +4,9 @@ description: 如何在Analysis Workspace中使用和解释“媒体并行查看�
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: 5121f0d395674ca3b9fed19278c5c0253354e9cc
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1207'
 ht-degree: 47%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 47%
 
 1. 创建&#x200B;**[!UICONTROL 媒体并行查看者]**&#x200B;面板。 有关如何创建面板的信息，请参阅[创建面板](panels.md#create-a-panel)。
 
-1. 确保为面板选择数据视图，该面板具有从流媒体收集加载项配置的组件。
+1. 确保为具有从流媒体收集配置的组件的面板选择数据视图。
 
 1. 指定面板的[输入](#panel-input)。
 

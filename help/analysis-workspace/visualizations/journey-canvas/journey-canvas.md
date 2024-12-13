@@ -4,9 +4,9 @@ title: 历程画布
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 820251833eae9fed1574a0010f726b0ba6e12cd1
+source-git-commit: 25969de61f23cf0690a130127fcc1442b9806a35
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1657'
 ht-degree: 1%
 
 ---
@@ -120,7 +120,7 @@ ht-degree: 1%
 
 在历程画布中分析Journey Optimizer旅程，可提供有关人员如何与旅程进行交互的深入可操作洞察。
 
-在历程画布中分析Journey Optimizer历程时，该历程的显示顺序、顺序和结构与在Journey Optimizer中相同。 如果您可以对历程画布中的历程进行更改，则不再从Journey Optimizer](#synchronization-between-journey-optimizer-and-journey-canvas)同步[更改。
+在历程画布中分析Journey Optimizer历程时，该历程的显示顺序、顺序和结构与在Journey Optimizer中相同。 如果您对历程画布中的历程进行了重大更改，则不再从Journey Optimizer](#synchronization-between-journey-optimizer-and-journey-canvas)同步[更改。
 
 ### 使用历程画布分析Journey Optimizer旅程的好处
 
@@ -152,7 +152,7 @@ ht-degree: 1%
 
 在历程画布中创建Journey Optimizer旅程的分析后，数据仅在一个方向上同步，从Journey Optimizer到历程画布。 这意味着对历程画布中的旅程所做的更改绝不会反映在Journey Optimizer中。
 
-此外，仅当Journey Optimizer中的旅程在历程画布中保持未修改状态时，对旅程所做的更改才会同步到历程画布。 在历程画布中修改旅程后，您对Journey Optimizer中的旅程所做的任何更改都不会反映在历程画布中。 若要查看在历程画布中反映的更改，您可以在历程画布](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)中删除并重新创建历程[。
+此外，仅当历程未在历程画布](#differences-after-modifying-a-journey-in-journey-canvas)中进行重大修改时，才对Journey Optimizer中的历程所做的更改同步到历程画布[。 在历程画布中修改旅程后，您对Journey Optimizer中的旅程所做的任何更改都不会反映在历程画布中。 若要查看在历程画布中反映的更改，您可以在历程画布](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)中删除并重新创建历程[。
 
 ### 在历程画布中修改旅程后的差异 {#differences-after-modifying}
 

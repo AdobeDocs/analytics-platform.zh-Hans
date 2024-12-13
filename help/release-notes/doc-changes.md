@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5f02b6eff63f7efcfbec586186506f2c50ec52d7
-workflow-type: ht
-source-wordcount: '4216'
-ht-degree: 100%
+source-git-commit: 532f3a30e65d715f5b5b4caea85885a13d82641c
+workflow-type: tm+mt
+source-wordcount: '4219'
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 派生字段重复数据删除功能 | 添加了有关派生字段[重复数据删除](/help/data-views/derived-fields/derived-fields.md#deduplicate)功能的文档。 |
 | 已更新的常见错误消息 | 对 [常见错误消息](/help/analysis-workspace/workspace-faq/error-messages.md)做了小更新。 |
 | **2024 年 6 月** | |
-| 更新了涉及流媒体功能的产品名称 | 当引用收集流媒体数据并将其显示在 Analysis Workspace 中的一组流媒体功能时，将“媒体分析”和“流媒体”的实例替换为名称“流媒体收藏集附加组件”。 <p>这些更新可在 Customer Journey Analytics 文档以及[流媒体收藏集附加组件文档](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/media-overview)中查看。</p> |
+| 更新了涉及流媒体功能的产品名称 | 在引用一组流媒体功能时，将名为“Streaming Media Collection Add-on”和“Streaming Media”的“Media Analytics”和“Streaming Media”实例替换为“Streaming Media Collection Add-on”和“Streaming Media Collection”，这些功能收集流媒体数据并将其显示在Analysis Workspace中。 <p>这些更新在Customer Journey Analytics文档以及[流媒体收藏集文档](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/media-overview)中提供。</p> |
 | 基于图形的拼接 | 更新并重组了[拼接文档](/help/stitching/overview.md)，引入了基于图形的拼接。 |
 | AI 助手 | 添加了有关 Customer Journey Analytics 的 AI 助手的[文档](../ai-assistant.md)。 |
 | 转换数据集以进行 B2B 查找 | 添加了有关如何通过转换 B2B 查找数据集来支持[基于人员的 B2B 数据查找](/help/connections//transform-datasets-b2b-lookups.md)（包括帐户、机会、营销列表和营销活动）的文档。 |
@@ -112,7 +112,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 会话设置 | 为此数据视图设置添加了一个主题。[了解详情](/help/data-views/session-settings.md) |
 | Adobe Product Analytics | Adobe Product Analytics 是一种与 Customer Journey Analytics 中的跨渠道数据和见解进行交互的新方式。这些新功能使产品团队能够通过[引导式分析](/help/guided-analysis/overview.md)工作流程自助提供有关其产品体验的数据和见解。 |
 | 派生字段 | 通过[派生字段](/help/data-views/derived-fields/derived-fields.md)和可自定义的规则生成器，即可迅速定义（一般较为复杂的）数据操作。 |
-| 配置文件和查找数据的扩展查找支持 | 提供将数据集添加为配置文件或查找数据集中的字段查找的功能。之前，仅支持事件数据集。[了解详情](/help/connections/create-connection.md) |
+| 轮廓和查找数据的扩展查找支持 | 提供将数据集添加为轮廓或查找数据集中的字段查找的功能。之前，仅支持事件数据集。[了解详情](/help/connections/create-connection.md) |
 | Report Builder 增强 | <ul><li>[从单元格中筛选多个数据块](/help/report-builder/select-data-view.md)</li><li>[显示和隐藏行标题和列标题](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html#build-the-data-block)</li></ul> |
 | Edge Network 地理位置查询 | [数据流设置](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html)中包含一个地理查找服务，该服务提供统一的地理数据。 |
 | **2023 年 6 月** | |
@@ -159,7 +159,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 自动保存 Workspace 项目 | 已更新内容以在[保存项目](/help/analysis-workspace/build-workspace-project/save-projects.md)中包含自动保存功能。 |
 | 登陆页面 | 新的着陆页面更新[着陆页面](/help/getting-started/landing.md)。 |
 | 计划工作簿 | 专用页面描述如何在 Report Builder 中[计划工作簿](/help/report-builder/schedule-reportbuilder.md)。 |
-| 对象数组支持配置文件和查找数据集 | 更新了[使用对象数组](/help/use-cases/object-arrays.md)和[摄入 Adobe Experience Platform 受众](/help/use-cases/data-ingestion/ingest-aep-segments.md)以反映对配置文件和查找数据集的对象数组支持。 |
+| 对象数组支持轮廓和查找数据集 | 更新了[使用对象数组](/help/use-cases/object-arrays.md)和[摄入 Adobe Experience Platform 受众](/help/use-cases/data-ingestion/ingest-aep-segments.md)以反映对轮廓和查找数据集的对象数组支持。 |
 
 {style="table-layout:auto"}
 
@@ -274,7 +274,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 2020 年 10 月 7 日 | 添加了有关[合并事件数据集](/help/connections/combined-dataset.md)的主题。 |
 | 2020 年 9 月 15 日 | 添加了有关[数据摄取](/help/data-ingestion/data-ingestion.md)的主题。 |
 | 2020 年 9 月 2 日 | 更新了有关[用户权限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=zh-Hans)的部分。 |
-| 2020 年 7 月 | 添加了有关[人员 ID 的标识映射选项](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans)的信息。 |
+| 2020 年 7 月 | 添加了有关[人员 ID 的身份标识映射选项](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans)的信息。 |
 | 2020 年 7 月 | 添加了有关[对象数组](/help/use-cases/object-arrays.md)或“数据层次结构”的新主题。 |
 | 2020 年 4 月 14 日 | 对[创建连接](/help/connections/create-connection.md)主题中的最新 UI 进行了更新。 |
 | 2020 年 2 月 27 日 | 对 [Customer Journey Analytics 功能支持](/help/getting-started/aa-vs-cja/cja-aa.md)的更新 |

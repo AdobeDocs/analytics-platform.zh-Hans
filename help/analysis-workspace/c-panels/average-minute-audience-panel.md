@@ -4,9 +4,9 @@ description: 如何使用和解读Analysis Workspace中的“媒体平均受众�
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: 5121f0d395674ca3b9fed19278c5c0253354e9cc
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '1787'
 ht-degree: 30%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 30%
 
 >[!NOTE]
 >
->**[!UICONTROL 媒体平均受众访问分钟数]**&#x200B;面板仅适用于已购买流媒体收集加载项进行Customer Journey Analytics的客户。
+>**[!UICONTROL 媒体平均受众访问分钟数]**&#x200B;面板仅适用于已购买流媒体收藏集进行Customer Journey Analytics的客户。
 >
 >有关更多信息，请与您的Adobe销售代表或Adobe客户团队联系。
 >
@@ -62,8 +62,7 @@ ht-degree: 30%
 
 1. 创建&#x200B;**[!UICONTROL 媒体平均受众访问分钟数]**&#x200B;面板。 有关如何创建面板的信息，请参阅[创建面板](panels.md#create-a-panel)。
 
-1. 确保为面板选择数据视图，该面板具有从流媒体收集加载项配置的组件。
-
+1. 确保为具有从流媒体收集配置的组件的面板选择数据视图。
 
 1. 指定面板的[输入](#panel-input)。
 
