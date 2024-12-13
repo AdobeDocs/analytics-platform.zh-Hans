@@ -5,7 +5,7 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '3461'
 ht-degree: 100%
@@ -43,7 +43,7 @@ ht-degree: 100%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_shareonlyworkspace"
+>id="workspace_prefs_shareonlyworkspace"
 >title="仅允许与 Workspace 用户共享"
 >abstract="启用后，**[!UICONTROL 与任何人共享]**&#x200B;选项在共享 Analysis Workspace 项目时将不再可供用户使用。之前通过此共享选项获得项目访问权限的人员将无法再访问该项目。"
 
@@ -52,7 +52,7 @@ ht-degree: 100%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_requireexperiencecloudauth"
+>id="workspace_prefs_requireexperiencecloudauth"
 >title="需要 Experience Cloud 身份验证"
 >abstract="启用后，通过 Analysis Workspace 中的“与任何人共享”选项获得项目访问权限的人员必须使用其 Experience Cloud 凭据进行身份验证。"
 
@@ -65,7 +65,7 @@ ht-degree: 100%
 | --- | --- | --- |
 | **项目共享** | | |
 | | 仅允许与 Workspace 用户共享 | 启用此选项后，组织内的用户将无法在&#x200B;**[!UICONTROL 共享]**&#x200B;菜单中看到&#x200B;**[!UICONTROL 与任何人共享]**&#x200B;选项。这意味着，用户无法与已在您的组织中拥有 Analysis Workspace 帐户的人员共享项目，如[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)中所述。<br/>默认情况下，除许可了 Healthcare Shield 的客户外，所有组织均禁用此选项（这意味着用户可以与组织外部的人员共享项目）。 <p>在启用或禁用此选项时，请考虑以下事项：<ul><li>启用此选项后，之前通过[!UICONTROL 与任何人共享]共享选项获得项目访问权限的人员将无法再访问该项目。</li><li>如果启用此选项（仅允许与 Workspace 用户共享），然后将其禁用（允许与任何人共享），则之前通过[!UICONTROL 与任何人共享]共享选项获得项目访问权限的人员不会自动重新获得对项目的访问权限。在这种情况下，已共享项目的用户必须启用在与任何人共享项目时可用的&#x200B;[!UICONTROL **链接已激活**]&#x200B;选项&#x200B;**（[!UICONTROL 共享]** > **[!UICONTROL 与任何人共享]**），如[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)中所述。</li><li>**对于许可 Healthcare Shield 的客户：**&#x200B;该选项默认启用且无法禁用。在禁用此选项以便用户可以使用[!UICONTROL 与任何人共享]的共享选项之前，您首先需要在 Adobe Admin Console 中添加[!UICONTROL 与任何人共享项目链接]权限（位于[!UICONTROL 报告工具]下）。添加权限后，您可以禁用此选项，然后接受由此产生的法律声明。有关如何在 Admin Console 中添加权限的信息，请参阅[在 Admin Console 中管理产品权限](https://helpx.adobe.com/cn/enterprise/using/manage-permissions-and-roles.html)。</li></ul> |
-| | 需要 Experience Cloud 身份验证 | 启用后，通过 Analysis Workspace 中的“与任何人共享”选项获得项目访问权限的人员必须使用其 Experience Cloud 凭据进行身份验证。<p>启用此选项后，当用户使用[!UICONTROL 与任何人共享]共享选项来共享项目时，共享对话框中都会启用[!UICONTROL 需要 Experience Cloud 身份验证]选项，并且共享项目的用户无法禁用该选项。有关用户如何与任何人共享项目的信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)。 <p> <p>启用此选项时，请考虑以下事项： <ul><li>启用此选项后，所有之前通过[!UICONTROL 与任何人共享]共享选项共享且未启用[!UICONTROL 需要 Experience Cloud 身份验证]选项的项目都将被停用。<p>如果启用此选项（以要求进行 Experience Cloud 身份验证），然后将其禁用（以允许拥有链接的任何人员访问项目），则之前通过[!UICONTROL 与任何人共享]共享选项获得项目访问权限的人员不会自动重新获得对项目的访问权限。在这种情况下，已共享项目的用户必须启用在与任何人共享项目时可用的[!UICONTROL 链接已激活]选项&#x200B;**（[!UICONTROL 共享]** > **[!UICONTROL 与任何人共享]** > **[!UICONTROL 链接已激活]**），如[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)中所述。</li><li>仅在组织内实施 SSO 后，此选项才可用。有关系统管理员如何为组织启用 SSO 的信息，请参阅[设置标识和单点登录](https://helpx.adobe.com/cn/enterprise/using/set-up-identity.html)。</p><p>如果已为组织配置 SSO，请检查控制台中是否实施了任何类型的自动帐户创建。通常，系统管理员会进行此设置，如[启用自动帐户创建](https://helpx.adobe.com/cn/enterprise/using/automatic-account-creation.html)中所述。</li><li>如果您的组织许可 Healthcare Shield，则默认情况下会启用此选项且无法禁用。</li></ul> |
+| | 需要 Experience Cloud 身份验证 | 启用后，通过 Analysis Workspace 中的“与任何人共享”选项获得项目访问权限的人员必须使用其 Experience Cloud 凭据进行身份验证。<p>启用此选项后，当用户使用[!UICONTROL 与任何人共享]共享选项来共享项目时，共享对话框中都会启用[!UICONTROL 需要 Experience Cloud 身份验证]选项，并且共享项目的用户无法禁用该选项。有关用户如何与任何人共享项目的信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)。 <p> <p>启用此选项时，请考虑以下事项： <ul><li>启用此选项后，所有之前通过[!UICONTROL 与任何人共享]共享选项共享且未启用[!UICONTROL 需要 Experience Cloud 身份验证]选项的项目都将被停用。<p>如果启用此选项（以要求进行 Experience Cloud 身份验证），然后将其禁用（以允许拥有链接的任何人员访问项目），则之前通过[!UICONTROL 与任何人共享]共享选项获得项目访问权限的人员不会自动重新获得对项目的访问权限。在这种情况下，已共享项目的用户必须启用在与任何人共享项目时可用的[!UICONTROL 链接已激活]选项&#x200B;**（[!UICONTROL 共享]** > **[!UICONTROL 与任何人共享]** > **[!UICONTROL 链接已激活]**），如[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)中所述。</li><li>仅在组织内实施 SSO 后，此选项才可用。有关系统管理员如何为组织启用 SSO 的信息，请参阅[设置身份标识和单点登录](https://helpx.adobe.com/cn/enterprise/using/set-up-identity.html)。</p><p>如果已为组织配置 SSO，请检查控制台中是否实施了任何类型的自动帐户创建。通常，系统管理员会进行此设置，如[启用自动帐户创建](https://helpx.adobe.com/cn/enterprise/using/automatic-account-creation.html)中所述。</li><li>如果您的组织许可 Healthcare Shield，则默认情况下会启用此选项且无法禁用。</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -75,7 +75,7 @@ ht-degree: 100%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_categoricalpalette"
+>id="workspace_prefs_categoricalpalette"
 >title="分类调色板"
 >abstract="应用于 Analysis Workspace 和引导式分析中的许多可视化功能。每种颜色代表不同的类别值。"
 
@@ -84,7 +84,7 @@ ht-degree: 100%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_divergingpalette"
+>id="workspace_prefs_divergingpalette"
 >title="发散调色板"
 >abstract="应用于 Analysis Workspace 和用户增长引导式分析中的群组表。该调色板具有数字含义，其中带有两个极端以及中间的基线。"
 
@@ -93,7 +93,7 @@ ht-degree: 100%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_sequentialpalette"
+>id="workspace_prefs_sequentialpalette"
 >title="顺序调色板"
 >abstract="应用于频率趋势（堆积条）引导式分析。该调色板具有从浅到深的数字含义。"
 
@@ -124,7 +124,7 @@ ht-degree: 100%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_showanomalies"
+>id="workspace_prefs_showanomalies"
 >title="显示异常"
 >abstract="选择&#x200B;**[!UICONTROL 显示异常情况]**&#x200B;将会自动对已添加到时间序列可视化自由格式表中的第一个量度列运行异常检测。"
 
@@ -133,7 +133,7 @@ ht-degree: 100%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_showforecast"
+>id="workspace_prefs_showforecast"
 >title="显示预测"
 >abstract="选择&#x200B;**[!UICONTROL 显示预测]**&#x200B;将会自动对已添加到时间序列可视化自由格式表中的第一个量度列进行预测。"
 

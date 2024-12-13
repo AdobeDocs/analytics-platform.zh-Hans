@@ -4,7 +4,7 @@ title: 流量概述
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 3abe8fd0e43d9ab8810e7166cbdb463bc9244223
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 53%
@@ -16,12 +16,12 @@ ht-degree: 53%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_flow_button"
+>id="workspace_flow_button"
 >title="流量"
 >abstract="创建可视化效果来查看从一个检查点到下一个检查点的人员流动。"
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_flow_panel"
+>id="workspace_flow_panel"
 >title="流量"
 >abstract="分析从一个接触点到下一个接触点的访问或访客流量。<br/><br/>**维度&#x200B;**<br/>**用以下为开头**：添加一个维度、维度项目或量度以查看在所选组件出现之后出现最多的接触点。<br/>**包含**：添加一个维度或维度项目以查看在所选组件出现之前和之后出现最多的接触点。<br/>**用以下为结尾**：添加一个维度、维度项目或量度以查看在所选组件出现之前出现最多的接触点。<br/>**路径维度**：添加一个维度，用作通往或者离开您的选定组件的路径。"
 

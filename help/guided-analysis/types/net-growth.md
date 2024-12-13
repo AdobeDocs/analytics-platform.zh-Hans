@@ -5,7 +5,7 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 6%
@@ -17,7 +17,7 @@ ht-degree: 6%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_netgrowth_button"
+>id="workspace_guidedanalysis_netgrowth_button"
 >title="净增长"
 >abstract="您是在获得用户还是在失去用户？"
 

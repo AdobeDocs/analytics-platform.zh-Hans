@@ -4,7 +4,7 @@ title: 条形图和堆叠的条形图
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: e8d9132ec9920d649f6694f02f987deadb93b77d
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 30%
@@ -20,7 +20,7 @@ ht-degree: 30%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_bar_button"
+>id="workspace_bar_button"
 >title="条形图"
 >abstract="创建可视化条形图来表示一个或多个量度的各种值。"
 
@@ -38,7 +38,7 @@ ht-degree: 30%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_barstacked_button"
+>id="workspace_barstacked_button"
 >title="堆叠的条形图"
 >abstract="创建条形图可视化来表示一个或多个堆叠量度中的多个值。"
 

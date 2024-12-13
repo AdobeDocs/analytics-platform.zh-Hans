@@ -4,7 +4,7 @@ title: 组合图表可视化
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 44%
@@ -16,7 +16,7 @@ ht-degree: 44%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_combo_button"
+>id="workspace_combo_button"
 >title="组合"
 >abstract="快速创建可视化组合图表，无需先创建自由格式表。"
 
@@ -71,7 +71,7 @@ ht-degree: 44%
 | --- | --- |
 | **[!UICONTROL 列总和]** | 添加列中某指标的所有数值（跨维度元素） |
 | **[!UICONTROL 累积平均数]** | 返回最后N行的平均值。 |
-| **[!UICONTROL 中间值]** | 返回列中某指标的中间值。中间值是一组数字中间的数字。 一半数字的值大于或等于中间值，另一半数字的值小于或等于中间值。 |
+| **[!UICONTROL 中间值]** | 返回列中某量度的中间值。中间值是一组数字中间的数字。 一半数字的值大于或等于中间值，另一半数字的值小于或等于中间值。 |
 | **[!UICONTROL 累积数]** | N 行的累积总和。 |
 | **[!UICONTROL 列最大值]** | 返回某量度列的一组维度元素中的最大值。 |
 | **[!UICONTROL 平均值]** | 返回某度量的算术平均值或平均值。 |

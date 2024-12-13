@@ -4,7 +4,7 @@ description: 了解如何在Analysis Workspace中使用同类群组表进行同�
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: c16ad9f490abed1e15e1012a5a9347e2628b7642
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '641'
 ht-degree: 34%
@@ -16,7 +16,7 @@ ht-degree: 34%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_cohorttable_button"
+>id="workspace_cohorttable_button"
 >title="同类群组表"
 >abstract="创建可视化同类群组，根据事件的完成情况对用户进行分组，并分析持续的参与度和一段时间内的流失率。"
 
@@ -25,7 +25,7 @@ ht-degree: 34%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_cohorttable_panel"
+>id="workspace_cohorttable_panel"
 >title="同类群组表"
 >abstract="根据事件的完成情况分组用户，然后分析这些用户在一段时间内的持续参与和流失程度。<br/><br/>**参数&#x200B;**<br/>**纳入标准**：用于定义您的初始访客同类群组的组件。<br/>**回访标准**：用于确定访客是否已回访的组件。"
 

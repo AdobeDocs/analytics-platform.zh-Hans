@@ -4,7 +4,7 @@ description: 如何在Analysis Workspace中使用和解释“媒体播放耗时�
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 56%
@@ -16,7 +16,7 @@ ht-degree: 56%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaplaybacktimespent_button"
+>id="workspace_mediaplaybacktimespent_button"
 >title="媒体播放耗时"
 >abstract="创建一个面板来分析一段时间内的视频消耗情况，其中具有不同级别的粒度，以及细分和比较的能力。"
 
@@ -25,7 +25,7 @@ ht-degree: 56%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaplaybacktimespent_panel"
+>id="workspace_mediaplaybacktimespent_panel"
 >title="媒体播放耗时"
 >abstract="分析一段时间内的视频消耗情况，选择各种粒度，并进行细分和比较。<br/><br/>**粒度**：选择查看并发查看者的时段。<br/>**面板摘要数字（可选）**：选择显示每行带有日期或时间详细信息的摘要数字。最大值将会显示播放耗时峰值的详细信息。最小值显示低谷期的详细信息。总和显示播放耗时总和的详细信息。<br/>**系列细分（可选）**：按区段、维度、维度项或日期范围细分可视化图表。一次最多查看 10 行。细分仅限一个级别。<br/>**时间格式**：以小时或分钟显示可视化时间格式的选项。"
 

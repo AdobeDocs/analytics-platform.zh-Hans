@@ -4,10 +4,10 @@ title: 直方图
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '330'
-ht-degree: 42%
+ht-degree: 37%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 42%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_histogram_button"
+>id="workspace_histogram_button"
 >title="直方图"
 >abstract="创建可视化直方图来表示范围组中数值数据的分布。"
 
@@ -49,7 +49,7 @@ ht-degree: 42%
 | 直方图设置 | 描述 |
 |---|---|
 | **[!UICONTROL 正在启动存储桶]** | 确定直方图从哪个存储段开始。“1”为默认值。您可以在 0 到无穷大（非负数）的范围内设置开始数量。 |
-| **[!UICONTROL 指标桶]** | 您可以增加/减少数据范围（存储段）的数量。存储段的最大数量为 50。 |
+| **[!UICONTROL 指标桶]** | 允许您增加/减少数据范围（存储段）的数量。 存储段的最大数量为50。 |
 | **[!UICONTROL 量度存储段大小]** | 您可以设置每个存储段的大小。例如，您可以将存储段大小从 1 次页面查看更改为 2 次页面查看。 |
 | **[!UICONTROL 计数方法]** | 从&#x200B;**[!UICONTROL 人员]**、**[!UICONTROL 会话]**&#x200B;或&#x200B;**[!UICONTROL 事件]**&#x200B;中选择。 例如，每个会话的页面查看次数，或每个人的页面查看次数，或每个事件的页面查看次数。 |
 

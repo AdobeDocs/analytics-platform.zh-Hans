@@ -4,7 +4,7 @@ description: 如何使用和解读Analysis Workspace中的“媒体平均受众�
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-source-git-commit: 28a43ef92bee1359509c0c3f92d51a08653830c3
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '1789'
 ht-degree: 30%
@@ -16,7 +16,7 @@ ht-degree: 30%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaminuteaverageaudience_button"
+>id="workspace_mediaminuteaverageaudience_button"
 >title="媒体受众平均逗留分钟数"
 >abstract="创建一个面板来分析特定内容或特定时段内的平均受众访问分钟数。"
 
@@ -25,7 +25,7 @@ ht-degree: 30%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaaverageminuteaudience_panel"
+>id="workspace_mediaaverageminuteaudience_panel"
 >title="媒体受众平均逗留分钟数"
 >abstract="显示特定媒体内容或自定义时段内的性能。<br/><br/>**常规参数&#x200B;**<br/>**计算量度**：选择面板使用的量度。选择&#x200B;**特定内容**&#x200B;以根据内容长度分析特定内容或事件的平均受众访问分钟数。**选择自定义时段**&#x200B;来分析平均受众访问分钟数在自定义选定时段内的变化情况。<br/>**报告维度**：选择按&#x200B;**内容 ID** 维度的&#x200B;**视频名称**&#x200B;进行报告。仅当您选择特定内容作为量度时可用。<br/>**粒度**：选择报告的粒度。仅当您选择自定义时段作为量度时可用。<br/>**按以下条件过滤内容（可选）**：选择特定的节目、季、剧集，或选择自定义维度来过滤内容。<br/><br/>**高级设置&#x200B;**<br/>**表格设置**：选择是否在表格中显示计算值。<br/>**逗留时间量度**：选择您想要用于特定内容计算的逗留时间量度。仅当您选择特定内容作为量度时可用。"
 

@@ -4,7 +4,7 @@ title: 空白面板
 feature: Panels
 exl-id: b65d0031-b4c0-4400-8d67-9416f3c993b6
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 100%
@@ -16,7 +16,7 @@ ht-degree: 100%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_blankpanel_button"
+>id="workspace_blankpanel_button"
 >title="空白面板"
 >abstract="显示您可以创建的面板或可视化选项，以构建完全自定义的分析。"
 >additional-url="https://www.youtube.com/watch?v=SYaioiwBTrk" text="Analysis Workspace 中的面板"
@@ -64,7 +64,7 @@ ht-degree: 100%
   | ![GraphBullet](/help/assets/icons/GraphBullet.svg) | [项目符号](/help/analysis-workspace/visualizations/bullet-graph.md) |
   | ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [圆环图](/help/analysis-workspace/visualizations/donut.md) |
   | ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) | [概要变化](/help/analysis-workspace/visualizations/summary-number-change.md) |
-  | ![Histogram](/help/assets/icons/Histogram.svg) | [直方图](/help/analysis-workspace/visualizations/histogram.md) |
+  | ![直方图](/help/assets/icons/Histogram.svg) | [直方图](/help/analysis-workspace/visualizations/histogram.md) |
   | ![GraphScatter](/help/assets/icons/GraphScatter.svg) | [散点图](/help/analysis-workspace/visualizations/scatterplot.md) |
   | ![Type](/help/assets/icons/TwoDots.svg) | [维恩图](/help/analysis-workspace/visualizations/venn.md) |
   | ![GraphTree](/help/assets/icons/GraphTree.svg) | [树形图](/help/analysis-workspace/visualizations/treemap.md) |

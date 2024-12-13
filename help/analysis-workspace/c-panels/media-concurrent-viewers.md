@@ -4,10 +4,10 @@ description: 如何在Analysis Workspace中使用和解释“媒体并行查看�
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '1208'
-ht-degree: 43%
+ht-degree: 47%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 43%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaconcurrentviewers_button"
+>id="workspace_mediaconcurrentviewers_button"
 >title="媒体并行查看者"
 >abstract="创建一个面板来分析特定内容或特定时段内的平均受众访问分钟数。"
 
@@ -25,7 +25,7 @@ ht-degree: 43%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaconcurrentviewers_panel"
+>id="workspace_mediaconcurrentviewers_panel"
 >title="媒体并行查看者"
 >abstract="分析一段时间内的并发查看者，查看并发峰值，或进行细分和比较。<br/><br>**粒度**：选择查看并发查看者的时段。<br/>**面板摘要数字**：<br/>选择显示每行带有日期或时间详细信息的摘要数字。“最大值”显示并发峰值的详细信息。“最小值”显示低谷期的详细信息。<br/>**系列细分（可选）**：按区段、维度、维度项或日期范围细分可视化图表。一次最多查看 10 行。细分仅限一个级别。"
 
@@ -63,7 +63,7 @@ ht-degree: 43%
 
 1. 确保为面板选择数据视图，该面板具有从流媒体收集加载项配置的组件。
 
-1. 为面板指定[输入](#panel-input)。
+1. 指定面板的[输入](#panel-input)。
 
 1. 观察面板的[输出](#panel-output)。
 
@@ -123,7 +123,7 @@ ht-degree: 43%
 
 >[!MORELIKETHIS]
 >
->[创建面板](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+>[Create a panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
 >[“媒体播放耗时”面板](media-playback-time-spent.md)
 >[“媒体平均受众访问分钟数”面板](average-minute-audience-panel.md)
 >

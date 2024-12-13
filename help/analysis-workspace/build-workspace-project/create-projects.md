@@ -4,8 +4,8 @@ title: 创建项目
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
-workflow-type: ht
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_project_countrepeatinstances"
+>id="workspace_project_countrepeatinstances"
 >title="计数重复实例"
 >abstract="指定是否将重复实例计入报告中。<br/><br/>注意：此设置不适用于“流”或“流失”可视化。"
 
@@ -59,7 +59,7 @@ ht-degree: 100%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_project_repeatinstances"
+>id="workspace_project_repeatinstances"
 >title="计数重复实例"
 >abstract="指定是否将重复实例计入报告中。<br/>注意：此设置不适用于“流”或“流失”可视化。"
 

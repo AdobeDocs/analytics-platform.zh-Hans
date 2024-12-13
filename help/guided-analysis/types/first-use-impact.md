@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
-source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '674'
+ht-degree: 9%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_firstuseimpact_button"
+>id="workspace_guidedanalysis_firstuseimpact_button"
 >title="首次使用影响"
 >abstract="衡量功能首次使用对关键量度的影响。"
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 * **[!UICONTROL 视图]**：在此分析和[版本](release-impact.md)之间切换。
 * **[!UICONTROL 关键指示器]**：每个用户要测量的事件。 每个所选关键指示符用彩色线条表示。 表示该事件的行将添加到表中。 您最多可以包含三个事件。
-* **[!UICONTROL 计为]**：要应用于选定事件的计数方法。 选项包括每个用户的[!UICONTROL 事件]、[!UICONTROL 事件]、[!UICONTROL 会话]和[!UICONTROL 用户]。
+* **[!UICONTROL 计为]**：要应用于所选事件的计数方法。选项包括每个用户的[!UICONTROL 事件]、[!UICONTROL 事件]、[!UICONTROL 会话]和[!UICONTROL 用户]。
 * **[!UICONTROL 因素]**：此分析有两个因素：
    * **[!UICONTROL 日期]**：您希望回溯多远，以便开始查找已发生的首次使用事件。
    * **[!UICONTROL 事件]**：要查找的首次使用事件，以集中分析。

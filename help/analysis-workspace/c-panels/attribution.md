@@ -4,7 +4,7 @@ description: 在 Analysis Workspace 中如何使用和解读归因面板。
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 49%
@@ -16,14 +16,14 @@ ht-degree: 49%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_attribution_button"
+>id="workspace_attribution_button"
 >title="归因"
 >abstract="使用任意维度和转化量度，快速比较和可视化任意数量的归因模型"
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ 面板"
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_attribution_panel"
->title="归因面板"
+>id="workspace_attribution_panel"
+>title="”归因“面板"
 >abstract="使用任意维度和转化量度，快速比较并可视化任意数量的归因模型。<br/><br/>**参数&#x200B;**<br/>**渠道**<br/>&#x200B;归因的对比维度。该维度可以是营销渠道、营销活动或任何其他维度。<br/>**模型**<br/>&#x200B;该模型可以确定如何将点数分配给各个接触点。<br/>**回顾窗口**<br/>&#x200B;此设置可以确定应用于每次转化的数据归因窗口。"
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ 面板"
 

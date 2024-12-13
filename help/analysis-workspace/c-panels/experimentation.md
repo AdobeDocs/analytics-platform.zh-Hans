@@ -4,7 +4,7 @@ title: 试验性面板
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 3e2d92003f8b89a20edfcfb8358854c7fbd15577
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '2144'
 ht-degree: 20%
@@ -16,7 +16,7 @@ ht-degree: 20%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_experimentation_button"
+>id="workspace_experimentation_button"
 >title="试验"
 >abstract="创建一个面板来比较不同的用户体验、营销或消息变化。并确定哪种变化最能产生特定的结果。"
 
@@ -25,7 +25,7 @@ ht-degree: 20%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_experimentation_panel"
+>id="workspace_experimentation_panel"
 >title="试验"
 >abstract="比较不同的用户体验、营销或消息变化，以确定哪些最能推动特定结果。<br/><br/>**参数&#x200B;**<br/>**试验**：接受分析的试验。<br>**控制变量**：所选试验的控制变量。<br/>**成功量度**：最多 5 个标准（非计算）成功量度来分析试验。<br/>**规范化量度**：人员、会话或事件。此指标（也称为计数方法）将作为提升计算的分母。该量度也会在应用置信度计算之前影响数据汇总的方式。"
 

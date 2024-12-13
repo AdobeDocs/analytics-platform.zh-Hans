@@ -4,7 +4,7 @@ title: 关于流失报表和可视化图表
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: 3abe8fd0e43d9ab8810e7166cbdb463bc9244223
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 32%
@@ -16,7 +16,7 @@ ht-degree: 32%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_fallout_button"
+>id="workspace_fallout_button"
 >title="流失"
 >abstract="创建可视化效果来查看人们如何成功到达所需的检查点。"
 

@@ -4,8 +4,8 @@ title: 快速洞察面板
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
-workflow-type: ht
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_quickinsights_button"
+>id="workspace_quickinsights_button"
 >title="快速洞察"
 >abstract="创建一个面板，快速构建自由格式表和随附的可视化内容，以便更快地分析和发现洞察。"
 

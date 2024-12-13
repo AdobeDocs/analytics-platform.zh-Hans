@@ -3,20 +3,20 @@ title: 节头
 description: 在Workspace项目中插入节标题的可视化图表。
 feature: Visualizations
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+exl-id: 7f815879-2b08-4650-a9ce-c55ca5824288
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 18%
 
 ---
 
-
 # 节头 {#section-header}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_sectionheader_button"
+>id="workspace_sectionheader_button"
 >title="节头"
 >abstract="向面板添加节头。"
 

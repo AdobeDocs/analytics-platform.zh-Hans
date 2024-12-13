@@ -4,7 +4,7 @@ title: 项目符号图表
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 64%
@@ -16,7 +16,7 @@ ht-degree: 64%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_bullet_goalvalue"
+>id="workspace_bullet_goalvalue"
 >title="目标值"
 >abstract="**[!UICONTROL 高目标]**&#x200B;是您的主要目标。**[!UICONTROL 低目标]**&#x200B;和&#x200B;**[!UICONTROL 中目标]**&#x200B;创建的是低于[!UICONTROL 高目标]的范围。注意：选中&#x200B;**[!UICONTROL 百分比]**&#x200B;选项时，请以整数形式输入目标。例如：如果您的目标是百分之二十，则输入 `20`。"
 
@@ -25,7 +25,7 @@ ht-degree: 64%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_bullet_button"
+>id="workspace_bullet_button"
 >title="项目符号"
 >abstract="创建可视化项目符号图表来显示量度与性能范围（目标）之间的比较。"
 

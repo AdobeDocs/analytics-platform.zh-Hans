@@ -54,7 +54,7 @@ ht-degree: 18%
 >[!CONTEXTUALHELP]
 >id="cja_component_audiences_namespacesincluded"
 >title="已包括命名空间"
->abstract="该受众的身份由以下命名空间组成。"
+>abstract="该受众的身份标识由以下命名空间组成。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -149,7 +149,7 @@ ht-degree: 18%
 
 Customer Journey Analytics会从已发布的受众中获取所有命名空间和ID组合，并将其流式传输到Real-time Customer Data Platform中。 Customer Journey Analytics根据配置连接时选择作为[!UICONTROL 人员ID]的内容，将受众发送到设置了主标识的Experience Platform。
 
-然后，Real-time Customer Data Platform会检查每个命名空间/ID组合，并查找可能包含该组合的配置文件。 个人资料其实就是由所链接的命名空间、ID 和设备组成的集群。如果它找到配置文件，则会将命名空间和ID作为区段成员资格属性添加到此配置文件中的其他ID。 例如，可以跨其所有设备和渠道定位<user@adobe.com>。 如果未找到相关的个人资料，则会创建一份新的个人资料。
+然后，Real-time Customer Data Platform会检查每个命名空间/ID组合，并查找可能包含该组合的配置文件。 轮廓其实就是由所链接的命名空间、ID 和设备组成的集群。如果它找到配置文件，则会将命名空间和ID作为区段成员资格属性添加到此配置文件中的其他ID。 例如，可以跨其所有设备和渠道定位<user@adobe.com>。 如果未找到相关的轮廓，则会创建一份新的轮廓。
 
 要在Platform中查看Customer Journey Analytics受众，请执行以下操作：
 
@@ -204,7 +204,7 @@ Customer Journey Analytics通过pipeline将数据流式传输到Real-time Custom
 
 +++
 
-+++**选择什么 ID 作为主要标识？**
++++**选择什么 ID 作为主要身份标识？**
 
 请参阅上面的内容。每个Customer Journey Analytics只发送一个身份。
 
