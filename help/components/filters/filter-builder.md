@@ -4,9 +4,9 @@ title: 构建过滤器
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 8772f2dcd5f9c20ca9d366b8c172218f45e4713c
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1494'
 ht-degree: 7%
 
 ---
@@ -21,6 +21,16 @@ ht-degree: 7%
 >abstract="可以从过滤器创建受众并与 Adobe Experience Platform 共享以进行激活。"
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_filter_datapreview"
+>title="数据预览"
+>abstract="将此过滤器的数据与数据视图的数据进行比较。 预览百分比基于数据视图中从&#x200B;**最近90天**&#x200B;开始的总数。<br><br/>如果未加载预览，则您的连接可能仍在回填。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 **[!UICONTROL 筛选器生成器]**&#x200B;对话框用于创建新筛选器或编辑现有筛选器。 该对话框的标题为&#x200B;**[!UICONTROL 新筛选器]**&#x200B;或&#x200B;**[!UICONTROL 编辑筛选器]**，用于从[[!UICONTROL 筛选器]管理器](/help/components/filters/manage-filters.md)创建或管理的筛选器。
