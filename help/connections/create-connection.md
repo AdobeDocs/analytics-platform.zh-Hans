@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
+source-git-commit: 3a0c6c22422ca7f8d4f954f3d9711c5c3501cc03
 workflow-type: tm+mt
-source-wordcount: '3747'
-ht-degree: 98%
+source-wordcount: '3769'
+ht-degree: 97%
 
 ---
 
@@ -204,8 +204,6 @@ ht-degree: 98%
 
 <!-- markdownlint-enable MD034 -->
 
-
-
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
@@ -232,6 +230,16 @@ ht-degree: 98%
 >abstract="此选项将会转换数据集，使其可用于 B2B 场景中基于人员的查找。开启后，数据集的转换是不可逆的。"
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_connectionmap"
+>title="连接图"
+>abstract="连接图可视化了事件、人员、帐户和相关查找数据集（如商机、营销活动成员等）之间的关系。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 新的工作流允许您在创建连接时添加 Experience Platform 数据集。
 
