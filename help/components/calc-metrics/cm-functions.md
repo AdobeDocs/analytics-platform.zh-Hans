@@ -4,7 +4,7 @@ description: 计算量度生成器允许您将统计和数学函数应用于生�
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 2b6d7ba695390bd084fb3af7b5fa365f0bd90185
+source-git-commit: 1804f3dc4126007c1ff553f844d691c80623bb90
 workflow-type: tm+mt
 source-wordcount: '1636'
 ht-degree: 93%
@@ -191,7 +191,7 @@ ht-degree: 93%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_funcion_median"
+>id="calcmetrics_function_median"
 >title="中间值"
 >abstract="返回列中某量度的中间值。中间值是一组数字中间的数字。 也就是说，一半数字的值大于或等于中位数，另一半小于或等于中位数。"
 
@@ -426,7 +426,7 @@ ROUND( 314.15, -2) = 300
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_funcion_square_root"
+>id="calcmetrics_function_square_root"
 >title="平方根"
 >abstract="返回某数字的正平方根。某数字的平方根是该数字二分之一次幂的值。"
 

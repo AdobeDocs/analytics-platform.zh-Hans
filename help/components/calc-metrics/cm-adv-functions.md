@@ -4,9 +4,9 @@ description: 可通过以下方法访问这些函数：选中函数下拉列表�
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 2b6d7ba695390bd084fb3af7b5fa365f0bd90185
+source-git-commit: 1804f3dc4126007c1ff553f844d691c80623bb90
 workflow-type: tm+mt
-source-wordcount: '4428'
+source-wordcount: '4438'
 ht-degree: 28%
 
 ---
@@ -874,7 +874,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="calcmetrics_function_log_regression_coefficient"
 >title="对数回归：相关系数"
->abstract="摘要"
+>abstract="对数回归：Y = a ln(X) + b。返回相关系数。"
 
 <!-- markdownlint-enable MD034 -->
 
