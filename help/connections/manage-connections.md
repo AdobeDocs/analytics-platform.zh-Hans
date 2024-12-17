@@ -6,10 +6,10 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 94d3c5352d00269b760e8b7bdf5059eaaa9b0bd3
+source-git-commit: 0b6a84820dc42b5e5009eaa254e5554712a952aa
 workflow-type: tm+mt
-source-wordcount: '3418'
-ht-degree: 14%
+source-wordcount: '3536'
+ht-degree: 13%
 
 ---
 
@@ -262,7 +262,32 @@ ht-degree: 14%
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_datanotavailable"
+>title="数据不可用"
+>abstract="由于系统限制，2024年9月之前的历史数据不可用。 从2024年9月开始收集和显示量度。 图表在时间轴上显示过去18个月，当数据可用时，将显示未来的数据。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_corereportablerows"
+>title="核心可报告行数"
+>abstract="显示过去13个月中可用的总行数。 例如，在2024年2月1日，该数字显示事件时间戳为2023年1月至2024年1月的可用总行数。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_historicalreportablerows"
+>title="历史可报告行数"
+>abstract="显示超过13个月的时段可用的总行数。 例如，在2024年2月1日，该数字显示事件时间戳早于2023年1月的可用总行数。"
+
+<!-- markdownlint-enable MD034 -->
 
 
 [!UICONTROL Usage]接口显示所有连接中摄取和可报告行的使用情况。 此界面支持您确定您的Customer Journey Analytics使用是否符合合同约定的内容。 除了监控之外，您还可以使用使用情况UI来规划Customer Journey Analytics许可证续订。
