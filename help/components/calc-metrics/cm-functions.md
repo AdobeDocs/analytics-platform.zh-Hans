@@ -4,10 +4,10 @@ description: 计算量度生成器允许您将统计和数学函数应用于生�
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
-workflow-type: ht
-source-wordcount: '1185'
-ht-degree: 100%
+source-git-commit: 2b6d7ba695390bd084fb3af7b5fa365f0bd90185
+workflow-type: tm+mt
+source-wordcount: '1636'
+ht-degree: 93%
 
 ---
 
@@ -38,7 +38,17 @@ ht-degree: 100%
 
 
 
-## 绝对值
+## 绝对值 {#absolute-value}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_absolute_value"
+>title="绝对值"
+>abstract="返回某数字的绝对值。某数字的绝对值是一个具有正值的数字。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ABSOLUTE VALUE(metric)]**
 
@@ -49,7 +59,16 @@ ht-degree: 100%
 | 量度 | 您想要计算绝对值的指标。 |
 
 
-## 列最大值
+## 列最大值 {#column-maximum}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_column_maximum"
+>title="列最大值"
+>abstract="返回某量度列的一组维度元素中的最大值。MAXV 可以在一个列（量度）内跨维度元素垂直估值。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MAXIMUM(metric, include_zeros)]**
 
@@ -61,7 +80,17 @@ ht-degree: 100%
 | include_zeros | 是否在计算中包含零值。 |
 
 
-## 列最小值
+## 列最小值 {#column-minimum}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_column_minimum"
+>title="列最小值"
+>abstract="返回某量度列的一组维度元素中的最小值。MINV 可以在一个列（量度）内跨维度元素垂直估值。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MINIMUM(metric, include_zeros)]**
 
@@ -73,7 +102,17 @@ ht-degree: 100%
 | include_zeros | 是否在计算中包含零值。 |
 
 
-## 列总和
+## 列总和 {#column-sum}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_column_sum"
+>title="列总和"
+>abstract="添加列中某量度的所有数值（跨维度元素）。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN SUM(metric)]**
 
@@ -84,7 +123,17 @@ ht-degree: 100%
 | 量度 | 至少需要一个指标，但可以将任意数量的指标作为参数。 |
 
 
-## 计数
+## 计数 {#count}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_count"
+>title="计数"
+>abstract="返回列中某量度的非零值的数量或计数（某个维度内报告的独特元素数）。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL COUNT(metric)]**
 
@@ -95,7 +144,16 @@ ht-degree: 100%
 | 量度 | 您希望计数的量度。 |
 
 
-## 指数
+## 指数 {#exponent}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_exponent"
+>title="指数"
+>abstract="返回 e 的给定次幂。常数 e 等于 2.71828182845904，它是自然对数的底数。指数是一个数的自然对数LN的倒数。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT(metric)]**
 
@@ -106,7 +164,17 @@ ht-degree: 100%
 | 量度 | 应用于底数 e 的指数。 |
 
 
-## 平均值
+## 平均值 {#mean}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_mean"
+>title="平均值"
+>abstract="返回列中某度量的算术平均值或平均值"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL MEAN(metric, include_zeros)]**
 
@@ -118,7 +186,17 @@ ht-degree: 100%
 | include_zeros | 是否在计算中包含零值。 |
 
 
-## 中间值
+## 中间值 {#median}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_funcion_median"
+>title="中间值"
+>abstract="返回列中某量度的中间值。中间值是一组数字中间的数字。 也就是说，一半数字的值大于或等于中位数，另一半小于或等于中位数。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN(metric, include_zeros)]**
 
@@ -130,7 +208,17 @@ ht-degree: 100%
 | include_zeros | 是否在计算中包含零值。 |
 
 
-## 取模
+## 取模 {#modulo}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_modulo"
+>title="取模"
+>abstract="使用带余除法，将 x 除以 y 之后返回余数。 "
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL MODULO(metric_X, metric_Y)]**
 
@@ -157,7 +245,17 @@ MODULO(-3,3) = 0
 MODULO(MODULO(x,y)+y,y)
 ```
 
-## 百分位数
+## 百分位数 {#percentile}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_percentile"
+>title="百分位数"
+>abstract="返回第n个百分位数，该值介于0和100之间。 当n &lt; 0时，函数使用0。 当n > 100时，函数返回100。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL PERCENTILE(metric, k, include_zeros)]**
 
@@ -171,7 +269,16 @@ MODULO(MODULO(x,y)+y,y)
 
 
 
-## 幂运算符
+## 幂运算符 {#power-operator}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_power_operator"
+>title="幂运算符"
+>abstract="返回 x 的 y 次方。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL POWER OPERATOR(metric_X, metrix_Y)]**
 
@@ -183,7 +290,17 @@ MODULO(MODULO(x,y)+y,y)
 | metric_Y | 您想要将 metric_X 提升到的次方。 |
 
 
-## 四分位数
+## 四分位数 {#quartile}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_quartile"
+>title="四分位数"
+>abstract="返回某量度的四分位数形式的值。例如，四分位数可用于查找创造最多收入的前25%产品。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE(metric, quartile, include_zeros)]**
 
@@ -196,7 +313,16 @@ MODULO(MODULO(x,y)+y,y)
 | include_zeros | 是否在计算中包含零值。 |
 
 
-## 轮次
+## 轮次 {#round}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_round"
+>title="轮次"
+>abstract="在没有&#x200B;*数字*&#x200B;参数的情况下四舍五入，与在&#x200B;*数字*&#x200B;参数为 0 的情况下四舍五入是相同的，都会四舍五入为最接近的整数。使用&#x200B;*数字*&#x200B;参数，ROUND 返回小数点右侧的&#x200B;*数字*&#x200B;位数。如果&#x200B;*数字*&#x200B;为负，则在小数点左侧返回 0。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ROUND(metric, number)]**
 
@@ -216,15 +342,32 @@ ROUND( 314.15, -1) = 310
 ROUND( 314.15, -2) = 300
 ```
 
+## 行计数 {#row-count}
 
-## 行计数
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_row_count"
+>title="行计数"
+>abstract="返回给定列的行计数（一个维度中报告的独特元素计数）。将&#x200B;*超出的独特数*&#x200B;计为 1。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ROW COUNT()]**
 
 返回给定列的行计数（一个维度中报告的独特元素计数）。将&#x200B;*超出的独特数*&#x200B;计为 1。
 
 
-## 行最大值
+## 行最大值 {#row-max}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_row_max"
+>title="行最大值"
+>abstract="每一行中所有列的最大值。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ROW MAX(metric, include_zeros)]**
 
@@ -235,7 +378,17 @@ ROUND( 314.15, -2) = 300
 | 量度 | 至少需要一个指标，但可以将任意数量的指标作为参数。 |
 | include_zeros | 是否在计算中包含零值。 |
 
-## 行最小值
+
+## 行最小值 {#row-min}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_row_min"
+>title="行最小值"
+>abstract="每一行中所有列的最小值。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ROW MIN(metric, include_zeros)]**
 
@@ -248,7 +401,16 @@ ROUND( 314.15, -2) = 300
 
 
 
-## 行总和
+## 行总和 {#row-sum}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_row_sum"
+>title="行总和"
+>abstract="每一行中所有列的总和。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ROW SUM(metric, include_zeros)]**
 
@@ -259,7 +421,17 @@ ROUND( 314.15, -2) = 300
 | 量度 | 至少需要一个指标，但可以将任意数量的指标作为参数。 |
 
 
-## 平方根
+## 平方根 {#square-root}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_funcion_square_root"
+>title="平方根"
+>abstract="返回某数字的正平方根。某数字的平方根是该数字二分之一次幂的值。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT(metric, include_zeros)]**
 
@@ -270,7 +442,16 @@ ROUND( 314.15, -2) = 300
 | 量度 | 您希望计算平方根的量度。 |
 
 
-## 标准偏差
+## 标准偏差 {#standard-deviation}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_standard_deviation"
+>title="标准偏差"
+>abstract="基于数据的抽样群体，返回变量的标准偏差或平方根。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL STANDARD DEVIATION(metric, include_zeros)]**
 
@@ -282,7 +463,16 @@ ROUND( 314.15, -2) = 300
 | include_zeros | 是否在计算中包含零值。 |
 
 
-## 方差
+## 方差 {#variance}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_variance"
+>title="方差"
+>abstract="基于数据的抽样群体返回变量。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE(metric, include_zeros)]**
 
@@ -320,9 +510,6 @@ VARIANCE 的方程式为：
 | 3 |
 
 此列的平均值为 2。此列的变量将为 ((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3 = 2/3。
-
-
-
 
 <!--
 

@@ -4,47 +4,64 @@ description: 可通过以下方法访问这些函数：选中函数下拉列表�
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: e355194d6699128ac817ea564940c0afdea61efc
+source-git-commit: 2b6d7ba695390bd084fb3af7b5fa365f0bd90185
 workflow-type: tm+mt
-source-wordcount: '3126'
-ht-degree: 20%
+source-wordcount: '4428'
+ht-degree: 28%
 
 ---
 
 # 高级功能
 
-[计算量度生成器](cm-workflow/cm-build-metrics.md)允许您应用统计和数学函数。 本文按字母顺序列出了高级功能及其定义。
+使用[计算量度生成器](cm-workflow/cm-build-metrics.md)可以应用统计和数学函数。本文按字母顺序列出了高级功能及其定义。
 
 通过在“组件”面板中选择![效果](/help/assets/icons/Effect.svg)**[!UICONTROL 函数]**&#x200B;列表下的&#x200B;**[!UICONTROL 显示所有]**&#x200B;来访问这些函数。 向下滚动以查看&#x200B;**[!UICONTROL 高级函数]**&#x200B;的列表。
 
-## table函数与row函数
+## 表函数与行函数
 
 在 table 函数中，输出对于表中的每一行都是相同的。在 row 函数中，输出对于表中的每一行都是不同的。
 
-在适用和相关的情况下，使用函数类型对函数进行注释： [!BADGE 表]{type="Neutral"}[!BADGE 行]{type="Neutral"}
+在适用且相关的情况下，函数会用函数类型注释：[!BADGE 表]{type="Neutral"}[!BADGE 行]{type="Neutral"}
 
-## include-zeros参数的含义是什么？
+## Include-Zeros 参数的含义是什么？
 
-它可告知计算中是否包含零。有时零表示&#x200B;*无*，但有时它很重要。
+它可告知计算中是否包含零。零有时表示&#x200B;*无*，有时又十分重要。
 
-例如，如果您有一个收入指标，然后向报表中添加了一个页面查看次数量度，那么您的收入会突然出现更多的行，这些行全部为零。 您可能不希望该额外的量度影响收入列中的任何&#x200B;**[MEAN](cm-functions.md#mean)**、**[ROW MINIMUM](cm-functions.md#row-min)**、**[QUARTILE](cm-functions.md#quartile)**&#x200B;以及更多计算。 在这种情况下，您需要检查`include-zeros`参数。
+例如，如果您有收入量度，然后又将页面查看次数量度添加到报表中，则您的收入会突然多出一些全部为零的行。您可能不希望该附加量度影响收入栏中的任何&#x200B;**[平均值](cm-functions.md#mean)**、**[行最小值](cm-functions.md#row-min)**、**[四分位数](cm-functions.md#quartile)**&#x200B;以及其他计算。在这种情况下，您需要检查 `include-zeros` 参数。
 
-另一种情况是，您有两个感兴趣的量度，而其中一个量度的平均值或最小值较高，因为某些行为零。  在这种情况下，您可以选择不检查参数以包含零。
+另一种情况是，您有两个感兴趣的指标，其中一个指标的平均值或最小值较高，因为其中有些行为零。在这种情况下，您可以选择不检查参数以包含零。
 
 
-## “逻辑与”
+## “逻辑与” {#and}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_and"
+>title="“逻辑与”"
+>abstract="结合。 不等于零则视为true，等于零则视为false。 输出为0 (false)或1 (true)。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL AND(logical_test)]**
 
-
 结合。 不等于零则视为true，等于零则视为false。 输出为0 (false)或1 (true)。
-
 
 | 参数 | 描述 |
 |---|---|
 | logical_test | 至少需要一个参数，但可以接受任意数量的参数。 可计算为TRUE或FALSE的任何值或表达式 |
 
-## 非重复近似计数
+
+## 非重复近似计数 {#approximate_count_distinct}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_approximate_count_distinct"
+>title="非重复近似计数"
+>abstract="针对所选维度，返回其维度项目的非重复近似计数。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 近似非重复计数（维度）]**
 
@@ -62,8 +79,16 @@ ht-degree: 20%
 
 
 
+## 反余弦 {#arc-cosine}
 
-## 反余弦
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_arc_cosine"
+>title="反余弦"
+>abstract="返回某量度的反余弦。反余弦是一个其余弦为数字的角。返回的角为范围在 0（零）到 pi 之间的弧度。如果要将结果从弧度转换为度，请将其乘以180/PI()。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 反余弦（量度）]**
 
@@ -77,7 +102,16 @@ ht-degree: 20%
 
 
 
-## 反正弦
+## 反正弦 {#arc-sine}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_arc_sine"
+>title="反正弦"
+>abstract="返回某数字的反正弦。反正弦是正弦是数字的角。 返回的角为范围在 -pi/2 到 pi/2 之间的弧度。若要以度数表示反正弦值，则将结果乘以180/PI()"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 反正弦（量度）]**
 
@@ -91,7 +125,16 @@ ht-degree: 20%
 
 
 
-## 反正切
+## 反正切 {#arc-tangent}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_arc_tangent"
+>title="反正切"
+>abstract="返回某数字的反正切。反正切是正切为数字的角度。 返回的角为范围在 -pi/2 到 pi/2 之间的弧度。若要以度数表示反正切，则将结果乘以180/PI()。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 反正切（量度）]**
 
@@ -105,13 +148,20 @@ ht-degree: 20%
 
 
 
-## Cdf-T
+## Cdf-T {#cdf-t}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_cdf_t"
+>title="Cdf-T"
+>abstract="返回自由度为n的学生t分布中，随机变量z分数小于列值的概率。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-T（量度，数字）]**
 
-
 返回自由度为n的学生t分布中，随机变量z分数小于列值的概率。
-
 
 | 参数 | 描述 |
 |---|---|
@@ -129,13 +179,20 @@ CDF-T(x, ∞) ? cdf_z(x)
 ```
 
 
-## Cdf-Z
+## Cdf-Z {#cdf-z}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_cdf_z"
+>title="Cdf-Z"
+>abstract="返回正态分布中随机变量z分数小于列值的概率。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-Z（量度，数字）]**
 
-
 返回正态分布中随机变量z分数小于列值的概率。
-
 
 | 参数 | 描述 |
 |---|---|
@@ -151,20 +208,61 @@ CDF-Z(2) ? 0.97725
 CDF-Z(-3) ? 0.0013499
 ```
 
-## 上限
+## 上限 {#ceiling}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_ceiling"
+>title="上限"
+>abstract="返回不小于给定值的最小整数。例如，如果您要避免在报告收入时出现货币小数位数，而某产品的收入为 $569.34，则使用公式 CEILING(Revenue) 可将收入向上舍入为最接近的美元数 $570。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 上限（量度）]**
 
-
 [!BADGE 行]{type="Neutral"}
-
 
 | 参数 | 描述 |
 |---|---|
 | 量度 | 您希望舍入的指标 |
 
 
-## 置信度（下限）
+## 置信度 {#confidence}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_confidence"
+>title="置信度"
+>abstract="使用[时间均匀中心极限理论和渐近置信序列](https://arxiv.org/pdf/2103.06476)中所述的WASKR方法计算随时有效置信度。"
+
+<!-- markdownlint-enable MD034 -->
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 置信度(normalizing-container， success-metric， control， importance-treshold)]**
+
+使用[时间均匀中心极限理论和渐近置信序列](https://arxiv.org/pdf/2103.06476)中所述的WASKR方法计算随时有效置信度。
+
+置信度是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。 置信度越高，表明支持控制变量和非控制变量具有相同性能的假设的证据越少。
+
+| 参数 | 描述 |
+| --- | --- |
+| normalization-container | 运行测试的基础（人员、会话或事件）。 |
+| success-metric | 用户正在将变量与之比较的一个或多个指标。 |
+| 控件 | 试验中所有其他变量要与之进行比较的变量。输入控制变量维度项的名称。 |
+| 显着性阈值 | 此函数中的阈值默认设置为 95%。 |
+
+
+## 置信度（下限） {#confidence-lower}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_confidence_lower"
+>title="置信度（下限）"
+>abstract="使用[时间均匀中心极限理论和渐近置信序列](https://arxiv.org/pdf/2103.06476)中所述的WASKR方法计算随时有效置信度&#x200B;**lower**。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 置信度(normalizing-container， success-metric， control， importance-treshold)]**
 
@@ -179,7 +277,16 @@ CDF-Z(-3) ? 0.0013499
 | 控件 | 试验中所有其他变量要与之进行比较的变量。输入控制变量维度项的名称。 |
 | 显着性阈值 | 此函数中的阈值默认设置为 95%。 |
 
-## 置信度（上限）
+## 置信度（上限） {#confidence-upper}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_confidence_upper"
+>title="置信度（上限）"
+>abstract="使用[时间均匀中心极限理论和渐近置信序列](https://arxiv.org/pdf/2103.06476)中所述的WASKR方法计算随时有效置信度&#x200B;**upper**。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 置信度(normalizing-container， success-metric， control， importance-treshold)]**
 
@@ -195,7 +302,16 @@ CDF-Z(-3) ? 0.0013499
 | 显着性阈值 | 此函数中的阈值默认设置为 95%。 |
 
 
-## 余弦
+## 余弦 {#cosine}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_cosine"
+>title="余弦"
+>abstract="返回给定角的余弦。如果角度以度为单位，则将角度乘以PI()/180。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 余弦（量度）]**
 
@@ -206,7 +322,16 @@ CDF-Z(-3) ? 0.0013499
 | 量度 | 您希望求余弦的角度（弧度） |
 
 
-## 立方根
+## 立方根 {#cube-root}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_cube_root"
+>title="立方根"
+>abstract="返回某数字的正立方根。某数字的立方根是该数字三分之一次幂的值。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 多维数据集根（量度）]**
 
@@ -220,7 +345,16 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## 累积
+## 累积 {#cumulative}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_cumulative"
+>title="累积"
+>abstract="返回列x的最后n个元素的总和。如果n > 0，则对最后n个元素或x求和。如果n &lt; 0，则对上述元素求和。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 累积（数字，指标）]**
 
@@ -240,7 +374,16 @@ CDF-Z(-3) ? 0.0013499
 | 7 月 | $400 | 1100美元 | $600 |
 
 
-## 累积（平均）
+## 累积（平均） {#cumulative-average}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_cumulative_average"
+>title="累积（平均）"
+>abstract="返回列x最后n个元素的平均值。如果n > 0，则对最后n个元素或x求和。如果n &lt; 0，则对上述元素求和。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 累积平均值（数值，指标）]**
 
@@ -257,10 +400,18 @@ CDF-Z(-3) ? 0.0013499
 >
 
 
-## 等于
+## 等于 {#equal}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_equal"
+>title="等于"
+>abstract="等于。 输出为0 (false)或1 (true)。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 等于()]**
-
 
 等于。 输出为0 (false)或1 (true)。
 
@@ -275,13 +426,21 @@ CDF-Z(-3) ? 0.0013499
 `Metric 1 = Metric 2`
 
 
+## 指数回归：相关系数 {#exponential-regression-correlation-coefficient}
 
-## 指数回归：相关系数
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_exponential_regression_correlation_coefficient"
+>title="指数回归：相关系数"
+>abstract="指数回归：Y = a exp(X) + b。返回相关系数。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 指数回归：相关系数(metric_X， metric_Y， include_zeros)]**
 
 
-[!BADGE 表格]{type="Neutral"}
+[!BADGE 表]{type="Neutral"}
 
 
 | 参数 | 描述 |
@@ -290,7 +449,16 @@ CDF-Z(-3) ? 0.0013499
 | metric_Y | 要与metric_X关联的量度 |
 | include_zeros | 是否在计算中包括零值 |
 
-## 指数回归：预测的Y
+## 指数回归：预测的Y {#exponential-regression-predicted-y}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_exponential_regression_predicted_y"
+>title="指数回归：预测的Y"
+>abstract="指数回归：Y = a exp(X) + b。返回Y。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 指数回归：预测的Y(metric_X， metric_Y， include_zeros)]**
 
@@ -305,12 +473,21 @@ CDF-Z(-3) ? 0.0013499
 | include_zeros | 是否在计算中包括零值 |
 
 
-## 指数回归：截距
+## 指数回归：截距 {#exponential-regression-intercept}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_exponential_regression_intercept"
+>title="指数回归：截距"
+>abstract="指数回归：Y = a exp(X) + b。返回b。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 指数回归：截距(metric_X， metric_Y， include_zeros)]**
 
 
-[!BADGE 表格]{type="Neutral"}
+[!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
@@ -319,12 +496,21 @@ CDF-Z(-3) ? 0.0013499
 | include_zeros | 是否在计算中包括零值 |
 
 
-## 指数回归：斜率
+## 指数回归：斜率 {#exponential-regression-slope}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_exponential_regression_slope"
+>title="指数回归：斜率"
+>abstract="指数回归：Y = a exp(X) + b。返回a。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 指数回归：斜率(metric_X， metric_Y， include_zeros)]**
 
 
-[!BADGE 表格]{type="Neutral"}
+[!BADGE 表]{type="Neutral"}
 
 
 | 参数 | 描述 |
@@ -334,7 +520,16 @@ CDF-Z(-3) ? 0.0013499
 | include_zeros | 是否在计算中包括零值 |
 
 
-## Floor
+## Floor {#floor}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_floor"
+>title="Floor"
+>abstract="返回不大于给定值的最大整数。例如，如果您要避免在报告收入时出现货币小数位数，而某产品的收入为 $569.34，则使用公式 FLOOR(Revenue) 可将收入向下舍入为最接近的美元数 $569。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL FLOOR(metric_X， metric_Y， include_zeros)]**
 
@@ -345,13 +540,20 @@ CDF-Z(-3) ? 0.0013499
 | 量度 | 要舍入的量度。 |
 
 
-## 大于
+## 大于 {#greather-than}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_greater_than"
+>title="大于"
+>abstract="输出为0 (false)或1 (true)。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 大于()]**
 
-
 输出为0 (false)或1 (true)。
-
 
 | 参数 | 描述 |
 |---|---|
@@ -362,13 +564,21 @@ CDF-Z(-3) ? 0.0013499
 
 `Metric 1 > Metric 2`
 
-## 大于或等于
+
+## 大于或等于 {#greater-than-or-equal}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_greater_than_or_equal"
+>title="大于或等于"
+>abstract="大于或等于。 输出为0 (false)或1 (true)。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 大于或等于()]**
 
-
 大于或等于。 输出为0 (false)或1 (true)。
-
 
 | 参数 | 描述 |
 |---|---|
@@ -381,7 +591,16 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## 双曲余弦
+## 双曲余弦 {#hyperbolic-cosine}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_hyperbolic_cosine"
+>title="双曲余弦"
+>abstract="返回某数字的双曲余弦。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 双曲余弦（量度）]**
 
@@ -395,34 +614,56 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## 双曲正弦
+## 双曲正弦 {#hyperbolic-sine}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_hyperbolic_sine"
+>title="双曲正弦"
+>abstract="返回某数字的双曲正弦。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 双曲正弦（量度）]**
 
-
 [!BADGE 行]{type="Neutral"}
-
 
 | 参数 | 描述 |
 |---|---|
 | 量度 | 您希望求得其双曲正弦的角（弧度） |
 
 
+## 双曲正切 {#hyperbolic-tangent}
 
-## 双曲正切
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_hyperbolic_tangent"
+>title="双曲正切"
+>abstract="返回某数字的双曲正切。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 双曲正切（量度）]**
 
-
 [!BADGE 行]{type="Neutral"}
-
 
 | 参数 | 描述 |
 |---|---|
 | 量度 | 您希望求其双曲正切的角（弧度） |
 
 
-## 如果
+## 如果 {#if}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_if"
+>title="如果"
+>abstract="如果条件参数的值为非零(true)，则结果为value_if_true参数的值。 否则，它是value_if_false参数的值。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL IF(logical_test， value_if_true， value_if_false)]**
 
@@ -437,30 +678,45 @@ CDF-Z(-3) ? 0.0013499
 | value_if_false | 当 logical_test 参数的计算结果为 FALSE 时，您希望返回的值。（如果不包含，则此参数默认为 0。） |
 
 
-## 小于
+## 小于 {#less-than}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_less_than"
+>title="小于"
+>abstract="输出为0 (false)或1 (true)。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 小于()]**
 
-
 输出为0 (false)或1 (true)。
-
 
 | 参数 | 描述 |
 |---|---|
 | metric_X | |
 | metric_Y | |
 
-
 ### 示例
 
 `Metric 1 < Metric 2`
 
-## 小于或等于
+
+## 小于或等于 {#less-than-or-equal}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_less_than_or_equal"
+>title="小于或等于"
+>abstract="小于或等于。 输出为0 (false)或1 (true)。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 小于或等于()]**
 
 小于或等于。 输出为0 (false)或1 (true)。
-
 
 | 参数 | 描述 |
 |---|---|
@@ -473,12 +729,40 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## 线性回归：相关系数
+## 提升(#lift)
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_lift"
+>title="提升"
+>abstract="与控制值相比，比率的提升。"
+
+<!-- markdownlint-enable MD034 -->
+
+| 参数 | 描述 |
+| --- | --- |
+| normalization-container | 运行测试的基础（人员、会话或事件）。 |
+| success-metric | 用户正在将变量与之比较的一个或多个指标。 |
+| 控件 | 试验中所有其他变量要与之进行比较的变量。输入控制变量维度项的名称。 |
+
+
+
+## 线性回归：相关系数 {#linear-regression-correlation-coefficient}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_linear_regression_correlation_coefficient"
+>title="线性回归：相关系数"
+>abstract="线性回归：Y = a X + b。返回相关系数。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 线性回归：相关系数(metric_X， metric_Y， include_zeros)]**
 
 
-[!BADGE 表格]{type="Neutral"}
+[!BADGE 表]{type="Neutral"}
 
 
 | 参数 | 描述 |
@@ -489,12 +773,21 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## 线性回归：截距
+## 线性回归：截距 {#linear-regression-intercept}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_linear_regression_intercept"
+>title="线性回归：截距"
+>abstract="线性回归：Y = a X + b。返回b。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 线性回归：截距(metric_X， metric_Y， include_zeros)]**
 
 
-[!BADGE 表格]{type="Neutral"}
+[!BADGE 表]{type="Neutral"}
 
 
 | 参数 | 描述 |
@@ -505,7 +798,16 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## 线性回归：预测的Y
+## 线性回归：预测的Y {#linear-regression-predicted-y}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_linear_regression_predicted_y"
+>title="线性回归：预测的Y"
+>abstract="线性回归：Y = a X + b。返回Y。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 线性回归：预测的Y(metric_X， metric_Y， include_zeros)]**
 
@@ -521,13 +823,20 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## 线性回归：斜率
+## 线性回归：斜率 {#linear-regression-slope}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_linear_regression_slope"
+>title="线性回归：斜率"
+>abstract="线性回归：Y = a X + b。返回a。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 线性回归：斜率(metric_X， metric_Y， include_zeros)]**
 
-
-[!BADGE 表格]{type="Neutral"}
-
+[!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
@@ -536,7 +845,16 @@ CDF-Z(-3) ? 0.0013499
 | include_zeros | 是否在计算中包括零值 |
 
 
-## 以10为底的对数
+## 以10为底的对数 {#log-base-ten}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_log_base_ten"
+>title="以10为底的对数"
+>abstract="返回某数字以 10 为底数的对数。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 以10为底的日志（量度）]**
 
@@ -549,13 +867,20 @@ CDF-Z(-3) ? 0.0013499
 | 量度 | 您希望以10为底的对数的正实数 |
 
 
-## 对数回归：相关系数
+## 对数回归：相关系数 {#log-regression-correlation-coefficient}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_log_regression_coefficient"
+>title="对数回归：相关系数"
+>abstract="摘要"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 对数回归：相关系数(metric_X， metric_Y， include_zeros)]**
 
-
-[!BADGE 表格]{type="Neutral"}
-
+[!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
@@ -564,13 +889,20 @@ CDF-Z(-3) ? 0.0013499
 | include_zeros | 是否在计算中包括零值 |
 
 
-## 对数回归：截距
+## 对数回归：截距 {#log-regression-intercept}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_log_regression_intercept"
+>title="对数回归：截距"
+>abstract="对数回归：Y = a ln(X) + b。返回b。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 对数回归：截距(metric_X， metric_Y， include_zeros)]**
 
-
-[!BADGE 表格]{type="Neutral"}
-
+[!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
@@ -580,13 +912,20 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## 对数回归：预测的Y
+## 对数回归：预测的Y {#log-regression-predicted-y}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_log_regression_predicted_y"
+>title="对数回归：预测的Y"
+>abstract="对数回归：Y = a ln(X) + b。返回Y。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 对数回归：预测的Y(metric_X， metric_Y， include_zeros)]**
 
-
 [!BADGE 行]{type="Neutral"}
-
 
 | 参数 | 描述 |
 |---|---|
@@ -596,13 +935,20 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## 对数回归：斜率
+## 对数回归：斜率 {#log-regression-slope}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_log_regression_slope"
+>title="对数回归：斜率"
+>abstract="对数回归：Y = a ln(X) + b。返回a。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 对数回归：斜率(metric_X， metric_Y， include_zeros)]**
 
-
-[!BADGE 表格]{type="Neutral"}
-
+[!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
@@ -612,13 +958,20 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## 自然对数
+## 自然对数 {#natural-log}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_natural_log"
+>title="自然对数"
+>abstract="返回某数字的自然对数。自然对数以常数 e (2.71828182845904) 为底数。LN 是 EXP 函数的反函数。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 自然日志（量度）]**
 
-
 返回某数字的自然对数。自然对数以常数 e (2.71828182845904) 为底数。LN 是 EXP 函数的反函数。
-
 
 | 参数 | 描述 |
 |---|---|
@@ -626,13 +979,20 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## 不为
+## 不为 {#not}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_not"
+>title="不为"
+>abstract="否定是一种布尔值。 输出为0 (false)或1 (true)。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL NOT（逻辑）]**
 
-
 否定是一种布尔值。 输出为0 (false)或1 (true)。
-
 
 | 参数 | 描述 |
 |---|---|
@@ -640,7 +1000,16 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## 不等于
+## 不等于 {#not-equal}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_not_equal"
+>title="不等于"
+>abstract="不等于。 输出为0 (false)或1 (true)。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 不等于()]**
 
@@ -658,7 +1027,16 @@ CDF-Z(-3) ? 0.0013499
 `Metric 1 != Metric 2`
 
 
-## 或
+## 或 {#or}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_or"
+>title="或"
+>abstract="分离。不等于零则视为true，等于零则视为false。 输出为0 (false)或1 (true)。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL OR(logical_test)]**
 
@@ -676,20 +1054,36 @@ CDF-Z(-3) ? 0.0013499
 >0（零）表示 False，而任何其他值均表示 True。
 
 
-## Pi
+## Pi {#pi}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_pi"
+>title="Pi"
+>abstract="返回Pi：3.14159..."
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL PI()]**
 
 返回Pi：3.14159...
 
 
-## 幂回归：相关系数
+## 幂回归：相关系数 {#power-regression-correlation-coefficient}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_power_regression_correlation_coefficient"
+>title="幂回归：相关系数"
+>abstract="幂回归：Y = b X ^ a。返回相关系数。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 幂回归：相关系数(metric_X， metric_Y， include_zeros)]**
 
-
-[!BADGE 表格]{type="Neutral"}
-
+[!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
@@ -699,12 +1093,21 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## 幂回归：截距
+## 幂回归：截距 {#power-regression-intercept}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_power_regression_intercept"
+>title="幂回归：截距"
+>abstract="幂回归：Y = b X ^ a。返回b。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 幂回归：截距(metric_X， metric_Y， include_zeros)]**
 
 
-[!BADGE 表格]{type="Neutral"}
+[!BADGE 表]{type="Neutral"}
 
 
 | 参数 | 描述 |
@@ -714,13 +1117,20 @@ CDF-Z(-3) ? 0.0013499
 | include_zeros | 是否在计算中包括零值 |
 
 
-## 幂回归：预测的Y
+## 幂回归：预测的Y {#power-regression-predicted-y}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_power_regression_predicted_y"
+>title="幂回归：预测的Y"
+>abstract="幂回归：Y = b X ^ a。返回Y。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 幂回归：预测的Y(metric_X， metric_Y， include_zeros)]**
 
-
 [!BADGE 行]{type="Neutral"}
-
 
 | 参数 | 描述 |
 |---|---|
@@ -730,13 +1140,20 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## 幂回归：斜率
+## 幂回归：斜率 {#power-regression-slope}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_power_regression_slope"
+>title="幂回归：斜率"
+>abstract="幂回归：Y = b X ^ a。返回a。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 幂回归：斜率(metric_X， metric_Y， include_zeros)]**
 
-
-[!BADGE 表格]{type="Neutral"}
-
+[!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
@@ -746,13 +1163,20 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## 二次回归：相关系数
+## 二次回归：相关系数 {#quadratic-regression-correlation-coefficient}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_quadratic_regression_correlation_coefficient"
+>title="二次回归：相关系数"
+>abstract="二次回归：Y = (a + bX) ^ 2。返回相关系数。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 二次回归：相关系数(metric_X， metric_Y， include_zeros)]**
 
-
-[!BADGE 表格]{type="Neutral"}
-
+[!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
@@ -760,13 +1184,20 @@ CDF-Z(-3) ? 0.0013499
 | metric_Y | 要与metric_X关联的量度 |
 | include_zeros | 是否在计算中包括零值 |
 
-## 二次回归：截距
+## 二次回归：截距 {#quadratic-regression-intercept}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_quadratic_regression_intercept"
+>title="二次回归：截距"
+>abstract="二次回归：Y = (a + bX) ^ 2，返回a。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 二次回归：截距(metric_X， metric_Y， include_zeros)]**
 
-
-[!BADGE 表格]{type="Neutral"}
-
+[!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
@@ -775,13 +1206,20 @@ CDF-Z(-3) ? 0.0013499
 | include_zeros | 是否在计算中包括零值 |
 
 
-## 二次回归：预测的Y
+## 二次回归：预测的Y {#quadratic-regression-predicted-y}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_quadratic_regression_predicted_y"
+>title="二次回归：预测的Y"
+>abstract="二次回归：Y = (a + bX) ^ 2，返回Y。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 二次回归：预测的Y(metric_X， metric_Y， include_zeros)]**
 
-
 [!BADGE 行]{type="Neutral"}
-
 
 | 参数 | 描述 |
 |---|---|
@@ -789,13 +1227,21 @@ CDF-Z(-3) ? 0.0013499
 | metric_Y | 要指定为独立数据的量度 |
 | include_zeros | 是否在计算中包括零值 |
 
-## 二次回归：斜率
+
+## 二次回归：斜率 {#quadratic-regression-slope}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_quadratic_regression_slope"
+>title="二次回归：斜率"
+>abstract="二次回归：Y = (a + bX) ^ 2，返回b。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 二次回归：斜率(metric_X， metric_Y， include_zeros)]**
 
-
-[!BADGE 表格]{type="Neutral"}
-
+[!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
@@ -805,13 +1251,20 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## 倒数回归：相关系数
+## 倒数回归：相关系数 {#reciprocal-regression-correlation-coefficient}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_reciprocal_regression_correlation_coefficient"
+>title="倒数回归：相关系数"
+>abstract="倒数回归：Y = a + b X ^ -1。 返回相关系数。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 倒数回归：相关系数(metric_X， metric_Y， include_zeros)]**
 
-
-[!BADGE 表格]{type="Neutral"}
-
+[!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
@@ -820,13 +1273,20 @@ CDF-Z(-3) ? 0.0013499
 | include_zeros | 是否在计算中包括零值 |
 
 
-## 倒数回归：截距
+## 倒数回归：截距 {#reciprocal-regression-intercept}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_reciprocal_regression_intercept"
+>title="倒数回归：截距"
+>abstract="倒数回归：Y = a + b X ^ -1。 返回。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 倒数回归：截距(metric_X， metric_Y， include_zeros)]**
 
-
-[!BADGE 表格]{type="Neutral"}
-
+[!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
@@ -835,13 +1295,20 @@ CDF-Z(-3) ? 0.0013499
 | include_zeros | 是否在计算中包括零值 |
 
 
-## 倒数回归：预测的Y
+## 倒数回归：预测的Y {#reciprocal-regression-predicted-y}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_reciprocal_regression_predicted_y"
+>title="倒数回归：预测的Y"
+>abstract="倒数回归：Y = a + b X ^ -1。 返回Y。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 倒数回归：预测的Y(metric_X， metric_Y， include_zeros)]**
 
-
 [!BADGE 行]{type="Neutral"}
-
 
 | 参数 | 描述 |
 |---|---|
@@ -850,13 +1317,20 @@ CDF-Z(-3) ? 0.0013499
 | include_zeros | 是否在计算中包括零值 |
 
 
-## 倒数回归：斜率
+## 倒数回归：斜率 {#reciprocal-regression-slope}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_reciprocal_regression_slope"
+>title="倒数回归：斜率"
+>abstract="倒数回归：Y = a + b X ^ -1。 返回b。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 倒数回归：斜率(metric_X， metric_Y， include_zeros)]**
 
-
-[!BADGE 表格]{type="Neutral"}
-
+[!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
@@ -867,7 +1341,16 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## 正弦
+## 正弦 {#sine}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_sine"
+>title="正弦"
+>abstract="返回给定角的正弦。如果角度以度为单位，则将角度乘以PI()/180。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 正弦（量度）]**
 
@@ -882,13 +1365,20 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## T 分数
+## T 分数 {#t-score}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_t_score"
+>title="T 分数"
+>abstract="[MEAN](cm-functions.md#mean)的偏差除以标准偏差。 [Z分数](#z-score)的别名。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL T-SCORE(metric， include_zeros)]**
 
-
 [MEAN](cm-functions.md#mean)的偏差除以标准偏差。 [Z分数](#z-score)的别名。
-
 
 | 参数 | 描述 |
 |---|---|
@@ -896,13 +1386,20 @@ CDF-Z(-3) ? 0.0013499
 | include_zeros | 是否在计算中包括零值 |
 
 
-## T 测试
+## T 测试 {#t-test}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_t_test"
+>title="T 测试"
+>abstract="执行尾长为 m 的 t 检验，其中 x 为 t 分数，n 为自由度。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL T测试（度量、度、尾）]**
 
-
 执行尾长为 m 的 t 检验，其中 x 为 t 分数，n 为自由度。
-
 
 | 参数 | 描述 |
 |---|---|
@@ -920,7 +1417,7 @@ CDF-Z(-3) ? 0.0013499
 
 返回值是指在给定自由度和尾数的情况下，获得测试统计数据 x 的几率。
 
-**示例：**
+### 示例
 
 1. 使用函数查找离群值：
 
@@ -936,14 +1433,20 @@ CDF-Z(-3) ? 0.0013499
 
 
 
+## 正切 {#tangent}
 
-## 正切
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_tangent"
+>title="正切"
+>abstract="返回给定角的正切。如果角度以度为单位，则将角度乘以PI()/180。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 正切（量度）]**
 
-
-返回给定角的正切。如果角以角度表示，则将该角乘以 PI( )/180。
-
+返回给定角的正切。如果角度以度为单位，则将角度乘以PI()/180。
 
 | 参数 | 描述 |
 |---|---|
@@ -951,13 +1454,20 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## Z分数
+## Z分数 {#z-score}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_z_score"
+>title="Z分数"
+>abstract="平均值偏差除以标准偏差。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL Z-SCORE(metric， include_zeros)]**
 
-
 [!BADGE 行]{type="Neutral"}
-
 
 | 参数 | 描述 |
 |---|---|
@@ -978,13 +1488,20 @@ Z 分数的方程式为：
 
 
 
-## Z 测试
+## Z 测试 {#z-test}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_z_test"
+>title="Z 测试"
+>abstract="执行n尾z检验，z分数为x。"
+
+<!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL Z-TEST(metric_tails)]**
 
-
 执行n尾z检验，z分数为x。
-
 
 | 参数 | 描述 |
 |---|---|
@@ -994,11 +1511,6 @@ Z 分数的方程式为：
 >[!NOTE]
 >
 >假定值为正态分布。
-
-
-
-
-
 
 
 
