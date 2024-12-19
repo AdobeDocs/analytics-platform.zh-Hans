@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 3ae10f81cb38500c035811542bc761f06688a130
+source-git-commit: 34b94eeeeb501f6c0deb982351b7c65e0a97bc68
 workflow-type: tm+mt
-source-wordcount: '17969'
+source-wordcount: '18106'
 ht-degree: 81%
 
 ---
@@ -1347,6 +1347,24 @@ Analysis Workspace中的模板（或公司模板）可快速分析最常见的�
 | **在线/离线** | 同时查看在线和离线流量。<p>**这可以帮助您**&#x200B;更好地了解您网站在线流量和离线流量的分配。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如当在线流量达到一定水平时，为其体验投入更多资源。</p><!-- This template uses the ... --> |
 
 ### 其他渠道 {#other-channels}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--pointOfSale"
+>title="查看销售点(POS)交易数据，包括收入、已下达订单和销售量。 此模板还包括显示热门商店、热门产品和热门产品类别以及在线与离线销售相关信息的可视化图表。"
+>abstract="**这可以帮助您**&#x200B;更好地了解在商店位置和在线商店中，哪些是您最畅销的产品。<br/>**根据您了解的情况，您可以**&#x200B;执行任意数量的操作，例如，将更多营销资源分配给您性能最高的产品和渠道。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--survey"
+>title="查看调查的用户参与。 查看开始和结束的次数、热门问题和答案以及首次与重复参与者的数量。"
+>abstract="**这有助于您**&#x200B;更好地了解参与水平和调查的成功率。<br/>**根据您了解的情况，您可能**&#x200B;会执行任意数量的操作，例如调整未来的调查以获取更好的参与率。"
+
+<!-- markdownlint-enable MD034 -->
 
 可以使用以下模板：
 
