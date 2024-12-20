@@ -9,7 +9,7 @@ role: Admin
 source-git-commit: 0b6a84820dc42b5e5009eaa254e5554712a952aa
 workflow-type: tm+mt
 source-wordcount: '3536'
-ht-degree: 13%
+ht-degree: 16%
 
 ---
 
@@ -211,7 +211,7 @@ ht-degree: 13%
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_keyusagemetrics"
 >title="关键使用量度"
->abstract="提供核心行和历史可报告行的每月和总计数据。"
+>abstract="提供核心和历史可报告行数的月度和总计数据。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -221,7 +221,7 @@ ht-degree: 13%
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_monthlyingestedrows"
 >title="每月引入行数"
->abstract="测量每月添加到系统的记录总数，以了解数据增长和摄取率。"
+>abstract="衡量每月添加到系统的记录总数，提供数据增长和引入率的洞察。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -230,7 +230,7 @@ ht-degree: 13%
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_monthlyreportablerows"
 >title="每月可报告行数"
->abstract="跟踪可用于报表的行数。 可报告行是摄取的行减去摄取期间跳过和删除的行。 可报告行用作计费和数据使用的关键量度。"
+>abstract="跟踪可用于报告的行数。可报告行数是引入行数减去引入过程中跳过和删除的行数。可报告行数是计费和数据使用情况的关键量度。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -239,8 +239,8 @@ ht-degree: 13%
 
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_detailbreakdown"
->title="详细信息细分。"
->abstract="您可以按连接、数据集、沙盒和标记查看详细的量度，并可以选择下载数据的CSV文件。"
+>title="详细细分。"
+>abstract="您可以按连接、数据集、沙盒和标记详细查看量度，也可以选择下载数据的 CSV 文件。"
 
 <!-- markdownlint-enable MD034 -->
 
