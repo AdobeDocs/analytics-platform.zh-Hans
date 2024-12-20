@@ -6,9 +6,9 @@ feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
 source-git-commit: edd49ea60901acc0bb4ba603bbb9377aeee423fd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '453'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 91%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_settings_datapreview"
 >title="数据预览"
->abstract="将此过滤器的数据与连接的数据进行比较。 预览百分比基于连接中从&#x200B;**最近90天**&#x200B;以来的总数。<br><br/>如果未加载预览，则您的连接可能仍在回填。"
+>abstract="将此过滤器的数据与连接的数据进行比较。预览百分比基于&#x200B;**过去 90 天**&#x200B;连接中的总数。<br><br/>如果未加载预览，则您的连接有可能仍在进行回填。"
 
 <!-- markdownlint-enable MD034 -->
 

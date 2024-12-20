@@ -6,9 +6,9 @@ title: 如何使用 Workspace 热键
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
 source-git-commit: a757ea4fc9bf8b13a8ce3001cf8639245d213e1c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '402'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 

@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: 532f3a30e65d715f5b5b4caea85885a13d82641c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4219'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 派生字段重复数据删除功能 | 添加了有关派生字段[重复数据删除](/help/data-views/derived-fields/derived-fields.md#deduplicate)功能的文档。 |
 | 已更新的常见错误消息 | 对 [常见错误消息](/help/analysis-workspace/workspace-faq/error-messages.md)做了小更新。 |
 | **2024 年 6 月** | |
-| 更新了涉及流媒体功能的产品名称 | 在引用一组流媒体功能时，将名为“Streaming Media Collection Add-on”和“Streaming Media”的“Media Analytics”和“Streaming Media”实例替换为“Streaming Media Collection Add-on”和“Streaming Media Collection”，这些功能收集流媒体数据并将其显示在Analysis Workspace中。 <p>这些更新在Customer Journey Analytics文档以及[流媒体收藏集文档](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/media-overview)中提供。</p> |
+| 更新了涉及流媒体功能的产品名称 | 当引用收集流媒体数据并将其显示在 Analysis Workspace 中的一组流媒体功能时，将“媒体分析”和“流媒体”的实例替换为名称“流媒体收藏集附加组件”和“流媒体收藏集”。 <p>这些更新可在 Customer Journey Analytics 文档以及[流媒体收藏集文档](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/media-overview)中查看。</p> |
 | 基于图形的拼接 | 更新并重组了[拼接文档](/help/stitching/overview.md)，引入了基于图形的拼接。 |
 | AI 助手 | 添加了有关 Customer Journey Analytics 的 AI 助手的[文档](../ai-assistant.md)。 |
 | 转换数据集以进行 B2B 查找 | 添加了有关如何通过转换 B2B 查找数据集来支持[基于人员的 B2B 数据查找](/help/connections//transform-datasets-b2b-lookups.md)（包括帐户、机会、营销列表和营销活动）的文档。 |
@@ -148,7 +148,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | **2023 年 2 月** | |
 | 比较 Customer Journey Analytics 和 BI 解决方案 | 新增了有关 Customer Journey Analytics 与典型 BI 解决方案的[比较](../getting-started/cja-vs-bi.md)的文档。 |
 | 对 Audiences 文档的更新 | 有关[延迟注意事项](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#latency)的新章节。 |
-| 对 Audiences 文档的更新 | 在您创建受众后，Adobe [为每个新的 Customer Journey Analytics 受众创建一个 Experience Platform 流式区段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-Hans#after-audience-created)。 |
+| 对 Audiences 文档的更新 | 在您创建受众后，Adobe [为每个新的 Customer Journey Analytics 受众创建一个 Experience Platform 流式区段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-hans#after-audience-created)。 |
 | 工作区日历和日期范围 | 更新内容以描述相对日期范围、公式计算更新和日程表 UI 更改。请参阅[关于相对面板日期范围](/help/components/date-ranges/overview.md#custom-date-ranges)。 |
 | 移动记分卡 | 新文档部分描述如何显示和隐藏比较日期范围。请参阅 Customer Journey Analytics 中的[显示比较日期范围](/help/mobile-app/create-scorecard.md#show-comparison-dates)。 |
 | **2023 年 1 月** | |
@@ -170,7 +170,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | **2022 年 12 月** |  |
 | 2022 年 12 月 16 日 | 关于[测量和管理 Customer Journey Analytics 数据使用](/help/technotes/estimate-usage.md)的新主题。 |
 | **2022 年 10 月** | |
-| 2022 年 10 月 | 关于[计划项目密码保护](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=zh-Hans#password)的新主题。 此功能支持 [HIPAA 准备工作](https://www.adobe.com/cn/trust/compliance/hipaa-ready.html)。 |
+| 2022 年 10 月 | 关于[计划项目密码保护](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=zh-hans#password)的新主题。 此功能支持 [HIPAA 准备工作](https://www.adobe.com/cn/trust/compliance/hipaa-ready.html)。 |
 | 2022 年 10 月 | 关于[客户管理的密钥](/help/privacy/cmk.md)新主题。 此功能支持 [HIPAA 准备工作](https://www.adobe.com/cn/trust/compliance/hipaa-ready.html)。 |
 | 2022 年 10 月 | 关于 [Customer Journey Analytics 审核日志](/help/privacy/audit-log.md)的新主题。 |
 | 2022 年 10 月 | 关于[关键指标摘要](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html)可视化的新主题。 |
@@ -182,31 +182,31 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 2022 年 9 月 | Workspace 中[组合图表](/help/analysis-workspace/visualizations/combo-charts.md)的新主题。 |
 | 2022 年 9 月 | 关于 Workspace 中[“试验”面板](/help/analysis-workspace/c-panels/experimentation.md)的新主题。 |
 | **2022 年 8 月** | |
-| 2022 年 8 月 | Adobe Experience Platform 有关 [Analytics Source Connector 跨区域支持](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)的文章。 |
+| 2022 年 8 月 | Adobe Experience Platform 有关 [Analytics Source Connector 跨区域支持](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-hans)的文章。 |
 | 2022 年 8 月 | 关于 [Customer Journey Analytics 访问控制](/help/technotes/access-control.md)的大幅更新文章。 |
 | 2022 年 8 月 | 关于 [Customer Journey Analytics 支持数据管理标签和策略](/help/data-views/data-governance.md)的新文章。 |
 | 2022 年 8 月 | 关于[比较通过 Analytics Source Connector 传递的分析数据的术语](/help/getting-started/aa-vs-cja/terminology.md)的新文章。 |
-| 2022 年 8 月 | 关于[将受众发布到实时客户轮廓](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=zh-Hans)的新文档。 |
+| 2022 年 8 月 | 关于[将受众发布到实时客户轮廓](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=zh-hans)的新文档。 |
 | **2022 年 7 月** | |
-| 2022 年 7 月 | [Media Playback 耗时面板](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=zh-Hans)文档。 |
-| 2022 年 7 月 | [媒体并行查看者面板](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=zh-Hans)文档。 |
+| 2022 年 7 月 | [Media Playback 耗时面板](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=zh-hans)文档。 |
+| 2022 年 7 月 | [媒体并行查看者面板](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=zh-hans)文档。 |
 | 2022 年 7 月 | [首次会话](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat)报告文档。 |
 | **2022 年 6 月** | |
-| 2022 年 6 月 | 关于 [AAID、ECID、AACUSTOMID 和 Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=zh-Hans) 的新文章。 |
+| 2022 年 6 月 | 关于 [AAID、ECID、AACUSTOMID 和 Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=zh-hans) 的新文章。 |
 | 2022 年 6 月 | 关于 [Adobe Analytics 处理规则、VISTA 和分类对比 Analytics Source Connector 的数据准备的新文章](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md)。 |
 | 2022 年 6 月 | 关于[虚拟报告环境和沙盒环境的新文章](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)。 |
 | 2022 年 6 月 | 关于[跨 Adobe Analytics 和 Customer Journey Analytics 报告功能比较数据处理](/help/getting-started/aa-vs-cja/data-processing-comparisons.md)的新文章。 |
 | 2022 年 6 月 | 关于[将报告包与不同架构相结合](/help/use-cases/aa-data/combine-report-suites.md)的新文章。 |
 | 2022 年 6 月 | 关于[在 Mobile 记分卡中共享批注的新文章](/help/components/annotations/mobile-annotations.md)。 |
 | 2022 年 6 月 | 关于 [Customer Journey Analytics 分析实验室](/help/labs/labs.md)的新文章。 |
-| 2022 年 6 月 | 关于[支持数字字段作为查找键和查找值](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans#numeric)的最新部分。 |
+| 2022 年 6 月 | 关于[支持数字字段作为查找键和查找值](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-hans#numeric)的最新部分。 |
 | 2022 年 6 月 | [流量可视化工作流](/help/analysis-workspace/visualizations/c-flow/create-flow.md)的更新。 |
 | **2022 年 5 月** | |
 | 2022 年 5 月 | 关于在 Customer Journey Analytics 中[创建连接](/help/connections/create-connection.md)的大幅更新文章。 |
-| 2022 年 5 月 | 关于如何[在 Customer Journey Analytics Report Builder 中管理数据块](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=zh-Hans)的新文章。 |
+| 2022 年 5 月 | 关于如何[在 Customer Journey Analytics Report Builder 中管理数据块](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=zh-hans)的新文章。 |
 | 2022 年 5 月 | 关于[将 Adobe Experience Platform 受众引入 Customer Journey Analytics](/help/use-cases/data-ingestion/ingest-aep-segments.md) 的新文章。 |
 | **2022 年 4 月** | |
-| 2022 年 4 月 | 关于[维度子字符串](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html?lang=zh-Hans)的文档。 |
+| 2022 年 4 月 | 关于[维度子字符串](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html?lang=zh-hans)的文档。 |
 | 2022 年 4 月 | 全新 [Adobe Analytics 用户的 Customer Journey Analytics 用户指南](/help/getting-started/aa-to-cja-user.md)。 |
 | **2022 年 3 月** | |
 | 2022 年 3 月 | 全新 [Customer Journey Analytics 批注 API 文档](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)。 |
@@ -216,8 +216,8 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 2022 年 2 月 | 面向从 Adobe Analytics 转移到 Customer Journey Analytics 的管理员的新指南：[从 Adobe Analytics 到 Customer Journey Analytics 的演化](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html) |
 | **2022 年 1 月** | |
 | 2022 年 1 月 | [在 Customer Journey Analytics 中使用绑定维度和指标](/help/use-cases/data-views/binding-dimensions-metrics.md)的新用例 |
-| 2022 年 1 月 | 添加了有关[绑定维度和指标](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=zh-Hans#binding-dimension)以及新的[[!UICONTROL 第一个已知]和[!UICONTROL 最后一个已知]分配设置的新功能文档](/help/data-views/component-settings/persistence.md#allocation-settings) |
-| 2022 年 1 月 | 关于[将 Adobe Analytics 数据与 Customer Journey Analytics 中的 Analytics 数据进行比较](https://experienceleague.adobe.com/docs/analytics-platform/using/troubleshooting/compare.html?lang=zh-Hans)的新文章 |
+| 2022 年 1 月 | 添加了有关[绑定维度和指标](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=zh-hans#binding-dimension)以及新的[[!UICONTROL 第一个已知]和[!UICONTROL 最后一个已知]分配设置的新功能文档](/help/data-views/component-settings/persistence.md#allocation-settings) |
+| 2022 年 1 月 | 关于[将 Adobe Analytics 数据与 Customer Journey Analytics 中的 Analytics 数据进行比较](https://experienceleague.adobe.com/docs/analytics-platform/using/troubleshooting/compare.html?lang=zh-hans)的新文章 |
 
 {style="table-layout:auto"}
 
@@ -228,22 +228,22 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | **2021 年 11 月** | |
 | 2021 年 11 月 | 更新了有关“连接详细信息”页面上[[!UICONTROL 跳过的记录数]](/help/connections/manage-connections.md)的文档。 |
 | **2021 年 10 月** | |
-| 2021 年 10 月 | 有关 Customer Journey Analytics 中的 [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/report-buider-overview.html?lang=zh-Hans#) 的文档。 |
+| 2021 年 10 月 | 有关 Customer Journey Analytics 中的 [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/report-buider-overview.html?lang=zh-hans#) 的文档。 |
 | 2021 年 10 月 | Customer Journey Analytics [审核日志](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) API 文档 |
-| 2021 年 10 月 | 记录了 [Analytics 功能板的可视化图表](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=zh-Hans#apply-visualizations) |
-| 2021 年 10 月 | 有关[!UICONTROL 连接][数据保留](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans#set-rolling-window-for-connection-data-retention)滚动时段的文档 |
+| 2021 年 10 月 | 记录了 [Analytics 功能板的可视化图表](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=zh-hans#apply-visualizations) |
+| 2021 年 10 月 | 有关[!UICONTROL 连接][数据保留](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-hans#set-rolling-window-for-connection-data-retention)滚动时段的文档 |
 | **2021 年 9 月** | |
-| 2021 年 9 月 | [指标去重](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication.html?lang=zh-Hans)文档 |
-| 2021 年 9 月 | [报告中的夏令时支持](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-Hans#calendar) |
-| 2021 年 9 月 | [客户日历](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-Hans#calendar)文档 |
-| 2021 年 9 月 | [布尔字段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/behavior.html?lang=zh-Hans)文档 |
+| 2021 年 9 月 | [指标去重](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication.html?lang=zh-hans)文档 |
+| 2021 年 9 月 | [报告中的夏令时支持](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-hans#calendar) |
+| 2021 年 9 月 | [客户日历](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-hans#calendar)文档 |
+| 2021 年 9 月 | [布尔字段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/behavior.html?lang=zh-hans)文档 |
 | 2021 年 9 月 | 将数据视图中的组件设置细分为单独的文件：<ul><li>[[!UICONTROL 组件]设置概述](/help/data-views/component-settings/overview.md)</li><li>[[!UICONTROL 归因]组件设置](/help/data-views/component-settings/attribution.md)</li><li>[[!UICONTROL 行为]组件设置](/help/data-views/component-settings/behavior.md)</li><li>[[!UICONTROL 格式]组件设置](/help/data-views/component-settings/format.md)</li><li>[[!UICONTROL 包括/排除]组件设置](/help/data-views/component-settings/include-exclude-values.md)</li><li>[[!UICONTROL 指标去重]组件设置](/help/data-views/component-settings/metric-deduplication.md)</li><li>[[!UICONTROL 无值]组件设置](/help/data-views/component-settings/no-value-options.md)</li><li>[[!UICONTROL 持久性]组件设置](/help/data-views/component-settings/persistence.md)</li><li>[[!UICONTROL 值分段]组件设置](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
-| 2021 年 9 月 | 有关 Customer Journey Analytics 中[合并报告包后果](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans#6。-considerations-when-merging-report-suites-in-cja)的新部分。 |
+| 2021 年 9 月 | 有关 Customer Journey Analytics 中[合并报告包后果](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-hans#6。-considerations-when-merging-report-suites-in-cja)的新部分。 |
 | **2021 年 8 月** | |
-| 2021 年 8 月 | 关于 Customer Journey Analytics 中增强的[连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-Hans)的新部分。 |
-| 2021 年 8 月 | 有关[数据视图维度中的区分大小写](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-Hans#configure-behavior-settings)的新部分。 |
+| 2021 年 8 月 | 关于 Customer Journey Analytics 中增强的[连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-hans)的新部分。 |
+| 2021 年 8 月 | 有关[数据视图维度中的区分大小写](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-hans#configure-behavior-settings)的新部分。 |
 | **2021 年 6 月** | |
-| 2021 年 6 月 | 有关工作区中[以前的项目版本](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/save-projects.html?lang=zh-Hans#previous-version)的新文档。 |
+| 2021 年 6 月 | 有关工作区中[以前的项目版本](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/save-projects.html?lang=zh-hans#previous-version)的新文档。 |
 | **2021 年 4 月** | |
 | 2021 年 4 月 | 有关[持久性](/help/data-views/component-settings/persistence.md)的新主题。 |
 | 2021 年 4 月 | 有关工作区中对计划项目的支持的新文档。 |
@@ -270,11 +270,11 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 2020 年 11 月 13 日 | 添加了有关[导入呼叫中心和 Web 数据](/help/use-cases/cross-channel/call-center.md)的新用例。 |
 | 2020 年 11 月 10 日 | 将有关删除数据组件后果的部分添加到[常见问题解答](/help/getting-started/cja-faq.md)中。 |
 | 2020 年 11 月 2 日 | 对 [Customer Journey Analytics 功能支持](/help/getting-started/aa-vs-cja/cja-aa.md)页面进行了更新。 |
-| 2020 年 11 月 | 添加了有关为连接[删除回填限制](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans#backfill-historical-data)的内容。 |
+| 2020 年 11 月 | 添加了有关为连接[删除回填限制](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-hans#backfill-historical-data)的内容。 |
 | 2020 年 10 月 7 日 | 添加了有关[合并事件数据集](/help/connections/combined-dataset.md)的主题。 |
 | 2020 年 9 月 15 日 | 添加了有关[数据摄取](/help/data-ingestion/data-ingestion.md)的主题。 |
-| 2020 年 9 月 2 日 | 更新了有关[用户权限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=zh-Hans)的部分。 |
-| 2020 年 7 月 | 添加了有关[人员 ID 的身份标识映射选项](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans)的信息。 |
+| 2020 年 9 月 2 日 | 更新了有关[用户权限](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=zh-hans)的部分。 |
+| 2020 年 7 月 | 添加了有关[人员 ID 的身份标识映射选项](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-hans)的信息。 |
 | 2020 年 7 月 | 添加了有关[对象数组](/help/use-cases/object-arrays.md)或“数据层次结构”的新主题。 |
 | 2020 年 4 月 14 日 | 对[创建连接](/help/connections/create-connection.md)主题中的最新 UI 进行了更新。 |
 | 2020 年 2 月 27 日 | 对 [Customer Journey Analytics 功能支持](/help/getting-started/aa-vs-cja/cja-aa.md)的更新 |
