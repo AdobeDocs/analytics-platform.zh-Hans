@@ -5,7 +5,7 @@ feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
 source-git-commit: 47c5fc27d994667933103f864a253e086050bbf8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1636'
 ht-degree: 100%
 
@@ -463,13 +463,13 @@ ROUND( 314.15, -2) = 300
 | include_zeros | 是否在计算中包含零值。 |
 
 
-## 方差 {#variance}
+## 变量 {#variance}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-variance"
->title="方差"
+>title="变量"
 >abstract="基于数据的抽样群体返回变量。"
 
 <!-- markdownlint-enable MD034 -->
