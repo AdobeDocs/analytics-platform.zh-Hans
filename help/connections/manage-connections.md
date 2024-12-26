@@ -9,7 +9,7 @@ role: Admin
 source-git-commit: 0b6a84820dc42b5e5009eaa254e5554712a952aa
 workflow-type: tm+mt
 source-wordcount: '3536'
-ht-degree: 16%
+ht-degree: 21%
 
 ---
 
@@ -249,7 +249,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_otherdatasets"
 >title="其他数据集"
->abstract="在2024年9月之前的几个月中，数据收集在数据集级别，并显示为&#x200B;*其他数据集*&#x200B;以清楚说明。 从2024年9月开始，在粒度数据集级别收集数据，并且&#x200B;*其他数据集*&#x200B;将不再显示。"
+>abstract="对于 2024 年 9 月之前的月份，数据是在数据集级别收集的，为了清楚起见，显示为&#x200B;*其他数据集* 。从 2024 年 9 月起，数据将在细粒度的数据集层面进行收集，*其他数据集*&#x200B;将不再出现。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -258,7 +258,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_unknowndatasetsorconnections"
 >title="未知的数据集或连接"
->abstract="显示未知的数据集或连接将使用其ID。"
+>abstract="未知的数据集或连接使用其 ID 显示。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -267,7 +267,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_datanotavailable"
 >title="数据不可用"
->abstract="由于系统限制，2024年9月之前的历史数据不可用。 从2024年9月开始收集和显示量度。 图表在时间轴上显示过去18个月，当数据可用时，将显示未来的数据。"
+>abstract="由于系统限制，2024 年 9 月之前的历史数据不可用。从 2024 年 9 月开始收集和显示量度。该图表在时间线上显示了过去 18 个月的数据，并且未来的数据将在数据可用时显示。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -276,7 +276,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="cja_connections_corereportablerows"
 >title="核心可报告行数"
->abstract="显示过去13个月中可用的总行数。 例如，在2024年2月1日，该数字显示事件时间戳为2023年1月至2024年1月的可用总行数。"
+>abstract="显示过去 13 个月可用的总行数。例如，2024 年 2 月 1 日，该数字显示事件时间戳从 2023 年 1 月到 2024 年 1 月的可用行数总数。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -285,7 +285,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="cja_connections_historicalreportablerows"
 >title="历史可报告行数"
->abstract="显示超过13个月的时段可用的总行数。 例如，在2024年2月1日，该数字显示事件时间戳早于2023年1月的可用总行数。"
+>abstract="显示超过 13 个月的时间段内可用的总行数。例如，2024 年 2 月 1 日，该数字显示事件时间戳早于 2023 年 1 月的可用行数总数。"
 
 <!-- markdownlint-enable MD034 -->
 

@@ -7,7 +7,7 @@ role: User
 source-git-commit: 30fd026a948eab62b034033b4163d3e2b27c47c3
 workflow-type: tm+mt
 source-wordcount: '4438'
-ht-degree: 28%
+ht-degree: 56%
 
 ---
 
@@ -32,20 +32,20 @@ ht-degree: 28%
 另一种情况是，您有两个感兴趣的指标，其中一个指标的平均值或最小值较高，因为其中有些行为零。在这种情况下，您可以选择不检查参数以包含零。
 
 
-## “逻辑与” {#and}
+## 与 {#and}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-and"
->title="“逻辑与”"
->abstract="结合。 不等于零则视为true，等于零则视为false。 输出为0 (false)或1 (true)。"
+>title="与"
+>abstract="连词。不等于零被认为是真，等于零被认为是假。输出为 0（假）或 1（真）。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL AND(logical_test)]**
 
-结合。 不等于零则视为true，等于零则视为false。 输出为0 (false)或1 (true)。
+连词。不等于零被认为是真，等于零被认为是假。输出为 0（假）或 1（真）。
 
 | 参数 | 描述 |
 |---|---|
@@ -59,14 +59,14 @@ ht-degree: 28%
 >[!CONTEXTUALHELP]
 >id="functions-count-distinct-metric"
 >title="非重复近似计数"
->abstract="针对所选维度，返回其维度项目的非重复近似计数。"
+>abstract="返回适用于所选维度的维度项目的非重复近似计数。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 近似非重复计数（维度）]**
 
 
-针对所选维度，返回其维度项目的非重复近似计数。
+返回适用于所选维度的维度项目的非重复近似计数。
 
 
 | 参数 | 描述 |
@@ -86,7 +86,7 @@ ht-degree: 28%
 >[!CONTEXTUALHELP]
 >id="functions-acos"
 >title="反余弦"
->abstract="返回某量度的反余弦。反余弦是一个其余弦为数字的角。返回的角为范围在 0（零）到 pi 之间的弧度。如果要将结果从弧度转换为度，请将其乘以180/PI()。"
+>abstract="返回某量度的反余弦。反余弦是一个其余弦为数字的角度。返回的角度为范围在 0（零）到 pi 之间的弧度。如果要将结果从弧度转换为角度，请将其乘以 180/PI()。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -109,7 +109,7 @@ ht-degree: 28%
 >[!CONTEXTUALHELP]
 >id="functions-asin"
 >title="反正弦"
->abstract="返回某数字的反正弦。反正弦是正弦是数字的角。 返回的角为范围在 -pi/2 到 pi/2 之间的弧度。若要以度数表示反正弦值，则将结果乘以180/PI()"
+>abstract="返回一个数值的反正弦（或逆正弦）值。反正弦是一个其正弦为数值的角度。返回的角度为范围在 -pi/2 到 pi/2 之间的弧度。要以角度表示反正弦，请将结果乘以 180/PI()。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -132,7 +132,7 @@ ht-degree: 28%
 >[!CONTEXTUALHELP]
 >id="functions-atan"
 >title="反正切"
->abstract="返回某数字的反正切。反正切是正切为数字的角度。 返回的角为范围在 -pi/2 到 pi/2 之间的弧度。若要以度数表示反正切，则将结果乘以180/PI()。"
+>abstract="返回一个数值的反正切（或逆正切）值。反正切是一个其正切为数值的角度。返回的角度为范围在 -pi/2 到 pi/2 之间的弧度。要以角度表示反正切，请将结果乘以 180/PI( )。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -155,13 +155,13 @@ ht-degree: 28%
 >[!CONTEXTUALHELP]
 >id="functions-cdf-t"
 >title="Cdf-T"
->abstract="返回自由度为n的学生t分布中，随机变量z分数小于列值的概率。"
+>abstract="返回自由度为 n 的学生 t 分布中，随机变量 z 分数小于列值的概率。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-T（量度，数字）]**
 
-返回自由度为n的学生t分布中，随机变量z分数小于列值的概率。
+返回自由度为 n 的学生 t 分布中，随机变量 z 分数小于列值的概率。
 
 | 参数 | 描述 |
 |---|---|
@@ -186,13 +186,13 @@ CDF-T(x, ∞) ? cdf_z(x)
 >[!CONTEXTUALHELP]
 >id="functions-cdf-z"
 >title="Cdf-Z"
->abstract="返回正态分布中随机变量z分数小于列值的概率。"
+>abstract="返回正态分布中随机变量 z 分数小于列值的概率。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-Z（量度，数字）]**
 
-返回正态分布中随机变量z分数小于列值的概率。
+返回正态分布中随机变量 z 分数小于列值的概率。
 
 | 参数 | 描述 |
 |---|---|
@@ -235,13 +235,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-waskr-confidence"
 >title="置信度"
->abstract="使用[时间均匀中心极限理论和渐近置信序列](https://arxiv.org/pdf/2103.06476)中所述的WASKR方法计算随时有效置信度。"
+>abstract="使用[时间统一中心极限定理和渐近置信序列](https://arxiv.org/pdf/2103.06476)中所述的 WASKR 方法计算任意时间有效的置信度。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 置信度(normalizing-container， success-metric， control， importance-treshold)]**
 
-使用[时间均匀中心极限理论和渐近置信序列](https://arxiv.org/pdf/2103.06476)中所述的WASKR方法计算随时有效置信度。
+使用[时间统一中心极限定理和渐近置信序列](https://arxiv.org/pdf/2103.06476)中所述的 WASKR 方法计算任意时间有效的置信度。
 
 置信度是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。 置信度越高，表明支持控制变量和非控制变量具有相同性能的假设的证据越少。
 
@@ -260,13 +260,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-waskr-confidence-interval-lower"
 >title="置信度（下限）"
->abstract="使用[时间均匀中心极限理论和渐近置信序列](https://arxiv.org/pdf/2103.06476)中所述的WASKR方法计算随时有效置信度&#x200B;**lower**。"
+>abstract="使用[时间统一中心极限定理和渐近置信序列](https://arxiv.org/pdf/2103.06476)中所述的 WASKR 方法计算任意时间有效的置信度（**下限**）。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 置信度(normalizing-container， success-metric， control， importance-treshold)]**
 
-使用[时间均匀中心极限理论和渐近置信序列](https://arxiv.org/pdf/2103.06476)中所述的WASKR方法计算随时有效置信度&#x200B;**lower**。
+使用[时间统一中心极限定理和渐近置信序列](https://arxiv.org/pdf/2103.06476)中所述的 WASKR 方法计算任意时间有效的置信度（**下限**）。
 
 置信度是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。 置信度越高，表明支持控制变量和非控制变量具有相同性能的假设的证据越少。
 
@@ -284,13 +284,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-waskr-confidence-interval-upper"
 >title="置信度（上限）"
->abstract="使用[时间均匀中心极限理论和渐近置信序列](https://arxiv.org/pdf/2103.06476)中所述的WASKR方法计算随时有效置信度&#x200B;**upper**。"
+>abstract="使用[时间统一中心极限定理和渐近置信序列](https://arxiv.org/pdf/2103.06476)中所述的 WASKR 方法计算任意时间有效的置信度（**上限**）。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 置信度(normalizing-container， success-metric， control， importance-treshold)]**
 
-使用[时间均匀中心极限理论和渐近置信序列](https://arxiv.org/pdf/2103.06476)中所述的WASKR方法计算随时有效置信度&#x200B;**upper**。
+使用[时间统一中心极限定理和渐近置信序列](https://arxiv.org/pdf/2103.06476)中所述的 WASKR 方法计算任意时间有效的置信度（**上限**）。
 
 置信度是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。 置信度越高，表明支持控制变量和非控制变量具有相同性能的假设的证据越少。
 
@@ -309,7 +309,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-cos"
 >title="余弦"
->abstract="返回给定角的余弦。如果角度以度为单位，则将角度乘以PI()/180。"
+>abstract="返回给定角度的余弦。如果角以角度表示，则将该角乘以 PI()/180。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -352,13 +352,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-cumul"
 >title="累积"
->abstract="返回列x的最后n个元素的总和。如果n > 0，则对最后n个元素或x求和。如果n &lt; 0，则对上述元素求和。"
+>abstract="返回 x 列最后 n 个元素的和。如果 n > 0，则对最后 n 个元素或 x 求和。如果 n &lt; 0，则对前面的元素求和。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 累积（数字，指标）]**
 
-返回列x的最后n个元素的总和。如果n > 0，则对最后n个元素或x求和。如果n &lt; 0，则对上述元素求和。
+返回 x 列最后 n 个元素的和。如果 n > 0，则对最后 n 个元素或 x 求和。如果 n &lt; 0，则对前面的元素求和。
 
 | 参数 | 描述 |
 | --- | --- |
@@ -381,13 +381,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-cumul-avg"
 >title="累积（平均）"
->abstract="返回列x最后n个元素的平均值。如果n > 0，则对最后n个元素或x求和。如果n &lt; 0，则对上述元素求和。"
+>abstract="返回 x 列最后 n 个元素的平均值。如果 n > 0，则对最后 n 个元素或 x 求和。如果 n &lt; 0，则对前面的元素求和。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 累积平均值（数值，指标）]**
 
-返回列x最后n个元素的平均值。如果n > 0，则对最后n个元素或x求和。如果n &lt; 0，则对上述元素求和。
+返回 x 列最后 n 个元素的平均值。如果 n > 0，则对最后 n 个元素或 x 求和。如果 n &lt; 0，则对前面的元素求和。
 
 | 参数 | 描述 |
 | --- | --- |
@@ -407,13 +407,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-eq"
 >title="等于"
->abstract="等于。 输出为0 (false)或1 (true)。"
+>abstract="等于。输出为 0（假）或 1（真）。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 等于()]**
 
-等于。 输出为0 (false)或1 (true)。
+等于。输出为 0（假）或 1（真）。
 
 
 | 参数 | 描述 |
@@ -449,14 +449,14 @@ CDF-Z(-3) ? 0.0013499
 | metric_Y | 要与metric_X关联的量度 |
 | include_zeros | 是否在计算中包括零值 |
 
-## 指数回归：预测的Y {#exponential-regression-predicted-y}
+## 指数回归：预测的 Y {#exponential-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-exp"
->title="指数回归：预测的Y"
->abstract="指数回归：Y = a exp(X) + b。返回Y。"
+>title="指数回归：预测的 Y"
+>abstract="指数回归：Y = a exp(X) + b。返回 Y。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -480,7 +480,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-exp"
 >title="指数回归：截距"
->abstract="指数回归：Y = a exp(X) + b。返回b。"
+>abstract="指数回归：Y = a exp(X) + b。返回 b。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -503,7 +503,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-exp"
 >title="指数回归：斜率"
->abstract="指数回归：Y = a exp(X) + b。返回a。"
+>abstract="指数回归：Y = a exp(X) + b。返回 a。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -547,13 +547,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-gt"
 >title="大于"
->abstract="输出为0 (false)或1 (true)。"
+>abstract="输出为 0（假）或 1（真）。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 大于()]**
 
-输出为0 (false)或1 (true)。
+输出为 0（假）或 1（真）。
 
 | 参数 | 描述 |
 |---|---|
@@ -572,13 +572,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ge"
 >title="大于或等于"
->abstract="大于或等于。 输出为0 (false)或1 (true)。"
+>abstract="大于或等于输出为 0（假）或 1（真）。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 大于或等于()]**
 
-大于或等于。 输出为0 (false)或1 (true)。
+大于或等于输出为 0（假）或 1（真）。
 
 | 参数 | 描述 |
 |---|---|
@@ -661,7 +661,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-if"
 >title="如果"
->abstract="如果条件参数的值为非零(true)，则结果为value_if_true参数的值。 否则，它是value_if_false参数的值。"
+>abstract="如果条件参数的值非零（真），则结果为 value_if_true 参数的值。否则，它会是 value_if_false 参数的值。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -685,13 +685,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-lt"
 >title="小于"
->abstract="输出为0 (false)或1 (true)。"
+>abstract="输出为 0（假）或 1（真）。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 小于()]**
 
-输出为0 (false)或1 (true)。
+输出为 0（假）或 1（真）。
 
 | 参数 | 描述 |
 |---|---|
@@ -710,13 +710,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-le"
 >title="小于或等于"
->abstract="小于或等于。 输出为0 (false)或1 (true)。"
+>abstract="小于或等于。输出为 0（假）或 1（真）。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 小于或等于()]**
 
-小于或等于。 输出为0 (false)或1 (true)。
+小于或等于。输出为 0（假）或 1（真）。
 
 | 参数 | 描述 |
 |---|---|
@@ -729,7 +729,7 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## 提升(#lift)
+## 提升 (#lift)
 
 <!-- markdownlint-disable MD034 -->
 
@@ -780,7 +780,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-linear"
 >title="线性回归：截距"
->abstract="线性回归：Y = a X + b。返回b。"
+>abstract="线性回归：Y = a X + b。返回 b。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -798,14 +798,14 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## 线性回归：预测的Y {#linear-regression-predicted-y}
+## 线性回归：预测的 Y {#linear-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-linear"
->title="线性回归：预测的Y"
->abstract="线性回归：Y = a X + b。返回Y。"
+>title="线性回归：预测的 Y"
+>abstract="线性回归：Y = a X + b。返回 Y。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -830,7 +830,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-linear"
 >title="线性回归：斜率"
->abstract="线性回归：Y = a X + b。返回a。"
+>abstract="线性回归：Y = a X + b。返回 a。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -845,13 +845,13 @@ CDF-Z(-3) ? 0.0013499
 | include_zeros | 是否在计算中包括零值 |
 
 
-## 以10为底的对数 {#log-base-ten}
+## 常用对数 {#log-base-ten}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-log10"
->title="以10为底的对数"
+>title="常用对数"
 >abstract="返回某数字以 10 为底数的对数。"
 
 <!-- markdownlint-enable MD034 -->
@@ -896,7 +896,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-log"
 >title="对数回归：截距"
->abstract="对数回归：Y = a ln(X) + b。返回b。"
+>abstract="对数回归：Y = a ln(X) + b。返回 b。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -912,14 +912,14 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## 对数回归：预测的Y {#log-regression-predicted-y}
+## 对数回归：预测的 Y {#log-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-log"
->title="对数回归：预测的Y"
->abstract="对数回归：Y = a ln(X) + b。返回Y。"
+>title="对数回归：预测的 Y"
+>abstract="对数回归：Y = a ln(X) + b。返回 Y。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -942,7 +942,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-log"
 >title="对数回归：斜率"
->abstract="对数回归：Y = a ln(X) + b。返回a。"
+>abstract="对数回归：Y = a ln(X) + b。返回 a。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -986,13 +986,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-not"
 >title="不为"
->abstract="否定是一种布尔值。 输出为0 (false)或1 (true)。"
+>abstract="作为布尔值的取反。输出为 0（假）或 1（真）。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL NOT（逻辑）]**
 
-否定是一种布尔值。 输出为0 (false)或1 (true)。
+作为布尔值的取反。输出为 0（假）或 1（真）。
 
 | 参数 | 描述 |
 |---|---|
@@ -1007,14 +1007,14 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ne"
 >title="不等于"
->abstract="不等于。 输出为0 (false)或1 (true)。"
+>abstract="不等于。输出为 0（假）或 1（真）。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 不等于()]**
 
 
-不等于。 输出为0 (false)或1 (true)。
+不等于。输出为 0（假）或 1（真）。
 
 
 | 参数 | 描述 |
@@ -1034,7 +1034,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-or"
 >title="或"
->abstract="分离。不等于零则视为true，等于零则视为false。 输出为0 (false)或1 (true)。"
+>abstract="析取。不等于零被认为是真，等于零被认为是假。输出为 0（假）或 1（真）。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1061,13 +1061,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-pi"
 >title="Pi"
->abstract="返回Pi：3.14159..."
+>abstract="返回 Pi: 3.14159..."
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL PI()]**
 
-返回Pi：3.14159...
+返回 Pi: 3.14159...
 
 
 ## 幂回归：相关系数 {#power-regression-correlation-coefficient}
@@ -1077,7 +1077,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-power"
 >title="幂回归：相关系数"
->abstract="幂回归：Y = b X ^ a。返回相关系数。"
+>abstract="幂回归：Y = b X ^ a. 返回相关系数。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1100,7 +1100,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-power"
 >title="幂回归：截距"
->abstract="幂回归：Y = b X ^ a。返回b。"
+>abstract="幂回归：Y = b X ^ a. 返回 b。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1117,14 +1117,14 @@ CDF-Z(-3) ? 0.0013499
 | include_zeros | 是否在计算中包括零值 |
 
 
-## 幂回归：预测的Y {#power-regression-predicted-y}
+## 幂回归：预测的 Y {#power-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-power"
->title="幂回归：预测的Y"
->abstract="幂回归：Y = b X ^ a。返回Y。"
+>title="幂回归：预测的 Y"
+>abstract="幂回归：Y = b X ^ a. 返回 Y。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1147,7 +1147,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-power"
 >title="幂回归：斜率"
->abstract="幂回归：Y = b X ^ a。返回a。"
+>abstract="幂回归：Y = b X ^ a. 返回 a。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1170,7 +1170,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-quadratic"
 >title="二次回归：相关系数"
->abstract="二次回归：Y = (a + bX) ^ 2。返回相关系数。"
+>abstract="二次回归：Y = (a + bX) ^ 2，返回相关系数。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1191,7 +1191,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-quadratic"
 >title="二次回归：截距"
->abstract="二次回归：Y = (a + bX) ^ 2，返回a。"
+>abstract="二次回归：Y = (a + bX) ^ 2，返回 a。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1206,14 +1206,14 @@ CDF-Z(-3) ? 0.0013499
 | include_zeros | 是否在计算中包括零值 |
 
 
-## 二次回归：预测的Y {#quadratic-regression-predicted-y}
+## 二次回归：预测的 Y {#quadratic-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-quadratic"
->title="二次回归：预测的Y"
->abstract="二次回归：Y = (a + bX) ^ 2，返回Y。"
+>title="二次回归：预测的 Y"
+>abstract="二次回归：Y = (a + bX) ^ 2，返回 Y。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1235,7 +1235,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-quadratic"
 >title="二次回归：斜率"
->abstract="二次回归：Y = (a + bX) ^ 2，返回b。"
+>abstract="二次回归：Y = (a + bX) ^ 2，返回 b。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1258,7 +1258,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-reciprocal"
 >title="倒数回归：相关系数"
->abstract="倒数回归：Y = a + b X ^ -1。 返回相关系数。"
+>abstract="倒数回归：Y = a + b X ^ -1。返回相关系数。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1280,7 +1280,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-reciprocal"
 >title="倒数回归：截距"
->abstract="倒数回归：Y = a + b X ^ -1。 返回。"
+>abstract="倒数回归：Y = a + b X ^ -1。返回 a。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1295,14 +1295,14 @@ CDF-Z(-3) ? 0.0013499
 | include_zeros | 是否在计算中包括零值 |
 
 
-## 倒数回归：预测的Y {#reciprocal-regression-predicted-y}
+## 倒数回归：预测的 Y {#reciprocal-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-reciprocal"
->title="倒数回归：预测的Y"
->abstract="倒数回归：Y = a + b X ^ -1。 返回Y。"
+>title="倒数回归：预测的 Y"
+>abstract="倒数回归：Y = a + b X ^ -1。返回 Y。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1324,7 +1324,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-reciprocal"
 >title="倒数回归：斜率"
->abstract="倒数回归：Y = a + b X ^ -1。 返回b。"
+>abstract="倒数回归：Y = a + b X ^ -1。返回结果 b。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1348,7 +1348,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-sin"
 >title="正弦"
->abstract="返回给定角的正弦。如果角度以度为单位，则将角度乘以PI()/180。"
+>abstract="返回给定角的正弦。如果角以角度表示，则将该角乘以 PI( )/180。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1372,13 +1372,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-t-score"
 >title="T 分数"
->abstract="[MEAN](cm-functions.md#mean)的偏差除以标准偏差。 [Z分数](#z-score)的别名。"
+>abstract="与[平均值](cm-functions.md#mean)的偏差除以标准差。[Z-Score](#z-score) 的别名。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL T-SCORE(metric， include_zeros)]**
 
-[MEAN](cm-functions.md#mean)的偏差除以标准偏差。 [Z分数](#z-score)的别名。
+与[平均值](cm-functions.md#mean)的偏差除以标准差。[Z-Score](#z-score) 的别名。
 
 | 参数 | 描述 |
 |---|---|
@@ -1440,13 +1440,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-tan"
 >title="正切"
->abstract="返回给定角的正切。如果角度以度为单位，则将角度乘以PI()/180。"
+>abstract="返回给定角的正切。如果角以角度表示，则将该角乘以 PI( )/180。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 正切（量度）]**
 
-返回给定角的正切。如果角度以度为单位，则将角度乘以PI()/180。
+返回给定角的正切。如果角以角度表示，则将该角乘以 PI( )/180。
 
 | 参数 | 描述 |
 |---|---|
@@ -1454,14 +1454,14 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## Z分数 {#z-score}
+## Z-Score {#z-score}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-z-score"
->title="Z分数"
->abstract="平均值偏差除以标准偏差。"
+>title="Z-Score"
+>abstract="与平均值的偏差除以标准差。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1495,13 +1495,13 @@ Z 分数的方程式为：
 >[!CONTEXTUALHELP]
 >id="functions-z-test"
 >title="Z 测试"
->abstract="执行n尾z检验，z分数为x。"
+>abstract="通过 x 的 z 分数，执行以 n 结尾的 z-test。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL Z-TEST(metric_tails)]**
 
-执行n尾z检验，z分数为x。
+通过 x 的 z 分数，执行以 n 结尾的 z-test。
 
 | 参数 | 描述 |
 |---|---|

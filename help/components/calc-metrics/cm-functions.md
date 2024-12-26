@@ -7,7 +7,7 @@ role: User
 source-git-commit: 47c5fc27d994667933103f864a253e086050bbf8
 workflow-type: tm+mt
 source-wordcount: '1636'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -151,7 +151,7 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="functions-exp"
 >title="指数"
->abstract="返回 e 的给定次幂。常数 e 等于 2.71828182845904，它是自然对数的底数。指数是一个数的自然对数LN的倒数。"
+>abstract="返回 e 的给定次幂。常数 e 等于 2.71828182845904，它是自然对数的底数。EXPONENT 是 LN 的反函数，LN 是某数字的自然对数。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -171,7 +171,7 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="functions-mean"
 >title="平均值"
->abstract="返回列中某度量的算术平均值或平均值"
+>abstract="返回列中某量度的算术平均值或平均数"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -193,7 +193,7 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="functions-median"
 >title="中间值"
->abstract="返回列中某量度的中间值。中间值是一组数字中间的数字。 也就是说，一半数字的值大于或等于中位数，另一半小于或等于中位数。"
+>abstract="返回列中某量度的中间值。中间值是位于一组数字中间的数字。也就是说，一半的数字大于或等于中间值，一半的数字小于或等于中间值。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -252,7 +252,7 @@ MODULO(MODULO(x,y)+y,y)
 >[!CONTEXTUALHELP]
 >id="functions-percentile"
 >title="百分位数"
->abstract="返回第n个百分位数，该值介于0和100之间。 当n &lt; 0时，函数使用0。 当n > 100时，函数返回100。"
+>abstract="返回第 n 个百分位数，即 0 至 100 之间的值。当 n &lt; 0 时，该函数使用零。当 n > 100 时，该函数返回 100。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -297,7 +297,7 @@ MODULO(MODULO(x,y)+y,y)
 >[!CONTEXTUALHELP]
 >id="functions-quartile"
 >title="四分位数"
->abstract="返回某量度的四分位数形式的值。例如，四分位数可用于查找创造最多收入的前25%产品。"
+>abstract="返回某量度的四分位数形式的值。例如，四分位数可用于查找在获得的收入方面排名前 25% 的产品。"
 
 <!-- markdownlint-enable MD034 -->
 
