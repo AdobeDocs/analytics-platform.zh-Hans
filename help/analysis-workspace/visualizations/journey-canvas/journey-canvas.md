@@ -4,10 +4,10 @@ title: 历程画布
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: acbe705647e508bbc85f596c3165b1acd8cb15bb
+source-git-commit: 05e1b5e26d5a1dc1e46a675131185f0927c65f22
 workflow-type: tm+mt
-source-wordcount: '1766'
-ht-degree: 3%
+source-wordcount: '1759'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_button"
 >title="历程画布"
->abstract="与流失类似，此可视化会显示人们如何通过或退出一系列接触点。使用历程画布来绘制具有多个入口点和路径的历程，或分析在 Journey Optimizer 中创建的历程。"
+>abstract="显示人员如何通过或退出一系列接触点。 用于具有多个入口点和路径的历程，或分析在Journey Optimizer中创建的历程。"
 
 <!-- markdownlint-enable MD034 -->
 

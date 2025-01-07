@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
-source-git-commit: edd49ea60901acc0bb4ba603bbb9377aeee423fd
+source-git-commit: 614e15a492b247d98e4e32c0f06d8ae438ca6d45
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 100%
+source-wordcount: '454'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_settings_datapreview"
 >title="数据预览"
->abstract="将此过滤器的数据与连接的数据进行比较。预览百分比基于&#x200B;**过去 90 天**&#x200B;连接中的总数。<br><br/>如果未加载预览，则您的连接有可能仍在进行回填。"
+>abstract="将此数据视图的数据与连接的数据进行比较。 预览百分比基于&#x200B;**过去 90 天**&#x200B;连接中的总数。<br><br/>如果未加载预览，则您的连接有可能仍在进行回填。"
 
 <!-- markdownlint-enable MD034 -->
 
