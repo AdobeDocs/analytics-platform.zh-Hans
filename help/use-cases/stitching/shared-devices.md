@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
-source-git-commit: 81d1c6abbda63c4ac8cdcc96d1b730974b137ad9
+source-git-commit: 9118a3c20158b1a0373fab1b41595aa7b07075f6
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '658'
 ht-degree: 6%
 
 ---
@@ -49,7 +49,7 @@ The order success (purchase) events assign the data accurately to the correct em
 
 ### 最后验证归因
 
-上次身份验证将共享设备中的所有未知活动归因于上次进行身份验证的用户。 Experience PlatformIdentity服务基于最后验证归因构建图形，因此用于基于图形的拼合。 有关详细信息，请参阅[身份图链接规则概述](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview)。
+上次身份验证将共享设备中的所有未知活动归因于上次进行身份验证的用户。 Experience PlatformIdentity服务基于最后验证归因构建图形，因此用于基于图形的拼合。 有关详细信息，请参阅[标识图链接规则](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details)。
 
 在拼接中使用最后验证归因时，拼接ID会解析，如下表所示。
 
@@ -65,7 +65,7 @@ The order success (purchase) events assign the data accurately to the correct em
 
 ### 设备拆分
 
-设备拆分将来自共享设备的匿名活动归因于最接近匿名活动的用户。 设备拆分当前用于基于字段的拼合。
+设备拆分将来自共享设备的匿名活动归因于最近已知的用户，查看的是过去的记录。 设备拆分当前用于基于字段的拼合。
 
 在拼合中使用设备拆分归因时，拼合ID会解析，如下表所示。
 

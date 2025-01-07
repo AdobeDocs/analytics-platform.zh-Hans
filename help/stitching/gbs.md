@@ -4,9 +4,10 @@ description: 基于图形的拼合说明
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
-source-git-commit: 4ce1b22cce3416b8a82e5c56e605475ae6c27d88
+exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
+source-git-commit: 9118a3c20158b1a0373fab1b41595aa7b07075f6
 workflow-type: tm+mt
-source-wordcount: '1361'
+source-wordcount: '1385'
 ht-degree: 7%
 
 ---
@@ -146,7 +147,7 @@ ht-degree: 7%
 以下限制专门适用于基于图形的拼接：
 
 - 使用指定的命名空间查询临时ID时，不考虑时间戳。 因此，持久ID可能与具有更早时间戳的记录的临时ID拼合。
-- 不支持共享设备。 当返回多个身份时，通过使用命名空间查询身份图，使用第一个词典图身份。
+- 在共享设备方案中，如果图形中的命名空间包含多个标识，则使用第一个词典标识。 如果命名空间限制和优先级是在发布图形链接规则时配置的，则使用上次经过身份验证的用户身份。 有关详细信息，请参阅[共享设备](/help/use-cases/stitching/shared-devices.md)。
 - 在身份图中，存在三个月回填身份信息的硬性限制。 如果您没有使用Experience Platform应用程序(如Real-time Customer Data Platform)填充身份图，则可以使用回填身份。
 - 应用[Identity Service护栏](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails)。 例如，查看以下[静态限制](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits)：
    - 图形中的最大标识数：50。
