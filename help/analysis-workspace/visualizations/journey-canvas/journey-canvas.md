@@ -4,14 +4,34 @@ title: 历程画布
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 25969de61f23cf0690a130127fcc1442b9806a35
+source-git-commit: acbe705647e508bbc85f596c3165b1acd8cb15bb
 workflow-type: tm+mt
-source-wordcount: '1657'
-ht-degree: 1%
+source-wordcount: '1766'
+ht-degree: 3%
 
 ---
 
-# 历程画布概述
+# 历程画布概述 {#journey-canvas-overview}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_button"
+>title="历程画布"
+>abstract="与流失类似，此可视化会显示人们如何通过或退出一系列接触点。使用历程画布来绘制具有多个入口点和路径的历程，或分析在 Journey Optimizer 中创建的历程。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_panel"
+>title="历程画布"
+>abstract="分析人员如何通过定义的历程或从中退出。 通过创建灵活的节点图和箭头图来构建用户历程的分析，这些节点和箭头表示事件、维度项和过滤器的任意组合。拖动画布上的节点以重新排列历程的事件和条件。 在执行此操作时，数据会相应地更新。 <br/><br/>有权访问Adobe Journey Optimizer的客户可以分析现有Journey Optimizer历程"
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 历程画布可视化图表允许您分析提供给用户和客户的旅程，并获取有关这些旅程的深入见解。 它允许您从头开始定义旅程或从Journey Optimizer查看旅程，然后查看人员如何离开（流失）或继续通过（流过）旅程。
 
