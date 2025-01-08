@@ -5,9 +5,9 @@ title: 将Customer Journey Analytics报表导出到云端
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
+source-git-commit: 18a1cfcddfc8b2d1c70af57518c0b8d848b4ca5d
 workflow-type: tm+mt
-source-wordcount: '2205'
+source-wordcount: '2226'
 ht-degree: 3%
 
 ---
@@ -178,6 +178,7 @@ ht-degree: 3%
    * 是从属于[对象数组](/help/use-cases/object-arrays.md)一部分的字段创建的(类似于Adobe Analytics中的多值变量)
    * 已启用[持久性](/help/data-views/component-settings/persistence.md)
    * 未使用[绑定维度](/help/use-cases/data-views/binding-dimensions-metrics.md)
+* 来自引用不同[对象数组](/help/use-cases/object-arrays.md)的字段的多个维度。 （允许引用同一对象数组的多个维度。）
 * 每个报表有超过5个维度和5个量度（最多支持5个维度和5个量度）
 * 在表列中：
    * 日期范围
