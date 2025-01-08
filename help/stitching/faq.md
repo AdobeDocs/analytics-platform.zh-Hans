@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 78803a2062b38b0f4a80837d18dbf3e9cc609cc8
+source-git-commit: 02026709480872216ee76e842045517822c59bff
 workflow-type: tm+mt
-source-wordcount: '1910'
+source-wordcount: '1919'
 ht-degree: 28%
 
 ---
@@ -46,6 +46,8 @@ ht-degree: 28%
 在某些情况下，可能会有多人从同一设备登录。例如，在家中使用共享设备，在图书馆中使用共享 PC，或在零售商店中使用自助终端。
 
 临时 ID 会覆盖永久 ID，因此共享设备会被视为单独的人员（即使来自于同一设备也是如此）。
+
+有关详细信息，请参阅[共享设备](/help/use-cases/stitching/shared-devices.md)用例。
 
 +++
 
@@ -92,7 +94,7 @@ Adobe将根据当地和国际法律处理隐私请求。 Adobe 提供了 [Adobe 
 
 举例来说，可以想象以下用于标识的数据，即拼接之前和拼接之后的事件。
 
-| 标识映射 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 |
+| 身份标识映射 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 |
 |---|---|---|---|---|---|---|
 |  | 1 | ts1 | 123 | ecid | Bob | CustId |
 |  | 2 | ts2 | 123 | ecid | Alex | CustId |
@@ -116,7 +118,7 @@ Adobe将根据当地和国际法律处理隐私请求。 Adobe 提供了 [Adobe 
 
 当收到具有CustID Bob的客户的隐私请求时，将删除具有删除线条目的行。 使用标识映射重新获取其他事件。 例如，拼接数据集中的第一个拼接ID已更新为&#x200B;**Alex**。
 
-| 标识映射 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 |
+| 身份标识映射 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 |
 |:---:|---|---|---|---|---|---|
 | ![删除大纲](/help/assets/icons/DeleteOutline.svg) | ~~1~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
 |  | 2 | ts2 | 123 | ecid | Alex | CustId |
@@ -140,7 +142,7 @@ Adobe将根据当地和国际法律处理隐私请求。 Adobe 提供了 [Adobe 
 
 当收到具有CustID Bob的客户的隐私请求时，将删除具有删除线条目的行。 使用永久id重新获取其他事件。 例如，拼接数据集中的第一个拼接ID已更新为&#x200B;**123**。
 
-| 标识映射 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 |
+| 身份标识映射 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 |
 |:---:|---|---|---|---|---|---|
 | ![删除大纲](/help/assets/icons/DeleteOutline.svg) | ~~1~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
 |  | 2 | ts2 | 123 | ecid | Alex | CustId |
@@ -211,7 +213,7 @@ Customer Journey Analytics和Adobe Analytics中的其他指标可能类似。 �
 
 +++
 
-## 标识映射
+## 身份标识映射
 
 +++ Customer Journey Analytics可以使用身份映射字段吗？
 
