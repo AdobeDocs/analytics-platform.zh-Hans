@@ -4,10 +4,10 @@ title: 关键量度摘要
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: e4107e2f795b9beb7aa2802aa7ea646be6733212
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 40%
+source-wordcount: '932'
+ht-degree: 37%
 
 ---
 
@@ -22,7 +22,6 @@ ht-degree: 40%
 
 <!-- markdownlint-enable MD034 -->
 
-
 ![关键量度](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL 关键量度摘要]**&#x200B;可视化让您看到重要量度在单个时间范围内的趋势如何。 它还允许您在两个时间范围内比较量度表现。 它还具备将多个可视化图表组合为一个可视化图表的优点：
 
 * **[!UICONTROL 折线图]**&#x200B;可视化图表显示主要日期范围和比较日期范围的量度趋势
@@ -31,7 +30,9 @@ ht-degree: 40%
 
 * 度量的当前总值（[!UICONTROL **摘要编号**]）
 
-该可视化图表处理各种常见用例，包括：
+## 用例
+
+此可视化图表处理各种常见用例，包括：
 
 * 一位分析师试图了解与去年同期相比，本月机会创造情况。
 
@@ -50,11 +51,18 @@ ht-degree: 40%
    | 选项 | 描述 |
    | --- | --- |
    | **[!UICONTROL 量度]** | 选择您希望检查的量度。 支持全部量度。 |
-   | **[!UICONTROL 主要日期范围]** | 自由表格的当前日期范围。 |
-   | **[!UICONTROL 比较日期范围。]** | 要与主日期范围进行比较的日期范围。 |
-   | **[!UICONTROL 筛选器（可选）]** | 您对此摘要特别感兴趣的任何过滤器。 |
+   | **[!UICONTROL 主要日期范围]** | 自由表格的当前日期范围。<p>从数据视图中的任何可用日期范围中进行选择。</p> <p>如果要使用在可视化图表所在的面板上使用的相同日期范围，请选择&#x200B;[!UICONTROL **面板日期范围**]。</p> |
+   | **[!UICONTROL 比较日期范围。]** | 要与主要日期范围进行比较的日期范围。 |
+   | **[!UICONTROL 筛选器（可选）]** | 您对此摘要感兴趣的任何过滤器。 |
 
    {style="table-layout:auto"}
+
+   >[!NOTE]
+   >
+   >当&#x200B;[!UICONTROL **主日期范围**]&#x200B;字段设置为&#x200B;[!UICONTROL **面板日期范围**]&#x200B;时，**[!UICONTROL 比较日期范围]**&#x200B;将自动更新，具体取决于您选择的&#x200B;**[!UICONTROL 比较日期范围]**&#x200B;选项是相对于主日期范围还是固定的。
+   >
+   >* **相对：**&#x200B;如果将&#x200B;**[!UICONTROL 比较日期范围]**&#x200B;字段设置为与主日期范围相关的选项（如&#x200B;[!UICONTROL **前一天**]、[!UICONTROL **上周同日**]、[!UICONTROL **前第4周同日**]&#x200B;等），则对&#x200B;[!UICONTROL **主日期范围**]&#x200B;字段的任何更新都会导致&#x200B;**[!UICONTROL 比较日期范围]**&#x200B;自动更新为紧跟面板日期范围的时段。
+   >* **固定：**&#x200B;如果&#x200B;[!UICONTROL **比较日期范围**]&#x200B;字段设置为固定日期范围（如&#x200B;**2023年2月3日**），则对&#x200B;[!UICONTROL **主要日期范围**]&#x200B;字段或面板日期范围所做的更改不会对&#x200B;[!UICONTROL **比较日期范围**]&#x200B;产生影响。 但是，对面板日期范围的任何更新都会导致&#x200B;[!UICONTROL **主日期范围**]&#x200B;自动更新。
 
 1. 选择&#x200B;**[!UICONTROL 生成]**。
 
@@ -89,6 +97,8 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 ![显示量度、摘要变化、摘要数字和折线图的关键量度输出。](assets/key-metrics.png)
 
+查看输出时，请考虑以下事项：
+
 * **[!UICONTROL 上一时段]**&#x200B;折线图（始终以灰色显示）对应于配置步骤中的&#x200B;**[!UICONTROL 比较日期范围]**。
 
 * 如果在配置期间未指定比较日期范围，或在可视化图表设置中隐藏比较日期范围时，则仅显示主日期范围的线形图。摘要更改已隐藏。
@@ -111,17 +121,34 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 作为可视化设置的一部分，可以使用特定的关键指标摘要设置。
 
 | 设置 | 描述 |
-|---|---|
-| **[!UICONTROL 摘要显示类型]** | 在&#x200B;**[!UICONTROL 强调百分比变化]**&#x200B;或&#x200B;**[!UICONTROL 强调数值]**&#x200B;之间选择。 |
+| --- | --- |
+| **[!UICONTROL 强调百分比变化]** | 在可视化图表中心以突出的粗体显示摘要更改 |
+| **[!UICONTROL 强调数值]** | 在可视化图表中心以突出的粗体显示摘要编号 |
+| **[!UICONTROL 图例可见]** | 显示或隐藏可视化图表底部的图例 |
+| **[!UICONTROL 显示注释]** | 显示或隐藏管理员添加的注释 |
+| **[!UICONTROL 隐藏标题]** | 隐藏可视化图表的标题。 |
+| **[!UICONTROL 百分比]** | 以百分比而非数字显示可视化图表。 |
 | **[!UICONTROL 显示趋势线]** | 在可视化图表中显示趋势线。 |
-| **[!UICONTROL 在趋势线上显示最大值和最小值]** | 在趋势线上显示最大值和最小值。 |
-| **[!UICONTROL 显示比较百分比和趋势线]** | 显示与趋势线的比较百分比。 如果未选中，则两者都会隐藏。 |
-| **[!UICONTROL 数值选项]** | **[!UICONTROL 显示总数]**&#x200B;或&#x200B;**[!UICONTROL 显示数字值的原始差异]**。 |
-| **[!UICONTROL 缩写值]** | 选择&#x200B;**[!UICONTROL 缩写值]**&#x200B;智能缩写数值。 选中后，输入数字以定义缩写金额。 例如：<br/><table><tr><td>**原始值**</td><td>**缩写**</td><td>**结果**</td></tr><tr><td>12,011,141.25美元</td><td>未选择</td><td  align="right">12,011,141.25美元</td></tr><tr><td>12,011,141.25美元</td><td>已选定，设置为1</td><td align="right">1200万美元</td></tr><tr><td>12,011,141.25美元</td><td>已选定，设置为2</td><td  align="right">1200万美元</td></tr><tr><td>12,011,141.25美元</td><td>已选定，设置为2</td><td align="right">1201.1万美元</td></tr><tr><td>12,011,141.25美元</td><td>选择，设置为3</td><td align="right">1201.1万美元</td></tr></table> |
+| **[!UICONTROL 在趋势线上显示最大值和最小值]** | 在主线形图和比较线形图上显示或隐藏最小值和最大值 |
+| **[!UICONTROL 显示比较百分比和趋势线]** | 显示或隐藏比较数据。 隐藏时，比较线形图和汇总更改对象将从视图中隐藏。 |
+| **[!UICONTROL 显示总数]** | 显示或隐藏摘要编号 |
+| **[!UICONTROL 显示原始差异]** | 显示或隐藏主要日期范围和次要日期范围中量度的总值之间的原始差异 |
+| **[!UICONTROL 缩写值]** | 选择&#x200B;**[!UICONTROL 缩写值]**&#x200B;智能缩写数值。 选中后，输入数字以定义缩写金额。 例如：<br/><table><tr><td>**原始值**</td><td>**缩写**</td><td>**结果**</td></tr><tr><td>12,011,141.25美元</td><td>未选择</td><td align="right">12,011,141.25美元</td></tr><tr><td>12,011,141.25美元</td><td>已选定，设置为1</td><td align="right">1200万美元</td></tr><tr><td>12,011,141.25美元</td><td>已选定，设置为2</td><td align="right">1200万美元</td></tr><tr><td>12,011,141.25美元</td><td>已选定，设置为2</td><td align="right">1201.1万美元</td></tr><tr><td>12,011,141.25美元</td><td>选择，设置为3</td><td align="right">1201.1万美元</td></tr></table> |
+
+## 编辑可视化图表
+
+构建可视化图表后，您仍然可以编辑原始配置。
+
+1. 单击可视化右上角的铅笔图标（设置齿轮图标旁边）。
+
+   ![可视化编辑图标](assets/edit-icon.png)
+
+   现在，您将返回到原始配置视图。
+
+1. 根据需要更改量度、主要日期范围、比较日期范围或过滤器。
 
 >[!MORELIKETHIS]
 >
 >[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[可视化设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[可视化上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
->
