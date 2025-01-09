@@ -4,16 +4,24 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 532f3a30e65d715f5b5b4caea85885a13d82641c
-workflow-type: ht
-source-wordcount: '4219'
-ht-degree: 100%
+source-git-commit: c5e5963e6dc4d97de012f825bbea4445cc72d622
+workflow-type: tm+mt
+source-wordcount: '4256'
+ht-degree: 99%
 
 ---
 
 # Customer Journey Analytics - 文档更新
 
 Customer Journey Analytics 文档自创建以来进行了以下更新。
+
+## 2025
+
+| 功能 | 描述 |
+| --- | --- |
+| **2025 年 1 月** |  |
+| 使用情况量度 | 更新了有关改进的[使用情况量度](/help/connections/manage-connections.md#usage)界面的文档。 |
+
 
 ## 2024
 
@@ -23,6 +31,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | BI 扩展用例 | 关于 Power BI Desktop 和 Tableau Desktop 等 BI 工具的多个 [BI 扩展用例](/help/use-cases/data-views/bi-extension-usecases.md) 的文档。 |
 | 拼接和隐私请求 | 添加了关于 [拆线过程中即将发生的变更](/help/stitching/faq.md#frequently-asked-questions) 的通知，这些变更是由于隐私请求而产生的。 |
 | **2024 年 10 月** | |
+| 改进了使用界面 | 更新了有关改进界面的文章，以显示您在所有连接中[已摄取和可报告行的使用情况](/help/connections/manage-connections.md#usage) |
 | 共享设备 | 添加了 [用例文章](/help/use-cases/stitching/shared-devices.md) ，提供有关共享设备的上下文、如何使用拼接处理和缓解来自共享设备的数据，以及如何使用查询服务了解数据中的共享设备曝光度。 |
 | 有关 Analysis Workspace 性能中的请求因素的新信息 | [优化 Analysis Workspace 性能](/help/technotes/optimizing-performance.md)文章中新增的[请求因素](/help/technotes/optimizing-performance.md#request-factors)部分介绍了如何处理请求以及影响处理时间的各种因素。 |
 | Workspace 和组件 | 刷新了有关 Analysis Workspace 项目（项目、可视化和面板）和组件（注释、维度、（计算）量度、过滤器、日期范围、警报、计划项目和受众）的文档。 |
