@@ -4,14 +4,20 @@ title: 项目符号图表
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 9d2df264659341252c0ad02705eb4db04337ab0c
+source-git-commit: 7980286bed4f08b2ca23c0930538adb6c694344e
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 63%
+source-wordcount: '236'
+ht-degree: 62%
 
 ---
 
 # 项目符号 {#bullet}
+
+<!-- markdownlint-disable MD034 -->
+
+[!BADGE Adobe Analytics版本]{type=Informative url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html"}
+
+<!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
 
@@ -20,9 +26,6 @@ ht-degree: 63%
 >title="目标值"
 >abstract="**[!UICONTROL 高目标]**&#x200B;是您的主要目标。**[!UICONTROL 低目标]**&#x200B;和&#x200B;**[!UICONTROL 中目标]**&#x200B;创建的是低于[!UICONTROL 高目标]的范围。注意：选中&#x200B;**[!UICONTROL 百分比]**&#x200B;选项时，请以整数形式输入目标。例如：如果您的目标是百分之二十，则输入 `20`。"
 >additional-url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" text="项目符号(Adobe Analytics)"
-
-<!-- markdownlint-enable MD034 -->
-
 
 <!-- markdownlint-enable MD034 -->
 
