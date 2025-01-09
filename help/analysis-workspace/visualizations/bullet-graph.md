@@ -4,20 +4,15 @@ title: 项目符号图表
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 7980286bed4f08b2ca23c0930538adb6c694344e
+badgePremium: label="Adobe Analytics版本" url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" tooltip="本文的Adobe Analytics版本"
+source-git-commit: f13f5be06cfadc9ff875c378a0505b4f1f4469dd
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 62%
+source-wordcount: '242'
+ht-degree: 61%
 
 ---
 
 # 项目符号 {#bullet}
-
-<!-- markdownlint-disable MD034 -->
-
-[!BADGE Adobe Analytics版本]{type=Informative url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html"}
-
-<!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
 
@@ -37,7 +32,6 @@ ht-degree: 62%
 >abstract="创建可视化项目符号图表来显示量度与性能范围（目标）之间的比较。"
 
 <!-- markdownlint-enable MD034 -->
-
 
 ![GraphBullet](/help/assets/icons/GraphBullet.svg) **[!UICONTROL Bullet]**&#x200B;可视化图表显示量度与性能范围（目标）进行比较或衡量的方式。
 
