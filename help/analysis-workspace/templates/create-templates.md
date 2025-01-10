@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: d1aee7ccdcea2794efd9db5d6dbf46cba4087030
+source-git-commit: 27ce8f565688dc23a3f069a10078de55cd6da395
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1576'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,9 @@ ht-degree: 2%
    | **[!UICONTROL 描述]** | 提供模板的简短描述，描述其预期用途。 |
    | **[!UICONTROL 为何使用此模板]** | 提供简短说明，以告知组织中的人员如何使用此模板。 此说明将显示在模板的“预览”页面上。 |
    | **[!UICONTROL 渠道]** | 选择适用于此模板的任何适用渠道。 您可以选择多个渠道： **[!UICONTROL Web]**、**[!UICONTROL 移动设备]**、**[!UICONTROL 跨渠道]**、**[!UICONTROL 呼叫中心]**&#x200B;和&#x200B;**[!UICONTROL 店内]**。<p>您选择的选项决定了显示模板的位置，以及哪些过滤器适用于从“组织模板”页访问模板的用户。</p> |
-   | **[!UICONTROL 用例]** | 选择适用于此模板的任何用例。 您可以选择多个用例：**[!UICONTROL 参与]**、**[!UICONTROL 转化]**、**[!UICONTROL 受众]**&#x200B;和&#x200B;**[!UICONTROL 客户获取]**。 <p>您选择的选项决定了显示模板的位置，以及哪些过滤器适用于从“组织模板”页访问模板的用户。</p> |
+   | **[!UICONTROL 用例]** | 选择适用于此模板的任何用例。 您可以选择多个用例：**[!UICONTROL 参与]**、**[!UICONTROL 转化]**、**[!UICONTROL 受众]**、**[!UICONTROL 客户获取]**&#x200B;和&#x200B;**[!UICONTROL Journey Optimizer]**。 <p>您选择的选项决定了“组织模板”页面上的模板位置。 用户可以导航到模板，也可以按用例筛选列表。 </p><p>**注意：**&#x200B;选择&#x200B;**[!UICONTROL Journey Optimizer]**&#x200B;也会使模板在Adobe Journey Optimizer中可用。 在Journey Optimizer中，**[!UICONTROL 报表]**&#x200B;页面上有一个下拉菜单，允许用户选择此模板或默认模板。 有关详细信息，请参阅Journey Optimizer文档中的[开始使用更新的报表体验](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja)。 |
+   | **[!UICONTROL Journey Optimizer活动类型]** | 选择要与此模板关联的Journey Optimizer活动类型： **[!UICONTROL 营销活动]**、**[!UICONTROL 历程]**、**[!UICONTROL 登陆页面]**、**[!UICONTROL 报告]**&#x200B;或&#x200B;**[!UICONTROL 订阅]**。 <p>如果要将此模板与所有活动类型关联，请将此字段留空。</p><p>仅当在&#x200B;**[!UICONTROL 用例]**&#x200B;字段中选择&#x200B;**[!UICONTROL Journey Optimizer]**&#x200B;时，才会显示此字段。</p> |
+   | **[!UICONTROL Journey Optimizer活动]** | 选择要与此模板关联的Journey Optimizer活动。 <p>如果要将此模板与选定活动类型的所有活动相关联，请将此字段留空。</p><p>仅当在&#x200B;**[!UICONTROL 用例]**&#x200B;字段中选择&#x200B;**[!UICONTROL Journey Optimizer]**&#x200B;时，才会显示此字段。</p> |
    | **[!UICONTROL 标记]** | 指定要应用于模板的任何标记。 用户可按您添加的标记筛选模板列表。 |
 
 1. 选择&#x200B;[!UICONTROL **另存为模板**]。
@@ -73,6 +75,25 @@ ht-degree: 2%
    1. 选择更多图标，然后选择&#x200B;**[!UICONTROL 编辑]**&#x200B;或&#x200B;**[!UICONTROL 删除]**。
 
       ![公司模板信息卡编辑或删除](assets/company-template-card-edit-delete.png)
+
+1. 如果您正在编辑模板，请进行任何所需的编辑，然后选择&#x200B;[!UICONTROL **项目**] > **[!UICONTROL 另存为模板……]**。
+
+   ![公司模板](assets/company-template-save.png)
+
+1. 在[!UICONTROL 另存为模板]对话框中指定以下信息：
+
+   | 字段 | 描述 |
+   |---------|----------|
+   | **[!UICONTROL 名称]** | 为模板提供描述性名称。 |
+   | **[!UICONTROL 描述]** | 提供模板的简短描述，描述其预期用途。 |
+   | **[!UICONTROL 为何使用此模板]** | 提供简短说明，以告知组织中的人员如何使用此模板。 此说明将显示在模板的“预览”页面上。 |
+   | **[!UICONTROL 渠道]** | 选择适用于此模板的任何适用渠道。 您可以选择多个渠道： **[!UICONTROL Web]**、**[!UICONTROL 移动设备]**、**[!UICONTROL 跨渠道]**、**[!UICONTROL 呼叫中心]**&#x200B;和&#x200B;**[!UICONTROL 店内]**。 如果未选择任何渠道，则模板将包含在所有渠道中。<p>您选择的选项决定了显示模板的位置，以及哪些过滤器适用于从“组织模板”页访问模板的用户。</p> |
+   | **[!UICONTROL 用例]** | 选择适用于此模板的任何用例。 您可以选择多个用例：**[!UICONTROL 参与]**、**[!UICONTROL 转化]**、**[!UICONTROL 受众]**、**[!UICONTROL 客户获取]**&#x200B;和&#x200B;**[!UICONTROL Journey Optimizer]**。 <p>您选择的选项决定了“组织模板”页面上的模板位置。 用户可以导航到模板，也可以按用例筛选列表。 </p><p>**注意：**&#x200B;选择&#x200B;**[!UICONTROL Journey Optimizer]**&#x200B;也会使模板在Adobe Journey Optimizer中可用。 在Journey Optimizer中，**[!UICONTROL 报表]**&#x200B;页面上有一个下拉菜单，允许用户选择此模板或默认模板。 有关详细信息，请参阅Journey Optimizer文档中的[开始使用更新的报表体验](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja)。 |
+   | **[!UICONTROL Journey Optimizer活动类型]** | 选择要与此模板关联的Journey Optimizer活动类型： **[!UICONTROL 营销活动]**、**[!UICONTROL 历程]**、**[!UICONTROL 登陆页面]**、**[!UICONTROL 报告]**&#x200B;或&#x200B;**[!UICONTROL 订阅]**。 <p>如果要将此模板与所有活动类型关联，请将此字段留空。</p><p>仅当在&#x200B;**[!UICONTROL 用例]**&#x200B;字段中选择&#x200B;**[!UICONTROL Journey Optimizer]**&#x200B;时，才会显示此字段。</p> |
+   | **[!UICONTROL Journey Optimizer活动]** | 选择要与此模板关联的Journey Optimizer活动。 <p>如果要将此模板与选定活动类型的所有活动相关联，请将此字段留空。</p><p>仅当在&#x200B;**[!UICONTROL 用例]**&#x200B;字段中选择&#x200B;**[!UICONTROL Journey Optimizer]**&#x200B;时，才会显示此字段。</p> |
+   | **[!UICONTROL 标记]** | 指定要应用于模板的任何标记。 用户可按您添加的标记筛选模板列表。 |
+
+1. 选择&#x200B;[!UICONTROL **另存为模板**]。
 
 ## 重命名、标记或批准模板
 
