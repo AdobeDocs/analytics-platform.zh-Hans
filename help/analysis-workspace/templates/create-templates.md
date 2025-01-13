@@ -6,7 +6,7 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: 27ce8f565688dc23a3f069a10078de55cd6da395
+source-git-commit: 15b278261cc24da46b209d1ce23f38745c06030b
 workflow-type: tm+mt
 source-wordcount: '1576'
 ht-degree: 2%
@@ -123,7 +123,7 @@ ht-degree: 2%
 
 ## 将缺少的组件添加到给定模板的数据视图
 
-默认情况下，Adobe提供的某些模板将无法使用，因为它们包含的数据视图中没有的组件。
+默认情况下，无法使用由Adobe提供的某些模板，因为它们包含的数据视图中没有的组件。
 
 对于每个缺少的组件，您的数据视图中都提供了匹配的上下文标签。 您需要将匹配的上下文标签添加到数据视图中已存在的组件，或者您需要将新组件添加到数据视图并将上下文标签添加到其中。
 
