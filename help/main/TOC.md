@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 06e4346effcde3e2bec66cfdba801fc2420dcc81
-workflow-type: ht
-source-wordcount: '1098'
+source-git-commit: d05990b0eac6b08530b8526b3b48b722139be018
+workflow-type: tm+mt
+source-wordcount: '1099'
 ht-degree: 100%
 
 ---
@@ -79,7 +79,7 @@ ht-degree: 100%
       + [比较数据处理](../getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [环境](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
       + [分析处理与数据准备](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
-      + [Analytics 标识](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
+      + [Analytics 身份标识](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
    + [Adobe Analytics 的演变](../getting-started/aa-to-cja.md)
    + [适用于 Adobe Analytics 用户的用户指南](../getting-started/aa-to-cja-user.md)
 
@@ -192,6 +192,7 @@ ht-degree: 100%
       + [水平条形图（堆叠）](../analysis-workspace/visualizations/horizontal-bar.md)
       + [关键量度摘要](../analysis-workspace/visualizations/key-metric.md)
       + [线形图](../analysis-workspace/visualizations/line.md)
+      + [地图](/help/analysis-workspace/visualizations/map.md)
       + [散点图](../analysis-workspace/visualizations/scatterplot.md)
       + [摘要数字和变化](../analysis-workspace/visualizations/summary-number-change.md)
       + [节头](/help/analysis-workspace/visualizations/section-header.md)
