@@ -4,11 +4,10 @@ title: 项目符号图表
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-badgePremium: label="Adobe Analytics版本" url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" tooltip="选择可查看本文的Adobe Analytics版本。"
-source-git-commit: 896c7be6f1cfa4b0b714eb08ac47c1b89edecb79
+source-git-commit: 9494d13d0f2d0205d2929796f5f0d8299fdefbc5
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 60%
+source-wordcount: '249'
+ht-degree: 59%
 
 ---
 
@@ -20,7 +19,6 @@ ht-degree: 60%
 >id="workspace_bullet_goalvalue"
 >title="目标值"
 >abstract="**[!UICONTROL 高目标]**&#x200B;是您的主要目标。**[!UICONTROL 低目标]**&#x200B;和&#x200B;**[!UICONTROL 中目标]**&#x200B;创建的是低于[!UICONTROL 高目标]的范围。注意：选中&#x200B;**[!UICONTROL 百分比]**&#x200B;选项时，请以整数形式输入目标。例如：如果您的目标是百分之二十，则输入 `20`。"
->additional-url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" text="项目符号(Adobe Analytics)"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -32,6 +30,8 @@ ht-degree: 60%
 >abstract="创建可视化项目符号图表来显示量度与性能范围（目标）之间的比较。"
 
 <!-- markdownlint-enable MD034 -->
+
+*本文以&#x200B;**Customer Journey Analytics**记录项目符号可视化图表。 查看本文的&#x200B;**AdobeAnaytics**版本的[项目符号](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph)。*
 
 ![GraphBullet](/help/assets/icons/GraphBullet.svg) **[!UICONTROL Bullet]**&#x200B;可视化图表显示量度与性能范围（目标）进行比较或衡量的方式。
 
