@@ -4,16 +4,79 @@ title: 智能题注
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: c65efad313df660467f5738d3fcbbb327060a502
+source-git-commit: de0eca21fa1b4ac71a8273676e851b596cf911a8
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 5%
+source-wordcount: '771'
+ht-degree: 20%
 
 ---
 
-# 智能题注
+# 智能题注 {#intelligent-captions}
 
-智能题注使用先进的机器学习和生成式 AI 为工作区可视化提供有价值的自然语言见解。初始版本为[折线图](line.md)可视化图表提供了自动生成的见解。 随后将提供其他可视化图表。
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_area"
+>title="智能字幕：区域"
+>abstract="以自然语言的格式生成见解，帮助您更轻松地理解和解释此可视化内容的数据。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_bar"
+>title="智能字幕：条形图"
+>abstract="以自然语言的格式生成见解，帮助您更轻松地理解和解释此可视化内容的数据。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_donut"
+>title="智能字幕：圆环图"
+>abstract="以自然语言的格式生成见解，帮助您更轻松地理解和解释此可视化内容的数据。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_horizontalbar"
+>title="智能字幕：水平条形图"
+>abstract="以自然语言的格式生成见解，帮助您更轻松地理解和解释此可视化内容的数据。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_line"
+>title="智能字幕：行"
+>abstract="以自然语言的格式生成见解，帮助您更轻松地理解和解释此可视化内容的数据。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_fallout"
+>title="智能字幕：流失"
+>abstract="以自然语言的格式生成见解，帮助您更轻松地理解和解释此可视化内容的数据。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_flow"
+>title="智能字幕：流量"
+>abstract="以自然语言的格式生成见解，帮助您更轻松地理解和解释此可视化内容的数据。"
+
+<!-- markdownlint-enable MD034 -->
+
+智能题注使用先进的机器学习和生成式 AI 为 Workspace 可视化提供有价值的自然语言洞察。初始版本为[折线图](line.md)可视化图表提供了自动生成的见解。 随后将提供其他可视化图表。
 
 智能字幕面向：
 
