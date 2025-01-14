@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 role: Admin
-source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
+source-git-commit: a530738bb02888d637e5ff4edaa1aa2535a9034c
 workflow-type: tm+mt
-source-wordcount: '2016'
-ht-degree: 8%
+source-wordcount: '2043'
+ht-degree: 10%
 
 ---
 
@@ -24,6 +24,15 @@ ht-degree: 8%
 
 >[!CONTEXTUALHELP]
 >id="cja_tools_reportingactivitymanager_connections"
+>title="连接"
+>abstract="此表显示您有权管理报告活动的连接。表格的每一列都提供了有关每个连接的信息。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="tools_reportingactivitymanager_connections"
 >title="连接"
 >abstract="此表显示您有权管理报告活动的连接。表格的每一列都提供了有关每个连接的信息。"
 
@@ -155,7 +164,7 @@ ht-degree: 8%
 
 选择&#x200B;[!UICONTROL **请求**]&#x200B;选项卡时，表中提供以下列：
 
-| 栏目 | 描述 |
+| 列 | 描述 |
 | --- | --- |
 | [!UICONTROL **请求ID**] | 可用于故障排除的唯一ID。 要复制ID，请选择请求，然后选择选项&#x200B;[!UICONTROL **复制请求ID**]。 |
 | [!UICONTROL **时间运行**] | 请求已运行多长时间。 |
@@ -176,7 +185,7 @@ ht-degree: 8%
 
 选择&#x200B;[!UICONTROL **用户**]&#x200B;选项卡时，表中提供以下列：
 
-| 栏目 | 描述 |
+| 列 | 描述 |
 | --- | --- |
 | [!UICONTROL **用户**] | 发起请求的用户。 如果此列的值为&#x200B;[!UICONTROL **无法识别**]，则意味着用户所在的登录公司您没有管理权限。 |
 | [!UICONTROL **请求数**] | 用户发起的请求数。 |
@@ -193,7 +202,7 @@ ht-degree: 8%
 
 选择&#x200B;[!UICONTROL **项目**]&#x200B;选项卡时，表中提供以下列：
 
-| 栏目 | 描述 |
+| 列 | 描述 |
 | --- | --- |
 | [!UICONTROL **项目**] | 发起请求的项目。 |
 | [!UICONTROL **请求数**] | 与项目关联的请求数。 |
@@ -210,7 +219,7 @@ ht-degree: 8%
 
 选择&#x200B;[!UICONTROL **应用程序**]&#x200B;选项卡时，表中有以下列：
 
-| 栏目 | 描述 |
+| 列 | 描述 |
 | --- | --- |
 | [!UICONTROL **应用程序**] | 发起请求的应用程序。 |
 | [!UICONTROL **请求数**] | 与应用程序关联的请求数。 |
