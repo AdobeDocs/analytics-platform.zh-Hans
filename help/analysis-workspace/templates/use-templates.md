@@ -3,12 +3,10 @@ description: 有关如何在Analysis Workspace中使用默认模板的概述。
 title: 使用模板
 feature: Workspace Basics
 role: User, Admin
-hide: true
-hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: c5c05e17ad3b3e2bbf643d47bd58cde5ac2de0cb
 workflow-type: tm+mt
-source-wordcount: '19285'
+source-wordcount: '19294'
 ht-degree: 73%
 
 ---
@@ -65,7 +63,9 @@ Analysis Workspace中的模板（或公司模板）可快速分析最常见的�
 
    >[!NOTE]
    >
-   >   管理员必须先将这些缺失组件的所需上下文标签添加到数据视图中，然后才能使用这些模板。 有关详细信息，请参阅[使用模板](/help/analysis-workspace/templates/create-templates.md)中的[将缺少的组件添加到给定模板](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template)的数据视图中。
+   >管理员必须先将这些缺失组件的所需上下文标签添加到数据视图中，然后才能使用这些模板。 有关详细信息，请参阅[使用模板](/help/analysis-workspace/templates/create-templates.md)中的[将缺少的组件添加到给定模板](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template)的数据视图中。
+   >
+   >有关上下文标签的详细信息，请参阅[组件设置](/help/data-views/component-settings/overview.md)。
 
    1. 选择过滤器图标。
 
