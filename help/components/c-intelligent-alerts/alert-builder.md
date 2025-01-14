@@ -4,7 +4,7 @@ title: 创建警报
 feature: Workspace Basics
 role: User, Admin
 exl-id: 5b4b2e2b-0a73-48df-a40c-98d2c47f94c8
-source-git-commit: a757ea4fc9bf8b13a8ce3001cf8639245d213e1c
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 21%
@@ -16,7 +16,7 @@ ht-degree: 21%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_alerts_timegranularity"
+>id="components_alerts_timegranularity"
 >title="时间粒度"
 >abstract="时间粒度是指检查警报的频率以及将包含的内容"
 

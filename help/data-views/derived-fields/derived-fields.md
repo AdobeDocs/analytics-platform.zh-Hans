@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 64df8670418524be8879aa6362bb8b7c229025b6
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '8841'
 ht-degree: 17%
@@ -17,7 +17,7 @@ ht-degree: 17%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields"
+>id="dataview_derivedfields"
 >title="派生字段"
 >abstract="派生字段允许您通过可自定义的规则生成器动态定义数据操作。然后，您可以将该派生字段用作工作区中的组件（度量或维度），甚至可以在“数据”视图中进一步定义为组件。"
 
@@ -46,7 +46,7 @@ ht-degree: 17%
 
 |  | 名称 | 描述 |
 |---------|----------|--------|
-| 1 | **选择器** | 使用选择器区域选择您的函数、函数模板、架构字段或标准字段并将它们拖放到规则生成器中。 <br/>使用下拉菜单选择： <br/>![函数](assets/Smock_Function_18_N.svg) [!UICONTROL 函数] — 列出可用的[函数](#function-reference)，</br>![函数模板图标](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL 函数模板] — 列出可用的[函数模板](#function-templates)，<br/>![架构字段图标](assets/Smock_Folder_18_N.svg) [!UICONTROL 架构字段] — 列出数据集类别（事件、配置文件、查询）和以前定义的派生字段中的可用字段，以及<br/>![标准字段图标](assets/Smock_DragHandle_18_N.svg) [!UICONTROL 标准字段] — 可用字段例如Platform数据集ID)。 选择器中只显示字符串和数字标准字段。 如果函数支持其他数据类型，则可以为规则界面中的值或字段选择具有这些其他数据类型的标准字段。<br/>您可以使用![搜索图标](assets/Smock_Search_18_N.svg)搜索框搜索功能、功能模板、架构和标准字段。 <br/>您可以通过选择![筛选图标](assets/Smock_Filter_18_N.svg)筛选来筛选选定的对象列表，并在[!UICONTROL 按]筛选字段中指定筛选器。 您可以使用每个筛选器的![关闭图标](assets/CrossSize75.svg)轻松删除筛选器。 |
+| 1 | **选择器** | 使用选择器区域选择您的函数、函数模板、架构字段或标准字段并将它们拖放到规则生成器中。 <br/>使用下拉菜单选择： <br/>![函数](assets/Smock_Function_18_N.svg) [!UICONTROL 函数] — 列出可用的[函数](#function-reference)，</br>![函数模板图标](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL 函数模板] — 列出可用的[函数模板](#function-templates)，<br/>![架构字段图标](assets/Smock_Folder_18_N.svg) [!UICONTROL 架构字段] — 列出数据集类别（事件、配置文件、查询）和以前定义的派生字段中的可用字段，以及<br/>![标准字段图标](assets/Smock_DragHandle_18_N.svg) [!UICONTROL 标准字段] — 可用字段（如Platform数据集ID）。 选择器中只显示字符串和数字标准字段。 如果函数支持其他数据类型，则可以为规则界面中的值或字段选择具有这些其他数据类型的标准字段。<br/>您可以使用![搜索图标](assets/Smock_Search_18_N.svg)搜索框搜索功能、功能模板、架构和标准字段。 <br/>您可以通过选择![筛选图标](assets/Smock_Filter_18_N.svg)筛选来筛选选定的对象列表，并在[!UICONTROL 按]筛选字段中指定筛选器。 您可以使用每个筛选器的![关闭图标](assets/CrossSize75.svg)轻松删除筛选器。 |
 | 2 | **规则生成器** | 您可以使用一个或多个规则按顺序构建派生字段。 规则是函数的特定实现，因此始终只与一个函数关联。 通过将函数拖放到规则生成器中来创建规则。 函数类型确定规则的接口。<br/>有关详细信息，请参阅[规则接口](#rule-interface)。 <br/>您可以在规则生成器中已可用的规则开始、结束或之间插入函数。 规则生成器中的最后一个规则可确定派生字段的最终输出。 |
 | 3 | **[!UICONTROL **&#x200B;字段设置&#x200B;**]** | 您可以命名和描述派生字段并检查其字段类型。 |
 | 4 | **[!UICONTROL **&#x200B;最终输出&#x200B;**]** | 此区域根据过去30天的数据以及您在规则生成器中对派生字段所做的更改，显示输出值的动态更新预览。 |
@@ -430,7 +430,7 @@ ht-degree: 17%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_casewhen"
+>id="dataview_derivedfields_casewhen"
 >title="Case When"
 >abstract="此函数提供了根据一个或多个字段中定义的标准应用条件的能力。然后使用这些标准根据条件序列来定义新派生字段中的值。"
 
@@ -670,7 +670,7 @@ Customer Journey Analytics使用以下默认容器模型：
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_classify"
+>id="dataview_derivedfields_classify"
 >title="分类"
 >abstract="此函数提供了定义一组值的功能，这些值通过文本输入被相应的值替换。"
 
@@ -815,7 +815,7 @@ Customer Journey Analytics使用以下默认容器模型：
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_concatenate"
+>id="dataview_derivedfields_concatenate"
 >title="拼接"
 >abstract="此函数提供了将两个或多个字段、派生字段或用户输入的字符串值组合到具有定义的分隔符的单个字段中的能力。"
 
@@ -902,7 +902,7 @@ Customer Journey Analytics使用以下默认容器模型：
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_deduplicate"
+>id="dataview_derivedfields_deduplicate"
 >title="删除重复数据"
 >abstract="此函数可以配置字段，以仅在线程或人员级别非重复地计算值。此外，可以使用重复数据删除 ID 来确保基于给定的 ID（例如购买 ID），仅使用一个值（第一个实例或最后一个实例）。"
 
@@ -997,7 +997,7 @@ Customer Journey Analytics使用以下默认容器模型：
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_findandreplace"
+>id="dataview_derivedfields_findandreplace"
 >title="查找和替换"
 >abstract="此函数提供了在选定字段中查找所有值并将这些值替换为新派生字段中的不同值的功能。"
 
@@ -1077,7 +1077,7 @@ Customer Journey Analytics使用以下默认容器模型：
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_lookup"
+>id="dataview_derivedfields_lookup"
 >title="查询"
 >abstract="此函数提供了利用数据集之间的匹配键来使用查找数据集中的字段的能力。"
 
@@ -1138,7 +1138,7 @@ Customer Journey Analytics使用以下默认容器模型：
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_lowercase"
+>id="dataview_derivedfields_lowercase"
 >title="小写字母"
 >abstract="该函数可将整个字符串文本转换为小写值。"
 
@@ -1199,7 +1199,7 @@ Customer Journey Analytics使用以下默认容器模型：
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_math"
+>id="dataview_derivedfields_math"
 >title="数学"
 >abstract="该函数提供对字段执行数学运算的能力。该函数可用于执行基本算术运算，例如加法、减法、乘法和除法。"
 
@@ -1290,7 +1290,7 @@ Customer Journey Analytics使用以下默认容器模型：
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_mergefields"
+>id="dataview_derivedfields_mergefields"
 >title="合并字段"
 >abstract="此函数可以从两个不同的字段中获取值，并在单个维度中包含其各自的值。该规则首先会检查第一个值是否已设置。如果没有，那么它会使用第二个值，依此类推。"
 
@@ -1366,7 +1366,7 @@ Customer Journey Analytics使用以下默认容器模型：
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_nextprevious"
+>id="dataview_derivedfields_nextprevious"
 >title="下一个或上一个"
 >abstract="此函数可以查看针对给定字段收集的下一个或上一个值。"
 
@@ -1448,7 +1448,7 @@ Customer Journey Analytics使用以下默认容器模型：
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_regexreplace"
+>id="dataview_derivedfields_regexreplace"
 >title="正则表达式替换"
 >abstract="此函数提供使用正则表达式提取部分字符串的功能。"
 
@@ -1555,7 +1555,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_split"
+>id="dataview_derivedfields_split"
 >title="拆分"
 >abstract="利用此函数，可以根据分隔符将一个字段拆分为多个字段。"
 
@@ -1657,7 +1657,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_summarize"
+>id="dataview_derivedfields_summarize"
 >title="总结"
 >abstract="此函数提供在事件、线程或人员级别聚合值的能力。根据选择字段的字段类型，将会提供不同的选项。"
 
@@ -1735,7 +1735,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_trim"
+>id="dataview_derivedfields_trim"
 >title="修剪"
 >abstract="此函数可以从字符串的开头或结尾修剪空格或特殊字符。此外，还可以指定用于返回值的字符数，无论是从字符串的前面还是末尾。"
 
@@ -1857,7 +1857,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_urlparse"
+>id="dataview_derivedfields_urlparse"
 >title="URL 解析"
 >abstract="此函数可用于解析出 URL 的不同部分，包括主机、路径或查询参数。"
 

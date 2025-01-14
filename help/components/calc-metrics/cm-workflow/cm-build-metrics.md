@@ -3,7 +3,7 @@ description: 计算量度生成器提供一个画布，可以将维度、量度�
 title: 生成计算量度
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 37209097327ffb142068b5df184c07c7c8021442
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '1526'
 ht-degree: 11%
@@ -15,7 +15,7 @@ ht-degree: 11%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_productcompatibility"
+>id="components_calculatedmetrics_productcompatibility"
 >title="产品兼容性"
 >abstract="表示此计算量度可用于 Customer Journey Analytics，例如 Analysis Workspace、Report Builder 等。某些计算量度无法与试验相结合。"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="在实验中使用计算量度。"
@@ -25,7 +25,7 @@ ht-degree: 11%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_externalid"
+>id="components_calculatedmetrics_externalid"
 >title="外部 ID"
 >abstract="更改外部 ID 可能会影响计算量度在外部源（例如商业智能工具）中的显示方式"
 
@@ -46,13 +46,13 @@ ht-degree: 11%
 
 >[!ENDTABS]
 
-1. 指定以下详细信息（![必填](/help/assets/icons/Required.svg)为必填项）：
+1. 指定以下详细信息（![Required](/help/assets/icons/Required.svg)为必要项）：
 
    | 元素 | 描述 |
    | --- | --- |
    | **[!UICONTROL 数据视图]** | 您可以选择计算指标的数据视图。  您定义的计算指标基于所选的数据视图在Workspace项目中可用。 |
    | **[!UICONTROL 仅用于项目的量度]** | 一个信息框，用于说明该量度仅在创建它的项目中可见，并且不会将该量度添加到组件列表。 启用&#x200B;**[!UICONTROL 使此量度对所有项目都可用，并将其添加到组件列表]**&#x200B;以更改该设置。 仅当您使用&#x200B;**[!UICONTROL 从所选内容创建指标]**&#x200B;在Workspace中创建指标并选择函数（如&#x200B;**[!UICONTROL 平均值]**&#x200B;或&#x200B;**[!UICONTROL 中间值]**）时，此信息框才可见。 稍后使用[组件信息](/help/components/use-components-in-workspace.md#component-info)编辑该创建的量度。 |
-   | **[!UICONTROL 标题]** ![必填](/help/assets/icons/Required.svg) | 命名计算量度，例如`Conversion Rate`。 |
+   | **[!UICONTROL 标题]** ![Required](/help/assets/icons/Required.svg) | 命名计算量度，例如`Conversion Rate`。 |
    | **[!UICONTROL 外部ID]** ![必需](/help/assets/icons/Required.svg) | 使用外部BI工具和BI扩展时计算量度的名称。 除非您覆盖该值，否则该值将自动定义为`undefined_xxx`。 |
    | **[!UICONTROL 描述]** | 提供筛选器的说明，例如`Calculated metric to define the conversion rate.`。无需说明计算量度的公式，因为该公式已在[!UICONTROL 摘要]中自动可用。 |
    | **[!UICONTROL 格式]** | 为计算量度选择格式：您可以选择介于&#x200B;**[!UICONTROL Decimal]**、**[!UICONTROL Time]**、**[!UICONTROL Percent]**&#x200B;和&#x200B;**[!UICONTROL Currency]**&#x200B;之间。 |

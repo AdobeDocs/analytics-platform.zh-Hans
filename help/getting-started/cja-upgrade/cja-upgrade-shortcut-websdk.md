@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 83927cf0-b3b4-42b4-9ca5-0c81c091383f
-source-git-commit: daa07b603caa613ca49b61c2e8e461d558459f57
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 9%
+source-wordcount: '690'
+ht-degree: 15%
 
 ---
 
@@ -29,9 +29,18 @@ ht-degree: 9%
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="migrate_aa_to_websdk"
+>title="迁移您的 Analytics 实施，以使用 Web SDK"
+>abstract="您可以通过数据对象以 AppMeasurement 格式发送所有变量，而不是通过 XDM 对象发送数据。此快捷方式允许您继续使用 AppMeasurement 逻辑将数据发送到 Platform。"
+
+<!-- markdownlint-enable MD034 -->
+
 升级到Customer Journey Analytics时，Adobe[建议Experience PlatformWeb SDK](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)的新实现。 但是，根据时间表和资源限制等多个因素，建议的升级步骤可能对您的组织不实用。
 
-如果您的Adobe Analytics实施AppMeasurement或Analytics扩展，则提供了一个升级快捷方式，通过该方式，您可以迁移Adobe Analytics实施以使用Adobe Experience Platform Web SDK在将数据发送到Customer Journey Analytics之前开始向Edge Network和Adobe Analytics发送数据。
+如果您的Adobe Analytics实施AppMeasurement或Analytics扩展，则提供了一个升级快捷方式，通过该方式，您可以迁移Adobe Analytics实施以使用Adobe Experience Platform Web SDK开始向Edge Network和Adobe Analytics发送数据，然后再将数据发送到Customer Journey Analytics。
 
 ## 优缺点
 
@@ -45,7 +54,7 @@ ht-degree: 9%
 
 ## 基本步骤
 
-如果您决定使用升级快捷方式迁移AppMeasurement或Analytics扩展实施以使用Web SDK，则会在[Adobe Analytics中为贵组织动态生成的步骤添加一个新步骤，以Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
+如果决定使用升级快捷方式迁移AppMeasurement或Analytics扩展实施以使用Web SDK，则会在[Adobe Analytics中为贵组织动态生成的步骤添加一个新步骤，以Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
 
 迁移AppMeasurement或Analytics扩展实施以使用Web SDK的基本步骤如下：
 

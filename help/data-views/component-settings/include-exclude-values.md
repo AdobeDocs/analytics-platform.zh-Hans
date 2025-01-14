@@ -5,7 +5,7 @@ exl-id: 1a3f8ab5-bd82-415a-989a-f93e6714df4b
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 555dbd5c84fbec7c71b328229da5196fe2e64b76
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 74%
@@ -17,7 +17,7 @@ ht-degree: 74%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_metric_includeexcludevalues"
+>id="dataview_component_metric_includeexcludevalues"
 >title="包括/排除值"
 >abstract="将量度只筛选到具有符合特定条件的数量值。"
 
@@ -26,7 +26,7 @@ ht-degree: 74%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_dimension_includeexcludevalues"
+>id="dataview_component_dimension_includeexcludevalues"
 >title="包括/排除值"
 >abstract="缩小维度以仅包含符合特定条件的值。包含和排除发生在报告中的分配和过滤之前。<br/><br/>**参数&#x200B;**<br/>**区分大小写**：确定下方的筛选逻辑是否区分大小写。"
 

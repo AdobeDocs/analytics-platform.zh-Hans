@@ -4,7 +4,7 @@ title: 构建过滤器
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 388708526204f0854b486643fa58d1f8504575aa
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '1494'
 ht-degree: 10%
@@ -16,7 +16,7 @@ ht-degree: 10%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_createaudience"
+>id="components_filters_createaudience"
 >title="创建受众"
 >abstract="可以从过滤器创建受众并与 Adobe Experience Platform 共享以进行激活。"
 
@@ -25,7 +25,7 @@ ht-degree: 10%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_datapreview"
+>id="components_filters_datapreview"
 >title="数据预览"
 >abstract="将此过滤器的数据与数据视图的数据进行比较。预览百分比基于&#x200B;**过去 90 天**&#x200B;数据视图中的总数。<br><br/>如果未加载预览，则您的连接有可能仍在进行回填。"
 
@@ -158,7 +158,7 @@ ht-degree: 10%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_attribution_repeating"
+>id="components_filters_attribution_repeating"
 >title="重复"
 >abstract="包括维度的实例及持续值。"
 
@@ -167,7 +167,7 @@ ht-degree: 10%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_attribution_instance"
+>id="components_filters_attribution_instance"
 >title="实例"
 >abstract="包括维度的实例及持续值。"
 
@@ -176,7 +176,7 @@ ht-degree: 10%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_attribution_nonrepeatinginstance"
+>id="components_filters_attribution_nonrepeatinginstance"
 >title="非重复实例"
 >abstract="包括维度的独特（非重复）实例"
 

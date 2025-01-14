@@ -4,7 +4,7 @@ title: 数据词典概述
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 76%
@@ -16,7 +16,7 @@ ht-degree: 76%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_component_datadictionary"
+>id="component_datadictionary"
 >title="数据字典"
 >abstract="数据字典能够帮助用户和管理员跟踪并更好地理解 Analytics 环境中的组件。<br/>Analytics 管理员负责为用户整理数据字典中每个组件的信息。"
 

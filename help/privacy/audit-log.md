@@ -4,7 +4,7 @@ description: 了解如何查看和管理Customer Journey Analytics审核日志�
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 66%
@@ -16,7 +16,7 @@ ht-degree: 66%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_tools_auditlog_userid"
+>id="tools_auditlog_userid"
 >title="用户 ID"
 >abstract="在包含所需用户的日志条目上单击“信息”按钮即可找到用户 ID。"
 
@@ -25,7 +25,7 @@ ht-degree: 66%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_tools_auditlog_componentid"
+>id="tools_auditlog_componentid"
 >title="组件 ID"
 >abstract="在包含所需组件的日志条目上单击“信息”按钮即可找到组件 ID。"
 
