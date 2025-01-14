@@ -4,9 +4,9 @@ title: 使用模板
 feature: Workspace Basics
 role: User, Admin
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: c5c05e17ad3b3e2bbf643d47bd58cde5ac2de0cb
+source-git-commit: 198d2670b2008cb669433753d5bfedd90f71c220
 workflow-type: tm+mt
-source-wordcount: '1599'
+source-wordcount: '1630'
 ht-degree: 2%
 
 ---
@@ -191,3 +191,10 @@ ht-degree: 2%
 与Adobe提供的模板一样，组织内的用户可以访问管理员创建的模板。
 
 有关如何访问公司模板的信息，请参阅[使用模板](/help/analysis-workspace/templates/use-templates.md)中的[访问和运行模板](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template)。
+
+## 隐藏“模板”选项卡
+
+管理员可以为其组织内的所有用户隐藏“模板”选项卡。
+
+1. 转到&#x200B;**[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL 组件]** > **[!UICONTROL 首选项]** > **[!UICONTROL 公司]**。
+1. 选择&#x200B;**[!UICONTROL 隐藏模板选项卡]**&#x200B;的选项。
