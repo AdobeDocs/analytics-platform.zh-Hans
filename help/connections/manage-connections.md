@@ -9,7 +9,7 @@ role: Admin
 source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '4023'
-ht-degree: 24%
+ht-degree: 26%
 
 ---
 
@@ -245,7 +245,7 @@ ht-degree: 24%
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_otherdatasets"
 >title="其他数据集"
->abstract="在2024年9月之前的月份中，数据收集在数据集级别，并显示为&#x200B;*其他数据集*，以明确说明。 从 2024 年 9 月起，数据将在细粒度的数据集层面进行收集，*其他数据集*&#x200B;将不再出现。"
+>abstract="对于 2024 年 9 月之前的月份，数据是在数据集层面收集的，为了清楚起见，显示为&#x200B;*其他数据集*。从 2024 年 9 月起，数据将在细粒度的数据集层面进行收集，*其他数据集*&#x200B;将不再出现。"
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -320,7 +320,7 @@ ht-degree: 24%
 >[!CONTEXTUALHELP]
 >id="connections_usage_otherdatasets"
 >title="其他数据集"
->abstract="在2024年9月之前的月份中，数据收集在数据集级别，并显示为&#x200B;*其他数据集*，以明确说明。 从 2024 年 9 月起，数据将在细粒度的数据集层面进行收集，*其他数据集*&#x200B;将不再出现。"
+>abstract="对于 2024 年 9 月之前的月份，数据是在数据集层面收集的，为了清楚起见，显示为&#x200B;*其他数据集*。从 2024 年 9 月起，数据将在细粒度的数据集层面进行收集，*其他数据集*&#x200B;将不再出现。"
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -426,7 +426,7 @@ ht-degree: 24%
 
   您可以使用&#x200B;**[!UICONTROL 详细信息细分]**&#x200B;表按连接、数据集、沙盒和标记查看详细量度。 数据集是使用id而不是名称进行报告的，因为数据集名称可以在报告期间进行修改。 使用ID报告未知数据集或连接。
 
-  在2024年9月之前的月份中，数据收集在数据集级别，并显示为[!UICONTROL 其他数据集]，以明确说明。 从2024年9月开始，在粒度数据集级别收集数据，并且[!UICONTROL 其他数据集]不再显示。
+  对于 2024 年 9 月之前的月份，数据是在数据集层面收集的，为了清楚起见，显示为[!UICONTROL 其他数据集]。从2024年9月开始，在粒度数据集级别收集数据，并且[!UICONTROL 其他数据集]不再显示。
 
    * 要更改划分，请选择&#x200B;**[!UICONTROL 查看依据]**&#x200B;和&#x200B;**[!UICONTROL 划分依据]**&#x200B;的组合。
 
