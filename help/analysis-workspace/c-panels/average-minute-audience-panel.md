@@ -4,10 +4,10 @@ description: 如何使用和解读Analysis Workspace中的“媒体平均受众�
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-source-git-commit: 5121f0d395674ca3b9fed19278c5c0253354e9cc
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '1787'
-ht-degree: 30%
+source-wordcount: '1815'
+ht-degree: 29%
 
 ---
 
@@ -31,6 +31,11 @@ ht-degree: 30%
 
 <!-- markdownlint-enable MD034 -->
 
+>[!BEGINSHADEBOX]
+
+*本文以&#x200B;**Customer Journey Analytics**记录了“媒体平均受众访问分钟数”面板。 请参阅本文的&#x200B;**Adobe Analytics**版本的[媒体平均受众访问分钟数面板](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel)。*
+
+>[!ENDSHADEBOX]
 
 >[!NOTE]
 >

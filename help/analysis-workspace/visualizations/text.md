@@ -4,10 +4,10 @@ title: 文本
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 29%
+source-wordcount: '263'
+ht-degree: 27%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 29%
 >abstract="向您的项目添加用户定义的富文本可视化图表。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*本文以&#x200B;**Customer Journey Analytics**记录文本可视化图表。 查看本文的&#x200B;**Adobe Analytics**版本的[文本](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/text)。*
+
+>[!ENDSHADEBOX]
 
 
 若要向Workspace项目添加用户定义的富文本，您可以使用![文本](/help/assets/icons/Text.svg) **[!UICONTROL 文本]**&#x200B;可视化图表，或者将说明用于可视化图表和面板。

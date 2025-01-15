@@ -4,10 +4,10 @@ title: 空白面板
 feature: Panels
 exl-id: b65d0031-b4c0-4400-8d67-9416f3c993b6
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
-workflow-type: ht
-source-wordcount: '224'
-ht-degree: 100%
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 91%
 
 ---
 
@@ -22,6 +22,13 @@ ht-degree: 100%
 >additional-url="https://www.youtube.com/watch?v=SYaioiwBTrk" text="Analysis Workspace 中的面板"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*本文以&#x200B;**Customer Journey Analytics**记录空白面板。 查看本文的&#x200B;**Adobe Analytics**版本的[空白面板](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/blank-panel)。*
+
+>[!ENDSHADEBOX]
 
 
 **[!UICONTROL 空白面板]**&#x200B;显示了您可以创建的面板（由![WebPage](/help/assets/icons/WebPage.svg)表示）或可视化选项，以构建完全自定义的分析。

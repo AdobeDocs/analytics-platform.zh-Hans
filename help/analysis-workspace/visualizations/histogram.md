@@ -4,10 +4,10 @@ title: 直方图
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 37%
+source-wordcount: '351'
+ht-degree: 35%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 37%
 >abstract="创建可视化直方图来表示范围组中数值数据的分布。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*本文以&#x200B;**Customer Journey Analytics**记录直方图可视化图表。 查看本文的&#x200B;**Adobe Analytics**版本的[直方图](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/histogram)。*
+
+>[!ENDSHADEBOX]
 
 
 ![直方图](/help/assets/icons/Histogram.svg) **[!UICONTROL 直方图]**&#x200B;可视化与[!UICONTROL 条形图]可视化类似，但它将数字分组为范围（存储桶）。 Analytics 将数字的“存储”自动归为不同的范围，但您可以在[高级设置](#advanced-settings)中更改相关设置。

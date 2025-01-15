@@ -4,10 +4,10 @@ description: 显示与最多三个量度之间的关系的可视化图表。
 feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 77%
+source-wordcount: '166'
+ht-degree: 68%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 77%
 >abstract="创建一个可视化散点图，显示维度项目与最多三个量度之间的关系。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*本文以&#x200B;**Customer Journey Analytics**记录散点可视化图表。 查看本文的&#x200B;**Adobe Analytics**版本的[散点图](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot)。*
+
+>[!ENDSHADEBOX]
 
 
 ![图形散点图](/help/assets/icons/GraphScatter.svg) **[!UICONTROL 散点图]**&#x200B;可视化图表显示维度项目与最多三个量度之间的关系。 它需要三个组件，并且最多支持四个组件的可视化。

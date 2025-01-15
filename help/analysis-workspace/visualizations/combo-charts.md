@@ -4,10 +4,10 @@ title: 组合图表可视化
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 44%
+source-wordcount: '600'
+ht-degree: 45%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 44%
 >abstract="快速创建可视化组合图表，无需先创建自由格式表。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*本文以&#x200B;**Customer Journey Analytics**记录组合可视化图表。 查看本文的&#x200B;**Adobe Analytics**版本的[组合](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts)。*
+
+>[!ENDSHADEBOX]
 
 
 通过![Comment](/help/assets/icons/ComboChart.svg) **[!UICONTROL Combo]**&#x200B;可视化图表，可以轻松快速地构建比较可视化图表，而无需先构建表格。 您可以通过线条/条形组合轻松查看数据趋势。
@@ -71,7 +78,7 @@ ht-degree: 44%
 | --- | --- |
 | **[!UICONTROL 列总和]** | 添加列中某指标的所有数值（跨维度元素） |
 | **[!UICONTROL 累积平均数]** | 返回最后N行的平均值。 |
-| **[!UICONTROL 中间值]** | 返回列中某量度的中间值。中间值是一组数字中间的数字。 一半数字的值大于或等于中间值，另一半数字的值小于或等于中间值。 |
+| **[!UICONTROL 中间值]** | 返回列中某量度的中间值。中间值是位于一组数字中间的数字。一半数字的值大于或等于中间值，另一半数字的值小于或等于中间值。 |
 | **[!UICONTROL 累积数]** | N 行的累积总和。 |
 | **[!UICONTROL 列最大值]** | 返回某量度列的一组维度元素中的最大值。 |
 | **[!UICONTROL 平均值]** | 返回某度量的算术平均值或平均值。 |

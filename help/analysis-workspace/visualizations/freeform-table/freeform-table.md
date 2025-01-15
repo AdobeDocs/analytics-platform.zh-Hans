@@ -4,10 +4,10 @@ description: 自由格式表是在 Analysis Workspace 中进行数据分析的�
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 26%
+source-wordcount: '777'
+ht-degree: 25%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 26%
 >abstract="创建一个您可以使用维度、区段、量度和日期范围来构建的空的可视化自由格式表格。您可以使用自由格式表作为其他可视化的基础。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*本文以&#x200B;**Customer Journey Analytics**记录自由格式表可视化图表。 查看本文的&#x200B;**Adobe Analytics**版本的[自由格式表](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table)。*
+
+>[!ENDSHADEBOX]
 
 
 在Analysis Workspace中，![表](/help/assets/icons/Table.svg) **[!UICONTROL 自由格式表]**&#x200B;可视化是交互式数据分析的基础。 可以将[组件](/help/components/overview.md)组合拖放到行和列中，以创建自定义表格供您分析。拖动每个组件后，表格会立即更新，以便您能够快速分析和深入探索。

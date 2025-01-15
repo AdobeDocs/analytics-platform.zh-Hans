@@ -4,10 +4,10 @@ title: 关键量度摘要
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: e4107e2f795b9beb7aa2802aa7ea646be6733212
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 37%
+source-wordcount: '957'
+ht-degree: 36%
 
 ---
 
@@ -21,6 +21,14 @@ ht-degree: 37%
 >abstract="创建由线条、摘要变化和摘要数字图表组合而成的可视化效果。使用此可视化效果来比较两个时段内重要量度的趋势。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*本文以&#x200B;**Customer Journey Analytics**记录关键指标摘要可视化。 查看本文的&#x200B;**Adobe Analytics**版本的[关键量度摘要](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/key-metric)。*
+
+>[!ENDSHADEBOX]
+
 
 ![关键量度](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL 关键量度摘要]**&#x200B;可视化让您看到重要量度在单个时间范围内的趋势如何。 它还允许您在两个时间范围内比较量度表现。 它还具备将多个可视化图表组合为一个可视化图表的优点：
 

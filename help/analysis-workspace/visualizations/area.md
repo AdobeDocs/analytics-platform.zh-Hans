@@ -4,14 +4,14 @@ title: 面积图和堆叠的面积图
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 32%
+source-wordcount: '193'
+ht-degree: 27%
 
 ---
 
-# 面积图和堆叠的面积图
+# 面积（堆叠）
 
 ## 面积图 {#area}
 
@@ -23,6 +23,13 @@ ht-degree: 32%
 >abstract="创建一份可视化面积图来表示多个量度的交集。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*本文记录了&#x200B;**Customer Journey Analytics**中的面积图和栈叠面积图可视化图表。 查看本文的&#x200B;**Adobe Analytics**版本的[面积图和栈叠面积图](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area)。*
+
+>[!ENDSHADEBOX]
 
 
 ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL Area]**&#x200B;可视化类似于折线图，但折线下方显示了彩色区域。 当您有多个量度并且希望显示两个或更多量度相交的区域时，请添加面积图。

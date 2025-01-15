@@ -4,9 +4,9 @@ title: 试验性面板
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '2144'
+source-wordcount: '2174'
 ht-degree: 20%
 
 ---
@@ -31,6 +31,12 @@ ht-degree: 20%
 
 <!-- markdownlint-enable MD034 -->
 
+
+>[!BEGINSHADEBOX]
+
+*本文以&#x200B;**Customer Journey Analytics**记录了“试验”面板。 有关如何在&#x200B;**Target**.*&#x200B;中分析Adobe Target活动和体验的信息，请参阅[Adobe Analytics分析面板](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel)
+
+>[!ENDSHADEBOX]
 
 
 通过&#x200B;**[!UICONTROL 试验]**&#x200B;面板，分析师可以比较不同的用户体验、营销或消息传递变化，以确定哪一种最能推动特定结果。 您可以从任何试验平台评估任何A/B试验的提升和置信度：在线、离线、Target或Journey Optimizer等Adobe解决方案，甚至BYO（自带）数据。

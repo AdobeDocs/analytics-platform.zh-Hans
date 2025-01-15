@@ -4,10 +4,10 @@ title: 折线图
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 23%
+source-wordcount: '529'
+ht-degree: 22%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 23%
 >abstract="创建一个可视化线条图表，展示值在一段时间内的变化情况。仅当使用时间作为维度时，才可以使用可视化线条图表。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*本文以&#x200B;**Customer Journey Analytics**记录折线图可视化图表。 查看本文的&#x200B;**Adobe Analytics**版本的[行](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/line)。*
+
+>[!ENDSHADEBOX]
 
 
 ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL 折线]**&#x200B;可视化图表使用线条来表示量度，以显示一段时间内值的变化情况。 仅当使用时间作为维度时，才可以使用折线图可视化图表。

@@ -4,10 +4,10 @@ title: “下一项或上一项”面板
 feature: Panels
 role: User, Admin
 exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 38%
+source-wordcount: '467'
+ht-degree: 36%
 
 ---
 
@@ -31,7 +31,11 @@ ht-degree: 38%
 
 <!-- markdownlint-enable MD034 -->
 
+>[!BEGINSHADEBOX]
 
+*本文记录了&#x200B;**Customer Journey Analytics**中的下一个或上一个项目面板。 查看本文的&#x200B;**Adobe Analytics**版本的[下一个或上一个项目面板](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/next-previous)。*
+
+>[!ENDSHADEBOX]
 
 **[!UICONTROL 下一个或上一个项目]**&#x200B;面板包含许多表和可视化图表，用于标识特定维度的下一个或上一个维度项目。 例如，您可能希望探索客户在访问主页后最常访问哪些页面。
 

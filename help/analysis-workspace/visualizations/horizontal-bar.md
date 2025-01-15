@@ -4,10 +4,10 @@ title: 水平条形图和堆叠的水平条形图
 feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 38%
+source-wordcount: '191'
+ht-degree: 31%
 
 ---
 
@@ -25,6 +25,13 @@ ht-degree: 38%
 >abstract="创建可视化水平条形图来表示一个或多个量度的各种值。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*本文记录了&#x200B;**Customer Journey Analytics**中的水平条形图和栈叠的水平条形图可视化图表。 查看本文的&#x200B;**Adobe Analytics**版本的[栈叠的水平条形图和水平条形图](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar)。*
+
+>[!ENDSHADEBOX]
 
 
 此![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONTROL 水平条]**&#x200B;可视化显示一些水平条，这些水平条表示一个或多个量度中的各种值。

@@ -4,10 +4,10 @@ title: 快速洞察面板
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
-workflow-type: ht
-source-wordcount: '1127'
-ht-degree: 100%
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+workflow-type: tm+mt
+source-wordcount: '1151'
+ht-degree: 97%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 100%
 >abstract="创建一个面板，快速构建自由格式表和随附的可视化内容，以便更快地分析和发现洞察。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*本文以&#x200B;**Customer Journey Analytics**记录快速分析面板。 查看本文的&#x200B;**Adobe Analytics**版本的[快速分析面板](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/quickinsight)。*
+
+>[!ENDSHADEBOX]
 
 
 [!UICONTROL 快速洞察]可为 [!UICONTROL Analysis Workspace] 的非分析师和新用户了解如何快速轻松地回答业务问题提供指导。此外，对于希望快速回答简单问题的高级用户来说，它也是一个不错的工具，无需自己制表。

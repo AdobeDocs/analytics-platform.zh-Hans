@@ -4,14 +4,22 @@ title: 自由格式面板
 feature: Panels
 exl-id: 4e1d5d72-da59-419a-835e-a3c90f1362b4
 role: User
-source-git-commit: 44e703ca66f8cbb7cf98472d92b3c294542a2db2
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 13%
+source-wordcount: '112'
+ht-degree: 24%
 
 ---
 
 # 自由格式面板
+
+
+>[!BEGINSHADEBOX]
+
+*本文以&#x200B;**Customer Journey Analytics**记录自由格式面板。 查看本文的&#x200B;**Adobe Analytics**版本的[自由格式面板](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/freeform-panel)。*
+
+>[!ENDSHADEBOX]
+
 
 **[!UICONTROL 自由格式面板]**&#x200B;是一个以[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)可视化作为默认开始状态的空白面板。
 
@@ -28,7 +36,7 @@ ht-degree: 13%
 
 >[!MORELIKETHIS]
 >
->[创建面板](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+>[Create a panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
 >[在Workspace](/help/components/use-components-in-workspace.md)中使用组件
 >[自由格式表可视化图表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)
 >

@@ -4,10 +4,10 @@ description: 了解如何在Analysis Workspace中使用同类群组表进行同�
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 4fac7b05f8972028df5c06a40394dc0527b22208
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 34%
+source-wordcount: '663'
+ht-degree: 33%
 
 ---
 
@@ -30,6 +30,13 @@ ht-degree: 34%
 >abstract="根据事件的完成情况分组用户，然后分析这些用户在一段时间内的持续参与和流失程度。<br/><br/>**参数&#x200B;**<br/>**纳入标准**：用于定义您的初始访客同类群组的组件。<br/>**回访标准**：用于确定访客是否已回访的组件。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*本文以&#x200B;**Customer Journey Analytics**记录同类群组表。 查看本文的&#x200B;**Adobe Analytics**版本的[同类群组表](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis)。*
+
+>[!ENDSHADEBOX]
 
 
 *同类群组*&#x200B;是在指定时间段内共享相同特征的一组人员。 例如，在您想了解如何让一个同类群组喜欢某个品牌时，![TextNumbered](/help/assets/icons/TextNumbered.svg) **[!UICONTROL 同类群组表]**&#x200B;可视化图表很有用。 您可以轻松识别趋势中的变化，然后相应地采取回应。（网上提供了有关[!UICONTROL 同类群组分析]的解释说明，例如[同类群组分析基础](https://zh.wikipedia.org/wiki/Cohort_analysis)。）

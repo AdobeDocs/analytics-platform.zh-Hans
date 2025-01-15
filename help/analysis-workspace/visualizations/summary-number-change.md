@@ -4,10 +4,10 @@ title: 摘要数字和摘要变化
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 50%
+source-wordcount: '496'
+ht-degree: 47%
 
 ---
 
@@ -23,6 +23,14 @@ ht-degree: 50%
 >abstract="创建显示总计和小计的可视化效果。"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*本文以&#x200B;**Customer Journey Analytics**记录摘要编号和摘要更改可视化图表。 查看本文的&#x200B;**Adobe Analytics**版本的[摘要编号和摘要更改](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change)。*
+
+>[!ENDSHADEBOX]
+
 
 使用![摘要](/help/assets/icons/123.svg) **[!UICONTROL 摘要数字]**&#x200B;可视化图表突出显示项目中的大型重要数字。 此可视化图表的行为方式如下，使用关联的数据源：
 
