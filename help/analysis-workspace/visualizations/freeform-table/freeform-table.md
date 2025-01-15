@@ -4,9 +4,9 @@ description: 自由格式表是在 Analysis Workspace 中进行数据分析的�
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '777'
 ht-degree: 25%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 25%
 
 >[!BEGINSHADEBOX]
 
-*本文记录了![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**中的自由格式表可视化图表。<br/>查看本文的![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**版本的[自由格式表](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table)。*
+*本文以&#x200B;**Customer Journey Analytics**记录自由格式表可视化图表。<br/>查看本文的&#x200B;**Adobe Analytics**版本的[自由格式表](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table)。*
 
 >[!ENDSHADEBOX]
 

@@ -4,9 +4,9 @@ title: 面积图和堆叠的面积图
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '193'
 ht-degree: 27%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 27%
 
 >[!BEGINSHADEBOX]
 
-*本文记录了![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**中的面积图和栈叠面积图可视化图表。<br/>查看本文的![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**版本的[面积图和栈叠面积图](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area)。*
+*本文记录了&#x200B;**Customer Journey Analytics**中的面积图和栈叠面积图可视化图表。<br/>查看本文的&#x200B;**Adobe Analytics**版本的[面积图和栈叠面积图](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area)。*
 
 >[!ENDSHADEBOX]
 

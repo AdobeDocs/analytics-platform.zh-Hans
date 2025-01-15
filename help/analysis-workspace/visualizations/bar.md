@@ -4,9 +4,9 @@ title: 条形图和堆叠的条形图
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '201'
 ht-degree: 26%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 26%
 
 >[!BEGINSHADEBOX]
 
-*本文记录了![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**中的条形图和栈叠条形图可视化图表。<br/>查看本文的![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**版本的[条形图和栈叠的条形图](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bar)。*
+*本文记录了&#x200B;**Customer Journey Analytics**中的条形图和栈叠条形图可视化图表。<br/>查看本文的&#x200B;**Adobe Analytics**版本的[条形图和栈叠的条形图](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bar)。*
 
 >[!ENDSHADEBOX]
 

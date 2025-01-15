@@ -4,9 +4,9 @@ title: 水平条形图和堆叠的水平条形图
 feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '191'
 ht-degree: 31%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 31%
 
 >[!BEGINSHADEBOX]
 
-*本文记录了![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**中的水平条形图和栈叠的水平条形图可视化图表。<br/>查看本文的![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**版本的[栈叠的水平条形图和水平条形图](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar)。*
+*本文记录了&#x200B;**Customer Journey Analytics**中的水平条形图和栈叠的水平条形图可视化图表。<br/>查看本文的&#x200B;**Adobe Analytics**版本的[栈叠的水平条形图和水平条形图](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar)。*
 
 >[!ENDSHADEBOX]
 

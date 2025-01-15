@@ -4,9 +4,9 @@ title: 试验性面板
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '2176'
+source-wordcount: '2174'
 ht-degree: 20%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 20%
 
 >[!BEGINSHADEBOX]
 
-*本文记录了![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**中的试验面板。<br/>有关如何在![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**中分析Adobe Target活动和体验的信息，请参阅[Analytics for Target面板](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel)。*
+*本文以&#x200B;**Customer Journey Analytics**记录了“试验”面板。<br/>有关如何在&#x200B;**Adobe Analytics**中分析Adobe Target活动和体验的信息，请参阅[Analytics for Target面板](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel)。*
 
 >[!ENDSHADEBOX]
 

@@ -4,9 +4,9 @@ description: 在 Analysis Workspace 中如何使用和解读归因面板。
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '691'
 ht-degree: 47%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 47%
 
 >[!BEGINSHADEBOX]
 
-*本文在![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**中记录归因面板。<br/>查看本文的![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**版本的[归因面板](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/attribution)。*
+*本文以&#x200B;**Customer Journey Analytics**记录归因面板。<br/>查看本文的&#x200B;**Adobe Analytics**版本的[归因面板](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/attribution)。*
 
 >[!ENDSHADEBOX]
 
