@@ -4,9 +4,9 @@ title: 圆环
 feature: Visualizations
 exl-id: 97b846a6-3a38-48c7-b686-b792bb882fdb
 role: User
-source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '119'
 ht-degree: 26%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 26%
 
 >[!BEGINSHADEBOX]
 
-*本文以&#x200B;**Customer Journey Analytics**记录圆环图可视化图表。 查看本文的&#x200B;**Adobe Analytics**版本的[圆环图](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/donut)。*
+*本文记录了![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**中的圆环图可视化图表。<br/>查看本文的![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**版本的[圆环图](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/donut)。*
 
 >[!ENDSHADEBOX]
 

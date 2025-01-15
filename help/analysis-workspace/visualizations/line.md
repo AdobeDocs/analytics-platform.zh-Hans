@@ -4,9 +4,9 @@ title: 折线图
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
 role: User
-source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '531'
 ht-degree: 22%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 22%
 
 >[!BEGINSHADEBOX]
 
-*本文以&#x200B;**Customer Journey Analytics**记录折线图可视化图表。 查看本文的&#x200B;**Adobe Analytics**版本的[行](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/line)。*
+*本文记录了![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**中的折线图可视化图表。<br/>查看本文的![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**版本的[行](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/line)。*
 
 >[!ENDSHADEBOX]
 
