@@ -4,10 +4,10 @@ description: 在Workspace项目中插入节标题的可视化图表。
 feature: Visualizations
 role: User
 exl-id: 7f815879-2b08-4650-a9ce-c55ca5824288
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: d556740383075b2ee4652a78d3d37d5bbc5f2225
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 18%
+source-wordcount: '93'
+ht-degree: 13%
 
 ---
 
@@ -23,16 +23,12 @@ ht-degree: 18%
 <!-- markdownlint-enable MD034 -->
 
 
-<!-- uncomment when section header page in AA is available.
 >[!BEGINSHADEBOX]
 
 
-*This article documents the Section header visualization in **Customer Journey Analytics**.<br/>See [Section header](...) for the **Adobe Analytics** version of this article.*
+*本文以&#x200B;**Customer Journey Analytics**记录节标题可视化图表。<br/>查看本文的&#x200B;**Adobe Analytics**版本的[节标题](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/section-header)。*
 
 >[!ENDSHADEBOX]
-
--->
-
 
 要识别和表达面板中的节，可以在面板中的任意位置插入![PageRule](/help/assets/icons/PageRule.svg) **[!UICONTROL 节标题]**&#x200B;可视化图表。
 

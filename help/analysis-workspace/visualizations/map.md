@@ -6,10 +6,11 @@ role: User, Admin
 badgePremium: label="Adobe Analytics版本" url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization.html" tooltip="选择可查看本文的Adobe Analytics版本。"
 hide: true
 hidefromtoc: true
-source-git-commit: 3c3ef1c79e5863b74a3b7458c87d1f83f7188e5a
+exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
+source-git-commit: d556740383075b2ee4652a78d3d37d5bbc5f2225
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 13%
+source-wordcount: '79'
+ht-degree: 16%
 
 ---
 
@@ -43,11 +44,9 @@ ht-degree: 13%
 <!-- markdownlint-enable MD034 -->
 
 
->[!NOTE]
->
->Analysis Workspace中不支持地图可视化图表以进行Customer Journey Analytics。 有关如何在Adobe Analytics中使用Analysis Workspace中的地图可视化图表的详细信息，请选择本文顶部的&#x200B;**Adobe Analytics version**。
->
+>[!BEGINSHADEBOX]
 
+***Customer Journey Analytics**中当前没有可用的地图可视化图表。
+有关Adobe Analytics中的地图可视化文档，请参阅[地图](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)。*
 
-
-
+>[!ENDSHADEBOX]

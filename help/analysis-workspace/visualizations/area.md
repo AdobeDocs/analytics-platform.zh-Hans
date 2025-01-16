@@ -4,14 +4,22 @@ title: 面积图和堆叠的面积图
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: d556740383075b2ee4652a78d3d37d5bbc5f2225
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 27%
+source-wordcount: '202'
+ht-degree: 26%
 
 ---
 
 # 面积（堆叠）
+
+>[!BEGINSHADEBOX]
+
+*本文记录了&#x200B;**Customer Journey Analytics**中的面积图和栈叠面积图可视化图表。<br/>查看本文的&#x200B;**Adobe Analytics**版本的[面积图和栈叠面积图](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area)。*
+
+>[!ENDSHADEBOX]
+
+面积图可视化图表具有标准和栈叠选项。
 
 ## 面积图 {#area}
 
@@ -25,11 +33,7 @@ ht-degree: 27%
 <!-- markdownlint-enable MD034 -->
 
 
->[!BEGINSHADEBOX]
 
-*本文记录了&#x200B;**Customer Journey Analytics**中的面积图和栈叠面积图可视化图表。<br/>查看本文的&#x200B;**Adobe Analytics**版本的[面积图和栈叠面积图](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area)。*
-
->[!ENDSHADEBOX]
 
 
 ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL Area]**&#x200B;可视化类似于折线图，但折线下方显示了彩色区域。 当您有多个量度并且希望显示两个或更多量度相交的区域时，请添加面积图。
