@@ -4,10 +4,10 @@ description: 了解如何在Analysis Workspace中使用同类群组表进行同�
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: 353993c14103906553d87738ed3f7fc0926e123c
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 33%
+source-wordcount: '687'
+ht-degree: 30%
 
 ---
 
@@ -68,7 +68,9 @@ Customer Journey Analytics中的同类群组表支持基于双精度指标（或
 
 ## 同类群组表功能
 
-以下功能允许您对正在构建的同类群组进行精细控制：
+以下部分介绍了同类群组分析功能，这些功能允许您对正在构建的同类群组进行精细控制。
+
+有关创建同类群组并运行[!UICONTROL 同类群组分析]报表的更多详细信息，请参阅[配置同类群组表](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md)。
 
 ### [!UICONTROL 保留]表
 
