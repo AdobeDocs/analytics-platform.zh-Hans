@@ -1,5 +1,5 @@
 ---
-title: 实施Web SDK扩展的加载器标记
+title: 为 Web SDK 扩展实施加载器标记
 description: 了解如何为Web SDK扩展实施加载器标记
 role: Admin
 solution: Customer Journey Analytics
@@ -7,14 +7,14 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
-source-git-commit: 937a7f31361027438929194f8ccc5aee83c33bc0
+source-git-commit: cb6a439def7bf0fab1768fdd1c7d909b76b995d6
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 34%
+source-wordcount: '285'
+ht-degree: 36%
 
 ---
 
-# 实施Web SDK扩展的加载器标记
+# 为 Web SDK 扩展实施加载器标记
 
 >[!NOTE]
 > 
@@ -27,6 +27,12 @@ ht-degree: 34%
 以下流程介绍如何获取引用标记的代码。 有关补充信息，请参阅Experience Platform文档中的[标记和事件转发的实施指南](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/implementation-guides)。
 
 要获取引用标签的代码，请执行以下操作：
+
+1. 使用您的Adobe ID凭据登录experience.adobe.com 。
+
+1. 在Adobe Experience Platform中，转到&#x200B;**[!UICONTROL 数据收集]** > **[!UICONTROL 标记]**。
+
+1. 在&#x200B;**[!UICONTROL 标记属性]**&#x200B;页面上，从属性列表中选择新创建的标记以将其打开。
 
 1. 选择左边栏中的&#x200B;**[!UICONTROL 环境]**。
 

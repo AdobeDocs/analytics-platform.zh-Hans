@@ -6,14 +6,15 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: ccc6df56771cd9f83bbd7a8570e32d7ed63a0ced
+exl-id: 156df830-541d-4c92-9c49-98f346e040a7
+source-git-commit: cb6a439def7bf0fab1768fdd1c7d909b76b995d6
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 22%
+source-wordcount: '315'
+ht-degree: 24%
 
 ---
 
-# 为资产创建标记
+# 为您的属性创建标记
 
 >[!NOTE]
 > 
@@ -40,4 +41,3 @@ ht-degree: 22%
    ![创建资产](assets/create-property.png)
 
 1. 继续执行[建议的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)或[动态生成的升级步骤](https://gigazelle.github.io/cja-ttv/)。
-

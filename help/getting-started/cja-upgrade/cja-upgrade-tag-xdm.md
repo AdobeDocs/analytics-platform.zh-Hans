@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
-source-git-commit: 9849d686e886426124842ce210b423ac6c74fb89
+source-git-commit: 5b440a8029aab392739e573a680123d0bd8a1318
 workflow-type: tm+mt
-source-wordcount: '1224'
-ht-degree: 49%
+source-wordcount: '1612'
+ht-degree: 32%
 
 ---
 
@@ -26,25 +26,39 @@ ht-degree: 49%
 
 ## 配置数据元素
 
-数据元素是数据词典（或数据映射）的构建块。使用数据元素可跨市场营销和广告技术收集、组织和交付数据。您可以在标记中设置从数据层读取的数据元素，并可用于将数据传送到 Adobe Experience Platform。
+数据元素是数据词典（或数据映射）的构建块。使用数据元素可跨市场营销和广告技术收集、组织和交付数据。您可以在标记中设置从数据层读取的数据元素，并可用于将数据交付到Adobe Experience Platform。 （有关数据元素的更多信息，请参阅标记文档中的[数据元素](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements)。）
 
-有不同类型的数据元素。首先，设置一个数据元素以捕获访客在您的网站上查看的页面名称。 然后，设置引用Experience CloudID的数据元素。 最后，定义XDM对象数据元素。
+以下各节介绍了建议的数据元素以及您可以配置的其他常见数据元素。
 
-### Page name数据元素
+数据元素有多种类型。 您可能需要配置的两个常见数据元素：一个用于捕获访客在您的网站上查看的页面名称，另一个用于捕获访问您网站的每个人员的Experience CloudID。
 
-定义页面名称数据元素：
+配置这两个数据元素后，您可以为要捕获的特定数据配置其他数据元素。
+
+最后，在定义所有所需的数据元素后，您需要将数据元素分配给您之前创建的[架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)。 为此，您需要定义一个XDM数据元素，以提供XDM架构的表示形式。
+
+<!-- Assigning data elements to an XDM object. All of the available XDM objects are based on the schema -->
+
+### 创建建议的数据元素
+
+以下各节介绍如何创建适用于大多数组织的通用数据元素。
+
+#### Page name数据元素
+
+适用于大多数组织的通用数据元素是用于捕获人员正在查看的页面名称的数据元素。
+
+要创建页面名称数据元素，请执行以下操作：
 
 1. 使用您的Adobe ID凭据登录experience.adobe.com 。
 
 1. 在Adobe Experience Platform中，转到&#x200B;**[!UICONTROL 数据收集]** > **[!UICONTROL 标记]**。
 
-1. 从 [!UICONTROL 标签属性] 列表中选择您新创建的标签以将其打开。
+1. 在&#x200B;**[!UICONTROL 标记属性]**&#x200B;页面上，从属性列表中选择新创建的标记以将其打开。
 
 1. 选择左边栏中的&#x200B;**[!UICONTROL 数据元素]**。
 
 1. 选择&#x200B;**[!UICONTROL 添加数据元素]**。
 
-1. 在[!UICONTROL 创建数据元素]对话框中，指定以下信息：
+1. 在&#x200B;**[!UICONTROL 创建数据元素]**&#x200B;对话框中，指定以下信息：
 
    * **[!UICONTROL 名称]**：数据元素的名称。 例如：`Page Name`。
 
@@ -66,9 +80,11 @@ ht-degree: 49%
 
 1. 继续使用[ECID数据元素](#ecid-data-element)。
 
-### ECID数据元素
+#### ECID数据元素
 
-要定义 ECID 数据元素：
+适用于大多数组织的通用数据元素是一个数据元素，可捕获访问您网站的每个人的Experience CloudID。
+
+要创建ECID数据元素，请执行以下操作：
 
 1. 使用您的Adobe ID凭据登录experience.adobe.com 。
 
@@ -76,11 +92,23 @@ ht-degree: 49%
 
 1. 从 [!UICONTROL 标签属性] 列表中选择您新创建的标签以将其打开。
 
+1. （视情况而定）安装Experience CloudID服务扩展（如果尚未安装）：
+
+   1. 选择左边栏中的&#x200B;**[!UICONTROL 扩展]**。
+
+   1. 默认情况下已选择&#x200B;**[!UICONTROL 已安装]**&#x200B;选项卡。 如果列出&#x200B;**[!UICONTROL Experience CloudID服务]**&#x200B;磁贴，请跳至步骤5。
+
+   1. 如果未列出&#x200B;**[!UICONTROL Experience CloudID服务]**&#x200B;磁贴，请选择&#x200B;**[!UICONTROL 目录]**&#x200B;选项卡。
+
+   1. 在“搜索”字段中，搜索&#x200B;**[!UICONTROL Experience CloudID服务]**，然后在该磁贴出现时选择该磁贴
+
+   1. 选择&#x200B;**[!UICONTROL 安装]** > **[!UICONTROL 保存]**。
+
 1. 选择左边栏中的&#x200B;**[!UICONTROL 数据元素]**。
 
 1. 选择&#x200B;**[!UICONTROL 添加数据元素]**。
 
-1. 在[!UICONTROL 创建数据元素]对话框中，指定以下信息：
+1. 在&#x200B;**[!UICONTROL 创建数据元素]**&#x200B;对话框中，指定以下信息：
 
    * **[!UICONTROL 名称]**：数据元素的名称。 例如：`ECID`。
 
@@ -92,11 +120,45 @@ ht-degree: 49%
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
-1. 继续使用[XDM对象数据元素](#xdm-object-data-element)。
+1. 继续[创建其他数据元素](#create-additional-data-elements)。
+
+### 创建其他数据元素
+
+为要收集的每种类型的数据创建一个数据元素。 使用[Page name数据元素](#page-name-data-element)和[ECID数据元素](#ecid-data-element)中描述的相同过程创建每个其他数据元素。
+
+您创建的数据元素在架构中应具有关联字段。
+
+常见数据元素因行业和业务要求而异。 考虑以下按行业划分的常见数据元素：
+
+**零售数据元素**
+
+* 产品
+
+* 购物车加货
+
+* 结账
+
+**财务数据元素**
+
+* 交易 ID
+
+* 交易日期
+
+* 服务类型
+
+**医疗保健数据元素**
+
+* 提供程序ID
+
+* 访问日期
+
+* 处理类型
+
+在创建组织实施所需的所有数据元素后，请继续使用[XDM对象数据元素](#xdm-object-data-element)。
 
 ### XDM对象数据元素
 
-最后，您现在希望将任何特定的数据元素映射到先前定义的模式。您可以定义另一个数据元素，它提供 XDM 模式的表示。
+最后，您现在希望将您创建的任何数据元素映射到您之前创建的[架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)。 为此，请定义一个可提供XDM架构表示形式的XDM对象数据元素。
 
 要定义 XDM 对象数据元素：
 
@@ -110,7 +172,7 @@ ht-degree: 49%
 
 1. 选择&#x200B;**[!UICONTROL 添加数据元素]**。
 
-1. 在[!UICONTROL 创建数据元素]对话框中，指定以下信息：
+1. 在&#x200B;**[!UICONTROL 创建数据元素]**&#x200B;对话框中，指定以下信息：
 
    * **[!UICONTROL 名称]**：数据元素的名称。 例如：`XDM - Page View`。
 
@@ -122,14 +184,13 @@ ht-degree: 49%
 
    * **[!UICONTROL 架构]**：从列表中选择您的架构。
 
-1. 将模式中定义的 `identification > core > ecid` 属性映射到 ECID 数据元素。选择圆柱体图标可以轻松地从数据元素列表中拾取 ECID 数据元素。
+1. 将架构中定义的 `identification > core > ecid` 属性映射到 ECID 数据元素。选择圆柱体图标可以轻松地从数据元素列表中拾取 ECID 数据元素。
 
    ![拾取 ECID 数据元素](assets/pick-ecid-dataelement.png)
 
    ![映射 ECID 数据元素](assets/map-ecid.png)
 
-
-1. 将模式中定义的`web > webPageDetails > name` 属性映射到页面名称数据元素。
+1. 将架构中定义的`web > webPageDetails > name` 属性映射到页面名称数据元素。
 
    ![映射页面名称数据元素](assets/map-pagename.png)
 
@@ -159,13 +220,13 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。他们寻找
 
 1. 选择左边栏中的&#x200B;**[!UICONTROL 规则]**。
 
-1. 选择&#x200B;**[!UICONTROL 创建新规则]**。
+1. 选择&#x200B;**[!UICONTROL 添加规则]**。
 
-1. 在[!UICONTROL 创建规则]对话框中，指定以下信息：
+1. 在&#x200B;**[!UICONTROL 创建规则]**&#x200B;对话框中，指定以下信息：
 
    * **[!UICONTROL 名称]**：规则的名称。 例如：`Page View`。
 
-   * **[!UICONTROL 事件]**：选择&#x200B;**[!UICONTROL +添加]**。 然后，在[!UICONTROL 事件配置]对话框中，指定以下信息。 完成后，选择&#x200B;**[!UICONTROL 保留更改]**。
+   * **[!UICONTROL 事件]**：选择&#x200B;**[!UICONTROL +添加]**。 然后，在&#x200B;**[!UICONTROL 事件配置]**&#x200B;对话框中，指定以下信息。 完成后，选择&#x200B;**[!UICONTROL 保留更改]**。
 
       * **[!UICONTROL 扩展]**：从列表中选择&#x200B;**[!UICONTROL 核心]**。
 
@@ -179,7 +240,7 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。他们寻找
 
       * **[!UICONTROL 操作类型]**：从列表中选择&#x200B;**[!UICONTROL 发送事件]**。
 
-      * **[!UICONTROL 类型]**：从列表中选择&#x200B;**[!UICONTROL web.webpagedetails.pageViews]**。
+      * **[!UICONTROL 类型]**：从列表中选择&#x200B;**[!UICONTROL Web网页详细信息页面查看次数]**。
 
       * **[!UICONTROL XDM数据]**：选择圆柱体图标，然后从数据元素列表中选择&#x200B;**[!UICONTROL XDM — 页面视图]**。
 
@@ -190,6 +251,12 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。他们寻找
         ![创建规则](assets/rule-pageview.png)
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
+
+1. 对要添加到网站中的每个规则重复此过程。
+
+   有关规则的更多信息，请参阅标记文档中的[规则](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/rules)。
+
+1. 继续[生成并发布您的标记](#build-and-publish-your-tag)。
 
 ## 构建和发布您的标记
 
@@ -207,9 +274,9 @@ Adobe Experience Platform标记支持从简单到复杂的发布工作流程，�
 
 1. 从左边栏中选择&#x200B;**[!UICONTROL 发布流]**。
 
-1. 选择 **[!UICONTROL 选择工作库]**，然后选择&#x200B;**[!UICONTROL 添加库…]**。
+1. 选择&#x200B;**[!UICONTROL 添加库]**。
 
-1. 在[!UICONTROL 创建库]对话框中，指定以下信息：
+1. 在&#x200B;**[!UICONTROL 创建库]**&#x200B;对话框中，指定以下信息：
 
    * **[!UICONTROL 名称]**：库的名称。
 

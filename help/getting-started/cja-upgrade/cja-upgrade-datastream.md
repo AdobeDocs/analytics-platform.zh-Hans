@@ -6,10 +6,11 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: f76d098d-d223-40e4-be81-d28e7581396b
+source-git-commit: 41965bcd5ae8252fbf2ceda0d2b633ec6dc0e9a3
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 27%
+source-wordcount: '256'
+ht-degree: 23%
 
 ---
 
@@ -27,17 +28,22 @@ ht-degree: 27%
 
 在您的设置中，您希望配置数据流以将收集的数据发送到Adobe Experience Platform中的数据集。
 
+>[!NOTE]
+>
+>只有使用AppMeasurement或Analytics扩展（标记）的Adobe Analytics实施才需要执行以下步骤。
+>
+>如果您的Adobe Analytics实施使用Web SDK或Web SDK扩展，则您的Adobe Analytics环境中已存在数据流。
+
 设置您的数据流
 
 1. 在Adobe Experience Platform中，从左边栏中的[!UICONTROL 数据收集]中选择&#x200B;**[!UICONTROL 数据流]**。
 
 1. 选择&#x200B;**[!UICONTROL 新数据流]**。
 
-1. 命名并描述您的数据流。从 [!UICONTROL 事件模式] 列表中选择您的模式。
+1. 命名并描述您的数据流。从 [!UICONTROL 事件架构] 列表中选择您的架构。
 
    ![新数据流](assets/new-datastream.png)
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
 1. 继续执行[建议的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)或[动态生成的升级步骤](https://gigazelle.github.io/cja-ttv/)。
-

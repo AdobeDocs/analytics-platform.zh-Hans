@@ -7,18 +7,16 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: f4fd3c1932a736577d480e86cad70f55de75cb21
+source-git-commit: cb6a439def7bf0fab1768fdd1c7d909b76b995d6
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1565'
 ht-degree: 5%
 
 ---
 
 # 从Adobe Analytics升级到Customer Journey Analytics
 
-从Adobe Analytics升级到Customer Journey Analytics时，Adobe建议结合Analytics源连接器来实施新的Experience PlatformWeb SDK，如[为大多数组织推荐的升级步骤](#recommended-upgrade-steps-for-most-organizations)中所述。
-
-根据时间表和资源限制等多个因素，建议的升级步骤可能对您的组织不实用。 在这种情况下，请使用[Adobe AnalyticsCustomer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)来动态生成针对贵组织独特环境量身定制的升级步骤。
+从Adobe Analytics升级到Customer Journey Analytics时，您可以按照[建议的升级步骤](#recommended-upgrade-steps-for-most-organizations)操作。 或者，您可以[针对贵组织的独特情况动态生成升级步骤](#dynamically-generate-upgrade-steps-for-your-organization)。
 
 ## 为大多数组织推荐的升级步骤
 
@@ -100,9 +98,11 @@ ht-degree: 5%
 
    +++标记
 
-   1. [在您的网站上实施加载器标记](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)。
-
    1. [创建标记属性并添加Adobe Experience Platform Web SDK扩展](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)。
+
+   1. [将Adobe Experience Platform Web SDK扩展添加到您的标记属性中](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
+
+   1. [在您的网站上实施加载器标记](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)。
 
    1. [将XDM数据收集逻辑添加到您的标记](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)。
 
@@ -120,11 +120,11 @@ ht-degree: 5%
 
 1. （可选）将Web数据与来自其他渠道的数据（例如呼叫中心数据）绑定。
 
-   您可以通过向Customer Journey Analytics连接添加其他数据集来实现这一点。
+   如[导入呼叫中心和Web数据](/help/use-cases/cross-channel/call-center.md)中所述，您可以通过向Customer Journey Analytics连接添加其他数据集来实现这一点。
 
 1. [在Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)中创建数据视图。
 
-1. [验证数据是否流入Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)。
+1. [验证数据是否流入了Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)中的数据视图。
 
 1. [迁移项目和组件](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration)。
 

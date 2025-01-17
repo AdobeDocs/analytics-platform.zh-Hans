@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: c6d49ca4-3d04-4c0f-accd-8666a587109d
+source-git-commit: 41965bcd5ae8252fbf2ceda0d2b633ec6dc0e9a3
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '305'
 ht-degree: 31%
 
 ---
@@ -25,7 +26,7 @@ ht-degree: 31%
 
 在完成此部分中的步骤之前，应该已经存在数据流。 数据流的创建时间和方式取决于您的Adobe Analytics实施，如下所示：
 
-* 如果您的Adobe Analytics实施使用的是Web SDK或Web SDK扩展，则在升级过程开始之前，数据流可用于Adobe Analytics环境。
+* 如果您的Adobe Analytics实施使用Web SDK或Web SDK扩展，则在升级过程开始之前，数据流可用于Adobe Analytics环境。
 
 * 对于其他Adobe Analytics实施，创建数据流是升级过程的一部分，如[创建数据流以用于Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)中所述。
 
