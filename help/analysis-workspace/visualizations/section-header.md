@@ -4,9 +4,9 @@ description: 在Workspace项目中插入节标题的可视化图表。
 feature: Visualizations
 role: User
 exl-id: 7f815879-2b08-4650-a9ce-c55ca5824288
-source-git-commit: d556740383075b2ee4652a78d3d37d5bbc5f2225
+source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '95'
 ht-degree: 13%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 13%
 >[!BEGINSHADEBOX]
 
 
-*本文以&#x200B;**Customer Journey Analytics**记录节标题可视化图表。<br/>查看本文的&#x200B;**Adobe Analytics**版本的[节标题](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/section-header)。*
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的节标题可视化图表。_<br/>_查看本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版本的[节标题](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/section-header)。_
 
 >[!ENDSHADEBOX]
 

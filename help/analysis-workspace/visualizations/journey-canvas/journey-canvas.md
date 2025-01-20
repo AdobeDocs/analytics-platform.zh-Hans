@@ -4,9 +4,9 @@ title: 历程画布
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: c7828617d45991f9f3ba946fc12e248ac172141d
+source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
-source-wordcount: '1880'
+source-wordcount: '1881'
 ht-degree: 11%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-*本文记录了&#x200B;**Customer Journey Analytics**中的历程画布可视化图表。<br/>**Adobe Analytics**中没有对等的可视化图表。*
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的历程画布可视化图表。<br/>**Adobe Analytics**&#x200B;中没有对等的可视化图表。_
 
 >[!ENDSHADEBOX]
 

@@ -4,9 +4,9 @@ description: 了解如何在Analysis Workspace中使用同类群组表进行同�
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 353993c14103906553d87738ed3f7fc0926e123c
+source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '689'
 ht-degree: 30%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 30%
 
 >[!BEGINSHADEBOX]
 
-*本文以&#x200B;**Customer Journey Analytics**记录同类群组表。<br/>查看本文的&#x200B;**Adobe Analytics**版本的[同类群组表](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis)。*
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的同类群组表。_<br/>_查看本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版本的[同类群组表](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis)。_
 
 >[!ENDSHADEBOX]
 

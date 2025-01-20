@@ -4,10 +4,10 @@ title: 流量概述
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 50%
+source-wordcount: '385'
+ht-degree: 49%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 50%
 
 >[!BEGINSHADEBOX]
 
-*本文以&#x200B;**Customer Journey Analytics**记录流量可视化图表。<br/>查看本文的&#x200B;**Adobe Analytics**版本的[流程](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow)。*
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的流量可视化图表。_<br/>_查看本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版本的[流程](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow)。_
 
 >[!ENDSHADEBOX]
 
