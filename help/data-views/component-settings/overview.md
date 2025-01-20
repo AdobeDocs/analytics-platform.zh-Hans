@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 source-git-commit: e326b5457c82a7b4789c68588546707fabca42f6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '674'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 77%
 | [!UICONTROL 组件名称] | 必填。使您可指定在 Analysis Workspace 中显示的易记名称。可将组件重命名以给予其一个数据视图专属的名称。 |
 | [!UICONTROL 描述] | 可选，但推荐。向其他用户提供有关组件的信息。 |
 | [!UICONTROL 标记] | 可选。可让您使用自定义或现成标记为组件添加标记，以便于在 Analysis Workspace UI 中搜索/筛选。 |
-| [!UICONTROL 上下文标签] | 可选。可应用于组件的可用系统定义标签的下拉列表。 <p>在以下情况下，可能需要这些标签：</p> <ul><li>要使用Analysis Workspace项目中的[试验面板](/help/analysis-workspace/c-panels/experimentation.md)定义可在试验报表中使用的一组组件。<p>有关详细信息，请参阅[与Journey Optimizer集成](/help/integrations/ajo.md#data-view)和[Target报表](/help/integrations/at.md)。</p></li><li>使用Adobe提供的模板时。 默认情况下，Adobe提供的某些模板将无法使用，因为它们包含的数据视图中没有的组件。<p>对于每个缺少的组件，您的数据视图中都提供了匹配的上下文标签。 您需要将匹配的上下文标签添加到数据视图中已存在的组件，或者您需要将新组件添加到数据视图并将上下文标签添加到其中。</p><p>有关详细信息，请参阅文章[创建和管理模板](/help/analysis-workspace/templates/create-templates.md)中的[将缺少的组件添加到给定模板](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template)的数据视图中。</p> |
+| [!UICONTROL 上下文标签] | 可选。可应用于组件的现有系统定义标签的下拉列表。 <p>以下情况下可能需要这些标签：</p> <ul><li>使用 Analysis Workspace 项目中的[“试验”面板](/help/analysis-workspace/c-panels/experimentation.md)，定义一组可用于试验报告的组件。<p>请参阅[与 Journey Optimizer 集成](/help/integrations/ajo.md#data-view)以及[ Target 报告](/help/integrations/at.md)。</p></li><li>使用 Adobe 提供的模板时。默认情况下，Adobe 提供的一些模板不起作用，因为它们包含数据视图中没有的组件。<p>对于每个缺失的组件，数据视图中都会提供一个匹配的上下文标签。您需要将匹配的上下文标签添加到数据视图中已有的组件，或者向数据视图添加新组件并向其中添加上下文标签。</p><p>有关详细信息，请参阅文章[创建和管理模板](/help/analysis-workspace/templates/create-templates.md)中的[将缺失的组件添加到给定模板的数据视图](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template)。</p> |
 | [!UICONTROL 架构字段名] | 架构字段的名称。 |
 | [!UICONTROL 数据集类型] | 必填。显示组件来自哪个数据集类型（事件、查询或轮廓）的不可编辑字段。 |
 | [!UICONTROL 数据集] | 一个不可编辑的字段，它显示该组件来源于哪个数据集。此字段可以包含多个数据集。 |

@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 source-git-commit: a530738bb02888d637e5ff4edaa1aa2535a9034c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4260'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -225,7 +225,7 @@ ht-degree: 99%
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountfield"
 >title="帐户字段"
->abstract="选择一个表示帐户ID（帐户的唯一标识符）的字段。"
+>abstract="选择代表帐户 ID（帐户的唯一标识符）的字段。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -341,7 +341,7 @@ ht-degree: 99%
 >[!CONTEXTUALHELP]
 >id="connection_accountfield"
 >title="帐户字段"
->abstract="选择一个表示帐户ID（帐户的唯一标识符）的字段。"
+>abstract="选择代表帐户 ID（帐户的唯一标识符）的字段。"
 
 <!-- markdownlint-enable MD034 -->
 
