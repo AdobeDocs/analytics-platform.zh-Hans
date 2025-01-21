@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
-source-git-commit: 9118a3c20158b1a0373fab1b41595aa7b07075f6
+source-git-commit: f45a457d251767634e28984d7c75158dac6e51e8
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 6%
@@ -20,7 +20,7 @@ ht-degree: 6%
 
 共享设备是指由多个用户使用的设备。 常见的情况是平板电脑、网亭中使用的设备或由呼叫中心代理共享的计算机设备。
 
-当两个用户使用同一设备且都进行购买时，示例事件数据可能如下所示：
+当两个用户使用同一设备且都进行了经过身份验证的购买时，示例事件数据可能如下所示：
 
 | 事件 | 时间戳 | 页面名称 | 设备ID | 电子邮件 |
 |--:|---|---|---|---|
