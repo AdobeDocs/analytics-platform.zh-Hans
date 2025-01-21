@@ -7,7 +7,7 @@ role: User
 source-git-commit: de0eca21fa1b4ac71a8273676e851b596cf911a8
 workflow-type: tm+mt
 source-wordcount: '771'
-ht-degree: 20%
+ht-degree: 22%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 20%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_area"
->title="智能字幕：区域"
->abstract="以自然语言的格式生成见解，帮助您更轻松地理解和解释此可视化内容的数据。"
+>title="智能题注：面积"
+>abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化数据。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -26,8 +26,8 @@ ht-degree: 20%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_bar"
->title="智能字幕：条形图"
->abstract="以自然语言的格式生成见解，帮助您更轻松地理解和解释此可视化内容的数据。"
+>title="智能题注：条形图"
+>abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化数据。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -35,8 +35,8 @@ ht-degree: 20%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_donut"
->title="智能字幕：圆环图"
->abstract="以自然语言的格式生成见解，帮助您更轻松地理解和解释此可视化内容的数据。"
+>title="智能题注：圆环图"
+>abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化数据。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -44,8 +44,8 @@ ht-degree: 20%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_horizontalbar"
->title="智能字幕：水平条形图"
->abstract="以自然语言的格式生成见解，帮助您更轻松地理解和解释此可视化内容的数据。"
+>title="智能题注：水平条形图"
+>abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化数据。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -53,8 +53,8 @@ ht-degree: 20%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_line"
->title="智能字幕：行"
->abstract="以自然语言的格式生成见解，帮助您更轻松地理解和解释此可视化内容的数据。"
+>title="智能题注：折线图"
+>abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化数据。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -62,8 +62,8 @@ ht-degree: 20%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_fallout"
->title="智能字幕：流失"
->abstract="以自然语言的格式生成见解，帮助您更轻松地理解和解释此可视化内容的数据。"
+>title="智能题注：流失"
+>abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化数据。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -71,8 +71,8 @@ ht-degree: 20%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_flow"
->title="智能字幕：流量"
->abstract="以自然语言的格式生成见解，帮助您更轻松地理解和解释此可视化内容的数据。"
+>title="智能题注：流量"
+>abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化数据。"
 
 <!-- markdownlint-enable MD034 -->
 
