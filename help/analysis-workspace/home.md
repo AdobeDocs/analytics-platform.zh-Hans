@@ -6,10 +6,10 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
-workflow-type: ht
-source-wordcount: '1479'
-ht-degree: 100%
+source-git-commit: 91c982ac3a8b2286e3da78d50bdf1f378f75e7ec
+workflow-type: tm+mt
+source-wordcount: '1473'
+ht-degree: 99%
 
 ---
 
@@ -17,14 +17,13 @@ ht-degree: 100%
 
 利用 Analysis Workspace，可以快速生成分析以收集洞察，然后与其他人共享这些洞察。可以使用拖放浏览器界面进行分析、添加可视化内容以便直观地呈现数据、梳理数据集以及与您选定的任何人员共享和安排[项目](/help/analysis-workspace/build-workspace-project/freeform-overview.md)。
 
+>[!BEGINSHADEBOX]
 
-+++ 观看展示 Analytics Workspace 潜力的视频。
+![视频签出](/help/assets/icons/VideoCheckedOut.svg) [分析工作区](https://video.tv.adobe.com/v/26266/?quality=12){target="_blank"}
 
->[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
+>[!ENDSHADEBOX]
 
-{{videoaa}}
 
-+++
 
 ## 界面
 

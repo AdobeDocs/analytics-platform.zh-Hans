@@ -4,9 +4,9 @@ title: 使用模板
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 50d46d5b2d663e6f0b3951006db34bff0193417e
+source-git-commit: 91c982ac3a8b2286e3da78d50bdf1f378f75e7ec
 workflow-type: tm+mt
-source-wordcount: '19294'
+source-wordcount: '19288'
 ht-degree: 86%
 
 ---
@@ -31,7 +31,7 @@ Analysis Workspace中的模板（或公司模板）可快速分析最常见的�
 
 1. 在 Analysis Workspace 中，选择 [!UICONTROL **Workspace**] 选项卡。
 
-   ![模板选项卡](assets/view-prebuilt-templates.png)
+   ![模板选项卡](assets/view-prebuilt-templates-full.png)
 
 1. 在&#x200B;[!UICONTROL **模板**]&#x200B;部分中，选择以下任一选项卡：
 
@@ -43,9 +43,9 @@ Analysis Workspace中的模板（或公司模板）可快速分析最常见的�
 
 1. 使用以下任一选项可更改查看可用模板的方式：
 
-   * 通过选择列视图![列视图图标](assets/column-view-icon.png)或卡片视图![卡片视图图标](assets/card-view-icon.png)图标，选择是在列视图还是卡片视图中查看模板。
+   * 通过选择列视图![ViewColumn](/help/assets/icons/ViewColumn.svg)或卡片视图![卡片](/help/assets/icons/Card.svg)图标，选择是在列视图还是卡片视图中查看模板。
 
-   * 使用卡片视图![卡片视图图标](assets/card-view-icon.png)时，请从以下排序顺序中进行选择： **[!UICONTROL 最近使用]**、**[!UICONTROL 最受欢迎]**、**[!UICONTROL 按字母顺序]**、**[!UICONTROL 类别]**。
+   * 使用卡片视图![卡片](/help/assets/icons/Card.svg)时，从以下排序顺序中进行选择： **[!UICONTROL 最近使用]**、**[!UICONTROL 最受欢迎]**、**[!UICONTROL 按字母顺序]**、**[!UICONTROL 类别]**。
 
 1. 在搜索字段中，开始键入要查找的模板的名称，然后从模板列表中选择该模板。
 
