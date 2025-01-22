@@ -4,10 +4,10 @@ title: 智能题注
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: de0eca21fa1b4ac71a8273676e851b596cf911a8
+source-git-commit: 7d103e9d709ec076519360a4b43af44f061171e9
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 22%
+source-wordcount: '868'
+ht-degree: 19%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 22%
 
 <!-- markdownlint-enable MD034 -->
 
-智能题注使用先进的机器学习和生成式 AI 为 Workspace 可视化提供有价值的自然语言洞察。初始版本为[折线图](line.md)可视化图表提供了自动生成的见解。 随后将提供其他可视化图表。
+智能字幕功能使用高级创作AI为自然语言中最常用的Workspace可视化图表提供关键见解。
 
 智能字幕面向：
 
@@ -85,11 +85,10 @@ ht-degree: 22%
 
 ## 启动智能字幕 {#launch}
 
-要为折线图可视化启动自动生成的字幕，请选择可视化右上角的![AEMScreen](/help/assets/icons/AI.svg) **[!UICONTROL 智能字幕]**。
+要为可视化启动自动生成的智能字幕，请选择可视化右上角的![智能字幕](/help/assets/icons/AI.svg)。 此选择将生成自然语言见解。
 
-![显示产品查看趋势智能字幕的“启动分析”窗口。](assets/intell-caps-1.png)
+![显示产品查看趋势智能字幕的“启动分析”窗口。](assets/intelligent-captions.gif)
 
-自然语言洞察正在生成。
 
 请记住以下事项：
 
@@ -97,13 +96,28 @@ ht-degree: 22%
 
 * 每次在支持可视化的表格中更改基础选定数据时，都会生成字幕。
 
-* 如果表中有多个量度，则仅为第一个量度或用户当前选择的量度生成字幕。
+* 如果关联的自由格式表中有多个量度，则仅为第一个量度或用户当前选择的量度生成字幕。 但是，可以为线形图和区域图可视化的多个量度生成标题。
 
 * 如果在特定点保存项目并在以后重新加载，则字幕将自动更新为新数据。 这同样适用于从项目导出的计划项目和PDF文件。
 
-下面是智能字幕的外观示例：
 
-![折线图可视化图表的智能字幕，包括季节性、最小值、最大值、尖峰和下降。](assets/captions.png)
+## 可视化内容 {#visualizations}
+
+以下可视化图表支持智能字幕：
+
+* [行](line.md)（包括多行）
+* [条形图](bar.md)
+* [水平条](horizontal-bar.md)
+* [区域](area.md)（包括多条区域线）
+* [圆环图](donut.md)
+* [流失](fallout/fallout-flow.md)
+* [流量](c-flow/flow.md)
+
+<!--
+Here is an example of what intelligent captions could look like:
+
+![Intelligent captions for Line visualization including Seasonality, Min, Max, Spike, and Decline.](assets/captions.png)
+-->
 
 ## 操作
 
@@ -111,15 +125,24 @@ ht-degree: 22%
 
 ### 复制到剪贴板 {#copy}
 
-您可以将字幕复制到剪贴板并将它们粘贴到PowerPoint或其他工具中。 选择字幕对话框右上角的![将字幕复制到剪贴板](/help/assets/icons/Copy.svg)。
+您可以将字幕复制到剪贴板并将它们粘贴到PowerPoint或其他工具中。 可以在逐个视图中复制单个字幕，也可以在扩展字幕视图中一次复制所有字幕。
+
+* 要复制字幕，请选择字幕对话框右上角的![将字幕复制到剪贴板](/help/assets/icons/Copy.svg)。
+
+### 显示全部或单个智能字幕  {#show-all-or-individual}
+
+您可以在扩展视图中一次显示所有智能字幕，也可以在一个视图下逐一显示单个智能字幕。
+
+* 要显示所有智能字幕，请选择![显示所有智能字幕](/help/assets/icons/Maximize.svg)。
+* 要逐一显示单个智能字幕，请选择![显示单个智能字幕](/help/assets/icons/Minimize.svg)。
 
 ### 编辑显示区 {#edit}
 
 您可以编辑字幕的显示，如隐藏或取消隐藏特定类别的洞察。
 
-1. 在“智能字幕”对话框中选择![编辑智能字幕显示](/help/assets/icons/EditInLight.svg)。
+1. 在“智能字幕”对话框中选择![编辑智能字幕的可见性](/help/assets/icons/EditInLight.svg)。
 
-1. 在![可见性](/help/assets/icons/Visibility.svg)之间切换可显示特定见解（如&#x200B;**[!UICONTROL 分钟]**），或在![可见性关闭](/help/assets/icons/VisibilityOff.svg)之间切换可隐藏特定见解（如&#x200B;**[!UICONTROL 尖峰]**）。
+1. 在![切换可见性](/help/assets/icons/Visibility.svg)之间切换可显示特定见解（如&#x200B;**[!UICONTROL 分钟]**），或在![切换可见性](/help/assets/icons/VisibilityOff.svg)之间切换可隐藏特定见解（如&#x200B;**[!UICONTROL 尖峰]**）。
 
    ![编辑智能字幕](assets/edit-intelligent-captions.png)
 
@@ -128,7 +151,7 @@ ht-degree: 22%
 
 ### 提供反馈
 
-您可以对生成的智能字幕提供反馈。
+您可以针对生成的智能字幕提供反馈（反馈只能在扩展的字幕视图中提供）。
 
 1. 在“智能字幕”对话框中选择![更多操作](/help/assets/icons/More.svg)。
 
@@ -162,7 +185,7 @@ ht-degree: 22%
 
 * **解决方案访问**：智能字幕功能在Customer Journey Analytics中可用，但在Adobe Analytics中不可用。
 
-* **合同访问权限**：如果您无法使用智能字幕，请联系贵组织的管理员或Adobe客户代表。 在组织中使用智能字幕之前，您必须同意某些与GenAI相关的法律条款。
+* **合同访问权限**：如果您无法使用智能字幕，请联系您组织的管理员或Adobe帐户代表（管理员）。 在组织中使用智能字幕之前，您必须同意某些与创作AI相关的法律条款。
 
 * **权限**：在[!UICONTROL Adobe Admin Console]中，[!UICONTROL 报告工具] **[!UICONTROL 智能字幕]**&#x200B;权限决定了访问权限。 [产品配置文件管理员](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)需要在[!UICONTROL Admin Console]中执行这些步骤：
    1. 导航到&#x200B;**[!UICONTROL Admin Console]** > **[!UICONTROL 产品和服务]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL 产品配置文件]**。

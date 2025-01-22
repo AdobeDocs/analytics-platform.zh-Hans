@@ -4,7 +4,7 @@ title: 使用模板
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 91c982ac3a8b2286e3da78d50bdf1f378f75e7ec
+source-git-commit: 75a6db5fde167235a86241cb6065602d7157c390
 workflow-type: tm+mt
 source-wordcount: '19288'
 ht-degree: 86%
@@ -1548,4 +1548,3 @@ Analysis Workspace中的模板（或公司模板）可快速分析最常见的�
 | **Journey Optimizer登录页面** | 查看用户行为、参与模式、转化率和其他关键量度。<p>**这可以帮助您**&#x200B;更好地了解登陆页面的有效性。 </p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如优化您的登陆页面性能。</p> |
 | **Journey Optimizer概述报告** | 查看您环境中所有营销活动和历程流量和参与量度的全面摘要。<p>**这可以帮助您**&#x200B;更好地了解营销活动和历程的高效率。 </p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如根据目标受众的参与度调整营销活动和历程。</p> |
 | **Journey Optimizer订阅** | 查看与特定列表相关轮廓的订阅和退订。<p>**这可以帮助您**&#x200B;更好地了解不同订阅营销活动和计划在提高参与度和转化方面的有效性。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如根据目标受众的参与度调整订阅营销活动。</p> |
-
