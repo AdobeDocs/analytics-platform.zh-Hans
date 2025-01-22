@@ -3,10 +3,10 @@ title: 当前 Customer Journey Analytics 发行说明
 description: 查看最新的Customer Journey Analytics发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: eff900722dc06d3bb272d1143c0e2344855e3c5c
+source-git-commit: 806bcaa72479c3e871e12fd1c4802bac97eda439
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '702'
+ht-degree: 28%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 警报：AN-363263；AN-364880；AN-365029；AN-365960
 受众：AN-362564；AN-363254；
 数据摄取：AN-362359；AN-362751
-数据视图：AN-362089；AN-365213；AN-365770；AN-366171
+数据视图：AN-362089；AN-365213；AN-365770；AN-366171；AN-366681
 派生字段：AN-359711；AN-362496
 导出位置：AN-363999
 完整表导出：AN-363055
