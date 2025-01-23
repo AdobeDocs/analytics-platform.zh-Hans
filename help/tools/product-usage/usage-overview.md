@@ -2,7 +2,7 @@
 title: 产品使用情况概述
 description: 查看有关贵组织如何使用Customer Journey Analytics的见解和报表。
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: ae22dc84406427567d45b670aa9737ea3a8b2f7b
+source-git-commit: dbf4ff28f693085320c3e496ea99eede2ddb17d2
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 12%
@@ -10,8 +10,6 @@ ht-degree: 12%
 ---
 
 # 产品使用情况概述
-
-{{release-limited-testing}}
 
 产品使用情况使贵组织能够查看有关贵组织如何使用Customer Journey Analytics的分析数据。 它适用于使用Customer Journey Analytics的所有组织。 启用后，将自动创建并关联以下Adobe Experience Platform组件。 这些组件全部为系统所有、只读，无法编辑。
 

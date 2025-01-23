@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 532f3a30e65d715f5b5b4caea85885a13d82641c
-workflow-type: ht
-source-wordcount: '2319'
-ht-degree: 100%
+source-git-commit: 8c4b42c0046068ba45a47ecd9c7eab2ed89028e5
+workflow-type: tm+mt
+source-wordcount: '2386'
+ht-degree: 95%
 
 ---
 
@@ -24,6 +24,7 @@ ht-degree: 100%
 | --- | --- |
 | **能够组合数据集（例如 Adobe Analytics 报告包）** | 通过 Customer Journey Analytics，可从多个报告包[组合数据](/help/connections/combined-dataset.md)，如同它们是 Adobe Analytics 中的单个报告包一样。 |
 | **适用于任何类型的数据** | Customer Journey Analytics 与 Experience Platform 保存各种数据架构和类型的能力相结合。使用[体验数据模型 (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)，可以采用统一的方式来表示和组织数据，以便进行数据合并和分析。Adobe Analytics 主要专注于 Web 和移动分析数据，并具有一些[数据导入](https://experienceleague.adobe.com/docs/analytics/import/home.html)功能。 |
+| **BI 扩展** | [BI 扩展](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/data-export/bi-extension) 可让您将 CJA 直接连接到流行的 BI 可视化工具，例如 PowerBI 或 Tableau。通过使用此扩展，您可以让您的 BI 报告与您在 Analysis Workspace 和其他 CJA 报告界面中看到的内容完全匹配。这是获取 CJA 的 BI 报告的一种更简单的方法，无需根据原始数据重新创建报告/量度。 |
 | **跨设备分析** | Customer Journey Analytics 支持来自未经身份验证和经过身份验证的会话的特定于设备的数据集的无缝组合。Customer Journey Analytics 可以将历史数据回填到已知设备。在 Adobe Analytics 中，此功能仅限于单个报告包和使用设备图时。 |
 | **维度增强功能** | Customer Journey Analytics 为使用维度提供了更大的灵活性： <ul><li>**自定义基于数值的维度**：[在数据视图中创建您自己的基于数值的维度](/help/data-views/create-dataview.md#components)。</li><li>**对基于字符串的维度进行排序**：[在自由格式表中按字母顺序对基于字符串的维度进行排序。](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#sort-tables) </li></ul><p>在 Adobe Analytics 中，只有少数内置数值维度可用，并且无法按基于字符串的维度进行排序。</p> |
 | **派生字段** | [派生字段](/help/data-views/derived-fields/derived-fields.md)可为数据转换报告时间。可即时组合、更正或创建数据，并且这些转换可追溯地应用于所有报告。 |
@@ -31,11 +32,12 @@ ht-degree: 100%
 | **试验分析** | Customer Journey Analytics 可以[评估来自定义为连接一部分的任何数据源的任何试验](/help/analysis-workspace/c-panels/experimentation.md)的提升度和置信度。通过此评估，您可以了解跨任何渠道的客户互动之间的因果关系。Analytics 仅限用于通过 A4T 进行的试验分析。 |
 | **预测** | [预测](/help/analysis-workspace/c-forecast/forecasting.md)是一种 AI/ML 功能，包括基于 Customer Journey Analytics 中已有的历史数据对时间序列相关数据进行统计预测。预测可以出现在自由格式的表格和折线图可视化中。 |
 | **引导式分析** | [引导式分析](/help/guided-analysis/overview.md)使用户能够通过基于 Customer Journey Analytics 的跨渠道数据的引导式工作流，自助提供有关客户历程的高质量数据和洞察。 |
-| **智能题注** | 智能题注使用先进的机器学习和生成式 AI 为 Workspace 可视化提供有价值的自然语言洞察。初始版本为 [Line](/help/analysis-workspace/visualizations/line.md) 可视化提供了自动生成的洞察。 |
+| **智能题注** | [智能字幕](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions)使用高级机器学习和创作AI为Workspace可视化图表提供有价值的自然语言见解。 以下可视化图表支持智能字幕：折线图、多折线图、条形图、水平条形图、圆环图、面积图、流量图和流失图。 |
+| **产品使用情况** | [产品使用情况]https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview()显示贵组织如何使用Customer Journey Analytics。 |
 | **报告时间变换** | 通过 Customer Journey Analytics 中的[数据视图](/help/data-views/data-views.md)，可进一步解释从某个连接获得的数据。可不更改实施即更改或删除数据、使用子字符串操纵维度、从任意值创建量度或筛选子事件。以非破坏性的方式进行所有这些转换。Adobe Analytics 通过虚拟报告包和自定义会话长度提供有限的功能。 |
-| **BI 扩展** | [BI 扩展](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/data-export/bi-extension) 可让您将 CJA 直接连接到流行的 BI 可视化工具，例如 PowerBI 或 Tableau。通过使用此扩展，您可以让您的 BI 报告与您在 Analysis Workspace 和其他 CJA 报告界面中看到的内容完全匹配。这是获取 CJA 的 BI 报告的一种更简单的方法，无需根据原始数据重新创建报告/量度。 |
-| **SQL 访问** | 通过使用 Data Distiller 选项，Customer Journey Analytics 可以消除 Adob&#x200B;e 后端处理中收集的数据的限制。您可以使用 SQL 修改数据、创建适合您的业务的值和数据集，并继续探索。Analytics 不支持对其数据进行任何类型的 SQL 访问。 |
+| **SQL 访问** | 通过使用数据蒸馏器选项，Customer Journey Analytics 可以消除 Adob&#x200B;e 后端处理中收集的数据的限制。您可以使用 SQL 修改数据、创建适合您的业务的值和数据集，并继续探索。Analytics 不支持对其数据进行任何类型的 SQL 访问。 |
 | **拼合** | [拼合](/help/stitching/overview.md)是一项强大的功能，可以提升事件数据集进行跨渠道分析的适用性。跨渠道分析是 Customer Journey Analytics 可以处理的主要用例，允许您基于通用标识符（人员 ID）无缝组合并运行来自不同渠道的多个数据集的报告。 |
+| Adobe Journey Optimizer中的&#x200B;**模板** | 在Adobe Journey Optimizer中自定义新的报表界面，方法是：在Customer Journey Analytics中创建或编辑[模板](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=en)，然后保存该模板，以在Journey Optimizer的“报表”页面上使用。 |
 | **无限量的客户维度和量度** | Customer Journey Analytics 维度是无限的；值可以是数字、文本、对象、列表或它们的组合。维度可以是嵌套的或分层的。<br/>根据对比度，Adobe Analytics 最多支持 75 个 prop 和 250 个 eVar。 |
 | **无限量的唯一值** | Customer Journey Analytics 不限制可以在单个维度上报告的唯一值或维度项目的数量。<p> [维度上没有基数限制](/help/components/dimensions/high-cardinality.md)，允许任何唯一值出现并被计算。</p><p>这种方法消除了大规模 Adobe Analytics 实施中可能存在的报告和分析限制，从而产生 [!UICONTROL 低流量] 标签。</p><p>在 Customer Journey Analytics 中，可以看到 [!UICONTROL Uniques Exceeded] 标签，但这种情况发生的频率要低得多，可以通过对数据应用筛选条件或细分来缓解。</p> |
 
@@ -56,7 +58,7 @@ ht-degree: 100%
 | **GDPR 删除** | 全面支持；请注意，现在与 [!UICONTROL Adobe Experience Platform] 一起处理 GDPR。Customer Journey Analytics 继承 [!UICONTROL Experience Platform] 对底层数据集所作的任何数据更改。 |
 | **提升和置信度报告** | 通过[“试验”面板](/help/analysis-workspace/c-panels/experimentation.md)提供全面支持 |
 | **列表变量/列表属性** | 全面支持。Customer Journey Analytics 使用 XDM 并支持无限的字符串数组，其使用方式与 listVars 类似。 |
-| **促销 eVar** | 通过[绑定维度和绑定量度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension)提供全面支持 |
+| **促销 eVar** | 通过[绑定维度和绑定量度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=zh-hans#binding-dimension)提供全面支持 |
 | **量度** | 全面支持；Customer Journey Analytics 利用体验数据模型 (XDM)，支持无限量的量度，并且不会与 Adobe Analytics 的自定义成功事件绑定。我们已对 Adobe Analytics 中的一些标准量度名称进行了重命名，例如：“访客”=“人员”、“访问”=“会话”、“点击”=“事件”。 |
 | **将项目、筛选条件和计算量度从 Adobe Analytics 迁移到 Customer Journey Analytics** | 全面支持。 |
 | **移动记分卡/仪表板** | 全面支持 |
@@ -64,6 +66,7 @@ ht-degree: 100%
 | **PDF 导出** | 全面支持 |
 | **项目策划** | 全面支持 |
 | **项目链接** | 全面支持 |
+| **产品模板** | 包括[预建模板](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates)和[公司模板](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates#access-a-company-template)。 |
 | **报告时处理** | 全面支持；Customer Journey Analytics 完全依赖于“报告时间处理”。 |
 | **报告 API 访问** | 全面支持；通过 [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/) 提供。 |
 | **计划报告/项目** | 全面支持 |
@@ -118,7 +121,6 @@ ht-degree: 100%
 | 功能 | 注释 |
 | --- | --- |
 | **贡献分析** | 有计划以后支持。 |
-| **项目模板** | 有计划以后支持。 |
 | **实时报告** | 有计划以后支持。 |
 | **区段 IQ** | 有计划以后支持。 |
 | **交易 ID 数据源** | 有计划以后支持。 |
