@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 8c4b42c0046068ba45a47ecd9c7eab2ed89028e5
+source-git-commit: 55da4faa73d708a450274c2b4d44c246ef5feb49
 workflow-type: tm+mt
-source-wordcount: '2386'
-ht-degree: 95%
+source-wordcount: '2417'
+ht-degree: 94%
 
 ---
 
@@ -33,7 +33,8 @@ ht-degree: 95%
 | **预测** | [预测](/help/analysis-workspace/c-forecast/forecasting.md)是一种 AI/ML 功能，包括基于 Customer Journey Analytics 中已有的历史数据对时间序列相关数据进行统计预测。预测可以出现在自由格式的表格和折线图可视化中。 |
 | **引导式分析** | [引导式分析](/help/guided-analysis/overview.md)使用户能够通过基于 Customer Journey Analytics 的跨渠道数据的引导式工作流，自助提供有关客户历程的高质量数据和洞察。 |
 | **智能题注** | [智能字幕](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions)使用高级机器学习和创作AI为Workspace可视化图表提供有价值的自然语言见解。 以下可视化图表支持智能字幕：折线图、多折线图、条形图、水平条形图、圆环图、面积图、流量图和流失图。 |
-| **产品使用情况** | [产品使用情况]https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview()显示贵组织如何使用Customer Journey Analytics。 |
+| **历程画布** | [历程画布](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=en)是Analysis Workspace中的可视化图表，允许您分析人员如何通过定义的历程或从中退出。 |
+| **产品使用情况** | [产品使用情况](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview()显示贵组织如何使用Customer Journey Analytics。 |
 | **报告时间变换** | 通过 Customer Journey Analytics 中的[数据视图](/help/data-views/data-views.md)，可进一步解释从某个连接获得的数据。可不更改实施即更改或删除数据、使用子字符串操纵维度、从任意值创建量度或筛选子事件。以非破坏性的方式进行所有这些转换。Adobe Analytics 通过虚拟报告包和自定义会话长度提供有限的功能。 |
 | **SQL 访问** | 通过使用数据蒸馏器选项，Customer Journey Analytics 可以消除 Adob&#x200B;e 后端处理中收集的数据的限制。您可以使用 SQL 修改数据、创建适合您的业务的值和数据集，并继续探索。Analytics 不支持对其数据进行任何类型的 SQL 访问。 |
 | **拼合** | [拼合](/help/stitching/overview.md)是一项强大的功能，可以提升事件数据集进行跨渠道分析的适用性。跨渠道分析是 Customer Journey Analytics 可以处理的主要用例，允许您基于通用标识符（人员 ID）无缝组合并运行来自不同渠道的多个数据集的报告。 |
@@ -46,6 +47,7 @@ ht-degree: 95%
 | Adobe Analytics 功能 | 关于 CJA 支持的注释 |
 | --- | --- |
 | **异常检测** | 全面支持 |
+| **资产转移** | 全面支持 |
 | **归因 IQ** | 全面支持 |
 | **机器人检测** | [全面支持](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html) |
 | **计算量度** | 全面支持。传统 Analysis Workspace 中的任何现有计算量度都不会移植到 Customer Journey Analytics。 |
