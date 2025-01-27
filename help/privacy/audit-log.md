@@ -4,10 +4,10 @@ description: 了解如何查看和管理Customer Journey Analytics审核日志�
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: f3c95e57144037323bcc1dd212512b2dddeb833f
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 66%
+source-wordcount: '932'
+ht-degree: 60%
 
 ---
 
@@ -63,22 +63,22 @@ ht-degree: 66%
 将显示以下项目：
 
 * **[!UICONTROL 操作名称]**：执行的操作。 可能的值包括：
-   * API请求
-   * 批准
-   * 创建
-   * DELETE
-   * 编辑
-   * 禁运
-   * 导出
-   * ORG_CHANGE
-   * 刷新
-   * 共享
-   * 转移
-   * 取消批准
-   * 取消共享
+   * API_REQUEST：任何操作都会触发后端API请求。 此时将显示有关API请求内容的详细信息。
+   * 批准：已执行“批准”操作。
+   * 创建：执行了“创建”操作。
+   * DELETE：执行了“删除”操作。
+   * 编辑：已执行“编辑”操作。
+   * 禁运：
+   * 导出：执行了“导出”操作。
+   * ORG_CHANGE：执行了组织更改操作。
+   * 刷新：已执行“刷新”操作。
+   * 共享：执行了“共享”操作。
+   * 转移：已执行转移操作。
+   * 取消批准：执行了“取消批准”操作。
+   * 取消共享：执行了“取消共享”操作。
 * **[!UICONTROL 创建日期]**：执行操作的日期和时间。
 * **[!UICONTROL 描述]**：操作的摘要。
-* **[!UICONTROL 用户名]**：执行操作的用户。
+* **[!UICONTROL 用户名]**：执行操作的用户。 有时，用户名可能缺失。 考虑使用[产品使用情况](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/tools/product-usage/usage-overview)功能，因为它始终包含登录用户名。
 * **[!UICONTROL 电子邮件]**：执行操作的用户的电子邮件地址。
 * **[!UICONTROL 组件名称]**：用户对其执行操作的组件。
 * **[!UICONTROL 组件类型]**：组件的类型。 可能的值包括：
@@ -94,7 +94,7 @@ ht-degree: 66%
    * 筛选
    * IMS组织
    * 移动设备
-   * 项目
+   * 项目(Workspace)
    * 报告
    * 计划项目
    * 用户
