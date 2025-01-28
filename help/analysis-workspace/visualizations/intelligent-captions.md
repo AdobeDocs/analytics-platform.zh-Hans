@@ -4,9 +4,9 @@ title: 智能题注
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 7d103e9d709ec076519360a4b43af44f061171e9
+source-git-commit: 763f2849afee98e704a9f231ed7e203dd3be73f6
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '876'
 ht-degree: 19%
 
 ---
@@ -83,6 +83,12 @@ ht-degree: 19%
 * 分析师，他们需要与其他用户分享叙述。 分析师需要这些见解才能为其用户提供上下文。
 * 希望快速发现高级外卖的企业用户。
 
+>[!BEGINSHADEBOX]
+
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Intellgent字幕](https://video.tv.adobe.com/v/3420131/?learn=on){target="_blank"}。
+
+>[!ENDSHADEBOX]
+
 ## 启动智能字幕 {#launch}
 
 要为可视化启动自动生成的智能字幕，请选择可视化右上角的![智能字幕](/help/assets/icons/AI.svg)。 此选择将生成自然语言见解。
@@ -107,7 +113,7 @@ ht-degree: 19%
 
 * [行](line.md)（包括多行）
 * [条形图](bar.md)
-* [水平条](horizontal-bar.md)
+* [水平条形图](horizontal-bar.md)
 * [区域](area.md)（包括多条区域线）
 * [圆环图](donut.md)
 * [流失](fallout/fallout-flow.md)
