@@ -5,16 +5,16 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: c2e7b0595a719faa751e3cb39668006db0d89d48
+source-git-commit: 0e3f15abbc904786c359160749d62754a9ebbe50
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 94%
+source-wordcount: '2418'
+ht-degree: 93%
 
 ---
 
 # Customer Journey Analytics 功能支持
 
-下表列出了 Customer Journey Analytics 所独有的功能，以及 Customer Journey Analytics 中支持、部分支持或不支持的 Adobe Analytics 功能。由于后续会向 Customer Journey Analytics 添加其他功能，因此这些列表会随着时间而发生变化。
+下表列出了Customer Journey Analytics独有的功能，以及Customer Journey Analytics支持、部分支持或不支持的Adobe Analytics功能。 由于后续会向 Customer Journey Analytics 添加其他功能，因此这些列表会随着时间而发生变化。
 
 ## Adobe Customer Journey Analytics 独有的功能 {#cja-not-aa}
 
@@ -32,7 +32,7 @@ ht-degree: 94%
 | **试验分析** | Customer Journey Analytics 可以[评估来自定义为连接一部分的任何数据源的任何试验](/help/analysis-workspace/c-panels/experimentation.md)的提升度和置信度。通过此评估，您可以了解跨任何渠道的客户互动之间的因果关系。Analytics 仅限用于通过 A4T 进行的试验分析。 |
 | **预测** | [预测](/help/analysis-workspace/c-forecast/forecasting.md)是一种 AI/ML 功能，包括基于 Customer Journey Analytics 中已有的历史数据对时间序列相关数据进行统计预测。预测可以出现在自由格式的表格和折线图可视化中。 |
 | **引导式分析** | [引导式分析](/help/guided-analysis/overview.md)使用户能够通过基于 Customer Journey Analytics 的跨渠道数据的引导式工作流，自助提供有关客户历程的高质量数据和洞察。 |
-| **智能题注** | [智能字幕](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions)使用高级机器学习和创作AI为Workspace可视化图表提供有价值的自然语言见解。 以下可视化图表支持智能字幕：折线图、多折线图、条形图、水平条形图、圆环图、面积图、流量图和流失图。 |
+| **智能题注** | [智能字幕](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions)使用高级机器学习和创作AI为Workspace可视化图表提供有价值的自然语言见解。 以下可视化图表支持智能字幕：折线图、多折线图、条形图、水平条形图、圆环图、面积图、流量图和流失图。 |
 | **历程画布** | [历程画布](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=en)是Analysis Workspace中的可视化图表，允许您分析人员如何通过定义的历程或从中退出。 |
 | **产品使用情况** | [产品使用情况](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/tools/product-usage/usage-overview)显示贵组织如何使用Customer Journey Analytics。 |
 | **报告时间变换** | 通过 Customer Journey Analytics 中的[数据视图](/help/data-views/data-views.md)，可进一步解释从某个连接获得的数据。可不更改实施即更改或删除数据、使用子字符串操纵维度、从任意值创建量度或筛选子事件。以非破坏性的方式进行所有这些转换。Adobe Analytics 通过虚拟报告包和自定义会话长度提供有限的功能。 |

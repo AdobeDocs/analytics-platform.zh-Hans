@@ -6,14 +6,22 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 987d09a10da9cf972947fae99e5b88bfc8da135d
+source-git-commit: 4438f4f7bd2794f459a1f771b1685f2501838b5f
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 1%
+source-wordcount: '241'
+ht-degree: 0%
 
 ---
 
 # 使用个性化对象以用于Adobe Journey Optimizer
+
+个性化对象的结果最终位于数据集中。 试验的结果。 当客户将AA与Target结合使用时，最终的空间与他们迁移到CJA以及他们将CJA与Adobe Target结合使用时空间完全不同。
+
+Target是设置A/B测试或试验的旧方式。 然后，确保Target中这些测试的结果最终以AA为报表生成。 现在，如果您使用的是Target，而不是说您希望Target中包含数据，那么您现在可以选择CJA作为Adobe Target活动的报表源。 因此，如果客户在AA中执行这项操作，并且他们想要转到CJA， ...
+
+如果客户拥有AJO，并且使用AJO中的选件，那么他们可以设置选件，并且这还会在Platform中创建数据集……但这与升级毫无关系。
+
+
 
 我们需要回答的问题：
 
@@ -29,6 +37,8 @@ ht-degree: 1%
 
 ## 手动实施Web SDK
 
+
+## 移动SDK实施
 
 
 

@@ -4,7 +4,7 @@ title: 使用模板
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 75a6db5fde167235a86241cb6065602d7157c390
+source-git-commit: c4ea1ffd6ffb21f972bb144fe6b56526ad4697ff
 workflow-type: tm+mt
 source-wordcount: '19288'
 ht-degree: 86%
@@ -947,8 +947,6 @@ Analysis Workspace中的模板（或公司模板）可快速分析最常见的�
 | **浏览器类型** | 查看那些开发了人们用来访问您网站的最常用浏览器的组织名称。这与“浏览器”模板不同，因为它不会将同一浏览器的不同版本作为单独的维度项列出。<p>**这有助于您**&#x200B;更好地了解访客最常使用的浏览器</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如通过使用热门浏览器测试网站的新版本来提高网站质量。这样做可以最大限度地加强质量控制工作。 </p><p>此模板使用浏览器类型维度。 </p> |
 
 ### Web：客户获取 {#web-acquisition}
-
-<!--CJA only-->
 
 <!--AA only-->
 

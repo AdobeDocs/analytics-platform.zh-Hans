@@ -1,81 +1,26 @@
 ---
-title: 了解您的Adobe Analytics实施以及它如何影响您升级到Customer Journey Analytics
-description: 了解从Adobe Analytics升级到Customer Journey Analytics时推荐的路径
+title: 从第三方分析解决方案升级到Customer Journey Analytics
+description: 了解如何从第三方分析解决方案升级到Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 source-git-commit: a462bdbff59e8d83d6948ef882e66690624c4847
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '768'
 ht-degree: 8%
 
 ---
 
-# 了解您的Adobe Analytics实施以及它如何影响您升级到Customer Journey Analytics {#implementation-affects-upgrade}
+# 从第三方分析解决方案升级到Customer Journey Analytics {#upgrade-from-third-party}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-upgrade-appmeasurement"
->title="AppMeasurement（手动JS文件）"
->abstract="JavaScript实施，在页面上加载AppMeasurement.js，并使用s对象(例如，s.eVar1)将数据发送到Adobe。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-upgrade-analyticsextension"
->title="Adobe Analytics扩展（标记）"
->abstract="用于加载Adobe Experience Platform数据收集（以前称为Launch）的标记实施。 标记上安装了Adobe Analytics扩展。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-upgrade-websdk"
->title="Web SDK (alloy.js)"
->abstract="JavaScript实施在页面上加载Web SDK库(alloy.js)，并使用JSON有效负载将数据发送到Adobe。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-upgrade-websdkextension"
->title="Web SDK扩展（标记）"
->abstract="用于加载Adobe Experience Platform数据收集（以前称为Launch）的标记实施。 标记上安装了Web SDK扩展。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-upgrade-api"
->title="数据插入 API"
->abstract="一个使用数据插入API或批量数据插入API的实施。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-upgrade-mobilesdk"
->title="Mobile SDK"
->abstract="一个使用Adobe Experience Platform Mobile SDK的实施。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-upgrade-unknown"
->title="未知实施"
->abstract="如果您不是实施的管理者，则可以临时选择此选项。"
+>id="cja-upgrade-third-party"
+>title="第三方分析产品"
+>abstract="为第三方分析产品(如Google Analytics)收集数据的实施。 选择此选项将禁用调查表中的多个选项，当从第三方分析产品升级到Customer Journey Analytics时，这些选项不适用。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -83,13 +28,18 @@ ht-degree: 8%
 > 
 >在回答[Customer Journey Analytics升级核对清单](https://gigazelle.github.io/cja-ttv/)中的问题时，使用此页上的信息。
 
-Adobe Analytics有多种实施方式。 升级到Customer Journey Analytics时，并非所有升级路径都可用于所有Adobe Analytics实施。 但是，无论Adobe Analytics在您的组织中如何实施，建议的升级路径都可用。
+推荐的从第三方分析解决方案升级到Customer Journey Analytics的过程是Experience PlatformWeb SDK的新实施，该方法是Customer Journey Analytics的首选数据收集方法。 在与Web SDK结合使用时，Adobe还建议将历史数据从第三方分析解决方案摄取到Adobe Experience Platform中。
 
-请通过以下信息了解您当前的Adobe Analytics实施以及贵组织可用的升级路径。
+<!-- After you have enough historical data using the Experience Platform Web SDK and you have fully transitioned to Customer Journey Analytics, the Analytics source connector can be turned off and the Web SDK can be used exclusively. -->
+
+从第三方分析解决方案(如Google Analytics)转到Customer Journey Analytics时，请遵循以下过程：
+
+1. ...
+
 
 如果您需要更具体的建议、指导或支持，请联系您的Adobe代表。
 
-| 现有Adobe Analytics实施 | 描述 | 可用的升级路径 |
+| 现有的分析解决方案 | 描述 | 可用的升级路径 |
 |---------|----------|----------|
 | AppMeasurement | AppMeasurementJavaScript一直以来都是实施Adobe Analytics的常用方法。<p>有关此实现类型的更多信息，请参阅[为JavaScript实施AppMeasurement的Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/js/overview)。</p> | <ul><li>[（推荐）用于持续数据收集的Experience PlatformWeb SDK的新实现；用于历史数据的Analytics Source Connector](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience PlatformWeb SDK的新实现](/help/data-ingestion/aepwebsdk.md) </li><li>将Adobe Analytics迁移到Web SDK</li><li>[Analytics Source Connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md)</li></ul> |
 | Adobe Analytics扩展（标记） | <p>Adobe Experience Platform 中的标记是一款标记管理解决方案，可让您在满足其他标记要求的同时部署 Analytics 代码。Adobe 提供了与其他解决方案和产品的集成，并允许您部署自定义代码。无需依赖组织中的开发团队，也可以完成以下所有任务，进而更新网站上的代码。</p><p>有关此实现类型的更多信息，请参阅[使用Adobe Analytics扩展实施Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/launch/overview)。</p> | <ul><li>[（推荐）用于持续数据收集的Experience PlatformWeb SDK的新实现；用于历史数据的Analytics Source Connector](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience PlatformWeb SDK的新实现](/help/data-ingestion/aepwebsdk.md) </li><li>将Adobe Analytics迁移到Web SDK</li><li>[Analytics Source Connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md)</li></ul> |

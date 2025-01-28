@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: cb6a439def7bf0fab1768fdd1c7d909b76b995d6
+source-git-commit: 2d9475c4aa3ca9ba92856182e8c93f59180d833a
 workflow-type: tm+mt
-source-wordcount: '1565'
+source-wordcount: '1587'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 从Adobe Analytics升级到Customer Journey Analytics时，您可以按照[建议的升级步骤](#recommended-upgrade-steps-for-most-organizations)操作。 或者，您可以[针对贵组织的独特情况动态生成升级步骤](#dynamically-generate-upgrade-steps-for-your-organization)。
 
-## 为大多数组织推荐的升级步骤
+## 为大多数组织推荐的升级步骤 {#upgrade-process}
 
 建议的从Adobe Analytics升级到Customer Journey Analytics的过程是Experience PlatformWeb SDK的新实施，该方法是Customer Journey Analytics的首选数据收集方法。 在与Web SDK结合使用时，Adobe还建议使用Analytics Source Connector来帮助过渡到Customer Journey Analytics。 使用Analytics Source Connector保留Adobe Analytics历史数据并执行并排数据比较。
 
@@ -28,7 +28,16 @@ ht-degree: 5%
 >
 >如果本节中描述的升级步骤对贵组织不切实际，请使用[Adobe AnalyticsCustomer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)动态生成针对贵组织独特环境量身定制的升级步骤。
 
-### 高级别建议的升级过程
+### 高级别建议的升级过程 {#high-level-upgade-process}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-historical-data"
+>title="来自Adobe Analytics的历史数据"
+>abstract="将您的Adobe Analytics历史报表包数据引入Adobe Experience Platform并Customer Journey Analytics。"
+
+<!-- markdownlint-enable MD034 -->
 
 1. **实施Experience PlatformWeb SDK（用于持续的数据收集）**
 
@@ -54,7 +63,7 @@ ht-degree: 5%
 
      您可以保持Analytics Source Connector运行，直到您熟悉并熟悉这些差异为止。<!--elaborate on what those differences are? -->
 
-   建议不要将Analytics Source Connector作为独立实施长期用于Customer Journey Analytics。 这是由于高延迟、架构复杂杂乱、依赖于Adobe Analytics命名法(属性、eVar等)，以及最终从源连接器移动到推荐的Web SDK实施方面的困难。
+   建议不要将Analytics Source Connector作为独立实施长期用于Customer Journey Analytics。 这是由于高延迟、架构复杂杂乱、依赖于Adobe Analytics命名法(属性、eVar等)，以及难以最终从Analytics源连接器迁移到建议的Web SDK实施。
 
 ### 详细的建议升级步骤
 
