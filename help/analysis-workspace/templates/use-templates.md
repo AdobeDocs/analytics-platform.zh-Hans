@@ -4,10 +4,10 @@ title: 使用模板
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: c4ea1ffd6ffb21f972bb144fe6b56526ad4697ff
+source-git-commit: 4c0a18bcaef0b9d6a4d2289fc0be20cfcfefff7d
 workflow-type: tm+mt
-source-wordcount: '19288'
-ht-degree: 86%
+source-wordcount: '19477'
+ht-degree: 85%
 
 ---
 
@@ -524,6 +524,15 @@ Analysis Workspace中的模板（或公司模板）可快速分析最常见的�
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="template--productUsageOverviewReport"
+>title="查看如何在您的组织中使用Customer Journey Analytics产品。"
+>abstract="**这可以帮助您**&#x200B;更好地了解有多少人正在使用Customer Journey Analytics、他们使用频率以及一段时间内的使用趋势。 您还可以查看正在创建的项目的数量以及有关这些项目的详细信息（例如哪些组件、可视化和面板最常用）以及许多其他使用情况统计数据。<br/>**根据您了解的情况，您可以**&#x200B;执行任意数量的操作，如删除未使用的项目或组件，或提供用户培训以了解常用功能。"
+
+<!-- markdownlint-enable MD034 -->
+
 可以使用以下模板：
 
 | 模板名称 | 为何使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
@@ -541,6 +550,7 @@ Analysis Workspace中的模板（或公司模板）可快速分析最常见的�
 | **页面摘要** | 查看您所有资产中任何页面的关键信息。显示页面浏览量、趋势线、流量可视化等。  <p>**这可以帮助您**&#x200B;更好地了解人们如何与给定页面进行交互。</p><p>**根据您所了解的情况，您可能会**&#x200B;采取多种行动，比如分析页面在一段时间内的性能，或者更好地理解是什么推动了页面流量的增长。</p><p>此模板使用页面查看次数量度。 它还使用 Line 可视化和 Flow 可视化。</p> |
 | **登录页面** | 查看人们首次访问您的网站时访问的热门页面。 <p>**这可以帮助您**&#x200B;更好地了解哪些页面为您的网站带来了最多的流量，或者更多地了解访客对您网站的第一印象。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如优化人们在网站上获得的初步体验，或者确保人们在进入您的网站时首先看到的页面是友好的，并提供指向您网站其他区域的必要链接。</p><p>此模板使用“会话”量度。 它还使用了条形可视化内容和自由格式表可视化内容。</p> |
 | **退出页面** | 查看人们在即将离开您的网站之前访问的热门页面。<p>**这可以帮助您**&#x200B;更好地了解哪些页面正在将人们带离网站。 </p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如更新常见的退出页面，以优化人们在离开前获得的体验，或者包含内容或链接，以鼓励人们留在您的网站上。</p><p>此模板使用“会话”量度。 它还使用了条形可视化内容和自由格式表可视化内容。</p> |
+| **产品使用情况概述**（即将推出） | 查看如何在您的组织中使用Customer Journey Analytics产品。 <p>**这可以帮助您**&#x200B;更好地了解有多少人正在使用Customer Journey Analytics、他们使用频率以及一段时间内的使用趋势。 您还可以查看正在创建的项目的数量以及有关这些项目的详细信息（例如哪些组件、可视化和面板最常用）以及许多其他使用情况统计数据。</p><p>**根据您了解的情况，您可以**&#x200B;执行任意数量的操作，如删除未使用的项目或组件，或提供用户培训以了解常用功能。</p> |
 
 ### Web：转化 {#web-conversion}
 
