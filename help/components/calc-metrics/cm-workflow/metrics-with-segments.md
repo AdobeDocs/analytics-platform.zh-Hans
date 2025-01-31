@@ -3,7 +3,7 @@ description: 通过筛选单个量度，可在同一报表中比较量度。
 title: 过滤量度
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 1%
