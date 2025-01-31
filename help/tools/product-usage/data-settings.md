@@ -2,7 +2,7 @@
 title: 产品使用情况数据设置
 description: 启用、禁用或配置产品使用设置。
 exl-id: 85e2b515-78e6-41e8-9947-369b1e65e4fd
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: e7534a1943307f5bbc92a845ddffe0651794b854
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 23%
@@ -10,8 +10,6 @@ ht-degree: 23%
 ---
 
 # 产品使用情况数据设置 {#product-usage-data-settings}
-
-{{release-limited-testing}}
 
 _数据设置_&#x200B;页面处理您的产品使用情况配置。 您可以使用此页面为您的组织启用或禁用产品使用。 您还可以配置在哪个Adobe Experience Platform沙盒下创建数据集，并根据需要覆盖数据保留窗口。 它仅对产品管理员可见。
 

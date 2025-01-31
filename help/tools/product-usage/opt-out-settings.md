@@ -2,7 +2,7 @@
 title: 产品使用情况选择退出设置
 description: 管理组织中各个用户的选择退出设置。
 exl-id: 0ea24582-bab8-4a76-ac00-7c265423e8bb
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: e7534a1943307f5bbc92a845ddffe0651794b854
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 11%
@@ -10,8 +10,6 @@ ht-degree: 11%
 ---
 
 # 产品使用情况选择退出设置 {#product-usage-opt-out-settings}
-
-{{release-limited-testing}}
 
 _选择退出设置_&#x200B;页面允许您从产品使用情况跟踪中排除或重新包含组织内的用户。 它仅对产品管理员可见。
 
