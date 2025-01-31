@@ -5,7 +5,7 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 6%
@@ -25,7 +25,8 @@ ht-degree: 6%
 
 ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Trends]**&#x200B;分析可针对产品性能或用户在一段时间内的行为提供宝贵的见解。 此报告的水平轴是一个时间间隔，而垂直轴测量所需的事件。
 
->[!VIDEO](https://video.tv.adobe.com/v/3421666/?learn=on)
+
+>[!VIDEO](https://video.tv.adobe.com/v/3421666/?quality=12&learn=on)
 
 ## 用例
 

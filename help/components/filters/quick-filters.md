@@ -4,9 +4,9 @@ title: 快速过滤器
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 4ce1b22cce3416b8a82e5c56e605475ae6c27d88
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1170'
 ht-degree: 2%
 
 ---
@@ -16,12 +16,13 @@ ht-degree: 2%
 快速筛选器允许您快速浏览Workspace项目中的数据，而无需在[筛选器生成器](/help/components/filters/create-filters.md)中创建筛选器。
 
 
-+++ 以下视频演示了如何使用快速过滤器。
 
->[!VIDEO](https://video.tv.adobe.com/v/341466/?quality=12&learn=on)
+>[!BEGINSHADEBOX]
 
+观看演示视频，请参阅Analysis Workspace中的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [快速区段](https://video.tv.adobe.com/v/341466/?quality=12&learn=on){target="_blank"}。
 
-+++
+>[!ENDSHADEBOX]
+
 
 当您想要使用快速筛选器时，请注意：
 

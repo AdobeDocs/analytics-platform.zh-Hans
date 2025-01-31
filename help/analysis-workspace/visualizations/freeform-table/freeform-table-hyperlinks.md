@@ -4,9 +4,9 @@ description: 了解如何在Analysis Workspace的自由格式表中为维度项�
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1607'
 ht-degree: 1%
 
 ---
@@ -17,19 +17,19 @@ ht-degree: 1%
 
 在为以下类型的维度项目创建超链接时，此功能特别有用：
 
-* Dimension具有URL值的项目（例如，页面URL维度）
+* Dimension具有URL值的项目（例如，页面URL维度）。
 
-* 包含具有URL值的划分的Dimension项目（例如，具有页面URL维度划分的页面名称维度）
+* 包含具有URL值的划分的Dimension项目（例如，具有页面URL维度划分的页面名称维度）。
 
-* Dimension其值属于URL的项目或划分（例如，属于URL的“页面名称”维度）
+* Dimension其值属于URL的项目或划分（例如，属于URL的“页面名称”维度）。
 
-+++ 观看此功能的视频演示。
 
->[!VIDEO](https://video.tv.adobe.com/v/3430411/?learn=on)
+>[!BEGINSHADEBOX]
 
-{{videoaa}}
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在自由格式表中创建超链接](https://video.tv.adobe.com/v/3430411/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## 创建超链接
 

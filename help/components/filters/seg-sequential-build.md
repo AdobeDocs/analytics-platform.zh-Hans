@@ -3,9 +3,9 @@ description: 顺序过滤器是使用THEN运算符定义过滤器条件顺序的
 title: 顺序过滤器
 feature: Filters
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: 8cf8af1d1d84f4db93ab627e76554f3fe618ef92
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '2459'
+source-wordcount: '2460'
 ht-degree: 3%
 
 ---
@@ -14,13 +14,15 @@ ht-degree: 3%
 
 在组件、容器和组件或容器之间使用[!UICONTROL Then]逻辑运算符创建顺序筛选器。 [!UICONTROL Then]逻辑运算符表示出现一个筛选条件，然后出现另一个筛选条件。
 
-+++ 以下是一段演示顺序区段的视频。
 
->[!VIDEO](https://video.tv.adobe.com/v/25405/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [顺序分段](https://video.tv.adobe.com/v/25405/?quality=12&learn=on){target="_blank"}。
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
 
 顺序筛选器具有一些[基本功能](#basics)和其他选项，您可以配置这些选项来增加顺序筛选器的复杂性：
 

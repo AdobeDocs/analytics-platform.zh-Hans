@@ -5,7 +5,7 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 10%
@@ -25,7 +25,7 @@ ht-degree: 10%
 
 ![版本](/help/assets/icons/Release.svg) **[!UICONTROL 版本影响]**&#x200B;分析显示了给定日期之前和之后关键指标执行情况的比较。 此报告的水平轴是一个时间间隔，而垂直轴测量所需的关键指标。 图表中间有一个垂直条形图，表示要在前后比较的日期。 此日期通常表示要衡量的产品发生了显着更改，例如产品更新或促销活动启动。
 
->[!VIDEO](https://video.tv.adobe.com/v/3421665/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3421665/?quality=12&learn=on)
 
 ## 用例
 

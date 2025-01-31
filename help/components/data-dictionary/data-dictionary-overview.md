@@ -4,9 +4,9 @@ title: 数据词典概述
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 131b216f5b5f30048516d4b78e5f270701eb14d3
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '567'
 ht-degree: 76%
 
 ---
@@ -28,13 +28,15 @@ Analysis Workspace 中的数据词典可帮助用户和管理员跟踪并更好�
 Analytics 管理员负责整理有关数据词典中每个组件的信息，并将其提供给用户。
 
 
-+++ 观看演示数据字典的视频
+>[!BEGINSHADEBOX]
 
->[!VIDEO](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on)
+有关演示视频，请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analyis Workspace的数据字典](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"}。
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
+
 
 ## 对用户的好处
 

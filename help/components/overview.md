@@ -5,9 +5,9 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
-workflow-type: ht
-source-wordcount: '923'
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
+workflow-type: tm+mt
+source-wordcount: '915'
 ht-degree: 100%
 
 ---
@@ -44,12 +44,6 @@ Analysis Workspace 中的组件由量度、维度、过滤器和日期范围组�
 
 请参阅[创建项目](/help/analysis-workspace/home.md)，以了解有关如何在项目中使用组件的信息。
 
-
-+++ 观看展示组件潜能的视频：
-
->[!VIDEO](https://video.tv.adobe.com/v/23979)
-
-+++
 
 ## 管理组件 {#actions}
 

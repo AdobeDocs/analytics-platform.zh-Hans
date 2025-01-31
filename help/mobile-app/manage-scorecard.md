@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
-source-git-commit: 6149d2cf23eb31f0aaa37546d3150017e155053c
+source-git-commit: f9b9dcf87d781e0702b51e536b7edb4644720fa5
 workflow-type: tm+mt
-source-wordcount: '1792'
-ht-degree: 66%
+source-wordcount: '1813'
+ht-degree: 65%
 
 ---
 
@@ -40,7 +40,12 @@ ht-degree: 66%
 
 通过自定义详细信息幻灯片，与受众共享的信息可更有针对性。
 
->[!VIDEO](https://video.tv.adobe.com/v/3410002)
+>[!BEGINSHADEBOX]
+
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自定义详细信息视图](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"}。
+
+>[!ENDSHADEBOX]
+
 
 可修改每个详细信息幻灯片的布局，并添加文本以更好地解释最终用户可能在数据中看到的内容。还可使用下拉菜单更改图表类型。
 
@@ -78,7 +83,13 @@ ht-degree: 66%
 
 观看视频以详细了解如何在 Analysis Workspace 中的移动记分卡项目中创建数据故事。
 
->[!VIDEO](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on)
+
+>[!BEGINSHADEBOX]
+
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [移动记分卡项目的数据故事](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on){target="_blank"}。
+
+>[!ENDSHADEBOX]
+
 
 **创建数据故事** {#data-story-create}
 

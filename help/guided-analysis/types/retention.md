@@ -5,7 +5,7 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 3%
@@ -30,7 +30,7 @@ ht-degree: 3%
 
 在此分析中，图表的x轴表示自用户的初始开始事件以来的时间，y轴表示与一个或多个返回事件互动的用户百分比。 您可以跨持续时间查看保留和流失，显示的持续时间可通过查询设置进行自定义。 在图表下方，表格提供了汇总数据，并且可以选择显示单个同类群组，即一组在同一日期执行了开始事件的人员。
 
->[!VIDEO](https://video.tv.adobe.com/v/3430503/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3430503/?quality=12&learn=on)
 
 
 ## 用例

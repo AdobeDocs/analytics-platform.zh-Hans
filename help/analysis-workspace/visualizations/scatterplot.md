@@ -4,10 +4,10 @@ description: 显示与最多三个量度之间的关系的可视化图表。
 feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 67%
+source-wordcount: '177'
+ht-degree: 57%
 
 ---
 
@@ -30,7 +30,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >[!ENDSHADEBOX]
 
 
-![图形散点图](/help/assets/icons/GraphScatter.svg) **[!UICONTROL 散点图]**&#x200B;可视化图表显示维度项目与最多三个量度之间的关系。 它需要三个组件，并且最多支持四个组件的可视化。
+![图形散点图](/help/assets/icons/GraphScatter.svg) **[!UICONTROL 散点图]**&#x200B;可视化图表显示维度项目与最多三个量度之间的关系。 可视化需要三个组件，并且最多支持四个组件的可视化。
 
 * 行组件（通常为维度）表示图表上的每个点。不同的行显示为不同的彩色点。
 * 最左侧的列（通常是量度）绘制点在 Y 轴（垂直）上的位置。
@@ -39,6 +39,14 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 * 散点图可视化图表将忽略自由格式表中的所有后续列。
 
 ![显示多个维度项](assets/scatter.png)的散点图示例
+
+
+>[!BEGINSHADEBOX]
+
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[散点图可视化图表](https://video.tv.adobe.com/v/334459/?quality=12&learn=on){target="_blank"}。
+
+>[!ENDSHADEBOX]
+
 
 >[!MORELIKETHIS]
 >

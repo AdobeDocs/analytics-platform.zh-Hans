@@ -1,19 +1,19 @@
 ---
-title: 摄取Google Analytics历史数据
+title: 引入 Google Analytics 历史数据
 description: 介绍如何使用Adobe Customer Journey Analytics将Google Analytics数据摄取到Adobe Experience Platform。
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: f9b9dcf87d781e0702b51e536b7edb4644720fa5
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 88%
+source-wordcount: '646'
+ht-degree: 86%
 
 ---
 
 
-# 摄取Google Analytics历史数据
+# 引入 Google Analytics 历史数据
 
 本页面重点介绍如何将您的 Google Analytics 历史数据作为数据集提取到 Adobe Experience Platform 中，允许您在 Customer Journey Analytics 的数据视图中引用该数据集。您可以将此页面上的步骤与[配置实时 Google Analytics 实施](streaming.md)结合使用，这会生成一个循环数据集。将此历史数据集与您当前实施的数据集结合起来，以无缝查看 Customer Journey Analytics 中的数据以及当前和回填数据。
 
@@ -40,7 +40,13 @@ Universal Analytics 属性中的数据结构与 Google Analytics 4 属性中的�
 
 Universal Analytics 属性将每条记录作为用户会话而不是单个事件存储在其数据中。需要使用 SQL 查询将 Universal Analytics 数据转换为与 Adobe Experience Platform 兼容的格式。将 `UNNEST` 函数应用于 GA 架构中的 `hits` 字段，并将其保存为 BigQuery 表。
 
->[!VIDEO](https://video.tv.adobe.com/v/332634)
+
+>[!BEGINSHADEBOX]
+
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[从Google Analytics到Customer Journey Analytics- BigQuery](https://video.tv.adobe.com/v/332634?quality=12&learn=on){target="_blank"}。
+
+>[!ENDSHADEBOX]
+
 
 ```sql
 SELECT
@@ -74,7 +80,13 @@ FROM
 1. 在 Adobe Experience Platform 中，选择左侧的&#x200B;**[!UICONTROL 源]**。
 1. 在目录下，找到 **[!UICONTROL Google Cloud Storage]** 选项。单击&#x200B;**[!UICONTROL “添加数据”]**。
 
->[!VIDEO](https://video.tv.adobe.com/v/332676)
+
+>[!BEGINSHADEBOX]
+
+观看![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [将Google Analytics数据导入Adobe Experience Platform](https://video.tv.adobe.com/v/332676?quality=12&learn=on){target="_blank"}以获取演示视频。
+
+>[!ENDSHADEBOX]
+
 
 >[!TIP]
 >

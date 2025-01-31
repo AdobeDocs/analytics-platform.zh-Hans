@@ -4,10 +4,10 @@ title: 树状图
 feature: Visualizations
 exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 27%
+source-wordcount: '164'
+ht-degree: 26%
 
 ---
 
@@ -37,6 +37,13 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 ![树状图示例，显示代表子分支的较小矩形图块。](assets/treemap.png)
 
 通过树状图，你可以看到用其他方法很难发现的模式。 使用维度的颜色和大小，您可以发现维度的关联方式以及特定维度是否特别相关。 树状图的第二个优势在于，通过构造，树状图有效地利用了空间。
+
+
+>[!BEGINSHADEBOX]
+
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [树形图可视化图表](https://video.tv.adobe.com/v/334458/?quality=12&learn=on){target="_blank"}。
+
+>[!ENDSHADEBOX]
 
 
 >[!MORELIKETHIS]

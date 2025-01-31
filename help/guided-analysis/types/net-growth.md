@@ -5,7 +5,7 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 6%
@@ -41,7 +41,7 @@ ht-degree: 6%
 >
 >重复用户不计入此计算，因为它们不表示用户的任何收益或损失。
 
->[!VIDEO](https://video.tv.adobe.com/v/3421664/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3421664/?quality=12&learn=on)
 
 
 ## 用例

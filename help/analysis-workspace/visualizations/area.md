@@ -4,7 +4,7 @@ title: 面积图和堆叠的面积图
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: 5655c951422c4abbd7bd12686027968efea5c6ea
+source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 25%
@@ -51,8 +51,6 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >abstract="创建面积图可视化来表示多个量度的堆叠。"
 
 <!-- markdownlint-enable MD034 -->
-
-
 
 
 ![GraphAreaStacked](/help/assets/icons/GraphAreaStacked.svg) **[!UICONTROL 栈叠的区域]**&#x200B;可视化图表类似于“区域”，但每个系列都从上一个系列的顶部开始。

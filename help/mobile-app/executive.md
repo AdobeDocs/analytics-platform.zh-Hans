@@ -5,18 +5,23 @@ feature: Analytics Dashboards
 role: User
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
 workflow-type: tm+mt
-source-wordcount: '1294'
-ht-degree: 75%
+source-wordcount: '1299'
+ht-degree: 73%
 
 ---
 
 # 执行用户快速入门指南
 
-以下信息让执行用户了解使用和查看 Analytics 功能板的最佳实践。以下是一段演示此信息的视频：
+以下信息让执行用户了解使用和查看Analytics功能板的最佳实践。
 
->[!VIDEO](https://video.tv.adobe.com/v/343460/)
+
+>[!BEGINSHADEBOX]
+
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [协助执行用户访问移动记分卡](https://video.tv.adobe.com/v/343460/){target="_blank"}以获取演示视频。
+
+>[!ENDSHADEBOX]
 
 本指南旨在帮助执行用户阅读并理解 Analytics 功能板上的记分卡。该应用程序允许执行用户在其自己的移动设备上快速、轻松地查看广泛呈现的重要概要数据。
 

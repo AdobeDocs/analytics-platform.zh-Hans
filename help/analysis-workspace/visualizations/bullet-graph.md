@@ -4,10 +4,10 @@ title: 项目符号图表
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 58%
+source-wordcount: '263'
+ht-degree: 56%
 
 ---
 
@@ -39,9 +39,18 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 ![GraphBullet](/help/assets/icons/GraphBullet.svg) **[!UICONTROL Bullet]**&#x200B;可视化图表显示量度与性能范围（目标）进行比较或衡量的方式。
 
-![](assets/bullet.png)
+![项目符号可视化图表](assets/bullet.png)
 
 项目符号图表具有一个主要的测量方法（例如，当前年初至今的收入），允许您输入定性范围、绩效范围（例如，与目标收入相比）。您可以指定高、中和低目标范围。 您可以在![设置](/help/assets/icons/Setting.svg) **[!UICONTROL 设置]**&#x200B;中指定目标范围。
+
+>[!BEGINSHADEBOX]
+
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [项目符号图可视化](https://video.tv.adobe.com/v/23989/?quality=12/?quality=12&learn=on){target="_blank"}。
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
 
 ## 设置
 

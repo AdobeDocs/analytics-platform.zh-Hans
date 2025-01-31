@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: cbb48623212c2f3d8968dc6daca491761e2f4a9e
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1178'
 ht-degree: 84%
 
 ---
@@ -21,7 +21,13 @@ ht-degree: 84%
 
 计划功能还允许您为工作簿设置密码保护并编辑以前计划的工作簿。
 
->[!VIDEO](https://video.tv.adobe.com/v/3413079/?quality=12&learn=on)
+
+>[!BEGINSHADEBOX]
+
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [计划工作簿](https://video.tv.adobe.com/v/3413079/?quality=12&learn=on){target="_blank"}以观看演示视频。
+
+>[!ENDSHADEBOX]
+
 
 ## 计划工作簿
 

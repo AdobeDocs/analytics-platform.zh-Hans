@@ -4,7 +4,7 @@ title: 折线图
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
 workflow-type: tm+mt
 source-wordcount: '531'
 ht-degree: 22%
@@ -31,14 +31,6 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 
 ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL 折线]**&#x200B;可视化图表使用线条来表示量度，以显示一段时间内值的变化情况。 仅当使用时间作为维度时，才可以使用折线图可视化图表。
-
-<!--
->[!NOTE]
->
->The Line visualization soon feature [intelligent captions](/help/analysis-workspace/visualizations/intelligent-captions.md).
-
-The Line visualization represents metrics using a line to show how values change over a period of time. A line chart can be used only when time is used as a dimension.
--->
 
 ![折线图可视化图表](assets/line-viz.png)
 

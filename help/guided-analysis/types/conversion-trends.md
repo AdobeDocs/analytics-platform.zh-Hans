@@ -5,7 +5,7 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 7%
@@ -27,7 +27,7 @@ ht-degree: 7%
 ![转化趋势](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL 转化趋势]**&#x200B;分析提供了转化率随时间变化的趋势可视化图表。 水平轴是一个时间间隔，而垂直轴表示转化率。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3421662/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3421662/?quality=12&learn=on)
 
 
 ## 用例

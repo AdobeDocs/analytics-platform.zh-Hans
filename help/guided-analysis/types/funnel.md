@@ -5,7 +5,7 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 3%
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Funnel ]**分析提供了产品中关键用户历程的可视表示形式。 水平轴表示用户必须执行的每个步骤。 垂直轴表示每个步骤中用户或会话的百分比。 所有步骤必须按最终顺序完成，但可以在报告窗口内的任何时间执行。
 
->[!VIDEO](https://video.tv.adobe.com/v/3421663/?learn=on){width="90%"}
+>[!VIDEO](https://video.tv.adobe.com/v/3421663/?quality=12&learn=on){width="90%"}
 
 ## 用例
 

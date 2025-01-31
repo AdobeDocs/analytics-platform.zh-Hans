@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8c975a37e6772ab3bae1f86c4ccad27ebf0596cc
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
 workflow-type: tm+mt
-source-wordcount: '3091'
-ht-degree: 24%
+source-wordcount: '3093'
+ht-degree: 23%
 
 ---
 # 片段
@@ -57,14 +57,7 @@ ht-degree: 24%
 
 ## 视频演示Adobe Analytics {#videoaa}
 
-本视频演示了使用Adobe Analytics的功能。 但是，该功能在Customer Journey Analytics中同样可用。 请注意术语中的以下差异。
-
-| Adobe Analytics | Customer Journey Analytics |
-|:---:|:---:|
-| 区段 | 过滤器 |
-| 访客 | 人员 |
-| 访问 | 会话 |
-| 点击 | 事件 |
+*此视频演示了使用Adobe Analytics的功能。 然而，该功能在 Customer Journey Analytics 中同样可用。了解Adobe Analytics和Customer Journey Analytics之间的术语差异（例如区段与过滤器，或者访问次数与会话）。*
 
 
 ## “筛选器”面板 {#filterspanel}
@@ -155,7 +148,7 @@ ht-degree: 24%
 
 1. 9月15日，用户通过付费搜索广告访问您的网站后离开。
 1. 9月18日，该用户通过朋友提供的社交媒体链接再次访问您的网站。 他将多个物品添加到购物车，但没有购买任何物品。
-1. 9 月 24 日，您的营销团队向他们发送一封电子邮件，其中包含购物车中某些物品的优惠券。他应用了优惠券，但访问了其他几个网站，查看是否有其他优惠券可用。他通过展示广告找到另一个网站，并最终购买了价值 50 美元的物品。
+1. 9 月 24 日，您的营销团队向他们发送一封电子邮件，其中包含购物车中某些物品的产品建议券。他应用了产品建议券，但访问了其他几个网站，查看是否有其他产品建议券可用。他通过展示广告找到另一个网站，并最终购买了价值 50 美元的物品。
 
 根据您的回顾窗口和归因模型，渠道会收到不同比例的点数。以下是一些示例：
 

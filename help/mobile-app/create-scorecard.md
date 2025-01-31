@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: f9b9dcf87d781e0702b51e536b7edb4644720fa5
 workflow-type: tm+mt
-source-wordcount: '2672'
-ht-degree: 68%
+source-wordcount: '2703'
+ht-degree: 67%
 
 ---
 
@@ -26,7 +26,13 @@ ht-degree: 68%
 
 以下信息指示Customer Journey Analytics数据策划人如何为执行用户配置和展示功能板。 要开始操作，您可以观看Analytics功能板记分卡生成器视频：
 
->[!VIDEO](https://video.tv.adobe.com/v/343458)
+
+>[!BEGINSHADEBOX]
+
+有关演示视频，请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建移动记分卡](https://video.tv.adobe.com/v/343458?quality=12&learn=on){target="_blank"}。
+
+>[!ENDSHADEBOX]
+
 
 >[!NOTE]
 >
@@ -202,7 +208,14 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 通过自定义详细信息幻灯片，与受众共享的信息可更有针对性。
 
->[!VIDEO](https://video.tv.adobe.com/v/3410002)
+
+>[!BEGINSHADEBOX]
+
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自定义详细信息视图](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"}。
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
 
 可修改每个详细信息幻灯片的布局，并添加文本以更好地解释最终用户可能在数据中看到的内容。还可使用下拉菜单更改图表类型。
 
@@ -240,7 +253,15 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 观看视频以详细了解如何在 Analysis Workspace 中的移动记分卡项目中创建数据故事。
 
->[!VIDEO](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on)
+
+>[!BEGINSHADEBOX]
+
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [移动记分卡项目的数据故事](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on){target="_blank"}。
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
 
 **创建数据故事** {#data-story-create}
 

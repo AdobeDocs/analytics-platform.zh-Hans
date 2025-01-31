@@ -5,10 +5,10 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 100%
+source-wordcount: '952'
+ht-degree: 93%
 
 ---
 
@@ -20,9 +20,13 @@ Customer Journey Analytics 架构大致如下所示：
 
 ![在此部分中解释的 Customer Journey Analytics 架构](assets/cja-architecture.png)
 
-以下是 Customer Journey Analytics 的视频概述：
 
->[!VIDEO](https://video.tv.adobe.com/v/30090/?quality=12)
+>[!BEGINSHADEBOX]
+
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [客户历程分析：Analytics for the Experience Business](https://video.tv.adobe.com/v/30090/?quality=12&learn=on){target="_blank"}，观看有关Customer Journey Analytics的介绍视频。
+
+>[!ENDSHADEBOX]
+
 
 ## 比较 Customer Journey Analytics 和传统 Adobe Analytics
 
@@ -69,7 +73,7 @@ Customer Journey Analytics 的初始版本包括 Adobe Analytics 中的许多功
 * “区段”现在称为“筛选条件”。
 * 虚拟报告包现在称为“数据视图”。
 * “分类”现在称为“查找数据集”。
-* “客户属性”现在称为“用户档案数据集”。
+* “客户属性”现在称为“轮廓数据集”。
 * “点击”容器现在称为“事件”容器。
 * “访问”容器现在称为“会话”容器。
 * “访客”容器现在称为“人员”容器。
@@ -82,17 +86,23 @@ Adobe Experience Platform 让您可以实现源自任何系统的客户数据和
 
 从数据摄取到 SQL 直接访问，Experience Platform 的多个组件在 Customer Journey Analytics 中发挥着极为重要的作用，并且与之相辅相成：
 
-* [Experience Platform Query Service](https://experienceleague.adobe.com/cn/docs/experience-platform/query/home.html?lang=zh-Hans)：使用标准 SQL 从 Adobe Experience Platform 检索数据，如 Adobe 解决方案数据、客户第一方数据或任何其他 Platform 数据。它是一个无服务器工具，通过它可连接任何数据集，并将查询结果记录为新数据集，以供在报告中使用或摄取到配置文件服务。可使用 Experience Platform Query Service 构建数据分析生态系统，在使用者的各种交互渠道上为使用者画像。这些渠道可能包括销售点系统、Web、移动、CRM 系统等。
-* [实时客户配置文件](https://experienceleague.adobe.com/cn/docs/experience-platform/profile/home.html?lang=zh-Hans)：
-* [标识服务](https://experienceleague.adobe.com/cn/docs/experience-platform/identity/home.html?lang=zh-Hans)
+* [Experience Platform Query Service](https://experienceleague.adobe.com/cn/docs/experience-platform/query/home.html?lang=zh-Hans)：使用标准 SQL 从 Adobe Experience Platform 检索数据，如 Adobe 解决方案数据、客户第一方数据或任何其他 Platform 数据。它是一个无服务器工具，通过它可连接任何数据集，并将查询结果记录为新数据集，以供在报告中使用或摄取到轮廓服务。可使用 Experience Platform Query Service 构建数据分析生态系统，在使用者的各种交互渠道上为使用者画像。这些渠道可能包括销售点系统、Web、移动、CRM 系统等。
+* [实时客户轮廓](https://experienceleague.adobe.com/cn/docs/experience-platform/profile/home.html?lang=zh-Hans)：
+* [身份标识服务](https://experienceleague.adobe.com/cn/docs/experience-platform/identity/home.html?lang=zh-Hans)
 
 ## 视频
 
-* 在 Customer Journey Analytics 中使用数据：
 
-  >[!VIDEO](https://video.tv.adobe.com/v/32112/?quality=12)
+>[!BEGINSHADEBOX]
 
-* Customer Journey Analytics 的架构和集成:
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [处理Customer Journey Analytics](https://video.tv.adobe.com/v/32112/?quality=12&learn=on){target="_blank"}中的数据，观看介绍视频，了解如何处理Customer Journey Analytics中的数据。
 
-  >[!VIDEO](https://video.tv.adobe.com/v/32483/?quality=12)
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
+有关Customer Journey Analytics的架构和集成的介绍视频，请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [架构和集成](https://video.tv.adobe.com/v/32483/?quality=12&learn=on){target="_blank"}。
+
+>[!ENDSHADEBOX]
+
 

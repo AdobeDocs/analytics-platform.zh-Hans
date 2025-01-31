@@ -4,10 +4,10 @@ title: 面板概述
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: e61368765dde35e6d9beed7713a7a28db0c2af98
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
 workflow-type: tm+mt
-source-wordcount: '2159'
-ht-degree: 98%
+source-wordcount: '2129'
+ht-degree: 99%
 
 ---
 
@@ -149,20 +149,17 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 有关更多信息，请参阅[快速过滤器](/help/components/filters/quick-filters.md)。
 
-![已公开并放入放置区域的临时筛选器](assets/adhoc-segment-filter.png)
+![公开并放入放置区域的临时过滤器](assets/adhoc-segment-filter.png)
 
 ### 下拉过滤器
 
->[!VIDEO](https://video.tv.adobe.com/v/23877?quality=12&learn=on)
+>[!BEGINSHADEBOX]
 
-本视频演示了使用Adobe Analytics的功能。 但是，该功能在Customer Journey Analytics中同样可用。 请注意以下术语差异。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [下拉筛选器](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"}。
 
-| Adobe Analytics | 客户历程分析 |
-| --- | --- |
-| 区段 | 过滤器 |
-| 访客 | 人员 |
-| 访问 | 会话 |
-| 点击 | 事件 |
+{{videoaa}}
+
+>[!ENDSHADEBOX]
 
 
 #### 静态下拉过滤器

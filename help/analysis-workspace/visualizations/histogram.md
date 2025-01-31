@@ -4,10 +4,10 @@ title: 直方图
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 34%
+source-wordcount: '344'
+ht-degree: 36%
 
 ---
 
@@ -47,7 +47,7 @@ _本文以_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalyt
 
 在下面的示例中，直方图用于为人员数存储会话。 直方图显示，大多数人在所选日期范围内有16-21个会话。
 
-![](assets/histogram.png)
+![直方图](assets/histogram.png)
 
 ## 高级设置
 
@@ -74,9 +74,5 @@ _本文以_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalyt
 >[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[可视化设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[可视化上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
->
+>[使用直方图识别意外的数据值](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168)
 
-
-## 博客帖子
-
-请参阅这篇博客文章，了解有关[使用直方图识别意外数据值](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168)的信息。

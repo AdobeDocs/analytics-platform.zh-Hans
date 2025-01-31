@@ -5,9 +5,9 @@ title: 目录
 feature: Workspace Basics
 role: User
 exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
-source-git-commit: 9d32100f28e8806cc30aaf52e30216cbce1a38b0
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '186'
 ht-degree: 4%
 
 ---
@@ -16,11 +16,12 @@ ht-degree: 4%
 
 您可以在Analysis Workspace中查看项目目录，该目录允许您在项目中存在的任何面板和可视化图表之间快速移动。 目录在查看包含许多面板和可视化图表的较大项目时特别有用。
 
-+++ 观看此功能的视频演示。
+>[!BEGINSHADEBOX]
 
->[!VIDEO](https://video.tv.adobe.com/v/26990/?learn=on)
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [为演示视频创建目录](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"}。
 
-+++
+>[!ENDSHADEBOX]
+
 
 >[!TIP]
 >

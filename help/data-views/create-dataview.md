@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
-workflow-type: ht
-source-wordcount: '1899'
-ht-degree: 100%
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
+workflow-type: tm+mt
+source-wordcount: '1900'
+ht-degree: 99%
 
 ---
 
@@ -16,11 +16,13 @@ ht-degree: 100%
 
 创建数据视图涉及从架构元素创建量度和维度或利用标准组件。大多数架构元素既可为维度，也可为量度，具体取决于您的业务要求。将架构元素拖入数据视图后，右侧即显示选项，从中可调整维度或量度在 Customer Journey Analytics 中的操作方式。
 
-+++ 观看视频以说明 Customer Journey Analytics 中的数据视图
 
->[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
+>[!BEGINSHADEBOX]
 
-+++
+查看![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建或编辑演示视频的数据视图](https://video.tv.adobe.com/v/35110/?quality=12&learn=on){target="_blank"}。
+
+>[!ENDSHADEBOX]
+
 
 要创建或编辑数据视图：
 

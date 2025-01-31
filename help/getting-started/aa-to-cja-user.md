@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: a4b838f7813d78681eba072e4febd90ba0c7111d
-workflow-type: ht
-source-wordcount: '1442'
-ht-degree: 100%
+source-git-commit: f9b9dcf87d781e0702b51e536b7edb4644720fa5
+workflow-type: tm+mt
+source-wordcount: '1454'
+ht-degree: 92%
 
 ---
 
@@ -24,7 +24,7 @@ Customer Journey Analytics 中的几项功能已经过重命名和重新设计�
 
 * 您仍然可以使用[ Analysis Workspace ](/help/analysis-workspace/home.md)分析数据。工作区的操作方式与在传统Adobe Analytics中相同。
 * 有相同版本的 [Adobe Analytics 功能板](/help/mobile-app/home.md)可用，且在 Customer Journey Analytics 与 Adobe Analytics 中的工作原理类似。
-* [Report Builder](/help/report-builder/report-buider-overview.md) 具有新界面，并可在 MS Windows、MacOS 和 Web 版本的 Excel 上运行。（在此版本的 Report Builder 之前，除非在 VMware 上运行 Mac，否则无法在中使用。） 此版本尚不支持传统的 AA 数据请求。
+* [Report Builder](/help/report-builder/report-buider-overview.md) 具有新界面，并可在 MS Windows、MacOS 和 Web 版本的 Excel 上运行。(在此版本的Report Builder之前，除非在VMware上运行Mac，否则无法在中使用。) 此版本尚不支持传统的AA数据请求。
 
 ## 对报告的更改
 
@@ -40,9 +40,19 @@ Experience Platform 中的客户数据存储为数据集，其中包含[架构](
 
 您的 Customer Journey Analytics 管理员会与 Experience Platform 中的数据集建立[连接。](/help/connections/create-connection.md)然后，他们会使用这些连接构建[数据视图。](/help/data-views/data-views.md)数据视图在概念上与虚拟报告包类似，是 Customer Journey Analytics 中报告的基础。由于 Experience Platform 为报告提供所有数据，因此报告包不会再作为数据容器存在。
 
-通过建立连接，Analytics 管理员可以将来自 Adobe Experience Platform 的数据集集成到 Customer Journey Analytics 中，其包括在以下视频中：
+通过建立连接，Analytics管理员可以将来自Adobe Experience Platform的数据集集成到Customer Journey Analytics中。
 
->[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12)
+
+<!-- Outdated UI
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configuring connections](https://video.tv.adobe.com/){target=&#34;_blank&#34;} for a demo video.
+
+>[!ENDSHADEBOX]
+
+-->
+
 
 Adobe 提供了多种将数据导入 Adobe Experience Platform 的方法，包括通过 Analytics Source Connector 或 Web SDK 导入报表包数据。多个报告包中的现有实施可以合并为Experience Platform。基于这些数据集的连接和数据视图可以合并之前存在于单独的报告包中的数据。
 
@@ -78,11 +88,16 @@ Adobe 提供了多种将数据导入 Adobe Experience Platform 的方法，包�
 
 ## 对计算量度概念的更改
 
-Adobe Analytics 和 Customer Journey Analytics 之间的计算量度名称类似。但是， [!UICONTROL Customer Journey Analytics] 不再使用 eVar、props 或事件，而是使用任何 Experience Platform 架构元素。这一根本变化意味着，任何现有的计算量度都与 [!UICONTROL Customer Journey Analytics] 不兼容。如果要将 Adobe Analytics 计算量度移动到 Customer Journey Analytics，请观看以下视频：
+Adobe Analytics 和 Customer Journey Analytics 之间的计算量度名称类似。但是， [!UICONTROL Customer Journey Analytics] 不再使用 eVar、props 或事件，而是使用任何 Experience Platform 架构元素。这一根本变化意味着，任何现有的计算量度都与[!UICONTROL Customer Journey Analytics]不兼容。
 
->[!VIDEO](https://video.tv.adobe.com/v/31788/?quality=12)
 
-## 变量归因和到期设置的更改
+>[!BEGINSHADEBOX]
+
+有关如何移动计算量度的演示视频，请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [将计算量度从Adobe Analytics移动到Customer Journey Analytics](https://video.tv.adobe.com/v/31788?quality=12&learn=on){target="_blank"}。
+
+>[!ENDSHADEBOX]
+
+## 变量归因和有效期限设置的更改
 
 [!UICONTROL Customer Journey Analytics] 在报告时应用所有变量设置，包括归因和到期。这些设置现在位于[数据视图](/help/data-views/component-settings/persistence.md)中，以及某些变量设置（如归因）可在工作区项目中进行更改。
 
@@ -96,13 +111,18 @@ Adobe Analytics 和 Customer Journey Analytics 之间的计算量度名称类似
 
 ## 对客户属性概念的更改
 
-“客户属性”现在称为“个人资料数据集”。配置文件数据集包含应用于[!UICONTROL 事件]数据中的人员、用户或客户的数据。例如，它允许您上传有关客户的 CRM 数据。您可以选择想要包含的人员 ID。[!DNL Experience Platform] 中定义的每个数据集都有自己的一组定义的一个或多个人员 ID。
+“客户属性”现在称为“轮廓数据集”。轮廓数据集包含应用于[!UICONTROL 事件]数据中的人员、用户或客户的数据。例如，它允许您上传有关客户的 CRM 数据。您可以选择想要包含的人员 ID。[!DNL Experience Platform] 中定义的每个数据集都有自己的一组定义的一个或多个人员 ID。
 
 ## 更改了Adobe识别访客的方式
 
-Customer Journey Analytics 扩展了 ECID 之外的标识概念，以包含您要使用的任何 ID，包括客户 ID、Cookie ID、拼合 ID、用户 ID、跟踪代码等。跨数据集使用通用命名空间 ID，或使用[拼接](../stitching/overview.md)功能可帮助将不同数据集中的人员关联在一起。在 Customer Journey Analytics 中设置工作区项目的任何用户都必须了解跨数据集使用的 ID。请观看以下视频，其中重点介绍了 Customer Journey Analytics 中标识的使用：
+Customer Journey Analytics 扩展了 ECID 之外的身份标识概念，以包含您要使用的任何 ID，包括客户 ID、Cookie ID、拼合 ID、用户 ID、跟踪代码等。跨数据集使用通用命名空间 ID，或使用[拼接](../stitching/overview.md)功能可帮助将不同数据集中的人员关联在一起。在 Customer Journey Analytics 中设置工作区项目的任何用户都必须了解跨数据集使用的 ID。请观看以下视频，重点介绍Customer Journey Analytics中标识的使用
 
->[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[在Customer Journey Analytics中使用标识](https://video.tv.adobe.com/v/30750/?quality=12&learn=on){target="_blank"}。
+
+>[!ENDSHADEBOX]
 
 ## 对低流量维度项目概念的更改
 

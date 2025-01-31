@@ -1,16 +1,16 @@
 ---
 description: 通过筛选单个量度，可在同一报表中比较量度。
-title: 过滤指标
+title: 过滤量度
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 65eafd65358d9370b452338ce1036e59b3c69d1a
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '486'
 ht-degree: 1%
 
 ---
 
-# 过滤指标
+# 过滤量度
 
 在[计算量度生成器](cm-build-metrics.md#definition-builder)中，您可以在量度定义中应用筛选器。 如果要在分析中为数据子集使用量度，应用过滤器会很有帮助。
 
@@ -87,10 +87,12 @@ ht-degree: 1%
    ![Workspace自由格式表可视化图表，显示德语人员与国际人员总数](assets/workspace-german-vs-international-totals-percentage.png)
 
 
-+++ 以下视频演示了如何将过滤的计算量度用作无实施量度。
 
->[!VIDEO](https://video.tv.adobe.com/v/25407/?quality=12)
+>[!BEGINSHADEBOX]
+
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [将筛选的计算量度用作演示视频的无实施量度](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"}。
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+

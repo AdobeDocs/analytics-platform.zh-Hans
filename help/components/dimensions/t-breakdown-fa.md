@@ -6,10 +6,10 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 role: User
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: f9b9dcf87d781e0702b51e536b7edb4644720fa5
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 58%
+source-wordcount: '540'
+ht-degree: 52%
 
 ---
 
@@ -51,28 +51,49 @@ ht-degree: 58%
 
 * 如果列树中已有归因，更改该归因仅影响您正在编辑的列。
 
-+++ 查看说明维度和维度划分的视频
+>[!BEGINSHADEBOX]
 
-Analysis Workspace中的Dimension
-
->[!VIDEO](https://video.tv.adobe.com/v/23971)
-
-Dimension划分
-
->[!VIDEO](https://video.tv.adobe.com/v/23969)
-
-在分析工作区中将维度和量度添加到项目：
-
->[!VIDEO](https://video.tv.adobe.com/v/30606)
-
-在自由格式表中使用维度：
-
->[!VIDEO](https://video.tv.adobe.com/v/40179)
-
-按位置划分维度：
-
->[!VIDEO](https://video.tv.adobe.com/v/24033)
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[在Analysis Workspace](https://video.tv.adobe.com/v/23971?quality=12&learn=on){target="_blank"}中Dimension演示视频。
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Dimension划分](https://video.tv.adobe.com/v/23969?quality=12&learn=on){target="_blank"}。
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [添加维度和量度](https://video.tv.adobe.com/v/30606?quality=12&learn=on){target="_blank"}以查看演示视频。
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在自由格式表中使用维度](https://video.tv.adobe.com/v/40179?quality=12&learn=on){target="_blank"}以获取演示视频。
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[按位置](https://video.tv.adobe.com/v/24033){target="_blank"}划分的Dimension。
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+

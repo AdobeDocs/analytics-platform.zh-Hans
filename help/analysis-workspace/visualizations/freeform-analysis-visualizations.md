@@ -5,7 +5,7 @@ title: 可视化图表概述
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
+source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
 workflow-type: tm+mt
 source-wordcount: '1616'
 ht-degree: 17%
@@ -126,8 +126,6 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | **[!UICONTROL 显示最小值]** | 在可视化中显示最小值。 |
 | **[!UICONTROL 显示最大值]** | 在可视化中显示最大值。 |
 | **[!UICONTROL 显示趋势线]** | 在可视化图表中显示趋势线。 选中后，您可以从下拉菜单中选择趋势线类型。 |
-
-
 
 您可以自定义创建的所有可视化图表的设置。 有关更多信息，请参阅[用户偏好设置](/help/analysis-workspace/user-preferences.md)。
 

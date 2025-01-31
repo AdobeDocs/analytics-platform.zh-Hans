@@ -4,10 +4,10 @@ title: 流量概述
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 49%
+source-wordcount: '387'
+ht-degree: 46%
 
 ---
 
@@ -41,15 +41,17 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 * 可视化客户浏览您的网站或应用程序的历程。
 * 分析客户在所指定检查点（例如登入、特定维度或退出）之前和之后的位置。
-* 通过在选定路径中指定一个特定点来创建过滤器
+* 通过在选定路径中指定一个特定点来创建过滤器。
 
-+++ 观看流量可视化图表的视频演示。
 
->[!VIDEO](https://video.tv.adobe.com/v/346063/?quality=12)
+>[!BEGINSHADEBOX]
+
+查看![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [为演示视频创建流量可视化图表](https://video.tv.adobe.com/v/346063/?quality=12&learn=on){target="_blank"}。
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## 维度间流量
 

@@ -4,22 +4,21 @@ title: 行设置
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: 347ab5b400fb8a5fddc02878f779be7112d693ab
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 15%
+source-wordcount: '1026'
+ht-degree: 14%
 
 ---
 
 # 行设置
 
-+++ 观看此功能的视频演示。
 
->[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
+>[!BEGINSHADEBOX]
 
-{{videoaa}}
+查看自由格式表中的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [行和列设置](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
-+++
+>[!ENDSHADEBOX]
 
 行设置因您拖入到表格中的组件而异。要访问表格行设置，请选择每个对象中的维度、筛选器、量度、时间段或划分旁边的![设置](/help/assets/icons/Setting.svg) **[!UICONTROL 设置]**。
 

@@ -5,10 +5,10 @@ title: 共享项目
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 64%
+source-wordcount: '2053'
+ht-degree: 62%
 
 ---
 
@@ -40,13 +40,15 @@ ht-degree: 64%
 
 当收件人打开项目时，将反映您在分享前应用的任何[策划](curate.md)。
 
-+++ 观看视频，了解如何使用项目共享。
 
->[!VIDEO](https://video.tv.adobe.com/v/36207/?quality=12)
+>[!BEGINSHADEBOX]
+
+有关演示视频，请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Analysis Workspace中的项目共享](https://video.tv.adobe.com/v/36207/?quality=12&learn=on){target="_blank"}。
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## 与组织中的Customer Journey Analytics用户和组共享 {#Add}
 
@@ -153,9 +155,13 @@ ht-degree: 64%
 >
 >* Healthcare Shield和Privacy &amp; Security Shield许可证的[!UICONTROL 与任何人共享]功能都被阻止。
 
-以下视频演示和随附文档描述与任何人共享链接相关的选项：
 
->[!VIDEO](https://video.tv.adobe.com/v/3420093/?learn=on)
+>[!BEGINSHADEBOX]
+
+查看![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [与任何人共享](https://video.tv.adobe.com/v/3420093/?quality=12&learn=on){target="_blank"}演示视频。
+
+>[!ENDSHADEBOX]
+
 
 要与任何人共享Analysis Workspace项目，请执行以下操作：
 
@@ -203,9 +209,16 @@ ht-degree: 64%
 
 ## 共享嵌入的组件
 
-以下是一段关于该主题的视频：
+您可以共享作为项目一部分的嵌入组件。
 
->[!VIDEO](https://video.tv.adobe.com/v/24713/?quality=12)
+>[!BEGINSHADEBOX]
+
+观看演示视频，请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [共享Analysis Workspace中的嵌入组件](https://video.tv.adobe.com/v/24713/?quality=12&learn=on){target="_blank"}。
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
 
 ## 常见问题解答 {#FAQs}
 

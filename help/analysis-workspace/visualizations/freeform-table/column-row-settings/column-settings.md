@@ -4,9 +4,9 @@ title: 列设置
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '889'
 ht-degree: 21%
 
 ---
@@ -15,13 +15,15 @@ ht-degree: 21%
 
 [!UICONTROL 列设置]允许您配置列格式，其中一些可以是条件格式。
 
-+++ 观看此功能的视频演示。
 
->[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
+>[!BEGINSHADEBOX]
+
+查看自由格式表中的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [行和列设置](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 要访问[!UICONTROL 列设置]，请在列标题中选择![列设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg)。
 

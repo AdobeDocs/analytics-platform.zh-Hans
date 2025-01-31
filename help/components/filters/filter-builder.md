@@ -4,7 +4,7 @@ title: 构建过滤器
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 8eb146fccbdbe47df8ca28f7b8dcbce2bf6888fd
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
 source-wordcount: '1494'
 ht-degree: 10%
@@ -132,13 +132,13 @@ ht-degree: 10%
 
 ![使用滚动日期范围进行筛选](assets/filter-rolling-date-range.gif)
 
-+++ 以下是一段关于在过滤器中使用滚动日期范围的视频
 
->[!VIDEO](https://video.tv.adobe.com/v/25403/?quality=12)
+>[!BEGINSHADEBOX]
 
-{{videoaa}}
+观看演示视频的![VideoCheckout](/help/assets/icons/VideoCheckedOut.svg)[区段中的滚动日期范围](https://video.tv.adobe.com/v/25403/?quality=12&learn=on){target="_blank"}。
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## 堆叠筛选器 {#stack}
 

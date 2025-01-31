@@ -4,9 +4,9 @@ title: 组合图表可视化
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '603'
 ht-degree: 44%
 
 ---
@@ -30,7 +30,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >[!ENDSHADEBOX]
 
 
-通过![Comment](/help/assets/icons/ComboChart.svg) **[!UICONTROL Combo]**&#x200B;可视化图表，可以轻松快速地构建比较可视化图表，而无需先构建表格。 您可以通过线条/条形组合轻松查看数据趋势。
+通过![组合图表](/help/assets/icons/ComboChart.svg) **[!UICONTROL 组合图表]**&#x200B;可视化图表，可以轻松快速地构建比较可视化图表，而无需先构建表格。 您可以通过线条/条形组合轻松查看数据趋势。
 
 使用[!UICONTROL 组合]可以：
 

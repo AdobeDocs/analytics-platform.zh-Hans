@@ -5,22 +5,28 @@ solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: 2f78905c2a1e94174a52269becc15474baf59f71
-workflow-type: ht
-source-wordcount: '224'
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
+workflow-type: tm+mt
+source-wordcount: '219'
 ht-degree: 100%
 
 ---
 
 # 连接概述
 
-利用连接，Customer Journey Analytics 产品管理员可以与不同的[!DNL Adobe Experience Platform] 数据源（例如事件、查找和配置文件数据集）建立连接。这些连接支持将连接中的数据集成到派生的数据视图中。连接是 CJA 的基础，它是从[!DNL Experience Platform] 源数据集创建的。通过访问连接，还可以查看连接管理器，在其中可以查看构成连接的基础数据集，以及进行重要的编辑和配置选择。
+利用连接，Customer Journey Analytics 产品管理员可以与不同的[!DNL Adobe Experience Platform] 数据源（例如事件、查找和轮廓数据集）建立连接。这些连接支持将连接中的数据集成到派生的数据视图中。连接是 CJA 的基础，它是从[!DNL Experience Platform] 源数据集创建的。通过访问连接，还可以查看连接管理器，在其中可以查看构成连接的基础数据集，以及进行重要的编辑和配置选择。
 
 我们建议仅允许核心管理组访问连接管理。连接级别的配置将对引入 Customer Journey Analytics 中的数据量分配产生合同性影响。
 
-以下是一段视频概述：
+<!-- Outdated interface 
 
->[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12&learn=on)
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configuring connections](https://video.tv.adobe.com/v/35111/?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
+
+>[!ENDSHADEBOX]
+
+-->
 
 ## 所需权限
 

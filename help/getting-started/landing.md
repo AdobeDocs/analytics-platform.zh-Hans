@@ -4,10 +4,10 @@ title: Customer Journey Analytics 登陆页面
 role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 373d0c9989fb692da23efe371c65344093801140
-workflow-type: ht
-source-wordcount: '496'
-ht-degree: 100%
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+workflow-type: tm+mt
+source-wordcount: '501'
+ht-degree: 97%
 
 ---
 
@@ -15,13 +15,15 @@ ht-degree: 100%
 
 Customer Journey Analytics 的登录页突出[!DNL Analysis Workspace]显示了项目经理主页和学习部分，以帮助您更有效地管理客户历程数据。
 
-+++ 请观看视频了解相关的介绍。
 
->[!VIDEO](https://video.tv.adobe.com/v/334278/?quality=12)
+>[!BEGINSHADEBOX]
+
+观看演示视频，请参阅Analysis Workspace中的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [登录页面](https://video.tv.adobe.com/v/334278/?quality=12&learn=on){target="_blank"}。
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 Customer Journey Analytics 登陆页面由以下子选项卡组成：项目和学习。
 
