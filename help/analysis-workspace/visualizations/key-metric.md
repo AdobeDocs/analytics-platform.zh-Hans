@@ -18,7 +18,7 @@ ht-degree: 36%
 >[!CONTEXTUALHELP]
 >id="workspace_keymetricsummary_button"
 >title="关键量度摘要"
->abstract="创建由线条、摘要变化和摘要数字图表组合而成的可视化效果。使用此可视化效果来比较两个时段内重要量度的趋势。"
+>abstract="创建由线条、概要变化和摘要数字图表组合而成的可视化效果。使用此可视化效果来比较两个时段内重要量度的趋势。"
 
 <!-- markdownlint-enable MD034 -->
 

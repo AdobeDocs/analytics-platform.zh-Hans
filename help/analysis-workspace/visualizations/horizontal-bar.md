@@ -21,13 +21,13 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 水平条形图可视化图表具有标准和栈叠选项。
 
-## 水平条 {#horizontal-bar}
+## 水平条形图 {#horizontal-bar}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_horizontalbar_button"
->title="水平条"
+>title="水平条形图"
 >abstract="创建可视化水平条形图来表示一个或多个量度的各种值。"
 
 <!-- markdownlint-enable MD034 -->
