@@ -6,15 +6,15 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 0e3f15abbc904786c359160749d62754a9ebbe50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2418'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # Customer Journey Analytics 功能支持
 
-下表列出了Customer Journey Analytics独有的功能，以及Customer Journey Analytics支持、部分支持或不支持的Adobe Analytics功能。 由于后续会向 Customer Journey Analytics 添加其他功能，因此这些列表会随着时间而发生变化。
+下表列出了 Customer Journey Analytics 所独有的功能，以及 Customer Journey Analytics 中支持、部分支持或不支持的 Adobe Analytics 功能。由于后续会向 Customer Journey Analytics 添加其他功能，因此这些列表会随着时间而发生变化。
 
 ## Adobe Customer Journey Analytics 独有的功能 {#cja-not-aa}
 
@@ -32,13 +32,13 @@ ht-degree: 93%
 | **试验分析** | Customer Journey Analytics 可以[评估来自定义为连接一部分的任何数据源的任何试验](/help/analysis-workspace/c-panels/experimentation.md)的提升度和置信度。通过此评估，您可以了解跨任何渠道的客户互动之间的因果关系。Analytics 仅限用于通过 A4T 进行的试验分析。 |
 | **预测** | [预测](/help/analysis-workspace/c-forecast/forecasting.md)是一种 AI/ML 功能，包括基于 Customer Journey Analytics 中已有的历史数据对时间序列相关数据进行统计预测。预测可以出现在自由格式的表格和折线图可视化中。 |
 | **引导式分析** | [引导式分析](/help/guided-analysis/overview.md)使用户能够通过基于 Customer Journey Analytics 的跨渠道数据的引导式工作流，自助提供有关客户历程的高质量数据和洞察。 |
-| **智能题注** | [智能字幕](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions)使用高级机器学习和创作AI为Workspace可视化图表提供有价值的自然语言见解。 以下可视化图表支持智能字幕：折线图、多折线图、条形图、水平条形图、圆环图、面积图、流量图和流失图。 |
-| **历程画布** | [历程画布](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=en)是Analysis Workspace中的可视化图表，允许您分析人员如何通过定义的历程或从中退出。 |
-| **产品使用情况** | [产品使用情况](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/tools/product-usage/usage-overview)显示贵组织如何使用Customer Journey Analytics。 |
+| **智能题注** | [智能题注](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions)使用先进的机器学习和生成式 AI 为 Workspace 可视化提供有价值的自然语言见解。支持以下可视化图表的智能题注：线形图、多行、条形图、水平条形图、圆环图、面积图、流量和流失图。 |
+| **历程画布** | [历程画布](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=en)是 Analysis workspace 中的一项可视化功能，您使用它可以分析人们如何完成或退出所定义的历程。 |
+| **产品使用情况** | [产品使用情况](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/tools/product-usage/usage-overview)向您展示贵组织如何使用 Customer Journey Analytics。 |
 | **报告时间变换** | 通过 Customer Journey Analytics 中的[数据视图](/help/data-views/data-views.md)，可进一步解释从某个连接获得的数据。可不更改实施即更改或删除数据、使用子字符串操纵维度、从任意值创建量度或筛选子事件。以非破坏性的方式进行所有这些转换。Adobe Analytics 通过虚拟报告包和自定义会话长度提供有限的功能。 |
 | **SQL 访问** | 通过使用数据蒸馏器选项，Customer Journey Analytics 可以消除 Adob&#x200B;e 后端处理中收集的数据的限制。您可以使用 SQL 修改数据、创建适合您的业务的值和数据集，并继续探索。Analytics 不支持对其数据进行任何类型的 SQL 访问。 |
 | **拼合** | [拼合](/help/stitching/overview.md)是一项强大的功能，可以提升事件数据集进行跨渠道分析的适用性。跨渠道分析是 Customer Journey Analytics 可以处理的主要用例，允许您基于通用标识符（人员 ID）无缝组合并运行来自不同渠道的多个数据集的报告。 |
-| Adobe Journey Optimizer中的&#x200B;**模板** | 在Adobe Journey Optimizer中自定义新的报表界面，方法是：在Customer Journey Analytics中创建或编辑[模板](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=en)，然后保存该模板，以在Journey Optimizer的“报表”页面上使用。 |
+| **Adobe Journey Optimizer 中的模板** | 在 Adobe Journey Optimizer 中自定义新的报告界面：在 Customer Journey Analytics 中创建或编辑[模板](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=en)，然后保存该模板，将其在 Journey Optimizer 的报告页面中使用。 |
 | **无限量的客户维度和量度** | Customer Journey Analytics 维度是无限的；值可以是数字、文本、对象、列表或它们的组合。维度可以是嵌套的或分层的。<br/>根据对比度，Adobe Analytics 最多支持 75 个 prop 和 250 个 eVar。 |
 | **无限量的唯一值** | Customer Journey Analytics 不限制可以在单个维度上报告的唯一值或维度项目的数量。<p> [维度上没有基数限制](/help/components/dimensions/high-cardinality.md)，允许任何唯一值出现并被计算。</p><p>这种方法消除了大规模 Adobe Analytics 实施中可能存在的报告和分析限制，从而产生 [!UICONTROL 低流量] 标签。</p><p>在 Customer Journey Analytics 中，可以看到 [!UICONTROL Uniques Exceeded] 标签，但这种情况发生的频率要低得多，可以通过对数据应用筛选条件或细分来缓解。</p> |
 
@@ -68,7 +68,7 @@ ht-degree: 93%
 | **PDF 导出** | 全面支持 |
 | **项目策划** | 全面支持 |
 | **项目链接** | 全面支持 |
-| **产品模板** | 包括[预建模板](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates)和[公司模板](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates#access-a-company-template)。 |
+| **产品模板** | 包括[预建模板](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/use-templates)和[公司模板](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/create-templates#access-a-company-template)。 |
 | **报告时处理** | 全面支持；Customer Journey Analytics 完全依赖于“报告时间处理”。 |
 | **报告 API 访问** | 全面支持；通过 [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/) 提供。 |
 | **计划报告/项目** | 全面支持 |
