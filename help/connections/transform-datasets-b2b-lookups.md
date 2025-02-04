@@ -1,18 +1,18 @@
 ---
-title: 转换数据集以进行B2B查找
+title: 转换数据集以进行 B2B 查找
 description: 描述如何转换特定B2B查找架构的数据集中的数据
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
-source-git-commit: eef9b420f1016254dece0a916b82bc99e2ca866e
+source-git-commit: 32678fdedf1b384afce1998880af04f1af077943
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 0%
+source-wordcount: '413'
+ht-degree: 2%
 
 ---
 
-# 转换数据集以进行B2B查找
+# 转换数据集以进行 B2B 查找
 
 要支持对B2B数据（包括客户、机会、营销列表和营销活动）进行基于人员的查找，需要转换B2B查找数据集。
 
@@ -30,9 +30,12 @@ ht-degree: 0%
 
 要为此类数据集启用转换，请执行以下操作：
 
-![启用转换数据集](assets/transform-dataset.gif)
+![启用转换数据集](/help/connections/assets/transform.gif)
 
-* 请确保为&#x200B;**[!UICONTROL 键]**&#x200B;和&#x200B;**[!UICONTROL 匹配键]**&#x200B;选择正确的标识符，例如`personKey.sourceKey`。
+* 验证每个数据集的&#x200B;**[!UICONTROL 键]**&#x200B;和&#x200B;**[!UICONTROL 匹配键]**&#x200B;的建议值。 如果更改建议值的值，您将看到要求您继续的警告。 您必须确保：
+
+   * 您为&#x200B;**Key**&#x200B;选择的值基于人员ID数据类型。
+   * 您为&#x200B;**匹配键**&#x200B;选择的值被定义为事件数据集的主标识字段。
 
 * 选择用于导入新数据和数据集回填的选项。
 
@@ -43,7 +46,7 @@ ht-degree: 0%
 
   >[!IMPORTANT]
   >
-  >打开连接后，如果保存连接，转换将不可逆。 保存连接后，您无法修改数据集的转换设置，除非删除该数据集并将其再次添加到连接中。
+  >打开连接后，如果保存连接，转换将不可逆。 您无法修改键、匹配键和转换数据集配置。 您只能删除、添加然后重新配置数据集。
 
 要为已属于现有连接的一个或多个数据集启用转换：
 
