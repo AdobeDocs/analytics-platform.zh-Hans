@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 6cd4fadc28117ed88b68d17274ab8de2b0edff10
+source-git-commit: edbe0a1b3354b17defb9aef90564f2e36586b181
 workflow-type: tm+mt
-source-wordcount: '2565'
-ht-degree: 99%
+source-wordcount: '2583'
+ht-degree: 98%
 
 ---
 
@@ -69,9 +69,9 @@ Customer Journey Analytics 包括[数据准备](https://experienceleague.adobe.c
 +++
 
 
-+++**未拼合的配置文件数据集记录的预期行为是什么？**
++++**未拼合的轮廓数据集记录的预期行为是什么？**
 
-**示例场景**：通过使用 `CRMid` 作为人员 ID，您在 Customer Journey Analytics 连接中连接两个数据集。一个是 Web 事件数据集，所有记录中都包含 `CRMid`。另一个数据集是 CRM 配置文件数据集。CRM 数据集中 40% 的数据都在 Web 事件数据集中有 `CRMid`。Web 事件数据集中不存在另外 60% - 这些记录是否出现在 Analysis Workspace 的报表中？<p> **回答**：不带关联的事件的配置文件行存储在 Customer Journey Analytics 中。但是，您无法在 Analysis Workspace 中查看它们，直到与该 ID 关联的事件出现。
+**示例场景**：通过使用 `CRMid` 作为人员 ID，您在 Customer Journey Analytics 连接中连接两个数据集。一个是 Web 事件数据集，所有记录中都包含 `CRMid`。另一个数据集是 CRM 轮廓数据集。CRM 数据集中 40% 的数据都在 Web 事件数据集中有 `CRMid`。Web 事件数据集中不存在另外 60% - 这些记录是否出现在 Analysis Workspace 的报告中？<p> **回答**：不带关联的事件的轮廓行存储在 Customer Journey Analytics 中。但是，您无法在 Analysis Workspace 中查看它们，直到与该 ID 关联的事件出现。
 
 +++
 
@@ -131,7 +131,7 @@ Customer Journey Analytics 包括[数据准备](https://experienceleague.adobe.c
 >[!NOTE]
 >Customer Journey Analytics 中没有固定的数据大小，因此 Adobe 无法承诺标准摄取时间。Adobe 正在积极地努力通过新的更新和摄取优化而缩短这些延迟。
 
-<ul><li>实时数据或事件：当数据在 Adobe Experience Platform 中可用后，在 90 分钟内处理和摄取。（批次大小 &gt; 500 万行：超过 90 分钟。）</li><li>少量回填：七天内<li>大量回填：30 天内</li></ul>
+<ul><li>实时数据或事件：当数据在 Adobe Experience Platform 中可用后，在 90 分钟内处理和摄取。（批次大小&gt; 500万行：超过90分钟。）**注意：**如果启用了拼合，则摄取可能需要3.25小时。 有关更多详细信息，请参阅[护栏](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails)。</li><li>少量回填：七天内<li>大量回填：30 天内</li></ul>
 
 Adobe 最近改变了在 Customer Journey Analytics 中处理数据的方式：
 
@@ -139,7 +139,7 @@ Adobe 最近改变了在 Customer Journey Analytics 中处理数据的方式：
 
 ## 5. 设置[!UICONTROL 连接]数据保留的滚动时段 {#data-retention}
 
-通过[**[!UICONTROL 启用滚动数据时段&#x200B;]**设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection)，可将 Customer Journey Analytics 数据保留定义为按月（三个月、六个月等）计的滚动时段。在[!UICONTROL 连接]级别而非[!UICONTROL 数据集]级别设置它。数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此个人资料或查找数据集没有数据保留设置。
+通过[**[!UICONTROL 启用滚动数据时段&#x200B;]**设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection)，可将 Customer Journey Analytics 数据保留定义为按月（三个月、六个月等）计的滚动时段。在[!UICONTROL 连接]级别而非[!UICONTROL 数据集]级别设置它。数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此轮廓或查找数据集没有数据保留设置。
 
 主要好处是，您只需存储或报告适用且有用的数据，并且可删除不再有用的旧数据。它可以帮助您保持在合同限制范围内，并减少超出预期成本的风险。
 
@@ -149,8 +149,8 @@ Adobe 最近改变了在 Customer Journey Analytics 中处理数据的方式：
 
 | 如果您... | 产生的后果... |
 | --- | --- |
-| 删除 [!UICONTROL Adobe Experience Platform] 中的沙盒 | 删除沙盒将阻止数据流向任何与该沙盒中的数据集建立的 [!UICONTROL Customer Journey Analytics] 连接。与此已删除的沙盒相关的连接、数据视图、指标和维度也将被删除。 | |
-| 删除 [!UICONTROL Adobe Experience Platform] 中的架构，但不删除与该架构关联的数据集 | [!UICONTROL Adobe Experience Platform] 不允许删除具有一个或多个关联 [!UICONTROL 数据集] 的 [!UICONTROL 构架]。但是，具有相应权限集的管理员可以先删除关联数据集，然后再删除架构。 |
+| 删除 [!UICONTROL Adobe Experience Platform] 中的沙盒 | 删除沙盒将阻止数据流向任何与该沙盒中的数据集建立的 [!UICONTROL Customer Journey Analytics] 连接。与此已删除的沙盒相关的连接、数据视图、量度和维度也将被删除。 | |
+| 删除 [!UICONTROL Adobe Experience Platform] 中的架构，但不删除与该架构关联的数据集 | [!UICONTROL Adobe Experience Platform] 不允许删除具有一个或多个关联 [!UICONTROL 数据集] 的 [!UICONTROL 架构]。但是，具有相应权限集的管理员可以先删除关联数据集，然后再删除架构。 |
 | 删除 [!UICONTROL Adobe Experience Platform] 数据湖中的数据集 | 删除 Adobe Experience Platform 数据湖中的数据集将阻止数据从该数据集流向任何包括该数据集的 Customer Journey Analytics 连接。自动从关联的 Customer Journey Analytics 连接删除来自该数据集的任何数据。 |
 | 删除 [!UICONTROL Customer Journey Analytics] 中的数据集 | 请联系您的 Adobe 帐户团队，以启动删除已保存连接中数据集的过程。 |
 | 从数据集中删除批次（在 [!UICONTROL Adobe Experience Platform] 中） | 如果从 [!UICONTROL Adobe Experience Platform] 数据集删除了批次，则从任何包含该特定批次的 Customer Journey Analytics 连接删除同一批次。Customer Journey Analytics 会接收到批次已在 [!UICONTROL Adobe Experience Platform] 中删除的通知。 |
@@ -158,9 +158,9 @@ Adobe 最近改变了在 Customer Journey Analytics 中处理数据的方式：
 | 删除 [!UICONTROL Customer Journey Analytics] 中的连接 | 出现错误消息，其中指示：<ul><li>任何为已删除的连接创建的数据视图都将不再起作用。</li><li> 同样地，任何依赖于已删除的连接中的数据视图的 Workspace 项目都停止运行。</li></ul> |
 | 删除 [!UICONTROL Customer Journey Analytics] 中的数据视图 | 一条错误消息指示任何依赖于这个已删除的数据视图的 Workspace 项目都将停止运行。 |
 
-## 7. 在 Customer Journey Analytics 中合并报表包时的注意事项 {#merge-reportsuite}
+## 7. 在 Customer Journey Analytics 中合并报告包时的注意事项 {#merge-reportsuite}
 
-如果打算通过 [Adobe Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)摄取 Adobe Analytics 数据，请在合并两个或更多 Adobe Analytics 报表包时考虑以下这些后果。
+如果打算通过 [Adobe Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)摄取 Adobe Analytics 数据，请在合并两个或更多 Adobe Analytics 报告包时考虑以下这些后果。
 
 | 问题 | 注意事项 |
 | --- | --- |
@@ -217,7 +217,7 @@ Adobe 最近改变了在 Customer Journey Analytics 中处理数据的方式：
 
 Adobe 定期监控和执行使用限制。“数据行数”表示可供在 Customer Journey Analytics 中分析的数据的每日平均行数。
 
-例如，您的合同授权您拥有100万行数据。 假设在使用 Customer Journey Analytics 的第 1 天，您上传了 200 万行数据。在第 2 天，您删除了 100 万行数据，并在许可期限的剩余时间将用量保持在承诺的最大值（即 100 万行数据）。根据您的合同条款，由于您超出了“数据行”许可证授权，因此您在第 1 天仍可能会收取按比例分摊的过度使用费用。
+例如，您的合同授权您拥有 100 万行数据。假设在使用 Customer Journey Analytics 的第 1 天，您上传了 200 万行数据。在第 2 天，您删除了 100 万行数据，并在许可期限的剩余时间将用量保持在承诺的最大值（即 100 万行数据）。根据您的合同条款，由于您超出了“数据行”许可证授权，因此您在第 1 天仍可能会收取按比例分摊的过度使用费用。
 
 ## 11. 诊断数据差异 {#discrepancies}
 
