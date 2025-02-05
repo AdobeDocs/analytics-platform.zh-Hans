@@ -1,5 +1,5 @@
 ---
-title: 了解您的Adobe Analytics实施以及它如何影响您升级到Customer Journey Analytics
+title: 了解您的 Adobe Analytics 实施情况及其对升级到 Customer Journey Analytics 的影响
 description: 了解从Adobe Analytics升级到Customer Journey Analytics时推荐的路径
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 source-git-commit: a462bdbff59e8d83d6948ef882e66690624c4847
 workflow-type: tm+mt
 source-wordcount: '876'
-ht-degree: 8%
+ht-degree: 27%
 
 ---
 
-# 了解您的Adobe Analytics实施以及它如何影响您升级到Customer Journey Analytics {#implementation-affects-upgrade}
+# 了解您的 Adobe Analytics 实施情况及其对升级到 Customer Journey Analytics 的影响 {#implementation-affects-upgrade}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement"
->title="AppMeasurement（手动JS文件）"
->abstract="JavaScript实施，在页面上加载AppMeasurement.js，并使用s对象(例如，s.eVar1)将数据发送到Adobe。"
+>title="AppMeasurement（手动 JS 文件）"
+>abstract="JavaScript 实施，在页面上加载 AppMeasurement.js，并使用 s 对象（例如，s.eVar1）向 Adobe 发送数据。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -29,8 +29,8 @@ ht-degree: 8%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-analyticsextension"
->title="Adobe Analytics扩展（标记）"
->abstract="用于加载Adobe Experience Platform数据收集（以前称为Launch）的标记实施。 标记上安装了Adobe Analytics扩展。"
+>title="Adobe Analytics 扩展（标记）"
+>abstract="标记实施，加载 Adobe Experience Platform 数据收集 (以前称为 Launch) 。标记已安装 Adobe Analytics 扩展。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -38,8 +38,8 @@ ht-degree: 8%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk"
->title="Web SDK (alloy.js)"
->abstract="JavaScript实施在页面上加载Web SDK库(alloy.js)，并使用JSON有效负载将数据发送到Adobe。"
+>title="Web SDK（alloy.js）"
+>abstract="JavaScript 实施，在页面上加载 Web SDK 库（alloy.js），并使用 JSON 负载向 Adobe 发送数据。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -47,8 +47,8 @@ ht-degree: 8%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdkextension"
->title="Web SDK扩展（标记）"
->abstract="用于加载Adobe Experience Platform数据收集（以前称为Launch）的标记实施。 标记上安装了Web SDK扩展。"
+>title="Web SDK 扩展（标记）"
+>abstract="标记实施，加载 Adobe Experience Platform 数据收集 (以前称为 Launch) 。标记已安装 Web SDK 扩展。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -57,7 +57,7 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-api"
 >title="数据插入 API"
->abstract="一个使用数据插入API或批量数据插入API的实施。"
+>abstract="使用数据插入 API 或批量数据插入 API 的实施。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -66,7 +66,7 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-mobilesdk"
 >title="Mobile SDK"
->abstract="一个使用Adobe Experience Platform Mobile SDK的实施。"
+>abstract="使用 Adobe Experience Platform Mobile SDK 的实施。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -75,7 +75,7 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-unknown"
 >title="未知实施"
->abstract="如果您不是实施的管理者，则可以临时选择此选项。"
+>abstract="如果您不是管理实施的人员，可以暂时选择此选项。"
 
 <!-- markdownlint-enable MD034 -->
 

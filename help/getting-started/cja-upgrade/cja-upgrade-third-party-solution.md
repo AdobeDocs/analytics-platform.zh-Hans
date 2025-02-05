@@ -1,26 +1,27 @@
 ---
-title: 从第三方分析解决方案升级到Customer Journey Analytics
+title: 从第三方分析解决方案升级到 Customer Journey Analytics
 description: 了解如何从第三方分析解决方案升级到Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: a462bdbff59e8d83d6948ef882e66690624c4847
+exl-id: bc79ba1a-1153-4fe8-b265-9703a323c977
+source-git-commit: 87df2fb92f238ce051ac5f6cc90e218737279471
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 8%
+ht-degree: 16%
 
 ---
 
-# 从第三方分析解决方案升级到Customer Journey Analytics {#upgrade-from-third-party}
+# 从第三方分析解决方案升级到 Customer Journey Analytics {#upgrade-from-third-party}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-third-party"
 >title="第三方分析产品"
->abstract="为第三方分析产品(如Google Analytics)收集数据的实施。 选择此选项将禁用调查表中的多个选项，当从第三方分析产品升级到Customer Journey Analytics时，这些选项不适用。"
+>abstract="为第三方分析产品（如 Google Analytics）收集数据的实施。从第三方分析产品升级到 Customer Journey Analytics 时，选择此选项将禁用问卷中不适用的几个选项。"
 
 <!-- markdownlint-enable MD034 -->
 

@@ -10,7 +10,7 @@ exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
 source-git-commit: 2d9475c4aa3ca9ba92856182e8c93f59180d833a
 workflow-type: tm+mt
 source-wordcount: '1587'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 
@@ -28,14 +28,14 @@ ht-degree: 5%
 >
 >如果本节中描述的升级步骤对贵组织不切实际，请使用[Adobe AnalyticsCustomer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)动态生成针对贵组织独特环境量身定制的升级步骤。
 
-### 高级别建议的升级过程 {#high-level-upgade-process}
+### 高层建议升级流程 {#high-level-upgade-process}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-historical-data"
->title="来自Adobe Analytics的历史数据"
->abstract="将您的Adobe Analytics历史报表包数据引入Adobe Experience Platform并Customer Journey Analytics。"
+>title="从 Adobe Analytics 获取历史数据"
+>abstract="将历史 Adobe Analytics 报表包数据引入 Adobe Experience Platform 和 Customer Journey Analytics。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -55,7 +55,7 @@ ht-degree: 5%
 
    Analytics源连接器允许您：
 
-   * 将您的Adobe Analytics历史报表包数据引入Adobe Experience Platform并Customer Journey Analytics。
+   * 将历史 Adobe Analytics 报表包数据引入 Adobe Experience Platform 和 Customer Journey Analytics。
 
      您可以保持Analytics Source Connector运行，只要您需要保留Adobe Analytics历史数据即可。
 
