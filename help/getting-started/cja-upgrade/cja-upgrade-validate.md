@@ -6,14 +6,24 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: c0513e4c-51fb-4b4c-8450-8e6bf7dda4e7
+source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
 
-# 验证数据是否正在流入Customer Journey Analytics
+# 验证数据是否正在流入Customer Journey Analytics {#validate-data}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-data-validate"
+>title="验证数据是否正在流动"
+>abstract="使用连接详细信息验证数据是否流入Customer Journey Analytics。<br><br>如果一切都已正确无误地完成，此步骤可以在不到一天的时间内完成。 如果存在多个数据收集问题，则对这些问题进行故障排除可能需要更长的时间。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

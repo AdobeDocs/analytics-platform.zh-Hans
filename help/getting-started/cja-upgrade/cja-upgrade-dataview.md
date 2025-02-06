@@ -6,14 +6,24 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 23%
+source-wordcount: '475'
+ht-degree: 20%
 
 ---
 
-# 在Customer Journey Analytics中创建数据视图
+# 在Customer Journey Analytics中创建数据视图 {#upgrade-create-dataview}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-dataview"
+>title="在Customer Journey Analytics中创建数据视图"
+>abstract="数据视图是Customer Journey Analytics专属的容器，通过它，可决定如何解释来自连接的数据。<br><br>虽然数据视图的初始创建需要几分钟时间，但为每个维度和量度配置所需的组件设置可能需要几天时间。 调整这些设置可追溯应用，以便您的组织可以在一段时间内优化它们。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
@@ -56,4 +66,3 @@ ht-degree: 23%
 1. 指定所有所需设置后，选择&#x200B;**[!UICONTROL 保存并完成]**。
 
 1. 继续执行[建议的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)或[动态生成的升级步骤](https://gigazelle.github.io/cja-ttv/)。
-

@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f76d098d-d223-40e4-be81-d28e7581396b
-source-git-commit: 41965bcd5ae8252fbf2ceda0d2b633ec6dc0e9a3
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 23%
+source-wordcount: '300'
+ht-degree: 20%
 
 ---
 
-# 创建数据流以用于Customer Journey Analytics
+# 创建数据流以用于Customer Journey Analytics {#upgrade-create-datastream}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-datastream-create"
+>title="在Adobe Experience Platform中创建数据流"
+>abstract="数据流是一个中介位置，可将您的数据传递给所有配置的服务。 在Adobe Experience Platform中创建此位置。<br><br>在Platform界面中初次创建数据流只需几分钟的时间。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
-source-git-commit: cb6a439def7bf0fab1768fdd1c7d909b76b995d6
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 36%
+source-wordcount: '362'
+ht-degree: 28%
 
 ---
 
-# 为 Web SDK 扩展实施加载器标记
+# 为 Web SDK 扩展实施加载器标记 {#upgrade-tag-loader}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-tag-loader"
+>title="在网站上实施加载器标记"
+>abstract="与网站开发团队合作，在网站的每个页面上安装加载器标记。<br><br>此任务的完成时间在很大程度上取决于您与一起部署代码的工程团队的响应时间。 某些组织具有高度自适应工程团队，可在几天内完成此步骤，而工程团队如果有大量积压任务，则可能需要一个月或更长时间。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

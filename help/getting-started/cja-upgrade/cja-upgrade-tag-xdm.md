@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
-source-git-commit: 5b440a8029aab392739e573a680123d0bd8a1318
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '1612'
-ht-degree: 32%
+source-wordcount: '1697'
+ht-degree: 31%
 
 ---
 
-# 将 XDM 数据收集逻辑添加到您的标记中
+# 将 XDM 数据收集逻辑添加到您的标记中 {#upgrade-tag-xdm}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-tag-xdm"
+>title="将 XDM 数据收集逻辑添加到您的标记中"
+>abstract="在网站上安装加载器标记后，您可以添加规则和数据元素以填充要发送到Adobe的XDM对象。 Adobe建议维护一份解决方案设计文档，以跟踪标记的配置方式。<br><br>此步骤需要完成大量工作，因为它涉及为属性设置所有Analytics逻辑。 为此，您需要花费一个月或更长时间来建立正确的标记规则，测试这些规则，并在您的网站上部署它们。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

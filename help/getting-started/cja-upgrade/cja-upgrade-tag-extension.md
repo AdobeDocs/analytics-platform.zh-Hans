@@ -6,14 +6,24 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: ccc6df56771cd9f83bbd7a8570e32d7ed63a0ced
+exl-id: 382d2b00-939a-4fff-be02-7a98d457a455
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '381'
 ht-degree: 23%
 
 ---
 
-# 将Web SDK扩展添加到您的标记中
+# 将 Web SDK 扩展添加到您的标记中 {#upgrade-tag-extension}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-tag-extension"
+>title="将Platform Web SDK扩展添加到您的标记属性中"
+>abstract="将Adobe Experience Platform Web SDK扩展添加到您的标记属性中。 您可以简化将Web SDK扩展添加到标记属性的过程，只需几分钟即可完成。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
@@ -23,7 +33,7 @@ ht-degree: 23%
 
 您可以使用Adobe Experience Platform中的标记功能在您的网站上实施代码以收集数据。 这一款标记管理解决方案，可让您在满足其他标记要求的同时部署代码。标签使用 Adobe Experience Platform Web SDK 扩展提供与 Adobe Experience Platform 的无缝集成。
 
-以下信息介绍了如何将Web SDK扩展添加到标记中。 有关补充信息，请参阅Experience Platform文档中的[配置Web SDK标记扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。 Web SDK本身包含[!UICONTROL Adobe Experience Cloud ID服务]，因此您无需将ID服务扩展添加到标记中。
+以下信息介绍了如何将Web SDK扩展添加到您的标记中。 有关补充信息，请参阅Experience Platform文档中的[配置Web SDK标记扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。 Web SDK本身包含[!UICONTROL Adobe Experience Cloud ID服务]，因此您无需将ID服务扩展添加到标记中。
 
 在[创建标记](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)之后，必须使用Adobe Experience Platform Web SDK扩展对其进行配置。 这可确保您能够（通过数据流）将数据发送到Adobe Experience Platform。
 

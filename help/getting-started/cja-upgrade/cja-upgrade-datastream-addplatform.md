@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: c6d49ca4-3d04-4c0f-accd-8666a587109d
-source-git-commit: 41965bcd5ae8252fbf2ceda0d2b633ec6dc0e9a3
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 31%
+source-wordcount: '353'
+ht-degree: 26%
 
 ---
 
-# 将Platform作为服务添加到您的数据流
+# 将Platform作为服务添加到您的数据流 {#upgrade-addplatform-datastream}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-addplatform-datastream"
+>title="将Adobe Experience Platform作为服务添加到数据流"
+>abstract="数据流需要一个或多个服务才能将数据发送到。 在您的数据流中设置Adobe Experience Platform即服务。<br><br>将服务添加到数据流是一个简单的过程，只需几分钟即可完成。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

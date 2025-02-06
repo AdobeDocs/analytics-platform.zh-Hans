@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
-source-git-commit: ef6afb2872b88c82801ceb279dd757e6e1f5e78c
+source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 5%
+source-wordcount: '368'
+ht-degree: 4%
 
 ---
 
-# 创建Customer Journey Analytics的营销渠道派生字段
+# 创建Customer Journey Analytics的营销渠道派生字段 {#create-marketing-channel-derived-field}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-marketing-channel"
+>title="创建营销渠道派生的字段"
+>abstract="派生字段在数据视图中创建。<br><br>使用默认营销渠道设置只需要几分钟；创建高度自定义的营销渠道设置可能需要几个小时。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
@@ -24,7 +33,7 @@ ht-degree: 5%
 
 使用Analytics Source Connector时，营销渠道数据通过该连接器流入Customer Journey Analytics。 在传统的 Adobe Analytics 中配置营销渠道规则，其中不支持某些规则。有关详细信息，请参阅[使用营销渠道维度](/help/use-cases/aa-data/marketing-channels.md)。
 
-要在使用Experience PlatformWeb SDK时在Customer Journey Analytics中使用营销渠道，您可以在数据视图中使用派生字段重新创建用于Customer Journey Analytics的相同营销渠道和处理规则。
+要在使用Experience PlatformWeb SDK时在Customer Journey Analytics中使用营销渠道，您可以在数据视图中使用派生字段来为Customer Journey Analytics重新创建相同的营销渠道和处理规则。
 
 1. 在Customer Journey Analytics中，选择要添加营销渠道的数据视图。
 

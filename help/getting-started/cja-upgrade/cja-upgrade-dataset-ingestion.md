@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
-source-git-commit: f71f5b863a024d882a116a5fd3bf0fc433e5fe99
+source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
 
-# 升级到Customer Journey Analytics时监视数据集摄取
+# 升级到Customer Journey Analytics时监视数据集摄取 {#monitor-ingestion}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-dataset-validate"
+>title="验证数据集中的数据"
+>abstract="现在您已经配置了Web SDK实施，可以使用数据集活动管理器查看摄取和失败的批次。 如果您看到主要摄取的批次，则表示此步骤已完成。 如果您主要看到失败的批次或没有看到批次，请检查您的Web SDK实施，以确保正确地向Adobe发送数据。<br><br>如果一切都已正确无误地完成，此步骤可以在不到一天的时间内完成。 如果存在多个数据收集问题，则对这些问题进行故障排除可能需要更长的时间。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

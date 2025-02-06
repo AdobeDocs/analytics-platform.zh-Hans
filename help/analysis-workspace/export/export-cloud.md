@@ -5,14 +5,23 @@ title: 将Customer Journey Analytics报表导出到云端
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 18a1cfcddfc8b2d1c70af57518c0b8d848b4ca5d
+source-git-commit: 668f17531b4b8a01acffdbb0edef07092859d100
 workflow-type: tm+mt
-source-wordcount: '2226'
+source-wordcount: '2281'
 ht-degree: 3%
 
 ---
 
-# 将Customer Journey Analytics报表导出到云端
+# 将Customer Journey Analytics报表导出到云端 {#full-table-export}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-full-table-export"
+>title="创建与Data Warehouse类似的完整表导出"
+>abstract="在Analysis Workspace中看到数据后，即可使用完整的表导出。 您可以根据需要创建或计划完整表导出。<br><br>如果您已经知道要包括在导出中的数据，则创建完整表导出只需几分钟即可完成。"
+
+<!-- markdownlint-enable MD034 -->
 
 您可以从Customer Journey Analytics中导出Workspace的完整表，并将导出发送到指定的云目标。
 

@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
-source-git-commit: 59089146b8e56db3b0b4084615f99dc65899b74f
+source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
 
-# 架构您的架构以用于Customer Journey Analytics
+# 架构您的架构以用于Customer Journey Analytics {#upgrade-schema-architect}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-architect"
+>title="架构架构"
+>abstract="在贵组织中讨论数据收集的要求，并确定如何构建要在Adobe Experience Platform中使用的架构。 之所以出现此步骤，是因为您希望使用为组织量身定制的架构这一推荐流程。 正确执行此步骤至关重要，因为贵组织内所有团队都采用的模式显着简化了数据摄取。<br><br>组织中的所有相关方按照统一架构进行协调的预计时间为1-2个月。 此时间范围在很大程度上取决于协调所需的团队数量，以及要协调的维度+量度数量。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
@@ -22,7 +31,11 @@ ht-degree: 0%
 >
 >完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
 
-Adobe建议在升级到Customer Journey Analytics时创建Experience Data Model (XDM)架构。 XDM架构允许精简架构，根据您的组织和您使用的特定Platform应用程序的需求量身定制。 当需要对架构进行更改时，您不必在数千个未使用的字段中进行筛选，即可找到需要更新的字段。
+Adobe建议在从Adobe Analytics升级到Customer Journey Analytics时创建要与Web SDK一起使用的自定义Experience Data Model (XDM)架构。 或者，您可以使用默认的Adobe Analytics架构，该架构使用Adobe Analytics ExperienceEvent字段组。
+
+自定义XDM架构允许精简架构，根据您的组织和您使用的特定Platform应用程序的需求量身定制。 与使用Adobe Analytics ExperienceEvent字段组的默认Adobe Analytics架构不同，当需要对自定义XDM架构进行更改时，您不必在数千个未使用的字段中进行筛选来查找需要更新的字段。
+
+有关这些架构选项的更多信息，请参阅[为Customer Journey Analytics选择架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)。
 
 在开始设计XDM架构时，请查看以下部分。
 

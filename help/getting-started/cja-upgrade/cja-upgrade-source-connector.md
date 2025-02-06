@@ -7,14 +7,32 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
-source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
+source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 7%
+source-wordcount: '824'
+ht-degree: 6%
 
 ---
 
-# 创建 Analytics 源连接器并映射字段
+# 创建 Analytics 源连接器并映射字段 {#create-source-connector}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-create"
+>title="创建Analytics源连接器"
+>abstract="使用Analytics Source Connector摄取报表包数据以用于Customer Journey Analytics。<br><br>使用默认设置，创建Analytics Source Connector只需几分钟时间。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-map-fields"
+>title="创建Analytics Source Connector并映射架构字段"
+>abstract="源连接器需要知道如何将Adobe Analytics字段映射到您组织的架构。 使用此接口提供具有此映射的源连接器。 此步骤是将历史数据添加到Customer Journey Analytics的一部分。<br><br>此步骤所花费的时间在很大程度上取决于必须映射的维度和量度数量。 这个步骤并不像繁琐和重复那样困难。 预计数据流映射需要大约一周的工作才能完成。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
@@ -26,13 +44,13 @@ ht-degree: 7%
 
 您可以使用Analytics Source Connector将Adobe Analytics报表包数据引入Adobe Experience Platform。 然后，此数据可用作Customer Journey Analytics中的历史数据。
 
-此过程假定您希望[创建一个自定义架构以用于您的Customer Journey AnalyticsWeb SDK实施](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)，因为您需要一个针对您的组织需求以及您使用的特定Platform应用程序量身定制的简化架构。
+此过程假定您希望[创建一个自定义架构以用于Customer Journey Analytics的Web SDK实施](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)，因为您希望一个简化的架构以针对您的组织以及您使用的特定Platform应用程序的需求进行定制。
 
 要使用Analytics Source Connector将历史数据纳入Customer Journey Analytics，您需要：
 
 1. [为Analytics源连接器创建自定义架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
-1. 如果您还没有Analytics Source Connector，请创建Analytics Source Connector并将字段映射到您的自定义Web SDK架构，如下所述。
+1. 如果您还没有Analytics源连接器，请创建Analytics源连接器并将字段映射到您的自定义Web SDK架构，如下所述。
 
    或
 
@@ -42,7 +60,7 @@ ht-degree: 7%
 
 ## 创建 Analytics 源连接器并映射字段
 
-创建自定义架构后，您需要创建Adobe Analytics源连接器以用于历史数据。 (有关创建源连接器的更全面的一般准则，请参阅[在UI中创建Adobe Analytics源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)。)
+创建自定义架构后，您需要创建Adobe Analytics源连接器以用于历史数据。 (有关创建源连接器的更全面的一般准则，请参阅[在UI中创建Adobe Analytics源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-hans)。)
 
 要创建用于历史数据的Adobe Analytics源连接器，请执行以下操作：
 

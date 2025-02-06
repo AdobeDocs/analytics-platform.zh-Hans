@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 34e5f97b-c936-4de6-acc9-5774bc908655
-source-git-commit: 701e3d3ce535318e3d3debcdcd591615ea9ca4a1
+source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 0%
+source-wordcount: '414'
+ht-degree: 1%
 
 ---
 
-# 专门使用Analytics Source Connector升级到Customer Journey Analytics
+# 专门使用Analytics Source Connector升级到Customer Journey Analytics {#use-source-connector-exclusively}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-exclusively"
+>title="仅使用 Analytics 源连接器"
+>abstract="（不推荐）您无法通过Analytics源连接器与其他Adobe Experience Platform服务集成或从Adobe Analytics中移除。 绑定来自其他来源的数据可能需要拼合。 在调查表中满足所有这些要求以选择此选项。"
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
