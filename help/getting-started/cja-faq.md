@@ -5,7 +5,7 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 1c02405994deec1950aca7601658017d9cf8c74c
+source-git-commit: 1bea6a1bc7d2070f01a60ef859675a0f9d03c86d
 workflow-type: tm+mt
 source-wordcount: '2582'
 ht-degree: 98%
@@ -133,7 +133,7 @@ Customer Journey Analytics 包括[数据准备](https://experienceleague.adobe.c
 >
 >Customer Journey Analytics 中没有固定的数据大小，因此 Adobe 无法承诺标准摄取时间。Adobe 正在积极地努力通过新的更新和摄取优化而缩短这些延迟。
 
-* 实时数据或事件：当数据在 Adobe Experience Platform 中可用后，在 90 分钟内处理和摄取。（批次大小> 500万行：超过90分钟。） 如果启用了拼合，则摄取可能需要3.25小时。 有关详细信息，请参阅[护栏](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails)。
+* 实时数据或事件：当数据在 Adobe Experience Platform 中可用后，在 90 分钟内处理和摄取。（批次大小> 500万行：超过90分钟。） 如果启用了拼合，则摄取可能最多需要4小时。 有关详细信息，请参阅[护栏](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails)。
 * 少量回填：七天内
 * 大量回填：30 天内
 
