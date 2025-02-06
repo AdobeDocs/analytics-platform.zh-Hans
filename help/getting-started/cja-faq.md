@@ -5,7 +5,7 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 408773de0fd157edf0cd7b8edc8a8873eff00eb0
+source-git-commit: 1c02405994deec1950aca7601658017d9cf8c74c
 workflow-type: tm+mt
 source-wordcount: '2582'
 ht-degree: 98%
@@ -121,7 +121,8 @@ Customer Journey Analytics 包括[数据准备](https://experienceleague.adobe.c
 
 +++**将过去或未来日期/时间戳摄取到 Customer Journey Analytics 事件数据集中有什么限制？**
 
-<ul><li>关于过去日期/时间戳：最多存在过去十年的事件数据。</li><li>关于未来日期/时间戳：最多存在未来一个月的事件数据（预测）。</li></ul>
+* 关于过去日期/时间戳：最多存在过去十年的事件数据。
+* 关于未来日期/时间戳：最多存在未来一个月的事件数据（预测）。
 
 +++
 
@@ -129,13 +130,17 @@ Customer Journey Analytics 包括[数据准备](https://experienceleague.adobe.c
 ## 4. 延迟注意事项 {#latency}
 
 >[!NOTE]
+>
 >Customer Journey Analytics 中没有固定的数据大小，因此 Adobe 无法承诺标准摄取时间。Adobe 正在积极地努力通过新的更新和摄取优化而缩短这些延迟。
 
-<ul><li>实时数据或事件：当数据在 Adobe Experience Platform 中可用后，在 90 分钟内处理和摄取。（批次大小&gt; 500万行：超过90分钟。） 如果启用了拼合，则摄取可能需要3.25小时。<p>有关更多详细信息，请参阅[护栏](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails)。</li><li>少量回填：七天内<li>大量回填：30 天内</li></ul>
+* 实时数据或事件：当数据在 Adobe Experience Platform 中可用后，在 90 分钟内处理和摄取。（批次大小> 500万行：超过90分钟。） 如果启用了拼合，则摄取可能需要3.25小时。 有关详细信息，请参阅[护栏](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails)。
+* 少量回填：七天内
+* 大量回填：30 天内
 
 Adobe 最近改变了在 Customer Journey Analytics 中处理数据的方式：
 
-<ul><li>“当前”天的事件数据以实时数据的形式流入。任何事件时间早于前一天晚上 11:59:59 点（23:59:59）的数据都将被视为回填。</li><li>将时间戳为大于 24 小时前的任何事件数据（即使它与更新的数据属于同一批次）视为回填，并以更低的优先级摄取这些数据。</li></ul>
+* “当前”天的事件数据以实时数据的形式流入。任何事件时间早于前一天晚上 11:59:59 点（23:59:59）的数据都将被视为回填。
+* 将时间戳为大于 24 小时前的任何事件数据（即使它与更新的数据属于同一批次）视为回填，并以更低的优先级摄取这些数据。
 
 ## 5. 设置[!UICONTROL 连接]数据保留的滚动时段 {#data-retention}
 
