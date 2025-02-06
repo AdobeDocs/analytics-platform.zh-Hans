@@ -2,11 +2,12 @@
 title: 配置内容分析
 description: 有关如何配置内容分析的概述
 solution: Customer Journey Analytics
-feature: Data Views
+feature: Content Analytics
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 164d67748f8af066b603dcabeecf6d7cfca0f947
+exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
+source-git-commit: c63fa8f776fcf3390d312fb44ae6c422e7fa7222
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 0%
@@ -26,4 +27,3 @@ ht-degree: 0%
 
 * 使用内容分析[引导式配置](guided.md)。 配置向导将指导您完成设置Content Analytics自动配置的先决条件所需的所有步骤。
 * 执行[手动过程](manual.md)以配置内容分析。
-

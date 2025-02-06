@@ -2,13 +2,14 @@
 title: Content Analytics指导配置
 description: 如何使用载入引导式配置配置内容分析
 solution: Customer Journey Analytics
-feature: Data Views
+feature: Content Analytics
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 69e2f358398fd8d2646e5a3c1cb6dfd1b5b5efbb
+exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
+source-git-commit: c63fa8f776fcf3390d312fb44ae6c422e7fa7222
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1699'
 ht-degree: 11%
 
 ---
@@ -200,6 +201,16 @@ ht-degree: 11%
 >title="数据收集"
 >abstract="指明在为内容分析收集数据时应&#x200B;**包括**&#x200B;或&#x200B;**排除**&#x200B;哪些资产"
 
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_experiences_edit_button"
+>title="数据收集"
+>abstract="您可以在Tag属性的AdobeContent Analytics扩展中编辑与所选配置关联的页面设置。"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_assets_edit_button"
+>title="数据收集"
+>abstract="您可以在Tag属性的AdobeContent Analytics扩展中编辑与所选配置关联的资产的设置。"
+
 <!-- markdownlint-enable MD034 -->
 
 #### 新配置
@@ -272,5 +283,3 @@ ht-degree: 11%
       1. 如果没有为Tags属性配置Web SDK，则会创建新的Web SDK配置，以仅发送Content Analytics事件。
       1. 如果为此Tag属性配置了Web SDK，则不会对现有Web SDK配置进行任何更改。
 * **[!UICONTROL 保存]**：保存对已实施配置所做的更改并更新实施。
-
-
