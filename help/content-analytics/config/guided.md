@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: c63fa8f776fcf3390d312fb44ae6c422e7fa7222
+source-git-commit: 171520c961fe1c77b4fa8466523e10a810074910
 workflow-type: tm+mt
-source-wordcount: '1699'
+source-wordcount: '1696'
 ht-degree: 11%
 
 ---
@@ -92,7 +92,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="数据视图"
->abstract="从Customer Journey Analytics中选择要与内容分析数据合并的现有数据视图。<br/>[了解详情](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views){target=\"_blank\"}"
+>abstract="从Customer Journey Analytics中选择要与内容分析数据合并的现有数据视图。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
@@ -119,7 +119,7 @@ ht-degree: 11%
 数据视图绑定到Customer Journey Analytics[连接](/help/connections/overview.md)。 并且连接基于您组织内的沙盒。 保存配置后，**[!UICONTROL 沙盒]**&#x200B;会根据选定的数据视图，自动填充为沙盒的正确名称。
 
 
-### 体验捕捉和定义
+### 体验捕捉和定义 {#onboarding-experiences}
 
 <!-- markdownlint-disable MD034 -->
 
