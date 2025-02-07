@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 2dd215b0fe689c9370e9f5867fd1bd5fdee83d42
+source-git-commit: 22b95bce42ee9f04b828cf5b765f40008a1534b1
 workflow-type: tm+mt
 source-wordcount: '1760'
 ht-degree: 7%
@@ -236,7 +236,7 @@ ht-degree: 7%
 | 数据从Edge Network摄取到数据湖或流式摄取 | &lt; 60分钟 |
 | 从Adobe Analytics Source Connector将数据摄取到数据湖 | &lt; 2.25小时 |
 | 数据从数据湖摄取到Customer Journey Analytics | &lt; 90分钟 |
-| 拼接（可选功能；有关详细信息，请参阅[拼接概述](../stitching/overview.md)） | 4 小时 |
+| 拼接（可选功能；有关详细信息，请参阅[拼接概述](../stitching/overview.md)） | &lt; 4小时 |
 | 少于100亿个事件的Adobe Analytics Source Connector回填（最多13个月的历史数据） | &lt; 4周 |
 | 将受众发布到实时客户个人资料，包括自动创建流区段，并允许区段准备好接收数据。 | ≈ 60分钟 |
 | 刷新受众的频率 | 一次性刷新：少于5分钟的延迟。<br/>每4小时刷新一次，每天、每周、每月（延迟与刷新率密切相关）。 |
