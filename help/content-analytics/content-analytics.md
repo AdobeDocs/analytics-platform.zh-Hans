@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: c63fa8f776fcf3390d312fb44ae6c422e7fa7222
+source-git-commit: 501a9fbd7c8abd8a63348c2c8d11b88b31a0f6df
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '717'
 ht-degree: 0%
 
 ---
@@ -68,5 +68,5 @@ Content Analytics使用在Experience Platform的事件数据集中收集的Web�
 
 >[!MORELIKETHIS]
 >
->[使用Content Analytics (t.b.d.)](#value)
+>[Content Analytics报告](#report/report.md)
 >[配置内容分析](config/configuration.md)

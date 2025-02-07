@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: f75d2ed5130889f648628d0eec34556a47f1479b
+source-git-commit: 501a9fbd7c8abd8a63348c2c8d11b88b31a0f6df
 workflow-type: tm+mt
-source-wordcount: '3498'
-ht-degree: 99%
+source-wordcount: '3562'
+ht-degree: 97%
 
 ---
 
@@ -144,7 +144,7 @@ ht-degree: 99%
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulttablemetric"
 >title="默认表量度"
->abstract="选择用于自由格式表的默认量度或容器。 如果选定的数据视图不包含选定的默认量度或容器，则表将自动切换到另一个主量度。"
+>abstract="选择用于自由格式表的默认量度。 如果选定的数据视图不包含选定的默认度量，则表将自动切换到另一个主度量。"
 
 
 <!-- markdownlint-enable MD034 -->
@@ -181,7 +181,17 @@ ht-degree: 99%
 | | 百分比计算 | <ul><li>列</li><li>行</li></ul> |
 | | 列总计（仅限静态行） | <ul><li>显示行总和：显示各个行项目的总和 </li><li>显示总计：显示进行重复数据删除后的行总和。</li></ul> |
 
-### 可视化偏好设置
+### 可视化偏好设置 {#visalization-preferences}
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaultflowcontainer"
+>title="默认表量度"
+>abstract="选择用于流量可视化的默认容器。 如果选定的数据视图不包含选定的默认容器，则流量可视化将自动切换到另一个主容器。"
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaultfalloutcontainer"
+>title="默认表量度"
+>abstract="选择用于流失可视化的默认容器。 如果选定的数据视图不包含选定的默认容器，则流失可视化图表将自动切换到另一个主容器。"
 
 您可以更新在 Analysis Workspace 中创建的所有新项目的可视化偏好设置。有关如何访问这些偏好设置的信息，请参阅[更新偏好设置](#update-preferences)。
 
