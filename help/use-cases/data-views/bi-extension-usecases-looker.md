@@ -7,19 +7,20 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: 676f6c83bcf35f8da1a07841c043e1b56c57baf6
+source-git-commit: 3930b3dd1ba4e058f1a89308dbd0ccec57208359
 workflow-type: tm+mt
-source-wordcount: '13066'
+source-wordcount: '13075'
 ht-degree: 2%
 
 ---
 
 # BI 扩展用例
 
-本文记录如何使用Customer Journey AnalyticsBI扩展完成多个用例。 每个用例都说明了Customer Journey Analytics功能，以及所支持的每个BI工具的详细信息：
+本文记录如何使用Customer Journey Analytics BI扩展完成多个用例。 每个用例都说明了Customer Journey Analytics功能，以及支持的每个BI工具的详细信息：
 
 * **Power BI桌面**。 使用的版本为2.137.1102.0 64位（2024年10月）。
 * **Tableau桌面**。 使用的版本为2024.1.5 (20241.24.0705.0334) 64位。
+* **Looker**。 联机版本25.0.23，可通过[looker.com](https://looker.com){target="_blank"}使用
 
 已记录以下用例：
 
@@ -45,14 +46,14 @@ ht-degree: 2%
    * [可视化内容](#visualizations)
    * [注意事项](#caveats)
 
-**connect**&#x200B;用例侧重于如何使用Customer Journey AnalyticsBI扩展连接BI工具。
+**connect**&#x200B;用例侧重于如何使用Customer Journey Analytics BI扩展连接BI工具。
 
-**报告和分析**&#x200B;用例指示如何在当前支持的BI工具中实现类似的Customer Journey Analytics可视化。
+**报告和分析**&#x200B;用例指导如何在当前支持的BI工具中实现类似的Customer Journey Analytics可视化图表。
 
 **了解**&#x200B;用例提供了有关以下内容的更多详细信息：
 
 * 使用BI工具报告和分析时发生的转换。
-* 可视化Customer Journey Analytics工具和BI工具之间的异同。
+* Customer Journey Analytics和BI工具之间的可视化图表异同。
 * 您应了解的每个BI工具的注意事项。
 
 
@@ -65,7 +66,7 @@ ht-degree: 2%
 这些说明引用了具有以下对象的示例环境：
 
 * 数据视图： **[!UICONTROL C&amp;C — 数据视图]**??。
-* Dimension： **[!UICONTROL 产品名称]**??和&#x200B;**[!UICONTROL 产品类别]**??。
+* 维度：**[!UICONTROL 产品名称]**??和&#x200B;**[!UICONTROL 产品类别]**??。
 * 量度：**[!UICONTROL 购买收入]**??和&#x200B;**[!UICONTROL 购买]**??。
 * 筛选器： **[!UICONTROL 个钓鱼产品]**??。
 
@@ -90,7 +91,7 @@ ht-degree: 2%
 
       ![查询服务凭据](assets/queryservice-credentials.png){zoomable="yes"}
 
-1. 启动Power BI桌面。
+1. 启动Power BI Desktop。
    1. 从主界面中选择&#x200B;**[!UICONTROL 从其他源获取数据]**。
    1. 在&#x200B;**[!UICONTROL 获取数据]**对话框中：
       ![PowerBI PostgreSQL数据库](assets/powerbi-postgresql.png){zoomable="yes"}
@@ -107,7 +108,7 @@ ht-degree: 2%
       1. 使用![复制](/help/assets/icons/Copy.svg)从&#x200B;**[!UICONTROL 用户名]**&#x200B;和&#x200B;**[!UICONTROL 密码]**&#x200B;字段中的Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中复制&#x200B;**[!UICONTROL 用户名]**&#x200B;和&#x200B;**[!UICONTROL 密码]**&#x200B;值。 如果您使用的是[不会过期的凭据](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect)，请使用不会过期的凭据的密码。
       1. 确保&#x200B;**[!UICONTROL 选择要将这些设置应用到]**&#x200B;的级别的下拉菜单设置为您之前定义的&#x200B;**[!UICONTROL 服务器]**。
       1. 选择&#x200B;**[!UICONTROL 连接]**。
-   1. 在&#x200B;**[!UICONTROL 导航器]**对话框中，将检索数据视图。 此检索可能需要一些时间。 检索后，您会在Power BI桌面中看到以下内容。
+   1. 在&#x200B;**[!UICONTROL 导航器]**对话框中，将检索数据视图。 此检索可能需要一些时间。 检索后，您将在Power BI Desktop中看到以下内容。
       ![Power BI桌面加载数据](assets/powerbi-navigator-load.png){zoomable="yes"}
       1. 从左侧面板的列表中选择&#x200B;**[!UICONTROL public.cc_data_view]**。
       1. 您有两个选项：
@@ -116,12 +117,12 @@ ht-degree: 2%
             ![Power BI桌面转换数据](assets/powerbi-transform-data.png){zoomable="yes"}
             * 选择&#x200B;**[!UICONTROL 关闭并应用]**。
    1. 一段时间后，**[!UICONTROL public.cc_data_view]**&#x200B;显示在&#x200B;**[!UICONTROL 数据]**&#x200B;窗格中。 选择![V形右侧](/help/assets/icons/ChevronRight.svg)以显示维度和量度。
-      ![Power BIDestkop服务器数据已加载](assets/powerbi-navigator-loaded.png){zoomable="yes"}
+      ![Power BI Destkop服务器数据已加载](assets/powerbi-navigator-loaded.png){zoomable="yes"}
 
 
 ### 是否扁平化
 
-Power BI桌面支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼合嵌套数据](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data)。
+Power BI Desktop支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼合嵌套数据](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data)。
 
 | FLATTEN参数 | 示例 | 受支持 | 备注 |
 |---|---|:---:|---|
@@ -208,12 +209,12 @@ Tableau Desktop支持`FLATTEN`参数的以下方案。 有关详细信息，请�
    1. 选择&#x200B;**[!UICONTROL 添加连接]**。
    1. 在&#x200B;**[!UICONTROL 将数据库连接到Looker屏幕]**&#x200B;中。
 
-      ![Looker连接到数据库](assets/looker-connect.png)
+      ![Looker连接到数据库](assets/looker-connect.png){zoomable="yes"}
 
       1. 为您的连接输入&#x200B;**[!UICONTROL Name]**，例如`Example Looker Connection`。
       1. 确保选择&#x200B;**[!UICONTROL 所有项目]**&#x200B;作为&#x200B;**[!UICONTROL 连接作用域]**。
       1. 选择&#x200B;**[!UICONTROL PostgreSQL 9.5+]**&#x200B;作为方言。
-      1. 使用![复制](/help/assets/icons/Copy.svg)从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中复制并粘贴&#x200B;**[!UICONTROL 主机]**&#x200B;值作为&#x200B;**[!UICONTROL 主机]**&#x200B;的值。 例如：`examplecompany.platform-query.adobe.io`。
+      1. 使用![复制](/help/assets/icons/Copy.svg)从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板复制并粘贴&#x200B;**[!UICONTROL 主机]**&#x200B;值作为&#x200B;**[!UICONTROL 主机]**&#x200B;的值。 例如：`examplecompany.platform-query.adobe.io`。
       1. 使用![复制](/help/assets/icons/Copy.svg)从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中复制并粘贴&#x200B;**[!UICONTROL 端口]**&#x200B;值作为&#x200B;**[!UICONTROL 端口]**&#x200B;的值。 例如：`80`。
       1. 使用![复制](/help/assets/icons/Copy.svg)从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中复制并粘贴&#x200B;**[!UICONTROL 数据库]**&#x200B;值作为&#x200B;**[!UICONTROL 数据库]**&#x200B;的值。 将`?FLATTEN`添加到您粘贴的值。 例如，`prod:cja?FLATTEN`。
       1. 使用![复制](/help/assets/icons/Copy.svg)从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中复制并粘贴&#x200B;**[!UICONTROL 用户名]**&#x200B;值作为&#x200B;**[!UICONTROL 用户名]**&#x200B;的值。
@@ -235,7 +236,7 @@ Tableau Desktop支持`FLATTEN`参数的以下方案。 有关详细信息，请�
          1. 在&#x200B;**[!UICONTROL 中命名您的项目创建此模型的新LookML项目]**。 针对`example: example_looker_project`。
          1. 选择&#x200B;**[!UICONTROL 下一步]**。
       1. 在&#x200B;**[!UICONTROL ➋中，选择表]**：
-         1. 选择&#x200B;**[!UICONTROL public]**，然后确保已选择Customer Journey Analytics数据视图。 例如： ![复选标记](/help/assets/icons/Checkmark.svg) **[!UICONTROL cc_data_view]**。
+         1. 选择&#x200B;**[!UICONTROL public]**，然后确保已选择您的Customer Journey Analytics数据视图。 例如： ![复选标记](/help/assets/icons/Checkmark.svg) **[!UICONTROL cc_data_view]**。
          1. 选择&#x200B;**[!UICONTROL 下一步]**。
       1. 在&#x200B;**[!UICONTROL ➌中，选择主键]**：
          1. 选择&#x200B;**[!UICONTROL 下一步]**。
@@ -310,7 +311,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
 1. 在&#x200B;**[!UICONTROL 可视化图表]**&#x200B;窗格中，选择&#x200B;**[!UICONTROL 折线图]**&#x200B;可视化图表。
 
-   使用与表相同的数据时，折线图可视化图表会替换表。 您的Power BI桌面应如下所示。
+   使用与表相同的数据时，折线图可视化图表会替换表。 您的Power BI桌面应该如下所示。
 
    ![Power BI桌面用例2日期范围筛选器](assets/uc2-pbi-daterange.png){zoomable="yes"}
 
@@ -319,7 +320,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
    1. 选择![更多](/help/assets/icons/More.svg)。
    1. 从上下文菜单中，选择&#x200B;**[!UICONTROL 显示为表]**。
 
-   主视图已更新以显示折线图可视化图表和表格。 您的Power BI桌面应如下所示。
+   主视图已更新以显示折线图可视化图表和表格。 您的Power BI桌面应该如下所示。
 
    ![Power BI桌面用例2最终每日趋势可视化图表](assets/uc2-pbi-final.png){zoomable="yes"}
 
@@ -370,17 +371,17 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 1. 在&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;对话框中：
    1. 选择&#x200B;**[!UICONTROL ‣抄送数据视图]**
    1. 从字段列表中，选择&#x200B;**[!UICONTROL 日‣间范围日期]**，然后选择&#x200B;**[!UICONTROL 日期范围日期]**。
-      ![Looker筛选器](assets/uc2-looker-filter.png)
+      ![Looker筛选器](assets/uc2-looker-filter.png){zoomable="yes"}
 1. 指定&#x200B;**[!UICONTROL Cc数据视图日期范围日期]**&#x200B;筛选器，因为&#x200B;**[!UICONTROL 在]** **[!UICONTROL 2023/01/01]** **[!UICONTROL 之前]** **[!UICONTROL 2023/02/01]**&#x200B;的范围内。
 1. 从左边栏中的&#x200B;**[!UICONTROL 抄送数据视图]**&#x200B;部分，
-   1. 从&#x200B;**[!UICONTROL DIMENSION‣]**&#x200B;的列表中选择&#x200B;**[!UICONTROL 日期范围日期]**，然后选择&#x200B;**[!UICONTROL 日期]**。
+   1. 从&#x200B;**[!UICONTROL DIMENSIONS‣]**&#x200B;的列表中选择&#x200B;**[!UICONTROL 日期范围日期]**，然后选择&#x200B;**[!UICONTROL 日期]**。
    1. 在左边栏（底部）中选择&#x200B;**[!UICONTROL MEASURES]**&#x200B;下的&#x200B;**[!UICONTROL 计数]**。
 1. 选择&#x200B;**[!UICONTROL 运行]**。
 1. 选择‣**[!UICONTROL 可视化图表]**&#x200B;以显示折线图可视化图表。
 
 您应该会看到如下所示的可视化图表和表格。
 
-![Looker结果每日趋势](assets/uc2-looker-result.png)
+![Looker结果每日趋势](assets/uc2-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -395,7 +396,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
 用例的&#x200B;**[!UICONTROL 每小时趋势]**&#x200B;面板示例：
 
-![Customer Journey Analytics的每小时趋势可视化图表](assets/cja_hourly_trend.png){zoomable="yes"}
+![Customer Journey Analytics小时趋势可视化图表](assets/cja_hourly_trend.png){zoomable="yes"}
 
 +++
 
@@ -410,7 +411,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
 >[!TAB Power BI桌面]
 
-![AlertRed](/help/assets/icons/AlertRed.svg)Power BI **不**&#x200B;了解如何处理日期时间字段，因此不支持&#x200B;**[!UICONTROL daterangehour]**&#x200B;和&#x200B;**[!UICONTROL daterangeminute]**&#x200B;等维度。
+![AlertRed](/help/assets/icons/AlertRed.svg) Power BI **不**&#x200B;了解如何处理日期时间字段，因此不支持&#x200B;**[!UICONTROL daterangehour]**&#x200B;和&#x200B;**[!UICONTROL daterangeminute]**&#x200B;等维度。
 
 >[!TAB Tableau桌面]
 
@@ -460,17 +461,17 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 1. 在&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;对话框中：
    1. 选择&#x200B;**[!UICONTROL ‣抄送数据视图]**
    1. 从字段列表中，选择&#x200B;**[!UICONTROL 日‣间范围日期]**，然后选择&#x200B;**[!UICONTROL 日期范围日期]**。
-      ![Looker筛选器](assets/uc2-looker-filter.png)
+      ![Looker筛选器](assets/uc2-looker-filter.png){zoomable="yes"}
 1. 指定&#x200B;**[!UICONTROL Cc数据视图日期范围日期]**&#x200B;筛选器，因为&#x200B;**[!UICONTROL 在]** **[!UICONTROL 2023/01/01]** **[!UICONTROL 之前]** **[!UICONTROL 2023/01/02]**&#x200B;的范围内。
 1. 从左边栏中的&#x200B;**[!UICONTROL 抄送数据视图]**&#x200B;部分，
-   1. 从&#x200B;**[!UICONTROL DIMENSION]**&#x200B;的列表中选择&#x200B;**[!UICONTROL ‣ Daterangehour Date]**，然后选择&#x200B;**[!UICONTROL Time]**。
+   1. 从‣**[!UICONTROL DIMENSIONS]**&#x200B;的列表中选择&#x200B;**[!UICONTROL Daterangehour Date]**，然后选择&#x200B;**[!UICONTROL Time]**。
    1. 在左边栏（底部）中选择&#x200B;**[!UICONTROL MEASURES]**&#x200B;下的&#x200B;**[!UICONTROL 计数]**。
 1. 选择&#x200B;**[!UICONTROL 运行]**。
 1. 选择‣**[!UICONTROL 可视化图表]**&#x200B;以显示折线图可视化图表。
 
 您应该会看到如下所示的可视化图表和表格。
 
-![Looker结果每日趋势](assets/uc3-looker-result.png)
+![Looker结果每日趋势](assets/uc3-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -519,7 +520,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
    1. 选择&#x200B;**[!UICONTROL 折线图]**&#x200B;可视化图表。
 
-   使用与表相同的数据时，折线图可视化图表会替换表。 您的Power BI桌面应如下所示。
+   使用与表相同的数据时，折线图可视化图表会替换表。 您的Power BI桌面应该如下所示。
 
    ![Power BI桌面用例2日期范围筛选器](assets/uc4-pbi-filter-daterange.png){zoomable="yes"}
 
@@ -528,7 +529,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
    1. 选择![更多](/help/assets/icons/More.svg)。
    1. 从上下文菜单中，选择&#x200B;**[!UICONTROL 显示为表]**。
 
-   主视图已更新以显示折线图可视化图表和表格。 您的Power BI桌面应如下所示。
+   主视图已更新以显示折线图可视化图表和表格。 您的Power BI桌面应该如下所示。
 
    ![Power BI桌面用例2最终每日趋势可视化图表](assets/uc4-pbi-filter-final.png){zoomable="yes"}
 
@@ -579,17 +580,17 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 1. 在&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;对话框中：
    1. 选择&#x200B;**[!UICONTROL ‣抄送数据视图]**
    1. 从字段列表中，选择&#x200B;**[!UICONTROL 日‣间范围日期]**，然后选择&#x200B;**[!UICONTROL 日期范围日期]**。
-      ![Looker筛选器](assets/uc2-looker-filter.png)
+      ![Looker筛选器](assets/uc2-looker-filter.png){zoomable="yes"}
 1. 指定&#x200B;**[!UICONTROL Cc数据视图日期范围日期]**&#x200B;筛选器，因为&#x200B;**[!UICONTROL 在]** **[!UICONTROL 2023/01/01]** **[!UICONTROL 之前]** **[!UICONTROL 2024/01/01]**&#x200B;的范围内。
 1. 从左侧&#x200B;**[!UICONTROL 抄送数据视图]**&#x200B;边栏，
-   1. 从&#x200B;**[!UICONTROL DIMENSION‣]**&#x200B;的列表中选择&#x200B;**[!UICONTROL Daterangemonth Date]**，然后选择&#x200B;**[!UICONTROL Month]**。
+   1. 从‣**[!UICONTROL DIMENSIONS]**&#x200B;的列表中选择&#x200B;**[!UICONTROL Daterangemonth Date]**，然后选择&#x200B;**[!UICONTROL Month]**。
    1. 在左边栏（底部）中选择&#x200B;**[!UICONTROL MEASURES]**&#x200B;下的&#x200B;**[!UICONTROL 计数]**。
 1. 选择&#x200B;**[!UICONTROL 运行]**。
 1. 选择‣**[!UICONTROL 可视化图表]**&#x200B;以显示折线图可视化图表。
 
 您应该会看到如下所示的可视化图表和表格。
 
-![Looker结果每日趋势](assets/uc4-looker-result.png)
+![Looker结果每日趋势](assets/uc4-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -604,7 +605,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
 用例的&#x200B;**[!UICONTROL 单个Dimension排名]**&#x200B;面板示例：
 
-![Customer Journey Analytics单维度排名可视化图表](assets/cja-single-dimension-ranked.png){zoomable="yes"}
+![Customer Journey Analytics单个维度排名可视化图表](assets/cja-single-dimension-ranked.png){zoomable="yes"}
 +++
 
 +++ BI 工具
@@ -642,7 +643,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
 1. 在“表”可视化图表上：
 
-   1. 选择&#x200B;**[!UICONTROL Sum of purchase_revenue]**&#x200B;以按降序采购收入顺序对产品名称排序。 您的Power BI桌面应如下所示。
+   1. 选择&#x200B;**[!UICONTROL Sum of purchase_revenue]**&#x200B;以按降序采购收入顺序对产品名称排序。 您的Power BI桌面应该如下所示。
 
    ![Power BI桌面用例5表状态](assets/uc5-pbi-table.png){zoomable="yes"}
 
@@ -664,7 +665,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
 1. 将&#x200B;**[!UICONTROL 购买]**&#x200B;拖放到&#x200B;**[!UICONTROL 可视化图表]**&#x200B;窗格中的&#x200B;**[!UICONTROL 行Y轴]**&#x200B;上。
 
-   更新了折线图和栈叠式柱状图。 您的Power BI桌面应如下所示。
+   更新了折线图和栈叠式柱状图。 您的Power BI桌面应该如下所示。
 
    ![Power BI桌面用例5图表](assets/uc5-pbi-chart.png){zoomable="yes"}
 
@@ -731,7 +732,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 1. 在&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;对话框中：
    1. 选择&#x200B;**[!UICONTROL ‣抄送数据视图]**
    1. 从字段列表中，选择&#x200B;**[!UICONTROL 日‣间范围日期]**，然后选择&#x200B;**[!UICONTROL 日期范围日期]**。
-      ![Looker筛选器](assets/uc2-looker-filter.png)
+      ![Looker筛选器](assets/uc2-looker-filter.png){zoomable="yes"}
 1. 指定&#x200B;**[!UICONTROL Cc数据视图日期范围日期]**&#x200B;筛选器，因为&#x200B;**[!UICONTROL 在]** **[!UICONTROL 2023/01/01]** **[!UICONTROL 之前]** **[!UICONTROL 2024/01/01]**&#x200B;的范围内。
 1. 从左边栏中的&#x200B;**[!UICONTROL ‣ Cc数据视图]**&#x200B;部分，选择&#x200B;**[!UICONTROL 产品名称]**。
 1. 在左边栏的&#x200B;**[!UICONTROL ‣自定义字段]**&#x200B;部分中：
@@ -742,7 +743,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
       1. 输入&#x200B;**[!UICONTROL 名称]**&#x200B;的自定义字段名称。 例如：`Purchase Revenue`。
       1. 选择&#x200B;**[!UICONTROL 字段详细信息]**&#x200B;选项卡。
       1. 从&#x200B;**[!UICONTROL 格式]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 小数]**&#x200B;并确保以&#x200B;**[!UICONTROL 小数]**&#x200B;输入`0`。
-         ![Looker自定义量度字段](assets/uc5-looker-customfield.png)
+         ![Looker自定义量度字段](assets/uc5-looker-customfield.png){zoomable="yes"}
       1. 选择&#x200B;**[!UICONTROL 保存]**。
    1. 从&#x200B;**[!UICONTROL +添加]**&#x200B;下拉菜单中再次选择&#x200B;**[!UICONTROL 自定义度量值]**。 在&#x200B;**[!UICONTROL 创建自定义]**&#x200B;度量值对话框中：
       1. 从&#x200B;**[!UICONTROL 要度量]**&#x200B;的字段下拉菜单中选择&#x200B;**[!UICONTROL 购买]**。
@@ -762,12 +763,12 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
    1. 向下滚动以查看&#x200B;**[!UICONTROL 购买]**&#x200B;并将&#x200B;**[!UICONTROL 类型]**&#x200B;更改为&#x200B;**[!UICONTROL 行]**。
    1. 选择&#x200B;**[!UICONTROL Y]**&#x200B;选项卡。
    1. 将&#x200B;**[!UICONTROL 购买]**&#x200B;从&#x200B;**[!UICONTROL 左1]**&#x200B;容器拖动到显示&#x200B;**[!UICONTROL *将系列拖动到此处以创建新的左轴&#x200B;*]**。 此操作创建**[!UICONTROL  Left 2 ]**容器。
-      ![Looker可视化图表配置](assets/uc5-looker-visualization.png)
+      ![Looker可视化图表配置](assets/uc5-looker-visualization.png){zoomable="yes"}
    1. 选择&#x200B;**[!UICONTROL 编辑]**&#x200B;旁边的![CrossSize75](/help/assets/icons/CrossSize75.svg)以隐藏弹出对话框
 
 您应该会看到如下所示的可视化图表和表格。
 
-![Looker结果每日趋势](assets/uc5-looker-result.png)
+![Looker结果每日趋势](assets/uc5-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -822,9 +823,9 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
 1. 为了提高可读性，请从顶部菜单中选择&#x200B;**[!UICONTROL 视图]**，然后选择&#x200B;**[!UICONTROL 页面视图]** > **[!UICONTROL 实际大小]**&#x200B;并调整表可视化图表的大小。
 
-1. 要划分表中的每个类别，请在产品类别级别选择&#x200B;**[!UICONTROL +]**。 您的Power BI桌面应如下所示。
+1. 要划分表中的每个类别，请在产品类别级别选择&#x200B;**[!UICONTROL +]**。 您的Power BI桌面应该如下所示。
 
-   ![桌面多Dimension排名Power BI表](assets/uc6-powerbi-data.png){zoomable="yes"}
+   ![Power BI桌面多维度排名矩阵表](assets/uc6-powerbi-data.png){zoomable="yes"}
 
 1. 从顶部菜单中选择&#x200B;**[!UICONTROL 主页]**，然后选择&#x200B;**[!UICONTROL 新建视觉对象]**。 新视觉对象会添加到报表中。
 
@@ -836,9 +837,9 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 1. 要修改可视化，请选择条形图，然后从&#x200B;**[!UICONTROL 可视化]**&#x200B;窗格中选择&#x200B;**[!UICONTROL 树状图]**。
 1. 确保&#x200B;**[!UICONTROL product_category]**&#x200B;列在&#x200B;**[!UICONTROL Category]**&#x200B;下，并且&#x200B;**[!UICONTROL product_name]**&#x200B;列在&#x200B;**[!UICONTROL 可视化图表]**&#x200B;窗格的&#x200B;**[!UICONTROL 详细信息]**&#x200B;下。
 
-   您的Power BI桌面应如下所示。
+   您的Power BI桌面应该如下所示。
 
-   ![Power BI桌面多Dimension排名树状图](assets/uc6-powerbi-treemap.png){zoomable="yes"}
+   ![Power BI Desktop多维度排名树状图](assets/uc6-powerbi-treemap.png){zoomable="yes"}
 
 1. 从顶部菜单中选择&#x200B;**[!UICONTROL 主页]**，然后选择&#x200B;**[!UICONTROL 新建视觉对象]**。 新视觉对象会添加到报表中。
 
@@ -853,9 +854,9 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
 1. 在报表中，对各个可视化图表进行重新洗牌。
 
-   您的Power BI桌面应如下所示。
+   您的Power BI桌面应该如下所示。
 
-   ![Power BI桌面多Dimension排名](assets/uc6-powerbi-final.png){zoomable="yes"}
+   ![Power BI桌面多维度排名最终](assets/uc6-powerbi-final.png){zoomable="yes"}
 
 
 >[!TAB Tableau桌面]
@@ -867,7 +868,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau桌面多Dimension排名过滤器](assets/uc6-tableau-filter.png){zoomable="yes"}
+      ![Tableau Desktop Multiple Dimension排名过滤器](assets/uc6-tableau-filter.png){zoomable="yes"}
 
    1. 将&#x200B;**[!UICONTROL 产品类别]**&#x200B;拖放到&#x200B;**[!UICONTROL 列]**&#x200B;旁边。
    1. 将&#x200B;**[!UICONTROL 购买收入]**&#x200B;拖放到&#x200B;**[!UICONTROL 行]**&#x200B;旁边。 值更改为&#x200B;**[!UICONTROL SUM（采购收入）]**。
@@ -880,7 +881,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau桌面多Dimension排名类别](assets/uc6-tableau-category.png){zoomable="yes"}
+      ![Tableau桌面多维度排名类别](assets/uc6-tableau-category.png){zoomable="yes"}
 
 1. 将当前&#x200B;**[!UICONTROL 工作表1]**&#x200B;重命名为`Category`。
 1. 选择&#x200B;**[!UICONTROL 新建工作表]**&#x200B;以创建新工作表，并将其重命名为`Data`。
@@ -899,7 +900,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau桌面多Dimension排名数据](assets/uc6-tableau-data.png){zoomable="yes"}
+      ![Tableau Desktop Multiple Dimension排名数据](assets/uc6-tableau-data.png){zoomable="yes"}
 
 1. 选择&#x200B;**[!UICONTROL 新建工作表]**&#x200B;以创建新工作表并将其重命名为&#x200B;**[!UICONTROL 树状图]**。
    1. 从&#x200B;**[!UICONTROL 数据]**&#x200B;窗格的&#x200B;**[!UICONTROL 表]**&#x200B;列表中拖动&#x200B;**[!UICONTROL 日期范围]**&#x200B;条目，并将该条目放到&#x200B;**[!UICONTROL 筛选器]**&#x200B;托架上。
@@ -916,7 +917,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau桌面多Dimension排名数据](assets/uc6-tableau-treemap.png){zoomable="yes"}
+      ![Tableau Desktop Multiple Dimension排名数据](assets/uc6-tableau-treemap.png){zoomable="yes"}
 
 1. 选择&#x200B;**[!UICONTROL 新建仪表板]**&#x200B;选项卡按钮（位于底部）以创建新的&#x200B;**[!UICONTROL 仪表板1]**&#x200B;视图。 在&#x200B;**[!UICONTROL 功能板1]**&#x200B;视图中：
    1. 将&#x200B;**[!UICONTROL 类别]**&#x200B;工作表从&#x200B;**[!UICONTROL 工作表]**&#x200B;托架拖放到&#x200B;**[!UICONTROL 仪表板1]**&#x200B;视图中，该视图显示&#x200B;*在此放置工作表*。
@@ -936,7 +937,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 1. 在&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;对话框中：
    1. 选择&#x200B;**[!UICONTROL ‣抄送数据视图]**
    1. 从字段列表中，选择&#x200B;**[!UICONTROL 日‣间范围日期]**，然后选择&#x200B;**[!UICONTROL 日期范围日期]**。
-      ![Looker筛选器](assets/uc2-looker-filter.png)
+      ![Looker筛选器](assets/uc2-looker-filter.png){zoomable="yes"}
 1. 指定&#x200B;**[!UICONTROL Cc数据视图日期范围日期]**&#x200B;筛选器，因为&#x200B;**[!UICONTROL 在]** **[!UICONTROL 2023/01/01]** **[!UICONTROL 之前]** **[!UICONTROL 2024/01/01]**&#x200B;的范围内。
 1. 从左边栏中的&#x200B;**[!UICONTROL ‣ Cc数据视图]**&#x200B;部分：
    1. 选择&#x200B;**[!UICONTROL 产品类别]**。
@@ -949,7 +950,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
       1. 输入&#x200B;**[!UICONTROL 名称]**&#x200B;的自定义字段名称。 例如：`Sum of Purchase Revenue`。
       1. 选择&#x200B;**[!UICONTROL 字段详细信息]**&#x200B;选项卡。
       1. 从&#x200B;**[!UICONTROL 格式]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 小数]**&#x200B;并确保以&#x200B;**[!UICONTROL 小数]**&#x200B;输入`0`。
-         ![Looker自定义量度字段](assets/uc5-looker-customfield.png)
+         ![Looker自定义量度字段](assets/uc5-looker-customfield.png){zoomable="yes"}
       1. 选择&#x200B;**[!UICONTROL 保存]**。
    1. 从&#x200B;**[!UICONTROL +添加]**&#x200B;下拉菜单中再次选择&#x200B;**[!UICONTROL 自定义度量值]**。 在&#x200B;**[!UICONTROL 创建自定义]**&#x200B;度量值对话框中：
       1. 从&#x200B;**[!UICONTROL 要度量]**&#x200B;的字段下拉菜单中选择&#x200B;**[!UICONTROL 购买]**。
@@ -968,14 +969,14 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
    1. 向下滚动并选择&#x200B;**[!UICONTROL 编辑图表配置]**。
    1. 在&#x200B;**[!UICONTROL 图表配置（覆盖）]**&#x200B;中修改JSON，如下面的屏幕快照所示，然后选择&#x200B;**[!UICONTROL 预览]**。
 
-      ![Looker可视化配置](assets/uc6-looker-visualization.png)
+      ![Looker可视化配置](assets/uc6-looker-visualization.png){zoomable="yes"}
 
    1. 选择&#x200B;**[!UICONTROL 应用]**。
    1. 选择&#x200B;**[!UICONTROL 编辑]**&#x200B;旁边的![CrossSize75](/help/assets/icons/CrossSize75.svg)以隐藏弹出对话框
 
 您应该会看到如下所示的可视化图表和表格。
 
-![Looker结果每日趋势](assets/uc6-looker-result.png)
+![Looker结果每日趋势](assets/uc6-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -990,11 +991,11 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
 要报告产品名称的非重复计数，请在Customer Journey Analytics中设置一个计算量度，**[!UICONTROL 标题]** `Product Name (Count Distinct)`和&#x200B;**[!UICONTROL 外部ID]** `product_name_count_distinct`。
 
-![Customer Journey Analytics的产品名称（Distincr计数）计算量度](assets/cja-calc-metric-distinct-count-product-names.png){zoomable="yes"}
+![Customer Journey Analytics产品名称（Distincr计数）计算量度](assets/cja-calc-metric-distinct-count-product-names.png){zoomable="yes"}
 
-然后，您可以在用例的示例&#x200B;**[!UICONTROL Count DistinctDimension值]**&#x200B;面板中使用该指标：
+然后，您可以在用例的示例&#x200B;**[!UICONTROL 计算不同Dimension值]**&#x200B;面板中使用该量度：
 
-![非重复计数值Customer Journey Analytics](assets/cja-count-distinct-dimension-values.png){zoomable="yes"}
+![Customer Journey Analytics非重复计数值](assets/cja-count-distinct-dimension-values.png){zoomable="yes"}
 
 +++
 
@@ -1021,7 +1022,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
 1. 若要将垂直条形图修改为表，请确保已选定该图表，并从&#x200B;**[!UICONTROL 可视化]**&#x200B;窗格中选择&#x200B;**[!UICONTROL 表]**。
 
-   您的Power BI桌面应如下所示。
+   您的Power BI桌面应该如下所示。
 
    ![Power BI桌面多个非重复计数表](assets/uc7-powerbi-table.png){zoomable="yes"}
 
@@ -1029,7 +1030,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 1. 使用&#x200B;**[!UICONTROL ctrl-v]**&#x200B;粘贴可视化图表。 可视化图表的精确副本与原始副本重叠。 将其移动到报表区域的右侧。
 1. 若要将复制的可视化图表从表修改为卡片，请从&#x200B;**[!UICONTROL 可视化图表]**&#x200B;中选择&#x200B;**[!UICONTROL 卡片]**。
 
-   您的Power BI桌面应如下所示。
+   您的Power BI桌面应该如下所示。
 
    ![Power BI桌面多个非重复计数表](assets/uc7-powerbi-final.png){zoomable="yes"}
 
@@ -1056,7 +1057,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau桌面多Dimension排名过滤器](assets/uc7-tableau-data.png){zoomable="yes"}
+      ![Tableau Desktop Multiple Dimension排名过滤器](assets/uc7-tableau-data.png){zoomable="yes"}
 
 1. 从&#x200B;**[!UICONTROL 工作表1]**&#x200B;选项卡上下文菜单中选择&#x200B;**[!UICONTROL 复制]**&#x200B;以创建第二个工作表。
 1. 从&#x200B;**[!UICONTROL 工作表1]**&#x200B;选项卡上下文菜单中选择&#x200B;**[!UICONTROL 重命名]**&#x200B;以将工作表重命名为`Data`。
@@ -1071,7 +1072,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
    您的Tableau桌面应该如下所示。
 
-   ![Tableau桌面多Dimension排名过滤器](assets/uc7-tableau-card.png){zoomable="yes"}
+   ![Tableau Desktop Multiple Dimension排名过滤器](assets/uc7-tableau-card.png){zoomable="yes"}
 
 1. 选择&#x200B;**[!UICONTROL 新建仪表板]**&#x200B;选项卡按钮（位于底部）以创建新的&#x200B;**[!UICONTROL 仪表板1]**&#x200B;视图。 在&#x200B;**[!UICONTROL 功能板1]**&#x200B;视图中：
    1. 将&#x200B;**[!UICONTROL 卡片]**&#x200B;工作表从&#x200B;**[!UICONTROL 工作表]**&#x200B;托架拖放到&#x200B;**[!UICONTROL 仪表板1]**&#x200B;视图中，该视图显示&#x200B;*在此处放置工作表*。
@@ -1097,18 +1098,18 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 1. 在&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;对话框中：
    1. 选择&#x200B;**[!UICONTROL ‣抄送数据视图]**
    1. 从字段列表中，选择&#x200B;**[!UICONTROL 日‣间范围日期]**，然后选择&#x200B;**[!UICONTROL 日期范围日期]**。
-      ![Looker筛选器](assets/uc2-looker-filter.png)
+      ![Looker筛选器](assets/uc2-looker-filter.png){zoomable="yes"}
 1. 指定&#x200B;**[!UICONTROL Cc数据视图日期范围日期]**&#x200B;筛选器，因为&#x200B;**[!UICONTROL 在]** **[!UICONTROL 2023/01/01]** **[!UICONTROL 之前]** **[!UICONTROL 2023/02/01]**&#x200B;的范围内。
 1. 从左边栏中的&#x200B;**[!UICONTROL ‣ Cc数据视图]**&#x200B;部分：
    1. 选择&#x200B;**[!UICONTROL 日期范围日期]**，然后选择&#x200B;**[!UICONTROL 日期]**。
    1. 从&#x200B;**[!UICONTROL 产品名称]**&#x200B;上的&#x200B;**⋮更多**&#x200B;上下文菜单中选择&#x200B;**[!UICONTROL 聚合非重复计数]**‣。
-      ![Looker产品名称上下文菜单](assets/uc7-looker-count-distinct.png)
+      ![Looker产品名称上下文菜单](assets/uc7-looker-count-distinct.png){zoomable="yes"}
 1. 选择&#x200B;**[!UICONTROL 运行]**。
 1. 选择‣**[!UICONTROL 可视化图表]**&#x200B;并从工具栏中选择6︎⃣以显示单值可视化图表。
 
 您应该会看到如下所示的可视化图表和表格。
 
-![非重复查找器计数](assets/uc7-looker-result.png)
+![非重复查找器计数](assets/uc7-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1121,13 +1122,13 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
 +++ Customer Journey Analytics
 
-要使用日期范围报告，请在Customer Journey Analytics中设置日期范围，并设置&#x200B;**[!UICONTROL 标题]** `Last Year 2023`。
+若要使用日期范围报告，请在Customer Journey Analytics中设置一个日期范围，并设置&#x200B;**[!UICONTROL 标题]** `Last Year 2023`。
 
 ![Customer Journey Analytics使用日期范围名称进行筛选](assets/cja-daterange.png){zoomable="yes"}
 
 然后，您可以在用例的示例&#x200B;**[!UICONTROL 使用日期范围名称进行筛选]**&#x200B;面板中使用该日期范围：
 
-![非重复计数值Customer Journey Analytics](assets/cja-using-date-range-filter-names-to-filter.png){zoomable="yes"}
+![Customer Journey Analytics非重复计数值](assets/cja-using-date-range-filter-names-to-filter.png){zoomable="yes"}
 
 请注意，在自由格式表可视化图表中定义的日期范围如何覆盖应用于面板的日期范围。
 
@@ -1155,10 +1156,10 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
    1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择**[!UICONTROL  daterangeName is (All)]**。]**
    1. 选择&#x200B;**[!UICONTROL 基本筛选]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
-   1. 在&#x200B;**[!UICONTROL Search]**&#x200B;字段下，选择&#x200B;**[!UICONTROL Last Year 2023]**，它是Customer Journey Analytics中定义的日期范围的名称。
+   1. 在&#x200B;**[!UICONTROL Search]**&#x200B;字段下，选择&#x200B;**[!UICONTROL Last Year 2023]**，它是您在Customer Journey Analytics中定义的日期范围的名称。
    1. 选择![CrossSize75](/help/assets/icons/CrossSize75.svg)以从&#x200B;**[!UICONTROL 列]**&#x200B;中删除&#x200B;**[!UICONTROL daterangeName]**。
 
-   您会看到使用应用的&#x200B;**[!UICONTROL 日期范围名称]**&#x200B;过滤器更新的表。 您的Power BI桌面应如下所示。
+   您会看到使用应用的&#x200B;**[!UICONTROL 日期范围名称]**&#x200B;过滤器更新的表。 您的Power BI桌面应该如下所示。
 
    ![Power BI桌面使用日期范围名称进行筛选](assets/uc8-powerbi-final.png){zoomable="yes"}
 
@@ -1175,7 +1176,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau桌面多Dimension排名过滤器](assets/uc8-tableau-final.png){zoomable="yes"}
+      ![Tableau Desktop Multiple Dimension排名过滤器](assets/uc8-tableau-final.png){zoomable="yes"}
 
 >[!TAB Looker]
 
@@ -1193,7 +1194,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
 您应该会看到如下所示的可视化图表和表格。
 
-![非重复查找器计数](assets/uc8-looker-result.png)
+![非重复查找器计数](assets/uc8-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1207,13 +1208,13 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
 +++ Customer Journey Analytics
 
-Inspect要用于Customer Journey Analytics的过滤器。
+检查要在Customer Journey Analytics中使用的过滤器。
 
 ![Customer Journey Analytics使用筛选器名称进行筛选](assets/cja-fishing-products.png){zoomable="yes"}
 
 然后，您可以在用例的示例&#x200B;**[!UICONTROL 使用日期范围名称进行筛选]**&#x200B;面板中使用该筛选器：
 
-![非重复计数值Customer Journey Analytics](assets/cja-using-filter-names-to-filter.png){zoomable="yes"}
+![Customer Journey Analytics非重复计数值](assets/cja-using-filter-names-to-filter.png){zoomable="yes"}
 
 +++
 
@@ -1247,7 +1248,7 @@ Inspect要用于Customer Journey Analytics的过滤器。
    1. 选择![CrossSize75](/help/assets/icons/CrossSize75.svg)以从&#x200B;**[!UICONTROL 列]**&#x200B;中删除&#x200B;**[!UICONTROL filterName]**。
    1. 选择![CrossSize75](/help/assets/icons/CrossSize75.svg)以从&#x200B;**[!UICONTROL 列]**&#x200B;中删除&#x200B;**[!UICONTROL 日期范围]**。
 
-   您会看到使用应用的&#x200B;**[!UICONTROL filterName]**&#x200B;筛选器更新的表。 您的Power BI桌面应如下所示。
+   您会看到使用应用的&#x200B;**[!UICONTROL filterName]**&#x200B;筛选器更新的表。 您的Power BI桌面应该如下所示。
 
    ![Power BI桌面使用日期范围名称进行筛选](assets/uc9-powerbi-final.png){zoomable="yes"}
 
@@ -1267,7 +1268,7 @@ Inspect要用于Customer Journey Analytics的过滤器。
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau桌面多Dimension排名过滤器](assets/uc9-tableau-final.png){zoomable="yes"}
+      ![Tableau Desktop Multiple Dimension排名过滤器](assets/uc9-tableau-final.png){zoomable="yes"}
 
 >[!TAB Looker]
 
@@ -1276,7 +1277,7 @@ Inspect要用于Customer Journey Analytics的过滤器。
 1. 在&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;对话框中：
    1. 选择&#x200B;**[!UICONTROL ‣抄送数据视图]**
    1. 从字段列表中，选择&#x200B;**[!UICONTROL 日‣间范围日期]**，然后选择&#x200B;**[!UICONTROL 日期范围日期]**。
-      ![Looker筛选器](assets/uc2-looker-filter.png)
+      ![Looker筛选器](assets/uc2-looker-filter.png){zoomable="yes"}
 1. 指定&#x200B;**[!UICONTROL Cc数据视图日期范围日期]**&#x200B;筛选器，因为&#x200B;**[!UICONTROL 在]** **[!UICONTROL 2023/01/01]** **[!UICONTROL 之前]** **[!UICONTROL 2023/02/01]**&#x200B;的范围内。
 1. 选择&#x200B;**[!UICONTROL 筛选器]**&#x200B;下的&#x200B;**[!UICONTROL +筛选器]**&#x200B;以添加其他筛选器。
 1. 在&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;对话框中：
@@ -1292,7 +1293,7 @@ Inspect要用于Customer Journey Analytics的过滤器。
 
 您应该会看到如下所示的可视化图表和表格。
 
-![非重复查找器计数](assets/uc9-looker-result.png)
+![非重复查找器计数](assets/uc9-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1301,7 +1302,7 @@ Inspect要用于Customer Journey Analytics的过滤器。
 
 ## 使用维度值进行筛选
 
-您可以在Customer Journey Analytics中创建一个新的筛选器，该筛选器用于筛选狩猎产品类别中的产品。 然后，您要使用新过滤器报告2023年1月狩猎类别中产品的产品名称和发生次数（事件）。
+您可以在Customer Journey Analytics中创建一个新的筛选器，用于筛选狩猎产品类别中的产品。 然后，您要使用新过滤器报告2023年1月狩猎类别中产品的产品名称和发生次数（事件）。
 
 +++ Customer Journey Analytics
 
@@ -1309,9 +1310,9 @@ Inspect要用于Customer Journey Analytics的过滤器。
 
 ![Customer Journey Analytics使用Dimension值进行筛选](assets/cja-hunting-products.png){zoomable="yes"}
 
-然后，您可以在用例的示例&#x200B;**[!UICONTROL 使用Dimension值过滤]**&#x200B;面板中使用该过滤器：
+然后，您可以在用例的示例&#x200B;**[!UICONTROL 使用Dimension值来筛选]**&#x200B;面板中使用该筛选器：
 
-![非重复计数值Customer Journey Analytics](assets/cja-using-dimension-values-to-filter.png){zoomable="yes"}
+![Customer Journey Analytics非重复计数值](assets/cja-using-dimension-values-to-filter.png){zoomable="yes"}
 
 +++
 
@@ -1339,14 +1340,14 @@ Inspect要用于Customer Journey Analytics的过滤器。
 1. 在&#x200B;**[!UICONTROL 筛选器]**&#x200B;窗格中：
    1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择**[!UICONTROL &#x200B;筛选器名称为（全部）]**。]**
    1. 选择&#x200B;**[!UICONTROL 基本筛选]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
-   1. 在&#x200B;**[!UICONTROL Search]**&#x200B;字段下，选择&#x200B;**[!UICONTROL Hunting Products]**，它是Customer Journey Analytics中定义的现有筛选器的名称。
+   1. 在&#x200B;**[!UICONTROL 搜索]**&#x200B;字段下，选择&#x200B;**[!UICONTROL 打猎产品]**，它是Customer Journey Analytics中定义的现有筛选器的名称。
    1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择**[!UICONTROL &#x200B;日期范围是（全部）]**]**。
    1. 选择&#x200B;**[!UICONTROL 高级筛选]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
    1. 将筛选器定义为&#x200B;**[!UICONTROL 当值]** **[!UICONTROL 在]** `1/1/2023` **[!UICONTROL 和]** **[!UICONTROL 在]** `2/1/2023`之前或之后时显示项。
    1. 选择![CrossSize75](/help/assets/icons/CrossSize75.svg)以从&#x200B;**[!UICONTROL 列]**&#x200B;中删除&#x200B;**[!UICONTROL filterName]**。
    1. 选择![CrossSize75](/help/assets/icons/CrossSize75.svg)以从&#x200B;**[!UICONTROL 列]**&#x200B;中删除&#x200B;**[!UICONTROL 日期范围]**。
 
-   您会看到使用应用的&#x200B;**[!UICONTROL filterName]**&#x200B;筛选器更新的表。 您的Power BI桌面应如下所示。
+   您会看到使用应用的&#x200B;**[!UICONTROL filterName]**&#x200B;筛选器更新的表。 您的Power BI桌面应该如下所示。
 
    ![Power BI桌面使用日期范围名称进行筛选](assets/uc10-powerbi-final.png){zoomable="yes"}
 
@@ -1368,7 +1369,7 @@ Inspect要用于Customer Journey Analytics的过滤器。
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau桌面多Dimension排名过滤器](assets/uc10-tableau-final.png){zoomable="yes"}
+      ![Tableau Desktop Multiple Dimension排名过滤器](assets/uc10-tableau-final.png){zoomable="yes"}
 
 >[!TAB Looker]
 
@@ -1378,7 +1379,7 @@ Inspect要用于Customer Journey Analytics的过滤器。
 1. 在&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;对话框中：
    1. 选择&#x200B;**[!UICONTROL ‣抄送数据视图]**
    1. 从字段列表中，选择&#x200B;**[!UICONTROL 日‣间范围日期]**，然后选择&#x200B;**[!UICONTROL 日期范围日期]**。
-      ![Looker筛选器](assets/uc2-looker-filter.png)
+      ![Looker筛选器](assets/uc2-looker-filter.png){zoomable="yes"}
 1. 指定&#x200B;**[!UICONTROL Cc数据视图日期范围日期]**&#x200B;筛选器，因为&#x200B;**[!UICONTROL 在]** **[!UICONTROL 2023/01/01]** **[!UICONTROL 之前]** **[!UICONTROL 2023/02/01]**&#x200B;的范围内。
 1. 选择&#x200B;**[!UICONTROL 筛选器]**&#x200B;下的&#x200B;**[!UICONTROL +筛选器]**&#x200B;以添加其他筛选器。
 1. 在&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;对话框中：
@@ -1393,7 +1394,7 @@ Inspect要用于Customer Journey Analytics的过滤器。
 
 您应该会看到如下所示的类似表格。
 
-![非重复查找器计数](assets/uc10-looker-result.png)
+![非重复查找器计数](assets/uc10-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1441,11 +1442,11 @@ Inspect要用于Customer Journey Analytics的过滤器。
 
 1. 在报表中，选择&#x200B;**[!UICONTROL Sum of purchase_revenue]**&#x200B;以按采购收入的降序对表进行排序。
 
-   您的Power BI桌面应如下所示。
+   您的Power BI桌面应该如下所示。
 
    ![Power BI桌面使用日期范围名称进行筛选](assets/uc11-powerbi-final.png){zoomable="yes"}
 
-Power BI桌面使用BI扩展执行的查询不包含`sort`语句。 缺少`sort`语句意味着排序在客户端执行。
+Power BI Desktop使用BI扩展执行的查询不包含`sort`语句。 缺少`sort`语句意味着排序在客户端执行。
 
 ```sql
 select "_"."product_name",
@@ -1571,7 +1572,7 @@ GROUP BY 1
 1. 在&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;对话框中：
    1. 选择&#x200B;**[!UICONTROL ‣抄送数据视图]**
    1. 从字段列表中，选择&#x200B;**[!UICONTROL 日‣间范围日期]**，然后选择&#x200B;**[!UICONTROL 日期范围日期]**。
-      ![Looker筛选器](assets/uc2-looker-filter.png)
+      ![Looker筛选器](assets/uc2-looker-filter.png){zoomable="yes"}
 1. 指定&#x200B;**[!UICONTROL Cc数据视图日期范围日期]**&#x200B;筛选器，因为&#x200B;**[!UICONTROL 在]** **[!UICONTROL 2023/01/01]** **[!UICONTROL 之前]** **[!UICONTROL 2023/02/01]**&#x200B;的范围内。
 1. 从左边栏中的&#x200B;**[!UICONTROL ‣ Cc数据视图]**&#x200B;部分，选择&#x200B;**[!UICONTROL 产品名称]**。
 1. 在左边栏的&#x200B;**[!UICONTROL ‣自定义字段]**&#x200B;部分中：
@@ -1582,7 +1583,7 @@ GROUP BY 1
       1. 输入&#x200B;**[!UICONTROL 名称]**&#x200B;的自定义字段名称。 例如：`Sum of Purchase Revenue`。
       1. 选择&#x200B;**[!UICONTROL 字段详细信息]**&#x200B;选项卡。
       1. 从&#x200B;**[!UICONTROL 格式]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 小数]**&#x200B;并确保以&#x200B;**[!UICONTROL 小数]**&#x200B;输入`0`。
-         ![Looker自定义量度字段](assets/uc5-looker-customfield.png)
+         ![Looker自定义量度字段](assets/uc5-looker-customfield.png){zoomable="yes"}
       1. 选择&#x200B;**[!UICONTROL 保存]**。
 1. 请确保在&#x200B;**[!UICONTROL Purchase Revenue]**&#x200B;列上选择&#x200B;**[!UICONTROL ↓]** （**[!UICONTROL 降序，排序顺序： 1]**）。
 1. 选择&#x200B;**[!UICONTROL 运行]**。
@@ -1590,7 +1591,7 @@ GROUP BY 1
 
 您应该会看到如下所示的可视化图表和表格。
 
-![非重复查找器计数](assets/uc11-looker-result.png)
+![非重复查找器计数](assets/uc11-looker-result.png){zoomable="yes"}
 
 
 Looker使用BI扩展生成的查询包括`ORDER BY`，这意味着排序通过Looker和BI扩展执行。
@@ -1656,11 +1657,11 @@ FETCH NEXT 500 ROWS ONLY
 1. 在“可视化”窗格中：
    * 选择![CrossSize75](/help/assets/icons/CrossSize75.svg)以从列中删除日期范围。
 
-   您的Power BI桌面应如下所示。
+   您的Power BI桌面应该如下所示。
 
    ![Power BI桌面使用日期范围名称进行筛选](assets/uc12-powerbi-final.png){zoomable="yes"}
 
-Power BI桌面使用BI扩展执行的查询包含`limit`语句，但不包含预期的语句。 Power BI桌面使用明确的产品名称结果强制实施对前5次发生次数的限制。
+Power BI Desktop使用BI扩展执行的查询包含`limit`语句，但不包含预期的语句。 Power BI Desktop会使用明确的产品名称结果来强制实施对前5次发生次数的限制。
 
 ```sql
 select "_"."product_name",
@@ -1808,7 +1809,7 @@ GROUP BY 1
 1. 在&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;对话框中：
    1. 选择&#x200B;**[!UICONTROL ‣抄送数据视图]**
    1. 从字段列表中，选择&#x200B;**[!UICONTROL 日‣间范围日期]**，然后选择&#x200B;**[!UICONTROL 日期范围日期]**。
-      ![Looker筛选器](assets/uc2-looker-filter.png)
+      ![Looker筛选器](assets/uc2-looker-filter.png){zoomable="yes"}
 1. 指定&#x200B;**[!UICONTROL Cc数据视图日期范围日期]**&#x200B;筛选器，因为&#x200B;**[!UICONTROL 在]** **[!UICONTROL 2023/01/01]** **[!UICONTROL 之前]** **[!UICONTROL 2024/01/01]**&#x200B;的范围内。
 1. 从左边栏中的&#x200B;**[!UICONTROL ‣ Cc数据视图]**&#x200B;部分：
    1. 选择&#x200B;**[!UICONTROL 产品名称]**。
@@ -1820,7 +1821,7 @@ GROUP BY 1
 
 您应该会看到如下所示的可视化图表和表格。
 
-![非重复查找器计数](assets/uc12-looker-result.png)
+![非重复查找器计数](assets/uc12-looker-result.png){zoomable="yes"}
 
 Looker使用BI扩展生成的查询包括`FETCH NEXT 5 ROWS ONLY`，这意味着限制通过Looker和BI扩展执行。
 
@@ -1865,37 +1866,37 @@ FETCH NEXT 5 ROWS ONLY
 
 >[!TAB Power BI桌面]
 
-Customer Journey Analytics对象在&#x200B;**[!UICONTROL 数据]**&#x200B;窗格中可用，并可从Power BI桌面中选择的表检索。 例如，**[!UICONTROL public.cc_data_view]**。 表的名称与在Customer Journey Analytics中为数据视图定义的外部ID相同。 例如，具有&#x200B;**[!UICONTROL 标题]** `C&C - Data View`和&#x200B;**[!UICONTROL 外部ID]** `cc_data_view`的数据视图。
+Customer Journey Analytics对象在&#x200B;**[!UICONTROL 数据]**&#x200B;窗格中可用，并可从Power BI Desktop中选择的表检索。 例如，**[!UICONTROL public.cc_data_view]**。 表的名称与在Customer Journey Analytics中为数据视图定义的外部ID相同。 例如，具有&#x200B;**[!UICONTROL 标题]** `C&C - Data View`和&#x200B;**[!UICONTROL 外部ID]** `cc_data_view`的数据视图。
 
-**Dimension**
-来自Customer Journey Analytics的Dimension由[!UICONTROL 组件ID]标识。 已在Customer Journey Analytics数据视图中定义[!UICONTROL 组件ID]。 例如，Customer Journey Analytics中的维度&#x200B;**[!UICONTROL 产品名称]**&#x200B;具有[!UICONTROL 组件ID] **[!UICONTROL product_name]**，它是Power BI桌面中的维度的名称。
-来自Customer Journey Analytics的日期范围维度，如**[!UICONTROL Day]**、**[!UICONTROL Week]**、**[!UICONTROL Month]**&#x200B;等，可用作&#x200B;**[!UICONTROL daterangeday]**、**[!UICONTROL daterangeweek]**、**[!UICONTROL daterangemonth]**&#x200B;等。
+**维度**
+Customer Journey Analytics中的维度由[!UICONTROL 组件ID]标识。 已在Customer Journey Analytics数据视图中定义[!UICONTROL 组件ID]。 例如，Customer Journey Analytics中的维度&#x200B;**[!UICONTROL 产品名称]**&#x200B;具有[!UICONTROL 组件ID] **[!UICONTROL product_name]**，它是Power BI Desktop中的维度的名称。
+Customer Journey Analytics中的日期范围维度，如**[!UICONTROL Day]**、**[!UICONTROL Week]**、**[!UICONTROL Month]**&#x200B;等，可用作&#x200B;**[!UICONTROL daterangeday]**、**[!UICONTROL daterangeweek]**、**[!UICONTROL daterangemonth]**&#x200B;等。
 
 **个量度**
-Customer Journey Analytics中的指标由[!UICONTROL 组件ID]标识。 已在Customer Journey Analytics数据视图中定义[!UICONTROL 组件ID]。 例如，Customer Journey Analytics中的指标&#x200B;**[!UICONTROL Purchase Revenue]**&#x200B;具有[!UICONTROL 组件ID] **[!UICONTROL purchase_revenue]**，它是Power BI桌面中指标的名称。 **[!UICONTROL ∑]**&#x200B;表示指标。 当您在任何可视化中使用量度时，该量度将重命名为&#x200B;**[!UICONTROL 1}量度的总和&#x200B;*]**。*
+Customer Journey Analytics中的指标由[!UICONTROL 组件ID]标识。 已在Customer Journey Analytics数据视图中定义[!UICONTROL 组件ID]。 例如，Customer Journey Analytics中的量度&#x200B;**[!UICONTROL Purchase Revenue]**&#x200B;具有[!UICONTROL 组件ID] **[!UICONTROL purchase_revenue]**，它是Power BI Desktop中该量度的名称。 **[!UICONTROL ∑]**&#x200B;表示指标。 当您在任何可视化中使用量度时，该量度将重命名为&#x200B;**[!UICONTROL 1}量度的总和&#x200B;*]**。*
 
 **筛选器**
-您在Customer Journey Analytics中定义的筛选器可作为**[!UICONTROL filterName]**&#x200B;字段的一部分使用。 当您在Power BI桌面中使用&#x200B;**[!UICONTROL filterName]**&#x200B;字段时，可以指定要使用的筛选器。
+您在Customer Journey Analytics中定义的筛选器可作为**[!UICONTROL filterName]**&#x200B;字段的一部分提供。 当您在Power BI Desktop中使用&#x200B;**[!UICONTROL filterName]**&#x200B;字段时，可以指定要使用的筛选器。
 
 **计算量度**
-您在Customer Journey Analytics中定义的计算指标由您为计算指标定义的[!UICONTROL 外部ID]标识。 例如，计算量度&#x200B;**[!UICONTROL 产品名称（非重复计数）]**&#x200B;具有[!UICONTROL 外部ID] **[!UICONTROL product_name_count_distinct]**，并在Power BI桌面中显示为**[!UICONTROL cm_product_name_count_distinc]**t。
+您在Customer Journey Analytics中定义的计算指标由您为计算指标定义的[!UICONTROL 外部ID]标识。 例如，计算量度&#x200B;**[!UICONTROL 产品名称（非重复计数）]**&#x200B;具有[!UICONTROL 外部ID] **[!UICONTROL product_name_count_distinct]**，并在Power BI Desktop中显示为**[!UICONTROL cm_product_name_count_distinc]**t。
 
 **日期范围**
 您在Customer Journey Analytics中定义的日期范围可作为**[!UICONTROL daterangeName]**&#x200B;字段的一部分使用。 当您使用&#x200B;**[!UICONTROL daterangeName]**&#x200B;字段时，您可以指定要使用的日期范围。
 
 **自定义转换**
-Power BI桌面使用[Data Analysis表达式(DAX)](https://learn.microsoft.com/en-us/dax/dax-overview)提供自定义转换功能。 例如，您要执行产品名称为小写的[单维度排名](#single-dimension-ranked)用例。
+Power BI Desktop提供了使用[Data Analysis表达式(DAX)](https://learn.microsoft.com/en-us/dax/dax-overview)的自定义转换功能。 例如，您要执行产品名称为小写的[单维度排名](#single-dimension-ranked)用例。
 
 1. 在报表视图中，选择条形图可视化图表。
 1. 在数据窗格中选择&#x200B;**[!UICONTROL product_name]**。
 1. 在工具栏中选择&#x200B;**[!UICONTROL 新建列]**。
 1. 在公式编辑器中，定义名为`product_name_lower`的新列，如`product_name_lower = LOWER('public.cc_data_view[product_name])`。
-   ![桌面转换到Lower](assets/uc14-powerbi-transformation.png){zoomable="yes"}Power BI
+   ![Power BI桌面转换到较低版本](assets/uc14-powerbi-transformation.png){zoomable="yes"}
 1. 请确保在&#x200B;**[!UICONTROL 数据]**&#x200B;窗格中选择新的&#x200B;**[!UICONTROL product_name_lower]**&#x200B;列，而不是&#x200B;**[!UICONTROL product_name]**&#x200B;列。
 1. 在表可视化图表中，从![更多](/help/assets/icons/More.svg)中选择&#x200B;**[!UICONTROL 报告为表]**。
 
-   您的Power BI桌面应如下所示。
-   ![桌面转换最终Power BI](assets/uc14-powerbi-final.png){zoomable="yes"}
+   您的Power BI桌面应该如下所示。
+   ![Power BI桌面转换最终版](assets/uc14-powerbi-final.png){zoomable="yes"}
 
 自定义转换导致SQL查询更新。 请参阅以下SQL示例中的`lower`函数的使用：
 
@@ -1942,12 +1943,12 @@ limit 1000001
 
 每当您在工作表中工作时，**[!UICONTROL Data]**&#x200B;侧栏中都有Customer Journey Analytics对象。 并从您选择作为Tableau中&#x200B;**[!UICONTROL 数据源]**&#x200B;页面一部分的表中检索和。 例如，**[!UICONTROL cc_data_view]**。 表的名称与在Customer Journey Analytics中为数据视图定义的外部ID相同。 例如，具有&#x200B;**[!UICONTROL 标题]** `C&C - Data View`和&#x200B;**[!UICONTROL 外部ID]** `cc_data_view`的数据视图。
 
-**Dimension**
-来自Customer Journey Analytics的Dimension由[!UICONTROL 组件名称]标识。 已在Customer Journey Analytics数据视图中定义[!UICONTROL 组件名称]。 例如，Customer Journey Analytics中的维度&#x200B;**[!UICONTROL 产品名称]**&#x200B;具有[!UICONTROL 组件名称] **[!UICONTROL 产品名称]**，它是Tableau中维度的名称。 所有维度均由&#x200B;**[!UICONTROL Abc]**标识。
+**维度**
+Customer Journey Analytics中的维度由[!UICONTROL 组件名称]标识。 已在Customer Journey Analytics数据视图中定义[!UICONTROL 组件名称]。 例如，Customer Journey Analytics中的维度&#x200B;**[!UICONTROL 产品名称]**&#x200B;具有[!UICONTROL 组件名称] **[!UICONTROL 产品名称]**，它是Tableau中的维度的名称。 所有维度均由&#x200B;**[!UICONTROL Abc]**标识。
 来自Customer Journey Analytics的日期范围维度，如**[!UICONTROL Day]**、**[!UICONTROL Week]**、**[!UICONTROL Month]**&#x200B;等，可用作&#x200B;**[!UICONTROL Daterangeday]**、**[!UICONTROL Daterangeweek]**、**[!UICONTROL Daterangemonth]**&#x200B;等。 使用日期范围维度时，必须从下拉菜单中选择适当的日期或时间定义以应用于该日期范围维度。 例如，**[!UICONTROL 年]**，**[!UICONTROL 季度]**，**[!UICONTROL 月]**，**[!UICONTROL 天]**。
 
 **个量度**
-Customer Journey Analytics中的指标由[!UICONTROL 组件名称]标识。 已在Customer Journey Analytics数据视图中定义[!UICONTROL 组件名称]。 例如，Customer Journey Analytics中的指标&#x200B;**[!UICONTROL Purchase Revenue]**&#x200B;具有[!UICONTROL 组件名称] **[!UICONTROL Purchase Revenue]**，它是Tableau中指标的名称。 所有量度都由&#x200B;**[!UICONTROL #]**&#x200B;标识。 在任何可视化中使用量度时，该量度将重命名为&#x200B;**[!UICONTROL Sum（*量度*）]**。
+Customer Journey Analytics中的量度由[!UICONTROL 组件名称]标识。 已在Customer Journey Analytics数据视图中定义[!UICONTROL 组件名称]。 例如，Customer Journey Analytics中的量度&#x200B;**[!UICONTROL Purchase Revenue]**&#x200B;具有[!UICONTROL 组件名称] **[!UICONTROL Purchase Revenue]**，它是Tableau中的量度的名称。 所有量度都由&#x200B;**[!UICONTROL #]**&#x200B;标识。 在任何可视化中使用量度时，该量度将重命名为&#x200B;**[!UICONTROL Sum（*量度*）]**。
 
 **筛选器**
 您在Customer Journey Analytics中定义的筛选器可作为**[!UICONTROL 筛选器名称]**&#x200B;字段的一部分使用。 当您在Tableau中使用&#x200B;**[!UICONTROL 筛选器名称]**&#x200B;字段时，可以指定要使用的筛选器。
@@ -1988,14 +1989,14 @@ HAVING ((SUM("cc_data_view"."purchase_revenue") >= 999999.99999998999) AND (SUM(
 
 >[!TAB Looker]
 
-Customer Journey Analytics对象在&#x200B;**[!UICONTROL 浏览]**&#x200B;界面中可用。 和将作为在Looker中设置连接、项目和模型的一部分进行检索。 例如，**[!UICONTROL cc_data_view]**。 视图的名称与在Customer Journey Analytics中为数据视图定义的外部ID相同。 例如，具有&#x200B;**[!UICONTROL 标题]** `C&C - Data View`和&#x200B;**[!UICONTROL 外部ID]** `cc_data_view`的数据视图。
+Customer Journey Analytics对象在&#x200B;**[!UICONTROL 浏览]**&#x200B;界面中可用。 和将作为在Looker中设置连接、项目和模型的一部分进行检索。 例如，**[!UICONTROL cc_data_view]**。 视图的名称与您在Customer Journey Analytics中为数据视图定义的外部ID相同。 例如，具有&#x200B;**[!UICONTROL 标题]** `C&C - Data View`和&#x200B;**[!UICONTROL 外部ID]** `cc_data_view`的数据视图。
 
-**Dimension**
-Customer Journey Analytics中的Dimension在**[!UICONTROL 抄送数据视图]**&#x200B;左边栏中列为&#x200B;**[!UICONTROL DIMENSION]**。 维度在Customer Journey Analytics数据视图中定义。 例如，Customer Journey Analytics中的维度&#x200B;**[!UICONTROL 产品名称]**&#x200B;具有&#x200B;**[!UICONTROL DIMENSION]** **[!UICONTROL 产品名称]**，它是查找器中维度的名称。
+**维度**
+Customer Journey Analytics中的维度在**[!UICONTROL 抄送数据视图]**&#x200B;左边栏中列为&#x200B;**[!UICONTROL DIMENSION]**。 维度是在Customer Journey Analytics数据视图中定义的。 例如，Customer Journey Analytics中的维度&#x200B;**[!UICONTROL 产品名称]**&#x200B;具有&#x200B;**[!UICONTROL DIMENSION]** **[!UICONTROL 产品名称]**，它是查找器中维度的名称。
 来自Customer Journey Analytics的日期范围维度，如**[!UICONTROL Day]**、**[!UICONTROL Week]**、**[!UICONTROL Month]**&#x200B;等，可用作&#x200B;**[!UICONTROL Daterangeday Date]**、**[!UICONTROL Daterangeweek Date]**、**[!UICONTROL Daterangemonth Date]**&#x200B;等。  使用日期范围维度时，必须选择适当的日期或时间定义。 例如，**[!UICONTROL 年]**，**[!UICONTROL 季度]**，**[!UICONTROL 月]**，**[!UICONTROL 日期]**。
 
 **个量度**
-Customer Journey Analytics中的量度在**[!UICONTROL 抄送数据视图]**&#x200B;左边栏中列为&#x200B;**[!UICONTROL DIMENSION]**。 例如，Customer Journey Analytics中的指标&#x200B;**[!UICONTROL Purchase Revenue]**&#x200B;具有&#x200B;**[!UICONTROL DIMENSION]** **[!UICONTROL Purchase Revenue]**。 要实际用作量度，请创建一个自定义量度字段（如上面的示例所示），或使用维度的快捷键。 例如，**[!UICONTROL ⋮]**，选择&#x200B;**[!UICONTROL 聚合]**，然后选择&#x200B;**[!UICONTROL 总和]**。
+Customer Journey Analytics中的量度在**[!UICONTROL 抄送数据视图]**&#x200B;左边栏中列为&#x200B;**[!UICONTROL DIMENSION]**。 例如，Customer Journey Analytics中的量度&#x200B;**[!UICONTROL Purchase Revenue]**&#x200B;具有&#x200B;**[!UICONTROL DIMENSION]** **[!UICONTROL Purchase Revenue]**。 要实际用作量度，请创建一个自定义量度字段（如上面的示例所示），或使用维度的快捷键。 例如，**[!UICONTROL ⋮]**，选择&#x200B;**[!UICONTROL 聚合]**，然后选择&#x200B;**[!UICONTROL 总和]**。
 
 **筛选器**
 您在Customer Journey Analytics中定义的筛选器可作为**[!UICONTROL 筛选器名称]**&#x200B;字段的一部分使用。 当您在Looker中使用&#x200B;**[!UICONTROL 筛选器名称]**&#x200B;字段时，可以指定要使用的筛选器。
@@ -2012,13 +2013,13 @@ Looker使用自定义字段生成器提供自定义转换功能，如上所示�
 1. 在左边栏的&#x200B;**[!UICONTROL ‣自定义字段]**&#x200B;部分中：
    1. 从&#x200B;**[!UICONTROL +添加]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 自定义Dimension]**。
    1. 在&#x200B;**[!UICONTROL 表达式]**&#x200B;文本区域中输入`lower(${cc_data_view.product_name})`。 当您开始键入`Product Name`时，会使用正确的语法来帮助您。
-      ![Looker转换示例](assets/uc14-looker-transformation.png)
+      ![Looker转换示例](assets/uc14-looker-transformation.png){zoomable="yes"}
    1. 输入`product name`作为&#x200B;**[!UICONTROL Name]**。
    1. 选择&#x200B;**[!UICONTROL 保存]**。
 
 您应该会看到如下所示的类似表格。
 
-![Looker转换结果](assets/uc14-looker-result.png)
+![Looker转换结果](assets/uc14-looker-result.png){zoomable="yes"}
 
 
 自定义转换会导致SQL查询更新。 请参阅以下SQL示例中的`LOWER`函数的使用：
@@ -2045,7 +2046,7 @@ FETCH NEXT 500 ROWS ONLY
 
 ## 可视化内容
 
-您希望了解如何通过BI工具中的可用可视化图表，以类似方式创建Customer Journey Analytics中可用的可视化图表。
+您希望了解如何通过BI工具中的可用可视化图表，以类似方式创建Customer Journey Analytics中的可视化图表。
 
 +++ Customer Journey Analytics
 
@@ -2061,9 +2062,9 @@ Customer Journey Analytics具有许多可视化图表。 请参阅[可视化图�
 
 ### 比较
 
-对于大多数Customer Journey Analytics可视化图表，Power BI桌面提供了等效的体验。 请参阅下表。
+对于大多数Customer Journey Analytics可视化图表，Power BI Desktop提供了等效的体验。 请参阅下表。
 
-| 图标 | Customer Journey Analytics可视化 | Power BI桌面可视化 |
+| 图标 | Customer Journey Analytics可视化图表 | Power BI桌面可视化图表 |
 | :---: | --- | ---| 
 | ![GraphArea](/help/assets/icons/GraphArea.svg) | [面积图](/help/analysis-workspace/visualizations/area.md) | [面积图、栈叠面积图和100%面积图](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#area-charts-basic-layered-and-stacked) |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [条形图](/help/analysis-workspace/visualizations/bar.md) | [簇状柱状图](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
@@ -2144,9 +2145,9 @@ limit 1001
 
 ### 比较
 
-对于大多数Customer Journey Analytics可视化图表，Tableau Desktop提供了等效的体验。 请参阅下表。
+对于大多数Customer Journey Analytics可视化图表，Tableau桌面版提供了等效的体验。 请参阅下表。
 
-| 图标 | Customer Journey Analytics可视化 | Power BI桌面可视化 |
+| 图标 | Customer Journey Analytics可视化图表 | Power BI桌面可视化图表 |
 | :---: | --- | ---| 
 | ![GraphArea](/help/assets/icons/GraphArea.svg) | [面积图](/help/analysis-workspace/visualizations/area.md) | [面积图](https://help.tableau.com/current/pro/desktop/en-us/qs_area_charts.htm) |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [条形图](/help/analysis-workspace/visualizations/bar.md) | [条形图](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_bar.htm) |
@@ -2210,7 +2211,7 @@ GROUP BY 1,
 
 对于大多数Customer Journey Analytics可视化图表，Looker提供了等效的体验。 请参阅下表。
 
-| 图标 | Customer Journey Analytics可视化 | Power BI桌面可视化 |
+| 图标 | Customer Journey Analytics可视化图表 | Power BI桌面可视化图表 |
 | :---: | --- | ---| 
 | ![GraphArea](/help/assets/icons/GraphArea.svg) | [面积图](/help/analysis-workspace/visualizations/area.md) | [面积图](https://cloud.google.com/looker/docs/area-options) |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [条形图](/help/analysis-workspace/visualizations/bar.md) | [条形图](https://cloud.google.com/looker/docs/bar-options) |
@@ -2243,7 +2244,7 @@ GROUP BY 1,
 
 ## 注意事项
 
-在使用Customer Journey AnalyticsBI扩展时，每个受支持的BI工具都存在一些注意事项。
+在使用Customer Journey Analytics BI扩展时，每个受支持的BI工具都存在一些注意事项。
 
 +++ BI 工具
 
@@ -2251,13 +2252,13 @@ GROUP BY 1,
 
 >[!TAB Power BI桌面]
 
-* Power BI桌面高级日期范围筛选是排他性的。  对于结束日期，您需要选择要在其中报告的一天之后的日期。 例如，**[!UICONTROL 位于]** `1/1/2023` **[!UICONTROL 或之后，且位于]** `1/2/2023`之前。
+* Power BI Desktop Advanced日期范围筛选是排他性的。  对于结束日期，您需要选择要在其中报告的一天之后的日期。 例如，**[!UICONTROL 位于]** `1/1/2023` **[!UICONTROL 或之后，且位于]** `1/2/2023`之前。
 * 创建连接时，Power BI桌面默认为&#x200B;**[!UICONTROL 导入]**。 请确保使用&#x200B;**[!UICONTROL 直接查询]**。
-* Power BI Desktop通过Power Query公开数据转换。  Power Query主要与Import类型连接配合使用，因此许多您应用日期或字符串函数之类的转换都会引发错误，指出您需要切换到Import类型连接。  如果您需要在查询时转换数据，则应该使用派生维度和量度，这样Power BI就不需要执行转换本身。
-* Power BI桌面不了解如何处理日期时间类型列，因此不支持&#x200B;**[!UICONTROL 日期范围&#x200B;*X *]**维度，如**[!UICONTROL 日期范围小时&#x200B;]**和**[!UICONTROL 日期范围分钟&#x200B;]**。
-* 默认情况下，Power BI桌面会尝试使用更多查询服务会话建立多个连接。  转到项目的Power BI设置并禁用并行查询。
-* Power BI桌面机执行所有排序和限制客户端操作。 对于包含绑定值的前&#x200B;*X*&#x200B;筛选，Power BI桌面也具有不同的语义。 因此，您不能像在Analysis Workspace中一样创建相同的排序和限制。
-* 早期版本的Power BI桌面2024年10月发行版中断了PostgreSQL数据源。 确保使用本文中提到的版本。
+* Power BI Desktop通过Power Query公开数据转换。  Power Query主要与Import类型连接配合使用，因此许多您应用日期或字符串函数之类的转换都会引发错误，指出您需要切换到Import类型连接。  如果您需要在查询时转换数据，则应该使用派生维度和量度，这样Power BI就不需要自己进行转换。
+* Power BI Desktop不了解如何处理日期时间类型列，因此不支持&#x200B;**[!UICONTROL daterange *X *]**维度，如**[!UICONTROL daterangehour ]**和**[!UICONTROL daterangeminute ]**。
+* 默认情况下，Power BI Desktop会尝试使用更多查询服务会话建立多个连接。  转到项目的Power BI设置并禁用并行查询。
+* Power BI Desktop执行所有排序和限制客户端操作。 Power BI Desktop对于前&#x200B;*X*&#x200B;个包含绑定值的过滤也具有不同的语义。 因此，您不能像在Analysis Workspace中一样创建相同的排序和限制。
+* 早期版本的Power BI Desktop 2024年10月发行版中断了PostgreSQL数据源。 确保使用本文中提到的版本。
 
 >[!TAB Tableau桌面]
 
