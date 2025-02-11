@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: 3930b3dd1ba4e058f1a89308dbd0ccec57208359
+source-git-commit: 739d92a3e9b623e3f04bf28de8213f1c76d5036b
 workflow-type: tm+mt
-source-wordcount: '13075'
+source-wordcount: '13066'
 ht-degree: 2%
 
 ---
@@ -236,7 +236,7 @@ Tableau Desktop支持`FLATTEN`参数的以下方案。 有关详细信息，请�
          1. 在&#x200B;**[!UICONTROL 中命名您的项目创建此模型的新LookML项目]**。 针对`example: example_looker_project`。
          1. 选择&#x200B;**[!UICONTROL 下一步]**。
       1. 在&#x200B;**[!UICONTROL ➋中，选择表]**：
-         1. 选择&#x200B;**[!UICONTROL public]**，然后确保已选择您的Customer Journey Analytics数据视图。 例如： ![复选标记](/help/assets/icons/Checkmark.svg) **[!UICONTROL cc_data_view]**。
+         1. 选择&#x200B;**[!UICONTROL public]**，然后确保已选择您的Customer Journey Analytics数据视图。 例如： ![SelectBox](/help/assets/icons/SelectBox.svg) **[!UICONTROL cc_data_view]**。
          1. 选择&#x200B;**[!UICONTROL 下一步]**。
       1. 在&#x200B;**[!UICONTROL ➌中，选择主键]**：
          1. 选择&#x200B;**[!UICONTROL 下一步]**。
@@ -244,7 +244,7 @@ Tableau Desktop支持`FLATTEN`参数的以下方案。 有关详细信息，请�
          1. 确保选择您的视图。 例如：**[!UICONTROL cc_data_view.view]**。
          1. 选择&#x200B;**[!UICONTROL 下一步]**。
       1. 在&#x200B;**[!UICONTROL 中➎输入模型名称]**：
-         1. 命名您的模型。 例如： `example_looker_mode`l。
+         1. 命名您的模型。 例如：`example_looker_model`。
       1. 选择&#x200B;**[!UICONTROL 完成并浏览数据]**。
 
    您将被重定向到Looker的&#x200B;**[!UICONTROL 浏览]**&#x200B;界面，准备浏览数据。
@@ -258,8 +258,8 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 | FLATTEN参数 | 示例 | 受支持 | 备注 |
 |---|---|:---:|---|
 | 无 | `prod:cja` | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | |
-| `?FLATTEN` | `prod:cja?FLATTEN` | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | **推荐使用的选项！** |
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![闭合圆圈](/help/assets/icons/CloseCircle.svg) | 查找器显示错误： **[!UICONTROL 无法使用提供的凭据进行身份验证。 请重试。]** |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | **推荐使用的选项**。 请注意，`%3FFLATTEN`是`?FLATTEN`的URL编码版本。 |
 
 ### 更多信息
 
