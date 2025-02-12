@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: a2292c0c24aa86baedae0fe1835e552992eb0cae
+source-git-commit: 3bf62bebebfe2ef52abbd29245ef6e8e65807491
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 11%
+source-wordcount: '1856'
+ht-degree: 19%
 
 ---
 
@@ -21,9 +21,14 @@ ht-degree: 11%
 >本文是即将发布的最终版本的初步非官方草稿版本，是内容分析文档的一部分。 所有内容可能会发生更改，并且本条当前版本不承担任何法律义务。
 >
 
-{#release-limited-testing}
+{{release-limited-testing}}
 
 引导式配置可帮助您快速轻松地配置Content Analytics。 引导式配置使用向导来设置自动为组织配置Content Analytics的要求。 在&#x200B;**[!UICONTROL 配置]**&#x200B;屏幕中，您可以创建新配置或编辑现有配置。
+
+>[!IMPORTANT]
+>
+>您组织中的每个沙盒只能有一个内容分析配置。
+
 
 访问Content Analytics配置
 
@@ -66,7 +71,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_button"
 >title="详细信息"
->abstract="提供该连接的名称。在&#x200B;**[!UICONTROL 数据视图]**、**[!UICONTROL 体验捕获和定义]**&#x200B;以及&#x200B;**[!UICONTROL 数据收集]**&#x200B;部分中，您提供了更多详细信息，以确保可以正确配置Content Analytics。"
+>abstract="提供该连接的名称。在&#x200B;**[!UICONTROL 数据视图]**、**[!UICONTROL 体验捕捉和定义]**&#x200B;以及&#x200B;**[!UICONTROL 数据收集]**&#x200B;部分中，您可以提供更多详细信息，以确保正确配置内容分析。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
@@ -87,17 +92,17 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataview_button"
 >title="数据视图"
->abstract="在配置Content Analytics时，您需要选择现有数据视图。 因此，您可以将内容分析数据与其他数据合并。"
+>abstract="要配置内容分析，您需要选择一个现有的数据视图。因此，您可以将内容分析数据与其他数据合并。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="数据视图"
->abstract="从Customer Journey Analytics中选择要与内容分析数据合并的现有数据视图。"
+>abstract="从 Customer Journey Analytics 中选择一个您希望将内容分析数据与之合并的现有数据视图。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
 >title="数据视图"
->abstract="从Customer Journey Analytics中选择要与您的内容分析数据合并的现有数据视图。<br/>"
+>abstract="从 Customer Journey Analytics 中选择一个您希望将内容分析数据与之合并的现有数据视图。<br/>"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -116,7 +121,7 @@ ht-degree: 11%
    * 要定义要在表中显示的列，请选择![列设置](/help/assets/icons/ColumnSetting.svg)。 选择要在&#x200B;**[!UICONTROL 自定义表]**&#x200B;对话框中显示哪些列，然后选择&#x200B;**[!UICONTROL 应用]**&#x200B;以应用更改。
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以确认所选的数据视图。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消。
 
-数据视图绑定到Customer Journey Analytics[连接](/help/connections/overview.md)。 并且连接基于您组织内的沙盒。 保存配置后，**[!UICONTROL 沙盒]**&#x200B;会根据选定的数据视图，自动填充为沙盒的正确名称。
+数据视图已绑定到Customer Journey Analytics [连接](/help/connections/overview.md)。 并且连接基于您组织内的沙盒。 保存配置后，**[!UICONTROL 沙盒]**&#x200B;会根据选定的数据视图，自动填充为沙盒的正确名称。
 
 
 ### 体验捕捉和定义 {#onboarding-experiences}
@@ -141,13 +146,15 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_edit_button"
 >title="体验捕捉和定义"
->abstract="您可以在Tag属性中编辑与所选配置关联的AdobeContent Analytics扩展中的设置。"
+>abstract="您可以在 Adobe 内容分析扩展中的标签属性中编辑与所选配置关联的设置。"
 
 
 
 <!-- markdownlint-enable MD034 -->
 
-在此部分中，您可以选择在通过Content Analytics收集的数据中包含体验。 体验是网页上的所有文本，可以使用访问某个网页的初始用户使用的URL重现这些文本。 在选中时，您必须定义要包含体验的URL。
+在此部分中，您可以选择在通过Content Analytics收集的数据中包含体验。  体验是网页上的所有文本，可以使用访问某个网页的初始用户使用的URL重现这些文本。
+
+默认情况下，**[!UICONTROL 包含体验]**&#x200B;处于关闭状态。 在选中时，您必须定义要包含体验的URL。
 
 要在新的或未实施的配置中包含体验，请执行以下操作：
 
@@ -157,14 +164,14 @@ ht-degree: 11%
 1. 指定用于确定如何在您的网站上呈现内容的参数。 参数是&#x200B;**[!UICONTROL 域正则表达式]**&#x200B;和&#x200B;**[!UICONTROL 查询参数]**&#x200B;的零个或多个组合。
    1. 输入&#x200B;**[!UICONTROL 域正则表达式]**，例如`(?!.*\b(store|help|admin)\b)`。
    1. 指定&#x200B;**[!UICONTROL 查询参数]**&#x200B;的逗号分隔列表，例如`outdoors, patio, kitchen`。
-   1. 如果要删除组合，请选择&#x200B;**[!UICONTROL 删除]**。
-   1. 如果要添加其他组合，请选择&#x200B;**[!UICONTROL 添加其他]**。
+1. 如果要删除域正则表达式和查询参数的组合，请选择&#x200B;**[!UICONTROL 删除]**。
+1. 如果要添加其他正则表达式和查询参数组合，请选择&#x200B;**[!UICONTROL 添加其他]**。
 
 要在已实施的配置中编辑现有体验或包含新体验，请执行以下操作：
 
 ![Content Analytics配置体验捕获和定义](../assets/aca-configuration-experience-edit.png)
 
-* 选择![编辑](/help/assets/icons/Edit.svg)编辑以在Tag属性中编辑与所选配置关联的AdobeContent Analytics扩展中的参数。
+* 选择![编辑](/help/assets/icons/Edit.svg)编辑以编辑与所选配置关联的Tag属性中Adobe Content Analytics扩展中的参数。
 
 
 ### 数据收集 {#onboarding-data-collection}
@@ -174,7 +181,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_button"
 >title="数据收集"
->abstract="定义您想要使用的标签属性，或者创建一个新的属性。并使用正则表达式定义要包含或排除的页面和资产。"
+>abstract="定义您想要使用的标签属性，或者创建一个新的属性。并使用正则表达式定义那些您想要包含或排除的页面和资产。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tag_header"
@@ -204,12 +211,12 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
 >title="数据收集"
->abstract="您可以在Tag属性的AdobeContent Analytics扩展中编辑与所选配置关联的页面设置。"
+>abstract="您可以在 Adobe 内容分析扩展中的标签属性中编辑与所选配置关联的页面设置。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_edit_button"
 >title="数据收集"
->abstract="您可以在Tag属性的AdobeContent Analytics扩展中编辑与所选配置关联的资产的设置。"
+>abstract="您可以在 Adobe 内容分析扩展中的标签属性中编辑与所选配置关联的资产设置。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -230,10 +237,7 @@ ht-degree: 11%
 
    1. 选择&#x200B;**[!UICONTROL 新建]**。
    2. 指定&#x200B;**[!UICONTROL 标记名称]**，例如`ACA Test`。
-   3. 指定一个或多个&#x200B;**[!UICONTROL 域]**，例如`example.com`。
-
-   * 要添加更多域，请选择&#x200B;**[!UICONTROL 添加其他]**。
-   * 要删除域，请选择![CrossSize75](/help/assets/icons/CrossSize75.svg)。
+   3. 指定&#x200B;**[!UICONTROL 域]**，例如`example.com`。
 
 * 如果已选择包含体验，请指示在为Content Analytics收集数据时应包含或排除哪些页面。
 
@@ -252,15 +256,27 @@ ht-degree: 11%
 
 * 要编辑在收集内容分析的数据时应包含或排除哪些资产，请在&#x200B;**[!UICONTROL 资产]**&#x200B;下选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**。
 
-### 概要
+### 概要 {#summary}
 
-提供所有必要的详细信息后，您会看到&#x200B;**[!UICONTROL 您几乎可以为Content Analytics]**&#x200B;摘要实施&#x200B;_配置名称_。
+提供所有必要的详细信息后，摘要将提供已创建或已修改工件的详细信息。
 
-对于现有的已实施配置，您会看到&#x200B;**[!UICONTROL 您已为内容分析]**&#x200B;摘要实施了&#x200B;_配置名称_。
+* 当您实施新配置时，您会看到&#x200B;**[!UICONTROL 您几乎可以为Content Analytics]**&#x200B;摘要实施&#x200B;_配置名称_。
+
+* 对于现有的已实施配置，您会看到&#x200B;**[!UICONTROL 您已为内容分析]**&#x200B;摘要实施了&#x200B;_配置名称_。
 
 ![Content Analytics配置摘要](../assets/aca-configuration-summary.png)
 
-### 操作
+### 操作 {#actions}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_implementation_warning"
+>title="载入实施警告"
+>abstract="这将根据您在此工作流中提供的输入来部分配置内容分析。 根据通常对内容分析有用的内容自动选择其他几个设置。 建议您查看每个工件的设置，确认它们符合您的要求和准则。 <br/>请注意，在手动发布与此配置关联的标记库之前，将不会收集任何数据。<br/>另请注意，为了派生图像和文本的属性，Adobe将按照您实施的数据收集设置，使用用户访问时捕获的URL检索这些属性。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 创建或编辑配置后，以下操作可用。
 
@@ -277,9 +293,9 @@ ht-degree: 11%
       1. 已修改与选定数据视图关联的连接，以包含Content Analytics事件和属性数据集。
       1. Content Analytics报表模板已添加到Workspace。
    * **[!UICONTROL 数据收集]**&#x200B;配置：
-      1. 新的或现有的标记属性配置为支持Content Analytics数据收集。 此配置意味着包含适用于标记的AdobeContent Analytics扩展。
+      1. 新的或现有的标记属性配置为支持Content Analytics数据收集。 此配置意味着包含适用于标记的Adobe Content Analytics扩展。
       1. 为Content Analytics事件创建数据流。
-      1. AdobeContent Analytics扩展已配置为确保Content Analytics事件发送到Content Analytics的数据流。
+      1. Adobe Content Analytics扩展已配置为确保将Content Analytics事件发送到Content Analytics的数据流。
       1. 如果没有为Tags属性配置Web SDK，则会创建新的Web SDK配置，以仅发送Content Analytics事件。
       1. 如果为此Tag属性配置了Web SDK，则不会对现有Web SDK配置进行任何更改。
 * **[!UICONTROL 保存]**：保存对已实施配置所做的更改并更新实施。
