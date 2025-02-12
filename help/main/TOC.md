@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: f8b984d2b429c731608b9774b44acea75ff1dfc7
+source-git-commit: 959e0b5d4a156d3ac81ac914612635880832ddd8
 workflow-type: tm+mt
-source-wordcount: '1134'
-ht-degree: 98%
+source-wordcount: '1129'
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ ht-degree: 98%
       + [禁用 AppMeasurement 数据收集](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
       + [从第三方分析解决方案升级](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
       + [升级时支持 Adobe Analytics 功能](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
-      + [升级期间和升级后的Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
+      + [升级期间和升级之后的 Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
    + 与 Adobe Analytics 进行比较 {#cja-aa-comparison}
       + [概述](../getting-started/aa-vs-cja/overview.md)
       + [实用 Adobe Analytics 数据 ](../getting-started/aa-vs-cja/aa-data-in-cja.md)
@@ -247,7 +247,7 @@ ht-degree: 98%
       + [概述](/help/content-analytics/report/report.md)
    + 配置 {#configuration}
       + [概述](/help/content-analytics/config/configuration.md)
-      + [引导式配置](/help/content-analytics/config/guided.md)
+      + [引导配置](/help/content-analytics/config/guided.md)
       + [手动配置](/help/content-analytics/config/manual.md)
 
 + Analytics 功能板 {#cja-dashboards}
@@ -412,7 +412,6 @@ ht-degree: 98%
       + [使用绑定维度和量度](/help/use-cases/data-views/binding-dimensions-metrics.md)
       + [使用摘要数据](/help/use-cases/data-views/summary-data.md)
       + [BI 扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)
-      + [BI扩展用例(Looker)](/help/use-cases/data-views/bi-extension-usecases-looker.md)
    + 数据导出 {#data-export}
       + [概述](../use-cases/data-export/overview.md)
       + [BI 扩展](../use-cases/data-export/bi-extension.md)
