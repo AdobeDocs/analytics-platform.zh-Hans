@@ -6,14 +6,22 @@ feature: Content Analytics
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: a2292c0c24aa86baedae0fe1835e552992eb0cae
+exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
+source-git-commit: 7542e7a402c8e2f8d6e4c1e624f04ceb752cc27e
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
 
 # Content Analytics报表概述
+
+>[!WARNING]
+>
+>本文是即将发布的最终版本的初步非官方草稿版本，是内容分析文档的一部分。 所有内容可能会发生更改，并且本条当前版本不承担任何法律义务。
+>
+
+{{release-limited-testing}}
 
 Content Analytics报表是在Analysis Workspace中完成的。 特定Workspace [模板](#template)可用，因此您可以立即访问预填充了相关内容见解的Workspace项目。
 

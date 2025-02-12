@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: 739d92a3e9b623e3f04bf28de8213f1c76d5036b
+source-git-commit: 007674fd9da69a4a333d5300c4f4d30640c4b366
 workflow-type: tm+mt
-source-wordcount: '13066'
+source-wordcount: '13056'
 ht-degree: 2%
 
 ---
@@ -222,7 +222,7 @@ Tableau Desktop支持`FLATTEN`参数的以下方案。 有关详细信息，请�
       1. 选择&#x200B;**[!UICONTROL 在**[!UICONTROL &#x200B;可选设置&#x200B;]**处展开全部]**。
       1. 将每个节点的最大连接数&#x200B;**[!UICONTROL 设置为`5`。]**
       1. 确保启用&#x200B;**[!UICONTROL SSL]**。
-      1. 选择&#x200B;**[!UICONTROL 测试]**&#x200B;以测试连接。 您应该会看到屏幕顶部出现一个横幅，其中显示一条消息，如&#x200B;**[!UICONTROL Success， can connect JDBC string： jdbc:postgresql://examplecompany.platform-query-stage.adobe.io:80/prod:cja?FLATTEN?tcpKeepAlive=true&amp;ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory&amp;sslmode=prefer]**。
+      1. 选择&#x200B;**[!UICONTROL 测试]**&#x200B;以测试连接。 您应该会看到屏幕顶部出现一个横幅，其中显示一条消息，如&#x200B;**[!UICONTROL Success， can connect JDBC ....]**。
       1. 选择&#x200B;**[!UICONTROL 连接]**&#x200B;以建立和保存连接。
    1. 您可以在&#x200B;**[!UICONTROL 连接]**&#x200B;界面中看到新连接。
    1. 从&#x200B;**[!UICONTROL 管理员]**&#x200B;中选择&#x200B;**←**&#x200B;以转到左边栏中的主导航。
