@@ -1,5 +1,5 @@
 ---
-title: 创建用于Customer Journey Analytics的架构
+title: 为Customer Journey Analytics创建架构
 description: 了解从Adobe Analytics升级到Customer Journey Analytics时推荐的路径
 role: Admin
 solution: Customer Journey Analytics
@@ -10,24 +10,24 @@ exl-id: d686dcdd-08d5-4e8f-8f0d-76c8c7b0427f
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 29%
+ht-degree: 44%
 
 ---
 
-# 创建要用于Customer Journey Analytics的数据集 {#upgrade-create-dataset}
+# 创建与 Customer Journey Analytics 使用的数据集 {#upgrade-create-dataset}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataset-create"
->title="在Adobe Experience Platform中创建数据集"
->abstract="数据集是收集的数据所在的位置。 在Adobe Experience Platform中创建此位置。<br><br>创建包含架构的数据集只需要几分钟。"
+>title="在 Adobe Experience Platform 中创建数据集"
+>abstract="数据集是已收集数据所在的位置。在 Adobe Experience Platform 中创建此位置。<br><br>创建一个考虑到架构的数据集只需几分钟。"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics为您的组织动态生成的升级步骤来Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
+>只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)为您的组织动态生成的升级步骤进行操作。
 >
 >完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
 

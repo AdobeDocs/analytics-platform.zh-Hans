@@ -10,7 +10,7 @@ exl-id: f96565a2-f556-4b45-b88e-984613614d2e
 source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
 workflow-type: tm+mt
 source-wordcount: '824'
-ht-degree: 6%
+ht-degree: 22%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 6%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-create"
->title="创建Analytics源连接器"
->abstract="使用Analytics Source Connector摄取报表包数据以用于Customer Journey Analytics。<br><br>使用默认设置，创建Analytics Source Connector只需几分钟时间。"
+>title="创建 Analytics 源连接器"
+>abstract="使用 Analytics 源连接器摄取报告包数据，以用于 Customer Journey Analytics。<br><br>使用默认设置创建 Analytics 源连接器只需几分钟。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -29,26 +29,26 @@ ht-degree: 6%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-map-fields"
->title="创建Analytics Source Connector并映射架构字段"
->abstract="源连接器需要知道如何将Adobe Analytics字段映射到您组织的架构。 使用此接口提供具有此映射的源连接器。 此步骤是将历史数据添加到Customer Journey Analytics的一部分。<br><br>此步骤所花费的时间在很大程度上取决于必须映射的维度和量度数量。 这个步骤并不像繁琐和重复那样困难。 预计数据流映射需要大约一周的工作才能完成。"
+>title="创建 Analytics 源连接器并映射架构字段"
+>abstract="源连接器需要知道如何将 Adobe Analytics 字段映射到您组织的架构。使用此界面向源连接器提供该映射。此步骤是将历史数据添加到 Customer Journey Analytics 的一部分。<br><br>此步骤所需的时间在很大程度上取决于您必须映射的维度和量度的数量。这一步并不难，但是它很繁琐且重复。预计数据流映射大约需要一周的时间才能完成。"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics为您的组织动态生成的升级步骤来Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
+>只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)为您的组织动态生成的升级步骤进行操作。
 >
 >完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
 
-## 了解Analytics Source Connector可怎样将历史数据引入Customer Journey Analytics
+## 了解Analytics Source Connector如何将历史数据引入Customer Journey Analytics
 
-您可以使用Analytics Source Connector将Adobe Analytics报表包数据引入Adobe Experience Platform。 然后，此数据可用作Customer Journey Analytics中的历史数据。
+您可以使用Analytics Source Connector将Adobe Analytics报表包数据引入Adobe Experience Platform。 然后，此数据可以用作Customer Journey Analytics中的历史数据。
 
-此过程假定您希望[创建一个自定义架构以用于Customer Journey Analytics的Web SDK实施](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)，因为您希望一个简化的架构以针对您的组织以及您使用的特定Platform应用程序的需求进行定制。
+此过程假定您希望[创建一个自定义架构以用于您的Customer Journey Analytics Web SDK实施](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)，因为您需要一个针对贵组织和您使用的特定Platform应用程序的需求而定制的简化架构。
 
-要使用Analytics Source Connector将历史数据纳入Customer Journey Analytics，您需要：
+要使用Analytics Source Connector将历史数据引入Customer Journey Analytics，您需要：
 
-1. [为Analytics源连接器创建自定义架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+1. [为 Analytics 源连接器创建一个自定义架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
 1. 如果您还没有Analytics源连接器，请创建Analytics源连接器并将字段映射到您的自定义Web SDK架构，如下所述。
 
@@ -70,7 +70,7 @@ ht-degree: 6%
 
 1. 在Adobe Analytics拼贴中选择&#x200B;**[!UICONTROL 添加数据]**。
 
-   ![Adobe Experience Platform窗口，其中已选择源，并突出显示了Adobe应用程序和添加数据。](./assets/sources-overview.png)
+   ![已选择源的Adobe Experience Platform窗口，同时突出显示Adobe应用程序和添加数据。](./assets/sources-overview.png)
 
 1. 选择&#x200B;**[!UICONTROL 报表包]**，然后从报表包列表中选择包含要在Customer Journey Analytics中使用的历史数据的报表包。
 
@@ -92,7 +92,7 @@ ht-degree: 6%
 
    1. 在&#x200B;**[!UICONTROL Source字段]**&#x200B;中，从“Adobe Analytics ExperienceEvent模板”字段组中选择一个Adobe Analytics字段。 然后，在&#x200B;**[!UICONTROL 目标字段]**&#x200B;中，选择XDM架构中要将其映射到的自定义字段。
 
-      由于AppMeasurement和XDM之间固有的架构差异，并非所有Adobe Analytics字段在XDM中都拥有相应的字段。
+      由于Adobe Analytics和XDM之间固有的架构差异，并非所有AppMeasurement字段在XDM中都拥有相应的字段。
 
    1. 为您用于在Adobe Analytics中收集数据的Adobe Analytics ExperienceEvent Template字段组中的每个字段重复此过程。
 
@@ -110,6 +110,6 @@ ht-degree: 6%
 
    创建连接后，将自动创建数据流以使用报表包中的Adobe Analytics数据填充数据集。 数据流最多可摄取13个月的生产沙盒的历史数据。 非生产沙盒中的回填限制为三个月。
 
-   如果您使用Analytics Source Connector将历史数据引入Customer Journey AnalyticsWeb SDK实施，则需要将此自动创建的数据集添加到您为Web SDK实施创建的连接。
+   如果您使用Analytics Source Connector将历史数据引入Customer Journey Analytics Web SDK实施，则需要将此自动创建的数据集添加到您为Web SDK实施创建的连接。
 
 1. 继续执行[建议的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)或[动态生成的升级步骤](https://gigazelle.github.io/cja-ttv/)。

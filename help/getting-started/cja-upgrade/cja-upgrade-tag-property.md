@@ -10,7 +10,7 @@ exl-id: 156df830-541d-4c92-9c49-98f346e040a7
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '371'
-ht-degree: 20%
+ht-degree: 35%
 
 ---
 
@@ -20,14 +20,14 @@ ht-degree: 20%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-property"
->title="在Adobe Experience Platform数据收集中创建标记属性"
->abstract="使用标记是数据收集的典型标准。 在Adobe Experience Platform界面中创建标记，以便您可以随时更新数据收集变量。<br><br>标记属性的创建只需单击几下即可完成，只需几分钟即可完成。"
+>title="在 Adobe Experience Platform 数据收集中创建标签属性。"
+>abstract="使用标记是数据收集的典型标准。在 Adobe Experience Platform 界面中创建标记，您就可以随时更新数据收集变量。<br><br>只需点击几次即可创建标记属性，仅需几分钟。"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics为您的组织动态生成的升级步骤来Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
+>只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)为您的组织动态生成的升级步骤进行操作。
 >
 >完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
 
@@ -35,7 +35,7 @@ ht-degree: 20%
 
 以下信息介绍了如何为资产创建标记。 有关补充信息，请参阅Experience Platform文档中的[配置Web SDK标记扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。 Web SDK本身包含[!UICONTROL Adobe Experience Cloud ID服务]，因此您无需将ID服务扩展添加到标记中。
 
-资产基本上就是一个容器，在将标记部署到网站时可在其中填充扩展、规则、数据元素和库。很多人会为想要部署同一组标记的每个网站（或一组密切相关的网站）创建一个资产。 有关属性的详细信息，请参阅Experience Platform数据收集文档中的[属性](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/companies-and-properties)。
+资产基本上就是一个容器，在将标记部署到网站时可在其中填充扩展、规则、数据元素和库。很多人会为想要部署同一组标记的每个网站（或一组密切相关的网站）创建一个资产。 有关属性的更多信息，请参阅Experience Platform数据收集文档中的[属性](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/companies-and-properties)。
 
 要为资产创建标记，请执行以下操作：
 

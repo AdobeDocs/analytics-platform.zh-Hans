@@ -1,5 +1,5 @@
 ---
-title: 升级到Customer Journey Analytics时监视数据集摄取
+title: 升级到 Customer Journey Analytics 时监控数据集摄取
 description: 了解在升级到Customer Journey Analytics时如何监测数据集摄取
 role: Admin
 solution: Customer Journey Analytics
@@ -10,24 +10,24 @@ exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
 source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
 source-wordcount: '336'
-ht-degree: 0%
+ht-degree: 32%
 
 ---
 
-# 升级到Customer Journey Analytics时监视数据集摄取 {#monitor-ingestion}
+# 升级到 Customer Journey Analytics 时监控数据集摄取 {#monitor-ingestion}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataset-validate"
 >title="验证数据集中的数据"
->abstract="现在您已经配置了Web SDK实施，可以使用数据集活动管理器查看摄取和失败的批次。 如果您看到主要摄取的批次，则表示此步骤已完成。 如果您主要看到失败的批次或没有看到批次，请检查您的Web SDK实施，以确保正确地向Adobe发送数据。<br><br>如果一切都已正确无误地完成，此步骤可以在不到一天的时间内完成。 如果存在多个数据收集问题，则对这些问题进行故障排除可能需要更长的时间。"
+>abstract="现在您已经配置了 Web SDK 实施，您可以使用数据集活动管理器查看已摄取和失败的批次。如果您看到主要摄取批次，这一步就已完成。如果您看到主要失败批次或没有批次，请检查您的 Web SDK 实施以确保它正确地将数据发送到 Adobe。<br><br>如果一切都正确无误，这一步可以在不到一天的时间内完成。如果存在多个数据收集问题，修正错误可能需要更长的时间。"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics为您的组织动态生成的升级步骤来Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
+>只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)为您的组织动态生成的升级步骤进行操作。
 >
 >完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 配置Web SDK实施后，您需要检查各个批次的状态，以验证数据是否已摄取到数据集中。
 
-1. 在Experience PlatformUI的左侧导航中选择&#x200B;**[!UICONTROL 监视]**。
+1. 在Experience Platform UI的左侧导航中选择&#x200B;**[!UICONTROL 监控]**。
 
    此时将显示监控仪表板。 利用此仪表板，可查看来自批次或流式摄取的集客数据状态。
 

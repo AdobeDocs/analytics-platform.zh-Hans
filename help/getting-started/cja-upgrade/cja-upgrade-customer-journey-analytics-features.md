@@ -1,5 +1,5 @@
 ---
-title: 了解Customer Journey Analytics特有的功能
+title: 了解 Customer Journey Analytics 独有的功能
 description: 了解Customer Journey Analytics特有的功能
 role: Admin
 solution: Customer Journey Analytics
@@ -9,18 +9,18 @@ hidefromtoc: true
 source-git-commit: f4440148d26e81938d029d4a077cd787c868f1be
 workflow-type: tm+mt
 source-wordcount: '284'
-ht-degree: 27%
+ht-degree: 54%
 
 ---
 
-# 了解Customer Journey Analytics特有的功能 {#feature-support-upgrade}
+# 了解 Customer Journey Analytics 独有的功能 {#feature-support-upgrade}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tie-data"
->title="将不同来源的数据绑定在一起"
->abstract="（推荐）组合来自其他渠道的分析数据的功能是Customer Journey Analytics的主要用例。"
+>title="将不同来源的数据结合在一起"
+>abstract="（推荐）将来自其他渠道的分析数据结合起来的能力是 Customer Journey Analytics 的主要用例。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,8 +28,8 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-datasets"
->title="拼接来自多个数据集的点击"
->abstract="如果任何数据集不共享主标识符(如Experience CloudID)，您仍然可以使用其他维度（如登录用户名或电子邮件地址）将该数据拼合在一起。"
+>title="拼接来自多个数据集的点击量"
+>abstract="如果您的任何数据集不共享主要标识符（例如 Experience Cloud ID），您仍然可以使用其他维度（例如登录用户名或电子邮件地址）将该数据拼接在一起。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,7 +45,7 @@ ht-degree: 27%
 |---------|----------|
 | [将Web数据与来自其他渠道的数据（如呼叫中心数据）绑定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/cross-channel/cross-channel) | Customer Journey Analytics 与 Experience Platform 保存各种数据架构和类型的能力相结合。使用[体验数据模型 (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)，可以采用统一的方式来表示和组织数据，以便进行数据合并和分析。Adobe Analytics 主要专注于 Web 和移动分析数据，并具有一些[数据导入](https://experienceleague.adobe.com/docs/analytics/import/home.html)功能。 |
 | 使用自定义维度[拼接来自其他数据集的点击](https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview) | 通过 Customer Journey Analytics，可从多个报告包[组合数据](/help/connections/combined-dataset.md)，如同它们是 Adobe Analytics 中的单个报告包一样。 |
-| 与Adobe实时CDP集成 |  |
+| 与Adobe Real-time CDP集成 |  |
 | [与Adobe Journey Optimizer集成](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/cross-channel/cross-channel) |  |
 
 

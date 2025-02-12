@@ -1,5 +1,5 @@
 ---
-title: 创建用于Customer Journey Analytics的自定义架构
+title: 为Customer Journey Analytics创建自定义架构
 description: 了解如何为Customer Journey Analytics创建自定义架构
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
 source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
 source-wordcount: '1335'
-ht-degree: 37%
+ht-degree: 51%
 
 ---
 
-# 创建自定义架构以用于您的Customer Journey AnalyticsWeb SDK实施 {#create-custom-schema}
+# 创建一个自定义架构以用于您的 Customer Journey Analytics Web SDK 实施 {#create-custom-schema}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create"
->title="在Adobe Experience Platform中创建所需的自定义架构"
->abstract="使用Adobe Experience Platform UI创建架构，以便Adobe知道存储数据的正确格式。<br><br>此步骤涉及实际创建您的组织同意的架构。 在Adobe Experience Platform界面中创建架构的估计时间大约为一周，具体取决于需要创建的维度和量度数量。"
+>title="在 Adobe Experience Platform 中创建所需的自定义架构"
+>abstract="使用 Adobe Experience Platform UI 创建一个架构，以便 Adobe 知道正确的数据存储格式。<br><br>此步骤将实际创建您的组织已同意的架构。在 Adobe Experience Platform 界面中创建架构的预计时间约为一周，具体取决于需要创建的维度及量度的数量。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -29,8 +29,8 @@ ht-degree: 37%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create-default-aa"
->title="使用Adobe Analytics ExperienceEvent字段组创建架构"
->abstract="使用“Adobe Analytics ExperienceEvent”字段组可在Adobe Experience Platform中创建包含Adobe Analytics使用的所有字段的架构。<br><br>基于Adobe Analytics ExperienceEvent字段组创建架构非常简单，只需几分钟即可完成。"
+>title="使用 Adobe Analytics ExperienceEvent 字段组创建架构"
+>abstract="使用“Adobe Analytics ExperienceEvent”字段组在 Adobe Experience Platform 中创建一个包含 Adobe Analytics 使用的所有字段的架构。<br><br>根据 Adobe Analytics ExperienceEvent 字段组创建架构很简单，只需几分钟即可完成。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -38,20 +38,20 @@ ht-degree: 37%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
->title="为配置文件启用架构"
->abstract="在架构中启用配置文件以用于AdobeReal-time CDP。 之所以出现此步骤，是因为您选择了要与AdobeReal-time CDP集成。<br><br>由于此步骤涉及单击单个框，因此此步骤只需几分钟即可完成。"
+>title="为个人资料启用您的架构"
+>abstract="在您的架构中启用个人资料以供 Adobe Real-time CDP 使用。出现此步骤是因为您选择了希望与 Adobe Real-time CDP 集成。<br><br>此步骤只需单击一个复选框，因此仅需几分钟。"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics为您的组织动态生成的升级步骤来Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
+>只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)为您的组织动态生成的升级步骤进行操作。
 >
 >完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
 
 >[!IMPORTANT]
 >
->在开始创建自定义架构之前，请与您的数据团队和整个组织中的其他利益相关者合作，确定您组织的理想架构设计，以便用于Customer Journey Analytics和您使用的其他Adobe Experience Platform应用程序。 有关详细信息，请参阅[架构您的架构以用于Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)。
+>在开始创建自定义架构之前，请与您的数据团队和整个组织中的其他利益相关者合作，确定贵组织适用于Customer Journey Analytics和您使用的其他Adobe Experience Platform应用程序的理想架构设计。 有关详细信息，请参阅[架构您的架构以用于Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)。
 
 以下部分介绍了如何创建可与Customer Journey Analytics一起使用的架构。 可以使用以下架构选项：
 
@@ -59,7 +59,7 @@ ht-degree: 37%
 
 * **使用Adobe Analytics ExperienceEvent字段组的Adobe Analytics架构：**&#x200B;需要添加数千个不需要的字段。 将来要进行任何必要的更改都比较困难。
 
-有关这些架构选项的更多信息，请参阅[为Customer Journey Analytics选择架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)。
+有关这些架构选项的更多信息，请参阅[选择您的Customer Journey Analytics架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)。
 
 ## 创建架构
 
@@ -116,7 +116,7 @@ ht-degree: 37%
 
       如果您选择使用默认的Adobe Analytics架构而不是创建自定义XDM架构，则可以立即添加Adobe Analytics ExperienceEvent字段组。 但是，Adobe建议创建自定义XDM架构，而不是添加此字段组。
 
-      有关这些架构选项的更多信息，请参阅[为Customer Journey Analytics选择架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)。
+      有关这些架构选项的更多信息，请参阅[选择您的Customer Journey Analytics架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)。
 
    1. 选择&#x200B;**[!UICONTROL 添加字段组]**。
 
@@ -142,7 +142,7 @@ ht-degree: 37%
 
    ![识别对象](assets/identification-field.png)
 
-   标识对象将标识功能添加到架构中。 对于您自己的网站，您需要使用Experience CloudID和电子邮件地址来识别访问您网站的用户档案。 还有许多其他属性可用于跟踪您的人员标识（例如客户ID、忠诚度ID）。
+   标识对象将标识功能添加到架构中。 对于您自己的网站，您需要使用Experience Cloud ID和电子邮件地址来识别访问您网站的用户档案。 还有许多其他属性可用于跟踪您的人员标识（例如客户ID、忠诚度ID）。
 
    选择&#x200B;**[!UICONTROL 应用]**&#x200B;将此对象添加到您的架构中。
 
@@ -190,7 +190,7 @@ ht-degree: 37%
 
    * 添加基于 Profile Core v2 字段组的标识对象。
 
-   * 将Experience CloudID定义为主标识符，将电子邮件定义为标识符。
+   * 将Experience Cloud ID定义为主标识符，将电子邮件定义为标识符。
 
    * 为轮廓启用架构
 

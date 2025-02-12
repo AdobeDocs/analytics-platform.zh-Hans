@@ -1,6 +1,6 @@
 ---
-title: 创建查找数据集以对Customer Journey Analytics中的数据分类
-description: 了解如何创建查找数据集以在Customer Journey Analytics中对数据进行分类
+title: 创建查找数据集，以对 Customer Journey Analytics 中的数据进行分类
+description: 了解如何在Customer Journey Analytics中创建查找数据集以对数据进行分类
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -10,36 +10,36 @@ exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '876'
-ht-degree: 1%
+ht-degree: 9%
 
 ---
 
-# 创建查找数据集以对Customer Journey Analytics中的数据分类 {#upgrade-lookup-dataset}
+# 创建查找数据集，以对 Customer Journey Analytics 中的数据进行分类 {#upgrade-lookup-dataset}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-lookup-dataset-create"
->title="为包含分类数据的每个维度创建查找数据集"
->abstract="与Adobe Analytics中的分类数据类似，查找数据集是在Customer Journey Analytics中对数据进行分类的方法。"
+>title="为包含分类数据的每个维度创建一个查找数据集"
+>abstract="与 Adobe Analytics 中的分类数据类似，查找数据集是 Customer Journey Analytics 中的数据分类的方法。"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics为您的组织动态生成的升级步骤来Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
+>只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)为您的组织动态生成的升级步骤进行操作。
 >
 >完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
 
-与Adobe Analytics中的分类数据类似，查找数据集是在Customer Journey Analytics中对数据进行分类的方法。
+与 Adobe Analytics 中的分类数据类似，查找数据集是 Customer Journey Analytics 中的数据分类的方法。
 
 使用Analytics Source Connector时，某些标准查找数据集会在报告时自动应用。 有关详细信息，请参阅[向数据集添加标准查找](/help/connections/standard-lookups.md)。
 
-在使用Experience PlatformWeb SDK时，为了对Customer Journey Analytics中的数据分类，您需要为包含要分类的数据的每个维度创建自定义架构和查找数据集。
+在使用Experience Platform Web SDK时，为了在Customer Journey Analytics中分类数据，您需要为包含要分类的数据的每个维度创建自定义架构和查找数据集。
 
 ## 创建要用于查找数据集的自定义架构
 
-为每个维度创建一个新的自定义架构，这些维度包含您要在Customer Journey Analytics中分类的数据。 在后续步骤中创建查找数据集时，它将引用此架构。
+为包含要在Customer Journey Analytics中分类的数据的每个维度创建新的自定义架构。 在后续步骤中创建查找数据集时，它将引用此架构。
 
 对包含要分类的数据的每个维度重复此过程。
 
@@ -71,7 +71,7 @@ ht-degree: 1%
 
 对包含要分类的数据的每个维度重复此过程。
 
-要创建查询数据集以用于Customer Journey Analytics中的架构，请执行以下操作：
+要创建查找数据集以用于Customer Journey Analytics中的架构，请执行以下操作：
 
 >[!NOTE]
 >
@@ -105,11 +105,11 @@ ht-degree: 1%
 
 1. 选择&#x200B;**[!UICONTROL 完成]**。
 
-1. 继续[将查找数据集添加到Customer Journey Analytics](#add-the-lookup-dataset-to-your-connection-in-customer-journey-analytics)中的连接。
+1. 继续[将查找数据集添加到您在Customer Journey Analytics](#add-the-lookup-dataset-to-your-connection-in-customer-journey-analytics)中的连接。
 
-## 在Customer Journey Analytics中将查找数据集添加到您的连接
+## 将查找数据集添加到您在Customer Journey Analytics中的连接
 
-在您[创建自定义架构](#create-a-custom-schema-to-use-with-the-lookup-dataset)并[创建查询数据集](#create-a-lookup-dataset)之后，您需要在Customer Journey Analytics中将查询数据集添加到您的连接。
+在您[创建自定义架构](#create-a-custom-schema-to-use-with-the-lookup-dataset)并[创建查询数据集](#create-a-lookup-dataset)之后，您需要将查询数据集添加到您在Customer Journey Analytics中的连接。
 
 对包含要分类的数据的每个维度重复此过程。
 
@@ -125,7 +125,7 @@ ht-degree: 1%
 
 1. 在&#x200B;**[!UICONTROL 添加数据集]**&#x200B;对话框中，选择您创建的查询数据集，然后选择&#x200B;**[!UICONTROL 下一步]**。
 
-1. 在&#x200B;**[!UICONTROL 人员ID]**&#x200B;字段中，从您在Experience Platform中配置的数据集架构中定义的可用标识中选择人员ID。<!-- fill out other fields? -->
+1. 在&#x200B;**[!UICONTROL 人员ID]**&#x200B;字段中，从您在Experience Platform中配置的数据集架构中定义的可用身份中选择人员ID。<!-- fill out other fields? -->
 
 1. 选择&#x200B;**[!UICONTROL 添加数据集]**，然后选择&#x200B;**[!UICONTROL 保存]**。
 
@@ -133,5 +133,5 @@ ht-degree: 1%
 
 1. 使用&#x200B;**[!UICONTROL 键]**&#x200B;字段和&#x200B;**[!UICONTROL 匹配键]**&#x200B;字段，在查询数据集中的字段与事件或摘要数据集中的字段之间建立关联。
 
-1. 在Customer Journey Analytics中将所有查找数据集添加到连接后，继续执行[建议的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)或[动态生成的升级步骤](https://gigazelle.github.io/cja-ttv/)。
+1. 将所有查找数据集添加到Customer Journey Analytics中的连接后，继续执行[建议的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)或[动态生成的升级步骤](https://gigazelle.github.io/cja-ttv/)。
 

@@ -1,5 +1,5 @@
 ---
-title: 创建用于Customer Journey Analytics的架构
+title: 为Customer Journey Analytics创建架构
 description: 了解从Adobe Analytics升级到Customer Journey Analytics时推荐的路径
 role: Admin
 solution: Customer Journey Analytics
@@ -10,24 +10,24 @@ exl-id: f76d098d-d223-40e4-be81-d28e7581396b
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '300'
-ht-degree: 20%
+ht-degree: 37%
 
 ---
 
-# 创建数据流以用于Customer Journey Analytics {#upgrade-create-datastream}
+# 创建与 Customer Journey Analytics 使用的数据流 {#upgrade-create-datastream}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-datastream-create"
->title="在Adobe Experience Platform中创建数据流"
->abstract="数据流是一个中介位置，可将您的数据传递给所有配置的服务。 在Adobe Experience Platform中创建此位置。<br><br>在Platform界面中初次创建数据流只需几分钟的时间。"
+>title="在 Adobe Experience Platform 中创建数据流"
+>abstract="数据流是将您的数据传递到所有已配置的服务的中间位置。在 Adobe Experience Platform 中创建此位置。<br><br>在平台界面中初次创建数据流只需几分钟。"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics为您的组织动态生成的升级步骤来Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
+>只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)为您的组织动态生成的升级步骤进行操作。
 >
 >完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
 

@@ -10,7 +10,7 @@ exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '1697'
-ht-degree: 31%
+ht-degree: 35%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 31%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-xdm"
 >title="将 XDM 数据收集逻辑添加到您的标记中"
->abstract="在网站上安装加载器标记后，您可以添加规则和数据元素以填充要发送到Adobe的XDM对象。 Adobe建议维护一份解决方案设计文档，以跟踪标记的配置方式。<br><br>此步骤需要完成大量工作，因为它涉及为属性设置所有Analytics逻辑。 为此，您需要花费一个月或更长时间来建立正确的标记规则，测试这些规则，并在您的网站上部署它们。"
+>abstract="在您的网站上安装加载器标记后，您可以添加规则和数据元素来填充 XDM 对象，然后发送给 Adobe。Adobe 建议维护一个解决方案设计文档来跟踪标记的配置方式。<br><br>这一步工作量很大，因为要为您的属性设置所有分析逻辑。预计需要花费一个月或更长的时间来建立正确的标记规则、测试它们并将它们部署到您的网站上。"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics为您的组织动态生成的升级步骤来Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
+>只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)为您的组织动态生成的升级步骤进行操作。
 >
 >完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
 
@@ -39,7 +39,7 @@ ht-degree: 31%
 
 以下各节介绍了建议的数据元素以及您可以配置的其他常见数据元素。
 
-数据元素有多种类型。 您可能需要配置的两个常见数据元素：一个用于捕获访客在您的网站上查看的页面名称，另一个用于捕获访问您网站的每个人员的Experience CloudID。
+数据元素有多种类型。 您可能需要配置的两个常见数据元素：一个用于捕获访客在您的网站上查看的页面名称，另一个用于捕获访问您网站的每个人员的Experience Cloud ID。
 
 配置这两个数据元素后，您可以为要捕获的特定数据配置其他数据元素。
 
@@ -91,7 +91,7 @@ ht-degree: 31%
 
 #### ECID数据元素
 
-适用于大多数组织的通用数据元素是一个数据元素，可捕获访问您网站的每个人的Experience CloudID。
+适用于大多数组织的通用数据元素是一个数据元素，可捕获访问您网站的每个人的Experience Cloud ID。
 
 要创建ECID数据元素，请执行以下操作：
 
@@ -101,15 +101,15 @@ ht-degree: 31%
 
 1. 从 [!UICONTROL 标签属性] 列表中选择您新创建的标签以将其打开。
 
-1. （视情况而定）安装Experience CloudID服务扩展（如果尚未安装）：
+1. （视情况而定）安装Experience Cloud ID服务扩展（如果尚未安装）：
 
    1. 选择左边栏中的&#x200B;**[!UICONTROL 扩展]**。
 
-   1. 默认情况下已选择&#x200B;**[!UICONTROL 已安装]**&#x200B;选项卡。 如果列出&#x200B;**[!UICONTROL Experience CloudID服务]**&#x200B;磁贴，请跳至步骤5。
+   1. 默认情况下已选择&#x200B;**[!UICONTROL 已安装]**&#x200B;选项卡。 如果列出了&#x200B;**[!UICONTROL Experience Cloud ID服务]**&#x200B;磁贴，请跳至步骤5。
 
-   1. 如果未列出&#x200B;**[!UICONTROL Experience CloudID服务]**&#x200B;磁贴，请选择&#x200B;**[!UICONTROL 目录]**&#x200B;选项卡。
+   1. 如果未列出&#x200B;**[!UICONTROL Experience Cloud ID服务]**&#x200B;拼贴，请选择&#x200B;**[!UICONTROL 目录]**&#x200B;选项卡。
 
-   1. 在“搜索”字段中，搜索&#x200B;**[!UICONTROL Experience CloudID服务]**，然后在该磁贴出现时选择该磁贴
+   1. 在搜索字段中，搜索&#x200B;**[!UICONTROL Experience Cloud ID服务]**，然后在该磁贴出现时选择该磁贴
 
    1. 选择&#x200B;**[!UICONTROL 安装]** > **[!UICONTROL 保存]**。
 
@@ -121,7 +121,7 @@ ht-degree: 31%
 
    * **[!UICONTROL 名称]**：数据元素的名称。 例如：`ECID`。
 
-   * **[!UICONTROL 扩展]**：从列表中选择&#x200B;**[!UICONTROL Experience CloudID服务]**。
+   * **[!UICONTROL 扩展]**：从列表中选择&#x200B;**[!UICONTROL Experience Cloud ID服务]**。
 
    * **[!UICONTROL 数据元素类型]**：从列表中选择&#x200B;**[!UICONTROL ECID]**。
 

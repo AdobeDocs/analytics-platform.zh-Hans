@@ -1,5 +1,5 @@
 ---
-title: 架构您的架构以用于Customer Journey Analytics
+title: 构建用于 Customer Journey Analytics 的架构
 description: 了解从Adobe Analytics升级到Customer Journey Analytics时推荐的路径
 role: Admin
 solution: Customer Journey Analytics
@@ -10,42 +10,42 @@ exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
 source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
 workflow-type: tm+mt
 source-wordcount: '526'
-ht-degree: 0%
+ht-degree: 25%
 
 ---
 
-# 架构您的架构以用于Customer Journey Analytics {#upgrade-schema-architect}
+# 构建用于 Customer Journey Analytics 的架构 {#upgrade-schema-architect}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-architect"
->title="架构架构"
->abstract="在贵组织中讨论数据收集的要求，并确定如何构建要在Adobe Experience Platform中使用的架构。 之所以出现此步骤，是因为您希望使用为组织量身定制的架构这一推荐流程。 正确执行此步骤至关重要，因为贵组织内所有团队都采用的模式显着简化了数据摄取。<br><br>组织中的所有相关方按照统一架构进行协调的预计时间为1-2个月。 此时间范围在很大程度上取决于协调所需的团队数量，以及要协调的维度+量度数量。"
+>title="架建架构"
+>abstract="在您的组织内讨论数据收集的要求，并确定如何生成用于 Adobe Experience Platform 的架构。出现此步骤是因为您想要使用一个为您的组织定制的架构的使用推荐过程。正确执行此步骤至关重要，因为组织内所有团队都遵循一个架构可以使数据摄取变得更加容易。<br><br>将组织中的所有相关方聚集在一起以遵循一个统一架构的预计时间为 1-2 个月。这个时间范围在很大程度上取决于需要协调的团队数量以及需要统一的维度 + 量度的数量。"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics为您的组织动态生成的升级步骤来Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
+>只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)为您的组织动态生成的升级步骤进行操作。
 >
 >完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
 
-Adobe建议在从Adobe Analytics升级到Customer Journey Analytics时创建要与Web SDK一起使用的自定义Experience Data Model (XDM)架构。 或者，您可以使用默认的Adobe Analytics架构，该架构使用Adobe Analytics ExperienceEvent字段组。
+从Adobe Analytics升级到Customer Journey Analytics时，Adobe建议创建一个要与Web SDK一起使用的自定义Experience Data Model (XDM)架构。 或者，您可以使用默认的Adobe Analytics架构，该架构使用Adobe Analytics ExperienceEvent字段组。
 
 自定义XDM架构允许精简架构，根据您的组织和您使用的特定Platform应用程序的需求量身定制。 与使用Adobe Analytics ExperienceEvent字段组的默认Adobe Analytics架构不同，当需要对自定义XDM架构进行更改时，您不必在数千个未使用的字段中进行筛选来查找需要更新的字段。
 
-有关这些架构选项的更多信息，请参阅[为Customer Journey Analytics选择架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)。
+有关这些架构选项的更多信息，请参阅[选择您的Customer Journey Analytics架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)。
 
 在开始设计XDM架构时，请查看以下部分。
 
 ## 避免XDM架构中的Adobe Analytics限制
 
-与Adobe Analytics相比，Customer Journey Analytics的底层架构提供了更大的灵活性。 创建新的XDM架构是解锁这种灵活性的关键方法。 升级到Customer Journey Analytics时，请确保避免在架构中沿用不必要的Adobe Analytics限制。
+Customer Journey Analytics的底层架构提供了比Adobe Analytics更大的灵活性。 创建新的XDM架构是解锁这种灵活性的关键方法。 当您升级到Customer Journey Analytics时，请确保避免在架构中沿用不必要的Adobe Analytics限制。
 
 | Adobe Analytics数据架构 | XDM架构架构 |
 |---------|----------|
-| 单个量度将会添加到Analytics数据架构中。<br/>例如，在Adobe Analytics中，每个事件的eVar各不相同。 | 在数据视图而不是XDM架构中创建单个量度。 如果以后需要进行更改，这样做可以在中提供更多灵活性。<br/>例如，在Customer Journey Analytics中，您在架构中只有一个事件，并在数据视图中使用创建事件。 |
+| 单个量度将会添加到Analytics数据架构中。<br/>例如，在Adobe Analytics中，您对每个事件都有一个不同的eVar。 | 在数据视图而不是XDM架构中创建单个量度。 如果以后需要进行更改，这样做可以在中提供更多灵活性。<br/>例如，在Customer Journey Analytics中，您在架构中只有一个事件，并在数据视图中使用创建事件。 |
 | 创建自定义变量需要prop和eVar。 | B2 |
 | A3 | B3 |
 

@@ -1,5 +1,5 @@
 ---
-title: 创建Customer Journey Analytics的营销渠道派生字段
+title: 创建 Customer Journey Analytics 的营销渠道派生字段
 description: 了解如何为Customer Journey Analytics创建营销渠道派生字段
 role: Admin
 solution: Customer Journey Analytics
@@ -10,30 +10,30 @@ exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
 source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
 source-wordcount: '368'
-ht-degree: 4%
+ht-degree: 19%
 
 ---
 
-# 创建Customer Journey Analytics的营销渠道派生字段 {#create-marketing-channel-derived-field}
+# 创建 Customer Journey Analytics 的营销渠道派生字段 {#create-marketing-channel-derived-field}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-marketing-channel"
->title="创建营销渠道派生的字段"
->abstract="派生字段在数据视图中创建。<br><br>使用默认营销渠道设置只需要几分钟；创建高度自定义的营销渠道设置可能需要几个小时。"
+>title="创建营销渠道派生字段"
+>abstract="派生字段在数据视图中创建。<br><br>使用默认营销渠道设置只需几分钟；创建高度自定义的营销渠道设置可能需要几个小时。"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics为您的组织动态生成的升级步骤来Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
+>只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)为您的组织动态生成的升级步骤进行操作。
 >
 >完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
 
-使用Analytics Source Connector时，营销渠道数据通过该连接器流入Customer Journey Analytics。 在传统的 Adobe Analytics 中配置营销渠道规则，其中不支持某些规则。有关详细信息，请参阅[使用营销渠道维度](/help/use-cases/aa-data/marketing-channels.md)。
+使用Analytics Source Connector时，营销渠道数据会通过该连接器流入Customer Journey Analytics。 在传统的 Adobe Analytics 中配置营销渠道规则，其中不支持某些规则。有关详细信息，请参阅[使用营销渠道维度](/help/use-cases/aa-data/marketing-channels.md)。
 
-要在使用Experience PlatformWeb SDK时在Customer Journey Analytics中使用营销渠道，您可以在数据视图中使用派生字段来为Customer Journey Analytics重新创建相同的营销渠道和处理规则。
+要在使用Experience Platform Web SDK时使用Customer Journey Analytics中的营销渠道，您可以在数据视图中使用派生字段，以重新为Customer Journey Analytics创建相同的营销渠道和处理规则。
 
 1. 在Customer Journey Analytics中，选择要添加营销渠道的数据视图。
 

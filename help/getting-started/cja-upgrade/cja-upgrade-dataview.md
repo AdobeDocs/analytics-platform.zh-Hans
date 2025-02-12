@@ -1,5 +1,5 @@
 ---
-title: 在Customer Journey Analytics中创建数据视图
+title: 在 Customer Journey Analytics 中创建数据视图
 description: 了解从Adobe Analytics升级到Customer Journey Analytics时推荐的路径
 role: Admin
 solution: Customer Journey Analytics
@@ -10,24 +10,24 @@ exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 20%
+ht-degree: 38%
 
 ---
 
-# 在Customer Journey Analytics中创建数据视图 {#upgrade-create-dataview}
+# 在 Customer Journey Analytics 中创建数据视图 {#upgrade-create-dataview}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataview"
->title="在Customer Journey Analytics中创建数据视图"
->abstract="数据视图是Customer Journey Analytics专属的容器，通过它，可决定如何解释来自连接的数据。<br><br>虽然数据视图的初始创建需要几分钟时间，但为每个维度和量度配置所需的组件设置可能需要几天时间。 调整这些设置可追溯应用，以便您的组织可以在一段时间内优化它们。"
+>title="在 Customer Journey Analytics 中创建数据视图"
+>abstract="数据视图是 Customer Journey Analytics 专属的容器，通过它，可决定如何解释来自连接的数据。<br><br>初次创建数据视图只需几分钟，而使用所需的组件设置来配置每个维度和量度可能需要几天的时间。调整这些设置可以追溯性生效，因此您的组织可以渐渐地将其完善。"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics为您的组织动态生成的升级步骤来Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
+>只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)为您的组织动态生成的升级步骤进行操作。
 >
 >完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
 
@@ -53,7 +53,7 @@ ht-degree: 20%
 
    ![“组件”选项卡](assets/dataview-components.png)
 
-1. 从&#x200B;[!UICONTROL **组件**]&#x200B;选项卡，将架构元素从左边栏拖入&#x200B;[!UICONTROL **Dimension**]&#x200B;部分或&#x200B;[!UICONTROL **量度**]&#x200B;部分。 您添加的架构元素将成为数据视图中的量度或维度。
+1. 从&#x200B;[!UICONTROL **组件**]&#x200B;选项卡，将架构元素从左边栏拖到&#x200B;[!UICONTROL **量度**]&#x200B;部分或&#x200B;[!UICONTROL **维度**]&#x200B;部分。 您添加的架构元素将成为数据视图中的量度或维度。
 
    有关向数据视图添加组件时可用的选项的详细信息，请参阅[创建或编辑数据视图](/help/data-views/create-dataview.md)中的[组件](/help/data-views/create-dataview.md#components)。
 

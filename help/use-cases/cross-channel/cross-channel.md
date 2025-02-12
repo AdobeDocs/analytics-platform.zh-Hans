@@ -8,7 +8,7 @@ role: User
 source-git-commit: 668f17531b4b8a01acffdbb0edef07092859d100
 workflow-type: tm+mt
 source-wordcount: '582'
-ht-degree: 51%
+ht-degree: 68%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 51%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-additional-datasets"
 >title="将其他数据集添加到您的连接"
->abstract="将数据添加到Adobe Experience Platform中的数据集后，即可将该数据集添加到Customer Journey Analytics中的连接。 在添加来自其他渠道的数据时，请确保这些渠道符合您的组织使用的架构。<br><br>您添加的每个数据集都需要大量工作，特别是要确保每个事件都存在唯一标识符，并确保总体数据结构符合您组织的自定义架构。 建立此工作流可能需要组织内跨多个团队进行跨多个月的协调。"
+>abstract="将数据添加到 Adobe Experience Platform 中的某个数据集后，您就可以将该数据集添加到 Customer Journey Analytics 中的连接。确保从其他渠道添加数据时，它们符合您的组织使用的架构。<br><br>添加的每个数据集都需要大量工作，特别是要确保每个事件都有唯一标识符，并确保总体数据结构符合组织的自定义架构。建立此工作流程需要组织内多个团队之间数月时间进行协调。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -32,7 +32,7 @@ ht-degree: 51%
 1. 为要引入的数据[创建架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans)。
 1. 为要引入的数据[创建数据集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html)。
 1. [将数据摄取到Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html)：
-   1. 通过Event或Analytics源连接器从网站或移动设备应用程序获取基于Edge Network的数据![event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg)。
+   1. 通过Edge Network或Analytics源连接器从网站或移动设备应用程序获取基于事件的数据![event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg)。
    2. 配置文件数据![配置文件](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg)（例如，来自CRM系统、呼叫中心应用程序、忠诚度应用程序）。
    3. 查找数据![查找](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)（例如，产品信息系统中的产品名称和类别）。
 

@@ -10,7 +10,7 @@ exl-id: 382d2b00-939a-4fff-be02-7a98d457a455
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '381'
-ht-degree: 23%
+ht-degree: 33%
 
 ---
 
@@ -20,14 +20,14 @@ ht-degree: 23%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-extension"
->title="将Platform Web SDK扩展添加到您的标记属性中"
->abstract="将Adobe Experience Platform Web SDK扩展添加到您的标记属性中。 您可以简化将Web SDK扩展添加到标记属性的过程，只需几分钟即可完成。"
+>title="将 Platform Web SDK 扩展添加到你的标记属性"
+>abstract="将 Adobe Experience Platform Web SDK 扩展添加到您的标记属性。将 Web SDK 扩展添加到您的标记属性的过程非常简单，只需几分钟即可完成。"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics为您的组织动态生成的升级步骤来Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
+>只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)为您的组织动态生成的升级步骤进行操作。
 >
 >完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
 

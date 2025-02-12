@@ -8,7 +8,7 @@ role: User
 source-git-commit: 501a9fbd7c8abd8a63348c2c8d11b88b31a0f6df
 workflow-type: tm+mt
 source-wordcount: '3562'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -144,7 +144,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulttablemetric"
 >title="默认表量度"
->abstract="选择用于自由格式表的默认量度。 如果选定的数据视图不包含选定的默认度量，则表将自动切换到另一个主度量。"
+>abstract="选择用于自由格式表的默认量度。如果选定的数据视图不包含所选的默认量度，表格将自动切换到另一个主要量度。"
 
 
 <!-- markdownlint-enable MD034 -->
@@ -186,12 +186,12 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultflowcontainer"
 >title="默认表量度"
->abstract="选择用于流量可视化的默认容器。 如果选定的数据视图不包含选定的默认容器，则流量可视化将自动切换到另一个主容器。"
+>abstract="选择用于 Flow 可视化的默认容器。如果选定的数据视图不包含选定的默认容器，则 Flow 可视化将会自动切换到另一个主容器。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultfalloutcontainer"
 >title="默认表量度"
->abstract="选择用于流失可视化的默认容器。 如果选定的数据视图不包含选定的默认容器，则流失可视化图表将自动切换到另一个主容器。"
+>abstract="选择用于 Fallout 可视化的默认容器。如果选定的数据视图不包含选定的默认容器，则 Fallout 可视化将会自动切换到另一个主容器。"
 
 您可以更新在 Analysis Workspace 中创建的所有新项目的可视化偏好设置。有关如何访问这些偏好设置的信息，请参阅[更新偏好设置](#update-preferences)。
 

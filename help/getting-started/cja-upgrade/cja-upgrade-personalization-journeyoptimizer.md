@@ -1,5 +1,5 @@
 ---
-title: 使用个性化对象以用于Adobe Journey Optimizer
+title: 使用个性化对象与 Adobe Journey Optimizer 结合使用
 description: 了解如何将个性化对象用于Adobe Journey Optimizer
 role: Admin
 solution: Customer Journey Analytics
@@ -9,18 +9,18 @@ hidefromtoc: true
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 0%
+ht-degree: 16%
 
 ---
 
-# 使用个性化对象以用于Adobe Journey Optimizer {#upgrade-personalization}
+# 使用个性化对象与 Adobe Journey Optimizer 结合使用 {#upgrade-personalization}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-personalization"
->title="对Adobe Journey Optimizer使用个性化对象"
->abstract="在实施中使用个性化对象，以在Adobe Journey Optimizer中使用。"
+>title="为 Adobe Journey Optimizer 使用个性化对象"
+>abstract="在您的实施中使用个性化对象以便在 Adobe Journey Optimizer 中使用。"
 
 <!-- markdownlint-enable MD034 -->
 

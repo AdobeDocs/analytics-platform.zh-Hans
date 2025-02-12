@@ -1,5 +1,5 @@
 ---
-title: 为Analytics源连接器创建自定义架构
+title: 为 Analytics 源连接器创建一个自定义架构
 description: 了解如何为Analytics源连接器创建自定义架构
 role: Admin
 solution: Customer Journey Analytics
@@ -10,34 +10,34 @@ exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
 source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
 workflow-type: tm+mt
 source-wordcount: '627'
-ht-degree: 3%
+ht-degree: 20%
 
 ---
 
-# 为Analytics源连接器创建自定义架构 {#create-custom-schema}
+# 为 Analytics 源连接器创建一个自定义架构 {#create-custom-schema}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-create-schema"
->title="为Analytics Source Connector创建架构"
->abstract="此架构是Adobe Analytics ExperienceEvent字段组与组成您组织的自定义架构的所有字段组的组合。 它允许您将Analytics Source Connector使用的字段映射到贵组织的架构，并且仅用于历史数据。<br><br>虽然从技术角度来讲，创建此架构可能需要几小时才能完成，如果您确切知道哪些字段组构成了贵组织的自定义架构，则速度可能会更快。"
+>title="为 Analytics 源连接器创建一个架构"
+>abstract="此架构是 Adobe Analytics ExperienceEvent 字段组与构成您组织的自定义架构的所有字段组的组合。通过它，您可以将 Analytics 源连接器使用的字段映射到您组织的架构，并且此架构仅用于历史数据。<br><br>虽然具有技术性质，但创建此架构可以在几个小时内完成，如果您确切知道哪些字段组构成了组织的自定义架构，速度可能会更快。"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics为您的组织动态生成的升级步骤来Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
+>只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)为您的组织动态生成的升级步骤进行操作。
 >
 >完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
 
-## 了解Analytics Source Connector可怎样将历史数据引入Customer Journey Analytics
+## 了解Analytics Source Connector如何将历史数据引入Customer Journey Analytics
 
-您可以使用Analytics Source Connector将Adobe Analytics报表包数据引入Adobe Experience Platform。 然后，此数据可用作Customer Journey Analytics中的历史数据。
+您可以使用Analytics Source Connector将Adobe Analytics报表包数据引入Adobe Experience Platform。 然后，此数据可以用作Customer Journey Analytics中的历史数据。
 
-此过程假定您希望[创建一个自定义架构以用于Customer Journey Analytics的Web SDK实施](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)，因为您希望一个简化的架构以针对您的组织以及您使用的特定Platform应用程序的需求进行定制。
+此过程假定您希望[创建一个自定义架构以用于您的Customer Journey Analytics Web SDK实施](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)，因为您需要一个针对贵组织和您使用的特定Platform应用程序的需求而定制的简化架构。
 
-要使用Analytics Source Connector将历史数据纳入Customer Journey Analytics，您需要：
+要使用Analytics Source Connector将历史数据引入Customer Journey Analytics，您需要：
 
 1. 为Analytics源连接器创建自定义架构，如下所述。
 
@@ -49,9 +49,9 @@ ht-degree: 3%
 
 1. [将 Analytics 源连接器数据集添加到连接](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
 
-## 为Analytics源连接器创建自定义架构
+## 为 Analytics 源连接器创建一个自定义架构
 
-您应该已经[为Experience PlatformWeb SDK实施创建了新的自定义架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)以用于Customer Journey Analytics。 此架构应包含您计划收集其数据的字段的任何字段组。
+您应该已经[为Experience Platform Web SDK实施创建了新的自定义架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)以便与Customer Journey Analytics一起使用。 此架构应包含您计划收集其数据的字段的任何字段组。
 
 现在，您需要使用Web SDK架构中的这些相同的字段组，并将其添加到可以与Analytics Source Connector一起使用的新架构中。
 
@@ -63,7 +63,7 @@ Analytics Source Connector的此架构需要包含：
 
 要创建与Analytics Source Connector一起使用的自定义架构，请执行以下操作：
 
-1. 在Adobe Experience Platform中，开始创建新的自定义架构，如[创建自定义架构以用于Customer Journey AnalyticsWeb SDK实施](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)中所述。
+1. 在Adobe Experience Platform中，开始创建新的自定义架构，如[创建自定义架构以用于Customer Journey Analytics Web SDK实施](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)中所述。
 
 1. 添加您为Web SDK实施创建的架构中包含的所有字段组（包括任何自定义字段组）。
 

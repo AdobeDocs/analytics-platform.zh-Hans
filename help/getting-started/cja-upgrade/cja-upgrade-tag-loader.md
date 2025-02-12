@@ -10,7 +10,7 @@ exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 28%
+ht-degree: 49%
 
 ---
 
@@ -20,14 +20,14 @@ ht-degree: 28%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-loader"
->title="在网站上实施加载器标记"
->abstract="与网站开发团队合作，在网站的每个页面上安装加载器标记。<br><br>此任务的完成时间在很大程度上取决于您与一起部署代码的工程团队的响应时间。 某些组织具有高度自适应工程团队，可在几天内完成此步骤，而工程团队如果有大量积压任务，则可能需要一个月或更长时间。"
+>title="在您的网站上实施加载器标记"
+>abstract="与您的网站开发团队一起在您网站的每个页面上安装加载器标记。<br><br>此任务的完成时间在很大程度上取决于与您合作部署代码的工程团队的响应时间。一些具有高度适应性的工程团队的组织可以在几天内完成这一步骤，而拥有大量积压任务的工程团队可能需要一个月甚至更长时间。"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics为您的组织动态生成的升级步骤来Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
+>只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)为您的组织动态生成的升级步骤进行操作。
 >
 >完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
 

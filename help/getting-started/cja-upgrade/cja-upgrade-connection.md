@@ -1,5 +1,5 @@
 ---
-title: 创建用于Customer Journey Analytics的架构
+title: 为Customer Journey Analytics创建架构
 description: 了解从Adobe Analytics升级到Customer Journey Analytics时推荐的路径
 role: Admin
 solution: Customer Journey Analytics
@@ -10,30 +10,30 @@ exl-id: 22d3e7b8-4a4d-48a8-a98d-5172a9876286
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '1708'
-ht-degree: 87%
+ht-degree: 89%
 
 ---
 
-# 创建并配置连接以用于Customer Journey Analytics {#upgrade-create-connection}
+# 创建并配置与 Customer Journey Analytics 使用的连接 {#upgrade-create-connection}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-connection"
 >title="在 Customer Journey Analytics 中创建连接"
->abstract="通过连接，您可以将数据从Adobe Experience Platform转换为为Customer Journey Analytics报表优化的格式。 在Customer Journey Analytics中创建连接很简单，只需几分钟即可完成。"
+>abstract="通过连接，您可以将 Adobe Experience Platform 中的数据转换为针对 Customer Journey Analytics 报告优化的格式。在 Customer Journey Analytics 中创建连接非常简单，只需几分钟即可完成。"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics为您的组织动态生成的升级步骤来Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
+>只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)为您的组织动态生成的升级步骤进行操作。
 >
 >完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/connections/create-connection.md -->
 
-以下信息介绍如何创建和配置连接，以及如何将Experience Platform数据集添加到您创建的连接。 有关创建和配置连接的其他信息，请参阅[创建或编辑连接](/help/connections/create-connection.md)。
+以下信息介绍了如何创建和配置连接，以及如何将Experience Platform数据集添加到您创建的连接。 有关创建和配置连接的其他信息，请参阅[创建或编辑连接](/help/connections/create-connection.md)。
 
 ## 创建和配置连接 {#create-connection}
 

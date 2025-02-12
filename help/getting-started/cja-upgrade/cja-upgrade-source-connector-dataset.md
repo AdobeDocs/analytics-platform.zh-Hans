@@ -10,7 +10,7 @@ exl-id: 424485a3-a076-4656-83b6-733f16cc2326
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '960'
-ht-degree: 25%
+ht-degree: 33%
 
 ---
 
@@ -20,24 +20,24 @@ ht-degree: 25%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-dataset"
->title="将Analytics源连接器数据集添加到您的连接"
->abstract="现在，Analytics报表包中的历史数据位于Adobe Experience Platform中，请将该数据集添加到您在最初配置Customer Journey Analytics时创建的现有连接中。 完成此步骤后，Customer Journey Analytics中的历史数据将可用。<br><br>在Customer Journey Analytics中将数据集添加到连接很简单，只需几分钟即可完成。"
+>title="将 Analytics 源连接器数据集添加到您的连接"
+>abstract="现在，Analytics 报告包中的历史数据位于 Adobe Experience Platform 中，请将该数据集添加到您最初配置 Customer Journey Analytics 时创建的现有连接中。此步骤完成后，Customer Journey Analytics 中的历史数据即可使用。<br><br>在 Customer Journey Analytics 中将数据集添加到连接中非常简单，只需几分钟即可完成。"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics为您的组织动态生成的升级步骤来Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
+>只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)为您的组织动态生成的升级步骤进行操作。
 >
 >完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
 
-## 了解Analytics Source Connector可怎样将历史数据引入Customer Journey Analytics
+## 了解Analytics Source Connector如何将历史数据引入Customer Journey Analytics
 
-您可以使用Analytics Source Connector将Adobe Analytics报表包数据引入Adobe Experience Platform。 然后，此数据可用作Customer Journey Analytics中的历史数据。
+您可以使用Analytics Source Connector将Adobe Analytics报表包数据引入Adobe Experience Platform。 然后，此数据可以用作Customer Journey Analytics中的历史数据。
 
-此过程假设在升级到Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)时您要[创建XDM架构，因为您需要一个根据您的组织需求以及您使用的特定Platform应用程序量身定制的简化架构。
+此过程假定您希望在升级到Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)时[创建XDM架构，因为您需要一个根据您的组织和您使用的特定Platform应用程序的需求而定制的简化架构。
 
-要使用Analytics Source Connector将历史数据纳入Customer Journey Analytics，您需要：
+要使用Analytics Source Connector将历史数据引入Customer Journey Analytics，您需要：
 
 1. [为 Analytics 源连接器创建 XDM 架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
@@ -53,7 +53,7 @@ ht-degree: 25%
 
 在您[为历史数据创建Analytics Source Connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)之后，将自动为Analytics数据创建数据集。
 
-您需要将此自动创建的数据集添加到您为Web SDK实施创建的连接中。 这样做会将Analytics数据引入与您的Web SDK数据相同的Customer Journey Analytics数据视图中。
+您需要将此自动创建的数据集添加到您为Web SDK实施创建的连接中。 这样做会将Analytics数据引入到Customer Journey Analytics中与Web SDK数据相同的数据视图中。
 
 要将自动创建的数据集添加到您为Web SDK实施创建的相同连接，请执行以下操作：
 
@@ -96,7 +96,7 @@ ht-degree: 25%
 
 1. 在&#x200B;**[!UICONTROL 数据集回填]**&#x200B;部分中，选择&#x200B;**[!UICONTROL 请求回填]**。
 
-1. 通过输入开始和结束日期或选择日历图标![日历](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)，定义希望连接回填包含在Customer Journey Analytics中的期间。
+1. 通过输入开始和结束日期或选择日历图标![日历](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)，定义您希望Customer Journey Analytics中的连接回填包括的期间。
 
    在指定请求回填的日期时务必明确。 根据多种因素，您可能需要执行以下任一操作：
 
@@ -114,7 +114,7 @@ ht-degree: 25%
 
 1. 选择&#x200B;**[!UICONTROL 添加数据集]**，然后选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存连接。
 
-1. （视情况而定）如果您使用的是查找数据集，则必须创建查找数据集并将其添加到连接中。 有关详细信息，请参阅[创建查找数据集以对Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)中的数据分类。
+1. （视情况而定）如果您使用的是查找数据集，则必须创建查找数据集并将其添加到连接中。 有关详细信息，请参阅[创建查找数据集以在Customer Journey Analytics中对数据进行分类](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)。
 
    只有在配置Web SDK实施时尚未这样做的情况下，才需要执行此操作。
 

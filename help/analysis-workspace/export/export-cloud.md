@@ -1,29 +1,29 @@
 ---
 description: 了解如何将Analysis Workspace项目导出到云位置。
 keywords: Analysis Workspace
-title: 将Customer Journey Analytics报表导出到云端
+title: 将 Customer Journey Analytics 报告导出至云
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
 source-git-commit: 668f17531b4b8a01acffdbb0edef07092859d100
 workflow-type: tm+mt
 source-wordcount: '2281'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
-# 将Customer Journey Analytics报表导出到云端 {#full-table-export}
+# 将 Customer Journey Analytics 报告导出至云 {#full-table-export}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-full-table-export"
->title="创建与Data Warehouse类似的完整表导出"
->abstract="在Analysis Workspace中看到数据后，即可使用完整的表导出。 您可以根据需要创建或计划完整表导出。<br><br>如果您已经知道要包括在导出中的数据，则创建完整表导出只需几分钟即可完成。"
+>title="创建类似于数据仓库的全表导出"
+>abstract="只要您在分析工作区中看到数据，就可以全表导出。您可以根据需要创建或计划全表导出。<br><br>如果您已经知道导出中要包含哪些数据，那么创建全表导出只需几分钟即可完成。"
 
 <!-- markdownlint-enable MD034 -->
 
-您可以从Customer Journey Analytics中导出Workspace的完整表，并将导出发送到指定的云目标。
+您可以从Customer Journey Analytics导出Workspace的完整表，并将导出发送到指定的云目标。
 
 也可以使用其他导出Customer Journey Analytics报表的方法，如[导出概述](/help/analysis-workspace/export/export-project-overview.md)中所述。
 
@@ -47,7 +47,7 @@ ht-degree: 3%
 
 1. [从Workspace导出整个表](#export-full-tables-from-analysis-workspace)
 
-1. [访问云中的数据](#view-exported-data-and-manifest-file)和[管理Adobe中的导出](/help/components/exports/manage-exports.md)
+1. [访问云中的数据](#view-exported-data-and-manifest-file)和[在Adobe中管理导出](/help/components/exports/manage-exports.md)
 
 ![步骤1至4中描述的完整表导出过程。](assets/export-full-table-process.png)
 
@@ -82,7 +82,7 @@ ht-degree: 3%
    | 开始日期 | 计划导出应开始的日期和时间。 <p>仅当选择计划的导出频率时，此选项才可用。</p> |
    | 结束日期 | 计划导出过期的日期和时间。 计划导出在设置的日期和时间后不再运行。 <p>仅当选择计划的导出频率时，此选项才可用。</p> |
    | 文件格式 | 选择导出的数据应采用.csv还是.json格式。 |
-   | 帐户 | 选择要将数据发送到的云导出帐户。 <p>或者，如果您尚未配置要使用的云帐户，则可以配置新帐户：<ol><li>选择&#x200B;[!UICONTROL **添加帐户**]，然后指定以下信息：<ul><li>[!UICONTROL **位置帐户名称**]：指定位置帐户的名称。 创建位置时将显示此名称 </li><li>[!UICONTROL **位置帐户说明**]：提供帐户的简短说明，以帮助将其与相同帐户类型的其他帐户区分开来。</li><li>[!UICONTROL **帐户类型**]：选择您要导出到的云帐户类型。 可用的帐户类型包括Amazon S3 Role ARN、Google Cloud Platform、Azure SAS、Azure RBAC、Snowflake和AEP Data Landing Zone。</li></ul><li>若要完成帐户配置，请使用下面的链接继续操作，该链接与您选择的&#x200B;[!UICONTROL **帐户类型**]&#x200B;相对应：<ul><li>[AEP数据登陆区](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)</li><li>[Amazon S3角色ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google云平台](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-accounts.md#snowflake)</li></ul></ol> |
+   | 帐户 | 选择要将数据发送到的云导出帐户。 <p>或者，如果您尚未配置要使用的云帐户，则可以配置新帐户：<ol><li>选择&#x200B;[!UICONTROL **添加帐户**]，然后指定以下信息：<ul><li>[!UICONTROL **位置帐户名称**]：指定位置帐户的名称。 创建位置时将显示此名称 </li><li>[!UICONTROL **位置帐户说明**]：提供帐户的简短说明，以帮助将其与相同帐户类型的其他帐户区分开来。</li><li>[!UICONTROL **帐户类型**]：选择您要导出到的云帐户类型。 可用的帐户类型包括Amazon S3角色ARN、Google Cloud Platform、Azure SAS、Azure RBAC、Snowflake和AEP Data Landing Zone。</li></ul><li>若要完成帐户配置，请使用下面的链接继续操作，该链接与您选择的&#x200B;[!UICONTROL **帐户类型**]&#x200B;相对应：<ul><li>[AEP数据登陆区](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)</li><li>[Amazon S3角色ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google云平台](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-accounts.md#snowflake)</li></ul></ol> |
    | 位置名称 | 选择您希望发送导出数据的帐户位置。<p>或者，如果您尚未在选定的帐户上配置要使用的位置，则可以配置一个新位置：<ol><li>选择&#x200B;[!UICONTROL **添加位置**]，然后指定以下信息： <ul><li>[!UICONTROL **名称**]：位置的名称。</li><li>[!UICONTROL **描述**]：提供位置的简短描述，以帮助将该位置与帐户上的其他位置区分开来。</li><li>[!UICONTROL **位置帐户**]：选择要创建位置的帐户。</li></ul><li>要完成位置配置，请使用下面的链接继续操作，该链接与您在&#x200B;[!UICONTROL **位置帐户**]&#x200B;字段中选择的帐户类型相对应：<ul><li>[AEP数据登陆区](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone)。</li><li>[Amazon S3角色ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google云平台](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
 
    {style="table-layout:auto"}
@@ -125,7 +125,7 @@ ht-degree: 3%
 
 ## 导出到云的优势
 
-将Customer Journey Analytics数据导出到云允许您：
+通过将Customer Journey Analytics数据导出到云，您可以：
 
 * 导出到共享位置，如Adobe Experience Platform Data Landing Zone、Google Cloud Platform、Microsoft Azure、Amazon S3或Snowflake。
 
@@ -155,7 +155,7 @@ ht-degree: 3%
 
 * **环境：**&#x200B;确保Customer Journey Analytics使用的[IP地址](/help/technotes/ip-addresses.md)和[域](/help/technotes/domains.md)允许通过其组织的防火墙。
 
-* **权限：**&#x200B;在Adobe Admin Console中，必须为用户分配一个产品配置文件，该配置文件具有分配给用户的&#x200B;[!UICONTROL **完全表导出**]&#x200B;权限，才能导出完全表。 有关为Admin Console中的产品配置文件分配权限的信息，请参阅Admin Console](/help/technotes/access-control.md)中的[Customer Journey Analytics权限。
+* **权限：**&#x200B;在Adobe Admin Console中，必须为用户分配一个产品配置文件，该配置文件具有分配给用户的&#x200B;[!UICONTROL **完全表导出**]&#x200B;权限，才能导出完全表。 有关在Admin Console中为产品配置文件分配权限的信息，请参阅Admin Console中的[Customer Journey Analytics权限](/help/technotes/access-control.md)。
 
   >[!NOTE]
   >
@@ -174,7 +174,7 @@ ht-degree: 3%
 * 动态维度
 
   有关详细信息，请参阅自由格式表中的[动态与静态维度项](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)。
-* 第一个划分中的Dimension经过转换，作为辅助维度添加到导出表的行中；任何其他划分都不会包含在该表中
+* 第一个划分中的维度会被转换并添加为导出表行中的次要维度；任何其他划分都不会包含在表中
 * 大多数数据集不支持排序；对于小型数据集，可能会对数据排序
 
 ### 不支持的组件
@@ -216,9 +216,9 @@ ht-degree: 3%
   >
   >仅当将数据导出到云中时，才支持多维报表，如本文所述。
 
-## 完整表格导出(在Customer Journey Analytics中)与Data Warehouse(在Adobe Analytics中)的比较
+## 完整表导出(在Customer Journey Analytics中)与Data Warehouse(在Adobe Analytics中)的比较
 
-如果您之前使用Data Warehouse导出Adobe Analytics数据，则下表可以帮助您了解在Customer Journey Analytics中导出完整表与在Adobe Analytics中导出带有Data Warehouse的数据之间的区别。
+如果您之前使用Data Warehouse导出Adobe Analytics数据，则下表可以帮助您了解在Customer Journey Analytics中导出完整表与在Adobe Analytics中使用Data Warehouse导出数据之间的区别。
 
 
 | 功能 | Customer Journey Analytics中的完整表导出 | Adobe Analytics中的Data Warehouse |

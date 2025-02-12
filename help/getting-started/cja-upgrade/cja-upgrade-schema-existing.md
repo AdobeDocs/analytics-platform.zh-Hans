@@ -1,5 +1,5 @@
 ---
-title: 选择要Customer Journey Analytics的架构
+title: 选择 Customer Journey Analytics 的架构
 description: 了解在为Customer Journey Analytics选择架构时可用的选项以及各个选项的优缺点
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
 source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
 workflow-type: tm+mt
 source-wordcount: '493'
-ht-degree: 0%
+ht-degree: 24%
 
 ---
 
-# 选择要Customer Journey Analytics的架构 {#choose-schema}
+# 选择 Customer Journey Analytics 的架构 {#choose-schema}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-tailored"
->title="使用自定义架构"
->abstract="（推荐）通过自定义架构，您的组织可以仅跟踪您需要的内容，并避免与混乱和不需要的字段相关的开销。 此选项包括由Web SDK添加的字段组和自定义到您组织的字段组。"
+>title="使用一个自定义架构"
+>abstract="（推荐）自定义架构可以让您的组织只跟踪您需要的内容，避免那些与混乱和不需要的领域相关的开支。此选项包括 Web SDK 添加的字段组和您的组织自定义的字段组。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -30,13 +30,13 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-default"
 >title="使用默认架构"
->abstract="（不推荐）Adobe Analytics架构包含超过一千个字段，这可能会导致架构混乱而复杂。 您的组织将被迫继续遵循prop和eVar的概念，这是一个未在Customer Journey Analytics中使用的旧概念。 与其他Adobe Experience Platform服务集成比较困难。"
+>abstract="（不推荐）Adobe Analytics 架构包含一千多个字段，这可能会导致架构混乱、复杂。您的组织将不得不继续遵守 props 和 eVars 的概念，这个旧版概念在 Customer Journey Analytics 不使用。与其他 Adobe Experience Platform 服务的集成更加困难。"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 >
->此文档应该用作[Adobe AnalyticsCustomer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)的一部分。
+>此文档应该用作[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)的一部分。
 
 <!-- this page exists as the "Learn more" link in the info icons for the options "I am comfortable using my Adobe Analytics schema as a basis" and "I want to use a schema tailored to my organization" -->
 
@@ -54,11 +54,11 @@ Adobe建议在升级到Customer Journey Analytics时创建自定义架构。
 
 ## 使用您现有的Adobe Analytics架构
 
-只有使用Adobe Analytics Web SDK配置了Adobe Analytics实施时，用于在Customer Journey Analytics中使用现有Adobe Experience Platform架构的选项才可用。<!-- correct? Or can you do this with an AppMeasurement implementation?-->
+仅当使用Adobe Analytics Web SDK配置了Customer Journey Analytics实施时，将现有Adobe Experience Platform架构与Adobe Analytics结合使用的选项才可用。<!-- correct? Or can you do this with an AppMeasurement implementation?-->
 
 | 优势 | 缺点 |
 |----------|---------|
-| <p>使用Adobe Analytics架构的优势包括：</p><ul><li>易于升级<p>如果您已经使用Adobe Experience Platform Web SDK将数据发送到Adobe Analytics，则可以将其他服务添加到您的数据流以将数据发送到Adobe Experience Platform(然后可以在您的Customer Journey Analytics配置中使用)。</p></li></ul> | <p>使用Adobe Analytics架构的缺点包括：</p><ul><li>虽然使用Adobe Analytics架构不会限制您如何将其与其他Platform应用程序一起使用，但它的确会导致架构比不使用该架构时复杂得多。 这是因为Adobe Analytics架构包含许多特定于Adobe Analytics的对象，您的组织不太可能使用这些对象。<p>当需要对架构进行更改时，您必须筛选成千上万个未使用的字段以查找需要更新的字段。</p></li></ul> |
+| <p>使用Adobe Analytics架构的优势包括：</p><ul><li>易于升级<p>如果您已经使用Adobe Experience Platform Web SDK将数据发送到Adobe Analytics，则可以将其他服务添加到您的数据流中以将数据发送到Adobe Experience Platform(这随后可以在您的Customer Journey Analytics配置中使用)。</p></li></ul> | <p>使用Adobe Analytics架构的缺点包括：</p><ul><li>虽然使用Adobe Analytics架构不会限制您如何将其与其他Platform应用程序一起使用，但它的确会导致架构比不使用该架构时复杂得多。 这是因为Adobe Analytics架构包含许多特定于Adobe Analytics的对象，您的组织不太可能使用这些对象。<p>当需要对架构进行更改时，您必须筛选成千上万个未使用的字段以查找需要更新的字段。</p></li></ul> |
 
 
 
