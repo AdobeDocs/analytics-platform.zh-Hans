@@ -6,7 +6,7 @@ exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
 source-git-commit: 501a9fbd7c8abd8a63348c2c8d11b88b31a0f6df
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3562'
 ht-degree: 100%
 

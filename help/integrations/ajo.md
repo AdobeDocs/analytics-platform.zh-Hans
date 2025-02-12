@@ -5,9 +5,9 @@ exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
 source-git-commit: 9149a072dc8af3fac0d5272fe84baabca7fb6058
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3514'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -170,30 +170,30 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 | 登陆页面来源（AJO） | 登陆页面的来源。 | AJO 电子邮件跟踪体验事件数据集 | 派生字段 | 组件类型：维度（派生字段） |
 | 链接 URL（AJO） | 用户点击的 URL。 | AJO 电子邮件跟踪体验事件数据集 | `_experience.customerJourneyManagement.`<br/>`messageInteraction.urlID` | 组件类型：维度 |
 | 消息排除原因（AJO） | 排除原因 | AJO 消息反馈事件数据集 | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageExclusion.reason` | 组件类型：维度 |
-| 消息递送失败类别（AJO） | 故障类别 | AJO 消息反馈事件数据集 | ` _experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.category` | 组件类型：维度 |
-| 消息递送失败原因（AJO） | 失败原因 | AJO 消息反馈事件数据集 | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.reason` | 组件类型：维度 |
-| 消息递送失败类型（AJO） | 失败类型 | AJO 消息反馈事件数据集 | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.type` | 组件类型：维度 |
-| 消息失败状态(AJO) | 失败状态 | AJO 消息反馈事件数据集 | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.status` | 组件类型：维度 |
-| 消息 ID（AJO） | 该数据应关联到的消息 id。 | AJO 实体数据集 | `_experience.customerJourneyManagement.`<br/>`entities.channelDetails.messageID` | 组件类型：维度 |
+| 消息失败类别（AJO） | 失败类别 | AJO 消息反馈事件数据集 | ` _experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.category` | 组件类型：维度 |
+| 消息失败原因（AJO） | 失败原因 | AJO 消息反馈事件数据集 | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.reason` | 组件类型：维度 |
+| 消息失败类型（AJO） | 失败类型 | AJO 消息反馈事件数据集 | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.type` | 组件类型：维度 |
+| 消息失败状态（AJO） | 失败状态 | AJO 消息反馈事件数据集 | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.status` | 组件类型：维度 |
+| 消息 ID（AJO） | 该数据应关联到的消息 ID。 | AJO 实体数据集 | `_experience.customerJourneyManagement.`<br/>`entities.channelDetails.messageID` | 组件类型：维度 |
 | 消息重试（AJO） | 重试次数 | AJO 消息反馈事件数据集 | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.retryCount` | 组件类型：维度 |
-| 节点ID (AJO) | 历程节点的节点 ID。 | AJO 实体数据集 | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNodeID` | 组件类型：维度 |
+| 节点 ID（AJO） | 历程节点的节点 ID。 | AJO 实体数据集 | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNodeID` | 组件类型：维度 |
 | 节点名称（AJO） | 历程节点的节点名称。 | AJO 实体数据集 | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNodeName` | 组件类型：维度 |
 | 节点类型（AJO） | 历程节点的节点类型。 | AJO 实体数据集 | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNodeID` | 组件类型：维度 |
-| 操作系统(AJO) | 操作系统的名称。 | AJO 推送跟踪体验事件数据集 | `environment.operatingSystem` | 组件类型：维度 |
-| 操作系统版本(AJO) | 操作系统的版本。 | AJO 推送跟踪体验事件数据集 | environment.operatingSystemVersion | 组件类型：维度 |
-| 推送平台（AJO） | 推送提供程序服务，例如apns或fcm。 | AJO电子邮件跟踪体验事件数据集、AJO消息反馈事件数据集、AJO推送跟踪体验事件数据集 | `_experience.customerJourneyManagement.`<br/>`pushChannelContext.platform` | 组件类型：维度 |
-| 推送标题 (AJO) | 推送标题，非个性化。 | AJO实体数据集、AJO消息反馈事件数据集、AJO推送跟踪体验事件数据集 | `_experience.customerJourneyManagement.`<br/>`entities.channelDetails.push.title | Component type: Dimension` |
-| 已拒绝同意策略(AJO) | 相应的拒绝同意策略的名称。 | 历程步骤事件 | `_experience.journeyOrchestration.`<br/>`stepEvents.consent.rejectedPolicies.name` | 组件类型：维度 |
-| SMS 入站消息（AJO） | SMS 入站回复，例如停止、开始、订阅等。 | AJO电子邮件跟踪体验事件数据集、AJO消息反馈事件数据集、AJO推送跟踪体验事件数据集 | `_experience.customerJourneyManagement.`<br/>`smsChannelContext.inboundMessage` | 组件类型：维度 |
-| 短信消息类型(AJO) | SMS 提供商，例如 inbound、inboundReply 或 send。 | AJO电子邮件跟踪体验事件数据集、AJO消息反馈事件数据集、AJO推送跟踪体验事件数据集 | ` _experience.customerJourneyManagement.`<br/>`smsChannelContext.messageType` | 组件类型：维度 |
-| SMS 提供者（AJO） | SMS 提供商，例如 sinch 或 twilio。 | AJO电子邮件跟踪体验事件数据集、AJO消息反馈事件数据集、AJO推送跟踪体验事件数据集 | `_experience.customerJourneyManagement.`<br/>`smsChannelContext.messageType` | 组件类型：维度 |
-| 选择类型 (AJO) | 显示消息的渠道表面。 | 历程步骤事件、AJO电子邮件跟踪体验事件数据集、AJO消息反馈事件数据集、AJO推送跟踪体验事件数据集 | `_experience.decisioning.propositions.`<br/>`items.itemSelection.`<br/>`selectionDetail.selectionType` | 组件类型：维度 |
+| 操作系统（AJO） | 操作系统的名称。 | AJO 推送跟踪体验事件数据集 | `environment.operatingSystem` | 组件类型：维度 |
+| 操作系统版本（AJO） | 操作系统的版本。 | AJO 推送跟踪体验事件数据集 | environment.operatingSystemVersion | 组件类型：维度 |
+| 推送平台（AJO） | 推送提供者服务，例如 apns 或 fcm。 | AJO 电子邮件跟踪体验事件数据集、AJO 消息反馈事件数据集、AJO 推送跟踪体验事件数据集 | `_experience.customerJourneyManagement.`<br/>`pushChannelContext.platform` | 组件类型：维度 |
+| 推送标题 (AJO) | 推送标题，非个性化。 | AJO 实体数据集、AJO 消息反馈事件数据集、AJO 推送追踪体验事件数据集 | `_experience.customerJourneyManagement.`<br/>`entities.channelDetails.push.title | Component type: Dimension` |
+| 拒绝的同意策略（AJO） | 相应的拒绝同意策略的名称。 | 历程步骤事件 | `_experience.journeyOrchestration.`<br/>`stepEvents.consent.rejectedPolicies.name` | 组件类型：维度 |
+| SMS 入站消息（AJO） | SMS 入站回复，例如停止、开始、订阅等。 | AJO 电子邮件跟踪体验事件数据集、AJO 消息反馈事件数据集、AJO 推送跟踪体验事件数据集 | `_experience.customerJourneyManagement.`<br/>`smsChannelContext.inboundMessage` | 组件类型：维度 |
+| SMS 消息类型（AJO） | SMS 提供商，例如 inbound、inboundReply 或 send。 | AJO 电子邮件跟踪体验事件数据集、AJO 消息反馈事件数据集、AJO 推送跟踪体验事件数据集 | ` _experience.customerJourneyManagement.`<br/>`smsChannelContext.messageType` | 组件类型：维度 |
+| SMS 提供商（AJO） | SMS 提供商，例如 sinch 或 twilio。 | AJO 电子邮件跟踪体验事件数据集、AJO 消息反馈事件数据集、AJO 推送跟踪体验事件数据集 | `_experience.customerJourneyManagement.`<br/>`smsChannelContext.messageType` | 组件类型：维度 |
+| 选择类型 (AJO) | 显示消息的渠道表面。 | 历程步骤事件、AJO 邮件跟踪体验事件数据集、AJO 消息反馈事件数据集、AJO 推送跟踪体验事件数据集 | `_experience.decisioning.propositions.`<br/>`items.itemSelection.`<br/>`selectionDetail.selectionType` | 组件类型：维度 |
 | 订阅列表 ID（AJO） | 订阅列表的唯一标识符。 | AJO 电子邮件跟踪体验事件数据集 | `_experience.customerJourneyManagement.`<br/>`messageInteraction.subscription.`<br/>` subscriptionListID` | 组件类型：维度 |
-| 表面 (AJO) |  | 历程步骤事件、AJO电子邮件跟踪体验事件数据集、AJO消息反馈事件数据集、AJO推送跟踪体验事件数据集 | `_experience.decisioning.`<br/>`propositions.scope` | 组件类型：维度 |
-| 处理 Id（AJO） | 为实验选择处理的 ID。 | AJO 实体数据集 | `_experience.customerJourneyManagement.`<br/>`entities.experiment.treatmentID` | 组件类型：维度 |
+| 表面 (AJO) |  | 历程步骤事件、AJO 邮件跟踪体验事件数据集、AJO 消息反馈事件数据集、AJO 推送跟踪体验事件数据集 | `_experience.decisioning.`<br/>`propositions.scope` | 组件类型：维度 |
+| 处理 ID（AJO） | 为试验选择的处理的 ID。 | AJO 实体数据集 | `_experience.customerJourneyManagement.`<br/>`entities.experiment.treatmentID` | 组件类型：维度 |
 | 处理名称（AJO） | 为试验选择的处理的名称。 | AJO 实体数据集 | `_experience.customerJourneyManagement.`<br/>`entities.experiment.treatmentName` | 组件类型：维度 |
 | URL ID（AJO） | 用户点击的 URL 的唯一标识符。 | AJO 电子邮件跟踪体验事件数据集 | `_experience.customerJourneyManagement.`<br/>`messageInteraction.urlID` | 组件类型：维度 |
-| URL标签(AJO) | URL的人类易记标签。 | AJO 电子邮件跟踪体验事件数据集 | `_experience.customerJourneyManagement.`<br/>`messageInteraction.label` | 组件类型：维度 |
+| URL 标签（AJO） | 人性化的 URL 标签。 | AJO 电子邮件跟踪体验事件数据集 | `_experience.customerJourneyManagement.`<br/>`messageInteraction.label` | 组件类型：维度 |
 
 {style="table-layout:auto"}
 
@@ -238,7 +238,7 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 | 订阅列表删除（AJO） | 从订阅列表中删除的总数量。 | AJO 电子邮件跟踪体验事件数据集 | 派生字段 | 组件类型：量度（派生字段） |
 | 已定向（AJO） | 这是计算定向到个人的建议次数。这是被视为显示给某人的建议次数。 | AJO 推送跟踪体验事件数据集、历程步骤事件、AJO 消息反馈事件数据集、AJO 邮件跟踪体验事件数据集 | 派生字段 | 组件类型：量度（派生字段） |
 | 已触发 (AJO) | Adobe SDK 选择显示提案。其他因素可能会阻止其实际显示。 | AJO 推送跟踪体验事件数据集、历程步骤事件、AJO 消息反馈事件数据集、AJO 邮件跟踪体验事件数据集 | `_experience.decisioning.`<br/>`propositionEventType.trigger` | 组件类型：量度 |
-| 试验中的独特访客 (AJO) | 实验中的独立访客 | AJO 实体数据集 | `_experience.customerJourneyManagement.`<br/>`entities.experiment.experimentId` | 组件类型：量度 |
+| 试验中的独特访客 (AJO) | 试验中的独立访客 | AJO 实体数据集 | `_experience.customerJourneyManagement.`<br/>`entities.experiment.experimentId` | 组件类型：量度 |
 | 取消订阅（AJO） | 取消订阅的总次数 | AJO 电子邮件跟踪体验事件数据集 | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | 组件类型：量度 |
 
 {style="table-layout:auto"}
