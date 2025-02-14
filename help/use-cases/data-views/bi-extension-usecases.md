@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: ffa5bcbe246696a8364ff312bff1b7cc1256ff2c
+source-git-commit: 5fbda947c847c803f95e5c3f412219b0af927d12
 workflow-type: tm+mt
-source-wordcount: '13056'
+source-wordcount: '14688'
 ht-degree: 2%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 2%
 * **Power BI桌面**。 使用的版本为2.137.1102.0 64位（2024年10月）。
 * **Tableau桌面**。 使用的版本为2024.1.5 (20241.24.0705.0334) 64位。
 * **Looker**。 联机版本25.0.23，可通过[looker.com](https://looker.com){target="_blank"}使用
+* **Jupyter笔记本**。 使用的版本为7.3.2
 
 已记录以下用例：
 
@@ -264,6 +265,199 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 * [先决条件](/help/data-views/bi-extension.md#prerequisites)
 * [凭据指南](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
 
+
+>[!TAB Jupyter笔记本]
+
+1. 从Experience Platform查询服务UI访问所需的凭据和参数。
+
+   1. 导航到您的Experience Platform沙盒。
+   1. 从左边栏中选择![查询](/help/assets/icons/DataSearch.svg) **[!UICONTROL 查询]**。
+   1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;界面中选择&#x200B;**[!UICONTROL 凭据]**&#x200B;选项卡。
+   1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单中选择`prod:cja`。
+
+      ![查询服务凭据](assets/queryservice-credentials.png){zoomable="yes"}
+
+1. 确保已设置专用Python虚拟环境来运行Jupyter Notebook环境。
+1. 确保在虚拟环境中安装了所需的库：
+   * ipython-sql： `pip install ipython-sql`。
+   * psycopg2-binary： `pip install psycopg-binary`。
+   * sqlalchemy： pip `install sqlalchemy`。
+
+1. 从您的虚拟环境中启动Jupyter Notebook： `jupyter notebook`。
+1. 创建新笔记本，或下载[此示例笔记本](assets/BI-Extension.ipynb.zip)。
+1. 在第一个单元格中，输入并执行：
+
+   ```
+   %config SqlMagic.style = '_DEPRECATED_DEFAULT'
+   ```
+
+1. 在新单元格中输入连接的配置参数。 使用![复制](/help/assets/icons/Copy.svg)将Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中的值复制并粘贴到配置参数所需的值。 例如：
+
+   ```
+   import ipywidgets as widgets
+   from IPython.display import display
+   
+   config_host = widgets.Text(description='Host:', value='example.platform-query-stage.adobe.io',
+                           layout=widgets.Layout(width="600px"))
+   display(config_host)
+   config_port = widgets.IntText(description='Port:', value=80,
+                              layout=widgets.Layout(width="200px"))
+   display(config_port)
+   config_db = widgets.Text(description='Database:', value='prod:cja',
+                         layout=widgets.Layout(width="300px"))
+   display(config_db)
+   config_username = widgets.Text(description='Username:', value='EC582F955C8A79F70A49420E@AdobeOrg',
+                               layout=widgets.Layout(width="600px"))
+   display(config_username)
+   config_password = widgets.Password(description='Password:', value='***',
+                                   layout=widgets.Layout(width="600px"))
+   display(config_password)
+   ```
+
+1. 执行单元格。
+1. 使用![复制](/help/assets/icons/Copy.svg)将密码从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板复制并粘贴到Jupyter Notebook中的&#x200B;**[!UICONTROL 密码]**&#x200B;字段。
+
+   ![Jupter笔记本配置步骤1](assets/jupyter-config-step1.png)
+
+1. 在新单元格中，输入要加载SQL扩展和所需库的语句，并与Customer Journey Analytics连接。
+
+   ```python
+   %load_ext sql
+   from sqlalchemy import create_engine
+   %sql postgresql://{config_username.value}:{config_password.value}@{config_host.value}:{config_port.value}/{config_db.value}?sslmode=require
+   ```
+
+   执行shell。 您应该不会看到任何输出，但单元格应在没有任何警告的情况下执行。
+
+   ![Jupyer笔记本配置步骤4](assets/jupyter-config-step2.png)
+
+1. 在新调用中，输入语句以根据连接获取可用数据视图的列表。
+
+   ```python
+   %%sql
+   SELECT n.nspname as "Schema",
+      c.relname as "Name",
+      CASE c.relkind WHEN 'r' THEN 'table' WHEN 'v' THEN 'view' WHEN 'm' THEN 'materialized view' WHEN 'i' THEN 'index' WHEN 'S' THEN 'sequence' WHEN 's' THEN 'special' WHEN 't' THEN 'TOAST table' WHEN 'f' THEN 'foreign table' WHEN 'p' THEN 'partitioned table' WHEN 'I' THEN 'partitioned index' END as "Type",
+      pg_catalog.pg_get_userbyid(c.relowner) as "Owner"
+   FROM pg_catalog.pg_class c
+   LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+   WHERE c.relkind IN ('v','')
+      AND n.nspname <> 'pg_catalog'
+      AND n.nspname !~ '^pg_toast'
+      AND n.nspname <> 'information_schema'
+      AND pg_catalog.pg_table_is_visible(c.oid)
+      AND c.relname NOT LIKE '%test%'
+      AND c.relname NOT LIKE '%ajo%'
+   ORDER BY 1,2;
+   ```
+
+   执行shell。 您应该会在下面的屏幕快照中看到输出模拟。
+
+   ![Jupyter笔记本配置步骤5](assets/jupyter-config-step3.png)
+
+   您应该会在数据视图列表中看到&#x200B;**[!UICONTROL cc_data_view]**。
+
+### 是否扁平化
+
+Jupyter Notebook支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼合嵌套数据](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data)。
+
+| FLATTEN参数 | 示例 | 受支持 | 备注 |
+|---|---|:---:|---|
+| 无 | `prod:cja` | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![闭合圆圈](/help/assets/icons/CloseCircle.svg) | |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | **推荐使用的选项**。 请注意，`%3FFLATTEN`是`?FLATTEN`的URL编码版本。 |
+
+### 更多信息
+
+* [先决条件](/help/data-views/bi-extension.md#prerequisites)
+* [凭据指南](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+
+>[!TAB RStudio]
+
+1. 从Experience Platform查询服务UI访问所需的凭据和参数。
+
+   1. 导航到您的Experience Platform沙盒。
+   1. 从左边栏中选择![查询](/help/assets/icons/DataSearch.svg) **[!UICONTROL 查询]**。
+   1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;界面中选择&#x200B;**[!UICONTROL 凭据]**&#x200B;选项卡。
+   1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单中选择`prod:cja`。
+
+      ![查询服务凭据](assets/queryservice-credentials.png){zoomable="yes"}
+
+1. 启动RStudio。
+1. 创建新的R Markdown文件，或下载[此示例R Markdown文件](assets/BI-Extension.Rmd.zip)。
+1. 在第一个块中，输入以下介于` ```{r} `和` ``` `之间的语句。 使用![复制](/help/assets/icons/Copy.svg)将Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中的值复制并粘贴到各种参数（如`host`、`dbname`和`user`）所需的值。 例如：
+
+   ```R
+   library(rstudioapi)
+   library(DBI)
+   library(dplyr)
+   library(tidyr)
+   library(RPostgres)
+   library(ggplot2)
+   
+   host <- rstudioapi::showPrompt(title = "Host", message = "Host", default = "orangestagingco.platform-query-stage.adobe.io")
+   dbname <- rstudioapi::showPrompt(title = "Database", message = "Database", default = "prod:cja?FLATTEN")
+   user <- rstudioapi::showPrompt(title = "Username", message = "Username", default = "EC582F955C8A79F70A49420E@AdobeOrg")
+   password <- rstudioapi::askForPassword(prompt = "Password")
+   ```
+
+1. 运行块。 系统会提示您输入&#x200B;**[!UICONTROL 主机]**、**[!UICONTROL 数据库]**&#x200B;和&#x200B;**[!UICONTROL 用户]**。 只需接受您在上一步中提供的值即可。
+1. 使用![复制](/help/assets/icons/Copy.svg)将密码从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板复制并粘贴到RStudio中的&#x200B;**[!UICONTROL 密码]**&#x200B;对话框提示符。
+
+   ![RStudio配置步骤1](assets/rstudio-config-step1.png)
+
+1. 创建一个新块并输入以下介于` ``` {r} `和` ``` `之间的语句。
+
+   ```R
+   con <- dbConnect(
+      RPostgres::Postgres(),
+      host = host,
+      port = 80,
+      dbname = dbname,
+      user = user,
+      password = password,
+      sslmode = 'require'
+   )
+   ```
+
+1. 运行块。 如果连接成功，您应该不会看到任何输出。
+
+
+1. 创建一个新块并输入以下介于` ``` {r} `和` ``` `之间的语句。
+
+   ```R
+   views <- dbListTables(con)
+   print(views)
+   ```
+
+1. 运行块。 您应该看到`character(0)`作为唯一输出。
+
+
+1. 创建一个新块并输入以下介于` ``` {r} `和` ``` `之间的语句。
+
+   ```R
+   glimpse(dv)
+   ```
+
+1. 运行块。 您应该会在下面的屏幕快照中看到输出模拟。
+
+   ![RStudio配置步骤2](assets/rstudio-config-step2.png)
+
+### 是否扁平化
+
+RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼合嵌套数据](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data)。
+
+| FLATTEN参数 | 示例 | 受支持 | 备注 |
+|---|---|:---:|---|
+| 无 | `prod:cja` | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | **推荐使用的选项**。 |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![闭合圆圈](/help/assets/icons/CloseCircle.svg) | |
+
+### 更多信息
+
+* [先决条件](/help/data-views/bi-extension.md#prerequisites)
+* [凭据指南](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+
 >[!ENDTABS]
 
 +++
@@ -381,6 +575,54 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
 ![Looker结果每日趋势](assets/uc2-looker-result.png){zoomable="yes"}
 
+
+>[!TAB Jupyter笔记本]
+
+1. 在新单元格中输入以下语句。
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT daterangeday AS Date, COUNT(*) AS Events \
+             FROM cc_data_view \
+             WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+             GROUP BY 1 \
+             ORDER BY Date ASC
+   df = data.DataFrame()
+   df = df.groupby('Date', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.lineplot(x='Date', y='Events', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![Jupyter笔记本结果](assets/uc2-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。
+
+   ```R
+   ## Daily Events
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01") %>%
+      group_by(daterangeday) %>%
+      count() %>%
+      arrange(daterangeday, .by_group = FALSE)
+   ggplot(df, aes(x = daterangeday, y = n)) +
+      geom_line(color = "#69b3a2") +
+      ylab("Events") +
+      xlab("Date")
+   print(df)
+   ```
+
+1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![RStudio结果](assets/uc2-rstudio-results.png)
+
 >[!ENDTABS]
 
 +++
@@ -470,6 +712,54 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 您应该会看到如下所示的可视化图表和表格。
 
 ![Looker结果每日趋势](assets/uc3-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter笔记本]
+
+1. 在新单元格中输入以下语句。
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT daterangehour AS Hour, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-01-02' \
+               GROUP BY 1 \
+                ORDER BY Hour ASC
+   df = data.DataFrame()
+   df = df.groupby('Hour', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.lineplot(x='Hour', y='Events', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![Jupyter笔记本结果](assets/uc3-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。
+
+   ```R
+   ## Hourly Events
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-01-02") %>%
+      group_by(daterangehour) %>%
+      count() %>%
+      arrange(daterangehour, .by_group = FALSE)
+   ggplot(df, aes(x = daterangehour, y = n)) +
+      geom_line(color = "#69b3a2") +
+      ylab("Events") +
+      xlab("Hour")
+   print(df)
+   ```
+
+1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![RStudio结果](assets/uc3-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -589,6 +879,54 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 您应该会看到如下所示的可视化图表和表格。
 
 ![Looker结果每日趋势](assets/uc4-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter笔记本]
+
+1. 在新单元格中输入以下语句。
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT daterangemonth AS Month, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01' \
+               GROUP BY 1 \
+               ORDER BY Month ASC
+   df = data.DataFrame()
+   df = df.groupby('Month', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.lineplot(x='Month', y='Events', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![Jupyter笔记本结果](assets/uc4-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。
+
+   ```R
+   ## Hourly Events
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-01-02") %>%
+      group_by(daterangehour) %>%
+      count() %>%
+      arrange(daterangehour, .by_group = FALSE)
+   ggplot(df, aes(x = daterangehour, y = n)) +
+      geom_line(color = "#69b3a2") +
+      ylab("Events") +
+      xlab("Hour")
+   print(df)
+   ```
+
+1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![RStudio结果](assets/uc4-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -767,6 +1105,57 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 您应该会看到如下所示的可视化图表和表格。
 
 ![Looker结果每日趋势](assets/uc5-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter笔记本]
+
+1. 在新单元格中输入以下语句。
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT product_name AS `Product Name`, SUM(purchase_revenue) AS `Purchase Revenue`, SUM(purchases) AS `Purchases` \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01' \
+               GROUP BY 1 \
+               LIMIT 10;
+   df = data.DataFrame()
+   df = df.groupby('Product Name', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.barplot(x='Purchase Revenue', y='Product Name', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![Jupyter笔记本结果](assets/uc5-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。
+
+   ```R
+   library(tidyr)
+   
+   ## Single dimension ranked
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2024-01-01") %>%
+      group_by(product_name) %>%
+      summarise(purchase_revenue = sum(purchase_revenue), purchases = sum(purchases)) %>%
+      arrange(product_name, .by_group = FALSE)
+   dfV <- df %>%
+      head(5)
+   ggplot(dfV, aes(x = purchase_revenue, y = product_name)) +
+      geom_col(position = "dodge") +
+      geom_text(aes(label = purchase_revenue), vjust = -0.5)
+   print(df)
+   ```
+
+1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![RStudio结果](assets/uc5-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -976,6 +1365,52 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
 ![Looker结果每日趋势](assets/uc6-looker-result.png){zoomable="yes"}
 
+
+>[!TAB Jupyter笔记本]
+
+1. 在新单元格中输入以下语句。
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT product_category AS `Product Category`, product_name AS `Product Name`, SUM(purchase_revenue) AS `Purchase Revenue`, SUM(purchases) AS `Purchases` \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01' \
+               GROUP BY 1, 2 \
+               ORDER BY `Purchase Revenue` DESC \
+               LIMIT 10;
+   df = data.DataFrame()
+   df = df.groupby(['Product Category', 'Product Name'], as_index=False).sum()
+   plt.figure(figsize=(8, 8))
+   sns.scatterplot(x='Product Category', y='Product Name', size='Purchase Revenue', sizes=(10, 200), hue='Purchases', palette='husl', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![Jupyter笔记本结果](assets/uc6-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。
+
+   ```R
+   ## Multiple dimensions ranked
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2024-01-01") %>%
+      group_by(product_category, product_name) %>%
+      summarise(purchase_revenue = sum(purchase_revenue), purchases = sum(purchases), .groups = "keep") %>%
+      arrange(desc(purchase_revenue), .by_group = FALSE)
+   print(df)
+   ```
+
+1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![RStudio结果](assets/uc6-rstudio-results.png)
+
+
 >[!ENDTABS]
 
 +++
@@ -1109,6 +1544,40 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
 ![非重复查找器计数](assets/uc7-looker-result.png){zoomable="yes"}
 
+
+>[!TAB Jupyter笔记本]
+
+1. 在新单元格中输入以下语句。
+
+   ```python
+   data = %sql SELECT COUNT(DISTINCT(product_name)) AS `Product Name` \
+      FROM cc_data_view \
+      WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01';
+   display(data)
+   ```
+
+1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![Jupyter笔记本结果](assets/uc7-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。
+
+   ```R
+   ## Count Distinct
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01") %>%
+      summarise(product_name_count_distinct = n_distinct(product_name))
+   print(df)
+   ```
+
+1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![RStudio结果](assets/uc7-rstudio-results.png)
+
+
 >[!ENDTABS]
 
 +++
@@ -1193,6 +1662,73 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 您应该会看到如下所示的可视化图表和表格。
 
 ![非重复查找器计数](assets/uc8-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter笔记本]
+
+1. 在新单元格中输入以下语句。
+
+   ```python
+   data = %sql SELECT daterangeName FROM cc_data_view;
+   style = {'description_width': 'initial'}
+   daterange_name = widgets.Dropdown(
+      options=[d for d, in data],
+      description='Date Range Name:',
+      style=style
+   )
+   display(daterange_name)
+   ```
+
+1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![Jupyter笔记本结果](assets/uc8-jupyter-input.png)
+
+1. 从下拉菜单中选择&#x200B;**[!UICONTROL 钓鱼产品]**。
+
+1. 在新单元格中输入以下语句。
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT daterangemonth AS Month, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterangeName = '{daterange_name.value}' \
+               GROUP BY 1 \
+               ORDER BY Month ASC
+   df = data.DataFrame()
+   df = df.groupby('Month', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.lineplot(x='Month', y='Events', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![Jupyter笔记本结果](assets/uc8-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。 确保使用适当的日期范围名称。 例如，`Last Year 2023`。
+
+   ```R
+   ## Monthly Events for Last Year
+   df <- dv %>%
+      filter(daterangeName == "Last Year 2023") %>%
+      group_by(daterangemonth) %>%
+      count() %>%
+      arrange(daterangemonth, .by_group = FALSE)
+   ggplot(df, aes(x = daterangemonth, y = n)) +
+      geom_line(color = "#69b3a2") +
+      ylab("Events") +
+      xlab("Hour")
+   print(df)
+   ```
+
+1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![RStudio结果](assets/uc8-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -1293,6 +1829,72 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
 ![非重复查找器计数](assets/uc9-looker-result.png){zoomable="yes"}
 
+
+
+>[!TAB Jupyter笔记本]
+
+1. 在新单元格中输入以下语句。
+
+   ```python
+   data = %sql SELECT filterName FROM cc_data_view;
+   style = {'description_width': 'initial'}
+   filter_name = widgets.Dropdown(
+      options=[d for d, in data],
+      description='Filter Name:',
+      style=style
+   )
+   display(filter_name)
+   ```
+
+1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![Jupyter笔记本结果](assets/uc9-jupyter-input.png)
+
+1. 从下拉菜单中选择&#x200B;**[!UICONTROL 钓鱼产品]**。
+
+1. 在新单元格中输入以下语句。
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT product_name AS `Product Name`, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+                  AND filterName = '{filter_name.value}' \
+               GROUP BY 1 \
+               LIMIT 10;
+   df = data.DataFrame()
+   df = df.groupby('Product Name', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.barplot(x='Events', y='Product Name', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![Jupyter笔记本结果](assets/uc9-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。 确保使用适当的过滤器名称。 例如，`Fishing Products`。
+
+   ```R
+   ## Dimension filtered by name
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01" & filterName == "Fishing Products") %>%
+      group_by(product_name) %>%
+      count() %>%
+      arrange(desc(n), .by_group = FALSE)
+   print(df)
+   ```
+
+1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![RStudio结果](assets/uc9-rstudio-results.png)
+
+
 >[!ENDTABS]
 
 +++
@@ -1300,7 +1902,8 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
 ## 使用维度值进行筛选
 
-您可以在Customer Journey Analytics中创建一个新的筛选器，用于筛选狩猎产品类别中的产品。 然后，您要使用新过滤器报告2023年1月狩猎类别中产品的产品名称和发生次数（事件）。
+您使用&#x200B;**[!UICONTROL 产品类别]**&#x200B;的动态&#x200B;**[!UICONTROL 打猎]**值来筛选打猎类别中的产品。 或者，对于那些不支持动态检索产品类别值的BI工具，您可以在Customer Journey Analytics中创建一个新的过滤器，以过滤来自打猎产品类别的产品。
+然后，您要使用新过滤器报告2023年1月狩猎类别中产品的产品名称和发生次数（事件）。
 
 +++ Customer Journey Analytics
 
@@ -1329,7 +1932,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
 1. 在&#x200B;**[!UICONTROL 数据]**&#x200B;窗格中：
    1. 选择&#x200B;**[!UICONTROL 日期范围]**。
-   1. 选择&#x200B;**[!UICONTROL 筛选器名称]**。
+   1. 选择&#x200B;**[!UICONTROL 产品类别]**。
    1. 选择&#x200B;**[!UICONTROL 产品名称]**。
    1. 选择&#x200B;**[!UICONTROL ∑发生次数]**。
 
@@ -1338,20 +1941,22 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 1. 在&#x200B;**[!UICONTROL 筛选器]**&#x200B;窗格中：
    1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择**[!UICONTROL &#x200B;筛选器名称为（全部）]**。]**
    1. 选择&#x200B;**[!UICONTROL 基本筛选]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
-   1. 在&#x200B;**[!UICONTROL 搜索]**&#x200B;字段下，选择&#x200B;**[!UICONTROL 打猎产品]**，它是Customer Journey Analytics中定义的现有筛选器的名称。
    1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择**[!UICONTROL &#x200B;日期范围是（全部）]**]**。
    1. 选择&#x200B;**[!UICONTROL 高级筛选]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
    1. 将筛选器定义为&#x200B;**[!UICONTROL 当值]** **[!UICONTROL 在]** `1/1/2023` **[!UICONTROL 和]** **[!UICONTROL 在]** `2/1/2023`之前或之后时显示项。
+   1. 选择&#x200B;**[!UICONTROL 基本筛选器]**&#x200B;作为&#x200B;**[!UICONTROL product_category]**&#x200B;的&#x200B;**[!UICONTROL 筛选器类型]**，并从可能值列表中选择&#x200B;**[!UICONTROL Hunting]**。
    1. 选择![CrossSize75](/help/assets/icons/CrossSize75.svg)以从&#x200B;**[!UICONTROL 列]**&#x200B;中删除&#x200B;**[!UICONTROL filterName]**。
    1. 选择![CrossSize75](/help/assets/icons/CrossSize75.svg)以从&#x200B;**[!UICONTROL 列]**&#x200B;中删除&#x200B;**[!UICONTROL 日期范围]**。
 
-   您会看到使用应用的&#x200B;**[!UICONTROL filterName]**&#x200B;筛选器更新的表。 您的Power BI桌面应该如下所示。
+   您会看到使用应用的&#x200B;**[!UICONTROL product_category]**&#x200B;过滤器更新的表。 您的Power BI桌面应该如下所示。
 
    ![Power BI桌面使用日期范围名称进行筛选](assets/uc10-powerbi-final.png){zoomable="yes"}
 
 
 
 >[!TAB Tableau桌面]
+
+![AlertRed](/help/assets/icons/AlertRed.svg) Tableau Desktop不支持从Customer Journey Analytics获取产品类别的动态列表。 相反，此使用案例使用新创建的&#x200B;**[!UICONTROL 打猎产品]**&#x200B;的筛选器，并使用筛选器名称critetia。
 
 1. 在&#x200B;**[!UICONTROL Data Source]**&#x200B;视图中，在&#x200B;**[!UICONTROL Data]**&#x200B;下，从&#x200B;**[!UICONTROL cc_data_view(prod：cja%3FFLATTEN)]**&#x200B;上的上下文菜单中，选择&#x200B;**[!UICONTROL 刷新]**。 您需要刷新连接以选取您刚才在Customer Journey Analytics中定义的新筛选器。
 1. 选择底部的&#x200B;**[!UICONTROL 表1]**&#x200B;选项卡以从&#x200B;**[!UICONTROL 数据源]**&#x200B;切换。 在&#x200B;**[!UICONTROL 表1]**&#x200B;视图中：
@@ -1384,15 +1989,75 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
    1. 选择&#x200B;**[!UICONTROL ‣抄送数据视图]**
    1. 从字段列表中，选择&#x200B;**[!UICONTROL ‣产品类别]**。
 1. 确保&#x200B;**[!UICONTROL 是]**&#x200B;作为筛选器的选择。
-1. 从可能值列表中选择&#x200B;**[!UICONTROL 打猎产品]**。
-1. 从左边栏中的&#x200B;**[!UICONTROL ‣ Cc数据视图]**&#x200B;部分：
-   1. 选择&#x200B;**[!UICONTROL 产品名称]**。
-   1. 在左边栏（底部）中选择&#x200B;**[!UICONTROL MEASURES]**&#x200B;下的&#x200B;**[!UICONTROL 计数]**。
-1. 选择&#x200B;**[!UICONTROL 运行]**。
 
-您应该会看到如下所示的类似表格。
+![AlertRed](/help/assets/icons/AlertRed.svg)查找未显示&#x200B;**[!UICONTROL 产品类别]**&#x200B;的可能值列表。
 
 ![非重复查找器计数](assets/uc10-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter笔记本]
+
+1. 在新单元格中输入以下语句。
+
+   ```python
+   data = %sql SELECT DISTINCT product_category FROM cc_data_view WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01';
+   style = {'description_width': 'initial'}
+   category_filter = widgets.Dropdown(
+      options=[d for d, in data],
+      description='Product Category:',
+      style=style
+   )
+   display(category_filter)
+   ```
+
+1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![Jupyter笔记本结果](assets/uc10-jupyter-input.png)
+
+1. 从下拉菜单中选择&#x200B;**[!UICONTROL 打猎]**。
+
+1. 在新单元格中输入以下语句。
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT product_name AS `Product Name`, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+               AND product_category = '{category_filter.value}' \
+               GROUP BY 1 \
+               ORDER BY Events DESC \
+               LIMIT 10;
+   df = data.DataFrame()
+   df = df.groupby('Product Name', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.barplot(x='Events', y='Product Name', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![Jupyter笔记本结果](assets/uc10-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。 确保使用适当的类别。 例如，`Hunting`。
+
+   ```R
+   ## Dimension 1 Filtered by Dimension 2 value
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01" & product_category == "Hunting") %>%
+      group_by(product_name) %>%
+      count() %>%
+      arrange(desc(n), .by_group = FALSE)
+   print(df)
+   ```
+
+1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![RStudio结果](assets/uc10-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -1601,12 +2266,69 @@ SELECT
     COALESCE(SUM(CAST(( cc_data_view."purchase_revenue"  ) AS DOUBLE PRECISION)), 0) AS "purchase_revenue"
 FROM
     "public"."cc_data_view" AS "cc_data_view"
-WHERE ((( cc_data_view."daterange"  ) >= (DATE_TRUNC('day', DATE '2023-01-31')) AND ( cc_data_view."daterange"  ) < (DATE_TRUNC('day', DATE '2023-02-01'))))
+WHERE ((( cc_data_view."daterange"  ) >= (DATE_TRUNC('day', DATE '2024-01-31')) AND ( cc_data_view."daterange"  ) < (DATE_TRUNC('day', DATE '2023-02-01'))))
 GROUP BY
     1
 ORDER BY
     2 DESC
 FETCH NEXT 500 ROWS ONLY
+```
+
+
+>[!TAB Jupyter笔记本]
+
+1. 在新单元格中输入以下语句。
+
+   ```python
+   data = %sql SELECT product_name AS `Product Name`, SUM(purchase_revenue) AS `Purchase Revenue`, SUM(purchases) AS `Purchases` \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+               GROUP BY 1 \
+               ORDER BY `Purchase Revenue` DESC \
+               LIMIT 5;
+   display(data)
+   ```
+
+1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![Jupyter笔记本结果](assets/uc11-jupyter-results.png)
+
+查询由Jupyter Notebook中定义的BI扩展执行。
+
+
+>[!TAB RStudio]
+
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。
+
+   ```R
+   ## Dimension 1 Sorted
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01") %>%
+      group_by(product_name) %>%
+      summarise(purchase_revenue = sum(purchase_revenue), purchases = sum(purchases), .groups = "keep") %>%
+      arrange(desc(purchase_revenue), .by_group = FALSE)
+   print(df)
+   ```
+
+1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![RStudio结果](assets/uc11-rstudio-results.png)
+
+RStudio使用BI扩展生成的查询包括`ORDER BY`，这意味着顺序通过RStudio和BI扩展应用。
+
+```sql
+SELECT
+  "product_name",
+  SUM("purchase_revenue") AS "purchase_revenue",
+  SUM("purchases") AS "purchases"
+FROM (
+  SELECT "cc_data_view".*
+  FROM "cc_data_view"
+  WHERE ("daterange" >= '2023-01-01' AND "daterange" < '2023-02-01')
+) AS "q01"
+GROUP BY "product_name"
+ORDER BY "purchase_revenue" DESC
+LIMIT 1000
 ```
 
 >[!ENDTABS]
@@ -1838,6 +2560,60 @@ ORDER BY
 FETCH NEXT 5 ROWS ONLY
 ```
 
+
+>[!TAB Jupyter笔记本]
+
+1. 在新单元格中输入以下语句。
+
+   ```python
+   data = %sql SELECT product_name AS `Product Name`, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+               GROUP BY 1 \
+               ORDER BY `Events` DESC \
+               LIMIT 5;
+   display(data)
+   ```
+
+1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![Jupyter笔记本结果](assets/uc12-jupyter-results.png)
+
+查询由Jupyter Notebook中定义的BI扩展执行。
+
+>[!TAB RStudio]
+
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。
+
+   ```R
+   ## Dimension 1 Limited
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2024-01-01") %>%
+      group_by(product_name) %>%
+      count() %>%
+      arrange(desc(n), .by_group = FALSE) %>%
+      head(5)
+   print(df)
+   ```
+
+1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![RStudio结果](assets/uc12-rstudio-results.png)
+
+RStudio使用BI扩展生成的查询包括`LIMIT 5`，这意味着限制通过RStudio和BI扩展应用。
+
+```sql
+SELECT "product_name", COUNT(*) AS "n"
+FROM (
+  SELECT "cc_data_view".*
+  FROM "cc_data_view"
+  WHERE ("daterange" >= '2023-01-01' AND "daterange" < '2024-01-01')
+) AS "q01"
+GROUP BY "product_name"
+ORDER BY "n" DESC
+LIMIT 5
+```
+
 >[!ENDTABS]
 
 +++
@@ -2034,6 +2810,66 @@ GROUP BY
 ORDER BY
     2 DESC
 FETCH NEXT 500 ROWS ONLY
+```
+
+>[!TAB Jupyter笔记本]
+
+Customer Journey Analytics对象（维度、量度、过滤器、计算量度和日期范围）作为您构建的嵌入式SQL查询的一部分提供。 请参阅前面的示例。
+
+**自定义转换**
+
+1. 在新单元格中输入以下语句。
+
+   ```python
+   data = %sql SELECT LOWER(product_category) AS `Product Category`, COUNT(*) AS EVENTS \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01' \
+               GROUP BY 1 \
+               ORDER BY `Events` DESC \
+               LIMIT 5;
+   display(data)
+   ```
+
+1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![Jupyter笔记本结果](assets/uc13-jupyter-results.png)
+
+查询由Jupyter Notebook中定义的BI扩展执行。
+
+>[!TAB RStudio]
+
+Customer Journey Analytics组件（维度、量度、过滤器、计算量度和日期范围）在R语言中作为类似的命名对象提供。 请参阅使用组件的组件，请参阅之前的示例。
+
+**自定义转换**
+
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。
+
+   ```R
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange <= "2024-01-01") %>%
+      mutate(d2=lower(product_category)) %>%
+      group_by(d2) %>%
+      count() %>%
+      arrange(d2, .by_group = FALSE)
+   print(df)
+   ```
+
+1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
+
+   ![RStudio结果](assets/uc13-rstudio-results.png)
+
+RStudio使用BI扩展生成的查询包括`lower`，这意味着自定义转换由RStudio和BI扩展执行。
+
+```sql
+SELECT "d2", COUNT(*) AS "n"
+FROM (
+  SELECT "cc_data_view".*, lower("product_category") AS "d2"
+  FROM "cc_data_view"
+  WHERE ("daterange" >= '2023-01-01' AND "daterange" <= '2024-01-01')
+) AS "q01"
+GROUP BY "d2"
+ORDER BY "d2"
+LIMIT 1000
 ```
 
 >[!ENDTABS]
@@ -2235,7 +3071,19 @@ GROUP BY 1,
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [树形图](/help/analysis-workspace/visualizations/treemap.md) | [树形图](https://cloud.google.com/looker/docs/treemap) |
 | ![Type](/help/assets/icons/TwoDots.svg) | [维恩图](/help/analysis-workspace/visualizations/venn.md) | [维恩图](https://cloud.google.com/looker/docs/venn) |
 
+>[!TAB Jupyter笔记本]
+
+对matplotlib的基于状态的接口&#x200B;**matplotlib.pyplot**&#x200B;的可视化功能进行比较，超出了本文的目的。 请参阅上面的示例以获取inspiration和[matplotlib.pyplot](https://matplotlib.org/3.5.3/api/_as_gen/matplotlib.pyplot.html)文档。
+
+
+>[!TAB RStudio]
+
+比较R中的数据可视化包&#x200B;**ggplot2**&#x200B;的可视化功能超出了本文的用途。 请参阅上面的示例以获取灵感和[ggplot2](https://ggplot2.tidyverse.org/articles/ggplot2.html)文档。
+
 >[!ENDTABS]
+
+
+
 
 +++
 
@@ -2271,6 +3119,15 @@ GROUP BY 1,
 * 查找器在日期或日期时间字段上的用户体验（如&#x200B;**[!UICONTROL 日期范围日期]**&#x200B;或&#x200B;**[!UICONTROL 日期范围日期]**）令人困惑。
 * 查阅者的日期范围为独占而非包含。  **[!UICONTROL until （之前）]**&#x200B;为灰色，因此您可能缺少该方面。  对于您的结束日期，您需要选择要在其中报告的前一天。
 * Looker不会自动将您的量度视为量度。  当您选择某个量度时，默认情况下，查找器会尝试将该量度视为查询中的维度。  要将量度视为量度，您需要创建如上所述的自定义字段。 作为快捷方式，您可以选择&#x200B;**[!UICONTROL ⋮]**，选择&#x200B;**[!UICONTROL 聚合]**，然后选择&#x200B;**[!UICONTROL 总和]**。
+
+>[!TAB Jupyter笔记本]
+
+* Jupyter Notebook的主要注意事项是该工具不像其他BI工具那样是拖放用户界面。 您可以创建良好的视觉效果，但您必须编写代码才能完成此操作。
+
+>[!TAB RStudio]
+
+* R dplyr使用平面架构，因此需要&#x200B;**[!UICONTROL FLATTEN]**&#x200B;选项。
+* RStudio的主要注意事项是该工具不像其他BI工具那样是拖放用户界面。 您可以创建良好的视觉效果，但您必须编写代码才能完成此操作。
 
 >[!ENDTABS]
 
