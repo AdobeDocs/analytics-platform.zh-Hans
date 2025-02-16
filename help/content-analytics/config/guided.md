@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 3bf62bebebfe2ef52abbd29245ef6e8e65807491
+source-git-commit: b52f1bc824c9edd958699d57ccbd950bc36abe5c
 workflow-type: tm+mt
 source-wordcount: '1856'
 ht-degree: 19%
@@ -273,7 +273,7 @@ ht-degree: 19%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning"
 >title="载入实施警告"
->abstract="这将根据您在此工作流中提供的输入来部分配置内容分析。 根据通常对内容分析有用的内容自动选择其他几个设置。 建议您查看每个工件的设置，确认它们符合您的要求和准则。 <br/>请注意，在手动发布与此配置关联的标记库之前，将不会收集任何数据。<br/>另请注意，为了派生图像和文本的属性，Adobe将按照您实施的数据收集设置，使用用户访问时捕获的URL检索这些属性。"
+>abstract="这将根据您在此工作流中提供的输入来部分配置内容分析。 根据通常对内容分析有用的内容自动选择其他几个设置。 建议您查看每个工件的设置，确认它们符合您的要求和准则。 <br/><br/>请注意，在手动发布与此配置关联的标记库之前，将不会收集任何数据。<br/><br/>另请注意，为了派生图像和文本的属性，Adobe将按照您实施的数据收集设置，使用用户访问时捕获的URL检索这些属性。"
 
 <!-- markdownlint-enable MD034 -->
 
