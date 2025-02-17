@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: e2063ee571f78558c487f80041f9d28616138c61
+source-git-commit: 220d48cd35d065b38dac441ce4155fa162a07533
 workflow-type: tm+mt
 source-wordcount: '14697'
 ht-degree: 2%
@@ -318,7 +318,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 1. 执行单元格。
 1. 使用![复制](/help/assets/icons/Copy.svg)将密码从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板复制并粘贴到Jupyter Notebook中的&#x200B;**[!UICONTROL 密码]**&#x200B;字段。
 
-   ![Jupter笔记本配置步骤1](assets/jupyter-config-step1.png)
+   ![Jupter笔记本配置步骤1](assets/jupyter-config-step1.png){zoomable="yes"}
 
 1. 在新单元格中，输入要加载SQL扩展和所需库的语句，并与Customer Journey Analytics连接。
 
@@ -330,7 +330,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
    执行shell。 您应该不会看到任何输出，但单元格应在没有任何警告的情况下执行。
 
-   ![Jupyer笔记本配置步骤4](assets/jupyter-config-step2.png)
+   ![Jupyer笔记本配置步骤4](assets/jupyter-config-step2.png){zoomable="yes"}
 
 1. 在新调用中，输入语句以根据连接获取可用数据视图的列表。
 
@@ -354,7 +354,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
    执行shell。 您应该会在下面的屏幕快照中看到输出模拟。
 
-   ![Jupyter笔记本配置步骤5](assets/jupyter-config-step3.png)
+   ![Jupyter笔记本配置步骤5](assets/jupyter-config-step3.png){zoomable="yes"}
 
    您应该会在数据视图列表中看到&#x200B;**[!UICONTROL cc_data_view]**。
 
@@ -405,7 +405,7 @@ Jupyter Notebook支持`FLATTEN`参数的以下方案。 有关详细信息，请
 1. 运行块。 系统会提示您输入&#x200B;**[!UICONTROL 主机]**、**[!UICONTROL 数据库]**&#x200B;和&#x200B;**[!UICONTROL 用户]**。 只需接受您在上一步中提供的值即可。
 1. 使用![复制](/help/assets/icons/Copy.svg)将密码从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板复制并粘贴到RStudio中的&#x200B;**[!UICONTROL 密码]**&#x200B;对话框提示符。
 
-   ![RStudio配置步骤1](assets/rstudio-config-step1.png)
+   ![RStudio配置步骤1](assets/rstudio-config-step1.png){zoomable="yes"}
 
 1. 创建一个新块并输入以下介于` ``` {r} `和` ``` `之间的语句。
 
@@ -442,7 +442,7 @@ Jupyter Notebook支持`FLATTEN`参数的以下方案。 有关详细信息，请
 
 1. 运行块。 您应该会在下面的屏幕快照中看到输出模拟。
 
-   ![RStudio配置步骤2](assets/rstudio-config-step2.png)
+   ![RStudio配置步骤2](assets/rstudio-config-step2.png){zoomable="yes"}
 
 ### 是否扁平化
 
@@ -599,7 +599,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc2-jupyter-results.png)
+   ![Jupyter笔记本结果](assets/uc2-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -622,7 +622,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![RStudio结果](assets/uc2-rstudio-results.png)
+   ![RStudio结果](assets/uc2-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -737,7 +737,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc3-jupyter-results.png)
+   ![Jupyter笔记本结果](assets/uc3-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -760,7 +760,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![RStudio结果](assets/uc3-rstudio-results.png)
+   ![RStudio结果](assets/uc3-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -904,7 +904,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc4-jupyter-results.png)
+   ![Jupyter笔记本结果](assets/uc4-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -927,7 +927,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![RStudio结果](assets/uc4-rstudio-results.png)
+   ![RStudio结果](assets/uc4-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1130,7 +1130,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc5-jupyter-results.png)
+   ![Jupyter笔记本结果](assets/uc5-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1156,7 +1156,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![RStudio结果](assets/uc5-rstudio-results.png)
+   ![RStudio结果](assets/uc5-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1390,7 +1390,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc6-jupyter-results.png)
+   ![Jupyter笔记本结果](assets/uc6-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1409,7 +1409,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![RStudio结果](assets/uc6-rstudio-results.png)
+   ![RStudio结果](assets/uc6-rstudio-results.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -1559,7 +1559,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc7-jupyter-results.png)
+   ![Jupyter笔记本结果](assets/uc7-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1576,7 +1576,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![RStudio结果](assets/uc7-rstudio-results.png)
+   ![RStudio结果](assets/uc7-rstudio-results.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -1682,7 +1682,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc8-jupyter-input.png)
+   ![Jupyter笔记本结果](assets/uc8-jupyter-input.png){zoomable="yes"}
 
 1. 从下拉菜单中选择&#x200B;**[!UICONTROL 钓鱼产品]**。
 
@@ -1706,7 +1706,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc8-jupyter-results.png)
+   ![Jupyter笔记本结果](assets/uc8-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1729,7 +1729,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![RStudio结果](assets/uc8-rstudio-results.png)
+   ![RStudio结果](assets/uc8-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1849,7 +1849,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc9-jupyter-input.png)
+   ![Jupyter笔记本结果](assets/uc9-jupyter-input.png){zoomable="yes"}
 
 1. 从下拉菜单中选择&#x200B;**[!UICONTROL 钓鱼产品]**。
 
@@ -1874,7 +1874,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc9-jupyter-results.png)
+   ![Jupyter笔记本结果](assets/uc9-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1893,7 +1893,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![RStudio结果](assets/uc9-rstudio-results.png)
+   ![RStudio结果](assets/uc9-rstudio-results.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -2013,7 +2013,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc10-jupyter-input.png)
+   ![Jupyter笔记本结果](assets/uc10-jupyter-input.png){zoomable="yes"}
 
 1. 从下拉菜单中选择&#x200B;**[!UICONTROL 打猎]**。
 
@@ -2039,7 +2039,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc10-jupyter-results.png)
+   ![Jupyter笔记本结果](assets/uc10-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -2058,7 +2058,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![RStudio结果](assets/uc10-rstudio-results.png)
+   ![RStudio结果](assets/uc10-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -2292,7 +2292,7 @@ FETCH NEXT 500 ROWS ONLY
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc11-jupyter-results.png)
+   ![Jupyter笔记本结果](assets/uc11-jupyter-results.png){zoomable="yes"}
 
 查询由Jupyter Notebook中定义的BI扩展执行。
 
@@ -2313,7 +2313,7 @@ FETCH NEXT 500 ROWS ONLY
 
 1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![RStudio结果](assets/uc11-rstudio-results.png)
+   ![RStudio结果](assets/uc11-rstudio-results.png){zoomable="yes"}
 
 RStudio使用BI扩展生成的查询包括`ORDER BY`，这意味着顺序通过RStudio和BI扩展应用。
 
@@ -2578,7 +2578,7 @@ FETCH NEXT 5 ROWS ONLY
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc12-jupyter-results.png)
+   ![Jupyter笔记本结果](assets/uc12-jupyter-results.png){zoomable="yes"}
 
 查询由Jupyter Notebook中定义的BI扩展执行。
 
@@ -2599,7 +2599,7 @@ FETCH NEXT 5 ROWS ONLY
 
 1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![RStudio结果](assets/uc12-rstudio-results.png)
+   ![RStudio结果](assets/uc12-rstudio-results.png){zoomable="yes"}
 
 RStudio使用BI扩展生成的查询包括`LIMIT 5`，这意味着限制通过RStudio和BI扩展应用。
 
@@ -2833,7 +2833,7 @@ Customer Journey Analytics对象（维度、量度、过滤器、计算量度和
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc13-jupyter-results.png)
+   ![Jupyter笔记本结果](assets/uc13-jupyter-results.png){zoomable="yes"}
 
 查询由Jupyter Notebook中定义的BI扩展执行。
 
@@ -2857,7 +2857,7 @@ Customer Journey Analytics组件（维度、量度、过滤器、计算量度和
 
 1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![RStudio结果](assets/uc13-rstudio-results.png)
+   ![RStudio结果](assets/uc13-rstudio-results.png){zoomable="yes"}
 
 RStudio使用BI扩展生成的查询包括`lower`，这意味着自定义转换由RStudio和BI扩展执行。
 

@@ -1,14 +1,14 @@
 ---
 title: Customer Journey Analytics BI 扩展
-description: 了解如何使用Power BI或Tableau Desktop通过Customer Journey AnalyticsBI扩展访问数据视图。
+description: 了解如何使用Power BI或Tableau Desktop通过Customer Journey Analytics BI扩展访问数据视图。
 solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: d7d16dbef202db9fdac08796dacc3368e0119456
+source-git-commit: 30e3df15aecec0bab180cd06e0ae7c79f58cdf44
 workflow-type: tm+mt
-source-wordcount: '3176'
-ht-degree: 73%
+source-wordcount: '3620'
+ht-degree: 66%
 
 ---
 
@@ -37,12 +37,12 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/en/
 要使用过期凭据，您可以：
 
 * 授予对Experience Platform和Customer Journey Analytics的访问权限。
-* 授予产品管理员访问Customer Journey Analytics的权限，以便您可以查看、编辑、更新或删除连接和数据视图。
+* 授予产品管理员访问Customer Journey Analytics的权限，以便您能够查看、编辑、更新或删除连接和数据视图。
 
 或者，您可以：
 
 * 授予对要访问的数据视图的访问权限。
-* 授予对Customer Journey AnalyticsBI扩展的访问权限。
+* 授予对Customer Journey Analytics BI扩展的访问权限。
 
 ### 未过期的凭据
 
@@ -51,7 +51,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/en/
 * 在Experience Platform中创建不会过期的凭据。
 * 按照[过期凭据](#Expiring-credentials)中所述的步骤授予访问未过期凭据的权限。
 
-请参阅[客户历程访问控制](../technotes/access-control.md)以了解详细信息，特别是[产品管理员附加权限](../technotes/access-control.md#product-admin-additional-permissions)和Admin Console中的[Customer Journey Analytics权限](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console)。
+有关详细信息，特别是Admin Console中的[产品管理员附加权限](../technotes/access-control.md#product-admin-additional-permissions)和[Customer Journey Analytics权限](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console)，请参阅[客户历程访问控制](../technotes/access-control.md)。
 
 
 ## 使用情况
@@ -100,7 +100,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/en/
 
 ### BI 工具
 
-目前，仅支持[!DNL Customer Journey Analytics BI extension]并针对Power BI和Tableau桌面进行测试。 其他使用 PSQL 接口的 BI 工具也能工作，但尚未获得正式支持。
+目前，[!DNL Customer Journey Analytics BI extension]仅在Power BI和Tableau Desktop中受支持和测试。 其他使用 PSQL 接口的 BI 工具也能工作，但尚未获得正式支持。
 
 +++ Power BI
 
@@ -141,7 +141,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/en/
 
    与一个或多个选定表关联的所有维度和量度都显示在右窗格中，可供您在可视化图表中使用。
 
-   有关更多信息，请参阅[将 Power BI 连接到 Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi)。
+   有关详细信息，请参阅[将Power BI连接到查询服务](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi)。 有关详细示例，另请参阅[BI扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)。
 
 +++
 
@@ -165,7 +165,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/en/
 
    1. 在 [!UICONTROL PostgresSQL] 对话框中：
 
-      1. 将Experience Platform查询[!UICONTROL 凭据]中的&#x200B;**[!UICONTROL **&#x200B;主机&#x200B;**]**&#x200B;参数粘贴到&#x200B;**[!UICONTROL **&#x200B;服务器&#x200B;**]**&#x200B;文本字段中。
+      1. 将Experience Platform查询[!UICONTROL 凭据]中的&#x200B;**[!UICONTROL ** Host **]**&#x200B;参数粘贴到&#x200B;**[!UICONTROL ** Server **]**&#x200B;文本字段中。
 
       1. 将Experience Platform查询[!UICONTROL 凭据]中的&#x200B;**[!UICONTROL **&#x200B;端口&#x200B;**]**&#x200B;参数粘贴到&#x200B;**[!UICONTROL **&#x200B;端口&#x200B;**]**&#x200B;文本字段中。
 
@@ -187,13 +187,88 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/en/
 
    您现在可以使用数据视图表中的数据来构建报告和可视化图表。
 
-   有关更多信息，请参阅[将 Tableau 连接到 Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau)。
+   有关详细信息，请参阅[将Tableau连接到查询服务](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau)。 有关详细示例，另请参阅[BI扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)。
+
++++
+
++++ Looker
+
+1. 在 Adobe Experience Platform 中，查找 PostgresSQL 凭据的详细信息：
+
+   1. 从左边栏中（**[!UICONTROL **&#x200B;数据管理&#x200B;**]**&#x200B;下），选择&#x200B;**[!UICONTROL **&#x200B;查询&#x200B;**]**。
+
+   1. 从顶部栏中选择&#x200B;**[!UICONTROL **&#x200B;凭据&#x200B;**]**。
+
+   1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单的数据库列表中选择沙盒的`cja`数据库。 例如：`prod:cja`。
+
+   1. 在Looker中需要时，使用![复制](assets/Smock_Copy_18_N.svg)复制每个Postgres凭据参数（[!UICONTROL 主机]、[!UICONTROL 端口]、[!UICONTROL 数据库]、[!UICONTROL 用户名]等）。
+
+1. 在Looker中：
+
+   1. 从左边栏中选择&#x200B;**[!UICONTROL 管理员]**。
+   1. 选择&#x200B;**[!UICONTROL 连接]**。
+   1. 选择&#x200B;**[!UICONTROL 添加连接]**。
+   1. 在&#x200B;**[!UICONTROL 将数据库连接到Looker]**&#x200B;屏幕中，在设置新连接时粘贴相应的值。 请确保选择&#x200B;**[!UICONTROL PostgreSQL 9.5+]**&#x200B;作为方言。
+   1. 选择&#x200B;**[!UICONTROL 测试]**&#x200B;以测试您的连接。
+   1. 成功后，选择&#x200B;**[!UICONTROL 更新]**&#x200B;以保存您的连接。
+
+   您现在可以使用数据视图表中的数据来构建报告和可视化图表。
+
+   有关详细信息，请参阅[将查找器连接到查询服务](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/looker)。 有关详细示例，另请参阅[BI扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)。
+
++++
+
++++ Jupyter Notebook
+
+1. 在 Adobe Experience Platform 中，查找 PostgresSQL 凭据的详细信息：
+
+   1. 从左边栏中（**[!UICONTROL **&#x200B;数据管理&#x200B;**]**&#x200B;下），选择&#x200B;**[!UICONTROL **&#x200B;查询&#x200B;**]**。
+
+   1. 从顶部栏中选择&#x200B;**[!UICONTROL **&#x200B;凭据&#x200B;**]**。
+
+   1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单的数据库列表中选择沙盒的`cja`数据库。 例如：`prod:cja`。
+
+   1. 在Jupyter Notebook中需要时，使用![Copy](assets/Smock_Copy_18_N.svg)复制每个Postgres凭据参数（[!UICONTROL 主机]、[!UICONTROL 端口]、[!UICONTROL 数据库]、[!UICONTROL 用户名]等）。
+
+1. 在Jupyter笔记本中：
+
+   1. 确保使用所需的库。
+   1. 在设置和执行连接时使用适当的值。
+   1. 通过执行相关查询来测试连接。
+
+   如果成功，则可以使用数据来构建报告和可视化图表。
+
+   有关详细信息，请参阅[将Jupyter笔记本连接到查询服务](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/jupyter-notebook)。 有关详细示例，另请参阅[BI扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)。
+
++++
+
++++ RStudio
+
+1. 在 Adobe Experience Platform 中，查找 PostgresSQL 凭据的详细信息：
+
+   1. 从左边栏中（**[!UICONTROL **&#x200B;数据管理&#x200B;**]**&#x200B;下），选择&#x200B;**[!UICONTROL **&#x200B;查询&#x200B;**]**。
+
+   1. 从顶部栏中选择&#x200B;**[!UICONTROL **&#x200B;凭据&#x200B;**]**。
+
+   1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单的数据库列表中选择沙盒的`cja`数据库。 例如：`prod:cja`。
+
+   1. 在Jupyter Notebook中需要时，使用![Copy](assets/Smock_Copy_18_N.svg)复制每个Postgres凭据参数（[!UICONTROL 主机]、[!UICONTROL 端口]、[!UICONTROL 数据库]、[!UICONTROL 用户名]等）。
+
+1. 在RStudio中：
+
+   1. 确保使用所需的库。
+   1. 在设置和执行连接时使用适当的值。
+   1. 通过执行相关查询来测试连接。
+
+   如果成功，则可以使用数据来构建报告和可视化图表。
+
+   有关详细信息，请参阅[将RStudio连接到查询服务](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/rstudio)。 另请参阅[BI扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)以了解详细示例（正在改用RPostgres包）。
 
 +++
 
 请参阅[将客户端连接到 Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview)，大致了解各种可用工具及其详细信息。
 
-请参阅[用例](/help/use-cases/data-views/bi-extension-usecases.md)，了解如何使用Customer Journey AnalyticsBI扩展完成多个用例
+请参阅[用例](/help/use-cases/data-views/bi-extension-usecases.md)，了解如何使用Customer Journey Analytics BI扩展完成多个用例。
 
 ## 功能
 
