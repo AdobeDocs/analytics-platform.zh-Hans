@@ -3,43 +3,36 @@ title: 当前 Customer Journey Analytics 发行说明
 description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 806bcaa72479c3e871e12fd1c4802bac97eda439
+source-git-commit: 89ad5b445c79ee318ca064cbeb1da5948a714671
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 100%
+source-wordcount: '196'
+ht-degree: 61%
 
 ---
 
-# 当前的 Adobe Customer Journey Analytics 发行说明（2025 年 1 月）
+# 当前的 Adobe Customer Journey Analytics 发行说明（2025 年 2 月）
 
-**上次更新日期**：2025 年 1 月 22 日
+**上次更新时间**：2025年2月19日
 
-这些发行说明涵盖了 2024 年 10 月 23 日至 2025 年 1 月 30 日的发行期。Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
+这些发行说明涵盖2025年1月24日至2025年3月18日的发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
 ## 新增功能或更新后的功能
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **更新的 Connections 使用体验** | 现在，Connection 中的 **[!UICONTROL 使用情况]** 选项卡增强了以下类型可报告行的显示效果：核心数据、摄取的数据和历史数据。您还可以按连接、数据集、沙盒或标记查看和细分使用情况数据。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/manage-connections#connections-usage) |  | 2025 年 1 月 15 日 |
-| **将 Adobe Analytics 项目和其中包括的任何组件迁移到 Customer Journey Analytics 的 API** | 现在可以使用 API 将您的 Adobe Analytics 项目及其中包含的组件迁移到 Customer Journey Analytics。以前，项目和组件迁移只能通过用户界面进行。[了解详情](https://adobedocs.github.io/analytics-2.0-apis/?urls.primaryName=CJA%20Migration%20APIs)。从下拉菜单中选择 **CJA 迁移 API** 。 |  | 2025 年 1 月 15 日 |
-| **在 Journey Optimizer 的报告页面上使用 Customer Journey Analytics 中的自定义模板** | 您现在可以在 Adobe Journey Optimizer 中自定义新的报告界面：在 Customer Journey Analytics 中创建或编辑模板，然后保存该模板，将其在 Journey Optimizer 的报告页面中使用。以前，无法自定义 Adobe Journey Optimizer 中新的报告界面。 <p>有关更多信息，请参阅[创建和管理模板](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/create-templates)中的“创建模板”或“编辑或删除模板”。 |  | 2025 年 1 月 15 日 |
-| **Analysis Workspace 中的模板** | 模板现在可以在 Customer Journey Analytics 中使用。<ul><li>**预建模板**：有大量预建模板可供选择。您可以使用这些模板快速洞察最常见的报告场景。预建模板可以按原样使用。或者，可以在项目中将其用作起点，然后根据特定目的对其进行自定义。[了解详情](/help/analysis-workspace/templates/use-templates.md)</li><li>**公司模板**：管理员可以创建公司模板来满足其组织特定用例的需求。管理员创建的公司模板可供其组织内的用户使用。[了解详情](/help/analysis-workspace/templates/create-templates.md)</li></ul> | 1 月 15 日 | 2025 年 1 月 30 日 |
-| **产品使用情况** | 了解您的组织如何使用 Customer Journey Analytics。启用此功能会在 Adobe Experience Platform 中创建一个数据集，当组织中的任何人使用 Analysis Workspace 时，该数据集都会收集数据。还会自动创建连接和数据视图，让您可以访问诸如顶级项目类型、最活跃的用户以及项目中最常用的组件等维度。[了解详情](/help/tools/product-usage/usage-overview.md) | 2024 年 10 月 23 日 | 2025 年 1 月 22 日 |
-| **智能题注 v2** | 现在支持以下可视化图表的智能题注：多行、条形图、水平条形图、圆环图、面积图、流量和流失图。您可以选择在扩展视图中一次显示所有智能题注，也可以在逐个视图中显示单个智能题注。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions) |  | 2025 年 1 月 22 日 |
-| **在引导式分析中将引导式分析添加到项目中** | 您可以从引导式分析中将引导式分析添加到工作区项目。您还可以在 Analysis Workspace 中直接添加引导式分析。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/guided-analysis/overview) |  | 2025 年 1 月 22 日 |
-| **媒体收集：Adobe Source Connector 更新了新的媒体报告 XDM** | Analytics 源连接器会自动将 Adobe Analytics 中的流媒体数据映射到 Web SDK 使用的相同字段。目前，数据被映射到旧位置和新位置，但未来只使用新位置。（文档链接见下文） |  | 2025 年 1 月 30 日 |
+| **BI扩展 — Looker支持** | Customer Journey Analytics BI扩展现在[支持Looker、Jupyter Notebook和R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases)。 |   | 2025年1月24日 |
 
 ## Customer Journey Analytics 中的修复
 
-警报：AN-363263；AN-364880；AN-365029；AN-365960
-受众：AN-362564；AN-363254；
-数据摄取：AN-362359；AN-362751
-数据视图：AN-362089；AN-365213；AN-365770；AN-366171；AN-366681
-派生字段：AN-359711；AN-362496
-导出位置：AN-363999
-完整表导出：AN-363055
-报告生成器：AN-362937
-工作区：AN-359012；AN-359145；AN-359914；AN-361455；AN-361934；AN-362469；AN-363460；AN-364714；AN-364918；AN-366277；
+**受众**： AN-365687； AN-366674
+**数据摄取**： AN-368376
+**数据视图**： AN-368443
+**派生字段**： AN-368441
+**引导式分析**： AN-367697
+**历程画布**： AN-367890
+**移动设备应用程序**： AN-367137
+**Power BI扩展**： AN-367643
+**Workspace**： AN-352828； AN-359248； AN-368583
 
 
 ## Customer Journey Analytics 管理员的重要注意事项
@@ -48,9 +41,9 @@ ht-degree: 100%
 | --- | --- | --- |
 | 不适用 | | |
 
-## 相关资源
+## 相关资产
 
-* [之前的 2024 Customer Journey Analytics 发行说明](/help/release-notes/2024.md)
+* [之前的 2025 Customer Journey Analytics 发行说明](/help/release-notes/2025.md)
 * [Adobe Analytics 发行说明](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=zh-hans)
 * [流媒体收藏集发行说明](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html?lang=zh-hans)
 * [Adobe Experience Cloud 发行说明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-hans)
