@@ -3,16 +3,16 @@ title: 当前 Customer Journey Analytics 发行说明
 description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 419676a446bd04a1d0f7a96ffc564e439db48f54
+source-git-commit: e6f86bf3dee81d70300cb26a1593d0e40966a63b
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 58%
+source-wordcount: '255'
+ht-degree: 61%
 
 ---
 
 # 当前的 Adobe Customer Journey Analytics 发行说明（2025 年 2 月）
 
-**上次更新时间**：2025年2月19日
+**上次更新时间**：2025年2月20日
 
 这些发行说明涵盖2025年1月24日至2025年3月18日的发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
@@ -20,7 +20,9 @@ ht-degree: 58%
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **BI扩展 — Looker支持** | Customer Journey Analytics BI扩展现在支持[Looker、Jupyter Notebook和R Studio](/help/data-views/bi-extension.md)。 [BI扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)已更新，以反映支持的其他工具。 |   | 2025年1月24日 |
+| **BI扩展 — 扩展支持** | Customer Journey Analytics BI扩展现在[支持Looker、Jupyter Notebook和R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases)。 |   | 2025年1月24日 |
+| **媒体收集：Adobe Source Connector 更新了新的媒体报告 XDM** | Analytics 源连接器会自动将 Adobe Analytics 中的流媒体数据映射到 Web SDK 使用的相同字段。以前，数据会映射到旧位置和新位置，但将来只会使用新位置。 [了解详情](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) |  | 2025 年 1 月 30 日 |
+
 
 ## Customer Journey Analytics 中的修复
 
