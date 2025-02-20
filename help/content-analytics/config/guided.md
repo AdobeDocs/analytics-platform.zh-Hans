@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: b52f1bc824c9edd958699d57ccbd950bc36abe5c
+source-git-commit: cea253d3b1da080e6735989d59cc6eda44afc203
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1911'
 ht-degree: 19%
 
 ---
@@ -148,13 +148,16 @@ ht-degree: 19%
 >title="体验捕捉和定义"
 >abstract="您可以在 Adobe 内容分析扩展中的标签属性中编辑与所选配置关联的设置。"
 
-
-
 <!-- markdownlint-enable MD034 -->
 
 在此部分中，您可以选择在通过Content Analytics收集的数据中包含体验。  体验是网页上的所有文本，可以使用访问某个网页的初始用户使用的URL重现这些文本。
 
 默认情况下，**[!UICONTROL 包含体验]**&#x200B;处于关闭状态。 在选中时，您必须定义要包含体验的URL。
+
+只有在满足以下条件时，才应考虑包含体验：
+
+* 网站上的内容仅由URL驱动。
+* 必须使用页面URL重现网站上的页面。
 
 要在新的或未实施的配置中包含体验，请执行以下操作：
 
@@ -286,6 +289,7 @@ ht-degree: 19%
    * **[!UICONTROL Adobe Experience Platform]**&#x200B;配置：
       1. 创建架构以对Content Analytics事件、资产属性和（如果已配置）体验属性进行建模。
       1. 创建数据集以收集Content Analytics事件、资产属性和（如果已配置）体验属性。
+      1. 创建数据流，该数据流使用功能化服务从Content Analytics事件生成和更新内容属性。
    * **[!UICONTROL Content Analytics]**&#x200B;配置：
       * 基于配置设置特征化汇编程序进程。
    * **[!UICONTROL Customer Journey Analytics]**&#x200B;配置：
