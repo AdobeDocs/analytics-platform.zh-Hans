@@ -3,10 +3,10 @@ title: 当前 Customer Journey Analytics 发行说明
 description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 89ad5b445c79ee318ca064cbeb1da5948a714671
+source-git-commit: 419676a446bd04a1d0f7a96ffc564e439db48f54
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 61%
+source-wordcount: '208'
+ht-degree: 58%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 61%
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **BI扩展 — Looker支持** | Customer Journey Analytics BI扩展现在[支持Looker、Jupyter Notebook和R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases)。 |   | 2025年1月24日 |
+| **BI扩展 — Looker支持** | Customer Journey Analytics BI扩展现在支持[Looker、Jupyter Notebook和R Studio](/help/data-views/bi-extension.md)。 [BI扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)已更新，以反映支持的其他工具。 |   | 2025年1月24日 |
 
 ## Customer Journey Analytics 中的修复
 

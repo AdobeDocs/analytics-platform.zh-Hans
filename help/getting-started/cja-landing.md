@@ -4,10 +4,10 @@ description: Customer Journey Analytics 登陆页面。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 8b90f74d64ef35f4a9f0f1177dab27c9680ccb4c
-workflow-type: ht
-source-wordcount: '824'
-ht-degree: 100%
+source-git-commit: c29b1b8678579b58c42fce2fc02fffd81c1a633f
+workflow-type: tm+mt
+source-wordcount: '864'
+ht-degree: 92%
 
 ---
 
@@ -36,6 +36,13 @@ AI 助手是一种对话体验，允许从业者快速执行任务——无论�
 
 [![图像](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
 
+
+>[!TAB 智能字幕v2]
+
+现在支持[Line](/help/analysis-workspace/visualizations/line.md)（包括多行）、[Bar](/help/analysis-workspace/visualizations/bar.md)、[Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md)、[Area](/help/analysis-workspace/visualizations/area.md)（包括多区域线）、[Donut](/help/analysis-workspace/visualizations/donut.md)、[Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)和[Flow](/help/analysis-workspace/visualizations/c-flow/flow.md)可视化图表的智能字幕，并改进了界面。
+
+[![图像](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
 >[!TAB 警报]
 
 警报允许您根据变化的百分比或特定数据点收到通知。您可以预览警报触发的频率、通过电子邮件或 SMS 发送警报、创建堆叠警报等。
@@ -53,7 +60,7 @@ AI 助手是一种对话体验，允许从业者快速执行任务——无论�
 
 >[!TAB 基于图形的拼接*]
 
-通过基于图形的拼接，您可以使用体验平台标识服务提供的标识图更好地了解客户历程： <ul><li>连接具有不同标识符的数据集，无需提取、转换和加载额外数据以反映单个标识符。</li> <li>通过跨数据集共享标识，提高单个数据集中首选或黄金标识的覆盖率。</li><li>将 Real-Time Customer Data Platform 和 Journey Optimizer 中创建的轮廓与 Customer Journey Analytics 中的人员进行对齐。</li></ul>
+通过基于图形的拼接，您可以使用体验平台身份标识服务提供的身份标识图更好地了解客户历程： <ul><li>连接具有不同标识符的数据集，无需提取、转换和加载额外数据以反映单个标识符。</li> <li>通过跨数据集共享身份标识，提高单个数据集中首选或黄金身份标识的覆盖率。</li><li>将 Real-Time Customer Data Platform 和 Journey Optimizer 中创建的轮廓与 Customer Journey Analytics 中的人员进行对齐。</li></ul>
 
 [![图像](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
 
@@ -61,7 +68,7 @@ AI 助手是一种对话体验，允许从业者快速执行任务——无论�
 
 >[!TAB 查找 B2B]
 
-作为配置连接的一部分，您可以转换特定 B2B 查找模式的数据集，以更好地支持基于人员的 B2B 数据查找。
+作为配置连接的一部分，您可以转换特定 B2B 查找架构的数据集，以更好地支持基于人员的 B2B 数据查找。
 
 [![图像](assets/learn-more-button.svg)](/help/connections/transform-datasets-b2b-lookups.md)
 
@@ -73,7 +80,7 @@ AI 助手是一种对话体验，允许从业者快速执行任务——无论�
 
 >[!TAB BI 扩展*]
 
-BI 扩展允许 SQL 访问您在 Customer Journey Analytics 中定义的数据视图。现在，您可以使用您最喜欢的 BI 工具，根据 Customer Journey Analytics 用户在创建 Analysis Workspace 项目时使用的相同数据视图来创建报告和仪表板。[提供了用例](/help/use-cases/data-views/bi-extension-usecases.md)。
+BI 扩展允许 SQL 访问您在 Customer Journey Analytics 中定义的数据视图。您现在可以使用常用的BI工具(Power BI Desktop、Tableau Desktop、Looker、Juyter Notebook和RStudio)根据Customer Journey Analytics用户在其Analysis Workspace项目中使用的数据视图创建报表和仪表板。 [提供了用例](/help/use-cases/data-views/bi-extension-usecases.md)。
 
 [![图像](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
 
