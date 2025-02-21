@@ -55,12 +55,11 @@ ht-degree: 2%
    * 您已清楚地了解要捕获内容参与分析和见解的资产（类型）。
 
 
->>
-[!MORELIKETHIS]
->>
-* [引导式配置](guided.md)
-* [手动配置](manual.md)
-* [访问控制](/help/technotes/access-control.md)
+>[!MORELIKETHIS]
+>
+>* [引导式配置](guided.md)
+>* [手动配置](manual.md)
+>* [访问控制](/help/technotes/access-control.md)
 >
 
 
