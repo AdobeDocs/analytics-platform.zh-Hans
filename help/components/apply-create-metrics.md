@@ -4,9 +4,9 @@ title: 量度
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 17d3e8ed5986348bb4ba50822dfd9bb43d5a7570
+source-git-commit: 84ab8434671ccbce12dce95e1164b9a25c7b8439
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '859'
 ht-degree: 8%
 
 ---
@@ -103,7 +103,7 @@ Adobe 提供了多种类型的指标，可供在 Analysis Workspace 中使用：
 
    * [!UICONTROL **乘**]：创建将两个选定列的值相乘的新列。
 
-   * [!UICONTROL **百分比变化**]：创建一个新列，以显示两个选定列的百分比变化。
+   * [!UICONTROL **百分比变化**]：创建一个新列，以显示两个选定列之间的百分比变化。
 
 [计算指标：无实施指标](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html?lang=zh-Hans) (3:42)
 
