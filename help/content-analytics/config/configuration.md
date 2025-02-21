@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: cea253d3b1da080e6735989d59cc6eda44afc203
+source-git-commit: ec0ea74df83bbd07b7e026d7b9d7114c7dc595ab
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '373'
 ht-degree: 2%
 
 ---
@@ -25,6 +25,8 @@ ht-degree: 2%
 
 
 要为贵组织配置内容分析，请使用内容分析[引导式配置](guided.md)。 配置向导将指导您完成设置Content Analytics自动配置的先决条件所需的所有步骤。
+
+成功实施后，您可以使用引导式配置向导进行一些更改。 但是，除此之外，可能还需要[手动更改](manual.md)。
 
 ## 先决条件
 
@@ -56,6 +58,8 @@ ht-degree: 2%
 >>
 [!MORELIKETHIS]
 >>
+* [引导式配置](guided.md)
+* [手动配置](manual.md)
 * [访问控制](/help/technotes/access-control.md)
 >
 

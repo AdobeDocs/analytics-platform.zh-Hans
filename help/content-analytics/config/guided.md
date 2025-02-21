@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: cea253d3b1da080e6735989d59cc6eda44afc203
+source-git-commit: ec0ea74df83bbd07b7e026d7b9d7114c7dc595ab
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1991'
 ht-degree: 19%
 
 ---
@@ -103,6 +103,11 @@ ht-degree: 19%
 >id="aca_onboarding_dataview_header_alt"
 >title="数据视图"
 >abstract="从 Customer Journey Analytics 中选择一个您希望将内容分析数据与之合并的现有数据视图。<br/>"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataview_change"
+>title="选择数据视图"
+>abstract="选择新数据视图将导致该数据视图更新为包括Content Analytics量度和维度。 如有必要，关联的连接也会更新以包括Content Analytics数据集。 当前为Content Analytics配置的连接和数据视图不会进行修改。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -275,8 +280,8 @@ ht-degree: 19%
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning"
->title="载入实施警告"
->abstract="这将根据您在此工作流中提供的输入来部分配置内容分析。 根据通常对内容分析有用的内容自动选择其他几个设置。 建议您查看每个工件的设置，确认它们符合您的要求和准则。 <br/><br/>请注意，在手动发布与此配置关联的标记库之前，将不会收集任何数据。<br/><br/>另请注意，为了派生图像和文本的属性，Adobe将按照您实施的数据收集设置，使用用户访问时捕获的URL检索这些属性。"
+>title="加入实施警告"
+>abstract="如果选择&#x200B;**[!UICONTROL 实施]**，则将基于在此工作流中提供的输入配置内容分析。 默认情况下，系统会根据对内容分析通常有用的内容来选择多个设置，但您（作为数据控制者）必须查看每个工件的设置，以确认这些设置是否根据您的隐私政策、合同权利和义务以及适用法律下的同意要求实施。<br/><br/>请注意，在手动发布与此配置关联的标签库之前，不会收集任何数据。<br/><br/>为了获取图像和文本的属性，Adobe将使用以下方式检索属性：<ol><li>在用户网站访问时捕获的URL，根据您配置的数据收集设置以及</li><li>托管图像的URL。</li></ol>您不得标记托管在第三方网站上的图像。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -285,27 +290,25 @@ ht-degree: 19%
 
 * **[!UICONTROL 放弃]**：在创建新配置或编辑现有配置时所做的所有更改都将被放弃。
 * **[!UICONTROL 保存供以后使用]**：保存对新配置或现有尚未实施的配置所做的更改。 您可以在稍后阶段重新访问配置以进行进一步更改，或实施配置。
-* **[!UICONTROL 实施]**：保存和实施对新配置或现有尚未实施的配置所做的更改。 实施包括：
+* **[!UICONTROL 实施]**：保存和实施新配置或现有尚未实施的配置的设置或更改。 实施包括：
    * **[!UICONTROL Adobe Experience Platform]**&#x200B;配置：
-      1. 创建架构以对Content Analytics事件、资产属性和（如果已配置）体验属性进行建模。
-      1. 创建数据集以收集Content Analytics事件、资产属性和（如果已配置）体验属性。
-      1. 创建数据流，该数据流使用功能化服务从Content Analytics事件生成和更新内容属性。
-   * **[!UICONTROL Content Analytics]**&#x200B;配置：
-      * 基于配置设置特征化汇编程序进程。
-   * **[!UICONTROL Customer Journey Analytics]**&#x200B;配置：
-      1. 选定的数据视图已更新，将包含Content Analytics维度和量度。
-      1. 已修改与选定数据视图关联的连接，以包含Content Analytics事件和属性数据集。
-      1. Content Analytics报表模板已添加到Workspace。
+      * 创建架构以对Content Analytics事件、资产属性和（如果已配置）体验属性进行建模。
+      * 创建数据集以收集Content Analytics事件、资产属性和（如果已配置）体验属性。
+      * 创建数据流，该数据流使用功能化服务从Content Analytics事件生成和更新内容属性。
    * **[!UICONTROL 数据收集]**&#x200B;配置：
-      1. 新的或现有的标记属性配置为支持Content Analytics数据收集。 此配置意味着包含适用于标记的Adobe Content Analytics扩展。
-      1. 为Content Analytics事件创建数据流。
-      1. Adobe Content Analytics扩展已配置为确保将Content Analytics事件发送到Content Analytics的数据流。
-      1. 如果没有为Tags属性配置Web SDK，则会创建新的Web SDK配置，以仅发送Content Analytics事件。
-      1. 如果为此Tag属性配置了Web SDK，则不会对现有Web SDK配置进行任何更改。
+      * 新的或现有的标记属性配置为支持Content Analytics数据收集。 此配置意味着包含适用于标记的Adobe Content Analytics扩展。
+      * 为Content Analytics事件创建数据流。
+      * Adobe Content Analytics扩展已配置为确保将Content Analytics事件发送到Content Analytics的数据流。
+      * 如果没有为Tags属性配置Web SDK，则会创建新的Web SDK配置，以仅发送Content Analytics事件。
+      * 如果为此Tag属性配置了Web SDK，则不会对现有Web SDK配置进行任何更改。
+   * **[!UICONTROL Customer Journey Analytics]**&#x200B;配置：
+      * 选定的数据视图已更新，将包含Content Analytics维度和量度。
+      * 已修改与选定数据视图关联的连接，以包含Content Analytics事件和属性数据集。
+      * 向Workspace中添加了Content Analytics报表模板。
 * **[!UICONTROL 保存]**：保存对已实施配置所做的更改并更新实施。
 * **[!UICONTROL 退出]**。 退出引导式配置。 将会丢弃对已实施配置所做的所有更改。
 
 >[!MORELIKETHIS]
 >
->[手动配置内容分析](manual.md)
+>[手动配置](manual.md)
 >
