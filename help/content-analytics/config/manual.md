@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: ec0ea74df83bbd07b7e026d7b9d7114c7dc595ab
+source-git-commit: 20214cbebd9867a269c96f25f1a2c8b3bfa26a35
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 0%
+source-wordcount: '125'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,16 @@ ht-degree: 0%
 
 {{release-limited-testing}}
 
-*现在，对于完全不同的内容……*
+本文详细介绍了更改Content Analytics实施所需的手动配置操作。 通常，您应使用[引导式配置向导](guided.md)对您的实施进行更改，但无法使用该配置向导进行所有更改。
+
+可以使用以下手动配置操作：
+
+## 发布
+
+要激活Content Analytics配置，您需要发布关联的标记属性。
+
+
+## 修改
 
 >[!MORELIKETHIS]
 >

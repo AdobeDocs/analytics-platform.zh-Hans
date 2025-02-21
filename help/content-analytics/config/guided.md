@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: ec0ea74df83bbd07b7e026d7b9d7114c7dc595ab
+source-git-commit: 82dacd2581450303b1b87d2a72f6f6ede987d367
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 19%
+source-wordcount: '2036'
+ht-degree: 18%
 
 ---
 
@@ -105,9 +105,14 @@ ht-degree: 19%
 >abstract="从 Customer Journey Analytics 中选择一个您希望将内容分析数据与之合并的现有数据视图。<br/>"
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_dataview_change"
->title="选择数据视图"
+>id="aca_onboarding_dataview_change_content"
+>title="新建数据视图"
 >abstract="选择新数据视图将导致该数据视图更新为包括Content Analytics量度和维度。 如有必要，关联的连接也会更新以包括Content Analytics数据集。 当前为Content Analytics配置的连接和数据视图不会进行修改。"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataview_change_title"
+>title="新建数据视图"
+>abstract="新建数据视图"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -144,12 +149,12 @@ ht-degree: 19%
 >abstract="收集内容分析中的体验"
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_experiences_url_header"
+>id="aca_onboarding_experiences_parameters_header"
 >title="体验捕捉和定义"
->abstract="指定以下参数适用的 URL"
+>abstract="指定用于确定内容在您的网站上呈现方式的参数。"
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_experiences_edit_button"
+>id="aca_onboarding_experiencecapture_edit_button"
 >title="体验捕捉和定义"
 >abstract="您可以在 Adobe 内容分析扩展中的标签属性中编辑与所选配置关联的设置。"
 
@@ -194,7 +199,7 @@ ht-degree: 19%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tag_header"
 >title="数据收集"
->abstract="提供标签属性"
+>abstract="**提供标记属性**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_boldheader"
@@ -228,7 +233,7 @@ ht-degree: 19%
 
 <!-- markdownlint-enable MD034 -->
 
-#### 新配置
+#### 新配置 {#new-configuration}
 
 在新配置中，您需要定义要使用哪个Tag属性，或创建一个新的Tag属性。 此外，您需要使用正则表达式定义要包含或排除的页面和资产。
 
@@ -256,7 +261,7 @@ ht-degree: 19%
    * 为&#x200B;**[!UICONTROL 资源]**&#x200B;指定正则表达式。 例如：`(?!.*\b(store|help|admin)\b)`。
 
 
-#### 现有配置
+#### 现有配置 {#existing-configuration}
 
 对于现有配置，无法编辑Tag属性。 但是，您可以编辑要包含或排除的页面和资产。
 
@@ -279,9 +284,19 @@ ht-degree: 19%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_implementation_warning"
+>id="aca_onboarding_implementation_warning_content"
 >title="加入实施警告"
 >abstract="如果选择&#x200B;**[!UICONTROL 实施]**，则将基于在此工作流中提供的输入配置内容分析。 默认情况下，系统会根据对内容分析通常有用的内容来选择多个设置，但您（作为数据控制者）必须查看每个工件的设置，以确认这些设置是否根据您的隐私政策、合同权利和义务以及适用法律下的同意要求实施。<br/><br/>请注意，在手动发布与此配置关联的标签库之前，不会收集任何数据。<br/><br/>为了获取图像和文本的属性，Adobe将使用以下方式检索属性：<ol><li>在用户网站访问时捕获的URL，根据您配置的数据收集设置以及</li><li>托管图像的URL。</li></ol>您不得标记托管在第三方网站上的图像。"
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_implementation_warning_title"
+>title="确认实施"
+>abstract="确认实施"
+
+<!-- markdownlint-enable MD034 -->
+
 
 <!-- markdownlint-enable MD034 -->
 
@@ -307,6 +322,11 @@ ht-degree: 19%
       * 向Workspace中添加了Content Analytics报表模板。
 * **[!UICONTROL 保存]**：保存对已实施配置所做的更改并更新实施。
 * **[!UICONTROL 退出]**。 退出引导式配置。 将会丢弃对已实施配置所做的所有更改。
+
+
+## 发布 {#publish}
+
+要激活您的内容分析配置，您需要[手动](manual.md)发布在您选择&#x200B;**[!UICONTROL 实施]**&#x200B;后创建的标记属性，作为引导式配置向导的一部分。
 
 >[!MORELIKETHIS]
 >
