@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 023e7dda53cc60096076599d30a8dd78db1bfbd7
+source-git-commit: 4650718a067f68d4edfad3db71e822898f661648
 workflow-type: tm+mt
 source-wordcount: '2024'
 ht-degree: 18%
@@ -284,7 +284,6 @@ ht-degree: 18%
 >abstract="如果选择&#x200B;**[!UICONTROL 实施]**，则将基于在此工作流中提供的输入配置内容分析。 默认情况下，系统会根据对内容分析通常有用的内容来选择多个设置，但您（作为数据控制者）必须查看每个工件的设置，以确认这些设置是否根据您的隐私政策、合同权利和义务以及适用法律下的同意要求实施。<br/><br/>请注意，在手动发布与此配置关联的标记库之前，不会收集任何数据。<br/><br/>为了获取图像和文本的属性，Adobe将使用以下方式检索属性：<ol><li>在用户网站访问时捕获的URL，根据您配置的数据收集设置以及</li><li>托管图像的URL。</li></ol>您不得标记托管在第三方网站上的图像。"
 
 <!-- markdownlint-enable MD034 -->
-
 
 创建或编辑配置后，以下操作可用。
 
