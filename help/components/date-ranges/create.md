@@ -4,7 +4,7 @@ description: 创建要用在报告中的日期范围。
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: a913f23506f692e64633408b8cd9bad6be27970b
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 39%
@@ -18,7 +18,7 @@ ht-degree: 39%
 
 ![Create an annotation](assets/create-date-range.png)
 
-* ??在主界面中，选择&#x200B;**[!UICONTROL 组件]**&#x200B;并选择&#x200B;**[!UICONTROL 日期范围]**。 从[[!UICONTROL 日期范围]经理](/help/components/date-ranges/manage.md)中选择![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**]。
+* ??在主界面中，选择&#x200B;**[!UICONTROL 组件]**&#x200B;并选择&#x200B;**[!UICONTROL 日期范围]**。 从[[!UICONTROL 日期范围]经理](/help/components/date-ranges/manage.md)中选择![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]**。
 * ??在Workspace项目中，从可视化图表的上下文菜单中，选择&#x200B;**[!UICONTROL 自定义日期范围到此日期范围]**。
 * ??在Workspace项目中，从菜单中选择&#x200B;**[!UICONTROL 组件]**，然后选择&#x200B;**[!UICONTROL 创建日期范围]**
 * ??在Workspace项目中，使用快捷键&#x200B;**[!UICONTROL ctrl+shift+d]** (Windows)或&#x200B;**[!UICONTROL shift+command+d]** (macOS)。
