@@ -3,9 +3,9 @@ description: 计算量度生成器提供一个画布，可以将维度、量度�
 title: 生成计算量度
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 1ffe01609b3ab0d96b79cc9297dda9ccf25bcbb6
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1501'
 ht-degree: 11%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 11%
    | 元素 | 描述 |
    | --- | --- |
    | **[!UICONTROL 数据视图]** | 您可以选择计算指标的数据视图。  您定义的计算指标基于所选的数据视图在Workspace项目中可用。 |
-   | **[!UICONTROL 仅用于项目的量度]** | 一个信息框，用于说明该量度仅在创建它的项目中可见，并且不会将该量度添加到组件列表。 启用&#x200B;**[!UICONTROL 使此量度对所有项目都可用，并将其添加到组件列表]**&#x200B;以更改该设置。 仅当您使用&#x200B;**[!UICONTROL 从所选内容创建指标]**&#x200B;在Workspace中创建指标并选择函数（如&#x200B;**[!UICONTROL 平均值]**&#x200B;或&#x200B;**[!UICONTROL 中间值]**）时，此信息框才可见。 稍后使用[组件信息](/help/components/use-components-in-workspace.md#component-info)编辑该创建的量度。 |
+   | **[!UICONTROL 仅用于项目的量度]** | 编辑为单个项目创建的计算量度时，此对话框顶部会显示一个信息框，如[为单个项目创建计算量度](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project)中所述。 <p>如果要使该计算量度可用于所有项目，请选择选项&#x200B;**[!UICONTROL 使该量度可用于所有项目并将其添加到组件列表]**。</p> |
    | **[!UICONTROL 标题]** ![Required](/help/assets/icons/Required.svg) | 命名计算量度，例如`Conversion Rate`。 |
    | **[!UICONTROL 外部ID]** ![必需](/help/assets/icons/Required.svg) | 使用外部BI工具和BI扩展时计算量度的名称。 除非您覆盖该值，否则该值将自动定义为`undefined_xxx`。 |
    | **[!UICONTROL 描述]** | 提供筛选器的说明，例如`Calculated metric to define the conversion rate.`。无需说明计算量度的公式，因为该公式已在[!UICONTROL 摘要]中自动可用。 |
@@ -68,7 +68,7 @@ ht-degree: 11%
 
    **[!UICONTROL 产品兼容性]**&#x200B;指示计算度量是否可用于实验。 可能的值包括：
    * **[!UICONTROL Customer Journey Analytics中的所有位置]**：计算指标可在所有Customer Journey Analytics中使用。
-   * **[!UICONTROL Customer Journey Analytics中的任意位置（不包括试验）]**：计算指标可在所有Customer Journey Analytics中使用，试验面板除外。
+   * **[!UICONTROL Customer Journey Analytics中的所有位置（不包括试验）]**：计算指标可在所有Customer Journey Analytics中使用，试验面板除外。
 
 1. 选择：
    * **[!UICONTROL 保存]**&#x200B;以保存计算量度。
@@ -78,7 +78,7 @@ ht-degree: 11%
 
 ## 定义生成器
 
-您可以使用定义生成器将维度、量度、筛选器和函数拖放到容器层次结构逻辑、规则和运算符的基础上创建自定义量度。 在该构造中，您可以使用标准量度、Adobe定义的量度、计算量度、过滤器、维度和函数。 所有这些组件在计算量度生成器的组件面板中均可用。 此外，您可以在定义中使用运算符和容器。
+您可以使用定义生成器将维度、量度、筛选器和函数拖放到容器层次结构逻辑、规则和运算符的基础上创建自定义量度。 在该结构中，您可以使用标准量度、Adobe定义的量度、计算量度、过滤器、维度和函数。 所有这些组件在计算量度生成器的组件面板中均可用。 此外，您可以在定义中使用运算符和容器。
 
 ![创建计算量度](/help/components/calc-metrics/cm-workflow/assets/create-calculated-metric.gif)
 
@@ -138,8 +138,8 @@ ht-degree: 11%
 
 * 要从维度添加过滤器容器，请执行以下操作：
 
-   1. 将![Dimension](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimension]**&#x200B;组件从组件面板拖放到&#x200B;**[!UICONTROL 将指标、维度、维度项、筛选器和/或函数拖放到此处]**。 您可以使用组件栏中的![搜索](/help/assets/icons/Search.svg)来搜索特定组件。
-   1. 在&#x200B;**[!UICONTROL 从Dimension]**&#x200B;创建过滤器弹出窗口中，定义过滤器的条件。 从运算符列表中进行选择，然后选择一个值或输入一个值。 例如，**[!UICONTROL Month]** **[!UICONTROL 等于]** ![V形下降](/help/assets/icons/ChevronDown.svg) `Sep 2024`。
+   1. 将![维度](/help/assets/icons/Dimensions.svg) **[!UICONTROL 维度]**&#x200B;组件从“组件”面板拖放到&#x200B;**[!UICONTROL 将量度、维度、维度项、筛选器和/或函数拖放到此处]**。 您可以使用组件栏中的![搜索](/help/assets/icons/Search.svg)来搜索特定组件。
+   1. 在&#x200B;**[!UICONTROL 从Dimension创建过滤器]**&#x200B;弹出窗口中，定义过滤器的条件。 从运算符列表中进行选择，然后选择一个值或输入一个值。 例如，**[!UICONTROL Month]** **[!UICONTROL 等于]** ![V形下降](/help/assets/icons/ChevronDown.svg) `Sep 2024`。
    1. 选择&#x200B;**[!UICONTROL 完成]**。 筛选器容器已添加到&#x200B;**[!UICONTROL 定义]**。
 
 

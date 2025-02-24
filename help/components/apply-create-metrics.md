@@ -4,9 +4,9 @@ title: 量度
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 84ab8434671ccbce12dce95e1164b9a25c7b8439
+source-git-commit: 1ffe01609b3ab0d96b79cc9297dda9ccf25bcbb6
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '860'
 ht-degree: 8%
 
 ---
@@ -63,7 +63,7 @@ Adobe 提供了多种类型的指标，可供在 Analysis Workspace 中使用：
 
 ### 为单个项目创建计算指标
 
-您可以创建快速计算量度，这些量度仅可用于创建它们的项目。
+您可以快速创建一个计算指标，该指标仅适用于创建该指标的项目。
 
 要为单个项目创建计算指标，请执行以下操作：
 
