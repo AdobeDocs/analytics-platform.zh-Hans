@@ -7,14 +7,14 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 71b9da74-3597-4536-9e47-f18097dd917b
-source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
+source-git-commit: 9cfe89aef069d777424eb8a5d9ef8ae03a9d0486
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 50%
+source-wordcount: '201'
+ht-degree: 43%
 
 ---
 
-# 禁用 AppMeasurement 数据收集 {#disable-appmeasurement}
+# 禁用Adobe Analytics {#disable-appmeasurement}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -31,7 +31,7 @@ ht-degree: 50%
 >
 >完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
 
-<!-- need to work on this -->
+在禁用Adobe Analytics之前，请查看[中的信息评估升级到Customer Journey Analytics后何时禁用Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)。
 
 * **标记：**&#x200B;禁用Adobe Analytics扩展
 

@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: f4440148d26e81938d029d4a077cd787c868f1be
+source-git-commit: 74719504960f00f4593633bb62f29d8655cdadd9
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 54%
+source-wordcount: '482'
+ht-degree: 34%
 
 ---
 
@@ -33,6 +33,51 @@ ht-degree: 54%
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-stitch-customer-care"
+>title="联系Adobe客户关怀团队以生成拼合的数据集"
+>abstract="如果某个字段包含的标识符存在于多个数据集中，但不是主标识符，则可以使用该标识符生成具有一致标识符的新数据集。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-integrate-rtcdp"
+>title="与实时CDP集成"
+>abstract="合并来自多个来源的配置文件数据，以根据用户特征生成受众和区段。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-integrate-target"
+>title="临时与Adobe Target集成"
+>abstract="Adobe建议与Adobe Journey Optimizer集成，以实施个性化用例。 可以与Adobe Target集成，但这是一个临时解决方案。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-integrate-ajo"
+>title="与Journey Optimizer集成"
+>abstract="为客户提供互联、情境式和个性化的体验。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-integrate-aam"
+>title="暂时与 Adobe Audience Manager 集成"
+>abstract="对于基于受众的用例，Adobe建议与Adobe Real-time CDP集成。 可以与Audience Manager集成，但这是一个临时解决方案。"
+
+<!-- markdownlint-enable MD034 -->
+
 >[!NOTE]
 > 
 >在回答[Customer Journey Analytics升级核对清单](https://gigazelle.github.io/cja-ttv/)中的问题时，使用此页上的信息。
@@ -45,7 +90,9 @@ ht-degree: 54%
 |---------|----------|
 | [将Web数据与来自其他渠道的数据（如呼叫中心数据）绑定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/cross-channel/cross-channel) | Customer Journey Analytics 与 Experience Platform 保存各种数据架构和类型的能力相结合。使用[体验数据模型 (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)，可以采用统一的方式来表示和组织数据，以便进行数据合并和分析。Adobe Analytics 主要专注于 Web 和移动分析数据，并具有一些[数据导入](https://experienceleague.adobe.com/docs/analytics/import/home.html)功能。 |
 | 使用自定义维度[拼接来自其他数据集的点击](https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview) | 通过 Customer Journey Analytics，可从多个报告包[组合数据](/help/connections/combined-dataset.md)，如同它们是 Adobe Analytics 中的单个报告包一样。 |
-| 与Adobe Real-time CDP集成 |  |
-| [与Adobe Journey Optimizer集成](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/cross-channel/cross-channel) |  |
+| [与Adobe Real-time CDP集成](/help/components/audiences/audiences-overview.md) | 您可以[创建在Customer Journey Analytics中发现的受众](/help/components/audiences/audiences-overview.md)并将其发布到Adobe Experience Platform中的实时客户个人资料，以实现客户定位和个性化。 |
+| [临时与Adobe Target (A4T)集成](/help/integrations/at.md) | Customer Journey Analytics中的Target报表功能允许您直接在Customer Journey Analytics中[测量和报告Adobe Target活动](/help/integrations/at.md)。 |
+| [与Adobe Journey Optimizer集成](/help/integrations/ajo.md) | 您可以将Journey Optimizer生成的数据配置为在Customer Journey Analytics](/help/integrations/ajo.md)中[执行高级分析。 |
+| 暂时与 Adobe Audience Manager 集成 |  |
 
 

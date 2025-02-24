@@ -4,9 +4,9 @@ title: 量度
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 1ffe01609b3ab0d96b79cc9297dda9ccf25bcbb6
+source-git-commit: defe6ad6fc796a230525ba9b178d744caf340e2f
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '864'
 ht-degree: 8%
 
 ---
@@ -43,11 +43,11 @@ Adobe 提供了多种类型的指标，可供在 Analysis Workspace 中使用：
 
 ## 比较不同归因模型的指标
 
-如果您想要轻松快速地将一个归因模型与另一个量度进行比较，请从量度的上下文菜单中选择&#x200B;**[!UICONTROL 比较归因模型]**。
+若要快速比较量度的一个归因模型与另一个归因模型，请从量度的上下文菜单中选择&#x200B;**[!UICONTROL 比较归因模型]**。
 
 ![Workspace面板高亮显示比较归因模型](assets/compare-attribution.png)
 
-此快捷键可让您快速轻松地比较归因模型。
+此快捷键允许您比较一个归因模型与另一个归因模型，而无需将归因模型拖动到某个量度中且不必对其进行两次配置。
 
 ## 创建计算量度
 

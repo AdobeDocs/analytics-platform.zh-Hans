@@ -7,7 +7,7 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
-source-git-commit: a462bdbff59e8d83d6948ef882e66690624c4847
+source-git-commit: 892dffd831abd46c44c12bd6743a358e3cbd741d
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 15%
@@ -31,11 +31,11 @@ ht-degree: 15%
 
 使用Analytics Source Connector作为Customer Journey Analytics的唯一实施存在一些固有缺点。
 
-如果您的组织已升级到Customer Journey Analytics仅使用Analytics Source Connector实施，则Adobe建议迁移到使用Analytics Source Connector（用于历史数据）的实施，然后再迁移到使用Web SDK的新实施（用于持续数据收集）。
+如果贵组织已仅使用Analytics Source Connector实施升级到Customer Journey Analytics，则Adobe建议迁移到使用Analytics Source Connector（用于历史数据）的实施，然后再迁移到使用Web SDK的新实施（用于持续数据收集）。
 
 ## 了解专门使用Analytics Source Connector的优缺点
 
-有关使用Analytics源连接器的优缺点的信息，请参阅[专门使用Analytics源连接器升级到Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md)。
+有关使用Analytics源连接器的优缺点的信息，请参阅[专门使用Analytics源连接器升级到Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)。
 
 ## 从Analytics源连接器过渡到Web SDK
 
@@ -62,11 +62,11 @@ ht-degree: 15%
 
    1. 为您用于在Adobe Analytics中收集数据的Adobe Analytics ExperienceEvent Template字段组中的每个字段重复此过程。
 
-1. 将使用原始Analytics Source Connector自动创建的数据集添加到Customer Journey Analytics连接中。
+1. 将使用原始Analytics源连接器自动创建的数据集添加到您的Customer Journey Analytics连接中。
 
    有关详细信息，请参阅[将当前Analytics源连接器的数据集添加到连接](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)。
 
-1. （视情况而定）如果您使用的是查找数据集，则必须创建查找数据集并将其添加到连接中。 有关详细信息，请参阅[创建查找数据集以对Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)中的数据分类。
+1. （视情况而定）如果您使用的是查找数据集，则必须创建查找数据集并将其添加到连接中。 有关详细信息，请参阅[创建查找数据集以在Customer Journey Analytics中对数据进行分类](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)。
 
 1. 删除原始Analytics源连接器。<!-- need to add steps somewhere about how to do this -->
 

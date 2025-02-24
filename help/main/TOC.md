@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 4bbd661ce2cac94a2d532c13320e98eb0015e358
+source-git-commit: 0dd3dcc819b6e4a7b13fb4601322d94fd5db179a
 workflow-type: tm+mt
-source-wordcount: '1131'
-ht-degree: 100%
+source-wordcount: '1160'
+ht-degree: 94%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
    + [功能发布策略](../release-notes/releases.md)
    + [文档更新](../release-notes/doc-changes.md)
 
-+ 快速入门 {#cja-overview}
++ 开始使用 {#cja-overview}
    + [Customer Journey Analytics 概述](../getting-started/cja-overview.md)
    + [快速入门指南](../getting-started/cja-getting-started.md)
    + [登陆页面](../getting-started/landing.md)
@@ -47,34 +47,44 @@ ht-degree: 100%
       + [选择您的升级路径](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
       + [向平台发送数据](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + [保留历史数据](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
-      + [建议流程](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
-      + [了解 Analytics 实施](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
-      + [创建用于分类的查找数据集](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
-      + [监测数据集引入](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
-      + [创建营销渠道派生字段](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
-      + [为 Web SDK 扩展实施加载器标记](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
-      + [为您的属性创建标记](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
-      + [将 Web SDK 扩展添加到您的标记中](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
-      + [将 XDM 数据收集逻辑添加到您的标记中](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
-      + [构建您的架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
-      + [创建您的架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
-      + [使用现有架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
-      + [创建数据集](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
-      + [创建数据流](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
-      + [添加平台即服务](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
+      + [建议的升级过程](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
+      + 架构师并创建架构{#schema}
+         + [构建您的架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
+         + [创建您的架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
+         + [使用现有架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
+      + 创建数据流{#create-datastream}
+         + [创建数据流](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
+         + [添加平台即服务](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
+      + 创建数据集{#create-datasets}
+         + [创建数据集](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
+         + [创建用于分类的查找数据集](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
+         + [监测数据集引入](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
+      + 创建标记{#create-tags}
+         + [为您的属性创建标记](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
+         + [将 Web SDK 扩展添加到您的标记中](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
+         + [为 Web SDK 扩展实施加载器标记](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
+         + [将 XDM 数据收集逻辑添加到您的标记中](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
       + [创建连接](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
       + [创建数据视图](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
+      + [创建营销渠道派生字段](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
       + [验证数据流](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
-      + [升级快捷键：迁移至 Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-shortcut-websdk.md)
-      + [为 Analytics 源连接器创建 XDM 架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
-      + [创建 Analytics 源连接器并映射字段](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
-      + [将 Analytics 源连接器数据集添加到连接](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
-      + [仅使用 Analytics 源连接器](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md)
-      + [从 Analytics 源连接器移至 Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
-      + [禁用 AppMeasurement 数据收集](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
-      + [从第三方分析解决方案升级](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
-      + [升级时支持 Adobe Analytics 功能](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
-      + [升级期间和升级之后的 Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
+      + 使用Analytics源连接器{#historical-data-source-connector}保留历史数据
+         + [为 Analytics 源连接器创建 XDM 架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+         + [创建 Analytics 源连接器并映射字段](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+         + [将 Analytics 源连接器数据集添加到连接](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+      + [评估何时禁用Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
+      + [禁用Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
+      + 替代升级方法{#alternative-upgrade-methods}
+         + [使用AppMeasurement数据收集](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)
+         + [发送数据层](/help/getting-started/cja-upgrade/cja-upgrade-alternative-data-layer.md)
+         + [Analytics源连接器](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)
+      + 其他升级方案{#other-upgrade-scenarios}
+         + [从 Analytics 源连接器移至 Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
+         + [从非Adobe Analytics解决方案升级](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
+      + 其他信息 {#additional-information}
+         + [了解 Analytics 实施](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
+         + [升级时支持 Adobe Analytics 功能](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
+         + [Customer Journey Analytics功能](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md)
    + 与 Adobe Analytics 进行比较 {#cja-aa-comparison}
       + [概述](../getting-started/aa-vs-cja/overview.md)
       + [实用 Adobe Analytics 数据 ](../getting-started/aa-vs-cja/aa-data-in-cja.md)
@@ -87,7 +97,7 @@ ht-degree: 100%
    + [Adobe Analytics 的演变](../getting-started/aa-to-cja.md)
    + [适用于 Adobe Analytics 用户的用户指南](../getting-started/aa-to-cja-user.md)
 
-+ 数据引入 {#cja-data-ingestion}
++ 数据摄取 {#cja-data-ingestion}
    + [数据摄取概述](../data-ingestion/data-ingestion.md)
    + 摄取并使用快速入门指南{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
@@ -111,7 +121,7 @@ ht-degree: 100%
    + [数据视图概述](../data-views/data-views.md)
    + [创建或编辑数据视图](../data-views/create-dataview.md)
    + [会话设置](../data-views/session-settings.md)
-   + 组件设置 {#component-settings}
+   + 组件设置{#component-settings}
       + [组件设置概述](../data-views/component-settings/overview.md)
       + [归因](../data-views/component-settings/attribution.md)
       + [行为](../data-views/component-settings/behavior.md)
@@ -170,7 +180,7 @@ ht-degree: 100%
             + [动态项和静态项](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
          + [排序和过滤表格](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
          + [Workspace 总计](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
-      + 同类群组表 {#cohort-table}
+      + 同类群组表{#cohort-table}
          + [概述](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [配置](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
          + [用例](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
@@ -214,7 +224,7 @@ ht-degree: 100%
       + [媒体播放耗时](../analysis-workspace/c-panels/media-playback-time-spent.md)
       + [下一项或上一项](../analysis-workspace/c-panels/next-previous.md)
       + [快速洞察](../analysis-workspace/c-panels/quickinsight.md)
-   + 策划、共享和计划项目 {#curate-share}
+   + 策划、共享和计划项目{#curate-share}
       + [概述](../analysis-workspace/curate-share/send-schedule-files.md)
       + [策划项目](../analysis-workspace/curate-share/curate.md)
       + [共享项目](../analysis-workspace/curate-share/share-projects.md)
