@@ -4,7 +4,7 @@ title: 列设置
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 141c95b23695c09dd194c61c7cef0ce34e05ac33
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 21%

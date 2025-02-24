@@ -4,10 +4,10 @@ description: 自由格式表是在 Analysis Workspace 中进行数据分析的�
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 141c95b23695c09dd194c61c7cef0ce34e05ac33
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 25%
+ht-degree: 27%
 
 ---
 
@@ -103,7 +103,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 | **[!UICONTROL 以CSV格式下载项目（*维度名称*）]** | 立即将可视化的维度项目（最多50,000个）下载到您的本地设备。 所选维度的最大维度项为50,000个。 |
 | **[!UICONTROL 复制可视化图表]** | 复制可视化图表，以便您可以将该可视化图表插入到项目中的其他位置或完全不同的项目中。 |
 | **[!UICONTROL 下载数据CSV]** | 立即将可视化图表的显示数据下载到您的本地设备。 |
-| **[!UICONTROL 导出完整表……]** | 将整个表导出到指定的云位置。 请参阅[将Customer Journey Analytics报告导出到云](../../export/export-cloud.md) |
+| **[!UICONTROL 导出完整表……]** | 将整个表导出到指定的云位置。 请参阅[将Customer Journey Analytics报表导出到云](../../export/export-cloud.md) |
 | **[!UICONTROL 重复的可视化图表]** | 生成一个与可视化图表完全相同的副本。 |
 | **[!UICONTROL 编辑描述]** | 添加（或编辑）可视化图表的文本描述。 查看[文本](../text.md)。 |
 | **[!UICONTROL 获取可视化图表链接]** | 直接复制并共享可视化图表的链接。 共享链接对话框会显示该链接。 选择复制以将链接复制到剪贴板。 |
@@ -112,7 +112,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!MORELIKETHIS]
 >
->[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[在面板中添加可视化效果](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[可视化设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[可视化上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
