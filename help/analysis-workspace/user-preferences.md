@@ -5,9 +5,9 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: ef93e386e3c3e64a022805dcf8674b7fddf361a5
+source-git-commit: 827ab36b27eee1b0af46ff1c653f13b1accfe105
 workflow-type: tm+mt
-source-wordcount: '3635'
+source-wordcount: '3632'
 ht-degree: 96%
 
 ---
@@ -185,22 +185,22 @@ ht-degree: 96%
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultflowcontainer"
->title="默认表量度"
+>title="默认容器"
 >abstract="选择要用于[!UICONTROL 流量]可视化图表的默认容器。 如果所选数据视图不包含所选的默认容器，则[!UICONTROL 流量]可视化将自动切换到另一个主容器。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultfalloutcontainer"
->title="默认表量度"
+>title="默认容器"
 >abstract="选择要用于[!UICONTROL 流失]可视化图表的默认容器。 如果所选数据视图不包含所选的默认容器，则[!UICONTROL 流失]可视化图表将自动切换到另一个主容器。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulthistogramcountingmethod"
->title="默认表量度"
+>title="默认计数方法"
 >abstract="选择用于[!UICONTROL 直方图]可视化的默认计数方法。 如果所选数据视图不包含所选的默认计数方法，则[!UICONTROL 直方图]可视化将自动切换到另一个主要计数方法。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultjourneycanvascontainer"
->title="默认表量度"
+>title="默认容器"
 >abstract="选择用于[!UICONTROL 历程画布]可视化的默认容器。 如果所选数据视图不包含所选默认容器，[!UICONTROL 历程画布]可视化将自动切换到另一个主容器。"
 
 
