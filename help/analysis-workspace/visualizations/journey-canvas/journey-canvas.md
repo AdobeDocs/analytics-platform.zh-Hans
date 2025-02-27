@@ -4,9 +4,9 @@ title: 历程画布
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 51a6341734163fdd6b994ae9cec53ef034959896
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1893'
 ht-degree: 11%
 
 ---
@@ -234,7 +234,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 ### Journey Optimizer和Customer Journey Analytics之间的术语差异
 
-在Journey Optimizer中，某些术语表示一件事，而在Customer Journey Analytics中，这些术语则表示其他事情。 使用历程画布时，会使用Customer Journey Analytics词。
+在Journey Optimizer中，某些术语表示一件事，而在Customer Journey Analytics中，这些术语又表示其他事情。 使用历程画布时，将使用Customer Journey Analytics术语。
 
 | 术语 | 历程画布 | Journey Optimizer |
 |---------|----------|---------|
@@ -247,3 +247,9 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 ## 在历程画布中构建分析
 
 您可以在历程画布中基于Analysis Workspace中可用的任何维度或指标构建分析。 或者，您可以分析在Journey Optimizer中创建的历程。 有关详细信息，请参阅[配置历程画布可视化](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。
+
+
+>[!MORELIKETHIS]
+>
+> * [在Adobe Customer Journey Analytics中历程画布可视化图表的指南](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857)
+
