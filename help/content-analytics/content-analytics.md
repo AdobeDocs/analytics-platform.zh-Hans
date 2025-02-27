@@ -7,25 +7,21 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 7542e7a402c8e2f8d6e4c1e624f04ceb752cc27e
+source-git-commit: 8c257279353112df583b46d87ea17749a75867e2
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
 
 # 内容分析概述
 
-<!-- 
-This is a placeholder article for upcoming Content Analytics documentation. Currently used to set up contextual help entries for developer working on onboarding UI and workspace UI 
--->
-
 >[!WARNING]
 >
 >本文是即将发布的最终版本的初步非官方草稿版本，是内容分析文档的一部分。 所有内容可能会发生更改，并且本条当前版本不承担任何法律义务。
 >
 
-{#release-limited-testing}
+{{release-limited-testing}}
 
 内容分析可帮助营销人员了解内容如何影响企业定义的关键绩效指标。 除了行为数据之外， Content Analytics还收集如何使用内容以及内容如何推动影响的数据。 例如，客户对特定语调、特定调色板或特定主题的响应是否更好？ 此信息，以及特别设计的报表工作流和模板，可帮助您在Customer Journey Analytics中执行更好的分析并更深入地了解客户历程数据。
 
@@ -63,6 +59,12 @@ Content Analytics使用在Experience Platform的事件数据集中收集的Web�
 1. 特征化汇编程序服务和标识服务处理重新访问的数据。
 1. 这些服务（组件、属性和身份）的结果用于更新Experience Platform中的相关特定内容分析数据集。
 1. 然后，可以在Customer Journey Analytics配置(连接、数据视图和Workspace)中使用内容分析数据以及行为数据和其他查找数据集。 该配置为您的内容提供了独特的宏级别见解的基础。
+
+>[!NOTE]
+>
+>Content Analytics利用AI/ML。 结果（用于体验和资源的功能化）可能不准确。
+>
+
 
 >[!MORELIKETHIS]
 >

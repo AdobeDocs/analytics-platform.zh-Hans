@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 4650718a067f68d4edfad3db71e822898f661648
+source-git-commit: 2958efb16ed2f5dbd754b407ddb3b6bc2f7c1ee1
 workflow-type: tm+mt
-source-wordcount: '2024'
-ht-degree: 18%
+source-wordcount: '2097'
+ht-degree: 27%
 
 ---
 
@@ -106,8 +106,8 @@ ht-degree: 18%
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
->title="新建数据视图"
->abstract="选择新数据视图将导致该数据视图更新为包括Content Analytics量度和维度。 如有必要，关联的连接也会更新以包括Content Analytics数据集。 当前为Content Analytics配置的连接和数据视图不会进行修改。"
+>title="新的数据视图"
+>abstract="选择新的数据视图将导致该数据视图被更新，使其包含内容分析量度和维度。需要时相关联的连接也会被更新，使其包含内容分析数据集。当前为内容分析配置的连接和数据视图不会更改。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -146,7 +146,7 @@ ht-degree: 18%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_parameters_header"
 >title="体验捕捉和定义"
->abstract="指定用于确定内容在您的网站上呈现方式的参数。"
+>abstract="指定用于决定内容如何在网站上呈现的参数。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"
@@ -179,7 +179,7 @@ ht-degree: 18%
 
 ![Content Analytics配置体验捕获和定义](../assets/aca-configuration-experience-edit.png)
 
-* 选择![编辑](/help/assets/icons/Edit.svg)编辑以编辑与所选配置关联的Tag属性中Adobe Content Analytics扩展中的参数。
+* 选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**&#x200B;以编辑与所选配置关联的Tag属性中的[Adobe Content Analytics扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering)中的参数。
 
 
 ### 数据收集 {#onboarding-data-collection}
@@ -260,9 +260,9 @@ ht-degree: 18%
 
 对于现有配置，无法编辑Tag属性。 但是，您可以编辑要包含或排除的页面和资产。
 
-* 要编辑在为Content Analytics收集数据时应包含或排除哪些页面，请在&#x200B;**[!UICONTROL 体验]**&#x200B;下选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**。
+* 要编辑在为Content Analytics收集数据时应包含或排除哪些页面，请在&#x200B;**[!UICONTROL 体验]**&#x200B;下选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**。 您被重定向到与您的Content Analytics配置的Tag属性关联的[Adobe Content Analytics扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering)。 您可以编辑正则表达式以包含或排除页面。 确保您[发布](manual.md#publish)您所做的更改。
 
-* 要编辑在收集内容分析的数据时应包含或排除哪些资产，请在&#x200B;**[!UICONTROL 资产]**&#x200B;下选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**。
+* 要编辑在收集内容分析的数据时应包含或排除哪些资产，请在&#x200B;**[!UICONTROL 资产]**&#x200B;下选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**。 您被重定向到与您的Content Analytics配置的Tag属性关联的[Adobe Content Analytics扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering)。 您可以编辑正则表达式以包含或排除资产。 请确保您[发布](manual.md#publish)更改。
 
 ### 概要 {#summary}
 
@@ -281,7 +281,7 @@ ht-degree: 18%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning_dialog"
 >title="确认实施"
->abstract="如果选择&#x200B;**[!UICONTROL 实施]**，则将基于在此工作流中提供的输入配置内容分析。 默认情况下，系统会根据对内容分析通常有用的内容来选择多个设置，但您（作为数据控制者）必须查看每个工件的设置，以确认这些设置是否根据您的隐私政策、合同权利和义务以及适用法律下的同意要求实施。<br/><br/>请注意，在手动发布与此配置关联的标记库之前，不会收集任何数据。<br/><br/>为了获取图像和文本的属性，Adobe将使用以下方式检索属性：<ol><li>在用户网站访问时捕获的URL，根据您配置的数据收集设置以及</li><li>托管图像的URL。</li></ol>您不得标记托管在第三方网站上的图像。"
+>abstract="如果选择&#x200B;**[!UICONTROL 实施]**，将根据您在此工作流程中提供的输入来配置内容分析。默认情况下，会根据对内容分析的通常适用性选择几种设置，但您（作为数据控制者）必须检查每个构件的设置，以确认这些设置是根据您的隐私政策、合同权利和义务以及符合适用法律的同意声明要求实施的。<br/><br/>请注意，在手动发布与此配置关联的标记库之前，不会收集任何数据。<br/><br/>为了获取图像和文本的属性，Adobe 将使用以下方式检索属性：<ol><li>根据您配置的数据收集设置在用户访问网站时捕获的 URL，以及</li><li>图像托管所在的 URL。</li></ol>您不得对第三方网站上托管的图像进行标记。"
 
 <!-- markdownlint-enable MD034 -->
 

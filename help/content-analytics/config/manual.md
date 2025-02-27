@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: 20214cbebd9867a269c96f25f1a2c8b3bfa26a35
+source-git-commit: 2958efb16ed2f5dbd754b407ddb3b6bc2f7c1ee1
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '156'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 ## 发布
 
-要激活Content Analytics配置，您需要发布关联的标记属性。
+要激活Content Analytics配置，您需要[发布](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}关联的标记属性。 仅当您发布Content Analytics标记属性时，才会为您配置的域、体验和资产收集Content Analytics数据
 
 
 ## 修改
@@ -37,4 +37,5 @@ ht-degree: 1%
 >[!MORELIKETHIS]
 >
 >[引导式配置](guided.md)
+>[数据收集标记发布概述](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview)
 >
