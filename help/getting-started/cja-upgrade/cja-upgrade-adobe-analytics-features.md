@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 92053109-f80d-47ab-b011-c28a5411149c
-source-git-commit: 5e80e68c6b5d3dca19dae21c6719b040b28afaf9
+source-git-commit: 4f6b5531578fbc4ae0eef5dc4fb46c3c1b548417
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 55%
+source-wordcount: '469'
+ht-degree: 52%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 55%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-streaming-media"
 >title="流媒体数据"
->abstract="Adobe Analytics 的附加组件，专门用于音频、视频或流式处理内容等媒体数据收集。"
+>abstract="Adobe Analytics和Customer Journey Analytics的一个附加产品，专门用于收集媒体（如音频、视频或流式内容）的数据。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -97,9 +97,7 @@ ht-degree: 55%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->在回答[Customer Journey Analytics升级核对清单](https://gigazelle.github.io/cja-ttv/)中的问题时，使用此页上的信息。
+{{upgrade-note}}
 
 以下列表仅显示升级到Customer Journey Analytics的过程中需要考虑的Adobe Analytics功能。 有关显示Customer Journey Analytics完全支持、部分支持或不支持哪些Adobe Analytics功能的完整列表，请参阅[Customer Journey Analytics功能支持](/help/getting-started/aa-vs-cja/cja-aa.md)。
 

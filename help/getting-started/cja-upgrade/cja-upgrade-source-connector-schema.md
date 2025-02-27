@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
-source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 20%
+source-wordcount: '561'
+ht-degree: 22%
 
 ---
 
@@ -25,11 +25,7 @@ ht-degree: 20%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)为您的组织动态生成的升级步骤进行操作。
->
->完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
+{{upgrade-note-step}}
 
 ## 了解Analytics Source Connector如何将历史数据引入Customer Journey Analytics
 

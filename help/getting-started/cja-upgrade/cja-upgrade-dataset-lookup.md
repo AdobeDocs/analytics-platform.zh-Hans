@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 9%
+source-wordcount: '810'
+ht-degree: 10%
 
 ---
 
@@ -25,11 +25,7 @@ ht-degree: 9%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)为您的组织动态生成的升级步骤进行操作。
->
->完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
+{{upgrade-note-step}}
 
 与 Adobe Analytics 中的分类数据类似，查找数据集是 Customer Journey Analytics 中的数据分类的方法。
 

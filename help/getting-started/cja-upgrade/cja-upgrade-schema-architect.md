@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
-source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 25%
+source-wordcount: '460'
+ht-degree: 28%
 
 ---
 
@@ -25,11 +25,7 @@ ht-degree: 25%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)为您的组织动态生成的升级步骤进行操作。
->
->完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
+{{upgrade-note-step}}
 
 从Adobe Analytics升级到Customer Journey Analytics时，Adobe建议创建一个要与Web SDK一起使用的自定义Experience Data Model (XDM)架构。 或者，您可以使用默认的Adobe Analytics架构，该架构使用Adobe Analytics ExperienceEvent字段组。
 

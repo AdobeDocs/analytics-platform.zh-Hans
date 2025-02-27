@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
-source-git-commit: 892dffd831abd46c44c12bd6743a358e3cbd741d
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '445'
 ht-degree: 15%
 
 ---
@@ -25,13 +25,11 @@ ht-degree: 15%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->在回答[Customer Journey Analytics升级核对清单](https://gigazelle.github.io/cja-ttv/)中的问题时，使用此页上的信息。
+{{upgrade-note}}
 
 使用Analytics Source Connector作为Customer Journey Analytics的唯一实施存在一些固有缺点。
 
-如果贵组织已仅使用Analytics Source Connector实施升级到Customer Journey Analytics，则Adobe建议迁移到使用Analytics Source Connector（用于历史数据）的实施，然后再迁移到使用Web SDK的新实施（用于持续数据收集）。
+如果您的组织已仅使用Analytics Source Connector实施升级到Customer Journey Analytics，则Adobe建议转换为新的Web SDK实施以进行持续数据收集，并仅对历史数据使用Analytics Source Connector。
 
 ## 了解专门使用Analytics Source Connector的优缺点
 

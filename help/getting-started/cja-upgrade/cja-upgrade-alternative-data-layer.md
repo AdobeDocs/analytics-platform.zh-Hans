@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 5e80e68c6b5d3dca19dae21c6719b040b28afaf9
+exl-id: 3a0d03d1-def0-45e6-8eb2-115b88497e6d
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '684'
 ht-degree: 0%
 
 ---
@@ -42,9 +43,7 @@ ht-degree: 0%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->在回答[Customer Journey Analytics升级核对清单](https://gigazelle.github.io/cja-ttv/)中的问题时，使用此页上的信息。
+{{upgrade-note}}
 
 升级到Customer Journey Analytics时，Adobe [建议Experience Platform Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)的新实现。 但是，根据时间表和资源限制等多个因素，建议的升级步骤可能对您的组织不实用。
 
@@ -71,6 +70,3 @@ ht-degree: 0%
 1. 将每个数据层元素映射到所需的XDM字段。
 
    任何未映射到XDM字段的数据层元素将被永久删除，因为Adobe不知道将数据存储在何处以及如何存储。
-
-
-

@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 16%
@@ -23,6 +23,8 @@ ht-degree: 16%
 >abstract="在您的实施中使用个性化对象以便在 Adobe Journey Optimizer 中使用。"
 
 <!-- markdownlint-enable MD034 -->
+
+{{upgrade-note}}
 
 个性化对象的结果最终位于数据集中。 试验的结果。 当客户将AA与Target结合使用时，最终的空间与他们迁移到CJA以及他们将CJA与Adobe Target结合使用时空间完全不同。
 

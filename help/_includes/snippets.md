@@ -1,7 +1,7 @@
 ---
-source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '3093'
+source-wordcount: '3184'
 ht-degree: 23%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 23%
 
 ## 视频演示Adobe Analytics {#videoaa}
 
-*此视频演示了使用Adobe Analytics的功能。 然而，该功能在 Customer Journey Analytics 中同样可用。了解Adobe Analytics和Customer Journey Analytics之间的术语差异（例如区段与过滤器，或者访问次数与会话）。*
+*此视频演示了使用Adobe Analytics的功能。 然而，该功能在 Customer Journey Analytics 中同样可用。了解Adobe Analytics和Customer Journey Analytics之间的术语差异（例如区段与过滤器，或者访问与会话）。*
 
 
 ## “筛选器”面板 {#filterspanel}
@@ -201,3 +201,17 @@ ht-degree: 23%
 | **Adobe Journey Optimizer历程** | 是</br>从Journey Optimizer打开历程以进行更深入的分析和自定义 | 否 | 否 |
 
 {style="table-layout:auto"}
+
+## 升级清单注释 {#upgrade-note}
+
+>[!NOTE]
+> 
+>在回答[Customer Journey Analytics升级核对清单](https://gigazelle.github.io/cja-ttv/)中的问题时，使用此页上的信息。
+
+## 升级清单注释后续步骤 {#upgrade-note-step}
+
+>[!NOTE]
+> 
+>只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)为您的组织动态生成的升级步骤进行操作。
+>
+>完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。

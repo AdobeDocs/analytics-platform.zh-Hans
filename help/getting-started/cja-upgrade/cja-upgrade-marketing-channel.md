@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
-source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 19%
+source-wordcount: '302'
+ht-degree: 24%
 
 ---
 
@@ -25,11 +25,7 @@ ht-degree: 19%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)为您的组织动态生成的升级步骤进行操作。
->
->完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
+{{upgrade-note-step}}
 
 使用Analytics Source Connector时，营销渠道数据会通过该连接器流入Customer Journey Analytics。 在传统的 Adobe Analytics 中配置营销渠道规则，其中不支持某些规则。有关详细信息，请参阅[使用营销渠道维度](/help/use-cases/aa-data/marketing-channels.md)。
 

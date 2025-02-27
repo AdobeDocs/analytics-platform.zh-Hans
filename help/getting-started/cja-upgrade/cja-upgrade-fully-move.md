@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
-source-git-commit: 9cfe89aef069d777424eb8a5d9ef8ae03a9d0486
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 13%
+source-wordcount: '918'
+ht-degree: 14%
 
 ---
 
@@ -34,9 +34,7 @@ ht-degree: 13%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
->
->此文档应该用作[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)的一部分。
+{{upgrade-note}}
 
 升级到Customer Journey Analytics后，大多数组织最终都会禁用Adobe Analytics。 这是因为维护两个Analytics环境的成本和复杂性。
 

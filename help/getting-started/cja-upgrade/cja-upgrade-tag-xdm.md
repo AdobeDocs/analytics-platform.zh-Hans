@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
-source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '1697'
-ht-degree: 35%
+source-wordcount: '1631'
+ht-degree: 37%
 
 ---
 
@@ -25,11 +25,7 @@ ht-degree: 35%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->只有在完成所有先前的升级步骤后，才应执行本页上的步骤。 您可以按照[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)进行操作，也可以按照[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)为您的组织动态生成的升级步骤进行操作。
->
->完成此页面上的步骤后，请继续执行建议的升级步骤或动态生成的升级步骤。
+{{upgrade-note-step}}
 
 在[创建标记并添加Web SDK扩展](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)后，您必须根据您希望跟踪网站并将数据发送到Adobe Experience Platform的方式，使用数据元素和规则对其进行配置。 为标记配置数据元素和规则后，即可构建和发布该标记。
 

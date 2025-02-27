@@ -4,7 +4,7 @@ description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: e444474d9f859f59613caa8fad06998372cdf742
 workflow-type: tm+mt
 source-wordcount: '1973'
 ht-degree: 18%
@@ -63,7 +63,7 @@ ht-degree: 18%
 
 本主题讨论如何在Adobe Experience Platform中创建并将在Customer Journey Analytics中识别的受众发布到[实时客户个人资料](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/home)，以实现客户定位和个性化。
 
-阅读此[概述](/help/components/audiences/audiences-overview.md)，了解Customer Journey Analytics受众的概念。
+请阅读此[概述](/help/components/audiences/audiences-overview.md)，以了解Customer Journey Analytics受众的概念。
 
 ## 创建和发布受众 {#create}
 
@@ -71,7 +71,7 @@ ht-degree: 18%
 
    | 创建方法 | 详细信息 |
    | --- | --- |
-   | 从&#x200B;**[!UICONTROL 受众]**&#x200B;界面中。 | 从主Customer Journey Analytics菜单中选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 受众]**。 此时将显示“受众”界面。 选择&#x200B;**[!UICONTROL 创建受众]**，此时将打开[!UICONTROL 受众生成器]。 |
+   | 从&#x200B;**[!UICONTROL 受众]**&#x200B;界面中。 | 从Customer Journey Analytics主菜单中选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 受众]**。 此时将显示“受众”界面。 选择&#x200B;**[!UICONTROL 创建受众]**，将打开[!UICONTROL 受众生成器]。 |
    | 从Analysis Workspace中的可视化图表 | Analysis Workspace中的许多可视化图表都允许您使用上下文菜单创建受众。 例如，您可以从[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)中项目的上下文菜单或在[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)中的节点中选择&#x200B;**[!UICONTROL 创建受众]**。<p>使用此方法时会使用您选择的维度或维度项目预填充受众生成器中的过滤器。</p><p>通过以下可视化图表，可使用右键单击菜单创建受众：</p><ul><li>[同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[流](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[维恩图](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**注意：**&#x200B;受众不能包含计算量度。 如果尝试创建的受众包含计算量度，则该计算量度不会包含在受众定义中。</p> |
    | 通过过滤器创建/编辑 UI | 选中显示&#x200B;**[!UICONTROL 从此过滤器创建受众]**&#x200B;的框。使用此方法时会预填充过滤器。 有关详细信息，请参阅[创建筛选器](/help/components/filters/create-filters.md)。 |
 
@@ -83,8 +83,8 @@ ht-degree: 18%
 
 1. 选择&#x200B;**[!UICONTROL [!UICONTROL 查看样本ID]]**&#x200B;以查看此受众中的ID示例。 在&#x200B;**[!UICONTROL 示例ID]**&#x200B;对话框中，您可以使用![搜索](/help/assets/icons/Search.svg) [!UICONTROL *搜索示例ID*]&#x200B;来搜索示例ID。
 
-1. 仔细检查受众配置并选择&#x200B;**[!UICONTROL Publish]**。
-您会收到一条关于受众已发布的确认消息。 发布只需要一两分钟，该受众就会出现在Experience Platform中。
+1. 仔细检查受众配置并选择&#x200B;**[!UICONTROL 发布]**。
+您会收到一条关于受众已发布的确认消息。 发布只需一两分钟，该受众就会出现在Experience Platform中。
 
 1. 在同一条消息中选择&#x200B;**[!UICONTROL 在AEP中查看受众]**，您将转到Adobe Experience Platform中的[区段UI](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/overview)。 有关详细信息，请参阅下文。
 
@@ -122,9 +122,9 @@ ht-degree: 18%
 
 ## 创建和发布受众后会发生什么？ {#after-audience-created}
 
-在Customer Journey Analytics中创建和发布受众后，该受众可在Experience Platform中使用。 仅当您的组织设置为进行流式分段时，才会创建Adobe Experience Platform流式区段。
+在Customer Journey Analytics中创建并发布受众后，该受众即会在Experience Platform中使用。 仅当您的组织设置为进行流式分段时，才会创建Adobe Experience Platform流式区段。
 
-* Platform中的受众与Customer Journey Analytics受众共享相同的名称和描述。 该名称将附加有Customer Journey Analytics的受众ID，以确保受众是唯一的。
+* Platform中的受众与Customer Journey Analytics受众共享相同的名称和描述。 该名称将附加有Customer Journey Analytics受众ID，以确保受众是唯一的。
 * 对Customer Journey Analytics中的受众名称或描述所做的任何更改都会反映在Experience Platform中。
 * 如果在Customer Journey Analytics中删除了某个受众，则该受众将继续在Experience Platform中可用，直到受众的个人资料成员资格过期为止。 对于一次性受众，配置文件成员资格将在420天后过期，对于定期受众，配置文件成员资格将在16天后过期。
 
@@ -147,9 +147,9 @@ ht-degree: 18%
 
 ## 在Experience Platform中使用Customer Journey Analytics受众 {#audiences-aep}
 
-Customer Journey Analytics会从已发布的受众中获取所有命名空间和ID组合，并将其流式传输到Real-time Customer Data Platform中。 Customer Journey Analytics根据配置连接时选择作为[!UICONTROL 人员ID]的内容，将受众发送到设置了主标识的Experience Platform。
+Customer Journey Analytics会从已发布的受众中获取所有命名空间和ID组合，并将其流式传输到Real-Time Customer Data Platform中。 Customer Journey Analytics根据配置连接时选择作为[!UICONTROL 人员ID]的内容，将受众发送到设置了主身份的Experience Platform。
 
-然后，Real-time Customer Data Platform会检查每个命名空间/ID组合，并查找可能包含该组合的配置文件。 轮廓其实就是由所链接的命名空间、ID 和设备组成的集群。如果它找到配置文件，则会将命名空间和ID作为区段成员资格属性添加到此配置文件中的其他ID。 例如，可以跨其所有设备和渠道定位<user@adobe.com>。 如果未找到相关的轮廓，则会创建一份新的轮廓。
+然后，Real-Time Customer Data Platform会检查每个命名空间/ID组合，并查找可能包含该组合的配置文件。 轮廓其实就是由所链接的命名空间、ID 和设备组成的集群。如果它找到配置文件，则会将命名空间和ID作为区段成员资格属性添加到此配置文件中的其他ID。 例如，可以跨其所有设备和渠道定位<user@adobe.com>。 如果未找到相关的轮廓，则会创建一份新的轮廓。
 
 要在Platform中查看Customer Journey Analytics受众，请执行以下操作：
 
@@ -182,19 +182,19 @@ Customer Journey Analytics会从已发布的受众中获取所有命名空间和
 
 +++**如果删除Customer Journey Analytics中的受众会发生什么情况？**
 
-删除Customer Journey Analytics受众后，该受众不再显示在Experience PlatformUI中。 但是，与该受众关联的用户档案不会在Experience Platform中删除。
+删除Customer Journey Analytics受众后，该受众不再显示在Experience Platform UI中。 但是，与该受众关联的用户档案不会在Experience Platform中删除。
 
 +++
 
-+++**如果Real-time Customer Data Platform中不存在相应的配置文件，是否会创建新的配置文件？**
++++**如果Real-Time Customer Data Platform中不存在相应的配置文件，是否会创建新的配置文件？**
 
 是的，会的。
 
 +++
 
-+++**Customer Journey Analytics是以管道事件的形式还是以同样发送到数据湖的平面文件的形式发送受众数据？**
++++**Customer Journey Analytics是将受众数据作为管道事件还是作为同样发送到数据湖的平面文件发送？**
 
-Customer Journey Analytics通过pipeline将数据流式传输到Real-time Customer Data Platform中，并且这些数据还会收集到数据湖的系统数据集中。
+Customer Journey Analytics通过pipeline将数据流式传输到Real-Time Customer Data Platform中，并且这些数据还会收集到数据湖的系统数据集中。
 
 +++
 
@@ -206,13 +206,13 @@ Customer Journey Analytics通过pipeline将数据流式传输到Real-time Custom
 
 +++**选择什么 ID 作为主要身份标识？**
 
-请参阅上面的内容。每个Customer Journey Analytics只发送一个身份。
+请参阅上面的内容。每个Customer Journey Analytics人员只发送一个身份。
 
 +++
 
-+++**Real-time Customer Data Platform是否也处理Customer Journey Analytics消息？ Customer Journey Analytics是否可以通过受众共享将身份添加到配置文件身份图？**
++++**Real-Time Customer Data Platform是否也处理Customer Journey Analytics消息？ Customer Journey Analytics能否通过受众共享将身份添加到配置文件身份图？**
 
-否。由于每人只发送一个身份，因此Real-time Customer Data Platform将不会使用任何图形边缘。
+否。由于每人只发送一个身份，因此Real-Time Customer Data Platform将不会使用任何图形边缘。
 
 +++
 
