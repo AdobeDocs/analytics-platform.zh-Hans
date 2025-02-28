@@ -4,10 +4,10 @@ title: 流量概述
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 46%
+source-wordcount: '326'
+ht-degree: 25%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="workspace_flow_panel"
 >title="流量"
->abstract="分析从一个接触点到下一个接触点的访问或访客流量。<br/><br/>**参数&#x200B;**<br/>**用以下为开头**：添加一个维度、维度项目或量度以查看在所选组件出现之后出现最多的接触点。<br/>**包含**：添加一个维度或维度项目以查看在所选组件出现之前和之后出现最多的接触点。<br/>**用以下为结尾**：添加一个维度、维度项目或量度以查看在所选组件出现之前出现最多的接触点。<br/>**路径维度**：添加一个维度，用作通往或者离开您的选定组件的路径。"
+>abstract="分析从一个接触点到下一个接触点的访问或访客流量。 指定要以开始和结束的组件（量度、维度或项目）。 或者，您可以定义高级设置以进一步配置可视化图表。"
 
 <!-- markdownlint-enable MD034 -->
 

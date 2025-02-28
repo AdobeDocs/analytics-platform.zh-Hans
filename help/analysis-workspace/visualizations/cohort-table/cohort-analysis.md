@@ -4,10 +4,10 @@ description: 了解如何在Analysis Workspace中使用同类群组表进行同�
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 30%
+source-wordcount: '705'
+ht-degree: 23%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 30%
 >[!CONTEXTUALHELP]
 >id="workspace_cohorttable_panel"
 >title="同类群组表"
->abstract="根据事件的完成情况分组用户，然后分析这些用户在一段时间内的持续参与和流失程度。<br/><br/>**参数&#x200B;**<br/>**纳入标准**：用于定义您的初始访客同类群组的组件。<br/>**回访标准**：用于确定访客是否已回访的组件。"
+>abstract="根据事件的完成情况分组用户，然后分析这些用户在一段时间内的持续参与和流失情况。 指定其他设置，如粒度、同类群组分析类型以及是否使用滚动计算。 您可以设置高级选项，以根据所选维度构建延迟表或自定义维度同类群组。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -66,7 +66,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >
 >[!UICONTROL 同类群组分析]不支持不可过滤的量度（包括计算量度）、非整数量度（如收入）或发生次数。 只有可在筛选器中使用的量度才能在[!UICONTROL 同类群组分析]中使用，并且这些量度一次只能递增1。
 
-Customer Journey Analytics中的同类群组表支持基于双精度指标（或任何基于数字的指标）。 例如，Purchase.Value(a double)可用作包含/返回量度。 此外，通过Analytics Source Connector传递到Adobe Experience Platform的所有量度也是双精度的。
+Customer Journey Analytics中的同类群组表支持基于双精度（或任何数字）的量度。 例如，Purchase.Value(a double)可用作包含/返回量度。 此外，通过Analytics Source Connector传递到Adobe Experience Platform的所有量度也是双精度的。
 
 ## 同类群组表功能
 

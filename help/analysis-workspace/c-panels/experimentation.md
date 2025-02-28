@@ -4,10 +4,10 @@ title: 试验性面板
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: dbf0ef92069778f6c805fa4315864b2c2c4a6622
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '2183'
-ht-degree: 20%
+source-wordcount: '2141'
+ht-degree: 16%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 20%
 >[!CONTEXTUALHELP]
 >id="workspace_experimentation_panel"
 >title="试验"
->abstract="比较不同的用户体验、营销或消息变化，以确定哪些最能推动特定结果。<br/><br/>**参数&#x200B;**<br/>**试验**：接受分析的试验。<br>**控制变量**：所选试验的控制变量。<br/>**成功量度**：最多 5 个标准（非计算）成功量度来分析试验。<br/>**规范化量度**：人员、会话或事件。此指标（也称为计数方法）将作为提升计算的分母。该量度也会在应用置信度计算之前影响数据汇总的方式。"
+>abstract="比较不同的用户体验、营销或消息变化，以确定哪些最能推动特定结果。 指定试验、要与之比较的控制变量、成功量度和标准化量度。 （可选）设置置信度的上限和下限。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -39,7 +39,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >[!ENDSHADEBOX]
 
 
-通过&#x200B;**[!UICONTROL 试验]**&#x200B;面板，分析师可以比较不同的用户体验、营销或消息传递变化，以确定哪一种最能推动特定结果。 您可以从任何试验平台评估任何A/B试验的提升和置信度：在线、离线、Target或Journey Optimizer等Adobe解决方案，甚至BYO（自带）数据。
+通过&#x200B;**[!UICONTROL 试验]**&#x200B;面板，分析师可以比较不同的用户体验、营销或消息传递变化，以确定哪一种最能推动特定结果。 您可以从任何试验平台评估任何A/B试验的提升和置信度：在线、离线、Adobe解决方案(如Target或Journey Optimizer)，甚至BYO（自带）数据。
 
 详细了解Adobe Customer Journey Analytics与Adobe Target之间的[集成](https://experienceleague.adobe.com/zh-hans/docs/target/using/integrate/cja/target-reporting-in-cja)。
 
@@ -60,7 +60,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 建议的数据架构将试验数据放在[对象数组](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array)中，该数组在两个单独的维度中包含试验数据和变体数据。 两个维度都必须位于&#x200B;**单个**&#x200B;对象数组中。 如果您的试验数据位于单个维度中（试验数据和变体数据位于分隔字符串中），则可在数据视图中使用[子字符串](/help/data-views/component-settings/substring.md)设置将该维度一分为二以用于面板中。
 
 
-将试验数据[引入Adobe Experience Platform后，[在Customer Journey Analytics](/help/connections/create-connection.md)中创建与一个或多个试验数据集的连接。](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home)
+将试验数据[引入Adobe Experience Platform后，[在Customer Journey Analytics中创建与一个或多个试验数据集的连接](/help/connections/create-connection.md)。](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home)
 
 ### 在数据视图中添加上下文标签
 
@@ -88,7 +88,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
    >[!IMPORTANT]
    >
-   >如果尚未完成Customer Journey Analytics数据视图中的必要设置，则在可以继续操作之前会收到此消息： [!UICONTROL 请在数据视图中配置试验维度和变体维度]。
+   >如果尚未完成Customer Journey Analytics数据视图中的必要设置，则在可继续操作之前会收到此消息： [!UICONTROL 请在数据视图中配置试验和变体维度]。
    >
 
 ### 面板输入
@@ -101,7 +101,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
    | 设置 | 定义 |
    | --- | --- |
-   | **[!UICONTROL 日期范围]** | 根据在所选试验的Customer Journey Analytics中收到的第一个事件，自动设置试验面板的日期范围。 如果需要，可以将日期范围限制或扩展到更具体的时间范围。 |
+   | **[!UICONTROL 日期范围]** | 试验面板的日期范围会根据Customer Journey Analytics中为所选试验收到的第一个事件自动进行设置。 如果需要，可以将日期范围限制或扩展到更具体的时间范围。 |
    | **[!UICONTROL 试验]** | 向最终用户展示的一组体验变体，用于确定哪一种变体最好永久保留。 试验由两个或多个变量组成，其中一个变量视为控制变量。该设置预先填充了数据视图中已标记为&#x200B;**[!UICONTROL 试验]**&#x200B;标签的维度，以及过去3个月的试验数据。 |
    | **[!UICONTROL 控件变体]** | 最终用户体验中的两种或多种变化中的一种，并会为了确定更好的替代方案而对其进行比较。必须选择一个变量作为控制变量，并且只能将一个变量视为控制变量。 该设置预先填充了数据视图中已标记为&#x200B;**[!UICONTROL 变量]**&#x200B;标签的维度。 此设置将会调出与此试验相关的变量数据。 |
    | **[!UICONTROL 成功量度]**➊ | 用户正在与变量进行比较的一个或多个量度。转换量度（最高或最低）具有最理想结果的变量被声明为试验的&#x200B;*最佳性能变量*。 最多可添加 5 个量度。 |
@@ -160,7 +160,7 @@ A/B测试是行业内客观衡量此类干预效果的黄金标准。 A/B测试�
 
 现在，考虑一个不是通过随机化实现的维度，例如，人的美国状态。 主要来自纽约和加利福尼亚两个州。 由于地区天气差异，冬衣品牌在两个州的平均销售收入可能有所不同。 在这种情况下，天气可能是冬季服装销售背后的真正因果因素，而不是人的地理状态不同这一事实。
 
-通过Customer Journey Analytics中的“试验”面板，可按人员的各个状态的平均收入差异分析数据。 在这种情况下，产出没有因果解释。 然而，这种分析可能仍然有意义。 它提供了按各州划分的平均收入差异的估计（以及不确定性的衡量标准）。  此值也称为&#x200B;*统计假设验证测试*。 此分析的输出可能很有趣，但不一定可操作。 仅仅因为您尚未随机化，有时也无法随机化人员以显示该维度的可能值之一。
+通过Customer Journey Analytics中的“试验”面板，可按人员所在州的平均收入差异分析数据。 在这种情况下，产出没有因果解释。 然而，这种分析可能仍然有意义。 它提供了按各州划分的平均收入差异的估计（以及不确定性的衡量标准）。  此值也称为&#x200B;*统计假设验证测试*。 此分析的输出可能很有趣，但不一定可操作。 仅仅因为您尚未随机化，有时也无法随机化人员以显示该维度的可能值之一。
 
 下图比较了这两种情况：
 
@@ -184,7 +184,7 @@ A/B测试是行业内客观衡量此类干预效果的黄金标准。 A/B测试�
 * 以下任一基本量度：
    * 人员
 
-创建计算量度时，与“试验”面板不兼容的计算量度在&#x200B;[!UICONTROL **产品兼容性**]&#x200B;字段中的Customer Journey Analytics（不包括试验）处具有值&#x200B;[!UICONTROL **Everywhere**]。 有关创建计算量度的信息，请参阅[生成量度](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)。
+创建计算量度时，与“试验”面板不兼容的计算量度在&#x200B;[!UICONTROL **产品兼容性**]&#x200B;字段中的Customer Journey Analytics中的所有位置（不包括试验）具有值&#x200B;[!UICONTROL **Everywhere**]。 有关创建计算量度的信息，请参阅[生成量度](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)。
 
 ## 在试验面板中使用计算量度
 

@@ -4,10 +4,10 @@ description: 在 Analysis Workspace 中如何使用和解读归因面板。
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 1709bb2e262759376b0b0bb78444253968f9dac4
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 47%
+source-wordcount: '661'
+ht-degree: 38%
 
 ---
 
@@ -18,20 +18,20 @@ ht-degree: 47%
 >[!CONTEXTUALHELP]
 >id="workspace_attribution_button"
 >title="归因"
->abstract="使用任意维度和转化量度，快速比较和可视化任意数量的归因模型"
+>abstract="使用成功量度、渠道和回顾窗口，快速比较和可视化任意数量的归因模型。"
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ 面板"
 
 >[!CONTEXTUALHELP]
 >id="workspace_attribution_panel"
 >title="”归因“面板"
->abstract="使用任意维度和转化量度，快速比较并可视化任意数量的归因模型。<br/><br/>**参数&#x200B;**<br/>**渠道**<br/>&#x200B;归因的对比维度。该维度可以是营销渠道、营销活动或任何其他维度。<br/>**模型**<br/>&#x200B;该模型可以确定如何将点数分配给各个接触点。<br/>**回顾窗口**<br/>&#x200B;此设置可以确定应用于每次转化的数据归因窗口。"
+>abstract="快速比较和可视化任意数量的归因模型以获得成功量度。 选择渠道（维度）、要包含的模型和回顾窗口。"
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ 面板"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 
-_本文在_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_&#x200B;中记录归因面板。<br/>_查看本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版本的[归因面板](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/attribution)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_&#x200B;中的归因面板。<br/>_查看本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版本的[归因面板](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/attribution)。_
 
 >[!ENDSHADEBOX]
 

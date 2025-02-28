@@ -4,14 +4,15 @@ title: 配置流失可视化
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 36%
+source-wordcount: '734'
+ht-degree: 38%
 
 ---
 
-# 配置流失可视化
+# 配置流失可视化 {#configure-fallout-visualization}
+
 
 您可以指定接触点以创建多维度流失序列。通常，接触点就是网站中的某个页面。但是，接触点并不仅限于页面。例如，您可以添加事件（如件数），以及独特人员和回访。 也可以添加维度，如类别、浏览器类型或内部搜索词。
 
@@ -54,13 +55,18 @@ ht-degree: 36%
    | **[!UICONTROL 下一个事件]** | 重新计算后将在下一个事件的路径中到达下一页。 |
 
 
-## 设置
+## 设置 {#settings}
+
+>[!CONTEXTUALHELP]
+>id="workspace_fallout_container"
+>title="流失容器"
+>abstract="选择一个容器以分析路径。 此选择可帮助您了解参与情况并将分析限制在选定容器中。"
 
 作为可视化的一部分，特定设置可用。
 
 | 流失容器 | 描述 |
 |--- |--- |
-| **[!UICONTROL 会话]**&#x200B;或&#x200B;**[!UICONTROL 人员]** | 在[!UICONTROL 会话]和[!UICONTROL 人员]之间切换以分析人员路径。 默认值为[!UICONTROL 人员]。 这些设置可帮助您在人员级别（跨会话）了解人员参与程度，或将分析限定于单次会话。 |
+| **[!UICONTROL 会话]**&#x200B;或&#x200B;**[!UICONTROL 人员]** | 在[!UICONTROL 会话]和[!UICONTROL 人员]之间切换以分析人员路径。 默认为[!UICONTROL 人员]。这些设置可帮助您在人员级别（跨会话）了解人员参与程度，或将分析限定于单次会话。 |
 
 
 ## 上下文菜单
@@ -80,7 +86,7 @@ ht-degree: 36%
 
 >[!MORELIKETHIS]
 >
->[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[在面板中添加可视化效果](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[可视化设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[可视化上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

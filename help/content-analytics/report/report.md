@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 2958efb16ed2f5dbd754b407ddb3b6bc2f7c1ee1
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -59,3 +59,9 @@ Content Analytics报表是在Analysis Workspace中完成的。 特定Workspace [
 ## 模板
 
 有关模板的详细信息……
+
+
+>[!MORELIKETHIS]
+>
+>[Content Analytics组件](components.md)
+>

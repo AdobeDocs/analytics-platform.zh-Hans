@@ -4,14 +4,20 @@ title: 如何配置流量可视化图表
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1446'
 ht-degree: 37%
 
 ---
 
-# 配置流量可视化图表
+# 配置流量可视化图表 {#configure-a-flow-visualization}
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_container"
+>title="流量容器"
+>abstract="选择要用于显示路径分析的容器（编号）。"
+
 
 流量可视化帮助您了解源自网站或应用程序上特定转化事件的旅程。 或导致特定的转化事件。 可视化图表通过维度（和维度项）或量度跟踪路径。
 
@@ -39,7 +45,7 @@ ht-degree: 37%
    >
    >计算量度不能在&#x200B;**[!UICONTROL Starts with]**&#x200B;或&#x200B;**[!UICONTROL Ends with]**&#x200B;字段中使用。
 
-1. 如果您选择某个量度，则还需要提供一个&#x200B;[!UICONTROL **路径Dimension**]，用作通往或离开您选定组件的路径，如下所示。 默认的是 [!UICONTROL **页面**]。
+1. 如果您选择某个量度，则还需要提供一个&#x200B;[!UICONTROL **路径Dimension**]，用作通往或来自您选定组件的路径，如下所示。 默认的是 [!UICONTROL **页面**]。
 
    ![流配置](assets/flow-configure.png)
 
@@ -49,7 +55,7 @@ ht-degree: 37%
    | 设置 | 描述 |
    | --- | --- |
    | **[!UICONTROL 包装标签]** | 通常情况下，流量元素上的标签会被截断以节约屏幕资源，但您可以通过选中此框使整个标签可见。默认值 = 取消选中。 |
-   | **[!UICONTROL 包括重复实例]** | 流量可视化图表基于某个维度的实例。此设置使您可以选择包含或排除重复的实例，例如，页面重新加载。 但是，不能从包含多值维度（例如 listVar、listProp、s.product、推销 eVar 等）的流量可视化图表中删除重复项。 <p>默认禁用此选项。</p> |
+   | **[!UICONTROL 包括重复实例]** | 流量可视化内容基于某个维度的实例。此设置使您可以选择包含或排除重复的实例，例如，页面重新加载。 但是，不能从包含多值维度（例如 listVar、listProp、s.product、推销 eVar 等）的流量可视化图表中删除重复项。 <p>默认禁用此选项。</p> |
    | **[!UICONTROL 限制到第一次/最后一次发生次数]** | 将路径限制为以维度、项目或量度的第一次或最后一次发生次数开头或结尾的路径。 有关更详细的说明，请参阅[限制到第一次/最后一次发生次数](#example-scenario-for-limit-to-firstlast-occurrence)。 |
    | **[!UICONTROL 列数]** | 流量图中所需的列数。您最多可以指定 5 个列。 |
    | **[!UICONTROL 每列扩展的项]** | 每列中所需的项数。您最多可以指定每列扩展 10 个项。 |
@@ -141,12 +147,12 @@ ht-degree: 37%
   在下面的示例中，仅包括流程每个步骤中&#x200B;*产品主类别*&#x200B;和&#x200B;*添加到购物车*&#x200B;的&#x200B;**最后**次发生次数。
   ![Lint，开始](assets/limitonlast.png)
 * 使用的系列因容器而异。如果使用&#x200B;**[!UICONTROL 人员]**&#x200B;容器，则一系列事件是会话。 如果使用&#x200B;**[!UICONTROL 会话]**&#x200B;容器，则事件系列是给定用户在提供的日期范围内的所有事件。
-* 在&#x200B;**[!UICONTROL Starts with]**&#x200B;或&#x200B;**[!UICONTROL Ends with]**&#x200B;字段中使用指标或Dimension项时，可以在高级设置中配置&#x200B;**[!UICONTROL 限制到第一次/最后一次发生次数]**&#x200B;选项。
+* 在&#x200B;**[!UICONTROL Starts with]**&#x200B;或&#x200B;**[!UICONTROL Ends with]**&#x200B;字段中使用量度或Dimension项时，可以在高级设置中配置&#x200B;**[!UICONTROL 限制到第一次/最后一次发生次数]**&#x200B;选项。
 
 
 >[!MORELIKETHIS]
 >
->[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[在面板中添加可视化效果](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[可视化设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[可视化上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

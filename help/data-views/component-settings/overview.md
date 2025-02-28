@@ -5,10 +5,10 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 98%
+source-wordcount: '669'
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="dataview_component_settings"
 >title="组件设置"
->abstract="查看和配置名称、描述以及其他与组件相关的设置。<br/><br/>**参数&#x200B;**<br/>**隐藏报告中的组件**：选中此框将会在报告中对非管理员用户隐藏此组件。管理员仍可通过在 Workspace 项目中选择&#x200B;**[!UICONTROL 显示所有组件]**&#x200B;来访问该组件。"
+>abstract="查看和配置名称、描述以及与组件相关的其他设置。 选中此框可在报告中对非管理员用户隐藏此组件。 管理员仍可以通过在Workspace项目中选择&#x200B;**[!UICONTROL 显示所有组件]**&#x200B;来访问该组件。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -59,7 +59,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [组件类型设置](https://video.tv.adobe.com/v/333112/?quality=12&learn=on){target="_blank"}。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [组件类型设置](https://video.tv.adobe.com/v/333112/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 

@@ -4,10 +4,10 @@ title: “下一项或上一项”面板
 feature: Panels
 role: User, Admin
 exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 36%
+source-wordcount: '420'
+ht-degree: 19%
 
 ---
 
@@ -20,14 +20,12 @@ ht-degree: 36%
 >title="下一项或上一项"
 >abstract="创建一个面板来了解人们来自的前一个维度或人们要去的下一个维度。"
 
-<!-- markdownlint-disable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_panel"
 >title="下一项或上一项"
->abstract="分析访客之前最常来自何处或后续最常访问的地方是什么。<br/><br/>**维度**：选择一个维度。例如&#x200B;**页面**。<br/>**维度项**：选择具体的维度项目。例如&#x200B;**主页**。<br/>**方向**：选择&#x200B;**下一项**&#x200B;以查看所选维度项目后的下一个维度项目。选择&#x200B;**上一项**&#x200B;来查看您所选的维度项目之前的维度项目。<br/>**容器**：选择&#x200B;**线程**&#x200B;来查看同一线程中的下一个/上一个维度项目，或选择&#x200B;**人员**&#x200B;来查看同一个人的上一个/下一个维度项目。"
+>abstract="分析访客之前来自或前往下一个最常见的位置。 指定要用于可视化的维度、维度项、方向和容器。"
+
+
 
 <!-- markdownlint-enable MD034 -->
 
@@ -39,7 +37,12 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 **[!UICONTROL 下一个或上一个项目]**&#x200B;面板包含许多表和可视化图表，用于标识特定维度的下一个或上一个维度项目。 例如，您可能希望探索客户在访问主页后最常访问哪些页面。
 
-## 使用
+## 使用 {#use}
+
+>[!CONTEXTUALHELP]
+>id="workspace_nextorpreviousitem_container"
+>title="容器"
+>abstract="选择货箱以确定查询的范围。"
 
 要使用&#x200B;**[!UICONTROL 下一个或上一个项目]**&#x200B;面板：
 

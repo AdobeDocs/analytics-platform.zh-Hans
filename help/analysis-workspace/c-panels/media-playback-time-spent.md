@@ -4,10 +4,10 @@ description: 如何在Analysis Workspace中使用和解释“媒体播放耗时�
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 55%
+source-wordcount: '1073'
+ht-degree: 49%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 55%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaplaybacktimespent_panel"
 >title="媒体播放耗时"
->abstract="分析一段时间内的视频消耗情况，选择各种粒度，并进行细分和比较。<br/><br/>**粒度**：选择查看并发查看者的时段。<br/>**面板摘要数字（可选）**：选择显示每行带有日期或时间详细信息的摘要数字。最大值将会显示播放耗时峰值的详细信息。最小值显示低谷期的详细信息。总和显示播放耗时总和的详细信息。<br/>**系列细分（可选）**：按区段、维度、维度项或日期范围细分可视化图表。一次最多查看 10 行。细分仅限一个级别。<br/>**时间格式**：以小时或分钟显示可视化时间格式的选项。"
+>abstract="分析一段时间的视频使用情况，选择各种粒度，并（可选）使用过滤器、维度、维度项或日期范围进行细分和比较。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -41,8 +41,8 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!NOTE]
 >
->“媒体平均受众访问分钟数”面板仅适用于已购买流媒体收集加载项进行Customer Journey Analytics的客户。
->有关更多信息，请与您的Adobe销售代表或Adobe客户团队联系。
+>“媒体平均受众访问分钟数”面板仅适用于已购买适用于Customer Journey Analytics的流媒体收集加载项的客户。
+>有关更多信息，请与Adobe销售代表或Adobe客户团队联系。
 >
 
 **[!UICONTROL 媒体播放耗时]**&#x200B;面板支持分析一段时间内的播放，其中提供关于并发高峰的详细信息，并可进行分解和比较。

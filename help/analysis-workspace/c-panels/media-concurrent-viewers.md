@@ -4,10 +4,10 @@ description: 如何在Analysis Workspace中使用和解释“媒体并行查看�
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '1238'
-ht-degree: 46%
+source-wordcount: '1174'
+ht-degree: 40%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_button"
 >title="媒体并行查看者"
->abstract="创建一个面板来分析特定内容或特定时段内的平均受众访问分钟数。"
+>abstract="创建一个面板以分析特定时段内的并行查看者。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_panel"
 >title="媒体并行查看者"
->abstract="分析一段时间内的并发查看者，查看并发峰值，或进行细分和比较。<br/><br>**粒度**：选择查看并发查看者的时段。<br/>**面板摘要数字**：<br/>选择显示每行带有日期或时间详细信息的摘要数字。“最大值”显示并发峰值的详细信息。“最小值”显示低谷期的详细信息。<br/>**系列细分（可选）**：按区段、维度、维度项或日期范围细分可视化图表。一次最多查看 10 行。细分仅限一个级别。"
+>abstract="分析一段时间内的并发查看者，查看并发峰值，并（可选）使用过滤器、维度、维度项或日期范围进行细分和比较。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -41,9 +41,9 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!NOTE]
 >
->“媒体平均受众访问分钟数”面板仅适用于已购买流媒体收集加载项进行Customer Journey Analytics的客户。
+>“媒体平均受众访问分钟数”面板仅适用于已购买适用于Customer Journey Analytics的流媒体收集加载项的客户。
 >
->有关更多信息，请与您的Adobe销售代表或Adobe客户团队联系。
+>有关更多信息，请与Adobe销售代表或Adobe客户团队联系。
 >
 
 **[!UICONTROL 媒体并行查看者]**&#x200B;面板支持分析一段时间内的并行查看者，了解有关并发峰值的详细信息，并且可以进行细分和比较。
