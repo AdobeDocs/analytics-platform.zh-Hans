@@ -5,24 +5,24 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 role: Admin
-source-git-commit: ac1d8a191bbad049ada246937364aeb7f8b275a0
+source-git-commit: 8071e8d5e1ab7e9cfc5037d710361a4d10285704
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '957'
 ht-degree: 64%
 
 ---
 
-# 数据引入概述
+# 数据摄取概述
 
-将数据摄取到Customer Journey Analytics时，有几个选项可供您选择。 他们中的一些人假设你想移动传统的 Adobe Analytics 数据，有些人假设你使用的是从 Adobe Experience Platform 获取的数据。
+将数据摄取到Customer Journey Analytics时，您有多个选项。 他们中的一些人假设你想移动传统的 Adobe Analytics 数据，有些人假设你使用的是从 Adobe Experience Platform 获取的数据。
 
 >[!IMPORTANT]
 >
 >在所有情况下，您希望在 Customer Journey Analytics 中&#x200B;_使用的_&#x200B;数据实际上都是在 Adobe Experience Platform 中&#x200B;_获取的_。
 
-请参阅前面[概述](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=zh-Hans)中所示的高级 Customer Journey Analytics 体系结构：
+请参阅前面[概述](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=zh-hans)中所示的高级 Customer Journey Analytics 体系结构：
 
-![Customer Journey Analytics架构（如本节所述）](./assets/cja-architecture.png)
+本节中描述的![Customer Journey Analytics架构](./assets/cja-architecture.png)
 
 上述模式中的数据集可以来自各种来源：
 
@@ -34,7 +34,7 @@ ht-degree: 64%
 
 - 来自使用Adobe Experience Platform Web/Mobile SDK跟踪您的网站/移动应用程序的数据，
 
-- 来自使用Adobe Experience PlatformEdge Network服务器API跟踪桌面应用程序、控制台游戏、机顶盒或IoT设备的数据，或者
+- 来自使用Adobe Experience Platform Edge Network Server API跟踪桌面应用程序、控制台游戏、机顶盒或物联网设备的数据，或者
 
 - 来自 Adobe 提供源连接器的第三方数据提供商的数据。
 
@@ -44,15 +44,15 @@ ht-degree: 64%
 
 ## 摄取优先级和延迟
 
-无论事件数据是在24小时、48小时还是7天之前，您都可以在90分钟(SLT)内以Customer Journey Analytics摄取该数据。
+无论事件数据是24小时、48小时还是7天之前的数据，您都可以在90分钟(SLT)内将其摄取到Customer Journey Analytics。
 
 请注意，此功能根据贵公司购买的 SKU 包而有所不同：
 
 - 优先摄取基本：90分钟SLT处理内24小时之前的数据（可用于&#x200B;**CJA Foundation**&#x200B;和&#x200B;**CJA Select**）
 
-- 优先级摄取中间：90分钟SLT处理内72小时的旧数据（可用于&#x200B;**CJA Prime**）
+- 优先级摄取中间：90分钟SLT处理内72小时之前的数据(可用于&#x200B;**CJA Prime**)
 
-- 高级优先级摄取：90分钟SLT处理内的一周前数据（可用于&#x200B;**CJA Ultimate**）
+- 优先级摄取高级：90分钟SLT处理内的一周前数据(可用于&#x200B;**CJA Ultimate**)
 
 ## 从传统 Adobe Analytics 中获取和使用数据
 
@@ -75,11 +75,11 @@ ht-degree: 64%
 
 有关详细信息，请参阅[通过Adobe Experience Platform Mobile SDK摄取和使用数据](./aepmobilesdk.md)。
 
-### 使用Adobe Experience PlatformEdge Network服务器API
+### 使用Adobe Experience Platform Edge Network服务器API
 
-您想要分析桌面应用程序、游戏主机上所玩的游戏、机顶盒上的视频流应用程序的使用情况或使用Adobe技术的IoT设备。 可以从其他解决方案进行迁移，或从头开始跟踪人员在这些设备上的行为。 您需要遵循Adobe的实施最佳实践，即使用Adobe Experience PlatformEdge Network服务器API和Edge Network来摄取数据。 然后您可以在 Customer Journey Analytics 中使用、组合和分析摄入的数据与来自其他渠道和数据源的数据。
+您想要使用Adobe技术分析桌面应用程序、游戏主机上玩的游戏、机顶盒上的视频流应用程序的使用情况或物联网设备。 可以从其他解决方案进行迁移，或从头开始跟踪人员在这些设备上的行为。 您需要遵循Adobe的实施最佳实践，即使用Adobe Experience Platform Edge Network Server API和Edge Network来摄取数据。 然后您可以在 Customer Journey Analytics 中使用、组合和分析摄入的数据与来自其他渠道和数据源的数据。
 
-有关详细信息，请参阅[通过Adobe Experience PlatformEdge Network服务器API摄取和使用数据](./serverapi.md)。
+有关详细信息，请参阅[通过Adobe Experience Platform Edge Network Server API摄取和使用数据](./serverapi.md)。
 
 ## 摄取和使用批次数据
 
@@ -98,3 +98,8 @@ ht-degree: 64%
 您可以从源连接器支持的源获取数据。源连接器是可配置的配置允许您将数据从 Adobe、第一方和第三方应用程序摄取到 Adobe Experience Platform 中。有关可用源连接器的概述请参见[源连接器概述](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hans)。使用源连接器您可以轻松地将数据从源导入 Adobe Experience Platform，然后在 Customer Journey Analytics 中使用、组合和分析来自其他渠道和数据源的数据。
 
 有关详细信息请参阅[摄取并使用源连接器使用数据](./sources.md)。
+
+>[!MORELIKETHIS]
+>
+>博客： [详细了解Adobe Customer Journey Analytics中的数据处理和摄取](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
+

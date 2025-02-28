@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
-source-git-commit: 6cd4fadc28117ed88b68d17274ab8de2b0edff10
+source-git-commit: e2e04432682f94b18bf9ed25d15f906c05bfd59d
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1146'
 ht-degree: 7%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 7%
 
 ### 组合数据
 
-如[组合事件数据集](/help/connections/combined-dataset.md)中所述，在定义连接时，Customer Journey Analytics会创建一个整体的组合事件数据集。 为源自摘要数据集的维度配置数据视图时，可使用选项对维度进行分组和隐藏，以备在Workspace中生成报表。 专门针对摘要数据，摘要数据会根据[摘要数据组组件](component-settings/summary-data-group.md)配置与事件数据相结合。
+如[合并事件数据集](/help/connections/combined-dataset.md)中所述，在定义连接时，Customer Journey Analytics会创建整个合并事件数据集。 为源自摘要数据集的维度配置数据视图时，可使用选项对维度进行分组和隐藏，以备在Workspace中生成报表。 专门针对摘要数据，摘要数据会根据[摘要数据组组件](component-settings/summary-data-group.md)配置与事件数据相结合。
 
 | 跟踪代码 | 营销活动代码 | 展示次数 | 成本 | 点进次数 | 收入 |
 |---|---|--:|--:|--:|--:|
@@ -93,7 +93,7 @@ ht-degree: 7%
 
 ### 粒度和时区
 
-在配置包含Customer Journey Analytics中摘要数据的数据集时，您会注意到粒度是自动从数据派生的。 已禁用&#x200B;**[!UICONTROL 时间戳]**&#x200B;和&#x200B;**[!UICONTROL 时区]**&#x200B;下拉列表的选择，因为两者都派生自架构定义。
+在Customer Journey Analytics中配置包含摘要数据的数据集时，您会注意到粒度是自动从数据派生的。 已禁用&#x200B;**[!UICONTROL 时间戳]**&#x200B;和&#x200B;**[!UICONTROL 时区]**&#x200B;下拉列表的选择，因为两者都派生自架构定义。
 
 #### 粒度
 
@@ -103,8 +103,8 @@ ht-degree: 7%
 
 摘要数据的时区在Experience Platform的摘要架构级别定义。 时区仅适用于每小时粒度数据。
 
-- 对于每日粒度，除非时间戳中包含时区偏移，否则Experience Platform采用UTC时间。 添加包含每日摘要数据的摘要数据集时，Customer Journey Analytics会忽略架构上设置的时区定义，并遵循数据集中与时间戳关联的日期。
-- 对于每小时粒度，Customer Journey Analytics在解释时间戳时遵循在Experience Platform的摘要数据架构上配置的时区。 下表提供了这种解释的一些例子。
+- 对于每日粒度，除非时间戳中包含时区偏移，否则Experience Platform会假定UTC时间。 添加包含每日摘要数据的摘要数据集时，Customer Journey Analytics会忽略架构上设置的时区定义，并尊重数据集中的数据与时间戳关联的日期。
+- 对于每小时粒度，Customer Journey Analytics在解释时间戳时遵循在Experience Platform中的摘要数据架构上配置的时区。 下表提供了这种解释的一些例子。
 
   | 时间戳<br/>源数据 | 时区<br/>架构 | 时间戳<br/>Experience<br/>平台 | 时区<br/>数据<br/>视图 | 时间戳<br/>客户<br/>历程<br>分析 |
   |---|---|---|:---|---|
@@ -142,8 +142,8 @@ https://platform.adobe.io/data/foundation/schemaregistry/tenant/descriptors \
 
 | 变量 | 值 |
 |---|---|
-| `$ACCESS_TOKEN`<br/>`$API_KEY`<br/>`$ORG_ID`<br/>`$SANDBOX_NAME` | 有关如何为这些Experience Platform指定值的详细信息，请参阅[验证和访问变量API](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication)。 |
-| `$SCHEMA_ID` | 您可以在Experience PlatformUI中找到架构的ID。 从架构列表中选择您的摘要架构，然后在右侧面板中找到&#x200B;**[!UICONTROL API使用情况]** > **[!UICONTROL 架构ID]**。 使用该id作为值。 |
+| `$ACCESS_TOKEN`<br/>`$API_KEY`<br/>`$ORG_ID`<br/>`$SANDBOX_NAME` | 有关如何为这些变量指定值的详细信息，请参阅[身份验证和访问Experience Platform API](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication)。 |
+| `$SCHEMA_ID` | 您可以在Experience Platform UI中找到架构的ID。 从架构列表中选择您的摘要架构，然后在右侧面板中找到&#x200B;**[!UICONTROL API使用情况]** > **[!UICONTROL 架构ID]**。 使用该id作为值。 |
 | `$GRANULARITY` | 指定`hour`或`day`作为值。 |
 | `$TIMEZONE` | 从tz数据库时区](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)的[List的TZ标识符列中指定适当的时区标识符值。 例如：`America/Los_Angeles`。 |
 
@@ -153,4 +153,6 @@ https://platform.adobe.io/data/foundation/schemaregistry/tenant/descriptors \
 
 >[!MORELIKETHIS]
 >
->有关如何使用和报告摘要数据的详细用例示例，请参阅[使用摘要数据](/help/use-cases/data-views/summary-data.md)文章。
+>- 有关如何使用和报告摘要数据的详细用例示例，请参阅[使用摘要数据](/help/use-cases/data-views/summary-data.md)文章。
+>- 博客： [摘要数据如何增强Adobe Customer Journey Analytics数据集](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635)
+

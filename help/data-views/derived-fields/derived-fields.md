@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: e2e04432682f94b18bf9ed25d15f906c05bfd59d
 workflow-type: tm+mt
-source-wordcount: '8841'
+source-wordcount: '8844'
 ht-degree: 17%
 
 ---
@@ -160,7 +160,7 @@ ht-degree: 17%
 
 >[!NOTE]
 >
->派生字段在Customer Journey Analytics中的连接级别进行管理。 对与该连接关联的任何数据视图中派生字段所做的任何更改将应用于所有这些关联的数据视图。
+>在Customer Journey Analytics中，派生字段在连接级别进行管理。 对与该连接关联的任何数据视图中派生字段所做的任何更改将应用于所有这些关联的数据视图。
 
 
 
@@ -643,7 +643,7 @@ ht-degree: 17%
 
 ## 更多信息 {#casewhen-more-info}
 
-Customer Journey Analytics使用嵌套容器结构，该结构以Adobe Experience Platform的[XDM](https://experienceleague.adobe.com/cn/docs/experience-platform/xdm/home.html?lang=zh-Hans) (Experience Data Model)为模型建模。 有关更多背景信息，请参阅[容器](../create-dataview.md#containers)和[筛选器容器](../../components/filters/filters-overview.md#filter-containers)。 此容器模型虽然本质上较为灵活，但在使用规则生成器时施加了一些限制。
+Customer Journey Analytics使用嵌套容器结构，该结构以Adobe Experience Platform的[XDM](https://experienceleague.adobe.com/cn/docs/experience-platform/xdm/home.html?lang=zh-Hans) (Experience Data Model)为模型。 有关更多背景信息，请参阅[容器](../create-dataview.md#containers)和[筛选器容器](../../components/filters/filters-overview.md#filter-containers)。 此容器模型虽然本质上较为灵活，但在使用规则生成器时施加了一些限制。
 
 Customer Journey Analytics使用以下默认容器模型：
 
@@ -1118,7 +1118,7 @@ Customer Journey Analytics使用以下默认容器模型：
 
 ## 更多信息 {#lookup-more-info}
 
-查找函数在报告时将应用于由Customer Journey Analytics从您配置为连接一部分的查找数据集检索的数据。
+查找函数在报告时应用于Customer Journey Analytics从您配置为连接一部分的查找数据集检索的数据。
 
 您可以在规则生成器中快速插入[!UICONTROL 查找]函数，该函数已包含一个或多个其他函数。
 
@@ -1994,8 +1994,9 @@ Classification函数中的运算符是[!UICONTROL 当值等于原始值]时[!UIC
 
 对派生字段中的查找和配置文件字段的支持允许您根据事件查找和配置文件属性转换数据。 在查找或用户档案数据集中具有帐户级别数据的B2B场景中，此项特别有用。 此外，此支持对于处理来自查找数据（如营销活动信息和选件类型）或来自配置文件数据（如成员层和帐户类型）的常用字段中的数据非常有用。
 
-有关派生字段的更多背景信息，请参阅：
+>[!MORELIKETHIS]
+>
+>- [博客：充分利用数据：用于在Customer Journey Analytics中使用派生字段的框架](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
+>- [博客：Customer Journey Analytics的派生字段用例](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
+>- [博客：Adobe Customer Journey Analytics派生字段增强功能](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808)
 
-- [充分利用您的数据：用于在Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)中使用派生字段的框架
-
-- Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)的[派生字段用例
