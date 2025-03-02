@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
-source-git-commit: 32678fdedf1b384afce1998880af04f1af077943
+source-git-commit: 4ce2eb397e15dcb081f7b9695ba2332a3eb17659
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 2%
+source-wordcount: '468'
+ht-degree: 4%
 
 ---
 
@@ -27,8 +27,19 @@ ht-degree: 2%
 >
 >每个id最多有10,000个项目。 此限制意味着对于任何给定人员ID，您只能拥有10,000个帐户、10,000个机会、10,000个营销列表或10,000个营销活动。
 
+>[!PREREQUISITES]
+>
+>要使摄取正常工作，必须验证B2B查找数据集是否已为以下字段（如B2B查找架构中所定义）填充数据：
+>
+>| 包含符合架构的数据集 | 填充了数据的字段 |
+>|---|---|
+>| XDM 业务帐户人员关系 | `accountPersonID` |
+>| XDM业务机会人员 | `opportunityPersonID` |
+>| XDM业务营销列表 | `marketingListMemberID` |
+>| XDM 商业营销活动成员 | `campaign.sourceKey` |
+>
 
-要为此类数据集启用转换，请执行以下操作：
+要为B2B查找数据集启用转换，请执行以下操作：
 
 ![启用转换数据集](/help/connections/assets/transform.gif)
 
