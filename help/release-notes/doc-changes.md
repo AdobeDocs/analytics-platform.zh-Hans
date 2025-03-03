@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: 1283b285ff49225835abb8e7d8103f34aad686b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4649'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -20,16 +20,16 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2025 年 2 月** |  |
-| 媒体收集：适用于新媒体报表XDM的Adobe Source连接器更新 | Analytics Source Connector自动[将Adobe Analytics中的流媒体数据](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=en)映射到Web SDK使用的相同字段。 以前，数据会映射到旧位置和新位置，但将来只会使用新位置。 |
-| BI扩展 — 扩展支持 | Customer Journey Analytics BI扩展现在支持[Looker、Jupyter Notebook和R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=en)。 |
+| 媒体收集：Adobe Source Connector 更新了新的媒体报告 XDM | Analytics 源连接器会自动[将 Adobe Analytics 中的流媒体数据映射](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=en)到 Web SDK 使用的相同字段。以前，数据被映射到旧位置和新位置，但未来只使用新位置。 |
+| BI 扩展 - 扩展支持 | Customer Journey Analytics BI 扩展现在[支持 Looker、Jupyter Notebook 和 R Studio](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=en)。 |
 | **2025 年 1 月** |  |
-| 更新的连接使用体验 | 现在，Connection 中的 [使用情况](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/manage-connections?lang=en#connections-usage) 选项卡增强了以下类型可报告行的显示效果：核心数据、摄取的数据和历史数据。您还可以按连接、数据集、沙盒或标记查看和细分使用情况数据。 |
+| 更新的 Connections 使用体验 | 现在，Connection 中的 [使用情况](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/manage-connections?lang=en#connections-usage) 选项卡增强了以下类型可报告行的显示效果：核心数据、摄取的数据和历史数据。您还可以按连接、数据集、沙盒或标记查看和细分使用情况数据。 |
 | 使用情况量度 | 更新了有关改进的[使用情况量度](/help/connections/manage-connections.md#usage)界面的文档。 |
 | 产品使用情况 | [产品使用情况](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/tools/product-usage/usage-overview)向您展示贵组织如何使用 Customer Journey Analytics。 |
 | 引导式分析 | 更新了文档，其中包含来自 Guided Analysis 中的[引导式分析](/help/guided-analysis/overview.md)。 |
-| 关于在Journey Optimizer的“报表”页面上使用Customer Journey Analytics中的自定义模板的文档 | 您现在可以通过[在Adobe Journey Optimizer中创建或编辑模板](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=en)，然后保存该模板以在Customer Journey Analytics的“报表”页面上使用，来自定义Journey Optimizer中的新报表界面。 以前，无法自定义 Adobe Journey Optimizer 中新的报告界面。 |
-| Analysis Workspace中的模板 | [预建模板](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/use-templates)和[公司模板](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/create-templates)现在可在Customer Journey Analytics中使用。 |
-| 智能字幕v2 | [智能字幕](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions?lang=en)现在支持以下可视化图表：多行、条形图、水平条形图、圆环图、面积图、流量图和流失图。 您可以选择在扩展视图中一次显示所有智能字幕，也可以逐一视图显示单个智能字幕。 |
+| 关于在 Journey Optimizer 的报告页面上使用 Customer Journey Analytics 中的自定义模板的文档 | 您现在可以在 Adobe Journey Optimizer 中自定义新的报告界面：[在 Customer Journey Analytics 中创建或编辑模板](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=en)，然后保存该模板，将其在 Journey Optimizer 的报告页面中使用。以前，无法自定义 Adobe Journey Optimizer 中新的报告界面。 |
+| Analysis Workspace 中的模板 | 现在，Customer Journey Analytics 中提供[预建模板](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/use-templates)和[公司模板](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/create-templates)。 |
+| 智能题注 v2 | 现在支持以下可视化图表的[智能题注](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions?lang=en)：多行、条形图、水平条形图、圆环图、面积图、流量和流失图。您可以选择在扩展视图中一次显示所有智能题注，也可以在逐个视图中显示单个智能题注。 |
 
 ## 2024
 
