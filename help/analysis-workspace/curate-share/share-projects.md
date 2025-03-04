@@ -5,9 +5,9 @@ title: 共享项目
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: d47fabb35e6674b8accb6ce3b56cb13c334f4d96
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2070'
 ht-degree: 62%
 
 ---
@@ -133,7 +133,7 @@ ht-degree: 62%
 
 ## 与任何人共享项目（无需登录） {#share-public-link}
 
-您可以将对Analysis Workspace项目的[只读访问权限](/help/analysis-workspace/curate-share/view-only-projects.md)授予无权访问Customer Journey Analytics的人员。 其中可包括：
+您可以向无权访问Analysis Workspace的用户授予对Customer Journey Analytics项目的[只读访问权限](/help/analysis-workspace/curate-share/view-only-projects.md)。 其中可包括：
 
 * 您组织之外的人员
 
@@ -141,11 +141,11 @@ ht-degree: 62%
 
 >[!NOTE]
 >
->与无权访问Customer Journey Analytics的用户共享Analysis Workspace项目时，请考虑以下事项：
+>与无权访问Analysis Workspace的用户共享Customer Journey Analytics项目时，请考虑以下事项：
 >
 >* Customer Journey Analytics管理员可以禁用通过这种方式共享项目的功能，如[首选项](/help/analysis-workspace/user-preferences.md)中所述。 如果您无法按本节所述共享项目，则Customer Journey Analytics管理员已禁用此功能。
 >
->* 扩展的可视化图表超过50个的项目不能与无权访问Customer Journey Analytics的用户共享。
+>* 无法与无权访问Customer Journey Analytics的用户共享具有50个以上扩展可视化图表的项目。
 >
 >* 与您共享的用户可以查看在[策划](curate.md)期间应用于项目的任何筛选器。
 > 
@@ -153,8 +153,7 @@ ht-degree: 62%
 >
 >* 如果许多用户尝试同时访问给定的链接，则项目可能会变得无法访问。默认情况下，每 5 分钟可有超过 190 人访问单个链接。如果您的组织达到此限制，请等待 5 分钟，然后再重试访问链接。
 >
->* Healthcare Shield和Privacy &amp; Security Shield许可证的[!UICONTROL 与任何人共享]功能都被阻止。
-
+>* 对于[!DNL Healthcare Shield]和[!DNL Privacy & Security Shield]许可证，[!UICONTROL 与任何人共享]功能需要Experience Cloud身份验证。 对于[!DNL Healthcare Shield]客户，会显示“HIPAA合规性”警告，但您仍然可以在对Experience Cloud进行身份验证后使用此功能。
 
 >[!BEGINSHADEBOX]
 
@@ -189,7 +188,7 @@ ht-degree: 62%
 
       * 如果此选项不可见，则Customer Journey Analytics管理员未启用此功能。
 
-      * 如果启用了此选项但无法禁用它，则意味着您的Customer Journey Analytics管理员要求对访问Analysis Workspace项目的任何人进行Experience Cloud身份验证。 对于许可Healthcare Shield的组织来说，情况始终如此。
+      * 如果启用了此选项，但无法禁用它，则意味着您的Customer Journey Analytics管理员要求对访问Analysis Workspace项目的任何人进行Experience Cloud身份验证。 对于许可Healthcare Shield的组织来说，情况始终如此。
 
 1. 在&#x200B;**[!UICONTROL 与任何人共享（无需登录）]**&#x200B;字段旁边，选择![链接](/help/assets/icons/Link.svg)以将链接复制到系统剪贴板。
 
