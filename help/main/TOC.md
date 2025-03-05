@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: a8d161e53a0dba7b33a1365ba16643361dbdbb65
+source-git-commit: 87b2927735834d253fa8a35ba106c1ed720a4ced
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 93%
+source-wordcount: '1178'
+ht-degree: 92%
 
 ---
 
@@ -64,6 +64,8 @@ ht-degree: 93%
          + [将 Web SDK 扩展添加到您的标记中](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
          + [为 Web SDK 扩展实施加载器标记](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
          + [将 XDM 数据收集逻辑添加到您的标记中](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
+      + [手动实施Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-manual.md)
+      + [使用API实施Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
       + [创建连接](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
       + [创建数据视图](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
       + [创建营销渠道派生字段](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
