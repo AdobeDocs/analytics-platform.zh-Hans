@@ -4,7 +4,7 @@ description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: e444474d9f859f59613caa8fad06998372cdf742
+source-git-commit: baf0a1f1d0bdc0d3c60d9375e20c1de3f39f1702
 workflow-type: tm+mt
 source-wordcount: '1973'
 ht-degree: 18%
@@ -71,7 +71,7 @@ ht-degree: 18%
 
    | 创建方法 | 详细信息 |
    | --- | --- |
-   | 从&#x200B;**[!UICONTROL 受众]**&#x200B;界面中。 | 从Customer Journey Analytics主菜单中选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 受众]**。 此时将显示“受众”界面。 选择&#x200B;**[!UICONTROL 创建受众]**，将打开[!UICONTROL 受众生成器]。 |
+   | 从&#x200B;**[!UICONTROL 受众]**&#x200B;界面中 | 从Customer Journey Analytics主菜单中选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 受众]**。 此时将显示“受众”界面。 选择&#x200B;**[!UICONTROL 创建受众]**，将打开[!UICONTROL 受众生成器]。 |
    | 从Analysis Workspace中的可视化图表 | Analysis Workspace中的许多可视化图表都允许您使用上下文菜单创建受众。 例如，您可以从[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)中项目的上下文菜单或在[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)中的节点中选择&#x200B;**[!UICONTROL 创建受众]**。<p>使用此方法时会使用您选择的维度或维度项目预填充受众生成器中的过滤器。</p><p>通过以下可视化图表，可使用右键单击菜单创建受众：</p><ul><li>[同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[流](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[维恩图](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**注意：**&#x200B;受众不能包含计算量度。 如果尝试创建的受众包含计算量度，则该计算量度不会包含在受众定义中。</p> |
    | 通过过滤器创建/编辑 UI | 选中显示&#x200B;**[!UICONTROL 从此过滤器创建受众]**&#x200B;的框。使用此方法时会预填充过滤器。 有关详细信息，请参阅[创建筛选器](/help/components/filters/create-filters.md)。 |
 
@@ -147,7 +147,7 @@ ht-degree: 18%
 
 ## 在Experience Platform中使用Customer Journey Analytics受众 {#audiences-aep}
 
-Customer Journey Analytics会从已发布的受众中获取所有命名空间和ID组合，并将其流式传输到Real-Time Customer Data Platform中。 Customer Journey Analytics根据配置连接时选择作为[!UICONTROL 人员ID]的内容，将受众发送到设置了主身份的Experience Platform。
+Customer Journey Analytics会从已发布的受众中获取所有命名空间和ID组合，并将它们流式传输到Real-Time Customer Data Platform中。 Customer Journey Analytics根据配置连接时选择作为[!UICONTROL 人员ID]的内容，将受众发送到设置了主身份的Experience Platform。
 
 然后，Real-Time Customer Data Platform会检查每个命名空间/ID组合，并查找可能包含该组合的配置文件。 轮廓其实就是由所链接的命名空间、ID 和设备组成的集群。如果它找到配置文件，则会将命名空间和ID作为区段成员资格属性添加到此配置文件中的其他ID。 例如，可以跨其所有设备和渠道定位<user@adobe.com>。 如果未找到相关的轮廓，则会创建一份新的轮廓。
 

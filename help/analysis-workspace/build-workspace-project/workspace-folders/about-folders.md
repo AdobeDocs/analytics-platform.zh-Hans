@@ -5,9 +5,9 @@ title: 文件夹概述
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
-workflow-type: ht
-source-wordcount: '435'
+source-git-commit: 8571fbcfddd18658306e264cef88a3f10861e069
+workflow-type: tm+mt
+source-wordcount: '416'
 ht-degree: 100%
 
 ---
@@ -49,12 +49,7 @@ Non-Admins have limited options.
 以下是使用公司文件夹时的一些准则：
 
 - 管理员可以将项目添加到公司文件夹，或创建一个新项目并将新项目保存到公司文件夹。非管理员可以查看公司文件夹的内容。
-
 - 管理员可在公司文件夹内创建子文件夹。
-
 - 管理员可删除另一个管理员在公司文件夹内创建的文件夹。管理员可能需要与其他管理员协调，以使文件夹和项目访问权限保持一致。
-
 - 当管理员将某个项目移至公司文件夹时，即使原有的共享权限受限，也会与所有人共享该文件夹。
-- 当管理员将某个项目移出公司文件夹时，将会遵循原有或以前的共享权限。
-
 - 当管理员将某个项目移出公司文件夹时，将会遵循原有或以前的共享权限。
