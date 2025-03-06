@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 14%
+source-wordcount: '1067'
+ht-degree: 12%
 
 ---
 
@@ -31,6 +31,15 @@ ht-degree: 14%
 >id="cja-upgrade-keep-aa"
 >title="保留两种分析产品"
 >abstract="（不推荐）如果您选择此选项，您与 Adobe 签订的合同将同时包含 Adobe Analytics 和 Customer Journey Analytics，时间长了会增加您组织的开支。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-disable-source-connector"
+>title="禁用Analytics Source Connector以专门使用Web SDK中的数据"
+>abstract="Analytics Source Connector用于提供并排数据比较、历史数据，以及对Customer Journey Analytics中未完全提供的一些功能的访问。 当您不再需要Adobe Analytics来实现这些目的时，可以禁用Analytics源连接器。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -58,6 +67,24 @@ ht-degree: 14%
 >id="cja-upgrade-disable-appmeasurement-third-pary"
 >title="禁用第三方标签管理系统"
 >abstract="在 Web SDK 数据完全发挥作用的情况下，与您的标签管理员一起从第三方标签管理系统中删除 AppMeasurement 库。<br><br>执行此步骤的预计时间取决于从标签管理产品中禁用 AppMeasurement 的难易程度，以及您的组织用于部署和管理标签代码的发布周期。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-disable-analytics-tags"
+>title="在标记中禁用Analytics扩展"
+>abstract="借助Web SDK数据完全正常使用，请与标记管理员合作，从标记属性中删除Adobe Analytics扩展。 在执行此操作之前，请确保您的用户已经从使用Adobe Analytics过渡到Customer Journey Analytics。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-disable-analytics-api"
+>title="为 Adobe Analytics 停用 API 数据收集"
+>abstract="在Web SDK数据完全正常使用的情况下，请与适用的工程团队合作，从项目中删除Adobe Analytics代码。 在执行此操作之前，请确保您的用户已经从使用Adobe Analytics过渡到Customer Journey Analytics。"
 
 <!-- markdownlint-enable MD034 -->
 

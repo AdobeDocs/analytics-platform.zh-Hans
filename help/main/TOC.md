@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 87b2927735834d253fa8a35ba106c1ed720a4ced
+source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 92%
+source-wordcount: '1193'
+ht-degree: 91%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 92%
          + [创建数据集](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
          + [创建用于分类的查找数据集](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
          + [监测数据集引入](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
-      + 创建标记{#create-tags}
+      + 使用标记{#create-tags}实施Web SDK
          + [为您的属性创建标记](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
          + [将 Web SDK 扩展添加到您的标记中](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
          + [为 Web SDK 扩展实施加载器标记](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
@@ -88,6 +88,8 @@ ht-degree: 92%
          + [了解 Analytics 实施](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
          + [升级时支持 Adobe Analytics 功能](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
          + [Customer Journey Analytics功能](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md)
+         + [Web SDK实施选项](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md)
+         + [为平台配置Adobe Analytics Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
    + 与 Adobe Analytics 进行比较 {#cja-aa-comparison}
       + [概述](../getting-started/aa-vs-cja/overview.md)
       + [实用 Adobe Analytics 数据 ](../getting-started/aa-vs-cja/aa-data-in-cja.md)

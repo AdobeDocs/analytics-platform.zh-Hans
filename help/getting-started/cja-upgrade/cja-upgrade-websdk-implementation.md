@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 1ac7059e76797b14c00993a2a46aa51b1ebfe6a2
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 43%
+source-wordcount: '349'
+ht-degree: 38%
 
 ---
 
@@ -39,6 +39,24 @@ ht-degree: 43%
 >id="cja-upgrade-websdk-api"
 >title="NPM 包"
 >abstract="使用数据收集 API 将数据直接发送到数据流。支持非身份验证（客户端到服务器）和身份验证（服务器到服务器）两种类型。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-websdk-no-selection"
+>title="为给定的属性实施 Web SDK"
+>abstract="在调查表中选择所需的实施类型，以获取更详细的说明。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-websdk-third-party"
+>title="将 Web SDK 库添加到您的第三方标记管理系统"
+>abstract="与管理员合作，通过您的标记管理系统将Web SDK库添加到您的网站。<br><br>此任务的完成时间在很大程度上取决于负责标记管理系统的个人的响应速度。 添加Web SDK库可能会与关联的实施逻辑捆绑在一起，并在贵组织的标准发布周期中进行部署。"
 
 <!-- markdownlint-enable MD034 -->
 

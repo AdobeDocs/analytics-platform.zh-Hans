@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 773c03dfec99abcabdc667c549cce0dc1b1aabc4
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 15%
+source-wordcount: '538'
+ht-degree: 14%
 
 ---
 
@@ -22,6 +22,15 @@ ht-degree: 15%
 >id="cja-upgrade-source-connector"
 >title="Analytics Source Connector 实施"
 >abstract="Analytics Source Connector 可让您轻松获得 Customer Journey Analytics 的价值，但要求您同时支付 Adobe Analytics 和 Customer Journey Analytics 的费用。本指南可帮助您转向独立的 Web SDK 实施。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-delete"
+>title="删除现有的 Analytics 源连接器"
+>abstract="您当前拥有的Analytics Source Connector与您组织的自定义架构不兼容。 但是，数据仍然存在于Analytics报表包中。 此步骤将删除当前的Analytics Source Connector，以便您可以在后续步骤中使用正确的架构重新创建它。<br><br>在删除源连接器之前，您可能需要与组织中的其他人员协调，以确保删除源连接器不会影响组织内的报告。 此协调可能需要几周的时间才能完成。"
 
 <!-- markdownlint-enable MD034 -->
 
