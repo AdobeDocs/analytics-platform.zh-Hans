@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 56bf524d-101d-4745-b2ef-9770c50f6774
 solution: Customer Journey Analytics
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 19771d5cd2d2a38919c42e7f76bd700016020912
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -46,9 +46,9 @@ Customer Journey Analytics Report Builder 允许您使用 Adobe Customer Journey
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analytics的Report Builder](https://video.tv.adobe.com/v/337569?quality=12&learn=on){target="_blank"}。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [适用于 Customer Journey Analytics 的 Report Builder](https://video.tv.adobe.com/v/337569?quality=12&learn=on){target="_blank"} 以获取演示视频。
 
 >[!ENDSHADEBOX]
 
 您可以从以下位置下载适用于 Customer Journey Analytics 的 Report Builder：
-[Microsoft Store](https://www.microsoft.com/en-us/store/apps/windows)。
+[Microsoft Store](https://appsource.microsoft.com/en-us/product/Office365/WA200003101)。
