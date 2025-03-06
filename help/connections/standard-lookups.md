@@ -5,10 +5,10 @@ exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 5807700b9fe10769bf86f5c4020dd7c23df6e616
+source-git-commit: cd31712c1dde1fc39f4d0dc81555c19b7690bcab
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 73%
+source-wordcount: '430'
+ht-degree: 47%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 73%
 >标准查找仅适用于Customer Journey Analytics中的Analytics Source Connector数据源。 您可以将其用于标准 Adobe Analytics 实施、[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) 或 Experience Platform 数据收集 API。
 >
 
-标准查找（也称为 Adobe 提供的查找）可以增强 Customer Journey Analytics 的功能，用于报告一些本身并不是非常有用但在与其他数据结合时可以发挥作用的维度/属性。示例包括移动设备属性、操作系统属性和浏览器维度，如浏览器版本号。“标准查找”类似于查找数据集。 标准查找适用于整个 Experience Cloud 组织。它们自动应用于包含某些 XDM 架构字段（有关具体字段见下文）的所有事件数据集。Adobe 分类的每个架构位置都存在一个标准查找数据集。
+标准查找（也称为 Adobe 提供的查找）可以增强 Customer Journey Analytics 的功能，用于报告一些本身并不是非常有用但在与其他数据结合时可以发挥作用的维度/属性。示例包括移动设备属性、操作系统属性和浏览器维度，如浏览器版本号。“标准查找”类似于查找数据集。 标准查找适用于整个 Experience Cloud 组织。它们会自动应用于包含特定XDM架构字段（请参阅下面的特定字段内容）的所有事件数据集。 Adobe分类的每个架构位置都存在一个标准查找数据集。
 
 在传统Adobe Analytics中，这些维度按自己的方式显示，但在Customer Journey Analytics中，您必须在创建数据视图时主动包含这些维度。 在“连接”工作流中，选择具有标准查找键标志的数据集。数据视图 UI 自动知道包括所有标准查找维度以用于报告。查找文件会在所有区域和所有帐户中自动保持为最新版本和可用。这些文件将存储在与客户关联的特定于区域的组织中。
 
 ## 对Analytics源连接器数据集使用标准查找
 
-标准查找数据集在报告时自动应用。如果您使用Analytics Source Connector并且引入Adobe为其提供标准查找的维度，我们会自动应用此标准查找。 如果某个事件数据集包含 XDM 字段，我们可以对其应用标准查找。
+标准查找数据集在报告时自动应用。如果您使用Analytics Source Connector并且引入Adobe将为其提供标准查找的维度，我们会自动应用此标准查找。 如果某个事件数据集包含 XDM 字段，我们可以对其应用标准查找。
 
 <!--
 ### Specific IDs that need to be populated
@@ -75,10 +75,15 @@ The catch here is that they can only populate those IDs today if they have a dir
 
 ## 报告标准查找维度
 
-要报告标准查找维度，当您在 Customer Journey Analytics 中创建数据视图时需要添加这些维度。
+为了报告Adobe标准查找维度，在Customer Journey Analytics中创建[数据视图](/help/data-views/data-views.md)时，必须添加一个或多个这些维度。 在&#x200B;**[!UICONTROL 数据视图]** > **[!UICONTROL 组件]**&#x200B;中：
 
-![创建一个显示“添加组件”列表的数据视图](assets/global-lookup.png)
+1. 从左边栏的下拉菜单中选择&#x200B;**[!UICONTROL 架构字段]**。
+1. 从架构字段容器列表中选择&#x200B;**[!UICONTROL Adobe查找]**。
+1. 深入了解&#x200B;**[!UICONTROL 浏览器]**、**[!UICONTROL 移动设备]**&#x200B;或&#x200B;**[!UICONTROL 操作系统]**，直到找到要添加维度。
+1. 将维度拖动到&#x200B;**[!UICONTROL 包含的组件]**&#x200B;中的&#x200B;**[!UICONTROL Metrics]**&#x200B;或&#x200B;**[!UICONTROL Dimensions]**&#x200B;表中。
 
-然后，您便可以在工作区中查看查找数据：
+   ![创建一个显示“添加组件”列表的数据视图](assets/add-standard-lookup-dimension.gif)
+
+然后，您可以在Workspace中使用查找数据：
 
 ![显示数据的自由格式表](assets/gl-reporting.png)

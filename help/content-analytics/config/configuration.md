@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: 596e54a559bac69214e1de3ea37da6177f110b7a
+source-git-commit: 35298dd6d18ebb07d104a608aeff06cb864ee1dc
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 2%
@@ -39,10 +39,11 @@ Content Analytics的配置包括以下步骤：
    * 数据收集
       * 在数据流中创建数据流并配置Experience Platform服务以将数据流式传输到Content Analytics体验事件数据集。
       * 创建标记属性时，会将Adobe Content Analytics扩展配置为使用配置向导中的正确沙盒、数据流和其他配置选项。
-1. 仅当您手动发布Tag属性时，才会有效地部署和激活Content Analytics。
+1. 仅当[手动发布](manual.md)标记属性时，Content Analytics才会有效部署和激活。
+
 1. 您只能使用[引导式配置](guided.md)向导对已实施的配置进行某些有限的更改。 例如，更改[数据视图](/help/data-views/data-views.md)。
 1. 您可以通过关联标记属性中的[Adobe Content Analytics扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview)对已实施的配置进行其他更改。
-1. 仅当您手动重新发布Tag属性时，才会有效部署和激活步骤4和5中的配置修改。
+1. 仅当[手动重新发布](manual.md) Tag属性时，才能有效部署和激活步骤4和5中的配置修改。
 
 
 在配置Content Analytics之前，请确保满足以下先决条件：

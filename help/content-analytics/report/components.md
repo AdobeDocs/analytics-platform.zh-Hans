@@ -6,7 +6,8 @@ feature: Content Analytics
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 2958efb16ed2f5dbd754b407ddb3b6bc2f7c1ee1
+exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
+source-git-commit: cd31712c1dde1fc39f4d0dc81555c19b7690bcab
 workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 17%
@@ -49,6 +50,9 @@ Content Analytics可将以下类别的组件(维度、（计算）量度、派�
 | 体验水平像素深度 | 体验的水平像素深度的可量化值。 | Dimension<br/>派生字段 | 显示\| 没有值<br/>最近\| 会话 |
 | 体验垂直像素深度 | 体验的垂直像素深度的可量化值。 | Dimension<br/>派生字段 | 显示\| 没有值<br/>最近\| 会话 |
 
+{style="table-layout:fixed"}
+
+
 
 ## 体验属性
 
@@ -68,6 +72,8 @@ Content Analytics可将以下类别的组件(维度、（计算）量度、派�
 | 体验字数 | ![AI生成了](/help/assets/icons/AI.svg)体验字数。 | 量度 | 对值<br/>进行计数，十进制\| 小数位：0 |
 | 体验每句字数 | ![AI生成](/help/assets/icons/AI.svg)体验的每句字数。 | 量度 | 对值<br/>进行计数，十进制\| 小数位：0 |
 
+{style="table-layout:fixed"}
+
 
 ## 体验事件
 
@@ -75,6 +81,8 @@ Content Analytics可将以下类别的组件(维度、（计算）量度、派�
 |---|---|---|---|
 | 体验视图 | 对体验查看次数的可量化度量。 | 量度 | 对值<br/>进行计数，十进制\| 小数位：0 |
 | 体验点击次数 | 对体验点击次数的可量化度量。 | 量度 | 对值<br/>进行计数，十进制\| 小数位：0 |
+
+{style="table-layout:fixed"}
 
 
 ## 资源元数据
@@ -96,6 +104,8 @@ Content Analytics可将以下类别的组件(维度、（计算）量度、派�
 | 资产创建日期 | 资源创建日期。 | 维度 | 最近\| 会话 |
 | 资产上次更新时间 | 用于资产更新的标识符。 | 维度 | 显示\| 没有值<br/>最近\| 会话 |
 | 资产上次更新日期 | 资产更新日期。 | 维度 | 最近\| 会话 |
+
+{style="table-layout:fixed"}
 
 
 ## 资产属性
@@ -119,6 +129,8 @@ Content Analytics可将以下类别的组件(维度、（计算）量度、派�
 | 资产照明条件 | ![AI生成了](/help/assets/icons/AI.svg)资源的照明条件。 可能的值包括：黄金时间、蓝色时间、正午、阴天、夜间、高键、低键、白光、白炽灯、荧光、彩色和录音室。 | Dimension<br/>派生字段 | 显示\| 没有值<br/>最近\| 会话 |
 | 资产相机设置 | ![AI生成了](/help/assets/icons/AI.svg)资源的相机设置。 可能的值包括：快门速度、长曝光。 Bokeh blur、motion blur、tilt-shift blur、flash、wide-angle、black and white、surreal、double-exposure、macro和normal mode。 | Dimension<br/>派生字段 | 显示\| 没有值<br/>最近\| 会话 |
 
+{style="table-layout:fixed"}
+
 
 ## 资源事件
 
@@ -126,6 +138,8 @@ Content Analytics可将以下类别的组件(维度、（计算）量度、派�
 |---|---|---|---|
 | 资产视图 | 资产查看次数的可量化衡量指标。 | 量度 | 对值<br/>进行计数，十进制\| 小数位：0 |
 | 资产单击次数 | 对资产点击次数的可量化度量。 | 量度 | 对值<br/>进行计数，十进制\| 小数位：0 |
+
+{style="table-layout:fixed"}
 
 
 <!--
@@ -137,6 +151,8 @@ Content Analytics可将以下类别的组件(维度、（计算）量度、派�
 | Experience Path Root | Root path to the experience. | Derived Field | |
 | Asset Location | Location of the asset. | Derived Field | |
 | Asset Percenption ID + Asset ID | Combiination of asset perception identifier and asset identifier | Derived Field | |
+
+{style="table-layout:fixed"}
 -->
 
 ## 计算量度
@@ -145,3 +161,5 @@ Content Analytics可将以下类别的组件(维度、（计算）量度、派�
 |---|---|---|---|
 | 资产点进率 | 资产点击次数/资产查看次数 | 计算量度 | |
 | 体验点进率 | 体验点击次数/体验查看次数 | 计算量度 | |
+
+{style="table-layout:fixed"}

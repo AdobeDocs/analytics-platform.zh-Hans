@@ -1,11 +1,11 @@
 ---
 title: 在Customer Journey Analytics中使用摘要数据
-description: 用例，说明有关如何将摘要数据纳入Customer Journey Analytics的所有详细信息
+description: 用例说明了有关如何将摘要数据引入Customer Journey Analytics的所有详细信息
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 35298dd6d18ebb07d104a608aeff06cb864ee1dc
 workflow-type: tm+mt
 source-wordcount: '5188'
 ht-degree: 8%
@@ -25,7 +25,7 @@ ht-degree: 8%
 
 ## 摄取
 
-对于此用例，您使用以下示例摘要数据，其中显示了在Facebook上运行营销活动的摘要数据。
+对于此用例，您可以使用以下示例摘要数据，其中显示了在Facebook上运行营销活动的摘要数据。
 
 +++摘要数据
 
@@ -54,12 +54,12 @@ ht-degree: 8%
 
 +++
 
-要在Customer Journey Analytics、报表中或在Workspace中分析数据时使用摘要数据，您需要
+要在Customer Journey Analytics中、在报表中或在Workspace中分析数据时使用摘要数据，您需要
 
-- Experience Platform中的摘要模式，
+- Experience Platform中的摘要架构，
 - Experience Platform中的摘要数据集，
-- 配置为使用摘要数据集的Customer Journey Analytics连接，
-- Customer Journey Analytics数据视图，已使用摘要数据的指标和维度正确配置。
+- Customer Journey Analytics中配置为使用摘要数据集的连接，
+- Customer Journey Analytics中的数据视图，已使用摘要数据的量度和维度正确配置。
 
 您可以将此概要数据与事件数据的数据集和查找数据的数据集结合使用。
 
@@ -289,9 +289,9 @@ ht-degree: 8%
 
 ### 摘要架构
 
-摘要数据需要Experience Platform的摘要架构。 摘要架构是使用XDM摘要量度作为其基类的架构。
+摘要数据需要Experience Platform中的摘要架构。 摘要架构是使用XDM摘要量度作为其基类的架构。
 
-要在Experience Platform中创建概要架构，请执行以下操作：
+要在Experience Platform中创建摘要架构，请执行以下操作：
 
 1. 从中选择&#x200B;**[!UICONTROL Experience Platform]**   ![应用](/help/assets/icons/Apps.svg)   应用程序切换器。
 1. 从左边栏中选择&#x200B;**[!UICONTROL 架构]**。
@@ -376,7 +376,7 @@ ht-degree: 8%
    1. 您可以选择选择![预览](/help/assets/icons/Preview.svg) **[!UICONTROL 预览数据]**&#x200B;打开对话框，预览加载到数据集中的数据后。
    1. 选择&#x200B;**[!UICONTROL 完成]**。
 
-在&#x200B;**[!UICONTROL 源]** > **[!UICONTROL 数据流 — XX/XX/XXXX， XX：XX XX]**&#x200B;中，将显示您的上传状态。 刷新以查看上载的更新。 成功后，示例数据将加载到Experience Platform中。
+在&#x200B;**[!UICONTROL 源]** > **[!UICONTROL 数据流 — XX/XX/XXXX， XX：XX XX]**&#x200B;中，将显示您的上传状态。 刷新以查看上载的更新。 成功后，您的示例数据将加载到Experience Platform中。
 
 
 
@@ -425,7 +425,7 @@ ht-degree: 8%
 
 数据集中的数据会添加到Customer Journey Analytics，这可能需要几个小时。 所以，请在继续之前耐心等待。
 
-一段时间后，验证数据集中的数据是否已正确加载到Customer Journey Analytics中。
+过了一会儿，确认数据集中的数据已正确加载到Customer Journey Analytics中。
 
 1. 从中选择&#x200B;**[!UICONTROL Customer Journey Analytics]**   ![应用](/help/assets/icons/Apps.svg)   应用程序切换器。
 1. 从顶部菜单中选择&#x200B;**[!UICONTROL 连接]**。
@@ -452,7 +452,7 @@ ht-degree: 8%
       1. 保留所有其他设置。
       1. 选择&#x200B;**[!UICONTROL 保存并继续]**。
    1. 在&#x200B;**[!UICONTROL 数据视图]** > **[!UICONTROL 使用摘要数据的示例数据视图的**[!UICONTROL &#x200B;组件&#x200B;]**步骤中]**：
-      1. 将以下组件添加到“Dimension和量度”列表。 请注意，为清楚起见，组件名称是从其默认名称修改的，在组件面板的&#x200B;**[!UICONTROL 组件设置]**&#x200B;中使用&#x200B;**[!UICONTROL 组件名称]**（在右侧）。
+      1. 将以下组件添加到“维度和量度”列表。 请注意，为清楚起见，组件名称是从其默认名称修改的，在组件面板的&#x200B;**[!UICONTROL 组件设置]**&#x200B;中使用&#x200B;**[!UICONTROL 组件名称]**（在右侧）。
 
          **量度**
 
@@ -469,7 +469,7 @@ ht-degree: 8%
          |---|---|---|---|
          | 广告组（查找） | 示例查找数据集 | 字符串 | *_tenant*.ad_group |
          | 广告组（摘要） | 示例摘要数据数据集 | 字符串 | *_tenant*.ad_group |
-         | 营销活动 ID | 示例摘要数据集 | 字符串 | *_tenant*.campaign_id |
+         | 营销活动 ID | 示例摘要数据数据集 | 字符串 | *_tenant*.campaign_id |
          | 营销活动名称（查找） | 示例查找数据集 | 字符串 | *_tenant*.campaign_name |
          | 营销活动名称（摘要） | 示例摘要数据数据集 | 字符串 | *_tenant*.campaign_name |
          | 网络 | 示例摘要数据数据集 | 字符串 | *_tenant*.network |
@@ -478,14 +478,14 @@ ht-degree: 8%
          | 跟踪代码（事件） | 示例事件数据数据集 | 字符串 | *_tenant*.tracking_code |
          | 跟踪代码（查找） | 示例查找数据集 | 字符串 | *_tenant*.tracking_code |
 
-      1. 在&#x200B;**[!UICONTROL 事件]**&#x200B;列表中选择&#x200B;**[!UICONTROL Dimension（事件）]**&#x200B;维度。 在组件面板中：
+      1. 在&#x200B;**[!UICONTROL 维度]**&#x200B;列表中选择&#x200B;**[!UICONTROL 跟踪代码（事件）]**&#x200B;维度。 在组件面板中：
 
          ![跟踪代码摘要数据](../assets/tracking-code-summary-data.png)
          1. 展开![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL 摘要数据组]**。
          1. 启用&#x200B;**[!UICONTROL 创建分组]**。
          1. 从&#x200B;**[!UICONTROL Dimension]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 促销活动ID]**。 此步骤可确保正确组合事件数据和摘要数据以便进行报告。
-         1. 您可以选择在报表&#x200B;]**中启用**[!UICONTROL &#x200B;隐藏。 [!UICONTROL 在报表中隐藏]确保所选维度（[!UICONTROL 促销活动ID]）在Analysis Workspace和其他Customer Journey Analytics报表工具中隐藏。 如果已启用此选项，则可以验证选项：
-            1. 在&#x200B;**[!UICONTROL 营销活动]**&#x200B;列表中选择&#x200B;**[!UICONTROL DimensionID]**&#x200B;维度。
+         1. 您可以选择在报表&#x200B;]**中启用**[!UICONTROL &#x200B;隐藏。 [!UICONTROL 在报表中隐藏]确保选定的维度（[!UICONTROL 促销活动ID]）在Analysis Workspace和其他Customer Journey Analytics报表工具中隐藏。 如果已启用此选项，则可以验证选项：
+            1. 在&#x200B;**[!UICONTROL 维度]**&#x200B;列表中选择&#x200B;**[!UICONTROL 促销活动ID]**&#x200B;维度。
             1. 您注意到现在已在&#x200B;**[!UICONTROL 组件设置]**&#x200B;中自动启用&#x200B;**[!UICONTROL 隐藏报表中的组件]**。
 
       1. 创建新的派生字段，例如`Campaign Name (Lookup Derived Field)`，以确保您可以使用示例查找数据数据集中的“促销活动名称（查找）”维度在Workspace中报告。
@@ -498,9 +498,9 @@ ht-degree: 8%
          1. 从&#x200B;**[!UICONTROL 要返回的值]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL campaign_name]**。
          1. 选择&#x200B;**[!UICONTROL 保存]**。
 
-      1. 将新创建的派生字段&#x200B;**[!UICONTROL 促销活动名称（查找派生字段）]**&#x200B;添加到&#x200B;**[!UICONTROL Dimension]**&#x200B;组件列表。
+      1. 将新创建的派生字段&#x200B;**[!UICONTROL 促销活动名称（查找派生字段）]**&#x200B;添加到&#x200B;**[!UICONTROL 维度]**&#x200B;组件列表。
 
-      1. 在&#x200B;**[!UICONTROL Dimension]**&#x200B;列表中选择&#x200B;**[!UICONTROL 促销活动名称（查找）]**&#x200B;维度。 在组件面板中：
+      1. 在&#x200B;**[!UICONTROL 维度]**&#x200B;列表中选择&#x200B;**[!UICONTROL 促销活动名称（查找）]**&#x200B;维度。 在组件面板中：
 
          ![派生字段摘要数据组](../assets/derived-field-summary-data-group.png)
 
@@ -551,7 +551,7 @@ ht-degree: 8%
 
 1. 确保为面板选择的数据视图是指包含摘要数据配置的数据视图。 例如，**[!UICONTROL 使用摘要数据的示例数据视图。]**
 1. 确保日期范围对您要报告的数据有效。 例如：**[!UICONTROL 最近2个月]**。
-1. 从&#x200B;**[!UICONTROL Dimension]**&#x200B;中拖动&#x200B;**[!UICONTROL 跟踪代码（事件）]**&#x200B;并将维度拖放到空的自由格式表中。
+1. 从&#x200B;**[!UICONTROL 维度]**&#x200B;中拖动&#x200B;**[!UICONTROL 跟踪代码（事件）]**&#x200B;并将维度拖放到空的自由格式表中。
 1. 将&#x200B;**[!UICONTROL 订单]**&#x200B;从&#x200B;**[!UICONTROL 指标]**&#x200B;拖放到&#x200B;**[!UICONTROL 事件]**&#x200B;列以替换自由格式表中的该列。
 1. 从&#x200B;**[!UICONTROL 量度]**&#x200B;中拖动&#x200B;**[!UICONTROL 收入]**，并放置要作为附加列添加到自由格式表的量度。
 1. 从&#x200B;**[!UICONTROL 量度]**&#x200B;中拖动&#x200B;**[!UICONTROL 展示次数（摘要）]**，并放置要作为附加列添加到自由格式表的量度。
