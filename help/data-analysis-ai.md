@@ -7,7 +7,7 @@ feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 99f82353e41180a0090e84e58593d63fc5cbe803
+source-git-commit: ac3ec479938acf509bbd26be282b75e75dd49c33
 workflow-type: tm+mt
 source-wordcount: '1650'
 ht-degree: 4%
@@ -36,7 +36,7 @@ Customer Journey Analytics中的AI Assistant是一款创新型人工智能会话
 | **可验证性** | 通过生成的自由格式表和数据可视化，可以验证数据的可验证性和正确性。 例如，如果用户在上月&#x200B;*询问*&#x200B;趋势订单，您可以确认在新生成的面板、数据可视化和自由格式表中选择了正确的量度（“订单”）和日期范围（“上个月”）。 |
 | **反馈** | <ul><li>竖起大拇指</li><li>拇指朝下</li><li>标志</li></ul> |
 
-### 范围外的Alpha功能
+### 范围外的Beta功能
 
 | 不支持的功能 | 描述 |
 | --- | --- |
@@ -78,9 +78,9 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 3. 在项目页面顶部的横幅中选择&#x200B;**[!UICONTROL 空白项目]**&#x200B;以打开一个新的空白项目。
 
-4. 确保为面板选择的数据视图与为Alpha测试的AI助手启用的数据视图相同。
+4. 确保为面板选择的数据视图与为Beta测试的AI助手启用的数据视图相同。
 
-   如果您不确定，请联系Alpha Slack渠道。
+   如果您不确定，请联系Beta Slack渠道。
 
 5. 选择页面右上角的AI Assistant聊天图标。
 
@@ -187,7 +187,7 @@ AI Assistant处理每个用户提示提供的上下文，并尝试以自由格�
 | 折线图可视化图表 | <ul><li>趋势</li><li>在[时间范围]内的[指标]</li></ul> |
 | 条形图可视化 | <ul><li>[Dimension]的[指标]</li></ul> |
 
-## Alpha测试客户期望并请求反馈
+## Beta测试客户期望并请求反馈
 
 提出每个问题后，请仔细查看助理提供的答案。 在提供反馈之前全面评估生成的可视化图表至关重要。
 

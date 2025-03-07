@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
-source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
+source-git-commit: ac3ec479938acf509bbd26be282b75e75dd49c33
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '587'
 ht-degree: 23%
 
 ---
@@ -22,6 +22,15 @@ ht-degree: 23%
 >id="cja-upgrade-source-connector-create-schema"
 >title="为 Analytics 源连接器创建一个架构"
 >abstract="此架构是 Adobe Analytics ExperienceEvent 字段组与构成您组织的自定义架构的所有字段组的组合。通过它，您可以将 Analytics 源连接器使用的字段映射到您组织的架构，并且此架构仅用于历史数据。<br><br>虽然具有技术性质，但创建此架构可以在几个小时内完成，如果您确切知道哪些字段组构成了组织的自定义架构，速度可能会更快。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-historical"
+>title="为历史数据创建 Analytics 源连接器"
+>abstract="您可以使用Analytics Source Connector将Adobe Analytics报表包数据引入Adobe Experience Platform。 然后，此数据可以用作Customer Journey Analytics中的历史数据。"
 
 <!-- markdownlint-enable MD034 -->
 
