@@ -8,7 +8,7 @@ role: User
 source-git-commit: 5e80e68c6b5d3dca19dae21c6719b040b28afaf9
 workflow-type: tm+mt
 source-wordcount: '581'
-ht-degree: 64%
+ht-degree: 68%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 64%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-additional-datasets"
 >title="将其他数据集添加到您的连接"
->abstract="将数据添加到Adobe Experience Platform中的数据集后，可将该数据集添加到Customer Journey Analytics中的连接。 确保从其他渠道添加数据时，它们符合您的组织使用的架构。<br><br>添加的每个数据集都需要大量工作，特别是要确保每个事件都有唯一标识符，并确保总体数据结构符合组织的自定义架构。建立此工作流程需要组织内多个团队之间数月时间进行协调。"
+>abstract="将数据添加到 Adobe Experience Platform 中的某个数据集后，您就可以将该数据集添加到 Customer Journey Analytics 中的连接。确保从其他渠道添加数据时，它们符合您的组织使用的架构。<br><br>添加的每个数据集都需要大量工作，特别是要确保每个事件都有唯一标识符，并确保总体数据结构符合组织的自定义架构。建立此工作流程需要组织内多个团队之间数月时间进行协调。"
 
 <!-- markdownlint-enable MD034 -->
 

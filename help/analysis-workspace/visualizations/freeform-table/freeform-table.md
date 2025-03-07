@@ -18,7 +18,7 @@ ht-degree: 27%
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_button"
 >title="自由格式表"
->abstract="创建一个您可以使用维度、区段、量度和日期范围来构建的空的可视化自由格式表格。您可以使用自由格式表作为其他可视化的基础。"
+>abstract="创建您可以使用维度、区段、量度和日期范围来生成的空的自由格式表可视化图表。您可以使用自由格式表作为其他可视化图表的基础。"
 
 <!-- markdownlint-enable MD034 -->
 

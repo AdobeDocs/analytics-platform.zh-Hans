@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 49%
+ht-degree: 51%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 49%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaplaybacktimespent_button"
 >title="媒体播放耗时"
->abstract="创建一个面板来分析一段时间内的视频消耗情况，其中具有不同级别的粒度，以及细分和比较的能力。"
+>abstract="创建一个面板来分析一段时间内的视频使用情况，其中具有不同级别的粒度，以及细分和比较的能力。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 49%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaplaybacktimespent_panel"
 >title="媒体播放耗时"
->abstract="分析一段时间的视频使用情况，选择各种粒度，并（可选）使用过滤器、维度、维度项或日期范围进行细分和比较。"
+>abstract="分析一段时间内的视频使用情况，选择各种粒度，并可选择使用过滤器、维度、维度项或日期范围进行细分和比较。"
 
 <!-- markdownlint-enable MD034 -->
 

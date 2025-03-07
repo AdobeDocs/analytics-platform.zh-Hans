@@ -10,7 +10,7 @@ exl-id: 92053109-f80d-47ab-b011-c28a5411149c
 source-git-commit: 7a5414745f065ec29b59172dee4f723c0ce72e68
 workflow-type: tm+mt
 source-wordcount: '464'
-ht-degree: 40%
+ht-degree: 55%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 40%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-migrate-projects"
 >title="组件和项目"
->abstract="Adobe Analytics 的组件包括：项目（及其相关的自由格式表和可视化）、区段和计算量度。"
+>abstract="Adobe Analytics 的组件包括：项目（及其相关的自由格式表和可视化图表）、区段和计算量度。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -38,8 +38,8 @@ ht-degree: 40%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-activity-map-support"
->title="尚不支持活动图叠加"
->abstract="Customer Journey Analytics中尚不支持Activity Map叠加。 计划将来提供。"
+>title="尚不支持 Activity Map 叠加"
+>abstract="Customer Journey Analytics 尚不支持 Activity Map 叠加。预计将在未来推出。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -84,7 +84,7 @@ ht-degree: 40%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-streaming-media"
 >title="流媒体数据"
->abstract="Adobe Analytics和Customer Journey Analytics的一个附加产品，专门用于收集媒体（如音频、视频或流式内容）的数据。"
+>abstract="Adobe Analytics 和 Customer Journey Analytics 的附加组件，专门用于音频、视频或流式处理内容等媒体数据收集。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -93,7 +93,7 @@ ht-degree: 40%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-component-migration"
 >title="迁移项目和组件"
->abstract="将Adobe Analytics项目及其关联的组件引入Customer Journey Analytics。"
+>abstract="将 Adobe Analytics 项目及其相关组件引入 Customer Journey Analytics。"
 
 <!-- markdownlint-enable MD034 -->
 

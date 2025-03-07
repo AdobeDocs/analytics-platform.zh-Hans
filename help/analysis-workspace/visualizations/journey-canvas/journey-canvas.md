@@ -27,7 +27,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_panel"
 >title="历程画布"
->abstract="分析人们如何完成或退出既定的历程。通过创建灵活的节点和箭头图形来构建用户历程分析，该图形可表示事件、维度项目和过滤器的任意组合。拖动画布上的节点可重新排列历程的事件和条件。当您进行该操作时，数据会相应更新。<br/><br/>有权访问 Adobe Journey Optimizer 的客户可以分析现有的 Journey Optimizer 历程"
+>abstract="分析人们如何完成或退出既定的历程。通过创建灵活的节点和箭头图形来生成用户历程分析，该图形可表示事件、维度项目和过滤器的任意组合。拖动画布上的节点可重新排列历程的事件和条件。当您进行该操作时，数据会相应更新。<br/><br/>有权访问 Adobe Journey Optimizer 的客户可以分析现有的 Journey Optimizer 历程"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,7 +45,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_panel"
 >title="历程画布"
->abstract="分析人们如何完成或退出既定的历程。通过创建灵活的节点和箭头图形来构建用户历程分析，该图形可表示事件、维度项目和过滤器的任意组合。拖动画布上的节点可重新排列历程的事件和条件。当您进行该操作时，数据会相应更新。<br/><br/>有权访问 Adobe Journey Optimizer 的客户可以分析现有的 Journey Optimizer 历程"
+>abstract="分析人们如何完成或退出既定的历程。通过创建灵活的节点和箭头图形来生成用户历程分析，该图形可表示事件、维度项目和过滤器的任意组合。拖动画布上的节点可重新排列历程的事件和条件。当您进行该操作时，数据会相应更新。<br/><br/>有权访问 Adobe Journey Optimizer 的客户可以分析现有的 Journey Optimizer 历程"
 
 <!-- markdownlint-enable MD034 -->
 

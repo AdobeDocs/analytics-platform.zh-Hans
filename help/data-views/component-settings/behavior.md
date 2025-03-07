@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 84%
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 84%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_behavior"
 >title="行为"
->abstract="确定如何汇总此维度中的行项目。 指定字段中的字符串值是否应小写。"
+>abstract="确定如何汇总此维度中的行项。指定字段中的字符串值是否应小写。"
 
 <!-- markdownlint-enable MD034 -->
 

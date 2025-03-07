@@ -7,7 +7,7 @@ role: User
 source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 57%
+ht-degree: 63%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 57%
 >[!CONTEXTUALHELP]
 >id="workspace_scatter_button"
 >title="散点图"
->abstract="创建一个可视化散点图，显示维度项目与最多三个量度之间的关系。"
+>abstract="创建一个散点图可视化图表，显示维度项目与最多三个量度之间的关系。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -50,7 +50,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!MORELIKETHIS]
 >
->[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[在面板中添加可视化效果](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[可视化设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[可视化上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

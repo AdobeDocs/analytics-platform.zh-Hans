@@ -10,7 +10,7 @@ exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
 source-git-commit: d745e0c3bc75ba6f9d29aedcdbaaae9aa17d6ab8
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 27%
+ht-degree: 46%
 
 ---
 
@@ -38,8 +38,8 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-customer-care"
->title="联系Adobe客户关怀团队以生成拼合的数据集"
->abstract="如果某个字段包含的标识符存在于多个数据集中，但不是主标识符，则可以使用该标识符生成具有一致标识符的新数据集。"
+>title="联系 Adobe 客户关怀部门以生成拼接数据集"
+>abstract="如果您的某个字段包含标识符，而此标识符不是主要标识符且存在于多个数据集中，则可以使用它生成具有一致标识符的新数据集。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -47,8 +47,8 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-rtcdp"
->title="与实时CDP集成"
->abstract="合并来自多个来源的配置文件数据，以根据用户特征生成受众和区段。"
+>title="与 Real-Time CDP 集成"
+>abstract="合并来自多个来源的轮廓数据，根据用户特征生成受众和区段。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -56,8 +56,8 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-target"
->title="临时与Adobe Target集成"
->abstract="Adobe建议与Adobe Journey Optimizer集成，以实施个性化用例。 与Adobe Target集成是可能的，但这是一个短期解决方案。"
+>title="暂时与 Adobe Target 集成"
+>abstract="Adobe 建议与 Adobe Journey Optimizer 集成以实现个性化用例。与Adobe Target集成是可能的，但这是一个短期解决方案。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -65,8 +65,8 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-ajo"
->title="与Journey Optimizer集成"
->abstract="为客户提供互联、情境式和个性化的体验。"
+>title="与 Journey Optimizer 集成"
+>abstract="为客户提供贴合心意的、上下文和个性化的体验。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -75,7 +75,7 @@ ht-degree: 27%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-aam"
 >title="暂时与 Adobe Audience Manager 集成"
->abstract="对于基于受众的用例，Adobe建议与Adobe Real-time CDP集成。 与Audience Manager集成是可能的，但这是一个短期解决方案。"
+>abstract="Adobe 建议与 Adobe Real-Time CDP 集成，以满足基于受众的用例。与Audience Manager集成是可能的，但这是一个短期解决方案。"
 
 <!-- markdownlint-enable MD034 -->
 

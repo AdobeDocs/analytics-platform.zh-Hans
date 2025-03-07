@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
 workflow-type: tm+mt
 source-wordcount: '531'
-ht-degree: 22%
+ht-degree: 24%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 22%
 >[!CONTEXTUALHELP]
 >id="workspace_line_button"
 >title="折线图"
->abstract="创建一个可视化线条图表，展示值在一段时间内的变化情况。仅当使用时间作为维度时，才可以使用可视化线条图表。"
+>abstract="创建线形图可视化图表，展示值在一段时间内的变化情况。仅当使用时间作为维度时，才可以使用线形图可视化图表。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -66,7 +66,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!MORELIKETHIS]
 >
->[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[在面板中添加可视化效果](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[可视化设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[可视化上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

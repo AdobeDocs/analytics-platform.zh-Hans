@@ -7,7 +7,7 @@ role: User
 source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
 source-wordcount: '167'
-ht-degree: 24%
+ht-degree: 31%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 24%
 >[!CONTEXTUALHELP]
 >id="workspace_venn_button"
 >title="维恩图"
->abstract="创建维恩图可视化，以快速直观地比较两个元素及其重叠尺寸。"
+>abstract="创建维恩图可视化图表，以快速直观地比较两个元素及其重叠尺寸。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -55,7 +55,7 @@ To normalize the Venn diagram (take the size out of it), go select ![Setting](/h
 
 >[!MORELIKETHIS]
 >
->[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[在面板中添加可视化效果](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[可视化设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[可视化上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

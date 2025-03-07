@@ -7,7 +7,7 @@ exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 19%
+ht-degree: 28%
 
 ---
 
@@ -18,12 +18,12 @@ ht-degree: 19%
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_button"
 >title="下一项或上一项"
->abstract="创建一个面板来了解人们来自的前一个维度或人们要去的下一个维度。"
+>abstract="创建一个面板来了解人们来自的上一项维度或人们要去的下一项维度。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_panel"
 >title="下一项或上一项"
->abstract="分析访客之前来自或前往下一个最常见的位置。 指定要用于可视化的维度、维度项、方向和容器。"
+>abstract="分析访客之前最常来自何处或后续最常访问的地方是什么。指定用于可视化图表的维度、维度项、方向和容器。"
 
 
 
@@ -42,7 +42,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_container"
 >title="容器"
->abstract="选择货箱以确定查询的范围。"
+>abstract="选择容器来确定您的查询范围。"
 
 要使用&#x200B;**[!UICONTROL 下一个或上一个项目]**&#x200B;面板：
 

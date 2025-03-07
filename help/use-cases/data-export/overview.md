@@ -8,7 +8,7 @@ exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
 source-git-commit: efb961c571ddcde1017e6bf2080fc2a97c28bb13
 workflow-type: tm+mt
 source-wordcount: '810'
-ht-degree: 1%
+ht-degree: 7%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-feeds-step"
 >title="使用与数据馈送类似的导出功能"
->abstract="在Customer Journey Analytics中，尚无法精确替换数据馈送。 但是，通过完整表导出、Platform数据集导出、BI工具集成和报表API等功能，可以实现类似的功能。"
+>abstract="Customer Journey Analytics 中尚未提供数据馈送的精确替代品。不过，也可以通过全表导出、平台数据集导出、BI 工具集成和报告 API 等功能实现类似的功能。"
 
 <!-- markdownlint-enable MD034 -->
 

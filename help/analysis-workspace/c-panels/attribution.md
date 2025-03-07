@@ -7,7 +7,7 @@ role: User
 source-git-commit: 1709bb2e262759376b0b0bb78444253968f9dac4
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 38%
+ht-degree: 45%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 38%
 >[!CONTEXTUALHELP]
 >id="workspace_attribution_panel"
 >title="”归因“面板"
->abstract="快速比较和可视化任意数量的归因模型以获得成功量度。 选择渠道（维度）、要包含的模型和回顾窗口。"
+>abstract="为成功量度快速比较和可视化任意数量的归因模型。选择渠道（维度）、要包含的模型和回顾窗口。"
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ 面板"
 
 <!-- markdownlint-enable MD034 -->

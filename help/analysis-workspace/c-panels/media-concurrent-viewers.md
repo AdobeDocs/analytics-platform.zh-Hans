@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 40%
+ht-degree: 43%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 40%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_button"
 >title="媒体并行查看者"
->abstract="创建一个面板以分析特定时段内的并行查看者。"
+>abstract="创建一个面板来分析特定时间段内的并发查看者。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 40%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_panel"
 >title="媒体并行查看者"
->abstract="分析一段时间内的并发查看者，查看并发峰值，并（可选）使用过滤器、维度、维度项或日期范围进行细分和比较。"
+>abstract="分析一段时间内的并发查看者，查看并发峰值，并可选择使用过滤器、维度、维度项或日期范围进行细分和比较。"
 
 <!-- markdownlint-enable MD034 -->
 

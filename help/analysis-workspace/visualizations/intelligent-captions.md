@@ -18,7 +18,7 @@ ht-degree: 19%
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_area"
 >title="智能题注：面积"
->abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化数据。"
+>abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化图表的数据。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 19%
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_bar"
 >title="智能题注：条形图"
->abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化数据。"
+>abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化图表的数据。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -36,7 +36,7 @@ ht-degree: 19%
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_donut"
 >title="智能题注：圆环图"
->abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化数据。"
+>abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化图表的数据。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,7 +45,7 @@ ht-degree: 19%
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_horizontalbar"
 >title="智能题注：水平条形图"
->abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化数据。"
+>abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化图表的数据。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -53,8 +53,8 @@ ht-degree: 19%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_line"
->title="智能题注：折线图"
->abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化数据。"
+>title="智能题注：线形图"
+>abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化图表的数据。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -63,7 +63,7 @@ ht-degree: 19%
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_fallout"
 >title="智能题注：流失"
->abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化数据。"
+>abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化图表的数据。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -72,7 +72,7 @@ ht-degree: 19%
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_flow"
 >title="智能题注：流量"
->abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化数据。"
+>abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化图表的数据。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -105,7 +105,7 @@ ht-degree: 19%
 
 * 如果关联的自由格式表中有多个量度，则仅为第一个量度或用户当前选择的量度生成字幕。 但是，可以为线形图和区域图可视化的多个量度生成标题。
 
-* 如果在特定点保存项目并在以后重新加载，则字幕将自动更新为新数据。 这同样适用于从项目导出的计划项目和PDF文件。
+* 如果在特定点保存项目并在以后重新加载，则字幕将自动更新为新数据。 这同样适用于计划项目以及从项目导出的PDF文件。
 
 
 ## 可视化内容 {#visualizations}
@@ -168,7 +168,7 @@ Here is an example of what intelligent captions could look like:
 
 ### 导出 {#export}
 
-您可以将智能字幕导出为PDF的一部分，只要保存项目并生成智能字幕即可。
+您可以将智能字幕导出为PDF的一部分，只要在保存项目时生成了智能字幕。
 
 ### 关闭 {#toggle}
 
@@ -184,7 +184,7 @@ Here is an example of what intelligent captions could look like:
 
 ## 移动记分卡中的智能字幕
 
-智能字幕还在Customer Journey Analytics[移动记分卡](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions)中可用。
+Customer Journey Analytics [移动记分卡](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions)中还提供了智能字幕。
 
 ## 功能访问
 
@@ -192,7 +192,7 @@ Here is an example of what intelligent captions could look like:
 
 * **解决方案访问**：智能字幕功能在Customer Journey Analytics中可用，但在Adobe Analytics中不可用。
 
-* **合同访问权限**：如果您无法使用智能字幕，请联系您组织的管理员或Adobe帐户代表（管理员）。 在组织中使用智能字幕之前，您必须同意某些与创作AI相关的法律条款。
+* **合同访问权限**：如果您无法使用智能字幕，请联系贵组织的管理员或Adobe客户代表（管理员）。 在组织中使用智能字幕之前，您必须同意某些与创作AI相关的法律条款。
 
 * **权限**：在[!UICONTROL Adobe Admin Console]中，[!UICONTROL 报告工具] **[!UICONTROL 智能字幕]**&#x200B;权限决定了访问权限。 [产品配置文件管理员](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)需要在[!UICONTROL Admin Console]中执行这些步骤：
    1. 导航到&#x200B;**[!UICONTROL Admin Console]** > **[!UICONTROL 产品和服务]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL 产品配置文件]**。

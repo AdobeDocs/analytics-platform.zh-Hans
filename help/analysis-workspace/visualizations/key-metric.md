@@ -7,7 +7,7 @@ role: User
 source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
 source-wordcount: '959'
-ht-degree: 36%
+ht-degree: 37%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 36%
 >[!CONTEXTUALHELP]
 >id="workspace_keymetricsummary_button"
 >title="关键量度摘要"
->abstract="创建由线条、概要变化和摘要数字图表组合而成的可视化效果。使用此可视化效果来比较两个时段内重要量度的趋势。"
+>abstract="创建由线形图、摘要变化和摘要数字图表组合而成的可视化图表。使用此可视化图表来比较两个时段内重要量度的趋势。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -157,6 +157,6 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 >[!MORELIKETHIS]
 >
->[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[在面板中添加可视化效果](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[可视化设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[可视化上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)

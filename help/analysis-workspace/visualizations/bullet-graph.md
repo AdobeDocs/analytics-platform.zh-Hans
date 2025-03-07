@@ -7,7 +7,7 @@ role: User
 source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
 source-wordcount: '263'
-ht-degree: 56%
+ht-degree: 60%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 56%
 >[!CONTEXTUALHELP]
 >id="workspace_bullet_button"
 >title="项目符号"
->abstract="创建可视化项目符号图表来显示量度与性能范围（目标）之间的比较。"
+>abstract="创建项目符号图可视化图表来显示量度与性能范围（目标）之间的比较。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -62,7 +62,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!MORELIKETHIS]
 >
->[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[在面板中添加可视化效果](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[可视化设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[可视化上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

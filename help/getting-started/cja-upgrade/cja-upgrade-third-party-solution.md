@@ -10,7 +10,7 @@ exl-id: bc79ba1a-1153-4fe8-b265-9703a323c977
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 10%
+ht-degree: 26%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 10%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-third-party"
 >title="非 Adobe Analytics 产品"
->abstract="为Adobe Analytics以外的产品(如Google Analytics)收集数据的实施。 选择此选项将禁用调查表中的多个选项，当从非Adobe Analytics产品升级到Customer Journey Analytics时，这些选项不适用。"
+>abstract="为 Adobe Analytics 以外的产品（如 Google Analytics）收集数据的实施。从非 Adobe Analytics 产品升级到 Customer Journey Analytics 时，选择此选项将禁用问卷中不适用的几个选项。"
 
 <!-- markdownlint-enable MD034 -->
 

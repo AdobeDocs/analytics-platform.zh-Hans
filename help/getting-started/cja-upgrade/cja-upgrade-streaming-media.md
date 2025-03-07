@@ -1,5 +1,5 @@
 ---
-title: 为Customer Journey Analytics设置流媒体收集
+title: 为 Customer Journey Analytics 设置流媒体集合
 description: 了解如何为Customer Journey Analytics设置流媒体收集
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: b807099d-a61d-48f9-9fec-94ecc6b76213
 source-git-commit: f7b06838bbe5b1a5e304c6d0da6d34635391a90b
 workflow-type: tm+mt
 source-wordcount: '348'
-ht-degree: 0%
+ht-degree: 20%
 
 ---
 
-# 为Customer Journey Analytics设置流媒体收集 {#streaming-media-setup}
+# 为 Customer Journey Analytics 设置流媒体集合 {#streaming-media-setup}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-media-edge"
->title="设置和实施Media Edge"
->abstract="如果您计划将Streaming Media Collection与Customer Journey Analytics结合使用，则需要在升级过程的某些步骤中进行特定选择。 例如，您需要将Media Analytics交互详细信息字段组添加到您的架构中，在数据流中启用Media Analytics等等。"
+>title="设置并实施 Media Edge"
+>abstract="如果您计划将流媒体集合与 Customer Journey Analytics 结合使用，则需要在升级过程的某些步骤中做出特定选择。例如，您需要将 MediaAnalytics 交互详情字段组添加到您的架构中，在数据流中启用 Media Analytics 等等。"
 
 <!-- markdownlint-enable MD034 -->
 

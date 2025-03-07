@@ -7,7 +7,7 @@ role: User
 source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
 source-wordcount: '510'
-ht-degree: 46%
+ht-degree: 48%
 
 ---
 
@@ -32,7 +32,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >[!CONTEXTUALHELP]
 >id="workspace_summarynumber_button"
 >title="摘要数字"
->abstract="创建显示总计和小计的可视化效果。"
+>abstract="创建显示总计和小计的可视化图表。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -52,13 +52,13 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 | **[!UICONTROL 缩写值]** | 选择&#x200B;**[!UICONTROL 缩写值]**&#x200B;智能缩写数值。 选中后，输入数字以定义缩写金额。 例如：<br/><table><tr><td>**原始值**</td><td>**缩写值**</td><td>**结果**</td></tr><tr><td>12,011,141.25美元</td><td>未选择</td><td  align="right">12,011,141.25美元</td></tr><tr><td>12,011,141.25美元</td><td>已选定，设置为`0`</td><td align="right">1200万美元</td></tr><tr><td>12,011,141.25美元</td><td> 已选定，设置为`1`</td><td  align="right">1200万美元</td></tr><tr><td>12,011,141.25美元</td><td>已选定，设置为`2`</td><td align="right">1201万美元</td></tr><tr><td>12,011,141.25美元</td><td>已选定，设置为`3`</td><td align="right">1201.1万美元</td></tr></table> |
 | **[!UICONTROL 值汇总方式]** | 选择显示所选数据的最大值、最小值、平均值、中间值或总和。 |
 
-## 概要变化 {#summary-change}
+## 摘要变化 {#summary-change}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_summarychange_button"
->title="概要变化"
+>title="摘要变化"
 >abstract="创建一个显示两个数字之间增量（变化）的可视化图表"
 
 <!-- markdownlint-enable MD034 -->
@@ -93,7 +93,7 @@ The green and red color of the Summary Change can be controlled through [custom 
 
 >[!MORELIKETHIS]
 >
->[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[在面板中添加可视化效果](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[可视化设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[可视化上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

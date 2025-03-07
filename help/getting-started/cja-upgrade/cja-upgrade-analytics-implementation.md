@@ -10,7 +10,7 @@ exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 source-git-commit: ff951b6ca03fc5be4d24651b8b8e4bdd06216274
 workflow-type: tm+mt
 source-wordcount: '939'
-ht-degree: 27%
+ht-degree: 33%
 
 ---
 
@@ -93,7 +93,7 @@ ht-degree: 27%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-determine-implementation"
 >title="确定现有的实施类型"
->abstract="在您的组织内部工作，确定您当前用于向Adobe Analytics发送数据的实施类型。 当您准备好迁移到Customer Journey Analytics时，与知道此信息的个人或团队合作。<br><br>在您确定组织使用的实施类型后，请修改问卷中的答案。"
+>abstract="在您的组织内部开展工作，确定您当前使用哪种类型的实施来将数据发送到 Adobe Analytics。当您准备迁移到 Customer Journey Analytics 时，很可能会与了解此信息的个人或团队合作。<br><br>确定您的组织所使用的实施类型后，修改调查问卷中的答案。"
 
 <!-- markdownlint-enable MD034 -->
 

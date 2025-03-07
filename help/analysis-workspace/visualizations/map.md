@@ -20,7 +20,7 @@ ht-degree: 64%
 >[!CONTEXTUALHELP]
 >id="workspace_map_button"
 >title="地图"
->abstract="这种可视化通过在地图中叠加量度来表示。这对于识别不同地理区域的数据非常有用。"
+>abstract="这种可视化图表通过在地图中叠加量度来表示。这对于识别不同地理区域的数据非常有用。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -44,6 +44,6 @@ ht-degree: 64%
 
 >[!BEGINSHADEBOX]
 
-_在_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中当前没有可用的地图可视化。_<br/>_在_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;中查看[地图](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)地图可视化文档。_
+_当前在_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中没有可用的地图可视化。_<br/>_在_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;中查看[地图](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)地图可视化文档。_
 
 >[!ENDSHADEBOX]

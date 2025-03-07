@@ -8,7 +8,7 @@ role: User
 source-git-commit: 827ab36b27eee1b0af46ff1c653f13b1accfe105
 workflow-type: tm+mt
 source-wordcount: '3632'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -186,22 +186,22 @@ ht-degree: 96%
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultflowcontainer"
 >title="默认容器"
->abstract="选择要用于[!UICONTROL 流量]可视化图表的默认容器。 如果所选数据视图不包含所选的默认容器，则[!UICONTROL 流量]可视化将自动切换到另一个主容器。"
+>abstract="选择用于[!UICONTROL 流量]可视化图表的默认容器。如果选定的数据视图不包含选定的默认容器，则[!UICONTROL 流量]可视化图表将会自动切换到另一个主容器。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultfalloutcontainer"
 >title="默认容器"
->abstract="选择要用于[!UICONTROL 流失]可视化图表的默认容器。 如果所选数据视图不包含所选的默认容器，则[!UICONTROL 流失]可视化图表将自动切换到另一个主容器。"
+>abstract="选择用于[!UICONTROL 流失]可视化图表的默认容器。如果选定的数据视图不包含选定的默认容器，则[!UICONTROL 流失]可视化图表将会自动切换到另一个主容器。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulthistogramcountingmethod"
 >title="默认计数方法"
->abstract="选择用于[!UICONTROL 直方图]可视化的默认计数方法。 如果所选数据视图不包含所选的默认计数方法，则[!UICONTROL 直方图]可视化将自动切换到另一个主要计数方法。"
+>abstract="选择用于[!UICONTROL 直方图]可视化图表的默认计数方法。如果选定的数据视图不包含选定的默认计数方法，则[!UICONTROL 直方图]可视化图表将会自动切换到另一个主计数方法。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultjourneycanvascontainer"
 >title="默认容器"
->abstract="选择用于[!UICONTROL 历程画布]可视化的默认容器。 如果所选数据视图不包含所选默认容器，[!UICONTROL 历程画布]可视化将自动切换到另一个主容器。"
+>abstract="选择用于[!UICONTROL 历程画布]可视化图表的默认容器。如果选定的数据视图不包含选定的默认容器，则[!UICONTROL 历程画布]可视化图表将会自动切换到另一个主容器。"
 
 
 您可以更新在 Analysis Workspace 中创建的所有新项目的可视化偏好设置。有关如何访问这些偏好设置的信息，请参阅[更新偏好设置](#update-preferences)。

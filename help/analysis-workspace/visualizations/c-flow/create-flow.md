@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '1446'
-ht-degree: 37%
+ht-degree: 38%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 37%
 >[!CONTEXTUALHELP]
 >id="workspace_flow_container"
 >title="流量容器"
->abstract="选择要用于显示路径分析的容器（编号）。"
+>abstract="选择用于显示路径（的数字）的容器。"
 
 
 流量可视化帮助您了解源自网站或应用程序上特定转化事件的旅程。 或导致特定的转化事件。 可视化图表通过维度（和维度项）或量度跟踪路径。

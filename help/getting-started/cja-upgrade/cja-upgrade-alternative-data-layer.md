@@ -10,18 +10,18 @@ exl-id: 3a0d03d1-def0-45e6-8eb2-115b88497e6d
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '684'
-ht-degree: 0%
+ht-degree: 34%
 
 ---
 
-# 升级替代方案：将数据层发送到Customer Journey Analytics {#data-collection-data-layer}
+# 升级替代方案：将数据层发送到 Customer Journey Analytics {#data-collection-data-layer}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-layer"
->title="将数据层发送到Adobe"
->abstract="您可以通过该数据对象将整个数据层发送到Adobe，而不是通过XDM对象发送数据。<br><br>此选项允许您将数据层映射到XDM，而不是从头开始填充XDM对象，从而节省实施时间。 但是，此映射需要大量工作，因为会有大量数据是Adobe不易解释的。 随着时间的推移，此选项还会引入额外的复杂性，因为您以后添加到数据的任何字段都必须映射到数据流中的XDM。"
+>title="将数据层发送到 Adobe"
+>abstract="您可以通过数据对象将整个数据层发送到 Adobe，而不是通过 XDM 对象发送数据。<br><br>此选项允许您将数据层映射到 XDM，而不是从头开始填充 XDM 对象，从而节省实施时间。不过，这种映射的工作量很大，因为会有大量数据 Adobe 无法轻易解释。随着时间的推移，此选项还会带来更多的复杂性，因为您将来添加到数据中的任何字段都必须映射到数据流中的 XDM。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -29,8 +29,8 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-send-data-layer"
->title="将数据层发送到Adobe"
->abstract="将您的实施配置为在所需时间将数据发送到Adobe，并将JSON有效负载完全配置为您的数据层。"
+>title="将您的数据层发送到 Adobe"
+>abstract="配置实施以在所需时间将数据发送到 Adobe，并将 JSON 负载配置为完整的数据层。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -38,8 +38,8 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-layer-map"
->title="将每个数据层元素分配给XDM"
->abstract="将每个数据层元素映射到所需的XDM字段。 任何未映射到XDM字段的数据层元素将被永久删除，因为Adobe不知道将数据存储在何处以及如何存储。"
+>title="将每个数据层元素分配给 XDM"
+>abstract="将每个数据层元素映射到所需的 XDM 字段。任何未映射到 XDM 字段的数据层元素都将被永久删除，因为 Adobe 不知道在哪里或如何存储该数据。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -65,8 +65,8 @@ ht-degree: 0%
 
 将整个数据层发送到Customer Journey Analytics的基本步骤如下：
 
-1. 将您的实施配置为在所需时间将数据发送到Adobe，并将JSON有效负载完全配置为您的数据层。
+1. 配置实施以在所需时间将数据发送到 Adobe，并将 JSON 负载配置为完整的数据层。
 
 1. 将每个数据层元素映射到所需的XDM字段。
 
-   任何未映射到XDM字段的数据层元素将被永久删除，因为Adobe不知道将数据存储在何处以及如何存储。
+   任何未映射到 XDM 字段的数据层元素都将被永久删除，因为 Adobe 不知道在哪里或如何存储该数据。

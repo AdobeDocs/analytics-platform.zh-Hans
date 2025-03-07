@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '705'
-ht-degree: 23%
+ht-degree: 31%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 23%
 >[!CONTEXTUALHELP]
 >id="workspace_cohorttable_button"
 >title="同类群组表"
->abstract="创建可视化同类群组，根据事件的完成情况对用户进行分组，并分析持续的参与度和一段时间内的流失率。"
+>abstract="创建同类群组可视化图表，根据事件的完成情况对用户进行分组，并分析持续的参与度和一段时间内的流失率。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 23%
 >[!CONTEXTUALHELP]
 >id="workspace_cohorttable_panel"
 >title="同类群组表"
->abstract="根据事件的完成情况分组用户，然后分析这些用户在一段时间内的持续参与和流失情况。 指定其他设置，如粒度、同类群组分析类型以及是否使用滚动计算。 您可以设置高级选项，以根据所选维度构建延迟表或自定义维度同类群组。"
+>abstract="根据事件的完成情况分组用户，然后分析这些用户在一段时间内的持续参与和流失程度。指定其他设置，如粒度、同类群组分析类型以及是否使用滚动计算。您可以设置高级选项，根据所选维度生成延迟表或自定义维度同类群组。"
 
 <!-- markdownlint-enable MD034 -->
 

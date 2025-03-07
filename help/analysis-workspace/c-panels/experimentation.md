@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '2141'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="workspace_experimentation_panel"
 >title="试验"
->abstract="比较不同的用户体验、营销或消息变化，以确定哪些最能推动特定结果。 指定试验、要与之比较的控制变量、成功量度和标准化量度。 （可选）设置置信度的上限和下限。"
+>abstract="比较不同的用户体验、营销或消息变化，确定哪种变化最能推动特定结果。指定试验、要比较的控制变量、成功量度和标准化量度。可选择设置置信度的上限和下限。"
 
 <!-- markdownlint-enable MD034 -->
 

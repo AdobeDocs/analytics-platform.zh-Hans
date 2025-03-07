@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 25%
+ht-degree: 36%
 
 ---
 
@@ -18,12 +18,12 @@ ht-degree: 25%
 >[!CONTEXTUALHELP]
 >id="workspace_flow_button"
 >title="流量"
->abstract="创建可视化效果来查看从一个检查点到下一个检查点的人员流动。"
+>abstract="创建可视化图表来查看从一个检查点到下一个检查点的人员流动。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_panel"
 >title="流量"
->abstract="分析从一个接触点到下一个接触点的访问或访客流量。 指定要以开始和结束的组件（量度、维度或项目）。 或者，您可以定义高级设置以进一步配置可视化图表。"
+>abstract="分析从一个接触点到下一个接触点的访问次数或访客流量。指定开始和结束的组件（量度、维度或项目）。或者，您可以定义高级设置来进一步配置可视化图表。"
 
 <!-- markdownlint-enable MD034 -->
 

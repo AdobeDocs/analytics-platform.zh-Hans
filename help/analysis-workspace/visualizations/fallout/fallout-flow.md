@@ -18,7 +18,7 @@ ht-degree: 30%
 >[!CONTEXTUALHELP]
 >id="workspace_fallout_button"
 >title="流失"
->abstract="创建可视化效果来查看人们如何成功到达所需的检查点。"
+>abstract="创建可视化图表来查看人们如何成功到达所需的检查点。"
 
 <!-- markdownlint-enable MD034 -->
 
