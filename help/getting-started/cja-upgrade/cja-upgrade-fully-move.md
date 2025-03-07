@@ -7,21 +7,21 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
-source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
 source-wordcount: '1067'
-ht-degree: 12%
+ht-degree: 18%
 
 ---
 
-# 评估升级到Customer Journey Analytics后何时禁用Adobe Analytics {#evaluate-aa-needs}
+# 评估升级到 Customer Journey Analytics 后何时禁用 Adobe Analytics {#evaluate-aa-needs}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-fully-move"
 >title="完全转换到 Customer Journey Analytics "
->abstract="（推荐）Adobe建议您从Adobe Analytics完全过渡到Customer Journey Analytics。 在过渡期间，您应该计划将Adobe Analytics与Customer Journey Analytics一起运行，以便执行并排数据比较。 在对数据感到满意时，您可以禁用Adobe Analytics 。"
+>abstract="（推荐）Adobe 建议您从 Adobe Analytics 完全过渡到 Customer Journey Analytics。在过渡期间，您应该计划同时运行 Adobe Analytics 和 Customer Journey Analytics，以便执行并排数据比较。当您对数据满意时，可以禁用 Adobe Analytics。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -135,3 +135,6 @@ ht-degree: 12%
    在新的Web SDK实施中从Customer Journey Analytics收集了足够的历史数据后，您可以完全删除Analytics源连接器。
 
    当您不再需要通过Analytics源连接器从Adobe Analytics环境中获取历史数据，并且您可以仅依赖通过新的Web SDK实施收集的历史数据时，可以执行此操作。
+
+{{upgrade-final-step}}
+

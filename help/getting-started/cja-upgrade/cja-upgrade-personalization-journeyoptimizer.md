@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 21%
@@ -28,7 +28,9 @@ ht-degree: 21%
 
 通过利用机器学习和深度学习中的先进技术，个性化优化可让业务用户（营销人员）定义业务目标，并利用其客户数据培训面向业务的模型，以提供个性化优惠并最大化KPI。
 
-有关详细信息，请参阅Journey Optimizer指南中的[个性化优化模型](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model)。
+1. 遵循《Journey Optimizer指南》中[个性化优化模型](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model)中的信息。
+
+{{upgrade-final-step}}
 
 <!--
 

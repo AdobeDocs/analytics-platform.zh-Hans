@@ -7,14 +7,14 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 71b9da74-3597-4536-9e47-f18097dd917b
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 765b6863cdafa06b54b76fbf0983afb4c14c21d4
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 64%
+source-wordcount: '149'
+ht-degree: 60%
 
 ---
 
-# 禁用Adobe Analytics {#disable-appmeasurement}
+# 禁用 Adobe Analytics {#disable-appmeasurement}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -32,3 +32,8 @@ ht-degree: 64%
 * **标记：**&#x200B;禁用Adobe Analytics扩展
 
 * **AppMeasurment：**&#x200B;替换AppMeasurement.js库s=newobject
+
+>[!NOTE]
+>
+>此信息尚不可用。 它将在不久的将来提供。
+

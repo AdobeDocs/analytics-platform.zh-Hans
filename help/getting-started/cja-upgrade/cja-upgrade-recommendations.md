@@ -1,16 +1,16 @@
 ---
-title: 从Adobe Analytics升级到Customer Journey Analytics时推荐的路径
-description: 了解从Adobe Analytics升级到Customer Journey Analytics时推荐的路径
+title: 从Adobe Analytics升级到Customer Journey Analytics
+description: 了解从Adobe Analytics升级到Customer Journey Analytics时推荐的步骤
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
+source-git-commit: 765b6863cdafa06b54b76fbf0983afb4c14c21d4
 workflow-type: tm+mt
-source-wordcount: '1585'
-ht-degree: 9%
+source-wordcount: '1629'
+ht-degree: 8%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->如果本节中描述的升级步骤对贵组织不切实际，请使用[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)动态生成针对贵组织独特环境量身定制的升级步骤。
+>如果本节所述的升级步骤对贵组织不实用，请使用Customer Journey Analytics升级指南动态生成针对贵组织独特环境定制的升级步骤。 (要从Customer Journey Analytics访问指南，请选择&#x200B;**[!UICONTROL Workspace]**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**[!UICONTROL 升级到Customer Journey Analytics]**。 按照屏幕上的说明操作。)
 
 ### 高层建议升级流程 {#high-level-upgade-process}
 
@@ -35,7 +35,7 @@ ht-degree: 9%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-historical-data"
 >title="从 Adobe Analytics 获取历史数据"
->abstract="将历史 Adobe Analytics 报表包数据引入 Adobe Experience Platform 和 Customer Journey Analytics。"
+>abstract="将历史 Adobe Analytics 报告包数据引入 Adobe Experience Platform 和 Customer Journey Analytics。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -55,7 +55,7 @@ ht-degree: 9%
 
    Analytics源连接器允许您：
 
-   * 将历史 Adobe Analytics 报表包数据引入 Adobe Experience Platform 和 Customer Journey Analytics。
+   * 将历史 Adobe Analytics 报告包数据引入 Adobe Experience Platform 和 Customer Journey Analytics。
 
      您可以保持Analytics Source Connector运行，只要您需要保留Adobe Analytics历史数据即可。
 
@@ -189,9 +189,11 @@ ht-degree: 9%
 
 要针对贵组织的独特环境动态生成升级步骤，请执行以下操作：
 
-1. 完成[Adobe Analytics到Customer Journey Analytics升级调查表](https://gigazelle.github.io/cja-ttv/)。
+1. 完成Customer Journey Analytics升级指南。
 
-   完成此调查表后，系统会为您提供分步说明，概述组织要求所特有的最佳升级步骤。 这些升级步骤最符合您现有的Adobe Analytics环境和Customer Journey Analytics目标。
+   要从Customer Journey Analytics访问指南，请选择&#x200B;**[!UICONTROL Workspace]**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**[!UICONTROL 升级到Customer Journey Analytics]**。 按照屏幕上的说明操作。
+
+   完成本升级指南后，将向您提供分步说明，概述组织要求所特有的最佳升级步骤。 这些升级步骤最符合您现有的Adobe Analytics环境和Customer Journey Analytics目标。
 
 1. 按照生成的分步说明升级到Customer Journey Analytics。
 

@@ -4,9 +4,9 @@ description: 迁移到Customer Journey Analytics时将数据发送到Adobe Exper
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: d9d7f186-9077-4372-94ad-8dd5b97779ca
-source-git-commit: 773c03dfec99abcabdc667c549cce0dc1b1aabc4
+source-git-commit: 765b6863cdafa06b54b76fbf0983afb4c14c21d4
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '897'
 ht-degree: 1%
 
 ---
@@ -31,6 +31,9 @@ ht-degree: 1%
 
 +++
 
+>[!AVAILABILITY]
+>
+>此页面上的信息将替换为以下更全面的升级信息： <ul><li>**建议的升级步骤**<p>有关详细信息，请参阅[从Adobe Analytics升级到Customer Journey Analytics时推荐的路径](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)。</p></li><li>**Customer Journey Analytics升级指南**<p>提供了新的升级指南，可动态生成针对贵组织和独特环境定制的升级步骤。</p><p>要从Customer Journey Analytics访问指南，请选择&#x200B;**[!UICONTROL Workspace]**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**[!UICONTROL 升级到Customer Journey Analytics]**。 按照屏幕上的说明操作。</p></li></ul>
 
 在您[选择最适合贵组织的升级路径](/help/getting-started/cja-upgrade/cja-upgrade-path.md)后，您可以开始向Adobe Experience Platform发送数据，以便在Customer Journey Analytics中提供该数据。
 

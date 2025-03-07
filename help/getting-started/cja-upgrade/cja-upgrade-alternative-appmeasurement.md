@@ -7,21 +7,21 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 0bf35c67-c8ae-4349-93fb-b9806c1064a8
-source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 1%
+source-wordcount: '1302'
+ht-degree: 7%
 
 ---
 
-# 升级替代方案：将AppMeasurement数据收集与Experience Platform Web SDK和Customer Journey Analytics结合使用 {#data-collection-appmeasurement}
+# 升级替代方案：将 AppMeasurement 数据收集与 Experience Platform Web SDK 和 Customer Journey Analytics 结合使用 {#data-collection-appmeasurement}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement-logic"
->title="在Web SDK中使用AppMeasurement逻辑"
->abstract="不要通过XDM对象发送数据，而是通过数据对象以AppMeasurement格式发送所有变量。<br><br>此选项允许您将AppMeasurement逻辑映射到XDM，而不是从头开始填充XDM对象，从而节省实施时间。 但是，随着时间的推移，它会引入额外的复杂性，因为您将来添加的任何字段都必须映射到数据流中的XDM。"
+>title="将 AppMeasurement 逻辑与 Web SDK 结合使用"
+>abstract="通过数据对象以 AppMeasurement 格式发送所有变量，而不是通过 XDM 对象发送数据。<br><br>此选项允许您将 AppMeasurement 逻辑映射到 XDM，而不是从头开始填充 XDM 对象，从而节省实施时间。但是，随着时间的推移，它会带来更多的复杂性，因为您将来添加的任何字段都必须映射到数据流中的 XDM。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -100,7 +100,7 @@ ht-degree: 1%
 
       有关详细信息，请参阅Experience Platform文档中为数据收集](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep)准备数据中的[映射](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping)。[
 
-   1. 继续执行[建议的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)或[动态生成的升级步骤](https://gigazelle.github.io/cja-ttv/)。
+{{upgrade-final-step}}。
 
 
 
