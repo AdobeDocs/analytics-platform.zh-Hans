@@ -1,12 +1,12 @@
 ---
 title: 如何在Report Builder中筛选维度
-description: 描述如何在Customer Journey Analytics的Report Builder中使用筛选维度
+description: 介绍如何在适用于Customer Journey Analytics的Report Builder中使用过滤器维度
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: cbb48623212c2f3d8968dc6daca491761e2f4a9e
+source-git-commit: 0d87f28aa4f8c1b16f46227abad7d374800dcb66
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 88%
@@ -21,7 +21,7 @@ ht-degree: 88%
 
 1. 在“命令”面板中选择一个数据块并单击“编辑数据块”。
 
-1. 单击“下一步”可显示“维度”选项卡。
+1. 单击&#x200B;**[!UICONTROL 下一步]**&#x200B;以显示“维度”选项卡。
 
 1. 单击表中组件名称旁边的 **...** 图标。
 
@@ -139,7 +139,7 @@ ht-degree: 88%
 
    ![显示过去6个月列表中的项。](./assets/image34.png)
 
-   加载过去6个月的数据后，Report Builder将链接更新为&#x200B;**显示过去18个月的项**。
+   加载了过去6个月的数据后，Report Builder将链接更新为&#x200B;**显示过去18个月的项**。
 
 1. 选择维度项。
 
@@ -175,6 +175,6 @@ ht-degree: 88%
 
 从&#x200B;**维度**&#x200B;选项卡，单击维度名称旁边的 V 形图标以查看维度项列表。
 
-![Dimension选项卡和维度列表。](./assets/dimensions_chevron.png)
+![维度选项卡和维度列表。](./assets/dimensions_chevron.png)
 
 您可以将项拖放到&#x200B;**表**&#x200B;上或者双击项名称以将其添加到&#x200B;**表**&#x200B;生成器。

@@ -1,21 +1,21 @@
 ---
-title: 如何在 Customer Journey Analytics 的 Report Builder 中使用筛选器
-description: 介绍如何在Customer Journey Analytics的Report Builder中使用筛选器
+title: 如何在Customer Journey Analytics的Report Builder中使用区段
+description: 介绍如何在Report Builder for Customer Journey Analytics中使用区段
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 1f39d7f4-b508-45d8-9b97-81242c3805d3
 solution: Customer Journey Analytics
-source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
+source-git-commit: 0d87f28aa4f8c1b16f46227abad7d374800dcb66
 workflow-type: tm+mt
 source-wordcount: '849'
-ht-degree: 60%
+ht-degree: 56%
 
 ---
 
-# 在 Report Builder 中使用筛选器
+# 在Report Builder中使用区段
 
-您可以在创建新数据块或者从“命令”面板中选择&#x200B;**编辑数据块**&#x200B;选项时应用筛选器。
+您可以在创建新数据块或从“命令”面板中选择&#x200B;**编辑数据块**&#x200B;选项时应用区段。
 
 ## 将筛选器应用到数据块
 

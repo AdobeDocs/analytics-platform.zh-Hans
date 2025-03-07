@@ -1,15 +1,15 @@
 ---
-title: 如何使用Customer Journey Analytics中的Report Builder创建数据块
+title: 如何在Customer Journey Analytics中使用Report Builder创建数据块
 description: 介绍如何创建数据块。
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 0d87f28aa4f8c1b16f46227abad7d374800dcb66
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 68%
+ht-degree: 61%
 
 ---
 
@@ -43,13 +43,13 @@ ht-degree: 68%
 
    ![显示日期范围选项和活动“下一步”按钮的屏幕截图。](./assets/choose_date_data_view3.png)
 
-   配置数据块之后，您可以选择维度、量度和筛选器来构建数据块。“维度”、“量度”和“筛选器”选项卡显示在表生成器窗格的上方。
+   配置数据块后，您可以选择维度、量度和区段来构建数据块。 “维度”、“量度”和“区段”选项卡显示在表生成器窗格的上方。
 
 ## 构建数据块
 
 要构建数据块，请选择报表组件，然后自定义版面。
 
-1. 添加维度、量度和筛选器。
+1. 添加维度、量度和区段。
 
    滚动组件列表或者使用&#x200B;**搜索**&#x200B;字段来查找组件。将组件拖放到“表”窗格，或者在列表中双击组件名称以自动将组件添加到“表”窗格。
 
@@ -57,9 +57,9 @@ ht-degree: 68%
 
    - 维度组件将添加到“行”部分，如果列中已有维度，则添加到“列”部分。
    - 日期组件将添加到“列”部分。
-   - 筛选器组件将添加到“筛选器”部分。
+   - 区段组件将添加到“区段”部分。
 
-   **开始日期作为Dimension**
+   **开始日期为Dimension**
 
    将开始日期设置为维度，以清楚地标识数据块的开始日期。 如果您有一个具有滚动日期范围的定期计划报表，或者如果您有一个非常规日期范围并且需要清除开始日期，则此功能非常有用。
 
