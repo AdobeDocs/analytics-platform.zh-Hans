@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 1283b285ff49225835abb8e7d8103f34aad686b1
-workflow-type: ht
-source-wordcount: '4649'
-ht-degree: 100%
+source-git-commit: 40bbcb2868de509555faab8384f1cab45fd738a0
+workflow-type: tm+mt
+source-wordcount: '4664'
+ht-degree: 99%
 
 ---
 
@@ -19,6 +19,8 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 
 | 功能 | 描述 |
 | --- | --- |
+| **2025 年 3 月** | |
+| Quantum Metric用例 | 添加了从[量子量度](/help/use-cases/third-party/quantum-metric/collect-session-id.md)收集数据的用例。 |
 | **2025 年 2 月** |  |
 | 媒体收集：Adobe Source Connector 更新了新的媒体报告 XDM | Analytics 源连接器会自动[将 Adobe Analytics 中的流媒体数据映射](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=en)到 Web SDK 使用的相同字段。以前，数据被映射到旧位置和新位置，但未来只使用新位置。 |
 | BI 扩展 - 扩展支持 | Customer Journey Analytics BI 扩展现在[支持 Looker、Jupyter Notebook 和 R Studio](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=en)。 |
@@ -199,7 +201,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 2022 年 10 月 | 移动应用程序：关于[自定义详细视图](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html#view-detail-slides)的新主题。 |
 | 2022 年 10 月 | 对 [Customer Journey Analytics 功能支持](/help/getting-started/aa-vs-cja/cja-aa.md)主题进行了更新。 |
 | **2022 年 9 月** | |
-| 2022 年 9 月 | 关于[将 Google Analytics 数据迁移到 Customer Journey Analytics](/help/use-cases/ga/overview.md) 的新用例。 |
+| 2022 年 9 月 | 关于[将 Google Analytics 数据迁移到 Customer Journey Analytics](/help/use-cases/third-party/ga/overview.md) 的新用例。 |
 | 2022 年 9 月 | Workspace 中[组合图表](/help/analysis-workspace/visualizations/combo-charts.md)的新主题。 |
 | 2022 年 9 月 | 关于 Workspace 中[“试验”面板](/help/analysis-workspace/c-panels/experimentation.md)的新主题。 |
 | **2022 年 8 月** | |
@@ -269,7 +271,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 2021 年 4 月 | 有关[持久性](/help/data-views/component-settings/persistence.md)的新主题。 |
 | 2021 年 4 月 | 有关工作区中对计划项目的支持的新文档。 |
 | 2021 年 4 月 | 有关[增强数据视图体验](/help/data-views/data-views.md)的新主题 |
-| 2021 年 4 月 | 有关[摄取 Google Analytics 数据](/help/use-cases/ga/overview.md)和[分析该数据](/help/use-cases/ga/report.md)的新主题。 |
+| 2021 年 4 月 | 有关[摄取 Google Analytics 数据](/help/use-cases/third-party/ga/overview.md)和[分析该数据](/help/use-cases/third-party/ga/report.md)的新主题。 |
 | 2021 年 4 月 | 增加了有关工作区中[计划报告](/help/analysis-workspace/export/t-schedule-report.md)的主题。 |
 | 2021 年 4 月 | 关于 [Customer Journey Analytics 中的高基数维度](/help/components/dimensions/high-cardinality.md)的新主题。 |
 | **2021 年 3 月** | |

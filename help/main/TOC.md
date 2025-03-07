@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
+source-git-commit: 439bc00f2a7e08c8b73a4caa3a3c7269a3a7f895
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 91%
+source-wordcount: '1210'
+ht-degree: 90%
 
 ---
 
@@ -416,11 +416,19 @@ ht-degree: 91%
 
 + 用例 {#cja-usecases}
    + [Customer Journey Analytics 用例](../use-cases/cja-usecases.md)
-   + Google Analytics 数据{#ga}
-      + [从 Google Analytics 迁移数据](../use-cases/ga/overview.md)
-      + [引入 Google Analytics 历史数据](../use-cases/ga/backfill.md)
-      + [配置流式处理 Google Analytics 数据](../use-cases/ga/streaming.md)
-      + [报告 Google Analytics 数据](../use-cases/ga/report.md)
+   + 第三方数据{#third-party}
+      + [概述](/help/use-cases/third-party/overview.md)
+      + Google Analytics {#ga}
+         + [从 Google Analytics 迁移数据](/help/use-cases/third-party/ga/overview.md)
+         + [引入 Google Analytics 历史数据](/help/use-cases/third-party/ga/backfill.md)
+         + [配置流式处理 Google Analytics 数据](/help/use-cases/third-party/ga/streaming.md)
+         + [报告 Google Analytics 数据](/help/use-cases/third-party/ga/report.md)
+      + 量子量度{#qm}
+         + [收集会话Id](/help/use-cases/third-party/quantum-metric/collect-session-id.md)
+         + [时间会话重播](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
+         + [使用热图](/help/use-cases/third-party/quantum-metric/heatmap.md)
+         + [添加摩擦事件](/help/use-cases/third-party/quantum-metric/friction-events.md)
+         + [源连接器](/help/use-cases/third-party/quantum-metric/source-connector.md)
    + 数据摄取 {#data-ingestion}
       + [收錄并使用 Marketo Engage 数据](../use-cases/data-ingestion/marketo.md)
       + [收錄和使用 Experience Platform 受众](../use-cases/data-ingestion/ingest-aep-segments.md)
