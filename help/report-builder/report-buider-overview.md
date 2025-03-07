@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 56bf524d-101d-4745-b2ef-9770c50f6774
 solution: Customer Journey Analytics
-source-git-commit: 19771d5cd2d2a38919c42e7f76bd700016020912
+source-git-commit: bd2d45b9fc1380e36fc482ee75e1a9bbb26f6cf7
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 99%
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ Customer Journey Analytics Report Builder 允许您使用 Adobe Customer Journey
 
 利用 Report Builder for Customer Journey Analytics，您可以：
 
-- 引用现有工作表单元格以获得绝佳的行顺序、日期范围或过滤器
+- 引用现有的工作表单元格以获得完美的行顺序、日期范围或区段
 - 使用日历、单元格引用或日期数学创建自定义日期
 - 使用熟悉的 Excel 格式设置工具设计表格和可视化项
 
