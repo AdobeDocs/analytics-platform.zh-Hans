@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
 workflow-type: tm+mt
-source-wordcount: '1813'
-ht-degree: 65%
+source-wordcount: '1806'
+ht-degree: 64%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 65%
 
 ## 查看和配置图块属性 {#tiles}
 
-在记分卡生成器中单击某个图块时，右侧边栏会显示与该图块及其详细信息幻灯片关联的属性和特征。 在此边栏中，可为该图块提供新的&#x200B;**标题**&#x200B;或通过应用过滤器而配置该图块。区段是Customer Journey Analytics中的过滤器。
+在记分卡生成器中单击某个图块时，右侧边栏会显示与该图块及其详细信息幻灯片关联的属性和特征。 在此边栏中，可为该图块提供新的&#x200B;**标题**&#x200B;或通过应用区段而配置该图块。
 
 ![“属性”图块](assets/properties-tile-new.png)
 
@@ -108,7 +108,7 @@ ht-degree: 65%
 
 ### 自定义数据故事 {#customize-data-story}
 
-通过数据故事，可自定义一切，以使您可共享要共享的信息并排除多余的一切。可自定义磁贴和个别幻灯片以添加过滤器、显示细分、更改版面和更改可视化。
+通过数据故事，可自定义一切，以使您可共享要共享的信息并排除多余的一切。您可以自定义图块和单个幻灯片以添加区段、显示划分、更改布局或更改可视化图表。
 
 **自定义磁贴**
 

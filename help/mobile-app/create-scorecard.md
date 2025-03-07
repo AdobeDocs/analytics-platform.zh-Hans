@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
 workflow-type: tm+mt
-source-wordcount: '2703'
+source-wordcount: '2689'
 ht-degree: 67%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 67%
 <!-- markdownlint-enable MD034 -->
 
 
-以下信息指示Customer Journey Analytics数据策划人如何为执行用户配置和展示功能板。 要开始操作，您可以观看Analytics功能板记分卡生成器视频：
+以下信息指示Customer Journey Analytics数据的策划人如何为执行用户配置和展示功能板。 要开始操作，您可以观看Analytics功能板记分卡生成器视频：
 
 
 >[!BEGINSHADEBOX]
@@ -36,7 +36,7 @@ ht-degree: 67%
 
 >[!NOTE]
 >
->此页面的Analytics记分卡屏幕截图获取自Adobe Analytics UI，而不是从Customer Journey Analytics获取。 这些 UI 几乎完全相同。
+>此页面的Analytics记分卡屏幕截图获取自Adobe Analytics UI，而不是从Customer Journey Analytics。 这些 UI 几乎完全相同。
 
 Analytics记分卡以平铺布局为执行用户显示关键数据可视化图表，如下所示：
 
@@ -91,13 +91,13 @@ Analytics记分卡以平铺布局为执行用户显示关键数据可视化图�
 
 ![新移动记分卡窗口，带有从维度列表指向记分卡窗格的箭头。](assets/layer_dimensions.png)
 
-## 应用过滤器 {#filters}
+## 应用区段 {#segments}
 
-要将过滤器应用于单个图块，请从左侧面板中拖动某个过滤器(区段就是Customer Journey Analytics中的过滤器)，然后将其直接拖放到图块的顶部。
+要将区段应用于单个图块，请将左侧面板中的某个区段直接拖放到图块的顶部。
 
-如果要将过滤器应用于记分卡中的所有图块，请将图块拖放到记分卡的顶部。 或者，您也可以通过在日期范围下方的过滤器菜单中选择过滤器来应用过滤器。您[像在Customer Journey AnalyticsWorkspace中一样为记分卡配置和应用筛选器](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans)。
+如果要将区段应用于记分卡中的所有图块，请将区段拖放到记分卡的顶部。 或者，您也可以通过在日期范围下方的区段菜单中选择区段来应用区段。 您[像在Customer Journey Analytics Workspace中一样为记分卡配置和应用区段](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans)。
 
-![筛选器下拉选择器突出显示生成筛选器](assets/segment_ui.png)
+![突出显示生成区段的区段下拉选择器](assets/segment_ui.png)
 
 ## 添加日期范围 {#dates}
 
@@ -186,7 +186,7 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 ## 查看和配置图块属性 {#tiles}
 
-在记分卡生成器中单击某个图块时，右侧边栏会显示与该图块及其详细信息幻灯片关联的属性和特征。 在此边栏中，可为该图块提供新的&#x200B;**标题**&#x200B;或通过应用过滤器而配置该图块。区段是Customer Journey Analytics中的过滤器。
+在记分卡生成器中单击某个图块时，右侧边栏会显示与该图块及其详细信息幻灯片关联的属性和特征。 在此边栏中，可为该图块提供新的&#x200B;**标题**&#x200B;或通过应用区段而配置该图块。
 
 ![“属性”图块](assets/properties-tile-new.png)
 
@@ -280,7 +280,7 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 ### 自定义数据故事 {#customize-data-story}
 
-通过数据故事，可自定义一切，以使您可共享要共享的信息并排除多余的一切。可自定义磁贴和个别幻灯片以添加过滤器、显示细分、更改版面和更改可视化。
+通过数据故事，可自定义一切，以使您可共享要共享的信息并排除多余的一切。您可以自定义图块和单个幻灯片以添加区段、显示划分、更改布局或更改可视化图表。
 
 **自定义磁贴**
 

@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1297'
 ht-degree: 73%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 73%
 
 >[!NOTE]
 >
->尽管移动设备应用程序在应用商店中被命名为Adobe Analytics功能板，但该应用程序可以与Customer Journey Analytics移动设备记分卡同等使用。
+>尽管移动设备应用程序在应用商店中被命名为Adobe Analytics功能板，但该应用程序可以与Customer Journey Analytics移动记分卡具有同等效用。
 
 **对于 iOS 上的执行用户：**
 
@@ -56,7 +56,7 @@ ht-degree: 73%
 
 [Android 链接](https://bit.ly/2LM38Oo)
 
-下载并安装完毕后，执行用户可以使用其现有的Customer Journey Analytics凭据登录应用程序。
+下载并安装后，执行用户可以使用其现有的Customer Journey Analytics凭据登录应用程序。
 
 ![Customer Journey Analytics应用欢迎屏幕](assets/welcome.png)
 
@@ -64,7 +64,7 @@ ht-degree: 73%
 
 要使用功能板，请执行以下操作：
 
-1. 登录到该应用程序。启动功能板时，将显示登录屏幕。使用现有Customer Journey Analytics凭据按照提示操作。 我们同时支持 Adobe ID 和 Enterprise/Federated ID。
+1. 登录到该应用程序。启动功能板时，将显示登录屏幕。使用现有的Customer Journey Analytics凭据按照提示操作。 我们同时支持 Adobe ID 和 Enterprise/Federated ID。
 
    ![登录序列](assets/signseq.png)
 
@@ -120,11 +120,11 @@ ht-degree: 73%
 
    * 根据点按的时间间隔（**日**、**周**、**月**&#x200B;或&#x200B;**年**），您将看到两个日期范围选项，即当前时间范围或紧随其前的时间范围。点按这两个选项之一，以选择第一个范围。在&#x200B;**[!UICONTROL 比较对象]**&#x200B;列表下，点按其中显示的一个选项，以将此时间段的数据与您选择的第一个日期范围进行比较。点按屏幕右上角的&#x200B;**[!UICONTROL 完成]**。**[!UICONTROL 日期范围]**&#x200B;字段和记分卡图块会更新以显示您选择的新范围中的新比较数据。
 
-1. 要将区段过滤器应用于记分卡，请点按过滤器下拉列表，然后选择由策划人配置的区段。 应用程序中的[筛选器](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans)的工作方式与在Workspace中相同。
+1. 要将区段应用于记分卡，请点按区段下拉列表，然后选择由策划人配置的区段。 应用程序中的[区段](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans)的工作方式与在Workspace中相同。
 
-   ![区段过滤器](assets/segment_filter.png)
+   ![区段](assets/segment_filter.png)
 
-1. 获取记分卡更新。如果记分卡不包含您可能感兴趣的所有量度或划分，请联系您的Customer Journey Analytics团队以更新记分卡。 更新后，您可以下拉屏幕上的记分卡进行刷新，并加载最近添加的数据。
+1. 获取[!UICONTROL 记分卡]更新。 如果[!UICONTROL 记分卡]不包含您可能感兴趣的所有量度或划分，请联系您的Customer Journey Analytics团队以更新记分卡。 更新后，您可以下拉屏幕上的记分卡进行刷新，并加载最近添加的数据。
 
 1. 要提供对应用程序的反馈，请执行以下操作：
 
@@ -157,8 +157,8 @@ ht-degree: 73%
 
 | 术语 | 定义 |
 |--- |--- |
-| 使用者 | 在移动设备上通过Customer Journey Analytics查看关键指标和见解的执行角色 |
-| 策划人 | 精通数据的人员，可从Customer Journey Analytics中查找和分发见解并配置要供使用者查看的记分卡 |
+| 使用者 | 在移动设备上查看来自Customer Journey Analytics的关键指标和见解的执行角色 |
+| 策划人 | 通晓数据的角色，可从Customer Journey Analytics查找和分发见解并配置要供使用者查看的记分卡 |
 | 策划 | 创建或编辑移动记分卡的操作，记分卡中包含用户的相关量度、维度和其他组件 |
 | 记分卡 | 包含一个或多个图块的功能板视图 |
 | 图块 | “记分卡视图”中量度的呈现方式 |

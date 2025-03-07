@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 74%
+source-wordcount: '711'
+ht-degree: 69%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 74%
 
 1. 在 [Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html) 中设置新用户。
 
-1. 要能够共享记分卡，您必须向应用程序用户授予对记分卡组件（例如 Analysis Workspace）、记分卡所基于的数据视图以及筛选器、量度和维度的访问权限。
+1. 要能够共享记分卡，您必须向应用程序用户授予对记分卡组件(例如Analysis Workspace)、记分卡所基于的数据视图以及区段、量度和维度的访问权限。
 
 ## 应用程序用户的系统先决条件
 
@@ -35,7 +35,7 @@ ht-degree: 74%
 
 >[!NOTE]
 >
->尽管移动设备应用程序在应用商店中被命名为Adobe Analytics功能板，但该应用程序可以与Customer Journey Analytics移动设备记分卡同等使用。
+>尽管移动设备应用程序在应用商店中被命名为Adobe Analytics功能板，但该应用程序可以与Customer Journey Analytics移动记分卡具有同等效用。
 
 **对于 iOS 上的执行用户：**
 
@@ -49,7 +49,7 @@ ht-degree: 74%
 
 `[Android link](https://bit.ly/2LM38Oo)`
 
-下载并安装后，执行用户可以使用其现有的Customer Journey Analytics凭据登录应用程序；我们同时支持AdobeID和Enterprise/Federated ID。
+下载并安装后，执行用户可以使用其现有的Customer Journey Analytics凭据登录应用程序；我们同时支持Adobe和Enterprise/Federated ID。
 
 ![Adobe Analytics功能板欢迎屏幕](assets/welcome.png)
 
@@ -74,7 +74,7 @@ ht-degree: 74%
 
 向执行用户说明图块在您共享的记分卡中的显示方式。
 
-![说明图块，包括选定的日期范围、区段过滤器以及量度和维度](assets/newexplain.png)
+![说明图块，包括选定的日期范围、区段以及量度和维度](assets/newexplain.png)
 
 ![示例记分卡](assets/intro_scorecard.png)
 
