@@ -4,10 +4,8 @@ description: 了解如何为Customer Journey Analytics创建营销渠道派生�
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: true
-hidefromtoc: true
 exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
-source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
+source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 25%

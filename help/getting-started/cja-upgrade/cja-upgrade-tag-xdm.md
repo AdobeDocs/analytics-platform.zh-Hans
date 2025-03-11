@@ -4,10 +4,8 @@ description: 了解如何将XDM数据收集逻辑添加到标记中
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: true
-hidefromtoc: true
 exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
-source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
+source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '1631'
 ht-degree: 37%
