@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
+source-git-commit: e0615e3b4b1a4f0cd675de4bf4bb84d73eab8b8c
 workflow-type: tm+mt
-source-wordcount: '2689'
-ht-degree: 67%
+source-wordcount: '2698'
+ht-degree: 66%
 
 ---
 
@@ -48,7 +48,7 @@ Analytics记分卡以平铺布局为执行用户显示关键数据可视化图�
 
 要创建记分卡，您需要执行以下操作：
 
-1. 访问[!UICONTROL 空白移动记分卡]模板。
+1. 访问Workspace中的[!UICONTROL 空白移动记分卡]模板。
 2. 使用数据配置记分卡并将其保存。
 
 ## 访问[!UICONTROL 空白移动记分卡]模板 {#template}
@@ -58,6 +58,7 @@ Analytics记分卡以平铺布局为执行用户显示关键数据可视化图�
 ### 创建新项目 {#create}
 
 1. 打开Customer Journey Analytics并单击&#x200B;**[!UICONTROL Workspace]**&#x200B;选项卡。
+1. 在左边栏中，单击&#x200B;**[!UICONTROL 项目]**。
 1. 单击&#x200B;**[!UICONTROL 创建新项目]**&#x200B;并选择&#x200B;**[!UICONTROL 空白移动记分卡]**&#x200B;项目模板。
 1. 单击&#x200B;**[!UICONTROL 创建]**。
 
@@ -72,7 +73,7 @@ Analytics记分卡以平铺布局为执行用户显示关键数据可视化图�
 
 实施记分卡模板：
 
-1. 在&#x200B;**[!UICONTROL 属性]**（位于右侧边栏中）下，指定要从中使用数据的&#x200B;**[!UICONTROL 项目数据视图]**。
+1. 在&#x200B;**[!UICONTROL 记分卡属性]**（在右侧边栏中）下，指定要从中使用数据的&#x200B;**[!UICONTROL 项目数据视图]**。
 
    ![突出显示数据视图选择的新移动记分卡窗口](assets/properties_save.png)
 
