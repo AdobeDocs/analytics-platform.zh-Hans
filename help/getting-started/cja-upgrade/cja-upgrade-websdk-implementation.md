@@ -4,11 +4,10 @@ description: 了解升级到Customer Journey Analytics时的Web SDK实施选项
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: true
-hidefromtoc: true
-source-git-commit: 1ac7059e76797b14c00993a2a46aa51b1ebfe6a2
+exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
+source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '350'
 ht-degree: 38%
 
 ---
@@ -47,7 +46,7 @@ ht-degree: 38%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-no-selection"
 >title="为给定的属性实施 Web SDK"
->abstract="在调查表中选择所需的实施类型，以获取更详细的说明。"
+>abstract="在升级指南中选择所需的实施类型，以了解更多详细说明。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -73,6 +72,3 @@ ht-degree: 38%
 * [NPM](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/npm)：使用NPM包管理器在您的站点上安装Web SDK。
 
 有关详细信息，请参阅《Experience Platform Web SDK指南》中的[Web SDK安装概述](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview)。
-
-
-

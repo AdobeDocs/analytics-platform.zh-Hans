@@ -4,13 +4,11 @@ description: 了解从Adobe Analytics升级到Customer Journey Analytics时推�
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: true
-hidefromtoc: true
 exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
-source-git-commit: ff951b6ca03fc5be4d24651b8b8e4bdd06216274
+source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '939'
-ht-degree: 33%
+ht-degree: 29%
 
 ---
 
@@ -93,7 +91,7 @@ ht-degree: 33%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-determine-implementation"
 >title="确定现有的实施类型"
->abstract="在您的组织内部开展工作，确定您当前使用哪种类型的实施来将数据发送到 Adobe Analytics。当您准备迁移到 Customer Journey Analytics 时，很可能会与了解此信息的个人或团队合作。<br><br>确定您的组织所使用的实施类型后，修改调查问卷中的答案。"
+>abstract="在您的组织内部开展工作，确定您当前使用哪种类型的实施来将数据发送到 Adobe Analytics。升级到Customer Journey Analytics后，请与了解此信息的个人或团队合作。<br><br>确定贵组织使用的实施类型后，请在《Customer Journey Analytics升级指南》中修改您的答案。"
 
 <!-- markdownlint-enable MD034 -->
 
