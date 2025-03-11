@@ -6,10 +6,11 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: true
 hide: true
-source-git-commit: d71f39d25c52b0389d0441f238cb5b1809986b2d
+exl-id: cfe4bafd-afe6-4738-94f1-30882893b3b6
+source-git-commit: 2d6c5d5b546ef8ba952d4ba4397d897ed4566283
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 1%
+source-wordcount: '422'
+ht-degree: 0%
 
 ---
 
@@ -51,23 +52,4 @@ ht-degree: 1%
 1. 在右窗格中，将[persistence](/help/data-views/component-settings/persistence.md)设置设置为“Session”。
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
-## 步骤4：配置Workspace以适应会话ID维度
 
-在Workspace中创建自由格式表并进行配置，以便会话ID值直接链接到Quantum Metric。
-
-1. 登录到[experience.adobe.com](https://experience.adobe.com)。
-1. 导航到Customer Journey Analytics，然后在顶部菜单中选择&#x200B;**[!UICONTROL Workspace]**。
-1. 选择现有项目，或创建项目。
-1. 创建[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)。
-1. 将会话ID维度拖动到Workspace画布。
-1. 右键单击维度列标题，然后选择&#x200B;**[!UICONTROL 为所有维度项目创建超链接]**。
-1. 选择&#x200B;**[!UICONTROL 创建自定义URL]**。
-1. 粘贴以下URL结构：
-
-   ```
-   https://adobe.quantummetric.com/#/replay/cookie:$value
-   ```
-
-1. 单击&#x200B;**[!UICONTROL 创建]**。
-
-现在，每个会话ID都是一个可单击的链接。 这些链接会将您转到新选项卡中的量子度量，从而允许您更详细地分析该特定会话。 有关向Analysis Workspace维度项目添加超链接的详细信息，请参阅[在自由格式表中创建超链接](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)。
