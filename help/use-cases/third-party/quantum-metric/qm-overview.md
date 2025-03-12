@@ -3,13 +3,19 @@ title: Quantum Metric集成用例
 description: 了解如何在Customer Journey Analytics中将Quantum量度数据与其余数据相结合。
 hide: true
 hidefromtoc: true
-source-git-commit: cd0ff5f6c805dc75fc07cee87e104b84d411abc9
+exl-id: a74e7143-e814-42c3-a706-b64427dc9ecb
+source-git-commit: be9a3325b3108e921841f7bc9ad529dd5ca395b6
 workflow-type: tm+mt
-source-wordcount: '31'
+source-wordcount: '133'
 ht-degree: 0%
 
 ---
 
 # Quantum Metric集成用例
 
-内容放在此处！
+本页说明如何将Customer Journey Analytics (CJA)和Quantum Metric联系起来，以充分利用这两种产品一起工作的效果。  涵盖的用例包括：
+
+1. [在Customer Journey Analytics中收集Quantum Metric sessionID ](collect-session-id.md)以启用将热映射和会话重播数据绑定到CJA。
+1. [Tie Quantum Metric会话重播到Customer Journey Analytics中的数据](tie-session-replays.md)，以便更好地了解“内容”背后的“原因”。
+1. [将量子度量错误和摩擦事件](friction-events.md)（如页面加载缓慢和错误、rage点击等）添加到CJA行为数据中，以添加分析深度。
+1. 通过[将Quantum量度热映射与CJA数据关联](heatmap.md)，更好地了解页面级参与。
