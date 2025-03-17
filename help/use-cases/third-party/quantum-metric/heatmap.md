@@ -7,16 +7,16 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: d861135f-42a4-45ac-8b11-41f151bfce92
-source-git-commit: a0f82948895f3eac86cf00df1dec8abc2f723fc2
+source-git-commit: 48c2b2eaa191948eda303f9ee236038484e4f2eb
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '383'
 ht-degree: 1%
 
 ---
 
 # 在Customer Journey Analytics中使用量子度量热图
 
-将Quantum量度热映射关联到CJA数据可让您更好地了解页面级参与度并根据消费者行为优化页面。 Workspace可用于了解消费者用户流并查看消费者遵循的路径从一个页面转到下一个页面。 然后，您可以单击超链接页面URL以直观地热图展示用户如何与内容互动。
+将Quantum量度热映射关联到CJA数据可让您更好地了解页面级参与度并根据消费者行为优化页面。 Workspace可用于了解消费者用户流并查看消费者遵循的路径从一个页面转到下一个页面。 然后，您可以单击超链接页面URL以直观地热图展示用户如何与内容互动。  通过将Quantum Metric Heatmapping链接到CJA，您现在可以将页面级交互与业务结果关联，从而将您的分析提升到新的水平。
 
 该表将返回该区段中的所有会话，您可以单击其中的任何会话来进一步了解QM。  要了解有关量子量度会话重放的更多信息，请访问https://www.quantummetric.com/platform/session-replay
 
@@ -48,6 +48,6 @@ ht-degree: 1%
 
 ## 通过单击Customer Journey Analytics中的链接来查看热图
 
-找到要为其浏览热映射的页面后，您可以将其应用于URL所在的面板。 该表将返回一个URL，允许您浏览相关页面的热图、滚动深度以及用于交互的关键区域。  要了解有关量子量度热图的更多信息，请访问https://www.quantummetric.com/platform/interaction-heatmaps
+找到要为其浏览热映射的页面后，您可以将其应用于URL所在的面板。 该表将返回一个URL，允许您浏览相关页面的热图、滚动深度以及用于交互的关键区域。  在[https://www.quantummetric.com/platform/interaction-heatmaps](https://www.quantummetric.com/platform/interaction-heatmaps)了解更多有关量子度量热图的信息
 
 
