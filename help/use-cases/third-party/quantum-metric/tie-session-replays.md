@@ -7,16 +7,16 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: d722e88d163dd99aa7b98c6fa6cd75028d7d9e6f
+source-git-commit: 94dad68426a08ffa34ded7905567fbea307b1de4
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '359'
 ht-degree: 1%
 
 ---
 
 # 系数量度会话重播到Customer Journey Analytics中的数据
 
-通过将Quantum Metric会话重播与CJA数据关联，客户可以更好地了解“内容”背后的“原因”。  Workspace可用于发现存在摩擦的会话，然后单击超链接会话ID以在Quantum Metric中浏览会话重放。  通过此数据，可查看会话中的行为并更好地了解导致消费者摩擦的因素。
+通过将Quantum Metric会话重播与CJA数据关联，客户可以更好地了解“内容”背后的“原因”。  Workspace可用于发现存在摩擦的会话，然后单击超链接会话ID以在Quantum Metric中浏览会话重放。  通过此数据，可查看会话中的行为并更好地了解导致消费者摩擦的因素。  通过与CJA绑定的会话重播，您可以捕获体验中有关客户行为的关键上下文。
 
 ## 先决条件
 
@@ -46,5 +46,5 @@ ht-degree: 1%
 ## 步骤2从Customer Journey Analytics查看会话
 
 创建包含可单击链接的Workspace报表后，您可以使用Customer Journey Analytics中的过滤器来识别可在Quantum Metric中进一步分析的有趣会话。
-该表将返回该区段中的所有会话，您可以单击其中的任何会话来进一步了解QM。  要了解有关量子量度会话重放的更多信息，请访问https://www.quantummetric.com/platform/session-replay
+该表将返回该区段中的所有会话，您可以单击其中的任何会话来进一步了解QM。  在[https://www.quantummetric.com/platform/session-replay](https://www.quantummetric.com/platform/session-replay)上了解有关量子量度会话重播的更多信息
 
