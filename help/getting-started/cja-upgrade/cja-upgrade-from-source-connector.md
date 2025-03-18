@@ -8,7 +8,7 @@ exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '538'
-ht-degree: 14%
+ht-degree: 30%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 14%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-delete"
 >title="删除现有的 Analytics 源连接器"
->abstract="您当前拥有的Analytics Source Connector与您组织的自定义架构不兼容。 但是，数据仍然存在于Analytics报表包中。 此步骤将删除当前的Analytics Source Connector，以便您可以在后续步骤中使用正确的架构重新创建它。<br><br>在删除源连接器之前，您可能需要与组织中的其他人员协调，以确保删除源连接器不会影响组织内的报告。 此协调可能需要几周的时间才能完成。"
+>abstract="您当前拥有的 Analytics 源连接器与您组织的自定义架构不兼容。但是，Analytics 报告包中仍然存在数据。此步骤会移除当前的 Analytics 源连接器，以便您可以在后续步骤中使用正确的架构重新创建它。<br><br>在删除源连接器之前，您可能需要与组织中的其他人员进行协调，以确保删除源连接器不会影响组织内的报告。这一协调工作可能需要数周时间才能完成。"
 
 <!-- markdownlint-enable MD034 -->
 

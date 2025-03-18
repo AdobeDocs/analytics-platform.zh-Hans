@@ -8,7 +8,7 @@ exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 38%
+ht-degree: 54%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 38%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-third-party"
 >title="将 Web SDK 库添加到您的第三方标记管理系统"
->abstract="与管理员合作，通过您的标记管理系统将Web SDK库添加到您的网站。<br><br>此任务的完成时间在很大程度上取决于负责标记管理系统的个人的响应速度。 添加Web SDK库可能会与关联的实施逻辑捆绑在一起，并在贵组织的标准发布周期中进行部署。"
+>abstract="与您的标记管理系统管理员合作，将 Web SDK 库添加到您的网站中。<br><br>此任务的完成时间在很大程度上取决于负责标记管理系统的个人的响应能力。添加 Web SDK 库可能会与相关的实施逻辑捆绑在一起，并在组织的标准发布周期内部署。"
 
 <!-- markdownlint-enable MD034 -->
 

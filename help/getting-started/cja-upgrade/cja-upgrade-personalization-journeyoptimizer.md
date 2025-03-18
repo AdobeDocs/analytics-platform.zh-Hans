@@ -8,7 +8,7 @@ exl-id: 5086ac6e-5bee-4f0f-b7e5-a3d9bd8a1332
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '132'
-ht-degree: 21%
+ht-degree: 80%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 21%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-personalization"
 >title="为 Adobe Journey Optimizer 使用个性化对象"
->abstract="通过利用机器学习和深度学习中的先进技术，个性化优化可让业务用户（营销人员）定义业务目标，并利用其客户数据培训面向业务的模型，以提供个性化优惠并最大化KPI。"
+>abstract="通过利用受到监督的机器学习和深度学习领域的先进技术，业务用户（营销人员）可以使用个性化优化功能定义业务目标，并利用他们的客户数据来训练面向业务的模型，以提供个性化产品建议并使 KPI 最大化。"
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note}}
 
-通过利用机器学习和深度学习中的先进技术，个性化优化可让业务用户（营销人员）定义业务目标，并利用其客户数据培训面向业务的模型，以提供个性化优惠并最大化KPI。
+通过利用受到监督的机器学习和深度学习领域的先进技术，业务用户（营销人员）可以使用个性化优化功能定义业务目标，并利用他们的客户数据来训练面向业务的模型，以提供个性化产品建议并使 KPI 最大化。
 
 1. 遵循《Journey Optimizer指南》中[个性化优化模型](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model)中的信息。
 

@@ -8,7 +8,7 @@ exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '1067'
-ht-degree: 18%
+ht-degree: 31%
 
 ---
 
@@ -36,8 +36,8 @@ ht-degree: 18%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-source-connector"
->title="禁用Analytics Source Connector以专门使用Web SDK中的数据"
->abstract="Analytics Source Connector用于提供并排数据比较、历史数据，以及对Customer Journey Analytics中未完全提供的一些功能的访问。 当您不再需要Adobe Analytics来实现这些目的时，可以禁用Analytics源连接器。"
+>title="禁用 Analytics 源连接器，以便仅使用来自 Web SDK 的数据"
+>abstract="Analytics 源连接器用于提供并排数据比较、历史数据以及访问 Customer Journey Analytics 中未完全提供的一些功能。当您不再需要将 Adobe Analytics 用于这些目的时，您可以禁用 Analytics 源连接器。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -72,8 +72,8 @@ ht-degree: 18%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-analytics-tags"
->title="在标记中禁用Analytics扩展"
->abstract="借助Web SDK数据完全正常使用，请与标记管理员合作，从标记属性中删除Adobe Analytics扩展。 在执行此操作之前，请确保您的用户已经从使用Adobe Analytics过渡到Customer Journey Analytics。"
+>title="在标记中禁用 Analytics 扩展"
+>abstract="在 Web SDK 数据完全发挥作用的情况下，与标记管理员合作从标记属性中移除 Adobe Analytics 扩展。在执行此操作之前，请确保您的用户已从使用 Adobe Analytics 过渡到使用 Customer Journey Analytics。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -81,8 +81,8 @@ ht-degree: 18%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-analytics-api"
->title="为 Adobe Analytics 停用 API 数据收集"
->abstract="在Web SDK数据完全正常使用的情况下，请与适用的工程团队合作，从项目中删除Adobe Analytics代码。 在执行此操作之前，请确保您的用户已经从使用Adobe Analytics过渡到Customer Journey Analytics。"
+>title="禁用 Adobe Analytics 的 API 数据收集"
+>abstract="在 Web SDK 数据完全发挥作用的情况下，与适用的工程团队合作从项目中移除 Adobe Analytics 代码。在执行此操作之前，请确保您的用户已从使用 Adobe Analytics 过渡到使用 Customer Journey Analytics。"
 
 <!-- markdownlint-enable MD034 -->
 

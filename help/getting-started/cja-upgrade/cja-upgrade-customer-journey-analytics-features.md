@@ -8,7 +8,7 @@ exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 46%
+ht-degree: 57%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tie-data"
 >title="将不同来源的数据结合在一起"
->abstract="（推荐）关联来自各种Web、移动和离线属性的数据，以创建客户行为的单个整合视图。 这种组合来自其他渠道的分析数据的功能是Customer Journey Analytics的主要用例。"
+>abstract="（推荐）整合来自各种 Web、Mobile 和离线属性的数据，以创建一个单一的、整合的客户行为视图。将来自其他渠道的分析数据结合起来的能力是 Customer Journey Analytics 的主要用例。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -55,7 +55,7 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-target"
 >title="暂时与 Adobe Target 集成"
->abstract="Adobe 建议与 Adobe Journey Optimizer 集成以实现个性化用例。与Adobe Target集成是可能的，但这是一个短期解决方案。"
+>abstract="Adobe 建议与 Adobe Journey Optimizer 集成以实现个性化用例。可以与 Adobe Target 集成，但这只是短期的解决方案。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -73,7 +73,7 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-aam"
 >title="暂时与 Adobe Audience Manager 集成"
->abstract="Adobe 建议与 Adobe Real-Time CDP 集成，以满足基于受众的用例。与Audience Manager集成是可能的，但这是一个短期解决方案。"
+>abstract="Adobe 建议与 Adobe Real-Time CDP 集成，以满足基于受众的用例。可以与 Audience Manager 集成，但这只是短期的解决方案。"
 
 <!-- markdownlint-enable MD034 -->
 

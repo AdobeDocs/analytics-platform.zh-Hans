@@ -8,7 +8,7 @@ exl-id: 0bf35c67-c8ae-4349-93fb-b9806c1064a8
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '1302'
-ht-degree: 7%
+ht-degree: 11%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 7%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement-logic-step"
->title="更改您的 AppMeasurement 逻辑，以指向 Web SDK"
->abstract="之所以出现此步骤，是因为您选择了使用实施快捷方式。 复制或更改AppMeasurement逻辑以填充数据对象而不是s对象。 例如，将s.eVar1的分配更改为数据。__adobe.analytics.eVar1并对所有Analytics变量重复执行上述操作。"
+>title="更改 AppMeasurement 逻辑以指向 Web SDK"
+>abstract="之所以出现这一步骤是因为您选择采取了一条实施捷径。复制或更改 AppMeasurement 逻辑以填充数据对象，而不是 s 对象。例如，将 s.eVar1 的赋值更改为数据。__adobe.analytics.eVar1 并对所有 Analytics 变量重复此操作。"
 
 <!-- markdownlint-enable MD034 -->
 
