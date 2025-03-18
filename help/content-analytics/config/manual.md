@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: 35298dd6d18ebb07d104a608aeff06cb864ee1dc
+source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '440'
 ht-degree: 1%
 
 ---
@@ -31,31 +31,31 @@ ht-degree: 1%
 
 要激活新配置或对现有配置所做的更改，请执行以下操作：
 
-1. 您需要遵循[发布流](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}。 仅当您成功发布包含Content Analytics配置的Tag属性的库时，才会为您配置的域、体验和资产收集Content Analytics数据。
+1. 您需要遵循[发布流](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}。 成功发布包含Content Analytics配置的Tags属性的库。 然后，才会为您配置的域、体验和资源收集Content Analytics数据。
 
-1. 您需要在开发、暂存或发布环境中的页面的`<head>`元素中[安装](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation)嵌入代码，具体取决于内容分析。
+1. 您需要在开发、暂存或发布环境中的页面的`<head>`元素中[安装](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation)嵌入代码，具体情况受Content Analytics限制。
 
 
 ## 停用
 
 要取消激活收集内容分析数据，请执行以下操作：
 
-1. 在开发、暂存或生产环境中的页面的`<head>`元素中删除[嵌入代码](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments)，具体取决于内容分析。
-1. [删除](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview)与您的Content Analytics配置关联的标记属性。
+1. 从开发、暂存或生产环境中的页面的`<head>`元素中删除[嵌入代码](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments)，具体情况受Content Analytics限制。
+1. [删除](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview)与Content Analytics配置关联的Tags属性。
 
 
 
 ## 修改
 
-通常，您应该使用[引导式配置向导](guided.md)来更改您的实施。
+您可以使用[引导式配置向导](guided.md)对已实施的配置进行一些细微更改。 例如，更改数据视图。
 
-或者，您可以使用与您的Adobe配置关联的Tag属性中的[Content Analytics扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview)来更改以下工件：
+在与Adobe Content Analytics配置关联的Tags属性中使用[Content Analytics扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview)对以下工件进行更改：
 
 * [沙盒和数据流](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}。
 
   >[!CAUTION]
   >
-  >您必须验证在Adobe Content Analytics扩展中配置的沙盒和数据流是否已在早期阶段使用[引导式配置](guided.md)为Content Analytics配置。 此配置可确保所有必需的工件均可用。<br/><br/>还必须验证沙盒或数据流的更新不会干扰配置为使用同一沙盒或数据流的其他Content Analytics配置。
+  >验证在早期阶段已使用[引导式配置](guided.md)为Content Analytics配置了在Adobe Content Analytics扩展中配置的沙盒和数据流。 此配置可确保所有必需的工件均可用。<br/><br/>同时验证沙盒或数据流的更新不会干扰另一个配置为使用同一沙盒或数据流的Content Analytics配置。
   >
 
 * [事件筛选](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering){target="_blank"}
@@ -76,9 +76,9 @@ ht-degree: 1%
 
 ## 版本控制
 
-如果您需要对您的内容分析体验进行版本控制，则必须在您认为要分析的体验的页面上添加全局`adobe.getContentExperienceVersion`函数。
+如果您需要对Content Analytics体验进行版本控制，则必须在您认为要分析的体验的页面上添加全局`adobe.getContentExperienceVersion`函数。
 
-`adobe.getContentExperienceVersion`函数应返回一个字符串作为值，该值可以是您选择用于标识版本的任何值。 该版本将附加到Experience ID URL。
+`adobe.getContentExperienceVersion`函数应返回一个字符串作为值，该值可以是您选择的任何内容，以标识版本。 该版本已附加到[Experience ID URL](/help/content-analytics/report/components.md#experience-metadata)。
 
 如果函数不存在或函数未返回任何值，则使用值`NoVersion`作为默认值。
 

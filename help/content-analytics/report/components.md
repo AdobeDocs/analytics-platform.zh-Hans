@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
-source-git-commit: cd31712c1dde1fc39f4d0dc81555c19b7690bcab
+source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1390'
 ht-degree: 17%
 
 ---
@@ -63,7 +63,7 @@ Content Analytics可将以下类别的组件(维度、（计算）量度、派�
 | 体验说服策略 | ![AI生成的](/help/assets/icons/AI.svg)在给定体验中存在的说服策略。 可能的价值是：社会认同、社会证明、权威、具体、踏入大门、克服抗拒性、互惠、锚定和比较、社会影响、稀缺性和拟人化。 | Dimension<br/>派生字段 | 显示\| 没有值<br/>最近\| 会话 |
 | 体验叙述 | ![AI生成](/help/assets/icons/AI.svg)从营销人员角度来看，体验基于相关性生成的叙述。 | Dimension<br/>派生字段 | 显示\| 没有值<br/>最近\| 会话 |
 | 体验语气 | ![AI生成了](/help/assets/icons/AI.svg)色调，体验正在根据营销人员视角下的相关性生成这些色调 | Dimension<br/>派生字段 | 显示\| 没有值<br/>最近\| 会话 |
-| 体验营销情感 | ![AI生成](/help/assets/icons/AI.svg)阅读体验时读者的情绪调动：紧急、排他性、鼓励、挑战、好奇、成就、信任、简单和迷恋。 | Dimension<br/>派生字段 | 显示\| 没有值<br/>最近\| 会话 |
+| 体验营销情感 | ![AI生成](/help/assets/icons/AI.svg)阅读作为体验一部分的文本时，在读者中激起的情绪：紧迫感、排他性、鼓励、挑战、好奇心、成就、信任、简单和迷恋。 | Dimension<br/>派生字段 | 显示\| 没有值<br/>最近\| 会话 |
 | 体验表情符号计数 | ![AI生成了](/help/assets/icons/AI.svg)体验的emoji数。 | 量度 | 对值<br/>进行计数，十进制\| 小数位：0 |
 | 体验井号标记计数 | ![AI生成了](/help/assets/icons/AI.svg)体验的井号标签数。 | 量度 | 对值<br/>进行计数，十进制\| 小数位：0 |
 | 体验句子计数 | ![AI生成的](/help/assets/icons/AI.svg)体验的句子数。 | 量度 | 对值<br/>进行计数，十进制\| 小数位：0 |
@@ -163,3 +163,4 @@ Content Analytics可将以下类别的组件(维度、（计算）量度、派�
 | 体验点进率 | 体验点击次数/体验查看次数 | 计算量度 | |
 
 {style="table-layout:fixed"}
+

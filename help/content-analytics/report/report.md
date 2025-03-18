@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
+source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,9 @@ Content Analytics报表是在Analysis Workspace中完成的。 特定Workspace [
 要从头开始报告Content Analytics：
 
 1. [创建新的](/help/analysis-workspace/build-workspace-project/create-projects.md)或[在Workspace中打开现有的](/help/analysis-workspace/build-workspace-project/open-projects.md)项目。
+1. 请确保您[为Content Analytics报表选择数据视图](/help/analysis-workspace/c-panels/panels.md#data-view)。 Content Analytics报表仅适用于[为Content Analytics配置了](/help/content-analytics/config/configuration.md)的数据视图。
 1. 将![表](/help/assets/icons/Table.svg) [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)可视化拖动到画布上。
-1. 使用[特定的Content Analytics组件](components.md)和其他通用的[组件](/help/components/overview.md)（如筛选器、日期范围、注释）来构建您的内容分析见解。
+1. 使用[特定的Content Analytics组件](components.md)和其他通用的[组件](/help/components/overview.md)（如筛选器、日期范围、注释）来构建您的内容分析见解。 或者，使用Content Analytics模板。
 
 ## 缩略图
 
@@ -49,7 +50,7 @@ Content Analytics报表是在Analysis Workspace中完成的。 特定Workspace [
   |---|---|
   | ![Content Analytics体验预览](../assets/aca-experience-preview.png) | ![Content Analytics资产预览](../assets/aca-asset-preview.png) |
   | **[!UICONTROL 体验的名称]** | **[!UICONTROL 资源的名称]** |
-  | **[!UICONTROL 展示次数（所有时间）]**：体验的展示次数。 | **[!UICONTROL 展示次数（所有mes）]**：资产的展示次数。 |
+  | **[!UICONTROL 展示次数（所有时间）]**：体验的展示次数。 | **[!UICONTROL 展示次数（所有时间）]**：资源的展示次数。 |
   | **[!UICONTROL Assets]**：此体验包含的资源数。 选择![划分](/help/assets/icons/Breakdown.svg)划分以检查资产。 | **[!UICONTROL 体验]**：在其中显示此资源的体验数。 [划分](/help/assets/icons/Breakdown.svg)以检查资产。 |
   | **[!UICONTROL 首次展示]**：体验首次展示的日期。 | **[!UICONTROL 首次展示]**：资产的首次展示日期。 |
   | **[!UICONTROL 最近展示]**：体验最近展示的日期。 | **[!UICONTROL 最近展示]**：资源最近展示的日期。 |
