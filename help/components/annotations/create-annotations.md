@@ -4,10 +4,10 @@ description: 如何在 Workspace 中创建注释。
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
-workflow-type: ht
-source-wordcount: '872'
-ht-degree: 100%
+source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
+workflow-type: tm+mt
+source-wordcount: '873'
+ht-degree: 91%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 100%
 
 ![Create an annotation](assets/create-annotation.png)
 
-* ?? 在主界面中，选择&#x200B;**[!UICONTROL 组件]**，然后选择&#x200B;**[!UICONTROL 注释]**。从[[!UICONTROL 注释]管理器](/help/components/annotations/manage-annotations.md)中选择 ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL 添加]**]。
-* ?? 在 Workspace 项目中，从可视化效果中的上下文菜单中，选择&#x200B;**[!UICONTROL 从选项中创建注释]**。
-* ?? 在 Workspace 项目中，从线形图的上下文菜单中选择&#x200B;**[!UICONTROL 注释选项]**。
-* ??在 Workspace 项目中，从菜单中选择&#x200B;**[!UICONTROL 组件]**，然后选择&#x200B;**[!UICONTROL 创建注释]**。
-* ?? 在 Workspace 项目中，使用快捷键 **[!UICONTROL ctrl+shift+o]** (Windows) 或 **[!UICONTROL shift+command+o]** (macOS)
+* **A**。 在主界面中，选择&#x200B;**[!UICONTROL 组件]**&#x200B;并选择&#x200B;**[!UICONTROL 注释]**。 从[[!UICONTROL 注释]管理器](/help/components/annotations/manage-annotations.md)中选择 ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL 添加]**]。
+* **B**。 在Workspace项目中，从可视化图表的上下文菜单中，选择&#x200B;**[!UICONTROL 从所选内容创建注释]**。
+* **C**。 在Workspace项目中，从折线图的上下文菜单中，选择&#x200B;**[!UICONTROL 注释选定内容]**。
+* **D**。 在Workspace项目中，从菜单中选择&#x200B;**[!UICONTROL 组件]**，然后选择&#x200B;**[!UICONTROL 创建注释]**。
+* **E**。  在Workspace项目中，使用快捷键&#x200B;**[!UICONTROL ctrl+shift+o]** (Windows)或&#x200B;**[!UICONTROL shift+command+o]** (macOS)
 
 若要定义注释，您可以使用[[!UICONTROL 注释生成器]](#annotation-builder)：
 

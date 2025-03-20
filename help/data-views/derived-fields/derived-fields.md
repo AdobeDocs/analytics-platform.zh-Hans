@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: e2e04432682f94b18bf9ed25d15f906c05bfd59d
+source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
 workflow-type: tm+mt
 source-wordcount: '8844'
 ht-degree: 17%
@@ -1570,7 +1570,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>字符串</li><li>数值</li></ul> | <ul><li>[!UICONTROL 字段]：</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul></ul><ul><li>[!UICONTROL 方法]：</li><ul><li>从左侧</li><li>从右侧</li><li>转换为数组</li></ul></li><li>对于分隔符：<ul><li>字符串</li></ul><li>对于索引：<ul><li>数值</li></ul></li> | <p>不适用</p> | <p>每个派生字段5个函数</p> | <p>新建派生字段</p> |
+| <ul><li>字符串</li><li>数值</li></ul> | <ul><li>[!UICONTROL 字段]：</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul></ul><ul><li>[!UICONTROL 方法]：</li><ul><li>从左侧</li><li>从右侧</li><li>转换为数组</li></ul></li><li>对于分隔符：<ul><li>字符串</li></ul><li>对于索引：<ul><li>数值</li></ul></li> | <p>不适用</p> | <p>每个派生字段有2个函数</p> | <p>新建派生字段</p> |
 
 {style="table-layout:auto"}
 
@@ -1966,7 +1966,7 @@ Customer Journey Analytics使用Perl正则表达式语法的子集。 支持以�
 | <p>合并字段</p> | <ul><li>每个派生字段有2个合并字段函数</li></ul> |
 | <p>下一个或上一个</p> | <ul><li>3每个派生字段的下一个或上一个函数</li></ul> |
 | <p>正则表达式替换</p> | <ul><li>每个派生字段有1个正则表达式替换函数</li></ul> |
-| <p>拆分</p> | <ul><li>每个派生字段有5个拆分函数</li></ul> |
+| <p>拆分</p> | <ul><li>每个派生字段有2个拆分函数</li></ul> |
 | <p>总结</p> | <ul><li>3每个派生字段的函数摘要</li></ul> |
 | <p>修剪</p> | <ul><li>每个派生字段有1个修剪函数</li></ul> |
 | <p>URL 解析</p> | <ul><li>每个派生字段有5个URL解析函数</li></ul> |
