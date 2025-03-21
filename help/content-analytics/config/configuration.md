@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
+source-git-commit: 17a7a9a602b92693b2ad6db10f60d3e77fef9724
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '561'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ Content Analytics的配置包括以下步骤：
 
 1. 使用Content Analytics [引导式配置](guided.md)向导引导您完成设置Content Analytics配置的先决条件所需的所有步骤。 您可以随时保存配置并稍后返回。
 1. 在对配置值感到满意后，您可以实施配置。 此实施会根据您在向导中配置的内容，创建所有必需的工件。
-1. 仅当[手动发布](manual.md) Tags属性时，您的Content Analytics配置才会有效部署和激活。
+1. 仅当[手动发布](manual.md) Tags属性时，您的Content Analytics配置才会得到有效部署和激活。
 
 1. 您只能使用[引导式配置](guided.md)向导对已实施的配置进行一些细微更改。 例如，更改[数据视图](/help/data-views/data-views.md)。
 1. 您可以在关联的Tags属性中使用[Adobe Content Analytics扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview)对已实施的配置进行其他更改。

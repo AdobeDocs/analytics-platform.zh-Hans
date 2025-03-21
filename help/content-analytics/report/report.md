@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
+source-git-commit: 07487061881cacd6e4f79bd46581d179aca99347
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1263'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ![Content Analytics缩略图](../assets/aca-thumbnails.png)
 
-要配置Content Analytics维度的缩略图显示，请执行以下操作：
+默认情况下，将显示相关Content Analytics维度的缩略图。 要配置Content Analytics维度的缩略图显示，请执行以下操作：
 
 * 将鼠标悬停在Content Analytics维度的标题行上。 例如，**[!UICONTROL 资产名称]**&#x200B;或&#x200B;**[!UICONTROL 体验ID]**。
 * 选择![设置](/help/assets/icons/Setting.svg)。
