@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 07487061881cacd6e4f79bd46581d179aca99347
+source-git-commit: dbbdfac312b1b7cbb6d8b6ce38a63f6d2bc18420
 workflow-type: tm+mt
 source-wordcount: '1263'
 ht-degree: 0%
@@ -76,7 +76,7 @@ ht-degree: 0%
 1. 在&#x200B;**[!UICONTROL 设置模板]**&#x200B;对话框中，从&#x200B;**[!UICONTROL 选择转化量度]**&#x200B;对话框中选择量度。 例如，**[!UICONTROL 资产CTR]**。
 1. 选择&#x200B;**[!UICONTROL 继续]**。
 
-将在Workspace中打开&#x200B;**[!UICONTROL Content Analytics概述]**&#x200B;项目。 项目包含四个面板，其中每个面板均提供用于回答特定问题的自由格式表和可视化图表：
+**[!UICONTROL Content Analytics概述]**&#x200B;项目将在[Analysis Workspace](/help/analysis-workspace/home.md)中打开。 项目由四个[面板](/help/analysis-workspace/c-panels/panels.md)组成，其中每个面板都提供[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)和[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)来回答特定问题：
 
 * **哪些内容的性能最佳？**
 此面板可帮助您了解哪些体验以及这些体验中的哪些资产正在促进参与和转化。 体验是在特定时间捕获的完整网页。 一个体验可以同时包含文本和多个单独的图像资源。 资产是个别图像。
@@ -85,9 +85,9 @@ ht-degree: 0%
 
    * **体验**
 
-      * **体验CTR**：摘要更改可视化图表，显示体验CTR。
-      * **排名最前的转化体验**：一个水平条形图可视化图表，其中显示基于所选转化量度的排名最前的转化体验。
-      * **表现最佳的体验**：表现最佳的体验的自由格式表（包括缩略图和预览）。
+      * **体验CTR**： [摘要更改](/help/analysis-workspace/visualizations/summary-number-change.md)可视化图表，显示体验CTR。
+      * **排名最前的转化体验**：一个[水平条形图](/help/analysis-workspace/visualizations/horizontal-bar.md)可视化图表，其中显示基于所选转化量度的排名最前的转化体验。
+      * **表现最佳的体验**：表现最佳的体验的[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)（包括[缩略图](#thumbnails)和[预览](#previews)）。
 
    * **资源**
 
