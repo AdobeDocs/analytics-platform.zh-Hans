@@ -7,43 +7,30 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
+source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '562'
 ht-degree: 2%
 
 ---
 
 # 配置内容分析
 
->[!WARNING]
->
->本文是即将发布的最终版本的初步非官方草稿版本，是内容分析文档的一部分。 所有内容可能会发生更改，并且本条当前版本不承担任何法律义务。
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
 Content Analytics的配置包括以下步骤：
 
-内容分析的![配置](../assets/aca-configuration.svg)
+内容分析的![配置](../assets/aca-configuration.svg){zoomable="yes"}
 
-1. 使用Content Analytics [引导式配置](guided.md)向导引导您完成设置Content Analytics配置的先决条件所需的所有步骤。 您可以保存配置并稍后返回。
-1. 在对配置值感到满意后，您可以实施配置。 此实施会根据您在向导中配置的内容，创建所有必需的工件。 创建、更新或选择以下工件：
-   * Customer Journey Analytics
-      * 已选择[数据视图](/help/data-views/data-views.md)。
-      * 已选择[连接](/help/connections/overview.md)，它自动派生自所选的数据视图。
-   * Experience Platform
-      * 沙盒已选中，并自动从连接派生。 沙盒中已启用必要的工作流和服务。
-      * 在沙盒中选择Content Analytics架构。 如果不可用，则会创建必要的架构。
-      * 在沙盒中选择Content Analytics数据集。 如果不可用，则会创建必要的数据集。
-   * 数据收集
-      * 在数据流中创建数据流并配置Experience Platform服务以将数据流式传输到Content Analytics体验事件数据集。
-      * Tags属性是通过为配置向导中的正确沙盒、数据流和其他配置选项配置Adobe Content Analytics扩展创建的。
+1. 使用Content Analytics [引导式配置](guided.md)向导引导您完成设置Content Analytics配置的先决条件所需的所有步骤。 您可以随时保存配置并稍后返回。
+1. 在对配置值感到满意后，您可以实施配置。 此实施会根据您在向导中配置的内容，创建所有必需的工件。
 1. 仅当[手动发布](manual.md) Tags属性时，您的Content Analytics配置才会有效部署和激活。
 
 1. 您只能使用[引导式配置](guided.md)向导对已实施的配置进行一些细微更改。 例如，更改[数据视图](/help/data-views/data-views.md)。
-1. 您可以对已实施的配置进行其他更改。 在关联的Tags属性中使用[Adobe Content Analytics扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview)。
-1. 仅当[手动重新发布](manual.md) Tags属性时，才能有效部署和激活步骤4和5中的配置修改。
+1. 您可以在关联的Tags属性中使用[Adobe Content Analytics扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview)对已实施的配置进行其他更改。
+1. 仅当[手动重新发布](manual.md) Tags属性时，配置修改才会得到有效部署和激活。
 
 
 ## 先决条件

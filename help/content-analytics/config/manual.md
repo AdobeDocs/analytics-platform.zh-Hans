@@ -7,19 +7,16 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
+source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '398'
 ht-degree: 1%
 
 ---
 
 # Content Analytics手动配置
 
->[!WARNING]
->
->本文是即将发布的最终版本的初步非官方草稿版本，是内容分析文档的一部分。 所有内容可能会发生更改，并且本条当前版本不承担任何法律义务。
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
@@ -31,14 +28,14 @@ ht-degree: 1%
 
 要激活新配置或对现有配置所做的更改，请执行以下操作：
 
-1. 您需要遵循[发布流](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}。 成功发布包含Content Analytics配置的Tags属性的库。 然后，才会为您配置的域、体验和资源收集Content Analytics数据。
+1. 您需要遵循[发布流](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}。 成功发布包含Content Analytics配置的Tags属性的库。
 
 1. 您需要在开发、暂存或发布环境中的页面的`<head>`元素中[安装](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation)嵌入代码，具体情况受Content Analytics限制。
 
 
 ## 停用
 
-要取消激活收集内容分析数据，请执行以下操作：
+要停用内容分析数据集合，请执行以下操作：
 
 1. 从开发、暂存或生产环境中的页面的`<head>`元素中删除[嵌入代码](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments)，具体情况受Content Analytics限制。
 1. [删除](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview)与Content Analytics配置关联的Tags属性。
@@ -57,6 +54,10 @@ ht-degree: 1%
   >
   >验证在早期阶段已使用[引导式配置](guided.md)为Content Analytics配置了在Adobe Content Analytics扩展中配置的沙盒和数据流。 此配置可确保所有必需的工件均可用。<br/><br/>同时验证沙盒或数据流的更新不会干扰另一个配置为使用同一沙盒或数据流的Content Analytics配置。
   >
+
+* [体验捕获和定义](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview?lang=en#configure-experience-capture-and-definition)
+
+  您可以编辑正则表达式以修改方式。
 
 * [事件筛选](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering){target="_blank"}
 

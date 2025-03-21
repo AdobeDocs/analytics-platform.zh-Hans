@@ -7,19 +7,16 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
+source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '758'
 ht-degree: 0%
 
 ---
 
 # 内容分析概述
 
->[!WARNING]
->
->本文是即将发布的最终版本的初步非官方草稿版本，是内容分析文档的一部分。 所有内容可能会发生更改，并且本条当前版本不承担任何法律义务。
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
@@ -27,7 +24,7 @@ ht-degree: 0%
 
 Content Analytics使用基于AI和机器学习的&#x200B;**特征化服务**&#x200B;将内容划分为组件和属性。 通过在您的所有内容上创建结构化元数据配置文件，您可以分析哪些内容以及该内容的哪些属性驱动了业务成果。
 
-除了创建此结构化元数据配置文件之外，Content Analytics还提供使用单个标识符标识资产和体验的&#x200B;**标识服务**。 Identity Service可以识别同一资产何时出现在多个位置。 发生这种情况时，资产的两个实例被视为相同，从而可以更全面地查看内容的使用和使用。
+除了创建此结构化元数据配置文件之外，Content Analytics还提供使用单个标识符标识资产和体验的&#x200B;**标识服务**。 Identity Service可以识别同一资产何时出现在多个位置。 发生这种情况时，会将此资源的实例视为相同的资源，从而更全面地查看内容的使用和使用。
 
 ## 值
 
@@ -44,7 +41,7 @@ Content Analytics使用以下关键术语：
 
 ![Assets和体验](/help/content-analytics/assets//content-analytics-experience-asset.png)
 
-* **体验**：体验是网页上的所有文本，可以使用访问该网页的初始用户所使用的URL进行复制。 每个体验都获得一个唯一标识符。
+* **体验**：体验是网页上的所有文本，可以使用访问网页的初始用户使用的URL重现这些文本。 每个体验都获得一个唯一标识符。
 * **资源**：资源是个别且唯一的内容，如图像。 每个资产还会获得一个唯一标识符。
 * **属性**：属性是与体验或资源关联的描述性元数据元素。 属性的示例包括：摄影样式、可读性、说服策略、对象颜色、背景颜色。
 
@@ -55,10 +52,10 @@ Content Analytics使用在Experience Platform的事件数据集中收集的Web�
 ![内容分析 — 工作原理](assets/aca-overview.gif)
 
 
-1. 当用户访问为Content Analytics配置的网站时，Experience Platform Web SDK记录与内容的交互。
-1. 特征化汇编程序服务和标识服务处理重新访问的数据。 该进程包含一个爬网程序，该爬网程序会修订配置的URL的面向公众的版本并应用AI/ML服务。
-1. 这些服务（组件、属性和身份）的结果用于更新Experience Platform中的相关特定内容分析数据集。
-1. 您可以在Customer Journey Analytics设置(连接、数据视图和Workspace的组合)中使用内容分析数据，以及行为数据和其他查找数据集。 该设置提供了对您的内容进行独特的宏级深入分析的基础。
+1. 当用户访问为Content Analytics](config/configuration.md)配置的网站[时，Experience Platform Web SDK会记录与内容的交互。
+1. 身份和特征化服务处理这些交互。 该进程包含一个爬网程序，该爬网程序会修订定义交互的已配置URL的面向公众的版本。 对于所有这些爬网URL，Identity Service将唯一标识体验和资源。 而功能化服务则应用AI/ML服务来发现体验和资源的元数据和属性。
+1. 这些服务（[组件、属性和标识](/help/content-analytics/report/components.md)）的结果用于更新Experience Platform中的相关特定内容分析数据集。
+1. 内容分析数据以及行为数据和其他查找数据可以在Customer Journey Analytics设置中使用([连接](/help/connections/overview.md)、[数据视图](/help/data-views/data-views.md)和[Workspace](/help/analysis-workspace/home.md))。 该设置提供了对您的内容进行独特的宏级深入分析的基础。 <br/>您可以使用[Content Analytics模板](/help/content-analytics/report/report.md#template)快速启动Content Analytics报表和分析。
 
 >[!NOTE]
 >

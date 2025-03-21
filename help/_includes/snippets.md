@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
+source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
 workflow-type: tm+mt
-source-wordcount: '3333'
-ht-degree: 22%
+source-wordcount: '3384'
+ht-degree: 21%
 
 ---
 # 片段
@@ -217,3 +217,11 @@ ht-degree: 22%
 ## 升级清单最后步骤 {#upgrade-final-step}
 
 1. 继续执行Customer Journey Analytics升级指南中的[建议的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)或动态生成的升级步骤。 要从Customer Journey Analytics访问指南，请选择&#x200B;**[!UICONTROL Workspace]**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**[!UICONTROL 升级到Customer Journey Analytics]**。 按照屏幕上的说明操作。
+
+
+## Content Analytics文档草案 {#draft-aca}
+
+>[!WARNING]
+>
+>本文是Content Analytics文档草稿的一部分。 所有Content Analytics草稿文档仍可能会发生更改，并且此条款的当前版本或Content Analytics文档中的任何其他条款都不能产生任何法律义务。
+>

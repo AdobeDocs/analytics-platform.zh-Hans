@@ -7,19 +7,16 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
-source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
+source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
 workflow-type: tm+mt
-source-wordcount: '1390'
-ht-degree: 17%
+source-wordcount: '1350'
+ht-degree: 18%
 
 ---
 
 # Content Analytics组件
 
->[!WARNING]
->
->本文是即将发布的最终版本的初步非官方草稿版本，是内容分析文档的一部分。 所有内容可能会发生更改，并且本条当前版本不承担任何法律义务。
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
@@ -33,7 +30,7 @@ Content Analytics可将以下类别的组件(维度、（计算）量度、派�
 * [Assets活动](#asset-events)
 * [计算量度](#calculated-metrics)
 
-在下表中，![AI生成的](/help/assets/icons/AI.svg)表示AI/ML生成的值。
+在下表中，![AI生成的](/help/assets/icons/AI.svg)表示AI/ML生成的属性/值对。
 
 ## 体验元数据
 
