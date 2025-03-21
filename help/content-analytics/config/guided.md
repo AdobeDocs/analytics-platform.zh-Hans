@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
+source-git-commit: e8ba272d2deb535374a47b61c22d58c4168ff50c
 workflow-type: tm+mt
-source-wordcount: '3324'
-ht-degree: 13%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -262,7 +262,7 @@ ht-degree: 13%
 
   ![Content Analytics数据收集现有标记](../assets/aca-configuration-datacollection-existingtag.png)
 
-   1. 选择&#x200B;**[!UICONTROL 现有]**。
+   1. 选择&#x200B;**[!UICONTROL 选择现有]**。
    2. 从&#x200B;**[!UICONTROL 标记属性]**&#x200B;下拉菜单中选择现有属性。 您可以开始键入以搜索并限制可用选项。
 
 * 要创建新的Tags属性：
@@ -271,16 +271,15 @@ ht-degree: 13%
 
    1. 选择&#x200B;**[!UICONTROL 新建]**。
    1. 指定&#x200B;**[!UICONTROL 标记名称]**，例如`ACA Test for Documentation`。
-  <!--1. Specify **[!UICONTROL Domains]**, for example, `example.com`. -->
-   1. 选择&#x200B;**[!UICONTROL 添加]**。
+   1. 指定&#x200B;**[!UICONTROL 域]**，例如`example.com`。
 
 * 如果已选择包含体验，请指示在为Content Analytics收集数据时应包含或排除哪些页面。
 
-   * 为&#x200B;**[!UICONTROL Experience]**&#x200B;指定正则表达式。 例如：`/^(?!.*documentation).*/`从Content Analytics中排除所有文档页面。 确保使用`/`转义正则表达式。
+   * 为&#x200B;**[!UICONTROL 要包含/排除]**&#x200B;的页面指定正则表达式字符串。 例如：`/^(?!.*documentation).*/`从Content Analytics中排除所有文档页面。 确保使用`/`转义正则表达式。
 
 * 指示在为Content Analytics收集数据时应包含或排除哪些资产。
 
-   * 为&#x200B;**[!UICONTROL 资源]**&#x200B;指定正则表达式。 例如： `/^(?!.*(logo\.jpg|\.svg)).*$/`从Content Analytics中排除所有徽标JPEG和SVG图像。 确保使用`/`转义正则表达式。
+   * 为&#x200B;**[!UICONTROL Assets指定要包含/排除]**&#x200B;的正则表达式字符串。 例如： `/^(?!.*(logo\.jpg|\.svg)).*$/`从Content Analytics中排除所有徽标JPEG和SVG图像。 确保使用`/`转义正则表达式。
 
 
 #### 现有配置 {#existing-configuration}
