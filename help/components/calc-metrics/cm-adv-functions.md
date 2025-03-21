@@ -4,18 +4,18 @@ description: 可通过以下方法访问这些函数：选中函数下拉列表�
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 180129837fa326f600ebc3dc5a2a54fd6c3372cb
+source-git-commit: 6788275ba4bfcfbe385e45e6a20de996d8103393
 workflow-type: tm+mt
-source-wordcount: '4542'
-ht-degree: 54%
+source-wordcount: '4659'
+ht-degree: 96%
 
 ---
 
 # 高级功能
 
-使用[计算量度生成器](cm-workflow/cm-build-metrics.md)可以应用统计和数学函数。本文按字母顺序列出了高级功能及其定义。
+使用[计算量度生成器](cm-workflow/cm-build-metrics.md)可以应用统计和数学函数。本文记录了按字母顺序排列的高级函数及其定义列表。
 
-通过在“组件”面板中选择![效果](/help/assets/icons/Effect.svg)**[!UICONTROL 函数]**&#x200B;列表下的&#x200B;**[!UICONTROL 显示所有]**&#x200B;来访问这些函数。 向下滚动以查看&#x200B;**[!UICONTROL 高级函数]**&#x200B;的列表。
+在组件面板中的![效果](/help/assets/icons/Effect.svg)**[!UICONTROL 功能]**&#x200B;列表下方选择&#x200B;**[!UICONTROL 显示全部]**，即可访问这些功能。向下滚动查看&#x200B;**[!UICONTROL 高级功能]**&#x200B;列表。
 
 ## 表函数与行函数
 
@@ -27,9 +27,9 @@ ht-degree: 54%
 
 它可告知计算中是否包含零。零有时表示&#x200B;*无*，有时又十分重要。
 
-例如，如果您有收入量度，然后又将页面查看次数量度添加到报表中，则您的收入会突然多出一些全部为零的行。您可能不希望该附加量度影响收入栏中的任何&#x200B;**[平均值](cm-functions.md#mean)**、**[行最小值](cm-functions.md#row-min)**、**[四分位数](cm-functions.md#quartile)**&#x200B;以及其他计算。在这种情况下，您需要检查 `include-zeros` 参数。
+例如，如果您有收入量度，然后又将页面查看次数量度添加到报告中，则您的收入会突然多出一些全部为零的行。您可能不希望该附加量度影响收入栏中的任何&#x200B;**[平均值](cm-functions.md#mean)**、**[行最小值](cm-functions.md#row-min)**、**[四分位数](cm-functions.md#quartile)**&#x200B;以及其他计算。在这种情况下，您需要检查 `include-zeros` 参数。
 
-另一种情况是，您有两个感兴趣的指标，其中一个指标的平均值或最小值较高，因为其中有些行为零。在这种情况下，您可以选择不检查参数以包含零。
+另一种情况是，您有两个感兴趣的量度，其中一个量度的平均值或最小值较高，因为其中有些行为零。在这种情况下，您可以选择不检查参数，以包含零。
 
 
 ## 与 {#and}
@@ -49,7 +49,7 @@ ht-degree: 54%
 
 | 参数 | 描述 |
 |---|---|
-| logical_test | 至少需要一个参数，但可以接受任意数量的参数。 可计算为TRUE或FALSE的任何值或表达式 |
+| logical_test | 至少需要一个参数，但可以接受任意数量的参数。任何可被计算为 TRUE 或 FALSE 的值或表达式 |
 
 
 ## 非重复近似计数 {#approximate_count_distinct}
@@ -59,23 +59,23 @@ ht-degree: 54%
 >[!CONTEXTUALHELP]
 >id="functions-count-distinct-metric"
 >title="非重复近似计数"
->abstract="返回适用于所选维度的维度项目的非重复近似计数。"
+>abstract="返回适用于所选维度的维度项的非重复近似计数。"
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 近似非重复计数（维度）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL APPROXIMATE COUNT DISTINCT(dimension)]**
 
 
-返回适用于所选维度的维度项目的非重复近似计数。
+返回适用于所选维度的维度项的非重复近似计数。
 
 
 | 参数 | 描述 |
 |---|---|
-| 维度 | 要为其计算近似非重复项目计数的维度 |
+| 维度 | 您希望计算非重复近似项目计数的维度 |
 
 ### 示例
 
-此函数的常见用例是当您希望获得大致数量的客户时。
+此函数的常见用例是您想要获取客户的近似数量。
 
 
 
@@ -90,7 +90,7 @@ ht-degree: 54%
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 反余弦（量度）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ARC COSINE(metric)]**
 
 
 [!BADGE 行]{type="Neutral"}
@@ -98,7 +98,7 @@ ht-degree: 54%
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 所需角度的余弦从–1到1 |
+| 量度 | 所需角的余弦，其范围介于 -1 到 1 之间 |
 
 
 
@@ -113,7 +113,7 @@ ht-degree: 54%
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 反正弦（量度）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ARC SINE(metric)]**
 
 
 [!BADGE 行]{type="Neutral"}
@@ -121,7 +121,7 @@ ht-degree: 54%
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 您希望从–1到1的角度的正弦值 |
+| 量度 | 所需角的正弦，其范围介于 -1 到 1 之间 |
 
 
 
@@ -136,7 +136,7 @@ ht-degree: 54%
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 反正切（量度）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ARC TANGENT(metric)]**
 
 
 [!BADGE 行]{type="Neutral"}
@@ -144,7 +144,7 @@ ht-degree: 54%
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 您希望从–1到1的角度的正切 |
+| 量度 | 所需角的正切，其范围介于 -1 到 1 之间 |
 
 
 
@@ -159,14 +159,14 @@ ht-degree: 54%
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-T（量度，数字）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-T(metric, number)]**
 
 返回自由度为 n 的学生 t 分布中，随机变量 z 分数小于列值的概率。
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 您希望求学生t分布的累积分布函数的指标 |
-| 数字 | 学生t分布累积分布函数的自由度 |
+| 量度 | 您希望求学生 t 分布累积分布函数的量度 |
+| 数字 | 学生 t 分布的累积分布函数所对应的自由度 |
 
 ### 示例
 
@@ -190,13 +190,13 @@ CDF-T(x, ∞) ? cdf_z(x)
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-Z（量度，数字）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-Z(metric, number)]**
 
 返回正态分布中随机变量 z 分数小于列值的概率。
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 您希望使用标准正态分布的累积分布函数的指标 |
+| 量度 | 您希望求标准正态分布累积分布函数的量度 |
 
 ### 示例
 
@@ -219,13 +219,13 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 上限（量度）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL CEILING(metric)]**
 
 [!BADGE 行]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 您希望舍入的指标 |
+| 量度 | 要舍入的量度 |
 
 
 ## 置信度 {#confidence}
@@ -239,18 +239,18 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 置信度(normalizing-container， success-metric， control， importance-treshold)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIDENCE(normalizing-container, success-metric, control, significance-treshold)]**
 
 使用[时间统一中心极限定理和渐近置信序列](https://arxiv.org/pdf/2103.06476)中所述的 WASKR 方法计算任意时间有效的置信度。
 
-置信度是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。 置信度越高，表明支持控制变量和非控制变量具有相同性能的假设的证据越少。
+置信度是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。置信度越高，表明支持控制变量和非控制变量具有相同性能的假设的证据越少。
 
 | 参数 | 描述 |
 | --- | --- |
-| normalization-container | 运行测试的基础（人员、会话或事件）。 |
-| success-metric | 用户正在将变量与之比较的一个或多个指标。 |
-| 控件 | 试验中所有其他变量要与之进行比较的变量。输入控制变量维度项的名称。 |
-| 显着性阈值 | 此函数中的阈值默认设置为 95%。 |
+| 标准化容器 | 运行测试的基础（人员、会话或事件）。 |
+| success-metric | 用户正在将变量与之比较的一个或多个量度。 |
+| 控制 | 试验中所有其他变量要与之进行比较的变量。输入控制变量维度项的名称。 |
+| 显著性阈值 | 此函数中的阈值默认设置为 95%。 |
 
 
 ## 置信度（下限） {#confidence-lower}
@@ -264,18 +264,18 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 置信度(normalizing-container， success-metric， control， importance-treshold)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIDENCE(normalizing-container, success-metric, control, significance-treshold)]**
 
 使用[时间统一中心极限定理和渐近置信序列](https://arxiv.org/pdf/2103.06476)中所述的 WASKR 方法计算任意时间有效的置信度（**下限**）。
 
-置信度是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。 置信度越高，表明支持控制变量和非控制变量具有相同性能的假设的证据越少。
+置信度是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。置信度越高，表明支持控制变量和非控制变量具有相同性能的假设的证据越少。
 
 | 参数 | 描述 |
 | --- | --- |
-| normalization-container | 运行测试的基础（人员、会话或事件）。 |
-| success-metric | 用户正在将变量与之比较的一个或多个指标。 |
-| 控件 | 试验中所有其他变量要与之进行比较的变量。输入控制变量维度项的名称。 |
-| 显着性阈值 | 此函数中的阈值默认设置为 95%。 |
+| 标准化容器 | 运行测试的基础（人员、会话或事件）。 |
+| success-metric | 用户正在将变量与之比较的一个或多个量度。 |
+| 控制 | 试验中所有其他变量要与之进行比较的变量。输入控制变量维度项的名称。 |
+| 显著性阈值 | 此函数中的阈值默认设置为 95%。 |
 
 ## 置信度（上限） {#confidence-upper}
 
@@ -288,18 +288,18 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 置信度(normalizing-container， success-metric， control， importance-treshold)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIDENCE(normalizing-container, success-metric, control, significance-treshold)]**
 
 使用[时间统一中心极限定理和渐近置信序列](https://arxiv.org/pdf/2103.06476)中所述的 WASKR 方法计算任意时间有效的置信度（**上限**）。
 
-置信度是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。 置信度越高，表明支持控制变量和非控制变量具有相同性能的假设的证据越少。
+置信度是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。置信度越高，表明支持控制变量和非控制变量具有相同性能的假设的证据越少。
 
 | 参数 | 描述 |
 | --- | --- |
-| normalization-container | 运行测试的基础（人员、会话或事件）。 |
-| success-metric | 用户正在将变量与之比较的一个或多个指标。 |
-| 控件 | 试验中所有其他变量要与之进行比较的变量。输入控制变量维度项的名称。 |
-| 显着性阈值 | 此函数中的阈值默认设置为 95%。 |
+| 标准化容器 | 运行测试的基础（人员、会话或事件）。 |
+| success-metric | 用户正在将变量与之比较的一个或多个量度。 |
+| 控制 | 试验中所有其他变量要与之进行比较的变量。输入控制变量维度项的名称。 |
+| 显著性阈值 | 此函数中的阈值默认设置为 95%。 |
 
 
 ## 余弦 {#cosine}
@@ -313,13 +313,13 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 余弦（量度）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL COSINE(metric)]**
 
 [!BADGE 行]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 您希望求余弦的角度（弧度） |
+| 量度 | 您希望求余弦的弧度角 |
 
 
 ## 立方根 {#cube-root}
@@ -333,7 +333,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 多维数据集根（量度）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL CUBE ROOT(metric)]**
 
 
 返回某数字的正立方根。某数字的立方根是该数字三分之一次幂的值。
@@ -341,7 +341,7 @@ CDF-Z(-3) ? 0.0013499
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 要为其计算立方根的度量 |
+| 量度 | 您希望计算立方根的量度 |
 
 
 
@@ -356,22 +356,22 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 累积（数字，指标）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE(number, metric)]**
 
 返回 x 列最后 n 个元素的和。如果 n > 0，则对最后 n 个元素或 x 求和。如果 n &lt; 0，则对前面的元素求和。
 
 | 参数 | 描述 |
 | --- | --- |
-| 数字 | 要返回总和的最后N行数。 如果N &lt;= 0，则使用所有以前的行。 |
-| 量度 | 您希望求累计总和的指标。 |
+| 数字 | 返回总和的最后 N 行。如果 N &lt;= 0，则使用所有之前的行。 |
+| 量度 | 您希望求累计总和的量度。 |
 
 ### 示例
 
-| 日期 | 收入 | 累积（0，收入） | 累计（2，收入） |
+| 日期 | 收入 | CUMULATIVE(0, Revenue) | CUMULATIVE(2, Revenue) |
 |------|------:|--------------:|--------------:|
-| 5 月 | 500美元 | 500美元 | 500美元 |
-| 6 月 | 200美元 | 700美元 | 700美元 |
-| 7 月 | $400 | 1100美元 | $600 |
+| 5 月 | $500 | $500 | $500 |
+| 6 月 | $200 | $700 | $700 |
+| 7 月 | $400 | $1100 | $600 |
 
 
 ## 累积（平均） {#cumulative-average}
@@ -385,18 +385,18 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 累积平均值（数值，指标）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE AVERAGE(number, metric)]**
 
 返回 x 列最后 n 个元素的平均值。如果 n > 0，则对最后 n 个元素或 x 求和。如果 n &lt; 0，则对前面的元素求和。
 
 | 参数 | 描述 |
 | --- | --- |
-| 数字 | 最后N行数返回的平均值。 如果N &lt;= 0，则使用所有以前的行。 |
-| 量度 | 您希望求累积平均数的指标。 |
+| 数字 | 返回平均值的最后 N 行。如果 N &lt;= 0，则使用所有之前的行。 |
+| 量度 | 您希望求累计平均值的量度。 |
 
 >[!NOTE]
 >
->此函数不适用于费率量度，例如每人收入。 此函数计算比率的平均值，而不是总计最后N行的收入并总计最后N行的人员数，然后将二者相除。 <br/>请改用[**[!UICONTROL 累积（收入）]**](#cumulative) ![除](/help/assets/icons/Divide.svg) [**[!UICONTROL 累积（人员）]**](#cumulative)。
+>此函数不适用于每人收入等比率量度。该函数对比率求平均值，而不是对最后 N 行的收入求和，对最后 N 行的人数求和，然后再除以它们。<br/>相反，使用 [**[!UICONTROL CUMULATIVE(revenue)]**](#cumulative) ![除以](/help/assets/icons/Divide.svg) [**[!UICONTROL CUMULATIVE(person)]**](#cumulative)。
 >
 
 
@@ -411,7 +411,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 等于()]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL EQUAL()]**
 
 等于。输出为 0（假）或 1（真）。
 
@@ -437,7 +437,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 指数回归：相关系数(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 
 [!BADGE 表]{type="Neutral"}
@@ -445,9 +445,9 @@ CDF-Z(-3) ? 0.0013499
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要与metric_Y关联的量度 |
-| metric_Y | 要与metric_X关联的量度 |
-| include_zeros | 是否在计算中包括零值 |
+| metric_X | 您希望与 metric_Y 关联的量度 |
+| metric_Y | 您希望与 metric_X 关联的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
 ## 指数回归：预测的 Y {#exponential-regression-predicted-y}
 
@@ -460,7 +460,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 指数回归：预测的Y(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
 
 [!BADGE 行]{type="Neutral"}
@@ -468,9 +468,9 @@ CDF-Z(-3) ? 0.0013499
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要指定为自变数的量度。 |
-| metric_Y | 要指定为因变数的量度。 |
-| include_zeros | 是否在计算中包括零值 |
+| metric_X | 您希望指定为独立数据的量度。 |
+| metric_Y | 您希望指定为从属数据的量度。 |
+| include_zeros | 是否在计算中包含零值 |
 
 
 ## 指数回归：截距 {#exponential-regression-intercept}
@@ -484,16 +484,16 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 指数回归：截距(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
 [!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要指定为依赖数据的量度 |
-| metric_Y | 要指定为独立数据的量度 |
-| include_zeros | 是否在计算中包括零值 |
+| metric_X | 您希望指定为从属数据的量度 |
+| metric_Y | 您希望指定为独立数据的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
 
 ## 指数回归：斜率 {#exponential-regression-slope}
@@ -507,7 +507,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 指数回归：斜率(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
 
 [!BADGE 表]{type="Neutral"}
@@ -515,9 +515,9 @@ CDF-Z(-3) ? 0.0013499
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要指定为依赖数据的量度 |
-| metric_Y | 要指定为独立数据的量度 |
-| include_zeros | 是否在计算中包括零值 |
+| metric_X | 您希望指定为从属数据的量度 |
+| metric_Y | 您希望指定为独立数据的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
 
 ## Floor {#floor}
@@ -531,7 +531,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL FLOOR(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL FLOOR(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE 行]{type="Neutral"}
 
@@ -551,7 +551,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 大于()]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL GREATER THAN()]**
 
 输出为 0（假）或 1（真）。
 
@@ -576,7 +576,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 大于或等于()]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL GREATER THAN OR EQUAL()]**
 
 大于或等于输出为 0（假）或 1（真）。
 
@@ -602,7 +602,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 双曲余弦（量度）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIC COSINE(metric)]**
 
 
 [!BADGE 行]{type="Neutral"}
@@ -610,7 +610,7 @@ CDF-Z(-3) ? 0.0013499
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 您希望求双曲余弦的角度（弧度） |
+| 量度 | 您希望求双曲余弦的弧度角 |
 
 
 
@@ -625,13 +625,13 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 双曲正弦（量度）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIC SINE(metric)]**
 
 [!BADGE 行]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 您希望求得其双曲正弦的角（弧度） |
+| 量度 | 您希望求双曲正弦的弧度角 |
 
 
 ## 双曲正切 {#hyperbolic-tangent}
@@ -645,13 +645,13 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 双曲正切（量度）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIC TANGENT(metric)]**
 
 [!BADGE 行]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 您希望求其双曲正切的角（弧度） |
+| 量度 | 您希望求双曲正切的弧度角 |
 
 
 ## 如果 {#if}
@@ -665,7 +665,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL IF(logical_test， value_if_true， value_if_false)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL IF(logical_test, value_if_true, value_if_false)]**
 
 
 [!BADGE 行]{type="Neutral"}
@@ -673,8 +673,8 @@ CDF-Z(-3) ? 0.0013499
 
 | 参数 | 描述 |
 |---|---|
-| logical_test | 必填。可计算为TRUE或FALSE的任何值或表达式 |
-| value_if_true | 当logical_test参数的计算结果为TRUE时，您希望返回的值。 （如果未包含此参数，则此参数默认为 0。） |
+| logical_test | 必填。任何可被计算为 TRUE 或 FALSE 的值或表达式 |
+| value_if_true | 您希望在 logical_test 参数计算为 TRUE 时返回的值。（如果未包含此参数，则此参数默认为 0。） |
 | value_if_false | 当 logical_test 参数的计算结果为 FALSE 时，您希望返回的值。（如果不包含，则此参数默认为 0。） |
 
 
@@ -689,7 +689,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 小于()]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LESS THAN()]**
 
 输出为 0（假）或 1（真）。
 
@@ -714,7 +714,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 小于或等于()]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LESS THAN OR EQUAL()]**
 
 小于或等于。输出为 0（假）或 1（真）。
 
@@ -729,7 +729,7 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## 提升 (#lift)
+## 提升 {#lift}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -740,11 +740,15 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 提升(normalizing-container， success-metric， control)]**
+
+与控制值相比，比率的提升。
+
 | 参数 | 描述 |
 | --- | --- |
-| normalization-container | 运行测试的基础（人员、会话或事件）。 |
-| success-metric | 用户正在将变量与之比较的一个或多个指标。 |
-| 控件 | 试验中所有其他变量要与之进行比较的变量。输入控制变量维度项的名称。 |
+| 标准化容器 | 运行测试的基础（人员、会话或事件）。 |
+| success-metric | 用户正在将变量与之比较的一个或多个量度。 |
+| 控制 | 试验中所有其他变量要与之进行比较的变量。输入控制变量维度项的名称。 |
 
 
 
@@ -759,7 +763,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 线性回归：相关系数(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 
 [!BADGE 表]{type="Neutral"}
@@ -767,9 +771,9 @@ CDF-Z(-3) ? 0.0013499
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要与metric_Y关联的量度 |
-| metric_Y | 要与metric_X关联的量度 |
-| include_zeros | 是否在计算中包括零值 |
+| metric_X | 您希望与 metric_Y 关联的量度 |
+| metric_Y | 您希望与 metric_X 关联的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
 
 
@@ -784,7 +788,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 线性回归：截距(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
 [!BADGE 表]{type="Neutral"}
@@ -792,9 +796,9 @@ CDF-Z(-3) ? 0.0013499
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要指定为依赖数据的量度 |
-| metric_Y | 要指定为独立数据的量度 |
-| include_zeros | 是否在计算中包括零值 |
+| metric_X | 您希望指定为从属数据的量度 |
+| metric_Y | 您希望指定为独立数据的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
 
 
@@ -809,7 +813,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 线性回归：预测的Y(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
 
 [!BADGE 行]{type="Neutral"}
@@ -817,9 +821,9 @@ CDF-Z(-3) ? 0.0013499
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要指定为依赖数据的量度 |
-| metric_Y | 要指定为独立数据的量度 |
-| include_zeros | 是否在计算中包括零值 |
+| metric_X | 您希望指定为从属数据的量度 |
+| metric_Y | 您希望指定为独立数据的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
 
 
@@ -834,15 +838,15 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 线性回归：斜率(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要指定为依赖数据的量度 |
-| metric_Y | 要指定为独立数据的量度 |
-| include_zeros | 是否在计算中包括零值 |
+| metric_X | 您希望指定为从属数据的量度 |
+| metric_Y | 您希望指定为独立数据的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
 
 ## 常用对数 {#log-base-ten}
@@ -856,7 +860,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 以10为底的日志（量度）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG BASE 10(metric)]**
 
 
 [!BADGE 行]{type="Neutral"}
@@ -864,7 +868,7 @@ CDF-Z(-3) ? 0.0013499
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 您希望以10为底的对数的正实数 |
+| 量度 | 您希望求以 10 为底数对数的正实数 |
 
 
 ## 对数回归：相关系数 {#log-regression-correlation-coefficient}
@@ -878,15 +882,15 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 对数回归：相关系数(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要与metric_Y关联的量度 |
-| metric_Y | 要与metric_X关联的量度 |
-| include_zeros | 是否在计算中包括零值 |
+| metric_X | 您希望与 metric_Y 关联的量度 |
+| metric_Y | 您希望与 metric_X 关联的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
 
 ## 对数回归：截距 {#log-regression-intercept}
@@ -900,15 +904,15 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 对数回归：截距(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要指定为依赖数据的量度 |
-| metric_Y | 要指定为独立数据的量度 |
-| include_zeros | 是否在计算中包括零值 |
+| metric_X | 您希望指定为从属数据的量度 |
+| metric_Y | 您希望指定为独立数据的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
 
 
@@ -923,15 +927,15 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 对数回归：预测的Y(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE 行]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要指定为依赖数据的量度 |
-| metric_Y | 要指定为独立数据的量度 |
-| include_zeros | 是否在计算中包括零值 |
+| metric_X | 您希望指定为从属数据的量度 |
+| metric_Y | 您希望指定为独立数据的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
 
 
@@ -946,15 +950,15 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 对数回归：斜率(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要指定为依赖数据的量度 |
-| metric_Y | 要指定为独立数据的量度 |
-| include_zeros | 是否在计算中包括零值 |
+| metric_X | 您希望指定为从属数据的量度 |
+| metric_Y | 您希望指定为独立数据的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
 
 
@@ -969,7 +973,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 自然日志（量度）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL NATURAL LOG(metric)]**
 
 返回某数字的自然对数。自然对数以常数 e (2.71828182845904) 为底数。LN 是 EXP 函数的反函数。
 
@@ -990,13 +994,13 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL NOT（逻辑）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL NOT(logical)]**
 
 作为布尔值的取反。输出为 0（假）或 1（真）。
 
 | 参数 | 描述 |
 |---|---|
-| 逻辑 | 必填。可计算为TRUE或FALSE的值或表达式 |
+| logical | 必填。可被计算为 TRUE 或 FALSE 的值或表达式 |
 
 
 
@@ -1011,7 +1015,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 不等于()]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL NOT EQUAL()]**
 
 
 不等于。输出为 0（假）或 1（真）。
@@ -1046,7 +1050,7 @@ CDF-Z(-3) ? 0.0013499
 
 | 参数 | 描述 |
 |---|---|
-| logical_test | 至少需要一个参数，但可以接受任意数量的参数。 可计算为TRUE或FALSE的任何值或表达式 |
+| logical_test | 至少需要一个参数，但可以接受任意数量的参数。任何可被计算为 TRUE 或 FALSE 的值或表达式 |
 
 
 >[!NOTE]
@@ -1081,15 +1085,15 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 幂回归：相关系数(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要与metric_Y关联的量度 |
-| metric_Y | 要与metric_X关联的量度 |
-| include_zeros | 是否在计算中包括零值 |
+| metric_X | 您希望与 metric_Y 关联的量度 |
+| metric_Y | 您希望与 metric_X 关联的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
 
 
@@ -1104,7 +1108,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 幂回归：截距(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
 [!BADGE 表]{type="Neutral"}
@@ -1112,9 +1116,9 @@ CDF-Z(-3) ? 0.0013499
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要指定为依赖数据的量度 |
-| metric_Y | 要指定为独立数据的量度 |
-| include_zeros | 是否在计算中包括零值 |
+| metric_X | 您希望指定为从属数据的量度 |
+| metric_Y | 您希望指定为独立数据的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
 
 ## 幂回归：预测的 Y {#power-regression-predicted-y}
@@ -1128,15 +1132,15 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 幂回归：预测的Y(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE 行]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要指定为依赖数据的量度 |
-| metric_Y | 要指定为独立数据的量度 |
-| include_zeros | 是否在计算中包括零值 |
+| metric_X | 您希望指定为从属数据的量度 |
+| metric_Y | 您希望指定为独立数据的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
 
 
@@ -1151,15 +1155,15 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 幂回归：斜率(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要指定为依赖数据的量度 |
-| metric_Y | 要指定为独立数据的量度 |
-| include_zeros | 是否在计算中包括零值 |
+| metric_X | 您希望指定为从属数据的量度 |
+| metric_Y | 您希望指定为独立数据的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
 
 
@@ -1174,15 +1178,15 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 二次回归：相关系数(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要与metric_Y关联的量度 |
-| metric_Y | 要与metric_X关联的量度 |
-| include_zeros | 是否在计算中包括零值 |
+| metric_X | 您希望与 metric_Y 关联的量度 |
+| metric_Y | 您希望与 metric_X 关联的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
 ## 二次回归：截距 {#quadratic-regression-intercept}
 
@@ -1195,15 +1199,15 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 二次回归：截距(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要指定为依赖数据的量度 |
-| metric_Y | 要指定为独立数据的量度 |
-| include_zeros | 是否在计算中包括零值 |
+| metric_X | 您希望指定为从属数据的量度 |
+| metric_Y | 您希望指定为独立数据的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
 
 ## 二次回归：预测的 Y {#quadratic-regression-predicted-y}
@@ -1217,15 +1221,15 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 二次回归：预测的Y(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE 行]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要指定为依赖数据的量度 |
-| metric_Y | 要指定为独立数据的量度 |
-| include_zeros | 是否在计算中包括零值 |
+| metric_X | 您希望指定为从属数据的量度 |
+| metric_Y | 您希望指定为独立数据的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
 
 ## 二次回归：斜率 {#quadratic-regression-slope}
@@ -1239,15 +1243,15 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 二次回归：斜率(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要指定为依赖数据的量度 |
-| metric_Y | 要指定为独立数据的量度 |
-| include_zeros | 是否在计算中包括零值 |
+| metric_X | 您希望指定为从属数据的量度 |
+| metric_Y | 您希望指定为独立数据的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
 
 
@@ -1262,15 +1266,15 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 倒数回归：相关系数(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要与metric_Y关联的量度 |
-| metric_Y | 要与metric_X关联的量度 |
-| include_zeros | 是否在计算中包括零值 |
+| metric_X | 您希望与 metric_Y 关联的量度 |
+| metric_Y | 您希望与 metric_X 关联的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
 
 ## 倒数回归：截距 {#reciprocal-regression-intercept}
@@ -1284,15 +1288,15 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 倒数回归：截距(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要指定为依赖数据的量度 |
-| metric_Y | 要指定为独立数据的量度 |
-| include_zeros | 是否在计算中包括零值 |
+| metric_X | 您希望指定为从属数据的量度 |
+| metric_Y | 您希望指定为独立数据的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
 
 ## 倒数回归：预测的 Y {#reciprocal-regression-predicted-y}
@@ -1306,15 +1310,15 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 倒数回归：预测的Y(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE 行]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要指定为依赖数据的量度 |
-| metric_Y | 要指定为独立数据的量度 |
-| include_zeros | 是否在计算中包括零值 |
+| metric_X | 您希望指定为从属数据的量度 |
+| metric_Y | 您希望指定为独立数据的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
 
 ## 倒数回归：斜率 {#reciprocal-regression-slope}
@@ -1328,16 +1332,37 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 倒数回归：斜率(metric_X， metric_Y， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE 表]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要指定为依赖数据的量度 |
-| metric_Y | 要指定为独立数据的量度 |
-| include_zeros | 是否在计算中包括零值 |
+| metric_X | 您希望指定为从属数据的量度 |
+| metric_Y | 您希望指定为独立数据的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
+
+
+## 样本方差
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="functions-waskr-variance-estimate"
+>title="样本方差"
+>abstract="使用以下公式计算样本方差的估计值： (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1))。 其中N是标准化容器的计数。 <br/>此置信度已用作&#x200B;*任何时间有效的*&#x200B;置信度计算的一部分。 通常，此函数本身并不有用，但可用于检查计算或手动执行置信度计算&#x200B;**。"
+
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 样本变量(normalizing-container， success-metric)]**
+
+计算样本方差的估计值。
+
+| 参数 | 描述 |
+| --- | --- |
+| 标准化容器 | 运行测试的基础（人员、会话或事件）。 |
+| success-metric | 用户正在将变量与之比较的一个或多个量度。 |
+
+<!-- markdownlint-enable MD034 -->
 
 
 
@@ -1352,7 +1377,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 正弦（量度）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL SINE(metric)]**
 
 
 [!BADGE 行]{type="Neutral"}
@@ -1360,7 +1385,7 @@ CDF-Z(-3) ? 0.0013499
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 您希望求正弦值的角度（弧度） |
+| 量度 | 您希望求正弦的弧度角 |
 
 
 
@@ -1376,14 +1401,14 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL T-SCORE(metric， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL T-SCORE(metric, include_zeros)]**
 
 与[平均值](cm-functions.md#mean)的偏差除以标准差。[Z-Score](#z-score) 的别名。
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 您希望求得T分数的指标 |
-| include_zeros | 是否在计算中包括零值 |
+| 量度 | 您希望求 T 分数的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
 
 ## T 测试 {#t-test}
@@ -1393,39 +1418,39 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-t-test"
 >title="T 测试"
->abstract="执行尾长为 m 的 t 检验，其中 x 为 t 分数，n 为自由度。"
+>abstract="执行尾长为 m 的 t 测试，其中 x 为 t 分数，n 为自由度。"
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL T测试（度量、度、尾）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL T-TEST(metric, degrees, tails)]**
 
-执行尾长为 m 的 t 检验，其中 x 为 t 分数，n 为自由度。
+执行尾长为 m 的 t 测试，其中 x 为 t 分数，n 为自由度。
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 要对其执行T测试的指标 |
+| 量度 | 您希望执行 T 测试的量度 |
 | 度 | 自由度 |
-| 尾部 | 用于执行T测试的尾的长度 |
+| 尾 | 用于执行 T 测试的尾长 |
 
 ### 详细信息
 
-特征码为T-TEST(metric， degrees， tails)。 在下面，它只是调用&#x200B;***m*** ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[[!DNL CDF-T(-ABSOLUTE VALUE(tails), degrees)]](#cdf-t)**。 此函数类似于&#x200B;**[Z-TEST](#z-test)**&#x200B;函数，该函数运行&#x200B;***m*** ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[[!DNL CDF-Z(-ABSOLUTE VALUE(tails))]](#cdf-z)**。
+签名为 T-TEST(metric, degrees, tails)。在下面，只需调用 ***m*** ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[[!DNL CDF-T(-ABSOLUTE VALUE(tails), degrees)]](#cdf-t)**。此函数类似于 **[Z-TEST](#z-test)** 函数，该函数运行 ***m*** ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[[!DNL CDF-Z(-ABSOLUTE VALUE(tails))]](#cdf-z)**。
 
-- ***m***&#x200B;是尾数。
-- ***n***&#x200B;是自由度，它应该是整个报告的常数数字，也就是说，不能逐行更改。
-- ***x***&#x200B;是T测试统计数据，通常是基于量度的公式（例如，**[Z-SCORE](#z-score)**），每行都对其进行评估。
+- ***m*** 是尾数。
+- ***n*** 是自由度，对于整个报告来说应该是一个常数，也就是说不会逐行改变。
+- ***x*** 为 T 测试统计数据，通常是基于量度的公式（例如 **[Z-SCORE](#z-score)**），每行都将对其进行评估。
 
 返回值是指在给定自由度和尾数的情况下，获得测试统计数据 x 的几率。
 
 ### 示例
 
-1. 使用函数查找离群值：
+1. 使用函数求离群值：
 
    ```
    T-TEST(Z-SCORE(bouncerate), ROW COUNT - 1, 2)
    ```
 
-1. 将该函数与&#x200B;**[IF](#if)**&#x200B;结合使用，以忽略过高或过低的跳出率，并对其他所有项目上的会话进行计数：
+1. 将函数与 **[IF](#if)** 结合使用，以忽略过高或过低的跳出率，并对其他内容的会话进行计数：
 
    ```
    IF(T-TEST(Z-SCORE(bouncerate), ROW COUNT - 1, 2) < 0.01, 0, sessions )
@@ -1444,13 +1469,13 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 正切（量度）]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL TANGENT(metric)]**
 
 返回给定角的正切。如果角以角度表示，则将该角乘以 PI( )/180。
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 您希望求正切的角度（弧度） |
+| 量度 | 您希望求正切的弧度角 |
 
 
 
@@ -1465,26 +1490,26 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL Z-SCORE(metric， include_zeros)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL Z-SCORE(metric, include_zeros)]**
 
 [!BADGE 行]{type="Neutral"}
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 您希望求得Z分数的指标 |
-| include_zeros | 是否在计算中包括零值 |
+| 量度 | 您希望求 Z 分数的量度 |
+| include_zeros | 是否在计算中包含零值 |
 
-Z得分为0（零）意味着得分与平均值相同。 Z 分数可以为正数或负数，用于指示该分数在平均值之上还是之下，以及依据多少个标准偏差。
+Z 分数为 0（零）表示分数与平均值相同。Z 分数可以为正数或负数，用于指示该分数在平均值之上还是之下，以及依据多少个标准偏差。
 
 Z 分数的方程式为：
 
 ![](assets/z_score.png)
 
-其中&#x200B;***[!DNL x]***&#x200B;是原始分数，***[!DNL μ]***&#x200B;是群体平均值，***[!DNL σ]***&#x200B;是群体标准偏差。
+其中，***[!DNL x]*** 为原始分数，***[!DNL μ]*** 为群体平均值，***[!DNL σ]*** 为群体标准偏差。
 
 >[!NOTE]
 >
->***[!DNL μ]*** (mu)和&#x200B;***[!DNL σ]*** (sigma)将自动从该量度中计算。
+>***[!DNL μ]*** (mu) 和 ***[!DNL σ]*** (sigma) 会使用该量度自动计算。
 
 
 
@@ -1505,8 +1530,8 @@ Z 分数的方程式为：
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 要对其执行Z测试的指标 |
-| 尾部 | 用于执行Z测试的尾的长度 |
+| 量度 | 您希望执行 Z 测试的量度 |
+| 尾 | 用于执行 Z 测试的尾长 |
 
 >[!NOTE]
 >

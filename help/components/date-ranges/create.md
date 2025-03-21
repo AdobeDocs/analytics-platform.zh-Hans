@@ -4,7 +4,7 @@ description: 创建要用在报告中的日期范围。
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: a6295d550e0e357569d530b72fe50a58d7ecfbbe
+source-git-commit: 6e4f23d65a620104cfbd36fc9b4ccd06146f143c
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 37%
@@ -23,7 +23,7 @@ ht-degree: 37%
 * **C**。 在Workspace项目中，从菜单中选择&#x200B;**[!UICONTROL 组件]**，然后选择&#x200B;**[!UICONTROL 创建日期范围]**
 * **D**。 在Workspace项目中，使用快捷键&#x200B;**[!UICONTROL ctrl+shift+d]** (Windows)或&#x200B;**[!UICONTROL shift+command+d]** (macOS)。
 * **E**。 在Workspace项目中，从“组件”左侧面板中选择![在![日历](/help/assets/icons/Calendar.svg) **日期范围**&#x200B;添加](/help/assets/icons/Add.svg)。
-* F.在支持的可视化图表（如折线图可视化图表）中，从数据点的上下文菜单选择&#x200B;**[!UICONTROL 注释选定内容]**。
+* **F**。 在支持的可视化图表（如折线图可视化图表）中，从数据点的上下文菜单选择&#x200B;**[!UICONTROL 注释选定内容]**。
 
 若要定义注释，请使用[[!UICONTROL 日期范围生成器]](#annotation-builder)：
 
