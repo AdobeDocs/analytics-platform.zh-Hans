@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: 40bbcb2868de509555faab8384f1cab45fd738a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4664'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2025 年 3 月** | |
-| Quantum Metric用例 | 添加了从[量子量度](/help/use-cases/third-party/quantum-metric/collect-session-id.md)收集数据的用例。 |
+| Quantum Metric 用例 | 添加了从 [Quantum Metric](/help/use-cases/third-party/quantum-metric/collect-session-id.md) 收集数据的用例。 |
 | **2025 年 2 月** |  |
 | 媒体收集：Adobe Source Connector 更新了新的媒体报告 XDM | Analytics 源连接器会自动[将 Adobe Analytics 中的流媒体数据映射](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=en)到 Web SDK 使用的相同字段。以前，数据被映射到旧位置和新位置，但未来只使用新位置。 |
 | BI 扩展 - 扩展支持 | Customer Journey Analytics BI 扩展现在[支持 Looker、Jupyter Notebook 和 R Studio](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=en)。 |
