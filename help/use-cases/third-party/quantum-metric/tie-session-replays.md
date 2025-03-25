@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: 82d7702c57fdff86fa1f4b70d75e7ff7f019ec86
+source-git-commit: 752e8564c341cf02b5378a12a820f52ca6164a3d
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '365'
 ht-degree: 1%
 
 ---
@@ -41,10 +41,11 @@ ht-degree: 1%
 
 1. 单击&#x200B;**[!UICONTROL 创建]**。
 
-现在，每个会话ID都是一个可单击的链接。 这些链接会将您转到新选项卡中的量子度量，从而允许您更详细地分析该特定会话。 有关向Analysis Workspace维度项目添加超链接的详细信息，请参阅[在自由格式表中创建超链接](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)。
+现在，每个会话ID都是一个可单击的链接。 有关向Analysis Workspace维度项目添加超链接的详细信息，请参阅[在自由格式表中创建超链接](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)。
 
 ## 步骤2从Customer Journey Analytics查看会话
 
-创建包含可单击链接的Workspace报表后，您可以使用Customer Journey Analytics中的过滤器来识别可在Quantum Metric中进一步分析的有趣会话。
-该表将返回该区段中的所有会话，您可以单击其中的任何会话来进一步了解QM。  在[https://www.quantummetric.com/platform/session-replay](https://www.quantummetric.com/platform/session-replay)上了解有关量子度量会话重播的更多信息。 有关任何其他资源，请与您的Quantum Metric客户支持代表联系，或通过Quantum Metric [客户请求门户](https://community.quantummetric.com/s/public-support-page)提交请求。
+找到想要探索会话重放的耐用区段后，可将其应用于包含会话ID链接的面板，并按区段进行筛选。 该表将返回该区段中的所有会话，您可以单击其中的任何会话以在量子度量中进一步探索。
+
+在[https://www.quantummetric.com/platform/session-replay](https://www.quantummetric.com/platform/session-replay)上了解有关量子度量会话重播的更多信息。 有关任何其他资源，请与您的Quantum Metric客户支持代表联系，或通过Quantum Metric [客户请求门户](https://community.quantummetric.com/s/public-support-page)提交请求。
 
