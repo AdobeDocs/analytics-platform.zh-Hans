@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: cfe4bafd-afe6-4738-94f1-30882893b3b6
-source-git-commit: 2d6c5d5b546ef8ba952d4ba4397d897ed4566283
+source-git-commit: 255f06ba504a0fa189a02966c5d3c63e1a4fadfd
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,11 @@ ht-degree: 0%
 
 某些用例（如[绑定量子度量会话重播](tie-session-replays.md)或[使用量子度量热图](heatmap.md)）要求您修改实现以收集量子度量会话ID。 本页概述了将该数据成功引入现有实施的过程。
 
+## 先决条件
+
 这些步骤假定您使用Adobe Experience Platform数据收集中的标记。 如果您的组织不使用标记，则可以调整这些数据收集方法，以便手动实施Web SDK。
 
-## 步骤1：使用量度标记扩展捕获量度会话ID
+### 步骤1：使用量度标记扩展捕获量度会话ID
 
 按照以下步骤将量子量度会话ID附加到您发送到Adobe Experience Platform的数据。
 
@@ -37,11 +39,11 @@ ht-degree: 0%
 
 有关详细信息，请参阅[Quantum量度标记扩展](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric)文档。
 
-## 步骤2：确认包含的数据集字段
+### 步骤2：确认包含的数据集字段
 
 确认连接中的数据集现在具有所需数据集中的量子量度会话ID。
 
-## 步骤3：添加量子度量会话ID作为可用维度
+### 步骤3：添加量子度量会话ID作为可用维度
 
 编辑现有数据视图，在Customer Journey Analytics中将会话ID添加为可用维度。
 
