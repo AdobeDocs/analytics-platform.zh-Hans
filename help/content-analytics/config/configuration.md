@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: 17a7a9a602b92693b2ad6db10f60d3e77fef9724
+source-git-commit: d8d433be07c8cf97e5cf07338f1af6a04a25179f
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 2%
+source-wordcount: '479'
+ht-degree: 0%
 
 ---
 
@@ -39,19 +39,9 @@ Content Analytics的配置包括以下步骤：
 
 * 您已将Content Analytics中使用的功能服务的用户代理和IP地址添加到允许列表。 要配置的用户代理字符串为： <code>AdobeFeaturization/1.0</code>。
 * 您具有Customer Journey Analytics产品管理员角色，该角色具有管理连接和管理数据视图的附加权限。
-* 您具有所需的Experience Platform权限：
-
-  | 类别 | 权限 | 描述 |
-  |---|---|---|
-  | [!UICONTROL 数据收集] | 查看数据流 | 对数据流的只读访问权限。 |
-  | [!UICONTROL 数据收集] | 管理数据流 | 访问读取、创建、编辑和删除数据流。 |
-  | [!UICONTROL 数据建模] | [!UICONTROL 查看架构] | 对架构和相关资源的只读访问权限。 |
-  | [!UICONTROL 数据建模] | [!UICONTROL 管理架构] | 有权读取、创建、编辑和删除架构和相关资源。 |
-  | [!UICONTROL 数据管理] | [!UICONTROL 查看数据集] | 对数据集和架构的只读访问权限。 |
-  | [!UICONTROL 数据管理] | [!UICONTROL 管理数据集] | 有权读取、创建、编辑和删除数据集。 架构的只读访问权限。 |
-  | [!UICONTROL 数据获取] | [!UICONTROL 管理源] | 有权读取、创建、编辑和禁用源。 |
-  | [!UICONTROL Identity Management] | [!UICONTROL 查看身份命名空间] | 对身份命名空间的只读访问。 |
-
+* 您必须具有数据收集](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions){target="_blank"}的[权限。 这些权限包括：
+   * [Experience Platform权限](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
+   * [Experience Platform数据收集权限](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank" }
 * 您仔细考虑了以下重要配置选项：
 
    * 您的网站适合体验报告。 只有在满足以下条件时，才可能生成正确的体验报表：
