@@ -7,7 +7,7 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: 752e8564c341cf02b5378a12a820f52ca6164a3d
+source-git-commit: 9563b13da52963eaf7b17050fb9a7cb3a47ef1ed
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 通过将Quantum Metric会话重播与CJA数据关联，客户可以更好地了解“内容”背后的“原因”。  Workspace可用于发现存在摩擦的会话，然后单击超链接会话ID以在Quantum Metric中浏览会话重放。  通过此数据，可查看会话中的行为并更好地了解导致消费者摩擦的因素。  通过与CJA绑定的会话重播，您可以捕获体验中有关客户行为的关键上下文。
 
-## 先决条件
+## 先决条件：
 
 此用例要求您将Quantum Metric的会话ID与其余实施一起收集。 请参阅[在Customer Journey Analytics中收集Quantum量度会话ID](collect-session-id.md)，了解如何修改您的实施。
 
