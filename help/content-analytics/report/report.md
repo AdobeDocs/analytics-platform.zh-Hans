@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: dbbdfac312b1b7cbb6d8b6ce38a63f6d2bc18420
+source-git-commit: 20767a4672319602d35435aeedb76749a245e691
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1300'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 0%
   | 体验预览 | 资源预览 |
   |---|---|
   | ![Content Analytics体验预览](../assets/aca-experience-preview.png) | ![Content Analytics资产预览](../assets/aca-asset-preview.png) |
-  | **[!UICONTROL 体验的名称]** | **[!UICONTROL 资源的名称]** |
+  | 维度的名称（例如，**[!UICONTROL 体验ID]）** | 资产维度的名称（例如，**[!UICONTROL 资产ID]）** |
   | **[!UICONTROL 展示次数（所有时间）]**：体验的展示次数。 | **[!UICONTROL 展示次数（所有时间）]**：资源的展示次数。 |
   | **[!UICONTROL Assets]**：此体验包含的资源数。 <br/>选择![划分](/help/assets/icons/Breakdown.svg) **[!UICONTROL 划分]**&#x200B;以检查资产。 | **[!UICONTROL 体验]**：在其中显示此资源的体验数。 <br/>选择![划分](/help/assets/icons/Breakdown.svg) **[!UICONTROL 划分]**&#x200B;以检查资产。 |
   | **[!UICONTROL 首次展示]**：体验首次展示的日期。 | **[!UICONTROL 首次展示]**：资产的首次展示日期。 |
@@ -83,7 +83,12 @@ ht-degree: 0%
 
   该面板由以下可视化图表组成：
 
-   * **体验**
+   * **体验**。
+
+     >[!NOTE]
+     >
+     >只有在Content Analytics配置中包含[体验](/help/content-analytics/config/guided.md#experience-capture-and-definition)时，才会显示这些可视化图表。
+     > 
 
       * **体验CTR**： [摘要更改](/help/analysis-workspace/visualizations/summary-number-change.md)可视化图表，显示体验CTR。
       * **排名最前的转化体验**：一个[水平条形图](/help/analysis-workspace/visualizations/horizontal-bar.md)可视化图表，其中显示基于所选转化量度的排名最前的转化体验。
@@ -117,7 +122,13 @@ Content Analytics使用AI和GenAI自动分配每个资源元数据，如主题�
 示例[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)，比较单个资源属性类别（前景颜色）中项目的性能。 您可以将此资源属性替换为其他资源属性类别维度。
 
 * **哪些体验属性有助于转化？**
-虽然资产属性侧重于图像的视觉品质，但体验属性侧重于页面的文本。 通过下面的可视化图表，您可以探索哪些体验属性有助于转化。 这些属性也使用AI和GenAI模型自动分配。
+
+  >[!NOTE]
+  >
+  >仅当您在Content Analytics配置中具有[包含的体验](/help/content-analytics/config/guided.md#experience-capture-and-definition)时，此面板才会显示。
+  > 
+
+  虽然资产属性侧重于图像的视觉品质，但体验属性侧重于页面的文本。 通过下面的可视化图表，您可以探索哪些体验属性有助于转化。 这些属性也使用AI和GenAI模型自动分配。
 
   该面板由以下可视化图表组成：
 
