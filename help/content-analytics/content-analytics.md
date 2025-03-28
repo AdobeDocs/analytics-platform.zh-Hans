@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: a7bed5bdab20c1a995ccaf4294a5f9ba5918f43d
+source-git-commit: 177def4edce1908a099627e96ed159b0154c3715
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Content Analytics使用在Experience Platform的事件数据集中收集的Web�
 
 
 1. 当用户访问为Content Analytics](config/configuration.md)配置的[网站时，Experience Platform Web SDK会记录展示次数以及与内容的交互。
-1. 身份和特征化服务处理这些交互。 该进程包含一个爬网程序，该爬网程序会修订定义交互的已配置URL的面向公众的版本。 对于所有这些爬网URL，Identity Service将唯一标识体验和资源。 而功能化服务则应用AI/ML服务来发现体验和资源的元数据和属性。
+1. 身份和特征化服务处理这些交互。 此过程包含一个检索服务，该服务会修订定义交互的已配置URL的面向公众的版本。 对于所有这些检索到的URL，标识服务将唯一标识体验和资产。 而功能化服务则应用AI/ML服务来发现体验和资源的元数据和属性。
 1. 这些服务（[组件、属性和标识](/help/content-analytics/report/components.md)）的结果用于更新Experience Platform中的相关特定内容分析数据集。
 1. 内容分析数据以及行为数据和其他查找数据可以在Customer Journey Analytics设置中使用([连接](/help/connections/overview.md)、[数据视图](/help/data-views/data-views.md)和[Workspace](/help/analysis-workspace/home.md))。 该设置提供了对您的内容进行独特的宏级深入分析的基础。 <br/>您可以使用[Content Analytics模板](/help/content-analytics/report/report.md#template)快速启动Content Analytics报表和分析。
 
