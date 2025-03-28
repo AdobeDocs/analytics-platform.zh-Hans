@@ -4,10 +4,10 @@ description: 了解如何查看和管理Customer Journey Analytics审核日志�
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: f3c95e57144037323bcc1dd212512b2dddeb833f
+source-git-commit: 9ed7b541ebb1a89b286040c4ea96025b08029499
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 60%
+source-wordcount: '953'
+ht-degree: 58%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 60%
    * 创建：执行了“创建”操作。
    * DELETE：执行了“删除”操作。
    * 编辑：已执行“编辑”操作。
-   * 禁运：
+   * 禁运：当您在[报告活动管理器](https://experienceleague.adobe.com/en/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests)中限制请求时，该操作将记录在禁运下的审核日志中。
    * 导出：执行了“导出”操作。
    * ORG_CHANGE：执行了组织更改操作。
    * 刷新：已执行“刷新”操作。
@@ -158,4 +158,4 @@ ht-degree: 60%
 
 ## 在 API 中管理审核日志
 
-您在 UI 中可以执行的所有操作也可以使用 API 调用来完成。有关详细信息，请参阅[Customer Journey AnalyticsAPI参考文档](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs)。
+您在 UI 中可以执行的所有操作也可以使用 API 调用来完成。有关详细信息，请参阅[Customer Journey Analytics API参考文档](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs)。
