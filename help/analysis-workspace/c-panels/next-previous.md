@@ -7,7 +7,7 @@ exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
 source-git-commit: 2c28d9658165baf4de9519733c321d47c71f2bda
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 90%
+ht-degree: 93%
 
 ---
 
@@ -42,7 +42,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_container"
 >title="容器"
->abstract="选择容器以确定查询的范围。"
+>abstract="选择容器来确定您的查询范围。"
 
 要使用&#x200B;**[!UICONTROL 下一项或上一项]**&#x200B;面板：
 

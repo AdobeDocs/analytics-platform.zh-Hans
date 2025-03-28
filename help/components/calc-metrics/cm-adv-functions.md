@@ -7,7 +7,7 @@ role: User
 source-git-commit: 6788275ba4bfcfbe385e45e6a20de996d8103393
 workflow-type: tm+mt
 source-wordcount: '4659'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -1351,7 +1351,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-waskr-variance-estimate"
 >title="样本方差"
->abstract="使用以下公式计算样本方差的估计值： (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1))。 其中N是标准化容器的计数。 <br/>此置信度已用作&#x200B;*任何时间有效的*&#x200B;置信度计算的一部分。 通常，此函数本身并不有用，但可用于检查计算或手动执行置信度计算&#x200B;**。"
+>abstract="使用公式 (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)) 计算样本方差的估计值。其中 N 是标准化容器的计数。<br/>这可作为&#x200B;*随时有效的*&#x200B;置信度计算的一部分。一般来说，这个函数单独使用并无用处，但可用于检查计算结果或&#x200B;*手动*&#x200B;执行置信度计算。"
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 样本变量(normalizing-container， success-metric)]**
 

@@ -8,7 +8,7 @@ exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 14%
+ht-degree: 33%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 14%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataset-validate"
 >title="验证数据集中的数据"
->abstract="现在您已经配置了实施，可以使用数据集活动管理器查看摄取和失败的批次。 如果您看到主要摄取批次，这一步就已完成。如果您主要看到失败的批次或没有看到批次，请检查您的实施以确保其将数据正确发送到Adobe。"
+>abstract="现在您已经配置了实施，可以使用数据集活动管理器查看已摄取和失败的批次。如果您主要看到的是已摄取的批次，那么这一步就完成了。如果您主要看到的是失败的批次或没有批次，请检查您的实施，以确保它正确地将数据发送到 Adobe。"
 
 <!-- markdownlint-enable MD034 -->
 
