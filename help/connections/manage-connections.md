@@ -1,15 +1,15 @@
 ---
 title: 如何在 Customer Journey Analytics 中管理连接
-description: 描述如何管理与Customer Journey Analytics(Customer Journey Analytics)中的Experience Platform数据集的连接。
+description: 介绍如何在Customer Journey Analytics (Customer Journey Analytics)中管理与Experience Platform数据集的连接。
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 7f2f2fc92c188c4cdfba7d87b7b64458daf2f0a6
 workflow-type: tm+mt
-source-wordcount: '4023'
-ht-degree: 26%
+source-wordcount: '4143'
+ht-degree: 25%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 26%
 * 从连接中创建一个数据视图。
 * 查看一个连接中的全部数据集。
 * 检查连接数据集的状态和摄取过程的状态。 例如，您的数据何时可用，以便可以从Analysis Workspace中的报表和分析开始。
-* 识别因错误配置导致的数据差异。 您是否丢失了行？如果是这样，那么丢失了哪些行？为什么？ 您是否错误配置了连接并导致Customer Journey Analytics中数据丢失？
+* 识别因错误配置导致的数据差异。 您是否丢失了行？如果是这样，那么丢失了哪些行？为什么？ 您是否错误配置了连接并因此导致Customer Journey Analytics中数据丢失？
 * 深入了解所有连接中摄取和可报告行的使用情况。
 
 [!UICONTROL 连接]有两个接口： [[!UICONTROL 列表]](#list)和[[!UICONTROL 用法]](#usage)。
@@ -45,7 +45,7 @@ ht-degree: 26%
 | ![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | 要查看有关[!UICONTROL 包含的数据集]、[!UICONTROL 沙盒]、[!UICONTROL 所有者]等的信息，请选择连接名称旁边的![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)。<p>显示详细信息的弹出窗口。 <p><img src="./assets/conn-info.png" alt="查看连接信息" width="400"/> |
 | ![数据视图](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) | 要[为连接](#create-a-data-view)创建数据视图，请选择![数据视图](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg)。 仅当没有数据视图与该连接相关联时，此图标才会显示。 |
 | ![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | 选择![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)以： <p>![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)[编辑](#edit-a-connection)连接。<p>![删除](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [删除](#delete-a-connection)连接。<p>![数据视图](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) [创建新数据视图](#create-a-data-view)。 为连接创建其他数据视图。 |
-| [!UICONTROL 数据集] | 指向作为连接一部分的数据集的一个或多个链接。 您可以选择数据集超链接以查看连接中的数据集。 如果所选连接中包含更多数据集，请选择&#x200B;**[!UICONTROL +*x*更多]**&#x200B;以显示&#x200B;**[!UICONTROL 包含的数据集]**&#x200B;面板。 此面板会显示指向所有数据集的链接以及一个用于搜索属于连接的特定数据集的选项。<p><img src="./assets/datasets-included.png" alt="包含的数据资产" width="400"/><p>选择数据集名称会在Experience PlatformUI中的新选项卡中打开该数据集。 |
+| [!UICONTROL 数据集] | 指向作为连接一部分的数据集的一个或多个链接。 您可以选择数据集超链接以查看连接中的数据集。 如果所选连接中包含更多数据集，请选择&#x200B;**[!UICONTROL +*x*更多]**&#x200B;以显示&#x200B;**[!UICONTROL 包含的数据集]**&#x200B;面板。 此面板会显示指向所有数据集的链接以及一个用于搜索属于连接的特定数据集的选项。<p><img src="./assets/datasets-included.png" alt="包含的数据资产" width="400"/><p>选择数据集名称会在Experience Platform UI中的新选项卡中打开该数据集。 |
 | [!UICONTROL 沙盒] | 此连接从中获取其数据集的[Experience Platform沙盒](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sandbox/home)。 这是您在首次创建连接时选择的沙盒。不能更改。 |
 | [!UICONTROL 所有者] | 创建连接的人员。 |
 | [!UICONTROL 导入新数据] | 为数据集导入新数据的状态： <p>![状态为绿色](assets/status-green.svg))    **[!UICONTROL _x _On]**用于配置为导入新数据的数据集，并且<p>![状态灰色](assets/status-gray.svg)   未配置为导入新数据的数据集有&#x200B;**[!UICONTROL _x关闭_]**。 |
@@ -133,13 +133,13 @@ ht-degree: 26%
 | 数据集选择器 | 允许您选择连接中的一个或全部数据集。不能选择其他数量的数据集。默认为[!UICONTROL 全部数据集]。 |
 | 日期范围选择器 | 编辑开始日期、结束日期或选择![日历](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)以打开日期范围选择器。 在日期范围选择器中，使用某个预定义期间来选择日期范围（例如&#x200B;**[!UICONTROL 最近6个月]**），或使用日历选择开始和结束日期。 选择&#x200B;**[!UICONTROL 应用]**&#x200B;以应用新的日期范围。 |
 | [!UICONTROL 可用的事件数据记录数] | 可用于报告的事件数据集总行数，**表示整个连接**。 此数与任何日历设置无关。如果您从数据集选择器中选择了一个数据集，或者在表中选择了一个数据集，则计数会发生变化。 添加数据后，数据延迟1-2个小时后才会显示在报表中。 |
-| [!UICONTROL 量度] | 汇总已添加、跳过和删除的事件、查找、配置文件和摘要数据集记录，以及添加的批次数。 这些量度基于&#x200B;**您选择的数据集和日期范围**。<p>选择&#x200B;**[!UICONTROL 检查详细信息]**&#x200B;以显示&#x200B;**[!UICONTROL 检查跳过的详细信息]**&#x200B;弹出窗口。 弹出窗口会列出跳过的记录数以及所有事件数据集或选定数据集的原因。<p><img src="./assets/skipped-records.png" width="500"/><p>选择包含详细信息的![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)弹出窗口。 由于某些跳过的原因（如[!UICONTROL 访客ID为空]），弹出窗口显示了EQS的示例PSQL(查询服务的Experience Platform)，您可以在[查询服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/home)中使用它来查询数据集中跳过的记录。 选择![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL 复制EQS的示例PSQL]**&#x200B;以复制SQL。 |
+| [!UICONTROL 量度] | 汇总已添加、跳过和删除的事件、查找、配置文件和摘要数据集记录，以及添加的批次数。 这些量度基于&#x200B;**您选择的数据集和日期范围**。<p>选择&#x200B;**[!UICONTROL 检查详细信息]**&#x200B;以显示&#x200B;**[!UICONTROL 检查跳过的详细信息]**&#x200B;弹出窗口。 弹出窗口会列出跳过的记录数以及所有事件数据集或选定数据集的原因。<p><img src="./assets/skipped-records.png" width="500"/><p>选择包含详细信息的![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)弹出窗口。 由于某些跳过的原因（如[!UICONTROL 访客ID为空]），弹出窗口显示了EQS示例PSQL (查询服务的Experience Platform)，您可以在[查询服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/home)中使用它来查询数据集中跳过的记录。 选择![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL 复制EQS的示例PSQL]**&#x200B;以复制SQL。 |
 | [!UICONTROL 添加的记录数] | 指示在选定时间段，**为您选择的数据集和日期范围**&#x200B;添加了多少行。每 10 分钟更新一次。 |
 | [!UICONTROL 跳过的记录数] | 指示在选定的时间段内跳过了多少行（对于您选择的数据集和日期范围&#x200B;**）。**&#x200B;跳过记录的原因包括：缺少时间戳、缺少人员ID或人员ID无效等。 每 10 分钟更新一次。 <p>无效的个人ID（如`undefined`或`00000000`，或者[!UICONTROL 个人ID]中的任何数字和字母组合，在指定月份在某个事件中出现超过100万次）是无法归因到任何特定用户或个人的ID。 这些行无法引入到系统中，并将导致引入和报表容易出错。 要修复无效的人员 ID，您有 3 个选项：<ul><li>使用[拼接](/help/stitching/overview.md)以有效用户ID填充未定义或全零用户ID。</li><li>将用户ID留空，在引入期间这些用户ID会被跳过（这要优于无效或全零用户ID）。</li><li>先修复系统中的任意无效用户 ID，然后再提取数据。</li></ul> |
-| [!UICONTROL 条记录]已删除 | 指示在选定时间段，**为您选择的数据集和日期范围**&#x200B;删除了多少行。例如，有人可能在[!DNL Experience Platform]中删除了一个数据集。 每 10 分钟更新一次。<p>在某些情况下，该值可能还包含替换的记录，例如拼接或某些查找数据集更新。 请看以下示例：</p><ul><li>您将一个记录上传到XDM个人资料数据集，该Customer Journey Analytics配置为摄取作为个人资料查找数据。 在连接详细信息中，此数据集将显示已添加1条记录。</li><li>将原始记录的副本上传到同一AEP数据集中，该数据集现在包含两个记录。 Customer Journey Analytics从配置文件查找数据集中摄取其他记录。 Customer Journey Analytics会看到它已经在连接中摄取了人员ID的配置文件记录，因此会删除其早期版本并添加新的配置文件数据。 在连接详细信息中，此操作将表示添加了1条记录并删除了1条记录，因为Customer Journey Analytics仅保留任何引入的人员ID的最新配置文件查找数据。</li><li>AEP数据集总共包含两个碰巧相同的记录。 另外，Customer Journey Analytics连接详细信息会显示其摄取数据的状态：此用户档案数据集添加了2条记录并删除了1条记录。 </li></ul> |
+| [!UICONTROL 条记录]已删除 | 指示在选定时间段，**为您选择的数据集和日期范围**&#x200B;删除了多少行。例如，有人可能在[!DNL Experience Platform]中删除了一个数据集。 每 10 分钟更新一次。<p>在某些情况下，该值可能还包含替换的记录，例如拼接或某些查找数据集更新。 请看以下示例：</p><ul><li>您将一个记录上传到XDM个人资料数据集，Customer Journey Analytics会将其配置为摄取作为个人资料查找数据。 在连接详细信息中，此数据集将显示已添加1条记录。</li><li>将原始记录的副本上传到同一个AEP数据集中，该数据集现在包含两个记录。 Customer Journey Analytics从用户档案查找数据集中摄取其他记录。 Customer Journey Analytics会看到它已在连接中摄取该人员ID的配置文件记录，因此将删除其早期版本并添加新的配置文件数据。 在连接详细信息中，此操作将表示添加了1条记录并删除了1条记录，因为Customer Journey Analytics仅保留任何引入的人员ID的最新配置文件查找数据。</li><li>AEP数据集总共包含两个碰巧相同的记录。 另外，Customer Journey Analytics连接详细信息会显示其摄取数据的状态：此用户档案数据集添加了2条记录并删除了1条记录。 </li></ul> |
 | ![搜索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) _搜索数据集名称或ID_ | 数据集搜索字段。 您可以按数据集名称或[!UICONTROL 数据集ID]搜索数据集表。 |
 | [!UICONTROL 数据集表] | 作为连接一部分的数据集。 |
-| [!UICONTROL 数据集] | 作为连接一部分的数据集的名称。 您可以选择超链接在新选项卡的Experience PlatformUI中打开数据集。 您可以选择行或复选框以仅显示选定数据集的详细信息。 |
+| [!UICONTROL 数据集] | 作为连接一部分的数据集的名称。 您可以选择超链接，在新选项卡的Experience Platform UI中打开数据集。 您可以选择行或复选框以仅显示选定数据集的详细信息。 |
 | [!UICONTROL 数据集 ID] | 由Experience Platform自动生成。 |
 | [!UICONTROL 添加的记录数] | 在所选时间间隔内添加到连接的数据集记录（行）数。 |
 | [!UICONTROL 跳过的记录数] | 在所选时间间隔内，某个连接的数据传输期间跳过的数据集记录（行）数。 |
@@ -171,7 +171,7 @@ ht-degree: 26%
 | [!UICONTROL 连接名称] | 连接的友好名称。 |
 | [!UICONTROL 连接说明] | 描述此连接目的的更详细的描述。 |
 | [!UICONTROL 沙盒] | 此连接从中获取其数据集的[Experience Platform沙盒](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sandbox/home)。这是您在首次创建连接时选择的沙盒。 不能更改。 |
-| [!UICONTROL 连接 ID] | 此ID以Experience Platform生成。 您可以使用![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)来复制ID。 |
+| [!UICONTROL 连接 ID] | 此ID在Experience Platform中生成。 您可以使用![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)来复制ID。 |
 | [!UICONTROL 使用连接的数据视图] | 列出使用此连接的所有数据视图。 |
 | [!UICONTROL 导入新数据] | 为数据集导入新数据的状态： <p>![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _On]**，了解有多少数据集配置为导入新数据，以及<p>![状态灰色](assets/status-gray.svg)   **[!UICONTROL _x关闭_]**&#x200B;已关闭多少个数据集的新数据导入。 |
 | [!UICONTROL 回填数据] | 数据集的回填数据的状态。<p>![状态为红色](assets/status-red.svg)   **[!UICONTROL _x _个回填失败]**，原因是数据集间回填的失败数，<p>![状态为红色](assets/status-orange.svg)   **[!UICONTROL _x _个回填正在处理]**跨数据集的处理回填数，<p>![状态为绿色](assets/status-green.svg)   针对数据集的已完成回填数，已完成&#x200B;**[!UICONTROL _x _个回填]**，并且<p>![状态灰色](assets/status-gray.svg)   如果未为连接中的数据集定义回填，则返回&#x200B;**[!UICONTROL _Off_]**。 |
@@ -201,7 +201,7 @@ ht-degree: 26%
 | [!UICONTROL 数据源类型] | 将数据集添加到连接时定义的数据源类型。 |
 | [!UICONTROL 数据集类型] | [!UICONTROL 事件]、[!UICONTROL 配置文件]、[!UICONTROL 查找]或[!UICONTROL 摘要]。 [了解详情](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection) |
 | [!UICONTROL 架构] | 此数据集所基于的Experience Platform架构。 |
-| [!UICONTROL 数据集 ID] | 此数据集ID以Experience Platform生成。 |
+| [!UICONTROL 数据集 ID] | 此数据集ID是在Experience Platform中生成的。 |
 
 
 ## 使用情况 {#connections-usage}
@@ -355,6 +355,26 @@ ht-degree: 26%
 >abstract="显示超过 13 个月的时间段内可用的总行数。例如，2024 年 2 月 1 日，该数字显示事件时间戳早于 2023 年 1 月的可用行数总数。"
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_corereportablerows"
+>title="核心可报告行数"
+>abstract="核心可报告行是快照值，而不是聚合总计。 这些值会根据选定日期范围中的最后一个月动态更新。 如果客户选择“一月 — 三月”，则值将反映三月的快照。"
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_historicalreportablerows"
+>title="历史可报告行数"
+>abstract="历史可报告行是快照值，而不是聚合总计。 这些值会根据选定日期范围中的最后一个月动态更新。 如果客户选择“一月 — 三月”，则值将反映三月的快照。"
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_cumulativereportablerows"
+>title="累计可报告行数"
+>abstract="累积可报告行是快照值，而不是聚合总计。 这些值会根据选定日期范围中的最后一个月动态更新。 如果客户选择“一月 — 三月”，则值将反映三月的快照。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 [!UICONTROL Usage]接口显示所有连接中摄取和可报告行的使用情况。 如果未选中，请选择&#x200B;**[!UICONTROL 用法]**&#x200B;选项卡以访问该界面。
