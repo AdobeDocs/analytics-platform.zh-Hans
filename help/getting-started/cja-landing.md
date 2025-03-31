@@ -4,10 +4,10 @@ description: Customer Journey Analytics 登陆页面。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: c29b1b8678579b58c42fce2fc02fffd81c1a633f
+source-git-commit: ff9d8cbe25dca2bbf1ab41891c20476909516b66
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 92%
+source-wordcount: '836'
+ht-degree: 91%
 
 ---
 
@@ -22,6 +22,12 @@ ht-degree: 92%
 大致了解 Customer Journey Analytics 产品和文档中的最新增强！有关功能、改进和修复的完整列表，请查看详细的[发行说明](../release-notes/latest.md)。访问 [文档更新页面](../release-notes/doc-changes.md) 以了解最新更改。
 
 >[!BEGINTABS]
+
+>[!TAB Content Analytics]
+
+Adobe Content Analytics 可让您快速轻松地调查大量内容数据，以了解趋势、发现异常、识别内容疲劳并从内容曝光中获取见解。
+
+[![图像](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
 
 >[!TAB AI 助手]
 
@@ -65,18 +71,6 @@ AI 助手是一种对话体验，允许从业者快速执行任务——无论�
 [![图像](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
 
 *_您必须拥有 Prime 包才能进行基于图形的拼接。_*
-
->[!TAB 查找 B2B]
-
-作为配置连接的一部分，您可以转换特定 B2B 查找架构的数据集，以更好地支持基于人员的 B2B 数据查找。
-
-[![图像](assets/learn-more-button.svg)](/help/connections/transform-datasets-b2b-lookups.md)
-
->[!TAB 派生字段]
-
-现在可以使用新的派生字段函数（数学、下一个、上一个、总结、重复数据删除）和附加函数模板（如跳出率、友好数据集名称、假日季节、月度目标、简单机器人检测等）。
-
-[![图像](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
 >[!TAB BI 扩展*]
 
