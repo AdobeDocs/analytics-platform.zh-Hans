@@ -7,9 +7,9 @@ feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: bc0573b2d75a18aaaac4f5d171579e9763f2f8e0
+source-git-commit: 380ed5c9ee0c21ea9855a41728afec040637ce65
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1900'
 ht-degree: 3%
 
 ---
@@ -45,32 +45,28 @@ AI助手中的![数据分析代理](assets/cja-ai-asst-da.gif)
 | **Workspace操作/功能** | 除了构建和更新可视化图表之外，数据分析代理无法对Workspace中的用户执行操作。 例如，它不能执行以下任何操作：<ul><li>上下文操作UI按钮（添加到图表、新面板、新表）</li><li>共享</li><li>导出</li><li>下载</li><li>管理用户首选项</li><li>策划</li><li>管理数据视图</li><li>Analytics功能板应用程序</li><li>归因</li></ul> |
 | **不支持的可视化图表类型** | <ul><li>流量</li><li>流失</li><li>同类群组表</li><li>面积图，栈叠的面积图</li><li>堆叠的条形图</li><li>项目符号</li><li>组合</li><li>直方图</li><li>水平条形图、栈叠的水平条形图</li><li>关键量度摘要</li><li>散点图</li><li>概要变化</li><li>文本</li><li>树状图</li><li>维恩图</li></ul> |
 
-<!---## Feature access in the Customer Journey Analytics UI
+## 管理对Customer Journey Analytics中的数据分析代理的访问权限
 
-[Do we even need this section for the Alpha?]
+以下参数可管理对Customer Journey Analytics中的数据分析代理的访问权限：
 
-The following parameters govern access to Data visualization in AI Assistant:
+* **解决方案访问**： Data Insights代理可用于Customer Journey Analytics Prime和Ultimate客户。 在Adobe Analytics中不可用。
 
-* **Solution access**: Data visualization in AI Assistant is available for Customer Journey Analytics Prime and Ultimate customers. It is not available in Adobe Analytics. 
+* **合同访问**：如果您无法在AI助手中使用数据分析代理，请联系贵组织的管理员或Adobe客户代表。 在您的组织可以使用AI Assistant中的数据分析代理之前，您必须同意某些与GenAI相关的法律条款。
 
-It is also available in Adobe Experience Platform, Adobe Journey Optimizer, Adobe Real-Time CDP and additional Experience Platform apps.
+* **权限**：在[!UICONTROL Adobe Admin Console]中，[!UICONTROL 报表工具] **[!UICONTROL AI Assistant：数据可视化]**&#x200B;权限决定了对此工具的访问权限。 [产品配置文件管理员](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)需要在[!UICONTROL Admin Console]中执行这些步骤：
+   1. 导航到&#x200B;**[!UICONTROL Admin Console]** > **[!UICONTROL 产品和服务]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL 产品配置文件]**
+   1. 选择要为其提供[!UICONTROL AI助手：产品知识]访问权限的产品配置文件的标题。
+   1. 在特定产品配置文件中，选择&#x200B;**[!UICONTROL 权限]**。
+   1. 选择![编辑](/help/assets/icons/Edit.svg)以编辑&#x200B;**[!UICONTROL 报告工具]**。
+   1. 选择![AddCircle](/help/assets/icons/AddCircle.svg)以将&#x200B;**AI助手：数据可视化**&#x200B;添加到&#x200B;**[!UICONTROL 包含的权限项]**。
 
-* **Contractual access**: If you are not able to use AI Assistant, please contact your organization's administrator or Adobe Account Representative. Before your organization can use Data visualization in AI Assistant, your must agree to certain GenAI-related legal terms.
+      ![添加权限](assets/ai-assistant-permissions.png)。
 
-* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL AI Assistant: Data visualization]** permission determines access to this tool. A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in the [!UICONTROL Admin Console]:
-   1. Navigate to **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**
-   1. Select the title of the product profile for which you want to provide access to [!UICONTROL AI Assistant: Product Knowledge].
-   1. In the specific product profile, select **[!UICONTROL Permissions]**.
-   1. Select ![Edit](/help/assets/icons/Edit.svg) to edit **[!UICONTROL Reporting Tools]**.
-   1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) to add **AI Assistant: Data visualization** to **[!UICONTROL Included permission items]**.
-   
-      ![Add permission](assets/ai-assistant-permissions.png).
+   1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存权限。
 
-   1. Select **[!UICONTROL Save]** to save the permissions.
+有关详细信息，请参阅[访问控制](/help/technotes/access-control.md#access-control)。
 
-See [Access control](/help/technotes/access-control.md#access-control) for more information.--->
-
-## AI助手中的访问和数据分析代理
+## 访问AI助手中的数据分析代理
 
 1. 转到[experience.adobe.com](https://experience.adobe.com/)并使用Adobe ID登录。
 
