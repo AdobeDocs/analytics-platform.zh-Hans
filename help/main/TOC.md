@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: cd0ff5f6c805dc75fc07cee87e104b84d411abc9
+source-git-commit: d835411beba3d40f67d2f93ee76aa5eda6f45041
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1219'
 ht-degree: 90%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 90%
       + [创建数据视图](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
       + [创建营销渠道派生字段](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
       + [验证数据流](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
-      + [设置流媒体收集](/help/getting-started/cja-upgrade/cja-upgrade-streaming-media.md)
+      + [设置流媒体收藏集](/help/getting-started/cja-upgrade/cja-upgrade-streaming-media.md)
       + 使用Analytics源连接器{#historical-data-source-connector}保留历史数据
          + [为 Analytics 源连接器创建 XDM 架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
          + [创建 Analytics 源连接器并映射字段](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
@@ -267,6 +267,7 @@ ht-degree: 90%
       + [概述](/help/content-analytics/config/configuration.md)
       + [引导配置](/help/content-analytics/config/guided.md)
       + [手动配置](/help/content-analytics/config/manual.md)
+      + [数据收集](/help/content-analytics/config/datacollection.md)
 
 + Analytics 功能板 {#cja-dashboards}
    + [概述](../mobile-app/home.md)

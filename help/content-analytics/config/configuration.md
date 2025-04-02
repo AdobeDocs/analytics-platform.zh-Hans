@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: 40739525db8061f32a4cef1a27177fedad9bc458
+source-git-commit: c01fbe7b991da9c21a598ebac551775afd7deeed
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,7 @@ Content Analytics的配置包括以下步骤：
 在配置Content Analytics之前，请确保满足以下先决条件：
 
 * 您已将Content Analytics中使用的功能服务的用户代理和IP地址添加到允许列表。 要配置的用户代理字符串为： <code>AdobeFeaturization/1.0</code>。
+* 如果使用Javascript](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library){target="_blank"}实施[Web SDK，请确保使用默认名称<code>alloy</code> 用于Javascript库。
 * 您具有Customer Journey Analytics产品管理员角色，该角色具有管理连接和管理数据视图的附加权限。
 * 您必须具有数据收集](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions){target="_blank"}的[权限。 这些权限包括：
    * [Experience Platform权限](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
