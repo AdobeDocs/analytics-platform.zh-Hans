@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: dafd4360d12c5b8a6b9ce99799722cecbca9768c
 workflow-type: tm+mt
-source-wordcount: '1629'
-ht-degree: 8%
+source-wordcount: '3249'
+ht-degree: 18%
 
 ---
 
@@ -183,17 +183,44 @@ ht-degree: 8%
 
 ## 为您的组织动态生成升级步骤
 
-根据时间表和资源限制等多个因素，[了解建议的升级步骤](#1-understand-the-recommended-upgrade-steps)中所述的建议升级步骤可能对您的组织不实用。
+根据时间表和资源限制等多个因素，[了解建议的升级步骤](#recommended-upgrade-steps-for-most-organizations)中所述的建议升级步骤可能对您的组织不实用。 在这种情况下，您可以针对组织的独特环境动态生成升级步骤。 根据您是否已访问Customer Journey Analytics，生成这些步骤的过程会有所不同。
+
+### 适用于有权访问Customer Journey Analytics的客户
 
 要针对贵组织的独特环境动态生成升级步骤，请执行以下操作：
 
 1. 完成Customer Journey Analytics升级指南。
 
-   要从Customer Journey Analytics访问指南，请选择&#x200B;**[!UICONTROL Workspace]**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**[!UICONTROL 升级到Customer Journey Analytics]**。 按照屏幕上的说明操作。
+   在Customer Journey Analytics中，选择&#x200B;**[!UICONTROL Workspace]**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**[!UICONTROL 升级到Customer Journey Analytics]**。 按照屏幕上的说明操作。
 
-   完成本升级指南后，将向您提供分步说明，概述组织要求所特有的最佳升级步骤。 这些升级步骤最符合您现有的Adobe Analytics环境和Customer Journey Analytics目标。
+   完成本升级指南后，将向您提供分步说明，概述组织要求所特有的最佳升级步骤。 这些升级步骤最符合您现有的Adobe Analytics环境和Customer Journey Analytics目标。 升级步骤以可共享链接或可下载.csv文件的形式提供。
 
 1. 按照生成的分步说明升级到Customer Journey Analytics。
+
+### 适用于尚未有权访问Customer Journey Analytics的客户
+
+要针对贵组织的独特环境动态生成升级步骤，请执行以下操作：
+
+1. 请联系您的Adobe客户团队以完成《Customer Journey Analytics升级指南》。
+
+   您的Adobe客户团队可以帮助您完成升级指南，并为您提供一个.csv文件，其中包含您的问题、您的答案以及特定于贵组织的动态生成的升级步骤。
+
+   在联系您的Adobe客户团队之前，请熟悉《Customer Journey Analytics升级指南》中包含的问题并确定您的答案。 《Customer Journey Analytics升级指南》包含以下问题和可能的答案：
+
+
+   | 问题 | 可用答案 | 其他信息 |
+   |---------|----------|---------|
+   | 选择描述您当前 Adobe Analytics 实施的选项。此信息可能会影响升级到 Customer Journey Analytics 时可能可用的其他可选的升级选项。 | 选择一个： <ul><li>**AppMeasurement：**<br/>&#x200B;在页面上加载AppMeasurement.js并使用s对象(例如，s.eVar1)将数据发送到Adobe的JavaScript实施。</li><li>**Adobe Analytics扩展（标记）：** <br/>加载Adobe Experience Platform数据收集（以前称为Launch）的标记实现。 标记已安装 Adobe Analytics 扩展。</li><li>**Experience Platform Web SDK扩展（标记）：**<br/>&#x200B;加载Adobe Experience Platform数据收集（以前称为Launch）的标记实施。 标记已安装 Web SDK 扩展。</li><li>**Experience Platform Web SDK (alloy.js)：**&#x200B;一种JavaScript实现，可在页面上加载Web SDK库(alloy.js)，并使用JSON有效负载将数据发送到Adobe。</li><li>**批量数据插入API：**<br/>&#x200B;使用数据插入API或批量数据插入API的实现。</li><li>**Experience Platform Mobile SDK：**<br/>&#x200B;使用Adobe Experience Platform Mobile SDK的实现。</li><li>**使用第三方标记管理工具的AppMeasurement：**<br/>&#x200B;使用第三方标记管理工具的实现。</li><li>**非Adobe Analytics产品：**<br/>&#x200B;为Adobe Analytics以外的产品(如Google Analytics)收集数据的实现。 从非 Adobe Analytics 产品升级到 Customer Journey Analytics 时，选择此选项将禁用升级指南中不适用的几个选项。 </li><li>**我不知道：**<br/>&#x200B;如果您不是实施的管理人，则可以临时选择此选项。</li></ul><p>如果适用，请选择：<ul><li>**我们的实施当前使用Analytics Source Connector：**<br/> Analytics Source Connector允许您轻松地从Customer Journey Analytics中获得价值，但需要您同时为Adobe Analytics和Customer Journey Analytics付费。 本指南可帮助您转向独立的 Web SDK 实施。</li></ul></p> | <ul><li>[了解您的Adobe Analytics实施以及它如何影响您升级到Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md#understand-your-adobe-analytics-implementation-and-how-it-affects-your-upgrade-to-customer-journey-analytics)</li><li>[从Analytics源连接器过渡到Customer Journey Analytics的Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)</li></ul> |
+   | 大多数 Adobe Analytics 功能在 Customer Journey Analytics 中已经可用。但是，在升级过程中需要考虑以下功能。请选择您计划使用的任何功能。 | 请选择所有适用项：<ul><li>**来自Adobe Analytics的历史数据：**</br>&#x200B;将您的Adobe Analytics历史报表包数据引入Adobe Experience Platform和Customer Journey Analytics。</li><li>Adobe Analytics中的&#x200B;**组件和项目：**</br> Adobe Analytics中的组件包括：项目（及其相关自由格式表和可视化图表）、区段和计算量度。</li><li>**活动图叠加和链接跟踪：**</br>&#x200B;一种浏览器扩展，允许您在网站上将链接跟踪数据显示为叠加图。</li><li>**分类数据：**</br>&#x200B;将数据分组或分类为单独的维度。</li><li>**营销渠道：**</br>&#x200B;创建规则以分类客户如何到达您的网站。</li><li>**Data Warehouse：**</br>&#x200B;以电子表格格式从Adobe Analytics导出已处理数据。</li><li>**数据馈送：**Customer Journey Analytics中尚未提供数据馈送的确切替代项。 但是，使用完整的表导出、Platform数据集导出、BI工具集成和报告API等功能可以实现类似的功能。</br></li><li>**流媒体数据：**</br> Adobe Analytics和Customer Journey Analytics的附加产品，专门用于收集媒体（如音频、视频或流式内容）数据。</li></ul> | <ul><li>[了解升级到Customer Journey Analytics时Adobe Analytics功能支持](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)</li></ul> |
+   | 大多数新功能在 Customer Journey Analytics 中已经可用。但是，在升级过程中需要考虑以下功能。请选择您计划使用的任何功能。 | 请选择所有适用项：<ul><li>**将收集的数据与来自其他来源的数据（如联系中心数据）绑定：**</br>（推荐）将来自各种Web、移动和离线属性的数据绑定以创建单个整合的客户行为视图。 将来自其他渠道的分析数据结合起来的能力是 Customer Journey Analytics 的主要用例。</li><li>**使用自定义维度拼接来自其他数据集的点击：**<br/>&#x200B;如果任何数据集不共享主标识符(如Experience Cloud ID)，您仍然可以使用其他维度（如登录用户名或电子邮件地址）将该数据拼接在一起。</li><li>**与Adobe Journey Optimizer集成：**<br/>&#x200B;为客户提供互联、情境式和个性化的体验。</li><li>**与Adobe Real-Time CDP集成：**<br/>&#x200B;合并来自多个来源的配置文件数据以根据用户特征生成受众和区段。</li><li>**与Adobe Target (A4T)集成：**<br/> Adobe建议与Adobe Journey Optimizer集成以提供个性化用例。 可以与 Adobe Target 集成，但这只是短期的解决方案。</li><li>**与Adobe Audience Manager集成：**<br/> Adobe建议基于受众用例与Adobe Real-time CDP集成。 可以与 Audience Manager 集成，但这只是短期的解决方案。</li></ul> | [了解Customer Journey Analytics独有的功能](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md) |
+   | 选择您最终计划如何使用 Adobe Analytics 和 Customer Journey Analytics： | 选择一个： <ul><li>**我打算从Adobe Analytics完全迁移到Customer Journey Analytics：**<br/>（推荐）Adobe建议您从Adobe Analytics完全迁移到Customer Journey Analytics。 在过渡期间，您应该计划同时运行 Adobe Analytics 和 Customer Journey Analytics，以便执行并排数据比较。当您对数据满意时，可以禁用 Adobe Analytics。</li><li>**我打算保留两个Analytics产品：**<br/>（不推荐）如果选择此选项，则您与Adobe签订的合同将同时包括Adobe Analytics和Customer Journey Analytics，这可能会使贵组织在一段时间内更加昂贵。</li></ul> | [评估升级到Customer Journey Analytics后何时禁用Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md) |
+   | 选择如何配置 Customer Journey Analytics 架构： | 选择一个： <ul><li>**我想使用为我的组织量身定制的架构：**</br>（推荐）自定义架构可让您的组织仅跟踪您需要的内容，并避免与混乱和不需要的字段相关的开销。 此选项包括 Web SDK 添加的字段组和您的组织自定义的字段组。</li><li>**我想使用默认的Adobe Analytics架构：**</br>（不推荐） Adobe Analytics架构包含一千个以上的字段，这可能会导致架构混乱而复杂。 您的组织将不得不继续遵守 props 和 eVars 的概念，这个旧版概念在 Customer Journey Analytics 不使用。与其他 Adobe Experience Platform 服务的集成更加困难。</li></ul> | [选择您的Customer Journey Analytics架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) |
+   | 选择您首选的实施 Customer Journey Analytics 的方式： | <ul><li>**手动实施(alloy.js)：**<br/>&#x200B;在网站的每个页面上包含Web SDK库(alloy.js)。</li><li>**标记：**<br/>（推荐）如果您尚未使用标记，请在您的网站上安装标记加载器。 如果您已经使用标记，可以将 Web SDK 扩展添加到您的标记属性。此选项包括使用 Adobe Experience Platform 数据收集和第三方标记管理系统中的标记的实施。</li><li>**API：**<br/>&#x200B;使用数据收集API将数据直接发送到数据流。 支持非身份验证（客户端到服务器）和身份验证（服务器到服务器）两种类型。</li></ul> | [了解升级到Customer Journey Analytics时的Web SDK实施选项](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md) |
+   | （可选）选择替代升级方法 | <ul><li>**Soley使用Analytics Source Connector：**<br/>（不推荐）您可以将Analytics Source Connector用作Customer Journey Analytics的唯一实施路径。<p>此选项通过快速向Customer Journey Analytics发送数据来节省实施时间。 不过，它也有各种不足之处，例如延迟较高，将来难以脱离 Adobe Analytics。</p></li><li>**我希望在Web SDK中使用我的AppMeasurement逻辑：**<br/>&#x200B;不要通过XDM对象发送数据，而要通过数据对象以AppMeasurement格式发送所有变量。<p>此选项允许您将AppMeasurement逻辑映射到XDM，而不是从头开始填充XDM对象，从而节省实施时间。 但是，随着时间的推移，它会带来更多的复杂性，因为您将来添加的任何字段都必须映射到数据流中的 XDM。</p></li><li>**我想在不进行额外配置的情况下将数据层发送到Adobe：**<br/>&#x200B;您可以通过数据对象将整个数据层发送到Adobe，而不是通过XDM对象发送数据。<p>此选项允许您将数据层映射到XDM，而不是从头开始填充XDM对象，从而节省实施时间。 不过，这种映射的工作量很大，因为会有大量数据 Adobe 无法轻易解释。随着时间的推移，此选项还会带来更多的复杂性，因为您将来添加到数据中的任何字段都必须映射到数据流中的 XDM。</p></li></ul> | <ul><li>[升级替代方案：仅使用Analytics Source Connector升级到Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)</li><li>[升级替代方案：将AppMeasurement数据收集与Experience Platform Web SDK和Customer Journey Analytics结合使用](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)</li><li>[升级替代方案：将数据层发送到Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-data-layer.md)</li></ul> |
+
+   与您的Adobe客户团队完成本升级指南后，将为您提供一个.csv文件，其中包含问题、您的答案以及动态生成的升级步骤，这些步骤最符合您的现有Adobe Analytics环境和Customer Journey Analytics的目标。
+
+1. 按照.csv文件中生成的分步说明升级到Customer Journey Analytics。
 
 <!--
 
