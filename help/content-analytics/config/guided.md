@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: ceb6ac97686165c2883ad8057730bb09e4d7ad16
+source-git-commit: 411cd199e758da57d94faa9efb7f488d05163750
 workflow-type: tm+mt
-source-wordcount: '2428'
+source-wordcount: '2469'
 ht-degree: 25%
 
 ---
@@ -249,6 +249,11 @@ ht-degree: 25%
 >title="数据收集"
 >abstract="您可以在与当前配置关联的标记属性中编辑 Adobe 内容分析扩展中的资产设置。"
 
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_tags_disabled_description "
+>title="标记属性已禁用"
+>abstract="Content Analytics扩展已处于活动状态。"
+
 <!-- markdownlint-enable MD034 -->
 
 #### 新配置 {#new-configuration}
@@ -277,6 +282,11 @@ ht-degree: 25%
 * 指示在为Content Analytics收集数据时应包含或排除哪些资产。
 
    * 为&#x200B;**[!UICONTROL Assets指定要包含/排除]**&#x200B;的正则表达式字符串。 例如： `/^(?!.*(logo\.jpg|\.svg)).*$/`从Content Analytics中排除所有徽标JPEG和SVG图像。 确保使用`/`转义正则表达式。
+
+>[!IMPORTANT]
+>
+>如果您有一个使用Javascript且不使用“标记”的现有Web SDK实施，则必须从新创建的“标记”属性中手动删除自动包含的Web SDK扩展。
+
 
 
 #### 现有配置 {#existing-configuration}

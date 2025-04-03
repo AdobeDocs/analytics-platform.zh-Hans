@@ -6,13 +6,13 @@ feature: Content Analytics
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: d835411beba3d40f67d2f93ee76aa5eda6f45041
+exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
+source-git-commit: 795116d41e40bf89ebf31572fb718e2bcb58a6c8
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '499'
 ht-degree: 1%
 
 ---
-
 
 # Content Analytics数据收集
 
@@ -24,11 +24,13 @@ ht-degree: 1%
 本文上下文中使用了以下定义：
 
 * **体验**：体验被定义为整个网页上的文本内容。 对于数据收集，Content Analytics会记录该体验ID。 Content Analytics不会在页面上记录文本。
-* **资源**：图像。 Content Analytics记录资源URL。
-* **相关URL**：基本URL加上驱动页面内容的任何参数。
 * **体验ID**：相关URL和体验版本的唯一组合。
    * 在[配置](configuration.md)中，您指定与任何给定完整URL相关的参数。
-   * 您可以定义使用的[版本标识符](manual.md#versioning)。 对于数据收集，不考虑版本。 仅收集相关的URL。
+   * 您可以定义使用的[版本标识符](manual.md#versioning)。
+* **资源**：图像。 Content Analytics记录资源URL。
+* **资源ID**：资源的URL。
+* **相关URL**：基本URL加上驱动页面内容的任何参数。
+
 
 ## 功能
 
@@ -38,7 +40,7 @@ Content Analytics库在以下情况下收集数据：
 * 页面URL在[Content Analytics扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}中配置，该扩展是包含的标记库的一部分。
 
 
-### Content Analytics事件
+## Content Analytics事件
 
 Content Analytics事件包括：
 
@@ -50,7 +52,15 @@ Content Analytics事件包括：
 * 资产视图（如果有，如果已配置）
 * 资产点击次数（如果有，如果已配置）
 
-#### 记录的查看次数或点击次数
+
+Content Analytics事件将按顺序收集：
+
+1. [录制视图，或单击](#recorded-view-or-click)。
+1. [常规或特定（行为）事件](#regular-or-specific-behaviorial-event)。
+
+Content Analytics确实会通过这种方式收集数据来反映该顺序，而不是收集视图或单击来代替收集紧跟在该视图或单击之后的事件。 这种收集内容分析数据的方式还减少了收集的数据量。 数据的收集。
+
+### 录制的视图或点击
 
 在以下情况下会记录资源视图：
 
@@ -73,26 +83,19 @@ Content Analytics事件包括：
 * 在启用了体验的页面上的链接上发生任何点击。
 
 
-#### 事件已发送
+### 常规或特定（行为）事件
 
-当出现以下两种情况时，将发送Content Analytics事件：
+在Content Analytics上下文中触发常规或特定（行为）事件的触发程序包括：
 
-* 发送内容，发生条件：
-
-   * 将记录资源视图或点击。
-   * 将记录一次体验视图或点击。
-
-* 会触发一个用于发送事件的触发器，此触发器发生于：
-
-   * Web SDK或AppMeasurement发送事件。
-   * 可视性更改为隐藏，例如：
-      * 页面卸载
-      * “切换”选项卡
-      * 最小化浏览器
-      * 关闭浏览器
-      * 锁定屏幕
-   * URL发生更改，从而导致相关的URL被修改。
-   * 资产查看次数超过了32次的批量限制。
+* Web SDK或AppMeasurement发送事件。
+* 可视性更改为隐藏，例如：
+   * 页面卸载
+   * “切换”选项卡
+   * 最小化浏览器
+   * 关闭浏览器
+   * 锁定屏幕
+* URL发生更改，从而导致相关的URL被修改。
+* 资产查看次数超过了32次的批量限制。
 
 
 ## 架构
