@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 89f7d8b388ab8c742712d748813520a51c736003
+source-git-commit: 02d24416bd1f56417005dfa1b693964073fb8a59
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '512'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Content Analytics事件将按顺序收集：
 1. [录制视图，或单击](#recorded-view-or-click)。
 1. [常规或特定（行为）事件](#regular-or-specific-behaviorial-event)。
 
-Content Analytics确实会通过这种方式收集数据来反映该顺序，而不是收集视图或单击来代替收集紧跟在该视图或单击之后的事件。 这种收集内容分析数据的方式还减少了收集的数据量。 数据的收集。
+Content Analytics确实会通过这种方式收集数据来反映该顺序，而不是收集视图或单击来代替收集紧跟在该视图或单击之后的事件。 这种收集内容分析数据的方式还减少了收集的数据量。
 
 ### 录制的视图或点击
 
@@ -71,7 +71,7 @@ Content Analytics确实会通过这种方式收集数据来反映该顺序，而
 出现以下情况时，将记录资产点击次数：
 
 * 已查看资源。
-* 没有根据ACA扩展配置排除该资源。
+* 没有根据Content Analytics扩展配置排除该资源。
 * 直接单击资产（一个链接）以转到另一个页面。
 
 在以下情况下，将记录体验视图：
@@ -95,7 +95,7 @@ Content Analytics确实会通过这种方式收集数据来反映该顺序，而
    * 关闭浏览器
    * 锁定屏幕
 * URL发生更改，从而导致相关的URL被修改。
-* 资产查看次数超过了32次的批量限制。
+* 记录并准备发送的资产查看次数超过了32次。
 
 
 ## 架构
