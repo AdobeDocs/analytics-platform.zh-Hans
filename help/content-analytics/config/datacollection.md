@@ -7,14 +7,16 @@ hide: true
 hidefromtoc: true
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 795116d41e40bf89ebf31572fb718e2bcb58a6c8
+source-git-commit: d4803af9b71ec245f6c4b20e92a4a4c99f235f00
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '510'
 ht-degree: 1%
 
 ---
 
 # Content Analytics数据收集
+
+{{release-limited-testing}}
 
 本文详细介绍了Content Analytics如何收集数据
 
@@ -23,8 +25,8 @@ ht-degree: 1%
 
 本文上下文中使用了以下定义：
 
-* **体验**：体验被定义为整个网页上的文本内容。 对于数据收集，Content Analytics会记录该体验ID。 Content Analytics不会在页面上记录文本。
-* **体验ID**：相关URL和体验版本的唯一组合。
+* **体验**：体验被定义为整个网页上的文本内容。 对于数据收集，Content Analytics会记录基于页面URL的Experience ID。 之后，通过检索服务捕获页面上的文本。
+* **体验ID**：相关URL（基本URL加上驱动页面内容的任何参数）和[体验版本](manual.md#versioning)的唯一组合。
    * 在[配置](configuration.md)中，您指定与任何给定完整URL相关的参数。
    * 您可以定义使用的[版本标识符](manual.md#versioning)。
 * **资源**：图像。 Content Analytics记录资源URL。
@@ -64,7 +66,7 @@ Content Analytics确实会通过这种方式收集数据来反映该顺序，而
 
 在以下情况下会记录资源视图：
 
-* 没有根据ACA扩展配置排除该资源。
+* 没有根据Content Analytics扩展配置排除该资源。
 * 资产占75%。
 * 尚未为此页面记录该资产。
 
@@ -100,7 +102,7 @@ Content Analytics确实会通过这种方式收集数据来反映该顺序，而
 
 ## 架构
 
-Content Analytics数据是根据特定的Experience Platform架构在Content Analytics的数据集中收集的。 引用架构是公开可用的，用于Content Analytics的默认实施。
+Content Analytics数据是根据特定的Experience Platform架构在Content Analytics的数据集中收集的。 引用架构已公开可用：
 
 * [数字资产架构](https://github.com/adobe/xdm/blob/master/components/classes/digital-asset.schema.json)
 * [数字体验架构](https://github.com/adobe/xdm/blob/master/components/classes/digital-experience.schema.json)

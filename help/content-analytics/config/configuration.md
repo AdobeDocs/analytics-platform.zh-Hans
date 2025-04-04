@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: 411cd199e758da57d94faa9efb7f488d05163750
+source-git-commit: d4803af9b71ec245f6c4b20e92a4a4c99f235f00
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 0%
 # 配置内容分析
 
 {{release-limited-testing}}
+
 
 Content Analytics的配置包括以下步骤：
 
@@ -42,8 +43,8 @@ Content Analytics的配置包括以下步骤：
 * 您仔细考虑了以下重要配置选项：
 
    * 您的网站适合体验报告。 只有在满足以下条件时，才可能生成正确的体验报表：
-      * 您只能通过面向公众的URL访问网站内容。 访问网站不需要个性化令牌、Cookie或无法通过URL获得的其他机制。
-      * 您网站上的页面可使用页面URL重现，并且您了解哪些可选URL参数可促进体验。
+      * 必须使用页面URL重现网站上的页面。
+      * 任何给定用户看到的文本内容都可以使用页面URL重现，并且不依赖于Cookie或其他个性化机制。
    * 您已清楚地了解要捕获哪些页面的内容参与分析和见解。
    * 您已清楚地了解要捕获内容参与分析和见解的资产（类型）。
 
