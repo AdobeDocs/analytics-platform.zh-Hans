@@ -4,10 +4,10 @@ title: 历程画布
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 51a6341734163fdd6b994ae9cec53ef034959896
+source-git-commit: d86396a5c02be682c784e0acd4387de3796bda96
 workflow-type: tm+mt
 source-wordcount: '1893'
-ht-degree: 11%
+ht-degree: 8%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_button"
 >title="历程画布"
->abstract="显示人们如何完成或退出一系列接触点。用于具有多个入口点和路径的历程，或分析在 Journey Optimizer 中创建的历程。"
+>abstract="显示人们如何完成或退出一系列接触点。用于具有多个入口点和路径的历程，或分析在Journey Optimizer中创建的历程。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_panel"
 >title="历程画布"
->abstract="分析人们如何完成或退出既定的历程。通过创建灵活的节点和箭头图形来生成用户历程分析，该图形可表示事件、维度项目和过滤器的任意组合。拖动画布上的节点可重新排列历程的事件和条件。当您进行该操作时，数据会相应更新。<br/><br/>有权访问 Adobe Journey Optimizer 的客户可以分析现有的 Journey Optimizer 历程"
+>abstract="分析人们如何完成或退出既定的历程。通过创建灵活的节点和箭头图形来生成用户历程分析，该图形可表示事件、维度项目和过滤器的任意组合。拖动画布上的节点可重新排列历程的事件和条件。当您进行该操作时，数据会相应更新。<br/><br/>有权访问Adobe Journey Optimizer的客户可以分析现有Journey Optimizer历程。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -36,7 +36,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_button"
 >title="历程画布"
->abstract="显示人们如何完成或退出一系列接触点。用于具有多个入口点和路径的历程，或分析在 Journey Optimizer 中创建的历程。"
+>abstract="显示人们如何完成或退出一系列接触点。用于具有多个入口点和路径的历程，或分析在Journey Optimizer中创建的历程。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,7 +45,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_panel"
 >title="历程画布"
->abstract="分析人们如何完成或退出既定的历程。通过创建灵活的节点和箭头图形来生成用户历程分析，该图形可表示事件、维度项目和过滤器的任意组合。拖动画布上的节点可重新排列历程的事件和条件。当您进行该操作时，数据会相应更新。<br/><br/>有权访问 Adobe Journey Optimizer 的客户可以分析现有的 Journey Optimizer 历程"
+>abstract="分析人们如何完成或退出既定的历程。通过创建灵活的节点和箭头图形来生成用户历程分析，该图形可表示事件、维度项目和过滤器的任意组合。拖动画布上的节点可重新排列历程的事件和条件。当您进行该操作时，数据会相应更新。<br/><br/>有权访问Adobe Journey Optimizer的客户可以分析现有Journey Optimizer历程。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -81,7 +81,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 ### 转换率最高的路径 {#conversion-rate-caption}
 
-历程画布中最突出的洞察内容以标题的形式显示在画布本身的顶部。
+历程画布中最突出的insight在画布本身顶部显示为标题。
 
 此标题总结了历程中的所有路径中哪些路径的转化率最高。
 
@@ -91,7 +91,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 当历程包含单个开始节点时，描述如下所示：
 
-![历程画布分析标题单个开始节点](assets/journey-canvas-caption-singlestart.png)
+![历程画布insight标题单起始节点](assets/journey-canvas-caption-singlestart.png)
 
 在解释此标题时，请考虑以下事项：
 
@@ -142,7 +142,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 历程画布对于以下各项至关重要：
 
-* 涉及具有多个入口点和路径的历程的流失分析。
+* Fallout analysis involving journeys with multiple entry points and paths.
 
 * 具有多个入口点和路径的非线性历程，并具有预定义的页面序列。
 
@@ -246,7 +246,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 ## 在历程画布中构建分析
 
-您可以在历程画布中基于Analysis Workspace中可用的任何维度或指标构建分析。 或者，您可以分析在Journey Optimizer中创建的历程。 有关详细信息，请参阅[配置历程画布可视化](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。
+您可以在历程画布中基于Analysis Workspace中可用的任何维度或指标构建分析。 Or, you can analyze journeys that were created in Journey Optimizer. 有关详细信息，请参阅[配置历程画布可视化](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。
 
 
 >[!MORELIKETHIS]
