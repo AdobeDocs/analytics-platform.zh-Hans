@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: d835411beba3d40f67d2f93ee76aa5eda6f45041
+source-git-commit: 3bdde8181ec2a0e507dae907acb3da2b702f5578
 workflow-type: tm+mt
-source-wordcount: '1219'
-ht-degree: 90%
+source-wordcount: '1216'
+ht-degree: 86%
 
 ---
 
@@ -32,34 +32,38 @@ ht-degree: 90%
    + [文档更新](../release-notes/doc-changes.md)
 
 + 开始使用 {#cja-overview}
-   + [Customer Journey Analytics 概述](../getting-started/cja-overview.md)
-   + [快速入门指南](../getting-started/cja-getting-started.md)
-   + [登陆页面](../getting-started/landing.md)
-   + [登陆页面（旧的）](../getting-started/cja-landing-old.md)
-   + [常见问题解答](../getting-started/cja-faq.md)
-   + [比较 Customer Journey Analytics 和 BI 解决方案](../getting-started/cja-vs-bi.md)
-   + [Adobe Customer Journey Analytics 的 AI 助手](../ai-assistant.md)
-   + [Customer Journey Analytics 的数据分析 AI 助手](../data-analysis-ai.md)
+   + Customer Journey Analytics {#cja-b2c-overview}
+      + [概述](../getting-started/cja-overview.md)
+      + [快速入门指南](../getting-started/cja-getting-started.md)
+      + [登陆页面](../getting-started/landing.md)
+      + [常见问题解答](../getting-started/cja-faq.md)
+      + [与BI解决方案比较](../getting-started/cja-vs-bi.md)
+      + [AI 助手](../ai-assistant.md)
+      + [Data Insights Agent](../data-analysis-ai.md)
+   + Customer Journey Analytics B2B edition {#cja-b2b}
+      + [概述](/help/getting-started/cja-b2b-edition.md)
+      + [B2B概念和功能](/help/getting-started/cja-b2b-concepts-features.md)
+      + [快速入门指南](/help/getting-started/cja-b2b-quick-start-guide.md)
 
-+ Customer Journey Analytics 和 Adobe Analytics {#compare-aa-cja}
-   + 升级到 Customer Journey Analytics {#upgrade-to-cja}
++ Customer Journey Analytics和Adobe Analytics {#compare-aa-cja}
+   + 升级到 Customer Journey Analytics  {#upgrade-to-cja}
       + [快速入门](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
       + [选择您的升级路径](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
       + [向平台发送数据](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + [保留历史数据](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
       + [建议的升级过程](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
-      + 架构师并创建架构{#schema}
+      + 架构师和创建架构 {#schema}
          + [构建您的架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
          + [创建您的架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
          + [使用现有架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
-      + 创建数据流{#create-datastream}
+      + 创建数据流 {#create-datastream}
          + [创建数据流](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
          + [添加平台即服务](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
-      + 创建数据集{#create-datasets}
+      + 创建数据集 {#create-datasets}
          + [创建数据集](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
          + [创建用于分类的查找数据集](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
          + [监测数据集引入](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
-      + 使用标记{#create-tags}实施Web SDK
+      + 使用标记实施Web SDK {#create-tags}
          + [为您的属性创建标记](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
          + [将 Web SDK 扩展添加到您的标记中](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
          + [为 Web SDK 扩展实施加载器标记](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
@@ -71,17 +75,17 @@ ht-degree: 90%
       + [创建营销渠道派生字段](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
       + [验证数据流](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
       + [设置流媒体收藏集](/help/getting-started/cja-upgrade/cja-upgrade-streaming-media.md)
-      + 使用Analytics源连接器{#historical-data-source-connector}保留历史数据
+      + 使用Analytics Source Connector保留历史数据 {#historical-data-source-connector}
          + [为 Analytics 源连接器创建 XDM 架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
          + [创建 Analytics 源连接器并映射字段](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
          + [将 Analytics 源连接器数据集添加到连接](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
       + [评估何时禁用Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
       + [禁用 Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
-      + 替代升级方法{#alternative-upgrade-methods}
+      + 替代升级方法 {#alternative-upgrade-methods}
          + [使用AppMeasurement数据收集](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)
          + [发送数据层](/help/getting-started/cja-upgrade/cja-upgrade-alternative-data-layer.md)
          + [Analytics源连接器](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)
-      + 其他升级方案{#other-upgrade-scenarios}
+      + 其他升级方案 {#other-upgrade-scenarios}
          + [从 Analytics 源连接器移至 Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
          + [从非Adobe Analytics解决方案升级](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
       + 其他信息 {#additional-information}
@@ -105,7 +109,7 @@ ht-degree: 90%
 
 + 数据摄取 {#cja-data-ingestion}
    + [数据摄取概述](../data-ingestion/data-ingestion.md)
-   + 摄取并使用快速入门指南{#ingest-use-guides}
+   + 摄取和使用快速入门指南{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + Experience Platform Edge Network {#edge-network}
          + [Web SDK](../data-ingestion/aepwebsdk.md)
@@ -127,7 +131,7 @@ ht-degree: 90%
    + [数据视图概述](../data-views/data-views.md)
    + [创建或编辑数据视图](../data-views/create-dataview.md)
    + [会话设置](../data-views/session-settings.md)
-   + 组件设置{#component-settings}
+   + 组件设置 {#component-settings}
       + [组件设置概述](../data-views/component-settings/overview.md)
       + [归因](../data-views/component-settings/attribution.md)
       + [行为](../data-views/component-settings/behavior.md)
@@ -148,12 +152,12 @@ ht-degree: 90%
 + 工具 {#tools}
    + 资产转移 {#asset-transfer}
       + [转移资产](../tools/asset-transfer/transfer-assets.md)
-   + 产品使用情况 {#product-usage}
+   + 产品使用 {#product-usage}
       + [概述](../tools/product-usage/usage-overview.md)
       + [数据设置](../tools/product-usage/data-settings.md)
       + [“选择禁用”设置](../tools/product-usage/opt-out-settings.md)
 
-+ Workspace 项目 {#cja-workspace}
++ Workspace 项目  {#cja-workspace}
    + [Analysis Workspace 概述](../analysis-workspace/home.md)
    + [执行基本分析](../analysis-workspace/perform-basic-analysis.md)
    + [执行高级分析](../analysis-workspace/perform-adv-analysis.md)
@@ -162,7 +166,7 @@ ht-degree: 90%
       + [创建项目](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [打开项目](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [保存项目](../analysis-workspace/build-workspace-project/save-projects.md)
-      + Workspace 中的文件夹 {#workspace-folders}
+      + Workspace中的文件夹 {#workspace-folders}
          + [关于文件夹](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [创建文件夹和子文件夹](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [管理文件夹](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
@@ -186,7 +190,7 @@ ht-degree: 90%
             + [动态项和静态项](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
          + [排序和过滤表格](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
          + [Workspace 总计](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
-      + 同类群组表{#cohort-table}
+      + 同类群组表 {#cohort-table}
          + [概述](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [配置](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
          + [用例](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
@@ -230,7 +234,7 @@ ht-degree: 90%
       + [媒体播放耗时](../analysis-workspace/c-panels/media-playback-time-spent.md)
       + [下一项或上一项](../analysis-workspace/c-panels/next-previous.md)
       + [快速洞察](../analysis-workspace/c-panels/quickinsight.md)
-   + 策划、共享和计划项目{#curate-share}
+   + 策划、共享和计划项目 {#curate-share}
       + [概述](../analysis-workspace/curate-share/send-schedule-files.md)
       + [策划项目](../analysis-workspace/curate-share/curate.md)
       + [共享项目](../analysis-workspace/curate-share/share-projects.md)
@@ -251,16 +255,16 @@ ht-degree: 90%
       + [统计技术](../analysis-workspace/c-forecast/statistics-forecasting.md)
    + [目录](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [用户偏好设置](../analysis-workspace/user-preferences.md)
-   + Workspace 常见问题解答及更多信息 {#workspace-faq}
+   + Workspace常见问题解答等 {#workspace-faq}
       + [常见问题解答](../analysis-workspace/workspace-faq/faq.md)
       + [错误消息](../analysis-workspace/workspace-faq/error-messages.md)
       + [限制](../analysis-workspace/workspace-faq/aw-limitations.md)
       + [管理要求](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [辅助功能](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
-+ 内容分析{#content-analytics}
++ 内容分析 {#content-analytics}
    + [概述](/help/content-analytics/content-analytics.md)
-   + 报告{#report}
+   + 报告 {#report}
       + [概述](/help/content-analytics/report/report.md)
       + [组件](/help/content-analytics/report/components.md)
    + 配置 {#configuration}
@@ -269,7 +273,7 @@ ht-degree: 90%
       + [手动配置](/help/content-analytics/config/manual.md)
       + [数据收集](/help/content-analytics/config/datacollection.md)
 
-+ Analytics 功能板 {#cja-dashboards}
++ Analytics功能板 {#cja-dashboards}
    + [概述](../mobile-app/home.md)
    + [策划人任务](../mobile-app/curator.md)
    + [创建移动记分卡](../mobile-app/create-scorecard.md)
@@ -304,7 +308,7 @@ ht-degree: 90%
       + [查看注释](../components/annotations/view-annotations.md)
       + [移动注释](../components/annotations/mobile-annotations.md)
    + [计划的项目](../components/scheduled-projects-manager.md)
-   + 受众{#audiences}
+   + 受众 {#audiences}
       + [受众概述](../components/audiences/audiences-overview.md)
       + [创建并发布受众](../components/audiences/publish.md)
       + [管理受众](../components/audiences/manage.md)
@@ -331,7 +335,7 @@ ht-degree: 90%
       + [运算符](../components/filters/operators.md)
    + 计算量度 {#cja-calcmetrics}
       + [概述](../components/calc-metrics/calc-metr-overview.md)
-      + 计算量度工作流 {#cm-workflow}
+      + 计算量度工作流程 {#cm-workflow}
          + [创建计算量度](../components/calc-metrics/cm-workflow/cm-workflow.md)
          + [生成计算量度](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [查找量度](../components/calc-metrics/cm-workflow/cm-finding.md)
@@ -403,7 +407,7 @@ ht-degree: 90%
    + [创建和管理拼合数据集](/help/stitching/stitching-ui.md)
    + [常见问题解答](/help/stitching/faq.md)
 
-+ Adobe 集成 {#integrations}
++ Adobe集成 {#integrations}
    + [概述](/help/integrations/overview.md)
    + [集成 Adobe Analytics](/help/integrations/aa.md)
    + [集成 Target](/help/integrations/at.md)
@@ -418,14 +422,14 @@ ht-degree: 90%
 
 + 用例 {#cja-usecases}
    + [Customer Journey Analytics 用例](../use-cases/cja-usecases.md)
-   + 第三方数据{#third-party}
+   + 第三方数据 {#third-party}
       + [概述](/help/use-cases/third-party/overview.md)
       + Google Analytics {#ga}
          + [从 Google Analytics 迁移数据](/help/use-cases/third-party/ga/overview.md)
          + [引入 Google Analytics 历史数据](/help/use-cases/third-party/ga/backfill.md)
          + [配置流式处理 Google Analytics 数据](/help/use-cases/third-party/ga/streaming.md)
          + [报告 Google Analytics 数据](/help/use-cases/third-party/ga/report.md)
-      + 量子量度{#qm}
+      + 量子量度 {#qm}
          + [概述](/help/use-cases/third-party/quantum-metric/qm-overview.md)
          + [收集会话Id](/help/use-cases/third-party/quantum-metric/collect-session-id.md)
          + [时间会话重播](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
@@ -451,10 +455,10 @@ ht-degree: 90%
    + 跨渠道数据 {#cross-channel}
       + [跨渠道分析数据](../use-cases/cross-channel/cross-channel.md)
       + [导入呼叫中心数据和网站数据](../use-cases/cross-channel/call-center.md)
-   + Adobe Analytics 数据 {#aa-data}
+   + Adobe Analytics数据 {#aa-data}
       + [使用“营销渠道”维度](../use-cases/aa-data/marketing-channels.md)
       + [将报告包与不同的架构相结合](../use-cases/aa-data/combine-report-suites.md)
-   + 复杂的数据 {#complex-data}
+   + 复杂数据 {#complex-data}
       + [使用对象数组](../use-cases/object-arrays.md)
    + 拼合 {#stitching}
       + [共享设备](/help/use-cases/stitching/shared-devices.md)
