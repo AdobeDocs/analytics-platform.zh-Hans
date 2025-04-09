@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
-source-wordcount: '1900'
-ht-degree: 99%
+source-wordcount: '2120'
+ht-degree: 89%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 99%
 
 >[!BEGINSHADEBOX]
 
-查看![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建或编辑演示视频的数据视图](https://video.tv.adobe.com/v/35110/?quality=12&learn=on){target="_blank"}。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建或编辑数据视图](https://video.tv.adobe.com/v/35110/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -34,9 +34,22 @@ ht-degree: 99%
 
 要配置新的或现有的数据视图：
 
+>[!BEGINTABS]
+
+>[!TAB 标准]
+
+![配置数据视图](assets/dataview-configure.png)
+
+>[!TAB B2B edition]
+
+![配置数据视图B2B](assets/dataview-configure-b2b.png)
+
+>[!ENDTABS]
+
+
 1. 选择&#x200B;**[!UICONTROL “配置”]**&#x200B;选项卡（如果尚未激活）。
 
-   ![配置数据视图](assets/dataview-configure.png)
+
 1. 指定[!UICONTROL “设置”]、[!UICONTROL “容器”]和[!UICONTROL “日程表”]详细信息（见下文）。
 1. 选择&#x200B;**[!UICONTROL “保存并继续”]**，以继续配置新的或现有的数据视图。选择&#x200B;**[!UICONTROL “保存”]**，以保存现有数据视图的配置。
 
@@ -56,10 +69,10 @@ ht-degree: 99%
 
 | 设置 | 描述 |
 | --- | --- |
-| [!UICONTROL **连接**] | 此字段将数据视图链接到您之前建立的连接，其中包含一个或多个 Adobe Experience Platform 数据集。 |
-| [!UICONTROL **名称**] | 必填。数据视图的名称。此值显示在 Analysis Workspace 右上角的下拉列表中。 |
-| [!UICONTROL **外部 ID**] | 必填。您可以在外部源（例如商业智能工具）中使用的数据视图的名称。默认值为 `unspecified`。如果您未指定外部 ID，则名称将从数据视图的名称生成，并用下划线替换空格。 |
-| [!UICONTROL **描述**] | 可选。Adobe 建议输入详细描述，以便用户了解为什么存在该数据视图以及为谁设计了它。 |
+| **[!UICONTROL 连接]** | 此字段将数据视图链接到您之前建立的连接，其中包含一个或多个 Adobe Experience Platform 数据集。 |
+| **[!UICONTROL 名称]** | 必填。数据视图的名称。此值显示在 Analysis Workspace 右上角的下拉列表中。 |
+| **[!UICONTROL 外部 ID]** | 必填。您可以在外部源（例如商业智能工具）中使用的数据视图的名称。默认值为 `unspecified`。如果您未指定外部 ID，则名称将从数据视图的名称生成，并用下划线替换空格。 |
+| **[!UICONTROL 描述]** | 可选。Adobe 建议输入详细描述，以便用户了解为什么存在该数据视图以及为谁设计了它。 |
 
 {style="table-layout:auto"}
 
@@ -92,9 +105,13 @@ ht-degree: 99%
 
 | 设置 | 描述 |
 | --- | --- |
-| [!UICONTROL **人员容器名称**] | [!UICONTROL 人员]（默认）。[!UICONTROL 人员]容器包括人员在指定的时间范围内的每个会话和事件。如果您的组织使用不同的用语（例如，“访客”或“用户”），可在此处将该容器重命名。 |
-| [!UICONTROL **会话容器名称**] | [!UICONTROL 会话]（默认）。通过[!UICONTROL 会话]容器可以识别页面交互、营销活动或特定会话的转化。可将此容器重命名为“访问”或您的组织更喜欢的任何其他用语。 |
-| [!UICONTROL **事件容器名称**] | [!UICONTROL 事件]（默认）。[!UICONTROL 事件]容器定义数据集中的个别事件。如果您的组织使用不同的用语（例如，“点击”或“页面查看”），可在此处将该容器重命名。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL 全局帐户容器名称&#x200B;]** | `Global Account` （默认）。 [!UICONTROL 全局帐户]容器包含指定时间段内全局帐户的每个会话和事件。 如果您的组织使用其他术语，可在此处重命名容器。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL 帐户容器名称&#x200B;]** | `Account` （默认）。 [!UICONTROL 帐户]容器包含指定时间段内帐户的每个会话和事件。 如果您的组织使用其他术语，可在此处重命名容器。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL 机会容器名称&#x200B;]** | `Opportunity` （默认）。 [!UICONTROL 机会]容器包含指定时间段内机会的每个会话和事件。 如果您的组织使用其他术语，可在此处重命名容器。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL 购买团体容器名称&#x200B;]** | `Buying Group` （默认）。 [!UICONTROL 购买群组]容器包括指定时间段内购买群组的每个会话和事件。 如果您的组织使用其他术语，可在此处重命名容器。 |
+| **[!UICONTROL 人员容器名称]** | `Person` （默认）。 [!UICONTROL 人员]容器包括人员在指定的时间范围内的每个会话和事件。如果您的组织使用不同的用语（例如，“访客”或“用户”），可在此处将该容器重命名。 |
+| **[!UICONTROL 会话容器名称]** | `Session` （默认）。 通过[!UICONTROL 会话]容器可以识别页面交互、营销活动或特定会话的转化。可将此容器重命名为“访问”或您的组织更喜欢的任何其他用语。 |
+| **[!UICONTROL 事件容器名称]** | `Event` （默认）。 [!UICONTROL 事件]容器定义数据集中的个别事件。如果您的组织使用不同的用语（例如，“点击”或“页面查看”），可在此处将该容器重命名。 |
 
 {style="table-layout:auto"}
 
@@ -178,5 +195,11 @@ ht-degree: 99%
 ### 会话设置
 
 决定在会话到期并开始新会话之前，事件之间无活动的时段。时段为必填。还可选择在事件包含特定量度时强制开始新会话。有关更多详细信息，请参阅[会话设置](session-settings.md)。
+
+### 数据预览
+
+数据预览会将此数据视图的数据与连接的数据进行比较（对于各种容器）。 预览百分比基于过去90天内的连接总数。
+
+如果未加载预览，则您的连接可能仍在回填。
 
 指定所有需要的设置后，单击&#x200B;**[!UICONTROL 保存并完成]**。

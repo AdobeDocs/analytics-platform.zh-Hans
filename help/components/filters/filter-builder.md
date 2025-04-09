@@ -4,9 +4,9 @@ title: 构建过滤器
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1570'
 ht-degree: 10%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 10%
 您可以配置定义的类型和范围：
 
 1. 要指定定义的类型，请指定希望生成是包含还是排除定义。 选择![设置](/help/assets/icons/Setting.svg) **[!UICONTROL 选项]**，然后从下拉列表中选择&#x200B;**[!UICONTROL 包含]**&#x200B;或&#x200B;**[!UICONTROL 排除]**。
-1. 要指定定义的范围，请从&#x200B;**[!UICONTROL 包含]**&#x200B;或&#x200B;**[!UICONTROL 排除]**&#x200B;下拉菜单中选择是希望定义的范围是&#x200B;**[!UICONTROL 事件]**、**[!UICONTROL 会话]**&#x200B;还是&#x200B;**[!UICONTROL 人员]**。
+1. 要指定定义的范围，请从&#x200B;**[!UICONTROL 包含]**&#x200B;或&#x200B;**[!UICONTROL 排除]**&#x200B;下拉列表中进行选择，选择您希望定义的范围是&#x200B;**[!UICONTROL 事件]**、**[!UICONTROL 会话]**、**[!UICONTROL 人员]**、**[!UICONTROL 全局帐户]**[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}、**[!UICONTROL 帐户]**[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}、**[!UICONTROL 机会]**[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}还是&#x200B;**[!UICONTROL 购买小组]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 您以后始终可以更改这些设置。
 
@@ -113,7 +113,7 @@ ht-degree: 10%
 * 要将另一个组件添加到容器，请将组件面板中的组件拖放到容器中。 使用蓝色插入线作为指导。
 * 要在容器外部添加另一个组件，请从组件面板中将组件拖放到容器外部（但位于主定义容器内）中。 使用蓝色插入线作为指导。
 * 要修改容器中的组件之间、容器之间或容器与组件之间的逻辑，请选择适当的&#x200B;**[!UICONTROL And]**、**[!UICONTROL Or]**、**[!UICONTROL Then]**。 选择“Then”时，将该过滤器转换为顺序过滤器。 有关详细信息，请参阅[创建顺序筛选器](seg-sequential-build.md)。
-* 若要切换容器级别，请选择![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL 事件]**、![访问](/help/assets/icons/Visit.svg) **[!UICONTROL 会话]**&#x200B;或![用户](/help/assets/icons/User.svg) **[!UICONTROL 人员]**。
+* 若要切换容器级别，请选择![全球](/help/assets/icons/Globe.svg) **[!UICONTROL 全局帐户]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}，![帐户](/help/assets/icons/Account.svg) **[!UICONTROL 帐户]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}，![机会](/help/assets/icons/Opportunity.svg) **[!UICONTROL 机会]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}，![买方团体](/help/assets/icons/BuyingGroup.svg) **[!UICONTROL 买方团体]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}，![网页](/help/assets/icons/WebPage.svg) **[!UICONTROL 事件]**，![访问](/help/assets/icons/Visit.svg) **[!UICONTROL 会话]**&#x200B;或![用户](/help/assets/icons/User.svg) **[!UICONTROL 人员]**。
 
 您可以在容器中使用![Setting](/help/assets/icons/Setting.svg)进行以下操作：
 
@@ -135,7 +135,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckout](/help/assets/icons/VideoCheckedOut.svg)[区段中的滚动日期范围](https://video.tv.adobe.com/v/25403/?quality=12&learn=on){target="_blank"}。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [区段中的滚动日期范围](https://video.tv.adobe.com/v/25403/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 

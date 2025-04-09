@@ -5,10 +5,10 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 80%
+source-wordcount: '1001'
+ht-degree: 73%
 
 ---
 
@@ -84,20 +84,26 @@ ht-degree: 80%
   | 第一个已知 | C | C | C | C | C |
   | 最后一个已知 | A | A | A | A | A |
 
+
 ## [!UICONTROL 有效期限]设置
 
 关于可用的有效期限设置的详细信息。
 
 * **会话**：在给定会话后到期。默认有效期限时段。
-* **人员**：在报表时段结束时到期。
+* **人员报告窗口**：在报告窗口结束时过期。
+* **全局帐户报告窗口** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}：在报告窗口结束时过期。
+* **帐户报告窗口** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}：在报告窗口结束时过期。
+* **机会报告窗口** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}：在报告窗口结束时过期。
+* **购买群组报告窗口** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}：报告窗口结束时过期。
 * **自定义时间**：在指定时段（最多 90 天）后过期。仅对“原有”和“最近”分配模型有此有效期限选项。在使用基于时间的有效期限时，将考虑报告时段（最长 90 天）开始之前的值。
 * **量度**：当在事件中看到此量度时，请立即使维度中的保留值过期。 可将任何指标用作此维度的有效期限结束。仅对“原有”和“最近”分配设置有此有效期限选项。
+
 
 ## [!UICONTROL 绑定维度]
 
 一个下拉列表，可让您将维度值的持久性绑定到另一个维度中的维度值。 有效选项包括数据视图中包含的其他维度。
 
-有关如何有效使用绑定维度的示例，请参阅Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md)中的[使用绑定维度和量度。
+有关如何有效使用绑定维度的示例，请参阅[在Customer Journey Analytics中使用绑定维度和量度](../../use-cases/data-views/binding-dimensions-metrics.md)。
 
 
 >[!BEGINSHADEBOX]
@@ -113,4 +119,4 @@ ht-degree: 80%
 
 此设置仅在对象数组中的绑定维度低于组件时显示。当绑定量度显示在事件中时，维度值会从事件级别维度向下复制到绑定维度的较低架构级别。
 
-有关如何有效使用绑定量度的详细信息，请参阅[在Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md)中使用绑定维度和量度下的第二个示例。
+有关如何有效使用绑定维度的更多信息，请参阅[在Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md)中使用绑定维度和量度下的第二个示例。
