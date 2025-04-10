@@ -4,9 +4,9 @@ title: 历程画布
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: d86396a5c02be682c784e0acd4387de3796bda96
+source-git-commit: 3c9827c4930568edb2022c699585f716a8ca72fe
 workflow-type: tm+mt
-source-wordcount: '1893'
+source-wordcount: '1988'
 ht-degree: 8%
 
 ---
@@ -142,7 +142,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 历程画布对于以下各项至关重要：
 
-* Fallout analysis involving journeys with multiple entry points and paths.
+* 涉及具有多个入口点和路径的历程的流失分析。
 
 * 具有多个入口点和路径的非线性历程，并具有预定义的页面序列。
 
@@ -192,9 +192,21 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 ### Journey Optimizer和历程画布之间的同步
 
-在历程画布中创建Journey Optimizer旅程的分析后，数据仅在一个方向上同步，从Journey Optimizer到历程画布。 这意味着对历程画布中的旅程所做的更改绝不会反映在Journey Optimizer中。
+请考虑以下行为来了解Journey Optimizer和历程画布之间的同步：
 
-此外，仅当历程未在历程画布](#differences-after-modifying-a-journey-in-journey-canvas)中进行重大修改时，才对Journey Optimizer中的历程所做的更改同步到历程画布[。 在历程画布中修改旅程后，您对Journey Optimizer中的旅程所做的任何更改都不会反映在历程画布中。 若要查看在历程画布中反映的更改，您可以在历程画布](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)中删除并重新创建历程[。
+* **数据同步仅是单向的**
+
+  在历程画布中创建Journey Optimizer旅程的分析后，数据仅在一个方向上同步，从Journey Optimizer到历程画布。 这意味着对历程画布中的旅程所做的更改绝不会反映在Journey Optimizer中。
+
+* **在历程画布中修改历程将停止同步**
+
+  仅当历程未在历程画布](#differences-after-modifying-a-journey-in-journey-canvas)中进行重大修改时，才对Journey Optimizer中的历程所做的更改与历程画布[同步。 在历程画布中修改旅程后，您对Journey Optimizer中的旅程所做的任何更改都不会反映在历程画布中。 若要查看在历程画布中反映的更改，您可以在历程画布](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)中删除并重新创建历程[。
+
+* **使用“与任何人共享”链接时，要求在Customer Journey Analytics中进行更改后将该项目保存在Journey Optimizer中**
+
+  使用“与任何人共享”链接时，在Journey Optimizer中所做的更改不会反映在历程画布中，直到项目保存在Customer Journey Analytics中。
+
+  有关“与任何人共享”链接的更多信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（不再需要共享）](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required)。
 
 ### 在历程画布中修改旅程后的差异 {#differences-after-modifying}
 
@@ -246,7 +258,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 ## 在历程画布中构建分析
 
-您可以在历程画布中基于Analysis Workspace中可用的任何维度或指标构建分析。 Or, you can analyze journeys that were created in Journey Optimizer. 有关详细信息，请参阅[配置历程画布可视化](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。
+您可以在历程画布中基于Analysis Workspace中可用的任何维度或指标构建分析。 或者，您可以分析在Journey Optimizer中创建的历程。 有关详细信息，请参阅[配置历程画布可视化](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。
 
 
 >[!MORELIKETHIS]

@@ -4,7 +4,7 @@ description: 了解过滤器的用途以及如何创建简单的过滤器。
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 5fbb228fc02304be2246f0b49cb49de7f160b227
+source-git-commit: 392ba2b9cfe090901c3dac12459f9bd8d51fdca7
 workflow-type: tm+mt
 source-wordcount: '1423'
 ht-degree: 8%
@@ -20,7 +20,7 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 
 - 属性（浏览器类型、设备、访问次数、国家/地区、性别）、
 - 交互（促销活动、关键词搜索、搜索引擎）、
-- 退出和登录(来自Facebook、定义的登陆页、反向链接域、地理围栏事件的人员)，
+- 退出和登录（来自Facebook、定义的登陆页面、反向链接域、地理围栏事件的人员），
 - 自定义变量（表单字段、定义的类别、客户ID）、
 - 和其他标准。
 
@@ -62,7 +62,7 @@ Customer Journey Analytics 让您可以构建、管理、共享强大集中的�
 
 >[!IMPORTANT]
 >
->您必须具有&#x200B;**Select**&#x200B;包才能创建跨渠道顺序过滤器。 如果您不确定您拥有哪个Customer Journey Analytics包，请联系您的管理员。
+>您必须具有&#x200B;**Select**&#x200B;包才能创建跨渠道顺序过滤器。 如果您不确定自己拥有哪个Customer Journey Analytics包，请联系您的管理员。
 
 通过顺序过滤器，您可以根据导航（网站中的页面查看次数、与移动应用程序中场景的交互或使用机顶盒上的菜单）来识别数据（人员、会话、事件）。 顺序过滤器可帮助您识别（例如）一个人喜欢什么，以及一个人避开什么。 可以使用Then逻辑运算符定义顺序过滤器。 有关详细信息，请参阅[顺序筛选器](seg-sequential-build.md)。
 
