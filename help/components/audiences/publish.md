@@ -4,10 +4,10 @@ description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 20ccc42c902cbcadb509147352a5681fab9e44e0
+source-git-commit: dab355e2934689afc06b9228ac5caf357b4ae4e6
 workflow-type: tm+mt
-source-wordcount: '2350'
-ht-degree: 15%
+source-wordcount: '1973'
+ht-degree: 18%
 
 ---
 
@@ -169,38 +169,38 @@ Customer Journey Analytics会从已发布的受众中获取所有命名空间和
 
 有关在Platform中使用受众的更多信息，请参阅Experience Platform文档的[区段生成器UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)中的[受众](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)部分。
 
-### 了解Customer Journey Analytics和Real-Time Customer Data Platform之间的受众计数差异
+<!---### Understand discrepancies in audience counts between Customer Journey Analytics and Real-Time Customer Data Platform
 
-Customer Journey Analytics和Real-Time Customer Data Platform之间可能存在受众计数差异。 以下几点详细说明了这些差异：
+Discrepancies in audience counts may occur between Customer Journey Analytics and Real-Time Customer Data Platform. The points below provide a detailed explanation of these differences:
 
-![有关Customer Journey Analytics与Real-Time CDP之间受众差异的信息图表。](/help/components/audiences/assets/infographic-cja-rtcdp.png)
+![Infographic on audience differences between Customer Journey Analytics and Real-Time CDP.](/help/components/audiences/assets/infographic-cja-rtcdp.png)
 
-**概率计数与确定性计数**
+**Probabilistic versus deterministic counts**
 
-两个应用程序计算受众会员资格的方法有所不同，如下所述。
+The methodology by which audience membership numbers are being calculated differs between the two apps, as described below.
 
-* **Customer Journey Analytics**： Customer Journey Analytics中的&#x200B;**[!UICONTROL 总人数]**&#x200B;指标是一个估计值。 这意味着计数是基于受众规则的估计值，并且可以在刷新间隔之间更改。
-* **Real-Time Customer Data Platform**： Real-Time Customer Data Platform中的计数是确定性的，基于每日评估作业，并在受众完成发布到受众门户时修复。
+*  **Customer Journey Analytics**: The **[!UICONTROL Total People]** metric in Customer Journey Analytics is an estimated value. This means that the count is an estimate based on the rules of the audience and it can change between refresh intervals.
+*  **Real-Time Customer Data Platform**: The count in Real-Time Customer Data Platform is deterministic, based on daily evaluation jobs, and fixed at the time the audience finishes publishing into the audience portal. 
 
-**发布间隔和速率**
+**Publishing interval and rate**
 
-受众以每秒1500条记录(RPS)的速率发布到Real-Time Customer Data Platform。 例如，拥有2000万成员的受众将大约需要3.7小时才能完全发布（2000万/1500 RPS/3600秒/小时）。 在此期间，两个应用程序之间的受众成员资格可能会有所不同。
+Audiences publish to Real-Time Customer Data Platform at a rate of 1500 records per second (RPS). For example, an audience of 20 million members will take approximately 3.7 hours to fully publish (20M / 1500 RPS / 3600 seconds per hour). During this time, differences in audience membership between the two apps are likely.
 
-**配置文件碎片**
+**Profile fragmentation**
 
-如果从Customer Journey Analytics导入的用户档案在Real-Time Customer Data Platform中已存在，则不会将其计为新的用户档案。 这会导致Real-Time Customer Data Platform中的配置文件计数低于预期。
+If profiles imported from Customer Journey Analytics already exist in Real-Time Customer Data Platform, they are not counted as new profiles. This can lead to lower-than-expected profile counts in Real-Time Customer Data Platform.
 
-**批处理与流式受众**
+**Batch versus streaming audiences**
 
-Customer Journey Analytics受众不包含在每日批次评估作业中，并在下一个发布间隔之前保持固定状态。 相反，Real-Time Customer Data Platform中的其他批量受众每24小时重新评估一次。
+Customer Journey Analytics audiences are not included in the daily batch evaluation job and remain fixed until the next publish interval. In contrast, other batch audiences in Real-Time Customer Data Platform are re-evaluated every 24 hours.
 
-### 要记住的关键要点
+### Key takeaways to remember
 
-* Customer Journey Analytics中的&#x200B;**估计计数**：了解Customer Journey Analytics中的&#x200B;**[!UICONTROL 总人数]**&#x200B;计数是一个估计值，可能会因流式传输数据和身份行为而有所不同。
-* Real-Time Customer Data Platform中的&#x200B;**确定性计数**： Real-Time Customer Data Platform中的计数是固定的，在下一个发布间隔之前不会更改。
-* **配置文件碎片**：请注意，从Customer Journey Analytics导入时，Real-Time Customer Data Platform中的现有配置文件可能不会影响新的配置文件计数。
+* **Estimated counts in Customer Journey Analytics**: Understand that the **[!UICONTROL Total People]** count in Customer Journey Analytics is an estimate and can vary due to streaming data and identity behaviors.
+* **Deterministic counts in Real-Time Customer Data Platform**: The count in Real-Time Customer Data Platform is fixed and does not change until the next publish interval.
+* **Profile Fragmentation**: Be aware that existing profiles in Real-Time Customer Data Platform may not contribute to new profile counts when importing from Customer Journey Analytics.
 
-通过清楚地区分这些方面，您可以更好地了解和管理Customer Journey Analytics和Real-Time Customer Data Platform中的受众数据。
+By clearly differentiating these aspects, you can better understand and manage your audience data across Customer Journey Analytics and Real-Time Customer Data Platform.--->
 
 ## 常见问题解答 {#faq}
 
