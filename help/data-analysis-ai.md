@@ -7,9 +7,9 @@ feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: dff6355714f4e58917ccd995662e4fbae34ec69c
+source-git-commit: a9ad08ea053b1213ac98d3e77be3d4816c0999bf
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1878'
 ht-degree: 3%
 
 ---
@@ -58,7 +58,7 @@ AI助手中的![数据分析代理](assets/cja-ai-asst-da.gif)
    1. 选择要为其提供[!UICONTROL AI助手：产品知识]访问权限的产品配置文件的标题。
    1. 在特定产品配置文件中，选择&#x200B;**[!UICONTROL 权限]**。
    1. 选择![编辑](/help/assets/icons/Edit.svg)以编辑&#x200B;**[!UICONTROL 报告工具]**。
-   1. 选择![AddCircle](/help/assets/icons/AddCircle.svg)以将&#x200B;**AI助手：数据可视化**&#x200B;添加到&#x200B;**[!UICONTROL 包含的权限项]**。
+   1. 选择![AddCircle](/help/assets/icons/AddCircle.svg)以将&#x200B;**AI助手：产品知识**&#x200B;和&#x200B;**AI助手：数据分析**&#x200B;添加到&#x200B;**[!UICONTROL 包含的权限项]**。
 
       ![添加权限](assets/ai-assistant-permissions.png)。
 
@@ -74,7 +74,7 @@ AI助手中的![数据分析代理](assets/cja-ai-asst-da.gif)
 
 3. 在项目页面顶部的横幅中选择&#x200B;**[!UICONTROL 空白项目]**&#x200B;以打开一个新的空白项目。
 
-4. 确保为面板选择的数据视图与为Beta测试启用数据分析代理的数据视图相同。
+4. 确保为面板选择的数据视图与为Beta测试启用的Data Insights Agent数据视图相同。
 
    如果您不确定，请联系Beta Slack渠道。
 
