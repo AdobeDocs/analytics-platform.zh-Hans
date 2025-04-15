@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
+source-git-commit: 1a003b38ef26eb811b19cd091c6e089f33ddb6f6
 workflow-type: tm+mt
-source-wordcount: '1919'
+source-wordcount: '1918'
 ht-degree: 28%
 
 ---
@@ -148,10 +148,10 @@ Adobe将根据当地和国际法律处理隐私请求。 Adobe 提供了 [Adobe 
 |  | 2 | ts2 | 123 | ecid | Alex | CustId |
 
 
-| 事件数据集 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 |
+| 事件数据集 | Id | timestamp | 持久ID | 永久命名空间 | 临时id | 瞬态命名空间 |
 |:---:|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ecid | | |
-| ![删除大纲](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
+| ![删除大纲](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~上下浮动~~ | ~~CustId~~ |
 | | 3 | ts2 | 123 | ecid | Alex | CustId |
 
 
@@ -179,7 +179,7 @@ Adobe将根据当地和国际法律处理隐私请求。 Adobe 提供了 [Adobe 
 
 +++ 如果一个或多个事件中的临时ID字段具有占位符值（如`Undefined`），会发生什么情况？
 
-务必要谨慎，当将拼合应用于将占位符值用于临时ID的数据时，会出现“人员折叠”。 在下面的示例表中，源自于CRM系统数据集的未定义人员ID被填充为“Undefined”值，从而导致人员的表示不正确。
+请小心“人员崩溃”，在将拼接应用于使用临时ID占位符值的数据时会发生这种情况。 在下面的示例表中，源自于CRM系统数据集的未定义人员ID被填充为“Undefined”值，从而导致人员的表示不正确。
 
 | 事件 | 时间戳 | 永久性ID(Cookie ID) | 临时ID（登录ID） | 拼合ID（重播后） |
 |---|---|---|---|---|
@@ -223,9 +223,9 @@ Customer Journey Analytics和Adobe Analytics中的其他指标可能类似。 �
 
 ## 切换到基于图形的拼合
 
-+++ 是否需要摄取数据才能从基于字段的拼合切换到基于图形的拼合？
++++ 是否需要重新引入数据才能从基于字段的拼接切换到基于图形的拼接？
 
-数据不必重新摄取到Experience Platform，但需要在Customer Journey Analytics中重新配置。 请按照以下步骤操作：
+数据不必重新引入Experience Platform，但需要在Customer Journey Analytics中重新配置。 请按照以下步骤操作：
 
 1. 设置新的基于图形的拼合数据集。
 1. 在Customer Journey Analytics中将新数据集配置为新连接的一部分。
