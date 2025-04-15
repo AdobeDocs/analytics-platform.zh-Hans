@@ -7,9 +7,10 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 badgePremium: label="B2B edition"
-source-git-commit: 0e4e52cfd42db321c4a7a18a9b1473a67f87e785
+exl-id: ff8d419e-5cc6-4e1b-8cf8-9dbaa8054179
+source-git-commit: d7ee16c64761440989f2850d72b8159799bb8479
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '396'
 ht-degree: 22%
 
 ---
@@ -39,6 +40,10 @@ ht-degree: 22%
 | **步骤 3：创建数据视图** | 数据视图是数据的&#x200B;*过滤*&#x200B;视图。 您可以使用不同的访问超时、归因等设置为同一连接创建不同的数据视图。 您可以为单个数据集创建多个视图。在使用B2B edition配置数据视图时，您还有其他选项。<br>请参阅[创建数据视图](/help/data-views/create-dataview.md)。 |
 | **步骤 4：在工作区中报告跨渠道数据** | 创建连接和数据视图后，使用Analysis Workspace的强大功能和灵活性分析您引入的B2B数据。<br>请参阅[执行基本分析](/help/analysis-workspace/perform-basic-analysis.md)和[执行高级分析](/help/analysis-workspace/perform-adv-analysis.md)。 |
 
-## 用例
+<!--
 
-[B2B用例](../data-ingestion/data-ingestion.md)文档提供了一个有关如何实施Customer Journey Analytics B2B edition的示例用例。
+## Use Case
+
+The [B2B Use Case ](../data-ingestion/data-ingestion.md) document provides an example use case on how to implement Customer  Journey Analytics B2B Edition.
+
+-->
