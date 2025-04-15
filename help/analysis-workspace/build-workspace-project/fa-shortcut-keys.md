@@ -5,8 +5,8 @@ feature: Workspace Basics
 title: 如何使用 Workspace 热键
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
-source-git-commit: a757ea4fc9bf8b13a8ce3001cf8639245d213e1c
-workflow-type: ht
+source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
+workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Analysis Workspace 中提供了热键（键盘快捷键），以实现无缝导�
 | 创建警报 | **[!UICONTROL *cmd + shift + a *]** | **[!UICONTROL *ctrl + shift + a *]** |
 | 创建计算量度 | **[!UICONTROL *cmd + shift + c *]** | **[!UICONTROL *ctrl + shift + c *]** |
 | 创建日期范围 | **[!UICONTROL *cmd + shift + d *]** | **[!UICONTROL *ctrl + shift + d *]** |
-| 创建过滤器 | **[!UICONTROL *cmd + shift + e *]** | **[!UICONTROL *ctrl + shift + e *]** |
+| 创建区段 | **[!UICONTROL *cmd + shift + e *]** | **[!UICONTROL *ctrl + shift + e *]** |
 | 全部清除 | **[!UICONTROL *alt + w *]** | **[!UICONTROL *opt + w *]** |
 | 复制 | **[!UICONTROL *cmd + c *]** | **[!UICONTROL *ctrl + c *]** |
 | 重做 | **[!UICONTROL *cmd + shift + z *]** | **[!UICONTROL *ctrl + shift + z *]** |

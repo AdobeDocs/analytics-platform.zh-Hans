@@ -1,13 +1,13 @@
 ---
-description: 了解流量功能，该功能可显示客户浏览您的网站和应用程序的路径。
+description: 了解“流量”功能，该功能可展示客户在您的网站和应用程序中的浏览路径。
 title: 流量概述
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 36%
+ht-degree: 96%
 
 ---
 
@@ -30,23 +30,23 @@ ht-degree: 36%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的流量可视化图表。_<br/>_查看本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版本的[流程](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** 中的流量可视化图表。_<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版本的[流量](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow)。_
 
 >[!ENDSHADEBOX]
 
 
-![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL 流量]**&#x200B;可视化图表显示客户浏览您的网站和应用程序的路径。
+![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL 流量]**&#x200B;可视化图表会显示客户浏览您的网站或应用程序的路径。
 
-通过可视化，您可以：
+使用该可视化图表可以：
 
 * 可视化客户浏览您的网站或应用程序的历程。
-* 分析客户在所指定检查点（例如登入、特定维度或退出）之前和之后的位置。
-* 通过在选定路径中指定一个特定点来创建过滤器。
+* 分析客户在指定检查点（例如登入、特定维度或退出）之前和之后的去向。
+* 通过在选定路径中指定一个特定点来创建区段。
 
 
 >[!BEGINSHADEBOX]
 
-查看![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [为演示视频创建流量可视化图表](https://video.tv.adobe.com/v/346063/?quality=12&learn=on){target="_blank"}。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建流量可视化图表](https://video.tv.adobe.com/v/346063/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 {{videoaa}}
 
@@ -64,11 +64,11 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >[配置流量可视化图表](/help/analysis-workspace/visualizations/c-flow/create-flow.md)。
 >
 
-## 在“流量”、“流失”或“历程画布”可视化之间选择
+## 在“流量”、“流失”或“历程”画布可视化图表之间进行选择
 
-流量可视化图表与[流失可视化图表](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)和[历程画布可视化图表](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)相似，但存在重要差异。
+流量可视化图表与[流失可视化图表](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)和[历程画布可视化图表](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)有相似之处，但也存在重要区别。
 
-### 了解差异
+### 了解这些差异
 
 <!-- Information in this snippet is shared between Journey canvas, Fallout, and Flow visualization docs -->
 
@@ -76,10 +76,10 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 ### 何时使用流量
 
-流量可视化图表最适合：
+流程可视化图表最适合于：
 
-* 探索性的Ad Hoc Analysis，了解路径上的下一个即时接触点。 (对于具有预定义历程序列的旅程，或者使用最终路径的旅程，请使用页面画布。)
+* 对路径上的下一个接触点进行探索性、临时性分析。（对于具有预定义页面顺序的历程，或使用最终路径的历程，请使用历程画布。）
 
-* 具有多个入口点和路径的非线性历程。 (对于具有预定义历程序列的旅程，使用页面画布。)
+* 具有多个入口点和路径的非线性历程。（对于具有预定义页面顺序的历程，请使用历程画布。）
 
-使用[上表](#understand-the-differences)了解“流量”、“流失”和“历程”画布之间的区别。
+使用[上述表格](#understand-the-differences)来了解流量、流失和历程画布之间的区别。

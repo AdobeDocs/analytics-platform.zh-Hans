@@ -1,20 +1,20 @@
 ---
-description: 您可以在 Analysis Workspace 中从接触点创建过滤器、添加过滤器作为接触点，并比较多个过滤器之间的关键工作流程。
-keywords: 流失和过滤器;流失分析中的过滤器;比较流失中的过滤器
-title: 在流失分析中应用过滤器
+description: 您可以在 Analysis Workspace 中从接触点创建区段、添加区段作为接触点，并比较多个区段之间的关键工作流程。
+keywords: 流失和区段；流失分析中的区段；比较流失中的区段
+title: 在流失分析中应用区段
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 43%
+ht-degree: 36%
 
 ---
 
-# 在流失分析中应用过滤器
+# 在流失分析中应用区段
 
-您可以在 Analysis Workspace 中从接触点创建过滤器、添加过滤器作为接触点，并比较多个过滤器之间的关键工作流程。
+您可以在Analysis Workspace中从接触点创建区段、添加过滤器作为接触点，并比较多个过滤器之间的关键工作流程。
 
 >[!IMPORTANT]
 >
