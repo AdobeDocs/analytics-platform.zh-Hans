@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 6f077ada9df1604b86fde21aa6b11b12160aeaa7
+source-git-commit: 320b1cb94f63d0e6813999c1dc293b7e78ac7845
 workflow-type: tm+mt
-source-wordcount: '2493'
-ht-degree: 24%
+source-wordcount: '2569'
+ht-degree: 21%
 
 ---
 
@@ -99,18 +99,18 @@ ht-degree: 24%
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
->title="新的数据视图"
+>title="新建数据视图"
 >abstract="选择新的数据视图后，该数据视图将进行更新，以包含内容分析量度和维度。需要时相关联的连接也会被更新，使其包含内容分析数据集。当前为内容分析配置的连接和数据视图不会更改。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_current_cleanup_labels_dialog"
->title="清理选定的数据视图"
->abstract="您选择的数据视图已配置了内容分析功能。现有的内容分析配置已被移除，数据视图将使用新配置进行设置。"
+>title="清理所选数据视图"
+>abstract="您选择了已为Content Analytics配置的数据视图。 现有Content Analytics配置将被删除，并且数据视图将配置您的新配置。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_prev_cleanup_labels_dialog"
 >title="清理以前的数据视图"
->abstract="您已选择新的数据视图。以前选定的数据视图的内容分析配置已被移除。"
+>abstract="您已选择新的数据视图。已删除上一个选定数据视图的Content Analytics配置。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -118,7 +118,7 @@ ht-degree: 24%
 
 1. 选择数据视图
 
-   * 要为配置选择新的数据视图，请使用![数据](/help/assets/icons/Data.svg) **[!UICONTROL 选择数据视图]**。
+   * 要为配置选择新数据视图，请使用![数据](/help/assets/icons/Data.svg) **[!UICONTROL 选择数据视图]**。
 
      数据视图的![Content Analytics配置](../assets/aca-configuration-dataview.png)
 
@@ -133,11 +133,11 @@ ht-degree: 24%
 
    对于新配置，列表仅显示与没有活动配置的沙盒关联的数据视图。 此外，您只会看到与您有权访问的沙盒关联的数据视图，以及您有权修改的连接。
 
-   如果您编辑现有配置，则列表仅显示沙盒中可用的、已与现有配置关联的数据视图。
+   如果您编辑现有配置，列表将仅显示沙盒中可用的数据视图，这些数据视图已经与现有配置关联。
 
    您可以执行以下操作：
 
-   * 要搜索特定的数据视图，请使用![搜索](/help/assets/icons/Search.svg)字段。
+   * 要搜索特定数据视图，请使用![搜索](/help/assets/icons/Search.svg)字段。
    * 要筛选可用数据视图的列表，请选择![显示筛选器](/help/assets/icons/Filter.svg)。 您可以在[!UICONTROL 连接]、[!UICONTROL 所有者]和[!UICONTROL 沙盒]上筛选列表。<br/>使用![隐藏](/help/assets/icons/Filter.svg) **[!UICONTROL 隐藏筛选器]**&#x200B;以隐藏筛选器窗格。
    * 要定义要在表中显示的列，请选择![列设置](/help/assets/icons/ColumnSetting.svg)。 选择要在&#x200B;**[!UICONTROL 自定义表]**&#x200B;对话框中显示哪些列，然后选择&#x200B;**[!UICONTROL 应用]**&#x200B;以应用更改。
 
@@ -145,7 +145,7 @@ ht-degree: 24%
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以确认所选的数据视图。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消。
 
 
-在Customer Journey Analytics中，数据视图绑定到Customer Journey Analytics [连接](/help/connections/overview.md)。 并且连接基于您组织内的沙盒。 保存配置后，**[!UICONTROL 沙盒]**&#x200B;会根据选定的数据视图，自动填充沙盒的名称。
+在Customer Journey Analytics中，[数据视图](/help/data-views/data-views.md)绑定到Customer Journey Analytics [连接](/help/connections/overview.md)。 并且连接基于您组织内的沙盒。 保存配置后，**[!UICONTROL 沙盒]**&#x200B;会根据所选的数据视图自动填充沙盒的名称。
 
 
 ### 体验捕捉和定义 {#onboarding-experiences}
@@ -155,12 +155,12 @@ ht-degree: 24%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_button"
 >title="体验捕捉和定义"
->abstract="您可以选择将体验包含在使用内容分析收集的数据中。选中后，您必须定义正则表达式和查询参数的一个或多个组合，以定义要包含体验的 URL。"
+>abstract="您可以选择在通过Content Analytics收集的数据中包含体验。 选中后，您必须定义正则表达式和查询参数的一个或多个组合，以定义要包含体验的 URL。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_header"
 >title="体验捕捉和定义"
->abstract="收集内容分析中的体验"
+>abstract="收集内容分析中的经验"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_parameters_header"
@@ -168,9 +168,19 @@ ht-degree: 24%
 >abstract="指定用于决定内容如何在网站上呈现的参数。"
 
 >[!CONTEXTUALHELP]
+>id="aca_onboarding_experiencecapture_new_include_experiences"
+>title="体验捕捉和定义"
+>abstract="启用后，将收集体验数据，生成体验属性，并可以使用体验报表。"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_experiencecapture_edit_include_experiences"
+>title="体验捕捉和定义"
+>abstract="启用后，将收集体验数据，生成体验属性，并可以使用体验报表。 使用编辑来修改标记属性中与当前配置关联的体验的数据收集配置。"
+
+>[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"
 >title="体验捕捉和定义"
->abstract="您可以在与当前配置关联的标记属性中编辑 Adobe 内容分析扩展中的设置。"
+>abstract="在与当前配置关联的Tags属性中，您必须编辑Adobe Content Analytics扩展中的体验数据收集设置。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -203,7 +213,10 @@ ht-degree: 24%
 
 ![Content Analytics配置体验捕获和定义](../assets/aca-configuration-experience-edit.png)
 
-* 切换&#x200B;**[!UICONTROL 包含体验]**&#x200B;以启用或禁用Analysis Workspace中体验组件、可视化图表、面板和模板的可用性。
+* 切换&#x200B;**[!UICONTROL 包含体验]**&#x200B;以启用或禁用：
+
+   * 从Content Analytics事件数据生成体验属性的进程。
+   * Customer Journey Analytics中的报表模板。
 
 * 选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**&#x200B;以进一步编辑Content Analytics中体验的数据收集配置。 您被重定向到与当前配置关联的Tags属性中的[Adobe Content Analytics扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering)。
 
@@ -291,7 +304,7 @@ ht-degree: 24%
 
 >[!IMPORTANT]
 >
->如果您有一个使用Javascript且不使用“标记”的现有Web SDK实施，则必须从新创建的“标记”属性中手动删除自动包含的Web SDK扩展。
+>如果现有Web SDK实现使用[Javascript库](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library)，而不使用[Tags扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)，则必须从新创建的Tags属性中手动删除自动包含的Web SDK扩展。
 
 
 
@@ -331,7 +344,7 @@ ht-degree: 24%
 * **[!UICONTROL 实施]**：保存和实施配置的设置或对配置所做的更改。 标记为![必填](/help/assets/icons/Required.svg)的所有字段都必须有正确的值。 实施包括：
 
    * **[!UICONTROL Customer Journey Analytics]**&#x200B;配置：
-      * 选定的数据视图已更新，将包含Content Analytics维度和量度。
+      * 选定的数据视图已更新，以包含Content Analytics维度和量度。
       * 已修改与选定数据视图关联的连接，以包含Content Analytics事件和属性数据集。
       * 向Workspace中添加了Content Analytics报表模板。
 
