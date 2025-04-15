@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 320b1cb94f63d0e6813999c1dc293b7e78ac7845
+source-git-commit: 6e59b029542b7b4353f03b6dd083e25955aacc7b
 workflow-type: tm+mt
-source-wordcount: '2569'
+source-wordcount: '2571'
 ht-degree: 21%
 
 ---
@@ -175,7 +175,7 @@ ht-degree: 21%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_include_experiences"
 >title="体验捕捉和定义"
->abstract="启用后，将收集体验数据，生成体验属性，并可以使用体验报表。 使用编辑来修改标记属性中与当前配置关联的体验的数据收集配置。"
+>abstract="启用后，将收集体验数据，生成体验属性，并可以使用体验报表。 <br><br/>使用![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 编辑]**&#x200B;修改与当前配置关联的Tags属性中体验的数据收集配置。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"
