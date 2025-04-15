@@ -38,8 +38,8 @@ ht-degree: 21%
 | **[!UICONTROL 创建者]** | 创建配置的技术帐户。 |
 | **[!UICONTROL 创建于]** | 创建配置时的时间戳。 |
 | **[!UICONTROL 修改于]** | 上次修改配置时的时间戳。 |
-| **[!UICONTROL 沙盒]** | （计划要）配置和实施Content Analytics的组织内的沙盒。 |
-| **[!UICONTROL 状态]** | 配置的状态。 状态可以是：<br/>![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL 草稿]**：配置已保存以供稍后使用，未部署。<br/>![StatusRed](/help/assets/icons/StatusRed.svg) **[!UICONTROL 失败]**：配置失败。 您可以选择&#x200B;**[!UICONTROL 编辑]**&#x200B;以获取有关失败的信息。 Adobe可主动处理任何失败的实施。 您可以联系客户关怀部门了解详细信息。<br/>![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL 完成]**：配置已成功完成并实施。 |
+| **[!UICONTROL 沙盒]** | 组织内配置和实施内容分析（计划）的沙盒。 |
+| **[!UICONTROL 状态]** | 配置的状态。 状态可以是：<br/>![状态灰色](/help/assets/icons/StatusGray.svg)****&#x200B;草稿：配置保存以供以后使用，而不是部署。<br/>![状态红色](/help/assets/icons/StatusRed.svg)**[!UICONTROL 失败]**：配置失败。可以选择“编辑&#x200B;]**”**[!UICONTROL &#x200B;以获取有关失败的信息。Adobe 会主动解决任何失败的实施。 您可以联系客户服务部门了解详情。<br/>![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL 完成]**：配置已成功完成并实施。 |
 
 您可以使用![ColumnSetting](/help/assets/icons/ColumnSetting.svg)自定义表。 选择要在&#x200B;**[!UICONTROL 自定义表]**&#x200B;对话框中显示哪些列，然后选择&#x200B;**[!UICONTROL 应用]**&#x200B;以应用更改。
 
@@ -139,13 +139,13 @@ ht-degree: 21%
 
    * 要搜索特定数据视图，请使用![搜索](/help/assets/icons/Search.svg)字段。
    * 要筛选可用数据视图的列表，请选择![显示筛选器](/help/assets/icons/Filter.svg)。 您可以在[!UICONTROL 连接]、[!UICONTROL 所有者]和[!UICONTROL 沙盒]上筛选列表。<br/>使用![隐藏](/help/assets/icons/Filter.svg) **[!UICONTROL 隐藏筛选器]**&#x200B;以隐藏筛选器窗格。
-   * 要定义要在表中显示的列，请选择![列设置](/help/assets/icons/ColumnSetting.svg)。 选择要在&#x200B;**[!UICONTROL 自定义表]**&#x200B;对话框中显示哪些列，然后选择&#x200B;**[!UICONTROL 应用]**&#x200B;以应用更改。
+   * 若要定义要在表中显示的列，请选择“列设置](/help/assets/icons/ColumnSetting.svg)”。![选择要在“**[!UICONTROL 自定义表]**”对话框中显示的列，然后选择“应用&#x200B;]**”**[!UICONTROL &#x200B;以应用更改。
 
 1. 选择![SelectBox](/help/assets/icons/SelectBox.svg)您要使用的数据视图。
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以确认所选的数据视图。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消。
 
 
-在Customer Journey Analytics中，[数据视图](/help/data-views/data-views.md)绑定到Customer Journey Analytics [连接](/help/connections/overview.md)。 并且连接基于您组织内的沙盒。 保存配置后，**[!UICONTROL 沙盒]**&#x200B;会根据所选的数据视图自动填充沙盒的名称。
+在Customer Journey Analytics中，[数据视图](/help/data-views/data-views.md)绑定到Customer Journey Analytics [连接](/help/connections/overview.md)。 并且连接基于您组织内的沙盒。 保存配置后， **[!UICONTROL 沙箱]** 将根据选定的数据视图自动填充沙盒的名称。
 
 
 ### 体验捕捉和定义 {#onboarding-experiences}
@@ -155,7 +155,7 @@ ht-degree: 21%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_button"
 >title="体验捕捉和定义"
->abstract="您可以选择在通过Content Analytics收集的数据中包含体验。 选中后，您必须定义正则表达式和查询参数的一个或多个组合，以定义要包含体验的 URL。"
+>abstract="可以选择在通过内容分析收集的数据中包含体验。 选中后，您必须定义正则表达式和查询参数的一个或多个组合，以定义要包含体验的 URL。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_header"
@@ -186,14 +186,14 @@ ht-degree: 21%
 
 在此部分中，您可以选择在通过Content Analytics收集的数据中包含体验。  体验是网页上的所有文本，可以使用访问某个网页的初始用户使用的URL重现这些文本。
 
-默认情况下，**[!UICONTROL 包含体验]**&#x200B;处于关闭状态。 在选中时，您必须定义要包含体验的URL。
+默认情况下，**[!UICONTROL 包含体验]**&#x200B;处于关闭状态。 选中此选项后，您必须定义要为其包含体验的 URL。
 
-仅在满足以下条件时，才考虑包含体验：
+仅当以下情况适用时，才考虑包含体验：
 
-* 必须使用页面URL重现网站上的页面。
-* 任何给定用户看到的文本内容都可以使用页面URL重现，并且不依赖于Cookie或其他个性化机制。
+* 网站上的网页必须可以使用网页网址重现。
+* 任何给定用户看到的文本内容都可以使用页面URL复制，并且不依赖于cookie或其他个性化机制。
 
-要在新的或未实施的配置中包含体验，请执行以下操作：
+要在新的或未实现的配置中包含体验，请执行以下作：
 
 ![Content Analytics配置体验捕获和定义](../assets/aca-configuration-experience.png)
 
@@ -296,15 +296,15 @@ ht-degree: 21%
 
 * 指示在为Content Analytics收集数据时应包含或排除哪些页面。
 
-  为&#x200B;**[!UICONTROL 要包含/排除]**&#x200B;的页面指定正则表达式字符串。 <br/>例如：`^(?!.*documentation).*`从Content Analytics中排除所有文档页面。
+  为&#x200B;**[!UICONTROL 要包含/排除]**&#x200B;的页面指定正则表达式字符串。 <br/>例如： `^(?!.*documentation).*` 从内容分析中排除所有文档页面。
 
-* 指示在为Content Analytics收集数据时应包含或排除哪些资产。
+* 指示在为内容分析收集数据时应包括或排除哪些资产。
 
-  为&#x200B;**[!UICONTROL Assets指定要包含/排除]**&#x200B;的正则表达式字符串。 <br/>例如： `^(?!.*(logo\.jpg|\.svg)).*$`从Content Analytics中排除所有徽标JPEG和SVG图像。
+  为要包含/排除&#x200B;]**的资产指定**[!UICONTROL &#x200B;一个正则表达式字符串。<br/>例如： `^(?!.*(logo\.jpg|\.svg)).*$` 从内容分析中排除所有徽标 JPEG 和 SVG 图像。
 
 >[!IMPORTANT]
 >
->如果现有Web SDK实现使用[Javascript库](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library)，而不使用[Tags扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)，则必须从新创建的Tags属性中手动删除自动包含的Web SDK扩展。
+>如果您有使用 Javascript 库](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library)的现有 Web SDK 实现[，并且不使用[标记扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)，则必须从新创建的 Tags 属性中手动删除自动包含的 Web SDK 扩展。
 
 
 
