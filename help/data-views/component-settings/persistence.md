@@ -5,10 +5,10 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
+source-git-commit: 9c1a8c51aa3e23412e5b04d3ab1571a9d1c7612e
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 73%
+source-wordcount: '1053'
+ht-degree: 79%
 
 ---
 
@@ -26,17 +26,17 @@ ht-degree: 73%
 
 
 
-[!UICONTROL 持久性]表示给定的维度值能否在从中设置它的事件之外与指标相关。它使用分配和有效期限的组合。
+[!UICONTROL 持久性]是给定维度值能够归因于其设置的事件之外的量度。 它使用分配和有效期限的组合。
 
-![突出显示持久性选项的数据视图窗口](../assets/persistence.png)
+![突出显示“持久性”选项的数据视图窗口](../assets/persistence.png)
 
-* 通过&#x200B;**分配**，可决定一次可在单个列中保留多个维度项时保留哪个值。
+* 通过&#x200B;**分配**，可决定一次可在单个列中保留多个维度项时要保留的值。
 
   >[!NOTE]
   >
-  >如果您在报表中的某个量度上设置了[非默认归因模型](/help/data-views/component-settings/attribution.md)，则该归因模型会忽略您为同一报表的维度设置的分配。
+  >如果您在报告中的某个量度上设置了[非默认归因模型](/help/data-views/component-settings/attribution.md)，则该归因模型会忽略您在同一报告的维度上设置的分配。
   >
-  >但是，在执行包含多个维度的[完整表导出](/help/analysis-workspace/export/export-cloud.md)时，归因会保留应用于每个维度的分配模型。
+  >但是，在执行包含多个维度的[完整表格导出](/help/analysis-workspace/export/export-cloud.md)时，归因会保留应用于每个维度的分配模型。
 
 * 通过&#x200B;**有效期限**，可决定维度项在从中设置它的事件之外保持多久。
 
@@ -45,8 +45,8 @@ ht-degree: 73%
 | 设置 | 描述 |
 | --- | --- |
 | [!UICONTROL 设置持久性] | 为维度启用持久性。如果未启用持久性，则维度仅与同一事件中存在的指标相关。默认下禁用此设置。 |
-| [!UICONTROL 分配] | 用于为持久性指定维度中使用的分配模型。选项有：[!UICONTROL 最近]、[!UICONTROL 原有]、[!UICONTROL 实例]、[!UICONTROL 全部]。截止 2021 年 10 月 28 日，最多 90 天的回溯时段将添加到[!UICONTROL 分配]设置。 |
-| [!UICONTROL 有效期限] | 用于为维度指定持久性窗口。选项为：[!UICONTROL 会话]（默认值）、[!UICONTROL 人员]、[!UICONTROL 自定义时间]、[!UICONTROL 指标]。可能需要能够在购买（如内部搜索词或其他促销用例）时让维度到期。可设置的最长有效期限为 90 天。如果选择[!UICONTROL 全部]分配，则仅有[!UICONTROL 会话]或[!UICONTROL 人员]有效期限可用。 |
+| [!UICONTROL 分配] | 用于为持久性指定维度中使用的分配模型。选项如下：<ul><li>**[!UICONTROL 最近]**：维度中的值会一直保留，直到被后续值覆盖</li><li> **[!UICONTROL 原始]**：此维度的第一个值会保留，且不会被后续值覆盖</li><li>**[!UICONTROL 所有]**：此维度的所有值同时保留</li><li>**[!UICONTROL 第一个已知]**：此维度的第一个值已使用，将应用于之前和之后的所有事件。</li><li>**[!UICONTROL 最后一个已知]**：已使用此维度的最后一个值，并将应用于之前和之后的所有事件。</li></ul> |
+| [!UICONTROL 有效期限] | 用于为维度指定持久性窗口。选项如下： <ul><li>**[!UICONTROL 会话]**（默认）</li><li>**[!UICONTROL 人员]**</li><li>**[!UICONTROL 自定义时间]**</li><li>**[!UICONTROL 量度]**</li></ul>。可能需要能够在购买（如内部搜索词或其他促销用例）时让维度到期。可设置的最长有效期限为 90 天。如果选择[!UICONTROL 全部]分配，则仅有[!UICONTROL 会话]或[!UICONTROL 人员]有效期限可用。 |
 
 {style="table-layout:auto"}
 
@@ -68,7 +68,7 @@ ht-degree: 73%
   | 数据集值 |  | C | B |  | A |
   | 原有分配 |  | C | C | C | C |
 
-* **[!UICONTROL 全部]**：其行为方式类似于指标的[!UICONTROL 参与率]归因模型。同等地保留所有值，以使每个值都能对报表中的指标发挥完整的作用。例如，请考虑下表，其中具有[!UICONTROL 全部]的分配和[!UICONTROL 会话]的有效期限：
+* **[!UICONTROL 全部]**：其行为方式类似于指标的[!UICONTROL 参与率]归因模型。同等地保留所有值，以使每个值都能对报告中的指标发挥完整的作用。例如，请考虑下表，其中具有[!UICONTROL 全部]的分配和[!UICONTROL 会话]的有效期限：
 
   | 维度 | 第 1 次点击 | 第 2 次点击 | 第 3 次点击 | 第 4 次点击 | 第 5 次点击 |
   | --- | --- | --- | --- | --- | --- |
@@ -96,27 +96,27 @@ ht-degree: 73%
 * **机会报告窗口** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}：在报告窗口结束时过期。
 * **购买群组报告窗口** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}：报告窗口结束时过期。
 * **自定义时间**：在指定时段（最多 90 天）后过期。仅对“原有”和“最近”分配模型有此有效期限选项。在使用基于时间的有效期限时，将考虑报告时段（最长 90 天）开始之前的值。
-* **量度**：当在事件中看到此量度时，请立即使维度中的保留值过期。 可将任何指标用作此维度的有效期限结束。仅对“原有”和“最近”分配设置有此有效期限选项。
+* **量度**：当可在事件中看到此量度时，立即使维度中的持久值过期。可将任何指标用作此维度的有效期限结束。仅对“原有”和“最近”分配设置有此有效期限选项。
 
 
 ## [!UICONTROL 绑定维度]
 
-一个下拉列表，可让您将维度值的持久性绑定到另一个维度中的维度值。 有效选项包括数据视图中包含的其他维度。
+一个下拉列表，可让您将维度值的持久性绑定到另一个维度中的维度值。有效的选项包括数据视图中包含的其他维度。
 
-有关如何有效使用绑定维度的示例，请参阅[在Customer Journey Analytics中使用绑定维度和量度](../../use-cases/data-views/binding-dimensions-metrics.md)。
+有关如何有效使用绑定维度的示例，请参见[在 Customer Journey Analytics 中使用绑定维度和量度](../../use-cases/data-views/binding-dimensions-metrics.md)。
 
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[绑定维度](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"}。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [绑定维度](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 
 
 ## [!UICONTROL 绑定量度]
 
-一个下拉列表，可让您选择充当绑定触发器的量度。 有效选项包括数据视图中包含的量度。
+一个下拉列表，可让您选择充当绑定触发器的量度。有效的选项包括数据视图中包含的量度。
 
 此设置仅在对象数组中的绑定维度低于组件时显示。当绑定量度显示在事件中时，维度值会从事件级别维度向下复制到绑定维度的较低架构级别。
 
-有关如何有效使用绑定维度的更多信息，请参阅[在Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md)中使用绑定维度和量度下的第二个示例。
+有关如何有效使用绑定量度的更多信息，请参阅[在 Customer Journey Analytics 中使用绑定维度和量度](../../use-cases/data-views/binding-dimensions-metrics.md)下的第二个示例。

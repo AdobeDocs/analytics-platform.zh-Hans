@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 02d24416bd1f56417005dfa1b693964073fb8a59
+source-git-commit: e3753cfde5e57a86229d0a42a125afcc118bc479
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 {{release-limited-testing}}
 
-本文详细介绍了Content Analytics如何收集数据
+本文详细介绍Content Analytics如何收集数据
 
 
 ## 定义
@@ -37,7 +37,7 @@ ht-degree: 1%
 Content Analytics库在以下情况下收集数据：
 
 * Content Analytics包含在页面上加载的标记库中。
-* 页面URL在[Content Analytics扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}中配置，该扩展是包含的标记库的一部分。
+* 页面URL在[Content Analytics扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}中配置，该扩展是包含的Tags库的一部分。
 
 
 ## Content Analytics事件
