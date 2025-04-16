@@ -4,7 +4,7 @@ title: 添加组件描述
 feature: Components
 role: Admin
 exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
-source-git-commit: a0e301130cf7f8c4b3be17dfe52648fde5ee4fe4
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 14%
@@ -15,7 +15,7 @@ ht-degree: 14%
 
 描述可帮助用户了解在Analysis Workspace中构建项目或查看报表时如何使用各种组件。
 
-Customer Journey Analytics管理员可以在数据视图内或使用数据字典为组件（维度、量度、过滤器和日期范围）添加描述。
+Customer Journey Analytics管理员可以在数据视图内或使用数据字典为组件（维度、量度、区段和日期范围）添加描述。
 
 ## 在数据视图中添加描述
 

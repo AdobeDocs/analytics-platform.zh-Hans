@@ -1,13 +1,13 @@
 ---
-description: 了解流失报表和可视化图表。
-title: 关于流失报表和可视化图表
+description: 了解流失报告和可视化效果图表。
+title: 有关流失报告和可视化图表
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 30%
+ht-degree: 95%
 
 ---
 
@@ -25,16 +25,16 @@ ht-degree: 30%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的流失可视化图表。_<br/>_查看本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版本的[流失](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** 中的流失可视化图表。_<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版本的[流失](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow)。_
 
 >[!ENDSHADEBOX]
 
-![转化漏斗](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL 流失]**&#x200B;可视化图表显示人员从何处离开（流失）或继续通过（流过）预定义的页面序列。
+![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL 流失]**&#x200B;可视化图表展示了用户在预定义的页面顺序中离开（流失）和继续浏览（流过）的情况。
 
 
 >[!BEGINSHADEBOX]
 
-查看![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [为演示视频创建流失可视化报表](https://video.tv.adobe.com/v/345883/?quality=12&learn=on){target="_blank"}。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建流失可视化报告](https://video.tv.adobe.com/v/345883/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 {{videoaa}}
 
@@ -43,21 +43,21 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 流失可视化图表允许您：
 
-* 对同一个报表中的两个不同过滤器执行逐项比较
+* 对同一个报告中的两个不同区段执行逐项比较。
 * 拖放（和重新排列）漏斗步骤（接触点）。
 * 混合和匹配来自不同维度和量度的值。
-* 创建多维度流失报表。
-* 识别客户在吵架后立即前往何处。
+* 创建多维度流失报告。
+* 识别客户在流失之后马上前往何处。
 
 流失显示一个序列中每个步骤或接触点之间的转化和流失率。
 
-例如，您可以在购买过程中跟踪人员的流失点。 您只需选择一个起始接触点和一个结束接触点，并在其中添加中间接触点，即可创建网站浏览路径。但是，您还可以执行多维度流失。
+例如，您可以跟踪购买过程中的人员流失点。您只需选择一个起始接触点和一个结束接触点，并在其中添加中间接触点，即可创建网站浏览路径。但是，您还可以执行多维度流失。
 
-## 在“流失”、“流量”和“历程”画布可视化之间选择
+## 在“流失”、“流量”和“历程”画布可视化图表之间进行选择
 
 流失可视化图表与[流量可视化图表](/help/analysis-workspace/visualizations/c-flow/flow.md)和[历程画布可视化图表](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)具有相似之处。
 
-### 了解差异
+### 了解这些差异
 
 <!-- Information in this snippet is shared between Journey canvas, Fallout, and Flow visualization docs -->
 
@@ -65,23 +65,23 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 ### 何时使用流失
 
-流失和[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)可视化图表都可用于分析：
+流失和[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)可视化图表对于分析以下内容很有用：
 
 * 网站上特定过程的转化率（例如购买或注册过程）。
-* 更广泛的一般流量流：此流量显示在访问主页的访客中，执行了多少次搜索。 然后有多少人最终看了一个特定的物品。
+* 总体、更广泛的流量：在访问主页的人群中，该流量显示了进行搜索的人数。然后，他们中有多少人最终会查看某一特定商品。
 * 网站上事件之间的关联。显示查看隐私政策后继续购买产品的访客百分比。
 
-流失可视化图表最适合执行以下操作：
+流失可视化图表最适合于：
 
-* 流失分析，涉及具有预定义页面序列以及单个入口点和路径的历程。 (对于具有多个入口点和路径的旅程，请使用历程画布。)
+* 涉及具有预定义页面序列和单一入口点及路径的历程的流量分析。（使用历程画布来描绘具有多个入口点和路径的历程。）
 
-* 需要在同一报表中对两个不同的历程执行并排比较的过滤器。
+* 需要在同一报表中对两个不同区段执行并排比较的历程。
 
-使用[上表](#understand-the-differences)了解历程画布、流失和流量可视化图表之间的差异。
+使用[上述表格](#understand-the-differences)来了解历程画布、流失和流量可视化图表之间的区别。
 
 >[!MORELIKETHIS]
 >
->[配置流失可视化](configuring-fallout.md)
+>[配置流失可视化图表](configuring-fallout.md)
 
 
 

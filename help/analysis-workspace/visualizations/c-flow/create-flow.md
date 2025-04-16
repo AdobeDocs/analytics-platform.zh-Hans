@@ -4,10 +4,10 @@ title: 如何配置流量可视化图表
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '1484'
-ht-degree: 90%
+ht-degree: 88%
 
 ---
 
@@ -121,7 +121,7 @@ ht-degree: 90%
 | **[!UICONTROL 为该路径创建过滤器]** | 创建过滤器。此选择会带您转至过滤器生成器，您可从中配置新过滤器。 |
 | **[!UICONTROL 细分]** | 按可用维度、量度或时间划分节点。 |
 | **[!UICONTROL 过滤列]** | 显示的过滤选项与自由格式表中的相同。有关可用选项的更多信息，请参阅[过滤和排序表格](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)中的“对表格应用简单或高级过滤器”部分。 |
-| **[!UICONTROL 排除项]**&#x200B;或&#x200B;**[!UICONTROL 还原排除项]** | 从列中删除特定节点，并将其自动创建为列顶部的过滤器。要还原排除项，请从上下文菜单中选择&#x200B;**[!UICONTROL 还原排除项]**。您也可以打开列顶部的过滤器，移除带有您刚刚排除的项目的 Pillbox。 |
+| **[!UICONTROL 排除项]**&#x200B;或&#x200B;**[!UICONTROL 还原排除项]** | 从列中删除特定节点，并将其自动创建为列顶部的过滤器。要还原排除项，请从上下文菜单中选择&#x200B;**[!UICONTROL 还原排除项]**。您也可以打开列顶部的区段，移除带有您刚刚排除的项目的Pillbox。 |
 | **[!UICONTROL 趋势]** | 为节点创建趋势图表。 |
 | **[!UICONTROL 显示下一列]**/**[!UICONTROL 显示上一列]** | 显示可视化图表的下一列（右）或上一列（左）。 |
 | **[!UICONTROL 隐藏列]**n | 在可视化图表中隐藏选定的列。 |

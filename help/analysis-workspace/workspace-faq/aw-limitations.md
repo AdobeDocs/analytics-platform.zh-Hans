@@ -4,10 +4,10 @@ title: Analysis Workspace 中的已知限制
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 role: User
-source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
-workflow-type: ht
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+workflow-type: tm+mt
 source-wordcount: '314'
-ht-degree: 100%
+ht-degree: 79%
 
 ---
 
@@ -24,20 +24,20 @@ ht-degree: 100%
 
 ## 可视化内容
 
-* 利用过滤器的可视化（如[!UICONTROL 流失]、[!UICONTROL 流量]、[!UICONTROL 同类群组]和[!UICONTROL 直方图]）不能接受计算量度作为输入。
+* 利用区段的可视化图表，如[!UICONTROL 流失]、[!UICONTROL 流量]、[!UICONTROL 同类群组]和[!UICONTROL 直方图]，不能接受计算量度作为输入。
 * [!UICONTROL 流量]：登入/退出维度（例如，[!UICONTROL 进入页面]）不能在流量中使用。
 * [!UICONTROL 同类群组]：非整数不能用作同类群组标准。
 
 ## 过滤器
 
-* 某些量度和维度不可过滤，如[!UICONTROL 事件]、[!UICONTROL 任务]等。
-* 在[面板放置区](/help/analysis-workspace/c-panels/panels.md)中创建的临时过滤器是一种快速过滤器。除非公开这些区段，否则它们不会出现在 Workspace 的左侧面板或过滤器组件管理器中。有关更多信息，请参阅[快速过滤器](/help/components/filters/quick-filters.md)。
+* 某些量度和维度无法分段，如[!UICONTROL 事件]、[!UICONTROL 人员]等。
+* 在[面板拖放区域](/help/analysis-workspace/c-panels/panels.md)中创建的临时区段属于快速区段类型。 除非公开这些区段，否则它们不会出现在 Workspace 的左侧面板或过滤器组件管理器中。有关更多信息，请参阅[快速区段](/help/components/filters/quick-filters.md)。
 
 ## 计算量度
 
 * 计算量度不能用于某些可视化内容。请参阅[可视化内容](#visualizations)。
 * 计算量度无法在[!UICONTROL 归因]面板中使用，因为计算量度本身可以包括单独的归因模型。
-* 如果从 Workspace 中创建计算量度（而不是从[!UICONTROL 组件 > 过滤器]创建），则某些组件和操作符将不可用。例如，[!UICONTROL IP 地址]。
+* 如果从Workspace中创建计算量度（而不是从[!UICONTROL 组件>区段]中创建），则某些组件和运算符将不可用。 例如，[!UICONTROL IP 地址]。
 
 ## 日期范围
 

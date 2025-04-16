@@ -4,10 +4,10 @@ title: 行设置
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: 1a003b38ef26eb811b19cd091c6e089f33ddb6f6
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '1046'
-ht-degree: 98%
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 98%
 
 >[!ENDSHADEBOX]
 
-行设置因您拖入到表格中的组件而异。要访问表格行设置，请选择每个对象内的维度、过滤器、量度、时间段或细分旁边的![设置](/help/assets/icons/Setting.svg)**[!UICONTROL 设置]**。
+行设置因您拖入到表格中的组件而异。要访问表格行设置，请选择每个对象中的维度、区段、量度、时间段或划分旁边的![设置](/help/assets/icons/Setting.svg) **[!UICONTROL 设置]**。
 
 ![自由格式表突出显示量度的设置图标](assets/row-settings.png)
 
@@ -71,7 +71,7 @@ ht-degree: 98%
 | **[!UICONTROL 趋势选择]** | 为选择创建趋势线形图可视化图表。 |
 | **[!UICONTROL 仅显示选定的行]** | 仅显示可视化图表中选定的行。 |
 | **[!UICONTROL 显示所有行]** | 显示可视化图表中的所有行。 |
-| **[!UICONTROL 从选择创建过滤器]** | 打开&#x200B;**[!UICONTROL 过滤器生成器]**，从选择中生成过滤器。 |
+| **[!UICONTROL 从选定范围中创建区段]** | 打开&#x200B;**[!UICONTROL 筛选器生成器]**&#x200B;以从所选内容生成区段。 |
 | **[!UICONTROL 从选择创建受众]** | 打开&#x200B;**[!UICONTROL 创建受众]**&#x200B;对话框，从选择中生成受众。 |
 
 选择量度列标题时，可以使用以下附加上下文菜单选项。
@@ -85,7 +85,7 @@ ht-degree: 98%
 | **[!UICONTROL 比较归因模型]** | 指定一个新的归因模型并将其与所选列的归因模型进行比较。添加了包含新归因模型量度的新列。此外，还添加了百分比变化列以便进行比较。 |
 | **[!UICONTROL 重置列宽]** | 将列宽重置为默认宽度。 |
 | **[!UICONTROL 从选择创建注释]** | 打开&#x200B;**[!UICONTROL 注释详细信息]**&#x200B;以添加注释。 |
-| **[!UICONTROL 从选择创建过滤器]** | 打开&#x200B;**[!UICONTROL 过滤器生成器]**，从选择中生成过滤器。 |
+| **[!UICONTROL 从选定范围中创建区段]** | 打开&#x200B;**[!UICONTROL 筛选器生成器]**&#x200B;以从所选内容生成区段。 |
 | **[!UICONTROL 从选择创建受众]** | 打开&#x200B;**[!UICONTROL 创建受众]**&#x200B;对话框，从选择中生成受众。 |
 
 ## 更改行高

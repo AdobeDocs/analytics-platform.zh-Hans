@@ -4,7 +4,7 @@ title: 使用 Analysis Workspace 中的组件
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 3cbf30778ff0fbb4198db16cbbabf3d62a87d384
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 7%
@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # 使用 Analysis Workspace 中的组件
 
-组件构成了Analysis Workspace中任何项目的实际数据。 组件由维度、量度、过滤器和日期范围组成。 您可以将组件拖到可视化图表或面板中，以将其添加到项目中。
+组件构成了Analysis Workspace中任何项目的实际数据。 组件由维度、量度、区段和日期范围组成。 您可以将组件拖到可视化图表或面板中，以将其添加到项目中。
 
 有关可添加的组件类型的更多信息，请参阅[组件概述](/help/components/overview.md)。
 
@@ -31,8 +31,8 @@ ht-degree: 7%
 
 1. 滚动到或搜索要添加的组件，然后将其拖动到项目中的面板或可视化图表。
 
-1. 您可以选择将组件拖到面板标题中的过滤器拖放区域。 此拖放操作可将组件定义为过滤器，并将过滤器应用于面板内的所有内容。
-有关如何使用面板上的筛选器放置区域来筛选面板的信息，请参阅[面板概述](/help/analysis-workspace/c-panels/panels.md)中的[放置区域](/help/analysis-workspace/c-panels/panels.md#drop-zone)。
+1. 您可以选择将组件拖动到面板标题中的区段放置区域。 此拖放操作将组件定义为区段，并将区段应用于面板内的所有内容。
+有关如何使用面板上的区段放置区域对面板进行分段的信息，请参阅[面板概述](/help/analysis-workspace/c-panels/panels.md)中的[放置区域](/help/analysis-workspace/c-panels/panels.md#drop-zone)。
 
 1. 有关更多详细信息，请参阅以下部分：
 
@@ -40,13 +40,13 @@ ht-degree: 7%
 
    * [将量度添加到项目](#add-metrics-to-a-project)
 
-   * [将过滤器添加到项目](#add-filters-to-a-project)
+   * [将区段添加到项目](#add-segments-to-a-project)
 
    * [向项目添加日期范围](#add-date-ranges-to-a-project)
 
 ### 将维度添加到项目
 
-[Dimension](/help/components/dimensions/overview.md)是Customer Journey Analytics中的变量，通常包含字符串值。 相反，[量度](/help/components/calc-metrics/calc-metr-overview.md)包含与维度相关的数字值。基本报告根据数值列（量度）显示字符串值的行（维度）。
+[维度](/help/components/dimensions/overview.md)是Customer Journey Analytics中通常包含字符串值的变量。 相反，[量度](/help/components/calc-metrics/calc-metr-overview.md)包含与维度相关的数字值。基本报告根据数值列（量度）显示字符串值的行（维度）。
 
 1. 开始向Analysis Workspace中的项目添加维度，如[将组件添加到项目](#add-components-to-a-project)中所述。
 
@@ -56,7 +56,7 @@ ht-degree: 7%
 
    * 将维度拖动到Analysis Workspace中的可视化图表（例如自由格式表）。
 
-   * 将一个或多个维度从左侧面板拖动到筛选器拖放区域以创建快速筛选器，如[将筛选器添加到项目](#add-filters-to-a-project)中所述。
+   * 将左侧面板中的一个或多个维度拖到区段拖放区域以创建快速区段，如[将区段添加到项目](#add-filters-to-a-project)中所述。
 
 1. 您可以选择在Analysis Workspace中与其他组件一起划分维度和维度项。 有关详细信息，请参阅[在Workspace中划分维度](/help/components/dimensions/t-breakdown-fa.md)。
 
@@ -93,17 +93,17 @@ ht-degree: 7%
 
 [筛选器](/help/components/filters/filters-overview.md)允许您根据特性或特定交互来识别人员、会话或事件的子集。
 
-您可以通过以下任意方式在Analysis Workspace中使用筛选器：
+您可以通过以下任意方式在Analysis Workspace中使用区段：
 
-* 将过滤器添加到面板
-将过滤器添加到面板时，过滤器将应用于面板中的所有内容。
-有关如何使用面板上的筛选器放置区域来筛选面板的信息，请参阅[面板概述](/help/analysis-workspace/c-panels/panels.md)中的[放置区域](/help/analysis-workspace/c-panels/panels.md#drop-zone)。
+* 将区段添加到面板
+将区段添加到面板时，区段将应用于面板中的所有内容。
+有关如何使用面板上的区段放置区域对面板进行分段的信息，请参阅[面板概述](/help/analysis-workspace/c-panels/panels.md)中的[放置区域](/help/analysis-workspace/c-panels/panels.md#drop-zone)。
 
-* 将过滤器添加到可视化图表
-将过滤器添加到自由格式表的列时，过滤器应用于表列中的所有内容。 您还可以添加过滤器作为流失可视化图表的一部分。
+* 将区段添加到可视化图表
+向自由格式表中的列添加区段时，区段会应用于表列中的所有内容。 您还可以添加区段作为流失可视化图表的一部分。
 
-* 在组件中使用筛选器
-当您定义[计算量度](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md)、[注释](/help/components/annotations/create-annotations.md#annotation-builder)甚至[筛选器](/help/components/filters/filter-builder.md)等组件时，可以将筛选器用作定义的一部分。
+* 在组件中使用区段
+当您定义[计算量度](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md)、[注释](/help/components/annotations/create-annotations.md#annotation-builder)甚至[区段](/help/components/filters/filter-builder.md)等组件时，可以将过滤器用作定义的一部分。
 
 
 ### 向项目添加日期范围
