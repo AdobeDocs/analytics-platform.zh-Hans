@@ -4,10 +4,10 @@ title: 创建项目
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
+source-git-commit: 04586de02765ddeba72aca3132b9eca5d22aced7
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 99%
+source-wordcount: '463'
+ht-degree: 88%
 
 ---
 
@@ -65,6 +65,15 @@ ht-degree: 99%
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_project_commenting"
+>title="允许评论"
+>abstract="启用后，Analysis Workspace中项目的右边栏中将显示一个注释区域。"
+
+<!-- markdownlint-enable MD034 -->
+
 
 项目设置提供有关当前活动项目的项目级信息。
 
@@ -83,6 +92,7 @@ ht-degree: 99%
 | 显示注释 | 指定是否显示该项目的注释。 |
 | [项目调色板](/help/analysis-workspace/build-workspace-project/color-palettes.md) | 通过从已为色盲优化过的现成调色板中进行选择或通过指定您的自定义调色板，可更改在 Workspace 中使用的类别调色板。此功能影响 Workspace 中的许多内容，包括大多数可视化。 |
 | [视图密度](/help/analysis-workspace/build-workspace-project/view-density.md) | 通过减小左侧面板、自由格式表和同类群组表的垂直边距，让您可在屏幕上看到更多数据。 |
+| 允许评论 | 启用此选项后，Analysis Workspace中项目的右边栏中将显示一个注释区域。 有关详细信息，请参阅[在项目中添加和管理注释](/help/analysis-workspace/build-workspace-project/comment-projects.md)。 |
 
 
 

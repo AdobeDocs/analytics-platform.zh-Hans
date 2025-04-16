@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 3bdde8181ec2a0e507dae907acb3da2b702f5578
+source-git-commit: 3304bb497a4d973dcd222829d8abd71618f7d2a5
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1219'
 ht-degree: 86%
 
 ---
@@ -165,6 +165,7 @@ ht-degree: 86%
       + [概述](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [创建项目](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [打开项目](/help/analysis-workspace/build-workspace-project/open-projects.md)
+      + [项目中的注释](/help/analysis-workspace/build-workspace-project/comment-projects.md)
       + [保存项目](../analysis-workspace/build-workspace-project/save-projects.md)
       + Workspace中的文件夹 {#workspace-folders}
          + [关于文件夹](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
@@ -301,7 +302,7 @@ ht-degree: 86%
    + [概述](../components/overview.md)
    + [使用 Analysis Workspace 中的组件](../components/use-components-in-workspace.md)
    + [添加组件描述](../components/add-component-descriptions.md)
-   + 注释 {#annotations}
+   + 批注 {#annotations}
       + [注释概述](../components/annotations/overview.md)
       + [创建注释](../components/annotations/create-annotations.md)
       + [管理注释](../components/annotations/manage-annotations.md)

@@ -1,20 +1,20 @@
 ---
 title: Customer Journey Analytics护栏
-description: 了解用于Customer Journey Analytics的护栏
+description: 了解Customer Journey Analytics的护栏
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 22b95bce42ee9f04b828cf5b765f40008a1534b1
+source-git-commit: fbe351bdf6ce451a5c5b5aac4d7cbc2a4c0ba7e5
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1808'
 ht-degree: 7%
 
 ---
 
 # Customer Journey Analytics护栏
 
-本文档对Customer Journey Analytics的各个组件进行了限制。 有关护栏、范围参数和权利，请参阅[Customer Journey Analytics](https://helpx.adobe.com/cn/legal/product-descriptions/customer-journey-analytics.html)的产品描述或[Adobe Analytics加载项的产品描述：Customer Journey Analytics](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html)。
+本文档提供Customer Journey Analytics各种组件的限制。 有关护栏、范围参数和权利，请参阅[Customer Journey Analytics的产品说明](https://helpx.adobe.com/cn/legal/product-descriptions/customer-journey-analytics.html)或[Adobe Analytics加载项的产品说明： Customer Journey Analytics](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html)。
 
 ## 限制类型
 
@@ -23,7 +23,7 @@ ht-degree: 7%
 | 护栏类型 | 描述 |
 |----------|---------|
 | **性能护栏（软限制）** | Performance Guardrails是与用例范围相关的使用限制。 当超出性能护栏时，您可能会遇到性能下降和延迟问题。 Adobe不对此类性能下降负责。 始终超过性能护栏的客户可以选择许可额外的容量，以避免性能下降。 |
-| **系统强制的护栏（硬限制）** | Customer Journey AnalyticsUI或API强制实施系统强制的护栏。 这些限制不得超过，因为UI和API会阻止您这样做或返回错误。 |
+| **系统强制的护栏（硬限制）** | Customer Journey Analytics UI或API强制实施系统强制的护栏。 这些限制不得超过，因为UI和API会阻止您这样做或返回错误。 |
 
 {style="table-layout:auto"}
 
@@ -53,6 +53,10 @@ ht-degree: 7%
 | 每个项目的面板数 | 15 | 系统强制的护栏 | 每个项目的最大[面板](../analysis-workspace/home.md#panels)数。 |
 | 每个面板的可视化图表 | 25 | 系统强制的护栏 | 每个面板的[可视化图表的最大数量](../analysis-workspace/home.md#visualizations)。 |
 | 每个自由格式表的派生字段 | 5 | 系统强制的护栏 | 单个自由格式表中不同派生字段的最大数量。 |
+| 每个项目的评论 | 1,000 | 系统强制的护栏 | 每个项目的最大评论数。 |
+| 每个评论的回复 | 100 | 系统强制的护栏 | 每个评论的最大回复数。 |
+| 每个评论的图像数 | 5 | 系统强制的护栏 | 每个评论的最大图像数。 |
+| 图像大小 | 2 | 系统强制的护栏 | 每个图像的最大上传大小（以MB为单位） |
 
 {style="table-layout:auto"}
 
@@ -81,7 +85,7 @@ ht-degree: 7%
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform[Real-time Customer Data Platform护栏](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hans)。
+另请参阅Experience Platform [Real-time Customer Data Platform护栏](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hans)。
 
 
 ## 自动数据集过期
@@ -122,11 +126,11 @@ ht-degree: 7%
 | 字段 | 10,000 | 系统强制的护栏 | 数据集中每行属性或字段的最大数量。 |
 | 唯一字符串 | 1000万 | 系统强制的护栏 | 每个查找数据集的最大唯一键数。 |
 | 行 | 100万 | 系统强制的护栏 | 连接内给定月份中每个唯一人员ID的最大行数。 |
-| 行大小 | 2 | 性能护栏/系统强制的护栏 | 引入Customer Journey Analytics的每行数据的平均大小（以KB为单位）（软限制）。 行大小的静态限制由Experience Platform中用于数据摄取的护栏决定。 |
+| 行大小 | 2 | 性能护栏/系统强制的护栏 | 摄取到Customer Journey Analytics的每行数据的平均大小(KB)（软限制）。 行大小的静态限制由Experience Platform中用于数据摄取的护栏决定。 |
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform[数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
+另请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
 
 
 ## 目标数据导出
@@ -134,11 +138,11 @@ ht-degree: 7%
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
 | 数据导出 | 授权的数据湖存储总数 | 性能护栏 | 客户可以使用目标数据集导出功能将数据湖中的客户数据导出到授权的数据湖存储总数。 |
-| 可用数据集 | 配置文件和事件 | 系统强制的护栏 | 通过源、Web SDK、Mobile SDK、Analytics Data Connector和Audience Manager摄取或收集数据后，在Experience PlatformUI中创建的事件、配置文件或查找数据集。 |
+| 可用数据集 | 配置文件和事件 | 系统强制的护栏 | 通过源、Web SDK、Mobile SDK、Analytics Data Connector和Audience Manager摄取或收集数据后，在Experience Platform UI中创建的事件、配置文件或查找数据集。 |
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform[数据集导出护栏](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
+另请参阅Experience Platform [数据集导出护栏](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## 数据登陆区
@@ -177,7 +181,7 @@ ht-degree: 7%
 |---|--:|---|---|
 | 每个过滤器的容器 | 50 | 系统强制的护栏 | 每个过滤器的最大容器数。 |
 | 每个计算量度的量度 | 25 | 系统强制的护栏 | 每个计算量度的最大量度数。 |
-| 每个过滤器的量度和Dimension | 25 | 系统强制的护栏 | 每个过滤器的唯一量度和维度的最大数量。 |
+| 每个过滤器的量度和维度 | 25 | 系统强制的护栏 | 每个过滤器的唯一量度和维度的最大数量。 |
 | 每个过滤器的嵌套容器 | 10 | 系统强制的护栏 | 每个过滤器的嵌套容器的最大数量。 |
 | 每个过滤器的规则 | 100 | 系统强制的护栏 | 每个过滤器的最大规则数。 |
 | 每个过滤器每个Dimension的字符串比较数 | 100 | 系统强制的护栏 | 每个过滤器每个维度的最大字符串比较数。 |
@@ -226,16 +230,16 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 有关详细信息，请参阅数据摄取Experience Platform[护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
+>以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 有关详细信息，请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
 
 | 数据流 | 预期延迟 |
 |---|---|
 | Adobe Analytics到Adobe Analytics Source的连接器（已启用A4T） | &lt; 30分钟 |
 | 到实时客户配置文件的Adobe Analytics Source连接器（未启用A4T） | &lt; 2分钟 |
 | Adobe Analytics Source连接器到Real-time Customer Profile（启用A4T） | &lt; 30分钟 |
-| 数据从Edge Network摄取到数据湖或流式摄取 | &lt; 60分钟 |
+| 数据从Edge Network引入数据湖或流式引入 | &lt; 60分钟 |
 | 从Adobe Analytics Source Connector将数据摄取到数据湖 | &lt; 2.25小时 |
-| 数据从数据湖摄取到Customer Journey Analytics | &lt; 90分钟 |
+| 将数据从数据湖摄取到Customer Journey Analytics | &lt; 90分钟 |
 | 拼接（可选功能；有关详细信息，请参阅[拼接概述](../stitching/overview.md)） | &lt; 4小时 |
 | 少于100亿个事件的Adobe Analytics Source Connector回填（最多13个月的历史数据） | &lt; 4周 |
 | 将受众发布到实时客户个人资料，包括自动创建流区段，并允许区段准备好接收数据。 | ≈ 60分钟 |
