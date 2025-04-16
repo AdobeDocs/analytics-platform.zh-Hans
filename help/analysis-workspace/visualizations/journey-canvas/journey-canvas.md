@@ -4,10 +4,10 @@ title: 历程画布
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 3c9827c4930568edb2022c699585f716a8ca72fe
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '1988'
-ht-degree: 92%
+ht-degree: 87%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 92%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_panel"
 >title="历程画布"
->abstract="分析人们如何完成或退出既定的历程。通过创建灵活的节点和箭头图形来构建用户历程分析，该图形可表示事件、维度项和过滤器的任意组合。拖动画布上的节点可重新排列历程的事件和条件。当您进行该操作时，数据会相应更新。<br/><br/>有权访问 Adobe Journey Optimizer 的客户可以分析现有的 Journey Optimizer 历程。"
+>abstract="分析人们如何完成或退出既定的历程。通过创建灵活的节点图和箭头图来构建用户历程的分析，这些节点和箭头表示事件、维度项和区段的任意组合。 拖动画布上的节点来重新排列历程的事件和条件。当您进行该操作时，数据会相应更新。<br/><br/>有权访问 Adobe Journey Optimizer 的客户可以分析现有的 Journey Optimizer 历程。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,7 +45,7 @@ ht-degree: 92%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_panel"
 >title="历程画布"
->abstract="分析人们如何完成或退出既定的历程。通过创建灵活的节点和箭头图形来构建用户历程分析，该图形可表示事件、维度项和过滤器的任意组合。拖动画布上的节点可重新排列历程的事件和条件。当您进行该操作时，数据会相应更新。<br/><br/>有权访问 Adobe Journey Optimizer 的客户可以分析现有的 Journey Optimizer 历程。"
+>abstract="分析人们如何完成或退出既定的历程。通过创建灵活的节点图和箭头图来构建用户历程的分析，这些节点和箭头表示事件、维度项和区段的任意组合。 拖动画布上的节点来重新排列历程的事件和条件。当您进行该操作时，数据会相应更新。<br/><br/>有权访问 Adobe Journey Optimizer 的客户可以分析现有的 Journey Optimizer 历程。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -57,7 +57,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 历程画布可视化图表可帮助您进行分析，并深入了解您为用户和客户提供的历程。它允许您从头开始定义历程，或从 Journey Optimizer 中查看历程，然后查看人们是如何离开（流失）或继续完成（流过）这个历程的。
 
-您可以通过任意组合事件、维度项、过滤器和日期范围来创建历程节点，从而[构建用户历程分析](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。通过连接各个节点来创建历程的流量，并包含多条路径和决策点。拖动画布上的节点来重新排列历程的事件和条件。当您进行更改时，数据会实时更新。
+您可以[通过使用事件、维度项、区段和日期范围的任意组合来创建用户历程的分析](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)以创建历程节点。 通过连接各个节点来创建历程的流量，并包含多条路径和决策点。拖动画布上的节点来重新排列历程的事件和条件。当您进行更改时，数据会实时更新。
 
 [节点会](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes)以“最终路径”的形式连接，这意味着只要访问者最终从一个节点移动到另一个节点，无论这两个节点之间发生任何事件，都会被计算在内。用户沿路径移动的时间由容器设置决定。
 
@@ -170,7 +170,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 使用历程画布分析在 Journey Optimizer 中创建的历程可带来多种好处：
 
-* 可使用任何 Customer Journey Analytics 维度、量度、过滤器或日期范围创建事件。
+* 使用任何Customer Journey Analytics维度、量度、区段或日期范围创建事件。
 
   在 Journey Optimizer 中，技术用户必须先创建一个事件，然后才能将其添加到历程中。
 
