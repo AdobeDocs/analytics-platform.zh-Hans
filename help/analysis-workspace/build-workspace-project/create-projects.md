@@ -4,10 +4,10 @@ title: 创建项目
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 04586de02765ddeba72aca3132b9eca5d22aced7
+source-git-commit: 191693bc970fcf59ee51706365abde0ee30e3d3d
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 88%
+source-wordcount: '431'
+ht-degree: 95%
 
 ---
 
@@ -92,7 +92,14 @@ ht-degree: 88%
 | 显示注释 | 指定是否显示该项目的注释。 |
 | [项目调色板](/help/analysis-workspace/build-workspace-project/color-palettes.md) | 通过从已为色盲优化过的现成调色板中进行选择或通过指定您的自定义调色板，可更改在 Workspace 中使用的类别调色板。此功能影响 Workspace 中的许多内容，包括大多数可视化。 |
 | [视图密度](/help/analysis-workspace/build-workspace-project/view-density.md) | 通过减小左侧面板、自由格式表和同类群组表的垂直边距，让您可在屏幕上看到更多数据。 |
-| 允许评论 | 启用此选项后，Analysis Workspace中项目的右边栏中将显示一个注释区域。 有关详细信息，请参阅[在项目中添加和管理注释](/help/analysis-workspace/build-workspace-project/comment-projects.md)。 |
+
+<!--
+
+Add this to the table above - exchange - for pipe: (End of April, 2025 when project commenting is GA)
+
+Allow commenting - When this option is enabled, a comments area is available in the right rail of the project in Analysis Workspace. For more information, see [Add and manage comments in projects](/help/analysis-workspace/build-workspace-project/comment-projects.md). 
+
+-->
 
 
 
