@@ -3,7 +3,7 @@ description: 您可以使用函数过滤/排序数据，以及执行统计分析
 title: 使用函数
 feature: Calculated Metrics
 exl-id: 7a41aa4e-90c6-4242-a801-2eef6b524cfe
-source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 23%
@@ -20,7 +20,7 @@ ht-degree: 23%
 
 >[!NOTE]
 >
->计算量度生成器的定义中包含函数时，应始终在拖入量度或过滤器之前应用该函数。
+>计算量度生成器的定义中包含函数时，应始终在拖入量度或区段之前应用该函数。
 >
 
 

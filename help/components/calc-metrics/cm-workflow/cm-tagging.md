@@ -3,10 +3,10 @@ description: 在计算量度管理器中，您可以通过标记区段来组织�
 title: 标记计算量度
 feature: Calculated Metrics
 exl-id: 25c9299b-34ae-475f-8e7f-5cc8540dab8a
-source-git-commit: 1907d94a0f53ee65a3839d879da6c06092f75e0f
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '171'
-ht-degree: 10%
+ht-degree: 12%
 
 ---
 
@@ -30,13 +30,13 @@ ht-degree: 10%
       * 从列表中选择一个或多个现有标记，或
       * 输入新标记并按&#x200B;**[!UICONTROL ENTER]**。 重复以上步骤以添加多个新标记。
 
-1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存计算指标的标记。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消。
+1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存计算指标的标记。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;即可取消。
 
 保存后，标记将在[计算量度生成器](cm-tagging.md)中选定计算量度的[!UICONTROL 标记]字段中列出。
 
 <!--
 
-In the Calculated metric manager, you can organize filters by tagging them.
+In the Calculated metric manager, you can organize segments by tagging them.
 
 All users can create tags for calculated metrics and apply one or more tags to a metric. However, you can see tags only for those calculated metrics that you own or that have been shared with you. 
 

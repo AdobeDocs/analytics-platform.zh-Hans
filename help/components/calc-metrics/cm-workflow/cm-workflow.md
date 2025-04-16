@@ -3,7 +3,7 @@ description: 了解如何创建计算量度。
 title: 创建计算量度
 feature: Calculated Metrics
 exl-id: 55ed36c1-99ca-400a-bc2b-661994cbf720
-source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 2%
@@ -12,9 +12,9 @@ ht-degree: 2%
 
 # 创建计算量度
 
-默认情况下，只有管理员才能创建计算指标。 用户有权查看计算量度，这类似于用户查看其他组件的方式（例如过滤器、注释等）。
+默认情况下，只有管理员才能创建计算指标。 用户有权查看计算量度，这与用户查看其他组件（如区段、注释等）的方式类似。
 
-但是，管理员可以通过[Admin Console](/help/technotes/access-control.md#user-level-access)向用户授予&#x200B;**[!UICONTROL 编辑CJA Workspace访问权限]**&#x200B;中&#x200B;**[!UICONTROL 报告工具]**&#x200B;的&#x200B;**[!UICONTROL 计算度量创建]**&#x200B;权限。
+但是，管理员可以通过[Admin Console](/help/technotes/access-control.md#user-level-access)向用户授予&#x200B;**[!UICONTROL 编辑CJA Workspace访问权限]**&#x200B;中&#x200B;**[!UICONTROL 报表工具]**&#x200B;的&#x200B;**[!UICONTROL 计算度量创建]**&#x200B;权限。
 
 
 您可以通过以下方式创建计算量度：

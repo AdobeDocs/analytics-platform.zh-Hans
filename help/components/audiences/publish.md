@@ -4,10 +4,10 @@ description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 1f21bec36f4c7d30940ed4bb95b097665a45b8ad
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '2320'
-ht-degree: 83%
+ht-degree: 78%
 
 ---
 
@@ -72,8 +72,8 @@ ht-degree: 83%
    | 创建方法 | 详细信息 |
    | --- | --- |
    | 从&#x200B;**[!UICONTROL 受众]**&#x200B;界面中 | 在 Customer Journey Analytics 菜单中，选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 受众]**。“受众”界面显现。选择&#x200B;**[!UICONTROL 创建受众]**，将打开[!UICONTROL 受众生成器]。 |
-   | 从 Analysis Workspace 的可视化功能 | Analysis Workspace 中的许多可视化功能允许您使用上下文菜单创建受众。例如，您可以从[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)中的项目或[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)中的节点的上下文菜单中选择&#x200B;**[!UICONTROL 创建受众]**。<p>使用此方法时会在受众生成器中用您选择的维度或维度项预填充过滤器。</p><p>以下可视化功能可让您使用右键菜单创建受众：</p><ul><li>[同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[流](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[维恩图](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**注释：**&#x200B;受众不能包含计算量度。如果您尝试创建包含计算量度的受众，则受众定义不会包含该计算量度。</p> |
-   | 通过过滤器创建/编辑 UI | 选中显示&#x200B;**[!UICONTROL 从此过滤器创建受众]**&#x200B;的框。使用此方法时会预填充过滤器。有关更多信息，请参阅[创建过滤器](/help/components/filters/create-filters.md)。 |
+   | 从 Analysis Workspace 的可视化功能 | Analysis Workspace 中的许多可视化功能允许您使用上下文菜单创建受众。例如，您可以从[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)中的项目或[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)中的节点的上下文菜单中选择&#x200B;**[!UICONTROL 创建受众]**。<p>使用此方法时会使用您选择的维度或维度项目预填充受众生成器中的区段。</p><p>以下可视化功能可让您使用右键菜单创建受众：</p><ul><li>[同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[流](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[维恩图](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**注释：**&#x200B;受众不能包含计算量度。如果您尝试创建包含计算量度的受众，则受众定义不会包含该计算量度。</p> |
+   | 通过区段创建/编辑UI | 选中显示&#x200B;**[!UICONTROL 从此区段创建受众的框]**。 使用此方法时会预填充区段。 有关更多信息，请参阅[创建过滤器](/help/components/filters/create-filters.md)。 |
 
    {style="table-layout:auto"}
 
@@ -101,7 +101,7 @@ ht-degree: 83%
 | **[!UICONTROL 标记]** | 出于组织目的而要分配给受众的任何标记。您可以选择一个或多个预先存在的标记，也可以输入一个新标记。 |
 | **[!UICONTROL 描述]** | 对受众的描述，以区别于其他人。例如，`Build an audience of really interested potential car buyers` |
 | **[!UICONTROL 刷新频率]** | 您刷新受众所要采用的频率。<p/>您可以选择 <ul><li>**[!UICONTROL 一次性]** 受众：无需刷新的受众（默认）。例如，该选项可能有助于特定的一次性营销活动。<br/>您必须指定一个&#x200B;**[!UICONTROL 一次性的日期范围]**。您可以使用![日程表](/help/assets/icons/Calendar.svg)来输入日期范围。</li><li>刷新的受众。您可以从下列选项中进行选择：<ul><li>**[!UICONTROL 每 4 小时]**：每 4 小时刷新一次的受众。</li><li>**[!UICONTROL 每日]**：每日刷新一次的受众</li><li>**[!UICONTROL 每周]**：每周刷新一次的受众。</li><li>**[!UICONTROL 每月]**：每月刷新一次的受众</li></ul></li>若要刷新观众，您必须指定：<ul><li>**[!UICONTROL 刷新回顾窗口]**。定义从今天开始评估受众的回顾天数。您可以从选项中进行选择或定义自定义时间。最长为 90 天。</li><li>**[!UICONTROL 到期日期]**：定义受众停止刷新的时间。您可以使用![日程表](/help/assets/icons/Calendar.svg)选择日期。默认值为创建日期开始 1 年。到期受众的处理方式与到期的计划报告类似。管理员会在受众到期前一个月收到一封电子邮件。</li></ul> 请注意，受众刷新次数限制为 75 到 150 次，具体取决于您的 Customer Journey Analytics 权限。</li></ul> |
-| **[!UICONTROL 过滤器]** | 过滤器是受众的主要输入。将一个或多个过滤器从左侧![分段](/help/assets/icons/Segmentation.svg)**[!UICONTROL 过滤器]**&#x200B;面板拖放到过滤器区域。您可以使用![搜索](/help/assets/icons/Search.svg)[!UICONTROL *搜索过滤器*]&#x200B;来搜索过滤器。您最多可以添加 20 个过滤器。过滤器可以与 **[!UICONTROL And]** 或 **[!UICONTROL Or]** 运算符相连。<p>从 Analysis Workspace 中的可视化（例如自由格式表或“历程”画布）创建受众时，应用于面板或列的任何过滤器都会保留。您可以移除任何自动应用的过滤器。</p> |
+| **[!UICONTROL 过滤器]** | 过滤器是受众的主要输入。从左侧![分段](/help/assets/icons/Segmentation.svg) **[!UICONTROL 区段]**&#x200B;面板将一个或多个区段拖放到“区段”区域。 您可以使用![搜索](/help/assets/icons/Search.svg) [!UICONTROL *搜索区段*]&#x200B;来搜索区段。 您最多可以添加20个区段。 区段可以与&#x200B;**[!UICONTROL And]**&#x200B;或&#x200B;**[!UICONTROL Or]**&#x200B;运算符相连。<p>从Analysis Workspace中的可视化图表(例如自由格式表或历程画布)创建受众时，应用于面板或列的任何区段都会保留。 您可以删除任何自动应用的区段。</p> |
 | **[!UICONTROL 数据预览]** | 选择![信息](/help/assets/icons/Info.svg)可显示或隐藏所选日期范围的[数据预览](#data-preview)。 |
 
 ## 数据预览

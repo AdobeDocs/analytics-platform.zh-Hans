@@ -3,10 +3,10 @@ description: 根据您的权限，您可以与整个组织、群组或个人用�
 title: 共享计算量度
 feature: Calculated Metrics
 exl-id: b2a3e4e3-f0aa-4505-b3f5-7d9f14dc1640
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 10%
 
    1. 从&#x200B;**[!UICONTROL 组织]**&#x200B;或&#x200B;**[!UICONTROL 组]**&#x200B;部分中选择一个或多个选项，或者搜索并选择一个或多个个人。 可用的选项取决于您的角色。
 
-   1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以共享计算量度。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消。
+   1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以共享计算量度。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;即可取消。
 
 ## 最佳实践
 
@@ -39,7 +39,7 @@ ht-degree: 10%
 
 * 作为管理员，如果计算量度为特定组的用户部分提供了业务价值，那么就应当将该计算量度与该组共享。
 
-* 作为管理员或个人用户，请将计算指标与一个或多个个人共享以验证计算指标。 如果经证实过滤器没有用处，则可以删除计算指标。
+* 作为管理员或个人用户，请将计算指标与一个或多个个人共享以验证计算指标。 如果事实证明，区段没有用处，则可以删除计算指标。
 
 
 <!--
