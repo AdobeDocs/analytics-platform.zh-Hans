@@ -1,5 +1,5 @@
 ---
-source-git-commit: d91a00036cbbfa21c7d0a772ccbefb2ab37a4c59
+source-git-commit: 5311106f486a30dbc7f06b3ef60dc7e666d2fe03
 workflow-type: tm+mt
 source-wordcount: '3796'
 ht-degree: 30%
@@ -235,7 +235,7 @@ ht-degree: 30%
 
 >[!AVAILABILITY]
 >
->本文中介绍的功能以及标记为[!BADGE B2B edition]{type=Informative}的任何其他文章或功能。  处于版本的有限测试阶段，可能尚未在您的环境中提供。 <br/>此外，[!BADGE B2B edition]{type=Informative}功能以及[!BADGE B2B edition]{type=Informative}功能的文档可能会发生更改，因此不会产生任何法律义务。<br/>当功能正式可用时，将删除此注释。 有关Customer Journey Analytics发布过程的信息，请参阅[Customer Journey Analytics功能发布](/help/release-notes/releases.md)。
+>本文中介绍的功能以及标记为[!BADGE B2B edition]{type=Informative}的任何其他文章或功能都处于版本的有限测试阶段，可能尚未在您的环境中提供。 <br/>此外，[!BADGE B2B edition]{type=Informative}功能以及[!BADGE B2B edition]{type=Informative}功能的文档可能会发生更改，因此不会产生任何法律义务。<br/>当功能正式可用时，将删除此注释。 有关Customer Journey Analytics发布过程的信息，请参阅[Customer Journey Analytics功能发布](/help/release-notes/releases.md)。
 >
 
 
