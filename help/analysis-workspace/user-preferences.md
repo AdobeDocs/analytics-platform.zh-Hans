@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
+source-git-commit: 60074b300cb5fa07ed3b2d6bb2e4501881909984
 workflow-type: tm+mt
-source-wordcount: '3632'
-ht-degree: 98%
+source-wordcount: '3810'
+ht-degree: 77%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 98%
 
 - 从 Workspace 主界面选择 ![UserAdmin](/help/assets/icons/UserAdmin.svg) **[!UICONTROL 编辑偏好设置]**。
 - 在 Workspace 项目中工作时，从菜单中选择&#x200B;**[!UICONTROL 项目]** > **[!UICONTROL 用户偏好设置]**。
-- 从主 Customer Journey Analytics 顶部栏中选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 偏好设置]**（仅适用于产品管理员）。
+- 从Customer Journey Analytics的顶部菜单栏中选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 首选项]**（仅适用于产品管理员）。
 
 ## 配置偏好设置
 
@@ -64,7 +64,7 @@ ht-degree: 98%
 | 部分 | 偏好设置 | 选项 |
 | --- | --- | --- |
 | **项目共享** | | |
-| | 仅允许与 Workspace 用户共享 | 启用此选项后，组织内的用户将无法在&#x200B;**[!UICONTROL 共享]**&#x200B;菜单中看到&#x200B;**[!UICONTROL 与任何人共享]**&#x200B;选项。这意味着，用户无法与已在您的组织中拥有 Analysis Workspace 帐户的人员共享项目，如[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)中所述。<br/>默认情况下，除许可了 Healthcare Shield 的客户外，所有组织均禁用此选项（这意味着用户可以与组织外部的人员共享项目）。 <p>在启用或禁用此选项时，请考虑以下事项：<ul><li>启用此选项后，之前通过[!UICONTROL 与任何人共享]共享选项获得项目访问权限的人员将无法再访问该项目。</li><li>如果启用此选项（仅允许与 Workspace 用户共享），然后将其禁用（允许与任何人共享），则之前通过[!UICONTROL 与任何人共享]共享选项获得项目访问权限的人员不会自动重新获得对项目的访问权限。在这种情况下，已共享项目的用户必须启用在与任何人共享项目时可用的&#x200B;[!UICONTROL **链接已激活**]&#x200B;选项&#x200B;**（[!UICONTROL 共享]** > **[!UICONTROL 与任何人共享]**），如[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)中所述。</li><li>**对于许可 Healthcare Shield 的客户：**&#x200B;该选项默认启用且无法禁用。在禁用此选项以便用户可以使用[!UICONTROL 与任何人共享]的共享选项之前，您首先需要在 Adobe Admin Console 中添加[!UICONTROL 与任何人共享项目链接]权限（位于[!UICONTROL 报告工具]下）。添加权限后，您可以禁用此选项，然后接受由此产生的法律声明。有关如何在 Admin Console 中添加权限的信息，请参阅[在 Admin Console 中管理产品权限](https://helpx.adobe.com/cn/enterprise/using/manage-permissions-and-roles.html)。</li></ul> |
+| | 仅允许与 Workspace 用户共享 | 启用此选项后，组织内的用户将无法在&#x200B;**[!UICONTROL 共享]**&#x200B;菜单中看到&#x200B;**[!UICONTROL 与任何人共享]**&#x200B;选项。这意味着，用户无法与已在您的组织中拥有 Analysis Workspace 帐户的人员共享项目，如[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)中所述。<br/>默认情况下，除许可了 Healthcare Shield 的客户外，所有组织均禁用此选项（这意味着用户可以与组织外部的人员共享项目）。 <p>在启用或禁用此选项时，请考虑以下事项：<ul><li>启用此选项后，之前通过[!UICONTROL 与任何人共享]共享选项获得项目访问权限的人员将无法再访问该项目。</li><li>如果启用此选项（仅允许与 Workspace 用户共享），然后将其禁用（允许与任何人共享），则之前通过[!UICONTROL 与任何人共享]共享选项获得项目访问权限的人员不会自动重新获得对项目的访问权限。在这种情况下，已共享项目的用户必须启用在与任何人共享项目时可用的&#x200B;**[!UICONTROL 链接已激活]**&#x200B;选项&#x200B;**（[!UICONTROL 共享]** > **[!UICONTROL 与任何人共享]**），如[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)中所述。</li><li>**对于许可 Healthcare Shield 的客户：**&#x200B;该选项默认启用且无法禁用。在禁用此选项以便用户可以使用[!UICONTROL 与任何人共享]的共享选项之前，您首先需要在 Adobe Admin Console 中添加[!UICONTROL 与任何人共享项目链接]权限（位于[!UICONTROL 报告工具]下）。添加权限后，您可以禁用此选项，然后接受由此产生的法律声明。有关如何在 Admin Console 中添加权限的信息，请参阅[在 Admin Console 中管理产品权限](https://helpx.adobe.com/cn/enterprise/using/manage-permissions-and-roles.html)。</li></ul> |
 | | 需要 Experience Cloud 身份验证 | 启用后，通过 Analysis Workspace 中的“与任何人共享”选项获得项目访问权限的人员必须使用其 Experience Cloud 凭据进行身份验证。<p>启用此选项后，当用户使用[!UICONTROL 与任何人共享]共享选项来共享项目时，共享对话框中都会启用[!UICONTROL 需要 Experience Cloud 身份验证]选项，并且共享项目的用户无法禁用该选项。有关用户如何与任何人共享项目的信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)。 <p> <p>启用此选项时，请考虑以下事项： <ul><li>启用此选项后，所有之前通过[!UICONTROL 与任何人共享]共享选项共享且未启用[!UICONTROL 需要 Experience Cloud 身份验证]选项的项目都将被停用。<p>如果启用此选项（以要求进行 Experience Cloud 身份验证），然后将其禁用（以允许拥有链接的任何人员访问项目），则之前通过[!UICONTROL 与任何人共享]共享选项获得项目访问权限的人员不会自动重新获得对项目的访问权限。在这种情况下，已共享项目的用户必须启用在与任何人共享项目时可用的[!UICONTROL 链接已激活]选项&#x200B;**（[!UICONTROL 共享]** > **[!UICONTROL 与任何人共享]** > **[!UICONTROL 链接已激活]**），如[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)中所述。</li><li>仅在组织内实施 SSO 后，此选项才可用。有关系统管理员如何为组织启用 SSO 的信息，请参阅[设置身份标识和单点登录](https://helpx.adobe.com/cn/enterprise/using/set-up-identity.html)。</p><p>如果已为组织配置 SSO，请检查控制台中是否实施了任何类型的自动帐户创建。通常，系统管理员会进行此设置，如[启用自动帐户创建](https://helpx.adobe.com/cn/enterprise/using/automatic-account-creation.html)中所述。</li><li>如果您的组织许可 Healthcare Shield，则默认情况下会启用此选项且无法禁用。</li></ul> |
 
 {style="table-layout:auto"}
@@ -144,7 +144,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulttablemetric"
 >title="默认表量度"
->abstract="选择用于自由格式表的默认量度。如果选定的数据视图不包含所选的默认量度，表格将自动切换到另一个主要量度。"
+>abstract="选择用于自由格式表的默认量度。如果选定的数据视图不包含选定的默认度量，则表会自动切换到另一个主度量。"
 
 
 <!-- markdownlint-enable MD034 -->
@@ -166,14 +166,14 @@ ht-degree: 98%
 | | 调整日期 | 选择此选项可将每列的日期与同一行的所有开始日期对齐。 |
 | **[列](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)** | | |
 | | 隐藏标头文本 | 允许您隐藏自由格式表中的标头文本，以使标头更加易读，表格更易共享。这对 .pdf 渲染和名称较长的量度非常有用。默认处于启用状态。 |
-| | 显示总数 | 此总数通常等于[!UICONTROL 全部总计]或者为其一部分。它反映自由格式表内应用的任何表区段，包括[!UICONTROL 不包含任何内容]选项。 |
-| | 显示总计 | 此总计表示已收集的所有事件数，有时候称为“数据视图总计”。当在面板级别或自由格式表中应用区段时，此总计会进行相应的调整以反映符合区段条件的所有事件。 带有[统计行](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)的表或细分不支持全部总计。 |
+| | 显示总数 | 此总数通常等于[!UICONTROL 总计]或为其一部分。 它反映自由格式表内应用的任何表区段，包括[!UICONTROL 不包含任何内容]选项。 |
+| | 显示总计 | 此总数表示已收集的所有事件，有时称为&#x200B;*数据视图总计*。 当在面板级别或自由格式表中应用区段时，此总计会进行相应的调整以反映符合区段条件的所有事件。 带有[统计行](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)的表或细分不支持全部总计。 |
 | | 显示迷您图 | 在图表底部显示或隐藏线形图。隐藏时，图例更改为不再在视觉上参照线形图。 |
 | | 数值 | 确定单元格是否显示/隐藏量度的数值。例如，如果量度是“页面查看次数”，则数值是行项目的页面查看次数。 |
-| | 百分比 | 确定单元格是否显示/隐藏量度的百分比值。例如，如果量度是“页面查看次数”，则百分比值等于行项目的页面查看次数除以该列的页面查看总数。注意：我们可以显示大于 100% 的百分比，准确度提高了。此外，我们还将上限调整为 1,000%，以确保允许列值有充足的变化范围。 |
+| | 百分比 | 确定单元格是否显示/隐藏量度的百分比值。例如，如果量度是页面查看次数，则百分比值是行项目的页面查看次数除以列的页面查看总数。  注意：为了更加准确，您可以显示大于100%的百分比。 您还可以将上限上限移动到1,000%，以确保列可以过宽的增长。 |
 | | 显示异常 <!-- This setting was moved from the "Project" tab. this is already in the tool/docs under "Freeform table, But the doc doesn't give a definition. --> | 确定此列中的值是否要运行异常检测。 |
 | | 显示预测 | 确定是否自动显示您创建的任何时间序列自由格式表中第一个量度列的预测值。 |
-| | 将零解释为没有值 | 对于具有 0 值的单元格，确定将其显示为 0 还是空白单元格。当您查看一个月中每一天的数据，而有些天尚未发生时，这非常有用。可以为将来日期显示空白单元格，而不是 0。各种图表也遵循这种设置（即，选中该设置后，折线图或条形图将不显示值为 0 的部分）。 |
+| | 将零解释为没有值 | 对于具有 0 值的单元格，确定将其显示为 0 还是空白单元格。当您查看一个月中每一天的数据，而有些天尚未发生时，这非常有用。可以为将来日期显示空白单元格，而不是 0。图表也遵循此设置（例如，选中此设置时，购物车不会显示值为0的线或条形图）。 |
 | | 背景 | 确定单元格是否显示/隐藏所有单元格格式，包括条形图和条件格式。 <ul><li>条形图</li> 显示一个水平条形图，表示单元格相对于列总数的值。 <li>条件格式</li>有关条件格式的详细信息，请参阅[列设置](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)中的“条件格式”</ul> |
 | | 单元格预览 | 显示应用当前所选的格式选项时，每个单元格的预览效果。 |
 | **[行](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)** | | |
@@ -186,22 +186,22 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultflowcontainer"
 >title="默认容器"
->abstract="选择用于[!UICONTROL 流量]可视化图表的默认容器。如果选定的数据视图不包含选定的默认容器，则[!UICONTROL 流量]可视化图表将会自动切换到另一个主容器。"
+>abstract="选择用于[!UICONTROL 流量]可视化图表的默认容器。如果所选数据视图不包含所选的默认容器，则[!UICONTROL 流量]可视化图表会自动切换到另一个主容器。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultfalloutcontainer"
 >title="默认容器"
->abstract="选择用于[!UICONTROL 流失]可视化图表的默认容器。如果选定的数据视图不包含选定的默认容器，则[!UICONTROL 流失]可视化图表将会自动切换到另一个主容器。"
+>abstract="选择用于[!UICONTROL 流失]可视化图表的默认容器。如果所选数据视图不包含所选的默认容器，则[!UICONTROL 流失]可视化图表会自动切换到另一个主容器。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulthistogramcountingmethod"
 >title="默认计数方法"
->abstract="选择用于[!UICONTROL 直方图]可视化图表的默认计数方法。如果选定的数据视图不包含选定的默认计数方法，则[!UICONTROL 直方图]可视化图表将会自动切换到另一个主计数方法。"
+>abstract="选择用于[!UICONTROL 直方图]可视化图表的默认计数方法。如果所选数据视图不包含所选的默认计数方法，则[!UICONTROL 直方图]可视化图表会自动切换到另一个主要计数方法。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultjourneycanvascontainer"
 >title="默认容器"
->abstract="选择用于[!UICONTROL 历程画布]可视化图表的默认容器。如果选定的数据视图不包含选定的默认容器，则[!UICONTROL 历程画布]可视化图表将会自动切换到另一个主容器。"
+>abstract="选择用于[!UICONTROL 历程画布]可视化图表的默认容器。如果所选数据视图不包含所选的默认容器，[!UICONTROL 历程画布]可视化图表将自动切换到另一个主容器。"
 
 
 您可以更新在 Analysis Workspace 中创建的所有新项目的可视化偏好设置。有关如何访问这些偏好设置的信息，请参阅[更新偏好设置](#update-preferences)。
@@ -215,24 +215,24 @@ ht-degree: 98%
 | **常规默认值** | | |
 | | 百分比 | 以百分比显示所有可视化的值。 |
 | | 图例可见 | 用于隐藏所有可视化的详细图例文本。 |
-| | 限制最大项目数 | 减少所有可视化的 X 轴上的项目数。如果您有大型数据集，这会很有用。 |
-| | 显示双轴（适用时） | 仅适用于具有两个量度的情况，可以在左（用于一个量度）、右（用于另一个量度）两边各有一个 y 轴。在所绘制量度的数量级差别很大时，此项非常有用。 |
-| | 标准化（适用时） | 要求所有量度按等比例计算。在所绘制量度的数量级差别很大时，此项非常有用。 |
-| | 将 Y 轴定位在零 | 如果图表上绘制的所有值都远远大于零，则图表默认会将 y 轴底部设置为非零值。如果选中此框，y 轴将被强制设置为零（并将重新绘制图表）。 |
-| | 将异常情况锚定到 Y 轴 | Y 轴将会使用异常值进行缩放。 |
+| | 限制最大项目数 | 减少所有可视化的 X 轴上的项目数。如果您有一个大型数据集，此首选项可能很有用。 |
+| | 显示双轴（适用时） | 仅适用于具有两个量度的情况，可以在左（用于一个量度）、右（用于另一个量度）两边各有一个 y 轴。在所绘制量度的数量级差别很大时，此首选项非常有用。 |
+| | 标准化（适用时） | 要求所有量度按等比例计算。在所绘制量度的数量级差别很大时，此首选项非常有用。 |
+| | 将 Y 轴定位在零 | 如果图表上绘制的所有值都显着高于零，则图表默认值会将y轴的底部更新为非零。 如果选中此框，Y轴将被强制为零（并重新绘制图表）。 |
+| | 将异常情况锚定到 Y 轴 | y轴使用异常值缩放。 |
 | **[折线图](/help/analysis-workspace/visualizations/line.md)** | | |
 | | 百分比 | 以百分比显示线条可视化的值。 |
 | | 图例可见 | 允许您为折线图可视化隐藏详细的图例文本。 |
-| | 限制最大项目数 | 减少直线可视化中 X 轴上的项目数。如果您有大型数据集，这会很有用。 |
-| | 显示双轴（适用时） | 仅适用于具有两个量度的情况，可以在左（用于一个量度）、右（用于另一个量度）两边各有一个 y 轴。在所绘制量度的数量级差别很大时，此项非常有用。 |
-| | 标准化（适用时） | 要求所有量度按等比例计算。在所绘制量度的数量级差别很大时，此项非常有用。 |
+| | 限制最大项目数 | 减少直线可视化中 X 轴上的项目数。如果您有一个大型数据集，此首选项可能很有用。 |
+| | 显示双轴（适用时） | 仅适用于具有两个量度的情况，可以在左（用于一个量度）、右（用于另一个量度）两边各有一个 y 轴。在所绘制量度的数量级差别很大时，此首选项非常有用。 |
+| | 标准化（适用时） | 要求所有量度按等比例计算。在所绘制量度的数量级差别很大时，此首选项非常有用。 |
 | | 显示 X 轴 | 在折线图上显示 x 轴。 |
 | | 显示 Y 轴 | 在折线图上显示 y 轴。 |
-| | 锚 Y 轴 | 如果图表上绘制的所有值都远远大于零，则图表默认会将 y 轴底部设置为非零值。如果选中此框，y 轴将被强制设置为零（并将重新绘制图表）。 |
-| | 允许异常缩放 Y 轴 | 如果图表中有多个量度，则必须将鼠标悬停在每个异常上以查看该量度的置信区间。为了使可视化更清晰，异常检测置信区间不会自动缩放 y 轴。此选项允许置信区间缩放可视化。 <p>有关详细信息，请参阅 Analysis Workspace 中的[查看异常情况](/help/analysis-workspace/c-anomaly-detection/view-anomalies.md)。</p> |
-| | 允许预测缩放 Y 轴 | 如果您的预测值超出历史值的上限和下限，则 y 轴不会针对这些预测值自动缩放。启用后，此选项会正确缩放预测值的 y 轴。 |
-| | 显示最小值 | 覆盖最小值标签以快速突出显示量度中的谷值。注意：最小值派生自可视化内容中的可见数据点，而不是维度中的完整值集。 |
-| | 显示最大值 | 覆盖最大值标签以快速突出显示量度中的峰值。注意：最大值派生自可视化内容中的可见数据点，而不是维度中的完整值集。 |
+| | 锚 Y 轴 | 如果图表上绘制的所有值都显着高于零，则图表默认值会将y轴的底部渲染为非零。 如果选中此框，y轴将被强制为零（并重新绘制图表）。 |
+| | 允许异常缩放 Y 轴 | 如果图表中有多个量度，则必须将鼠标悬停在每个异常上以查看该量度的置信区间。为了使可视化更清晰，异常检测置信区间不会自动缩放 y 轴。此设置允许置信区间缩放可视化图表。 <p>有关更多信息，请参阅[查看 Analysis Workspace 中的异常情况](/help/analysis-workspace/c-anomaly-detection/view-anomalies.md)。</p> |
+| | 允许预测缩放 Y 轴 | 如果您的预测值在历史值的上下限之外，则y轴不会自动缩放这些预测值。 打开此选项时，会正确缩放预测值的y轴。 |
+| | 显示最小值 | 叠加最小值标签以快速突出显示指标中的谷值。 注意：最小值派生自可视化内容中的可见数据点，而不是维度中的完整值集。 |
+| | 显示最大值 | 叠加最大值标签以快速突出显示指标中的峰值。 注意：最大值派生自可视化内容中的可见数据点，而不是维度中的完整值集。 |
 | | 显示趋势线 | 显示线系列的回归或均线。趋势线有助于在数据中描绘更清晰的图案。 |
 | **[同类群组](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md)** | | |
 | | 粒度 | 对于趋势性可视化内容，您可以更改时间粒度（日、周、月、季度或年）。此更改也适用于数据源表。 |
@@ -247,22 +247,24 @@ ht-degree: 98%
 | | 摘要显示类型 | <ul><li>强调百分比变化</li><li>强调数值</li></ul> |
 | | 显示迷您图 | 在图表底部显示或隐藏线形图。隐藏时，图例更改为不再在视觉上参照线形图。 |
 | | 在迷您图上显示最大值和最小值 | 在主线形图和比较线形图上显示最小值和最大值。 |
-| | 显示比较 | 显示对比数据。隐藏时，比较线形图和汇总更改对象将从视图中隐藏。 |
+| | 显示比较 | 显示对比数据。隐藏时，比较线形图和摘要变化对象在视图中隐藏。 |
 | | 数值选项 | 在&#x200B;[!UICONTROL **关键量度摘要**]&#x200B;部分 <ul><li>显示百分比变化</li><li>显示原始差异</li>主要日期范围和次要日期范围中量度的总值之间的原始差异</ul> |
 | **[流失](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)** | | |
-| | 容器 | 允许您在&#x200B;**[!UICONTROL 会话]**&#x200B;和&#x200B;**[!UICONTROL 人员]**&#x200B;之间切换，以分析人员路径。默认为&#x200B;**[!UICONTROL 人员]**。这些设置可帮助您在人员级别（跨会话）了解人员参与程度，或将分析限定于单次会话。 <p>可以使用以下选项：</p> <ul><li>会话</li><li>人员</li></ul> |
+| | 容器 | 允许您在&#x200B;**[!UICONTROL 会话]**&#x200B;和&#x200B;**[!UICONTROL 人员]**&#x200B;之间切换以分析路径。 这些设置可帮助您了解各个B2B容器级别[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}的帐户参与度、人员级别（跨会话）的人员参与度，或将分析限制在单个会话。 <p>可以使用以下选项：</p> <ul><li>全局帐户[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>帐户[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>购买群[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>机会[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>会话</li><li>人员</li></ul> |
 | **[流](/help/analysis-workspace/visualizations/c-flow/create-flow.md)** | | |
-| | 容器 | 在&#x200B;[!UICONTROL **流**]&#x200B;部分 <ul><li>会话</li><li>人员</li></ul> |
+| | 容器 | 在&#x200B;**[!UICONTROL 流量]**&#x200B;部分中： <ul><li>全局帐户[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>帐户[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>购买群[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>机会[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>会话</li><li>人员</li></ul> |
 | | 包装标签 | 通常情况下，流量元素上的标签会被截断以节约屏幕资源，但您可以通过选中此框使整个标签可见。默认值 = 取消选中。 |
-| | 包括重复实例 | 流量可视化内容基于某个维度的实例。此设置使您可以选择包含还是排除重复实例，例如页面重新载入。但是，不能从包含多值维度（例如 listVar、listProp、s.product、推销 eVar 等）的流量可视化内容中删除重复项。默认值 = 取消选中。 |
-| | 显示工具提示 | 确定将光标悬停在流量可视化内容中的各个节点上时是否显示包含节点数据的工具提示。 |
+| | 包括重复实例 | 流量可视化图表基于某个维度的实例。此设置使您可以选择包含还是排除重复实例，例如页面重新载入。但是，不能从包含多值维度（例如 listVar、listProp、s.product、推销 eVar 等）的流量可视化内容中删除重复项。默认值 = 取消选中。 |
+| | 显示工具提示 | 确定将鼠标悬停在流量可视化图表中各个节点上时是否显示包含节点数据的工具提示。 |
 | | 列数 | 确定在流量图中需要多少列。 |
 | | 每列扩展的项 | 每列中需要多少项。 |
+| **[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)** | | |
+| | 容器 | 允许您在&#x200B;**[!UICONTROL 会话]**&#x200B;和&#x200B;**[!UICONTROL 人员]**&#x200B;之间切换以分析路径。 默认为&#x200B;**[!UICONTROL 人员]**。这些设置可帮助您了解各个B2B容器级别[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}的帐户参与度、人员级别（跨会话）的人员参与度，或将分析限制在单个会话。 <p>可以使用以下选项：</p> <ul><li>全局帐户[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>帐户[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>购买群[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>机会[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>会话</li><li>人员</li></ul> |
 | **堆栈图** | | |
-| | 100% 堆叠 | 在面积堆叠、条形堆叠或水平条形堆叠的可视化内容上的此设置将图表转换为“100% 堆叠”的可视化内容。 <p>如需了解更多信息，请参阅[条形和堆叠条形](/help/analysis-workspace/visualizations/bar.md)。</p> |
+| | 100% 堆叠 | 在面积堆叠、条形堆叠或水平条形堆叠的可视化内容上的此设置将图表转换为“100% 堆叠”的可视化内容。 <p>有关详细信息，请参阅[条形图和栈叠的条形图](/help/analysis-workspace/visualizations/bar.md)。</p> |
 | **[直方图](/help/analysis-workspace/visualizations/histogram.md)** | | |
 | | 存储体数量 | 在可视化中选择日期范围（储存体）的数量。存储段的最大数量为 50。 <p>有关更多信息，请参阅[直方图](/help/analysis-workspace/visualizations/histogram.md)。</p> |
-| | 计算方法 | 从以下选项中进行选择： <ul><li>点击</li><li>会话</li><li>人员</li></ul> <p>例如，当与页面查看量结合使用时，您可以选择每个人员的页面查看量、访问的页面查看量或每次事件的页面查看量。对于点击来说，“发生次数”可作为自由格式表中的 y 轴量度。</p> |
+| | 计算方法 | 从以下选项中进行选择： <ul><li>点击</li><li>会话</li><li>人员</li></ul> <p>例如，在用于页面查看时，您可以选择每人页面查看次数、访问的页面查看次数或每个事件的页面查看次数。 对于点击来说，“发生次数”可作为自由格式表中的 y 轴量度。</p> |
 | **[概要变化](/help/analysis-workspace/visualizations/summary-number-change.md)** | | |
 | | 值 | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>比例更改</li><li>原始差异</li></ul> |
 | | 百分比 | 以百分比显示摘要更改可视化效果的值。 |
@@ -271,21 +273,21 @@ ht-degree: 98%
 | | 百分比 | 以百分比显示摘要编号可视化的值。 |
 | | 图例可见 | 用于隐藏摘要编号可视化的详细图例文本。 |
 | | 值汇总方式 | 从最大值、最小值、平均值、中值和总和中进行选择。 |
-| | 缩写值 | 在&#x200B;[!UICONTROL **摘要编号**]&#x200B;部分 |
+| | 缩写值 | 在&#x200B;**[!UICONTROL 摘要编号]**&#x200B;部分 |
 | **[树形图](/help/analysis-workspace/visualizations/treemap.md)** | | |
 | | 百分比 | 以百分比显示 Treemap 可视化的值。 |
-| | 限制最大项目数 | 减少树形图可视化中 X 轴上的项目数。如果您有大型数据集，这会很有用。 |
+| | 限制最大项目数 | 减少树形图可视化中 X 轴上的项目数。如果您有一个大型数据集，此首选项可能很有用。 |
 | **[维恩图](/help/analysis-workspace/visualizations/venn.md)** | | |
 | | 图例可见 | 允许您为维恩图可视化隐藏详细的图例文本。 |
 | **[散点图](/help/analysis-workspace/visualizations/scatterplot.md)** | | |
 | | 百分比 | 以百分比显示散点图可视化的值。 |
 | | 图例可见 | 允许您为散点图可视化隐藏详细的图例文本。 |
-| | 限制最大项目数 | 减少散点图可视化中 X 轴上的项目数。如果您有大型数据集，这会很有用。 |
-| | 将 Y 轴定位在零 | 如果图表上绘制的所有值都远远大于零，则图表默认会将 y 轴底部设置为非零值。如果选中此框，y 轴将被强制设置为零（并将重新绘制图表）。 |
+| | 限制最大项目数 | 减少散点图可视化图表中X轴上的项目数。  如果您有一个大型数据集，此首选项可能很有用。 |
+| | 将 Y 轴定位在零 | 如果图表上绘制的所有值都显着高于零，则图表默认值会将y轴的底部渲染为非零。 如果选中此框，Y轴将被强制为零（并重新绘制图表）。 |
 
 ## 恢复默认偏好设置
 
-您可以将所有用户偏好设置恢复为系统默认值。这不会影响公司选项卡下的管理员偏好设置。
+您可以将所有用户偏好设置恢复为系统默认值。此首选项不影响“公司”选项卡下的管理员首选项。
 
 此操作无法撤销。
 
@@ -293,7 +295,7 @@ ht-degree: 98%
 
 1. 在右上角，选择&#x200B;**[!UICONTROL 恢复默认]**。
 
-1. 在&#x200B;**[!UICONTROL 恢复系统默认设置]**&#x200B;中选择&#x200B;**[!UICONTROL 恢复默认值]**。
+1. 在&#x200B;**[!UICONTROL 还原系统默认设置]**&#x200B;中选择&#x200B;**[!UICONTROL 还原默认值]**。
 
 ## [!UICONTROL 深色主题]
 
