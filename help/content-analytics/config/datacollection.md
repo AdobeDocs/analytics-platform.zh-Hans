@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: e3753cfde5e57a86229d0a42a125afcc118bc479
+source-git-commit: 981cd0c01d775acbd71cada7efed4911b4bcb157
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '518'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 * **体验**：体验被定义为整个网页上的文本内容。 对于数据收集，Content Analytics会记录基于页面URL的Experience ID。 之后，通过检索服务捕获页面上的文本。
 * **体验ID**：相关URL（基本URL加上驱动页面内容的任何参数）和[体验版本](manual.md#versioning)的唯一组合。
    * 在[配置](configuration.md)中，您指定与任何给定完整URL相关的参数。
-   * 您可以定义使用的[版本标识符](manual.md#versioning)。
+   * 您定义要使用的[版本标识符](manual.md#versioning)，以便正确收集对体验的更改。
 * **资源**：图像。 Content Analytics记录资源URL。
 * **资源ID**：资源的URL。
 * **相关URL**：基本URL加上驱动页面内容的任何参数。
@@ -83,7 +83,7 @@ Content Analytics确实会通过这种方式收集数据来反映该顺序，而
 * 在启用了体验的页面上的链接上发生任何点击。
 
 
-### 常规或特定（行为）事件
+### 定期或特定（行为）事件
 
 在Content Analytics上下文中触发常规或特定（行为）事件的触发程序包括：
 

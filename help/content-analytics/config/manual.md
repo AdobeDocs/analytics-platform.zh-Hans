@@ -1,18 +1,18 @@
 ---
-title: Content Analytics手动配置
+title: 内容分析手动配置
 description: 如何手动配置内容分析
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: d4803af9b71ec245f6c4b20e92a4a4c99f235f00
+source-git-commit: 981cd0c01d775acbd71cada7efed4911b4bcb157
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 0%
+source-wordcount: '448'
+ht-degree: 3%
 
 ---
 
-# Content Analytics手动配置
+# 内容分析手动配置
 
 {{release-limited-testing}}
 
@@ -61,7 +61,7 @@ ht-degree: 0%
   您可以编辑正则表达式，以修改筛选页面和资产的方式。
 
 
-在Adobe Content Analytics扩展中进行更改后，请确保使用[发布流](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}来根据所做的更改启动数据收集。
+在Adobe Content Analytics扩展中进行更改后，请确保使用[发布流](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}来根据所做的更改开始收集数据。
 
 
 
@@ -74,7 +74,9 @@ ht-degree: 0%
 
 ## 版本控制
 
-如果您需要对Content Analytics体验进行版本控制，则必须在您认为要分析的体验的页面上添加全局`adobe.getContentExperienceVersion`函数。
+如果要收集Content Analytics体验，则应当考虑实施版本控制，以确保正确收集新体验（对网页所做的更改）。
+
+要实施版本控制，请在考虑要分析的体验的页面上添加全局`adobe.getContentExperienceVersion`函数。
 
 `adobe.getContentExperienceVersion`函数应返回一个字符串作为值，该值可以是您选择的任何内容，以标识版本。 该版本已附加到[Experience ID URL](/help/content-analytics/report/components.md#experience-metadata)。
 

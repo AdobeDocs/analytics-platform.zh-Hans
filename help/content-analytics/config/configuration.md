@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: 320b1cb94f63d0e6813999c1dc293b7e78ac7845
+source-git-commit: 981cd0c01d775acbd71cada7efed4911b4bcb157
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 0%
+source-wordcount: '523'
+ht-degree: 3%
 
 ---
 
@@ -35,9 +35,10 @@ Content Analytics的配置包括以下步骤：
 在配置Content Analytics之前，请确保满足以下先决条件：
 
 * 您已将Content Analytics中使用的功能服务的用户代理和IP地址添加到允许列表。 要配置的用户代理字符串为： <code>AdobeFeaturization/1.0</code>。
-* 如果您已使用Javascript](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library){target="_blank"}实施[Web SDK以进行常规行为数据收集，请确保使用默认名称<code>alloy</code> 用于Javascript库。
+* 如果您已使用JavaScript](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/install/library){target="_blank"}实施[Web SDK以进行常规行为数据收集，请确保使用默认名称<code>alloy</code> 用于JavaScript库。
 * 您具有Customer Journey Analytics产品管理员角色，该角色具有管理连接和管理数据视图的附加权限。
-* 您必须具有数据收集](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions){target="_blank"}的[权限。 这些权限包括：
+* 如果您考虑收集Content Analytics体验，请确保根据您网页上的更改来设置和更新[Content Analytics版本控制](manual.md#versioning)。
+* 您必须具有数据收集](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions){target="_blank"}的[权限：
    * [Experience Platform权限](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
    * [Experience Platform数据收集权限](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}
 * 您仔细考虑了以下重要配置选项：

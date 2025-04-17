@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 6e59b029542b7b4353f03b6dd083e25955aacc7b
+source-git-commit: 5d08fac8f99e173420ecb977b91f4cb320568094
 workflow-type: tm+mt
-source-wordcount: '2571'
+source-wordcount: '2580'
 ht-degree: 46%
 
 ---
@@ -145,7 +145,7 @@ ht-degree: 46%
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以确认所选的数据视图。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;即可取消。
 
 
-在Customer Journey Analytics中，[数据视图](/help/data-views/data-views.md)绑定到Customer Journey Analytics [连接](/help/connections/overview.md)。 并且连接基于您组织内的沙盒。 保存配置后，**[!UICONTROL 沙盒]**&#x200B;会根据所选的数据视图自动填充沙盒的名称。
+在Customer Journey Analytics中，[数据视图](/help/data-views/data-views.md)绑定到Customer Journey Analytics [连接](/help/connections/overview.md)。 并且连接基于您组织内的沙盒。 保存配置后，**[!UICONTROL 沙盒]**&#x200B;字段会根据所选数据视图自动填充沙盒的名称。
 
 
 ### 体验捕捉和定义 {#onboarding-experiences}
@@ -180,7 +180,7 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"
 >title="体验捕捉和定义"
->abstract="在与当前配置关联的Tags属性中，您必须编辑Adobe Content Analytics扩展中的体验数据收集设置。"
+>abstract="您必须在Adobe Content Analytics扩展中编辑体验数据收集的设置。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -192,6 +192,14 @@ ht-degree: 46%
 
 * 必须使用页面URL重现网站上的页面。
 * 任何给定用户看到的文本内容都可以使用页面URL重现，并且不依赖于Cookie或其他个性化机制。
+
+>[!IMPORTANT]
+>
+>实施[Content Analytics版本控制](manual.md#versioning)，以收集您对受Content Analytics影响的体验（页面）所做的更改。
+
+
+
+#### 新的配置 {#new-experiences-configuration}
 
 要在新的或未实施的配置中包含体验，请执行以下操作：
 
@@ -208,6 +216,9 @@ ht-degree: 46%
    1. 指定以逗号分隔的&#x200B;**[!UICONTROL 查询参数]**&#x200B;列表，例如 `outdoors, patio, kitchen`。
 1. 如果您想移除域正则表达式和查询参数的组合，请选择&#x200B;**[!UICONTROL 移除]**。
 1. 如果要添加其他正则表达式和查询参数组合，请选择&#x200B;**[!UICONTROL 添加正则表达式]**。
+
+
+### 已实施的配置 {#implemented-experiences-configuration}
 
 要在已实施的配置中编辑现有体验或包含新体验，请执行以下操作：
 
@@ -304,7 +315,8 @@ ht-degree: 46%
 
 >[!IMPORTANT]
 >
->如果现有Web SDK实现使用[Javascript库](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/install/library)，而不使用[Tags扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)，则必须从新创建的Tags属性中手动删除自动包含的Web SDK扩展。
+>手动从新创建的Tags属性中删除自动包含的Web SDK扩展，以防现有Web SDK实现使用[JavaScript库](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/install/library)而不是[Tags扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。
+>
 
 
 
