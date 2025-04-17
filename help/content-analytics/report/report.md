@@ -1,11 +1,11 @@
 ---
-title: 内容分析报表
+title: Content Analytics报表
 description: 如何报告内容分析
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: b4325135ec05737a75027ded70e96f599eb0220c
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '1300'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 1. [创建新的](/help/analysis-workspace/build-workspace-project/create-projects.md)或[在Workspace中打开现有的](/help/analysis-workspace/build-workspace-project/open-projects.md)项目。
 1. 请确保您[为Content Analytics报表选择数据视图](/help/analysis-workspace/c-panels/panels.md#data-view)。 Content Analytics报表仅适用于[为Content Analytics配置了](/help/content-analytics/config/configuration.md)的数据视图。
 1. 将![表](/help/assets/icons/Table.svg) [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)可视化拖动到画布上。
-1. 使用[特定的Content Analytics组件](components.md)和其他通用的[组件](/help/components/overview.md)（如筛选器、日期范围、注释）来构建您的内容分析见解。
+1. 使用[特定的Content Analytics组件](components.md)和其他常规的[组件](/help/components/overview.md)（如区段、日期范围、注释）来构建您的内容分析见解。
 
 ## 缩略图
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 
   | 体验预览 | 资源预览 |
   |---|---|
-  | ![Content Analytics体验预览](../assets/aca-experience-preview.png) | ![Content Analytics资产预览](../assets/aca-asset-preview.png) |
+  | ![Content Analytics体验预览](../assets/aca-experience-preview.png) | ![Content Analytics资源预览](../assets/aca-asset-preview.png) |
   | 维度的名称（例如，**[!UICONTROL 体验ID]）** | 资产维度的名称（例如，**[!UICONTROL 资产ID]）** |
   | **[!UICONTROL 展示次数（所有时间）]**：体验的展示次数。 | **[!UICONTROL 展示次数（所有时间）]**：资源的展示次数。 |
   | **[!UICONTROL Assets]**：此体验包含的资源数。 <br/>选择![划分](/help/assets/icons/Breakdown.svg) **[!UICONTROL 划分]**&#x200B;以检查资产。 | **[!UICONTROL 体验]**：在其中显示此资源的体验数。 <br/>选择![划分](/help/assets/icons/Breakdown.svg) **[!UICONTROL 划分]**&#x200B;以检查资产。 |
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 1. 从主菜单中选择&#x200B;**[!UICONTROL Workspace]**。
 1. 确保已选择为Content Analytics配置的数据视图。
-1. 搜索或使用筛选器(**[!UICONTROL 渠道]**&#x200B;的&#x200B;**[!UICONTROL Web]**&#x200B;和[!UICONTROL 用例]**的**4}参与&#x200B;]**)来查找和选择**[!UICONTROL &#x200B;内容分析&#x200B;]**模板。**[!UICONTROL 
+1. 搜索或使用区段(**[!UICONTROL 渠道]**&#x200B;的&#x200B;**[!UICONTROL Web]**&#x200B;和[!UICONTROL 用例]**的**4}参与&#x200B;]**)查找并选择**[!UICONTROL &#x200B;内容分析&#x200B;]**模板。**[!UICONTROL 
 1. 选择&#x200B;**[!UICONTROL 使用模板]**。
 1. 在&#x200B;**[!UICONTROL 设置模板]**&#x200B;对话框中，从&#x200B;**[!UICONTROL 选择转化量度]**&#x200B;对话框中选择量度。 例如，**[!UICONTROL 资产CTR]**。
 1. 选择&#x200B;**[!UICONTROL 继续]**。

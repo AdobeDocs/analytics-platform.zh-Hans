@@ -4,10 +4,10 @@ title: 快速区段
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '1171'
-ht-degree: 59%
+ht-degree: 30%
 
 ---
 
@@ -65,18 +65,18 @@ ht-degree: 59%
 
 ![快速区段生成器](assets/quick-filter-builder.png)
 
-快速过滤器生成器由以下区域和按钮组成。
+快速区段生成器包含以下区域和按钮。
 
 ### 标题区域
 
-标题区域决定了快速过滤器的名称、类型和范围。它还显示了快速过滤结果的视觉效果。
+标题区域确定快速区段的名称、类型和范围。 它还会显示快速区段结果的可视化图表。
 
 | 元素 | 描述 |
 |---|---|
-| **[!UICONTROL 名称]** | 该名称是从快速过滤器的定义自动得出的。 |
-| **[!UICONTROL 人员]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![警报](/help/assets/icons/Alert.svg) | 预览快速过滤后得到的数据可视化效果。通过条形图和百分比可以了解总体数据中有多少是快速过滤结果的一部分。红色 ![警报](/help/assets/icons/Alert.svg) 表示快速过滤器没有返回数据。 |
-| **[!UICONTROL 包括]**<br/>**[!UICONTROL 排除]** | 从下拉列表中选择 ![ChevronDown](/help/assets/icons/ChevronDown.svg) 是否要在面板中的数据中包含或排除快速过滤的结果。 |
-| **[!UICONTROL 事件]**<br/>**[!UICONTROL 会话]**<br/>**[!UICONTROL 人员]** | 从下拉列表中选择 ![ChevronDown](/help/assets/icons/ChevronDown.svg) 快速过滤的范围。 |
+| **[!UICONTROL 名称]** | 该名称将自动从快速区段定义派生。 |
+| **[!UICONTROL 人员]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![警报](/help/assets/icons/Alert.svg) | 预览由快速区段生成的数据的可视化图表。 条形图和百分比可向insight提供快速区段结果在总体数据中所占的比重。 红色的![警报](/help/assets/icons/Alert.svg)表示快速区段未返回数据。 |
+| **[!UICONTROL 包括]**<br/>**[!UICONTROL 排除]** | 从下拉列表![ChevronDown](/help/assets/icons/ChevronDown.svg)中选择是否要从面板中的数据包括或排除快速区段的结果。 |
+| **[!UICONTROL 事件]**<br/>**[!UICONTROL 会话]**<br/>**[!UICONTROL 人员]** | 从下拉列表![ChevronDown](/help/assets/icons/ChevronDown.svg)中选择快速区段的范围。 |
 
 ### 条件区域
 
@@ -88,25 +88,25 @@ ht-degree: 59%
 | **[!UICONTROL *组件&#x200B;*]** | 条件的组件字段。您可以&#x200B;[!UICONTROL *通过输入来添加*]&#x200B;组件，从列表中选择组件，或者从组件面板中拖放组件。您只能将相似的组件放在条件的组件字段上。例如，您只能将维度组件从组件面板拖放到维度条件上。<br/>您还可以通过拖放操作来替换现有组件。<br/>选择 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 从组件字段中删除该组件。 |
 | **[!UICONTROL *运算符&#x200B;*]** | 组件的运算符。有关更多信息，请参阅[运算符](operators.md)。仅适用于维度和量度。 |
 | **[!UICONTROL *值&#x200B;*]** | 条件的值。根据所选的运算符，可以从列表中选择值或者输入一个值。 |
-| ![CrossSize75](/help/assets/icons/CrossSize75.svg) | 选择从快速过滤器中删除一个条件。 |
+| ![CrossSize75](/help/assets/icons/CrossSize75.svg) | 选择以从快速区段中删除条件。 |
 
 ### 按钮
 
 | 按钮 | 描述 |
 |---|---|
-| **[!UICONTROL AND]**<br/>**[!UICONTROL OR]** | 仅当您定义多个条件时才可用。从条件之间的下拉列表 ![ChevronDown](/help/assets/icons/ChevronDown.svg) 中进行选择。该选择决定了快速过滤器的布尔逻辑。当有三个条件时，您不能混合逻辑。布尔逻辑是 **[!UICONTROL AND]** 或 **[!UICONTROL OR]**。 |
-| ![AddCircle](/help/assets/icons/AddCircle.svg) | 向您的快速过滤器中添加另一个条件。仅当您为快速过滤器定义了一个或两个条件时，此按钮才可用。 |
-| **[!UICONTROL 应用]** | 将更改应用于快速过滤器。 |
-| **[!UICONTROL 打开生成器]** | 系统会提示您确认&#x200B;**[!UICONTROL 您确定吗？]**&#x200B;对话框。如果您选择&#x200B;**[!UICONTROL 确定]**，您将无法再在[快速过滤器生成器](#quick-filter-builder)中修改您的过滤器。您的快速过滤器已重命名为&#x200B;**[!UICONTROL 过滤器]**，并且现在左侧有一个深蓝色的细条。<br/>常规[过滤器生成器](filter-builder.md)打开时会显示以下选项：**[!UICONTROL 使此过滤器可用于您的所有项目，并将其添加到您的组件列表中]**。 <ul><li>如果选择此选项，并选择&#x200B;**[!UICONTROL 应用]**，则过滤器会被添加到组件面板中的 ![过滤器](/help/assets/icons/Segmentation.svg) **[!UICONTROL 过滤器]**&#x200B;组件列表中。</li><li>如果您不选择此选项，并选择&#x200B;**[!UICONTROL 应用]**，则过滤器仍为仅限于工作区项目的过滤器。</li></ul> |
-| **[!UICONTROL 取消]** | 选择取消创建或编辑快速过滤器。 |
+| **[!UICONTROL AND]**<br/>**[!UICONTROL OR]** | 仅当您定义多个条件时才可用。从条件之间的下拉列表 ![ChevronDown](/help/assets/icons/ChevronDown.svg) 中进行选择。该选择确定快速区段的布尔逻辑。 当有三个条件时，您不能混合逻辑。布尔逻辑是 **[!UICONTROL AND]** 或 **[!UICONTROL OR]**。 |
+| ![AddCircle](/help/assets/icons/AddCircle.svg) | 向快速区段添加另一个条件。 仅当为快速区段定义了一个或两个条件时，此按钮才可用。 |
+| **[!UICONTROL 应用]** | 将更改应用于快速区段。 |
+| **[!UICONTROL 打开生成器]** | 系统会提示您确认&#x200B;**[!UICONTROL 您确定吗？]**&#x200B;对话框。如果选择&#x200B;**[!UICONTROL 确定]**，则无法再在[快速区段生成器](#quick-filter-builder)中修改您的区段。您的快速区段已重命名为&#x200B;**[!UICONTROL 区段]**，现在左栏中的蓝色细条较深。<br/>常规[区段生成器](filter-builder.md)打开，其中包含&#x200B;**[!UICONTROL 使此区段对所有项目都可用，并将其添加到组件列表]**。 <ul><li>如果选择此选项并选择&#x200B;**[!UICONTROL 应用]**，则该区段将添加到组件面板中的![区段](/help/assets/icons/Segmentation.svg) **[!UICONTROL 筛选器]**&#x200B;组件列表中。</li><li>如果不选择此选项并选择&#x200B;**[!UICONTROL 应用]**，则该区段仍然是仅限Workspace项目的区段。</li></ul> |
+| **[!UICONTROL 取消]** | 选择以取消创建或编辑快速区段。 |
 
-## 快速过滤器与普通过滤器
+## 快速区段与区段
 
-快速过滤器正如其名称所示。您可以快速创建和编辑快速过滤器，并立即在面板中查看效果。
+快速区段正是其命名方式。 您可以快速内联创建和编辑快速区段，并立即在面板中查看效果。
 
-与快速过滤器相比，普通过滤器确实有以下优势。
+与快速区段相比，区段具有以下优势。
 
-* 普通过滤器可应用于您所有的工作区项目
-* 普通过滤器使用嵌套和分层容器以及序列（使用序列过滤器）支持更复杂的用途。
+* 区段可在您的所有Workspace项目中提供
+* 区段支持使用嵌套和分层容器以及序列（使用序列区段）来提高复杂性。
 
 

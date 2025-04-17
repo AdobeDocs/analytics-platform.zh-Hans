@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '2125'
-ht-degree: 88%
+ht-degree: 85%
 
 ---
 
@@ -101,7 +101,7 @@ ht-degree: 88%
 
 ### 容器
 
-指定数据视图的容器的名称。经常在[筛选条件](/help/components/filters/filters-overview.md#Filter-containers)中使用容器名称。
+指定数据视图的容器的名称。容器名称在[区段](/help/components/filters/filters-overview.md#Filter-containers)中经常使用。
 
 | 设置 | 描述 |
 | --- | --- |
@@ -184,13 +184,13 @@ ht-degree: 88%
 ## 设置
 
 1. 选择&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡。
-1. 配置应用于整个数据视图的筛选条件。请参阅下列[设置（筛选条件）。](#settings-filters)
+1. 配置区段以应用于整个数据视图。 请参阅下面的[设置（区段）](#settings-filters)。
 1. 配置会话超时和量度。请参阅下列[会话设置。](#session-settings)
 1. 选择&#x200B;**[!UICONTROL “保存并继续”]**，以继续配置新的或现有的数据视图。选择&#x200B;**[!UICONTROL “保存”]**，以保存现有数据视图的配置。
 
-### 设置（筛选条件）
+### 设置（区段）
 
-可添加适用于整个数据视图的筛选条件。此筛选条件适用于您在 Workspace 中运行的任何报告。请将某个筛选条件从左边栏中的列表拖至[!UICONTROL 添加筛选条件]字段。
+您可以添加应用于整个数据视图的区段。 此区段适用于您在Workspace中运行的任何报表。 将区段从左边栏中的列表拖到[!UICONTROL 添加区段]字段。
 
 ### 会话设置
 
