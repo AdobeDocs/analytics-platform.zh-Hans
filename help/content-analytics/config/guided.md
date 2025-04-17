@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 5d08fac8f99e173420ecb977b91f4cb320568094
+source-git-commit: e79094d974e4e91b044611f997c0e4215487d74f
 workflow-type: tm+mt
 source-wordcount: '2580'
 ht-degree: 46%
@@ -218,7 +218,7 @@ ht-degree: 46%
 1. 如果要添加其他正则表达式和查询参数组合，请选择&#x200B;**[!UICONTROL 添加正则表达式]**。
 
 
-### 已实施的配置 {#implemented-experiences-configuration}
+#### 已实施的配置 {#implemented-experiences-configuration}
 
 要在已实施的配置中编辑现有体验或包含新体验，请执行以下操作：
 
