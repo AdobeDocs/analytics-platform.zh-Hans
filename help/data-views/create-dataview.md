@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '2120'
-ht-degree: 89%
+source-wordcount: '2125'
+ht-degree: 88%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 89%
 
 要创建或编辑数据视图：
 
-1. 登录到 [Customer Journey Analytics](https://analytics.adobe.com)，然后转到&#x200B;**[!UICONTROL “数据视图”]**&#x200B;选项卡。
+1. 登录到[Customer Journey Analytics](https://analytics.adobe.com)，然后在顶部菜单中选择&#x200B;**[!UICONTROL 数据视图]**（可以选择从&#x200B;**[!UICONTROL 数据管理]**&#x200B;中进行）。
 1. 要创建数据视图，请选择&#x200B;**[!UICONTROL “创建新的数据视图”。]**&#x200B;或者，您可以从数据视图列表中选择现有数据视图进行编辑。
 
 

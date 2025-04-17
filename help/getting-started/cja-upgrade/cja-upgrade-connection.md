@@ -1,14 +1,14 @@
 ---
-title: 为Customer Journey Analytics创建架构
-description: 了解从Adobe Analytics升级到Customer Journey Analytics时推荐的路径
+title: 为 Customer Journey Analytics 创建一个架构
+description: 了解从 Adobe Analytics 升级到 Customer Journey Analytics 时的推荐路径
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 22d3e7b8-4a4d-48a8-a98d-5172a9876286
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '1629'
-ht-degree: 94%
+source-wordcount: '1635'
+ht-degree: 99%
 
 ---
 
@@ -27,11 +27,11 @@ ht-degree: 94%
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/connections/create-connection.md -->
 
-以下信息介绍了如何创建和配置连接，以及如何将Experience Platform数据集添加到您创建的连接。 有关创建和配置连接的其他信息，请参阅[创建或编辑连接](/help/connections/create-connection.md)。
+以下信息解释了如何创建和配置连接，以及如何将 Experience Platform 数据集添加到您创建的连接中。有关创建和配置连接的其他信息，请参阅[创建或编辑连接](/help/connections/create-connection.md)。
 
 ## 创建和配置连接 {#create-connection}
 
-1. 在 Customer Journey Analytics 中，选择&#x200B;**[!UICONTROL 连接]**&#x200B;选项卡。
+1. 在Customer Journey Analytics中，从顶部菜单中选择&#x200B;**[!UICONTROL 连接]** （可选）从&#x200B;**[!UICONTROL 数据管理]**。
 1. 选择&#x200B;**[!UICONTROL 创建新连接]**。
 
    ![无标题连接设置](assets/create-conn1.png)
@@ -63,7 +63,7 @@ ht-degree: 94%
 
 ## 添加和配置数据集 {#add-dataset}
 
-您可以在创建连接时添加Experience Platform数据集。
+您可以在创建连接时添加一个 Experience Platform 数据集。
 
 1. 在“连接设置”对话框中，选择&#x200B;**[!UICONTROL 添加数据集]**。
 
@@ -75,7 +75,7 @@ ht-degree: 94%
 
    | 列 | 描述 |
    |---|---|
-   | 数据集 | 数据集的名称。选择名称即可将您定向到 Experience Platform 中的数据集。选择 ![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) 以显示一个包含数据集更多详细信息的弹出窗口。您可以选择 **[!UICONTROL 在平台中编辑]** 以直接在 Experience Platform 中编辑数据集。 |
+   | 数据集 | 数据集的名称。选择名称即可将您定向到 Experience Platform 中的数据集。选择 ![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) 以显示一个包含数据集更多详细信息的弹出窗口。您可以选择 **[!UICONTROL 在 Platform 中编辑]** 以直接在 Experience Platform 中编辑数据集。 |
    | 数据集类型 | 数据集的类型：事件、轮廓、查找或摘要。 |
    | 记录数 | Experience Platform 中数据集上个月的总记录数。 |
    | 架构 | 数据集的架构。选择名称即可将您定向到 Experience Platform 中的架构。 |
@@ -105,16 +105,16 @@ ht-degree: 94%
    | **[!UICONTROL 匹配键]** | 仅适用于查找数据集。某个事件数据集中要按其连接在一起的匹配键。如果此列表为空，则可能尚未添加或配置事件数据集。 |
    | **[!UICONTROL 时区]** | 仅适用于摘要数据。为时间序列摘要数据选择适当的时区。 |
    | **[!UICONTROL 数据源类型]** | 选择数据源类型。<br/>数据源的类型包括： <ul><li>[!UICONTROL Web 数据]</li><li>[!UICONTROL 移动应用程序数据]</li><li>[!UICONTROL POS 数据]</li><li>[!UICONTROL CRM 数据]</li><li>[!UICONTROL 调查数据]</li><li>[!UICONTROL 呼叫中心数据]</li><li>[!UICONTROL 产品数据]</li><li> [!UICONTROL 帐户数据]</li><li> [!UICONTROL 事务数据]</li><li>[!UICONTROL 客户反馈数据]</li><li> [!UICONTROL 其他]</li></ul>该字段用于调查正在使用的数据源的类型。 |
-   | **[!UICONTROL 导入新数据]** | 如果您想建立持续连接，请启用此选项。通过持续的连接，添加到数据集的新数据批次会自动在 Workspace 中提供。 |
+   | **[!UICONTROL 导入新数据]** | 如果您想建立持续连接，请启用此选项。通过持续的连接，添加到数据集的新数据批次会自动在工作区中提供。 |
    | **[!UICONTROL 数据集回填]** | 启用 **[!UICONTROL 回填所有现有数据]** 以确保所有现有数据均已回填。<br/><br/>选择 **[!UICONTROL 请求补填]** 填充特定时期的历史数据。您最多可以定义 10 个数据集回填期。<ol><li>通过输入开始和结束数据或使用![日程表](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)选择日期来定义期间。</li><li>选择 **[!UICONTROL 队列补填]** 将回填内容添加到列表中，或 **[!UICONTROL 取消]** 取消。</li></ol>对于每个条目，选择 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 编辑时段，或选择 ![删除](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) 删除该条目。<br/><br/>在回填上：<ul><li>您可以单独回填每个数据集。</li><li>您会优先处理新添加到此连接中数据集的新数据，因此这些新数据的滞后时间最短。</li><li>任何回填（历史）数据的导入速度都会比较慢。历史数据的数量会影响延迟。</li><li>Analytics Source Connector 会为生产沙盒导入最多 13 个月的数据（无论大小）。非生产沙盒的回填期限为 3 个月。</li></ul> |
-   | **[!UICONTROL 转换数据集]** | 对于特定的B2B查找数据集，您可以为适当的基于B2B人员的报表方案启用数据集转换。 |
+   | **[!UICONTROL 转换数据集]** | 对于特定的 B2B 查找数据集，您可以启用数据集转换以适应适当的 B2B 基于人员的报告场景。  |
    | **[!UICONTROL 回填状态]** | 可能的状态指示符有：<ul><li>成功</li><li>X 回填处理</li><li>关</li></ul> |
    | **[!UICONTROL 数据集 ID]** | 此 ID 是自动生成的。 |
    | **[!UICONTROL 描述]** | 创建此数据集时给出的描述。 |
    | **[!UICONTROL 数据集大小]** | 数据集的大小。 |
    | **[!UICONTROL 架构]** | 在 Adobe Experience Platform 中创建数据集所依据的架构。 |
    | **[!UICONTROL 数据集]** | 数据集的名称。 |
-   | **[!UICONTROL 预览：*数据集名称&#x200B;*]** | 使用日期、我的 ID 和标识符列预览数据集。 |
+   | **[!UICONTROL 预览：*数据集名称&#x200B;*]** | 使用日期、我的 ID 和身份标识符列预览数据集。 |
    | **[!UICONTROL 删除]** | 您可以删除或移除数据集并更改人员 ID 而不删除整个连接。删除或移除会降低数据引入以及重新创建整个连接和相关数据视图这一繁琐过程所涉及的成本。 |
 
    {style="table-layout:auto"}

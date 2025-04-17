@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: 35298dd6d18ebb07d104a608aeff06cb864ee1dc
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '5188'
-ht-degree: 8%
+source-wordcount: '5200'
+ht-degree: 15%
 
 ---
 
@@ -340,7 +340,7 @@ ht-degree: 8%
 
 要将摘要数据存储在Experience Platform中，您首先需要创建数据集，然后将摘要数据上传到数据集中。
 
-要创建数据集，请执行以下操作：
+要创建数据集：
 
 1. 从中选择&#x200B;**[!UICONTROL Experience Platform]**   ![应用](/help/assets/icons/Apps.svg)   应用程序切换器。
 1. 从左边栏中选择&#x200B;**[!UICONTROL 数据集]**。
@@ -387,7 +387,7 @@ ht-degree: 8%
 
 
 1. 从中选择&#x200B;**[!UICONTROL Customer Journey Analytics]**   ![应用](/help/assets/icons/Apps.svg)   应用程序切换器。
-1. 从顶部菜单中选择&#x200B;**[!UICONTROL 连接]**。
+1. 在顶部菜单中选择&#x200B;**[!UICONTROL 连接]**（可选），从&#x200B;**[!UICONTROL 数据管理]**&#x200B;中选择。
 1. 选择&#x200B;**[!UICONTROL 创建新连接]**。
 1. 在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL 无标题连接]**&#x200B;中：
    1. 输入&#x200B;**[!UICONTROL 连接名称]**，例如`Example Connection Using Summary Data`。
@@ -428,7 +428,7 @@ ht-degree: 8%
 过了一会儿，确认数据集中的数据已正确加载到Customer Journey Analytics中。
 
 1. 从中选择&#x200B;**[!UICONTROL Customer Journey Analytics]**   ![应用](/help/assets/icons/Apps.svg)   应用程序切换器。
-1. 从顶部菜单中选择&#x200B;**[!UICONTROL 连接]**。
+1. 在顶部菜单中选择&#x200B;**[!UICONTROL 连接]**（可选），从&#x200B;**[!UICONTROL 数据管理]**&#x200B;中选择。
 1. 选择您的连接，例如&#x200B;**[!UICONTROL 使用摘要数据的连接示例]**。
 1. 在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL 使用摘要数据的连接示例]**&#x200B;详细信息中选择适当的日期范围。
    1. 选择![日历](/help/assets/icons/Calendar.svg)，然后选择&#x200B;**[!UICONTROL 最近7天]**。
@@ -443,7 +443,7 @@ ht-degree: 8%
 为了确保能够在Workspace中报告正确的数据，您需要创建一个包含相关量度和维度的数据视图。
 
 1. 从中选择&#x200B;**[!UICONTROL Customer Journey Analytics]**   ![应用](/help/assets/icons/Apps.svg)   应用程序切换器。
-1. 从顶部菜单中选择&#x200B;**[!UICONTROL 数据视图]**。
+1. 在顶部菜单中选择&#x200B;**[!UICONTROL 数据视图]**（可选），从&#x200B;**[!UICONTROL 数据管理]**&#x200B;中选择。
 1. 选择&#x200B;**[!UICONTROL 创建新数据视图]**。
 1. 在&#x200B;**[!UICONTROL 数据视图]**&#x200B;中，浏览向导屏幕以配置数据视图。
    1. 在&#x200B;**[!UICONTROL 数据视图]**&#x200B;的&#x200B;**[!UICONTROL 配置]**&#x200B;步骤中：
@@ -537,7 +537,7 @@ ht-degree: 8%
 您现在已设置数据视图，以便正确报告摘要数据。
 
 
-## 工作区
+## Workspace
 
 要报告您的摘要数据，请在Analysis Workspace中创建一个新项目。
 
@@ -585,7 +585,7 @@ ht-degree: 8%
       1. 启用&#x200B;**[!UICONTROL 条件格式]**。
          1. 选择&#x200B;**[!UICONTROL 自动生成]**。
          1. 选择首选的&#x200B;**[!UICONTROL 条件格式调色板]**。
-   1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存您的项目。
+   1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存项目。
 
 如果要报告促销活动名称而不是跟踪代码（事件），请执行以下步骤：
 

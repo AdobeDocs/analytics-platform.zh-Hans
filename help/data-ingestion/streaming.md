@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9984200a-71e6-4697-b46f-f53e8d4c507f
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '1994'
+source-wordcount: '2002'
 ht-degree: 85%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 85%
 
 要完成此实施，您需要：
 
-- 在 Adobe Experience Platform 中&#x200B;**设置模式和数据集** ，以定义要收集的数据的模型（模式）以及实际收集数据的位置（数据集）。
+- 在 Adobe Experience Platform 中&#x200B;**设置架构和数据集** ，以定义要收集的数据的模型（架构）以及实际收集数据的位置（数据集）。
 
 - 使用 **HTTP API 源连接器**&#x200B;可以轻松地将数据流到 Adobe Experience Platform 中配置的数据集中。
 
@@ -31,23 +31,23 @@ ht-degree: 85%
 
 >[!NOTE]
 >
->本快速入门指南是一份有关如何将流数据摄取到Adobe Experience Platform并在Customer Journey Analytics中使用的简化指南。 强烈建议参考时研究附加信息。
+>本快速入门指南是一份关于如何将流数据摄取到Adobe Experience Platform并在Customer Journey Analytics中使用的简化指南。 强烈建议参考时研究附加信息。
 
-## 设置模式和数据集
+## 设置架构和数据集
 
-要将数据摄取到Adobe Experience Platform，您必须首先定义要收集的数据。 引入 Adobe Experience Platform 的所有数据都必须符合标准的非规范化结构，以便下游功能和特性对其进行识别和操作。体验数据模型 (XDM) 是以模式形式提供此结构的标准框架。
+要将数据摄取到Adobe Experience Platform，您必须首先定义要收集的数据。 引入 Adobe Experience Platform 的所有数据都必须符合标准的非规范化结构，以便下游功能和特性对其进行识别和操作。体验数据模型 (XDM) 是以架构形式提供此结构的标准框架。
 
-定义模式后，您可以使用一个或多个数据集来存储和管理数据集合。数据集是用于数据集合（通常是表）的存储和管理结构，其中包含架构（列）和字段（行）。
+定义架构后，您可以使用一个或多个数据集来存储和管理数据集合。数据集是用于数据集合（通常是表）的存储和管理结构，其中包含架构（列）和字段（行）。
 
-摄取到 Adobe Experience Platform 中的所有数据都必须符合预定义的模式，然后才能作为数据集保存。
+摄取到 Adobe Experience Platform 中的所有数据都必须符合预定义的架构，然后才能作为数据集保存。
 
-### 设置模式
+### 设置架构
 
 为了快速开始，您需要收集一些忠诚度数据，例如忠诚度 id、忠诚度积分和忠诚度状态。您必须首先定义一个模式来模拟此数据。
 
-设置您的模式：
+设置您的架构：
 
-1. 在 Adobe Experience Platform UI 的左边栏中，选择[!UICONTROL 数据管理]中的&#x200B;**[!UICONTROL 模式]**。
+1. 在 Adobe Experience Platform UI 的左边栏中，选择[!UICONTROL 数据管理]中的&#x200B;**[!UICONTROL 架构]**。
 
 1. 选择&#x200B;**[!UICONTROL 创建架构]**。
 .
@@ -55,20 +55,20 @@ ht-degree: 85%
 
    1. 选择&#x200B;**[!UICONTROL 个人资料]**。
 
-      ![创建模式](./assets/create-pr-schema-wizard-step-1.png)
+      ![创建架构](./assets/create-pr-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    体验事件架构用于为配置文件的&#x200B;_行为_&#x200B;建模（如场景名称、要添加到购物车的按钮）。 个人配置档案模式用于对个人配置档案&#x200B;_属性_（如姓名、电子邮件、性别）建模。
+      >    Experience Event 架构用于对轮廓的&#x200B;_行为_&#x200B;进行建模（如场景名称、添加到购物车的按钮）。个人轮廓架构用于对轮廓&#x200B;_属性_（如姓名、电子邮件、性别）进行建模。
 
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
 
-1. 在[!UICONTROL 创建架构]向导的[!UICONTROL 名称和审核步骤]中：
+1. 在[!UICONTROL 创建架构]向导中的[!UICONTROL 命名和审查步骤]中：
 
-   1. 为您的架构输入&#x200B;**[!UICONTROL 架构显示名称]**&#x200B;和（可选）**[!UICONTROL 描述]**。
+   1. 输入架构的&#x200B;**[!UICONTROL 架构显示名称]**&#x200B;和（可选）**[!UICONTROL 描述]**。
 
-      ![命名您的模式](./assets/create-pr-schema-wizard-step-2.png)
+      ![命名您的架构](./assets/create-pr-schema-wizard-step-2.png)
 
    1. 选择&#x200B;**[!UICONTROL 完成]**。
 
@@ -78,7 +78,7 @@ ht-degree: 85%
 
       ![添加字段组](./assets/add-field-group-button.png)
 
-      字段组是可重用的对象和属性集合，可让您轻松扩展模式。
+      字段组是可重用的对象和属性集合，可让您轻松扩展架构。
 
    1. 在[!UICONTROL 添加字段组]对话框中，从列表中选择&#x200B;**[!UICONTROL 忠诚度详细信息]**&#x200B;字段组。
 
@@ -92,9 +92,9 @@ ht-degree: 85%
 
    1. 选择&#x200B;**[!UICONTROL 添加字段组]**。
 
-1. 在[!UICONTROL 结构]面板中选择模式名称旁边的 **[!UICONTROL +]**。
+1. 在[!UICONTROL 结构]面板中选择架构名称旁边的 **[!UICONTROL +]**。
 
-   ![示例模式添加字段按钮](./assets/example-loalty-schema-plus.png)
+   ![示例架构添加字段按钮](./assets/example-loalty-schema-plus.png)
 
 1. 在[!UICONTROL 字段属性]面板中，输入`Identification`作为名称，**[!UICONTROL 识别]**&#x200B;作为[!UICONTROL 显示名称]，选择&#x200B;**[!UICONTROL 对象]**&#x200B;作为[!UICONTROL 类型]和选择&#x200B;**[!UICONTROL 配置核心文件 v2]**&#x200B;作为[!UICONTROL 字段组]。
 
@@ -102,37 +102,37 @@ ht-degree: 85%
 
    此标识对象将标识功能添加到架构中。 在您的情况下，您希望使用批处理数据中的电子邮件地址来识别忠诚度信息。
 
-   选择&#x200B;**[!UICONTROL 应用]**&#x200B;将此对象添加到您的模式中。
+   选择&#x200B;**[!UICONTROL 应用]**&#x200B;将此对象添加到您的架构中。
 
-1. 选择刚刚添加的标识对象中的&#x200B;**[!UICONTROL 邮件]**&#x200B;字段，选择&#x200B;**[!UICONTROL 标识]**&#x200B;和&#x200B;**[!UICONTROL 邮件]**&#x200B;和[!UICONTROL 标识命名空间]中的[!UICONTROL 字段属性]面板。
+1. 选择刚刚添加的身份标识对象中的&#x200B;**[!UICONTROL 邮件]**&#x200B;字段，选择&#x200B;**[!UICONTROL 身份标识]**&#x200B;和&#x200B;**[!UICONTROL 邮件]**&#x200B;和[!UICONTROL 身份标识命名空间]中的[!UICONTROL 字段属性]面板。
 
-   ![将电子邮件指定为标识](./assets/specify-email-loyalty-id.png)
+   ![将电子邮件指定为身份标识](./assets/specify-email-loyalty-id.png)
 
-   您将电子邮件地址指定为 Adobe Experience Platform Identity 服务可用于组合（拼接）配置文件行为的标识。
+   您将电子邮件地址指定为 Adobe Experience Platform Identity 服务可用于组合（拼接）轮廓行为的标识。
 
    选择&#x200B;**[!UICONTROL 应用]**。您会看到电子邮件属性中显示指纹图标。
 
-1. 选择模式的根级别（使用模式名称），然后选择&#x200B;**[!UICONTROL 配置]**&#x200B;开关。
+1. 选择架构的根级别（使用架构名称），然后选择&#x200B;**[!UICONTROL 配置]**&#x200B;开关。
 
-   系统会提示您启用配置文件的模式。一旦启用，当数据被引入基于此模式的数据集中时，该数据将合并到实时客户配置文件。
+   系统会提示您启用轮廓的架构。一旦启用，当数据被引入基于此架构的数据集中时，该数据将合并到实时客户轮廓。
 
-   有关详细信息，请参阅[启用模式以在实时客户配置文件中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile)。
+   有关详细信息，请参阅[启用架构以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile)。
 
    >[!IMPORTANT]
    >
-   >    一旦您保存了为配置文件启用的模式，就不能再为配置文件禁用它。
+   >    一旦您保存了为轮廓启用的架构，就不能再为轮廓禁用它。
 
-   ![为配置文件启用模式](./assets/enable-for-profile.png)
+   ![为轮廓启用架构](./assets/enable-for-profile.png)
 
-1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存模式。
+1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存架构。
 
-您已经创建了一个最小的模式，它可以对可以引入 Adobe Experience Platform 的忠诚度数据进行建模。该模式允许使用电子邮件地址标识配置文件。通过为概要文件启用模式，可以确保流媒体源添加到实时客户配置文件中。
+您已经创建了一个最小的架构，它可以对可以引入 Adobe Experience Platform 的忠诚度数据进行建模。该架构允许使用电子邮件地址标识轮廓。通过为概要文件启用架构，可以确保流媒体源添加到实时客户轮廓中。
 
-请参阅[在 UI 中创建和编辑模式](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html)，了解有关向模式添加和删除字段组和单个字段的更多信息。
+请参阅[在 UI 中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html)，了解有关向架构添加和删除字段组和单个字段的更多信息。
 
 ### 设置数据集
 
-使用您的模式，您已经定义了数据模型。现在，您必须定义构建来存储和管理这些数据，这通过数据集来完成。
+使用您的架构，您已经定义了数据模型。现在，您必须定义构建来存储和管理这些数据，这通过数据集来完成。
 
 设置您的数据集
 
@@ -142,11 +142,11 @@ ht-degree: 85%
 
    ![创建数据集](./assets/create-dataset.png)
 
-3. 选择&#x200B;**[!UICONTROL 使用模式创建数据集]**。
+3. 选择&#x200B;**[!UICONTROL 使用架构创建数据集]**。
 
-   ![使用模式创建数据集](./assets/create-dataset-from-schema.png)。
+   ![使用架构创建数据集](./assets/create-dataset-from-schema.png)。
 
-4. 选择您之前创建的模式，然后选择 **[!UICONTROL 下一个]**。
+4. 选择您之前创建的架构，然后选择 **[!UICONTROL 下一个]**。
 
 5. 为您的数据集命名并（可选）提供描述。
 
@@ -154,22 +154,22 @@ ht-degree: 85%
 
 6. 选择&#x200B;**[!UICONTROL 完成]**。
 
-7. 选择&#x200B;**[!UICONTROL 配置文件]**&#x200B;开关
+7. 选择&#x200B;**[!UICONTROL 轮廓]**&#x200B;开关
 
-   系统会提示您启用配置文件的数据集。启用后，数据集会使用其摄取的数据丰富实时客户配置文件。
+   系统会提示您启用轮廓的数据集。启用后，数据集会使用其摄取的数据丰富实时客户轮廓。
 
    >[!IMPORTANT]
    >
-   >    只有当数据集所依附的模式也为配置文件启用时，您才能为配置文件启用数据集。
+   >    只有当数据集所依附的架构也为轮廓启用时，您才能为轮廓启用数据集。
 
-   ![为配置文件启用模式](./assets/loyalty-dataset-profile.png)
+   ![为轮廓启用架构](./assets/loyalty-dataset-profile.png)
 
-有关如何查看、预览、创建和删除数据集的更多信息，请参阅[数据集 UI 指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=zh-Hans)。以及如何为实时客户配置文件启用数据集。
+有关如何查看、预览、创建和删除数据集的更多信息，请参阅[数据集 UI 指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=zh-Hans)。以及如何为实时客户轮廓启用数据集。
 
 
 ## 设置 HTTP API 流连接
 
-您的源应用程序流式传输符合您创建的模式的数据，并且看起来像下面这样。
+您的源应用程序流式传输符合您创建的架构的数据，并且看起来像下面这样。
 
 ```json
 {
@@ -209,7 +209,7 @@ ht-degree: 85%
 
    输入 HTTP API 连接的名称和描述。
 
-   选择 **[!UICONTROL XDM 兼容性]**&#x200B;以指示流式传输的数据与现有 XDM 模式兼容。
+   选择 **[!UICONTROL XDM 兼容性]**&#x200B;以指示流式传输的数据与现有 XDM 架构兼容。
 
    选择&#x200B;**[!UICONTROL 连接到源]**。连接成功后，您会看到[!UICONTROL Connected]。
 
@@ -246,13 +246,13 @@ ht-degree: 85%
 
 ## 设置连接
 
-要在 Customer Journey Analytics 中使用 Adobe Experience Platform 数据，您需要创建一个连接，其中包含因设置模式、数据集和工作流所产生的数据。
+要在 Customer Journey Analytics 中使用 Adobe Experience Platform 数据，您需要创建一个连接，其中包含因设置架构、数据集和工作流所产生的数据。
 
 通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告这些数据集，您必须首先在Adobe Experience Platform和Workspace中的数据集之间建立连接。
 
 创建您的连接：
 
-1. 在 Customer Journey Analytics UI 中，选择顶部导航中的&#x200B;**[!UICONTROL 连接]**。
+1. 在Customer Journey Analytics UI中，从顶部菜单中选择&#x200B;**[!UICONTROL 连接]** （可选）从&#x200B;**[!UICONTROL 数据管理]**。
 
 2. 选择&#x200B;**[!UICONTROL 创建新连接]**。
 
@@ -278,7 +278,7 @@ ht-degree: 85%
 
    - 对于每个数据集：
 
-      - 在 Adobe Experience Platform 中，从在数据集模式中定义的可用身份中选择[!UICONTROL 人员 ID]。
+      - 在 Adobe Experience Platform 中，从在数据集架构中定义的可用身份标识中选择[!UICONTROL 人员 ID]。
 
       - 从[!UICONTROL 数据源类型]列表中选择正确的数据源。如果指定&#x200B;**[!UICONTROL 其他]**，则为您的数据源添加描述。
 
@@ -298,7 +298,7 @@ ht-degree: 85%
 
 创建您的数据视图：
 
-1. 在 Customer Journey Analytics UI 中，选择顶部导航中的&#x200B;**[!UICONTROL 数据视图]**。
+1. 在Customer Journey Analytics UI中，从顶部菜单中选择&#x200B;**[!UICONTROL 数据视图]**（可选）从&#x200B;**[!UICONTROL 数据管理]**&#x200B;中选择。
 
 2. 选择&#x200B;**[!UICONTROL 创建新数据视图]**。
 
@@ -314,7 +314,7 @@ ht-degree: 85%
 
 4. 在[!UICONTROL 组件]步骤中：
 
-   将要包含的任何模式字段和/或标准组件添加到[!UICONTROL 量度]或[!UICONTROL 维度]组件框中。
+   将要包含的任何架构字段和/或标准组件添加到[!UICONTROL 量度]或[!UICONTROL 维度]组件框中。
 
    ![数据视图组件](./assets/cja-dataview-2.png)
 
@@ -335,7 +335,7 @@ Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分�
 
 要创建您的项目：
 
-1. 在 Customer Journey Analytics UI 中，选择顶部导航中的&#x200B;**[!UICONTROL 项目]**。
+1. 在Customer Journey Analytics UI中，从顶部菜单中选择&#x200B;**[!UICONTROL 项目]**。
 
 2. 选择左侧导航中的&#x200B;**[!UICONTROL 项目]**。
 
@@ -351,7 +351,7 @@ Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分�
 
    ![工作区选择数据视图](./assets/cja-projects-3.png)
 
-5. 要创建您的第一个报告，请在[!UICONTROL 面板]中的[!UICONTROL 自由格式表]上开始拖放维度和量度。 例如，拖动 `Program Points Balance` 以及 `Page View` 作为量度和 `email` 作为维度，以快速查看访问过您的网站并已加入忠诚度计划收集忠诚度点的个人资料。
+5. 要创建您的第一个报告，请在[!UICONTROL 面板]中的[!UICONTROL 自由格式表]上开始拖放维度和量度。 例如，拖动 `Program Points Balance` 以及 `Page View` 作为量度和 `email` 作为维度，以快速查看访问过您的网站并已加入忠诚度计划收集忠诚度点的轮廓。
 
    ![工作区 – 第一份报告](./assets/cja-projects-5.png)
 
@@ -359,4 +359,4 @@ Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分�
 
 >[!SUCCESS]
 >
->您已完成所有步骤。从定义要收集的忠诚度数据（模式）Adobe Experience Platform 中存储忠诚度数据的位置（数据集）开始，您配置了一个 HTTP API 源连接器，以将忠诚度数据直接流到数据集中。您的数据视图定义允许您指定要使用的维度和量度，最后您创建了您的第一个项目来可视化和分析您的数据。
+>您已完成所有步骤。从定义要收集的忠诚度数据（架构）Adobe Experience Platform 中存储忠诚度数据的位置（数据集）开始，您配置了一个 HTTP API 源连接器，以将忠诚度数据直接流到数据集中。您的数据视图定义允许您指定要使用的维度和量度，最后您创建了您的第一个项目来可视化和分析您的数据。

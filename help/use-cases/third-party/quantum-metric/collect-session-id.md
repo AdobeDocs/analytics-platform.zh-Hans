@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: cfe4bafd-afe6-4738-94f1-30882893b3b6
-source-git-commit: ae88ab16e85bd1274990f8c4d04771398293fe09
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 0%
 编辑现有数据视图，在Customer Journey Analytics中将会话ID添加为可用维度。
 
 1. 登录到[experience.adobe.com](https://experience.adobe.com)。
-1. 导航到Customer Journey Analytics，然后在顶部菜单中选择&#x200B;**[!UICONTROL 数据视图]**。
+1. 导航到Customer Journey Analytics，然后在顶部菜单中选择&#x200B;**[!UICONTROL 数据视图]**（可选），从&#x200B;**[!UICONTROL 数据管理]**&#x200B;中选择。
 1. 选择所需的现有数据视图。
 1. 在左侧找到量子度量会话ID字段列表，并将其拖动到中心的维度区域。
 1. 在右窗格中，将[persistence](/help/data-views/component-settings/persistence.md)设置设置为“Session”。

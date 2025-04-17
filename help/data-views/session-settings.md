@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
-workflow-type: ht
-source-wordcount: '454'
-ht-degree: 100%
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+workflow-type: tm+mt
+source-wordcount: '462'
+ht-degree: 96%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 要在数据视图中定义会话的上下文，请执行以下操作：
 
-1. 在 Customer Journey Analytics UI 中，选择&#x200B;**[!UICONTROL 数据视图]**。
+1. 在Customer Journey Analytics UI的主导航中选择&#x200B;**[!UICONTROL 数据视图]**（可选）从&#x200B;**[!UICONTROL 数据管理]**&#x200B;中选择。
 
 2. 创建新的或编辑现有的数据视图。有关更多信息，请参阅[创建或编辑数据视图](create-dataview.md)。
 
@@ -47,7 +47,7 @@ ht-degree: 100%
 
    2. 从&#x200B;**[!UICONTROL 使用量度发起新会话]**&#x200B;下的&#x200B;**[!UICONTROL 在此放置量度]**&#x200B;列表中选择量度。或者，还可将量度从左窗格拖放到&#x200B;**[!UICONTROL 放置量度字段]**&#x200B;上。所选量度定义新会话的开始。您可以定义多个量度。
 
-      可使用任何类型的量度定义新会话。举个例子，假设您希望在每次轮廓启动您的移动应用程序时定义一个新会话。在&#x200B;**[!UICONTROL 数据视图]** > **[!UICONTROL 组件]**&#x200B;中，您根据 **[!UICONTROL appInteraction]** **[!UICONTROL 名称]**&#x200B;模式字段定义一个量度类型的组件，名为&#x200B;**[!UICONTROL 启动次数]**。您进一步指定&#x200B;**[!UICONTROL 启动次数]**&#x200B;量度组件以仅在该值与 `launch` 匹配时计算该值。
+      可使用任何类型的量度定义新会话。举个例子，假设您希望在每次轮廓启动您的移动应用程序时定义一个新会话。在&#x200B;**[!UICONTROL 数据视图]** > **[!UICONTROL 组件]**&#x200B;中，您根据 **[!UICONTROL appInteraction]** **[!UICONTROL 名称]**&#x200B;架构字段定义一个量度类型的组件，名为&#x200B;**[!UICONTROL 启动次数]**。您进一步指定&#x200B;**[!UICONTROL 启动次数]**&#x200B;量度组件以仅在该值与 `launch` 匹配时计算该值。
 
       ![应用程序交互量度组件启动次数](assets/component-launches.png)
 

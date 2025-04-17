@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
 role: Admin
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '1173'
-ht-degree: 80%
+source-wordcount: '1181'
+ht-degree: 82%
 
 ---
 
@@ -54,15 +54,15 @@ Adobe Analytics 源连接器允许您将 Adobe Analytics 报告套件数据导�
 
 3. 在 Adobe Analytics 互动程序中选择&#x200B;**[!UICONTROL 设置]**&#x200B;或&#x200B;**[!UICONTROL 添加数据]**。
 
-   ![Adobe Experience Platform窗口，其中已选择源，并突出显示了Adobe应用程序和添加数据。](./assets/sources-overview.png)
+   ![Adobe Experience Platform 窗口，其中选择了源以及 Adobe 应用程序，并突出显示了添加数据。](./assets/sources-overview.png)
 
 4. 选择&#x200B;**[!UICONTROL 报告套件]**&#x200B;从报表套件列表中，选择要使用的报表套件。
 
-   显示“报表包”列表的![Adobe Experience Platform窗口](./assets/report-suites.png)
+   ![显示报告包列表的 Adobe Experience Platform 窗口](./assets/report-suites.png)
 
    选择&#x200B;**[!UICONTROL 下一步]**。
 
-5. 选择&#x200B;**[!UICONTROL 默认模式]**&#x200B;作为[!UICONTROL 目标模式]。Adobe Experience Platform 自动创建模式和相应的数据集，以映射所选 Adobe Analytics 报告套件中的所有标准字段。
+5. 选择&#x200B;**[!UICONTROL 默认架构]**&#x200B;作为[!UICONTROL 目标架构]。Adobe Experience Platform 自动创建架构和相应的数据集，以映射所选 Adobe Analytics 报告套件中的所有标准字段。
 
    已选择默认架构的![Adobe Experience Platform窗口](./assets/default-schema.png)
 
@@ -70,16 +70,16 @@ Adobe Analytics 源连接器允许您将 Adobe Analytics 报告套件数据导�
 
 6. 命名数据流并（可选）提供描述。
 
-   ![Adobe Experience Platform窗口，突出显示数据流详细信息部分](./assets/dataflow-detail.png)
+   ![突出显示“数据流详细信息”部分的 Adobe Experience Platform 窗口](./assets/dataflow-detail.png)
 
    选择&#x200B;**[!UICONTROL 下一步]**。
 
 7. 检查连接并选择&#x200B;**[!UICONTROL 完成]**。
 
-   ![Adobe Experience Platform窗口突出显示“连接”和“数据类型”部分以供审阅](./assets/review.png)
+   ![Adobe Experience Platform 窗口，突出显示“连接”和“数据类型”部分以供查看](./assets/review.png)
 
 
-创建连接后，将自动创建数据流以使用报表包中的Adobe Analytics数据填充数据集。 数据流最多可摄取13个月的生产沙盒的历史数据。 非生产沙盒中的回填限制为三个月。
+创建连接后，将自动创建数据流以使用报表包中的Adobe Analytics数据填充数据集。 数据流会为生产沙盒摄取最多 13 个月的历史数据。非生产沙盒的回填期限为三个月。
 
 初始摄取完成后，您的 Adobe Analytics 报告套件数据即可供 Customer Journey Analytics 使用。
 
@@ -88,13 +88,13 @@ Adobe Analytics 源连接器允许您将 Adobe Analytics 报告套件数据导�
 
 ## 设置连接
 
-要在 Customer Journey Analytics 中使用 Adobe Experience Platform 数据，您需要创建一个连接，其中包含因设置模式、数据集和工作流所产生的数据。
+要在 Customer Journey Analytics 中使用 Adobe Experience Platform 数据，您需要创建一个连接，其中包含因设置架构、数据集和工作流所产生的数据。
 
 通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告这些数据集，您必须首先在Adobe Experience Platform和Workspace中的数据集之间建立连接。
 
 创建您的连接：
 
-1. 在 Customer Journey Analytics UI 中，选择顶部导航中的&#x200B;**[!UICONTROL 连接]**。
+1. 在Customer Journey Analytics UI中，从顶部菜单中选择&#x200B;**[!UICONTROL 连接]** （可选）从&#x200B;**[!UICONTROL 数据管理]**。
 
 2. 选择&#x200B;**[!UICONTROL 创建新连接]**。
 
@@ -120,7 +120,7 @@ Adobe Analytics 源连接器允许您将 Adobe Analytics 报告套件数据导�
 
    - 对于每个数据集：
 
-      - 在 Adobe Experience Platform 中，从在数据集模式中定义的可用身份中选择[!UICONTROL 人员 ID]。
+      - 在 Adobe Experience Platform 中，从在数据集架构中定义的可用身份标识中选择[!UICONTROL 人员 ID]。
 
       - 从[!UICONTROL 数据源类型]列表中选择正确的数据源。如果指定&#x200B;**[!UICONTROL 其他]**，则为您的数据源添加描述。
 
@@ -140,7 +140,7 @@ Adobe Analytics 源连接器允许您将 Adobe Analytics 报告套件数据导�
 
 创建您的数据视图：
 
-1. 在 Customer Journey Analytics UI 中，选择顶部导航中的&#x200B;**[!UICONTROL 数据视图]**。
+1. 在Customer Journey Analytics UI中，从顶部菜单中选择&#x200B;**[!UICONTROL 数据视图]**（可选）从&#x200B;**[!UICONTROL 数据管理]**&#x200B;中选择。
 
 2. 选择&#x200B;**[!UICONTROL 创建新数据视图]**。
 
@@ -156,7 +156,7 @@ Adobe Analytics 源连接器允许您将 Adobe Analytics 报告套件数据导�
 
 4. 在[!UICONTROL 组件]步骤中：
 
-   将要包含的任何模式字段和/或标准组件添加到[!UICONTROL 量度]或[!UICONTROL 维度]组件框中。
+   将要包含的任何架构字段和/或标准组件添加到[!UICONTROL 量度]或[!UICONTROL 维度]组件框中。
 
    ![数据视图组件](./assets/cja-dataview-2.png)
 
@@ -177,7 +177,7 @@ Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分�
 
 要创建您的项目：
 
-1. 在 Customer Journey Analytics UI 中，选择顶部导航中的&#x200B;**[!UICONTROL 项目]**。
+1. 在Customer Journey Analytics UI中，从顶部菜单中选择&#x200B;**[!UICONTROL 项目]**。
 
 2. 选择左侧导航中的&#x200B;**[!UICONTROL 项目]**。
 
@@ -193,7 +193,7 @@ Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分�
 
    ![工作区选择数据视图](./assets/cja-projects-3.png)
 
-5. 要创建您的第一个报告，请在[!UICONTROL 面板]中的[!UICONTROL 自由格式表]上开始拖放维度和量度。 例如，拖动 `Program Points Balance` 以及 `Page View` 作为量度和 `email` 作为维度，以快速查看访问过您的网站并已加入忠诚度计划收集忠诚度点的个人资料。
+5. 要创建您的第一个报告，请在[!UICONTROL 面板]中的[!UICONTROL 自由格式表]上开始拖放维度和量度。 例如，拖动 `Program Points Balance` 以及 `Page View` 作为量度和 `email` 作为维度，以快速查看访问过您的网站并已加入忠诚度计划收集忠诚度点的轮廓。
 
    ![工作区 – 第一份报告](./assets/cja-projects-5.png)
 

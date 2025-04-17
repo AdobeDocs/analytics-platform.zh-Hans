@@ -1,14 +1,14 @@
 ---
 title: 将 Analytics 源连接器数据集添加到连接
-description: 了解如何将Analytics源连接器数据集添加到连接
+description: 了解如何将 Analytics 源连接器数据集添加到连接
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 424485a3-a076-4656-83b6-733f16cc2326
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '881'
-ht-degree: 36%
+source-wordcount: '887'
+ht-degree: 98%
 
 ---
 
@@ -25,35 +25,35 @@ ht-degree: 36%
 
 {{upgrade-note-step}}
 
-## 了解Analytics Source Connector如何将历史数据引入Customer Journey Analytics
+## 了解 Analytics 源连接器如何将历史数据带入 Customer Journey Analytics
 
-您可以使用Analytics Source Connector将Adobe Analytics报表包数据引入Adobe Experience Platform。 然后，此数据可以用作Customer Journey Analytics中的历史数据。
+您可以使用 Analytics 源连接器将 Adobe Analytics 报告套件数据导入到 Adobe Experience Platform。然后，这些数据可以用作 Customer Journey Analytics 中的历史数据。
 
-此过程假定您希望在升级到Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)时[创建XDM架构，因为您需要一个根据您的组织和您使用的特定Platform应用程序的需求而定制的简化架构。
+此过程假设您希望[在更新至 Customer Journey Analytics 时创建一个 XDM 架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)，因为您需要一个根据您的组织需求和您使用的特定 Platform 应用程序量身定制的精简架构。
 
-要使用Analytics Source Connector将历史数据引入Customer Journey Analytics，您需要：
+要使用 Analytics 源连接器将历史数据引入 Customer Journey Analytics，您需要：
 
 1. [为 Analytics 源连接器创建 XDM 架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
-1. 如果您还没有Analytics源连接器，请[创建Analytics源连接器并将字段映射到XDM架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)。
+1. 如果您尚未拥有 Analytics 源连接器，请[创建 Analytics 源连接器并将字段映射到您的 XDM 架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)。
 
    或
 
-   如果您已有Analytics源连接器，请将源连接器中的[字段映射到XDM架构](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)。
+   如果您已拥有 Analytics 源连接器，[则将字段从源连接器映射到 XDM 架构](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)。
 
-1. 将Analytics Source Connector数据集添加到连接，如下所述。
+1. 将 Analytics 源连接器数据集添加到连接，如下所述
 
 ## 将 Analytics 源连接器数据集添加到连接
 
-在您[为历史数据创建Analytics Source Connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)之后，将自动为Analytics数据创建数据集。
+在[为历史数据创建 Analytics 源连接器](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)后，会自动为 Analytics 数据创建一个数据集。
 
-您需要将此自动创建的数据集添加到您为Web SDK实施创建的连接中。 这样做会将Analytics数据引入到Customer Journey Analytics中与Web SDK数据相同的数据视图中。
+您需要将这个自动创建的数据集添加到为 Web SDK 实施创建的同一个连接中。这样做会将 Analytics 数据带入 Customer Journey Analytics 中的与 Web SDK 数据相同的数据视图中。
 
-要将自动创建的数据集添加到您为Web SDK实施创建的相同连接，请执行以下操作：
+要将该自动创建的数据集添加到为 Web SDK 实施创建的同一个连接中：
 
-1. 在 Customer Journey Analytics 中，选择&#x200B;**[!UICONTROL 连接]**&#x200B;选项卡。
+1. 在Customer Journey Analytics中，从顶部菜单中选择&#x200B;**[!UICONTROL 连接]** （可选）从&#x200B;**[!UICONTROL 数据管理]**。
 
-1. 选择您[为Web SDK实施](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)创建的连接。
+1. 选择您[为您的 Web SDK 实施而创建](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)的连接。
 
 1. 选择&#x200B;**[!UICONTROL 编辑]**。
 
@@ -63,9 +63,9 @@ ht-degree: 36%
 
    ![编辑连接](assets/connection-add-dateset2.png)
 
-1. 滚动到或搜索在创建Analytics源连接器时自动创建的数据集。
+1. 滚动到或搜索创建 Analytics 源连接器时自动创建的数据集。
 
-   此数据集的名称是报表包的名称，后跟`midValues`。 例如：`My report suite midValues`
+   此数据集的名称是您的报告包的名称，后跟 `midValues`。例如：`My report suite midValues`
 
 1. 选中数据集名称旁边的复选框，然后选择&#x200B;**[!UICONTROL 下一步]**。
 
@@ -84,32 +84,32 @@ ht-degree: 36%
 
    {style="table-layout:auto"}
 
-1. 在&#x200B;**[!UICONTROL 导入新数据]**&#x200B;部分中，将&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;选项保留为禁用状态。
+1. 在&#x200B;**[!UICONTROL 导入新数据]**&#x200B;部分，禁用&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;选项。
 
-   由于您正在将Analytics Source Connector数据集用于历史数据，因此您不希望将来将收集的数据带入此数据集。
+   由于您正在使用 Analytics 源连接器数据集来获取历史数据，因此您不希望将未来收集的数据也导入到此数据集中。
 
-1. 在&#x200B;**[!UICONTROL 数据集回填]**&#x200B;部分中，选择&#x200B;**[!UICONTROL 请求回填]**。
+1. 在&#x200B;**[!UICONTROL 数据集回填]**&#x200B;部分，选择&#x200B;**[!UICONTROL 请求回填]**。
 
-1. 通过输入开始和结束日期或选择日历图标![日历](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)，定义您希望Customer Journey Analytics中的连接回填包括的期间。
+1. 通过输入开始日期和结束日期或选择日程表图标 ![日程表](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)，定义您希望连接回填到 Customer Journey Analytics 中的时间段。
 
-   在指定请求回填的日期时务必明确。 根据多种因素，您可能需要执行以下任一操作：
+   在指定您要求回填的日期时要明确。根据多种因素，您可能需要执行以下任一操作：
 
-   * 选择一个与首次开始使用Web SDK实施收集数据的日期相同的结束日期。
+   * 选择的结束日期与您首次开始使用 Web SDK 实施收集数据的日期相同。
 
-   * 选择一个结束日期，该日期紧跟您首次开始通过Web SDK实施收集数据的日期，然后使用数据视图区段过滤掉重叠数据。
+   * 选择一个在您首次开始使用 Web SDK 实施收集数据后不久的结束日期，然后使用数据视图区段来过滤掉重叠的数据。
 
-   * 选择导致数据更大重叠的结束日期，然后使用数据视图区段过滤掉重叠数据。
+   * 选择一个能产生更大数据重叠的结束日期，然后使用数据视图区段来过滤掉重叠的数据。
 
-     **注意：**&#x200B;此选项将导致成本增加，因为连接中会有更多的行。
+     **注释：**&#x200B;该选项会导致成本增加，因为连接中的行会增加。
 
    <!-- Include any of the following?  Make sure you're explicit as to the dates you request backfill to. You want to request it to the date that you start gathering data with your Web SDK implementation. Also possibly include segments for any overlapping date. So you could request everything and then use a segment to exclude data that you don't want. That way if you need to move up the date, then you could change the date in the filter. Downside would be that you might pay for double rows.  When they do that, they're going to see all schema fields from both their custom schema and their Analytics schema. So they'll need to be cognizant to select the right fields, and never select any Analytics fields, because they will be mapped as part of the source connector. Never select any Analytics field group fields because they'll be mapped.  -->
 
-1. 选择&#x200B;**[!UICONTROL 队列回填]**。
+1. 选择&#x200B;**[!UICONTROL 排列回填]**。
 
-1. 选择&#x200B;**[!UICONTROL 添加数据集]**，然后选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存连接。
+1. 选择&#x200B;**[!UICONTROL 添加数据集]**，然后选择&#x200B;**[!UICONTROL 保存]**&#x200B;来保存该连接。
 
-1. （视情况而定）如果您使用的是查找数据集，则必须创建查找数据集并将其添加到连接中。 有关详细信息，请参阅[创建查找数据集以在Customer Journey Analytics中对数据进行分类](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)。
+1. （有条件）如果您正在使用查找数据集，则必须创建查找数据集并将其添加到您的连接中。有关详细信息，请参阅 [创建查找数据集，以对 Customer Journey Analytics 中的数据进行分类](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)。
 
-   只有在配置Web SDK实施时尚未这样做的情况下，才需要执行此操作。
+   仅当您在配置 Web SDK 实施时尚未执行此操作时才需要这样做。
 
 {{upgrade-final-step}}

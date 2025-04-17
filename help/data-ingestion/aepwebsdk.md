@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 role: Admin
-source-git-commit: 9849d686e886426124842ce210b423ac6c74fb89
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '3543'
-ht-degree: 83%
+source-wordcount: '3551'
+ht-degree: 88%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 83%
 
 要完成此实施，您需要：
 
-- 在 Adobe Experience Platform 中&#x200B;**设置模式和数据集** ，以定义要收集的数据的模型（模式）以及实际收集数据的位置（数据集）。
+- 在 Adobe Experience Platform 中&#x200B;**设置架构和数据集** ，以定义要收集的数据的模型（架构）以及实际收集数据的位置（数据集）。
 
 - **设置数据流** 以配置 Adobe Experience Platform Edge Network，将您收集的数据路由到您在 Adobe Experience Platform 中配置的数据集。
 
@@ -34,25 +34,25 @@ ht-degree: 83%
 
 >[!NOTE]
 >
-> 本快速入门指南是一份简化的指南，介绍了如何将从网站收集的数据摄取到Adobe Experience Platform并在Customer Journey Analytics中使用。 强烈建议参考时研究附加信息。
+> 本快速入门指南是一份关于如何将从网站收集的数据摄取到Adobe Experience Platform并在Customer Journey Analytics中使用的简化指南。 强烈建议参考时研究附加信息。
 
 
-## 设置模式和数据集
+## 设置架构和数据集
 
-要将数据摄取到Adobe Experience Platform，您必须首先定义要收集的数据。 引入 Adobe Experience Platform 的所有数据都必须符合标准的非规范化结构，以便下游功能和特性对其进行识别和操作。体验数据模型 (XDM) 是以模式形式提供此结构的标准框架。
+要将数据摄取到Adobe Experience Platform，您必须首先定义要收集的数据。 引入 Adobe Experience Platform 的所有数据都必须符合标准的非规范化结构，以便下游功能和特性对其进行识别和操作。体验数据模型 (XDM) 是以架构形式提供此结构的标准框架。
 
-定义模式后，您可以使用一个或多个数据集来存储和管理数据集合。数据集是用于数据集合（通常是表）的存储和管理结构，其中包含架构（列）和字段（行）。
+定义架构后，您可以使用一个或多个数据集来存储和管理数据集合。数据集是用于数据集合（通常是表）的存储和管理结构，其中包含架构（列）和字段（行）。
 
-摄取到 Adobe Experience Platform 中的所有数据都必须符合预定义的模式，然后才能作为数据集保存。
+摄取到 Adobe Experience Platform 中的所有数据都必须符合预定义的架构，然后才能作为数据集保存。
 
-### 设置模式
+### 设置架构
 
 您希望从访问您网站的轮廓中跟踪一些最小数据，例如页面名称、标识。
 您必须首先定义一个模式来模拟此数据。
 
-设置您的模式：
+设置您的架构：
 
-1. 在 Adobe Experience Platform UI 的左边栏中，选择[!UICONTROL 数据管理]中的&#x200B;**[!UICONTROL 模式]**。
+1. 在 Adobe Experience Platform UI 的左边栏中，选择[!UICONTROL 数据管理]中的&#x200B;**[!UICONTROL 架构]**。
 
 1. 选择&#x200B;**[!UICONTROL 创建架构]**。
 .
@@ -60,20 +60,20 @@ ht-degree: 83%
 
    1. 选择&#x200B;**[!UICONTROL 体验事件]**。
 
-      ![创建突出显示Experience Event的架构](./assets/create-ee-schema-wizard-step-1.png)
+      ![创建突出显示体验事件的架构](./assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    体验事件架构用于为配置文件的&#x200B;_行为_&#x200B;建模（如场景名称、要添加到购物车的按钮）。 个人轮廓模式用于对轮廓&#x200B;_属性_（如姓名、电子邮件、性别）建模。
+      >    Experience Event 架构用于对轮廓的&#x200B;_行为_&#x200B;进行建模（如场景名称、添加到购物车的按钮）。个人轮廓架构用于对轮廓&#x200B;_属性_（如姓名、电子邮件、性别）进行建模。
 
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
 
-1. 在[!UICONTROL 创建架构]向导的[!UICONTROL 名称和审核步骤]中：
+1. 在[!UICONTROL 创建架构]向导中的[!UICONTROL 命名和审查步骤]中：
 
-   1. 为您的架构输入&#x200B;**[!UICONTROL 架构显示名称]**&#x200B;和（可选）**[!UICONTROL 描述]**。
+   1. 输入架构的&#x200B;**[!UICONTROL 架构显示名称]**&#x200B;和（可选）**[!UICONTROL 描述]**。
 
-      ![创建架构窗口，显示架构字段的名称名称](./assets/create-ee-schema-wizard-step-2.png)
+      ![创建架构窗口，其中显示架构字段的名称](./assets/create-ee-schema-wizard-step-2.png)
 
    1. 选择&#x200B;**[!UICONTROL 完成]**。
 
@@ -83,7 +83,7 @@ ht-degree: 83%
 
       ![添加字段组](./assets/add-field-group-button.png)
 
-      字段组是可重用的对象和属性集合，可让您轻松扩展模式。
+      字段组是可重用的对象和属性集合，可让您轻松扩展架构。
 
    1. 在[!UICONTROL 添加字段组]对话框中，从列表中选择 **[!UICONTROL AEP Web SDK ExperienceEvent]** 字段组。
 
@@ -97,21 +97,21 @@ ht-degree: 83%
 
    1. 选择&#x200B;**[!UICONTROL 添加字段组]**。
 
-1. 在[!UICONTROL 结构]面板中选择模式名称旁边的 **[!UICONTROL +]**。
+1. 在[!UICONTROL 结构]面板中选择架构名称旁边的 **[!UICONTROL +]**。
 
-   ![示例模式添加字段按钮](./assets/example-schema-plus.png)
+   ![示例架构添加字段按钮](./assets/example-schema-plus.png)
 
 1. 在 [!UICONTROL  字段属性 ] 面板中，输入 `Identification`作为名称，**[!UICONTROL Identification]** 作为 [!UICONTROL Display name]，选择 **[!UICONTROL Object]** 作为 [!UICONTROL Type] 和选择 **[!UICONTROL ExperienceEvent Core v2.1]** 作为 [!UICONTROL Field Group]。
 
    >[!NOTE]
    >
-   >如果该字段组不可用，请查找另一个包含标识字段的字段组。 或者[创建新的字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html)和[将新的标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field)（如`ecid`、`crmId`和其他您需要的字段）添加到该字段组，并选择该新字段组。
+   >如果该字段组不可用，请寻找另一个包含身份标识字段的字段组。或者[创建一个新的字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html)，并[将新的身份标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field)（如 `ecid`、`crmId` 以及您需要的其他字段）添加到该字段组中，并选择该新字段组。
 
    ![识别对象](./assets/identification-field.png)
 
-   标识对象将标识功能添加到架构中。 对于您自己的网站，您需要使用Experience CloudID和电子邮件地址来识别访问您网站的用户档案。 还有许多其他属性可用于跟踪您的人员标识（例如客户ID、忠诚度ID）。
+   识别对象为您的架构添加了识别功能。在您的情况下，您希望使用 Experience Cloud ID 和电子邮件地址来识别访问您站点的轮廓。还有许多其他属性可用于跟踪您的人员身份（例如客户 ID、忠诚度 ID）。
 
-   选择&#x200B;**[!UICONTROL 应用]**&#x200B;将此对象添加到您的模式中。
+   选择&#x200B;**[!UICONTROL 应用]**&#x200B;将此对象添加到您的架构中。
 
 1. 选择刚刚添加的身份标识对象中的&#x200B;**[!UICONTROL ecid]**&#x200B;字段，选择&#x200B;**[!UICONTROL 身份标识]**&#x200B;和&#x200B;**[!UICONTROL 主要身份标识]** 和 **[!UICONTROL ECID]** 来自右侧面板中的 [!UICONTROL 身份标识命名空间] 列表。
 
@@ -125,47 +125,47 @@ ht-degree: 83%
 
     ![将电子邮件指定为身份标识](./assets/specify-email-identity.png)
 
-   您将电子邮件地址指定为 Adobe Experience Platform Identity 服务可用于组合（拼接）轮廓行为的另一个标识。
+   您将电子邮件地址指定为 Adobe Experience Platform Identity 服务可用于组合（拼接）轮廓行为的另一个身份标识。
 
    选择 **[!UICONTROL 应用]**。您会看到电子邮件属性中显示指纹图标。
 
    选择&#x200B;**[!UICONTROL 保存]**。
 
-1. 选择显示模式名称的模式的根元素，然后选择 **[!UICONTROL 轮廓]** 开关。
+1. 选择显示架构名称的架构的根元素，然后选择 **[!UICONTROL 轮廓]** 开关。
 
-   系统会提示您启用轮廓的模式。一旦启用，当数据被引入基于此模式的数据集中时，该数据将合并到实时客户轮廓。
+   系统会提示您启用轮廓的架构。一旦启用，当数据被引入基于此架构的数据集中时，该数据将合并到实时客户轮廓。
 
-   有关详细信息，请参阅[启用模式以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile)。
+   有关详细信息，请参阅[启用架构以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile)。
 
    >[!IMPORTANT]
    >
-   >    一旦您保存了为轮廓启用的模式，就不能再为轮廓禁用它。
+   >    一旦您保存了为轮廓启用的架构，就不能再为轮廓禁用它。
 
-   ![为轮廓启用模式](./assets/enable-for-profile.png)
+   ![为轮廓启用架构](./assets/enable-for-profile.png)
 
-1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存模式。
+1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存架构。
 
-您已经创建了一个最小模式，用于对您可以从您的网站捕获的数据进行建模。该模式允许使用 Experience Cloud Identity 和电子邮件地址来识别轮廓。通过启用轮廓模式，您可以确保从您的网站捕获的数据被添加到实时客户轮廓中。
+您已经创建了一个最小架构，用于对您可以从您的网站捕获的数据进行建模。该架构允许使用 Experience Cloud Identity 和电子邮件地址来识别轮廓。通过启用轮廓架构，您可以确保从您的网站捕获的数据被添加到实时客户轮廓中。
 
 除了行为数据之外，您还可以从您的站点捕获轮廓属性数据（例如订阅时事通讯的轮廓的详细信息）。
 
 要捕获此轮廓数据，您需要：
 
-- 基于 XDM 个人轮廓类创建模式。
+- 基于 XDM 个人轮廓类创建架构。
 
-- 将 Profile Core v2 字段组添加到模式中。
+- 将 Profile Core v2 字段组添加到架构中。
 
-- 添加基于 Profile Core v2 字段组的标识对象。
+- 添加基于 Profile Core v2 字段组的身份标识对象。
 
-- 将Experience CloudID定义为主标识符，将电子邮件定义为标识符。
+- 将 Experience Cloud ID 定义为主要身份标识符，并将电子邮件定义为身份标识符。
 
-- 为轮廓启用模式
+- 为轮廓启用架构
 
-请参阅[在 UI 中创建和编辑模式](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html)，了解有关向模式添加和删除字段组和单个字段的更多信息。
+请参阅[在 UI 中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html)，了解有关向架构添加和删除字段组和单个字段的更多信息。
 
 ### 设置数据集
 
-使用您的模式，您已经定义了数据模型。现在，您必须定义构建来存储和管理这些数据，这通过数据集来完成。
+使用您的架构，您已经定义了数据模型。现在，您必须定义构建来存储和管理这些数据，这通过数据集来完成。
 
 设置您的数据集
 
@@ -175,11 +175,11 @@ ht-degree: 83%
 
    ![创建数据集](./assets/create-dataset.png)
 
-3. 选择&#x200B;**[!UICONTROL 使用模式创建数据集]**。
+3. 选择&#x200B;**[!UICONTROL 使用架构创建数据集]**。
 
-   ![使用模式创建数据集](./assets/create-dataset-from-schema.png)。
+   ![使用架构创建数据集](./assets/create-dataset-from-schema.png)。
 
-4. 选择您之前创建的模式，然后选择 **[!UICONTROL 下一个]**。
+4. 选择您之前创建的架构，然后选择 **[!UICONTROL 下一个]**。
 
 5. 为您的数据集命名并（可选）提供描述。
 
@@ -193,15 +193,15 @@ ht-degree: 83%
 
    >[!IMPORTANT]
    >
-   >    只有当数据集所依附的模式也为轮廓启用时，您才能为轮廓启用数据集。
+   >    只有当数据集所依附的架构也为轮廓启用时，您才能为轮廓启用数据集。
 
-   ![为轮廓启用模式](./assets/aepwebsdk-dataset-profile.png)
+   ![为轮廓启用架构](./assets/aepwebsdk-dataset-profile.png)
 
 有关如何查看、预览、创建和删除数据集的更多信息，请参阅[数据集 UI 指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=zh-Hans)。以及如何为实时客户轮廓启用数据集。
 
 ## 设置数据流
 
-数据流表示实施 Adobe Experience Platform Web 和移动 SDK 时的服务器端配置。使用 Adobe Experience Platform SDK 收集数据时，数据会发送到 Adobe Experience Platform Edge Network。它是确定数据转发到哪些服务的数据流。
+数据流表示实施 Adobe Experience Platform Web 和移动 SDK 时的服务器端配置。使用 Adobe Experience Platform SDK 收集数据时，数据会发送到 Adobe Experience Platform Edge Network。数据流决定将数据转发到哪些服务。
 
 在您的设置中，您希望将从网站收集的数据发送到 Adobe Experience Platform 中的数据集。
 
@@ -211,7 +211,7 @@ ht-degree: 83%
 
 2. 选择&#x200B;**[!UICONTROL 新数据流]**。
 
-3. 命名并描述您的数据流。从 [!UICONTROL 事件模式] 列表中选择您的模式。
+3. 命名并描述您的数据流。从 [!UICONTROL 事件架构] 列表中选择您的架构。
 
    ![新数据流](./assets/new-datastream.png)
 
@@ -260,7 +260,7 @@ ht-degree: 83%
 
 #### **扩展**
 
-要确保您可以将数据发送到Adobe Experience Platform（通过数据流），请将Adobe平台Web SDK扩展添加到您的标记中。
+要确保您可以将数据发送到Adobe Experience Platform（通过数据流），请将Adobe Platform Web SDK扩展添加到您的标记中。
 
 创建并配置 Adobe Experience Platform Web SDK。
 
@@ -280,7 +280,7 @@ ht-degree: 83%
 
 有关详细信息，请参阅[配置 Adobe Experience Platform Web SDK 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html)。
 
-Web SDK本身包含[!UICONTROL Adobe Experience Cloud ID服务]，因此您无需将ID服务扩展添加到标记中。
+Web SDK 本身包含 [!UICONTROL Adobe Experience Cloud ID 服务]，因此您无需将 ID 服务扩展添加到标记中。
 
 #### **数据元素**
 
@@ -332,7 +332,7 @@ Web SDK本身包含[!UICONTROL Adobe Experience Cloud ID服务]，因此您无�
 
    - 选择&#x200B;**[!UICONTROL 保存]**。
 
-最后，您现在希望将任何特定的数据元素映射到先前定义的模式。您可以定义另一个数据元素，它提供 XDM 模式的表示。
+最后，您现在希望将任何特定的数据元素映射到先前定义的架构。您可以定义另一个数据元素，它提供 XDM 架构的表示。
 
 要定义 XDM 对象数据元素：
 
@@ -350,16 +350,16 @@ Web SDK本身包含[!UICONTROL Adobe Experience Cloud ID服务]，因此您无�
 
    - 从您的[!UICONTROL 沙盒]列表中选择沙盒。
 
-   - 从您的[!UICONTROL 模式]列表中选择模式。
+   - 从您的[!UICONTROL 架构]列表中选择架构。
 
-   - 将模式中定义的 `identification > core > ecid` 属性映射到 ECID 数据元素。选择圆柱体图标可以轻松地从数据元素列表中拾取 ECID 数据元素。
+   - 将架构中定义的 `identification > core > ecid` 属性映射到 ECID 数据元素。选择圆柱体图标可以轻松地从数据元素列表中拾取 ECID 数据元素。
 
      ![拾取 ECID 数据元素](./assets/pick-ecid-dataelement.png)
 
      ![映射 ECID 数据元素](./assets/map-ecid.png)
 
 
-   - 将模式中定义的`web > webPageDetails > name` 属性映射到页面名称数据元素。
+   - 将架构中定义的`web > webPageDetails > name` 属性映射到页面名称数据元素。
 
      ![映射页面名称数据元素](./assets/map-pagename.png)
 
@@ -444,7 +444,7 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。他们寻找
 
    - 选择&#x200B;**[!UICONTROL 保存并生成到开发]**。
 
-   您的标记已保存并为开发环境构建。 绿色圆点表示在开发环境中成功构建了标记。
+   您的标记已保存，并为您的开发环境构建。绿色圆点表示在开发环境中成功构建了标记。
 
 4. 您可以选择&#x200B;**[!UICONTROL ...]** 重建库或将库移动到临时或生产环境。
 
@@ -487,13 +487,13 @@ Adobe Experience Platform 标签支持简单到复杂的发布工作流，这些
 
 ## 设置连接
 
-要在 Customer Journey Analytics 中使用 Adobe Experience Platform 数据，您需要创建一个连接，其中包含因设置模式、数据集和工作流所产生的数据。
+要在 Customer Journey Analytics 中使用 Adobe Experience Platform 数据，您需要创建一个连接，其中包含因设置架构、数据集和工作流所产生的数据。
 
 通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告这些数据集，您必须首先在Adobe Experience Platform和Workspace中的数据集之间建立连接。
 
 创建您的连接：
 
-1. 在 Customer Journey Analytics UI 中，选择顶部导航中的&#x200B;**[!UICONTROL 连接]**。
+1. 在Customer Journey Analytics UI中，从顶部菜单中选择&#x200B;**[!UICONTROL 连接]** （可选）从&#x200B;**[!UICONTROL 数据管理]**。
 
 2. 选择&#x200B;**[!UICONTROL 创建新连接]**。
 
@@ -519,7 +519,7 @@ Adobe Experience Platform 标签支持简单到复杂的发布工作流，这些
 
    - 对于每个数据集：
 
-      - 在 Adobe Experience Platform 中，从在数据集模式中定义的可用身份标识中选择[!UICONTROL 人员 ID]。
+      - 在 Adobe Experience Platform 中，从在数据集架构中定义的可用身份标识中选择[!UICONTROL 人员 ID]。
 
       - 从[!UICONTROL 数据源类型]列表中选择正确的数据源。如果指定&#x200B;**[!UICONTROL 其他]**，则为您的数据源添加描述。
 
@@ -539,7 +539,7 @@ Adobe Experience Platform 标签支持简单到复杂的发布工作流，这些
 
 创建您的数据视图：
 
-1. 在 Customer Journey Analytics UI 中，选择顶部导航中的&#x200B;**[!UICONTROL 数据视图]**。
+1. 在Customer Journey Analytics UI中，从顶部菜单中选择&#x200B;**[!UICONTROL 数据视图]**（可选）从&#x200B;**[!UICONTROL 数据管理]**&#x200B;中选择。
 
 2. 选择&#x200B;**[!UICONTROL 创建新数据视图]**。
 
@@ -555,7 +555,7 @@ Adobe Experience Platform 标签支持简单到复杂的发布工作流，这些
 
 4. 在[!UICONTROL 组件]步骤中：
 
-   将要包含的任何模式字段和/或标准组件添加到[!UICONTROL 量度]或[!UICONTROL 维度]组件框中。
+   将要包含的任何架构字段和/或标准组件添加到[!UICONTROL 量度]或[!UICONTROL 维度]组件框中。
 
    ![数据视图组件](./assets/cja-dataview-2.png)
 
@@ -576,7 +576,7 @@ Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分�
 
 要创建您的项目：
 
-1. 在 Customer Journey Analytics UI 中，选择顶部导航中的&#x200B;**[!UICONTROL 项目]**。
+1. 在Customer Journey Analytics UI中，从顶部菜单中选择&#x200B;**[!UICONTROL 项目]**。
 
 2. 选择左侧导航中的&#x200B;**[!UICONTROL 项目]**。
 

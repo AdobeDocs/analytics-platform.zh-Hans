@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
-source-git-commit: 10a70743d292e50ca5aea3225897e7097fa4fc8a
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Quantum Metric CSM团队可帮助您确定要添加的正确架构元素，并�
 编辑现有数据视图，在Customer Journey Analytics中将会话ID添加为可用维度。
 
 1. 登录到[experience.adobe.com](https://experience.adobe.com)。
-1. 导航到Customer Journey Analytics，然后在顶部菜单中选择&#x200B;**[!UICONTROL 数据视图]**。
+1. 导航到Customer Journey Analytics，然后在顶部菜单中选择&#x200B;**[!UICONTROL 数据视图]**（可选），从&#x200B;**[!UICONTROL 数据管理]**&#x200B;中选择。
 1. 选择所需的现有数据视图。
 1. 在左侧找到“量子量度摩擦”事件字段列表，并将其拖动到中间的量度区域。
 1. 在右窗格中，将[包含/排除值](/help/data-views/component-settings/include-exclude-values.md)设置设置为要跟踪的所需摩擦事件。 您可以将多个摩擦事件添加到同一量度以组合它们。 您还可以将摩擦事件字段的另一个副本拖动到量度区域，以作为单独的量度跟踪其他摩擦事件。

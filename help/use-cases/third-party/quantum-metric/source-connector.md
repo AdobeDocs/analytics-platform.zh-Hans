@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: true
 hide: true
-source-git-commit: d71f39d25c52b0389d0441f238cb5b1809986b2d
+exl-id: ea8795fe-f5aa-458f-9e01-53ff1ffe6372
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '413'
 ht-degree: 1%
 
 ---
@@ -34,7 +35,7 @@ CJA解锁对QM数据、顺序数据分析、富归因和其他高级报表的报
 为Quantum Metric数据创建源连接器会自动在Adobe Experience Platform中创建数据集。 将此数据集添加到Customer Journey Analytics中的新连接或现有[连接](/help/connections/overview.md)。
 
 1. 登录到[experience.adobe.com](https://experience.adobe.com)。
-1. 导航到Customer Journey Analytics，然后在顶部菜单中选择&#x200B;**[!UICONTROL 连接]**。
+1. 导航到Customer Journey Analytics，然后在顶部菜单中选择&#x200B;**[!UICONTROL 连接]**（可选），从&#x200B;**[!UICONTROL 数据管理]**&#x200B;中选择。
 1. 为连接命名，然后将Quantum量度数据集添加到连接。
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
@@ -46,7 +47,7 @@ CJA解锁对QM数据、顺序数据分析、富归因和其他高级报表的报
 创建[数据视图](/help/data-views/data-views.md)以配置维度和量度设置。
 
 1. 登录到[experience.adobe.com](https://experience.adobe.com)。
-1. 导航到Customer Journey Analytics，然后在顶部菜单中选择&#x200B;**[!UICONTROL 数据视图]**。
+1. 导航到Customer Journey Analytics，然后在顶部菜单中选择&#x200B;**[!UICONTROL 数据视图]**（可选），从&#x200B;**[!UICONTROL 数据管理]**&#x200B;中选择。
 1. 选择所需的数据视图，或创建数据视图。
 1. 在右侧的架构字段列表中找到所需的量度维度和量度，并将它们拖动到中心的维度和量度区域。
 1. 使用右侧窗格配置每个所需的维度和量度。
