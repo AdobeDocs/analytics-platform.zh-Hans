@@ -1,22 +1,22 @@
 ---
-description: 通过筛选单个量度，可在同一报表中比较量度。
-title: 过滤量度
+description: 通过为单个量度分段，可在同一报表中比较各个量度。
+title: 分段指标
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 2f87afb9c87b0436ee40cc67a04d99d4f4f10e74
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '484'
 ht-degree: 1%
 
 ---
 
-# 过滤量度
+# 分段指标
 
-在[计算量度生成器](cm-build-metrics.md#definition-builder)中，您可以在量度定义中应用筛选器。 如果要在分析中为数据子集使用量度，应用过滤器会很有帮助。
+在[计算量度生成器](cm-build-metrics.md#definition-builder)中，您可以在量度定义中应用区段。 如果您希望在分析中为数据子集使用量度，应用区段会很有帮助。
 
 >[!NOTE]
 >
->筛选器定义已通过[筛选器生成器](/help/components/filters/filter-builder.md)更新。 如果您对过滤器进行了更改，则无论何时使用该过滤器，都会自动更新该过滤器，其中包括该过滤器是否为计算指标定义的一部分。
+>区段定义通过[区段生成器](/help/components/filters/filter-builder.md)更新。 如果您对区段进行了更改，则该区段将在任何使用它的地方自动更新，包括如果该区段是计算指标定义的一部分。
 >
 
 您希望比较与您的品牌互动的德国人员与德国以外人员的量度。 因此，您可以回答类似下面的问题：
@@ -25,36 +25,36 @@ ht-degree: 1%
 1. 本月[总计](#totals)有多少德国和国际人员与您的品牌进行了在线互动。
 1. 访问您热门页面的德国人和国际人士的[百分比](#percentages)是多少？
 
-请参阅以下部分，以说明过滤量度如何帮助您回答这些问题。 在适当的情况下，会参考更详细的文档。
+请参阅以下部分，以说明分段量度如何帮助您回答这些问题。 在适当的情况下，会参考更详细的文档。
 
 ## 受欢迎页面
 
 1. [从名为`German people`的Workspace项目创建计算量度](cm-workflow.md)。
-1. 在[计算量度生成器](cm-build-metrics.md)中，[创建一个名为`Germany`的筛选器](/help/components/filters/filter-builder.md)，该筛选器使用您CRM数据中的“CRM国家/地区”字段来确定人员的来源。
+1. 在[计算量度生成器](cm-build-metrics.md)中，[创建一个名为`Germany`的区段](/help/components/filters/filter-builder.md)，该区段使用CRM数据中的“CRM国家/地区”字段来确定人员的来源。
 
    >[!TIP]
    >
-   >在计算量度生成器中，您可以使用组件面板直接创建过滤器。
+   >在计算量度生成器中，您可以使用组件面板直接创建区段。
    >   
 
-   您的过滤器可能如下所示。
+   您的区段可能如下所示。
 
    ![筛选器德国](assets/filter-germany.png)
 
-1. 返回计算指标生成器，然后使用该过滤器更新计算指标。
+1. 返回计算指标生成器，使用该区段更新计算指标。
 
    ![计算量度Germany](assets/calculated-metric-germany.png)
 
 对计算指标的国际版本重复上述步骤。
 
 1. 从您的Workspace项目创建一个名为`International people`的计算指标。
-1. 在计算量度生成器中，创建一个名为`Not Germany`的筛选器，该筛选器使用您CRM数据中的CRM国家/地区字段来确定人员的来源。
+1. 从计算量度生成器中，创建一个名为`Not Germany`的区段，该区段使用您CRM数据中的CRM国家/地区字段来确定人员的来源。
 
-   您的过滤器应类似于。
+   您的区段应当如下所示。
 
    ![筛选器德国](assets/filter-not-germany.png)
 
-1. 返回计算指标生成器，然后使用该过滤器更新计算指标。
+1. 返回计算指标生成器，使用该区段更新计算指标。
 
    ![计算量度Germany](assets/calculated-metric-notgermany.png)
 
@@ -66,7 +66,7 @@ ht-degree: 1%
 
 ## 总计
 
-1. 根据总计创建两个新筛选器。 打开之前创建的每个筛选器，重命名筛选器，将&#x200B;**[!UICONTROL 人员]**&#x200B;的&#x200B;**[!UICONTROL 度量类型]**&#x200B;设置为&#x200B;**[!UICONTROL 总计]**，并使用&#x200B;**[!UICONTROL 另存为]**&#x200B;以使用新名称保存筛选器。 例如：
+1. 根据总计创建两个新区段。 打开之前创建的每个区段，重命名该区段，将&#x200B;**[!UICONTROL 人员]**&#x200B;的&#x200B;**[!UICONTROL 度量类型]**&#x200B;设置为&#x200B;**[!UICONTROL 总计]**，并使用&#x200B;**[!UICONTROL 另存为]**&#x200B;以使用新名称保存该区段。 例如：
 
    德国![总量度](assets/calculated-metric-germany-total.png)
 
@@ -90,7 +90,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [将筛选的计算量度用作演示视频的无实施量度](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"}。
+请参阅![VideoCheckout](/help/assets/icons/VideoCheckedOut.svg) [将分段计算量度用作演示视频的无实施量度](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"}。
 
 {{videoaa}}
 

@@ -4,10 +4,10 @@ description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
 source-wordcount: '2320'
-ht-degree: 78%
+ht-degree: 77%
 
 ---
 
@@ -73,7 +73,7 @@ ht-degree: 78%
    | --- | --- |
    | 从&#x200B;**[!UICONTROL 受众]**&#x200B;界面中 | 在 Customer Journey Analytics 菜单中，选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 受众]**。“受众”界面显现。选择&#x200B;**[!UICONTROL 创建受众]**，将打开[!UICONTROL 受众生成器]。 |
    | 从 Analysis Workspace 的可视化功能 | Analysis Workspace 中的许多可视化功能允许您使用上下文菜单创建受众。例如，您可以从[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)中的项目或[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)中的节点的上下文菜单中选择&#x200B;**[!UICONTROL 创建受众]**。<p>使用此方法时会使用您选择的维度或维度项目预填充受众生成器中的区段。</p><p>以下可视化功能可让您使用右键菜单创建受众：</p><ul><li>[同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[流](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[维恩图](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**注释：**&#x200B;受众不能包含计算量度。如果您尝试创建包含计算量度的受众，则受众定义不会包含该计算量度。</p> |
-   | 通过区段创建/编辑UI | 选中显示&#x200B;**[!UICONTROL 从此区段创建受众的框]**。 使用此方法时会预填充区段。 有关更多信息，请参阅[创建过滤器](/help/components/filters/create-filters.md)。 |
+   | 通过区段创建/编辑UI | 选中显示&#x200B;**[!UICONTROL 从此区段创建受众的框]**。 使用此方法时会预填充区段。 有关详细信息，请参阅[创建区段](/help/components/filters/create-filters.md)。 |
 
    {style="table-layout:auto"}
 

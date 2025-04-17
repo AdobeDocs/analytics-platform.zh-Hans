@@ -1,14 +1,14 @@
 ---
-description: 管理可发送Customer Journey Analytics数据的云导出位置
+description: 管理可将Customer Journey Analytics数据发送到的云导出位置
 keywords: Analysis Workspace
 title: 管理云导出位置和帐户
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: 8fc8e3e4057663bd4bdf38e41bb3129df442f749
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
-source-wordcount: '1370'
-ht-degree: 1%
+source-wordcount: '1371'
+ht-degree: 3%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## 过滤和搜索位置
 
-要查找所需的信息，可以筛选位置列表或搜索位置。
+要查找所需的信息，您可以在位置列表中进行筛选或搜索位置。
 
 ### 筛选位置列表
 
@@ -36,7 +36,7 @@ ht-degree: 1%
 
    | 过滤器 | 描述 |
    |---------|----------|
-   | [!UICONTROL **位置类型**]<!--should this be changed to Account type?--> | 与位置关联的帐户类型。 可以使用以下帐户类型： <ul><li>[!UICONTROL **AEP数据登陆区**]</li><li>[!UICONTROL **Amazon S3角色ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google云平台**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
+   | [!UICONTROL **位置类型**]<!--should this be changed to Account type?--> | 与位置关联的帐户类型。 可以使用以下帐户类型： <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
    | [!UICONTROL **帐户**] | 与位置关联的帐户的名称。 |
    | [!UICONTROL **创建者**] | 创建位置的用户的电子邮件地址。 |
 
@@ -154,7 +154,7 @@ ht-degree: 1%
 
 ### 配置用户是否可以创建和编辑帐户
 
-默认情况下，组织中的所有用户都可以创建帐户并编辑他们在Customer Journey Analytics环境中创建的帐户，如[配置云导出帐户](/help/components/exports/cloud-export-accounts.md)中所述。
+默认情况下，组织中的所有用户都可以创建帐户并编辑他们在Customer Journey Analytics环境中创建的帐户，如[配置Cloud Export帐户](/help/components/exports/cloud-export-accounts.md)中所述。
 
 您可以限制用户创建帐户。 执行此操作时，用户仍可以使用他们已创建的任何帐户，但无法再编辑这些帐户。 您可以删除用户已创建的帐户，如[删除帐户](#delete-an-account)中所述。
 
@@ -221,11 +221,11 @@ ht-degree: 1%
 
    默认情况下，用户可以使用以下帐户类型。 取消选择要限制用户使用的任意帐户类型。
 
-   * [!UICONTROL **AEP数据登陆区**]
+   * [!UICONTROL **AEP Data Landing Zone**]
 
-   * [!UICONTROL **Amazon S3角色ARN**]
+   * [!UICONTROL **Amazon S3 Role ARN**]
 
-   * [!UICONTROL **Google云平台**]
+   * [!UICONTROL **Google Cloud Platform**]
 
    * [!UICONTROL **Azure SAS**]
 

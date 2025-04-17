@@ -5,10 +5,10 @@ feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
 source-wordcount: '544'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -34,7 +34,7 @@ Customer Journey Analytics在运行报表时对其进行处理，将组合数据
 
 适应高基数维度的最佳方法是限制报表处理的维度项目数。 由于所有报表在请求时都会进行处理，因此您可以调整报表参数以即时获得结果。 Adobe建议对高基数维度进行以下任何优化：
 
-* 使用[筛选器](/help/components/filters/create-filters.md)。 过滤器在每个服务器处理数据子集时应用。
+* 使用[区段](/help/components/filters/create-filters.md)。 区段在每个服务器处理数据子集时应用。
 * 使用搜索。 从搜索词中排除的Dimension项目将从报表结果中删除，这样您更有可能看到所需的维度项目。
 * 使用查找数据集维度。查找数据集维度将事件数据集维度项组合在一起，从而限制返回的唯一值的数量。
 * 在数据视图管理器中使用[包含/排除](/help/data-views/component-settings/include-exclude-values.md)组件设置。

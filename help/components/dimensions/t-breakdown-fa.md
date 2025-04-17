@@ -6,24 +6,24 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
 source-wordcount: '540'
-ht-degree: 52%
+ht-degree: 60%
 
 ---
 
 # 在工作区中划分维度
 
-您可以根据特定需求，以无限方式细分数据；使用相关量度、维度、过滤器、时间线和其他分析细分值构建查询。
+您可以根据特定需求，以无限方式细分数据；使用相关量度、维度、区段、时间线和其他分析细分值构建查询。
 
 1. 在[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)中，从一个或多个选定行的上下文菜单中，选择&#x200B;**[!UICONTROL 划分]** ![V形右](/help/assets/icons/ChevronRight.svg)。
 
    ![显示从所选内容创建警报的步骤结果。](assets/breakdown.png)
 
-1. 从子菜单中选择&#x200B;**[!UICONTROL Dimension]**、**[!UICONTROL 指标]**、**[!UICONTROL 筛选器]**&#x200B;或&#x200B;**[!UICONTROL 日期范围]**，然后选择一个项目。
+1. 从子菜单中选择&#x200B;**[!UICONTROL 维度]**、**[!UICONTROL 量度]**、**[!UICONTROL 筛选器]**&#x200B;或&#x200B;**[!UICONTROL 日期范围]**，然后选择一个项目。
 
-您可以跨选定的时段，按维度项目或者受众筛选条件来划分指标。此外，您还可以进一步深入到更精细的粒度级别。
+您可以按维度项目或受众区段，在选定的时间期限内划分量度。此外，您还可以进一步深入到更精细的粒度级别。
 
 >[!NOTE]
 >
@@ -31,9 +31,9 @@ ht-degree: 52%
 
 ## 按位置划分
 
-默认情况下，划分固定在静态行项目。 例如，假设您按营销渠道划分排名前3的“页面”维度项目（主页、搜索结果、结账）。 然后，您离开项目，两周后返回。再次打开项目时，排名前 3 的页面已更改，此时“主页”、“搜索结果”和“结账”页面成为排名第 4-6 的页面。默认情况下，营销渠道划分仍会显示在“主页”、“搜索结果”和“结账”下方，即使三者现在分别位于第4-6行中。
+默认情况下，划分固定在静态行项目。 例如，假设您按营销渠道细分排名前 3 的“页面”维度项（主页、搜索结果、结账）。然后，您离开项目，两周后返回。再次打开项目时，排名前 3 的页面已更改，此时“主页”、“搜索结果”和“结账”页面成为排名第 4-6 的页面。默认情况下，营销渠道划分仍会显示在“主页”、“搜索结果”和“结账”下方，即使三者现在分别位于第4-6行中。
 
-相反，**按位置**&#x200B;划分，始终划分排名前3的项目，而不管这些项目是什么。 回顾示例，当您重新打开项目时，营销渠道划分会绑定到表中排名前3的页面。 而不是主页、搜索结果和结帐，三者现在位于第4-6行中。 请参阅[行设置](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)如何配置此设置。
+相反，**按位置**&#x200B;划分，始终划分排名前3的项目，而不管这些项目是什么。 回顾该示例，当您重新打开项目时，营销渠道细分与表中排名前 3 的页面相关联。而不是主页、搜索结果和结帐，三者现在位于第4-6行中。 请参阅[行设置](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)如何配置此设置。
 
 
 
@@ -53,7 +53,7 @@ ht-degree: 52%
 
 >[!BEGINSHADEBOX]
 
-请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[在Analysis Workspace](https://video.tv.adobe.com/v/23971?quality=12&learn=on){target="_blank"}中Dimension演示视频。
+有关演示视频，请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Analysis Workspace中的Dimension](https://video.tv.adobe.com/v/23971?quality=12&learn=on){target="_blank"}。
 
 {{videoaa}}
 
@@ -62,7 +62,7 @@ ht-degree: 52%
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Dimension划分](https://video.tv.adobe.com/v/23969?quality=12&learn=on){target="_blank"}。
+有关演示视频，请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension划分](https://video.tv.adobe.com/v/23969?quality=12&learn=on){target="_blank"}。
 
 {{videoaa}}
 
@@ -89,7 +89,7 @@ ht-degree: 52%
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[按位置](https://video.tv.adobe.com/v/24033){target="_blank"}划分的Dimension。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[按位置划分的Dimension](https://video.tv.adobe.com/v/24033){target="_blank"}。
 
 {{videoaa}}
 
