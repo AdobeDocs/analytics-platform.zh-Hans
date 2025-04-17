@@ -1,10 +1,10 @@
 ---
 title: 运算符
-description: 确定组件如何与筛选器中的值交互。
+description: 确定组件如何与区段中的值交互。
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
 feature: Filters
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 54%
@@ -39,7 +39,7 @@ ht-degree: 54%
 
 ## 不同的计数运算符
 
-您可以按维度中项目的非重复计数进行筛选。 例如，您可以为查看了5个以上不重复产品或查看了5个以上不重复页面的访问的人创建过滤器。
+您可以按维度中项目的非重复计数进行分段。例如，您可以为查看了5个以上不重复产品或查看了5个以上不重复页面的人创建区段。
 
 | 运算符 | 描述 |
 | --- | --- |
