@@ -4,7 +4,7 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5311106f486a30dbc7f06b3ef60dc7e666d2fe03
+source-git-commit: 1774ef63e3578f7016a95716fcfa11a0c7c627ce
 workflow-type: tm+mt
 source-wordcount: '4716'
 ht-degree: 98%
@@ -23,7 +23,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 查看和管理使用情况 | 已重写有关如何[查看](/help/connections/manage-connections.md#usage)和[管理](/help/technotes/estimate-usage.md)Customer Journey Analytics用法的文档 |
 | 内容分析 | Adobe Content Analytics的[文档](/help/content-analytics/content-analytics.md)。 通过Content Analytics，您可以快速轻松地调查大量内容数据，以了解趋势、发现异常、识别内容疲劳并从内容曝光中获得见解。 |
 | **2025 年 3 月** | |
-| Quantum Metric 用例 | 添加了从 [Quantum Metric](/help/use-cases/third-party/quantum-metric/collect-session-id.md) 收集数据的用例。 |
+| Quantum Metric 用例 | 添加了从 [Quantum Metric](/help/use-cases/third-party/quantum-metric/qm-overview.md) 收集数据的用例。 |
 | **2025 年 2 月** |  |
 | 媒体收集：Adobe Source Connector 更新了新的媒体报告 XDM | Analytics 源连接器会自动[将 Adobe Analytics 中的流媒体数据映射](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=en)到 Web SDK 使用的相同字段。以前，数据被映射到旧位置和新位置，但未来只使用新位置。 |
 | BI 扩展 - 扩展支持 | Customer Journey Analytics BI 扩展现在[支持 Looker、Jupyter Notebook 和 R Studio](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=en)。 |
