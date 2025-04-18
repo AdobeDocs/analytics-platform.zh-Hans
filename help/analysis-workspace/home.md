@@ -6,7 +6,7 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '1473'
 ht-degree: 99%
@@ -45,7 +45,7 @@ Analysis Workspace 的主要功能可通过按钮面板使用：
 | ![WebPage](/help/assets/icons/WebPage.svg) | **[!UICONTROL 面板]** | [面板](/help/analysis-workspace/c-panels/panels.md)可以包含许多表格和可视化内容，用于在项目中对分析进行组织和整理。Analysis Workspace 中提供的许多面板都可以基于一些用户输入来生成整套分析。 |
 | ![Guided Analysis](/help/assets/icons/GuidedAnalysis.svg) | **[!UICONTROL 引导式分析]** | [引导式分析](../guided-analysis/overview.md)允许您通过引导式工作流自助获取有关客户历程的高质量数据和洞察。您可以创建一个分析，以将其纳入您的 Workspace 项目中，或包含之前保存的现有分析。 |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | **[!UICONTROL 可视化内容]** | [可视化内容](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)（例如条形图或折线图）可用于直观地呈现数据。在最左侧面板中，选择中间的&#x200B;**[!UICONTROL 可视化内容]**&#x200B;图标可查看所有可用的可视化内容。 |
-| ![Curate](/help/assets/icons/Curate.svg) | **[!UICONTROL 组件]** | [组件](/help/components/overview.md)包括以下元素：<ul><li>![Dimensions](/help/assets/icons/Dimensions.svg) [维度](/help/components/dimensions/overview.md)</li><li>![Event](/help/assets/icons/Event.svg) [量度](/help/components/apply-create-metrics.md)</li><li>![Segmentation](/help/assets/icons/Segmentation.svg) [筛选](/help/components/filters/filters-overview.md)</li><li>![Calendar](/help/assets/icons/Calendar.svg) [日期范围](/help/components/date-ranges/overview.md)</li></ul> |
+| ![Curate](/help/assets/icons/Curate.svg) | **[!UICONTROL 组件]** | [组件](/help/components/overview.md)包括以下元素：<ul><li>![Dimensions](/help/assets/icons/Dimensions.svg) [维度](/help/components/dimensions/overview.md)</li><li>![Event](/help/assets/icons/Event.svg) [量度](/help/components/apply-create-metrics.md)</li><li>![分段](/help/assets/icons/Segmentation.svg) [区段](/help/components/filters/filters-overview.md)</li><li>![Calendar](/help/assets/icons/Calendar.svg) [日期范围](/help/components/date-ranges/overview.md)</li></ul> |
 | ![ViewList](/help/assets/icons/ViewList.svg) | **[!UICONTROL 目录]** | 目录会将项目中包含的所有面板和可视化内容组织成一个可折叠列表，以便您能够快速访问特定的面板或可视化内容。 |
 | ![Bookmark](/help/assets/icons/Bookmark.svg) | **数据字典**  | [数据字典](/help/components/data-dictionary/data-dictionary-overview.md)可以帮助用户和管理员跟踪并更好地理解 Analytics 环境中的组件。 |
 

@@ -5,16 +5,16 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 629935d66b0f2c5731806a68cc2fcda5fb11fc9a
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
-source-wordcount: '1372'
-ht-degree: 33%
+source-wordcount: '1364'
+ht-degree: 32%
 
 ---
 
 # 数据视图用例
 
-这些用例说明了数据视图在Customer Journey Analytics中的灵活性和强大功能。
+这些用例说明了Customer Journey Analytics中数据视图的灵活性和强大功能。
 
 ## 使用绑定维度量度
 
@@ -26,7 +26,7 @@ ht-degree: 33%
 
 ## BI 扩展用例
 
-请参阅[BI扩展用例](bi-extension-usecases.md)，了解如何使用Customer Journey AnalyticsBI扩展完成多个用例。
+请参阅[BI扩展用例](bi-extension-usecases.md)，了解如何使用Customer Journey Analytics BI扩展完成多个用例。
 
 ## 根据字符串架构字段创建量度 {#string}
 
@@ -39,9 +39,9 @@ ht-degree: 33%
 1. 打开&#x200B;**[!UICONTROL 包括/排除值]**&#x200B;部分，并指定以下内容：
    1. 启用&#x200B;**[!UICONTROL 设置包括排除值]**。
    1. 从&#x200B;**[!UICONTROL 匹配]**&#x200B;中选择&#x200B;**[!UICONTROL 如果满足所有条件]**。
-   1. 指定`confirmation`。 page_title的此文本表示此页面与下订单有关。 在查看满足这些条件的所有页面标题后，将为每个实例计算`1`。 结果是一个新量度（而非计算量度）。具有已添加/排除值的量度可用于可使用任何其他量度的任何位置。 它可与 Attribution IQ、过滤器配合使用，以及用在可使用标准量度的任何其他位置。
+   1. 指定`confirmation`。 page_title的此文本表示此页面与下订单有关。 在查看满足这些条件的所有页面标题后，将为每个实例计算`1`。 结果是一个新量度（而非计算量度）。具有已添加/排除值的量度可用于可使用任何其他量度的任何位置。 它可与Attribution IQ、区段配合使用，以及用在可使用标准量度的任何其他位置。
 
-   ![指标](../assets/string-to-metric.gif)Dimension{width=100%}
+   ![Dimension到指标](../assets/string-to-metric.gif){width=100%}
 1. 您可以进一步为此量度指定归因模型，例如[!UICONTROL 回顾时间范围]为[!UICONTROL 会话]的[!UICONTROL 最近联系]。
 您还可以根据同一字段创建另一个[!UICONTROL 订单]量度，并指定不同的归因模型。 如[!UICONTROL 首次联系]和其他[!UICONTROL 回顾时间范围]，如[!UICONTROL 30天]。
 
@@ -53,7 +53,7 @@ ht-degree: 33%
 
 
 
-1. 将&#x200B;**[!UICONTROL 持续时间]**&#x200B;整数拖动到[!UICONTROL 包含的组件]下的&#x200B;**[!UICONTROL Dimension]**&#x200B;部分：
+1. 将&#x200B;**[!UICONTROL 持续时间]**&#x200B;整数拖入[!UICONTROL 包含的组件]下的&#x200B;**[!UICONTROL 维度]**&#x200B;节：
 1. 您现在可以添加&#x200B;**[!UICONTROL 值分段]**以分段方式在报告中表示此维度。如果不进行分段，此维度的每个实例都会显示为Workspace报表中的行项目。
    ![整数到维度](../assets/integer-to-dimension.gif){width=100%}
 
@@ -88,7 +88,7 @@ f.指定`50`作为值。
 
 您的公司可能已花时间培训了用户，因此报告中维度预计为“未指定”。 数据视图中维的默认值为“无值”。 但是，您可以为每个维度指定如何报告无值。 有关维组件，请参阅无值选项。
 
-![没有值选项](../assets/no-value-options.gif){width=100%}
+![无值选项](../assets/no-value-options.gif){width=100%}
 
 
 ## 使用不同的归因设置创建多个量度 {#attribution}
@@ -97,7 +97,7 @@ f.指定`50`作为值。
 
 不要忘记重命名每个量度以反映差异，例如`Total Revenue (Algorithmic)`
 
-![不同归因设置的重复量度](../assets/duplicate-metric-for-attribution.gif){width=100%}
+![重复不同归因设置的量度](../assets/duplicate-metric-for-attribution.gif){width=100%}
 
 有关数据视图设置的更多信息，请参阅[创建数据视图](/help/data-views/create-dataview.md)。
 有关数据视图的概念性概述，请参阅[数据视图概述](/help/data-views/data-views.md)。

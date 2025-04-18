@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 role: Admin
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '376'
-ht-degree: 59%
+ht-degree: 51%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 59%
 
 ## 步骤 1：将 Marketo 源数据字段映射到其 XDM 目标
 
-将 [人员](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html#persons) 和 [活动](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html#activities) 对象映射到各自的 XDM 模式目标字段。
+将 [人员](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html#persons) 和 [活动](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html#activities) 对象映射到各自的 XDM 架构目标字段。
 
 ## 步骤2：将Marketo数据摄取到Adobe Experience Platform
 
@@ -26,7 +26,7 @@ ht-degree: 59%
 
 ## 步骤3：在Customer Journey Analytics中设置与此数据集的连接
 
-为了报告Experience Platform数据集，您必须首先在Experience Platform和Customer Journey Analytics中的数据集之间建立连接。 有关详细信息[创建或编辑连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans)，请参阅。
+为了报告Experience Platform数据集，您必须首先在Experience Platform和Customer Journey Analytics中的数据集之间建立连接。 有关详细信息[创建或编辑连接](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-hans)，请参阅。
 
 ## 步骤 4：创建一个或多个数据视图
 
@@ -38,11 +38,11 @@ ht-degree: 59%
 
 1. 打开 [Analytics Workspace](/help/analysis-workspace/home.md) 并创建新项目。拥有B2B/B2P CDP的客户可以在Customer Journey Analytics中进行B2C风格分析。 B2B 对象尚不可用。
 
-1. 为网页视图创建一个[过滤器](/help/components/filters/create-filters.md)，如下所示：事件类型 = web.webpagedetails.pageViews :
+1. 为网页视图创建一个[区段](/help/components/filters/create-filters.md)，如下所示：事件类型= web.webpagedetails.pageViews ：
 
    显示事件和事件类型的![定义窗口](../assets/marketo-filter.png)
 
-1. 在自由格式表中，拉入您创建的过滤器“网页查看次数”，然后拉入月份日期范围。 这样，您可以每月通过潜在客户访问网页：
+1. 将您创建的区段拉入自由格式表 — 网页查看次数，然后拉入月份日期范围。 这样，您可以每月通过潜在客户访问网页：
 
    ![自由格式表，按月份显示事件。](../assets/marketo-freeform.png)
 

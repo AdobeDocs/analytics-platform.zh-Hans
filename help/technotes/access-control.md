@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 354bdb440e36dc990f54d887908f9fb9c0a50110
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '1549'
-ht-degree: 14%
+ht-degree: 16%
 
 ---
 
@@ -25,7 +25,7 @@ Customer Journey Analytics由三个访问级别或三个角色控制：产品管
 
 ### 产品管理员角色
 
-默认情况下，分配给产品管理员角色的用户将获得在Customer Journey Analytics中执行大多数任务的必要权限。 但是，某些任务需要附加权限。
+默认情况下，分配给产品管理员角色的用户将获得在Customer Journey Analytics中执行大多数任务所需的权限。 但是，某些任务需要附加权限。
 
 要将用户添加为产品管理员，请执行以下操作：
 
@@ -42,7 +42,7 @@ Customer Journey Analytics由三个访问级别或三个角色控制：产品管
 默认情况下，产品管理员有权执行以下任务：
 
 * 创建、更新和删除数据视图
-* 更新和删除项目、过滤器、计算量度、受众、批注或其他用户创建的过滤器
+* 更新和删除项目、区段、计算量度、受众、批注或其他用户创建的区段
 * 将工作区项目共享给所有用户
 * 在[报告活动管理器](/help/reporting-activity-manager/reporting-activity-overview.md)中管理报告活动
 * 从Analysis Workspace [导出完整的表](/help/analysis-workspace/export/export-cloud.md)
@@ -100,7 +100,7 @@ Customer Journey Analytics由三个访问级别或三个角色控制：产品管
 
    * 必须确保用户具有适当的Customer Journey Analytics权限：
       * 相关数据视图的访问权限。 在[用户级访问](#user-level-access)中查看[!UICONTROL 数据视图]。
-      * 访问Customer Journey AnalyticsBI扩展的权限。 在[用户级访问](#user-level-access)中查看[!UICONTROL 数据视图工具]。
+      * 访问Customer Journey Analytics BI扩展的权限。 在[用户级访问](#user-level-access)中查看[!UICONTROL 数据视图工具]。
 
 ### 产品配置文件管理员角色
 
@@ -108,11 +108,11 @@ Customer Journey Analytics由三个访问级别或三个角色控制：产品管
 
 * 管理分配的产品配置文件。 例如，添加或删除用户或用户组，以及修改产品配置文件的权限。
 
-* 在Customer Journey Analytics中，编辑属于已分配产品配置文件的数据视图。 产品配置文件管理员无法创建新数据视图。
+* 在Customer Journey Analytics中，编辑作为已分配产品配置文件一部分的数据视图。 产品配置文件管理员无法创建新数据视图。
 
 ### 用户级别访问
 
-下表概述了可为相关Customer Journey Analytics配置的各种用户功能的主要访问权限。 您可以通过产品配置文件管理不同级别的用户访问权限。 产品配置文件将组合大量权限，然后您可以将这些权限分配给单个用户或用户组。
+下表概述了您可以为相关用户配置的各种Customer Journey Analytics功能的主要访问权限。 您可以通过产品配置文件管理不同级别的用户访问权限。 产品配置文件将组合大量权限，然后您可以将这些权限分配给单个用户或用户组。
 
 **[!UICONTROL 权限]**&#x200B;选项卡是[Admin Console](https://adminconsole.adobe.com/enterprise/)中每个产品配置文件的一部分。
 
@@ -124,7 +124,7 @@ Customer Journey Analytics由三个访问级别或三个角色控制：产品管
 | [!UICONTROL 报告工具] | [!UICONTROL Analysis Workspace 访问权限] | 允许用户访问[Analysis Workspace](/help/analysis-workspace/home.md)。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 引导式分析访问] | 允许用户访问[引导分析](/help/guided-analysis/overview.md)。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 计算量度创建] | 允许用户创建[计算量度](/help/components/calc-metrics/calc-metr-overview.md)。 用户只能标记、共享、删除、重命名、批准和取消批准其创建的计算指标或与他们共享的计算指标。 |
-| [!UICONTROL 报告工具] | [!UICONTROL 过滤器创建] | 允许用户创建[筛选器](/help/components/filters/filters-overview.md)。 用户只能标记、共享、删除、重命名、批准、取消批准他们创建的过滤器或与他们共享的过滤器。 |
+| [!UICONTROL 报告工具] | [!UICONTROL 过滤器创建] | 允许用户创建[区段](/help/components/filters/filters-overview.md)。 用户只能标记、共享、删除、重命名、批准和取消批准他们创建的区段或与他们共享的区段。 |
 | [!UICONTROL 报告工具] | [!UICONTROL Labs 访问权限] | 允许用户访问Customer Journey Analytics中的[Labs](/help/labs/labs.md)选项卡。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 创建注释] | 允许用户创建[注释](/help/components/annotations/overview.md)。 用户只能标记、共享、删除和重命名他们创建的注释或与他们共享的注释。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 受众视图] | 允许用户查看[受众](/help/components/audiences/audiences-overview.md)。 |
@@ -141,11 +141,11 @@ Customer Journey Analytics由三个访问级别或三个角色控制：产品管
 
 ## 工作区项目策划
 
-可以在工作区报告级别使用另一级别的访问控制。您可以限制某些用户对特定组件的访问。有关如何在Workspace项目级别限制组件（维度、量度、过滤器、日期范围）以及如何将管理与数据视图绑定在一起的更多信息，请参阅[管理项目](/help/analysis-workspace/curate-share/curate.md)。
+可以在工作区报告级别使用另一级别的访问控制。您可以限制某些用户对特定组件的访问。有关如何在工作区项目级别限制组件（维度、量度、区段、日期范围）以及如何将管理与数据视图绑定在一起的更多信息，请参阅[管理项目](/help/analysis-workspace/curate-share/curate.md)。
 
 ## 授予对单个量度或维度的访问权限
 
-您不能像在传统的 Adobe Analytics 中那样，在 Customer Journey Analytics 中授予或拒绝针对单个量度或维度的权限。 量度和维度可以在[数据视图](/help/data-views/data-views.md)中修改，因此可能会在Customer Journey Analytics中发生更改。 更改它们也会追溯性地更改报告。
+您不能像在传统的 Adobe Analytics 中那样，在 Customer Journey Analytics 中授予或拒绝针对单个量度或维度的权限。 量度和维度可以在[数据视图](/help/data-views/data-views.md)中修改，因此可能会在Customer Journey Analytics中出现更改。 更改它们也会追溯性地更改报告。
 
 ## 用例
 

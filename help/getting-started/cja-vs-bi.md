@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
-source-wordcount: '1649'
-ht-degree: 95%
+source-wordcount: '1648'
+ht-degree: 92%
 
 ---
 
@@ -56,7 +56,7 @@ Customer Journey Analytics 使用一种强大的专有架构，该架构分散�
 
 报告引擎是 Customer Journey Analytics 的基础，它使您可逐步与该报告引擎中的所有客户历程数据进行交互并对其采取行动。Customer Journey Analytics 附带了一套广泛的组件，使您能够通过拖放直观地完成这项工作。通过 BI 可视化工具，可在 SQL 准备的数据（由 IT 定义）的范围内进行探索。通过 Customer Journey Analytics，无需要求 IT 部门构建另一个 SQL 视图，即可随心所欲地分解、切片和切块。
 
-这里的“逐步”是一个关键概念：相对于 BI 工具中的大多数可视化图表，通过 Customer Journey Analytics 中直观的拖放式 UI，可根据特定需求不断分解数据：可以使用相关的度量、维度、筛选条件（区段）、计算、时间线、注释和其他分析值，以交互方式生成可视化查询。
+“渐进式”是此处的一个关键概念：与BI工具中的大多数可视化相反，Customer Journey Analytics中的可视化拖放UI允许您根据特定需求不断细分数据：您可以使用相关量度、维度、区段、计算、时间线、注释和其他分析值，以交互方式构建可视化查询。
 
 这些可视化组件中内置了智能功能，例如：
 

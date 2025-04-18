@@ -1,12 +1,12 @@
 ---
-description: 描述用于查找量度的两种主要方式：排序和过滤。
+description: 介绍排序和筛选这两种查找量度的主要方法。
 title: 查找量度
 feature: Calculated Metrics
 exl-id: 34d2563a-7cd2-4f22-9ad0-6a3dab8d84ea
-source-git-commit: 65eafd65358d9370b452338ce1036e59b3c69d1a
+source-git-commit: d2fb161151bb909152470041449ab3010e72e5e3
 workflow-type: tm+mt
 source-wordcount: '46'
-ht-degree: 34%
+ht-degree: 8%
 
 ---
 

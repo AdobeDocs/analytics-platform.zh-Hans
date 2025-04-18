@@ -5,37 +5,37 @@ title: 项目概述
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '1627'
-ht-degree: 8%
+ht-degree: 99%
 
 ---
 
 # 项目概述
 
-通过Workspace项目，可组合面板、可视化图表和组件以得出您的分析结果，并与您组织中的任何人共享。 在开始您的第一个项目之前，请了解如何访问、导航和管理您的项目。
+通过工作区项目，可将窗格、可视化图表和组件组合起来，以得出您的分析结果，并与您组织中的任何人共享。在开始您的第一个项目之前，请了解如何访问、浏览和管理您的项目。
 
-要访问Customer Journey Analytics中的项目，请选择&#x200B;**[!UICONTROL Workspace]**。  **[!UICONTROL 项目]**&#x200B;管理器列出了您拥有的所有项目或与您共享的项目。 具有项目列表的项目管理器也是Customer Journey Analytics的默认登录页面，除非您已在首选项中进行其他配置。
+要访问 Customer Journey Analytics 中的项目，请选择&#x200B;**[!UICONTROL 工作区]**。**[!UICONTROL 项目]**&#x200B;管理器列出了您拥有的所有项目或与您共享的项目。带有项目列表的项目管理器也是 Customer Journey Analytics 的默认登录页面，除非您在“偏好设置”中另有配置。
 
-![显示项目列表的项目登录页面。](assets/projects.png)
+![显示项目列表的项目登陆页面。](assets/projects.png)
 
 
-## 标题区域
+## 标题区
 
-在标题区域中，➊您可以创建项目、创建文件夹、编辑首选项以及显示或隐藏带有其他图块的面板。
+在标题区域 ➊ 内，您可以创建一个项目，创建一个文件夹，编辑您的偏好设置以及显示或隐藏带有附加图块的面板。
 
-* 要显示或隐藏允许您在&#x200B;**[!UICONTROL 项目]**&#x200B;和&#x200B;**[!UICONTROL 学习]**&#x200B;之间选择的左侧面板，请选择![边栏](/help/assets/icons/Rail.svg)。
-* 标题显示项目，可以选择添加项目以及选定文件夹的路径。 例如[!UICONTROL 项目] > **[!UICONTROL 公司文件夹]**。 您可以选择单个子文件夹部件直接转到特定文件夹。
-* 要显示[**[!UICONTROL 空白项目]**](create-projects.md)、[**[!UICONTROL 空白移动记分卡]**](/help/mobile-app/create-scorecard.md)、[**[!UICONTROL 引导式分析]**](/help/guided-analysis/overview.md)、**[!UICONTROL 打开文档]**&#x200B;和&#x200B;**[!UICONTROL 打开发行说明]**，请选择![V形Down](/help/assets/icons/ChevronDown.svg) **[!UICONTROL 显示更多]**。 若要隐藏带有图块的区域，请选择![V形向下](/help/assets/icons/ChevronDown.svg) **[!UICONTROL 显示更少]**。
-* 根据您选择显示的内容，使用[显示选择器](#show-selector)，您可以编辑首选项并对&#x200B;**[!UICONTROL 项目]**&#x200B;中显示的当前文件夹执行操作：
+* 要显示或隐藏左侧面板，以便您在&#x200B;**[!UICONTROL 项目]**&#x200B;和&#x200B;**[!UICONTROL 学习]**&#x200B;之间进行选择，请选择![边栏](/help/assets/icons/Rail.svg)。
+* 标题会显示“项目”，并可选择性地带有您所选文件夹的路径。例如[!UICONTROL 项目] > **[!UICONTROL 公司文件夹]**。您可以选择单个子文件夹部分，以直接跳转到特定文件夹。
+* 要显示[**[!UICONTROL 空白项目]**](create-projects.md)、[**[!UICONTROL 空白移动记分卡]**](/help/mobile-app/create-scorecard.md)、[**[!UICONTROL 引导式分析]**](/help/guided-analysis/overview.md)、**[!UICONTROL 打开文档]**&#x200B;和&#x200B;**[!UICONTROL 打开发行说明]**&#x200B;的图块，请选择 ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL 显示更多]**。要隐藏带有图块的区域，请选择 ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL 显示更少]**。
+* 根据您使用[显示选择器](#show-selector)选择要显示的内容，您可以编辑偏好设置，并对&#x200B;**[!UICONTROL 项目]**&#x200B;中当前可见的文件夹执行操作：
 
   | 操作 | 描述 |
   |---|---|
   | **[!UICONTROL 创建项目]** | 选择以[创建新项目](create-projects.md)。 |
   | **[!UICONTROL 创建文件夹]** | 选择以[创建新文件夹](workspace-folders/create-folders.md)。 |
-  | ![用户管理员](/help/assets/icons/UserAdmin.svg) **[!UICONTROL 编辑首选项]** | [编辑您所有项目的首选项](/help/analysis-workspace/user-preferences.md)。 当痕迹导航导致空间有限时，此操作将成为![更多](/help/assets/icons/More.svg)子菜单的一部分。 |
-  | **[!UICONTROL 添加项目]** | 选择以[将项目](workspace-folders/add-projects.md)添加到当前文件夹。 当痕迹导航导致空间有限时，此操作将成为![更多](/help/assets/icons/More.svg)子菜单的一部分。 |
+  | ![UserAdmin](/help/assets/icons/UserAdmin.svg) **[!UICONTROL 编辑偏好设置]** | 为所有项目[编辑偏好设置](/help/analysis-workspace/user-preferences.md)。当痕迹导航导致空间有限时，此操作会作为![更多](/help/assets/icons/More.svg)子菜单的一部分。 |
+  | **[!UICONTROL 添加项目]** | 选择以在当前文件夹中[添加项目](workspace-folders/add-projects.md)。当痕迹导航导致空间有限时，此操作会作为![更多](/help/assets/icons/More.svg)子菜单的一部分。 |
   | **[!UICONTROL 重命名文件夹]** | [重命名](workspace-folders/manage-folders.md#rename-folders)当前文件夹。 |
   | **[!UICONTROL 移动文件夹]** | [移动](workspace-folders/manage-folders.md#move-folders)当前文件夹。 |
   | **[!UICONTROL 删除文件夹]** | [删除](workspace-folders/manage-folders.md#delete-folders)当前文件夹。 |
@@ -46,67 +46,67 @@ ht-degree: 8%
 ## 项目列表
 
 
-项目列表➋会显示您拥有并与您共享的所有项目。 该列表具有以下各列：
+项目列表 ➋ 显示您拥有的所有项目，以及与您共享的所有项目。该列表具有以下各列：
 
 | 列 | 描述 |
 | --- | --- | 
-| ![SelectBox](/help/assets/icons/SelectBox.svg) | 选择一个或多个项目后，“项目”界面的底部会显示一个蓝色操作栏。 有关详细信息，请参阅[操作](#actions)。 |
-| ![StarOutline](/help/assets/icons/StarOutline.svg) | 选择支持![Star](/help/assets/icons/Star.svg)或取消支持![StarOutline](/help/assets/icons/StarOutline.svg)项目。 |
-| **[!UICONTROL 标题和描述]** | 要编辑项目，请选择标题链接，这会打开[Workspace项目](/help/analysis-workspace/home.md)。 与您共享的项目以![共享](/help/assets/icons/ShareAlt.svg)表示。 选择![信息大纲](/help/assets/icons/InfoOutline.svg)以显示包含项目更多详细信息的弹出菜单。 选择![更多](/help/assets/icons/More.svg)以打开包含操作的上下文菜单。 有关详细信息，请参阅[操作](#actions)。 |
-| **[!UICONTROL Type]** | Workspace项目、![FolderUser](/help/assets/icons/FolderUser.svg)文件夹或[移动记分卡](/help/mobile-app/home.md)。 |
+| ![SelectBox](/help/assets/icons/SelectBox.svg) | 当选择一个或多个项目时，项目界面底部会出现一个蓝色的操作栏。有关更多详细信息，请参阅[操作](#actions)。 |
+| ![StarOutline](/help/assets/icons/StarOutline.svg) | 选择以加入收藏 ![Star](/help/assets/icons/Star.svg) 或取消收藏 ![StarOutline](/help/assets/icons/StarOutline.svg) 一个项目。 |
+| **[!UICONTROL 标题和描述]** | 要编辑项目，请选择标题链接，这会打开[工作区项目](/help/analysis-workspace/home.md)。与您共享的项目会以 ![分享](/help/assets/icons/ShareAlt.svg) 标示。选择 ![InfoOutline](/help/assets/icons/InfoOutline.svg) 以显示一个弹出菜单，其中包含有关该项目的更多详细信息。选择![更多](/help/assets/icons/More.svg)以打开带有操作选项的上下文菜单。有关更多详细信息，请参阅[操作](#actions)。 |
+| **[!UICONTROL Type]** | 工作区项目，![FolderUser](/help/assets/icons/FolderUser.svg) 文件夹，或者[移动记分卡](/help/mobile-app/home.md)。 |
 | **[!UICONTROL 标记]** | 应用于项目的标记。 |
-| 已计划 | 项目是否计划通过电子邮件发送给收件人。 选项为![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL 开启]**&#x200B;或![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL 关闭]**。 查看[将项目数据发送给其他人](/help/analysis-workspace/export/t-schedule-report.md)。 |
-| **[!UICONTROL 共享链接（任何人）]** | 项目是否与任何人共享，即使与无权访问Analysis Workspace的人共享。 选项为![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL 活动]**&#x200B;或![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL 非活动]**。 有关详细信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required)。 |
-| **[!UICONTROL 项目角色]** | 您在项目中的角色。 选项有：“编辑”、“复制”、“查看”。 有关详细信息，请参阅[项目角色](/help/analysis-workspace/curate-share/curate.md)。 |
+| 已计划 | 是否计划通过电子邮件将项目发送给收件人。相关选项包括 ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL 开启]**&#x200B;或者 ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL 关闭]**。请参阅[向其他人发送项目数据](/help/analysis-workspace/export/t-schedule-report.md)。 |
+| **[!UICONTROL 共享链接（任何人）]** | 是否与任何人共享项目，包括无权访问 Analysis Workspace 的人员。相关选项包括 ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL 有效]**&#x200B;或者 ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL 无效]**。有关详细信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required)。 |
+| **[!UICONTROL 项目角色]** | 您在项目中的角色。相关选项包括：编辑、复制、查看。有关更多信息，请参阅[项目角色](/help/analysis-workspace/curate-share/curate.md)。 |
 | **[!UICONTROL 数据视图]** | 与项目关联的数据视图。 |
 | **[!UICONTROL 所有者]** | 创建此项目的人员（您或与您共享此项目的人员）。 |
-| **[!UICONTROL 共享对象]** | 与项目共享的用户。 |
+| **[!UICONTROL 共享对象]** | 已与其共享该项目的用户。 |
 | **[!UICONTROL 上次修改时间]** | 项目上次修改的日期和时间。 |
-| **[!UICONTROL 上次打开时间]** | 上次打开项目的日期和时间。 |
-| **[!UICONTROL 项目 ID]** | 项目的ID。 |
-| **** | 项目中任何面板或可视化图表的最长日期范围。 |
+| **[!UICONTROL 上次打开时间]** | 项目上次打开的日期和时间。 |
+| **[!UICONTROL 项目 ID]** | 项目的 ID。 |
+| **[!UICONTROL 最长日期范围]** | 项目中任何面板或可视化图表的最长日期范围。 |
 | **[!UICONTROL 查询次数]** | 项目中包含的查询总数。 |
 | **[!UICONTROL 位置]** | 项目所在的文件夹。 |
 
-将鼠标悬停在任意列标题上以显示![ChevronDown](/help/assets/icons/ChevronDown.svg)，然后从上下文菜单中选择：
+将鼠标悬停在任意列标题上即可显示 ![ChevronDown](/help/assets/icons/ChevronDown.svg)，并从上下文菜单中选择：
 
 * **[!UICONTROL 升序排序]**
 * **[!UICONTROL 降序排序]**
-* **[!UICONTROL 调整列]**&#x200B;的大小。 此时会显示一条蓝线，帮助您调整列大小。
+* **[!UICONTROL 调整列大小]**。一条蓝线会显示，以帮助您调整列的大小。
 
 ### 操作
 
-您可以使用上下文菜单![More](/help/assets/icons/More.svg)或蓝色操作栏对一个或多个项目执行操作。
+您可以使用上下文菜单![更多](/help/assets/icons/More.svg)或蓝色操作栏对一个或多个项目执行操作。
 
 | 图标 | 操作 | 描述 |
 |:---:| ---|---|
-| ![CrossSize75](/help/assets/icons/Close.svg) | 已选择&#x200B;**[!UICONTROL *x *]** | 取消选择选定的项目和文件夹，并删除蓝色操作栏。 |
-| ![Delete](/help/assets/icons/Delete.svg) | **[!UICONTROL 删除]** | 删除一个或多个项目或文件夹。 系统将提示您确认。 |
-| ![Share](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL 共享]** | 共享项目。 有关详细信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)。 |
-| ![Edit](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名项目。 打开&#x200B;**[!UICONTROL 重命名： *项目名称对话框&#x200B;*]**。 输入新名称，然后选择**[!UICONTROL 保存&#x200B;]**。 |
-| ![Copy](/help/assets/icons/Copy.svg) | **[!UICONTROL 复制]** | 复制一个或多个项目。 项目的名称和后缀`(Copy)`相同。 |
-| ![PinOnff](/help/assets/icons/PinOff.svg) | **[!UICONTROL 固定]**&#x200B;或&#x200B;**[!UICONTROL 取消固定]** | 固定或取消固定一个或多个项目或文件夹。 固定项目和文件夹显示在列表顶部，并忽略您指定的排序顺序。 |
-| ![向上箭头](/help/assets/icons/ArrowUp.svg) | **[!UICONTROL 上移]** | 在项目列表中向上移动固定项目或文件夹。 |
-| ![向下箭头](/help/assets/icons/ArrowDown.svg) | **[!UICONTROL 下移]** | 在项目列表中向下移动固定项目或文件夹。 |
-| ![Label](/help/assets/icons/Label.svg) | **[!UICONTROL 标记]** | 标记一个或多个项目或文件夹。 显示&#x200B;**[!UICONTROL 标记组件]**&#x200B;对话框以选择一个或多个标记。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存所选项目或文件夹的标记。 |
-| ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL 批准]**&#x200B;或&#x200B;**[!UICONTROL 取消批准]** | 批准或取消批准项目。 只有管理员可以批准项目。 |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL 导出CSV]** | 将所选项目导出到名为`Project List.csv`的CSV文件。 |
-| ![项目添加](/help/assets/icons/ProjectAdd.svg) | **[!UICONTROL 添加项目]** | 将一个或多个项目添加到选定文件夹。 在&#x200B;**[!UICONTROL 添加项目]**&#x200B;中，您可以选择一个或多个项目。 选择&#x200B;**[!UICONTROL 添加]**&#x200B;以将这些项目添加到该文件夹。 有关详细信息，请参阅[将项目添加到文件夹](workspace-folders/add-projects.md#from-inside-a-folder)。 |
-| ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) | **[!UICONTROL 移至]** | 将一个或多个选定项目移至文件夹。 在&#x200B;**[!UICONTROL 选择文件夹]**&#x200B;中，选择要将选定项目移动到的文件夹，然后选择&#x200B;**[!UICONTROL 移动]**。 有关详细信息，请参阅[将项目添加到文件夹](workspace-folders/add-projects.md#from-the-project-list)。 |
+| ![CrossSize75](/help/assets/icons/Close.svg) | **[!UICONTROL *x *已选择]** | 取消选择您选择的项目和文件夹，并移除蓝色操作栏。 |
+| ![Delete](/help/assets/icons/Delete.svg) | **[!UICONTROL 删除]** | 删除一个或多个项目或文件夹。系统将提示您确认。 |
+| ![Share](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL 共享]** | 共享项目。请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)，以了解更多信息。 |
+| ![Edit](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名项目。打开&#x200B;**[!UICONTROL 重命名：*项目名称对话框&#x200B;*]**。输入新名称并选择**[!UICONTROL 保存&#x200B;]**。 |
+| ![Copy](/help/assets/icons/Copy.svg) | **[!UICONTROL 复制]** | 复制一个或多个项目。相关会获得相同的名称和后缀 `(Copy)`。 |
+| ![PinOnff](/help/assets/icons/PinOff.svg) | **[!UICONTROL 固定]**&#x200B;或者&#x200B;**[!UICONTROL 取消固定]** | 固定或取消固定一个或多个项目或文件夹。固定的项目和文件夹会在列表顶部显示，并忽略您指定的排序顺序。 |
+| ![ArrowUp](/help/assets/icons/ArrowUp.svg) | **[!UICONTROL 上移]** | 将固定的项目或文件夹在项目列表中上移。 |
+| ![ArrowDown](/help/assets/icons/ArrowDown.svg) | **[!UICONTROL 下移]** | 将固定的项目或文件夹在项目列表中下移。 |
+| ![Label](/help/assets/icons/Label.svg) | **[!UICONTROL 标记]** | 标记一个或多个项目或文件夹。**[!UICONTROL 标记组件]**&#x200B;对话框会显示，以选择一个或多个标记。选择&#x200B;**[!UICONTROL 保存]**&#x200B;来保存所选项目或文件夹的标记。 |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL 批准]**&#x200B;或者&#x200B;**[!UICONTROL 拒绝]** | 批准或拒绝项目。只有管理员可以批准项目。 |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL 导出 CSV]** | 将选定的项目导出到名为 `Project List.csv` 的 CSV 文件中。 |
+| ![ProjectAdd](/help/assets/icons/ProjectAdd.svg) | **[!UICONTROL 添加项目]** | 将一个或多个项目添加到选定文件夹。在&#x200B;**[!UICONTROL 添加项目]**&#x200B;中，您可以选择一个或多个项目。选择&#x200B;**[!UICONTROL 添加]**，将这些项目添加到文件夹中。请参阅[在文件夹中添加项目](workspace-folders/add-projects.md#from-inside-a-folder)，以了解更多信息。 |
+| ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) | **[!UICONTROL 移动到]** | 将一个或多个选定的项目移动到文件夹。在&#x200B;**[!UICONTROL 选择文件夹]**&#x200B;中，选择要将选定项目移动到的文件夹，然后选择&#x200B;**[!UICONTROL 移动]**。请参阅[在文件夹中添加项目](workspace-folders/add-projects.md#from-the-project-list)，以了解更多信息。 |
 
 
 
 ## 显示选择器
 
-您可以使用&#x200B;**[!UICONTROL Show]**&#x200B;选择器切换“项目”界面的➌外观。 **[!UICONTROL 显示]**&#x200B;选择器定义[标题区域](#title-area)中可用的选项以及[项目列表](#project-list)中显示的列。
+您可以使用&#x200B;**[!UICONTROL 显示]**&#x200B;选择器 ➌ 来切换项目界面的外观。**[!UICONTROL 显示]**&#x200B;选择器定义了[标题区域](#title-area)中可用的选项，以及[项目列表](#project-list)中显示的列。
 
-* 要更改[标题区域](#title-area)的可用选项，请选择&#x200B;**[!UICONTROL 显示]** **[!UICONTROL 所有项目]**&#x200B;或&#x200B;**[!UICONTROL 显示]** **[!UICONTROL 文件夹和项目]**。
+* 要更改[标题区域](#title-area)可用的选项，请选择&#x200B;**[!UICONTROL 显示]****[!UICONTROL 所有项目]**&#x200B;或&#x200B;**[!UICONTROL 显示]****[!UICONTROL 文件夹和项目]**。
 
-* 要定义为[项目列表](#project-list)显示的列，请选择![列设置](/help/assets/icons/ColumnSetting.svg)，然后从&#x200B;**[!UICONTROL 自定义表]**&#x200B;对话框中选择或取消选择列。 选择&#x200B;**[!UICONTROL 应用]**&#x200B;以应用自定义。 有关列的更多详细信息，请参阅[项目列表](#project-list)。
+* 要定义在[项目列表](#project-list)中显示哪些列，请选择 ![ColumnSetting](/help/assets/icons/ColumnSetting.svg)，然后从&#x200B;**[!UICONTROL 自定义表格]**&#x200B;对话框中选择或取消选择列。选择&#x200B;**[!UICONTROL 应用]**&#x200B;以应用自定义设置。有关列的更多详细信息，请参阅[项目列表](#project-list)。
 
-## 筛选面板
+## 过滤器面板
 
-您可以使用筛选器面板筛选[项目列表](#project-list)中的项目和文件夹➍。 若要显示或隐藏筛选器面板，请使用![筛选器](/help/assets/icons/Filter.svg)。
+您可以使用过滤器面板 ➍ 过滤[项目列表](#project-list)中的项目和文件夹。要显示或隐藏过滤器面板，请使用![过滤器](/help/assets/icons/Filter.svg)。
 
 过滤器面板由以下部分组成。
 
@@ -114,51 +114,51 @@ ht-degree: 8%
 
 | 标记 | 描述 |
 |---|---|
-| ![标记](/help/analysis-workspace/build-workspace-project/assets/projects-filters-tags.png){width="300"} | **[!UICONTROL 标记]**&#x200B;部分允许您根据标记进行筛选。 <ul><li>您使用![搜索](/help/assets/icons/Search.svg) *搜索标记*&#x200B;来搜索要用于过滤的标记。</li><li>您可以选择多个标记。 可用的标记取决于在过滤器面板的其他部分中所做的选择。</li><li>这些数字表示：<ul><li>**2︎⃣**：由当前筛选器生成的项目可用的标记数。</li><li>⃣7︎：与特定标记关联的项目数。</li></ul></li></ul> |
+| ![标记](/help/analysis-workspace/build-workspace-project/assets/projects-filters-tags.png){width="300"} | 您可以使用&#x200B;**[!UICONTROL 标记]**&#x200B;部分按标记进行过滤。 <ul><li>您可以使用 ![搜索](/help/assets/icons/Search.svg) *搜索标记*&#x200B;来搜索您想要用于过滤的标记。</li><li>您可以选择多个标记。可用的标记取决于在过滤器面板中对其他部分的选择。</li><li>这些数字表明：<ul><li>**2︎⃣**：当前过滤器生成的项目可用的标记数量。</li><li>7︎⃣：与特定标记相关的项目数量。</li></ul></li></ul> |
 
 
 ### 数据视图
 
 | 数据视图 | 描述 |
 |---|---|
-| ![数据视图](/help/analysis-workspace/build-workspace-project/assets/projects-filters-dataviews.png){width="300"} | **[!UICONTROL 数据视图]**&#x200B;部分允许您筛选数据视图。 <ul><li>您使用![搜索](/help/assets/icons/Search.svg) *搜索数据视图*&#x200B;来搜索要用于筛选的数据视图。</li><li>您可以选择多个数据视图。 可用的数据视图取决于在筛选器面板的其他部分中所做的选择。</li><li>这些数字表示：<ul><li>**3︎⃣**：从当前筛选器生成的项目可用的数据视图数。</li><li>⃣4︎：与特定数据视图关联的项目数。</li></ul></li></ul> |
+| ![数据视图](/help/analysis-workspace/build-workspace-project/assets/projects-filters-dataviews.png){width="300"} | 您可以使用&#x200B;**[!UICONTROL 数据视图]**&#x200B;部分来过滤数据视图。 <ul><li>您可以使用 ![搜索](/help/assets/icons/Search.svg) *搜索数据视图*&#x200B;来搜索您想要用于过滤的数据视图。</li><li>您可以选择多个数据视图。可用的数据视图取决于在过滤器面板中对其他部分的选择。</li><li>这些数字表明：<ul><li>**3︎⃣**：当前过滤器生成的项目可用的数据视图数量。</li><li>4︎⃣：与特定数据视图相关的项目数量。</li></ul></li></ul> |
 
 
 ### 所有者
 
 | 所有者 | 描述 |
 |---|---|
-| ![所有者](/help/analysis-workspace/build-workspace-project/assets/projects-filters-owners.png){width="300"} | 通过&#x200B;**[!UICONTROL 所有者]**&#x200B;部分，可筛选所有者。 <ul><li>您使用![搜索](/help/assets/icons/Search.svg) *搜索所有者*&#x200B;来搜索要用于筛选的所有者。</li><li>您可以选择多个所有者。 可用的所有者取决于在筛选器面板的其他部分中所做的选择。</li><li>这些数字表示：<ul><li>**3︎⃣**：从当前筛选器生成的项目可用的所有者数。</li><li>⃣4︎：与特定所有者关联的项目数。</li></ul></li></ul> |
+| ![所有者](/help/analysis-workspace/build-workspace-project/assets/projects-filters-owners.png){width="300"} | **[!UICONTROL 所有者]**&#x200B;部分允许您过滤所有者。 <ul><li>您可以使用 ![搜索](/help/assets/icons/Search.svg) *搜索所有者*&#x200B;来搜索您想要用于过滤的所有者。</li><li>您可以选择多个所有者。可用的所有者取决于在过滤器面板中对其他部分的选择。</li><li>这些数字表明：<ul><li>**3︎⃣**：当前过滤器生成的项目可用的所有者数量。</li><li>4︎⃣：与特定所有者相关的项目数量。</li></ul></li></ul> |
 
 
 ### 类型
 
 | 类型 | 描述 |
 |---|---|
-| ![Type](/help/analysis-workspace/build-workspace-project/assets/projects-filters-type.png){width="300"} | **[!UICONTROL 类型]**&#x200B;部分允许您筛选项目或文件夹的类型。<ul><li>您可以选择以下一个或多个选项：<ul><li> **[!UICONTROL 文件夹]**</li><li>**[!UICONTROL Workspace 项目]**</li><li>**[!UICONTROL 移动记分卡]**</li></ul> <li>您可以选择多个其他过滤器。 可用的其他筛选器取决于在筛选器面板的其他部分中所做的选择。</li><li>这些数字表示：<ul><li>**5︎⃣**：由当前筛选器生成的项目可用的其他筛选器数。</li><li>⃣4︎：与特定其他过滤器关联的项目数。</li></ul></li></ul> |
+| ![Type](/help/analysis-workspace/build-workspace-project/assets/projects-filters-type.png){width="300"} | **[!UICONTROL 类型]**&#x200B;部分允许您根据项目或文件夹的类型进行筛选。<ul><li>您可以选择以下一个或多个选项：<ul><li> **[!UICONTROL 文件夹]**</li><li>**[!UICONTROL 工作区项目]**</li><li>**[!UICONTROL 移动记分卡]**</li></ul> <li>您可以选择多个其他过滤器。可用的其他过滤器取决于在过滤器面板中对其他部分的选择。</li><li>这些数字表明：<ul><li>**5︎⃣**：当前过滤器生成的项目可用的其他过滤器数量。</li><li>4︎⃣：与特定其他过滤器相关的项目数量。</li></ul></li></ul> |
 
 
-### 其他筛选器
+### 其他过滤器
 
-| 其他筛选器 | 描述 |
+| 其他过滤器 | 描述 |
 |---|---|
-| ![其他筛选条件](/help/analysis-workspace/build-workspace-project/assets/projects-filters-others.png){width="300"} | 通过&#x200B;**[!UICONTROL 其他筛选器]**&#x200B;部分，可筛选其他预定义筛选器。<ul><li>您可以选择以下一个或多个选项：<ul><li> **[!UICONTROL 显示所有]**</li><li>**[!UICONTROL 与我共享]**</li><li>**[!UICONTROL 我的]**</li><li>**[!UICONTROL 已批准]**</li><li>**[!UICONTROL 收藏夹]**</li></ul> 具体选择内容取决于您的角色和权限。</li><li>您可以选择多个其他过滤器。 可用的其他筛选器取决于在筛选器面板的其他部分中所做的选择。</li><li>这些数字表示：<ul><li>**5︎⃣**：由当前筛选器生成的项目可用的其他筛选器数。</li><li>⃣4︎：与特定其他过滤器关联的项目数。</li></ul></li></ul> |
+| ![其他过滤器](/help/analysis-workspace/build-workspace-project/assets/projects-filters-others.png){width="300"} | **[!UICONTROL 其他过滤器]**&#x200B;部分允许您过滤其他预定义过滤器。<ul><li>您可以选择以下一个或多个选项：<ul><li> **[!UICONTROL 显示所有]**</li><li>**[!UICONTROL 与我共享]**</li><li>**[!UICONTROL 我的]**</li><li>**[!UICONTROL 已批准]**</li><li>**[!UICONTROL 收藏夹]**</li></ul> 您可以选择的内容取决于您的角色和权限。</li><li>您可以选择多个其他过滤器。可用的其他过滤器取决于在过滤器面板中对其他部分的选择。</li><li>这些数字表明：<ul><li>**5︎⃣**：当前过滤器生成的项目可用的其他过滤器数量。</li><li>4︎⃣：与特定其他过滤器相关的项目数量。</li></ul></li></ul> |
 
 ## 搜索
 
-您可以使用“搜索”区域➎通过![搜索](/help/assets/icons/Search.svg)字段搜索项目和文件夹。 开始键入，然后[项目列表](#project-list)将自动筛选您的搜索输入。
+您可以使用搜索区域 ➎ 通过![搜索](/help/assets/icons/Search.svg)字段来搜索项目和文件夹。开始输入后，[项目列表](#project-list)将会自动过滤您的搜索输入。
 
-搜索区域还会显示从“筛选器”面板应用的筛选器。
+搜索区域还会显示从过滤器面板中应用的过滤器。
 
-* 要删除筛选器，请在筛选器中选择![CrossSize75](/help/assets/icons/CrossSize75.svg)。
-* 要删除所有筛选器，请选择全部清除。
+* 要移除过滤器，请选择过滤器中的 ![CrossSize75](/help/assets/icons/CrossSize75.svg)。
+* 要移除所有过滤器，请选择“全部清除”。
 
-如果空间有限，无法显示单个筛选器，您会看到&#x200B;**[!UICONTROL 按&#x200B;*x*筛选器进行筛选]**。
+如果空间限制为显示单个筛选器，您会看到&#x200B;**[!UICONTROL 按&#x200B;*x*筛选器分段]**。
 
-* 要删除过滤器，请执行以下操作：
+* 要移除过滤器：
 
-   1. 使用&#x200B;**[!UICONTROL *x *筛选器]**![ChevronDown](/help/assets/icons/ChevronDown.svg)打开上下文菜单，其中列出筛选器的类型和各个筛选器。
-   1. 使用![CrossSize75](/help/assets/icons/CrossSize75.svg)删除筛选器。
+   1. 使用 **[!UICONTROL *x *过滤器]**![ChevronDown](/help/assets/icons/ChevronDown.svg) 顶部打开一个上下文菜单，其中列有过滤器的类型和单个过滤器。
+   1. 使用 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 来移除过滤器。
 
 
 <!--
@@ -242,7 +242,7 @@ Within a project, various icons are available in the left panel, and each repres
 
 * [Table of contents](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) ![toc icon](assets/toc-icon.png)
 
-Components (Dimensions, Metrics, Filters, Date Ranges) in the left panel relate to the active panel data view. The active panel is identified by the blue border that surrounds it, and the active data view is listed at the top of the component panel.
+Components (Dimensions, Metrics, Segments, Date Ranges) in the left panel relate to the active panel data view. The active panel is identified by the blue border that surrounds it, and the active data view is listed at the top of the component panel.
 
 ![The components relating to the active panel data view for Cross-Industry Demo Data data view.](assets/left-rail.png)
 

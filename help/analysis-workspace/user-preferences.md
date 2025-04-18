@@ -5,7 +5,7 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 191693bc970fcf59ee51706365abde0ee30e3d3d
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '3873'
 ht-degree: 75%
@@ -36,7 +36,7 @@ ht-degree: 75%
 | --- | --- |
 | **[!UICONTROL 登陆页面]** | 选择访问 Customer Journey Analytics 时显示为默认页面的页面： <ul><li>项目列表（默认）</li><li>空白项目</li><li>空白趋势引导式分析</li><li>从列表中选择的具体项目</li></ul> |
 | **[!UICONTROL 提示]** | 在 Analysis Workspace 右下方区域的蓝色框中显示提示。 <p>默认启用选项。</p> |
-| **[!UICONTROL 左侧面板群组中显示的组件]** | 选择要在左侧面板的“组件”菜单中显示的每个组件组的数量。 <p>如果为组件组的数量选择为 0，则无法再从左侧面板访问该组件组。</p><p>默认情况下，以下每个组件组显示 5 个组件：</p> <ul><li>维度</li><li>量度</li><li>过滤器</li><li>日期范围</li></ul> <p>有关 Analysis Workspace 中组件的更多信息，请参阅[组件概述](/help/components/overview.md)。</p> |
+| **[!UICONTROL 左侧面板群组中显示的组件]** | 选择要在左侧面板的“组件”菜单中显示的每个组件组的数量。 <p>如果为组件组的数量选择为 0，则无法再从左侧面板访问该组件组。</p><p>默认情况下，以下每个组件组显示 5 个组件：</p> <ul><li>维度</li><li>量度</li><li>区段</li><li>日期范围</li></ul> <p>有关 Analysis Workspace 中组件的更多信息，请参阅[组件概述](/help/components/overview.md)。</p> |
 
 ### IMS 组织偏好设置 {#ims-organization-preferences}
 

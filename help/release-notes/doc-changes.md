@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '4716'
-ht-degree: 97%
+ht-degree: 93%
 
 ---
 
@@ -56,7 +56,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 摘要数据更新 | 更新了摘要数据文章，其中包含有关在报告摘要数据时如何正确使用[查找数据](/help/data-views/summary-data.md#lookup-data)的信息。 |
 | BI 扩展更新 | 在 BI 扩展文档中添加了[默认值和限制](/help/data-views/bi-extension.md#defaults-and-limitations)部分。 |
 | 警报 | 添加了有关 Customer Journey Analytics 中现有[警报](/help/components/c-intelligent-alerts/intelligent-alerts.md)功能的文档。 |
-| 计算量度管理器和区段管理器的“用于”列中的其他信息 | [计算量度管理器](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager?lang=en)和[过滤器管理器](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/cja-filters/manage-filters?lang=en)中的“用于”列包含以下新的报告区域：Report Builder 和临时组件 |
+| 计算量度管理器和区段管理器的“用于”列中的其他信息 | [计算量度管理器](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager?lang=en)和[区段管理器](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/cja-filters/manage-filters?lang=en)中的“用于”列包含以下新报表区域： Report Builder和临时组件 |
 | **2024 年 8 月** | |
 | B2B 项目示例 | 新增了一个[用例](/help/use-cases/b2b/example.md)，详细描述了如何在 Customer Journey Analytics 中使用新的[转换数据集进行 B2B 查找](/help/connections/transform-datasets-b2b-lookups.md)功能，设置、配置和报告基于轮廓（人员）级别的 B2B 数据。 |
 | 更新了数据导出用例 | 向[查询服务（数据蒸馏器）和导出数据集](/help/use-cases/data-export/queryservice-export-datasets.md)添加了更详细的查询示例，以说明如何使用回顾窗口在线程之间正确地应用归因功能。 |
@@ -87,7 +87,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | Adobe Product Analytics 功能的新文档 | <ul><li>[功能矩阵](/help/guided-analysis/types/funnel.md)</li><li>增强了[留存率](/help/guided-analysis/types/retention.md)</li><li>[增强了漏斗洞察](/help/guided-analysis/types/funnel.md)</li><li>比较单个漏斗步骤内的事件</li></ul> |
 | **2024 年 3 月** | |
 | 有关“用于”列的使用情况信息仅从 2023 年 9 月开始提供。 | 阐明[项目登陆页面](/help/getting-started/landing.md)“**用于**”列的使用情况信息只能追溯到 2023 年 9 月。 |
-| 新增了关于仅限项目的 Workspace 组件权限增强的文档 | 如果您与其他用户共享一个项目，这些用户可以编辑[快速过滤器](/help/components/filters/quick-filters.md)，以及共享项目中嵌入的其他仅限项目的组件。 |
+| 新增了关于仅限项目的 Workspace 组件权限增强的文档 | 如果与其他用户共享项目，则这些用户可以编辑[快速区段](/help/components/filters/quick-filters.md)以及嵌入到共享项目中的其他仅用于项目的组件。 |
 | **2024 年 2 月** | |
 | 项目共享文档更新 | 添加了有关如何[查看与您共享的项目](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you)的信息。<p>还简化了有关[共享单个或多个项目](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role)的信息。</p> |
 | 添加了配置云导出位置时将文件上传到 Azure SAS 和 Azure RBAC 的权限要求 | 添加了在[配置云导出帐户](/help/components/exports/cloud-export-accounts.md)和[配置云导出位置](/help/components/exports/cloud-export-locations.md)时，将文件上传到 Azure SAS 和 Azure RBAC 的确切权限要求。 |
@@ -118,7 +118,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 异常检测文档更新 | 有关异常检测的文档以前位于有关 Virtual Analyst 的部分中。进行了以下更改： <ul><li>术语 Virtual Analyst 已从文档中删除。</li><li>关于[异常检测](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md)的部分已直接移至 Analysis Workspace 部分下方。</li></ul> |
 | **2023 年 10 月** | |
 | 使用派生字段设定目标/指标 | 新增[用例](../use-cases/goals-using-derived-fields.md)文章，说明如何使用派生字段来设定目标/指标并对其进行报告。 |
-| 将全表导出到云 | 添加了有关将包含数百万个 Workspace 行的完整表格导出到云目标的文档。 <p>导出全表可一次性或按计划投放在 Workspace 中设计的数据表，其中支持最多五个细分、五个量度、过滤器和计算量度，所有这些都在一个连接在一起的表中。它从 Adobe Analytics 中的 Data Warehouse 报告演化而来，具有许多当今在 Data Warehouse 中不提供但经常有人要求提供的新功能。</p><p>有关详细信息，请参阅[将 Customer Journey Analytics 报告导出到云](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html)。 |
+| 将全表导出到云 | 添加了有关将包含数百万个 Workspace 行的完整表格导出到云目标的文档。 <p>导出完整表提供在Workspace中设计的数据表的一次性或计划提交，最多支持五个划分、五个量度、区段和计算量度，所有这些都在一个级连表中提供。 它从 Adobe Analytics 中的 Data Warehouse 报告演化而来，具有许多当今在 Data Warehouse 中不提供但经常有人要求提供的新功能。</p><p>有关详细信息，请参阅[将 Customer Journey Analytics 报告导出到云](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html)。 |
 | 报告活动管理器 | 添加了报告活动管理器的文档。 <p>通过报告活动管理器，可查看组织中每个连接的报告容量。通过它，管理员可详细了解报告消耗情况，从而轻松地诊断和修复在报告高峰期出现的容量问题。</p> <p>添加了以下新文章：<ul><li>[报告活动管理器概述](/help/reporting-activity-manager/reporting-activity-overview.md)</li><li>[在报告活动管理器中查看报告活动](/help/reporting-activity-manager/reporting-activity.md)</li><li>[取消报告活动管理器中的请求](/help/reporting-activity-manager/reporting-activity-cancel-requests.md)</ul> |
 | 管理页面新增栏目 | 记录了[计算量度管理器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html)和[过滤器管理器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html)中现已提供的新列。 |
 | 与 Adobe Analytics 进行比较 | 添加了[概述页面](../getting-started/aa-vs-cja/overview.md)，作为比较和理解 Customer Journey Analytics 和 Adobe Analytics 之间差异的介绍。 |
@@ -160,10 +160,10 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 智能题注文档 | 通过折线图可视化效果的[自然语言概括](/help/analysis-workspace/visualizations/intelligent-captions.md)，为用户提供更丰富多彩的叙事。 |
 | 派生字段 | 添加了有关[派生字段](../data-views/derived-fields/derived-fields.md)功能的文档。 |
 | **2023 年 4 月** |  |
-| 关于使用过滤器作为维度的视频 | 更新了关于使用过滤器作为维度的视频。 <p>此视频链接自[创建过滤器](/help/components/filters/create-filters.md)页面。</p> <p>以下是这段视频的直接链接：[在 Analysis Workspace 中使用过滤器作为维度](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html)。</p> |
-| 过滤器文档 | 添加了有关使用[过滤器生成器](/help/components/filters/filter-builder.md)的文章。 <p>简化了[创建过滤器](/help/components/filters/create-filters.md)和[过滤器概述](/help/components/filters/filters-overview.md)中的文档。</p> |
+| 有关将区段用作维度的视频 | 更新了有关将区段用作维度的视频。 <p>此视频链接自[创建区段](/help/components/filters/create-filters.md)页面。</p> <p>以下是该视频的直接链接：[在Analysis Workspace中将区段用作维度](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html)。</p> |
+| 区段文档 | 添加了有关使用[区段生成器](/help/components/filters/filter-builder.md)的文章。 <p>简化了[创建区段](/help/components/filters/create-filters.md)和[分段概述](/help/components/filters/filters-overview.md)中的文档。</p> |
 | 更新实验面板文档 | 添加了一个有关[解释非随机维度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html#non-randomized)的部分。 |
-| 项目过滤器（临时过滤出和快速过滤器） | 简化了有关项目过滤器的文档并删除了重复的信息。创建临时过滤器的步骤现在与[创建快速过滤器](/help/components/filters/quick-filters.md)的步骤合并在一起。 |
+| 项目区段（临时区段和快速区段） | 简化了有关项目区段的文档，并删除了重复的信息。 创建临时区段的步骤现在与[创建快速区段](/help/components/filters/quick-filters.md)的步骤合并在一起。 |
 | **2023 年 3 月** | |
 | 集成决策管理数据 | 添加了解释如何[在 Customer Journey Analytics 中集成 Adobe Journey Optimizer 决策管理数据](/help/integrations/ajo-od.md)的内容。 |
 | 在移动记分卡中创建数据故事 | [数据故事](/help/mobile-app/create-scorecard.md#create-data-stories)是围绕中心主题或指标构建的辅助数据点、业务背景和相关指标的集合。 |

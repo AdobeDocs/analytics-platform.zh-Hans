@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: 25a2c549c27918f80202bde4cd30e305f4a295f3
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '674'
 ht-degree: 1%
 
 ---
@@ -77,6 +77,6 @@ ht-degree: 1%
 
 ## 步骤5：从Customer Journey Analytics查看会话
 
-找到想要探索会话重放的耐用区段后，可将其应用于包含会话ID链接的面板，并按区段进行筛选。 该表返回该区段中的所有会话，您可以单击其中的任何会话以在量子度量中进一步探讨。
+找到要探究会话重放的耐用区段后，您可以将其应用于包含会话ID链接和区段的面板。 该表返回该区段中的所有会话，您可以单击其中的任何会话以在量子度量中进一步探讨。
 
 有关详细信息，请参阅[Quantum量度上的会话重播企业指南](https://www.quantummetric.com/resources/ebook/the-enterprise-guide-to-session-replay)。 您还可以联系您的Quantum Metric客户支持代表，或通过[Quantum Metric客户请求门户](https://community.quantummetric.com/s/public-support-page)提交请求。

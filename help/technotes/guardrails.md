@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 3b4917dade478f327ee3f532c5d72c4ca7656067
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '1760'
 ht-degree: 7%
@@ -84,7 +84,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
-| 受众筛选器 | 20 | 系统强制的护栏 | 每个受众最多[个过滤器](../components/filters/filters-overview.md)。 |
+| 受众区段 | 20 | 系统强制的护栏 | 每个受众最多[个区段](../components/filters/filters-overview.md)。 |
 | 受众身份数量 | 2000万 | 系统强制的护栏 | 每个受众的最大身份数。 |
 | 受众刷新频率 | 4 | 系统强制的护栏 | 可以刷新[受众](../components/audiences/audiences-overview.md)的最大频率（小时）。 |
 | 受众刷新回顾窗口 | 90 | 系统强制的护栏 | 刷新回顾时间范围的最大天数。 |
@@ -183,18 +183,18 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 | 回看窗口期/重放频率 | 1/1 - 30/7 | 系统强制的护栏 | 最大回看时段（以天为单位）/重放频率。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
 
 
-## 过滤器和计算量度
+## 区段和计算量度
 
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
-| 每个过滤器的容器 | 50 | 系统强制的护栏 | 每个过滤器的最大容器数。 |
+| 每个过滤器的容器 | 50 | 系统强制的护栏 | 每个区段的最大容器数。 |
 | 每个计算量度的量度 | 25 | 系统强制的护栏 | 每个计算量度的最大量度数。 |
-| 每个过滤器的量度和维度 | 25 | 系统强制的护栏 | 每个过滤器的唯一量度和维度的最大数量。 |
-| 每个过滤器的嵌套容器 | 10 | 系统强制的护栏 | 每个过滤器的嵌套容器的最大数量。 |
-| 每个过滤器的规则 | 100 | 系统强制的护栏 | 每个过滤器的最大规则数。 |
-| 每个过滤器每个Dimension的字符串比较数 | 100 | 系统强制的护栏 | 每个过滤器每个维度的最大字符串比较数。 |
+| 每个过滤器的量度和维度 | 25 | 系统强制的护栏 | 每个区段的唯一量度和维度的最大数量。 |
+| 每个过滤器的嵌套容器 | 10 | 系统强制的护栏 | 每个区段的最大嵌套容器数。 |
+| 每个区段的规则 | 100 | 系统强制的护栏 | 每个区段的最大规则数。 |
+| 每个区段每个Dimension的字符串比较数 | 100 | 系统强制的护栏 | 每个区段每个维度的最大字符串比较数。 |
 | 计算量度 | 6,000 | 系统强制的护栏 | 组织的最大计算量度数。 |
-| 过滤器 | 50,000 | 系统强制的护栏 | 可为组织定义的最大过滤器数。 |
+| 区段 | 50,000 | 系统强制的护栏 | 可为组织定义的最大区段数。 |
 | API 调用 | 120 | 系统强制的护栏 | 每分钟API请求数（每6秒12个请求）。 |
 
 {style="table-layout:auto"}
@@ -205,7 +205,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
 | 磁贴 | 16 | 系统强制的护栏 | 每个记分卡的最大磁贴数。 |
-| 过滤器 | 10 | 系统强制的护栏 | 每个记分卡的最大过滤器数。 |
+| 区段 | 10 | 系统强制的护栏 | 每个记分卡的最大区段数。 |
 | 维度 | 10 | 系统强制的护栏 | 每个记分卡的最大维度数。 |
 
 {style="table-layout:auto"}

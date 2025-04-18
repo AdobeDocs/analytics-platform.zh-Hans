@@ -5,10 +5,10 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '1141'
-ht-degree: 95%
+ht-degree: 88%
 
 ---
 
@@ -69,11 +69,11 @@ Customer Journey Analytics需要一个通用标识符来生成[组合数据集](
 
 此可视化图表有助于您了解 CCA 进行数据拼合的效果。
 
-1. 创建两个筛选器。这两个筛选器中使用的变量与上面提到的用于反映每个事件的数据源的变量相同。有关更多信息，请参阅[创建筛选器](/help/components/filters/create-filters.md)。
+1. 创建两个区段。 这两个区段中使用的变量与上面提到的用于反映每个事件的数据源的变量相同。 有关详细信息，请参阅[创建区段](/help/components/filters/create-filters.md)。
    * 数据集 ID 代表网站数据的“人员”容器
    * 数据集 ID 代表呼叫中心数据的“人员”容器
 2. 在 Analysis Workspace 中，将[维恩图](/help/analysis-workspace/visualizations/venn.md)可视化图表拖到工作区画布上。
-3. 将两个新创建的筛选器拖到&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;区域，将“人员”量度拖到&#x200B;**[!UICONTROL 添加量度]**&#x200B;区域。
+3. 将两个新创建的区段拖到&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;区域，将“人员”量度拖到&#x200B;**[!UICONTROL 添加量度]**&#x200B;区域。
 
 生成的维恩图可视化图表将显示数据集中同时包含网站数据和呼叫中心数据的人员数。重叠区域越大，表示成功拼合的人员越多。不重叠的区域则表示仅存在于其中一个数据集而不存在于另外一个数据集的人员。
 
@@ -93,8 +93,8 @@ Customer Journey Analytics需要一个通用标识符来生成[组合数据集](
 通过按原因或类别划分致电可进一步增加见解。
 
 1. 在组件列表中的“致电原因”维度下单击右侧的 V 形。此操作显示个别维度值。
-2. 将所需的维度值拖至“致电”指标下，这样将按每个相应的致电原因筛选该指标。
-3. 对要深入了解的每个致电原因都重复此操作。使用“所有会话”筛选器查看总计。
+2. 将所需的维度值拖到“致电”量度下，这样将按每个相应的致电原因对该量度进行分段。
+3. 对要深入了解的每个致电原因都重复此操作。使用“所有会话”区段查看总计。
 
 <!-- screenshot -->
 
@@ -139,10 +139,10 @@ step 2:
 
 Slide 4
 
-Create a bunch of filters - facets to their business. Filters were used because they didn't have all of these in the same dimension, so they could create everything in this report as a single dimension (really filters)
+Create a bunch of segments - facets to their business. Segments were used because they didn't have all of these in the same dimension, so they could create everything in this report as a single dimension (really segments)
 
 wanted to understand when someone interacts with a facet, whats the highest percentage of people that abandon that channel to call them. not from volume perspective, but percentage perspective.
 
-use sequential filters, but you lose the ability to use attribution IQ
+use sequential segments, but you lose the ability to use attribution IQ
 
 ## What to do when you've found insight -->
