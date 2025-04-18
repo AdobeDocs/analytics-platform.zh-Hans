@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: e93f4875bbb5940d9182aadcefcc7166644434c4
-workflow-type: ht
-source-wordcount: '1083'
-ht-degree: 100%
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+workflow-type: tm+mt
+source-wordcount: '1077'
+ht-degree: 96%
 
 ---
 
@@ -18,16 +18,16 @@ ht-degree: 100%
 
 准备 Adobe Analytics 数据以无缝迁移到 Customer Journey Analytics 对于数据完整性和报告一致性至关重要。
 
-### 收集标识
+### 收集身份标识
 
-了解客户历程最关键的组成部分也许是在每一步都知道客户是谁。对于 Customer Journey Analytics，拥有一个存在于所有渠道和相应数据的标识符允许在 Customer Journey Analytics 中将多个来源拼接在一起。标识示例可能是客户 ID、帐户 ID 或电子邮件 ID。无论标识是什么（可能有多个），请确保为每个 ID 考虑以下内容：
+了解客户历程最关键的组成部分也许是在每一步都知道客户是谁。对于 Customer Journey Analytics，拥有一个存在于所有渠道和相应数据的标识符允许在 Customer Journey Analytics 中将多个来源拼接在一起。身份标识示例可能是客户 ID、帐户 ID 或电子邮件 ID。无论身份标识是什么（可能有多个），请确保为每个 ID 考虑以下内容：
 
 * ID 存在或可以添加到您要带入 Customer Journey Analytics 的所有数据源
 * ID 填充在每行数据上
 * ID 不包含 PII。将散列应用于任何可能敏感的内容。
 * ID 在所有源中使用相同的格式（相同的长度、相同的散列方法等）
 
-在 Adobe Analytics 等数据集中，可能并非每行数据都存在标识，但辅助标识确实存在。在这种情况下，当仅通过客户的 ECID 识别客户时以及收集标识时（例如，当客户进行身份验证时），可使用[跨渠道分析（也称为“拼接”）](/help/stitching/overview.md)消除行间差距。
+在 Adobe Analytics 等数据集中，可能并非每行数据都存在身份标识，但辅助身份标识确实存在。在这种情况下，当仅通过客户的 ECID 识别客户时以及收集身份标识时（例如，当客户进行身份标识验证时），可使用[跨渠道分析（也称为“拼接”）](/help/stitching/overview.md)消除行间差距。
 
 ### 使您的变量保持一致
 
@@ -65,11 +65,11 @@ Adobe Analytics 中的报告依赖于大量数据预处理来生成结果，例�
 
 [!UICONTROL 报告时处理]开启了应用追溯设置和创建变量持久性的多个版本的能力，而无需更改基础数据的收集方式。
 
-这种转变将导致数据报告方式的一些差异，特别是对于任何可能具有较长到期窗口的变量。您可以从使用[虚拟报告包](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=zh-Hans)评估报告时处理如何影响您的报告开始。
+这种转变将导致数据报告方式的一些差异，特别是对于任何可能具有较长有效期限窗口的变量。您可以从使用[虚拟报告包](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=zh-Hans)评估报告时处理如何影响您的报告开始。
 
 ### 识别重要区段和计算量度 {#segments-calcmetrics}
 
-Adobe Analytics 区段（在 Customer Journey Analytics 中称为[!UICONTROL 筛选条件]）和计算量度与 Customer Journey Analytics 不兼容。在许多情况下，可以使用新的模式和可用数据在 Customer Journey Analytics 中重建这些组件。
+Adobe Analytics区段和计算量度与Customer Journey Analytics不兼容。 在许多情况下，可以使用新的架构和可用数据在 Customer Journey Analytics 中重建这些组件。
 
 为了使用户在系统之间过渡时尽可能顺利地进行过渡，请提前计划
 
@@ -77,7 +77,7 @@ Adobe Analytics 区段（在 Customer Journey Analytics 中称为[!UICONTROL 筛
 
 2. 记录它们的定义，以及
 
-3. 确定数据中需要哪些字段以在 Customer Journey Analytics 中将它们复制为[筛选条件](/help/components/filters/filters-overview.md)和[计算量度。](/help/components/calc-metrics/calc-metr-overview.md)
+3. 确定数据中需要哪些字段以在Customer Journey Analytics中将它们复制为[区段](/help/components/filters/filters-overview.md)和[计算指标](/help/components/calc-metrics/calc-metr-overview.md)。
 
 这里有几个视频可以为您指南：
 

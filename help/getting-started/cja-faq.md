@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 13f2bdb9753c0f4252262c595061ed9b54c38a3c
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '2580'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -86,7 +86,7 @@ Customer Journey Analytics 包括[数据准备](https://experienceleague.adobe.c
 
 +++**如何在 [!UICONTROL Customer Journey Analytics] 中将在线数据与离线数据关联起来？**
 
-只要人员 ID 在数据集之间一致，[!UICONTROL Customer Journey Analytics] 即可跨数据集连接筛选条件、归因、流量、流失等。
+只要数据集之间的人员ID匹配，[!UICONTROL Customer Journey Analytics]就可以跨数据集连接区段、归因、流量、流失等。
 
 +++
 
@@ -173,7 +173,7 @@ Adobe 最近改变了在 Customer Journey Analytics 中处理数据的方式：
 | [!UICONTROL 会话]数和[!UICONTROL 人员]数 | 在报告包间将为其去重。因此，这些数量可能不一致。 |
 | 量度去重 | 如果有多行的交易 ID（例如，[!UICONTROL 购买 ID]）相同，请为量度的实例（例如，[!UICONTROL 订单]）去重。这样可防止过度计算关键量度。因此，[!UICONTROL 订单]等量度可能不在报告包间累加。 |
 | 货币 | Customer Journey Analytics 尚不支持货币换算。如果尝试合并的报告包使用不同的基础货币，则可能会出现问题。 |
-| [!UICONTROL 持久性] | [持久性](../data-views/component-settings/persistence.md)作用于各个报告包，它影响[!UICONTROL 筛选器]、[!UICONTROL 归因]等等。数值可能无法正确地累加。 |
+| [!UICONTROL 持久性] | [持久性](../data-views/component-settings/persistence.md)跨报表包扩展，这会影响[!UICONTROL 区段]、[!UICONTROL 归因]等。 数值可能无法正确地累加。 |
 | [!UICONTROL 分类] | 在合并报告包时，不会自动为[!UICONTROL 分类]去重。将多个分类文件合并为一个[!UICONTROL 查找]数据集时，可能会遇到问题。 |
 
 ## 8. [!UICONTROL Adobe Analytics] 组件

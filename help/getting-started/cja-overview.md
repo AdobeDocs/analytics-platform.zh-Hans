@@ -5,16 +5,16 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-source-git-commit: 612fce23fe4cb9920c05f3253d69e543668a7cf1
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '991'
-ht-degree: 96%
+ht-degree: 93%
 
 ---
 
 # Customer Journey Analytics 概述
 
-Customer Journey Analytics 是 Adobe 推出的新一代 Analytics 解决方案，可让您运用 Analysis Workspace 的强大功能处理来自 Adobe Experience Platform 的数据。它可以划分、筛选、查询和可视化数年积累的有价值的数据，并结合 Platform 的功能来保存各种数据架构和类型。使用&#x200B;**体验数据模型 (XDM)**，可以采用统一的方式来表示和组织数据，以便进行数据合并和分析。通过 **Adobe Experience Platform Query Service**，可使用与 SQL 兼容的工具和框架查询和操作所有数据。
+Customer Journey Analytics 是 Adobe 推出的新一代 Analytics 解决方案，可让您运用 Analysis Workspace 的强大功能处理来自 Adobe Experience Platform 的数据。它可以划分、细分、查询和可视化数年积累的有价值的数据，并结合Platform的功能来保存各种数据架构和类型。 使用&#x200B;**体验数据模型 (XDM)**，可以采用统一的方式来表示和组织数据，以便进行数据合并和分析。通过 **Adobe Experience Platform Query Service**，可使用与 SQL 兼容的工具和框架查询和操作所有数据。
 
 Customer Journey Analytics 架构大致如下所示：
 
@@ -88,7 +88,7 @@ Adobe Experience Platform 让您可以实现源自任何系统的客户数据和
 
 * [Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans)：使用标准 SQL 从 Adobe Experience Platform 检索数据，如 Adobe 解决方案数据、客户第一方数据或任何其他 Platform 数据。它是一个无服务器工具，通过它可连接任何数据集，并将查询结果记录为新数据集，以供在报告中使用或摄取到轮廓服务。可使用 Experience Platform Query Service 构建数据分析生态系统，在使用者的各种交互渠道上为使用者画像。这些渠道可能包括销售点系统、Web、移动、CRM 系统等。
 * [实时客户轮廓](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans)：
-* [身份标识服务](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hans)
+* [身份标识服务](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-hans)
 
 ## 视频
 

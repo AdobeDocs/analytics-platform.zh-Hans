@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '1454'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,7 @@ Customer Journey Analytics 中的几项功能已经过重命名和重新设计�
 
 * 您仍然可以使用[ Analysis Workspace ](/help/analysis-workspace/home.md)分析数据。工作区的操作方式与在传统Adobe Analytics中相同。
 * 有相同版本的 [Adobe Analytics 功能板](/help/mobile-app/home.md)可用，且在 Customer Journey Analytics 与 Adobe Analytics 中的工作原理类似。
-* [Report Builder](/help/report-builder/report-buider-overview.md) 具有新界面，并可在 MS Windows、MacOS 和 Web 版本的 Excel 上运行。(在此版本的Report Builder之前，除非在VMware上运行Mac，否则无法在中使用。) 此版本尚不支持传统的AA数据请求。
+* [Report Builder](/help/report-builder/report-buider-overview.md) 具有新界面，并可在 MS Windows、MacOS 和 Web 版本的 Excel 上运行。（在此版本的 Report Builder 之前，除非在 VMware 上运行，否则无法在 Mac 上使用。）此版本尚不支持传统的 AA 数据请求。
 
 ## 对报告的更改
 
@@ -40,7 +40,7 @@ Experience Platform 中的客户数据存储为数据集，其中包含[架构](
 
 您的 Customer Journey Analytics 管理员会与 Experience Platform 中的数据集建立[连接。](/help/connections/create-connection.md)然后，他们会使用这些连接构建[数据视图。](/help/data-views/data-views.md)数据视图在概念上与虚拟报告包类似，是 Customer Journey Analytics 中报告的基础。由于 Experience Platform 为报告提供所有数据，因此报告包不会再作为数据容器存在。
 
-通过建立连接，Analytics管理员可以将来自Adobe Experience Platform的数据集集成到Customer Journey Analytics中。
+通过建立连接，Analytics 管理员可以将来自 Adobe Experience Platform 的数据集集成到 Customer Journey Analytics 中。
 
 
 <!-- Outdated UI
@@ -78,7 +78,7 @@ Adobe 提供了多种将数据导入 Adobe Experience Platform 的方法，包�
 
 虽然从技术上讲，区段并未从 Adobe Analytics 迁移到 Customer Journey Analytics，但您可以使用组件迁移工具在 Customer Journey Analytics 中重新创建 Adobe Analytics 区段。根据映射的维度和量度在 Customer Journey Analytics 中重新创建区段。有关更多信息，请参阅[准备将组件和项目从 Adobe Analytics 迁移到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html)。
 
-虽然您还不能从 [!DNL Customer Journey Analytics] 共享或发布[!UICONTROL 筛选条件]（[!UICONTROL 区段]）到 Experience Platform Unified Profile，但此功能正在开发中。
+虽然您尚不能将[!DNL Customer Journey Analytics]中的[!UICONTROL 区段] （[!UICONTROL 区段]）共享或发布到Experience Platform统一配置文件，但此功能正在开发中。
 
 除了区段更改的概念之外，区段容器也会更新。
 
@@ -88,12 +88,12 @@ Adobe 提供了多种将数据导入 Adobe Experience Platform 的方法，包�
 
 ## 对计算量度概念的更改
 
-Adobe Analytics 和 Customer Journey Analytics 之间的计算量度名称类似。但是， [!UICONTROL Customer Journey Analytics] 不再使用 eVar、props 或事件，而是使用任何 Experience Platform 架构元素。这一根本变化意味着，任何现有的计算量度都与[!UICONTROL Customer Journey Analytics]不兼容。
+Adobe Analytics 和 Customer Journey Analytics 之间的计算量度名称类似。但是，[!UICONTROL Customer Journey Analytics] 不再使用 eVar、props 或事件，而是使用任何 Experience Platform 架构元素。这一根本变化意味着，任何现有的计算量度都与 [!UICONTROL Customer Journey Analytics] 不兼容。
 
 
 >[!BEGINSHADEBOX]
 
-有关如何移动计算量度的演示视频，请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [将计算量度从Adobe Analytics移动到Customer Journey Analytics](https://video.tv.adobe.com/v/31788?quality=12&learn=on){target="_blank"}。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [将计算量度从 Adobe Analytics 移动到 Customer Journey Analytics](https://video.tv.adobe.com/v/31788?quality=12&learn=on){target="_blank"} 以获取有关如何移动计算量度的演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -115,12 +115,12 @@ Adobe Analytics 和 Customer Journey Analytics 之间的计算量度名称类似
 
 ## 更改了Adobe识别访客的方式
 
-Customer Journey Analytics 扩展了 ECID 之外的身份标识概念，以包含您要使用的任何 ID，包括客户 ID、Cookie ID、拼合 ID、用户 ID、跟踪代码等。跨数据集使用通用命名空间 ID，或使用[拼接](../stitching/overview.md)功能可帮助将不同数据集中的人员关联在一起。在 Customer Journey Analytics 中设置工作区项目的任何用户都必须了解跨数据集使用的 ID。请观看以下视频，重点介绍Customer Journey Analytics中标识的使用
+Customer Journey Analytics 扩展了 ECID 之外的身份标识概念，以包含您要使用的任何 ID，包括客户 ID、Cookie ID、拼合 ID、用户 ID、跟踪代码等。跨数据集使用通用命名空间 ID，或使用[拼接](../stitching/overview.md)功能可帮助将不同数据集中的人员关联在一起。在 Customer Journey Analytics 中设置工作区项目的任何用户都必须了解跨数据集使用的 ID。请观看以下视频，其中重点介绍了 Customer Journey Analytics 中身份标识的使用
 
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[在Customer Journey Analytics中使用标识](https://video.tv.adobe.com/v/30750/?quality=12&learn=on){target="_blank"}。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Customer Journey Analytics 中使用身份标识](https://video.tv.adobe.com/v/30750/?quality=12&learn=on){target="_blank"}获取演示视频。
 
 >[!ENDSHADEBOX]
 

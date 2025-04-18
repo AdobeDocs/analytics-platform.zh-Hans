@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 3812b10e558c1b8a3ee4fe474405543c68433d8e
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 数据集是连接的源。 在设置连接时，您需要将数据集定义为连接的一部分。
 
-容器是Customer Journey Analytics中使用的一种，用于支持和促进过滤器、计算量度和高级分析功能等功能。
+容器在Customer Journey Analytics中使用，以支持和促进区段、计算量度和高级分析功能等功能。
 
 
 

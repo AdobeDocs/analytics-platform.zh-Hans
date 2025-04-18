@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 1774ef63e3578f7016a95716fcfa11a0c7c627ce
+source-git-commit: 2581ff0f3d149a539ed730a941ce1b6288e9af0e
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 86%
+ht-degree: 85%
 
 ---
 
@@ -199,7 +199,7 @@ ht-degree: 86%
          + [概述](../analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [配置](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [维度间流失](../analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
-         + [应用过滤器](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
+         + [应用区段](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + 流量 {#flow}
          + [概述](../analysis-workspace/visualizations/c-flow/flow.md)
          + [配置](../analysis-workspace/visualizations/c-flow/create-flow.md)
@@ -320,19 +320,19 @@ ht-degree: 86%
       + [时间划分维度](../components/dimensions/time-parting-dimensions.md)
       + [高基数维度](../components/dimensions/high-cardinality.md)
    + [量度](../components/apply-create-metrics.md)
-   + 过滤器 {#cja-filters}
+   + 区段 {#cja-segments}
       + [概述](../components/filters/filters-overview.md)
-      + [创建过滤器](../components/filters/create-filters.md)
-      + [构建过滤器](../components/filters/filter-builder.md)
-      + [快速过滤器](../components/filters/quick-filters.md)
-      + [顺序过滤器](../components/filters/seg-sequential-build.md)
-      + [共享过滤器](../components/filters/filters-share.md)
-      + [标记过滤器](../components/filters/filters-tag.md)
-      + [过滤过滤器列表](../components/filters/filters-filter.md)
-      + [将过滤器标记为收藏](../components/filters/filters-favorite.md)
-      + [批准过滤器](../components/filters/filters-approve.md)
-      + [复制过滤器](../components/filters/filters-copy.md)
-      + [管理过滤器](../components/filters/manage-filters.md)
+      + [创建区段](../components/filters/create-filters.md)
+      + [生成区段](../components/filters/filter-builder.md)
+      + [快速区段](../components/filters/quick-filters.md)
+      + [顺序区段](../components/filters/seg-sequential-build.md)
+      + [共享区段](../components/filters/filters-share.md)
+      + [标记区段](../components/filters/filters-tag.md)
+      + [过滤区段列表](../components/filters/filters-filter.md)
+      + [将区段标记为收藏](../components/filters/filters-favorite.md)
+      + [批准区段](../components/filters/filters-approve.md)
+      + [复制区段](../components/filters/filters-copy.md)
+      + [管理区段](../components/filters/manage-filters.md)
       + [运算符](../components/filters/operators.md)
    + 计算量度 {#cja-calcmetrics}
       + [概述](../components/calc-metrics/calc-metr-overview.md)
@@ -342,8 +342,8 @@ ht-degree: 86%
          + [查找量度](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [量度类型和归因](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
          + [生成参与率量度](../components/calc-metrics/cm-workflow/participation-metric.md)
-         + [过滤量度](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
-         + [堆叠和替换过滤器](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
+         + [分段量度](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
+         + [堆叠和替换区段](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [筛选计算量度](../components/calc-metrics/cm-workflow/cm-filter.md)
          + [将计算量度标记为收藏内容](../components/calc-metrics/cm-workflow/cm-favorite.md)
          + [复制计算量度](../components/calc-metrics/cm-workflow/cm-copy.md)
