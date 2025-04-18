@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 424485a3-a076-4656-83b6-733f16cc2326
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '887'
-ht-degree: 98%
+ht-degree: 92%
 
 ---
 
@@ -96,13 +96,13 @@ ht-degree: 98%
 
    * 选择的结束日期与您首次开始使用 Web SDK 实施收集数据的日期相同。
 
-   * 选择一个在您首次开始使用 Web SDK 实施收集数据后不久的结束日期，然后使用数据视图区段来过滤掉重叠的数据。
+   * 选择一个结束日期，该日期紧跟您首次开始通过Web SDK实施收集数据的日期，然后使用数据视图区段划分重叠数据。
 
-   * 选择一个能产生更大数据重叠的结束日期，然后使用数据视图区段来过滤掉重叠的数据。
+   * 选择导致数据更大重叠的结束日期，然后使用数据视图区段划分重叠数据。
 
      **注释：**&#x200B;该选项会导致成本增加，因为连接中的行会增加。
 
-   <!-- Include any of the following?  Make sure you're explicit as to the dates you request backfill to. You want to request it to the date that you start gathering data with your Web SDK implementation. Also possibly include segments for any overlapping date. So you could request everything and then use a segment to exclude data that you don't want. That way if you need to move up the date, then you could change the date in the filter. Downside would be that you might pay for double rows.  When they do that, they're going to see all schema fields from both their custom schema and their Analytics schema. So they'll need to be cognizant to select the right fields, and never select any Analytics fields, because they will be mapped as part of the source connector. Never select any Analytics field group fields because they'll be mapped.  -->
+   <!-- Include any of the following?  Make sure you're explicit as to the dates you request backfill to. You want to request it to the date that you start gathering data with your Web SDK implementation. Also possibly include segments for any overlapping date. So you could request everything and then use a segment to exclude data that you don't want. That way if you need to move up the date, then you could change the date in the segment. Downside would be that you might pay for double rows.  When they do that, they're going to see all schema fields from both their custom schema and their Analytics schema. So they'll need to be cognizant to select the right fields, and never select any Analytics fields, because they will be mapped as part of the source connector. Never select any Analytics field group fields because they'll be mapped.  -->
 
 1. 选择&#x200B;**[!UICONTROL 排列回填]**。
 

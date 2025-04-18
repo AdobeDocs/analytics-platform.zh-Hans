@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '401'
-ht-degree: 95%
+ht-degree: 90%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 95%
 
    有关向数据视图添加组件时可用选项的详细信息，请参阅[创建或编辑数据视图](/help/data-views/create-dataview.md#components)中的[组件](/help/data-views/create-dataview.md)。
 
-1. 选择&#x200B;[!UICONTROL **设置**]&#x200B;选项卡。从这里，您可以配置过滤器以应用于整个数据视图，并配置会话超时和量度。
+1. 选择&#x200B;[!UICONTROL **设置**]&#x200B;选项卡。在此处，您可以配置要应用于整个数据视图的区段，以及配置会话超时和量度。
 
    有关配置数据视图设置时可用选项的详细信息，请参阅[创建或编辑数据视图](/help/data-views/create-dataview.md#settings)中的[设置](/help/data-views/create-dataview.md)。
 

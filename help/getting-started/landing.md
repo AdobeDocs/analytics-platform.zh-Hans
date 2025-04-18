@@ -4,10 +4,10 @@ title: Customer Journey Analytics 登陆页面
 role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '501'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ Customer Journey Analytics 的登录页突出[!DNL Analysis Workspace]显示了�
 
 >[!BEGINSHADEBOX]
 
-观看演示视频，请参阅Analysis Workspace中的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [登录页面](https://video.tv.adobe.com/v/334278/?quality=12&learn=on){target="_blank"}。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的登陆页面](https://video.tv.adobe.com/v/334278/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 {{videoaa}}
 
@@ -53,7 +53,7 @@ Customer Journey Analytics 登陆页面由以下子选项卡组成：项目和�
 
 >[!NOTE]
 >
->以下几个设置在会话期间和会话之间保持不变。例如，您选择的选项卡、选择的筛选条件、选择的列以及列排序方向。搜索结果不是持久性的。
+>以下几个设置在会话期间和会话之间保持不变。例如，您选择的选项卡、选定的区段、选定的列以及列排序方向。 搜索结果不是持久性的。
 
 有关更多信息，请参阅[项目](/help/analysis-workspace/build-workspace-project/freeform-overview.md)。
 

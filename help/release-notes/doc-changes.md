@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 1774ef63e3578f7016a95716fcfa11a0c7c627ce
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '4716'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -45,18 +45,18 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 拼接和隐私请求 | 添加了关于 [拆线过程中即将发生的变更](/help/stitching/faq.md#frequently-asked-questions) 的通知，这些变更是由于隐私请求而产生的。 |
 | **2024 年 10 月** | |
 | 历程画布可视化 | [历程画布](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=en)是 Analysis workspace 中的一项可视化功能，您使用它可以分析人们如何完成或退出所定义的历程。 |
-| 资产转移 | 允许您将项目、过滤器和计算量度等组件的[所有权转移](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/tools/asset-transfer/transfer-assets)给其他用户，以确保具备连续性和相应的访问权限。 |
+| 资产转移 | 允许您[将组件（如项目、区段和计算量度）的所有权](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/tools/asset-transfer/transfer-assets)转移给其他用户，以确保连续性和适当的访问权限。 |
 | 改进的使用情况界面 | 更新了有关改进界面的文章，以显示[所有连接中摄取和可报告的行的使用情况](/help/connections/manage-connections.md#usage) |
 | 共享设备 | 添加了 [用例文章](/help/use-cases/stitching/shared-devices.md) ，提供有关共享设备的上下文、如何使用拼接处理和缓解来自共享设备的数据，以及如何使用查询服务了解数据中的共享设备曝光度。 |
 | 有关 Analysis Workspace 性能中的请求因素的新信息 | [优化 Analysis Workspace 性能](/help/technotes/optimizing-performance.md)文章中新增的[请求因素](/help/technotes/optimizing-performance.md#request-factors)部分介绍了如何处理请求以及影响处理时间的各种因素。 |
-| Workspace 和组件 | 刷新了有关 Analysis Workspace 项目（项目、可视化和面板）和组件（注释、维度、（计算）量度、过滤器、日期范围、警报、计划项目和受众）的文档。 |
+| Workspace 和组件 | 刷新了有关Analysis Workspace项目（项目、可视化和面板）和组件(注释、维度、（计算）指标、区段、日期范围、警报、计划项目和受众)的文档。 |
 | 引导式分析 | 更新了文档，其中包含来自 Analysis Workspace 中的[引导式分析](/help/guided-analysis/overview.md)。 |
-| 更新的受众文档 | 在 Analysis Workspace 中通过可视化内容[创建受众](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/audiences/publish?lang=en)时，面板过滤器和列过滤器现在作为附加条件包含在内。 |
+| 更新的受众文档 | 现在，在Analysis Workspace中通过可视化图表[创建受众](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/audiences/publish?lang=en)时，将面板区段和列区段作为附加条件包括在内。 |
 | **2024 年 9 月** | |
 | 摘要数据更新 | 更新了摘要数据文章，其中包含有关在报告摘要数据时如何正确使用[查找数据](/help/data-views/summary-data.md#lookup-data)的信息。 |
 | BI 扩展更新 | 在 BI 扩展文档中添加了[默认值和限制](/help/data-views/bi-extension.md#defaults-and-limitations)部分。 |
 | 警报 | 添加了有关 Customer Journey Analytics 中现有[警报](/help/components/c-intelligent-alerts/intelligent-alerts.md)功能的文档。 |
-| 计算量度管理器和过滤管理器中“用于”列中的附加信息 | [计算量度管理器](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager?lang=en)和[过滤器管理器](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/cja-filters/manage-filters?lang=en)中的“用于”列包含以下新的报告区域：Report Builder 和临时组件 |
+| 计算量度管理器和区段管理器的“用于”列中的其他信息 | [计算量度管理器](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager?lang=en)和[过滤器管理器](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/cja-filters/manage-filters?lang=en)中的“用于”列包含以下新的报告区域：Report Builder 和临时组件 |
 | **2024 年 8 月** | |
 | B2B 项目示例 | 新增了一个[用例](/help/use-cases/b2b/example.md)，详细描述了如何在 Customer Journey Analytics 中使用新的[转换数据集进行 B2B 查找](/help/connections/transform-datasets-b2b-lookups.md)功能，设置、配置和报告基于轮廓（人员）级别的 B2B 数据。 |
 | 更新了数据导出用例 | 向[查询服务（数据蒸馏器）和导出数据集](/help/use-cases/data-export/queryservice-export-datasets.md)添加了更详细的查询示例，以说明如何使用回顾窗口在线程之间正确地应用归因功能。 |

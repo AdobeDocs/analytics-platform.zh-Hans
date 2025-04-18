@@ -4,10 +4,10 @@ description: 了解各种报告功能的数据处理差异
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
 feature: Basics
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 100%
+source-wordcount: '1078'
+ht-degree: 96%
 
 ---
 
@@ -42,8 +42,8 @@ ht-degree: 100%
 | 点击级别逻辑 | 逐行应用的逻辑。 | 示例：处理规则、VISTA、某些营销渠道规则。 |
 | 访问级别逻辑 | 在访问级别应用的逻辑。 | 示例：访问和会话定义。 |
 | 访客级别逻辑 | 在人员级别应用的逻辑。 | 示例：跨设备/跨渠道人员拼接。 |
-| 区段（筛选条件）逻辑 | 评估事件/访问/人员（事件/会话/人员）区段（筛选条件）规则。 | 示例：购买红色鞋款的顾客。 |
-| 计算量度 | 评估客户创建的自定义量度，这些量度可以基于复杂的公式，其中包括区段和筛选条件。 | 示例：购买红色鞋款的人数。 |
+| 区段逻辑 | 评估事件/访问/人员（事件/会话/人员）区段规则。 | 示例：购买红色鞋款的顾客。 |
+| 计算量度 | 评估客户创建的自定义量度，这些量度可以基于复杂的公式，包括区段。 | 示例：购买红色鞋子的人数。 |
 | 属性逻辑 | 计算属性的逻辑。 | 示例：eVar 持久性。 |
 | 组件设置 | 将自定义应用于量度或维度，例如归因、行为、格式等 | 示例：基于范围组合数值的值分段 |
 | 派生字段 | 作为在“数据”视图中定义组件的一部分，逻辑应用于架构或标准字段。 | 示例：创建新的营销渠道维度 |
@@ -64,7 +64,7 @@ ht-degree: 100%
 | Adobe Analytics [现场直播](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/live-stream-api/getting_started.md) | <ul><li> 处理规则</li><li>VISTA 规则</li><ul> |   | <ul><li>点击级别的营销渠道规则</li><li>访问级别的营销渠道规则</li><li>访问逻辑</li><li>属性逻辑</li><li>区段逻辑</li><li>计算量度</li><li>跨设备分析</li></ul> |  |
 | Adobe Analytics [Attribution IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html) | <ul><li>处理规则</li><li>VISTA 规则</li><li>访问的定义（见注释）</li><li>Cross-Device Analytics（见注释）</li></ul> | <ul><li>点击级别的营销渠道规则（见注释）</li><li>访问级别的营销渠道规则（见注释）属性逻辑</li><li>区段逻辑</li><li>计算量度</li></ul> |  | <ul><li>CDA 需要使用具有报告时处理的虚拟报告包。</li><li>核心分析中的 Attribution IQ 使用完全在报告时衍生的营销渠道（即衍生中值）</li><li>除在报告时处理虚拟报告包中使用外，Attribution IQ 使用的是处理时访问定义。</li></ul> |
 | 具有[报告时处理](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=zh-Hans)的 Adobe Analytics 虚拟报告包 | <ul><li>处理规则</li><li>VISTA 规则</li><li>[跨设备分析](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html)</li></ul> | <ul><li>访问的定义</li><li>属性逻辑</li><li>区段逻辑</li><li>计算量度</li><li>其他虚拟报告包报告时处理设置</li></ul> | <ul><li>点击级别的营销渠道规则</li><li>访问级别的营销渠道规则</li></ul> | <ul><li>请参阅虚拟报告包报告时处理[文档](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=zh-Hans)。</li></ul> |
-| Adobe Experience Platform 数据湖中基于数据集的 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) | <ul><li>处理规则</li><li>VISTA 规则</li><li>点击级别的营销渠道规则</li><li>基于字段的拼接（参见注释）</li></ul> |   | <ul><li>[访问级别的营销渠道规则](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html)</li><li>访问逻辑</li><li>属性逻辑</li><li>筛选条件逻辑</li></ul> | <ul><li>必须应用您自己的筛选条件逻辑和计算量度</li><li>基于字段的拼接除了具有由 Analytics Source Connector 创建的数据集之外，还会创建一个单独的拼接数据集。</li></ul> |
+| Adobe Experience Platform 数据湖中基于数据集的 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) | <ul><li>处理规则</li><li>VISTA 规则</li><li>点击级别的营销渠道规则</li><li>基于字段的拼接（参见注释）</li></ul> |   | <ul><li>[访问级别的营销渠道规则](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html)</li><li>访问逻辑</li><li>属性逻辑</li><li>筛选条件逻辑</li></ul> | <ul><li>必须应用您自己的区段逻辑和计算量度</li><li>基于字段的拼接除了具有由 Analytics Source Connector 创建的数据集之外，还会创建一个单独的拼接数据集。</li></ul> |
 | [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html) 报告 | <ul><li>作为 Adob&#x200B;e Experience Platform 数据收集的一部分实施</li></ul> | <ul><li>会话定义</li><li>[数据视图](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html)设置<li>属性逻辑</li><li>计算量度</li><li>筛选条件逻辑</li></ul> | <ul><li>访问级别的营销渠道规则</li></ul> | <ul><li>必须使用拼接数据集才能利用跨渠道分析。</li></ul> |
 
 {style="table-layout:auto"}
