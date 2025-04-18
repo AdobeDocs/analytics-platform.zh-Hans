@@ -5,10 +5,10 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 9c1a8c51aa3e23412e5b04d3ab1571a9d1c7612e
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '1053'
-ht-degree: 79%
+ht-degree: 77%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 79%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_persistence"
 >title="持久性"
->abstract="配置应用于维度的默认分配模型。分配在报告中应用于过滤器之前。请参阅[分配设置](/help/data-views/component-settings/persistence.md#allocation-settings)、[过期设置](/help/data-views/component-settings/persistence.md#expiration-settings)、[绑定维度](/help/data-views/component-settings/persistence.md#binding-dimension)和[绑定量度](/help/data-views/component-settings/persistence.md#binding-metric)的详细信息。"
+>abstract="配置应用于维度的默认分配模型。分配在报告中的区段之前应用。 请参阅[分配设置](/help/data-views/component-settings/persistence.md#allocation-settings)、[过期设置](/help/data-views/component-settings/persistence.md#expiration-settings)、[绑定维度](/help/data-views/component-settings/persistence.md#binding-dimension)和[绑定量度](/help/data-views/component-settings/persistence.md#binding-metric)的详细信息。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -40,7 +40,7 @@ ht-degree: 79%
 
 * 通过&#x200B;**有效期限**，可决定维度项在从中设置它的事件之外保持多久。
 
-[!UICONTROL 持久性]仅在维度上可用，并可追溯至将它应用于的数据。它是紧接应用筛选或其他分析操作之前发生的数据转换。
+[!UICONTROL 持久性]仅在维度上可用，并可追溯至将它应用于的数据。它是紧接应用分段或其他分析操作之前发生的数据转换。
 
 | 设置 | 描述 |
 | --- | --- |
