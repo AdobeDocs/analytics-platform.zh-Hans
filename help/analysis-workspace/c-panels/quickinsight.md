@@ -4,7 +4,7 @@ title: 快速洞察面板
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '1153'
 ht-degree: 94%
@@ -62,7 +62,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 | [!UICONTROL 量度] | 量度是关于查看次数、点进次数、重新加载次数、平均逗留时间、单位、订单数、收入等人员活动的量化信息。 |
 | **[!UICONTROL 可视化图表]** | Workspace 提供了[许多可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)，用于生成数据的可视化表示形式。例如条形图、圆环图、直方图、线形图、地图、散点图等。 |
 | **[!UICONTROL 维度划分]** | 维度划分是一种按其他维度来划分维度的方法。例如，您可以按移动设备划分美国各州的情况，以获取每个州的移动设备访问次数。或者您可以按移动设备类型、地区、内部营销活动等划分移动设备。 |
-| **[!UICONTROL 过滤器]** | 利用过滤器可根据相关特征或网站交互辨别一部分人。例如，您可以根据以下条件生成[!UICONTROL 人员]区段： <li>归因：浏览器类型、设备、访问次数、国家/地区、性别或</li><li>交互：营销活动、关键词搜索、搜索引擎或</li><li>退出和进入：来自 Facebook 的人员、定义的登陆页面、反向链接域或</li><li> 自定义变量：表单字段、定义的类别、客户 ID。 |
+| **[!UICONTROL 区段]** | 利用区段可根据相关特征或网站交互辨别一部分人。例如，您可以根据以下条件生成[!UICONTROL 人员]区段： <li>归因：浏览器类型、设备、访问次数、国家/地区、性别或</li><li>交互：营销活动、关键词搜索、搜索引擎或</li><li>退出和进入：来自 Facebook 的人员、定义的登陆页面、反向链接域或</li><li> 自定义变量：表单字段、定义的类别、客户 ID。 |
 
 ## 使用
 

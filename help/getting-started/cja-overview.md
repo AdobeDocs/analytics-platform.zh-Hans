@@ -5,9 +5,9 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '985'
 ht-degree: 93%
 
 ---
@@ -70,7 +70,6 @@ Customer Journey Analytics 的初始版本包括 Adobe Analytics 中的许多功
 
 与传统的 Adobe Analytics 相比，为了符合行业标准，Customer Journey Analytics 中的一些功能已重新命名。一些更新的术语包括：
 
-* “区段”现在称为“筛选条件”。
 * 虚拟报告包现在称为“数据视图”。
 * “分类”现在称为“查找数据集”。
 * “客户属性”现在称为“轮廓数据集”。

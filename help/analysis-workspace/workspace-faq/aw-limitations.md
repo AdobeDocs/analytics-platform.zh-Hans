@@ -4,10 +4,10 @@ title: Analysis Workspace 中的已知限制
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 79%
+source-wordcount: '313'
+ht-degree: 73%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 79%
 ## 表格
 
 * 将日期范围或量度用作表的行时，无法添加日期比较列。
-* 当过滤器用作表的行时，将禁用通过所选内容创建量度。此外，通过所选内容创建量度不应应用于日期对齐列。
+* 当区段用作表的行时，将禁用通过所选内容创建量度。此外，通过所选内容创建量度不应应用于日期对齐列。
 * 划分行的条件格式不能使用自定义范围。
 * 当应用通过汇总行值设置来计算总数时（通常与静态行项目一起使用），表总行数不能趋势化。
 
@@ -28,10 +28,10 @@ ht-degree: 79%
 * [!UICONTROL 流量]：登入/退出维度（例如，[!UICONTROL 进入页面]）不能在流量中使用。
 * [!UICONTROL 同类群组]：非整数不能用作同类群组标准。
 
-## 过滤器
+## 区段
 
 * 某些量度和维度无法分段，如[!UICONTROL 事件]、[!UICONTROL 人员]等。
-* 在[面板拖放区域](/help/analysis-workspace/c-panels/panels.md)中创建的临时区段属于快速区段类型。 除非公开这些区段，否则它们不会出现在 Workspace 的左侧面板或过滤器组件管理器中。有关更多信息，请参阅[快速区段](/help/components/filters/quick-filters.md)。
+* 在[面板拖放区域](/help/analysis-workspace/c-panels/panels.md)中创建的临时区段属于快速区段类型。 除非将其公开，否则它们不会显示在Workspace的左侧面板或区段管理器中。 有关更多信息，请参阅[快速区段](/help/components/filters/quick-filters.md)。
 
 ## 计算量度
 

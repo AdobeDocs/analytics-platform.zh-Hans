@@ -5,10 +5,10 @@ title: 将 Customer Journey Analytics 报告导出至云
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: a7bd67894b02174d980a730086f89df97b524356
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '2285'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -183,7 +183,7 @@ ht-degree: 99%
 以下组件不受支持，并且 Analysis Workspace 会在执行完整表格导出时提示您将其从表中移除：
 
 * 在量度定义中使用基本函数或高级函数的计算量度（有关详细信息，请参阅[基本函数](/help/components/calc-metrics/cm-functions.md)和[高级函数](/help/components/calc-metrics/cm-adv-functions.md)）
-* 管理员限制导出的组件（有关详细信息，请参阅&#x200B;*标签和政策*&#x200B;中的[数据视图中的数据治理策略过滤器](/help/data-views/data-governance.md)部分）
+* 管理员已限制导出组件（有关详细信息，请参阅[标签和策略](/help/data-views/data-governance.md)中数据视图&#x200B;*中数据管理策略的*&#x200B;区段）
 * 满足以下所有条件的任何维度：
    * 是通过[对象数组](/help/use-cases/object-arrays.md)中的一个字段创建的（类似于 Adobe Analytics 中的多值变量）
    * 已[启用持久性](/help/data-views/component-settings/persistence.md)
@@ -197,7 +197,7 @@ ht-degree: 99%
    * 计算量度
    * 量度
    * 日期范围
-   * 过滤器
+   * 区段
 
 ### 归因行为
 

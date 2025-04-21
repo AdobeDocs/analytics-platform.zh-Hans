@@ -4,10 +4,10 @@ title: 关键量度摘要
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '959'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -52,7 +52,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 1. 添加![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL 关键量度摘要]**&#x200B;可视化图表。请参阅[将可视化图表添加到面板](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)。
 
-1. 通过选择&#x200B;**[!UICONTROL 量度]**、**[!UICONTROL 主要日期范围]**、**[!UICONTROL 比较日期范围]**（可选）和&#x200B;**[!UICONTROL 过滤器]**（可选）来配置可视化图表：
+1. 通过选择&#x200B;**[!UICONTROL 量度]**、**[!UICONTROL 主要日期范围]**、**[!UICONTROL 比较日期范围]**（可选）和&#x200B;**[!UICONTROL 区段]**（可选）来配置可视化图表：
 
    ![关键量度配置显示量度、主要日期范围、比较日期范围和区段的选项。](assets/key-metrics-config.png)
 
@@ -61,7 +61,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
    | **[!UICONTROL 量度]** | 选择您希望检查的量度。支持全部量度。 |
    | **[!UICONTROL 主要日期范围]** | 自由表格的当前日期范围。<p>从数据视图的任何可用日期范围中进行选择。</p> <p>如果您想使用与可视化图表所在面板上相同的日期范围，请选择&#x200B;[!UICONTROL **面板日期范围**]。</p> |
    | **[!UICONTROL 比较日期范围。]** | 要与主要日期范围进行比较的日期范围。 |
-   | **[!UICONTROL 过滤器（可选）]** | 您对此摘要感兴趣的任何区段。 |
+   | **[!UICONTROL 区段（可选）]** | 您对此摘要感兴趣的任何区段。 |
 
    {style="table-layout:auto"}
 

@@ -4,10 +4,10 @@ title: 行设置
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '1046'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -66,12 +66,12 @@ ht-degree: 93%
 | **[!UICONTROL 创建超链接]** | 为项目创建超链接。请参阅[为自由格式表中的维度对超链接进行操作](../freeform-table-hyperlinks.md) |
 | **[!UICONTROL 编辑超链接]** | 为项目编辑超链接。请参阅[为自由格式表中的维度对超链接进行操作](../freeform-table-hyperlinks.md) |
 | **[!UICONTROL 移除超链接]** | 为项目移除超链接。请参阅[为自由格式表中的维度对超链接进行操作](../freeform-table-hyperlinks.md) |
-| **[!UICONTROL 细分]** | 划分维度项。从&#x200B;**[!UICONTROL 维度]**、**[!UICONTROL 量度]**、**[!UICONTROL 过滤器]**&#x200B;或&#x200B;**[!UICONTROL 日期范围]**&#x200B;列表中进行选择。使用&#x200B;*搜索*&#x200B;来替代搜索组件。 |
+| **[!UICONTROL 细分]** | 划分维度项。从&#x200B;**[!UICONTROL 维度]**、**[!UICONTROL 量度]**、**[!UICONTROL 区段]**&#x200B;或&#x200B;**[!UICONTROL 日期范围]**&#x200B;的列表中进行选择。 使用&#x200B;*搜索*&#x200B;来替代搜索组件。 |
 | **[!UICONTROL 删除选定项]** | 删除选定的行（项目）。 |
 | **[!UICONTROL 趋势选择]** | 为选择创建趋势线形图可视化图表。 |
 | **[!UICONTROL 仅显示选定的行]** | 仅显示可视化图表中选定的行。 |
 | **[!UICONTROL 显示所有行]** | 显示可视化图表中的所有行。 |
-| **[!UICONTROL 从选定范围中创建区段]** | 打开&#x200B;**[!UICONTROL 筛选器生成器]**&#x200B;以从所选内容生成区段。 |
+| **[!UICONTROL 从选定范围中创建区段]** | 打开&#x200B;**[!UICONTROL 区段生成器]**&#x200B;以从所选内容生成区段。 |
 | **[!UICONTROL 从选择创建受众]** | 打开&#x200B;**[!UICONTROL 创建受众]**&#x200B;对话框，从选择中生成受众。 |
 
 选择量度列标题时，可以使用以下附加上下文菜单选项。
@@ -85,7 +85,7 @@ ht-degree: 93%
 | **[!UICONTROL 比较归因模型]** | 指定一个新的归因模型并将其与所选列的归因模型进行比较。添加了包含新归因模型量度的新列。此外，还添加了百分比变化列以便进行比较。 |
 | **[!UICONTROL 重置列宽]** | 将列宽重置为默认宽度。 |
 | **[!UICONTROL 从选择创建注释]** | 打开&#x200B;**[!UICONTROL 注释详细信息]**&#x200B;以添加注释。 |
-| **[!UICONTROL 从选定范围中创建区段]** | 打开&#x200B;**[!UICONTROL 筛选器生成器]**&#x200B;以从所选内容生成区段。 |
+| **[!UICONTROL 从选定范围中创建区段]** | 打开&#x200B;**[!UICONTROL 区段生成器]**&#x200B;以从所选内容生成区段。 |
 | **[!UICONTROL 从选择创建受众]** | 打开&#x200B;**[!UICONTROL 创建受众]**&#x200B;对话框，从选择中生成受众。 |
 
 ## 更改行高

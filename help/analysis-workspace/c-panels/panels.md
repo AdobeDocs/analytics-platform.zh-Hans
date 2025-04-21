@@ -4,7 +4,7 @@ title: 面板概述
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 305ae20c48ddf0f2032b8f92a016eb92427016ed
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '2129'
 ht-degree: 97%
@@ -136,26 +136,26 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 使用面板拖放区域，您可以将区段和下拉区段应用到面板中的所有表格和可视化图表。您可以将一个或多个区段应用到面板。
 
-### 过滤器
+### 区段
 
-将任意区段从左侧面板拖放到面板拖放区域，以开始对面板进行分段。重复此操作可向面板添加其他区段。过滤器并排显示在面板顶部。
+将任意区段从左侧面板拖放到面板拖放区域，以开始对面板进行分段。重复此操作可向面板添加其他区段。区段并排显示在面板顶部。
 
 ![The left panel shows available Metrics and the Mobile Customer metric dragged to the panel drop zone.](assets/segment-filter.png)
 
 #### 快速区段
 
-还可将非区段组件直接拖入放置区域以创建快速区段，从而为您节省转到[区段生成器](/help/components/filters/filter-builder.md)的时间和精力。通过这种方式创建的过滤器自动定义为事件级区段。 通过选择区段名称旁边的![编辑](/help/assets/icons/Edit.svg)可以快速修改此定义。
+还可将非区段组件直接拖入放置区域以创建快速区段，从而为您节省转到[区段生成器](/help/components/filters/filter-builder.md)的时间和精力。通过这种方式创建的区段自动定义为事件级别区段。通过选择区段名称旁边的![编辑](/help/assets/icons/Edit.svg)可以快速修改此定义。
 
 
 有关更多信息，请参阅[快速区段](/help/components/filters/quick-filters.md)。
 
 ![已公开并放入放置区域的临时区段](assets/adhoc-segment-filter.png)
 
-### 下拉过滤器
+### 下拉区段
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [下拉过滤器](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"}以获取演示视频。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [下拉区段](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"}。
 
 {{videoaa}}
 

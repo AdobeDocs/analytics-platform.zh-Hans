@@ -4,7 +4,7 @@ title: 使用模板
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 004804eace69ec72f824603ec0d7b82470b19041
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '19662'
 ht-degree: 99%
@@ -67,7 +67,7 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速了解最�
    >
    >有关上下文标签的更多信息，请参阅[组件设置](/help/data-views/component-settings/overview.md)。
 
-   1. 选择过滤器图标。
+   1. 选择区段图标。
 
    1. 选择&#x200B;**[!UICONTROL 尚未准备好使用]**，以显示需要附加组件的模板。
 
@@ -106,7 +106,7 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速了解最�
 1. 执行下列任一操作：
 
    * 查看模板。
-   * 将一个或多个过滤器拖到顶部的“过滤器”放置区中。例如，拖动过滤器&#x200B;[!UICONTROL **移动客户**]&#x200B;并查看结果。
+   * 将一个或多个区段拖到顶部的“区段”放置区中。例如，拖动区段&#x200B;[!UICONTROL **移动客户**]&#x200B;并查看结果。
    * 转到右上方的日程表来更改日期范围。
    * 添加维度细分、拖入其他量度，并根据您的需求对模板进行总体定制。
 
