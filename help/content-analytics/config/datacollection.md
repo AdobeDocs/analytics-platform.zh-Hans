@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 981cd0c01d775acbd71cada7efed4911b4bcb157
+source-git-commit: feb253b20820112d5aa4b4eee31cff74d99fa186
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '567'
 ht-degree: 1%
 
 ---
@@ -34,10 +34,13 @@ ht-degree: 1%
 
 ## 功能
 
+Content Analytics需要Experience Platform Edge Network Web SDK来收集内容事件数据。 该事件数据收集通过Experience Platform Edge Network (Web SDK，服务器API)或Analytics源连接器(例如，使用AppMeasurement)等机制，与行为事件数据的（现有）数据收集相结合。
+
 Content Analytics库在以下情况下收集数据：
 
 * Content Analytics包含在页面上加载的标记库中。
 * 页面URL在[Content Analytics扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}中配置，该扩展是包含的Tags库的一部分。
+
 
 
 ## Content Analytics事件
