@@ -1,24 +1,24 @@
 ---
-title: 节头
-description: 在Workspace项目中插入节标题的可视化图表。
+title: 分区标头
+description: 在您的工作区项目中插入分区标头的可视化图表。
 feature: Visualizations
 role: User
 exl-id: 7f815879-2b08-4650-a9ce-c55ca5824288
 source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '95'
-ht-degree: 13%
+ht-degree: 100%
 
 ---
 
-# 节头 {#section-header}
+# 分区标头 {#section-header}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_sectionheader_button"
->title="节头"
->abstract="向面板添加节头。"
+>title="分区标头"
+>abstract="向面板添加分区标头。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -26,20 +26,20 @@ ht-degree: 13%
 >[!BEGINSHADEBOX]
 
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的节标题可视化图表。_<br/>_查看本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版本的[节标题](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/section-header)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的分区标头可视化图表。_<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版本的[分区标头](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/section-header)。_
 
 >[!ENDSHADEBOX]
 
-要识别和表达面板中的节，可以在面板中的任意位置插入![PageRule](/help/assets/icons/PageRule.svg) **[!UICONTROL 节标题]**&#x200B;可视化图表。
+要识别和阐明面板中的各个部分，您可以在面板内的任何位置插入 ![PageRule](/help/assets/icons/PageRule.svg) **[!UICONTROL 分区标头]**&#x200B;可视化图表。
 
-![节标题](/help/analysis-workspace/visualizations/assets/section-header.png)
+![分区标头](/help/analysis-workspace/visualizations/assets/section-header.png)
 
-要修改节标题的文本，只需选择&#x200B;**[!UICONTROL 节标题]**。
+要修改分区标头的文本，只需选择&#x200B;**[!UICONTROL 分区标头]**。
 
 
 >[!MORELIKETHIS]
 >
->[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[在面板中添加可视化效果](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[可视化设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[可视化上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

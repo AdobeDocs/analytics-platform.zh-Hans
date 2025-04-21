@@ -5,9 +5,9 @@ feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
 source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '204'
-ht-degree: 31%
+ht-degree: 100%
 
 ---
 
@@ -15,12 +15,12 @@ ht-degree: 31%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的面积图和栈叠面积图可视化图表。_<br/>_查看本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版本的[面积图和栈叠面积图](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** 中的面积图和堆叠的面积图可视化图表。_<br/>_有关本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版本，请参阅[面积图和堆叠的面积图](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/area)。_
 
 >[!ENDSHADEBOX]
 
 
-面积图可视化图表具有标准和栈叠选项。
+面积图可视化图表具有标准和堆叠选项。
 
 ## 面积图 {#area}
 
@@ -29,7 +29,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >[!CONTEXTUALHELP]
 >id="workspace_area_button"
 >title="面积图"
->abstract="创建面积图可视化图表来表示多个量度的交集。"
+>abstract="创建一份可视化面积图来表示多个量度的交集。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -37,9 +37,9 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 
 
-![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL Area]**&#x200B;可视化类似于折线图，但折线下方显示了彩色区域。 当您有多个量度并且希望显示两个或更多量度相交的区域时，请添加面积图。
+![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL 面积图]**&#x200B;可视化图表与线形图类似，只是线条下方显示了彩色区域。当您有多个量度并且希望显示两个或更多量度交叉的区域时，可添加面积图。
 
-![显示多个量度的区域可视化图表](assets/area.png)
+![显示多个量度的面积图可视化图表](assets/area.png)
 
 ## 堆叠的面积图 {#area-stacked}
 
@@ -48,18 +48,18 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >[!CONTEXTUALHELP]
 >id="workspace_areastacked_button"
 >title="堆叠的面积图"
->abstract="创建面积图可视化图表来表示多个量度的堆叠。"
+>abstract="创建面积图可视化来表示多个量度的堆叠。"
 
 <!-- markdownlint-enable MD034 -->
 
 
-![GraphAreaStacked](/help/assets/icons/GraphAreaStacked.svg) **[!UICONTROL 栈叠的区域]**&#x200B;可视化图表类似于“区域”，但每个系列都从上一个系列的顶部开始。
+![GraphAreaStacked](/help/assets/icons/GraphAreaStacked.svg) **[!UICONTROL 堆叠的面积图]**&#x200B;可视化图表就像面积图，但每个系列都从前一个系列的顶部开始。
 
-![栈叠的面积图，在上一个系列的顶部显示每个系列。](assets/area-stacked.png)
+![堆叠的面积图显示每个系列都位于前一个系列的顶部。](assets/area-stacked.png)
 
-在![设置](/help/assets/icons/Setting.svg) **[!UICONTROL 设置]**&#x200B;中使用&#x200B;**[!UICONTROL 100%栈叠]**&#x200B;选项可将图表转换为100%栈叠可视化图表。
+使用![设置](/help/assets/icons/Setting.svg)**[!UICONTROL 设置]**&#x200B;中的 **[!UICONTROL 100% 堆叠]**&#x200B;选项可将图表转化为 100% 堆叠的可视化图表。
 
-![栈叠的面积图显示100%栈叠的可视化图表。](assets/area-stacked100.png)
+![堆叠的面积图显示 100% 堆叠的可视化图表。](assets/area-stacked100.png)
 
 >[!MORELIKETHIS]
 >
