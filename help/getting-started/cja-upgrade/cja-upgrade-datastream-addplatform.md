@@ -1,6 +1,6 @@
 ---
-title: 为Customer Journey Analytics创建架构
-description: 了解从Adobe Analytics升级到Customer Journey Analytics时推荐的路径
+title: 为 Customer Journey Analytics 创建一个架构
+description: 了解从 Adobe Analytics 升级到 Customer Journey Analytics 时的推荐路径
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,11 +8,11 @@ exl-id: c6d49ca4-3d04-4c0f-accd-8666a587109d
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '274'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
-# 将平台即服务添加到您的数据流 {#upgrade-addplatform-datastream}
+# 将 Platform as a Service 添加到您的数据流 {#upgrade-addplatform-datastream}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -27,15 +27,15 @@ ht-degree: 55%
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-在完成此部分中的步骤之前，应该已经存在数据流。 数据流的创建时间和方式取决于您的Adobe Analytics实施，如下所示：
+在完成本节中的步骤之前，数据流应该已经存在。数据流的创建时间和方式取决于您的 Adobe Analytics 实施，如下所示：
 
-* 如果您的Adobe Analytics实施使用Web SDK或Web SDK扩展，则在升级过程开始之前，数据流可用于Adobe Analytics环境。
+* 如果您的 Adobe Analytics 实施使用的是 Web SDK 或 Web SDK 扩展，则在升级过程开始之前，数据流在您的 Adobe Analytics 环境中就已经可用。
 
-* 对于其他Adobe Analytics实施，创建数据流是升级过程的一部分，如[创建数据流以用于Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)中所述。
+* 对于其他 Adobe Analytics 实施，创建数据流是升级过程的一部分，如[创建用于 Customer Journey Analytics 的数据流](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)中所述。
 
-在数据流可用时，您需要添加Platform即服务：
+在数据流可用的情况下，您需要添加 Platform as a Service：
 
-1. 在 Adobe Experience Platform UI 的左边栏中，选择 [!UICONTROL 数据收藏集] 中的 **[!UICONTROL 数据流]**。
+1. 在 Adobe Experience Platform UI 中，选择左边栏内[!UICONTROL 数据收藏集]中的&#x200B;**[!UICONTROL 数据流]**。
 
 1. 选择之前配置的数据流。<!--true?-->
 

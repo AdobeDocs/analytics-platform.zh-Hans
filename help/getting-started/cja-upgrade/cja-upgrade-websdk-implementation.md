@@ -1,6 +1,6 @@
 ---
 title: 了解升级到 Customer Journey Analytics 的 Web SDK 实施选项
-description: 了解升级到Customer Journey Analytics时的Web SDK实施选项
+description: 了解升级到 Customer Journey Analytics 的 Web SDK 实施选项
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,7 +8,7 @@ exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -61,14 +61,14 @@ ht-degree: 58%
 
 {{upgrade-note}}
 
-建议的从Adobe Analytics升级到Customer Journey Analytics的过程是Experience Platform Web SDK的新实施，它是Customer Journey Analytics的首选数据收集方法。
+从 Adobe Analytics 升级到 Customer Journey Analytics 的推荐流程是对 Experience Platform Web SDK 进行新的实施，这是 Customer Journey Analytics 的首选数据收集方法。
 
-有三种受支持的方法可以使用Adobe Experience Platform Web SDK：
+使用 Adobe Experience Platform Web SDK 有三种受支持的方式：
 
-* [Web SDK标记扩展](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/extension)： Adobe建议使用此方法。 在网站上安装标记加载器，然后使用Adobe Experience Platform数据收集UI配置实施。
+* [Web SDK 标记扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/install/extension)：Adobe 建议使用此方法。在您的网站上安装一个标记加载器，然后使用 Adobe Experience Platform 数据收集 UI 来配置您的实施。
 
-* [Web SDK JavaScript库](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library)：引用CDN托管的库文件，或使用您自己的基础架构托管库文件。 调用网站上代码中的库。
+* [Web SDK JavaScript 库](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/install/library)：引用 CDN 托管的库文件，或者使用您自己的基础架构托管库文件。在您网站的代码内调用该库。
 
-* [NPM](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/npm)：使用NPM包管理器在您的站点上安装Web SDK。
+* [NPM](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/install/npm)：使用 NPM 包管理器在您的网站上安装 Web SDK。
 
-有关详细信息，请参阅《Experience Platform Web SDK指南》中的[Web SDK安装概述](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview)。
+有关详细信息，请参阅 Experience Platform Web SDK 指南中的 [Web SDK 安装概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/install/overview)。

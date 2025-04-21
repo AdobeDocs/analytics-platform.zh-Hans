@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 1a696662f10fddd42f3bbdbb79a6e735bf203bdf
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 53%
+ht-degree: 58%
 
 ---
 
@@ -33,8 +33,8 @@ ht-degree: 53%
 | 设置 | 描述 |
 | --- | --- |
 | **[!UICONTROL 如果显示，则将“无值”称为]** | 一个文本字段，通过它，可将&#x200B;**[!UICONTROL 无值]**&#x200B;维度项重命名为其他名称。 |
-| **[!UICONTROL 默认情况下不显示“无值”]** | 不在报表中显示此值。与此维度无关的指标在报表中不可见。 |
-| **[!UICONTROL 默认显示“无值”]** | 在报表中显示此值。 |
+| **[!UICONTROL 默认情况下不显示“无值”]** | 不在报告中显示此值。与此维度无关的指标在报告中不可见。 |
+| **[!UICONTROL 默认显示“无值”]** | 在报告中显示此值。 |
 | **[!UICONTROL 将“没有值”视为值]** | （数字维度不支持）将数据中的空白值替换为您在[!UICONTROL 下指定的文本如果显示，则将“无值”称为]。 例如，如果以“移动设备类型”作为维度，则可将&#x200B;**[!UICONTROL 无值]**&#x200B;项重命名为“桌面”。将此字段更改为自定义值时，将该自定义值视为合法的字符串值。因此，如果将“Red”值输入到此字段中，则字符串“Red”在数据自身中存在的任何实例均滚入您已指定的同一行项下方。 |
 
 ## 数值维度支持“无值” {#numeric}
@@ -48,5 +48,5 @@ ht-degree: 53%
 
 >[!MORELIKETHIS]
 >
->以下是一篇关于[在Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339)中处理“无值”的相关博客文章。
+>以下是一篇关于[在 Customer Journey Analytics 中处理“无值”情况](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339)的相关博客文章。
 

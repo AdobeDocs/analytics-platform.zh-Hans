@@ -1,6 +1,6 @@
 ---
-title: 为Customer Journey Analytics创建架构
-description: 了解从Adobe Analytics升级到Customer Journey Analytics时推荐的路径
+title: 为 Customer Journey Analytics 创建一个架构
+description: 了解从 Adobe Analytics 升级到 Customer Journey Analytics 时的推荐路径
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,7 +8,7 @@ exl-id: d686dcdd-08d5-4e8f-8f0d-76c8c7b0427f
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
@@ -27,11 +27,11 @@ ht-degree: 60%
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-数据集是用于存储和管理收集到Adobe Experience Platform中的数据的结构。
+数据集是用于存储和管理您在 Adobe Experience Platform 中收集的数据的结构。
 
-要创建数据集，请执行以下操作：
+要创建数据集：
 
-1. 在Adobe Experience Platform的左边栏中，选择[!UICONTROL 数据管理]中的&#x200B;**[!UICONTROL 数据集]**。
+1. 在 Adobe Experience Platform 的左边栏中，选择[!UICONTROL 数据管理]中的&#x200B;**[!UICONTROL 数据集]**。
 
 1. 选择&#x200B;**[!UICONTROL 创建数据集]**。
 
@@ -59,6 +59,6 @@ ht-degree: 60%
 
    ![为轮廓启用架构](assets/aepwebsdk-dataset-profile.png)
 
-   有关如何查看、预览、创建和删除数据集的详细信息，请参阅[数据集UI指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=zh-Hans)。 您还可以了解如何为Real-time Customer Profile启用数据集。
+   有关如何查看、预览、创建和删除数据集的更多信息，请参阅[数据集 UI 指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html)。您还可以了解如何为实时客户轮廓启用数据集。
 
 {{upgrade-final-step}}

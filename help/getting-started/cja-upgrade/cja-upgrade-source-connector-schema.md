@@ -1,6 +1,6 @@
 ---
 title: 为 Analytics 源连接器创建一个自定义架构
-description: 了解如何为Analytics源连接器创建自定义架构
+description: 学习如何为 Analytics 源连接器创建一个自定义架构
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,7 +8,7 @@ exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '587'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
@@ -28,57 +28,57 @@ ht-degree: 33%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-historical"
 >title="为历史数据创建 Analytics 源连接器"
->abstract="您可以使用 Analytics 源连接器将 Adobe Analytics 报告包数据导入到 Adobe Experience Platform。然后，这些数据可以用作 Customer Journey Analytics 中的历史数据。"
+>abstract="您可以使用 Analytics 源连接器将 Adobe Analytics 报告套件数据导入到 Adobe Experience Platform。然后，这些数据可以用作 Customer Journey Analytics 中的历史数据。"
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note-step}}
 
-## 了解Analytics Source Connector如何将历史数据引入Customer Journey Analytics
+## 了解 Analytics 源连接器如何将历史数据带入 Customer Journey Analytics
 
-您可以使用 Analytics 源连接器将 Adobe Analytics 报告包数据导入到 Adobe Experience Platform。然后，这些数据可以用作 Customer Journey Analytics 中的历史数据。
+您可以使用 Analytics 源连接器将 Adobe Analytics 报告套件数据导入到 Adobe Experience Platform。然后，这些数据可以用作 Customer Journey Analytics 中的历史数据。
 
-此过程假定您希望[创建一个自定义架构以用于您的Customer Journey Analytics Web SDK实施](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)，因为您需要一个针对贵组织和您使用的特定Platform应用程序的需求而定制的简化架构。
+此过程假设您希望[创建一个自定义架构，以便与您的 Customer Journey Analytics Web SDK 实施一起使用](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)，因为您需要一个根据您的组织需求和您使用的特定 Platform 应用程序量身定制的精简模式。
 
-要使用Analytics Source Connector将历史数据引入Customer Journey Analytics，您需要：
+要使用 Analytics 源连接器将历史数据引入 Customer Journey Analytics，您需要：
 
-1. 为Analytics源连接器创建自定义架构，如下所述。
+1. 为 Analytics 源连接器创建一个自定义架构，如下所述。
 
-1. 如果您还没有Analytics源连接器，请[创建Analytics源连接器并将字段映射到您的自定义架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)。
+1. 如果您尚未拥有 Analytics 源连接器，请[创建 Analytics 源连接器并将字段映射到您的自定义架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)。
 
    或
 
-   如果您已有Analytics源连接器，请将源连接器中的[字段映射到XDM架构](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)。
+   如果您已拥有 Analytics 源连接器，[则将字段从源连接器映射到 XDM 架构](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)。
 
-1. [将 Analytics 源连接器数据集添加到连接](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+1. [将 Analytics 源连接器数据集添加到该连接](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
 
 ## 为 Analytics 源连接器创建一个自定义架构
 
-您应该已经[为Experience Platform Web SDK实施创建了新的自定义架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)以便与Customer Journey Analytics一起使用。 此架构应包含您计划收集其数据的字段的任何字段组。
+您应该已经为您的 Experience Platform Web SDK 实施[创建了一个新的自定义架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)，以便与 Customer Journey Analytics 一起使用。该架构应包含您计划收集数据的字段的任何字段组。
 
-现在，您需要使用Web SDK架构中的这些相同的字段组，并将其添加到可以与Analytics Source Connector一起使用的新架构中。
+现在，您需要使用 Web SDK 架构中的相同字段组，并将它们添加到可与 Analytics 源连接器一起使用的新架构中。
 
-Analytics Source Connector的此架构需要包含：
+Analytics 源连接器的架构需要包含：
 
-* 您为Web SDK实施创建的自定义架构中包含的所有字段组（包括您创建的任何自定义字段组）。 (任何不属于默认字段组的自定义字段都应作为自定义字段组的一部分添加到您的Web SDK架构中。)
+* 您为 Web SDK 实施创建的自定义架构中包含的所有字段组（包括您创建的任何自定义字段组）。（任何不属于默认字段组的自定义字段都应作为自定义字段组的一部分添加到 Web SDK 架构中。）
 
-* “Adobe Analytics ExperienceEvent模板”字段组
+* Adobe Analytics ExperienceEvent 模板字段组
 
-要创建与Analytics Source Connector一起使用的自定义架构，请执行以下操作：
+要创建与 Analytics 源连接器一起使用的自定义架构，请执行以下操作：
 
-1. 在Adobe Experience Platform中，开始创建新的自定义架构，如[创建自定义架构以用于Customer Journey Analytics Web SDK实施](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)中所述。
+1. 在 Adobe Experience Platform 中，开始创建新的自定义架构，如[创建自定义架构以与 Customer Journey Analytics Web SDK 实施一同使用](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)中所述。
 
-1. 添加您为Web SDK实施创建的架构中包含的所有字段组（包括任何自定义字段组）。
+1. 添加您为 Web SDK 实施创建的架构中包含的所有字段组（包括任何自定义字段组）。
 
-1. 添加完这些字段组后，添加Adobe Analytics ExperienceEvent字段组：
+1. 添加完这些字段组后，添加 Adobe Analytics ExperienceEvent 字段组：
 
-   在&#x200B;**[!UICONTROL 字段组]**&#x200B;部分中，选择&#x200B;**[!UICONTROL 添加]**&#x200B;以添加其他字段组。
+   在&#x200B;**[!UICONTROL 字段组]**&#x200B;部分，选择&#x200B;**[!UICONTROL 添加]**&#x200B;来添加其他字段组。
 
-   ![将字段组添加到架构](assets/schema-add-field-group.png)
+   ![将字段组添加到架构中](assets/schema-add-field-group.png)
 
-1. 搜索并选择&#x200B;**[!UICONTROL Adobe Analytics ExperienceEvent模板]**&#x200B;字段组。
+1. 搜索并选择 **[!UICONTROL Adobe Analytics ExperienceEvent 模板]** 字段组。
 
-   ![添加Adobe Analytics ExperienceEvent字段组](assets/schema-experienceevent.png)
+   ![添加 Adobe Analytics ExperienceEvent 字段组](assets/schema-experienceevent.png)
 
 1. 选择&#x200B;**[!UICONTROL 添加字段组]**。
 

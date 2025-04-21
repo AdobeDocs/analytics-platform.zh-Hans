@@ -1,6 +1,6 @@
 ---
 title: 将 Analytics 源连接器数据集添加到连接
-description: 了解如何将Analytics源连接器数据集添加到连接
+description: 了解如何将 Analytics 源连接器数据集添加到连接
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,7 +8,7 @@ exl-id: 71b9da74-3597-4536-9e47-f18097dd917b
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '149'
-ht-degree: 60%
+ht-degree: 77%
 
 ---
 
@@ -27,9 +27,9 @@ ht-degree: 60%
 
 在禁用Adobe Analytics之前，请查看[中的信息评估升级到Customer Journey Analytics后何时禁用Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)。
 
-* **标记：**&#x200B;禁用Adobe Analytics扩展
+* **标记：**&#x200B;禁用 Adobe Analytics 扩展
 
-* **AppMeasurment：**&#x200B;替换AppMeasurement.js库s=newobject
+* **AppMeasurment：**&#x200B;替换 AppMeasurement.js 库 s=newobject
 
 >[!NOTE]
 >

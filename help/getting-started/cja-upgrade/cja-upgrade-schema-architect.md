@@ -1,6 +1,6 @@
 ---
 title: 构建用于 Customer Journey Analytics 的架构
-description: 了解从Adobe Analytics升级到Customer Journey Analytics时推荐的路径
+description: 了解从 Adobe Analytics 升级到 Customer Journey Analytics 时的推荐路径
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,7 +8,7 @@ exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '487'
-ht-degree: 26%
+ht-degree: 91%
 
 ---
 
@@ -25,34 +25,34 @@ ht-degree: 26%
 
 {{upgrade-note-step}}
 
-从Adobe Analytics升级到Customer Journey Analytics时，Adobe建议创建一个要与Web SDK一起使用的自定义Experience Data Model (XDM)架构。 或者，您可以使用默认的Adobe Analytics架构，该架构使用Adobe Analytics ExperienceEvent字段组。
+Adobe 建议在从 Adobe Analytics 升级到 Customer Journey Analytics 时创建自定义体验数据模型 (XDM) 架构，以与 Web SDK 一起使用。或者，您可以使用默认的 Adobe Analytics 架构，该架构使用 Adobe Analytics ExperienceEvent 字段组。
 
-自定义XDM架构允许精简架构，根据您的组织和您使用的特定Platform应用程序的需求量身定制。 与使用Adobe Analytics ExperienceEvent字段组的默认Adobe Analytics架构不同，当需要对自定义XDM架构进行更改时，您不必在数千个未使用的字段中进行筛选来查找需要更新的字段。
+自定义 XDM 架构允许根据您组织的需求和您使用的特定 Platform 应用程序定制简化的架构。与使用 Adobe Analytics ExperienceEvent 字段组的默认 Adobe Analytics 架构不同，当需要更改自定义 XDM 架构时，您不必筛选数千个未使用的字段来查找需要更新的字段。
 
-有关这些架构选项的更多信息，请参阅[选择您的Customer Journey Analytics架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)。
+有关这些架构选项的更多信息，请参阅[为 Customer Journey Analytics 选择架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)。
 
-在开始设计XDM架构时，请查看以下部分。
+在开始构建 XDM 架构时，请查看以下部分。
 
-## 避免XDM架构中的Adobe Analytics限制
+## 避开 XDM 架构中的 Adobe Analytics 限制
 
-Customer Journey Analytics的底层架构提供了比Adobe Analytics更大的灵活性。 创建新的XDM架构是解锁这种灵活性的关键方法。 当您升级到Customer Journey Analytics时，请确保避免在架构中沿用不必要的Adobe Analytics限制。
+ Customer Journey Analytics 的底层架构比 Adobe Analytics 提供了更大的灵活性。创建新的 XDM 架构是实现这种灵活性的关键方法。升级到 Customer Journey Analytics 时，请确保避免将不必要的 Adobe Analytics 限制带入您的架构中。
 
 >[!NOTE]
 >
 >以下信息尚未完成。 不久的将来就会完成。
 
-| Adobe Analytics数据架构 | XDM架构架构 |
+| Adobe Analytics 数据架构 | XDM 模式架构 |
 |---------|----------|
-| 单个量度将会添加到Analytics数据架构中。<br/>例如，在Adobe Analytics中，您对每个事件都有一个不同的eVar。 | 在数据视图而不是XDM架构中创建单个量度。 如果以后需要进行更改，这样做可以在中提供更多灵活性。<br/>例如，在Customer Journey Analytics中，您在架构中只有一个事件，并在数据视图中使用创建事件。 |
-| 创建自定义变量需要prop和eVar。 |  |
+| 将单个量度添加到 Analytics 数据架构中。<br/>例如，在 Adobe Analytics 中，每个事件都有不同的 eVar。 | 在数据视图中而不是在 XDM 架构中创建单独的量度。如果您以后需要进行更改，这样做可以提供更大的灵活性。<br/>例如，在 Customer Journey Analytics 中，您在架构中有一个单一事件，并在数据视图中使用创建事件。 |
+| 创建自定义变量需要 Props 和 eVar。 |  |
 
-## 识别您的数据团队和整个组织中的其他利益相关者
+## 确定您的数据团队以及整个组织内的其他利益相关者
 
 >[!NOTE]
 >
 >此信息尚不可用。 它将在不久的将来提供。
 
-## 考虑您在组织中使用的其他Adobe Experience Platform应用程序
+## 考虑您的组织中使用的其他 Adobe Experience Platform 应用程序
 
 >[!NOTE]
 >

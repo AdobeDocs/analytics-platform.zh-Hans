@@ -1,6 +1,6 @@
 ---
 title: 将 XDM 数据收集逻辑添加到您的标记中
-description: 了解如何将XDM数据收集逻辑添加到标记中
+description: 学习如何将 XDM 数据收集逻辑添加到您的标记中
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,7 +8,7 @@ exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '1631'
-ht-degree: 37%
+ht-degree: 100%
 
 ---
 
@@ -25,37 +25,37 @@ ht-degree: 37%
 
 {{upgrade-note-step}}
 
-在[创建标记并添加Web SDK扩展](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)后，您必须根据您希望跟踪网站并将数据发送到Adobe Experience Platform的方式，使用数据元素和规则对其进行配置。 为标记配置数据元素和规则后，即可构建和发布该标记。
+[在创建标记并添加 Web SDK 扩展后](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)，您必须根据您希望跟踪网站并将数据发送到 Adobe Experience Platform 的方式，使用数据元素和规则对其进行配置。配置标记的数据元素和规则后，即可构建和发布该标记。
 
 ## 配置数据元素
 
-数据元素是数据词典（或数据映射）的构建块。使用数据元素可跨市场营销和广告技术收集、组织和交付数据。您可以在标记中设置从数据层读取的数据元素，并可用于将数据交付到Adobe Experience Platform。 （有关数据元素的更多信息，请参阅标记文档中的[数据元素](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements)。）
+数据元素是数据字典（或数据映射）的构建块。使用数据元素可跨市场营销和广告技术收集、组织和交付数据。您可以在标记中设置从数据层读取的数据元素，并可用于将数据传送到 Adobe Experience Platform。（有关数据元素的更多信息，请参阅标记文档中的[数据元素](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/ui/data-elements)。）
 
-以下各节介绍了建议的数据元素以及您可以配置的其他常见数据元素。
+以下部分描述了建议配置的数据元素，以及您可以配置的其他常见数据元素。
 
-数据元素有多种类型。 您可能需要配置的两个常见数据元素：一个用于捕获访客在您的网站上查看的页面名称，另一个用于捕获访问您网站的每个人员的Experience Cloud ID。
+有各种类型的数据元素。建议您配置以下两个常见数据元素：一个用于捕获人们在您的网站上查看的页面名称，另一个用于捕获访问您网站的每个人的 Experience Cloud ID。
 
-配置这两个数据元素后，您可以为要捕获的特定数据配置其他数据元素。
+配置完这两个数据元素后，您可以为想要捕获的特定数据配置其他数据元素。
 
-最后，在定义所有所需的数据元素后，您需要将数据元素分配给您之前创建的[架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)。 为此，您需要定义一个XDM数据元素，以提供XDM架构的表示形式。
+最后，在定义了所有所需的数据元素后，您需要将数据元素分配给[您之前创建的架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)。为此，您需要定义一个 XDM 数据元素，它提供了 XDM 架构的表示。
 
 <!-- Assigning data elements to an XDM object. All of the available XDM objects are based on the schema -->
 
 ### 创建建议的数据元素
 
-以下各节介绍如何创建适用于大多数组织的通用数据元素。
+以下部分将会介绍如何创建适用于大多数组织的通用数据元素。
 
-#### Page name数据元素
+#### 页面名称数据元素
 
-适用于大多数组织的通用数据元素是用于捕获人员正在查看的页面名称的数据元素。
+适用于大多数组织的常见数据元素是捕获人们正在查看的页面名称的数据元素。
 
-要创建页面名称数据元素，请执行以下操作：
+若要创建页面名称数据元素：
 
-1. 使用您的Adobe ID凭据登录experience.adobe.com 。
+1. 使用您的 Adobe ID 凭据登录 experience.adobe.com。
 
-1. 在Adobe Experience Platform中，转到&#x200B;**[!UICONTROL 数据收集]** > **[!UICONTROL 标记]**。
+1. 在 Adobe Experience Platform 中，前往&#x200B;**[!UICONTROL 数据收集]** > **[!UICONTROL 标记]**。
 
-1. 在&#x200B;**[!UICONTROL 标记属性]**&#x200B;页面上，从属性列表中选择新创建的标记以将其打开。
+1. 在&#x200B;**[!UICONTROL 标记属性]**&#x200B;页面上，从属性列表中选择您新创建的标记，以将其打开。
 
 1. 选择左边栏中的&#x200B;**[!UICONTROL 数据元素]**。
 
@@ -63,9 +63,9 @@ ht-degree: 37%
 
 1. 在&#x200B;**[!UICONTROL 创建数据元素]**&#x200B;对话框中，指定以下信息：
 
-   * **[!UICONTROL 名称]**：数据元素的名称。 例如：`Page Name`。
+   * **[!UICONTROL 名称]**：数据元素的名称。例如：`Page Name`。
 
-   * **[!UICONTROL 扩展]**：从列表中选择&#x200B;**[!UICONTROL 核心]**。
+   * **[!UICONTROL 扩展]**：从列表中选择&#x200B;**[!UICONTROL 核心]**
 
    * **[!UICONTROL 数据元素类型]**：从列表中选择&#x200B;**[!UICONTROL 页面信息]**。
 
@@ -81,29 +81,29 @@ ht-degree: 37%
 
    您现在想要设置一个引用 Experience Cloud ID 的数据元素，该 ID 由 Adobe Experience Platform Web SDK 自动提供，可通过 Experience Cloud ID 服务扩展使用。
 
-1. 继续使用[ECID数据元素](#ecid-data-element)。
+1. 继续使用 [ECID 数据元素](#ecid-data-element)。
 
-#### ECID数据元素
+#### ECID 数据元素
 
-适用于大多数组织的通用数据元素是一个数据元素，可捕获访问您网站的每个人的Experience Cloud ID。
+适用于大多数组织的常见数据元素是捕获访问您网站的每个人的 Experience Cloud ID 的数据元素。
 
-要创建ECID数据元素，请执行以下操作：
+若要创建 ECID 数据元素：
 
-1. 使用您的Adobe ID凭据登录experience.adobe.com 。
+1. 使用您的 Adobe ID 凭据登录 experience.adobe.com。
 
-1. 在Adobe Experience Platform中，转到&#x200B;**[!UICONTROL 数据收集]** > **[!UICONTROL 标记]**。
+1. 在 Adobe Experience Platform 中，前往&#x200B;**[!UICONTROL 数据收集]** > **[!UICONTROL 标记]**。
 
-1. 从 [!UICONTROL 标签属性] 列表中选择您新创建的标签以将其打开。
+1. 从[!UICONTROL 标记属性]列表中选择您新创建的标记，以将其打开。
 
-1. （视情况而定）安装Experience Cloud ID服务扩展（如果尚未安装）：
+1. （视情况而定）如果尚未安装 Experience Cloud ID 服务扩展，请安装它：
 
    1. 选择左边栏中的&#x200B;**[!UICONTROL 扩展]**。
 
-   1. 默认情况下已选择&#x200B;**[!UICONTROL 已安装]**&#x200B;选项卡。 如果列出了&#x200B;**[!UICONTROL Experience Cloud ID服务]**&#x200B;磁贴，请跳至步骤5。
+   1. 默认情况下，**[!UICONTROL 已安装]** 选项卡处于选中状态。如果其中列出了 **[!UICONTROL Experience Cloud ID 服务]**&#x200B;图块，请跳至步骤 5。
 
-   1. 如果未列出&#x200B;**[!UICONTROL Experience Cloud ID服务]**&#x200B;拼贴，请选择&#x200B;**[!UICONTROL 目录]**&#x200B;选项卡。
+   1. 如果未列出 **[!UICONTROL Experience Cloud ID 服务]**&#x200B;图块，请选择&#x200B;**[!UICONTROL 目录]**&#x200B;选项卡。
 
-   1. 在搜索字段中，搜索&#x200B;**[!UICONTROL Experience Cloud ID服务]**，然后在该磁贴出现时选择该磁贴
+   1. 在搜索字段中，搜索 **[!UICONTROL Experience Cloud ID 服务]**，然后在出现图块时选择它
 
    1. 选择&#x200B;**[!UICONTROL 安装]** > **[!UICONTROL 保存]**。
 
@@ -113,11 +113,11 @@ ht-degree: 37%
 
 1. 在&#x200B;**[!UICONTROL 创建数据元素]**&#x200B;对话框中，指定以下信息：
 
-   * **[!UICONTROL 名称]**：数据元素的名称。 例如：`ECID`。
+   * **[!UICONTROL 名称]**：数据元素的名称。例如：`ECID`。
 
-   * **[!UICONTROL 扩展]**：从列表中选择&#x200B;**[!UICONTROL Experience Cloud ID服务]**。
+   * **[!UICONTROL 扩展]**：从列表中选择 **[!UICONTROL Experience Cloud ID 服务]**。
 
-   * **[!UICONTROL 数据元素类型]**：从列表中选择&#x200B;**[!UICONTROL ECID]**。
+   * **[!UICONTROL 数据元素类型]**：从列表中选择 **[!UICONTROL ECID]**。
 
      ![ECID 数据元素](assets/ecid-dataelement.png)
 
@@ -127,11 +127,11 @@ ht-degree: 37%
 
 ### 创建其他数据元素
 
-为要收集的每种类型的数据创建一个数据元素。 使用[Page name数据元素](#page-name-data-element)和[ECID数据元素](#ecid-data-element)中描述的相同过程创建每个其他数据元素。
+为您想要收集的每种类型的数据创建一个数据元素。使用[页面名称数据元素](#page-name-data-element)和 [ECID 数据元素](#ecid-data-element)中描述的相同流程来创建每个附加数据元素。
 
-您创建的数据元素在架构中应具有关联字段。
+您创建的数据元素应该在您的架构中有一个相关字段。
 
-常见数据元素因行业和业务要求而异。 考虑以下按行业划分的常见数据元素：
+常见数据元素因行业和业务需求而异。考虑以下按行业组织的常见数据元素：
 
 **零售数据元素**
 
@@ -151,25 +151,25 @@ ht-degree: 37%
 
 **医疗保健数据元素**
 
-* 提供程序ID
+* 提供商 ID
 
 * 访问日期
 
 * 处理类型
 
-在创建组织实施所需的所有数据元素后，请继续使用[XDM对象数据元素](#xdm-object-data-element)。
+在创建您的组织进行实施所需的所有数据元素后，继续使用 [XDM 对象数据元素](#xdm-object-data-element)。
 
-### XDM对象数据元素
+### XDM 对象数据元素
 
-最后，您现在希望将您创建的任何数据元素映射到您之前创建的[架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)。 为此，请定义一个可提供XDM架构表示形式的XDM对象数据元素。
+最后，您需要将创建的任何数据元素映射到[您之前创建的架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)。为此，定义一个 XDM 对象数据元素，该元素提供 XDM 架构的表示。
 
 要定义 XDM 对象数据元素：
 
-1. 使用您的Adobe ID凭据登录experience.adobe.com 。
+1. 使用您的 Adobe ID 凭据登录 experience.adobe.com。
 
-1. 在Adobe Experience Platform中，转到&#x200B;**[!UICONTROL 数据收集]** > **[!UICONTROL 标记]**。
+1. 在 Adobe Experience Platform 中，前往&#x200B;**[!UICONTROL 数据收集]** > **[!UICONTROL 标记]**。
 
-1. 从 [!UICONTROL 标签属性] 列表中选择您新创建的标签以将其打开。
+1. 从[!UICONTROL 标记属性]列表中选择您新创建的标记，以将其打开。
 
 1. 选择左边栏中的&#x200B;**[!UICONTROL 数据元素]**。
 
@@ -177,15 +177,15 @@ ht-degree: 37%
 
 1. 在&#x200B;**[!UICONTROL 创建数据元素]**&#x200B;对话框中，指定以下信息：
 
-   * **[!UICONTROL 名称]**：数据元素的名称。 例如：`XDM - Page View`。
+   * **[!UICONTROL 名称]**：数据元素的名称。例如：`XDM - Page View`。
 
-   * **[!UICONTROL 扩展]**：从列表中选择&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]**。
+   * **[!UICONTROL 扩展]**：从列表中选择 **[!UICONTROL Adobe Experience Platform Web SDK]**。
 
-   * **[!UICONTROL 数据元素类型]**：从列表中选择&#x200B;**[!UICONTROL XDM对象]**。
+   * **[!UICONTROL 数据元素类型]**：从列表中选择 **[!UICONTROL XDM 对象]**。
 
-   * **[!UICONTROL 沙盒]**：从列表中选择您的沙盒。
+   * **[!UICONTROL 沙盒]**：从列表中选择沙盒。
 
-   * **[!UICONTROL 架构]**：从列表中选择您的架构。
+   * **[!UICONTROL 架构]**：从列表中选择架构。
 
 1. 将架构中定义的 `identification > core > ecid` 属性映射到 ECID 数据元素。选择圆柱体图标可以轻松地从数据元素列表中拾取 ECID 数据元素。
 
@@ -209,17 +209,17 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。他们寻找
 
 >[!NOTE]
 >
->以下步骤是定义规则的示例，该规则会将XDM数据（包含来自其他数据元素的值）发送到Adobe Experience Platform。
+>以下步骤是定义规则的示例，该规则会将包含来自其他数据元素的值的 XDM 数据发送到 Adobe Experience Platform。
 >
 >您可以在标记中以各种方式使用规则来操作变量（使用数据元素）。
 >
->有关详细信息，请参阅[规则](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=zh-Hans)。
+>有关详细信息，请参阅[规则](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html)。
 
-1. 使用您的Adobe ID凭据登录experience.adobe.com 。
+1. 使用您的 Adobe ID 凭据登录 experience.adobe.com。
 
-1. 在Adobe Experience Platform中，转到&#x200B;**[!UICONTROL 数据收集]** > **[!UICONTROL 标记]**。
+1. 在 Adobe Experience Platform 中，前往&#x200B;**[!UICONTROL 数据收集]** > **[!UICONTROL 标记]**。
 
-1. 从 [!UICONTROL 标签属性] 列表中选择您新创建的标签以将其打开。
+1. 从[!UICONTROL 标记属性]列表中选择您新创建的标记，以将其打开。
 
 1. 选择左边栏中的&#x200B;**[!UICONTROL 规则]**。
 
@@ -227,25 +227,25 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。他们寻找
 
 1. 在&#x200B;**[!UICONTROL 创建规则]**&#x200B;对话框中，指定以下信息：
 
-   * **[!UICONTROL 名称]**：规则的名称。 例如：`Page View`。
+   * **[!UICONTROL 名称]**：规则的名称。例如：`Page View`。
 
-   * **[!UICONTROL 事件]**：选择&#x200B;**[!UICONTROL +添加]**。 然后，在&#x200B;**[!UICONTROL 事件配置]**&#x200B;对话框中，指定以下信息。 完成后，选择&#x200B;**[!UICONTROL 保留更改]**。
+   * **[!UICONTROL 事件]**：选择&#x200B;**[!UICONTROL + 添加]**。然后，在&#x200B;**[!UICONTROL 事件配置]**&#x200B;对话框中，指定以下信息。完成后，选择&#x200B;**[!UICONTROL 保留更改]**。
 
-      * **[!UICONTROL 扩展]**：从列表中选择&#x200B;**[!UICONTROL 核心]**。
+      * **[!UICONTROL 扩展]**：从列表中选择&#x200B;**[!UICONTROL 核心]**
 
-      * **[!UICONTROL 事件类型]**：从列表中选择&#x200B;**[!UICONTROL 已加载窗口]**。
+      * **[!UICONTROL 事件类型]**：从列表中选择&#x200B;**[!UICONTROL 加载的窗口]**。
 
         ![规则 – 事件配置](assets/event-windowloaded-pageview.png)
 
-   * **[!UICONTROL 操作]**：选择&#x200B;**[!UICONTROL +添加]**。 然后，在[!UICONTROL 操作配置]对话框中，指定以下信息。 完成后，选择&#x200B;**[!UICONTROL 保留更改]**。
+   * **[!UICONTROL 操作]**：选择&#x200B;**[!UICONTROL + 添加]**。然后，在[!UICONTROL 操作配置]对话框中，指定以下信息。完成后，选择&#x200B;**[!UICONTROL 保留更改]**。
 
-      * **[!UICONTROL 扩展]**：从列表中选择&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]**。
+      * **[!UICONTROL 扩展]**：从列表中选择 **[!UICONTROL Adobe Experience Platform Web SDK]**。
 
-      * **[!UICONTROL 操作类型]**：从列表中选择&#x200B;**[!UICONTROL 发送事件]**。
+      * **[!UICONTROL 操作类型]**：从列表中选择&#x200B;**[!UICONTROL 发送事件]**
 
-      * **[!UICONTROL 类型]**：从列表中选择&#x200B;**[!UICONTROL Web网页详细信息页面查看次数]**。
+      * **[!UICONTROL 类型]**：从列表中选择 **[!UICONTROL Web Webpagedetails 页面浏览量]**。
 
-      * **[!UICONTROL XDM数据]**：选择圆柱体图标，然后从数据元素列表中选择&#x200B;**[!UICONTROL XDM — 页面视图]**。
+      * **[!UICONTROL XDM 数据]**：选择圆柱体图标，然后从数据元素列表中选择 **[!UICONTROL XDM - 页面浏览量]**。
 
         ![规则 – 操作配置](assets/action-pageview-xdm.png)
 
@@ -255,25 +255,25 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。他们寻找
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
-1. 对要添加到网站中的每个规则重复此过程。
+1. 对要添加到网站的每条规则重复此过程。
 
-   有关规则的更多信息，请参阅标记文档中的[规则](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/rules)。
+   有关规则的更多信息，请参阅标记文档中的[规则](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/ui/rules)。
 
-1. 继续[生成并发布您的标记](#build-and-publish-your-tag)。
+1. 继续[构建并发布您的标记](#build-and-publish-your-tag)。
 
-## 构建和发布您的标记
+## 生成并发布标记
 
-定义数据元素和规则后，必须构建和发布标记。 创建库生成时，必须将其分配给环境。然后，将会编译该内部版本的扩展、规则和数据元素，并将这些内容放入分配的环境。每个环境都提供了一个唯一的嵌入代码，从而允许您将其分配的内部版本集成到网站中。
+在定义了数据元素和规则之后，您必须构建和发布该标记。创建库生成时，必须将其分配给环境。然后，将会编译该内部版本的扩展、规则和数据元素，并将这些内容放入分配的环境。每个环境都提供了一个唯一的嵌入代码，从而允许您将其分配的内部版本集成到网站中。
 
-Adobe Experience Platform标记支持从简单到复杂的发布工作流程，这些工作流程应该可以适应Adobe Experience Platform Web SDK的部署。 有关详细信息，请参阅 [发布概述](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) 。
+Adobe Experience Platform 标记功能支持简单到复杂的发布工作流，这些工作流应适合您部署 Adobe Experience Platform Web SDK。有关详细信息，请参阅[发布概述](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html)。
 
-要生成并发布您的标签：
+要生成并发布您的标记：
 
-1. 使用您的Adobe ID凭据登录experience.adobe.com 。
+1. 使用您的 Adobe ID 凭据登录 experience.adobe.com。
 
-1. 在Adobe Experience Platform中，转到&#x200B;**[!UICONTROL 数据收集]** > **[!UICONTROL 标记]**。
+1. 在 Adobe Experience Platform 中，前往&#x200B;**[!UICONTROL 数据收集]** > **[!UICONTROL 标记]**。
 
-1. 从 [!UICONTROL 标签属性] 列表中选择您新创建的标签以将其打开。
+1. 从[!UICONTROL 标记属性]列表中选择您新创建的标记，以将其打开。
 
 1. 从左边栏中选择&#x200B;**[!UICONTROL 发布流]**。
 
@@ -291,7 +291,7 @@ Adobe Experience Platform标记支持从简单到复杂的发布工作流程，�
 
 1. 选择&#x200B;**[!UICONTROL 保存并生成到开发]**。
 
-   您的标记已保存并为开发环境构建。 绿色圆点表示在开发环境中成功构建了标记。
+   您的标记已保存，并为您的开发环境构建。绿色圆点表示在开发环境中成功构建了标记。
 
 1. 您可以选择&#x200B;**[!UICONTROL ...]** 重建库或将库移动到临时或生产环境。
 

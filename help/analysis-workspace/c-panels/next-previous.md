@@ -1,17 +1,17 @@
 ---
 description: 显示特定维度的下一项或上一项维度面板。
-title: 下一项或上一项面板
+title: “下一项或上一项”面板
 feature: Panels
 role: User, Admin
 exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
 source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 82%
+ht-degree: 88%
 
 ---
 
-# 下一项或上一项面板 {#next-or-previous-item-panel}
+# “下一项或上一项”面板 {#next-or-previous-item-panel}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -31,7 +31,7 @@ ht-degree: 82%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_&#x200B;中的下一个或上一个项面板。<br/>_查看本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版本的[下一个或上一个项目面板](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/next-previous)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ 中的“下一项或上一项”面板。<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版本的[下一项或上一项面板](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/next-previous)。_
 
 >[!ENDSHADEBOX]
 
@@ -63,7 +63,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 | **[!UICONTROL 维度]** | 选择您想要浏览下一项或上一项的维度。 |
 | **[!UICONTROL 维度项]** | 选择位于下一项/上一项查询中心的特定维度项。 |
 | **[!UICONTROL 方向]** | 请指定您是否正在寻找[!UICONTROL 下一项]或[!UICONTROL 上一项]维度。 |
-| **[!UICONTROL 容器]** | 选择容器&#x200B;**[!UICONTROL 全局帐户]** [!BADGE B2B版本]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B版本"}、**[!UICONTROL 帐户]** [!BADGE B2B版本]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B版本"}、**[!UICONTROL 购买组]** [!BADGE B2B版本]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B版本"}、**[!UICONTROL 机会]** [!BADGE B2B版本]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey AnalyticsB2B版本"}、**[!UICONTROL 会话]**&#x200B;或&#x200B;**[!UICONTROL 人员]**&#x200B;以确定您的查询范围。 |
+| **[!UICONTROL 容器]** | 选择容器&#x200B;**[!UICONTROL 全局帐户]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}、**[!UICONTROL 帐户]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}、**[!UICONTROL 购买群]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}、**[!UICONTROL 机会]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}、**[!UICONTROL 会话]**&#x200B;或&#x200B;**[!UICONTROL 人员]**，以确定您的查询范围。 |
 
 {style="table-layout:auto"}
 
@@ -79,7 +79,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 | 可视化图表 | 描述 |
 | --- | --- |
-| **[!UICONTROL 水平条形图]** | 根据您选择的维度项列出下一项（或上一项）维度。将光标悬停在单个条形图上可突出显示自由格式表中相应的项。 |
+| **[!UICONTROL 水平条]** | 根据您选择的维度项列出下一项（或上一项）维度。将光标悬停在单个条形图上可突出显示自由格式表中相应的项。 |
 | **[!UICONTROL 摘要数字]** | 当前月份（迄今为止）所有下一项或上一项维度发生次数的高级摘要数字。 |
 | **[!UICONTROL 自由格式表]** | 根据您选择的维度项以表的格式列出下一项（或上一项）维度。例如，人们在主页或工作区页面之后（或之前）访问的最受欢迎的页面是哪些（按发生次数计算）。 |
 
@@ -88,5 +88,5 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!MORELIKETHIS]
 >
->[创建面板](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+>[创建一个面板](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
 >

@@ -1,6 +1,6 @@
 ---
 title: 了解您的 Adobe Analytics 实施情况及其对升级到 Customer Journey Analytics 的影响
-description: 了解从Adobe Analytics升级到Customer Journey Analytics时推荐的路径
+description: 了解从 Adobe Analytics 升级到 Customer Journey Analytics 时的推荐路径
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,7 +8,7 @@ exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '939'
-ht-degree: 35%
+ht-degree: 81%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 35%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-analyticsextension"
 >title="Adobe Analytics 扩展（标记）"
->abstract="标记实施，加载 Adobe Experience Platform 数据收集 (以前称为 Launch) 。标记已安装 Adobe Analytics 扩展。"
+>abstract="标记实施，加载 Adobe Experience Platform 数据收集 (以前称为 Launch)。标记已安装 Adobe Analytics 扩展。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -46,7 +46,7 @@ ht-degree: 35%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdkextension"
 >title="Web SDK 扩展（标记）"
->abstract="标记实施，加载 Adobe Experience Platform 数据收集 (以前称为 Launch) 。标记已安装 Web SDK 扩展。"
+>abstract="标记实施，加载 Adobe Experience Platform 数据收集 (以前称为 Launch)。标记已安装 Web SDK 扩展。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -97,20 +97,20 @@ ht-degree: 35%
 
 {{upgrade-note}}
 
-Adobe Analytics有多种实施方式。 升级到Customer Journey Analytics时，并非所有升级路径都可用于所有Adobe Analytics实施。 但是，无论Adobe Analytics在您的组织中如何实施，建议的升级路径都可用。
+Adobe Analytics 可以通过多种方式实施。升级到客 Customer Journey Analytics 时，并非所有升级路径都适用于所有 Adobe Analytics 实施。但是，无论您的组织如何实施 Adobe Analytics，都可以使用推荐的升级路径。
 
-请通过以下信息了解您当前的Adobe Analytics实施以及贵组织可用的升级路径。
+使用以下信息了解您当前的 Adobe Analytics 实施，以及您的组织可用的升级途径。
 
-如果您需要更具体的建议、指导或支持，请联系您的Adobe代表。
+如果您需要更具体的建议、指导或支持，请联系您的 Adobe 代表。
 
-| 现有Adobe Analytics实施 | 描述 | 可用的升级路径 |
+| 现有的 Adobe Analytics 实施 | 描述 | 可用的升级路径 |
 |---------|----------|----------|
-| AppMeasurement | AppMeasurement for JavaScript一直以来都是实施Adobe Analytics的常用方法。<p>有关此实现类型的更多信息，请参阅[使用AppMeasurement为JavaScript实施Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/js/overview)。</p> | <ul><li>[（推荐）用于持续数据收集的Experience Platform Web SDK的新实现；用于历史数据的Analytics源连接器](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDK的新实现](/help/data-ingestion/aepwebsdk.md) </li><li>[将Adobe Analytics迁移到Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)</li><li>[Analytics源连接器](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)</li></ul> |
-| Adobe Analytics 扩展（标记） | <p>Adobe Experience Platform 中的标记是一款标记管理解决方案，可让您在满足其他标记要求的同时部署 Analytics 代码。Adobe 提供了与其他解决方案和产品的集成，并允许您部署自定义代码。无需依赖组织中的开发团队，也可以完成以下所有任务，进而更新网站上的代码。</p><p>有关此实现类型的更多信息，请参阅[使用Adobe Analytics扩展实施Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/launch/overview)。</p> | <ul><li>[（推荐）用于持续数据收集的Experience Platform Web SDK的新实现；用于历史数据的Analytics源连接器](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDK的新实现](/help/data-ingestion/aepwebsdk.md) </li><li>[将Adobe Analytics迁移到Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)</li><li>[Analytics源连接器](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)</li></ul> |
-| Experience Platform Web SDK (alloy.js) | Experience Platform Web SDK是Adobe当前推荐的实施Adobe Analytics的方法。 Adobe Experience Platform Edge Network允许您将发送到多个产品的数据发送到一个集中的位置。 <p>有关此实现类型的更多信息，请参阅[使用Adobe Experience Platform Edge Network实施Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/overview)。</p> | <ul><li>[（推荐）用于持续数据收集的Experience Platform Web SDK的新实现；用于历史数据的Analytics源连接器](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDK的新实现](/help/data-ingestion/aepwebsdk.md) </li><li>[配置Adobe Analytics Web SDK实施以将数据发送到Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)</li></ul> |
-| Experience Platform Web SDK 扩展（标记） | Experience Platform Web SDK是Adobe当前推荐的为Web数据实施Adobe Analytics的方法。 Adobe Experience Platform Edge Network允许您将发送到多个产品的数据发送到一个集中的位置。 <p>有关此实现类型的详细信息，请参阅[使用Adobe Experience Platform Web SDK实施Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/overview)</p> | <ul><li>[（推荐）用于持续数据收集的Experience Platform Web SDK的新实现；用于历史数据的Analytics源连接器](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDK的新实现](/help/data-ingestion/aepwebsdk.md)</li><li>[配置Adobe Analytics Web SDK实施以将数据发送到Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)</li></ul> |
-| Experience Platform Mobile SDK | Experience Platform Mobile SDK是Adobe当前为移动数据实施Adobe Analytics推荐的方法。 Adobe Experience Platform Edge Network允许您将发送到多个产品的数据发送到一个集中的位置。<p>Adobe Experience Platform Mobile SDK有助于在您的移动应用程序中支持Adobe的Experience Cloud解决方案和服务。 </p><p>有关此实现类型的更多信息，请参阅[使用Adobe Experience Platform Mobile SDK实施Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/mobile-sdk/overview)</p> | <ul><li>[（推荐）用于持续数据收集的Experience Platform Web SDK的新实现；用于历史数据的Analytics源连接器](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDK的新实现](/help/data-ingestion/aepwebsdk.md) </li><li>[配置Adobe Analytics Web SDK实施以将数据发送到Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)</li></ul> |
-| 批量数据插入 API | 批量数据插入API (BDIA)是一种Adobe Analytics功能，允许您以文件的形式批量上传服务器调用数据，而不是使用客户端库(如AppMeasurement)。 </p><p>有关此实现类型的详细信息，请参阅[批量数据插入API](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/bulk-data-insertion/)。</p> | <ul><li>[（推荐）用于持续数据收集的Experience Platform Web SDK的新实现；用于历史数据的Analytics源连接器](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDK的新实现](/help/data-ingestion/aepwebsdk.md)</li><li>[Adobe Experience Platform Edge Network服务器API和Edge Network](/help/data-ingestion/serverapi.md)</li></ul> |
+| AppMeasurement | AppMeasurement for JavaScript 一直以来都是实施 Adobe Analytics 的常用方法。<p>有关此实施类型的详细信息，请参阅[使用 AppMeasurement for JavaScript 实施 Adobe Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/js/overview)。</p> | <ul><li>[（推荐）用于持续数据收集的Experience Platform Web SDK的新实现；用于历史数据的Analytics源连接器](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDK 的新实施 ](/help/data-ingestion/aepwebsdk.md) </li><li>[将Adobe Analytics迁移到Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)</li><li>[Analytics源连接器](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)</li></ul> |
+| Adobe Analytics 扩展（标记） | <p>Adobe Experience Platform 中的标记是一款标记管理解决方案，可让您在满足其他标记要求的同时部署 Analytics 代码。Adobe 提供了与其他解决方案和产品的集成，并允许您部署自定义代码。无需依赖组织中的开发团队，也可以完成以下所有任务，进而更新网站上的代码。</p><p>有关此实施类型的详细信息，请参阅[使用 Analytics 扩展实施 Adobe Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/launch/overview)。</p> | <ul><li>[（推荐）用于持续数据收集的Experience Platform Web SDK的新实现；用于历史数据的Analytics源连接器](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDK 的新实施 ](/help/data-ingestion/aepwebsdk.md) </li><li>[将Adobe Analytics迁移到Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)</li><li>[Analytics源连接器](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)</li></ul> |
+| Experience Platform Web SDK (alloy.js) | Experience Platform Web SDK 是 Adobe 目前推荐的实施 Adobe Analytics 的方法。Adobe Experience Platform Edge Network 允许您将发送到多个产品的数据发送到一个集中的位置。 <p>有关该实施类型的更多信息，请参阅[使用 Adobe Experience Platform Edge Network 实施 Adobe Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/overview)。</p> | <ul><li>[（推荐）用于持续数据收集的Experience Platform Web SDK的新实现；用于历史数据的Analytics源连接器](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDK 的新实施 ](/help/data-ingestion/aepwebsdk.md) </li><li>[配置Adobe Analytics Web SDK实施以将数据发送到Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)</li></ul> |
+| Experience Platform Web SDK 扩展（标记） | Experience Platform Web SDK 是 Adobe 目前推荐的针对 Web 数据实施 Adobe Analytics 的方法。Adobe Experience Platform Edge Network 允许您将发送到多个产品的数据发送到一个集中的位置。 <p>有关此实施类型的详细信息，请参阅[使用 Adobe Experience Platform Web SDK 实施 Adobe Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/web-sdk/overview)</p> | <ul><li>[（推荐）用于持续数据收集的Experience Platform Web SDK的新实现；用于历史数据的Analytics源连接器](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDK 的新实施 ](/help/data-ingestion/aepwebsdk.md)</li><li>[配置Adobe Analytics Web SDK实施以将数据发送到Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)</li></ul> |
+| Experience Platform Mobile SDK | Experience Platform Mobile SDK 是 Adobe 目前推荐的针对 Mobile 数据实施 Adobe Analytics 的方法。Adobe Experience Platform Edge Network 允许您将发送到多个产品的数据发送到一个集中的位置。<p>Adobe Experience Platform Mobile SDK 有助于在您的移动应用程序中支持 Adobe 的 Experience Cloud 解决方案和服务。 </p><p>有关此实施类型的详细信息，请参阅[使用 Adobe Experience Platform Mobile SDK 实施 Adobe Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/mobile-sdk/overview)</p> | <ul><li>[（推荐）用于持续数据收集的Experience Platform Web SDK的新实现；用于历史数据的Analytics源连接器](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDK 的新实施 ](/help/data-ingestion/aepwebsdk.md) </li><li>[配置Adobe Analytics Web SDK实施以将数据发送到Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)</li></ul> |
+| 批量数据插入 API | 批量数据插入 API（BDIA）是一种 Adobe Analytics 功能，允许您以文件的形式批量上传服务器调用数据，而不是使用客户端库（如 AppMeasurement）。 </p><p>有关此实施类型的详细信息，请参阅[批量数据插入 API](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/bulk-data-insertion/)。</p> | <ul><li>[（推荐）用于持续数据收集的Experience Platform Web SDK的新实现；用于历史数据的Analytics源连接器](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDK 的新实施 ](/help/data-ingestion/aepwebsdk.md)</li><li>[Adobe Experience Platform Edge Network 服务器 API 和 Edge Network](/help/data-ingestion/serverapi.md)</li></ul> |
 
 {style="table-layout:auto"}
 

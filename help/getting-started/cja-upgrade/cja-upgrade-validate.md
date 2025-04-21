@@ -1,6 +1,6 @@
 ---
-title: 为Customer Journey Analytics创建架构
-description: 了解从Adobe Analytics升级到Customer Journey Analytics时推荐的路径
+title: 为 Customer Journey Analytics 创建一个架构
+description: 了解从 Adobe Analytics 升级到 Customer Journey Analytics 时的推荐路径
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,7 +8,7 @@ exl-id: c0513e4c-51fb-4b4c-8450-8e6bf7dda4e7
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 41%
+ht-degree: 100%
 
 ---
 
@@ -25,17 +25,17 @@ ht-degree: 41%
 
 {{upgrade-note-step}}
 
-您可以验证连接是否处于活动状态以及数据是否流向Customer Journey Analytics中的数据视图。
+您可以验证连接是否处于活动状态，以及数据是否流向 Customer Journey Analytics 中的数据视图。
 
-1. 在Customer Journey Analytics中，选择连接选项卡。
+1. 在 Customer Journey Analytics 中，选择连接选项卡。
 
    ![列表视图](assets/list-view.png)
 
-1. 选择您配置的[连接](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)。
+1. 选择[您配置的连接](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)。
 
-   ![显示小部件和设置的所有数据集窗口](assets/conn-details.png)
+   ![显示小组件和设置的所有数据集窗口](assets/conn-details.png)
 
-1. 有关每个连接的可用详细信息，请参阅[管理连接](/help/connections/manage-connections.md)中的[连接详细信息](/help/connections/manage-connections.md#manage-connections)。
+1. 请参阅[管理连接](/help/connections/manage-connections.md)中的[连接详细信息](/help/connections/manage-connections.md#manage-connections)，了解有关每个连接的详细信息。
 
 {{upgrade-final-step}}
 

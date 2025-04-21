@@ -1,6 +1,6 @@
 ---
 title: 行为组件设置
-description: 指定维度或指标在报表中的行为方式。
+description: 指定维度或指标在报告中的行为方式。
 exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
 solution: Customer Journey Analytics
 feature: Data Views
@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 90%
 <!-- markdownlint-enable MD034 -->
 
 
-在维度和指标上均可找到行为设置。设置的可用性取决于组件类型和架构数据类型。
+在维度和量度上均可找到行为设置。设置的可用性取决于组件类型和架构数据类型。
 
 ![行为设置](../assets/behavior-settings.png)
 
@@ -32,13 +32,13 @@ ht-degree: 90%
 
 | 设置 | 描述 |
 | --- | --- |
-| [!UICONTROL 小写] | 为具有相同的值但大小写不同的行去重。如果启用，则维度的所有具有相同值的实例均被报告为小写。例如，您的数据在字符串维度中包含 `"liverpool"`、`"Liverpool"` 和 `"LIVERPOOL"` 值。如果启用了[!UICONTROL 小写]，则所有三个值合并为 `"liverpool"`。如果禁用，则将所有三个值都视为不同。 |
+| [!UICONTROL 小写] | 为具有相同的值但大小写不同的行进行重复数据删除。如果启用，则维度的所有具有相同值的实例均被报告为小写。例如，您的数据在字符串维度中包含 `"liverpool"`、`"Liverpool"` 和 `"LIVERPOOL"` 值。如果启用了[!UICONTROL 小写]，则所有三个值合并为 `"liverpool"`。如果禁用，则将所有三个值都视为不同。 |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->如果在查找数据集维度上启用[!UICONTROL 小写]，则对于同一标识符可存在多个查找值。如果发生此冲突，Customer Journey Analytics将使用第一个ASCII整理值（大写值在小写值之前）。 Adobe 建议不要在启用[!UICONTROL 小写]后使用包含相同值的查找数据集。
+>如果在查找数据集维度上启用[!UICONTROL 小写]，则对于同一身份标识符可存在多个查找值。如果发生此冲突，则 Customer Journey Analytics 会使用第一个按 ASCII 整理的值（大写值在小写值之前）。Adobe 建议不要在启用[!UICONTROL 小写]后使用包含相同值的查找数据集。
 
 ![区分大小写的维度](../assets/case-sens-workspace.png)
 

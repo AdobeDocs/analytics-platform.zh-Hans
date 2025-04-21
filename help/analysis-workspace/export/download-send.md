@@ -17,7 +17,7 @@ ht-degree: 98%
 
 如[导出概述](/help/analysis-workspace/export/export-project-overview.md)中所述，还有其他导出 Customer Journey Analytics 数据的方法。
 
-##  下载为 CSV 或 PDF 格式 {#download-project}
+## 下载为 CSV 或 PDF 格式 {#download-project}
 
 下载项目时请考虑以下事项：
 

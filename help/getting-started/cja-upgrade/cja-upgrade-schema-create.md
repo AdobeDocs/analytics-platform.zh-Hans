@@ -1,6 +1,6 @@
 ---
-title: 为Customer Journey Analytics创建自定义架构
-description: 了解如何为Customer Journey Analytics创建自定义架构
+title: 为 Customer Journey Analytics 创建自定义架构
+description: 了解如何为 Customer Journey Analytics 创建自定义架构
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,7 +8,7 @@ exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '1252'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
@@ -36,8 +36,8 @@ ht-degree: 54%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
->title="为个人资料启用您的架构"
->abstract="在您的架构中启用个人资料以供 Adobe Real-time CDP 使用。出现此步骤是因为您选择了希望与 Adobe Real-time CDP 集成。<br><br>此步骤只需单击一个复选框，因此仅需几分钟。"
+>title="为轮廓启用您的架构"
+>abstract="在您的架构中启用轮廓以供 Adobe Real-time CDP 使用。出现此步骤是因为您选择了希望与 Adobe Real-time CDP 集成。<br><br>此步骤只需单击一个复选框，因此仅需几分钟。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,54 +45,54 @@ ht-degree: 54%
 
 >[!IMPORTANT]
 >
->在开始创建自定义架构之前，请与您的数据团队和整个组织中的其他利益相关者合作，确定贵组织适用于Customer Journey Analytics和您使用的其他Adobe Experience Platform应用程序的理想架构设计。 有关详细信息，请参阅[架构您的架构以用于Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)。
+>在开始创建自定义架构之前，请与整个组织的数据团队和其他利益相关者合作一同，确定组织针对 Customer Journey Analytics 和您使用的其他 Adobe Experience Platform 应用程序的理想架构设计。有关详细信息，请参阅[构建用于 Customer Journey Analytics 的架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)。
 
-以下部分介绍了如何创建可与Customer Journey Analytics一起使用的架构。 可以使用以下架构选项：
+以下部分介绍的是如何创建可与 Customer Journey Analytics 一起使用的架构。可以使用以下架构选项：
 
-* **自定义XDM架构：**（推荐）允许根据您的组织和您使用的特定Platform应用程序的需求定制简化的架构。 任何所需的未来更改都非常简单。
+* **自定义 XDM 架构：**（推荐）允许根据您组织的需求和您使用的特定 Platform 应用程序定制简化的架构。未来所需的任何更改都很直接明了。
 
-* **使用Adobe Analytics ExperienceEvent字段组的Adobe Analytics架构：**&#x200B;需要添加数千个不需要的字段。 将来要进行任何必要的更改都比较困难。
+* **使用 Adobe Analytics ExperienceEvent 字段组的 Adobe Analytics 架构：**&#x200B;需要添加数千个不需要的字段。未来进行任何必要的更改时都会更加困难。
 
-有关这些架构选项的更多信息，请参阅[选择您的Customer Journey Analytics架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)。
+有关这些架构选项的更多信息，请参阅[为 Customer Journey Analytics 选择架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)。
 
 ## 创建架构
 
-您为Web SDK实施定义的自定义架构表示您收集到Adobe Experience Platform中的数据模型。
+您为 Web SDK 的实施定义的自定义架构代表了您在 Adobe Experience Platform 中收集的数据模型。
 
-要创建自定义架构，请执行以下操作：
+要创建自定义架构：
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-1. 在Adobe Experience Platform的左边栏中，选择[!UICONTROL 数据管理]中的&#x200B;**[!UICONTROL 架构]**。
+1. 在 Adobe Experience Platform 的左边栏中，选择[!UICONTROL 数据管理]中的&#x200B;**[!UICONTROL 架构]**。
 
 1. 选择&#x200B;**[!UICONTROL 创建架构]**。
 
-1. 在创建架构向导的&#x200B;**[!UICONTROL 选择类]**&#x200B;步骤中：
+1. 在创建架构向导的&#x200B;**[!UICONTROL 选择类别]**&#x200B;步骤中：
 
    1. 选择&#x200B;**[!UICONTROL 体验事件]**。
 
-      ![创建突出显示Experience Event的架构](assets/create-ee-schema-wizard-step-1.png)
+      ![创建突出显示体验事件的架构](assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    体验事件架构用于为配置文件的&#x200B;_行为_&#x200B;建模（如场景名称、要添加到购物车的按钮）。 个人轮廓架构用于对轮廓&#x200B;_属性_（如姓名、电子邮件、性别）建模。
+      >    Experience Event 架构用于对轮廓的&#x200B;_行为_&#x200B;进行建模（如场景名称、添加到购物车的按钮）。个人轮廓架构用于对轮廓&#x200B;_属性_（如姓名、电子邮件、性别）进行建模。
 
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
 
-1. 在[!UICONTROL 创建架构]向导的[!UICONTROL 名称和审核步骤]中：
+1. 在[!UICONTROL 创建架构]向导中的[!UICONTROL 命名和审查步骤]中：
 
-   1. 为您的架构输入&#x200B;**[!UICONTROL 架构显示名称]**&#x200B;和（可选）**[!UICONTROL 描述]**。
+   1. 输入架构的&#x200B;**[!UICONTROL 架构显示名称]**&#x200B;和（可选）**[!UICONTROL 描述]**。
 
-      ![创建架构窗口，显示架构字段的名称名称](assets/create-ee-schema-wizard-step-2.png)
+      ![创建架构窗口，其中显示架构字段的名称](assets/create-ee-schema-wizard-step-2.png)
 
    1. 选择&#x200B;**[!UICONTROL 完成]**。
 
-1. 添加所有字段组，这些字段组包含您要包含在架构中的任何字段。
+1. 添加包含您想要在架构中包括的任何字段的所有字段组。
 
-   字段组是可重用的对象和属性集合，可让您轻松扩展架构。
+   字段组是可重用的对象和属性集合，以便您轻松扩展架构。
 
-   1. 在&#x200B;**[!UICONTROL 字段组]**&#x200B;部分中，选择&#x200B;**[!UICONTROL +添加]**。
+   1. 在&#x200B;**[!UICONTROL 字段组]**&#x200B;部分中，选择 **[!UICONTROL + 添加]**。
 
       ![添加字段组](assets/add-field-group-button.png)
 
@@ -106,23 +106,23 @@ ht-degree: 54%
 
       选择&#x200B;**[!UICONTROL 返回]**&#x200B;关闭预览。
 
-   1. （可选）选择要包含的任何其他字段组。
+   1. （可选）选择您想要包括的任何其他字段组。
 
-      如果您选择使用默认的Adobe Analytics架构而不是创建自定义XDM架构，则可以立即添加Adobe Analytics ExperienceEvent字段组。 但是，Adobe建议创建自定义XDM架构，而不是添加此字段组。
+      如果您选择使用默认的 Adobe Analytics 架构，而不是创建自定义 XDM 机构，则现在可以添加 Adobe Analytics ExperienceEvent 字段组。但是，Adobe 建议创建一个自定义的 XDM 架构，而不是添加此字段组。
 
-      有关这些架构选项的更多信息，请参阅[选择您的Customer Journey Analytics架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)。
+      有关这些架构选项的更多信息，请参阅[为 Customer Journey Analytics 选择架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)。
 
    1. 选择&#x200B;**[!UICONTROL 添加字段组]**。
 
-1. （可选）如果您要在架构中包含自定义字段，请创建自定义字段组并将自定义字段添加到字段组。
+1. （可选）如果您有想要在架构中包含的自定义字段，请创建一个自定义字段组，并将自定义字段添加到该字段组中。
 
-   1. 在&#x200B;**[!UICONTROL 字段组]**&#x200B;部分中，选择&#x200B;**[!UICONTROL +添加]**。
+   1. 在&#x200B;**[!UICONTROL 字段组]**&#x200B;部分中，选择 **[!UICONTROL + 添加]**。
 
       ![添加字段组](assets/add-field-group-button.png)
 
-   1. 在[!UICONTROL 添加字段组]对话框中，选择&#x200B;**[!UICONTROL 新建字段组]**。
+   1. 在[!UICONTROL 添加字段组]对话框中，选择&#x200B;**[!UICONTROL 创建新字段组]**。
 
-   1. 指定显示名称和可选说明，然后选择&#x200B;**[!UICONTROL 添加字段组]**。
+   1. 指定一个显示名称和可选描述，然后选择&#x200B;**[!UICONTROL 添加字段组]**。
 
 1. 在[!UICONTROL 结构]面板中选择架构名称旁边的 **[!UICONTROL +]**。
 
@@ -132,11 +132,11 @@ ht-degree: 54%
 
    >[!NOTE]
    >
-   >如果该字段组不可用，请查找另一个包含标识字段的字段组。 或者[创建新的字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html)和[将新的标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field)（如`ecid`、`crmId`和其他您需要的字段）添加到该字段组，并选择该新字段组。
+   >如果该字段组不可用，请寻找另一个包含身份标识字段的字段组。或者[创建一个新的字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html)，并[将新的身份标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field)（如 `ecid`、`crmId` 以及您需要的其他字段）添加到该字段组中，并选择该新字段组。
 
    ![识别对象](assets/identification-field.png)
 
-   标识对象将标识功能添加到架构中。 对于您自己的网站，您需要使用Experience Cloud ID和电子邮件地址来识别访问您网站的用户档案。 还有许多其他属性可用于跟踪您的人员标识（例如客户ID、忠诚度ID）。
+   识别对象为您的架构添加了识别功能。在您的情况下，您希望使用 Experience Cloud ID 和电子邮件地址来识别访问您站点的轮廓。还有许多其他属性可用于跟踪您的人员身份（例如客户 ID、忠诚度 ID）。
 
    选择&#x200B;**[!UICONTROL 应用]**&#x200B;将此对象添加到您的架构中。
 
@@ -152,13 +152,13 @@ ht-degree: 54%
 
     ![将电子邮件指定为身份标识](./assets/specify-email-identity.png)
 
-   您将电子邮件地址指定为 Adobe Experience Platform Identity 服务可用于组合（拼接）轮廓行为的另一个标识。
+   您将电子邮件地址指定为 Adobe Experience Platform Identity 服务可用于组合（拼接）轮廓行为的另一个身份标识。
 
    选择 **[!UICONTROL 应用]**。您会看到电子邮件属性中显示指纹图标。
 
    选择&#x200B;**[!UICONTROL 保存]**。
 
-1. （可选）如果要将Customer Journey Analytics与RTCDP集成，请选择显示架构名称的架构根元素，然后选择&#x200B;**[!UICONTROL 配置文件]**&#x200B;开关。
+1. （可选）如果您想将 Customer Journey Analytics 与 RTCDP 集成，请选择显示架构名称的架构根元素，然后选择&#x200B;**[!UICONTROL 轮廓]**&#x200B;切换按钮。
 
    系统会提示您启用轮廓的架构。一旦启用，当数据被引入基于此架构的数据集中时，该数据将合并到实时客户轮廓。
 
@@ -166,7 +166,7 @@ ht-degree: 54%
 
    >[!IMPORTANT]
    >
-   >为配置文件启用架构后，无法为配置文件禁用该架构。
+   >为轮廓启用架构后，将无法为其禁用该架构。
 
    ![为轮廓启用架构](./assets/enable-for-profile.png)
 
@@ -182,9 +182,9 @@ ht-degree: 54%
 
    * 将 Profile Core v2 字段组添加到架构中。
 
-   * 添加基于 Profile Core v2 字段组的标识对象。
+   * 添加基于 Profile Core v2 字段组的身份标识对象。
 
-   * 将Experience Cloud ID定义为主标识符，将电子邮件定义为标识符。
+   * 将 Experience Cloud ID 定义为主要身份标识符，并将电子邮件定义为身份标识符。
 
    * 为轮廓启用架构
 
