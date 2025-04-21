@@ -5,10 +5,10 @@ exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: fef935eb7692ffb2dade28cb6a7c3d408bcac1c3
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '682'
-ht-degree: 86%
+ht-degree: 85%
 
 ---
 
@@ -56,9 +56,9 @@ Customer Journey Analytics允许您对跨渠道数据使用复杂的归因模型
 
 ![计算量度](../../assets/calc-metric.png)
 
-Attribution IQ 还让您能够过滤数据。您可以看到仅针对特定用户集的归因，例如那些使用多个设备的用户。
+Attribution IQ还允许您对数据进行分段。 您可以看到仅针对特定用户集的归因，例如那些使用多个设备的用户。
 
-![过滤器](../../assets/filter.png)
+![区段](../../assets/filter.png)
 
 您还可以将您的 Web 和应用程序收入归因于您的 Google 广告内容。该数据集的示例从由在线 Google Ads 驱动的移动应用获得的收入比从网络获得的收入更多。通过按 Web 和应用程序收入排序广告，您对于表现最好的 Google 广告的认识会有不同。
 

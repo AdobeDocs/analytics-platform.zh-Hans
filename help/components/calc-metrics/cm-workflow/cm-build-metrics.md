@@ -1,12 +1,12 @@
 ---
-description: 计算量度生成器提供一个画布，可以将维度、量度、过滤器和函数拖放到画布上，以基于容器层次结构逻辑、规则和运算符创建自定义量度。通过此集成式开发工具，您可以生成并保存简单的计算量度或复杂的高级计算量度。
+description: 计算量度生成器提供了一个画布，用于拖放维度、量度、区段和函数，以基于容器层次结构逻辑、规则和运算符创建自定义量度。通过这个集成的开发工具，可生成并保存简单的计算量度或复杂的高级计算量度。
 title: 生成计算量度
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1705'
-ht-degree: 72%
+ht-degree: 71%
 
 ---
 
@@ -156,7 +156,7 @@ Customer Journey Analytics提供了一个画布以将维度、量度、区段和
 * 要从维度添加区段容器，请执行以下操作：
 
    1. 将![维度](/help/assets/icons/Dimensions.svg) **[!UICONTROL 维度]**&#x200B;组件从“组件”面板拖放到&#x200B;**[!UICONTROL 将量度、维度、维度项、区段和/或函数拖放到此处]**。 您可以使用组件栏中的![搜索](/help/assets/icons/Search.svg)来搜索特定组件。
-   1. 在&#x200B;**[!UICONTROL 从Dimension创建过滤器]**&#x200B;弹出窗口中，定义区段的条件。 从运算符列表中选择，并选择一个值或输入一个值。例如，**[!UICONTROL 月份]****[!UICONTROL 等于]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`。
+   1. 在&#x200B;**[!UICONTROL 从Dimension创建区段]**&#x200B;弹出窗口中，定义区段的条件。 从运算符列表中选择，并选择一个值或输入一个值。例如，**[!UICONTROL 月份]****[!UICONTROL 等于]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`。
    1. 选择&#x200B;**[!UICONTROL 完成]**。区段容器已添加到&#x200B;**[!UICONTROL 定义]**。
 
 
@@ -165,11 +165,11 @@ Customer Journey Analytics提供了一个画布以将维度、量度、区段和
    * 将![分段](/help/assets/icons/Segmentation.svg) **[!UICONTROL 区段]**&#x200B;组件从组件面板拖放到&#x200B;**[!UICONTROL 将量度、维度、维度项、区段和/或函数拖放到此处]**。 您可以使用组件栏中的![搜索](/help/assets/icons/Search.svg)来搜索特定区段。
 使用区段名称自动将区段容器添加到**[!UICONTROL 定义]**。
 
-   * 将![分段](/help/assets/icons/Segmentation.svg)**[!UICONTROL 过滤器]**&#x200B;组件从组件面板拖放到通用容器上。该容器将被修改为区段容器。
+   * 将![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]**&#x200B;组件从组件面板拖放到通用容器上。 该容器将被修改为区段容器。
 
    * 从容器内选择 ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL 添加]**：
 
-      1. 选择&#x200B;**[!UICONTROL 过滤器]**。区段容器已添加到&#x200B;**[!UICONTROL 定义]**。
+      1. 选择&#x200B;**[!UICONTROL 区段]**。 区段容器已添加到&#x200B;**[!UICONTROL 定义]**。
       1. 在新区段容器中，从&#x200B;[!UICONTROL *选择……*]&#x200B;下拉菜单中选择一个区段。
 
   >[!TIP]
@@ -182,7 +182,7 @@ Customer Journey Analytics提供了一个画布以将维度、量度、区段和
 
 * 选择区段名称旁边的![关闭](/help/assets/icons/Close.svg)。
 
-有关更多详细信息和示例，请参阅[过滤的量度](metrics-with-segments.md)。
+有关更多详细信息和示例，请参阅[分段量度](metrics-with-segments.md)。
 
 #### 函数容器
 
@@ -218,6 +218,6 @@ Customer Journey Analytics提供了一个画布以将维度、量度、区段和
 >[!MORELIKETHIS]
 >
 >[使用函数](cm-using-functions.md)
->[过滤器](/help/components/filters/filters-overview.md)
+>[区段](/help/components/filters/filters-overview.md)
 >
 

@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '8844'
 ht-degree: 99%
@@ -643,7 +643,7 @@ ht-degree: 99%
 
 ## 更多信息 {#casewhen-more-info}
 
-Customer Journey Analytics 使用嵌套的容器结构，该结构仿照的是 Adobe Experience Platform 的 [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)（体验数据模型）。若要了解更多背景信息，请参阅[容器](../create-dataview.md#containers)和[过滤器容器](../../components/filters/filters-overview.md#filter-containers)。这种容器模型虽然本质上很灵活，但在使用规则生成器时会施加一些约束。
+Customer Journey Analytics 使用嵌套的容器结构，该结构仿照的是 Adobe Experience Platform 的 [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)（体验数据模型）。有关更多背景信息，请参阅[容器](../create-dataview.md#containers)和[区段容器](../../components/filters/filters-overview.md#filter-containers)。 这种容器模型虽然本质上很灵活，但在使用规则生成器时会施加一些约束。
 
 Customer Journey Analytics 使用以下默认容器模型：
 

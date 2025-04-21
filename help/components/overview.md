@@ -5,10 +5,10 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: 9393be88ab7320adb5bd046701667f638673af5e
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 93%
+ht-degree: 89%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 93%
 
 您可以管理以下组件：
 
-* [区段](filters/filters-overview.md)：生成、管理、共享强大而集中的受众区段，并将其应用于您的报表。 利用过滤器可根据特征或交互辨别一部分人。
+* [区段](filters/filters-overview.md)：生成、管理、共享强大而集中的受众区段，并将其应用于您的报表。 区段允许您根据特性或交互情况识别人员的子集。
 * [计算量度](calc-metrics/calc-metr-overview.md)：使用量度和公式作为新组件以便在报告中使用
 * [日期范围](date-ranges/create.md)：自定义和优化 Analysis Workspace 中提供的日期范围。
 * [注释](/help/components/annotations/overview.md)：向您的组织传达上下文数据的细微差别和洞察。
@@ -84,7 +84,7 @@ Analysis Workspace中的组件包括量度、维度、区段和日期范围，�
 
 2. 在搜索字段中，开始键入要在项目中使用的组件名称。
 
-   颜色和图标标识的是组件的类型。**维度**![Dimension icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)是橙色的，**筛选条件**![Filter icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg)是蓝色的，**日期范围**![Date range icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)是紫色的，**量度**![Metric icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg)是绿色的。<br/>Adobe图标![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg)表示计算量度模板或区段模板。 计算器图标 ![Calculator icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) 表示组织管理员创建的计算量度。
+   颜色和图标标识的是组件的类型。**维度** ![Dimension图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)为橙色，**区段** ![区段图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg)为蓝色，**日期范围** ![日期范围图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)为紫色，**量度** ![量度图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg)为绿色。<br/>Adobe图标![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg)表示计算量度模板或区段模板。 计算器图标 ![Calculator icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) 表示组织管理员创建的计算量度。
 
 3. 从下拉列表中选择组件。
 

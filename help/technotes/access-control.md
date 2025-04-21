@@ -6,7 +6,7 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 16%
@@ -124,7 +124,7 @@ Customer Journey Analytics由三个访问级别或三个角色控制：产品管
 | [!UICONTROL 报告工具] | [!UICONTROL Analysis Workspace 访问权限] | 允许用户访问[Analysis Workspace](/help/analysis-workspace/home.md)。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 引导式分析访问] | 允许用户访问[引导分析](/help/guided-analysis/overview.md)。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 计算量度创建] | 允许用户创建[计算量度](/help/components/calc-metrics/calc-metr-overview.md)。 用户只能标记、共享、删除、重命名、批准和取消批准其创建的计算指标或与他们共享的计算指标。 |
-| [!UICONTROL 报告工具] | [!UICONTROL 过滤器创建] | 允许用户创建[区段](/help/components/filters/filters-overview.md)。 用户只能标记、共享、删除、重命名、批准和取消批准他们创建的区段或与他们共享的区段。 |
+| [!UICONTROL 报告工具] | [!UICONTROL 区段创建] | 允许用户创建[区段](/help/components/filters/filters-overview.md)。 用户只能标记、共享、删除、重命名、批准和取消批准他们创建的区段或与他们共享的区段。 |
 | [!UICONTROL 报告工具] | [!UICONTROL Labs 访问权限] | 允许用户访问Customer Journey Analytics中的[Labs](/help/labs/labs.md)选项卡。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 创建注释] | 允许用户创建[注释](/help/components/annotations/overview.md)。 用户只能标记、共享、删除和重命名他们创建的注释或与他们共享的注释。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 受众视图] | 允许用户查看[受众](/help/components/audiences/audiences-overview.md)。 |

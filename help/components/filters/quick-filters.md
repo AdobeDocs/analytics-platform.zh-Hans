@@ -4,7 +4,7 @@ title: 快速区段
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 26%
@@ -97,7 +97,7 @@ ht-degree: 26%
 | **[!UICONTROL AND]**<br/>**[!UICONTROL OR]** | 仅当您定义多个条件时才可用。从条件之间的下拉列表 ![ChevronDown](/help/assets/icons/ChevronDown.svg) 中进行选择。该选择确定快速区段的布尔逻辑。 当有三个条件时，您不能混合逻辑。布尔逻辑是 **[!UICONTROL AND]** 或 **[!UICONTROL OR]**。 |
 | ![AddCircle](/help/assets/icons/AddCircle.svg) | 向快速区段添加另一个条件。 仅当为快速区段定义了一个或两个条件时，此按钮才可用。 |
 | **[!UICONTROL 应用]** | 将更改应用于快速区段。 |
-| **[!UICONTROL 打开生成器]** | 系统会提示您确认&#x200B;**[!UICONTROL 您确定吗？]**&#x200B;对话框。如果选择&#x200B;**[!UICONTROL 确定]**，则无法再在[快速区段生成器](#quick-filter-builder)中修改您的区段。您的快速区段已重命名为&#x200B;**[!UICONTROL 区段]**，现在左栏中的蓝色细条较深。<br/>常规[区段生成器](filter-builder.md)打开，其中包含&#x200B;**[!UICONTROL 使此区段对所有项目都可用，并将其添加到组件列表]**。 <ul><li>如果选择此选项并选择&#x200B;**[!UICONTROL 应用]**，则该区段将添加到组件面板中的![区段](/help/assets/icons/Segmentation.svg) **[!UICONTROL 筛选器]**&#x200B;组件列表中。</li><li>如果不选择此选项并选择&#x200B;**[!UICONTROL 应用]**，则该区段仍然是仅限Workspace项目的区段。</li></ul> |
+| **[!UICONTROL 打开生成器]** | 系统会提示您确认&#x200B;**[!UICONTROL 您确定吗？]**&#x200B;对话框。如果选择&#x200B;**[!UICONTROL 确定]**，则无法再在[快速区段生成器](#quick-filter-builder)中修改您的区段。您的快速区段已重命名为&#x200B;**[!UICONTROL 区段]**，现在左栏中的蓝色细条较深。<br/>常规[区段生成器](filter-builder.md)打开，其中包含&#x200B;**[!UICONTROL 使此区段对所有项目都可用，并将其添加到组件列表]**。 <ul><li>如果选择此选项并选择&#x200B;**[!UICONTROL 应用]**，则该区段将添加到组件面板中的![区段](/help/assets/icons/Segmentation.svg) **[!UICONTROL 区段]**&#x200B;组件列表中。</li><li>如果不选择此选项并选择&#x200B;**[!UICONTROL 应用]**，则该区段仍然是仅限Workspace项目的区段。</li></ul> |
 | **[!UICONTROL 取消]** | 选择以取消创建或编辑快速区段。 |
 
 ## 快速区段与区段

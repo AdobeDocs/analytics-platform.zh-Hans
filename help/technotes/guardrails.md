@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1760'
 ht-degree: 7%
@@ -187,10 +187,10 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
-| 每个过滤器的容器 | 50 | 系统强制的护栏 | 每个区段的最大容器数。 |
+| 每个区段的容器数 | 50 | 系统强制的护栏 | 每个区段的最大容器数。 |
 | 每个计算量度的量度 | 25 | 系统强制的护栏 | 每个计算量度的最大量度数。 |
-| 每个过滤器的量度和维度 | 25 | 系统强制的护栏 | 每个区段的唯一量度和维度的最大数量。 |
-| 每个过滤器的嵌套容器 | 10 | 系统强制的护栏 | 每个区段的最大嵌套容器数。 |
+| 每个区段的指标和维度 | 25 | 系统强制的护栏 | 每个区段的唯一量度和维度的最大数量。 |
+| 每个区段的嵌套容器 | 10 | 系统强制的护栏 | 每个区段的最大嵌套容器数。 |
 | 每个区段的规则 | 100 | 系统强制的护栏 | 每个区段的最大规则数。 |
 | 每个区段每个Dimension的字符串比较数 | 100 | 系统强制的护栏 | 每个区段每个维度的最大字符串比较数。 |
 | 计算量度 | 6,000 | 系统强制的护栏 | 组织的最大计算量度数。 |

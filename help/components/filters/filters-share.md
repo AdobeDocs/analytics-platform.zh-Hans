@@ -4,7 +4,7 @@ title: 共享区段
 feature: Filters
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
-source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 11%
@@ -22,9 +22,9 @@ ht-degree: 11%
 
 1. 在[区段管理器](manage-filters.md)中，选择要共享的一个或多个区段。
 1. 从操作栏中选择![共享](/help/assets/icons/ShareAlt.svg) **[!UICONTROL 共享]**。
-1. 在&#x200B;**[!UICONTROL 共享筛选器]**&#x200B;对话框中：
+1. 在&#x200B;**[!UICONTROL 共享区段]**&#x200B;对话框中：
 
-   ![共享筛选器对话框](assets/share-filter-dialog.png)
+   ![共享区段对话框](assets/share-filter-dialog.png)
 
    1. （可选）使用![搜索](/help/assets/icons/Search.svg)到&#x200B;*搜索个人或组*，并限制要与其共享区段的组或个人的列表。
 

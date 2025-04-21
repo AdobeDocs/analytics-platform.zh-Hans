@@ -4,19 +4,19 @@ description: 了解区段的用途以及如何创建简单区段。
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1428'
-ht-degree: 7%
+ht-degree: 5%
 
 ---
 
 
 # 分段概述
 
-Customer Journey Analytics允许您生成、管理、共享强大而集中的受众区段，并将其应用于您的报表。 过滤器让您可以根据用户特征或交互情况来识别人员、会话或事件的子集。 过滤器是指正式设计编码的受众洞察，您可以根据自己的特定需求来构建，然后验证、编辑并与其他团队成员共享。
+Customer Journey Analytics允许您生成、管理、共享强大而集中的受众区段，并将其应用于您的报表。 区段允许您根据特性或交互情况识别人员、会话或事件的子集。 区段设计为编码的受众洞察，您可以根据特定需求构建这些区段，然后验证、编辑并与其他团队成员共享。
 
-过滤器可以基于：
+区段可以基于：
 
 - 属性（浏览器类型、设备、访问次数、国家/地区、性别）、
 - 交互（促销活动、关键词搜索、搜索引擎）、
@@ -119,7 +119,7 @@ An example of a complex sequential segment if you want to find the persons that
 - 所有这些人员的会议。
 - 这些人员的所有事件数据。
 
-作为定义范围最广的容器，在人员容器级别生成的报表将返回符合过滤器条件的所有人员的事件和会话。 根据定义的日期范围，人员容器是最容易更改的。
+作为定义最广泛的容器，在人员容器级别生成的报表将返回适用于所有符合区段条件的人员的事件和会话。 根据定义的日期范围，人员容器是最容易更改的。
 人员容器可以包含基于人员整体历史记录的值：
 
 - 距首次购买间隔的天数。
@@ -191,7 +191,7 @@ You can use nesting between containers and between conditions within a container
 
 Traditional Analytics comes with numerous out-of-the-box templates and calculated metrics. Many of them do not apply in Customer Journey Analytics, or have to be renamed or recreated. Others depend on a solution for context-aware variables in Customer Journey Analytics.
 
-| Filter Name | Description |
+| Segment Name | Description |
 | --- | --- |
 | All Data | All Data is a required segment that gets dynamically added to reporting when a metric is added to the row of a Freeform table. |
 -->

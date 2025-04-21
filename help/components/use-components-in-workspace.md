@@ -4,7 +4,7 @@ title: 使用 Analysis Workspace 中的组件
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: 3cbf30778ff0fbb4198db16cbbabf3d62a87d384
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 7%
@@ -89,9 +89,9 @@ ht-degree: 7%
 
 有关量度的详细信息，请参阅[量度](/help/components/apply-create-metrics.md)。
 
-### 将过滤器添加到项目
+### 将区段添加到项目
 
-[筛选器](/help/components/filters/filters-overview.md)允许您根据特性或特定交互来识别人员、会话或事件的子集。
+[区段](/help/components/filters/filters-overview.md)允许您根据特性或特定交互来识别人员、会话或事件的子集。
 
 您可以通过以下任意方式在Analysis Workspace中使用区段：
 
@@ -103,7 +103,7 @@ ht-degree: 7%
 向自由格式表中的列添加区段时，区段会应用于表列中的所有内容。 您还可以添加区段作为流失可视化图表的一部分。
 
 * 在组件中使用区段
-当您定义[计算量度](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md)、[注释](/help/components/annotations/create-annotations.md#annotation-builder)甚至[区段](/help/components/filters/filter-builder.md)等组件时，可以将过滤器用作定义的一部分。
+当您定义[计算量度](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md)、[注释](/help/components/annotations/create-annotations.md#annotation-builder)甚至[区段](/help/components/filters/filter-builder.md)等组件时，可以将区段用作定义的一部分。
 
 
 ### 向项目添加日期范围

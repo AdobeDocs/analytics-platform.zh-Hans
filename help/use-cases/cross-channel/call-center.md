@@ -5,7 +5,7 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 88%
@@ -73,7 +73,7 @@ Customer Journey Analytics需要一个通用标识符来生成[组合数据集](
    * 数据集 ID 代表网站数据的“人员”容器
    * 数据集 ID 代表呼叫中心数据的“人员”容器
 2. 在 Analysis Workspace 中，将[维恩图](/help/analysis-workspace/visualizations/venn.md)可视化图表拖到工作区画布上。
-3. 将两个新创建的区段拖到&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;区域，将“人员”量度拖到&#x200B;**[!UICONTROL 添加量度]**&#x200B;区域。
+3. 将两个新创建的区段拖到&#x200B;**[!UICONTROL 添加区段]**&#x200B;区域，将“人员”量度拖到&#x200B;**[!UICONTROL 添加量度]**&#x200B;区域。
 
 生成的维恩图可视化图表将显示数据集中同时包含网站数据和呼叫中心数据的人员数。重叠区域越大，表示成功拼合的人员越多。不重叠的区域则表示仅存在于其中一个数据集而不存在于另外一个数据集的人员。
 

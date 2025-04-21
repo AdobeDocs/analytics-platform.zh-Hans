@@ -3,7 +3,7 @@ description: 通过为单个量度分段，可在同一报表中比较各个量�
 title: 分段指标
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 2f87afb9c87b0436ee40cc67a04d99d4f4f10e74
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 1%
@@ -39,7 +39,7 @@ ht-degree: 1%
 
    您的区段可能如下所示。
 
-   ![筛选器德国](assets/filter-germany.png)
+   ![区段德国](assets/filter-germany.png)
 
 1. 返回计算指标生成器，使用该区段更新计算指标。
 
@@ -52,7 +52,7 @@ ht-degree: 1%
 
    您的区段应当如下所示。
 
-   ![筛选器德国](assets/filter-not-germany.png)
+   ![区段德国](assets/filter-not-germany.png)
 
 1. 返回计算指标生成器，使用该区段更新计算指标。
 

@@ -5,10 +5,10 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+workflow-type: tm+mt
 source-wordcount: '637'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 100%
 * **[!UICONTROL 视图]**：在此分析和[净增长](net-growth.md)之间进行切换。
 * **[!UICONTROL 活动]**：您要测量的事件。由于此分析是以用户为基础的，因此在该时间段内与该事件互动一次的用户会被视为活跃用户。您可以在查询中包含一个事件。
 * **[!UICONTROL 计为]**：要应用于所选事件的计数方法。相关选项包括[!UICONTROL 用户数]和[!UICONTROL 用户百分比]。
-* **[!UICONTROL 区段]**：要按其过滤数据的区段。您可以在查询中包含一个区段。
+* **[!UICONTROL 区段]**：要作为数据分段依据的区段。 您可以在查询中包含一个区段。
 
 ### 图表设置
 

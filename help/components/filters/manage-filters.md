@@ -4,7 +4,7 @@ description: 了解如何在Customer Journey Analytics中管理区段
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
 role: User
-source-git-commit: 66ec61ea64f1265d887d4941a22e1f9757120daa
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 32%
@@ -21,7 +21,7 @@ ht-degree: 32%
 
 >[!NOTE]
 >
->您在特定Workspace项目中所创建的快速区段不会显示在[!UICONTROL 筛选器]管理器中，除非您已将区段设置为对所有项目都可用。
+>您在特定Workspace项目中所创建的快速区段不会显示在[!UICONTROL 区段]管理器中，除非您已将区段设置为对所有项目都可用。
 >
 
 ## 区段管理器
@@ -37,7 +37,7 @@ ht-degree: 32%
 | 列 | 描述 |
 | --- | --- | 
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | 选择支持![星形](/help/assets/icons/Star.svg)或取消支持![星形轮廓](/help/assets/icons/StarOutline.svg)区段。 查看[将区段标记为收藏](/help/components/filters/filters-favorite.md) |
-| **[!UICONTROL 标题和描述]** | 要编辑区段，请选择标题链接，这会打开[筛选器生成器](filter-builder.md)。 共享区段以![共享](/help/assets/icons/ShareAlt.svg)表示。 |
+| **[!UICONTROL 标题和描述]** | 要编辑区段，请选择标题链接，这会打开[区段生成器](filter-builder.md)。 共享区段以![共享](/help/assets/icons/ShareAlt.svg)表示。 |
 | **[!UICONTROL 数据视图]** | 此区段应用于的数据视图。 |
 | **[!UICONTROL 所有者]** | 区段的所有者。 作为用户，您只能看到自己拥有的区段或与您共享的注释。 |
 | **[!UICONTROL 标记]** | 此区段的标记。 |
@@ -54,7 +54,7 @@ ht-degree: 32%
 
 | 操作 | 描述 |
 |---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL 添加]** | 使用[筛选器生成器](filter-builder.md)添加其他区段。 |
+| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL 添加]** | 使用[区段生成器](filter-builder.md)添加另一个区段。 |
 | ![搜索](/help/assets/icons/Search.svg) [!UICONTROL *按标题搜索*] | 在列表中未选择区段时，使用此搜索字段搜索区段。 |
 | ![标签](/help/assets/icons/Label.svg) **[!UICONTROL 标记]** | 标记选定的区段。 在&#x200B;**[!UICONTROL 标记区段]**&#x200B;对话框中，选择或取消选择选定区段的标记。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存所选区段的标记。 有关详细信息，请参阅[标记区段](/help/components/filters/filters-tag.md)。 |
 | ![共享](/help/assets/icons/ShareAlt.svg) **[!UICONTROL 共享]** | 共享选定的区段。 在&#x200B;**[!UICONTROL 共享区段]**&#x200B;对话框中，您可以![搜索](/help/assets/icons/Search.svg) *搜索个人或组*，也可以选择&#x200B;**[!UICONTROL 组织]**&#x200B;或&#x200B;**[!UICONTROL 组]**。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存所选区段的共享详细信息。 有关详细信息，请参阅[共享区段](filters-share.md)。 |
@@ -62,7 +62,7 @@ ht-degree: 32%
 | ![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 重命名]** | 重命名单个选定的区段。 选中后，可以内联重命名区段。 |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 批准]** | 批准选定的区段。 有关详细信息，请参阅[批准区段](filters-approve.md)。 |
 | ![复制](/help/assets/icons/Copy.svg)  **[!UICONTROL 复制]** | 复制选定的区段。 已创建具有相同名称和后缀`(Copy)`的新区段。 |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL 导出为 CSV]** | 将区段导出到`Filters List.csv`文件。 |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL 导出为 CSV]** | 将区段导出到`Segments List.csv`文件。 |
 
 ### 活动区段栏
 

@@ -5,7 +5,7 @@ exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 1a696662f10fddd42f3bbdbb79a6e735bf203bdf
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 58%
@@ -43,7 +43,7 @@ ht-degree: 58%
 
 * 在数据视图中配置“无值”选项。 请注意，除&#x200B;**[!UICONTROL 将“没有值”视为值]**&#x200B;外，上述所有配置设置均受支持。
 * 在Workspace的自由格式表中，对数值维度使用&#x200B;**[!UICONTROL 包括“没有值”]**。
-* 在筛选器生成器中，使用具有数值维度的&#x200B;**[!UICONTROL 存在]**&#x200B;或&#x200B;**[!UICONTROL 不存在]**&#x200B;运算符。
+* 在区段生成器中，使用具有数值维度的&#x200B;**[!UICONTROL 存在]**&#x200B;或&#x200B;**[!UICONTROL 不存在]**&#x200B;运算符。
 
 
 >[!MORELIKETHIS]

@@ -3,10 +3,10 @@ description: 在计算量度管理器内，您可以设置一个工作流程，�
 title: 批准计算量度
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 22%
+source-wordcount: '146'
+ht-degree: 21%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 22%
 
 要取消批准计算量度，请执行以下操作：
 
-1. 在[筛选器管理器](cm-approving.md)中，选择一个或多个要取消批准的计算指标。
+1. 在[计算量度管理器](cm-approving.md)中，选择要取消批准的一个或多个计算量度。
 1. 从操作栏中选择![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 取消批准]**。
 
 

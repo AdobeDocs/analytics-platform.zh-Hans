@@ -4,7 +4,7 @@ description: 了解区段创建用户界面。
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 feature: Filters
 role: User
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 1%
@@ -23,8 +23,8 @@ ht-degree: 1%
 
 ![创建区段的方法](assets/create-filter.png)
 
-* **A**。 在主界面中，选择&#x200B;**[!UICONTROL 组件]**&#x200B;并选择&#x200B;**[!UICONTROL 区段]**。 从[[!UICONTROL 筛选器]管理器](/help/components/filters/manage-filters.md)中选择![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**]。
-* **B**。 在Workspace项目中，从“组件”左侧面板中选择![区段](/help/assets/icons/Segmentation.svg) **筛选器**&#x200B;上的![添加](/help/assets/icons/Add.svg)。
+* **A**。 在主界面中，选择&#x200B;**[!UICONTROL 组件]**&#x200B;并选择&#x200B;**[!UICONTROL 区段]**。 从[[!UICONTROL 区段]管理器](/help/components/filters/manage-filters.md)中选择![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**]。
+* **B**。 在Workspace项目中，从“组件”左侧面板中选择![区段](/help/assets/icons/Segmentation.svg) **区段**&#x200B;上的![添加](/help/assets/icons/Add.svg)。
 * **C**。 在Workspace项目中，从可视化图表的上下文菜单中，选择&#x200B;**[!UICONTROL 从所选内容创建区段]**。
 * **D**。 在Workspace项目中，从菜单中选择&#x200B;**[!UICONTROL 组件]**，然后选择&#x200B;**[!UICONTROL 创建区段]**。
 * **E**。 在Workspace项目中，使用快捷键&#x200B;**[!UICONTROL shift+cmd+e]** (macOS)或&#x200B;**[!UICONTROL shift+ctrl+e]** (Windows)。

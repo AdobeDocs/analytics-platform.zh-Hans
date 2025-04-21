@@ -3,7 +3,7 @@ description: 顺序区段是指使用THEN运算符定义区段条件顺序的区
 title: 顺序区段
 feature: Filters
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '2459'
 ht-degree: 4%
@@ -43,7 +43,7 @@ ht-degree: 4%
 
 
 
-生成顺序区段的基础知识与使用[区段生成器](filter-builder.md)生成常规区段的基础知识没有区别。 您可以使用[定义生成器](filter-builder.md#definition-builder)来构造区段定义。 在该构造中，使用组件、容器、运算符和逻辑。 只要在主定义或您在[定义生成器](filter-builder.md#definition-builder)中使用的任何容器中选择&#x200B;**[!UICONTROL Then]**&#x200B;运算符，常规区段就会成为顺序过滤器。
+生成顺序区段的基础知识与使用[区段生成器](filter-builder.md)生成常规区段的基础知识没有区别。 您可以使用[定义生成器](filter-builder.md#definition-builder)来构造区段定义。 在该构造中，使用组件、容器、运算符和逻辑。 只要在主定义或您在[定义生成器](filter-builder.md#definition-builder)中使用的任何容器中选择&#x200B;**[!UICONTROL Then]**&#x200B;运算符，常规区段就会变成顺序区段。
 
 ### 示例
 

@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
-source-wordcount: '2457'
-ht-degree: 96%
+source-wordcount: '2441'
+ht-degree: 94%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 96%
 | **列表变量/列表属性** | 全面支持。Customer Journey Analytics 使用 XDM 并支持无限的字符串数组，其使用方式与 listVars 类似。 |
 | **促销 eVar** | 通过[绑定维度和绑定量度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=zh-hans#binding-dimension)提供全面支持 |
 | **量度** | 全面支持；Customer Journey Analytics 利用体验数据模型 (XDM)，支持无限量的量度，并且不会与 Adobe Analytics 的自定义成功事件绑定。我们已对 Adobe Analytics 中的一些标准量度名称进行了重命名，例如：“访客”=“人员”、“访问”=“会话”、“点击”=“事件”。 |
-| **将项目、筛选条件和计算量度从 Adobe Analytics 迁移到 Customer Journey Analytics** | 全面支持。 |
+| **将项目、区段和计算量度从Adobe Analytics迁移到Customer Journey Analytics** | 全面支持。 |
 | **移动记分卡/仪表板** | 全面支持 |
 | **面板** | 完全支持以下面板：空白面板、属性、自由形式、快速洞察以及下一个或上一个项目。 |
 | **PDF 导出** | 全面支持 |
@@ -73,7 +73,7 @@ ht-degree: 96%
 | **报告时处理** | 全面支持；Customer Journey Analytics 完全依赖于“报告时间处理”。 |
 | **报告 API 访问** | 全面支持；通过 [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/) 提供。 |
 | **计划报告/项目** | 全面支持 |
-| **区段** | 全面支持。现在称为“筛选条件”- 请注意，传统 Analysis Workspace 中的任何现有区段都不会移植到 Customer Journey Analytics。 |
+| **区段** | 全面支持。（以前称为“过滤器”。） |
 | **流媒体收藏集** | 使用作为 Workspace 中的“同时观看媒体的人数”面板和“媒体播放耗时”面板一部分的 Analytics Source Connector 即可获取流媒体数据。 |
 | **汇总级数据源** | 全面支持 |
 | **虚拟报告包** | 全面支持。现在称为[数据视图](/help/data-views/create-dataview.md)。 |
@@ -109,7 +109,7 @@ ht-degree: 96%
 | **Products 变量** | 在 Experience Platform 中，用户可在数据集架构中使用对象数组满足此用例。在 Customer Journey Analytics 中，客户可使用任意数量的产品变量，而不像在 Adobe Analytics 中那样只能使用一个变量。 |
 | **项目共享** | 仅在 Customer Journey Analytics 的用户之间支持项目共享功能 - 在 Customer Journey Analytics 与传统 Analysis Workspace 之间无项目共享。 |
 | **Report Builder** | 通过一个新的 Office 365 Excel 插件支持此项。 |
-| **用户权限/数据访问控制** | Customer Journey Analytics 区分 [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) 产品管理员、产品配置文件管理员和用户。只有产品管理员可创建/更新/删除其他用户创建的连接、项目、筛选条件或计算量度，而产品管理员和产品配置文件管理员均可编辑数据视图。其他用户权限可用于创建计算量度、区段或注释等。 |
+| **用户权限/数据访问控制** | Customer Journey Analytics 区分 [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) 产品管理员、产品配置文件管理员和用户。只有产品管理员可以创建/更新/删除由其他用户创建的连接、项目、区段或计算量度，而产品管理员和产品配置文件管理员可以编辑数据视图。 其他用户权限可用于创建计算量度、区段或注释等。 |
 | **可视化内容** | 除地图可视化内容外，支持所有 Workspace 可视化内容。 |
 | **跨设备/跨渠道拼合** | 支持包含身份标识信息的事件数据集。请参阅[拼合](../../stitching/overview.md)。 |
 

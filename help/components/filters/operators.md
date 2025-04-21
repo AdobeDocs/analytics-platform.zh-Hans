@@ -4,7 +4,7 @@ description: 确定组件如何与区段中的值交互。
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
 feature: Filters
 role: User
-source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 54%
@@ -13,7 +13,7 @@ ht-degree: 54%
 
 # 运算符
 
-通过筛选器生成器，您可以使用选定的运算符比较和约束组件的值。 运算符分为两个类别：[[!UICONTROL 标准]](#standard-operators)和[[!UICONTROL 非重复计数]](#distinct-count-operators)。
+通过区段生成器，您可以使用选定的运算符比较和约束组件的值。 运算符分为两个类别：[[!UICONTROL 标准]](#standard-operators)和[[!UICONTROL 非重复计数]](#distinct-count-operators)。
 
 ## 标准运算符
 
