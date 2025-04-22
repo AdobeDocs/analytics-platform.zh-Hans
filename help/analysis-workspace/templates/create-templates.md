@@ -4,10 +4,10 @@ title: 使用模板
 feature: Workspace Basics
 role: User, Admin
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: b98cd4dc73e57f9ae5704a5d9e529ae3b518576c
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '1850'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -110,7 +110,7 @@ ht-degree: 84%
 
 1. 选择过滤器图标来过滤项目列表。
 
-1. 在过滤器边栏中，选择 **OTHER FILTERS**，然后选择&#x200B;**公司模板**。
+1. 在筛选器边栏中，选择&#x200B;**[!UICONTROL 其他筛选器]**，然后选择&#x200B;**[!UICONTROL 公司模板]**。
 
    显示公司模板的列表。不会显示所有常规项目（除非已固定）。
 

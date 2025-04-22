@@ -4,7 +4,7 @@ title: 生成区段
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 463ddbba0bd6765bd5fde1b2098c5603b48b10e4
 workflow-type: tm+mt
 source-wordcount: '1571'
 ht-degree: 45%
@@ -20,17 +20,10 @@ ht-degree: 45%
 >title="创建受众"
 >abstract="受众可以从区段创建并与Adobe Experience Platform共享以进行激活。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_filters_datapreview"
 >title="数据预览"
 >abstract="将此区段的数据与数据视图的数据进行比较。 预览百分比基于&#x200B;**过去 90 天**&#x200B;数据视图中的总数。<br><br/>如果未加载预览，则您的连接有可能仍在进行回填。"
-
-<!-- markdownlint-enable MD034 -->
-
 
 
 **[!UICONTROL 区段生成器]**&#x200B;对话框用于创建新区段或编辑现有区段。 该对话框的标题为&#x200B;**[!UICONTROL 新建区段]**&#x200B;或&#x200B;**[!UICONTROL 编辑区段]**，您通过[[!UICONTROL 区段]管理器](/help/components/filters/manage-filters.md)创建或管理这些区段。
@@ -155,32 +148,23 @@ ht-degree: 45%
 
 ## 归因 {#attribution}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_repeating"
 >title="重复"
 >abstract="包括维度的实例及持续值。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_instance"
 >title="实例"
 >abstract="包括维度的实例及持续值。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_nonrepeatinginstance"
 >title="非重复实例"
 >abstract="包括维度的独特（非重复）实例"
 
-<!-- markdownlint-enable MD034 -->
 
 
 
@@ -218,3 +202,5 @@ ht-degree: 45%
 有关使用三个区段的事件的示例报表如下所示：
 
 ![区段归因模型结果](assets/filter-dimension-attribution-results.png)
+
+<!-- markdownlint-enable MD034 -->

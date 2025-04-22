@@ -4,9 +4,9 @@ description: 了解区段的用途以及如何创建简单区段。
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 463ddbba0bd6765bd5fde1b2098c5603b48b10e4
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1474'
 ht-degree: 5%
 
 ---
@@ -160,6 +160,14 @@ An example of a complex sequential segment if you want to find the persons that
 - 列表属性
 - 列表维度
 - 促销维度（在事件上下文中）
+
+
+
+### B2B容器
+
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+
+当您有权访问[Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md)时，区段中使用的其他容器可用。 您可以在[B2B概念和功能](/help/getting-started/cja-b2b-concepts-features.md)中找到有关使用这些其他容器的更多详细信息。
 
 
 ### 逻辑组容器

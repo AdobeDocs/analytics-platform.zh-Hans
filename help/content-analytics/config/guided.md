@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '2580'
 ht-degree: 46%
@@ -138,7 +138,7 @@ ht-degree: 46%
    您可以执行以下操作：
 
    * 要搜索特定数据视图，请使用![搜索](/help/assets/icons/Search.svg)字段。
-   * 要划分可用数据视图的列表，请选择![显示区段](/help/assets/icons/Filter.svg)。 您可以在[!UICONTROL 连接]、[!UICONTROL 所有者]和[!UICONTROL 沙盒]上筛选列表。<br/>使用![隐藏](/help/assets/icons/Filter.svg) **[!UICONTROL 隐藏区段]**&#x200B;来隐藏区段窗格。
+   * 要筛选可用数据视图的列表，请选择![显示筛选器](/help/assets/icons/Filter.svg)。 您可以在[!UICONTROL 连接]、[!UICONTROL 所有者]和[!UICONTROL 沙盒]上筛选列表。<br/>使用![隐藏](/help/assets/icons/Filter.svg) **[!UICONTROL 隐藏区段]**&#x200B;来隐藏区段窗格。
    * 要定义在表格中显示哪些列，请选择![列设置](/help/assets/icons/ColumnSetting.svg)。选择要在&#x200B;**[!UICONTROL 自定义表格]**&#x200B;对话框中显示哪些列，然后选择&#x200B;**[!UICONTROL 应用]**，以应用更改。
 
 1. 选择![SelectBox](/help/assets/icons/SelectBox.svg)您要使用的数据视图。

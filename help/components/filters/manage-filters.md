@@ -4,10 +4,10 @@ description: 了解如何在Customer Journey Analytics中管理区段
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '884'
-ht-degree: 32%
+ht-degree: 33%
 
 ---
 
@@ -64,12 +64,12 @@ ht-degree: 32%
 | ![复制](/help/assets/icons/Copy.svg)  **[!UICONTROL 复制]** | 复制选定的区段。 已创建具有相同名称和后缀`(Copy)`的新区段。 |
 | ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL 导出为 CSV]** | 将区段导出到`Segments List.csv`文件。 |
 
-### 活动区段栏
+### 活动过滤器栏
 
-区段栏➌显示从区段面板应用于区段列表（如果有）的活动区段。 您可以使用![CrossSize75](/help/assets/icons/CrossSize75.svg)快速删除区段。 如果指定了多个区段，您可以使用&#x200B;**[!UICONTROL 删除所有]**&#x200B;来删除所有区段。
+过滤器栏➌显示从过滤器面板应用于区段列表（如果有）的活动区段。 您可以使用 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 快速移除过滤器。如果指定了多个筛选器，则可以使用&#x200B;**[!UICONTROL 删除所有]**&#x200B;来删除所有筛选器。
 
-### 区段面板
+### 过滤器面板
 
-您可以使用左侧面板![区段](/help/assets/icons/Filter.svg) **[!UICONTROL 筛选器]**&#x200B;对区段列表进行分段➍。 区段面板显示区段的类型和遵循特定区段的区段数。 选择![区段](/help/assets/icons/Filter.svg)切换区段面板的显示。
+您可以使用![筛选器](/help/assets/icons/Filter.svg) **[!UICONTROL 筛选器]**&#x200B;左侧面板筛选区段列表➍。 过滤器面板显示过滤器的类型和遵循特定过滤器的区段数。 选择![筛选器](/help/assets/icons/Filter.svg)切换筛选器面板的显示。
 
 有关详细信息，请参阅[筛选区段列表](filters-filter.md)。

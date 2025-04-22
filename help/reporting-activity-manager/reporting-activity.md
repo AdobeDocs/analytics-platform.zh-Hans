@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 role: Admin
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '2043'
 ht-degree: 99%
@@ -51,7 +51,7 @@ ht-degree: 99%
 
    ![显示报告队列的报告活动](assets/reporting-activity-monthly.png)
 
-1. （可选）您可以搜索或划分连接列表：
+1. （可选）您可以搜索或筛选连接列表：
 
    * 使用搜索字段可搜索特定连接。开始键入连接名称或 ID，连接列表会随着您的键入而更新。
 

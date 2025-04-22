@@ -4,9 +4,9 @@ title: 管理警报
 feature: Workspace Basics
 role: User, Admin
 exl-id: 174c3ebd-a77b-4403-ae9a-bb0cff4bcca6
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: a85efff8720d8fdf02b0d1290fedf17654be48e3
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '600'
 ht-degree: 21%
 
 ---
@@ -73,7 +73,9 @@ ht-degree: 21%
 
 您可以使用![筛选器](/help/assets/icons/Filter.svg) **[!UICONTROL 筛选器]**&#x200B;左侧面板筛选警报列表➍。 过滤器面板显示过滤器的类型和遵循特定过滤器的警报数。
 
-{{filterspanel}}
+
+1. 选择![Filter](/help/assets/icons/Filter.svg)以打开筛选面板。如果警报列表需要更多空间，您可以再次选择![筛选器](/help/assets/icons/Filter.svg)以关闭面板。
+1. 从任何可用的过滤器部分中选择过滤器。
 
 
 #### 标记过滤器部分

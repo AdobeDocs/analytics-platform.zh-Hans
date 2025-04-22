@@ -4,7 +4,7 @@ title: 查看组件信息
 feature: Components
 role: User, Admin
 exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '1217'
 ht-degree: 64%
@@ -33,7 +33,7 @@ ht-degree: 64%
 
    组件的类型可以通过颜色和图标来识别。**维度** ![维度图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) 是橙色的，**区段** ![区段图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) 是蓝色的，**日期范围** ![日期范围图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) 是紫色的，**指标** ![指标图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) 是绿色的。Adobe图标![Adobe图标](assets/default-calc-metric-icon.png)表示计算量度模板或区段模板，而计算器图标![计算器图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg)表示由您组织中的Analytics管理员创建的计算量度。
 
-1. （可选）选择&#x200B;**筛选器**&#x200B;图标![数据字典筛选器图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)，然后选择以下任何区段选项来划分组件列表：
+1. （可选）选择&#x200B;**筛选器**&#x200B;图标![数据字典筛选器图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)，然后选择以下任何区段选项来筛选组件列表：
 
    | 选项 | 功能 |
    |---------|----------|

@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: be615a45a68b47f95517992cc4268a887ac1110a
+source-git-commit: 463ddbba0bd6765bd5fde1b2098c5603b48b10e4
 workflow-type: tm+mt
-source-wordcount: '14697'
+source-wordcount: '14696'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 2%
    * [单个维度排名](#single-dimension-ranked)
    * [多个维度排名](#multiple-dimension-ranked)
    * [对非重复维度值计数](#count-distinct-dimension-values)
-   * [使用日期范围名称进行分段](#use-date-range-names-to-segment)
+   * [使用日期范围名称进行筛选](#use-date-range-names-to-filter)
    * [使用区段名称进行分段](#use-segment-names-to-segment)
    * [使用维度值进行分段](#use-dimension-values-to-segment)
    * [排序](#sort)
@@ -1737,17 +1737,17 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 
 
-## 使用筛选器名称进行筛选
+## 使用区段名称进行分段
 
-在此使用案例中，您希望对已在Customer Journey Analytics中定义的渔产品类别使用现有过滤器。 筛选并报告2023年1月期间的产品名称和发生次数（事件）。
+在此使用案例中，您需要将现有区段用于Customer Journey Analytics中定义的渔业产品类别。 细分并报告2023年1月期间的产品名称和发生次数（事件）。
 
 +++ Customer Journey Analytics
 
-检查要在Customer Journey Analytics中使用的过滤器。
+检查要在Customer Journey Analytics中使用的区段。
 
 ![Customer Journey Analytics使用筛选器名称进行筛选](assets/cja-fishing-products.png){zoomable="yes"}
 
-然后，您可以在用例的示例&#x200B;**[!UICONTROL 使用日期范围名称进行筛选]**&#x200B;面板中使用该筛选器：
+然后，您可以在用例的示例&#x200B;**[!UICONTROL 使用区段名称将区段分段]**&#x200B;面板中使用该区段：
 
 ![Customer Journey Analytics非重复计数值](assets/cja-using-filter-names-to-filter.png){zoomable="yes"}
 
@@ -1901,18 +1901,18 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 +++
 
 
-## 使用维度值进行筛选
+## 使用维度值进行分段
 
-您使用&#x200B;**[!UICONTROL 产品类别]**&#x200B;的动态&#x200B;**[!UICONTROL 打猎]**值来筛选打猎类别中的产品。 或者，对于那些不支持动态检索产品类别值的BI工具，您可以在Customer Journey Analytics中创建一个新的过滤器，以过滤来自打猎产品类别的产品。
-然后，您要使用新过滤器报告2023年1月狩猎类别中产品的产品名称和发生次数（事件）。
+您使用&#x200B;**[!UICONTROL 产品类别]**&#x200B;的动态&#x200B;**[!UICONTROL 打猎]**值来细分打猎类别中的产品。 或者，对于那些不支持动态检索产品类别值的BI工具，您可以在Customer Journey Analytics中创建一个新区段，以细分来自打猎产品类别的产品。
+然后，您希望使用新区段来报告2023年1月狩猎类别中产品的产品名称和发生次数（事件）。
 
 +++ Customer Journey Analytics
 
-在Customer Journey Analytics中使用&#x200B;**[!UICONTROL 标题]** `Hunting Products`创建新筛选器。
+在Customer Journey Analytics中创建具有&#x200B;**[!UICONTROL 标题]** `Hunting Products`的新区段。
 
-![Customer Journey Analytics使用Dimension值进行筛选](assets/cja-hunting-products.png){zoomable="yes"}
+![Customer Journey Analytics使用Dimension值划分区段](assets/cja-hunting-products.png){zoomable="yes"}
 
-然后，您可以在用例的示例&#x200B;**[!UICONTROL 使用Dimension值来筛选]**&#x200B;面板中使用该筛选器：
+然后，您可以在示例&#x200B;**[!UICONTROL 使用Dimension值过滤]**&#x200B;面板中针对用例使用该区段：
 
 ![Customer Journey Analytics非重复计数值](assets/cja-using-dimension-values-to-filter.png){zoomable="yes"}
 

@@ -1,8 +1,8 @@
 ---
-source-git-commit: be615a45a68b47f95517992cc4268a887ac1110a
+source-git-commit: a85efff8720d8fdf02b0d1290fedf17654be48e3
 workflow-type: tm+mt
-source-wordcount: '3796'
-ht-degree: 31%
+source-wordcount: '3759'
+ht-degree: 30%
 
 ---
 # 片段
@@ -58,12 +58,6 @@ ht-degree: 31%
 ## 视频演示Adobe Analytics {#videoaa}
 
 *此视频演示了使用Adobe Analytics的功能。 然而，该功能在 Customer Journey Analytics 中同样可用。了解Adobe Analytics和Customer Journey Analytics之间的术语差异（例如，“访问次数”与“会话数”）。*
-
-
-## 过滤器面板 {#filterspanel}
-
-1. 选择![Filter](/help/assets/icons/Filter.svg)以打开筛选面板。如果“筛选”列表需要更多空间，您可以再次选择![Filter](/help/assets/icons/Filter.svg)来关闭该面板。
-1. 从任何可用的过滤器部分中选择过滤器。
 
 
 ## 标记过滤器部分 {#tagfiltersection}

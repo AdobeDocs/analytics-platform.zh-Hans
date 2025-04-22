@@ -6,7 +6,7 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 16%
@@ -159,8 +159,8 @@ Customer Journey Analytics由三个访问级别或三个角色控制：产品管
 
 您希望向用户授予仅从一天开始访问数据的权限。 以下是如何限制对这些特定行的访问：
 
-1. 在特定数据视图的[!UICONTROL 设置]中创建筛选器，其中[!UICONTROL 天]等于您希望他们访问数据的日期。 有关详细信息，请参阅[创建数据视图](/help/data-views/create-dataview.md#settings-filters)。
-1. 保存数据视图，该视图会将过滤器应用于基础连接中数据集的数据部分。 任何不符合过滤器定义的行都会自动从数据视图中排除，并且在使用此数据视图时不可用于Analysis Workspace。
+1. 在特定数据视图的[!UICONTROL 设置]中创建区段，其中[!UICONTROL 天]等于您希望他们访问数据的日期。 有关详细信息，请参阅[创建数据视图](/help/data-views/create-dataview.md#settings-filters)。
+1. 保存数据视图，这会将区段应用于基础连接中数据集的数据部分。 任何不符合区段定义的行都会自动从数据视图中排除，并且在使用此数据视图时不可用于Analysis Workspace。
 1. 在Admin Console中创建新的[产品配置文件](#product-profile-admin-role)，将用户添加到产品配置文件，并仅将此特定数据视图添加到产品配置文件。
 
 ### 值级访问控制
