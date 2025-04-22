@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
+source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
 workflow-type: tm+mt
 source-wordcount: '2580'
 ht-degree: 46%
@@ -13,9 +13,6 @@ ht-degree: 46%
 ---
 
 # 内容分析的引导式配置
-
-{{release-limited-testing}}
-
 
 引导式配置可帮助您快速轻松地配置内容分析。引导式配置会使用向导来设置相关要求，以便为您的组织自动配置内容分析。在&#x200B;**[!UICONTROL 配置]**&#x200B;屏幕中，您可以创建新的配置或编辑现有配置。
 

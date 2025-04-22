@@ -1,11 +1,11 @@
 ---
 title: Content Analytics组件
-description: 有关特定Content Analytics组件的详细信息，例如维度、（计算）量度和派生字段
+description: 有关特定Content Analytics组件的详细信息，例如维度、（计算）指标和派生字段
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
-source-git-commit: 0731eadd403ecb428d36492b83351aa0e696b41f
+source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 22%
@@ -14,9 +14,7 @@ ht-degree: 22%
 
 # Content Analytics组件
 
-{{release-limited-testing}}
-
-Content Analytics可将以下类别的组件(维度、（计算）量度、派生字段)添加到Customer Journey Analytics中已可用的组件中：
+Content Analytics将以下类别的组件(维度、（计算）量度、派生字段)添加到Customer Journey Analytics中已可用的组件：
 
 * [体验元数据](#experience-metadata)
 * [体验属性](#experience-attributes)

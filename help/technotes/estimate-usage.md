@@ -4,10 +4,10 @@ description: 介绍如何管理Customer Journey Analytics使用情况。
 role: Admin
 feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 5311106f486a30dbc7f06b3ef60dc7e666d2fe03
+source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 42%
+source-wordcount: '258'
+ht-degree: 37%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 42%
 
 如果您保留默认值（未选中），则保留期将被 Adobe Experience Platform 数据保留设置所取代。如果您在Experience Platform中有25个月的数据，则Customer Journey Analytics将通过回填获取25个月的数据。 如果您在 Platform 中删除了其中的 10 个月，则 Customer Journey Analytics 将会保留剩余的 15 个月。
 
-数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此轮廓或查找数据集不存在滚动数据窗口设置。如果您的连接包括任何配置文件或查找数据集，则由于它们与事件数据集相连，因此会根据您在事件数据集时间戳上的数据保留设置将数据保留在Customer Journey Analytics中。
+数据保留基于时间戳，仅适用于事件数据集和摘要数据集。 由于没有适用的时间戳，因此轮廓或查找数据集不存在滚动数据窗口设置。如果您的连接包括任何配置文件或查找数据集，则由于它们与事件数据集相连，因此会根据您在事件数据集时间戳上的数据保留设置将数据保留在Customer Journey Analytics中。
 
 
 >[!MORELIKETHIS]
