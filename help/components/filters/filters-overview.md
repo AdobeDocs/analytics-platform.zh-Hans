@@ -2,9 +2,9 @@
 title: 分段概述
 description: 了解区段的用途以及如何创建简单区段。
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-feature: Filters
+feature: Filters, Segments
 role: User
-source-git-commit: 463ddbba0bd6765bd5fde1b2098c5603b48b10e4
+source-git-commit: 85a22d1e57925f0512ce0cc658cfba1008339d91
 workflow-type: tm+mt
 source-wordcount: '1474'
 ht-degree: 5%

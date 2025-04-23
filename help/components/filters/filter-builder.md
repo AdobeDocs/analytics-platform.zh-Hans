@@ -1,10 +1,10 @@
 ---
 description: 区段生成器提供了一个画布以将指标维度、区段和事件拖放到其中，从而根据容器层次结构逻辑、规则和运算符划分人员。 通过使用该集成开发工具，您可以生成和保存简单或复杂的区段，以确定跨访问和事件的人员属性和操作。
 title: 生成区段
-feature: Filters
+feature: Filters, Segments
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 463ddbba0bd6765bd5fde1b2098c5603b48b10e4
+source-git-commit: 85a22d1e57925f0512ce0cc658cfba1008339d91
 workflow-type: tm+mt
 source-wordcount: '1571'
 ht-degree: 45%

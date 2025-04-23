@@ -1,10 +1,10 @@
 ---
 description: 在Analysis Workspace for Customer Journey Analytics中使用快速区段
 title: 快速区段
-feature: Workspace Basics
+feature: Workspace Basics, Filters, Segments
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: e9516455416c0e5f228d62d17dee5ef87c368337
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 26%
