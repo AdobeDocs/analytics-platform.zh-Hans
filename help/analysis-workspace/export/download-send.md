@@ -4,7 +4,7 @@ title: 下载 Customer Journey Analytics 数据
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: 9a15cb4d771892ff656fe72b8e53d890a3fd99f7
 workflow-type: tm+mt
 source-wordcount: '1194'
 ht-degree: 98%
@@ -94,7 +94,7 @@ ht-degree: 98%
 * 在每列上方以过滤器形式应用表格中所选维度&#x200B;**上面**&#x200B;的细分。
 * 删除表格中所选维度&#x200B;**下面**&#x200B;的细分。
 
-在上面的示例中，以过滤器形式应用了面板过滤器（新访客客户）及其上面的组件（营销渠道 = 电子邮件），从而下载了页面项目，并从下载的 CSV 中删除了下面的组件（移动设备类型）。
+在上面的示例中，以过滤器形式应用了面板区段（新访客客户）及其上面的组件（营销渠道 = 电子邮件），从而下载了页面项目，并且从下载的 CSV 中删除了下面的组件（移动设备类型）。
 
 ![下载的 .csv 文件在 Excel 中打开。](assets/downloaded-file.png)
 

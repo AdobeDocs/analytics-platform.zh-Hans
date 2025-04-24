@@ -4,10 +4,10 @@ title: 排序和过滤表格
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: 9a15cb4d771892ff656fe72b8e53d890a3fd99f7
 workflow-type: tm+mt
 source-wordcount: '844'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Analysis Workspace 中的过滤器可帮助您显示最重要的信息。
 
 - 排除表中的特定行
 - 在表中应用过滤器
-- 使用受众过滤器
+- 使用受众区段
 
 请务必阅读每种方法对[自由格式表总计](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)的影响。
 
@@ -96,7 +96,7 @@ Note: this option does not seem to work. AN-338422
 
 ### 使用受众区段
 
-请参阅[过滤器概述](/help/components/filters/filters-overview.md)，了解更多详情。
+有关详细信息，请参阅[分段概述](/help/components/filters/filters-overview.md)。
 
 ## 对表格进行排序
 
