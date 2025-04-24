@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: b880c63d22cec0e7de4f313eef72e86f41e85eca
 workflow-type: tm+mt
-source-wordcount: '4716'
-ht-degree: 94%
+source-wordcount: '5057'
+ht-degree: 91%
 
 ---
 
@@ -21,9 +21,16 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | --- | --- |
 | **2025 年 4 月** | |
 | 查看和管理使用情况 | 重新编写了有关如何[查看](/help/connections/manage-connections.md#usage)和[管理](/help/technotes/estimate-usage.md) Customer Journey Analytics 使用情况的文档 |
-| 内容分析 | Adobe Content Analytics 的[文档](/help/content-analytics/content-analytics.md)。Content Analytics 可让您快速轻松地调查大量内容数据，以了解趋势、发现异常、识别内容疲劳并从内容曝光度中获取见解。 |
+| Adobe Content Analytics | [Content Analytics](/help/content-analytics/content-analytics.md)允许您快速轻松地调查大量内容数据，以发现趋势、发现异常、识别内容疲劳并从内容曝光中获得见解。 |
+| 更新了用于将流媒体数据收集到Adobe Experience Platform中的XDM字段 | 在将流媒体数据收集到Adobe Experience Platform时，不应再使用流媒体参数文档的“XDM字段路径”标题下方显示的XDM字段路径。 这些字段路径可在以下页面上找到并标记为“已弃用”：[音频和视频参数](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters)、[广告参数](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/ad-parameters)、[章节参数](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters)、[播放器状态参数](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/player-state-parameters)和[质量参数](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/quality-parameters)。 |
+| 媒体收集：Adobe Source Connector 更新了新的媒体报告 XDM | Analytics 源连接器会自动将 Adobe Analytics 中的流媒体数据映射到 Web SDK 使用的相同字段。以前，数据被映射到旧位置和新位置，但未来只使用新位置。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
+| **术语更改：将“过滤器”改为“区段”** | 此前，Adobe Customer Journey Analytics 将区段称为“过滤器”。该术语现已与 Adobe Analytics 保持一致。“过滤器”现在改称为“区段”。（显然，搜索筛选器仍称为“筛选器”。）用户界面和文档已更新。 |
 | **2025 年 3 月** | |
 | Quantum Metric 用例 | 添加了从 [Quantum Metric](/help/use-cases/third-party/quantum-metric/qm-overview.md) 收集数据的用例。 |
+| 产品使用情况模板 | 新的工作区模板允许您查看 Customer Journey Analytics 产品在您的组织内如何使用。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/use-templates)。 |
+| Customer Journey Analytics 升级指南 | 让您生成从 Adobe Analytics 升级到 Customer Journey Analytics 的分步指南。要开始生成自定义指南，请登录到[!DNL Customer Journey Analytics]，然后在&#x200B;**[!UICONTROL Customer Journey Analytics]**&#x200B;选项卡上选择&#x200B;**[!UICONTROL 升级到Workspace]**。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations#recommended-upgrade-steps-for-most-organizations) |
+| 更新了数值维度上的“无值”行项目 | 对于数值维度，此更新允许您在区段中使用“无值”维度项，并在报表中对“无值”行项执行划分。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/no-value-options#numeric) |
+| 媒体收集：Adobe Source Connector 更新了新的媒体报告 XDM | Analytics 源连接器会自动将 Adobe Analytics 中的流媒体数据映射到 Web SDK 使用的相同字段。以前，数据被映射到旧位置和新位置，但未来只使用新位置。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
 | **2025 年 2 月** |  |
 | 媒体收集：Adobe Source Connector 更新了新的媒体报告 XDM | Analytics 源连接器会自动[将 Adobe Analytics 中的流媒体数据映射](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=en)到 Web SDK 使用的相同字段。以前，数据被映射到旧位置和新位置，但未来只使用新位置。 |
 | BI 扩展 - 扩展支持 | Customer Journey Analytics BI 扩展现在[支持 Looker、Jupyter Notebook 和 R Studio](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=en)。 |
@@ -194,7 +201,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 日期 | 更新描述 |
 | --- | --- |
 | **2022 年 12 月** |  |
-| 2022 年 12 月 16 日 | 关于[管理 Customer Journey Analytics 数据使用](/help/technotes/estimate-usage.md)的新主题。 |
+| 2022 年 12 月 16 日 | 关于[管理 Customer Journey Analytics 数据使用情况](/help/technotes/estimate-usage.md)的新主题。 |
 | **2022 年 10 月** | |
 | 2022 年 10 月 | 关于[计划项目密码保护](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=zh-hans#password)的新主题。 此功能支持 [HIPAA 准备工作](https://www.adobe.com/cn/trust/compliance/hipaa-ready.html)。 |
 | 2022 年 10 月 | 关于[客户管理的密钥](/help/privacy/cmk.md)新主题。 此功能支持 [HIPAA 准备工作](https://www.adobe.com/cn/trust/compliance/hipaa-ready.html)。 |
