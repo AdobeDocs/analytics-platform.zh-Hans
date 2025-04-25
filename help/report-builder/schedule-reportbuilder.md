@@ -1,25 +1,25 @@
 ---
 title: 如何在 Customer Journey Analytics 中使用 Report Builder 安排工作簿
-description: 了解如何在Report Builder中使用计划功能
+description: 了解如何使用Report Builder中的计划功能
 role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 6dd8a70293161ff58361953a7e48a98834b7abe0
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 84%
+source-wordcount: '1105'
+ht-degree: 13%
 
 ---
 
 # 计划工作簿
 
-保存工作簿并完成分析后，您可以使用计划功能轻松地与团队中的其他人共享您的工作簿。计划功能允许您创建计划，自动刷新工作簿中的数据，并在特定日期和时间将 Excel 工作簿。xlsx 文件作为附件通过电子邮件发送给指定的受众。设置时间表可为收件人自动提供定期更新。您还可以使用计划功能将工作簿发送一次，而无需计划自动更新。
+保存工作簿并完成分析后，可以使用计划功能与团队中的其他人共享工作簿。 利用计划功能，可创建自动刷新工作簿中数据的计划。 在特定日期和时间将Excel工作簿文件作为附件发送到指定的受众。 设置计划会自动为收件人提供定期更新。 您还可以使用计划功能将工作簿发送一次，而无需计划自动更新。
 
-您可以为单个工作簿创建多个计划。例如，您可以每天向您的团队发送一份工作簿，也可以通过创建两个不同的时间表每周一次将工作簿发送给您的经理。
+您可以为单个工作簿创建多个计划。例如，您创建了两个计划，每周向团队和经理发送一次工作簿。
 
-计划功能还允许您为工作簿设置密码保护并编辑以前计划的工作簿。
+使用计划功能，您还可以为工作簿设置密码保护并编辑以前计划的工作簿。
 
 
 >[!BEGINSHADEBOX]
@@ -31,104 +31,152 @@ ht-degree: 84%
 
 ## 计划工作簿
 
-使用 Report Builder 中心中的计划任务按钮快速创建计划，以便您可以自动将工作簿 Excel 文件（.xlsx）分发给个人或组。
+要计划工作簿，请执行以下操作：
 
-1. 单击 Report Builder 中心的计划按钮。
+1. 选择Report Builder中心中的&#x200B;**[!UICONTROL 计划]**&#x200B;以创建计划，以便您将工作簿Excel文件(.xlsx)自动分发给个人或组。
 
-   ![单击“计划”按钮创建计划。](./assets/schedule-button.png){width="55%"}
+   ![选择“计划”按钮以创建计划。](./assets/schedule.png){zoomable="yes"}
 
-1. 单击计划工作簿或左上角的加号按钮以创建新的计划工作簿。
+1. 选择&#x200B;**[!UICONTROL 计划工作簿]**&#x200B;或![添加](/help/assets/icons/Add.svg)以创建新的计划工作簿。
 
-   ![计划工作簿窗口。](./assets/schedule-workbook.png){width="55%"}
+   ![计划工作簿窗口。](./assets/schedule-workbook.png){zoomable="yes"}
 
    计划窗格显示有关工作簿的一些预定义信息，例如工作簿名称和修改工作簿的最后日期。
 
-   ![计划窗格。](./assets/schedule-pane.png){width="55%"}
+### 文件
 
-1. （可选）输入文件名。
+在&#x200B;**[!UICONTROL 文件]**&#x200B;部分中，您提供了文件类型、名称和密码的详细信息以保护文件。
 
-   工作簿文件名默认为工作簿的名称，但您可以根据需要更改它。如果您要将同一个工作簿发送给多个受众，并且想为它命名对特定受众更友好一点的名称，您可以更改名称。
+![计划窗格。](./assets/schedule-pane.png){zoomable="yes"}
 
-1. （可选）选择&#x200B;**将时间戳附加到文件名**。
+1. 使用![TableSelect](/help/assets/icons/TableSelect.svg)选择当前工作簿（如果尚未选择）。
 
-   您可以将时间戳附加到文件名以标识工作簿的更新日期。这有助于快速查看在特定日期发送了哪个版本的工作簿。**文件名预览**&#x200B;显示分发工作簿时工作簿文件名将如何显示在电子邮件中。时间戳格式为 YYYY-MM-DD。
+1. （可选）输入&#x200B;**[!UICONTROL 文件名]**。
 
-1. （可选）选择&#x200B;**.zip 压缩**&#x200B;压缩文件并设置密码保护。
+   工作簿文件名默认为工作簿的名称，但您可以根据需要更改文件名。
 
-   当您做出此选择时，系统会提示您输入密码以打开文件。如果您担心数据安全并希望使用密码保护工作簿，这将很有帮助。使用密码保护文件需要您选择 **.zip 压缩**。密码必须至少包含 8 个字符，并包含数字和特殊字符。
+1. 选择&#x200B;**[!UICONTROL 文件类型]**。
 
-   ![在“密码保护工作簿”字段中输入密码。](./assets/zip-compression.png){width="55%"}
+   * **[!UICONTROL Excel]**
+   * **[!UICONTROL PDF]**
+   * **[!UICONTROL CSV]**
 
-1. **输入收件人**。您可以输入组织中认可的人员姓名，也可以输入组织内部或外部人员的电子邮件地址。
+   选择&#x200B;**[!UICONTROL CSV]**&#x200B;时，请注意，计划工作簿是作为zip附件发送的。 某些公司电子邮件管理部门可能会阻止包含zip附件的电子邮件。 您会看到相应的警告。
+
+1. （可选）选择&#x200B;**[!UICONTROL 将时间戳附加到文件名]**。
+
+   您可以将时间戳附加到文件名以标识工作簿的更新日期。时间戳有助于查看在特定日期发送的工作簿版本。 选中后，您可以选择以下选项：
+
+   * **[!UICONTROL ISO日期格式]**，这会导致`YYYY-MM-DD`被附加到文件名中。
+   * **[!UICONTROL ISO日期格式+时间戳]**，这会导致`YYYY-MM-DD_HH-MM-SS`被附加到文件名中。
+
+<!-- Does no longer seem to be an option? 
+1. (Optional) Select **.zip compression** to compress the file and set up password protection on the file.
+
+    When you make this selection, you're prompted to enter a password to open the file. This is helpful if you have concerns about data security and you want to password protect the workbook. Protecting the file with a password requires you to select **.zip compression**. The password must be at least 8 characters and contain a number and a special character.
+
+    ![Enter a password in the Password protect the workbook field.](./assets/zip-compression.png){zoomable="yes"}{width="55%"}
+-->
+
+1. 在&#x200B;**[!UICONTROL 密码保护工作簿]**&#x200B;中输入密码。 有效密码至少需要8个字符、一个数字和一个特殊字符。 选择![VisibilityOff](/help/assets/icons/VisibilityOff.svg)以显示密码，选择![Visibility](/help/assets/icons/Visibility.svg)隐藏密码（默认）。
+
+
+### 电子邮件
+
+在&#x200B;**[!UICONTROL 电子邮件]**&#x200B;部分中，提供电子邮件的收件人、主题和描述。
+
+![计划电子邮件设置](assets/schedule-email.png){zoomable="yes"}
+
+1. **输入收件人**。您可以输入组织中可识别的人员的姓名。 或者，您可以输入组织外部人员的电子邮件地址。
 
 1. 输入电子邮件的&#x200B;**主题**&#x200B;和对收件人的描述。主题默认为工作簿文件名，但您可以根据需要修改主题。您可以在描述部分添加详细信息。
 
-   ![在“主题”字段中输入主题。](./assets/recipients-subject.png){width="55%"}
+1. 您可以选择在&#x200B;**[!UICONTROL 描述]**&#x200B;文本区域中输入描述。
 
-1. 设置计划选项以设置您希望将工作簿通过电子邮件发送给收件人的日期和时间。
 
-   选择开始和结束日期以及时间范围。可以是今天的日期或将来的日期。
+### 计划
 
-   从下拉菜单中，设置&#x200B;**运算符**。您可以将频率设置为每小时、每天、每周、每月或每年的特定日期。例如，您可以设置一个时间表，在每个月的第一个星期日晚上发送工作簿，这样您的收件人将在星期一早上第一时间在他们的收件箱中收到电子邮件。
+在&#x200B;**[!UICONTROL 计划]**&#x200B;部分中，您可以定义将带有工作簿的电子邮件发送给收件人的计划。
 
-   ![选择计划报告的频率。](./assets/frequency.png){width="55%"}
+![计划定义](assets/schedule-enable.png){zoomable="yes"}
 
-1. 设置计划后，点击&#x200B;**按计划发送**。
+1. 选择&#x200B;**[!UICONTROL 显示计划选项]**&#x200B;以定义计划。
 
-   ![单击“按计划发送”。](./assets/send-on-schedule.png){width="55%"}
+1. 输入从&#x200B;]**开始的**[!UICONTROL &#x200B;开始日期。 或者，选择![日历](/help/assets/icons/Calendar.svg)以从日历中选择开始日期。
 
-   您将在 Report Builder 中心底部看到一个确认提示，计划的工作簿列在“工作簿”选项卡下。
+1. 在&#x200B;**[!UICONTROL 结束日期]**&#x200B;中输入结束日期。 或者，选择![日历](/help/assets/icons/Calendar.svg)以从日历中选择结束日期。
 
-   ![确认toast](./assets/confirmation-toast.png){width="55%"}
+1. 选择&#x200B;**[!UICONTROL 频率]**。 根据所选的频率，您还有其他选项。 请参阅下表。
 
-## 仅发送一次工作簿
+   | 频率 | 选项 |
+   |---|---|
+   | **[!UICONTROL 每小时发送]** | 为&#x200B;**[!UICONTROL 发送间隔小时数]**&#x200B;输入一个值。 |
+   | **[!UICONTROL 每日发送]** | 选择&#x200B;**[!UICONTROL 每日频率]**：**[!UICONTROL 每天发送]**、**[!UICONTROL 每个工作日发送]**&#x200B;或&#x200B;**[!UICONTROL 自定义频率]**。<br/>如果您选择&#x200B;**[!UICONTROL 自定义频率]**，请为&#x200B;**[!UICONTROL 发送间隔天数]**&#x200B;输入一个值。 |
+   | **[!UICONTROL 每周发送]** | 为&#x200B;**[!UICONTROL 发送间隔周数]**&#x200B;输入一个值。 并选择一周中的&#x200B;**[!UICONTROL 天]**。 |
+   | **[!UICONTROL 按星期几发送月报表]** | 选择&#x200B;**[!UICONTROL 周中某天]**&#x200B;和&#x200B;**[!UICONTROL 月中某周]**。 |
+   | **[!UICONTROL 每月按月发送]** | 从&#x200B;**[!UICONTROL 发送日期]**&#x200B;中选择一个值。 |
+   | **[!UICONTROL 按月份中的日期每年发送]** | 选择&#x200B;**[!UICONTROL 周中日]**，选择&#x200B;**[!UICONTROL 月中周]**，然后选择&#x200B;**[!UICONTROL 月中月]**。 |
+   | **[!UICONTROL 按特定日期每年发送]** | 选择&#x200B;**[!UICONTROL 月份]**&#x200B;并从&#x200B;**[!UICONTROL 发送日期]**&#x200B;中选择一个值。 |
 
-您也可以只发送一次工作簿。
+### 发送
 
-1. 取消选中 **显示计划选项**
+要发送工作簿，请执行以下操作：
 
-   ![单击“取消选中显示计划选项”可一次性发送工作簿。](./assets/send-now.png){width="40%"}
+* 如果您尚未使用&#x200B;**[!UICONTROL 显示计划选项]**&#x200B;定义计划，请选择&#x200B;**[!UICONTROL 立即发送]**&#x200B;以立即通过电子邮件发送工作簿。
+* 如果您使用&#x200B;**[!UICONTROL 显示计划选项]**&#x200B;定义了计划，请选择&#x200B;**[!UICONTROL 按计划发送]**，以使用您定义的计划通过电子邮件发送工作簿。
 
-1. 单击&#x200B;**立即发送**。
+在这两种情况下，您都会在Report Builder中心底部看到一个确认吐司。
 
-## 查看和编辑计划的工作簿
+若要取消发送工作簿，请选择&#x200B;**[!UICONTROL 取消]**。
 
-您可以在“工作簿”选项卡下的一个位置查看和管理所有计划的工作簿。
 
-1. 在 Report Builder 中心的计划部分中，单击工作簿选项卡。使用此视图查看所有计划工作簿的列表。
+## 查看和管理计划的工作簿
 
-1. 选择一个工作簿显示的多个工具允许您编辑工作簿、编辑计划任务、暂停和重新启动计划任务、下载计划任务报表或删除计划任务。
+您可以在&#x200B;**[!UICONTROL 工作簿]**&#x200B;选项卡中查看和管理所有计划工作簿。
 
-   ![显示工作簿计划图标的屏幕截图。](./assets/schedule-icons.png){width="20%"}
+1. 在Report Builder中心选择&#x200B;**[!UICONTROL 计划]**
 
-* （可选）单击铅笔图标以编辑工作簿计划任务。
+1. 选择&#x200B;**[!UICONTROL 工作簿]**&#x200B;选项卡。 您会看到所有计划工作簿的列表。
 
-* （可选）单击时钟图标以查看每个计划任务的历史记录。
+   ![计划的工作簿](assets/scheduled-workbooks.png){zoomable="yes"}
 
-* （可选）单击暂停图标以暂停并重新启动分发计划任务。 如果您需要在发送工作簿之前修改工作簿，这将很有帮助。当您想要重新启动分发时，请再次单击暂停图标。
+   您可以将鼠标悬停在图标上以查看已计划工作簿的状态。
 
-* （可选）单击下载图标以下载工作簿计划任务的副本。
+   使用![搜索](/help/assets/icons/Search.svg)搜索特定的计划工作簿。
+使用![ColumnSetting](/help/assets/icons/ColumnSetting.svg)定义要显示的列。
 
-* （可选）单击垃圾桶以删除计划任务。
+1. 选择一个或多个工作簿。
 
-  ![显示计划任务列表的屏幕截图。](./assets/selected-workbook.png){width="40%"}
+   ![计划选定的工作簿](assets/scheduled-workbooks-selected.png){zoomable="yes"}
 
-## 查看计划任务的状态
+   可以使用以下选项：
 
-历史记录视图允许您查看每个计划任务的状态。有一个单独的行记录每个计划任务的状态更改。在下面显示的示例中，*新工时计划*&#x200B;于 1 月 5 日下午 3:04 启动。到下午 3:05，它已成功刷新并发送给收件人。下一个工作簿&#x200B;*错误的工作簿*&#x200B;在刷新过程中遇到错误。如果工作簿发送失败，“历史记录”选项卡会通过显示过程中发生错误的位置来帮助您进行故障排除。在这种情况下，可能是由于某些数据块错误（可能是缺少组件）导致工作簿无法成功刷新。
+   | 选项 | 描述 |
+   |---|---|
+   | ![编辑](/help/assets/icons/Edit.svg) | 编辑所选工作簿的计划。 |
+   | ![历史记录](/help/assets/icons/History.svg) | 显示所选工作簿的历史记录。 |
+   | ![暂停](/help/assets/icons/Pause.svg) | 暂停所选工作簿的计划。 |
+   | ![播放](/help/assets/icons/Play.svg) | 恢复所选工作簿的计划。 |
+   | ![下载](/help/assets/icons/Download.svg) | 将所选工作簿下载到新工作簿中。 |
+   | ![删除](/help/assets/icons/Delete.svg) | 删除所选工作簿的计划。 |
 
-绿色复选标记表示工作簿已成功发送。红色三角形中的感叹号表示发生了错误。
 
-您可以通过单击搜索栏右侧的列设置图标来选择要在历史记录选项卡中显示的列。
+## 计划工作簿的历史记录和状态
 
-![单击列图标以显示或隐藏特定列。](./assets/history.png){width="55%"}
+您可以在&#x200B;**[!UICONTROL 历史记录]**&#x200B;选项卡中查看计划工作簿的历史记录和状态。
 
-您可以通过转到工作簿选项卡、选择工作簿并单击历史记录图标来过滤历史记录以仅查看单个计划工作簿的历史记录。
+1. 在Report Builder中心中选择&#x200B;**[!UICONTROL 计划]**。
 
-您还可以从“工作簿”选项卡查看特定工作簿的历史记录。在工作簿选项卡上，选择工作簿，然后单击历史记录图标。
+1. 选择&#x200B;**[!UICONTROL 历史记录]**&#x200B;选项卡。 您会看到所有计划工作簿的列表。
 
-![工作簿历史记录图标](./assets/history2.png){width="55%"}
+   ![计划的历史记录](assets/scheduled-workbooks-history.png){zoomable="yes"}
 
-然后工作簿过滤器将出现在历史记录的顶部。要再次查看所有计划任务的历史记录，请单击过滤器旁边的 x。
+   使用![搜索](/help/assets/icons/Search.svg)搜索列表中的特定工作簿。
+使用![ColumnSetting](/help/assets/icons/ColumnSetting.svg)定义要显示的列。
 
-![工作簿筛选器。](./assets/history3.png){width="55%"}
+   使用&#x200B;**[!UICONTROL 历史记录]**&#x200B;选项卡可复查每个计划任务的状态。 单独的行记录每个计划任务的状态更改。
+
+   * ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg)表示工作簿已成功发送。
+   * ![AlertRed](/help/assets/icons/AlertRed.svg)表示出现错误。
+
+或者，您也可以在&#x200B;**[!UICONTROL 工作簿]**&#x200B;选项卡中为一个或多个选定的工作簿选择![历史记录](/help/assets/icons/History.svg)。 此操作显示&#x200B;**[!UICONTROL History]**&#x200B;选项卡，该选项卡具有按您的选择过滤的列表。 选择![CrossSize75](/help/assets/icons/CrossSize75.svg)以删除筛选器。

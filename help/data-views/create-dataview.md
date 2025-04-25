@@ -5,7 +5,7 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+source-git-commit: 6213cc09800743a1f7cb4828d71ee731439e529b
 workflow-type: tm+mt
 source-wordcount: '2125'
 ht-degree: 85%
@@ -190,7 +190,7 @@ ht-degree: 85%
 
 ### 设置（区段）
 
-您可以添加应用于整个数据视图的区段。 此区段适用于您在Workspace中运行的任何报表。 将区段从左边栏中的列表拖到[!UICONTROL 添加区段]字段。
+您可以添加应用于整个数据视图的区段。 此区段适用于您在Workspace中运行的任何报表。 将区段从左边栏中的列表拖到&#x200B;**[!UICONTROL 添加区段]**&#x200B;字段。
 
 ### 会话设置
 

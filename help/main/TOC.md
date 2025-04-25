@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 2581ff0f3d149a539ed730a941ce1b6288e9af0e
+source-git-commit: 9794779894fbecb433c16d108c555c5f81a4b491
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 85%
+ht-degree: 84%
 
 ---
 
@@ -167,7 +167,7 @@ ht-degree: 85%
       + [打开项目](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [项目中的注释](/help/analysis-workspace/build-workspace-project/comment-projects.md)
       + [保存项目](../analysis-workspace/build-workspace-project/save-projects.md)
-      + Workspace中的文件夹 {#workspace-folders}
+      + Workspace 中的文件夹 {#workspace-folders}
          + [关于文件夹](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [创建文件夹和子文件夹](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [管理文件夹](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
@@ -383,17 +383,17 @@ ht-degree: 85%
 
 + Report Builder {#cja-reportbuilder}
    + [概述](../report-builder/report-buider-overview.md)
-   + [Report Builder 设置](../report-builder/report-builder-setup.md)
+   + [Report Builder设置](../report-builder/report-builder-setup.md)
    + [创建数据块](../report-builder/create-a-data-block.md)
-   + [Report Builder 中心](../report-builder/report-builder-hub.md)
+   + [Report Builder中心](../report-builder/report-builder-hub.md)
    + [选择数据视图](../report-builder/select-data-view.md)
    + [选择日期范围](../report-builder/select-date-range.md)
-   + [使用片段工作](../report-builder/work-with-filters.md)
-   + [筛选维度](../report-builder/filter-dimensions.md)
+   + [使用区段](../report-builder/work-with-filters.md)
+   + [过滤器维度](../report-builder/filter-dimensions.md)
    + [管理数据块](../report-builder/manage-reportbuilder.md)
    + [计划工作簿](../report-builder/schedule-reportbuilder.md)
-   + [限制标签](../report-builder/restricted-labels.md)
-   + [Report Builder 设置](../report-builder/report-builder-settings.md)
+   + [受限制的标签](../report-builder/restricted-labels.md)
+   + [Report Builder设置](../report-builder/report-builder-settings.md)
 
 + 报告活动管理器 {#reporting-activity-manager}
    + [概述](../reporting-activity-manager/reporting-activity-overview.md)

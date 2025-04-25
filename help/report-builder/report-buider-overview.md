@@ -6,24 +6,26 @@ feature: Report Builder
 type: Documentation
 exl-id: 56bf524d-101d-4745-b2ef-9770c50f6774
 solution: Customer Journey Analytics
-source-git-commit: bd2d45b9fc1380e36fc482ee75e1a9bbb26f6cf7
+source-git-commit: 6dd8a70293161ff58361953a7e48a98834b7abe0
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 95%
+source-wordcount: '336'
+ht-degree: 15%
 
 ---
 
-# 关于适用于 Customer Journey Analytics 的 Report Builder
+# Report Builder概述
 
-Customer Journey Analytics Report Builder 允许您使用 Adobe Customer Journey Analytics 数据轻松创建、编辑和刷新自定义报表。 Customer Journey Analytics 是一项基于 Adobe Experience Platform 构建的服务，可让您连接多个数据源以创建业务的整体视图。借助 Report Builder 简单灵活的拖放 UI，您可以在 Excel 中从 Customer Journey Analytics 数据创建复杂的数据查询和自定义报表。
+适用于Customer Journey Analytics的Report Builder允许您使用Adobe Customer Journey Analytics数据在Microsoft Excel中轻松创建、编辑和刷新自定义报表。
+
+Customer Journey Analytics是基于Adobe Experience Platform构建的一个应用程序，可让您连接多个数据源以创建业务的整体视图。 借助Report Builder简单灵活的拖放界面，您可以在Microsoft Excel中从Customer Journey Analytics数据创建复杂的数据查询和自定义报表。
 
 利用 Report Builder for Customer Journey Analytics，您可以：
 
-- 引用现有的工作表单元格以获得完美的行顺序、日期范围或区段
-- 使用日历、单元格引用或日期数学创建自定义日期
-- 使用熟悉的 Excel 格式设置工具设计表格和可视化项
+- 引用现有的工作表单元格以获得完美的行顺序、日期范围或区段。
+- 使用日历、单元格引用或日期数学创建自定义日期。
+- 使用熟悉的Excel格式设置工具设计表格和可视化图表。
 
-适用于 Customer Journey Analytics 的 Report Builder 在以下平台上可用于 Excel：
+Report Builder for Customer Journey Analytics是一个Microsoft Excel加载项。 该加载项在以下平台上可用：
 
 - macOS
 - Windows
@@ -31,24 +33,23 @@ Customer Journey Analytics Report Builder 允许您使用 Adobe Customer Journey
 
 ## 常见使用案例
 
-- **数据提取**：Adobe Report Builder 允许您将 Customer Journey Analytics 中的数据提取到 Excel 中。您可以创建自定义报告和查询来检索与您的分析相关的特定数据点。
+- **数据提取**： Adobe Report Builder允许您将数据从Customer Journey Analytics提取到Excel中。 您可以创建自定义报告和查询来检索与您的分析相关的特定数据点。
 
-- **自定义报告**：您可以在 Excel 中设计和格式化自定义报告，以满足您的特定报告需求。这对于为不同利益相关者定制报告特别有用。
+- **自定义报告**：您可以在Excel中设计和格式化自定义报告，以满足您的特定报告需求。 当您需要为不同的利益相关者定制报告时，此功能特别有用。
 
-- **临时分析**：用户可以快速生成临时报告来回答特定问题或探索数据趋势，而无需经历冗长的报告创建过程。
+- **Ad-Hoc Analysis**：用户可以快速生成临时报告以回答特定问题或探索数据趋势，而无需经历漫长的报告创建过程。
 
-- **仪表板**：从 CJA 提取的数据可用于创建基于 Excel 的仪表板和可视化内容，以提供对关键绩效指标 (KPI) 的高级概述。
+- **功能板**：从Customer Journey Analytics提取的数据可用于创建基于Excel的功能板和可视化图表，以便大致了解关键绩效指标(KPI)。
 
-- **分享见解**：您可以与可能无法直接访问 CJA 的团队成员或利益相关者共享 Excel 报告和见解。
+- **共享见解**：您可以与团队成员或可能没有直接访问Customer Journey Analytics的利益相关者共享Excel报告和见解。
+
 
 ## 概述视频
 
-
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [适用于 Customer Journey Analytics 的 Report Builder](https://video.tv.adobe.com/v/337569?quality=12&learn=on){target="_blank"} 以获取演示视频。
+观看演示视频，请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Report Builder for Customer Journey Analytics](https://video.tv.adobe.com/v/337569?quality=12&learn=on){target="_blank"}。
 
 >[!ENDSHADEBOX]
 
-您可以从以下位置下载适用于 Customer Journey Analytics 的 Report Builder：
-[Microsoft Store](https://appsource.microsoft.com/en-us/product/Office365/WA200003101)。
+您可以从[Report Builder Store](https://appsource.microsoft.com/en-us/product/Office365/WA200003101)下载适用于Customer Journey Analytics的Microsoft。
