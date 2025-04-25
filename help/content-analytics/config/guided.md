@@ -8,7 +8,7 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
 workflow-type: tm+mt
 source-wordcount: '2580'
-ht-degree: 46%
+ht-degree: 51%
 
 ---
 
@@ -101,13 +101,13 @@ ht-degree: 46%
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_current_cleanup_labels_dialog"
->title="清理所选数据视图"
->abstract="您选择了已为Content Analytics配置的数据视图。 现有Content Analytics配置将被删除，并且数据视图将配置您的新配置。"
+>title="清理选定的数据视图"
+>abstract="您选择的数据视图已配置了内容分析功能。现有的内容分析配置已被移除，数据视图将使用新配置进行设置。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_prev_cleanup_labels_dialog"
 >title="清理以前的数据视图"
->abstract="您已选择新的数据视图。已删除上一个选定数据视图的Content Analytics配置。"
+>abstract="您已选择新的数据视图。以前选定的数据视图的内容分析配置已被移除。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -152,7 +152,7 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_button"
 >title="体验捕捉和定义"
->abstract="您可以选择在通过Content Analytics收集的数据中包含体验。 选中后，您必须定义正则表达式和查询参数的一个或多个组合，以定义要包含体验的 URL。"
+>abstract="您可以选择将体验包含在使用内容分析收集的数据中。选中后，您必须定义正则表达式和查询参数的一个或多个组合，以定义要包含体验的 URL。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_header"
@@ -167,17 +167,17 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_new_include_experiences"
 >title="体验捕捉和定义"
->abstract="启用后，将收集体验数据，生成体验属性，并可以使用体验报表。"
+>abstract="启用后，将收集体验数据，生成体验属性，并提供体验报告。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_include_experiences"
 >title="体验捕捉和定义"
->abstract="启用后，将收集体验数据，生成体验属性，并可以使用体验报表。 <br><br/>使用![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 编辑]**&#x200B;修改与当前配置关联的Tags属性中体验的数据收集配置。"
+>abstract="启用后，将收集体验数据，生成体验属性，并提供体验报告。<br><br/>使用 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 编辑]**&#x200B;功能，可修改与当前配置相关联的“标记”属性中体验的数据收集配置。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"
 >title="体验捕捉和定义"
->abstract="您必须在Adobe Content Analytics扩展中编辑体验数据收集的设置。"
+>abstract="您必须在 Adobe Content Analytics 扩展中编辑体验数据收集的设置。"
 
 <!-- markdownlint-enable MD034 -->
 

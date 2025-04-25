@@ -8,7 +8,7 @@ role: User
 source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '3873'
-ht-degree: 75%
+ht-degree: 78%
 
 ---
 
@@ -54,8 +54,8 @@ ht-degree: 75%
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_projectcommenting"
->title="允许对项目发表评论"
->abstract="启用后，Analysis Workspace中每个项目的右边栏中都有一个注释区域。"
+>title="允许对项目进行评论"
+>abstract="启用后，Analysis Workspace 中每个项目的右侧栏中会显示一个评论区域。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -130,7 +130,7 @@ Add this to the table above - exchange - for pipe: (End of April, 2025 when proj
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulttablemetric"
 >title="默认表量度"
->abstract="选择用于自由格式表的默认量度。如果选定的数据视图不包含选定的默认度量，则表会自动切换到另一个主度量。"
+>abstract="选择用于自由格式表的默认量度。如果选定的数据视图不包含所选的默认量度，表格将自动切换到另一个主要量度。"
 
 
 您可以为在 Analysis Workspace 中创建的所有新项目自定义自由格式表偏好设置。有关如何访问这些偏好设置的信息，请参阅[更新偏好设置](#update-preferences)。
@@ -168,22 +168,22 @@ Add this to the table above - exchange - for pipe: (End of April, 2025 when proj
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultflowcontainer"
 >title="默认容器"
->abstract="选择用于[!UICONTROL 流量]可视化图表的默认容器。如果所选数据视图不包含所选的默认容器，则[!UICONTROL 流量]可视化图表会自动切换到另一个主容器。"
+>abstract="选择用于[!UICONTROL 流量]可视化图表的默认容器。如果选定的数据视图不包含选定的默认容器，则[!UICONTROL 流量]可视化图表将会自动切换到另一个主容器。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultfalloutcontainer"
 >title="默认容器"
->abstract="选择用于[!UICONTROL 流失]可视化图表的默认容器。如果所选数据视图不包含所选的默认容器，则[!UICONTROL 流失]可视化图表会自动切换到另一个主容器。"
+>abstract="选择用于[!UICONTROL 流失]可视化图表的默认容器。如果选定的数据视图不包含选定的默认容器，则[!UICONTROL 流失]可视化图表将会自动切换到另一个主容器。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulthistogramcountingmethod"
 >title="默认计数方法"
->abstract="选择用于[!UICONTROL 直方图]可视化图表的默认计数方法。如果所选数据视图不包含所选的默认计数方法，则[!UICONTROL 直方图]可视化图表会自动切换到另一个主要计数方法。"
+>abstract="选择用于[!UICONTROL 直方图]可视化图表的默认计数方法。如果选定的数据视图不包含选定的默认计数方法，则[!UICONTROL 直方图]可视化图表将会自动切换到另一个主要计数方法。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultjourneycanvascontainer"
 >title="默认容器"
->abstract="选择用于[!UICONTROL 历程画布]可视化图表的默认容器。如果所选数据视图不包含所选的默认容器，[!UICONTROL 历程画布]可视化图表将自动切换到另一个主容器。"
+>abstract="选择用于[!UICONTROL 历程画布]可视化图表的默认容器。如果选定的数据视图不包含选定的默认容器，则[!UICONTROL 历程画布]可视化图表将会自动切换到另一个主要容器。"
 
 
 您可以更新在 Analysis Workspace 中创建的所有新项目的可视化偏好设置。有关如何访问这些偏好设置的信息，请参阅[更新偏好设置](#update-preferences)。

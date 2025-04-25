@@ -7,7 +7,7 @@ exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '1677'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaaverageminuteaudience_panel"
 >title="媒体平均受众访问分钟数"
->abstract="显示特定媒体内容的性能或自定义时间段内的性能。指定报表维度和（可选）区段内容。"
+>abstract="显示特定媒体内容的性能或自定义时间段内的性能。指定报告维度，可选择将内容分段。"
 
 <!-- markdownlint-enable MD034 -->
 

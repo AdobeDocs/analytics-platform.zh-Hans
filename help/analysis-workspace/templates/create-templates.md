@@ -7,7 +7,7 @@ exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
 source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '1850'
-ht-degree: 83%
+ht-degree: 85%
 
 ---
 
@@ -23,8 +23,8 @@ ht-degree: 83%
 
 >[!CONTEXTUALHELP]
 >id="use-case-ajo-template"
->title="在Journey Optimizer中使用模板"
->abstract="在Journey Optimizer中使用此模板时，无论在Customer Journey Analytics中使用此模板选择了什么数据视图，都将使用Adobe Journey Optimizer中设置为默认数据视图的数据视图。"
+>title="使用 Journey Optimizer 中的模板"
+>abstract="当您在 Journey Optimizer 中使用此模板时，无论在 Customer Journey Analytics 中使用此模板时选择哪个数据视图，实际使用的数据视图是 Adobe Journey Optimizer 中设置的默认数据视图。"
 
 <!-- markdownlint-enable MD034 -->
 

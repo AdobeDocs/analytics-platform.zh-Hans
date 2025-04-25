@@ -7,7 +7,7 @@ exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 source-git-commit: 191693bc970fcf59ee51706365abde0ee30e3d3d
 workflow-type: tm+mt
 source-wordcount: '431'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="workspace_project_commenting"
 >title="允许评论"
->abstract="启用后，Analysis Workspace中项目的右边栏中将显示一个注释区域。"
+>abstract="启用后，Analysis Workspace 中项目的右侧栏中会显示一个评论区域。"
 
 <!-- markdownlint-enable MD034 -->
 
