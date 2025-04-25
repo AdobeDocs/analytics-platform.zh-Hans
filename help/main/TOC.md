@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 22b06eaf9f224188699aa241de1d1daad8a14619
+source-git-commit: aa7b73db10e81a96f532eedf09091109209124c0
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 84%
+source-wordcount: '1223'
+ht-degree: 83%
 
 ---
 
@@ -148,6 +148,9 @@ ht-degree: 84%
    + [派生字段](../data-views/derived-fields/derived-fields.md)
    + [摘要数据](../data-views/summary-data.md)
    + [标签和政策](../data-views/data-governance.md)
+   + 共享的量度和维度{#shared-metrics-dimensions}
+      + [概述](/help/data-views/shared-metrics-dimensions/smd-overview.md)
+      + [编辑者](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
 
 + 工具 {#tools}
    + 资产转移 {#asset-transfer}
@@ -165,7 +168,7 @@ ht-degree: 84%
       + [概述](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [创建项目](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [打开项目](/help/analysis-workspace/build-workspace-project/open-projects.md)
-      + [项目中的注释](/help/analysis-workspace/build-workspace-project/comment-projects.md)
+      + [项目评论](/help/analysis-workspace/build-workspace-project/comment-projects.md)
       + [保存项目](../analysis-workspace/build-workspace-project/save-projects.md)
       + Workspace 中的文件夹 {#workspace-folders}
          + [关于文件夹](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
@@ -424,6 +427,36 @@ ht-degree: 84%
 
 + 用例 {#cja-usecases}
    + [Customer Journey Analytics 用例](../use-cases/cja-usecases.md)
+   + Adobe Analytics数据 {#aa-data}
+      + [使用“营销渠道”维度](../use-cases/aa-data/marketing-channels.md)
+      + [将报告包与不同的架构相结合](../use-cases/aa-data/combine-report-suites.md)
+   + B2B {#b2b}
+      + [B2B 项目示例](../use-cases/b2b/example.md)
+   + 复杂数据 {#complex-data}
+      + [使用对象数组](../use-cases/object-arrays.md)
+   + 跨渠道数据 {#cross-channel}
+      + [跨渠道分析数据](../use-cases/cross-channel/cross-channel.md)
+      + [导入呼叫中心数据和网站数据](../use-cases/cross-channel/call-center.md)
+   + 数据导出 {#data-export}
+      + [概述](../use-cases/data-export/overview.md)
+      + [BI 扩展](../use-cases/data-export/bi-extension.md)
+      + [导出数据集](../use-cases/data-export/export-datasets.md)
+      + [导出整个表](../use-cases/data-export/export-full-table.md)
+      + [查询服务和导出数据集](../use-cases/data-export/queryservice-export-datasets.md)
+   + 数据摄取 {#data-ingestion}
+      + [收錄并使用 Marketo Engage 数据](../use-cases/data-ingestion/marketo.md)
+      + [收錄和使用 Experience Platform 受众](../use-cases/data-ingestion/ingest-aep-segments.md)
+   + 数据视图 {#data-views}
+      + [数据视图用例](/help/use-cases/data-views/data-views-usecases.md)
+      + [使用绑定维度和量度](/help/use-cases/data-views/binding-dimensions-metrics.md)
+      + [使用摘要数据](/help/use-cases/data-views/summary-data.md)
+      + [BI 扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)
+   + 派生字段 {#derived-fields}
+      + [报告目标](../use-cases/goals-using-derived-fields.md)
+   + 产品分析 {#product-analysis}
+      + [产品分析](/help/use-cases/product-analysis.md)
+   + 拼合 {#stitching}
+      + [共享设备](/help/use-cases/stitching/shared-devices.md)
    + 第三方数据 {#third-party}
       + [概述](/help/use-cases/third-party/overview.md)
       + Google Analytics {#ga}
@@ -437,34 +470,6 @@ ht-degree: 84%
          + [使用热图](/help/use-cases/third-party/quantum-metric/heatmap.md)
          + [添加摩擦事件](/help/use-cases/third-party/quantum-metric/friction-events.md)
          + [源连接器](/help/use-cases/third-party/quantum-metric/source-connector.md)
-   + 数据摄取 {#data-ingestion}
-      + [收錄并使用 Marketo Engage 数据](../use-cases/data-ingestion/marketo.md)
-      + [收錄和使用 Experience Platform 受众](../use-cases/data-ingestion/ingest-aep-segments.md)
-   + 数据视图 {#data-views}
-      + [数据视图用例](/help/use-cases/data-views/data-views-usecases.md)
-      + [使用绑定维度和量度](/help/use-cases/data-views/binding-dimensions-metrics.md)
-      + [使用摘要数据](/help/use-cases/data-views/summary-data.md)
-      + [BI 扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)
-   + 数据导出 {#data-export}
-      + [概述](../use-cases/data-export/overview.md)
-      + [BI 扩展](../use-cases/data-export/bi-extension.md)
-      + [导出数据集](../use-cases/data-export/export-datasets.md)
-      + [导出整个表](../use-cases/data-export/export-full-table.md)
-      + [查询服务和导出数据集](../use-cases/data-export/queryservice-export-datasets.md)
-   + B2B {#b2b}
-      + [B2B 项目示例](../use-cases/b2b/example.md)
-   + 跨渠道数据 {#cross-channel}
-      + [跨渠道分析数据](../use-cases/cross-channel/cross-channel.md)
-      + [导入呼叫中心数据和网站数据](../use-cases/cross-channel/call-center.md)
-   + Adobe Analytics数据 {#aa-data}
-      + [使用“营销渠道”维度](../use-cases/aa-data/marketing-channels.md)
-      + [将报告包与不同的架构相结合](../use-cases/aa-data/combine-report-suites.md)
-   + 复杂数据 {#complex-data}
-      + [使用对象数组](../use-cases/object-arrays.md)
-   + 拼合 {#stitching}
-      + [共享设备](/help/use-cases/stitching/shared-devices.md)
-   + 派生字段 {#derived-fields}
-      + [报告目标](../use-cases/goals-using-derived-fields.md)
 
 + Labs {#labs}
    + [Labs 用户指南](../labs/labs.md)
