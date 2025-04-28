@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: 157f70353f60da3fec83e016e7a09f69f7f514cf
+source-git-commit: 7cd0bd94ec45b1570d0be765d95b25defa3e1b87
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 10%
+source-wordcount: '462'
+ht-degree: 9%
 
 ---
 
@@ -34,7 +34,12 @@ ht-degree: 10%
    - 启用拼合的请求。
    - 要重新生成键值的数据集的数据集ID。
    - 所需数据集（每行都显示的标识符）的永久ID的列名称（身份路径和命名空间）。
-   - 对于基于字段的拼合，所需数据集的“临时ID”列名称（人员标识符，也用作连接上下文中数据集之间的链接）。 对于基于图的拼接，为用于查询身份图的身份命名空间。
+   - 如果数据集支持`identityMap`：
+      - 对于基于字段的拼接，请为永久和临时ID指定命名空间。
+      - 对于基于图的拼接，请指定持久ID的命名空间以及用于查询身份图的身份命名空间。
+   - 如果数据集不支持`identityMap`：
+      - 对于基于字段的拼合，所需数据集的“临时ID”列名称（人员标识符，也用作连接上下文中数据集之间的链接）。
+      - 对于基于图的拼接，为用于查询身份图的身份命名空间。
    - 您的回顾窗口和重播频率首选项。 查看您的Customer Journey Analytics程序包以了解[选项](#options)。
    - 沙盒名称。
 

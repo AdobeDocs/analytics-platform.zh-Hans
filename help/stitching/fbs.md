@@ -4,18 +4,89 @@ description: 基于字段的拼接说明
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
-source-git-commit: 4ce1b22cce3416b8a82e5c56e605475ae6c27d88
+exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
+source-git-commit: 9237549aabe73ec98fc42d593e899c98e12eb194
 workflow-type: tm+mt
-source-wordcount: '1705'
+source-wordcount: '1779'
 ht-degree: 15%
 
 ---
 
 # 基于字段的拼合
 
-在基于字段的拼合中，您可以指定事件数据集，以及该数据集的永久ID (Cookie)和临时ID （人员ID）。 基于字段的拼接会在新拼接的数据集中创建一个新的拼接ID列，并根据具有该特定永久ID的临时ID的行更新此拼接ID列。 <br/>将Customer Journey Analytics用作独立解决方案(无权访问Experience Platform身份服务和关联的身份图)时，可以使用基于字段的拼合。 或者，如果您不想使用可用的身份图。
+在基于字段的拼合中，您可以指定事件数据集，以及该数据集的永久ID (Cookie)和临时ID （人员ID）。 基于字段的拼接会在新拼接的数据集中创建一个新的拼接ID列，并根据具有该特定永久ID的临时ID的行更新此拼接ID列。 <br/>将Customer Journey Analytics用作独立解决方案(无权访问Experience Platform Identity Service和关联的身份图)时，可以使用基于字段的拼合。 或者，如果您不想使用可用的身份图。
 
 ![基于字段的拼合](/help/stitching/assets/fbs.png)
+
+
+## Identitymap
+
+基于字段的拼接支持在以下情况下使用[`identifyMap`字段组](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity)：
+
+- 使用`identityMap`命名空间中的主标识来定义persistentID：
+   - 如果在不同的命名空间中找到多个主身份，则命名空间中的身份按词法排序并选择第一个身份。
+   - 如果在单个命名空间中找到多个主身份，则选择第一个词典学上可用的主身份。
+
+  在以下示例中，命名空间和身份将生成排序的主身份列表，最后生成选定的身份。
+
+  <table>
+     <tr>
+       <th>命名空间</th>
+       <th>身份列表</th>
+     </tr>
+     <tr>
+       <td>ECID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ecid-3"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "primary": true},<br/>&nbsp;&nbsp;{"id": "ecid-1", "primary": true}<br/>&nbsp;]</code></pre></td>
+     </tr>
+     <tr>
+       <td>CCID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ccid-1"},<br/>&nbsp;&nbsp;{"id": "ccid-2", "primary": true}<br/>]</code></pre></td>
+     </tr>
+   </table>
+
+  <table>
+    <tr>
+      <th>已排序的标识列表</th>
+      <th>选定的身份</th>
+    </tr>
+    <tr>
+      <td><pre lang="json"><code>PrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-2", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-1", "namespace": "ECID"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "namespace": "ECID"}<br/>]<br/>NonPrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-1", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-3", "namespace": "ECID"}<br/>]</code></pre></td>
+      <td><pre lang="json"><code>"id": "ccid-2",<br/>"namespace": "CCID"</code></pre></td>
+    </tr>
+  </table>
+
+
+- 使用`identityMap`命名空间定义persistentID或transientID，或同时定义两者：
+   - 如果在`identityMap`命名空间中找到persistentID或transientID的多个值，则使用第一个词典学可用值。
+   - persistentID和transientID的命名空间必须互斥。
+
+  在以下示例中，命名空间和身份会生成选定命名空间(ECID)的已排序身份列表，最后生成选定身份的列表。
+
+  <table>
+     <tr>
+       <th>命名空间</th>
+       <th>身份列表</th>
+     </tr>
+     <tr>
+       <td>ECID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ecid-3"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "primary": true},<br/>&nbsp;&nbsp;{"id": "ecid-1", "primary": true}<br/>]</code></pre></td>
+     </tr>
+     <tr>
+       <td>CCID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ccid-1"},<br/>&nbsp;&nbsp;{"id": "ccid-2", "primary": true}<br/>]</code></pre></td>
+     </tr>
+   </table>
+
+  <table>
+    <tr>
+      <th>已排序的标识列表</th>
+      <th>选定的身份</th>
+    </tr>
+    <tr>
+      <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;"id": "ecid-1",<br/>&nbsp;&nbsp;"id": "ecid-2",<br/>&nbsp;&nbsp;"id": "ecid-3"<br/>]</code></pre></td>
+      <td><pre lang="json"><code>"id": "ecid-1",<br/>"namespace": "ECID"</code></pre></td>
+    </tr>
+  </table>
 
 ## 基于字段的拼合的工作原理
 
@@ -139,21 +210,24 @@ ht-degree: 15%
 
 - Adobe Experience Platform中的事件数据集（您要对其应用拼接）必须具有两个帮助识别访客的列：
 
-   - **永久ID**，每行都有一个可用的标识符。 例如，由Adobe AnalyticsAppMeasurement库生成的访客ID或由Adobe Experience Platform Identity服务生成的ECID。
-   - **临时ID**，该标识符仅在部分行可用。 例如，经过身份验证的访客的经过哈希处理的用户名或电子邮件地址。您实际上可以使用任何喜欢的标识符。 拼接会将此字段视为保存实际人员ID信息。 为获得最佳的拼接结果，应在数据集的事件中为每个永久ID至少发送一次临时ID。 如果计划在Customer Journey Analytics连接中包含此数据集，则最好其他数据集也具有类似的公共标识符。
+   - **永久ID**，每行都有一个可用的标识符。 例如，由Adobe Analytics AppMeasurement库生成的访客ID或由Adobe Experience Platform Identity服务生成的ECID。
+   - **临时ID**，该标识符仅在部分行可用。 例如，经过身份验证的访客的经过哈希处理的用户名或电子邮件地址。您实际上可以使用任何喜欢的标识符。 拼接会将此字段视为保存实际人员ID信息。 为获得最佳的拼接结果，应在数据集的事件中为每个永久ID至少发送一次临时ID。 如果计划在Customer Journey Analytics连接中包含此数据集，则最好其他数据集也具有类似的通用标识符。
 
-- 对于要拼合的数据集，必须将两列（永久ID和临时ID）定义为架构中具有标识命名空间的标识字段。 在Real-time Customer Data Platform中使用[`identityMap`字段组](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity)进行身份拼接时，仍需要添加具有身份命名空间的身份字段。 由于Customer Journey Analytics拼接不支持`identityMap`字段组，因此需要标识字段。 在架构中添加标识字段时，如果同时使用`identityMap`字段组，请不要将其他标识字段设置为主标识。 将附加标识字段设置为主标识会干扰用于Real-time Customer Data Platform的`identityMap`字段组。
+<!--
+- Both columns (persistent ID and transient ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+
+-->
 
 ## 限制
 
 以下限制特别适用于基于字段的拼合：
 
 - 当前，重新生成键值功能只能执行一步（即将永久 ID 转换为临时 ID）。而不支持多步重新生成键值功能（例如，将永久 ID 转换为临时 ID，然后再转换为另一个临时 ID）。
-- 如果一台设备由多人共享，并且用户之间的转换总数超过50,000，则Customer Journey Analytics将停止为该设备拼合数据。
+- 如果一台设备由多人共享，并且用户之间的转换总数超过50,000，Customer Journey Analytics将停止为该设备拼合数据。
 - 不支持在组织中使用的自定义 ID 映射。
 - 拼接区分大小写。 对于通过Analytics Source Connector生成的数据集，Adobe建议审查任何适用于临时ID字段的VISTA规则或处理规则。 此审查可确保所有这些规则都不会引入同一ID的新形式。 例如，对于部分事件，您应确保没有任何 VISTA 或处理规则将小写字母引入到临时 ID 字段。
 - 拼接不会组合或连接字段。
 - 临时ID字段应包含单一类型的ID（来自单个命名空间的ID）。 例如，临时 ID 字段不应包含登录 ID 和电子邮件 ID 的组合。
 - 如果对于同一持久ID发生了多个具有同一时间戳的事件，但临时ID字段中的值不同，则拼接操作会根据字母顺序选择该ID。 因此，如果持久ID A具有时间戳相同的两个事件，其中一个事件指定Bob，而另一个事件指定Ann，则拼接操作将选择Ann。
 - 对于临时ID包含占位符值（例如`Undefined`）的情况，请务必小心。 有关详细信息，请参阅[常见问题解答](faq.md)。
-
+- 不能同时使用相同的命名空间persistentID和transientID，命名空间需要互斥。

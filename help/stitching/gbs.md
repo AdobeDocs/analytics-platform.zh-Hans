@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: 9118a3c20158b1a0373fab1b41595aa7b07075f6
+source-git-commit: 9237549aabe73ec98fc42d593e899c98e12eb194
 workflow-type: tm+mt
-source-wordcount: '1385'
+source-wordcount: '1540'
 ht-degree: 7%
 
 ---
@@ -15,9 +15,77 @@ ht-degree: 7%
 # 基于图形的拼合
 
 
-在基于图形的拼合中，您可以指定事件数据集，以及该数据集的永久ID (Cookie)和临时ID（人员ID）的命名空间。 基于图形的拼合会在新拼合的数据集中为拼合的ID创建新列。 然后，使用持久ID使用指定的命名空间从Experience Platform身份服务查询身份图以更新拼合的ID。
+在基于图形的拼合中，您可以指定事件数据集，以及该数据集的永久ID (Cookie)和临时ID（人员ID）的命名空间。 基于图形的拼合会在新拼合的数据集中为拼合的ID创建新列。 然后，使用持久ID使用指定的命名空间从Experience Platform Identity Service查询身份图以更新拼合的ID。
 
 ![基于图形的拼合](/help/stitching/assets/gbs.png)
+
+## Identitymap
+
+基于图形的拼接支持在以下情况下使用[`identifyMap`字段组](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity)：
+
+- 使用`identityMap`命名空间中的主标识来定义persistentID：
+   - 如果在不同的命名空间中找到多个主身份，则命名空间中的身份按词法排序并选择第一个身份。
+   - 如果在单个命名空间中找到多个主身份，则选择第一个词典学上可用的主身份。
+
+  在以下示例中，命名空间和身份将生成排序的主身份列表，最后生成选定的身份。
+
+  <table>
+     <tr>
+       <th>命名空间</th>
+       <th>身份列表</th>
+     </tr>
+     <tr>
+       <td>ECID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ecid-3"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "primary": true},<br/>&nbsp;&nbsp;{"id": "ecid-1", "primary": true}<br/>&nbsp;]</code></pre></td>
+     </tr>
+     <tr>
+       <td>CCID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ccid-1"},<br/>&nbsp;&nbsp;{"id": "ccid-2", "primary": true}<br/>]</code></pre></td>
+     </tr>
+   </table>
+
+  <table>
+    <tr>
+      <th>已排序的标识列表</th>
+      <th>选定的身份</th>
+    </tr>
+    <tr>
+      <td><pre lang="json"><code>PrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-2", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-1", "namespace": "ECID"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "namespace": "ECID"}<br/>]<br/>NonPrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-1", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-3", "namespace": "ECID"}<br/>]</code></pre></td>
+      <td><pre lang="json"><code>"id": "ccid-2",<br/>"namespace": "CCID"</code></pre></td>
+    </tr>
+  </table>
+
+- 使用`identityMap`命名空间定义persistentID：
+   - 如果在`identityMap`命名空间中找到persitentID的多个值，则使用第一个词典学上的可用标识。
+
+  在以下示例中，命名空间和身份会生成选定命名空间(ECID)的已排序身份列表，最后生成选定身份的列表。
+
+  <table>
+     <tr>
+       <th>命名空间</th>
+       <th>身份列表</th>
+     </tr>
+     <tr>
+       <td>ECID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ecid-3"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "primary": true},<br/>&nbsp;&nbsp;{"id": "ecid-1", "primary": true}<br/>]</code></pre></td>
+     </tr>
+     <tr>
+       <td>CCID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ccid-1"},<br/>&nbsp;&nbsp;{"id": "ccid-2", "primary": true}<br/>]</code></pre></td>
+     </tr>
+   </table>
+
+  <table>
+    <tr>
+      <th>已排序的标识列表</th>
+      <th>选定的身份</th>
+    </tr>
+    <tr>
+      <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;"id": "ecid-1",<br/>&nbsp;&nbsp;"id": "ecid-2",<br/>&nbsp;&nbsp;"id": "ecid-3"<br/>]</code></pre></td>
+      <td><pre lang="json"><code>"id": "ecid-1",<br/>"namespace": "ECID"</code></pre></td>
+    </tr>
+  </table>
+
 
 ## 基于图形的拼合的工作原理
 
@@ -133,13 +201,13 @@ ht-degree: 7%
 
 以下先决条件专门适用于基于图形的拼接：
 
-- Adobe Experience Platform中的事件数据集（您要对其应用拼接）必须有一列用于在每行上标识访客，即&#x200B;**永久ID**。 例如，由Adobe AnalyticsAppMeasurement库生成的访客ID或由Experience PlatformIdentity服务生成的ECID。
+- Adobe Experience Platform中的事件数据集（您要对其应用拼接）必须有一列用于在每行上标识访客，即&#x200B;**永久ID**。 例如，由Adobe Analytics AppMeasurement库生成的访客ID或由Experience Platform Identity服务生成的ECID。
 - 永久性ID还必须在架构中定义为[标识](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)。
-- 来自Experience Platform身份服务的身份图形必须具有要在拼接期间用于解析&#x200B;**临时ID**&#x200B;的命名空间（例如`Email`或`Phone`）。 有关详细信息，请参阅[Experience Platform标识服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home)。
+- 来自Experience Platform Identity Service的标识图必须具有要在拼接期间用于解析&#x200B;**临时ID**&#x200B;的命名空间（例如`Email`或`Phone`）。 有关详细信息，请参阅[Experience Platform Identity Service](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home)。
 
 >[!NOTE]
 >
->您不&#x200B;**需要** Real-time Customer Data Platform许可证才能进行基于图形的拼合。 Customer Journey Analytics的&#x200B;**Prime**&#x200B;程序包或更高版本包含所需的Experience Platform标识服务授权。
+>您不&#x200B;**需要** Real-time Customer Data Platform许可证才能进行基于图形的拼合。 Customer Journey Analytics的&#x200B;**Prime**&#x200B;程序包或更高版本包含所需的Experience Platform Identity Service授权。
 
 
 ## 限制
@@ -148,7 +216,7 @@ ht-degree: 7%
 
 - 使用指定的命名空间查询临时ID时，不考虑时间戳。 因此，持久ID可能与具有更早时间戳的记录的临时ID拼合。
 - 在共享设备方案中，如果图形中的命名空间包含多个标识，则使用第一个词典标识。 如果命名空间限制和优先级是在发布图形链接规则时配置的，则使用上次经过身份验证的用户身份。 有关详细信息，请参阅[共享设备](/help/use-cases/stitching/shared-devices.md)。
-- 在身份图中，存在三个月回填身份信息的硬性限制。 如果您没有使用Experience Platform应用程序(如Real-time Customer Data Platform)填充身份图，则可以使用回填身份。
+- 在身份图中，存在三个月回填身份信息的硬性限制。 如果您没有使用Experience Platform应用程序（如Real-time Customer Data Platform）来填充身份图，则可以使用回填身份。
 - 应用[Identity Service护栏](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails)。 例如，查看以下[静态限制](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits)：
    - 图形中的最大标识数：50。
    - 一次批次摄取中指向某个身份的最大链接数：50。
