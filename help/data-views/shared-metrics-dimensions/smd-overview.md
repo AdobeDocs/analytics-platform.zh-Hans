@@ -2,7 +2,7 @@
 title: 共享量度和维度概述
 description: 在多个数据视图中使用相同的维度或量度引用。
 exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
-source-git-commit: 5fd023f988e485f04654869a982e02cb0f3e52a1
+source-git-commit: 4bb24fae7c7d53a0fde3bb2dc35ef27f91701d5a
 workflow-type: tm+mt
 source-wordcount: '1245'
 ht-degree: 0%
@@ -89,7 +89,7 @@ ht-degree: 0%
 ![可用操作预览](assets/smd-actions.png)
 
 * ![铅笔图标](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**：在[共享组件编辑器](shared-component-editor.md)中打开选定的维度和量度，您可以调整其[组件设置](/help/data-views/component-settings/overview.md)。 选择要编辑的多个组件时，它们将在组件编辑器中打开。 在组件编辑器中，您可以按住Shift并单击“组件”来编辑多个组件的相同字段。
-* ![共享图标](/help/assets/icons/Share.svg) **[!UICONTROL 共享到数据视图]**：打开一个窗口，其中显示所选连接中所有可用的数据视图。 选中要使其成为可用组件的每个数据视图的复选框，然后选择&#x200B;**[!UICONTROL 共享]**。
-* ![取消共享图标](/help/assets/icons/SaveTo.svg) **[!UICONTROL 取消共享到数据视图]**：打开一个窗口，其中显示该组件当前共享的所有数据视图。 选中要删除此组件可用性的每个数据视图的复选框，然后选择&#x200B;**[!UICONTROL 取消共享]**。
+* ![共享图标](/help/assets/icons/ShareAlt.svg) **[!UICONTROL 共享到数据视图]**：打开一个窗口，其中显示所选连接中所有可用的数据视图。 选中要使其成为可用组件的每个数据视图的复选框，然后选择&#x200B;**[!UICONTROL 共享]**。
+* ![取消共享图标](/help/assets/icons/SaveTo.svg) **[!UICONTROL 从数据视图取消共享]**：打开一个窗口，其中显示该组件当前共享的所有数据视图。 选中要删除此组件可用性的每个数据视图的复选框，然后选择&#x200B;**[!UICONTROL 取消共享]**。
 * ![复制图标](/help/assets/icons/Copy.svg) **[!UICONTROL 复制]**：创建选定组件的副本。 将为重复的组件生成新的组件ID。
 * ![删除图标](/help/assets/icons/Delete.svg) **[!UICONTROL 删除]**：从界面中删除选定的组件。 如果选定组件与任何数据视图共享，则它们将被取消共享。
