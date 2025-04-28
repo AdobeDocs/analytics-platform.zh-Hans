@@ -4,7 +4,7 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: f3e1f5190024a38dc26199061fb7f466b8d0c472
+source-git-commit: 5fd023f988e485f04654869a982e02cb0f3e52a1
 workflow-type: tm+mt
 source-wordcount: '5088'
 ht-degree: 90%
@@ -27,7 +27,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | Adobe Content Analytics | [Content Analytics](/help/content-analytics/content-analytics.md)允许您快速轻松地调查大量内容数据，以发现趋势、发现异常、识别内容疲劳并从内容曝光中获得见解。 |
 | 更新了用于将流媒体数据收集到Adobe Experience Platform中的XDM字段 | 在将流媒体数据收集到Adobe Experience Platform时，不应再使用流媒体参数文档的“XDM字段路径”标题下方显示的XDM字段路径。 这些字段路径可在以下页面上找到并标记为“已弃用”：[音频和视频参数](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters)、[广告参数](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/ad-parameters)、[章节参数](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters)、[播放器状态参数](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/player-state-parameters)和[质量参数](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/quality-parameters)。 |
 | 媒体收集：Adobe Source Connector 更新了新的媒体报告 XDM | Analytics 源连接器会自动将 Adobe Analytics 中的流媒体数据映射到 Web SDK 使用的相同字段。以前，数据被映射到旧位置和新位置，但未来只使用新位置。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
-| **术语更改：将“过滤器”改为“区段”** | 此前，Adobe Customer Journey Analytics 将区段称为“过滤器”。该术语现已与 Adobe Analytics 保持一致。“过滤器”现在改称为“区段”。（显然，搜索筛选器仍称为“筛选器”。）用户界面和文档已更新。 |
+| 术语更改：“过滤器”更改为“区段” | 此前，Adobe Customer Journey Analytics 将区段称为“过滤器”。该术语现已与 Adobe Analytics 保持一致。“过滤器”现在改称为“区段”。（显然，搜索筛选器仍称为“筛选器”。）用户界面和文档已更新。 |
 | **2025 年 3 月** | |
 | Quantum Metric 用例 | 添加了从 [Quantum Metric](/help/use-cases/third-party/quantum-metric/qm-overview.md) 收集数据的用例。 |
 | 产品使用情况模板 | 新的工作区模板允许您查看 Customer Journey Analytics 产品在您的组织内如何使用。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/use-templates)。 |
