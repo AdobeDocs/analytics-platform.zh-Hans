@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-source-git-commit: e0e80723e21b7e8c460c05ec39b699eef00abb8b
+source-git-commit: 98432804b71805c3714423dff577bbf80d5c92d1
 workflow-type: tm+mt
 source-wordcount: '1779'
 ht-degree: 15%
@@ -21,7 +21,7 @@ ht-degree: 15%
 
 ## Identitymap
 
-基于字段的拼接支持在以下情况下使用[`identifyMap`字段组](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity)：
+基于字段的拼接支持在以下情况下使用[`identityMap`字段组](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity)：
 
 - 使用`identityMap`命名空间中的主标识来定义persistentID：
    - 如果在不同的命名空间中找到多个主身份，则命名空间中的身份按词法排序并选择第一个身份。
