@@ -4,9 +4,9 @@ description: 了解如何将组件从一个用户转移到另一个用户
 role: Admin
 solution: Customer Journey Analytics
 exl-id: c5ed81ea-1d55-4193-9bb1-a2a93ebde91f
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 3e521cb4ef532d57b9f408fc12dcf138f130f059
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '831'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Assets通常与单个所有者绑定，并且在某些情况下，甚至管理�
 
 1. 选择用户后，传输资产选项将显示在屏幕底部。
 
-   ![菜单选项](/help/tools/asset-transfer/assets/after-selection.png)
+   ![转移资产菜单选项](/help/tools/asset-transfer/assets/after-selection.png)
 
 1. 单击&#x200B;**[!UICONTROL 转移资产]**。
 
@@ -75,6 +75,20 @@ Assets通常与单个所有者绑定，并且在某些情况下，甚至管理�
 
 - **传输失败**：“无法传输资产。 请重试。”
 
+### 资产转移失败的可能原因
+
+- 导致失败的依赖服务：资产传输与每种组件类型的不同服务（例如网络问题、下游服务问题）进行交互，因此可能会导致部分或完全失败，或者间歇性失败。
+
+- 缺少组件或由另一个管理员传输的组件：组件被另一个用户删除，或被另一个管理员传输给其他人，而资产传输作业仍在进行中。
+
+- API POST正文未正确填充：当选择了多个组件类型时，可能无法在API POST正文中发送组件。
+
+- 用户不存在：用户在传输期间被删除，或者由于其他原因无效。 如果在传输开始之前用户无效，则工具将捕获此信息，并且不会处理作业。 如果在传输期间删除了用户，则可能会导致部分失败。
+
+- 连接/网络故障：连接在中继传输时终止。 任何已传输到后端的传输作业批次仍会处理到完成，但用户将看不到包含成功和失败摘要的传输结果消息。
+
+- 浏览器选项卡在传输期间关闭：对于非常大的传输，如果浏览器选项卡已关闭或页面在传输期间离开页面进行导航，则只有选项卡关闭/页面导航之前发出的网络请求才能正确传输资产。 如果用户导航回页面，他们将不会收到响应状态消息，其中指示哪些资产已转移，哪些资产未转移。
+
 ## 在从Adobe Analytics升级到Customer Journey Analytics期间转移资源
 
 资产转移的主要用例之一是在从Adobe Analytics升级到Customer Journey Analytics期间。
@@ -91,6 +105,9 @@ Adobe Analytics中的[组件迁移](https://experienceleague.adobe.com/en/docs/a
 
 **[!UICONTROL 导出到CSV]**&#x200B;选项仅允许管理员将显示的用户列表下载到.csv文件。 它不允许他们将已转移资产的列表导出到.csv文件。
 
-<!---## Unknown users
+## 非活动用户
 
-All previously deleted users appear under one unknown user entry, along with all their orphan components. These components can be transferred to a new recipient. This feature will be available in January.-->
+所有以前删除的用户都显示在一个“非活动用户”条目下，以及它们的所有孤立组件下。 可以将这些组件转移到新收件人。 此功能将于1月推出。
+
+![在转移资产UI中显示的非活动用户](assets/inactive-users.png)
+
