@@ -5,18 +5,25 @@ solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: e4ddb98b800457e407bb414ed4929c5d5018cf30
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 100%
+source-wordcount: '255'
+ht-degree: 10%
 
 ---
 
 # 连接概述
 
-利用连接，Customer Journey Analytics 产品管理员可以与不同的[!DNL Adobe Experience Platform] 数据源（例如事件、查找和轮廓数据集）建立连接。这些连接支持将连接中的数据集成到派生的数据视图中。连接是 CJA 的基础，它是从[!DNL Experience Platform] 源数据集创建的。通过访问连接，还可以查看连接管理器，在其中可以查看构成连接的基础数据集，以及进行重要的编辑和配置选择。
+连接允许Customer Journey Analytics产品管理员与其他[!DNL Adobe Experience Platform]数据源（如事件、查找、配置文件和摘要数据集）建立连接。 通过这些连接，可将来自连接的数据集成到派生数据视图。 连接是Customer Journey Analytics的基础，是从[!DNL Experience Platform]源数据集创建的。
 
-我们建议仅允许核心管理组访问连接管理。连接级别的配置将对引入 Customer Journey Analytics 中的数据量分配产生合同性影响。
+>[!IMPORTANT]
+>
+>您可以将多个 [!DNL Experience Platform] 数据集合并到单个连接中。
+
+
+## 连接工作流程
+
+![连接工作流](assets/connection-workflow.png)
 
 <!-- Outdated interface 
 
@@ -28,23 +35,24 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configuring conn
 
 -->
 
-## 所需权限
+在概览中，连接工作流允许您：
 
-要创建 Customer Journey Analytics 连接，您需要以下权限。有关权限的更多详细信息，请参阅 [Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) 和 [Adobe Experience Platform 权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/home)文档。
+| 界面 | 描述 |
+|:---:|---|
+| ➊AEM | 从连接管理器中[管理您的连接和总体使用情况](manage-connections.md) Customer Journey Analytics。 |
+| ➋AEM | [检查连接](manage-connections.md#connection-details)的详细信息，如已摄取、已跳过或删除的数据集记录。 |
+| ➌AEM | [创建或编辑连接的配置](create-connection.md#create-or-edit-a-connection)，如滚动数据窗口，以及哪些数据集是连接的一部分。 |
+| ➍AEM | [将数据集添加到连接](create-connection.md#add-datasets)。 您的连接应至少具有一个事件或摘要数据集，但可以包含各种事件、个人资料、查找和摘要数据集。 |
+| ➎AEM | [为您添加的数据集配置设置](create-connection.md#dataset-settings)。 因此，您可以决定如何根据基于通用人员的标识符或基于[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}帐户的标识符来链接不同的数据集。 |
+| ➏AEM | [编辑现有数据集](create-connection.md#edit-a-dataset)的设置。 您始终可以在以后的阶段重新访问数据集设置。 |
 
-### 在 Adobe Admin Console 中：
 
-* Customer Journey Analytics：产品管理员
-* Adobe Experience Platform：已添加到名为 *AEP-Default-All-Users* 的产品轮廓中
 
-### 在 Adobe Experience Platform 权限内：
+## 访问控制
 
-* 数据建模：查看架构，管理架构
-* 数据管理：查看数据集，管理数据集
-* 数据摄取：管理源
-* Identity Management：查看标识命名空间
-* 沙盒：相关 Customer Journey Analytics 连接中使用的沙盒
+对连接管理的访问应限制到核心管理组。 连接配置涉及与引入Customer Journey Analytics的数据的卷分配有关的合同问题。
 
->[!IMPORTANT]
+>[!MORELIKETHIS]
 >
->您可以将多个 [!DNL Experience Platform] 数据集合并到单个连接中。
+>[访问控制](/help/technotes/access-control.md)。
+

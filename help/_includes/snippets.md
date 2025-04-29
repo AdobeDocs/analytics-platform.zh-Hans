@@ -1,8 +1,8 @@
 ---
-source-git-commit: a85efff8720d8fdf02b0d1290fedf17654be48e3
+source-git-commit: 3ca1004fc1bbe3b60f32348d7da84718aef3a057
 workflow-type: tm+mt
-source-wordcount: '3759'
-ht-degree: 30%
+source-wordcount: '4061'
+ht-degree: 34%
 
 ---
 # 片段
@@ -238,3 +238,19 @@ ht-degree: 30%
 >[!INFO]
 >
 >在此文档中，特定的B2B文章或功能仅在Customer Journey Analytics B2B edition中可用，并标有[!BADGE B2B edition]{type=Informative}。
+
+
+## 通用数据集设置 {#common-dataset-settings}
+
+| 设置 | 描述 |
+|---|---|
+| **[!UICONTROL 导入新数据]** | 如果您想建立持续连接，请启用此选项。通过持续的连接，添加到数据集的新数据批次会自动在工作区中提供。 |
+| **[!UICONTROL 数据集回填]** | 启用 **[!UICONTROL 回填所有现有数据]** 以确保所有现有数据均已回填。<br/><br/>选择 **[!UICONTROL 请求补填]** 填充特定时期的历史数据。您最多可以定义 10 个数据集回填期。<ol><li>通过输入开始和结束数据或使用![日程表](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)选择日期来定义期间。</li><li>选择 **[!UICONTROL 队列补填]** 将回填内容添加到列表中，或 **[!UICONTROL 取消]** 取消。</li></ol>对于每个条目，选择 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 编辑时段，或选择 ![删除](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) 删除该条目。<br/><br/>在回填上：<ul><li>您可以单独回填每个数据集。</li><li>您会优先处理新添加到此连接中数据集的新数据，因此这些新数据的滞后时间最短。</li><li>任何回填（历史）数据的导入速度都会比较慢。历史数据的数量会影响延迟。</li><li>Analytics Source Connector 会为生产沙盒导入最多 13 个月的数据（无论大小）。非生产沙盒的回填期限为 3 个月。</li></ul> |
+| **[!UICONTROL 批次状态]** | 可能的状态指示符有：<ul><li>成功</li><li>X 回填处理</li><li>关</li></ul> |
+| **[!UICONTROL 数据集 ID]** | 此 ID 是自动生成的。 |
+| **[!UICONTROL 描述]** | 创建数据集时为此数据集提供的描述。 |
+| **[!UICONTROL 记录数]** | 数据集的大小。 |
+| **[!UICONTROL 架构]** | 在 Adobe Experience Platform 中创建数据集所依据的架构。 |
+| **[!UICONTROL 数据集]** | 数据集的名称。 |
+| **[!UICONTROL 预览：*数据集名称&#x200B;*]** | 预览前10行和前10列的数据集。 |
+| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL 移除]** | 您可以[删除数据集](/help/connections/create-connection.md#delete-a-dataset)而不删除整个连接。 从连接中删除数据集可减少数据引入所涉及的成本，以及重新创建整个连接和相关数据视图的繁琐过程。 |
