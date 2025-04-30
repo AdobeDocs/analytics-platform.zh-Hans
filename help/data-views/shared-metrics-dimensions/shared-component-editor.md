@@ -1,7 +1,8 @@
 ---
 title: 共享组件编辑器
 description: 创建或编辑共享维度和量度。
-source-git-commit: d2c6605cc440c293aca279c1583bac964055d277
+exl-id: 3f6a808a-d6ac-4a47-a5e2-63b9f17952e8
+source-git-commit: 62df631eeac40f2009304d91c93950c38a260dab
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 右上角有三个按钮：
 
-* **[!UICONTROL 关闭]**&#x200B;或&#x200B;**[!UICONTROL 取消]**：如果保存了所有更改，则&#x200B;**[!UICONTROL 关闭]**&#x200B;按钮将关闭编辑器。 如果存在任何未保存的更改，**[!UICONTROL 取消]按钮将关闭编辑器而不保存这些更改。
+* **[!UICONTROL 关闭]**&#x200B;或&#x200B;**[!UICONTROL 取消]**：如果保存了所有更改，则&#x200B;**[!UICONTROL 关闭]**&#x200B;按钮将关闭编辑器。 如果存在任何未保存的更改，则&#x200B;**[!UICONTROL 取消]**&#x200B;按钮将关闭编辑器而不保存这些更改。
 * **[!UICONTROL 保存]**：保存所有组件并保持编辑器处于打开状态。
 * **[!UICONTROL 保存并完成]**：保存所有组件并关闭编辑器。
 
