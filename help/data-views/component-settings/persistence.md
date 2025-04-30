@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '1053'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -20,17 +20,17 @@ ht-degree: 77%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_persistence"
 >title="持久性"
->abstract="配置应用于维度的默认分配模型。分配在报告中的区段之前应用。 请参阅[分配设置](/help/data-views/component-settings/persistence.md#allocation-settings)、[过期设置](/help/data-views/component-settings/persistence.md#expiration-settings)、[绑定维度](/help/data-views/component-settings/persistence.md#binding-dimension)和[绑定量度](/help/data-views/component-settings/persistence.md#binding-metric)的详细信息。"
+>abstract="配置应用于维度的默认分配模型。在报告中，分配在区段之前进行。请参阅[分配设置](/help/data-views/component-settings/persistence.md#allocation-settings)、[过期设置](/help/data-views/component-settings/persistence.md#expiration-settings)、[绑定维度](/help/data-views/component-settings/persistence.md#binding-dimension)和[绑定量度](/help/data-views/component-settings/persistence.md#binding-metric)的详细信息。"
 
 <!-- markdownlint-enable MD034 -->
 
 
 
-[!UICONTROL 持久性]是给定维度值能够归因于其设置的事件之外的量度。 它使用分配和有效期限的组合。
+[!UICONTROL 持久性]是指某个给定的维度值能否归因于其所设置事件之外的某个量度。它使用分配和有效期限的组合。
 
 ![突出显示“持久性”选项的数据视图窗口](../assets/persistence.png)
 
-* 通过&#x200B;**分配**，可决定一次可在单个列中保留多个维度项时要保留的值。
+* 通过&#x200B;**分配**&#x200B;可让您决定在一列中一次可保留多个维度项的情况下保留哪个值。
 
   >[!NOTE]
   >
@@ -40,12 +40,12 @@ ht-degree: 77%
 
 * 通过&#x200B;**有效期限**，可决定维度项在从中设置它的事件之外保持多久。
 
-[!UICONTROL 持久性]仅在维度上可用，并可追溯至将它应用于的数据。它是紧接应用分段或其他分析操作之前发生的数据转换。
+[!UICONTROL 持久性]仅在维度上可用，并可追溯至将它应用于的数据。这一数据转换在应用分段或其他分析操作之前立即发生。
 
 | 设置 | 描述 |
 | --- | --- |
 | [!UICONTROL 设置持久性] | 为维度启用持久性。如果未启用持久性，则维度仅与同一事件中存在的指标相关。默认下禁用此设置。 |
-| [!UICONTROL 分配] | 用于为持久性指定维度中使用的分配模型。选项如下：<ul><li>**[!UICONTROL 最近]**：维度中的值会一直保留，直到被后续值覆盖</li><li> **[!UICONTROL 原始]**：此维度的第一个值会保留，且不会被后续值覆盖</li><li>**[!UICONTROL 所有]**：此维度的所有值同时保留</li><li>**[!UICONTROL 第一个已知]**：此维度的第一个值已使用，将应用于之前和之后的所有事件。</li><li>**[!UICONTROL 最后一个已知]**：已使用此维度的最后一个值，并将应用于之前和之后的所有事件。</li></ul> |
+| [!UICONTROL 分配] | 用于为持久性指定维度中使用的分配模型。选项如下：<ul><li>**[!UICONTROL 最近]**：此维度中的值一直保持，直到被后续值覆盖。</li><li> **[!UICONTROL 原始]**：此维度的第一个值保持不变，不会被后续值覆盖</li><li>**[!UICONTROL 全部]**：同时保持此维度的所有值</li><li>**[!UICONTROL 第一个已知]**：使用此维度的第一个值，并将其应用于之前和之后的所有事件。</li><li>**[!UICONTROL 最后一个已知]**：使用此维度的最后一个值，并将其应用于之前和之后的所有事件。</li></ul> |
 | [!UICONTROL 有效期限] | 用于为维度指定持久性窗口。选项如下： <ul><li>**[!UICONTROL 会话]**（默认）</li><li>**[!UICONTROL 人员]**</li><li>**[!UICONTROL 自定义时间]**</li><li>**[!UICONTROL 量度]**</li></ul>。可能需要能够在购买（如内部搜索词或其他促销用例）时让维度到期。可设置的最长有效期限为 90 天。如果选择[!UICONTROL 全部]分配，则仅有[!UICONTROL 会话]或[!UICONTROL 人员]有效期限可用。 |
 
 {style="table-layout:auto"}
@@ -90,11 +90,11 @@ ht-degree: 77%
 关于可用的有效期限设置的详细信息。
 
 * **会话**：在给定会话后到期。默认有效期限时段。
-* **人员报告窗口**：在报告窗口结束时过期。
-* **全局帐户报告窗口** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}：在报告窗口结束时过期。
-* **帐户报告窗口** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}：在报告窗口结束时过期。
-* **机会报告窗口** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}：在报告窗口结束时过期。
-* **购买群组报告窗口** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}：报告窗口结束时过期。
+* **人员报告期**：在报告期结束时到期。
+* **全球帐户报告期** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}：报告期结束时到期。
+* **帐户报告期** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}：报告期结束时到期。
+* **机会报告期** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}：报告期结束时到期。
+* **购买群组报告期** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}：报告期结束时到期。
 * **自定义时间**：在指定时段（最多 90 天）后过期。仅对“原有”和“最近”分配模型有此有效期限选项。在使用基于时间的有效期限时，将考虑报告时段（最长 90 天）开始之前的值。
 * **量度**：当可在事件中看到此量度时，立即使维度中的持久值过期。可将任何指标用作此维度的有效期限结束。仅对“原有”和“最近”分配设置有此有效期限选项。
 
