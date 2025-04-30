@@ -3,16 +3,16 @@ title: 当前 Customer Journey Analytics 发行说明
 description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 4e65e2fd1720b63b9dec341d4a67f7356df77fcb
+source-git-commit: 8a8244bff45017a4b021599df6ff3dc37cf8e1c6
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 76%
+source-wordcount: '890'
+ht-degree: 72%
 
 ---
 
 # 当前的 Adobe Customer Journey Analytics 发行说明（2025 年 4 月）
 
-**上次更新时间**：2025年4月28日
+**上次更新时间**：2025年4月30日
 
 这些发行说明涵盖 2025 年 3 月 27 日至 5 月 15 日的发行期。Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
@@ -20,6 +20,7 @@ ht-degree: 76%
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **增加完整表导出限制** | 我们将增加客户可以通过完整表格导出使用的列数（从5个维度和5个指标导出为10个维度和10个指标）。 这适用于所有Customer Journey Analytics层。 可导出的行数的权利没有变化。 |  | 2025 年 4 月 30 日 |
 | **数值维度的“无值”行项目的更新** | 对于数值维度，此更新可让您<ul><li>在区段中使用“无值”维度项。</li><li>在报告中对“无值”行项目进行细分。</li></ul> [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/no-value-options#numeric) | 2025 年 3 月 27 日 |
 | **Adobe Content Analytics** | Adobe Content Analytics 可让您快速轻松地调查大量内容数据，以了解趋势、发现异常、识别内容疲劳并从内容曝光中获取见解。<p>开箱即用，您可以使用预建的报告模板和资产检查器等新功能节省时间。此功能不仅可以让您根据数据直观地查看资产，还可以打开每个资产以获取汇总的详细信息，包括绩效、投放环境、属性等。<p>您可以在完整的客户历程背景中调查这组新的内容数据，以回答重要的业务问题、评估内容绩效、增强分段、识别优化机会并定义新的待激活的受众。<p>内容分析是 Customer Journey Analytics 的附加功能。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/content-analytics/content-analytics) |  | 2025 年 3 月 27 日 |
 | **媒体收集：Adobe Source Connector 更新了新的媒体报告 XDM** | Analytics 源连接器会自动将 Adobe Analytics 中的流媒体数据映射到 Web SDK 使用的相同字段。以前，数据被映射到旧位置和新位置，但未来只使用新位置。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/xdm-var-mapping) |  | 2025 年 3 月 31 日 |

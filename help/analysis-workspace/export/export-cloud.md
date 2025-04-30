@@ -5,7 +5,7 @@ title: 将 Customer Journey Analytics 报告导出至云
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: 158d75f81490edca2b5219a9b3ede2fbcdcc5901
 workflow-type: tm+mt
 source-wordcount: '2285'
 ht-degree: 98%
@@ -171,7 +171,7 @@ ht-degree: 98%
 * 搜索过滤
 * 静态行
 * 日期对齐
-* 摘要数据集的量度
+* 来自摘要数据集的量度
 * 动态维度
 
   如需了解更多信息，请参阅[自由格式表中的动态与静态维度项](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)。
@@ -189,7 +189,7 @@ ht-degree: 98%
    * 已[启用持久性](/help/data-views/component-settings/persistence.md)
    * 未使用[绑定维度](/help/use-cases/data-views/binding-dimensions-metrics.md)
 * 来自引用不同[对象数组](/help/use-cases/object-arrays.md)的字段的多个维度。（允许多个维度引用同一对象数组。）
-* 每个报告包含超过 5 个维度和 5 个量度（最多支持 5 个维度和 5 个量度）
+* 每个报告包含超过 10 个维度和 10 个量度（最多支持 10 个维度和 10 个量度）
 * 在表列中：
    * 日期范围
    * 维度
@@ -227,8 +227,8 @@ ht-degree: 98%
 | 生成自定义报告 | 是 | 是 |
 | 计算量度 | 是 | 否 |
 | 区段 | 是 | 有限制 |
-| 维度 | 限 5 个 | 无限制 |
-| 量度 | 限 5 个 | 无限制 |
+| 维度 | 限 10 个 | 无限制 |
+| 量度 | 限 10 个 | 无限制 |
 | 报告行 | 限额为 300 万、3000 万、1.5 亿或 3 亿，具体取决于等级 | 无限制 |
 | 报告数量 | 无限制 | 无限制 |
 | 临时（一次性）传递 | 是 | 是 |

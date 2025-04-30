@@ -4,9 +4,9 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 1a88be1f79bc6dc07f849af5f32f3472105ee3ed
+source-git-commit: 8a8244bff45017a4b021599df6ff3dc37cf8e1c6
 workflow-type: tm+mt
-source-wordcount: '5103'
+source-wordcount: '5133'
 ht-degree: 94%
 
 ---
@@ -20,6 +20,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2025 年 4 月** | |
+| 增加了完整表格导出限制 | 将客户可以在完整表格导出过程中使用的[列数](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/export/export-cloud#comparison-of-full-table-export-in-customer-journey-analytics-to-data-warehouse-in-adobe-analytics)从5个维度和5个量度更改为10个维度和10个量度。 |
 | 连接 | 修订并更新了即将推出的客户历程B2B edition的客户历程连接文档。 |
 | 产品分析用例 | 在Customer Journey Analytics](/help/use-cases/product-analysis.md)中添加了[产品分析。 |
 | 共享的量度和维度 | 添加了有关[共享量度和维度](/help/data-views/shared-metrics-dimensions/smd-overview.md)功能的文档。 |
