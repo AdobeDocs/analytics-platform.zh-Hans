@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
-workflow-type: ht
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+workflow-type: tm+mt
 source-wordcount: '376'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 1. 选择一个维度.
 1. 选择 ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL 摘要数据组]**。
 1. 启用&#x200B;**[!UICONTROL 创建分组]**。
-1. 从&#x200B;**[!UICONTROL 维度]**&#x200B;下拉列表中选择一个维度，该维度是您想要与第一步中选定的维度进行分组的维度。请注意，下拉列表中仅提供您已添加到数据视图中的维度。
+1. 从&#x200B;**[!UICONTROL Dimension]**&#x200B;下拉菜单中选择一个维度，您从第一步中将其与所选维度分组。 请注意，只有已添加到数据视图的维度才从下拉菜单中可用。
 1. 此外，可以启用&#x200B;**[!UICONTROL 在报告中隐藏]**，以在报告中隐藏分组维度。启用此选项与单独在分组维度上配置&#x200B;**[!UICONTROL 在报告中隐藏]**&#x200B;类似。有关更多信息，请参阅[组件设置](overview.md)。
 1. 或者，若要向分组添加其他维度，请选择 ![添加](/help/assets/icons/Add.svg) **[!UICONTROL 向组添加维度]**。<br/>您最多可以添加九个维度，因为摘要数据组的上限是十个维度。
 

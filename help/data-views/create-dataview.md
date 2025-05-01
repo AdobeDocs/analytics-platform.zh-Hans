@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 6213cc09800743a1f7cb4828d71ee731439e529b
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '2125'
-ht-degree: 85%
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 85%
 
 要创建或编辑数据视图：
 
-1. 登录到[Customer Journey Analytics](https://analytics.adobe.com)，然后在顶部菜单中选择&#x200B;**[!UICONTROL 数据视图]**（可以选择从&#x200B;**[!UICONTROL 数据管理]**&#x200B;中进行）。
+1. 登录 [Customer Journey Analytics](https://analytics.adobe.com)，在顶部菜单中选择&#x200B;**[!UICONTROL 数据视图]**，也可以从&#x200B;**[!UICONTROL 数据管理]**&#x200B;中选择。
 1. 要创建数据视图，请选择&#x200B;**[!UICONTROL “创建新的数据视图”。]**&#x200B;或者，您可以从数据视图列表中选择现有数据视图进行编辑。
 
 
@@ -40,9 +40,9 @@ ht-degree: 85%
 
 ![配置数据视图](assets/dataview-configure.png)
 
->[!TAB B2B edition]
+>[!TAB B2B Edition]
 
-![配置数据视图B2B](assets/dataview-configure-b2b.png)
+![配置数据视图 B2B](assets/dataview-configure-b2b.png)
 
 >[!ENDTABS]
 
@@ -70,7 +70,7 @@ ht-degree: 85%
 | 设置 | 描述 |
 | --- | --- |
 | **[!UICONTROL 连接]** | 此字段将数据视图链接到您之前建立的连接，其中包含一个或多个 Adobe Experience Platform 数据集。 |
-| **[!UICONTROL 名称]** | 必填。数据视图的名称。此值显示在 Analysis Workspace 右上角的下拉列表中。 |
+| **[!UICONTROL 名称]** | 必填。数据视图的名称。此值显示在Analysis Workspace右上角的下拉菜单中。 |
 | **[!UICONTROL 外部 ID]** | 必填。您可以在外部源（例如商业智能工具）中使用的数据视图的名称。默认值为 `unspecified`。如果您未指定外部 ID，则名称将从数据视图的名称生成，并用下划线替换空格。 |
 | **[!UICONTROL 描述]** | 可选。Adobe 建议输入详细描述，以便用户了解为什么存在该数据视图以及为谁设计了它。 |
 
@@ -101,17 +101,17 @@ ht-degree: 85%
 
 ### 容器
 
-指定数据视图的容器的名称。容器名称在[区段](/help/components/filters/filters-overview.md#Filter-containers)中经常使用。
+指定数据视图的容器的名称。容器名称经常在[区段](/help/components/filters/filters-overview.md#Filter-containers)中使用。
 
 | 设置 | 描述 |
 | --- | --- |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL 全局帐户容器名称&#x200B;]** | `Global Account` （默认）。 [!UICONTROL 全局帐户]容器包含指定时间段内全局帐户的每个会话和事件。 如果您的组织使用其他术语，可在此处重命名容器。 |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL 帐户容器名称&#x200B;]** | `Account` （默认）。 [!UICONTROL 帐户]容器包含指定时间段内帐户的每个会话和事件。 如果您的组织使用其他术语，可在此处重命名容器。 |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL 机会容器名称&#x200B;]** | `Opportunity` （默认）。 [!UICONTROL 机会]容器包含指定时间段内机会的每个会话和事件。 如果您的组织使用其他术语，可在此处重命名容器。 |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL 购买团体容器名称&#x200B;]** | `Buying Group` （默认）。 [!UICONTROL 购买群组]容器包括指定时间段内购买群组的每个会话和事件。 如果您的组织使用其他术语，可在此处重命名容器。 |
-| **[!UICONTROL 人员容器名称]** | `Person` （默认）。 [!UICONTROL 人员]容器包括人员在指定的时间范围内的每个会话和事件。如果您的组织使用不同的用语（例如，“访客”或“用户”），可在此处将该容器重命名。 |
-| **[!UICONTROL 会话容器名称]** | `Session` （默认）。 通过[!UICONTROL 会话]容器可以识别页面交互、营销活动或特定会话的转化。可将此容器重命名为“访问”或您的组织更喜欢的任何其他用语。 |
-| **[!UICONTROL 事件容器名称]** | `Event` （默认）。 [!UICONTROL 事件]容器定义数据集中的个别事件。如果您的组织使用不同的用语（例如，“点击”或“页面查看”），可在此处将该容器重命名。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全球帐户容器名称&#x200B;]** | `Global Account`（默认）。[!UICONTROL 全球帐户]容器包括全球帐户在指定的时间范围内的每个会话和事件。如果您的组织使用不同的术语，您可以在此处重命名容器。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户容器名称&#x200B;]** | `Account`（默认）。[!UICONTROL 帐户]容器包括在指定的时间范围内帐户的每个会话和事件。如果您的组织使用不同的术语，您可以在此处重命名容器。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 机会容器名称&#x200B;]** | `Opportunity`（默认）。[!UICONTROL 机会]容器包括在指定的时间范围内机会的每个会话和事件。如果您的组织使用不同的术语，您可以在此处重命名容器。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 购买群组容器名称&#x200B;]** | `Buying Group`（默认）。[!UICONTROL 购买群组]容器包括在指定的时间范围内购买群组的每个会话和事件。如果您的组织使用不同的术语，您可以在此处重命名容器。 |
+| **[!UICONTROL 人员容器名称]** | `Person`（默认）。[!UICONTROL 人员]容器包括人员在指定的时间范围内的每个会话和事件。如果您的组织使用不同的用语（例如，“访客”或“用户”），可在此处将该容器重命名。 |
+| **[!UICONTROL 会话容器名称]** | `Session`（默认）。通过[!UICONTROL 会话]容器可以识别页面交互、营销活动或特定会话的转化。可将此容器重命名为“访问”或您的组织更喜欢的任何其他用语。 |
+| **[!UICONTROL 事件容器名称]** | `Event`（默认）。[!UICONTROL 事件]容器定义数据集中的个别事件。如果您的组织使用不同的用语（例如，“点击”或“页面查看”），可在此处将该容器重命名。 |
 
 {style="table-layout:auto"}
 
@@ -184,13 +184,13 @@ ht-degree: 85%
 ## 设置
 
 1. 选择&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡。
-1. 配置区段以应用于整个数据视图。 请参阅下面的[设置（区段）](#settings-filters)。
+1. 配置应用于整个数据视图的区段。请参阅下面的[设置（区段）](#settings-filters)。
 1. 配置会话超时和量度。请参阅下列[会话设置。](#session-settings)
 1. 选择&#x200B;**[!UICONTROL “保存并继续”]**，以继续配置新的或现有的数据视图。选择&#x200B;**[!UICONTROL “保存”]**，以保存现有数据视图的配置。
 
 ### 设置（区段）
 
-您可以添加应用于整个数据视图的区段。 此区段适用于您在Workspace中运行的任何报表。 将区段从左边栏中的列表拖到&#x200B;**[!UICONTROL 添加区段]**&#x200B;字段。
+您可以添加要应用于整个数据视图的区段。此区段应用于您在 Workspace 中运行的任何报告。请将某个区段从左边栏中的列表拖至&#x200B;**[!UICONTROL 添加区段]**&#x200B;字段。
 
 ### 会话设置
 
@@ -198,8 +198,8 @@ ht-degree: 85%
 
 ### 数据预览
 
-数据预览会将此数据视图的数据与连接的数据进行比较（对于各种容器）。 预览百分比基于过去90天内的连接总数。
+数据预览中（为各种容器）将此数据视图的数据与连接的数据进行比较。预览百分比基于过去 90 天连接中的总数。
 
-如果未加载预览，则您的连接可能仍在回填。
+如果未加载预览，则您的连接有可能仍在进行回填。
 
 指定所有需要的设置后，单击&#x200B;**[!UICONTROL 保存并完成]**。

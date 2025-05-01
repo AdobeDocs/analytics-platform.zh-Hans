@@ -4,10 +4,10 @@ title: 组合图表可视化
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '603'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -45,14 +45,14 @@ _请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _*
 * 您可以在单个[!UICONTROL 组合图表]中添加多个比较。
 * 如果添加一个或多个比较，则它们必须是同一类型，例如[!UICONTROL 时间比较]。
 * 最多可添加 5 个比较。
-* 您最多可以向一个量度应用3个区段。
+* 您最多可以为一个量度应用 3 个区段。
 * 组合图表中不支持计算量度。
 
 ## 使用
 
 1. 添加![注释](/help/assets/icons/ComboChart.svg)[!UICONTROL 组合]可视化。请参阅[将可视化添加到面板](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 
-1. 从下拉列表中，为 X 轴选择一个维度，为 Y 轴选择一个量度。
+1. 从下拉菜单中，选择X轴的维和Y轴的量度。
 
 1. 选择您要使用的[!UICONTROL 线形比较]的类型。
 

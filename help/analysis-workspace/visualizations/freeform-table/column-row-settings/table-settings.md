@@ -4,10 +4,10 @@ title: 行设置
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1046'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -36,9 +36,9 @@ ht-degree: 92%
 
 1. 单击表格第一列顶部&#x200B;**[!UICONTROL 行数]**&#x200B;旁边的数字。
 
-   ![自由格式表显示显示行数的下拉列表。选择了 400 行。](assets/change-row-count.gif)
+   ![自由格式表，显示所显示行数的下拉菜单。 选择了 400 行。](assets/change-row-count.gif)
 
-1. 从下拉列表中，选择您希望表显示的行数。
+1. 从下拉菜单中，选择您希望表显示的行数。
 
 
 ## Context-menu
@@ -90,4 +90,4 @@ ht-degree: 92%
 
 ## 更改行高
 
-您可以将项目的视图密度设置为&#x200B;**[!UICONTROL 紧凑]**、**[!UICONTROL 舒适]**&#x200B;和&#x200B;**[!UICONTROL 展开]**。 [了解详情](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density)。
+您可以将项目的视图密度设置为 **[!UICONTROL 紧凑]**、**[!UICONTROL 舒适]** 和 **[!UICONTROL 扩展]**。[了解详情](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density)。

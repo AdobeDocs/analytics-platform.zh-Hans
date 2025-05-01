@@ -2,9 +2,9 @@
 title: 共享组件编辑器
 description: 创建或编辑共享维度和量度。
 exl-id: 3f6a808a-d6ac-4a47-a5e2-63b9f17952e8
-source-git-commit: 62df631eeac40f2009304d91c93950c38a260dab
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 * **架构字段选择器**：找到所需的架构字段并将其拖动到包含的组件区域。
    * **连接**：活动连接。 更改[共享量度和维度管理器](smd-overview.md)中的活动连接。
-   * **组件列表下拉列表**：您可以选择选择[!UICONTROL 架构字段]（全新共享维度和量度）或[!UICONTROL 量度和维度]（现有共享组件）。
+   * **组件列表**：您可以从下拉菜单中选择[!UICONTROL 架构字段]（全新共享维度和量度）或[!UICONTROL 量度和维度]（现有共享组件）。
    * **搜索**：使用![搜索图标](/help/assets/icons/Search.svg)文本搜索按名称定位所需的架构字段或共享组件。 您还可以使用![筛选器图标](/help/assets/icons/Filter.svg)筛选器来缩小组件列表的范围。 `Is not deprecated`筛选器默认处于活动状态。
    * **创建派生字段**：允许您[创建派生字段](/help/data-views/derived-fields/derived-fields.md)。
 * **包含的组件**：您配置为共享的组件。 创建共享组件时，您可以将多个架构字段拖至此区域以同时创建多个组件。 编辑共享组件时，您可以选择要编辑的多个组件，这将列出此区域中的所有选定组件。

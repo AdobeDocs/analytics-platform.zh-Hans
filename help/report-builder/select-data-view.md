@@ -6,7 +6,7 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: bf765144-34f8-465b-b06d-53e4ca91014a
-source-git-commit: 9794779894fbecb433c16d108c555c5f81a4b491
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # 选择数据视图
 
-您可以从下拉列表中选择数据视图，或从单元格中选择数据视图，然后使用新的数据视图自动更新数据块。
+您可以从下拉菜单中选择数据视图，或从单元格中选择数据视图，并使用新的数据视图自动更新数据块。
 
 ## 从单元格选择数据视图
 

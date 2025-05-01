@@ -5,10 +5,10 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 89%
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 89%
 
 您可以管理以下组件：
 
-* [区段](filters/filters-overview.md)：生成、管理、共享强大而集中的受众区段，并将其应用于您的报表。 区段允许您根据特性或交互情况识别人员的子集。
+* [区段](filters/filters-overview.md)：构建、管理、共享强大的、有针对性的受众区段，并将其应用到您的报告中。区段允许您根据特性或交互情况识别人员的子集。
 * [计算量度](calc-metrics/calc-metr-overview.md)：使用量度和公式作为新组件以便在报告中使用
 * [日期范围](date-ranges/create.md)：自定义和优化 Analysis Workspace 中提供的日期范围。
 * [注释](/help/components/annotations/overview.md)：向您的组织传达上下文数据的细微差别和洞察。
@@ -36,7 +36,7 @@ ht-degree: 89%
 
 ## Analysis Workspace 组件
 
-Analysis Workspace中的组件包括量度、维度、区段和日期范围，您可以将这些组件拖放到Workspace项目中的面板和可视化图表上。 您创建的自定义组件会被添加到这些面板中，例如计算量度或自定义日期范围。
+Analysis Workspace 中的组件包括量度、维度、区段和日期范围，您可以将其拖放到 Workspace 项目中的面板和可视化图表中。您创建的自定义组件会被添加到这些面板中，例如计算量度或自定义日期范围。
 
 要访问“组件”面板，请在按钮面板中选择![Curate](/help/assets/icons/Curate.svg)**[!UICONTROL 组件]**。
 
@@ -72,7 +72,7 @@ Analysis Workspace中的组件包括量度、维度、区段和日期范围，�
    | ![Share](/help/assets/icons/ShareAlt.svg) [!UICONTROL **分享**] | 将组件与组织中的用户共享。此选项仅对自定义组件可用，例如区段或计算指标。 |
    | ![Delete](/help/assets/icons/Delete.svg) [!UICONTROL **删除**] | 删除不再需要的组件。此选项仅对自定义组件可用，例如区段或计算指标。 |
 
-自定义组件也可通过其相应的组件管理器进行管理。例如，请参阅[管理区段](/help/components/filters/manage-filters.md)。
+自定义组件也可通过其相应的组件管理器进行管理。例如，参阅[管理区段](/help/components/filters/manage-filters.md)。
 
 ## 管理组件列表
 
@@ -84,9 +84,9 @@ Analysis Workspace中的组件包括量度、维度、区段和日期范围，�
 
 2. 在搜索字段中，开始键入要在项目中使用的组件名称。
 
-   颜色和图标标识的是组件的类型。**维度** ![Dimension图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)为橙色，**区段** ![区段图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg)为蓝色，**日期范围** ![日期范围图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)为紫色，**量度** ![量度图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg)为绿色。<br/>Adobe图标![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg)表示计算量度模板或区段模板。 计算器图标 ![Calculator icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) 表示组织管理员创建的计算量度。
+   颜色和图标标识的是组件的类型。**维度** ![Dimension图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)为橙色，**区段** ![区段图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg)为蓝色，**日期范围** ![日期范围图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)为紫色，**量度** ![量度图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg)为绿色。<br/>Adobe 图标 ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) 表示计算量度模板或区段模板。计算器图标 ![Calculator icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) 表示组织管理员创建的计算量度。
 
-3. 从下拉列表中选择组件。
+3. 从下拉菜单中选择组件。
 
 ### 筛选
 
@@ -102,7 +102,7 @@ Analysis Workspace中的组件包括量度、维度、区段和日期范围，�
    | ![Star](/help/assets/icons/Star.svg) | **[!UICONTROL 收藏夹]** | 仅显示收藏夹列表中的组件。<br/>有关将组件添加到收藏夹列表的信息，请参阅[管理组件](#manage-components)。 |
    | ![Dimensions](/help/assets/icons/Dimensions.svg) | **[!UICONTROL 维度]** | 仅显示维度的组件。 |
    | ![Event](/help/assets/icons/Event.svg) | **[!UICONTROL 量度]** | 仅显示量度的组件。 |
-   | ![Segmentation](/help/assets/icons/Segmentation.svg) | **[!UICONTROL 区段]** | 仅显示属于区段的组件。 |
+   | ![Segmentation](/help/assets/icons/Segmentation.svg) | **[!UICONTROL 区段]** | 仅显示区段的组件。 |
    | ![Calendar](/help/assets/icons/Calendar.svg) | **[!UICONTROL 日期范围]** | 仅显示日期范围的组件。 |
    | ![Label](/help/assets/icons/Label.svg) | **[!UICONTROL *标记名称&#x200B;*]** | 仅显示具有特定选定标记的组件。Adobe 模板有一个专用标记，它是 Adobe 提供的[默认计算量度](/help/components/calc-metrics/default-calcmetrics.md)。 |
 

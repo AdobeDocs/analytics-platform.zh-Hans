@@ -4,10 +4,10 @@ title: 可视化图表调色板
 feature: Workspace Basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
-workflow-type: ht
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -39,6 +39,6 @@ ht-degree: 100%
 ## 更改调色板：
 
 1. 导航至&#x200B;**[!UICONTROL 工作区]** > **[!UICONTROL 项目]** > **[!UICONTROL 项目信息和设置]**。
-1. 从&#x200B;**[!UICONTROL 项目调色板]**&#x200B;下拉列表中，您可以从 5 种预设配色方案中选取一种配色方案。
+1. 从&#x200B;**[!UICONTROL 项目调色板]**&#x200B;下拉菜单中，您可以选择预设配色方案之一。
 1. 要指定自己的调色板，请选择预设选项下方的&#x200B;**[!UICONTROL 自定义调色板]**。
 1. 指定最多 16 个以逗号分隔的十六进制值（例如，`#00a4e4`）来创建您自己的调色板。例如，如果您只指定 4 个值，那么系统将在包含更多颜色的可视化图表中自动重复使用颜色。

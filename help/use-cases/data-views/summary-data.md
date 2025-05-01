@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '5200'
+source-wordcount: '5202'
 ht-degree: 15%
 
 ---
@@ -313,8 +313,8 @@ ht-degree: 15%
 1. 选择架构名称&#x200B;**[!UICONTROL 示例摘要数据架构]**&#x200B;旁边的![AddCircle](/help/assets/icons/AddCircle.svg)。 将打开一个&#x200B;**[!UICONTROL 字段属性]**&#x200B;面板，允许您添加字段的详细信息。
    1. 输入&#x200B;**[!UICONTROL 字段名称]**： `campaign_id`
    1. 输入&#x200B;**[!UICONTROL 显示名称]**： `campaign_id`
-   1. 从&#x200B;**[!UICONTROL 选择数据类型]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 类型]**： **[!UICONTROL 字符串]**
-   1. 确保已选择&#x200B;**[!UICONTROL 分配给]** **[!UICONTROL 字段组]**，并从下拉列表中选择&#x200B;**[!UICONTROL 示例摘要数据]**。
+   1. 从&#x200B;**[!UICONTROL 选择数据类型]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 类型]**： **[!UICONTROL 字符串]**
+   1. 确保已选择&#x200B;**[!UICONTROL 分配给]** **[!UICONTROL 字段组]**，并从下拉菜单中选择&#x200B;**[!UICONTROL 示例摘要数据]**。
    1. 向下滚动到底部，然后选择&#x200B;**[!UICONTROL 应用]**。
 1. 对摘要数据的其他字段重复上一步骤。 有关正确的值，请参阅下表。
 
@@ -362,7 +362,7 @@ ht-degree: 15%
    1. 从&#x200B;**[!UICONTROL 将CSV映射到XDM架构]**&#x200B;面板中选择&#x200B;**[!UICONTROL 启动]**。
 1. 在&#x200B;**[!UICONTROL 工作流]** > **[!UICONTROL 将CSV映射到XDM架构]**&#x200B;向导的&#x200B;**[!UICONTROL 数据流详细信息]**&#x200B;步骤中：
    1. 为&#x200B;**[!UICONTROL 目标数据集]**&#x200B;选择&#x200B;**[!UICONTROL 现有数据集]**。
-   1. 从下拉列表中选择&#x200B;**[!UICONTROL 示例摘要数据数据集]**。
+   1. 从下拉菜单中选择&#x200B;**[!UICONTROL 示例摘要数据数据集]**。
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
 1. 在&#x200B;**[!UICONTROL 工作流]** > **[!UICONTROL 将CSV映射到XDM架构]**&#x200B;向导的&#x200B;**[!UICONTROL 选择数据]**&#x200B;步骤中：
    1. 将包含CSV格式摘要数据的文件拖放到&#x200B;**[!UICONTROL 拖放文件]**。 或者，使用&#x200B;**[!UICONTROL 选择文件]**&#x200B;选择您的文件。
@@ -391,8 +391,8 @@ ht-degree: 15%
 1. 选择&#x200B;**[!UICONTROL 创建新连接]**。
 1. 在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL 无标题连接]**&#x200B;中：
    1. 输入&#x200B;**[!UICONTROL 连接名称]**，例如`Example Connection Using Summary Data`。
-   1. 从沙盒下拉列表中选择包含您创建的数据集和其他要包含的数据集的沙盒。
-   1. 从&#x200B;**[!UICONTROL 平均每日事件数]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 小于100万]**。
+   1. 从沙盒下拉菜单中选择一个沙盒，其中包含您创建的数据集以及其他要包含的数据集。
+   1. 从&#x200B;**[!UICONTROL 平均每日事件数]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 小于100万]**。
    1. 选择&#x200B;**[!UICONTROL 添加数据集]**。
    1. 在&#x200B;**[!UICONTROL 添加数据集]**&#x200B;向导的&#x200B;**[!UICONTROL 选择数据集]**&#x200B;步骤中：
       1. 搜索![搜索](/help/assets/icons/Search.svg)并选择&#x200B;**[!UICONTROL 示例摘要数据数据集]**、**[!UICONTROL 示例事件数据数据集]**&#x200B;和&#x200B;**[!UICONTROL 示例查找数据数据集]**。
@@ -483,7 +483,7 @@ ht-degree: 15%
          ![跟踪代码摘要数据](../assets/tracking-code-summary-data.png)
          1. 展开![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL 摘要数据组]**。
          1. 启用&#x200B;**[!UICONTROL 创建分组]**。
-         1. 从&#x200B;**[!UICONTROL Dimension]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 促销活动ID]**。 此步骤可确保正确组合事件数据和摘要数据以便进行报告。
+         1. 从&#x200B;**[!UICONTROL Dimension]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 促销活动ID]**。 此步骤可确保正确组合事件数据和摘要数据以便进行报告。
          1. 您可以选择在报表&#x200B;]**中启用**[!UICONTROL &#x200B;隐藏。 [!UICONTROL 在报表中隐藏]确保选定的维度（[!UICONTROL 促销活动ID]）在Analysis Workspace和其他Customer Journey Analytics报表工具中隐藏。 如果已启用此选项，则可以验证选项：
             1. 在&#x200B;**[!UICONTROL 维度]**&#x200B;列表中选择&#x200B;**[!UICONTROL 促销活动ID]**&#x200B;维度。
             1. 您注意到现在已在&#x200B;**[!UICONTROL 组件设置]**&#x200B;中自动启用&#x200B;**[!UICONTROL 隐藏报表中的组件]**。
@@ -493,7 +493,7 @@ ht-degree: 15%
          营销活动名称](../aa-data/../assets/summary-derived-field.png)的![派生字段
 
          1. 为&#x200B;**[!UICONTROL 值]**&#x200B;选择&#x200B;**[!UICONTROL campaign_id]**。
-         1. 从&#x200B;**[!UICONTROL 查找数据集]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 示例查找数据数据集]**。
+         1. 从&#x200B;**[!UICONTROL 查找数据集]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 示例查找数据集]**。
          1. 从&#x200B;**[!UICONTROL 匹配键]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL tracking_code]**。
          1. 从&#x200B;**[!UICONTROL 要返回的值]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL campaign_name]**。
          1. 选择&#x200B;**[!UICONTROL 保存]**。
@@ -506,27 +506,27 @@ ht-degree: 15%
 
          1. 展开![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL 摘要数据组]**。
          1. 启用&#x200B;**[!UICONTROL 创建分组]**。
-         1. 从&#x200B;**[!UICONTROL Dimension]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 促销活动名称（查找派生字段）]**。 此步骤确保示例查找数据数据集中的促销活动名称（查找）可以在报表中安全使用(请参阅[Workspace](#workspace))。
+         1. 从&#x200B;**[!UICONTROL Dimension]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 促销活动名称（查找派生字段）]**。 此步骤确保示例查找数据数据集中的促销活动名称（查找）可以在报表中安全使用(请参阅[Workspace](#workspace))。
 
       1. 从&#x200B;**[!UICONTROL 指标]**&#x200B;列表中选择&#x200B;**[!UICONTROL 收入]**&#x200B;指标。 在组件面板中：
 
          ![收入摘要数据](../assets/revenue-summary-data.png)
          1. 展开![V形向下](/help/assets/icons/ChevronDown.svg) **[!UICONTROL 归因]**。
-            1. 从&#x200B;**[!UICONTROL 归因模型]**&#x200B;下拉列表中选择![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Last Touch]**。
-            1. 从&#x200B;**[!UICONTROL 回顾窗口]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 30天]**。
+            1. 从&#x200B;**[!UICONTROL 归因模型]**&#x200B;下拉菜单中选择![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Last Touch]**。
+            1. 从&#x200B;**[!UICONTROL 回顾窗口]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 30天]**。
          1. 展开![V形](/help/assets/icons/ChevronDown.svg) **格式**。
-            1. 从&#x200B;**[!UICONTROL 格式]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 货币]**。
-            1. 从&#x200B;**[!UICONTROL 小数位]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 2]**。
+            1. 从&#x200B;**[!UICONTROL 格式]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 货币]**。
+            1. 从&#x200B;**[!UICONTROL 小数位]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 2]**。
 
       1. 从&#x200B;**[!UICONTROL 指标]**&#x200B;列表中选择&#x200B;**[!UICONTROL 订单]**&#x200B;指标。 在组件面板中：
 
          ![订单摘要数据](../assets/orders-summary-data.png)
          1. 展开![V形向下](/help/assets/icons/ChevronDown.svg) **[!UICONTROL 归因]**。
-            1. 从&#x200B;**[!UICONTROL 归因模型]**&#x200B;下拉列表中选择![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Last Touch]**。
-            1. 从&#x200B;**[!UICONTROL 回顾窗口]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 30天]**。
+            1. 从&#x200B;**[!UICONTROL 归因模型]**&#x200B;下拉菜单中选择![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Last Touch]**。
+            1. 从&#x200B;**[!UICONTROL 回顾窗口]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 30天]**。
          1. 展开![V形](/help/assets/icons/ChevronDown.svg) **[!UICONTROL 格式]**。
-            1. 从&#x200B;**[!UICONTROL 格式]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 十进制]**。
-            1. 从▲2}将上升趋势显示为&#x200B;]**下拉列表中选择良好（绿色）]**。**[!UICONTROL **[!UICONTROL 
+            1. 从&#x200B;**[!UICONTROL 格式]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 十进制]**。
+            1. 从▲2}将上升趋势显示为&#x200B;]**下拉菜单中选择**[!UICONTROL &#x200B;良好（绿色）]**。**[!UICONTROL 
 
       1. 选择&#x200B;**[!UICONTROL 保存并继续]**。
 

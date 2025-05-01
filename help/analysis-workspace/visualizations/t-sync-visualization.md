@@ -1,14 +1,14 @@
 ---
-description: 通过同步可视化信息，您可以控制与可视化对应的数据表或数据源。
-keywords: Analysis Workspace;将可视化与数据源同步
+description: 通过同步可视化图表，您可以控制与可视化图表对应的数据表或数据源。
+keywords: Analysis Workspace 将可视化图表与数据源同步
 title: 管理数据源
 feature: Visualizations
 exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
-workflow-type: ht
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 

@@ -5,10 +5,10 @@ title: 在 Workspace 中管理文件夹
 feature: Workspace Basics
 exl-id: dcc78e0e-49d6-40bf-a606-9a7f3f19911c
 role: User
-source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
-workflow-type: ht
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+workflow-type: tm+mt
 source-wordcount: '427'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 100%
 * 在[项目列表](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list)中选择要移动的文件夹。
 
    1. 从所选文件夹的上下文菜单![More](/help/assets/icons/More.svg)或蓝色操作栏中的[操作](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions)中选择&#x200B;**[!UICONTROL 移动至]**。
-   1. 在&#x200B;**[!UICONTROL 选择文件夹]**&#x200B;对话框中，从&#x200B;**[!UICONTROL 文件夹]**&#x200B;下拉菜单中选择一个文件夹，以将文件夹移动到其中。
+   1. 在&#x200B;**[!UICONTROL 选择文件夹]**&#x200B;对话框中，从&#x200B;**[!UICONTROL 文件夹]**&#x200B;下拉菜单中选择一个文件夹以将该文件夹移动到。
 
    1. 选择&#x200B;**[!UICONTROL 移动]**。
 
@@ -52,7 +52,7 @@ ht-degree: 100%
 
    1. 在[标题区域](/help/analysis-workspace/build-workspace-project/freeform-overview.md#title-area)中，从![More](/help/assets/icons/More.svg)中选择&#x200B;**[!UICONTROL 移动文件夹]**。
 
-   1. 在&#x200B;**[!UICONTROL 选择文件夹]**&#x200B;对话框中，从&#x200B;**[!UICONTROL 文件夹]**&#x200B;下拉菜单中选择一个文件夹，以将文件夹移动到其中。
+   1. 在&#x200B;**[!UICONTROL 选择文件夹]**&#x200B;对话框中，从&#x200B;**[!UICONTROL 文件夹]**&#x200B;下拉菜单中选择一个文件夹以将该文件夹移动到。
 
    1. 选择&#x200B;**[!UICONTROL 移动]**。
 

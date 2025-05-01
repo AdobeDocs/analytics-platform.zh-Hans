@@ -4,10 +4,10 @@ title: 生成区段
 feature: Filters, Segments
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 85a22d1e57925f0512ce0cc658cfba1008339d91
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1571'
-ht-degree: 98%
+source-wordcount: '1572'
+ht-degree: 94%
 
 ---
 
@@ -68,8 +68,8 @@ ht-degree: 98%
 
 您可以配置定义的类型和范围：
 
-1. 要指定定义的类型，请指定是否要生成包含或排除定义。选择![设置](/help/assets/icons/Setting.svg)**[!UICONTROL 选项]**&#x200B;并从下拉菜单中切换&#x200B;**[!UICONTROL 包括]**&#x200B;或&#x200B;**[!UICONTROL 排除]**。
-1. 要指定定义的范围，请从&#x200B;**[!UICONTROL 包含]**&#x200B;或&#x200B;**[!UICONTROL 排除]**&#x200B;下拉菜单中选择您希望定义的范围为&#x200B;**[!UICONTROL 事件]**、**[!UICONTROL 会话]**、**[!UICONTROL 人员]**、**[!UICONTROL 全球帐户]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 帐户]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 机会]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} 或&#x200B;**[!UICONTROL 购买群组]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
+1. 要指定定义的类型，请指定是否要生成包含或排除定义。选择![设置](/help/assets/icons/Setting.svg) **[!UICONTROL 选项]**&#x200B;并从下拉菜单&#x200B;**[!UICONTROL 包括]**&#x200B;或&#x200B;**[!UICONTROL 排除]**。
+1. 要指定定义的范围，请从&#x200B;**[!UICONTROL 包含]**&#x200B;或&#x200B;**[!UICONTROL 排除]**&#x200B;下拉菜单中选择是希望定义的范围是&#x200B;**[!UICONTROL 事件]**、**[!UICONTROL 会话]**、**[!UICONTROL 人员]**、**[!UICONTROL 全局帐户]**[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 帐户]**[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 机会]**[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}还是&#x200B;**[!UICONTROL 购买群]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
 
 您稍后可以随时更改这些设置。
 
@@ -87,7 +87,7 @@ ht-degree: 98%
 
 要编辑组件，请执行以下操作：
 
-* 从运算符下拉菜单中为组件选择一个新的运算符。
+* 从运算符下拉菜单中选择组件的新运算符。
 * 如果合适，为运算符选择或指定不同的值。
 * 如果组件类型是维度，则可以定义归因模型。有关更多信息，请参阅[归因模型](#attribution-models)。
 

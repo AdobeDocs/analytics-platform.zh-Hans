@@ -5,10 +5,10 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1053'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -101,7 +101,7 @@ ht-degree: 100%
 
 ## [!UICONTROL 绑定维度]
 
-一个下拉列表，可让您将维度值的持久性绑定到另一个维度中的维度值。有效的选项包括数据视图中包含的其他维度。
+一个下拉菜单，可让您将维度值的持久性绑定到另一个维度中的维度值。 有效的选项包括数据视图中包含的其他维度。
 
 有关如何有效使用绑定维度的示例，请参见[在 Customer Journey Analytics 中使用绑定维度和量度](../../use-cases/data-views/binding-dimensions-metrics.md)。
 
@@ -115,7 +115,7 @@ ht-degree: 100%
 
 ## [!UICONTROL 绑定量度]
 
-一个下拉列表，可让您选择充当绑定触发器的量度。有效的选项包括数据视图中包含的量度。
+一个下拉菜单，可让您选择充当绑定触发器的量度。 有效的选项包括数据视图中包含的量度。
 
 此设置仅在对象数组中的绑定维度低于组件时显示。当绑定量度显示在事件中时，维度值会从事件级别维度向下复制到绑定维度的较低架构级别。
 

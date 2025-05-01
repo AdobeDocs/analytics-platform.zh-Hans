@@ -5,10 +5,10 @@ title: 可视化图表概述
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1616'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p> | [项目符号](/help/analysis-workspace/visualizations/bullet-graph.md) | 子弹图可视化，显示您感兴趣的值与其他性能范围（目标）的比较或衡量情况。 |
 | ![TextNumbered](/help/assets/icons/TextNumbered.svg) | [同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | 同类群组可视化是指一组在特定期限内共享相同特性的人员。同类群组表对于保留、流失或延迟分析非常有用。 |
 | ![组合](/help/assets/icons/ComboChart.svg) | [组合](combo-charts.md) | 组合图表使您无需先构建表格，即可快速构建比较可视化图表。 |
-| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [环形图](/help/analysis-workspace/visualizations/donut.md) | 圆环图可视化图表与饼图类似，它将数据显示为整体的一部分或区段。 |
+| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [环形图](/help/analysis-workspace/visualizations/donut.md) | 与饼图类似，可视化圆环图将数据展示为整体的各个部分或区段。 |
 | ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) | [流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | 流失可视化图表展示了用户在预定义的页面顺序中离开（流失）和继续浏览（流过）的情况。 |
 | ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [流](/help/analysis-workspace/visualizations/c-flow/flow.md) | 流量可视化展示了客户通过您的网站和应用程序的具体路径。 |
 | ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | 自由格式表可视化是一种互动式可视化工具。自由格式表可视化是工作区中数据分析的基础。 |
@@ -44,7 +44,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | ![ 123](/help/assets/icons/123.svg)</p> | [摘要数字](/help/analysis-workspace/visualizations/summary-number-change.md) | 摘要数字可视化将选定的单元格显示为一个大的数字。 |
 | ![Text](/help/assets/icons/Text.svg) | [文本](/help/analysis-workspace/visualizations/text.md) | 文本可视化功能允许您将用户定义的文本添加到工作区。在利用面板/可视化图表描述之外，对于向您的分析和洞察添加额外的上下文非常有用 |
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [树状图](/help/analysis-workspace/visualizations/treemap.md)<p> | 树状图可视化将层次化（树状结构）数据显示为一组嵌套的矩形。 |
-| ![Type](/help/assets/icons/TwoDots.svg) | [维恩图](/help/analysis-workspace/visualizations/venn.md) | 维恩图可视化图表使用圆圈来描述最多3个区段之间的量度重叠。 |
+| ![Type](/help/assets/icons/TwoDots.svg) | [维恩图](/help/analysis-workspace/visualizations/venn.md) | 可视化维恩图使用圆圈来描绘最多 3 个区段的量度重叠。 |
 
 <!-- Add beneath Horizontal bar in the table above: | [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Similar to Fallout, Journey canvas shows where persons left (fell out) and continued through (fell through) a predefined sequence of pages. <p>Unlike Fallout, Journey canvas supports not only linear journeys, but any number of entry points and paths. Furthermore, journeys can be created in Adobe Journey Optimizer and then analyzed in Journey canvas.</p> | -->
 
@@ -125,7 +125,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | **[!UICONTROL 显示预测]** | 通过显示预测值来增强线形图和自由格式表。 |
 | **[!UICONTROL 显示最小值]** | 在可视化图表中显示最小值。 |
 | **[!UICONTROL 显示最大值]** | 在可视化图表中显示最大值。 |
-| **[!UICONTROL 显示趋势线]** | 在可视化图表中显示趋势线。选择后，您可以从下拉菜单中选择趋势线的类型。 |
+| **[!UICONTROL 显示趋势线]** | 在可视化图表中显示趋势线。选中后，您可以从下拉菜单中选择趋势线类型。 |
 
 您可以为您创建的所有可视化图表自定义设置。有关更多信息，请参阅[用户偏好设置](/help/analysis-workspace/user-preferences.md)。
 
@@ -158,6 +158,6 @@ Analysis Workspace 中提供了以下可视化图表类型：
 
 ## 可视化
 
-如果您不确定选择哪种可视化图表，请在任意自由格式表行（将光标悬停于上方即可显示）中选择 ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) **[!UICONTROL 可视化]**。这一选择是添加可视化图表最快的方法。Analysis Workspace 针对哪种可视化图表最适合您的数据做出有根据的推测。例如，如果您选择了一行，则会创建趋势[线形图](line.md)。如果您选择了三个区段行，则会创建一个[维恩图](venn.md)。
+如果您不确定选择哪种可视化图表，请在任意自由格式表行（将光标悬停于上方即可显示）中选择 ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) **[!UICONTROL 可视化]**。这一选择是添加可视化图表最快的方法。Analysis Workspace 针对哪种可视化图表最适合您的数据做出有根据的推测。例如，如果您选择了一行，则会创建趋势[线形图](line.md)。如果您选择了三个区段行，就会创建[维恩](venn.md)图。
 
 ![快速可视化](assets/quick-viz.png)

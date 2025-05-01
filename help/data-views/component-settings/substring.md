@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
 role: Admin
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '921'
-ht-degree: 98%
+ht-degree: 95%
 
 ---
 
@@ -28,16 +28,16 @@ ht-degree: 98%
 
 ![子字符串设置](../assets/substring-settings.png)
 
-[!UICONTROL 子字符串]仅在维度上可用，并可追溯至应用该子字符串的数据。它是紧接应用分段或其他分析操作之前发生的数据转换。
+[!UICONTROL 子字符串]仅在维度上可用，并可追溯至应用该子字符串的数据。这一数据转换在应用分段或其他分析操作之前立即发生。
 
 ## 从左/右
 
-根据字符串开始或结束的位置提取字符串的一部分。**[!UICONTROL 从左]**&#x200B;和&#x200B;**[!UICONTROL 从右]**&#x200B;两种方法提供两个下拉列表：**[!UICONTROL 从]**（输出开始的地方）和&#x200B;**[!UICONTROL 至]**（输出结束的地方）。
+根据字符串开始或结束的位置提取字符串的一部分。**[!UICONTROL 从左侧]**&#x200B;和&#x200B;**[!UICONTROL 从右侧]**&#x200B;方法提供两个下拉菜单：**[!UICONTROL 从]**（输出开始处）和&#x200B;**[!UICONTROL 到]**（输出结束处）。
 
 * **[!UICONTROL 字符串开始]**：字符串的开始。
 * **[!UICONTROL 字符串结束]**：字符串的结束。
 * **[!UICONTROL 位置]**：从左或从右开始的静态字符数，具体取决于方法。
-* **[!UICONTROL 字符串]**：匹配一个字符或字符序列以指示字符串的开始或结束。此下拉列表还显示其他选项：
+* **[!UICONTROL 字符串]**：匹配一个字符或字符序列以指示字符串的开始或结束。此下拉菜单还显示其他选项：
    * **[!UICONTROL 匹配]**：要匹配的字符串。如果输入内容与此字段不匹配，则应用 [无值选项](no-value-options.md)。
    * **[!UICONTROL 索引]**：**[!UICONTROL 匹配]** 条件可以在字符串中多次出现。此整数确定开始或结束输出的匹配项，具体取决于方法。例如，索引为 `1` 表示第一个匹配。如果索引高于可用的匹配数，则应用 [无值选项](no-value-options.md)。
    * **[!UICONTROL 包括字符串]**：如果启用，则在输出中包括 **[!UICONTROL 匹配]** 字符串的复选框。

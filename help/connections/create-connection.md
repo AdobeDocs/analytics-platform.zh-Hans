@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 836c793ae74185728af03636b0ba3e838f46f05d
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '6794'
-ht-degree: 64%
+ht-degree: 63%
 
 ---
 
@@ -558,7 +558,7 @@ ht-degree: 64%
 
 | 设置 | 描述 |
 | --- | --- |
-| **[!UICONTROL 人员 ID]** | 从可用身份标识的下拉列表中选择人员 ID。这些身份已在Experience Platform的数据集架构中定义。 有关如何将身份映射用作人员ID的信息，请参阅[将身份映射用作人员ID](#id-map)。<p>如果没有可供选择的人员ID，则意味着架构中未定义任何人员ID。 请参阅[在 UI 中定义身份标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)以了解更多信息。 <p>所选人员 ID 的值区分大小写。例如，`abc123` 和 `ABC123` 是两个不同的值。 |
+| **[!UICONTROL 人员 ID]** | 从可用标识的下拉菜单中选择人员ID。 这些身份已在Experience Platform的数据集架构中定义。 有关如何将身份映射用作人员ID的信息，请参阅[将身份映射用作人员ID](#id-map)。<p>如果没有可供选择的人员ID，则意味着架构中未定义任何人员ID。 请参阅[在 UI 中定义身份标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)以了解更多信息。 <p>所选人员 ID 的值区分大小写。例如，`abc123` 和 `ABC123` 是两个不同的值。 |
 | **[!UICONTROL 时间戳]** | 此设置会自动设置为Experience Platform中基于事件的架构的默认时间戳字段。 |
 | **[!UICONTROL 数据源类型]** | 选择数据源类型。数据源类型包括： <ul><li>[!UICONTROL Web 数据]</li><li>[!UICONTROL 移动应用程序数据]</li><li>[!UICONTROL POS 数据]</li><li>[!UICONTROL CRM 数据]</li><li>[!UICONTROL 调查数据]</li><li>[!UICONTROL 呼叫中心数据]</li><li>[!UICONTROL 产品数据]</li><li> [!UICONTROL 帐户数据]</li><li> [!UICONTROL 事务数据]</li><li>[!UICONTROL 客户反馈数据]</li><li> [!UICONTROL 其他]</li></ul>该字段用于调查正在使用的数据源的类型。 |
 | **[!UICONTROL 数据源描述]** | 选择“其他”作为数据源类型时数据源的说明。 |
@@ -578,7 +578,7 @@ ht-degree: 64%
 | **[!UICONTROL 全局帐户ID]** | 从Experience Platform的数据集架构中定义的可用标识中选择一个帐户ID（帐户的唯一标识符）。 适用于尚未将全局帐户作为容器添加到连接的情况。 |
 | **[!UICONTROL 机会ID]** | 从Experience Platform的数据集架构中定义的可用身份中选择一个机会ID（机会的唯一标识符）。 |
 | **[!UICONTROL 购买群ID]** | 从Experience Platform的数据集架构中定义的可用标识中选择一个购买组ID（购买组的唯一标识符）。 |
-| **[!UICONTROL 人员 ID]** | 从可用身份标识的下拉列表中选择人员 ID。这些身份标识已在 Experience Platform 的数据集架构中定义。有关如何将身份映射用作人员ID的信息，请参阅[将身份映射用作人员ID](#id-map)。<p>如果没有可供选择的人员 ID，则意味着架构中尚未定义一个或多个人员 ID。请参阅[在 UI 中定义身份标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)以了解更多信息。 <p>所选人员 ID 的值区分大小写。例如，`abc123` 和 `ABC123` 是两个不同的值。 |
+| **[!UICONTROL 人员 ID]** | 从可用标识的下拉菜单中选择人员ID。 这些身份标识已在 Experience Platform 的数据集架构中定义。有关如何将身份映射用作人员ID的信息，请参阅[将身份映射用作人员ID](#id-map)。<p>如果没有可供选择的人员 ID，则意味着架构中尚未定义一个或多个人员 ID。请参阅[在 UI 中定义身份标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)以了解更多信息。 <p>所选人员 ID 的值区分大小写。例如，`abc123` 和 `ABC123` 是两个不同的值。 |
 | **[!UICONTROL 时间戳]** | 此设置会自动设置为Experience Platform中基于事件的架构的默认时间戳字段。 |
 | **[!UICONTROL 数据源类型]** | 选择数据源类型。数据源类型包括： <ul><li>[!UICONTROL Web 数据]</li><li>[!UICONTROL 移动应用程序数据]</li><li>[!UICONTROL POS 数据]</li><li>[!UICONTROL CRM 数据]</li><li>[!UICONTROL 调查数据]</li><li>[!UICONTROL 呼叫中心数据]</li><li>[!UICONTROL 产品数据]</li><li> [!UICONTROL 帐户数据]</li><li> [!UICONTROL 事务数据]</li><li>[!UICONTROL 客户反馈数据]</li><li> [!UICONTROL 其他]</li></ul>该字段用于调查正在使用的数据源的类型。 |
 | **[!UICONTROL 数据源描述]** | 选择“其他”作为数据源类型时数据源的说明。 |
@@ -596,7 +596,7 @@ ht-degree: 64%
 
 | 设置 | 描述 |
 | --- | --- |
-| **[!UICONTROL 人员 ID]** | 从可用身份标识的下拉列表中选择人员 ID。这些身份已在Experience Platform的数据集架构中定义。 有关如何将身份映射用作人员ID的信息，请参阅[将身份映射用作人员ID](#id-map)。<p>如果没有可供选择的人员ID，则架构中不会定义任何人员ID。 请参阅[在 UI 中定义身份标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)以了解更多信息。 <p>所选人员 ID 的值区分大小写。例如，`abc123` 和 `ABC123` 是两个不同的值。 |
+| **[!UICONTROL 人员 ID]** | 从可用标识的下拉菜单中选择人员ID。 这些身份已在Experience Platform的数据集架构中定义。 有关如何将身份映射用作人员ID的信息，请参阅[将身份映射用作人员ID](#id-map)。<p>如果没有可供选择的人员ID，则架构中不会定义任何人员ID。 请参阅[在 UI 中定义身份标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)以了解更多信息。 <p>所选人员 ID 的值区分大小写。例如，`abc123` 和 `ABC123` 是两个不同的值。 |
 | **[!UICONTROL 数据源类型]** | 选择数据源类型。数据源类型包括： <ul><li>[!UICONTROL Web 数据]</li><li>[!UICONTROL 移动应用程序数据]</li><li>[!UICONTROL POS 数据]</li><li>[!UICONTROL CRM 数据]</li><li>[!UICONTROL 调查数据]</li><li>[!UICONTROL 呼叫中心数据]</li><li>[!UICONTROL 产品数据]</li><li> [!UICONTROL 帐户数据]</li><li> [!UICONTROL 事务数据]</li><li>[!UICONTROL 客户反馈数据]</li><li> [!UICONTROL 其他]</li></ul>该字段用于调查正在使用的数据源的类型。 |
 | **[!UICONTROL 数据源描述]** | 选择“其他”作为数据源类型时数据源的说明。 |
 
@@ -608,9 +608,9 @@ ht-degree: 64%
 
 | 设置 | 描述 |
 | --- | --- |
-| **[!UICONTROL 人员 ID]** | 从可用身份标识的下拉列表中选择人员 ID。这些身份已在Experience Platform的数据集架构中定义。 有关如何将身份映射用作人员ID的信息，请参阅[将身份映射用作人员ID](#id-map)。<p>如果没有可供选择的人员ID，则架构中不会定义任何人员ID。 请参阅[在 UI 中定义身份标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)以了解更多信息。 <p>所选人员 ID 的值区分大小写。例如，`abc123` 和 `ABC123` 是两个不同的值。 |
-| **[!UICONTROL 全局帐户字段]** | 从可用标识的下拉列表中选择一个全局帐户字段，以支持为数据集生成基于帐户的报表。 适用于已将全局帐户作为容器添加到连接时。 |
-| **[!UICONTROL 帐户字段]** | 从可用标识的下拉列表中选择一个帐户字段，以支持为数据集生成基于帐户的报表。 适用于尚未将全局帐户作为容器添加到连接的情况。 |
+| **[!UICONTROL 人员 ID]** | 从可用标识的下拉菜单中选择人员ID。 这些身份已在Experience Platform的数据集架构中定义。 有关如何将身份映射用作人员ID的信息，请参阅[将身份映射用作人员ID](#id-map)。<p>如果没有可供选择的人员ID，则架构中不会定义任何人员ID。 请参阅[在 UI 中定义身份标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)以了解更多信息。 <p>所选人员 ID 的值区分大小写。例如，`abc123` 和 `ABC123` 是两个不同的值。 |
+| **[!UICONTROL 全局帐户字段]** | 从可用标识的下拉菜单中选择一个全局帐户字段，以支持为数据集生成基于帐户的报表。 适用于已将全局帐户作为容器添加到连接时。 |
+| **[!UICONTROL 帐户字段]** | 从可用标识的下拉菜单中选择一个帐户字段，以支持为数据集生成基于帐户的报表。 适用于尚未将全局帐户作为容器添加到连接的情况。 |
 | **[!UICONTROL 数据源类型]** | 选择数据源类型。数据源类型包括： <ul><li>[!UICONTROL Web 数据]</li><li>[!UICONTROL 移动应用程序数据]</li><li>[!UICONTROL POS 数据]</li><li>[!UICONTROL CRM 数据]</li><li>[!UICONTROL 调查数据]</li><li>[!UICONTROL 呼叫中心数据]</li><li>[!UICONTROL 产品数据]</li><li> [!UICONTROL 帐户数据]</li><li> [!UICONTROL 事务数据]</li><li>[!UICONTROL 客户反馈数据]</li><li> [!UICONTROL 其他]</li></ul>该字段用于调查正在使用的数据源的类型。 |
 | **[!UICONTROL 数据源描述]** | 选择“其他”作为数据源类型时数据源的说明。 |
 
@@ -646,7 +646,7 @@ ht-degree: 64%
 |---|---|
 | **[!UICONTROL 键]** | 用于查找数据集的键。 |
 | **[!UICONTROL 匹配键类型]** | 选择如何连接数据集：基于&#x200B;**[!UICONTROL 按字段匹配]**&#x200B;或&#x200B;**[!UICONTROL 按容器匹配]**。请参阅[按字段容器匹配](/help/getting-started/cja-b2b-concepts-features.md#match-by-container-or-field)，了解更多信息。 |
-| **[!UICONTROL 匹配键]** | 某个事件数据集中要按其连接在一起的匹配键。如果此列表为空，您可能尚未添加或配置事件数据集。<br/><br/>根据您选择的&#x200B;**[!UICONTROL 匹配键类型]**，选择适当的值：<ul><li>**[!UICONTROL 按字段匹配]**：![按字段匹配](assets/match-by-field.png)<br/>从&#x200B;**[!UICONTROL 匹配键]**&#x200B;下拉菜单中选择字段以与某个事件数据集联接。 如果此列表为空，则可能尚未添加或配置事件数据集。</li><li>**[!UICONTROL 按容器匹配]**： ![按容器匹配](assets/match-by-container.png)<br/>从&#x200B;**[!UICONTROL 匹配键]**&#x200B;下拉菜单中选择一个容器，用于与某个事件数据集连接。 您在设置连接时包括的容器决定了可供选择的容器。 如果此列表为空，则可能尚未配置一个或多个容器。</li></ul> |
+| **[!UICONTROL 匹配键]** | 某个事件数据集中要按其连接在一起的匹配键。如果此列表为空，您可能尚未添加或配置事件数据集。<br/><br/>根据您选择的&#x200B;**[!UICONTROL 匹配键类型]**，选择适当的值：<ul><li>**[!UICONTROL 按字段匹配]**：![按字段匹配](assets/match-by-field.png)<br/>从&#x200B;**[!UICONTROL 匹配键]**&#x200B;下拉菜单中选择字段以与某个事件数据集连接。 如果此列表为空，则可能尚未添加或配置事件数据集。</li><li>**[!UICONTROL 按容器匹配]**： ![按容器匹配](assets/match-by-container.png)<br/>从&#x200B;**[!UICONTROL 匹配键]**&#x200B;下拉菜单中选择一个容器，用于与某个事件数据集连接。 您在设置连接时包括的容器决定了可供选择的容器。 如果此列表为空，则可能尚未配置一个或多个容器。</li></ul> |
 | **[!UICONTROL 全局帐户字段]** | 用于基于帐户的报表的全局帐户ID。 |
 
 
@@ -740,7 +740,7 @@ Customer Journey Analytics 支持将身份标识映射作为个人 ID。身份�
 | 选项 | 描述 |
 |---|---|
 | **[!UICONTROL 使用主要 ID 命名空间]** | 该选项会指示 Customer Journey Analytics 在“身份标识映射”中查找标记了`primary=true`属性的身份标识，并将该身份标识用作该行的人员 ID。该身份标识是 Experience Platform 中用于分区时使用的主密钥。此外，此身份也是用作Customer Journey Analytics人员ID的主要候选项(取决于Customer Journey Analytics连接中数据集的配置方式)。 |
-| **[!UICONTROL 命名空间]** | （此选项仅适用于未使用主要 ID 命名空间的情况。）标识命名空间是 [Experience Platform 标识服务的](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/namespaces)一个组件。命名空间充当与身份标识相关的上下文的指示器。如果指定了命名空间，Customer Journey Analytics 会在每行的“身份标识映射”中搜索此命名空间密钥，并将该命名空间下的身份标识用作该行的人员 ID。由于 Customer Journey Analytics 无法对所有行执行全方位数据集扫描以确定存在哪些命名空间，因此下拉列表中会显示所有可能的命名空间。必须知道数据中指定了哪些命名空间；系统不会自动检测这些命名空间。 |
+| **[!UICONTROL 命名空间]** | （此选项仅适用于未使用主要 ID 命名空间的情况。）标识命名空间是 [Experience Platform 标识服务的](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/namespaces)一个组件。命名空间充当与身份标识相关的上下文的指示器。如果指定了命名空间，Customer Journey Analytics 会在每行的“身份标识映射”中搜索此命名空间密钥，并将该命名空间下的身份标识用作该行的人员 ID。由于Customer Journey Analytics无法对所有行执行完整数据集扫描以确定哪些命名空间存在，因此下拉菜单中会显示所有可能的命名空间。 必须知道数据中指定了哪些命名空间；系统不会自动检测这些命名空间。 |
 
 {style="table-layout:auto"}
 

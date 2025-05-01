@@ -2,9 +2,9 @@
 title: 共享量度和维度概述
 description: 在多个数据视图中使用相同的维度或量度引用。
 exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
-source-git-commit: 4bb24fae7c7d53a0fde3bb2dc35ef27f91701d5a
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1246'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 0%
    * **[!UICONTROL 创建者]**：仅查看给定用户创建的组件。
    * **[!UICONTROL 重复]**：仅查看与另一个组件具有相同组件ID的组件。 这些筛选器与通过概述卡片查看组件相同。
 * **搜索**：使用![搜索图标](../../assets/icons/Search.svg)图标按名称搜索组件。
-* **[!UICONTROL 连接]**：更改[连接](/help/connections/overview.md)的下拉列表。 共享维度和量度始终特定于单个连接。
+* **[!UICONTROL 连接]**：更改[连接](/help/connections/overview.md)的下拉菜单。 共享维度和量度始终特定于单个连接。
 * **[!UICONTROL 自定义表]**：选择![自定义表图标](/help/assets/icons/ColumnSetting.svg)图标以显示或隐藏表中的列。 可用选项包括：
    * **[!UICONTROL 字段名]**：共享维度或量度的名称。 此字段始终可见。
    * **[!UICONTROL 类型]**：指示组件是维度还是量度。 此字段始终可见。

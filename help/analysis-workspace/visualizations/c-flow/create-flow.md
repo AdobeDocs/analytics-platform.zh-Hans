@@ -4,7 +4,7 @@ title: 如何配置流量可视化图表
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1484'
 ht-degree: 87%
@@ -39,7 +39,7 @@ ht-degree: 87%
 
    * 使用下拉菜单选择量度或维度。
    * 从左侧面板中拖动维度或量度。
-   * 开始输入维度或量度的名称，然后在它出现在下拉列表中时将其选中。
+   * 开始键入维度或量度的名称，然后在该维度或量度出现在下拉菜单中时将其选定。
 
    >[!IMPORTANT]
    >
@@ -59,7 +59,7 @@ ht-degree: 87%
    | **[!UICONTROL 限制到第一次/最后一次发生次数]** | 将路径限制为以维度、项目或量度的第一次或最后一次发生次数开始或结束的路径。有关更详细的解释，请参阅[限制到第一次/最后一次发生次数](#example-scenario-for-limit-to-firstlast-occurrence)。 |
    | **[!UICONTROL 列数]** | 流量图中所需的列数。您最多可以指定 5 个列。 |
    | **[!UICONTROL 每列扩展的项]** | 每列中所需的项数。您最多可以指定每列扩展 10 个项。 |
-   | **[!UICONTROL 流量容器]** | 您可以在&#x200B;**[!UICONTROL 全局帐户]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}、**[!UICONTROL 帐户]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}、**[!UICONTROL 机会]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}、**[!UICONTROL 购买群]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}、**[!UICONTROL 会话]**&#x200B;和&#x200B;**[!UICONTROL 人员]**&#x200B;之间切换以分析路径。 这些设置可帮助您在人员级别（跨会话）了解人员参与度，或将分析限定于单次会话。 |
+   | **[!UICONTROL 流量容器]** | 您可以在&#x200B;**[!UICONTROL 全局帐户]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 帐户]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 机会]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 购买群]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 会话]**&#x200B;和&#x200B;**[!UICONTROL 人员]**&#x200B;之间切换以分析路径。 这些设置可帮助您在人员级别（跨会话）了解人员参与度，或将分析限定于单次会话。 |
 
    >[!IMPORTANT]
    >

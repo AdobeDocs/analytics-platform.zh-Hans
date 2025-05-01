@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '8844'
+source-wordcount: '8857'
 ht-degree: 99%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 99%
 | A | **规则名称** | 默认规则名称为&#x200B;**规则 X**（X 指序列号）。要编辑规则的名称，请选择其名称并输入新名称，例如 `Query Parameter`。 |
 | B | **函数名称** | 为规则选择的函数名称，例如 [!UICONTROL URL PARSE]。当该函数是函数序列中的最后一个，并决定最终输出值时，函数名称后将加上 [!UICONTROL - FINAL OUTPUT]，例如 [!UICONTROL URL PARSE - FINAL OUTPUT]。<br/>要显示包含有关该函数的详细信息的弹出窗口，请选择 ![帮助图标](assets/Smock_HelpOutline_18_N.svg)。 |
 | C | **规则和描述** | 您可以选择为规则添加描述。<br/>选择 ![更多图标](assets/More.svg)，然后选择&#x200B;**[!UICONTROL **&#x200B;添加说明&#x200B;**]**&#x200B;来添加说明，或选择&#x200B;**[!UICONTROL **&#x200B;编辑说明&#x200B;**]**&#x200B;来编辑现有说明。<br/>使用编辑器来输入描述。您可以使用工具栏来设置文本格式（使用样式选择器、粗体、斜体、下划线、右对齐、左对齐、居中、颜色、编号列表、项目符号列表）并添加外部信息链接。<br/>要完成编辑描述，请单击编辑器外部。 |
-| D | **函数区** | 定义函数的逻辑。其界面取决于函数的类型。[!UICONTROL 字段]或者[!UICONTROL 值]下拉菜单会根据该函数所期望的输入类型，显示所有可用的字段类别（规则、标准字段、字段）。或者，您可以将字段从“架构和标准”字段选择器拖放到“字段”或“值”上。当拖动的字段是来自查找数据集的字段时，查找函数会自动插入到您定义的函数之前。<br/>请参阅[函数引用](#function-reference)，了解关于所支持的每个函数的详细信息。 |
+| D | **函数区** | 定义函数的逻辑。其界面取决于函数的类型。[!UICONTROL 字段]或[!UICONTROL 值]的下拉菜单根据函数所需的输入类型显示所有类别的可用字段（规则、标准字段、字段）。 或者，您可以将字段从“架构和标准”字段选择器拖放到“字段”或“值”上。当拖动的字段是来自查找数据集的字段时，查找函数会自动插入到您定义的函数之前。<br/>请参阅[函数引用](#function-reference)，了解关于所支持的每个函数的详细信息。 |
 
 {style="table-layout:auto"}
 
@@ -1948,7 +1948,7 @@ Customer Journey Analytics 使用 Perl 正则表达式语法的子集。支持�
 
 - 定义派生字段的规则时，最多可以使用十个不同的架构字段（不包括标准字段）。
    - 在最多十个不同的架构字段中，最多只允许使用三个查找架构或轮廓架构字段。
-- 每个 Customer Journey Analytics 连接最多可以有 100 个派生字段。
+- 每个Customer Journey Analytics连接可以有最大数量的派生字段，具体取决于您许可的包。 有关详细信息，请参阅[产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/customer-journey-analytics.html){target="_blank"}。
 
 
 ### 功能限制摘要
@@ -1996,7 +1996,7 @@ Case When 函数中的 If 或 Else If 结构中的运算符是条件与&#x200B;*
 
 >[!MORELIKETHIS]
 >
->- [博客：充分利用数据：用于在Customer Journey Analytics中使用派生字段的框架](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
->- [博客：Customer Journey Analytics的派生字段用例](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
->- [博客：Adobe Customer Journey Analytics派生字段增强功能](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808)
+>- [博客：充分利用您的数据：在 Customer Journey Analytics 中使用派生字段的框架](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
+>- [博客：Customer Journey Analytics 的派生字段用例](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
+>- [博客：Adobe Customer Journey Analytics 派生字段增强功能](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808)
 

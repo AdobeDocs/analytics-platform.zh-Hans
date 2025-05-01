@@ -4,10 +4,10 @@ title: 面板概述
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '2129'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -77,7 +77,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 ## 数据视图
 
-每个面板都与一个[数据视图](/help/data-views/data-views.md)相关联，并由面板右上角下拉菜单中![Data](/help/assets/icons/Data.svg)**[!UICONTROL *数据视图的数据名称&#x200B;*]**标识。
+每个面板都与一个[数据视图](/help/data-views/data-views.md)关联，由面板右上角的下拉菜单中的数据视图&#x200B;*]**&#x200B;的![数据](/help/assets/icons/Data.svg) **[!UICONTROL *名称标识。
 
 创建空白 Workspace 项目时，初始面板的默认数据视图是您上次在 Customer Journey Analytics 中使用数据视图。
 
@@ -85,7 +85,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 >[!IMPORTANT]
 >
->所选数据视图确定哪些维度、量度和区段可用于在面板中构建可视化图表。
+>选定的数据视图决定了可用于在面板中构建可视化图表的维度、量度和区段。
 >
 >
 >切换面板的数据视图时，某些组件可能在新的数据视图中不可用。此更改可能会导致您的可视化效果无法正确呈现。您可能会看到类似以下警告：
@@ -107,7 +107,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 ![The calendar window showing the selected date range.](assets/panel-calendar.png)
 
 1. 通过先选择开始日期，然后选择结束日期来选择日期范围。
-或者，您可以从[!UICONTROL *选择预设*]&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 预设]**。
+或者，您也可以从[!UICONTROL *选择预设*]&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 预设]**。
 
 1. 或者，选择&#x200B;**[!UICONTROL 显示高级设置]**&#x200B;以：
 
@@ -149,7 +149,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 有关更多信息，请参阅[快速区段](/help/components/filters/quick-filters.md)。
 
-![已公开并放入放置区域的临时区段](assets/adhoc-segment-filter.png)
+![被公开并放入放置区域的临时区段](assets/adhoc-segment-filter.png)
 
 ### 下拉区段
 
@@ -168,7 +168,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 静态下拉区段也可用于将多个项目合并在一起。例如，如果您有一个项目的多个版本，每个版本具有不同的“国家/地区”区段，您可以将所有版本合并为一个项目并添加“国家/地区”下拉区段。
 
-![显示高亮显示市场渠道“直接”区段的静态下拉区段。](assets/dropdown-filter-intro.png)
+![突出显示营销渠道“直接”区段的静态下拉区段。](assets/dropdown-filter-intro.png)
 
 ##### 创建静态下拉区段
 
@@ -200,7 +200,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 #### 动态下拉区段
 
-动态下拉区段允许您根据面板报告范围内的数据和其他下拉区段中的值来确定可用值。例如，您可以使用“国家/地区”维度和“城市”维度创建两个动态下拉列表。当您从&#x200B;**[!UICONTROL 国家/地区]**&#x200B;下拉列表中选择一个国家/地区时，**[!UICONTROL 城市]**&#x200B;下拉列表会动态调整以仅显示该国家/地区内的城市。
+动态下拉区段允许您根据面板报告范围内的数据和其他下拉区段中的值来确定可用值。例如，您可以使用“国家/地区”维度和“城市”维度创建两个动态下拉列表。当您从&#x200B;**[!UICONTROL 国家/地区]**&#x200B;下拉菜单中选择国家/地区时，**[!UICONTROL 城市]**&#x200B;下拉菜单会动态调整以仅显示该国家/地区的城市。
 
 同样的概念适用于所有维度；仅出现在面板日期范围内的维度项和选定的区段可见。在静态下拉区段中选择的维度项会影响动态下拉区段中的可用值。但是，反之则不然。在动态下拉区段中选择的维度项不会影响静态下拉区段中的可用值。
 

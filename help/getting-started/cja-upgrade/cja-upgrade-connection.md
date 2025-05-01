@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 22d3e7b8-4a4d-48a8-a98d-5172a9876286
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1635'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 99%
 
 ## 创建和配置连接 {#create-connection}
 
-1. 在Customer Journey Analytics中，从顶部菜单中选择&#x200B;**[!UICONTROL 连接]** （可选）从&#x200B;**[!UICONTROL 数据管理]**。
+1. 在 Customer Journey Analytics 的顶部菜单中选择&#x200B;**[!UICONTROL 连接]**，也可以从&#x200B;**[!UICONTROL 数据管理]**&#x200B;中选择。
 1. 选择&#x200B;**[!UICONTROL 创建新连接]**。
 
    ![无标题连接设置](assets/create-conn1.png)
@@ -52,7 +52,7 @@ ht-degree: 99%
    | **[!UICONTROL 数据集类型]** | 对于您添加到此连接的每个数据集，Customer Journey Analytics 会根据传入的数据自动设置数据集类型。有 3 种不同的数据集类型：事件数据、轮廓数据和查找数据。有关数据集类型的说明，请参见下表。 |
    | **[!UICONTROL 粒度]** | 数据集中数据的粒度；仅适用于摘要数据集。 |
    | **[!UICONTROL 数据源类型]** | 数据集的数据源类型。不适用于摘要数据集。 |
-   | **[!UICONTROL 人员 ID]** | 从可用身份标识的下拉列表中选择人员 ID。这些身份标识已在 Experience Platform 的数据集架构中定义。有关如何将身份标识映射用作人员 ID 的信息，请参见下文。<p>重要提示：如果没有可供选择的人员 ID，则意味着未在架构中定义一个或多个人员 ID。请查看[这个视频](https://www.youtube.com/watch?v=G_ttmGl_LRU)，以了解如何在 Experience Platform 中定义身份标识。 |
+   | **[!UICONTROL 人员 ID]** | 从可用标识的下拉菜单中选择人员ID。 这些身份标识已在 Experience Platform 的数据集架构中定义。有关如何将身份标识映射用作人员 ID 的信息，请参见下文。<p>重要提示：如果没有可供选择的人员 ID，则意味着未在架构中定义一个或多个人员 ID。请查看[这个视频](https://www.youtube.com/watch?v=G_ttmGl_LRU)，以了解如何在 Experience Platform 中定义身份标识。 |
    | **[!UICONTROL 键]** | 仅用于查找数据集（例如 _id）。 |
    | **[!UICONTROL 匹配键]** | 仅用于查找数据集（例如 _id）。 |
    | **[!UICONTROL 导入新数据]** | 设置为开或关。 |
@@ -99,7 +99,7 @@ ht-degree: 99%
 
    | 设置 | 描述 |
    | --- | --- |
-   | **[!UICONTROL 人员 ID]** | 仅适用于事件和轮廓数据集。从可用身份标识的下拉列表中选择人员 ID。这些身份标识已在 Experience Platform 的数据集架构中定义。有关如何将身份标识映射用作人员 ID 的信息，请参见下文。<p>如果没有可供选择的人员 ID，则意味着架构中尚未定义一个或多个人员 ID。请参阅[在 UI 中定义身份标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)以了解更多信息。 <p>所选人员 ID 的值区分大小写。例如，`abc123` 和 `ABC123` 是两个不同的值。 |
+   | **[!UICONTROL 人员 ID]** | 仅适用于事件和轮廓数据集。从可用标识的下拉菜单中选择人员ID。 这些身份标识已在 Experience Platform 的数据集架构中定义。有关如何将身份标识映射用作人员 ID 的信息，请参见下文。<p>如果没有可供选择的人员 ID，则意味着架构中尚未定义一个或多个人员 ID。请参阅[在 UI 中定义身份标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)以了解更多信息。 <p>所选人员 ID 的值区分大小写。例如，`abc123` 和 `ABC123` 是两个不同的值。 |
    | **[!UICONTROL 时间戳]** | 仅对事件和摘要数据集，此设置会自动设置为 Experience Platform 中基于事件的架构的默认时间戳字段。 |
    | **[!UICONTROL 键]** | 仅适用于查找数据集。用于查找数据集的键。 |
    | **[!UICONTROL 匹配键]** | 仅适用于查找数据集。某个事件数据集中要按其连接在一起的匹配键。如果此列表为空，则可能尚未添加或配置事件数据集。 |

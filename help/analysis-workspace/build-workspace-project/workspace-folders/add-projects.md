@@ -5,10 +5,10 @@ title: 添加或移动文件夹
 feature: Workspace Basics
 exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
 role: User
-source-git-commit: 98a92fff2a0fae7ad3e6d94e61f8babed3c11eb7
-workflow-type: ht
-source-wordcount: '257'
-ht-degree: 100%
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+workflow-type: tm+mt
+source-wordcount: '258'
+ht-degree: 93%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 1. 从可能会出现的[操作](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions)列表中选择 ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) **移动到**。随后会显示&#x200B;**[!UICONTROL 选择文件夹]**&#x200B;对话框。
 
-1. 从&#x200B;**[!UICONTROL 文件夹]**&#x200B;下拉菜单中选择一个文件夹名称。通过使用下拉菜单，您可以遍历文件夹层次结构，以选择任意级别的子文件夹。
+1. 从&#x200B;**[!UICONTROL 文件夹]**&#x200B;下拉菜单中选择一个文件夹名称。下拉菜单可让您遍历文件夹层次结构以在任何级别选择子文件夹。
 
    ![The Select Folder view showing the drop down menu and available subfolders.](/help/analysis-workspace/build-workspace-project/assets/add-projects.png)
 

@@ -1,13 +1,13 @@
 ---
 title: 高级函数
-description: 通过选中“函数”下拉列表中的“显示高级”来访问这些函数。
+description: 可通过以下方法访问这些函数：选中函数下拉菜单中的显示高级。
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 6788275ba4bfcfbe385e45e6a20de996d8103393
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '5247'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 89%
 
 在 table 函数中，输出对于表中的每一行都是相同的。在 row 函数中，输出对于表中的每一行都是不同的。
 
-在适用和相关的情况下，使用函数类型对函数进行注释： [!BADGE 表]{type="Neutral"}或[!BADGE 行]{type="Neutral"}
+在适用且相关的情况下，函数具有函数类型注释：[!BADGE 表]{type="Neutral"}或[!BADGE 行]{type="Neutral"}
 
 ## Include-Zeros 参数的含义是什么？
 
@@ -93,7 +93,7 @@ ht-degree: 89%
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ARC COSINE(metric)]**
 
 
-[!BADGE Row]{type="Neutral"}返回量度的反余弦值。 反余弦是一个其余弦为数字的角度。返回的角度为范围在 0（零）到 pi 之间的弧度。如果要将结果从弧度转换为角度，请将其乘以 180/PI()。
+[!BADGE 行]{type="Neutral"} 返回某量度的反余弦。反余弦是一个其余弦为数字的角度。返回的角度为范围在 0（零）到 pi 之间的弧度。如果要将结果从弧度转换为角度，请将其乘以 180/PI()。
 
 
 | 参数 | 描述 |
@@ -116,7 +116,7 @@ ht-degree: 89%
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ARC SINE(metric)]**
 
 
-[!BADGE Row]{type="Neutral"}返回一个数的反正弦或反正弦值。 反正弦是一个其正弦为数值的角度。返回的角度为范围在 -pi/2 到 pi/2 之间的弧度。若要以度数表示反正弦值，则将结果乘以180/PI()。
+[!BADGE 行]{type="Neutral"} 返回一个数值的反正弦。反正弦是一个其正弦为数值的角度。返回的角度为范围在 -pi/2 到 pi/2 之间的弧度。要以角度表示反正弦，请将结果乘以 180/PI()。
 
 
 | 参数 | 描述 |
@@ -139,7 +139,7 @@ ht-degree: 89%
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ARC TANGENT(metric)]**
 
 
-[!BADGE 行]{type="Neutral"}返回一个数的反正切值。 反正切是一个其正切为数值的角度。返回的角度为范围在 -pi/2 到 pi/2 之间的弧度。要以角度表示反正切，请将结果乘以 180/PI( )。
+[!BADGE 行]{type="Neutral"} 返回一个数值的反正切。反正切是一个其正切为数值的角度。返回的角度为范围在 -pi/2 到 pi/2 之间的弧度。要以角度表示反正切，请将结果乘以 180/PI( )。
 
 
 | 参数 | 描述 |
@@ -221,7 +221,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL CEILING(metric)]**
 
-[!BADGE Row]{type="Neutral"}返回不小于给定值的最小整数。 例如，如果您要避免在报告收入时出现货币小数位数，而某产品的收入为 $569.34，则使用公式 CEILING(Revenue) 可将收入向上舍入为最接近的美元数 $570。
+[!BADGE 行]{type="Neutral"} 返回不小于给定值的最小整数。例如，如果您要避免在报告收入时出现货币小数位数，而某产品的收入为 $569.34，则使用公式 CEILING(Revenue) 可将收入向上舍入为最接近的美元数 $570。
 
 | 参数 | 描述 |
 |---|---|
@@ -309,13 +309,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-cos"
 >title="余弦"
->abstract="返回给定角度的余弦。如果角以角度表示，则将该角乘以 PI()/180。"
+>abstract="返回给定角度的余弦。如果角以角度表示，则将该角乘以 PI( )/180。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL COSINE(metric)]**
 
-[!BADGE Row]{type="Neutral"}返回给定角度的余弦。 如果角以角度表示，则将该角乘以 PI( )/180。
+[!BADGE 行]{type="Neutral"} 返回给定角度的余弦。如果角以角度表示，则将该角乘以 PI( )/180。
 
 | 参数 | 描述 |
 |---|---|
@@ -418,8 +418,8 @@ CDF-Z(-3) ? 0.0013499
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要用于比较的指标。 |
-| metric_Y | 要用作比较的量度。 |
+| metric_X | 您想用于比较的量度。 |
+| metric_Y | 您想与其进行比较的量度。 |
 
 ### 示例
 
@@ -440,7 +440,7 @@ CDF-Z(-3) ? 0.0013499
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE 表]{type="Neutral"}指数回归：Y = a exp(X) + b。返回相关系数。
+[!BADGE 表]{type="Neutral"} 指数回归：Y = a exp(X) + b。返回相关系数。
 
 
 | 参数 | 描述 |
@@ -463,7 +463,7 @@ CDF-Z(-3) ? 0.0013499
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE 行]{type="Neutral"}指数回归：Y = a exp(X) + b。返回Y。
+[!BADGE 行]{type="Neutral"} 指数回归：Y = a exp(X) + b。返回 Y。
 
 
 | 参数 | 描述 |
@@ -487,7 +487,7 @@ CDF-Z(-3) ? 0.0013499
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE 表]{type="Neutral"}指数回归：Y = a exp(X) + b。返回b。
+[!BADGE 表]{type="Neutral"} 指数回归：Y = a exp(X) + b。返回 b。
 
 | 参数 | 描述 |
 |---|---|
@@ -510,7 +510,7 @@ CDF-Z(-3) ? 0.0013499
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE 表]{type="Neutral"}指数回归：Y = a exp(X) + b。返回a。
+[!BADGE 表]{type="Neutral"} 指数回归：Y = a exp(X) + b。返回 a。
 
 
 | 参数 | 描述 |
@@ -533,7 +533,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL FLOOR(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Row]{type="Neutral"}返回不大于给定值的最大整数。 例如，如果您要避免在报告收入时出现货币小数位数，而某产品的收入为 $569.34，则使用公式 FLOOR(Revenue) 可将收入向下舍入为最接近的美元数 $569。
+[!BADGE 行]{type="Neutral"} 返回不大于给定值的最大整数。例如，如果您要避免在报告收入时出现货币小数位数，而某产品的收入为 $569.34，则使用公式 FLOOR(Revenue) 可将收入向下舍入为最接近的美元数 $569。
 
 | 参数 | 描述 |
 |---|---|
@@ -557,8 +557,8 @@ CDF-Z(-3) ? 0.0013499
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要用于比较的基本量度。 |
-| metric_Y | 要用作比较的量度。 |
+| metric_X | 您想用于比较的基本量度。 |
+| metric_Y | 您想与其进行比较的量度。 |
 
 ### 示例
 
@@ -582,8 +582,8 @@ CDF-Z(-3) ? 0.0013499
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要用于比较的基本量度。 |
-| metric_Y | 要用作比较的量度。 |
+| metric_X | 您想用于比较的基本量度。 |
+| metric_Y | 您想与其进行比较的量度。 |
 
 ### 示例
 
@@ -605,7 +605,7 @@ CDF-Z(-3) ? 0.0013499
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIC COSINE(metric)]**
 
 
-[!BADGE Row]{type="Neutral"}返回一个数的双曲余弦值。
+[!BADGE 行]{type="Neutral"} 返回某数字的双曲余弦。
 
 
 | 参数 | 描述 |
@@ -627,7 +627,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIC SINE(metric)]**
 
-[!BADGE Row]{type="Neutral"}返回一个数的双曲正弦值。
+[!BADGE 行]{type="Neutral"} 返回某数字的双曲正弦。
 
 | 参数 | 描述 |
 |---|---|
@@ -647,7 +647,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIC TANGENT(metric)]**
 
-[!BADGE Row]{type="Neutral"}返回一个数的双曲正切。
+[!BADGE 行]{type="Neutral"} 返回某数字的双曲正切。
 
 | 参数 | 描述 |
 |---|---|
@@ -668,7 +668,7 @@ CDF-Z(-3) ? 0.0013499
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL IF(logical_test, value_if_true, value_if_false)]**
 
 
-[!BADGE 行]{type="Neutral"}如果条件参数的值为非零(true)，则结果为value_if_true参数的值。 否则，它会是 value_if_false 参数的值。
+[!BADGE 行]{type="Neutral"} 如果条件参数的值非零（真），则结果为 value_if_true 参数的值。否则，它会是 value_if_false 参数的值。
 
 
 | 参数 | 描述 |
@@ -695,8 +695,8 @@ CDF-Z(-3) ? 0.0013499
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要用于比较的指标。 |
-| metric_Y | 要用作比较的量度。 |
+| metric_X | 您想用于比较的量度。 |
+| metric_Y | 您想与其进行比较的量度。 |
 
 ### 示例
 
@@ -720,8 +720,8 @@ CDF-Z(-3) ? 0.0013499
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要用于比较的指标。 |
-| metric_Y | 要用作比较的量度。 |
+| metric_X | 您想用于比较的量度。 |
+| metric_Y | 您想与其进行比较的量度。 |
 
 ### 示例
 
@@ -740,7 +740,7 @@ CDF-Z(-3) ? 0.0013499
 
 <!-- markdownlint-enable MD034 -->
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 提升(normalizing-container， success-metric， control)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LIFT（标准化容器、成功量度、控制）]**
 
 与控制值相比，比率的提升。
 
@@ -766,7 +766,7 @@ CDF-Z(-3) ? 0.0013499
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE 表]{type="Neutral"}线性回归：Y = a X + b。返回相关系数。
+[!BADGE 表]{type="Neutral"} 线性回归：Y = a X + b。返回相关系数。
 
 
 | 参数 | 描述 |
@@ -791,7 +791,7 @@ CDF-Z(-3) ? 0.0013499
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE 表]{type="Neutral"}线性回归：Y = a X + b。返回b。
+[!BADGE 表]{type="Neutral"} 线性回归：Y = a X + b。返回 b。
 
 
 | 参数 | 描述 |
@@ -816,7 +816,7 @@ CDF-Z(-3) ? 0.0013499
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE 行]{type="Neutral"}线性回归：Y = a X + b。返回Y。
+[!BADGE 行]{type="Neutral"} 线性回归：Y = a X + b。返回 Y。
 
 
 | 参数 | 描述 |
@@ -840,7 +840,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"}线性回归：Y = a X + b。返回a。
+[!BADGE 表]{type="Neutral"} 线性回归：Y = a X + b。返回 a。
 
 | 参数 | 描述 |
 |---|---|
@@ -863,7 +863,7 @@ CDF-Z(-3) ? 0.0013499
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG BASE 10(metric)]**
 
 
-[!BADGE Row]{type="Neutral"}返回一个数字以10为底的对数。
+[!BADGE 行]{type="Neutral"} 返回某数字的以 10 为底的对数。
 
 
 | 参数 | 描述 |
@@ -884,7 +884,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"}对数回归：Y = a ln(X) + b。返回相关系数。
+[!BADGE 表]{type="Neutral"} 对数回归：Y = a ln(X) + b。返回相关系数。
 
 | 参数 | 描述 |
 |---|---|
@@ -906,7 +906,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"}对数回归：Y = a ln(X) + b。返回b。
+[!BADGE 表]{type="Neutral"} 对数回归：Y = a ln(X) + b。返回 b。
 
 | 参数 | 描述 |
 |---|---|
@@ -929,7 +929,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 行]{type="Neutral"}对数回归：Y = a ln(X) + b。返回Y。
+[!BADGE 行]{type="Neutral"} 对数回归：Y = a ln(X) + b。返回 Y。
 
 | 参数 | 描述 |
 |---|---|
@@ -952,7 +952,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"}对数回归：Y = a ln(X) + b。返回a。
+[!BADGE 表]{type="Neutral"} 对数回归：Y = a ln(X) + b。返回 a。
 
 | 参数 | 描述 |
 |---|---|
@@ -1023,8 +1023,8 @@ CDF-Z(-3) ? 0.0013499
 
 | 参数 | 描述 |
 |---|---|
-| metric_X | 要用于比较的指标。 |
-| metric_Y | 要用作比较的量度。 |
+| metric_X | 您想用于比较的量度。 |
+| metric_Y | 您想与其进行比较的量度。 |
 
 ### 示例
 
@@ -1045,7 +1045,7 @@ CDF-Z(-3) ? 0.0013499
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL OR(logical_test)]**
 
 
-[!BADGE 行]{type="Neutral"}分离。 不等于零被认为是真，等于零被认为是假。输出为 0（假）或 1（真）。
+[!BADGE 行]{type="Neutral"} 析取。不等于零被认为是真，等于零被认为是假。输出为 0（假）或 1（真）。
 
 
 | 参数 | 描述 |
@@ -1087,7 +1087,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"}幂回归：Y = b X ^ a。返回相关系数。
+[!BADGE 表]{type="Neutral"} 幂回归：Y = b X ^ a。返回相关系数。
 
 | 参数 | 描述 |
 |---|---|
@@ -1111,7 +1111,7 @@ CDF-Z(-3) ? 0.0013499
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE 表]{type="Neutral"}幂回归：Y = b X ^ a。返回b。
+[!BADGE 表]{type="Neutral"} 幂回归：Y = b X ^ a。返回 b。
 
 
 | 参数 | 描述 |
@@ -1134,7 +1134,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 行]{type="Neutral"}幂回归：Y = b X ^ a。返回Y。
+[!BADGE 行]{type="Neutral"} 幂回归：Y = b X ^ a。返回 Y。
 
 | 参数 | 描述 |
 |---|---|
@@ -1157,7 +1157,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"}幂回归：Y = b X ^ a。返回a。
+[!BADGE 表]{type="Neutral"} 幂回归：Y = b X ^ a。返回 a。
 
 | 参数 | 描述 |
 |---|---|
@@ -1180,7 +1180,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"}二次回归：Y = (a + bX) ^ 2。返回相关系数。
+[!BADGE 表]{type="Neutral"} 二次回归：Y = (a + bX) ^ 2，返回相关系数。
 
 | 参数 | 描述 |
 |---|---|
@@ -1201,7 +1201,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"}二次回归：Y = (a + bX) ^ 2，返回a。
+[!BADGE 表]{type="Neutral"} 二次回归：Y = (a + bX) ^ 2，返回 a。
 
 | 参数 | 描述 |
 |---|---|
@@ -1223,7 +1223,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 行]{type="Neutral"}二次回归：Y = (a + bX) ^ 2，返回Y。
+[!BADGE 行]{type="Neutral"} 二次回归：Y = (a + bX) ^ 2，返回 Y。
 
 | 参数 | 描述 |
 |---|---|
@@ -1245,7 +1245,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"}二次回归：Y = (a + bX) ^ 2，返回b。
+[!BADGE 表]{type="Neutral"} 二次回归：Y = (a + bX) ^ 2，返回 b。
 
 | 参数 | 描述 |
 |---|---|
@@ -1268,7 +1268,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"}倒数回归：Y = a + b X ^ -1。 返回相关系数。
+[!BADGE 表]{type="Neutral"} 倒数回归：Y = a + b X ^ -1。返回相关系数。
 
 | 参数 | 描述 |
 |---|---|
@@ -1290,7 +1290,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"}倒数回归：Y = a + b X ^ -1。 返回 a。
+[!BADGE 表]{type="Neutral"} 倒数回归：Y = a + b X ^ -1。返回 a。
 
 | 参数 | 描述 |
 |---|---|
@@ -1312,7 +1312,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 行]{type="Neutral"}倒数回归：Y = a + b X ^ -1。 返回 Y。
+[!BADGE 行]{type="Neutral"} 倒数回归：Y = a + b X ^ -1。返回 Y。
 
 | 参数 | 描述 |
 |---|---|
@@ -1334,7 +1334,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"}倒数回归：Y = a + b X ^ -1。 返回结果 b。
+[!BADGE 表]{type="Neutral"} 倒数回归：Y = a + b X ^ -1。返回结果 b。
 
 | 参数 | 描述 |
 |---|---|
@@ -1353,7 +1353,7 @@ CDF-Z(-3) ? 0.0013499
 >title="样本方差"
 >abstract="使用公式 (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)) 计算样本方差的估计值。其中 N 是标准化容器的计数。<br/>这可作为&#x200B;*随时有效的*&#x200B;置信度计算的一部分。一般来说，这个函数单独使用并无用处，但可用于检查计算结果或&#x200B;*手动*&#x200B;执行置信度计算。"
 
-![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 样本变量(normalizing-container， success-metric)]**
+![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 样本方差（标准化容器、成功量度）]**
 
 计算样本方差的估计值。
 
@@ -1380,7 +1380,7 @@ CDF-Z(-3) ? 0.0013499
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL SINE(metric)]**
 
 
-[!BADGE Row]{type="Neutral"}返回给定角度的正弦值。 如果角以角度表示，则将该角乘以 PI( )/180。
+[!BADGE 行]{type="Neutral"} 返回给定角度的正弦。如果角以角度表示，则将该角乘以 PI( )/180。
 
 
 | 参数 | 描述 |
@@ -1492,7 +1492,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL Z-SCORE(metric, include_zeros)]**
 
-[!BADGE 行]{type="Neutral"}平均值偏差除以标准偏差。
+[!BADGE 行]{type="Neutral"} 与平均值的离差除以标准差。
 
 | 参数 | 描述 |
 |---|---|

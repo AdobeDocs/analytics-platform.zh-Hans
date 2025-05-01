@@ -4,10 +4,10 @@ title: 配置流失可视化
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 97%
 ## 使用
 
 1. 添加 ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL 流失]**&#x200B;可视化图表。请参阅[将可视化图表添加到面板](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel)。
-1. 将页面（例如主页）从页面维度拖到&#x200B;*添加接触点*&#x200B;下拉菜单。
+1. 将页面（例如主页）从“页面”维度拖到&#x200B;*添加接触点*&#x200B;下拉菜单中。
 
    ![将主页从主页维度拖到添加接触点字段。](assets/fallout-drag.png)
 

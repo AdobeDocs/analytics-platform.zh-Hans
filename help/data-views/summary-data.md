@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
-source-git-commit: e2e04432682f94b18bf9ed25d15f906c05bfd59d
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 99%
+source-wordcount: '1147'
+ht-degree: 98%
 
 ---
 
@@ -93,7 +93,7 @@ ht-degree: 99%
 
 ### 粒度和时区
 
-在 Customer Journey Analytics 中配置包含摘要数据的数据集时，您会注意到粒度是从数据中自动得出的。**[!UICONTROL 时间戳]**&#x200B;和&#x200B;**[!UICONTROL 时区]**&#x200B;下拉菜单选项被禁用，因为它们均源自架构定义。
+在 Customer Journey Analytics 中配置包含摘要数据的数据集时，您会注意到粒度是从数据中自动得出的。已禁用&#x200B;**[!UICONTROL 时间戳]**&#x200B;和&#x200B;**[!UICONTROL 时区]**&#x200B;下拉菜单的选择，因为两者都派生自架构定义。
 
 #### 粒度
 
@@ -154,5 +154,5 @@ https://platform.adobe.io/data/foundation/schemaregistry/tenant/descriptors \
 >[!MORELIKETHIS]
 >
 >- 请参阅[使用摘要数据](/help/use-cases/data-views/summary-data.md)一文，了解有关如何使用和报告摘要数据的详细用例示例。
->- 博客： [摘要数据如何增强Adobe Customer Journey Analytics数据集](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635)
+>- 博客：[摘要数据如何增强 Adobe Customer Journey Analytics 数据集](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635)
 

@@ -5,10 +5,10 @@ title: 共享项目
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '2069'
-ht-degree: 97%
+source-wordcount: '2070'
+ht-degree: 99%
 
 ---
 
@@ -103,7 +103,7 @@ ht-degree: 97%
 
 1. （条件）如果您共享单个项目，请选择是否在共享项目时启用以下选项：
 
-   * **共享嵌入的项目组件：**&#x200B;与所有接收人共享区段、计算量度和日期范围。 共享后，这些组件将显示在接收人工作区的“组件”下拉菜单中。此设置不具有持续性，属于分享时的一次性操作。
+   * **共享嵌入的项目组件：**&#x200B;与所有接收人共享区段、计算量度和日期范围。 共享后，这些组件将显示在收件人Workspace的组件下拉菜单中。 此设置不具有持续性，属于分享时的一次性操作。
 
    * **设置为收件人的登陆页面：** 将此页面设置为收件人的登陆页面。此设置不具有持续性，属于分享时的一次性操作。
 
@@ -147,13 +147,13 @@ ht-degree: 97%
 >
 >* 包含超过 50 个展开的可视化图表的项目无法与没有 Customer Journey Analytics 访问权限的人员共享。
 >
->* 与您共享的用户可以查看在[策划](curate.md)期间应用于项目的任何区段。
+>* 您与其共享的用户可查看在[策划](curate.md)期间该项目中应用的任何区段。
 > 
 >* 您与其共享的用户可更改项目日期范围。默认情况下显示您为项目设置的日期范围。
 >
 >* 如果许多用户尝试同时访问给定的链接，则项目可能会变得无法访问。默认情况下，每 5 分钟可有超过 190 人访问单个链接。如果您的组织达到此限制，请等待 5 分钟，然后再重试访问链接。
 >
->* 对于[!DNL Healthcare Shield]和[!DNL Privacy & Security Shield]许可证，[!UICONTROL 与任何人共享]功能需要Experience Cloud身份验证。 对于[!DNL Healthcare Shield]客户，会显示“HIPAA合规性”警告，但您仍然可以在对Experience Cloud进行身份验证后使用此功能。
+>* 对于 [!DNL Healthcare Shield] 和 [!DNL Privacy & Security Shield] 两个许可证，[!UICONTROL 与任何人共享]功能需要 Experience Cloud 身份验证。为 [!DNL Healthcare Shield] 客户会显示“HIPAA 合规性”警告，但您仍然可以在进行 Experience Cloud 身份验证后使用此功能。
 
 >[!BEGINSHADEBOX]
 

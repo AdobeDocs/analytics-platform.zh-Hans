@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: e0615e3b4b1a4f0cd675de4bf4bb84d73eab8b8c
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '2698'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -48,7 +48,7 @@ Analytics 记分卡以平铺版面为执行用户显示关键数据可视化图�
 
 要创建记分卡，您需要执行以下操作：
 
-1. 访问Workspace中的[!UICONTROL 空白移动记分卡]模板。
+1. 访问 Workspace 中的[!UICONTROL 空白移动记分卡]模板。
 2. 使用数据配置记分卡并将其保存。
 
 ## 访问[!UICONTROL 空白移动记分卡]模板 {#template}
@@ -58,7 +58,7 @@ Analytics 记分卡以平铺版面为执行用户显示关键数据可视化图�
 ### 创建新项目 {#create}
 
 1. 打开 Customer Journey Analytics，然后单击&#x200B;**[!UICONTROL 工作区]**&#x200B;选项卡。
-1. 在左边栏中，单击&#x200B;**[!UICONTROL 项目]**。
+1. 在左边栏中点击&#x200B;**[!UICONTROL 项目]**。
 1. 单击&#x200B;**[!UICONTROL 创建新项目]**&#x200B;并选择&#x200B;**[!UICONTROL 空白移动记分卡]**&#x200B;项目模板。
 1. 单击&#x200B;**[!UICONTROL 创建]**。
 
@@ -73,7 +73,7 @@ Analytics 记分卡以平铺版面为执行用户显示关键数据可视化图�
 
 要实施记分卡模板，请执行以下操作：
 
-1. 在&#x200B;**[!UICONTROL 记分卡属性]**（在右侧边栏中）下，指定要从中使用数据的&#x200B;**[!UICONTROL 项目数据视图]**。
+1. 在&#x200B;**[!UICONTROL 记分卡属性]**（位于右侧边栏）中，指定要使用其中数据的&#x200B;**[!UICONTROL 项目数据视图]**。
 
    ![新的移动记分卡窗口，其中突出显示数据视图选择](assets/properties_save.png)
 
@@ -96,9 +96,9 @@ Analytics 记分卡以平铺版面为执行用户显示关键数据可视化图�
 
 要将区段应用于单个磁贴，请将左侧面板中的某个区段直接拖放到磁贴的顶部。
 
-如果要将区段应用于记分卡中的所有磁贴，请将区段拖放到记分卡的顶部。或者，您也可以通过在日期范围下方的区段菜单中选择区段来应用区段。 您[像在Customer Journey Analytics Workspace中一样为记分卡配置和应用区段](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html)。
+如果要将区段应用于记分卡中的所有磁贴，请将区段拖放到记分卡的顶部。或者，您也可以在日期范围下方的区段菜单中选择区段，然后应用它们。您可以像在 Customer Journey Analytics Workspace 中那样[为记分卡配置和应用区段](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html)。
 
-![突出显示生成区段的区段下拉选择器](assets/segment_ui.png)
+![区段下拉选择器突出显示已构建的区段](assets/segment_ui.png)
 
 ## 添加日期范围 {#dates}
 
@@ -203,7 +203,7 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 ![Breakdown_view](assets/break_view.png)
 
-添加到图块的每个维度将显示在应用程序详细视图的下拉列表中。然后，执行用户可从该下拉列表中列出的各个选项中进行选择。
+添加到图块的每个维度将显示在应用程序详细视图的下拉菜单中。 然后，执行用户可以从下拉菜单中选取列出的选项。
 
 ## 自定义详细信息幻灯片 {#customize-detail-slide}
 
@@ -281,7 +281,7 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 ### 自定义数据故事 {#customize-data-story}
 
-通过数据故事，可自定义一切，以使您可共享要共享的信息并排除多余的一切。您可以自定义图块和单个幻灯片以添加区段、显示划分、更改布局或更改可视化图表。
+通过数据故事，可自定义一切，以使您可共享要共享的信息并排除多余的一切。您可以自定义图块和单张幻灯片以添加区段、显示细分、更改版面、更改可视化图表。
 
 **自定义磁贴**
 

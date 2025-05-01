@@ -4,10 +4,10 @@ description: 了解如何管理 Customer Journey Analytics 中的受众
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: 65dcbf63d9e155cb7e04bf9a550151a37b8457e6
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 78%
+ht-degree: 97%
 
 ---
 
@@ -25,23 +25,23 @@ ht-degree: 78%
 * 通过 Customer Journey Analytics 深入了解&#x200B;**产生一个受众所花的时间**。以及在实时客户平台中显示受众以进行激活所需的时间。
 * 查看&#x200B;**实时客户平台是否正在积极使用** Customer Journey Analytics 中的受众。或者（理想情况下）任何使用由 Customer Journey Analytics 创建的受众的 Experience Platform 应用程序。
 
-如果您具有[受众视图](/help/technotes/access-control.md#user-level-access)访问权限，那么您可以查看受众。如果您有[受众创建](/help/technotes/access-control.md#user-level-access)权限，则可以编辑和删除受众。
+如果您具有[受众视图](/help/technotes/access-control.md#user-level-access)访问权限，那么您可以查看受众。如果您有[受众创建](/help/technotes/access-control.md#user-level-access)访问权限，您可以编辑和删除受众。
 
-## 在受众列表中查看受众
+## 在“受众”列表中查看受众
 
-受众列表➊显示了现有受众。
+受众列表 ➊ 显示现有的受众。
 
 ![受众管理器](assets/audiences-manager.png)
 
-要查看受众列表，请执行以下操作：
+查看受众列表：
 
-1. 在Customer Journey Analytics中，选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 受众]**。
+1. 在 Customer Journey Analytics 中选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 受众]**。
 
-1. （可选）使用![ColumnSetting](/help/assets/icons/ColumnSetting.svg)来配置要显示的列。
+1. （可选）使用 ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) 可以配置要显示的列。
 
-1. （可选）使用![搜索](/help/assets/icons/Search.svg)搜索受众。
+1. （可选）使用![搜索](/help/assets/icons/Search.svg)可以搜索受众。
 
-   以下各列提供了有关每个受众的信息：
+   以下各列提供有关每个受众的信息：
 
    | 列 | 描述 |
    | --- | --- |
@@ -58,19 +58,19 @@ ht-degree: 78%
 
 ## 编辑受众
 
-您可以随时编辑受众的设置。 编辑受众（一次性受众或定期受众）时，需要重新发布。
+您可以随时编辑受众的设置。编辑受众（一次性受众或定期受众）后，需要重新发布。
 
 若要编辑受众：
 
-1. 在Customer Journey Analytics中，选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 受众]**。
+1. 在 Customer Journey Analytics 中选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 受众]**。
 
-   此时将显示“受众”页面。
+   现在显示“受众”页面。
 
-1. 选择要编辑的受众标题。
+1. 选择您想要编辑的受众的标题。
 
-   此时将显示&#x200B;**[!UICONTROL 编辑受众]**&#x200B;对话框。
+   现在显示&#x200B;**[!UICONTROL 编辑受众]**&#x200B;对话框。
 
-1. 您可以更新受众的任何可用字段。 有关可更新字段的信息，请参阅文章中的[受众生成器](/help/components/audiences/publish.md#audience-builder)，[创建和发布受众](/help/components/audiences/publish.md)。
+1. 您可以为此受众更新任何可用的字段。有关可更新字段的信息，请参阅[受众生成器](/help/components/audiences/publish.md#audience-builder)的文章[创建并发布受众](/help/components/audiences/publish.md)。
 
 1. 选择&#x200B;**[!UICONTROL 重新发布]**。
 
@@ -80,7 +80,7 @@ ht-degree: 78%
 
 | 图标 | 操作 | 描述 |
 |:---:|---|---|
-| ![标签](/help/assets/icons/Labels.svg) | **[!UICONTROL 标记]** | 标记选定的受众。在&#x200B;**[!UICONTROL 更新标记：*受众姓名&#x200B;*]**对话框中，从下拉菜单中选择标记或输入一个或多个新标记。选择**[!UICONTROL 保存&#x200B;]**以保存。 |
+| ![标签](/help/assets/icons/Labels.svg) | **[!UICONTROL 标记]** | 标记选定的受众。在&#x200B;**[!UICONTROL 更新标记：*受众名称&#x200B;*]**对话框中，从下拉菜单中选择标记或键入一个或多个新标记。 选择**[!UICONTROL 保存&#x200B;]**以保存。 |
 | ![Delete](/help/assets/icons/Delete.svg) | **[!UICONTROL 删除]** | 删除选定的受众。 |
 | ![Edit](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名选定的受众。使用&#x200B;**[!UICONTROL 重命名：*受众名称&#x200B;*]**对话框来重命名受众，并选择**[!UICONTROL 保存&#x200B;]**以保存。 |
 
@@ -92,7 +92,7 @@ ht-degree: 78%
 | ![Delete](/help/assets/icons/Delete.svg) | **[!UICONTROL 删除]** | 删除选定的受众。 |
 | ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL 导出至 CSV]** | 将选定的受众导出到名为 `audiences.csv` 的文件中。 |
 
-## 筛选受众列表
+## 过滤受众列表
 
 您可以使用过滤器面板 ➋ 来过滤[受众名单](#audiences-list)。要显示或隐藏过滤器面板，请使用![过滤器](/help/assets/icons/Filter.svg)。
 
