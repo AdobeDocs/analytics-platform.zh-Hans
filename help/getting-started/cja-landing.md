@@ -4,10 +4,10 @@ description: Customer Journey Analytics 登陆页面。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: f39cf7c386c42488d6607154fc7922911df5527c
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 87%
+source-wordcount: '884'
+ht-degree: 94%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 87%
 
 本技术文档指南为 Customer Journey Analytics 提供了自助服务。通过 Customer Journey Analytics，您可以将客户数据从您选择的任何渠道（在线和离线）带入 Adobe Experience Platform。然后，就像现在使用 Analysis Workspace 分析现有数字数据一样分析这些数据。
 
-通过Customer Journey Analytics，您可以控制如何在Analysis Workspace中将任何通用客户ID上的在线和离线数据进行关联，  
+使用 Customer Journey Analytics，您可以控制如何在 Analysis Workspace 的任何常见客户 ID 上连接在线和离线数据，从而进行属性、区段、流量、流失等操作。 
 
 ## 新增功能
 
@@ -23,11 +23,17 @@ ht-degree: 87%
 
 >[!BEGINTABS]
 
->[!TAB Content Analytics]
+>[!TAB 内容分析]
 
 Adobe Content Analytics 可让您快速轻松地调查大量内容数据，以了解趋势、发现异常、识别内容疲劳并从内容曝光中获取见解。
 
 [![图像](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
+
+>[!TAB 共享的量度和维度]
+
+共享量度和维度提供了一个管理可用于任意数量数据视图的维度和量度的中心位置。 这些组件对于使用多个数据视图的组织特别有用，尤其是当这些数据视图共享通用组件设置时。
+
+[![图像](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 
 >[!TAB AI 助手]
 
@@ -43,9 +49,9 @@ AI 助手是一种对话体验，允许从业者快速执行任务——无论�
 [![图像](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
 
 
->[!TAB 智能字幕v2]
+>[!TAB 智能题注 v2]
 
-现在支持[Line](/help/analysis-workspace/visualizations/line.md)（包括多行）、[Bar](/help/analysis-workspace/visualizations/bar.md)、[Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md)、[Area](/help/analysis-workspace/visualizations/area.md)（包括多区域线）、[Donut](/help/analysis-workspace/visualizations/donut.md)、[Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)和[Flow](/help/analysis-workspace/visualizations/c-flow/flow.md)可视化图表的智能字幕，并改进了界面。
+现在支持智能题注，并进一步改进了以下图表界面：[折线图](/help/analysis-workspace/visualizations/line.md)（包含多条线）、[条形图](/help/analysis-workspace/visualizations/bar.md)、[水平条形图](/help/analysis-workspace/visualizations/horizontal-bar.md)、[面积图](/help/analysis-workspace/visualizations/area.md)（包含多条面积线）、[环形图](/help/analysis-workspace/visualizations/donut.md)、[流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)和 [流量](/help/analysis-workspace/visualizations/c-flow/flow.md)可视化图表。
 
 [![图像](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
 
@@ -54,6 +60,7 @@ AI 助手是一种对话体验，允许从业者快速执行任务——无论�
 警报允许您根据变化的百分比或特定数据点收到通知。您可以预览警报触发的频率、通过电子邮件或 SMS 发送警报、创建堆叠警报等。
 
 [![图像](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
 
 >[!TAB 摘要数据]
 
@@ -74,7 +81,7 @@ AI 助手是一种对话体验，允许从业者快速执行任务——无论�
 
 >[!TAB BI 扩展*]
 
-BI 扩展允许 SQL 访问您在 Customer Journey Analytics 中定义的数据视图。您现在可以使用常用的BI工具(Power BI Desktop、Tableau Desktop、Looker、Juyter Notebook和RStudio)根据Customer Journey Analytics用户在其Analysis Workspace项目中使用的数据视图创建报表和仪表板。 [提供了用例](/help/use-cases/data-views/bi-extension-usecases.md)。
+BI 扩展允许 SQL 访问您在 Customer Journey Analytics 中定义的数据视图。您现在可以使用自己喜欢的 BI 工具（Power BI Desktop、Tableau Desktop、Looker、Juyter Notebook 和 RStudio）根据与 Customer Journey Analytics 用户在其分析工作区项目中使用的相同的数据视图创建报告和仪表板。[提供了用例](/help/use-cases/data-views/bi-extension-usecases.md)。
 
 [![图像](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
 

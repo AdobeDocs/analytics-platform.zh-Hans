@@ -1,107 +1,107 @@
 ---
-title: Content Analytics数据收集
-description: 概述如何在Content Analytics中收集数据
+title: Content Analytics 数据收集
+description: Content Analytics 中数据收集方式概述
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
+source-git-commit: f39cf7c386c42488d6607154fc7922911df5527c
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 1%
+source-wordcount: '602'
+ht-degree: 88%
 
 ---
 
-# Content Analytics数据收集
+# Content Analytics 数据收集
 
-本文详细介绍Content Analytics如何收集数据
+本文详细介绍了 Content Analytics 如何收集数据
 
 
 ## 定义
 
-本文上下文中使用了以下定义：
+本文中使用以下定义：
 
-* **体验**：体验被定义为整个网页上的文本内容。 对于数据收集，Content Analytics会记录基于页面URL的Experience ID。 之后，通过检索服务捕获页面上的文本。
-* **体验ID**：相关URL（基本URL加上驱动页面内容的任何参数）和[体验版本](manual.md#versioning)的唯一组合。
-   * 在[配置](configuration.md)中，您指定与任何给定完整URL相关的参数。
-   * 您定义要使用的[版本标识符](manual.md#versioning)，以便正确收集对体验的更改。
-* **资源**：图像。 Content Analytics记录资源URL。
-* **资源ID**：资源的URL。
-* **相关URL**：基本URL加上驱动页面内容的任何参数。
+* **体验**：体验定义为整个网页上的文本内容。Content Analytics 会为数据收集记录基于页面 URL 的体验 ID。然后通过检索服务捕捉页面上的文本。
+* **体验 ID**：相关 URL 的唯一组合（基本 URL 加上驱动页面内容的任何参数）和[体验版本](manual.md#versioning)。
+   * 作为[配置](configuration.md)的一部分，您指定哪些参数与任何给定的完整 URL 相关。
+   * 您定义一个可使用的[版本标识符](manual.md#versioning)，这样就可以正确收集有关体验的变化。
+* **资产**：一个图像。Content Analytics 会记录资产 URL。
+* **资产 ID**：资产的 URL。
+* **相关 URL**：基本 URL 加上驱动页面内容的任何参数。
 
 
 ## 功能
 
-Content Analytics需要Experience Platform Edge Network Web SDK来收集内容事件数据。 该事件数据收集通过Experience Platform Edge Network (Web SDK，服务器API)或Analytics源连接器(例如，使用AppMeasurement)等机制，与行为事件数据的（现有）数据收集相结合。
+Content Analytics 需要 Experience Platform Edge Network Web SDK 来收集内容事件数据。该事件数据收集通过 Experience Platform Edge Network（Web SDK、服务器 API）或 Analytics 源连接器（例如，使用 AppMeasurement）等机制与行为事件数据的（现有）数据收集相结合。
 
-Content Analytics库在以下情况下收集数据：
+在以下情况下 Content Analytics 库会收集数据：
 
-* Content Analytics包含在页面上加载的标记库中。
-* 页面URL在[Content Analytics扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}中配置，该扩展是包含的Tags库的一部分。
+* Content Analytics 包含在页面上加载的标记库中。
+* 页面 URL 在 [Content Analytics 扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}中配置，是所包含的标记库的一部分。
 
 
 
-## Content Analytics事件
+## Content Analytics 事件
 
-Content Analytics事件包括：
+Content Analytics 事件由以下各项组成：
 
 * 标准字段
    * 时间戳
    * 身份标识
-* 体验视图（如果有，如果已配置）
-* 体验点击次数（如果有，如果已配置）
-* 资产视图（如果有，如果已配置）
-* 资产点击次数（如果有，如果已配置）
+* 体验访问数（如有且已配置）
+* 体验点击数（如有且已配置）
+* 资产访问数（如有且已配置）
+* 资产点击数（如有且已配置）
 
 
-Content Analytics事件将按顺序收集：
+Content Analytics 事件收集为以下顺序：
 
-1. [录制视图，或单击](#recorded-view-or-click)。
-1. [常规或特定（行为）事件](#regular-or-specific-behaviorial-event)。
+1. [记录的访问或点击](#recorded-view-or-click)。
+1. [用于发送Content Analytics事件的触发器](#trigger-to-send-a-content-analytics-event)。
 
-Content Analytics确实会通过这种方式收集数据来反映该顺序，而不是收集视图或单击来代替收集紧跟在该视图或单击之后的事件。 这种收集内容分析数据的方式还减少了收集的数据量。
+Content Analytics 实际上以这种方式收集数据来反映该顺序，而不是将收集某次访问或点击与收集该访问或点击之后立即发生的事件两者分开。这种收集内容分析数据的方式也减少了所收集的数据量。
 
-### 录制的视图或点击
+### 记录的访问或点击
 
-在以下情况下会记录资源视图：
+在以下情况下会记录资产访问：
 
-* 没有根据Content Analytics扩展配置排除该资源。
-* 资产占75%。
-* 尚未为此页面记录该资产。
+* 该资产尚未通过 Content Analytics 扩展配置被排除。
+* 该资产的 75% 被访问。
+* 该资产尚未为此页面被记录。
 
-出现以下情况时，将记录资产点击次数：
+在以下情况下会记录资产点击：
 
-* 已查看资源。
-* 没有根据Content Analytics扩展配置排除该资源。
-* 直接单击资产（一个链接）以转到另一个页面。
+* 该资产已被访问。
+* 该资产尚未通过 Content Analytics 扩展配置被排除。
+* 直接点击该资产（即链接）后转到另一个页面。
 
-在以下情况下，将记录体验视图：
+在以下情况下会记录体验访问：
 
-* 体验会在Content Analytics配置中启用。
+* 在 Content Analytics 配置中启用了体验。
 
-在以下情况下，将记录一次体验点击：
+在以下情况下会记录体验点击：
 
-* 在启用了体验的页面上的链接上发生任何点击。
+* 对启用了体验的页面中某个链接的任何点击。
 
 
-### 定期或特定（行为）事件
+### 触发以发送Content Analytics事件
 
-在Content Analytics上下文中触发常规或特定（行为）事件的触发程序包括：
+为了减少离开页面的调用数，Content Analytics会收集信息，但不会立即发送该信息。 将收集内容交互信息，并且仅在发生以下触发器之一时发送包含该信息的事件：
 
-* Web SDK或AppMeasurement发送事件。
-* 可视性更改为隐藏，例如：
+* Web SDK或AppMeasurement发送事件。 此事件的时间戳为
+* 可见性变为隐藏，例如：
    * 页面卸载
-   * “切换”选项卡
-   * 最小化浏览器
+   * 切换选项卡
+   * 将浏览器最小化
    * 关闭浏览器
    * 锁定屏幕
-* URL发生更改，从而导致相关的URL被修改。
-* 记录并准备发送的资产查看次数超过了32次。
+* URL 发生变化，导致相关 URL 改变。
+* 已记录并准备发送的资产访问数超过 32。
 
 
 ## 架构
 
-Content Analytics数据是根据特定的Experience Platform架构在Content Analytics的数据集中收集的。 引用架构已公开可用：
+Content Analytics 数据根据特定的 Content Analytics 架构收集在 Experience Platform 的数据集中。参考架构公开可用：
 
 * [数字资产架构](https://github.com/adobe/xdm/blob/master/components/classes/digital-asset.schema.json)
 * [数字体验架构](https://github.com/adobe/xdm/blob/master/components/classes/digital-experience.schema.json)
