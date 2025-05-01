@@ -2,10 +2,10 @@
 title: 产品使用情况概述
 description: 查看有关您的组织如何使用 Customer Journey Analytics 的洞察和报告。
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: a4615907f61b4d63393a9481fdd7b45b7b9b6262
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '591'
+ht-degree: 88%
 
 ---
 
@@ -126,3 +126,11 @@ ht-degree: 100%
    * [!UICONTROL 维恩图]
 
 当项目仅被打开或查看时，产品使用情况不会跟踪单个项目组件。但是，用户打开项目的操作会被跟踪。
+
+## 可用模板
+
+[Adobe模板](/help/analysis-workspace/templates/use-templates.md)可用，该模板使用自动从此功能生成的组件。
+
+**[!UICONTROL Adobe模板]** > **[!UICONTROL 其他]** > **[!UICONTROL 产品使用概述]**
+
+选择产品使用情况在数据视图选择器中自动创建的数据视图，然后选择&#x200B;**[!UICONTROL 产品使用情况概述]**&#x200B;模板。 选择&#x200B;**[!UICONTROL 预览]**&#x200B;以查看模板使用哪些面板并了解理想用例，或选择&#x200B;**[!UICONTROL 使用模板]**&#x200B;在Analysis Workspace中打开它。
