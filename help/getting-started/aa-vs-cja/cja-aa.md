@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 8972a195554971006eb4315bdd216947d6cf79f3
 workflow-type: tm+mt
-source-wordcount: '2441'
-ht-degree: 94%
+source-wordcount: '2482'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 94%
 | **能够组合数据集（例如 Adobe Analytics 报告包）** | 通过 Customer Journey Analytics，可从多个报告包[组合数据](/help/connections/combined-dataset.md)，如同它们是 Adobe Analytics 中的单个报告包一样。 |
 | **适用于任何类型的数据** | Customer Journey Analytics 与 Experience Platform 保存各种数据架构和类型的能力相结合。使用[体验数据模型 (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)，可以采用统一的方式来表示和组织数据，以便进行数据合并和分析。Adobe Analytics 主要专注于 Web 和移动分析数据，并具有一些[数据导入](https://experienceleague.adobe.com/docs/analytics/import/home.html)功能。 |
 | **BI 扩展** | [BI 扩展](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/data-export/bi-extension) 可让您将 CJA 直接连接到流行的 BI 可视化工具，例如 PowerBI 或 Tableau。通过使用此扩展，您可以让您的 BI 报告与您在 Analysis Workspace 和其他 CJA 报告界面中看到的内容完全匹配。这是获取 CJA 的 BI 报告的一种更简单的方法，无需根据原始数据重新创建报告/量度。 |
-| **Content Analytics** | [Content Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/content-analytics/content-analytics)可帮助营销人员了解内容如何影响企业定义的关键绩效指标。 除了行为数据之外，Content Analytics还收集有关如何使用内容以及内容如何推动影响的数据。 |
+| **Content Analytics** | [Content Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/content-analytics/content-analytics) 帮助营销人员了解内容如何影响企业定义的关键绩效指标。除了行为数据之外，Content Analytics 还收集关于内容如何被消费以及内容如何产生影响的数据。 |
 | **跨设备分析** | Customer Journey Analytics 支持来自未经身份验证和经过身份验证的会话的特定于设备的数据集的无缝组合。Customer Journey Analytics 可以将历史数据回填到已知设备。在 Adobe Analytics 中，此功能仅限于单个报告包和使用设备图时。 |
 | **维度增强功能** | Customer Journey Analytics 为使用维度提供了更大的灵活性： <ul><li>**自定义基于数值的维度**：[在数据视图中创建您自己的基于数值的维度](/help/data-views/create-dataview.md#components)。</li><li>**对基于字符串的维度进行排序**：[在自由格式表中按字母顺序对基于字符串的维度进行排序。](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#sort-tables) </li></ul><p>在 Adobe Analytics 中，只有少数内置数值维度可用，并且无法按基于字符串的维度进行排序。</p> |
 | **派生字段** | [派生字段](/help/data-views/derived-fields/derived-fields.md)可为数据转换报告时间。可即时组合、更正或创建数据，并且这些转换可追溯地应用于所有报告。 |
@@ -37,11 +37,12 @@ ht-degree: 94%
 | **历程画布** | [历程画布](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=en)是 Analysis workspace 中的一项可视化功能，您使用它可以分析人们如何完成或退出所定义的历程。 |
 | **产品使用情况** | [产品使用情况](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/tools/product-usage/usage-overview)向您展示贵组织如何使用 Customer Journey Analytics。 |
 | **报告时间变换** | 通过 Customer Journey Analytics 中的[数据视图](/help/data-views/data-views.md)，可进一步解释从某个连接获得的数据。可不更改实施即更改或删除数据、使用子字符串操纵维度、从任意值创建量度或筛选子事件。以非破坏性的方式进行所有这些转换。Adobe Analytics 通过虚拟报告包和自定义会话长度提供有限的功能。 |
+| **数据视图间共享的量度和维度** | 允许您[跨多个数据视图](/help/data-views/shared-metrics-dimensions/smd-overview.md)应用维度和量度设置。 对共享维度或量度所做的更改将应用于该维度或量度在所有适用数据视图中的所有实例。 |
 | **SQL 访问** | 通过使用数据蒸馏器选项，Customer Journey Analytics 可以消除 Adob&#x200B;e 后端处理中收集的数据的限制。您可以使用 SQL 修改数据、创建适合您的业务的值和数据集，并继续探索。Analytics 不支持对其数据进行任何类型的 SQL 访问。 |
 | **拼合** | [拼合](/help/stitching/overview.md)是一项强大的功能，可以提升事件数据集进行跨渠道分析的适用性。跨渠道分析是 Customer Journey Analytics 可以处理的主要用例，允许您基于通用标识符（人员 ID）无缝组合并运行来自不同渠道的多个数据集的报告。 |
 | **Adobe Journey Optimizer 中的模板** | 在 Adobe Journey Optimizer 中自定义新的报告界面：在 Customer Journey Analytics 中创建或编辑[模板](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=en)，然后保存该模板，将其在 Journey Optimizer 的报告页面中使用。 |
 | **无限量的客户维度和量度** | Customer Journey Analytics 维度是无限的；值可以是数字、文本、对象、列表或它们的组合。维度可以是嵌套的或分层的。<br/>根据对比度，Adobe Analytics 最多支持 75 个 prop 和 250 个 eVar。 |
-| **无限量的唯一值** | Customer Journey Analytics 不限制可以在单个维度上报告的唯一值或维度项目的数量。<p> [维度上没有基数限制](/help/components/dimensions/high-cardinality.md)，允许任何唯一值出现并被计算。</p><p>这种方法消除了大规模 Adobe Analytics 实施中可能存在的报告和分析限制，从而产生 [!UICONTROL 低流量] 标签。</p><p>在Customer Journey Analytics中，可能会看到[!UICONTROL 超出唯一值]的标签，但出现这些值的频率要低得多，可以通过向数据应用区段来缓解这些情况。</p> |
+| **无限量的唯一值** | Customer Journey Analytics 不限制可以在单个维度上报告的唯一值或维度项目的数量。<p> [维度上没有基数限制](/help/components/dimensions/high-cardinality.md)，允许任何唯一值出现并被计算。</p><p>这种方法消除了大规模 Adobe Analytics 实施中可能存在的报告和分析限制，从而产生 [!UICONTROL 低流量] 标签。</p><p>在 Customer Journey Analytics 中可以看到 [!UICONTROL Uniques Exceeded] 标签，但这种情况发生的频率要低得多，可以通过对数据进行分段来缓解。</p> |
 
 ## 完全支持 Adobe Analytics 功能/组件 {#full-support}
 
@@ -109,7 +110,7 @@ ht-degree: 94%
 | **Products 变量** | 在 Experience Platform 中，用户可在数据集架构中使用对象数组满足此用例。在 Customer Journey Analytics 中，客户可使用任意数量的产品变量，而不像在 Adobe Analytics 中那样只能使用一个变量。 |
 | **项目共享** | 仅在 Customer Journey Analytics 的用户之间支持项目共享功能 - 在 Customer Journey Analytics 与传统 Analysis Workspace 之间无项目共享。 |
 | **Report Builder** | 通过一个新的 Office 365 Excel 插件支持此项。 |
-| **用户权限/数据访问控制** | Customer Journey Analytics 区分 [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) 产品管理员、产品配置文件管理员和用户。只有产品管理员可以创建/更新/删除由其他用户创建的连接、项目、区段或计算量度，而产品管理员和产品配置文件管理员可以编辑数据视图。 其他用户权限可用于创建计算量度、区段或注释等。 |
+| **用户权限/数据访问控制** | Customer Journey Analytics 区分 [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) 产品管理员、产品配置文件管理员和用户。只有产品管理员可以创建/更新/删除由其他用户创建的连接、项目、区段或计算量度，而产品管理员和产品配置文件管理员可以编辑数据视图。 对于创建计算量度、区段或注释等操作还有其他用户权限可用。 |
 | **可视化内容** | 除地图可视化内容外，支持所有 Workspace 可视化内容。 |
 | **跨设备/跨渠道拼合** | 支持包含身份标识信息的事件数据集。请参阅[拼合](../../stitching/overview.md)。 |
 
