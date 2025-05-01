@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: f13d0f7afcfe2ebb334062b79b409219169c1aee
+source-git-commit: e16bfa01dd3bedc96a147b2510ba33f4b88b01b9
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 0%
@@ -90,3 +90,4 @@ Customer Journey Analytics基于三个容器的概念而构建：人员、会话
 ## 报告基于人员和帐户的数据
 
 如果要报告基于人员的容器（和人员身份）和基于帐户的容器（和帐户身份），则应在Customer Journey Analytics中设置两个单独的连接。 一个连接是选择人员作为主ID，另一个连接是选择帐户作为主ID。 Customer Journey Analytics不支持从单个容器层次结构中生成基于人员和基于帐户的报表。
+

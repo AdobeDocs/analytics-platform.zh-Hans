@@ -4,7 +4,7 @@ description: Customer Journey Analytics 登陆页面。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: f39cf7c386c42488d6607154fc7922911df5527c
+source-git-commit: e16bfa01dd3bedc96a147b2510ba33f4b88b01b9
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 94%
@@ -25,13 +25,13 @@ ht-degree: 94%
 
 >[!TAB 内容分析]
 
-Adobe Content Analytics 可让您快速轻松地调查大量内容数据，以了解趋势、发现异常、识别内容疲劳并从内容曝光中获取见解。
+Content Analytics 可让您快速轻松地调查大量内容数据，以发现趋势、识别异常、判断内容疲劳度，并从内容曝光中获得洞察。
 
 [![图像](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
 
->[!TAB 共享的量度和维度]
+>[!TAB 共享量度和维度]
 
-共享量度和维度提供了一个管理可用于任意数量数据视图的维度和量度的中心位置。 这些组件对于使用多个数据视图的组织特别有用，尤其是当这些数据视图共享通用组件设置时。
+共享量度和维度提供了一个中央位置，用于管理可用于任意数量的数据视图的维度和量度。 这些组件对于使用多个数据视图的组织特别有用，尤其是当这些数据视图共享通用组件设置时。
 
 [![图像](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 

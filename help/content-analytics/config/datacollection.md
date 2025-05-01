@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: d695fcb8dbd98675914c687f3dfaf8c5f0017073
+source-git-commit: 63c6a5d6148c1562b7f6ac8e4a1cac5919e2dd2e
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 82%
@@ -15,7 +15,6 @@ ht-degree: 82%
 # Content Analytics 数据收集
 
 本文详细介绍了 Content Analytics 如何收集数据
-
 
 ## 定义
 
@@ -40,7 +39,6 @@ Content Analytics 需要 Experience Platform Edge Network Web SDK 来收集内�
 * 页面 URL 在 [Content Analytics 扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}中配置，是所包含的标记库的一部分。
 
 
-
 ## Content Analytics 事件
 
 Content Analytics 事件由以下各项组成：
@@ -52,7 +50,6 @@ Content Analytics 事件由以下各项组成：
 * 体验点击数（如有且已配置）
 * 资产访问数（如有且已配置）
 * 资产点击数（如有且已配置）
-
 
 Content Analytics 事件收集为以下顺序：
 
@@ -86,7 +83,7 @@ Content Analytics 实际上以这种方式收集数据来反映该顺序，而�
 
 ### 触发以发送Content Analytics事件
 
-为了减少离开页面的调用数，Content Analytics会收集信息，但不会立即发送该信息。 将收集内容交互信息，并且仅在发生以下触发器之一时发送包含该信息的事件：
+为了减少离开页面的调用数，Content Analytics会收集信息，但不会立即发送该信息。 系统会收集内容交互信息，并且仅在发生以下任一触发器时发送包含该信息的事件：
 
 * Web SDK或AppMeasurement发送事件。 此事件的时间戳为
 * 可见性变为隐藏，例如：
