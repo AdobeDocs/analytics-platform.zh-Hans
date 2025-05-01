@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: f13d0f7afcfe2ebb334062b79b409219169c1aee
 workflow-type: tm+mt
-source-wordcount: '6794'
+source-wordcount: '6802'
 ht-degree: 63%
 
 ---
@@ -331,8 +331,8 @@ ht-degree: 63%
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
->title="匹配键"
->abstract="选择如何加入：基于匹配的键或匹配的容器。<br/><br/>**[!UICONTROL 匹配的键&#x200B;]**：选择要与某个事件数据集连接的字段如果此列表为空，则可能尚未添加或配置事件数据集。<br/>**[!UICONTROL 匹配容器]**：选择一个容器来用于与其中一个事件数据集连接。如果此列表为空，则可能尚未配置一个或多个容器。"
+>title="匹配键类型"
+>abstract="选择联接方式：基于按字段的匹配或按容器匹配。<br/><br/>**[!UICONTROL 按字段匹配&#x200B;]**：选择要与某个事件数据集连接的字段如果此列表为空，则可能尚未添加或配置事件数据集。<br/>**[!UICONTROL 按容器匹配]**：选择要与某个事件数据集连接的容器。如果此列表为空，则可能尚未配置一个或多个容器。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -446,8 +446,8 @@ ht-degree: 63%
 
 >[!CONTEXTUALHELP]
 >id="connection_matchingkey"
->title="匹配键"
->abstract="选择如何加入：基于匹配的键或匹配的容器。<br/><br/>**[!UICONTROL 匹配的键&#x200B;]**：选择要与某个事件数据集连接的字段如果此列表为空，则可能尚未添加或配置事件数据集。<br/>**[!UICONTROL 匹配容器]**：选择一个容器来用于与其中一个事件数据集连接。如果此列表为空，则可能尚未配置一个或多个容器。"
+>title="匹配键类型"
+>abstract="选择联接方式：基于按字段的匹配或按容器匹配。<br/><br/>**[!UICONTROL 按字段匹配&#x200B;]**：选择要与某个事件数据集连接的字段如果此列表为空，则可能尚未添加或配置事件数据集。<br/>**[!UICONTROL 按容器匹配]**：选择要与某个事件数据集连接的容器。如果此列表为空，则可能尚未配置一个或多个容器。"
 
 <!-- markdownlint-enable MD034 -->
 
