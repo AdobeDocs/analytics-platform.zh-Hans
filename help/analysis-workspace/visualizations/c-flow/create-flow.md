@@ -4,10 +4,10 @@ title: 如何配置流量可视化图表
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 915c1ecff6dcbe42a6ed81c74f4ec5b4a24eaaa5
 workflow-type: tm+mt
-source-wordcount: '1484'
-ht-degree: 87%
+source-wordcount: '1525'
+ht-degree: 86%
 
 ---
 
@@ -17,6 +17,17 @@ ht-degree: 87%
 >id="workspace_flow_container"
 >title="流量容器"
 >abstract="选择用于显示路径（的数字）的容器。"
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_include_repeats_disabled"
+>title="包含重复项（已禁用）"
+>abstract="无法从包含多值维度的 Flow 可视化中移除重复项。"
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_include_repeats_default"
+>title="包括重复 "
+>abstract="流量可视化图表基于某个维度的实例。此设置使您可以选择包含或排除重复的实例，例如：页面重新加载。"
+
 
 
 流量可视化帮助您了解源自网站或应用程序上特定转化事件的旅程。 或导致特定的转化事件。 可视化图表通过维度（和维度项）或量度跟踪路径。
