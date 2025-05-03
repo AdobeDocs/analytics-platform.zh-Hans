@@ -4,14 +4,34 @@ title: 如何配置流量可视化图表
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: 915c1ecff6dcbe42a6ed81c74f4ec5b4a24eaaa5
+source-git-commit: 2a2e158c0eb0f60591a92ed98572bbb6c344e3be
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 86%
+source-wordcount: '1684'
+ht-degree: 80%
 
 ---
 
 # 配置流量可视化图表 {#configure-a-flow-visualization}
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_startswith"
+>title="开始于"
+>abstract="此字段只能在初始构建时设置。 要更新此字段，请选择&#x200B;**[!UICONTROL 重置]**&#x200B;以构建新的流量可视化图表。"
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_contains"
+>title="包含"
+>abstract="此字段只能在初始构建时设置。 要更新此字段，请选择&#x200B;**[!UICONTROL 重置]**&#x200B;以构建新的流量可视化图表。"
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_endswith"
+>title="结束于"
+>abstract="此字段只能在初始构建时设置。 要更新此字段，请选择&#x200B;**[!UICONTROL 重置]**&#x200B;以构建新的流量可视化图表。"
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_pathingdimension"
+>title="路径维度"
+>abstract="选择一个维度，用作通往或者离开您的选定组件的路径。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_container"
@@ -25,8 +45,23 @@ ht-degree: 86%
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_include_repeats_default"
->title="包括重复 "
+>title="包括重复"
 >abstract="流量可视化图表基于某个维度的实例。此设置使您可以选择包含或排除重复的实例，例如：页面重新加载。"
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_limit_occurrence"
+>title="限制到第一次/最后一次发生次数"
+>abstract="当第一个/最后一个接触点是入口/出口时，结果仅限于路径。"
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_numberofcolumns"
+>title="列数"
+>abstract="此字段只能在初始构建时设置。 要更新此字段，请选择&#x200B;**[!UICONTROL 重置]**&#x200B;以构建新的流量可视化图表。"
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_itemsexpandedpercolumn"
+>title="每列扩展的项"
+>abstract="此字段只能在初始构建时设置。 要更新此字段，请选择&#x200B;**[!UICONTROL 重置]**&#x200B;以构建新的流量可视化图表。"
 
 
 
