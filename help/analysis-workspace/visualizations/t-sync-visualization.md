@@ -5,10 +5,10 @@ title: 管理数据源
 feature: Visualizations
 exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 8f9c03607130bdeaf6cb7a32d8dd465712a47ea5
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 96%
+source-wordcount: '437'
+ht-degree: 92%
 
 ---
 
@@ -29,6 +29,15 @@ ht-degree: 96%
 >id="workspace_freeformtable_lockselection_showtable"
 >title="显示表格"
 >abstract="选择&#x200B;**[!UICONTROL 显示表格]**&#x200B;将会为当前可视化图表生成一个新的数据源，并将其与原始数据源分开。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_freeformtable_showtable"
+>title="显示表格"
+>abstract="选择&#x200B;**[!UICONTROL 显示表]**&#x200B;为当前可视化图表生成新的数据源（独立于原始数据源）。"
 
 <!-- markdownlint-enable MD034 -->
 
