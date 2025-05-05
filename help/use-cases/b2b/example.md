@@ -60,14 +60,14 @@ B2B查找架构、配置文件架构和事件架构之间的关系在Experience 
    |---|---|---|---| 
    | B2B活动数据集 | SourceKey <br/>**personKey.sourceKey** | | |
    | B2B人员数据集 | SourceKey <br/>**b2b.personKey.sourceKey** | | |
-   | B2B帐户数据集 | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br>（B2B人员数据集）<br/>**b2b.accountKey.sourceKey**❶ |
-   | B2B Opportunity数据集 | | Source Key <br/>**opportunityKey.sourceKey**❷ | SourceKey<br/>（B2B机会关系数据集）<br/>**opportunityKey.sourceKey**❷ |
-   | B2B Campaign数据集 | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/>（B2B营销活动成员数据集）<br/>**campaignKey.sourceKey**❸<br/> |
-   | B2B营销列表数据集 | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/>（B2B营销列表成员数据集）<br/>**marketingListKey.sourceKey**❹ |
-   | B2B帐户人员关系数据集 | | SourceKey <br/>**personKey.sourceKey**❺ | Source Key<br/>（事件数据集）<br/>**personKey.sourceKey**❺ |
-   | B2B机会人员关系数据集 | | SourceKey <br/>**personKey.sourceKe**❻y | Source Key<br/>（事件数据集）<br/>**personKey.sourceKey**❻ |
-   | B2B营销活动成员数据集 | | SourceKey <br/>**personKey.sourceKey**❼ | Source Key<br/>（事件数据集）<br/>**personKey.sourceKey**❼ |
-   | B2B营销列表成员数据集 | | SourceKey <br/>**personKey.sourceKey**❽ | Source Key<br/>（事件数据集）<br/>**personKey.sourceKey**❽ |
+   | B2B帐户数据集 | | SourceKey <br/>**accountKey.sourceKey**&#x200B;❶ | SourceKey<br>（B2B人员数据集）<br/>**b2b.accountKey.sourceKey**&#x200B;❶ |
+   | B2B Opportunity数据集 | | Source Key <br/>**opportunityKey.sourceKey**&#x200B;❷ | SourceKey<br/>（B2B机会关系数据集）<br/>**opportunityKey.sourceKey**&#x200B;❷ |
+   | B2B Campaign数据集 | | SourceKey <br/>**campaignKey.sourceKey**&#x200B;❸ | SourceKey<br/>（B2B营销活动成员数据集）<br/>**campaignKey.sourceKey**&#x200B;❸<br/> |
+   | B2B营销列表数据集 | | SourceKey <br/>**marketingListKey.sourceKey**&#x200B;❹ | SourceKey<br/>（B2B营销列表成员数据集）<br/>**marketingListKey.sourceKey**&#x200B;❹ |
+   | B2B帐户人员关系数据集 | | SourceKey <br/>**personKey.sourceKey**&#x200B;❺ | Source Key<br/>（事件数据集）<br/>**personKey.sourceKey**&#x200B;❺ |
+   | B2B机会人员关系数据集 | | SourceKey <br/>**personKey.sourceKe**&#x200B;❻y | Source Key<br/>（事件数据集）<br/>**personKey.sourceKey**&#x200B;❻ |
+   | B2B营销活动成员数据集 | | SourceKey <br/>**personKey.sourceKey**&#x200B;❼ | Source Key<br/>（事件数据集）<br/>**personKey.sourceKey**&#x200B;❼ |
+   | B2B营销列表成员数据集 | | SourceKey <br/>**personKey.sourceKey**&#x200B;❽ | Source Key<br/>（事件数据集）<br/>**personKey.sourceKey**&#x200B;❽ |
 
 {style="table-layout:auto"}
 

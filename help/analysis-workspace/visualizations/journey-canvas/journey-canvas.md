@@ -51,7 +51,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的历程画布可视化图表。<br/>**Adobe Analytics** 中没有等效的可视化图表。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中的历程画布可视化图表。<br/>**Adobe Analytics** 中没有等效的可视化图表。_
 
 >[!ENDSHADEBOX]
 
@@ -200,7 +200,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 * **在历程画布中修改历程将停止同步**
 
-  仅当历程未在历程画布](#differences-after-modifying-a-journey-in-journey-canvas)中进行重大修改时，才对Journey Optimizer中的历程所做的更改与历程画布[同步。 在历程画布中修改历程后，您在 Journey Optimizer 中对历程所做的任何更改都不会反映在历程画布中。要查看历程画布中所反映的更改，您可以删除并[重新创建历程画布中的历程](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。
+  仅当历程未在历程画布[&#128279;](#differences-after-modifying-a-journey-in-journey-canvas)中进行重大修改时，才对Journey Optimizer中的历程所做的更改与历程画布同步。 在历程画布中修改历程后，您在 Journey Optimizer 中对历程所做的任何更改都不会反映在历程画布中。要查看历程画布中所反映的更改，您可以删除并[重新创建历程画布中的历程](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。
 
 * **使用“与任何人共享”链接时，要求在Customer Journey Analytics中进行更改后将该项目保存在Journey Optimizer中**
 

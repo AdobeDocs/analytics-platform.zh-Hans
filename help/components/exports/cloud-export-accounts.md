@@ -280,7 +280,7 @@ ht-degree: 26%
 
    | 字段 | 功能 |
    |---------|----------|
-   | [!UICONTROL **帐户标识符**] | 唯一地标识贵公司内的Snowflake帐户，以及遍布全球由Snowflake支持的云平台和云区域组成的网络。 <p>您需要从Snowflake帐户中获取帐户标识符，然后在此处粘贴信息。</p><p>若要了解从何处获取此信息，请参阅Snowflake文档](https://docs.snowflake.com/en/user-guide/admin-account-identifier)中的[帐户标识符页面。</p> |
+   | [!UICONTROL **帐户标识符**] | 唯一地标识贵公司内的Snowflake帐户，以及遍布全球由Snowflake支持的云平台和云区域组成的网络。 <p>您需要从Snowflake帐户中获取帐户标识符，然后在此处粘贴信息。</p><p>若要了解从何处获取此信息，请参阅Snowflake文档[&#128279;](https://docs.snowflake.com/en/user-guide/admin-account-identifier)中的帐户标识符页面。</p> |
    | [!UICONTROL **用户**] | 用于连接的用户的登录名。 我们建议创建一个将专门用于Adobe的新用户。 在此处指定名称，然后以Snowflake创建具有相同名称的用户。 您可以使用`CREATE USER`命令在Snowflake中创建用户。  <p>有关详细信息，请参阅[用户、角色和权限命令](https://docs.snowflake.com/en/sql-reference/commands-user-role)。</p> |
    | [!UICONTROL **角色**] | 将分配给用户的角色。 我们建议创建一个将专门用于Adobe的新角色。 在此处指定角色，然后在Snowflake中创建具有相同名称的角色，并将角色授予用户。 您可以使用`CREATE ROLE`命令在Snowflake中创建角色。 <p>有关详细信息，请参阅[用户、角色和权限命令](https://docs.snowflake.com/en/sql-reference/commands-user-role)。</p> |
 
@@ -302,7 +302,7 @@ ht-degree: 26%
    CREATE USER <your_adobe_user> RSA_PUBLIC_KEY = '<your_public_key>';
    ```
 
-   有关详细信息，请参阅Snowflake文档](https://docs.snowflake.com/en/user-guide/key-pair-auth)中的[密钥对身份验证和密钥对轮换页面。
+   有关详细信息，请参阅Snowflake文档[&#128279;](https://docs.snowflake.com/en/user-guide/key-pair-auth)中的密钥对身份验证和密钥对轮换页面。
 
 1. 选择&#x200B;[!UICONTROL **确定**]。
 

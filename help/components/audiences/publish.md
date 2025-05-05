@@ -81,7 +81,7 @@ ht-degree: 77%
 
 1. 使用[日期预览](#data-preview)面板解释数据。
 
-1. 选择&#x200B;**[!UICONTROL [!UICONTROL 查看示例 ID]]** 来查看此受众中的 ID 示例。在 **[!UICONTROL ID 示例]**&#x200B;对话框中，您可以使用![搜索](/help/assets/icons/Search.svg)[!UICONTROL *搜索 ID 示例*]&#x200B;来搜索 ID 示例。
+1. 选择&#x200B;**[!UICONTROL [!UICONTROL 查看示例 ID]]** 来查看此受众中的 ID 示例。在 **[!UICONTROL ID 示例]**&#x200B;对话框中，您可以使用![搜索](/help/assets/icons/Search.svg) [!UICONTROL *搜索 ID 示例*]&#x200B;来搜索 ID 示例。
 
 1. 双击受众配置，然后选择&#x200B;**[!UICONTROL 发布]**。
 您会收到一条受众已发布的确认消息。发布只需要一两分钟，这个受众就会出现在 Experience Platform 上。

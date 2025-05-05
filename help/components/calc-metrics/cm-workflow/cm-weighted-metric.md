@@ -34,7 +34,7 @@ ht-degree: 5%
 
 ### 派生字段
 
-或者，您可以使用派生字段](/help/data-views/derived-fields/derived-fields.md#bounces)定义[跳出率。
+或者，您可以使用派生字段[&#128279;](/help/data-views/derived-fields/derived-fields.md#bounces)定义跳出率。
 
 派生字段是数据视图的一部分，其优点是并非每个用户都可以覆盖或修改跳出率量度的定义。 这一优势也带来了局限性。 无权访问数据视图的用户无法使用派生字段，并且必须依靠区段和计算量度来定义跳出率。
 

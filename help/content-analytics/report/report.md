@@ -65,7 +65,7 @@ ht-degree: 0%
 
 1. 从主菜单中选择&#x200B;**[!UICONTROL Workspace]**。
 1. 确保已选择为Content Analytics配置的数据视图。
-1. 搜索或使用区段(**[!UICONTROL 渠道]**&#x200B;的&#x200B;**[!UICONTROL Web]**&#x200B;和[!UICONTROL 用例]**的**4}参与&#x200B;]**)查找并选择**[!UICONTROL &#x200B;内容分析&#x200B;]**模板。**[!UICONTROL 
+1. 搜索或使用区段(**[!UICONTROL 渠道]**&#x200B;的&#x200B;**[!UICONTROL Web]**&#x200B;和[!UICONTROL 用例]&#x200B;**的**&#x200B;4&rbrace;参与&#x200B;**)查找并选择**&#x200B;[!UICONTROL &#x200B;内容分析&#x200B;]&#x200B;**模板。**
 1. 选择&#x200B;**[!UICONTROL 使用模板]**。
 1. 在&#x200B;**[!UICONTROL 设置模板]**&#x200B;对话框中，从&#x200B;**[!UICONTROL 选择转化量度]**&#x200B;对话框中选择量度。 例如，**[!UICONTROL 资产CTR]**。
 1. 选择&#x200B;**[!UICONTROL 继续]**。

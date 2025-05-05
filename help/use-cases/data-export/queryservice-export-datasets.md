@@ -47,7 +47,7 @@ Adobe Analytics可以使用其[数据馈送](https://experienceleague.adobe.com/
 
 Experience Platform查询服务允许您查询和联接Experience Platform数据湖中的任何数据集，就像它是一个数据库表一样。 然后，您可以将结果捕获为新数据集，以供进一步在报表中使用或导出。
 
-您可以使用查询服务[用户界面](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/overview)、通过PostgresQL协议](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview)连接的[客户端或[RESTful API](https://experienceleague.adobe.com/en/docs/experience-platform/query/api/getting-started)创建和计划收集数据馈送数据的查询。
+您可以使用查询服务[用户界面](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/overview)、通过PostgresQL协议[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview)连接的客户端或[RESTful API](https://experienceleague.adobe.com/en/docs/experience-platform/query/api/getting-started)创建和计划收集数据馈送数据的查询。
 
 ### 创建查询
 
@@ -182,7 +182,7 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 - [放弃的浏览](https://experienceleague.adobe.com/en/docs/experience-platform/query/use-cases/abandoned-browse)
 - [归因分析](https://experienceleague.adobe.com/en/docs/experience-platform/query/use-cases/attribution-analysis)
 - [机器人筛选](https://experienceleague.adobe.com/en/docs/experience-platform/query/use-cases/bot-filtering)
-- 和查询服务指南](https://experienceleague.adobe.com/en/docs/experience-platform/query/use-cases/overview)中其他[支持的用例。
+- 和查询服务指南[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/query/use-cases/overview)中其他支持的用例。
 
 下面是一个跨会话正确应用归因的示例，其中说明如何
 
@@ -401,7 +401,7 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
 ### 流服务API
 
-或者，您可以使用API导出和计划导出输出数据集。 使用流服务API](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets)在[导出数据集中记录了所涉及的步骤。
+或者，您可以使用API导出和计划导出输出数据集。 使用流服务API[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets)在导出数据集中记录了所涉及的步骤。
 
 #### 快速入门
 
@@ -423,7 +423,7 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
 #### 提供导出参数
 
-接下来，您必须[再使用[`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) API创建一个目标连接，用于存储输出数据集的导出参数](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-target-connection)。 这些导出参数包括位置、文件格式、压缩等。
+接下来，您必须[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-target-connection)再使用[`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) API创建一个目标连接，用于存储输出数据集的导出参数。 这些导出参数包括位置、文件格式、压缩等。
 
 #### 设置数据流
 

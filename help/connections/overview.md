@@ -14,7 +14,7 @@ ht-degree: 12%
 
 # 连接概述
 
-连接允许Customer Journey Analytics产品管理员与其他[!DNL  Experience Platform]数据源（如事件、查找、配置文件和摘要数据集）建立连接。 通过这些连接，可将来自连接的数据集成到派生数据视图。 连接是Customer Journey Analytics的基础，是从[!DNL Experience Platform]源数据集创建的。
+连接允许Customer Journey Analytics产品管理员与其他[!DNL &#x200B; Experience Platform]数据源（如事件、查找、配置文件和摘要数据集）建立连接。 通过这些连接，可将来自连接的数据集成到派生数据视图。 连接是Customer Journey Analytics的基础，是从[!DNL Experience Platform]源数据集创建的。
 
 >[!IMPORTANT]
 >

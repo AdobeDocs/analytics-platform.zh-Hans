@@ -88,11 +88,11 @@ ht-degree: 20%
 
    1. 打开[Microsoft Azure存储资源管理器](https://azure.microsoft.com/en-us/products/storage/storage-explorer/)。
 
-   1. 转到&#x200B;[!UICONTROL **存储帐户**] > [!UICONTROL **（附加的容器）**] > [!UICONTROL **Blob容器**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name ***。
+   1. 转到&#x200B;[!UICONTROL **存储帐户**] > [!UICONTROL **（附加的容器）**] > [!UICONTROL **Blob容器**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name &#x200B;***。
 
       >[!NOTE]
       >
-      >文件夹名称&#x200B;**[!UICONTROL cjaexport-_number_]**是Azure存储资源管理器提供的默认名称。 如果您只有与SAS URI关联的单个连接（正常），则此文件夹的名称将为&#x200B;**[!UICONTROL cjaexport-1]**。
+      >文件夹名称&#x200B;**[!UICONTROL cjaexport-_number_]**&#x200B;是Azure存储资源管理器提供的默认名称。 如果您只有与SAS URI关联的单个连接（正常），则此文件夹的名称将为&#x200B;**[!UICONTROL cjaexport-1]**。
 
 
       ![访问Azure存储资源管理器](assets/azure-storage-explorer-access.png)中的文件
@@ -198,10 +198,10 @@ ht-degree: 20%
 
    | 字段 | 功能 |
    |---------|----------|
-   | [!UICONTROL **数据库**] | 指定的数据库应为现有数据库。 您创建的角色需要拥有访问此数据库的权限。<p>这是与阶段名称关联的数据库。</p><p>可以使用以下命令向Snowflake中的数据库授予此角色权限： `GRANT USAGE ON DATABASE <your_database> TO ROLE <your_role>;`</p> <p>有关详细信息，请参阅Snowflake文档](https://docs.snowflake.com/en/sql-reference/commands-database)中的[数据库、架构和共享命令页。</p> |
-   | [!UICONTROL **架构**] | 指定的架构应为现有架构。 您创建的角色需要拥有访问此方案的权限。<p>这是与阶段名称关联的架构。<p>您可以使用以下命令将您创建的权限授予Snowflake中的架构：`GRANT USAGE ON SCHEMA <your_database>.<your_schema> TO ROLE <your_role>;`</p><p>有关详细信息，请参阅Snowflake文档](https://docs.snowflake.com/en/sql-reference/commands-database)中的[数据库、架构和共享命令页。</p> |
-   | [!UICONTROL **阶段名称**] | 以Snowflake存储数据文件的内部阶段的名称。<p>请确保您在帐户中指定的角色对此阶段名称具有读写访问权限。 (由于您授予了读取和写入权限，因此我们建议使用仅由Adobe使用的阶段。)<p>您可以使用以下命令授予Snowflake中暂存名称的读取和写入权限： `GRANT READ, WRITE ON STAGE <your_database>.<your_schema>.<your_stage_name> TO ROLE <your_role>;`</p> <p>有关向角色授予权限的信息，请参阅Snowflake文档](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege)中的[授予权限。 <p>有关暂存名称的详细信息，请参阅Snowflake文档中的[为本地文件选择内部暂存页](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage)。</p> |
-   | [!UICONTROL **阶段路径**] | 数据文件存储在Snowflake中的位置的路径。 <p>有关详细信息，请参阅Snowflake文档](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage)中的[为本地文件选择内部暂存。</p> |
+   | [!UICONTROL **数据库**] | 指定的数据库应为现有数据库。 您创建的角色需要拥有访问此数据库的权限。<p>这是与阶段名称关联的数据库。</p><p>可以使用以下命令向Snowflake中的数据库授予此角色权限： `GRANT USAGE ON DATABASE <your_database> TO ROLE <your_role>;`</p> <p>有关详细信息，请参阅Snowflake文档[&#128279;](https://docs.snowflake.com/en/sql-reference/commands-database)中的数据库、架构和共享命令页。</p> |
+   | [!UICONTROL **架构**] | 指定的架构应为现有架构。 您创建的角色需要拥有访问此方案的权限。<p>这是与阶段名称关联的架构。<p>您可以使用以下命令将您创建的权限授予Snowflake中的架构：`GRANT USAGE ON SCHEMA <your_database>.<your_schema> TO ROLE <your_role>;`</p><p>有关详细信息，请参阅Snowflake文档[&#128279;](https://docs.snowflake.com/en/sql-reference/commands-database)中的数据库、架构和共享命令页。</p> |
+   | [!UICONTROL **阶段名称**] | 以Snowflake存储数据文件的内部阶段的名称。<p>请确保您在帐户中指定的角色对此阶段名称具有读写访问权限。 (由于您授予了读取和写入权限，因此我们建议使用仅由Adobe使用的阶段。)<p>您可以使用以下命令授予Snowflake中暂存名称的读取和写入权限： `GRANT READ, WRITE ON STAGE <your_database>.<your_schema>.<your_stage_name> TO ROLE <your_role>;`</p> <p>有关向角色授予权限的信息，请参阅Snowflake文档[&#128279;](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege)中的授予权限。 <p>有关暂存名称的详细信息，请参阅Snowflake文档中的[为本地文件选择内部暂存页](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage)。</p> |
+   | [!UICONTROL **阶段路径**] | 数据文件存储在Snowflake中的位置的路径。 <p>有关详细信息，请参阅Snowflake文档[&#128279;](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage)中的为本地文件选择内部暂存。</p> |
 
    {style="table-layout:auto"}
 

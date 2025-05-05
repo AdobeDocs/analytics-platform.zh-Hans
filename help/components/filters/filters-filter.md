@@ -17,7 +17,7 @@ ht-degree: 25%
 
 >[!NOTE]
 >
->区段列表将区段列表[引用为[区段管理器](manage-filters.md)的一部分](manage-filters.md#filters-list)。 您可以使用![筛选器](/help/assets/icons/Filter.svg) [筛选器面板](manage-filters.md#filter-panel)筛选该列表，该面板是同一[区段管理器](manage-filters.md)的一部分。
+>区段列表将区段列表[&#128279;](manage-filters.md#filters-list)引用为[区段管理器](manage-filters.md)的一部分。 您可以使用![筛选器](/help/assets/icons/Filter.svg) [筛选器面板](manage-filters.md#filter-panel)筛选该列表，该面板是同一[区段管理器](manage-filters.md)的一部分。
 >
 
 

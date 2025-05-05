@@ -36,7 +36,7 @@ ht-degree: 16%
 | **[!UICONTROL 频率]** | 您希望将此计划项目发送给一个或多个收件人的频率。 |
 | **[!UICONTROL 执行时间]** | 在一天中发送此计划项目的时间。 |
 | **[!UICONTROL 查询次数]** | 查询此项目的次数。 |
-| **** | 为计划项目定义的最长日期范围。 该值可能与调查性能问题相关。 有关详细信息，请参阅[报告活动管理器](/help/reporting-activity-manager/reporting-activity-overview.md)。 |
+| **&#x200B;**&#x200B;| 为计划项目定义的最长日期范围。 该值可能与调查性能问题相关。 有关详细信息，请参阅[报告活动管理器](/help/reporting-activity-manager/reporting-activity-overview.md)。 |
 | **[!UICONTROL 查询次数]** | 为计划项目执行的查询数。 该值可能与调查性能问题相关。 有关详细信息，请参阅[报告活动管理器](/help/reporting-activity-manager/reporting-activity-overview.md)。 |
 
 

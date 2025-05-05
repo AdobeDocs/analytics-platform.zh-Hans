@@ -118,7 +118,7 @@ ht-degree: 3%
 
 ## 查看帐户密钥
 
-创建帐户后，您可以查看该帐户的任何关联帐户密钥。 如果您在最初配置帐户](/help/components/exports/cloud-export-accounts.md)时没有完成与云提供商[的帐户配置，您可能需要查看此信息。
+创建帐户后，您可以查看该帐户的任何关联帐户密钥。 如果您在最初配置帐户[&#128279;](/help/components/exports/cloud-export-accounts.md)时没有完成与云提供商的帐户配置，您可能需要查看此信息。
 
 要查看与导出帐户关联的密钥，请执行以下操作：
 
