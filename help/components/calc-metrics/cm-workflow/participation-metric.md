@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->管理员可以使用非默认归因模型（如参与率）创建指标，作为[数据视图](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views)的一部分。 有关更多详细信息，请参阅[归因组件设置](../../../data-views/component-settings/attribution.md)。
+>管理员可以使用非默认归因模型（如参与率）创建指标，作为[数据视图](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/data-views)的一部分。 有关更多详细信息，请参阅[归因组件设置](../../../data-views/component-settings/attribution.md)。
 
 以下步骤显示具有[创建计算量度权限](/help/technotes//access-control.md#user-level-access)的任何用户如何创建参与率量度。
 

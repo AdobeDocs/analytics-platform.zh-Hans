@@ -23,7 +23,7 @@ Content Analytics的配置包括以下步骤：
 1. 仅当[手动发布](manual.md) Tags属性时，您的Content Analytics配置才会有效部署并启动数据收集。
 
 1. 您只能使用[引导式配置](guided.md)向导对已实施的配置进行一些细微更改。 例如，更改[数据视图](/help/data-views/data-views.md)。
-1. 您可以在关联的Tags属性中使用[Adobe Content Analytics扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview)对已实施的配置进行其他更改。
+1. 您可以在关联的Tags属性中使用[Adobe Content Analytics扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview)对已实施的配置进行其他更改。
 1. 仅当[手动重新发布](manual.md) Tags属性时，配置修改才会有效部署，并且根据您的更改开始数据收集。
 
 
@@ -35,9 +35,9 @@ Content Analytics的配置包括以下步骤：
 * 如果您已使用JavaScript[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/install/library){target="_blank"}实施Web SDK以进行常规行为数据收集，请确保使用默认名称<code>alloy</code> 用于JavaScript库。
 * 您具有Customer Journey Analytics产品管理员角色，该角色具有管理连接和管理数据视图的附加权限。
 * 如果您考虑收集Content Analytics体验，请确保根据您网页上的更改来设置和更新[Content Analytics版本控制](manual.md#versioning)。
-* 您必须具有数据收集[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions){target="_blank"}的权限：
-   * [Experience Platform权限](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
-   * [Experience Platform数据收集权限](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}
+* 您必须具有数据收集[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions){target="_blank"}的权限：
+   * [Experience Platform权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
+   * [Experience Platform数据收集权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}
 * 您仔细考虑了以下重要配置选项：
 
    * 您的网站适合体验报告。 只有在满足以下条件时，才可能生成正确的体验报表：

@@ -19,7 +19,7 @@ ht-degree: 61%
 ## 先决条件
 
 * 必须已使用[Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans)将报表包数据导入Adobe Experience Platform。 不支持其他数据源，因为“营销渠道”维度依赖于 Analytics 报表包中的处理规则。
-* 必须已设置“营销渠道”维度处理规则。请参阅《Adobe Analytics组件指南》中的[营销渠道的处理规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html)。
+* 必须已设置“营销渠道”维度处理规则。请参阅《Adobe Analytics组件指南》中的[营销渠道的处理规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html?lang=zh-Hans)。
 
 ## “营销渠道”架构元素
 

@@ -39,7 +39,7 @@ ht-degree: 54%
 
    * 无法从非Adobe Analytics解决方案迁移项目和组件。
 
-   * 根据您的分析解决方案，源连接器可能可用于摄取历史数据。 有关详细信息，请参阅Experience Platform文档的[Source连接器概述](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)中的[Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home#analytics)。
+   * 根据您的分析解决方案，源连接器可能可用于摄取历史数据。 有关详细信息，请参阅Experience Platform文档的[Source连接器概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/home)中的[Analytics](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/home#analytics)。
 
 
 如果您需要更具体的建议、指导或支持，请联系您的 Adobe 代表。

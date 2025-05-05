@@ -96,7 +96,7 @@ Analytics 记分卡以平铺版面为执行用户显示关键数据可视化图�
 
 要将区段应用于单个磁贴，请将左侧面板中的某个区段直接拖放到磁贴的顶部。
 
-如果要将区段应用于记分卡中的所有磁贴，请将区段拖放到记分卡的顶部。或者，您也可以在日期范围下方的区段菜单中选择区段，然后应用它们。您可以像在 Customer Journey Analytics Workspace 中那样[为记分卡配置和应用区段](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html)。
+如果要将区段应用于记分卡中的所有磁贴，请将区段拖放到记分卡的顶部。或者，您也可以在日期范围下方的区段菜单中选择区段，然后应用它们。您可以像在 Customer Journey Analytics Workspace 中那样[为记分卡配置和应用区段](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans)。
 
 ![区段下拉选择器突出显示已构建的区段](assets/segment_ui.png)
 

@@ -49,7 +49,7 @@ Customer Journey Analytics范围之外的问题，例如有关Adobe Target和Ado
 
 * **合同访问权限**：如果您无法使用AI助手，请联系您组织的管理员或Adobe客户代表。 在您的组织可以使用AI助手之前，您必须同意某些与GenAI相关的法律条款。
 
-* **权限**：在[!UICONTROL Adobe Admin Console]中，[!UICONTROL 报告工具] **[!UICONTROL AI Assistant：产品知识]**&#x200B;权限决定了对此工具的访问权限。 [产品配置文件管理员](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)需要在[!UICONTROL Admin Console]中执行这些步骤：
+* **权限**：在[!UICONTROL Adobe Admin Console]中，[!UICONTROL 报告工具] **[!UICONTROL AI Assistant：产品知识]**&#x200B;权限决定了对此工具的访问权限。 [产品配置文件管理员](https://helpx.adobe.com/cn/enterprise/using/manage-product-profiles.html)需要在[!UICONTROL Admin Console]中执行这些步骤：
    1. 导航到&#x200B;**[!UICONTROL Admin Console]** > **[!UICONTROL 产品和服务]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL 产品配置文件]**
    1. 选择要为其提供[!UICONTROL AI助手：产品知识]访问权限的产品配置文件的标题。
    1. 在特定产品配置文件中，选择&#x200B;**[!UICONTROL 权限]**。

@@ -33,7 +33,7 @@ ht-degree: 100%
 
 ## 步骤 1：在 Adobe Analytics 中运行发生次数指标
 
-[发生次数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html)指标显示设置或持久化某个给定维度所经历的点击次数。
+[发生次数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=zh-Hans)指标显示设置或持久化某个给定维度所经历的点击次数。
 
 1. 在“Analytics”>“[!UICONTROL 工作区]”中，将要报告的日期范围作为一个维度拖入到一个[!UICONTROL 自由格式]表格中。
 
@@ -51,7 +51,7 @@ ht-degree: 100%
 >
 >这仅适用于常规中间值数据集，不适用于拼合的数据集（通过 [Stitching](/help/stitching/overview.md)）。请注意，将在 Customer Journey Analytics 中使用的人员 ID 考虑在内对于使这一比较发挥作用至关重要。可能并非总是很容易在 Adobe Analytics 中复制该内容，尤其是在已启用 Stitching 的情况下。
 
-1. 在 Adobe Experience Platform [查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html)中，运行以下的[!UICONTROL 按时间戳的总记录数]查询：
+1. 在 Adobe Experience Platform [查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=zh-Hans)中，运行以下的[!UICONTROL 按时间戳的总记录数]查询：
 
    ```sql
    SELECT
@@ -66,9 +66,9 @@ ht-degree: 100%
    ORDER BY Day; 
    ```
 
-1. [分析数据馈送](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html)，从原始数据中识别某些行是否已被分析源连接器过滤掉。
+1. [分析数据馈送](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=zh-Hans)，从原始数据中识别某些行是否已被分析源连接器过滤掉。
 
-   [分析源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)可能在转换到 XDM 模式期间过滤某些行。整个行不适合进行转换的原因可能有多种。如果以下任何分析字段具有这些值，则将过滤掉整个行。
+   [分析源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)可能在转换到 XDM 模式期间过滤某些行。整个行不适合进行转换的原因可能有多种。如果以下任何分析字段具有这些值，则将过滤掉整个行。
 
    | Analytics 字段 | 导致行丢弃的值 |
    | --- | --- |
@@ -79,7 +79,7 @@ ht-degree: 100%
    | Hit_source | 0, 3, 5, 7, 8, 9, 10 |
    | Page_event | 53, 63 |
 
-   有关 hit\_source 详细信息，请参阅：[数据列参考](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html)。有关 page\_event 详细信息，请参阅：[页面事件查找](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html)。
+   有关 hit\_source 详细信息，请参阅：[数据列参考](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=zh-Hans)。有关 page\_event 详细信息，请参阅：[页面事件查找](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html?lang=zh-Hans)。
 
 1. 如果连接器过滤某些行，则将从[!UICONTROL 发生次数]量度中去除这些行。得到的数字应与 Adobe Experience Platform 数据集中的事件数一致。
 

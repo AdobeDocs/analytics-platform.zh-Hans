@@ -165,7 +165,7 @@ An example of a complex sequential segment if you want to find the persons that
 
 ### B2B容器
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 当您有权访问[Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md)时，区段中使用的其他容器可用。 您可以在[B2B概念和功能](/help/getting-started/cja-b2b-concepts-features.md)中找到有关使用这些其他容器的更多详细信息。
 

@@ -27,7 +27,7 @@ ht-degree: 90%
 
 通过利用受到监督的机器学习和深度学习领域的先进技术，业务用户（营销人员）可以使用个性化优化功能定义业务目标，并利用他们的客户数据来训练面向业务的模型，以提供个性化产品建议并使 KPI 最大化。
 
-1. 遵循《Journey Optimizer指南》中[个性化优化模型](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model)中的信息。
+1. 遵循《Journey Optimizer指南》中[个性化优化模型](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model)中的信息。
 
 {{upgrade-final-step}}
 

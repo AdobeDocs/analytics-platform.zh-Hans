@@ -86,7 +86,7 @@ AI助手中的![数据分析代理](assets/cja-ai-asst-da.gif)
 
    * **[!UICONTROL AI助手：数据分析]**
 
-   有关其他详细信息，管理员可以看到[这些说明](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/access)。
+   有关其他详细信息，管理员可以看到[这些说明](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ai-assistant/access)。
 
    ![AI助手图标](/help/assets/ai-asst-icon.png)
 

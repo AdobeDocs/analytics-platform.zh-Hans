@@ -41,7 +41,7 @@ Customer Journey Analytics支持两种类型的拼接：[基于字段的拼接](
 - 将所需数据导入Adobe Experience Platform：
 
    - 有关Adobe Analytics数据，请参阅[在Customer Journey Analytics中利用Adobe Analytics报表包数据](/help/getting-started/aa-vs-cja/aa-data-in-cja.md)。
-   - 有关其他类型的数据，请参阅 Adobe Experience Platform 文档中的[创建架构](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui)和[摄取数据](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ingestion/home)。
+   - 有关其他类型的数据，请参阅 Adobe Experience Platform 文档中的[创建架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/create-schema-ui)和[摄取数据](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ingestion/home)。
 
 如果在定义Customer Journey Analytics连接过程中将一个或多个拼合数据集与其他数据集（例如呼叫中心数据）相结合，您将受益于跨渠道分析。 此连接配置假定其他那些数据集在每行上均已包含一个人员ID，与拼接ID类似。
 
@@ -55,7 +55,7 @@ Customer Journey Analytics支持两种类型的拼接：[基于字段的拼接](
 >
 >- 如果删除源数据集，则拼接的数据集将停止处理并被系统删除。
 >
->- 数据使用标签不会自动传播到拼接的数据集架构。 如果您已将数据使用标签应用于源数据集架构，则需要手动将这些数据使用标签应用于拼接的数据集架构。 有关详细信息，请参阅[在Experience Platform中管理数据使用标签](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview)。
+>- 数据使用标签不会自动传播到拼接的数据集架构。 如果您已将数据使用标签应用于源数据集架构，则需要手动将这些数据使用标签应用于拼接的数据集架构。 有关详细信息，请参阅[在Experience Platform中管理数据使用标签](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview)。
 
 拼接是一项具有突破性的强大功能，但其使用方式存在限制。
 

@@ -144,7 +144,7 @@ Adobe 最近改变了在 Customer Journey Analytics 中处理数据的方式：
 
 ## 5. 设置[!UICONTROL 连接]数据保留的滚动时段 {#data-retention}
 
-通过[**[!UICONTROL 启用滚动数据时段&#x200B;]**&#x200B;设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection)，可将 Customer Journey Analytics 数据保留定义为按月（三个月、六个月等）计的滚动时段。在[!UICONTROL 连接]级别而非[!UICONTROL 数据集]级别设置它。数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此轮廓或查找数据集没有数据保留设置。
+通过[**[!UICONTROL 启用滚动数据时段&#x200B;]**&#x200B;设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans#create-connection)，可将 Customer Journey Analytics 数据保留定义为按月（三个月、六个月等）计的滚动时段。在[!UICONTROL 连接]级别而非[!UICONTROL 数据集]级别设置它。数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此轮廓或查找数据集没有数据保留设置。
 
 主要好处是，您只需存储或报告适用且有用的数据，并且可删除不再有用的旧数据。它可以帮助您保持在合同限制范围内，并减少超出预期成本的风险。
 
@@ -165,7 +165,7 @@ Adobe 最近改变了在 Customer Journey Analytics 中处理数据的方式：
 
 ## 7. 在 Customer Journey Analytics 中合并报告包时的注意事项 {#merge-reportsuite}
 
-如果打算通过 [Adobe Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)摄取 Adobe Analytics 数据，请在合并两个或更多 Adobe Analytics 报告包时考虑以下这些后果。
+如果打算通过 [Adobe Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans)摄取 Adobe Analytics 数据，请在合并两个或更多 Adobe Analytics 报告包时考虑以下这些后果。
 
 | 问题 | 注意事项 |
 | --- | --- |
@@ -241,7 +241,7 @@ Adobe 定期监控和执行使用限制。“数据行数”表示可供在 Cust
 
 Adobe Experience Cloud 使用地区数据收集 (RDC)，以使您的访客与 Adobe 和非 Adobe 解决方案之间发生的交互尽可能接近您的访客。在数据收集中心（DCC，也称为边缘站点，它是 Platform 边缘网络的一部分）区域性地收集数据后，将根据您的数据流和/或事件转发的配置通过一个安全的连接将这些数据转发到相关的解决方案。
 
-![使用边缘网络的数据流](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png)
+![使用边缘网络的数据流](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png?lang=zh-Hans)
 
 区域数据收集过程使用以下步骤：
 
@@ -271,4 +271,4 @@ RDC 目前包括以下位置（可能发生变化）：
 Customer Journey Analytics 需要来自 Adobe Experience Platform 的数据集，因此，您的数据流/事件转发配置需要 Adobe Experience Platform 服务将数据从区域数据中心路由到 Adobe Experience Platform 实例所在的数据中心。Customer Journey Analytics 及其支持服务和基础设施部署在同一个 Adobe Experience Platform 实例中。
 
 
-有关在 Adobe Experience Platform Edge Network 及其区域数据中心之外收集数据的过程，请参阅[数据收集概述](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html)。
+有关在 Adobe Experience Platform Edge Network 及其区域数据中心之外收集数据的过程，请参阅[数据收集概述](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=zh-Hans)。

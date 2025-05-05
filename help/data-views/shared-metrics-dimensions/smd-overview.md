@@ -66,7 +66,7 @@ ht-degree: 0%
    * **[!UICONTROL 描述]**：组件的[描述](/help/data-views/component-settings/overview.md)。
    * **[!UICONTROL 上下文标签]**：组件的[上下文标签](/help/data-views/component-settings/overview.md)。
    * **[!UICONTROL 包含/排除值]**：列出[包含/排除值](/help/data-views/component-settings/include-exclude-values.md)下指定的规则数。
-   * **[!UICONTROL 数据使用标签]**：架构字段的[数据使用标签](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview)。
+   * **[!UICONTROL 数据使用标签]**：架构字段的[数据使用标签](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview)。
    * **[!UICONTROL 已弃用]**：指示是否设置了已弃用的标志。
    * **[!UICONTROL 格式]**：值显示的格式。 布尔值通常显示为`True | False`，量度通常显示为`Decimal`等。
    * **[!UICONTROL 指标去重]**：组件的[指标去重](/help/data-views/component-settings/metric-deduplication.md)设置。

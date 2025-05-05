@@ -28,10 +28,10 @@ ht-degree: 20%
 
 ## Adobe Experience Cloud 域
 
-除了上述域之外，Adobe Experience Cloud还依靠多个域来收集和导出报表。 有关此域列表，请参阅[Adobe Experience Cloud使用的域](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)。
+除了上述域之外，Adobe Experience Cloud还依靠多个域来收集和导出报表。 有关此域列表，请参阅[Adobe Experience Cloud使用的域](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/data-collection/domains)。
 
 >[!MORELIKETHIS]
 >
 >Customer Journey Analytics使用的[IP地址](ip-addresses.md)
 >
->[Adobe Experience Cloud使用的域](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)
+>[Adobe Experience Cloud使用的域](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/data-collection/domains)

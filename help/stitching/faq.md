@@ -75,7 +75,7 @@ ht-degree: 28%
 
 +++ 跨设备分析（传统Analytics中的一项功能）和跨渠道分析之间有何区别？
 
-[跨设备分析](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html)是传统Adobe Analytics特有的功能，它使您能够了解人们如何跨设备操作。 该功能提供了两种将设备数据链接在一起的工作流：基于字段的拼接和设备图。
+[跨设备分析](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=zh-Hans)是传统Adobe Analytics特有的功能，它使您能够了解人们如何跨设备操作。 该功能提供了两种将设备数据链接在一起的工作流：基于字段的拼接和设备图。
 
 跨渠道分析是特定于Customer Journey Analytics的用例，通过该用例，您可以同时了解人们如何跨设备和跨渠道操作。 它拼合数据集的人员ID，允许将该数据集与其他数据集无缝组合。 该功能在设计上类似于基于跨设备分析的字段拼接，但由于传统Analytics和Customer Journey Analytics之间的数据架构不同，因此实施方法也不同。 有关详细信息，请参阅[拼接](overview.md)和[跨渠道分析](../use-cases/cross-channel/cross-channel.md)用例。
 

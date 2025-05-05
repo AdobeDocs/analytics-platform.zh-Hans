@@ -22,17 +22,17 @@ ht-degree: 3%
 
 要为已实施的Content Analytics配置启动数据收集，请执行以下操作：
 
-1. 遵循[发布流](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}。 成功发布包含Content Analytics配置的Tags属性的库。
+1. 遵循[发布流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/overview){target="_blank"}。 成功发布包含Content Analytics配置的Tags属性的库。
 
-1. [安装](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation)您的开发、暂存或发布环境中页面的`<head>`元素中的嵌入代码，遵循Content Analytics。
+1. [安装](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/environments/environments#installation)您的开发、暂存或发布环境中页面的`<head>`元素中的嵌入代码，遵循Content Analytics。
 
 
 ## 停止数据收集
 
 要停止为已实施的Content Analytics配置收集数据，请执行以下操作：
 
-1. 从开发、暂存或生产环境中的页面的`<head>`元素中删除[嵌入代码](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments)，具体情况受Content Analytics限制。
-1. [删除](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview)与Content Analytics配置关联的Tags属性。
+1. 从开发、暂存或生产环境中的页面的`<head>`元素中删除[嵌入代码](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/environments/environments)，具体情况受Content Analytics限制。
+1. [删除](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/overview)与Content Analytics配置关联的Tags属性。
 
 
 
@@ -40,32 +40,32 @@ ht-degree: 3%
 
 您可以使用[引导式配置向导](guided.md)对已实施的配置进行一些细微更改。 例如，更改数据视图，或者启用或禁用体验。
 
-在与Adobe Content Analytics配置关联的Tags属性中使用[Content Analytics扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview)对以下工件进行更改：
+在与Adobe Content Analytics配置关联的Tags属性中使用[Content Analytics扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview)对以下工件进行更改：
 
-* [沙盒和数据流](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}。
+* [沙盒和数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}。
 
   >[!CAUTION]
   >
   >验证在早期阶段已使用[引导式配置](guided.md)为Content Analytics配置了在Adobe Content Analytics扩展中配置的沙盒和数据流。 此配置可确保所有必需的工件均可用。<br/><br/>同时验证沙盒或数据流的更新不会干扰另一个配置为使用同一沙盒或数据流的Content Analytics配置。
   >
 
-* [体验捕获和定义](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview?lang=en#configure-experience-capture-and-definition)
+* [体验捕获和定义](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview?lang=en#configure-experience-capture-and-definition)
 
   您可以启用或禁用体验，并编辑正则表达式和查询参数的组合，以确定内容在网站上的呈现方式。
 
-* [事件分段](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
+* [事件分段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
   您可以编辑正则表达式，以修改对页面和资产进行分段的方式。
 
 
-在Adobe Content Analytics扩展中进行更改后，请确保使用[发布流](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}来根据所做的更改开始收集数据。
+在Adobe Content Analytics扩展中进行更改后，请确保使用[发布流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/overview){target="_blank"}来根据所做的更改开始收集数据。
 
 
 
 >[!MORELIKETHIS]
 >
 >[引导式配置](guided.md)
->[数据收集标记发布概述](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview)
+>[数据收集标记发布概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/overview)
 >
 
 

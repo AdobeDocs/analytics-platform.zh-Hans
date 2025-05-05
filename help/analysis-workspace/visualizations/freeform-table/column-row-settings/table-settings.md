@@ -90,4 +90,4 @@ ht-degree: 91%
 
 ## 更改行高
 
-您可以将项目的视图密度设置为 **[!UICONTROL 紧凑]**、**[!UICONTROL 舒适]** 和 **[!UICONTROL 扩展]**。[了解详情](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density)。
+您可以将项目的视图密度设置为 **[!UICONTROL 紧凑]**、**[!UICONTROL 舒适]** 和 **[!UICONTROL 扩展]**。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density)。

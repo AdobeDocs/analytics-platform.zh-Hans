@@ -92,7 +92,7 @@ ht-degree: 26%
 
      >[!AVAILABILITY]
      >
-     >本节适用于在Amazon Web Services (AWS)上运行的Experience Platform的实施。 在AWS上运行的Experience Platform当前仅对有限数量的客户可用。 要了解有关支持的Experience Platform基础架构的更多信息，请参阅[Experience Platform多云概述](https://experienceleague.adobe.com/en/docs/experience-platform/landing/multi-cloud)。
+     >本节适用于在Amazon Web Services (AWS)上运行的Experience Platform的实施。 在AWS上运行的Experience Platform当前仅对有限数量的客户可用。 要了解有关支持的Experience Platform基础架构的更多信息，请参阅[Experience Platform多云概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/multi-cloud)。
 
      显示&#x200B;[!UICONTROL **创建的帐户**]&#x200B;对话框。
 
@@ -112,9 +112,9 @@ ht-degree: 26%
 
       1. 如果没有，请下载[Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/)。
 
-      1. 在Adobe Experience Platform文档中，按照[将数据登陆区域容器连接到Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#connect-your-data-landing-zone-container-to-azure-storage-explorer)中描述的步骤操作。
+      1. 在Adobe Experience Platform文档中，按照[将数据登陆区域容器连接到Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=zh-Hans#connect-your-data-landing-zone-container-to-azure-storage-explorer)中描述的步骤操作。
 
-         您可以跳过[检索数据登陆区域的凭据](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#retrieve-dlz-credentials)和[更新数据登陆区域凭据](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#update-dlz-credentials)部分中描述的任务，因为您复制的URI包含这些凭据。
+         您可以跳过[检索数据登陆区域的凭据](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=zh-Hans#retrieve-dlz-credentials)和[更新数据登陆区域凭据](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=zh-Hans#update-dlz-credentials)部分中描述的任务，因为您复制的URI包含这些凭据。
 
       1. 在遵循Adobe Experience Platform文档并进入&#x200B;[!UICONTROL **Blob容器SAS URL**]&#x200B;字段时，粘贴您在步骤3中复制的SAS URI。
 

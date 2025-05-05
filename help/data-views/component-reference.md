@@ -61,17 +61,17 @@ Customer Journey Analytics 中的大多数维度和指标都基于您 Adobe Expe
 | [!UICONTROL 每年的某一天] | 时间划分维度 | 第 1 天至第 366 天 |
 | [!UICONTROL 小时] | 时间划分维度 | 0 时至 23 时 |
 | [!UICONTROL &#x200B; 月份] | 时间划分维度 | 一月 - 十二月 |
-| [!UICONTROL 首次会话] | 量度 | 个人在报告窗口内定义的首次会话。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat) |
-| [!UICONTROL 返回会话] | 量度 | 非个人首次会话的会话数。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat) |
+| [!UICONTROL 首次会话] | 量度 | 个人在报告窗口内定义的首次会话。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat) |
+| [!UICONTROL 返回会话] | 量度 | 非个人首次会话的会话数。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat) |
 | [!UICONTROL 人员 ID] | 维度 | Experience Platform 中定义的每个数据集架构，可以拥有自己定义的一个或多个身份标识集，并与命名空间关联。其中任何身份标识都可用作人员 ID。示例包括 Cookie ID、拼接 ID、用户 ID、跟踪代码等。[!UICONTROL 个人 ID] 维度是合并数据集的基础，并可在 Customer Journey Analytics 中标识独特访客。<p>可能的使用案例包括：<ul><li>针对特定人员ID值创建区段，以将所有内容细分为该用户的行为。</li><li>调试：确保特定 Cookie ID（或特定客户 ID）的数据存在。</li><li>确定致电给呼叫中心的用户。</li></ul> |
 | [!UICONTROL 人员 ID 命名空间] | 维度 | [!UICONTROL 人员 ID] 由哪种类型的 ID 组成。示例为：`email address`、`cookie ID`、`Analytics ID` |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL 全局帐户ID] | 维度 | 在连接中使用全局帐户容器时，[!UICONTROL 全局帐户ID]。 |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL 帐户ID] | 维度 | 在连接中使用帐户容器时的[!UICONTROL 帐户ID]。 |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL 机会ID] | 维度 | 在连接中使用机会容器时的[!UICONTROL 机会ID]。 |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL 购买群ID] | 维度 | 在连接中使用购买群组容器时，[!UICONTROL 购买群组ID]。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL 全局帐户ID] | 维度 | 在连接中使用全局帐户容器时，[!UICONTROL 全局帐户ID]。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL 帐户ID] | 维度 | 在连接中使用帐户容器时的[!UICONTROL 帐户ID]。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL 机会ID] | 维度 | 在连接中使用机会容器时的[!UICONTROL 机会ID]。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL 购买群ID] | 维度 | 在连接中使用购买群组容器时，[!UICONTROL 购买群组ID]。 |
 | [!UICONTROL 季度] | 时间划分维度 | 第一季度、第二季度、第三季度和第四季度 |
-| [!UICONTROL 重复会话] | 量度 | 非个人首次会话的会话数。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat) |
-| [!UICONTROL 会话类型] | 维度 | 此维度有两个值：1。 [!UICONTROL 第一次]和2。 正在返回。 [!UICONTROL 首次]行项目包括已确定为个人的首次会话的所有行为（针对该维度的量度）。其他所有内容都包含在[!UICONTROL 返回]的行项目中（假设所有内容都属于一个会话）。如果量度不是任何会话的一部分，则它们将属于该维度的“不适用”分段。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat) |
+| [!UICONTROL 重复会话] | 量度 | 非个人首次会话的会话数。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat) |
+| [!UICONTROL 会话类型] | 维度 | 此维度有两个值：1。 [!UICONTROL 第一次]和2。 正在返回。 [!UICONTROL 首次]行项目包括已确定为个人的首次会话的所有行为（针对该维度的量度）。其他所有内容都包含在[!UICONTROL 返回]的行项目中（假设所有内容都属于一个会话）。如果量度不是任何会话的一部分，则它们将属于该维度的“不适用”分段。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat) |
 | [!UICONTROL 每个事件逗留时间] | 维度 | 将[!UICONTROL 耗时]指标装入[!UICONTROL “事件”]桶。 |
 | [!UICONTROL 每个会话逗留时间] | 维度 | 将[!UICONTROL 耗时]指标装入[!UICONTROL 会话]桶。 |
 | [!UICONTROL 每人逗留时间] | 维度 | 将[!UICONTROL 耗时]指标装入[!UICONTROL 人员]桶。 |
