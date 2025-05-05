@@ -18,7 +18,7 @@ ht-degree: 21%
 
 >[!BEGINSHADEBOX]
 
-查看自由格式表中的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [行和列设置](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"}以获取演示视频。
+查看自由格式表中的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [行和列设置](https://video.tv.adobe.com/v/328499/?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取演示视频。
 
 {{videoaa}}
 

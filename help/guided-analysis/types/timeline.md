@@ -34,7 +34,7 @@ ht-degree: 100%
 >* **管理员**：*此分析需要 PersonID 属性。请将人员 ID 添加到数据视图。*
 >* **非管理员**：*此分析需要 PersonID 属性。请与您的 Customer Journey Analytics 管理员合作，将人员 ID 添加到数据视图。*
 
->[!VIDEO](https://video.tv.adobe.com/v/3427810/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3435777/?quality=12&learn=on&captions=chi_hans)
 
 
 

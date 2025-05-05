@@ -83,7 +83,7 @@ FROM
 
 >[!BEGINSHADEBOX]
 
-观看![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [将Google Analytics数据导入Adobe Experience Platform](https://video.tv.adobe.com/v/332676?quality=12&learn=on){target="_blank"}以获取演示视频。
+观看![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [将Google Analytics数据导入Adobe Experience Platform](https://video.tv.adobe.com/v/3437176?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 

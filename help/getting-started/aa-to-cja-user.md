@@ -93,7 +93,7 @@ Adobe Analytics 和 Customer Journey Analytics 之间的计算量度名称类似
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [将计算量度从 Adobe Analytics 移动到 Customer Journey Analytics](https://video.tv.adobe.com/v/31788?quality=12&learn=on){target="_blank"} 以获取有关如何移动计算量度的演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [将计算量度从 Adobe Analytics 移动到 Customer Journey Analytics](https://video.tv.adobe.com/v/33325?quality=12&learn=on&captions=chi_hans){target="_blank"} 以获取有关如何移动计算量度的演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -120,7 +120,7 @@ Customer Journey Analytics 扩展了 ECID 之外的身份标识概念，以包�
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Customer Journey Analytics 中使用身份标识](https://video.tv.adobe.com/v/30750/?quality=12&learn=on){target="_blank"}获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Customer Journey Analytics 中使用身份标识](https://video.tv.adobe.com/v/40087/?quality=12&learn=on&captions=chi_hans){target="_blank"}获取演示视频。
 
 >[!ENDSHADEBOX]
 

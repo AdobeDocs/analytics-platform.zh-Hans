@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ![频率](/help/assets/icons/Histogram.svg) **[!UICONTROL 频率]**&#x200B;分析根据产品中事件发生的频率对事件数据进行分组。该分析的纵轴包含表示事件频率的区间。横轴测量的是每个区间的用户数或会话数。
 
->[!VIDEO](https://video.tv.adobe.com/v/3428089/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3435812/?quality=12&learn=on&captions=chi_hans)
 
 ## 用例
 
