@@ -17,7 +17,7 @@ ht-degree: 100%
 “策划”让您可在共享项目前限制组件（维度、量度、区段、日期范围）。当收件人打开项目时，他们将看到您为其策划的有限组件。策划虽然是一个可选步骤，但建议在共享项目前执行此步骤。
 
 >[!NOTE]
-> 产品轮廓是控制用户可以查看哪些组件的主要机制。此类轮廓通过 [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html) 进行管理。“策划”是一个辅助区段。
+> 产品轮廓是控制用户可以查看哪些组件的主要机制。此类轮廓通过 [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=zh-Hans) 进行管理。“策划”是一个辅助区段。
 
 ## 应用项目策划
 

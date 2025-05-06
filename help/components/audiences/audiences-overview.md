@@ -13,14 +13,14 @@ ht-degree: 100%
 
 # 受众发布概述
 
-您现在可以在 Adobe Experience Platform 中创建并将在 Customer Journey Analytics 中发现的受众发布到[实时客户轮廓](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)，以实现客户定位和个性化。
+您现在可以在 Adobe Experience Platform 中创建并将在 Customer Journey Analytics 中发现的受众发布到[实时客户轮廓](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans)，以实现客户定位和个性化。
 
 通过发布受众可以提供一种明确的方式来激活 Customer Journey Analytics 中发现的洞察并采取行动。这些行动可能包括：
 
 * 在 Adobe Journey Optimizer 中将受众用于历程。
 * 通过 Experience Platform 目标将受众导出到第三方。
 * 使用从 Customer Journey Analytics 中基于事件的数据派生出的有用属性丰富实时客户轮廓。
-* 在发布受众后可以最低的延迟完成所有这些操作。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#latency)
+* 在发布受众后可以最低的延迟完成所有这些操作。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-Hans#latency)
 * 发布一次性受众或定期受众。
 
 您在 Customer Journey Analytics 中创建的受众不必基于为轮廓启用的数据集。您可以将历史数据导入 Experience Platform，而无需为轮廓启用关联的数据集和架构。然后使用这些数据集在 Customer Journey Analytics 中发现相关受众，并将这些受众发布到 Experience Platform 中的实时客户轮廓，以进行激活。
@@ -41,7 +41,7 @@ ht-degree: 100%
 
 ## 数据治理和同意
 
-当您在 Customer Journey Analytics 中发布受众时，将会记录附加到受众中使用的字段的数据治理标签和策略。在任何 Adobe Experience 应用程序中激活受众后，所有相关的数据治理标签和策略都可供该受众使用，并且可以应用适当的强制执行。[进一步了解同意](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy)。
+当您在 Customer Journey Analytics 中发布受众时，将会记录附加到受众中使用的字段的数据治理标签和策略。在任何 Adobe Experience 应用程序中激活受众后，所有相关的数据治理标签和策略都可供该受众使用，并且可以应用适当的强制执行。[进一步了解同意](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=zh-Hans#consent-policy)。
 
 ## 后续步骤
 

@@ -76,7 +76,7 @@ Adobe 提供了多种将数据导入 Adobe Experience Platform 的方法，包�
 
 ## 区段概念的更改
 
-虽然从技术上讲，区段并未从 Adobe Analytics 迁移到 Customer Journey Analytics，但您可以使用组件迁移工具在 Customer Journey Analytics 中重新创建 Adobe Analytics 区段。根据映射的维度和量度在 Customer Journey Analytics 中重新创建区段。有关更多信息，请参阅[准备将组件和项目从 Adobe Analytics 迁移到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html)。
+虽然从技术上讲，区段并未从 Adobe Analytics 迁移到 Customer Journey Analytics，但您可以使用组件迁移工具在 Customer Journey Analytics 中重新创建 Adobe Analytics 区段。根据映射的维度和量度在 Customer Journey Analytics 中重新创建区段。有关更多信息，请参阅[准备将组件和项目从 Adobe Analytics 迁移到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=zh-Hans)。
 
 您现在还不能从 [!DNL Customer Journey Analytics] 共享或发布[!UICONTROL 区段]（[!UICONTROL 区段]）到 Experience Platform Unified Profile，但此功能正在开发中。
 

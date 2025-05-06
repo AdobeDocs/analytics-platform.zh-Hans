@@ -55,6 +55,6 @@ ht-degree: 100%
 
    您的数据流现已配置为将从您的网站收集的数据转发到 Adobe Experience Platform 中的数据集。
 
-   有关如何配置数据流和如何处理敏感数据的更多信息，请参阅[数据流概述](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html)。
+   有关如何配置数据流和如何处理敏感数据的更多信息，请参阅[数据流概述](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=zh-Hans)。
 
 {{upgrade-final-step}}
