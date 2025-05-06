@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '2043'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 99%
 
    * 使用搜索字段可搜索特定连接。开始键入连接名称或 ID，连接列表会随着您的键入而更新。
 
-   * 选择![筛选器](/help/assets/icons/Filter.svg)以展开区段选项列表。 您可以按&#x200B;[!UICONTROL **收藏夹**]&#x200B;或&#x200B;[!UICONTROL **状态**]&#x200B;进行筛选。
+   * 选择![过滤器](/help/assets/icons/Filter.svg)以展开区段选项列表。您可以按&#x200B;[!UICONTROL **收藏夹**]&#x200B;或&#x200B;[!UICONTROL **状态**]&#x200B;进行筛选。
 
      要将某个连接标记为收藏，请点击连接名称左侧的星形图标。
 

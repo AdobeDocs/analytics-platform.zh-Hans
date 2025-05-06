@@ -205,11 +205,11 @@ ht-degree: 98%
 
 如果报告中使用了非默认归因模型，则会忽略或保留报告中使用的分配模型，具体取决于报告是具有单个维度还是多个维度：
 
-* **对于在单个维度中包含量度归因的报告：**&#x200B;[量度归因](/help/data-views/component-settings/attribution.md)会覆盖[分配模型](/help/data-views/component-settings/persistence.md)，就像使用量度归因时通常进行的操作一样。
+* **对于在单个维度中包含量度归因的报告：**[量度归因](/help/data-views/component-settings/attribution.md)会覆盖[分配模型](/help/data-views/component-settings/persistence.md)，就像使用量度归因时通常进行的操作一样。
 
   例如，“首次接触”量度归因会覆盖“最近”维度分配。
 
-* **对于同时包含多个维度的量度归因的报告：除了维度[分配模型](/help/data-views/component-settings/persistence.md)外，还应用了**&#x200B;[量度归因](/help/data-views/component-settings/attribution.md)。
+* **对于同时包含多个维度的量度归因的报告：除了维度[分配模型](/help/data-views/component-settings/persistence.md)外，还应用了**[量度归因](/help/data-views/component-settings/attribution.md)。
 
   例如，除了“最近”维度分配之外，还会应用“首次接触”量度归因。此外，量度归因将会应用于分配后的维度项对，就好像它们是单个维度项一样，而不是像在自由格式表中通常所做的那样，独立地应用于每个维度项。
 

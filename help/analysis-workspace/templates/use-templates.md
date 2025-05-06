@@ -128,27 +128,27 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速了解最�
 
    以下部分对应可用的类别并提供有关每个模板的信息。
 
-   * &lbrack;[](#most-popular)
+   * [[!UICONTROL ](#most-popular)
 
-   * &lbrack;[](#engagement)
+   * [[!UICONTROL ](#engagement)
 
-   * &lbrack;[](#web-conversion)
+   * [[!UICONTROL ](#web-conversion)
 
-   * &lbrack;[](#web-audience)
+   * [[!UICONTROL ](#web-audience)
 
-   * &lbrack;[](#web-acquisition)
+   * [[!UICONTROL ](#web-acquisition)
 
-   * &lbrack;[](#mobile-mobile-app)
+   * [[!UICONTROL ](#mobile-mobile-app)
 
-   * &lbrack;[](#mobile-mobile-device-information)
+   * [[!UICONTROL ](#mobile-mobile-device-information)
 
-   * &lbrack;[](#time-parting)
+   * [[!UICONTROL ](#time-parting)
 
-   * &lbrack;[](#cross-channel)
+   * [[!UICONTROL ](#cross-channel)
 
-   * &lbrack;[](#other-channels)
+   * [[!UICONTROL ](#other-channels)
 
-   * &lbrack;[](#ajo)
+   * [[!UICONTROL ](#ajo)
 
 ### 最受欢迎 {#most-popular}
 

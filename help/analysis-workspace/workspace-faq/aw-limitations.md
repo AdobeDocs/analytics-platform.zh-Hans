@@ -7,7 +7,7 @@ role: User
 source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '313'
-ht-degree: 73%
+ht-degree: 93%
 
 ---
 
@@ -24,20 +24,20 @@ ht-degree: 73%
 
 ## 可视化内容
 
-* 利用区段的可视化图表，如[!UICONTROL 流失]、[!UICONTROL 流量]、[!UICONTROL 同类群组]和[!UICONTROL 直方图]，不能接受计算量度作为输入。
+* 使用区段的可视化图表（如[!UICONTROL 流失]、[!UICONTROL 流量]、[!UICONTROL 同类群组]和[!UICONTROL 直方图]）不能接受计算量度作为输入。
 * [!UICONTROL 流量]：登入/退出维度（例如，[!UICONTROL 进入页面]）不能在流量中使用。
 * [!UICONTROL 同类群组]：非整数不能用作同类群组标准。
 
 ## 区段
 
-* 某些量度和维度无法分段，如[!UICONTROL 事件]、[!UICONTROL 人员]等。
-* 在[面板拖放区域](/help/analysis-workspace/c-panels/panels.md)中创建的临时区段属于快速区段类型。 除非将其公开，否则它们不会显示在Workspace的左侧面板或区段管理器中。 有关更多信息，请参阅[快速区段](/help/components/filters/quick-filters.md)。
+* 某些量度和维度不可分段，如[!UICONTROL 事件]、[!UICONTROL 人员]等。
+* 在[面板放置区](/help/analysis-workspace/c-panels/panels.md)中创建的临时区段是一种快速区段。除非将其公开，否则它们不会显示在Workspace的左侧面板或区段管理器中。 有关更多信息，请参阅[快速区段](/help/components/filters/quick-filters.md)。
 
 ## 计算量度
 
 * 计算量度不能用于某些可视化内容。请参阅[可视化内容](#visualizations)。
 * 计算量度无法在[!UICONTROL 归因]面板中使用，因为计算量度本身可以包括单独的归因模型。
-* 如果从Workspace中创建计算量度（而不是从[!UICONTROL 组件>区段]中创建），则某些组件和运算符将不可用。 例如，[!UICONTROL IP 地址]。
+* 如果从 Workspace 创建计算量度（而不是从[!UICONTROL 组件 > 区段]创建），则某些组件和操作符不可用。例如，[!UICONTROL IP 地址]。
 
 ## 日期范围
 

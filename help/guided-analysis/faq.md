@@ -8,7 +8,7 @@ role: User
 source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 92%
+ht-degree: 96%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 92%
 
 * **Analysis Workspace 是一种以维度为中心的体验。** 表格通常由维度行组成，而列则通常是量度。可在行和列中应用区段以获取所需数据。
 
-* **引导式分析是一种以事件和用户为中心的体验。**&#x200B;每个分析都从选择事件开始，然后可以添加维度和区段来优化该事件数据。
+* **引导式分析是一种以事件和用户为中心的体验。** 每次分析都从选择事件开始，然后可以添加维度和区段来细化事件数据。
 
 ![Analysis Workspace 和引导式分析视图](assets/structure.png){style="border:1px solid gray"}
 

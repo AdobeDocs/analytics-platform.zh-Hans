@@ -8,58 +8,58 @@ exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
 source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
 workflow-type: tm+mt
 source-wordcount: '523'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 # 配置内容分析
 
-Content Analytics的配置包括以下步骤：
+Content Analytics 的配置包括以下步骤：
 
-内容分析的![配置](../assets/aca-configuration.svg){zoomable="yes"}
+![Content Analytics 的配置](../assets/aca-configuration.svg){zoomable="yes"}
 
-1. 使用Content Analytics [引导式配置](guided.md)向导引导您完成设置Content Analytics配置的先决条件所需的所有步骤。 您可以随时保存配置并稍后返回。
-1. 在对配置值感到满意后，您可以实施配置。 此实施会根据您在向导中配置的内容，创建所有必需的工件。
-1. 仅当[手动发布](manual.md) Tags属性时，您的Content Analytics配置才会有效部署并启动数据收集。
+1. 使用 Content Analytics [引导式配置](guided.md)向导，该向导将指导您完成设置 Content Analytics 配置的先决条件所需的所有步骤。您可以随时保存您的配置，稍后可返回。
+1. 只要您熟悉了配置值，就可以实施该配置。此实施会根据您在向导中配置的内容创建所有必需的构件。
+1. 只有在您 [手动发布](manual.md)标记属性后，您的 Content Analytics 配置才会有效部署并开始收集数据。
 
-1. 您只能使用[引导式配置](guided.md)向导对已实施的配置进行一些细微更改。 例如，更改[数据视图](/help/data-views/data-views.md)。
-1. 您可以在关联的Tags属性中使用[Adobe Content Analytics扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview)对已实施的配置进行其他更改。
-1. 仅当[手动重新发布](manual.md) Tags属性时，配置修改才会有效部署，并且根据您的更改开始数据收集。
+1. 您只能使用[引导式配置](guided.md)向导对已实施的配置进行一些细微的更改。例如，更改[数据视图](/help/data-views/data-views.md)。
+1. 您可以在相关联标记属性中使用 [Adobe Content Analytics 扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview)对已实施的配置进行其他更改。
+1. 只有在您[手动重新发布](manual.md)标记属性后，才会有效部署更改的配置，并且会根据您的更改开始收集数据。
 
 
 ## 先决条件
 
-在配置Content Analytics之前，请确保满足以下先决条件：
+在配置 Content Analytics 之前，请确保满足以下先决条件：
 
-* 您已将Content Analytics中使用的功能服务的用户代理和IP地址添加到允许列表。 要配置的用户代理字符串为： <code>AdobeFeaturization/1.0</code>。
-* 如果您已使用JavaScript[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/install/library){target="_blank"}实施Web SDK以进行常规行为数据收集，请确保使用默认名称<code>alloy</code> 用于JavaScript库。
-* 您具有Customer Journey Analytics产品管理员角色，该角色具有管理连接和管理数据视图的附加权限。
-* 如果您考虑收集Content Analytics体验，请确保根据您网页上的更改来设置和更新[Content Analytics版本控制](manual.md#versioning)。
-* 您必须具有数据收集[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions){target="_blank"}的权限：
-   * [Experience Platform权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
-   * [Experience Platform数据收集权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}
-* 您仔细考虑了以下重要配置选项：
+* 您已将 Content Analytics 中使用的特征化服务的用户代理和 IP 地址列入允许列表。要配置的用户代理字符串是：<code>AdobeFeaturization/1.0</code>。
+* 如果您[使用 JavaScript 实施了 Web SDK](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/install/library){target="_blank"}用于定期收集行为数据，请确保您使用了默认名称 <code>alloy</code> 为 JavaScript 库。
+* 您具有 Customer Journey Analytics 产品管理员角色，并具有管理连接和管理数据视图的额外权限。
+* 如果您考虑收集 Content Analytics 体验，请确保根据网页的更改设置并更新[ Content Analytics 版本控制](manual.md#versioning)。
+* 您必须具有[数据收集权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions){target="_blank"}：
+   * [Experience Platform 权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
+   * [Experience Platform 数据收集/权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}
+* 您已仔细考虑了以下重要的配置选项：
 
-   * 您的网站适合体验报告。 只有在满足以下条件时，才可能生成正确的体验报表：
-      * 必须使用页面URL重现网站上的页面。
-      * 任何给定用户看到的文本内容都可以使用页面URL重现，并且不依赖于Cookie或其他个性化机制。
-   * 您已清楚地了解要捕获哪些页面的内容参与分析和见解。
-   * 您已清楚地了解要捕获内容参与分析和见解的资产（类型）。
+   * 您的站点适合体验报告。只有满足以下条件才可以生成正确的体验报告：
+      * 网站上的页面必须能够通过页面 URL 重复出现。
+      * 任何给定用户看到的文本内容都可以使用页面 URL 重复出现，并且不取决于 cookie 或其他个性化机制。
+   * 您清楚地了解要捕获哪些页面的内容参与度分析和洞察。
+   * 您清楚地了解要为哪些（类型的）资产捕获内容参与度分析和洞察。
 
 
 ## 访问控制
 
 >[!IMPORTANT]
 >
->无法配置用于启用或禁用单个用户或用户组的Content Analytics访问的Content Analytics权限。
+>没有 Content Analytics 权限可供您配置来为单个用户或用户组启用或禁用 Content Analytics 访问权限。
 >
 
-要提供用户或用户组对Content Analytics的访问权限，您必须提供用户或用户组对为Content Analytics[&#128279;](guided.md#data-view)配置的一个或多个数据视图的访问权限。
+要为用户或用户组授予对 Content Analytics 的访问权限，您必须向该用户或用户组授予对一个或多个[为 Content Analytics 配置的数据视图](guided.md#data-view)的访问权限。
 
-此访问权限意味着：
+此访问权限表示：
 
-1. 启用了Content Analytics的数据视图包含在特定Customer Journey Analytics产品配置文件的数据视图权限中。
-1. 该特定的Customer Journey Analytics产品配置文件是分配给用户或用户组的产品配置文件之一。
+1. 启用了 Content Analytics 的数据视图包含在某个特定 Customer Journey Analytics 产品轮廓的数据视图权限中。
+1. 此特定的 Customer Journey Analytics 产品轮廓是分配给该用户或用户组的产品轮廓之一。
 
 >[!MORELIKETHIS]
 >

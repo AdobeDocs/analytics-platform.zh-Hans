@@ -7,7 +7,7 @@ role: User
 source-git-commit: 9a15cb4d771892ff656fe72b8e53d890a3fd99f7
 workflow-type: tm+mt
 source-wordcount: '844'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ Analysis Workspace 中的自由格式表是进行交互式数据分析的基础�
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/327345?captions=chi_hans)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## 过滤表格
 
