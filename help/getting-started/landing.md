@@ -18,7 +18,7 @@ Customer Journey Analytics 的登录页突出[!DNL Analysis Workspace]显示了�
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的登陆页面](https://video.tv.adobe.com/v/334278/?quality=12&learn=on){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的登陆页面](https://video.tv.adobe.com/v/346461/?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取演示视频。
 
 {{videoaa}}
 
