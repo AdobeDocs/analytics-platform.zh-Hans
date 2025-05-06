@@ -4,12 +4,10 @@ description: 使用量子量度热图数据，更好地了解页面级参与度�
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
-hidefromtoc: true
-hide: true
 exl-id: d861135f-42a4-45ac-8b11-41f151bfce92
-source-git-commit: 25a2c549c27918f80202bde4cd30e305f4a295f3
+source-git-commit: 95a107c6bbc6dce6cc43c4a1b51beeaa1fa7aff1
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '348'
 ht-degree: 1%
 
 ---
@@ -24,7 +22,7 @@ ht-degree: 1%
 
 您必须有权使用量子量度的&#x200B;**UX Ops**&#x200B;程序包，才能访问量子量度的热图功能。
 
-## 步骤1：在Workspace中创建自由格式表并进行配置，以便会话ID值直接链接到Quantum Metric。
+## 步骤1：在Analysis Workspace中配置链接
 
 1. 登录到[experience.adobe.com](https://experience.adobe.com)。
 1. 导航到Customer Journey Analytics，然后在顶部菜单中选择&#x200B;**[!UICONTROL Workspace]**。
@@ -41,6 +39,8 @@ ht-degree: 1%
 
 1. 单击&#x200B;**[!UICONTROL 创建]**。
 1. 测试其中一个链接，查看它是否在URL中打开且量子量度扩展可见。 这些链接将在新选项卡中打开，以便您的Workspace项目保持打开状态。
+
+![热图](assets/heatmap.png)
 
 ## 步骤2：通过单击Customer Journey Analytics中的链接来查看热图
 

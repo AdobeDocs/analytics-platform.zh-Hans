@@ -4,12 +4,10 @@ description: 链接量子量度会话会重播CJA数据，以便更好地了解�
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
-hidefromtoc: true
-hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: a03505aeb56f99b28f50819765a496705876b89c
+source-git-commit: 95a107c6bbc6dce6cc43c4a1b51beeaa1fa7aff1
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '814'
 ht-degree: 2%
 
 ---
@@ -22,7 +20,7 @@ ht-degree: 2%
 
 这些步骤假定您使用Adobe Experience Platform数据收集中的标记。 如果您的组织不使用标记，则可以调整这些数据收集方法，以便手动实施Web SDK。
 
-有关详细信息，请参阅[Quantum量度标记扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/analytics/quantum-metric)文档。
+有关详细信息，请参阅[Quantum量度标记扩展](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric)文档。
 
 ## 步骤1：创建架构字段以容纳量子度量会话ID
 
@@ -109,6 +107,8 @@ ht-degree: 2%
 1. 单击&#x200B;**[!UICONTROL 创建]**。
 
 现在，每个会话ID都是一个可单击的链接。 有关向Analysis Workspace维度项目添加超链接的详细信息，请参阅[在自由格式表中创建超链接](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)。
+
+![会话重播](assets/session-replay.png)
 
 ## 步骤5：从Customer Journey Analytics查看会话
 
