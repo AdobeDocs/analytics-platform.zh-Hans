@@ -1,22 +1,22 @@
 ---
 title: 维度概述
-description: 了解维度是什么以及在Customer Journey Analytics中使用维度的方式
+description: 了解什么是维度以及如何在Customer Journey Analytics中使用维度
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
-source-git-commit: d37734ae415722fc609715868c37a36f2becdbf6
+source-git-commit: ed7e9a6c34c5f8ba9ba4f75be05768409cbc158d
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '263'
 ht-degree: 36%
 
 ---
 
 # 维度概述
 
-Dimension是Customer Journey Analytics中用于分析数据的一种组件类型。 例如，在[Analysis Workspace](/help/analysis-workspace/home.md)或[Report Builder](/help/report-builder/report-buider-overview.md)中构建报表时，使用维度。
+维度是Customer Journey Analytics中用于分析数据的组件类型。 例如，在[Analysis Workspace](/help/analysis-workspace/home.md)或[Report Builder](/help/report-builder/rb-overview.md)中构建报表时，使用维度。
 
 Customer Journey Analytics维度的类型不受限制；值可以是数字、文本、对象、列表或所有这些的混合。
 
-Customer Journey Analytics中的基本报表根据量度列（通常是数值）显示维度的行（通常是字符串值）。
+Customer Journey Analytics中的基本报表根据一列指标（通常是数值）显示维度行（通常是字符串值）。
 
 例如，如果将“页面”维度与“人员”量度相结合，您将获得一个排名报表，其中按人员显示您最常访问的页面：
 

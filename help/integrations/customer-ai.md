@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 feature: Experience Platform Integration
-source-git-commit: c26829d7a53e9ba8d5faf731a8a1dca2e741bf21
-workflow-type: ht
-source-wordcount: '959'
-ht-degree: 100%
+source-git-commit: ed7e9a6c34c5f8ba9ba4f75be05768409cbc158d
+workflow-type: tm+mt
+source-wordcount: '960'
+ht-degree: 97%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 100%
 
 {{release-limited-testing}}
 
-[客户人工智能](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=zh-Hans)，作为 Adobe Experience Platform 智能服务的一部分，为营销人员提供了在个人层面生成客户预测的能力。
+[客户人工智能](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html)，作为 Adobe Experience Platform 智能服务的一部分，为营销人员提供了在个人层面生成客户预测的能力。
 
-在影响因素的帮助下，客户人工智能可以告诉您客户可能会做什么以及为什么。此外，营销人员可以从客户人工智能预测和洞察中受益，通过提供最合适的优惠和消息传递来个性化客户体验。
+在影响因素的帮助下，客户人工智能可以告诉您客户可能会做什么以及为什么。此外，营销人员可以从客户人工智能预测和洞察中受益，通过提供最合适的产品建议和消息传递来个性化客户体验。
 
-客户人工智能依靠个人行为数据和个人资料数据进行倾向打分。客户人工智能很灵活，因为它可以接收多个数据源，包括 Adobe Analytics、Adobe Audience Manager、消费者体验事件数据和体验事件数据。如果您使用 Experience Platform 源连接器引入 Adobe Audience Manager 和 Adobe Analytics 数据，则模型会自动选取标准事件类型以对模型进行训练和评分。如果您在没有标准事件类型的情况下引入自己的体验事件数据集，并且您想在模型中使用此数据集，则需要将任何相关字段映射为自定义事件或个人资料属性。此操作可以在 Experience Platform 内的客户人工智能配置步骤中完成
+客户人工智能依靠个人行为数据和轮廓数据进行倾向打分。客户人工智能很灵活，因为它可以接收多个数据源，包括 Adobe Analytics、Adobe Audience Manager、消费者体验事件数据和体验事件数据。如果您使用 Experience Platform 源连接器引入 Adobe Audience Manager 和 Adobe Analytics 数据，则模型会自动选取标准事件类型以对模型进行训练和评分。如果您在没有标准事件类型的情况下引入自己的体验事件数据集，并且您想在模型中使用此数据集，则需要将任何相关字段映射为自定义事件或轮廓属性。此操作可以在 Experience Platform 内的客户人工智能配置步骤中完成
 
 客户人工智能可以与 Customer Journey Analytics 集成，从而在 Customer Journey Analytics 的数据视图和报告中利用客户人工智能启用的数据集。您可以：
 
@@ -49,7 +49,7 @@ ht-degree: 100%
 
 ## 步骤 1：配置客户人工智能实例
 
-准备好数据并准备好所有凭据和架构后，请按照 Adobe Experience Platform 中的[配置客户人工智能实例](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=zh-Hans)指南开始。
+准备好数据并准备好所有凭据和架构后，请按照 Adobe Experience Platform 中的[配置客户人工智能实例](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html)指南开始。
 
 ## 步骤 2：设置与客户人工智能数据集的 Customer Journey Analytics 连接
 
@@ -57,7 +57,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->如果打开了此开关以在步骤 1 中的配置期间启用 Customer Journey Analytics 分数，则每个客户人工智能实例都有两个输出数据集。一个输出数据集以个人资料 XDM 格式显示，一个以体验事件 XDM 格式显示。
+>如果打开了此开关以在步骤 1 中的配置期间启用 Customer Journey Analytics 分数，则每个客户人工智能实例都有两个输出数据集。一个输出数据集以轮廓 XDM 格式显示，一个以体验事件 XDM 格式显示。
 
 ![CAI 分数](assets/cai-scores.png)
 
@@ -67,7 +67,7 @@ ht-degree: 100%
 
 ![CAI 架构](assets/cai-schema.png)
 
-（请注意，该示例是一个配置文件数据集；同一组架构对象会成为 Customer Journey Analytics 将会获取的体验事件数据集的一部分。体验事件数据集将包括时间戳作为得分日期。）在此模型中得分的每个客户都会有一个分数、一个 scoreDate 等与他们相关联。
+（请注意，该示例是一个轮廓数据集；同一组架构对象会成为 Customer Journey Analytics 将会获取的体验事件数据集的一部分。体验事件数据集将包括时间戳作为得分日期。) 在此模型中得分的每个客户都会有一个分数、一个scoreDate等 与他们相关联。
 
 ## 第 3 步：根据这些连接创建数据视图
 

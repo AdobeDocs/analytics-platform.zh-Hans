@@ -5,8 +5,8 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
-workflow-type: ht
+source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
+workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ Customer Journey Analytics 中的几项功能已经过重命名和重新设计�
 
 * 您仍然可以使用[ Analysis Workspace ](/help/analysis-workspace/home.md)分析数据。工作区的操作方式与在传统Adobe Analytics中相同。
 * 有相同版本的 [Adobe Analytics 功能板](/help/mobile-app/home.md)可用，且在 Customer Journey Analytics 与 Adobe Analytics 中的工作原理类似。
-* [Report Builder](/help/report-builder/report-buider-overview.md) 具有新界面，并可在 MS Windows、MacOS 和 Web 版本的 Excel 上运行。（在此版本的 Report Builder 之前，除非在 VMware 上运行，否则无法在 Mac 上使用。）此版本尚不支持传统的 AA 数据请求。
+* [Report Builder](/help/report-builder/rb-overview.md) 具有新界面，并可在 MS Windows、MacOS 和 Web 版本的 Excel 上运行。（在此版本的 Report Builder 之前，除非在 VMware 上运行，否则无法在 Mac 上使用。）此版本尚不支持传统的 AA 数据请求。
 
 ## 对报告的更改
 
@@ -76,7 +76,7 @@ Adobe 提供了多种将数据导入 Adobe Experience Platform 的方法，包�
 
 ## 区段概念的更改
 
-虽然从技术上讲，区段并未从 Adobe Analytics 迁移到 Customer Journey Analytics，但您可以使用组件迁移工具在 Customer Journey Analytics 中重新创建 Adobe Analytics 区段。根据映射的维度和量度在 Customer Journey Analytics 中重新创建区段。有关更多信息，请参阅[准备将组件和项目从 Adobe Analytics 迁移到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=zh-Hans)。
+虽然从技术上讲，区段并未从 Adobe Analytics 迁移到 Customer Journey Analytics，但您可以使用组件迁移工具在 Customer Journey Analytics 中重新创建 Adobe Analytics 区段。根据映射的维度和量度在 Customer Journey Analytics 中重新创建区段。有关更多信息，请参阅[准备将组件和项目从 Adobe Analytics 迁移到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html)。
 
 您现在还不能从 [!DNL Customer Journey Analytics] 共享或发布[!UICONTROL 区段]（[!UICONTROL 区段]）到 Experience Platform Unified Profile，但此功能正在开发中。
 
@@ -93,7 +93,7 @@ Adobe Analytics 和 Customer Journey Analytics 之间的计算量度名称类似
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [将计算量度从 Adobe Analytics 移动到 Customer Journey Analytics](https://video.tv.adobe.com/v/33325?quality=12&learn=on&captions=chi_hans){target="_blank"} 以获取有关如何移动计算量度的演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [将计算量度从 Adobe Analytics 移动到 Customer Journey Analytics](https://video.tv.adobe.com/v/31788?quality=12&learn=on){target="_blank"} 以获取有关如何移动计算量度的演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -120,7 +120,7 @@ Customer Journey Analytics 扩展了 ECID 之外的身份标识概念，以包�
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Customer Journey Analytics 中使用身份标识](https://video.tv.adobe.com/v/40087/?quality=12&learn=on&captions=chi_hans){target="_blank"}获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Customer Journey Analytics 中使用身份标识](https://video.tv.adobe.com/v/30750/?quality=12&learn=on){target="_blank"}获取演示视频。
 
 >[!ENDSHADEBOX]
 
