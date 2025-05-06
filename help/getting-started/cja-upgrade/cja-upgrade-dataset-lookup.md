@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
 source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '806'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -109,7 +109,7 @@ ht-degree: 96%
 
 要将查找数据集添加到 Customer Journey Analytics 中的连接：
 
-1. 在Customer Journey Analytics中，从顶部菜单中选择&#x200B;**[!UICONTROL 连接]** （可选）从&#x200B;**[!UICONTROL 数据管理]**。
+1. 在 Customer Journey Analytics 的顶部菜单中选择&#x200B;**[!UICONTROL 连接]**，也可以从&#x200B;**[!UICONTROL 数据管理]**&#x200B;中选择。
 
 1. 选择要添加查找数据集的连接旁边的 ![更多图标](assets/More.svg)，然后选择&#x200B;**[!UICONTROL 编辑]**。
 
@@ -127,7 +127,7 @@ ht-degree: 96%
 
 1. 使用&#x200B;**[!UICONTROL 键]**&#x200B;字段和&#x200B;**[!UICONTROL 匹配键]**&#x200B;字段，在查找数据集中的字段和事件或摘要数据集中的字段之间建立关联。
 
-1. 重复此过程，直到所有查找数据集都已添加到Customer Journey Analytics中的连接。
+1. 重复此过程，直到所有查找数据集都被添加到 Customer Journey Analytics 的连接中。
 
 {{upgrade-final-step}}
 

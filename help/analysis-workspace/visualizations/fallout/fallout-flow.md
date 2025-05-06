@@ -5,9 +5,9 @@ feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
 source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '357'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 95%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** 中的流失可视化图表。_<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** 版本的[流失](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** 中的流失可视化图表。_<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版本的[流失](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow)。_
 
 >[!ENDSHADEBOX]
 
@@ -75,7 +75,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 * 涉及具有预定义页面序列和单一入口点及路径的历程的流量分析。（使用历程画布来描绘具有多个入口点和路径的历程。）
 
-* 需要在同一报表中对两个不同区段执行并排比较的历程。
+* 需要在同一个报告中对两个不同的区段进行并列比较的历程。
 
 使用[上述表格](#understand-the-differences)来了解历程画布、流失和流量可视化图表之间的区别。
 

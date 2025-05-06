@@ -5,9 +5,9 @@ exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
 source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2320'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -71,9 +71,9 @@ ht-degree: 77%
 
    | 创建方法 | 详细信息 |
    | --- | --- |
-   | 从&#x200B;**[!UICONTROL 受众]**&#x200B;界面中 | 在 Customer Journey Analytics 菜单中，选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 受众]**。“受众”界面显现。选择&#x200B;**[!UICONTROL 创建受众]**，将打开[!UICONTROL 受众生成器]。 |
-   | 从 Analysis Workspace 的可视化功能 | Analysis Workspace 中的许多可视化功能允许您使用上下文菜单创建受众。例如，您可以从[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)中的项目或[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)中的节点的上下文菜单中选择&#x200B;**[!UICONTROL 创建受众]**。<p>使用此方法时会使用您选择的维度或维度项目预填充受众生成器中的区段。</p><p>以下可视化功能可让您使用右键菜单创建受众：</p><ul><li>[同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[流](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[维恩图](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**注释：**&#x200B;受众不能包含计算量度。如果您尝试创建包含计算量度的受众，则受众定义不会包含该计算量度。</p> |
-   | 通过区段创建/编辑UI | 选中显示&#x200B;**[!UICONTROL 从此区段创建受众的框]**。 使用此方法时会预填充区段。 有关详细信息，请参阅[创建区段](/help/components/filters/create-filters.md)。 |
+   | 从&#x200B;**[!UICONTROL 受众]**&#x200B;界面内 | 在 Customer Journey Analytics 菜单中，选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 受众]**。“受众”界面显现。选择&#x200B;**[!UICONTROL 创建受众]**，然后[!UICONTROL 受众生成器]将会打开。 |
+   | 从 Analysis Workspace 的可视化功能 | Analysis Workspace 中的许多可视化功能允许您使用上下文菜单创建受众。例如，您可以从[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)中的项目或[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)中的节点的上下文菜单中选择&#x200B;**[!UICONTROL 创建受众]**。<p>使用此方法时会在受众生成器中用您选择的维度或维度项预填充区段。</p><p>以下可视化功能可让您使用右键菜单创建受众：</p><ul><li>[同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[流](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[维恩图](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**注释：**&#x200B;受众不能包含计算量度。如果您尝试创建包含计算量度的受众，则受众定义不会包含该计算量度。</p> |
+   | 从区段创建/编辑 UI | 勾选&#x200B;**[!UICONTROL 从这个区段创建受众]**&#x200B;的复选框。使用此方法可预填充区段。有关更多信息，请参阅[创建区段](/help/components/filters/create-filters.md)。 |
 
    {style="table-layout:auto"}
 
@@ -81,7 +81,7 @@ ht-degree: 77%
 
 1. 使用[日期预览](#data-preview)面板解释数据。
 
-1. 选择&#x200B;**[!UICONTROL [!UICONTROL 查看示例 ID]]** 来查看此受众中的 ID 示例。在 **[!UICONTROL ID 示例]**&#x200B;对话框中，您可以使用![搜索](/help/assets/icons/Search.svg) [!UICONTROL *搜索 ID 示例*]&#x200B;来搜索 ID 示例。
+1. 选择&#x200B;**[!UICONTROL [!UICONTROL 查看示例 ID]]** 来查看此受众中的 ID 示例。在 **[!UICONTROL ID 示例]**&#x200B;对话框中，您可以使用![搜索](/help/assets/icons/Search.svg)[!UICONTROL *搜索 ID 示例*]&#x200B;来搜索 ID 示例。
 
 1. 双击受众配置，然后选择&#x200B;**[!UICONTROL 发布]**。
 您会收到一条受众已发布的确认消息。发布只需要一两分钟，这个受众就会出现在 Experience Platform 上。
@@ -101,7 +101,7 @@ ht-degree: 77%
 | **[!UICONTROL 标记]** | 出于组织目的而要分配给受众的任何标记。您可以选择一个或多个预先存在的标记，也可以输入一个新标记。 |
 | **[!UICONTROL 描述]** | 对受众的描述，以区别于其他人。例如，`Build an audience of really interested potential car buyers` |
 | **[!UICONTROL 刷新频率]** | 您刷新受众所要采用的频率。<p/>您可以选择 <ul><li>**[!UICONTROL 一次性]** 受众：无需刷新的受众（默认）。例如，该选项可能有助于特定的一次性营销活动。<br/>您必须指定一个&#x200B;**[!UICONTROL 一次性的日期范围]**。您可以使用![日程表](/help/assets/icons/Calendar.svg)来输入日期范围。</li><li>刷新的受众。您可以从下列选项中进行选择：<ul><li>**[!UICONTROL 每 4 小时]**：每 4 小时刷新一次的受众。</li><li>**[!UICONTROL 每日]**：每日刷新一次的受众</li><li>**[!UICONTROL 每周]**：每周刷新一次的受众。</li><li>**[!UICONTROL 每月]**：每月刷新一次的受众</li></ul></li>若要刷新观众，您必须指定：<ul><li>**[!UICONTROL 刷新回顾窗口]**。定义从今天开始评估受众的回顾天数。您可以从选项中进行选择或定义自定义时间。最长为 90 天。</li><li>**[!UICONTROL 到期日期]**：定义受众停止刷新的时间。您可以使用![日程表](/help/assets/icons/Calendar.svg)选择日期。默认值为创建日期开始 1 年。到期受众的处理方式与到期的计划报告类似。管理员会在受众到期前一个月收到一封电子邮件。</li></ul> 请注意，受众刷新次数限制为 75 到 150 次，具体取决于您的 Customer Journey Analytics 权限。</li></ul> |
-| **[!UICONTROL 过滤器]** | 过滤器是受众的主要输入。从左侧![分段](/help/assets/icons/Segmentation.svg) **[!UICONTROL 区段]**&#x200B;面板将一个或多个区段拖放到“区段”区域。 您可以使用![搜索](/help/assets/icons/Search.svg) [!UICONTROL *搜索区段*]&#x200B;来搜索区段。 您最多可以添加20个区段。 区段可以与&#x200B;**[!UICONTROL And]**&#x200B;或&#x200B;**[!UICONTROL Or]**&#x200B;运算符相连。<p>从Analysis Workspace中的可视化图表(例如自由格式表或历程画布)创建受众时，应用于面板或列的任何区段都会保留。 您可以删除任何自动应用的区段。</p> |
+| **[!UICONTROL 过滤器]** | 过滤器是受众的主要输入。将一个或多个区段从左侧![分段](/help/assets/icons/Segmentation.svg)**[!UICONTROL 区段]**&#x200B;面板拖放到区段区域。您可以使用![搜索](/help/assets/icons/Search.svg)[!UICONTROL *搜索区段*]&#x200B;来搜索区段。您最多可以添加 20 个区段。区段可以与 **[!UICONTROL And]** 或 **[!UICONTROL Or]** 运算符相连。<p>从 Analysis Workspace 中的可视化图表（例如自由格式表或“历程”画布）创建受众时，应用于面板或列的任何区段都会保留。您可以移除任何自动应用的区段。</p> |
 | **[!UICONTROL 数据预览]** | 选择![信息](/help/assets/icons/Info.svg)可显示或隐藏所选日期范围的[数据预览](#data-preview)。 |
 
 ## 数据预览
@@ -147,7 +147,7 @@ ht-degree: 77%
 
 ## 在 Experience Platform 中使用 Customer Journey Analytics {#audiences-aep}
 
-Customer Journey Analytics会从已发布的受众中获取所有命名空间和ID组合，并将它们流式传输到Real-Time Customer Data Platform中。 Customer Journey Analytics 会将受众发送到 Experience Platform，并根据配置连接时选择的[!UICONTROL 人员 ID] 设置主要身份标识。
+Customer Journey Analytics 可以从您发布的受众中获取所有的命名空间和 ID 组合，并将其流式传输到 Real-Time Customer Data Platform 中。Customer Journey Analytics 会将受众发送到 Experience Platform，并根据配置连接时选择的[!UICONTROL 人员 ID] 设置主要身份标识。
 
 然后，Real-Time Customer Data Platform 会检查每个命名空间/ID 组合，并查找可能包含它的轮廓。轮廓其实就是由所链接的命名空间、ID 和设备组成的集群。如果它找到一份相关的轮廓，则会将命名空间和 ID 作为区段会员资格属性添加到此轮廓中的其他 ID。例如，<user@adobe.com> 可以成为所有设备和渠道的目标。如果未找到相关的轮廓，则会创建一份新的轮廓。
 
@@ -169,40 +169,40 @@ Customer Journey Analytics会从已发布的受众中获取所有命名空间和
 
 有关在 Platform 中使用受众的更多信息，请参阅 Experience Platform 文档中的[区段生成器 UI 指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/segmentation/ui/segment-builder)中的[受众](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/segmentation/ui/segment-builder)部分。
 
-### 了解受众计数差异
+### 了解受众数量的差异
 
-Customer Journey Analytics和Real-Time Customer Data Platform之间可能存在受众计数差异。
+Customer Journey Analytics 和 Real-Time Customer Data Platform 两者的受众数量可能会有差异。
 
 <!--
 ![Infographic on audience differences between Customer Journey Analytics and Real-Time CDP.](/help/components/audiences/assets/infographic-cja-rtcdp.png)
 -->
 
-#### 预计计数与确定计数
+#### 估计数量与确定数量
 
-两个应用程序计算受众会员资格的方法有所不同，如下所述。
+这两个应用程序计算受众会员数量的方法有所不同，详见下文所述。
 
-* **Customer Journey Analytics**： Customer Journey Analytics中的&#x200B;**[!UICONTROL 总人数]**&#x200B;指标是一个估计值。 这意味着计数是基于受众规则的估计值，并且可以在刷新间隔之间更改。
-* **Real-Time Customer Data Platform**： Real-Time Customer Data Platform中的计数是确定性的，基于每日评估作业，并在受众完成发布到受众门户时修复。
+* **Customer Journey Analytics**：Customer Journey Analytics 中的&#x200B;**[!UICONTROL 总人数]**&#x200B;量度是一个估计值。这意味着这是根据受众规则估计的数量，可能在刷新间隔之间发生变化。
+* **Real-Time Customer Data Platform**：Real-Time Customer Data Platform 中的数量是确定的，基于每日评估工作，这个数值固定在受众门户中完成受众发布的这一刻。
 
-#### 发布间隔和速率
+#### 发布间隔和速度
 
-受众以每秒1500条记录(RPS)的速率发布到Real-Time Customer Data Platform。 例如，拥有2000万成员的受众将大约需要3.7小时才能完全发布（2000万/1500 RPS/3600秒/小时）。 在此期间，两个应用程序之间的受众成员资格可能会有所不同。
+受众以每秒 1500 条记录 (RPS) 的速度在 Real-Time Customer Data Platform 上发布。例如，拥有 2000 万会员的受众大约需要 3.7 小时才能完全发布（2000 万/1500 RPS/每小时 3600 秒）。在这个过程中，两个应用程序的受众会员可能会有所不同。
 
-#### 配置文件碎片
+#### 轮廓碎片化
 
-如果从Customer Journey Analytics导入的用户档案在Real-Time Customer Data Platform中已存在，则不会将其计为新的用户档案。 这会导致Real-Time Customer Data Platform中的配置文件计数低于预期。
+如果从 Customer Journey Analytics 导入的轮廓在 Real-Time Customer Data Platform 中已经存在，它们就不被视为新轮廓。这可能导致 Real-Time Customer Data Platform 中的轮廓数量低于预期。
 
-#### 批量受众与流式受众
+#### 批量受众与流媒体受众
 
-Customer Journey Analytics受众不包含在每日批次评估作业中，并在下一个发布间隔之前保持固定状态。 相反，Real-Time Customer Data Platform中的其他批量受众每24小时重新评估一次。
+Customer Journey Analytics 受众不包括在每日批量评估作业中，直到下一个发布间隔之前都保持不变。与此不同，Real-Time Customer Data Platform 中的其他批量受众每 24 小时就会重新评估一次。
 
-### 要记住的关键要点
+### 需要记住的关键要点
 
-* Customer Journey Analytics中的&#x200B;**估计计数**：了解Customer Journey Analytics中的&#x200B;**[!UICONTROL 总人数]**&#x200B;计数是一个估计值，可能会因流式传输数据和身份行为而有所不同。
-* Real-Time Customer Data Platform中的&#x200B;**确定性计数**： Real-Time Customer Data Platform中的计数是固定的，在下一个发布间隔之前不会更改。
-* **配置文件碎片**：请注意，从Customer Journey Analytics导入时，Real-Time Customer Data Platform中的现有配置文件可能不会影响新的配置文件计数。
+* **Customer Journey Analytics 中的估计数量**：了解 Customer Journey Analytics 中的&#x200B;**[!UICONTROL 总人数]**&#x200B;是一个估计值，可能会因流数据和身份标识行为而变化。
+* **Real-Time Customer Data Platform 中的确定数量**：Real-Time Customer Data Platform 中的数量是固定的，直到下一个发布间隔之前都保持不变。
+* **轮廓碎片化**：请注意，从 Customer Journey Analytics 导入轮廓的情况下，Real-Time Customer Data Platform 中现有的轮廓可能不会计入新的轮廓数量。
 
-通过清楚地区分这些方面，您可以更好地了解和管理Customer Journey Analytics和Real-Time Customer Data Platform中的受众数据。—>
+明确区分这几个方面，您就可以更好地了解和管理跨应用 Customer Journey Analytics 和 Real-Time Customer Data Platform 的受众数据。--->
 
 ## 常见问题解答 {#faq}
 

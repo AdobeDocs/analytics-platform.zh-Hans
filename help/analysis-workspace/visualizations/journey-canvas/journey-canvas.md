@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1988'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -51,13 +51,13 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中的历程画布可视化图表。<br/>**Adobe Analytics** 中没有等效的可视化图表。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的历程画布可视化图表。<br/>**Adobe Analytics** 中没有等效的可视化图表。_
 
 >[!ENDSHADEBOX]
 
 历程画布可视化图表可帮助您进行分析，并深入了解您为用户和客户提供的历程。它允许您从头开始定义历程，或从 Journey Optimizer 中查看历程，然后查看人们是如何离开（流失）或继续完成（流过）这个历程的。
 
-您可以[通过使用事件、维度项、区段和日期范围的任意组合来创建用户历程的分析](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)以创建历程节点。 通过连接各个节点来创建历程的流量，并包含多条路径和决策点。拖动画布上的节点来重新排列历程的事件和条件。当您进行更改时，数据会实时更新。
+您可以通过任意组合事件、维度项、区段和日期范围来创建历程节点，从而[构建用户历程分析](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。通过连接各个节点来创建历程的流量，并包含多条路径和决策点。拖动画布上的节点来重新排列历程的事件和条件。当您进行更改时，数据会实时更新。
 
 [节点会](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes)以“最终路径”的形式连接，这意味着只要访问者最终从一个节点移动到另一个节点，无论这两个节点之间发生任何事件，都会被计算在内。用户沿路径移动的时间由容器设置决定。
 
@@ -170,7 +170,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 使用历程画布分析在 Journey Optimizer 中创建的历程可带来多种好处：
 
-* 使用任何Customer Journey Analytics维度、量度、区段或日期范围创建事件。
+* 可使用任何 Customer Journey Analytics 维度、量度、区段或日期范围创建事件。
 
   在 Journey Optimizer 中，技术用户必须先创建一个事件，然后才能将其添加到历程中。
 
@@ -192,21 +192,21 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 ### Journey Optimizer 与历程画布之间的同步
 
-请考虑以下行为来了解Journey Optimizer和历程画布之间的同步：
+考虑以下行为，了解 Journey Optimizer 和 Journey 画布之间的同步：
 
-* **数据同步仅是单向的**
+* **数据同步仅为单向**
 
   在历程画布中创建对 Journey Optimizer 历程的分析后，数据仅在一个方向进行同步，即从 Journey Optimizer 到历程画布进行同步。这意味着在历程画布中对历程所做的更改不会反映在 Journey Optimizer 中。
 
-* **在历程画布中修改历程将停止同步**
+* **在历程画布中更改历程会停止同步**
 
-  仅当历程未在历程画布[&#128279;](#differences-after-modifying-a-journey-in-journey-canvas)中进行重大修改时，才对Journey Optimizer中的历程所做的更改与历程画布同步。 在历程画布中修改历程后，您在 Journey Optimizer 中对历程所做的任何更改都不会反映在历程画布中。要查看历程画布中所反映的更改，您可以删除并[重新创建历程画布中的历程](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。
+  [仅当历程画布中的历程没有发生重大修改时，对 Journey Optimizer 中的历程所做的更改才会同步到历程画布](#differences-after-modifying-a-journey-in-journey-canvas)。在历程画布中修改历程后，您在 Journey Optimizer 中对历程所做的任何更改都不会反映在历程画布中。要查看历程画布中所反映的更改，您可以删除并[重新创建历程画布中的历程](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。
 
-* **使用“与任何人共享”链接时，要求在Customer Journey Analytics中进行更改后将该项目保存在Journey Optimizer中**
+* **使用“与任何人共享”链接需要在 Journey Optimizer 中进行更改后将项目保存在 Customer Journey Analytics 中**
 
-  使用“与任何人共享”链接时，在Journey Optimizer中所做的更改不会反映在历程画布中，直到项目保存在Customer Journey Analytics中。
+  使用“与任何人共享”链接时，Journey Optimizer 中所做的更改不会反映在历程画布中，直到项目被保存在 Customer Journey Analytics 中。
 
-  有关“与任何人共享”链接的更多信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（不再需要共享）](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required)。
+  有关“与任何人共享”链接的更多信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required)。
 
 ### 在历程画布中修改历程后的差异 {#differences-after-modifying}
 
@@ -234,7 +234,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 #### 功能差异
 
-在历程画布中修改Journey Optimizer历程后，[!UICONTROL **箭头设置**]&#x200B;下拉字段中可用的选项会根据您的修改进行更改。 有关更多信息，请参阅[配置设置](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。
+在历程画布中更改 Journey Optimizer 历程后，[!UICONTROL **箭头设置**]&#x200B;下拉字段中可用的选项会根据您的更改内容而发生变化。有关更多信息，请参阅[配置设置](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。
 
 [!UICONTROL **节点类型**]&#x200B;字段仅在 Journey Optimizer 中可用。在历程画布中查看 Journey Optimizer 历程时，无论您是否在历程画布中对历程进行了修改，此功能均不可用。
 
@@ -263,5 +263,5 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!MORELIKETHIS]
 >
-> * [在Adobe Customer Journey Analytics中历程画布可视化图表的指南](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857)
+> * [Adobe Customer Journey Analytics 中的历程画布可视化图表指南](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857)
 

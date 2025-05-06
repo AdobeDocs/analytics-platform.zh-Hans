@@ -5,9 +5,9 @@ exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
 source-git-commit: 9ed7b541ebb1a89b286040c4ea96025b08029499
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '953'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 97%
    * CREATE：执行了“创建”操作。
    * DELETE：执行了“删除”操作。
    * EDIT：执行了“编辑”操作。
-   * 禁运：当您在[报告活动管理器](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests)中限制请求时，该操作将记录在禁运下的审核日志中。
+   * EMBARGO：如果您在[报告活动管理器](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests)中限制请求，该操作将被记录在审核日志的“EMBARGO”中。
    * EXPORT：执行了“导出”操作。
    * ORG_CHANGE：执行了组织变更操作。
    * REFRESH：执行了“刷新”操作。

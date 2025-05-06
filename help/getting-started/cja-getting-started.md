@@ -1,14 +1,14 @@
 ---
-title: Customer Journey Analytics快速入门指南
+title: Customer Journey Analytics 快速入门指南
 description: 了解实施 Customer Journey Analytics 所需的先决条件和工作流。
 exl-id: cab218c0-009c-4669-9dfb-f8872a7f066b
 solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 7b824c914187854e9779ebdc51c5f5d6e77f6b16
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '786'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

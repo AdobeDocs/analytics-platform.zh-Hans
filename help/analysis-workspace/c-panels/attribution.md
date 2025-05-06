@@ -5,9 +5,9 @@ feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '661'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 91%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_&#x200B;中的归因面板。<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** 版本的[归因面板](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/attribution)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_&#x200B;中的归因面板。<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版本的[归因面板](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/attribution)。_
 
 >[!ENDSHADEBOX]
 
@@ -43,7 +43,7 @@ Customer Journey Analytics 通过让您能够执行以下操作来增强归因�
 * 使用无限制的归因模型比较：动态比较任意所需数量的模型。
 * 避免实施更改：使用报告时间处理和上下文感知会话，可在运行时构建并应用客户历程上下文。
 * 构建与您的归因方案最匹配的会话。
-* 按区段划分归因：轻松比较营销渠道在任何重要区段中的表现（例如，新客户与老客户、产品X与产品Y、忠诚度级别或CLV）。
+* 按区段细分归因：轻松比较所有重要区段的营销渠道效果（例如新客户与老客户、产品 X 与产品 Y、忠诚度级别或 CLV）。
 * 检查渠道交叉和多接触点分析：使用维恩图和直方图，以及趋势归因结果。
 * 直观地分析关键营销序列：通过多节点流量和流失可视化图表，以可视方式探索导致转化的路径。
 * 生成计算量度：使用任意数量的归因分配方法。
@@ -82,7 +82,7 @@ Customer Journey Analytics 通过让您能够执行以下操作来增强归因�
 
 * **总量度**：报告时间窗口发生的总转化次数，归因于选定维度。
 * **归因比较条形图**：以可视方式，比较所选维度中各个维度项的归因转化。每种条形颜色代表一个不同的归因模型。
-* **归因比较表**：将相同的数据显示为条形图，以表格的形式表示。选择此表中的不同列或行，会将条形图以及面板中的其他一些可视化图表分成区段。 此表的作用与 Workspace 中任何其他自由格式表的作用相似，允许您添加量度、区段或细分等组件。
+* **归因比较表**：将相同的数据显示为条形图，以表格的形式表示。选择此表中不同的列或行，可将条形图以及面板中的其他一些可视化图表分段。此表的作用与 Workspace 中任何其他自由格式表的作用相似，允许您添加量度、区段或细分等组件。
 * **重叠图**：一种维恩图可视化图表，显示前三个维度项以及它们共同参与某个转化的频率。例如，气泡重叠的大小表示当人员出现在两个维度项中时发生转化的频率。选择相邻自由格式表中的其他行，会更新可视化图表以反映所选内容。
 * **性能详细信息**：散点图可视化图表可直观地比较最多三个归因模型。
 * **趋势化性能**：显示排名最前的维度项的归因转化趋势。选择相邻自由格式表中的其他行，会更新可视化图表以反映所选内容。

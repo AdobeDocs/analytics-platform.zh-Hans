@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: 1d17151b-3a12-468e-9a4f-9e5994599570
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '673'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 73%
 
 >[!AVAILABILITY]
 >
->此页面上的信息将替换为以下更全面的升级信息： <ul><li>**建议的升级步骤**<p>有关详细信息，请参阅[从Adobe Analytics升级到Customer Journey Analytics时推荐的路径](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)。</p></li><li>**Customer Journey Analytics升级指南**<p>提供了新的升级指南，可动态生成针对贵组织和独特环境定制的升级步骤。</p><p>要从Customer Journey Analytics访问指南，请选择&#x200B;**[!UICONTROL Workspace]**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**[!UICONTROL 升级到Customer Journey Analytics]**。 按照屏幕上的说明操作。</p></li></ul>
+>此页面上的信息将被以下更全面的升级信息取代： <ul><li>**建议的升级步骤**<p>有关详细信息，请参阅[从 Adobe Analytics 升级到 Customer Journey Analytics 时的推荐路径](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)。</p></li><li>**Customer Journey Analytics 升级指南**<p>现有新的升级指南可用，用于动态生成适合您的组织和独特情况的升级步骤。</p><p>要从 Customer Journey Analytics 访问升级指南，请选择&#x200B;**[!UICONTROL 工作区]**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**[!UICONTROL 升级到 Customer Journey Analytics]**。按照屏幕上的说明操作。</p></li></ul>
 
 在从 Adobe Analytics 迁移到 Customer Journey Analytics 时，选择以下选项之一来保留历史数据：
 
@@ -44,13 +44,13 @@ ht-degree: 73%
 >
 >选择如何保留历史数据时，请联系您的 Adobe 客户代表，以确定定价。
 
-## 使用Analytics源连接器
+## 使用 Analytics 源连接器
 
-您可以使用[Analytics Source Connector](/help/data-ingestion/analytics.md)保留历史数据。 无论您选择什么升级路径(即使使用Web SDK升级)，都可以使用Analytics Source Connector保留Adobe Analytics环境中的历史数据。
+您可以使用[ Analytics 源连接器](/help/data-ingestion/analytics.md)来保留历史数据。无论您选择哪种升级路径（即使您使用 Web SDK 升级），您都可以使用 Analytics 源连接器保留来自 Adobe Analytics 环境的历史数据。
 
-您可以使用Analytics Source Connector将历史数据引入其自己的专用位置（与当前数据分开），以保留历史数据。
+您可以使用 Analytics 源连接器将历史数据放入与当前数据分开的专用位置，从而保留历史数据。
 
-Analytics Source Connector必须在您需要访问历史数据时正常运行。
+在您需要访问历史数据的时候，Analytics 源连接器都必须一直正常工作。
 
 <!-- Another possibility in the future: Map historical data in a way that allows you to tie it to your new data.  Possible? Explain -->
 

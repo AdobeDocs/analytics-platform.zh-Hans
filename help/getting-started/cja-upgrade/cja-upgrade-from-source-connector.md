@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '538'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 92%
 
 使用 Analytics 源连接器作为 Customer Journey Analytics 的唯一实施时存在着固有的缺点。
 
-如果您的组织已仅使用Analytics Source Connector实施升级到Customer Journey Analytics，则Adobe建议转换为新的Web SDK实施以进行持续数据收集，并仅对历史数据使用Analytics Source Connector。
+如果您的组织已升级到 Customer Journey Analytics 且仅使用 Analytics 源连接器实施，Adobe 建议过渡到新的 Web SDK 实施用于持续收集数据，而将 Analytics 源连接器仅用于历史数据。
 
 ## 了解单独使用 Analytics 源连接器的优缺点
 
@@ -54,7 +54,7 @@ ht-degree: 92%
 
 1. 将 Analytics 源连接器中的每个 Adobe Analytics 维度映射到 Web SDK 架构中的维度。
 
-   1. &#x200B;
+   1. 
       <!-- how do you get here -->
 
    1. 在&#x200B;**[!UICONTROL 映射标准字段]**&#x200B;部分中，选择&#x200B;**[!UICONTROL 自定义]**&#x200B;选项卡。

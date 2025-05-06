@@ -5,9 +5,9 @@ feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 source-git-commit: 191693bc970fcf59ee51706365abde0ee30e3d3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '431'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 99%
    * **[!DNL Store Country]** [维度](/help/components/dimensions/overview.md) ➍
    * **[!DNL People]** [量度](/help/components/apply-create-metrics.md) ➎
    * **[!DNL Avg Order Value]** [计算量度](/help/components/calc-metrics/calc-metr-overview.md) ➏
-   * **[!DNL Mobile App Sessions]** [区段](/help/components/filters/filters-overview.md)➐
+   * **[!DNL Mobile App Sessions]** [区段](/help/components/filters/filters-overview.md) ➐
    * **[!DNL Last Month]** [日期范围](/help/components/date-ranges/overview.md) ➑
    * **[!DNL Example]** [注释](/help/components/annotations/overview.md) ➒
 

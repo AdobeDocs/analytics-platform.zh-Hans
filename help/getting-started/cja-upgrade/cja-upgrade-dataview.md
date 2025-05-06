@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
 source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '401'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 90%
 
 若要创建数据视图：
 
-1. 登录到[Customer Journey Analytics](https://analytics.adobe.com)，然后在顶部菜单中选择&#x200B;**[!UICONTROL 数据视图]**（可以选择从&#x200B;**[!UICONTROL 数据管理]**&#x200B;中进行）。
+1. 登录 [Customer Journey Analytics](https://analytics.adobe.com)，在顶部菜单中选择&#x200B;**[!UICONTROL 数据视图]**，也可以从&#x200B;**[!UICONTROL 数据管理]**&#x200B;中选择。
 
 1. 选择&#x200B;**[!UICONTROL 创建新的数据视图]**。或者，您可以从数据视图列表中选择现有数据视图进行编辑。
 
@@ -51,7 +51,7 @@ ht-degree: 90%
 
    有关向数据视图添加组件时可用选项的详细信息，请参阅[创建或编辑数据视图](/help/data-views/create-dataview.md#components)中的[组件](/help/data-views/create-dataview.md)。
 
-1. 选择&#x200B;[!UICONTROL **设置**]&#x200B;选项卡。在此处，您可以配置要应用于整个数据视图的区段，以及配置会话超时和量度。
+1. 选择&#x200B;[!UICONTROL **设置**]&#x200B;选项卡。从这里，您可以配置区段并将其应用于整个数据视图，还可以配置会话超时和量度。
 
    有关配置数据视图设置时可用选项的详细信息，请参阅[创建或编辑数据视图](/help/data-views/create-dataview.md#settings)中的[设置](/help/data-views/create-dataview.md)。
 

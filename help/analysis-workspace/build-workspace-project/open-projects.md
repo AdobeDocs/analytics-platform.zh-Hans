@@ -5,21 +5,21 @@ feature: Workspace Basics
 role: User
 exl-id: 5ef235e2-50d8-4202-bad7-06090102cf73
 source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '374'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # 打开项目
 
-您可以直接从[项目](/help/analysis-workspace/build-workspace-project/freeform-overview.md)页面打开一个项目。在列表中查找您的项目。使用[搜索](/help/analysis-workspace/build-workspace-project/freeform-overview.md#search)或[区段面板](/help/analysis-workspace/build-workspace-project/freeform-overview.md#segment-panel)缩小列表范围。
+您可以直接从[项目](/help/analysis-workspace/build-workspace-project/freeform-overview.md)页面打开一个项目。在列表中查找您的项目。使用[搜索](/help/analysis-workspace/build-workspace-project/freeform-overview.md#search)或[区段面板](/help/analysis-workspace/build-workspace-project/freeform-overview.md#segment-panel)来缩小列表范围。
 
 * 选择项目的名称，以在 Analysis Workspace 中打开该项目。
 
 您还可以在处理另一个项目时打开一个项目。
 
-* 从&#x200B;**[!UICONTROL 项目]**&#x200B;菜单中选择&#x200B;**[!UICONTROL 打开]**。您会看到一个类似于[项目](/help/analysis-workspace/build-workspace-project/freeform-overview.md)页面的对话框。使用[搜索](/help/analysis-workspace/build-workspace-project/freeform-overview.md#search)或[区段面板](/help/analysis-workspace/build-workspace-project/freeform-overview.md#segment-panel)缩小列表范围。
+* 从&#x200B;**[!UICONTROL 项目]**&#x200B;菜单中选择&#x200B;**[!UICONTROL 打开]**。您会看到一个类似于[项目](/help/analysis-workspace/build-workspace-project/freeform-overview.md)页面的对话框。使用[搜索](/help/analysis-workspace/build-workspace-project/freeform-overview.md#search)或[区段面板](/help/analysis-workspace/build-workspace-project/freeform-overview.md#segment-panel)来缩小列表范围。
 * 选择项目的名称，以在 Analysis Workspace 中打开该项目。
 
 如果您找不到该项目并想要开启一个新项目，请选择&#x200B;**[!UICONTROL 新建]**。
@@ -38,7 +38,7 @@ ht-degree: 94%
 
 
 1. 选择以前的版本，并单击&#x200B;**[!UICONTROL 加载]**。
-然后，以前的版本会加载并出现一条通知。在单击&#x200B;**[!UICONTROL 保存]**&#x200B;之前，以前的版本不会成为项目的当前保存版本。如果离开已加载的版本，当您再次想要打开以前的版本时，您会看到最后保存的版本。
+然后，以前的版本会加载并出现一条通知。在单击**[!UICONTROL 保存]**&#x200B;之前，以前的版本不会成为项目的当前保存版本。如果离开已加载的版本，当您再次想要打开以前的版本时，您会看到最后保存的版本。
 
 
 ## 不兼容的数据视图

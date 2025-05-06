@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '487'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Adobe 建议在从 Adobe Analytics 升级到 Customer Journey Analytics 时创�
 
 >[!NOTE]
 >
->以下信息尚未完成。 不久的将来就会完成。
+>以下信息尚未完成。它将很快完成。
 
 | Adobe Analytics 数据架构 | XDM 模式架构 |
 |---------|----------|
@@ -50,10 +50,10 @@ Adobe 建议在从 Adobe Analytics 升级到 Customer Journey Analytics 时创�
 
 >[!NOTE]
 >
->此信息尚不可用。 它将在不久的将来提供。
+>此信息尚不可用。它将很快提供。
 
 ## 考虑您的组织中使用的其他 Adobe Experience Platform 应用程序
 
 >[!NOTE]
 >
->此信息尚不可用。 它将在不久的将来提供。
+>此信息尚不可用。它将很快提供。

@@ -5,9 +5,9 @@ feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
 source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '779'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** 中的自由格式表可视化。_<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** 版本的[自由格式表](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** 中的自由格式表可视化。_<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版本的[自由格式表](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table)。_
 
 >[!ENDSHADEBOX]
 
@@ -46,7 +46,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 ## 自由格式表生成器
 
-如果您希望先向表中添加多个组件，然后再渲染数据，可以选择&#x200B;**[!UICONTROL 启用表生成器]**。启用该生成器后，您可以拖放维度、细分、量度和区段来构建可解答更复杂问题的表格。 选择&#x200B;**[!UICONTROL 生成]**&#x200B;后数据会更新。
+如果您希望先向表中添加多个组件，然后再渲染数据，可以选择&#x200B;**[!UICONTROL 启用表生成器]**。启用该生成器后，您可以通过拖放维度、细分、量度和区段来生成表格，用于回答更复杂的问题。选择&#x200B;**[!UICONTROL 生成]**&#x200B;后数据会更新。
 
 ![自由格式表生成器显示](assets/table-builder.png)
 
@@ -56,7 +56,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 ### 过滤和排序
 
-* 您可以[对表中的数据进行分段和排序](filter-and-sort.md)。
+* 您可以将表中的数据进行[分段和排序](filter-and-sort.md)。
 
 ### 行
 
@@ -64,7 +64,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 * 您可以通过调整项目的[视图密度](/help/analysis-workspace/build-workspace-project/view-density.md)，将更多行放入单个屏幕中。
 * 在执行分页之前，每个维度行最多可显示 400 行。在第一列标题中选择&#x200B;**[!UICONTROL 行]**&#x200B;旁边的数字，以在页面上显示更多行。使用第一列标题中的 ![ChevronRight](/help/assets/icons/ChevronRight.svg) 导航到其他页面。
 * 您可以按其他组件划分行。要同时划分多行，请选择多行，然后将下一个组件拖至选定行顶部即可。了解有关[划分](/help/components/dimensions/t-breakdown-fa.md)的更多信息。
-* 行可以为[分段](/help/components/filters/filters-overview.md)以显示缩减的项目集。 在[行设置](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)下，提供了其他设置。
+* 可以将各行[分段](/help/components/filters/filters-overview.md)，以缩减项目集。在[行设置](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)下，提供了其他设置。
 
 ### 列
 
@@ -97,13 +97,13 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 | 选项 | 描述 |
 | --- | --- |
-| **[!UICONTROL 插入复制的可视化图表]**&#x200B;n | 将复制的可视化图表粘贴（插入）到项目中的其他位置或完全不同的项目中。 |
+| **[!UICONTROL 插入复制的可视化图表]**n | 将复制的可视化图表粘贴（插入）到项目中的其他位置或完全不同的项目中。 |
 | **[!UICONTROL 将数据复制到剪贴板]** | 将可视化图表中的数据复制到剪贴板上。 |
 | **[!UICONTROL 将选择复制到剪贴板]** | 将可视化图表中的选择复制到剪贴板上。 |
 | **[!UICONTROL 将项目下载为 CSV（*维度名称*）]** | 将可视化图表的维度项（最多 50,000 个）立即下载到本地设备。所选维度最多可有 50,000 个维度项。 |
 | **[!UICONTROL 复制可视化图表]** | 复制可视化图表，您可以将其插入到项目中的其他位置或完全不同的项目中。 |
 | **[!UICONTROL 下载数据 CSV]** | 将可视化图表显示的数据立即下载到本地设备。 |
-| **[!UICONTROL 导出完整表……]** | 将整个表导出到指定的云位置。请参阅[将 Customer Journey Analytics 报告导出至云](../../export/export-cloud.md) |
+| **[!UICONTROL 导出整个表...]** | 将整个表导出到指定的云位置。请参阅[将 Customer Journey Analytics 报告导出至云](../../export/export-cloud.md) |
 | **[!UICONTROL 复制可视化]** | 生成一个与可视化图表完全相同的副本。 |
 | **[!UICONTROL 编辑描述]** | 添加（或编辑）可视化图表的文本描述。请参阅[文本](../text.md)。 |
 | **[!UICONTROL 获取可视化图表链接]** | 将链接直接复制并共享到可视化图表。共享链接对话框会显示该链接。选择“复制”将链接复制到剪贴板。 |

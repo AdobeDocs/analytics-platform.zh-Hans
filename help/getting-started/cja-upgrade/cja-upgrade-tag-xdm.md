@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1631'
 ht-degree: 100%
 
@@ -213,7 +213,7 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。他们寻找
 >
 >您可以在标记中以各种方式使用规则来操作变量（使用数据元素）。
 >
->有关详细信息，请参阅[规则](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=zh-Hans)。
+>有关详细信息，请参阅[规则](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html)。
 
 1. 使用您的 Adobe ID 凭据登录 experience.adobe.com。
 
@@ -265,7 +265,7 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。他们寻找
 
 在定义了数据元素和规则之后，您必须构建和发布该标记。创建库生成时，必须将其分配给环境。然后，将会编译该内部版本的扩展、规则和数据元素，并将这些内容放入分配的环境。每个环境都提供了一个唯一的嵌入代码，从而允许您将其分配的内部版本集成到网站中。
 
-Adobe Experience Platform 标记功能支持简单到复杂的发布工作流，这些工作流应适合您部署 Adobe Experience Platform Web SDK。有关详细信息，请参阅[发布概述](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=zh-Hans)。
+Adobe Experience Platform 标记功能支持简单到复杂的发布工作流，这些工作流应适合您部署 Adobe Experience Platform Web SDK。有关详细信息，请参阅[发布概述](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html)。
 
 要生成并发布您的标记：
 

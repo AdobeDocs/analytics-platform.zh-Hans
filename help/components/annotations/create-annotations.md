@@ -5,15 +5,15 @@ feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
 source-git-commit: 3cbf30778ff0fbb4198db16cbbabf3d62a87d384
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '873'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 # 创建注释
 
-默认情况下，只有管理员可以创建注释。用户有权查看注释，类似于用户查看其他组件（如区段、计算量度等）的方式。
+默认情况下，只有管理员可以创建注释。用户有权查看注释，这与用户查看其他组件（例如区段、计算量度等）的方式类似。
 
 但是，管理员可以通过 Admin Console 向用户授予&#x200B;**[!UICONTROL CJA Workspace 访问权限的编辑权限]**&#x200B;中&#x200B;**[!UICONTROL 报告工具]**&#x200B;的&#x200B;**[!UICONTROL 注释创建]**&#x200B;权限。请参阅[用户级别的访问控制](/help/technotes/access-control.md#user-level-access)，了解更多信息。
 
@@ -21,11 +21,11 @@ ht-degree: 78%
 
 ![Create an annotation](assets/create-annotation.png)
 
-* **A**。 在主界面中，选择&#x200B;**[!UICONTROL 组件]**&#x200B;并选择&#x200B;**[!UICONTROL 注释]**。 从[[!UICONTROL 注释]管理器](/help/components/annotations/manage-annotations.md)中选择 ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL 添加]**]。
-* **B**。 在Workspace项目中，从可视化图表的上下文菜单中，选择&#x200B;**[!UICONTROL 从所选内容创建注释]**。
-* **C**。 在Workspace项目中，从折线图的上下文菜单中，选择&#x200B;**[!UICONTROL 注释选定内容]**。
-* **D**。 在Workspace项目中，从菜单中选择&#x200B;**[!UICONTROL 组件]**，然后选择&#x200B;**[!UICONTROL 创建注释]**。
-* **E**。  在Workspace项目中，使用快捷键&#x200B;**[!UICONTROL ctrl+shift+o]** (Windows)或&#x200B;**[!UICONTROL shift+command+o]** (macOS)
+* **A**。在主界面中选择&#x200B;**[!UICONTROL 组件]**，然后选择&#x200B;**[!UICONTROL 注释]**。从[[!UICONTROL 注释]管理器](/help/components/annotations/manage-annotations.md)中选择 ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL 添加]**]。
+* **B**。在 Workspace 项目中，从可视化图表中的上下文菜单中选择&#x200B;**[!UICONTROL 从选择创建注释]**。
+* **C**。在 Workspace 项目中，从线形图中的上下文菜单中选择&#x200B;**[!UICONTROL 注释选择]**。
+* **D**。在 Workspace 项目中，从菜单中选择&#x200B;**[!UICONTROL 组件]**，然后选择&#x200B;**[!UICONTROL 创建注释]**。
+* **E**。在 Workspace 项目中，使用快捷键 **[!UICONTROL ctrl+shift+d]** (Windows) 或 **[!UICONTROL shift+command+o]** (macOS)
 
 若要定义注释，您可以使用[[!UICONTROL 注释生成器]](#annotation-builder)：
 
@@ -81,7 +81,7 @@ ht-degree: 78%
    | **[!UICONTROL 标记]** | 通过创建或应用一个或多个标记来组织注释。开始键入，以查找您可以选择的现有标记。或者按&#x200B;**[!UICONTROL 输入]**&#x200B;键添加新的标记。选择 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 以移除标记。 |
    | **[!UICONTROL 应用日期]** ![Required](/help/assets/icons/Required.svg) | 选择为了让注释可见所需的日期或日期范围。当您使用快捷方式创建注释时，注释默认为当天的日期范围。当您使用可视化中的选择创建注释时，注释默认为基于可视化所属面板的日期范围的日期范围。 |
    | **[!UICONTROL 颜色]** | 将颜色应用于注释。注释以选定的颜色出现在项目中。颜色可用于对注释进行分类，例如公共假日、外部活动、跟踪问题等。 |
-   | **[!UICONTROL 范围]** | 从组件面板中拖放触发注释的量度。例如人物、会话和事件。然后，从组件面板中拖放充当区段的任何维度或区段以确定是否显示注释。 如果不指定范围，则注释会应用于您的所有数据。<br/>您有两个选项：<ul><li>**[!UICONTROL 存在以下任一量度]**：拖放最多 10 个会触发注释显示的量度。<br/>例如，收入量度已停止收集特定日期范围内的数据。将收入量度拖到此框中。</li><li>**[!UICONTROL 包含所有这些区段]**：拖放最多10个维度或区段，无论注释是否显示，这些维度或区段都会显示出来。</li></ul><p><p>**注意：**&#x200B;任何应用于组件、随后用作计算指标或区段定义的一部分的注释，均不自动继承该注释。 还必须将所需的计算量度添加到范围部分才能显示注释。但是，应为要用相同信息进行注释的任何区段创建新的注释。 例如，您在某一天的[!UICONTROL 订单]中应用注释。然后，在相同日期范围的某个计算量度中使用[!UICONTROL 订单]。新的计算量度不会自动显示订单的注释。还要将计算量度添加到范围部分才能显示注释。 |
+   | **[!UICONTROL 范围]** | 从组件面板中拖放触发注释的量度。例如人物、会话和事件。然后从组件面板中拖放任何用作区段的维度或区段，以确定是否显示注释。如果不指定范围，则注释会应用于您的所有数据。<br/>您有两个选项：<ul><li>**[!UICONTROL 存在以下任一量度]**：拖放最多 10 个会触发注释显示的量度。<br/>例如，收入量度已停止收集特定日期范围内的数据。将收入量度拖到此框中。</li><li>**[!UICONTROL 使用所有这些区段]**：拖放最多 10 个会在注释显示时进行分段的维度或区段。</li></ul><p><p>**请注意：**&#x200B;任何应用于组件，随后用作计算量度或区段定义的一部分的注释，均不会自动继承注释。还必须将所需的计算量度添加到范围部分才能显示注释。但是，应为要用相同信息进行注释的任何区段创建新的注释。例如，您在某一天的[!UICONTROL 订单]中应用注释。然后，在相同日期范围的某个计算量度中使用[!UICONTROL 订单]。新的计算量度不会自动显示订单的注释。还要将计算量度添加到范围部分才能显示注释。 |
    | **[!UICONTROL 应用于所有数据视图]** | 默认情况下，注释应用于原始数据视图。通过选中此框，您可以在公司内的所有数据视图中应用注释。 |
 
    {style="table-layout:auto"}

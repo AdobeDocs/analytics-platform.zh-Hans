@@ -5,9 +5,9 @@ feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1174'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 96%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ 中的媒体并行查看者面板。<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** 版本的[媒体并行查看者](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ 中的媒体并行查看者面板。<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版本的[媒体并行查看者](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers)。_
 
 >[!ENDSHADEBOX]
 
@@ -55,7 +55,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [媒体并行查看者面板](https://video.tv.adobe.com/v/35185/?quality=12&learn=on&captions=chi_hans){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [媒体并行查看者面板](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 {{videoaa}}
 
@@ -82,7 +82,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 | **[!UICONTROL 面板日期范围]** | 面板日期范围的默认值为“今天”。您可以对其进行编辑以一次查看一天或几个月的数据。<br> <br>这个可视化图表限制为 1440 行数据（例如，以分钟作为粒度级别来表示 24 小时）。如果日期范围和粒度的组合产生的行数超过了 1440 行，则将自动更新粒度以适应完整的日期范围。 |
 | **[!UICONTROL 粒度]** | 粒度的默认值为“分钟”。<br>这个可视化图表限制为 1440 行数据（例如，以分钟作为粒度级别来表示 24 小时）。如果日期范围和粒度的组合产生的行数超过了 1440 行，则将自动更新粒度以适应完整的日期范围。 |
 | **[!UICONTROL 面板概要数字]** | 要查看并发查看者的日期或时间详细信息，可以使用摘要数字。“最大值”显示并发峰值的详细信息。**[!UICONTROL 最小值]**&#x200B;显示低谷期的详细信息。面板默认值仅显示“最大值”，不过您可以将其更改为显示“最小值”或同时显示“最大值”和“最小值”。<br><br>如果您使用细分，则会为每一项显示摘要数字。 |
-| **[!UICONTROL 系列细分]** | （可选）您可以按区段、维度、维度项或日期范围细分可视化图表。<br>一次最多可以查看 10 行。细分仅限一个级别。<br>在拖动一个维度时，将根据所选面板日期范围，自动选择顶部维度项。<br>要比较日期范围，请将2个或更多日期范围拖动到系列细分区段中。 |
+| **[!UICONTROL 系列细分]** | （可选）您可以按区段、维度、维度项或日期范围细分可视化图表。<br>一次最多可以查看 10 行。细分仅限一个级别。<br>在拖动一个维度时，将根据所选面板日期范围，自动选择顶部维度项。<br>要比较日期范围，请将 2 个或更多日期范围拖到系列细分区段中。 |
 
 下面是一个按&#x200B;**[!UICONTROL 分钟]**&#x200B;粒度配置面板的示例，**[!UICONTROL 最大值仅为]**&#x200B;摘要数字。并按&#x200B;**[!UICONTROL 其他]**、**[!UICONTROL 表]**、**[!UICONTROL 手机]**、**[!UICONTROL 游戏机]**、**[!UICONTROL 媒体播放器]**、**[!UICONTROL 机顶盒]**、**[!UICONTROL 电视]**&#x200B;进行细分。
 
@@ -116,7 +116,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 |---|---|
 | 自由格式表在什么位置？如何查看数据源？ | 自由格式表在此视图中不可用。您可以从线形图上下文菜单下载数据源，然后选择&#x200B;**[!UICONTROL 将数据下载为 CSV]**。 |
 | 为什么我的粒度发生了变化？ | 这个可视化图表限制为 1440 行数据（例如，以分钟作为粒度级别来表示 24 小时）。如果日期范围和粒度的组合产生 1440 行以上，则将自动更新粒度以容纳这个完整的日期范围。<br><br>如果从较大的日期范围更改到较小的日期范围，粒度在日期范围更改后自动更新为允许的最低明细级别。要查看较高的粒度，请编辑面板并重建。 |
-| 如何比较视频名称、区段、内容类型和其他内容？ | 要在单个可视化图表中比较这些项目，请将区段、维度或特定维度项目拖动到系列细分区段中。<br><br>视图限制为 10 个细分。要查看 10 个以上的细分，您必须使用多个面板。 |
+| 如何比较视频名称、区段、内容类型等？ | 要在单个可视化图表中比较这些项目，请将区段、维度或特定维度项拖至系列细分区段中。<br><br>视图限制为 10 个细分。要查看 10 个以上的细分，您必须使用多个面板。 |
 | 如何比较日期范围？ | 要在单个可视化图表中比较日期范围，请通过拖动 2 个或更多日期范围来使用系列细分。这些日期范围覆盖面板日期范围。 |
 | 如何更改可视化图表类型？ | 此面板仅允许时间系列的线形图可视化图表。 |
 | 能否运行异常检测？ | 否。异常检测对此面板不可用。 |

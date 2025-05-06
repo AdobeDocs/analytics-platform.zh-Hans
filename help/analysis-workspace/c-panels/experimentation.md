@@ -5,9 +5,9 @@ feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
 source-git-commit: 7e32ae7aa757a8ca47732416f0f883033611ea94
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2179'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 96%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** 中的试验面板。_<br/>_有关如何在_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** 中分析 Adobe Target 活动和体验的信息，请参阅 [Analytics for Target 面板](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/a4t-panel)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** 中的试验面板。_<br/>_有关如何在_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 中分析 Adobe Target 活动和体验的信息，请参阅 [Analytics for Target 面板](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/a4t-panel)。_
 
 >[!ENDSHADEBOX]
 
@@ -105,7 +105,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
    | **[!UICONTROL 试验]** | 向最终用户展示的某项体验的一组变体，以确定哪一种体验最适合永久保存。试验由两个或多个变量组成，其中一个变量会被视为控制变量。该设置预先填充了数据视图中已标记为&#x200B;**[!UICONTROL 试验]**&#x200B;标签的维度，以及过去 3 个月的实验数据。 |
    | **[!UICONTROL 控制变量]** | 最终用户体验中的两种或多种变化中的一种，并会为了确定更好的替代方案而对其进行比较。必须选择一个变量作为控制变量，并且只能将一个变量视为控制变量。该设置预先填充了数据视图中已标记为&#x200B;**[!UICONTROL 变量]**&#x200B;标签的维度。此设置将会调出与此试验相关的变量数据。 |
    | **[!UICONTROL 成功量度]** | 用户正在与变量进行比较的一个或多个量度。可产生最理想的转化量度结果（最高或最低）的变量会成为某项试验中具有&#x200B;*最佳性能的变量*。最多可添加 5 个量度。 |
-   | **[!UICONTROL 标准化量度]** ➋ | 运行测试的基础(**[!UICONTROL 全局帐户]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}、**[!UICONTROL 帐户]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}、**[!UICONTROL 机会]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}、**[!UICONTROL 购买群]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}、**[!UICONTROL 人员]**、**[!UICONTROL 会话]**&#x200B;或&#x200B;**[!UICONTROL 事件]**)。 例如，测试可能会比较几种变体的转化率，其中&#x200B;**[!UICONTROL 转化率]**&#x200B;计算为“页面查看”。 |
+   | **[!UICONTROL 标准化量度]** ➋ | 测试运行的基础（**[!UICONTROL 全球帐户]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 帐户]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 机会]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 购买群组]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 人员]**、**[!UICONTROL 会话]**&#x200B;或&#x200B;**[!UICONTROL 事件]**）。例如，测试可以比较几种变体的转化率，**[!UICONTROL 转化率]**&#x200B;的计算方法是页面浏览量。 |
    | **[!UICONTROL 包括置信上限/下限]** | 启用此选项可以显示置信度的上限和下限。 |
 
 

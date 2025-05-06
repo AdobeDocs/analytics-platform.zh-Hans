@@ -5,9 +5,9 @@ feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '705'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中的同类群组表。_<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** 版本的[同类群组表](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的同类群组表。_<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版本的[同类群组表](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis)。_
 
 >[!ENDSHADEBOX]
 
@@ -55,7 +55,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的同类群组分析](https://video.tv.adobe.com/v/3430077/?quality=12&learn=on&captions=chi_hans){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的同类群组分析](https://video.tv.adobe.com/v/23990/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 {{videoaa}}
 
@@ -64,7 +64,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!IMPORTANT]
 >
->[!UICONTROL 同类群组分析]不支持不可分段的量度（包括计算量度）、非整数量度（如收入）以及“发生次数”量度。 只有可在区段中使用的量度才能在[!UICONTROL 同类群组分析]中使用，并且这些量度一次只能递增1。
+>[!UICONTROL 同类群组分析]不支持不可分段的量度（包括计算量度）、非整数量度（例如收入）或发生次数。只有可以在区段中使用的量度才能在[!UICONTROL 同类群组分析]中使用，并且它们一次只能递增 1。
 
 Customer Journey Analytics 中的同类群组表支持基于双倍量度（或任何基于数值的量度）。例如，Purchase.Value（双倍）可用作包含/返回量度。此外，通过 Analytics Source Connector 传递到 Adobe Experience Platform 的所有量度也都是双倍的。
 

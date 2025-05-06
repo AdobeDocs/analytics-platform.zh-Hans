@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
 source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1648'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -42,21 +42,21 @@ Customer Journey Analytics 提供了一个环境，可供在总体客户层面�
 
 Customer Journey Analytics 使用一种强大的专有架构，该架构分散在数百甚至数千台服务器上进行分析，这样只需几秒时间即可在 Analysis Workspace 中显示数据。这种处理架构的某些显著特点包括：
 
-* **为与个别客户相关的查询优化**：确切地说，Customer Journey Analytics 将数据存储在一个广泛使用缓存的分布式报告引擎中。为针对个人级别事件数据的响应式查询微调了该引擎，因此为与客户相关的查询进行了完善的优化。报告引擎将数据存储在面向列的位图索引中，这些索引有助于快速即时计算聚合度量。它有一个庞大的分段引擎，允许进行强大的分段/受众分析。 并且它深刻理解数据点之间的顺序，这有助于分析这些数据点上的行为（事情发生的顺序）以及使用各种复杂的模型分配属性。
+* **为与个别客户相关的查询优化**：确切地说，Customer Journey Analytics 将数据存储在一个广泛使用缓存的分布式报告引擎中。为针对个人级别事件数据的响应式查询微调了该引擎，因此为与客户相关的查询进行了完善的优化。报告引擎将数据存储在面向列的位图索引中，这些索引有助于快速即时计算聚合度量。它具有一个广泛的分段引擎，可进行强大的分段/受众分析。并且它深刻理解数据点之间的顺序，这有助于分析这些数据点上的行为（事情发生的顺序）以及使用各种复杂的模型分配属性。
 
-* **复杂路径和区段的快速应用**：报表引擎处理部分排序的分层数据集（例如，人员 — >会话 — >事件）。 顶级对象（个别轮廓）的所有数据都驻留在单个处理节点上，从而获得准确的结果。此分区允许快速应用复杂的路径和区段。 大规模执行复杂操作（如会话化、归因、数据属性的有状态持久化和复杂的数据操纵选项），并可快速生成报告。在 BI 环境中，这些类型的操作一般需要为每个用例都创建新的 OLAP 多维数据集。通过 Customer Journey Analytics 的报告引擎，可在每次查询时不受限地访问整个数据集，无需提前建立任何多维数据集，即可产生完全相关的数据。
+* **快速应用复杂的路径和区段**：报告引擎对部分排序的分层数据集进行处理（例如，人员 -> 会话 -> 事件）。顶级对象（个别轮廓）的所有数据都驻留在单个处理节点上，从而获得准确的结果。这种划分有助于快速应用复杂的路径和区段。大规模执行复杂操作（如会话化、归因、数据属性的有状态持久化和复杂的数据操纵选项），并可快速生成报告。在 BI 环境中，这些类型的操作一般需要为每个用例都创建新的 OLAP 多维数据集。通过 Customer Journey Analytics 的报告引擎，可在每次查询时不受限地访问整个数据集，无需提前建立任何多维数据集，即可产生完全相关的数据。
 
 * **高效查询复杂数据流**：报告引擎与传统 SQL 和 NoSQL 数据库的最大区别之一是，它能够在基本层面上根据面向序列的关系确定谓词。这些基本的查询操作可审视记录流，而后者由许多交错（甚至嵌套）的序列组成。它们通过高效地处理单个连续序列操作，针对所有这些交织在一起的数据流执行查询。
 
 * **旨在快速响应大型查询**：报告引擎不像传统的大数据系统那样通用。但是，它经过专门设计，一般只需不足一秒时间，即可应答针对数百万甚至数十亿条记录（事件数据/体验事件）的查询。与其他大数据系统不同，它实现这一点并非通过对数据采样或预先计算它认为您可能会提出的所有问题的答案。而是能够以快到足以支持交互式查询用例的速度计算出答案。Customer Journey Analytics 报告引擎的这种独特设计更容易获得数据并高速地进行持续的分析和探索，从而使您可逐步深入了解和理解客户历程。
 
-* **用作Headless BI解决方案**：在一个位置定义您的维度、量度和区段，然后任何Customer Journey Analytics客户端(包括我们的公共Customer Journey Analytics API)都可以访问这些组件。 这样使得最终用户无需执行复杂的查询，并确保无论使用哪种报告或可视化客户端，结果均相同。
+* **作为无界面 BI 解决方案**：可在一处定义维度、度量和区段，然后任何 Customer Journey Analytics 客户端（包括我们的公共 Customer Journey Analytics API）均可访问这些组件。这样使得最终用户无需执行复杂的查询，并确保无论使用哪种报告或可视化客户端，结果均相同。
 
 ## Customer Journey Analytics 独特的可视化功能
 
 报告引擎是 Customer Journey Analytics 的基础，它使您可逐步与该报告引擎中的所有客户历程数据进行交互并对其采取行动。Customer Journey Analytics 附带了一套广泛的组件，使您能够通过拖放直观地完成这项工作。通过 BI 可视化工具，可在 SQL 准备的数据（由 IT 定义）的范围内进行探索。通过 Customer Journey Analytics，无需要求 IT 部门构建另一个 SQL 视图，即可随心所欲地分解、切片和切块。
 
-“渐进式”是此处的一个关键概念：与BI工具中的大多数可视化相反，Customer Journey Analytics中的可视化拖放UI允许您根据特定需求不断细分数据：您可以使用相关量度、维度、区段、计算、时间线、注释和其他分析值，以交互方式构建可视化查询。
+这里的“逐步”是一个关键概念：相对于 BI 工具中的大多数可视化图表，通过 Customer Journey Analytics 中直观的拖放式 UI，可根据特定需求不断细分数据：可以使用相关的度量、维度、区段、计算、时间线、注释和其他分析值，以交互方式生成可视化查询。
 
 这些可视化组件中内置了智能功能，例如：
 
@@ -76,7 +76,7 @@ Customer Journey Analytics 使用一种强大的专有架构，该架构分散�
 
    * 为组织中的其他个人[策划](/help/analysis-workspace/curate-share/curate.md)以供持续探索、
    * 使用 [Report Builder](/help/report-builder/report-buider-overview.md)（专用插件）导出到 Excel、
-   * 以各种格式（包括 [PDF](/help/analysis-workspace/export/download-send.md)、[CSV](/help/analysis-workspace/export/download-send.md)）并通过[专用的移动应用程序](/help/mobile-app/home.md) [共享](/help/analysis-workspace/curate-share/share-projects.md)给对最终报告和/或可视化感兴趣的人士。
+   * 以各种格式（包括 [PDF](/help/analysis-workspace/export/download-send.md)、[CSV](/help/analysis-workspace/export/download-send.md)）并通过[专用的移动应用程序](/help/mobile-app/home.md)[共享](/help/analysis-workspace/curate-share/share-projects.md)给对最终报告和/或可视化感兴趣的人士。
 
 由于有多种多样的可视化可用，因此难以比较 Customer Journey Analytics 的可视化功能与 BI 工具提供的任何功能。某些 BI 工具拥有更高级的可视化，但 Customer Journey Analytics 专门关注交互式和可互操作的客户历程可视化，这样只需几秒时间即可分解数据，同时无需为每个额外的查询“付款”。
 

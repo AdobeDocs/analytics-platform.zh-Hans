@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1077'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 96%
 
 * Customer Journey Analytics 的报告时性质
 
-Adobe 发布了[&#128279;](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html?lang=zh-Hans)营销渠道实施的最新先进实践。这些最新的推荐可帮助您用 Attribution IQ 充分利用 Adobe Analytics 中已有的功能。他们还将帮助您在过渡到 Customer Journey Analytics 时取得成功。
+Adobe 发布了](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html?lang=zh-Hans)营销渠道实施的[最新先进实践。这些最新的推荐可帮助您用 Attribution IQ 充分利用 Adobe Analytics 中已有的功能。他们还将帮助您在过渡到 Customer Journey Analytics 时取得成功。
 
 随着作为 Customer Journey Analytics 数据视图的一部分引入[派生字段](../data-views/derived-fields/derived-fields.md)，还使用[营销渠道功能模板](../data-views/derived-fields/derived-fields.md#function-templates)以非破坏并可追溯的方式支持营销渠道。
 
@@ -69,7 +69,7 @@ Adobe Analytics 中的报告依赖于大量数据预处理来生成结果，例�
 
 ### 识别重要区段和计算量度 {#segments-calcmetrics}
 
-Adobe Analytics区段和计算量度与Customer Journey Analytics不兼容。 在许多情况下，可以使用新的架构和可用数据在 Customer Journey Analytics 中重建这些组件。
+Adobe Analytics 区段和计算量度与 Customer Journey Analytics 不兼容。在许多情况下，可以使用新的架构和可用数据在 Customer Journey Analytics 中重建这些组件。
 
 为了使用户在系统之间过渡时尽可能顺利地进行过渡，请提前计划
 
@@ -77,13 +77,13 @@ Adobe Analytics区段和计算量度与Customer Journey Analytics不兼容。 �
 
 2. 记录它们的定义，以及
 
-3. 确定数据中需要哪些字段以在Customer Journey Analytics中将它们复制为[区段](/help/components/filters/filters-overview.md)和[计算指标](/help/components/calc-metrics/calc-metr-overview.md)。
+3. 确定数据中需要哪些字段，才能在 Customer Journey Analytics 中将它们复制为[区段](/help/components/filters/filters-overview.md)和[计算量度](/help/components/calc-metrics/calc-metr-overview.md)。
 
 这里有几个视频可以为您指南：
 
 * [将 Adobe Analytics 区段迁移到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=zh-Hans)
 
-* [将计算量度从 Adobe Analytics 移动到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=zh-Hans)
+* [将计算量度从 Adobe Analytics 移动到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html)
 
 ### 其他注意事项
 
