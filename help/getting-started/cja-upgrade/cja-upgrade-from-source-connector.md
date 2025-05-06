@@ -54,7 +54,7 @@ ht-degree: 100%
 
 1. 将 Analytics 源连接器中的每个 Adobe Analytics 维度映射到 Web SDK 架构中的维度。
 
-   1. 
+   1. &#x200B;
       <!-- how do you get here -->
 
    1. 在&#x200B;**[!UICONTROL 映射标准字段]**&#x200B;部分中，选择&#x200B;**[!UICONTROL 自定义]**&#x200B;选项卡。
