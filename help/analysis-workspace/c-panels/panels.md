@@ -77,7 +77,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 ## 数据视图
 
-每个面板都与一个[数据视图](/help/data-views/data-views.md)关联，由面板右上角的下拉菜单中的数据视图&#x200B;*]**&#x200B;的![数据](/help/assets/icons/Data.svg) **[!UICONTROL *名称标识。
+每个面板都与一个[数据视图](/help/data-views/data-views.md)关联，由面板右上角的下拉菜单中的数据视图&#x200B;***&#x200B;的![数据](/help/assets/icons/Data.svg) &#x200B;***名称标识。
 
 创建空白 Workspace 项目时，初始面板的默认数据视图是您上次在 Customer Journey Analytics 中使用数据视图。
 
@@ -120,7 +120,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
      您可以选择括号内的文本（例如&#x200B;**[!UICONTROL 固定开始 - 每日滚动]**）来扩展面板并指定&#x200B;**[!UICONTROL 开始]**&#x200B;和&#x200B;**[!UICONTROL 结束]**&#x200B;的详细信息。
 
       1. 选择&#x200B;**[!UICONTROL 开始]**、 **[!UICONTROL 结束]**&#x200B;或&#x200B;**[!UICONTROL 固定日期]**。
-      1. 当选择了&#x200B;**[!UICONTROL 开始]**&#x200B;或&#x200B;**[!UICONTROL 结束]**&#x200B;时，您可以生成一个完整的表达式。例如：**** **[!UICONTROL 当前年份的结束]****[!UICONTROL 加上]**`1`**[!UICONTROL 天]**。为表达式的每个部分选择适当的值。
+      1. 当选择了&#x200B;**[!UICONTROL 开始]**&#x200B;或&#x200B;**[!UICONTROL 结束]**&#x200B;时，您可以生成一个完整的表达式。例如：**&#x200B;** **[!UICONTROL 当前年份的结束]**&#x200B;**[!UICONTROL 加上]**`1`**[!UICONTROL 天]**。为表达式的每个部分选择适当的值。
          * 选择当前时间的值。例如&#x200B;**[!UICONTROL 当前年份]**。
          * 选择一个值进行额外的计算。例如，**[!UICONTROL 加上]**。
          * 当您指定了额外的计算时，请指定一个值。例如：`1`。
@@ -128,8 +128,8 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
      选择&#x200B;**[!UICONTROL 隐藏详细信息]**，以隐藏计算滚动日期的详细信息。
 
-1. 选择&#x200B;**[!UICONTROL 应用]**以将日期范围应用到您调用日程表的面板。
-选择**[!UICONTROL 应用于所有面板]**&#x200B;以将日期范围应用于 Workspace 项目中的所有面板。
+1. 选择&#x200B;**[!UICONTROL 应用]**&#x200B;以将日期范围应用到您调用日程表的面板。
+选择&#x200B;**[!UICONTROL 应用于所有面板]**&#x200B;以将日期范围应用于 Workspace 项目中的所有面板。
 
 
 ## 拖放区域 {#dropzone}
