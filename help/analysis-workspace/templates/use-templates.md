@@ -4,9 +4,9 @@ title: 使用模板
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: e37ac6f67da441e2e9491307dc44e31506383a0d
+source-git-commit: d618300480cdc3b4454e5c91e5e5adacc01d0c77
 workflow-type: tm+mt
-source-wordcount: '19815'
+source-wordcount: '19827'
 ht-degree: 96%
 
 ---
@@ -128,27 +128,27 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速了解最�
 
    以下部分对应可用的类别并提供有关每个模板的信息。
 
-   * &lbrack;[](#most-popular)
+   * **[[!UICONTROL 最受欢迎]](#most-popular)**
 
-   * &lbrack;[](#engagement)
+   * **[[!UICONTROL Web]** > **[!UICONTROL 参与]](#engagement)**
 
-   * &lbrack;[](#web-conversion)
+   * **[[!UICONTROL Web]** > **[!UICONTROL 转化]](#web-conversion)**
 
-   * &lbrack;[](#web-audience)
+   * **[[!UICONTROL Web]** > **[!UICONTROL 受众]](#web-audience)**
 
-   * &lbrack;[](#web-acquisition)
+   * **[[!UICONTROL Web]** > **[!UICONTROL 客户获取]](#web-acquisition)**
 
-   * &lbrack;[](#mobile-mobile-app)
+   * **[[!UICONTROL 移动设备]** > **[!UICONTROL 移动应用程序]](#mobile-mobile-app)**
 
-   * &lbrack;[](#mobile-mobile-device-information)
+   * **[[!UICONTROL 移动设备]** > **[!UICONTROL 移动设备信息]](#mobile-mobile-device-information)**
 
-   * &lbrack;[](#time-parting)
+   * **[[!UICONTROL Time Parting]](#time-parting)**
 
-   * &lbrack;[](#cross-channel)
+   * **[[!UICONTROL 跨渠道]](#cross-channel)**
 
-   * &lbrack;[](#other-channels)
+   * **[[!UICONTROL 其他频道]](#other-channels)**
 
-   * &lbrack;[](#ajo)
+   * **[[!UICONTROL AJO]](#ajo)**
 
 ### 最受欢迎 {#most-popular}
 
