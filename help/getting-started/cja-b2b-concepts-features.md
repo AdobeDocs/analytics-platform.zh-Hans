@@ -6,10 +6,10 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 326a82e93c0c8d57db224023ed5f3a7ab94a8997
+source-git-commit: be617c59cd2fced0031fda1130b86e638bee8f68
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 0%
+source-wordcount: '1246'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## 容器
 
-在Customer Journey Analytics中，容器是作为连接和数据视图配置的一部分生成的。 容器仅存储标识符，以促进快速高性能地执行分段、划分等功能。
+在Customer Journey Analytics中，容器是作为连接和数据视图配置的一部分生成的。 容器存储标识符组，以便于快速高性能地执行分段、划分等功能。
 
 ### 标准容器
 
@@ -67,6 +67,24 @@ Customer Journey Analytics基于三个容器的概念而构建：人员、会话
 
 ## 数据集
 
+Customer Journey Analytics B2B可将以下数据类型与数据集区分开来。
+
+| 数据类型 | 时间序列 | 容器记录 | 字段记录 |
+|---|---|---|---|
+| **数据集** | **事件数据集**<br/>&#x200B;例如：<ul><li>数字分析</li><li>CRM事件</li><li>面对面活动</li><li>呼叫中心数据</li></ul> | **配置文件数据集**<br/>&#x200B;例如：<ul><li>CRM记录</li><li>AJO B2B记录</li><li>CDP记录</li><ul> | **分类**<br/>&#x200B;例如：<ul><li>营销活动记录</li><li>营销列表记录</li><li>内容元数据</li><li>产品记录</li></ul> |
+| 要求 | **时间戳**<br>&#x200B;每个记录需要：<ul><li>帐户 ID</li><li>全球帐户 ID</li><li>人员 ID</li></ul> | **帐户ID**<br>&#x200B;记录需要容器ID，例如：<ul><li>帐户</li><li>人员</li><li>机会</li><li>购买群组</li></ul> | **匹配键**<br>&#x200B;记录需要包含在容器或事件数据集中的ID，例如：<ul><li>营销活动 ID</li><li>内容 ID</li><li>产品 ID</li></ul> |
+
+{style="table-layout:fixed"}
+
+Customer Journey Analytics B2B edition中基于帐户的连接示例：
+
+![基于帐户的连接示例](assets/b2b-datasets.svg)
+
+Customer Journey Analytics B2B edition提供了[连接图](/help/connections/create-connection.md#connection-map)界面，可让您大致了解连接中数据集之间的关系。
+
+
+与Customer Journey Analytics类似，基于事件的时间序列数据处于Customer Journey Analytics B2B edition的核心。 基于帐户的连接的主要区别在于，您需要在事件数据集中的每个记录上都有一个帐户ID，而不是个人ID。
+
 当您在Customer Journey Analytics B2B edition中为基于帐户的连接配置[数据集设置](/help/connections/create-connection.md#dataset-settings)时，某些设置的可用选项取决于[数据集类型](/help/connections/create-connection.md#dataset-types)。 例如，您必须：
 
 * 为已为事件数据集配置的每个容器指定标识符。
@@ -79,11 +97,11 @@ Customer Journey Analytics基于三个容器的概念而构建：人员、会话
 
 ### 按容器匹配
 
-如果记录数据集按容器使用匹配，则该记录数据集将被视为用户档案数据集类型，并在用户界面中被视为用户档案数据集。 在支持已配置容器的数据集上使用按容器匹配。 例如，购买组数据集。
+如果记录数据集按容器使用匹配，则该记录数据集将被视为用户档案数据集类型，并在用户界面中被视为用户档案数据集。 在包含容器记录并支持您配置的容器的数据集上使用按容器匹配。 例如，购买组数据集。
 
 ### 按字段匹配
 
-如果记录数据集使用匹配依据字段，则该记录数据集将被视为查询数据集类型，并在用户界面中被视为查询数据集。 在支持通过查找获得其他详细信息的数据集上使用按字段匹配，例如，营销列表成员数据集或产品详细信息数据集。
+如果记录数据集使用匹配依据字段，则该记录数据集将被视为查询数据集类型，并在用户界面中被视为查询数据集。 对通过查找包含其他分类详细信息的数据集使用按字段匹配。 例如，营销列表成员数据集或产品详细信息数据集。
 
 
 ## 报告基于人员和帐户的数据

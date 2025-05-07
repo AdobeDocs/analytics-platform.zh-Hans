@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
-source-wordcount: '676'
-ht-degree: 100%
+source-git-commit: be617c59cd2fced0031fda1130b86e638bee8f68
+workflow-type: tm+mt
+source-wordcount: '716'
+ht-degree: 93%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 >
 >重复用户并未被纳入此计算中，因为它们并不代表用户的任何增减。
 
->[!VIDEO](https://video.tv.adobe.com/v/3423458/?quality=12&learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3421664/?quality=12&learn=on)
 
 
 ## 用例
@@ -62,7 +62,7 @@ ht-degree: 100%
 
 * **[!UICONTROL 视图]**：在此分析和[活跃增长](active-growth.md)之间进行切换。
 * **[!UICONTROL 活动]**：您要测量的事件。由于此分析是以用户为基础的，因此在该时间段内与该事件互动一次的用户会被视为活跃用户。您可以在查询中包含一个事件。
-* **[!UICONTROL 计为]**：要应用于所选事件的计数方法。相关选项包括[!UICONTROL 用户数]和[!UICONTROL 用户百分比]。
+* **[!UICONTROL 计为]**：要应用于所选事件的计数方法。 <ul><li>**[!UICONTROL 选项]**&#x200B;包括[!UICONTROL 用户数]和[!UICONTROL 用户百分比]。</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}其他&#x200B;**[!UICONTROL B2B选项]**&#x200B;可用于Customer Journey Analytics B2B edition：[!UICONTROL 全球客户]、[!UICONTROL 帐户]、[!UICONTROL 购买团体]、[!UICONTROL 机会]、[!UICONTROL 全球客户百分比]、[!UICONTROL 帐户百分比]、[!UICONTROL 购买团体百分比]和[!UICONTROL 机会百分比]。</li></ul>
 * **[!UICONTROL 区段]**：您要测量的区段。您可以在查询中包含一个区段。
 
 ### 时间比较

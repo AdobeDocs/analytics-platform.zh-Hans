@@ -5,10 +5,10 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
-source-wordcount: '781'
-ht-degree: 100%
+source-git-commit: e42f04eaa06a761803e76b64a5a16674fb4af57d
+workflow-type: tm+mt
+source-wordcount: '835'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL 趋势]**&#x200B;分析提供了关于产品绩效或用户行为随时间变化的宝贵洞察。该报告的横轴是时间间隔，而纵轴衡量的是您所期望的事件。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3423437/?quality=12&learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3421666/?quality=12&learn=on)
 
 ## 用例
 
@@ -47,7 +47,7 @@ ht-degree: 100%
 
 * **[!UICONTROL 视图]**：在此分析和[频率](frequency.md)之间切换。
 * **[!UICONTROL 事件和量度]**：您想要衡量的事件或量度。每项选择都以图表系列和表格行来表示。在查询中，事件和量度不能组合在一起；一旦您进行了第一次选择，剩余的查询选择必须属于同一类型。最多可以包括五项选择。
-* **[!UICONTROL 计为]**：要应用于所选事件的计数方法。相关选项包括事件、会话、用户、用户百分比、每个会话的事件数和每个用户的事件数。计为选项仅适用于事件查询，并在量度查询中会被移除。
+* **[!UICONTROL 计为]**：要应用于所选事件的计数方法。 <ul><li>**[!UICONTROL 选项]**&#x200B;包括[!UICONTROL 用户]、[!UICONTROL 事件]、[!UICONTROL 会话]、[!UICONTROL 用户百分比]、每个会话的[!UICONTROL 事件]和每个用户的[!UICONTROL 事件]。</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}其他&#x200B;**[!UICONTROL B2B选项]**&#x200B;可用于Customer Journey Analytics B2B edition： [!UICONTROL 全局帐户]，[!UICONTROL 帐户]，[!UICONTROL 购买团体]，[!UICONTROL 机会]，[!UICONTROL 全局帐户百分比]，[!UICONTROL 帐户百分比]，[!UICONTROL 购买团体百分比]，[!UICONTROL 机会百分比]，[!UICONTROL 每个全球帐户的事件]，[!UICONTROL 每个全球帐户的事件帐户]、每个购买团体的[!UICONTROL 个事件]和每个机会的[!UICONTROL 个事件]。</li></ul>计为选项仅适用于事件查询，并在量度查询中会被移除。
 * **[!UICONTROL 区段]**：您要测量的区段。每个选定的区段都会使图表系列和表格行的数量加倍。最多可以包括五个区段。
 * **[!UICONTROL 细分属性]**：根据所选属性的值细分图表系列和表格行。支持单一细分属性。表中显示前 20 个值，在图表中最多可查看 10 个值。您可以通过切换![显示隐藏图标](../assets/hide-in-chart.png)图标来隐藏或显示图表中的某一行。
 

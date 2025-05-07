@@ -5,23 +5,20 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: be617c59cd2fced0031fda1130b86e638bee8f68
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 98%
+source-wordcount: '677'
+ht-degree: 92%
 
 ---
 
 # [!UICONTROL 积极增长]分析 {#active-growth}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_guidedanalysis_activegrowth_button"
 >title="积极增长"
 >abstract="确定新的、保留的、返回的或非活跃的用户。"
 
-<!-- markdownlint-enable MD034 -->
 
 
 通过 ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL 积极增长]**&#x200B;分析可深入了解特定时段内用户的增长和获取情况。横轴是时间间隔，纵轴则是用户测量值。用户分为四类：
@@ -34,7 +31,7 @@ ht-degree: 98%
 所有活跃用户（新用户 + 重复用户 + 返回用户）在横轴上方显示为青色，而所有休眠用户在横轴下方显示为橙色。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3423391/?quality=12&learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3421667/?quality=12&learn=on)
 
 ## 用例
 
@@ -54,7 +51,7 @@ ht-degree: 98%
 
 * **[!UICONTROL 视图]**：在此分析和[净增长](net-growth.md)之间进行切换。
 * **[!UICONTROL 活动]**：您要测量的事件。由于此分析是以用户为基础的，因此在该时间段内与该事件互动一次的用户会被视为活跃用户。您可以在查询中包含一个事件。
-* **[!UICONTROL 计为]**：要应用于所选事件的计数方法。相关选项包括[!UICONTROL 用户数]和[!UICONTROL 用户百分比]。
+* **[!UICONTROL 计为]**：要应用于所选事件的计数方法。 <ul><li>**[!UICONTROL 选项]**&#x200B;包括[!UICONTROL 用户数]和[!UICONTROL 用户百分比]。</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}其他&#x200B;**[!UICONTROL B2B选项]**&#x200B;可用于Customer Journey Analytics B2B edition：[!UICONTROL 全球客户]、[!UICONTROL 帐户]、[!UICONTROL 购买团体]、[!UICONTROL 机会]、[!UICONTROL 全球客户百分比]、[!UICONTROL 帐户百分比]、[!UICONTROL 购买团体百分比]和[!UICONTROL 机会百分比]。</li></ul>
 * **[!UICONTROL 区段]**：要作为数据分段依据的区段。 您可以在查询中包含一个区段。
 
 ### 图表设置
