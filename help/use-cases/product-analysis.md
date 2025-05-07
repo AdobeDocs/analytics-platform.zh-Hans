@@ -1,9 +1,10 @@
 ---
 title: Customer Journey Analytics中的产品分析
 description: 了解可在Customer Journey Analytics中使用哪些功能来有效执行产品分析。
-source-git-commit: aa7b73db10e81a96f532eedf09091109209124c0
+exl-id: b185a2ed-18c8-4fb3-8c69-693d5fee0e67
+source-git-commit: 40e6fbd49a92690253855e314e9999da28a7d2f6
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '826'
 ht-degree: 1%
 
 ---
@@ -30,9 +31,9 @@ Customer Journey Analytics为团队提供了一些工具，用于分析和优化
 Adobe Experience Platform和Customer Journey Analytics中的以下功能使您能够大规模摄取和管理产品数据：
 
 * Adobe Experience Platform
-   * [数据集&#x200B;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/overview)
+   * [数据集&#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)
    * [数据准备&#x200B;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/home)
-   * [数据Distiller&#x200B;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/data-distiller/overview)
+   * [数据Distiller&#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview)
 * Customer Journey Analytics
    * [连接&#x200B;](/help/connections/overview.md)
    * [数据视图](/help/data-views/data-views.md)，包括[派生字段&#x200B;](/help/data-views/derived-fields/derived-fields.md)
@@ -46,6 +47,10 @@ Adobe Experience Platform和Customer Journey Analytics中的以下功能使您�
 
 * 客户获取可跟踪访问您产品的新用户，包括他们如何到达以及哪些工作最有效或最不有效。
 * 激活可监控参与您的第一个值事件（根据特定目标定义）的新用户。
+
+![积极增长](/help/guided-analysis/assets/active.png)
+
+![参与分析](/help/guided-analysis/assets/feature-matrix.png)
 
 通过Customer Journey Analytics中的以下功能，您可以有效地衡量客户获取和激活情况：
 
@@ -76,6 +81,8 @@ Customer Journey Analytics中的以下功能可帮助您跟踪产品参与和采
 
 维系功能测量在初次购买和激活后有多少用户继续使用产品。 通过最大限度地利用与持续使用密切相关的功能，高性能产品可以维持稳定、忠诚的用户群。 留存用户会随着时间的推移返回产品并与之交互，而流失的用户则不会。 产品团队跟踪维系，以查明推动持续参与的功能，并设计干预措施，将流失的用户转变为保留的用户行为。
 
+![保留分析](/help/guided-analysis/assets/retention.png)
+
 Customer Journey Analytics中的以下功能可帮助您有效地跟踪保留和流失情况：
 
 * [引导式分析：保留](/help/guided-analysis/types/retention.md)&#x200B;
@@ -92,12 +99,14 @@ Experience Cloud中的以下功能使您能够有效地根据见解采取行动�
 * [创建并发布受众](/help/components/audiences/publish.md)&#x200B;以便从Customer Journey Analytics激活
 * 通过Experience Cloud产品激活受众：
    * [在AJO和Adobe Target中运行实验](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment)，并使用[实验面板](/help/analysis-workspace/c-panels/experimentation.md)测量Customer Journey Analytics中各种变化的影响
-   * [向AJO中的用户提供应用程序内参与](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/channels/in-app/get-started-in-app)
-* 使用Adobe Real-time CDP [将受众](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/activation-overview)激活到外部目标&#x200B;
+   * [向AJO中的用户提供应用程序内参与](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app)
+* 使用Adobe Real-time CDP [将受众](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview)激活到外部目标&#x200B;
 
 ## 与组织共享见解&#x200B;。
 
 跨团队传达关键调查结果，以协调工作、促进协作，并确保每个人都朝着共享的产品和业务目标努力。
+
+在Workspace中![引导式分析](assets/guided-analysis-workspace.png)
 
 Customer Journey Analytics中的以下功能可帮助您有效地共享见解：
 
