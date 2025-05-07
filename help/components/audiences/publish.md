@@ -4,10 +4,10 @@ description: 了解如何从 Customer Journey Analytics 发布受众
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
-workflow-type: ht
-source-wordcount: '2320'
-ht-degree: 100%
+source-git-commit: be062e350a8c1989be41aeb2774471a3fe1bf524
+workflow-type: tm+mt
+source-wordcount: '2368'
+ht-degree: 96%
 
 ---
 
@@ -122,9 +122,13 @@ ht-degree: 100%
 
 ## 创建和发布受众后会发生什么? {#after-audience-created}
 
-在 Customer Journey Analytics 中创建并发布受众后，该受众即可在 Experience Platform 中使用。只有您的组织设置了流式分段，才会创建 Adobe Experience Platform 流式区段。
+在Customer Journey Analytics中创建和发布受众后，该受众可在Experience Platform中使用，并可在[受众门户](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/segmentation/ui/audience-portal)中查看。 利用Experience Platform中提供的受众，该受众可用于其他Experience Platform应用程序，例如Adobe Journey Optimizer。
 
-* Platform 中的受众与 Customer Journey Analytics audience 受众具有相同的名称和描述。该名称附加了 Customer Journey Analytics 受众 ID，以确保受众的唯一性。
+只有您的组织设置了流式分段，才会创建 Adobe Experience Platform 流式区段。
+
+使用从Customer Journey Analytics发布到Experience Platform的受众时，请考虑以下事项：
+
+* Experience Platform中的受众与Customer Journey Analytics受众共享相同的名称和描述。 该名称附加了 Customer Journey Analytics 受众 ID，以确保受众的唯一性。
 * Customer Journey Analytics 中对受众名称或描述所做的任何更改都会反映在 Experience Platform 中。
 * 如果在 Customer Journey Analytics 中删除了某个受众，则该受众仍可在 Experience Platform 中继续使用，直到该受众的轮廓会员资格到期。对于一次性观众，轮廓会员资格会在 420 天后到期；对于定期观众，轮廓会员资格会在 16 天后到期。
 
