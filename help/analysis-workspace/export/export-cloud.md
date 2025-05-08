@@ -5,7 +5,7 @@ title: 将 Customer Journey Analytics 报告导出至云
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 158d75f81490edca2b5219a9b3ede2fbcdcc5901
+source-git-commit: 0fb04c116864f50b396ffbd1f22e2d6dad3da983
 workflow-type: tm+mt
 source-wordcount: '2285'
 ht-degree: 98%
@@ -123,7 +123,7 @@ ht-degree: 98%
 
 <!-- add in  what the file name, structure, and file format will be -->
 
-## 导出到云的优势
+## 导出到云的优势 {#advantages}
 
 通过将 Customer Journey Analytics 数据导出到云，您可以：
 
@@ -205,11 +205,11 @@ ht-degree: 98%
 
 如果报告中使用了非默认归因模型，则会忽略或保留报告中使用的分配模型，具体取决于报告是具有单个维度还是多个维度：
 
-* **对于在单个维度中包含量度归因的报告：**&#x200B;[量度归因](/help/data-views/component-settings/attribution.md)会覆盖[分配模型](/help/data-views/component-settings/persistence.md)，就像使用量度归因时通常进行的操作一样。
+* **对于在单个维度中包含量度归因的报告：**[量度归因](/help/data-views/component-settings/attribution.md)会覆盖[分配模型](/help/data-views/component-settings/persistence.md)，就像使用量度归因时通常进行的操作一样。
 
   例如，“首次接触”量度归因会覆盖“最近”维度分配。
 
-* **对于同时包含多个维度的量度归因的报告：除了维度[分配模型](/help/data-views/component-settings/persistence.md)外，还应用了**&#x200B;[量度归因](/help/data-views/component-settings/attribution.md)。
+* **对于同时包含多个维度的量度归因的报告：除了维度[分配模型](/help/data-views/component-settings/persistence.md)外，还应用了**[量度归因](/help/data-views/component-settings/attribution.md)。
 
   例如，除了“最近”维度分配之外，还会应用“首次接触”量度归因。此外，量度归因将会应用于分配后的维度项对，就好像它们是单个维度项一样，而不是像在自由格式表中通常所做的那样，独立地应用于每个维度项。
 
@@ -217,7 +217,7 @@ ht-degree: 98%
   >
   >如本文所述，仅当将数据导出到云端时，才支持多维报告。
 
-## 完整表格导出（在 Customer Journey Analytics 中）与 Data Warehouse（在 Adobe Analytics 中）的比较
+## 完整表格导出（在 Customer Journey Analytics 中）与 Data Warehouse（在 Adobe Analytics 中）的比较 {#comparison}
 
 如果您之前使用 Data Warehouse 导出过 Adobe Analytics 数据，则下表可以帮助您了解在 Customer Journey Analytics 中导出完整表格与使用 Adobe Analytics 中的 Data Warehouse 导出数据之间的区别。
 
