@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: e4ddb98b800457e407bb414ed4929c5d5018cf30
+source-git-commit: de0b51096c772ceb180e759b2dd992e3cf2a009d
 workflow-type: tm+mt
 source-wordcount: '3947'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 99%
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_requireexperiencecloudauth"
 >title="需要 Experience Cloud 身份验证"
->abstract="启用后，通过 Analysis Workspace 中的“与任何人共享”选项获得项目访问权限的人员必须使用其 Experience Cloud 凭据进行身份验证。"
+>abstract="启用后，通过Analysis Workspace中的&#x200B;**[!UICONTROL 与任何人共享]**&#x200B;选项授予项目访问权限的用户必须使用其Experience Cloud凭据进行身份验证。"
 
 <!-- markdownlint-enable MD034 -->
 

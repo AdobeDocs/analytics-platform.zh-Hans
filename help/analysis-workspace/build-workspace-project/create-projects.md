@@ -4,23 +4,14 @@ title: 创建项目
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 191693bc970fcf59ee51706365abde0ee30e3d3d
-workflow-type: ht
+source-git-commit: de0b51096c772ceb180e759b2dd992e3cf2a009d
+workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 100%
 
 ---
 
 # 创建项目 {#create-projects}
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_project_countrepeatinstances"
->title="计数重复实例"
->abstract="指定是否将重复实例计入报告中。<br/><br/>注意：此设置不适用于“流”或“流失”可视化。"
-
-<!-- markdownlint-enable MD034 -->
 
 
 使用 Analysis Workspace 中的[项目](/help/analysis-workspace/build-workspace-project/freeform-overview.md)可以创建和查看业务关键分析。这些分析可以与组织内部或外部的利益相关者共享。
@@ -56,23 +47,21 @@ ht-degree: 100%
 
 ## 项目信息和设置 {#project-info-settings}
 
-<!-- markdownlint-disable MD034 -->
+>[!CONTEXTUALHELP]
+>id="workspace_project_countrepeatinstances"
+>title="计数重复实例"
+>abstract="指定是否将重复实例计入报告中。<br/><br/>注意：此设置不适用于“流”或“流失”可视化。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_project_repeatinstances"
 >title="计数重复实例"
 >abstract="指定是否将重复实例计入报告中。<br/>注意：此设置不适用于“流”或“流失”可视化。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_project_commenting"
 >title="允许评论"
 >abstract="启用后，Analysis Workspace 中项目的右侧栏中会显示一个评论区域。"
-
-<!-- markdownlint-enable MD034 -->
 
 
 项目设置提供有关当前活动项目的项目级信息。
