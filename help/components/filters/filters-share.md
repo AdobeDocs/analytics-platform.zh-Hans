@@ -4,7 +4,7 @@ title: 共享区段
 feature: Filters, Segments
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
-source-git-commit: 85a22d1e57925f0512ce0cc658cfba1008339d91
+source-git-commit: cc1e5737b481a231e139562ca4a79fbdfd61d8a3
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 11%
@@ -38,6 +38,6 @@ ht-degree: 11%
 
 * 作为管理员，只有在您确信组织中的任何人能够熟练使用这些区段的情况下，才能与所有人共享区段。 您还可以考虑偏好这些区段。 有关详细信息，请参阅[将区段标记为收藏](filters-favorite.md)。
 
-* 作为管理员，如果某个区段为特定组内的用户提供业务价值，那么就应当将该区段共享给该组
+* 作为管理员，如果某个区段为特定组的用户提供业务价值，那么就应当将该区段与该组共享。
 
 * 作为管理员或个人用户，请将区段共享给一个或多个个人来验证区段。 如果区段经证实没有用处，则可以删除该区段。
