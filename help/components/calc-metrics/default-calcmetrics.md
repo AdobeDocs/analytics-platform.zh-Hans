@@ -4,16 +4,16 @@ title: 计算量度模板
 feature: Calculated Metrics
 exl-id: 08d11cce-170e-42a2-806f-e0a28b70a2dc
 role: User
-source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
+source-git-commit: c183a5013cbc5ff3765cc4926a308d0c4563a097
 workflow-type: tm+mt
 source-wordcount: '546'
-ht-degree: 90%
+ht-degree: 85%
 
 ---
 
 # 计算量度模板
 
- Customer Journey Analytics 提供以下计算量度模板，以涵盖最常见的用例。这些由 Adobe 定义的计算量度通过一个 ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) 小徽标被标识。要快速过滤这些量度，请在[组件过滤器](/help/components/overview.md#filter)中选择![标签](/help/assets/icons/Label.svg) **[!UICONTROL Adobe 模板]**。
+Customer Journey Analytics提供了以下计算量度模板以涵盖最常见的用例。 这些由 Adobe 定义的计算量度通过一个 ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) 小徽标被标识。要快速筛选这些量度，请在[组件筛选器](/help/components/overview.md#filter)中选择![标签](/help/assets/icons/Label.svg) **[!UICONTROL Adobe模板]**。
 
 | 计算量度名称 | 描述<br/>公式 |
 |---------|----------|
