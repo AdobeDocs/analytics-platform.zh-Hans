@@ -4,10 +4,10 @@ title: 量度
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: defe6ad6fc796a230525ba9b178d744caf340e2f
+source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 8%
+source-wordcount: '886'
+ht-degree: 9%
 
 ---
 
@@ -35,11 +35,19 @@ Adobe 提供了多种类型的指标，可供在 Analysis Workspace 中使用：
    * **会话**：您将Customer Journey Analytics中的“会话”量度定义为数据视图中会话设置配置的一部分。 查看[会话设置](/help/data-views/session-settings.md)。
    * **事件**： Customer Journey Analytics中的Events量度由事件组成，这些事件是您已配置为连接一部分的任何事件数据集的一部分。
 
+  请参阅[标准指标](#standard-metrics)以获取标准指标的完整列表。
+
 * **计算指标** ![计算器](/help/assets/icons/Calculator.svg)：基于标准指标、静态数字或算法函数的用户定义指标。
 
 * **计算量度模板** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) ：Adobe定义的与计算量度行为相似的量度。 您可以在Workspace项目中按原样使用它们，也可以保存副本以自定义逻辑。 查看[默认的计算指标](calc-metrics/cm-workflow/../default-calcmetrics.md)。
 
 您可以查看某个量度是否获得批准![批准图标](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)。 如果您想了解有关某个量度的更多详细信息，请将鼠标悬停在该量度上，然后选择![信息图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)。 有关详细信息，请参阅[组件信息](use-components-in-workspace.md#component-info)。
+
+
+## 标准量度
+
+Customer Journey Analytics中的标准量度的完整列表：
+{{standard-metrics}}
 
 ## 比较不同归因模型的指标
 
@@ -57,7 +65,7 @@ Adobe 提供了多种类型的指标，可供在 Analysis Workspace 中使用：
 
 ### 为所有项目创建计算指标
 
-您可以使用计算指标生成器创建计算指标。 通过这种方式创建时，计算量度在组件列表中可用，然后可在整个组织的项目中使用。
+您可以使用计算量度生成器来创建计算量度。通过这种方式创建时，计算量度在组件列表中可用，然后可在整个组织的项目中使用。
 
 有关如何访问计算量度生成器的信息，请参阅[创建计算量度](/help/components/calc-metrics/cm-workflow/cm-workflow.md)。
 

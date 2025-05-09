@@ -1,8 +1,8 @@
 ---
-source-git-commit: 3ca1004fc1bbe3b60f32348d7da84718aef3a057
+source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
 workflow-type: tm+mt
-source-wordcount: '4061'
-ht-degree: 34%
+source-wordcount: '5198'
+ht-degree: 39%
 
 ---
 # 片段
@@ -210,11 +210,11 @@ ht-degree: 34%
 
 >[!NOTE]
 > 
->仅完成所有先前的升级步骤后，才可按照此页面上的步骤操作。您可以执行推荐的升级步骤（为大多数组织推荐），也可以使用《Customer Journey Analytics升级指南》执行为您的组织动态生成的步骤。 <ul><li>**建议的升级步骤** （建议大多数组织使用）<p>一组导致实现理想Customer Journey Analytics的步骤。</p><p>有关详细信息，请参阅[从Adobe Analytics升级到Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)。</p></li><li>**Customer Journey Analytics升级指南** （根据贵组织的特定需求定制的自定义步骤）<p>提供了新的升级指南，可动态生成针对贵组织和独特环境定制的升级步骤。</p><p>要从Customer Journey Analytics访问指南，请选择&#x200B;**[!UICONTROL Workspace]**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**[!UICONTROL 升级到Customer Journey Analytics]**。 按照屏幕上的说明操作。</p></li></ul>
+>仅完成所有先前的升级步骤后，才可按照此页面上的步骤操作。您可以执行推荐的升级步骤（为大多数组织推荐），也可以使用《Customer Journey Analytics升级指南》执行为您的组织动态生成的步骤。 <ul><li>**建议的升级步骤** （建议大多数组织使用）<p>一组导致实现理想Customer Journey Analytics的步骤。</p><p>有关详细信息，请参阅[从Adobe Analytics升级到Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)。</p></li><li>**Customer Journey Analytics升级指南** （根据贵组织的特定需求定制的自定义步骤）<p>现有新的升级指南可用，用于动态生成适合您的组织和独特情况的升级步骤。</p><p>要从 Customer Journey Analytics 访问升级指南，请选择&#x200B;**[!UICONTROL 工作区]**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**[!UICONTROL 升级到 Customer Journey Analytics]**。按照屏幕上的说明操作。</p></li></ul>
 
 ## 升级清单最后步骤 {#upgrade-final-step}
 
-1. 继续执行Customer Journey Analytics升级指南中的[建议的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)或动态生成的升级步骤。 要从Customer Journey Analytics访问指南，请选择&#x200B;**[!UICONTROL Workspace]**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**[!UICONTROL 升级到Customer Journey Analytics]**。 按照屏幕上的说明操作。
+1. 继续执行Customer Journey Analytics升级指南中的[建议的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)或动态生成的升级步骤。 要从 Customer Journey Analytics 访问升级指南，请选择&#x200B;**[!UICONTROL 工作区]**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**[!UICONTROL 升级到 Customer Journey Analytics]**。按照屏幕上的说明操作。
 
 
 ## Content Analytics文档草案 {#draft-aca}
@@ -248,9 +248,50 @@ ht-degree: 34%
 | **[!UICONTROL 数据集回填]** | 启用 **[!UICONTROL 回填所有现有数据]** 以确保所有现有数据均已回填。<br/><br/>选择 **[!UICONTROL 请求补填]** 填充特定时期的历史数据。您最多可以定义 10 个数据集回填期。<ol><li>通过输入开始和结束数据或使用![日程表](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)选择日期来定义期间。</li><li>选择 **[!UICONTROL 队列补填]** 将回填内容添加到列表中，或 **[!UICONTROL 取消]** 取消。</li></ol>对于每个条目，选择 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 编辑时段，或选择 ![删除](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) 删除该条目。<br/><br/>在回填上：<ul><li>您可以单独回填每个数据集。</li><li>您会优先处理新添加到此连接中数据集的新数据，因此这些新数据的滞后时间最短。</li><li>任何回填（历史）数据的导入速度都会比较慢。历史数据的数量会影响延迟。</li><li>Analytics Source Connector 会为生产沙盒导入最多 13 个月的数据（无论大小）。非生产沙盒的回填期限为 3 个月。</li></ul> |
 | **[!UICONTROL 批次状态]** | 可能的状态指示符有：<ul><li>成功</li><li>X 回填处理</li><li>关</li></ul> |
 | **[!UICONTROL 数据集 ID]** | 此 ID 是自动生成的。 |
-| **[!UICONTROL 描述]** | 创建数据集时为此数据集提供的描述。 |
+| **[!UICONTROL 描述]** | 创建数据集时给出的关于此数据集的描述。 |
 | **[!UICONTROL 记录数]** | 数据集的大小。 |
 | **[!UICONTROL 架构]** | 在 Adobe Experience Platform 中创建数据集所依据的架构。 |
 | **[!UICONTROL 数据集]** | 数据集的名称。 |
-| **[!UICONTROL 预览：*数据集名称&#x200B;*]** | 预览前10行和前10列的数据集。 |
+| **[!UICONTROL 预览：*数据集名称&#x200B;*]** | 预览数据集的前 10 行和前 10 列。 |
 | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL 移除]** | 您可以[删除数据集](/help/connections/create-connection.md#delete-a-dataset)而不删除整个连接。 从连接中删除数据集可减少数据引入所涉及的成本，以及重新创建整个连接和相关数据视图的繁琐过程。 |
+
+## 标准维度 {#standard-dimensions}
+
+| 组件名称 | 注释 |
+|---|---|
+| 15 分钟 | 发生给定事件的每15分钟（已向下取整）。 第一个维度项目是日期范围内的前15分钟，最后一个维度项目是日期范围内的最后15分钟。 |
+| 30 分钟 | 发生给定事件的每30分钟（已向下取整）。 第一个维度项目是日期范围内的前30分钟，最后一个维度项目是日期范围内的最后30分钟。 |
+| 5 分钟 | 发生给定事件的每5分钟（已向下取整）。 第一个维度项目是日期范围内的前15分钟，最后一个维度项目是日期范围内的最后5分钟。 |
+| [!UICONTROL 日] | 发生给定事件的那一天。第一个维度项是日期范围内的第一天，最后一个维度项是日期范围内的最后一天。 |
+| [!UICONTROL 日期] | 发生给定事件的那一个月中的第几天。 第一个维度项是日期范围内当月的第一天，最后一个维度项是日期范围内当月的最后一天。 |
+| [!UICONTROL 每周时间] | 发生给定事件的那一周。 第一个维度项是日期范围内一周的第一天，最后一个维度项是日期范围内一周的最后一天。 |
+| [!UICONTROL 日期] | 发生给定事件的那一个月中的第几天。 第一个维度项是日期范围内当月的第一天，最后一个维度项是日期范围内当月的最后一天。 |
+| 事件深度 | 将顺序数值（1、2、3等）分配给会话中的每个事件交互。 利用此维度，您可以详细跟踪和分析特定事件在会话内用户交互的顺序流中出现的位置。 您可以跟踪事件在有界会话中从开始到结束的进度。 例如：访客登陆您的主页（事件1，会话开始），使用搜索功能（事件2），查看产品详细信息页面（事件3），添加到购物车（事件4），进入结账（事件5），并完成购买（事件6，会话结束）。 现在，您可以在区段定义中使用[!UICONTROL 事件深度]来根据交互深度划分数据。 |
+| [!UICONTROL 小时] | 发生给定事件的那一小时（已向下取整）。第一个维度项是日期范围中的第一小时，最后一个维度项是日期范围中的最后一小时。 |
+| [!UICONTROL 小时] | 发生给定事件的那一小时（已向下取整）。 第一个维度项目是日期范围内一天的第一小时，最后一个维度项目是日期范围内一天的最后一小时。 |
+| [!UICONTROL 分钟] | 发生给定事件的那一分钟（已向下取整）。第一个维度项是日期范围中的第一分钟，最后一个维度项是日期范围中的最后一分钟。 |
+| [!UICONTROL 分钟（小时）] | 发生给定事件的那一分钟（已向下取整）。 第一个维度项目是日期范围内某小时的第一分钟，最后一个维度项目是日期范围内该小时的最后一分钟。 |
+| [!UICONTROL 月] | 发生给定事件的那一个月。第一个维度项是日期范围内的第一个月，最后一个维度项是日期范围内的最后一个月。 |
+| [!UICONTROL 月份] | 发生给定事件的那一年。 第一个维度项是日期范围内一年的第一个月，最后一个维度项是日期范围内的一年的最后一个月。 |
+| [!UICONTROL 季度] | 发生给定事件的那一季。第一个维度项是日期范围内的第一个季度，最后一个维度项是日期范围内的最后一个季度。 |
+| [!UICONTROL 季度] | 发生给定事件的那一季。 第一个维度项目是日期范围内一年的第一个季度，最后一个维度项目是日期范围内年的最后一个季度。 |
+| [!UICONTROL 秒] | 发生给定事件的那一秒钟（已向下取整）。第一个维度项是日期范围内的第一秒，最后一个维度项是日期范围内的最后一秒。 |
+| [!UICONTROL 周] | 发生给定事件的那一周。第一个维度项是日期范围内的第一周，最后一个维度项是日期范围内的最后一周。 |
+| [!UICONTROL 一年中一周] | 发生给定事件的那一周。 第一个维度项是日期范围内一年的第一周，最后一个维度项是日期范围内年的最后一周。 |
+| [!UICONTROL 年] | 发生给定事件的那一年。第一个维度项是日期范围中的第一年，最后一个维度项是日期范围中的最后一年。 |
+
+
+## 标准量度 {#standard-metrics}
+
+| 组件名称 | 注释 |
+| --- | --- |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL 帐户] | 基于在[!UICONTROL 连接]中指定的帐户 ID。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL 购买群] | 购买群组，基于在[!UICONTROL 连接]中指定的购买群组 ID。 |
+| [!UICONTROL 事件] | 来自[!UICONTROL 连接]中所有事件数据集的行数。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL 全局帐户] | 基于在[!UICONTROL 连接]中指定的全球帐户 ID。 |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL 机会] | 机会，基于在[!UICONTROL 连接]中指定的机会 ID。 |
+| [!UICONTROL 人员] | 基于在[!UICONTROL 连接]中指定的人员 ID。 |
+| [!UICONTROL 会话结束] | 会话的最后一个事件的事件数。与[!UICONTROL 会话开始]类似，它也可用在区段定义中，一直细分到每个会话的最后一个事件。<p>必须将此组件包含在您的数据视图中，才能在 Workspace 中使用[计算量度](/help/components/calc-metrics/default-calcmetrics.md)： <ul><li>会话结束比率</li></p> |
+| [!UICONTROL 会话开始] | 会话的第一个事件的事件数。用在区段定义（例如，“[!UICONTROL 会话开始]”）中时，它会一直细分到每个会话的第一个事件。<p>必须将此组件包含在您的数据视图中，才能在 Workspace 中使用[计算量度](/help/components/calc-metrics/default-calcmetrics.md)： <ul><li>会话开始比率</li></p> |
+| [!UICONTROL 会话] | 基于数据视图的会话设置。 |
+| [!UICONTROL 逗留时间（秒）] | 累计两个不同的维度值之间的时间。<p>必须将此组件包含在您的数据视图中，才能在 Workspace 中使用[计算量度](/help/components/calc-metrics/default-calcmetrics.md)： <ul><li>每人逗留时间</li><li>每个会话逗留时间</li></p> |

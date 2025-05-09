@@ -4,10 +4,10 @@ description: Customer Journey Analytics 登陆页面。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
+source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 94%
+source-wordcount: '737'
+ht-degree: 85%
 
 ---
 
@@ -19,15 +19,22 @@ ht-degree: 94%
 
 ## 新增功能
 
-大致了解 Customer Journey Analytics 产品和文档中的最新增强！有关功能、改进和修复的完整列表，请查看详细的[发行说明](../release-notes/latest.md)。访问 [文档更新页面](../release-notes/doc-changes.md) 以了解最新更改。
+大致了解 Customer Journey Analytics 产品和文档中的最新增强！有关功能、改进和修复的完整列表，请查看详细的[发行说明](../release-notes/latest.md)。请访问[文档更新页面](../release-notes/doc-changes.md)以掌握最新的文档更新。
 
 >[!BEGINTABS]
 
->[!TAB 内容分析]
+>[!TAB Content Analytics]
 
 Content Analytics 可让您快速轻松地调查大量内容数据，以发现趋势、识别异常、判断内容疲劳度，并从内容曝光中获得洞察。
 
 [![图像](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
+
+>[!TAB 事件深度]
+
+事件深度是一个新的标准维度，它提供了新的方法来衡量和更好地了解事件在客户会话中的位置。 通过事件深度维度，可以详细跟踪和分析特定事件在会话内用户交互的顺序流中出现的位置。
+
+[![图像](assets/learn-more-button.svg)](/help/components/dimensions/overview.md#standard-dimensions)
+
 
 >[!TAB 共享量度和维度]
 
@@ -35,41 +42,47 @@ Content Analytics 可让您快速轻松地调查大量内容数据，以发现�
 
 [![图像](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 
->[!TAB AI 助手]
 
-AI 助手是一种对话体验，允许从业者快速执行任务——无论是理解概念、解决问题还是搜索信息。它还允许非专家执行专家任务并提高整体工作质量。
+<!--
+>[!TAB AI Assistant] 
 
-[![图像](assets/learn-more-button.svg)](/help/ai-assistant.md)
+AI Assistant is a conversational experience that allows practitioners to perform tasks at a fast pace - whether its understanding concepts, troubleshooting problems, or searching through information. It also allows non-experts to perform expert tasks and increases the overall quality of work.
 
-
->[!TAB 引导式分析]
-
-引导式分析现在可直接在 Analysis Workspace 中使用，用户使用该功能可以创建具有来自面板、可视化内容和引导式分析的全面洞察的仪表板。
-
-[![图像](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
+[![image](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
 
->[!TAB 智能题注 v2]
+>[!TAB Guided Analysis] 
 
-现在支持智能题注，并进一步改进了以下图表界面：[折线图](/help/analysis-workspace/visualizations/line.md)（包含多条线）、[条形图](/help/analysis-workspace/visualizations/bar.md)、[水平条形图](/help/analysis-workspace/visualizations/horizontal-bar.md)、[面积图](/help/analysis-workspace/visualizations/area.md)（包含多条面积线）、[环形图](/help/analysis-workspace/visualizations/donut.md)、[流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)和 [流量](/help/analysis-workspace/visualizations/c-flow/flow.md)可视化图表。
+Guided Analysis is now available directly from within Analysis Workspace, enabling users to create dashboards with comprehensive insights from panels, visualizations, and guided analyses.
 
-[![图像](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
-
->[!TAB 警报]
-
-警报允许您根据变化的百分比或特定数据点收到通知。您可以预览警报触发的频率、通过电子邮件或 SMS 发送警报、创建堆叠警报等。
-
-[![图像](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+[![image](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
 
 
->[!TAB 摘要数据]
 
-允许您引入没有人员 ID 的时间序列数据。该时间序列数据可用于支持各种用例，例如
+>[!TAB Intelligent captions v2] 
 
-- 将高级性能指标作为事件级数据的一部分或在其旁边呈现。
-- 以小时或每天的频率上传目标或目的，然后根据事件级量度定位这些目标或目的。
+Intelligent captions are now supported, with additional interface improvements, for [Line](/help/analysis-workspace/visualizations/line.md) (including multi-line), [Bar](/help/analysis-workspace/visualizations/bar.md), [Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md), [Area](/help/analysis-workspace/visualizations/area.md) (including multiple Area lines), [Donut](/help/analysis-workspace/visualizations/donut.md), [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), and [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) visualizations.
 
-[![图像](assets/learn-more-button.svg)](/help/data-views/summary-data.md)
+[![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
+
+>[!TAB Alerts] 
+
+Alerts allow you to be notified based on changed percentages or specific data points. You can preview how often an alert will trigger, send alerts by email or SMS, create stacked alerts, and more.
+
+[![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
+
+>[!TAB Summary data] 
+
+Allows you to bring in time-series data that does not have a person ID. This time-series data can be used to support various use cases, such as 
+
+- Presenting high-level performance indicators as part of or next to event-level data. 
+- Uploading targets or goals at an hourly or daily basis, then positioning these targets or goals against event-level metrics. 
+
+[![image](assets/learn-more-button.svg)](/help/data-views/summary-data.md)
+
+-->
 
 >[!TAB 基于图形的拼接*]
 
