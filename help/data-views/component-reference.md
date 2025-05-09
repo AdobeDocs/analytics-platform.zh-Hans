@@ -47,7 +47,7 @@ Customer Journey Analytics 中的大多数维度和指标都基于您 Adobe Expe
 | [!UICONTROL 每周时间] | 时间划分维度 | 星期一、星期二、星期三、星期四、星期五、星期六、星期日 |
 | [!UICONTROL 每年的某一天] | 时间划分维度 | 第 1 天至第 366 天 |
 | [!UICONTROL 小时] | 时间划分维度 | 0 时至 23 时 |
-| [!UICONTROL  月份] | 时间划分维度 | 一月 - 十二月 |
+| [!UICONTROL &#x200B; 月份] | 时间划分维度 | 一月 - 十二月 |
 | [!UICONTROL 首次会话] | 量度 | 个人在报告窗口内定义的首次会话。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat) |
 | [!UICONTROL 返回会话] | 量度 | 非个人首次会话的会话数。[了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat) |
 | [!UICONTROL 人员 ID] | 维度 | Experience Platform 中定义的每个数据集架构，可以拥有自己定义的一个或多个身份标识集，并与命名空间关联。其中任何身份标识都可用作人员 ID。示例包括 Cookie ID、拼接 ID、用户 ID、跟踪代码等。[!UICONTROL 个人 ID] 维度是合并数据集的基础，并可在 Customer Journey Analytics 中标识独特访客。<p>可能的使用案例包括：<ul><li>创建针对特定人员ID值的区段，以将所有内容细分为该用户的行为。</li><li>调试：确保特定 Cookie ID（或特定客户 ID）的数据存在。</li><li>确定致电给呼叫中心的用户。</li></ul> |
