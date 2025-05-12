@@ -4,10 +4,10 @@ title: 如何配置流量可视化图表
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: 933b4005724aa438c3daeb58191e940821b5bb5f
+source-git-commit: a7350b6fc8fa75de07238543ed0db48af42b7577
 workflow-type: tm+mt
-source-wordcount: '1709'
-ht-degree: 79%
+source-wordcount: '1735'
+ht-degree: 75%
 
 ---
 
@@ -109,7 +109,7 @@ ht-degree: 79%
    | **[!UICONTROL 限制到第一次/最后一次发生次数]** | 将路径限制为以维度、项目或量度的第一次或最后一次发生次数开始或结束的路径。有关更详细的解释，请参阅[限制到第一次/最后一次发生次数](#example-scenario-for-limit-to-firstlast-occurrence)。 |
    | **[!UICONTROL 列数]** | 流量图中所需的列数。您最多可以指定 5 个列。 |
    | **[!UICONTROL 每列扩展的项]** | 每列中所需的项数。您最多可以指定每列扩展 10 个项。 |
-   | **[!UICONTROL 流量容器]** | 您可以在&#x200B;**[!UICONTROL 全局帐户]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 帐户]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 机会]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 购买群]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 会话]**&#x200B;和&#x200B;**[!UICONTROL 人员]**&#x200B;之间切换以分析路径。 这些设置可帮助您在人员级别（跨会话）了解人员参与度，或将分析限定于单次会话。 |
+   | **[!UICONTROL 流量容器]** | 您可以在&#x200B;**[!UICONTROL 全局帐户]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 帐户]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 机会]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 购买群]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 会话]**&#x200B;和&#x200B;**[!UICONTROL 人员]**&#x200B;之间切换以分析路径。 这些设置可帮助您了解特定容器级别（跨会话）的参与情况，或将分析限制在单个会话。 |
 
    >[!IMPORTANT]
    >
@@ -174,7 +174,7 @@ ht-degree: 79%
 | **[!UICONTROL 排除项]**&#x200B;或&#x200B;**[!UICONTROL 还原排除项]** | 从列中删除特定节点，并将其自动创建为列顶部的过滤器。要还原排除项，请从上下文菜单中选择&#x200B;**[!UICONTROL 还原排除项]**。您也可以打开列顶部的区段，移除带有您刚刚排除的项目的Pillbox。 |
 | **[!UICONTROL 趋势]** | 为节点创建趋势图表。 |
 | **[!UICONTROL 显示下一列]**/**[!UICONTROL 显示上一列]** | 显示可视化图表的下一列（右）或上一列（左）。 |
-| **[!UICONTROL 隐藏列]**&#x200B;n | 在可视化图表中隐藏选定的列。 |
+| **[!UICONTROL 隐藏列]**n | 在可视化图表中隐藏选定的列。 |
 | **[!UICONTROL 扩展整列]** | 扩展某一列以显示全部节点。默认情况下，只会显示头五个节点。 |
 | **[!UICONTROL 从选择创建受众]** | 根据所选的列创建受众。 |
 | **[!UICONTROL 折叠整列]** | 隐藏某一列中的所有节点。 |
@@ -184,17 +184,17 @@ ht-degree: 79%
 使用此选项时，请记住：
 
 * **[!UICONTROL 限制到第一次/最后一次发生次数]**&#x200B;仅统计序列中的第一次/最后一次发生次数。所有其他满足&#x200B;**[!UICONTROL 开始于]**&#x200B;或&#x200B;**[!UICONTROL 结束于]**&#x200B;标准的发生次数均会被弃用。
-* 如果与&#x200B;**[!UICONTROL 开始于]**&#x200B;流量一起使用，则只包括与开始标准匹配的第一次发生次数。在下面的示例中，包含流量每个步骤中&#x200B;*添加到购物车*&#x200B;和&#x200B;*产品主要类别*&#x200B;的&#x200B;**所有**&#x200B;发生次数。
+* 如果与&#x200B;**[!UICONTROL 开始于]**&#x200B;流量一起使用，则只包括与开始标准匹配的第一次发生次数。在下面的示例中，包含流量每个步骤中&#x200B;*添加到购物车*&#x200B;和&#x200B;*产品主要类别*&#x200B;的&#x200B;**所有**发生次数。
   ![没有限制，第一次](assets/limitofffirst.png)
 
-  在下面的示例中，仅包含流量每个步骤中&#x200B;*添加到购物车*&#x200B;和&#x200B;*产品主要类别*&#x200B;的&#x200B;**第一次**&#x200B;发生次数。
+  在下面的示例中，仅包含流量每个步骤中&#x200B;*添加到购物车*&#x200B;和&#x200B;*产品主要类别*&#x200B;的&#x200B;**第一次**发生次数。
   ![限制，开始](assets/limitonfirst.png)
-* 如果与&#x200B;**[!UICONTROL 结束于]**&#x200B;流量一起使用，则仅包含与结束标准匹配的最后一次发生次数。在下面的示例中，包含流量每个步骤中&#x200B;*产品主要类别*&#x200B;和&#x200B;*添加到购物车*&#x200B;的&#x200B;**所有**&#x200B;发生次数。
+* 如果与&#x200B;**[!UICONTROL 结束于]**&#x200B;流量一起使用，则仅包含与结束标准匹配的最后一次发生次数。在下面的示例中，包含流量每个步骤中&#x200B;*产品主要类别*&#x200B;和&#x200B;*添加到购物车*&#x200B;的&#x200B;**所有**发生次数。
   ![没有限制，第一次](assets/limitofflast.png)
 
-  在下面的示例中，仅包含流量每个步骤中&#x200B;*产品主要类别*&#x200B;和&#x200B;*添加到购物车*&#x200B;的&#x200B;**最后一次**&#x200B;发生次数。
+  在下面的示例中，仅包含流量每个步骤中&#x200B;*产品主要类别*&#x200B;和&#x200B;*添加到购物车*&#x200B;的&#x200B;**最后一次**发生次数。
   ![限制，开始](assets/limitonlast.png)
-* 使用的系列因容器而异。如果使用&#x200B;**[!UICONTROL 人员]**&#x200B;容器，事件系列就是会话。如果使用&#x200B;**[!UICONTROL 会话]**&#x200B;容器，则事件系列就是给定用户在提供的日期范围内的所有事件。
+* 使用的系列因容器而异。如果您使用&#x200B;**[!UICONTROL 会话]**&#x200B;容器，则事件系列仅限于一个会话。  如果您使用任何其他容器(例如，**[!UICONTROL Person]**、**[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}或&#x200B;**[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"})，则一系列事件将基于指定的容器，并可能跨多个会话。
 * 在&#x200B;**[!UICONTROL 开始于]**&#x200B;或&#x200B;**[!UICONTROL 结束于]**&#x200B;字段中使用量度或维度项时，可以在高级设置中配置&#x200B;**[!UICONTROL 限制到第一次/最后一次发生次数]**&#x200B;的选项。
 
 

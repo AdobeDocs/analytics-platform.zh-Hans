@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: f7c24aead6561d00b588b69ff9d0b03f498ebbee
+source-git-commit: a7350b6fc8fa75de07238543ed0db48af42b7577
 workflow-type: tm+mt
-source-wordcount: '6858'
-ht-degree: 62%
+source-wordcount: '7000'
+ht-degree: 61%
 
 ---
 
@@ -132,7 +132,7 @@ ht-degree: 62%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建并编辑连接](https://video.tv.adobe.com/v/3409297/?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建并编辑连接](https://video.tv.adobe.com/v/343044/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -168,7 +168,7 @@ ht-degree: 62%
 
 ### Customer Journey Analytics
 
-在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**&#x200B;屏幕中：
+在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**屏幕中：
 
 ![无标题连接设置](assets/create-conn1.png)
 
@@ -189,7 +189,7 @@ ht-degree: 62%
    | 列 | 描述 |
    |---|---|
    | **[!UICONTROL 数据集名称]** | 选择您要提取到 Customer Journey Analytics 的一个或多个数据集，并选择&#x200B;**[!UICONTROL 添加。]**<p>（如果您有许多数据集可供选择，可以使用数据集列表上方的搜索数据集搜索栏搜索正确的数据集。） |
-   | ![更多](/help/assets/icons/More.svg) | 选择![更多](/help/assets/icons/More.svg)以打开选定数据集的上下文菜单。 您可以根据（类型）数据集选择：<ul><li>![CrossSize75](/help/assets/icons/CrossSize400.svg)  **[!UICONTROL 删除数据集]**&#x200B;到[删除数据集](#delete-a-dataset)。</li><li>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**&#x200B;以[编辑数据集](#edit-a-dataset)。</li><li>![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;以显示数据集[&#128279;](#past-backfills)的过去的回填。 |
+   | ![更多](/help/assets/icons/More.svg) | 选择![更多](/help/assets/icons/More.svg)以打开选定数据集的上下文菜单。 您可以根据（类型）数据集选择：<ul><li>![CrossSize75](/help/assets/icons/CrossSize400.svg)  **[!UICONTROL 删除数据集]**&#x200B;到[删除数据集](#delete-a-dataset)。</li><li>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**&#x200B;以[编辑数据集](#edit-a-dataset)。</li><li>![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;以显示数据集](#past-backfills)的[过去的回填。 |
    | **[!UICONTROL 上次更新时间]** | 仅对于事件数据集，此设置会自动设置为 Experience Platform 中基于事件的架构的默认时间戳字段。“N/A”表示该数据集不包含数据。 |
    | **[!UICONTROL 记录数]** | Experience Platform 中数据集上个月的总记录数。 |
    | **[!UICONTROL 架构]** | 在 Adobe Experience Platform 中创建数据集所依据的[架构。](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition) |
@@ -208,7 +208,7 @@ ht-degree: 62%
 
 [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
 
-在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**&#x200B;屏幕中：
+在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**屏幕中：
 
 ![无标题连接设置](assets/create-conn1-b2b.png)
 
@@ -231,7 +231,7 @@ ht-degree: 62%
    | 列 | 描述 |
    |---|---|
    | **[!UICONTROL 数据集名称]** | 选择您要提取到 Customer Journey Analytics 的一个或多个数据集，并选择&#x200B;**[!UICONTROL 添加。]**<p>（如果您有许多数据集可供选择，可以使用数据集列表上方的搜索数据集搜索栏搜索正确的数据集。） |
-   | ![更多](/help/assets/icons/More.svg) | 选择![更多](/help/assets/icons/More.svg)以打开选定数据集的上下文菜单。 您可以根据（类型）数据集选择：<ul><li>![CrossSize75](/help/assets/icons/CrossSize400.svg)  **[!UICONTROL 删除数据集]**&#x200B;到[删除数据集](#delete-a-dataset)。</li><li>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**&#x200B;以[编辑数据集](#edit-a-dataset)。</li><li>![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;以显示数据集[&#128279;](#past-backfills)的过去的回填。 |
+   | ![更多](/help/assets/icons/More.svg) | 选择![更多](/help/assets/icons/More.svg)以打开选定数据集的上下文菜单。 您可以根据（类型）数据集选择：<ul><li>![CrossSize75](/help/assets/icons/CrossSize400.svg)  **[!UICONTROL 删除数据集]**&#x200B;到[删除数据集](#delete-a-dataset)。</li><li>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**&#x200B;以[编辑数据集](#edit-a-dataset)。</li><li>![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;以显示数据集](#past-backfills)的[过去的回填。 |
    | **[!UICONTROL 上次更新时间]** | 仅对于事件数据集，此设置会自动设置为 Experience Platform 中基于事件的架构的默认时间戳字段。“N/A”表示该数据集不包含数据。 |
    | **[!UICONTROL 记录数]** | Experience Platform 中数据集上个月的总记录数。 |
    | **[!UICONTROL 架构]** | 在 Adobe Experience Platform 中创建数据集所依据的[架构。](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition) |
@@ -517,7 +517,7 @@ ht-degree: 62%
 
 1. 选择一个或多个数据集并选择&#x200B;**[!UICONTROL 下一个]**。至少一个事件或摘要数据集必须是连接的一部分。
 
-1. 在&#x200B;**[!UICONTROL 添加数据集]**&#x200B;对话框的➋&#x200B;**[!UICONTROL 数据集设置]**&#x200B;步骤中，逐个配置每个所选数据集[&#128279;](#dataset-settings)的设置。
+1. 在&#x200B;**[!UICONTROL 添加数据集]**&#x200B;对话框的➋**[!UICONTROL 数据集设置]**&#x200B;步骤中，逐个配置每个所选数据集](#dataset-settings)的[设置。
 
    ![添加数据集](assets/add-dataset.png)
 
@@ -533,7 +533,7 @@ ht-degree: 62%
 1. 为要编辑的数据集表中列出的数据集选择![更多](/help/assets/icons/More.svg)
 1. 选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**。
 
-1. 在&#x200B;**[!UICONTROL 编辑数据集： _数据集名称_]**&#x200B;对话框中配置[数据集设置](#dataset-settings)。
+1. 在&#x200B;**[!UICONTROL 编辑数据集： _数据集名称_]**对话框中配置[数据集设置](#dataset-settings)。
 
    ![编辑数据集](assets/edit-dataset.png)
 
@@ -558,7 +558,7 @@ ht-degree: 62%
 
 | 设置 | 描述 |
 | --- | --- |
-| **[!UICONTROL 人员 ID]** | 从可用标识的下拉菜单中选择人员ID。 这些身份已在Experience Platform的数据集架构中定义。 有关如何将身份映射用作人员ID的信息，请参阅[将身份映射用作人员ID](#id-map)。<p>如果没有可供选择的人员ID，则意味着架构中未定义任何人员ID。 请参阅[在 UI 中定义身份标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)以了解更多信息。 <p>所选人员 ID 的值区分大小写。例如，`abc123` 和 `ABC123` 是两个不同的值。 |
+| **[!UICONTROL 人员 ID]** | 从可用标识的下拉菜单中选择人员ID。 这些身份已在Experience Platform的数据集架构中定义。 有关如何将身份映射用作人员ID的信息，请参阅[将身份映射用作人员ID](#id-map)。<p>如果没有可供选择的人员ID，则意味着架构中未定义任何人员ID。 请参阅[在 UI 中定义身份标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)以了解更多信息。 <p>所选人员 ID 的值区分大小写。例如，`abc123` 和 `ABC123` 是两个不同的值。<p>如果记录不包含您选择作为事件数据集的人员ID的标识值，则会跳过该记录。 |
 | **[!UICONTROL 时间戳]** | 此设置会自动设置为Experience Platform中基于事件的架构的默认时间戳字段。 |
 | **[!UICONTROL 数据源类型]** | 选择数据源类型。数据源类型包括： <ul><li>[!UICONTROL Web 数据]</li><li>[!UICONTROL 移动应用程序数据]</li><li>[!UICONTROL POS 数据]</li><li>[!UICONTROL CRM 数据]</li><li>[!UICONTROL 调查数据]</li><li>[!UICONTROL 呼叫中心数据]</li><li>[!UICONTROL 产品数据]</li><li> [!UICONTROL 帐户数据]</li><li> [!UICONTROL 事务数据]</li><li>[!UICONTROL 客户反馈数据]</li><li> [!UICONTROL 其他]</li></ul>该字段用于调查正在使用的数据源的类型。 |
 | **[!UICONTROL 数据源描述]** | 选择“其他”作为数据源类型时数据源的说明。 |
@@ -574,7 +574,7 @@ ht-degree: 62%
 
 | 设置 | 描述 |
 | --- | --- |
-| **[!UICONTROL 帐户ID]** | 从Experience Platform的数据集架构中定义的可用标识中选择一个全局帐户ID（帐户的唯一标识符）。 适用于已将全局帐户作为容器添加到连接时。 |
+| **[!UICONTROL 帐户ID]** | 从Experience Platform的数据集架构中定义的可用标识中选择一个全局帐户ID（帐户的唯一标识符）。 适用于已将全局帐户作为容器添加到连接时。 <p>如果记录不包含您选择作为事件数据集帐户ID的标识值，则会跳过该记录。 |
 | **[!UICONTROL 全局帐户ID]** | 从Experience Platform的数据集架构中定义的可用标识中选择一个帐户ID（帐户的唯一标识符）。 适用于尚未将全局帐户作为容器添加到连接的情况。 |
 | **[!UICONTROL 机会ID]** | 从Experience Platform的数据集架构中定义的可用身份中选择一个机会ID（机会的唯一标识符）。 |
 | **[!UICONTROL 购买群ID]** | 从Experience Platform的数据集架构中定义的可用标识中选择一个购买组ID（购买组的唯一标识符）。 |
@@ -595,7 +595,7 @@ ht-degree: 62%
 
 | 设置 | 描述 |
 | --- | --- |
-| **[!UICONTROL 人员 ID]** | 从可用标识的下拉菜单中选择人员ID。 这些身份已在Experience Platform的数据集架构中定义。 有关如何将身份映射用作人员ID的信息，请参阅[将身份映射用作人员ID](#id-map)。<p>如果没有可供选择的人员ID，则架构中不会定义任何人员ID。 请参阅[在 UI 中定义身份标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)以了解更多信息。 <p>所选人员 ID 的值区分大小写。例如，`abc123` 和 `ABC123` 是两个不同的值。 |
+| **[!UICONTROL 人员 ID]** | 从可用标识的下拉菜单中选择人员ID。 这些身份已在Experience Platform的数据集架构中定义。 有关如何将身份映射用作人员ID的信息，请参阅[将身份映射用作人员ID](#id-map)。<p>如果没有可供选择的人员ID，则架构中不会定义任何人员ID。 请参阅[在 UI 中定义身份标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)以了解更多信息。 <p>所选人员 ID 的值区分大小写。例如，`abc123` 和 `ABC123` 是两个不同的值。 <p>如果记录不包含您选择作为配置文件数据集的人员ID的标识值，则会跳过该记录。 |
 | **[!UICONTROL 数据源类型]** | 选择数据源类型。数据源类型包括： <ul><li>[!UICONTROL Web 数据]</li><li>[!UICONTROL 移动应用程序数据]</li><li>[!UICONTROL POS 数据]</li><li>[!UICONTROL CRM 数据]</li><li>[!UICONTROL 调查数据]</li><li>[!UICONTROL 呼叫中心数据]</li><li>[!UICONTROL 产品数据]</li><li> [!UICONTROL 帐户数据]</li><li> [!UICONTROL 事务数据]</li><li>[!UICONTROL 客户反馈数据]</li><li> [!UICONTROL 其他]</li></ul>该字段用于调查正在使用的数据源的类型。 |
 | **[!UICONTROL 数据源描述]** | 选择“其他”作为数据源类型时数据源的说明。 |
 
@@ -607,7 +607,7 @@ ht-degree: 62%
 
 | 设置 | 描述 |
 | --- | --- |
-| **[!UICONTROL 人员 ID]** | 从可用标识的下拉菜单中选择人员ID。 这些身份已在Experience Platform的数据集架构中定义。 有关如何将身份映射用作人员ID的信息，请参阅[将身份映射用作人员ID](#id-map)。<p>如果没有可供选择的人员ID，则架构中不会定义任何人员ID。 请参阅[在 UI 中定义身份标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)以了解更多信息。 <p>所选人员 ID 的值区分大小写。例如，`abc123` 和 `ABC123` 是两个不同的值。 |
+| **[!UICONTROL 人员 ID]** | 从可用标识的下拉菜单中选择人员ID。 这些身份已在Experience Platform的数据集架构中定义。 有关如何将身份映射用作人员ID的信息，请参阅[将身份映射用作人员ID](#id-map)。<p>如果没有可供选择的人员ID，则架构中不会定义任何人员ID。 请参阅[在 UI 中定义身份标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)以了解更多信息。 <p>所选人员 ID 的值区分大小写。例如，`abc123` 和 `ABC123` 是两个不同的值。 <p>如果记录不包含您选择作为配置文件数据集的人员ID的标识值，则会跳过该记录。 |
 | **[!UICONTROL 全局帐户字段]** | 从可用标识的下拉菜单中选择一个全局帐户字段，以支持为数据集生成基于帐户的报表。 适用于已将全局帐户作为容器添加到连接时。 |
 | **[!UICONTROL 帐户字段]** | 从可用标识的下拉菜单中选择一个帐户字段，以支持为数据集生成基于帐户的报表。 适用于尚未将全局帐户作为容器添加到连接的情况。 |
 | **[!UICONTROL 数据源类型]** | 选择数据源类型。数据源类型包括： <ul><li>[!UICONTROL Web 数据]</li><li>[!UICONTROL 移动应用程序数据]</li><li>[!UICONTROL POS 数据]</li><li>[!UICONTROL CRM 数据]</li><li>[!UICONTROL 调查数据]</li><li>[!UICONTROL 呼叫中心数据]</li><li>[!UICONTROL 产品数据]</li><li> [!UICONTROL 帐户数据]</li><li> [!UICONTROL 事务数据]</li><li>[!UICONTROL 客户反馈数据]</li><li> [!UICONTROL 其他]</li></ul>该字段用于调查正在使用的数据源的类型。 |
@@ -625,7 +625,7 @@ ht-degree: 62%
 
 | 设置 | 描述 |
 |---|---|
-| **[!UICONTROL 键]** | 用于查找数据集的键。 |
+| **[!UICONTROL 键]** | 用于查找数据集的键。 <p>如果记录不包含您为查找数据集选择的键的值，则会跳过该记录。 |
 | **[!UICONTROL 匹配键]** | 某个事件数据集中要按其连接在一起的匹配键。如果此列表为空，则可能尚未添加或配置事件数据集。 |
 | **[!UICONTROL 数据源类型]** | 选择数据源类型。数据源类型包括： <ul><li>[!UICONTROL Web 数据]</li><li>[!UICONTROL 移动应用程序数据]</li><li>[!UICONTROL POS 数据]</li><li>[!UICONTROL CRM 数据]</li><li>[!UICONTROL 调查数据]</li><li>[!UICONTROL 呼叫中心数据]</li><li>[!UICONTROL 产品数据]</li><li> [!UICONTROL 帐户数据]</li><li> [!UICONTROL 事务数据]</li><li>[!UICONTROL 客户反馈数据]</li><li> [!UICONTROL 其他]</li></ul>该字段用于调查正在使用的数据源的类型。 |
 | **[!UICONTROL 数据源描述]** | 选择“其他”作为数据源类型时数据源的说明。 |
@@ -643,7 +643,7 @@ ht-degree: 62%
 
 | 设置 | 描述 |
 |---|---|
-| **[!UICONTROL 键]** | 用于查找数据集的键。 |
+| **[!UICONTROL 键]** | 用于查找数据集的键。 <p>如果记录不包含您为查找数据集选择的键的值，则会跳过该记录。 |
 | **[!UICONTROL 匹配键类型]** | 选择如何连接数据集：基于&#x200B;**[!UICONTROL 按字段匹配]**&#x200B;或&#x200B;**[!UICONTROL 按容器匹配]**。请参阅[按字段容器匹配](/help/getting-started/cja-b2b-concepts-features.md#match-by-container-or-field)，了解更多信息。 |
 | **[!UICONTROL 匹配键]** | 某个事件数据集中要按其连接在一起的匹配键。如果此列表为空，您可能尚未添加或配置事件数据集。<br/><br/>根据您选择的&#x200B;**[!UICONTROL 匹配键类型]**，选择适当的值：<ul><li>**[!UICONTROL 按字段匹配]**：![按字段匹配](assets/match-by-field.png)<br/>从&#x200B;**[!UICONTROL 匹配键]**&#x200B;下拉菜单中选择字段以与某个事件数据集连接。 如果此列表为空，则可能尚未添加或配置事件数据集。</li><li>**[!UICONTROL 按容器匹配]**： ![按容器匹配](assets/match-by-container.png)<br/>从&#x200B;**[!UICONTROL 匹配键]**&#x200B;下拉菜单中选择一个容器，用于与某个事件数据集连接。 您在设置连接时包括的容器决定了可供选择的容器。</li></ul> |
 | **[!UICONTROL 全局帐户字段]** | 用于基于帐户的报表的全局帐户ID。 |
@@ -694,7 +694,7 @@ ht-degree: 62%
 
 ### 过去的回填
 
-在界面中选择![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;时，**[!UICONTROL 过去的回填： _数据集名称_]**&#x200B;对话框将显示该数据集中的最新回填。
+在界面中选择![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;时，**[!UICONTROL 过去的回填： _数据集名称_]**对话框将显示该数据集中的最新回填。
 
 ## 数据集类型 {#dataset-types}
 
