@@ -4,69 +4,101 @@ title: 在Customer Journey Analytics中使用Data Insights代理可视化数据
 role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
-hidefromtoc: true
-hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: f3f3b34c904c1aeba3fbd07218f323ccd81974d4
 workflow-type: tm+mt
-source-wordcount: '1878'
-ht-degree: 5%
+source-wordcount: '1861'
+ht-degree: 3%
 
 ---
 
-# 在Customer Journey Analytics中使用Data Insights代理可视化数据
+# 在Customer Journey Analytics中使用Data Insights Agent可视化数据
 
-数据分析代理是Customer Journey Analytics中的AI助手的一部分，它是一个创新型人工智能会话代理，可快速高效地回答有关您数据的问题。 它使用数据视图中的组件并使用实际数据在Analysis Workspace中构建相关可视化图表。
+{{release-limited-testing}}
 
-使用Data Insights代理在Analysis Workspace中回答以数据为中心的问题，可以节省您原本要在Analysis Workspace中手动构建可视化并熟悉数据视图组件所花费的无数时间。
+>[!AVAILABILITY]
+>
+>在2025年11月30日之前，Data Insights Agent适用于符合条件的Customer Journey Analytics客户。 在该日期之后，如果要继续使用Data Insights Agent，则需要许可证。 请联系您的Adobe客户团队以获得许可流程方面的帮助。
+
+Data Insights Agent可从Customer Journey Analytics中的AI助手访问，是一个创新型人工智能会话代理，可快速高效地回答有关您数据的问题。 它使用数据视图中的组件并使用实际数据在Analysis Workspace中构建相关可视化图表。
+
+使用Data Insights Agent在Analysis Workspace中解答以数据为中心的问题，可以节省您原本要在Analysis Workspace中手动构建可视化并熟悉数据视图组件所花费的无数时间。
 
 AI助手中的![数据分析代理](assets/cja-ai-asst-da.gif)
 
-## Beta的范围内功能与范围外功能
+## 范围内功能与范围外功能
 
-### Beta内置功能
+
+
+### 范围内的功能
 
 | 支持的功能 | 描述 |
 | --- | --- |
 | **生成并更新可视化图表** | 生成自由格式表和相关的可视化图表（例如折线图、条形图、圆环图等）。<p>示例：*从2月到5月，跨SKU的利润是多少？* |
 | **支持的可视化图表类型** | <ul><li>线形图</li><li>多行</li><li>自由格式表</li><li>条形图</li><li>环形图</li><li>摘要数字</li></ul> |
-| **范围外提示检测** | 如果您提交超出范围的提示（如“导出此项目”），数据分析代理将通过让您知道问题超出范围来进行响应。 |
-| **澄清问题** | 如果您提的问题没有足够上下文可供数据分析代理回答，或者过于宽泛，数据分析代理会使用澄清问题或建议的选项进行响应。 示例： <p>**组件**<ul><li>量度：*您指的是哪个“收入”量度？*</li><li>Dimension：*您想关注以下“地区”中的哪一个？*</li><li>区段： *您要应用哪个“帐户”区段？*</li><li>日期范围： *对于“上个月”，您是指“上个月”还是“最近30天”？*</li></ul>**Dimension项目**：您指的是哪个“商店名称”？ (例如，存储#5274、存储#2949等。) |
-| **多圈** | 数据分析代理使用任何之前提示中的上下文对提示做出响应，允许用户更新可视化图表并询问后续问题。 示例： <ul><li>提示1：*从3月开始的趋势事件。*</li><li>提示2： *改为向我显示从3月到4月的数据*</li></ul> |
+| **范围外提示检测** | 如果您提交了一个超出范围的提示（如“导出此项目”），Data Insights Agent会通过告知您问题超出范围来进行响应。 |
+| **澄清问题** | 如果您提的问题没有足够上下文可供Data Insights Agent回答，或者过于宽泛，Data Insights Agent会用一个澄清问题或建议的选项进行响应。 示例： <p>**组件**<ul><li>量度：*您指的是哪个“收入”量度？*</li><li>Dimension：*您想关注以下“地区”中的哪一个？*</li><li>区段： *您要应用哪个“帐户”区段？*</li><li>日期范围： *对于“上个月”，您是指“上个月”还是“最近30天”？*</li></ul>**Dimension项目**：您指的是哪个“商店名称”？ (例如，存储#5274、存储#2949等。) |
+| **多圈** | Data Insights Agent会使用之前任何提示中的上下文来响应提示，以便用户更新可视化图表和提出后续问题。 示例： <ul><li>提示1：*从3月开始的趋势事件。*</li><li>提示2： *改为向我显示从3月到4月的数据*</li></ul> |
 | **可验证性** | 通过生成的自由格式表和数据可视化，可以验证数据的可验证性和正确性。 例如，如果用户在上月&#x200B;*询问*&#x200B;趋势订单，您可以确认在新生成的面板、数据可视化和自由格式表中选择了正确的量度（“订单”）和日期范围（“上个月”）。 |
 | **反馈** | <ul><li>竖起大拇指</li><li>拇指朝下</li><li>标志</li></ul> |
 
-### 范围外的Beta功能
+### 超出范围的功能
 
 | 不支持的功能 | 描述 |
 | --- | --- |
-| **内联摘要或响应** | 数据分析代理无法在聊天边栏中以用户提示的摘要答案进行内联响应。 范围外提示示例：<ul><li>*给我上一个提示的见解摘要。*</li><li>*从折线图可视化图表摘要突出显示内容。*</li></ul> |
-| **澄清问题** | 澄清问题仅限于组件和维度项目。 数据分析代理无法明确数据视图、可视化图表、数据粒度、比较和范围等内容。 当澄清无法使用的问题时，代理将默认为您最可能要求的内容。 如果它返回意外的可视化或数据粒度，您随后可以使用多圈/更新功能调整可视化图表和数据。 |
-| **Workspace操作/功能** | 除了构建和更新可视化图表之外，数据分析代理无法对Workspace中的用户执行操作。 例如，它不能执行以下任何操作：<ul><li>上下文操作UI按钮（添加到图表、新面板、新表）</li><li>共享</li><li>导出</li><li>下载</li><li>管理用户首选项</li><li>策划</li><li>管理数据视图</li><li>Analytics功能板应用程序</li><li>归因</li></ul> |
+| **内联摘要或响应** | Data Insights Agent无法在聊天边栏中以用户提示的摘要答案进行内联响应。 范围外提示示例：<ul><li>*给我上一个提示的见解摘要。*</li><li>*从折线图可视化图表摘要突出显示内容。*</li></ul> |
+| **澄清问题** | 澄清问题仅限于组件和维度项目。 Data Insights Agent无法阐明数据视图、可视化图表、数据粒度、比较和范围等内容。 当澄清无法使用的问题时，代理将默认为您最可能要求的内容。 如果它返回意外的可视化或数据粒度，您随后可以使用多圈/更新功能调整可视化图表和数据。 |
+| **Workspace操作/功能** | 除了构建和更新可视化图表之外，Data Insights Agent无法为Workspace中的用户执行任何操作。 例如，它不能执行以下任何操作：<ul><li>上下文操作UI按钮（添加到图表、新面板、新表）</li><li>共享</li><li>导出</li><li>下载</li><li>管理用户首选项</li><li>策划</li><li>管理数据视图</li><li>Analytics功能板应用程序</li><li>归因</li></ul> |
 | **不支持的可视化图表类型** | <ul><li>流量</li><li>流失</li><li>同类群组表</li><li>面积图，栈叠的面积图</li><li>堆叠的条形图</li><li>项目符号</li><li>组合</li><li>直方图</li><li>水平条形图、栈叠的水平条形图</li><li>关键量度摘要</li><li>散点图</li><li>概要变化</li><li>文本</li><li>树状图</li><li>维恩图</li></ul> |
 
-## 管理对Customer Journey Analytics中的数据分析代理的访问权限
+## 在Customer Journey Analytics中管理对Data Insights Agent的访问权限
 
-以下参数可管理对Customer Journey Analytics中的数据分析代理的访问权限：
+以下参数可管理对Customer Journey Analytics中Data Insights Agent的访问：
 
-* **解决方案访问**： Data Insights代理可用于Customer Journey Analytics Prime和Ultimate客户。 在Adobe Analytics中不可用。
+* **解决方案访问权限**： Data Insights Agent可供Customer Journey Analytics Prime和Ultimate客户使用。 在Adobe Analytics中不可用。
 
-* **合同访问**：如果您无法在AI助手中使用数据分析代理，请联系贵组织的管理员或Adobe客户代表。 在您的组织可以使用数据分析代理之前，您必须同意某些与GenAI相关的法律条款。
+* **合同访问权限**：如果您无法在AI助手中使用Data Insights Agent，请联系贵组织的管理员或Adobe帐户团队。 在贵组织可以使用Data Insights Agent之前，您必须同意与创作AI相关的某些法律条款。
 
-* **权限**：在[!UICONTROL Adobe Admin Console]中，[!UICONTROL 报表工具] **[!UICONTROL AI Assistant：数据可视化]**&#x200B;权限决定了对此工具的访问权限。 [产品轮廓管理员](https://helpx.adobe.com/cn/enterprise/using/manage-product-profiles.html)需要在 [!UICONTROL Admin Console] 中执行以下步骤：
-   1. 导航到&#x200B;**[!UICONTROL Admin Console]** > **[!UICONTROL 产品和服务]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL 产品配置文件]**
-   1. 选择要为其提供[!UICONTROL AI助手：产品知识]访问权限的产品配置文件的标题。
-   1. 在具体的产品轮廓中，选择&#x200B;**[!UICONTROL 权限]**。
-   1. 选择![编辑](/help/assets/icons/Edit.svg)来编辑&#x200B;**[!UICONTROL 报告工具]**。
-   1. 选择![AddCircle](/help/assets/icons/AddCircle.svg)以将&#x200B;**AI助手：产品知识**&#x200B;和&#x200B;**AI助手：数据分析**&#x200B;添加到&#x200B;**[!UICONTROL 包含的权限项]**。
+* **权限**：必须先在[!UICONTROL Adobe Admin Console]中授予必要的权限，用户才能访问Data Insights Agent。
+
+  要授予权限，[产品配置文件管理员](https://helpx.adobe.com/cn/enterprise/using/manage-product-profiles.html)必须在[!UICONTROL Admin Console]中完成以下步骤：
+   1. 在&#x200B;**[!UICONTROL Admin Console]**&#x200B;中，选择&#x200B;**[!UICONTROL 产品]**&#x200B;选项卡以查看&#x200B;**[!UICONTROL 所有产品和服务]**&#x200B;页面。
+   1. 选择&#x200B;**[!UICONTROL Customer Journey Analytics]**。
+   1. 在&#x200B;**[!UICONTROL 产品配置文件]**&#x200B;选项卡上，选择要为其提供[!UICONTROL AI助手：产品知识]访问权限的产品配置文件的标题。
+   1. 在特定产品配置文件中，选择&#x200B;**[!UICONTROL 权限]**&#x200B;选项卡。
+
+      Admin Console中的![权限选项卡](assets/ai-assistant-permissions-tab.png)
+
+   1. 在提供的表中的&#x200B;**[!UICONTROL 报告工具]**&#x200B;行中，选择编辑图标![编辑](/help/assets/icons/Edit.svg)。
+   1. 滚动到或搜索&#x200B;**[!UICONTROL AI助手：产品知识]**，然后选择此权限旁边的加号图标![AddCircle](/help/assets/icons/AddCircle.svg)。
+
+      **[!UICONTROL AI助手：产品知识]**&#x200B;权限已添加到&#x200B;**[!UICONTROL 包含的权限项]**&#x200B;列。
 
       ![添加权限](assets/ai-assistant-permissions.png)。
 
+   1. 选择&#x200B;**[!UICONTROL 数据视图工具]**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL Data Insights Agent]**&#x200B;权限旁边的加号图标![AddCircle](/help/assets/icons/AddCircle.svg)。
+
+      **[!UICONTROL Data Insights Agent]**&#x200B;权限已添加到&#x200B;**[!UICONTROL 包含的权限项]**&#x200B;列。
+
+      ![添加权限](assets/ai-assistant-permissions-dataviewtools.png)。
+
+   1. 选择&#x200B;**[!UICONTROL 数据视图]**&#x200B;选项卡以选择要为Data Insights Agent启用的数据视图。
+
+      >[!IMPORTANT]
+      >
+      >Data Insights Agent可以引用所包含的数据视图，而引用数据视图的时间与您在Admin Console中启用这些视图的同一天。
+
+   1. 搜索或滚动到要启用的数据视图，然后选择每个数据视图名称旁边的加号图标![AddCircle](/help/assets/icons/AddCircle.svg)。
+
+      您添加的每个数据视图都显示在&#x200B;**[!UICONTROL 包含的权限项]**&#x200B;列中。
+
+      ![添加权限](assets/ai-assistant-permissions-dataviews.png)。
+
    1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;来保存权限。
 
-请参阅 [访问权限控制](/help/technotes/access-control.md#access-control)，以了解更多信息。
+  有关访问控制的详细信息，请参阅[访问控制](/help/technotes/access-control.md#access-control)。
 
-## 访问AI助手中的数据分析代理
+## 在AI助手中访问Data Insights Agent
 
 1. 转到[experience.adobe.com](https://experience.adobe.com/)并使用Adobe ID登录。
 
@@ -74,23 +106,21 @@ AI助手中的![数据分析代理](assets/cja-ai-asst-da.gif)
 
 3. 在项目页面顶部的横幅中选择&#x200B;**[!UICONTROL 空白项目]**&#x200B;以打开一个新的空白项目。
 
-4. 确保为面板选择的数据视图与为Beta测试启用的Data Insights Agent数据视图相同。
-
-   如果您不确定，请联系Beta Slack渠道。
+4. 请确保为面板选择的数据视图是已启用与Data Insights Agent一起使用的数据视图，如[在Customer Journey Analytics中管理对Data Insights Agent的访问](#manage-access-to-data-insights-agent-in-customer-journey-analytics)中所述。
 
 5. 选择页面右上角的AI Assistant聊天图标。
 
    如果您看不到聊天图标，请联系您的管理员，以便管理员在Admin Console中启用以下功能：
 
-   * **[!UICONTROL AI助手：产品知识]**
+   * 报告工具： **[!UICONTROL AI助手：产品知识]**
 
-   * **[!UICONTROL AI助手：数据分析]**
+   * 数据视图工具： **[!UICONTROL Data Insights Agent]**
 
-   有关其他详细信息，管理员可以看到[这些说明](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ai-assistant/access)。
+   有关其他详细信息，请参阅[在Customer Journey Analytics中管理对Data Insights Agent的访问](#manage-access-to-data-insights-agent-in-customer-journey-analytics)。
 
    ![AI助手图标](/help/assets/ai-asst-icon.png)
 
-6. 在页面底部的&#x200B;**[!UICONTROL 关于Customer Journey Analytics]**&#x200B;对话框中，使用数据分析代理提出数据可视化问题。
+6. 在页面底部的&#x200B;**[!UICONTROL 关于Customer Journey Analytics]**&#x200B;对话框中，使用Data Insights Agent提出数据可视化问题。
 
    有关更多信息，请参阅以下示例。
 
@@ -102,7 +132,7 @@ AI助手中的![数据分析代理](assets/cja-ai-asst-da.gif)
 
 ![AI提示](/help/assets/ai-asst-prompt1.png)
 
-**响应：**&#x200B;数据分析代理通过查看数据视图中的数据（包括量度和组件）来收集分析。 它会将提示转换为数据范围内正确的维度和量度。
+**响应：** Data Insights Agent通过查看数据视图中的数据（包括量度和组件）来收集见解。 它会将提示转换为数据范围内正确的维度和量度。
 
 如您所见，它会自动生成一个线形图和一个自由格式表来显示7月的订单。
 
@@ -114,13 +144,13 @@ AI助手中的![数据分析代理](assets/cja-ai-asst-da.gif)
 
 **提示：**&#x200B;在提示窗口中，输入&#x200B;*“按地区显示收入”*。
 
-**响应：**&#x200B;数据分析代理智能地理解了“地区”的含义，即“客户地区”。 该报表会生成一个条形图，其中按地区显示收入的情况最好：
+**响应：** Data Insights Agent智能地理解了“地区”的意思，即“客户地区”。 该报表会生成一个条形图，其中按地区显示收入的情况最好：
 
 ![条形图](/help/assets/ai-asst-result2.png)
 
 ### 示例 3
 
-接下来，除了按地区了解收入之外，您还需要按地区查看利润数据。 您可以要求数据分析代理更新最新的可视化和自由格式表，而不是重复之前的提示。
+接下来，除了按地区了解收入之外，您还需要按地区查看利润数据。 您可以要求Data Insights Agent更新最新的可视化图表和自由格式表，而不是重复之前的提示。
 
 **提示：**&#x200B;在提示窗口中，键入&#x200B;*“添加利润”*。
 
@@ -134,13 +164,13 @@ AI助手中的![数据分析代理](assets/cja-ai-asst-da.gif)
 
 **提示：**&#x200B;在提示窗口中，输入&#x200B;*“按产品类别列出的收入比例”。*
 
-**响应：**&#x200B;同样，数据分析代理选择最合适的可视化图表（在本例中为&#x200B;**[!UICONTROL 圆环图]**&#x200B;可视化图表）来回答问题。
+**响应：**&#x200B;同样，Data Insights Agent选择最合适的可视化图表（在本例中为&#x200B;**[!UICONTROL 圆环图]**&#x200B;可视化图表）来回答问题。
 
 ![环形图](/help/assets/ai-asst-result3.png)
 
 ## 示例数据可视化提示
 
-以下是常见提示和数据分析代理用于响应这些提示的一些可视化图表示例。
+以下是常见提示的一些示例以及Data Insights Agent用于响应这些提示的可视化图表。
 
 | 示例提示 | 预期可视化图表 |
 | --- | --- |
@@ -159,21 +189,21 @@ AI助手中的![数据分析代理](assets/cja-ai-asst-da.gif)
 
 ## 提示最佳实践
 
-数据分析代理会处理每个用户提示提供的上下文，并尝试以自由格式表形式智能地响应最合适的可视化和组件。
+Data Insights Agent会处理每个用户提示提供的上下文，并尝试以自由格式表形式智能地响应最合适的可视化和组件。
 
 响应可能会因提示中使用的具体字词和短语而异，语言的细微变化可能会导致不同的结果。
 
 要获得最佳结果，请考虑以下准则：
 
-* 具体说明：包含确切的术语以缩小响应范围。 以下是一个特定提示示例：“上月在加利福尼亚的销售额”
+* **具体：**&#x200B;包含精确术语以缩小响应范围。 以下是一个特定提示示例：“上月在加利福尼亚的销售额”
 
-* 使用清晰的量度和区段：添加特定量度（如“收入”）、维度（如“网站名称”）、区段(如“iPhone用户”)和日期范围（如“过去三个月”），有助于Data Insights Agent重点关注正确的数据。
+* **使用清晰的量度、维度和区段：**&#x200B;添加特定的量度（如“收入”）、维度（如“网站名称”）、区段(如“iPhone用户”)和日期范围（如“过去三个月”）有助于Data Insights Agent关注正确的数据。
 
-* 提出直接问题：用措辞直接表示问题更便于数据见解代理提供清晰、相关的见解。 下面是一个在提示中直接提问的示例：“按产品类别列出的今年平均收入是多少？”
+* **直接提问：**&#x200B;使用措辞提问可让Data Insights Agent更轻松地提供清晰、相关的见解。 下面是一个在提示中直接提出问题的示例：“按产品类别列出的今年平均收入是多少？”
 
-请查看下表，了解可在数据分析代理的提示中使用的术语和短语示例，以及可期待的响应类型。
+请查看下表，了解可在Data Insights Agent的提示中使用的示例术语和短语，以及可期待的响应类型。
 
-这些示例旨在帮助您了解特定字词或结构如何影响数据洞察代理的输出，从而确保更精确和有价值的洞察。 数据分析代理使用创作AI，因此可视化图表或选定的数据可能会在类似提示中略有不同。
+这些示例旨在帮助您了解特定字词或结构如何影响Data Insight Agent的输出，从而确保更精确、更有价值的洞察。 Data Insights Agent使用创作AI，因此可视化图表或选定的数据可能会在类似提示中略有不同。
 
 | 预期结果 | 术语和短语示例 |
 | --- | --- |
@@ -183,24 +213,29 @@ AI助手中的![数据分析代理](assets/cja-ai-asst-da.gif)
 | 折线图可视化图表 | <ul><li>趋势</li><li>在[时间范围]内的[指标]</li></ul> |
 | 条形图可视化 | <ul><li>[Dimension]的[指标]</li></ul> |
 
-## Beta测试客户期望并请求反馈
+<!--
 
-提出每个问题后，请仔细查看助理提供的答案。 在提供反馈之前全面评估生成的可视化图表至关重要。
+## Beta testing expectations and requested feedback
 
-评估来自数据分析代理的响应时，请考虑以下事项：
+After posing each question, carefully review the assistant's provided answer. It's crucial to evaluate the generated visualizations comprehensively before providing feedback. 
 
-* 聊天边栏响应或模板：评估提供的文本响应。 根据提示的上下文，响应是否合适？
+Consider the following when evaluating a response from Data Insights Agent: 
 
-* 可视化图表：评估可视化图表。 对于您的问题，它是适当的还是预期的可视化图表？还是预期的可视化图表会不同？
+* Chat rail response or template: Evaluate the textual response provided. Is the response appropriate given the context of your prompt? 
 
-* 自由格式表：评估自由格式表。 自由格式表数据是否正确？ 是否在请求时划分数据？ 应用的区段是您请求还是期望的区段？
+* Visualization/chart: Evaluate the visualization. Is it the appropriate or expected visualization for your question, or would you have expected a different visualization?  
 
-* 错误消息/超出范围：如果提供了一般错误消息，指出问题超出范围，请提供反馈，说明您的提示是否认为超出范围的消息合适。 你的提示真的在范围之内吗？
+* Freeform table: Evaluate the freeform table. Is the freeform table data correct? Is it breaking down data where requested? Are the applied segments those that you requested or expected? 
 
-**对于每个响应，根据响应给出竖起或竖起的缩略图。**
+* Error Message / Out-of-Scope: If a generic error message is given stating the question is out of scope, provide feedback on whether you think the out-of-scope message is appropriate, given your prompt. Was your prompt actually in scope? 
 
-在向上或向下拇指选择后，请选择相关的多选反馈框。 如果要提供其他反馈，请在打开的文本框中添加注释。
+**For every response, give a thumbs up or thumbs down, based on the response.**
 
-## 问题和联系
+Following the thumbs up or thumbs down selection, please make a selection for the relevant multi-select feedback boxes. If you want to provide additional feedback, add notes in the open text box.
 
-* 在Beta Slack渠道中发送问题和反馈： #data-insights-agent-in-cja-beta
+## Questions and Contact
+
+* Send questions and feedback in the Beta Slack channel: #data-insights-agent-in-cja-beta
+
+-->
+
