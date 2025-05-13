@@ -4,10 +4,10 @@ title: 文本
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
-workflow-type: ht
-source-wordcount: '265'
-ht-degree: 100%
+source-git-commit: 75d45cd6a2149bb44949ec6e0f3808ea4a6995f5
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 86%
 
 ---
 
@@ -58,6 +58,10 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 ## 添加图像 {#images}
 
-要将图像添加到项目，在菜单中选择![图像](/help/assets/icons/Image.svg)，然后插入公共图像 URL。该图像 URL 必须可公开访问、以 `https` 开头并且格式为 `.png`、`.jpeg`、`.jpg` 或 `.gif`。支持静态图像和动画图像。
+若要向项目中添加图像，请在菜单中选择![图像](/help/assets/icons/Image.svg)，然后在&#x200B;**[!UICONTROL 图像URL]**（例如`https://www.adobe.com/uploads/2018/06/Adobe.png`）中指定图像URL，然后选择&#x200B;**[!UICONTROL 保存]**。
+
+该图像 URL 必须可公开访问、以 `https` 开头并且格式为 `.png`、`.jpeg`、`.jpg` 或 `.gif`。支持静态图像和动画图像。
+
+请注意，不支持拖放插入图像。
 
 ![选择图像图标的文本选项。](assets/image.png)
