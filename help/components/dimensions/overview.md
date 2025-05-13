@@ -3,10 +3,10 @@ title: 维度概述
 description: 了解什么是维度以及如何在Customer Journey Analytics中使用维度
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
-source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
+source-git-commit: 6cabedc5ed58dac450577fc3505be5f95b7a959d
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 26%
+source-wordcount: '235'
+ht-degree: 25%
 
 ---
 
@@ -45,3 +45,9 @@ Customer Journey Analytics管理员可以[在数据视图](/help/data-views/crea
 ## 添加维度描述
 
 Customer Journey Analytics管理员可以在数据视图内或直接在Analysis Workspace中为维度和其他组件添加描述。 有关如何向维度添加描述的信息，请参阅[添加组件描述](/help/components/add-component-descriptions.md)。
+
+>[!MORELIKETHIS]
+>
+>[使用事件深度功能发现更深入的客户洞察](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947#M576)
+>
+
