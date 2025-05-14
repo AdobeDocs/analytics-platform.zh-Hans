@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: baf392d4d576f07d906ccb7cee379bf5cdfd2a34
+source-git-commit: 3aa8986569d5bb5d7767f95cbdaead3f09440383
 workflow-type: tm+mt
-source-wordcount: '7199'
-ht-degree: 59%
+source-wordcount: '7259'
+ht-degree: 58%
 
 ---
 
@@ -75,6 +75,11 @@ ht-degree: 59%
 >abstract="选择整个连接的预期每日事件数的范围。"
 
 >[!CONTEXTUALHELP]
+>id="connection_change_personid"
+>title="更改人员 ID"
+>abstract="更改人员ID会删除连接中的所有现有数据，并根据新人员ID从数据集中重新摄取所有数据。 此操作可能会产生成本影响。 <br/><br/>当您选择&#x200B;**[!UICONTROL 继续]**&#x200B;时，报告可能会延迟到进程完成。"
+
+>[!CONTEXTUALHELP]
 >id="connection_change_accountid"
 >title="更改帐户 ID"
 >abstract="更改帐户ID会删除连接中的所有现有数据，并根据新帐户ID从数据集中重新摄取所有数据。 此操作可能会产生成本影响。 <br/><br/>当您选择&#x200B;**[!UICONTROL 继续]**&#x200B;时，报告可能会延迟到进程完成。"
@@ -106,7 +111,7 @@ ht-degree: 59%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建并编辑连接](https://video.tv.adobe.com/v/3409297/?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建并编辑连接](https://video.tv.adobe.com/v/343044/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -142,7 +147,7 @@ ht-degree: 59%
 
 ### Customer Journey Analytics
 
-在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**&#x200B;屏幕中：
+在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**屏幕中：
 
 ![无标题连接设置](assets/create-conn1.png)
 
@@ -163,7 +168,7 @@ ht-degree: 59%
    | 列 | 描述 |
    |---|---|
    | **[!UICONTROL 数据集名称]** | 选择您要提取到 Customer Journey Analytics 的一个或多个数据集，并选择&#x200B;**[!UICONTROL 添加。]**<p>（如果您有许多数据集可供选择，可以使用数据集列表上方的搜索数据集搜索栏搜索正确的数据集。） |
-   | ![更多](/help/assets/icons/More.svg) | 选择![更多](/help/assets/icons/More.svg)以打开选定数据集的上下文菜单。 您可以根据（类型）数据集选择：<ul><li>![CrossSize75](/help/assets/icons/CrossSize400.svg)  **[!UICONTROL 删除数据集]**&#x200B;到[删除数据集](#delete-a-dataset)。</li><li>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**&#x200B;以[编辑数据集](#edit-a-dataset)。</li><li>![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;以显示数据集[&#128279;](#past-backfills)的过去的回填。 |
+   | ![更多](/help/assets/icons/More.svg) | 选择![更多](/help/assets/icons/More.svg)以打开选定数据集的上下文菜单。 您可以根据（类型）数据集选择：<ul><li>![CrossSize75](/help/assets/icons/CrossSize400.svg)  **[!UICONTROL 删除数据集]**&#x200B;到[删除数据集](#delete-a-dataset)。</li><li>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**&#x200B;以[编辑数据集](#edit-a-dataset)。</li><li>![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;以显示数据集](#past-backfills)的[过去的回填。 |
    | **[!UICONTROL 上次更新时间]** | 仅对于事件数据集，此设置会自动设置为 Experience Platform 中基于事件的架构的默认时间戳字段。“N/A”表示该数据集不包含数据。 |
    | **[!UICONTROL 记录数]** | Experience Platform 中数据集上个月的总记录数。 |
    | **[!UICONTROL 架构]** | 在 Adobe Experience Platform 中创建数据集所依据的[架构。](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition) |
@@ -182,7 +187,7 @@ ht-degree: 59%
 
 [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
 
-在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**&#x200B;屏幕中：
+在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**屏幕中：
 
 ![无标题连接设置](assets/create-conn1-b2b.png)
 
@@ -205,7 +210,7 @@ ht-degree: 59%
    | 列 | 描述 |
    |---|---|
    | **[!UICONTROL 数据集名称]** | 选择您要提取到 Customer Journey Analytics 的一个或多个数据集，并选择&#x200B;**[!UICONTROL 添加。]**<p>（如果您有许多数据集可供选择，可以使用数据集列表上方的搜索数据集搜索栏搜索正确的数据集。） |
-   | ![更多](/help/assets/icons/More.svg) | 选择![更多](/help/assets/icons/More.svg)以打开选定数据集的上下文菜单。 您可以根据（类型）数据集选择：<ul><li>![CrossSize75](/help/assets/icons/CrossSize400.svg)  **[!UICONTROL 删除数据集]**&#x200B;到[删除数据集](#delete-a-dataset)。</li><li>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**&#x200B;以[编辑数据集](#edit-a-dataset)。</li><li>![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;以显示数据集[&#128279;](#past-backfills)的过去的回填。 |
+   | ![更多](/help/assets/icons/More.svg) | 选择![更多](/help/assets/icons/More.svg)以打开选定数据集的上下文菜单。 您可以根据（类型）数据集选择：<ul><li>![CrossSize75](/help/assets/icons/CrossSize400.svg)  **[!UICONTROL 删除数据集]**&#x200B;到[删除数据集](#delete-a-dataset)。</li><li>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**&#x200B;以[编辑数据集](#edit-a-dataset)。</li><li>![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;以显示数据集](#past-backfills)的[过去的回填。 |
    | **[!UICONTROL 上次更新时间]** | 仅对于事件数据集，此设置会自动设置为 Experience Platform 中基于事件的架构的默认时间戳字段。“N/A”表示该数据集不包含数据。 |
    | **[!UICONTROL 记录数]** | Experience Platform 中数据集上个月的总记录数。 |
    | **[!UICONTROL 架构]** | 在 Adobe Experience Platform 中创建数据集所依据的[架构。](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition) |
@@ -228,231 +233,133 @@ ht-degree: 59%
 
 您[添加一个或多个数据集](#add-datasets)或[编辑现有数据集](#edit-a-dataset)作为连接工作流的一部分。
 
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_primaryid"
 >title="主 ID"
 >abstract="为您的连接选择正确的主要 ID：B2C 场景的人员。B2B 场景帐户。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_optionalcontainers"
 >title="可选容器"
 >abstract="选择其他容器。<br/><br/>**[!UICONTROL 全球帐户&#x200B;]**：启用连接中的全球帐户配置。<br/>**[!UICONTROL 机会]**：启用连接中的机会配置。<br/>**[!UICONTROL 购买群组&#x200B;]**：启用连接中的购买群组配置。"
 
-<!-- markdownlint-enable MD034 -->
 
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_connection_personid"
->title="人员 ID"
->abstract="在 Experience Platform 中，从在数据集架构中定义的可用身份标识中选择人员 ID。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountid"
 >title="帐户 ID"
 >abstract="从 Experience Platform 的数据集架构中定义的可用身份标识中选择一个帐户 ID（帐户的唯一身份标识符）。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountfield"
 >title="帐户字段"
 >abstract="选择代表帐户 ID（帐户的唯一标识符）的字段。"
-
-<!-- markdownlint-enable MD034 -->
-
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_globalaccountid"
 >title="全球帐户 ID"
 >abstract="从您在Experience Platform的数据集架构中定义的可用标识中选择一个全局帐户ID（全局帐户的唯一标识符）。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_opportunityid"
 >title="机会 ID"
 >abstract="从您在Experience Platform的数据集架构中定义的可用身份中选择一个机会ID（机会的唯一标识符）。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_buyinggroupid"
 >title="购买群组 ID"
 >abstract="从您在Experience Platform的数据集架构中定义的可用标识中选择一个购买组ID（购买组的唯一标识符）。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
+>[!CONTEXTUALHELP]
+>id="cja_connection_personid"
+>title="人员 ID"
+>abstract="从您在Experience Platform的数据集架构中定义的可用身份中选择一个人员ID（人员的唯一标识符）。"
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
 >title="匹配键类型"
 >abstract="选择联接方式：基于按字段的匹配或按容器匹配。<br/><br/>**[!UICONTROL 按字段匹配&#x200B;]**：选择要与某个事件数据集连接的字段如果此列表为空，则可能尚未添加或配置事件数据集。<br/>**[!UICONTROL 按容器匹配]**：选择要与某个事件数据集连接的容器。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_importnewdata"
 >title="导入新数据"
 >abstract="任何添加到Experience Platform数据集中的新批次将自动添加到此连接中，并可供分析。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_datasetbackfill"
 >title="数据集回填"
 >abstract="此选项从Experience Platform为连接中的此数据集回填现有（历史）数据。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_transformdataset"
 >title="转换数据集"
 >abstract="此选项会转换数据集，以便在B2B场景下用于基于人员的查找。 启用后，数据集的转换是不可逆的。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_connectionmap"
 >title="连接图"
 >abstract="连接图显示事件、人员、帐户和相关查找数据集（如机会、营销活动成员等）之间的关系。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_primaryid"
 >title="主 ID"
 >abstract="为您的连接选择正确的主要 ID：B2C 场景的人员。B2B 场景帐户。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connection_optionalcontainers"
 >title="可选容器"
 >abstract="选择其他容器。<br/><br/>**[!UICONTROL 全球帐户&#x200B;]**：启用连接中的全球帐户配置。<br/>**[!UICONTROL 机会]**：启用连接中的机会配置。<br/>**[!UICONTROL 购买群组&#x200B;]**：启用连接中的购买群组配置。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_personid"
 >title="人员 ID"
 >abstract="在 Experience Platform 中，从在数据集架构中定义的可用身份标识中选择人员 ID。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connection_accountid"
 >title="帐户 ID"
 >abstract="从 Experience Platform 的数据集架构中定义的可用身份标识中选择一个帐户 ID（帐户的唯一身份标识符）。"
 
-<!-- markdownlint-enable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_accountfield"
 >title="帐户字段"
 >abstract="选择代表帐户 ID（帐户的唯一标识符）的字段。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connection_globalaccountid"
 >title="全球帐户 ID"
 >abstract="从您在Experience Platform的数据集架构中定义的可用标识中选择一个全局帐户ID（全局帐户的唯一标识符）。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_opportunityid"
 >title="机会 ID"
 >abstract="从您在Experience Platform的数据集架构中定义的可用身份中选择一个机会ID（机会的唯一标识符）。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connection_buyinggroupid"
 >title="购买群组 ID"
 >abstract="从您在Experience Platform的数据集架构中定义的可用标识中选择一个购买组ID（购买组的唯一标识符）。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_matchingkey"
 >title="匹配键类型"
 >abstract="选择联接方式：基于按字段的匹配或按容器匹配。<br/><br/>**[!UICONTROL 按字段匹配&#x200B;]**：选择要与某个事件数据集连接的字段如果此列表为空，则可能尚未添加或配置事件数据集。<br/>**[!UICONTROL 按容器匹配]**：选择要与某个事件数据集连接的容器。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connection_importnewdata"
 >title="导入新数据"
 >abstract="任何添加到Experience Platform数据集中的新批次将自动添加到此连接中，并可供分析。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_datasetbackfill"
 >title="数据集回填"
 >abstract="此选项从Experience Platform为连接中的此数据集回填现有（历史）数据。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_transformdataset"
 >title="转换数据集"
 >abstract="此选项会转换数据集，以便在B2B场景下用于基于人员的查找。 启用后，数据集的转换是不可逆的。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connection_connectionmap"
@@ -491,7 +398,7 @@ ht-degree: 59%
 
 1. 选择一个或多个数据集并选择&#x200B;**[!UICONTROL 下一个]**。至少一个事件或摘要数据集必须是连接的一部分。
 
-1. 在&#x200B;**[!UICONTROL 添加数据集]**&#x200B;对话框的➋ **[!UICONTROL 数据集设置]**&#x200B;步骤中，逐个配置每个所选数据集[&#128279;](#dataset-settings)的设置。
+1. 在&#x200B;**[!UICONTROL 添加数据集]**&#x200B;对话框的➋ **[!UICONTROL 数据集设置]**&#x200B;步骤中，逐个配置每个所选数据集](#dataset-settings)的[设置。
 
    ![添加数据集](assets/add-dataset.png)
 
@@ -507,7 +414,7 @@ ht-degree: 59%
 1. 为要编辑的数据集表中列出的数据集选择![更多](/help/assets/icons/More.svg)
 1. 选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**。
 
-1. 在&#x200B;**[!UICONTROL 编辑数据集： _数据集名称_]**&#x200B;对话框中配置[数据集设置](#dataset-settings)。
+1. 在&#x200B;**[!UICONTROL 编辑数据集： _数据集名称_]**对话框中配置[数据集设置](#dataset-settings)。
 
    ![编辑数据集](assets/edit-dataset.png)
 
@@ -668,7 +575,7 @@ ht-degree: 59%
 
 ### 过去的回填
 
-在界面中选择![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;时，**[!UICONTROL 过去的回填： _数据集名称_]**&#x200B;对话框将显示该数据集中的最新回填。
+在界面中选择![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;时，**[!UICONTROL 过去的回填： _数据集名称_]**对话框将显示该数据集中的最新回填。
 
 ## 数据集类型 {#dataset-types}
 
@@ -704,7 +611,7 @@ ht-degree: 59%
 
 ![连接图](assets/connectionmap.png)
 
-此映射可帮助您更好地了解如何定义连接以及使用标识符在事件、配置文件、查找和摘要数据集之间建立关系。
+此映射可帮助您更好地了解您如何定义连接，以及如何使用容器和标识符在事件、配置文件、查找和摘要数据集之间建立关系。
 
 
 ## 使用数字字段作为查找键和查找值 {#numeric}
