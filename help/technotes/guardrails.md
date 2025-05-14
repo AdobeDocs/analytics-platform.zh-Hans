@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 17cd5170e62b410ebf6118c6ac562d20b81b4e21
 workflow-type: tm+mt
-source-wordcount: '1760'
-ht-degree: 7%
+source-wordcount: '2012'
+ht-degree: 9%
 
 ---
 
@@ -53,6 +53,10 @@ ht-degree: 7%
 | 每个项目的面板数 | 15 | 系统强制的护栏 | 每个项目的最大[面板](../analysis-workspace/home.md#panels)数。 |
 | 每个面板的可视化图表 | 25 | 系统强制的护栏 | 每个面板的[可视化图表的最大数量](../analysis-workspace/home.md#visualizations)。 |
 | 每个自由格式表的派生字段 | 5 | 系统强制的护栏 | 单个自由格式表中不同派生字段的最大数量。 |
+| 每个项目的评论 <p>**注意：**&#x200B;对项目的注释功能处于版本的有限测试阶段，可能尚未在环境中可用。 当该功能正式发布时，将删除此说明。有关Customer Journey Analytics发布过程的信息，请参阅[Customer Journey Analytics功能发布](/help/release-notes/releases.md)。</p> | 1,000 | 系统强制的护栏 | 每个项目的最大评论数。 |
+| 每个评论的回复 <p>**注意：**&#x200B;对项目的注释功能处于版本的有限测试阶段，可能尚未在环境中可用。 当该功能正式发布时，将删除此说明。有关Customer Journey Analytics发布过程的信息，请参阅[Customer Journey Analytics功能发布](/help/release-notes/releases.md)。</p> | 100 | 系统强制的护栏 | 每个评论的最大回复数。 |
+| 每个评论的图像数 <p>**注意：**&#x200B;对项目的注释功能处于版本的有限测试阶段，可能尚未在环境中可用。 当该功能正式发布时，将删除此说明。有关Customer Journey Analytics发布过程的信息，请参阅[Customer Journey Analytics功能发布](/help/release-notes/releases.md)。</p> | 5 | 系统强制的护栏 | 每个评论的最大图像数。 |
+| 图像大小 <p>**注意：**&#x200B;对项目的注释功能处于版本的有限测试阶段，可能尚未在环境中可用。 当该功能正式发布时，将删除此说明。有关Customer Journey Analytics发布过程的信息，请参阅[Customer Journey Analytics功能发布](/help/release-notes/releases.md)。</p> | 2 | 系统强制的护栏 | 项目中评论的最大每图像上传大小（以MB为单位） |
 
 {style="table-layout:auto"}
 
@@ -111,8 +115,8 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
 | 项目 | 50,000 | 系统强制的护栏 | 组织的最大项目数。 |
-| 数据视图 | 2,000 | 系统强制的护栏 | 组织的最大[数据视图](../data-views/data-views.md)数。 |
-| 数据视图 | 500-1000 | 系统强制的护栏 | 连接的最大数据视图数。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
+| 数据视图  | 2,000 | 系统强制的护栏 | 组织的最大[数据视图](../data-views/data-views.md)数。 |
+| 数据视图  | 500-1000 | 系统强制的护栏 | 连接的最大数据视图数。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
 | 数据集 | 100 | 系统强制的护栏 | 每个连接最多[个数据集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=zh_Hans)。 |
 | 连接 | 1000 | 系统强制的护栏 | 组织的最大[连接数](../connections/overview.md)。 |
 | 连接标题 | 500 | 系统强制的护栏 | 连接标题的最大字符数。 |
@@ -138,7 +142,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hans)。
+另请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
 
 
 ## 目标数据导出
@@ -150,7 +154,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [数据集导出护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/guardrails#dataset-exports)
+另请参阅Experience Platform [数据集导出护栏](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## 数据登陆区
@@ -238,7 +242,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 >[!NOTE]
 >
->以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 有关详细信息，请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hans)。
+>以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 有关详细信息，请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
 
 | 数据流 | 预期延迟 |
 |---|---|
