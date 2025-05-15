@@ -5,9 +5,9 @@ title: 共享项目
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: de0b51096c772ceb180e759b2dd992e3cf2a009d
+source-git-commit: 1474a29dc9063ea65a78d34b3a2eb9861a71ee4e
 workflow-type: tm+mt
-source-wordcount: '2070'
+source-wordcount: '2091'
 ht-degree: 99%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 99%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的项目共享](https://video.tv.adobe.com/v/40034/?quality=12&learn=on&captions=chi_hans){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的项目共享](https://video.tv.adobe.com/v/36207/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 {{videoaa}}
 
@@ -61,9 +61,9 @@ ht-degree: 99%
 
 与组织中的用户和组共享特定项目角色时，请考虑以下事项：
 
-* 项目角色（**[!UICONTROL 编辑原始版本]**、**[!UICONTROL 编辑副本]**&#x200B;和&#x200B;**[!UICONTROL 只读]**）与用户和特定项目 ID 关联。项目角色与 [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=zh-Hans) 中管理的用户权限无关。
+* 项目角色（**[!UICONTROL 编辑原始版本]**、**[!UICONTROL 编辑副本]**&#x200B;和&#x200B;**[!UICONTROL 只读]**）与用户和特定项目 ID 关联。项目角色与 [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html) 中管理的用户权限无关。
 
-* 在 Customer Journey Analytics 中，群组由 [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=zh-Hans) 中的产品轮廓定义。管理员可以共享到任何组，包括“全部”组。除“全部”组外，非管理员可以共享到其所属的任何组。
+* 在 Customer Journey Analytics 中，群组由 [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html) 中的产品轮廓定义。管理员可以共享到任何组，包括“全部”组。除“全部”组外，非管理员可以共享到其所属的任何组。
 
 * 如果用户分配到了多个角色，将始终获得权限最高的角色体验。如果同时将用户添加为个人和组成员，则可能发生这种情况。例如，如果作为个人授予用户&#x200B;**[!UICONTROL 编辑原始版本]**&#x200B;角色，并作为组成员授予用户&#x200B;**[!UICONTROL 只读]**&#x200B;角色，则该用户将获得&#x200B;**[!UICONTROL 编辑原始版本]**&#x200B;项目体验。
 
@@ -100,7 +100,7 @@ ht-degree: 99%
 
 1. （条件）如果您共享单个项目，请选择是否在共享项目时启用以下选项：
 
-   * **共享嵌入的项目组件：**&#x200B;与所有接收人共享区段、计算量度和日期范围。 共享后，这些组件将显示在收件人Workspace的组件下拉菜单中。 此设置不具有持续性，属于分享时的一次性操作。
+   * **共享嵌入的项目组件：**&#x200B;与所有接收人共享区段、计算量度和日期范围。共享后，这些组件将显示在接收者 Workspace 的“组件”下拉菜单中。此设置不具有持续性，属于分享时的一次性操作。
 
    * **设置为收件人的登陆页面：** 将此页面设置为收件人的登陆页面。此设置不具有持续性，属于分享时的一次性操作。
 
@@ -130,6 +130,12 @@ ht-degree: 99%
 
 ## 与任何人共享项目（无需登录） {#share-public-link}
 
+>[!CONTEXTUALHELP]
+>id="workspace_share_with_anyone_require_aec_authentication"
+>title="需要 Experience Cloud 身份验证"
+>abstract="贵组织要求用户登录Experience Cloud才能使用此链接。"
+
+
 可为无权访问 Customer Journey Analytics 的人员授予对 Analysis Workspace 项目的[只读访问权限](/help/analysis-workspace/curate-share/view-only-projects.md)。其中可包括：
 
 * 您组织之外的人员
@@ -154,7 +160,7 @@ ht-degree: 99%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [与任何人分享](https://video.tv.adobe.com/v/3452472/?quality=12&learn=on&captions=chi_hans){target="_blank"}，观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [与任何人分享](https://video.tv.adobe.com/v/3420093/?quality=12&learn=on){target="_blank"}，观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -209,7 +215,7 @@ ht-degree: 99%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Analysis Workspace 中共享嵌入的组件](https://video.tv.adobe.com/v/327500/?quality=12&learn=on&captions=chi_hans){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Analysis Workspace 中共享嵌入的组件](https://video.tv.adobe.com/v/24713/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 {{videoaa}}
 
