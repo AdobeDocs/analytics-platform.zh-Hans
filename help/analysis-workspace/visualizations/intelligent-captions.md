@@ -4,9 +4,9 @@ title: 智能标题
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 4d566411778774d21be04c4f3d6cf2ffabed6db2
-workflow-type: ht
-source-wordcount: '876'
+source-git-commit: af8d4f07498211931e9549cadd4746eebb9f56f4
+workflow-type: tm+mt
+source-wordcount: '754'
 ht-degree: 100%
 
 ---
@@ -16,65 +16,10 @@ ht-degree: 100%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_area"
->title="智能标题：面积"
->abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化数据。"
+>id="workspace_intelligentcaptions"
+>title="智能标题"
+>abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化图表的数据。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_bar"
->title="智能标题：条形图"
->abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化数据。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_donut"
->title="智能标题：环形图"
->abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化数据。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_horizontalbar"
->title="智能标题：水平条形图"
->abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化数据。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_line"
->title="智能标题：线形图"
->abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化数据。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_fallout"
->title="智能标题：流失"
->abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化数据。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_flow"
->title="智能标题：流量"
->abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化数据。"
-
-<!-- markdownlint-enable MD034 -->
 
 智能标题功能使用先进的生成式 AI，为自然语言中最常用的工作区可视化内容提供关键洞察。
 
@@ -85,7 +30,7 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [智能标题](https://video.tv.adobe.com/v/3443148/?quality=12&learn=on&captions=chi_hans){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [智能标题](https://video.tv.adobe.com/v/3420131/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 
