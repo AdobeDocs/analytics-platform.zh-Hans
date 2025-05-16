@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
+source-git-commit: 7c293f2ab0f46695a53572d1231fb866a23688cd
 workflow-type: tm+mt
-source-wordcount: '1223'
-ht-degree: 97%
+source-wordcount: '1225'
+ht-degree: 99%
 
 ---
 
@@ -149,9 +149,9 @@ ht-degree: 97%
    + [派生字段](../data-views/derived-fields/derived-fields.md)
    + [摘要数据](../data-views/summary-data.md)
    + [标签和政策](../data-views/data-governance.md)
-   + 共享的量度和维度{#shared-metrics-dimensions}
+   + 共享量度和维度{#shared-metrics-dimensions}
       + [概述](/help/data-views/shared-metrics-dimensions/smd-overview.md)
-      + [编辑者](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
+      + [编辑器](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
 
 + 工具 {#tools}
    + 资产转移 {#asset-transfer}
@@ -169,7 +169,7 @@ ht-degree: 97%
       + [概述](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [创建项目](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [打开项目](/help/analysis-workspace/build-workspace-project/open-projects.md)
-      + [项目评论](/help/analysis-workspace/build-workspace-project/comment-projects.md)
+      + [对项目的注释](/help/analysis-workspace/build-workspace-project/comment-projects.md)
       + [保存项目](../analysis-workspace/build-workspace-project/save-projects.md)
       + Workspace 中的文件夹 {#workspace-folders}
          + [关于文件夹](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
@@ -387,17 +387,17 @@ ht-degree: 97%
 
 + Report Builder {#cja-reportbuilder}
    + [概述](../report-builder/rb-overview.md)
-   + [Report Builder设置](../report-builder/report-builder-setup.md)
-   + [创建数据块](../report-builder/create-a-data-block.md)
-   + [Report Builder中心](../report-builder/report-builder-hub.md)
+   + [Report Builder 设置](../report-builder/report-builder-setup.md)
+   + [创建一个数据块](../report-builder/create-a-data-block.md)
+   + [Report Builder 中心](../report-builder/report-builder-hub.md)
    + [选择数据视图](../report-builder/select-data-view.md)
-   + [选择日期范围](../report-builder/select-date-range.md)
-   + [使用区段](../report-builder/work-with-filters.md)
+   + [选择一个日期范围](../report-builder/select-date-range.md)
+   + [使用区段工作](../report-builder/work-with-filters.md)
    + [过滤器维度](../report-builder/filter-dimensions.md)
    + [管理数据块](../report-builder/manage-reportbuilder.md)
    + [计划工作簿](../report-builder/schedule-reportbuilder.md)
-   + [受限制的标签](../report-builder/restricted-labels.md)
-   + [Report Builder设置](../report-builder/report-builder-settings.md)
+   + [限制标签](../report-builder/restricted-labels.md)
+   + [Report Builder 设置](../report-builder/report-builder-settings.md)
 
 
 + 报告活动管理器 {#reporting-activity-manager}
@@ -411,6 +411,7 @@ ht-degree: 97%
    + [基于图形的拼合](/help/stitching/gbs.md)
    + [使用拼合](/help/stitching/use-stitching.md)
    + [创建和管理拼合数据集](/help/stitching/stitching-ui.md)
+   + [验证拼接](/help/stitching/validate.md)
    + [常见问题解答](/help/stitching/faq.md)
 
 + Adobe 集成  {#integrations}
