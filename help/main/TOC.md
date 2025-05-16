@@ -182,7 +182,7 @@ ht-degree: 99%
    + 模板 {#templates}
       + [使用模板](../analysis-workspace/templates/use-templates.md)
       + [创建和管理模板](../analysis-workspace/templates/create-templates.md)
-   + 可视化内容 {#visualizations}
+   + 可视化图表 {#visualizations}
       + [概述](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [管理数据源](../analysis-workspace/visualizations/t-sync-visualization.md)
       + [智能题注](../analysis-workspace/visualizations/intelligent-captions.md)
@@ -478,7 +478,7 @@ ht-degree: 99%
 
 + 故障排除 {#troubleshooting}
    + [比较数据](../troubleshooting/compare.md)
-   + [指标和受众的一致性](../troubleshooting/consistency-rcdp-cja.md)
+   + [量度和受众的一致性](../troubleshooting/consistency-rcdp-cja.md)
    + [缺乏权限](../troubleshooting/lack-of-permissions.md)
 
 + 技术说明 {#technotes}

@@ -1,29 +1,29 @@
 ---
 title: 维度概述
-description: 了解什么是维度以及如何在Customer Journey Analytics中使用维度
+description: 了解维度是什么以及如何在 Customer Journey Analytics 中使用它们
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
 source-git-commit: 6cabedc5ed58dac450577fc3505be5f95b7a959d
 workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 25%
+ht-degree: 86%
 
 ---
 
 # 维度概述
 
-维度是Customer Journey Analytics中用于分析数据的组件类型。 例如，在[Analysis Workspace](/help/analysis-workspace/home.md)或[Report Builder](/help/report-builder/rb-overview.md)中构建报表时，使用维度。
+维度是 Customer Journey Analytics 中用于分析数据的一个组件类型。例如，在 [Analysis Workspace](/help/analysis-workspace/home.md) 或在 [Report Builder](/help/report-builder/rb-overview.md) 中构建报告时会使用维度。
 
-Customer Journey Analytics维度的类型不受限制；值可以是数字、文本、对象、列表或所有这些的混合。
+Customer Journey Analytics 维度是一种无限类型；值可以是数字、文本、对象、列表或所有这些值的组合。
 
-Customer Journey Analytics中的基本报表根据一列指标（通常是数值）显示维度行（通常是字符串值）。
+Customer Journey Analytics 中的基本报告显示一个量度列（通常是数字值）的多个维度行（通常是字符串值）。
 
-例如，如果将“页面”维度与“人员”量度相结合，您将获得一个排名报表，其中按人员显示您最常访问的页面：
+例如，如果将“页面”维度与“人员”量度相结合，您就会获得一个显示各人员最常访问页面的排名报告：
 
 | 页面 | 人员 |
 | --- | ---: |
 | 主页 | 800 |
-| 产品页 | 500 |
+| 产品页面 | 500 |
 | 购买页面 | 100 |
 
 {style="table-layout:fixed"}
@@ -33,7 +33,7 @@ Customer Journey Analytics中的基本报表根据一列指标（通常是数值
 
 ## 创建维度
 
-Customer Journey Analytics管理员可以[在数据视图](/help/data-views/create-dataview.md#components)中创建维度。
+Customer Journey Analytics 管理员可以[在数据视图中创建维度](/help/data-views/create-dataview.md#components)。
 
 ## 标准维度
 
@@ -44,7 +44,7 @@ Customer Journey Analytics管理员可以[在数据视图](/help/data-views/crea
 
 ## 添加维度描述
 
-Customer Journey Analytics管理员可以在数据视图内或直接在Analysis Workspace中为维度和其他组件添加描述。 有关如何向维度添加描述的信息，请参阅[添加组件描述](/help/components/add-component-descriptions.md)。
+Customer Journey Analytics 管理员可以在数据视图中或直接在 Analysis Workspace 中添加维度和其他组件的描述。有关如何添加维度描述的信息，请参阅[添加组件描述](/help/components/add-component-descriptions.md)。
 
 >[!MORELIKETHIS]
 >

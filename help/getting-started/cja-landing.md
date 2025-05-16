@@ -7,7 +7,7 @@ exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
 workflow-type: tm+mt
 source-wordcount: '737'
-ht-degree: 85%
+ht-degree: 91%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 85%
 
 >[!TAB Content Analytics]
 
-Content Analytics 可让您快速轻松地调查大量内容数据，以发现趋势、识别异常、判断内容疲劳度，并从内容曝光中获得洞察。
+Content Analytics 可让您快速轻松地调查大量内容数据，以了解趋势、发现异常、识别内容疲劳并从内容曝光度中获取见解。
 
 [![图像](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
 
@@ -38,7 +38,7 @@ Content Analytics 可让您快速轻松地调查大量内容数据，以发现�
 
 >[!TAB 共享量度和维度]
 
-共享量度和维度提供了一个中央位置，用于管理可用于任意数量的数据视图的维度和量度。 这些组件对于使用多个数据视图的组织特别有用，尤其是当这些数据视图共享通用组件设置时。
+共享量度和维度是一个用于管理维度和量度的集中地点，使其可以在任意数量的数据视图中使用。这些组件对于使用多个数据视图的组织来说特别有用，尤其是在这些数据视图共享通用组件设置的情况下。
 
 [![图像](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 
@@ -86,7 +86,7 @@ Allows you to bring in time-series data that does not have a person ID. This tim
 
 >[!TAB 基于图形的拼接*]
 
-通过基于图形的拼接，您可以使用体验平台身份标识服务提供的身份标识图更好地了解客户历程： <ul><li>连接具有不同标识符的数据集，无需提取、转换和加载额外数据以反映单个标识符。</li> <li>通过跨数据集共享身份标识，提高单个数据集中首选或黄金身份标识的覆盖率。</li><li>将 Real-Time Customer Data Platform 和 Journey Optimizer 中创建的轮廓与 Customer Journey Analytics 中的人员进行对齐。</li></ul>
+通过基于图形的拼接，您可以使用体验平台身份标识服务提供的身份标识图更好地了解客户历程： <ul><li>连接具有不同标识符的数据集，无需提取、转换和加载额外数据以反映单个标识符。</li> <li>通过跨数据集共享身份标识，提高单个数据集中首选或黄金身份标识的覆盖率。</li><li>将 Real-Time Customer Data Platform 和 Journey Optimizer 中创建的配置文件与 Customer Journey Analytics 中的人员进行对齐。</li></ul>
 
 [![图像](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
 
