@@ -6,15 +6,15 @@ feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
 source-git-commit: 836c793ae74185728af03636b0ba3e838f46f05d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '257'
-ht-degree: 12%
+ht-degree: 100%
 
 ---
 
 # 连接概述
 
-连接允许Customer Journey Analytics产品管理员与其他[!DNL &#x200B; Experience Platform]数据源（如事件、查找、配置文件和摘要数据集）建立连接。 通过这些连接，可将来自连接的数据集成到派生数据视图。 连接是Customer Journey Analytics的基础，是从[!DNL Experience Platform]源数据集创建的。
+通过连接，Customer Journey Analytics 产品管理员可以连接不同的 [!DNL  Experience Platform] 数据源，例如事件、查找、配置文件和摘要数据集。通过这些连接可用将来自连接的数据集成到一个派生的数据视图中。连接是 Customer Journey Analytics 的基础，它是从 [!DNL Experience Platform] 源数据集创建的。
 
 >[!IMPORTANT]
 >
@@ -23,7 +23,7 @@ ht-degree: 12%
 
 ## 连接工作流程
 
-![连接工作流](assets/connection-workflow.png)
+![连接工作流程](assets/connection-workflow.png)
 
 <!-- Outdated interface 
 
@@ -35,22 +35,22 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configuring conn
 
 -->
 
-在概览中，连接工作流允许您：
+从较高层面看，连接工作流程允许您：
 
 | 界面 | 描述 |
 |:---:|---|
-| ➊AEM | 从连接管理器中[管理您的连接和总体使用情况](manage-connections.md) Customer Journey Analytics。 |
-| ➋AEM | [检查连接](manage-connections.md#connection-details)的详细信息，如已摄取、已跳过或删除的数据集记录。 |
-| ➌AEM | [创建或编辑连接的配置](create-connection.md#create-or-edit-a-connection)，如滚动数据窗口、要使用的沙盒、连接中包含的数据集等等。 |
-| ➍AEM | [将数据集添加到连接](create-connection.md#add-datasets)。 您的连接应至少具有一个事件或摘要数据集，但可以包含各种事件、个人资料、查找和摘要数据集。 |
-| ➎AEM | [为您添加的数据集配置设置](create-connection.md#dataset-settings)。 您可以决定如何根据基于人员的通用标识符或基于[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}帐户的标识符来链接不同的数据集。 |
-| ➏AEM | [编辑现有数据集](create-connection.md#edit-a-dataset)的设置。 您始终可以在以后的阶段重新访问数据集设置。 |
+| ➊ | 从连接管理器管理 Customer Journey Analytics 的[连接和总体使用情况](manage-connections.md)。 |
+| ➋ | [检查连接的详细信息](manage-connections.md#connection-details)，例如被摄取、跳过或删除的数据集记录。 |
+| ➌ | [创建或编辑连接的配置](create-connection.md#create-or-edit-a-connection)，例如滚动数据窗口、要使用的沙盒、哪些数据集是连接的一部分，等等。 |
+| ➍ | [在连接中添加新数据集](create-connection.md#add-datasets)。您的连接至少应该有一个事件或摘要数据集，但可以包含各种事件、配置文件、查找和多个摘要数据集。 |
+| ➎ | 为您添加的数据集[配置设置](create-connection.md#dataset-settings)。您可以确定如何根据一个基于共同人员或基于 [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} 帐户的标识符来链接不同的数据集。 |
+| ➏ | [编辑现有数据集的设置](create-connection.md#edit-a-dataset)。您可以在某个后期阶段随时重新访问数据集设置。 |
 
 
 
 ## 访问控制
 
-对连接管理的访问应限制到核心管理组。 连接配置涉及与引入Customer Journey Analytics的数据的卷分配有关的合同问题。
+对连接管理的访问权限应限制在一个核心管理组中。连接配置对 Customer Journey Analytics 中被引入数据的数量分配具有合同性影响。
 
 >[!MORELIKETHIS]
 >

@@ -6,15 +6,15 @@ solution: Customer Journey Analytics
 feature: Components
 role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '913'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # 组件概述
 
-组件是 Customer Journey Analytics 中的功能，可以在可视化内容（例如自由格式表）中使用，或者用于补充报告功能。
+组件是 Customer Journey Analytics 中的功能，可以在可视化图表（例如自由格式表）中使用，或者用于补充报告功能。
 
 要从主 Customer Journey Analytics 界面管理组件：
 
@@ -23,7 +23,7 @@ ht-degree: 95%
 
 您可以管理以下组件：
 
-* [区段](filters/filters-overview.md)：构建、管理、共享强大的、有针对性的受众区段，并将其应用到您的报告中。区段允许您根据特性或交互情况识别人员的子集。
+* [区段](filters/filters-overview.md)：构建、管理、共享强大的、有针对性的受众区段，并将其应用到您的报告中。使用区段可以根据相关特征或交互识别人员的子集。
 * [计算量度](calc-metrics/calc-metr-overview.md)：使用量度和公式作为新组件以便在报告中使用
 * [日期范围](date-ranges/create.md)：自定义和优化 Analysis Workspace 中提供的日期范围。
 * [注释](/help/components/annotations/overview.md)：向您的组织传达上下文数据的细微差别和洞察。
@@ -31,7 +31,7 @@ ht-degree: 95%
 * [已计划项目](/help/analysis-workspace/export/t-schedule-report.md#scheduled-projects-manager)：管理您已计划项目。
 * [偏好设置](/help/analysis-workspace/user-preferences.md)：管理 Analysis Workspace 的偏好设置。
 * [受众](/help/components/audiences/audiences-overview.md)：在 Experience Platform 中创建并将 Customer Journey Analytics 中的受众发布到 [Real-Time Customer Data Platform](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/home)，以进行目标选择和个性化。
-* [导出内容](/help/components/exports/manage-export-locations.md)：管理您的导出账户和位置。
+* [导出内容](/help/components/exports/manage-export-locations.md)：管理您的导出帐户和位置。
 
 
 ## Analysis Workspace 组件
@@ -69,8 +69,8 @@ Analysis Workspace 中的组件包括量度、维度、区段和日期范围，�
    | ![Star](/help/assets/icons/Star.svg) [!UICONTROL **收藏夹**] | 将组件添加到您的收藏夹列表中。与标记相似，您可在左侧面板中按“收藏夹”进行搜索，然后在组件管理器中对其进行过滤。 |
    | ![StarOutline](/help/assets/icons/StarOutline.svg) **[!UICONTROL 取消收藏]** | 将组件从您的收藏夹列表中移除。 |
    | ![复选标记](/help/assets/icons/Checkmark.svg) [!UICONTROL **批准**] | 将组件标记为“已批准”可告知用户该组件得到了组织的批准。与标记一样，您可以在左侧面板中按“已批准”进行搜索和筛选。![Checkmark](/help/assets/icons/Checkmark.svg)标识的是已批准的组件。 |
-   | ![Share](/help/assets/icons/ShareAlt.svg) [!UICONTROL **分享**] | 将组件与组织中的用户共享。此选项仅对自定义组件可用，例如区段或计算指标。 |
-   | ![Delete](/help/assets/icons/Delete.svg) [!UICONTROL **删除**] | 删除不再需要的组件。此选项仅对自定义组件可用，例如区段或计算指标。 |
+   | ![Share](/help/assets/icons/ShareAlt.svg) [!UICONTROL **分享**] | 将组件与组织中的用户共享。此选项仅对自定义组件可用，例如区段或计算量度。 |
+   | ![Delete](/help/assets/icons/Delete.svg) [!UICONTROL **删除**] | 删除不再需要的组件。此选项仅对自定义组件可用，例如区段或计算量度。 |
 
 自定义组件也可通过其相应的组件管理器进行管理。例如，参阅[管理区段](/help/components/filters/manage-filters.md)。
 
@@ -84,7 +84,7 @@ Analysis Workspace 中的组件包括量度、维度、区段和日期范围，�
 
 2. 在搜索字段中，开始键入要在项目中使用的组件名称。
 
-   颜色和图标标识的是组件的类型。**维度** ![Dimension图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)为橙色，**区段** ![区段图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg)为蓝色，**日期范围** ![日期范围图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)为紫色，**量度** ![量度图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg)为绿色。<br/>Adobe 图标 ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) 表示计算量度模板或区段模板。计算器图标 ![Calculator icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) 表示组织管理员创建的计算量度。
+   颜色和图标标识的是组件的类型。**维度** ![Dimension icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) 是橙色的，**区段** ![Segment icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) 是蓝色的，**日期范围** ![Date range icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) 是紫色的，**量度** ![Metric icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) 是绿色的。<br/>Adobe 图标 ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) 表示计算量度模板或区段模板。计算器图标 ![Calculator icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) 表示您的组织中某位管理员创建的计算量度。
 
 3. 从下拉菜单中选择组件。
 

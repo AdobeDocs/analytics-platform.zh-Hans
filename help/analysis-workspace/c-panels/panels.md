@@ -1,13 +1,13 @@
 ---
-description: 面板是表格和可视化内容的集合
+description: 面板是表格和可视化图表的集合
 title: 面板概述
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2129'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 | [媒体并行观众](media-concurrent-viewers.md) | 分析一段时间内的并发查看者，了解有关并发峰值的详细信息，并且可以进行细分和比较。 |
 | [媒体播放耗时](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | 分析播放耗时以了解发生并发高峰或发生播放量下降的位置。 |
 | [下一项或上一项](next-previous.md) | 显示人们访问的下一个或上一个页面。 |
-| [快速洞察](quickinsight.md) | 快速构建自由格式表和随附的可视化内容，以便更快地分析和发现洞察。 |
+| [快速洞察](quickinsight.md) | 快速构建自由格式表和随附的可视化图表，以便更快地分析和发现洞察。 |
 
 
 [!UICONTROL 快速洞察]、[!UICONTROL 空白]和[!UICONTROL 自由格式]面板非常适合用于开始进行分析，而[!UICONTROL 归因]本身则有助于进行更深入的分析。画布底部有一个 ![AddCircle](/help/assets/icons/AddCircle.svg)，因此您可以随时添加空白面板。
@@ -77,7 +77,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 ## 数据视图
 
-每个面板都与一个[数据视图](/help/data-views/data-views.md)关联，由面板右上角的下拉菜单中的数据视图&#x200B;***&#x200B;的![数据](/help/assets/icons/Data.svg) &#x200B;***名称标识。
+每个面板都与一个[数据视图](/help/data-views/data-views.md)相关联，面板右上角下拉菜单中的![数据](/help/assets/icons/Data.svg)**[!UICONTROL *视图的数据名称&#x200B;*]**为相应的标识。
 
 创建空白 Workspace 项目时，初始面板的默认数据视图是您上次在 Customer Journey Analytics 中使用数据视图。
 
@@ -107,7 +107,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 ![The calendar window showing the selected date range.](assets/panel-calendar.png)
 
 1. 通过先选择开始日期，然后选择结束日期来选择日期范围。
-或者，您也可以从[!UICONTROL *选择预设*]&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 预设]**。
+或者，您也可以从[!UICONTROL *选择预设*]&#x200B;下拉菜单中选择一个&#x200B;**[!UICONTROL 预设]**。
 
 1. 或者，选择&#x200B;**[!UICONTROL 显示高级设置]**&#x200B;以：
 
@@ -120,7 +120,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
      您可以选择括号内的文本（例如&#x200B;**[!UICONTROL 固定开始 - 每日滚动]**）来扩展面板并指定&#x200B;**[!UICONTROL 开始]**&#x200B;和&#x200B;**[!UICONTROL 结束]**&#x200B;的详细信息。
 
       1. 选择&#x200B;**[!UICONTROL 开始]**、 **[!UICONTROL 结束]**&#x200B;或&#x200B;**[!UICONTROL 固定日期]**。
-      1. 当选择了&#x200B;**[!UICONTROL 开始]**&#x200B;或&#x200B;**[!UICONTROL 结束]**&#x200B;时，您可以生成一个完整的表达式。例如：**&#x200B;** **[!UICONTROL 当前年份的结束]**&#x200B;**[!UICONTROL 加上]**`1`**[!UICONTROL 天]**。为表达式的每个部分选择适当的值。
+      1. 当选择了&#x200B;**[!UICONTROL 开始]**&#x200B;或&#x200B;**[!UICONTROL 结束]**&#x200B;时，您可以生成一个完整的表达式。例如：**** **[!UICONTROL 当前年份的结束]****[!UICONTROL 加上]**`1`**[!UICONTROL 天]**。为表达式的每个部分选择适当的值。
          * 选择当前时间的值。例如&#x200B;**[!UICONTROL 当前年份]**。
          * 选择一个值进行额外的计算。例如，**[!UICONTROL 加上]**。
          * 当您指定了额外的计算时，请指定一个值。例如：`1`。
@@ -128,8 +128,8 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
      选择&#x200B;**[!UICONTROL 隐藏详细信息]**，以隐藏计算滚动日期的详细信息。
 
-1. 选择&#x200B;**[!UICONTROL 应用]**&#x200B;以将日期范围应用到您调用日程表的面板。
-选择&#x200B;**[!UICONTROL 应用于所有面板]**&#x200B;以将日期范围应用于 Workspace 项目中的所有面板。
+1. 选择&#x200B;**[!UICONTROL 应用]**以将日期范围应用到您调用日程表的面板。
+选择**[!UICONTROL 应用于所有面板]**&#x200B;以将日期范围应用于 Workspace 项目中的所有面板。
 
 
 ## 拖放区域 {#dropzone}
@@ -155,7 +155,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [下拉区段](https://video.tv.adobe.com/v/327489?quality=12&learn=on&captions=chi_hans){target="_blank"}。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [下拉区段](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 {{videoaa}}
 
@@ -200,7 +200,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 #### 动态下拉区段
 
-动态下拉区段允许您根据面板报告范围内的数据和其他下拉区段中的值来确定可用值。例如，您可以使用“国家/地区”维度和“城市”维度创建两个动态下拉列表。当您从&#x200B;**[!UICONTROL 国家/地区]**&#x200B;下拉菜单中选择国家/地区时，**[!UICONTROL 城市]**&#x200B;下拉菜单会动态调整以仅显示该国家/地区的城市。
+动态下拉区段允许您根据面板报告范围内的数据和其他下拉区段中的值来确定可用值。例如，您可以使用“国家/地区”维度和“城市”维度创建两个动态下拉列表。如果您从&#x200B;**[!UICONTROL 国家/地区]**&#x200B;下拉菜单中选择了一个国家/地区，**[!UICONTROL 城市]**&#x200B;下拉菜单就会动态调整，以仅显示该国家/地区的城市。
 
 同样的概念适用于所有维度；仅出现在面板日期范围内的维度项和选定的区段可见。在静态下拉区段中选择的维度项会影响动态下拉区段中的可用值。但是，反之则不然。在动态下拉区段中选择的维度项不会影响静态下拉区段中的可用值。
 
@@ -226,7 +226,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 | 选项 | 描述 |
 | --- | --- |
 | **[!UICONTROL 插入复制的面板]** | 使用此功能，您可以将复制的面板粘贴到项目中的其他位置或不同的项目中。 |
-| **[!UICONTROL 插入复制的可视化图表]** | 将复制的可视化内容粘贴到面板、项目中的其他位置或不同的项目中。 |
+| **[!UICONTROL 插入复制的可视化图表]** | 将复制的可视化图表粘贴到面板、项目中的其他位置或不同的项目中。 |
 | **[!UICONTROL 在所有面板中应用数据视图]** | 将此面板的数据视图应用于项目中的所有其他面板。 |
 | **[!UICONTROL 复制面板]** | 复制面板，以将其插入到项目中的其他位置或不同的项目中。 |
 | **[!UICONTROL 重复面板]** | 生成一个与当前面板完全相同的副本，然后可对其进行修改。 |

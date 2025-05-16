@@ -6,9 +6,9 @@ feature: Guided Analysis
 keywords: 产品分析
 role: User
 source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '439'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 96%
 
 | 引导式分析术语 | Analysis Workspace 术语 |
 | --- | --- |
-| 事件（二进制 1/0 指标） | 量度 |
+| 事件（二进制 1/0 量度） | 量度 |
 | 用户 | 人员 |
 | 维度 | 维度 |
 | 维度项 | 维度项 |
@@ -60,7 +60,7 @@ ht-degree: 96%
 
 虽然 [Analysis Workspace](../analysis-workspace/home.md) 和引导式分析使用相同的基础数据，但每个工具支持您生成数据查询的方式是不同的。
 
-* **Analysis Workspace 是一种以维度为中心的体验。** 表格通常由维度行组成，而列则通常是量度。可在行和列中应用区段以获取所需数据。
+* **Analysis Workspace 是一种以维度为中心的体验。** 表格通常由维度行组成，而列则通常是量度。可以在行和列中应用区段以获得所需的数据。
 
 * **引导式分析是一种以事件和用户为中心的体验。** 每次分析都从选择事件开始，然后可以添加维度和区段来细化事件数据。
 
@@ -68,7 +68,7 @@ ht-degree: 96%
 
 请考虑以下示例，其中重点关注与网站主页相关的数据。团队会提出类似的问题，但分析方法可能不同。
 
-* 典型的以维度为中心的 Analysis Workspace 方法是：“让我们看看主页，看看它收到了多少页面浏览量。”
+* 典型的以维度为中心的 Analysis Workspace 方法是：“让我们看看主页，看看它收到了多少页面浏览次数。”
 
   ![以维度为中心](assets/dimension-centered.png){style="border:1px solid gray"}
 

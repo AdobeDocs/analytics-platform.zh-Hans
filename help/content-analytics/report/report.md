@@ -1,159 +1,159 @@
 ---
-title: Content Analytics报表
-description: 如何报告内容分析
+title: Content Analytics 报告
+description: 如何报告 Content Analytics
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
 source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1300'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Content Analytics报表概述
+# Content Analytics 报告概述
 
-您可以在[Analysis Workspace](/help/analysis-workspace/home.md)中报告、执行分析并深入了解Content Analytics。 特定Workspace [模板](#template)可用，因此您可以立即访问预填充了相关内容见解的Workspace项目。
+您可以在 [Analysis Workspace](/help/analysis-workspace/home.md) 中报告 Content Analytics、执行分析并获得相关见解。现在提供一个特定的 Workspace [模板](#template)，您可以立即访问一个预先填充了相关内容见解的 Workspace 项目。
 
-要从头开始报告Content Analytics：
+要从头开始报告 Content Analytics：
 
-1. [创建新的](/help/analysis-workspace/build-workspace-project/create-projects.md)或[在Workspace中打开现有的](/help/analysis-workspace/build-workspace-project/open-projects.md)项目。
-1. 请确保您[为Content Analytics报表选择数据视图](/help/analysis-workspace/c-panels/panels.md#data-view)。 Content Analytics报表仅适用于[为Content Analytics配置了](/help/content-analytics/config/configuration.md)的数据视图。
-1. 将![表](/help/assets/icons/Table.svg) [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)可视化拖动到画布上。
-1. 使用[特定的Content Analytics组件](components.md)和其他常规的[组件](/help/components/overview.md)（如区段、日期范围、注释）来构建您的内容分析见解。
+1. [在 Workspace 中创建一个新项目](/help/analysis-workspace/build-workspace-project/create-projects.md)或者[打开一个现有的](/help/analysis-workspace/build-workspace-project/open-projects.md)项目。
+1. 确保[为 Content Analytics 报告选择一个数据视图](/help/analysis-workspace/c-panels/panels.md#data-view)。Content Analytics 报告仅适用于那些[已配置](/help/content-analytics/config/configuration.md)给 Content Analytics 的数据视图。
+1. 将一个![表格](/help/assets/icons/Table.svg) [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)可视化图表拖到画布上。
+1. 使用[特定的 Content Analytics 组件](components.md)和其他通用[组件](/help/components/overview.md)（例如区段、日期范围、注释）来构建您的内容分析见解。
 
 ## 缩略图
 
-根据您在项目中使用的Content Analytics特定维度，将显示资源和维度的缩略图。
+根据您在项目中使用的 Content Analytics 特定维度，将显示资产和维度的缩略图。
 
-![Content Analytics缩略图](../assets/aca-thumbnails.png)
+![Content Analytics 缩略图](../assets/aca-thumbnails.png)
 
-默认情况下，将显示相关Content Analytics维度的缩略图。 要配置Content Analytics维度的缩略图显示，请执行以下操作：
+默认情况下，会显示相关 Content Analytics 维度的缩略图。如要配置 Content Analytics 维度的缩略图显示：
 
-* 将鼠标悬停在Content Analytics维度的标题行上。 例如，**[!UICONTROL 资产名称]**&#x200B;或&#x200B;**[!UICONTROL 体验ID]**。
+* 将鼠标悬停在 Content Analytics 维度的标题行上。例如，**[!UICONTROL 资产名称]**&#x200B;或&#x200B;**[!UICONTROL 体验 ID]**。
 * 选择![设置](/help/assets/icons/Setting.svg)。
-* 在&#x200B;**[!UICONTROL 行设置]**&#x200B;弹出窗口的&#x200B;**[!UICONTROL 设置]**&#x200B;下，选中或取消选中&#x200B;**[!UICONTROL 显示缩略图]**。
+* 在&#x200B;**[!UICONTROL 行设置]**&#x200B;弹出窗口中，在&#x200B;**[!UICONTROL 设置]**&#x200B;下方，勾选或取消勾选&#x200B;**[!UICONTROL 显示缩略图]**。
 
 
 ## 预览
 
-对于显示缩略图的Content Analytics维度的行，您可以打开预览弹出窗口。
+对于显示缩略图的 Content Analytics 维度的行，您可以打开一个预览弹出窗口。
 
-要打开带有以下详细信息的预览，请执行以下操作：
+如要打开包含以下详细信息的预览：
 
-* 选择![信息大纲](/help/assets/icons/InfoOutline.svg)。 您会看到以下详细信息。
+* 选择 ![InfoOutline](/help/assets/icons/InfoOutline.svg)。会显示以下详细信息。
 
-  | 体验预览 | 资源预览 |
+  | 体验预览 | 资产预览 |
   |---|---|
-  | ![Content Analytics体验预览](../assets/aca-experience-preview.png) | ![Content Analytics资源预览](../assets/aca-asset-preview.png) |
-  | 维度的名称（例如，**[!UICONTROL 体验ID]）** | 资产维度的名称（例如，**[!UICONTROL 资产ID]）** |
-  | **[!UICONTROL 展示次数（所有时间）]**：体验的展示次数。 | **[!UICONTROL 展示次数（所有时间）]**：资源的展示次数。 |
-  | **[!UICONTROL Assets]**：此体验包含的资源数。 <br/>选择![划分](/help/assets/icons/Breakdown.svg) **[!UICONTROL 划分]**&#x200B;以检查资产。 | **[!UICONTROL 体验]**：在其中显示此资源的体验数。 <br/>选择![划分](/help/assets/icons/Breakdown.svg) **[!UICONTROL 划分]**&#x200B;以检查资产。 |
-  | **[!UICONTROL 首次展示]**：体验首次展示的日期。 | **[!UICONTROL 首次展示]**：资产的首次展示日期。 |
-  | **[!UICONTROL 最近展示]**：体验最近展示的日期。 | **[!UICONTROL 最近展示]**：资源最近展示的日期。 |
+  | ![Content Analytics 体验预览](../assets/aca-experience-preview.png) | ![Content Analytics 资产预览](../assets/aca-asset-preview.png) |
+  | 维度的名称（例如，**[!UICONTROL 体验 ID]）** | 资产维度的名称（例如，**[!UICONTROL 资产 ID]）** |
+  | **[!UICONTROL 展示次数（所有时间）]**：体验的展示次数。 | **[!UICONTROL 展示次数（所有时间）]**：资产的展示次数。 |
+  | **[!UICONTROL 资产]**：此体验包含的资产数量。<br/>选择![细分](/help/assets/icons/Breakdown.svg) **[!UICONTROL 细分]**&#x200B;以检查资产。 | **[!UICONTROL 体验]**：显示此资产的体验数量。<br/>选择![细分](/help/assets/icons/Breakdown.svg) **[!UICONTROL 细分]**&#x200B;以检查资产。 |
+  | **[!UICONTROL 第一印象]**：体验的第一印象的日期。 | **[!UICONTROL 第一印象]**：资产的第一印象的日期。 |
+  | **[!UICONTROL 最近的印象]**：体验的最近印象的日期。 | **[!UICONTROL 最近的印象]**：资产的最近印象的日期。 |
   | **[!UICONTROL 体验属性]**：体验的[属性](/help/content-analytics/report/components.md#experience-attributes)。 | **[!UICONTROL 资产属性]**：资产的[属性](/help/content-analytics/report/components.md#asset-attributes)。 |
 
 
 ## 模板
 
-内容分析[模板](/help/analysis-workspace/templates/use-templates.md)可帮助您了解哪些内容和内容属性的表现最佳。 模板是[Web渠道和参与用例](/help/analysis-workspace/templates/use-templates.md#web-engagement)的一部分，它详细说明了内容在粒度级别上的执行情况。 您可以查看单个资产的性能或特定属性。
+现在提供一个 Content analytics [模板](/help/analysis-workspace/templates/use-templates.md)，帮助您了解哪些内容和内容属性的效果最佳。该模板是[网页渠道和参与度用例](/help/analysis-workspace/templates/use-templates.md#web-engagement)的一部分，详细说明了您的内容在粒度级别上的表现。您可以查看单个资产或特定属性的表现。
 
-根据您学到的内容，您可能会执行许多操作。 如在主页中推广高性能资产，为特定区段个性化内容以包括高性能属性，或轮换已开始陈旧的内容。
+根据您获得的见解，您可能可以做很多事情。例如在主页上推广表现优异的资产，为特定区段提供个性化内容以包含表现优异的属性，或者轮换掉已经开始过时的内容。
 
-要使用模板，请执行以下操作：
+如要使用模板：
 
 1. 从主菜单中选择&#x200B;**[!UICONTROL Workspace]**。
-1. 确保已选择为Content Analytics配置的数据视图。
-1. 搜索或使用区段(**[!UICONTROL 渠道]**&#x200B;的&#x200B;**[!UICONTROL Web]**&#x200B;和[!UICONTROL 用例]&#x200B;**的**&#x200B;4&rbrace;参与&#x200B;**)查找并选择**&#x200B;[!UICONTROL &#x200B;内容分析&#x200B;]&#x200B;**模板。**
+1. 确保您选择的数据视图已配置给 Content Analytics。
+1. 搜索或使用区段（为&#x200B;**[!UICONTROL 渠道]**&#x200B;使用&#x200B;**[!UICONTROL 网页]**，为**[!UICONTROL 用例]**s 使用&#x200B;**[!UICONTROL 参与度]**）查找并选择 **[!UICONTROL Content analytics]** 模板。
 1. 选择&#x200B;**[!UICONTROL 使用模板]**。
-1. 在&#x200B;**[!UICONTROL 设置模板]**&#x200B;对话框中，从&#x200B;**[!UICONTROL 选择转化量度]**&#x200B;对话框中选择量度。 例如，**[!UICONTROL 资产CTR]**。
+1. 在&#x200B;**[!UICONTROL 设置模板]**&#x200B;对话框中，从&#x200B;**[!UICONTROL 选择转化量度]**&#x200B;对话框中选择一个量度。例如，**[!UICONTROL 资产点进率]**。
 1. 选择&#x200B;**[!UICONTROL 继续]**。
 
-**[!UICONTROL Content Analytics概述]**&#x200B;项目将在[Analysis Workspace](/help/analysis-workspace/home.md)中打开。 项目由四个[面板](/help/analysis-workspace/c-panels/panels.md)组成，其中每个面板都提供[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)和[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)来回答特定问题：
+在 [Analysis Workspace](/help/analysis-workspace/home.md) 中打开一个&#x200B;**[!UICONTROL Content Analytics 概述]**&#x200B;项目。该项目由四个[面板](/help/analysis-workspace/c-panels/panels.md)组成，每个面板都提供[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)和[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)，以回答一个具体问题：
 
-* **哪些内容的性能最佳？**
-此面板可帮助您了解哪些体验以及这些体验中的哪些资产正在促进参与和转化。 体验是在特定时间捕获的完整网页。 一个体验可以同时包含文本和多个单独的图像资源。 资产是个别图像。
+* **哪些内容表现最好？**
+此面板可帮助您了解哪些体验以及这些体验中的哪些资产推动了参与度和转化。体验是一个在特定时间捕获的完整网页。体验可以包含文本和多个单个图像资产。资产是一个单个图像。
 
-  该面板由以下可视化图表组成：
+  面板由以下可视化图表组成：
 
    * **体验**。
 
      >[!NOTE]
      >
-     >只有在Content Analytics配置中包含[体验](/help/content-analytics/config/guided.md#experience-capture-and-definition)时，才会显示这些可视化图表。
+     >只有在您的 Content Analytics 配置中[包含了体验](/help/content-analytics/config/guided.md#experience-capture-and-definition)的情况下才会显示这些可视化图表。
      > 
 
-      * **体验CTR**： [摘要更改](/help/analysis-workspace/visualizations/summary-number-change.md)可视化图表，显示体验CTR。
-      * **排名最前的转化体验**：一个[水平条形图](/help/analysis-workspace/visualizations/horizontal-bar.md)可视化图表，其中显示基于所选转化量度的排名最前的转化体验。
-      * **表现最佳的体验**：表现最佳的体验的[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)（包括[缩略图](#thumbnails)和[预览](#previews)）。
+      * **体验点进率**：一个展示体验点进率的[摘要变化](/help/analysis-workspace/visualizations/summary-number-change.md)可视化图表。
+      * **最佳转化体验**：展示基于所选转化量度的最佳转化体验的[水平条形图](/help/analysis-workspace/visualizations/horizontal-bar.md)可视化图表。
+      * **最佳表现体验**：一个展示最佳表现体验的[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)（包括[缩略图](#thumbnails)和[预览](#previews)）。
 
-   * **资源**
+   * **资产**
 
-      * **资源CTR**
-显示Asset CTR的[摘要变化](/help/analysis-workspace/visualizations/summary-number-change.md)可视化图表。
-      * **排名最前的转化资产**
-一个[水平条形图](/help/analysis-workspace/visualizations/horizontal-bar.md)可视化图表，它根据所选的转化量度显示排名最前的转化资产。
-      * **表现最佳的资产**
-针对表现最好的资产的[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)（包括[缩略图](#thumbnails)和[预览](#previews)）。
-      * **Assets — 查看次数与转化率。**
-[散点图](/help/analysis-workspace/visualizations/scatterplot.md)可视化图表，它显示资源视图与资源转换的散点图。
+      * **资产点进率**
+一个展示资产点进率的[摘要变化](/help/analysis-workspace/visualizations/summary-number-change.md)可视化图表。
+      * **最佳转化资产**
+展示基于所选转化量度的最佳转化资产的[水平条形图](/help/analysis-workspace/visualizations/horizontal-bar.md)可视化图表。
+      * **最佳表现资产**
+一个展示最佳表现资产的[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)（包括[缩略图](#thumbnails)和[预览](#previews)）。
+      * **资产 - 浏览次数与转化。**
+[散点图](/help/analysis-workspace/visualizations/scatterplot.md)可视化图表显示了资产浏览与资产转化的散点图。
 
 * **哪些资产属性有助于转化？**
-Content Analytics使用AI和GenAI自动分配每个资源元数据，如主题、场景、前景色等。 属性是为AI分配的元数据标记，用于描述资源或体验中的内容。 例如：<code>前景色：红色</code> 是自动分配的属性。 可视化图表可帮助您识别哪些资产的属性对转化贡献最大。
+Content Analytics 使用 AI 和生成式 AI 自动分配每个资产元数据，例如主题、场景、前景颜色等。属性是 AI 分配的描述资产或体验内容的元数据标记。例如：<code>foreground color: red</code> 是一个自动分配的属性。可视化图表可以帮助您确定资产的哪些属性对转化的贡献最大。
 
-  该面板由以下可视化图表组成：
+  面板由以下可视化图表组成：
 
-   * **排名最前的转换资产属性**
-一个[水平条](/help/analysis-workspace/visualizations/horizontal-bar.md)，它根据所选的转化量度显示排名最前的转化资产属性。
-   * **排名最前的转化资产属性与前30天的对比**
-一个[水平条形图](/help/analysis-workspace/visualizations/horizontal-bar.md)可视化图表，它根据所选的转化量度显示与前30天相比排名最前的转化资产属性。
-   * **排名最前的转换资产属性数据**
-一个[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)，它根据所选的转化量度显示排名最前的转化属性。 选择表格中的一行以更新属性趋势可视化图表。
+   * **最佳转化资产属性**
+展示基于所选转化量度的最佳转化资产属性的[水平条形图](/help/analysis-workspace/visualizations/horizontal-bar.md)。
+   * **与前 30 天相比的最佳转化资产属性**
+展示基于所选转化量度的与前 30 天相比最佳转化资产属性的[水平条形图](/help/analysis-workspace/visualizations/horizontal-bar.md)。
+   * **最佳转化资产属性数据**
+展示基于所选转化量度的最佳转化属性的[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)。选择表中的一行可更新该属性的趋势可视化图表。
    * **属性趋势**
-显示所选转化率最高的资产属性的属性趋势的[折线图](/help/analysis-workspace/visualizations/line.md)可视化图表。
-   * **资源前景颜色**
-示例[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)，比较单个资源属性类别（前景颜色）中项目的性能。 您可以将此资源属性替换为其他资源属性类别维度。
+展示所选最佳转化资产属性的属性趋势的[线形图](/help/analysis-workspace/visualizations/line.md)。
+   * **资产前景颜色**
+一个[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)示例，用于比较来自单个资产属性类别“前景颜色”的各项的表现。您可以用其他资产属性类别维度替换这个资产属性。
 
 * **哪些体验属性有助于转化？**
 
   >[!NOTE]
   >
-  >仅当您在Content Analytics配置中具有[包含的体验](/help/content-analytics/config/guided.md#experience-capture-and-definition)时，此面板才会显示。
+  >只有在 Content Analytics 配置中[包含了体验](/help/content-analytics/config/guided.md#experience-capture-and-definition)的情况下，才会显示此面板。
   > 
 
-  虽然资产属性侧重于图像的视觉品质，但体验属性侧重于页面的文本。 通过下面的可视化图表，您可以探索哪些体验属性有助于转化。 这些属性也使用AI和GenAI模型自动分配。
+  资产属性关注图像的视觉质量，而体验属性则关注页面的文本。下面的可视化图表可以让您探索哪些体验属性有助于转化。这些属性也使用 AI 和生成式 AI 模型自动分配。
 
-  该面板由以下可视化图表组成：
+  面板由以下可视化图表组成：
 
-   * **排名最前的转换体验属性**
-一个[水平条形图](/help/analysis-workspace/visualizations/horizontal-bar.md)可视化图表，它根据所选的转化量度显示排名最前的转化体验属性。
-   * **排名最前的转化体验属性与前30天的对比**
-一个[水平条形图](/help/analysis-workspace/visualizations/horizontal-bar.md)可视化图表，它根据所选的转化量度显示与前30天相比排名最前的转化体验属性。
-   * **排名最前的转换体验属性数据**
-一个[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)，它根据所选的转化量度显示排名最前的转化体验。 选择表格中的一行以更新折线图可视化图表。
-   * **行**
-显示所选排名最前的转化体验属性趋势的[折线图](/help/analysis-workspace/visualizations/line.md)可视化图表。
-   * **体验关键字**
-一个[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)，它根据所选的转化量度显示排名最前的体验关键字。
+   * **最佳转化体验属性**
+展示基于所选转化量度的最佳转化体验属性的[水平条形图](/help/analysis-workspace/visualizations/horizontal-bar.md)。
+   * **与前 30 天相比的最佳转化体验属性**
+展示基于所选转化量度的与前 30 天相比最佳转化体验属性的[水平条形图](/help/analysis-workspace/visualizations/horizontal-bar.md)。
+   * **最佳转化体验属性数据**
+展示基于所选转化量度的最佳转化体验的[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)。选择表中的一行可更新线形图可视化图表。
+   * **线形图**
+展示基于所选最佳转化体验属性的趋势的[线形图](/help/analysis-workspace/visualizations/line.md)。
+   * **体验关键词**
+展示基于所选转化量度的最佳体验关键词的[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)。
 
-* **我的网站上的资产显示位置？**
-一个面板，包括一个自由格式表，该表详细介绍了网站上查看次数最多的资源的显示位置。
+* **资产出现在我的网站上的什么位置？**
+由一个自由格式表组成的面板详细说明了您网站上浏览次数最多的资产出现在哪里。
 
-  面板由一个可视化图表组成：
+  该面板由一个可视化图表组成：
 
-   * **查看次数最多的资源会显示在何处？**
-您可以按尺寸划分任何资源，以帮助您更好地了解该图像出现的位置。
+   * **浏览次数最多的资产出现在哪里？**
+您可以将任何资产按维度细分，以帮助您更好地了解该图像出现在哪里。
 
-     在示例[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)（包括[缩略图](#thumbnails)和[预览](#previews)）中，使用了&#x200B;**[!UICONTROL 资产感知ID]**，而不是[!UICONTROL 资产ID]。 有时，网站上可能会使用不同的图像URL来复制完全相同的图像。 [!UICONTROL 资产感知ID]属性有助于将这些重复项分组到单个ID下。
+     在[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)（包括[缩略图](#thumbnails)和[预览](#previews)）示例中使用了&#x200B;**[!UICONTROL 资产感知 ID]**，而不是[!UICONTROL 资产 ID]。有时，完全相同的图像可能会在您的网站上以不同的图像 URL 重复出现。[!UICONTROL 资产感知 ID] 属性有助于将这些重复项分组到单个 ID 下。
 
-     由于资产可以在页面上更改，因此每个资产将按&#x200B;**[!UICONTROL 体验ID]**&#x200B;进行划分，以标识资产显示在该页面的哪个版本。 您可以将[!UICONTROL Experience Id]替换为有助于您了解网站上资产位置的其他维度。 例如，[!UICONTROL 页面名称]、[!UICONTROL 页面URL]或[!UICONTROL 网站区域]。
+     由于资产可以在页面上发生变化，因此每个资产都按&#x200B;**[!UICONTROL 体验 ID]** 进行细分，以识别资产出现在该页面的哪个版本上。您可以将[!UICONTROL 体验 ID] 替换为其他维度，以帮助您了解某个资产在您网站上的位置。例如，[!UICONTROL 页面名称]、[!UICONTROL 页面 URL] 或[!UICONTROL 网站分区]。
 
-     您还可以使用[!UICONTROL 资产ID]交换[!UICONTROL 资产感知ID]，以获取有关特定图像URL被引用位置的记录。
+     您还可以将[!UICONTROL 资产感知 ID] 换为[!UICONTROL 资产 ID]，以记录特定图像 URL 被引用的位置。
 
 
 >[!MORELIKETHIS]
 >
->[Content Analytics组件](components.md)
+>[Content Analytics 组件](components.md)
 >[使用模板](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >

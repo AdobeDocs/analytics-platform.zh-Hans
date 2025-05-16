@@ -5,9 +5,9 @@ feature: Workspace Basics
 role: User, Admin
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
 source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1850'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -110,7 +110,7 @@ ht-degree: 99%
 
 1. 选择过滤器图标来过滤项目列表。
 
-1. 在筛选器边栏中，选择&#x200B;**[!UICONTROL 其他筛选器]**，然后选择&#x200B;**[!UICONTROL 公司模板]**。
+1. 在过滤器边栏中，选择&#x200B;**[!UICONTROL 其他过滤器]**，然后选择&#x200B;**[!UICONTROL 公司模板]**。
 
    显示公司模板的列表。不会显示所有常规项目（除非已固定）。
 
@@ -205,5 +205,5 @@ ht-degree: 99%
 
 管理员可以为其组织内的所有用户隐藏模板选项卡。
 
-1. 前往 **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL 组件]** > **[!UICONTROL 偏好设置]** > **[!UICONTROL 公司]**。
+1. 前往&#x200B;**[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL 组件]** > **[!UICONTROL 偏好设置]** > **[!UICONTROL 公司]**。
 1. 选择&#x200B;**[!UICONTROL 隐藏模板选项卡]**&#x200B;选项。

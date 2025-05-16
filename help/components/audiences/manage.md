@@ -5,9 +5,9 @@ exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '768'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -80,9 +80,9 @@ ht-degree: 97%
 
 | 图标 | 操作 | 描述 |
 |:---:|---|---|
-| ![标签](/help/assets/icons/Labels.svg) | **[!UICONTROL 标记]** | 标记选定的受众。在&#x200B;**[!UICONTROL 更新标记：*受众名称&#x200B;*]**&#x200B;对话框中，从下拉菜单中选择标记或键入一个或多个新标记。 选择&#x200B;**[!UICONTROL 保存&#x200B;]**&#x200B;以保存。 |
+| ![标签](/help/assets/icons/Labels.svg) | **[!UICONTROL 标记]** | 标记选定的受众。在&#x200B;**[!UICONTROL 更新标记：*受众名称&#x200B;*]**对话框中，从下拉菜单中选择标记或者输入一个或多个新标记。选择**[!UICONTROL 保存&#x200B;]**以保存。 |
 | ![Delete](/help/assets/icons/Delete.svg) | **[!UICONTROL 删除]** | 删除选定的受众。 |
-| ![Edit](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名选定的受众。使用&#x200B;**[!UICONTROL 重命名：*受众名称&#x200B;*]**&#x200B;对话框来重命名受众，并选择&#x200B;**[!UICONTROL 保存&#x200B;]**&#x200B;以保存。 |
+| ![Edit](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名选定的受众。使用&#x200B;**[!UICONTROL 重命名：*受众名称&#x200B;*]**对话框来重命名受众，并选择**[!UICONTROL 保存&#x200B;]**以保存。 |
 
 选择一个或多个计划项目时，可以从蓝色操作栏中执行以下操作。
 
@@ -104,19 +104,19 @@ ht-degree: 97%
 
 | 数据视图 | 描述 |
 |---|---|
-| ![所有者](/help/components/audiences/assets/audiences-filter-dataviews.png){width="300"} | 您可以使用&#x200B;**[!UICONTROL 数据视图]**&#x200B;部分来过滤数据视图。 <ul><li>您使用![搜索](/help/assets/icons/Search.svg)来搜索您想要用于过滤的数据视图。</li><li>您可以选择多个数据视图。</li></ul> |
+| ![所有者](/help/components/audiences/assets/audiences-filter-dataviews.png){width="300"} | 您可以使用&#x200B;**[!UICONTROL 数据视图]**&#x200B;部分按数据视图进行过滤。 <ul><li>您使用![搜索](/help/assets/icons/Search.svg)来搜索您想要用于过滤的数据视图。</li><li>您可以选择多个数据视图。</li></ul> |
 
 ### 所有者
 
 | 所有者 | 描述 |
 |---|---|
-| ![所有者](/help/components/audiences/assets/audiences-filter-owner.png){width="300"} | **[!UICONTROL 所有者]**&#x200B;部分允许您过滤所有者。 <ul><li>您使用![搜索](/help/assets/icons/Search.svg)来搜索您想要用于过滤的所有者。</li><li>您可以选择多个所有者。 </li></ul> |
+| ![所有者](/help/components/audiences/assets/audiences-filter-owner.png){width="300"} | 您可以使用&#x200B;**[!UICONTROL 所有者]**&#x200B;部分按所有者进行过滤。 <ul><li>您使用![搜索](/help/assets/icons/Search.svg)来搜索您想要用于过滤的所有者。</li><li>您可以选择多个所有者。 </li></ul> |
 
 ## 刷新频率
 
 | 刷新频率 | 描述 |
 |---|---|
-| ![刷新频率](/help/components/audiences/assets/audiences-filter-refreshfrequency.png){width="300"} | **[!UICONTROL 刷新频率]**&#x200B;部分允许您根据刷新频率进行过滤。 <ul><li>您可以使用![搜索](/help/assets/icons/Search.svg)来搜索您想要用于过滤的刷新频率。</li><li>只有为[受众列表](#audiences-list)中的受众<br/>定义的刷新频率才会显示为可用选项。</li></ul> |
+| ![刷新频率](/help/components/audiences/assets/audiences-filter-refreshfrequency.png){width="300"} | 您可以使用&#x200B;**[!UICONTROL 刷新频率]**&#x200B;部分按刷新频率进行过滤。 <ul><li>您可以使用![搜索](/help/assets/icons/Search.svg)来搜索您想要用于过滤的刷新频率。</li><li>只有为[受众列表](#audiences-list)中的受众<br/>定义的刷新频率才会显示为可用选项。</li></ul> |
 
 
 ### 标记

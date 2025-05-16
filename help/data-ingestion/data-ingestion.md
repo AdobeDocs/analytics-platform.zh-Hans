@@ -6,15 +6,15 @@ feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 role: Admin
 source-git-commit: 8071e8d5e1ab7e9cfc5037d710361a4d10285704
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '957'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
 # 数据摄取概述
 
-将数据摄取到Customer Journey Analytics时，您有多个选项。 他们中的一些人假设你想移动传统的 Adobe Analytics 数据，有些人假设你使用的是从 Adobe Experience Platform 获取的数据。
+将数据摄取到 Customer Journey Analytics 中时您有若干选择。他们中的一些人假设你想移动传统的 Adobe Analytics 数据，有些人假设你使用的是从 Adobe Experience Platform 获取的数据。
 
 >[!IMPORTANT]
 >
@@ -22,7 +22,7 @@ ht-degree: 64%
 
 请参阅前面[概述](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=zh-hans)中所示的高级 Customer Journey Analytics 体系结构：
 
-本节中描述的![Customer Journey Analytics架构](./assets/cja-architecture.png)
+![在这个部分中描述的 Customer Journey Analytics 架构](./assets/cja-architecture.png)
 
 上述模式中的数据集可以来自各种来源：
 
@@ -32,9 +32,9 @@ ht-degree: 64%
 
 - 来自当前 Adobe Analytics 部署的数据，
 
-- 来自使用Adobe Experience Platform Web/Mobile SDK跟踪您的网站/移动应用程序的数据，
+- 使用 Adobe Experience Platform Web/Mobile SDK 跟踪您的网站/移动应用程序所产生的数据，
 
-- 来自使用Adobe Experience Platform Edge Network Server API跟踪桌面应用程序、控制台游戏、机顶盒或物联网设备的数据，或者
+- 使用 Adobe Experience Platform Edge Network Server API 跟踪桌面应用程序、主机游戏、机顶盒或 IoT 设备所产生的数据，或者
 
 - 来自 Adobe 提供源连接器的第三方数据提供商的数据。
 
@@ -42,17 +42,17 @@ ht-degree: 64%
 
 文档的这一部分提供了各种场景的快速入门指南。
 
-## 摄取优先级和延迟
+## 数据摄取优先级和延迟
 
-无论事件数据是24小时、48小时还是7天之前的数据，您都可以在90分钟(SLT)内将其摄取到Customer Journey Analytics。
+无论数据是 24 小时、48 小时还是 7 天前的，您都可以在 90 分钟 (SLT) 内将事件数据摄取到 Customer Journey Analytics 中。
 
-请注意，此功能根据贵公司购买的 SKU 包而有所不同：
+请注意，此功能因您的公司所购买的 SKU 包而有所不同：
 
-- 优先摄取基本：90分钟SLT处理内24小时之前的数据（可用于&#x200B;**CJA Foundation**&#x200B;和&#x200B;**CJA Select**）
+- 摄取优先级基本版：在 90 分钟 SLT 处理时间内处理 24 小时前的数据（适用于 **CJA Foundation** 和 **CJA Select**）
 
-- 优先级摄取中间：90分钟SLT处理内72小时之前的数据(可用于&#x200B;**CJA Prime**)
+- 摄取优先级中级版：在 90 分钟 SLT 处理时间内处理 72 小时前的数据（适用于 **CJA Prime**）
 
-- 优先级摄取高级：90分钟SLT处理内的一周前数据(可用于&#x200B;**CJA Ultimate**)
+- 摄取优先级高级版：在 90 分钟 SLT 处理时间内处理 1 周前的数据（适用于 **CJA Ultimate**）
 
 ## 从传统 Adobe Analytics 中获取和使用数据
 
@@ -61,25 +61,25 @@ ht-degree: 64%
 有关更多信息请参阅[摄取并使用传统 Adobe Analytics 的数据](./analytics.md)。
 
 
-## 通过Edge Network摄取和使用数据
+## 通过 Edge Network 摄取和使用数据
 
-### 使用Adobe Experience Platform Web SDK
+### 使用 Adobe Experience Platform Web SDK
 
-您希望使用Adobe技术分析您的网站，从其他解决方案进行迁移或开始跟踪您的人员的行为。 您希望遵循 Adobe 的最佳实施实践，即使用 Adobe Experience Platform SDK 和 Edge Network 来获取数据。然后您可以在 Customer Journey Analytics 中使用、组合和分析摄入的数据与来自其他渠道和数据源的数据。
+您希望使用 Adobe 技术分析您的网站，可能从另一个解决方案迁移或开始跟踪您的人员的行为。您希望遵循 Adobe 的最佳实施实践，即使用 Adobe Experience Platform SDK 和 Edge Network 来获取数据。然后您可以在 Customer Journey Analytics 中使用、组合和分析摄入的数据与来自其他渠道和数据源的数据。
 
-有关详细信息，请参阅[通过Adobe Experience Platform Web SDK摄取和使用数据](./aepwebsdk.md)。
+请参阅[通过 Adobe Experience Platform Web SDK 摄取和使用数据](./aepwebsdk.md)了解更多信息。
 
-### 使用Adobe Experience Platform Mobile SDK
+### 使用 Adobe Experience Platform Mobile SDK
 
-您要使用Adobe技术分析您的移动应用程序，并可能从其他解决方案进行迁移，或者从头开始跟踪人员在应用程序中的行为。 您希望遵循 Adobe 的最佳实施实践，即使用 Adobe Experience Platform SDK 和 Edge Network 来获取数据。然后您可以在 Customer Journey Analytics 中使用、组合和分析摄入的数据与来自其他渠道和数据源的数据。
+您想使用 Adobe 技术分析您的移动应用程序，可能从其他解决方案迁移或从头开始跟踪某人在应用程序中的行为。您希望遵循 Adobe 的最佳实施实践，即使用 Adobe Experience Platform SDK 和 Edge Network 来获取数据。然后您可以在 Customer Journey Analytics 中使用、组合和分析摄入的数据与来自其他渠道和数据源的数据。
 
-有关详细信息，请参阅[通过Adobe Experience Platform Mobile SDK摄取和使用数据](./aepmobilesdk.md)。
+请参阅[通过 Adobe Experience Platform Mobile SDK 摄取和使用数据](./aepmobilesdk.md)了解更多信息。
 
-### 使用Adobe Experience Platform Edge Network服务器API
+### 使用 Adobe Experience Platform Edge Network Server API
 
-您想要使用Adobe技术分析桌面应用程序、游戏主机上玩的游戏、机顶盒上的视频流应用程序的使用情况或物联网设备。 可以从其他解决方案进行迁移，或从头开始跟踪人员在这些设备上的行为。 您需要遵循Adobe的实施最佳实践，即使用Adobe Experience Platform Edge Network Server API和Edge Network来摄取数据。 然后您可以在 Customer Journey Analytics 中使用、组合和分析摄入的数据与来自其他渠道和数据源的数据。
+您想使用 Adobe 技术分析您的桌面应用程序、主机游戏、机顶盒上视频流应用程序的使用情况或者您的 IoT 设备使用情况。可能从另一个解决方案迁移或从头开始跟踪某人在这些设备上的行为。您希望采用 Adobe 的最佳实践进行实施，也就是使用 Adobe Experience Platform Edge Network Server API 和 Edge Network 来摄取数据。然后您可以在 Customer Journey Analytics 中使用、组合和分析所摄取的数据与来自其他渠道和数据源的数据。
 
-有关详细信息，请参阅[通过Adobe Experience Platform Edge Network Server API摄取和使用数据](./serverapi.md)。
+请参阅[通过 Adobe Experience Platform Edge Network Server API 摄取和使用数据](./serverapi.md)了解更多信息。
 
 ## 摄取和使用批次数据
 
@@ -101,5 +101,5 @@ ht-degree: 64%
 
 >[!MORELIKETHIS]
 >
->博客： [详细了解Adobe Customer Journey Analytics中的数据处理和摄取](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
+>博客：[仔细了解 Adobe Customer Journey Analytics 中的数据处理和摄取](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
 

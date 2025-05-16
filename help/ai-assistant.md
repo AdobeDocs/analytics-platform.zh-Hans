@@ -1,81 +1,81 @@
 ---
-description: 如何向Customer Journey Analytics文档提问
+description: 如何提出关于 Customer Journey Analytics 文档的问题
 title: Adobe Customer Journey Analytics 的 AI 助手
 role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 source-git-commit: 20b578a6269aeaf54f6296b1f4337937887ecf05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '604'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
 # Adobe Customer Journey Analytics 的 AI 助手
 
-AI助手是一种对话体验，允许从业人员快速执行任务。 任务是了解概念、排除问题还是搜索信息。 人工智能助理还允许非专家执行专家任务，并提高总体工作质量。
+AI 助手是一种对话体验，可以让从业者快速完成工作任务。无论工作任务是要理解概念、解决问题还是搜索信息。AI 助手还允许非专家执行专家任务并提高整体工作质量。
 
-对Customer Journey AnalyticsAI助手进行Adobe Experience League文档培训。 当被问到问题时，AI Assistant会给出一个有助于快速学习的有用答案。
+Customer Journey Analytics 中的 AI 助手进行了关于 Adobe Experience League 文档的培训。被问到问题时，AI 助手会给出有用的回答，有助于快速学习。
 
-作为新手，您可以使用AI Assistant学习Customer Journey Analytics概念，并熟悉不熟悉的产品和功能。 作为经验丰富的用户，您可以使用AI Assistant提供更高级的用例或提示和技巧。
+作为新手用户，您可以使用 AI 助手学习 Customer Journey Analytics 概念，开始了解您不熟悉的产品和功能。作为经验丰富的用户，您可以使用 AI 助手来呈现更高级的用例或者各种技巧。
 
-概念问题的一些示例包括：
+有关概念问题的一些示例包括：
 
-* 批量摄取与流式摄取之间有何区别？
-* Customer Journey Analytics的最佳用途是什么？
+* 批量摄取和流式摄取两者有什么区别？
+* Customer Journey Analytics 最适合用于什么？
 * 如何设置数据视图？
 
-Customer Journey Analytics范围之外的问题，例如有关Adobe Target和Adobe Creative Cloud Suite等其他Adobe产品的问题，则无法回答。
+超出 Customer Journey Analytics 范围的问题无法回答，例如有关 Adobe Target 和 Adobe Creative Cloud Suite 等其他 Adobe 产品的问题。
 
-用于Customer Journey Analytics的AI助手可用于所有产品层。
+Customer Journey Analytics 的 AI 助手适用于所有产品层。
 
 ## 产品知识 {#knowledge}
 
-产品知识检索模型是基于Customer Journey Analytics进行训练的。 其他功能（如数据分析）稍后将推出。
+产品知识检索模型是在 Customer Journey Analytics 上训练的。数据分析等其他功能将稍后推出。
 
 | 产品知识 | 示例 |
 | --- | --- |
-| 点式学习 | <ul><li>Adobe Analytics与Customer Journey Analytics之间有何区别？</li><li>如何构建计算量度？</li></ul> |
-| 打开发现 | <ul><li>如何导出Workspace项目？</li><li>如何查找重复的Workspace组件？</li></ul> |
-| 故障排除 | <ul><li>数据进入CJA需要多长时间？</li><li>Customer Journey Analytics连接中可以包含多少个派生字段？</li></ul> |
+| 有针对性的学习 | <ul><li>Adobe Analytics 和 Customer Journey Analytics 两者有什么区别？</li><li>如何构建计算量度？</li></ul> |
+| 打开发现 | <ul><li>如何导出 Workspace 项目？</li><li>如何找到重复的 Workspace 组件？</li></ul> |
+| 故障排除 | <ul><li>数据进入 CJA 需要多长时间？</li><li>在一个 Customer Journey Analytics 连接中可以有多少个派生字段？</li></ul> |
 
-## 功能访问
+## 功能访问权限
 
-以下参数控制对AI助手功能的访问：
+通过以下参数可控制对 AI 助手功能的访问：
 
-* **解决方案访问**： AI助手在Customer Journey Analytics中可用，但在Adobe Analytics中不可用。 Adobe Experience Platform、Adobe Journey Optimizer、Adobe Real-Time CDP及其他Experience Platform应用程序中也提供了此功能。
+* **解决方案访问**：Customer Journey Analytics 中提供 AI 助手，但 Adobe Analytics 中不提供该功能。Adobe Experience Platform、Adobe Journey Optimizer、Adobe Real-Time CDP 和其他 Experience Platform 应用程序中也提供该功能。
 
-* **合同访问权限**：如果您无法使用AI助手，请联系您组织的管理员或Adobe客户代表。 在您的组织可以使用AI助手之前，您必须同意某些与GenAI相关的法律条款。
+* **合同访问**：如果您无法使用 AI 助手，请联系您所在组织的管理员或 Adobe 客户代表。在您的组织可以使用 AI 助手之前，您必须先同意与生成式 AI 相关的特定法律条款。
 
-* **权限**：在[!UICONTROL Adobe Admin Console]中，[!UICONTROL 报告工具] **[!UICONTROL AI Assistant：产品知识]**&#x200B;权限决定了对此工具的访问权限。 [产品配置文件管理员](https://helpx.adobe.com/cn/enterprise/using/manage-product-profiles.html)需要在[!UICONTROL Admin Console]中执行这些步骤：
-   1. 导航到&#x200B;**[!UICONTROL Admin Console]** > **[!UICONTROL 产品和服务]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL 产品配置文件]**
-   1. 选择要为其提供[!UICONTROL AI助手：产品知识]访问权限的产品配置文件的标题。
-   1. 在特定产品配置文件中，选择&#x200B;**[!UICONTROL 权限]**。
-   1. 选择![编辑](/help/assets/icons/Edit.svg)以编辑&#x200B;**[!UICONTROL 报告工具]**。
-   1. 选择![AddCircle](/help/assets/icons/AddCircle.svg)以将&#x200B;**AI助手：产品知识**&#x200B;添加到&#x200B;**[!UICONTROL 包含的权限项]**。
+* **权限**：在 [!UICONTROL Adobe 管理控制台]中，[!UICONTROL 报告工具] **[!UICONTROL AI 助手：产品知识]**&#x200B;权限决定了对该工具的访问权限。[产品配置文件管理员](https://helpx.adobe.com/cn/enterprise/using/manage-product-profiles.html)需要在 [!UICONTROL Admin Console] 中执行以下步骤：
+   1. 导航至 **[!UICONTROL Admin Console]** > **[!UICONTROL 产品和服务]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL 产品配置文件]**。
+   1. 选择您想要为其提供[!UICONTROL AI 助手：产品知识]访问权限的产品配置文件的标题。
+   1. 在具体的产品配置文件中，选择&#x200B;**[!UICONTROL 权限]**。
+   1. 选择![编辑](/help/assets/icons/Edit.svg)来编辑&#x200B;**[!UICONTROL 报告工具]**。
+   1. 选择 ![AddCircle](/help/assets/icons/AddCircle.svg)，将 **AI 助手：产品知识**&#x200B;添加到&#x200B;**[!UICONTROL 包含的权限项]**。
 
       ![添加权限](assets/ai-assistant-permissions.png)。
 
-   1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存权限。
+   1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;来保存权限。
 
-有关详细信息，请参阅[访问控制](/help/technotes/access-control.md#access-control)。
+请参阅 [访问权限控制](/help/technotes/access-control.md#access-control)，以了解更多信息。
 
-## 在Customer Journey AnalyticsUI中访问AI助手
+## 在 Customer Journey Analytics UI 中访问 AI 助手
 
-1. 要启动AI助手，请从Customer Journey AnalyticsUI中任何页面的顶部标题中选择AI助手图标。
+1. 要启动 AI 助手，请从 Customer Journey Analytics UI 中任意页面的顶部标题中选择 AI 助手图标。
 
-   ![AI助手图标](assets/ai-asst1.png)
+   ![AI 助手图标](assets/ai-asst1.png)
 
-   在首次使用AI助手时，将显示免责声明，其中包含使用该助手的一些条款和条件。
+   首次使用 AI 助手时会出现一个免责声明，其中包含使用该助手的条款和条件。
 
-1. 在提供的框中，询问AI助手的特定自然语言问题。
+1. 在提供的问题框中，以自然语言方式向 AI 助手询问具体的问题。
 
    ![问题框](assets/ai-asst2.png)
 
-1. （可选）要显示源，请单击&#x200B;**[!UICONTROL 显示源]**，此时将显示通知答案的一个或多个文档源。
+1. （可选）如要显示来源，请点击&#x200B;**[!UICONTROL 显示来源]**，这样就会显示回答所依据的文档来源。
 
-1. （可选）您还可以对任何给定答案的效用提供大拇指支持或大拇指反对的投票。
+1. （可选）您还可以对任何给出的回答是否有用投票表示赞同或反对。
 
-1. （可选）您可以标记不适当或有害内容的答案。
+1. （可选）您可以将给出的回答标记为不恰当或内容有害。
