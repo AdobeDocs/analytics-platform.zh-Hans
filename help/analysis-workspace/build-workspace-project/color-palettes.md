@@ -17,7 +17,7 @@ ht-degree: 92%
 
 >[!CONTEXTUALHELP]
 >id="workspace_project_colorpalette"
->title="项目调色板"
+>title="项目颜色调色板"
 >abstract="更改此项目中使用的颜色调色板。"
 
 <!-- markdownlint-enable MD034 -->

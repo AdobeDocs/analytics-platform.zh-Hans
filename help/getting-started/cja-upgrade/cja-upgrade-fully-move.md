@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 100%
 
@@ -63,8 +63,8 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-appmeasurement-third-pary"
->title="禁用第三方标签管理系统"
->abstract="在 Web SDK 数据完全发挥作用的情况下，与您的标签管理员一起从第三方标签管理系统中删除 AppMeasurement 库。<br><br>执行此步骤的预计时间取决于从标签管理产品中禁用 AppMeasurement 的难易程度，以及您的组织用于部署和管理标签代码的发布周期。"
+>title="禁用第三方标记管理系统"
+>abstract="在 Web SDK 数据完全发挥作用的情况下，与您的标记管理员一起从第三方标记管理系统中删除 AppMeasurement 库。<br><br>执行此步骤的预计时间取决于从标记管理产品中禁用 AppMeasurement 的难易程度，以及您的组织用于部署和管理标记代码的发布周期。"
 
 <!-- markdownlint-enable MD034 -->
 

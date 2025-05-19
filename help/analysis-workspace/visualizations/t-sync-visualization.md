@@ -8,7 +8,7 @@ role: User
 source-git-commit: 8f9c03607130bdeaf6cb7a32d8dd465712a47ea5
 workflow-type: tm+mt
 source-wordcount: '437'
-ht-degree: 92%
+ht-degree: 96%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 92%
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_showtable"
 >title="显示表格"
->abstract="选择&#x200B;**[!UICONTROL 显示表]**&#x200B;为当前可视化图表生成新的数据源（独立于原始数据源）。"
+>abstract="选择&#x200B;**[!UICONTROL 显示表格]**，为当前可视化图表生成一个与原始数据源区分开的新数据源。"
 
 <!-- markdownlint-enable MD034 -->
 

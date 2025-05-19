@@ -1,11 +1,11 @@
 ---
-description: Analysis Workspace 中的数据字典允许用户对 Analysis Workspace 中的各种组件进行编目和跟踪，包括组件的预期用途、批准情况、重复情况等等。
-title: 数据字典概述
+description: Analysis Workspace 中的数据词典允许用户对 Analysis Workspace 中的各种组件进行编目和跟踪，包括组件的预期用途、批准情况、重复情况等等。
+title: 数据词典概述
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
 source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 100%
 
@@ -17,8 +17,8 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="component_datadictionary"
->title="数据字典"
->abstract="数据字典能够帮助用户和管理员跟踪并更好地理解 Analytics 环境中的组件。<br/>Analytics 管理员负责为用户整理数据字典中每个组件的信息。"
+>title="数据词典"
+>abstract="数据词典能够帮助用户和管理员跟踪并更好地理解 Analytics 环境中的组件。<br/>Analytics 管理员负责为用户整理数据词典中每个组件的信息。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -40,9 +40,9 @@ Analytics 管理员负责整理有关数据字典中每个组件的信息，并�
 
 ## 对用户的好处
 
-数据字典帮助用户更好地了解他们可用的每个组件。
+数据词典帮助用户更好地了解他们可用的每个组件。
 
-数据字典中可用的信息包括：
+数据词典中可用的信息包括：
 
 * 组件的功能和预期用途
 
@@ -52,13 +52,13 @@ Analytics 管理员负责整理有关数据字典中每个组件的信息，并�
 
 * 组件是否经系统管理员批准
 
-有关如何访问数据字典及其包含的信息的详细信息，请参阅[查看数据字典中的组件信息](/help/components/data-dictionary/view-data-dictionary.md)。
+有关如何访问数据词典及其包含的信息的详细信息，请参阅[查看数据词典中的组件信息](/help/components/data-dictionary/view-data-dictionary.md)。
 
 ## 对管理员的好处
 
-数据字典帮助系统管理员跟踪和管理其 Analytics 环境中的组件。
+数据词典帮助系统管理员跟踪和管理其 Analytics 环境中的组件。
 
-以下是 Analytics 管理员可以使用数据字典的一些方式：
+以下是 Analytics 管理员可以使用数据词典的一些方式：
 
 * 识别需要合并的重复组件。
 
@@ -95,18 +95,18 @@ Customer Journey Analytics 管理员负责为其组织维护健康的数据字�
 
 ## 移动、最小化或关闭数据字典
 
-当您打开数据字典时（如[访问数据字典](#access-the-data-dictionary)中所述），它显示为 Analysis Workspace 顶部的一个窗口。
+当您打开数据词典时（如[访问数据词典](#access-the-data-dictionary)中所述），它显示为 Analysis Workspace 顶部的一个窗口。
 
-您可以通过以下任何方式操作“数据字典”窗口：
+您可以通过以下任何方式操作“数据词典”窗口：
 
 * 将其拖动到 Analysis Workspace 中的任何区域
 
-  如果您关闭并重新打开 Analysis Workspace，“数据字典”窗口将保留在您上次移动它的位置上。<!--True?-->
+  如果您关闭并重新打开 Analysis Workspace，“数据词典”窗口将保留在您上次移动它的位置上。<!--True?-->
 
 * 将其最小化
 
-  最小化时，数据字典在 Analysis Workspace 的右下角显示为蓝色选项卡。
+  最小化时，数据词典在 Analysis Workspace 的右下角显示为蓝色选项卡。
 
-  当您选择蓝色选项卡时，数据字典将打开您最近查看的组件。
+  当您选择蓝色选项卡时，数据词典将打开您最近查看的组件。
 
 * 将其关闭

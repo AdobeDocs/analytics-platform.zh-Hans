@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 92053109-f80d-47ab-b011-c28a5411149c
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 100%
 
@@ -81,7 +81,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-streaming-media"
->title="流媒体数据"
+>title="流式处理媒体数据"
 >abstract="Adobe Analytics 和 Customer Journey Analytics 的附加组件，专门用于音频、视频或流式处理内容等媒体数据收集。"
 
 <!-- markdownlint-enable MD034 -->
@@ -107,6 +107,6 @@ ht-degree: 100%
 | [Activity Map 叠加和链接跟踪](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/activity-map/overview) | 尚不可用 |
 | [分类数据](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/classifications/c-classifications) | 查找数据集是 Customer Journey Analytics 中对数据进行分类的方法。<p>[为包含分类数据的每个维度创建一个查找数据集。](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)</p> |
 | [营销渠道](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/marketing-channels/c-getting-started-mchannel) | 派生字段在数据视图中创建。 <p>[创建营销渠道派生字段。](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)</p> |
-| [数据源](https://experienceleague.adobe.com/zh-hans/docs/analytics/export/analytics-data-feed/data-feed-overview) | Experience Platform 和 Customer Journey Analytics 提供了许多功能，这些功能可以独立地或以组合方式解决各种导出需求。这些功能包括 [Experience Platform 数据访问 API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=zh-Hans)、[Experience Platform 目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=zh-Hans)、[Customer Journey Analytics 全表导出](/help/analysis-workspace/export/export-cloud.md)和 [BI 工具集成](/help/data-views/bi-extension.md)。<p>有关导出选项的更多信息，请参阅[数据导出用例](/help/use-cases/data-export/overview.md)。</p> |
+| [数据源](https://experienceleague.adobe.com/zh-hans/docs/analytics/export/analytics-data-feed/data-feed-overview) | Experience Platform 和 Customer Journey Analytics 提供了许多功能，这些功能可以独立地或以组合方式解决各种导出需求。这些功能包括 [Experience Platform 数据访问 API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html)、[Experience Platform 目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html)、[Customer Journey Analytics 全表导出](/help/analysis-workspace/export/export-cloud.md)和 [BI 工具集成](/help/data-views/bi-extension.md)。<p>有关导出选项的更多信息，请参阅[数据导出用例](/help/use-cases/data-export/overview.md)。</p> |
 | [Data Warehouse](https://experienceleague.adobe.com/zh-hans/docs/analytics/export/data-warehouse/data-warehouse) | [Customer Journey Analytics 完整表格导出](/help/analysis-workspace/export/export-cloud.md)从 Adobe Analytics 中的 Data Warehouse 报告演化而来，具有许多当今在 Data Warehouse 中不提供但经常有人要求提供的新功能。 |
 | [流媒体数据](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/media-overview) | 使用作为工作区中的“同时观看媒体的人数”面板和“媒体播放耗时”面板一部分的 Analytics Source Connector 即可获取流媒体数据。 |

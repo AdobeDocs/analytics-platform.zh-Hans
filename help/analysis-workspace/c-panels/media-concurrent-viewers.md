@@ -5,7 +5,7 @@ feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_button"
 >title="媒体并行查看者"
->abstract="创建一个面板来分析特定时间段内的并发查看者。"
+>abstract="创建一个面板来分析特定时段内的并发查看者。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -55,7 +55,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [媒体并行查看者面板](https://video.tv.adobe.com/v/35185/?quality=12&learn=on&captions=chi_hans){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [媒体并行查看者面板](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 {{videoaa}}
 

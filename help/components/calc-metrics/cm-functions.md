@@ -5,9 +5,9 @@ feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
 source-git-commit: 47c5fc27d994667933103f864a253e086050bbf8
-workflow-type: ht
-source-wordcount: '1636'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1878'
+ht-degree: 93%
 
 ---
 
@@ -26,13 +26,13 @@ ht-degree: 100%
 
 在 table 函数中，输出对于表中的每一行都是相同的。在 row 函数中，输出对于表中的每一行都是不同的。
 
-在适用且相关的情况下，函数会用函数类型注释：[!BADGE 表]{type="Neutral"}[!BADGE 行]{type="Neutral"}
+在适用且相关的情况下，函数具有函数类型注释：[!BADGE 表]{type="Neutral"}或[!BADGE 行]{type="Neutral"}
 
 ## Include-Zeros 参数的含义是什么？
 
 它可告知计算中是否包含零。零有时表示&#x200B;*无*，有时又十分重要。
 
-例如，如果您有收入量度，然后又将页面查看次数量度添加到报表中，则您的收入会突然多出一些全部为零的行。您可能不希望该附加量度影响收入栏中的任何&#x200B;**[平均值](cm-functions.md#mean)**、**[行最小值](cm-functions.md#row-min)**、**[四分位数](cm-functions.md#quartile)**&#x200B;以及其他计算。在这种情况下，您需要检查 `include-zeros` 参数。
+例如，如果您有收入量度，然后又将页面查看次数量度添加到报告中，则您的收入会突然多出一些全部为零的行。您可能不希望该附加量度影响收入栏中的任何&#x200B;**[平均值](cm-functions.md#mean)**、**[行最小值](cm-functions.md#row-min)**、**[四分位数](cm-functions.md#quartile)**&#x200B;以及其他计算。在这种情况下，您需要检查 `include-zeros` 参数。
 
 另一种情况是，您有两个感兴趣的指标，其中一个指标的平均值或最小值较高，因为其中有些行为零。在这种情况下，您可以选择不检查参数，以包含零
 
@@ -52,7 +52,7 @@ ht-degree: 100%
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ABSOLUTE VALUE(metric)]**
 
-[!BADGE 行]{type="Neutral"}
+[!BADGE Row]{type="Neutral"}返回数字的绝对值。 某数字的绝对值是一个具有正值的数字。
 
 | 参数 | 描述 |
 |---|---|
@@ -137,7 +137,7 @@ ht-degree: 100%
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL COUNT(metric)]**
 
-[!BADGE 表]{type="Neutral"}
+[!BADGE 表]{type="Neutral"}返回列中某个量度的非零值的数量或计数（维度中报告的唯一元素数量）。
 
 | 参数 | 描述 |
 |---|---|
@@ -151,13 +151,13 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="functions-exp"
 >title="指数"
->abstract="返回 e 的给定次幂。常数 e 等于 2.71828182845904，它是自然对数的底数。EXPONENT 是 LN 的反函数，LN 是某数字的自然对数。"
+>abstract="返回 e 的给定次幂。常量 e 等于 2.71828182845904，它是自然对数的底数。EXPONENT 是 LN 的反函数，LN 是某数字的自然对数。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT(metric)]**
 
-[!BADGE 行]{type="Neutral"}
+[!BADGE Row]{type="Neutral"}返回e的乘幂为给定数字。 常量 e 等于 2.71828182845904，它是自然对数的底数。EXPONENT 是 LN 的反函数，LN 是某数字的自然对数。
 
 | 参数 | 描述 |
 |---|---|
@@ -178,7 +178,7 @@ ht-degree: 100%
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL MEAN(metric, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"}
+[!BADGE 表]{type="Neutral"}返回列中某个量度的算术平均值或平均值。
 
 | 参数 | 描述 |
 |---|---|
@@ -200,7 +200,7 @@ ht-degree: 100%
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN(metric, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"}
+[!BADGE 表]{type="Neutral"}返回列中某指标的中间值。 中间值是位于一组数字中间的数字。也就是说，一半的数字大于或等于中间值，一半的数字小于或等于中间值。
 
 | 参数 | 描述 |
 |---|---|
@@ -259,7 +259,7 @@ MODULO(MODULO(x,y)+y,y)
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL PERCENTILE(metric, k, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"}
+[!BADGE 表]{type="Neutral"}返回第n个百分位数，该值介于0和100之间。 当 n &lt; 0 时，该函数使用零。当 n > 100 时，该函数返回 100。
 
 | 参数 | 描述 |
 |---|---|
@@ -304,7 +304,7 @@ MODULO(MODULO(x,y)+y,y)
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE(metric, quartile, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"}当四分位数分别等于 `0`（零）、`2` 和 `4` 时，[COLUMN MINIMUM](#column-minimum), [MEDIAN](#median) 和 [COLUMN MAXIMUM](#column-maximum) 返回与 [QUARTILE](#quartile) 相同的值。
+[!BADGE Table]{type="Neutral"}返回量度的四分位数形式的值。 例如，四分位数可用于查找在获得的收入方面排名前 25% 的产品。当四分位数分别等于 `0`（零）、`2` 和 `4` 时，[COLUMN MINIMUM](#column-minimum), [MEDIAN](#median) 和 [COLUMN MAXIMUM](#column-maximum) 返回与 [QUARTILE](#quartile) 相同的值。
 
 | 参数 | 描述 |
 |---|---|
@@ -435,7 +435,7 @@ ROUND( 314.15, -2) = 300
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT(metric, include_zeros)]**
 
-[!BADGE 行]{type="Neutral"}
+[!BADGE Row]{type="Neutral"}返回一个数的正平方根。 某数字的平方根是该数字二分之一次幂的值。
 
 | 参数 | 描述 |
 |---|---|
@@ -455,7 +455,7 @@ ROUND( 314.15, -2) = 300
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL STANDARD DEVIATION(metric, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"}
+[!BADGE 表]{type="Neutral"}基于样本数据群体返回标准差或方差的平方根。
 
 | 参数 | 描述 |
 |---|---|
@@ -476,7 +476,7 @@ ROUND( 314.15, -2) = 300
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE(metric, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"}
+[!BADGE 表]{type="Neutral"}返回基于样本数据群体的方差。
 
 | 参数 | 描述 |
 |---|---|

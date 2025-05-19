@@ -520,13 +520,13 @@ CDF-Z(-3) ? 0.0013499
 | include_zeros | 是否在计算中包含零值 |
 
 
-## Floor {#floor}
+## 向下取整 {#floor}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-floor"
->title="Floor"
+>title="向下取整"
 >abstract="返回不大于给定值的最大整数。例如，如果您要避免在报告收入时出现货币小数位数，而某产品的收入为 $569.34，则使用公式 FLOOR(Revenue) 可将收入向下舍入为最接近的美元数 $569。"
 
 <!-- markdownlint-enable MD034 -->
@@ -661,7 +661,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-if"
 >title="如果"
->abstract="如果条件参数的值非零（真），则结果为 value_if_true 参数的值。否则，它会是 value_if_false 参数的值。"
+>abstract="如果完成情况参数的值非零（真），则结果为 value_if_true 参数的值。否则，它会是 value_if_false 参数的值。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -849,13 +849,13 @@ CDF-Z(-3) ? 0.0013499
 | include_zeros | 是否在计算中包含零值 |
 
 
-## 常用对数 {#log-base-ten}
+## 以 10 为底的对数 {#log-base-ten}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-log10"
->title="常用对数"
+>title="以 10 为底的对数"
 >abstract="返回某数字以 10 为底数的对数。"
 
 <!-- markdownlint-enable MD034 -->
@@ -969,13 +969,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-log"
 >title="自然对数"
->abstract="返回某数字的自然对数。自然对数以常数 e (2.71828182845904) 为底数。LN 是 EXP 函数的反函数。"
+>abstract="返回某数字的自然对数。自然对数以常量 e (2.71828182845904) 为底数。LN 是 EXP 函数的反函数。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL NATURAL LOG(metric)]**
 
-返回某数字的自然对数。自然对数以常数 e (2.71828182845904) 为底数。LN 是 EXP 函数的反函数。
+返回某数字的自然对数。自然对数以常量 e (2.71828182845904) 为底数。LN 是 EXP 函数的反函数。
 
 | 参数 | 描述 |
 |---|---|

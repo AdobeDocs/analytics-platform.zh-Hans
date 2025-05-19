@@ -24,10 +24,10 @@ Adobe 使用客户端跟踪和服务器端跟踪相结合的方式为您的组�
 
 >[!CONTEXTUALHELP]
 >id="cja_product_usage_opt_out_settings"
->title="选择退出的用户"
+>title="选择禁用的用户"
 >abstract="将用户排除在产品使用情况跟踪之外。"
 
 >[!CONTEXTUALHELP]
 >id="product_usage_opt_out_settings"
->title="选择退出的用户"
+>title="选择禁用的用户"
 >abstract="将用户排除在产品使用情况跟踪之外。"

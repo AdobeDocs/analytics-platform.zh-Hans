@@ -21,7 +21,7 @@ ht-degree: 7%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-feeds-step"
 >title="使用与数据馈送类似的导出功能"
->abstract="Customer Journey Analytics 中尚未提供数据馈送的精确替代品。不过，也可以通过全表导出、平台数据集导出、BI 工具集成和报告 API 等功能实现类似的功能。"
+>abstract="Customer Journey Analytics 中尚未提供数据馈送的精确替代品。不过，也可以通过全表导出、Platform 数据集导出、BI 工具集成和报告 API 等功能实现类似的功能。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -85,6 +85,6 @@ Adobe Analytics和Customer Journey Analytics之间的唯一区别之一与归因
 | 数据导出用例 | Experience Platform和Customer Journey Analytics功能 |
 |---|---|
 | **数据备份**<br/>&#x200B;保留数字数据的完整副本，以供合规性或法规使用。 | **Experience Platform**： [**导出数据集**](export-datasets.md)<br/>&#x200B;按计划或临时将Experience Platform中收集的数据直接导出到云目标。 |
-| **数据验证**<br/>&#x200B;评估点击流数据的数据收集准确性。 | **Experience Platform**： [**查询服务(Data Distiller)和导出数据集**](queryservice-export-datasets.md)<br/> Interactive PostgreSQL接口使用您喜爱的SQL工具执行临时SQL查询，以验证数据集中的数据。<br/><br/>**Customer Journey Analytics**： [**导出完整表**](export-full-table.md)<br/>&#x200B;验证应用了归因和会话化的CJA中已处理数据。 |
+| **数据验证**<br/>&#x200B;评估点击流数据的数据收集准确性。 | **Experience Platform**： [**查询服务(Data Distiller)和导出数据集**](queryservice-export-datasets.md)<br/> Interactive PostgreSQL接口使用您喜爱的SQL工具执行临时SQL查询，以验证数据集中的数据。<br/><br/>**Customer Journey Analytics**： [**导出完整的表**](export-full-table.md)<br/>&#x200B;验证应用了归因和会话化的CJA中已处理数据。 |
 | **Data Lake、Data Warehouse或BI工具**<br/>&#x200B;将数字数据引入您自己的BI工具或Data Lake以与其他数据集一起使用。 | **Customer Journey Analytics**： [**BI扩展**](bi-extension.md)<br/>&#x200B;将Customer Journey Analytics处理的指标添加到Power BI等数据可视化工具中，并与自定义报表的其他数据相结合&#x200B;<br/><br/>**Experience Platform**： [**查询服务(数据Distiller)和导出数据集**](queryservice-export-datasets.md)<br>&#x200B;使用SQL生成自定义点击流数据以提交到Cloud目标。 |
 | **AI/ML准备就绪**<br/>&#x200B;使用Customer Journey Analytics数据增强人工智能/机器学习模型和任务。 | **Customer Journey Analytics**： [**导出完整表**](export-full-table.md)<br/>&#x200B;一次性或循环将Customer Journey Analytics处理的维度和量度导出到Cloud目标，包括计算量度和分段。<br/><br/>**Experience Platform**： [**查询服务(Data Distiller)和导出数据集**](queryservice-export-datasets.md)<br/>&#x200B;使用SQL生成自定义点击流数据以扩充AI/ML模型。 |
