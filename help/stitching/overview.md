@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: c27d5f44243e2cda252ac6a484a70964f0999dfc
-workflow-type: ht
-source-wordcount: '739'
-ht-degree: 100%
+source-git-commit: 1a697ce0372d1cb544940778850714a198a000ec
+workflow-type: tm+mt
+source-wordcount: '741'
+ht-degree: 99%
 
 ---
 
@@ -74,5 +74,6 @@ Customer Journey Analytics 支持两种类型的拼接：[基于字段的拼接]
 >[基于字段的拼接](fbs.md)
 >[基于图形的拼接](gbs.md)
 >[使用拼接](use-stitching.md)
+>[验证拼接](validate.md)
 >[关于拼接的常见问题解答](faq.md)
 
