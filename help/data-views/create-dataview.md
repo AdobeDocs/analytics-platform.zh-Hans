@@ -5,7 +5,7 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 326a82e93c0c8d57db224023ed5f3a7ab94a8997
+source-git-commit: 07f9a224d43658a58779abecd6473fceb7109ef4
 workflow-type: tm+mt
 source-wordcount: '2125'
 ht-degree: 99%
@@ -19,7 +19,7 @@ ht-degree: 99%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建或编辑数据视图](https://video.tv.adobe.com/v/345538/?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建或编辑数据视图](https://video.tv.adobe.com/v/35110/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -54,7 +54,7 @@ ht-degree: 99%
 1. 选择&#x200B;**[!UICONTROL “保存并继续”]**，以继续配置新的或现有的数据视图。选择&#x200B;**[!UICONTROL “保存”]**，以保存现有数据视图的配置。
 
 
-### 设置 {#settings}
+### 设置 {#configure-settings}
 
 
 >[!CONTEXTUALHELP]
@@ -176,14 +176,14 @@ ht-degree: 99%
 
 
 
-## 设置
+## 设置 {#dataview-settings}
 
 1. 选择&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡。
 1. 配置应用于整个数据视图的区段。请参阅下面的[设置（区段）](#settings-filters)。
 1. 配置会话超时和量度。请参阅下列[会话设置。](#session-settings)
 1. 选择&#x200B;**[!UICONTROL “保存并继续”]**，以继续配置新的或现有的数据视图。选择&#x200B;**[!UICONTROL “保存”]**，以保存现有数据视图的配置。
 
-### 设置（区段）
+### 设置（区段） {#segment-settings}
 
 您可以添加要应用于整个数据视图的区段。此区段应用于您在 Workspace 中运行的任何报告。请将某个区段从左边栏中的列表拖至&#x200B;**[!UICONTROL 添加区段]**&#x200B;字段。
 

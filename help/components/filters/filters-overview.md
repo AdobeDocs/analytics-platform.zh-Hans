@@ -4,8 +4,8 @@ description: 了解区段的用途以及如何创建简单的区段。
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters, Segments
 role: User
-source-git-commit: 85a22d1e57925f0512ce0cc658cfba1008339d91
-workflow-type: ht
+source-git-commit: d0268ce9ba22228c5c42d600c173f39cd1001638
+workflow-type: tm+mt
 source-wordcount: '1474'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 
    - 此区段应何时使用？
 
-- **范围**：哪个[区段容器](#filter-containers)最能代表您所追求的数据？尽可能使用最小的容器。
+- **范围**：哪个[区段容器](#segment-containers)最能代表您所追求的数据？尽可能使用最小的容器。
 
 - **组件**：决定在区段定义中包含哪些组件，以及应该根据哪些值来验证条件。
 
