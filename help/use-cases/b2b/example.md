@@ -5,20 +5,22 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: 912e6a3200cdc8463667266f9cae75e4f6278337
+source-git-commit: 1bfebb53fbe056ed6320380178c8b1ce8f7079f1
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 6%
+source-wordcount: '1276'
+ht-degree: 7%
 
 ---
 
-# B2B 项目示例
+# 基于人员的B2B项目示例
 
-本文描述了一个用例，其中您想要在典型B2B配置的上下文中在Customer Journey Analytics中正确报告人员数据。 此类配置是[Real-Time CDP B2B edition](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview)的一部分。  此用例说明了如何在Customer Journey Analytics中设置、配置和报告基于配置文件（人员）级别的B2B数据。
+本文描述了一个用例，其中您想要在Customer Journey Analytics中正确报告典型基于人员的B2B设置上下文中的人员数据。 [Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview)可帮助进行此类配置。  此用例说明了如何在Customer Journey Analytics中设置、配置和报告基于配置文件（人员）级别的B2B数据。
+
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}随着[Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md)的发布，发布了基于帐户的报表用例的单独部分。
 
 ## 连接
 
-定义您的连接以包含Experience Platform中的所有相关B2B数据集。 可以考虑添加到连接的数据集：
+定义您的连接以包含来自Experience Platform的所有相关B2B数据集。 可以考虑添加到连接的数据集：
 
 | 数据集 | 架构 | 架构类型 | 基类 | 描述 |
 |---|---|---|---|---|
@@ -41,7 +43,7 @@ ht-degree: 6%
 -->
 
 
-B2B查找架构、配置文件架构和事件架构之间的关系在Experience Platform内的B2B设置中定义。 查看[Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/rtcdp/schemas/b2b)中的架构，以及[在Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/relationship-b2b)中定义两个架构之间的多对一关系。
+B2B查找架构、配置文件架构和事件架构之间的关系在Experience Platform内的B2B设置中定义。 查看[Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/rtcdp/schemas/b2b)中的架构，以及[在Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b)中定义两个架构之间的多对一关系。
 
 
 要确保正确设置支持B2B数据基于人员的查找的连接，请使用下图进行概述并执行以下步骤：
@@ -60,14 +62,14 @@ B2B查找架构、配置文件架构和事件架构之间的关系在Experience 
    |---|---|---|---| 
    | B2B活动数据集 | SourceKey <br/>**personKey.sourceKey** | | |
    | B2B人员数据集 | SourceKey <br/>**b2b.personKey.sourceKey** | | |
-   | B2B帐户数据集 | | SourceKey <br/>**accountKey.sourceKey**&#x200B;❶ | SourceKey<br>（B2B人员数据集）<br/>**b2b.accountKey.sourceKey**&#x200B;❶ |
-   | B2B Opportunity数据集 | | Source Key <br/>**opportunityKey.sourceKey**&#x200B;❷ | SourceKey<br/>（B2B机会关系数据集）<br/>**opportunityKey.sourceKey**&#x200B;❷ |
-   | B2B Campaign数据集 | | SourceKey <br/>**campaignKey.sourceKey**&#x200B;❸ | SourceKey<br/>（B2B营销活动成员数据集）<br/>**campaignKey.sourceKey**&#x200B;❸<br/> |
-   | B2B营销列表数据集 | | SourceKey <br/>**marketingListKey.sourceKey**&#x200B;❹ | SourceKey<br/>（B2B营销列表成员数据集）<br/>**marketingListKey.sourceKey**&#x200B;❹ |
-   | B2B帐户人员关系数据集 | | SourceKey <br/>**personKey.sourceKey**&#x200B;❺ | Source Key<br/>（事件数据集）<br/>**personKey.sourceKey**&#x200B;❺ |
-   | B2B机会人员关系数据集 | | SourceKey <br/>**personKey.sourceKe**&#x200B;❻y | Source Key<br/>（事件数据集）<br/>**personKey.sourceKey**&#x200B;❻ |
-   | B2B营销活动成员数据集 | | SourceKey <br/>**personKey.sourceKey**&#x200B;❼ | Source Key<br/>（事件数据集）<br/>**personKey.sourceKey**&#x200B;❼ |
-   | B2B营销列表成员数据集 | | SourceKey <br/>**personKey.sourceKey**&#x200B;❽ | Source Key<br/>（事件数据集）<br/>**personKey.sourceKey**&#x200B;❽ |
+   | B2B帐户数据集 | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br>（B2B人员数据集）<br/>**b2b.accountKey.sourceKey**❶ |
+   | B2B Opportunity数据集 | | Source Key <br/>**opportunityKey.sourceKey**❷ | SourceKey<br/>（B2B机会关系数据集）<br/>**opportunityKey.sourceKey**❷ |
+   | B2B Campaign数据集 | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/>（B2B营销活动成员数据集）<br/>**campaignKey.sourceKey**❸<br/> |
+   | B2B营销列表数据集 | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/>（B2B营销列表成员数据集）<br/>**marketingListKey.sourceKey**❹ |
+   | B2B帐户人员关系数据集 | | SourceKey <br/>**personKey.sourceKey**❺ | Source Key<br/>（事件数据集）<br/>**personKey.sourceKey**❺ |
+   | B2B机会人员关系数据集 | | SourceKey <br/>**personKey.sourceKe** y❻ | Source Key<br/>（事件数据集）<br/>**personKey.sourceKey**❻ |
+   | B2B营销活动成员数据集 | | SourceKey <br/>**personKey.sourceKey**❼ | Source Key<br/>（事件数据集）<br/>**personKey.sourceKey**❼ |
+   | B2B营销列表成员数据集 | | SourceKey <br/>**personKey.sourceKey**❽ | Source Key<br/>（事件数据集）<br/>**personKey.sourceKey**❽ |
 
 {style="table-layout:auto"}
 
@@ -94,7 +96,7 @@ B2B查找架构、配置文件架构和事件架构之间的关系在Experience 
 
 +++
 
-+++Dimension
++++维度
 
 | 组件名称 | 数据集 | 数据类型 | 架构路径 |
 |---|---|---|---|
@@ -113,7 +115,7 @@ B2B查找架构、配置文件架构和事件架构之间的关系在Experience 
 
 +++
 
-## 工作区
+## Workspace
 
 通过在数据视图中正确定义组件，您现在可以在Workspace项目中构建特定的B2B报告和可视化图表。
 

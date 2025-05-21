@@ -6,14 +6,18 @@ feature: Use Cases
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: d0268ce9ba22228c5c42d600c173f39cd1001638
+badgePremium: label="B2B Edition"
+exl-id: d5e44546-ea82-42eb-98df-19d51c71e9be
+source-git-commit: f66df039c56fc1df3fb0e102745f500a3782d26d
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 0%
+source-wordcount: '709'
+ht-degree: 1%
 
 ---
 
 # 优化帐户营销
+
+{{draft-b2b}}
 
 有效的基于帐户的营销需要帐户级别对购买历程有深入的了解。 因此，您可以确定最有效的营销活动来推动交易完成。
 
@@ -116,4 +120,3 @@ Customer Journey Analytics B2B edition可以支持您优化帐户营销。 有�
 1. 选择&#x200B;**[!UICONTROL 生成]**。
 
    ![B2B用例 — 个人事件 — 流程配置](assets/b2b-uc-optimize-marketing-flow.png)
-

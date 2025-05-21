@@ -6,14 +6,18 @@ feature: Use Cases
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: d0268ce9ba22228c5c42d600c173f39cd1001638
+badgePremium: label="B2B Edition"
+exl-id: f5294af8-b8dc-4239-b0f7-5c20d39007ee
+source-git-commit: f66df039c56fc1df3fb0e102745f500a3782d26d
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '277'
 ht-degree: 2%
 
 ---
 
 # 增长关键客户
+
+{{draft-b2b}}
 
 扩大并留住关键客户是B2B公司的首要任务。 确保交易进展的先决条件是在适当的时间与目标帐户中的关键利益相关者沟通。
 
@@ -51,4 +55,3 @@ ht-degree: 2%
 1. [智能警报](/help/components/c-intelligent-alerts/intelligent-alerts.md)
 1. [与工作区用户或任何人共享](/help/analysis-workspace/curate-share/share-projects.md)
 1. [评论](/help/analysis-workspace/build-workspace-project/comment-projects.md)
-

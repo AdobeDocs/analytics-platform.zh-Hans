@@ -6,14 +6,18 @@ feature: Use Cases
 role: User, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: d0268ce9ba22228c5c42d600c173f39cd1001638
+badgePremium: label="B2B Edition"
+exl-id: 7c16cc62-5032-44a2-92e4-4a1c320f17aa
+source-git-commit: f66df039c56fc1df3fb0e102745f500a3782d26d
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '371'
 ht-degree: 1%
 
 ---
 
 # B2B edition用例概述
+
+{{draft-b2b}}
 
 此文档的此部分详细介绍一些特定的B2B用例，这些用例旨在提供有关更复杂的B2B购买历程的见解。 典型的B2B购买包括购买团体、不同利益相关者发起的跨渠道接触点、销售周期各个阶段的机会等等。
 

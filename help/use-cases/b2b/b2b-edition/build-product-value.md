@@ -6,14 +6,18 @@ feature: Use Cases
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: d0268ce9ba22228c5c42d600c173f39cd1001638
+badgePremium: label="B2B Edition"
+exl-id: 509c68e1-a8cc-48ac-9e9d-50c703356dbc
+source-git-commit: f66df039c56fc1df3fb0e102745f500a3782d26d
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 0%
+source-wordcount: '395'
+ht-degree: 1%
 
 ---
 
 # 构建产品价值
+
+{{draft-b2b}}
 
 您希望向产品经理和CMO或CEO提供B2B产品价值见解。 例如，通过数据驱动的流失分析或谓词。 并使这些见解可通过移动仪表板消化。
 
@@ -61,5 +65,3 @@ Customer Journey Analytics B2B edition可以支持您提供产品价值分析。
 1. 使用&#x200B;**[!UICONTROL 预览]**&#x200B;预览仪表板。 仪表板现在可从Adobe Analytics仪表板应用程序获得，可从[App Store](https://apps.apple.com/us/app/adobe-analytics-dashboards/id1509062264)或[Google Play](https://play.google.com/store/apps/details?id=com.adobe.analyticsdashboards)获得。
 
    ![B2B用例 — 构建产品值 — 使分析大众化 — 移动记分卡预览](assets/b2b-uc-build-product-value-mobile-scorecard-preview.png)
-
-
