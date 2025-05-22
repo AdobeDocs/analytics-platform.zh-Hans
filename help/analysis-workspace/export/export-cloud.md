@@ -5,10 +5,10 @@ title: 将 Customer Journey Analytics 报告导出至云
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 9482dd11ecf4aa6f3f8a45c90c3838a4a3389c73
+source-git-commit: c503b5bc65565b342e5e6bea8c019d8e1ee1e429
 workflow-type: tm+mt
-source-wordcount: '2312'
-ht-degree: 97%
+source-wordcount: '2284'
+ht-degree: 98%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="export-manifest"
 >title="清单文件"
->abstract="启用后，清单文件将包含在任何成功的导出投放中。 利用清单文件，可确认是否已成功提交所有文件。"
+>abstract="启用后，任何成功的导出传递都会包含一份清单文件。您可以使用清单文件确认所有文件均已成功传递。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -91,8 +91,9 @@ ht-degree: 97%
    | 开始日期  | 计划导出开始的日期和时间。 <p>仅当选择计划导出频率时此选项才可用。</p> |
    | 结束时间 | 计划导出的到期日期和时间。计划导出在您设置的日期和时间过后不再运行。 <p>仅当选择计划导出频率时此选项才可用。</p> |
    | 文件格式 | 选择导出的数据是否应为 .csv 或 .json 格式。 |
+   | 包含清单文件 | 启用后，任何成功的导出传递都会包含一份清单文件。您可以使用清单文件确认所有文件均已成功传送。它包含以下信息：<ul><li>已传递的所有文件的列表</li><li>每个文件的 MD5 校验和</li></ul><p>导出的数据以压缩文件的形式存储在您配置的云目标中，如[配置云导出账户](/help/components/exports/cloud-export-accounts.md)和[配置云导出位置](/help/components/exports/cloud-export-locations.md)中所述。</p><p>压缩文件的文件名如下所示，具体取决于您选择的文件格式是 CSV 还是 JSON：</p><ul><li>`cja-export-{reportInstanceId}-{idx}.csv.gz`</li><li>`cja-export-{reportInstanceId}-{idx}.json.gz`</li></ul><p>您在上面的&#x200B;[!UICONTROL **文件格式**]&#x200B;字段中选择文件格式。</p> |
    | 帐户 | 选择您想要发送数据的云导出账户。 <p>或者，如果您尚未配置要使用的云帐户，则可以配置一个新帐户：<ol><li>选择&#x200B;[!UICONTROL **添加帐户**]，然后指定以下信息：<ul><li>[!UICONTROL **位置帐户名称**]：指定位置账户的名称。此名称会在创建位置时出现 </li><li>[!UICONTROL **位置账户描述**]：提供帐户的简短描述，以帮助将它与同一帐户类型的其他帐户区分开来。</li><li>[!UICONTROL **帐户类型**]：选择您要导出到的云帐户类型。可用的帐户类型包括 Amazon S3 Role ARN、Google Cloud Platform、Azure SAS、Azure RBAC、Snowflake 和 AEP Data Landing Zone。</li></ul><li>要完成帐户配置，请继续访问下面与您选择的&#x200B;[!UICONTROL **帐户类型**]&#x200B;相对应的链接：<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-accounts.md#snowflake)</li></ul></ol> |
-   | 位置名称 | 在帐户上选择要发送导出数据的位置。<p>或者，如果您尚未配置要在所选帐户上使用的位置，则可以配置一个新位置：<ol><li>选择&#x200B;[!UICONTROL **添加位置**]，然后指定以下信息： <ul><li>[!UICONTROL **名称：**]&#x200B;位置的名称。</li><li>[!UICONTROL **描述**]：提供位置的简短描述，以帮助将它与帐户上的其他位置区分开来。</li><li>[!UICONTROL **位置帐户**]：选择要在其中创建位置的帐户。</li></ul><li>要完成位置配置，请继续使用下面与您在&#x200B;[!UICONTROL **位置帐户**]&#x200B;字段中选择的帐户类型相对应的链接：<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone)。</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
+   | 位置 | 在帐户上选择要发送导出数据的位置。<p>或者，如果您尚未配置要在所选帐户上使用的位置，则可以配置一个新位置：<ol><li>选择&#x200B;[!UICONTROL **添加位置**]，然后指定以下信息： <ul><li>[!UICONTROL **名称：**]&#x200B;位置的名称。</li><li>[!UICONTROL **描述**]：提供位置的简短描述，以帮助将它与帐户上的其他位置区分开来。</li><li>[!UICONTROL **位置帐户**]：选择要在其中创建位置的帐户。</li></ul><li>要完成位置配置，请继续使用下面与您在&#x200B;[!UICONTROL **位置帐户**]&#x200B;字段中选择的帐户类型相对应的链接：<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone)。</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
 
    {style="table-layout:auto"}
 
@@ -105,32 +106,6 @@ ht-degree: 97%
 ## 管理导出
 
 在从 Analysis Workspace 导出数据后，您可以编辑、重新导出、复制、标记或删除现有的导出内容，如[管理导出内容](/help/components/exports/manage-exports.md)中所述。
-
-## 查看导出的数据和清单文件
-
-### 导出的数据
-
-导出的数据以压缩文件的形式存储在您配置的云目标中，如[配置云导出账户](/help/components/exports/cloud-export-accounts.md)和[配置云导出位置](/help/components/exports/cloud-export-locations.md)中所述。
-
-压缩文件的文件名如下所示，具体取决于您选择的文件格式是 CSV 还是 JSON：
-
-* `cja-export-{reportInstanceId}-{idx}.csv.gz`
-
-* `cja-export-{reportInstanceId}-{idx}.json.gz`
-
->[!NOTE]
->
->导出表时，您可以在&#x200B;[!UICONTROL **文件格式**]&#x200B;字段中选择文件格式，如[从 Analysis Workspace 导出完整表格](#export-full-tables-from-analysis-workspace)中所述。
-
-### 清单文件
-
-任何包含至少一个文件的成功导出传递中，都会包含一个文件名为 `cja-export-{reportInstanceId}-{idx}.json.gz` 的清单文件。您可以使用清单文件确认所有文件均已成功传送。它包含以下信息：
-
-* 已传递的所有文件的列表
-
-* 每个文件的 MD5 校验和
-
-<!-- add in  what the file name, structure, and file format will be -->
 
 ## 导出到云的优势 {#advantages}
 
@@ -214,11 +189,11 @@ ht-degree: 97%
 
 如果报告中使用了非默认归因模型，则会忽略或保留报告中使用的分配模型，具体取决于报告是具有单个维度还是多个维度：
 
-* **对于在单个维度中包含量度归因的报告：**&#x200B;[量度归因](/help/data-views/component-settings/attribution.md)会覆盖[分配模型](/help/data-views/component-settings/persistence.md)，就像使用量度归因时通常进行的操作一样。
+* **对于在单个维度中包含量度归因的报告：**[量度归因](/help/data-views/component-settings/attribution.md)会覆盖[分配模型](/help/data-views/component-settings/persistence.md)，就像使用量度归因时通常进行的操作一样。
 
   例如，“首次接触”量度归因会覆盖“最近”维度分配。
 
-* **对于同时包含多个维度的量度归因的报告：除了维度[分配模型](/help/data-views/component-settings/persistence.md)外，还应用了**&#x200B;[量度归因](/help/data-views/component-settings/attribution.md)。
+* **对于同时包含多个维度的量度归因的报告：除了维度[分配模型](/help/data-views/component-settings/persistence.md)外，还应用了**[量度归因](/help/data-views/component-settings/attribution.md)。
 
   例如，除了“最近”维度分配之外，还会应用“首次接触”量度归因。此外，量度归因将会应用于分配后的维度项对，就好像它们是单个维度项一样，而不是像在自由格式表中通常所做的那样，独立地应用于每个维度项。
 
