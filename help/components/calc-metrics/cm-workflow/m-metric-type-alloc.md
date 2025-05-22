@@ -3,9 +3,9 @@ description: 了解量度类型和归因
 title: 量度类型和归因
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
-workflow-type: ht
-source-wordcount: '947'
+source-git-commit: 2d182004b12eb44f54ec9b4b5f63cb9072594aec
+workflow-type: tm+mt
+source-wordcount: '1007'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 100%
 
    * 指定&#x200B;**[!UICONTROL 量度类型]**：
 
-     | 指标类型 | 定义 |
+     | 量度类型 | 定义 |
      |---|---|
      | **[!UICONTROL 标准]** | 如果一个公式包含一个单一的标准量度，它会显示与其相对的非计算量度的相同数据。标准量度可用于创建特定于每个单独行项目的计算量度。 <p>例如，![事件](/help/assets/icons/Event.svg) **[!UICONTROL 订单]** ![划分](/help/assets/icons/Divide.svg) ![事件](/help/assets/icons/Event.svg) **[!UICONTROL 会话]** 会获取该特定行项目的订单数，并将其除以该特定行项目的会话数。 |
      | **[!UICONTROL 全部总计]** | 使用每个行项目中报告时段的&#x200B;**[!UICONTROL 全部总计]**。如果一个公式是由单个全部总计量度组成的，则计算量度会在每个行项目上显示相同的“全部总计”数字。全部总计量度可用于创建与总计数据相比较的计算量度。 <p>例如，![事件](/help/assets/icons/Event.svg) **[!UICONTROL 订单]** ![划分](/help/assets/icons/Divide.svg) ![事件](/help/assets/icons/Event.svg) **[!UICONTROL 总会话数]** 显示订单占所有会话的比例，而不仅仅是特定行项目的会话。在此示例中，您指定计算量度中![事件](/help/assets/icons/Event.svg)**[!UICONTROL 会话]**&#x200B;量度的&#x200B;**[!UICONTROL 全部总计]**，这将自动将其转换为![事件](/help/assets/icons/Event.svg)**[!UICONTROL 总会话数]**。 |
@@ -45,122 +45,92 @@ ht-degree: 100%
 
 ## 归因 {#attribution}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_nondefaultattributionmodel"
 >title="使用非默认的属性模型"
 >abstract="为所选量度启用非默认归因模型。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attributionmodel"
 >title="模型"
 >abstract="选择量度的归因模型。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_lasttouch"
 >title="最后接触"
 >abstract="100% 的点数归于访客看到的最后一个维度值。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_firsttouch"
 >title="首次接触"
 >abstract="100% 的点数归于访客看到的第一个维度值。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_linear"
 >title="线性"
 >abstract="点数均匀分布于所有维度值上。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_participation"
 >title="参与率"
 >abstract="100% 的点数归于访客所见的每个维度值。<br/>列总数被夸大了。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_sametouch"
 >title="同一接触"
 >abstract="仅对与转化发生在同一事件上的维度值给予点数。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
+>[!CONTEXTUALHELP]
+>id="components_calculatedmetrics_attribution_instance"
+>title="同一接触"
+>abstract="仅对与转化发生在同一事件上的维度值给予点数。"
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_ushaped"
 >title="U 型"
 >abstract="第一个维度值占 40%，最后一个维度值占 40%，中间维度值占 20%。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_jcurve"
 >title="J 曲线"
 >abstract="最后一个维度值占 60%，第一个维度值占 20%，中间维度值占 20%。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
+>[!CONTEXTUALHELP]
+>id="components_calculatedmetrics_attribution_jshaped"
+>title="J 曲线"
+>abstract="最后一个维度值占 60%，第一个维度值占 20%，中间维度值占 20%。"
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_inversej"
 >title="反向 J"
 >abstract="第一个维度值占 60%，最后一个维度值占 20%，中间维度值占 20%。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
+>[!CONTEXTUALHELP]
+>id="components_calculatedmetrics_attribution_reversejshaped"
+>title="反向 J"
+>abstract="第一个维度值占 60%，最后一个维度值占 20%，中间维度值占 20%。"
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_timedecay"
 >title="时间衰减"
 >abstract="距离转化时间最近的维度值将获得最多的点数。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_custom"
 >title="自定义"
 >abstract="根据归因权重，自行定义您的位置。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
+>[!CONTEXTUALHELP]
+>id="components_calculatedmetrics_attribution_positionbased"
+>title="自定义"
+>abstract="根据归因权重，自行定义您的位置。"
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_algorithmic"
 >title="算法"
 >abstract="点数是根据统计算法动态确定的。"
 
-<!-- markdownlint-enable MD034 -->
 
 
 {{attribution-models-details}}
@@ -173,7 +143,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_lookbackwindow"
 >title="回顾时间范围"
->abstract="此设置可以确定将要对每次转化应用的数据归因时间窗口。"
+>abstract="此设置可以确定将要对每次转化应用的数据归因窗口。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -190,7 +160,7 @@ ht-degree: 100%
 
 根据您的回顾窗口和归因模型，渠道会收到不同比例的点数。以下是一些示例：
 
-* 使用&#x200B;**首次接触**&#x200B;和&#x200B;**会话回顾时间范围**&#x200B;时，归因功能仅会考虑第三次访问。在电子邮件与展示广告之间，电子邮件是首次接触点，因此电子邮件在 50 美元的购买中获得 100% 的点数。
+* 使用&#x200B;**首次接触**&#x200B;和&#x200B;**会话回顾窗口**&#x200B;时，归因功能仅会考虑第三次访问。在电子邮件与展示广告之间，电子邮件是首次接触点，因此电子邮件在 50 美元的购买中获得 100% 的点数。
 
 * 使用&#x200B;**首次接触**&#x200B;和&#x200B;**人员回顾窗口**&#x200B;时，归因功能会考虑所有三次访问。付费搜索是首次接触点，因此它在 50 美元的购买中获得 100% 的点数。
 
