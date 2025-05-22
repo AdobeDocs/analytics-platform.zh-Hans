@@ -5,10 +5,10 @@ title: 将 Customer Journey Analytics 报告导出至云
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: c503b5bc65565b342e5e6bea8c019d8e1ee1e429
+source-git-commit: 0891aa2bed446e704b0222eff992c5f5bc200f82
 workflow-type: tm+mt
-source-wordcount: '2284'
-ht-degree: 98%
+source-wordcount: '2340'
+ht-degree: 95%
 
 ---
 
@@ -156,9 +156,9 @@ ht-degree: 98%
 * 静态行
 * 日期对齐
 * 来自摘要数据集的量度
-* 动态维度
+* 动态维度项
 
-  如需了解更多信息，请参阅[自由格式表中的动态与静态维度项](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)。
+  将维度拖放到自由格式表的列标题上时，会创建动态维度项，从而导致列被排名前5的维度项动态筛选。 在Analysis Workspace中，每次加载项目时，排名前5的维度项都会更新。 在完整表格导出中，这些维度项目会变为静态。 如需了解更多信息，请参阅[自由格式表中的动态与静态维度项](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)。
 * 第一次细分中的维度会被转换，并作为次级维度添加到导出表格的行中；其他任何细分均不会包含在表格中
 * 大多数数据集均不支持排序；小型数据集可能会对数据进行排序
 
@@ -189,11 +189,11 @@ ht-degree: 98%
 
 如果报告中使用了非默认归因模型，则会忽略或保留报告中使用的分配模型，具体取决于报告是具有单个维度还是多个维度：
 
-* **对于在单个维度中包含量度归因的报告：**&#x200B;[量度归因](/help/data-views/component-settings/attribution.md)会覆盖[分配模型](/help/data-views/component-settings/persistence.md)，就像使用量度归因时通常进行的操作一样。
+* **对于在单个维度中包含量度归因的报告：**[量度归因](/help/data-views/component-settings/attribution.md)会覆盖[分配模型](/help/data-views/component-settings/persistence.md)，就像使用量度归因时通常进行的操作一样。
 
   例如，“首次接触”量度归因会覆盖“最近”维度分配。
 
-* **对于同时包含多个维度的量度归因的报告：除了维度[分配模型](/help/data-views/component-settings/persistence.md)外，还应用了**&#x200B;[量度归因](/help/data-views/component-settings/attribution.md)。
+* **对于同时包含多个维度的量度归因的报告：除了维度[分配模型](/help/data-views/component-settings/persistence.md)外，还应用了**[量度归因](/help/data-views/component-settings/attribution.md)。
 
   例如，除了“最近”维度分配之外，还会应用“首次接触”量度归因。此外，量度归因将会应用于分配后的维度项对，就好像它们是单个维度项一样，而不是像在自由格式表中通常所做的那样，独立地应用于每个维度项。
 
