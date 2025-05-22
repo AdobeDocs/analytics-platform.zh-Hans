@@ -4,9 +4,9 @@ title: 在项目中添加和查看注释
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: fb7e0e911de2a4a702d6069ca2f53d7769ec608b
+source-git-commit: df147b92e19b6dee66fcf6346113596f1cde6fd1
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1723'
 ht-degree: 0%
 
 ---
@@ -38,13 +38,13 @@ Analysis Workspace中的评论允许您在Analysis Workspace项目的上下文�
 
    ![评论区域已关闭](assets/comments-area-closed.png)
 
-   每个评论都显示一个日期的时间戳，该日期为发表评论的日期。 如果评论是在当天发布，则显示当天的时间。 将鼠标悬停在显示发表评论的完整日期和时间的日期或时间上。
+   每个评论都显示一个时间戳，表明发表评论的日期。 如果评论是在当天发布，则显示当天的时间。 将鼠标悬停在显示发表评论的完整日期和时间的日期或时间上。
 
 1. （可选）要搜索注释区域，请选择搜索图标![搜索图标](assets/comments-search-icon.png)，然后键入单词或短语。 过滤注释区域以仅包含那些包括该单词或短语的注释。
 
 ### 在项目中查看评论徽章
 
-在项目[&#128279;](#comment-on-a-specific-area-of-the-project)的特定区域上作出的评论具有在评论所属的项目区域上显示的&#x200B;**评论徽章** ![评论徽章](assets/comment-indicator.png)。 选择徽章以查看评论。 选择徽章后，您可以选择注释本身以在右边栏的注释区域中突出显示注释。
+在项目](#comment-on-a-specific-area-of-the-project)的特定区域上作出[的评论具有在评论所属的项目区域上显示的&#x200B;**评论徽章** ![评论徽章](assets/comment-indicator.png)。 选择徽章以查看评论。 选择徽章后，您可以选择注释本身以在右边栏的注释区域中突出显示注释。
 
 编号显示在项目中的每个徽章上，并且按照其创建顺序排序。 如果在项目的同一区域中有多个评论，则该徽章显示3个点![评论徽章多个](assets/comment-indicator-multiple.png)。 选择3点徽章以显示该区域中的所有注释。
 
@@ -66,7 +66,7 @@ Analysis Workspace中的评论允许您在Analysis Workspace项目的上下文�
 
 1. 在Analysis Workspace中打开项目后，右键单击要插入注释的项目区域。
 
-   所有可视化都支持可视化标题上的评论徽章，但只有以下可视化支持可视化中特定数据点的评论徽章：
+   所有可视化都支持在可视化标题上使用评论徽章，但只有以下可视化支持在可视化中的特定数据点上使用评论徽章：
 
    * 自由格式表
    * 同类群组表
@@ -104,19 +104,23 @@ Analysis Workspace中的评论允许您在Analysis Workspace项目的上下文�
 
 ## 在评论中包含其他人
 
-Analysis Workspace中的评论功能使与他人协作更加容易。 要在您的评论中包含其他人，请执行以下操作：
+Analysis Workspace中的评论功能使与他人协作更加容易。
+
+当使用@符号在评论中包含人时，请考虑以下事项：
+
+* 您包括的用户将根据其Adobe Experience Cloud通知设置接收通知。 默认情况下，他们收到[Experience Cloud通知](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications)。
+
+  此外，用户还可以通过[订阅电子邮件通知](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications)和[订阅Experience Cloud通知](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack)，将其Slack通知设置配置为接收电子邮件通知和Slack通知。
+
+* 您可以在注释中包含组织中的任何人，但这样做不会自动授予他们访问项目的权限。 只有已经拥有项目访问权限的用户才能访问项目。
+
+要在您的评论中包含其他人，请执行以下操作：
 
 1. 键入@符号，然后开始键入要包括的人员的名字、姓氏或电子邮件地址。
 
    ![标记用户](assets/comments-tag-user.png)
 
 1. 当人员出现在下拉菜单中时，选择该人员的姓名。
-
-当使用@符号在评论中包含人时，请考虑以下事项：
-
-* 您包括的用户将收到电子邮件通知和Pulse通知。
-
-* 您可以在注释中包含组织中的任何人，但这不会自动授予他们访问项目的权限。 只有已经拥有项目访问权限的用户才能访问项目。
 
 ## 回复评论
 
@@ -126,7 +130,7 @@ Analysis Workspace中的评论功能使与他人协作更加容易。 要在您�
 
    或
 
-   如果希望回复包含要回复的评论的文本，并将原始文本包裹在引号标记中，请选择要回复的特定评论或回复旁边的3点图标，然后选择&#x200B;**[!UICONTROL 引用回复]**。 引用回复是一种用于清楚地标明评论或回复您的评论引用内容的好方法。
+   要包含要回复的注释的文本，并将原始文本包裹在引号标记中，请选择要回复的特定注释或回复旁边的3点图标，然后选择&#x200B;**[!UICONTROL 引号回复]**。 引用回复是指示您的评论所引用的评论或回复的好方法。
 
 1. 在&#x200B;**[!UICONTROL 新评论]**&#x200B;字段中，指定您的评论。
 
@@ -146,7 +150,7 @@ Analysis Workspace中的评论功能使与他人协作更加容易。 要在您�
 
 1. 选择要为现有评论放置徽章的项目区域。
 
-   **评论徽章** ![评论徽章](assets/comment-indicator.png)被放置在所选Workspace项目的区域中。 该注释也显示在右边栏的注释区域顶部。
+   **评论徽章** ![评论徽章](assets/comment-indicator.png)放置在您选择的Workspace项目的区域中。 该注释也显示在右边栏的注释区域顶部。
 
    有关详细信息，请参阅[查看项目中的评论徽章](#view-comment-badges-in-a-project)。
 
@@ -182,7 +186,7 @@ Analysis Workspace中的评论功能使与他人协作更加容易。 要在您�
 
 ## 复制评论的文本
 
-您可以复制正文文本和注释并与他人共享。
+您可以复制评论的正文并与他人共享。
 
 要复制评论的正文，请执行以下操作：
 
