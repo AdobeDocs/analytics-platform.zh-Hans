@@ -5,16 +5,18 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: bef00aa251831cdb809a6243b5d5a8e2c0dda9bb
+source-git-commit: 730464719f05026eae141c8e6cc656fb0fe4f819
 workflow-type: tm+mt
-source-wordcount: '1872'
-ht-degree: 36%
+source-wordcount: '1961'
+ht-degree: 35%
 
 ---
 
 # 在Customer Journey Analytics中使用Data Insights Agent可视化数据
 
-{{release-limited-testing}}
+>[!AVAILABILITY]
+>
+>本文中介绍的功能自2025年5月28日起作为分阶段发布的一部分面向所有符合条件的客户提供，但在您的环境中可能尚未提供。 当该功能正式发布时，将删除此说明。有关 Customer Journey Analytics 发布流程的信息，请参阅 [Customer Journey Analytics 功能版本](/help/release-notes/releases.md)。
 
 >[!AVAILABILITY]
 >
@@ -31,7 +33,7 @@ Data Insights Agent可从Customer Journey Analytics中的AI助手访问，是一
 | 功能 | 范围 | 超出范围 |
 | --- | --- | --- |
 | **可视化类型** | <ul><li>线形图</li><li>多条线形图</li><li>自由格式表</li><li>条形图</li><li>圆环图</li><li>摘要数字</li></ul> | <ul><li>流量</li><li>流失</li><li>同类群组表</li><li>面积图，堆叠面积图</li><li>堆叠的条形图</li><li>项目符号</li><li>组合</li><li>直方图</li><li>水平条形图，横向堆叠条形图</li><li>关键量度摘要</li><li>散点图</li><li>摘要变化</li><li>文本</li><li>树状图</li><li>维恩图</li></ul> |
-| **Workspace操作和代理功能** | <ul><li>构建和更新可视化图表<p>生成自由格式表和相关联的可视化图表（例如线形图、条形图、圆环图等）。<p>例如，*从2月到5月，跨SKU的利润是多少？*</p></li><li>提出跟进问题</li><li>响应上下文中的任何先前提示中的提示<p>例如：</p> <ul><li>提示词 1：*3 月的趋势事件。*</li><li>提示词 2：*请改为显示 3 月至 4 月的数据*</li></ul> </li><li>范围外提示检测<p>如果您提交了一个超出范围的提示，如&#x200B;*导出此项目*，Data Insights Agent会通知您问题超出范围，从而做出响应。</p></li></ul> | <ul><li>上下文操作 UI 按钮（添加到图表、新面板、新表格）</li><li>共享</li><li>导出</li><li>下载</li><li>管理用户偏好设置</li><li>策划</li><li>管理数据视图</li><li>Analytics 功能板应用程序</li><li>归因</li><li>内联摘要或响应<p>Data Insights Agent无法在聊天边栏中以用户提示的摘要答案进行内联响应。 范围外提示的示例包括：*给我上一个提示的见解摘要*&#x200B;和&#x200B;*总结折线图可视化图表的亮点。*</p></li></ul> |
+| **Workspace操作和代理功能** | <ul><li>构建和更新可视化图表<p>生成自由格式表和相关联的可视化图表（例如线形图、条形图、圆环图等）。<p>例如，*从2月到5月，跨SKU的利润是多少？*</p></li><li>提出跟进问题<p>响应上下文中的任何先前提示中的提示。 例如：</p> <ul><li>提示词 1：*3 月的趋势事件。*</li><li>提示词 2：*请改为显示 3 月至 4 月的数据*</li></ul> </li><li>范围外提示检测<p>如果您提交了一个超出范围的提示，如&#x200B;*导出此项目*，Data Insights Agent会通知您问题超出范围，从而做出响应。</p></li></ul> | <ul><li>共享</li><li>导出</li><li>下载</li><li>管理用户偏好设置</li><li>管理数据视图</li><li>Analytics 功能板应用程序</li><li>归因</li><li>内联摘要或响应<p>Data Insights Agent无法在聊天边栏中以用户提示的摘要答案进行内联响应。 范围外提示的示例包括：*给我上一个提示的见解摘要*&#x200B;和&#x200B;*总结折线图可视化图表的亮点。*</p></li></ul> |
 | **澄清问题** | 如果您提的问题没有足够上下文可供Data Insights Agent回答，或者过于宽泛，Data Insights Agent会用一个澄清问题或建议的选项进行响应。 <p>以下澄清性问题是组件相关问题的示例：</p><ul><li>量度：*您指的是哪个“收入”量度？*</li><li>维度：*您想关注以下哪一个“地区”？*</li><li>区段：*您想应用哪个“帐户”区段？*</li><li>日期范围：*您所说的“上个月”是指过去的整个月还是过去 30 天？*</li></ul><p>以下澄清问题是与维度项目相关的一个问题的示例：</p> <ul><li>你是指哪个“商店名称”？ （例如，商店 #5274、商店 #2949 等。）</li></ul> | 澄清问题仅限于组件和维度项。Data Insights Agent无法阐明数据视图、可视化图表、数据粒度、比较和范围等内容。 当澄清无法使用的问题时，代理将默认使用您最可能要求的内容。 如果它返回意外的可视化图表或数据粒度，您可以提出后续问题或调整可视化图表和数据。 |
 | **数据可验证性和正确性** | 通过查看生成的自由格式表和数据可视化图表，可以确认数据的可验证性和正确性。 <p>例如，如果您要求Data Insights Agent显示上个月&#x200B;*的*&#x200B;趋势订单，则可以确认在新生成的面板、数据可视化图表和自由格式表中选择了正确的指标（“订单”）和日期范围（“上个月”）。 | Data Insights Agent不会通过通知您添加了哪些组件或可视化图表来进行响应。</p> |
 | **反馈机制** | <ul><li>拇指向上</li><li>拇指向下</li><li>标记</li></ul> |  |
@@ -72,7 +74,9 @@ Data Insights Agent可从Customer Journey Analytics中的AI助手访问，是一
 
       >[!IMPORTANT]
       >
-      >Data Insights Agent可以引用所包含的数据视图，而引用数据视图的时间与您在Admin Console中启用这些视图的同一天。
+      >启用数据视图时，请考虑以下事项：
+      >* 每个IMS组织最多可启用50个数据视图。 如果您在给定组织的所有产品配置文件中启用了超过50个数据视图，Data Insights Agent将使用50个最常用的数据视图。
+      >* Data Insights Agent可以引用所包含的数据视图，而引用数据视图的时间与您在Admin Console中启用这些视图的同一天。
 
    1. 搜索或滚动到要启用的数据视图，然后选择每个数据视图名称旁边的加号图标![AddCircle](/help/assets/icons/AddCircle.svg)。
 
@@ -140,7 +144,7 @@ Data Insights Agent可从Customer Journey Analytics中的AI助手访问，是一
 
 **提示词：**&#x200B;在提示词窗口中输入&#x200B;*“添加利润。”*
 
-**回答：**&#x200B;**[!UICONTROL 条形]**&#x200B;图仍然提供了最简洁的回答，而利润量度被添加到自由格式表中成为一列：
+**回答：****[!UICONTROL 条形]**&#x200B;图仍然提供了最简洁的回答，而利润量度被添加到自由格式表中成为一列：
 
 ![条形图](/help/assets/ai-asst-result4.png)
 
