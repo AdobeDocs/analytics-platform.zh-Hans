@@ -3,10 +3,10 @@ description: 了解量度类型和归因
 title: 量度类型和归因
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 2d182004b12eb44f54ec9b4b5f63cb9072594aec
+source-git-commit: 2b193e1ff612ab00335898164dc84afb08673fff
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 100%
+source-wordcount: '1017'
+ht-degree: 98%
 
 ---
 
@@ -132,11 +132,14 @@ ht-degree: 100%
 >abstract="点数是根据统计算法动态确定的。"
 
 
+>[!CONTEXTUALHELP]
+>id="components_calculatedmetrics_attribution_container"
+>title="容器"
+>abstract="选择容器以设置所需的归因范围。"
+
 
 {{attribution-models-details}}
 
-
-### 回顾时间范围 {#lookback-window}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -145,7 +148,6 @@ ht-degree: 100%
 >title="回顾时间范围"
 >abstract="此设置可以确定将要对每次转化应用的数据归因窗口。"
 
-<!-- markdownlint-enable MD034 -->
 
 {{attribution-lookback-window}}
 
