@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: e82179f3436dc6b66ebe3f2f9b11986cadd135d9
+source-git-commit: bef00aa251831cdb809a6243b5d5a8e2c0dda9bb
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1872'
 ht-degree: 36%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 36%
 
 >[!AVAILABILITY]
 >
->在2025年11月30日之前，Data Insights Agent适用于符合条件的Customer Journey Analytics客户。 在该日期之后，如果要继续使用Data Insights Agent，则需要许可证。 请联系您的Adobe客户团队以获得许可流程方面的帮助。
+>Data Insights Agent在有限的时间内向符合条件的客户提供。 对Data Insights Agent的访问将于2025年11月30日终止。 要继续使用Data Insights Agent而不中断，请联系您的Adobe客户代表以了解有关许可Data Insights Agent的更多信息。
 
 Data Insights Agent可从Customer Journey Analytics中的AI助手访问，是一个创新型人工智能会话代理，可快速高效地回答有关您数据的问题。 它使用来自数据视图的组件和您的实际数据在 Analysis Workspace 中构建相关的可视化图表。
 
@@ -41,7 +41,7 @@ Data Insights Agent可从Customer Journey Analytics中的AI助手访问，是一
 
 以下参数可管理对Customer Journey Analytics中Data Insights Agent的访问：
 
-* **解决方案访问权限**： Data Insights Agent可供Customer Journey Analytics Prime和Ultimate客户使用。 它在 Adobe Analytics 中不可用。
+* **解决方案访问**：在2025年11月30日之前，所有Customer Journey Analytics客户都可将Data Insights Agent作为有限访问计划的一部分使用。 它在 Adobe Analytics 中不可用。
 
 * **合同访问权限**：如果您无法在AI助手中使用Data Insights Agent，请联系贵组织的管理员或Adobe帐户团队。 在贵组织可以使用Data Insights Agent之前，您必须同意与创作AI相关的某些法律条款。
 
@@ -140,7 +140,7 @@ Data Insights Agent可从Customer Journey Analytics中的AI助手访问，是一
 
 **提示词：**&#x200B;在提示词窗口中输入&#x200B;*“添加利润。”*
 
-**回答：**&#x200B;**[!UICONTROL 条形]**&#x200B;图仍然提供了最简洁的回答，而利润量度被添加到自由格式表中成为一列：
+**回答：****[!UICONTROL 条形]**&#x200B;图仍然提供了最简洁的回答，而利润量度被添加到自由格式表中成为一列：
 
 ![条形图](/help/assets/ai-asst-result4.png)
 
