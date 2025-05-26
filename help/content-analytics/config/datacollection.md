@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 63c6a5d6148c1562b7f6ac8e4a1cac5919e2dd2e
+source-git-commit: c10d88c27d4a3c92e02179da4a73a6a499d2a8c2
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 82%
+source-wordcount: '628'
+ht-degree: 79%
 
 ---
 
@@ -94,6 +94,11 @@ Content Analytics 实际上以这种方式收集数据来反映该顺序，而�
    * 锁定屏幕
 * URL 发生变化，导致相关 URL 改变。
 * 已记录并准备发送的资产访问数超过 32。
+
+>[!NOTE]
+>
+>附加的Content Analytics事件极有可能影响任何基于会话或页面中事件数的跳出率定义。
+>
 
 
 ## 架构

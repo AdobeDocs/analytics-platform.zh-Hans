@@ -4,31 +4,27 @@ title: 工作区总计
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
-workflow-type: ht
-source-wordcount: '487'
-ht-degree: 100%
+source-git-commit: c10d88c27d4a3c92e02179da4a73a6a499d2a8c2
+workflow-type: tm+mt
+source-wordcount: '485'
+ht-degree: 91%
 
 ---
 
 # 工作区总计 {#workspace-totals}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_grandtotal"
 >title="总计"
->abstract="带有统计行的表或细分不支持全部总计"
-
-<!-- markdownlint-enable MD034 -->
+>abstract="带有静态行的表或细分不支持全部总计。"
 
 
 在自由格式表中，每个划分级别都显示一个总计行，可以显示两个总计行：
 
 ![自由格式表，其中突出显示全部总计和表格总计。](assets/total-row.png)
 
-* **[!UICONTROL 表格总计]** ➊——此总计通常等于[!UICONTROL 总计]或是其子集。该总计反映了自由格式表中应用的任何表区段，包括[!UICONTROL 不包含任何内容]选项。
-* **[!UICONTROL 全部总计]**（**[!UICONTROL 来自]***数量*）➋——此总计表示已收集的所有事件。如果在面板级别或自由格式表中应用区段，此总数会进行相应的调整以反映符合区段标准的所有事件。
+* **[!UICONTROL 表总计]** ➊ — 此总计通常等于[!UICONTROL 总计]或为其子集。 该总计反映了自由格式表中应用的任何表区段，包括[!UICONTROL 不包含任何内容]选项。
+* **[!UICONTROL 总计]** （**[!UICONTROL 个，共]**&#x200B;个&#x200B;*数字*） ➋ — 此总计表示已收集的所有事件。 如果在面板级别或自由格式表中应用区段，此总数会进行相应的调整以反映符合区段标准的所有事件。
 
 
 
