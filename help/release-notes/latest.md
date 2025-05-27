@@ -3,10 +3,10 @@ title: 当前 Customer Journey Analytics 发行说明
 description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 730464719f05026eae141c8e6cc656fb0fe4f819
+source-git-commit: 6fdb6cbd6f12a0417f513565b02e3ad60c8df6cb
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 63%
+source-wordcount: '1087'
+ht-degree: 58%
 
 ---
 
@@ -25,12 +25,13 @@ ht-degree: 63%
 | **拼接：从 XDM IdentityMap 检索持久和临时 ID** | 此功能支持在拼接过程中使用 XDM IdentityMap 中存储的身份标识。IdentityMap 可用于在基于字段的拼接中使用持久 ID 或临时 ID，也可用于在基于图形的拼接中使用持久 ID。您可以使用 identityMap 中的某个特定命名空间或主要身份标识。请在[此处](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/stitching/fbs#identitymap)和[此处](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/stitching/gbs#identitymap)了解详情 |  | 2025 年 4 月 28 日 |
 | **数据视图间共享的量度和维度** | 允许您在多个数据视图中应用维度和量度设置。对某个共享维度或量度所做的更改会应用于所有适用的数据视图中该维度或量度的所有实例。此界面允许 Customer Journey Analytics 管理员在使用许多数据视图时更轻松地管理组件。[了解详情](/help/data-views/shared-metrics-dimensions/smd-overview.md) |  | 2025 年 4 月 30 日 |
 | **增加完整表格导出的限制** | Adobe将可与[完整表导出](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/export/export-cloud#comparison-of-full-table-export-in-customer-journey-analytics-to-data-warehouse-in-adobe-analytics)一起使用的列数从5个维度和5个指标增加到10个维度和10个指标。 这适用于所有 Customer Journey Analytics 层。可导出行数的权利保持不变。 |  | 2025 年 4 月 30 日 |
-| **事件深度维度** | 新的[事件深度维度](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-reference#required-standard-components)已添加到数据视图所需的标准组件列表中。 |  | 2025年5月8日 |
+| **事件深度维度** | 新的[事件深度维度](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference#required-standard-components)已添加到数据视图所需的标准组件列表中。 |  | 2025年5月8日 |
 | **导出完整表时禁用清单文件** | 将允许您禁用在从Analysis Workspace导出完整表时默认包含的清单文件。 [了解详情](/help/analysis-workspace/export/export-cloud.md) |  | 2025年5月20日 |
-| **Data Insights Agent** | Data Insights Agent是Customer Journey Analytics人工智能助理的一部分，是一个创新型人工智能对话代理。 它使用来自您的数据视图和实际数据的组件，通过在Analysis Workspace中构建相关可视化图表，快速高效地回答以数据为中心的问题。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai) |  | 2025年5月28日 |
+| **Data Insights Agent** | Data Insights Agent是Customer Journey Analytics人工智能助理的一部分，是一个创新型人工智能对话代理。 它使用来自您的数据视图和实际数据的组件，通过在Analysis Workspace中构建相关可视化图表，快速高效地回答以数据为中心的问题。 [了解详情](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai) |  | 2025年5月28日 |
 | **Analysis Workspace 左侧面板不再在鼠标悬停时打开和关闭** | Analysis Workspace 中的左侧面板用于将组件、面板和可视化图表等元素添加到您的项目中。将鼠标悬停在最左侧的一个图标上以临时打开左侧面板，这个选项不再可用。现在，只需点击其中一个图标即可保持面板打开，然后点击相同的图标可将其关闭。 |  | 2025 年 5 月 29 日 |
+| 双精度类型维度的&#x200B;**Dimension格式默认为2** | 对于具有双重数据类型的架构，维度格式现在默认为2位小数。 您可以将此数字更改为0到5位小数。<p>以前，格式默认为0位小数。</p><p>这意味着，如果在Analysis Workspace报表中使用双类型维度，则默认情况下不显示小数位。 这些相同的报表现在将显示2位小数。</p><p>有关如何更新双重类型维显示的小数位数的详细信息，请参阅[格式组件设置](/help/data-views/component-settings/format.md)。</p> | | 2025 年 5 月 29 日 |
 | **Customer Journey Analytics B2B edition** | Customer Journey Analytics B2B Edition 提供有助于推动收入增长的可操作的帐户洞察，帮助 B2B 公司协调其营销活动、销售和产品团队。帐户是数据模型的中心，因此所有分析都集中在帐户历程上。在人员和基于时间的事件上添加新的实体层（客户、机会和购买组），可以全面了解B2B营销和收入生命周期。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition) |  | 2025年6月18日 |
-| **在Analysis Workspace项目中添加和查看注释** | Analysis Workspace中新增的[评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects)允许您在Analysis Workspace项目的上下文中共享见解和提问。 这可以简化有关数据的讨论，使对话与正在讨论的数据保持同步。 您可以 <ul><li>评论您有权访问的任何Analysis Workspace项目</li><li>在可视化图表中的特定点添加注释或发表有关项目的一般注释</li><li>标记其他用户以通知他们您的评论</li><li>管理现有注释（编辑、固定、解析等）</li></ul>Customer Journey Analytics管理员可以[禁用组织级别](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences)的评论。 项目所有者可以[禁用项目级别](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects)的注释。 |  | 2025年6月25日 <p>（原计划于2025年5月29日发布）</p> |
+| **在Analysis Workspace项目中添加和查看注释** | Analysis Workspace中新增的[评论功能](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects)允许您在Analysis Workspace项目的上下文中共享见解和提问。 这可以简化有关数据的讨论，使对话与正在讨论的数据保持同步。 您可以 <ul><li>评论您有权访问的任何Analysis Workspace项目</li><li>在可视化图表中的特定点添加注释或发表有关项目的一般注释</li><li>标记其他用户以通知他们您的评论</li><li>管理现有注释（编辑、固定、解析等）</li></ul>Customer Journey Analytics管理员可以[禁用组织级别](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences)的评论。 项目所有者可以[禁用项目级别](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects)的注释。 |  | 2025年6月25日 <p>（原计划于2025年5月29日发布）</p> |
 
 ## Customer Journey Analytics 中的修复
 

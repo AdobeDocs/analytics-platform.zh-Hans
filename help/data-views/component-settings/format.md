@@ -5,10 +5,10 @@ exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
-workflow-type: ht
+source-git-commit: 6fdb6cbd6f12a0417f513565b02e3ad60c8df6cb
+workflow-type: tm+mt
 source-wordcount: '737'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 100%
 <!-- markdownlint-enable MD034 -->
 
 
-格式设置允许您确定在报告中使用的给定量度的显示方式。
+通过格式，可决定给定组件在报告中使用时的显示方式。
 
-## 配置量度的格式设置
+## 配置组件的格式设置
 
-您可以通过调整格式设置来确定给定量度的显示方式。
+您可以通过调整给定组件的格式设置来确定其显示方式。
 
 1. 在 Customer Journey Analytics 中，选择&#x200B;[!UICONTROL **数据视图**]&#x200B;选项卡。
 
@@ -44,12 +44,12 @@ ht-degree: 100%
 
    | 设置 | 描述 |
    | --- | --- |
-   | **[!UICONTROL 格式]** | 使您可将指标的格式指定为“小数”、“时间”、“百分比”或“货币”。 |
-   | **[!UICONTROL 小数]** | 在 Integer 架构数据类型上不可见。使您可指定某个指标所显示的小数位数。 |
+   | **[!UICONTROL 格式]** | 使您可将组件的格式指定为“小数”、“时间”、“百分比”或“货币”。 |
+   | **[!UICONTROL 小数]** | 在 Integer 架构数据类型上不可见。用于指定组件显示的小数位数。 |
    | **[!UICONTROL 日期]** | 用于确定在报告中将日期时间字段用作维度时的显示方式。[了解详情](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
    | **[!UICONTROL 日期时间]** | 用于确定在报告中将日期时间字段用作维度时的显示方式。[了解详情](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
-   | **[!UICONTROL 货币]** | 让您确定要以哪种货币显示指标。 <p>如果您要分析以不同货币进行交易的全球数据，请参阅[使用货币转换](#use-currency-conversion)。</p> |
-   | **[!UICONTROL 将上升趋势显示为]** | 使您可指定此指标的上升趋势是好（绿色）还是坏（红色）。 |
+   | **[!UICONTROL 货币]** | 用于确定希望组件以哪种货币显示。 <p>如果您要分析以不同货币进行交易的全球数据，请参阅[使用货币转换](#use-currency-conversion)。</p> |
+   | **[!UICONTROL 将上升趋势显示为]** | 使您可指定此组件的上升趋势是好（绿色）还是坏（红色）。 |
    | **[!UICONTROL 真值]**&#x200B;和&#x200B;**[!UICONTROL 假值]** | 仅在 Boolean 架构数据类型上可见。使您可自定义 `true` 和 `false` 值的维度项标签。 |
 
    {style="table-layout:auto"}
@@ -92,7 +92,7 @@ Customer Journey Analytics 中的货币转换对于跨国经营的企业来说�
 
    * 在&#x200B;[!UICONTROL **选择货币代码维度**]&#x200B;字段中，选择代表您要转换的货币（即您的数据所基于的货币）的维度。例如，选择一个名为&#x200B;[!UICONTROL **货币代码**]&#x200B;的维度。
 
-     如果您当前数据架构中没有包含货币代码字段的维度，则可以使用[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)、[数据蒸馏器](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=zh-Hans)或者[派生字段](/help/data-views/derived-fields/derived-fields.md)创建新的货币代码字段。“数据准备”仅适用于新的实施，因为它仅适用于向前推进的情况。根据组织的设置，可以使用“数据蒸馏器”和“派生字段”来访问历史货币代码值。
+     如果您当前数据架构中没有包含货币代码字段的维度，则可以使用[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html)、[数据蒸馏器](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html)或者[派生字段](/help/data-views/derived-fields/derived-fields.md)创建新的货币代码字段。“数据准备”仅适用于新的实施，因为它仅适用于向前推进的情况。根据组织的设置，可以使用“数据蒸馏器”和“派生字段”来访问历史货币代码值。
 
    * 在&#x200B;[!UICONTROL **转换并显示货币**]&#x200B;字段中，选择您希望数据转换成的货币。
 
