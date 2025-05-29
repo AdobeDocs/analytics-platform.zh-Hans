@@ -113,9 +113,9 @@ Analysis Workspace中的评论功能使与他人协作更加容易。
 
 当使用@符号在评论中包含人时，请考虑以下事项：
 
-* 您包括的用户将根据其Adobe Experience Cloud通知设置接收通知。 默认情况下，这些用户会收到应用程序内通知，该通知显示在Customer Journey Analytics中的[Experience Cloud通知](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications)图标![Experience Cloud通知图标](assets/experience-cloud-notification.png)中。
+* 您包括的用户将根据其Adobe Experience Cloud通知设置接收通知。 默认情况下，这些用户会收到应用程序内通知，该通知显示在Customer Journey Analytics中的[Experience Cloud通知](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/account-preferences#view-notifications)图标![Experience Cloud通知图标](assets/experience-cloud-notification.png)中。
 
-  此外，用户还可以通过[订阅电子邮件通知](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications)和[订阅Experience Cloud通知](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack)，将其Slack通知设置配置为接收电子邮件通知和Slack通知。
+  此外，用户还可以通过[订阅电子邮件通知](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications)和[订阅Experience Cloud通知](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/account-preferences#slack)，将其Slack通知设置配置为接收电子邮件通知和Slack通知。
 
 * 您可以在注释中包含组织中的任何人，但这样做不会自动授予他们访问项目的权限。 只有已经拥有项目访问权限的用户才能访问项目。
 
