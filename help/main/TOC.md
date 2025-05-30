@@ -412,7 +412,7 @@ ht-degree: 98%
    + [基于图形的拼合](/help/stitching/gbs.md)
    + [使用拼合](/help/stitching/use-stitching.md)
    + [创建和管理拼合数据集](/help/stitching/stitching-ui.md)
-   + [验证拼接](/help/stitching/validate.md)
+   + [验证拼合](/help/stitching/validate.md)
    + [常见问题解答](/help/stitching/faq.md)
 
 + Adobe 集成  {#integrations}

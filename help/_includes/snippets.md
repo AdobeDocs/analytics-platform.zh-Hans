@@ -2,7 +2,7 @@
 source-git-commit: c936ebbc191353d9993cc3c56892df3f29a1a1df
 workflow-type: tm+mt
 source-wordcount: '5163'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 # 片段
@@ -259,36 +259,36 @@ Customer Journey analytics 中的各种可视化图表旨在分析您为客户�
 
 | 组件名称 | 注释 |
 |---|---|
-| 15 分钟 | 发生给定事件的每15分钟（已向下取整）。 第一个维度项目是日期范围内的前15分钟，最后一个维度项目是日期范围内的最后15分钟。 |
-| 30 分钟 | 发生给定事件的每30分钟（已向下取整）。 第一个维度项目是日期范围内的前30分钟，最后一个维度项目是日期范围内的最后30分钟。 |
-| 5 分钟 | 发生给定事件的每5分钟（已向下取整）。 第一个维度项目是日期范围内的前15分钟，最后一个维度项目是日期范围内的最后5分钟。 |
-| [!UICONTROL 日] | 发生给定事件的那一天。第一个维度项是日期范围内的第一天，最后一个维度项是日期范围内的最后一天。 |
-| [!UICONTROL 每周时间] | 发生给定事件的那一周。 第一个维度项是日期范围内一周的第一天，最后一个维度项是日期范围内一周的最后一天。 |
-| [!UICONTROL 日期] | 发生给定事件的那一个月中的第几天。 第一个维度项是日期范围内当月的第一天，最后一个维度项是日期范围内当月的最后一天。 |
-| 事件深度 | 将顺序数值（1、2、3等）分配给会话中的每个事件交互。 通过此维度，您可以启用详细跟踪和分析，以跟踪和分析在为数据视图[&#128279;](/help/data-views/session-settings.md#session-settings)定义的受限体验会话中，特定事件在顺序的用户交互流中发生的位置。 您可以跟踪事件在有界会话中从开始到结束的进度。 例如：访客登陆您的主页（事件1，会话开始），使用搜索功能（事件2），查看产品详细信息页面（事件3），添加到购物车（事件4），进入结账（事件5），并完成购买（事件6，会话结束）。 现在，您可以在区段定义中使用[!UICONTROL 事件深度]来根据交互深度划分数据。 |
-| [!UICONTROL 小时] | 发生给定事件的那一小时（已向下取整）。第一个维度项是日期范围中的第一小时，最后一个维度项是日期范围中的最后一小时。 |
-| [!UICONTROL 小时] | 发生给定事件的那一小时（已向下取整）。 第一个维度项目是日期范围内一天的第一小时，最后一个维度项目是日期范围内一天的最后一小时。 |
-| [!UICONTROL 分钟] | 发生给定事件的那一分钟（已向下取整）。第一个维度项是日期范围中的第一分钟，最后一个维度项是日期范围中的最后一分钟。 |
-| [!UICONTROL 分钟（小时）] | 发生给定事件的那一分钟（已向下取整）。 第一个维度项目是日期范围内某小时的第一分钟，最后一个维度项目是日期范围内该小时的最后一分钟。 |
-| [!UICONTROL 月] | 发生给定事件的那一个月。第一个维度项是日期范围内的第一个月，最后一个维度项是日期范围内的最后一个月。 |
-| [!UICONTROL 月份] | 发生给定事件的那一年。 第一个维度项是日期范围内一年的第一个月，最后一个维度项是日期范围内的一年的最后一个月。 |
-| [!UICONTROL 季度] | 发生给定事件的那一季。第一个维度项是日期范围内的第一个季度，最后一个维度项是日期范围内的最后一个季度。 |
-| [!UICONTROL 季度] | 发生给定事件的那一季。 第一个维度项目是日期范围内一年的第一个季度，最后一个维度项目是日期范围内年的最后一个季度。 |
-| [!UICONTROL 秒] | 发生给定事件的那一秒钟（已向下取整）。第一个维度项是日期范围内的第一秒，最后一个维度项是日期范围内的最后一秒。 |
-| [!UICONTROL 周] | 发生给定事件的那一周。第一个维度项是日期范围内的第一周，最后一个维度项是日期范围内的最后一周。 |
-| [!UICONTROL 一年中一周] | 发生给定事件的那一周。 第一个维度项是日期范围内一年的第一周，最后一个维度项是日期范围内年的最后一周。 |
-| [!UICONTROL 年] | 发生给定事件的那一年。第一个维度项是日期范围中的第一年，最后一个维度项是日期范围中的最后一年。 |
+| 15 分钟 | 每 15 分钟发生一次给定事件（已向下取整）。第一个维度项是日期范围内的开始 15 分钟，最后一个维度项是日期范围内的最后 15 分钟。 |
+| 30 分钟 | 每 30 分钟发生一次给定事件（已向下取整）。第一个维度项是日期范围内的开始 30 分钟，最后一个维度项是日期范围内的最后 30 分钟。 |
+| 5 分钟 | 每 5 分钟发生一次给定事件（已向下取整）。第一个维度项是日期范围内的开始 15 分钟，最后一个维度项是日期范围内的最后 5 分钟。 |
+| [!UICONTROL 其中一天] | 发生给定事件的其中一天。第一个维度项是日期范围内的第一天，最后一个维度项是日期范围内的最后一天。 |
+| [!UICONTROL 这周的其中一天] | 发生给定事件这周的其中一天。第一个维度项是日期范围内这周的第一天，最后一个维度项是日期范围内这周的最后一天。 |
+| [!UICONTROL 这月的其中一天] | 发生给定事件这月的其中一天。第一个维度项是日期范围内这月的第一天，最后一个维度项是日期范围内这月的最后一天。 |
+| 事件深度 | 为会话中的每个事件交互分配连续的数值（1、2、3 等）。有了这个维度，您就可以详细跟踪和分析在[为数据视图定义的有限制体验会话](/help/data-views/session-settings.md#session-settings)中某个特定事件在用户交互顺序流中的哪里发生。您可以跟踪某个有限制会话中的事件从开始到结束的过程。举个例子：访客进入您的主页（事件 1，会话开始），使用搜索功能（事件 2），查看产品详细信息页面（事件 3），添加到购物车（事件 4），继续前往结帐（事件 5），并完成购买（事件 6，会话结束）。您现在可以在区段定义中使用[!UICONTROL 事件深度]，根据交互深度将数据分段。 |
+| [!UICONTROL 其中一个小时] | 发生给定事件的其中一个小时（已向下取整）。第一个维度项是日期范围中的第一个小时，最后一个维度项是日期范围中的最后一个小时。 |
+| [!UICONTROL 这天的其中一个小时] | 发生给定事件这天的其中一个小时（已向下取整）。第一个维度项是日期范围内这天的第一个小时，最后一个维度项是日期范围内这天的最后一个小时。 |
+| [!UICONTROL 其中一分钟] | 发生给定事件的其中一分钟（已向下取整）。第一个维度项是日期范围内的第一分钟，最后一个维度项是日期范围内的最后一分钟。 |
+| [!UICONTROL 这小时的其中一分钟] | 发生给定事件这小时的其中一分钟（已向下取整）。第一个维度项是日期范围内这小时的第一分钟，最后一个维度项是日期范围内这小时的最后一分钟。 |
+| [!UICONTROL 其中一个月] | 发生给定事件的其中一个月。第一个维度项是日期范围内的第一个月，最后一个维度项是日期范围内的最后一个月。 |
+| [!UICONTROL 这年的其中一个月] | 发生给定事件这年的其中一个月。第一个维度项是日期范围内这年的第一个月，最后一个维度项是日期范围内这年的最后一个月。 |
+| [!UICONTROL 其中一个季度] | 发生给定事件的其中一个季度。第一个维度项是日期范围内的第一个季度，最后一个维度项是日期范围内的最后一个季度。 |
+| [!UICONTROL 这年的其中一个季度] | 发生给定事件这年的其中一个季度。第一个维度项是日期范围内这年的第一个季度，最后一个维度项是日期范围内这年的最后一个季度。 |
+| [!UICONTROL 其中一秒] | 发生给定事件的其中一秒（已向下取整）。第一个维度项是日期范围内的第一秒，最后一个维度项是日期范围内的最后一秒。 |
+| [!UICONTROL 其中一周] | 发生给定事件的其中一周。第一个维度项是日期范围内的第一周，最后一个维度项是日期范围内的最后一周。 |
+| [!UICONTROL 这年的其中一周] | 发生给定事件这年的其中一周。第一个维度项是日期范围内这年的第一周，最后一个维度项是日期范围内这年的最后一周。 |
+| [!UICONTROL 其中一年] | 发生给定事件的其中一年。第一个维度项是日期范围内的第一年，最后一个维度项是日期范围内的最后一年。 |
 
 
 ## 标准量度 {#standard-metrics}
 
 | 组件名称 | 注释 |
 | --- | --- |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL 帐户] | 基于在[!UICONTROL 连接]中指定的帐户 ID。 |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL 购买群] | 购买群组，基于在[!UICONTROL 连接]中指定的购买群组 ID。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL 帐户] | 基于在[!UICONTROL 连接]中指定的帐户 ID。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL 购买群组] | 购买群组，基于在[!UICONTROL 连接]中指定的购买群组 ID。 |
 | [!UICONTROL 事件] | 来自[!UICONTROL 连接]中所有事件数据集的行数。 |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL 全局帐户] | 基于在[!UICONTROL 连接]中指定的全球帐户 ID。 |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL 机会] | 机会，基于在[!UICONTROL 连接]中指定的机会 ID。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL 全球帐户] | 基于在[!UICONTROL 连接]中指定的全球帐户 ID。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL 机会] | 机会，基于在[!UICONTROL 连接]中指定的机会 ID。 |
 | [!UICONTROL 人员] | 基于在[!UICONTROL 连接]中指定的人员 ID。 |
 | [!UICONTROL 会话结束] | 会话的最后一个事件的事件数。与[!UICONTROL 会话开始]类似，它也可用在区段定义中，一直细分到每个会话的最后一个事件。<p>必须将此组件包含在您的数据视图中，才能在 Workspace 中使用[计算量度](/help/components/calc-metrics/default-calcmetrics.md)： <ul><li>会话结束比率</li></p> |
 | [!UICONTROL 会话开始] | 会话的第一个事件的事件数。用在区段定义（例如，“[!UICONTROL 会话开始]”）中时，它会一直细分到每个会话的第一个事件。<p>必须将此组件包含在您的数据视图中，才能在 Workspace 中使用[计算量度](/help/components/calc-metrics/default-calcmetrics.md)： <ul><li>会话开始比率</li></p> |
