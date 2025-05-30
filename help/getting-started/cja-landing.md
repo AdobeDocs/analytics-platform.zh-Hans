@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '737'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 91%
 
 ## 新增功能
 
-大致了解 Customer Journey Analytics 产品和文档中的最新增强！有关功能、改进和修复的完整列表，请查看详细的[发行说明](../release-notes/latest.md)。请访问[文档更新页面](../release-notes/doc-changes.md)以掌握最新的文档更新。
+大致了解 Customer Journey Analytics 产品和文档中的最新增强！有关功能、改进和修复的完整列表，请查看详细的[发行说明](../release-notes/latest.md)。访问[文档更新页面](../release-notes/doc-changes.md)以及时了解最新的文档更新。
 
 >[!BEGINTABS]
 
@@ -31,7 +31,7 @@ Content Analytics 可让您快速轻松地调查大量内容数据，以了解�
 
 >[!TAB 事件深度]
 
-事件深度是一个新的标准维度，它提供了新的方法来衡量和更好地了解事件在客户会话中的位置。 通过事件深度维度，可以详细跟踪和分析特定事件在会话内用户交互的顺序流中出现的位置。
+事件深度是一个新的标准维度，它提供了新的方法来衡量和更好地理解事件在客户会话中的位置。通过事件深度维度，可以详细跟踪和分析特定事件在会话中用户交互顺序流中的发生位置。
 
 [![图像](assets/learn-more-button.svg)](/help/components/dimensions/overview.md#standard-dimensions)
 
@@ -84,13 +84,13 @@ Allows you to bring in time-series data that does not have a person ID. This tim
 
 -->
 
->[!TAB 基于图形的拼接*]
+>[!TAB 基于图形的拼合*]
 
-通过基于图形的拼接，您可以使用体验平台身份标识服务提供的身份标识图更好地了解客户历程： <ul><li>连接具有不同标识符的数据集，无需提取、转换和加载额外数据以反映单个标识符。</li> <li>通过跨数据集共享身份标识，提高单个数据集中首选或黄金身份标识的覆盖率。</li><li>将 Real-Time Customer Data Platform 和 Journey Optimizer 中创建的配置文件与 Customer Journey Analytics 中的人员进行对齐。</li></ul>
+通过基于图形的拼合，您可以使用体验平台身份标识服务提供的身份标识图更好地了解客户历程： <ul><li>连接具有不同标识符的数据集，无需提取、转换和加载额外数据以反映单个标识符。</li> <li>通过跨数据集共享身份标识，提高单个数据集中首选或黄金身份标识的覆盖率。</li><li>将 Real-Time Customer Data Platform 和 Journey Optimizer 中创建的轮廓与 Customer Journey Analytics 中的人员进行对齐。</li></ul>
 
 [![图像](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
 
-*_您必须拥有 Prime 包才能进行基于图形的拼接。_*
+*_您必须拥有 Prime 包才能进行基于图形的拼合。_*
 
 >[!TAB BI 扩展*]
 
@@ -148,7 +148,7 @@ BI 扩展允许 SQL 访问您在 Customer Journey Analytics 中定义的数据�
     </td>
     <td>
       <img src="./assets/connections.svg" width="35px"><br/>
-      <strong>连接</strong><br/><a href="/help/connections/overview.md">概述</a> - <a href="/help/connections/create-connection.md">创建</a> - <a href="/help/connections/manage-connections.md">管理</a> - <a href="/help/stitching/overview.md">拼接</a> - <a href="/help/connections/combined-dataset.md">合并事件数据集</a> - <a href="/help/connections/standard-lookups.md">标准查找</a>
+      <strong>连接</strong><br/><a href="/help/connections/overview.md">概述</a> - <a href="/help/connections/create-connection.md">创建</a> - <a href="/help/connections/manage-connections.md">管理</a> - <a href="/help/stitching/overview.md">拼合</a> - <a href="/help/connections/combined-dataset.md">合并事件数据集</a> - <a href="/help/connections/standard-lookups.md">标准查找</a>
     </td>
      <td>
       <img src="./assets/dataviews.svg" width="35px"><br/>

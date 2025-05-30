@@ -5,9 +5,9 @@ feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 source-git-commit: fb7e0e911de2a4a702d6069ca2f53d7769ec608b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '500'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -34,15 +34,15 @@ ht-degree: 86%
 * 将[面板](/help/analysis-workspace/c-panels/panels.md)添加到您的项目中。例如，**[!DNL Example Panel]** ➊。
 
 * 在您的面板中添加[可视化效果](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)。例如：
-   * **[!DNL Line Graph]** [折线图](/help/analysis-workspace/visualizations/line.md)可视化图表➋
+   * **[!DNL Line Graph]** [线形图](/help/analysis-workspace/visualizations/line.md)可视化图表➋
    * **[!DNL Countries]** [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)可视化图表➌
 * 在可视化效果中添加[组件](/help/components/overview.md)例如：
    * **[!DNL Store Country]** [维度](/help/components/dimensions/overview.md) ➍
-   * **[!DNL People]** [指标](/help/components/apply-create-metrics.md) ➎
+   * **[!DNL People]** [量度](/help/components/apply-create-metrics.md) ➎
    * **[!DNL Avg Order Value]** [计算量度](/help/components/calc-metrics/calc-metr-overview.md) ➏
    * **[!DNL Mobile App Sessions]** [区段](/help/components/filters/filters-overview.md) ➐
    * **[!DNL Last Month]** [日期范围](/help/components/date-ranges/overview.md) ➑
-   * **[!DNL Example]** [批注](/help/components/annotations/overview.md) ➒
+   * **[!DNL Example]** [注释](/help/components/annotations/overview.md) ➒
 
 
 ## 项目信息和设置 {#project-info-settings}
@@ -81,7 +81,7 @@ ht-degree: 86%
 | 显示注释 | 指定是否显示该项目的注释。 |
 | [项目调色板](/help/analysis-workspace/build-workspace-project/color-palettes.md) | 通过从已为色盲优化过的现成调色板中进行选择或通过指定您的自定义调色板，可更改在 Workspace 中使用的类别调色板。此功能影响 Workspace 中的许多内容，包括大多数可视化。 |
 | [视图密度](/help/analysis-workspace/build-workspace-project/view-density.md) | 通过减小左侧面板、自由格式表和同类群组表的垂直边距，让您可在屏幕上看到更多数据。 |
-| 允许评论 | **注意：**&#x200B;此功能处于版本的有限测试阶段，可能尚未在您的环境中可用。 当该功能正式发布时，将删除此说明。有关 Customer Journey Analytics 发布流程的信息，请参阅 [Customer Journey Analytics 功能版本](/help/release-notes/releases.md)。 <p>启用此选项后，Analysis Workspace中项目的右边栏中将显示一个注释区域。 有关详细信息，请参阅[在项目中添加和管理注释](/help/analysis-workspace/build-workspace-project/comment-projects.md)。</p> |
+| 允许评论 | **注意：**&#x200B;该功能处于发布的有限测试阶段，因此可能在您的环境中尚不可用。当该功能正式发布时，将删除此说明。有关 Customer Journey Analytics 发布流程的信息，请参阅 [Customer Journey Analytics 功能版本](/help/release-notes/releases.md)。 <p>该选项启用后，Analysis Workspace 中项目的右侧栏中会显示一个评论区域。有关详细信息，请参阅[在项目中添加和管理评论](/help/analysis-workspace/build-workspace-project/comment-projects.md)。</p> |
 
 
 
