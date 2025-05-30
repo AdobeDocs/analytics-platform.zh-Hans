@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 07f9a224d43658a58779abecd6473fceb7109ef4
+source-git-commit: f578b8e381f59abb1f22e00718531f216fefaef8
 workflow-type: tm+mt
-source-wordcount: '2125'
-ht-degree: 99%
+source-wordcount: '2453'
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 99%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建或编辑数据视图](https://video.tv.adobe.com/v/345538/?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建或编辑数据视图](https://video.tv.adobe.com/v/35110/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -140,8 +140,9 @@ ht-degree: 99%
 
 1. 使用![“搜索”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)**[!UICONTROL “搜索”架构字段]**&#x200B;来搜索架构字段，或者通过移动到任何数据集收藏集来查找字段，例如![“文件夹”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)**[!UICONTROL “事件”数据集。]**<br/>或者，您可以使用![“数据”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**“创建”派生字段**&#x200B;创建派生字段。请参阅[派生字段](./derived-fields/derived-fields.md)，了解更多信息。
 
-1. 当您找到特定架构字段或定义派生字段后，拖动该字段（例如![“手柄”图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg)**[!UICONTROL “页面名称”]**），将其从左侧栏移入“量度或维度”部分。
-可将同一架构字段拖入“维度”或“量度”部分多次，并可按不同方式配置同一维度或量度。例如，可以使用右侧不同的[组件设置](component-settings/overview.md)从“页面名称”字段创建名为“产品页面”的维度，并创建另一名为“错误页面”的页面。如果从左边栏拖动架构字段文件夹，则自动将其归入典型部分。字符串字段最后落在[!UICONTROL 维度]部分中，而数值架构类型最后落在[!UICONTROL 量度]部分中。还可单击&#x200B;**[!UICONTROL 全部添加]**，即可将所有架构字段添加到其各自位置。
+1. 找到特定架构字段或定义派生字段后，将该字段（如![句柄图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL 页面名称]**）从左边栏拖动到&#x200B;**[!UICONTROL 包含的组件]**&#x200B;下的&#x200B;**[!UICONTROL 量度]**&#x200B;或&#x200B;**[!UICONTROL 维度]**部分。
+可将同一架构字段拖入“维度”或“量度”部分多次，并可按不同方式配置同一维度或量度。例如，从pageName字段，您可以使用右侧不同的[组件设置](component-settings/overview.md)创建名为`Product Pages`的维度以及名为`Error pages`的维度。
+如果从左边栏拖动架构字段文件夹，则该文件夹中的字段会自动排序到相应的部分中。 字符串字段最后落在[!UICONTROL 维度]部分中，而数值架构类型最后落在[!UICONTROL 量度]部分中。您还可以单击&#x200B;**[!UICONTROL 添加所有]**，并将所有架构字段添加到其各自的部分。
 
 1. 选择组件后，右侧即会显示设置。
 
@@ -160,11 +161,11 @@ ht-degree: 99%
 
 1. 选择&#x200B;**[!UICONTROL “保存并继续”]**，以继续配置新的或现有的数据视图。选择&#x200B;**[!UICONTROL “保存”]**，以保存现有数据视图的配置。
 
-**重复的量度或维度**
+### 重复的指标或维度
 
-复制量度或维度，然后修改特定设置，这是从单个架构字段创建多个量度或维度的简单方法。在量度或维度在右上角的名称下方选择[!UICONTROL 复制]设置。修改新维度或量度，并以更具描述性的名称保存它。
+复制指标或维度，然后修改特定设置，这是从单个架构字段创建多个指标或维度的简单方法。在量度或维度在右上角的名称下方选择[!UICONTROL 复制]设置。修改新维度或量度，并以更具描述性的名称保存它。
 
-**筛选架构字段或数据集**
+### 筛选架构字段或数据集
 
 您可以根据[!UICONTROL 数据类型]、[!UICONTROL 数据集]、[!UICONTROL 数据治理]和[!UICONTROL 其他]标准（[!UICONTROL 包含数据]、[!UICONTROL 是身份标识]和[!UICONTROL 未弃用]），筛选左栏内的![“筛选条件”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)架构字段：
 
@@ -173,6 +174,71 @@ ht-degree: 99%
 >[!TIP]
 >
 >如果组件未在数据视图中正确加载，并且您看到错误消息，请参阅[缺乏权限](../troubleshooting/lack-of-permissions.md)，以获得解决方案。
+
+
+### 包含的组件 {#included-components}
+
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_datagovernance_custom"
+>title="自定义标签"
+>abstract="除了 Adobe 提供的标签之外，您还可以为组织定义自己的自定义标签。"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview" text="数据使用标签概述"
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_datagovernance_contract"
+>title="合同标签"
+>abstract="合同(C)标签用于对具有合同义务或与组织的数据治理策略相关的数据进行分类。"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview" text="数据使用标签概述"
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_datagovernance_identity"
+>title="身份标识标签"
+>abstract="身份(I)标签用于对可以识别或联系特定人员的数据进行分类。"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview" text="数据使用标签概述"
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_datagovernance_sensitive"
+>title="敏感标签"
+>abstract="敏感标签用于对您和您的组织认为敏感的数据进行分类。"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview" text="数据使用标签概述"
+
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_datagovernance_partner_ecosystem"
+>title="合作伙伴生态系统"
+>abstract="合作伙伴生态系统(P)标签用于对与第三方合作伙伴共享的数据进行分类。"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview" text="数据使用标签概述"
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_datagovernance_policies"
+>title="支持"
+>abstract="为了让数据使用标签能够有效地支持数据合规性，必须实施数据使用策略。数据使用策略是描述允许或限制在 Experience Platform 中对数据执行的营销操作类型的规则。策略过滤器将启用的策略应用于数据视图。"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview" text="数据使用标签概述"
+
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_responsible_engagement"
+>title="负责的参与标签"
+>abstract="责任参与标签用于支持责任参与。"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview" text="数据使用标签概述"
+
+
+**[!UICONTROL 包含的组件]**&#x200B;包含您为数据视图配置的&#x200B;**[!UICONTROL 量度]**&#x200B;和&#x200B;**[!UICONTROL 维度]**&#x200B;的列表。
+
+* 若要搜索组件，请使用![搜索](/help/assets/icons/Search.svg) **[!UICONTROL _搜索组件_]**。
+* 要筛选列出的包含的组件，请选择![筛选器](/help/assets/icons/Filter.svg)。
+
+  ![包含组件筛选器对话框](assets/dataview_includedcomponents_filter.png)
+
+  在&#x200B;**[!UICONTROL 按]**&#x200B;筛选字段中，可以按以下类别进行筛选：
+
+   * **[!UICONTROL 数据类型]** — 您可以选择以下一种或多种数据类型：[!UICONTROL 字符串]、[!UICONTROL 整数]、[!UICONTROL 短]、[!UICONTROL 布尔值]、[!UICONTROL 双精度浮点数]、[!UICONTROL 字节]、[!UICONTROL 长]、[!UICONTROL 日期]或[!UICONTROL 日期时间]。
+   * **[!UICONTROL 数据集]** — 选择一个或多个数据集。
+   * **[!UICONTROL 数据管理]**：从[!UICONTROL 自定义标签]、[!UICONTROL 合同标签]、[!UICONTROL 身份标签]、[!UICONTROL 敏感度标签]、[!UICONTROL 合作伙伴生态系统]或[!UICONTROL 策略]子类别中选择一个或多个标签。
+   * **[!UICONTROL 其他]** — 选择一个或多个选项[!UICONTROL 包含数据]、[!UICONTROL Is标识]或[!UICONTROL 不弃用]。
+
+  选择&#x200B;**[!UICONTROL 应用]**&#x200B;以应用筛选器。
 
 
 
