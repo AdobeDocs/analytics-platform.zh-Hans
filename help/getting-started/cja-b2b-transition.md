@@ -5,11 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
 badgePremium: label="B2B Edition"
-hide: true
-hidefromtoc: true
-source-git-commit: c0446bd85b65109fd3311d54e33f9fb33af28f88
+exl-id: d0e6398b-8080-4e36-b178-0cb91945d0c5
+source-git-commit: 2fad11178853e08783b8f48671b504f50b6e0770
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -27,6 +26,8 @@ ht-degree: 0%
 * 您有[个项目](/help/analysis-workspace/home.md)，其中包含利用这些数据视图的报表和可视化图表。
 
 如果您以前未使用Customer Journey Analytics，请参阅[B2B edition快速入门指南](cja-b2b-quick-start-guide.md)。
+
+如果您是Adobe Analytics用户并计划使用Customer Journey Analytics B2B edition，请首先参阅[从Adobe Analytics升级到Customer Journey Analytics](cja-upgrade/cja-upgrade-recommendations.md)文档。
 
 
 ## 现有实施
@@ -52,7 +53,7 @@ ht-degree: 0%
 
 1. 准备B2B数据。 确保在所有时间序列事件数据和相关记录数据中添加和收集帐户标识符。 同样，请确保您的时间序列事件数据和查找记录包含相关事件的其他标识符。 例如：表示移动到另一个销售阶段的事件应具有机会标识符。 该标识符应当是机会查找数据的一部分。
 
-1. [创建新的基于帐户的连接](/help/connections/create-connection.md#account-based-connection)。 选择要包含的可选容器，[添加数据集](/help/connections/create-connection.md#add-datasets)并为每个数据集[&#128279;](/help/connections/create-connection.md#dataset-settings)定义设置。 尽可能将[按容器](cja-b2b-concepts-features.md#match-by-container)匹配用于查找记录数据集。
+1. [创建新的基于帐户的连接](/help/connections/create-connection.md#account-based-connection)。 选择要包含的可选容器，[添加数据集](/help/connections/create-connection.md#add-datasets)并为每个数据集](/help/connections/create-connection.md#dataset-settings)定义[设置。 尽可能将[按容器](cja-b2b-concepts-features.md#match-by-container)匹配用于查找记录数据集。
 
 1. [根据新连接创建数据视图](/help/data-views/create-dataview.md)。
 

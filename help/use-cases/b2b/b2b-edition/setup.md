@@ -4,11 +4,9 @@ description: 了解如何为典型的B2B用例设置Customer Journey Analytics B
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-hide: true
-hidefromtoc: true
 badgePremium: label="B2B Edition"
 exl-id: f959a77b-ccfb-43f2-93bb-b330e73d59ac
-source-git-commit: f66df039c56fc1df3fb0e102745f500a3782d26d
+source-git-commit: 2fad11178853e08783b8f48671b504f50b6e0770
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 12%
@@ -288,9 +286,9 @@ ht-degree: 12%
    ![B2B连接 — 添加数据集](assets/b2b-connection-add-datasets.png)
 
 1. 选择&#x200B;**[!UICONTROL 下一步]**&#x200B;为每个选定的数据集配置设置。
-1. 对于事件数据集，请确保选择与&#x200B;**[!UICONTROL 帐户ID]**、**[!UICONTROL 全局帐户ID]**、**[!UICONTROL 机会ID]**、**[!UICONTROL 购买组ID]**&#x200B;和&#x200B;**[!UICONTROL 人员ID]**&#x200B;的标识对应的适当eVar。
+1. 对于事件数据集，请确保选择与&#x200B;**[!UICONTROL 帐户ID]**、**[!UICONTROL 全局帐户ID]**、**[!UICONTROL 机会ID]**、**[!UICONTROL 购买组ID]**&#x200B;和&#x200B;**[!UICONTROL 人员ID]**&#x200B;的标识对应的适当字段。
 
-   ![B2B连接 — 添加事件数据集](assets/b2b-connection-add-datasets-event-data.png)。
+   ![B2B连接 — 添加事件数据集](assets/b2b-connection-add-datasets-event-data.png)
 
 1. 向下滚动以配置帐户记录数据集。 请确保选择正确的标识符(**[!UICONTROL Account_ID]**)以与&#x200B;**[!UICONTROL 全局帐户]**&#x200B;容器的帐户匹配。 选择正确的标识符(**[!UICONTROL Account_ID]**)作为&#x200B;**[!UICONTROL 全局帐户字段]**。
 
