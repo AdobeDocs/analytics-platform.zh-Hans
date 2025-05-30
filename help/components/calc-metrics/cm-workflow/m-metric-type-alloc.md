@@ -6,7 +6,7 @@ exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
 source-git-commit: 2b193e1ff612ab00335898164dc84afb08673fff
 workflow-type: tm+mt
 source-wordcount: '1017'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -135,7 +135,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_container"
 >title="容器"
->abstract="选择容器以设置所需的归因范围。"
+>abstract="选择一个容器来设置所需的归因范围。"
 
 
 {{attribution-models-details}}
@@ -193,6 +193,6 @@ ht-degree: 98%
 >[!MORELIKETHIS]
 >
 >[归因组件设置](/help/data-views/component-settings/attribution.md)
->[参与量度](participation-metric.md)
+>>[参与量度](participation-metric.md)
 >
 
