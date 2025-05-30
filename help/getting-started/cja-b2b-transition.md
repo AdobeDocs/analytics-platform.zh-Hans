@@ -53,7 +53,7 @@ ht-degree: 0%
 
 1. 准备B2B数据。 确保在所有时间序列事件数据和相关记录数据中添加和收集帐户标识符。 同样，请确保您的时间序列事件数据和查找记录包含相关事件的其他标识符。 例如：表示移动到另一个销售阶段的事件应具有机会标识符。 该标识符应当是机会查找数据的一部分。
 
-1. [创建新的基于帐户的连接](/help/connections/create-connection.md#account-based-connection)。 选择要包含的可选容器，[添加数据集](/help/connections/create-connection.md#add-datasets)并为每个数据集](/help/connections/create-connection.md#dataset-settings)定义[设置。 尽可能将[按容器](cja-b2b-concepts-features.md#match-by-container)匹配用于查找记录数据集。
+1. [创建新的基于帐户的连接](/help/connections/create-connection.md#account-based-connection)。 选择要包含的可选容器，[添加数据集](/help/connections/create-connection.md#add-datasets)并为每个数据集[&#128279;](/help/connections/create-connection.md#dataset-settings)定义设置。 尽可能将[按容器](cja-b2b-concepts-features.md#match-by-container)匹配用于查找记录数据集。
 
 1. [根据新连接创建数据视图](/help/data-views/create-dataview.md)。
 
