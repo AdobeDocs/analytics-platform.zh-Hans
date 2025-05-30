@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: c10d88c27d4a3c92e02179da4a73a6a499d2a8c2
+source-git-commit: 7909388273af4c19d2dfda671c2af8eac470fff9
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 79%
+source-wordcount: '622'
+ht-degree: 81%
 
 ---
 
@@ -85,7 +85,7 @@ Content Analytics 实际上以这种方式收集数据来反映该顺序，而�
 
 为了减少离开页面的调用数，Content Analytics会收集信息，但不会立即发送该信息。 系统会收集内容交互信息，并且仅在发生以下任一触发器时发送包含该信息的事件：
 
-* Web SDK或AppMeasurement发送事件。 此事件的时间戳为
+* Web SDK 或 AppMeasurements 发送事件。
 * 可见性变为隐藏，例如：
    * 页面卸载
    * 切换选项卡
