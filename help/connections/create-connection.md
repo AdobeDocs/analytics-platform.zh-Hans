@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 3aa8986569d5bb5d7767f95cbdaead3f09440383
+source-git-commit: 578674b3d62a8c31f1ca13e9edbb7e8c14974dc6
 workflow-type: tm+mt
-source-wordcount: '7259'
-ht-degree: 67%
+source-wordcount: '7421'
+ht-degree: 65%
 
 ---
 
@@ -111,7 +111,7 @@ ht-degree: 67%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建并编辑连接](https://video.tv.adobe.com/v/3409297/?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建并编辑连接](https://video.tv.adobe.com/v/343044/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -147,7 +147,7 @@ ht-degree: 67%
 
 ### Customer Journey Analytics
 
-在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**&#x200B;屏幕中：
+在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**屏幕中：
 
 ![无标题连接设置](assets/create-conn1.png)
 
@@ -168,7 +168,7 @@ ht-degree: 67%
    | 列 | 描述 |
    |---|---|
    | **[!UICONTROL 数据集名称]** | 选择您要提取到 Customer Journey Analytics 的一个或多个数据集，并选择&#x200B;**[!UICONTROL 添加。]**<p>（如果您有许多数据集可供选择，可以使用数据集列表上方的搜索数据集搜索栏搜索正确的数据集。） |
-   | ![更多](/help/assets/icons/More.svg) | 选择![更多](/help/assets/icons/More.svg)以打开选定数据集的上下文菜单。 您可以根据（类型）数据集选择：<ul><li>![CrossSize75](/help/assets/icons/CrossSize400.svg)  **[!UICONTROL 删除数据集]**&#x200B;到[删除数据集](#delete-a-dataset)。</li><li>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**&#x200B;以[编辑数据集](#edit-a-dataset)。</li><li>![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;以显示数据集[&#128279;](#past-backfills)的过去的回填。 |
+   | ![更多](/help/assets/icons/More.svg) | 选择![更多](/help/assets/icons/More.svg)以打开选定数据集的上下文菜单。 您可以根据（类型）数据集选择：<ul><li>![CrossSize75](/help/assets/icons/CrossSize400.svg)  **[!UICONTROL 删除数据集]**&#x200B;到[删除数据集](#delete-a-dataset)。</li><li>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**&#x200B;以[编辑数据集](#edit-a-dataset)。</li><li>![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;以显示数据集](#past-backfills)的[过去的回填。 |
    | **[!UICONTROL 上次更新时间]** | 仅对于事件数据集，此设置会自动设置为 Experience Platform 中基于事件的架构的默认时间戳字段。“N/A”表示该数据集不包含数据。 |
    | **[!UICONTROL 记录数]** | Experience Platform 中数据集上个月的总记录数。 |
    | **[!UICONTROL 架构]** | 在 Adobe Experience Platform 中创建数据集所依据的[架构。](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition) |
@@ -187,7 +187,7 @@ ht-degree: 67%
 
 [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
 
-在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**&#x200B;屏幕中：
+在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**屏幕中：
 
 ![无标题连接设置](assets/create-conn1-b2b.png)
 
@@ -210,7 +210,7 @@ ht-degree: 67%
    | 列 | 描述 |
    |---|---|
    | **[!UICONTROL 数据集名称]** | 选择您要提取到 Customer Journey Analytics 的一个或多个数据集，并选择&#x200B;**[!UICONTROL 添加。]**<p>（如果您有许多数据集可供选择，可以使用数据集列表上方的搜索数据集搜索栏搜索正确的数据集。） |
-   | ![更多](/help/assets/icons/More.svg) | 选择![更多](/help/assets/icons/More.svg)以打开选定数据集的上下文菜单。 您可以根据（类型）数据集选择：<ul><li>![CrossSize75](/help/assets/icons/CrossSize400.svg)  **[!UICONTROL 删除数据集]**&#x200B;到[删除数据集](#delete-a-dataset)。</li><li>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**&#x200B;以[编辑数据集](#edit-a-dataset)。</li><li>![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;以显示数据集[&#128279;](#past-backfills)的过去的回填。 |
+   | ![更多](/help/assets/icons/More.svg) | 选择![更多](/help/assets/icons/More.svg)以打开选定数据集的上下文菜单。 您可以根据（类型）数据集选择：<ul><li>![CrossSize75](/help/assets/icons/CrossSize400.svg)  **[!UICONTROL 删除数据集]**&#x200B;到[删除数据集](#delete-a-dataset)。</li><li>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**&#x200B;以[编辑数据集](#edit-a-dataset)。</li><li>![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;以显示数据集](#past-backfills)的[过去的回填。 |
    | **[!UICONTROL 上次更新时间]** | 仅对于事件数据集，此设置会自动设置为 Experience Platform 中基于事件的架构的默认时间戳字段。“N/A”表示该数据集不包含数据。 |
    | **[!UICONTROL 记录数]** | Experience Platform 中数据集上个月的总记录数。 |
    | **[!UICONTROL 架构]** | 在 Adobe Experience Platform 中创建数据集所依据的[架构。](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition) |
@@ -243,8 +243,6 @@ ht-degree: 67%
 >id="cja_connection_optionalcontainers"
 >title="可选容器"
 >abstract="选择其他容器。<br/><br/>**[!UICONTROL 全球帐户&#x200B;]**：启用连接中的全球帐户配置。<br/>**[!UICONTROL 机会]**：启用连接中的机会配置。<br/>**[!UICONTROL 购买群组&#x200B;]**：启用连接中的购买群组配置。"
-
-
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountid"
@@ -366,6 +364,43 @@ ht-degree: 67%
 >title="连接图"
 >abstract="连接图显示事件、人员、帐户和相关查找数据集（如机会、营销活动成员等）之间的关系。"
 
+>[!CONTEXTUALHELP]
+>id="connection_stitching_enable"
+>title="启用身份拼接"
+>abstract="启用身份拼接以提升此事件数据集以进行跨渠道分析。"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/stitching/overview" text="拼接概述"
+
+>[!CONTEXTUALHELP]
+>id="connection_stitching_dialog"
+>title="启用身份拼接"
+>abstract="启用身份拼接将从单个或多个数据集获取拼接ID。 此过程可能包括合并来自经过身份验证的会话和未经过身份验证的会话的用户数据。<br/><br/>您有责任遵守适用的法律和法规。 此合规性包括您在合并数据集之前获得必要的最终用户权限。"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/stitching/overview" text="拼接概述"
+
+>[!CONTEXTUALHELP]
+>id="connection_persistent"
+>title="人员 ID"
+>abstract="从可用标识中选择一个永久性ID。 持久ID是一个标识符，可用于事件数据集中的所有事件。"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/stitching/overview" text="拼接概述"
+
+>[!CONTEXTUALHELP]
+>id="connection_lookbackwindow"
+>title="回顾时间范围"
+>abstract="为回看窗口选择要在重播拼合中使用的适当时段。"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/stitching/overview" text="拼接概述"
+
+>[!CONTEXTUALHELP]
+>id="connection_namespace_map"
+>title="命名空间身份映射"
+>abstract="选择用于从身份映射中选取标识符的命名空间。"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/stitching/overview" text="拼接概述"
+
+>[!CONTEXTUALHELP]
+>id="connection_namespace_graph"
+>title="命名空间身份图"
+>abstract="选择用于更新身份图中的标识符的命名空间。"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/stitching/overview" text="拼接概述"
+
+
 ### 添加数据集
 
 在创建或编辑连接时，您可以添加一个或多个Experience Platform数据集。
@@ -398,7 +433,7 @@ ht-degree: 67%
 
 1. 选择一个或多个数据集并选择&#x200B;**[!UICONTROL 下一个]**。至少一个事件或摘要数据集必须是连接的一部分。
 
-1. 在&#x200B;**[!UICONTROL 添加数据集]**&#x200B;对话框的➋ **[!UICONTROL 数据集设置]**&#x200B;步骤中，逐个配置每个所选数据集[&#128279;](#dataset-settings)的设置。
+1. 在&#x200B;**[!UICONTROL 添加数据集]**&#x200B;对话框的➋ **[!UICONTROL 数据集设置]**&#x200B;步骤中，逐个配置每个所选数据集](#dataset-settings)的[设置。
 
    ![添加数据集](assets/add-dataset.png)
 
@@ -414,7 +449,7 @@ ht-degree: 67%
 1. 为要编辑的数据集表中列出的数据集选择![更多](/help/assets/icons/More.svg)
 1. 选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**。
 
-1. 在&#x200B;**[!UICONTROL 编辑数据集： _数据集名称_]**&#x200B;对话框中配置[数据集设置](#dataset-settings)。
+1. 在&#x200B;**[!UICONTROL 编辑数据集： _数据集名称_]**对话框中配置[数据集设置](#dataset-settings)。
 
    ![编辑数据集](assets/edit-dataset.png)
 
@@ -575,7 +610,7 @@ ht-degree: 67%
 
 ### 过去的回填
 
-在界面中选择![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;时，**[!UICONTROL 过去的回填： _数据集名称_]**&#x200B;对话框将显示该数据集中的最新回填。
+在界面中选择![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;时，**[!UICONTROL 过去的回填： _数据集名称_]**对话框将显示该数据集中的最新回填。
 
 ## 数据集类型 {#dataset-types}
 
