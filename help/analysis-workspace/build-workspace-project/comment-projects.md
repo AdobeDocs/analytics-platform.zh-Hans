@@ -51,7 +51,7 @@ Analysis Workspace中的评论允许您在Analysis Workspace项目的上下文�
 
 ### 在项目中查看评论徽章
 
-在项目](#comment-on-a-specific-area-of-the-project)的特定区域上作出[的评论具有在评论所属的项目区域上显示的&#x200B;**评论徽章** ![评论徽章](assets/comment-indicator.png)。 选择徽章以查看评论。 选择徽章后，您可以选择注释本身以在右边栏的注释区域中突出显示注释。
+在项目[&#128279;](#comment-on-a-specific-area-of-the-project)的特定区域上作出的评论具有在评论所属的项目区域上显示的&#x200B;**评论徽章** ![评论徽章](assets/comment-indicator.png)。 选择徽章以查看评论。 选择徽章后，您可以选择注释本身以在右边栏的注释区域中突出显示注释。
 
 编号显示在项目中的每个徽章上，并且按照其创建顺序排序。 如果在项目的同一区域中有多个评论，则该徽章显示3个点![评论徽章多个](assets/comment-indicator-multiple.png)。 选择3点徽章以显示该区域中的所有注释。
 
