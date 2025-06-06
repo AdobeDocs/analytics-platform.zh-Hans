@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 source-git-commit: 730464719f05026eae141c8e6cc656fb0fe4f819
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1961'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 92%
 
 >[!AVAILABILITY]
 >
->本文中介绍的功能自2025年5月28日起作为分阶段发布的一部分面向所有符合条件的客户提供，但在您的环境中可能尚未提供。 当该功能正式发布时，将删除此说明。有关 Customer Journey Analytics 发布流程的信息，请参阅 [Customer Journey Analytics 功能版本](/help/release-notes/releases.md)。
+>本文中描述的功能作为 2025 年 5 月 28 日开始的分阶段发布版本的一部分提供给所有符合条件的客户，但可能尚未在您的环境中提供。当该功能正式发布时，将删除此说明。有关 Customer Journey Analytics 发布流程的信息，请参阅 [Customer Journey Analytics 功能版本](/help/release-notes/releases.md)。
 
 >[!AVAILABILITY]
 >
->Data Insights Agent在有限的时间内向符合条件的客户提供。 对Data Insights Agent的访问将于2025年11月30日终止。 要继续使用Data Insights Agent而不中断，请联系您的Adobe客户代表以了解有关许可Data Insights Agent的更多信息。
+>Data Insights 代理在限定时间内供符合条件的客户使用。对 Data Insights 代理的访问权限将于 2025 年 11 月 30 日结束。如要不间断地继续使用 Data Insights 代理，请联系您的 Adobe 客户代表以了解有关 Data Insights 代理许可授予的更多信息。
 
 Data Insights 代理可从 Customer Journey Analytics 中的 AI 助手访问，它是一个生成式 AI 对话代理，可以快速有效地回答有关您数据的问题。它使用来自数据视图的组件和您的实际数据在 Analysis Workspace 中构建相关的可视化图表。
 
@@ -33,7 +33,7 @@ Data Insights 代理可从 Customer Journey Analytics 中的 AI 助手访问，�
 | 功能 | 范围内 | 范围外 |
 | --- | --- | --- |
 | **可视化图表类型** | <ul><li>线形图</li><li>多条线形图</li><li>自由格式表</li><li>条形图</li><li>圆环图</li><li>摘要数字</li></ul> | <ul><li>流量</li><li>流失</li><li>同类群组表</li><li>面积图，堆叠面积图</li><li>堆叠的条形图</li><li>项目符号</li><li>组合</li><li>直方图</li><li>水平条形图，横向堆叠条形图</li><li>关键量度摘要</li><li>散点图</li><li>摘要变化</li><li>文本</li><li>树状图</li><li>维恩图</li></ul> |
-| **工作区操作和代理功能** | <ul><li>构建和更新可视化图表<p>生成自由格式表和相关联的可视化图表（例如线形图、条形图、圆环图等）。<p>例如：*2 月至 5 月各 SKU 的利润是多少？*</p></li><li>提出跟进问题<p>响应上下文中的任何先前提示中的提示。 例如：</p> <ul><li>提示词 1：*3 月的趋势事件。*</li><li>提示词 2：*请改为显示 3 月至 4 月的数据*</li></ul> </li><li>范围外提示词识别<p>如果您提交超出范围的提示词，例如&#x200B;*导出此项目*，Data Insights 代理就会做出回应，告知您该问题超出范围。</p></li></ul> | <ul><li>共享</li><li>导出</li><li>下载</li><li>管理用户偏好设置</li><li>管理数据视图</li><li>Analytics 功能板应用程序</li><li>归因</li><li>内联摘要或回答<p>Data Insights 代理无法在聊天边栏中通过对用户提示词的概述回答进行内联回复。范围外的提示词示例包括：*请概括我上一个提示词中的见解*&#x200B;和&#x200B;*请总结线形图中的亮点。*</p></li></ul> |
+| **工作区操作和代理功能** | <ul><li>构建和更新可视化图表<p>生成自由格式表和相关联的可视化图表（例如线形图、条形图、圆环图等）。<p>例如：*2 月至 5 月各 SKU 的利润是多少？*</p></li><li>提出跟进问题<p>根据先前提示词的上下文，对提示词做出回应。例如：</p> <ul><li>提示词 1：*3 月的趋势事件。*</li><li>提示词 2：*请改为显示 3 月至 4 月的数据*</li></ul> </li><li>范围外提示词识别<p>如果您提交超出范围的提示词，例如&#x200B;*导出此项目*，Data Insights 代理就会做出回应，告知您该问题超出范围。</p></li></ul> | <ul><li>共享</li><li>导出</li><li>下载</li><li>管理用户偏好设置</li><li>管理数据视图</li><li>Analytics 功能板应用程序</li><li>归因</li><li>内联摘要或回答<p>Data Insights 代理无法在聊天边栏中通过对用户提示词的概述回答进行内联回复。范围外的提示词示例包括：*请概括我上一个提示词中的见解*&#x200B;和&#x200B;*请总结线形图中的亮点。*</p></li></ul> |
 | **澄清问题** | 如果您提出的问题没有充分的上下文让 Data Insights 代理能够回答，或者问题太过笼统，Data Insights 代理就会提出用于澄清的问题或一些建议选项。 <p>以下澄清问题是与组件相关问题的示例：</p><ul><li>量度：*您指的是哪个“收入”量度？*</li><li>维度：*您想关注以下哪一个“地区”？*</li><li>区段：*您想应用哪个“帐户”区段？*</li><li>日期范围：*您所说的“上个月”是指过去的整个月还是过去 30 天？*</li></ul><p>以下澄清问题是与维度项相关问题的示例：</p> <ul><li>您指的是哪个“商店名称”？（例如，商店 #5274、商店 #2949 等。）</li></ul> | 澄清问题仅限于组件和维度项。Data Insights 代理无法澄清数据视图、可视化图表、数据粒度、比较和范围等方面的问题。如果无法使用澄清问题，代理会默认采用您最有可能提出的问题。如果它返回意外的可视化图表或数据粒度，您可以提出跟进问题或调整可视化图表和数据。 |
 | **数据可验证性和正确性** | 通过查看生成的自由格式表和数据可视化图表可以确认数据的可验证性和正确性。 <p>例如，如果您要求 Data Insights 代理统计&#x200B;*上个月的订单趋势*，您可以确认在新生成的面板、数据可视化图表和自由格式表中选择了正确的量度（“订单”）和日期范围（“上个月”）。 | Data Insights 代理不会在回答中告知您添加了哪些组件或可视化图表。</p> |
 | **反馈机制** | <ul><li>拇指向上</li><li>拇指向下</li><li>标记</li></ul> |  |
@@ -43,7 +43,7 @@ Data Insights 代理可从 Customer Journey Analytics 中的 AI 助手访问，�
 
 以下参数控制着对 Customer Journey Analytics 中 Data Insights 代理的访问权限：
 
-* **解决方案访问**：在2025年11月30日之前，所有Customer Journey Analytics客户都可将Data Insights Agent作为有限访问计划的一部分使用。 它在 Adobe Analytics 中不可用。
+* **解决方案访问权限**：作为有限访问权限计划的一部分，截至 2025 年 11 月 30 日，Data Insights 代理可供所有 Customer Journey Analytics 客户使用。它在 Adobe Analytics 中不可用。
 
 * **合同访问权限**：如果您无法使用 AI 助手中的 Data Insights 代理，请联系您所在组织的管理员或 Adobe 帐户团队。在您的组织可以使用 Data Insights 代理之前，您必须先同意某些与生成式 AI 相关的法律条款。
 
@@ -75,7 +75,7 @@ Data Insights 代理可从 Customer Journey Analytics 中的 AI 助手访问，�
       >[!IMPORTANT]
       >
       >启用数据视图时，请考虑以下事项：
-      >* 每个IMS组织最多可启用50个数据视图。 如果您在给定组织的所有产品配置文件中启用了超过50个数据视图，Data Insights Agent将使用50个最常用的数据视图。
+      >* 每个 IMS 组织最多可以启用 50 个数据视图。如果您为某个特定组织的所有产品轮廓启用了超过 50 个数据视图，Data Insights 代理将使用最常用的 50 个数据视图。
       >* 您在 Admin Console 中启用数据视图后的同一天内，Data Insights 代理就可以引用这些包含的数据视图。
 
    1. 搜索或滚动到要启用的数据视图，然后选择每个数据视图名称旁边的加号图标 ![AddCircle](/help/assets/icons/AddCircle.svg)。
@@ -144,7 +144,7 @@ Data Insights 代理可从 Customer Journey Analytics 中的 AI 助手访问，�
 
 **提示词：**&#x200B;在提示词窗口中输入&#x200B;*“添加利润。”*
 
-**回答：**&#x200B;**[!UICONTROL 条形]**&#x200B;图仍然提供了最简洁的回答，而利润量度被添加到自由格式表中成为一列：
+**回答：****[!UICONTROL 条形]**&#x200B;图仍然提供了最简洁的回答，而利润量度被添加到自由格式表中成为一列：
 
 ![条形图](/help/assets/ai-asst-result4.png)
 

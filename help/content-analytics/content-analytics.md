@@ -6,9 +6,9 @@ feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 source-git-commit: dd4adc5acd05aecf0a67072df6688a344e1ce5c9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '836'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -60,14 +60,14 @@ Content Analytics 使用在 Experience Platform 的事件数据集中的网页�
 
 >[!NOTE]
 >
->如果您已许可Privacy and Security Shield插件，请注意，根据Content Analytics，DULE标签或客户管理的密钥不包含（任何从生成的）体验和资源。 此外，Content Analytics不是HIPAA就绪的服务。
+>如果您已获得隐私与安全盾附加组件的许可证，请注意根据 Content Analytics，体验和资产（生成的任何数据）不受 DULE 标签或客户管理密钥的保护。而且，Content Analytics 不是 HIPAA 就绪的服务。
 >
 
 
 >[!MORELIKETHIS]
 >
 >[内容分析报告](report/report.md)
->[配置内容分析](config/configuration.md)
->[在 Customer Journey Analytics 中计算跳出次数和跳出率](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
+>>[配置内容分析](config/configuration.md)
+>>[在 Customer Journey Analytics 中计算跳出次数和跳出率](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
 >
 
