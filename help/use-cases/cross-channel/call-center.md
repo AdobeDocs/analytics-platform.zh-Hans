@@ -5,7 +5,7 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 88%
@@ -69,7 +69,7 @@ Customer Journey Analytics需要一个通用标识符来生成[组合数据集](
 
 此可视化图表有助于您了解 CCA 进行数据拼合的效果。
 
-1. 创建两个区段。 这两个区段中使用的变量与上面提到的用于反映每个事件的数据源的变量相同。 有关详细信息，请参阅[创建区段](/help/components/filters/create-filters.md)。
+1. 创建两个区段。 这两个区段中使用的变量与上面提到的用于反映每个事件的数据源的变量相同。 有关详细信息，请参阅[创建区段](/help/components/segments/seg-create.md)。
    * 数据集 ID 代表网站数据的“人员”容器
    * 数据集 ID 代表呼叫中心数据的“人员”容器
 2. 在 Analysis Workspace 中，将[维恩图](/help/analysis-workspace/visualizations/venn.md)可视化图表拖到工作区画布上。

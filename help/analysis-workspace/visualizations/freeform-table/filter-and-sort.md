@@ -4,7 +4,7 @@ title: 排序和过滤表格
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 9a15cb4d771892ff656fe72b8e53d890a3fd99f7
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 99%
@@ -17,7 +17,7 @@ Analysis Workspace 中的自由格式表是进行交互式数据分析的基础�
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/327345?captions=chi_hans)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## 过滤表格
 
@@ -96,7 +96,7 @@ Note: this option does not seem to work. AN-338422
 
 ### 使用受众区段
 
-有关详细信息，请参阅[分段概述](/help/components/filters/filters-overview.md)。
+有关详细信息，请参阅[分段概述](/help/components/segments/seg-overview.md)。
 
 ## 对表格进行排序
 

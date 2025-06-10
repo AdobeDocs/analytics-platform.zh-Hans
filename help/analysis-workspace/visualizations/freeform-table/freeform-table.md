@@ -4,8 +4,8 @@ description: 自由格式表是在 Analysis Workspace 中进行数据分析的�
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
-workflow-type: ht
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 100%
 
@@ -64,7 +64,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 * 您可以通过调整项目的[视图密度](/help/analysis-workspace/build-workspace-project/view-density.md)，将更多行放入单个屏幕中。
 * 在执行分页之前，每个维度行最多可显示 400 行。在第一列标题中选择&#x200B;**[!UICONTROL 行]**&#x200B;旁边的数字，以在页面上显示更多行。使用第一列标题中的 ![ChevronRight](/help/assets/icons/ChevronRight.svg) 导航到其他页面。
 * 您可以按其他组件划分行。要同时划分多行，请选择多行，然后将下一个组件拖至选定行顶部即可。了解有关[划分](/help/components/dimensions/t-breakdown-fa.md)的更多信息。
-* 可以将各行[分段](/help/components/filters/filters-overview.md)，以缩减项目集。在[行设置](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)下，提供了其他设置。
+* 可以将各行[分段](/help/components/segments/seg-overview.md)，以缩减项目集。在[行设置](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)下，提供了其他设置。
 
 ### 列
 
@@ -113,6 +113,6 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >[!MORELIKETHIS]
 >
 >[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[可视化图表设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[可视化图表上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[可视化图表设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[可视化图表上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

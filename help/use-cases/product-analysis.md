@@ -2,7 +2,7 @@
 title: Customer Journey Analytics中的产品分析
 description: 了解可在Customer Journey Analytics中使用哪些功能来有效执行产品分析。
 exl-id: b185a2ed-18c8-4fb3-8c69-693d5fee0e67
-source-git-commit: 3d8ebd90156f0e44e4c45913a524ed91360dd39e
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 1%
@@ -31,13 +31,13 @@ Customer Journey Analytics为团队提供了一些工具，用于分析和优化
 Adobe Experience Platform和Customer Journey Analytics中的以下功能使您能够大规模摄取和管理产品数据：
 
 * Adobe Experience Platform
-   * [数据集&#x200B;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/overview)
+   * [数据集&#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)
    * [数据准备&#x200B;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/home)
-   * [数据Distiller&#x200B;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/data-distiller/overview)
+   * [数据Distiller&#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview)
 * Customer Journey Analytics
    * [连接&#x200B;](/help/connections/overview.md)
    * [数据视图](/help/data-views/data-views.md)，包括[派生字段&#x200B;](/help/data-views/derived-fields/derived-fields.md)
-   * [区段&#x200B;](/help/components/filters/filters-overview.md)
+   * [区段&#x200B;](/help/components/segments/seg-overview.md)
    * [计算量度](/help/components/calc-metrics/calc-metr-overview.md)
    * [引导式分析&#x200B;：时间线&#x200B;](/help/guided-analysis/types/timeline.md)
 
@@ -99,8 +99,8 @@ Experience Cloud中的以下功能使您能够有效地根据见解采取行动�
 * [创建并发布受众](/help/components/audiences/publish.md)&#x200B;以便从Customer Journey Analytics激活
 * 通过Experience Cloud产品激活受众：
    * [在AJO和Adobe Target中运行实验](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment)，并使用[实验面板](/help/analysis-workspace/c-panels/experimentation.md)测量Customer Journey Analytics中各种变化的影响
-   * [向AJO中的用户提供应用程序内参与](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/channels/in-app/get-started-in-app)
-* 使用Adobe Real-time CDP [将受众](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/activation-overview)激活到外部目标&#x200B;
+   * [向AJO中的用户提供应用程序内参与](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app)
+* 使用Adobe Real-time CDP [将受众](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview)激活到外部目标&#x200B;
 
 ## 与组织共享见解&#x200B;。
 

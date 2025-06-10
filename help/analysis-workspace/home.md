@@ -1,15 +1,15 @@
 ---
 keywords: Analysis Workspace
 title: Analysis Workspace 概述
-description: Analysis Workspace 功能概览
+description: Analysis Workspace 功能概述
 feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
-workflow-type: ht
-source-wordcount: '1473'
-ht-degree: 100%
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+workflow-type: tm+mt
+source-wordcount: '1469'
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 概述](https://video.tv.adobe.com/v/35509/?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 概述](https://video.tv.adobe.com/v/26266/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -45,7 +45,7 @@ Analysis Workspace 的主要功能可通过按钮面板使用：
 | ![WebPage](/help/assets/icons/WebPage.svg) | **[!UICONTROL 面板]** | [面板](/help/analysis-workspace/c-panels/panels.md)可以包含许多表格和可视化内容，用于在项目中对分析进行组织和整理。Analysis Workspace 中提供的许多面板都可以基于一些用户输入来生成整套分析。 |
 | ![Guided Analysis](/help/assets/icons/GuidedAnalysis.svg) | **[!UICONTROL 引导式分析]** | [引导式分析](../guided-analysis/overview.md)允许您通过引导式工作流自助获取有关客户历程的高质量数据和洞察。您可以创建一个分析，以将其纳入您的 Workspace 项目中，或包含之前保存的现有分析。 |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | **[!UICONTROL 可视化内容]** | [可视化内容](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)（例如条形图或折线图）可用于直观地呈现数据。在最左侧面板中，选择中间的&#x200B;**[!UICONTROL 可视化内容]**&#x200B;图标可查看所有可用的可视化内容。 |
-| ![Curate](/help/assets/icons/Curate.svg) | **[!UICONTROL 组件]** | [组件](/help/components/overview.md)包括以下元素：<ul><li>![Dimensions](/help/assets/icons/Dimensions.svg) [维度](/help/components/dimensions/overview.md)</li><li>![Event](/help/assets/icons/Event.svg) [量度](/help/components/apply-create-metrics.md)</li><li>![分段](/help/assets/icons/Segmentation.svg) [区段](/help/components/filters/filters-overview.md)</li><li>![Calendar](/help/assets/icons/Calendar.svg) [日期范围](/help/components/date-ranges/overview.md)</li></ul> |
+| ![Curate](/help/assets/icons/Curate.svg) | **[!UICONTROL 组件]** | [组件](/help/components/overview.md)包括以下元素：<ul><li>![Dimensions](/help/assets/icons/Dimensions.svg) [维度](/help/components/dimensions/overview.md)</li><li>![Event](/help/assets/icons/Event.svg) [量度](/help/components/apply-create-metrics.md)</li><li>![分段](/help/assets/icons/Segmentation.svg) [区段](/help/components/segments/seg-overview.md)</li><li>![Calendar](/help/assets/icons/Calendar.svg) [日期范围](/help/components/date-ranges/overview.md)</li></ul> |
 | ![ViewList](/help/assets/icons/ViewList.svg) | **[!UICONTROL 目录]** | 目录会将项目中包含的所有面板和可视化内容组织成一个可折叠列表，以便您能够快速访问特定的面板或可视化内容。 |
 | ![Bookmark](/help/assets/icons/Bookmark.svg) | **数据字典**  | [数据字典](/help/components/data-dictionary/data-dictionary-overview.md)可以帮助用户和管理员跟踪并更好地理解 Analytics 环境中的组件。 |
 
@@ -59,10 +59,10 @@ Analysis Workspace 的大部分功能可通过拖放以及面板、可视化内�
 请注意，您的键盘上可能会使用以下符号：
 
 - **⇧** 表示 **[!UICONTROL *shift *]**键。
-- **⌘** 表示 **[!UICONTROL *cmd *]**（命令）。
-- **⌃** 表示 **[!UICONTROL *ctrl *]**（控制）。
-- **⌥** 表示 **[!UICONTROL *opt *]**（选项）。
-- **⎇** 表示 **[!UICONTROL *alt *]**（备选）。
+- **[!UICONTROL *cmd *]**的&#x200B;**⌘**（命令）。
+- **[!UICONTROL *ctrl *]**（控件）的&#x200B;**⌃**。
+- **[!UICONTROL *opt *]**的&#x200B;**⌥**（选项）。
+- **⎇**&#x200B;用于&#x200B;**[!UICONTROL *alt *]**（替代）。
 
 请参阅下表以了解可用菜单的概述。
 
@@ -106,7 +106,7 @@ Analysis Workspace 的大部分功能可通过拖放以及面板、可视化内�
 
 | **[!UICONTROL 组件]** | 快捷方式 Mac | Windows 快捷方式 | 描述 |
 |---|---|---|---|
-| **[!UICONTROL 创建区段……]** | **[!UICONTROL *shift+cmd+e *]** | **[!UICONTROL *shift+ctrl+e *]** | 创建新的[区段](/help/components/filters/create-filters.md)。 |
+| **[!UICONTROL 创建区段……]** | **[!UICONTROL *shift+cmd+e *]** | **[!UICONTROL *shift+ctrl+e *]** | 创建新的[区段](/help/components/segments/seg-create.md)。 |
 | **[!UICONTROL 创建量度……]** | **[!UICONTROL *shift+cmd+c *]** | **[!UICONTROL *shift+ctrl+c *]** | 创建新的[计算量度](/help/components/calc-metrics/calc-metr-overview.md)。 |
 | **[!UICONTROL 创建日期范围……]** | **[!UICONTROL *shift+cmd+d *]** | **[!UICONTROL *shift+ctrl+d *]** | 创建新的[日期范围](/help/components/date-ranges/overview.md)。 |
 | **[!UICONTROL 创建注释……]** | **[!UICONTROL *shift+cmd+o *]** | **[!UICONTROL *shift+ctrl+o *]** | 创建新的[注释](/help/components/annotations/overview.md)。 |

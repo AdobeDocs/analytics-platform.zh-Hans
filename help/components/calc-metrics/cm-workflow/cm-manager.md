@@ -3,10 +3,10 @@ description: 计算量度管理器允许您共享、筛选、标记、批准、�
 title: 计算量度管理器
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 30%
+source-wordcount: '897'
+ht-degree: 29%
 
 ---
 
@@ -27,13 +27,13 @@ ht-degree: 30%
 
 ### 过滤器列表
 
-过滤器列表会➊显示您拥有或已与您共享的所有计算量度。 该列表具有以下各列：
+过滤器列表➊显示您拥有或已与您共享的所有计算量度。 该列表具有以下各列：
 
 <!-- I think this table incorrectly talks about quick calculated metrics -->
 
 | 列 | 描述 |
 | --- | --- | 
-| ![StarOutline](/help/assets/icons/StarOutline.svg) | 选择支持![Star](/help/assets/icons/Star.svg)或取消支持![StarOutline](/help/assets/icons/StarOutline.svg)计算量度。 查看[将计算量度标记为收藏](/help/components/filters/filters-favorite.md) |
+| ![StarOutline](/help/assets/icons/StarOutline.svg) | 选择支持![Star](/help/assets/icons/Star.svg)或取消支持![StarOutline](/help/assets/icons/StarOutline.svg)计算量度。 查看[将计算量度标记为收藏](/help/components/segments/seg-favorite.md) |
 | **[!UICONTROL 标题和描述]** | 要编辑计算量度，请选择标题链接，这会打开[计算量度生成器](cm-build-metrics.md)。 共享的计算量度以![共享](/help/assets/icons/ShareAlt.svg)表示。 |
 | **[!UICONTROL 数据视图]** | 此计算量度应用于的数据视图。 |
 | **[!UICONTROL 所有者]** | 计算指标的所有者。 作为用户，您只能看到您拥有的注释或与您共享的注释。 |
@@ -49,7 +49,7 @@ ht-degree: 30%
 
 ### 操作栏
 
-您可以使用操作栏 ➋ 对过滤器执行操作。该操作栏包含以下操作：
+您可以使用操作栏➋对筛选器执行操作。 操作栏包含以下操作：
 
 | 图标 | 操作 | 描述 |
 |:---:|---|---|
@@ -65,11 +65,11 @@ ht-degree: 30%
 
 ### 活动过滤器栏
 
-过滤器栏➌显示从过滤器面板应用于计算量度列表（如果有）的活动过滤器。 您可以使用 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 快速移除过滤器。如果指定了多个过滤器，则可以使用&#x200B;**[!UICONTROL 全部移除]**&#x200B;来移除所有过滤器。
+筛选器栏➌显示从筛选器面板应用到计算量度列表（如果有）的活动筛选器。 您可以使用 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 快速移除过滤器。如果指定了多个过滤器，则可以使用&#x200B;**[!UICONTROL 全部移除]**&#x200B;来移除所有过滤器。
 
 ### 过滤器面板
 
-可以使用![筛选器](/help/assets/icons/Filter.svg) **[!UICONTROL 筛选器]**&#x200B;左侧面板筛选计算量度列表➍。 过滤器面板显示过滤器的类型和遵循特定过滤器的计算量度数。 选择![过滤器](/help/assets/icons/Filter.svg)以切换过滤器面板的显示方式。
+您可以使用![筛选器](/help/assets/icons/Filter.svg) **[!UICONTROL 筛选器]**&#x200B;左侧面板➍来筛选计算量度列表。 过滤器面板显示过滤器的类型和遵循特定过滤器的计算量度数。 选择![过滤器](/help/assets/icons/Filter.svg)以切换过滤器面板的显示方式。
 
 有关详细信息，请参阅[筛选计算量度列表](cm-filter.md)。
 

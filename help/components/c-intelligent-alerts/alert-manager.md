@@ -4,10 +4,10 @@ title: 管理警报
 feature: Workspace Basics
 role: User, Admin
 exl-id: 174c3ebd-a77b-4403-ae9a-bb0cff4bcca6
-source-git-commit: a85efff8720d8fdf02b0d1290fedf17654be48e3
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 21%
+source-wordcount: '596'
+ht-degree: 23%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 21%
 
 * 在主界面中选择&#x200B;**[!UICONTROL 组件]**，然后选择&#x200B;**[!UICONTROL 警报]**。
 
-警报管理器的结构类似于[区段管理器](/help/components/filters/manage-filters.md)和[计算量度管理器](/help/components/calc-metrics/cm-workflow/cm-manager.md)。
+警报管理器的结构类似于[区段管理器](/help/components/segments/seg-manage.md)和[计算量度管理器](/help/components/calc-metrics/cm-workflow/cm-manager.md)。
 
 
 ## 警报管理器
@@ -29,7 +29,7 @@ ht-degree: 21%
 
 ### 警报列表
 
-警报列表会➊显示您拥有的所有警报、已覆盖到您所有项目的警报以及与您共享的警报。 该列表具有以下各列：
+警报列表➊显示您拥有的所有警报、已覆盖到您所有项目的警报以及与您共享的警报。 该列表具有以下各列：
 
 | 列 | 描述 |
 |---|---|
@@ -66,12 +66,12 @@ ht-degree: 21%
 
 ### 活动过滤器栏
 
-过滤器栏➌显示从过滤器面板应用于警报列表（如果有）的活动过滤器。 您可以使用 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 快速移除过滤器。如果指定了多个过滤器，则可以使用&#x200B;**[!UICONTROL 全部移除]**&#x200B;来移除所有过滤器。
+筛选器栏➌显示从筛选器面板应用到警报列表（如果有）的活动筛选器。 您可以使用 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 快速移除过滤器。如果指定了多个过滤器，则可以使用&#x200B;**[!UICONTROL 全部移除]**&#x200B;来移除所有过滤器。
 
 
 ### 过滤器面板
 
-您可以使用![筛选器](/help/assets/icons/Filter.svg) **[!UICONTROL 筛选器]**&#x200B;左侧面板筛选警报列表➍。 过滤器面板显示过滤器的类型和遵循特定过滤器的警报数。
+您可以使用![筛选器](/help/assets/icons/Filter.svg) **[!UICONTROL 筛选器]**&#x200B;左侧面板➍来筛选警报列表。 过滤器面板显示过滤器的类型和遵循特定过滤器的警报数。
 
 
 1. 选择![Filter](/help/assets/icons/Filter.svg)以打开筛选面板。如果警报列表需要更多空间，您可以再次选择![筛选器](/help/assets/icons/Filter.svg)以关闭面板。
@@ -93,17 +93,17 @@ ht-degree: 21%
 {{ownerfiltersection}}
 
 
-#### 已启用状态筛选器部分
+#### 已启用状态过滤器部分
 
 {{enabledstatusfiltersection}}
 
 
-#### 键入筛选器部分
+#### 类型过滤器部分
 
 {{typefiltersection}}
 
 
-#### 其他筛选器筛选器部分
+#### 其他过滤器过滤器部分
 
 {{otherfiltersfiltersection}}
 

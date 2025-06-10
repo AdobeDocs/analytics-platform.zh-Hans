@@ -3,7 +3,7 @@ description: 通过为单个量度分段，可在同一报表中比较各个量�
 title: 分段指标
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->区段定义通过[区段生成器](/help/components/filters/filter-builder.md)更新。 如果您对区段进行了更改，则该区段将在任何使用它的地方自动更新，包括如果该区段是计算指标定义的一部分。
+>区段定义通过[区段生成器](/help/components/segments/seg-builder.md)更新。 如果您对区段进行了更改，则该区段将在任何使用它的地方自动更新，包括如果该区段是计算指标定义的一部分。
 >
 
 您希望比较与您的品牌互动的德国人员与德国以外人员的量度。 因此，您可以回答类似下面的问题：
@@ -30,7 +30,7 @@ ht-degree: 1%
 ## 受欢迎页面
 
 1. [从名为`German people`的Workspace项目创建计算量度](cm-workflow.md)。
-1. 在[计算量度生成器](cm-build-metrics.md)中，[创建一个名为`Germany`的区段](/help/components/filters/filter-builder.md)，该区段使用CRM数据中的“CRM国家/地区”字段来确定人员的来源。
+1. 在[计算量度生成器](cm-build-metrics.md)中，[创建一个名为`Germany`的区段](/help/components/segments/seg-builder.md)，该区段使用CRM数据中的“CRM国家/地区”字段来确定人员的来源。
 
    >[!TIP]
    >
@@ -90,7 +90,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-请参阅![VideoCheckout](/help/assets/icons/VideoCheckedOut.svg) [将分段计算量度用作演示视频的无实施量度](https://video.tv.adobe.com/v/37926?quality=12&learn=on&captions=chi_hans){target="_blank"}。
+请参阅![VideoCheckout](/help/assets/icons/VideoCheckedOut.svg) [将分段计算量度用作演示视频的无实施量度](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"}。
 
 {{videoaa}}
 

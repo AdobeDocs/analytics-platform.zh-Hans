@@ -4,8 +4,8 @@ title: 使用 Analysis Workspace 中的组件
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
-workflow-type: ht
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 100%
 
@@ -91,7 +91,7 @@ ht-degree: 100%
 
 ### 在项目中添加区段
 
-[区段](/help/components/filters/filters-overview.md)允许您根据相关特征或特定交互来识别人员、会话或事件的子集。
+[区段](/help/components/segments/seg-overview.md)允许您根据相关特征或特定交互来识别人员、会话或事件的子集。
 
 您可以通过以下任一方法在 Analysis Workspace 中使用区段：
 
@@ -103,7 +103,7 @@ ht-degree: 100%
 在自由格式表的一列中添加区段后，这些区段就会应用于该表列内的所有内容。您还可以添加区段作为流失可视化图表的一部分。
 
 * 在组件中使用区段：
-如果您要定义[计算量度](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md)、[注释](/help/components/annotations/create-annotations.md#annotation-builder)或[区段](/help/components/filters/filter-builder.md)等组件，您就可以使用区段作为定义的一部分。
+如果您要定义[计算量度](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md)、[注释](/help/components/annotations/create-annotations.md#annotation-builder)或[区段](/help/components/segments/seg-builder.md)等组件，您就可以使用区段作为定义的一部分。
 
 
 ### 在项目中添加日期范围

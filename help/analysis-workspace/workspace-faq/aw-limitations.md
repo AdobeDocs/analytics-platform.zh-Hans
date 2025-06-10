@@ -4,8 +4,8 @@ title: Analysis Workspace 中的已知限制
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
-workflow-type: ht
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 ## 区段
 
 * 某些量度和维度不可分段，如[!UICONTROL 事件]、[!UICONTROL 人员]等。
-* 在[面板放置区](/help/analysis-workspace/c-panels/panels.md)中创建的临时区段是一种快速区段。它们不出现在 Workspace 的左侧面板或区段管理器中，除非它们被公开。有关更多信息，请参阅[快速区段](/help/components/filters/quick-filters.md)。
+* 在[面板放置区](/help/analysis-workspace/c-panels/panels.md)中创建的临时区段是一种快速区段。它们不出现在 Workspace 的左侧面板或区段管理器中，除非它们被公开。有关更多信息，请参阅[快速区段](/help/components/segments/seg-quick.md)。
 
 ## 计算量度
 
