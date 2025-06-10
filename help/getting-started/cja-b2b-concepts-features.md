@@ -74,7 +74,7 @@ Customer Journey Analytics基于三个容器的概念而构建：人员、会话
   >Customer Journey Analytics B2B edition中基于帐户的设置中的B2B事件数据可能包含多行数据，但没有人员或会话。 例如：详细说明商机阶段进展的行。 在评估区段时，请记住，人员和会话可能不再是正确的标准。
   >
 
-* **归因**：您可以在[归因面板](/help/analysis-workspace/c-panels/attribution.md)、[归因组件设置](/help/data-views/component-settings/attribution.md)、[计算量度](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md)或自由格式表](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)的[列中使用新的B2B容器。 帐户回顾时间可延长至13个月。
+* **归因**：您可以在[归因面板](/help/analysis-workspace/c-panels/attribution.md)、[归因组件设置](/help/data-views/component-settings/attribution.md)、[计算量度](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md)或自由格式表[&#128279;](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)的列中使用新的B2B容器。 帐户回顾时间可延长至13个月。
 
 * **可视化图表**：[退出](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)、[流量](/help/analysis-workspace/visualizations/c-flow/flow.md)、[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)和[同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)可视化图表支持新的B2B容器。 例如：您可以使用新容器了解购买组如何使用内容，或者商机同类群组如何接近销售结束。
 您还可以在[用户首选项](/help/analysis-workspace/user-preferences.md#visualizations-preferences)中设置这些可视化的默认容器。
