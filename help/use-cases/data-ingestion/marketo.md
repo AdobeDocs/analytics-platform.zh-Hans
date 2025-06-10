@@ -18,11 +18,11 @@ ht-degree: 51%
 
 ## 步骤 1：将 Marketo 源数据字段映射到其 XDM 目标
 
-将 [人员](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html#persons) 和 [活动](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html#activities) 对象映射到各自的 XDM 架构目标字段。
+将 [人员](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=zh-Hans#persons) 和 [活动](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=zh-Hans#activities) 对象映射到各自的 XDM 架构目标字段。
 
 ## 步骤2：将Marketo数据摄取到Adobe Experience Platform
 
-使用 [Marketo Engage 连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html)将 Marketo 的数据传送到 Experience Platform，并使用与平台连接的应用程序使这些数据保持最新。
+使用 [Marketo Engage 连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=zh-Hans)将 Marketo 的数据传送到 Experience Platform，并使用与平台连接的应用程序使这些数据保持最新。
 
 ## 步骤3：在Customer Journey Analytics中设置与此数据集的连接
 
