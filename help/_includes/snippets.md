@@ -1,8 +1,8 @@
 ---
 source-git-commit: fe705aade87a2c5ea8d47db3dcd727d239eafc76
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5193'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 # 片段
@@ -245,7 +245,7 @@ Customer Journey analytics 中的各种可视化图表旨在分析您为客户�
 | 设置 | 描述 |
 |---|---|
 | **[!UICONTROL 导入新数据]** | 如果您想建立持续连接，请启用此选项。通过持续的连接，添加到数据集的新数据批次会自动在工作区中提供。 |
-| **[!UICONTROL 数据集回填]** | 启用&#x200B;**[!UICONTROL 回填所有现有数据]**&#x200B;以确保所有现有数据均已回填。<br/><br/>选择&#x200B;**[!UICONTROL 请求补填]**&#x200B;填充特定时期的历史数据。您最多可以定义 10 个数据集回填期。<ol><li>通过输入开始和结束数据或使用![日程表](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)选择日期来定义期间。</li><li>选择&#x200B;**[!UICONTROL 队列补填]**&#x200B;将回填内容添加到列表中，或&#x200B;**[!UICONTROL 取消]**&#x200B;取消。</li></ol>对于每个条目，选择 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 编辑时段，或选择 ![删除](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) 删除该条目。<br/><br/>在回填上：<ul><li>您可以单独回填每个数据集。</li><li>您会优先处理新添加到此连接中数据集的新数据，因此这些新数据的滞后时间最短。</li><li>任何回填（历史）数据的导入速度都会比较慢。历史数据的数量会影响延迟。</li><li>Analytics Source Connector 会为生产沙盒导入最多 13 个月的数据（无论大小）。非生产沙盒的回填期限为 3 个月。</li><li>对于生产沙盒，如果您许可了附加SKU，使您能够导入超过13个月的历史回填数据，请联系Adobe以请求扩展回填。</li></ul> |
+| **[!UICONTROL 数据集回填]** | 启用&#x200B;**[!UICONTROL 回填所有现有数据]**&#x200B;以确保所有现有数据均已回填。<br/><br/>选择&#x200B;**[!UICONTROL 请求补填]**&#x200B;填充特定时期的历史数据。您最多可以定义 10 个数据集回填期。<ol><li>通过输入开始和结束数据或使用![日程表](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)选择日期来定义期间。</li><li>选择&#x200B;**[!UICONTROL 队列补填]**&#x200B;将回填内容添加到列表中，或&#x200B;**[!UICONTROL 取消]**&#x200B;取消。</li></ol>对于每个条目，选择 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 编辑时段，或选择 ![删除](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) 删除该条目。<br/><br/>在回填上：<ul><li>您可以单独回填每个数据集。</li><li>您会优先处理新添加到此连接中数据集的新数据，因此这些新数据的滞后时间最短。</li><li>任何回填（历史）数据的导入速度都会比较慢。历史数据的数量会影响延迟。</li><li>Analytics Source Connector 会为生产沙盒导入最多 13 个月的数据（无论大小）。非生产沙盒的回填期限为 3 个月。</li><li>对于生产沙盒，如果您已获得附加 SKU 许可，可以导入超过 13 个月的历史回填数据，请联系 Adobe 请求扩展回填。</li></ul> |
 | **[!UICONTROL 批次状态]** | 可能的状态指示符有：<ul><li>成功</li><li>X 回填处理</li><li>关</li></ul> |
 | **[!UICONTROL 数据集 ID]** | 此 ID 是自动生成的。 |
 | **[!UICONTROL 描述]** | 创建数据集时给出的关于此数据集的描述。 |
