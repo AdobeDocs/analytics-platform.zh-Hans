@@ -7,7 +7,7 @@ role: User
 source-git-commit: c10d88c27d4a3c92e02179da4a73a6a499d2a8c2
 workflow-type: tm+mt
 source-wordcount: '485'
-ht-degree: 91%
+ht-degree: 94%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 91%
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_grandtotal"
 >title="总计"
->abstract="带有静态行的表或细分不支持全部总计。"
+>abstract="带有统计行的表或细分不支持全部总计。"
 
 
 在自由格式表中，每个划分级别都显示一个总计行，可以显示两个总计行：

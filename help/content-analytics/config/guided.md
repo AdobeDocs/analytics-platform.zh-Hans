@@ -8,7 +8,7 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: 6d4d6558f8f0ebb6a0885c958fe019d3e5afab4c
 workflow-type: tm+mt
 source-wordcount: '2677'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -97,7 +97,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
 >title="新建数据视图"
->abstract="您已为此配置选择了新的数据视图。新的数据视图将进行更新，以包含 Content Analytics 量度和维度。将从最初选择的数据视图中删除这些量度和维度。<br/><br/>如果不同的连接与新的数据视图相关联，则该连接将会更新，以包含 Content Analytics 数据集。不会从最初选择的连接中删除Content Analytics数据集。"
+>abstract="您已为此配置选择了新的数据视图。新的数据视图将进行更新，以包含 Content Analytics 量度和维度。这些量度和维度将会从原先选择的数据视图中移除。<br/><br/>如果不同的连接与新的数据视图相关联，则该连接将会更新，以包含 Content Analytics 数据集。Content Analytics 数据集不会从原先选择的连接中删除。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_current_cleanup_labels_dialog"
@@ -348,7 +348,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning_dialog"
 >title="实施确认"
->abstract="如果选择&#x200B;**[!UICONTROL 实施]**，则会根据您在此工作流程中提供的输入来配置内容分析。默认情况下，会根据内容分析的一般用途选择几种设置，但您（作为数据控制者）必须检查每个工件的设置，以确认这些设置是根据您的隐私政策、合同权利和义务以及符合适用法律的同意声明要求实施的。<br/><br/>请注意，在手动发布与此配置关联的标记库之前，不会收集任何数据。<br/><br/>为了获取图像和文本的属性，Adobe 使用了以下方式检索属性：<ol><li>页面URL，在用户访问网站时捕获，根据您配置的数据收集设置进行配置，以及</li><li>托管图像的 URL。</li></ol>您不得对第三方网站上托管的图像进行标记。"
+>abstract="如果选择&#x200B;**[!UICONTROL 实施]**，则会根据您在此工作流程中提供的输入来配置内容分析。默认情况下，会根据内容分析的一般用途选择几种设置，但您（作为数据控制者）必须检查每个工件的设置，以确认这些设置是根据您的隐私政策、合同权利和义务以及符合适用法律的同意声明要求实施的。<br/><br/>请注意，在手动发布与此配置关联的标记库之前，不会收集任何数据。<br/><br/>为了获取图像和文本的属性，Adobe 使用了以下方式检索属性：<ol><li>根据您配置的数据收集设置，在用户访问网站时捕获的页面 URL，以及</li><li>托管图像的 URL。</li></ol>您不得对第三方网站上托管的图像进行标记。"
 
 <!-- markdownlint-enable MD034 -->
 

@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '2453'
-ht-degree: 87%
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 87%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建或编辑数据视图](https://video.tv.adobe.com/v/345538/?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建或编辑数据视图](https://video.tv.adobe.com/v/35110/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -140,7 +140,7 @@ ht-degree: 87%
 
 1. 使用![“搜索”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)**[!UICONTROL “搜索”架构字段]**&#x200B;来搜索架构字段，或者通过移动到任何数据集收藏集来查找字段，例如![“文件夹”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)**[!UICONTROL “事件”数据集。]**<br/>或者，您可以使用![“数据”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**“创建”派生字段**&#x200B;创建派生字段。请参阅[派生字段](./derived-fields/derived-fields.md)，了解更多信息。
 
-1. 找到特定架构字段或定义派生字段后，将该字段（如![句柄图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL 页面名称]**）从左边栏拖动到&#x200B;**[!UICONTROL 包含的组件]**&#x200B;下的&#x200B;**[!UICONTROL 量度]**&#x200B;或&#x200B;**[!UICONTROL 维度]**&#x200B;部分。
+1. 找到特定架构字段或定义派生字段后，将该字段（如![句柄图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL 页面名称]**）从左边栏拖动到&#x200B;**[!UICONTROL 包含的组件]**&#x200B;下的&#x200B;**[!UICONTROL 量度]**&#x200B;或&#x200B;**[!UICONTROL 维度]**部分。
 可将同一架构字段拖入“维度”或“量度”部分多次，并可按不同方式配置同一维度或量度。例如，从pageName字段，您可以使用右侧不同的[组件设置](component-settings/overview.md)创建名为`Product Pages`的维度以及名为`Error pages`的维度。
 如果从左边栏拖动架构字段文件夹，则该文件夹中的字段会自动排序到相应的部分中。 字符串字段最后落在[!UICONTROL 维度]部分中，而数值架构类型最后落在[!UICONTROL 量度]部分中。您还可以单击&#x200B;**[!UICONTROL 添加所有]**，并将所有架构字段添加到其各自的部分。
 
@@ -188,39 +188,39 @@ ht-degree: 87%
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_contract"
 >title="合同标签"
->abstract="合同(C)标签用于对具有合同义务或与组织的数据治理策略相关的数据进行分类。"
+>abstract="合同 (C) 标签用于对具有合同义务或与组织的数据治理策略相关的数据进行分类。"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview" text="数据使用标签概述"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_identity"
 >title="身份标识标签"
->abstract="身份(I)标签用于对可以识别或联系特定人员的数据进行分类。"
+>abstract="身份标识 (I) 标签用于对可用于识别或联系特定人员的数据进行分类。"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview" text="数据使用标签概述"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_sensitive"
 >title="敏感标签"
->abstract="敏感标签用于对您和您的组织认为敏感的数据进行分类。"
+>abstract="敏感 (S) 标签用于对您和您的组织认为敏感的数据进行分类。"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview" text="数据使用标签概述"
 
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_partnerecosystem"
 >title="合作伙伴生态系统"
->abstract="合作伙伴生态系统(P)标签用于对与第三方合作伙伴共享的数据进行分类。"
+>abstract="合作伙伴生态系统 (P) 标签用于对与第三方合作伙伴共享的数据进行分类。"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview" text="数据使用标签概述"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_policies"
 >title="支持"
->abstract="为了让数据使用标签能够有效地支持数据合规性，必须实施数据使用策略。数据使用策略是描述允许或限制在 Experience Platform 中对数据执行的营销操作类型的规则。策略过滤器将启用的策略应用于数据视图。"
+>abstract="为了确保数据使用标签能够有效地支持数据合规性，必须实施数据使用策略。数据使用策略是描述您可以或限制在 Experience Platform 内对数据执行的营销操作类型的规则。策略过滤器将已启用的策略应用于数据视图。"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview" text="数据使用标签概述"
 
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_responsibleengagement"
->title="负责的参与标签"
->abstract="责任参与标签用于支持责任参与。"
+>title="负责任的参与标签"
+>abstract="负责任的参与标签用于支持负责任的参与。"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview" text="数据使用标签概述"
 
 
