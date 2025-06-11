@@ -29,6 +29,6 @@ ht-degree: 65%
 | 在Report Builder中&#x200B;**支持安全目标** | 新的导出目标已添加到Report Builder加载项。 支持以下云存储目标： <ul><li>AEP 数据登陆区</li><li>Amazon S3 Role ARN</li><li>Google Cloud Platform</li><li>Azure SAS</li><li>Azure RBAC</li></ul> |  | 18,2025 年 6 月 |
 | **新的预览体验** | 用于预览区段、计算量度等的预览面板现在使用水平条形图可视化图表，而不是圆环图可视化图表。 |  | 2025 年 6 月 18 日 |
 | **已修改的归因模型对话框** | 您现在可以在归因模型对话框中单独定义容器和时间段。 |  | 18,2025 年 6 月 |
-| **连接图** | 新的[连接映射接口](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection#connection-map)可用于以可视方式显示您的连接配置。 |  | 2025 年 6 月 18 日 |
+| **连接图** | 新的[连接映射接口](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/create-connection#connection-map)可用于以可视方式显示您的连接配置。 |  | 2025 年 6 月 18 日 |
 | **在 Analysis Workspace 项目中添加和查看评论** | Analysis Workspace 中新增的[评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects)可让您在 Analysis Workspace 项目的上下文中分享见解和提出问题。这可以简化有关数据的讨论，使对话保持在正在讨论的数据范围内。您可以 <ul><li>对任何您有权访问的 Analysis Workspace 项目进行评论</li><li>对可视化图表中的特定点进行评论，也可以对项目进行一般性评论</li><li>标记其他用户，将您的评论告知他们</li><li>管理现有评论（编辑、固定、解决等）</li></ul>Customer Journey Analytics 管理员可以[在组织级别禁用评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences)。项目所有者可以[在项目级别禁用评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects)。 |  | 2025 年 6 月 25 日 <p>（原计划于 2025 年 5 月 29 日发布）</p> |
 
