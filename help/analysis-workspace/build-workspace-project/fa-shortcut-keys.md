@@ -5,10 +5,10 @@ feature: Workspace Basics
 title: 如何使用 Workspace 热键
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
-source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
-workflow-type: ht
-source-wordcount: '402'
-ht-degree: 100%
+source-git-commit: 61a7e21d3e5d586c341a5b0f12490e3da1054382
+workflow-type: tm+mt
+source-wordcount: '424'
+ht-degree: 93%
 
 ---
 
@@ -67,6 +67,13 @@ Analysis Workspace 中提供了热键（键盘快捷键），以实现无缝导�
 | 新建折线图 | **[!UICONTROL *opt + 2 *]** | **[!UICONTROL *alt + 2 *]** |
 | 新建条形图 | **[!UICONTROL *opt + 3 *]** | **[!UICONTROL *alt + 3 *]** |
 | 新建组合图表 | **[!UICONTROL *opt + 4 *]** | **[!UICONTROL *alt + 4 *]** |
+
+## 移动面板操作
+
+| 操作 | Mac 快捷方式 | Windows 快捷方式 |
+| --- | --- | --- | 
+| 将面板上移 | **[!UICONTROL *cmd + opt + up *]** | **[!UICONTROL *alt + ctrl + up *]** |
+| 下移面板 | **[!UICONTROL *cmd + opt + down *]** | **[!UICONTROL *alt + ctrl + down *]** |
 
 ## 大众化操作
 
