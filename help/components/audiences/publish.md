@@ -5,7 +5,7 @@ exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
 source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2368'
 ht-degree: 100%
 

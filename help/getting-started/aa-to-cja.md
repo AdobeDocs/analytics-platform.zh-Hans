@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1077'
 ht-degree: 100%
 
@@ -83,7 +83,7 @@ Adobe Analytics 区段和计算量度与 Customer Journey Analytics 不兼容。
 
 * [将 Adobe Analytics 区段迁移到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=zh-Hans)
 
-* [将计算量度从 Adobe Analytics 移动到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=zh-Hans)
+* [将计算量度从 Adobe Analytics 移动到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html)
 
 ### 其他注意事项
 

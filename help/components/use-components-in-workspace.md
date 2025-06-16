@@ -5,7 +5,7 @@ feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
 source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '952'
 ht-degree: 100%
 
