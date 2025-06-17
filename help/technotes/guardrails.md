@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: 9c8a2ed7712ad7e4e0bcada16d3b581d52a49472
 workflow-type: tm+mt
-source-wordcount: '2012'
+source-wordcount: '2062'
 ht-degree: 12%
 
 ---
@@ -142,7 +142,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hans)。
+另请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
 
 
 ## 目标数据导出
@@ -154,7 +154,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [数据集导出护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/guardrails#dataset-exports)
+另请参阅Experience Platform [数据集导出护栏](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## 数据登陆区
@@ -238,11 +238,23 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 {style="table-layout:auto"}
 
+
+## 共享量度和共享维度
+
+| 名称 | 值 | 限制类型 | 描述 |
+|---|--:|---|---|
+| 共享库 | 1 | 系统强制护栏 | 一个连接的最大共享库数。 |
+| 共享量度 | 10,000 | 系统强制的护栏 | 每个共享库的最大共享量度数。 |
+| 共享维度 | 10,000 | 系统强制护栏 | 每个共享库的最大共享维度数。 |
+
+{style="table-layout:auto"}
+
+
 ## 延迟
 
 >[!NOTE]
 >
->以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 有关详细信息，请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hans)。
+>以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 有关详细信息，请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
 
 | 数据流 | 预期延迟 |
 |---|---|
