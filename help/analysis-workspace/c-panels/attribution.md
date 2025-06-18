@@ -4,9 +4,9 @@ description: 在 Analysis Workspace 中如何使用和解读归因面板。
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: ht
-source-wordcount: '661'
+source-git-commit: 304b8d85767d89ee60a6fb37a128194f60ca89d4
+workflow-type: tm+mt
+source-wordcount: '663'
 ht-degree: 100%
 
 ---
@@ -92,9 +92,17 @@ Customer Journey Analytics 通过让您能够执行以下操作来增强归因�
 
 {{attribution-models-details}}
 
+## 容器
+
+{{attribution-container}}
+
 ## 回顾时间范围
 
 {{attribution-lookback-window}}
+
+## 示例
+
+{{attribution-example}}
 
 >[!MORELIKETHIS]
 >

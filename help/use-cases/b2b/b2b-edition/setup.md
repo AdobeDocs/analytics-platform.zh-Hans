@@ -6,21 +6,19 @@ feature: Use Cases
 role: User
 badgePremium: label="B2B Edition"
 exl-id: f959a77b-ccfb-43f2-93bb-b330e73d59ac
-source-git-commit: 2fad11178853e08783b8f48671b504f50b6e0770
+source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '1727'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
 # B2B edition用例的设置
 
-{{draft-b2b}}
-
 本文介绍Customer Journey Analytics B2B edition的典型设置，以支持以下用例：
 
 * [优化帐户营销](optimize-account-marketing.md)
-* [增长关键客户](grow-key-accounts.md)
+* [拓展主要客户](grow-key-accounts.md)
 * [构建产品价值](build-product-value.md)
 
 

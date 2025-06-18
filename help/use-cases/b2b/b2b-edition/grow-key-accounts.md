@@ -6,16 +6,14 @@ feature: Use Cases
 role: User
 badgePremium: label="B2B Edition"
 exl-id: f5294af8-b8dc-4239-b0f7-5c20d39007ee
-source-git-commit: 2fad11178853e08783b8f48671b504f50b6e0770
+source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '277'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-# 增长关键客户
-
-{{draft-b2b}}
+# 拓展主要客户
 
 扩大并留住关键客户是B2B公司的首要任务。 确保交易进展的先决条件是在适当的时间与目标帐户中的关键利益相关者沟通。
 

@@ -3,7 +3,7 @@ description: 在计算量度管理器内，您可以设置一个工作流程，�
 title: 批准计算量度
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: c183a5013cbc5ff3765cc4926a308d0c4563a097
+source-git-commit: ef97b36a95e5f39f7436f5e21861d1ee5a0338dd
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 21%
@@ -16,7 +16,7 @@ ht-degree: 21%
 
 要批准计算指标，请执行以下操作：
 
-1. 在[计算量度管理器](cm-approving.md)中，选择要批准的一个或多个计算量度。
+1. 在[计算量度管理器](cm-manager.md)中，选择要批准的一个或多个计算量度。
 1. 从操作栏中选择![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 批准]**。 已批准的计算量度以![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)表示
 
 要取消批准计算量度，请执行以下操作：

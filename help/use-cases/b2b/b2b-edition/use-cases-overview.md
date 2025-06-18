@@ -6,16 +6,14 @@ feature: Use Cases
 role: User, Admin
 badgePremium: label="B2B Edition"
 exl-id: 7c16cc62-5032-44a2-92e4-4a1c320f17aa
-source-git-commit: 2fad11178853e08783b8f48671b504f50b6e0770
+source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '371'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
 # B2B edition用例概述
-
-{{draft-b2b}}
 
 此文档的此部分详细介绍一些特定的B2B用例，这些用例旨在提供有关更复杂的B2B购买历程的见解。 典型的B2B购买包括购买团体、不同利益相关者发起的跨渠道接触点、销售周期各个阶段的机会等等。
 
@@ -48,7 +46,7 @@ ht-degree: 1%
 
 [详细用例文章](optimize-account-marketing.md)探讨Customer Journey Analytics B2B edition如何帮助优化帐户营销。
 
-### 增长关键客户
+### 拓展主要客户
 
 识别关键客户中各个购买组的高价值接触点，以告知次优的营销和销售行动并推动收入增长。 在帐户级别计算和监控客户存留期值。
 

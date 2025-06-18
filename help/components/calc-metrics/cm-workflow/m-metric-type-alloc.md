@@ -3,10 +3,10 @@ description: 了解量度类型和归因
 title: 量度类型和归因
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 2b193e1ff612ab00335898164dc84afb08673fff
+source-git-commit: 304b8d85767d89ee60a6fb37a128194f60ca89d4
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 100%
+source-wordcount: '612'
+ht-degree: 91%
 
 ---
 
@@ -33,23 +33,23 @@ ht-degree: 100%
          * 禁用&#x200B;**[!UICONTROL 使用非默认归因模型]**&#x200B;来使用默认的列归因模型，即“上次接触”，其回顾期为 30 天。
          * 启用&#x200B;**[!UICONTROL 使用非默认的归因模型]**。在&#x200B;**[!UICONTROL 列归因模型]**&#x200B;对话框中，
 
-            * 从归因模型中选择一个&#x200B;**[!UICONTROL 模型]**。
-            * 选择一个&#x200B;**[!UICONTROL 回顾日期范围]**。如果您选择&#x200B;**[!UICONTROL 自定义时间]**，则可定义时段，单位为&#x200B;**[!UICONTROL 分钟]**&#x200B;至&#x200B;**[!UICONTROL 季度]**。请参阅[回顾时间范围](#lookback-window)，以了解更多信息
+            * 从[归因模型](#attribution-models)中选择&#x200B;**[!UICONTROL 模型]**。
+            * 从[容器](#container)选项中选择&#x200B;**[!UICONTROL 容器]**。
+            * 从[回顾窗口](#lookback-window)选项中选择&#x200B;**[!UICONTROL 回顾窗口]**。 如果选择&#x200B;**[!UICONTROL 自定义时间]**，则可以定义从&#x200B;**[!UICONTROL 分钟]**&#x200B;到&#x200B;**[!UICONTROL 季度]**&#x200B;的时间段。
 
       1. 选择&#x200B;**[!UICONTROL 应用]**&#x200B;来应用非默认归因模型。选择“取消”即可取消。
 
      如果您已定义非默认归因模型，请选择&#x200B;**[!UICONTROL 编辑]**&#x200B;来修改选择。
 
-请参阅[示例](#example)，了解如何使用归因模型和回溯时间范围。
+有关使用归因模型、容器和回顾时间范围的示例，请参阅[示例](#example)。
 
 
-## 归因 {#attribution}
+## 归因模型 {#attribution-models}
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_nondefaultattributionmodel"
 >title="使用非默认的属性模型"
 >abstract="为所选量度启用非默认归因模型。"
-
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attributionmodel"
@@ -131,64 +131,34 @@ ht-degree: 100%
 >title="算法"
 >abstract="点数是根据统计算法动态确定的。"
 
+{{attribution-models-details}}
+
+
+## 容器 {#container}
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_container"
 >title="容器"
 >abstract="选择一个容器来设置所需的归因范围。"
 
+{{attribution-container}}
 
-{{attribution-models-details}}
 
-
-<!-- markdownlint-disable MD034 -->
+## 回顾时间范围 {#lookback-winwow}
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_lookbackwindow"
 >title="回顾时间范围"
 >abstract="此设置可以确定将要对每次转化应用的数据归因窗口。"
 
-
 {{attribution-lookback-window}}
 
 
-### 归因举例   {#attribution-example}
 
-请仔细研究下面的示例：
 
-1. 9 月 15 日，某位人员通过付费搜索广告访问您的网站，然后离开。
-1. 9 月 18 日，该人员通过朋友提供的社交媒体链接再次访问您的网站。他将多个物品添加到购物车，但没有购买任何物品。
-1. 9 月 24 日，您的营销团队向他们发送一封电子邮件，其中包含购物车中某些物品的产品建议券。他应用了产品建议券，但访问了其他几个网站，查看是否有其他产品建议券可用。他通过展示广告找到另一个网站，并最终购买了价值 50 美元的物品。
+## 示例
 
-根据您的回顾窗口和归因模型，渠道会收到不同比例的点数。以下是一些示例：
-
-* 使用&#x200B;**首次接触**&#x200B;和&#x200B;**会话回顾窗口**&#x200B;时，归因功能仅会考虑第三次访问。在电子邮件与展示广告之间，电子邮件是首次接触点，因此电子邮件在 50 美元的购买中获得 100% 的点数。
-
-* 使用&#x200B;**首次接触**&#x200B;和&#x200B;**人员回顾窗口**&#x200B;时，归因功能会考虑所有三次访问。付费搜索是首次接触点，因此它在 50 美元的购买中获得 100% 的点数。
-
-* 使用&#x200B;**线性归因模型**&#x200B;和&#x200B;**会话回顾窗口**&#x200B;时，电子邮件与展示广告平分点数。这两个渠道各自获得贡献 25 美元的点数。使用&#x200B;**线性归因模型**&#x200B;和&#x200B;**人员回顾窗口**&#x200B;时，付费搜索、社交媒体、电子邮件与展示广告平分点数。每个渠道各自获得此次购买中贡献 12.50 美元的点数。
-
-* 使用 **J 形归因模型**&#x200B;和&#x200B;**人员回顾窗口**&#x200B;时，付费搜索、社交媒体、电子邮件和展示广告均可获得点数。
-
-   * 将 60% 的点数分给展示广告，其贡献价值是 30 美元。
-   * 将 20% 的点数分给付费搜索，贡献价值是 10 美元。
-   * 剩余的 20% 点数分给社交和电子邮件，二者的贡献价值均为 5 美元。
-
-* 使用&#x200B;**时间衰减归因模型**&#x200B;和&#x200B;**人员回顾窗口**&#x200B;时，付费搜索、社交媒体、电子邮件和展示广告均可获得点数。使用默认的 7 天半衰期：
-
-   * 展示广告接触点与转化之间的间隔为 0 天。`2^(-0/7) = 1`
-   * 电子邮件接触点与转化之间的间隔为 0 天。`2^(-0/7) = 1`
-   * 社交媒体接触点与转化之间的间隔为 6 天。`2^(-6/7) = 0.552`
-   * 付费搜索接触点与转化之间的间隔为 9 天。`2^(-9/7) = 0.41`
-   * 将这些值标准化处理之后得到以下结果：
-
-      * 展示广告：33.8%，贡献价值是 16.88 美元
-      * 电子邮件：33.8%，贡献价值是 16.88 美元
-      * 社交：18.6%，贡献价值是 9.32 美元
-      * 付费搜索：13.8%，贡献价值是 6.92 美元
-
-如果点数归属于多个渠道，则通常具有整数个点数的转化事件会被拆分。例如，如果使用线性归因模型计算订单归因，并且两个渠道都对该订单有贡献，则这两个渠道将分别获得该订单 50% 的点数。这些部分量度会针对所有人进行汇总，然后四舍五入到最接近的整数以供报告。
-
+{{attribution-example}}
 
 >[!MORELIKETHIS]
 >

@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
-workflow-type: ht
+source-git-commit: 15a3d7b6f2ec4f37fd861315871e06ddefa5348a
+workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -47,11 +47,11 @@ ht-degree: 100%
 
    2. 从&#x200B;**[!UICONTROL 使用量度发起新会话]**&#x200B;下的&#x200B;**[!UICONTROL 在此放置量度]**&#x200B;列表中选择量度。或者，还可将量度从左窗格拖放到&#x200B;**[!UICONTROL 放置量度字段]**&#x200B;上。所选量度定义新会话的开始。您可以定义多个量度。
 
-      可使用任何类型的量度定义新会话。举个例子，假设您希望在每次轮廓启动您的移动应用程序时定义一个新会话。在&#x200B;**[!UICONTROL 数据视图]** > **[!UICONTROL 组件]**&#x200B;中，您根据 **[!UICONTROL appInteraction]** **[!UICONTROL 名称]**&#x200B;架构字段定义一个量度类型的组件，名为&#x200B;**[!UICONTROL 启动次数]**。您进一步指定&#x200B;**[!UICONTROL 启动次数]**&#x200B;量度组件以仅在该值与 `launch` 匹配时计算该值。
+      可使用任何类型的量度定义新会话。举个例子，假设您希望在每次轮廓启动您的移动应用程序时定义一个新会话。在&#x200B;**[!UICONTROL 数据视图]** > **[!UICONTROL 组件]**&#x200B;中，您根据&#x200B;**[!UICONTROL appInteraction]** **[!UICONTROL Name]**&#x200B;架构字段定义了一个名为&#x200B;**[!UICONTROL Launch]**&#x200B;的量度类型的组件。 您可以进一步指定&#x200B;**[!UICONTROL Launch]**&#x200B;量度组件，以便仅在值与`launch`匹配时计算该值。
 
       ![应用程序交互量度组件启动次数](assets/component-launches.png)
 
-      然后拖放或选择&#x200B;**[!UICONTROL 启动次数]**&#x200B;量度作为定义新会话的量度。
+      然后拖放或选择&#x200B;**[!UICONTROL 启动]**&#x200B;量度作为量度以定义新会话。
 
       ![会话设置启动次数](assets/session-settings-launches-metric.png)
 
