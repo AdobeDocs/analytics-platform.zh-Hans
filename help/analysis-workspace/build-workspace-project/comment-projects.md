@@ -4,9 +4,9 @@ title: 在项目中添加和查看注释
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: 29db477c96ad5ca7c69a7f7055c1a7fd3c06eb04
+source-git-commit: 91ac84764a186d81f3270bb3ec9673d93b11bd38
 workflow-type: tm+mt
-source-wordcount: '1821'
+source-wordcount: '1857'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Analysis Workspace中的评论允许您在Analysis Workspace项目的上下文�
 
 ### 在注释区域查看注释
 
-在Analysis Workspace项目中所做的所有注释都将显示在右边栏的注释区域中。
+在Analysis Workspace项目中所做的所有注释都将显示在右边栏的注释区域中。 现有注释的总数将显示在注释图标上。
 
 1. 默认情况下，当您首次打开项目时，Analysis Workspace中每个项目的注释区域都会展开。
 
@@ -51,7 +51,7 @@ Analysis Workspace中的评论允许您在Analysis Workspace项目的上下文�
 
 ### 在项目中查看评论徽章
 
-在项目[&#128279;](#comment-on-a-specific-area-of-the-project)的特定区域上作出的评论具有在评论所属的项目区域上显示的&#x200B;**评论徽章** ![评论徽章](assets/comment-indicator.svg)。 选择徽章以查看评论。 选择徽章后，您可以选择注释本身以在右边栏的注释区域中突出显示注释。
+在项目](#comment-on-a-specific-area-of-the-project)的特定区域上作出[的评论具有在评论所属的项目区域上显示的&#x200B;**评论徽章** ![评论徽章](assets/comment-indicator.svg)。 选择徽章以查看评论。 选择徽章后，您可以选择注释本身以在右边栏的注释区域中突出显示注释。
 
 编号显示在项目中的每个徽章上，并且按照其创建顺序排序。 如果在项目的同一区域中有多个评论，则该徽章显示3个点![评论徽章多个](assets/comment-indicator-multiple.svg)。 选择3点徽章以显示该区域中的所有注释。
 
@@ -131,13 +131,15 @@ Analysis Workspace中的评论功能使与他人协作更加容易。
 
 ## 回复评论
 
-1. 在Analysis Workspace中打开项目后，选择Analysis Workspace右边栏中的注释区域图标![注释区域图标](/help/assets/icons/Comment.svg)。
+1. 在Analysis Workspace中，打开要添加注释的项目。
 
-1. 选择您要回复的评论旁边的&#x200B;**[!UICONTROL 回复]**。
+1. 选择Analysis Workspace右边栏中的评论区域图标![评论区域图标](/help/assets/icons/Comment.svg)，然后选择您要回复的评论旁边的&#x200B;**[!UICONTROL 回复]**。
+
+   要包含要回复的注释的文本，并将原始文本包裹在引号标记中，请选择要回复的特定注释或回复旁边的3点图标，然后选择&#x200B;**[!UICONTROL 引号回复]**。 引用回复是指示您的评论所引用的评论或回复的好方法。
 
    或
 
-   要包含要回复的注释的文本，并将原始文本包裹在引号标记中，请选择要回复的特定注释或回复旁边的3点图标，然后选择&#x200B;**[!UICONTROL 引号回复]**。 引用回复是指示您的评论所引用的评论或回复的好方法。
+   在做出评论的面板或可视化图表上选择评论图标，然后选择&#x200B;**[!UICONTROL 回复]**。
 
 1. 在&#x200B;**[!UICONTROL 新评论]**&#x200B;字段中，指定您的评论。
 
@@ -149,9 +151,9 @@ Analysis Workspace中的评论功能使与他人协作更加容易。
 
 ## 接收有关评论的通知
 
-您提及的项目所有者和[特定用户](#include-others-in-a-comment)将根据其Adobe Experience Cloud通知设置接收通知。 默认情况下，这些用户会收到应用程序内通知，该通知显示在Customer Journey Analytics中的[Experience Cloud通知](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/account-preferences#view-notifications)图标![Experience Cloud通知图标](assets/experience-cloud-notification.svg)中。
+您提及的项目所有者和[特定用户](#include-others-in-a-comment)将根据其Adobe Experience Cloud通知设置接收通知。 默认情况下，这些用户会收到应用程序内通知，该通知显示在Customer Journey Analytics中的[Experience Cloud通知](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications)图标![Experience Cloud通知图标](assets/experience-cloud-notification.svg)中。
 
-此外，用户还可以通过[订阅电子邮件通知](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications)和[订阅Experience Cloud通知](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/account-preferences#slack)，将其Slack通知设置配置为接收电子邮件通知和Slack通知。
+此外，用户还可以通过[订阅电子邮件通知](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications)和[订阅Experience Cloud通知](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack)，将其Slack通知设置配置为接收电子邮件通知和Slack通知。
 
 ## 为现有评论放置徽章
 
