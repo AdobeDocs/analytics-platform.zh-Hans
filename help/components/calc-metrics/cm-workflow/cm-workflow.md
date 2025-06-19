@@ -3,10 +3,10 @@ description: 了解如何创建计算量度。
 title: 创建计算量度
 feature: Calculated Metrics
 exl-id: 55ed36c1-99ca-400a-bc2b-661994cbf720
-source-git-commit: c183a5013cbc5ff3765cc4926a308d0c4563a097
+source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 44%
+source-wordcount: '383'
+ht-degree: 25%
 
 ---
 
@@ -29,15 +29,19 @@ ht-degree: 44%
 
 要定义新的计算量度，请使用[计算量度生成器](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)。
 
-了解创建计算量度所需执行的步骤。
+
+## 工作流
+
+在创建计算量度之前，请仔细考虑以下工作流程：
 
 | 工作流程任务 | 描述 |
 | --- | --- |
-| 规划计算量度 | 特别是对于将被正式“批准”的量度，合理的做法是概述哪些计算量度将被广泛使用，以及它们将被如何定义。 |
+| 计划计算指标 | 特别是对于将被正式“批准”的量度，合理的做法是概述哪些计算量度将被广泛使用，以及它们将被如何定义。 |
 | [生成](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)计算量度 | 生成并编辑计算量度和高级计算量度，以在 [!DNL Customer Journey Analytics] 组件中使用。 |
-| [&#128279;](cm-tagging.md)标记计算量度 | 标记计算量度以便进行组织和共享。请参阅如何规划和分配标记以进行简单和高级搜索和组织。 |
-| [&#128279;](cm-approving.md)批准计算量度 | 批准计算量度以将其作为规范。 |
-| 应用计算指标 | 您可以应用直接来自报表和量度选择器的量度（要访问量度选择器，请单击[!UICONTROL 显示量度]）。 |
-| 筛选计算量度 | 在量度选择器中，单击[!UICONTROL 高级选择]，并按标记、所有者和其他过滤器（“显示所有”、“我的”、“与我共享”、“收藏夹”和“已批准”）过滤。 |
-| 将计算量度标记为[收藏](cm-finding.md) | 将量度标记为收藏是另一种组织量度以便进行使用的方式。 |
+| [标记](cm-tagging.md)计算量度 | 标记计算量度以便进行组织和共享。请参阅如何规划和分配标记以进行简单和高级搜索和组织。 |
+| [批准](cm-approving.md)计算量度 | 批准计算量度以将其作为规范。 |
+| 使用计算量度 | 在项目中使用计算量度。 |
+| [共享](cm-sharing.md)计算量度 | 与其他个人、组或组织共享您的计算指标。 |
+| [筛选器](cm-filter.md)计算量度 | 按标记、所有者和其他过滤器（“全部显示”、“我的”、“已与我共享”、“收藏”和“已批准”）过滤计算量度。 |
+| 将计算量度标记为[收藏夹](cm-finding.md) | 将量度标记为收藏是另一种组织量度以便进行使用的方式。 |
 

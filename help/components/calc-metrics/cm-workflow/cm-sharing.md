@@ -3,7 +3,7 @@ description: 根据您的权限，您可以与整个组织、群组或个人用�
 title: 共享计算量度
 feature: Calculated Metrics
 exl-id: b2a3e4e3-f0aa-4505-b3f5-7d9f14dc1640
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 11%
@@ -15,7 +15,7 @@ ht-degree: 11%
 在[计算量度管理器](cm-manager.md)中，您可以共享计算量度。 根据您的权限，可以与整个组织、组或个人用户共享计算指标：
 
 * **管理员**：管理员可以将计算量度与整个组织、组织内的组以及单个用户共享。 有关详细信息，请参阅 [Admin Console 文档](https://helpx.adobe.com/cn/enterprise/using/manage-products.html)。
-* **非管理员**：非管理员只能共享他们已创建的计算量度，并且只能共享给个人用户。 |
+* **非管理员**：非管理员只能共享他们已创建的计算量度，并且只能共享给个人用户。
 
 要共享一个或多个计算指标，请执行以下操作：
 

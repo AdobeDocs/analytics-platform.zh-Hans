@@ -4,10 +4,10 @@ title: 快速区段
 feature: Workspace Basics, Filters, Segments
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 92%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的快速区段](https://video.tv.adobe.com/v/345335/?quality=12&learn=on&captions=chi_hans){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的快速区段](https://video.tv.adobe.com/v/341466/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -107,6 +107,6 @@ ht-degree: 92%
 与快速区段相比，普通区段具有以下优势。
 
 * 普通区段可应用于您所有的工作区项目
-* 普通区段通过嵌套和分层容器以及序列（使用序列区段）支持更复杂的用途。
+* 使用嵌套和分层[容器](seg-builder.md#containers)和序列（使用[顺序区段](seg-sequential-build.md)）的区段支持更大的复杂性。
 
 

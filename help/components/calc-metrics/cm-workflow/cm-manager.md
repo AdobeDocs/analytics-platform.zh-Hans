@@ -3,9 +3,9 @@ description: 计算量度管理器允许您共享、筛选、标记、批准、�
 title: 计算量度管理器
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '901'
 ht-degree: 29%
 
 ---
@@ -23,11 +23,11 @@ ht-degree: 29%
 计算量度管理器具有以下界面元素：
 
 
-![过滤器界面](assets/calculated-metrics-manager.png)
+![计算量度管理器界面](assets/calculated-metrics-manager.png)
 
-### 过滤器列表
+### 计算量度列表
 
-过滤器列表➊显示您拥有或已与您共享的所有计算量度。 该列表具有以下各列：
+计算量度列表➊显示您拥有或已与您共享的所有计算量度。 该列表具有以下各列：
 
 <!-- I think this table incorrectly talks about quick calculated metrics -->
 

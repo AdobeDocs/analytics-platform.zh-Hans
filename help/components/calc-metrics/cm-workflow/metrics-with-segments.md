@@ -3,9 +3,9 @@ description: 通过为单个量度分段，可在同一报表中比较各个量�
 title: 分段指标
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '485'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 1%
 
 ## 总计
 
-1. 根据总计创建两个新区段。 打开之前创建的每个区段，重命名该区段，将&#x200B;**[!UICONTROL 人员]**&#x200B;的&#x200B;**[!UICONTROL 度量类型]**&#x200B;设置为&#x200B;**[!UICONTROL 总计]**，并使用&#x200B;**[!UICONTROL 另存为]**&#x200B;以使用新名称保存该区段。 例如：
+1. 创建两个基于总计的新计算指标。 打开之前创建的每个区段，重命名该区段，将&#x200B;**[!UICONTROL 人员]**&#x200B;的&#x200B;**[!UICONTROL 度量类型]**&#x200B;设置为&#x200B;**[!UICONTROL 总计]**，并使用&#x200B;**[!UICONTROL 另存为]**&#x200B;以使用新名称保存该区段。 例如：
 
    德国![总量度](assets/calculated-metric-germany-total.png)
 
@@ -90,7 +90,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-请参阅![VideoCheckout](/help/assets/icons/VideoCheckedOut.svg) [将分段计算量度用作演示视频的无实施量度](https://video.tv.adobe.com/v/37926?quality=12&learn=on&captions=chi_hans){target="_blank"}。
+请参阅![VideoCheckout](/help/assets/icons/VideoCheckedOut.svg) [将分段计算量度用作演示视频的无实施量度](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"}。
 
 {{videoaa}}
 
