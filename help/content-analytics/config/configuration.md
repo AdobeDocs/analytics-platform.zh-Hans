@@ -5,16 +5,21 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
+source-git-commit: f149a2bd7f184f4e8f6e67979649e2d9f609d603
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '599'
+ht-degree: 85%
 
 ---
 
 # 配置内容分析
 
-Content Analytics 的配置包括以下步骤：
+本文概要介绍了如何配置Content Analytics。
+
+在配置Content Analytics之前，必须确保满足[先决条件](#prerequisites)，您确实具有所需的[访问控制](#access-control)，并且了解[限制](#limitations)。
+
+
+高级步骤
 
 ![Content Analytics 的配置](../assets/aca-configuration.svg){zoomable="yes"}
 
@@ -60,6 +65,13 @@ Content Analytics 的配置包括以下步骤：
 
 1. 启用了 Content Analytics 的数据视图包含在某个特定 Customer Journey Analytics 产品轮廓的数据视图权限中。
 1. 此特定的 Customer Journey Analytics 产品轮廓是分配给该用户或用户组的产品轮廓之一。
+
+## 限制
+
+用于Content Analytics事件数据的架构由系统拥有。 无法修改系统拥有的架构，这意味着：
+
+* 为支持地理位置、机器人检测或设备查找等功能，您不能包含字段组。
+* 无法添加特定标识符以支持[基于字段的拼接](/help/stitching/fbs.md)。
 
 >[!MORELIKETHIS]
 >

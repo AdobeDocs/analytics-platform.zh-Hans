@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
+source-git-commit: a3d974733eef42050b0ba8dcce4ebcccf649faa7
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 100%
+source-wordcount: '640'
+ht-degree: 70%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 100%
 >[!MORELIKETHIS]
 >
 >[引导式配置](guided.md)
->[数据收集标记发布概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/overview)
+>>[数据收集标记发布概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/overview)
 >
 
 
@@ -87,3 +87,45 @@ window.adobe.getContentExperienceVersion = () => {
   return "1.0";
 };
 ```
+
+## 身份标识
+
+Content Analytics通过以下方式处理身份：
+
+* ECID会自动填充到Content Analytics架构的`identityMap`部分中。
+* 如果您需要`identityMap`中的其他标识值，则需要在Web SDK扩展的`onBeforeEventSend`回调中设置这些值。
+* 不支持基于字段的拼合，因为架构由系统拥有。 因此，您无法向架构中添加其他字段以支持基于字段的拼合
+
+
+为了确保Content Analytics标识数据和Adobe Experience Platform Web SDK数据标识数据在字段级别正确拼合，您需要在事件发送](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"}回调之前对[上的Web SDK进行修改。
+
+1. 导航到包含Adobe Experience Platform Web SDK扩展和Adobe Content Analytics扩展的&#x200B;**[!UICONTROL Tags]**&#x200B;属性。
+1. 选择![插件](/help/assets/icons/Plug.svg) **[!UICONTROL 扩展]**。
+1. 选择&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]**&#x200B;扩展。
+1. 选择&#x200B;**[!UICONTROL 配置]**。
+1. 在&#x200B;**[!UICONTROL SDK实例]**&#x200B;部分中，向下滚动到&#x200B;**[!UICONTROL 数据收集]** - **[!UICONTROL 启用，然后事件发送回调]**。
+
+   ![在事件发送回调之前](/help/content-analytics/assets/onbeforeeventsendcallback.png)
+
+1. 选择&#x200B;**[!UICONTROL &lt;/>在事件发送回调代码]**&#x200B;前提供。
+1. 添加以下代码：
+
+   ```javascript
+   window.adobeContentAnalytics?.forwardEvent(content);
+   
+   content.xdm.identityMap = _satellite.getVar('identityMap');
+   if ((content.xdm.eventType === "content.contentEngagement") && (_satellite.getVar('identityMap') != null)) {
+      return true;
+   }
+   ```
+
+   ![在事件发送回调之前](/help/content-analytics/assets/onbeforeeventsendcallbackcode.png)
+
+1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存代码。
+1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存扩展。
+1. [发布](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/overview)标记属性的更新。
+
+
+
+
+

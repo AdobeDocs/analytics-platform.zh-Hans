@@ -6,10 +6,10 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B Edition"
 exl-id: 89e482b8-8082-4413-8fd3-cc1331780af4
-source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
+source-git-commit: a2aea32eb14462ee2041405394afa6bd0c484e8d
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 100%
+source-wordcount: '469'
+ht-degree: 98%
 
 ---
 
@@ -44,4 +44,6 @@ Customer Journey Analytics B2B Edition 提供有助于推动收入增长的可�
 >
 >[B2B 概念和特点](cja-b2b-concepts-features.md)
 >>[B2B 快速入门指南](cja-b2b-quick-start-guide.md)
+>>[B2B过渡指南](cja-b2b-transition.md)
+>>[B2B用例](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
 >
