@@ -43,7 +43,7 @@ Customer Journey Analytics B2B Edition 提供有助于推动收入增长的可�
 >[!MORELIKETHIS]
 >
 >[B2B 概念和特点](cja-b2b-concepts-features.md)
->>[B2B 快速入门指南](cja-b2b-quick-start-guide.md)
->>[B2B过渡指南](cja-b2b-transition.md)
->>[B2B用例](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
+>&#x200B;>[B2B 快速入门指南](cja-b2b-quick-start-guide.md)
+>&#x200B;>[B2B过渡指南](cja-b2b-transition.md)
+>&#x200B;>[B2B用例](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
 >
