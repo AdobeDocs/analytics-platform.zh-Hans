@@ -3,10 +3,10 @@ description: 计算量度生成器提供了一个画布，用于拖放维度、�
 title: 生成计算量度
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: ef97b36a95e5f39f7436f5e21861d1ee5a0338dd
+source-git-commit: ec2fc88372814b01a04d4cc824181222ee55a83d
 workflow-type: tm+mt
-source-wordcount: '1703'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,32 +18,16 @@ ht-degree: 95%
 >abstract="表示此计算量度可用于 Customer Journey Analytics，例如 Analysis Workspace、Report Builder 等。某些计算量度无法与试验相结合。"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="在实验中使用计算量度。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_externalid"
 >title="外部 ID"
 >abstract="更改外部 ID 可能会影响计算量度在外部源（例如 Business Intelligence 工具）中的显示方式"
 
-<!-- markdownlint-enable MD034 -->
-
 Customer Journey Analytics 提供了一个画布，用于拖放维度、量度、区段和函数，以根据容器层次结构逻辑、规则和运算符创建自定义量度。通过这种集成式开发工具，您可以生成并保存简单或复杂的计算量度。
-
-## 开始生成计算量度
 
 您可以使用计算量度生成器来创建或编辑计算量度。以这种方式创建时，计算量度可在组件列表中使用，然后可在整个组织的项目中使用。或者，您可以快速创建仅适用于创建它的项目的计算量度，如[量度](/help/components/apply-create-metrics.md)中[为单个项目创建计算量度](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project)所述。
 
-访问计算度量生成器开始创建可在组件列表中使用的计算度量。
-
-1. 通过以下任一方式访问计算度量生成器：
-
-   * 在 Analysis Workspace 中，打开一个项目，然后选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 创建量度]**。
-   * 在 Analysis Workspace 中，打开一个项目，然后选择左边栏中&#x200B;[!UICONTROL **量度**]&#x200B;分区旁边的&#x200B;**加号**&#x200B;图标。
-   * 在 [!DNL Customer Journey Analytics] 中，转到&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 计算量度]**，然后选择位于计算量度页面顶部的 **[!UICONTROL + 添加]**。
-
-1. 继续[计算量度生成器面积图](#areas-of-the-calculated-metrics-builder)。
+[创建计算量度](cm-workflow.md)介绍了可用于创建新计算量度的不同选项。
 
 ## 计算量度构建器的区域
 
@@ -154,7 +138,7 @@ Customer Journey Analytics 提供了一个画布，用于拖放维度、量度�
 * 要从某个维度添加区段容器：
 
    1. 将![维度](/help/assets/icons/Dimensions.svg) **[!UICONTROL 维度]**&#x200B;组件从组件面板拖放到 **[!UICONTROL 将量度、维度、维度项、区段和/或函数拖放到此处]**。您可以使用组件栏中的![搜索](/help/assets/icons/Search.svg)来搜索特定组件。
-   1. 在&#x200B;**[!UICONTROL 从Dimension创建区段]**&#x200B;弹出窗口中，定义区段的条件。 从运算符列表中选择，并选择一个值或输入一个值。例如，**[!UICONTROL 月份]**&#x200B;**[!UICONTROL 等于]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`。
+   1. 在&#x200B;**[!UICONTROL 从Dimension创建区段]**&#x200B;弹出窗口中，定义区段的条件。 从运算符列表中选择，并选择一个值或输入一个值。例如，**[!UICONTROL 月份]****[!UICONTROL 等于]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`。
    1. 选择&#x200B;**[!UICONTROL 完成]**。现在，**[!UICONTROL 定义]**&#x200B;中添加了一个区段容器。
 
 
@@ -215,5 +199,5 @@ Customer Journey Analytics 提供了一个画布，用于拖放维度、量度�
 >[!MORELIKETHIS]
 >
 >[使用函数](cm-using-functions.md)
->&#x200B;>[区段](/help/components/segments/seg-overview.md)
+>>[区段](/help/components/segments/seg-overview.md)
 >

@@ -1,13 +1,13 @@
 ---
-description: 有两种方式可使用 Analysis Workspace 中的指标。
+description: 可通过两种方式在 Analysis Workspace 中使用量度。
 title: 量度
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
+source-git-commit: ec2fc88372814b01a04d4cc824181222ee55a83d
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 9%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -49,13 +49,6 @@ Adobe 提供了多种类型的指标，可供在 Analysis Workspace 中使用：
 Customer Journey Analytics中的标准量度的完整列表：
 {{standard-metrics}}
 
-## 比较不同归因模型的指标
-
-若要快速比较量度的一个归因模型与另一个归因模型，请从量度的上下文菜单中选择&#x200B;**[!UICONTROL 比较归因模型]**。
-
-![Workspace面板高亮显示比较归因模型](assets/compare-attribution.png)
-
-此快捷键允许您比较一个归因模型与另一个归因模型，而无需将归因模型拖动到某个量度中且不必对其进行两次配置。
 
 ## 创建计算量度
 
@@ -65,9 +58,7 @@ Customer Journey Analytics中的标准量度的完整列表：
 
 ### 为所有项目创建计算指标
 
-您可以使用计算量度生成器来创建计算量度。通过这种方式创建时，计算量度在组件列表中可用，然后可在整个组织的项目中使用。
-
-有关如何访问计算量度生成器的信息，请参阅[创建计算量度](/help/components/calc-metrics/cm-workflow/cm-workflow.md)。
+您可以使用[计算量度生成器](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)来[创建计算量度](/help/components/calc-metrics/cm-workflow/cm-workflow.md)。 通过这种方式创建时，计算量度在组件列表中可用，然后可在整个组织的项目中使用。
 
 ### 为单个项目创建计算指标
 
@@ -113,6 +104,13 @@ Customer Journey Analytics中的标准量度的完整列表：
 
    * [!UICONTROL **百分比变化**]：创建一个新列，以显示两个选定列之间的百分比变化。
 
-[计算指标：无实施指标](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html?lang=zh-Hans) (3:42)
+
+## 比较不同归因模型的指标
+
+若要快速比较量度的一个归因模型与另一个归因模型，请从量度的上下文菜单中选择&#x200B;**[!UICONTROL 比较归因模型]**。
+
+![Workspace面板高亮显示比较归因模型](assets/compare-attribution.png)
+
+此快捷键允许您比较一个归因模型与另一个归因模型，而无需将归因模型拖动到某个量度中且不必对其进行两次配置。
 
 
