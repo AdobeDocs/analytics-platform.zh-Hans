@@ -6,14 +6,14 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: 6dd8a70293161ff58361953a7e48a98834b7abe0
+source-git-commit: 9505f21748b3d94b2398f898e5399d095ccec260
 workflow-type: tm+mt
-source-wordcount: '1105'
-ht-degree: 13%
+source-wordcount: '864'
+ht-degree: 15%
 
 ---
 
-# 计划工作簿
+# 通过电子邮件共享计划工作簿
 
 保存工作簿并完成分析后，可以使用计划功能与团队中的其他人共享工作簿。 利用计划功能，可创建自动刷新工作簿中数据的计划。 在特定日期和时间将Excel工作簿文件作为附件发送到指定的受众。 设置计划会自动为收件人提供定期更新。 您还可以使用计划功能将工作簿发送一次，而无需计划自动更新。
 
@@ -24,7 +24,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [计划工作簿](https://video.tv.adobe.com/v/3417502/?quality=12&learn=on&captions=chi_hans){target="_blank"}以观看演示视频。
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [计划工作簿](https://video.tv.adobe.com/v/3413079/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -102,7 +102,7 @@ ht-degree: 13%
 
 1. 选择&#x200B;**[!UICONTROL 显示计划选项]**&#x200B;以定义计划。
 
-1. 输入从&#x200B;**开始的**&#x200B;开始日期。 或者，选择![日历](/help/assets/icons/Calendar.svg)以从日历中选择开始日期。
+1. 输入从&#x200B;]**开始的**[!UICONTROL &#x200B;开始日期。 或者，选择![日历](/help/assets/icons/Calendar.svg)以从日历中选择开始日期。
 
 1. 在&#x200B;**[!UICONTROL 结束日期]**&#x200B;中输入结束日期。 或者，选择![日历](/help/assets/icons/Calendar.svg)以从日历中选择结束日期。
 
@@ -129,54 +129,7 @@ ht-degree: 13%
 
 若要取消发送工作簿，请选择&#x200B;**[!UICONTROL 取消]**。
 
+## 管理计划的工作簿
 
-## 查看和管理计划的工作簿
+有关管理已计划工作簿的信息，请参阅[管理计划的工作簿](/help/report-builder/manage-schedules-reportbuilder.md)。
 
-您可以在&#x200B;**[!UICONTROL 工作簿]**&#x200B;选项卡中查看和管理所有计划工作簿。
-
-1. 在Report Builder中心选择&#x200B;**[!UICONTROL 计划]**
-
-1. 选择&#x200B;**[!UICONTROL 工作簿]**&#x200B;选项卡。 您会看到所有计划工作簿的列表。
-
-   ![计划的工作簿](assets/scheduled-workbooks.png){zoomable="yes"}
-
-   您可以将鼠标悬停在图标上以查看已计划工作簿的状态。
-
-   使用![搜索](/help/assets/icons/Search.svg)搜索特定的计划工作簿。
-使用![ColumnSetting](/help/assets/icons/ColumnSetting.svg)定义要显示的列。
-
-1. 选择一个或多个工作簿。
-
-   ![计划选定的工作簿](assets/scheduled-workbooks-selected.png){zoomable="yes"}
-
-   可以使用以下选项：
-
-   | 选项 | 描述 |
-   |---|---|
-   | ![编辑](/help/assets/icons/Edit.svg) | 编辑所选工作簿的计划。 |
-   | ![历史记录](/help/assets/icons/History.svg) | 显示所选工作簿的历史记录。 |
-   | ![暂停](/help/assets/icons/Pause.svg) | 暂停所选工作簿的计划。 |
-   | ![播放](/help/assets/icons/Play.svg) | 恢复所选工作簿的计划。 |
-   | ![下载](/help/assets/icons/Download.svg) | 将所选工作簿下载到新工作簿中。 |
-   | ![删除](/help/assets/icons/Delete.svg) | 删除所选工作簿的计划。 |
-
-
-## 计划工作簿的历史记录和状态
-
-您可以在&#x200B;**[!UICONTROL 历史记录]**&#x200B;选项卡中查看计划工作簿的历史记录和状态。
-
-1. 在Report Builder中心中选择&#x200B;**[!UICONTROL 计划]**。
-
-1. 选择&#x200B;**[!UICONTROL 历史记录]**&#x200B;选项卡。 您会看到所有计划工作簿的列表。
-
-   ![计划的历史记录](assets/scheduled-workbooks-history.png){zoomable="yes"}
-
-   使用![搜索](/help/assets/icons/Search.svg)搜索列表中的特定工作簿。
-使用![ColumnSetting](/help/assets/icons/ColumnSetting.svg)定义要显示的列。
-
-   使用&#x200B;**[!UICONTROL 历史记录]**&#x200B;选项卡可复查每个计划任务的状态。 单独的行记录每个计划任务的状态更改。
-
-   * ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg)表示工作簿已成功发送。
-   * ![AlertRed](/help/assets/icons/AlertRed.svg)表示出现错误。
-
-或者，您也可以在&#x200B;**[!UICONTROL 工作簿]**&#x200B;选项卡中为一个或多个选定的工作簿选择![历史记录](/help/assets/icons/History.svg)。 此操作显示&#x200B;**[!UICONTROL History]**&#x200B;选项卡，该选项卡具有按您的选择过滤的列表。 选择![CrossSize75](/help/assets/icons/CrossSize75.svg)以删除筛选器。

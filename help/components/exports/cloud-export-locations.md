@@ -1,20 +1,20 @@
 ---
-description: 配置云导出位置以发送Customer Journey Analytics数据
+description: 配置可将Customer Journey Analytics数据发送到的云导出位置
 keywords: Analysis Workspace
 title: 配置云导出位置
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: ec8f6c3c8cc1c0b12821e3b61fbef9f5fe875258
+source-git-commit: 882e280da3f65e297abccd475d381832fd236843
 workflow-type: tm+mt
-source-wordcount: '1888'
+source-wordcount: '1915'
 ht-degree: 20%
 
 ---
 
 # 配置云导出位置
 
-在按照[将Customer Journey Analytics报表导出到Customer Journey Analytics](/help/analysis-workspace/export/export-cloud.md)中所述将Cloud报表导出到云目标之前，您需要添加并配置希望发送数据的位置。
+在您可以将Customer Journey Analytics报表导出到Cloud目标(从Analysis Workspace(如[将Customer Journey Analytics报表导出到Cloud](/help/analysis-workspace/export/export-cloud.md)中所述)或从Report Builder(如[从Report Builder导出报表](/help/report-builder/report-builder-export.md)中所述)，如[将Customer Journey Analytics报表导出到Cloud](/help/analysis-workspace/export/export-cloud.md)中所述)之前，您需要添加并配置希望发送数据的位置。
 
 此过程包括按照[配置云导出帐户](/help/components/exports/cloud-export-accounts.md)中的说明添加和配置帐户(如Amazon S3、Google Cloud Platform等)，然后按照本文中的说明添加和配置该帐户内的位置（如帐户内的文件夹）。
 
@@ -62,7 +62,7 @@ ht-degree: 20%
 
 >[!IMPORTANT]
 >
->将Customer Journey Analytics报表导出到Adobe Experience Platform数据登陆区时，请确保在7天内下载数据，然后从AEP数据登陆区中删除该数据。 7天后，数据将自动从AEP数据登陆区中删除。
+>将Customer Journey Analytics报表导出到Adobe Experience Platform数据登陆区时，请确保在7天内下载数据，然后从AEP数据登陆区中删除该数据。 7天后，数据将自动从AEP数据登录区中删除。
 
 1. 通过下列任一方式开始创建云导出位置：
 
@@ -88,11 +88,11 @@ ht-degree: 20%
 
    1. 打开[Microsoft Azure存储资源管理器](https://azure.microsoft.com/en-us/products/storage/storage-explorer/)。
 
-   1. 转到&#x200B;[!UICONTROL **存储帐户**] > [!UICONTROL **（附加的容器）**] > [!UICONTROL **Blob容器**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name &#x200B;***。
+   1. 转到&#x200B;[!UICONTROL **存储帐户**] > [!UICONTROL **（附加的容器）**] > [!UICONTROL **Blob容器**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name ***。
 
       >[!NOTE]
       >
-      >文件夹名称&#x200B;**[!UICONTROL cjaexport-_number_]**&#x200B;是Azure存储资源管理器提供的默认名称。 如果您只有与SAS URI关联的单个连接（正常），则此文件夹的名称将为&#x200B;**[!UICONTROL cjaexport-1]**。
+      >文件夹名称&#x200B;**[!UICONTROL cjaexport-_number_]**是Azure存储资源管理器提供的默认名称。 如果您只有与SAS URI关联的单个连接（正常），则此文件夹的名称将为&#x200B;**[!UICONTROL cjaexport-1]**。
 
 
       ![访问Azure存储资源管理器](assets/azure-storage-explorer-access.png)中的文件
@@ -113,7 +113,7 @@ ht-degree: 20%
 
    | 字段 | 功能 |
    |---------|----------|
-   | [!UICONTROL **存储桶**] | Amazon S3帐户中要将Customer Journey Analytics数据发送到的存储段。 <p>确保Adobe提供的用户ARN具有`S3:PutObject`权限，以便将文件上载到此存储段。 </p><p>桶名称必须符合特定的命名规则。例如，它们的长度必须在 3 到 63 个字符之间，只能由小写字母、数字、点 (.) 和连字符 (-) 组成，并且必须以字母或数字开头和结尾。[若要了解完整的命名规则列表，请参阅 AWS 文档](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html)。 </p> |
+   | [!UICONTROL **存储桶**] | Amazon S3帐户中要将Customer Journey Analytics数据发送到的存储段。 <p>确保Adobe提供的用户ARN具有`S3:PutObject`权限，以便将文件上传到此存储桶。 </p><p>桶名称必须符合特定的命名规则。例如，它们的长度必须在 3 到 63 个字符之间，只能由小写字母、数字、点 (.) 和连字符 (-) 组成，并且必须以字母或数字开头和结尾。[若要了解完整的命名规则列表，请参阅 AWS 文档](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html)。 </p> |
    | [!UICONTROL **前缀**] | 存储段中要用于放置数据的文件夹。指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，folder_name/ |
 
    {style="table-layout:auto"}
@@ -198,10 +198,10 @@ ht-degree: 20%
 
    | 字段 | 功能 |
    |---------|----------|
-   | [!UICONTROL **数据库**] | 指定的数据库应为现有数据库。 您创建的角色需要拥有访问此数据库的权限。<p>这是与阶段名称关联的数据库。</p><p>可以使用以下命令向Snowflake中的数据库授予此角色权限： `GRANT USAGE ON DATABASE <your_database> TO ROLE <your_role>;`</p> <p>有关详细信息，请参阅Snowflake文档[&#128279;](https://docs.snowflake.com/en/sql-reference/commands-database)中的数据库、架构和共享命令页。</p> |
-   | [!UICONTROL **架构**] | 指定的架构应为现有架构。 您创建的角色需要拥有访问此方案的权限。<p>这是与阶段名称关联的架构。<p>您可以使用以下命令将您创建的权限授予Snowflake中的架构：`GRANT USAGE ON SCHEMA <your_database>.<your_schema> TO ROLE <your_role>;`</p><p>有关详细信息，请参阅Snowflake文档[&#128279;](https://docs.snowflake.com/en/sql-reference/commands-database)中的数据库、架构和共享命令页。</p> |
-   | [!UICONTROL **阶段名称**] | 以Snowflake存储数据文件的内部阶段的名称。<p>请确保您在帐户中指定的角色对此阶段名称具有读写访问权限。 (由于您授予了读取和写入权限，因此我们建议使用仅由Adobe使用的阶段。)<p>您可以使用以下命令授予Snowflake中暂存名称的读取和写入权限： `GRANT READ, WRITE ON STAGE <your_database>.<your_schema>.<your_stage_name> TO ROLE <your_role>;`</p> <p>有关向角色授予权限的信息，请参阅Snowflake文档[&#128279;](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege)中的授予权限。 <p>有关暂存名称的详细信息，请参阅Snowflake文档中的[为本地文件选择内部暂存页](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage)。</p> |
-   | [!UICONTROL **阶段路径**] | 数据文件存储在Snowflake中的位置的路径。 <p>有关详细信息，请参阅Snowflake文档[&#128279;](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage)中的为本地文件选择内部暂存。</p> |
+   | [!UICONTROL **数据库**] | 指定的数据库应为现有数据库。 您创建的角色需要拥有访问此数据库的权限。<p>这是与阶段名称关联的数据库。</p><p>可以使用以下命令将此角色权限授予Snowflake中的数据库： `GRANT USAGE ON DATABASE <your_database> TO ROLE <your_role>;`</p> <p>有关详细信息，请参阅Snowflake文档中的[数据库、架构和共享命令页](https://docs.snowflake.com/en/sql-reference/commands-database)。</p> |
+   | [!UICONTROL **架构**] | 指定的架构应为现有架构。 您创建的角色需要拥有访问此方案的权限。<p>这是与阶段名称关联的架构。<p>您可以使用以下命令将您创建的权限授予Snowflake中的架构：`GRANT USAGE ON SCHEMA <your_database>.<your_schema> TO ROLE <your_role>;`</p><p>有关详细信息，请参阅Snowflake文档中的[数据库、架构和共享命令页](https://docs.snowflake.com/en/sql-reference/commands-database)。</p> |
+   | [!UICONTROL **阶段名称**] | 数据文件存储在Snowflake中的内部阶段的名称。<p>请确保您在帐户中指定的角色对此阶段名称具有读写访问权限。 (由于您授予了读取和写入权限，因此我们建议您使用仅由Adobe使用的阶段。)<p>您可以使用以下命令授予Snowflake中阶段名称的读写访问权限： `GRANT READ, WRITE ON STAGE <your_database>.<your_schema>.<your_stage_name> TO ROLE <your_role>;`</p> <p>有关向角色授予权限的信息，请参阅Snowflake文档中的[授予权限](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege)。 <p>有关暂存名称的详细信息，请参阅Snowflake文档中的[为本地文件选择内部暂存页](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage)。</p> |
+   | [!UICONTROL **阶段路径**] | 数据文件在Snowflake中存储位置的路径。 <p>有关详细信息，请参阅Snowflake文档中的[为本地文件选择内部暂存](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage)。</p> |
 
    {style="table-layout:auto"}
 

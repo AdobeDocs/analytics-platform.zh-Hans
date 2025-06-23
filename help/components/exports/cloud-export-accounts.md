@@ -1,20 +1,20 @@
 ---
-description: 配置可发送Customer Journey Analytics数据的云导出帐户
+description: 配置可将Customer Journey Analytics数据发送到的云导出帐户
 keywords: Analysis Workspace
 title: 配置云导出帐户
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: cb4c2721867585fd11c0929f0947436872272da6
+source-git-commit: 882e280da3f65e297abccd475d381832fd236843
 workflow-type: tm+mt
-source-wordcount: '2230'
-ht-degree: 26%
+source-wordcount: '2246'
+ht-degree: 28%
 
 ---
 
 # 配置云导出帐户
 
-在按照[将Customer Journey Analytics报表导出到Customer Journey Analytics](/help/analysis-workspace/export/export-cloud.md)中所述将Cloud报表导出到云目标之前，您需要添加并配置要将数据发送到的目标。
+在将Customer Journey Analytics报表导出到Cloud目标之前(从Analysis Workspace(如[将Customer Journey Analytics报表导出到Cloud](/help/analysis-workspace/export/export-cloud.md)中所述)或从Report Builder(如[从Report Builder导出报表](/help/report-builder/report-builder-export.md)中所述)，您需要添加并配置要将数据发送到的目标。
 
 此过程包括按照本文所述添加和配置帐户(如Amazon S3、Google Cloud Platform等)，然后按照[配置云导出位置](/help/components/exports/cloud-export-locations.md)中所述，添加和配置该帐户内的位置（如帐户内的文件夹）。
 
@@ -46,7 +46,7 @@ ht-degree: 26%
 
    * 任何人都可以为共享帐户创建位置。
 
-1. 在&#x200B;[!UICONTROL **帐户类型**]&#x200B;字段中，选择要导出到的云帐户类型。 可用的帐户类型包括Amazon S3 Role ARN、Google Cloud Platform、Azure SAS、Azure RBAC、Snowflake和AEP Data Landing Zone。
+1. 在&#x200B;[!UICONTROL **帐户类型**]&#x200B;字段中，选择要导出到的云帐户类型。 可用的帐户类型包括 Amazon S3 Role ARN、Google Cloud Platform、Azure SAS、Azure RBAC、Snowflake 和 AEP Data Landing Zone。
 
 1. 继续下面的部分，该部分与您选择的&#x200B;[!UICONTROL **帐户类型**]&#x200B;相对应。
 
@@ -68,8 +68,8 @@ ht-degree: 26%
 >
 >在为导出帐户使用AEP数据登陆区时，请考虑以下事项：
 >
-> * 将Customer Journey Analytics报表导出到Adobe Experience Platform数据登陆区时，请确保在7天内下载数据，然后从AEP数据登陆区中删除该数据。 7天后，数据将自动从AEP数据登陆区中删除。
-> * AEP数据登录区域使用Azure或AWS Storage。 如果您的组织使用配置为使用Azure的登录公司，则AEP数据登录区域使用Azure。 如果登录公司配置为使用AWS，则AEP Data Landing Zone将使用AWS。
+> * 将Customer Journey Analytics报表导出到Adobe Experience Platform数据登陆区时，请确保在7天内下载数据，然后从AEP数据登陆区中删除该数据。 7天后，数据将自动从AEP数据登录区中删除。
+> * AEP数据登录区域使用Azure或AWS Storage。 如果您的组织使用配置为使用Azure的登录公司，则AEP数据登录区域将使用Azure。 如果登录公司配置为使用AWS，则AEP数据登录区域将使用AWS。
 >
 
 1. 通过以下任一方式开始创建云导出帐户：
@@ -78,9 +78,9 @@ ht-degree: 26%
 
    * 当[从Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)导出完整表时
 
-1. 在&#x200B;**[!UICONTROL 帐户类型]**&#x200B;字段中选择&#x200B;**[!UICONTROL AEP数据登录区]**&#x200B;后，选择&#x200B;[!UICONTROL **保存**]。
+1. 在&#x200B;**[!UICONTROL 帐户类型]**&#x200B;字段中选择&#x200B;**[!UICONTROL AEP Data Landing Zone]**&#x200B;后，选择&#x200B;[!UICONTROL **保存**]。
 
-   根据您的AEP数据登录区配置为使用Azure还是AWS Storage，系统将显示以下任一对话框：
+   根据您的AEP数据登录区域配置为使用Azure还是AWS Storage，将显示以下任一对话框：
 
    * **Azure存储：**
 
@@ -92,7 +92,7 @@ ht-degree: 26%
 
      >[!AVAILABILITY]
      >
-     >本节适用于在Amazon Web Services (AWS)上运行的Experience Platform的实施。 在AWS上运行的Experience Platform当前仅对有限数量的客户可用。 要了解有关支持的Experience Platform基础架构的更多信息，请参阅[Experience Platform多云概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/multi-cloud)。
+     >本节适用于在 Amazon Web Services (AWS) 上运行的 Experience Platform 的实施。目前，在 AWS 上运行的 Experience Platform 仅向有限数量的客户开放。要了解有关受支持的 Experience Platform 基础架构的更多信息，请参阅 [Experience Platform 多云概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/multi-cloud)。
 
      显示&#x200B;[!UICONTROL **创建的帐户**]&#x200B;对话框。
 
@@ -108,13 +108,13 @@ ht-degree: 26%
 
       >[!NOTE]
       >
-      >使用基于Azure的AEP数据登陆区帐户时，访问导出到AEP数据登陆区的报告的最简单方法是使用Azure存储资源管理器。 以下步骤使用此方法。
+      >使用基于Azure的AEP数据登陆区帐户时，访问导出到AEP数据登陆区的报告的最简单方法是使用Azure Storage Explorer。 以下步骤使用此方法。
 
       1. 如果没有，请下载[Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/)。
 
-      1. 在Adobe Experience Platform文档中，按照[将数据登陆区域容器连接到Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=zh-Hans#connect-your-data-landing-zone-container-to-azure-storage-explorer)中描述的步骤操作。
+      1. 在Adobe Experience Platform文档中，按照[将数据登陆区域容器连接到Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#connect-your-data-landing-zone-container-to-azure-storage-explorer)中描述的步骤操作。
 
-         您可以跳过[检索数据登陆区域的凭据](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=zh-Hans#retrieve-dlz-credentials)和[更新数据登陆区域凭据](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=zh-Hans#update-dlz-credentials)部分中描述的任务，因为您复制的URI包含这些凭据。
+         您可以跳过[检索数据登陆区域的凭据](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#retrieve-dlz-credentials)和[更新数据登陆区域凭据](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#update-dlz-credentials)部分中描述的任务，因为您复制的URI包含这些凭据。
 
       1. 在遵循Adobe Experience Platform文档并进入&#x200B;[!UICONTROL **Blob容器SAS URL**]&#x200B;字段时，粘贴您在步骤3中复制的SAS URI。
 
@@ -132,7 +132,7 @@ ht-degree: 26%
 
 1. （视情况而定）如果您使用的是AWS存储：
 
-   1. 将以下字段的内容复制到剪贴板(您将使用此信息访问从Analysis Workspace从AEP数据登录区域导出的数据)：
+   1. 将以下字段的内容复制到剪贴板(您将使用此信息访问从AEP数据登录区域的Analysis Workspace中导出的数据)：
 
       * [!UICONTROL **访问密钥ID**]
 
@@ -280,9 +280,9 @@ ht-degree: 26%
 
    | 字段 | 功能 |
    |---------|----------|
-   | [!UICONTROL **帐户标识符**] | 唯一地标识贵公司内的Snowflake帐户，以及遍布全球由Snowflake支持的云平台和云区域组成的网络。 <p>您需要从Snowflake帐户中获取帐户标识符，然后在此处粘贴信息。</p><p>若要了解从何处获取此信息，请参阅Snowflake文档[&#128279;](https://docs.snowflake.com/en/user-guide/admin-account-identifier)中的帐户标识符页面。</p> |
-   | [!UICONTROL **用户**] | 用于连接的用户的登录名。 我们建议创建一个将专门用于Adobe的新用户。 在此处指定名称，然后以Snowflake创建具有相同名称的用户。 您可以使用`CREATE USER`命令在Snowflake中创建用户。  <p>有关详细信息，请参阅[用户、角色和权限命令](https://docs.snowflake.com/en/sql-reference/commands-user-role)。</p> |
-   | [!UICONTROL **角色**] | 将分配给用户的角色。 我们建议创建一个将专门用于Adobe的新角色。 在此处指定角色，然后在Snowflake中创建具有相同名称的角色，并将角色授予用户。 您可以使用`CREATE ROLE`命令在Snowflake中创建角色。 <p>有关详细信息，请参阅[用户、角色和权限命令](https://docs.snowflake.com/en/sql-reference/commands-user-role)。</p> |
+   | [!UICONTROL **帐户标识符**] | 唯一标识贵组织内的Snowflake帐户，以及在Snowflake支持的云平台和云区域的全球网络中唯一标识该帐户。 <p>您需要从Snowflake帐户中获取帐户标识符，然后在此处粘贴信息。</p><p>要了解从何处获取此信息，请参阅Snowflake文档中的[帐户标识符页面](https://docs.snowflake.com/en/user-guide/admin-account-identifier)。</p> |
+   | [!UICONTROL **用户**] | 用于连接的用户的登录名。 我们建议创建一个将专门用于Adobe的新用户。 在此处指定名称，然后在Snowflake中创建具有相同名称的用户。 您可以使用`CREATE USER`命令在Snowflake中创建用户。  <p>有关详细信息，请参阅[用户、角色和权限命令](https://docs.snowflake.com/en/sql-reference/commands-user-role)。</p> |
+   | [!UICONTROL **角色**] | 将分配给用户的角色。 我们建议创建一个将专门用于Adobe的新角色。 在此处指定角色，然后在Snowflake中创建具有相同名称的角色，并将该角色授予用户。 您可以使用`CREATE ROLE`命令在Snowflake中创建角色。 <p>有关详细信息，请参阅[用户、角色和权限命令](https://docs.snowflake.com/en/sql-reference/commands-user-role)。</p> |
 
    {style="table-layout:auto"}
 
@@ -294,7 +294,7 @@ ht-degree: 26%
 
 1. 将&#x200B;[!UICONTROL **公钥**]&#x200B;字段的内容复制到剪贴板。 公钥由Adobe提供。
 
-   在Snowflake中使用公钥连接到Snowflake帐户。 您必须将您创建的用户与此公钥相关联。
+   使用Snowflake中的公钥连接到Snowflake帐户。 您必须将您创建的用户与此公钥相关联。
 
    例如，在Snowflake中，指定以下命令：
 
@@ -302,7 +302,7 @@ ht-degree: 26%
    CREATE USER <your_adobe_user> RSA_PUBLIC_KEY = '<your_public_key>';
    ```
 
-   有关详细信息，请参阅Snowflake文档[&#128279;](https://docs.snowflake.com/en/user-guide/key-pair-auth)中的密钥对身份验证和密钥对轮换页面。
+   有关详细信息，请参阅Snowflake文档中的[密钥对身份验证和密钥对轮换页面](https://docs.snowflake.com/en/user-guide/key-pair-auth)。
 
 1. 选择&#x200B;[!UICONTROL **确定**]。
 
