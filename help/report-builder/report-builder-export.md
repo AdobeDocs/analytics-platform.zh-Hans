@@ -5,10 +5,10 @@ role: User, Admin
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: 9505f21748b3d94b2398f898e5399d095ccec260
+source-git-commit: e653cbe7c1955d04830b9ed9ff6399973036ab64
 workflow-type: tm+mt
-source-wordcount: '1378'
-ht-degree: 39%
+source-wordcount: '1304'
+ht-degree: 38%
 
 ---
 
@@ -119,12 +119,6 @@ ht-degree: 39%
 * **数据块：**&#x200B;所有数据块必须至少包含一个列、行或值的组件。
 
 * **环境：**&#x200B;确保 Customer Journey Analytics 使用的 [IP 地址](/help/technotes/ip-addresses.md)和[域](/help/technotes/domains.md)可以通过其组织的防火墙。
-
-* **权限：**&#x200B;在 Adobe Admin Console 中，必须为用户分配一个具有&#x200B;[!UICONTROL **完整表格导出**]&#x200B;权限的产品轮廓，才能导出完整表格。有关在 Admin Console 中为产品轮廓分配权限的信息，请参阅 [Admin Console 中的 Customer Journey Analytics 权限](/help/technotes/access-control.md)。
-
-  >[!NOTE]
-  >
-  >  分配了[产品管理员角色](/help/technotes/access-control.md#product-admin-role)的用户始终有权从Report Builder导出报告。 **(这是否适用于Report Builder???)**
 
 
 
