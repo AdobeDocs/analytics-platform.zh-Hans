@@ -26,7 +26,7 @@ ht-degree: 76%
 | **在Report Builder中支持安全云目标** | 您现在可以将报表从Report Builder导出到以下云存储目标：<ul><li>Amazon S3 Role ARN</li><li>Google Cloud Platform</li><li>Azure SAS</li><li>Azure RBAC</li></ul><p>以前，您可以通过电子邮件将工作簿与其他用户共享，但无法将报表从Report Builder导出到云目标。</p><p>有关详细信息，请参阅[通过导出到云目标来计划工作簿](/help/report-builder/report-builder-export.md)。</p> |  | 2025年6月19日（原为2025年6月18日） |
 | **新预览体验** | 预览面板用于预览区段、计算量度等，现在使用水平条形图可视化图表而不是圆环图可视化图表。 |  | 2025 年 6 月 18 日 |
 | **修改了归因模型对话框** | 您现在可以在归因模型对话框中分别定义容器和时段。 |  | 2025 年 6 月 18 日 |
-| **连接图** | 新的[连接映射接口](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection#connection-map)可用于以可视方式显示您的连接配置。 |  | 2025 年 6 月 18 日 |
+| **连接图** | 新的[连接映射接口](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/create-connection#connection-map)可用于以可视方式显示您的连接配置。 |  | 2025 年 6 月 18 日 |
 | **在 Analysis Workspace 项目中添加和查看评论** | Analysis Workspace 中新增的[评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects)可让您在 Analysis Workspace 项目的上下文中分享见解和提出问题。这可以简化有关数据的讨论，使对话保持在正在讨论的数据范围内。您可以 <ul><li>对任何您有权访问的 Analysis Workspace 项目进行评论</li><li>对可视化图表中的特定点进行评论，也可以对项目进行一般性评论</li><li>标记其他用户，将您的评论告知他们</li><li>管理现有评论（编辑、固定、解决等）</li></ul>Customer Journey Analytics 管理员可以[在组织级别禁用评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences)。项目所有者可以[在项目级别禁用评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects)。 | 2025 年 6 月 25 日 | 2025年7月11日 <p>（原计划于 2025 年 5 月 29 日发布）</p> |
 | **支持 Chrome 预渲染** | 控制 Chrome 预渲染页面时数据收集库的行为方式。（文档链接见下文） |  | 2025 年 6 月 30 日 |
 
