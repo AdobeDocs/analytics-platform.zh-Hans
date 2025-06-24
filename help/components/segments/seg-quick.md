@@ -4,10 +4,10 @@ title: 快速区段
 feature: Workspace Basics, Filters, Segments
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
+source-git-commit: 21935a0e9e976cd680fb036bb47f4248aaa66890
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 91%
+source-wordcount: '1187'
+ht-degree: 85%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 91%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的快速区段](https://video.tv.adobe.com/v/345335/?quality=12&learn=on&captions=chi_hans){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的快速区段](https://video.tv.adobe.com/v/341466/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -43,9 +43,9 @@ ht-degree: 91%
 使用拖放操作创建快速区段时，请注意：
 
 * 并非所有组件类型都受支持。不支持计算量度，仅支持可以构建区段的维度和量度。
-* 对于维度和量度组件，[快速区段生成器](#quick-segment-builder)会自动创建一个 `exists` 条件。例如，如果您拖放 `City`，则会创建条件 `City exists`。
-* 对于维度值，[快速区段生成器](#quick-segment-builder)会自动创建一个 `equals` 条件。例如，如果从 `City` 维度拖放 `amsterdam`，则会创建条件 `City equals amsterdam`。
-* 如果您拖放 `unspecified` 或者 `none`，[快速区段生成器](#quick-segment-builder)就会自动创建一个 `does not exist` 条件。
+* 对于维度和量度组件，[快速区段生成器](#quick-segment-builder)会自动创建一个 `exists` 条件。例如，如果拖放&#x200B;**[!UICONTROL City]**，则会创建条件&#x200B;**[!UICONTROL City]** **[!UICONTROL exists]**。
+* 对于维度值，[快速区段生成器](#quick-segment-builder)会自动创建&#x200B;**[!UICONTROL 等于]**&#x200B;条件。 例如，如果从&#x200B;**[!UICONTROL 城市]**&#x200B;维度列表中拖放&#x200B;**[!UICONTROL 阿姆斯特丹]**，则会创建条件&#x200B;**[!UICONTROL 城市]** **[!UICONTROL 等于]** `Amsterdam`。
+* 如果拖放&#x200B;**[!UICONTROL 未指定]**&#x200B;或&#x200B;**[!UICONTROL 无]**，[快速区段生成器](#quick-segment-builder)将自动创建&#x200B;**[!UICONTROL 不存在]**&#x200B;条件。
 
 您创建的快速区段出现在面板顶部。快速区段有一个淡蓝色的细长左侧边栏。如果使用[快速区段生成器](#quick-segment-builder)时快速区段处于编辑模式，该快速区段的背景为浅蓝色。
 
@@ -61,7 +61,7 @@ ht-degree: 91%
 
 ## 快速区段生成器
 
-请参阅下面的快速区段生成器的示例。在这个例子中，生成器打开生成一个名为 `Call Reason = Order Change AND Online Orders is greater than or equal 1` 的快速区段。顶部的两个快速区段都适用于[!UICONTROL 平均订单价值仪表板]面板及其中的所有可视化图表，例如[!UICONTROL 每个国家/地区的平均订单价值]自由格式表。
+请参阅下面的快速区段生成器的示例。在这个例子中，生成器打开生成一个名为 `Call Reason = Order Change AND Online Orders is greater than or equal 1` 的快速区段。顶部的两个快速区段都适用于&#x200B;**[!UICONTROL 平均订单价值仪表板]**&#x200B;面板及其中的所有可视化图表，例如[!UICONTROL 每个国家/地区的平均订单价值]自由格式表。
 
 ![快速区段生成器](assets/quick-filter-builder.png)
 
@@ -74,7 +74,7 @@ ht-degree: 91%
 | 元素 | 描述 |
 |---|---|
 | **[!UICONTROL 名称]** | 该名称是从快速区段的定义自动得出的。 |
-| **[!UICONTROL 人员]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![警报](/help/assets/icons/Alert.svg) | 预览快速分段后得到的数据可视化效果。通过条形图和百分比可以了解总体数据中有多少是快速区段结果的一部分。红色![警报](/help/assets/icons/Alert.svg)表示快速区段没有返回数据。 |
+| **[!UICONTROL 人员]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![警报](/help/assets/icons/Alert.svg) | 预览快速分段后得到的数据可视化效果。通过条形图和百分比可以了解总体数据中有多少是快速区段结果的一部分。![警报](/help/assets/icons/AlertRed.svg)表示快速区段未返回数据。 |
 | **[!UICONTROL 包括]**<br/>**[!UICONTROL 排除]** | 从下拉列表![ChevronDown](/help/assets/icons/ChevronDown.svg)中选择是否要从面板中的数据包括或排除快速区段的结果。 |
 | **[!UICONTROL 事件]**<br/>**[!UICONTROL 会话]**<br/>**[!UICONTROL 人员]** | 从下拉菜单![ChevronDown](/help/assets/icons/ChevronDown.svg)中选择快速区段的范围。 |
 

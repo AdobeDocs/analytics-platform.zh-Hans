@@ -6,10 +6,10 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 60035b8fc65627bf5ead2a50959ce9cc5fe48604
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 60%
+source-wordcount: '550'
+ht-degree: 59%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 60%
 
    ![显示从所选内容创建警报的步骤结果。](assets/breakdown.png)
 
-1. 从子菜单中选择&#x200B;**[!UICONTROL 维度]**、**[!UICONTROL 量度]**、**[!UICONTROL 区段]**&#x200B;或&#x200B;**[!UICONTROL 日期范围]**，然后选择一个项目。
+1. 从子菜单中选择&#x200B;**[!UICONTROL 维度]**、**[!UICONTROL 量度]**、**[!UICONTROL 区段]**&#x200B;或&#x200B;**[!UICONTROL 日期范围]**，然后选择一个项目。 或只是在&#x200B;**[!UICONTROL *搜索&#x200B;*]**字段中搜索组件。
 
 您可以按维度项目或受众区段，在选定的时间期限内划分量度。此外，您还可以进一步深入到更精细的粒度级别。
 
@@ -53,7 +53,7 @@ ht-degree: 60%
 
 >[!BEGINSHADEBOX]
 
-有关演示视频，请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace中的Dimension](https://video.tv.adobe.com/v/41374?quality=12&learn=on&captions=chi_hans){target="_blank"}。
+有关演示视频，请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Analysis Workspace中的Dimension](https://video.tv.adobe.com/v/23971?quality=12&learn=on){target="_blank"}。
 
 {{videoaa}}
 
@@ -62,7 +62,7 @@ ht-degree: 60%
 
 >[!BEGINSHADEBOX]
 
-有关演示视频，请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension划分](https://video.tv.adobe.com/v/327339?quality=12&learn=on&captions=chi_hans){target="_blank"}。
+有关演示视频，请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension划分](https://video.tv.adobe.com/v/23969?quality=12&learn=on){target="_blank"}。
 
 {{videoaa}}
 
@@ -71,7 +71,7 @@ ht-degree: 60%
 
 >[!BEGINSHADEBOX]
 
-请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [添加维度和量度](https://video.tv.adobe.com/v/33233?quality=12&learn=on&captions=chi_hans){target="_blank"}以查看演示视频。
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [添加维度和量度](https://video.tv.adobe.com/v/30606?quality=12&learn=on){target="_blank"}以查看演示视频。
 
 {{videoaa}}
 
@@ -80,7 +80,7 @@ ht-degree: 60%
 
 >[!BEGINSHADEBOX]
 
-请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在自由格式表中使用维度](https://video.tv.adobe.com/v/328526?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取演示视频。
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在自由格式表中使用维度](https://video.tv.adobe.com/v/40179?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 {{videoaa}}
 
@@ -89,7 +89,7 @@ ht-degree: 60%
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [按位置划分的Dimension](https://video.tv.adobe.com/v/327414?captions=chi_hans){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[按位置划分的Dimension](https://video.tv.adobe.com/v/24033){target="_blank"}。
 
 {{videoaa}}
 

@@ -4,10 +4,10 @@ description: 创建要用在报告中的日期范围。
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 60035b8fc65627bf5ead2a50959ce9cc5fe48604
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 97%
 * **E** - 在工作区项目中，从组件左侧面板中选择在![日程表](/help/assets/icons/Calendar.svg)**日期范围**&#x200B;内![添加](/help/assets/icons/Add.svg)。
 * **F** - 在受支持的可视化图表（如可视化折线图）中，从数据点的上下文菜单中选择&#x200B;**[!UICONTROL 注释选项]**。
 
-若要定义注释，您可以使用[[!UICONTROL 日期范围生成器]](#annotation-builder)：
+若要定义注释，请使用[[!UICONTROL 日期范围生成器]](#annotation-builder)。
 
 <!-- Should we really mention API here. If so, we can do it all over the place in the docs...
 | **Use the [Customer Journey Analytics Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | The Customer Journey Analytics Annotations APIs allow you to create, update, or retrieve annotations programmatically through Adobe Developer. These APIs use the same data and methods that Adobe uses inside the product UI. |
@@ -55,7 +55,7 @@ ht-degree: 97%
 1. （可选）指定&#x200B;**[!UICONTROL 描述]**。
 1. 通过创建或应用一个或多个&#x200B;**[!UICONTROL 标记]**&#x200B;来组织区段。开始键入，以查找您可以选择的现有标记。或者按&#x200B;**[!UICONTROL 输入]**&#x200B;键添加新的标记。选择 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 以移除标记。|
 1. 通过先选择开始日期，然后选择结束日期来选择&#x200B;**[!UICONTROL 日期范围]**。
-或者，您也可以从[!UICONTROL *选择预设*]&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 预设]**。
+或者，您也可以从[!UICONTROL *选择预设*]&#x200B;下拉菜单中选择一个&#x200B;**[!UICONTROL 预设]**。
 
 1. 或者，选择&#x200B;**[!UICONTROL 显示高级设置]**&#x200B;以：
 
@@ -67,7 +67,7 @@ ht-degree: 97%
      ![滚动日期](assets/rolliing-dates.png)
 
       1. 选择&#x200B;**[!UICONTROL 开始]**、 **[!UICONTROL 结束]**&#x200B;或&#x200B;**[!UICONTROL 固定日期]**。
-      1. 当选择了&#x200B;**[!UICONTROL 开始]**&#x200B;或&#x200B;**[!UICONTROL 结束]**&#x200B;时，您可以生成一个完整的表达式。例如：**&#x200B;**&#x200B;**[!UICONTROL 当前季度结束]**&#x200B;**[!UICONTROL 减去]**`20`**[!UICONTROL 天]**。为表达式的每个部分选择适当的值。
+      1. 当选择了&#x200B;**[!UICONTROL 开始]**&#x200B;或&#x200B;**[!UICONTROL 结束]**&#x200B;时，您可以生成一个完整的表达式。例如：******[!UICONTROL 当前季度结束]****[!UICONTROL 减去]**`20`**[!UICONTROL 天]**。为表达式的每个部分选择适当的值。
          * 选择当前时间的值。例如&#x200B;**[!UICONTROL 当前季度]**。
          * 选择一个值进行额外的计算。例如，**[!UICONTROL 减]**。
          * 当您指定了额外的计算时，请指定一个值。例如，`20`。

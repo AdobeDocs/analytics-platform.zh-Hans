@@ -4,10 +4,10 @@ description: 如何在 Workspace 中创建注释。
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
-source-git-commit: 3cbf30778ff0fbb4198db16cbbabf3d62a87d384
-workflow-type: ht
+source-git-commit: 21935a0e9e976cd680fb036bb47f4248aaa66890
+workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 * **D**。在 Workspace 项目中，从菜单中选择&#x200B;**[!UICONTROL 组件]**，然后选择&#x200B;**[!UICONTROL 创建注释]**。
 * **E**。在 Workspace 项目中，使用快捷键 **[!UICONTROL ctrl+shift+d]** (Windows) 或 **[!UICONTROL shift+command+o]** (macOS)
 
-若要定义注释，您可以使用[[!UICONTROL 注释生成器]](#annotation-builder)：
+要定义注释，请使用[[!UICONTROL Annotation Builder]](#annotation-builder)。
 
 <!-- Should we really mention API here. If so, we can do it all over the place in the docs...
 | **Use the [Customer Journey Analytics Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | The Customer Journey Analytics Annotations APIs allow you to create, update, or retrieve annotations programmatically through Adobe Developer. These APIs use the same data and methods that Adobe uses inside the product UI. |

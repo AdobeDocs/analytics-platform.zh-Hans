@@ -4,16 +4,16 @@ description: 如何在 Workspace 中查看注释。
 role: User
 feature: Components
 exl-id: c0e4fb37-b20c-463c-b29a-310ca3adb2c7
-source-git-commit: e04f07ba674ed55c53888d5c606ecb4d4aa5ffe5
-workflow-type: ht
-source-wordcount: '214'
-ht-degree: 100%
+source-git-commit: 21935a0e9e976cd680fb036bb47f4248aaa66890
+workflow-type: tm+mt
+source-wordcount: '218'
+ht-degree: 90%
 
 ---
 
 # 查看注释
 
-注释的显示方式略有不同，具体取决于它们是跨越一天还是跨越一个日期范围。
+注释的显示方式略有不同，具体取决于注释出现的位置以及它们跨越一天还是跨越日期范围。
 
 ## 在折线图或表中查看注释
 
