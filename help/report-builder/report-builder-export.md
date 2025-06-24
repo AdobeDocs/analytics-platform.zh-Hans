@@ -5,13 +5,13 @@ role: User, Admin
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: e653cbe7c1955d04830b9ed9ff6399973036ab64
+exl-id: 1d5d87d8-1920-406b-8cce-41b89b7ae70b
+source-git-commit: 5a0cb6fa221282b70df5efb58362855ff58f76b8
 workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 38%
 
 ---
-
 
 # 通过导出到云目标来计划工作簿
 
@@ -35,7 +35,7 @@ ht-degree: 38%
 
 ![步骤1至4中描述的导出过程。](assets/report-builder-export-process.png)
 
-## 从Report Builder导出报告 {#export-from-report-builder}
+## 从Report Builder导出报告
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ ht-degree: 38%
 
 在从 Analysis Workspace 导出数据后，您可以编辑、重新导出、复制、标记或删除现有的导出内容，如[管理导出内容](/help/components/exports/manage-exports.md)中所述。
 
-## 导出到云的优势 {#advantages}
+## 导出到云的优势
 
 通过将 Customer Journey Analytics 数据导出到云，您可以：
 
@@ -119,6 +119,3 @@ ht-degree: 38%
 * **数据块：**&#x200B;所有数据块必须至少包含一个列、行或值的组件。
 
 * **环境：**&#x200B;确保 Customer Journey Analytics 使用的 [IP 地址](/help/technotes/ip-addresses.md)和[域](/help/technotes/domains.md)可以通过其组织的防火墙。
-
-
-
