@@ -5,9 +5,9 @@ exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 feature: Privacy
 role: Admin
 source-git-commit: 40706e3118cbaf7582d8625d307358b16f1836ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '440'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 90%
 
 ## 数据管理
 
-Adobe Customer Journey Analytics 和 [Adobe Experience Platform 数据治理](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=zh-Hans)之间的集成允许标记敏感的 Customer Journey Analytics 数据和实施隐私政策。
+Adobe Customer Journey Analytics 和 [Adobe Experience Platform 数据治理](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html)之间的集成允许标记敏感的 Customer Journey Analytics 数据和实施隐私政策。
 
 在 Experience Platform 使用的数据集上创建的隐私标签和政策可以在 Customer Journey Analytics 数据视图工作流中显示。这些标签阻止或警告从敏感字段创建量度和/或维度的用户。
 
@@ -29,9 +29,9 @@ Adobe Customer Journey Analytics 和 [Adobe Experience Platform 数据治理](ht
 
 ## 隐私请求
 
-Adobe会根据适用的本地法律和国际法律处理隐私请求。
+Adobe 会根据适用的本地和国际法律处理隐私请求。
 
-由于Customer Journey Analytics使用Adobe Experience Platform中可用的数据，因此Adobe提供了[Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans)来提交数据访问和删除请求。 这些请求同时适用于原始数据集和已重新生成键值的数据集。
+由于 Customer Journey Analytics 使用的是 Adobe Experience Platform 中的数据，Adobe 提供了[Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html)，用于提交数据访问和删除请求。这些请求同时适用于原始数据集和已重新生成键值的数据集。
 
 ## GDPR
 
