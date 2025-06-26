@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 7bf74e02db581bdf11b7efe31b62f018320c7f22
+source-git-commit: e19151a7b0c3ab2f9e532034d329896768ee095f
 workflow-type: tm+mt
-source-wordcount: '2359'
-ht-degree: 83%
+source-wordcount: '1972'
+ht-degree: 99%
 
 ---
 
@@ -144,7 +144,7 @@ Data Insights 代理可从 Customer Journey Analytics 中的 AI 助手访问，�
 
 **提示词：**&#x200B;在提示词窗口中输入&#x200B;*“添加利润。”*
 
-**回答：**&#x200B;**[!UICONTROL 条形]**&#x200B;图仍然提供了最简洁的回答，而利润量度被添加到自由格式表中成为一列：
+**回答：****[!UICONTROL 条形]**&#x200B;图仍然提供了最简洁的回答，而利润量度被添加到自由格式表中成为一列：
 
 ![条形图](/help/assets/ai-asst-result4.png)
 
@@ -229,24 +229,26 @@ Following the thumbs up or thumbs down selection, please make a selection for th
 
 -->
 
+<!--
+## Configuration best practices
 
-## 配置最佳实践
+Below are best practices for your Customer Journey Analytics configuration (data view, calculated metrics, segments, and more) to ensure the Data Insights Agent can locate the correct components and return cleaner answers without having you to prompt for additional information.
 
-以下是您的Customer Journey Analytics配置（数据视图、计算量度、区段等）的最佳实践，以确保Data Insights Agent能够找到正确的组件并返回更干净的答案，而无需您提示其他信息。
-
-* **平衡您需要的组件**。 请勿将数据集的所有字段作为量度或维度组件添加到数据视图。 特别是那些您绝不会在分析中使用的变量。 另一方面，不要严格限制自己只能使用预计分析所需的字段。 数据视图过于有限，限制了您分析的灵活性以及Data Insight的代理功能。
-* **始终使用友好的显示名称**。 确保您在数据视图中定义的所有字段（作为量度或维度组件）都具有友好的组件名称。 使用友好名称重命名字段的过程与来自Adobe Analytics源连接器数据集的字段特别相关。 这些字段通常具有不友好的不可识别名称，如`eVar41`或`prop25`。
-* **使用特殊名称**。 当您在数据视图中将字段用作量度和维度组件时，独特名称特别相关。 或者，当您在多个组件中使用字段时，每个组件具有不同的组件设置。
-* **使用组件命名约定**。 您可以使用组件命名惯例对组件进行分组。 例如，**[!UICONTROL 订单 | 产品]**&#x200B;和&#x200B;**[!UICONTROL 订单 | 客户]**，用于区分数据中可能存在的不同订单量度。
-* **使用数据字典**。 在数据字典中添加组件的描述和其他相关数据。 Data Insight代理当前不使用描述和标记。 但将来可能会使用数据字典描述和标记。
-* **使用批准的计算指标**。 同意一个流程，仅将批准的计算指标用作数据视图中的组件，并避免使用实验性的计算指标。
-* **共享所需的区段**。 确保共享区段并使区段可见，这是数据分析代理提示所必需的。
-* **跨数据视图标准化组件名称**。 如果在多个数据视图中使用与组件相同的字段，请确保为该组件使用单个友好名称和单个标识符。 凭借单个名称和标识符，数据分析代理可以在不丢失上下文的情况下切换数据视图。
+* **Balance what components you need**. Do not add all the fields of your datasets as metrics or dimension components to your data view. Especially, those you most certainly will not use in your analysis. On the other hand, do not strictly limit yourself only to the fields you anticipate you require for your analysis. A too limited data view restricts the flexibility in your analysis and the Data Insight's agent functionality.
+* **Always use friendly display names**. Ensure that all fields you define in your data view, either as a metrics or dimension component, do have a friendly component name. The process of renaming fields with a friendly name is especially relevant for fields from Adobe Analytics source connector datasets. These fields often have non-friendly unidentifiable names like `eVar41`, or `prop25`.
+* **Use distinctive names**. Distinctive names are especially relevant when you use a field both as a metric and a dimension component in your data view. Or when you use a field in multiple components, each with different component settings. 
+* **Use a component naming convention**. You can use a component naming convention to group components. For example, **[!UICONTROL Orders | Product]** and  **[!UICONTROL Orders | Customer]** to distinguish between different order metrics that might exist in your data.
+* **Use the Data Dictionary**. Add description and other relevant data for components in the Data Dictionary. The Data Insight agent currently does not use description and tags. but might use Data Dictionary description and tags in the future. 
+* **Use approved calculated metrics**. Agree on a process to use only approved calculated metrics as components in your data view, and avoid using experimental calculated metrics.
+* **Share required segments**. Ensure you share segments and make segments visible that are required for Data Insights agent prompts.
+* **Standardize on component names across data views**. If you use the same fields as a component in multiple data views, ensure you use a single friendly name and a single identifier for that component. A single name and identifier allows the Data Insights agent to switch data views without losing context.
 
 >[!MORELIKETHIS]
 >
->[组件设置](/help/data-views/component-settings/overview.md)
->&#x200B;>[数据字典](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[批准计算量度](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[共享区段](/help/components/segments/seg-share.md)
+>[Component settings](/help/data-views/component-settings/overview.md)
+>[Data Dictionary](/help/components/data-dictionary/data-dictionary-overview.md)
+>[Approve calculated metric](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>[Share segments](/help/components/segments/seg-share.md)
 >
+
+-->
