@@ -5,10 +5,10 @@ title: 创建可共享链接
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
 role: User
-source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
+source-git-commit: 9cdfa94ad04d3d1ce43e591fa9219146152862dc
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 61%
+source-wordcount: '369'
+ht-degree: 58%
 
 ---
 
@@ -24,9 +24,9 @@ Analysis Workspace 提供了多种将项目共享给用户的方法，包括能�
 
 ## 获取只读链接以与任何人共享
 
-您可以与无权访问Customer Journey Analytics的用户共享指向Analysis Workspace项目的只读链接。
+您可以与无权访问Analysis Workspace的用户共享指向Customer Journey Analytics项目的只读链接。
 
-有关详细信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)一文中的“与任何人共享项目（无需登录）”。
+有关详细信息，请参阅[与任何人共享](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required)。
 
 ## 获取面板或可视化图表链接 {#panel-link}
 
@@ -37,7 +37,7 @@ Analysis Workspace 提供了多种将项目共享给用户的方法，包括能�
 
 请[观看视频](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=zh-Hans)，了解如何创建链接，并使用这些链接促使收件人访问项目的特定部分。
 
-![在标题上右键单击“获取可视化图表”链接后显示的下拉菜单。](assets/get-viz-link.png)
+![在标题上右键单击“获取可视化图表”链接后显示的下拉菜单。](assets/get-visualization-link.png)
 
 ## 在目录中使用链接 {#TOC}
 
