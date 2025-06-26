@@ -4,14 +4,20 @@ title: 面板概述
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
-workflow-type: ht
-source-wordcount: '2129'
-ht-degree: 100%
+source-git-commit: 746e03bc94fe3ad83ea5487a6cd3da2089695017
+workflow-type: tm+mt
+source-wordcount: '2142'
+ht-degree: 99%
 
 ---
 
-# 面板概述
+# 面板概述 {#panels-overview}
+
+>[!CONTEXTUALHELP]
+>id="workspace_panel_realtime_refresh"
+>title="实时刷新"
+>abstract="启用可实时刷新此面板中的数据及可视化图表。"
+
 
 [!UICONTROL 面板]是表格和可视化图表的集合可从 Workspace 左上角的图标或[空白面板](/help/analysis-workspace/c-panels/blank-panel.md)访问面板。当您要根据时段、数据视图或分析用例组织您的项目时，面板非常有用。
 
@@ -155,7 +161,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [下拉区段](https://video.tv.adobe.com/v/327489?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [下拉区段](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 {{videoaa}}
 
