@@ -33,7 +33,7 @@ ht-degree: 99%
    + [功能发布策略](../release-notes/releases.md)
    + [文档更新](../release-notes/doc-changes.md)
 
-+ 开始使用 {#cja-overview}
++ 快速入门 {#cja-overview}
    + Customer Journey Analytics {#cja-b2c-overview}
       + [概述](../getting-started/cja-overview.md)
       + [快速入门指南](../getting-started/cja-getting-started.md)
