@@ -1,17 +1,17 @@
 ---
-description: 了解“流量”功能，该功能可展示客户在您的网站和应用程序中的浏览路径。
+description: 了解如何在Analysis Workspace中使用流量可视化图表。
 title: 流量概述
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: ht
-source-wordcount: '326'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '325'
+ht-degree: 96%
 
 ---
 
-# 流量 {#flow}
+# 流量概述 {#flow}
 
 <!-- markdownlint-disable MD034 -->
 
