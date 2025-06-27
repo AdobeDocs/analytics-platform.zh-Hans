@@ -1,13 +1,13 @@
 ---
-description: 此区域可视化图表与线形图类似，只是线条下方显示了彩色区域。
-title: 面积图和堆叠的面积图
+description: 了解面积图和栈叠面积图可视化图表。
+title: 面积图（栈叠）
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
-workflow-type: ht
-source-wordcount: '204'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 94%
 
 ---
 
@@ -29,7 +29,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >[!CONTEXTUALHELP]
 >id="workspace_area_button"
 >title="面积图"
->abstract="创建一份可视化面积图来表示多个量度的交集。"
+>abstract="创建面积图可视化图表来表示多个量度的交集。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -48,7 +48,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >[!CONTEXTUALHELP]
 >id="workspace_areastacked_button"
 >title="堆叠的面积图"
->abstract="创建面积图可视化来表示多个量度的堆叠。"
+>abstract="创建面积图可视化图表来表示多个量度的堆叠。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -63,7 +63,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!MORELIKETHIS]
 >
->[在面板中添加可视化效果](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[可视化设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[可视化上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>>[可视化图表设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[可视化图表上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

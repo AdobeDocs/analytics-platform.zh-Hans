@@ -1,13 +1,13 @@
 ---
-description: 条形图可视化显示一些垂直条，这些垂直条表示一个或多个量度中的各种值。
-title: 条形图和条形图堆叠
+description: 了解如何使用Analysis Workspace中的条形图和栈叠条形图可视化图表。
+title: 条形图和栈叠的条形图
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
-workflow-type: ht
-source-wordcount: '203'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '202'
+ht-degree: 91%
 
 ---
 
@@ -29,7 +29,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >[!CONTEXTUALHELP]
 >id="workspace_bar_button"
 >title="条形图"
->abstract="创建可视化条形图来表示一个或多个量度的各种值。"
+>abstract="创建条形图可视化图表来表示一个或多个量度的各种值。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -48,7 +48,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >[!CONTEXTUALHELP]
 >id="workspace_barstacked_button"
 >title="条形图堆叠"
->abstract="创建条形图可视化来表示一个或多个堆叠量度中的多个值。"
+>abstract="创建条形图可视化图表来表示一个或多个堆叠量度中的多个值。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -63,8 +63,8 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!MORELIKETHIS]
 >
->[在面板中添加可视化效果](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[可视化设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[可视化上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>>[可视化图表设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[可视化图表上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

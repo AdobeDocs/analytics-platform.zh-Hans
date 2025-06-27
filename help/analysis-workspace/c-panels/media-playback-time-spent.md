@@ -1,13 +1,13 @@
 ---
-title: “媒体播放耗时”面板
-description: 如何在 Analysis Workspace 中使用和解释“媒体播放耗时”面板。
+title: “Media Playback 耗时”面板
+description: 了解如何在Analysis Workspace中使用和解释“媒体播放耗时”面板。
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: ht
-source-wordcount: '1073'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '1074'
+ht-degree: 98%
 
 ---
 
@@ -42,7 +42,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >[!NOTE]
 >
 >只有购买了 Customer Journey Analytics 的流媒体收藏集附加组件的客户才能使用媒体平均受众访问分钟数面板。
->请联系您的 Adobe 销售代表或 Adobe 帐户团队以获取更多信息。
+>>请联系您的 Adobe 销售代表或 Adobe 帐户团队以获取更多信息。
 >
 
 **[!UICONTROL 媒体播放耗时]**&#x200B;面板支持长期分析播放，其中提供关于并发高峰的详细信息，并可进行细分和比较。
@@ -60,7 +60,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [媒体播放耗时](https://video.tv.adobe.com/v/3446710?captions=chi_hans){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [媒体播放耗时](https://video.tv.adobe.com/v/338699){target="_blank"}以观看演示视频。
 
 {{videoaa}}
 
@@ -129,6 +129,6 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >[!MORELIKETHIS]
 >
 >[Create a panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->[“媒体平均受众访问分钟数”面板](average-minute-audience-panel.md)
->[媒体并行查看者面板](media-concurrent-viewers.md)
+>>[“媒体平均受众访问分钟数”面板](average-minute-audience-panel.md)
+>>[媒体并行查看者面板](media-concurrent-viewers.md)
 >

@@ -1,13 +1,13 @@
 ---
-title: 媒体并行查看者面板
-description: 如何在 Analysis Workspace 中使用和解释媒体并行查看者面板。
+title: “媒体并行查看者”面板
+description: 了解如何使用和解读Analysis Workspace中的“媒体并行查看者”面板。
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 100%
+source-wordcount: '1175'
+ht-degree: 98%
 
 ---
 
@@ -55,7 +55,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [媒体并行查看者面板](https://video.tv.adobe.com/v/35185/?quality=12&learn=on&captions=chi_hans){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [媒体并行查看者面板](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 {{videoaa}}
 
@@ -130,6 +130,6 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >[!MORELIKETHIS]
 >
 >[Create a panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->[媒体播放耗时面板](media-playback-time-spent.md)
->[“媒体平均受众访问分钟数”面板](average-minute-audience-panel.md)
+>>[媒体播放耗时面板](media-playback-time-spent.md)
+>>[“媒体平均受众访问分钟数”面板](average-minute-audience-panel.md)
 >

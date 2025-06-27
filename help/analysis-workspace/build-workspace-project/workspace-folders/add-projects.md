@@ -1,14 +1,14 @@
 ---
-description: 了解如何在 Workspace 中添加或移动文件夹
+description: 了解如何将项目添加或移动到Analysis Workspace中的文件夹。
 keywords: Analysis Workspace
 title: 将项目添加或移动到文件夹
 feature: Workspace Basics
 exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
 role: User
-source-git-commit: 60035b8fc65627bf5ead2a50959ce9cc5fe48604
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 93%
+source-wordcount: '263'
+ht-degree: 87%
 
 ---
 

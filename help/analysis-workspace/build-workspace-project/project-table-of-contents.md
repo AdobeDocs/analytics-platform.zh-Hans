@@ -1,14 +1,14 @@
 ---
-description: 有关工作区项目中目录功能的信息
+description: 了解如何在Analysis Workspace的项目中使用目录来快速访问面板和可视化图表。
 keywords: Analysis Workspace
 title: 目录
 feature: Workspace Basics
 role: User
 exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
-source-git-commit: 51a6341734163fdd6b994ae9cec53ef034959896
-workflow-type: ht
-source-wordcount: '200'
-ht-degree: 100%
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 88%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-请观看 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建目录](https://video.tv.adobe.com/v/35185/?quality=12&learn=on&captions=chi_hans){target="_blank"}演示视频。
+请观看 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建目录](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"}演示视频。
 
 >[!ENDSHADEBOX]
 

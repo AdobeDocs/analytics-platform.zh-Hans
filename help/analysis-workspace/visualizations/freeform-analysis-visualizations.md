@@ -1,18 +1,18 @@
 ---
-description: 在 Analysis Workspace 中直观地展示您的数据。
+description: 了解如何使用Analysis Workspace中提供的可视化图表直观地表示您的数据。
 keywords: Analysis Workspace
-title: 可视化图表概述
+title: 可视化概述
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '1616'
-ht-degree: 99%
+source-wordcount: '1622'
+ht-degree: 98%
 
 ---
 
-# 可视化图表概述
+# 可视化内容概述
 
 工作区提供了多种可视化工具，可帮助您生成数据的可视化表示。例如条形图、环形图、直方图、线形图、地图、散点图等。
 

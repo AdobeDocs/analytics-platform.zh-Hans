@@ -1,14 +1,14 @@
 ---
-description: 您可以在 Analysis Workspace 中从接触点创建区段、添加区段作为接触点，并比较多个区段之间的关键工作流程。
-keywords: 流失和区段；流失分析中的区段；比较流失中的区段
+description: 了解如何在Analysis Workspace中的流失分析中，从接触点创建区段、添加区段作为接触点，并比较多个区段之间的关键工作流程。
+keywords: 流失和分段;流失分析中的区段;比较流失中的区段
 title: 在流失分析中应用区段
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 38%
+source-wordcount: '468'
+ht-degree: 34%
 
 ---
 
@@ -18,11 +18,14 @@ ht-degree: 38%
 
 >[!IMPORTANT]
 >
->用作流失中检查点的区段必须使用级别低于流失可视化图表整体上下文的容器。对于人员上下文流失，用作检查点的区段必须是基于会话的或基于事件的区段。 对于会话上下文流失，用作检查点的区段必须是基于事件的区段。 如果使用无效的组合，则流失率为100%。 将不兼容的区段添加为接触点时，您会看到流失可视化图表的警告。 某些无效的区段容器组合会导致无效的流失图表，例如：
+>用作流失中检查点的区段必须使用级别低于流失可视化图表整体上下文的容器。对于人员上下文流失，用作检查点的区段必须是基于会话的或基于事件的区段。 对于会话上下文流失，用作检查点的区段必须是基于事件的区段。 如果使用无效的组合，则流失率为100%。 将不兼容的区段添加为接触点时，流失可视化图表中会显示警告。 某些无效的区段容器组合会导致无效的流失图表，例如：
 >
->* 在人员上下文流失可视化图表中使用基于人员的区段作为接触点
->* 在会话上下文流失可视化图表中使用基于人员的区段作为接触点
->* 在会话上下文流失可视化图表中使用基于会话的区段作为接触点
+>* 在人员上下文流失可视化图表中使用基于人员的区段作为接触点。
+>* 在会话上下文流失可视化图表中使用基于人员的区段作为接触点。
+>* 在会话上下文流失可视化图表中使用基于会话的区段作为接触点。
+<!-- Should we add B2B context here?
+* [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Usimg a B2B container based segment as a touchpoint inside a non-container based context Fallout visualization.
+* -->
 
 ## 从接触点创建区段
 

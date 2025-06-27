@@ -1,21 +1,21 @@
 ---
-description: 了解如何在 Workspace 中管理文件夹
+description: 了解如何在Analysis Workspace中管理文件夹。
 keywords: Analysis Workspace
-title: 在 Workspace 中管理文件夹
+title: 管理文件夹
 feature: Workspace Basics
 exl-id: dcc78e0e-49d6-40bf-a606-9a7f3f19911c
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 91%
+source-wordcount: '428'
+ht-degree: 86%
 
 ---
 
 
 # 管理文件夹
 
-您可以通过两种方式管理 Workspace 中的文件夹。从文件夹内，或从项目列表内选定的一个或多个文件夹中。管理文件夹包括重命名、移动或删除文件夹。
+您可以通过两种方式管理 Workspace 中的文件夹。从文件夹内，或从项目列表内选定的一个或多个文件夹中。管理文件夹包括重命名、移动或删除文件夹的选项。
 
 ## 重命名文件夹
 
@@ -26,13 +26,13 @@ ht-degree: 91%
 * 在[项目列表](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list)中选择要重命名的文件夹。
 
    1. 从所选文件夹的上下文菜单![More](/help/assets/icons/More.svg)或蓝色操作栏中的[操作](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions)中选择&#x200B;**[!UICONTROL 重命名]**。
-   1. 在&#x200B;**[!UICONTROL 重命名：*文件夹名称&#x200B;*]**&#x200B;对话框中，输入新名称并选择&#x200B;**[!UICONTROL 保存&#x200B;]**。
+   1. 在&#x200B;**[!UICONTROL 重命名：*文件夹名称&#x200B;*]**对话框中，输入新名称并选择**[!UICONTROL 保存&#x200B;]**。
 
 * 在您想要重命名的文件夹中。
 
    1. 在[标题区域](/help/analysis-workspace/build-workspace-project/freeform-overview.md#title-area)中，从![More](/help/assets/icons/More.svg)中选择&#x200B;**[!UICONTROL 重命名文件夹]**。
 
-   1. 在&#x200B;**[!UICONTROL 重命名：*文件夹名称&#x200B;*]**&#x200B;对话框中，输入新名称并选择&#x200B;**[!UICONTROL 保存&#x200B;]**。
+   1. 在&#x200B;**[!UICONTROL 重命名：*文件夹名称&#x200B;*]**对话框中，输入新名称并选择**[!UICONTROL 保存&#x200B;]**。
 
 
 ## 移动文件夹

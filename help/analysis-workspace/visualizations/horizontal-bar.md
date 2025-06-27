@@ -1,13 +1,13 @@
 ---
-description: 此可视化显示了一些水平条，这些水平条表示一个或多个量度中的各种值。
-title: 水平条形图和堆叠的水平条形图
+description: 了解如何使用水平条表示一个或多个量度中的各种值。
+title: 水平条形图和栈叠的水平条形图
 feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
-workflow-type: ht
-source-wordcount: '193'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 89%
 
 ---
 
@@ -28,7 +28,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >[!CONTEXTUALHELP]
 >id="workspace_horizontalbar_button"
 >title="水平条形图"
->abstract="创建可视化水平条形图来表示一个或多个量度的各种值。"
+>abstract="创建水平条形图可视化图表来表示一个或多个量度的各种值。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -44,7 +44,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >[!CONTEXTUALHELP]
 >id="workspace_horizontalbarstacked_button"
 >title="堆叠的水平条形图"
->abstract="创建可视化水平条形图来表示一个或多个堆叠的量度的各种值。"
+>abstract="创建水平条形图可视化图表来表示一个或多个堆叠的量度的各种值。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -60,8 +60,8 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!MORELIKETHIS]
 >
->[在面板中添加可视化效果](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[可视化设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[可视化上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>>[可视化图表设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[可视化图表上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

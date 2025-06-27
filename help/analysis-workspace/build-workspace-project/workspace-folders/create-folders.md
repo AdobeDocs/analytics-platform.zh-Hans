@@ -1,14 +1,14 @@
 ---
-description: 了解如何在 Workspace 中创建文件夹和子文件夹
+description: 了解如何在Analysis Workspace中创建文件夹和子文件夹。
 keywords: Analysis Workspace
 title: 创建文件夹
 feature: Workspace Basics
 exl-id: c83c3526-a8d0-4094-b4c4-46cf70e1a365
 role: User
-source-git-commit: 98a92fff2a0fae7ad3e6d94e61f8babed3c11eb7
-workflow-type: ht
-source-wordcount: '113'
-ht-degree: 100%
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+workflow-type: tm+mt
+source-wordcount: '115'
+ht-degree: 81%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 1. 在&#x200B;**[!UICONTROL 创建新文件夹]**&#x200B;对话框中，输入新文件夹的名称。例如：`Second Week Reports`。
 
-1. 从&#x200B;**[!UICONTROL 标记]**&#x200B;下拉列表中选择标记或输入新的标记。
+1. 从&#x200B;**[!UICONTROL 标记]**&#x200B;下拉菜单中选择标记或输入新标记。
 
    ![Create new folder](../assets/create-new-folder.png)
 

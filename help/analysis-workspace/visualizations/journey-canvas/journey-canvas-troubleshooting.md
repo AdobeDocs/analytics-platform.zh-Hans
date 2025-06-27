@@ -1,11 +1,12 @@
 ---
-description: 配置历程画布可视化图表时的示例
-title: 历程画布示例
+description: 了解如何在配置历程画布可视化图表时进行故障排除。
+title: 历程画布疑难解答
 feature: Visualizations
 role: User
-source-git-commit: 820251833eae9fed1574a0010f726b0ba6e12cd1
+exl-id: f0ac3752-9244-4d9e-807b-e6471e6aa55b
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1290'
 ht-degree: 0%
 
 ---
@@ -88,7 +89,7 @@ When a journey contains multiple paths that converge into a single node, the two
 
 +++开始节点的百分比
 
-当&#x200B;**[!UICONTROL 百分比值]**&#x200B;字段设置为起始节点&#x200B;**的**&#x200B;百分比时，此历程中的节点包含以下统计信息：
+当&#x200B;**[!UICONTROL 百分比值]**&#x200B;字段设置为起始节点&#x200B;]**的**[!UICONTROL &#x200B;百分比时，此历程中的节点包含以下统计信息：
 
 ![历程的百分比高于前一个节点](assets/journey-canvas-higher-percentage.png)
 
@@ -114,9 +115,9 @@ When a journey contains multiple paths that converge into a single node, the two
 
 +++
 
-+++总数的百分比
+总数的+++百分比
 
-当&#x200B;**[!UICONTROL 百分比值]**&#x200B;字段设置为总数的百分比&#x200B;**的**&#x200B;时，此历程中的节点包含以下统计信息：
+当&#x200B;**[!UICONTROL 百分比值]**&#x200B;字段设置为总数的百分比&#x200B;]**的**[!UICONTROL &#x200B;时，此历程中的节点包含以下统计信息：
 
 ![历程的百分比高于前一个节点](assets/journey-canvas-percentage-total.png)
 

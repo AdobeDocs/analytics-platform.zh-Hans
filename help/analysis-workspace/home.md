@@ -1,15 +1,15 @@
 ---
 keywords: Analysis Workspace
 title: Analysis Workspace 概述
-description: Analysis Workspace 功能概述
+description: 了解Adobe Analytics的首要分析工具Analysis Workspace。 使用项目、面板、表格、可视化和其他组件使数据形象化，并策划和共享您的分析。
 feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
-workflow-type: ht
-source-wordcount: '1469'
-ht-degree: 100%
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+workflow-type: tm+mt
+source-wordcount: '1490'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,9 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 概述](https://video.tv.adobe.com/v/35509/?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 概述](https://video.tv.adobe.com/v/26266/?quality=12&learn=on){target="_blank"}以获取演示视频。
+
+{{videoaa}}
 
 >[!ENDSHADEBOX]
 
@@ -32,7 +34,7 @@ ht-degree: 100%
 | 位置 | 名称和功能 |
 |:---------:|----------|
 | A | 包含项目名称、用于访问功能的菜单结构、返回项目列表的按钮![“返回”按钮](/help/assets/icons/ChevronLeft.svg)，以及[分享 Workspace 项目](/help/analysis-workspace/curate-share/share-projects.md)的&#x200B;**[!UICONTROL 分享]**&#x200B;按钮。<br/>随时选择您的项目名称（例如：新项目）即可更改名称。<br/>选择![取消收藏](/help/assets/icons/StarOutline.svg)将您的项目标记为收藏的项目![收藏](/help/assets/icons/Star.svg)。 |
-| B | **按钮面板：**&#x200B;包含用于访问 Analysis Workspace 的主要[功能](#features)的按钮：<ul><li>![WebPage](/help/assets/icons/WebPage.svg) [[!UICONTROL 面板]](/help/analysis-workspace/c-panels/panels.md)</li><li>![引导式分析](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL 引导式分析]](/help/guided-analysis/overview.md)</li><li>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL 可视化]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![策划](/help/assets/icons/Curate.svg)[[!UICONTROL 组件]](/help/components/overview.md)</li><li>![ViewList](/help/assets/icons/ViewList.svg) [[!UICONTROL 目录]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![书签](/help/assets/icons/Bookmark.svg) [[!UICONTROL 数据字典]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
+| B | **按钮面板：**&#x200B;包含用于访问Analysis Workspace的[功能](#features)键的按钮：<ul><li>![WebPage](/help/assets/icons/WebPage.svg) [[!UICONTROL 面板]](/help/analysis-workspace/c-panels/panels.md)</li><li>![引导式分析](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL 引导式分析]](/help/guided-analysis/overview.md)</li><li>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL 可视化]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![策划](/help/assets/icons/Curate.svg)[[!UICONTROL 组件]](/help/components/overview.md)</li><li>![ViewList](/help/assets/icons/ViewList.svg) [[!UICONTROL 目录]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![书签](/help/assets/icons/Bookmark.svg) [[!UICONTROL 数据字典]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
 | C | **左侧面板：**&#x200B;该区域包含单独的面板、可视化内容、组件或列表。相关内容取决于按钮面板中选择的按钮。 |
 | D | **画布：**&#x200B;从左侧面板拖动内容以构建项目的主要区域。当您添加面板、向面板添加可视化效果以及向可视化效果添加组件时，项目会动态更新。您可以创建多个面板，并且在每个面板内可以创建多个可视化效果。<br/>每个面板均基于选定的数据视图。所选的数据视图决定了可用的组件，例如量度和维度。请参阅[面板：数据视图](/help/analysis-workspace/c-panels/panels.md#data-view)，了解更多信息。 |
 
@@ -121,16 +123,16 @@ Analysis Workspace 的大部分功能可通过拖放以及面板、可视化内�
 | **[!UICONTROL 安排文件导出]** | **[!UICONTROL *shift+opt+s *]** | **[!UICONTROL *shift+alt+s *]** | [按计划将项目作为 CSV 或 PDF 文件发送给其他收件人](/help/analysis-workspace/curate-share/send-schedule-files.md)。 |
 | **[!UICONTROL 策划项目数据]** | **[!UICONTROL *shift+cmd+g *]** | **[!UICONTROL *shift+ctrl+g *]** | [策划项目数据](/help/analysis-workspace/curate-share/curate.md)。 |
 
-| 帮助 | 快捷方式 Mac | Windows 快捷方式 | 描述 |
-|---|---|---|---|
-| **[!UICONTROL 视频]** | | | 在新浏览器选项卡中打开 Customer Journey Analytics YouTube 频道。 |
-| **[!UICONTROL 帮助文档]** | | | 在新浏览器选项卡中打开（您刚才实际上正在阅读的…）文档。 |
-| **[!UICONTROL 帮助论坛]** | | | 在新浏览器选项卡中打开 Adobe Analytics Experience League 社区论坛。 |
-| **[!UICONTROL 热键]** | | | 显示您可以在 Workspace 中使用的热键（快捷方式）的概述。 |
-| **[!UICONTROL 启用调试器]** |  | | 启用调试器。您的项目将重新加载。 |
-| **[!UICONTROL 禁用调试器]** | | | 禁用调试器。您的项目将重新加载。 |
-| **[!UICONTROL 绩效]** | | | 显示一个对话框，其中显示有关 **[!UICONTROL Analysis Workspace 绩效]**&#x200B;的量度。使用&#x200B;**[!UICONTROL 下载为 CSV]**&#x200B;以下载绩效量度的 CSV 文件。 |
-| **[!UICONTROL 关于 Workspace]** | | | 显示 **[!UICONTROL 关于 Analysis Workspace]** 对话框，其中包含版本信息、功能访问级别和活动功能标志。 |
+| 帮助 | 描述 |
+|---|---|
+| **[!UICONTROL 视频]** | 在新浏览器选项卡中打开 Customer Journey Analytics YouTube 频道。 |
+| **[!UICONTROL 帮助文档]** | 在新浏览器选项卡中打开（您刚才实际上正在阅读的…）文档。 |
+| **[!UICONTROL 帮助论坛]** | 在新浏览器选项卡中打开 Adobe Analytics Experience League 社区论坛。 |
+| **[!UICONTROL 热键]** | 显示您可以在 Workspace 中使用的热键（快捷方式）的概述。 |
+| **[!UICONTROL 启用调试器]** | 启用调试器。您的项目将重新加载。 |
+| **[!UICONTROL 禁用调试器]** | 禁用调试器。您的项目将重新加载。 |
+| **[!UICONTROL 绩效]** | 显示一个对话框，其中显示有关 **[!UICONTROL Analysis Workspace 绩效]**&#x200B;的量度。使用&#x200B;**[!UICONTROL 下载为 CSV]**&#x200B;以下载绩效量度的 CSV 文件。 |
+| **[!UICONTROL 关于 Workspace]** | 显示 **[!UICONTROL 关于 Analysis Workspace]** 对话框，其中包含版本信息、功能访问级别和活动功能标志。 |
 
 ## 数据源
 

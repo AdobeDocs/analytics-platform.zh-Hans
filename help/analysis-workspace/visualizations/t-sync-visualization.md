@@ -1,49 +1,36 @@
 ---
-description: 通过同步可视化图表，您可以控制与可视化图表对应的数据表或数据源。
+description: 了解如何将自由格式表或数据源同步到相应的可视化图表。
 keywords: Analysis Workspace 将可视化图表与数据源同步
 title: 管理数据源
 feature: Visualizations
 exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
 role: User
-source-git-commit: 8f9c03607130bdeaf6cb7a32d8dd465712a47ea5
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 96%
+source-wordcount: '436'
+ht-degree: 89%
 
 ---
 
 # 管理数据源 {#manage-data-sources}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_lockselection"
 >title="锁定选择"
 >abstract="启用此设置可将可视化图表锁定到数据源中的选定位置或选定项目。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_lockselection_showtable"
 >title="显示表格"
 >abstract="选择&#x200B;**[!UICONTROL 显示表格]**&#x200B;将会为当前可视化图表生成一个新的数据源，并将其与原始数据源分开。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_showtable"
 >title="显示表格"
 >abstract="选择&#x200B;**[!UICONTROL 显示表格]**，为当前可视化图表生成一个与原始数据源区分开的新数据源。"
 
-<!-- markdownlint-enable MD034 -->
 
-
-
-通过同步可视化图表，您可以控制与可视化图表对应的数据表或数据源。
+通过同步可视化图表，您可以控制与可视化图表对应的自由格式表或数据源。
 
 >[!TIP]
 >

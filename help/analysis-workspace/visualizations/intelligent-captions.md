@@ -1,19 +1,17 @@
 ---
-description: 使用智能标题生成自然语言洞察，以显示可视化内容中的趋势。
-title: 智能标题
+description: 了解如何使用智能字幕生成自然语言洞察力以显示可视化图表中的趋势。
+title: 智能题注
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: af8d4f07498211931e9549cadd4746eebb9f56f4
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 100%
+source-wordcount: '757'
+ht-degree: 98%
 
 ---
 
 # 智能标题 {#intelligent-captions}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions"
@@ -30,7 +28,7 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [智能标题](https://video.tv.adobe.com/v/3443148/?quality=12&learn=on&captions=chi_hans){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [智能标题](https://video.tv.adobe.com/v/3420131/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 

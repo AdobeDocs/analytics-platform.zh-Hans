@@ -1,13 +1,13 @@
 ---
-description: 显示您感兴趣的值与其他性能范围（目标）进行比较或衡量的结果。
-title: 项目符号图表
+description: 了解如何使用Analysis Workspace中的项目符号可视化图表。 利用项目符号可视化，可与其他性能范围（目标）进行比较或衡量。
+title: 项目符号
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: ht
-source-wordcount: '263'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '270'
+ht-degree: 90%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="workspace_bullet_button"
 >title="项目符号"
->abstract="创建可视化项目符号图表来显示量度与性能范围（目标）之间的比较。"
+>abstract="创建项目符号图可视化图表来显示量度与性能范围（目标）之间的比较。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,7 +45,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [项目符号图形可视化图表](https://video.tv.adobe.com/v/41512/?quality=12/?quality=12&learn=on&captions=chi_hans){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [项目符号图形可视化图表](https://video.tv.adobe.com/v/23989/?quality=12/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 {{videoaa}}
 
@@ -62,8 +62,8 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!MORELIKETHIS]
 >
->[在面板中添加可视化效果](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[可视化设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[可视化上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>>[可视化图表设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[可视化图表上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

@@ -1,17 +1,17 @@
 ---
-title: 在自由格式表中创建超链接
-description: 了解如何在 Analysis Workspace 中的自由格式表中为维度项创建超链接
+title: 在自由格式表中为维度创建超链接
+description: 了解如何在Analysis Workspace的自由格式表中为维度项目创建超链接。
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '1607'
-ht-degree: 98%
+source-wordcount: '1605'
+ht-degree: 97%
 
 ---
 
-# 在自由格式表中创建超链接
+# 创建超链接
 
 您可以为维度项创建超链接，使其在 Analysis Workspace 中的自由格式表中可点击。
 
@@ -26,7 +26,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在自由格式表中创建超链接](https://video.tv.adobe.com/v/3445797/?quality=12&learn=on&captions=chi_hans){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在自由格式表中创建超链接](https://video.tv.adobe.com/v/3430411/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 

@@ -1,19 +1,19 @@
 ---
-title: 动态维度项与静态维度项
-description: 如何与表中的动态维度项和静态维度项交互
+title: 动态和静态Dimension项目
+description: 了解如何在Analysis Workspace的自由格式表中使用动态维度项和静态维度项。
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 93%
+source-wordcount: '544'
+ht-degree: 88%
 
 ---
 
 # 动态项和静态维度项
 
-在自由格式表中，行和列包含各种组件值。这些值可能是动态的（随时间而改变），也可能是静态的（不随时间而改变），具体取决于您要生成的分析。
+在自由格式表中，行和列可以包含各种组件值。 这些值可能是动态的（随时间而改变），也可能是静态的（不随时间而改变），具体取决于您要生成的分析。
 
 ## 动态维度项
 

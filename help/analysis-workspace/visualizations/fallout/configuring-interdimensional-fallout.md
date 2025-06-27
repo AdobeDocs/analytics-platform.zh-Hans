@@ -1,12 +1,12 @@
 ---
-description: Analysis Workspace中的流失让您可以将维度和量度作为漏斗和工作流中的接触点来进行混合和匹配。 在定义要调查的用户步骤时，流失会为您提供更大的灵活性。
+description: 了解Analysis Workspace中的流失可视化如何让您混合和匹配维度和量度，作为漏斗和工作流中的接触点。 了解这如何在定义要调查的用户步骤时提供更大的灵活性。
 title: 维度间流失
 feature: Visualizations
 exl-id: 7975324c-4efc-4c36-bc83-dcde85d2febc
 role: User
-source-git-commit: 37158b4e614435724205c505f322c1d7a434c35d
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '226'
 ht-degree: 7%
 
 ---

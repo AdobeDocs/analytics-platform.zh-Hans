@@ -1,28 +1,28 @@
 ---
-description: 了解在 Analysis Workspace 中可用的键盘交互、快捷键以及点击行为。
+description: 了解如何使用Analysis Workspace中提供的键盘交互、快捷键和点击行为。
 keywords: Analysis Workspace
 feature: Workspace Basics
-title: 如何使用 Workspace 热键
+title: 热键
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
-source-git-commit: 61a7e21d3e5d586c341a5b0f12490e3da1054382
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 93%
+source-wordcount: '421'
+ht-degree: 89%
 
 ---
 
-# 热键（快捷方式）
+# 热键
 
 Analysis Workspace 中提供了热键（键盘快捷键），以实现无缝导航、分析和大众化。
 
 请注意，您的键盘上可能会使用以下符号：
 
-- **⇧** 表示 **[!UICONTROL **&#x200B; shift &#x200B;**]** 键。
-- **⌘** 表示 **[!UICONTROL **&#x200B; cmd &#x200B;**]**（命令）。
-- **⌃** 表示 **[!UICONTROL **&#x200B; ctrl &#x200B;**]**（控制）。
-- **⌥** 表示 **[!UICONTROL **&#x200B; opt &#x200B;**]**（选项）。
-- **⎇** 表示 **[!UICONTROL **&#x200B; alt &#x200B;**]**（备选）。
+- **⇧** 表示 **[!UICONTROL ** shift **]** 键。
+- **⌘** 表示 **[!UICONTROL ** cmd **]**（命令）。
+- **⌃** 表示 **[!UICONTROL ** ctrl **]**（控制）。
+- **⌥** 表示 **[!UICONTROL ** opt **]**（选项）。
+- **⎇** 表示 **[!UICONTROL ** alt **]**（备选）。
 
 ## 导航操作
 

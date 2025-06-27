@@ -1,13 +1,13 @@
 ---
-description: 轻松地在 Analysis Workspace 中进行数据的可视化比较，例如构建与上个月、去年等的比较。
-title: 组合图表可视化
+description: 了解如何在Analysis Workspace中将比较数据可视化，例如构建与上个月、去年等的比较。
+title: 组合
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
 source-wordcount: '603'
-ht-degree: 97%
+ht-degree: 93%
 
 ---
 
@@ -25,9 +25,9 @@ ht-degree: 97%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** 中的组合可视化图表。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** 中的组合可视化图表。_
 
-_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** 版本的[组合](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts)。_
+_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版本的[组合](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts)。_
 
 >[!ENDSHADEBOX]
 
@@ -50,7 +50,7 @@ _请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&
 
 ## 使用
 
-1. 添加![注释](/help/assets/icons/ComboChart.svg) [!UICONTROL 组合]可视化。请参阅[将可视化添加到面板](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+1. 添加![注释](/help/assets/icons/ComboChart.svg)[!UICONTROL 组合]可视化。请参阅[将可视化添加到面板](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 
 1. 从下拉菜单中，选择X轴的维和Y轴的量度。
 
@@ -99,6 +99,6 @@ _请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&
 >[!MORELIKETHIS]
 >
 >[在面板中添加可视化效果](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[可视化图表设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[可视化图表上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[可视化图表设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[可视化图表上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

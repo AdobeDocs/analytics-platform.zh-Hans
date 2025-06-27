@@ -1,26 +1,26 @@
 ---
-description: 了解同类群组分析的用例示例。
-keywords: 分析 Workspace
-title: 同类群组分析用例
+description: 了解同类群组分析的一些用例示例。
+keywords: Analysis Workspace
+title: 同类群组分析使用Xase
 feature: Visualizations
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 52%
+source-wordcount: '974'
+ht-degree: 51%
 
 ---
 
-# [!UICONTROL 同类群组分析]用例
+# 同类群组分析用例
 
-本文介绍了[!UICONTROL 同类群组分析]的一些用例示例。
+本文介绍了同类群组分析的一些用例示例。
 
 ## 应用程序参与度用例
 
 假设您想分析在安装了您的应用程序的用户中，该应用程序在一段时间内的具体使用情况。他们是否安装后就再也没使用过？使用了一段时间后就放弃不用了？还是说，仍然在继续使用？
 
-您可以创建一个为期六个月的[!UICONTROL 同类群组分析]：
+您可以创建一个为期六个月的同类群组分析.
 
 **粒度**：按月，从 2015 年 1 月至 2015 年 6 月
 

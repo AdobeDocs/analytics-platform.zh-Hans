@@ -1,13 +1,13 @@
 ---
-description: 行设置因您拖入到表格中的组件而异。
+description: 了解如何使用行设置，以及行设置如何因您拖入Analysis Workspace中自由格式表的组件而异。
 title: 行设置
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 91%
+source-wordcount: '1056'
+ht-degree: 87%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 91%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自由格式表中的行和列设置](https://video.tv.adobe.com/v/328499/?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自由格式表中的行和列设置](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -90,4 +90,4 @@ ht-degree: 91%
 
 ## 更改行高
 
-您可以将项目的视图密度设置为 **[!UICONTROL 紧凑]**、**[!UICONTROL 舒适]** 和 **[!UICONTROL 扩展]**。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density)。
+您可以将项目的[视图密度](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density)设置为&#x200B;**[!UICONTROL 紧凑]**、**[!UICONTROL 舒适]**&#x200B;和&#x200B;**[!UICONTROL 展开]**。

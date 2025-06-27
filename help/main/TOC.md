@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 9cdfa94ad04d3d1ce43e591fa9219146152862dc
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 98%
+source-wordcount: '1253'
+ht-degree: 99%
 
 ---
 
@@ -173,12 +173,13 @@ ht-degree: 98%
       + [打开项目](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [对项目的注释](/help/analysis-workspace/build-workspace-project/comment-projects.md)
       + [保存项目](../analysis-workspace/build-workspace-project/save-projects.md)
+      + [目录](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
       + Workspace 中的文件夹 {#workspace-folders}
-         + [关于文件夹](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
-         + [创建文件夹和子文件夹](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+         + [概述](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+         + [创建文件夹](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [管理文件夹](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
-         + [将项目添加或移动到文件夹](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
-      + [热键（快捷方式）](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
+         + [添加或移动项目](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
+      + [热键](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [调色板](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [视图密度](../analysis-workspace/build-workspace-project/view-density.md)
    + 模板 {#templates}
@@ -195,8 +196,8 @@ ht-degree: 98%
             + [列设置](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [行设置](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [动态项和静态项](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
-         + [排序和过滤表格](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
-         + [Workspace 总计](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+         + [过滤和排序](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
+         + [总计](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + 同类群组表 {#cohort-table}
          + [概述](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [配置](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
@@ -228,11 +229,11 @@ ht-degree: 98%
       + [节头](/help/analysis-workspace/visualizations/section-header.md)
       + [摘要数字和变化](../analysis-workspace/visualizations/summary-number-change.md)
       + [文本](../analysis-workspace/visualizations/text.md)
-      + [树形图](../analysis-workspace/visualizations/treemap.md)
+      + [树状图](../analysis-workspace/visualizations/treemap.md)
       + [维恩图](../analysis-workspace/visualizations/venn.md)
    + 面板 {#panels}
       + [概述](../analysis-workspace/c-panels/panels.md)
-      + [空白面板](../analysis-workspace/c-panels/blank-panel.md)
+      + [空白](../analysis-workspace/c-panels/blank-panel.md)
       + [归因](../analysis-workspace/c-panels/attribution.md)
       + [试验](../analysis-workspace/c-panels/experimentation.md)
       + [自由格式表](../analysis-workspace/c-panels/freeform-panel.md)
@@ -260,7 +261,6 @@ ht-degree: 98%
       + [概述](../analysis-workspace/c-forecast/forecasting.md)
       + [查看预测](../analysis-workspace/c-forecast/view-forecasts.md)
       + [统计技术](../analysis-workspace/c-forecast/statistics-forecasting.md)
-   + [目录](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [用户偏好设置](../analysis-workspace/user-preferences.md)
    + Workspace 常见问题解答及更多信息  {#workspace-faq}
       + [常见问题解答](../analysis-workspace/workspace-faq/faq.md)
@@ -398,9 +398,9 @@ ht-degree: 98%
    + [使用区段工作](../report-builder/work-with-filters.md)
    + [过滤器维度](../report-builder/filter-dimensions.md)
    + [管理数据块](../report-builder/manage-reportbuilder.md)
-   + [计划电子邮件工作簿](../report-builder/schedule-reportbuilder.md)
-   + [计划用于云导出的工作簿](../report-builder/report-builder-export.md)
-   + [管理工作簿计划](/help/report-builder/manage-schedules-reportbuilder.md)
+   + [安排通过电子邮件发送工作簿](../report-builder/schedule-reportbuilder.md)
+   + [安排将工作簿导出至云](../report-builder/report-builder-export.md)
+   + [管理工作簿的计划任务](/help/report-builder/manage-schedules-reportbuilder.md)
    + [限制标签](../report-builder/restricted-labels.md)
    + [Report Builder 设置](../report-builder/report-builder-settings.md)
 

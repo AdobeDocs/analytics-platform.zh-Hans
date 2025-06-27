@@ -1,13 +1,13 @@
 ---
-description: 了解流失报告和可视化效果图表。
-title: 有关流失报告和可视化图表
+description: 了解如何使用Analysis Workspace中的流失可视化图表。
+title: 流失概述
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
-workflow-type: ht
-source-wordcount: '357'
-ht-degree: 100%
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 96%
 
 ---
 

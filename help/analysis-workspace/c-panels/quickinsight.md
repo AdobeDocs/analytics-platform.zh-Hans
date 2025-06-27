@@ -1,13 +1,13 @@
 ---
-description: 快速洞察是一款面向新 Workspace 用户的工具，可指导用户生成数据表和可视化图表
-title: 快速洞察面板
+description: 了解如何使用快速分析面板来指导您在Analysis Workspace中构建数据表和可视化图表。
+title: 快速分析面板
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 95%
+source-wordcount: '1147'
+ht-degree: 93%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 95%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ 中的快速洞察面板。<br/>_请参阅[快速洞察面板](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/quickinsight)以获取本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**  版本。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ 中的快速洞察面板。<br/>_请参阅[快速洞察面板](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/quickinsight)以获取本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**  版本。_
 
 >[!ENDSHADEBOX]
 
@@ -125,13 +125,13 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
   ![Quick Insights Builder Result](assets/qibuilder-result.png)
 
-   * **[!UICONTROL 分析]**&#x200B;维度&#x200B;**[!UICONTROL 划分条件]**：您最多可以使用 3 个级别对维度进行划分，以挖掘您真正需要的数据。请参阅 ➊、➋ 和 ➌
+   * **[!UICONTROL 分析]**&#x200B;维度&#x200B;**[!UICONTROL 划分条件]**：您最多可以使用 3 个级别对维度进行划分，以挖掘您真正需要的数据。请参阅➊、➋和➌。
 
-   * 添加更多的量度&#x200B;**[!UICONTROL 条件]**：您最多可以添加 2 个量度。请参阅 ➍ 和 ➎。
+   * 添加更多的量度&#x200B;**[!UICONTROL 条件]**：您最多可以添加 2 个量度。查看➍和➎。
 
-   * **[!UICONTROL 分段依据]**：您最多可以再添加 2 个区段。例如，将“预订”添加为区段，并将该区段与您所比较的“预订常客”和“首次飞行的客人”区段结合起来。请参阅 ➏、➐ 和 ➑。
+   * **[!UICONTROL 分段依据]**：您最多可以再添加 2 个区段。例如，将“预订”添加为区段，并将该区段与您所比较的“预订常客”和“首次飞行的客人”区段结合起来。请参阅➏、➐和➑。
 
-   * 在：可以指定日期范围。请参阅 ➒。
+   * 在：可以指定日期范围。请参阅➒。
 
 ## 已知限制
 
