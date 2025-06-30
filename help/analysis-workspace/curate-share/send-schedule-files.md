@@ -4,14 +4,14 @@ title: 简化和共享项目概述
 feature: Curate and Share
 exl-id: d7f92e59-18e9-43cd-8121-3c970434aaee
 role: User
-source-git-commit: 70daf2251576bc3b473e63b3bb7c48f2d16dbffe
+source-git-commit: 6cbf18496585fc973414b79b5957f918a16c0459
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '186'
 ht-degree: 52%
 
 ---
 
-# 简化和共享概述
+# 简化和共享项目概述
 
 您可以使用Analysis Workspace中的&#x200B;**[!UICONTROL 共享]**&#x200B;菜单中的选项或者选择界面右上角的&#x200B;**[!UICONTROL 共享]**&#x200B;中的选项，来组织和共享项目，或者将项目作为PDF或CSV文件发送给组织中的收件人或与任何其他人。
 
