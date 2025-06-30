@@ -9,13 +9,12 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 20a7ae368a9480697b6c07e88b557fbea425a932
+source-git-commit: 9f55946efb0471e1b92e9fabedc2b3d3a7b713a8
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '1252'
 ht-degree: 98%
 
 ---
-
 
 # Adobe Customer Journey Analytics 指南 {#using}
 
@@ -48,7 +47,7 @@ ht-degree: 98%
       + [快速入门指南](/help/getting-started/cja-b2b-quick-start-guide.md)
       + [过渡指南](/help/getting-started/cja-b2b-transition.md)
 
-+ Customer Journey Analytics 和 Adobe Analytics {#compare-aa-cja}
++ 升级和比较 {#compare-aa-cja}
    + 升级到 Customer Journey Analytics {#upgrade-to-cja}
       + [快速入门](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
       + [选择您的升级路径](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
@@ -98,7 +97,7 @@ ht-degree: 98%
          + [Web SDK 实施选项](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md)
          + [为 Platform 配置 Adobe Analytics Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
          + [使用通过 Adobe Journey Optimizer 个性化](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
-   + 与 Adobe Analytics 进行比较 {#cja-aa-comparison}
+   + 与Adobe Analytics比较 {#cja-aa-comparison}
       + [概述](../getting-started/aa-vs-cja/overview.md)
       + [实用 Adobe Analytics 数据 ](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [功能支持](../getting-started/aa-vs-cja/cja-aa.md)
