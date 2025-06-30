@@ -5,10 +5,10 @@ title: 可视化概述
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 9c05319ceacb7287af7f15cfe56b8048a718559d
 workflow-type: tm+mt
 source-wordcount: '1622'
-ht-degree: 98%
+ht-degree: 95%
 
 ---
 
@@ -139,11 +139,11 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | 选项 | 描述 |
 | --- | --- |
 | **[!UICONTROL 插入复制的可视化内容]** | 将复制的可视化图表粘贴（插入）到项目中的其他位置或完全不同的项目中。 |
-| **[!UICONTROL 将数据复制到剪贴板]** | 将可视化图表中的数据复制到剪贴板上。 |
-| **[!UICONTROL 将选择复制到剪贴板]** | 将可视化图表中的选择复制到剪贴板上。 |
-| **[!UICONTROL 将项目下载为 CSV（*维度名称*）]** | 将可视化图表的维度项（最多 50,000 个）下载到本地设备。所选维度最多可有 50,000 个维度项。 |
+| **[!UICONTROL 将数据复制到剪贴板]** | [将可视化图表中的数据](/help/analysis-workspace/export/download-send.md#copy-to-clipboard)复制到剪贴板。 |
+| **[!UICONTROL 将选择复制到剪贴板]** | [将可视化图表中的选定内容](/help/analysis-workspace/export/download-send.md#copy-to-clipboard)复制到剪贴板。 |
+| **[!UICONTROL 将项目下载为 CSV（*维度名称*）]** | [将可视化图表的维度项](/help/analysis-workspace/export/download-send.md#download-items-as-csv)（最多50,000个）下载到您的本地设备。 所选维度最多可有 50,000 个维度项。 |
 | **[!UICONTROL 复制可视化图表]** | 复制可视化图表，您可以将其插入到项目中的其他位置或完全不同的项目中。 |
-| **[!UICONTROL 下载数据 CSV]** | 将可视化图表显示的数据下载到本地设备。 |
+| **[!UICONTROL 下载数据 CSV]** | [将可视化图表显示的数据](/help/analysis-workspace/export/download-send.md#download-as-csv)下载到您的本地设备。 |
 | **[!UICONTROL 导出整个表]** | 将整个表导出到指定的云位置。请参阅[将 Customer Journey Analytics 报告导出至云](../export/export-cloud.md) |
 | **[!UICONTROL 复制可视化]** | 生成一个与可视化图表完全相同的副本。 |
 | **[!UICONTROL 编辑描述]** | 添加（或编辑）可视化图表的文本描述。请参阅[文本](text.md)。 |

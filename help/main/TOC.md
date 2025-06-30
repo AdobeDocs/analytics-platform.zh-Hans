@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
 workflow-type: tm+mt
-source-wordcount: '1253'
-ht-degree: 99%
+source-wordcount: '1255'
+ht-degree: 98%
 
 ---
 
@@ -169,6 +169,7 @@ ht-degree: 99%
    + [执行高级分析](../analysis-workspace/perform-adv-analysis.md)
    + 项目 {#build-workspace-project}
       + [概述](../analysis-workspace/build-workspace-project/freeform-overview.md)
+      + [快速启动项目](/help/analysis-workspace/build-workspace-project/starter-projects.md)
       + [创建项目](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [打开项目](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [对项目的注释](/help/analysis-workspace/build-workspace-project/comment-projects.md)
@@ -242,16 +243,16 @@ ht-degree: 99%
       + [媒体播放耗时](../analysis-workspace/c-panels/media-playback-time-spent.md)
       + [下一项或上一项](../analysis-workspace/c-panels/next-previous.md)
       + [快速洞察](../analysis-workspace/c-panels/quickinsight.md)
-   + 策划、共享和计划项目 {#curate-share}
+   + 策划和共享 {#curate-share}
       + [概述](../analysis-workspace/curate-share/send-schedule-files.md)
       + [策划项目](../analysis-workspace/curate-share/curate.md)
       + [共享项目](../analysis-workspace/curate-share/share-projects.md)
       + [创建可共享链接](../analysis-workspace/curate-share/shareable-links.md)
       + [只读项目](../analysis-workspace/curate-share/view-only-projects.md)
+      + [发送和计划项目](../analysis-workspace/curate-share//t-schedule-report.md)
    + 导出 {#export}
       + [概述](../analysis-workspace/export/export-project-overview.md)
       + [下载](../analysis-workspace/export/download-send.md)
-      + [发送给其他人](../analysis-workspace/export/t-schedule-report.md)
       + [导出到云](../analysis-workspace/export/export-cloud.md)
    + 异常检测 {#anomaly-detection}
       + [概述](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)

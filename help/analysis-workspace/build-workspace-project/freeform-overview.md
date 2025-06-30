@@ -5,7 +5,7 @@ title: 项目概述
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 70daf2251576bc3b473e63b3bb7c48f2d16dbffe
 workflow-type: tm+mt
 source-wordcount: '1638'
 ht-degree: 93%
@@ -55,7 +55,7 @@ ht-degree: 93%
 | **[!UICONTROL 标题和描述]** | 要编辑项目，请选择标题链接，这会打开[工作区项目](/help/analysis-workspace/home.md)。与您共享的项目会以 ![分享](/help/assets/icons/ShareAlt.svg) 标示。选择 ![InfoOutline](/help/assets/icons/InfoOutline.svg) 以显示一个弹出菜单，其中包含有关该项目的更多详细信息。选择![更多](/help/assets/icons/More.svg)以打开带有操作选项的上下文菜单。有关更多详细信息，请参阅[操作](#actions)。 |
 | **[!UICONTROL Type]** | 工作区项目，![FolderUser](/help/assets/icons/FolderUser.svg) 文件夹，或者[移动记分卡](/help/mobile-app/home.md)。 |
 | **[!UICONTROL 标记]** | 应用于项目的标记。 |
-| **[!UICONTROL 已计划]** | 是否计划通过电子邮件将项目发送给收件人。相关选项包括 ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL 开启]**&#x200B;或者 ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL 关闭]**。请参阅[向其他人发送项目数据](/help/analysis-workspace/export/t-schedule-report.md)。 |
+| **[!UICONTROL 已计划]** | 是否计划通过电子邮件将项目发送给收件人。相关选项包括 ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL 开启]**&#x200B;或者 ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL 关闭]**。请参阅[向其他人发送项目数据](/help/analysis-workspace/curate-share/t-schedule-report.md)。 |
 | **[!UICONTROL 共享链接（任何人）]** | 是否与任何人共享项目，包括无权访问 Analysis Workspace 的人员。相关选项包括 ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL 有效]**&#x200B;或者 ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL 无效]**。有关详细信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required)。 |
 | **[!UICONTROL 项目角色]** | 您在项目中的角色。相关选项包括：编辑、复制、查看。有关更多信息，请参阅[项目角色](/help/analysis-workspace/curate-share/curate.md)。 |
 | **[!UICONTROL 数据视图]** | 与项目关联的数据视图。 |
@@ -83,7 +83,7 @@ ht-degree: 93%
 | ![CrossSize75](/help/assets/icons/Close.svg) | **[!UICONTROL *x *已选择]** | 取消选择您选择的项目和文件夹，并移除蓝色操作栏。 |
 | ![Delete](/help/assets/icons/Delete.svg) | **[!UICONTROL 删除]** | 删除一个或多个项目或文件夹。系统将提示您确认。 |
 | ![Share](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL 共享]** | 共享项目。请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)，以了解更多信息。 |
-| ![Edit](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名项目。打开&#x200B;**[!UICONTROL 重命名：*项目名称对话框&#x200B;*]**。输入新名称并选择&#x200B;**[!UICONTROL 保存&#x200B;]**。 |
+| ![Edit](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名项目。打开&#x200B;**[!UICONTROL 重命名：*项目名称对话框&#x200B;*]**。输入新名称并选择**[!UICONTROL 保存&#x200B;]**。 |
 | ![Copy](/help/assets/icons/Copy.svg) | **[!UICONTROL 复制]** | 复制一个或多个项目。相关会获得相同的名称和后缀 `(Copy)`。 |
 | ![PinOnff](/help/assets/icons/PinOff.svg) | **[!UICONTROL 固定]**&#x200B;或者&#x200B;**[!UICONTROL 取消固定]** | 固定或取消固定一个或多个项目或文件夹。固定的项目和文件夹会在列表顶部显示，并忽略您指定的排序顺序。 |
 | ![ArrowUp](/help/assets/icons/ArrowUp.svg) | **[!UICONTROL 上移]** | 将固定的项目或文件夹在项目列表中上移。 |
@@ -100,7 +100,7 @@ ht-degree: 93%
 
 您可以使用&#x200B;**[!UICONTROL Show]**&#x200B;选择器➌切换项目界面的外观。 **[!UICONTROL 显示]**&#x200B;选择器定义了[标题区域](#title-area)中可用的选项，以及[项目列表](#project-list)中显示的列。
 
-* 要更改[标题区域](#title-area)可用的选项，请选择&#x200B;**[!UICONTROL 显示]**&#x200B;**[!UICONTROL 所有项目]**&#x200B;或&#x200B;**[!UICONTROL 显示]**&#x200B;**[!UICONTROL 文件夹和项目]**。
+* 要更改[标题区域](#title-area)可用的选项，请选择&#x200B;**[!UICONTROL 显示]****[!UICONTROL 所有项目]**&#x200B;或&#x200B;**[!UICONTROL 显示]****[!UICONTROL 文件夹和项目]**。
 
 * 要定义在[项目列表](#project-list)中显示哪些列，请选择 ![ColumnSetting](/help/assets/icons/ColumnSetting.svg)，然后从&#x200B;**[!UICONTROL 自定义表格]**&#x200B;对话框中选择或取消选择列。选择&#x200B;**[!UICONTROL 应用]**&#x200B;以应用自定义设置。有关列的更多详细信息，请参阅[项目列表](#project-list)。
 
@@ -174,16 +174,16 @@ The Projects page contains the following information:
 | [Edit preferences](/help/analysis-workspace/user-preferences.md) | Manage settings for Analysis Workspace and its related components for all new projects or panels that you create.  |
 | [Create folder](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)  | Add a new folder or subfolder to the list of projects and folders. |
 | [Create project](/help/analysis-workspace/build-workspace-project/create-projects.md)  | Start a new project from scratch.  |
-|  Show more  |Reveals options for creating a blank project or mobile scorecard, [viewing training tutorials](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=zh-Hans), or [viewing release notes](/help/release-notes/latest.md).  |
+|  Show more  |Reveals options for creating a blank project or mobile scorecard, [viewing training tutorials](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html), or [viewing release notes](/help/release-notes/latest.md).  |
 | Show Folders & Projects| Choose whether to show the folder structure of projects. For more information, see [About Folders in Analytics](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 |  Customize table (icon)  | Allows you to customize the information that shows for each project on the Projects page.  |
 |  Name  | Name of the Workspace project.  |
-| Type | Indicates whether this is a Workspace Project, a folder, or a [Mobile Scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html?lang=zh-Hans). |
+| Type | Indicates whether this is a Workspace Project, a folder, or a [Mobile Scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html). |
 |  Tags  |Tags that were applied to the project.  |
 | Scheduled | Indicates whether projects are scheduled to be emailed to recipients on a schedule. See [Send project data to others](/help/analysis-workspace/export/t-schedule-report.md). |
 | Shared link (anyone) | Projects can be shared with anyone--even with people who don't have access to Analysis Workspace. This column shows whether projects have been shared in this way. See [Share a project with anyone (no login required)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Share projects](/help/analysis-workspace/curate-share/share-projects.md) for more information. |
 | Data view | The data view that the project is associated with. |
-| [Project Role](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=zh-Hans) | Indicates your role for the project - owners, edit, duplicate, view. |
+| [Project Role](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) | Indicates your role for the project - owners, edit, duplicate, view. |
 |  Owner  | The person who created this project (either you or someone who shared the project with you.)  |
 |  Shared with  | Users that the project has been shared with.  |
 |  Last Modified  | Date and time when the project was last modified.  |
@@ -206,7 +206,7 @@ Within a project, the menu provides options for managing your project, adding co
 |  Insert  | Insert new panels or visualizations from this menu. You can also insert new panels and visualizations from the left panel.  |
 |  [Components](/help/components/overview.md)  | Create new segments, calculated metric, date range, or alert components from your project. You can also create new components from the left panel. If your component definitions have recently changed, Refresh Components will retrieve the latest definitions. |
 |  [Share](/help/analysis-workspace/curate-share/send-schedule-files.md)  | Curate, share and schedule PDF/CSV projects to recipients in your organization.  |
-|  Help  | Access help documentation, videos, and the Analytics [Experience League community](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community). Manage the visibility of Workspace tips as well as the [debugger](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/apis/using-analysis-workspace-to-build-api-2-requests). Find details about Workspace and factors that impact project [performance](/help/technotes/optimizing-performance.md).  |
+|  Help  | Access help documentation, videos, and the Analytics [Experience League community](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community). Manage the visibility of Workspace tips as well as the [debugger](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/apis/using-analysis-workspace-to-build-api-2-requests). Find details about Workspace and factors that impact project [performance](/help/technotes/optimizing-performance.md).  |
 |  Share button or Owner  | If you are in an Own or Edit for the project, the Share button in the top-right gives you one-click access to manage your project recipients. If you are in a Duplicate or View role for the project, you will see the project owner's name. |
 
 ### Project Info & Settings {#info-settings}

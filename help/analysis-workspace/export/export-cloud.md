@@ -5,9 +5,9 @@ title: 将 Customer Journey Analytics 报告导出至云
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 0891aa2bed446e704b0222eff992c5f5bc200f82
+source-git-commit: 70daf2251576bc3b473e63b3bb7c48f2d16dbffe
 workflow-type: tm+mt
-source-wordcount: '2340'
+source-wordcount: '2360'
 ht-degree: 95%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 95%
    | 字段名称 | 函数 |
    |---------|----------|
    | 名称 | 指定导出内容的名称。此名称会在导出列表中显示。 |
-   | 标记 | 您可以将现有标记应用于导出内容，也可以创建新标记并应用它。 <p>要将现有标记应用于导出内容，请从下拉菜单中选择任意标记。您公司的任何标记均可应用<!-- double-check this -->。</p> <p>要创建新标记，请键入新标记的名称，然后按 Enter。</p><p>在导出内容中应用标记时，请考虑以下事项： <ul><li>您应用的标记可以在导出表中进行过滤或搜索。</li> <li>导出完整表格时，应用于项目的标记不会自动应用，如[管理导出内容](/help/components/exports/manage-exports.md)中的“在导出页面上配置列”中所述。（或者，当[计划导出整个项目](/help/analysis-workspace/export/t-schedule-report.md)，任何应用于项目的标记都会自动应用于导出内容。）<!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></li></ul> |
+   | 标记 | 您可以将现有标记应用于导出内容，也可以创建新标记并应用它。 <p>要将现有标记应用于导出内容，请从下拉菜单中选择任意标记。您公司的任何标记均可应用<!-- double-check this -->。</p> <p>要创建新标记，请键入新标记的名称，然后按 Enter。</p><p>在导出内容中应用标记时，请考虑以下事项： <ul><li>您应用的标记可以在导出表中进行过滤或搜索。</li> <li>导出完整表格时，应用于项目的标记不会自动应用，如[管理导出内容](/help/components/exports/manage-exports.md)中的“在导出页面上配置列”中所述。（或者，当[计划导出整个项目](/help/analysis-workspace/curate-share/t-schedule-report.md)，任何应用于项目的标记都会自动应用于导出内容。）<!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></li></ul> |
    | 描述 | 为导出内容添加描述。在查看导出内容时，您可以选择在[导出页面](/help/components/exports/manage-exports.md)中将描述内容视为一列进行查看。 |
    | 数据视图 | 选择包含您想要在导出内容中加入的组件的数据视图。数据视图下拉菜单位于对话框的左上角，并且可以通过数据视图图标![数据视图图标](assets/data-view-icon.png)进行识别。  <p>**注释：**&#x200B;如果您选择的数据视图缺少数据表中已包含的组件，则系统会提示您清除数据表并使用所选数据视图中包含的组件重新创建数据表。 </p> |
    | 回顾时间范围 | 选择要包含在每个导出文件中的报告时间范围。相关选项包括&#x200B;[!UICONTROL **今天**]、[!UICONTROL **昨天、**][!UICONTROL **过去 7 天**]、[!UICONTROL **过去 30 天**]、[!UICONTROL **本星期**]&#x200B;和&#x200B;[!UICONTROL **本月**]。 <p>当&#x200B;[!UICONTROL **导出频率**]&#x200B;设置为&#x200B;[!UICONTROL **立即发送（一次性）**]&#x200B;时，不显示此选项。 |
@@ -129,7 +129,9 @@ ht-degree: 95%
 
 * 导出包含多个维度的表。
 
-## 导出要求 {#export-requirements}
+## 要求和不支持的功能 {#export-requirements}
+
+本节详细说明导出数据时应考虑的最低要求和不支持的功能。
 
 ### 最低要求
 
@@ -189,11 +191,11 @@ ht-degree: 95%
 
 如果报告中使用了非默认归因模型，则会忽略或保留报告中使用的分配模型，具体取决于报告是具有单个维度还是多个维度：
 
-* **对于在单个维度中包含量度归因的报告：**&#x200B;[量度归因](/help/data-views/component-settings/attribution.md)会覆盖[分配模型](/help/data-views/component-settings/persistence.md)，就像使用量度归因时通常进行的操作一样。
+* **对于在单个维度中包含量度归因的报告：**[量度归因](/help/data-views/component-settings/attribution.md)会覆盖[分配模型](/help/data-views/component-settings/persistence.md)，就像使用量度归因时通常进行的操作一样。
 
   例如，“首次接触”量度归因会覆盖“最近”维度分配。
 
-* **对于同时包含多个维度的量度归因的报告：除了维度[分配模型](/help/data-views/component-settings/persistence.md)外，还应用了**&#x200B;[量度归因](/help/data-views/component-settings/attribution.md)。
+* **对于同时包含多个维度的量度归因的报告：除了维度[分配模型](/help/data-views/component-settings/persistence.md)外，还应用了**[量度归因](/help/data-views/component-settings/attribution.md)。
 
   例如，除了“最近”维度分配之外，还会应用“首次接触”量度归因。此外，量度归因将会应用于分配后的维度项对，就好像它们是单个维度项一样，而不是像在自由格式表中通常所做的那样，独立地应用于每个维度项。
 
