@@ -5,7 +5,7 @@ title: 如何导出项目数据
 feature: Curate and Share
 exl-id: 3d467050-4bf0-4bdb-b7d2-eba67fbd526d
 role: User
-source-git-commit: 70daf2251576bc3b473e63b3bb7c48f2d16dbffe
+source-git-commit: c91ee21a3d4e20e3bdaeb75f2011ede6eee6cba0
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 55%
@@ -35,7 +35,7 @@ ht-degree: 55%
 | 导出方法 | 如果您希望…… |
 |---------|----------|
 | [下载至您的工作站](/help/analysis-workspace/export/download-send.md) | <li>将项目下载到您的个人工作站。</li><li>仅下载临时数据（未计划）。</li> <li>最多下载50,000行。</li> <!--true? Are there 2 different options to download to your workstation?--> <!-- is this emailing it? --> |
-| [发送给其他用户](/help/analysis-workspace/curate-share/t-schedule-report.md) | <li>通过电子邮件将导出的 Customer Journey Analytics 数据发送给您组织中的其他用户。</li><li>发送临时电子邮件或按计划发送。</li> <li>电子邮件中最多包含50,000行。</li> <!--true?--> |
+| [发送给其他用户](/help/analysis-workspace/export/t-schedule-report.md) | <li>通过电子邮件将导出的 Customer Journey Analytics 数据发送给您组织中的其他用户。</li><li>发送临时电子邮件或按计划发送。</li> <li>电子邮件中最多包含50,000行。</li> <!--true?--> |
 | [导出到云应用程序](/help/analysis-workspace/export/export-cloud.md) | <li>导出到云位置，如 <ul><li>Adobe Experience Platform 数据登陆区</li><li>Google Cloud Platform</li><li>Microsoft Azure</li><li>Amazon S3</li><li>Snowflake</li></ul></li><li>即席导出数据或按计划导出数据。</li><li>存储更多 Customer Journey Analytics 数据。</li><li>导出包含数千或数百万行的完整表格。<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
 
 {style="table-layout:auto"}

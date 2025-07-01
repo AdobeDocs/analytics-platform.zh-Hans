@@ -4,7 +4,7 @@ title: 量度
 feature: Components
 exl-id: fa7c5a0f-4983-40ee-b9c1-3e10aab3fc28
 role: User
-source-git-commit: 70daf2251576bc3b473e63b3bb7c48f2d16dbffe
+source-git-commit: c91ee21a3d4e20e3bdaeb75f2011ede6eee6cba0
 workflow-type: tm+mt
 source-wordcount: '790'
 ht-degree: 42%
@@ -44,7 +44,7 @@ ht-degree: 42%
 
 使用![搜索](/help/assets/icons/Search.svg)搜索计划项目。 您还可以查看是否从“筛选器”面板应用了任何筛选器。 要删除筛选器，请为筛选器选择![CrossSize75](/help/assets/icons/CrossSize75.svg)。 要删除所有筛选器，请选择&#x200B;**[!UICONTROL 全部清除]**。
 
-要编辑计划项目，请选择计划项目的标题。 使用&#x200B;**[!UICONTROL 编辑计划项目]**&#x200B;对话框更新计划详细信息。 有关详细信息，请参阅[将文件发送给其他](../analysis-workspace/curate-share/t-schedule-report.md)。
+要编辑计划项目，请选择计划项目的标题。 使用&#x200B;**[!UICONTROL 编辑计划项目]**&#x200B;对话框更新计划详细信息。 有关详细信息，请参阅[将文件发送给其他](../analysis-workspace/export/t-schedule-report.md)。
 
 ![编辑计划项目](assets/edit-scheduled-project.png)
 
