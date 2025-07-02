@@ -1,13 +1,13 @@
 ---
 title: 管理日期范围
-description: 在 Analysis Workspace 中共享、重命名或删除日期范围。
+description: 了解如何在Analysis Workspace中管理日期范围。
 feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 12%
+source-wordcount: '603'
+ht-degree: 30%
 
 ---
 
@@ -27,11 +27,11 @@ ht-degree: 12%
 
 ### 日期范围列表
 
-日期范围列表显➊示所有日期范围。 该列表具有以下列：
+日期范围列表➊显示所有日期范围。 该列表具有以下各列：
 
-| 栏目 | 描述 |
+| 列 | 描述 |
 | --- | --- | 
-| ![星形大纲](/help/assets/icons/StarOutline.svg) | 选择支持![星型](/help/assets/icons/Star.svg)或取消支持![星型大纲](/help/assets/icons/StarOutline.svg)日期范围。 |
+| ![StarOutline](/help/assets/icons/StarOutline.svg) | 选择支持![星型](/help/assets/icons/Star.svg)或取消支持![星型大纲](/help/assets/icons/StarOutline.svg)日期范围。 |
 | **[!UICONTROL 标题和描述]** | 要编辑标题和描述，请选择标题链接，这将打开[日期范围生成器](/help/components/date-ranges/create.md#date-range-builder)。 |
 | **[!UICONTROL 所有者]** | 日期范围的所有者。 |
 | **[!UICONTROL 标记]** | 此日期范围的标记。 |
@@ -40,7 +40,7 @@ ht-degree: 12%
 
 {style="table-layout:auto"}
 
-使用![ColumnSetting](/help/assets/icons/ColumnSetting.svg)指定要显示的列。
+使用 ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) 指定您想要显示的列。
 
 ### 操作栏
 
@@ -48,27 +48,27 @@ ht-degree: 12%
 
 | 图标 | 操作 | 描述 |
 |:---:|---|---|
-| ![添加圆圈](/help/assets/icons/AddCircle.svg) | **[!UICONTROL 添加]** | 使用[日期范围生成器](create.md#date-range-builder)添加另一个日期范围。 |
-| ![搜索](/help/assets/icons/Search.svg) | [!UICONTROL *按标题搜索*] | 在列表中未选择日期范围时，使用此搜索字段搜索日期范围。 |
-| ![标签](/help/assets/icons/Label.svg) | **[!UICONTROL 标记]** | 标记选定的日期范围。 在&#x200B;**[!UICONTROL 标记日期范围]**&#x200B;对话框中，选择或取消选择选定日期范围的标记。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存选定日期范围的标记。 |
-| ![共享](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL 共享]** | 共享选定的日期范围。 在&#x200B;**[!UICONTROL 共享日期范围]**&#x200B;对话框中，您可以![搜索](/help/assets/icons/Search.svg) *搜索个人或组*，也可以选择&#x200B;**[!UICONTROL 组织]**&#x200B;或&#x200B;**[!UICONTROL 组]**。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存所选日期范围的共享详细信息。 |
-| ![删除](/help/assets/icons/Delete.svg) | **[!UICONTROL 删除]** | 删除选定的日期范围。 系统会提示您进行确认。 |
-| ![编辑](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名单个选定的日期范围。 选中后，您可以内联重命名日期范围。 |
-| ![复选标记圆](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL 批准]** | 批准选定的日期范围。 |
-| ![Copy](/help/assets/icons/Copy.svg) | **[!UICONTROL Copy]** | 复制选定的日期范围。 将使用相同的名称和后缀创建新日期范围（复制） |
-| ![文件CSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL 导出到 CSV]** | 将选定的日期范围导出到`Date ranges List.csv`文件。 |
+| ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL 添加]** | 使用[日期范围生成器](create.md#date-range-builder)添加另一个日期范围。 |
+| ![Search](/help/assets/icons/Search.svg) | [!UICONTROL *按标题搜索*] | 在列表中未选择日期范围时，使用此搜索字段搜索日期范围。 |
+| ![Label](/help/assets/icons/Label.svg) | **[!UICONTROL 标记]** | 标记选定的日期范围。 在&#x200B;**[!UICONTROL 标记日期范围]**&#x200B;对话框中，选择或取消选择选定日期范围的标记。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存选定日期范围的标记。 |
+| ![Share](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL 共享]** | 共享选定的日期范围。 在&#x200B;**[!UICONTROL 共享日期范围]**&#x200B;对话框中，您可以![搜索](/help/assets/icons/Search.svg) *搜索个人或组*，也可以选择&#x200B;**[!UICONTROL 组织]**&#x200B;或&#x200B;**[!UICONTROL 组]**。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存所选日期范围的共享详细信息。 |
+| ![Delete](/help/assets/icons/Delete.svg) | **[!UICONTROL 删除]** | 删除选定的日期范围。 系统将提示您确认。 |
+| ![Edit](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名单个选定的日期范围。 选中后，您可以内联重命名日期范围。 |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL 批准]** | 批准选定的日期范围。 |
+| ![Copy](/help/assets/icons/Copy.svg) | **[!UICONTROL 复制]** | 复制选定的日期范围。 将使用相同的名称和后缀创建新日期范围（复制） |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL 导出至 CSV]** | 将选定的日期范围导出到`Date ranges List.csv`文件。 |
 
-### 活动筛选栏
+### 活动过滤器栏
 
-筛选器栏➌显示活动的筛选器（如果有）。 您可以使用![CrossSize75](/help/assets/icons/CrossSize75.svg)快速删除筛选器。 如果指定了多个筛选器，请使用&#x200B;**[!UICONTROL 全部删除]**&#x200B;删除所有筛选器。
+筛选器栏➌显示活动的筛选器（如果有）。 您可以使用 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 快速移除过滤器。如果指定了多个筛选器，请使用&#x200B;**[!UICONTROL 全部删除]**&#x200B;删除所有筛选器。
 
 ### 过滤器面板
 
-您可以使用&#x200B;**[!UICONTROL 筛选器]**&#x200B;左侧面板筛选日期范围➍。 过滤器面板显示过滤器的类型和遵循该过滤器的日期范围的数量。 选择![筛选器](/help/assets/icons/Filter.svg)以切换筛选器面板的显示。
+您可以使用&#x200B;**[!UICONTROL 筛选器]**&#x200B;左侧面板➍来筛选日期范围。 过滤器面板显示过滤器的类型和遵循该过滤器的日期范围的数量。 选择![Filter](/help/assets/icons/Filter.svg)以切换筛选面板的显示。
 
-要筛选筛选器列表，请执行以下操作：
+若要筛选筛选列表：
 
-1. 选择![筛选器](/help/assets/icons/Filter.svg)以打开筛选器面板。 如果筛选器列表需要更多空间，您可以再次选择![筛选器](/help/assets/icons/Filter.svg)以关闭面板。
+1. 选择![Filter](/help/assets/icons/Filter.svg)以打开筛选面板。如果“筛选”列表需要更多空间，您可以再次选择![Filter](/help/assets/icons/Filter.svg)来关闭该面板。
 1. 您可以使用任何可用的[过滤分区](#filter-sections)来过滤日期范围。
 
    >[!INFO]
@@ -76,21 +76,21 @@ ht-degree: 12%
    >*项*&#x200B;是指[日期范围列表](#date-ranges-list)中显示的日期范围项。
    > 
 
-#### 筛选区域
+#### 筛选部分
 
 {{tagfiltersection}}
 {{ownerfiltersection}}
 {{otherfiltersfiltersection}}
 
 
-[日期范围列表](#date-ranges-list)会根据您的筛选器配置自动更新。 您可以在[活动筛选器栏](#active-filter-bar)中查看配置的筛选器。
+[日期范围列表](#date-ranges-list)会根据您的筛选器配置自动更新。 您可以在[启用的筛选栏](#active-filter-bar)中看到已配置的筛选。
 
 
 ## 编辑日期范围
 
 您可以通过两种方式编辑日期范围：
 
-* 在Workspace项目中，使用[组件信息](/help/components/use-components-in-workspace.md#component-info)图标。
+* 在 Workspace 项目中，使用[组件信息](/help/components/use-components-in-workspace.md#component-info)图标。
 
 * 在[[!UICONTROL 日期范围]列表](#date-ranges-list)中，选择日期范围的标题。
 

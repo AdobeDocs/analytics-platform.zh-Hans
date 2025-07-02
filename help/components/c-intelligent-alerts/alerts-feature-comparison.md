@@ -4,10 +4,10 @@ title: 警报功能比较：Customer Journey Analytics和Adobe Analytics
 feature: Workspace Basics
 role: User, Admin
 exl-id: 04e819c4-9fb5-4459-9f8b-40d78385ed90
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 22%
+source-wordcount: '558'
+ht-degree: 23%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 22%
 
 在 Customer Journey Analytics 中使用警报的过程与在 Adobe Analytics 中使用警报的过程几乎相同。然而，两者之间有着重要的区别。 以下各节描述了主要差异。
 
-## 每小时警报在Customer Journey Analytics中不可用
+## 每小时警报不可用
 
-在Customer Journey Analytics中，每小时警报不可用，就像在Adobe Analytics中一样。 在 Customer Journey Analytics 中，可以将警报配置为每日、每周或每月。
+在Customer Journey Analytics中，每小时警报是&#x200B;**非**&#x200B;可用；而在Adobe Analytics中，每小时警报可用。 在 Customer Journey Analytics 中，可以将警报配置为每日、每周或每月。
 
-这是因为在Customer Journey Analytics中报告数据之前，可以将数据摄取到Adobe Experience Platform中的各种方式。 数据完整性和可用性无法在一小时内可靠地实现，因此由于数据不完整的可能性很高，每小时警报变得不切实际。 有关详细信息，请参阅[不同的数据摄取时间](#data-ingestion-times-vary-in-customer-journey-analytics)。
+您可以通过多种方式将数据摄取到Adobe Experience Platform中。 因此，在一小时的时间范围内，数据完整性和可用性无法可靠实现。  灵活的数据摄取意味着由于极有可能出现不完整的数据，每小时的警报是不切实际的。 有关详细信息，请参阅[不同的数据摄取时间](#data-ingestion-times-vary-in-customer-journey-analytics)。
 
-## Customer Journey Analytics中的数据摄取时间各不相同
+## 数据摄取时间各不相同
 
 完成数据并在Customer Journey Analytics中报告数据之前所需的时间因组织而异。
 
@@ -45,7 +45,7 @@ ht-degree: 22%
 
 <!-- Starting with "However," the rest of this information should probably go into the actual documentation where we document the option to adjust the delay. -->
 
-## 从Analysis Workspace创建警报的选项不可用
+## 从Analysis Workspace创建警报不可用
 
 在Adobe Analytics的Analysis Workspace中，您可以通过以下描述的任何方式从Analysis Workspace创建警报。 在Customer Journey Analytics中，从Analysis Workspace创建警报的选项尚不可用。 请改为访问警报生成器，如[创建警报](/help/components/c-intelligent-alerts/alert-builder.md)中所述。
 
@@ -57,4 +57,4 @@ ht-degree: 22%
 
 * 在 Analysis Workspace 中打开一个项目，然后选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 创建警报]**。
 
-* 在Analysis Workspace中打开项目，然后使用以下快捷方式： **[!UICONTROL *ctrl *]**+**[!UICONTROL * shift *]** + **[!UICONTROL *a *]**(Windows)或&#x200B;**[!UICONTROL * cmd *]** + **[!UICONTROL *shift *]**+**[!UICONTROL * a *]** (macOS)。
+* 在Analysis Workspace中打开项目，然后使用以下快捷方式： **[!UICONTROL *ctrl *]**+**[!UICONTROL * shift *]** + **[!UICONTROL *a *]**(Windows)或**[!UICONTROL * cmd *]** + **[!UICONTROL *shift *]**+**[!UICONTROL * a *]** (macOS)。

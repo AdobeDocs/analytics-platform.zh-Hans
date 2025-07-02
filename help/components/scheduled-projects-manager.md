@@ -1,13 +1,13 @@
 ---
-description: 可通过两种方式在 Analysis Workspace 中使用量度。
-title: 量度
+description: 了解如何管理计划项目。
+title: 计划项目
 feature: Components
 exl-id: fa7c5a0f-4983-40ee-b9c1-3e10aab3fc28
 role: User
-source-git-commit: c91ee21a3d4e20e3bdaeb75f2011ede6eee6cba0
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 42%
+source-wordcount: '787'
+ht-degree: 41%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 42%
 
 ## 过滤器
 
-您可以使用筛选器面板➌筛选计划项目[计划项目列表](#scheduled-project-list)。 要显示或隐藏过滤器面板，请使用![过滤器](/help/assets/icons/Filter.svg)。
+您可以使用筛选器面板[筛选计划项目](#scheduled-project-list)计划项目列表➌。 要显示或隐藏过滤器面板，请使用![过滤器](/help/assets/icons/Filter.svg)。
 
 过滤器面板由以下部分组成。
 

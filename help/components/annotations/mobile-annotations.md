@@ -1,19 +1,19 @@
 ---
-title: 移动记分卡注释
+title: 移动批注
 description: 了解如何在移动记分卡中显示注释。
 solution: Customer Journey Analytics
 feature: Components
 exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
 role: User
-source-git-commit: 0e1654eae336f89e1574afadcd97e26798dc01a1
-workflow-type: ht
-source-wordcount: '309'
-ht-degree: 100%
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+workflow-type: tm+mt
+source-wordcount: '305'
+ht-degree: 93%
 
 ---
 
 
-# 在移动记分卡中共享注释
+# 移动记分卡批注
 
 您可以在移动记分卡中显示在 Workspace 中创建的注释。您可以使用移动记分卡中的注释分享有关您的组织和营销活动的上下文数据细节和洞察。
 
@@ -50,4 +50,4 @@ ht-degree: 100%
 
 ![Annotation mobile scorecard preview](assets/annotations-scorecard-preview.png)
 
-如果有更多注释可用，您会在注释底部看到多个点 (●)。向左或向右滑动即可在注释之间切换。
+如果有更多批注可用，您会看到批注底部出现多个圆点(●)。 向左或向右滑动即可在注释之间切换。

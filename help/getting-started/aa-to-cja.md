@@ -1,14 +1,14 @@
 ---
-title: Adobe Analytics 的演化
+title: 来自Adobe Analytics的演变
 description: 将 Adobe Analytics 数据转换为 Customer Journey Analytics 数据的步骤
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
-workflow-type: ht
-source-wordcount: '1077'
-ht-degree: 100%
+source-git-commit: 4dcf9ab808475cc3cc48cab4c076b6c3cfb66f8a
+workflow-type: tm+mt
+source-wordcount: '1075'
+ht-degree: 79%
 
 ---
 
@@ -27,17 +27,17 @@ ht-degree: 100%
 * ID 不包含 PII。将散列应用于任何可能敏感的内容。
 * ID 在所有源中使用相同的格式（相同的长度、相同的散列方法等）
 
-在 Adobe Analytics 等数据集中，可能并非每行数据都存在身份标识，但辅助身份标识确实存在。在这种情况下，当仅通过客户的 ECID 识别客户时以及收集身份标识时（例如，当客户进行身份标识验证时），可使用[跨渠道分析（也称为“拼接”）](/help/stitching/overview.md)消除行间差距。
+在 Adobe Analytics 等数据集中，可能并非每行数据都存在身份标识，但辅助身份标识确实存在。在这种情况下，[跨渠道分析（也称为拼接）](/help/stitching/overview.md)可用于在仅通过其ECID识别客户以及收集标识时（例如，当客户验证时）。
 
 ### 使您的变量保持一致
 
-将 Analytics 数据转换为 Customer Journey Analytics 数据的最直接方法是使用 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=zh-Hans) 将[全局报告包](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)纳入 Experience Platform 中。该连接器会将您的 Adobe Analytics 变量直接映射到 Experience Platform 中的 XDM 架构和数据集，然后便可以轻松连接到 Customer Journey Analytics。
+将 Analytics 数据转换为 Customer Journey Analytics 数据的最直接方法是使用 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/en/docs/analytics/implementation/prepare/global-rs) 将[全局报告包](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics)纳入 Experience Platform 中。该连接器会将您的 Adobe Analytics 变量直接映射到 Experience Platform 中的 XDM 架构和数据集，然后便可以轻松连接到 Customer Journey Analytics。
 
 完整的全局报告包可能并不总是适用于实施。如果您计划将多个报告包引入Customer Journey Analytics，您有2个选项：
 
-* 提前规划以使这些报告包中的变量保持一致。 例如，报告包 1 中的 eVar1 可能指向[!UICONTROL 页面]。在报告包 2 中，eVar1 可能指向[!UICONTROL 内部营销活动]。当被引入 Customer Journey Analytics 时，这些变量将混合到一个单一的 eVar1 维度中，从而导致潜在的混乱和不准确的报告。
+* 提前规划以使这些报告包中的变量保持一致。 例如，报告包 1 中的 eVar1 可能指向[!UICONTROL 页面]。在报告包 2 中，eVar1 可能指向[!UICONTROL 内部营销活动]。在将这些变量引入Customer Journey Analytics时，它们会混合到单个eVar1维度中，从而导致潜在的混乱和不准确的报告。
 
-* 使用[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)功能来映射变量。 虽然如果所有报告包都使用相同的常用变量设计，这样会更轻松，但是如果您使用新 Experience Platform [数据准备](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans#mapping)功能，则无需这样做。它允许您通过变量的映射值(位于数据流（或属性）级别)引用变量。
+* 使用[数据准备](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/home)功能来映射变量。 虽然如果所有报告包都使用相同的常用变量设计，这样会更轻松，但是如果您使用新 Experience Platform [数据准备](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics)功能，则无需这样做。它允许您通过变量的映射值(位于数据流（或属性）级别)引用变量。
 
 如果您因为 [!UICONTROL Uniques Exceeded] 或 [!UICONTROL Low Traffic] 问题而无法迁移到全局报告包，请注意 Customer Journey Analytics [对维度没有基数限制。](/help/components/dimensions/high-cardinality.md)它允许出现并计算任何唯一值。
 
@@ -45,13 +45,13 @@ ht-degree: 100%
 
 ### （重新）配置您的营销渠道
 
-传统的 Adobe Analytics 营销渠道设置在 Customer Journey Analytics 中的执行方式不同。这有两个原因：
+传统的 Adobe Analytics 营销渠道设置在 Customer Journey Analytics 中的执行方式不同。两者之所以不同，原因有二：
 
 * 摄取到 Adobe Experience Platform 的 Adobe Analytics 数据的处理级别，以及
 
 * Customer Journey Analytics 的报告时性质
 
-Adobe 发布了](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html?lang=zh-Hans)营销渠道实施的[最新先进实践。这些最新的推荐可帮助您用 Attribution IQ 充分利用 Adobe Analytics 中已有的功能。他们还将帮助您在过渡到 Customer Journey Analytics 时取得成功。
+Adobe 发布了](https://experienceleague.adobe.com/en/docs/analytics/components/marketing-channels/mchannel-best-practices)营销渠道实施的[最新先进实践。这些更新的推荐可帮助您通过高级归因功能充分利用Adobe Analytics中已有的功能。 这些建议还为您在过渡到Customer Journey Analytics时成功做好了准备。
 
 随着作为 Customer Journey Analytics 数据视图的一部分引入[派生字段](../data-views/derived-fields/derived-fields.md)，还使用[营销渠道功能模板](../data-views/derived-fields/derived-fields.md#function-templates)以非破坏并可追溯的方式支持营销渠道。
 
@@ -65,7 +65,7 @@ Adobe Analytics 中的报告依赖于大量数据预处理来生成结果，例�
 
 [!UICONTROL 报告时处理]开启了应用追溯设置和创建变量持久性的多个版本的能力，而无需更改基础数据的收集方式。
 
-这种转变将导致数据报告方式的一些差异，特别是对于任何可能具有较长有效期限窗口的变量。您可以从使用[虚拟报告包](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=zh-Hans)评估报告时处理如何影响您的报告开始。
+这种转变会导致数据报告方式的一些差异，特别是对于任何可能具有较长到期窗口的变量。 您可以从使用[虚拟报告包](https://experienceleague.adobe.com/en/docs/analytics/components/virtual-report-suites/vrs-report-time-processing)评估报告时处理如何影响您的报告开始。
 
 ### 识别重要区段和计算量度 {#segments-calcmetrics}
 
@@ -77,23 +77,23 @@ Adobe Analytics 区段和计算量度与 Customer Journey Analytics 不兼容。
 
 2. 记录它们的定义，以及
 
-3. 确定数据中需要哪些字段，才能在 Customer Journey Analytics 中将它们复制为[区段](/help/components/segments/seg-overview.md)和[计算量度](/help/components/calc-metrics/calc-metr-overview.md)。
+3. 确定数据中需要哪些字段以在Customer Journey Analytics中将它们复制为[区段](/help/components/segments/seg-overview.md)和[计算指标](/help/components/calc-metrics/calc-metr-overview.md)。
 
 这里有几个视频可以为您指南：
 
-* [将 Adobe Analytics 区段迁移到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=zh-Hans)
+* [将 Adobe Analytics 区段迁移到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/moving-adobe-analytics-segments-to-customer-journey-analytics.html)
 
-* [将计算量度从 Adobe Analytics 移动到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=zh-Hans)
+* [将计算量度从 Adobe Analytics 移动到 Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics)
 
 ### 其他注意事项
 
 * 使用 Customer Journey Analytics 数据视图的强大功能，您可以在 Customer Journey Analytics 中定义量度和维度时更加灵活。例如，您可以使用维度的值来定义度量。[了解详情](/help/use-cases/data-views/data-views-usecases.md)
 
-* 如果您在 Adobe Analytics 中定义了自定义日程表，那么 Customer Journey Analytics 中也将具有类似的[自定义日程表功能。](/help/components/date-ranges/overview.md)您需要确保正确定义日历。
+* 如果您在Adobe Analytics中定义了自定义日历，则在Customer Journey Analytics中可以具有类似的[自定义日历功能](/help/components/date-ranges/overview.md)。 您需要确保正确定义日历。
 
-* 在 Customer Journey Analytics 中，您可以定义自定义访问/会话超时，以及定义将启动新会话的量度。您可以创建具有不同会话定义的数据视图，以获得超越 Adobe Analytics 的洞察力。此功能可能对移动数据集特别有益。
+* 在Customer Journey Analytics中，您可以定义自定义会话超时，并定义将启动新会话的量度。 您可以创建具有不同会话定义的数据视图，以获得超越 Adobe Analytics 的洞察力。此功能可能对移动数据集特别有益。
 
-* 考虑为用户提供数据字典，或扩展SDR以包含架构元素的Experience Platform字段名称。
+* 考虑为用户提供数据字典。 或者扩展SDR以包含架构元素的Experience Platform字段名称。
 
 ### 后续步骤
 

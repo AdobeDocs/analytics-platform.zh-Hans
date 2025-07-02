@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: a3442e4cbb949228213a606b87ff65c8c562895b
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1248'
 ht-degree: 98%
 
 ---
@@ -248,10 +248,10 @@ ht-degree: 98%
       + [共享项目](../analysis-workspace/curate-share/share-projects.md)
       + [创建可共享链接](../analysis-workspace/curate-share/shareable-links.md)
       + [只读项目](../analysis-workspace/curate-share/view-only-projects.md)
-      + [发送和计划](../analysis-workspace/export/t-schedule-report.md)
    + 导出 {#export}
       + [概述](../analysis-workspace/export/export-project-overview.md)
       + [下载](../analysis-workspace/export/download-send.md)
+      + [发送和计划](../analysis-workspace/export/t-schedule-report.md)
       + [导出到云](../analysis-workspace/export/export-cloud.md)
    + 异常检测 {#anomaly-detection}
       + [概述](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
@@ -264,7 +264,8 @@ ht-degree: 98%
    + [用户偏好设置](../analysis-workspace/user-preferences.md)
    + Workspace 常见问题解答及更多信息  {#workspace-faq}
       + [常见问题解答](../analysis-workspace/workspace-faq/faq.md)
-      + [错误消息](../analysis-workspace/workspace-faq/error-messages.md)
+      + [优化性能](../analysis-workspace/workspace-faq/optimizing-performance.md)
+      + [错误和疑难解答](../analysis-workspace/workspace-faq/error-messages.md)
       + [限制](../analysis-workspace/workspace-faq/aw-limitations.md)
       + [管理要求](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [辅助功能](../analysis-workspace/workspace-faq/aw-accessibility.md)
@@ -306,21 +307,20 @@ ht-degree: 98%
 
 + 组件 {#cja-components}
    + [概述](../components/overview.md)
-   + [使用 Analysis Workspace 中的组件](../components/use-components-in-workspace.md)
+   + [使用组件](../components/use-components-in-workspace.md)
    + [添加组件描述](../components/add-component-descriptions.md)
    + 批注 {#annotations}
-      + [注释概述](../components/annotations/overview.md)
+      + [概述](../components/annotations/overview.md)
       + [创建注释](../components/annotations/create-annotations.md)
       + [管理注释](../components/annotations/manage-annotations.md)
       + [查看注释](../components/annotations/view-annotations.md)
-      + [移动注释](../components/annotations/mobile-annotations.md)
-   + [计划的项目](../components/scheduled-projects-manager.md)
+      + [移动记分卡批注](../components/annotations/mobile-annotations.md)
    + 受众 {#audiences}
       + [受众概述](../components/audiences/audiences-overview.md)
       + [创建并发布受众](../components/audiences/publish.md)
       + [管理受众](../components/audiences/manage.md)
    + 维度 {#dimensions}
-      + [维度概述](../components/dimensions/overview.md)
+      + [概述](../components/dimensions/overview.md)
       + [预览维度](../components/dimensions/view-dimensions.md)
       + [划分维度](../components/dimensions/t-breakdown-fa.md)
       + [时间划分维度](../components/dimensions/time-parting-dimensions.md)
@@ -343,7 +343,7 @@ ht-degree: 98%
       + [使用区段](/help/components/segments/seg-use.md)
    + 计算量度 {#cja-calcmetrics}
       + [概述](../components/calc-metrics/calc-metr-overview.md)
-      + 计算量度工作流程 {#cm-workflow}
+      + 工作流 {#cm-workflow}
          + [创建计算量度](../components/calc-metrics/cm-workflow/cm-workflow.md)
          + [生成计算量度](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [查找量度](../components/calc-metrics/cm-workflow/cm-finding.md)
@@ -387,6 +387,7 @@ ht-degree: 98%
       + [查看数据字典中的组件信息](../components/data-dictionary/view-data-dictionary.md)
       + [编辑数据字典中的组件条目](../components/data-dictionary/edit-entries-data-dictionary.md)
       + [监测数据字典健康状况](../components/data-dictionary/monitor-data-dictionary-health.md)
+   + [计划的项目](../components/scheduled-projects-manager.md)
 
 + Report Builder {#cja-reportbuilder}
    + [概述](../report-builder/rb-overview.md)

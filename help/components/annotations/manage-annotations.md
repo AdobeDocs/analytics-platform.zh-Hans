@@ -1,13 +1,13 @@
 ---
 title: 管理注释
-description: 如何在 Workspace 中管理注释。
+description: 如何在Analysis Workspace中管理注释。
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
-workflow-type: ht
-source-wordcount: '764'
-ht-degree: 100%
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+workflow-type: tm+mt
+source-wordcount: '761'
+ht-degree: 91%
 
 ---
 
@@ -31,9 +31,9 @@ ht-degree: 100%
 
 ### 注释列表
 
-注释列表 ➊ 显示了您拥有的注释、已覆盖到您的所有项目的注释以及已与您共享的注释。该列表具有以下各列：
+注释列表➊显示您拥有的所有注释、已覆盖到您的所有项目的注释以及与您共享的注释。 该列表具有以下各列：
 
-| 栏目 | 描述 |
+| 列 | 描述 |
 | --- | --- | 
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | 选择加入收藏 ![Star](/help/assets/icons/Star.svg) 或取消收藏 ![StarOutline](/help/assets/icons/StarOutline.svg) 一项注释。 |
 | **[!UICONTROL 标题和描述]** | 在注释生成器中提供。要编辑标题和说明，请选择标题链接：打开[注释生成器](/help/components/annotations/create-annotations.md#annotation-builder)。共享注释用![Share](/help/assets/icons/ShareAlt.svg)表示。 |
@@ -50,7 +50,7 @@ ht-degree: 100%
 
 ### 操作栏
 
-您可以使用操作栏 ➋ 对注释执行操作。操作栏包含以下操作：
+您可以使用操作栏➋对注释执行操作。 操作栏包含以下操作：
 
 | 图标 | 操作 | 描述 |
 |:--:|---|---|
@@ -65,11 +65,11 @@ ht-degree: 100%
 
 ### 活动过滤栏
 
-过滤栏 ➌ 显示活动的过滤器（如果有）。您可以使用 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 快速移除筛选条件。如果指定了多个筛选条件，则可以使用&#x200B;**[!UICONTROL 全部移除]**&#x200B;来移除所有筛选条件。
+筛选器栏➌显示活动的筛选器（如果有）。 您可以使用 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 快速移除过滤器。如果指定了多个过滤器，则可以使用&#x200B;**[!UICONTROL 全部移除]**&#x200B;来移除所有过滤器。
 
-### 筛选面板
+### 过滤器面板
 
-您可以使用&#x200B;**[!UICONTROL 筛选]**&#x200B;左侧面板 ➍ 筛选注释。筛选面板显示筛选的类型以及符合该筛选的注释数量。选择![Filter](/help/assets/icons/Filter.svg)以切换筛选面板的显示。
+您可以使用&#x200B;**[!UICONTROL 筛选器]**&#x200B;左侧面板➍筛选批注。 筛选面板显示筛选的类型以及符合该筛选的注释数量。选择![Filter](/help/assets/icons/Filter.svg)以切换筛选面板的显示。
 
 若要筛选筛选列表：
 

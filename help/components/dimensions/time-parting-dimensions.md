@@ -1,17 +1,17 @@
 ---
-description: 时间划分会采用所收集事件的时间戳，并将其划分为更有意义的维度，例如“每天时间”或“每周时间”。
+description: 了解时间划分维度如何采用所收集事件的时间戳，并将其划分为更有意义的维度，例如每天的小时或每周的某天。
 title: 时间划分维度
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
 source-wordcount: '196'
-ht-degree: 58%
+ht-degree: 61%
 
 ---
 
-# Analysis Workspace中的时间划分维度
+# 时间划分维度
 
 时间划分会采用所收集事件的时间戳，并将其划分为更有意义的维度，例如&#x200B;**小时**&#x200B;或&#x200B;**星期**。
 
@@ -24,11 +24,11 @@ ht-degree: 58%
 
 | 维度 | 示例值 |
 |--- |--- |
-| **[!UICONTROL 小时]** | 0 时至 23 时 |
+| **[!UICONTROL 这天的其中一个小时]** | 0 时至 23 时 |
 | **[!UICONTROL 上午/下午]** | 上午、下午 |
-| **[!UICONTROL 每周时间]** | 星期一、星期二、星期三、星期四、星期五、星期六、星期日 |
+| **[!UICONTROL 这周的其中一天]** | 星期一、星期二、星期三、星期四、星期五、星期六、星期日 |
 | **[!UICONTROL 工作日/周末]** | 工作日、周末 |
-| **[!UICONTROL 日期]** | 1 日至 31 日 |
-| **[!UICONTROL 月份]** | 一月至十二月 |
+| **[!UICONTROL 这月的其中一天]** | 1 日至 31 日 |
+| **[!UICONTROL 这年的其中一个月]** | 一月至十二月 |
 | **[!UICONTROL 每年的某一天]** | 第 1 天至第 366 天 |
-| **[!UICONTROL 季度]** | 第一季度、第二季度、第三季度和第四季度 |
+| **[!UICONTROL 这年的其中一个季度]** | 第一季度、第二季度、第三季度和第四季度 |

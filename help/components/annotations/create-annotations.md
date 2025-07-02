@@ -1,13 +1,13 @@
 ---
 title: 创建注释
-description: 如何在 Workspace 中创建注释。
+description: 如何在Analysis Workspace中创建注释。
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
-source-git-commit: 21935a0e9e976cd680fb036bb47f4248aaa66890
+source-git-commit: f3c9a000ae5baa19cb5a6cf0e0343de3a9685b56
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 98%
+source-wordcount: '874'
+ht-degree: 86%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="components_annotations_details"
 >title="注释详细信息"
->abstract="注释使您能够有效地将上下文数据的细微差别和洞察传达给贵组织。它们可让您将日程表活动与特定维度/量度关联起来。"
+>abstract="注释使您能够有效地将上下文数据的细微差别和见解传达给您的组织。 注释可让您将日历活动与特定维度和量度关联起来。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -50,7 +50,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="components_annotations_scope"
 >title="范围"
->abstract="您可以利用范围来自定义将要注释的数据。计算量度和区段不会自动继承其定义中使用的组件的注释。您可以将新的计算量度添加到现有注释的范围部分。新的区段需要新的注释。"
+>abstract="范围允许您自定义注释哪些数据。 计算量度和区段不会自动继承应用于其定义中所用组件的注释。 您可以将新的计算量度添加到现有注释的范围部分。新的区段需要新的注释。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -62,11 +62,11 @@ ht-degree: 98%
 
 >[!TAB 注释生成器]
 
-![Annotation details window showing fields and options described in the next section.](assets/annotation-builder.png)
+![Annotation details window showing fields and options described in the next section.](assets/annotation-builder.png){zoomable="yes"}
 
->[!TAB 创建/编辑注释]
+>[!TAB 编辑注释]
 
-![Annotation details window showing fields and options described in the next section.](assets/create-edit-annotation.png)
+![Annotation details window showing fields and options described in the next section.](assets/create-edit-annotation.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -79,9 +79,9 @@ ht-degree: 98%
    | **[!UICONTROL 标题]** ![Required](/help/assets/icons/Required.svg) | 对该注释进行命名，例如 `Needs further investigation`。 |
    | **[!UICONTROL 描述]** | 提供对该注释的描述，例如 `We never expected such a fluctuation in numbers.`。 |
    | **[!UICONTROL 标记]** | 通过创建或应用一个或多个标记来组织注释。开始键入，以查找您可以选择的现有标记。或者按&#x200B;**[!UICONTROL 输入]**&#x200B;键添加新的标记。选择 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 以移除标记。 |
-   | **[!UICONTROL 应用日期]** ![Required](/help/assets/icons/Required.svg) | 选择为了让注释可见所需的日期或日期范围。当您使用快捷方式创建注释时，注释默认为当天的日期范围。当您使用可视化中的选择创建注释时，注释默认为基于可视化所属面板的日期范围的日期范围。 |
+   | **[!UICONTROL 应用日期]** ![Required](/help/assets/icons/Required.svg) | 选择为了让注释可见所需的日期或日期范围。当您使用快捷方式创建注释时，注释默认为当天的日期范围。使用可视化图表中的选定内容创建注释时，注释会根据可视化图表所属面板的日期范围默认使用日期范围。 |
    | **[!UICONTROL 颜色]** | 将颜色应用于注释。注释以选定的颜色出现在项目中。颜色可用于对注释进行分类，例如公共假日、外部活动、跟踪问题等。 |
-   | **[!UICONTROL 范围]** | 从组件面板中拖放触发注释的量度。例如人物、会话和事件。然后从组件面板中拖放任何用作区段的维度或区段，以确定是否显示注释。如果不指定范围，则注释会应用于您的所有数据。<br/>您有两个选项：<ul><li>**[!UICONTROL 存在以下任一量度]**：拖放最多 10 个会触发注释显示的量度。<br/>例如，收入量度已停止收集特定日期范围内的数据。将收入量度拖到此框中。</li><li>**[!UICONTROL 使用所有这些区段]**：拖放最多 10 个会在注释显示时进行分段的维度或区段。</li></ul><p><p>**请注意：**&#x200B;任何应用于组件，随后用作计算量度或区段定义的一部分的注释，均不会自动继承注释。还必须将所需的计算量度添加到范围部分才能显示注释。但是，应为要用相同信息进行注释的任何区段创建新的注释。例如，您在某一天的[!UICONTROL 订单]中应用注释。然后，在相同日期范围的某个计算量度中使用[!UICONTROL 订单]。新的计算量度不会自动显示订单的注释。还要将计算量度添加到范围部分才能显示注释。 |
+   | **[!UICONTROL 范围]** | 从组件面板中拖放触发注释的量度。例如，人员、会话和事件。 然后从组件面板中拖放任何用作区段的维度或区段，以确定是否显示注释。如果不指定范围，则注释会应用于您的所有数据。<br/>您有两个选项：<ul><li>**[!UICONTROL 存在以下任一量度]**：拖放最多 10 个会触发注释显示的量度。<br/>例如，收入量度已停止收集特定日期范围的数据。 将收入量度拖到此框中。</li><li>**[!UICONTROL 使用所有这些区段]**：拖放最多 10 个会在注释显示时进行分段的维度或区段。</li></ul><p><p>**请注意：**&#x200B;任何应用于组件，随后用作计算量度或区段定义的一部分的注释，均不会自动继承注释。还必须将所需的计算量度添加到范围部分才能显示注释。但是，应为要用相同信息进行注释的任何区段创建新的注释。例如，您在某一天的[!UICONTROL 订单]中应用注释。然后，在相同日期范围的某个计算量度中使用[!UICONTROL 订单]。新的计算量度不会自动显示订单的注释。还要将计算量度添加到范围部分才能显示注释。 |
    | **[!UICONTROL 应用于所有数据视图]** | 默认情况下，注释应用于原始数据视图。通过选中此框，您可以在公司内的所有数据视图中应用注释。 |
 
    {style="table-layout:auto"}

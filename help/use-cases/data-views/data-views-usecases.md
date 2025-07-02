@@ -1,14 +1,14 @@
 ---
-title: Customer Journey Analytics 中的数据视图的用例
-description: 显示 Customer Journey Analytics 中数据视图的灵活性和强大功能的多个用例
+title: 数据视图用例
+description: 了解多个用例，这些用例显示Customer Journey Analytics中数据视图的灵活性和强大功能
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
+source-git-commit: 0e9dc47b80db142801a94dcbf31470d99a610949
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 33%
+source-wordcount: '1358'
+ht-degree: 30%
 
 ---
 
@@ -34,12 +34,12 @@ ht-degree: 33%
 
 
 
-1. 在&#x200B;**[!UICONTROL 组件]**&#x200B;选项卡上，将&#x200B;**[!UICONTROL 页面标题]**&#x200B;拖到[!UICONTROL 包含的组件]下的&#x200B;**[!UICONTROL 量度]**&#x200B;部分。
-1. 突出显示您刚才拖入的量度，并在上的&#x200B;**[!UICONTROL 组件设置]**&#x200B;中将其重命名为`Orders`
+1. 在&#x200B;**[!UICONTROL 组件]**&#x200B;选项卡上，将&#x200B;**[!UICONTROL 页面标题]**&#x200B;拖到&#x200B;**[!UICONTROL 包含的组件]**&#x200B;下的[!UICONTROL 量度]部分。
+1. 突出显示您刚才拖入的量度，并在上的`Orders`组件设置&#x200B;**[!UICONTROL 中将其重命名为]**
 1. 打开&#x200B;**[!UICONTROL 包括/排除值]**&#x200B;部分，并指定以下内容：
    1. 启用&#x200B;**[!UICONTROL 设置包括排除值]**。
    1. 从&#x200B;**[!UICONTROL 匹配]**&#x200B;中选择&#x200B;**[!UICONTROL 如果满足所有条件]**。
-   1. 指定`confirmation`。 **[!UICONTROL page_title]**&#x200B;的此文本指示此页面与下订单相关。 在查看满足这些条件的所有页面标题后，将为每个实例计算`1`。 结果是一个新量度（而非计算量度）。具有已添加/排除值的量度可用于可使用任何其他量度的任何位置。 它可与Attribution IQ、区段配合使用，以及用在可使用标准量度的任何其他位置。
+   1. 指定`confirmation`。 **[!UICONTROL page_title]**&#x200B;的文本指示此页面与下订单相关。 在查看满足这些条件的所有页面标题后，将为每个实例计算`1`。 结果是一个新量度（而非计算量度）。具有已添加/排除值的量度可用于可使用任何其他量度的任何位置。 这些量度可与归因、区段配合使用，以及用在可使用标准量度的任何其他位置。
 
    ![Dimension到指标](../assets/string-to-metric.gif){width=100%}
 1. 您可以进一步为此量度指定归因模型，例如[!UICONTROL 回顾时间范围]为[!UICONTROL 会话]的[!UICONTROL 最近联系]。
@@ -53,8 +53,8 @@ ht-degree: 33%
 
 
 
-1. 将&#x200B;**[!UICONTROL 持续时间]**&#x200B;整数拖入[!UICONTROL 包含的组件]下的&#x200B;**[!UICONTROL 维度]**&#x200B;节：
-1. 您现在可以添加&#x200B;**[!UICONTROL 值分段]**&#x200B;以分段方式在报告中表示此维度。如果不进行分段，此维度的每个实例都会显示为Workspace报表中的行项目。
+1. 将&#x200B;**[!UICONTROL 持续时间]**&#x200B;整数拖入&#x200B;**[!UICONTROL 包含的组件]**&#x200B;下的[!UICONTROL 维度]节：
+1. 您现在可以添加&#x200B;**[!UICONTROL 值分段]**以分段方式在报告中表示此维度。如果不进行分段，此维度的每个实例都会显示为Workspace报表中的行项目。
    ![整数到维度](../assets/integer-to-dimension.gif){width=100%}
 
 
@@ -62,7 +62,7 @@ ht-degree: 33%
 
 您可以使用数值维度将量度纳入[!UICONTROL 流量]可视化图表。
 
-1. 在数据视图[组件](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/create-dataview)选项卡上，将[!UICONTROL 营销渠道]架构字段拖动到[!UICONTROL [!UICONTROL 已包含组件]下的量度]区域。
+1. 在数据视图[组件](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)选项卡上，将[!UICONTROL 营销渠道]架构字段拖动到[!UICONTROL [!UICONTROL 已包含组件]下的量度]区域。
 2. 在工作区报表中，此流程显示[!UICONTROL 营销渠道]流入[!UICONTROL 订单]:
 
 ![营销渠道从电子邮件流向退出/订单。](../assets/flow.png)
@@ -73,20 +73,20 @@ ht-degree: 33%
 
 例如，使用数据视图中的包含/排除功能，仅重点关注产生的销售额超过$50的产品。 因此，如果您的订单包括$50的产品购买和$25的产品购买，则包含/排除功能会删除$25的产品购买，而不是整个订单。
 
-1. 在数据视图[组件](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/create-dataview)选项卡上，将&#x200B;**[!UICONTROL 收入]**&#x200B;架构字段拖动到&#x200B;**[!UICONTROL 量度]**&#x200B;区域中[!UICONTROL 已包含的组件]下。
+1. 在数据视图[组件](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)选项卡上，将&#x200B;**[!UICONTROL 收入]**&#x200B;架构字段拖动到&#x200B;**[!UICONTROL 量度]**&#x200B;区域中[!UICONTROL 已包含的组件]下。
 1. 选择量度并在右侧配置以下内容：
-a.在&#x200B;**[!UICONTROL Format]**&#x200B;下，选择&#x200B;**[!UICONTROL Currency]**。
-b.在&#x200B;**[!UICONTROL 货币]**&#x200B;下，选择&#x200B;**[!UICONTROL USD]**。
-c.在&#x200B;**[!UICONTROL Include/Exclude Values]**&#x200B;下，选中&#x200B;**[!UICONTROL Set include/exclude values]**&#x200B;旁边的复选框。
-d.在&#x200B;**[!UICONTROL Match]**&#x200B;下，选择&#x200B;**[!UICONTROL 如果满足所有条件]**。
-e.在&#x200B;**[!UICONTROL 标准]**&#x200B;下，选择&#x200B;**[!UICONTROL 大于或等于]**。
+a.在**[!UICONTROL Format]**&#x200B;下，选择&#x200B;**[!UICONTROL Currency]**。
+b.在**[!UICONTROL 货币]**&#x200B;下，选择&#x200B;**[!UICONTROL USD]**。
+c.在**[!UICONTROL Include/Exclude Values]**&#x200B;下，选中&#x200B;**[!UICONTROL Set include/exclude values]**旁边的复选框。
+d.在**[!UICONTROL Match]**&#x200B;下，选择&#x200B;**[!UICONTROL 如果满足所有条件]**。
+e.在**[!UICONTROL 标准]**&#x200B;下，选择&#x200B;**[!UICONTROL 大于或等于]**。
 f.指定`50`作为值。
 
 这些新设置允许您仅查看高价值收入，筛选掉任何低于 50 美元的收入。
 
 ## 使用[!UICONTROL 无值选项]设置 {#no-value}
 
-您的公司可能已花时间培训了用户，因此报告中维度预计为“未指定”。 数据视图中维的默认值为“无值”。 但是，您可以为每个维度指定如何报告无值。 有关维组件，请参阅无值选项。
+您的公司可能已花时间培训了用户，因此报告中维度预计为“未指定”。 数据视图中维度的默认值为&#x200B;*无值*。 但是，您可以为每个维度指定如何报告无值。 查看维度组件的&#x200B;**[!UICONTROL 无值]**&#x200B;选项。
 
 ![无值选项](../assets/no-value-options.gif){width=100%}
 
@@ -112,11 +112,11 @@ f.指定`50`作为值。
 
 有一个维度和两个指标可简化此报表：
 
-* [会话类型](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-reference) — 此维度有两个值：[!UICONTROL New]和[!UICONTROL Returning]。 [!UICONTROL New]行项目包括已确定为个人的首次会话的所有行为（即针对该维度的量度）。 其他所有内容都包含在[!UICONTROL 返回]的行项目中（假设所有内容都属于一个会话）。如果量度不是任何会话的一部分，则它们属于该维度的“不适用”范围。 
+* [会话类型](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) — 此维度有两个值：[!UICONTROL New]和[!UICONTROL Returning]。 [!UICONTROL New]行项目包括已确定为个人的首次会话的所有行为（即针对该维度的量度）。 其他所有内容都包含在[!UICONTROL 返回]的行项目中（假设所有内容都属于一个会话）。如果量度不是任何会话的一部分，则它们属于该维度的“不适用”范围。 
 
-* [首次会话](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-reference)。 首次会话量度被定义为个人在报告窗口内定义的首次会话。
+* [首次会话](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference)。 首次会话量度被定义为个人在报告窗口内定义的首次会话。
 
-* [返回会话](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-reference)返回会话量度是非个人首次会话的会话数。—>
+* [返回会话](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference)返回会话量度是非个人首次会话的会话数。—>
 
 要访问组件，请执行以下操作：
 
@@ -127,8 +127,7 @@ f.指定`50`作为值。
 新会话几乎总是准确报告。 唯一的例外是：
 
 * 当首次会话发生在 13 个月的回看窗口之前时。 <br/>此会话被忽略。
-
-* 当会话跨越回看窗口和报告窗口时。 <br/>例如，您从2022年6月1日到6月15日运行报告。 回看窗口期将为2021年5月1日至2022年5月31日。 如果会话从2022年5月30日开始，到2022年6月1日结束，则该会话将包含在回看窗口中。 并且报告窗口中的所有会话都计为返回会话。
+* 当会话同时跨越回看窗口和报告窗口时。<br/>例如，您从2022年6月1日到2022年6月15日运行报告。 回看窗口期将为2021年5月1日至2022年5月31日。 如果会话从2022年5月30日开始，到2022年6月1日结束，则该会话将包含在回看窗口中。 并且报告窗口中的所有会话都计为返回会话。
 
 ## 使用日期和日期时间功能 {#date}
 

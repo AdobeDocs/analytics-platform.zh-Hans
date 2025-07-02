@@ -1,13 +1,13 @@
 ---
-description: 管理员可以使用数据视图为组件添加描述。
+description: 管理员可以在数据视图中或使用数据字典为组件添加描述
 title: 添加组件描述
 feature: Components
 role: Admin
 exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
-source-git-commit: 21935a0e9e976cd680fb036bb47f4248aaa66890
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 14%
+source-wordcount: '174'
+ht-degree: 12%
 
 ---
 
@@ -32,5 +32,5 @@ Analysis Workspace中的数据字典可帮助用户和管理员跟踪并更好�
 >[!MORELIKETHIS]
 >
 >[数据视图组件设置](/help/data-views/component-settings/overview.md)
->&#x200B;>[数据字典组件条目](/help/components/data-dictionary/edit-entries-data-dictionary.md)
+>>[数据字典组件条目](/help/components/data-dictionary/edit-entries-data-dictionary.md)
 >

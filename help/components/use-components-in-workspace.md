@@ -1,13 +1,13 @@
 ---
-description: 了解如何在 Analysis Workspace 中给项目添加组件
-title: 使用 Analysis Workspace 中的组件
+description: 了解如何在Analysis Workspace中使用项目中的组件
+title: 在Analysis Workspace中使用组件
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
-workflow-type: ht
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+workflow-type: tm+mt
 source-wordcount: '952'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 

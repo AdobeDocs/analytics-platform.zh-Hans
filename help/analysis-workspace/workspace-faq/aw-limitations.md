@@ -1,13 +1,13 @@
 ---
 description: 了解有关 Adobe Analysis Workspace 及其相关组件中的已知限制
-title: Analysis Workspace 中的已知限制
+title: Analysis Workspace中的已知限制
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
-workflow-type: ht
+source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
+workflow-type: tm+mt
 source-wordcount: '313'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 

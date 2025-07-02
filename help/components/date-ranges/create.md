@@ -1,13 +1,13 @@
 ---
 title: 创建日期范围
-description: 创建要用在报告中的日期范围。
+description: 了解如何创建可在Analysis Workspace中使用的日期范围。
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: 60035b8fc65627bf5ead2a50959ce9cc5fe48604
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 98%
+source-wordcount: '539'
+ht-degree: 94%
 
 ---
 
@@ -66,8 +66,8 @@ ht-degree: 98%
 
      ![滚动日期](assets/rolliing-dates.png)
 
-      1. 选择&#x200B;**[!UICONTROL 开始]**、 **[!UICONTROL 结束]**&#x200B;或&#x200B;**[!UICONTROL 固定日期]**。
-      1. 当选择了&#x200B;**[!UICONTROL 开始]**&#x200B;或&#x200B;**[!UICONTROL 结束]**&#x200B;时，您可以生成一个完整的表达式。例如：**&#x200B;**&#x200B;**[!UICONTROL 当前季度结束]**&#x200B;**[!UICONTROL 减去]**`20`**[!UICONTROL 天]**。为表达式的每个部分选择适当的值。
+      1. 选择&#x200B;**[!UICONTROL 开始]**、**[!UICONTROL 结束]**&#x200B;或&#x200B;**[!UICONTROL 固定日期]**。
+      1. 当选择了&#x200B;**[!UICONTROL 开始]**&#x200B;或&#x200B;**[!UICONTROL 结束]**&#x200B;时，您可以生成一个完整的表达式。例如：******[!UICONTROL 当前季度结束]****[!UICONTROL 减去]**`20`**[!UICONTROL 天]**。为表达式的每个部分选择适当的值。
          * 选择当前时间的值。例如&#x200B;**[!UICONTROL 当前季度]**。
          * 选择一个值进行额外的计算。例如，**[!UICONTROL 减]**。
          * 当您指定了额外的计算时，请指定一个值。例如，`20`。

@@ -1,13 +1,13 @@
 ---
 description: 了解 Analysis Workspace 中的数据异常检测。
-title: 异常检测的工作原理
+title: 异常检测概述
 feature: Anomaly Detection
 exl-id: f706cdb9-bc80-42b9-9450-4f68bdb3fd85
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 100%
+source-wordcount: '174'
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 您可以在 Analysis Workspace 中根据上下文查看和分析数据异常。
 
-[异常检测视频教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html?lang=zh-Hans) (4:53)
+[异常检测视频教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html) (4:53)
 
 “异常检测”提供了一种统计方法来确定给定的量度相对于以前的数据发生了什么变化。
 

@@ -5,9 +5,9 @@ exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '681'
 ht-degree: 85%
 
 ---
@@ -56,7 +56,7 @@ Customer Journey Analytics允许您对跨渠道数据使用复杂的归因模型
 
 ![计算量度](../../assets/calc-metric.png)
 
-Attribution IQ还允许您对数据进行分段。 您可以看到仅针对特定用户集的归因，例如那些使用多个设备的用户。
+通过归因，您还可以对数据进行分段。 您可以看到仅针对特定用户集的归因，例如那些使用多个设备的用户。
 
 ![区段](../../assets/filter.png)
 
