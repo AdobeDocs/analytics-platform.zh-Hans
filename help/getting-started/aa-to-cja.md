@@ -31,7 +31,7 @@ ht-degree: 79%
 
 ### 使您的变量保持一致
 
-将 Analytics 数据转换为 Customer Journey Analytics 数据的最直接方法是使用 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/en/docs/analytics/implementation/prepare/global-rs) 将[全局报告包](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics)纳入 Experience Platform 中。该连接器会将您的 Adobe Analytics 变量直接映射到 Experience Platform 中的 XDM 架构和数据集，然后便可以轻松连接到 Customer Journey Analytics。
+将 Analytics 数据转换为 Customer Journey Analytics 数据的最直接方法是使用 [Adobe Analytics Source Connector](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/prepare/global-rs) 将[全局报告包](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics)纳入 Experience Platform 中。该连接器会将您的 Adobe Analytics 变量直接映射到 Experience Platform 中的 XDM 架构和数据集，然后便可以轻松连接到 Customer Journey Analytics。
 
 完整的全局报告包可能并不总是适用于实施。如果您计划将多个报告包引入Customer Journey Analytics，您有2个选项：
 
@@ -51,7 +51,7 @@ ht-degree: 79%
 
 * Customer Journey Analytics 的报告时性质
 
-Adobe 发布了[&#128279;](https://experienceleague.adobe.com/en/docs/analytics/components/marketing-channels/mchannel-best-practices)营销渠道实施的最新先进实践。这些更新的推荐可帮助您通过高级归因功能充分利用Adobe Analytics中已有的功能。 这些建议还为您在过渡到Customer Journey Analytics时成功做好了准备。
+Adobe 发布了[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/marketing-channels/mchannel-best-practices)营销渠道实施的最新先进实践。这些更新的推荐可帮助您通过高级归因功能充分利用Adobe Analytics中已有的功能。 这些建议还为您在过渡到Customer Journey Analytics时成功做好了准备。
 
 随着作为 Customer Journey Analytics 数据视图的一部分引入[派生字段](../data-views/derived-fields/derived-fields.md)，还使用[营销渠道功能模板](../data-views/derived-fields/derived-fields.md#function-templates)以非破坏并可追溯的方式支持营销渠道。
 
@@ -65,7 +65,7 @@ Adobe Analytics 中的报告依赖于大量数据预处理来生成结果，例�
 
 [!UICONTROL 报告时处理]开启了应用追溯设置和创建变量持久性的多个版本的能力，而无需更改基础数据的收集方式。
 
-这种转变会导致数据报告方式的一些差异，特别是对于任何可能具有较长到期窗口的变量。 您可以从使用[虚拟报告包](https://experienceleague.adobe.com/en/docs/analytics/components/virtual-report-suites/vrs-report-time-processing)评估报告时处理如何影响您的报告开始。
+这种转变会导致数据报告方式的一些差异，特别是对于任何可能具有较长到期窗口的变量。 您可以从使用[虚拟报告包](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/virtual-report-suites/vrs-report-time-processing)评估报告时处理如何影响您的报告开始。
 
 ### 识别重要区段和计算量度 {#segments-calcmetrics}
 
@@ -81,9 +81,9 @@ Adobe Analytics 区段和计算量度与 Customer Journey Analytics 不兼容。
 
 这里有几个视频可以为您指南：
 
-* [将 Adobe Analytics 区段迁移到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/moving-adobe-analytics-segments-to-customer-journey-analytics.html)
+* [将 Adobe Analytics 区段迁移到 Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=zh-Hans)
 
-* [将计算量度从 Adobe Analytics 移动到 Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics)
+* [将计算量度从 Adobe Analytics 移动到 Customer Journey Analytics](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics)
 
 ### 其他注意事项
 

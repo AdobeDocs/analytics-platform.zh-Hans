@@ -23,7 +23,7 @@ ht-degree: 82%
 | 功能 | 更多详细信息 |
 | --- | --- |
 | **能够组合数据集（例如 Adobe Analytics 报告包）** | 通过 Customer Journey Analytics，可从多个报告包[组合数据](/help/connections/combined-dataset.md)，如同它们是 Adobe Analytics 中的单个报告包一样。 |
-| **适用于任何类型的数据** | Customer Journey Analytics 与 Experience Platform 保存各种数据架构和类型的能力相结合。使用[体验数据模型 (XDM)](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/home)，可以采用统一的方式来表示和组织数据，以便进行数据合并和分析。Adobe Analytics 主要专注于 Web 和移动分析数据，并具有一些[数据导入](https://experienceleague.adobe.com/en/docs/analytics/import/home)功能。 |
+| **适用于任何类型的数据** | Customer Journey Analytics 与 Experience Platform 保存各种数据架构和类型的能力相结合。使用[体验数据模型 (XDM)](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/home)，可以采用统一的方式来表示和组织数据，以便进行数据合并和分析。Adobe Analytics 主要专注于 Web 和移动分析数据，并具有一些[数据导入](https://experienceleague.adobe.com/zh-hans/docs/analytics/import/home)功能。 |
 | **BI 扩展** | [BI扩展](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/data-export/bi-extension)允许您将Customer Journey Analytics直接连接到常用的BI可视化工具，如Power BI或Tableau。 通过使用此扩展，您的BI报表可以与Analysis Workspace和其他Customer Journey Analytics报表界面中看到的内容完全匹配。 此扩展提供了一种更轻松地获取Customer Journey Analytics的BI报表的方法，而无需从原始数据重新创建报表/量度。 |
 | **Content Analytics** | [Content Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/content-analytics/content-analytics) 帮助营销人员了解内容如何影响企业定义的关键绩效指标。除了行为数据之外，Content Analytics 还收集关于内容如何被消费以及内容如何产生影响的数据。 |
 | **跨设备分析** | Customer Journey Analytics 支持来自未经身份验证和经过身份验证的会话的特定于设备的数据集的无缝组合。Customer Journey Analytics 可以将历史数据回填到已知设备。在 Adobe Analytics 中，此功能仅限于单个报告包和使用设备图时。 |
@@ -51,7 +51,7 @@ ht-degree: 82%
 | **异常检测** | 全面支持 |
 | **资产转移** | 全面支持 |
 | **归因功能** | 全面支持 |
-| **机器人检测** | [全面支持](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/bot-detection) |
+| **机器人检测** | [全面支持](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/bot-detection) |
 | **计算量度** | 全面支持。传统 Analysis Workspace 中的任何现有计算量度都不会移植到 Customer Journey Analytics。 |
 | **日程表事件** | 全面支持。日程表事件在 Workspace 中已作为[注释](/help/components/annotations/overview.md)实施。 |
 | **CSV 下载** | 全面支持 |
@@ -62,7 +62,7 @@ ht-degree: 82%
 | **GDPR 删除** | 全面支持；请注意，现在与 [!UICONTROL Adobe Experience Platform] 一起处理 GDPR。Customer Journey Analytics 继承 [!UICONTROL Experience Platform] 对底层数据集所作的任何数据更改。 |
 | **提升和置信度报告** | 通过[“试验”面板](/help/analysis-workspace/c-panels/experimentation.md)提供全面支持 |
 | **列表变量/列表属性** | 全面支持。Customer Journey Analytics 使用 XDM 并支持无限的字符串数组，其使用方式与 listVars 类似。 |
-| **促销 eVar** | 通过[绑定维度和绑定量度](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)提供完全支持 |
+| **促销 eVar** | 通过[绑定维度和绑定量度](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)提供完全支持 |
 | **量度** | 全面支持；Customer Journey Analytics 利用体验数据模型 (XDM)，支持无限量的量度，并且不会与 Adobe Analytics 的自定义成功事件绑定。我们已对 Adobe Analytics 中的一些标准量度名称进行了重命名，例如：“访客”=“人员”、“访问”=“会话”、“点击”=“事件”。 |
 | **将项目、区段和计算量度从 Adobe Analytics 迁移到 Customer Journey Analytics** | 全面支持。 |
 | **移动记分卡/仪表板** | 全面支持 |
@@ -79,7 +79,7 @@ ht-degree: 82%
 | **汇总级数据源** | 全面支持 |
 | **虚拟报告包** | 全面支持。[数据视图](/help/data-views/create-dataview.md)与Adobe Analytics中的报表包等同于Customer Journey Analytics。 |
 | **虚拟报告包组件管理** | 全面支持。组件管理属于数据视图功能的一部分。 |
-| **设备、浏览器、反向链接、技术维度** | 支持基于 [Analytics Source Connector ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics)的数据集和 WebSDK 生成的数据集。请参阅[关于通过 ADC 支持哪些 Analytics 变量的文档。](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics)如果您使用 Experience Platform Web SDK 数据收藏集，则当前不支持基于设备查找的设备和维度。计划在以后提供支持。要将设备和浏览器查找功能添加到 Web SDK 数据流，请参阅[本文档](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) |
+| **设备、浏览器、反向链接、技术维度** | 支持基于 [Analytics Source Connector ](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics)的数据集和 WebSDK 生成的数据集。请参阅[关于通过 ADC 支持哪些 Analytics 变量的文档。](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics)如果您使用 Experience Platform Web SDK 数据收藏集，则当前不支持基于设备查找的设备和维度。计划在以后提供支持。要将设备和浏览器查找功能添加到 Web SDK 数据流，请参阅[本文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure) |
 
 ## 以新方式支持 {#new-support}
 
@@ -92,21 +92,21 @@ ht-degree: 82%
 | **分类** | 查找数据集与Adobe Analytics中的分类相同。 Analytics 中使用的分类可以通过分析分类源连接器导入到 Experience Platform 和 Customer Journey Analytics。查找数据集还可以直接上传到 Experience Platform 并在 Customer Journey Analytics 中提供。 |
 | **分类规则生成器** | 支持在 Customer Journey Analytics 中使用[子字符串。](/help/data-views/component-settings/substring.md)在报告时使用字符串操作，而不使用查找数据集。 |
 | **自定义会话长度** | 可通过数据视图中的[会话设置](../../data-views/create-dataview.md#session-settings)配置会话长度。有关详细信息，请参阅[会话设置](../../data-views/session-settings.md)。<br/>通过 Adobe Experience Platform Mobile SDK 支持处理移动后台事件。有关更多信息，请参阅[边缘网络的生命周期](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/)。 |
-| **货币换算** | 在数据视图中[格式化量度组件](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/format)的过程中支持。 |
+| **货币换算** | 在数据视图中[格式化量度组件](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/format)的过程中支持。 |
 | **客户属性** | 用户档案数据集相当于客户归因。 配置文件数据集不会自动从Experience Cloud导入，必须先上传到Experience Platform，然后才能在Customer Journey Analytics中使用。 |
-| **数据馈送** | 数据集的第一代数据导出可通过[ Experience Platform 数据访问 API](https://experienceleague.adobe.com/en/docs/experience-platform/data-access/api)以及[ Experience Platform 目标](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets)实现。这些选项提供了事件/行级别的导出，可将收集或摄入的所有数据导出到 Experience Platform 数据湖中。后处理数据列不可用，因为后处理列是在查询时计算的。可通过报告导出帖子列。 |
+| **数据馈送** | 数据集的第一代数据导出可通过[ Experience Platform 数据访问 API](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-access/api)以及[ Experience Platform 目标](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets)实现。这些选项提供了事件/行级别的导出，可将收集或摄入的所有数据导出到 Experience Platform 数据湖中。后处理数据列不可用，因为后处理列是在查询时计算的。可通过报告导出帖子列。 |
 | **Data Warehouse 报告** | [Customer Journey Analytics 全表导出](/help/analysis-workspace/export/export-cloud.md)从 Adobe Analytics 中的 Data Warehouse 报告演化而来，具有许多当今在 Data Warehouse 中不提供但经常有人要求提供的新功能。 |
 | **登录、退出和花费时间维度和量度** | 受支持（现在“进入次数”和“退出次数”称为“会话启动次数”和“会话结束次数”），但计算方式略有不同。 |
 | **eVar 持久性设置** | Customer Journey Analytics 中不再包括 eVar。但是，持久性设置现在是数据视图的一部分，且可用于所有维度。请记住，持久基于报告时处理，而不是数据收集处理。数据视图中的纬度集限制为 90 天最大持久性，不支持无限持久性。 |
-| **地域划分维度** | [全面支持](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) |
+| **地域划分维度** | [全面支持](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure) |
 | **基于图形的拼合** | 通过 [基于图形的拼合](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/stitching/overview#graph-based-stitching)，您可以利用 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home) 中身份图的强大功能将数据集提升到其首选身份。 |
-| **警报** | 在 Customer Journey Analytics 中使用[警报](/help/components/c-intelligent-alerts/intelligent-alerts.md)的过程与在 Adobe Analytics 中使用警报的过程几乎相同。但是，有一些[重要的不同之处](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/alerts/alerts-feature-comparison)。 |
+| **警报** | 在 Customer Journey Analytics 中使用[警报](/help/components/c-intelligent-alerts/intelligent-alerts.md)的过程与在 Adobe Analytics 中使用警报的过程几乎相同。但是，有一些[重要的不同之处](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/alerts/alerts-feature-comparison)。 |
 | **IP 模糊处理** | 对于Customer Journey Analytics客户，可使用Analytics Source Connector将数据从Adobe Analytics填充到Customer Journey Analytics中：Adobe Analytics中应用的IP模糊设置将流向Customer Journey Analytics数据。 您可以根据需要在 Adobe Analytics 中控制这些设置。<p>对于使用 Experience Platform Web SDK 将数据直接填充到 Platform 和 Customer Journey Analytics 中的 Customer Journey Analytics 客户。您可以使用 Platform 中的“数据收集数据准备”功能根据您公司的要求配置混淆 IP 地址的规则。 |
-| **营销渠道** | 使用 Analytics Source Connector 时，“营销渠道”数据会通过该连接器流入 Customer Journey Analytics。在传统的 Adobe Analytics 中配置营销渠道规则，其中不支持某些规则。有关更多信息，请参阅 [Customer Journey Analytics 营销渠道](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels)。<br/>对于 WebSDK 实施，通过[派生字段](../../data-views/derived-fields/derived-fields.md)支持报告时营销渠道处理规则。 |
-| **促销变量持久性** | 通过[绑定维度和绑定量度](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)提供完全支持 |
+| **营销渠道** | 使用 Analytics Source Connector 时，“营销渠道”数据会通过该连接器流入 Customer Journey Analytics。在传统的 Adobe Analytics 中配置营销渠道规则，其中不支持某些规则。有关更多信息，请参阅 [Customer Journey Analytics 营销渠道](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels)。<br/>对于 WebSDK 实施，通过[派生字段](../../data-views/derived-fields/derived-fields.md)支持报告时营销渠道处理规则。 |
+| **促销变量持久性** | 通过[绑定维度和绑定量度](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)提供完全支持 |
 | **量度去重** | 在数据视图中的指标上配置。 在人员或会话级别，而非数据集、数据视图或连接级别进行量度去重。 |
-| **新会话报告与重复会话报告** | 以前使用“访问次数”维度实现。支持新会话与重复会话[，回顾时间范围为13个月](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/data-views-usecases)。 |
-| **处理规则、VISTA 规则、营销渠道处理规则** | 支持使用 Adobe Experience Platform 数据准备功能以及基于 WebSDK 的数据集和 Analytics Source Connector 的数据的[派生字段。](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/derived-fields) |
+| **新会话报告与重复会话报告** | 以前使用“访问次数”维度实现。支持新会话与重复会话[，回顾时间范围为13个月](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/data-views/data-views-usecases)。 |
+| **处理规则、VISTA 规则、营销渠道处理规则** | 支持使用 Adobe Experience Platform 数据准备功能以及基于 WebSDK 的数据集和 Analytics Source Connector 的数据的[派生字段。](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/derived-fields) |
 | **Products 变量** | 在 Experience Platform 中，用户可在数据集架构中使用对象数组满足此用例。在 Customer Journey Analytics 中，客户可使用任意数量的产品变量，而不像在 Adobe Analytics 中那样只能使用一个变量。 |
 | **项目共享** | 仅在 Customer Journey Analytics 的用户之间支持项目共享功能 - 在 Customer Journey Analytics 与传统 Analysis Workspace 之间无项目共享。 |
 | **Report Builder** | 通过一个新的 Office 365 Microsoft Excel 插件支持此功能。 |

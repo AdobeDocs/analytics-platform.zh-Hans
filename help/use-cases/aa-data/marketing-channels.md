@@ -14,7 +14,7 @@ ht-degree: 49%
 
 # 使用“营销渠道”维度
 
-如果贵组织使用[Analytics Source Connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics)将报表包数据引入Customer Journey Analytics，则可以在Customer Journey Analytics中配置连接以报告“营销渠道”维度。
+如果贵组织使用[Analytics Source Connector](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics)将报表包数据引入Customer Journey Analytics，则可以在Customer Journey Analytics中配置连接以报告“营销渠道”维度。
 
 >[!IMPORTANT]
 >
@@ -24,8 +24,8 @@ ht-degree: 49%
 
 ## 先决条件
 
-* 必须已使用[Analytics源连接器](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics)将报表包数据导入Adobe Experience Platform。 不支持其他数据源，因为“营销渠道”维度依赖于 Analytics 报表包中的处理规则。
-* 必须已设置“营销渠道”维度处理规则。请参阅《Adobe Analytics组件指南》中的[营销渠道的处理规则](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules)。
+* 必须已使用[Analytics源连接器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics)将报表包数据导入Adobe Experience Platform。 不支持其他数据源，因为“营销渠道”维度依赖于 Analytics 报表包中的处理规则。
+* 必须已设置“营销渠道”维度处理规则。请参阅《Adobe Analytics组件指南》中的[营销渠道的处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules)。
 
 ## “营销渠道”架构元素
 
@@ -33,8 +33,8 @@ ht-degree: 49%
 
 1. [创建连接](/help/connections/create-connection.md)，该连接包括基于Analytics源连接器的数据集。
 2. [创建数据视图](/help/data-views/create-dataview.md)，视图中包含以下维度：
-   * **`channel.typeAtSource`**：相当于[营销渠道](https://experienceleague.adobe.com/en/docs/analytics/components/dimensions/marketing-channel)维度。
-   * **`channel._id`**：相当于[营销渠道详细信息](https://experienceleague.adobe.com/en/docs/analytics/components/dimensions/marketing-detail)
+   * **`channel.typeAtSource`**：相当于[营销渠道](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/dimensions/marketing-channel)维度。
+   * **`channel._id`**：相当于[营销渠道详细信息](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/dimensions/marketing-detail)
 3. 为每个维度提供所需的归因模型和持久性。如果要同时使用“首次接触”和“最后接触”维度，请将每个“营销渠道”维度多次拖动到组件区域。为每个维度提供所需的归因模型和持久性。Adobe 还建议为每个维度提供一个显示名称，以便于在分析工作区中使用这些维度。
 4. 创建数据视图。
 
@@ -52,7 +52,7 @@ ht-degree: 49%
 
 >[!NOTE]
 >
->为了最大化归因和Customer Journey Analytics的营销渠道效率，提供了大约[修订后的最佳实践](https://experienceleague.adobe.com/en/docs/analytics/components/marketing-channels/mchannel-best-practices)。
+>为了最大化归因和Customer Journey Analytics的营销渠道效率，提供了大约[修订后的最佳实践](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/marketing-channels/mchannel-best-practices)。
 
 “营销渠道”设置在 Platform 数据和报表包数据中的运行方式有所不同。在为Customer Journey Analytics设置营销渠道时，请考虑以下差异：
 
@@ -77,5 +77,5 @@ ht-degree: 49%
 * 确认上列体系结构差异不会影响您的比较。这些区别包括删除不覆盖最后接触渠道的渠道，以及删除作为访问（会话）的首次点击的规则条件。
 * 请仔细检查您的连接是否使用与Adobe Analytics相同的报表包。 如果您的Customer Journey Analytics连接包含多个报表包且每个报表包都有自己的“营销渠道”处理规则，则很难将其与Adobe Analytics进行比较。 您需要为每个要比较数据的报表包各创建一个连接。
 * 确保比较相同日期范围的数据，并且数据视图中的时区设置与报表包的时区相同。
-* 在查看报表包数据时使用自定义归因模型。例如，将[营销渠道](https://experienceleague.adobe.com/en/docs/analytics/components/dimensions/marketing-channel)维度与使用非默认归因模型的量度结合使用。Adobe 建议不要比较默认维度[首次接触渠道](https://experienceleague.adobe.com/en/docs/analytics/components/dimensions/first-touch-channel)或[最后接触渠道](https://experienceleague.adobe.com/en/docs/analytics/components/dimensions/last-touch-channel)，因为它们依赖于报表包中收集的归因数据。Customer Journey Analytics不依赖报表包的归因数据；相反，会在运行Customer Journey Analytics报表时计算归因数据。
+* 在查看报表包数据时使用自定义归因模型。例如，将[营销渠道](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/dimensions/marketing-channel)维度与使用非默认归因模型的量度结合使用。Adobe 建议不要比较默认维度[首次接触渠道](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/dimensions/first-touch-channel)或[最后接触渠道](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/dimensions/last-touch-channel)，因为它们依赖于报表包中收集的归因数据。Customer Journey Analytics不依赖报表包的归因数据；相反，会在运行Customer Journey Analytics报表时计算归因数据。
 * 由于报表包数据与 Platform 数据之间存在体系结构上的差异，因此无法合理比较某些量度。例如，访问/会话、人员/人员以及发生次数/事件。

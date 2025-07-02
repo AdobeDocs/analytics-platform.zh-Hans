@@ -15,7 +15,7 @@ ht-degree: 96%
 
 您可以在 Analysis Workspace 中根据上下文查看和分析数据异常。
 
-[异常检测视频教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html) (4:53)
+[异常检测视频教程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html?lang=zh-Hans) (4:53)
 
 “异常检测”提供了一种统计方法来确定给定的量度相对于以前的数据发生了什么变化。
 
