@@ -1,13 +1,13 @@
 ---
-description: Analysis Workspace中的数据字典允许用户编目并跟踪Analysis Workspace中的各种组件，包括其预期用途、已批准、重复等。
+description: Analysis Workspace 中的数据字典可帮助用户对各类组件进行归档与管理，包括其预期用途、是否已获批准、是否为重复项等信息。
 title: 数据词典概述
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
 source-git-commit: f940e5cba11df0ff158093a503213ff1641b1c5d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '569'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 82%
 >[!CONTEXTUALHELP]
 >id="component_datadictionary"
 >title="数据词典"
->abstract="数据字典可帮助用户和管理员跟踪并更好地了解其Customer Journey Analytics环境中的组件。 <br/>Customer Journey Analytics管理员负责组织有关数据字典中每个组件的信息。"
+>abstract="数据字典有助于用户和管理员更有效地追踪并理解 Customer Journey Analytics 环境中的各类组件。<br/>Customer Journey Analytics 管理员负责在数据字典中整理和维护每个组件的信息。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -30,7 +30,7 @@ Analytics 管理员负责整理有关数据词典中每个组件的信息，并�
 
 >[!BEGINSHADEBOX]
 
-观看演示视频，请参阅![VideoCheckout](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace的数据字典](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"}。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 的数据字典](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"}，以观看演示视频。
 
 {{videoaa}}
 
@@ -58,7 +58,7 @@ Analytics 管理员负责整理有关数据词典中每个组件的信息，并�
 
 数据词典帮助系统管理员跟踪和管理其 Analytics 环境中的组件。
 
-Analytics管理员可以将数据字典用于以下目的：
+Analytics 管理员可通过数据字典实现以下用途：
 
 * 识别需要合并的重复组件。
 

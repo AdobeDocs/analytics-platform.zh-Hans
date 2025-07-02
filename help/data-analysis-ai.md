@@ -6,13 +6,13 @@ solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 source-git-commit: e19151a7b0c3ab2f9e532034d329896768ee095f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1972'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# 使用Data Insights Agent可视化数据
+# 使用 Data Insights 代理可视化数据
 
 >[!AVAILABILITY]
 >
@@ -39,9 +39,9 @@ Data Insights 代理可从 Customer Journey Analytics 中的 AI 助手访问，�
 | **反馈机制** | <ul><li>拇指向上</li><li>拇指向下</li><li>标记</li></ul> |  |
 
 
-## 管理对Data Insights Agent的访问
+## 管理对 Data Insights 代理的访问权限
 
-以下参数控制着对 Customer Journey Analytics 中 Data Insights 代理的访问权限：
+以下参数控制 Customer Journey Analytics 中对 Data Insights 代理的访问权限：
 
 * **解决方案访问权限**：作为有限访问权限计划的一部分，截至 2025 年 11 月 30 日，Data Insights 代理可供所有 Customer Journey Analytics 客户使用。它在 Adobe Analytics 中不可用。
 
@@ -144,7 +144,7 @@ Data Insights 代理可从 Customer Journey Analytics 中的 AI 助手访问，�
 
 **提示词：**&#x200B;在提示词窗口中输入&#x200B;*“添加利润。”*
 
-**回答：**&#x200B;**[!UICONTROL 条形]**&#x200B;图仍然提供了最简洁的回答，而利润量度被添加到自由格式表中成为一列：
+**回答：****[!UICONTROL 条形]**&#x200B;图仍然提供了最简洁的回答，而利润量度被添加到自由格式表中成为一列：
 
 ![条形图](/help/assets/ai-asst-result4.png)
 

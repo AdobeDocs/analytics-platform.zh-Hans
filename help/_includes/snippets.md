@@ -1,8 +1,8 @@
 ---
 source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4947'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 # 片段
@@ -57,7 +57,7 @@ ht-degree: 99%
 
 ## 视频演示 Adobe Analytics {#videoaa}
 
-该视频演示了使用 Adobe Analytics 的功能。然而，该功能在 Customer Journey Analytics 中同样可用。了解Adobe Analytics和Customer Journey Analytics之间的术语差异（例如，*访问*&#x200B;与&#x200B;*会话*）。
+该视频演示了使用 Adobe Analytics 的功能。然而，该功能在 Customer Journey Analytics 中同样可用。请注意 Adobe Analytics 与 Customer Journey Analytics 之间的术语差异（例如&#x200B;*访问次数*&#x200B;与&#x200B;*会话*&#x200B;的不同）。
 
 
 ## 标记过滤器部分 {#tagfiltersection}
