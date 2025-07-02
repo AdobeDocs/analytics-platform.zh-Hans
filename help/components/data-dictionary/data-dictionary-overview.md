@@ -1,11 +1,11 @@
 ---
 description: Analysis Workspace 中的数据字典可帮助用户对各类组件进行归档与管理，包括其预期用途、是否已获批准、是否为重复项等信息。
-title: 数据词典概述
+title: 数据字典概述
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
 source-git-commit: f940e5cba11df0ff158093a503213ff1641b1c5d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 100%
 
@@ -17,15 +17,15 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="component_datadictionary"
->title="数据词典"
+>title="数据字典"
 >abstract="数据字典有助于用户和管理员更有效地追踪并理解 Customer Journey Analytics 环境中的各类组件。<br/>Customer Journey Analytics 管理员负责在数据字典中整理和维护每个组件的信息。"
 
 <!-- markdownlint-enable MD034 -->
 
 
-Analysis Workspace 中的数据词典可帮助用户和管理员跟踪并更好地了解其 Analytics 环境中的组件。
+Analysis Workspace 中的数据字典可帮助用户和管理员跟踪并更好地了解其 Analytics 环境中的组件。
 
-Analytics 管理员负责整理有关数据词典中每个组件的信息，并将其提供给用户。
+Analytics 管理员负责整理有关数据字典中每个组件的信息，并将其提供给用户。
 
 
 >[!BEGINSHADEBOX]
@@ -40,7 +40,7 @@ Analytics 管理员负责整理有关数据词典中每个组件的信息，并�
 
 ## 对用户的好处
 
-数据词典帮助用户更好地了解他们可用的每个组件。
+数据字典帮助用户更好地了解他们可用的每个组件。
 
 数据词典中可用的信息包括：
 
@@ -56,7 +56,7 @@ Analytics 管理员负责整理有关数据词典中每个组件的信息，并�
 
 ## 对管理员的好处
 
-数据词典帮助系统管理员跟踪和管理其 Analytics 环境中的组件。
+数据字典帮助系统管理员跟踪和管理其 Analytics 环境中的组件。
 
 Analytics 管理员可通过数据字典实现以下用途：
 
@@ -95,18 +95,18 @@ Customer Journey Analytics 管理员负责为其组织维护健康的数据字�
 
 ## 移动、最小化或关闭数据字典
 
-当您打开数据词典时（如[访问数据词典](#access-the-data-dictionary)中所述），它显示为 Analysis Workspace 顶部的一个窗口。
+当您打开数据字典时（如[访问数据字典](#access-the-data-dictionary)中所述），它显示为 Analysis Workspace 顶部的一个窗口。
 
-您可以通过以下任何方式操作“数据词典”窗口：
+您可以通过以下任何方式操作“数据字典”窗口：
 
 * 将其拖动到 Analysis Workspace 中的任何区域
 
-  如果您关闭并重新打开 Analysis Workspace，“数据词典”窗口将保留在您上次移动它的位置上。<!--True?-->
+  如果您关闭并重新打开 Analysis Workspace，“数据字典”窗口将保留在您上次移动它的位置上。<!--True?-->
 
 * 最小化窗口。
 
-  最小化时，数据词典在 Analysis Workspace 的右下角显示为蓝色选项卡。
+  最小化时，数据字典在 Analysis Workspace 的右下角显示为蓝色选项卡。
 
-  当您选择蓝色选项卡时，数据词典将打开您最近查看的组件。
+  当您选择蓝色选项卡时，数据字典将打开您最近查看的组件。
 
 * 关闭窗口。
