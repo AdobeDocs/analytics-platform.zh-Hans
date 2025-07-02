@@ -51,7 +51,7 @@ ht-degree: 79%
 
 * Customer Journey Analytics 的报告时性质
 
-Adobe 发布了](https://experienceleague.adobe.com/en/docs/analytics/components/marketing-channels/mchannel-best-practices)营销渠道实施的[最新先进实践。这些更新的推荐可帮助您通过高级归因功能充分利用Adobe Analytics中已有的功能。 这些建议还为您在过渡到Customer Journey Analytics时成功做好了准备。
+Adobe 发布了[&#128279;](https://experienceleague.adobe.com/en/docs/analytics/components/marketing-channels/mchannel-best-practices)营销渠道实施的最新先进实践。这些更新的推荐可帮助您通过高级归因功能充分利用Adobe Analytics中已有的功能。 这些建议还为您在过渡到Customer Journey Analytics时成功做好了准备。
 
 随着作为 Customer Journey Analytics 数据视图的一部分引入[派生字段](../data-views/derived-fields/derived-fields.md)，还使用[营销渠道功能模板](../data-views/derived-fields/derived-fields.md#function-templates)以非破坏并可追溯的方式支持营销渠道。
 

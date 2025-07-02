@@ -67,7 +67,7 @@ ht-degree: 94%
      ![滚动日期](assets/rolliing-dates.png)
 
       1. 选择&#x200B;**[!UICONTROL 开始]**、**[!UICONTROL 结束]**&#x200B;或&#x200B;**[!UICONTROL 固定日期]**。
-      1. 当选择了&#x200B;**[!UICONTROL 开始]**&#x200B;或&#x200B;**[!UICONTROL 结束]**&#x200B;时，您可以生成一个完整的表达式。例如：******[!UICONTROL 当前季度结束]****[!UICONTROL 减去]**`20`**[!UICONTROL 天]**。为表达式的每个部分选择适当的值。
+      1. 当选择了&#x200B;**[!UICONTROL 开始]**&#x200B;或&#x200B;**[!UICONTROL 结束]**&#x200B;时，您可以生成一个完整的表达式。例如：**&#x200B;**&#x200B;**[!UICONTROL 当前季度结束]**&#x200B;**[!UICONTROL 减去]**`20`**[!UICONTROL 天]**。为表达式的每个部分选择适当的值。
          * 选择当前时间的值。例如&#x200B;**[!UICONTROL 当前季度]**。
          * 选择一个值进行额外的计算。例如，**[!UICONTROL 减]**。
          * 当您指定了额外的计算时，请指定一个值。例如，`20`。

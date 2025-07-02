@@ -54,7 +54,7 @@ ht-degree: 30%
 
 
 1. 将&#x200B;**[!UICONTROL 持续时间]**&#x200B;整数拖入&#x200B;**[!UICONTROL 包含的组件]**&#x200B;下的[!UICONTROL 维度]节：
-1. 您现在可以添加&#x200B;**[!UICONTROL 值分段]**以分段方式在报告中表示此维度。如果不进行分段，此维度的每个实例都会显示为Workspace报表中的行项目。
+1. 您现在可以添加&#x200B;**[!UICONTROL 值分段]**&#x200B;以分段方式在报告中表示此维度。如果不进行分段，此维度的每个实例都会显示为Workspace报表中的行项目。
    ![整数到维度](../assets/integer-to-dimension.gif){width=100%}
 
 
@@ -75,11 +75,11 @@ ht-degree: 30%
 
 1. 在数据视图[组件](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)选项卡上，将&#x200B;**[!UICONTROL 收入]**&#x200B;架构字段拖动到&#x200B;**[!UICONTROL 量度]**&#x200B;区域中[!UICONTROL 已包含的组件]下。
 1. 选择量度并在右侧配置以下内容：
-a.在**[!UICONTROL Format]**&#x200B;下，选择&#x200B;**[!UICONTROL Currency]**。
-b.在**[!UICONTROL 货币]**&#x200B;下，选择&#x200B;**[!UICONTROL USD]**。
-c.在**[!UICONTROL Include/Exclude Values]**&#x200B;下，选中&#x200B;**[!UICONTROL Set include/exclude values]**旁边的复选框。
-d.在**[!UICONTROL Match]**&#x200B;下，选择&#x200B;**[!UICONTROL 如果满足所有条件]**。
-e.在**[!UICONTROL 标准]**&#x200B;下，选择&#x200B;**[!UICONTROL 大于或等于]**。
+a.在&#x200B;**[!UICONTROL Format]**&#x200B;下，选择&#x200B;**[!UICONTROL Currency]**。
+b.在&#x200B;**[!UICONTROL 货币]**&#x200B;下，选择&#x200B;**[!UICONTROL USD]**。
+c.在&#x200B;**[!UICONTROL Include/Exclude Values]**&#x200B;下，选中&#x200B;**[!UICONTROL Set include/exclude values]**&#x200B;旁边的复选框。
+d.在&#x200B;**[!UICONTROL Match]**&#x200B;下，选择&#x200B;**[!UICONTROL 如果满足所有条件]**。
+e.在&#x200B;**[!UICONTROL 标准]**&#x200B;下，选择&#x200B;**[!UICONTROL 大于或等于]**。
 f.指定`50`作为值。
 
 这些新设置允许您仅查看高价值收入，筛选掉任何低于 50 美元的收入。

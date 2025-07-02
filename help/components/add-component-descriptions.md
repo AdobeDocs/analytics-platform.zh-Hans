@@ -32,5 +32,5 @@ Analysis Workspace中的数据字典可帮助用户和管理员跟踪并更好�
 >[!MORELIKETHIS]
 >
 >[数据视图组件设置](/help/data-views/component-settings/overview.md)
->>[数据字典组件条目](/help/components/data-dictionary/edit-entries-data-dictionary.md)
+>&#x200B;>[数据字典组件条目](/help/components/data-dictionary/edit-entries-data-dictionary.md)
 >
