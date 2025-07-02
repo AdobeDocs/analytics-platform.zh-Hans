@@ -111,7 +111,7 @@ ht-degree: 42%
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [提高生产力的提示](https://video.tv.adobe.com/v/31157?quality=12&learn=on){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [提高生产力的提示](https://video.tv.adobe.com/v/33228?quality=12&learn=on&captions=chi_hans){target="_blank"}。
 
 >[!ENDSHADEBOX]
 
