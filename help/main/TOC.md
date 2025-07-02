@@ -384,9 +384,9 @@ ht-degree: 98%
       + [导出故障诊断](/help/components/exports/troubleshoot-exports.md)
    + 数据词典 {#data-dictionary}
       + [概述](../components/data-dictionary/data-dictionary-overview.md)
-      + [查看数据词典中的组件信息](../components/data-dictionary/view-data-dictionary.md)
-      + [编辑数据词典中的组件条目](../components/data-dictionary/edit-entries-data-dictionary.md)
-      + [监测数据词典健康状况](../components/data-dictionary/monitor-data-dictionary-health.md)
+      + [查看数据字典中的组件信息](../components/data-dictionary/view-data-dictionary.md)
+      + [编辑数据字典中的组件条目](../components/data-dictionary/edit-entries-data-dictionary.md)
+      + [监测数据字典健康状况](../components/data-dictionary/monitor-data-dictionary-health.md)
 
 + Report Builder {#cja-reportbuilder}
    + [概述](../report-builder/rb-overview.md)
