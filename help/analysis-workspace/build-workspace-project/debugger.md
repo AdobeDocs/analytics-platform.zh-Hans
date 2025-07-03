@@ -17,7 +17,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->若要使用调试器，您必须拥有对项目&#x200B;**的**&#x200B;编辑&#x200B;**或**&#x200B;复制[ ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25744)访问权限。
+>若要使用调试器，您必须拥有对项目&#x200B;**的**&#x200B;编辑&#x200B;**或**&#x200B;复制[&#128279;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25744)访问权限。
 >
 
 
