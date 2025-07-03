@@ -5,17 +5,17 @@ solution: Customer Journey Analytics
 feature: Components
 exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
 role: User
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 93%
+source-wordcount: '306'
+ht-degree: 88%
 
 ---
 
 
 # 移动记分卡批注
 
-您可以在移动记分卡中显示在 Workspace 中创建的注释。您可以使用移动记分卡中的注释分享有关您的组织和营销活动的上下文数据细节和洞察。
+您可以在移动记分卡中显示在Analysis Workspace中创建的批注。 您可以使用移动记分卡中的注释分享有关您的组织和营销活动的上下文数据细节和洞察。
 
 
 ## 在移动记分卡中显示注释

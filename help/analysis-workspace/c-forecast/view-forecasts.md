@@ -4,10 +4,10 @@ title: 如何在Analysis Workspace中查看预测
 feature: Visualizations
 role: User
 exl-id: 4a8b602c-e6aa-4a46-bba9-642387e6af88
-source-git-commit: fea1b12a594a820ab2e55f850ca95c5a373184f0
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 2%
+source-wordcount: '367'
+ht-degree: 3%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ## 在表中查看预测
 
-您可以在时间序列自由格式表中查看预测。 在[用户首选项](../user-preferences.md)中为自由格式表启用[!UICONTROL 显示预测]时，将自动显示添加到该表的第一个量度列的预测。 对于任何其他列：
+您可以在时间序列自由格式表中查看预测。 在[!UICONTROL 用户首选项]中为自由格式表启用[显示预测](../user-preferences.md)时，将自动显示添加到该表的第一个量度列的预测。 对于任何其他列：
 
 1. 在列标题中选择列设置图标![列设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg)，然后确保在选项列表中选择&#x200B;**[!UICONTROL 显示预测]**。 有关更多信息，请参阅[列设置](../visualizations/freeform-table/column-row-settings/column-settings.md)。
 
@@ -28,7 +28,7 @@ ht-degree: 2%
 ![在表](assets/show-forecast-table.png)中显示预测
 
 * 每个单元格的预测值和百分比以&#x200B;**深灰色**&#x200B;显示。
-* 要指明预测值，请使用预测符号 <img src="./assets/forecast.svg" alt="预测符号" width="20" />显示在单元格的右上角。
+* 为了指示预测值，单元格的右上角会显示预测符号![ForecastAnalytics](/help/assets/icons/ForecastAnalytics.svg)。
 
 
 ## 在折线图中查看预测

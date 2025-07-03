@@ -1,12 +1,12 @@
 ---
 title: 查看注释
-description: 如何在Analysis Workspace中查看注释。
+description: 了解如何在Analysis Workspace中查看注释。
 role: User
 feature: Components
 exl-id: c0e4fb37-b20c-463c-b29a-310ca3adb2c7
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '220'
 ht-degree: 86%
 
 ---

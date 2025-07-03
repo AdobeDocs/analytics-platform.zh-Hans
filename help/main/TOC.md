@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 98%
+source-wordcount: '1249'
+ht-degree: 99%
 
 ---
 
@@ -97,7 +97,7 @@ ht-degree: 98%
          + [Web SDK 实施选项](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md)
          + [为 Platform 配置 Adobe Analytics Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
          + [使用通过 Adobe Journey Optimizer 个性化](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
-   + 与Adobe Analytics比较 {#cja-aa-comparison}
+   + 与 Adobe Analytics 进行比较 {#cja-aa-comparison}
       + [概述](../getting-started/aa-vs-cja/overview.md)
       + [实用 Adobe Analytics 数据 ](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [功能支持](../getting-started/aa-vs-cja/cja-aa.md)
@@ -182,6 +182,7 @@ ht-degree: 98%
       + [热键](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [调色板](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [视图密度](../analysis-workspace/build-workspace-project/view-density.md)
+      + [调试程序](../analysis-workspace/build-workspace-project/debugger.md)
    + 模板 {#templates}
       + [使用模板](../analysis-workspace/templates/use-templates.md)
       + [创建和管理模板](../analysis-workspace/templates/create-templates.md)
@@ -242,7 +243,7 @@ ht-degree: 98%
       + [媒体播放耗时](../analysis-workspace/c-panels/media-playback-time-spent.md)
       + [下一项或上一项](../analysis-workspace/c-panels/next-previous.md)
       + [快速洞察](../analysis-workspace/c-panels/quickinsight.md)
-   + 策划和共享 {#curate-share}
+   + 策划和共享  {#curate-share}
       + [概述](../analysis-workspace/curate-share/send-schedule-files.md)
       + [策划项目](../analysis-workspace/curate-share/curate.md)
       + [共享项目](../analysis-workspace/curate-share/share-projects.md)

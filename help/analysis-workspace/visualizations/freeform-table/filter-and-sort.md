@@ -1,23 +1,23 @@
 ---
 description: 了解如何在Analysis Workspace中过滤和排序自由格式表。
-title: 对表进行过滤和排序
+title: 过滤和排序
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '841'
 ht-degree: 97%
 
 ---
 
-# 筛选和排序自由格式表
+# 过滤和排序
 
 Analysis Workspace 中的自由格式表是进行交互式数据分析的基础。因此，它们可以包含数千行信息。对数据进行过滤和排序是有效地呈现最重要信息的关键部分。
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/327345?captions=chi_hans)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## 过滤表格
 

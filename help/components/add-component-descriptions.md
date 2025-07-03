@@ -1,13 +1,13 @@
 ---
-description: 管理员可以在数据视图中或使用数据字典为组件添加描述
+description: 了解管理员如何使用数据视图或数据字典向组件添加说明。
 title: 添加组件描述
 feature: Components
 role: Admin
 exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 12%
+source-wordcount: '168'
+ht-degree: 17%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 12%
 
 Customer Journey Analytics管理员可以在数据视图内或使用数据字典为组件（维度、量度、区段和日期范围）添加描述。
 
-## 在数据视图中添加描述
+## 数据视图
 
 您可以向已添加到数据视图的组件添加说明。 查看[组件设置](/help/data-views/component-settings/overview.md)。
 
-## 使用数据字典添加描述
+## 数据字典
 
 Analysis Workspace中的数据字典可帮助用户和管理员跟踪并更好地了解其Customer Journey Analytics环境中的组件。 数据字典包括管理员直接在Analysis Workspace中添加组件描述的功能。
 
@@ -32,5 +32,5 @@ Analysis Workspace中的数据字典可帮助用户和管理员跟踪并更好�
 >[!MORELIKETHIS]
 >
 >[数据视图组件设置](/help/data-views/component-settings/overview.md)
->&#x200B;>[数据字典组件条目](/help/components/data-dictionary/edit-entries-data-dictionary.md)
+>>[数据字典组件条目](/help/components/data-dictionary/edit-entries-data-dictionary.md)
 >

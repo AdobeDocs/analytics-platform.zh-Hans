@@ -4,10 +4,10 @@ title: 关键量度摘要
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 97%
+source-wordcount: '948'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 97%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中的关键量度摘要可视化图表。_<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** 版本的[关键量度摘要](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/key-metric)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的关键量度摘要可视化图表。_<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版本的[关键量度摘要](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/key-metric)。_
 
 >[!ENDSHADEBOX]
 
@@ -141,18 +141,16 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 ## 编辑可视化图表
 
-生成可视化图表后，您仍然可以编辑原始配置。
+构建可视化图表后，您可以编辑原始配置。
 
-1. 单击可视化图表右上角的铅笔图标（设置齿轮图标旁边）。
+1. 选择可视化图表右上角的![编辑](/help/assets/icons/Edit.svg)。
 
-   ![可视化图表编辑图标](assets/edit-icon.png)
-
-   现在，您将返回到原始配置视图。
+   现在您将返回到原始[配置视图](#configure)。
 
 1. 根据需要更改量度、主要日期范围、比较日期范围或区段。
 
 >[!MORELIKETHIS]
 >
 >[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[可视化图表设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[可视化图表上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[可视化图表设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[可视化图表上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)

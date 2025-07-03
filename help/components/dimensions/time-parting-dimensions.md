@@ -1,13 +1,13 @@
 ---
-description: 了解时间划分维度如何采用所收集事件的时间戳，并将其划分为更有意义的维度，例如每天的小时或每周的某天。
+description: 了解时间划分维度如何采用所收集事件的时间戳，并将这些事件划分为更有意义的维度，例如每天时间或每周时间。
 title: 时间划分维度
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
 role: User
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 61%
+source-wordcount: '198'
+ht-degree: 60%
 
 ---
 
