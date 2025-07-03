@@ -17,7 +17,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->若要使用调试器，您必须拥有对项目&#x200B;**的**&#x200B;编辑&#x200B;**或**&#x200B;复制[ ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25744)访问权限。
+>若要使用调试器，您必须拥有对项目&#x200B;**的**&#x200B;编辑&#x200B;**或**&#x200B;复制[&#128279;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25744)访问权限。
 >
 
 
@@ -75,7 +75,7 @@ ht-degree: 3%
    * JSON（响应）
    * cURL 请求
 
-1. 使用![cURL请求](/help/assets/icons/Copy.svg)下的[!UICONTROL 复制] ****[!UICONTROL 复制到剪贴板]****d以将请求复制到剪贴板。
+1. 使用![cURL请求](/help/assets/icons/Copy.svg)下的[!UICONTROL 复制] **&#x200B;**&#x200B;[!UICONTROL 复制到剪贴板]&#x200B;**&#x200B;**&#x200B;d以将请求复制到剪贴板。
 1. 将鼠标悬停在任何&#x200B;**[!UICONTROL 请求]**&#x200B;或&#x200B;**[!UICONTROL 响应]**&#x200B;文本区域上以显示并选择![复制](/help/assets/icons/Copy.svg) **[!UICONTROL 复制到剪贴板]**&#x200B;以将该文本区域（XML或JSON）的内容复制到剪贴板。
 
 1. 交换您复制的任何信息以及Adobe支持部门请求对您的Analysis Workspace项目中的可视化图表进行故障排除的信息。
