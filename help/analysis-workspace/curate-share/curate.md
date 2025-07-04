@@ -1,14 +1,14 @@
 ---
-description: 了解如何在Analysis Workspace中策划项目。 策划限制了在共享项目之前对组件的访问。
+description: 了解如何在 Analysis Workspace 中策划项目。在共享项目之前，策划功能可用于限制对组件的访问权限。
 keywords: Analysis Workspace 策划
 title: 策划项目
 feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
 role: User
 source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '500'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 

@@ -6,15 +6,15 @@ feature: Curate and Share
 exl-id: 3d467050-4bf0-4bdb-b7d2-eba67fbd526d
 role: User
 source-git-commit: c91ee21a3d4e20e3bdaeb75f2011ede6eee6cba0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '297'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
 # 导出概述
 
-您可以从Analysis Workspace导出（部分）Customer Journey Analytics项目。 出于多种原因，您可能希望导出Customer Journey Analytics报表，例如，要在第三方工具中使用或与外部数据相结合。
+您可以从 Analysis Workspace 导出（部分）Customer Journey Analytics 项目。您可能出于多种原因想要导出 Customer Journey Analytics 报告，例如在第三方工具中使用或与外部数据结合使用。
 
 以下部分介绍了受支持的文件类型、可用于导出的各种方法以及每种方法的优点。
 
@@ -30,12 +30,12 @@ ht-degree: 55%
 
 ## 导出方法
 
-当您要从Analysis Workspace导出时，可以使用多种方法。 在选择导出方法时，请考虑要导出的内容以及需要访问导出方法的用户。
+从 Analysis Workspace 导出内容时，您可以选择多种方法。选择导出方法时，请考虑您要导出什么以及谁需要访问它。
 
-| 导出方法 | 如果您希望…… |
+| 导出方法 | 如果您想要执行以下操作，请使用此方法： |
 |---------|----------|
-| [下载至您的工作站](/help/analysis-workspace/export/download-send.md) | <li>将项目下载到您的个人工作站。</li><li>仅下载临时数据（未计划）。</li> <li>最多下载50,000行。</li> <!--true? Are there 2 different options to download to your workstation?--> <!-- is this emailing it? --> |
-| [发送给其他用户](/help/analysis-workspace/export/t-schedule-report.md) | <li>通过电子邮件将导出的 Customer Journey Analytics 数据发送给您组织中的其他用户。</li><li>发送临时电子邮件或按计划发送。</li> <li>电子邮件中最多包含50,000行。</li> <!--true?--> |
-| [导出到云应用程序](/help/analysis-workspace/export/export-cloud.md) | <li>导出到云位置，如 <ul><li>Adobe Experience Platform 数据登陆区</li><li>Google Cloud Platform</li><li>Microsoft Azure</li><li>Amazon S3</li><li>Snowflake</li></ul></li><li>即席导出数据或按计划导出数据。</li><li>存储更多 Customer Journey Analytics 数据。</li><li>导出包含数千或数百万行的完整表格。<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
+| [下载至您的工作站](/help/analysis-workspace/export/download-send.md) | <li>将项目下载到您的个人工作站。</li><li>仅下载临时数据（不包含预定数据）。</li> <li>下载最多 50,000 行数据。</li> <!--true? Are there 2 different options to download to your workstation?--> <!-- is this emailing it? --> |
+| [发送给其他用户](/help/analysis-workspace/export/t-schedule-report.md) | <li>通过电子邮件将导出的 Customer Journey Analytics 数据发送给您组织中的其他用户。</li><li>按需或按预定计划发送电子邮件。</li> <li>电子邮件中最多可包含 50,000 行数据。</li> <!--true?--> |
+| [导出至云应用程序](/help/analysis-workspace/export/export-cloud.md) | <li>导出至云位置，例如： <ul><li>Adobe Experience Platform 数据登陆区</li><li>Google Cloud Platform</li><li>Microsoft Azure</li><li>Amazon S3</li><li>Snowflake</li></ul></li><li>按需或按预定计划导出数据。</li><li>存储更多 Customer Journey Analytics 数据。</li><li>导出包含数千或数百万行的完整表格。<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
 
 {style="table-layout:auto"}
