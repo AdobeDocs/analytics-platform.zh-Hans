@@ -1,12 +1,12 @@
 ---
-description: 了解如何使用异常检测技术识别统计异常。
+description: 了解使用哪些统计技术识别异常。
 title: 异常检测中使用的统计技术
 feature: Anomaly Detection
 exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
 role: User
-source-git-commit: f3c9a000ae5baa19cb5a6cf0e0343de3a9685b56
+source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '799'
 ht-degree: 67%
 
 ---

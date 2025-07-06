@@ -1,13 +1,13 @@
 ---
 description: 了解Analysis Workspace中的辅助功能支持功能。
 title: Analysis Workspace中的辅助功能
-feature: FAQ
+feature: Workspace Basics
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 role: User
-source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 94%
+source-wordcount: '546'
+ht-degree: 91%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 94%
 [!UICONTROL Analysis Workspace] 中的导航方式包括自上而下，以及从左至右。以下导航元素有助于促进无障碍功能：
 
 * **[!UICONTROL Tab]** 键启用地标快捷方式，可在 Workspace 中的较大部分之间移动。在左侧面板中，**[!UICONTROL Tab]** 还允许您从一个可拖动选项移到下一个可拖动选项。
-* 在&rbrace;︎◀Tab▶键突出显示某个元素后，**[!UICONTROL 和&rbrace;︎]**&#x200B;在单个元素之间移动。
+* 在}︎◀Tab▶键突出显示某个元素后，**[!UICONTROL 和}︎]**&#x200B;在单个元素之间移动。
 * 使用 **[!UICONTROL F6]** 键可以导航到项目中的第一个面板，并在该面板内的可视化内容之间移动。然后，它会移到项目中的下一个面板并重复上述操作。
 * 焦点指示器的应用有助于具有视力的键盘用户能够清楚地了解当前具有焦点的 UI 元素。该指示器是具有焦点的面板的蓝色边框。最近选择的功能以及功能内的选择具有灰色背景。在该示例中，[!UICONTROL 组件]和页面维度是最近选定的。
 
@@ -54,7 +54,7 @@ ht-degree: 94%
 
 ### 键盘快捷键（热键）
 
-[!UICONTROL Analysis Workspace] 提供丰富的[键盘快捷键](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)，以实现更顺畅的工作流。
+[!UICONTROL Analysis Workspace]提供了一组丰富的[键盘快捷键（热键）](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)，以实现更加无缝的工作流程。
 
 ## 支持屏幕阅读器和屏幕放大镜
 

@@ -1,9 +1,9 @@
 ---
-description: 计算量度管理器允许您共享、筛选、标记、批准、复制、删除和标记为收藏。
-title: 计算量度管理器
+description: 了解如何共享、筛选、标记、批准、复制、删除计算量度以及将计算量度标记为收藏。
+title: 管理计算量度
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 29%

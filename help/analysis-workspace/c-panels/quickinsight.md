@@ -1,13 +1,13 @@
 ---
-description: 了解如何使用快速分析面板来指导您在Analysis Workspace中构建数据表和可视化图表。
+description: 了解如何使用快速分析面板来指导您在Analysis Workspace中构建自由格式表和可视化图表。
 title: 快速分析面板
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
-source-wordcount: '1147'
-ht-degree: 93%
+source-wordcount: '1148'
+ht-degree: 90%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 93%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ 中的快速洞察面板。<br/>_请参阅[快速洞察面板](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/quickinsight)以获取本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**  版本。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ 中的快速洞察面板。<br/>_请参阅[快速洞察面板](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/quickinsight)以获取本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**  版本。_
 
 >[!ENDSHADEBOX]
 
@@ -40,7 +40,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 * 在哪里创建区段，
 * 等。
 
-为了帮助解决这些问题，[!UICONTROL 快速洞察]利用了一种算法，该算法为您提供了您公司所使用的最热门的维度、量度、区段和日期范围。该算法基于您的公司对 [!UICONTROL Analysis Workspace] 中数据组件的使用。实际上，您会在下拉菜单中看到标记为[!UICONTROL POPULAR]的维度、量度和区段，如下所示：
+为了帮助您解答这些问题，[!UICONTROL 快速分析]利用算法来向您介绍您的公司可使用的一些最热门的维度、量度、区段和日期范围。 该算法基于您的公司对 [!UICONTROL Analysis Workspace] 中数据组件的使用。实际上，您会在下拉菜单中看到标记为[!UICONTROL POPULAR]的维度、量度和区段，如下所示：
 
 ![“快速洞察”面板。](assets/popular-tag.png)
 
@@ -94,7 +94,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 * 从左侧面板中拖放组件。
 * 开始在其中一个生成基块字段中输入内容。当找到输入内容时，生成基块字段会自动填充可能的值。
-* 指定构建基块下拉菜单（例如，**[!UICONTROL 分析]**&#x200B;中的`Country`），并在可能的值列表（使用![ChevronRight](/help/assets/icons/ChevronRight.svg)）中搜索要使用的值（例如，**[!UICONTROL 国家/地区代码]**）。
+* 指定构建基块下拉菜单（例如，**[!UICONTROL Analyze]**&#x200B;中的国家/地区），然后&#x200B;**[!UICONTROL 搜索]**&#x200B;要使用的值的可能值列表（使用![V形右侧](/help/assets/icons/ChevronRight.svg)）（例如，**[!UICONTROL 国家/地区代码]**）。
 
 选择&#x200B;**[!UICONTROL 清除]**&#x200B;来清除所有输入字段。
 

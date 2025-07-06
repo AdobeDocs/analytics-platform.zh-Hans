@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '1249'
-ht-degree: 99%
+source-wordcount: '1269'
+ht-degree: 97%
 
 ---
 
@@ -234,7 +234,7 @@ ht-degree: 99%
       + [维恩图](../analysis-workspace/visualizations/venn.md)
    + 面板 {#panels}
       + [概述](../analysis-workspace/c-panels/panels.md)
-      + [空白](../analysis-workspace/c-panels/blank-panel.md)
+      + [空白面板](../analysis-workspace/c-panels/blank-panel.md)
       + [归因](../analysis-workspace/c-panels/attribution.md)
       + [试验](../analysis-workspace/c-panels/experimentation.md)
       + [自由格式表](../analysis-workspace/c-panels/freeform-panel.md)
@@ -254,6 +254,12 @@ ht-degree: 99%
       + [下载](../analysis-workspace/export/download-send.md)
       + [发送和计划](../analysis-workspace/export/t-schedule-report.md)
       + [导出到云](../analysis-workspace/export/export-cloud.md)
+   + 归因 {#attribution}
+      + [归因概述](../analysis-workspace/attribution/overview.md)
+      + [模型、容器和回顾窗口](../analysis-workspace/attribution/models.md)
+      + [算法归因](../analysis-workspace/attribution/algorithmic.md)
+      + [最佳实践](../analysis-workspace/attribution/best-practices.md)
+      + [常见问题解答](../analysis-workspace/attribution/faq.md)
    + 异常检测 {#anomaly-detection}
       + [概述](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
       + [查看异常](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
@@ -268,7 +274,7 @@ ht-degree: 99%
       + [优化性能](../analysis-workspace/workspace-faq/optimizing-performance.md)
       + [错误和疑难解答](../analysis-workspace/workspace-faq/error-messages.md)
       + [限制](../analysis-workspace/workspace-faq/aw-limitations.md)
-      + [管理要求](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
+      + [要求](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [辅助功能](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
 + 内容分析 {#content-analytics}
@@ -346,14 +352,16 @@ ht-degree: 99%
       + [概述](../components/calc-metrics/calc-metr-overview.md)
       + 工作流 {#cm-workflow}
          + [创建计算量度](../components/calc-metrics/cm-workflow/cm-workflow.md)
-         + [生成计算量度](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [查找量度](../components/calc-metrics/cm-workflow/cm-finding.md)
+         + [生成计算量度](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
+         + [简单示例](../components/calc-metrics/cm-workflow/cm-pvv.md)
+         + [更复杂的示例](../components/calc-metrics/cm-workflow/cm-orders-participation.md)
          + [量度类型和归因](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-         + [生成参与率量度](../components/calc-metrics/cm-workflow/participation-metric.md)
+         + [参与率量度](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [分段量度](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [堆叠和替换区段](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [筛选计算量度](../components/calc-metrics/cm-workflow/cm-filter.md)
-         + [将计算量度标记为收藏内容](../components/calc-metrics/cm-workflow/cm-favorite.md)
+         + [将计算量度标记为收藏](../components/calc-metrics/cm-workflow/cm-favorite.md)
          + [复制计算量度](../components/calc-metrics/cm-workflow/cm-copy.md)
          + [使用函数](../components/calc-metrics/cm-workflow/cm-using-functions.md)
          + [标记计算量度](../components/calc-metrics/cm-workflow/cm-tagging.md)

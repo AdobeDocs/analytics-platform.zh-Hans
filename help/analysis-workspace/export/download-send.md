@@ -1,12 +1,12 @@
 ---
 description: 了解从Analysis Workspace项目下载数据的各种可能性。
-title: 下载Analysis Workspace项目和数据
+title: 下载项目和数据
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
+source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1184'
 ht-degree: 25%
 
 ---
@@ -38,8 +38,8 @@ ht-degree: 25%
 1. 选择&#x200B;**[!UICONTROL 项目]** > **[!UICONTROL 下载PDF]**。
 绿色条带有消息![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 已请求您的下载。 请稍候。显示]**。
 
-1. 下载就绪后，绿色条即准备就绪，该条消息为![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL *项目名称&#x200B;*PDF。]**&#x200B;出现。
-选择&#x200B;**[!UICONTROL 下载]**&#x200B;以下载PDF。 PDF的显示或下载方式具体取决于您用于处理PDF文档的浏览器配置。
+1. 下载就绪后，绿色条即准备就绪，该条消息为![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL *项目名称&#x200B;*PDF。]**出现。
+选择**[!UICONTROL 下载]**以下载PDF。 PDF的显示或下载方式具体取决于您用于处理PDF文档的浏览器配置。
 
 
 要将项目下载为CSV文件，请执行以下操作：
@@ -107,8 +107,8 @@ ht-degree: 25%
 
 下载文件时，您会看到以下通知：
 
-* 已请求蓝色&#x200B;**[!UICONTROL _表名&#x200B;_-_Dimension _.csv。_x _%完成]**&#x200B;表示进度。 要随时取消下载，请选择&#x200B;**[!UICONTROL 取消下载]**。 如果要关闭消息，请选择![CrossSize100](/help/assets/icons/CrossSize100.svg)，这样不会取消下载。
-* 在文件下载完成后，已下载绿色的&#x200B;**[!UICONTROL _表名&#x200B;_-_Dimension _.csv]**&#x200B;完成通知。 该文件将下载到为您的浏览器配置的下载文件夹。
+* 已请求蓝色&#x200B;**[!UICONTROL _表名&#x200B;_-_Dimension _.csv。_x _%完成]**表示进度。 要随时取消下载，请选择&#x200B;**[!UICONTROL 取消下载]**。 如果要关闭消息，请选择![CrossSize100](/help/assets/icons/CrossSize100.svg)，这样不会取消下载。
+* 在文件下载完成后，已下载绿色的&#x200B;**[!UICONTROL _表名&#x200B;_-_Dimension _.csv]**完成通知。 该文件将下载到为您的浏览器配置的下载文件夹。
 
 如果您一次请求多个下载，您将收到一条通知，说明每个额外的下载都将排队等待，直到前一个下载完成为止。
 

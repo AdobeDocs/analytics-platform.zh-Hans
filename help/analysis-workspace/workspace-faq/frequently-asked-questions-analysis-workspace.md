@@ -1,20 +1,20 @@
 ---
-description: 了解 Analysis Workspace 的系统要求。
+description: 了解Analysis Workspace的要求。
 keywords: Analysis Workspace
-title: 管理要求
-feature: FAQ
+title: 要求
+feature: Workspace Basics
 exl-id: ea2ea8d6-8327-4168-b81a-f4945b572cbb
 role: Admin
-source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 100%
+source-wordcount: '147'
+ht-degree: 90%
 
 ---
 
-# 管理要求
+# 要求
 
-Analysis Workspace 的系统要求。
+运行Analysis Workspace的要求包括：
 
 | 要求 | 描述 |
 |--- |--- |

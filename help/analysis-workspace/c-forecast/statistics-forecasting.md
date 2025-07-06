@@ -1,17 +1,17 @@
 ---
-description: Analysis Workspace中的预测使用一系列高级统计技术来确定预测值。
-title: 预测中使用的统计技术
+description: 了解Analysis Workspace中的预测如何使用一系列高级统计技术来确定预测值。
+title: 统计技术
 feature: Visualizations
 role: User
 exl-id: f042a6dd-6af5-4bdd-afc9-07546d8ded6e
-source-git-commit: accd7300c2dd6224e4d154cb6e3889f564e07a1a
+source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '545'
 ht-degree: 6%
 
 ---
 
-# 预测服务中使用的统计技术
+# 统计技术
 
 预测服务目前支持Prophet，并且已经证明对于大多数数据高效可靠的工作。 Prophet是Meta开发的一个广泛使用的开源预测软件包。 它将数据分解为趋势、季节性和事件组件。 Prophet模型具有高效、扩展性好的特点，可以应用于许多预测领域。 此外，该模型对离群值和缺失数据有很好的抗噪能力。
 

@@ -1,13 +1,13 @@
 ---
-description: 按标记、所有者和其他过滤器（“全部显示”、“我的”、“已与我共享”、“收藏”和“已批准”）进行过滤。
-title: 过滤区段列表
+description: 了解如何按标记、所有者和其他过滤器过滤区段。
+title: 过滤区段
 feature: Filters, Segments
 exl-id: 25e617da-8249-4332-970a-c2ef00bf42e3
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 31%
+source-wordcount: '168'
+ht-degree: 29%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 31%
 
 >[!NOTE]
 >
->区段列表将区段列表[&#128279;](seg-manage.md#filters-list)引用为[区段管理器](seg-manage.md)的一部分。 您可以使用![筛选器](/help/assets/icons/Filter.svg) [筛选器面板](seg-manage.md#filter-panel)筛选该列表，该面板是同一[区段管理器](seg-manage.md)的一部分。
+>区段列表将区段列表[引用为](seg-manage.md#filters-list)区段管理器[的一部分](seg-manage.md)。 您可以使用![筛选器](/help/assets/icons/Filter.svg) [筛选器面板](seg-manage.md#filter-panel)筛选该列表，该面板是同一[区段管理器](seg-manage.md)的一部分。
 >
 
 

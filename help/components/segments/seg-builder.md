@@ -1,13 +1,13 @@
 ---
-description: 区段生成器提供了一个画布，用于拖放量度维度、区段和事件，从而根据容器层级结构逻辑、规则和运算符将人员分段。这款集成开发工具可让您构建并保存简单或复杂的区段，用于识别各种访问和事件中的人员属性和行为。
+description: 了解区段生成器如何提供画布以将量度、维度、区段和事件拖放到其中，从而根据容器层次结构逻辑、规则和运算符划分访客。 了解如何生成和保存简单或复杂的区段，以确定跨访问和页面点击的访客属性和操作。
 title: 生成区段
 feature: Filters, Segments
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: ec2fc88372814b01a04d4cc824181222ee55a83d
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '1569'
-ht-degree: 93%
+source-wordcount: '1570'
+ht-degree: 94%
 
 ---
 
@@ -45,14 +45,14 @@ ht-degree: 93%
    | **[!UICONTROL “仅用于项目的区段]** | 一个信息框，说明该区段仅在创建它的项目中可见，且不会添加到您的组件列表中。启用&#x200B;**[!UICONTROL 提供此区段给您的所有项目，并将其添加到组件列表中]**，以更改该设置。此信息框仅在您创建[快速区段](seg-quick.md)，并通过[!UICONTROL 快速区段]界面中的&#x200B;**[!UICONTROL 打开生成器]**&#x200B;将此快速区段转换为常规区段时可见。 |
    | **[!UICONTROL 标题]**![必填](/help/assets/icons/Required.svg) | 命名该区段，例如，`Last month mobile customers`。 |
    | **[!UICONTROL 描述]** | 提供关于该区段的描述，例如，`Segment to define the mobile customers for the last month`。 |
-   | **[!UICONTROL 标记]** | 通过创建或应用一个或多个标记来组织区段。 开始键入，以查找您可以选择的现有标记。或者按&#x200B;**[!UICONTROL 输入]**&#x200B;键添加新的标记。选择 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 以移除标记。 |
+   | **[!UICONTROL 标记]** | 通过创建或应用一个或多个标记来组织区段。开始键入，以查找您可以选择的现有标记。或者按&#x200B;**[!UICONTROL 输入]**&#x200B;键添加新的标记。选择 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 以移除标记。 |
    | **[!UICONTROL 定义]**![必填](/help/assets/icons/Required.svg) | 使用[定义生成器](#definition-builder)来定义区段。 |
 
    {style="table-layout:auto"}
 
 1. 要验证您的区段定义是否正确，请使用右上角不断更新的区段结果预览。
 1. 要从区段创建受众并与 Experience Platform 共享该受众，请选择&#x200B;**[!UICONTROL 从区段创建受众]**。请参阅[创建和发布受众](/help/components/audiences/publish.md)，以了解更多信息。
-1. 选择:
+1. 选择：
    * **[!UICONTROL 保存]**&#x200B;可以保存区段。
    * **[!UICONTROL 另存为]**&#x200B;可以保存区段的副本。
    * **[!UICONTROL 删除]**&#x200B;可以删除区段。
@@ -65,14 +65,14 @@ ht-degree: 93%
 
 您可以配置定义的类型和范围：
 
-1. 要指定定义的类型，请指定是否要生成包含或排除定义。选择![设置](/help/assets/icons/Setting.svg) **[!UICONTROL 选项]**&#x200B;并从下拉菜单&#x200B;**[!UICONTROL 包括]**&#x200B;或&#x200B;**[!UICONTROL 排除]**。
-1. 要指定定义的范围，请从&#x200B;**[!UICONTROL 包含]**&#x200B;或&#x200B;**[!UICONTROL 排除]**&#x200B;下拉菜单中选择是希望定义的范围是&#x200B;**[!UICONTROL 事件]**、**[!UICONTROL 会话]**、**[!UICONTROL 人员]**、**[!UICONTROL 全局帐户]**&#x200B;[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 帐户]**&#x200B;[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 机会]**&#x200B;[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}还是&#x200B;**[!UICONTROL 购买群]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
+1. 要指定定义的类型，请指定是否要生成包含或排除定义。选择![设置](/help/assets/icons/Setting.svg)**[!UICONTROL 选项]**&#x200B;并从下拉菜单中&#x200B;**[!UICONTROL 包括]**&#x200B;或&#x200B;**[!UICONTROL 排除]**。
+1. 要指定定义的范围，请从&#x200B;**[!UICONTROL 包含]**&#x200B;或&#x200B;**[!UICONTROL 排除]**&#x200B;下拉菜单中选择是希望定义的范围是&#x200B;**[!UICONTROL 事件]**、**[!UICONTROL 会话]**、**[!UICONTROL 人员]**、**[!UICONTROL 全局帐户]**[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 帐户]**[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 机会]**[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}还是&#x200B;**[!UICONTROL 购买群]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
 
 您稍后可以随时更改这些设置。
 
 ### 组件
 
-构建区段定义的一个重要部分是使用维度、量度、现有区段和日期范围。所有这些组件都可从区段生成器的组件面板中使用。
+构建区段定义的一个重要部分是使用维度、量度、现有区段和日期范围。所有这些组件都可以从区段生成器中的组件面板中获得。
 
 ![开始生成定义](assets/start-building-filter.gif){width=100%}
 
@@ -84,7 +84,7 @@ ht-degree: 93%
 
 要编辑组件，请执行以下操作：
 
-* 从运算符下拉菜单中选择组件的新运算符。
+* 从运算符下拉菜单中为组件选择一个新的运算符。
 * 如果合适，为运算符选择或指定不同的值。
 * 如果组件类型是维度，则可以定义归因模型。有关更多信息，请参阅[归因模型](#attribution)。
 
@@ -120,7 +120,7 @@ ht-degree: 93%
 
 您可以构建包含滚动日期范围的区段。这样，您就可以回答有关正在进行的营销活动或事件的问题。例如，您可以构建一个包含&#x200B;*过去 60 天中在线购买过产品的用户*&#x200B;的区段。
 
-![使用滚动日期范围的区段](assets/filter-rolling-date-range.gif)
+![使用滚动日期范围进行区段划分](assets/filter-rolling-date-range.gif)
 
 
 >[!BEGINSHADEBOX]

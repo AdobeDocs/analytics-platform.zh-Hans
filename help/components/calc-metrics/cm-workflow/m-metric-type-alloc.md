@@ -1,12 +1,12 @@
 ---
-description: 了解量度类型和归因
+description: 了解量度类型和归因。
 title: 量度类型和归因
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 304b8d85767d89ee60a6fb37a128194f60ca89d4
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '612'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -30,18 +30,18 @@ ht-degree: 91%
 
       1. 您可以：
 
-         * 禁用&#x200B;**[!UICONTROL 使用非默认归因模型]**&#x200B;来使用默认的列归因模型，即“上次接触”，其回顾期为 30 天。
+         * 禁用&#x200B;**[!UICONTROL 使用非默认归因模型]**&#x200B;来使用默认的列归因模型，即“上次接触”，其回溯期为 30 天。
          * 启用&#x200B;**[!UICONTROL 使用非默认的归因模型]**。在&#x200B;**[!UICONTROL 列归因模型]**&#x200B;对话框中，
 
-            * 从[归因模型](#attribution-models)中选择&#x200B;**[!UICONTROL 模型]**。
-            * 从[容器](#container)选项中选择&#x200B;**[!UICONTROL 容器]**。
-            * 从[回顾窗口](#lookback-window)选项中选择&#x200B;**[!UICONTROL 回顾窗口]**。 如果选择&#x200B;**[!UICONTROL 自定义时间]**，则可以定义从&#x200B;**[!UICONTROL 分钟]**&#x200B;到&#x200B;**[!UICONTROL 季度]**&#x200B;的时间段。
+            * 从[归因模型](#attribution-models)中选择一个&#x200B;**[!UICONTROL 模型]**。
+            * 从[容器](#container)选项中选择一个&#x200B;**[!UICONTROL 容器]**。
+            * 从[回溯时间范围](#lookback-window)选项中选择&#x200B;**[!UICONTROL 回溯时间范围]**。如果您选择&#x200B;**[!UICONTROL 自定义时间]**，则可定义时段，单位为&#x200B;**[!UICONTROL 分钟]**&#x200B;至&#x200B;**[!UICONTROL 季度]**。
 
       1. 选择&#x200B;**[!UICONTROL 应用]**&#x200B;来应用非默认归因模型。选择“取消”即可取消。
 
      如果您已定义非默认归因模型，请选择&#x200B;**[!UICONTROL 编辑]**&#x200B;来修改选择。
 
-有关使用归因模型、容器和回顾时间范围的示例，请参阅[示例](#example)。
+请参阅[示例](#example)，了解如何使用归因模型、容器和回溯时间范围。
 
 
 ## 归因模型 {#attribution-models}
@@ -144,12 +144,12 @@ ht-degree: 91%
 {{attribution-container}}
 
 
-## 回顾时间范围 {#lookback-winwow}
+## 回溯时间范围 {#lookback-winwow}
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_lookbackwindow"
->title="回顾时间范围"
->abstract="此设置可以确定将要对每次转化应用的数据归因窗口。"
+>title="回溯时间范围"
+>abstract="此设置可以确定将要对每次转化应用的数据归因时间范围。"
 
 {{attribution-lookback-window}}
 
@@ -163,6 +163,6 @@ ht-degree: 91%
 >[!MORELIKETHIS]
 >
 >[归因组件设置](/help/data-views/component-settings/attribution.md)
->&#x200B;>[参与量度](participation-metric.md)
+>>[参与量度](participation-metric.md)
 >
 

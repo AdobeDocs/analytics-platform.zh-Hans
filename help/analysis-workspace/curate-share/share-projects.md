@@ -5,10 +5,10 @@ title: 共享项目
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
-workflow-type: ht
+source-git-commit: 8e10818efa7da54b0802c56e5388e6c7ef7fd8b6
+workflow-type: tm+mt
 source-wordcount: '2089'
-ht-degree: 100%
+ht-degree: 76%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 可与以下类型的人员共享 Analysis Workspace 项目：
 
-* 您组织中有权访问 Adobe Customer Journey Analytics 的用户和群组
+* 组织中有权访问Customer Journey Analytics的用户和组
 
   您可以共享“编辑”、“复制”或“查看”访问权限
 
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的项目共享](https://video.tv.adobe.com/v/40034/?quality=12&learn=on&captions=chi_hans){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的项目共享](https://video.tv.adobe.com/v/36207/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 {{videoaa}}
 
@@ -49,7 +49,7 @@ ht-degree: 100%
 
 ## 与您组织内的用户和用户组共享。 {#Add}
 
-可与组织中现有的 Analysis Workspace 用户或组共享某个项目。当您按本节所述共享项目时，您共享的用户必须已经拥有 Customer Journey Analytics 帐户。
+可与组织中现有的 Analysis Workspace 用户或组共享某个项目。在按本节所述共享项目时，与您共享的用户必须已具有Customer Journey Analytics帐户。
 
 您可以与用户或组共享特定角色，也可以共享链接。
 
@@ -61,15 +61,15 @@ ht-degree: 100%
 
 与组织中的用户和组共享特定项目角色时，请考虑以下事项：
 
-* 项目角色（**[!UICONTROL 编辑原始版本]**、**[!UICONTROL 编辑副本]**&#x200B;和&#x200B;**[!UICONTROL 只读]**）与用户和特定项目 ID 关联。项目角色与 [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=zh-Hans) 中管理的用户权限无关。
+* 项目角色（**[!UICONTROL 编辑原始版本]**、**[!UICONTROL 编辑副本]**&#x200B;和&#x200B;**[!UICONTROL 只读]**）与用户和特定项目 ID 关联。项目角色与[Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-getting-started)中管理的用户权限无关。
 
-* 在 Customer Journey Analytics 中，群组由 [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=zh-Hans) 中的产品轮廓定义。管理员可以共享到任何组，包括“全部”组。除“全部”组外，非管理员可以共享到其所属的任何组。
+* 在Customer Journey Analytics中，组由[Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-getting-started)中的产品配置文件定义。 管理员可以共享到任何组，包括&#x200B;*所有*。 非管理员可以共享到其所属的任何组，但&#x200B;*所有*&#x200B;除外。
 
-* 如果用户分配到了多个角色，将始终获得权限最高的角色体验。如果同时将用户添加为个人和组成员，则可能发生这种情况。例如，如果作为个人授予用户&#x200B;**[!UICONTROL 编辑原始版本]**&#x200B;角色，并作为组成员授予用户&#x200B;**[!UICONTROL 只读]**&#x200B;角色，则该用户将获得&#x200B;**[!UICONTROL 编辑原始版本]**&#x200B;项目体验。
+* 如果用户分配到了多个角色，将始终获得权限最高的角色体验。如果用户同时作为个人和作为组的一部分进行添加，则可能会发生这种情况。 例如，如果用户以个人身份获得&#x200B;**[!UICONTROL 编辑原始版本]**&#x200B;角色，以群组成员身份获得&#x200B;**[!UICONTROL 只读]**&#x200B;角色，则该用户将获得&#x200B;**[!UICONTROL 编辑原始版本]**&#x200B;项目体验。
 
 * 归入&#x200B;**[!UICONTROL 编辑副本]**&#x200B;或&#x200B;**[!UICONTROL 只读]**&#x200B;角色的管理员在打开项目时获得这些有限的体验。管理员可通过与自己共享项目并为自己授予“编辑”角色而将其角色更改为&#x200B;**[!UICONTROL 编辑原始版本]**，如以下过程所述。
 
-* 如果选择共享多个项目，则会将收件人添加到每个项目的现有收件人列表中。
+* 如果您选择共享多个项目，则会将收件人添加到每个项目的现有收件人列表中。
 
   例如，已与收件人 1、2 和 3 共享项目 A，同时已与收件人 4、5 和 6 共享项目 B。
 
@@ -92,9 +92,9 @@ ht-degree: 100%
 
 1. 在提供的角色字段之一中添加收件人或收件人组：
 
-   **编辑原始版本：**&#x200B;收件人可将更改&#x200B;**[!UICONTROL 保存]**&#x200B;到项目，并作为共有人行使权力。如果您希望与其他同事共同管理项目，则此角色很有用；这包括编辑、删除和修改共享项目的收件人列表。<br>注意：Analysis Workspace 当前不支持实时协作，因此建议在给定时间只让一个用户编辑项目。如果同时保存多个项目，则将保留最后一个版本。
+   **编辑原始版本：**&#x200B;收件人可将更改&#x200B;**[!UICONTROL 保存]**&#x200B;到项目，并作为共有人行使权力。如果要与其他同事共同管理项目，此角色非常有用。 此角色包括编辑、删除和修改共享项目的收件人列表。 <br>注意：Analysis Workspace 当前不支持实时协作，因此建议在给定时间只让一个用户编辑项目。如果同时保存多个项目，则会保留最后一个版本。
 
-   **编辑副本：**&#x200B;收件人可执行&#x200B;**[!UICONTROL 另存为]**，并有权访问左侧面板。在此角色中，项目交互不受限。如果您希望将项目共享给了解您组织数据以及知道如何使用 Analysis Workspace 的用户，但不希望更改项目，则此角色非常有用。
+   **编辑副本：**&#x200B;收件人可执行&#x200B;**[!UICONTROL 另存为]**，并有权访问左侧面板。项目交互不限于此角色。 如果您希望将项目共享给了解您组织数据以及如何使用Analysis Workspace的用户，则此角色非常有用。 但您不希望这些用户修改您的项目。
 
    **只读：**&#x200B;收件人无法执行&#x200B;**[!UICONTROL 保存]**&#x200B;或&#x200B;**[!UICONTROL 另存为]**，并且无权访问左侧面板。项目交互受到限制。如果您希望将项目共享给不太熟悉您组织的数据结构（通常情况下是 Analysis Workspace 或 Customer Journey Analytics）的用户，则此角色非常有用。但是，您仍然希望这些用户在一个安全的环境中使用数据和信息分析。详细了解[只读角色项目体验](/help/analysis-workspace/curate-share/view-only-projects.md)。
 
@@ -137,7 +137,7 @@ ht-degree: 100%
 >abstract="您的组织要求用户登录 Experience Cloud 才能使用此链接。"
 
 
-可为无权访问 Customer Journey Analytics 的人员授予对 Analysis Workspace 项目的[只读访问权限](/help/analysis-workspace/curate-share/view-only-projects.md)。其中可包括：
+可为无权访问 Customer Journey Analytics 的人员授予对 Analysis Workspace 项目的[只读访问权限](/help/analysis-workspace/curate-share/view-only-projects.md)。此已授予的访问权限可以包括：
 
 * 您组织之外的人员
 
@@ -149,11 +149,11 @@ ht-degree: 100%
 >
 >* Customer Journey Analytics 管理员可禁止以此方式共享项目，如[偏好设置](/help/analysis-workspace/user-preferences.md)所述。如果您无法按本节所述共享项目，则您的 Customer Journey Analytics 管理员已禁止这样做。
 >
->* 包含超过 50 个展开的可视化图表的项目无法与没有 Customer Journey Analytics 访问权限的人员共享。
+>* 具有50多个扩展可视化图表的项目只能与有权访问Customer Journey Analytics的人共享。
 >
 >* 您与其共享的用户可查看在[策划](curate.md)期间该项目中应用的任何区段。
 > 
->* 您与其共享的用户可更改项目日期范围。默认情况下显示您为项目设置的日期范围。
+>* 您与其共享的用户可更改项目日期范围。默认情况下，将显示您为项目设置的日期范围。
 >
 >* 如果许多用户尝试同时访问给定的链接，则项目可能会变得无法访问。默认情况下，每 5 分钟可有超过 190 人访问单个链接。如果您的组织达到此限制，请等待 5 分钟，然后再重试访问链接。
 >
@@ -161,7 +161,7 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [与任何人分享](https://video.tv.adobe.com/v/3452472/?quality=12&learn=on&captions=chi_hans){target="_blank"}，观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [与任何人分享](https://video.tv.adobe.com/v/3420093/?quality=12&learn=on){target="_blank"}，观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -192,7 +192,7 @@ ht-degree: 100%
 
       * 如果此选项不可见，则您的 Customer Journey Analytics 管理员未启用此功能。
 
-      * 如果启用了此选项但您无法禁用它，这意味着您的 Customer Journey Analytics 管理员要求对访问 Analysis Workspace 项目的任何人进行 Experience Cloud 身份验证。对于具有 Healthcare Shield 许可证的组织来说，情况总是如此。
+      * 如果启用了此选项，但无法禁用它，则锁定选项意味着您的Customer Journey Analytics管理员要求对访问Analysis Workspace项目的任何人进行Experience Cloud身份验证。 对于具有 Healthcare Shield 许可证的组织来说，情况总是如此。
 
 1. 在&#x200B;**[!UICONTROL 与任何人共享（无需登录）]**&#x200B;字段旁边，选择![链接](/help/assets/icons/Link.svg)将链接复制到系统剪贴板。
 
@@ -208,7 +208,7 @@ ht-degree: 100%
 
 当有人通过[共享特定项目角色](#share-a-specific-project-role)与您共享项目时，您可以从 [Analytics 登陆页面上的“项目”选项卡](/help/getting-started/landing.md#navigate-the-projects-tab)访问共享项目。
 
-当有人通过共享链接（从[“共享项目”选项卡](#share-a-link-to-a-project)或使用[与任何人共享](#share-a-project-with-anyone-no-login-required)链接）来共享项目时，您必须使用已与您共享的链接才能访问该项目。例如，该链接可能已在电子邮件、内部网站等中共享。
+当有人通过共享链接与您共享项目时（通过[共享项目选项卡](#share-a-link-to-a-project)或通过[与任何人共享链接](#share-a-project-with-anyone-no-login-required)），您必须使用与您共享的链接来访问该项目。 例如，该链接可能已在电子邮件、内部网站等中共享。
 
 ## 共享嵌入的组件
 
@@ -216,7 +216,7 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Analysis Workspace 中共享嵌入的组件](https://video.tv.adobe.com/v/327500/?quality=12&learn=on&captions=chi_hans){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Analysis Workspace 中共享嵌入的组件](https://video.tv.adobe.com/v/24713/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 {{videoaa}}
 
@@ -227,7 +227,7 @@ ht-degree: 100%
 
 | 问题 | 回答 |
 |---|---|
-| 如果两位编辑者同时保存一个项目，会发生什么情况？ | 将不会合并更改，并将保留最后保存的项目版本。Analysis Workspace 当前不支持实时协作。 |
-| 作为管理员，我将获得什么样的项目体验？ | 归入&#x200B;**[!UICONTROL 编辑副本]**&#x200B;或&#x200B;**[!UICONTROL 只读]**&#x200B;角色的管理员在打开项目时会获得这些有限的体验。如有需要，管理员可以随时通过&#x200B;**[!UICONTROL 组件] > [!UICONTROL 项目]**&#x200B;将其角色提升为&#x200B;**[!UICONTROL 编辑原始版本]**。 |
-| 如果一位收件人作为个人和作为小组成员分别有不同的角色，会发生什么情况？ | 如果收件人同时具有多个角色，他们将始终获得权限最高的角色体验。例如，如果收件人作为个人被赋予了&#x200B;**[!UICONTROL 编辑原始版本]**&#x200B;的角色，并作为群组成员被赋予了&#x200B;**[!UICONTROL 可以查看]**&#x200B;角色，则该收件人会获得&#x200B;**[!UICONTROL 编辑原始版本]**&#x200B;项目体验。 |
-| 如果收件人打开项目链接，他们会获得什么体验？ | 收件人将获得您在共享模式中为其分配的角色。如果没有为收件人分配角色，并且收件人收到项目的链接（**[!UICONTROL 共享]** > **[!UICONTROL 与 Workspace 用户共享]**，然后在&#x200B;**[!UICONTROL 通过链接共享]**&#x200B;字段旁选择&#x200B;**[!UICONTROL 复制]**），则为其授予默认角色。管理员获得&#x200B;**[!UICONTROL 编辑原始版本]**&#x200B;角色，非管理员获得&#x200B;**[!UICONTROL 编辑副本]**&#x200B;角色。 |
+| 如果两位编辑者同时保存一个项目，会发生什么情况？ | 不会合并更改，并会保留最后保存的项目版本。 Analysis Workspace 当前不支持实时协作。 |
+| 作为管理员，我看到了什么项目体验？ | 处于&#x200B;**[!UICONTROL 编辑副本]**&#x200B;或&#x200B;**[!UICONTROL 只读]**&#x200B;角色的管理员，在打开项目时会获得这些有限的体验。 如有需要，管理员可以随时通过&#x200B;**[!UICONTROL 组件] > [!UICONTROL 项目]**&#x200B;将其角色提升为&#x200B;**[!UICONTROL 编辑原始版本]**。 |
+| 如果一位收件人作为个人和作为小组成员分别有不同的角色，会发生什么情况？ | 如果收件人分配到了多个角色，他们将始终获得权限最高的角色体验。 例如，如果作为个人收件人获得&#x200B;**[!UICONTROL 编辑原始]**&#x200B;角色，并且作为组成员获得&#x200B;**[!UICONTROL 可以查看]**&#x200B;角色，则用户将获得&#x200B;**[!UICONTROL 编辑原始]**&#x200B;项目体验。 |
+| 如果收件人打开项目链接，他们会获得什么体验？ | 收件人将获得您在共享模式中为其分配的角色。 如果收件人未分配角色，并收到指向项目的链接(**[!UICONTROL 共享]** > **[!UICONTROL 与Workspace用户共享]**，然后选择&#x200B;**[!UICONTROL 通过链接共享]**&#x200B;字段旁边的&#x200B;**[!UICONTROL 复制]**)，则将其置于默认角色。 管理员接收&#x200B;**[!UICONTROL 编辑原始角色]**，非管理员接收&#x200B;**[!UICONTROL 编辑副本]**&#x200B;角色。 |

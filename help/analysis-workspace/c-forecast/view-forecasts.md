@@ -1,17 +1,17 @@
 ---
 description: 了解如何在表或折线图中查看预测。
-title: 如何在Analysis Workspace中查看预测
+title: 查看预测
 feature: Visualizations
 role: User
 exl-id: 4a8b602c-e6aa-4a46-bba9-642387e6af88
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 3%
+source-wordcount: '359'
+ht-degree: 2%
 
 ---
 
-# 在 Analysis Workspace 中查看预测
+# 查看预测
 
 您可以在自由格式表或折线图中查看预测。
 

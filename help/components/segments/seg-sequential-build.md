@@ -1,9 +1,9 @@
 ---
-description: 顺序区段是指使用THEN运算符定义区段条件顺序的区段。
+description: 了解使用THEN运算符定义区段条件序列的顺序区段。
 title: 顺序区段
 feature: Filters, Segments
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: 8e10818efa7da54b0802c56e5388e6c7ef7fd8b6
 workflow-type: tm+mt
 source-wordcount: '2459'
 ht-degree: 4%
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [顺序分段](https://video.tv.adobe.com/v/37426/?quality=12&learn=on&captions=chi_hans){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [顺序分段](https://video.tv.adobe.com/v/25405/?quality=12&learn=on){target="_blank"}。
 
 {{videoaa}}
 
@@ -43,7 +43,7 @@ ht-degree: 4%
 
 
 
-生成顺序区段的基础知识与使用[区段生成器](seg-builder.md)生成常规区段的基础知识没有区别。 您可以使用[定义生成器](seg-builder.md#definition-builder)来构造区段定义。 在该构造中，使用组件、容器、运算符和逻辑。 只要在主定义或您在[定义生成器](seg-builder.md#definition-builder)中使用的任何容器中选择&#x200B;**[!UICONTROL Then]**&#x200B;运算符，常规区段就会变成顺序区段。
+生成顺序区段的基础知识与使用[区段生成器](seg-builder.md)生成常规区段的基础知识没有区别。 您可以使用[定义生成器](seg-builder.md#definition-builder)来构造区段定义。 在该构造中，使用组件、容器、运算符和逻辑。 只要在主定义或您在&#x200B;**[!UICONTROL 定义生成器]**&#x200B;中使用的任何容器中选择[Then](seg-builder.md#definition-builder)运算符，常规区段就会变成顺序区段。
 
 ### 示例
 
@@ -82,7 +82,7 @@ ht-degree: 4%
 
 ## [!UICONTROL After]和[!UICONTROL Within]
 
-您可以使用![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]**&#x200B;和![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** **[!UICONTROL Then]**&#x200B;运算符为事件、会话或维度[&#128279;](#event-session-and-dimension-constraints)定义其他[时间约束](#time-constraints)或约束。
+您可以使用![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]**&#x200B;和![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** **[!UICONTROL Then]**&#x200B;运算符为事件、会话或维度[定义其他](#time-constraints)时间约束[或](#event-session-and-dimension-constraints)约束。
 
 ### 时间限制
 
@@ -91,7 +91,7 @@ ht-degree: 4%
 1. 选择![时钟](/help/assets/icons/Clock.svg)。
 1. 从上下文菜单中选择&#x200B;**[!UICONTROL Within]**&#x200B;或&#x200B;**[!UICONTROL After]**。
 1. 指定一个时间段（**[!UICONTROL 分钟]**，**[!UICONTROL 小时]**，最多&#x200B;**[!UICONTROL 年]**）。
-1. 选择![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**&#x200B;以打开一个弹出窗口，允许您使用&#x200B;**[!UICONTROL -]**&#x200B;或&#x200B;**[!UICONTROL +]**&#x200B;键入或指定数字。
+1. 选择![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**以打开一个弹出窗口，允许您使用**[!UICONTROL -]**或**[!UICONTROL +]**键入或指定数字。
 
 若要移除时间限制，请使用![CrossSize75](/help/assets/icons/CrossSize75.svg)。
 
@@ -210,7 +210,7 @@ ht-degree: 4%
 
 ## [!UICONTROL 排除]
 
-区段定义包括所有数据，除非您使用&#x200B;**[!UICONTROL 排除]**&#x200B;专门排除![User](/help/assets/icons/User.svg) [!UICONTROL Person]、![Visit](/help/assets/icons/Visit.svg) [!UICONTROL Session]或![WebPage](/help/assets/icons/WebPage.svg) [!UICONTROL Event]数据。
+区段定义包括所有数据，除非您使用![排除](/help/assets/icons/User.svg)专门排除[!UICONTROL User] ![Person](/help/assets/icons/Visit.svg)、[!UICONTROL Visit] ![Session](/help/assets/icons/WebPage.svg)或[!UICONTROL WebPage] **[!UICONTROL Event]**&#x200B;数据。
 
 [!UICONTROL 排除]允许您关闭常见数据并创建更集中的区段。 “排除”还允许您创建排除特定人员组的区段。 例如，定义一个区段，该区段指定下订单的人员，然后排除该人员组以识别&#x200B;*非购买者*。 最佳做法是创建使用宽泛定义的规则，而不是尝试使用[!UICONTROL 排除]来定位与特定包含值匹配的特定角色。
 
@@ -296,7 +296,7 @@ ht-degree: 4%
 
 #### [!UICONTROL 排除] [!UICONTROL 或]
 
-识别访问了一个页面，然后明确不访问一组页面中的任何页面，但又访问另一个页面的人员。 例如，访问主页的人没有访问“男女”页面，但访问了“孩子”页面。
+识别访问了一个页面，然后明确不访问一组页面中的任何页面，但又访问另一个页面的人员。 例如，访问主页但未访问“男女”页面，但访问了“孩子”页面的人员。
 
 ![逻辑组排除和](assets/logicgroup-exclude-or.png)
 
