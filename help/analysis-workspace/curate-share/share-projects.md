@@ -61,9 +61,9 @@ ht-degree: 76%
 
 与组织中的用户和组共享特定项目角色时，请考虑以下事项：
 
-* 项目角色（**[!UICONTROL 编辑原始版本]**、**[!UICONTROL 编辑副本]**&#x200B;和&#x200B;**[!UICONTROL 只读]**）与用户和特定项目 ID 关联。项目角色与[Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-getting-started)中管理的用户权限无关。
+* 项目角色（**[!UICONTROL 编辑原始版本]**、**[!UICONTROL 编辑副本]**&#x200B;和&#x200B;**[!UICONTROL 只读]**）与用户和特定项目 ID 关联。项目角色与[Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/admin-getting-started)中管理的用户权限无关。
 
-* 在Customer Journey Analytics中，组由[Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-getting-started)中的产品配置文件定义。 管理员可以共享到任何组，包括&#x200B;*所有*。 非管理员可以共享到其所属的任何组，但&#x200B;*所有*&#x200B;除外。
+* 在Customer Journey Analytics中，组由[Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/admin-getting-started)中的产品配置文件定义。 管理员可以共享到任何组，包括&#x200B;*所有*。 非管理员可以共享到其所属的任何组，但&#x200B;*所有*&#x200B;除外。
 
 * 如果用户分配到了多个角色，将始终获得权限最高的角色体验。如果用户同时作为个人和作为组的一部分进行添加，则可能会发生这种情况。 例如，如果用户以个人身份获得&#x200B;**[!UICONTROL 编辑原始版本]**&#x200B;角色，以群组成员身份获得&#x200B;**[!UICONTROL 只读]**&#x200B;角色，则该用户将获得&#x200B;**[!UICONTROL 编辑原始版本]**&#x200B;项目体验。
 
