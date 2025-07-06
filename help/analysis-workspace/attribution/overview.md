@@ -53,21 +53,21 @@ Adobe Analytics 通过让您能够执行以下操作来增强归因：
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[自由格式表中的归因](https://video.tv.adobe.com/v/23136?quality=12&learn=on){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自由格式表中的归因](https://video.tv.adobe.com/v/23136?quality=12&learn=on){target="_blank"}。
 
 >[!ENDSHADEBOX]
 
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[计算量度中的归因](https://video.tv.adobe.com/v/23140?quality=12&learn=on){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [计算量度中的归因](https://video.tv.adobe.com/v/23140?quality=12&learn=on){target="_blank"}。
 
 >[!ENDSHADEBOX]
 
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[使用归因面板](https://video.tv.adobe.com/v/23139?quality=12&learn=on){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [使用归因面板](https://video.tv.adobe.com/v/23139?quality=12&learn=on){target="_blank"}。
 
 >[!ENDSHADEBOX]
 

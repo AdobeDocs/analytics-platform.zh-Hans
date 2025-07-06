@@ -34,7 +34,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_ 中的媒体播放耗时面板。<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版本的[媒体播放耗时面板](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ 中的媒体播放耗时面板。<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** 版本的[媒体播放耗时面板](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)。_
 
 >[!ENDSHADEBOX]
 
@@ -42,7 +42,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >[!NOTE]
 >
 >只有购买了 Customer Journey Analytics 的流媒体收藏集附加组件的客户才能使用媒体平均受众访问分钟数面板。
->>请联系您的 Adobe 销售代表或 Adobe 帐户团队以获取更多信息。
+>&#x200B;>请联系您的 Adobe 销售代表或 Adobe 帐户团队以获取更多信息。
 >
 
 **[!UICONTROL 媒体播放耗时]**&#x200B;面板支持长期分析播放，其中提供关于并发高峰的详细信息，并可进行细分和比较。
@@ -129,6 +129,6 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >[!MORELIKETHIS]
 >
 >[Create a panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->>[“媒体平均受众访问分钟数”面板](average-minute-audience-panel.md)
->>[媒体并行查看者面板](media-concurrent-viewers.md)
+>&#x200B;>[“媒体平均受众访问分钟数”面板](average-minute-audience-panel.md)
+>&#x200B;>[媒体并行查看者面板](media-concurrent-viewers.md)
 >
