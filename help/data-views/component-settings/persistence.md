@@ -5,10 +5,10 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 8e10818efa7da54b0802c56e5388e6c7ef7fd8b6
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 96%
+source-wordcount: '1037'
+ht-degree: 80%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 96%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_persistence"
 >title="持久性"
->abstract="配置应用于维度的默认分配模型。在报告中，分配在区段之前进行。请参阅[分配设置](/help/data-views/component-settings/persistence.md#allocation-settings)、[过期设置](/help/data-views/component-settings/persistence.md#expiration-settings)、[绑定维度](/help/data-views/component-settings/persistence.md#binding-dimension)和[绑定量度](/help/data-views/component-settings/persistence.md#binding-metric)的详细信息。"
+>abstract="配置应用于某个维度的默认分配模型。在报告中先用分配，然后用区段。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -40,19 +40,19 @@ ht-degree: 96%
 
 * 通过&#x200B;**有效期限**，可决定维度项在从中设置它的事件之外保持多久。
 
-[!UICONTROL 持久性]仅在维度上可用，并可追溯至将它应用于的数据。这一数据转换在应用分段或其他分析操作之前立即发生。
+[!UICONTROL 持久性]仅在维度中可用，并且可追溯至应用该持久性的数据。 这一数据转换在应用分段或其他分析操作之前立即发生。
 
 | 设置 | 描述 |
 | --- | --- |
 | [!UICONTROL 设置持久性] | 为维度启用持久性。如果未启用持久性，则维度仅与同一事件中存在的指标相关。默认下禁用此设置。 |
-| [!UICONTROL 分配] | 用于为持久性指定维度中使用的分配模型。选项如下：<ul><li>**[!UICONTROL 最近]**：此维度中的值一直保持，直到被后续值覆盖。</li><li> **[!UICONTROL 原始]**：此维度的第一个值保持不变，不会被后续值覆盖</li><li>**[!UICONTROL 全部]**：同时保持此维度的所有值</li><li>**[!UICONTROL 第一个已知]**：使用此维度的第一个值，并将其应用于之前和之后的所有事件。</li><li>**[!UICONTROL 最后一个已知]**：使用此维度的最后一个值，并将其应用于之前和之后的所有事件。</li></ul> |
-| [!UICONTROL 有效期限] | 用于为维度指定持久性窗口。选项如下： <ul><li>**[!UICONTROL 会话]**（默认）</li><li>**[!UICONTROL 人员]**</li><li>**[!UICONTROL 自定义时间]**</li><li>**[!UICONTROL 量度]**</li></ul>。可能需要能够在购买（如内部搜索词或其他促销用例）时让维度到期。可设置的最长有效期限为 90 天。如果选择[!UICONTROL 全部]分配，则仅有[!UICONTROL 会话]或[!UICONTROL 人员]有效期限可用。 |
+| [!UICONTROL 分配] | 指定在维度上使用用于持久性的分配模型。 选项如下：<ul><li>**[!UICONTROL 最近]**：维度中的值会一直保留，直到被后续值覆盖</li><li> **[!UICONTROL 原始]**：此维度的第一个值会持续存在，且不会被后续值覆盖</li><li>**[!UICONTROL 全部]**：同时保持此维度的所有值</li><li>**[!UICONTROL 第一个已知]**：使用此维度的第一个值，并将其应用于之前和之后的所有事件。</li><li>**[!UICONTROL 最后一个已知]**：使用此维度的最后一个值，并将其应用于之前和之后的所有事件。</li></ul> |
+| [!UICONTROL 有效期限] | 指定维度的持久性窗口。 选项如下： <ul><li>**[!UICONTROL 会话]**（默认）</li><li>**[!UICONTROL 人员]**</li><li>**[!UICONTROL 自定义时间]**</li><li>**[!UICONTROL 量度]**</li></ul>。可能需要能够在购买（如内部搜索词或其他促销用例）时让维度到期。可设置的最长到期时间为90天。 如果选择[!UICONTROL 全部]分配，则仅有[!UICONTROL 会话]或[!UICONTROL 人员]有效期限可用。 |
 
 {style="table-layout:auto"}
 
 ## [!UICONTROL 分配]设置
 
-关于可用的分配设置的详细信息。
+可用的分配设置包括：
 
 * **[!UICONTROL 最近]**：保留维度中现在的最新（按时间戳）值。在维度的有效期内任何后续出现的值均替换以前保留的值。如果在此维度上的[无值选项](no-value-options.md)下启用了“将‘无值’视为值”，则将用空值覆盖以前保留的值。例如，请考虑下表，其中具有[!UICONTROL 最近]的分配和[!UICONTROL 会话]的有效期限：
 
@@ -61,7 +61,7 @@ ht-degree: 96%
   | 数据集值 |  | C | B |  | A |
   | 最近分配 |  | C | B | B | A |
 
-* **[!UICONTROL 原有]**：在有效期持续时间内，按时间戳保留维度中现有的原有值。如果此维度有值，则在后续事件中看到不同的值时并不覆盖它。例如，请考虑下表，其中具有[!UICONTROL 原有]的分配和[!UICONTROL 会话]的有效期限：
+* **[!UICONTROL 原始]**：在有效期持续时间内，按时间戳保留维度内存在的原始值。 如果此维度具有值，则在后续事件中看到不同的值时不会覆盖它。 例如，请考虑下表，其中具有[!UICONTROL 原有]的分配和[!UICONTROL 会话]的有效期限：
 
   | 维度 | 第 1 次点击 | 第 2 次点击 | 第 3 次点击 | 第 4 次点击 | 第 5 次点击 |
   | --- | --- | --- | --- | --- | --- |
@@ -87,7 +87,7 @@ ht-degree: 96%
 
 ## [!UICONTROL 有效期限]设置
 
-关于可用的有效期限设置的详细信息。
+可用的过期设置包括：
 
 * **会话**：在给定会话后到期。默认有效期限时段。
 * **人员报告期**：在报告期结束时到期。
@@ -103,12 +103,12 @@ ht-degree: 96%
 
 一个下拉菜单，可让您将维度值的持久性绑定到另一个维度中的维度值。 有效的选项包括数据视图中包含的其他维度。
 
-有关如何有效使用绑定维度的示例，请参见[在 Customer Journey Analytics 中使用绑定维度和量度](../../use-cases/data-views/binding-dimensions-metrics.md)。
+有关如何有效使用绑定维度的示例，请参阅[在Customer Journey Analytics中使用绑定维度和量度](../../use-cases/data-views/binding-dimensions-metrics.md)。
 
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [绑定维度](https://video.tv.adobe.com/v/3409290/?quality=12&learn=on&captions=chi_hans){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [绑定维度](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -119,4 +119,4 @@ ht-degree: 96%
 
 此设置仅在对象数组中的绑定维度低于组件时显示。当绑定量度显示在事件中时，维度值会从事件级别维度向下复制到绑定维度的较低架构级别。
 
-有关如何有效使用绑定量度的更多信息，请参阅[在 Customer Journey Analytics 中使用绑定维度和量度](../../use-cases/data-views/binding-dimensions-metrics.md)下的第二个示例。
+有关如何有效使用绑定维度的更多信息，请参阅[在Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md)中使用绑定维度和量度下的第二个示例。
