@@ -1,13 +1,13 @@
 ---
-description: 使用日历和数据范围在Analysis Workspace中指定日期范围。
+description: 在 Analysis Workspace 中，可使用日历和数据范围功能来指定日期区间。
 title: 日期范围概述
 feature: Calendar
 exl-id: 99b31bd9-32f1-4da1-9e47-6d90c66282c5
 role: User
 source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '532'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 96%
 
 +++ View a video illustrating use of calendar and date ranges
 
->[!VIDEO](https://video.tv.adobe.com/v/327350?format=jpeg&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/24136?format=jpeg)
 
 {{videoaa}}
 +++
@@ -47,8 +47,8 @@ ht-degree: 96%
 您可以像[使用任何组件](/help/components/overview.md#analysis-workspace-components)一样使用日期范围。从 ![日程表](/help/assets/icons/Calendar.svg) **[!UICONTROL 日期范围]**&#x200B;组件面板中拖动日期范围，并将该组件放置在：
 
 - **[!UICONTROL 日程表]**：用日期范围 ![切换](/help/assets/icons/Switch.svg) **[!UICONTROL 替换]**&#x200B;当前的日程表配置。
-- **量度列标题**：![切换](/help/assets/icons/Switch.svg) **[!UICONTROL 替换]**&#x200B;量度、将日期范围 ![添加](/help/assets/icons/Add.svg)**[!UICONTROL &#x200B; 添加&#x200B;]**&#x200B;为量度，或者使用日期范围组件 ![过滤](/help/assets/icons/Filter.svg)**[!UICONTROL &#x200B;过滤&#x200B;]**&#x200B;该量度。
-- **维度列标题**：![切换](/help/assets/icons/Switch.svg) **[!UICONTROL 替换]**&#x200B;当前的维度。现在的新维度是&#x200B;**[!UICONTROL 日期范围]**。当维度是日期范围时，您就可以将其他日期范围 ![添加](/help/assets/icons/Add.svg)**[!UICONTROL &#x200B; 添加&#x200B;]**&#x200B;为维度项。
+- **量度列标题**：![切换](/help/assets/icons/Switch.svg) **[!UICONTROL 替换]**&#x200B;量度、将日期范围 ![添加](/help/assets/icons/Add.svg)**[!UICONTROL  添加&#x200B;]**为量度，或者使用日期范围组件 ![过滤](/help/assets/icons/Filter.svg)**[!UICONTROL &#x200B;过滤&#x200B;]**该量度。
+- **维度列标题**：![切换](/help/assets/icons/Switch.svg) **[!UICONTROL 替换]**&#x200B;当前的维度。现在的新维度是&#x200B;**[!UICONTROL 日期范围]**。当维度是日期范围时，您就可以将其他日期范围 ![添加](/help/assets/icons/Add.svg)**[!UICONTROL  添加&#x200B;]**为维度项。
 - **维度项**：按日期范围 ![细分](/help/assets/icons/Breakdown.svg) **[!UICONTROL 细分]**&#x200B;特定维度项。
 
 您还可以通过直接在自由格式表格可视化中添加日期范围列：
