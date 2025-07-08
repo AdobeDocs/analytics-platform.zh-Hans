@@ -1,5 +1,5 @@
 ---
-description: 了解如何在Analysis Workspace中使用项目中的组件
+description: 了解如何在 Analysis Workspace 的项目中使用组件
 title: 在项目中使用组件
 feature: Components
 role: User
@@ -7,7 +7,7 @@ exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '952'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 

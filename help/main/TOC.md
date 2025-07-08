@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics 指南
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '1269'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -272,7 +272,7 @@ ht-degree: 97%
    + Workspace 常见问题解答及更多信息  {#workspace-faq}
       + [常见问题解答](../analysis-workspace/workspace-faq/faq.md)
       + [优化性能](../analysis-workspace/workspace-faq/optimizing-performance.md)
-      + [错误和疑难解答](../analysis-workspace/workspace-faq/error-messages.md)
+      + [错误和故障排除](../analysis-workspace/workspace-faq/error-messages.md)
       + [限制](../analysis-workspace/workspace-faq/aw-limitations.md)
       + [要求](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [辅助功能](../analysis-workspace/workspace-faq/aw-accessibility.md)
@@ -316,12 +316,12 @@ ht-degree: 97%
    + [概述](../components/overview.md)
    + [使用组件](../components/use-components-in-workspace.md)
    + [添加组件描述](../components/add-component-descriptions.md)
-   + 批注 {#annotations}
+   + 注释 {#annotations}
       + [概述](../components/annotations/overview.md)
       + [创建注释](../components/annotations/create-annotations.md)
       + [管理注释](../components/annotations/manage-annotations.md)
       + [查看注释](../components/annotations/view-annotations.md)
-      + [移动记分卡批注](../components/annotations/mobile-annotations.md)
+      + [移动记分卡注释](../components/annotations/mobile-annotations.md)
    + 受众 {#audiences}
       + [受众概述](../components/audiences/audiences-overview.md)
       + [创建并发布受众](../components/audiences/publish.md)
