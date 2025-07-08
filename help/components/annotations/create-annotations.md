@@ -7,7 +7,7 @@ role: User, Admin
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '875'
-ht-degree: 86%
+ht-degree: 91%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 86%
 >[!CONTEXTUALHELP]
 >id="components_annotations_details"
 >title="注释详细信息"
->abstract="注释使您能够有效地将上下文数据的细微差别和见解传达给您的组织。 注释可让您将日历活动与特定维度和量度关联起来。"
+>abstract="注释使您能够有效地将上下文数据的细微差别和洞察传达给您的组织。通过注释，您可以将日程表活动与特定的维度和量度关联起来。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -50,7 +50,7 @@ ht-degree: 86%
 >[!CONTEXTUALHELP]
 >id="components_annotations_scope"
 >title="范围"
->abstract="范围允许您自定义注释哪些数据。 计算量度和区段不会自动继承应用于其定义中所用组件的注释。 您可以将新的计算量度添加到现有注释的范围部分。新的区段需要新的注释。"
+>abstract="您可以利用范围来自定义注释的数据。计算量度和区段不会自动继承其定义中使用的组件的注释。您可以将新的计算量度添加到现有注释的范围部分。新的区段需要新的注释。"
 
 <!-- markdownlint-enable MD034 -->
 
