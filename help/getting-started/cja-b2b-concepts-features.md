@@ -6,9 +6,9 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B Edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 68f2fe684f6eb9590ab047e893fb04b1cbe1a8cd
+source-git-commit: a9c22cfd7077fd9e1ac4b9ea4ec0e016e9d2425b
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1468'
 ht-degree: 2%
 
 ---
@@ -72,7 +72,7 @@ Customer Journey Analytics基于三个容器的概念而构建：人员、会话
   >Customer Journey Analytics B2B edition中基于帐户的设置中的B2B事件数据可能包含多行数据，但没有人员或会话。 例如：详细说明商机阶段进展的行。 在评估区段时，请记住，人员和会话可能不再是正确的标准。
   >
 
-* **归因**：您可以在[归因面板](/help/analysis-workspace/c-panels/attribution.md)、[归因组件设置](/help/data-views/component-settings/attribution.md)、[计算量度](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md)或自由格式表[&#128279;](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)的列中使用新的B2B容器。 帐户回顾时间可延长至13个月。
+* **归因**：您可以在[归因面板](/help/analysis-workspace/c-panels/attribution.md)、[归因组件设置](/help/data-views/component-settings/attribution.md)、[计算量度](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md)或自由格式表[的](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)列中使用新的B2B容器。 帐户回顾时间可延长至13个月。
 
 * **可视化图表**：[退出](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)、[流量](/help/analysis-workspace/visualizations/c-flow/flow.md)、[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)和[同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)可视化图表支持新的B2B容器。 例如：您可以使用新容器了解购买组如何使用内容，或者商机同类群组如何接近销售结束。
 您还可以在[用户首选项](/help/analysis-workspace/user-preferences.md#visualizations-preferences)中设置这些可视化的默认容器。
@@ -87,7 +87,7 @@ Customer Journey Analytics B2B可将以下数据类型与数据集区分开来�
 | 数据类型 | 时间序列 | 容器记录 | 字段记录 |
 |---|---|---|---|
 | **数据集** | **事件数据集**<br/>&#x200B;例如：<ul><li>数字分析</li><li>CRM事件</li><li>面对面活动</li><li>呼叫中心数据</li></ul> | **配置文件数据集**<br/>&#x200B;例如：<ul><li>CRM记录</li><li>AJO B2B记录</li><li>CDP记录</li><ul> | **分类**<br/>&#x200B;例如：<ul><li>营销活动记录</li><li>营销列表记录</li><li>内容元数据</li><li>产品记录</li></ul> |
-| 要求 | **时间戳**<br>&#x200B;每个记录需要：<ul><li>帐户 ID</li><li>全球帐户 ID</li><li>人员 ID</li></ul> | **帐户ID**<br>&#x200B;记录需要容器ID，例如：<ul><li>帐户</li><li>人员</li><li>机会</li><li>购买群组</li></ul> | **匹配键**<br>&#x200B;记录需要包含在容器或事件数据集中的ID，例如：<ul><li>营销活动 ID</li><li>内容 ID</li><li>产品 ID</li></ul> |
+| 要求 | **时间戳**<br>&#x200B;每个记录需要：<ul><li>帐户 ID</li><li>全局帐户ID（可选）</li></ul> | **帐户ID**<br>&#x200B;记录需要容器ID，例如：<ul><li>帐户</li><li>人员</li><li>机会</li><li>购买群组</li></ul> | **匹配键**<br>&#x200B;记录需要包含在容器或事件数据集中的ID，例如：<ul><li>营销活动 ID</li><li>内容 ID</li><li>产品 ID</li></ul> |
 
 {style="table-layout:fixed"}
 
