@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: a9c22cfd7077fd9e1ac4b9ea4ec0e016e9d2425b
+source-git-commit: 7853231ffc2ad42a66ab67a61c9f043ec1eac739
 workflow-type: tm+mt
 source-wordcount: '14685'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 * **Power BI桌面**。 使用的版本为2.137.1102.0 64位（2024年10月）。
 * **Tableau桌面**。 使用的版本为2024.1.5 (20241.24.0705.0334) 64位。
-* **Looker**。 联机版本25.0.23，可通过[looker.com](https://looker.com){target="_blank"}使用
+* **Looker**。 联机版本25.0.23，可通过[looker.com](https://looker.com)使用
 * **Jupyter笔记本**。 使用的版本为7.3.2。
 * **RStudio**。 使用的版本为2024.12.0，内部版本为467。
 
@@ -70,7 +70,7 @@ ht-degree: 2%
 * 量度：**[!UICONTROL 购买收入]** 🅓和&#x200B;**[!UICONTROL 购买]** 🅔。
 * 筛选器： **[!UICONTROL 钓鱼产品]** 🅕。
 
-![Customer Journey Analytics基本设置](assets/cja-base.png){zoomable="yes"}
+![Customer Journey Analytics基本设置](assets/cja-base.png)
 
 当您完成使用案例时，请将这些示例对象替换为适合您特定环境的对象。
 
@@ -89,41 +89,35 @@ ht-degree: 2%
    1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;界面中选择&#x200B;**[!UICONTROL 凭据]**&#x200B;选项卡。
    1. 从`prod:cja`数据库&#x200B;**[!UICONTROL 下拉菜单中选择]**。
 
-      ![查询服务凭据](assets/queryservice-credentials.png){zoomable="yes"}
+      ![查询服务凭据](assets/queryservice-credentials.png)
 
 1. 启动Power BI Desktop。
    1. 从主界面中选择&#x200B;**[!UICONTROL 从其他源获取数据]**。
-   1. 在&#x200B;**[!UICONTROL 获取数据]**&#x200B;对话框中：
-
-      ![PowerBI PostgreSQL数据库](assets/powerbi-postgresql.png){zoomable="yes"}
+   1. 在&#x200B;**[!UICONTROL 获取数据]**对话框中：
+      ![PowerBI PostgreSQL数据库](assets/powerbi-postgresql.png)
       1. 搜索并选择&#x200B;**[!UICONTROL PostgreSQL数据库]**。
       1. 选择&#x200B;**[!UICONTROL 连接]**。
-   1. 在&#x200B;**[!UICONTROL PostgreSQL数据库]**&#x200B;对话框中：
-
-      ![PowerBI桌面服务器和数据库设置](assets/powerbi-serverdatabase.png){zoomable="yes"}
+   1. 在&#x200B;**[!UICONTROL PostgreSQL数据库]**对话框中：
+      ![PowerBI桌面服务器和数据库设置](assets/powerbi-serverdatabase.png)
       1. 使用![复制](/help/assets/icons/Copy.svg)从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中复制并粘贴&#x200B;**[!UICONTROL 主机]**&#x200B;和&#x200B;**[!UICONTROL 端口]**&#x200B;值，以`:`分隔，作为&#x200B;**[!UICONTROL 服务器]**&#x200B;的值。 例如：`examplecompany.platform-query.adobe.io:80`。
       1. 使用![复制](/help/assets/icons/Copy.svg)从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板复制并粘贴&#x200B;**[!UICONTROL 数据库]**&#x200B;值。 将`?FLATTEN`添加到您粘贴的值。 例如，`prod:cja?FLATTEN`。
       1. 选择&#x200B;**[!UICONTROL DirectQuery]**&#x200B;作为&#x200B;**[!UICONTROL 数据连接模式]**。
       1. 选择&#x200B;**[!UICONTROL 确定]**。
-   1. 在&#x200B;**[!UICONTROL PostgreSQL数据库]** - **[!UICONTROL 数据库]**&#x200B;对话框中：
-
-      ![PowerBI桌面用户和密码](assets/powerbi-userpassword.png){zoomable="yes"}
-      1. 使用![复制](/help/assets/icons/Copy.svg)从&#x200B;**[!UICONTROL 用户名]**&#x200B;和&#x200B;**[!UICONTROL 密码]**&#x200B;字段中的Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中复制&#x200B;**[!UICONTROL 用户名]**&#x200B;和&#x200B;**[!UICONTROL 密码]**&#x200B;值。 如果您使用的是[不会过期的凭据](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect)，请使用不会过期的凭据的密码。
+   1. 在&#x200B;**[!UICONTROL PostgreSQL数据库]** - **[!UICONTROL 数据库]**对话框中：
+      ![PowerBI桌面用户和密码](assets/powerbi-userpassword.png)
+      1. 使用![复制](/help/assets/icons/Copy.svg)从&#x200B;**[!UICONTROL 用户名]**&#x200B;和&#x200B;**[!UICONTROL 密码]**&#x200B;字段中的Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中复制&#x200B;**[!UICONTROL 用户名]**&#x200B;和&#x200B;**[!UICONTROL 密码]**&#x200B;值。 如果您使用的是[不会过期的凭据](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect)，请使用不会过期的凭据的密码。
       1. 确保&#x200B;**[!UICONTROL 选择要将这些设置应用到]**&#x200B;的级别的下拉菜单设置为您之前定义的&#x200B;**[!UICONTROL 服务器]**。
       1. 选择&#x200B;**[!UICONTROL 连接]**。
-   1. 在&#x200B;**[!UICONTROL 导航器]**&#x200B;对话框中，将检索数据视图。 此检索可能需要一些时间。 检索后，您将在Power BI Desktop中看到以下内容。
-
-      ![Power BI桌面加载数据](assets/powerbi-navigator-load.png){zoomable="yes"}
+   1. 在&#x200B;**[!UICONTROL 导航器]**对话框中，将检索数据视图。 此检索可能需要一些时间。 检索后，您将在Power BI Desktop中看到以下内容。
+      ![Power BI桌面加载数据](assets/powerbi-navigator-load.png)
       1. 从左侧面板的列表中选择&#x200B;**[!UICONTROL public.cc_data_view]**。
       1. 您有两个选项：
          1. 选择&#x200B;**[!UICONTROL 加载]**&#x200B;以继续并完成安装。
          1. 选择&#x200B;**[!UICONTROL 转换数据]**。 您会看到一个对话框，可以在其中选择将转换作为配置的一部分应用。
-
-            ![Power BI桌面转换数据](assets/powerbi-transform-data.png){zoomable="yes"}
+            ![Power BI桌面转换数据](assets/powerbi-transform-data.png)
             * 选择&#x200B;**[!UICONTROL 关闭并应用]**。
    1. 一段时间后，**[!UICONTROL public.cc_data_view]**&#x200B;显示在&#x200B;**[!UICONTROL 数据]**&#x200B;窗格中。 选择![V形右侧](/help/assets/icons/ChevronRight.svg)以显示维度和量度。
-
-      ![Power BI Destkop服务器数据已加载](assets/powerbi-navigator-loaded.png){zoomable="yes"}
+      ![Power BI Destkop服务器数据已加载](assets/powerbi-navigator-loaded.png)
 
 
 ### 是否扁平化
@@ -154,21 +148,19 @@ Power BI Desktop支持`FLATTEN`参数的以下方案。 有关详细信息，请
    1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;界面中选择&#x200B;**[!UICONTROL 凭据]**&#x200B;选项卡。
    1. 从`prod:cja`数据库&#x200B;**[!UICONTROL 下拉菜单中选择]**。
 
-      ![查询服务凭据](assets/queryservice-credentials.png){zoomable="yes"}
+      ![查询服务凭据](assets/queryservice-credentials.png)
 
 1. 启动“表格”。
    1. 从&#x200B;**[!UICONTROL To a Server]**&#x200B;下的左边栏中选择&#x200B;**[!UICONTROL PostgreSQL]**。 如果不可用，请选择&#x200B;**[!UICONTROL 更多……]**，然后从&#x200B;**[!UICONTROL 安装的连接器]**&#x200B;中选择&#x200B;**[!UICONTROL PostgreSQL]**。
-
-      ![Tableau连接器](assets/tableau-connectors.png){zoomable="yes"}
-   1. 在&#x200B;**[!UICONTROL PostgreSQL]**&#x200B;对话框的&#x200B;**[!UICONTROL 常规]**&#x200B;选项卡中：
-
-      ![Tableau登录对话框](assets/tableau-signin.png){zoomable="yes"}
+      ![Tableau连接器](assets/tableau-connectors.png)
+   1. 在&#x200B;**[!UICONTROL PostgreSQL]**&#x200B;对话框的&#x200B;**[!UICONTROL 常规]**选项卡中：
+      ![Tableau登录对话框](assets/tableau-signin.png)
       1. 使用![复制](/help/assets/icons/Copy.svg)将&#x200B;**[!UICONTROL 主机]**&#x200B;从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板复制并粘贴到&#x200B;**[!UICONTROL 服务器]**。
       1. 使用![复制](/help/assets/icons/Copy.svg)将&#x200B;**[!UICONTROL 端口]**&#x200B;从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板复制并粘贴到&#x200B;**[!UICONTROL 端口]**。
       1. 使用![复制](/help/assets/icons/Copy.svg)将&#x200B;**[!UICONTROL 数据库]**&#x200B;从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板复制并粘贴到&#x200B;**[!UICONTROL 数据库]**。 将`%3FFLATTEN`添加到您粘贴的值。 例如：`prod:cja%3FFLATTEN`。
       1. 从&#x200B;**[!UICONTROL 身份验证]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 用户名和密码]**。
       1. 使用![复制](/help/assets/icons/Copy.svg)将&#x200B;**[!UICONTROL 用户名]**&#x200B;从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板复制并粘贴到&#x200B;**[!UICONTROL 用户名]**。
-      1. 使用![复制](/help/assets/icons/Copy.svg)将&#x200B;**[!UICONTROL 密码]**&#x200B;从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板复制并粘贴到&#x200B;**[!UICONTROL 密码]**。 如果您使用的是[不会过期的凭据](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect)，请使用不会过期的凭据的密码。
+      1. 使用![复制](/help/assets/icons/Copy.svg)将&#x200B;**[!UICONTROL 密码]**&#x200B;从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板复制并粘贴到&#x200B;**[!UICONTROL 密码]**。 如果您使用的是[不会过期的凭据](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect)，请使用不会过期的凭据的密码。
       1. 确保已选中&#x200B;**[!UICONTROL Require SSL]**。
       1. 选择&#x200B;**[!UICONTROL 登录]**。
 
@@ -176,13 +168,11 @@ Power BI Desktop支持`FLATTEN`参数的以下方案。 有关详细信息，请
    1. 在主窗口中，您会在左窗格的&#x200B;**[!UICONTROL Data Source]**&#x200B;页面中看到：
       * **[!UICONTROL 连接]**&#x200B;下的连接名称。
       * **[!UICONTROL 数据库]**&#x200B;下的数据库名称。
-      * **[!UICONTROL 表]**&#x200B;下的表列表。
-
-        ![已连接Tableau](assets/tableau-connected.png){zoomable="yes"}
+      * **[!UICONTROL 表]**下的表列表。
+        ![已连接Tableau](assets/tableau-connected.png)
       1. 将&#x200B;**[!UICONTROL cc_data_view]**&#x200B;条目拖放到显示&#x200B;**[!UICONTROL 将表]**&#x200B;拖放到此处的主视图中。
-   1. 主窗口显示&#x200B;**[!UICONTROL cc_data_view]**&#x200B;数据视图的详细信息。
-
-      ![已连接Tableau](assets/tableau-validation.png){zoomable="yes"}
+   1. 主窗口显示&#x200B;**[!UICONTROL cc_data_view]**数据视图的详细信息。
+      ![已连接Tableau](assets/tableau-validation.png)
 
 ### 是否扁平化
 
@@ -210,7 +200,7 @@ Tableau Desktop支持`FLATTEN`参数的以下方案。 有关详细信息，请�
    1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;界面中选择&#x200B;**[!UICONTROL 凭据]**&#x200B;选项卡。
    1. 从`prod:cja`数据库&#x200B;**[!UICONTROL 下拉菜单中选择]**。
 
-      ![查询服务凭据](assets/queryservice-credentials.png){zoomable="yes"}
+      ![查询服务凭据](assets/queryservice-credentials.png)
 
 1. 登录到Looker
 
@@ -219,7 +209,7 @@ Tableau Desktop支持`FLATTEN`参数的以下方案。 有关详细信息，请�
    1. 选择&#x200B;**[!UICONTROL 添加连接]**。
    1. 在&#x200B;**[!UICONTROL 将数据库连接到Looker屏幕]**&#x200B;中。
 
-      ![Looker连接到数据库](assets/looker-connect.png){zoomable="yes"}
+      ![Looker连接到数据库](assets/looker-connect.png)
 
       1. 为您的连接输入&#x200B;**[!UICONTROL Name]**，例如`Example Looker Connection`。
       1. 确保选择&#x200B;**[!UICONTROL 所有项目]**&#x200B;作为&#x200B;**[!UICONTROL 连接作用域]**。
@@ -286,7 +276,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
    1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;界面中选择&#x200B;**[!UICONTROL 凭据]**&#x200B;选项卡。
    1. 从`prod:cja`数据库&#x200B;**[!UICONTROL 下拉菜单中选择]**。
 
-      ![查询服务凭据](assets/queryservice-credentials.png){zoomable="yes"}
+      ![查询服务凭据](assets/queryservice-credentials.png)
 
 1. 确保已设置专用Python虚拟环境来运行Jupyter Notebook环境。
 1. 确保在虚拟环境中安装了所需的库：
@@ -328,7 +318,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 1. 执行单元格。
 1. 使用![复制](/help/assets/icons/Copy.svg)将密码从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板复制并粘贴到Jupyter Notebook中的&#x200B;**[!UICONTROL 密码]**&#x200B;字段。
 
-   ![Jupter笔记本配置步骤1](assets/jupyter-config-step1.png){zoomable="yes"}
+   ![Jupter笔记本配置步骤1](assets/jupyter-config-step1.png)
 
 1. 在新单元格中，输入要加载SQL扩展和所需库的语句，并与Customer Journey Analytics连接。
 
@@ -340,7 +330,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
    执行shell。 您应该不会看到任何输出，但单元格应在没有任何警告的情况下执行。
 
-   ![Jupyer笔记本配置步骤4](assets/jupyter-config-step2.png){zoomable="yes"}
+   ![Jupyer笔记本配置步骤4](assets/jupyter-config-step2.png)
 
 1. 在新调用中，输入语句以根据连接获取可用数据视图的列表。
 
@@ -364,7 +354,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
 
    执行shell。 您应该会在下面的屏幕快照中看到输出模拟。
 
-   ![Jupyter笔记本配置步骤5](assets/jupyter-config-step3.png){zoomable="yes"}
+   ![Jupyter笔记本配置步骤5](assets/jupyter-config-step3.png)
 
    您应该会在数据视图列表中看到&#x200B;**[!UICONTROL cc_data_view]**。
 
@@ -392,11 +382,11 @@ Jupyter Notebook支持`FLATTEN`参数的以下方案。 有关详细信息，请
    1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;界面中选择&#x200B;**[!UICONTROL 凭据]**&#x200B;选项卡。
    1. 从`prod:cja`数据库&#x200B;**[!UICONTROL 下拉菜单中选择]**。
 
-      ![查询服务凭据](assets/queryservice-credentials.png){zoomable="yes"}
+      ![查询服务凭据](assets/queryservice-credentials.png)
 
 1. 启动RStudio。
 1. 创建新的R Markdown文件，或下载[此示例R Markdown文件](assets/BI-Extension.Rmd.zip)。
-1. 在第一个块中，输入以下介于` ` ``{r} `和` `` ` `之间的语句。 使用![复制](/help/assets/icons/Copy.svg)将Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中的值复制并粘贴到各种参数（如`host`、`dbname`和`user`）所需的值。 例如：
+1. 在第一个块中，输入以下介于` ```{r} `和` ``` `之间的语句。 使用![复制](/help/assets/icons/Copy.svg)将Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中的值复制并粘贴到各种参数（如`host`、`dbname`和`user`）所需的值。 例如：
 
    ```R
    library(rstudioapi)
@@ -415,9 +405,9 @@ Jupyter Notebook支持`FLATTEN`参数的以下方案。 有关详细信息，请
 1. 运行块。 系统会提示您输入&#x200B;**[!UICONTROL 主机]**、**[!UICONTROL 数据库]**&#x200B;和&#x200B;**[!UICONTROL 用户]**。 只需接受您在上一步中提供的值即可。
 1. 使用![复制](/help/assets/icons/Copy.svg)将密码从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板复制并粘贴到RStudio中的&#x200B;**[!UICONTROL 密码]**&#x200B;对话框提示符。
 
-   ![RStudio配置步骤1](assets/rstudio-config-step1.png){zoomable="yes"}
+   ![RStudio配置步骤1](assets/rstudio-config-step1.png)
 
-1. 创建一个新块并输入以下介于` ` `` {r} `和` `` ` `之间的语句。
+1. 创建一个新块并输入以下介于` ``` {r} `和` ``` `之间的语句。
 
    ```R
    con <- dbConnect(
@@ -434,7 +424,7 @@ Jupyter Notebook支持`FLATTEN`参数的以下方案。 有关详细信息，请
 1. 运行块。 如果连接成功，您应该不会看到任何输出。
 
 
-1. 创建一个新块并输入以下介于` ` `` {r} `和` `` ` `之间的语句。
+1. 创建一个新块并输入以下介于` ``` {r} `和` ``` `之间的语句。
 
    ```R
    views <- dbListTables(con)
@@ -444,7 +434,7 @@ Jupyter Notebook支持`FLATTEN`参数的以下方案。 有关详细信息，请
 1. 运行块。 您应该看到`character(0)`作为唯一输出。
 
 
-1. 创建一个新块并输入以下介于` ` `` {r} `和` `` ` `之间的语句。
+1. 创建一个新块并输入以下介于` ``` {r} `和` ``` `之间的语句。
 
    ```R
    glimpse(dv)
@@ -452,7 +442,7 @@ Jupyter Notebook支持`FLATTEN`参数的以下方案。 有关详细信息，请
 
 1. 运行块。 您应该会在下面的屏幕快照中看到输出模拟。
 
-   ![RStudio配置步骤2](assets/rstudio-config-step2.png){zoomable="yes"}
+   ![RStudio配置步骤2](assets/rstudio-config-step2.png)
 
 ### 是否扁平化
 
@@ -482,7 +472,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 用例的&#x200B;**[!UICONTROL 每日趋势]**&#x200B;面板示例：
 
-![Customer Journey Analytics每日趋势面板](assets/cja_daily_trend.png){zoomable="yes"}
+![Customer Journey Analytics每日趋势面板](assets/cja_daily_trend.png)
 
 +++
 
@@ -505,7 +495,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 在&#x200B;**[!UICONTROL 筛选器]**&#x200B;窗格中：
 
-   1. 从此视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]** daterangeday is (All)**&#x200B;**。
+   1. 从此视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]** daterangeday is (All)****。
    1. 选择&#x200B;**[!UICONTROL 高级筛选]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
    1. 将筛选器定义为&#x200B;**[!UICONTROL 当值]** **[!UICONTROL 位于或晚于]** `1/1/2023` **[!UICONTROL 且]** **[!UICONTROL 位于]** `2/1/2023.`时显示项您可以使用日历图标挑选日期。
    1. 选择&#x200B;**[!UICONTROL 应用筛选器]**。
@@ -516,7 +506,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
    使用与表相同的数据时，折线图可视化图表会替换表。 您的Power BI桌面应该如下所示。
 
-   ![Power BI桌面用例2日期范围筛选器](assets/uc2-pbi-daterange.png){zoomable="yes"}
+   ![Power BI桌面用例2日期范围筛选器](assets/uc2-pbi-daterange.png)
 
 1. 在折线图可视化图表上：
 
@@ -525,7 +515,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
    主视图已更新以显示折线图可视化图表和表格。 您的Power BI桌面应该如下所示。
 
-   ![Power BI桌面用例2最终每日趋势可视化图表](assets/uc2-pbi-final.png){zoomable="yes"}
+   ![Power BI桌面用例2最终每日趋势可视化图表](assets/uc2-pbi-final.png)
 
 >[!TAB Tableau桌面]
 
@@ -534,7 +524,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
    1. 在&#x200B;**[!UICONTROL 筛选器字段\[日期范围\]]**&#x200B;对话框中，选择&#x200B;**[!UICONTROL 日期范围]**&#x200B;并选择&#x200B;**[!UICONTROL 下一步>]**。
    1. 在&#x200B;**[!UICONTROL 筛选器\[日期范围]]**&#x200B;对话框中，选择&#x200B;**[!UICONTROL 日期范围]**&#x200B;并指定句点`01/01/2023` - `01/02/2023`。
 
-      ![Tableau桌面筛选器](assets/uc2-tableau-filter.png){zoomable="yes"}
+      ![Tableau桌面筛选器](assets/uc2-tableau-filter.png)
 
    1. 从&#x200B;**[!UICONTROL 数据]**&#x200B;窗格的&#x200B;**[!UICONTROL 表]**&#x200B;列表中拖放&#x200B;**[!UICONTROL Daterangeday]**，并将条目拖放到&#x200B;**[!UICONTROL 列]**&#x200B;旁边的字段中。
       * 从&#x200B;**[!UICONTROL Daterangeday]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL Day]**，以便将该值更新为&#x200B;**[!UICONTROL DAY(Daterangeday)]**。
@@ -543,7 +533,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau桌面图形](assets/uc2-tableau-graph.png){zoomable="yes"}
+      ![Tableau桌面图形](assets/uc2-tableau-graph.png)
 
 1. 从&#x200B;**[!UICONTROL 工作表1]**&#x200B;选项卡上下文菜单中选择&#x200B;**[!UICONTROL 复制]**&#x200B;以创建第二个工作表。
 1. 从&#x200B;**[!UICONTROL 工作表1]**&#x200B;选项卡上下文菜单中选择&#x200B;**[!UICONTROL 重命名]**&#x200B;以将工作表重命名为`Graph`。
@@ -555,7 +545,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau桌面数据](assets/uc2-tableau-data.png){zoomable="yes"}
+      ![Tableau桌面数据](assets/uc2-tableau-data.png)
 
 1. 选择&#x200B;**[!UICONTROL 新建仪表板]**&#x200B;选项卡按钮（位于底部）以创建新的&#x200B;**[!UICONTROL 仪表板1]**&#x200B;视图。 在&#x200B;**[!UICONTROL 功能板1]**&#x200B;视图中：
    1. 将&#x200B;**[!UICONTROL Graph]**&#x200B;工作表从&#x200B;**[!UICONTROL 工作表]**&#x200B;托架拖放到&#x200B;**[!UICONTROL 仪表板1]**&#x200B;视图中，该视图显示&#x200B;*在此处放置工作表*。
@@ -564,7 +554,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau桌面功能板1](assets/uc2-tableau-dashboard.png){zoomable="yes"}
+      ![Tableau桌面功能板1](assets/uc2-tableau-dashboard.png)
 
 
 >[!TAB Looker]
@@ -574,8 +564,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 1. 在&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;对话框中：
    1. 选择&#x200B;**[!UICONTROL ‣抄送数据视图]**
    1. 从字段列表中，选择&#x200B;**[!UICONTROL 日‣间范围日期]**，然后选择&#x200B;**[!UICONTROL 日期范围日期]**。
-
-      ![Looker筛选器](assets/uc2-looker-filter.png){zoomable="yes"}
+      ![Looker筛选器](assets/uc2-looker-filter.png)
 1. 指定&#x200B;**[!UICONTROL Cc数据视图日期范围日期]**&#x200B;筛选器，因为&#x200B;**[!UICONTROL 在]** **[!UICONTROL 2023/01/01]** **[!UICONTROL 之前]** **[!UICONTROL 2023/02/01]**&#x200B;的范围内。
 1. 从左边栏中的&#x200B;**[!UICONTROL 抄送数据视图]**&#x200B;部分，
    1. 从&#x200B;**[!UICONTROL DIMENSIONS‣]**&#x200B;的列表中选择&#x200B;**[!UICONTROL 日期范围日期]**，然后选择&#x200B;**[!UICONTROL 日期]**。
@@ -585,7 +574,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 您应该会看到如下所示的可视化图表和表格。
 
-![Looker结果每日趋势](assets/uc2-looker-result.png){zoomable="yes"}
+![Looker结果每日趋势](assets/uc2-looker-result.png)
 
 
 >[!TAB Jupyter笔记本]
@@ -610,12 +599,12 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc2-jupyter-results.png){zoomable="yes"}
+   ![Jupyter笔记本结果](assets/uc2-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。
 
    ```R
    ## Daily Events
@@ -633,7 +622,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![RStudio结果](assets/uc2-rstudio-results.png){zoomable="yes"}
+   ![RStudio结果](assets/uc2-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -648,7 +637,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 用例的&#x200B;**[!UICONTROL 每小时趋势]**&#x200B;面板示例：
 
-![Customer Journey Analytics小时趋势可视化图表](assets/cja_hourly_trend.png){zoomable="yes"}
+![Customer Journey Analytics小时趋势可视化图表](assets/cja_hourly_trend.png)
 
 +++
 
@@ -672,7 +661,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
    1. 在&#x200B;**[!UICONTROL 筛选器字段\[日期范围\]]**&#x200B;对话框中，选择&#x200B;**[!UICONTROL 日期范围]**&#x200B;并选择&#x200B;**[!UICONTROL 下一步>]**。
    1. 在&#x200B;**[!UICONTROL 筛选器\[日期范围]]**&#x200B;对话框中，选择&#x200B;**[!UICONTROL 日期范围]**&#x200B;并指定句点`01/01/2023` - `02/01/2023`。
 
-      ![Tableau桌面筛选器](assets/uc3-tableau-filter.png){zoomable="yes"}
+      ![Tableau桌面筛选器](assets/uc3-tableau-filter.png)
 
    1. 从&#x200B;**[!UICONTROL 数据]**&#x200B;窗格的&#x200B;**[!UICONTROL 表]**&#x200B;列表中拖放&#x200B;**[!UICONTROL Daterangehour]**，并将条目拖放到&#x200B;**[!UICONTROL 列]**&#x200B;旁边的字段中。
       * 从&#x200B;**[!UICONTROL Daterangeday]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL More]** > **[!UICONTROL Hours]**，以便将该值更新为&#x200B;**[!UICONTROL HOUR(Daterangeday)]**。
@@ -681,7 +670,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau桌面图形](assets/uc3-tableau-graph.png){zoomable="yes"}
+      ![Tableau桌面图形](assets/uc3-tableau-graph.png)
 
 1. 从&#x200B;**[!UICONTROL 工作表1]**&#x200B;选项卡上下文菜单中选择&#x200B;**[!UICONTROL 复制]**&#x200B;以创建第二个工作表。
 1. 从&#x200B;**[!UICONTROL 工作表1]**&#x200B;选项卡上下文菜单中选择&#x200B;**[!UICONTROL 重命名]**&#x200B;以将工作表重命名为`Graph`。
@@ -693,7 +682,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau桌面数据](assets/uc3-tableau-data.png){zoomable="yes"}
+      ![Tableau桌面数据](assets/uc3-tableau-data.png)
 
 1. 选择&#x200B;**[!UICONTROL 新建仪表板]**&#x200B;选项卡按钮（位于底部）以创建新的&#x200B;**[!UICONTROL 仪表板1]**&#x200B;视图。 在&#x200B;**[!UICONTROL 功能板1]**&#x200B;视图中：
    1. 将&#x200B;**[!UICONTROL Graph]**&#x200B;工作表从&#x200B;**[!UICONTROL 工作表]**&#x200B;托架拖放到&#x200B;**[!UICONTROL 仪表板1]**&#x200B;视图中，该视图显示&#x200B;*在此处放置工作表*。
@@ -702,7 +691,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
       您的&#x200B;**[!UICONTROL 仪表板1]**&#x200B;视图应如下所示。
 
-      ![Tableau桌面功能板1](assets/uc3-tableau-dashboard.png){zoomable="yes"}
+      ![Tableau桌面功能板1](assets/uc3-tableau-dashboard.png)
 
 
 >[!TAB Looker]
@@ -713,8 +702,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 1. 在&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;对话框中：
    1. 选择&#x200B;**[!UICONTROL ‣抄送数据视图]**
    1. 从字段列表中，选择&#x200B;**[!UICONTROL 日‣间范围日期]**，然后选择&#x200B;**[!UICONTROL 日期范围日期]**。
-
-      ![Looker筛选器](assets/uc2-looker-filter.png){zoomable="yes"}
+      ![Looker筛选器](assets/uc2-looker-filter.png)
 1. 指定&#x200B;**[!UICONTROL Cc数据视图日期范围日期]**&#x200B;筛选器，因为&#x200B;**[!UICONTROL 在]** **[!UICONTROL 2023/01/01]** **[!UICONTROL 之前]** **[!UICONTROL 2023/01/02]**&#x200B;的范围内。
 1. 从左边栏中的&#x200B;**[!UICONTROL 抄送数据视图]**&#x200B;部分，
    1. 从‣**[!UICONTROL DIMENSIONS]**&#x200B;的列表中选择&#x200B;**[!UICONTROL Daterangehour Date]**，然后选择&#x200B;**[!UICONTROL Time]**。
@@ -724,7 +712,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 您应该会看到如下所示的可视化图表和表格。
 
-![Looker结果每日趋势](assets/uc3-looker-result.png){zoomable="yes"}
+![Looker结果每日趋势](assets/uc3-looker-result.png)
 
 
 >[!TAB Jupyter笔记本]
@@ -749,12 +737,12 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc3-jupyter-results.png){zoomable="yes"}
+   ![Jupyter笔记本结果](assets/uc3-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。
 
    ```R
    ## Hourly Events
@@ -772,7 +760,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![RStudio结果](assets/uc3-rstudio-results.png){zoomable="yes"}
+   ![RStudio结果](assets/uc3-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -787,7 +775,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 使用案例的&#x200B;**[!UICONTROL 每月趋势]**&#x200B;面板示例：
 
-![Customer Journey Analytics每月趋势可视化图表](assets/cja_monthly_trend.png){zoomable="yes"}
+![Customer Journey Analytics每月趋势可视化图表](assets/cja_monthly_trend.png)
 
 +++
 
@@ -823,7 +811,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
    使用与表相同的数据时，折线图可视化图表会替换表。 您的Power BI桌面应该如下所示。
 
-   ![Power BI桌面用例2日期范围筛选器](assets/uc4-pbi-filter-daterange.png){zoomable="yes"}
+   ![Power BI桌面用例2日期范围筛选器](assets/uc4-pbi-filter-daterange.png)
 
 1. 在折线图可视化图表上：
 
@@ -832,7 +820,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
    主视图已更新以显示折线图可视化图表和表格。 您的Power BI桌面应该如下所示。
 
-   ![Power BI桌面用例2最终每日趋势可视化图表](assets/uc4-pbi-filter-final.png){zoomable="yes"}
+   ![Power BI桌面用例2最终每日趋势可视化图表](assets/uc4-pbi-filter-final.png)
 
 >[!TAB Tableau桌面]
 
@@ -841,7 +829,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
    1. 在&#x200B;**[!UICONTROL 筛选器字段\[日期范围\]]**&#x200B;对话框中，选择&#x200B;**[!UICONTROL 日期范围]**&#x200B;并选择&#x200B;**[!UICONTROL 下一步>]**。
    1. 在&#x200B;**[!UICONTROL 筛选器\[日期范围]]**&#x200B;对话框中，选择&#x200B;**[!UICONTROL 日期范围]**&#x200B;并指定句点`01/01/2023` - `01/01/2024`。
 
-      ![Tableau桌面筛选器](assets/uc4-tableau-filter.png){zoomable="yes"}
+      ![Tableau桌面筛选器](assets/uc4-tableau-filter.png)
 
    1. 从&#x200B;**[!UICONTROL 数据]**&#x200B;窗格的&#x200B;**[!UICONTROL 表]**&#x200B;列表中拖放&#x200B;**[!UICONTROL Daterangeday]**，并将条目拖放到&#x200B;**[!UICONTROL 列]**&#x200B;旁边的字段中。
       * 从&#x200B;**[!UICONTROL Daterangeday]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL MONTH]**，以便将该值更新为&#x200B;**[!UICONTROL MONTH(Daterangeday)]**。
@@ -850,7 +838,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau桌面图形](assets/uc4-tableau-graph.png){zoomable="yes"}
+      ![Tableau桌面图形](assets/uc4-tableau-graph.png)
 
 1. 从&#x200B;**[!UICONTROL 工作表1]**&#x200B;选项卡上下文菜单中选择&#x200B;**[!UICONTROL 复制]**&#x200B;以创建第二个工作表。
 1. 从&#x200B;**[!UICONTROL 工作表1]**&#x200B;选项卡上下文菜单中选择&#x200B;**[!UICONTROL 重命名]**&#x200B;以将工作表重命名为`Graph`。
@@ -862,7 +850,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau桌面数据](assets/uc4-tableau-data.png){zoomable="yes"}
+      ![Tableau桌面数据](assets/uc4-tableau-data.png)
 
 1. 选择&#x200B;**[!UICONTROL 新建仪表板]**&#x200B;选项卡按钮（位于底部）以创建新的&#x200B;**[!UICONTROL 仪表板1]**&#x200B;视图。 在&#x200B;**[!UICONTROL 功能板1]**&#x200B;视图中：
    1. 将&#x200B;**[!UICONTROL Graph]**&#x200B;工作表从&#x200B;**[!UICONTROL 工作表]**&#x200B;托架拖放到&#x200B;**[!UICONTROL 仪表板1]**&#x200B;视图中，该视图显示&#x200B;*在此处放置工作表*。
@@ -871,7 +859,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau桌面功能板1](assets/uc4-tableau-dashboard.png){zoomable="yes"}
+      ![Tableau桌面功能板1](assets/uc4-tableau-dashboard.png)
 
 
 >[!TAB Looker]
@@ -881,8 +869,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 1. 在&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;对话框中：
    1. 选择&#x200B;**[!UICONTROL ‣抄送数据视图]**
    1. 从字段列表中，选择&#x200B;**[!UICONTROL 日‣间范围日期]**，然后选择&#x200B;**[!UICONTROL 日期范围日期]**。
-
-      ![Looker筛选器](assets/uc2-looker-filter.png){zoomable="yes"}
+      ![Looker筛选器](assets/uc2-looker-filter.png)
 1. 指定&#x200B;**[!UICONTROL Cc数据视图日期范围日期]**&#x200B;筛选器，因为&#x200B;**[!UICONTROL 在]** **[!UICONTROL 2023/01/01]** **[!UICONTROL 之前]** **[!UICONTROL 2024/01/01]**&#x200B;的范围内。
 1. 从左侧&#x200B;**[!UICONTROL 抄送数据视图]**&#x200B;边栏，
    1. 从‣**[!UICONTROL DIMENSIONS]**&#x200B;的列表中选择&#x200B;**[!UICONTROL Daterangemonth Date]**，然后选择&#x200B;**[!UICONTROL Month]**。
@@ -892,7 +879,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 您应该会看到如下所示的可视化图表和表格。
 
-![Looker结果每日趋势](assets/uc4-looker-result.png){zoomable="yes"}
+![Looker结果每日趋势](assets/uc4-looker-result.png)
 
 
 >[!TAB Jupyter笔记本]
@@ -917,12 +904,12 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc4-jupyter-results.png){zoomable="yes"}
+   ![Jupyter笔记本结果](assets/uc4-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。
 
    ```R
    ## Hourly Events
@@ -940,7 +927,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![RStudio结果](assets/uc4-rstudio-results.png){zoomable="yes"}
+   ![RStudio结果](assets/uc4-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -955,7 +942,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 用例的&#x200B;**[!UICONTROL 单个Dimension排名]**&#x200B;面板示例：
 
-![Customer Journey Analytics单个维度排名可视化图表](assets/cja-single-dimension-ranked.png){zoomable="yes"}
+![Customer Journey Analytics单个维度排名可视化图表](assets/cja-single-dimension-ranked.png)
 
 +++
 
@@ -980,7 +967,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 在&#x200B;**[!UICONTROL 筛选器]**&#x200B;窗格中：
 
-   1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]**&#x200B;日期范围是（全部）**&#x200B;**。
+   1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]**&#x200B;日期范围是（全部）****。
    1. 选择&#x200B;**[!UICONTROL 相对日期]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
    1. 将筛选器定义为&#x200B;**[!UICONTROL 当值]** **[!UICONTROL 在最后]** `1` **[!UICONTROL 日历年]**&#x200B;内时显示项。
    1. 选择&#x200B;**[!UICONTROL 应用筛选器]**。
@@ -996,13 +983,13 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
    1. 选择&#x200B;**[!UICONTROL Sum of purchase_revenue]**&#x200B;以按降序采购收入顺序对产品名称排序。 您的Power BI桌面应该如下所示。
 
-   ![Power BI桌面用例5表状态](assets/uc5-pbi-table.png){zoomable="yes"}
+   ![Power BI桌面用例5表状态](assets/uc5-pbi-table.png)
 
 1. 在&#x200B;**[!UICONTROL 筛选器]**&#x200B;窗格中：
 
    1. 选择&#x200B;**[!UICONTROL product_name is (All)]**。
    1. 将&#x200B;**[!UICONTROL 筛选器类型]**&#x200B;设置为&#x200B;**[!UICONTROL 前N]**。
-   1. 将筛选器定义为&#x200B;**[!UICONTROL 按值]**&#x200B;显示项目&#x200B;**&#x200B;**&#x200B;前`10` **&#x200B;**。
+   1. 将筛选器定义为&#x200B;**[!UICONTROL 按值]**&#x200B;显示项目&#x200B;****&#x200B;前`10` ****。
    1. 将&#x200B;**[!UICONTROL purchase_revenue]**&#x200B;拖放到&#x200B;**[!UICONTROL By值]**&#x200B;中&#x200B;**[!UICONTROL 在此处添加数据字段]**。
    1. 选择&#x200B;**[!UICONTROL 应用筛选器]**。
 
@@ -1018,7 +1005,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
    更新了折线图和栈叠式柱状图。 您的Power BI桌面应该如下所示。
 
-   ![Power BI桌面用例5图表](assets/uc5-pbi-chart.png){zoomable="yes"}
+   ![Power BI桌面用例5图表](assets/uc5-pbi-chart.png)
 
 1. 在折线图和栈叠式柱状图可视化图表上：
 
@@ -1027,7 +1014,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
    主视图已更新以显示折线图可视化图表和表格。
 
-   ![Power BI桌面用例2最终每日趋势可视化图表](assets/uc5-pbi-final.png){zoomable="yes"}
+   ![Power BI桌面用例2最终每日趋势可视化图表](assets/uc5-pbi-final.png)
 
 >[!TAB Tableau桌面]
 
@@ -1036,7 +1023,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
    1. 在&#x200B;**[!UICONTROL 筛选器字段\[日期范围\]]**&#x200B;对话框中，选择&#x200B;**[!UICONTROL 日期范围]**&#x200B;并选择&#x200B;**[!UICONTROL 下一步>]**。
    1. 在&#x200B;**[!UICONTROL 筛选器\[日期范围]]**&#x200B;对话框中，选择&#x200B;**[!UICONTROL 日期范围]**&#x200B;并指定句点`01/01/2023` - `31/12/2023`。 选择&#x200B;**[!UICONTROL 应用]**&#x200B;和&#x200B;**[!UICONTROL 确定]**。
 
-      ![Tableau桌面筛选器](assets/uc5-tableau-filter.png){zoomable="yes"}
+      ![Tableau桌面筛选器](assets/uc5-tableau-filter.png)
 
    1. 从&#x200B;**[!UICONTROL 数据]**&#x200B;窗格的&#x200B;**[!UICONTROL 表]**&#x200B;列表中拖放&#x200B;**[!UICONTROL 产品名称]**，并将该条目拖放到&#x200B;**[!UICONTROL 行]**&#x200B;旁边的字段中。
    1. 从&#x200B;**[!UICONTROL 数据]**&#x200B;窗格中的&#x200B;**[!UICONTROL 表（*度量值名称*）]**&#x200B;列表中拖放&#x200B;**[!UICONTROL 购买]**，并将条目拖放到&#x200B;**[!UICONTROL 行]**&#x200B;旁边的字段中。 该值会自动转换为&#x200B;**[!UICONTROL SUM（购买）]**。
@@ -1051,7 +1038,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
    您的Tableau桌面应该如下所示。
 
-   ![Tableau桌面图形](assets/uc5-tableau-graph.png){zoomable="yes"}
+   ![Tableau桌面图形](assets/uc5-tableau-graph.png)
 
 1. 从&#x200B;**[!UICONTROL 工作表1]**&#x200B;选项卡上下文菜单中选择&#x200B;**[!UICONTROL 复制]**&#x200B;以创建第二个工作表。
 1. 从&#x200B;**[!UICONTROL 工作表1]**&#x200B;选项卡上下文菜单中选择&#x200B;**[!UICONTROL 重命名]**&#x200B;以将工作表重命名为`Data`。
@@ -1063,7 +1050,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
    您的Tableau桌面应该如下所示。
 
-   ![Tableau桌面数据](assets/uc5-tableau-data.png){zoomable="yes"}
+   ![Tableau桌面数据](assets/uc5-tableau-data.png)
 
 1. 选择&#x200B;**[!UICONTROL 新建仪表板]**&#x200B;选项卡按钮（位于底部）以创建新的&#x200B;**[!UICONTROL 仪表板1]**&#x200B;视图。 在&#x200B;**[!UICONTROL 功能板1]**&#x200B;视图中：
    1. 将&#x200B;**[!UICONTROL Graph]**&#x200B;工作表从&#x200B;**[!UICONTROL 工作表]**&#x200B;托架拖放到&#x200B;**[!UICONTROL 仪表板1]**&#x200B;视图中，该视图显示&#x200B;*在此处放置工作表*。
@@ -1072,7 +1059,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
    您的&#x200B;**[!UICONTROL 仪表板1]**&#x200B;视图应如下所示。
 
-   ![Tableau桌面功能板1](assets/uc5-tableau-dashboard.png){zoomable="yes"}
+   ![Tableau桌面功能板1](assets/uc5-tableau-dashboard.png)
 
 
 
@@ -1083,8 +1070,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 1. 在&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;对话框中：
    1. 选择&#x200B;**[!UICONTROL ‣抄送数据视图]**
    1. 从字段列表中，选择&#x200B;**[!UICONTROL 日‣间范围日期]**，然后选择&#x200B;**[!UICONTROL 日期范围日期]**。
-
-      ![Looker筛选器](assets/uc2-looker-filter.png){zoomable="yes"}
+      ![Looker筛选器](assets/uc2-looker-filter.png)
 1. 指定&#x200B;**[!UICONTROL Cc数据视图日期范围日期]**&#x200B;筛选器，因为&#x200B;**[!UICONTROL 在]** **[!UICONTROL 2023/01/01]** **[!UICONTROL 之前]** **[!UICONTROL 2024/01/01]**&#x200B;的范围内。
 1. 从左边栏中的&#x200B;**[!UICONTROL ‣ Cc数据视图]**&#x200B;部分，选择&#x200B;**[!UICONTROL 产品名称]**。
 1. 在左边栏的&#x200B;**[!UICONTROL ‣自定义字段]**&#x200B;部分中：
@@ -1095,8 +1081,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
       1. 输入&#x200B;**[!UICONTROL 名称]**&#x200B;的自定义字段名称。 例如：`Purchase Revenue`。
       1. 选择&#x200B;**[!UICONTROL 字段详细信息]**&#x200B;选项卡。
       1. 从&#x200B;**[!UICONTROL 格式]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 小数]**，并确保以`0`小数&#x200B;**[!UICONTROL 输入]**。
-
-         ![Looker自定义量度字段](assets/uc5-looker-customfield.png){zoomable="yes"}
+         ![Looker自定义量度字段](assets/uc5-looker-customfield.png)
       1. 选择&#x200B;**[!UICONTROL 保存]**。
    1. 从&#x200B;**[!UICONTROL +添加]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 自定义度量值]**。 在&#x200B;**[!UICONTROL 创建自定义]**&#x200B;度量值对话框中：
       1. 从&#x200B;**[!UICONTROL 要度量]**&#x200B;的字段下拉菜单中选择&#x200B;**[!UICONTROL 购买]**。
@@ -1115,14 +1100,13 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
    1. 选择&#x200B;**[!UICONTROL 系列]**&#x200B;选项卡。
    1. 向下滚动以查看&#x200B;**[!UICONTROL 购买]**&#x200B;并将&#x200B;**[!UICONTROL 类型]**&#x200B;更改为&#x200B;**[!UICONTROL 行]**。
    1. 选择&#x200B;**[!UICONTROL Y]**&#x200B;选项卡。
-   1. 将&#x200B;**[!UICONTROL 购买]**&#x200B;从&#x200B;**[!UICONTROL 左1]**&#x200B;容器拖动到显示&#x200B;**[!UICONTROL *将系列拖动到此处以创建新的左轴&#x200B;*]**。 此操作创建&#x200B;**[!UICONTROL &#x200B; Left 2 &#x200B;]**&#x200B;容器。
-
-      ![Looker可视化图表配置](assets/uc5-looker-visualization.png){zoomable="yes"}
+   1. 将&#x200B;**[!UICONTROL 购买]**&#x200B;从&#x200B;**[!UICONTROL 左1]**&#x200B;容器拖动到显示&#x200B;**[!UICONTROL *将系列拖动到此处以创建新的左轴&#x200B;*]**。 此操作创建**[!UICONTROL  Left 2 ]**容器。
+      ![Looker可视化图表配置](assets/uc5-looker-visualization.png)
    1. 选择![编辑](/help/assets/icons/CrossSize75.svg)旁边的&#x200B;**[!UICONTROL CrossSize75]**&#x200B;以隐藏弹出对话框
 
 您应该会看到如下所示的可视化图表和表格。
 
-![Looker结果每日趋势](assets/uc5-looker-result.png){zoomable="yes"}
+![Looker结果每日趋势](assets/uc5-looker-result.png)
 
 
 >[!TAB Jupyter笔记本]
@@ -1147,12 +1131,12 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc5-jupyter-results.png){zoomable="yes"}
+   ![Jupyter笔记本结果](assets/uc5-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。
 
    ```R
    library(tidyr)
@@ -1173,7 +1157,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![RStudio结果](assets/uc5-rstudio-results.png){zoomable="yes"}
+   ![RStudio结果](assets/uc5-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -1188,7 +1172,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 用例的&#x200B;**[!UICONTROL 多个Dimension排名]**&#x200B;面板示例：
 
-![Customer Journey Analytics多个Dimension排名面板](assets/cja-multiple-dimension-ranked.png){zoomable="yes"}
+![Customer Journey Analytics多个Dimension排名面板](assets/cja-multiple-dimension-ranked.png)
 
 +++
 
@@ -1204,7 +1188,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 >[!TAB Power BI桌面]
 
 1. 若要确保日期范围适用于所有可视化图表，请将&#x200B;**[!UICONTROL daterangeday]**&#x200B;从&#x200B;**[!UICONTROL 数据]**&#x200B;窗格拖放到此页上的&#x200B;**[!UICONTROL 筛选器]**。
-   1. 从该页面上的&#x200B;**[!UICONTROL 筛选器中选择]** daterangeday is (All)**&#x200B;**。
+   1. 从该页面上的&#x200B;**[!UICONTROL 筛选器中选择]** daterangeday is (All)****。
    1. 选择&#x200B;**[!UICONTROL 相对日期]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
    1. 将筛选器定义为&#x200B;**[!UICONTROL 当值]** **[!UICONTROL 在最后]** `1` **[!UICONTROL 日历年]**&#x200B;内时显示项。
    1. 选择&#x200B;**[!UICONTROL 应用筛选器]**。
@@ -1217,12 +1201,12 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
    1. 选择&#x200B;**[!UICONTROL ∑购买]**
 
 1. 若要将垂直条形图修改为表，请确保已选择表，并从&#x200B;**[!UICONTROL 可视化]**&#x200B;窗格中选择&#x200B;**[!UICONTROL 矩阵]**。
-   * 从&#x200B;**[!UICONTROL 列]**&#x200B;中拖动&#x200B;**[!UICONTROL product_name]**，并将字段拖放到[!UICONTROL 可视化]窗格中的&#x200B;**[!UICONTROL 行]**&#x200B;中的&#x200B;**&#x200B;**&#x200B;[!UICONTROL product_categor]&#x200B;**&#x200B;**&#x200B;y下。
+   * 从&#x200B;**[!UICONTROL 列]**&#x200B;中拖动&#x200B;**[!UICONTROL product_name]**，并将字段拖放到[!UICONTROL 可视化]窗格中的&#x200B;**[!UICONTROL 行]**&#x200B;中的****[!UICONTROL product_categor]****y下。
 
 1. 要限制表中显示的产品数，请在&#x200B;**[!UICONTROL 筛选器]**&#x200B;窗格中选择&#x200B;**[!UICONTROL product_name is (All)]**。
 
    1. 选择&#x200B;**[!UICONTROL 高级筛选]**。
-   1. 选择&#x200B;**[!UICONTROL 筛选器类型]** **[!UICONTROL 前N]** **[!UICONTROL 按值]**&#x200B;显示项&#x200B;**&#x200B;**&#x200B;前`15` **&#x200B;**。
+   1. 选择&#x200B;**[!UICONTROL 筛选器类型]** **[!UICONTROL 前N]** **[!UICONTROL 按值]**&#x200B;显示项&#x200B;****&#x200B;前`15` ****。
    1. 从&#x200B;**[!UICONTROL 数据]**&#x200B;窗格将&#x200B;**[!UICONTROL 购买]**&#x200B;拖到&#x200B;**[!UICONTROL 在此添加数据字段]**&#x200B;上。
    1. 选择&#x200B;**[!UICONTROL 应用筛选器]**。
 
@@ -1230,7 +1214,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 要划分表中的每个类别，请在产品类别级别选择&#x200B;**[!UICONTROL +]**。 您的Power BI桌面应该如下所示。
 
-   ![Power BI桌面多维度排名矩阵表](assets/uc6-powerbi-data.png){zoomable="yes"}
+   ![Power BI桌面多维度排名矩阵表](assets/uc6-powerbi-data.png)
 
 1. 从顶部菜单中选择&#x200B;**[!UICONTROL 主页]**，然后选择&#x200B;**[!UICONTROL 新建视觉对象]**。 新视觉对象会添加到报表中。
 
@@ -1244,7 +1228,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
    您的Power BI桌面应该如下所示。
 
-   ![Power BI Desktop多维度排名树状图](assets/uc6-powerbi-treemap.png){zoomable="yes"}
+   ![Power BI Desktop多维度排名树状图](assets/uc6-powerbi-treemap.png)
 
 1. 从顶部菜单中选择&#x200B;**[!UICONTROL 主页]**，然后选择&#x200B;**[!UICONTROL 新建视觉对象]**。 新视觉对象会添加到报表中。
 
@@ -1261,7 +1245,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
    您的Power BI桌面应该如下所示。
 
-   ![Power BI桌面多维度排名最终](assets/uc6-powerbi-final.png){zoomable="yes"}
+   ![Power BI桌面多维度排名最终](assets/uc6-powerbi-final.png)
 
 
 >[!TAB Tableau桌面]
@@ -1273,7 +1257,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau Desktop Multiple Dimension排名过滤器](assets/uc6-tableau-filter.png){zoomable="yes"}
+      ![Tableau Desktop Multiple Dimension排名过滤器](assets/uc6-tableau-filter.png)
 
    1. 将&#x200B;**[!UICONTROL 产品类别]**&#x200B;拖放到&#x200B;**[!UICONTROL 列]**&#x200B;旁边。
    1. 将&#x200B;**[!UICONTROL 购买收入]**&#x200B;拖放到&#x200B;**[!UICONTROL 行]**&#x200B;旁边。 值更改为&#x200B;**[!UICONTROL SUM（采购收入）]**。
@@ -1286,7 +1270,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau桌面多维度排名类别](assets/uc6-tableau-category.png){zoomable="yes"}
+      ![Tableau桌面多维度排名类别](assets/uc6-tableau-category.png)
 
 1. 将当前&#x200B;**[!UICONTROL 工作表1]**&#x200B;重命名为`Category`。
 1. 选择&#x200B;**[!UICONTROL 新建工作表]**&#x200B;以创建新工作表，并将其重命名为`Data`。
@@ -1301,11 +1285,11 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
    1. 若要将两个水平条更改为表，请从&#x200B;**[!UICONTROL 显示我]**&#x200B;中选择&#x200B;**[!UICONTROL 文本表]**。
    1. 要限制产品数，请在&#x200B;**[!UICONTROL 度量值]**&#x200B;中选择&#x200B;**[!UICONTROL 购买]**。 从下拉菜单中选择&#x200B;**[!UICONTROL 筛选器]**。
    1. 在&#x200B;**[!UICONTROL 筛选器\[购买\]]**&#x200B;对话框中，选择&#x200B;**[!UICONTROL 至少]**&#x200B;并输入`7000`。 选择&#x200B;**[!UICONTROL 应用]**&#x200B;和&#x200B;**[!UICONTROL 确定]**。
-   1. 从&#x200B;**&#x200B;**&#x200B;适应下拉菜单中选择&#x200B;**[!UICONTROL 适应宽度]**。
+   1. 从&#x200B;****&#x200B;适应下拉菜单中选择&#x200B;**[!UICONTROL 适应宽度]**。
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau Desktop Multiple Dimension排名数据](assets/uc6-tableau-data.png){zoomable="yes"}
+      ![Tableau Desktop Multiple Dimension排名数据](assets/uc6-tableau-data.png)
 
 1. 选择&#x200B;**[!UICONTROL 新建工作表]**&#x200B;以创建新工作表并将其重命名为&#x200B;**[!UICONTROL 树状图]**。
    1. 从&#x200B;**[!UICONTROL 数据]**&#x200B;窗格的&#x200B;**[!UICONTROL 表]**&#x200B;列表中拖动&#x200B;**[!UICONTROL 日期范围]**&#x200B;条目，并将该条目放到&#x200B;**[!UICONTROL 筛选器]**&#x200B;托架上。
@@ -1322,7 +1306,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau Desktop Multiple Dimension排名数据](assets/uc6-tableau-treemap.png){zoomable="yes"}
+      ![Tableau Desktop Multiple Dimension排名数据](assets/uc6-tableau-treemap.png)
 
 1. 选择&#x200B;**[!UICONTROL 新建仪表板]**&#x200B;选项卡按钮（位于底部）以创建新的&#x200B;**[!UICONTROL 仪表板1]**&#x200B;视图。 在&#x200B;**[!UICONTROL 功能板1]**&#x200B;视图中：
    1. 将&#x200B;**[!UICONTROL 类别]**&#x200B;工作表从&#x200B;**[!UICONTROL 工作表]**&#x200B;托架拖放到&#x200B;**[!UICONTROL 仪表板1]**&#x200B;视图中，该视图显示&#x200B;*在此放置工作表*。
@@ -1332,7 +1316,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
    您的&#x200B;**[!UICONTROL 仪表板1]**&#x200B;视图应如下所示。
 
-   ![Tableau桌面功能板1](assets/uc6-tableau-final.png){zoomable="yes"}
+   ![Tableau桌面功能板1](assets/uc6-tableau-final.png)
 
 
 >[!TAB Looker]
@@ -1342,8 +1326,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 1. 在&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;对话框中：
    1. 选择&#x200B;**[!UICONTROL ‣抄送数据视图]**
    1. 从字段列表中，选择&#x200B;**[!UICONTROL 日‣间范围日期]**，然后选择&#x200B;**[!UICONTROL 日期范围日期]**。
-
-      ![Looker筛选器](assets/uc2-looker-filter.png){zoomable="yes"}
+      ![Looker筛选器](assets/uc2-looker-filter.png)
 1. 指定&#x200B;**[!UICONTROL Cc数据视图日期范围日期]**&#x200B;筛选器，因为&#x200B;**[!UICONTROL 在]** **[!UICONTROL 2023/01/01]** **[!UICONTROL 之前]** **[!UICONTROL 2024/01/01]**&#x200B;的范围内。
 1. 从左边栏中的&#x200B;**[!UICONTROL ‣ Cc数据视图]**&#x200B;部分：
    1. 选择&#x200B;**[!UICONTROL 产品类别]**。
@@ -1356,8 +1339,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
       1. 输入&#x200B;**[!UICONTROL 名称]**&#x200B;的自定义字段名称。 例如：`Sum of Purchase Revenue`。
       1. 选择&#x200B;**[!UICONTROL 字段详细信息]**&#x200B;选项卡。
       1. 从&#x200B;**[!UICONTROL 格式]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 小数]**，并确保以`0`小数&#x200B;**[!UICONTROL 输入]**。
-
-         ![Looker自定义量度字段](assets/uc5-looker-customfield.png){zoomable="yes"}
+         ![Looker自定义量度字段](assets/uc5-looker-customfield.png)
       1. 选择&#x200B;**[!UICONTROL 保存]**。
    1. 从&#x200B;**[!UICONTROL +添加]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 自定义度量值]**。 在&#x200B;**[!UICONTROL 创建自定义]**&#x200B;度量值对话框中：
       1. 从&#x200B;**[!UICONTROL 要度量]**&#x200B;的字段下拉菜单中选择&#x200B;**[!UICONTROL 购买]**。
@@ -1376,14 +1358,14 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
    1. 向下滚动并选择&#x200B;**[!UICONTROL 编辑图表配置]**。
    1. 在&#x200B;**[!UICONTROL 图表配置（覆盖）]**&#x200B;中修改JSON，如下面的屏幕快照所示，然后选择&#x200B;**[!UICONTROL 预览]**。
 
-      ![Looker可视化配置](assets/uc6-looker-visualization.png){zoomable="yes"}
+      ![Looker可视化配置](assets/uc6-looker-visualization.png)
 
    1. 选择&#x200B;**[!UICONTROL 应用]**。
    1. 选择![编辑](/help/assets/icons/CrossSize75.svg)旁边的&#x200B;**[!UICONTROL CrossSize75]**&#x200B;以隐藏弹出对话框
 
 您应该会看到如下所示的可视化图表和表格。
 
-![Looker结果每日趋势](assets/uc6-looker-result.png){zoomable="yes"}
+![Looker结果每日趋势](assets/uc6-looker-result.png)
 
 
 >[!TAB Jupyter笔记本]
@@ -1409,12 +1391,12 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc6-jupyter-results.png){zoomable="yes"}
+   ![Jupyter笔记本结果](assets/uc6-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。
 
    ```R
    ## Multiple dimensions ranked
@@ -1428,7 +1410,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![RStudio结果](assets/uc6-rstudio-results.png){zoomable="yes"}
+   ![RStudio结果](assets/uc6-rstudio-results.png)
 
 
 >[!ENDTABS]
@@ -1444,11 +1426,11 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 要报告产品名称的非重复计数，请在Customer Journey Analytics中设置一个计算量度，**[!UICONTROL 标题]** `Product Name (Count Distinct)`和&#x200B;**[!UICONTROL 外部ID]** `product_name_count_distinct`。
 
-![Customer Journey Analytics产品名称（Distincr计数）计算量度](assets/cja-calc-metric-distinct-count-product-names.png){zoomable="yes"}
+![Customer Journey Analytics产品名称（Distincr计数）计算量度](assets/cja-calc-metric-distinct-count-product-names.png)
 
 然后，您可以在用例的示例&#x200B;**[!UICONTROL 计算不同Dimension值]**&#x200B;面板中使用该量度：
 
-![Customer Journey Analytics非重复计数值](assets/cja-count-distinct-dimension-values.png){zoomable="yes"}
+![Customer Journey Analytics非重复计数值](assets/cja-count-distinct-dimension-values.png)
 
 +++
 
@@ -1464,7 +1446,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 >[!TAB Power BI桌面]
 
 1. 为确保日期范围适用于所有可视化图表，请将&#x200B;**[!UICONTROL daterangeday]**&#x200B;从&#x200B;**[!UICONTROL 数据]**&#x200B;窗格拖放到此页上的&#x200B;**[!UICONTROL 筛选器]**&#x200B;上。
-   1. 从该页面上的&#x200B;**[!UICONTROL 筛选器中选择]** daterangeday is (All)**&#x200B;**。
+   1. 从该页面上的&#x200B;**[!UICONTROL 筛选器中选择]** daterangeday is (All)****。
    1. 选择&#x200B;**[!UICONTROL 高级筛选]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
    1. 将筛选器定义为&#x200B;**[!UICONTROL 当值]** **[!UICONTROL 在]** `1/1/2023` **[!UICONTROL 和]** **[!UICONTROL 在]** `2/1/2023`之前或之后时显示项。
    1. 选择&#x200B;**[!UICONTROL 应用筛选器]**。
@@ -1477,7 +1459,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
    您的Power BI桌面应该如下所示。
 
-   ![Power BI桌面多个非重复计数表](assets/uc7-powerbi-table.png){zoomable="yes"}
+   ![Power BI桌面多个非重复计数表](assets/uc7-powerbi-table.png)
 
 1. 选择表可视化图表。 从上下文菜单中，选择&#x200B;**[!UICONTROL 复制]** > **[!UICONTROL 复制视觉对象]**。
 1. 使用&#x200B;**[!UICONTROL ctrl-v]**&#x200B;粘贴可视化图表。 可视化图表的精确副本与原始副本重叠。 将其移动到报表区域的右侧。
@@ -1485,14 +1467,14 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
    您的Power BI桌面应该如下所示。
 
-   ![Power BI桌面多个非重复计数表](assets/uc7-powerbi-final.png){zoomable="yes"}
+   ![Power BI桌面多个非重复计数表](assets/uc7-powerbi-final.png)
 
 或者，您可以使用Power BI中的不同计数功能。
 
 1. 选择&#x200B;**[!UICONTROL product_name]**&#x200B;维度。
 1. 对&#x200B;**[!UICONTROL 列]**&#x200B;中的&#x200B;**[!UICONTROL product_name]**&#x200B;维度应用&#x200B;**[!UICONTROL Count (Distinct)]**&#x200B;函数。
 
-   ![非重复Power BI计数](assets/uc7-powerbi-alternative.png){zoomable="yes"}
+   ![非重复Power BI计数](assets/uc7-powerbi-alternative.png)
 
 
 
@@ -1510,7 +1492,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau Desktop Multiple Dimension排名过滤器](assets/uc7-tableau-data.png){zoomable="yes"}
+      ![Tableau Desktop Multiple Dimension排名过滤器](assets/uc7-tableau-data.png)
 
 1. 从&#x200B;**[!UICONTROL 工作表1]**&#x200B;选项卡上下文菜单中选择&#x200B;**[!UICONTROL 复制]**&#x200B;以创建第二个工作表。
 1. 从&#x200B;**[!UICONTROL 工作表1]**&#x200B;选项卡上下文菜单中选择&#x200B;**[!UICONTROL 重命名]**&#x200B;以将工作表重命名为`Data`。
@@ -1525,7 +1507,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
    您的Tableau桌面应该如下所示。
 
-   ![Tableau Desktop Multiple Dimension排名过滤器](assets/uc7-tableau-card.png){zoomable="yes"}
+   ![Tableau Desktop Multiple Dimension排名过滤器](assets/uc7-tableau-card.png)
 
 1. 选择&#x200B;**[!UICONTROL 新建仪表板]**&#x200B;选项卡按钮（位于底部）以创建新的&#x200B;**[!UICONTROL 仪表板1]**&#x200B;视图。 在&#x200B;**[!UICONTROL 功能板1]**&#x200B;视图中：
    1. 将&#x200B;**[!UICONTROL 卡片]**&#x200B;工作表从&#x200B;**[!UICONTROL 工作表]**&#x200B;托架拖放到&#x200B;**[!UICONTROL 仪表板1]**&#x200B;视图中，该视图显示&#x200B;*在此处放置工作表*。
@@ -1533,7 +1515,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
    您的&#x200B;**[!UICONTROL 仪表板1]**&#x200B;视图应如下所示。
 
-   ![Tableau桌面功能板1](assets/uc7-tableau-final.png){zoomable="yes"}
+   ![Tableau桌面功能板1](assets/uc7-tableau-final.png)
 
 
 或者，您可以使用Tableau Desktop中的非重复计数功能。
@@ -1541,7 +1523,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 1. 使用&#x200B;**[!UICONTROL 产品名称]**，而不是&#x200B;**[!UICONTROL Cm产品名称计数Distinct]**。
 1. 在&#x200B;**[!UICONTROL 标记]**&#x200B;中的&#x200B;**[!UICONTROL 产品名称]**&#x200B;上应用&#x200B;**[!UICONTROL 度量]** > **[!UICONTROL 计数（非重复）]**。
 
-   ![非重复表格计数](assets/uc7-tableau-alternative.png){zoomable="yes"}
+   ![非重复表格计数](assets/uc7-tableau-alternative.png)
 
 
 >[!TAB Looker]
@@ -1551,20 +1533,18 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 1. 在&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;对话框中：
    1. 选择&#x200B;**[!UICONTROL ‣抄送数据视图]**
    1. 从字段列表中，选择&#x200B;**[!UICONTROL 日‣间范围日期]**，然后选择&#x200B;**[!UICONTROL 日期范围日期]**。
-
-      ![Looker筛选器](assets/uc2-looker-filter.png){zoomable="yes"}
+      ![Looker筛选器](assets/uc2-looker-filter.png)
 1. 指定&#x200B;**[!UICONTROL Cc数据视图日期范围日期]**&#x200B;筛选器，因为&#x200B;**[!UICONTROL 在]** **[!UICONTROL 2023/01/01]** **[!UICONTROL 之前]** **[!UICONTROL 2023/02/01]**&#x200B;的范围内。
 1. 从左边栏中的&#x200B;**[!UICONTROL ‣ Cc数据视图]**&#x200B;部分：
    1. 选择&#x200B;**[!UICONTROL 日期范围日期]**，然后选择&#x200B;**[!UICONTROL 日期]**。
    1. 从&#x200B;**[!UICONTROL 产品名称]**&#x200B;上的&#x200B;**⋮更多**&#x200B;上下文菜单中选择&#x200B;**[!UICONTROL 聚合非重复计数]**‣。
-
-      ![Looker产品名称上下文菜单](assets/uc7-looker-count-distinct.png){zoomable="yes"}
+      ![Looker产品名称上下文菜单](assets/uc7-looker-count-distinct.png)
 1. 选择&#x200B;**[!UICONTROL 运行]**。
 1. 选择‣**[!UICONTROL 可视化图表]**&#x200B;并从工具栏中选择6︎⃣以显示单值可视化图表。
 
 您应该会看到如下所示的可视化图表和表格。
 
-![非重复查找器计数](assets/uc7-looker-result.png){zoomable="yes"}
+![非重复查找器计数](assets/uc7-looker-result.png)
 
 
 >[!TAB Jupyter笔记本]
@@ -1580,12 +1560,12 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc7-jupyter-results.png){zoomable="yes"}
+   ![Jupyter笔记本结果](assets/uc7-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。
 
    ```R
    ## Count Distinct
@@ -1597,7 +1577,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![RStudio结果](assets/uc7-rstudio-results.png){zoomable="yes"}
+   ![RStudio结果](assets/uc7-rstudio-results.png)
 
 
 >[!ENDTABS]
@@ -1613,11 +1593,11 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 若要使用日期范围报告，请在Customer Journey Analytics中设置一个日期范围，并设置&#x200B;**[!UICONTROL 标题]** `Last Year 2023`。
 
-![Customer Journey Analytics使用日期范围名称进行筛选](assets/cja-daterange.png){zoomable="yes"}
+![Customer Journey Analytics使用日期范围名称进行筛选](assets/cja-daterange.png)
 
 然后，您可以在用例的示例&#x200B;**[!UICONTROL 使用日期范围名称进行筛选]**&#x200B;面板中使用该日期范围：
 
-![Customer Journey Analytics非重复计数值](assets/cja-using-date-range-filter-names-to-filter.png){zoomable="yes"}
+![Customer Journey Analytics非重复计数值](assets/cja-using-date-range-filter-names-to-filter.png)
 
 请注意，在自由格式表可视化图表中定义的日期范围如何覆盖应用于面板的日期范围。
 
@@ -1650,7 +1630,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
    您会看到使用应用的&#x200B;**[!UICONTROL 日期范围名称]**&#x200B;过滤器更新的表。 您的Power BI桌面应该如下所示。
 
-   ![Power BI桌面使用日期范围名称进行筛选](assets/uc8-powerbi-final.png){zoomable="yes"}
+   ![Power BI桌面使用日期范围名称进行筛选](assets/uc8-powerbi-final.png)
 
 >[!TAB Tableau桌面]
 
@@ -1665,7 +1645,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau Desktop Multiple Dimension排名过滤器](assets/uc8-tableau-final.png){zoomable="yes"}
+      ![Tableau Desktop Multiple Dimension排名过滤器](assets/uc8-tableau-final.png)
 
 >[!TAB Looker]
 
@@ -1683,7 +1663,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 您应该会看到如下所示的可视化图表和表格。
 
-![非重复查找器计数](assets/uc8-looker-result.png){zoomable="yes"}
+![非重复查找器计数](assets/uc8-looker-result.png)
 
 
 >[!TAB Jupyter笔记本]
@@ -1703,7 +1683,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc8-jupyter-input.png){zoomable="yes"}
+   ![Jupyter笔记本结果](assets/uc8-jupyter-input.png)
 
 1. 从下拉菜单中选择&#x200B;**[!UICONTROL 钓鱼产品]**。
 
@@ -1727,12 +1707,12 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc8-jupyter-results.png){zoomable="yes"}
+   ![Jupyter笔记本结果](assets/uc8-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。 确保使用适当的日期范围名称。 例如，`Last Year 2023`。
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。 确保使用适当的日期范围名称。 例如，`Last Year 2023`。
 
    ```R
    ## Monthly Events for Last Year
@@ -1750,7 +1730,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![RStudio结果](assets/uc8-rstudio-results.png){zoomable="yes"}
+   ![RStudio结果](assets/uc8-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -1766,11 +1746,11 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 检查要在Customer Journey Analytics中使用的区段。
 
-![Customer Journey Analytics使用筛选器名称进行筛选](assets/cja-fishing-products.png){zoomable="yes"}
+![Customer Journey Analytics使用筛选器名称进行筛选](assets/cja-fishing-products.png)
 
 然后，您可以在用例的示例&#x200B;**[!UICONTROL 使用区段名称将区段分段]**&#x200B;面板中使用该区段：
 
-![Customer Journey Analytics非重复计数值](assets/cja-using-filter-names-to-filter.png){zoomable="yes"}
+![Customer Journey Analytics非重复计数值](assets/cja-using-filter-names-to-filter.png)
 
 +++
 
@@ -1798,7 +1778,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
    1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]**&#x200B;筛选器名称为（全部）**[!UICONTROL 。]**
    1. 选择&#x200B;**[!UICONTROL 基本筛选]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
    1. 在&#x200B;**[!UICONTROL Search]**&#x200B;字段下，选择&#x200B;**[!UICONTROL Fishing Products]**，它是Customer Journey Analytics中定义的现有过滤器的名称。
-   1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]**&#x200B;日期范围是（全部）**&#x200B;**。
+   1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]**&#x200B;日期范围是（全部）****。
    1. 选择&#x200B;**[!UICONTROL 高级筛选]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
    1. 将筛选器定义为&#x200B;**[!UICONTROL 当值]** **[!UICONTROL 在]** `1/1/2023` **[!UICONTROL 和]** **[!UICONTROL 在]** `2/1/2023`之前或之后时显示项。
    1. 选择![CrossSize75](/help/assets/icons/CrossSize75.svg)以从&#x200B;**[!UICONTROL 列]**&#x200B;中删除&#x200B;**[!UICONTROL filterName]**。
@@ -1806,7 +1786,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
    您会看到使用应用的&#x200B;**[!UICONTROL filterName]**&#x200B;筛选器更新的表。 您的Power BI桌面应该如下所示。
 
-   ![Power BI桌面使用日期范围名称进行筛选](assets/uc9-powerbi-final.png){zoomable="yes"}
+   ![Power BI桌面使用日期范围名称进行筛选](assets/uc9-powerbi-final.png)
 
 
 >[!TAB Tableau桌面]
@@ -1824,7 +1804,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau Desktop Multiple Dimension排名过滤器](assets/uc9-tableau-final.png){zoomable="yes"}
+      ![Tableau Desktop Multiple Dimension排名过滤器](assets/uc9-tableau-final.png)
 
 >[!TAB Looker]
 
@@ -1833,8 +1813,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 1. 在&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;对话框中：
    1. 选择&#x200B;**[!UICONTROL ‣抄送数据视图]**
    1. 从字段列表中，选择&#x200B;**[!UICONTROL 日‣间范围日期]**，然后选择&#x200B;**[!UICONTROL 日期范围日期]**。
-
-      ![Looker筛选器](assets/uc2-looker-filter.png){zoomable="yes"}
+      ![Looker筛选器](assets/uc2-looker-filter.png)
 1. 指定&#x200B;**[!UICONTROL Cc数据视图日期范围日期]**&#x200B;筛选器，因为&#x200B;**[!UICONTROL 在]** **[!UICONTROL 2023/01/01]** **[!UICONTROL 之前]** **[!UICONTROL 2023/02/01]**&#x200B;的范围内。
 1. 选择&#x200B;**[!UICONTROL 筛选器]**&#x200B;下的&#x200B;**[!UICONTROL +筛选器]**&#x200B;以添加其他筛选器。
 1. 在&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;对话框中：
@@ -1850,7 +1829,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 您应该会看到如下所示的可视化图表和表格。
 
-![非重复查找器计数](assets/uc9-looker-result.png){zoomable="yes"}
+![非重复查找器计数](assets/uc9-looker-result.png)
 
 
 
@@ -1871,7 +1850,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc9-jupyter-input.png){zoomable="yes"}
+   ![Jupyter笔记本结果](assets/uc9-jupyter-input.png)
 
 1. 从下拉菜单中选择&#x200B;**[!UICONTROL 钓鱼产品]**。
 
@@ -1896,12 +1875,12 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc9-jupyter-results.png){zoomable="yes"}
+   ![Jupyter笔记本结果](assets/uc9-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。 确保使用适当的过滤器名称。 例如，`Fishing Products`。
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。 确保使用适当的过滤器名称。 例如，`Fishing Products`。
 
    ```R
    ## Dimension filtered by name
@@ -1915,7 +1894,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![RStudio结果](assets/uc9-rstudio-results.png){zoomable="yes"}
+   ![RStudio结果](assets/uc9-rstudio-results.png)
 
 
 >[!ENDTABS]
@@ -1925,18 +1904,18 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 ## 使用维度值进行分段
 
-您使用&#x200B;**[!UICONTROL 产品类别]**&#x200B;的动态&#x200B;**[!UICONTROL 打猎]**&#x200B;值来细分打猎类别中的产品。 或者，对于那些不支持动态检索产品类别值的BI工具，您可以在Customer Journey Analytics中创建一个新区段，以细分来自打猎产品类别的产品。
+您使用&#x200B;**[!UICONTROL 产品类别]**&#x200B;的动态&#x200B;**[!UICONTROL 打猎]**值来细分打猎类别中的产品。 或者，对于那些不支持动态检索产品类别值的BI工具，您可以在Customer Journey Analytics中创建一个新区段，以细分来自打猎产品类别的产品。
 然后，您希望使用新区段来报告2023年1月狩猎类别中产品的产品名称和发生次数（事件）。
 
 +++ Customer Journey Analytics
 
 在Customer Journey Analytics中创建具有&#x200B;**[!UICONTROL 标题]** `Hunting Products`的新区段。
 
-![Customer Journey Analytics使用Dimension值划分区段](assets/cja-hunting-products.png){zoomable="yes"}
+![Customer Journey Analytics使用Dimension值划分区段](assets/cja-hunting-products.png)
 
 然后，您可以在示例&#x200B;**[!UICONTROL 使用Dimension值过滤]**&#x200B;面板中针对用例使用该区段：
 
-![Customer Journey Analytics非重复计数值](assets/cja-using-dimension-values-to-filter.png){zoomable="yes"}
+![Customer Journey Analytics非重复计数值](assets/cja-using-dimension-values-to-filter.png)
 
 +++
 
@@ -1964,7 +1943,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 1. 在&#x200B;**[!UICONTROL 筛选器]**&#x200B;窗格中：
    1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]**&#x200B;筛选器名称为（全部）**[!UICONTROL 。]**
    1. 选择&#x200B;**[!UICONTROL 基本筛选]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
-   1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]**&#x200B;日期范围是（全部）**&#x200B;**。
+   1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]**&#x200B;日期范围是（全部）****。
    1. 选择&#x200B;**[!UICONTROL 高级筛选]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
    1. 将筛选器定义为&#x200B;**[!UICONTROL 当值]** **[!UICONTROL 在]** `1/1/2023` **[!UICONTROL 和]** **[!UICONTROL 在]** `2/1/2023`之前或之后时显示项。
    1. 选择&#x200B;**[!UICONTROL 基本筛选器]**&#x200B;作为&#x200B;**[!UICONTROL product_category]**&#x200B;的&#x200B;**[!UICONTROL 筛选器类型]**，并从可能值列表中选择&#x200B;**[!UICONTROL Hunting]**。
@@ -1973,7 +1952,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
    您会看到使用应用的&#x200B;**[!UICONTROL product_category]**&#x200B;过滤器更新的表。 您的Power BI桌面应该如下所示。
 
-   ![Power BI桌面使用日期范围名称进行筛选](assets/uc10-powerbi-final.png){zoomable="yes"}
+   ![Power BI桌面使用日期范围名称进行筛选](assets/uc10-powerbi-final.png)
 
 
 
@@ -1995,7 +1974,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau Desktop Multiple Dimension排名过滤器](assets/uc10-tableau-final.png){zoomable="yes"}
+      ![Tableau Desktop Multiple Dimension排名过滤器](assets/uc10-tableau-final.png)
 
 >[!TAB Looker]
 
@@ -2005,8 +1984,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 1. 在&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;对话框中：
    1. 选择&#x200B;**[!UICONTROL ‣抄送数据视图]**
    1. 从字段列表中，选择&#x200B;**[!UICONTROL 日‣间范围日期]**，然后选择&#x200B;**[!UICONTROL 日期范围日期]**。
-
-      ![Looker筛选器](assets/uc2-looker-filter.png){zoomable="yes"}
+      ![Looker筛选器](assets/uc2-looker-filter.png)
 1. 指定&#x200B;**[!UICONTROL Cc数据视图日期范围日期]**&#x200B;筛选器，因为&#x200B;**[!UICONTROL 在]** **[!UICONTROL 2023/01/01]** **[!UICONTROL 之前]** **[!UICONTROL 2023/02/01]**&#x200B;的范围内。
 1. 选择&#x200B;**[!UICONTROL 筛选器]**&#x200B;下的&#x200B;**[!UICONTROL +筛选器]**&#x200B;以添加其他筛选器。
 1. 在&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;对话框中：
@@ -2016,7 +1994,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 ![AlertRed](/help/assets/icons/AlertRed.svg)查找未显示&#x200B;**[!UICONTROL 产品类别]**&#x200B;的可能值列表。
 
-![非重复查找器计数](assets/uc10-looker-result.png){zoomable="yes"}
+![非重复查找器计数](assets/uc10-looker-result.png)
 
 
 >[!TAB Jupyter笔记本]
@@ -2036,7 +2014,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc10-jupyter-input.png){zoomable="yes"}
+   ![Jupyter笔记本结果](assets/uc10-jupyter-input.png)
 
 1. 从下拉菜单中选择&#x200B;**[!UICONTROL 打猎]**。
 
@@ -2062,12 +2040,12 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc10-jupyter-results.png){zoomable="yes"}
+   ![Jupyter笔记本结果](assets/uc10-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。 确保使用适当的类别。 例如，`Hunting`。
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。 确保使用适当的类别。 例如，`Hunting`。
 
    ```R
    ## Dimension 1 Filtered by Dimension 2 value
@@ -2081,7 +2059,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![RStudio结果](assets/uc10-rstudio-results.png){zoomable="yes"}
+   ![RStudio结果](assets/uc10-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -2097,7 +2075,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
 用例的示例&#x200B;**[!UICONTROL 排序]**&#x200B;面板：
 
-![Customer Journey Analytics排序面板](assets/cja-sort.png){zoomable="yes"}
+![Customer Journey Analytics排序面板](assets/cja-sort.png)
 
 +++
 
@@ -2119,7 +2097,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
    1. 选择&#x200B;**[!UICONTROL ∑购买]**。
 
 1. 在&#x200B;**[!UICONTROL 筛选器]**&#x200B;窗格中：
-   1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]**&#x200B;日期范围是（全部）**&#x200B;**。
+   1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]**&#x200B;日期范围是（全部）****。
    1. 选择&#x200B;**[!UICONTROL 高级筛选]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
    1. 将筛选器定义为&#x200B;**[!UICONTROL 当值]** **[!UICONTROL 在]** `1/1/2023` **[!UICONTROL 和]** **[!UICONTROL 在]** `2/1/2023`之前或之后时显示项。
 
@@ -2131,7 +2109,7 @@ RStudio支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[�
 
    您的Power BI桌面应该如下所示。
 
-   ![Power BI桌面使用日期范围名称进行筛选](assets/uc11-powerbi-final.png){zoomable="yes"}
+   ![Power BI桌面使用日期范围名称进行筛选](assets/uc11-powerbi-final.png)
 
 Power BI Desktop使用BI扩展执行的查询不包含`sort`语句。 缺少`sort`语句意味着排序在客户端执行。
 
@@ -2237,7 +2215,7 @@ limit 1000001
 
       您的Tableau桌面应该如下所示。
 
-      ![Tableau桌面排序](assets/uc11-tableau-final.png){zoomable="yes"}
+      ![Tableau桌面排序](assets/uc11-tableau-final.png)
 
 Tableau Desktop使用BI扩展执行的查询不包含`sort`语句。 缺少此`sort`语句意味着排序在客户端执行。
 
@@ -2259,8 +2237,7 @@ GROUP BY 1
 1. 在&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;对话框中：
    1. 选择&#x200B;**[!UICONTROL ‣抄送数据视图]**
    1. 从字段列表中，选择&#x200B;**[!UICONTROL 日‣间范围日期]**，然后选择&#x200B;**[!UICONTROL 日期范围日期]**。
-
-      ![Looker筛选器](assets/uc2-looker-filter.png){zoomable="yes"}
+      ![Looker筛选器](assets/uc2-looker-filter.png)
 1. 指定&#x200B;**[!UICONTROL Cc数据视图日期范围日期]**&#x200B;筛选器，因为&#x200B;**[!UICONTROL 在]** **[!UICONTROL 2023/01/01]** **[!UICONTROL 之前]** **[!UICONTROL 2023/02/01]**&#x200B;的范围内。
 1. 从左边栏中的&#x200B;**[!UICONTROL ‣ Cc数据视图]**&#x200B;部分，选择&#x200B;**[!UICONTROL 产品名称]**。
 1. 在左边栏的&#x200B;**[!UICONTROL ‣自定义字段]**&#x200B;部分中：
@@ -2271,8 +2248,7 @@ GROUP BY 1
       1. 输入&#x200B;**[!UICONTROL 名称]**&#x200B;的自定义字段名称。 例如：`Sum of Purchase Revenue`。
       1. 选择&#x200B;**[!UICONTROL 字段详细信息]**&#x200B;选项卡。
       1. 从&#x200B;**[!UICONTROL 格式]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 小数]**，并确保以`0`小数&#x200B;**[!UICONTROL 输入]**。
-
-         ![Looker自定义量度字段](assets/uc5-looker-customfield.png){zoomable="yes"}
+         ![Looker自定义量度字段](assets/uc5-looker-customfield.png)
       1. 选择&#x200B;**[!UICONTROL 保存]**。
 1. 请确保在&#x200B;**[!UICONTROL Purchase Revenue]**&#x200B;列上选择&#x200B;**[!UICONTROL ↓]** （**[!UICONTROL 降序，排序顺序： 1]**）。
 1. 选择&#x200B;**[!UICONTROL 运行]**。
@@ -2280,7 +2256,7 @@ GROUP BY 1
 
 您应该会看到如下所示的可视化图表和表格。
 
-![非重复查找器计数](assets/uc11-looker-result.png){zoomable="yes"}
+![非重复查找器计数](assets/uc11-looker-result.png)
 
 
 Looker使用BI扩展生成的查询包括`ORDER BY`，这意味着排序通过Looker和BI扩展执行。
@@ -2317,14 +2293,14 @@ FETCH NEXT 500 ROWS ONLY
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc11-jupyter-results.png){zoomable="yes"}
+   ![Jupyter笔记本结果](assets/uc11-jupyter-results.png)
 
 查询由Jupyter Notebook中定义的BI扩展执行。
 
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。
 
    ```R
    ## Dimension 1 Sorted
@@ -2338,7 +2314,7 @@ FETCH NEXT 500 ROWS ONLY
 
 1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![RStudio结果](assets/uc11-rstudio-results.png){zoomable="yes"}
+   ![RStudio结果](assets/uc11-rstudio-results.png)
 
 RStudio使用BI扩展生成的查询包括`ORDER BY`，这意味着顺序通过RStudio和BI扩展应用。
 
@@ -2369,7 +2345,7 @@ LIMIT 1000
 
 用例的&#x200B;**[!UICONTROL Limit]**&#x200B;面板示例：
 
-![Customer Journey Analytics限制面板](assets/cja-limit.png){zoomable="yes"}
+![Customer Journey Analytics限制面板](assets/cja-limit.png)
 
 +++
 
@@ -2390,14 +2366,14 @@ LIMIT 1000
    1. 选择&#x200B;**[!UICONTROL ∑发生次数]**。
 
 1. 在&#x200B;**[!UICONTROL 筛选器]**&#x200B;窗格中：
-   1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]**&#x200B;日期范围是（全部）**&#x200B;**。
+   1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]**&#x200B;日期范围是（全部）****。
    1. 选择&#x200B;**[!UICONTROL 相对日期]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
    1. 将筛选器定义为&#x200B;**[!UICONTROL 当值]** **[!UICONTROL 在最后]** `1` **[!UICONTROL 日历年]**&#x200B;内时显示项。
    1. 选择&#x200B;**[!UICONTROL 应用筛选器]**。
    1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]** product_name is (All)**[!UICONTROL 。]**
    1. 选择&#x200B;**[!UICONTROL 前N]**&#x200B;项作为&#x200B;**[!UICONTROL 筛选器类型]**。
    1. 选择&#x200B;**[!UICONTROL 显示项]** **[!UICONTROL 前]** `5` **[!UICONTROL 按值]**。
-   1. 从&#x200B;**[!UICONTROL 数据]**&#x200B;窗格中拖放∑0&rbrace;个匹配项&#x200B;**[!UICONTROL 并将其放到]**&#x200B;在此处添加数据字段&#x200B;**[!UICONTROL 上。]**
+   1. 从&#x200B;**[!UICONTROL 数据]**&#x200B;窗格中拖放∑0}个匹配项&#x200B;**[!UICONTROL 并将其放到]**&#x200B;在此处添加数据字段&#x200B;**[!UICONTROL 上。]**
    1. 选择&#x200B;**[!UICONTROL 应用筛选器]**。
 
 1. 在“可视化”窗格中：
@@ -2405,7 +2381,7 @@ LIMIT 1000
 
    您的Power BI桌面应该如下所示。
 
-   ![Power BI桌面使用日期范围名称进行筛选](assets/uc12-powerbi-final.png){zoomable="yes"}
+   ![Power BI桌面使用日期范围名称进行筛选](assets/uc12-powerbi-final.png)
 
 Power BI Desktop使用BI扩展执行的查询包含`limit`语句，但不包含预期的语句。 Power BI Desktop会使用明确的产品名称结果来强制实施对前5次发生次数的限制。
 
@@ -2516,7 +2492,7 @@ limit 1000001
 
          您的Tableau桌面应该如下所示。
 
-         ![Tableau桌面限制](assets/uc12-tableau-final.png){zoomable="yes"}
+         ![Tableau桌面限制](assets/uc12-tableau-final.png)
 
 如上所示，在定义针对产品名称的“前5次发生次数”过滤器时，由Tableau Desktop执行的此查询会失败。
 
@@ -2555,8 +2531,7 @@ GROUP BY 1
 1. 在&#x200B;**[!UICONTROL 添加筛选器]**&#x200B;对话框中：
    1. 选择&#x200B;**[!UICONTROL ‣抄送数据视图]**
    1. 从字段列表中，选择&#x200B;**[!UICONTROL 日‣间范围日期]**，然后选择&#x200B;**[!UICONTROL 日期范围日期]**。
-
-      ![Looker筛选器](assets/uc2-looker-filter.png){zoomable="yes"}
+      ![Looker筛选器](assets/uc2-looker-filter.png)
 1. 指定&#x200B;**[!UICONTROL Cc数据视图日期范围日期]**&#x200B;筛选器，因为&#x200B;**[!UICONTROL 在]** **[!UICONTROL 2023/01/01]** **[!UICONTROL 之前]** **[!UICONTROL 2024/01/01]**&#x200B;的范围内。
 1. 从左边栏中的&#x200B;**[!UICONTROL ‣ Cc数据视图]**&#x200B;部分：
    1. 选择&#x200B;**[!UICONTROL 产品名称]**。
@@ -2568,7 +2543,7 @@ GROUP BY 1
 
 您应该会看到如下所示的可视化图表和表格。
 
-![非重复查找器计数](assets/uc12-looker-result.png){zoomable="yes"}
+![非重复查找器计数](assets/uc12-looker-result.png)
 
 Looker使用BI扩展生成的查询包括`FETCH NEXT 5 ROWS ONLY`，这意味着限制通过Looker和BI扩展执行。
 
@@ -2604,13 +2579,13 @@ FETCH NEXT 5 ROWS ONLY
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc12-jupyter-results.png){zoomable="yes"}
+   ![Jupyter笔记本结果](assets/uc12-jupyter-results.png)
 
 查询由Jupyter Notebook中定义的BI扩展执行。
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。
 
    ```R
    ## Dimension 1 Limited
@@ -2625,7 +2600,7 @@ FETCH NEXT 5 ROWS ONLY
 
 1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![RStudio结果](assets/uc12-rstudio-results.png){zoomable="yes"}
+   ![RStudio结果](assets/uc12-rstudio-results.png)
 
 RStudio使用BI扩展生成的查询包括`LIMIT 5`，这意味着限制通过RStudio和BI扩展应用。
 
@@ -2671,19 +2646,19 @@ Customer Journey Analytics对象在&#x200B;**[!UICONTROL 数据]**&#x200B;窗格
 
 **维度**
 Customer Journey Analytics中的维度由[!UICONTROL 组件ID]标识。 已在Customer Journey Analytics数据视图中定义[!UICONTROL 组件ID]。 例如，Customer Journey Analytics中的维度&#x200B;**[!UICONTROL 产品名称]**&#x200B;具有[!UICONTROL 组件ID] **[!UICONTROL product_name]**，它是Power BI Desktop中的维度的名称。
-Customer Journey Analytics中的日期范围维度，如&#x200B;**[!UICONTROL Day]**、**[!UICONTROL Week]**、**[!UICONTROL Month]**&#x200B;等，可用作&#x200B;**[!UICONTROL daterangeday]**、**[!UICONTROL daterangeweek]**、**[!UICONTROL daterangemonth]**&#x200B;等。
+Customer Journey Analytics中的日期范围维度，如**[!UICONTROL Day]**、**[!UICONTROL Week]**、**[!UICONTROL Month]**&#x200B;等，可用作&#x200B;**[!UICONTROL daterangeday]**、**[!UICONTROL daterangeweek]**、**[!UICONTROL daterangemonth]**&#x200B;等。
 
 **个量度**
-Customer Journey Analytics中的指标由[!UICONTROL 组件ID]标识。 已在Customer Journey Analytics数据视图中定义[!UICONTROL 组件ID]。 例如，Customer Journey Analytics中的量度&#x200B;**[!UICONTROL Purchase Revenue]**&#x200B;具有[!UICONTROL 组件ID] **[!UICONTROL purchase_revenue]**，它是Power BI Desktop中该量度的名称。 **[!UICONTROL ∑]**&#x200B;表示指标。 当您在任何可视化中使用量度时，该量度将重命名为&#x200B;**[!UICONTROL 1&rbrace;量度的总和&#x200B;*。*]**
+Customer Journey Analytics中的指标由[!UICONTROL 组件ID]标识。 已在Customer Journey Analytics数据视图中定义[!UICONTROL 组件ID]。 例如，Customer Journey Analytics中的量度&#x200B;**[!UICONTROL Purchase Revenue]**&#x200B;具有[!UICONTROL 组件ID] **[!UICONTROL purchase_revenue]**，它是Power BI Desktop中该量度的名称。 **[!UICONTROL ∑]**&#x200B;表示指标。 当您在任何可视化中使用量度时，该量度将重命名为&#x200B;**[!UICONTROL 1}量度的总和&#x200B;*。*]**
 
 **筛选器**
-您在Customer Journey Analytics中定义的筛选器可作为&#x200B;**[!UICONTROL filterName]**&#x200B;字段的一部分提供。 当您在Power BI Desktop中使用&#x200B;**[!UICONTROL filterName]**&#x200B;字段时，可以指定要使用的筛选器。
+您在Customer Journey Analytics中定义的筛选器可作为**[!UICONTROL filterName]**&#x200B;字段的一部分提供。 当您在Power BI Desktop中使用&#x200B;**[!UICONTROL filterName]**&#x200B;字段时，可以指定要使用的筛选器。
 
 **计算量度**
-您在Customer Journey Analytics中定义的计算指标由您为计算指标定义的[!UICONTROL 外部ID]标识。 例如，计算量度&#x200B;**[!UICONTROL 产品名称（非重复计数）]**&#x200B;具有[!UICONTROL 外部ID] **[!UICONTROL product_name_count_distinct]**，并在Power BI Desktop中显示为&#x200B;**[!UICONTROL cm_product_name_count_distinc]**&#x200B;t。
+您在Customer Journey Analytics中定义的计算指标由您为计算指标定义的[!UICONTROL 外部ID]标识。 例如，计算量度&#x200B;**[!UICONTROL 产品名称（非重复计数）]**&#x200B;具有[!UICONTROL 外部ID] **[!UICONTROL product_name_count_distinct]**，并在Power BI Desktop中显示为**[!UICONTROL cm_product_name_count_distinc]**t。
 
 **日期范围**
-您在Customer Journey Analytics中定义的日期范围可作为&#x200B;**[!UICONTROL daterangeName]**&#x200B;字段的一部分使用。 当您使用&#x200B;**[!UICONTROL daterangeName]**&#x200B;字段时，您可以指定要使用的日期范围。
+您在Customer Journey Analytics中定义的日期范围可作为**[!UICONTROL daterangeName]**&#x200B;字段的一部分使用。 当您使用&#x200B;**[!UICONTROL daterangeName]**&#x200B;字段时，您可以指定要使用的日期范围。
 
 **自定义转换**
 Power BI Desktop提供了使用[Data Analysis表达式(DAX)](https://learn.microsoft.com/en-us/dax/dax-overview)的自定义转换功能。 例如，您要执行产品名称为小写的[单维度排名](#single-dimension-ranked)用例。
@@ -2692,12 +2667,12 @@ Power BI Desktop提供了使用[Data Analysis表达式(DAX)](https://learn.micro
 1. 在数据窗格中选择&#x200B;**[!UICONTROL product_name]**。
 1. 在工具栏中选择&#x200B;**[!UICONTROL 新建列]**。
 1. 在公式编辑器中，定义名为`product_name_lower`的新列，如`product_name_lower = LOWER('public.cc_data_view[product_name])`。
-   ![Power BI桌面转换到较低版本](assets/uc14-powerbi-transformation.png){zoomable="yes"}
+   ![Power BI桌面转换到较低版本](assets/uc14-powerbi-transformation.png)
 1. 请确保在&#x200B;**[!UICONTROL 数据]**&#x200B;窗格中选择新的&#x200B;**[!UICONTROL product_name_lower]**&#x200B;列，而不是&#x200B;**[!UICONTROL product_name]**&#x200B;列。
 1. 在表可视化图表中，从&#x200B;**[!UICONTROL 更多]**&#x200B;中选择![报告为表](/help/assets/icons/More.svg)。
 
    您的Power BI桌面应该如下所示。
-   ![Power BI桌面转换最终版](assets/uc14-powerbi-final.png){zoomable="yes"}
+   ![Power BI桌面转换最终版](assets/uc14-powerbi-final.png)
 
 自定义转换导致SQL查询更新。 请参阅以下SQL示例中的`lower`函数的使用：
 
@@ -2745,28 +2720,27 @@ limit 1000001
 每当您在工作表中工作时，**[!UICONTROL Data]**&#x200B;侧栏中都有Customer Journey Analytics对象。 并从您选择作为Tableau中&#x200B;**[!UICONTROL 数据源]**&#x200B;页面一部分的表中检索和。 例如，**[!UICONTROL cc_data_view]**。 表的名称与在Customer Journey Analytics中为数据视图定义的外部ID相同。 例如，具有&#x200B;**[!UICONTROL 标题]** `C&C - Data View`和&#x200B;**[!UICONTROL 外部ID]** `cc_data_view`的数据视图。
 
 **维度**
-Customer Journey Analytics中的维度由[!UICONTROL 组件名称]标识。 已在Customer Journey Analytics数据视图中定义[!UICONTROL 组件名称]。 例如，Customer Journey Analytics中的维度&#x200B;**[!UICONTROL 产品名称]**&#x200B;具有[!UICONTROL 组件名称] **[!UICONTROL 产品名称]**，它是Tableau中的维度的名称。 所有维度均由&#x200B;**[!UICONTROL Abc]**&#x200B;标识。
-来自Customer Journey Analytics的日期范围维度，如&#x200B;**[!UICONTROL Day]**、**[!UICONTROL Week]**、**[!UICONTROL Month]**&#x200B;等，可用作&#x200B;**[!UICONTROL Daterangeday]**、**[!UICONTROL Daterangeweek]**、**[!UICONTROL Daterangemonth]**&#x200B;等。 使用日期范围维度时，必须从下拉菜单中选择适当的日期或时间定义以应用于该日期范围维度。 例如，**[!UICONTROL 年]**，**[!UICONTROL 季度]**，**[!UICONTROL 月]**，**[!UICONTROL 天]**。
+Customer Journey Analytics中的维度由[!UICONTROL 组件名称]标识。 已在Customer Journey Analytics数据视图中定义[!UICONTROL 组件名称]。 例如，Customer Journey Analytics中的维度&#x200B;**[!UICONTROL 产品名称]**&#x200B;具有[!UICONTROL 组件名称] **[!UICONTROL 产品名称]**，它是Tableau中的维度的名称。 所有维度均由&#x200B;**[!UICONTROL Abc]**标识。
+来自Customer Journey Analytics的日期范围维度，如**[!UICONTROL Day]**、**[!UICONTROL Week]**、**[!UICONTROL Month]**&#x200B;等，可用作&#x200B;**[!UICONTROL Daterangeday]**、**[!UICONTROL Daterangeweek]**、**[!UICONTROL Daterangemonth]**&#x200B;等。 使用日期范围维度时，必须从下拉菜单中选择适当的日期或时间定义以应用于该日期范围维度。 例如，**[!UICONTROL 年]**，**[!UICONTROL 季度]**，**[!UICONTROL 月]**，**[!UICONTROL 天]**。
 
 **个量度**
 Customer Journey Analytics中的量度由[!UICONTROL 组件名称]标识。 已在Customer Journey Analytics数据视图中定义[!UICONTROL 组件名称]。 例如，Customer Journey Analytics中的量度&#x200B;**[!UICONTROL Purchase Revenue]**&#x200B;具有[!UICONTROL 组件名称] **[!UICONTROL Purchase Revenue]**，它是Tableau中的量度的名称。 所有量度都由&#x200B;**[!UICONTROL #]**&#x200B;标识。 在任何可视化中使用量度时，该量度将重命名为&#x200B;**[!UICONTROL Sum（*量度*）]**。
 
 **筛选器**
-您在Customer Journey Analytics中定义的筛选器可作为&#x200B;**[!UICONTROL 筛选器名称]**&#x200B;字段的一部分使用。 当您在Tableau中使用&#x200B;**[!UICONTROL 筛选器名称]**&#x200B;字段时，可以指定要使用的筛选器。
+您在Customer Journey Analytics中定义的筛选器可作为**[!UICONTROL 筛选器名称]**&#x200B;字段的一部分使用。 当您在Tableau中使用&#x200B;**[!UICONTROL 筛选器名称]**&#x200B;字段时，可以指定要使用的筛选器。
 
 **计算量度**
 您在Customer Journey Analytics中定义的计算指标由您为计算指标定义的[!UICONTROL 标题]标识。 例如，计算量度&#x200B;**[!UICONTROL 产品名称（非重复计数）]**&#x200B;具有[!UICONTROL 标题] **[!UICONTROL 产品名称（非重复计数）]**，在Tableau中显示为&#x200B;**[!UICONTROL Cm产品名称非重复计数]**。
 
 **日期范围**
-您在Customer Journey Analytics中定义的日期范围可作为&#x200B;**[!UICONTROL 日期范围名称]**&#x200B;字段的一部分使用。 当您使用&#x200B;**[!UICONTROL 日期范围名称]**&#x200B;字段时，您可以指定要使用的日期范围。
+您在Customer Journey Analytics中定义的日期范围可作为**[!UICONTROL 日期范围名称]**&#x200B;字段的一部分使用。 当您使用&#x200B;**[!UICONTROL 日期范围名称]**&#x200B;字段时，您可以指定要使用的日期范围。
 
 **自定义转换**
 Tableau Desktop提供了使用[计算字段](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm)的自定义转换功能。 例如，您要执行产品名称为小写的[单维度排名](#single-dimension-ranked)用例。
 
 1. 从主菜单中选择&#x200B;**[!UICONTROL 分析]** > **[!UICONTROL 创建计算字段]**。
    1. 使用函数&#x200B;**[!UICONTROL 定义]**&#x200B;小写的产品名称`LOWER([Product Name])`。
-
-      ![表格计算字段](assets/uc14-tableau-calculated-field.png){zoomable="yes"}
+      ![表格计算字段](assets/uc14-tableau-calculated-field.png)
    1. 选择&#x200B;**[!UICONTROL 确定]**。
 1. 选择&#x200B;**[!UICONTROL 数据]**&#x200B;表。
    1. 从&#x200B;**[!UICONTROL 表]**&#x200B;中拖动&#x200B;**[!UICONTROL 小写的产品名称]**，并将条目放入&#x200B;**[!UICONTROL 行]**&#x200B;旁边的字段中。
@@ -2775,7 +2749,7 @@ Tableau Desktop提供了使用[计算字段](https://help.tableau.com/current/pr
 
 您的Tableau桌面应该如下所示。
 
-转换后的![Tableau桌面](assets/uc14-tableau-final.png){zoomable="yes"}
+转换后的![Tableau桌面](assets/uc14-tableau-final.png)
 
 自定义转换会导致SQL查询更新。 请参阅以下SQL示例中的`LOWER`函数的使用：
 
@@ -2794,20 +2768,20 @@ HAVING ((SUM("cc_data_view"."purchase_revenue") >= 999999.99999998999) AND (SUM(
 Customer Journey Analytics对象在&#x200B;**[!UICONTROL 浏览]**&#x200B;界面中可用。 和将作为在Looker中设置连接、项目和模型的一部分进行检索。 例如，**[!UICONTROL cc_data_view]**。 视图的名称与您在Customer Journey Analytics中为数据视图定义的外部ID相同。 例如，具有&#x200B;**[!UICONTROL 标题]** `C&C - Data View`和&#x200B;**[!UICONTROL 外部ID]** `cc_data_view`的数据视图。
 
 **维度**
-Customer Journey Analytics中的维度在&#x200B;**[!UICONTROL 抄送数据视图]**&#x200B;左边栏中列为&#x200B;**[!UICONTROL DIMENSION]**。 维度是在Customer Journey Analytics数据视图中定义的。 例如，Customer Journey Analytics中的维度&#x200B;**[!UICONTROL 产品名称]**&#x200B;具有&#x200B;**[!UICONTROL DIMENSION]** **[!UICONTROL 产品名称]**，它是查找器中维度的名称。
-来自Customer Journey Analytics的日期范围维度，如&#x200B;**[!UICONTROL Day]**、**[!UICONTROL Week]**、**[!UICONTROL Month]**&#x200B;等，可用作&#x200B;**[!UICONTROL Daterangeday Date]**、**[!UICONTROL Daterangeweek Date]**、**[!UICONTROL Daterangemonth Date]**&#x200B;等。  使用日期范围维度时，必须选择适当的日期或时间定义。 例如，**[!UICONTROL 年]**，**[!UICONTROL 季度]**，**[!UICONTROL 月]**，**[!UICONTROL 日期]**。
+Customer Journey Analytics中的维度在**[!UICONTROL 抄送数据视图]**&#x200B;左边栏中列为&#x200B;**[!UICONTROL DIMENSION]**。 维度是在Customer Journey Analytics数据视图中定义的。 例如，Customer Journey Analytics中的维度&#x200B;**[!UICONTROL 产品名称]**&#x200B;具有&#x200B;**[!UICONTROL DIMENSION]** **[!UICONTROL 产品名称]**，它是查找器中维度的名称。
+来自Customer Journey Analytics的日期范围维度，如**[!UICONTROL Day]**、**[!UICONTROL Week]**、**[!UICONTROL Month]**&#x200B;等，可用作&#x200B;**[!UICONTROL Daterangeday Date]**、**[!UICONTROL Daterangeweek Date]**、**[!UICONTROL Daterangemonth Date]**&#x200B;等。  使用日期范围维度时，必须选择适当的日期或时间定义。 例如，**[!UICONTROL 年]**，**[!UICONTROL 季度]**，**[!UICONTROL 月]**，**[!UICONTROL 日期]**。
 
 **个量度**
-Customer Journey Analytics中的量度在&#x200B;**[!UICONTROL 抄送数据视图]**&#x200B;左边栏中列为&#x200B;**[!UICONTROL DIMENSION]**。 例如，Customer Journey Analytics中的量度&#x200B;**[!UICONTROL Purchase Revenue]**&#x200B;具有&#x200B;**[!UICONTROL DIMENSION]** **[!UICONTROL Purchase Revenue]**。 要实际用作量度，请创建一个自定义量度字段（如上面的示例所示），或使用维度的快捷键。 例如，**[!UICONTROL ⋮]**，选择&#x200B;**[!UICONTROL 聚合]**，然后选择&#x200B;**[!UICONTROL 总和]**。
+Customer Journey Analytics中的量度在**[!UICONTROL 抄送数据视图]**&#x200B;左边栏中列为&#x200B;**[!UICONTROL DIMENSION]**。 例如，Customer Journey Analytics中的量度&#x200B;**[!UICONTROL Purchase Revenue]**&#x200B;具有&#x200B;**[!UICONTROL DIMENSION]** **[!UICONTROL Purchase Revenue]**。 要实际用作量度，请创建一个自定义量度字段（如上面的示例所示），或使用维度的快捷键。 例如，**[!UICONTROL ⋮]**，选择&#x200B;**[!UICONTROL 聚合]**，然后选择&#x200B;**[!UICONTROL 总和]**。
 
 **筛选器**
-您在Customer Journey Analytics中定义的筛选器可作为&#x200B;**[!UICONTROL 筛选器名称]**&#x200B;字段的一部分使用。 当您在Looker中使用&#x200B;**[!UICONTROL 筛选器名称]**&#x200B;字段时，可以指定要使用的筛选器。
+您在Customer Journey Analytics中定义的筛选器可作为**[!UICONTROL 筛选器名称]**&#x200B;字段的一部分使用。 当您在Looker中使用&#x200B;**[!UICONTROL 筛选器名称]**&#x200B;字段时，可以指定要使用的筛选器。
 
 **计算量度**
 您在Customer Journey Analytics中定义的计算指标由您为计算指标定义的[!UICONTROL 标题]标识。 例如，计算量度&#x200B;**[!UICONTROL 产品名称（非重复计数）]**&#x200B;具有[!UICONTROL 标题] **[!UICONTROL 产品名称（非重复计数）]**，并且在查找器中显示为&#x200B;**[!UICONTROL Cm产品名称非重复计数]**。
 
 **日期范围**
-您在Customer Journey Analytics中定义的日期范围可作为&#x200B;**[!UICONTROL 日期范围名称]**&#x200B;字段的一部分使用。 当您使用&#x200B;**[!UICONTROL 日期范围名称]**&#x200B;字段时，您可以指定要使用的日期范围。
+您在Customer Journey Analytics中定义的日期范围可作为**[!UICONTROL 日期范围名称]**&#x200B;字段的一部分使用。 当您使用&#x200B;**[!UICONTROL 日期范围名称]**&#x200B;字段时，您可以指定要使用的日期范围。
 
 **自定义转换**
 Looker使用自定义字段生成器提供自定义转换功能，如上所示。 例如，您要执行产品名称为小写的[单维度排名](#single-dimension-ranked)用例。
@@ -2815,14 +2789,13 @@ Looker使用自定义字段生成器提供自定义转换功能，如上所示�
 1. 在左边栏的&#x200B;**[!UICONTROL ‣自定义字段]**&#x200B;部分中：
    1. 从&#x200B;**[!UICONTROL +添加]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 自定义Dimension]**。
    1. 在`lower(${cc_data_view.product_name})`表达式&#x200B;**[!UICONTROL 文本区域中输入]**。 当您开始键入`Product Name`时，会使用正确的语法来帮助您。
-
-      ![Looker转换示例](assets/uc14-looker-transformation.png){zoomable="yes"}
+      ![Looker转换示例](assets/uc14-looker-transformation.png)
    1. 输入`product name`作为&#x200B;**[!UICONTROL Name]**。
    1. 选择&#x200B;**[!UICONTROL 保存]**。
 
 您应该会看到如下所示的类似表格。
 
-![Looker转换结果](assets/uc14-looker-result.png){zoomable="yes"}
+![Looker转换结果](assets/uc14-looker-result.png)
 
 
 自定义转换会导致SQL查询更新。 请参阅以下SQL示例中的`LOWER`函数的使用：
@@ -2861,7 +2834,7 @@ Customer Journey Analytics对象（维度、量度、过滤器、计算量度和
 
 1. 执行单元格。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![Jupyter笔记本结果](assets/uc13-jupyter-results.png){zoomable="yes"}
+   ![Jupyter笔记本结果](assets/uc13-jupyter-results.png)
 
 查询由Jupyter Notebook中定义的BI扩展执行。
 
@@ -2871,7 +2844,7 @@ Customer Journey Analytics组件（维度、量度、过滤器、计算量度和
 
 **自定义转换**
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。
 
    ```R
    df <- dv %>%
@@ -2885,7 +2858,7 @@ Customer Journey Analytics组件（维度、量度、过滤器、计算量度和
 
 1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
-   ![RStudio结果](assets/uc13-rstudio-results.png){zoomable="yes"}
+   ![RStudio结果](assets/uc13-rstudio-results.png)
 
 RStudio使用BI扩展生成的查询包括`lower`，这意味着自定义转换由RStudio和BI扩展执行。
 
@@ -2958,11 +2931,11 @@ Customer Journey Analytics具有许多可视化图表。 请参阅[可视化图�
 
 Power BI支持[钻取模式](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill)，以深入了解某些可视化图表的详细信息。 在以下示例中，您分析了产品类别的购买收入。 从表示产品类别的栏的上下文菜单中，可以选择&#x200B;**[!UICONTROL 向下展开]**。
 
-![Power BI深入分析](assets/uc15-powerbi-drilldown.png){zoomable="yes"}
+![Power BI深入分析](assets/uc15-powerbi-drilldown.png)
 
 深入查看会更新所选产品类别中产品的购买收入可视化。
 
-![Power BI向上钻取](assets/uc15-powerbi-drillup.png){zoomable="yes"}
+![Power BI向上钻取](assets/uc15-powerbi-drillup.png)
 
 向下钻取导致以下使用`WHERE`子句的SQL查询：
 
@@ -3041,11 +3014,11 @@ limit 1001
 
 Tableau支持[钻取模式](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill)到[层次结构](https://help.tableau.com/current/pro/desktop/en-us/qs_hierarchies.htm)。 在以下示例中，当您选择&#x200B;**[!UICONTROL 表]**&#x200B;中的&#x200B;**[!UICONTROL 产品名称]**&#x200B;字段并将其拖动到&#x200B;**[!UICONTROL 产品类别]**&#x200B;上时，您便创建了层次结构。 然后，从表示产品类别的栏的上下文菜单中，可以选择&#x200B;**[!UICONTROL +向下展开]**。
 
-![Tableau深入分析](assets/uc15-tableau-drilldown.png){zoomable="yes"}
+![Tableau深入分析](assets/uc15-tableau-drilldown.png)
 
 深入查看会更新所选产品类别中产品的购买收入可视化。
 
-![Tableau向上钻取](assets/uc15-tableau-drillup.png){zoomable="yes"}
+![Tableau向上钻取](assets/uc15-tableau-drillup.png)
 
 向下钻取会导致以下使用GROUP BY子句的SQL查询：
 
@@ -3061,11 +3034,11 @@ GROUP BY 1,
 
 查询&#x200B;**不**&#x200B;将结果限制为选定的产品类别；只有可视化图表显示选定的产品类别。
 
-![Tableau向上钻取](assets/uc15-tableau-drillup2.png){zoomable="yes"}
+![Tableau向上钻取](assets/uc15-tableau-drillup2.png)
 
 或者，您可以创建一个向下钻取仪表板，其中一个可视化图表是另一个可视化图表中所选内容的结果。 在下面的示例中，**[!UICONTROL 产品类别]**&#x200B;可视化用作过滤器来更新&#x200B;**[!UICONTROL 产品名称]**&#x200B;表。 此可视化筛选器是仅用于客户端的，不会产生额外的SQL查询。
 
-![表格可视化筛选器](assets/uc15-tableau-visualizationfilter.png){zoomable="yes"}
+![表格可视化筛选器](assets/uc15-tableau-visualizationfilter.png)
 
 
 >[!TAB Looker]
@@ -3130,7 +3103,7 @@ GROUP BY 1,
 * Power BI Desktop Advanced日期范围筛选是排他性的。  对于结束日期，您需要选择要在其中报告的一天之后的日期。 例如，**[!UICONTROL 位于]** `1/1/2023` **[!UICONTROL 或之后，且位于]** `1/2/2023`之前。
 * 创建连接时，Power BI桌面默认为&#x200B;**[!UICONTROL 导入]**。 请确保使用&#x200B;**[!UICONTROL 直接查询]**。
 * Power BI Desktop通过Power Query公开数据转换。  Power Query主要与Import类型连接配合使用，因此许多您应用日期或字符串函数之类的转换都会引发错误，指出您需要切换到Import类型连接。  如果您需要在查询时转换数据，则应该使用派生维度和量度，这样Power BI就不需要自己进行转换。
-* Power BI Desktop不了解如何处理日期时间类型列，因此不支持&#x200B;**[!UICONTROL daterange *X *]**&#x200B;维度，如&#x200B;**[!UICONTROL daterangehour &#x200B;]**&#x200B;和&#x200B;**[!UICONTROL daterangeminute &#x200B;]**。
+* Power BI Desktop不了解如何处理日期时间类型列，因此不支持&#x200B;**[!UICONTROL daterange *X *]**维度，如**[!UICONTROL daterangehour ]**和**[!UICONTROL daterangeminute ]**。
 * 默认情况下，Power BI Desktop会尝试使用更多查询服务会话建立多个连接。  转到项目的Power BI设置并禁用并行查询。
 * Power BI Desktop执行所有排序和限制客户端操作。 Power BI Desktop对于前&#x200B;*X*&#x200B;个包含绑定值的过滤也具有不同的语义。 因此，您不能像在Analysis Workspace中一样创建相同的排序和限制。
 * 早期版本的Power BI Desktop 2024年10月发行版中断了PostgreSQL数据源。 确保使用本文中提到的版本。
