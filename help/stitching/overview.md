@@ -72,8 +72,8 @@ Customer Journey Analytics 支持两种类型的拼接：[基于字段的拼接]
 >[!MORELIKETHIS]
 >
 >[基于字段的拼接](fbs.md)
->>[基于图形的拼接](gbs.md)
->>[使用拼接](use-stitching.md)
->>[验证拼接](validate.md)
->>[关于拼接的常见问题解答](faq.md)
+>&#x200B;>[基于图形的拼接](gbs.md)
+>&#x200B;>[使用拼接](use-stitching.md)
+>&#x200B;>[验证拼接](validate.md)
+>&#x200B;>[关于拼接的常见问题解答](faq.md)
 
