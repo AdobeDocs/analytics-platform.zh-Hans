@@ -5,10 +5,10 @@ exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
-workflow-type: ht
-source-wordcount: '334'
-ht-degree: 100%
+source-git-commit: 50599b36d333cae3735c6d4fd1b0af6fcabe9177
+workflow-type: tm+mt
+source-wordcount: '339'
+ht-degree: 92%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_behavior"
 >title="行为"
->abstract="确定如何汇总此维度中的行项。指定字段中的字符串值是否应小写。"
+>abstract="适用于维度和量度组件。 确定如何汇总此量度的行项目。 指定此维度的字符串值是否应小写。"
 
 <!-- markdownlint-enable MD034 -->
 

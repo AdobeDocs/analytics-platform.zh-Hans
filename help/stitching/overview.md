@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 1a697ce0372d1cb544940778850714a198a000ec
-workflow-type: ht
-source-wordcount: '741'
-ht-degree: 100%
+source-git-commit: 50599b36d333cae3735c6d4fd1b0af6fcabe9177
+workflow-type: tm+mt
+source-wordcount: '735'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +51,7 @@ Customer Journey Analytics 支持两种类型的拼接：[基于字段的拼接]
 >[!IMPORTANT]
 >
 >
->- 对源事件数据集架构所做的任何更改也必须应用到新拼接的数据集架构中，否则那些更改会断开拼接的数据集。
+>- 将您对源事件数据集架构所做的任何更改也应用于新拼接的数据集架构。
 >
 >- 如果移除源数据集，拼接的数据集将停止处理，并被系统移除。
 >
