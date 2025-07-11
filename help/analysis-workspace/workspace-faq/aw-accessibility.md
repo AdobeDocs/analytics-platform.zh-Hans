@@ -5,9 +5,9 @@ feature: Workspace Basics
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 role: User
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '546'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 97%
 
 ### 键盘快捷键（热键）
 
-[!UICONTROL Analysis Workspace]提供了一组丰富的[键盘快捷键（热键）](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)，以实现更加无缝的工作流程。
+[!UICONTROL Analysis Workspace] 提供丰富的[键盘快捷键](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md)（热键），以实现更顺畅的工作流。
 
 ## 支持屏幕阅读器和屏幕放大镜
 

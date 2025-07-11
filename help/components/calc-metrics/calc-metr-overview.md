@@ -1,14 +1,14 @@
 ---
-description: 了解可从现有量度创建的计算量度。
+description: 了解如何基于现有量度创建计算量度。
 keywords: 计算量度
-title: 计算量度概述
+title: 计算指标概述
 feature: Calculated Metrics
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
 role: User
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '214'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 82%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [计算量度简介](https://video.tv.adobe.com/v/33321/?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [计算量度简介](https://video.tv.adobe.com/v/31787/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ ht-degree: 82%
 
 | 任务 | 描述 |
 | --- | --- |
-| 规划 | 特别是，对于要正式批准的指标![复选标记循环](/help/assets/icons/CheckmarkCircle.svg)，请仔细规划和构建您预计经常使用的计算量度。 |
+| 规划 | 尤其是对于即将正式批准 ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) 的量度，请仔细规划和构建您预计会经常使用的计算量度。 |
 | [生成](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) | 建立、修改和保存计算量度。 |
 | [应用](/help/components/use-components-in-workspace.md) | 直接在您的 Workspace 项目中应用计算量度。 |
 | [管理](/help/components/calc-metrics/cm-workflow/cm-manager.md) | 管理计算量度。您可以[标记](/help/components/calc-metrics/cm-workflow/cm-tagging.md)、[批准](/help/components/calc-metrics/cm-workflow/cm-approving.md)、[拒绝](/help/components/calc-metrics/cm-workflow/cm-approving.md)、[筛选](/help/components/calc-metrics/cm-workflow/cm-filter.md)、[支持](/help/components/calc-metrics/cm-workflow/cm-favorite.md)或者[反对](/help/components/calc-metrics/cm-workflow/cm-favorite.md)、[分享](/help/components/calc-metrics/cm-workflow/cm-sharing.md)或者[复制](/help/components/calc-metrics/cm-workflow/cm-copy.md)一个或多个计算量度。 |

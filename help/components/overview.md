@@ -1,14 +1,14 @@
 ---
 title: 组件概述
-description: 了解Adobe Analytics提供了哪些组件，以及如何在Analysis Workspace中使用组件。
+description: 了解 Adobe Analytics 提供了哪些组件，以及如何在 Analysis Workspace 中使用这些组件。
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '908'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
