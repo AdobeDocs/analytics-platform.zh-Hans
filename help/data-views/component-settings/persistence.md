@@ -20,7 +20,7 @@ ht-degree: 80%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_persistence"
 >title="持久性"
->abstract="配置应用于某个维度的默认分配模型。在报告中先用分配，然后用区段。"
+>abstract="配置应用于维度的默认分配模型。在报告中，分配在区段之前进行。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -108,7 +108,7 @@ ht-degree: 80%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [绑定维度](https://video.tv.adobe.com/v/3409290/?quality=12&learn=on&captions=chi_hans){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [绑定维度](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 
