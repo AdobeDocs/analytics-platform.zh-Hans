@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: 24834f6a1424a885c6f7b3dcf0ad84375e21b462
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 98%
+source-wordcount: '1275'
+ht-degree: 99%
 
 ---
 
@@ -342,7 +342,7 @@ ht-degree: 98%
       + [共享区段](/help/components/segments/seg-share.md)
       + [标记区段](/help/components/segments/seg-tag.md)
       + [过滤区段列表](/help/components/segments/seg-filter.md)
-      + [将区段标记为收藏](/help/components/segments/seg-favorite.md)
+      + [将区段标记为收藏项](/help/components/segments/seg-favorite.md)
       + [批准区段](/help/components/segments/seg-approve.md)
       + [复制区段](/help/components/segments/seg-copy.md)
       + [管理区段](/help/components/segments/seg-manage.md)
@@ -355,13 +355,13 @@ ht-degree: 98%
          + [查找量度](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [生成计算量度](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [简单示例](../components/calc-metrics/cm-workflow/cm-pvv.md)
-         + [更复杂的示例](../components/calc-metrics/cm-workflow/cm-orders-participation.md)
+         + [一个更复杂的示例](../components/calc-metrics/cm-workflow/cm-orders-participation.md)
          + [量度类型和归因](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
          + [参与率量度](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [分段量度](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [堆叠和替换区段](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [筛选计算量度](../components/calc-metrics/cm-workflow/cm-filter.md)
-         + [将计算量度标记为收藏](../components/calc-metrics/cm-workflow/cm-favorite.md)
+         + [将计算量度标记为收藏项](../components/calc-metrics/cm-workflow/cm-favorite.md)
          + [复制计算量度](../components/calc-metrics/cm-workflow/cm-copy.md)
          + [使用函数](../components/calc-metrics/cm-workflow/cm-using-functions.md)
          + [标记计算量度](../components/calc-metrics/cm-workflow/cm-tagging.md)
@@ -396,8 +396,10 @@ ht-degree: 98%
       + [查看数据字典中的组件信息](../components/data-dictionary/view-data-dictionary.md)
       + [编辑数据字典中的组件条目](../components/data-dictionary/edit-entries-data-dictionary.md)
       + [监测数据字典健康状况](../components/data-dictionary/monitor-data-dictionary-health.md)
+   + 实时报告 {#real-time-reporting}
+      + [概述](/help/components/real-time/real-time.md)
+      + [使用实时报表](/help/components/real-time/use-real-time.md)
    + [计划的项目](../components/scheduled-projects-manager.md)
-
 + Report Builder {#cja-reportbuilder}
    + [概述](../report-builder/rb-overview.md)
    + [Report Builder 设置](../report-builder/report-builder-setup.md)
