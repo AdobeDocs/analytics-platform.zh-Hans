@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 6d4d6558f8f0ebb6a0885c958fe019d3e5afab4c
+source-git-commit: 1c4342d91e0c939d596c9660ffc510c4698f8680
 workflow-type: tm+mt
-source-wordcount: '2677'
+source-wordcount: '2696'
 ht-degree: 98%
 
 ---
@@ -325,7 +325,9 @@ ht-degree: 98%
 
 #### 现有的配置 {#existing-configuration}
 
-对于现有配置，您无法编辑“标记”属性。但是，您可以编辑要包含或排除的页面和资产。
+对于现有配置，您无法编辑“标记”属性。要更新与现有配置关联的标记属性，请使用[Content Analytics标记扩展配置](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview)。
+
+但是，您可以编辑要包含或排除的页面和资产。
 
 * 要编辑在收集内容分析数据时应包含或排除哪些页面，请选择&#x200B;**[!UICONTROL 体验]**&#x200B;下的 ![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**。您被重定向到为当前 Content Analytics 配置与标记属性相关联的 [Adobe Content Analytics 扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)。但是，您可以编辑要包含或排除页面的正则表达式。确保您[发布](#publish)更改内容。
 
