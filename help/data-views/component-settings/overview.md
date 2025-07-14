@@ -5,10 +5,10 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 7bf74e02db581bdf11b7efe31b62f018320c7f22
+source-git-commit: f3bd60d6a371a16e606d9af60e3359d8128a3c9f
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 97%
+source-wordcount: '718'
+ht-degree: 90%
 
 ---
 
@@ -42,7 +42,8 @@ ht-degree: 97%
 | [!UICONTROL 组件类型] | 必填。使您可将组件从“量度”变为“维度”或反之亦然。更改此下拉列表选择会将该组件移至其各自包括的组件区域。 |
 | [!UICONTROL 组件名称] | 必填。使您可指定在 Analysis Workspace 中显示的易记名称。可将组件重命名以给予其一个数据视图专属的名称。 |
 | [!UICONTROL 描述] | 可选，但推荐。向其他用户提供有关组件的信息。 |
-| [!UICONTROL 上下文标签] | 可选。可应用于组件的可用系统定义标签的下拉菜单。 <p>以下情况下可能需要这些标签：</p> <ul><li>使用 Analysis Workspace 项目中的[“试验”面板](/help/analysis-workspace/c-panels/experimentation.md)，定义一组可用于试验报告的组件。<p>请参阅[与 Journey Optimizer 集成](/help/integrations/ajo.md#data-view)以及[ Target 报告](/help/integrations/at.md)。</p></li><li>使用 Adobe 提供的模板时。默认情况下，Adobe 提供的一些模板不起作用，因为它们包含数据视图中没有的组件。<p>对于每个缺失的组件，数据视图中都会提供一个匹配的上下文标签。您需要将匹配的上下文标签添加到数据视图中已有的组件，或者向数据视图添加新组件并向其中添加上下文标签。</p><p>有关详细信息，请参阅文章[创建和管理模板](/help/analysis-workspace/templates/create-templates.md)中的[将缺失的组件添加到给定模板的数据视图](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template)。</p> |
+| [!UICONTROL 标记] | 可选。可让您使用自定义或现成标记为组件添加标记，以便于在 Analysis Workspace UI 中搜索/筛选。 |
+| [!UICONTROL 上下文标签] | 可选。可应用于组件的可用系统定义标签的下拉菜单。 <p>以下情况下可能需要这些标签：</p> <ul><li>使用 Analysis Workspace 项目中的[“试验”面板](/help/analysis-workspace/c-panels/experimentation.md)，定义一组可用于试验报告的组件。<p>请参阅[与 Journey Optimizer 集成](/help/integrations/ajo.md#data-view)以及[ Target 报告](/help/integrations/at.md)。</p></li><li>要定义一组可用于Analysis Workspace项目中的地图可视化的组件。<p>有关详细信息，请参阅[映射](/help/analysis-workspace/visualizations/map.md#add-context-labels-in-data-views)中的[在数据视图](/help/analysis-workspace/visualizations/map.md)中添加上下文标签。</p><p>**注意：**&#x200B;地图可视化图表处于版本的有限测试阶段，可能尚未在环境中可用。</p></li><li>使用 Adobe 提供的模板时。默认情况下，Adobe 提供的一些模板不起作用，因为它们包含数据视图中没有的组件。<p>对于每个缺失的组件，数据视图中都会提供一个匹配的上下文标签。您需要将匹配的上下文标签添加到数据视图中已有的组件，或者向数据视图添加新组件并向其中添加上下文标签。</p><p>有关详细信息，请参阅文章[创建和管理模板](/help/analysis-workspace/templates/create-templates.md)中的[将缺失的组件添加到给定模板的数据视图](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template)。</p> |
 | [!UICONTROL 架构字段名] | 架构字段的名称。 |
 | [!UICONTROL 数据集类型] | 必填。显示组件来自哪个数据集类型（事件、查询或轮廓）的不可编辑字段。 |
 | [!UICONTROL 数据集] | 一个不可编辑的字段，它显示该组件来源于哪个数据集。此字段可以包含多个数据集。 |
@@ -58,7 +59,7 @@ ht-degree: 97%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [组件类型设置](https://video.tv.adobe.com/v/3412933/?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [组件类型设置](https://video.tv.adobe.com/v/333112/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
