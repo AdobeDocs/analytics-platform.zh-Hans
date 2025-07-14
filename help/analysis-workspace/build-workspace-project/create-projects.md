@@ -4,9 +4,9 @@ title: 创建项目
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
-workflow-type: ht
-source-wordcount: '500'
+source-git-commit: 518bebc18611136873fce5c23dd7041afafe1220
+workflow-type: tm+mt
+source-wordcount: '454'
 ht-degree: 100%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 100%
 | 显示注释 | 指定是否显示该项目的注释。 |
 | [项目调色板](/help/analysis-workspace/build-workspace-project/color-palettes.md) | 通过从已为色盲优化过的现成调色板中进行选择或通过指定您的自定义调色板，可更改在 Workspace 中使用的类别调色板。此功能影响 Workspace 中的许多内容，包括大多数可视化。 |
 | [视图密度](/help/analysis-workspace/build-workspace-project/view-density.md) | 通过减小左侧面板、自由格式表和同类群组表的垂直边距，让您可在屏幕上看到更多数据。 |
-| 允许评论 | **注意：**&#x200B;该功能处于发布的有限测试阶段，因此可能在您的环境中尚不可用。当该功能正式发布时，将删除此说明。有关 Customer Journey Analytics 发布流程的信息，请参阅 [Customer Journey Analytics 功能版本](/help/release-notes/releases.md)。 <p>该选项启用后，Analysis Workspace 中项目的右侧栏中会显示一个评论区域。有关详细信息，请参阅[在项目中添加和管理评论](/help/analysis-workspace/build-workspace-project/comment-projects.md)。</p> |
+| 允许评论 | 该选项启用后，Analysis Workspace 中项目的右侧栏中会显示一个评论区域。有关详细信息，请参阅[在项目中添加和管理评论](/help/analysis-workspace/build-workspace-project/comment-projects.md)。 |
 
 
 
