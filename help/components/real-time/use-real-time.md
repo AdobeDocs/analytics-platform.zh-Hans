@@ -28,7 +28,7 @@ ht-degree: 11%
 * [下一项或上一项](/help/analysis-workspace/c-panels/next-previous.md)
 * [快速洞察](/help/analysis-workspace/c-panels/quickinsight.md)
 
-您会看到一条消息，其中包含数据最近刷新时的时间戳。 例如： [!UICONTROL  *上次刷新时间为晚上07:55*]。
+您会看到一条消息，其中包含数据最近刷新时的时间戳。 例如： [!UICONTROL &#x200B; *上次刷新时间为晚上07:55*]。
 
 从下拉菜单中选择要报告的实时时段。 可用选项包括：
 
