@@ -1,20 +1,20 @@
 ---
 description: 了解如何在Analysis Workspace中使用实时报表。
 title: 使用实时报表
-feature: Filters, Segments
+feature: Real-time Reporting
 hide: true
 hidefromtoc: true
 role: User
 badgePremium: label="Beta 版"
-source-git-commit: 24834f6a1424a885c6f7b3dcf0ad84375e21b462
+exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
+source-git-commit: 82aefce30834d6400d338896dc1968e37596393e
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 5%
+source-wordcount: '150'
+ht-degree: 11%
 
 ---
 
-
-# 使用实时报表
+# 使用实时报告
 
 {{release-limited-testing}}
 
@@ -23,10 +23,12 @@ ht-degree: 5%
 
 
 * [”空白“面板](/help/analysis-workspace/c-panels/blank-panel.md)
-* [“自由格式”面板](/help/analysis-workspace/c-panels/freeform-panel.md)
-* ...
+* [自由格式表](/help/analysis-workspace/c-panels/freeform-panel.md)
+* [归因](/help/analysis-workspace/c-panels/attribution.md)
+* [下一项或上一项](/help/analysis-workspace/c-panels/next-previous.md)
+* [快速洞察](/help/analysis-workspace/c-panels/quickinsight.md)
 
-您会看到一条消息，其中包含数据最近刷新时的时间戳。 例如： [!UICONTROL &#x200B; *上次刷新时间为晚上07:55*]。
+您会看到一条消息，其中包含数据最近刷新时的时间戳。 例如： [!UICONTROL  *上次刷新时间为晚上07:55*]。
 
 从下拉菜单中选择要报告的实时时段。 可用选项包括：
 
@@ -36,7 +38,7 @@ ht-degree: 5%
 * [!UICONTROL 最近8小时]
 * [!UICONTROL 最近24小时]
 
-现在，所有可视化图表每分钟更新一次，最多更新30分钟，同时启用了“实时刷新”面板的浏览器选项卡处于活动状态。
+现在，当启用了实时刷新面板的浏览器选项卡处于活动状态时，面板中的所有可视化图表每分钟更新一次，最多更新30分钟。
 
 ![实时刷新](assets/real-time-refresh.gif)
 
