@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
-workflow-type: ht
+source-git-commit: c86da649c23ca06c3404b6e5db0b9970e8817a72
+workflow-type: tm+mt
 source-wordcount: '1300'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 默认情况下，会显示相关 Content Analytics 维度的缩略图。如要配置 Content Analytics 维度的缩略图显示：
 
-* 将鼠标悬停在 Content Analytics 维度的标题行上。例如，**[!UICONTROL 资产名称]**&#x200B;或&#x200B;**[!UICONTROL 体验 ID]**。
+* 将鼠标悬停在 Content Analytics 维度的标题行上。例如，**[!UICONTROL 资产ID]**&#x200B;或&#x200B;**[!UICONTROL 体验ID]**。
 * 选择![设置](/help/assets/icons/Setting.svg)。
 * 在&#x200B;**[!UICONTROL 行设置]**&#x200B;弹出窗口中，在&#x200B;**[!UICONTROL 设置]**&#x200B;下方，勾选或取消勾选&#x200B;**[!UICONTROL 显示缩略图]**。
 
@@ -155,5 +155,5 @@ Content Analytics 使用 AI 和生成式 AI 自动分配每个资产元数据，
 >[!MORELIKETHIS]
 >
 >[Content Analytics 组件](components.md)
->[使用模板](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>>[使用模板](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >
