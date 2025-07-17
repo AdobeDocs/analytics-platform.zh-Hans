@@ -22,7 +22,7 @@ ht-degree: 56%
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **在 Analysis Workspace 项目中添加和查看评论** | Analysis Workspace 中新增的[评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects)可让您在 Analysis Workspace 项目的上下文中分享见解和提出问题。这可以简化有关数据的讨论，使对话保持在正在讨论的数据范围内。您可以 <ul><li>对任何您有权访问的 Analysis Workspace 项目进行评论</li><li>对可视化图表中的特定点进行评论，也可以对项目进行一般性评论</li><li>标记其他用户，将您的评论告知他们</li><li>管理现有评论（编辑、固定、解决等）</li></ul>Customer Journey Analytics 管理员可以[在组织级别禁用评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences)。项目所有者可以[在项目级别禁用评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects)。 | 2025 年 6 月 25 日 | 2025 年 7 月 11 日 <p>（之前为2025年5月29日）</p> |
-| **下载为PDF的项目将下载到您的工作站** | 将项目下载为PDF时，PDF将下载到您工作站上的下载文件夹中。 以前，将项目下载为PDF会在新的浏览器选项卡中启动一个具有唯一URL的PDF。 [了解详情](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/export/download-send) | | 待定 |
+| **下载为PDF的项目将下载到您的工作站** | 将项目下载为PDF时，PDF将下载到您工作站上的下载文件夹中。 以前，将项目下载为PDF会在新的浏览器选项卡中启动一个具有唯一URL的PDF。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/export/download-send) | | 待定 |
 | **派生字段 — Typecast函数** | 通过“典型内容派生”字段函数，可以动态更改字段类型，并可将该字段用于Customer Journey Analytics中的其他转换。 | 。 | 2025年7月30日 |
 | **派生字段 — 日期数学函数** | “日期数学”派生字段函数提供返回两个“日期”或“日期时间”字段之间差异的功能。 | | 2025年7月30日 |
 | **Ares：派生字段深度函数** | 深度派生的字段函数提供返回字段深度的功能，类似于现成可用的标准事件深度维度。 |  | 30,2025 年 7 月 |
