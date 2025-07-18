@@ -1,22 +1,20 @@
 ---
-description: Analysis Workspace中的自定义日期范围示例。
+description: 了解如何在Analysis Workspace中定义自定义日期范围。
 keywords: Analysis Workspace
 title: 自定义日期范围示例
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
 role: User
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 2a152e09d4ff62a02182fc6ac085d4143105a665
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '113'
 ht-degree: 4%
 
 ---
 
 # 自定义日期范围示例
 
-本文显示了更多自定义日期范围示例
-
-
+本文显示了更多自定义日期范围示例。
 
 ## 前两个月
 
