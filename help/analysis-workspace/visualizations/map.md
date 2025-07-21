@@ -9,7 +9,7 @@ exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
 source-git-commit: 4163228b2ffb08a04e386e6ca31151c7143aed5c
 workflow-type: tm+mt
 source-wordcount: '2270'
-ht-degree: 10%
+ht-degree: 13%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中的地图可视化图表。_<br/>_查看本文的[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)版本的&#x200B;_&#x200B;**映射**。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的地图可视化图表。_<br/>_查看本文的[ ](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)版本的&#x200B;_**映射**。_
 
 >[!ENDSHADEBOX]
 
@@ -129,14 +129,14 @@ Customer Journey Analytics中的地图可视化图表与Adobe Analytics中的地
 | 从选定范围中创建趋势 | 根据您在地图可视化图表中选择的特定区域创建趋势折线图可视化图表。 <p>有关详细信息，请参阅[从地图可视化图表创建趋势线形图](#create-a-trended-line-chart-from-the-map-visualization)。<!-- is this correct? --> | 无法从地图可视化图表创建趋势。 |
 | 从选定范围中添加划分 | 在地图可视化图表中选择的特定区域中划分特定维度项目、量度、区段或日期范围。 <p>有关详细信息，请参阅[从地图可视化图表添加划分](#add-a-breakdown-from-the-map-visualization)。 | 无法从地图可视化添加划分。 |
 
-## 开始构建地图可视化 {#begin-building-map}
+## 开始构建地图可视化图表 {#begin-building-map}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_map_panel"
->title="配置地图可视化"
->abstract="选择用作地图可视化图表基础的量度或计算量度。 如果要专注于数据的特定子集，您还可以添加区段。<p>在可视化图表呈现后，您可以随时更新此信息。</p>"
+>title="配置地图可视化图表"
+>abstract="选择用于构建地图可视化图表的量度或计算量度。您也可以添加区段，以便聚焦于特定的数据子集。<p>可视化图表生成后，您可随时更新此信息。</p>"
 
 <!-- markdownlint-enable MD034 -->
 
