@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: 4163228b2ffb08a04e386e6ca31151c7143aed5c
+source-git-commit: c5d550d92a7bf201d3b9f62243540d9c4e063fc8
 workflow-type: tm+mt
-source-wordcount: '2270'
+source-wordcount: '2283'
 ht-degree: 13%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中的地图可视化图表。_<br/>_查看本文的[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)版本的&#x200B;_&#x200B;**映射**。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的地图可视化图表。_<br/>_查看本文的[ ](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)版本的&#x200B;_**映射**。_
 
 >[!ENDSHADEBOX]
 
@@ -212,7 +212,9 @@ Customer Journey Analytics中的地图可视化图表与Adobe Analytics中的地
       * 显示负数。
 
         例如，如果您绘制的是以年同比量度，地图会在纽约上方显示 -33%。
+
       * 对于&#x200B;*百分比*&#x200B;类型的量度，进行聚类分析时会将百分比平均起来计算。
+
       * 绿色和红色颜色方案表示正值和负值。
 
    * **其他可视化设置**：选择可视化标题中的“设置”图标![设置](/help/assets/icons/Setting.svg)以查看地图可视化的其他设置。 有关详细信息，请参阅[配置可视化设置](#configure-visualization-settings)。
@@ -238,7 +240,7 @@ Customer Journey Analytics中的地图可视化图表与Adobe Analytics中的地
    | **[!UICONTROL 样式]** | | |
    | | **[!UICONTROL 颜色主题]** | 显示热图和气泡的颜色方案。您可以选择珊瑚色、红色、绿色或蓝色。默认为珊瑚色。 |
    | | **[!UICONTROL 地图样式]** | 您可以从基本、街道、明亮、浅色、深色和卫星中选择。 |
-   | | **[!UICONTROL 群集半径]** | 将像素数量在指定范围之内的数据点组合在一起。默认值为 50。 |
+   | | **[!UICONTROL 群集半径]** | 将像素数量在指定范围之内的数据点组合在一起。默认值为 50。<p>仅当选择&#x200B;**[!UICONTROL 气泡]**&#x200B;作为&#x200B;**[!UICONTROL 映射类型]**&#x200B;时，此选项才可用。</p> |
    | | **[!UICONTROL 自定义最大值]** | 允许您更改地图最大值的阈值。 调整此值可调整气泡图或热图值（颜色和大小）相对于您设置的自定义最大值的缩放比例。 |
    | | **[!UICONTROL 显示注释]** | 显示为此可视化图表所做的批注。 |
    | | **[!UICONTROL 隐藏标题]** | 隐藏可视化图表的标题。 |
@@ -263,19 +265,19 @@ Customer Journey Analytics中的地图可视化图表与Adobe Analytics中的地
 
    1. 在&#x200B;**[!UICONTROL 小数位]**&#x200B;字段中，更改小数位数以反映所需的精度级别：
 
-      * **0：**&#x200B;精确到地图可视化图表中的大区域或国家/地区级别。 在工作区报表中显示0位小数。
+      * **0：**&#x200B;精确到地图可视化图表中的大区域或国家/地区级别。 在Workspace报表中显示0位小数。
 
-      * **1：**&#x200B;地图可视化图表中精确到区域或大城市级别。  在工作区报表中显示1位小数。
+      * **1：**&#x200B;地图可视化图表中精确到区域或大城市级别。  在Workspace报表中显示1位小数。
 
-      * **2：**&#x200B;地图可视化图表中精确到城镇或邮政编码级别。 在工作区报表中显示2位小数。
+      * **2：**&#x200B;地图可视化图表中精确到城镇或邮政编码级别。 在Workspace报表中显示2位小数。
 
         这是默认选项。
 
-      * **3：**&#x200B;精确到地图可视化图表中非常小的城镇或街坊级别。 在工作区报表中显示3位小数。
+      * **3：**&#x200B;精确到地图可视化图表中非常小的城镇或街坊级别。 在Workspace报表中显示3位小数。
 
-      * **4：**&#x200B;精确到地图可视化图表中的特定地段或建筑级别。 在工作区报表中显示4位小数。
+      * **4：**&#x200B;精确到地图可视化图表中的特定地段或建筑级别。 在Workspace报表中显示4位小数。
 
-      * **5：**&#x200B;地图可视化图表中精确到一米。 在工作区报表中显示5位小数。
+      * **5：**&#x200B;地图可视化图表中精确到一米。 在Workspace报表中显示5位小数。
 
 1. 选择&#x200B;**[!UICONTROL 保存并继续]** > **[!UICONTROL 保存并完成]**。
 
