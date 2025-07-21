@@ -65,7 +65,7 @@ ht-degree: 99%
 
 1. 从主菜单中选择&#x200B;**[!UICONTROL Workspace]**。
 1. 确保您选择的数据视图已配置给 Content Analytics。
-1. 搜索或使用区段（为&#x200B;**[!UICONTROL 渠道]**&#x200B;使用&#x200B;**[!UICONTROL 网页]**，为&#x200B;**[!UICONTROL 用例]**&#x200B;s 使用&#x200B;**[!UICONTROL 参与度]**）查找并选择 **[!UICONTROL Content analytics]** 模板。
+1. 搜索或使用区段（为&#x200B;**[!UICONTROL 渠道]**&#x200B;使用&#x200B;**[!UICONTROL 网页]**，为**[!UICONTROL 用例]**s 使用&#x200B;**[!UICONTROL 参与度]**）查找并选择 **[!UICONTROL Content analytics]** 模板。
 1. 选择&#x200B;**[!UICONTROL 使用模板]**。
 1. 在&#x200B;**[!UICONTROL 设置模板]**&#x200B;对话框中，从&#x200B;**[!UICONTROL 选择转化量度]**&#x200B;对话框中选择一个量度。例如，**[!UICONTROL 资产点进率]**。
 1. 选择&#x200B;**[!UICONTROL 继续]**。
@@ -155,5 +155,5 @@ Content Analytics 使用 AI 和生成式 AI 自动分配每个资产元数据，
 >[!MORELIKETHIS]
 >
 >[Content Analytics 组件](components.md)
->&#x200B;>[使用模板](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>>[使用模板](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >
