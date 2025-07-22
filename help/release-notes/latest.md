@@ -3,7 +3,7 @@ title: 当前 Customer Journey Analytics 发行说明
 description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: dbe9d9f8b49c1415764cc7d67438966284078c71
+source-git-commit: 144caa157e1a7161595e2b4fc0da60cd63de50bd
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 99%
@@ -12,7 +12,7 @@ ht-degree: 99%
 
 # 当前的 Adobe Customer Journey Analytics 发行说明（2025 年 7 月）
 
-**上次更新日期**：2025年7月17日
+**上次更新日期**：2025年7月22日
 
 
 这些发行说明涵盖 2025 年 7 月 11 日至 8 月 15 日的发行期。Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
@@ -21,7 +21,7 @@ ht-degree: 99%
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **在 Analysis Workspace 项目中添加和查看评论** | Analysis Workspace 中新增的[评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects)可让您在 Analysis Workspace 项目的上下文中分享见解和提出问题。这可以简化有关数据的讨论，使对话保持在正在讨论的数据范围内。您可以 <ul><li>对任何您有权访问的 Analysis Workspace 项目进行评论</li><li>对可视化图表中的特定点进行评论，也可以对项目进行一般性评论</li><li>标记其他用户，将您的评论告知他们</li><li>管理现有评论（编辑、固定、解决等）</li></ul>Customer Journey Analytics 管理员可以[在组织级别禁用评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences)。项目所有者可以[在项目级别禁用评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects)。 | 2025 年 6 月 25 日 | 2025 年 7 月 11 日 <p>（之前为 2025 年 5 月 29 日）</p> |
+| **在 Analysis Workspace 项目中添加和查看评论** | Analysis Workspace 中新增的[评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects)可让您在 Analysis Workspace 项目的上下文中分享见解和提出问题。这可以简化有关数据的讨论，使对话保持在正在讨论的数据范围内。您可以 <ul><li>对任何您有权访问的 Analysis Workspace 项目进行评论</li><li>对可视化图表中的特定点进行评论，也可以对项目进行一般性评论</li><li>标记其他用户，将您的评论告知他们</li><li>管理现有评论（编辑、固定、解决等）</li></ul>Customer Journey Analytics 管理员可以[在组织级别禁用评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences)。项目所有者可以[在项目级别禁用评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects)。 | 2025 年 6 月 25 日 | 2025年7月22日 <p>（之前为 2025 年 5 月 29 日）</p> |
 | **以 PDF 格式下载的项目将保存到您的工作站** | 当项目以 PDF 格式下载时，文件将被保存到您工作站的下载文件夹中。此前，将项目以 PDF 格式下载时，会在新的浏览器标签页中打开该 PDF，并生成唯一的 URL。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/export/download-send) | | 待定 |
 | **派生字段 — 类型转换函数** | 类型转换（Typecast）派生字段函数可动态更改字段类型，并使该字段可用于 Customer Journey Analytics 中的进一步转换操作。 | 。 | 2025 年 7 月 30 日 |
 | **派生字段 — 日期运算函数** | 日期运算（Date Math）派生字段函数可用于返回两个日期或日期时间字段之间的差值。 | | 2025 年 7 月 30 日 |
