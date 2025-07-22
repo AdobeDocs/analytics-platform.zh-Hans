@@ -538,7 +538,7 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速了解最�
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="了解哪些内容和内容属性表现最佳。"
->abstract="**这可以帮助您**&#x200B;了解您的内容在粒度级别上的表现。您可以查看单个资产或特定属性的表现。内容分析使用 AI 自动生成属性，并用它们标记您的内容。&lt;a href=\&quot;https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/content-analytics/content-analytics\&quot; target=\&quot;_blank\&quot;>了解更多</a>。<br/>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如在主页上推广表现优异的资产，为特定区段市场提供个性化内容以包含表现优异的属性，或者轮换掉已经开始过时的内容。"
+>abstract="**这可以帮助您**&#x200B;了解您的内容在粒度级别上的表现。您可以查看单个资产或特定属性的表现。内容分析使用 AI 自动生成属性，并用它们标记您的内容。&lt;a href=\&quot;https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics\&quot; target=\&quot;_blank\&quot;>了解更多</a>。<br/>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如在主页上推广表现优异的资产，为特定区段市场提供个性化内容以包含表现优异的属性，或者轮换掉已经开始过时的内容。"
 
 <!-- markdownlint-enable MD034 -->
 
