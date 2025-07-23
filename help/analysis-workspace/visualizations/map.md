@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: c5d550d92a7bf201d3b9f62243540d9c4e063fc8
+source-git-commit: f0ef310f120e278685893308315902e32c54e35e
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2385'
 ht-degree: 13%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中的地图可视化图表。_<br/>_查看本文的[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)版本的&#x200B;_&#x200B;**映射**。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的地图可视化图表。_<br/>_查看本文的[ ](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)版本的&#x200B;_**映射**。_
 
 >[!ENDSHADEBOX]
 
@@ -287,11 +287,13 @@ Customer Journey Analytics中的地图可视化图表与Adobe Analytics中的地
 
 要从地图可视化图表创建区段，请执行以下操作：
 
-1. （可选）放大包含要用于区段的数据的地图的特定区域。
+1. 缩放或平移到地图中包含要用于区段的数据的区域。
 
-1. 单击选择工具![映射选择图标](assets/map-selection-icon.png)，然后拖动鼠标选择所需区域。
+1. 执行以下其中一项操作：
 
-1. 从出现的下拉菜单中选择&#x200B;**[!UICONTROL 从所选内容创建区段]**。
+   * **要从地图上当前显示的所有内容创建区段：**&#x200B;右键单击地图上的任意位置，然后选择&#x200B;**[!UICONTROL 从当前视图创建区段]**。
+
+   * **要为更具体的地图区域创建区段：**&#x200B;单击选择工具![地图选择图标](assets/map-selection-icon.png)，拖动鼠标选择所需区域，然后选择&#x200B;**[!UICONTROL 从所选内容创建区段]**。
 
 1. 使用区段生成器定义新区段。 有关详细信息，请参阅[区段生成器](/help/components/segments/seg-builder.md)。
 
@@ -301,11 +303,13 @@ Customer Journey Analytics中的地图可视化图表与Adobe Analytics中的地
 
 要从地图可视化图表创建受众，请执行以下操作：
 
-1. （可选）放大包含要用于受众的数据的地图的特定区域。
+1. 缩放或平移到地图中包含要用于受众的数据的区域。
 
-1. 单击选择工具![映射选择图标](assets/map-selection-icon.png)，然后拖动鼠标选择所需区域。
+1. 执行以下其中一项操作：
 
-1. 从出现的下拉菜单中选择&#x200B;**[!UICONTROL 通过所选内容创建受众]**。
+   * **要从地图上当前显示的所有内容创建受众：**&#x200B;右键单击地图上的任意位置，然后选择&#x200B;**[!UICONTROL 从当前视图创建受众]**。
+
+   * **要为更具体的地图区域创建受众：**&#x200B;单击选择工具![地图选择图标](assets/map-selection-icon.png)，拖动鼠标选择所需区域，然后选择&#x200B;**[!UICONTROL 从所选内容创建受众]**。
 
 1. 使用受众生成器来定义新受众。 有关详细信息，请参阅[创建和发布受众](/help/components/audiences/publish.md#audience-builder)中的[受众生成器](/help/components/audiences/publish.md)
 
@@ -315,11 +319,13 @@ Customer Journey Analytics中的地图可视化图表与Adobe Analytics中的地
 
 要从地图可视化图表创建趋势线形图，请执行以下操作：
 
-1. （可选）放大包含要用于趋势线形图的数据的地图的特定区域。
+1. 缩放或平移到地图中包含要用于趋势线形图的数据的区域。
 
-1. 单击选择工具![映射选择图标](assets/map-selection-icon.png)，然后拖动鼠标选择所需区域。
+1. 执行以下其中一项操作：
 
-1. 从出现的下拉菜单中选择&#x200B;**[!UICONTROL 趋势]**。
+   * **要从地图中当前显示的所有内容创建趋势线图：**&#x200B;右键单击地图上的任意位置，然后从当前视图选择&#x200B;**[!UICONTROL 趋势]**。
+
+   * **要为地图中更具体的区域创建趋势线图：**&#x200B;单击选择工具![地图选择图标](assets/map-selection-icon.png)，拖动鼠标选择所需区域，然后选择&#x200B;**[!UICONTROL 趋势]**。
 
    将构建包含趋势线的折线图可视化图表。 有关此可视化图表的详细信息，请参阅[折线图](/help/analysis-workspace/visualizations/line.md)。
 
