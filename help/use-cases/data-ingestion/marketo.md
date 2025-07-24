@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 role: Admin
-source-git-commit: 82aefce30834d6400d338896dc1968e37596393e
+source-git-commit: fedb1337b32e44fc00989bace6a4d1788043f55f
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 14%
+source-wordcount: '1059'
+ht-degree: 13%
 
 ---
 
@@ -29,17 +29,17 @@ ht-degree: 14%
 >
 
 
-要在Customer Journey Analytics中报告Marketo Engage日期，请执行以下操作：
+要在Customer Journey Analytics中报告Marketo Engage数据，请执行以下操作：
 
 +++ 1.将Marketo源数据字段映射到其XDM目标
 
-将 [人员](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 和 [活动](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 对象映射到各自的 XDM 架构目标字段。
+将 [人员](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 和 [活动](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 对象映射到各自的 XDM 架构目标字段。
 
 +++
 
 +++ 2.将Marketo数据摄取到Adobe Experience Platform
 
-使用 [Marketo Engage 连接器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)将 Marketo 的数据传送到 Experience Platform，并使用与平台连接的应用程序使这些数据保持最新。
+使用 [Marketo Engage 连接器](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)将 Marketo 的数据传送到 Experience Platform，并使用与平台连接的应用程序使这些数据保持最新。
 
 +++
 
@@ -136,3 +136,6 @@ Marketo Engage提供了着重于营销自动化KPI、项目和营销活动测量
 | **自定义报告和灵活性** | 用于深入了解项目和帐户的高级BI（插件）。 | 高度灵活地使用所有可用数据构建自定义工作区、功能板或报表。 |
 | **受众分析** | 过滤并划分项目列表、参与和智能列表。 | 丰富的角色和历程可视化图表、受众路径和区段重叠分析。 |
 | **目标用户** | 营销人员、营销人员、需求挖掘人员、收入管理员。 | 分析师、数据科学家、营销策划师、客户体验专业人士。 |
+| **量度去重** | 对于电子邮件性能报表，会按潜在客户ID、促销活动ID和电子邮件资产ID自动为量度去重。 如果从同一电子邮件资产创建了多封电子邮件，又从同一项目群将其发送给同一潜在客户，则这些电子邮件将仅计为一封电子邮件。 | 如果不应用其他过滤器和量度，则将电子邮件报告数据报告为没有[量度去重](/help/data-views/component-settings/metric-deduplication.md)的电子邮件性能总数。 |
+
+{style="table-layout:fixed"}

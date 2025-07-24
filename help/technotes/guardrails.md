@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 518bebc18611136873fce5c23dd7041afafe1220
+source-git-commit: fedb1337b32e44fc00989bace6a4d1788043f55f
 workflow-type: tm+mt
 source-wordcount: '1831'
 ht-degree: 7%
@@ -94,7 +94,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [Real-time Customer Data Platform护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/rtcdp/guardrails/overview)。
+另请参阅Experience Platform [Real-time Customer Data Platform护栏](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview)。
 
 
 ## 自动数据集过期
@@ -139,7 +139,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hans)。
+另请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
 
 
 ## 目标数据导出
@@ -151,7 +151,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [数据集导出护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/guardrails#dataset-exports)
+另请参阅Experience Platform [数据集导出护栏](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## 数据登陆区
@@ -179,8 +179,8 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
-| 拼接数据集 | 10 - 50 | 系统强制的护栏 | 每个客户的最大拼合数据集数。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
-| 回填长度 | 13 - 25 | 系统强制的护栏 | 回填数据的最大月数。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
+| 拼接数据集 | 15 - 50 | 系统强制的护栏 | 每个客户的最大拼合数据集数。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
+| 回填长度 | 6 - 25 | 系统强制的护栏 | 回填数据的最大月数。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
 | 回看窗口期/重放频率 | 1/1 - 30/7 | 系统强制的护栏 | 最大回看时段（以天为单位）/重放频率。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
 
 
@@ -252,7 +252,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 >[!NOTE]
 >
->以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 有关详细信息，请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hans)。
+>以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 有关详细信息，请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
 
 | 数据流 | 预期延迟 |
 |---|---|
