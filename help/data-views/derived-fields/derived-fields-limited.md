@@ -21,7 +21,7 @@ ht-degree: 29%
 >[!IMPORTANT]
 >
 >这是尚未普遍提供的新派生字段函数的初步文档。 使用此信息可了解新的派生字段函数。 本文档仍可能会发生更改，并且当前的本文版本不承担任何法律义务。
->&#x200B;><br/>请参阅[派生字段](derived-fields.md)，了解有关派生字段的一般功能以及当前可用的已发布函数和函数模板的信息。
+>><br/>请参阅[派生字段](derived-fields.md)，了解有关派生字段的一般功能以及当前可用的已发布函数和函数模板的信息。
 >
 
 ## 函数参考
@@ -126,7 +126,7 @@ ht-degree: 29%
 >title="深度"
 >abstract="此函数可用于返回任意字段的深度，其功能类似于事件深度标准组件。"
 
-返回字段的深度，类似于现成可用的标准事件深度维度[&#128279;](/help/components/dimensions/overview.md#standard-dimensions)。
+返回字段的深度，类似于现成可用的标准事件深度维度[](/help/components/dimensions/overview.md#standard-dimensions)。
 
 +++ 详细信息
 

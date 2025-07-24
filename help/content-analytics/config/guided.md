@@ -61,12 +61,12 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_button"
 >title="详细信息"
->abstract="提供该连接的名称。在&#x200B;**[!UICONTROL 数据视图]**、**[!UICONTROL 体验捕捉和定义]**&#x200B;以及&#x200B;**[!UICONTROL 数据收集]**&#x200B;部分中，您可以提供更多详细信息，以确保正确配置内容分析。"
+>abstract="提供该连接的名称。在&#x200B;**[!UICONTROL 数据视图]**、**[!UICONTROL 体验捕捉和定义]**&#x200B;以及&#x200B;**[!UICONTROL 数据收集]**&#x200B;部分中，您可以提供更多详细信息，以确保正确配置 Content Analytics。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="详细信息"
->abstract="本指南设置了配置内容分析所需的要求。请为此配置提供名称"
+>abstract="本指南设置了配置 Content Analytics 所需的要求。请为此配置提供名称"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -82,17 +82,17 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataview_button"
 >title="数据视图"
->abstract="要配置内容分析，您需要选择一个现有的数据视图。因此，您可以将内容分析数据与其他数据合并。"
+>abstract="要配置 Content Analytics，您需要选择一个现有的数据视图。因此，您可以将 Content Analytics 数据与其他数据合并。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="数据视图"
->abstract="从 Customer Journey Analytics 中选择一个您希望将内容分析数据与之合并的现有数据视图。"
+>abstract="从 Customer Journey Analytics 中选择一个您希望将 Content Analytics 数据与之合并的现有数据视图。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
 >title="数据视图"
->abstract="从 Customer Journey Analytics 中选择一个您希望将内容分析数据与之合并的现有数据视图。<br/>"
+>abstract="从 Customer Journey Analytics 中选择一个您希望将 Content Analytics 数据与之合并的现有数据视图。<br/>"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
@@ -259,7 +259,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_header"
 >title="数据收集"
->abstract="指明在为内容分析收集数据时应&#x200B;**包括**&#x200B;或&#x200B;**排除**&#x200B;哪些页面"
+>abstract="指明在为 Content Analytics 收集数据时应&#x200B;**包括**&#x200B;或&#x200B;**排除**&#x200B;哪些页面"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_boldheader"
@@ -269,22 +269,22 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_header"
 >title="数据收集"
->abstract="指明在为内容分析收集数据时应&#x200B;**包括**&#x200B;或&#x200B;**排除**&#x200B;哪些资产"
+>abstract="指明在为 Content Analytics 收集数据时应&#x200B;**包括**&#x200B;或&#x200B;**排除**&#x200B;哪些资产"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
 >title="数据收集"
->abstract="您可以在与当前配置关联的标记属性中编辑 Adobe 内容分析扩展中的页面设置。"
+>abstract="您可以在与当前配置关联的标记属性中编辑 Adobe Content Analytics 扩展中的页面设置。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_edit_button"
 >title="数据收集"
->abstract="您可以在与当前配置关联的标记属性中编辑 Adobe 内容分析扩展中的资产设置。"
+>abstract="您可以在与当前配置关联的标记属性中编辑 Adobe Content Analytics 扩展中的资产设置。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tags_disabled_description "
 >title="标记属性已禁用"
->abstract="内容分析扩展已处于活动状态。"
+>abstract="Content Analytics 扩展已处于活动状态。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -350,7 +350,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning_dialog"
 >title="实施确认"
->abstract="如果选择&#x200B;**[!UICONTROL 实施]**，则会根据您在此工作流程中提供的输入来配置内容分析。默认情况下，会根据内容分析的一般用途选择几种设置，但您（作为数据控制者）必须检查每个工件的设置，以确认这些设置是根据您的隐私政策、合同权利和义务以及符合适用法律的同意声明要求实施的。<br/><br/>请注意，在手动发布与此配置关联的标记库之前，不会收集任何数据。<br/><br/>为了获取图像和文本的属性，Adobe 使用了以下方式检索属性：<ol><li>根据您配置的数据收集设置，在用户访问网站时捕获的页面 URL，以及</li><li>托管图像的 URL。</li></ol>您不得对第三方网站上托管的图像进行标记。"
+>abstract="如果选择&#x200B;**[!UICONTROL 实施]**，则会根据您在此工作流程中提供的输入来配置 Content Analytics。默认情况下，会根据 Content Analytics 的一般用途选择几种设置，但您（作为数据控制者）必须检查每个工件的设置，以确认这些设置是根据您的隐私政策、合同权利和义务以及符合适用法律的同意声明要求实施的。<br/><br/>请注意，在手动发布与此配置关联的标记库之前，不会收集任何数据。<br/><br/>为了获取图像和文本的属性，Adobe 使用了以下方式检索属性：<ol><li>根据您配置的数据收集设置，在用户访问网站时捕获的页面 URL，以及</li><li>托管图像的 URL。</li></ol>您不得对第三方网站上托管的图像进行标记。"
 
 <!-- markdownlint-enable MD034 -->
 
