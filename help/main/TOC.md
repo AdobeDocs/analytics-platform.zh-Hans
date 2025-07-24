@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 24834f6a1424a885c6f7b3dcf0ad84375e21b462
+source-git-commit: 1b81b0fb81119132b6568726761e9897c2b4e47c
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1278'
 ht-degree: 99%
 
 ---
@@ -148,6 +148,7 @@ ht-degree: 99%
    + [标准组件参考](../data-views/component-reference.md)
    + [BI 扩展](../data-views/bi-extension.md)
    + [派生字段](../data-views/derived-fields/derived-fields.md)
+   + [派生字段（受限）](../data-views/derived-fields/derived-fields-limited.md)
    + [摘要数据](../data-views/summary-data.md)
    + [标签和政策](../data-views/data-governance.md)
    + 共享量度和维度{#shared-metrics-dimensions}
@@ -398,7 +399,7 @@ ht-degree: 99%
       + [监测数据字典健康状况](../components/data-dictionary/monitor-data-dictionary-health.md)
    + 实时报告 {#real-time-reporting}
       + [概述](/help/components/real-time/real-time.md)
-      + [使用实时报表](/help/components/real-time/use-real-time.md)
+      + [使用实时报告](/help/components/real-time/use-real-time.md)
    + [计划的项目](../components/scheduled-projects-manager.md)
 + Report Builder {#cja-reportbuilder}
    + [概述](../report-builder/rb-overview.md)

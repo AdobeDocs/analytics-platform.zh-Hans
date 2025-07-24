@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 2d4e8c51111427564c761a16deb27223e98cd2ec
+source-git-commit: c9560f8b11ff055040611e208f09ee3e2d7bb5da
 workflow-type: tm+mt
-source-wordcount: '8925'
+source-wordcount: '8857'
 ht-degree: 99%
 
 ---
@@ -19,31 +19,10 @@ ht-degree: 99%
 >title="派生字段"
 >abstract="派生字段允许您通过可自定义的规则生成器动态定义数据操作。然后，您可以将该派生字段用作工作区中的组件（度量或维度），甚至可以在“数据”视图中进一步定义为组件。"
 
-<!-- BEGIN
-     Temporarily have these entries at the top; once functions are documented
-     move them to appropriate function section
--->
-
->[!CONTEXTUALHELP]
->id="dataview_derivedfields_datemath"
->title="日期运算"
->abstract="此函数可用于返回两个日期或日期时间字段之间的差值。"
-
->[!CONTEXTUALHELP]
->id="dataview_derivedfields_typecast"
->title="类型转换"
->abstract="此函数可实现字段类型的即时转换，使该字段能够在 Customer Journey Analytics 中进行进一步转换。"
-
->[!CONTEXTUALHELP]
->id="dataview_derivedfields_depth"
->title="深度"
->abstract="此函数可用于返回任意字段的深度，其功能类似于事件深度标准组件。"
-
-<!-- END -->
 
 派生字段是 Adobe Customer Journey Analytics 中实时报告功能的一个重要方面。通过派生字段和可自定义的规则生成器，即可迅速定义（一般较为复杂的）数据操作。然后，您可以将该派生字段用作[工作区](../../analysis-workspace/home.md)中的组件（量度或维度），甚至可以进一步将该派生字段定义为[数据视图](../data-views.md)中的组件。
 
-与在 Customer Journey Analytics 之外的其他位置转换或操作数据相比，派生字段可以节省大量时间和精力。例如[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)、[数据蒸馏器](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=zh-Hans)，或者在您自己的提取转换加载 (ETL) / 提取加载转换 (ELT) 流程中。
+与在 Customer Journey Analytics 之外的其他位置转换或操作数据相比，派生字段可以节省大量时间和精力。例如[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html)、[数据蒸馏器](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html)，或者在您自己的提取转换加载 (ETL) / 提取加载转换 (ELT) 流程中。
 
 派生字段是在[数据视图](../data-views.md)中定义的，它们基于一组定义为规则的函数，并会应用于可用的标准和/或架构字段。
 
@@ -444,14 +423,10 @@ ht-degree: 99%
 
 ### Case When {#casewhen}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_casewhen"
 >title="Case When"
 >abstract="此函数提供了根据一个或多个字段中定义的标准应用条件的能力。然后使用这些标准根据完成情况序列来定义新派生字段中的值。"
-
-<!-- markdownlint-enable MD034 -->
 
 
 根据一个或多个字段中定义的标准应用条件。然后使用这些标准根据条件序列来定义新派生字段中的值。
@@ -660,7 +635,7 @@ ht-degree: 99%
 
 ## 更多信息 {#casewhen-more-info}
 
-Customer Journey Analytics 使用嵌套的容器结构，该结构仿照的是 Adobe Experience Platform 的 [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans)（体验数据模型）。有关更多背景信息，请参阅[容器](../create-dataview.md#containers)和[区段容器](/help/components/segments/seg-overview.md#containers)。 这种容器模型虽然本质上很灵活，但在使用规则生成器时会施加一些约束。
+Customer Journey Analytics 使用嵌套的容器结构，该结构仿照的是 Adobe Experience Platform 的 [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)（体验数据模型）。有关更多背景信息，请参阅[容器](../create-dataview.md#containers)和[区段容器](/help/components/segments/seg-overview.md#containers)。 这种容器模型虽然本质上很灵活，但在使用规则生成器时会施加一些约束。
 
 Customer Journey Analytics 使用以下默认容器模型：
 
@@ -684,14 +659,10 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 ### 分类 {#classify}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_classify"
 >title="分类"
 >abstract="此函数提供了定义一组值的功能，这些值通过文本输入被相应的值替换。"
-
-<!-- markdownlint-enable MD034 -->
 
 
 定义一组值，这些值在新的派生字段中会被相应的值替换。
@@ -913,17 +884,14 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 +++
 
+<!-- DEDUPLICATE -->
 
 ### 删除重复数据 {#dedup}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_deduplicate"
 >title="删除重复数据"
 >abstract="此函数可以配置字段，以仅在线程或人员级别非重复地计算值。此外，可以使用删除重复项 ID 来确保基于给定的 ID（例如购买 ID），仅使用一个值（第一个实例或最后一个实例）。"
-
-<!-- markdownlint-enable MD034 -->
 
 
 防止多次计算一个值。
@@ -956,7 +924,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 ### 派生字段 {#deduplicate-uc1-derivedfield}
 
-您定义一个 `Booking Confirmation` 派生字段。您可以使用 [!UICONTROL DEDUPLICATE] 函数定义一条规则，以使用[!UICONTROL 重复数据删除 ID] [!UICONTROL 预订确认 ID &#x200B;]对[!UICONTROL 范围] [!DNL Person] 的[!UICONTROL 值] [!DNL Booking] 进行重复数据删除。您可以选择[!UICONTROL 保留第一个实例]作为[!UICONTROL 要保留的值]。
+您定义一个 `Booking Confirmation` 派生字段。您可以使用 [!UICONTROL DEDUPLICATE] 函数定义一条规则，以使用[!UICONTROL 重复数据删除 ID] [!UICONTROL 预订确认 ID ]对[!UICONTROL 范围] [!DNL Person] 的[!UICONTROL 值] [!DNL Booking] 进行重复数据删除。您可以选择[!UICONTROL 保留第一个实例]作为[!UICONTROL 要保留的值]。
 
 ![连接规则的屏幕快照](assets/deduplicate-1.png)
 
@@ -1007,6 +975,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 +++
 
 
+
 <!-- FIND AND REPLACE -->
 
 ### 查找和替换 {#find-and-replace}
@@ -1017,8 +986,6 @@ Customer Journey Analytics 使用以下默认容器模型：
 >id="dataview_derivedfields_findandreplace"
 >title="查找和替换"
 >abstract="此函数提供了在选定字段中查找所有值并将这些值替换为新派生字段中的不同值的功能。"
-
-<!-- markdownlint-enable MD034 -->
 
 
 查找选定字段中的所有值，并用新派生字段中的其他值替换这些值。
@@ -1091,14 +1058,10 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 ### 查询 {#lookup}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_lookup"
 >title="查询"
 >abstract="此函数提供了利用数据集之间的匹配键来使用查找数据集中的字段的能力。"
-
-<!-- markdownlint-enable MD034 -->
 
 
 使用查找数据集中的字段来查找值，并在新的派生字段中返回一个值，或用于进一步的规则处理。
@@ -1142,7 +1105,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 1. 从选择器中选择&#x200B;**[!UICONTROL 架构字段]**。
 1. 选择 ![架构字段图标](assets/Smock_Folder_18_N.svg) **[!UICONTROL 查找数据集]**。
 1. 选择您的查找数据集，并找到您想要用于查找的字段。
-1. 将查找字段拖放到函数的任何可用输入字段上（例如 Case When）。当该功能有效时，一个标有 **[!UICONTROL + 添加]**&#x200B;的蓝色框会允许您拖放字段，并自动在您放置查找字段的函数之前插入一个查找函数。所插入的查找函数会自动填充所有字段的相关值。
+1. 将查找字段拖放到函数的任何可用输入字段上（例如 Case When）。当该功能有效时，一个标有 **[!UICONTROL + 添加]**的蓝色框会允许您拖放字段，并自动在您放置查找字段的函数之前插入一个查找函数。所插入的查找函数会自动填充所有字段的相关值。
    ![查找拖动](assets/lookup-drag.png)
 
 +++
@@ -1152,14 +1115,10 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 ### 小写字母 {#lowercase}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_lowercase"
 >title="小写字母"
 >abstract="该函数可将整个字符串文本转换为小写值。"
-
-<!-- markdownlint-enable MD034 -->
 
 
 将字段中的值转换为小写，并将其存储到新的派生字段中。
@@ -1213,14 +1172,10 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 ### 数学 {#math}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_math"
 >title="数学"
 >abstract="该函数提供对字段执行数学运算的能力。该函数可用于执行基本算术运算，例如加法、减法、乘法和除法。"
-
-<!-- markdownlint-enable MD034 -->
 
 
 在数字字段上使用基本的数学运算符（加、减、乘、除和乘方）。
@@ -1290,11 +1245,9 @@ Customer Journey Analytics 使用以下默认容器模型：
 - 如果在公式中使用多个静态值，则应使用括号对这些静态值进行分组，这样公式才会有效。例如：
 
    - 此公式返回错误。
-
      ![更多数学信息 4](assets/math-more-info-4.png)
 
    - 这个公式是有效的。
-
      ![更多数学信息 5](assets/math-more-info-5.png)
 
 使用数学函数进行基于点击级别的计算。使用 [Summarize](#summarize) 函数进行基于事件、会话或人员范围的计算。
@@ -1306,14 +1259,10 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 ### 合并字段 {#merge}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_mergefields"
 >title="合并字段"
 >abstract="此函数可以从两个不同的字段中获取值，并在单个维度中包含其各自的值。该规则首先会检查第一个值是否已设置。如果没有，那么它会使用第二个值，依此类推。"
-
-<!-- markdownlint-enable MD034 -->
 
 
 将两个不同字段的值合并到一个新的派生字段。
@@ -1382,14 +1331,10 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 ### 下一个或上一个 {#next-previous}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_nextprevious"
 >title="下一个或上一个"
 >abstract="此函数可以查看针对给定字段收集的下一个或上一个值。"
-
-<!-- markdownlint-enable MD034 -->
 
 
 将字段作为输入并在会话或使用范围内解析该字段的下一个或上一个值。这仅适用于访问和事件表字段。
@@ -1464,14 +1409,10 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 ### 正则表达式替换 {#regex-replace}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_regexreplace"
 >title="正则表达式替换"
 >abstract="此函数提供使用正则表达式提取部分字符串的功能。"
-
-<!-- markdownlint-enable MD034 -->
 
 
 使用正则表达式将字段中的值替换为新的派生字段。
@@ -1571,14 +1512,10 @@ Customer Journey Analytics 使用 Perl 正则表达式语法的子集。支持�
 
 ### 拆分 {#split}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_split"
 >title="拆分"
 >abstract="利用此函数，可以根据分隔符将一个字段拆分为多个字段。"
-
-<!-- markdownlint-enable MD034 -->
 
 
 将字段的值拆分到新的派生字段中。
@@ -1673,14 +1610,10 @@ Customer Journey Analytics 使用 Perl 正则表达式语法的子集。支持�
 
 ### 总结 {#summarize}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_summarize"
 >title="总结"
 >abstract="此函数提供在事件、线程或人员级别聚合值的能力。根据选择字段的字段类型，将会提供不同的选项。"
-
-<!-- markdownlint-enable MD034 -->
 
 
 在事件、会话和用户级别对量度或维度应用聚合类型函数。
@@ -1751,14 +1684,10 @@ Customer Journey Analytics 使用 Perl 正则表达式语法的子集。支持�
 
 ### 修剪 {#trim}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_trim"
 >title="修剪"
 >abstract="此函数可以从字符串的开头或结尾修剪空格或特殊字符。此外，还可以指定用于返回值的字符数，无论是从字符串的前面还是末尾。"
-
-<!-- markdownlint-enable MD034 -->
 
 
 修剪字段值开头或结尾的空格、特殊字符或字符数，并将结果存入一个新的派生字段中。
@@ -1868,19 +1797,14 @@ Customer Journey Analytics 使用 Perl 正则表达式语法的子集。支持�
 {style="table-layout:auto"}
 +++
 
-
 <!-- URL PARSE -->
 
 ### URL 解析 {#urlparse}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_urlparse"
 >title="URL 解析"
 >abstract="此函数可用于解析出 URL 的不同部分，包括主机、路径或查询参数。"
-
-<!-- markdownlint-enable MD034 -->
 
 
 解析 URL 的不同部分，包括协议、主机、路径或查询参数。
