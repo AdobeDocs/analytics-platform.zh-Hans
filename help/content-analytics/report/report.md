@@ -6,9 +6,9 @@ feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
 source-git-commit: 51b3d533ef7b42ff03823f2dffcb2ccfbb9c4bbe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1300'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 99%
 
 默认情况下，会显示相关 Content Analytics 维度的缩略图。如要配置 Content Analytics 维度的缩略图显示：
 
-* 将鼠标悬停在 Content Analytics 维度的标题行上。例如，**[!UICONTROL 资产ID]**&#x200B;或&#x200B;**[!UICONTROL 体验ID]**。
+* 将鼠标悬停在 Content Analytics 维度的标题行上。例如，**[!UICONTROL 资产 ID]**&#x200B;或&#x200B;**[!UICONTROL 体验 ID]**。
 * 选择![设置](/help/assets/icons/Setting.svg)。
 * 在&#x200B;**[!UICONTROL 行设置]**&#x200B;弹出窗口中，在&#x200B;**[!UICONTROL 设置]**&#x200B;下方，勾选或取消勾选&#x200B;**[!UICONTROL 显示缩略图]**。
 
@@ -65,7 +65,7 @@ ht-degree: 99%
 
 1. 从主菜单中选择&#x200B;**[!UICONTROL Workspace]**。
 1. 确保您选择的数据视图已配置给 Content Analytics。
-1. 搜索或使用区段（为&#x200B;**[!UICONTROL 渠道]**&#x200B;使用&#x200B;**[!UICONTROL 网页]**，为&#x200B;**[!UICONTROL 用例]**&#x200B;s 使用&#x200B;**[!UICONTROL 参与度]**）查找并选择 **[!UICONTROL Content analytics]** 模板。
+1. 搜索或使用区段（为&#x200B;**[!UICONTROL 渠道]**&#x200B;使用&#x200B;**[!UICONTROL 网页]**，为**[!UICONTROL 用例]**s 使用&#x200B;**[!UICONTROL 参与度]**）查找并选择 **[!UICONTROL Content analytics]** 模板。
 1. 选择&#x200B;**[!UICONTROL 使用模板]**。
 1. 在&#x200B;**[!UICONTROL 设置模板]**&#x200B;对话框中，从&#x200B;**[!UICONTROL 选择转化量度]**&#x200B;对话框中选择一个量度。例如，**[!UICONTROL 资产点进率]**。
 1. 选择&#x200B;**[!UICONTROL 继续]**。
@@ -155,5 +155,5 @@ Content Analytics 使用 AI 和生成式 AI 自动分配每个资产元数据，
 >[!MORELIKETHIS]
 >
 >[Content Analytics 组件](components.md)
->&#x200B;>[使用模板](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>>[使用模板](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >
