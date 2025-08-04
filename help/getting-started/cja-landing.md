@@ -4,10 +4,10 @@ description: Customer Journey Analytics 登陆页面。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 94d1bcdb2419f8c2e27bd77bb2e35b04cd30d632
-workflow-type: ht
-source-wordcount: '795'
-ht-degree: 100%
+source-git-commit: 830e8312b4be2ffac907baca282ce71029e6ecc5
+workflow-type: tm+mt
+source-wordcount: '808'
+ht-degree: 98%
 
 ---
 
@@ -28,6 +28,12 @@ ht-degree: 100%
 Customer Journey Analytics B2B Edition 提供有助于推动收入增长的可操作的帐户洞察，帮助 B2B 公司协调其营销活动、销售和产品团队。帐户是数据模型的中心，因此所有分析都集中在帐户历程上。
 
 [![图像](assets/learn-more-button.svg)](/help/getting-started/cja-b2b-edition.md)
+
+>[!TAB 派生字段函数]
+
+新的派生字段函数： [Data Math](/help/data-views/derived-fields/derived-fields.md#date-math)、[Depth](/help/data-views/derived-fields/derived-fields.md#depth)和[Typecast](/help/data-views/derived-fields/derived-fields.md#typecast)。
+
+[![图像](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
 >[!TAB Content Analytics]
 
