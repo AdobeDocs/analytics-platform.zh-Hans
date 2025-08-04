@@ -6,10 +6,10 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 22b18c97baf7f55bf654cc298d2748298ea376d8
+source-git-commit: 27e09c893c45f445d9344c1cc5132960060bf032
 workflow-type: tm+mt
-source-wordcount: '3934'
-ht-degree: 72%
+source-wordcount: '4606'
+ht-degree: 62%
 
 ---
 
@@ -46,7 +46,24 @@ ht-degree: 72%
 
 ![列表视图](assets/list-view.png)
 
-[!UICONTROL 列表]界面会显示所有可用连接的表格。您可以使用搜索![搜索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)框快速搜索连接。
+[!UICONTROL List]接口显示所有可用连接的表。
+
+### 搜索连接
+
+您可以使用搜索![搜索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)框快速搜索连接。
+
+### 将过滤器应用于连接列表
+
+要将过滤器应用于连接列表，请选择过滤器图标，然后从以下过滤器选项中选择：
+
+| 筛选选项 | 描述 |
+|---------|----------|
+| **[!UICONTROL 数据集]** | 只显示与您选择的数据集关联的连接。 |
+| **[!UICONTROL 所有者]** | 只显示由您选择的人员拥有的连接。 |
+| **[!UICONTROL 沙盒]** | 仅显示您选择的沙盒中可用的连接。 |
+| 在CJA中&#x200B;**[!UICONTROL 使用]** | 选择&#x200B;**[!UICONTROL On]**&#x200B;以仅显示允许与Customer Journey Analytics一起使用的连接。 选择&#x200B;**[!UICONTROL 关闭]**&#x200B;可仅显示尚未启用以与Customer Journey Analytics一起使用的连接。 |
+
+### 可用列
 
 该表格中提供了以下列或图标。
 
@@ -54,15 +71,18 @@ ht-degree: 72%
 | --- | --- |
 | **[!UICONTROL _名称_]** | 好记的连接名称。选择超链接名称以查看连接[的](#connection-details)详细信息。 |
 | ![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | 要查看有关[!UICONTROL 包含的数据集]、[!UICONTROL 沙盒]、[!UICONTROL 所有者]等的信息，请选择连接名称旁边的![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)。<p>一个弹出窗口会显示有关数据集的详细信息。 <p>![连接信息弹出窗口](assets/connection-info-popup.png) |
+| ![数据视图](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) | 要为连接[创建一个数据视图](#create-a-data-view)，请选择![数据视图](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg)。仅当连接没有与之关联的数据视图时才会显示此图标。 |
 | ![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | 选择![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)以打开上下文菜单。 您可以选择︰ <p>![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 编辑]**&#x200B;以[编辑](#edit-a-connection)连接。<p>![删除](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL 删除]**&#x200B;以[删除](#delete-a-connection)连接。<p>![数据视图](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL 创建新的数据视图]**&#x200B;以[为连接创建新的数据视图](#create-a-data-view)。<p>![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL 连接映射]**&#x200B;以查看连接的[连接映射](#map-a-connection)。 |
 | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 连接类型&#x200B;]** | 连接的类型：基于&#x200B;**[!UICONTROL 人员]**&#x200B;或基于&#x200B;**[!UICONTROL 帐户]**&#x200B;的连接。 |
 | **[!UICONTROL 数据集]** | 连接中包含的一个或多个数据集链接。您可以选择数据集超链接来查看连接中的数据集。如果选定的连接中包含更多数据集，请选择 **[!UICONTROL +*x* 更多]**，以显示&#x200B;**[!UICONTROL 包含的数据集]**&#x200B;面板。此面板显示指向所有数据集的链接以及![搜索](/help/assets/icons/Search.svg)以搜索作为连接一部分的特定数据集的选项。<p>![数据集已包括](assets/datasets-included.png)<p>选择一个数据集名称，以在新选项卡的Experience Platform界面中打开该数据集。 |
 | **[!UICONTROL 沙盒]** | 此连接从中获取其数据集的 [Experience Platform 沙盒](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sandbox/home)。在创建连接时选择此沙盒。 保存连接后，无法更改沙盒。 |
 | **[!UICONTROL 所有者]** | 创建连接的人员。 |
-| **[!UICONTROL 导入新数据]** | 数据集导入新数据的状态： <p>![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _On]**&#x200B;用于配置为导入新数据的数据集，并且<p>对于未配置为导入新数据的数据集，![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _x 关闭_]**。 |
+| **[!UICONTROL 导入新数据]** | 数据集导入新数据的状态： <p>![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _On]**用于配置为导入新数据的数据集，并且<p>对于未配置为导入新数据的数据集，![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _x 关闭_]**。 |
 | **[!UICONTROL 创建日期]** | 创建连接的时间戳。 |
 | **[!UICONTROL 上次修改时间]** | 上次更新连接的时间戳。 |
 | **[!UICONTROL 回填数据]** | 数据集中回填数据的状态。<p>![状态为红色](assets/status-red.svg)   **[!UICONTROL _x _回填失败]**，表示数据集中回填失败的次数，<p>![状态为橙色](assets/status-orange.svg)   **[!UICONTROL _x _正在处理回填]**，表示数据集中正在处理的回填次数，<p>![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _回填完成]**，数据集中已完成的回填次数，以及<p>如果连接中的数据集未定义回填，则![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _关闭_]**。 |
+| **[!UICONTROL 集成]** | 显示通过连接启用的所有Experience Platform应用程序。 |
+| 在CJA中&#x200B;**[!UICONTROL 使用]** | 显示是否已启用连接以用于Customer Journey Analytics。 |
 
 要配置要在表中显示的列，请选择![列设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)。 在自定义表对话框中，选择要显示的列。
 
@@ -123,6 +143,76 @@ ht-degree: 72%
 
 有关更多信息，请参阅[创建或编辑数据视图](/help/data-views/create-dataview.md)。
 
+### 在Customer Journey Analytics中使用Journey Optimizer连接 {#use-connection-in-cja}
+
+>[!IMPORTANT]
+>
+>当您按照本节所述启用Journey Optimizer连接以用于Customer Journey Analytics时，连接中的每一行数据都会计入您每月为Customer Journey Analytics授予许可的数据行，并显示在连接使用情况UI中。 仅当您熟悉Customer Journey Analytics中额外使用数据行时，才选择连接上的&#x200B;**[!UICONTROL 在CJA中使用]**&#x200B;选项。
+>
+>**如果您在2024年10月至2025年10月期间有权使用Customer Journey Analytics和Journey Optimizer，请参阅以下有关[启用AJO的连接](https://view.adobe.com/viewer/1ed94fc35c7860b260766c620889e7a0#1)**&#x200B;的文档。
+
+您可以使用Customer Journey Analytics中的Journey Optimizer连接为您的连接带来以下附加值：
+
+* 在Customer Journey Analytics中对Journey Optimizer数据执行深入分析(通过使用Journey Optimizer中的&#x200B;**[!UICONTROL 在CJA中分析]**&#x200B;按钮)。
+
+  有关详细信息，请参阅Journey Optimizer文档中的[在Customer Journey Analytics中分析](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template)。
+
+* 编辑Journey Optimizer连接和关联的数据视图。
+
+  有关编辑选项的详细信息，请参阅[编辑连接](#edit-a-connection)。
+
+要启用此功能，您的组织需要访问Customer Journey Analytics。 如果您没有访问权限，请联系您的Adobe销售代表。
+
+在访问Customer Journey Analytics后，您必须允许在Customer Journey Analytics中使用Journey Optimizer连接：
+
+1. 找到要与Customer Journey Analytics一起使用的Journey Optimizer连接。
+
+   1. 选择&#x200B;**[!UICONTROL 连接]**&#x200B;选项卡上的“筛选器”图标。
+
+   1. 在&#x200B;**[!UICONTROL 用于CJA]**&#x200B;部分中，选择&#x200B;**[!UICONTROL 禁用]**。
+
+      这会显示当前未配置为可在Customer Journey Analytics中使用的所有连接。
+
+   1. 选择要在Customer Journey Analytics中使用的Journey Optimizer连接。
+
+1. 在Journey Optimizer连接中，选择&#x200B;**[!UICONTROL 使用CJA]**。
+
+   显示以下&#x200B;**[!UICONTROL 在Customer Journey Analytics中使用此连接]**&#x200B;对话框：
+
+   <!-- add screenshot -->
+
+1. 启用切换功能，**[!UICONTROL 在CJA中使用连接]**。
+
+1. 选择&#x200B;**[!UICONTROL 使用连接]**。<!-- double-check these dialog button names -->
+
+#### 从Customer Journey Analytics中删除连接 {#remove-connection-in-cja}
+
+您可以随时从Customer Journey Analytics中删除Journey Optimizer连接。 但是，在使用连接后从Customer Journey Analytics中删除该连接会导致以下情况：
+
+* Journey Optimizer连接和任何关联的数据视图都将重置为其默认状态，且无法再编辑
+
+* 任何与连接关联的自定义派生字段都将被删除
+
+* 您无法再在Customer Journey Analytics中对Journey Optimizer数据执行深入分析
+
+  这意味着Journey Optimizer中的&#x200B;**[!UICONTROL 在CJA中分析]**&#x200B;按钮已禁用
+
+>[!IMPORTANT]
+>
+>Customer Journey Analytics中的连接账单包括删除连接的整个月。
+
+
+要从Customer Journey Analytics中删除连接，请执行以下操作：
+
+1. 编辑Journey Optimizer连接时，选择&#x200B;**[!UICONTROL 从CJA中删除]**。
+
+   显示以下&#x200B;**[!UICONTROL 从Customer Journey Analytics中删除此连接]**&#x200B;对话框：
+
+   <!-- add screenshot -->
+
+1. 禁用选项&#x200B;**[!UICONTROL 从CJA中删除连接]**。
+
+1. 选择&#x200B;**[!UICONTROL 删除连接]**。
 
 ### 映射连接
 
@@ -188,8 +278,9 @@ ht-degree: 72%
 | ![刷新](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) **[!UICONTROL 刷新]** | 要刷新连接并允许反映最近添加的记录，请选择![刷新](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) **[!UICONTROL 刷新]**。 |
 | ![删除](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL 删除]** | [删除](#delete-a-connection)此连接。 |
 | ![添加数据视图](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL 创建数据视图]** | 根据该连接[创建一个数据视图](#create-a-data-view)。有关更多信息，请参阅[数据视图](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/data-views)。 |
+| 在CJA中&#x200B;**[!UICONTROL 使用]** | 在Customer Journey Analytics中使用Journey Optimizer连接，为您的Journey Optimizer连接带来其他价值。 有关详细信息，请参阅[在Customer Journey Analytics中使用Journey Optimizer连接](#use-a-journey-optimizer-connection-in-customer-journey-analytics)。 |
 | **[!UICONTROL 连接名称]** | 友好的连接名称。 |
-| **[!UICONTROL 连接说明]** | 连接的描述。 |
+| **[!UICONTROL 连接说明]** | 描述此连接目的的更详细描述。 |
 | **[!UICONTROL 沙盒]** | 此连接从中获取其数据集的 [Experience Platform 沙盒](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sandbox/home)。在创建连接时选择此沙盒。 保存连接后，无法更改沙盒。 |
 | **[!UICONTROL 连接 ID]** | 为连接生成的标识符。 您可以使用![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)来复制值。 |
 | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 主ID类型&#x200B;]** | 基于人员的连接的主要ID类型： **[!UICONTROL 人员]**，基于帐户的连接&#x200B;**[!UICONTROL 帐户]**。 |
@@ -208,13 +299,13 @@ ht-degree: 72%
 
 | 详细信息 | 描述 |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全球帐户 ID &#x200B;]** | 您指定为连接的全局帐户ID的标识。 仅适用于已配置全局帐户容器的基于帐户的连接。 |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户 ID &#x200B;]** | 您指定为连接的帐户ID的身份。 仅适用于未配置全局帐户容器的基于帐户的连接。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全球帐户 ID ]** | 您指定为连接的全局帐户ID的标识。 仅适用于已配置全局帐户容器的基于帐户的连接。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户 ID ]** | 您指定为连接的帐户ID的身份。 仅适用于未配置全局帐户容器的基于帐户的连接。 |
 | **[!UICONTROL 人员 ID]** | 您指定为连接的人员ID的身份。 |
 | **[!UICONTROL 键]** | 您为查找数据集指定的键。 |
 | **[!UICONTROL 匹配键]** | 您为查找数据集指定的匹配键。 |
 | **[!UICONTROL 时间戳]** | 为事件数据集定义的时间戳。 |
-| **[!UICONTROL 可用的记录数]** | 在日程表中选择的特定时间段内，此数据集摄取的总行数。添加数据后，数据立刻在报告中显示，没有延迟。但是，当您创建一个全新的连接时，则会出现[延迟](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq)。 |
+| **[!UICONTROL 可用的记录数]** | 在日程表中选择的特定时间段内，此数据集摄取的总行数。添加数据后，数据立刻在报告中显示，没有延迟。但是，当您创建一个全新的连接时，则会出现[延迟](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq)。 |
 | **[!UICONTROL 添加的记录数]** | 在选定日期范围内添加到连接的数据集记录（行）数。 |
 | **[!UICONTROL 跳过的记录数]** | 在选定日期范围内为连接传输数据期间跳过的数据集记录（行）数。 |
 | **[!UICONTROL 添加的批次数]** | 已添加到连接的批次数。 |
@@ -393,5 +484,5 @@ ht-degree: 72%
 >[!MORELIKETHIS]
 >
 >[查看、排查和修改连接设置](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja)教程
->&#x200B;>[管理您的 Customer Journey Analytics 使用情况](/help/technotes/estimate-usage.md)
+>>[管理您的 Customer Journey Analytics 使用情况](/help/technotes/estimate-usage.md)
 >
