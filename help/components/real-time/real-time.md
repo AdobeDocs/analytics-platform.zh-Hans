@@ -7,9 +7,9 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta 版"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: e7a7a297e303a410c73598f373219644e50ede74
+source-git-commit: 34dfbc98acecf1ca953434a7d1f0547ff45139a8
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '471'
 ht-degree: 1%
 
 ---
@@ -54,5 +54,8 @@ Customer Journey Analytics实时报表的实时方面被定义为从通过关联
 * 实时报表仅报告滚动时段24小时内的可用数据。 超过此滚动24小时期间的数据不可用。
 * 归因、分段、计算量度等仅适用于滚动时段（24小时）内的可用数据。
 * 实时报表最适用于事件和会话级别的数据，因此，在对人员级别的数据使用实时报表时应当谨慎。 <!--Need to explain this a bit better -->由于实时报表仅提供滚动的24小时周期中的事件，因此人员的事件历史记录也仅限于此时段。 选择维度(（计算）量度时，请考虑事件和会话级别数据的首选项。 当您在启用实时刷新的面板中使用划分、下一个或上一个以及更多等功能时。
-* 您不能将拼合与实时报表结合使用。 <!-- Do we need to explain this in more detail, why? -->如上所述，实时报告涉及的是事件和会话级别的数据，而不是基于人员的数据。
+* 您不能将拼合与实时报表结合使用。 <!-- Do we need to explain this in more detail, why? -->实时报表与事件和会话级别的数据有关，而与基于人员的数据不太相关。
 * 除媒体开始和媒体关闭量度外，没有可用的心跳收集媒体量度。 因此，您仍然可以使用实时报表来启用媒体用例。
+* 使用[下载或导出选项](/help/analysis-workspace/export/download-send.md)下载项目或从自由格式表中导出数据时，请考虑以下事项：
+   * 下载的CSV项目或导出的CSV文件包含下载或导出时可用的实时数据。
+   * 下载的PDF项目包含非实时数据，类似于禁用实时刷新时显示的数据。
