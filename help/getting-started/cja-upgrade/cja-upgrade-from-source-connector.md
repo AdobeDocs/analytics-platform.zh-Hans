@@ -5,8 +5,8 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: ht
+source-git-commit: 5faf9668475818773c645b69915ddd5182500aea
+workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 100%
 
@@ -53,9 +53,6 @@ ht-degree: 100%
 1. [为 Analytics 源连接器创建 XDM 架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)。
 
 1. 将 Analytics 源连接器中的每个 Adobe Analytics 维度映射到 Web SDK 架构中的维度。
-
-   1. &#x200B;
-      <!-- how do you get here -->
 
    1. 在&#x200B;**[!UICONTROL 映射标准字段]**&#x200B;部分中，选择&#x200B;**[!UICONTROL 自定义]**&#x200B;选项卡。
 
