@@ -11,8 +11,8 @@ user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 
 breadcrumb-title: Customer Journey Analytics 指南
 source-git-commit: 830e8312b4be2ffac907baca282ce71029e6ecc5
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
