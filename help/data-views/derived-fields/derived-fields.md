@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 830e8312b4be2ffac907baca282ce71029e6ecc5
+source-git-commit: 076178ac133227ed18ccaee4f7524c302fd9554b
 workflow-type: tm+mt
-source-wordcount: '9937'
-ht-degree: 91%
+source-wordcount: '10009'
+ht-degree: 90%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 91%
 
 派生字段是 Adobe Customer Journey Analytics 中实时报告功能的一个重要方面。通过派生字段和可自定义的规则生成器，即可迅速定义（一般较为复杂的）数据操作。然后，您可以将该派生字段用作[工作区](../../analysis-workspace/home.md)中的组件（量度或维度），甚至可以进一步将该派生字段定义为[数据视图](../data-views.md)中的组件。
 
-与在 Customer Journey Analytics 之外的其他位置转换或操作数据相比，派生字段可以节省大量时间和精力。例如[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)、[数据蒸馏器](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=zh-Hans)，或者在您自己的提取转换加载 (ETL) / 提取加载转换 (ELT) 流程中。
+与在 Customer Journey Analytics 之外的其他位置转换或操作数据相比，派生字段可以节省大量时间和精力。例如[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html)、[数据蒸馏器](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html)，或者在您自己的提取转换加载 (ETL) / 提取加载转换 (ELT) 流程中。
 
 派生字段是在[数据视图](../data-views.md)中定义的，它们基于一组定义为规则的函数，并会应用于可用的标准和/或架构字段。
 
@@ -643,7 +643,7 @@ ht-degree: 91%
 
 ## 更多信息 {#casewhen-more-info}
 
-Customer Journey Analytics 使用嵌套的容器结构，该结构仿照的是 Adobe Experience Platform 的 [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans)（体验数据模型）。有关更多背景信息，请参阅[容器](../create-dataview.md#containers)和[区段容器](/help/components/segments/seg-overview.md#containers)。 这种容器模型虽然本质上很灵活，但在使用规则生成器时会施加一些约束。
+Customer Journey Analytics 使用嵌套的容器结构，该结构仿照的是 Adobe Experience Platform 的 [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)（体验数据模型）。有关更多背景信息，请参阅[容器](../create-dataview.md#containers)和[区段容器](/help/components/segments/seg-overview.md#containers)。 这种容器模型虽然本质上很灵活，但在使用规则生成器时会施加一些约束。
 
 Customer Journey Analytics 使用以下默认容器模型：
 
@@ -937,6 +937,10 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 ![日期数学规则2](assets/datemath-2.png)的屏幕截图
 
+或者，您可以使用方便的动态日期范围值“现在”在现在和[!UICONTROL 本地时间]（从事件数据集的[!UICONTROL placeContext]字段组）之间计算
+
+![日期数学规则2a](assets/datemath-2a.png)的屏幕截图
+
 
 ## 用例 3 {#datemath-uc3}
 
@@ -989,7 +993,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 ### 派生字段 {#deduplicate-uc1-derivedfield}
 
-您定义一个 `Booking Confirmation` 派生字段。您可以使用 [!UICONTROL DEDUPLICATE] 函数定义一条规则，以使用[!UICONTROL 重复数据删除 ID] [!UICONTROL 预订确认 ID &#x200B;]对[!UICONTROL 范围] [!DNL Person] 的[!UICONTROL 值] [!DNL Booking] 进行重复数据删除。您可以选择[!UICONTROL 保留第一个实例]作为[!UICONTROL 要保留的值]。
+您定义一个 `Booking Confirmation` 派生字段。您可以使用 [!UICONTROL DEDUPLICATE] 函数定义一条规则，以使用[!UICONTROL 重复数据删除 ID] [!UICONTROL 预订确认 ID ]对[!UICONTROL 范围] [!DNL Person] 的[!UICONTROL 值] [!DNL Booking] 进行重复数据删除。您可以选择[!UICONTROL 保留第一个实例]作为[!UICONTROL 要保留的值]。
 
 ![连接规则的屏幕快照](assets/deduplicate-1.png)
 
@@ -1049,7 +1053,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 >title="深度"
 >abstract="此函数可用于返回任意字段的深度，其功能类似于事件深度标准组件。"
 
-返回字段的深度，类似于现成可用的标准事件深度维度[&#128279;](/help/components/dimensions/overview.md#standard-dimensions)。
+返回字段的深度，类似于现成可用的标准事件深度维度[](/help/components/dimensions/overview.md#standard-dimensions)。
 
 +++ 详细信息
 
@@ -1062,29 +1066,20 @@ Customer Journey Analytics 使用以下默认容器模型：
 {style="table-layout:auto"}
 
 
-<!--
-## Example Data {#depth-example}
-
-| event# | page name | search | product view | cart add  | order |
-|:---:|---|:---:|:---:|:---:|:---:|
-| 1 |  home page        |  0  | 0  | 0  | 0 |
-| 2 |  search page      |  1  | 0  | 0  | 0 |
-| 3 |  product page     |  0  | 0  | 0  | 0 |
-| 4 |  cart page        |  0  | 0  | 1  | 0 |
-| 5 |  confirmation     |  0  | 0  | 0  | 1 |
-
--->
-
 ## 用例 {#depth-uc1}
 
-您希望了解搜索深度（您也可以将其解释为搜索次数）。 因此，您可以稍后使用该搜索深度查找与特定搜索深度关联的搜索词。
+您希望了解内部搜索深度（您也可以将其解释为搜索次数）。 因此，您可以稍后使用该内部搜索深度来细分与特定搜索深度关联的搜索词。
 
 
 ### 派生字段 {#depth-uc1-derivedfield}
 
-您可以定义一个新的 `Search Depth` 派生字段。您使用[!UICONTROL DEPTH]函数定义规则以检索[!UICONTROL Search]的深度并将其存储在新的派生字段中。
+您可以定义一个新的 `Internal Search Depth` 派生字段。您使用[!UICONTROL DEPTH]函数定义规则以检索[!UICONTROL 内部搜索项]的深度并将其存储在新的派生字段中。
 
 深度规则![屏幕截图](assets/depth-1.png)
+
+然后，在可视化图表中使用新派生的字段，以细分在第一次搜索时用于搜索的词条。
+
+深度规则![屏幕截图](assets/depth-1a.png)
 
 +++
 
@@ -1220,7 +1215,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 1. 从选择器中选择&#x200B;**[!UICONTROL 架构字段]**。
 1. 选择 ![架构字段图标](assets/Smock_Folder_18_N.svg) **[!UICONTROL 查找数据集]**。
 1. 选择您的查找数据集，并找到您想要用于查找的字段。
-1. 将查找字段拖放到函数的任何可用输入字段上（例如 Case When）。当该功能有效时，一个标有 **[!UICONTROL + 添加]**&#x200B;的蓝色框会允许您拖放字段，并自动在您放置查找字段的函数之前插入一个查找函数。所插入的查找函数会自动填充所有字段的相关值。
+1. 将查找字段拖放到函数的任何可用输入字段上（例如 Case When）。当该功能有效时，一个标有 **[!UICONTROL + 添加]**的蓝色框会允许您拖放字段，并自动在您放置查找字段的函数之前插入一个查找函数。所插入的查找函数会自动填充所有字段的相关值。
    ![查找拖动](assets/lookup-drag.png)
 
 +++
@@ -1360,11 +1355,9 @@ Customer Journey Analytics 使用以下默认容器模型：
 - 如果在公式中使用多个静态值，则应使用括号对这些静态值进行分组，这样公式才会有效。例如：
 
    - 此公式返回错误。
-
      ![更多数学信息 4](assets/math-more-info-4.png)
 
    - 这个公式是有效的。
-
      ![更多数学信息 5](assets/math-more-info-5.png)
 
 使用数学函数进行基于点击级别的计算。使用 [Summarize](#summarize) 函数进行基于事件、会话或人员范围的计算。
