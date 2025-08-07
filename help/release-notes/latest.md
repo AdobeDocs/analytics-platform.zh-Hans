@@ -6,7 +6,7 @@ feature: Release Notes
 source-git-commit: 379cf7af9bf6722fd483a9c0639fc6b294c398a4
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 80%
+ht-degree: 99%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 80%
 | ----------- | ---------- | ------- | ---- |
 | **在 Analysis Workspace 项目中添加和查看评论** | Analysis Workspace 中新增的[评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects)可让您在 Analysis Workspace 项目的上下文中分享见解和提出问题。这可以简化有关数据的讨论，使对话保持在正在讨论的数据范围内。您可以 <ul><li>对任何您有权访问的 Analysis Workspace 项目进行评论</li><li>对可视化图表中的特定点进行评论，也可以对项目进行一般性评论</li><li>标记其他用户，将您的评论告知他们</li><li>管理现有评论（编辑、固定、解决等）</li></ul>Customer Journey Analytics 管理员可以[在组织级别禁用评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences)。项目所有者可以[在项目级别禁用评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects)。 | 2025 年 6 月 25 日 | 2025 年 7 月 22 日 <p>（之前为 2025 年 5 月 29 日）</p> |
 | **以 PDF 格式下载的项目将保存到您的工作站** | 当项目以 PDF 格式下载时，文件将被保存到您工作站的下载文件夹中。此前，将项目以 PDF 格式下载时，会在新的浏览器标签页中打开该 PDF，并生成唯一的 URL。（文档链接见下文） | | 2025年8月25日 |
-| **派生字段 — 日期运算函数** | [Date Math](/help/data-views/derived-fields/derived-fields.md#date-math)派生字段函数提供返回两个Date或Date-time字段之间差异的功能。 | 2025年8月4日 | 2025年8月8日 |
-| **派生字段 — 深度函数** | [Depth](/help/data-views/derived-fields/derived-fields.md#depth)派生字段函数提供了返回字段深度的功能，类似于现成可用的标准Event Depth维度。 | 2025年8月4日 | 2025年8月8日 |
-| **派生字段 — 类型转换函数** | [Typecast](/help/data-views/derived-fields/derived-fields.md#typecast)派生字段函数提供动态更改字段类型以及使该字段可用于Customer Journey Analytics中的其他转换的功能。 | 2025年8月4日 | 2025年8月8日 |
+| **派生字段 — 日期运算函数** | [日期运算](/help/data-views/derived-fields/derived-fields.md#date-math)派生字段函数可返回两个日期或日期时间字段之间的差值。 | 2025 年 8 月 4 日 | 2025 年 8 月 8 日 |
+| **派生字段 — 深度函数** | [深度](/help/data-views/derived-fields/derived-fields.md#depth)派生字段函数可返回字段的深度，类似于开箱即用的标准事件深度维度。 | 2025 年 8 月 4 日 | 2025 年 8 月 8 日 |
+| **派生字段 — 类型转换函数** | [类型转换](/help/data-views/derived-fields/derived-fields.md#typecast)派生字段函数可动态更改字段类型，还可使该字段可用于 Customer Journey Analytics 中的其他转换。 | 2025 年 8 月 4 日 | 2025 年 8 月 8 日 |
 
 ## Customer Journey Analytics 中的修复
 
