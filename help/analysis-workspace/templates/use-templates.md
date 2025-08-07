@@ -4,7 +4,7 @@ title: 使用模板
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 1b52969f178a31ef90f1969f3a1637258a480c57
+source-git-commit: df069a7a67c65db9eb70900869495202f63abd05
 workflow-type: tm+mt
 source-wordcount: '20276'
 ht-degree: 97%
@@ -1071,7 +1071,7 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速了解最�
 >abstract="**这可以帮助您**&#x200B;更好地了解客户级别的参与度是呈上升还是下降趋势，比较不同客户之间的活动，以及决定将保留或客户获取工作集中在何处。<br/>**根据您了解的情况，您可能**&#x200B;会执行任意数量的操作，例如，将您的注意力重新集中到参与度较低但由于帐户的重要性而需要更多关注的帐户上。"
 
 >[!CONTEXTUALHELP]
->id="cja-template--b2b-opportunity-enagement"
+>id="cja-template--b2b-opportunity-engagement"
 >title="在机会级别跟踪参与情况，发现交易赢得或失去吸引力。"
 >abstract="**这可以帮助您**&#x200B;更准确地预测交易进展，并将支持重点放在参与高峰或停滞的地方。<br/>**根据您了解的情况，您可能**&#x200B;会执行任意数量的操作，例如，对几乎已结束的交易进行额外的操作，并研究为什么其他交易会失去吸引力。"
 
