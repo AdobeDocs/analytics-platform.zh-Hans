@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 076178ac133227ed18ccaee4f7524c302fd9554b
+source-git-commit: b33cb232a552f44ebf71246430b1479d9f639f37
 workflow-type: tm+mt
-source-wordcount: '10009'
+source-wordcount: '10001'
 ht-degree: 90%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 90%
 
 派生字段是 Adobe Customer Journey Analytics 中实时报告功能的一个重要方面。通过派生字段和可自定义的规则生成器，即可迅速定义（一般较为复杂的）数据操作。然后，您可以将该派生字段用作[工作区](../../analysis-workspace/home.md)中的组件（量度或维度），甚至可以进一步将该派生字段定义为[数据视图](../data-views.md)中的组件。
 
-与在 Customer Journey Analytics 之外的其他位置转换或操作数据相比，派生字段可以节省大量时间和精力。例如[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)、[数据蒸馏器](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=zh-Hans)，或者在您自己的提取转换加载 (ETL) / 提取加载转换 (ELT) 流程中。
+与在 Customer Journey Analytics 之外的其他位置转换或操作数据相比，派生字段可以节省大量时间和精力。例如[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html)、[数据蒸馏器](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html)，或者在您自己的提取转换加载 (ETL) / 提取加载转换 (ELT) 流程中。
 
 派生字段是在[数据视图](../data-views.md)中定义的，它们基于一组定义为规则的函数，并会应用于可用的标准和/或架构字段。
 
@@ -643,7 +643,7 @@ ht-degree: 90%
 
 ## 更多信息 {#casewhen-more-info}
 
-Customer Journey Analytics 使用嵌套的容器结构，该结构仿照的是 Adobe Experience Platform 的 [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans)（体验数据模型）。有关更多背景信息，请参阅[容器](../create-dataview.md#containers)和[区段容器](/help/components/segments/seg-overview.md#containers)。 这种容器模型虽然本质上很灵活，但在使用规则生成器时会施加一些约束。
+Customer Journey Analytics 使用嵌套的容器结构，该结构仿照的是 Adobe Experience Platform 的 [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)（体验数据模型）。有关更多背景信息，请参阅[容器](../create-dataview.md#containers)和[区段容器](/help/components/segments/seg-overview.md#containers)。 这种容器模型虽然本质上很灵活，但在使用规则生成器时会施加一些约束。
 
 Customer Journey Analytics 使用以下默认容器模型：
 
@@ -993,7 +993,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 ### 派生字段 {#deduplicate-uc1-derivedfield}
 
-您定义一个 `Booking Confirmation` 派生字段。您可以使用 [!UICONTROL DEDUPLICATE] 函数定义一条规则，以使用[!UICONTROL 重复数据删除 ID] [!UICONTROL 预订确认 ID &#x200B;]对[!UICONTROL 范围] [!DNL Person] 的[!UICONTROL 值] [!DNL Booking] 进行重复数据删除。您可以选择[!UICONTROL 保留第一个实例]作为[!UICONTROL 要保留的值]。
+您定义一个 `Booking Confirmation` 派生字段。您可以使用 [!UICONTROL DEDUPLICATE] 函数定义一条规则，以使用[!UICONTROL 重复数据删除 ID] [!UICONTROL 预订确认 ID ]对[!UICONTROL 范围] [!DNL Person] 的[!UICONTROL 值] [!DNL Booking] 进行重复数据删除。您可以选择[!UICONTROL 保留第一个实例]作为[!UICONTROL 要保留的值]。
 
 ![连接规则的屏幕快照](assets/deduplicate-1.png)
 
@@ -1053,7 +1053,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 >title="深度"
 >abstract="此函数可用于返回任意字段的深度，其功能类似于事件深度标准组件。"
 
-返回字段的深度，类似于现成可用的标准事件深度维度[&#128279;](/help/components/dimensions/overview.md#standard-dimensions)。
+返回字段的深度，类似于现成可用的标准事件深度维度[](/help/components/dimensions/overview.md#standard-dimensions)。
 
 +++ 详细信息
 
@@ -1215,7 +1215,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 1. 从选择器中选择&#x200B;**[!UICONTROL 架构字段]**。
 1. 选择 ![架构字段图标](assets/Smock_Folder_18_N.svg) **[!UICONTROL 查找数据集]**。
 1. 选择您的查找数据集，并找到您想要用于查找的字段。
-1. 将查找字段拖放到函数的任何可用输入字段上（例如 Case When）。当该功能有效时，一个标有 **[!UICONTROL + 添加]**&#x200B;的蓝色框会允许您拖放字段，并自动在您放置查找字段的函数之前插入一个查找函数。所插入的查找函数会自动填充所有字段的相关值。
+1. 将查找字段拖放到函数的任何可用输入字段上（例如 Case When）。当该功能有效时，一个标有 **[!UICONTROL + 添加]**的蓝色框会允许您拖放字段，并自动在您放置查找字段的函数之前插入一个查找函数。所插入的查找函数会自动填充所有字段的相关值。
    ![查找拖动](assets/lookup-drag.png)
 
 +++
@@ -1355,11 +1355,9 @@ Customer Journey Analytics 使用以下默认容器模型：
 - 如果在公式中使用多个静态值，则应使用括号对这些静态值进行分组，这样公式才会有效。例如：
 
    - 此公式返回错误。
-
      ![更多数学信息 4](assets/math-more-info-4.png)
 
    - 这个公式是有效的。
-
      ![更多数学信息 5](assets/math-more-info-5.png)
 
 使用数学函数进行基于点击级别的计算。使用 [Summarize](#summarize) 函数进行基于事件、会话或人员范围的计算。
@@ -1929,7 +1927,7 @@ Customer Journey Analytics 使用 Perl 正则表达式语法的子集。支持�
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>数值</li><li>日期</li><li>日期时间</li><li>字符串</li></ul> | <ul><li>[!UICONTROL 字段] | <p><ul><li>整数<ul><li>到字符串<strong>（必须）</strong></li></ul></li><li>双线<ul><li>到字符串<strong>（必须）</strong><ul><li>包含要继承的小数位数（最多5位？）</li></ul></li><li>到整数<strong>（应该）</strong></li></ul></li><li>字节<ul><li>到字符串<strong>（必须）</strong></li></ul></li><li>长型<ul><li>到字符串<strong>（必须）</strong></li></ul></li><li>日期<ul><li>到字符串<strong>（必须）</strong><ul><li>提供定义输出格式的功能</li></ul></li><li>示例<ul><li>日期（例如2025年1月7日）<ul><li data-stringify-indent="1" data-stringify-border="0">MM-DD-YY<ul><li data-stringify-indent="2" data-stringify-border="0">例如 01-07-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM-DD-YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">例如 01-07-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-YY<ul><li data-stringify-indent="2" data-stringify-border="0">例如 07-01-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">例如 07-01-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例如 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例如 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/YY<ul><li data-stringify-indent="2" data-stringify-border="0">例如 01/07/25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例如 01/07/2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例如 2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例如 25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MMM DD, YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">例如 2025年1月7日</li></ul></li></ul></li></ul></li></ul></li><li>日期时间<ul><li>到字符串<strong>（必须）</strong><ul><li>提供定义输出格式的功能</li></ul></li><li>示例<ul><li data-stringify-indent="0" data-stringify-border="0">日期时间（例如2025年1月7日，1:30pm，52秒）<ul><li data-stringify-indent="2" data-stringify-border="0">月/日/年时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">例如 01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY年MM月DD日hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例如 01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例如 07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">日-月-年时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">例如 07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">年/月/日时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">例如 25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">年-月-日时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">例如 2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">月/日/年时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">例如 01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">月-日-年时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">例如 01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">年-月-日时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">例如 2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY/MM/DD hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">例如 25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY 年 MM 月 DD 日时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">例如 2025年1月7日13:30:52</li></ul></li></ul></li></ul></li><li>字符串<ul><li>到数字<strong>（应该）</strong><ul><li>如果我们具有的值本质上不是数字，则它们将返回空值。</li><li>我们需要用户输入精度和要使用的区域设置。 </li></ul></li></ul></li></ul></li></ul></p> | <p>每个派生字段有 3 个函数</p> | <p>新的派生字段</p> |
+| <ul><li>数值</li><li>日期</li><li>日期时间</li><li>字符串</li></ul> | <ul><li>[!UICONTROL 字段] | <p><ul><li>整数<ul><li>目标字符串</li></ul></li><li>双线<ul><li>目标字符串<ul><li>包含要继承的小数位数（最多5位？）</li></ul></li><li>到整数</li></ul></li><li>字节<ul><li>目标字符串</li></ul></li><li>长型<ul><li>目标字符串</li></ul></li><li>日期<ul><li>目标字符串<ul><li>提供定义输出格式的功能</li></ul></li><li>示例<ul><li>日期（例如2025年1月7日）<ul><li data-stringify-indent="1" data-stringify-border="0">MM-DD-YY<ul><li data-stringify-indent="2" data-stringify-border="0">例如 01-07-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM-DD-YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">例如 01-07-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-YY<ul><li data-stringify-indent="2" data-stringify-border="0">例如 07-01-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">例如 07-01-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例如 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例如 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/YY<ul><li data-stringify-indent="2" data-stringify-border="0">例如 01/07/25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例如 01/07/2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例如 2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例如 25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MMM DD, YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">例如 2025年1月7日</li></ul></li></ul></li></ul></li></ul></li><li>日期时间<ul><li>目标字符串<ul><li>提供定义输出格式的功能</li></ul></li><li>示例<ul><li data-stringify-indent="0" data-stringify-border="0">日期时间（例如2025年1月7日，1:30pm，52秒）<ul><li data-stringify-indent="2" data-stringify-border="0">月/日/年时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">例如 01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY年MM月DD日hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例如 01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例如 07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">日-月-年时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">例如 07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">年/月/日时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">例如 25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">年-月-日时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">例如 2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">月/日/年时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">例如 01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">月-日-年时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">例如 01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">年-月-日时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">例如 2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY/MM/DD hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">例如 25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY 年 MM 月 DD 日时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">例如 2025年1月7日13:30:52</li></ul></li></ul></li></ul></li><li>字符串<ul><li>到数字<ul><li>如果我们具有的值本质上不是数字，则它们将返回空值。</li><li>我们需要用户输入精度和要使用的区域设置。 </li></ul></li></ul></li></ul></li></ul></p> | <p>每个派生字段有 3 个函数</p> | <p>新的派生字段</p> |
 
 {style="table-layout:auto"}
 
