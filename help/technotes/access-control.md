@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: 8da8d22d35e0b4a77da010d0ba5fb230946ccce5
 workflow-type: tm+mt
-source-wordcount: '1549'
-ht-degree: 16%
+source-wordcount: '1560'
+ht-degree: 17%
 
 ---
 
@@ -49,7 +49,7 @@ Customer Journey Analytics由三个访问级别或三个角色控制：产品管
 
 #### 产品管理员其他权限
 
-除了在[Admin Console](https://adminconsole.adobe.com/enterprise/)的&#x200B;**Customer Journey Analytics产品配置文件**&#x200B;中添加为产品管理员外，还需要其他权限才能在Customer Journey Analytics中完成以下任务：
+除了在&#x200B;**Admin Console**&#x200B;的[Customer Journey Analytics产品配置文件](https://adminconsole.adobe.com/enterprise/)中添加为产品管理员外，还需要其他权限才能在Customer Journey Analytics中完成以下任务：
 
 * 创建、更新和删除数据[连接](/help/connections/overview.md)
 
@@ -57,6 +57,7 @@ Customer Journey Analytics由三个访问级别或三个角色控制：产品管
 
   | 类别 | 权限 | 描述 |
   |---|---|---|
+  | [!UICONTROL 沙盒] | [!UICONTROL 至少一个] | 访问CJA连接的相关沙盒。 |
   | [!UICONTROL 数据建模] | [!UICONTROL 查看架构] | 对架构和相关资源的只读访问权限。 |
   | [!UICONTROL 数据建模] | [!UICONTROL 管理架构] | 有权读取、创建、编辑和删除架构和相关资源。 |
   | [!UICONTROL 数据管理] | [!UICONTROL 查看数据集] | 对数据集和架构的只读访问权限。 |
@@ -64,7 +65,7 @@ Customer Journey Analytics由三个访问级别或三个角色控制：产品管
   | [!UICONTROL 数据获取] | [!UICONTROL 管理源] | 有权读取、创建、编辑和禁用源。 |
   | [!UICONTROL Identity Management] | [!UICONTROL 查看身份命名空间] | 对身份命名空间的只读访问。 |
 
-  有关Experience Platform权限的详细信息，请参阅[管理产品配置文件的权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/ui/permissions)。
+  有关Experience Platform权限的详细信息，请参阅[管理产品配置文件的权限](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions)。
 
 
 * 如果Adobe Journey Optimizer与存在AJO连接的CJA集成，则还必须添加历程权限才能访问连接：
@@ -85,13 +86,13 @@ Customer Journey Analytics由三个访问级别或三个角色控制：产品管
   | [!UICONTROL 目标] | [!UICONTROL 管理目标] | 读取、创建和删除目标连接和目标帐户的权限。 |
   | [!UICONTROL 目标] | [!UICONTROL 激活目标] | 允许用户将区段激活到现有目标。 在激活工作流中启用映射步骤。 此权限还要求向想要将数据激活到目标的用户授予“查看目标”权限。 |
 
-  有关Experience Platform权限的详细信息，请参阅[管理产品配置文件的权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/ui/permissions)。
+  有关Experience Platform权限的详细信息，请参阅[管理产品配置文件的权限](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions)。
 
 * 使用[BI扩展](../data-views/bi-extension.md)
 
   对于要使用BI扩展的用户，请使用产品管理员
 
-   * 必须确保用户的Experience Platform权限包括具有查询服务资源的角色，该资源具有“管理查询”和“管理查询服务集成”选项。 有关Experience Platform权限的详细信息，请参阅[管理产品配置文件的权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/ui/permissions)。
+   * 必须确保用户的Experience Platform权限包括具有查询服务资源的角色，该资源具有“管理查询”和“管理查询服务集成”选项。 有关Experience Platform权限的详细信息，请参阅[管理产品配置文件的权限](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions)。
 
      | 类别 | 权限 | 描述 |
      |---|---|---| 
@@ -99,8 +100,8 @@ Customer Journey Analytics由三个访问级别或三个角色控制：产品管
      | [!UICONTROL 查询服务] | [!UICONTROL 管理查询服务集成] | 访问创建、更新和删除未过期的凭据以访问查询服务。 |
 
    * 必须确保用户具有适当的Customer Journey Analytics权限：
-      * 相关数据视图的访问权限。 在[用户级访问](#user-level-access)中查看[!UICONTROL 数据视图]。
-      * 访问Customer Journey Analytics BI扩展的权限。 在[用户级访问](#user-level-access)中查看[!UICONTROL 数据视图工具]。
+      * 相关数据视图的访问权限。 在[!UICONTROL 用户级访问]中查看[数据视图](#user-level-access)。
+      * 访问Customer Journey Analytics BI扩展的权限。 在[!UICONTROL 用户级访问]中查看[数据视图工具](#user-level-access)。
 
 ### 产品配置文件管理员角色
 
@@ -130,7 +131,7 @@ Customer Journey Analytics由三个访问级别或三个角色控制：产品管
 | [!UICONTROL 报告工具] | [!UICONTROL 受众视图] | 允许用户查看[受众](/help/components/audiences/audiences-overview.md)。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 受众创建] | 允许用户创建[受众](/help/components/audiences/audiences-overview.md)。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 审核日志访问] | 强制对[API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/)和审核日志UI进行权限检查。 |
-| [!UICONTROL 报告工具] | [!UICONTROL 与任何人共享项目链接] | 允许用户[与任何人共享项目。](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
+| [!UICONTROL 报告工具] | [!UICONTROL 与任何人共享项目链接] | 允许用户[与任何人共享项目。](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
 | [!UICONTROL 报告工具] | [!UICONTROL 预测] | 允许用户访问Analysis Workspace中的[Forecasting](../analysis-workspace/c-forecast/forecasting.md)功能 |
 | [!UICONTROL 报告工具] | [!UICONTROL AI 助手：产品知识] | 允许用户访问[AI助手](../ai-assistant.md)以了解产品知识。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 智能题注] | 允许用户访问[智能字幕](/help/analysis-workspace/visualizations/intelligent-captions.md)。 |
