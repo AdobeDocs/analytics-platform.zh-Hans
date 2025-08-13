@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 144caa157e1a7161595e2b4fc0da60cd63de50bd
-workflow-type: ht
-source-wordcount: '2694'
-ht-degree: 100%
+source-git-commit: 7f44c7497a48e8377ca26cb194f828c3c8836f98
+workflow-type: tm+mt
+source-wordcount: '2709'
+ht-degree: 98%
 
 ---
 
@@ -102,7 +102,7 @@ ht-degree: 100%
 | **登录、退出和花费时间维度和量度** | 受支持（现在“进入次数”和“退出次数”称为“会话启动次数”和“会话结束次数”），但计算方式略有不同。 |
 | **eVar 持久性设置** | Customer Journey Analytics 中不再包括 eVar。但是，持久性设置现在是数据视图的一部分，且可用于所有维度。请记住，持久基于报告时处理，而不是数据收集处理。数据视图中的纬度集限制为 90 天最大持久性，不支持无限持久性。 |
 | **地理分段维度** | [全面支持](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure) |
-| **基于图形的拼合** | 通过 [基于图形的拼合](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/stitching/overview#graph-based-stitching)，您可以利用 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home) 中身份图的强大功能将数据集提升到其首选身份。 |
+| **基于图形的拼合** | 通过 [基于图形的拼合](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/stitching/overview#graph-based-stitching)，您可以利用 [Adobe Experience Platform 身份标识服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home) 中身份图的强大功能将数据集提升到其首选身份。 |
 | **警报** | 在 Customer Journey Analytics 中使用[警报](/help/components/c-intelligent-alerts/intelligent-alerts.md)的过程与在 Adobe Analytics 中使用警报的过程几乎相同。但是，有一些[重要的不同之处](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/alerts/alerts-feature-comparison)。 |
 | **IP 模糊处理** | 对于 Customer Journey Analytics 用户，在使用 Analytics 源连接器将 Adobe Analytics 数据导入 Customer Journey Analytics 时，Adobe Analytics 中应用的 IP 混淆设置会传递至 Customer Journey Analytics 数据中。您可以根据需要在 Adobe Analytics 中控制这些设置。<p>对于使用 Experience Platform Web SDK 将数据直接填充到 Platform 和 Customer Journey Analytics 中的 Customer Journey Analytics 客户。您可以使用 Platform 中的“数据收集数据准备”功能根据您公司的要求配置混淆 IP 地址的规则。 |
 | **营销渠道** | 使用 Analytics Source Connector 时，“营销渠道”数据会通过该连接器流入 Customer Journey Analytics。在传统的 Adobe Analytics 中配置营销渠道规则，其中不支持某些规则。有关更多信息，请参阅 [Customer Journey Analytics 营销渠道](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels)。<br/>对于 WebSDK 实施，通过[派生字段](../../data-views/derived-fields/derived-fields.md)支持报告时营销渠道处理规则。 |
@@ -112,9 +112,10 @@ ht-degree: 100%
 | **处理规则、VISTA 规则、营销渠道处理规则** | 支持使用 Adobe Experience Platform 数据准备功能以及基于 WebSDK 的数据集和 Analytics Source Connector 的数据的[派生字段。](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/derived-fields) |
 | **Products 变量** | 在 Experience Platform 中，用户可在数据集架构中使用对象数组满足此用例。在 Customer Journey Analytics 中，客户可使用任意数量的产品变量，而不像在 Adobe Analytics 中那样只能使用一个变量。 |
 | **项目共享** | 仅在 Customer Journey Analytics 的用户之间支持项目共享功能 - 在 Customer Journey Analytics 与传统 Analysis Workspace 之间无项目共享。 |
+| **实时报告** | Customer Journey Analytics中的实时报表可实时显示和更新Analysis Workspace中一个或多个面板的数据和可视化图表。 |
 | **Report Builder** | 通过一个新的 Office 365 Microsoft Excel 插件支持此功能。 |
 | **用户权限/数据访问控制** | Customer Journey Analytics 区分 [Adobe Admin Console](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/admin-tool-experience-cloud) 产品管理员、产品配置文件管理员和用户。只有产品管理员可以创建、更新和删除其他用户所创建的连接、项目、区段或计算量度。产品管理员和产品轮廓管理员均可编辑数据视图。对于创建计算量度、区段或注释等操作还有其他用户权限可用。 |
-| **可视化图表** | 除地图可视化图表外，支持所有 Workspace 可视化图表。 |
+| **可视化图表** | 支持所有Workspace可视化图表。 |
 | **跨设备/跨渠道拼合** | 支持包含身份标识信息的事件数据集。请参阅[拼合](../../stitching/overview.md)。 |
 
 ## 部分支持 {#partial}
@@ -127,7 +128,6 @@ ht-degree: 100%
 
 | 功能 | 注释 |
 | --- | --- |
-| **实时报告** | 有计划以后支持。 |
 | **交易 ID 数据源** | 有计划以后支持。 |
 
 ## 没有支持，尚未计划提供支持 {#not-planned}
