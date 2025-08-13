@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
-source-git-commit: 20b578a6269aeaf54f6296b1f4337937887ecf05
-workflow-type: ht
-source-wordcount: '604'
-ht-degree: 100%
+source-git-commit: 82b36895fe5186f0133c128d434470ea7f875677
+workflow-type: tm+mt
+source-wordcount: '648'
+ht-degree: 96%
 
 ---
 
@@ -33,13 +33,17 @@ Customer Journey Analytics 的 AI 助手适用于所有产品层。
 
 ## 产品知识 {#knowledge}
 
-产品知识检索模型是在 Customer Journey Analytics 上训练的。数据分析等其他功能将稍后推出。
-
 | 产品知识 | 示例 |
 | --- | --- |
 | 有针对性的学习 | <ul><li>Adobe Analytics 和 Customer Journey Analytics 两者有什么区别？</li><li>如何构建计算量度？</li></ul> |
 | 打开发现 | <ul><li>如何导出 Workspace 项目？</li><li>如何找到重复的 Workspace 组件？</li></ul> |
 | 故障排除 | <ul><li>数据进入 CJA 需要多长时间？</li><li>在一个 Customer Journey Analytics 连接中可以有多少个派生字段？</li></ul> |
+
+## 数据分析
+
+Data Insights 代理可从 Customer Journey Analytics 中的 AI 助手访问，它是一个生成式 AI 对话代理，可以快速有效地回答有关您数据的问题。它使用来自数据视图的组件和您的实际数据在 Analysis Workspace 中构建相关的可视化图表。
+
+有关在AI助手中使用Data Insights Agent的更多信息，请参阅[使用Data Insights Agent可视化数据](/help/data-analysis-ai.md)。
 
 ## 功能访问权限
 
