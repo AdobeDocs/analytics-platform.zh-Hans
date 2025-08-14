@@ -4,9 +4,9 @@ title: 地图
 feature: Visualizations
 role: User, Admin
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: 0aac2739e03044c03a2561535846f1355054f45f
+source-git-commit: 71d5326f5d80f196504178855dacdf01f60fb81c
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2761'
 ht-degree: 11%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中的地图可视化图表。_<br/>_查看本文的[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)版本的&#x200B;_&#x200B;**映射**。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的地图可视化图表。_<br/>_查看本文的[ ](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)版本的&#x200B;_**映射**。_
 
 >[!ENDSHADEBOX]
 
@@ -96,7 +96,7 @@ Analysis Workspace中的![全球](/help/assets/icons/Globe.svg) **[!UICONTROL �
 
 #### 地理模板所需的上下文标签
 
-Adobe提供了多个[预建模板](/help/analysis-workspace/templates/use-templates.md#web-audience)，这些模板使用地图可视化图表。 要使用每个模板，必须将相应的上下文标签添加到数据视图中的维度。
+Adobe提供了多个[预建模板](/help/analysis-workspace/templates/use-templates.md#web-audience)，这些模板使用地图可视化图表。 要使用每个模板，必须将相应的上下文标签添加到数据视图中的维。
 
 以下是模板和所需的上下文标签。 如果没有这些标签，模板将无法工作，因为没有可用的地理数据。
 
@@ -112,13 +112,13 @@ Adobe提供了多个[预建模板](/help/analysis-workspace/templates/use-templa
 
 1. 在Customer Journey Analytics中，选择&#x200B;**[!UICONTROL 数据管理]** > **[!UICONTROL 数据视图]**。
 
-1. 在数据视图页面上，选择包含您要使用使用地图可视化图表的预建模板分析的数据视图。 在这个数据视图中，您将选择5个维度，一个包含国家/地区数据，一个包含城市数据，一个包含州数据，一个包含DMA数据。 然后，您将使用相应的上下文标签来标记这些维度。
+1. 在数据视图页面上，选择包含您要使用使用地图可视化图表的预建模板分析的数据视图。 在此数据视图中，选择五个维度：一个包含国家/地区数据，一个包含城市数据，一个包含州数据，一个包含DMA数据。 然后，使用相应的上下文标签来标记这些维度。
 
 1. 选择&#x200B;**[!UICONTROL “组件”]**&#x200B;选项卡。
 
 1. （视情况而定）如果您使用Web SDK，并且已配置要在数据流中填充的地理字段，或者如果您使用Analytics Source Connector来填充事件数据，则地理字段应该已可在您的架构中使用并填充了正确的上下文标签。
 
-   找到相应的架构字段，如&#x200B;**[!UICONTROL 城市]**、**[!UICONTROL 邮政编码]**、**[!UICONTROL 州或省]**（在&#x200B;**[!UICONTROL 事件数据集]** > **[!UICONTROL placeContext]** > **[!UICONTROL 地域]**），并将其作为维度拖动到您的数据视图中（如果它们尚不存在）。
+   找到相应的架构字段，如&#x200B;**[!UICONTROL 城市]**、**[!UICONTROL 邮政编码]**、**[!UICONTROL 州或省]**（在&#x200B;**[!UICONTROL 事件数据集]** > **[!UICONTROL placeContext]** > **[!UICONTROL 地域]**），然后将这些字段作为维度拖动到您的数据视图中（如果它们尚不存在）。
 
    当这些架构字段作为维度存在于您的数据视图中时，其上下文标签会自动应用，并且地理模板无需任何其他配置即可使用它们。
 
@@ -153,7 +153,7 @@ Customer Journey Analytics中的地图可视化图表与Adobe Analytics中的地
 | 从选定范围中创建趋势 | 根据您在地图可视化图表中选择的特定区域创建趋势折线图可视化图表。 <p>有关详细信息，请参阅[从地图可视化图表创建趋势线形图](#create-a-trended-line-chart-from-the-map-visualization)。<!-- is this correct? --> | 无法从地图可视化图表创建趋势。 |
 | 从选定范围中添加划分 | 在地图可视化图表中选择的特定区域中划分特定维度项目、量度、区段或日期范围。 <p>有关详细信息，请参阅[从地图可视化图表添加划分](#add-a-breakdown-from-the-map-visualization)。 | 无法从地图可视化添加划分。 |
 
-## 开始构建地图可视化图表 {#begin-building-map}
+## 构建地图可视化 {#begin-building-map}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -185,7 +185,7 @@ Customer Journey Analytics中的地图可视化图表与Adobe Analytics中的地
 
    * **[!UICONTROL 添加区段]**：（可选）在区段下拉列表中，选择一个区段。 或者从区段列表中拖动区段。
 
-   在构建可视化图表后，您可以通过选择可视化图表标题中的编辑图标![编辑](/help/assets/icons/Edit.svg)来更新此信息。
+   在构建可视化图表后，您可以通过选择可视化图表标题中的“编辑”图标![编辑](/help/assets/icons/Edit.svg)来更新此信息。
 
 1. 选择&#x200B;**[!UICONTROL 生成]**。
 
@@ -197,7 +197,7 @@ Customer Journey Analytics中的地图可视化图表与Adobe Analytics中的地
 
 ## 查看地图可视化
 
-1. 如果您尚未这样做，请按照[开始构建地图可视化图表](#begin-building-a-map-visualization)中的说明构建地图可视化图表。
+1. 如果您尚未这样做，请按照[构建地图可视化图表](#begin-building-a-map-visualization)中的说明构建地图可视化图表。
 
 1. 在Analysis Workspace中的地图可视化中，执行以下任一操作：
 
@@ -221,7 +221,7 @@ Customer Journey Analytics中的地图可视化图表与Adobe Analytics中的地
 
      地图将相应缩放。 将根据缩放级别自动更新所需的维度（国家/地区>州/省>城市）。
 
-   * **旋转**：在用鼠标拖动地图时，按住[!UICONTROL Ctrl]键，可以按2D或3D旋转地图。
+   * **旋转**：在用鼠标拖动地图时按住[!UICONTROL Ctrl]键，可以二维或三维旋转地图。
 
      要将地图重置为原始的北对齐方式，请选择指南针图标![指南针图标](assets/map-compass-icon.png)。
 
@@ -250,7 +250,7 @@ Customer Journey Analytics中的地图可视化图表与Adobe Analytics中的地
 
 要配置地图可视化图表的设置，请执行以下操作：
 
-1. 在Analysis Workspace中，打开现有地图可视化图表，或[开始构建新的可视化图表](#begin-building-a-map-visualization)。
+1. 在Analysis Workspace中，打开现有地图可视化图表，或[构建新的可视化图表](#begin-building-a-map-visualization)。
 
 1. 将鼠标悬停在地图可视化图表上，然后选择可视化图表标题中的“设置”图标![“设置”](/help/assets/icons/Setting.svg)。
 
