@@ -6,10 +6,10 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: f966f8e87af7ac5e1db93307452ffe16bf87fbc9
+source-git-commit: cac5582cd43aa9bc935fadf8a3ba0dab11e7b095
 workflow-type: tm+mt
-source-wordcount: '4612'
-ht-degree: 63%
+source-wordcount: '4712'
+ht-degree: 62%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 63%
 | **[!UICONTROL 数据集]** | 连接中包含的一个或多个数据集链接。您可以选择数据集超链接来查看连接中的数据集。如果选定的连接中包含更多数据集，请选择 **[!UICONTROL +*x* 更多]**，以显示&#x200B;**[!UICONTROL 包含的数据集]**&#x200B;面板。此面板显示指向所有数据集的链接以及![搜索](/help/assets/icons/Search.svg)以搜索作为连接一部分的特定数据集的选项。<p>![数据集已包括](assets/datasets-included.png)<p>选择一个数据集名称，以在新选项卡的Experience Platform界面中打开该数据集。 |
 | **[!UICONTROL 沙盒]** | 此连接从中获取其数据集的 [Experience Platform 沙盒](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sandbox/home)。在创建连接时选择此沙盒。 保存连接后，无法更改沙盒。 |
 | **[!UICONTROL 所有者]** | 创建连接的人员。 |
-| **[!UICONTROL 导入新数据]** | 数据集导入新数据的状态： <p>![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _On]**&#x200B;用于配置为导入新数据的数据集，并且<p>对于未配置为导入新数据的数据集，![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _x 关闭_]**。 |
+| **[!UICONTROL 导入新数据]** | 数据集导入新数据的状态： <p>![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _On]**用于配置为导入新数据的数据集，并且<p>对于未配置为导入新数据的数据集，![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _x 关闭_]**。 |
 | **[!UICONTROL 创建日期]** | 创建连接的时间戳。 |
 | **[!UICONTROL 上次修改时间]** | 上次更新连接的时间戳。 |
 | **[!UICONTROL 回填数据]** | 数据集中回填数据的状态。<p>![状态为红色](assets/status-red.svg)   **[!UICONTROL _x _回填失败]**，表示数据集中回填失败的次数，<p>![状态为橙色](assets/status-orange.svg)   **[!UICONTROL _x _正在处理回填]**，表示数据集中正在处理的回填次数，<p>![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _回填完成]**，数据集中已完成的回填次数，以及<p>如果连接中的数据集未定义回填，则![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _关闭_]**。 |
@@ -155,7 +155,7 @@ ht-degree: 63%
 
 * 在Customer Journey Analytics中对Journey Optimizer数据执行深入分析(通过使用Journey Optimizer中的&#x200B;**[!UICONTROL 在CJA中分析]**&#x200B;按钮)。
 
-  有关详细信息，请参阅Journey Optimizer文档中的[在Customer Journey Analytics中分析](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template)。
+  有关详细信息，请参阅Journey Optimizer文档中的[在Customer Journey Analytics中分析](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template)。
 
 * 编辑Journey Optimizer连接和关联的数据视图。
 
@@ -171,11 +171,15 @@ ht-degree: 63%
 
    1. 在&#x200B;**[!UICONTROL 用于CJA]**&#x200B;部分中，选择&#x200B;**[!UICONTROL 禁用]**。
 
-      这会显示当前未配置为可在Customer Journey Analytics中使用的所有连接。
+      这会显示当前未配置为可在Customer Journey Analytics中使用的所有Journey Optimizer连接。
 
-   1. 选择要在Customer Journey Analytics中使用的Journey Optimizer连接。
+      ![筛选以显示未为AJO启用的连接](assets/remove-ajo-connection.png)
 
-1. 在Journey Optimizer连接中，选择&#x200B;**[!UICONTROL 使用CJA]**。
+1. 要查看连接，请选择要在Customer Journey Analytics中使用的Journey Optimizer连接的名称。
+
+1. 查看Journey Optimizer连接时，选择&#x200B;**[!UICONTROL 在CJA中使用]**。
+
+   ![在CJA中使用按钮](assets/connection-use-in-cja.png)
 
    显示以下&#x200B;**[!UICONTROL 在Customer Journey Analytics中使用此连接]**&#x200B;对话框：
 
@@ -204,7 +208,21 @@ ht-degree: 63%
 
 要从Customer Journey Analytics中删除连接，请执行以下操作：
 
-1. 编辑Journey Optimizer连接时，选择&#x200B;**[!UICONTROL 从CJA中删除]**。
+1. 找到要从Customer Journey Analytics中删除的Journey Optimizer连接。
+
+   1. 选择&#x200B;**[!UICONTROL 连接]**&#x200B;选项卡上的“筛选器”图标。
+
+   1. 在&#x200B;**[!UICONTROL 用于CJA]**&#x200B;部分中，选择&#x200B;**[!UICONTROL On]**。
+
+      这会显示当前配置为在Customer Journey Analytics中使用的所有Journey Optimizer连接。
+
+      ![筛选以显示为AJO启用的连接](assets/enabled-ajo-connection.png)
+
+1. 要查看连接，请选择要从Customer Journey Analytics中删除的Journey Optimizer连接的名称。
+
+1. 查看Journey Optimizer连接时，选择&#x200B;**[!UICONTROL 从CJA中删除]**。
+
+   ![从CJA中删除按钮](assets/connection-remove-from-cja.png)
 
    显示以下&#x200B;**[!UICONTROL 从Customer Journey Analytics中删除此连接]**&#x200B;对话框：
 
@@ -299,13 +317,13 @@ ht-degree: 63%
 
 | 详细信息 | 描述 |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全球帐户 ID &#x200B;]** | 您指定为连接的全局帐户ID的标识。 仅适用于已配置全局帐户容器的基于帐户的连接。 |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户 ID &#x200B;]** | 您指定为连接的帐户ID的身份。 仅适用于未配置全局帐户容器的基于帐户的连接。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全球帐户 ID ]** | 您指定为连接的全局帐户ID的标识。 仅适用于已配置全局帐户容器的基于帐户的连接。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户 ID ]** | 您指定为连接的帐户ID的身份。 仅适用于未配置全局帐户容器的基于帐户的连接。 |
 | **[!UICONTROL 人员 ID]** | 您指定为连接的人员ID的身份。 |
 | **[!UICONTROL 键]** | 您为查找数据集指定的键。 |
 | **[!UICONTROL 匹配键]** | 您为查找数据集指定的匹配键。 |
 | **[!UICONTROL 时间戳]** | 为事件数据集定义的时间戳。 |
-| **[!UICONTROL 可用的记录数]** | 在日程表中选择的特定时间段内，此数据集摄取的总行数。添加数据后，数据立刻在报告中显示，没有延迟。但是，当您创建一个全新的连接时，则会出现[延迟](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq)。 |
+| **[!UICONTROL 可用的记录数]** | 在日程表中选择的特定时间段内，此数据集摄取的总行数。添加数据后，数据立刻在报告中显示，没有延迟。但是，当您创建一个全新的连接时，则会出现[延迟](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq)。 |
 | **[!UICONTROL 添加的记录数]** | 在选定日期范围内添加到连接的数据集记录（行）数。 |
 | **[!UICONTROL 跳过的记录数]** | 在选定日期范围内为连接传输数据期间跳过的数据集记录（行）数。 |
 | **[!UICONTROL 添加的批次数]** | 已添加到连接的批次数。 |
@@ -437,7 +455,7 @@ ht-degree: 63%
 
 * 一个组合面板，显示三个子面板：
 
-+++ 摄取的行数
+  +++ 摄取的行数
 
   **[!UICONTROL 摄取的行数]**&#x200B;子面板衡量每月添加到系统的记录总数，提供有关数据增长和摄取率的洞察。该子面板提供了本月总摄取行数以及与上个月相比的变化的摘要。
 
@@ -445,9 +463,9 @@ ht-degree: 63%
 
   您可以将鼠标悬停在可视化效果中的数据点上，以显示包含更多详细信息的弹出窗口。
 
-+++
+  +++
 
-+++ 可报告行数
+  +++ 可报告行数
 
   **[!UICONTROL 可报告行数]**&#x200B;可视化效果通过从摄取的行数中减去跳过和删除的行数来跟踪可供报告的行数，作为计费和数据使用情况的关键量度。该子面板提供了两个摘要：
 
@@ -458,9 +476,9 @@ ht-degree: 63%
 
   您可以将鼠标悬停在可视化效果中的数据点上，以显示包含更多详细信息的弹出窗口。
 
-+++
+  +++
 
-+++ 详细细分
+  +++ 详细细分
 
   您可以使用&#x200B;**[!UICONTROL 详细细分]**&#x200B;表来按照连接、数据集、沙盒和标记查看详细量度。数据集使用 ID 而不是名称进行报告，因为数据集名称可以在报告期间进行修改。未知的数据集或连接使用 ID 进行报告。
 
@@ -477,12 +495,12 @@ ht-degree: 63%
 
   ![详细细分](assets/usage-detail-breakdown.png)
 
-+++
+  +++
 
   您可以定义以月为单位的&#x200B;**[!UICONTROL 时间范围]**&#x200B;进行报告。使用![日程表](/help/assets/icons/Calendar.svg)来选择时间范围。
 
 >[!MORELIKETHIS]
 >
 >[查看、排查和修改连接设置](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja)教程
->&#x200B;>[管理您的 Customer Journey Analytics 使用情况](/help/technotes/estimate-usage.md)
+>>[管理您的 Customer Journey Analytics 使用情况](/help/technotes/estimate-usage.md)
 >
