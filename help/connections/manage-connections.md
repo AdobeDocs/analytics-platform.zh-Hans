@@ -6,10 +6,10 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: cac5582cd43aa9bc935fadf8a3ba0dab11e7b095
+source-git-commit: 0daca8437312900335826f20614ea8b0c7b49aea
 workflow-type: tm+mt
-source-wordcount: '4712'
-ht-degree: 62%
+source-wordcount: '4695'
+ht-degree: 61%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 62%
 | **[!UICONTROL 数据集]** | 连接中包含的一个或多个数据集链接。您可以选择数据集超链接来查看连接中的数据集。如果选定的连接中包含更多数据集，请选择 **[!UICONTROL +*x* 更多]**，以显示&#x200B;**[!UICONTROL 包含的数据集]**&#x200B;面板。此面板显示指向所有数据集的链接以及![搜索](/help/assets/icons/Search.svg)以搜索作为连接一部分的特定数据集的选项。<p>![数据集已包括](assets/datasets-included.png)<p>选择一个数据集名称，以在新选项卡的Experience Platform界面中打开该数据集。 |
 | **[!UICONTROL 沙盒]** | 此连接从中获取其数据集的 [Experience Platform 沙盒](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sandbox/home)。在创建连接时选择此沙盒。 保存连接后，无法更改沙盒。 |
 | **[!UICONTROL 所有者]** | 创建连接的人员。 |
-| **[!UICONTROL 导入新数据]** | 数据集导入新数据的状态： <p>![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _On]**&#x200B;用于配置为导入新数据的数据集，并且<p>对于未配置为导入新数据的数据集，![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _x 关闭_]**。 |
+| **[!UICONTROL 导入新数据]** | 数据集导入新数据的状态： <p>![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _On]**用于配置为导入新数据的数据集，并且<p>对于未配置为导入新数据的数据集，![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _x 关闭_]**。 |
 | **[!UICONTROL 创建日期]** | 创建连接的时间戳。 |
 | **[!UICONTROL 上次修改时间]** | 上次更新连接的时间戳。 |
 | **[!UICONTROL 回填数据]** | 数据集中回填数据的状态。<p>![状态为红色](assets/status-red.svg)   **[!UICONTROL _x _回填失败]**，表示数据集中回填失败的次数，<p>![状态为橙色](assets/status-orange.svg)   **[!UICONTROL _x _正在处理回填]**，表示数据集中正在处理的回填次数，<p>![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _回填完成]**，数据集中已完成的回填次数，以及<p>如果连接中的数据集未定义回填，则![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _关闭_]**。 |
@@ -143,7 +143,18 @@ ht-degree: 62%
 
 有关更多信息，请参阅[创建或编辑数据视图](/help/data-views/create-dataview.md)。
 
-### 在Customer Journey Analytics中使用Journey Optimizer连接 {#use-connection-in-cja}
+### Journey Optimizer连接
+
+您可以使用Customer Journey Analytics中的Journey Optimizer连接为您的连接带来以下附加值：
+
+* 在Customer Journey Analytics中对Journey Optimizer数据执行深入分析(通过使用Journey Optimizer中的&#x200B;**[!UICONTROL 在CJA中分析]**&#x200B;按钮)。
+
+  有关详细信息，请参阅Journey Optimizer文档中的[在Customer Journey Analytics中分析](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template)。
+
+* 编辑Journey Optimizer连接和关联的数据视图。
+
+  有关编辑选项的详细信息，请参阅[编辑连接](#edit-a-connection)。
+
 
 >[!IMPORTANT]
 >
@@ -151,23 +162,15 @@ ht-degree: 62%
 >
 >**如果您在2024年10月至2025年10月期间有权使用Customer Journey Analytics和Journey Optimizer，请参阅以下有关[启用AJO的连接](https://view.adobe.com/viewer/1ed94fc35c7860b260766c620889e7a0#1)**&#x200B;的文档。
 
-您可以使用Customer Journey Analytics中的Journey Optimizer连接为您的连接带来以下附加值：
-
-* 在Customer Journey Analytics中对Journey Optimizer数据执行深入分析(通过使用Journey Optimizer中的&#x200B;**[!UICONTROL 在CJA中分析]**&#x200B;按钮)。
-
-  有关详细信息，请参阅Journey Optimizer文档中的[在Customer Journey Analytics中分析](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template)。
-
-* 编辑Journey Optimizer连接和关联的数据视图。
-
-  有关编辑选项的详细信息，请参阅[编辑连接](#edit-a-connection)。
-
 要启用此功能，您的组织需要访问Customer Journey Analytics。 如果您没有访问权限，请联系您的Adobe销售代表。
 
-在访问Customer Journey Analytics后，您必须允许在Customer Journey Analytics中使用Journey Optimizer连接：
+#### 使用Journey Optimizer连接 {#use-connection-in-cja}
+
+要在Customer Journey Analytics中使用Journey Optimizer连接，请执行以下操作：
 
 1. 找到要与Customer Journey Analytics一起使用的Journey Optimizer连接。
 
-   1. 选择&#x200B;**[!UICONTROL 连接]**&#x200B;选项卡上的“筛选器”图标。
+   1. 在![连接](/help/assets/icons/Filter.svg)选项卡中选择&#x200B;**[!UICONTROL 筛选器]** **[!UICONTROL 筛选器]**。
 
    1. 在&#x200B;**[!UICONTROL 用于CJA]**&#x200B;部分中，选择&#x200B;**[!UICONTROL 禁用]**。
 
@@ -175,31 +178,29 @@ ht-degree: 62%
 
       ![筛选以显示未为AJO启用的连接](assets/remove-ajo-connection.png)
 
-1. 要查看连接，请选择要在Customer Journey Analytics中使用的Journey Optimizer连接的名称。
+1. 选择Journey Optimizer连接的名称。
 
-1. 查看Journey Optimizer连接时，选择&#x200B;**[!UICONTROL 在CJA中使用]**。
+1. 选择![用户共享](/help/assets/icons/UseInCJA.svg) **[!UICONTROL 在CJA中使用]**。
 
    ![在CJA中使用按钮](assets/connection-use-in-cja.png)
 
-   显示以下&#x200B;**[!UICONTROL 在Customer Journey Analytics中使用此连接]**&#x200B;对话框：
-
-   ![在连接中使用](assets/use-in-connection.png)
+   将显示&#x200B;**[!UICONTROL 在Customer Journey Analytics]**&#x200B;中使用此连接。
 
 1. 启用切换功能，**[!UICONTROL 在CJA中使用连接]**。
 
 1. 选择&#x200B;**[!UICONTROL 使用连接]**。<!-- double-check these dialog button names -->
 
-#### 从Customer Journey Analytics中删除连接 {#remove-connection-in-cja}
+#### 删除Journey Optimizer连接 {#remove-connection-in-cja}
 
 您可以随时从Customer Journey Analytics中删除Journey Optimizer连接。 但是，在使用连接后从Customer Journey Analytics中删除该连接会导致以下情况：
 
 * Journey Optimizer连接和任何关联的数据视图都将重置为其默认状态，且无法再编辑
 
-* 任何与连接关联的自定义派生字段都将被删除
+* 与连接关联的任何自定义派生字段都将被删除。
 
-* 您无法再在Customer Journey Analytics中对Journey Optimizer数据执行深入分析
+* 您无法再在Customer Journey Analytics中对Journey Optimizer数据执行深入分析。
 
-  这意味着Journey Optimizer中的&#x200B;**[!UICONTROL 在CJA中分析]**&#x200B;按钮已禁用
+  这意味着Journey Optimizer中的&#x200B;**[!UICONTROL 在CJA中分析]**&#x200B;按钮已禁用。
 
 >[!IMPORTANT]
 >
@@ -210,7 +211,7 @@ ht-degree: 62%
 
 1. 找到要从Customer Journey Analytics中删除的Journey Optimizer连接。
 
-   1. 选择&#x200B;**[!UICONTROL 连接]**&#x200B;选项卡上的“筛选器”图标。
+   1. 在![连接](/help/assets/icons/Filter.svg)选项卡中选择&#x200B;**[!UICONTROL 筛选器]** **[!UICONTROL 筛选器]**。
 
    1. 在&#x200B;**[!UICONTROL 用于CJA]**&#x200B;部分中，选择&#x200B;**[!UICONTROL On]**。
 
@@ -222,11 +223,9 @@ ht-degree: 62%
 
 1. 查看Journey Optimizer连接时，选择&#x200B;**[!UICONTROL 从CJA中删除]**。
 
+   将显示&#x200B;**[!UICONTROL 从Customer Journey Analytics中删除此连接]**&#x200B;对话框：
+
    ![从CJA中删除按钮](assets/connection-remove-from-cja.png)
-
-   显示以下&#x200B;**[!UICONTROL 从Customer Journey Analytics中删除此连接]**&#x200B;对话框：
-
-   ![在连接中使用](assets/remove-connection.png)
 
 1. 禁用选项&#x200B;**[!UICONTROL 从CJA中删除连接]**。
 
@@ -317,13 +316,13 @@ ht-degree: 62%
 
 | 详细信息 | 描述 |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全球帐户 ID &#x200B;]** | 您指定为连接的全局帐户ID的标识。 仅适用于已配置全局帐户容器的基于帐户的连接。 |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户 ID &#x200B;]** | 您指定为连接的帐户ID的身份。 仅适用于未配置全局帐户容器的基于帐户的连接。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全球帐户 ID ]** | 您指定为连接的全局帐户ID的标识。 仅适用于已配置全局帐户容器的基于帐户的连接。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户 ID ]** | 您指定为连接的帐户ID的身份。 仅适用于未配置全局帐户容器的基于帐户的连接。 |
 | **[!UICONTROL 人员 ID]** | 您指定为连接的人员ID的身份。 |
 | **[!UICONTROL 键]** | 您为查找数据集指定的键。 |
 | **[!UICONTROL 匹配键]** | 您为查找数据集指定的匹配键。 |
 | **[!UICONTROL 时间戳]** | 为事件数据集定义的时间戳。 |
-| **[!UICONTROL 可用的记录数]** | 在日程表中选择的特定时间段内，此数据集摄取的总行数。添加数据后，数据立刻在报告中显示，没有延迟。但是，当您创建一个全新的连接时，则会出现[延迟](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq)。 |
+| **[!UICONTROL 可用的记录数]** | 在日程表中选择的特定时间段内，此数据集摄取的总行数。添加数据后，数据立刻在报告中显示，没有延迟。但是，当您创建一个全新的连接时，则会出现[延迟](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq)。 |
 | **[!UICONTROL 添加的记录数]** | 在选定日期范围内添加到连接的数据集记录（行）数。 |
 | **[!UICONTROL 跳过的记录数]** | 在选定日期范围内为连接传输数据期间跳过的数据集记录（行）数。 |
 | **[!UICONTROL 添加的批次数]** | 已添加到连接的批次数。 |
@@ -388,13 +387,13 @@ ht-degree: 62%
 >[!CONTEXTUALHELP]
 >id="connections_averagerowsize"
 >title="平均行大小"
->abstract="本月数据行的平均大小以及与上个月相比的变化百分比。"
+>abstract="当前nonth在Customer Journey Analytics中摄取并存储的每一行数据所使用的平均存储量（以KB为单位），与上月相比有百分比变化。"
 
 
 >[!CONTEXTUALHELP]
 >id="connections_coredatavolume"
 >title="核心数据量"
->abstract="本月的核心数据量。*需要确认准确的定义！*"
+>abstract="磁盘上存储的、带有当月时间戳的数据总量（以GB或TB为单位），与上月相比有百分比变化。"
 
 
 >[!CONTEXTUALHELP]
@@ -502,5 +501,5 @@ ht-degree: 62%
 >[!MORELIKETHIS]
 >
 >[查看、排查和修改连接设置](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja)教程
->&#x200B;>[管理您的 Customer Journey Analytics 使用情况](/help/technotes/estimate-usage.md)
+>>[管理您的 Customer Journey Analytics 使用情况](/help/technotes/estimate-usage.md)
 >
