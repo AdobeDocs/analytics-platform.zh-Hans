@@ -7,7 +7,7 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta 版"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: d0067d8271b7628f0d174d1fa647ba1b4558ffb4
+source-git-commit: 804668db5e104d1a1de7d5d9ce0c92a9bb1980dc
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 5%
@@ -45,7 +45,7 @@ Customer Journey Analytics 中的实时报告功能可以实时显示并更新 A
 
 ## 延迟
 
-数据收集方式确定Customer Journey Analytics实时报表的实时延迟。 下图及下表显示了使用实时报表和标准报表时，各种数据收集方案的大致延迟。
+数据收集方式决定了Customer Journey Analytics实时报表的实时延迟。 下图及下表显示了使用实时报表和标准报表时，各种数据收集方案的大致延迟。
 
 该图还强调，实时报表使用的合并数据集与用于标准报表的[合并（组合）数据集](/help/connections/combined-dataset.md)完全不同。 您使用[实时刷新切换开关](use-real-time.md)来切换：
 
