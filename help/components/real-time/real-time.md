@@ -7,9 +7,9 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta 版"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: 804668db5e104d1a1de7d5d9ce0c92a9bb1980dc
+source-git-commit: 2dd78dc120fc2bf48d3a59e28631e4ddf605b0c3
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '733'
 ht-degree: 5%
 
 ---
@@ -45,7 +45,7 @@ Customer Journey Analytics 中的实时报告功能可以实时显示并更新 A
 
 ## 延迟
 
-数据收集方式决定了Customer Journey Analytics实时报表的实时延迟。 下图及下表显示了使用实时报表和标准报表时，各种数据收集方案的大致延迟。
+收集数据的方式决定了Customer Journey Analytics中实时报表的延迟。 下图及下表显示了使用实时报表和（用于比较）标准报表时各种数据收集方案的大致延迟。
 
 该图还强调，实时报表使用的合并数据集与用于标准报表的[合并（组合）数据集](/help/connections/combined-dataset.md)完全不同。 您使用[实时刷新切换开关](use-real-time.md)来切换：
 
@@ -61,14 +61,15 @@ Customer Journey Analytics 中的实时报告功能可以实时显示并更新 A
 | 3 | Adobe Analytics源连接器 | &amp;amp；约； &lt; 00h:16m:30s | &amp;amp；约； &lt; 01h:45m:00s |
 | 4 | 进入源连接器的其他源连接器（包括批量数据） | &amp;amp；约； &lt; 24h:01m:30s | &amp;amp；约； &lt; 25h:30m:00s |
 
+
 ## 限制
 
 请注意实时报表的以下限制：
 
 * 实时报表仅报告滚动时段24小时内的可用数据。 超过以下项的数据   24小时制不能用于实时报告。 禁用或自动关闭报表的[实时刷新](use-real-time.md)后，通常用于Customer Journey Analytics中报表的[统一数据集](/help/connections/combined-dataset.md)中的所有相关数据将再次可用。
 * 归因、分段、计算量度等仅适用于滚动时段（24小时）内的可用数据。 例如，*重复访客*&#x200B;区段在实时报表中包含的用户非常少，因为此报表仅包含过去24小时内多次访问的人。 类似的限制同样适用于创建关于之前点击了不再活动的营销策划的人员的实时报表。
-* 实时报表最适用于事件和会话级别的数据，因此，在对人员级别的数据使用实时报表时应当谨慎。 <!--Need to explain this a bit better -->由于实时报表仅提供滚动的24小时周期中的事件，因此人员的事件历史记录也仅限于此时段。 选择维度和（计算）量度时，请考虑事件和会话级别数据的首选项。 当您在启用实时刷新的面板中使用划分、下一个或上一个以及更多等功能时。
-* 您不能将拼合与实时报表结合使用。 <!-- Do we need to explain this in more detail, why? -->实时报表与事件和会话级别的数据有关，而与基于人员的数据不太相关。
+* 实时报表最适用于事件和会话级别的数据，因此，在对人员级别的数据使用实时报表时应当谨慎。 由于实时报表仅提供滚动的24小时周期中的事件，因此人员的事件历史记录也仅限于此窗口。 选择维度和（计算）量度时，请考虑事件和会话级别数据的首选项。 当您在启用实时刷新的面板中使用划分、下一个或上一个以及更多等功能时。
+* 您不能将拼合与实时报表结合使用。 实时报表是关于事件和会话级别的数据，与基于人员的数据不太相关。
 * 除媒体开始和媒体关闭量度外，没有可用的心跳收集媒体量度。 因此，您仍然可以使用实时报表来启用媒体用例。
 * 使用[下载或导出选项](/help/analysis-workspace/export/download-send.md)下载项目或从自由格式表中导出数据时，请考虑以下事项：
    * 下载的CSV项目或导出的CSV文件包含下载或导出时可用的实时数据。
