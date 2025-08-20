@@ -7,16 +7,16 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta 版"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: b833914e7066fa660f856737d6b8a6392aae2feb
+source-git-commit: d0067d8271b7628f0d174d1fa647ba1b4558ffb4
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 3%
+source-wordcount: '732'
+ht-degree: 5%
 
 ---
 
 # 实时报表概述
 
-Customer Journey Analytics中的实时报表可实时显示和更新Analysis Workspace中一个或多个面板的数据和可视化图表。
+Customer Journey Analytics 中的实时报告功能可以实时显示并更新 Analysis Workspace 的一个或多个面板中的数据和可视化图表。
 
 {{release-limited-testing}}
 
@@ -43,29 +43,30 @@ Customer Journey Analytics中的实时报表可实时显示和更新Analysis Wor
 对于操作监控用例，请勿考虑实时报告。 例如，回答站点是否正常运行的问题。 由于[实时刷新切换开关](use-real-time.md)会在30分钟后自动禁用并且实时报表停止刷新，因此您不应将实时报表用作这些用例的可靠源。
 
 
-## 定义
+## 延迟
 
-Customer Journey Analytics实时报表的实时方面被定义为从通过关联连接摄取基础数据之日起约6.5分钟内更新的数据和可视化图表。
+数据收集方式确定Customer Journey Analytics实时报表的实时延迟。 下图及下表显示了使用实时报表和标准报表时，各种数据收集方案的大致延迟。
 
-数据收集设置中的各种组件决定了实时报告延迟。
+该图还强调，实时报表使用的合并数据集与用于标准报表的[合并（组合）数据集](/help/connections/combined-dataset.md)完全不同。 您使用[实时刷新切换开关](use-real-time.md)来切换：
+
+* 实时报告包含长达24小时滚动数据的合并数据集。
+* 有关合并数据集的标准报表，该数据集包含最多13个月的滚动数据（如果许可了扩展数据容量加载项，则更长）。
 
 ![实时报告](assets/real-time-reporting-latencies.svg){zoomable="yes"}
 
-| | 描述 | 延迟 |
-|:---:|---|--:|
-| 1 | 通过Edge Network SDK/API收集的数据进入Edge Network。 | &lt; 500毫秒 |
-| 2 | 数据从Edge Network复制到Experience Platform Hub中的数据收集和验证服务。 | &lt; 5 分钟 |
-| 3 | 通过流式连接器收集的数据将收集到Experience Platform Hub的数据收集和验证服务中。 | &lt; 15分钟 |
-| 4 | 通过Adobe Analytics收集并由Analytics Source Connector转发到Experience Platform中心的Source Connectors处理器的数据。 | &lt; 15分钟 |
-| 5 | 通过其他源连接器收集的数据将收集到Experience Platform集线器的源连接器处理器中。 | &lt; 24小时 |
-| 6 | 由实时处理器为合并的数据集处理的数据，用于实时报告。 | &lt; 90秒 |
+| | 数据收集 | 实时报告延迟 | 标准报告延迟 |
+|:---:|---|--:|--:|
+| 1 | 将Edge Network SDK / API引入Edge Network | &amp;amp；约； &lt; 00h:06m:30s | &amp;amp；约； &lt; 01h:35m:00s |
+| 2 | 流连接器 | &amp;amp；约； &lt; 00h:16m:30s | &amp;amp；约； &lt; 01h:45m:00s |
+| 3 | Adobe Analytics源连接器 | &amp;amp；约； &lt; 00h:16m:30s | &amp;amp；约； &lt; 01h:45m:00s |
+| 4 | 进入源连接器的其他源连接器（包括批量数据） | &amp;amp；约； &lt; 24h:01m:30s | &amp;amp；约； &lt; 25h:30m:00s |
 
 ## 限制
 
 请注意实时报表的以下限制：
 
-* 实时报表仅报告滚动时段24小时内的可用数据。 对于实时报表，将隐藏跨此24小时滚动时段的数据。 禁用或自动关闭报表的[实时刷新](use-real-time.md)后，报表的所有相关数据将再次可用。
-* 归因、分段、计算量度等仅适用于滚动时段（24小时）内的可用数据。
+* 实时报表仅报告滚动时段24小时内的可用数据。 超过以下项的数据   24小时制不能用于实时报告。 禁用或自动关闭报表的[实时刷新](use-real-time.md)后，通常用于Customer Journey Analytics中报表的[统一数据集](/help/connections/combined-dataset.md)中的所有相关数据将再次可用。
+* 归因、分段、计算量度等仅适用于滚动时段（24小时）内的可用数据。 例如，*重复访客*&#x200B;区段在实时报表中包含的用户非常少，因为此报表仅包含过去24小时内多次访问的人。 类似的限制同样适用于创建关于之前点击了不再活动的营销策划的人员的实时报表。
 * 实时报表最适用于事件和会话级别的数据，因此，在对人员级别的数据使用实时报表时应当谨慎。 <!--Need to explain this a bit better -->由于实时报表仅提供滚动的24小时周期中的事件，因此人员的事件历史记录也仅限于此时段。 选择维度和（计算）量度时，请考虑事件和会话级别数据的首选项。 当您在启用实时刷新的面板中使用划分、下一个或上一个以及更多等功能时。
 * 您不能将拼合与实时报表结合使用。 <!-- Do we need to explain this in more detail, why? -->实时报表与事件和会话级别的数据有关，而与基于人员的数据不太相关。
 * 除媒体开始和媒体关闭量度外，没有可用的心跳收集媒体量度。 因此，您仍然可以使用实时报表来启用媒体用例。
