@@ -7,10 +7,10 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta 版"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: 2dd78dc120fc2bf48d3a59e28631e4ddf605b0c3
+source-git-commit: b34cf8d95080cb333cd497450f5881f0418b8ae9
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 5%
+source-wordcount: '723'
+ht-degree: 7%
 
 ---
 
@@ -54,12 +54,12 @@ Customer Journey Analytics 中的实时报告功能可以实时显示并更新 A
 
 ![实时报告](assets/real-time-reporting-latencies.svg){zoomable="yes"}
 
-| | 数据收集 | 实时报告延迟 | 标准报告延迟 |
+| | 数据收集 | 实时报告延迟<br/>(约 小于) | 标准报告延迟<br/>(约 小于) |
 |:---:|---|--:|--:|
-| 1 | 将Edge Network SDK / API引入Edge Network | &amp;amp；约； &lt; 00h:06m:30s | &amp;amp；约； &lt; 01h:35m:00s |
-| 2 | 流连接器 | &amp;amp；约； &lt; 00h:16m:30s | &amp;amp；约； &lt; 01h:45m:00s |
-| 3 | Adobe Analytics源连接器 | &amp;amp；约； &lt; 00h:16m:30s | &amp;amp；约； &lt; 01h:45m:00s |
-| 4 | 进入源连接器的其他源连接器（包括批量数据） | &amp;amp；约； &lt; 24h:01m:30s | &amp;amp；约； &lt; 25h:30m:00s |
+| 1 | 将Edge Network SDK / API引入Edge Network | 7 分钟 | 95 分钟 |
+| 2 | 流连接器 | 17 分钟 | 105 分钟 |
+| 3 | Adobe Analytics源连接器 | 17 分钟 | 105 分钟 |
+| 4 | 进入源连接器的其他源连接器（包括批量数据） | 25 小时 | 25 小时 |
 
 
 ## 限制
