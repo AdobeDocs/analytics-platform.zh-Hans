@@ -7,10 +7,10 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta 版"
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
-source-git-commit: b833914e7066fa660f856737d6b8a6392aae2feb
+source-git-commit: 2461804f788b7a1417c4d7faa1d7133d8808cad5
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 14%
+source-wordcount: '225'
+ht-degree: 12%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 14%
 * [归因](/help/analysis-workspace/c-panels/attribution.md)
 * [下一项或上一项](/help/analysis-workspace/c-panels/next-previous.md)
 
-您会看到一条消息，其中包含数据最近刷新时的时间戳。 例如： [!UICONTROL &#x200B; *上次刷新时间： 07:55下午*]。
+您会看到一条消息，其中包含数据最近刷新时的时间戳。 例如： [!UICONTROL  *上次刷新时间： 07:55下午*]。
 
 从下拉菜单中选择要报告的实时时段。 可用选项包括：
 
@@ -42,8 +42,10 @@ ht-degree: 14%
 
 现在，当启用了实时刷新面板的浏览器选项卡处于活动状态时，面板中的所有可视化图表每分钟更新一次，最多更新30分钟。
 
-例如，查看下面的&#x200B;**[!UICONTROL 实时报表面板]**&#x200B;快照，该快照在时间从&#x200B;**[!UICONTROL 06]**&#x200B;移至&#x200B;**[!UICONTROL 06]**&#x200B;下午&#x200B;**[!UICONTROL *时刷新了:26pm*]**&#x200B;总收入/小时&#x200B;**[!UICONTROL *条形图可视化图表和:27总收入/小时&#x200B;*]**&#x200B;自由格式表。
+例如，查看下面的&#x200B;**[!UICONTROL 实时报表面板]**&#x200B;快照，该快照在时间从&#x200B;**[!UICONTROL 06]**&#x200B;移至&#x200B;**[!UICONTROL 06]**&#x200B;下午&#x200B;**[!UICONTROL *时刷新了:26pm*]**&#x200B;总收入/小时&#x200B;**[!UICONTROL *条形图可视化图表和:27总收入/小时&#x200B;*]**自由格式表。
 
 ![实时刷新](assets/real-time-refresh.gif)
 
 30分钟后，或浏览器选项卡处于非活动状态时，**[!UICONTROL 实时刷新]**&#x200B;切换会自动禁用，并且实时更新将停止。
+
+禁用实时刷新切换后，面板（及其中的所有可视化图表）即会返回[使用Customer Journey Analytics](real-time.md#how-it-works)中的标准报表数据和功能。

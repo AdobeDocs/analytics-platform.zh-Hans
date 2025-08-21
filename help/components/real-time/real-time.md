@@ -7,7 +7,7 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta 版"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: b34cf8d95080cb333cd497450f5881f0418b8ae9
+source-git-commit: 2461804f788b7a1417c4d7faa1d7133d8808cad5
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 7%
@@ -42,17 +42,18 @@ Customer Journey Analytics 中的实时报告功能可以实时显示并更新 A
 
 对于操作监控用例，请勿考虑实时报告。 例如，回答站点是否正常运行的问题。 由于[实时刷新切换开关](use-real-time.md)会在30分钟后自动禁用并且实时报表停止刷新，因此您不应将实时报表用作这些用例的可靠源。
 
+## 工作原理
 
-## 延迟
-
-收集数据的方式决定了Customer Journey Analytics中实时报表的延迟。 下图及下表显示了使用实时报表和（用于比较）标准报表时各种数据收集方案的大致延迟。
-
-该图还强调，实时报表使用的合并数据集与用于标准报表的[合并（组合）数据集](/help/connections/combined-dataset.md)完全不同。 您使用[实时刷新切换开关](use-real-time.md)来切换：
+实时报表使用的合并数据集与用于标准报表的[合并（组合）数据集](/help/connections/combined-dataset.md)完全不同。 您使用[实时刷新切换开关](use-real-time.md)来切换：
 
 * 实时报告包含长达24小时滚动数据的合并数据集。
 * 有关合并数据集的标准报表，该数据集包含最多13个月的滚动数据（如果许可了扩展数据容量加载项，则更长）。
 
 ![实时报告](assets/real-time-reporting-latencies.svg){zoomable="yes"}
+
+### 延迟
+
+收集数据的方式决定了Customer Journey Analytics中实时报表的延迟。 上图和下表显示了使用实时报表和（比较）标准报表时，各种数据收集方案的大致延迟。
 
 | | 数据收集 | 实时报告延迟<br/>(约 小于) | 标准报告延迟<br/>(约 小于) |
 |:---:|---|--:|--:|
