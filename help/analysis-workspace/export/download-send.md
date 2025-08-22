@@ -4,10 +4,10 @@ title: 下载项目和数据
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
+source-git-commit: 1cb9e18f79e8ca49b63aa7d8117ce6c61a020454
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 25%
+source-wordcount: '1246'
+ht-degree: 22%
 
 ---
 
@@ -20,33 +20,42 @@ ht-degree: 25%
 
 导出Customer Journey Analytics数据的其他方法在[导出概述](/help/analysis-workspace/export/export-project-overview.md)中进行了说明。
 
-## 下载为 CSV 或 PDF 格式 {#download-project}
+## 将项目下载为PDF或CSV文件 {#download-project}
 
 ![项目下拉菜单，其中突出显示了下载 CSV 和下载 PDF 选项。](assets/download-project.png)
 
+### 将项目下载为PDF文件
+
 在下载as a PDF项目时，请考虑以下事项：
 
-* 下载可能需要几分钟时间，因为项目会在Adobe服务器上重新运行以呈现PDF格式。 在浏览器中下载项目之前，请勿离开项目。  呈现下载内容时，您可以继续对项目进行更改。 如果PDF的呈现时间超过5分钟，则系统会提示您改为向PDF[发送电子邮件](../curate-share/send-schedule-files.md)。
+* 在项目下载到您的工作站之前，请勿离开项目。 下载可能需要几分钟时间，因为项目会在Adobe服务器上重新运行以便PDF呈现。 在渲染下载时，您可以继续对项目进行更改。 如果PDF的呈现时间超过5分钟，则系统会提示您改为向PDF[发送电子邮件](../curate-share/send-schedule-files.md)。
 * 下载内容会以单个页面呈现，并且不会应用分页功能。
-* PDF包含在Analysis Workspace的浏览器页面中显示的内容。 您需要自动调整自定义大小的可视化和面板的大小，以避免截断内容。 选择![调整大小](/help/assets/icons/Resize.svg)以自动调整自定义大小的可视化图表或面板的大小。
-* 在下载的PDF中，作为超链接自由格式表中的[超链接](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)。
-
-
+* PDF包含在Analysis Workspace的浏览器页面中显示的内容。 要避免截断内容，请选择![调整大小](/help/assets/icons/Resize.svg)以自动调整任何自定义大小的可视化图表或面板的大小。
+* 在下载的PDF中可单击自由格式表中的[超链接](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)。
 
 要将项目下载为PDF文件，请执行以下操作：
 
 1. 选择&#x200B;**[!UICONTROL 项目]** > **[!UICONTROL 下载PDF]**。
-绿色条带有消息![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 已请求您的下载。 请稍候。显示]**。
 
-1. 下载就绪后，绿色条即准备就绪，该条消息为![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL *项目名称&#x200B;*PDF。]**&#x200B;出现。
-选择&#x200B;**[!UICONTROL 下载]**&#x200B;以下载PDF。 PDF的显示或下载方式具体取决于您用于处理PDF文档的浏览器配置。
+   绿色栏显示以下消息： ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 已请求您的下载。 请稍候。]**
 
+1. 下载准备就绪后，会显示一个绿色栏，并显示以下消息： ![复选标记圆圈](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL *项目名称&#x200B;*PDF已准备就绪。]**
 
-要将项目下载为CSV文件，请执行以下操作：
+1. 在绿色栏上选择&#x200B;**[!UICONTROL 下载]**。
 
-* 选择&#x200B;**[!UICONTROL 项目]** > **[!UICONTROL 下载CSV]**。 项目将直接下载到下载文件夹，该文件夹配置为浏览器配置的一部分。 文件名由&#x200B;*项目名称* - *报表包名称* - *日期*&#x200B;组成，例如`Example Project - Omni-Channel - Luma - Jun 30, 2025.csv`。
+   根据您的浏览器设置，PDF会自动下载到您之前配置的文件夹，或者系统会提示您选择下载PDF的文件夹。
 
-## 复制到剪贴板 {#copy-data}
+   文件名由&#x200B;*项目名称* - *报告包名称* - *日期*&#x200B;组成。 例如，`Example Project - Omni-Channel - Luma - Jun 30, 2025.pdf`。
+
+### 将项目下载为CSV文件
+
+1. 选择&#x200B;**[!UICONTROL 项目]** > **[!UICONTROL 下载CSV]**。
+
+   根据您的浏览器设置，CSV文件会自动下载到您之前配置的文件夹，或者系统会提示您选择下载CSV文件的文件夹。
+
+   文件名由&#x200B;*项目名称* - *报告包名称* - *日期*&#x200B;组成。 例如，`Example Project - Omni-Channel - Luma - Jun 30, 2025.csv`。
+
+## 将可视化图表中的数据复制到剪贴板 {#copy-data}
 
 通过上下文菜单中的&#x200B;**[!UICONTROL 复制到剪贴板]**&#x200B;选项，您可以从Analysis Workspace中快速复制数据并将数据粘贴到第三方工具中。
 
@@ -60,7 +69,7 @@ ht-degree: 25%
 
 ![将选择内容复制到剪贴板的选项。](assets/copy-clipboard.png){zoomable="yes"}
 
-## 下载为 CSV 格式 {#download-data}
+## 将可视化图表中的数据下载为CSV文件 {#download-data}
 
 通过上下文菜单中的下载为CSV选项，您可以将数据表或任何可视化图表的数据源下载为CSV。
 
@@ -78,7 +87,7 @@ ht-degree: 25%
 
 ![将数据下载为 CSV 选项。](assets/download-data-as-csv.png)
 
-## 以 CSV 格式下载项目 {#download-items}
+## 以CSV文件格式下载项目 {#download-items}
 
 如果要分析表中的400多行可见数据，请从表标题或任何行的上下文菜单中选择&#x200B;**以CSV格式下载项目(_Dimension名称_)**。 此选项会导出所选维度的最多 50,000 个维度项（根据表格排序方式），并会应用排序选项和过滤器。如果从表的顶部选择此选项，将导出表中的第一个维。
 
@@ -107,8 +116,8 @@ ht-degree: 25%
 
 下载文件时，您会看到以下通知：
 
-* 已请求蓝色&#x200B;**[!UICONTROL _表名&#x200B;_-_Dimension _.csv。_x _%完成]**&#x200B;表示进度。 要随时取消下载，请选择&#x200B;**[!UICONTROL 取消下载]**。 如果要关闭消息，请选择![CrossSize100](/help/assets/icons/CrossSize100.svg)，这样不会取消下载。
-* 在文件下载完成后，已下载绿色的&#x200B;**[!UICONTROL _表名&#x200B;_-_Dimension _.csv]**&#x200B;完成通知。 该文件将下载到为您的浏览器配置的下载文件夹。
+* 已请求蓝色&#x200B;**[!UICONTROL _表名&#x200B;_-_Dimension _.csv。_x _%完成]**表示进度。 要随时取消下载，请选择&#x200B;**[!UICONTROL 取消下载]**。 如果要关闭消息，请选择![CrossSize100](/help/assets/icons/CrossSize100.svg)，这样不会取消下载。
+* 在文件下载完成后，已下载绿色的&#x200B;**[!UICONTROL _表名&#x200B;_-_Dimension _.csv]**完成通知。 该文件将下载到为您的浏览器配置的下载文件夹。
 
 如果您一次请求多个下载，您将收到一条通知，说明每个额外的下载都将排队等待，直到前一个下载完成为止。
 
