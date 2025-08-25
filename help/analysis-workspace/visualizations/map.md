@@ -4,10 +4,10 @@ title: 地图
 feature: Visualizations
 role: User, Admin
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: 71d5326f5d80f196504178855dacdf01f60fb81c
+source-git-commit: ab0e6f0578cbc6f856c2b0a46b1231cce145b84c
 workflow-type: tm+mt
 source-wordcount: '2761'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -40,16 +40,13 @@ ht-degree: 11%
 
 <!-- markdownlint-enable MD034 -->
 
-
-{{release-limited-testing}}
-
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中的地图可视化图表。_<br/>_查看本文的[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)版本的&#x200B;_&#x200B;**映射**。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的地图可视化图表。_<br/>_查看本文的[ ](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)版本的&#x200B;_**映射**。_
 
 >[!ENDSHADEBOX]
 
-Analysis Workspace中的![全球](/help/assets/icons/Globe.svg) **[!UICONTROL 地图]**&#x200B;可视化允许您构建任何指标（包括计算量度）的可视地图。 它有助于识别和比较不同地理区域之间的量度数据。
+Analysis Workspace中的![全球](/help/assets/icons/Globe.svg) **[!UICONTROL 地图]**&#x200B;可视化允许您构建任何指标（包括计算量度）的可视地图。 此工具用于识别和比较不同地理区域间的量度数据。
 
 ## 先决条件
 
