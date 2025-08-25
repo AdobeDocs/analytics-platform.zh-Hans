@@ -5,10 +5,10 @@ title: 可视化概述
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 9c05319ceacb7287af7f15cfe56b8048a718559d
+source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
 workflow-type: tm+mt
-source-wordcount: '1622'
-ht-degree: 95%
+source-wordcount: '1738'
+ht-degree: 89%
 
 ---
 
@@ -67,6 +67,22 @@ Analysis Workspace 中提供了以下可视化图表类型：
    * 使用工作区&#x200B;**[!UICONTROL 插入]**&#x200B;菜单插入可视化图表。
 
    * 从自由格式表的上下文菜单中，选择&#x200B;**[!UICONTROL 可视化图表]**。然后，从子菜单中选择可视化图表。根据表中的当前选择，工作区会确定提供哪种可视化图表，并解释数据以生成所请求的可视化图表。
+
+添加简单的可视化图表，例如[条形图](line.md)的[折线图](bar.md)可视化图表时，该可视化图表使用最接近的自由格式表作为数据源。 您始终可以修改可视化图表的[数据源](#data-source)。
+
+
+## 管理可视化图表
+
+当您将鼠标悬停在可视化图表上或选择可视化图表时，可以管理该可视化图表。
+
+![管理可视化图表](assets/manage-visualization.png)
+
+* 要折叠可视化图表，请选择![V形向下](/help/assets/icons/ChevronDown.svg)。
+* 要显示折叠的可视化图表，请选择![V形左侧](/help/assets/icons/ChevronLeft.svg)。
+* 要删除可视化图表，请选择![CrossSize400](/help/assets/icons/CrossSize400.svg)。 要撤消操作，请选择&#x200B;**[!UICONTROL 编辑]** > **[!UICONTROL 撤消]** (**[!UICONTROL *cmd+z *]**) |**[!UICONTROL * ctrl+z *]**)。
+* 要将可视化返回到默认高度，请选择![ImageResize](/help/assets/icons/Resize.svg)。
+* 要在面板中移动可视化图表，请在![移动](/help/assets/icons/Move.svg)可见时拖放该可视化图表（通常是将鼠标悬停在标题上）。
+
 
 
 ## 图例

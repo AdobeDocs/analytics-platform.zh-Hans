@@ -4,10 +4,10 @@ title: 总计
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 91%
+source-wordcount: '494'
+ht-degree: 88%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 91%
 在 ![设置](/help/assets/icons/Setting.svg) **[!UICONTROL 列设置]**&#x200B;下，有&#x200B;**[!UICONTROL 显示总计]**&#x200B;和&#x200B;**[!UICONTROL 显示全部总计]**&#x200B;的选项。如果这些设置未勾选，总计将从表格中移除，这在总计没有意义的情况下可能是需要的。
 
 
-[静态行](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)总计的行为方式不尽相同，并可使用 ![设置](/help/assets/icons/Setting.svg) **[!UICONTROL 行设置]**&#x200B;来进行控制。
+在包含[静态行](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)的自由格式表中，总计的行为有所不同。 并使用![设置](/help/assets/icons/Setting.svg) **[!UICONTROL 行设置]**&#x200B;来控制和。
 
 | 选项 | 描述 |
 |---|---|

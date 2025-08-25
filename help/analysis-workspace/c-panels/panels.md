@@ -4,10 +4,10 @@ title: 面板概述
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: c26fbe37270171c80d77c96966dd21f2dd7c7ce9
-workflow-type: ht
-source-wordcount: '2130'
-ht-degree: 100%
+source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
+workflow-type: tm+mt
+source-wordcount: '2193'
+ht-degree: 97%
 
 ---
 
@@ -73,6 +73,18 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
   | ![GraphTree](/help/assets/icons/GraphTree.svg) | [树状图](/help/analysis-workspace/visualizations/treemap.md) |
 
 * 选择 Workspace 最后一个面板&#x200B;**外**&#x200B;的 ![AddCircle](/help/assets/icons/AddCircle.svg) 以添加另一个[空白面板](blank-panel.md)。
+
+
+## 管理面板
+
+您可以通过以下方式管理面板：
+
+![管理面板](assets/manage-panel.png)
+
+* 要折叠面板，请选择![V形向下](/help/assets/icons/ChevronDown.svg)。
+* 要显示折叠的面板，请选择![左侧V形](/help/assets/icons/ChevronLeft.svg)。
+* 要删除面板，请选择![CrossSize400](/help/assets/icons/CrossSize200.svg)。 要撤消操作，请选择&#x200B;**[!UICONTROL 编辑]** > **[!UICONTROL 撤消]** (**[!UICONTROL *cmd+z *]**) |**[!UICONTROL * ctrl+z *]**)。
+* 若要移动面板，请每当![移动](/help/assets/icons/Move.svg)可见时拖放该面板（通常是将鼠标悬停在标题上）。
 
 
 ## 数据视图
@@ -155,7 +167,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [下拉区段](https://video.tv.adobe.com/v/327489?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [下拉区段](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 {{videoaa}}
 
