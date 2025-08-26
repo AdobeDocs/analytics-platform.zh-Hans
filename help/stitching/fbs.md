@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-source-git-commit: 98432804b71805c3714423dff577bbf80d5c92d1
+source-git-commit: 1ee282d0bf91c1a2f27073d0755cf404148d4d5b
 workflow-type: tm+mt
-source-wordcount: '1779'
+source-wordcount: '1784'
 ht-degree: 15%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 15%
 
 ## Identitymap
 
-基于字段的拼接支持在以下情况下使用[`identityMap`字段组](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition#identity)：
+基于字段的拼接支持在以下情况下使用[`identityMap`字段组](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity)：
 
 - 使用`identityMap`命名空间中的主标识来定义persistentID：
    - 如果在不同的命名空间中找到多个主身份，则命名空间中的身份按词法排序并选择第一个身份。
@@ -57,10 +57,10 @@ ht-degree: 15%
 
 
 - 使用`identityMap`命名空间定义persistentID或transientID，或同时定义两者：
-   - 如果在`identityMap`命名空间中找到persistentID或transientID的多个值，则使用第一个词典学可用值。
+   - 如果在`identityMap`命名空间中找到persententID或transientID的多个值，则使用第一个词典学可用值。
    - persistentID和transientID的命名空间必须互斥。
 
-  在以下示例中，命名空间和身份会生成选定命名空间(ECID)的已排序身份列表，最后生成选定身份的列表。
+  在以下示例中，您已选择ECID作为用于基于字段的拼合的命名空间。 该选择导致排序的标识列表，以及最终选择的标识。
 
   <table style="table-layout:auto">
      <tr>
@@ -142,7 +142,7 @@ ht-degree: 15%
 
 延迟的数据（时间戳超过24小时之前的数据）会尽最大努力处理，同时会为当前数据的拼合设置优先顺序以实现最高质量。
 
-+++
++++ 
 
 ### 步骤 2：重播拼接
 
@@ -174,7 +174,7 @@ ht-degree: 15%
 
 当标识自定义变量与设备绑定时，归因可发挥作用。 在以上示例中，事件1和10是在重放之后拼接的，仅留下事件8和9未拼接。 并将“人员”量度（累积）减少到2。
 
-+++
++++ 
 
 ### 步骤3：隐私请求
 
@@ -202,7 +202,7 @@ ht-degree: 15%
 | 12 | 2023-05-12 12:12 | `81911` | - | **`Bob`** | `Bob` | - | `81911` |
 | | | **3个设备** | | **4人**：<br/>246，`Bob`，`3579`，`81911` | **2人**：<br/>Bob，`3579` |  | **3人**：<br/>`246`，`3579`，`81911` |
 
-+++
++++ 
 
 ## 先决条件
 
@@ -214,7 +214,7 @@ ht-degree: 15%
    - **临时ID**，该标识符仅在部分行可用。 例如，经过身份验证的访客的经过哈希处理的用户名或电子邮件地址。您实际上可以使用任何喜欢的标识符。 拼接会将此字段视为保存实际人员ID信息。 为获得最佳的拼接结果，应在数据集的事件中为每个永久ID至少发送一次临时ID。 如果计划在Customer Journey Analytics连接中包含此数据集，则最好其他数据集也具有类似的通用标识符。
 
 <!--
-- Both columns (persistent ID and transient ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and transient ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 

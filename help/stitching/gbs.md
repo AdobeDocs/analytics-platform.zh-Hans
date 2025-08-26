@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: 98432804b71805c3714423dff577bbf80d5c92d1
+source-git-commit: 1ee282d0bf91c1a2f27073d0755cf404148d4d5b
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1542'
 ht-degree: 7%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 7%
 
 ## Identitymap
 
-基于图形的拼接支持在以下情况下使用[`identityMap`字段组](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition#identity)：
+基于图形的拼接支持在以下情况下使用[`identityMap`字段组](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity)：
 
-- 使用`identityMap`命名空间中的主标识来定义persistentID：
+- 在`identityMap`命名空间中使用主标识来定义persistentID：
    - 如果在不同的命名空间中找到多个主身份，则命名空间中的身份按词法排序并选择第一个身份。
    - 如果在单个命名空间中找到多个主身份，则选择第一个词典学上可用的主身份。
 
@@ -56,9 +56,9 @@ ht-degree: 7%
   </table>
 
 - 使用`identityMap`命名空间定义persistentID：
-   - 如果在`identityMap`命名空间中找到persitentID的多个值，则使用第一个词典学上的可用标识。
+   - 如果在`identityMap`命名空间中找到persistentID的多个值，则使用第一个词典学上的可用标识。
 
-  在以下示例中，命名空间和身份会生成选定命名空间(ECID)的已排序身份列表，最后生成选定身份的列表。
+  在以下示例中，您已选择ECID作为要使用的命名空间。 该选择导致排序的标识列表，以及最终选择的标识。
 
   <table style="table-layout:auto">
      <tr>
@@ -113,7 +113,7 @@ ht-degree: 7%
 ![身份图246](assets/identity-graph-246.svg)
 ![身份图3579](assets/identity-graph-3579.svg)
 
-您可以使用[身份图形查看器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/identity-graph-viewer)查看特定配置文件的随时间变化的身份图形。 另请参阅[标识服务链接逻辑](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/identity-linking-logic)，以更好地了解链接标识时使用的逻辑。
+您可以使用[身份图形查看器](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer)查看特定配置文件的随时间变化的身份图形。 另请参阅[标识服务链接逻辑](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic)，以更好地了解链接标识时使用的逻辑。
 
 ### 步骤1：实时拼合
 
@@ -144,7 +144,7 @@ ht-degree: 7%
 
 +++ 详细信息
 
-重播拼接发生在2023-05-13 16:30，具有24小时回顾窗口配置，在这种情况下，来自示例的某些事件将被重新拼接（由![重播](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)指示）。
+重播拼接发生在2023-05-13 16:30，回顾时间范围配置为24小时，在这种情况下，将重新拼接示例中的某些事件（由![重播](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)指示）。
 
 | | 时间 | 永久ID<br/>`ECID` | 命名空间<br/>`Email` ![图形](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | 已拼合ID<br/>（实时拼合后） | 拼合ID<br/>（重播24小时后） |
 |---|---|---|---|---|---|
@@ -158,7 +158,7 @@ ht-degree: 7%
 {style="table-layout:auto"}
 
 
-重放拼合时间为2023-05-13 16:30，具有7天回看窗口配置，在这种情况下，将重新拼合示例中的所有事件。
+重播拼接发生在2023-05-13 16:30，回顾窗口配置为7天，在这种情况下，将重新拼接示例中的所有事件。
 
 
 | | 时间 | 永久ID<br/>`ECID` | 命名空间<br/>`Email` ![图形](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | 已拼合ID<br/>（实时拼合后） | 拼合ID<br/>（重播7天后） |
@@ -181,7 +181,7 @@ ht-degree: 7%
 
 +++ 详细信息
 
-下表显示与上述相同的数据，但显示隐私请求（例如，在2023-05-13 18:00）对示例事件具有的影响。
+下表显示与上述相同的数据，但显示了隐私请求（例如，在2023-05-13 18:00）对示例事件产生的影响。
 
 | | 时间 | 永久ID<br/>`ECID` | 命名空间<br/>`Email` ![图形](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | 拼合ID（隐私请求后） |
 |--:|---|---|---|---|
@@ -203,7 +203,7 @@ ht-degree: 7%
 
 - Adobe Experience Platform中的事件数据集（您要对其应用拼接）必须有一列用于在每行上标识访客，即&#x200B;**永久ID**。 例如，由Adobe Analytics AppMeasurement库生成的访客ID或由Experience Platform Identity服务生成的ECID。
 - 永久性ID还必须在架构中定义为[标识](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)。
-- 来自Experience Platform Identity Service的标识图必须具有要在拼接期间用于解析&#x200B;**临时ID**&#x200B;的命名空间（例如`Email`或`Phone`）。 有关详细信息，请参阅[Experience Platform Identity Service](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home)。
+- 来自Experience Platform Identity Service的标识图必须具有要在拼接期间用于解析`Email`临时ID`Phone`的命名空间（例如&#x200B;**或**）。 有关详细信息，请参阅[Experience Platform Identity Service](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home)。
 
 >[!NOTE]
 >
@@ -217,7 +217,7 @@ ht-degree: 7%
 - 使用指定的命名空间查询临时ID时，不考虑时间戳。 因此，持久ID可能与具有更早时间戳的记录的临时ID拼合。
 - 在共享设备方案中，如果图形中的命名空间包含多个标识，则使用第一个词典标识。 如果命名空间限制和优先级是在发布图形链接规则时配置的，则使用上次经过身份验证的用户身份。 有关详细信息，请参阅[共享设备](/help/use-cases/stitching/shared-devices.md)。
 - 在身份图中，存在三个月回填身份信息的硬性限制。 如果您没有使用Experience Platform应用程序（如Real-time Customer Data Platform）来填充身份图，则可以使用回填身份。
-- 应用[Identity Service护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/guardrails)。 例如，查看以下[静态限制](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/guardrails#static-limits)：
+- 应用[Identity Service护栏](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails)。 例如，查看以下[静态限制](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits)：
    - 图形中的最大标识数：50。
    - 一次批次摄取中指向某个身份的最大链接数：50。
    - 用于图形提取的XDM记录中的最大身份数： 20。
