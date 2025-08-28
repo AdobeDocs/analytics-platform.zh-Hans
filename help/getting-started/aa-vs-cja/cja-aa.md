@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 7f44c7497a48e8377ca26cb194f828c3c8836f98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2709'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -112,10 +112,10 @@ ht-degree: 98%
 | **处理规则、VISTA 规则、营销渠道处理规则** | 支持使用 Adobe Experience Platform 数据准备功能以及基于 WebSDK 的数据集和 Analytics Source Connector 的数据的[派生字段。](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/derived-fields) |
 | **Products 变量** | 在 Experience Platform 中，用户可在数据集架构中使用对象数组满足此用例。在 Customer Journey Analytics 中，客户可使用任意数量的产品变量，而不像在 Adobe Analytics 中那样只能使用一个变量。 |
 | **项目共享** | 仅在 Customer Journey Analytics 的用户之间支持项目共享功能 - 在 Customer Journey Analytics 与传统 Analysis Workspace 之间无项目共享。 |
-| **实时报告** | Customer Journey Analytics中的实时报表可实时显示和更新Analysis Workspace中一个或多个面板的数据和可视化图表。 |
+| **实时报告** | Customer Journey Analytics 中的实时报告功能可以实时显示并更新 Analysis Workspace 的一个或多个面板中的数据和可视化图表。 |
 | **Report Builder** | 通过一个新的 Office 365 Microsoft Excel 插件支持此功能。 |
 | **用户权限/数据访问控制** | Customer Journey Analytics 区分 [Adobe Admin Console](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/admin-tool-experience-cloud) 产品管理员、产品配置文件管理员和用户。只有产品管理员可以创建、更新和删除其他用户所创建的连接、项目、区段或计算量度。产品管理员和产品轮廓管理员均可编辑数据视图。对于创建计算量度、区段或注释等操作还有其他用户权限可用。 |
-| **可视化图表** | 支持所有Workspace可视化图表。 |
+| **可视化图表** | 支持所有 Workspace 可视化。 |
 | **跨设备/跨渠道拼合** | 支持包含身份标识信息的事件数据集。请参阅[拼合](../../stitching/overview.md)。 |
 
 ## 部分支持 {#partial}

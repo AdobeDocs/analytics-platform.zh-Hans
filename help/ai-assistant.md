@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 source-git-commit: 82b36895fe5186f0133c128d434470ea7f875677
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '648'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Customer Journey Analytics 的 AI 助手适用于所有产品层。
 
 Data Insights 代理可从 Customer Journey Analytics 中的 AI 助手访问，它是一个生成式 AI 对话代理，可以快速有效地回答有关您数据的问题。它使用来自数据视图的组件和您的实际数据在 Analysis Workspace 中构建相关的可视化图表。
 
-有关在AI助手中使用Data Insights Agent的更多信息，请参阅[使用Data Insights Agent可视化数据](/help/data-analysis-ai.md)。
+有关在 AI 助手中使用 Data Insights 代理的更多信息，请参阅 [使用 Data Insights 代理可视化数据](/help/data-analysis-ai.md)。
 
 ## 功能访问权限
 
