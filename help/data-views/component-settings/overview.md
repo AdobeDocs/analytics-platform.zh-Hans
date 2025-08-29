@@ -5,7 +5,7 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 96d6882c31a5e130219986d156c8e6eda84ec325
+source-git-commit: 9e263d638d483194424a492b0494672ef0f62e71
 workflow-type: tm+mt
 source-wordcount: '3739'
 ht-degree: 55%
@@ -105,7 +105,7 @@ ht-degree: 55%
 
   **注意**：地图可视化图表处于版本的“有限测试”阶段，可能尚未在环境中可用。
 
-* 当您使用Adobe[提供的](/help/analysis-workspace/templates/use-templates.md)模板时。 Adobe提供的某些模板可能不起作用，因为某些组件不在您的数据视图中。
+* 当您使用Adobe[提供的](/help/analysis-workspace/templates/use-templates.md)模板时。 Adobe提供的某些模板可能无法工作，因为某些组件不在数据视图中。
 
   对于每个缺失的组件，数据视图中都会提供一个匹配的上下文标签。您需要将匹配的上下文标签添加到数据视图中已存在的组件中。 或者，您需要向数据视图添加新组件，并将上下文标签添加到该组件（如果尚未自动提供）。
 
