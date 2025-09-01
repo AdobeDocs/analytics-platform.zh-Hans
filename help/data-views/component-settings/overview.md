@@ -5,9 +5,9 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 9e263d638d483194424a492b0494672ef0f62e71
+source-git-commit: aa635d52007a3032d8c3f90a779d1b70213dee9e
 workflow-type: tm+mt
-source-wordcount: '3739'
+source-wordcount: '3738'
 ht-degree: 55%
 
 ---
@@ -90,7 +90,7 @@ ht-degree: 55%
 * **一致性**：贵组织中处理一个或多个项目的每个人（这些项目基于使用上下文标签的数据视图）都将获得相同的行为。
 * **功能和模板的可见性**：仅在分配了正确的上下文标签时，才会显示某些可视化和功能。 例如：
 
-   * 仅当Customer Journey Analytics知道哪些字段表示纬度和经度时，[地图](/help/analysis-workspace/visualizations/map.md)可视化图表才会正确显示。
+   * 仅当Customer Journey Analytics知道哪些组件表示纬度和经度时，[地图](/help/analysis-workspace/visualizations/map.md)可视化图表才会正确显示。
    * 只有应用正确的上下文标签并且关联的组件变为可用时，才能看到特定的[模板](/help/analysis-workspace/templates/use-templates.md)。
 
 以下情况可能需要上下文标签：
@@ -105,7 +105,7 @@ ht-degree: 55%
 
   **注意**：地图可视化图表处于版本的“有限测试”阶段，可能尚未在环境中可用。
 
-* 当您使用Adobe[提供的](/help/analysis-workspace/templates/use-templates.md)模板时。 Adobe提供的某些模板可能无法工作，因为某些组件不在数据视图中。
+* 显示Adobe[提供的](/help/analysis-workspace/templates/use-templates.md)模板。 Adobe提供的某些模板可能无法工作，因为某些组件不在数据视图中。
 
   对于每个缺失的组件，数据视图中都会提供一个匹配的上下文标签。您需要将匹配的上下文标签添加到数据视图中已存在的组件中。 或者，您需要向数据视图添加新组件，并将上下文标签添加到该组件（如果尚未自动提供）。
 
