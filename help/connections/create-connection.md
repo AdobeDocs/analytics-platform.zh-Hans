@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: de153fb2533d592281280eab8f1578eeb2bf1a86
+source-git-commit: 57ace74bbc093c6fa52a37c1b1b9666b1aa048d1
 workflow-type: tm+mt
-source-wordcount: '7285'
+source-wordcount: '7334'
 ht-degree: 66%
 
 ---
@@ -99,6 +99,10 @@ ht-degree: 66%
 >title="更改购买群组 ID"
 >abstract="更改购买群组 ID 会删除连接中的所有现有数据，并根据新的购买群组 ID 重新提取数据集中的所有数据。此操作可能会产生成本影响。<br/><br/>当您选择&#x200B;**[!UICONTROL 继续]**&#x200B;时，报告可能会延迟，直到该过程完成。"
 
+>[!CONTEXTUALHELP]
+>id="connection_change_persistentid"
+>title="更改永久ID"
+>abstract="更改永久ID会删除连接中的所有现有数据，并根据新的永久ID从数据集重新摄取所有数据。 此操作可能会产生成本影响。<br/><br/>当您选择&#x200B;**[!UICONTROL 继续]**&#x200B;时，报告可能会延迟，直到该过程完成。"
 
 连接创建和编辑工作流体验通过辅助工作流将所有数据集和连接配置设置引入屏幕中心。它提供详细的数据集选择、配置和审查体验。允许您指定关键信息，如[数据集类型](#dataset-types)、大小、架构、数据集ID、批次状态、回填状态、身份等，以降低连接配置错误的风险。 以下是功能概述：
 
@@ -111,7 +115,7 @@ ht-degree: 66%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建并编辑连接](https://video.tv.adobe.com/v/3409297/?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建并编辑连接](https://video.tv.adobe.com/v/343044/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -147,7 +151,7 @@ ht-degree: 66%
 
 ### Customer Journey Analytics
 
-在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**&#x200B;屏幕中：
+在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**屏幕中：
 
 ![无标题连接设置](assets/create-conn1.png)
 
@@ -187,7 +191,7 @@ ht-degree: 66%
 
 [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
 
-在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**&#x200B;屏幕中：
+在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**屏幕中：
 
 ![无标题连接设置](assets/create-conn1-b2b.png)
 
@@ -272,7 +276,7 @@ ht-degree: 66%
 >[!CONTEXTUALHELP]
 >id="cja_connection_personid"
 >title="人员 ID"
->abstract="从 Experience Platform 的数据集架构中定义的可用身份标识中选择一个人员 ID（人员的唯一标识符）。"
+>abstract="从您在Experience Platform的数据集架构中定义的可用身份中选择一个人员ID（人员的唯一标识符）。"
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
@@ -620,7 +624,7 @@ ht-degree: 66%
 
 ### 过去的回填
 
-在界面中选择![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;时，**[!UICONTROL 过去的回填： _数据集名称_]**&#x200B;对话框将显示该数据集中的最新回填。
+在界面中选择![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;时，**[!UICONTROL 过去的回填： _数据集名称_]**对话框将显示该数据集中的最新回填。
 
 ## 数据集类型 {#dataset-types}
 
