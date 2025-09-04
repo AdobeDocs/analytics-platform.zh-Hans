@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 50599b36d333cae3735c6d4fd1b0af6fcabe9177
+source-git-commit: 9774e0e3af024823a03dbcd8d6766877f55e95d8
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 97%
+source-wordcount: '792'
+ht-degree: 93%
 
 ---
 
@@ -51,7 +51,7 @@ Customer Journey Analytics 支持两种类型的拼接：[基于字段的拼接]
 >[!IMPORTANT]
 >
 >
->- 将您对源事件数据集架构所做的任何更改也应用于新拼接的数据集架构。
+>- 对源事件数据集架构所做的任何更改，也应同步应用到新的拼接数据集架构中。
 >
 >- 如果移除源数据集，拼接的数据集将停止处理，并被系统移除。
 >
@@ -69,11 +69,25 @@ Customer Journey Analytics 支持两种类型的拼接：[基于字段的拼接]
 
 - 将两个数据集连接。在 Customer Journey Analytics 中，连接通常用于在 Analysis Workspace 中查找或分类。拼接使用了连接功能，但拼接过程本身不只涉及到连接。
 
+
+## Journey Optimizer 数据集
+
+拼接支持以下自动生成的Journey Optimizer数据集：
+
+- AJO历程步骤事件
+- AJO入站活动事件数据集
+- AJO表面数据集
+- AJO消息反馈事件数据集* AJO推送跟踪体验事件数据集
+- AJO 电子邮件跟踪体验事件数据集
+- AJO密件抄送反馈事件数据集
+- AJO实时活动反馈事件数据集
+- AJO ExD决策事件数据集
+
 >[!MORELIKETHIS]
 >
 >[基于字段的拼接](fbs.md)
->&#x200B;>[基于图形的拼接](gbs.md)
->&#x200B;>[使用拼接](use-stitching.md)
->&#x200B;>[验证拼接](validate.md)
->&#x200B;>[关于拼接的常见问题解答](faq.md)
+>>[基于图形的拼接](gbs.md)
+>>[使用拼接](use-stitching.md)
+>>[验证拼接](validate.md)
+>>[关于拼接的常见问题解答](faq.md)
 
