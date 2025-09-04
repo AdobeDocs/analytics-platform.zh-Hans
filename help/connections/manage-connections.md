@@ -6,10 +6,10 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 283b494799de4124a3870437bd83c307e3766819
+source-git-commit: 386d36b159b87f6eb5edef6f27754f4417f61b07
 workflow-type: tm+mt
-source-wordcount: '4693'
-ht-degree: 62%
+source-wordcount: '4844'
+ht-degree: 58%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 62%
 | **[!UICONTROL 数据集]** | 连接中包含的一个或多个数据集链接。您可以选择数据集超链接来查看连接中的数据集。如果选定的连接中包含更多数据集，请选择 **[!UICONTROL +*x* 更多]**，以显示&#x200B;**[!UICONTROL 包含的数据集]**&#x200B;面板。此面板显示指向所有数据集的链接以及![搜索](/help/assets/icons/Search.svg)以搜索作为连接一部分的特定数据集的选项。<p>![数据集已包括](assets/datasets-included.png)<p>选择一个数据集名称，以在新选项卡的Experience Platform界面中打开该数据集。 |
 | **[!UICONTROL 沙盒]** | 此连接从中获取其数据集的 [Experience Platform 沙盒](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sandbox/home)。在创建连接时选择此沙盒。 保存连接后，无法更改沙盒。 |
 | **[!UICONTROL 所有者]** | 创建连接的人员。 |
-| **[!UICONTROL 导入新数据]** | 数据集导入新数据的状态： <p>![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _On]**&#x200B;用于配置为导入新数据的数据集，并且<p>对于未配置为导入新数据的数据集，![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _x 关闭_]**。 |
+| **[!UICONTROL 导入新数据]** | 数据集导入新数据的状态： <p>![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _On]**用于配置为导入新数据的数据集，并且<p>对于未配置为导入新数据的数据集，![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _x 关闭_]**。 |
 | **[!UICONTROL 创建日期]** | 创建连接的时间戳。 |
 | **[!UICONTROL 上次修改时间]** | 上次更新连接的时间戳。 |
 | **[!UICONTROL 回填数据]** | 数据集中回填数据的状态。<p>![状态为红色](assets/status-red.svg)   **[!UICONTROL _x _回填失败]**，表示数据集中回填失败的次数，<p>![状态为橙色](assets/status-orange.svg)   **[!UICONTROL _x _正在处理回填]**，表示数据集中正在处理的回填次数，<p>![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _回填完成]**，数据集中已完成的回填次数，以及<p>如果连接中的数据集未定义回填，则![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _关闭_]**。 |
@@ -149,7 +149,7 @@ ht-degree: 62%
 
 * 在Customer Journey Analytics中对Journey Optimizer数据执行深入分析(通过使用Journey Optimizer中的&#x200B;**[!UICONTROL 在CJA中分析]**&#x200B;按钮)。
 
-  有关详细信息，请参阅Journey Optimizer文档中的[在Customer Journey Analytics中分析](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template)。
+  有关详细信息，请参阅Journey Optimizer文档中的[在Customer Journey Analytics中分析](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template)。
 
 * 编辑Journey Optimizer连接和关联的数据视图。
 
@@ -316,13 +316,13 @@ ht-degree: 62%
 
 | 详细信息 | 描述 |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全球帐户 ID &#x200B;]** | 您指定为连接的全局帐户ID的标识。 仅适用于已配置全局帐户容器的基于帐户的连接。 |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户 ID &#x200B;]** | 您指定为连接的帐户ID的身份。 仅适用于未配置全局帐户容器的基于帐户的连接。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全球帐户 ID ]** | 您指定为连接的全局帐户ID的标识。 仅适用于已配置全局帐户容器的基于帐户的连接。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户 ID ]** | 您指定为连接的帐户ID的身份。 仅适用于未配置全局帐户容器的基于帐户的连接。 |
 | **[!UICONTROL 人员 ID]** | 您指定为连接的人员ID的身份。 |
 | **[!UICONTROL 键]** | 您为查找数据集指定的键。 |
 | **[!UICONTROL 匹配键]** | 您为查找数据集指定的匹配键。 |
 | **[!UICONTROL 时间戳]** | 为事件数据集定义的时间戳。 |
-| **[!UICONTROL 可用的记录数]** | 在日程表中选择的特定时间段内，此数据集摄取的总行数。添加数据后，数据立刻在报告中显示，没有延迟。但是，当您创建一个全新的连接时，则会出现[延迟](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq)。 |
+| **[!UICONTROL 可用的记录数]** | 在日程表中选择的特定时间段内，此数据集摄取的总行数。添加数据后，数据立刻在报告中显示，没有延迟。但是，当您创建一个全新的连接时，则会出现[延迟](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq)。 |
 | **[!UICONTROL 添加的记录数]** | 在选定日期范围内添加到连接的数据集记录（行）数。 |
 | **[!UICONTROL 跳过的记录数]** | 在选定日期范围内为连接传输数据期间跳过的数据集记录（行）数。 |
 | **[!UICONTROL 添加的批次数]** | 已添加到连接的批次数。 |
@@ -376,18 +376,18 @@ ht-degree: 62%
 >[!CONTEXTUALHELP]
 >id="connections_corereportablerows"
 >title="核心可报告行数"
->abstract="过去 13 个月可用的总行数。例如，2024 年 2 月 1 日，该数字显示事件时间戳从 2023 年 1 月到 2024 年 1 月的可用行数总数。"
+>abstract="当月过去13个月中可用的总行数，与上月相比具有百分比变化。  例如，2024 年 2 月 1 日，该数字显示事件时间戳从 2023 年 1 月到 2024 年 1 月的可用行数总数。"
 
 >[!CONTEXTUALHELP]
 >id="connections_historicalreportablerows"
 >title="历史可报告行数"
->abstract="超过 13 个月的时间范围内可用的总行数。例如，2024 年 2 月 1 日，该数字显示事件时间戳早于 2023 年 1 月的可用行数总数。"
+>abstract="当月超过13个月的时段内可用的总行数，与上月相比具有百分比变化。 例如，2024 年 2 月 1 日，该数字显示事件时间戳早于 2023 年 1 月的可用行数总数。"
 
 
 >[!CONTEXTUALHELP]
 >id="connections_averagerowsize"
 >title="平均行大小"
->abstract="本月每行数据摄取并存储在 Customer Journey Analytics 中所使用的平均存储量（以 KB 为单位），以及与上个月相比的变化百分比。"
+>abstract="当月每个数据行在摄取和存储时消耗的平均存储量(KB)，与上月相比有百分比变化。"
 
 
 >[!CONTEXTUALHELP]
@@ -420,36 +420,36 @@ ht-degree: 62%
 
 | 量度名称 | 描述 |
 |---|---|
-| 历史可报告行数 | 超过 13 个月的时间段内的行数。 |
-| 核心可报告行数 | 过去 13 个月的行数。 |
-| 摄取的行数 | 特定时期内摄取了多少行。 |
-| 可报告行数 | 在特定时段内，连接中有多少行数据？ |
-| 累计行数 | 截至特定月份已摄取了多少行。 |
+| **历史可报告行** | 超过 13 个月的时间段内的行数。 |
+| **核心可报告行** | 过去 13 个月的行数。 |
+| **核心数据卷** | 存储在磁盘上的总数据量。 |
+| **平均行大小** | 为摄取和存储的每一行数据使用的平均存储量。 |
+| **摄取的行数** | 特定时期内摄取了多少行。 |
+| **可报告行数** | 在特定时段内，连接中有多少行数据？ |
+| **累计行** | 截至特定月份已摄取了多少行。 |
 
 >[!NOTE]
 >
 >从 2024 年 7 月开始收集核心、历史和总体记录数据。请联系您的客户经理获取早期的历史数据。
 >
 
-
 “使用情况”界面由两个面板组成：
 
-* **[!UICONTROL 关键使用情况量度]**&#x200B;面板：提供核心和历史数据可报告行。该面板还跟踪核心数据和历史数据行与上个月相比的百分比变化。
+* 显示的&#x200B;**[!UICONTROL 密钥使用量度]**&#x200B;面板：
 
-  该面板显示了一个可视化图表，其中包含：
+   * 四个摘要可视化图表显示了与上月相比的总变化和百分点变化：
 
-   * **[!UICONTROL 核心数据可报告行数]**。
+      * **[!UICONTROL 可报告的核心数据行]**。 当月过去13个月中可用的总行数，与上月相比具有百分比变化。 例如，2024 年 2 月 1 日，该数字显示事件时间戳从 2023 年 1 月到 2024 年 1 月的可用行数总数。
+      * **[!UICONTROL 历史数据可报告行]**。 当月超过13个月的时段内可用的总行数，与上月相比具有百分比变化。 例如，2024 年 2 月 1 日，该数字显示事件时间戳早于 2023 年 1 月的可用行数总数。
+      * **[!UICONTROL 核心数据卷]**。 磁盘上存储的带有本月时间戳的数据总量（以 TB 为单位），以及与上个月相比的变化百分比。
+      * **[!UICONTROL 平均行大小]**。 当月每个数据行在摄取和存储时消耗的平均存储量(KB)，与上月相比有百分比变化。
 
-     过去 13 个月中您有多少可报告的行。摘要数字是上个月（例如 2024 年 12 月）的核心可报告行数（例如 741M）。
+   * 显示过去13个月&#x200B;**[!UICONTROL 核心数据和历史数据可报告行]**&#x200B;的栈叠垂直条形图可视化图表。
 
-   * **[!UICONTROL 历史数据可报告行数]**。
-
-     对于超过 13 个月的时间段，您有多少可报告行？摘要数字是上个月（例如 2024 年 12 月）的历史可报告行数（例如 127M）。
-
-  当您将鼠标悬停在可视化效果中的任何堆积条形图上时，将会弹出一个窗口，其中显示该条形图这一特定部分的行数（例如）。
+     当您将鼠标悬停在可视化图表中任何栈叠的条形图上时，会出现一个弹出窗口，其中显示该条形图特定部分的行数。 在下面的示例中，显示了当月(2025年8月： 936M (936,347,325))的核心数据可报告行。
 
 
-  ![关键使用量度](assets/usage-key-usage-metrics.png)
+     ![关键使用量度](assets/usage-key-usage-metrics.png)
 
 * 一个组合面板，显示三个子面板：
 
@@ -500,5 +500,5 @@ ht-degree: 62%
 >[!MORELIKETHIS]
 >
 >[查看、排查和修改连接设置](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja)教程
->&#x200B;>[管理您的 Customer Journey Analytics 使用情况](/help/technotes/estimate-usage.md)
+>>[管理您的 Customer Journey Analytics 使用情况](/help/technotes/estimate-usage.md)
 >
