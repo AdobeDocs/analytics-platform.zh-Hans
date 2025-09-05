@@ -5,9 +5,9 @@ exl-id: f89d07e9-100e-4f82-9486-35bc9c748b19
 feature: Experience Platform Integration
 role: User, Admin
 source-git-commit: 1718379e1ea6baffef8f4da045662e95a47e1480
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '144'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Adobe 提供多种产品和解决方案，可以利用托管在 Adobe Experience
 
 * [Adobe Analytics](/help/integrations/aa.md)
 
-* [目标](/help/integrations/at.md)
+* [Target](/help/integrations/at.md)
 
 * [Adobe Advertising](/help/integrations/advertising.md)
 
