@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 1a003b38ef26eb811b19cd091c6e089f33ddb6f6
+source-git-commit: c4aea74807be15af56413522d9e6fbf5f18a37a0
 workflow-type: tm+mt
-source-wordcount: '1918'
-ht-degree: 28%
+source-wordcount: '2041'
+ht-degree: 26%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 28%
 
 1. 登录到[Customer Journey Analytics](https://analytics.adobe.com)并创建一个空白的Workspace项目。
 2. 选择左侧的&#x200B;**[!UICONTROL **&#x200B;可视化图表&#x200B;**]**&#x200B;选项卡，然后将&#x200B;**[!UICONTROL **&#x200B;流量&#x200B;**]**&#x200B;可视化图表拖到右侧的画布上。
-3. 选择左侧的&#x200B;**[!UICONTROL **&#x200B;组件&#x200B;**]**&#x200B;选项卡，并将维度&#x200B;**[!UICONTROL **&#x200B;数据集ID **]**&#x200B;拖到标记为&#x200B;**[!UICONTROL **&#x200B; Dimension或项&#x200B;**]**&#x200B;的中心位置。
+3. 选择左侧的&#x200B;**[!UICONTROL **&#x200B;组件&#x200B;**]**&#x200B;选项卡，并将维度&#x200B;**[!UICONTROL **&#x200B;数据集ID **]**&#x200B;拖到标记为&#x200B;**[!UICONTROL ** Dimension或项&#x200B;**]**&#x200B;的中心位置。
 4. 此流量报告是交互式的。要将流量展开到后续或之前的页面，请选择任意值。 使用右键单击菜单可展开或折叠列。此外，还可以在同一流量报告中使用不同的维度。
 
 如果要重命名“数据集 ID”维度项，可使用查找数据集。
@@ -75,7 +75,7 @@ ht-degree: 28%
 
 +++ 跨设备分析（传统Analytics中的一项功能）和跨渠道分析之间有何区别？
 
-[跨设备分析](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=zh-Hans)是传统Adobe Analytics特有的功能，它使您能够了解人们如何跨设备操作。 该功能提供了两种将设备数据链接在一起的工作流：基于字段的拼接和设备图。
+[跨设备分析](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html)是传统Adobe Analytics特有的功能，它使您能够了解人们如何跨设备操作。 该功能提供了两种将设备数据链接在一起的工作流：基于字段的拼接和设备图。
 
 跨渠道分析是特定于Customer Journey Analytics的用例，通过该用例，您可以同时了解人们如何跨设备和跨渠道操作。 它拼合数据集的人员ID，允许将该数据集与其他数据集无缝组合。 该功能在设计上类似于基于跨设备分析的字段拼接，但由于传统Analytics和Customer Journey Analytics之间的数据架构不同，因此实施方法也不同。 有关详细信息，请参阅[拼接](overview.md)和[跨渠道分析](../use-cases/cross-channel/cross-channel.md)用例。
 
@@ -148,10 +148,10 @@ Adobe将根据当地和国际法律处理隐私请求。 Adobe 提供了 [Adobe 
 |  | 2 | ts2 | 123 | ecid | Alex | CustId |
 
 
-| 事件数据集 | Id | timestamp | 持久ID | 永久命名空间 | 临时id | 瞬态命名空间 |
+| 事件数据集 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 |
 |:---:|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ecid | | |
-| ![删除大纲](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~上下浮动~~ | ~~CustId~~ |
+| ![删除大纲](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
 | | 3 | ts2 | 123 | ecid | Alex | CustId |
 
 
@@ -179,7 +179,7 @@ Adobe将根据当地和国际法律处理隐私请求。 Adobe 提供了 [Adobe 
 
 +++ 如果一个或多个事件中的临时ID字段具有占位符值（如`Undefined`），会发生什么情况？
 
-请小心“人员崩溃”，在将拼接应用于使用临时ID占位符值的数据时会发生这种情况。 在下面的示例表中，源自于CRM系统数据集的未定义人员ID被填充为“Undefined”值，从而导致人员的表示不正确。
+务必要谨慎，当将拼合应用于将占位符值用于临时ID的数据时，会出现“人员折叠”。 在下面的示例表中，源自于CRM系统数据集的未定义人员ID被填充为“Undefined”值，从而导致人员的表示不正确。
 
 | 事件 | 时间戳 | 永久性ID(Cookie ID) | 临时ID（登录ID） | 拼合ID（重播后） |
 |---|---|---|---|---|
@@ -205,7 +205,7 @@ Customer Journey Analytics中的某些指标与传统Analytics中的指标相似
 
 | **Customer Journey Analytics 拼接数据** | **Customer Journey Analytics 未拼接数据** | **Adobe Analytics** | **带 CDA 的 Analytics Ultimate** |
 | ----- | ----- | ----- | ----- |
-| **人员** =将拼合ID选为人员ID的不同人员ID数。 **人员数** 可能高于或低于传统 Adobe Analytics 中的&#x200B;**独特访客数**，具体取决于拼接过程的结果。 | **人员** =不同人员ID的数量（根据选定为人员ID的列）。 在Customer Journey Analytics中将`endUserIDs._experience.aaid.id`用作人员ID时，Analytics源连接器数据集中的&#x200B;**人员**&#x200B;类似于传统Adobe Analytics中的&#x200B;**独特访客**。 | **独特访客** = 不同访客 ID 的数量。**独特访客**&#x200B;可能与不同 **ECID** 的数量不一致。 | 请参阅[人员数](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=zh-Hans)。 |
+| **人员** =将拼合ID选为人员ID的不同人员ID数。 **人员数** 可能高于或低于传统 Adobe Analytics 中的&#x200B;**独特访客数**，具体取决于拼接过程的结果。 | **人员** =不同人员ID的数量（根据选定为人员ID的列）。 在Customer Journey Analytics中将&#x200B;**用作人员ID时，Analytics源连接器数据集中的**&#x200B;人员&#x200B;**类似于传统Adobe Analytics中的**&#x200B;独特访客`endUserIDs._experience.aaid.id`。 | **独特访客** = 不同访客 ID 的数量。**独特访客**&#x200B;可能与不同 **ECID** 的数量不一致。 | 请参阅[人员数](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=zh-Hans)。 |
 | **会话**：根据 Customer Journey Analytics 数据视图中的会话设置定义。拼接过程可能会将来自多个设备的各个会话组合成单个会话。 | **会话**：根据 Customer Journey Analytics 数据视图中特定的会话设置定义。 | **访问数**：请参阅[访问数](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=zh-Hans)。 | **访问数**：根据 [CDA 虚拟报告包](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=zh-Hans)中特定的会话设置定义。 |
 | **活动**= Customer Journey Analytics 中拼接数据的行数。该量度通常接近于传统 Adobe Analytics 中的&#x200B;**“发生次数”。**&#x200B;但是，请注意上面关于具有空白永久ID的行的常见问题解答。 | **活动**= Customer Journey Analytics 中未拼接数据的行数。该量度通常接近于传统 Adobe Analytics 中的&#x200B;**“发生次数”。**&#x200B;但是，请注意，如果任何事件在Experience Platform数据湖的未拼接数据中有空白的人员ID，则Customer Journey Analytics中不包括这些事件。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=zh-Hans)。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=zh-Hans)。 |
 
@@ -223,9 +223,9 @@ Customer Journey Analytics和Adobe Analytics中的其他指标可能类似。 �
 
 ## 切换到基于图形的拼合
 
-+++ 是否需要重新引入数据才能从基于字段的拼接切换到基于图形的拼接？
++++ 是否需要摄取数据才能从基于字段的拼合切换到基于图形的拼合？
 
-数据不必重新引入Experience Platform，但需要在Customer Journey Analytics中重新配置。 请按照以下步骤操作：
+数据不必重新摄取到Experience Platform，但需要在Customer Journey Analytics中重新配置。 请按照以下步骤操作：
 
 1. 设置新的基于图形的拼合数据集。
 1. 在Customer Journey Analytics中将新数据集配置为新连接的一部分。
@@ -242,4 +242,37 @@ Customer Journey Analytics和Adobe Analytics中的其他指标可能类似。 �
 
 +++
 
+## 为Identity服务启用数据集
 
++++ 如何仅为Identity服务启用数据集？ 
+
+您必须确保为Identity Service启用了数据集，才能在基于图形的拼合中使用数据集。
+
+您无需获得Real-Time Customer Data Platform许可即可使用基于图形的拼合。 基于图的拼接基于可用的身份图，而不是基于实时客户档案。
+
+要仅为标识服务启用数据集，请使用对仅使用`POST`标记的`/datasets`终结点的`unifiedIdentity`请求。 例如：
+
+```shell
+curl -X POST \
+  https://platform.adobe.io/data/foundation/catalog/dataSets \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
+  -H 'x-api-key: {API_KEY}' \
+  -H 'x-gw-ims-org-id: {ORG_ID}' \
+  -H 'x-sandbox-name: {SANDBOX_NAME}' \
+  -d '{
+    "schemaRef": {
+        "id": "https://ns.adobe.com/{TENANT_ID}/schemas/31670881463308a46f7d2cb09762715",
+        "contentType": "application/vnd.adobe.xed-full-notext+json; version=1"
+    },
+    "tags": {
+       "unifiedIdentity": ["enabled:true"]
+    }
+  }'
+```
+
+当您未获得实时客户数据配置文件的许可时，在请求中对`unifiedProfile`标记的任何使用都会返回错误。
+
+有关详细信息，请参阅[创建为配置文件和标识启用的数据集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity)。
+
++++ 

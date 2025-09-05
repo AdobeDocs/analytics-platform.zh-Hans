@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: 4bca14492374939cd1ea6508c774720db61a6283
+source-git-commit: c4aea74807be15af56413522d9e6fbf5f18a37a0
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '368'
 ht-degree: 3%
 
 ---
@@ -44,9 +44,19 @@ ht-degree: 3%
    * 启用&#x200B;**[!UICONTROL 使用主身份命名空间]**&#x200B;以使用主身份命名空间。
    * 从&#x200B;**[!UICONTROL 命名空间]**&#x200B;下拉菜单中选择一个命名空间。
 
-   如果您为人员ID选择&#x200B;**[!UICONTROL 身份图]**，则必须选择命名空间。 在此之前，将显示&#x200B;**[!UICONTROL 更改为身份图]**&#x200B;对话框，以确保在使用身份图进行拼接之前已完成身份图的设置。 选择&#x200B;**[!UICONTROL 继续]**&#x200B;以继续。
+
+   如果您为人员ID选择&#x200B;**[!UICONTROL 身份图]**，则必须选择命名空间。
+
+   >[!NOTE]
+   >
+   >您必须有权使用身份图。
+   >
+
+   之前，将显示&#x200B;**[!UICONTROL 更改为身份图]**&#x200B;对话框，以确保您在使用身份图进行拼合之前[已完成数据集](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service)的身份图的设置。 选择&#x200B;**[!UICONTROL 继续]**&#x200B;以继续。
 
    * 从&#x200B;**[!UICONTROL 命名空间]**&#x200B;下拉菜单中选择一个命名空间。
 
 
-1. 从&#x200B;**[!UICONTROL 回顾窗口]**&#x200B;下拉菜单中选择一个回顾窗口。 选项为&#x200B;**[!UICONTROL 1天]**、**[!UICONTROL 7天]**、**[!UICONTROL 14天]**&#x200B;或&#x200B;**[!UICONTROL 30天]**。
+1. 从&#x200B;**[!UICONTROL 回顾窗口]**&#x200B;下拉菜单中选择一个回顾窗口。 可用选项取决于您有权访问的Customer Journey Analytics包。
+
+保存包含为身份拼接启用的数据集的连接后，每个数据集的拼接过程从该数据集的数据摄取开始时开始。
