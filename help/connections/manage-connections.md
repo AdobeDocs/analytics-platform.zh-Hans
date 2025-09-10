@@ -149,7 +149,7 @@ ht-degree: 61%
 
 * 在Customer Journey Analytics中对Journey Optimizer数据执行深入分析(通过使用Journey Optimizer中的&#x200B;**[!UICONTROL 在CJA中分析]**&#x200B;按钮)。
 
-  有关详细信息，请参阅Journey Optimizer文档中的[在Customer Journey Analytics中分析](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template)。
+  有关详细信息，请参阅Journey Optimizer文档中的[在Customer Journey Analytics中分析](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template)。
 
 * 编辑Journey Optimizer连接和关联的数据视图。
 
@@ -322,7 +322,7 @@ ht-degree: 61%
 | **[!UICONTROL 键]** | 您为查找数据集指定的键。 |
 | **[!UICONTROL 匹配键]** | 您为查找数据集指定的匹配键。 |
 | **[!UICONTROL 时间戳]** | 为事件数据集定义的时间戳。 |
-| **[!UICONTROL 可用的记录数]** | 在日程表中选择的特定时间段内，此数据集摄取的总行数。添加数据后，数据立刻在报告中显示，没有延迟。但是，当您创建一个全新的连接时，则会出现[延迟](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq)。 |
+| **[!UICONTROL 可用的记录数]** | 在日程表中选择的特定时间段内，此数据集摄取的总行数。添加数据后，数据立刻在报告中显示，没有延迟。但是，当您创建一个全新的连接时，则会出现[延迟](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq)。 |
 | **[!UICONTROL 添加的记录数]** | 在选定日期范围内添加到连接的数据集记录（行）数。 |
 | **[!UICONTROL 跳过的记录数]** | 在选定日期范围内为连接传输数据期间跳过的数据集记录（行）数。 |
 | **[!UICONTROL 添加的批次数]** | 已添加到连接的批次数。 |
