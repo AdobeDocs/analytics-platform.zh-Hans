@@ -4,15 +4,15 @@ description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 source-git-commit: f09937e6babca5549b9b78e9c90462673750a4b3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1077'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # 当前 Adobe Customer Journey Analytics 发行说明（2025 年 8 月）
 
-**上次更新日期**：2025年9月4日
+**上次更新日期**：2025 年 9 月 4 日
 
 
 这些发行说明涵盖了 2025 年 8 月 13 日至 2025 年 9 月 16 日的发布期。Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
@@ -21,7 +21,7 @@ ht-degree: 97%
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **使用情况界面的更新** | [使用情况界面](/help/connections/manage-connections.md#usage)现在添加有关核心数据卷和平均行大小的信息。 | | 2025年9月4日 |
+| **使用界面的更新** | [使用界面](/help/connections/manage-connections.md#usage)现在添加了有关核心数据量和平均行大小的信息。 | | 2025 年 9 月 4 日 |
 | **地图可视化** | 地图可视化是 Analysis Workspace 中的一种可视化功能，可让您构建任何量度（包括计算量度）的可视化地图。此工具用于识别和比较不同地理区域间的量度数据。<p>以前，只有 Adobe Analytics 中提供地图可视化功能。</p><p>Customer Journey Analytics 中的地图可视化功能对 Adobe Analytics 中的地图可视化功能进行了以下改进：</p><ul><li>使用数据视图中的任何区段作为数据源。</li><li>可以配置数据视图中的维度，精确度可达一米。</li><li>使用新的选择工具，您可以在可视化图表中选择任何区域，从选定的区域创建区段、受众、趋势或细分。</li></ul><p>有关更多信息，请参阅[地图](/help/analysis-workspace/visualizations/map.md)。</p> | 2025 年 8 月 13 日 | 2025 年 8 月 25 日 |
 | **B2B 模板** | 如果您获得 Customer Journey Analytics B2B Edition 的许可证，就可以从 Adobe 模板 UI 中获取以下额外的 B2B 模板： <ul><li>B2B 帐户参与度概述</li><li>B2B 机会参与度概述</li><li>B2B 购买群组活动</li></ul><p>有关详细信息，请参阅[使用模板](/help/analysis-workspace/templates/use-templates.md)中的 [B2B 模板](/help/analysis-workspace/templates/use-templates.md#b2b-templates)。</p> |  | 2025 年 8 月 15 日 |
 | **以 PDF 格式下载的项目将保存到您的工作站** | 当项目以 PDF 格式下载时，文件将被保存到您工作站的下载文件夹中。 <p>此前，将项目以 PDF 格式下载时，会在新的浏览器标签页中打开该 PDF，并生成唯一的 URL。</p><p>更多信息请参阅[下载项目和数据](/help/analysis-workspace/export/download-send.md)。</p> |  | 2025 年 8 月 25 日 |

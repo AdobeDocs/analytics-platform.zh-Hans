@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
 source-git-commit: 9774e0e3af024823a03dbcd8d6766877f55e95d8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '792'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -72,22 +72,22 @@ Customer Journey Analytics 支持两种类型的拼接：[基于字段的拼接]
 
 ## Journey Optimizer 数据集
 
-拼接支持以下自动生成的Journey Optimizer数据集：
+拼接支持以下自动生成的 Journey Optimizer 数据集：
 
-- AJO历程步骤事件
-- AJO入站活动事件数据集
-- AJO表面数据集
-- AJO消息反馈事件数据集* AJO推送跟踪体验事件数据集
+- AJO 历程步骤事件
+- AJO 入站活动事件数据集
+- AJO 表面数据集
+- AJO 消息反馈事件数据集* AJO 推送跟踪体验事件数据集
 - AJO 电子邮件跟踪体验事件数据集
-- AJO密件抄送反馈事件数据集
-- AJO实时活动反馈事件数据集
-- AJO ExD决策事件数据集
+- AJO BCC 反馈事件数据集
+- AJO 实时活动反馈事件数据集
+- AJO ExD 决策事件数据集
 
 >[!MORELIKETHIS]
 >
 >[基于字段的拼接](fbs.md)
->&#x200B;>[基于图形的拼接](gbs.md)
->&#x200B;>[使用拼接](use-stitching.md)
->&#x200B;>[验证拼接](validate.md)
->&#x200B;>[关于拼接的常见问题解答](faq.md)
+>>[基于图形的拼接](gbs.md)
+>>[使用拼接](use-stitching.md)
+>>[验证拼接](validate.md)
+>>[关于拼接的常见问题解答](faq.md)
 
