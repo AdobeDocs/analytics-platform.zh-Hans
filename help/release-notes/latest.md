@@ -3,19 +3,19 @@ title: 当前 Customer Journey Analytics 发行说明
 description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: eb860cf67f8174838837816a781f3f5ef9015683
+source-git-commit: 79e120b4362fe226debaeaea94da7e6b52c7e24a
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 58%
+source-wordcount: '944'
+ht-degree: 56%
 
 ---
 
-# 当前 Adobe Customer Journey Analytics 发行说明（2025 年 8 月）
+# 当前的 Adobe Customer Journey Analytics 发行说明（2025 年 9 月）
 
-**上次更新日期**：2025 年 9 月 4 日
+**上次更新日期**：2025年9月11日
 
 
-这些发行说明涵盖了 2025 年 8 月 13 日至 2025 年 9 月 16 日的发布期。Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
+这些发行说明涵盖2025年9月至10月初的发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
 ## 新增功能或更新后的功能
 
