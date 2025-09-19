@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: c8d9eddd1ce11975dec16f715a5f5888cd4d6ffa
+source-git-commit: 8eb57617cc089dee0df73171feb1118f35d4c960
 workflow-type: tm+mt
-source-wordcount: '2316'
-ht-degree: 100%
+source-wordcount: '2381'
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,16 @@ Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/a
 | **反馈机制** | <ul><li>拇指向上</li><li>拇指向下</li><li>标记</li></ul> |  |
 
 
-## 管理对 Data Insights 代理的访问权限
+## 管理对 Data Insights 代理的访问权限 {#manage-access}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-enable-data-insights-data-view"
+>title="为Data Insights Agent启用"
+>abstract="此选项启用此数据视图，以便与Data Insights Agent一起使用。 Data Insights Agent是一个可从Customer Journey Analytics中的AI助手访问的创作AI会话代理。 它有助于您通过文本提示快速分析数据。 它使用来自数据视图的组件和您的实际数据在 Analysis Workspace 中构建相关的可视化图表。"
+
+<!-- markdownlint-enable MD034 -->
 
 以下参数控制 Customer Journey Analytics 中对 Data Insights 代理的访问权限：
 
