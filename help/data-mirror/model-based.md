@@ -180,7 +180,7 @@ Experience Platform Data Mirror for Customer Journey Analytics需要基于模型
 
      ![人员描述符](assets/platform-schema-personid.png)
 
-   * 已将&#x200B;**[!UICONTROL timestamp]**&#x200B;字段与&#x200B;**[!UICONTROL personid]**&#x200B;字段一起配置为**[!UICONTROL 主键]**y。**[!UICONTROL 时间戳]**&#x200B;字段也配置为&#x200B;**[!UICONTROL 时间戳描述符]**。 对于基于时间序列模型的数据，您只需要将字段定义为&#x200B;**[!UICONTROL 时间戳描述符]**。
+   * 已将&#x200B;**[!UICONTROL timestamp]**&#x200B;字段与&#x200B;**[!UICONTROL personid]**&#x200B;字段一起配置为&#x200B;**[!UICONTROL 主键]**&#x200B;y。**[!UICONTROL 时间戳]**&#x200B;字段也配置为&#x200B;**[!UICONTROL 时间戳描述符]**。 对于基于时间序列模型的数据，您只需要将字段定义为&#x200B;**[!UICONTROL 时间戳描述符]**。
 
      ![时间戳描述符](assets/platform-schema-timestamp.png)
 
