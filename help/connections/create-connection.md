@@ -435,7 +435,7 @@ ht-degree: 62%
 
 | 数据集类型 | 描述 | 时间戳 | 架构 | 人员 ID |
 |---|---|---|---|---|
-| **[!UICONTROL 临时]** | 基于[临时架构](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/api/ad-hoc)的临时数据，其字段的命名空间仅供单个数据集使用。 | 取决于您为临时数据集选择的数据集类型。 | 任何基于基于&#x200B;*ad hoc*&#x200B;行为的类的临时架构 | 取决于您为临时数据集选择的数据集类型。 |
+| **[!UICONTROL 临时]** | 基于[临时架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/api/ad-hoc)的临时数据，其字段的命名空间仅供单个数据集使用。 | 取决于您为临时数据集选择的数据集类型。 | 任何基于基于&#x200B;*ad hoc*&#x200B;行为的类的临时架构 | 取决于您为临时数据集选择的数据集类型。 |
 | **[!UICONTROL 模型]** | 基于模型的数据基于基于基于模型的模式。 | 取决于您为基于模型的数据集选择的数据集类型。 | 任何基于模型的架构。 | 取决于您为基于模型的数据集选择的数据集类型。 |
 
 

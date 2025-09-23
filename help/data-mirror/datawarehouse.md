@@ -53,8 +53,8 @@ set spark.databricks.delta.properties.defaults.enableChangeDataFeed = true;
 
 请阅读以下文档，以了解如何为[!DNL Azure Databricks]源连接启用更改数据捕获的步骤：
 
-* [创建 [!DNL Azure Databricks] 基本连接](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/databricks)。
-* [为数据库](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)创建源连接。
+* [创建 [!DNL Azure Databricks] 基本连接](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/api-tutorials/create/databases/databricks)。
+* [为数据库](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)创建源连接。
 
 ## [!DNL Google BigQuery]
 
@@ -64,8 +64,8 @@ set spark.databricks.delta.properties.defaults.enableChangeDataFeed = true;
 
 请阅读以下文档，以了解如何为[!DNL Google BigQuery]源连接启用更改数据捕获的步骤：
 
-* [创建 [!DNL Google BigQuery] 基本连接](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/bigquery)。
-* [为数据库](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)创建源连接。
+* [创建 [!DNL Google BigQuery] 基本连接](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/api-tutorials/create/databases/bigquery)。
+* [为数据库](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)创建源连接。
 
 ## [!DNL Snowflake]
 
@@ -81,8 +81,8 @@ ALTER TABLE mytable SET CHANGE_TRACKING = TRUE
 
 请阅读以下文档，以了解如何为[!DNL Snowflake]源连接启用更改数据捕获的步骤：
 
-* [创建 [!DNL Snowflake] 基本连接](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/snowflake)。
-* [为数据库](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)创建源连接。
+* [创建 [!DNL Snowflake] 基本连接](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/api-tutorials/create/databases/snowflake)。
+* [为数据库](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)创建源连接。
 
 
 >[!MORELIKETHIS]

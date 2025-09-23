@@ -153,7 +153,7 @@ ht-degree: 27%
 
 >[!IMPORTANT]
 >
->除了不将临时数据集和架构用于时间序列数据的一般建议之外，您应该&#x200B;**不**&#x200B;将&#x200B;**[!UICONTROL 从CSV创建数据集]**&#x200B;工作流用于时间序列数据。 生成临时架构的工作流将所有字段定义为字符串类型，之后您无法对其进行修改。 将基于时间序列的数据集（事件或摘要）添加到连接时，此类型的数据集需要定义至少一个日期时间类型的字段。 <br/>如果需要使用临时时间序列数据，应考虑使用[使用API创建临时架构](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438)，然后使用[从架构创建数据集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#schema)工作流。
+>除了不将临时数据集和架构用于时间序列数据的一般建议之外，您应该&#x200B;**不**&#x200B;将&#x200B;**[!UICONTROL 从CSV创建数据集]**&#x200B;工作流用于时间序列数据。 生成临时架构的工作流将所有字段定义为字符串类型，之后您无法对其进行修改。 将基于时间序列的数据集（事件或摘要）添加到连接时，此类型的数据集需要定义至少一个日期时间类型的字段。 <br/>如果需要使用临时时间序列数据，应考虑使用[使用API创建临时架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438)，然后使用[从架构创建数据集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/user-guide#schema)工作流。
 
 
 创建[连接](/help/connections/overview.md)后，您可以执行各种管理任务，如[选择和组合数据集](/help/connections/combined-dataset.md)、[检查连接的数据集的状态以及数据摄取的状态](/help/connections/manage-connections.md)等等。
