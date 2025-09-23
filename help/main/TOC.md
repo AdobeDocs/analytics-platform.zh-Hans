@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 1718379e1ea6baffef8f4da045662e95a47e1480
-workflow-type: ht
-source-wordcount: '1280'
-ht-degree: 100%
+source-git-commit: 06c5a73e5c0c900782bb284ffef9f88c387ba9cc
+workflow-type: tm+mt
+source-wordcount: '1299'
+ht-degree: 98%
 
 ---
 
@@ -110,7 +110,7 @@ ht-degree: 100%
    + [适用于 Adobe Analytics 用户的用户指南](../getting-started/aa-to-cja-user.md)
 
 + 数据摄取 {#cja-data-ingestion}
-   + [数据摄取概述](../data-ingestion/data-ingestion.md)
+   + [概述](../data-ingestion/data-ingestion.md)
    + 摄取并使用快速入门指南{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + Experience Platform Edge Network  {#edge-network}
@@ -120,6 +120,15 @@ ht-degree: 100%
       + [批次数据](../data-ingestion/batch.md)
       + [流式数据](../data-ingestion/streaming.md)
       + [源连接器](../data-ingestion/sources.md)
+      + [临时数据](/help/data-ingestion/adhoc.md)
+
++ 数据镜像 {#cja-data-mirror}
+   + [概述](/help/data-mirror/data-mirror.md)
+   + 配置 {#configure}
+      + [Data Warehouse本机解决方案](/help/data-mirror/datawarehouse.md)
+      + [Experience Platform](/help/data-mirror/aep.md)
+      + [Customer Journey Analytics](/help/data-mirror/cja.md)
+   + [Data Mirror快速入门指南](/help/data-mirror/model-based.md)
 
 + 连接 {#cja-connections}
    + [连接概述](../connections/overview.md)

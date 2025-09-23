@@ -6,10 +6,10 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: f09937e6babca5549b9b78e9c90462673750a4b3
+source-git-commit: 1eeb468248eae46bb898ac905499851667fce7b7
 workflow-type: tm+mt
-source-wordcount: '4844'
-ht-degree: 61%
+source-wordcount: '4886'
+ht-degree: 60%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 61%
 | **[!UICONTROL 数据集]** | 连接中包含的一个或多个数据集链接。您可以选择数据集超链接来查看连接中的数据集。如果选定的连接中包含更多数据集，请选择 **[!UICONTROL +*x* 更多]**，以显示&#x200B;**[!UICONTROL 包含的数据集]**&#x200B;面板。此面板显示指向所有数据集的链接以及![搜索](/help/assets/icons/Search.svg)以搜索作为连接一部分的特定数据集的选项。<p>![数据集已包括](assets/datasets-included.png)<p>选择一个数据集名称，以在新选项卡的Experience Platform界面中打开该数据集。 |
 | **[!UICONTROL 沙盒]** | 此连接从中获取其数据集的 [Experience Platform 沙盒](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sandbox/home)。在创建连接时选择此沙盒。 保存连接后，无法更改沙盒。 |
 | **[!UICONTROL 所有者]** | 创建连接的人员。 |
-| **[!UICONTROL 导入新数据]** | 数据集导入新数据的状态： <p>![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _On]**&#x200B;用于配置为导入新数据的数据集，并且<p>对于未配置为导入新数据的数据集，![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _x 关闭_]**。 |
+| **[!UICONTROL 导入新数据]** | 数据集导入新数据的状态： <p>![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _On]**用于配置为导入新数据的数据集，并且<p>对于未配置为导入新数据的数据集，![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _x 关闭_]**。 |
 | **[!UICONTROL 创建日期]** | 创建连接的时间戳。 |
 | **[!UICONTROL 上次修改时间]** | 上次更新连接的时间戳。 |
 | **[!UICONTROL 回填数据]** | 数据集中回填数据的状态。<p>![状态为红色](assets/status-red.svg)   **[!UICONTROL _x _回填失败]**，表示数据集中回填失败的次数，<p>![状态为橙色](assets/status-orange.svg)   **[!UICONTROL _x _正在处理回填]**，表示数据集中正在处理的回填次数，<p>![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _回填完成]**，数据集中已完成的回填次数，以及<p>如果连接中的数据集未定义回填，则![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _关闭_]**。 |
@@ -149,7 +149,7 @@ ht-degree: 61%
 
 * 在Customer Journey Analytics中对Journey Optimizer数据执行深入分析(通过使用Journey Optimizer中的&#x200B;**[!UICONTROL 在CJA中分析]**&#x200B;按钮)。
 
-  有关详细信息，请参阅Journey Optimizer文档中的[在Customer Journey Analytics中分析](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template)。
+  有关详细信息，请参阅Journey Optimizer文档中的[在Customer Journey Analytics中分析](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template)。
 
 * 编辑Journey Optimizer连接和关联的数据视图。
 
@@ -275,7 +275,7 @@ ht-degree: 61%
 | **[!UICONTROL 添加的批次数]** | 在选定日期范围内添加到连接的批次数。 |
 | **[!UICONTROL 上次添加时间]** | 添加到连接的最新批次的时间戳。 |
 | **[!UICONTROL 数据源类型]** | 源类型。 在向连接添加数据集时定义源类型。 |
-| **[!UICONTROL 数据集类型]** | [数据集类型](create-connection.md#dataset-types)。 类型可以是[!UICONTROL Event]、[!UICONTROL Profile]、[!UICONTROL Lookup]或[!UICONTROL Summary]。 |
+| **[!UICONTROL 数据集类型]** | [数据集类型](create-connection.md#dataset-types)。 类型可以是&#x200B;**[!UICONTROL Event]**、**[!UICONTROL Profile]**、**[!UICONTROL Lookup]**、**[!UICONTROL Summary]**。 **[!UICONTROL （临时）]**&#x200B;或&#x200B;**[!UICONTROL （模型）]**&#x200B;已识别临时或基于模型的数据集。 例如，**[!UICONTROL 事件（临时）]**&#x200B;或&#x200B;**[!UICONTROL 查找（模型）]**。 |
 | **[!UICONTROL 架构]** | 此数据集所基于的 Experience Platform 架构。 |
 | **[!UICONTROL 导入新数据]** | 数据集导入新数据的状态： <p>如果数据集已配置为导入新数据，则![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _开启]**，以及<p>如果数据集已配置为不导入新数据，则![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _x 关闭_]**。 |
 | **[!UICONTROL 转换数据]** | 适用的 B2B 查找数据集的转换状态。参见[转换数据集以进行 B2B 查找](transform-datasets-b2b-lookups.md)了解更多信息。<p>对于已启用转换的适用数据集，![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _开启]**， <p>对于未启用转换的适用数据集，![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _x 关闭_]**，以及<p>对于所有其他数据集均为 **[!UICONTROL N/A]**，不适用于转换。 |
@@ -316,13 +316,13 @@ ht-degree: 61%
 
 | 详细信息 | 描述 |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全球帐户 ID &#x200B;]** | 您指定为连接的全局帐户ID的标识。 仅适用于已配置全局帐户容器的基于帐户的连接。 |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户 ID &#x200B;]** | 您指定为连接的帐户ID的身份。 仅适用于未配置全局帐户容器的基于帐户的连接。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全球帐户 ID ]** | 您指定为连接的全局帐户ID的标识。 仅适用于已配置全局帐户容器的基于帐户的连接。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户 ID ]** | 您指定为连接的帐户ID的身份。 仅适用于未配置全局帐户容器的基于帐户的连接。 |
 | **[!UICONTROL 人员 ID]** | 您指定为连接的人员ID的身份。 |
 | **[!UICONTROL 键]** | 您为查找数据集指定的键。 |
 | **[!UICONTROL 匹配键]** | 您为查找数据集指定的匹配键。 |
 | **[!UICONTROL 时间戳]** | 为事件数据集定义的时间戳。 |
-| **[!UICONTROL 可用的记录数]** | 在日程表中选择的特定时间段内，此数据集摄取的总行数。添加数据后，数据立刻在报告中显示，没有延迟。但是，当您创建一个全新的连接时，则会出现[延迟](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq)。 |
+| **[!UICONTROL 可用的记录数]** | 在日程表中选择的特定时间段内，此数据集摄取的总行数。添加数据后，数据立刻在报告中显示，没有延迟。但是，当您创建一个全新的连接时，则会出现[延迟](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq)。 |
 | **[!UICONTROL 添加的记录数]** | 在选定日期范围内添加到连接的数据集记录（行）数。 |
 | **[!UICONTROL 跳过的记录数]** | 在选定日期范围内为连接传输数据期间跳过的数据集记录（行）数。 |
 | **[!UICONTROL 添加的批次数]** | 已添加到连接的批次数。 |
@@ -331,7 +331,7 @@ ht-degree: 61%
 | **[!UICONTROL 导入新数据]** | 数据集导入新数据的状态： <p>如果数据集已配置为导入新数据，则![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _开启]**，以及<p>如果数据集已配置为不导入新数据，则![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _x 关闭_]**。 |
 | **[!UICONTROL 回填数据]** | 数据集的回填数据的状态。<p>![状态为红色](assets/status-red.svg)   **[!UICONTROL _x _回填失败]**，表示回填失败的次数，<p>![状态为红色](assets/status-orange.svg)   **[!UICONTROL _x _正在处理回填]**，正在处理的回填次数，<p>![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _回填完成]**，已完成的回填次数，以及<p>如果没有配置回填，则![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _关闭_]**。<p>要显示包含数据集过去回填情况概述的对话框，请选择 <img src="./assets/pastbackfill.svg" alt="过去的回填" width="15"/> **[!UICONTROL 过去的回填]**。 |
 | **[!UICONTROL 数据源类型]** | 将数据集添加到连接时定义的数据源类型。 |
-| **[!UICONTROL 数据集类型]** | [数据集类型](create-connection.md#dataset-types)。 |
+| **[!UICONTROL 数据集类型]** | [数据集类型](create-connection.md#dataset-types)。 类型可以是&#x200B;**[!UICONTROL Event]**、**[!UICONTROL Profile]**、**[!UICONTROL Lookup]**、**[!UICONTROL Summary]**。 **[!UICONTROL （临时）]**&#x200B;或&#x200B;**[!UICONTROL （模型）]**&#x200B;已识别临时或基于模型的数据集。 例如，**[!UICONTROL 事件（临时）]**&#x200B;或&#x200B;**[!UICONTROL 查找（模型）]**。 |
 | **[!UICONTROL 架构]** | 此数据集所基于的 Experience Platform 架构。 |
 | **[!UICONTROL 数据集 ID]** | Experience Platform中生成的数据集ID。 |
 
@@ -500,5 +500,5 @@ ht-degree: 61%
 >[!MORELIKETHIS]
 >
 >[查看、排查和修改连接设置](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja)教程
->&#x200B;>[管理您的 Customer Journey Analytics 使用情况](/help/technotes/estimate-usage.md)
+>>[管理您的 Customer Journey Analytics 使用情况](/help/technotes/estimate-usage.md)
 >

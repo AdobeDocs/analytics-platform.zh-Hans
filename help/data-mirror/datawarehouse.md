@@ -7,8 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 badgePremium: label="Beta 版"
-exl-id: 92cffcc5-d7a7-47f5-869d-1fc665594bf4
-source-git-commit: b585187f112c2081a8e51bd84d9f95e75ceebdc3
+source-git-commit: 9bd124ad651274b48052edc56bfb72358aa2d79a
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
@@ -16,8 +15,6 @@ ht-degree: 0%
 ---
 
 # 配置Data Warehouse本机解决方案
-
-{{release-limited-testing}}
 
 要支持适用于Customer Journey Analytics的Experience Platform Data Mirror，您要从三个受支持的Data Warehouse本机解决方案([[!DNL Azure Databricks]](#azure-databricks)、[[!DNL Google BigQuery]](#google-bigquery)、[[!DNL Snowflake]](#snowflake))中使用的数据需要启用更改数据捕获。
 
@@ -56,8 +53,8 @@ set spark.databricks.delta.properties.defaults.enableChangeDataFeed = true;
 
 请阅读以下文档，以了解如何为[!DNL Azure Databricks]源连接启用更改数据捕获的步骤：
 
-* [创建 [!DNL Azure Databricks] 基本连接](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/api-tutorials/create/databases/databricks)。
-* [为数据库](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)创建源连接。
+* [创建 [!DNL Azure Databricks] 基本连接](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/databricks)。
+* [为数据库](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)创建源连接。
 
 ## [!DNL Google BigQuery]
 
@@ -67,8 +64,8 @@ set spark.databricks.delta.properties.defaults.enableChangeDataFeed = true;
 
 请阅读以下文档，以了解如何为[!DNL Google BigQuery]源连接启用更改数据捕获的步骤：
 
-* [创建 [!DNL Google BigQuery] 基本连接](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/api-tutorials/create/databases/bigquery)。
-* [为数据库](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)创建源连接。
+* [创建 [!DNL Google BigQuery] 基本连接](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/bigquery)。
+* [为数据库](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)创建源连接。
 
 ## [!DNL Snowflake]
 
@@ -84,11 +81,11 @@ ALTER TABLE mytable SET CHANGE_TRACKING = TRUE
 
 请阅读以下文档，以了解如何为[!DNL Snowflake]源连接启用更改数据捕获的步骤：
 
-* [创建 [!DNL Snowflake] 基本连接](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/api-tutorials/create/databases/snowflake)。
-* [为数据库](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)创建源连接。
+* [创建 [!DNL Snowflake] 基本连接](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/snowflake)。
+* [为数据库](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)创建源连接。
 
 
 >[!MORELIKETHIS]
 >
->[Data Mirror快速入门指南：镜像并使用基于模型的数据](model-based.md)
+>[Data Mirror快速入门指南：镜像并使用基于模型的数据](data-mirror.md)
 >

@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 57ace74bbc093c6fa52a37c1b1b9666b1aa048d1
+source-git-commit: 9bd124ad651274b48052edc56bfb72358aa2d79a
 workflow-type: tm+mt
-source-wordcount: '7334'
-ht-degree: 67%
+source-wordcount: '7979'
+ht-degree: 62%
 
 ---
 
@@ -115,7 +115,7 @@ ht-degree: 67%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建并编辑连接](https://video.tv.adobe.com/v/3409297/?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建并编辑连接](https://video.tv.adobe.com/v/343044/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -151,7 +151,7 @@ ht-degree: 67%
 
 ### Customer Journey Analytics
 
-在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**&#x200B;屏幕中：
+在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**屏幕中：
 
 ![无标题连接设置](assets/create-conn1.png)
 
@@ -191,7 +191,7 @@ ht-degree: 67%
 
 [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
 
-在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**&#x200B;屏幕中：
+在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**屏幕中：
 
 ![无标题连接设置](assets/create-conn1-b2b.png)
 
@@ -218,7 +218,7 @@ ht-degree: 67%
    | **[!UICONTROL 上次更新时间]** | 仅对于事件数据集，此设置会自动设置为 Experience Platform 中基于事件的架构的默认时间戳字段。“N/A”表示该数据集不包含数据。 |
    | **[!UICONTROL 记录数]** | Experience Platform 中数据集上个月的总记录数。 |
    | **[!UICONTROL 架构]** | 在 Adobe Experience Platform 中创建数据集所依据的[架构。](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition) |
-   | **[!UICONTROL 数据集类型]** | 对于您添加到此连接的每个数据集，Customer Journey Analytics会根据传入的数据自动设置[数据集类型](#dataset-types)。 有 3 种不同的数据集类型：事件数据、轮廓数据和查找数据。有关数据集类型的说明，请参见下表。 |
+   | **[!UICONTROL 数据集类型]** | 对于您添加到此连接的每个数据集，Customer Journey Analytics会根据传入的数据自动设置[数据集类型](#dataset-types)。 |
    | **[!UICONTROL 粒度]** | 数据集中数据的粒度；仅适用于摘要数据集。 |
    | **[!UICONTROL 数据源类型]** | 数据集的数据源类型。不适用于摘要数据集。 |
    | **[!UICONTROL 帐户ID]** | （仅针对基于帐户的连接显示）用于支持数据集的基于帐户的报表的帐户ID。 |
@@ -414,6 +414,30 @@ ht-degree: 67%
 >title="身份标识图的更改"
 >abstract="在使用身份标识图进行拼接前，请先确保您已完成身份标识图的设置。"
 
+### 数据集类型 {#dataset-types}
+
+对于您已添加到此连接的每个数据集，[!UICONTROL Customer Journey Analytics] 会根据传入的数据自动设置数据集类型。
+
+>[!IMPORTANT]
+>
+>将至少一个事件或摘要数据集（标准类型或基于临时或模型的类型）添加到您的连接。
+
+存在不同的数据集类型： [!UICONTROL 事件]数据、[!UICONTROL 配置文件]数据、[!UICONTROL 查找]数据和[!UICONTROL 摘要]数据，每种数据均基于其相应的基于XDM的架构。
+
+| 数据集类型 | 描述 | 时间戳 | 架构 | 人员 ID <br/> 帐户 ID [!BADGE B2B 版]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} |
+|---|---|---|---|---|
+| **[!UICONTROL 事件]** | 表示时间事件的数据。例如，网站访问量、互动量、交易量、POS 数据、调查数据、广告展示数据等等。该数据可能是典型的点击流数据，带有客户 ID 或 Cookie ID 以及时间戳。使用事件数据，您可以灵活地选择将哪个 ID 用作人员 ID。 | 设置为[!UICONTROL Experience Platform]中基于事件的架构的默认时间戳字段。 | 任何基于具有&#x200B;*时间序列*&#x200B;行为的XDM类的内置或自定义架构。 示例包括&#x200B;*XDM体验事件*&#x200B;或&#x200B;*XDM决策事件*。 | 您可以选择要包含的人员ID或帐户ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。 Experience Platform 中定义的每个数据集架构，可以拥有自己定义的一个或多个身份标识集，并与命名空间关联。这些身份中的任何一个都可以用作人员ID或帐户ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。 示例包括Cookie ID、拼接ID、用户ID、跟踪代码、帐户ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}等。 |
+| **[!UICONTROL 查询]** | 您可以将数据集添加为所有数据集类型中的字段查找：轮廓、查找和事件数据集（后者始终受支持）。此附加功能扩展了 Customer Journey Analytics 的能力，以支持包括 B2B 在内的复杂数据模型。此数据用于查找在“事件”、“轮廓”或“查找”数据中找到的值或键。您最多可以添加两级查找。（注意[派生字段](/help/data-views/derived-fields/derived-fields.md)不能用作”连接“内的查找的匹配键。）例如，您可以上传将事件数据中的数字 ID 映射到产品名称的查找数据。有关示例，请参阅 [B2B 示例](/help/use-cases/b2b/example.md)。 | 不适用 | 任何基于XDM类且具有&#x200B;*记录*&#x200B;行为的内置或自定义架构，*XDM个人资料*&#x200B;类除外。 | 不适用 |
+| **[!UICONTROL 轮廓]** | [!UICONTROL 事件]数据中应用于您的帐户、人员、用户或客户的数据。例如，允许您上传关于客户的 CRM 数据。 | 不适用 | 任何基于&#x200B;*XDM Individual Profile*&#x200B;类的内置或自定义架构。 | 您可以选择要包含的人员ID/帐户ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。 在 [!DNL Experience Platform] 中定义的每个数据集（摘要数据集除外）都定义了自己的一组或多组人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。例如，Cookie ID、拼接ID、用户ID、跟踪代码、帐户ID等。<br>![人员 ID ](assets/person-id.png)**注意**：如果您创建的连接包含具有不同 ID 的数据集，报告会反映这一点。要合并数据集，您需要使用相同的人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。 |
+| **摘要** | 未与单个人员ID关联的时间系列数据。 摘要数据代表不同聚合级别的聚合数据，例如活动。您可以在 Customer Journey Analytics 中使用这些数据来支持各种用例。有关更多信息，请参阅[摘要数据](/help/data-views/summary-data.md)。 | 自动设置为Experience Platform中基于事件的概要量度架构的默认时间戳字段。 仅支持每小时或每天的粒度。 | 任何基于&#x200B;*XDM摘要量度*&#x200B;类的内置或自定义架构。 | 不适用 |
+
+或者，上面列出的数据集类型可以基于ad hoc或基于模型的架构，而不是基于XDM的通用架构。
+
+| 数据集类型 | 描述 | 时间戳 | 架构 | 人员 ID |
+|---|---|---|---|---|
+| **[!UICONTROL 临时]** | 基于[临时架构](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/api/ad-hoc)的临时数据，其字段的命名空间仅供单个数据集使用。 | 取决于您为临时数据集选择的数据集类型。 | 任何基于基于&#x200B;*ad hoc*&#x200B;行为的类的临时架构 | 取决于您为临时数据集选择的数据集类型。 |
+| **[!UICONTROL 模型]** | 基于模型的数据基于基于基于模型的模式。 | 取决于您为基于模型的数据集选择的数据集类型。 | 任何基于模型的架构。 | 取决于您为基于模型的数据集选择的数据集类型。 |
+
 
 ### 添加数据集
 
@@ -431,7 +455,7 @@ ht-degree: 67%
    | 列 | 描述 |
    |---|---|
    | **[!UICONTROL 数据集]** | 数据集的名称。选择名称即可将您定向到 Experience Platform 中的数据集。选择 ![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) 以显示一个包含数据集更多详细信息的弹出窗口。您可以选择 **[!UICONTROL 在 Platform 中编辑]** 以直接在 Experience Platform 中编辑数据集。 |
-   | **[!UICONTROL 数据集类型]** | 数据集的类型：事件、轮廓、查找或摘要。 |
+   | **[!UICONTROL 数据集类型]** | 数据集的类型： [事件](#event-dataset)、[配置文件](#profile-dataset)、[查找](#lookup-dataset)、[摘要](#summary-dataset)、[临时](#ad-hoc-dataset)或[模型](#model-based-dataset)。 |
    | **[!UICONTROL 记录数]** | Experience Platform 中数据集上个月的总记录数。 |
    | **[!UICONTROL 架构]** | 数据集的架构。选择名称即可将您定向到 Experience Platform 中的架构。 |
    | **[!UICONTROL 上一批次]** | Experience Platform 中最后提取的批次的状态。查看 [批次状态](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ingestion/batch/troubleshooting#batch-states) 更多信息。 |
@@ -466,6 +490,14 @@ ht-degree: 67%
 1. 在[编辑数据集： ](#dataset-settings)数据集名称&#x200B;**[!UICONTROL 对话框中配置&#x200B;_数据集设置_]**。
 
    ![编辑数据集](assets/edit-dataset.png)
+
+   >[!NOTE]
+   >
+   >无法为作为已保存连接一部分的&#x200B;**[!UICONTROL ad hoc]**&#x200B;或基于&#x200B;**[!UICONTROL 模型的]**&#x200B;数据集编辑&#x200B;**[!UICONTROL 数据集类型]**、**[!UICONTROL 人员ID]**、[身份命名空间](#ad-hoc-dataset)和[时间戳](#model-based-dataset)。 要更改这些设置，请执行以下操作：
+   >
+   >1. 从连接中删除现有的ad hoc或基于模型的数据集。
+   >1. 将具有更新设置的相同数据集添加到连接。
+   >
 
 1. 选择&#x200B;**[!UICONTROL 应用]**&#x200B;以应用数据集设置。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;即可取消。
 
@@ -591,6 +623,42 @@ ht-degree: 67%
 | **[!UICONTROL 粒度]** | 表示用于聚合摘要数据的时间范围，当前为小时或天。 从数据集中的数据派生。 |
 
 
+#### 临时数据集
+
+>[!NOTE]
+>
+>尽管可以配置和选择，但出于性能原因，您应该避免将临时数据集用于时间序列（事件、摘要）数据。 与临时数据集相比，基于模型或基于XDM的通用数据集更适合于时间序列数据。
+
+临时数据集的特定设置包括：
+
+| 设置 | 选定的数据集类型 | 描述 |
+|---|---|---|
+| **[!UICONTROL 数据集类型]** | 不适用 | 临时数据集中的数据类型。 可能的值为： **[!UICONTROL Event]**、**[!UICONTROL Profile]**、**[!UICONTROL Lookup]**&#x200B;和&#x200B;**[!UICONTROL Summary]**。 |
+| **[!UICONTROL 人员 ID]** | 事件、配置文件 | 从临时或基于模型的架构中选择一个表示人员ID的字段。 此字段可以是数据集中的任何字段。 从&#x200B;**[!UICONTROL 身份命名空间字段]**&#x200B;或&#x200B;**[!UICONTROL 非身份字段]**&#x200B;中选择。 <br/>如果临时架构中的一个或多个字段标记为身份并具有身份命名空间，则只能从&#x200B;**[!UICONTROL 身份命名空间]**&#x200B;中选择一个标识符。 |
+| **[!UICONTROL 身份命名空间]** | 事件 | 选择身份命名空间，以防您从&#x200B;**[!UICONTROL 非身份]**&#x200B;字段中选择了人员ID。 |
+| **[!UICONTROL 时间戳]** | 事件、摘要 | 从临时架构中选择一个表示时间戳字段的字段。 此字段可以是任何类型为`DateTime`的可用字段。 |
+| **[!UICONTROL 键]** | 查询 | 用于查找数据集的键。<br/>如果记录不包含您为查询数据集选择的键的值，则将跳过该记录。 |
+| **[!UICONTROL 匹配键]** | 查询 | 要在某个事件或查找数据集中联接的匹配键。 如果此列表为空，则可能尚未添加或配置事件或查找数据集。 |
+
+
+#### 基于模型的数据集
+
+>[!NOTE]
+>
+>基于模型的数据集主要用于支持即将推出的Experience Platform Data Mirror for Customer Journey Analytics功能。
+>
+
+基于模型的数据集的特定设置包括：
+
+| 设置 | 选定的数据集类型 | 描述 |
+|---|---|---|
+| **[!UICONTROL 数据集类型]** | 不适用 | 基于模型的数据集中的数据类型。<br/>如果数据集包含时间序列数据，可能的值为： **[!UICONTROL 事件]**&#x200B;和&#x200B;**[!UICONTROL 摘要]**。 <br/>如果数据集包含记录数据，可能的值为： **[!UICONTROL 配置文件]**&#x200B;和&#x200B;**[!UICONTROL 查找]**。 |
+| **[!UICONTROL 人员 ID]** | 事件、配置文件 | 从基于模型的架构中选择一个表示人员ID的字段。 选择仅限于在基于模型的架构中标记为身份并具有身份命名空间的字段列表。 |
+| **[!UICONTROL 时间戳]** | 事件、摘要 | 在架构中定义为时间戳描述符的字段。 此字段自动填充。 |
+| **[!UICONTROL 键]** | 查询 | 用于查找数据集的键。<br/>如果记录不包含您为查询数据集选择的键的值，则将跳过该记录。 |
+| **[!UICONTROL 匹配键]** | 查询 | 某个事件数据集中要按其连接在一起的匹配键。如果此列表为空，则可能尚未添加或配置事件或查找数据集。 |
+
+
 #### 常规数据集设置和详细信息
 
 每个（数据集类型）具有以下通用设置：
@@ -600,9 +668,9 @@ ht-degree: 67%
 
 ### 重新摄取数据
 
-有时您需要将数据从一个或多个数据集重新摄取到连接中。 操作方法：
+有时您需要将数据从一个或多个数据集重新摄取到连接中。 对于临时或基于模型的数据集，您需要[删除，然后再次添加该数据集](#edit-a-dataset)。 对于其他数据集，您可以更新设置。 操作方法：
 
-1. 对于要为其重新摄取数据的每个数据集：
+1. 对于要为其重新摄取数据的数据集：
 
    1. 更改以下任一项：
 
@@ -613,8 +681,9 @@ ht-degree: 67%
 
    1. **[!UICONTROL 应用]**&#x200B;数据集的更改。
 
-1. **[!UICONTROL 保存]**&#x200B;连接。 为特定数据集重新摄取数据。
 
+
+1. **[!UICONTROL 保存]**&#x200B;连接。 为特定数据集重新摄取数据。
 
 
 ### 删除数据集
@@ -624,24 +693,8 @@ ht-degree: 67%
 
 ### 过去的回填
 
-在界面中选择![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;时，**[!UICONTROL 过去的回填： _数据集名称_]**&#x200B;对话框将显示该数据集中的最新回填。
+在界面中选择![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;时，**[!UICONTROL 过去的回填： _数据集名称_]**对话框将显示该数据集中的最新回填。
 
-## 数据集类型 {#dataset-types}
-
-对于您已添加到此连接的每个数据集，[!UICONTROL Customer Journey Analytics] 会根据传入的数据自动设置数据集类型。
-
->[!IMPORTANT]
->
->添加至少一个事件或摘要数据集作为连接的一部分。
-
-有不同的数据集类型：[!UICONTROL 事件]数据、[!UICONTROL 轮廓]数据、[!UICONTROL 查找数据]和[!UICONTROL 摘要]数据。
-
-| 数据集类型 | 描述 | 时间戳 | 架构 | 人员 ID <br/> 帐户 ID [!BADGE B2B 版]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} |
-|---|---|---|---|---|
-| **[!UICONTROL 事件]** | 表示时间事件的数据。例如，网站访问量、互动量、交易量、POS 数据、调查数据、广告展示数据等等。该数据可能是典型的点击流数据，带有客户 ID 或 Cookie ID 以及时间戳。使用事件数据，您可以灵活地选择将哪个 ID 用作人员 ID。 | 设置为[!UICONTROL Experience Platform]中基于事件的架构的默认时间戳字段。 | 任何基于具有&#x200B;*时间序列*&#x200B;行为的XDM类的内置或自定义架构。 示例包括&#x200B;*XDM体验事件*&#x200B;或&#x200B;*XDM决策事件*。 | 您可以选择要包含的人员ID或帐户ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。 Experience Platform 中定义的每个数据集架构，可以拥有自己定义的一个或多个身份标识集，并与命名空间关联。这些身份中的任何一个都可以用作人员ID或帐户ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。 示例包括Cookie ID、拼接ID、用户ID、跟踪代码、帐户ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}等。 |
-| **[!UICONTROL 查询]** | 您可以将数据集添加为所有数据集类型中的字段查找：轮廓、查找和事件数据集（后者始终受支持）。此附加功能扩展了 Customer Journey Analytics 的能力，以支持包括 B2B 在内的复杂数据模型。此数据用于查找在“事件”、“轮廓”或“查找”数据中找到的值或键。您最多可以添加两级查找。（注意[派生字段](/help/data-views/derived-fields/derived-fields.md)不能用作”连接“内的查找的匹配键。）例如，您可以上传将事件数据中的数字 ID 映射到产品名称的查找数据。有关示例，请参阅 [B2B 示例](/help/use-cases/b2b/example.md)。 | 不适用 | 任何基于XDM类且具有&#x200B;*记录*&#x200B;行为的内置或自定义架构，*XDM个人资料*&#x200B;类除外。 | 不适用 |
-| **[!UICONTROL 轮廓]** | [!UICONTROL 事件]数据中应用于您的帐户、人员、用户或客户的数据。例如，允许您上传关于客户的 CRM 数据。 | 不适用 | 任何基于&#x200B;*XDM Individual Profile*&#x200B;类的内置或自定义架构。 | 您可以选择要包含的人员ID/帐户ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。 在 [!DNL Experience Platform] 中定义的每个数据集（摘要数据集除外）都定义了自己的一组或多组人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。例如，Cookie ID、拼接ID、用户ID、跟踪代码、帐户ID等。<br>![人员 ID ](assets/person-id.png)**注意**：如果您创建的连接包含具有不同 ID 的数据集，报告会反映这一点。要合并数据集，您需要使用相同的人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。 |
-| **摘要** | 未与单个人员ID关联的时间系列数据。 摘要数据代表不同聚合级别的聚合数据，例如活动。您可以在 Customer Journey Analytics 中使用这些数据来支持各种用例。有关更多信息，请参阅[摘要数据](/help/data-views/summary-data.md)。 | 自动设置为Experience Platform中基于事件的概要量度架构的默认时间戳字段。 仅支持每小时或每天的粒度。 | 任何基于&#x200B;*XDM摘要量度*&#x200B;类的内置或自定义架构。 | 不适用 |
 
 ## 连接预览 {#preview}
 
@@ -658,7 +711,7 @@ ht-degree: 67%
 
 ![连接图](assets/connectionmap.png)
 
-此映射可帮助您更好地了解您如何定义连接，以及如何使用容器和标识符在事件、配置文件、查找和摘要数据集之间建立关系。
+此映射可帮助您更好地了解如何使用容器和标识符定义连接并建立事件、个人资料、查找和摘要数据集之间的关系。
 
 
 ## 使用数字字段作为查找键和查找值 {#numeric}
@@ -720,6 +773,6 @@ Customer Journey Analytics 支持将身份标识映射作为个人 ID。身份�
 
 >[!MORELIKETHIS]
 >
->博客：[如何利用 Adobe Customer Journey Analytics 中的事件、查找和轮廓数据集](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
+>* [数据引入概述](/help/data-ingestion/data-ingestion.md)
+>* 博客：[如何利用 Adobe Customer Journey Analytics 中的事件、查找和轮廓数据集](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
 
-![Share](/help/assets/icons/Share.svg)
