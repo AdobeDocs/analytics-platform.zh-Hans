@@ -7,15 +7,17 @@ role: Admin
 hide: true
 hidefromtoc: true
 badgePremium: label="Beta 版"
-source-git-commit: 9bd124ad651274b48052edc56bfb72358aa2d79a
+exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
+source-git-commit: a6cdade9790ef4bc222eb5979b7370f7403b5ad5
 workflow-type: tm+mt
-source-wordcount: '2272'
+source-wordcount: '2271'
 ht-degree: 14%
 
 ---
 
-
 # 镜像并使用基于模型的数据
+
+{{release-limited-testing}}
 
 本快速入门指南介绍如何使用[Experience Platform Data Mirror for Customer Journey Analytics](data-mirror.md)功能从Adobe Experience Platform中的Data Warehouse本机解决方案镜像基于模型的数据。 然后在Customer Journey Analytics中使用该数据。
 
@@ -180,7 +182,7 @@ Experience Platform Data Mirror for Customer Journey Analytics需要基于模型
 
      ![人员描述符](assets/platform-schema-personid.png)
 
-   * 已将&#x200B;**[!UICONTROL timestamp]**&#x200B;字段与&#x200B;**[!UICONTROL personid]**&#x200B;字段一起配置为&#x200B;**[!UICONTROL 主键]**&#x200B;y。**[!UICONTROL 时间戳]**&#x200B;字段也配置为&#x200B;**[!UICONTROL 时间戳描述符]**。 对于基于时间序列模型的数据，您只需要将字段定义为&#x200B;**[!UICONTROL 时间戳描述符]**。
+   * 已将&#x200B;**[!UICONTROL timestamp]**&#x200B;字段与&#x200B;**[!UICONTROL personid]**&#x200B;字段一起配置为&#x200B;**[!UICONTROL 主键]**。 **[!UICONTROL 时间戳]**&#x200B;字段也配置为&#x200B;**[!UICONTROL 时间戳描述符]**。 对于基于时间序列模型的数据，您只需要将字段定义为&#x200B;**[!UICONTROL 时间戳描述符]**。
 
      ![时间戳描述符](assets/platform-schema-timestamp.png)
 
@@ -218,7 +220,7 @@ Experience Platform Data Mirror for Customer Journey Analytics需要基于模型
 
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
-  有关在使用[Azure Databricks](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/databricks)或[Snowflake](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/snowflake)连接器时如何连接和身份验证的详细信息，请参阅Experience Platform文档。
+  有关在使用[Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)或[Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)连接器时如何连接和身份验证的详细信息，请参阅Experience Platform文档。
 
 
 ### 选择数据

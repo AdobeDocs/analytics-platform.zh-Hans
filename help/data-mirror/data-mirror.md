@@ -7,9 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 badgePremium: label="Beta 版"
-source-git-commit: 9bd124ad651274b48052edc56bfb72358aa2d79a
+exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
+source-git-commit: a6cdade9790ef4bc222eb5979b7370f7403b5ad5
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '399'
 ht-degree: 1%
 
 ---
@@ -44,7 +45,7 @@ Data Mirror提供了以下基本数据库同步功能：
 
 >[!NOTE]
 >
->适用于Customer Journey Analytics的Experience Platform Data Mirror功能在&#x200B;**公共测试版**&#x200B;中提供，有效期至2026年3月25日。 在Beta测试期间，变更数据捕获(CDC)更新限制为您的组织每月数据行的0.5%。 每月的数据行数基于您每年有权使用的数据行数除以12。 如果贵组织超过此限制，Adobe保留终止对Experience Platform Data Mirror的Beta版访问权限的权利，以便获取Customer Journey Analytics功能。
+>适用于Customer Journey Analytics的Experience Platform Data Mirror功能在&#x200B;**公共测试版**&#x200B;中提供，有效期至2026年3月25日。 在Beta测试期间，变更数据捕获(CDC)更新限制为Customer Journey Analytics1000万个每日变更行授权。 如果贵组织超过此限制，Adobe保留终止对Experience Platform Data Mirror功能的Beta版访问的权利。 有关该功能的更多信息（包括计费影响），请参阅Experience League文档的此部分。
 >
 
 适用于Customer Journey Analytics的Experience Platform Data Mirror功能适用于选定的Data Warehouse本机解决方案（[!DNL Azure Databricks]、[!DNL Google BigQuery]和[!DNL Snowflake]）。 Customer Journey Analytics版本的Data Mirror功能需要正确设置和配置多个组件：
@@ -56,5 +57,5 @@ Data Mirror提供了以下基本数据库同步功能：
 
 >[!MORELIKETHIS]
 >
->[Data Mirror快速入门指南：镜像并使用基于模型的数据](data-mirror.md)
+>[Data Mirror快速入门指南：镜像并使用基于模型的数据](model-based.md)
 >
