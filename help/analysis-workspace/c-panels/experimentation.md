@@ -4,32 +4,24 @@ title: 试验性面板
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 7e32ae7aa757a8ca47732416f0f883033611ea94
-workflow-type: ht
-source-wordcount: '2179'
-ht-degree: 100%
+source-git-commit: b013518d8f1782219dd2cf9e5b5a89b877e3b92d
+workflow-type: tm+mt
+source-wordcount: '2175'
+ht-degree: 98%
 
 ---
 
 # 试验性面板 {#experimentation-panel}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_experimentation_button"
 >title="试验"
 >abstract="创建一个面板来比较不同的用户体验、营销或消息变化。并确定哪种变化最能产生特定的结果。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_experimentation_panel"
 >title="试验"
 >abstract="比较不同的用户体验、营销或消息变化，确定哪种变化最能推动特定结果。指定试验、要比较的控制变量、成功量度和标准化量度。可选择设置置信度的上限和下限。"
-
-<!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
@@ -102,9 +94,9 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
    | 设置 | 定义 |
    | --- | --- |
    | **[!UICONTROL 日期范围]** | 根据 Customer Journey Analytics 中收到的所选试验的第一个事件，实验面板的日期范围会自动设置。如果需要，可以将日期范围限制或扩展到更具体的时间范围。 |
-   | **[!UICONTROL 试验]** | 向最终用户展示的某项体验的一组变体，以确定哪一种体验最适合永久保存。试验由两个或多个变量组成，其中一个变量会被视为控制变量。该设置预先填充了数据视图中已标记为&#x200B;**[!UICONTROL 试验]**&#x200B;标签的维度，以及过去 3 个月的实验数据。 |
+   | **[!UICONTROL 试验]** | 向最终用户展示的某项体验的一组变体，以确定哪一种体验最适合永久保存。试验由两个或多个变量组成，其中一个变量会被视为控制变量。该设置预先填充了数据视图中已标记为&#x200B;**[!UICONTROL 试验]**&#x200B;标签的维度，以及过去 6 个月的实验数据。 |
    | **[!UICONTROL 控制变量]** | 最终用户体验中的两种或多种变化中的一种，并会为了确定更好的替代方案而对其进行比较。必须选择一个变量作为控制变量，并且只能将一个变量视为控制变量。该设置预先填充了数据视图中已标记为&#x200B;**[!UICONTROL 变量]**&#x200B;标签的维度。此设置将会调出与此试验相关的变量数据。 |
-   | **[!UICONTROL 成功量度]** | 用户正在与变量进行比较的一个或多个量度。可产生最理想的转化量度结果（最高或最低）的变量会成为某项试验中具有&#x200B;*最佳性能的变量*。最多可添加 5 个量度。 |
+   | **[!UICONTROL 成功量度]** ➊ | 用户正在与变量进行比较的一个或多个量度。可产生最理想的转化量度结果（最高或最低）的变量会成为某项试验中具有&#x200B;*最佳性能的变量*。最多可添加 5 个量度。 |
    | **[!UICONTROL 标准化量度]** ➋ | 测试运行的基础（**[!UICONTROL 全球帐户]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 帐户]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 机会]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 购买群组]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 人员]**、**[!UICONTROL 会话]**&#x200B;或&#x200B;**[!UICONTROL 事件]**）。例如，测试可以比较几种变体的转化率，**[!UICONTROL 转化率]**&#x200B;的计算方法是页面浏览量。 |
    | **[!UICONTROL 包括置信上限/下限]** | 启用此选项可以显示置信度的上限和下限。 |
 
@@ -132,7 +124,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 2. **最佳性能变量**：当一项试验被宣布为具有结论性时，具有最高转化率的变量会被标记为“最佳性能变量”。请注意，该变量必须是对照变量或基准变量，或者是超过 95% *随时*&#x200B;有效置信阈值的变量之一（应用 Benjamini-Hochberg 校正）。
 
-3. **转换率**：显示的转换率是成功量度值 ➊ 与标准化量度值 ➋ 的比率。注意，如果量度不是二进制的（实验中的每个单位为 1 或 0），则该值可能大于 1
+3. **转化率**：显示的转化率是成功量度值➊与标准化量度值➋的比率。 注意，如果量度不是二进制的（实验中的每个单位为 1 或 0），则该值可能大于 1
 
 4. **提升**：试验报告摘要显示超过基线的部分，这是对给定变量转换率超过基线的改进百分比的衡量。精确地来说，它是给定变量与基线之间的性能差异除以基线的性能，并以百分比表示。
 
