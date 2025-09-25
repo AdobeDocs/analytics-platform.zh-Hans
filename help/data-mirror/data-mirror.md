@@ -53,5 +53,5 @@ Data Mirror提供了以下基本数据库同步功能：
 >[!MORELIKETHIS]
 >
 >[Data Mirror快速入门指南：镜像并使用基于模型的数据](model-based.md)
->>[Data Mirror (Experience Platform文档)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>&#x200B;>[Data Mirror (Experience Platform文档)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
 >
