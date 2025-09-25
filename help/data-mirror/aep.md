@@ -4,11 +4,9 @@ description: 了解如何为Experience Platform Data Mirror for Customer Journey
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-hide: true
-hidefromtoc: true
 badgePremium: label="Beta 版"
 exl-id: 87593d7d-9456-48f8-8d39-5c3d95fe51ec
-source-git-commit: 578e19d8a8205bdfa034900c45d7d4a2d8f6a797
+source-git-commit: edf7bdac87d9bed48244ad80521bbbf83c48f7b6
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 2%
@@ -29,7 +27,7 @@ ht-degree: 2%
 
 ## 架构
 
-您需要创建一个基于模型的[架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/model-based){target="_blank"}，以便为要镜像的数据仓库本机表建模。 构造基于模型的架构时，请确保满足以下要求：
+您需要创建一个基于模型的[架构](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based){target="_blank"}，以便为要镜像的数据仓库本机表建模。 构造基于模型的架构时，请确保满足以下要求：
 
 * 在系统提示输入基于模型的架构类型时，请确保选择手动选项。
 * 为数据类型选择适当的架构。 请注意，Experience Platform Data Mirror主要用于时间序列数据（例如，事件数据）。
@@ -55,9 +53,9 @@ ht-degree: 2%
 
 有关针对支持的Data Warehouse本机解决方案的身份验证，请参阅相关的Experience Platform文档：
 
-* [Azure数据库](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/databricks)
-* [Google BigQuery](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/bigquery)
-* [Snowflake](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/snowflake)
+* [Azure数据库](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)
+* [Google BigQuery](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/bigquery)
+* [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)
 
 
 ### 选择数据
@@ -93,5 +91,5 @@ ht-degree: 2%
 >[!MORELIKETHIS]
 >
 >[Data Mirror快速入门指南：镜像并使用基于模型的数据](model-based.md)
->&#x200B;>[Data Mirror (Experience Platform文档)](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-mirror/overview)
->&#x200B;>[基于模型的架构(Experience Platform文档)](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/model-based)
+>>[Data Mirror (Experience Platform文档)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>>[基于模型的架构(Experience Platform文档)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)

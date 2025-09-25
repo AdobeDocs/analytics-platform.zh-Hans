@@ -4,11 +4,9 @@ description: 说明如何在Customer Journey Analytics中镜像和使用基于�
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-hide: true
-hidefromtoc: true
 badgePremium: label="Beta 版"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
-source-git-commit: e5975a7bb60f4a2386997024c4615f95be648363
+source-git-commit: edf7bdac87d9bed48244ad80521bbbf83c48f7b6
 workflow-type: tm+mt
 source-wordcount: '2268'
 ht-degree: 14%
@@ -220,7 +218,7 @@ Experience Platform Data Mirror for Customer Journey Analytics需要基于模型
 
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
-  有关在使用[Azure Databricks](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/databricks)或[Snowflake](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/snowflake)连接器时如何连接和身份验证的详细信息，请参阅Experience Platform文档。
+  有关在使用[Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)或[Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)连接器时如何连接和身份验证的详细信息，请参阅Experience Platform文档。
 
 
 ### 选择数据

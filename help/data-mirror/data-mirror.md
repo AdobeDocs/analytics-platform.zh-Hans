@@ -4,13 +4,11 @@ description: 了解如何在Data Warehouse本机解决方案和Customer Journey 
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-hide: true
-hidefromtoc: true
 badgePremium: label="Beta 版"
 exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
-source-git-commit: 578e19d8a8205bdfa034900c45d7d4a2d8f6a797
+source-git-commit: edf7bdac87d9bed48244ad80521bbbf83c48f7b6
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '407'
 ht-degree: 1%
 
 ---
@@ -35,7 +33,7 @@ Data Mirror提供了以下基本数据库同步功能：
 
 使用Data Mirror直接从源系统中摄取更改，强制实施架构完整性，并将数据用于Analytics、Journey Orchestration和合规性工作流。 Data Mirror通过启用现有数据库模型的直接镜像，消除了复杂的上游ETL流程并加快了实施。 这种消除可以通过精确控制删除和数据卫生操作来加强数据治理。
 
-另请参阅有关Data Mirror[的](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}Experience Platform文档。
+另请参阅有关Data Mirror[的](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}Experience Platform文档。
 
 ## 适用于Customer Journey Analytics的Data Mirror
 
@@ -53,5 +51,5 @@ Data Mirror提供了以下基本数据库同步功能：
 >[!MORELIKETHIS]
 >
 >[Data Mirror快速入门指南：镜像并使用基于模型的数据](model-based.md)
->&#x200B;>[Data Mirror (Experience Platform文档)](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-mirror/overview)
->
+>>[Data Mirror (Experience Platform文档)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>>[基于模型的架构(Experience Platform文档)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)

@@ -5,10 +5,10 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
-workflow-type: ht
-source-wordcount: '985'
-ht-degree: 100%
+source-git-commit: 0f445d409d276072ac649b94c12b94d3a59e7925
+workflow-type: tm+mt
+source-wordcount: '1046'
+ht-degree: 93%
 
 ---
 
@@ -18,12 +18,18 @@ Customer Journey Analytics 是 Adobe 推出的新一代 Analytics 解决方案�
 
 Customer Journey Analytics 架构大致如下所示：
 
-![在此部分中解释的 Customer Journey Analytics 架构](assets/cja-architecture.png)
+![Customer Journey Analytics架构](assets/cja-overview.svg)
+
+此架构说明了客户历程分析如何允许您：
+
+* 在![连接](/help/assets/icons/Data.svg)中合并多个数据集[数据](/help/connections/overview.md)。
+* 在![数据视图](/help/assets/icons/Dimensions.svg)中，根据您在连接中定义的数据集中可用的字段，定义和配置维度![维度](/help/assets/icons/Event.svg)和量度[事件](/help/data-views/data-views.md)。
+* 基于数据视图中的维度和量度生成![项目](/help/assets/icons/ViewTable.svg)中的报告![ViewTable](/help/assets/icons/GraphTrend.svg)和可视化图表（如行![行](/help/assets/icons/GraphAreaStacked.svg)和区域[区域](/help/analysis-workspace/home.md)）。
 
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analytics：适用于 Experience Business 的 Analytics](https://video.tv.adobe.com/v/36211/?quality=12&learn=on&captions=chi_hans){target="_blank"} 以获取有关 Customer Journey Analytics 的介绍视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analytics：适用于 Experience Business 的 Analytics](https://video.tv.adobe.com/v/30090/?quality=12&learn=on){target="_blank"} 以获取有关 Customer Journey Analytics 的介绍视频。
 
 >[!ENDSHADEBOX]
 
@@ -93,13 +99,13 @@ Adobe Experience Platform 让您可以实现源自任何系统的客户数据和
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Customer Journey Analytics 中处理数据](https://video.tv.adobe.com/v/35911/?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取有关如何在 Customer Journey Analytics 中处理数据的介绍视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Customer Journey Analytics 中处理数据](https://video.tv.adobe.com/v/32112/?quality=12&learn=on){target="_blank"}以获取有关如何在 Customer Journey Analytics 中处理数据的介绍视频。
 
 >[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [架构与集成](https://video.tv.adobe.com/v/330413/?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取有关 Customer Journey Analytics 架构与集成的介绍视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [架构与集成](https://video.tv.adobe.com/v/32483/?quality=12&learn=on){target="_blank"}以获取有关 Customer Journey Analytics 架构与集成的介绍视频。
 
 >[!ENDSHADEBOX]
 
