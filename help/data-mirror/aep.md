@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Beta 版"
 exl-id: 87593d7d-9456-48f8-8d39-5c3d95fe51ec
-source-git-commit: b585187f112c2081a8e51bd84d9f95e75ceebdc3
+source-git-commit: 8946f1bc57cc856adeac4ee0a96799040f7e698c
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '458'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 {{release-limited-testing}}
 
-适用于Customer Journey Analytics的Experience Platform Data Mirror功能要求正确配置多个Experience Platform组件：
+适用于Customer Journey Analytics的Experience Platform Data Mirror需要正确配置多个Experience Platform组件：
 
 * 架构
 * 数据集
@@ -32,7 +32,7 @@ ht-degree: 3%
 您需要创建基于模型的架构，以便为要镜像的数据仓库本机表建模。 构造基于模型的架构时，请确保满足以下要求：
 
 * 在系统提示输入基于模型的架构类型时，请确保选择手动选项。
-* 为数据类型选择适当的架构。 请注意，Data Mirror功能主要用于时间序列数据（例如事件数据）。
+* 为数据类型选择适当的架构。 请注意，Experience Platform Data Mirror主要用于时间序列数据（例如，事件数据）。
 
 * 定义架构中的字段及其属性
 * 在基于模型的架构中配置字段的必需属性：
@@ -55,9 +55,9 @@ ht-degree: 3%
 
 有关针对支持的Data Warehouse本机解决方案的身份验证，请参阅相关的Experience Platform文档：
 
-* [Azure数据库](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/databricks)
-* [Google BigQuery](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/bigquery)
-* [Snowflake](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/snowflake)
+* [Azure数据库](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)
+* [Google BigQuery](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/bigquery)
+* [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)
 
 
 ### 选择数据

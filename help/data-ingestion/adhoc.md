@@ -6,27 +6,25 @@ feature: Basics
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 9bd124ad651274b48052edc56bfb72358aa2d79a
+exl-id: 17b5842f-dc81-481f-8b21-dc90a133adcf
+source-git-commit: e5975a7bb60f4a2386997024c4615f95be648363
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 27%
+source-wordcount: '1623'
+ht-degree: 23%
 
 ---
 
-
 # 摄取和使用临时数据
 
-本快速入门指南介绍如何将临时数据摄取到Adobe Experience Platform，然后在Customer Journey Analytics中使用该数据。
+本快速入门指南介绍如何将临时数据摄取到Experience Platform，然后在Customer Journey Analytics中使用该数据。
 
 要完成此实施，您需要：
 
-- **在Experience Platform中创建包含CSV文件的数据集**&#x200B;以定义要收集的数据的模型（架构）以及收集数据（数据集）的位置。
+- **在Experience Platform中创建包含CSV文件的数据集**。 此工作流定义要收集的数据的模型（架构）以及收集数据（数据集）的位置。
 
-- **在Experience Platform中使用源连接器**，将数据放入配置的数据集。
+- 在 Customer Journey Analytics 中&#x200B;**设置连接**。此连接应该（至少）包含您的Experience Platform临时数据集。
 
-- 在 Customer Journey Analytics 中&#x200B;**设置连接**。此连接应（至少）包含 Adobe Experience Platform 数据集。
-
-- 在 Customer Journey Analytics 中&#x200B;**设置数据视图**&#x200B;以定义要在 Analysis Workspace 中使用的量度和维度。
+- **在Customer Journey Analytics中设置数据视图**，以根据您想要在Analysis Workspace中使用的临时数据的字段定义量度和维度。
 
 - 在 Customer Journey Analytics 中&#x200B;**设置一个项目**&#x200B;以构建报告和可视化图表。
 
@@ -34,7 +32,7 @@ ht-degree: 27%
 
 >[!NOTE]
 >
->本快速入门指南是一份关于如何使用将临时数据摄取到Adobe Experience Platform并在Customer Journey Analytics中使用它的简化指南。 强烈建议参考时研究附加信息。
+>本快速入门指南是一份关于如何使用将临时数据摄取到Experience Platform并在Customer Journey Analytics中使用该临时数据的简化指南。 强烈建议参考时研究附加信息。
 
 
 ## 使用CSV文件创建数据集
@@ -53,14 +51,14 @@ ht-degree: 27%
 >
 >将临时数据集和架构用于基于记录的数据（查找、个人资料）。 临时数据集和架构不太适合，不应考虑用于时间序列（事件、摘要）数据。
 
-您不需要为临时数据创建XDM架构。 Adobe Experience Platform支持的工作流基于CSV文件中的数据：
+您不需要为临时数据创建XDM架构。 Experience Platform支持的工作流基于CSV文件中的数据：
 
-1. 创建符合CSV文件列的临时架构。
-1. 基于包含CSV文件数据的临时架构创建数据集。
+1. 自动创建临时架构。 该架构符合CSV文件的列。
+1. 创建包含CSV文件数据的数据集。
 
 要启动工作流，请执行以下操作：
 
-1. 在Adobe Experience Platform UI的左边栏中，选择&#x200B;**[!UICONTROL 工作流]**。
+1. 在Experience Platform界面的左边栏中，选择&#x200B;**[!UICONTROL 工作流]**。
 1. 选择![数据添加](/help/assets/icons/DataAdd.svg) **[!UICONTROL 从CSV文件创建数据集]**。
 1. 从右窗格中选择&#x200B;**[!UICONTROL 启动项]**。
 1. 在&#x200B;**[!UICONTROL 工作流]** > **[!UICONTROL 从CSV文件创建数据集]**&#x200B;向导中：
@@ -80,15 +78,15 @@ ht-degree: 27%
 
       1. 选择&#x200B;**[!UICONTROL 完成]**。
 
-准备并上传数据。 数据成功上传后，您将被重定向到Adobe Experience Platform UI中的&#x200B;**[!UICONTROL 数据集]**。<br/>您从CSV **[!UICONTROL 数据集看到]**&#x200B;示例数据的&#x200B;**[!UICONTROL 数据集活动]**，状态为![StatusOrange](/help/assets/icons/StatusOrange.svg) **[!UICONTROL 正在处理]**。
+成功准备并上传数据后，您将被重定向到Experience Platform界面中的&#x200B;**[!UICONTROL 数据集]**。<br/>您从CSV **[!UICONTROL 数据集看到]**&#x200B;示例数据的&#x200B;**[!UICONTROL 数据集活动]**，状态为![StatusOrange](/help/assets/icons/StatusOrange.svg) **[!UICONTROL 正在处理]**。
 
 ![临时数据的数据集活动](assets/datasets-dataset-activity.png)
 
 要检查临时数据，请执行以下操作：
 
-1. 在Adobe Experience Platform UI的左边栏中，选择&#x200B;**[!UICONTROL 数据集]**。
+1. 在Experience Platform界面的左边栏中，选择&#x200B;**[!UICONTROL 数据集]**。
 1. 在&#x200B;**[!UICONTROL 数据集]**&#x200B;中选择&#x200B;**[!UICONTROL 浏览]**&#x200B;选项卡。 您应该会看到数据集已列出。
-1. 从&#x200B;**[!UICONTROL 架构]**&#x200B;列中选择架构的名称。 例如：**[!UICONTROL CSV示例数据……]**。
+1. 从&#x200B;**[!UICONTROL 架构]**&#x200B;列中选择架构的名称。 例如：**[!UICONTROL CSV示例数据……]**
 
    ![为临时数据集选择架构](assets/adhoc-schema-selection.png)
 
@@ -100,13 +98,19 @@ ht-degree: 27%
 
   ![临时架构](dataset/../assets/adhoc-schema.png)
 
+  >[!NOTE]
+  >
+  >工作流将架构中所有字段的类型定义为字符串。 您无法在以后更改此类型。 如果您需要在临时架构的定义中拥有更大的灵活性，请考虑使用[使用API创建临时架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/ad-hoc)，然后使用[从架构创建数据集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#schema)工作流。
+  > 
+
+
 
 
 ## 设置连接
 
-要在Customer Journey Analytics中使用Adobe Experience Platform数据集，需创建一个连接，其中包含从工作流中产生的临时数据。
+要在Customer Journey Analytics中使用Experience Platform数据集，请创建一个连接，其中包含由[工作流](#create-a-dataset-with-a-csv-file)生成的临时数据集
 
-通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告这些数据集，您必须首先在Adobe Experience Platform和Workspace中的数据集之间建立连接。
+通过连接，您可以将来自Experience Platform的数据集集成到Workspace中。 要报告这些数据集，您必须首先在Experience Platform和Workspace中的数据集之间建立连接。
 
 创建您的连接：
 
@@ -126,7 +130,7 @@ ht-degree: 27%
 
 1. 在&#x200B;**[!UICONTROL 添加数据集]**&#x200B;的&#x200B;**[!UICONTROL 选择数据集]**&#x200B;步骤中：
 
-   1. 选择您之前创建的数据集，例如&#x200B;**[!UICONTROL CSV示例数据]**，以及要包含在连接中的任何其他数据集。
+   1. 选择您之前创建的数据集，例如&#x200B;**[!UICONTROL CSV示例数据]**，以及要包含在连接中的任何其他数据集。 临时数据集具有&#x200B;**[!UICONTROL 临时]** [!UICONTROL 数据集类型]。
 
       ![添加数据集](./assets/cja-connections-adhoc-2.png)
 
@@ -153,7 +157,7 @@ ht-degree: 27%
 
 >[!IMPORTANT]
 >
->除了不将临时数据集和架构用于时间序列数据的一般建议之外，您应该&#x200B;**不**&#x200B;将&#x200B;**[!UICONTROL 从CSV创建数据集]**&#x200B;工作流用于时间序列数据。 生成临时架构的工作流将所有字段定义为字符串类型，之后您无法对其进行修改。 将基于时间序列的数据集（事件或摘要）添加到连接时，此类型的数据集需要定义至少一个日期时间类型的字段。 <br/>如果需要使用临时时间序列数据，应考虑使用[使用API创建临时架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438)，然后使用[从架构创建数据集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/user-guide#schema)工作流。
+>除了不将临时数据集和架构用于时间序列数据的一般建议之外，您不能将&#x200B;**[!UICONTROL 从CSV创建数据集]**&#x200B;工作流用于时间序列数据。 此工作流将所有字段定义为字符串类型，您之后无法对其进行修改。 将基于时间序列的数据集（事件或摘要）添加到连接时，此类型的数据集需要定义至少一个日期时间类型的字段。<br/>如果确实需要使用临时时间序列数据，请考虑使用[使用API创建临时架构](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438)，然后使用[从架构创建数据集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#schema)工作流。
 
 
 创建[连接](/help/connections/overview.md)后，您可以执行各种管理任务，如[选择和组合数据集](/help/connections/combined-dataset.md)、[检查连接的数据集的状态以及数据摄取的状态](/help/connections/manage-connections.md)等等。
@@ -180,7 +184,17 @@ ht-degree: 27%
 
 1. 在&#x200B;**[!UICONTROL 组件]**&#x200B;步骤中：
 
-   1. 将您要包含的任何临时架构字段和/或标准组件添加到&#x200B;**[!UICONTROL METRICS]**&#x200B;或&#x200B;**[!UICONTROL DIMENSIONS]**&#x200B;组件框中。
+   1. 将您要包含的任何架构字段和/或标准组件添加到&#x200B;**[!UICONTROL METRICS]**&#x200B;或&#x200B;**[!UICONTROL DIMENSIONS]**&#x200B;组件框中。 确保从包含临时数据的数据集中添加相关字段。 要访问这些字段，请执行以下操作：
+
+      1. 选择&#x200B;**[!UICONTROL 事件数据集]**。
+      1. 选择&#x200B;**[!UICONTROL 临时和基于模型的字段]**。
+
+         ![数据视图 — 临时组件](assets/cja-dataview-components-adhoc.png)
+
+      1. 将临时架构中的字段拖放到&#x200B;**[!UICONTROL METRICS]**&#x200B;或&#x200B;**[!UICONTROL DIMENSIONS]**&#x200B;上。
+
+
+
    1. 或者，使用[派生字段](/help/data-views/derived-fields/derived-fields.md)将任意临时字段从其默认字符串类型和格式修改为其他类型或格式。
 
    1. 选择&#x200B;**[!UICONTROL 保存并继续]**。
@@ -208,7 +222,7 @@ Analysis Workspace是一款灵活的浏览器工具，允许您快速构建分�
 
 1. 从列表中选择您的[数据视图](#set-up-a-data-view)。
 
-1. 要创建您的第一个报告，请在[!UICONTROL 面板]的[!UICONTROL 自由格式表]上开始拖放维度和量度。 包括这些基于您的临时数据的量度或维度。
+1. 要创建您的第一个报告，请在[!UICONTROL 面板]的[!UICONTROL 自由格式表]上开始拖放维度和量度。 包括那些基于您的临时数据的量度或维度。
 
 请参阅 [Analysis Workspace 概述](../analysis-workspace/home.md)，了解有关如何使用组件、可视化和面板创建项目和构建分析的更多信息。
 

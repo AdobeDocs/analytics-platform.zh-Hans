@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Beta 版"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
-source-git-commit: a6cdade9790ef4bc222eb5979b7370f7403b5ad5
+source-git-commit: e5975a7bb60f4a2386997024c4615f95be648363
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2268'
 ht-degree: 14%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 14%
 
 {{release-limited-testing}}
 
-本快速入门指南介绍如何使用[Experience Platform Data Mirror for Customer Journey Analytics](data-mirror.md)功能从Adobe Experience Platform中的Data Warehouse本机解决方案镜像基于模型的数据。 然后在Customer Journey Analytics中使用该数据。
+本快速入门指南介绍如何使用[适用于Customer Journey Analytics的Experience Platform Data Mirror](data-mirror.md)，从Adobe Experience Platform中的Data Warehouse本机解决方案镜像基于模型的数据。 然后在Customer Journey Analytics中使用该数据。
 
 要完成此用例，您需要：
 
@@ -117,12 +117,12 @@ Experience Platform Data Mirror for Customer Journey Analytics需要基于模型
    SET OPTIONS (enable_change_history = TRUE);
    ```
 
-您的Data Warehouse本机解决方案中的表中的数据已准备好使用Experience Platform Data Mirror for Customer Journey Analytics功能。
+您的Data Warehouse本机解决方案中的表中的数据已准备好用于Experience Platform Data Mirror for Customer Journey Analytics。
 
 
 ## 设置架构
 
-要在Experience Platform中镜像数据，您必须首先定义数据的架构。 您要在Experience Platform中镜像并使用Experience Platform Data Mirror for Customer Journey Analytics功能的所有数据都必须符合基于模型的架构。
+要在Experience Platform中镜像数据，您必须首先定义数据的架构。 您要在Experience Platform中镜像并使用Experience Platform Data Mirror for Customer Journey Analytics的所有数据都必须符合基于模型的架构。
 
 定义用于对此数据进行建模的架构。 设置您的架构：
 
@@ -141,7 +141,7 @@ Experience Platform Data Mirror for Customer Journey Analytics需要基于模型
    1. 输入&#x200B;**[!UICONTROL 描述]**。 例如：`Sample event feed schema for a model-based schema`。
    1. 选择&#x200B;**[!UICONTROL 时间序列]**&#x200B;作为&#x200B;**[!UICONTROL 架构行为]**。 您为基于时间序列的数据选择&#x200B;**[!UICONTROL 时间序列]**，为基于记录的数据选择&#x200B;**[!UICONTROL 记录]**。 行为定义架构的结构和包含的属性。
 
-      Experience Platform Data Mirror for Customer Journey Analytics功能主要用于时间序列数据（例如，事件数据）。
+      适用于Customer Journey Analytics的Experience Platform Data Mirror主要用于时间序列数据（例如事件数据）。
 
       ![架构配置](assets/model-based-create-schema.png)
 
@@ -220,7 +220,7 @@ Experience Platform Data Mirror for Customer Journey Analytics需要基于模型
 
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
-  有关在使用[Azure Databricks](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/databricks)或[Snowflake](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/snowflake)连接器时如何连接和身份验证的详细信息，请参阅Experience Platform文档。
+  有关在使用[Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)或[Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)连接器时如何连接和身份验证的详细信息，请参阅Experience Platform文档。
 
 
 ### 选择数据
@@ -351,6 +351,8 @@ Experience Platform Data Mirror for Customer Journey Analytics需要基于模型
       1. 选择&#x200B;**[!UICONTROL 事件数据集]**。
       1. 选择&#x200B;**[!UICONTROL 临时和基于模型的字段]**。
       1. 将基于模型的架构中的字段拖放到&#x200B;**[!UICONTROL METRICS]**&#x200B;或&#x200B;**[!UICONTROL DIMENSIONS]**&#x200B;上。
+
+         ![添加基于模型的字段作为组件](assets/cja-add-dataset-folder-dv.png)
 
    1. 为不具有相应类型、格式不正确或由于其他原因要修改的字段定义派生字段。 例如，对于&#x200B;**[!UICONTROL 收入金额]**。
 
