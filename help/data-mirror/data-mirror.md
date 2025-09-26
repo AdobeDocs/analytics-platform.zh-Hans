@@ -6,9 +6,9 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta 版"
 exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
-source-git-commit: 4b11c98d24b131eb32040943e869132c8182747f
+source-git-commit: 25d0647c6a764d8f4306a5c049a7a68e0426cef9
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '404'
 ht-degree: 1%
 
 ---
@@ -33,13 +33,13 @@ Data Mirror提供了以下基本数据库同步功能：
 
 使用Data Mirror直接从源系统中摄取更改，强制实施架构完整性，并将数据用于Analytics、Journey Orchestration和合规性工作流。 Data Mirror通过启用现有数据库模型的直接镜像，消除了复杂的上游ETL流程并加快了实施。 这种消除可以通过精确控制删除和数据卫生操作来加强数据治理。
 
-另请参阅有关Data Mirror[的](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}Experience Platform文档。
+另请参阅有关Data Mirror[的](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}Experience Platform文档。
 
 ## 适用于Customer Journey Analytics的Data Mirror
 
 >[!NOTE]
 >
->适用于Customer Journey Analytics的Experience Platform Data Mirror功能在&#x200B;**公共测试版**&#x200B;中提供，有效期至2026年3月25日。<br/><br/>在Beta测试期间：<ul><li>变更数据捕获(CDC)更新限制为Customer Journey Analytics每天拥有1000万个变更行。</li><li>客户每天可通过源连接器摄取多达200万条更改行到Adobe Experience Platform数据湖。</li></ul><br/>Adobe保留在您的组织超过这些限制时终止对Experience Platform Data Mirror功能的Beta版访问的权利。 <br/>若要请求对此功能的访问权限，请联系您的Adobe帐户团队。
+>适用于Customer Journey Analytics的Experience Platform Data Mirror功能在&#x200B;**公共测试版**&#x200B;中提供，有效期至2026年3月25日。 客户每天可通过源连接器摄取多达200万条更改行到Adobe Experience Platform数据湖。 如果贵组织超过这些限制，Adobe保留终止对Experience Platform Data Mirror功能Beta版访问的权利。 <br/>若要请求对此功能的访问权限，请联系您的Adobe帐户团队。
 >
 
 适用于Customer Journey Analytics的Experience Platform Data Mirror适用于选定的Data Warehouse本机解决方案（[!DNL Azure Databricks]、[!DNL Google BigQuery]和[!DNL Snowflake]）。 Customer Journey Analytics版本的Experience Platform Data Mirror需要正确配置以下应用程序或组件：
@@ -51,5 +51,5 @@ Data Mirror提供了以下基本数据库同步功能：
 >[!MORELIKETHIS]
 >
 >[Data Mirror快速入门指南：镜像并使用基于模型的数据](model-based.md)
->&#x200B;>[Data Mirror (Experience Platform文档)](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-mirror/overview)
->&#x200B;>[基于模型的架构(Experience Platform文档)](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/model-based)
+>>[Data Mirror (Experience Platform文档)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>>[基于模型的架构(Experience Platform文档)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)
