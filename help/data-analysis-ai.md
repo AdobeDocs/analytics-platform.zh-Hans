@@ -8,7 +8,7 @@ exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 source-git-commit: cd92bde10b9cb473c4df791e91296a2a43b2ad84
 workflow-type: tm+mt
 source-wordcount: '2463'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -41,8 +41,8 @@ Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/a
 
 >[!CONTEXTUALHELP]
 >id="cja-enable-data-insights-data-view"
->title="为Data Insights Agent启用"
->abstract="此选项启用此数据视图，以便与Data Insights Agent一起使用。 Data Insights Agent是一个可从Customer Journey Analytics中的AI助手访问的创作AI会话代理。 它有助于您通过文本提示快速分析数据。 它使用来自数据视图的组件和您的实际数据在 Analysis Workspace 中构建相关的可视化图表。"
+>title="为 Data Insights 代理启用"
+>abstract="此选项可启用与 Data Insights 代理一起使用的数据视图。Data Insights 代理是一个生成式 AI 对话代理，可以从 Customer Journey Analytics 中的 AI 助手访问。它可帮助您通过文本提示词快速分析数据。它使用来自数据视图的组件和您的实际数据在 Analysis Workspace 中构建相关的可视化图表。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -149,7 +149,7 @@ Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/a
 
 **提示词：**&#x200B;在提示词窗口中输入&#x200B;*“添加利润。”*
 
-**回答：**&#x200B;**[!UICONTROL 条形]**&#x200B;图仍然提供了最简洁的回答，而利润量度被添加到自由格式表中成为一列：
+**回答：****[!UICONTROL 条形]**&#x200B;图仍然提供了最简洁的回答，而利润量度被添加到自由格式表中成为一列：
 
 ![条形图](/help/assets/ai-asst-result4.png)
 
@@ -163,13 +163,13 @@ Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/a
 
 ![圆环图](/help/assets/ai-asst-result3.png)
 
-## 跨Experience Cloud应用程序访问Data Insights Agent
+## 在各种 Experience Cloud 应用程序中访问 Data Insights 代理
 
-Adobe Experience Platform Agent Orchestrator允许您在多个Adobe Experience Cloud应用程序(如Data Insights Agent和Real-Time CDP)中访问Adobe Journey Optimizer的功能。
+Adobe Experience Platform Agent Orchestrator 允许您在 Adobe Journey Optimizer 和 Real-Time CDP 等多个 Adobe Experience Cloud 应用程序中访问 Data Insights 代理的功能。
 
-Agent Orchestrator解释您的请求，确定需要哪些专业代理，并协调他们提供正确的响应。 它可以跨多轮交互跟踪上下文，因此您可以自然地基于先前的查询进行构建。
+Agent Orchestrator 能够理解您的请求，确定需要使用哪些专门的代理，并编排它们以提供正确的回答。它可以在多轮次交互中跟踪上下文，使您可以在之前查询的基础上自然地构建对话。
 
-有关详细信息，请参阅[Adobe Experience Platform Agent Orchestrator](http://www.adobe.com/go/agent-orchestrator-home)。
+有关更多信息，请参阅 [Adobe Experience Platform Agent Orchestrator](http://www.adobe.com/go/agent-orchestrator-home)。
 
 ## 数据可视化图表提示词示例
 
@@ -259,7 +259,7 @@ Following the thumbs up or thumbs down selection, please make a selection for th
 >[!MORELIKETHIS]
 >
 >[组件设置](/help/data-views/component-settings/overview.md)
->&#x200B;>[数据字典](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[批准计算量度](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[共享区段](/help/components/segments/seg-share.md)
+>>[数据字典](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[批准计算量度](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[共享区段](/help/components/segments/seg-share.md)
 >
