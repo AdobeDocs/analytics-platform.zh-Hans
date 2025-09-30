@@ -4,9 +4,9 @@ title: 使用模板
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: f41162d1c4c44f79c59585d1311cd2e431725103
-workflow-type: ht
-source-wordcount: '20276'
+source-git-commit: cae339ebc5d2609a7a93e63e874c4e7d611f2cad
+workflow-type: tm+mt
+source-wordcount: '20424'
 ht-degree: 100%
 
 ---
@@ -591,6 +591,16 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速了解最�
 
 
 <!--Both AA and CJA-->
+
+>[!CONTEXTUALHELP]
+>id="template--audienceOverview"
+>title="查看访问该网站的人员来自哪个国家或地区。"
+>abstract="**这可以帮助您**&#x200B;更好地了解访问您网站的用户主要来自哪些国家或地区。<br/>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如利用这些数据来聚焦在这些国家的营销努力，或者确保您的网站体验在主要语言不同的国家中达到最优。<br/>此模板使用“国家/地区”维度。"
+
+>[!CONTEXTUALHELP]
+>id="template--consentPolicyOverview"
+>title="查看访问该网站的人员来自哪个国家或地区。"
+>abstract="**这可以帮助您**&#x200B;更好地了解访问您网站的用户主要来自哪些国家或地区。<br/>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如利用这些数据来聚焦在这些国家的营销努力，或者确保您的网站体验在主要语言不同的国家中达到最优。<br/>此模板使用“国家/地区”维度。"
 
 >[!CONTEXTUALHELP]
 >id="template--countryGeoReport"
