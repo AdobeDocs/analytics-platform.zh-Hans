@@ -4,10 +4,10 @@ title: 配置流失可视化图表
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: d91e6aaebd14bc02f53b28820dd6013350e36d36
 workflow-type: tm+mt
-source-wordcount: '737'
-ht-degree: 92%
+source-wordcount: '856'
+ht-degree: 76%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 92%
    >
    >多个区段通过 AND 相连，而多个项目（如维度项）和量度通过 OR 相连。
 
-   ![页面：CamerRoll 或页面：相机接触点突出显示。](assets/fallout-or.png)
+   ![页面:CamerRoll或页面：摄像头接触点已突出显示。](assets/fallout-or.png)
 
 1. 您还可以将各个接触点&#x200B;**限制为路径中的下一个事件**（而不是&#x200B;*最终*）。每个接触点下方都有一个选择器，其中包含&#x200B;**[!UICONTROL 最终路径]**&#x200B;和&#x200B;**[!UICONTROL 下一个事件]**&#x200B;选项，如下所示：
 
@@ -80,14 +80,14 @@ ht-degree: 92%
 | **[!UICONTROL 显示接触点趋势]** | 在预先生成了一些异常检测数据的线形图中查看接触点的趋势数据。 |
 | **[!UICONTROL 显示接触点趋势（%）]** | 显示总流失百分比趋势。 |
 | **[!UICONTROL 显示所有接触点趋势（%）]** | 在同一个图表中显示流失中的所有接触点百分比趋势（如果包括&#x200B;**[!UICONTROL 所有人员]**，则将其排除）。 |
-| **[!UICONTROL 划分此接触点的流过]** | 查看人员在两个接触点（此接触点和下一个接触点）之间的行为（如果他们继续到下一个接触点）。这会创建一个自由格式表来显示您的维度。您可以替换表的维度和其他元素。 |
-| **[!UICONTROL 划分此接触点的流失]** | 查看未通过漏斗的人员在选定步骤后立即做了些什么。 |
+| **[!UICONTROL 划分此接触点的流过]** | 查看人员在两个接触点（此接触点和下一个接触点）之间的行为（如果他们继续到下一个接触点）。这会创建一个自由格式表来显示您的维度。可以替换表的尺寸和其他元素。 例如，一个标记为&#x200B;**[!UICONTROL 流过：所有人员>页面等于任何主页]**，并包含&#x200B;**[!UICONTROL 页面]**&#x200B;作为维度以及按&#x200B;**[!UICONTROL 仅用于项目的快速区段]**&#x200B;分段的[人员](/help/components/segments/seg-quick.md) **[!UICONTROL 流过：所有人员>页面等于任何主页]**&#x200B;作为量度的表。 检查区段以了解如何确定流过区段。 |
+| **[!UICONTROL 划分此接触点的流失]** | 查看未通过funnel的人员在选定步骤后立即做了些什么。 这会创建一个自由格式表来显示您的维度。可以替换表的尺寸和其他元素。 例如，标记为&#x200B;**[!UICONTROL 流失：人员>页面等于任何主页]**，并包含&#x200B;**[!UICONTROL 页面]**&#x200B;作为维度以及按&#x200B;**[!UICONTROL 仅用于项目的快速区段]** [流过：所有访客>页面等于任何主页](/help/components/segments/seg-quick.md)区段分段的&#x200B;**[!UICONTROL 人员]**&#x200B;作为量度。 检查区段以了解如何确定流失区段。 |
 | **[!UICONTROL 从接触点创建区段]** | 从选定的接触点创建新区段。 |
 
 >[!MORELIKETHIS]
 >
 >[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[可视化图表设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[可视化图表上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[可视化图表设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[可视化图表上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

@@ -4,10 +4,10 @@ description: 了解如何查看和管理 Customer Journey Analytics 审核日志
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: 9ed7b541ebb1a89b286040c4ea96025b08029499
-workflow-type: ht
-source-wordcount: '953'
-ht-degree: 100%
+source-git-commit: 2ef96ad194f8c7acec35bd7635c650af4370531a
+workflow-type: tm+mt
+source-wordcount: '967'
+ht-degree: 98%
 
 ---
 
@@ -35,6 +35,8 @@ ht-degree: 100%
 为了提高系统中执行的活动的透明度和可见性，Adobe Customer Journey Analytics 允许您以“审核日志”的形式审核各种服务和功能的用户活动。这些日志形成审核记录，可以帮助解决问题，并帮助您的企业有效遵守公司数据管理政策和监管要求，例如“健康保险流通与责任法案”(HIPAA)。
 
 从基本意义上讲，审核日志将说明&#x200B;**谁**&#x200B;执行了&#x200B;**什么**&#x200B;操作，以及在&#x200B;**什么时候**&#x200B;执行的。日志中记录的每个操作都包含元数据，这些元数据可指示操作类型、日期和时间、执行操作的用户的电子邮件 ID 以及与操作类型相关的其他属性。
+
+审核日志将保留90天。 之后，审核日志将自动删除。
 
 本主题涵盖 Customer Journey Analytics 中的审核日志，包括如何在 UI 中查看和管理它们。
 
