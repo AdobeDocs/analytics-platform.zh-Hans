@@ -65,7 +65,7 @@ ht-degree: 70%
 >[!MORELIKETHIS]
 >
 >[引导式配置](guided.md)
->>[数据收集标记发布概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/overview)
+>&#x200B;>[数据收集标记发布概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/overview)
 >
 
 
