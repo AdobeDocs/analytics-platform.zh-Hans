@@ -1,6 +1,6 @@
 ---
-title: 配置内容分析
-description: 有关如何配置内容分析的概述
+title: 配置 Content Analytics
+description: 有关如何配置 Content Analytics 的概述
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
@@ -12,7 +12,7 @@ ht-degree: 85%
 
 ---
 
-# 配置内容分析
+# 配置 Content Analytics
 
 本文概要介绍了如何配置Content Analytics。
 

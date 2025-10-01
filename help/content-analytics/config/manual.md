@@ -1,6 +1,6 @@
 ---
-title: 内容分析手动配置
-description: 如何手动配置内容分析
+title: Content Analytics 手动配置
+description: 如何手动配置 Content Analytics
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
@@ -12,7 +12,7 @@ ht-degree: 70%
 
 ---
 
-# 内容分析手动配置
+# Content Analytics 手动配置
 
 本文详细介绍了要启动或停止 Content Analytics 配置的数据收集或者要编辑 Content Analytics 实施所需的手动操作。
 
@@ -65,7 +65,7 @@ ht-degree: 70%
 >[!MORELIKETHIS]
 >
 >[引导式配置](guided.md)
->&#x200B;>[数据收集标记发布概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/overview)
+>>[数据收集标记发布概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/overview)
 >
 
 
@@ -97,7 +97,7 @@ Content Analytics通过以下方式处理身份：
 * 不支持基于字段的拼合，因为架构由系统拥有。 因此，您无法向架构中添加其他字段以支持基于字段的拼合
 
 
-为了确保Content Analytics标识数据和Adobe Experience Platform Web SDK数据标识数据在字段级别正确拼合，您需要在事件发送[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"}回调之前对上的Web SDK进行修改。
+为了确保Content Analytics标识数据和Adobe Experience Platform Web SDK数据标识数据在字段级别正确拼合，您需要在事件发送[回调之前对](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"}上的Web SDK进行修改。
 
 1. 导航到包含Adobe Experience Platform Web SDK扩展和Adobe Content Analytics扩展的&#x200B;**[!UICONTROL Tags]**&#x200B;属性。
 1. 选择![插件](/help/assets/icons/Plug.svg) **[!UICONTROL 扩展]**。
