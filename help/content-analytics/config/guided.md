@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 8531c372607f39a3e39de8eda4f624057e56d9a4
+source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
 workflow-type: tm+mt
 source-wordcount: '2694'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -82,17 +82,17 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataview_button"
 >title="数据视图"
->abstract="要配置 Content Analytics，您需要选择一个现有的数据视图。然后，您可以将 Content Analytics 数据与其他数据合并。"
+>abstract="要配置 Content Analytics，您需要选择一个现有的数据视图。因此，您可以将Content Analytics数据与其他数据合并。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="数据视图"
->abstract="从 Customer Journey Analytics 中选择一个您希望将 Content Analytics 数据与之合并的现有数据视图。"
+>abstract="从Customer Journey Analytics中选择一个要与Content Analytics数据合并的现有数据视图。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
 >title="数据视图"
->abstract="从 Customer Journey Analytics 中选择一个您希望将 Content Analytics 数据与之合并的现有数据视图。<br/>"
+>abstract="从Customer Journey Analytics中选择要与Content Analytics数据合并的现有数据视图。<br/>"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
@@ -237,7 +237,7 @@ ht-degree: 97%
 
 ### 数据收集 {#onboarding-data-collection}
 
-在此部分，您可配置如何收集 Content Analytics 数据。
+在此部分中，您可以配置如何收集Content Analytics数据。
 
 <!-- markdownlint-disable MD034 -->
 
