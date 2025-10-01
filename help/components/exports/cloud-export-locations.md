@@ -5,14 +5,32 @@ title: 配置云导出位置
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 882e280da3f65e297abccd475d381832fd236843
+source-git-commit: 5adcab1df932f5c8af1f140fb6707f2d56726ae3
 workflow-type: tm+mt
-source-wordcount: '1915'
-ht-degree: 20%
+source-wordcount: '2030'
+ht-degree: 19%
 
 ---
 
-# 配置云导出位置
+# 配置云导出位置 {#configure-cloud-export-locations}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-prefix"
+>title="前缀"
+>abstract="容器中要放置数据的根文件夹。 指定静态文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，`folder_name/`"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-file-name"
+>title="文件名和路径"
+>abstract="指定动态自定义文件名，以用于发送到此位置的自动导出。 您还可以在文件名前面添加动态自定义文件路径。 &lt;br\>在文件名和路径中使用变量可使其成为动态变量。 &lt;br\>例如，如果您指定`${yyyy}/${mm}/${dd}/my-report-${instance_id}-${idx}`，则在2026年1月15日自动发送到此目标的导出将具有以下文件路径和名称： `[prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv` &lt;br\>单击以下链接可查看可用变量列表。"
+
+<!-- markdownlint-enable MD034 -->
 
 在您可以将Customer Journey Analytics报表导出到Cloud目标(从Analysis Workspace(如[将Customer Journey Analytics报表导出到Cloud](/help/analysis-workspace/export/export-cloud.md)中所述)或从Report Builder(如[从Report Builder导出报表](/help/report-builder/report-builder-export.md)中所述)，如[将Customer Journey Analytics报表导出到Cloud](/help/analysis-workspace/export/export-cloud.md)中所述)之前，您需要添加并配置希望发送数据的位置。
 
@@ -88,11 +106,11 @@ ht-degree: 20%
 
    1. 打开[Microsoft Azure存储资源管理器](https://azure.microsoft.com/en-us/products/storage/storage-explorer/)。
 
-   1. 转到&#x200B;[!UICONTROL **存储帐户**] > [!UICONTROL **（附加的容器）**] > [!UICONTROL **Blob容器**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name &#x200B;***。
+   1. 转到&#x200B;[!UICONTROL **存储帐户**] > [!UICONTROL **（附加的容器）**] > [!UICONTROL **Blob容器**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name ***。
 
       >[!NOTE]
       >
-      >文件夹名称&#x200B;**[!UICONTROL cjaexport-_number_]**&#x200B;是Azure存储资源管理器提供的默认名称。 如果您只有与SAS URI关联的单个连接（正常），则此文件夹的名称将为&#x200B;**[!UICONTROL cjaexport-1]**。
+      >文件夹名称&#x200B;**[!UICONTROL cjaexport-_number_]**是Azure存储资源管理器提供的默认名称。 如果您只有与SAS URI关联的单个连接（正常），则此文件夹的名称将为&#x200B;**[!UICONTROL cjaexport-1]**。
 
 
       ![访问Azure存储资源管理器](assets/azure-storage-explorer-access.png)中的文件
