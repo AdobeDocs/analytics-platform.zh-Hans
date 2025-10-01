@@ -12,7 +12,7 @@ breadcrumb-title: Customer Journey Analytics 指南
 source-git-commit: 4621b5059333c5ee4f7d41014d0e4eff17ef33bf
 workflow-type: tm+mt
 source-wordcount: '1293'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -122,13 +122,13 @@ ht-degree: 98%
       + [源连接器](../data-ingestion/sources.md)
       + [临时数据](/help/data-ingestion/adhoc.md)
 
-+ 数据镜像 {#cja-data-mirror}
++ Data mirror {#cja-data-mirror}
    + [概述](/help/data-mirror/data-mirror.md)
    + 配置 {#configure}
-      + [Data Warehouse本机解决方案](/help/data-mirror/datawarehouse.md)
+      + [数据仓库原生解决方案](/help/data-mirror/datawarehouse.md)
       + [Experience Platform](/help/data-mirror/aep.md)
       + [Customer Journey Analytics](/help/data-mirror/cja.md)
-   + [Data Mirror快速入门指南](/help/data-mirror/model-based.md)
+   + [Data Mirror 快速入门指南](/help/data-mirror/model-based.md)
 
 + 连接 {#cja-connections}
    + [连接概述](../connections/overview.md)
@@ -286,7 +286,7 @@ ht-degree: 98%
       + [要求](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [辅助功能](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
-+ 内容分析 {#content-analytics}
++ Content Analytics {#content-analytics}
    + [概述](/help/content-analytics/content-analytics.md)
    + 报告 {#report}
       + [概述](/help/content-analytics/report/report.md)
