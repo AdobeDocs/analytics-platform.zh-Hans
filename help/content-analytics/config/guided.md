@@ -163,7 +163,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_header"
 >title="体验捕捉和定义"
->abstract="收集 Content Analytics 中的体验"
+>abstract="在 Content Analytics 中收集体验"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_parameters_header"
