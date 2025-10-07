@@ -6,11 +6,11 @@ feature: Release Notes
 source-git-commit: 8359e9da7e4bdbd450e23dacb7eee03328412aeb
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
-# 当前Customer Journey Analytics发行说明（2025年9月）
+# 当前 Customer Journey Analytics 发行说明（2025 年 9 月）
 
 **上次更新日期**：2025 年 9 月 23 日
 
