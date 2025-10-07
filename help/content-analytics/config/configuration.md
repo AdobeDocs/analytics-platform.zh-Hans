@@ -6,20 +6,20 @@ feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
 source-git-commit: f149a2bd7f184f4e8f6e67979649e2d9f609d603
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '599'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 # 配置 Content Analytics
 
-本文概要介绍了如何配置Content Analytics。
+本文档以高层级的方式介绍了如何配置 Content Analytics。
 
-在配置Content Analytics之前，必须确保满足[先决条件](#prerequisites)，您确实具有所需的[访问控制](#access-control)，并且了解[限制](#limitations)。
+在配置 Content Analytics 之前，您必须确保已满足[先决条件](#prerequisites)，具备所需的[访问控制](#access-control)，并了解相关[限制](#limitations)。
 
 
-高级步骤
+高层级步骤
 
 ![Content Analytics 的配置](../assets/aca-configuration.svg){zoomable="yes"}
 
@@ -39,7 +39,7 @@ ht-degree: 85%
 * 您已将 Content Analytics 中使用的特征化服务的用户代理和 IP 地址列入允许列表。要配置的用户代理字符串是：<code>AdobeFeaturization/1.0</code>。
 * 如果您[使用 JavaScript 实施了 Web SDK](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/install/library){target="_blank"}用于定期收集行为数据，请确保您使用了默认名称 <code>alloy</code> 为 JavaScript 库。
 * 您具有 Customer Journey Analytics 产品管理员角色，并具有管理连接和管理数据视图的额外权限。
-* 如果您考虑收集 Content Analytics 体验，请确保根据网页的更改设置并更新[&#x200B; Content Analytics 版本控制](manual.md#versioning)。
+* 如果您考虑收集 Content Analytics 体验，请确保根据网页的更改设置并更新[ Content Analytics 版本控制](manual.md#versioning)。
 * 您必须具有[数据收集权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions){target="_blank"}：
    * [Experience Platform 权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
    * [Experience Platform 数据收集/权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}
@@ -68,10 +68,10 @@ ht-degree: 85%
 
 ## 限制
 
-用于Content Analytics事件数据的架构由系统拥有。 无法修改系统拥有的架构，这意味着：
+Content Analytics 事件数据所使用的架构由系统所有。系统所有的架构不可修改，这意味着：
 
-* 为支持地理位置、机器人检测或设备查找等功能，您不能包含字段组。
-* 无法添加特定标识符以支持[基于字段的拼接](/help/stitching/fbs.md)。
+* 您无法通过添加字段组来支持诸如地理位置、机器人检测或设备查询等功能。
+* 您无法添加特定标识符以支持[基于字段的拼接](/help/stitching/fbs.md)。
 
 >[!MORELIKETHIS]
 >
