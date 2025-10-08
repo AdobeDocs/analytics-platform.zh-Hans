@@ -6,18 +6,22 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
-source-git-commit: c91ee21a3d4e20e3bdaeb75f2011ede6eee6cba0
+source-git-commit: 973e999b611d578da12018e60becf48efd7a76f8
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 50%
+source-wordcount: '799'
+ht-degree: 51%
 
 ---
 
 # 发送和计划项目
 
-您可以通过电子邮件将Customer Journey Analytics项目作为文件发送给选定的用户。 您可以临时发送文件，也可以配置项目以按计划发送。 项目可以采用CSV或PDF格式发送。
+您可以通过电子邮件将Customer Journey Analytics项目作为文件发送给选定的用户。 您可以临时发送文件，也可以配置项目以按计划发送。
 
-任何应用于项目的标记都会自动应用于导出文件。
+发送文件时请考虑以下事项：
+
+* 可以采用 CSV 或 PDF 格式发送文件。
+
+* 任何应用于项目的标记都会自动应用于导出文件。
 
 如[导出概述](/help/analysis-workspace/export/export-project-overview.md)中所述，还有其他导出 Customer Journey Analytics 数据的方法。
 
@@ -40,7 +44,7 @@ ht-degree: 50%
 
 ## 安排文件导出 {#schedule}
 
-通过电子邮件按计划将文件发送给收件人
+要通过电子邮件按计划将文件发送给收件人，请执行以下操作：
 
 1. 选择&#x200B;**[!UICONTROL 共享] > [!UICONTROL 计划文件导出]**。
 1. 指定文件类型：
@@ -62,7 +66,7 @@ ht-degree: 50%
    | **[!UICONTROL 按月份中的日期每年发送]** | 选择&#x200B;**[!UICONTROL 周中日]**，选择&#x200B;**[!UICONTROL 月中周]**，然后选择&#x200B;**[!UICONTROL 月中月]**。 |
    | **[!UICONTROL 按特定日期每年发送]** | 选择&#x200B;**[!UICONTROL 月份]**&#x200B;并从&#x200B;**[!UICONTROL 发送日期]**&#x200B;中选择一个值。 |
 
-1. 输入从&#x200B;**开始的**&#x200B;开始日期。 或者，选择![日历](/help/assets/icons/Calendar.svg)以从日历中选择开始日期。
+1. 输入从&#x200B;**[!UICONTROL 开始的]**&#x200B;开始日期。 或者，选择![日历](/help/assets/icons/Calendar.svg)以从日历中选择开始日期。
 
 1. 在&#x200B;**[!UICONTROL 结束日期]**&#x200B;中输入结束日期。 或者，选择![日历](/help/assets/icons/Calendar.svg)以从日历中选择结束日期。
 1. 选择&#x200B;**[!UICONTROL 按计划]**&#x200B;发送。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;即可取消。
@@ -99,7 +103,7 @@ Adobe 使用密码来加密计划项目，无论它们是以 .pdf 还是 .csv �
 ### 密码保护新的计划项目
 
 1. 保存项目后，转到&#x200B;**[!UICONTROL 分享]** > **[!UICONTROL 立即发送文件]**，或&#x200B;**[!UICONTROL 分享]** > **[!UICONTROL 按计划发送文件]**。
-1. 在[立即发送文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=zh-Hans#now)或[按计划发送文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=zh-Hans#schedule)下面，按照上面的说明操作。
+1. 在[立即发送文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#now)或[按计划发送文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#schedule)下面，按照上面的说明操作。
 
 ### 密码保护现有计划项目
 
