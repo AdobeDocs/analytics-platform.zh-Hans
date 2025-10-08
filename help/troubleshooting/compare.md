@@ -1,96 +1,66 @@
 ---
-title: 与 Adobe Analytics 数据进行比较
-description: 了解如何比较 Adobe Analytics 数据和 Customer Journey Analytics 中的数据
+title: 将Analytics Source Connector数据与Adobe Analytics进行比较
+description: 了解在Adobe Analytics和Customer Journey Analytics中查看类似报表时的数据差异。
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: 查询服务；查询服务；sql 语法
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
-workflow-type: ht
-source-wordcount: '831'
-ht-degree: 100%
+source-git-commit: d96404479aabe6020566e693245879b5ad4fad9c
+workflow-type: tm+mt
+source-wordcount: '720'
+ht-degree: 4%
 
 ---
 
-# 与 Adobe Analytics 数据进行比较
+# 将Analytics Source Connector数据与Adobe Analytics进行比较
 
-当您的组织采用 Customer Journey Analytics 时，您可能会注意到 Adobe Analytics 和 Customer Journey Analytics 之间的数据存在一些差异。这是正常情况，并且可能由于若干原因出现这种情况。Customer Journey Analytics 旨在使您可改善对于您在 AA 中的数据存在的某些限制。但是，可能会出现意外和非预期的差异。本文旨在帮助您诊断和解决这些差异，以便您和您的团队可以使用 Customer Journey Analytics，而不受数据完整性问题的影响。
+随着您的组织采用Customer Journey Analytics，可能会注意到Adobe Analytics与Customer Journey Analytics之间的数据差异。 这些差异是正常的，并且可能由于多种原因出现。 Customer Journey Analytics旨在允许您改进Adobe Analytics对数据的一些限制。 这种灵活性可能会导致Customer Journey Analytics解读数据的方式存在差异。 通过本文了解Customer Journey Analytics和Adobe Analytics处理数据的方式中的潜在差异。
 
-假设您通过 [Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)将 Adobe Analytics 数据导入 Adobe Experience Platform，然后使用此数据集创建了 Customer Journey Analytics 连接。
+本页假设您使用[Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)将Adobe Analytics数据摄取到Adobe Experience Platform，然后在Customer Journey Analytics中创建了[连接](/help/connections/overview.md)和[数据视图](/help/data-views/data-views.md)。
 
 ![数据从 Adobe Analytics 通过数据连接器流向 Adobe Experience Platform，然后使用 CJA 连接流向 Customer Journey Analytics](assets/compare.png)。
 
-接下来，您创建了一个数据视图，随后在 Customer Journey Analytics 上制作此数据的报告时，您注意到与 Adobe Analytics 中的报告结果存在差异。
+请注意以下可能导致报表平台间数据存在差异的原因：
 
-将原始 Adobe Analytics 数据与 Customer Journey Analytics 中的现有 Adobe Analytics 数据进行比较所要遵循的步骤如下。
+* **不同的数据集或报表包**：确保Adobe Analytics中的报表包与Source Connector从中派生数据的报表包相同。
+* **日历设置**： Adobe Analytics中的报表包包含您可以配置的时区和其他日历设置。 同样，Customer Journey Analytics中的数据视图具有一个您可以控制的单独设置。 如果需要奇偶校验，请确保这些设置在各产品之间匹配。
+* **其他数据集**： Customer Journey Analytics提供在单个连接中包含多个数据集的功能。 这些差异包括其他事件数据集、配置文件数据集或查找数据集。 此功能是Adobe Analytics与Customer Journey Analytics之间的关键区别点，它允许insight处理跨渠道数据。
+* **拼接的数据集**： Adobe提供在两个数据集之间分析人员ID的功能，从而生成包含拼接ID的新数据集。 这些[拼接数据集](/help/stitching/overview.md)包含的数据超出Adobe Analytics报表包提供的范围。
+* **数据源**： Customer Journey Analytics不包含上载到Adobe Analytics报表包的任何类型的[数据源](https://experienceleague.adobe.com/en/docs/analytics/import/data-sources/overview)，包括概要数据源或交易ID数据源。
+* **Dimension和量度设置**：在数据视图中，每个维度和量度都包含其自己的设置，贵组织可以更改这些设置。 这些更改在运行报告时应用，因此具有追溯性。 Adobe Analytics中的Dimension和量度设置可更改数据收集方式，以便今后应用这些更改。 如果更改了任一产品中的组件设置，则它们可能会创建报表差异。 如果侧重于特定维度，请确保归因和持久性设置在Adobe Analytics和Customer Journey Analytics之间匹配。
 
-## 先决条件
+  >[!TIP]
+  >
+  >Adobe强烈建议Adobe Analytics中的维度使用“[!UICONTROL 最近（最后一个）]”的分配。 此分配设置在Customer Journey Analytics中允许更大的归因灵活性。
 
-* 确保 Adobe Experience Platform 中的 Analytics 数据集包含您正在调查的日期范围的数据。
+* **访问定义**：除了单个维度和量度设置外，数据视图本身还包含从根本上改变访客数据解释方式的设置。 例如，您可以将区段应用到整个数据视图(类似于Adobe Analytics中的[虚拟报表包](https://experienceleague.adobe.com/en/docs/analytics/components/virtual-report-suites/vrs-about))。 您还可以更改访问持续时间的定义，或在任何所需事件上自动开始新访问。 这些设置中的任何一个都会对Customer Journey Analytics和Adobe Analytics之间的报表差异产生显着影响。
 
-* 确保您在 Analytics 中选择的报表包与引入到 Adobe Experience Platform 中的报表包一致。
+## 检查产品之间的记录计数
 
-## 步骤 1：在 Adobe Analytics 中运行发生次数指标
+如果以上所有设置看起来相似，并且您想至少验证产品之间的记录数，则可以使用以下步骤：
 
-[发生次数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=zh-Hans)指标显示设置或持久化某个给定维度所经历的点击次数。
-
-1. 在“Analytics”>“[!UICONTROL 工作区]”中，将要报告的日期范围作为一个维度拖入到一个[!UICONTROL 自由格式]表格中。
-
-1. [!UICONTROL 发生次数]指标将自动应用于该日期范围。
-
-1. 保存此项目，以使您可在比较中使用它。
-
-## 步骤 2：将结果与 Customer Journey Analytics 中的[!UICONTROL 按时间戳的总记录数]进行比较
-
-现在比较 Analytics 中的[!UICONTROL 发生次数]与 Customer Journey Analytics 中的“按时间戳的总记录数”。
-
-只要 Analytics 源连接器未丢弃任何记录，则“按时间戳的总记录数”应与“发生次数”一致——请参见下节。
-
->[!NOTE]
->
->这仅适用于常规中间值数据集，不适用于拼合的数据集（通过 [Stitching](/help/stitching/overview.md)）。请注意，将在 Customer Journey Analytics 中使用的人员 ID 考虑在内对于使这一比较发挥作用至关重要。可能并非总是很容易在 Adobe Analytics 中复制该内容，尤其是在已启用 Stitching 的情况下。
-
-1. 在 Adobe Experience Platform [查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=zh-Hans)中，运行以下的[!UICONTROL 按时间戳的总记录数]查询：
+1. 在Adobe Experience Platform [查询服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/home)中，运行以下按时间戳的总记录数查询：
 
    ```sql
    SELECT
-       Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) AS Day,
-       Count(_id) AS Records 
+     Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) AS Day,
+     Count(_id) AS Records
    FROM  {dataset}
    WHERE   timestamp >= from_utc_timestamp('{fromDate}','UTC')
-       AND timestamp < from_utc_timestamp('{toDate}','UTC')
-       AND timestamp IS NOT NULL
-       AND enduserids._experience.aaid.id IS NOT NULL
+     AND timestamp < from_utc_timestamp('{toDate}','UTC')
+     AND timestamp IS NOT NULL
+     AND enduserids._experience.aaid.id IS NOT NULL
    GROUP BY Day
-   ORDER BY Day; 
+   ORDER BY Day;
    ```
 
-1. [分析数据馈送](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=zh-Hans)，从原始数据中识别某些行是否已被分析源连接器过滤掉。
+1. 在Adobe Analytics [数据馈送](https://experienceleague.adobe.com/zh-hans/docs/analytics/export/analytics-data-feed/data-feed-overview)中，生成所需日期范围的馈送文件。 计算每个文件中的行数，识别并排除以下行：
 
-   [分析源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)可能在转换到 XDM 模式期间过滤某些行。整个行不适合进行转换的原因可能有多种。如果以下任何分析字段具有这些值，则将过滤掉整个行。
+   * `exclude_hit`不是`0`(两个产品中从Analysis Workspace中排除的数据)
+   * `hit_source`是`0`、`3`、`5`、`7`、`8`、`9`或`10`（数据源和其他非点击数据）
+   * `page_event`是`53`或`63`（流媒体保持活动状态点击）
 
-   | Analytics 字段 | 导致行丢弃的值 |
-   | --- | --- |
-   | Opt_out | y, Y |
-   | In_data_only | 不为 0 |
-   | Exclude_hit | 不为 0 |
-   | Bot_id | 不为 0 |
-   | Hit_source | 0, 3, 5, 7, 8, 9, 10 |
-   | Page_event | 53, 63 |
+   符合上述任一条件的行将从Analytics Source Connector摄取工作流中排除，因此在对数据馈送行计数时也应排除。
 
-   有关 hit\_source 详细信息，请参阅：[数据列参考](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=zh-Hans)。有关 page\_event 详细信息，请参阅：[页面事件查找](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html?lang=zh-Hans)。
-
-1. 如果连接器过滤某些行，则将从[!UICONTROL 发生次数]量度中去除这些行。得到的数字应与 Adobe Experience Platform 数据集中的事件数一致。
-
-## 为什么在从 Adobe Experience Platform 引入数据期间可能会过滤或跳过一些记录
-
-Customer Journey Analytics [连接](/help/connections/create-connection.md)允许您根据数据集中的通用人员 ID 将多个数据集汇集并合并在一起。在后端，我们应用重复数据删除：首先，基于时间戳针对事件数据集进行完全的外部连接或合并，然后基于人员 ID 对配置文件和查找数据集进行内部连接。
-
-以下是从 Adobe Experience Platform 中引入数据时可能会跳过记录的一些原因。
-
-* **缺少时间戳** – 如果事件数据集中缺少时间戳，则在引入期间将完全忽略或跳过这些记录。
-
-* **缺少人员 ID** -（事件数据集和/或配置文件/查找数据集）缺少人员 ID 将导致忽略或跳过这些记录。原因是没有共同的 ID 或匹配的键可连接这些记录。
-
-* **人员 ID 无效或过大** – 对于无效的 ID，系统将无法在要连接的数据集中找到有效的共同 ID。在某些情况下，人员 ID 列具有无效的人员 ID，例如“未定义”或“00000000”。每个月在某个事件中出现超过 100 万次的人员 ID（数字和字母的任意组合）无法归因到任何特定的用户或个人。它将被归为无效。无法将这些记录引入到系统中，并将导致引入和报表容易出错。
+1. 查询服务中的总记录数应与同一时间段内数据馈送中的行数匹配。
