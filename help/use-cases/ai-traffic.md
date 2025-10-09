@@ -6,9 +6,9 @@ feature: Use Cases
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 1cf0d957d62d60979982320f45b4fdadcc7458b8
+source-git-commit: 38be574621e4fc384f9fdeac94fc071f0cdd132b
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1217'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 1%
 |---|---|---|---|
 | **训练模型** | 实施服务器端日志记录时，可以识别代理（`GPTBot`、`ClaudeBot`等）。 | 无法分类。 AI爬虫在训练期间不会生成反向链接。 | 检测是不可能的。 AI爬网程序在训练期间不添加参数。 |
 | **代理浏览** | 服务器端日志记录捕获标头时可以识别代理(`ChatGPT-User`， `claude-web`)。 | 如果代理从具有反向链接保留的AI界面导航，则可以进行分类。 | 如果AI服务添加跟踪参数，则有时可能进行检测。 |
-| 用于回答查询的&#x200B;**Retrieval-Enhanced Generation (RAG)** | 可以使用服务器端日志记录标识代理(`OAI-SearchBot`， `PerplexityBot`)。 | 由于RAG操作通常会绕过反向链接机制，因此通常不可能进行分类。 | 除非由AI提供程序专门实施，否则很少可能进行检测。 |
+| **检索增强生成(RAG)以回答查询** | 可以使用服务器端日志记录标识代理(`OAI-SearchBot`， `PerplexityBot`)。 | 由于RAG操作通常会绕过反向链接机制，因此通常不可能进行分类。 | 除非由AI提供程序专门实施，否则很少可能进行检测。 |
 | **用户点进次数** | 无法识别代理。 AI代理显示为普通用户代理。 | 当用户从AI界面单击链接（[chatgpt.com](https://chatgpt.com)、[claude.ai](https://claude.ai)等）时，可以进行分类。 | 当AI服务将UTM参数添加到出站链接时，可能会进行检测。 |
 | **流量可见性条件** | 需要与Customer Journey Analytics或服务器端标记集成的服务器端日志记录才能识别代理。 | 分类取决于AI平台反向链接策略和适当的HTTP标头传输。 | 检测要求通过重定向和正确的URL参数收集来保留参数。 |
 
@@ -293,6 +293,6 @@ LLM和AI代理在与数字属性交互时表现出复杂且不断演变的行为
 
 >[!MORELIKETHIS]
 >
->此用例文章基于Brian Au的博客文章： [在Adobe Customer Journey Analytics中跟踪和分析LLM和AI生成的流量](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967)
+>此用例文章基于博客文章[在Adobe Customer Journey Analytics中跟踪和分析LLM和AI生成的流量](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967)。
 >
 >
