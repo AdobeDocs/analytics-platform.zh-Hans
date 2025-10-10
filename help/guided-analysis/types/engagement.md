@@ -6,7 +6,7 @@ keywords: 产品分析
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
 source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '748'
 ht-degree: 100%
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 * 矩阵左下角的功能是&#x200B;**低影响力**&#x200B;功能；它们并未被广泛采纳或频繁使用。
 * 矩阵右下角的功能是您的&#x200B;**一次性**&#x200B;功能；它们被广泛采用，但使用频率不高。
 
->[!VIDEO](https://video.tv.adobe.com/v/3447477?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3429489/&learn=on)
 
 
 ## 用例

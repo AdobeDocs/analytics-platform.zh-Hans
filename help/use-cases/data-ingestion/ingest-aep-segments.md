@@ -14,7 +14,7 @@ ht-degree: 51%
 
 # 将Adobe Experience Platform受众引入Adobe Customer Journey Analytics
 
-本用例探索了一种将Adobe Experience Platform (Adobe Experience Platform)受众引入Customer Journey Analytics的临时手动方式。 这些受众可能创建于Adobe Experience Platform区段生成器、Adobe Audience Manager或其他工具中，并存储在实时客户档案(RTCP)中。 受众包括一组概要文件 ID，以及任何适用的属性/事件/等。 我们想把它们带到WorkspaceCustomer Journey Analytics中进行分析。
+本用例探索了一种将Adobe Experience Platform (Adobe Experience Platform)受众引入Customer Journey Analytics的临时手动方式。 这些受众可能创建于Adobe Experience Platform区段生成器、Adobe Audience Manager或其他工具中，并存储在实时客户档案(RTCP)中。 受众包括一组概要文件 ID，以及任何适用的属性/事件/等。 我们想把它们带到Customer Journey Analytics Workspace中进行分析。
 
 ## 先决条件
 
@@ -24,31 +24,31 @@ ht-degree: 51%
 * 访问 Customer Journey Analytics. 您需要是Customer Journey Analytics产品管理员才能创建/修改Customer Journey Analytics连接和数据视图。
 * 能够使用 Adobe API（分段，可选其他）
 
-## 步骤 1：在实时客户档案中选择受众 {#audience}
+## 步骤 1：在实时客户轮廓中选择受众 {#audience}
 
-Adobe Experience Platform [实时客户档案](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans) (RTCP) 允许您通过组合来自多个渠道的数据（包括在线、离线、CRM 和第三方）来查看每个客户的整体视图。
+Adobe Experience Platform [实时客户轮廓](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-hans) (RTCP) 允许您通过组合来自多个渠道的数据（包括在线、离线、CRM 和第三方）来查看每个客户的整体视图。
 
 RTCP 中可能已经有来自不同来源的受众。 选择一个或多个受众以引入Customer Journey Analytics。
 
-## 步骤 2：为导出创建用户档案合并数据集
+## 步骤 2：为导出创建用户轮廓合并数据集
 
-为了将受众导出到最终可以添加到Customer Journey Analytics连接的数据集，您需要创建其架构是配置文件[合并架构](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=zh-Hans#understanding-union-schemas)的数据集。
+为了将受众导出到最终可以添加到Customer Journey Analytics中的连接的数据集，您需要创建其架构是配置文件[合并架构](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html#understanding-union-schemas)的数据集。
 
-合并模式由多个共享同一类并已启用用户档案的模式组成。 合并模式使您能够看到共享同一类的模式中包含的所有字段的合并。实时客户配置文件使用合并模式创建每个客户的整体视图。
+合并架构由多个共享同一类并已启用用户轮廓的架构组成。 合并架构使您能够看到共享同一类的架构中包含的所有字段的合并。实时客户轮廓使用合并架构创建每个客户的整体视图。
 
-## 步骤 3：通过 API 调用将受众导出到用户档案合并数据集 {#export}
+## 步骤 3：通过 API 调用将受众导出到用户轮廓合并数据集 {#export}
 
-在将受众引入Customer Journey Analytics之前，您需要将其导出到Adobe Experience Platform数据集。 这只能使用分段 API，特别是 [导出作业 API 端点](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=zh-Hans)来完成。
+在将受众引入Customer Journey Analytics之前，您需要将其导出到Adobe Experience Platform数据集。 这只能使用分段 API，特别是 [导出作业 API 端点](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html)来完成。
 
-您可以使用所选的受众ID创建导出作业，并将结果放入在步骤2中创建的配置文件联合Adobe Experience Platform数据集中。 尽管您可以为受众导出各种属性/事件，但您只需要导出与您将要利用的Customer Journey Analytics连接中使用的个人ID字段相匹配的特定用户档案ID字段（请参阅下面的步骤5）。
+您可以使用所选的受众ID创建导出作业，并将结果放入在步骤2中创建的配置文件联合Adobe Experience Platform数据集中。 尽管您可以为受众导出各种属性/事件，但您只需要导出与您将要利用的Customer Journey Analytics连接中使用的个人ID字段匹配的特定用户档案ID字段（请参阅下面的步骤5）。
 
 ## 步骤 4：编辑导出输出
 
-导出作业的结果需要转换为单独的用户档案数据集，以便纳入Customer Journey Analytics。  此转换可以使用[Adobe Experience Platform查询服务](https://experienceleague.adobe.com/cn/docs/experience-platform/query/home.html?lang=zh-Hans)或您选择的其他转换工具来完成。 我们只需要用户档案ID(与Customer Journey Analytics中的人员ID匹配)和一个或多个受众ID即可在Customer Journey Analytics中生成报表。
+导出作业的结果需要转换为单独的用户档案数据集，以便纳入Customer Journey Analytics。  此转换可以使用[Adobe Experience Platform查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-hans)或您选择的其他转换工具来完成。 我们只需要用户档案ID(与Customer Journey Analytics中的人员ID匹配)和一个或多个受众ID即可在Customer Journey Analytics中生成报表。
 
-然而，标准导出作业包含更多数据，因此我们需要编辑此输出以删除无关数据，并移动一些内容。  此外，在将转换后的数据添加到模式/数据集之前，需要先创建模式/数据集。
+然而，标准导出作业包含更多数据，因此我们需要编辑此输出以删除无关数据，并移动一些内容。  此外，在将转换后的数据添加到架构/数据集之前，需要先创建架构/数据集。
 
-以下是用户档案合并数据集中的导出输出示例，在任何编辑&#x200B;**之前**：
+以下是用户轮廓合并数据集中的导出输出示例，在任何编辑&#x200B;**之前**：
 
 ![未编辑输出](../assets/export-unedited.png)
 
@@ -64,8 +64,8 @@ RTCP 中可能已经有来自不同来源的受众。 选择一个或多个受�
 以下是需要呈现的数据元素：
 
 * `_aresprodvalidation`字符串字段：指您的组织 ID。 您的会有所不同。
-* `personID` 字符串字段：这是配置文件数据集上用于标识人员的标准 XDM 模式字段。 使用导出中的用户档案 ID。
-* `audienceMembershipId`字符串字段：导出的受众 ID。  注意：此字段可以根据需要命名（从您自己的模式）。
+* `personID` 字符串字段：这是轮廓数据集上用于身份标识人员的标准 XDM 架构字段。 使用导出中的用户轮廓 ID。
+* `audienceMembershipId`字符串字段：导出的受众 ID。  注意：此字段可以根据需要命名（从您自己的架构）。
 * 为受众添加一个友好的名称 (`audienceMembershipIdName`)，例如
 
   ![友好的受众名称](../assets/audience-name.png)
@@ -74,7 +74,7 @@ RTCP 中可能已经有来自不同来源的受众。 选择一个或多个受�
 
 ## 步骤5：将此用户档案数据集添加到Customer Journey Analytics中的现有连接
 
-您可以 [创建新连接](/help/connections/create-connection.md)，但大多数客户都希望将用户档案数据集添加到现有连接。 受众ID“扩充”了Customer Journey Analytics中的现有数据。
+您可以 [创建新连接](/help/connections/create-connection.md)，但大多数客户都希望将用户轮廓数据集添加到现有连接。 受众ID“扩充”了Customer Journey Analytics中的现有数据。
 
 ## 步骤6：修改现有（或创建新）Customer Journey Analytics数据视图
 
@@ -91,4 +91,4 @@ RTCP 中可能已经有来自不同来源的受众。 选择一个或多个受�
    1. 在 RTCP 中，为受众集合中的每个所需受众执行此过程。
    1. Customer Journey Analytics支持配置文件数据集中的阵列/对象阵列。 为 audienceMembershipId 或 audienceMembershipIdName 使用[对象数组](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=zh-Hans)是最佳选项。
    1. 在数据视图中，在 `audienceMembershipId` 字段上使用子字符串转换创建新维度，以将逗号分隔的值字符串转换为数组。 注意：数组中当前限制为 10 个值。
-   1. 您现在可以在Customer Journey AnalyticsWorkspace中报告此新维度`audienceMembershipIds`。
+   1. 您现在可以在Customer Journey Analytics Workspace中报告此新维度`audienceMembershipIds`。

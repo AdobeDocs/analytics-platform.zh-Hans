@@ -6,7 +6,7 @@ feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
 role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ ht-degree: 100%
 
 * 创建注释的数据视图（默认）或所有数据视图。
 
-请参阅[创建注释](/help/components/annotations/create-annotations.md)，了解可用于创建注释的各种选项。然后，您可以在[注释生成器](create-annotations.md#annotation-builder)中构建、修改和保存注释。
+请参阅[创建注释](/help/components/annotations/create-annotations.md)，了解可用于创建注释的各种选项。然后，您可以在[注释构建器](create-annotations.md#annotation-builder)中构建、修改和保存注释。
 
 您可以使用[注释管理器](manage-annotations.md)来管理注释。
 

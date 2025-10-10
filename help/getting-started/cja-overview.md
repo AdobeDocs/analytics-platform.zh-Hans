@@ -8,7 +8,7 @@ role: User, Admin
 source-git-commit: 0f445d409d276072ac649b94c12b94d3a59e7925
 workflow-type: tm+mt
 source-wordcount: '1046'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -18,18 +18,18 @@ Customer Journey Analytics 是 Adobe 推出的新一代 Analytics 解决方案�
 
 Customer Journey Analytics 架构大致如下所示：
 
-![Customer Journey Analytics架构](assets/cja-overview.svg)
+![Customer Journey Analytics 架构](assets/cja-overview.svg)
 
-此架构说明了客户历程分析如何允许您：
+该架构展示了 Customer Journey Analytics 如何实现以下功能：
 
-* 在![连接](/help/assets/icons/Data.svg)中合并多个数据集[数据](/help/connections/overview.md)。
-* 在![数据视图](/help/assets/icons/Dimensions.svg)中，根据您在连接中定义的数据集中可用的字段，定义和配置维度![维度](/help/assets/icons/Event.svg)和量度[事件](/help/data-views/data-views.md)。
-* 基于数据视图中的维度和量度生成![项目](/help/assets/icons/ViewTable.svg)中的报告![ViewTable](/help/assets/icons/GraphTrend.svg)和可视化图表（如行![行](/help/assets/icons/GraphAreaStacked.svg)和区域[区域](/help/analysis-workspace/home.md)）。
+* 在一个[连接](/help/connections/overview.md)中合并多个数据集![数据](/help/assets/icons/Data.svg)。
+* 在[数据视图](/help/data-views/data-views.md)中，根据您在连接中定义的数据集中可用的字段，定义和配置维度![维度](/help/assets/icons/Dimensions.svg)和量度![事件](/help/assets/icons/Event.svg)。
+* 基于数据视图中的维度和量度生成[项目](/help/analysis-workspace/home.md)中的报告 ![ViewTable](/help/assets/icons/ViewTable.svg) 和可视化图表（如行![行](/help/assets/icons/GraphTrend.svg)和区域![区域](/help/assets/icons/GraphAreaStacked.svg)）。
 
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analytics：适用于 Experience Business 的 Analytics](https://video.tv.adobe.com/v/36211/?quality=12&learn=on&captions=chi_hans){target="_blank"} 以获取有关 Customer Journey Analytics 的介绍视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analytics：适用于 Experience Business 的 Analytics](https://video.tv.adobe.com/v/30090/?quality=12&learn=on){target="_blank"} 以获取有关 Customer Journey Analytics 的介绍视频。
 
 >[!ENDSHADEBOX]
 
@@ -87,25 +87,25 @@ Customer Journey Analytics 的初始版本包括 Adobe Analytics 中的许多功
 
 Customer Journey Analytics 是依赖于 Adobe Experience Platform 的众多功能之一。此外，基于 Experience Platform 构建的几项其他功能也可让您充分利用数据。
 
-Adobe Experience Platform 让您可以实现源自任何系统的客户数据和内容的集中化和标准化，并应用数据科学和机器学习来优化个性化体验的设计和交付。Platform 中的客户数据将作为数据集存储，数据集由一个架构和批量数据组成。有关 Platform 的更多详细信息，请参阅 [Adobe Experience Platform 体系架构概述](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=zh-Hans)。
+Adobe Experience Platform 让您可以实现源自任何系统的客户数据和内容的集中化和标准化，并应用数据科学和机器学习来优化个性化体验的设计和交付。Platform 中的客户数据将作为数据集存储，数据集由一个架构和批量数据组成。有关 Platform 的更多详细信息，请参阅 [Adobe Experience Platform 体系架构概述](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=zh-hans)。
 
 从数据摄取到 SQL 直接访问，Experience Platform 的多个组件在 Customer Journey Analytics 中发挥着极为重要的作用，并且与之相辅相成：
 
-* [Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans)：使用标准 SQL 从 Adobe Experience Platform 检索数据，如 Adobe 解决方案数据、客户第一方数据或任何其他 Platform 数据。它是一个无服务器工具，通过它可连接任何数据集，并将查询结果记录为新数据集，以供在报告中使用或摄取到配置文件服务。可使用 Experience Platform Query Service 构建数据分析生态系统，在使用者的各种交互渠道上为使用者画像。这些渠道可能包括销售点系统、Web、移动、CRM 系统等。
-* [实时客户配置文件](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans)：
+* [Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-hans)：使用标准 SQL 从 Adobe Experience Platform 检索数据，如 Adobe 解决方案数据、客户第一方数据或任何其他 Platform 数据。它是一个无服务器工具，通过它可连接任何数据集，并将查询结果记录为新数据集，以供在报告中使用或摄取到配置文件服务。可使用 Experience Platform Query Service 构建数据分析生态系统，在使用者的各种交互渠道上为使用者画像。这些渠道可能包括销售点系统、Web、移动、CRM 系统等。
+* [实时客户配置文件](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-hans)：
 * [身份标识服务](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-hans)
 
 ## 视频
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Customer Journey Analytics 中处理数据](https://video.tv.adobe.com/v/35911/?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取有关如何在 Customer Journey Analytics 中处理数据的介绍视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Customer Journey Analytics 中处理数据](https://video.tv.adobe.com/v/32112/?quality=12&learn=on){target="_blank"}以获取有关如何在 Customer Journey Analytics 中处理数据的介绍视频。
 
 >[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [架构与集成](https://video.tv.adobe.com/v/330413/?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取有关 Customer Journey Analytics 架构与集成的介绍视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [架构与集成](https://video.tv.adobe.com/v/32483/?quality=12&learn=on){target="_blank"}以获取有关 Customer Journey Analytics 架构与集成的介绍视频。
 
 >[!ENDSHADEBOX]
 

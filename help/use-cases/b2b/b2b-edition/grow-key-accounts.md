@@ -21,13 +21,13 @@ ht-degree: 3%
 
 ## 销售阶段进度
 
-您希望生成和分发临时商机转化报告，并了解客户是如何通过销售漏斗进行销售的。
+您希望生成和分发临时商机转化报告，并了解客户是如何通过sales funnel进行销售的。
 
 通过[流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)可视化图表，您可以可视化顺序历程中预定义步骤之间的转化率和流失率。
 
 ### 示例
 
-您希望查看客户的销售漏斗顶部（从销售线索到商机）的流失。
+您希望查看客户funnel销售额（从商机到商机）的顶部流失情况。
 
 1. [创建和配置流失](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)可视化图表。
 1. 选择![设置](/help/assets/icons/Setting.svg)以选择&#x200B;**[!UICONTROL 帐户]**&#x200B;作为&#x200B;**[!UICONTROL 流失容器]**。
@@ -47,7 +47,7 @@ ht-degree: 3%
 
 ![B2B用例 — 增加关键帐户 — 协作 — 共享](assets/b2b-uc-grow-key-accounts-share.png)
 
-1. [批注](/help/components/annotations/overview.md)
+1. [注释](/help/components/annotations/overview.md)
 1. [智能警报](/help/components/c-intelligent-alerts/intelligent-alerts.md)
 1. [与工作区用户或任何人共享](/help/analysis-workspace/curate-share/share-projects.md)
 1. [评论](/help/analysis-workspace/build-workspace-project/comment-projects.md)

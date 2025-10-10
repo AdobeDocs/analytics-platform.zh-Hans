@@ -6,7 +6,7 @@ exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '612'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 98%
 1. 选择量度组件中的![设置](/help/assets/icons/Setting.svg)。
 1. 在弹出的对话框中：
 
-   ![指标类型和归因](assets/cm-type-alloc.png)
+   ![量度类型和归因](assets/cm-type-alloc.png)
 
    * 指定&#x200B;**[!UICONTROL 量度类型]**：
 
@@ -163,6 +163,6 @@ ht-degree: 98%
 >[!MORELIKETHIS]
 >
 >[归因组件设置](/help/data-views/component-settings/attribution.md)
->&#x200B;>[参与量度](participation-metric.md)
+>>[参与量度](participation-metric.md)
 >
 

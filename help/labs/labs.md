@@ -17,7 +17,7 @@ ht-degree: 81%
 
 >[!IMPORTANT]
 >
->Customer Journey Analytics实验室不是HIPAA就绪服务，可能无法用于处理您的组织在Customer Journey Analytics中可能获准使用的任何敏感个人数据，包括允许的健康数据（例如个人健康信息或PHI）。
+>Customer Journey Analytics Labs不是HIPAA就绪服务，不得用于处理您的组织可能获准在Customer Journey Analytics中使用的任何敏感个人数据，包括允许的健康数据（例如个人健康信息或PHI）。
 
 ## 要求
 

@@ -33,13 +33,13 @@ ht-degree: 13%
 
 +++ 1.将Marketo源数据字段映射到其XDM目标
 
-将 [人员](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 和 [活动](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 对象映射到各自的 XDM 架构目标字段。
+将 [人员](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 和 [活动](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 对象映射到各自的 XDM 架构目标字段。
 
 +++
 
 +++ 2.将Marketo数据摄取到Adobe Experience Platform
 
-使用 [Marketo Engage 连接器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)将 Marketo 的数据传送到 Experience Platform，并使用与平台连接的应用程序使这些数据保持最新。
+使用 [Marketo Engage 连接器](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)将 Marketo 的数据传送到 Experience Platform，并使用与平台连接的应用程序使这些数据保持最新。
 
 +++
 
@@ -54,7 +54,7 @@ ht-degree: 13%
 
 [数据视图](/help/data-views/data-views.md) 是 Customer Journey Analytics 专属的容器，通过它，可决定如何解释来自连接的数据。 它指定所有可在 Analysis Workspace 中找到的维度和量度，在本例中，特指 Marketo 的量度和维度。 它还指定这些维度和量度从哪些列获取数据。 为准备 Analysis Workspace 中的报表而定义数据视图。
 
-+++
++++ 
 
 +++ 5.在Analysis Workspace中报告
 
@@ -87,7 +87,7 @@ Customer Journey Analytics中的Marketo Engage数据可能与您在Marketo Engag
 
 Customer Journey Analytics是基于Adobe Experience Platform构建的高级跨渠道分析工具。 Customer Journey Analytics专为需要跨数字和离线数据源进行强大、灵活且可自定义的报表的企业团队而设计。
 
-#### 主要功能
+#### 关键功能
 
 * **数据源**：可以合并多个数据集(Web、CRM、电子邮件、呼叫中心、离线、Marketo等)以进行360°客户历程报告。
 * **自助分析**：具有高度交互性、可自定义的仪表板和可视化图表的拖放工作区。
@@ -108,13 +108,13 @@ Customer Journey Analytics是基于Adobe Experience Platform构建的高级跨�
 
 Marketo Engage提供了着重于营销自动化KPI、项目和营销活动测量以及营销影响分析的应用程序内报告。 所有这些报表都直接与Marketo中的活动相关联。
 
-#### 主要功能
+#### 关键功能
 
 * **本机营销分析**：电子邮件、登陆页面、营销活动、潜在客户、商机、管道和收入归因的标准报表（首次联系、最近联系、多点联系）。
 * **高级BI分析（加载项）**：拖放、点击式自定义Report Builder以分析项目/帐户/商机数据（请参阅最近的高级BI分析概述）。
 * **预建功能板**：对于营销活动效果、渠道效果、管道/收入贡献。
 * **项目和渠道分析**：特定于Marketo管理的历程的归因和ROI。
-* **以营销为中心**：重点关注那些需要营销漏斗透明度的用户：电子邮件统计信息、表单、智能营销活动和收入影响。
+* **以营销为中心**：重点关注那些需要提高营销funnel透明度的用户：电子邮件统计信息、表单、智能营销活动和收入影响。
 
 
 #### 典型Marketo Engage用例

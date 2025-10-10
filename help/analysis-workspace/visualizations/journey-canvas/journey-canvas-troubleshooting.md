@@ -7,7 +7,7 @@ exl-id: f0ac3752-9244-4d9e-807b-e6471e6aa55b
 source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 在历程画布中，对于旅程中较晚进入的节点，可能会显示比旅程中较早进入的节点更高的百分比或数量计数。
 
-换句话说，与始终为漏斗形状的流失可视化图表不同（参与率随每一步骤减少），历程画布可视化图表在历程的后一步中的参与率可能高于之前的步骤。
+换句话说，与始终为funnel形状的流失可视化图表不同（参与率随每一步骤减少），历程画布可视化图表在历程的后续步骤中的参与率可能高于之前的步骤。
 
 在以下情况下可能会发生这种情况：
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 在本例中，历程的“人员”容器设置在确定将第三个节点上的事件（“签出”）计入后续会话中时，将发挥关键作用。
 
-或者，如果将容器设置设为“会话”，则仅在后续访问中发生在第三个节点上的事件将不会计入旅程，因为旅程中显示的统计信息将被限制为给定人员的单个已定义会话。 要了解有关容器设置的更多信息，请参阅[配置历程画布可视化](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)一文中的[开始构建历程画布可视化](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization)
+或者，如果将容器设置设为“会话”，则仅在后续访问中发生在第三个节点上的事件将不会计入旅程，因为旅程中显示的统计信息将被限制为给定人员的单个已定义会话。 要了解有关容器设置的更多信息，请参阅[配置历程画布可视化](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization)一文中的[开始构建历程画布可视化](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
 
 <!-- The time allotted for users to move along the path is determined by the container setting. Because "Person" is selected as the container setting in this example, people who followed the journey's path in one session (moving from Node 1 to Node 2 and to Node 3) met the criteria of the journey. On any subsequent visits to the site, any event they have that matches any node on the journey is counted on that node. -->
 
@@ -87,9 +87,9 @@ When a journey contains multiple paths that converge into a single node, the two
 
 以下部分显示同一历程的百分比如何变化，具体取决于在&#x200B;**[!UICONTROL 百分比值]**&#x200B;字段中选择的以下选项：
 
-+++开始节点的百分比
++++起始节点百分比
 
-当&#x200B;**[!UICONTROL 百分比值]**&#x200B;字段设置为起始节点&#x200B;**的**&#x200B;百分比时，此历程中的节点包含以下统计信息：
+当&#x200B;**[!UICONTROL 百分比值]**&#x200B;字段设置为起始节点&#x200B;**[!UICONTROL 的]**&#x200B;百分比时，此历程中的节点包含以下统计信息：
 
 ![历程的百分比高于前一个节点](assets/journey-canvas-higher-percentage.png)
 
@@ -101,7 +101,7 @@ When a journey contains multiple paths that converge into a single node, the two
 
 +++
 
-+++上一节点的百分比
++++以前的节点百分比
 
 当&#x200B;**[!UICONTROL 百分比值]**&#x200B;字段设置为前一个节点的&#x200B;**[!UICONTROL 百分比]**&#x200B;时，此历程中的节点包含以下统计信息：
 
@@ -117,7 +117,7 @@ When a journey contains multiple paths that converge into a single node, the two
 
 +++总数的百分比
 
-当&#x200B;**[!UICONTROL 百分比值]**&#x200B;字段设置为总数的百分比&#x200B;**的**&#x200B;时，此历程中的节点包含以下统计信息：
+当&#x200B;**[!UICONTROL 百分比值]**&#x200B;字段设置为总数的百分比&#x200B;**[!UICONTROL 的]**&#x200B;时，此历程中的节点包含以下统计信息：
 
 ![历程的百分比高于前一个节点](assets/journey-canvas-percentage-total.png)
 

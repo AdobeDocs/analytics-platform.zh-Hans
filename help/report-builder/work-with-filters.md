@@ -13,7 +13,7 @@ ht-degree: 6%
 
 ---
 
-# 使用区段
+# 使用区段工作
 
 您可以在创建新数据块或从&#x200B;**[!UICONTROL 命令]**&#x200B;面板中选择&#x200B;**[!UICONTROL 编辑数据块]**&#x200B;时应用区段。
 
@@ -29,7 +29,7 @@ ht-degree: 6%
 
 * 或者：
 
-   1. 在&#x200B;**[!UICONTROL 表]**&#x200B;窗格中为特定量度选择![MoreSmall](/help/assets/icons/MoreSmall.svg)，然后选择&#x200B;**[!UICONTROL 筛选量度]**。
+   1. 在![表](/help/assets/icons/MoreSmall.svg)窗格中为特定量度选择&#x200B;**[!UICONTROL MoreSmall]**，然后选择&#x200B;**[!UICONTROL 筛选量度]**。
 
       ![区段选项卡显示指标。](./assets/filter-metric.png){zoomable="yes"}
 
@@ -52,14 +52,14 @@ ht-degree: 6%
 
 1. 从一个或多个数据块选择单元格范围。
 
-1. 选择&#x200B;**[!UICONTROL 区段]**&#x200B;链接以启动&#x200B;**[!UICONTROL 快速编辑]**&#x200B;**[!UICONTROL 区段]**&#x200B;面板。
+1. 选择&#x200B;**[!UICONTROL 区段]**&#x200B;链接以启动&#x200B;**[!UICONTROL 快速编辑]****[!UICONTROL 区段]**&#x200B;面板。
 
 
 ### 添加或删除区段
 
 您可以使用“添加/删除”选项添加或删除区段。
 
-1. 在&#x200B;**[!UICONTROL 快速编辑]**&#x200B;**[!UICONTROL 区段]**&#x200B;面板中选择&#x200B;**[!UICONTROL 添加/删除]**&#x200B;选项卡。
+1. 在&#x200B;**[!UICONTROL 快速编辑]****[!UICONTROL 区段]**&#x200B;面板中选择&#x200B;**[!UICONTROL 添加/删除]**&#x200B;选项卡。
 
 
    1. 从&#x200B;**[!UICONTROL 段]**&#x200B;下拉菜单中选择一个或多个段。 区段已添加到&#x200B;**[!UICONTROL 应用的区段]**&#x200B;列表。
@@ -72,7 +72,7 @@ Report Builder显示消息以确认应用的区段更改。
 
 您可以使用另一个区段替换现有区段，以更改数据的分段方式。
 
-1. 在&#x200B;**[!UICONTROL 快速编辑]**&#x200B;**[!UICONTROL 区段]**&#x200B;面板中选择&#x200B;**[!UICONTROL 替换]**&#x200B;选项卡。
+1. 在&#x200B;**[!UICONTROL 快速编辑]****[!UICONTROL 区段]**&#x200B;面板中选择&#x200B;**[!UICONTROL 替换]**&#x200B;选项卡。
 
 1. 使用&#x200B;**搜索列表**&#x200B;搜索字段来查找特定区段。
 

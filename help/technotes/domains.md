@@ -12,7 +12,7 @@ ht-degree: 20%
 
 # Customer Journey Analytics使用的域
 
-某些防火墙配置会阻止Customer Journey Analytics依赖其产品界面的域。 您可以使用此域列表来更改组织的网络设置，以允许从组织内部访问产品。 Adobe建议允许这些域通过贵组织的防火墙以获得最佳体验。
+某些防火墙配置会阻止Customer Journey Analytics作为其产品界面所依赖的域。 您可以使用此域列表来更改组织的网络设置，以允许从组织内部访问产品。 Adobe建议允许这些域通过贵组织的防火墙以获得最佳体验。
 
 | 技术 | 域 |
 | --- | --- |
@@ -28,10 +28,10 @@ ht-degree: 20%
 
 ## Adobe Experience Cloud 域
 
-除了上述域之外，Adobe Experience Cloud还依靠多个域来收集和导出报表。 有关此域列表，请参阅[Adobe Experience Cloud使用的域](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/data-collection/domains)。
+除了上述域之外，Adobe Experience Cloud还依靠多个域来收集和导出报表。 有关此域列表，请参阅[Adobe Experience Cloud使用的域](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)。
 
 >[!MORELIKETHIS]
 >
 >Customer Journey Analytics使用的[IP地址](ip-addresses.md)
 >
->[Adobe Experience Cloud使用的域](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/data-collection/domains)
+>[Adobe Experience Cloud使用的域](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)

@@ -25,9 +25,9 @@ ht-degree: 6%
 | 事件 | 时间戳 | 页面名称 | 设备ID | 电子邮件 |
 |--:|---|---|---|---|
 | 1 | 2023-05-12 12:01 | 主页 | `1234` | |
-| 2 | 2023-05-12 12:02 | 产品页 | `1234` | |
+| 2 | 2023-05-12 12:02 | 产品页面 | `1234` | |
 | 3 | 2023-05-12 12:03 | 订购成功 | `1234` | `ryan@a.com` |
-| 4 | 2023-05-12 12:07 | 产品页 | `1234` | |
+| 4 | 2023-05-12 12:07 | 产品页面 | `1234` | |
 | 5 | 2023-05-12 12:08 | 订购成功 | `1234` | `cassidy@a.com` |
 
 如该表所示，一旦在事件3和5上执行身份验证，设备id和人员id之间就会开始形成链接。 要了解任何营销工作对人员级别的影响，这些未经身份验证的事件需要归因到正确的人员。
@@ -49,16 +49,16 @@ The order success (purchase) events assign the data accurately to the correct em
 
 ### 最后验证归因
 
-上次身份验证将共享设备中的所有未知活动归因于上次进行身份验证的用户。 Experience PlatformIdentity服务基于最后验证归因构建图形，因此用于基于图形的拼合。 有关详细信息，请参阅[标识图链接规则](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details)。
+上次身份验证将共享设备中的所有未知活动归因于上次进行身份验证的用户。 Experience Platform Identity服务基于最后验证归因构建图形，因此用于基于图形的拼合。 有关详细信息，请参阅[标识图链接规则](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details)。
 
 在拼接中使用最后验证归因时，拼接ID会解析，如下表所示。
 
 | 时间戳 | 页面名称 | 设备ID | 电子邮件 | 拼接 ID |
 |---|---|---|---|---|
 | 2023-05-12 12:01 | 主页 | `1234` | | `cassidy@a.com` |
-| 2023-05-12 12:02 | 产品页 | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:02 | 产品页面 | `1234` | | `cassidy@a.com` |
 | 2023-05-12 12:03 | 订购成功 | `1234` | `ryan@a.com` | `cassidy@a.com` |
-| 2023-05-12 12:07 | 产品页 | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:07 | 产品页面 | `1234` | | `cassidy@a.com` |
 | 2023-05-12 12:08 | 订购成功 | `1234` | `cassidy@a.com` | `cassidy@a.com` |
 | 2023-05-13 11:08 | 主页 | `1234` | | `cassidy@a.com` |
 
@@ -72,9 +72,9 @@ The order success (purchase) events assign the data accurately to the correct em
 | 时间戳 | 页面名称 | 设备ID | 电子邮件 | 拼接 ID |
 |---|---|---|---|---|
 | 2023-05-12 12:01 | 主页 | `1234` | | `ryan@a.com` |
-| 2023-05-12 12:02 | 产品页 | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:02 | 产品页面 | `1234` | | `ryan@a.com` |
 | 2023-05-12 12:03 | 订购成功 | `1234` | `ryan@a.com` | `ryan@a.com` |
-| 2023-05-12 12:07 | 产品页 | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:07 | 产品页面 | `1234` | | `ryan@a.com` |
 | 2023-05-12 12:08 | 订购成功 | `1234` | `cassidy@a.com` | `cassidy@a.com` |
 | 2023-05-13 11:08 | 主页 | `1234` | | `cassidy@a.com` |
 
@@ -123,7 +123,7 @@ When using ECID reset, Stitched IDs resolve as shown in the table below.
 
 2. **将事件归因到共享设备**
 
-   对于已识别的共享设备，确定总计中有多少事件可归因于这些设备。 此归因可让您深入了解共享设备对您的数据产生的影响以及进行相关分析的影响。
+   对于已识别的共享设备，确定总计中有多少事件可归因于这些设备。 此归因将insight归因到共享设备对您的数据产生的影响以及对分析的影响。
 
    ```sql
    SELECT COUNT(*) AS total_events,

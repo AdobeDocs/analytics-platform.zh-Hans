@@ -5,7 +5,7 @@ feature: Calendar
 exl-id: 99b31bd9-32f1-4da1-9e47-6d90c66282c5
 role: User
 source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 +++ View a video illustrating use of calendar and date ranges
 
->[!VIDEO](https://video.tv.adobe.com/v/327350?format=jpeg&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/24136?format=jpeg)
 
 {{videoaa}}
 +++
@@ -85,6 +85,6 @@ Analysis Workspace 提供了许多默认日期范围。
 
 ## 自定义日期范围
 
-您可以创建自定义日期范围。请参阅[创建日期范围](/help/components/date-ranges/create.md)，了解可用于创建日期范围的各种选项。然后，您可以在[日期范围生成器](create.md#date-range-builder)中构建、修改和保存日期范围。
+您可以创建自定义日期范围。请参阅[创建日期范围](/help/components/date-ranges/create.md)，了解可用于创建日期范围的各种选项。然后，您可以在[日期范围构建器](create.md#date-range-builder)中构建、修改和保存日期范围。
 
 您可以使用[日期范围管理器](manage.md)来管理日期范围。

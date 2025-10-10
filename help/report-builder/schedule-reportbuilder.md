@@ -24,7 +24,7 @@ ht-degree: 15%
 
 >[!BEGINSHADEBOX]
 
-请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [计划工作簿](https://video.tv.adobe.com/v/3417502/?quality=12&learn=on&captions=chi_hans){target="_blank"}以观看演示视频。
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [计划工作簿](https://video.tv.adobe.com/v/3413079/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -102,7 +102,7 @@ ht-degree: 15%
 
 1. 选择&#x200B;**[!UICONTROL 显示计划选项]**&#x200B;以定义计划。
 
-1. 输入从&#x200B;**开始的**&#x200B;开始日期。 或者，选择![日历](/help/assets/icons/Calendar.svg)以从日历中选择开始日期。
+1. 输入从&#x200B;**[!UICONTROL 开始的]**&#x200B;开始日期。 或者，选择![日历](/help/assets/icons/Calendar.svg)以从日历中选择开始日期。
 
 1. 在&#x200B;**[!UICONTROL 结束日期]**&#x200B;中输入结束日期。 或者，选择![日历](/help/assets/icons/Calendar.svg)以从日历中选择结束日期。
 
@@ -129,7 +129,7 @@ ht-degree: 15%
 
 若要取消发送工作簿，请选择&#x200B;**[!UICONTROL 取消]**。
 
-## 管理计划的工作簿
+## 管理已安排的工作簿
 
 有关管理已计划工作簿的信息，请参阅[管理计划的工作簿](/help/report-builder/manage-schedules-reportbuilder.md)。
 

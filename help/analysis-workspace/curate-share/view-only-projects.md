@@ -8,7 +8,7 @@ role: User
 source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
 workflow-type: tm+mt
 source-wordcount: '303'
-ht-degree: 35%
+ht-degree: 37%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 35%
 仅查看项目中已禁用的交互包括：
 
 * 隐藏的左侧面板
-* 面板日历日期范围。注意：如果要向收件人授予日历控制权，请添加一个包含日期范围[&#128279;](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans)的下拉区段。
+* 面板日历日期范围。注意：如果要向收件人授予日历控制权，请添加一个包含日期范围[的](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html)下拉区段。
 * 自由格式分段
 * 自由格式的可见行数
 * 自由格式的行、列或可视化图表设置

@@ -5,7 +5,7 @@ exl-id: fde45264-46cf-4c68-9872-7fb739748f21
 feature: Experience Platform Integration
 role: Admin
 source-git-commit: 979564d0249abadd454ce43aba9aeae2c78a44f0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 100%
 
@@ -14,15 +14,15 @@ ht-degree: 100%
 # 集成决策管理
 
 
-Adobe Journey Optimizer [决策管理](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=zh-Hans)通过集中的营销优惠库和决策引擎（该引擎可将规则和约束应用于 Adobe Experience Platform 创建的丰富实时用户档案）帮助您在适当的时间向客户发送合适的优惠，从而轻松实现个性化。
+Adobe Journey Optimizer [决策管理](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html)通过集中的营销产品建议库和决策引擎（该引擎可将规则和约束应用于 Adobe Experience Platform 创建的丰富实时轮廓）帮助您在适当的时间向客户发送合适的产品建议，从而轻松实现个性化。
 
-决策管理是 Adobe Journey Optimizer 的一部分并与之集成。它还可以独立于 Adobe Journey Optimizer 中定义的历程和营销活动使用，利用其丰富的 [API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html?lang=zh-Hans) 支持。
+决策管理是 Adobe Journey Optimizer 的一部分并与之集成。它还可以独立于 Adobe Journey Optimizer 中定义的历程和营销活动使用，利用其丰富的 [API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html) 支持。
 
 可通过执行以下步骤而导入决策管理生成的数据以在 Customer Journey Analytics 中执行高级分析：
 
 ## 将数据从决策管理发送到 Adobe Experience Platform
 
-Adobe Experience Platform 作为中心数据源，联系着决策管理与 Customer Journey Analytics。决策管理的数据在体验平台中&#x200B;**自动**&#x200B;收集，或作为&#x200B;**明确发送的体验事件**（例如印象或点击）的一部分收集。有关详细信息，请参阅[数据收集快速入门](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/collect-event-data/data-collection.html?lang=zh-Hans)。
+Adobe Experience Platform 作为中心数据源，联系着决策管理与 Customer Journey Analytics。决策管理的数据在体验平台中&#x200B;**自动**&#x200B;收集，或作为&#x200B;**明确发送的体验事件**（例如印象或点击）的一部分收集。有关详细信息，请参阅[数据收集快速入门](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/collect-event-data/data-collection.html)。
 
 ## 创建连接
 
@@ -42,7 +42,7 @@ Adobe Experience Platform 作为中心数据源，联系着决策管理与 Custo
 
 ## 创建数据视图
 
-创建连接之后，可以创建一个或多个[数据视图](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-Hans)，以配置可在 Customer Journey Analytics 中找到的所需的维度和量度。
+创建连接之后，可以创建一个或多个[数据视图](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html)，以配置可在 Customer Journey Analytics 中找到的所需的维度和量度。
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Adobe Experience Platform 作为中心数据源，联系着决策管理与 Custo
 
 可在数据视图中创建以下维度，以实现与决策管理中类似的维度大致对等。有关维度自定义选项的详细信息，请参阅数据视图管理器中的[组件设置](/help/data-views/component-settings/overview.md)。
 
-| 维度 | 模式元素 | 组件设置 |
+| 维度 | 架构元素 | 组件设置 |
 | --- | --- | --- |
 | 活动名称 | `_experience.decisioning.`<br/>`propositionDetails.activity.name` | 组件类型：维度 |
 | 容器标识符 | `_experience.decisioning.containerID` | 组件类型：维度 |
@@ -68,17 +68,17 @@ Adobe Experience Platform 作为中心数据源，联系着决策管理与 Custo
 
 可在数据视图中创建以下量度，以实现与决策管理中类似的量度大致对等。有关量度自定义选项的详细信息，请参阅数据视图管理器中的[组件设置](/help/data-views/component-settings/overview.md)。
 
-| 量度 | 描述 | 模式元素 | 组件设置 |
+| 量度 | 描述 | 架构元素 | 组件设置 |
 | --- | --- | --- | --- |
 | 事件类型（重命名以引用特定事件，例如适用于 `message.feedback` 的 `Feedback`）[1] | 特定类型事件的数量 | `eventType` | 组件类型：量度<br/>**[!UICONTROL 设置包含排除值&#x200B;]**：开启<br/>**[!UICONTROL 匹配]**：[!UICONTROL 如果满足所有条件]<br/>**[!UICONTROL 标准&#x200B;]**：**[!UICONTROL &#x200B;等于&#x200B;]**`message.feedback` |
 | 决策选项得分 | 单个范围上下文中决策选项的计算值。 | `_experience.decisioning.`<br/>`propositionDetails.selections.score` | 组件类型：量度 |
 | 回退决策选项分数 | 单个范围上下文中回退决策选项的计算值。 | `_experience.decisioning.`<br/>`propositionDetails.fallback.score` | 组件类型：量度 |
-| 优惠驳回 | 在没有任何其他直接互动的情况下被驳回或拒绝的优惠数量。 | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | 组件类型：量度 |
-| 优惠显示 | 显示在配置文件中的优惠数量。 | `_experience.decisioning.`<br/>`propositionEventType.display` | 组件类型：量度 |
-| 优惠互动 | 与配置文件互动的优惠数量。 | `_experience.decisioning.`<br/>`propositionEventType.interact` | 组件类型：量度 |
-| 优惠发送 | 发送到配置文件的优惠数量。 | `_experience.decisioning.`<br/>`propositionEventType.send` | 组件类型：量度 |
-| 优惠触发 | 客户端 SDK 选择显示的优惠数量。 | `_experience.decisioning.`<br/>`propositionEventType.trigger` | 组件类型：量度 |
-| 优惠取消订阅 | 配置文件请求的在将来不显示的优惠数量。 | `_experience.decisioning.`<br/>`propositionEventType.unsubscribe` | 组件类型：量度 |
+| 产品建议驳回 | 在没有任何其他直接互动的情况下被驳回或拒绝的产品建议数量。 | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | 组件类型：量度 |
+| 产品建议显示 | 显示在轮廓中的产品建议数量。 | `_experience.decisioning.`<br/>`propositionEventType.display` | 组件类型：量度 |
+| 产品建议互动 | 与轮廓互动的产品建议数量。 | `_experience.decisioning.`<br/>`propositionEventType.interact` | 组件类型：量度 |
+| 产品建议发送 | 发送到轮廓的产品建议数量。 | `_experience.decisioning.`<br/>`propositionEventType.send` | 组件类型：量度 |
+| 产品建议触发 | 客户端 SDK 选择显示的产品建议数量。 | `_experience.decisioning.`<br/>`propositionEventType.trigger` | 组件类型：量度 |
+| 产品建议取消订阅 | 轮廓请求的在将来不显示的产品建议数量。 | `_experience.decisioning.`<br/>`propositionEventType.unsubscribe` | 组件类型：量度 |
 
 {style="table-layout:auto"}
 

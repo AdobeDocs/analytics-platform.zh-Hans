@@ -9,11 +9,11 @@ solution: Customer Journey Analytics
 source-git-commit: 065cf61d80ceb3c921ea666ba299e56fb044335b
 workflow-type: tm+mt
 source-wordcount: '541'
-ht-degree: 26%
+ht-degree: 27%
 
 ---
 
-# Report Builder中心
+# Report Builder 中心
 
 Report Builder中心是从Excel功能区栏选择![AdobeLogoRedonWhite](/help/assets/icons/AdobeLogoRedOnWhite.svg) **[!UICONTROL Report Builder]**&#x200B;时显示在Excel工作簿中的右侧窗格。
 
@@ -70,6 +70,6 @@ Report Builder中心包含![AddCircle](/help/assets/icons/AddCircle.svg) **[!UIC
 >[!MORELIKETHIS]
 >
 >[选择数据视图](select-data-view.md)
->[选择日期范围](select-date-range.md)
->[使用筛选器](work-with-filters.md)
+>>[选择日期范围](select-date-range.md)
+>>[使用筛选器](work-with-filters.md)
 >

@@ -5,9 +5,9 @@ exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
-workflow-type: ht
-source-wordcount: '768'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '766'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 ## 在“受众”列表中查看受众
 
-受众列表 ➊ 显示现有的受众。
+受众列表➊显示现有受众。
 
 ![受众管理器](assets/audiences-manager.png)
 
@@ -94,7 +94,7 @@ ht-degree: 100%
 
 ## 过滤受众列表
 
-您可以使用过滤器面板 ➋ 来过滤[受众名单](#audiences-list)。要显示或隐藏过滤器面板，请使用![过滤器](/help/assets/icons/Filter.svg)。
+您可以使用筛选器面板[筛选](#audiences-list)受众列表➋。 要显示或隐藏过滤器面板，请使用![过滤器](/help/assets/icons/Filter.svg)。
 
 ![受众管理器](assets/audiences-manager.png)
 

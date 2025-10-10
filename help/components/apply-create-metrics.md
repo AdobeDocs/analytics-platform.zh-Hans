@@ -6,7 +6,7 @@ exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '867'
 ht-degree: 6%
 
 ---
@@ -90,7 +90,7 @@ Customer Journey Analytics中的标准量度的完整列表：
 
    * [!UICONTROL **列min**]：创建一个新列，以显示该列维度元素集的最小值。 这使用[Column Minimum](/help/components/calc-metrics/cm-functions.md#column-minimum)函数。
 
-   * [!UICONTROL **列sum**]：创建一个新列，该列将某个量度的所有数值相加（跨维度的元素）。 这使用[列Sum](/help/components/calc-metrics/cm-functions.md#column-sum)函数。
+   * [!UICONTROL **列sum**]:Creates&#x200B;是一个新列，该列将某列中所有量度的数值相加（跨维度元素）。 这使用[列Sum](/help/components/calc-metrics/cm-functions.md#column-sum)函数。
 
    选择两列时，以下选项可用：
 

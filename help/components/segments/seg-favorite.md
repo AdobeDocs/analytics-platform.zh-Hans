@@ -7,11 +7,11 @@ role: User
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '99'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-# 将区段标记为收藏
+# 将区段标记为收藏项
 
 您可以将区段标记为收藏。 将区段标记为“收藏”有助于您组织区段。 所有用户都可以青睐区段。
 

@@ -27,7 +27,7 @@ ht-degree: 80%
 
 您可以通过安装 NPM 包来安装 Platform Web SDK，以便控制 Adobe Experience Platform Web SDK JavaScript 的生成过程。
 
-1. 按照Web SDK指南中[安装Web SDK](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/edge/fundamentals/installing-the-sdk)的[选项3：使用NPM包](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package)部分中的信息操作。
+1. 按照Web SDK指南中[安装Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package)的[选项3：使用NPM包](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/edge/fundamentals/installing-the-sdk)部分中的信息操作。
 
 {{upgrade-final-step}}
 

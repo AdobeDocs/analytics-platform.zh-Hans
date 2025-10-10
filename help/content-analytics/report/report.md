@@ -8,7 +8,7 @@ exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
 workflow-type: tm+mt
 source-wordcount: '1300'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 95%
 1. [在 Workspace 中创建一个新项目](/help/analysis-workspace/build-workspace-project/create-projects.md)或者[打开一个现有的](/help/analysis-workspace/build-workspace-project/open-projects.md)项目。
 1. 确保[为 Content Analytics 报告选择一个数据视图](/help/analysis-workspace/c-panels/panels.md#data-view)。Content Analytics 报告仅适用于那些[已配置](/help/content-analytics/config/configuration.md)给 Content Analytics 的数据视图。
 1. 将一个![表格](/help/assets/icons/Table.svg) [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)可视化图表拖到画布上。
-1. 使用[特定的Content Analytics组件](components.md)和其他常规的[组件](/help/components/overview.md)（如区段、日期范围、注释）来构建Content Analytics见解。
+1. 使用[特定的 Content Analytics 组件](components.md)和其他通用[组件](/help/components/overview.md)（例如区段、日期范围、注释）来构建您的 Content Analytics 见解。
 
 ## 缩略图
 
@@ -57,7 +57,7 @@ ht-degree: 95%
 
 ## 模板
 
-Content Analytics [模板](/help/analysis-workspace/templates/use-templates.md)可帮助您了解哪些内容和内容属性的表现最佳。 该模板是[网页渠道和参与度用例](/help/analysis-workspace/templates/use-templates.md#web-engagement)的一部分，详细说明了您的内容在粒度级别上的表现。您可以查看单个资产或特定属性的表现。
+现在提供一个 Content Analytics [模板](/help/analysis-workspace/templates/use-templates.md)，帮助您了解哪些内容和内容属性的效果最佳。该模板是[网页渠道和参与度用例](/help/analysis-workspace/templates/use-templates.md#web-engagement)的一部分，详细说明了您的内容在粒度级别上的表现。您可以查看单个资产或特定属性的表现。
 
 根据您获得的见解，您可能可以做很多事情。例如在主页上推广表现优异的资产，为特定区段提供个性化内容以包含表现优异的属性，或者轮换掉已经开始过时的内容。
 
@@ -65,7 +65,7 @@ Content Analytics [模板](/help/analysis-workspace/templates/use-templates.md)�
 
 1. 从主菜单中选择&#x200B;**[!UICONTROL Workspace]**。
 1. 确保您选择的数据视图已配置给 Content Analytics。
-1. 搜索或使用区段(**[!UICONTROL 渠道]**&#x200B;的&#x200B;**[!UICONTROL Web]**&#x200B;和&#x200B;**&#x200B;**&#x200B;[!UICONTROL 用例]&#x200B;**&#x200B;**&#x200B;的[!UICONTROL 参与])查找并选择&#x200B;**[!UICONTROL Content Analytics]**&#x200B;模板。
+1. 搜索或使用区段（为&#x200B;**[!UICONTROL 渠道]**&#x200B;使用&#x200B;**[!UICONTROL 网页]**，为**[!UICONTROL 用例]**s 使用&#x200B;**[!UICONTROL 参与度]**）查找并选择 **[!UICONTROL Content Analytics]** 模板。
 1. 选择&#x200B;**[!UICONTROL 使用模板]**。
 1. 在&#x200B;**[!UICONTROL 设置模板]**&#x200B;对话框中，从&#x200B;**[!UICONTROL 选择转化量度]**&#x200B;对话框中选择一个量度。例如，**[!UICONTROL 资产点进率]**。
 1. 选择&#x200B;**[!UICONTROL 继续]**。
@@ -155,5 +155,5 @@ Content Analytics 使用 AI 和生成式 AI 自动分配每个资产元数据，
 >[!MORELIKETHIS]
 >
 >[Content Analytics 组件](components.md)
->&#x200B;>[使用模板](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>>[使用模板](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >

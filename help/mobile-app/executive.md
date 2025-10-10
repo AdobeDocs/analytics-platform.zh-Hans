@@ -19,7 +19,7 @@ ht-degree: 73%
 
 >[!BEGINSHADEBOX]
 
-请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [协助执行用户访问移动记分卡](https://video.tv.adobe.com/v/3444846?captions=chi_hans){target="_blank"}以获取演示视频。
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [协助执行用户访问移动记分卡](https://video.tv.adobe.com/v/343460/){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -93,13 +93,13 @@ ht-degree: 73%
 
    有关图块的其他信息：
 
-   * 折线图的粒度取决于日期范围的长度：
+   * 线形图的粒度取决于日期范围的长度：
 
       * 一天会显示每小时的趋势
       * 超过一天且不足一年会显示每日的趋势
       * 一年及以上会显示每周的趋势
 
-   * 百分比值更改公式为：指标总计（当前日期范围）- 指标总计（比较日期范围）/ 指标总计（比较日期范围）。
+   * 百分比值更改公式为：量度总计（当前日期范围）- 量度总计（比较日期范围）/ 量度总计（比较日期范围）。
 
    * 您可以通过下拉屏幕来刷新记分卡。
 

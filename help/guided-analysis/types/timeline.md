@@ -6,7 +6,7 @@ keywords: 产品分析
 role: User
 exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
 source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 100%
 
@@ -29,12 +29,12 @@ ht-degree: 100%
 >[!NOTE]
 >
 >[!UICONTROL 时间线]分析要求&#x200B;**[!UICONTROL 人员 ID]** 标准组件在[数据视图](/help/data-views/component-reference.md#optional)中可用。您的 Customer Journey Analytics 管理员负责管理数据视图中包含人员 ID 的情况，从而使您的组织能够完全控制哪些人可以访问这些数据，从而保护隐私。
-><br/>如果数据视图没有添加[!UICONTROL 人员 ID] 组件，则会显示以下消息：
+>><br/>如果数据视图没有添加[!UICONTROL 人员 ID] 组件，则会显示以下消息：
 >
 >* **管理员**：*此分析需要 PersonID 属性。请将人员 ID 添加到数据视图。*
 >* **非管理员**：*此分析需要 PersonID 属性。请与您的 Customer Journey Analytics 管理员合作，将人员 ID 添加到数据视图。*
 
->[!VIDEO](https://video.tv.adobe.com/v/3435777/?quality=12&learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3427810/?quality=12&learn=on)
 
 
 

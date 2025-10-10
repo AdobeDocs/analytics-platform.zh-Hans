@@ -98,29 +98,29 @@ ht-degree: 100%
 
    此流程根据您用于实施 Adobe Analytics 的数据收集方法而有所不同：
 
-+++ AppMeasurement
+   +++ AppMeasurement
 
    [禁用 AppMeasurement 数据收集](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)。
 
-+++
+   +++
 
-+++ Analytics 扩展（标记）
+   +++ Analytics 扩展（标记）
 
    在标记中禁用 Analytics 扩展。
 
-+++
+   +++
 
-+++ API
+   +++ API
 
    禁用 API 数据收集。
 
-+++
+   +++
 
-+++ 第三方
+   +++ 第三方
 
    与您的标记管理员合作从第三方标记管理系统中移除 AppMeasurement 库。
 
-+++
+   +++
 
 1. 将 Adobe Analytics as a Service 从数据流中移除。
 

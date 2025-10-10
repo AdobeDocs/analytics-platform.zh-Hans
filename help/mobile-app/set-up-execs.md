@@ -18,7 +18,7 @@ ht-degree: 69%
 
 ## 确保应用程序用户具有 Adobe Analytics 访问权限
 
-1. 在 [Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=zh-Hans) 中设置新用户。
+1. 在 [Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html) 中设置新用户。
 
 1. 要能够共享记分卡，您必须向应用程序用户授予对记分卡组件(例如Analysis Workspace)、记分卡所基于的数据视图以及区段、量度和维度的访问权限。
 
@@ -26,7 +26,7 @@ ht-degree: 69%
 
 要确保执行用户可以在应用程序上访问您的记分卡，请确保：
 
-* 执行用户设备上的移动操作系统满足以下最低要求：iOS 版本 10 或更高版本，或者 Android 版本 4.4 (KitKat) 或更高版本
+* 他们的设备上的移动操作系统需要满足以下最低要求：iOS 版本 10 或更高版本，或者 Android 版本 4.4 (KitKat) 或更高版本
 * 执行用户已有效登录Customer Journey Analytics。
 * 您已为执行用户正确创建了移动记分卡，并与他们共享了这些记分卡。
 * 执行用户有权访问记分卡中包含的组件。请注意，在共享记分卡时，您可以选择&#x200B;**[!UICONTROL 共享嵌入的组件]**&#x200B;选项。
@@ -80,11 +80,11 @@ ht-degree: 69%
 
 有关图块的其他信息：
 
-* 折线图的粒度取决于日期范围的长度：
+* 线形图的粒度取决于日期范围的长度：
 * 一天会显示每小时的趋势
    * 超过一天且不足一年会显示每日的趋势
    * 一年及以上会显示每周的趋势
-   * 百分比值更改公式为：指标总计（当前日期范围）- 指标总计（比较日期范围）/ 指标总计（比较日期范围）。
+   * 百分比值更改公式为：量度总计（当前日期范围）- 量度总计（比较日期范围）/ 量度总计（比较日期范围）。
    * 您可以通过下拉屏幕来刷新记分卡。
 
 
@@ -92,7 +92,7 @@ ht-degree: 69%
 
    ![“划分”视图](assets/sparkline.png)
 
-   * 点按折线图上的任一点，可查看与线上的这个点相关联的数据。
+   * 点按线形图上的任一点，可查看与线上的这个点相关联的数据。
 
    * 将包含一个表以显示已添加到图块的各维度的数据。点按向下箭头以选择维度。如果未将维度添加到图块，则表将显示图表数据。
 

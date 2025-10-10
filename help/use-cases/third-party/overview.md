@@ -1,7 +1,8 @@
 ---
 title: Customer Journey Analytics中的第三方用例
 description: 了解如何使用从Customer Journey Analytics外部的产品收集的数据补充在Adobe中收集的数据。
-source-git-commit: 6ddc0f1e2afa73a6925f1940c08c4fecfc3de383
+exl-id: 3de5ccaf-7a65-448e-b886-fab56bc2a73b
+source-git-commit: 0387a1f88cc46706eb36effda1c3c1c64fff45d9
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 0%

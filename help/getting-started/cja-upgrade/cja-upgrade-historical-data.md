@@ -8,15 +8,15 @@ hide: true
 hidefromtoc: true
 exl-id: 1d17151b-3a12-468e-9a4f-9e5994599570
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 # 步骤 4：升级时保留历史数据
 
-+++展开此部分，了解此页面上的信息在更大范围的升级过程中所占的位置。确保所有先前的升级步骤均已完成。
++++展开此部分可查看此页面上的信息在较大的升级过程中的位置。 确保所有先前的升级步骤均已完成。
 
 在继续本部分之前，请首先确保您已完成所有先前的升级任务。
 

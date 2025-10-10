@@ -8,12 +8,12 @@ role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
 
-# 移动记分卡批注
+# 移动记分卡注释
 
 您可以在移动记分卡中显示在Analysis Workspace中创建的批注。 您可以使用移动记分卡中的注释分享有关您的组织和营销活动的上下文数据细节和洞察。
 

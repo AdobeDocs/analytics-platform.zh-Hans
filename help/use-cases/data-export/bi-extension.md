@@ -16,11 +16,11 @@ ht-degree: 50%
 
 本文概述如何使用[!DNL Customer Journey Analytics BI extension]实现以下[数据导出用例](overview.md)：
 
-- 数据湖、Data Warehouse或BI工具
+- Data Lake、Data Warehouse或BI工具
 
 ## 简介
 
-使用[!DNL Customer Journey Analytics BI extension]导出数据允许您从Customer Journey Analytics数据视图导出数据。
+使用[!DNL Customer Journey Analytics BI extension]导出数据允许您从Customer Journey Analytics数据视图中导出数据。
 
 ![BI扩展](../assets/bi-extension.svg)
 

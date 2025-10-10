@@ -5,15 +5,15 @@ role: User, Admin
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: 9505f21748b3d94b2398f898e5399d095ccec260
+exl-id: 0a0427d9-223e-410b-a8ef-8601390d88aa
+source-git-commit: 755a5223deb0845079ea98a7371a2f8acb69ea4b
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-
-# 管理计划的工作簿
+# 管理已安排的工作簿
 
 您可以计划工作簿以通过电子邮件共享，也可以通过导出到云目标进行共享，如以下文章所述：
 
@@ -72,4 +72,4 @@ ht-degree: 2%
    * ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg)表示工作簿已成功发送。
    * ![AlertRed](/help/assets/icons/AlertRed.svg)表示出现错误。
 
-或者，您也可以在&#x200B;**[!UICONTROL 工作簿]**&#x200B;选项卡中为一个或多个选定的工作簿选择![历史记录](/help/assets/icons/History.svg)。 此操作显示&#x200B;**[!UICONTROL History]**&#x200B;选项卡，该选项卡具有按您的选择过滤的列表。 选择![CrossSize75](/help/assets/icons/CrossSize75.svg)以删除筛选器。
+或者，您也可以在![工作簿](/help/assets/icons/History.svg)选项卡中为一个或多个选定的工作簿选择&#x200B;**[!UICONTROL 历史记录]**。 此操作显示&#x200B;**[!UICONTROL History]**&#x200B;选项卡，该选项卡具有按您的选择过滤的列表。 选择![CrossSize75](/help/assets/icons/CrossSize75.svg)以删除筛选器。

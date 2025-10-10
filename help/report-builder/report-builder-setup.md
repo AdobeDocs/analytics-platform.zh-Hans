@@ -13,7 +13,7 @@ ht-degree: 26%
 
 ---
 
-# Report Builder设置
+# Report Builder 设置
 
 本文概述了在Microsoft Excel中使用适用于Customer Journey Analytics的Report Builder的要求。 以及如何安装和设置加载项。
 

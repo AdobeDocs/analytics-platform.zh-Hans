@@ -29,7 +29,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Createa 移动记分卡](https://video.tv.adobe.com/v/3409727?quality=12&learn=on&captions=chi_hans){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Createa 移动记分卡](https://video.tv.adobe.com/v/343458?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -96,7 +96,7 @@ Analytics 记分卡以平铺版面为执行用户显示关键数据可视化图�
 
 要将区段应用于单个磁贴，请将左侧面板中的某个区段直接拖放到磁贴的顶部。
 
-如果要将区段应用于记分卡中的所有磁贴，请将区段拖放到记分卡的顶部。或者，您也可以在日期范围下方的区段菜单中选择区段，然后应用它们。您可以像在 Customer Journey Analytics Workspace 中那样[为记分卡配置和应用区段](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans)。
+如果要将区段应用于记分卡中的所有磁贴，请将区段拖放到记分卡的顶部。或者，您也可以在日期范围下方的区段菜单中选择区段，然后应用它们。您可以像在 Customer Journey Analytics Workspace 中那样[为记分卡配置和应用区段](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html)。
 
 ![区段下拉选择器突出显示已构建的区段](assets/segment_ui.png)
 
@@ -212,7 +212,7 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自定义详细信息视图](https://video.tv.adobe.com/v/3413785?quality=12&learn=on&captions=chi_hans){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自定义详细信息视图](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 {{videoaa}}
 
@@ -257,7 +257,7 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [移动记分卡的数据故事项目](https://video.tv.adobe.com/v/3420558/?quality=12&learn=on&captions=chi_hans){target="_blank"}，观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [移动记分卡的数据故事项目](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on){target="_blank"}，观看演示视频。
 
 {{videoaa}}
 

@@ -26,11 +26,11 @@ ht-degree: 1%
 * 结构相似或相同的多个数据视图。
 * 包含自定义组件和布局的复杂数据块格式。
 
-要从单元格中选择数据视图，请先构建一个数据块，并将多个数据视图分配给数据块外部的单元格。 然后，使用单元格&#x200B;**中的**&#x200B;数据视图面板从不同的数据视图刷新数据块。
+要从单元格中选择数据视图，请先构建一个数据块，并将多个数据视图分配给数据块外部的单元格。 然后，使用单元格&#x200B;**[!UICONTROL 中的]**&#x200B;数据视图面板从不同的数据视图刷新数据块。
 
 1. 创建数据块。 有关创建数据块的信息，请参阅[创建数据块](/help/report-builder/create-a-data-block.md)。
 
-1. 在&#x200B;**[!UICONTROL 数据视图]**&#x200B;中选择![数据视图选择器](/help/assets/icons/DataViewSelector.svg)。
+1. 在![数据视图](/help/assets/icons/DataViewSelector.svg)中选择&#x200B;**[!UICONTROL 数据视图选择器]**。
 
 1. 使用数据块外部的![DataBlockSelector](/help/assets/icons/DataBlockSelector.svg)选择单元格。
 

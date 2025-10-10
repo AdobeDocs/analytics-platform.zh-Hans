@@ -7,7 +7,7 @@ role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '5202'
+source-wordcount: '5021'
 ht-degree: 15%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 15%
 | 17 | 321营销活动 | 20 | 2500 | def321 | facebook | def-adgroup | 2024-07-18T18:20:39.000Z |
 | 18 | 321营销活动 | 15 | 2250 | ghi321 | facebook | ghi-adgroup | 2024-07-18T18:20:39.000Z |
 
-[![数据下载](/help/assets/icons/DataDownload.svg)](./assets/summary-data.csv)
+[！[数据下载](/help/assets/icons/DataDownload.svg)](./assets/summary-data.csv)
 
 +++
 
@@ -278,7 +278,7 @@ ht-degree: 15%
 | 17 | def321 | def-adgroup | 321营销活动 |
 | 18 | ghi321 | ghi-adgroup | 321营销活动 |
 
-[![DataDownload](/help/assets/icons/DataDownload.svg)下载示例查找数据](./assets/lookup-data.csv)
+[![数据下载](/help/assets/icons/DataDownload.svg)](./assets/lookup-data.csv)
 +++
 
 >[!INFO]
@@ -305,12 +305,12 @@ ht-degree: 15%
 
 要添加字段组，其中包含用于示例数据的字段：
 
-1. 选择&#x200B;**[!UICONTROL 字段组]**&#x200B;中的![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]**。
+1. 选择![字段组](/help/assets/icons/AddCircle.svg)中的&#x200B;**[!UICONTROL AddCircle]** **[!UICONTROL Add]**。
 1. 在&#x200B;**[!UICONTROL 添加字段组]**&#x200B;对话框中，选择&#x200B;**[!UICONTROL 新建字段组]**。
 1. 输入字段组的&#x200B;**[!UICONTROL 显示名称]**，例如`Example Summary Data`。 （可选）提供描述。
 1. 选择&#x200B;**[!UICONTROL 添加字段组]**。
 1. 返回架构结构用户界面。 在&#x200B;**[!UICONTROL 字段组]**&#x200B;中选择新的&#x200B;**[!UICONTROL 示例摘要数据]**。
-1. 选择架构名称&#x200B;**[!UICONTROL 示例摘要数据架构]**&#x200B;旁边的![AddCircle](/help/assets/icons/AddCircle.svg)。 将打开一个&#x200B;**[!UICONTROL 字段属性]**&#x200B;面板，允许您添加字段的详细信息。
+1. 选择架构名称![示例摘要数据架构](/help/assets/icons/AddCircle.svg)旁边的&#x200B;**[!UICONTROL AddCircle]**。 将打开一个&#x200B;**[!UICONTROL 字段属性]**&#x200B;面板，允许您添加字段的详细信息。
    1. 输入&#x200B;**[!UICONTROL 字段名称]**： `campaign_id`
    1. 输入&#x200B;**[!UICONTROL 显示名称]**： `campaign_id`
    1. 从&#x200B;**[!UICONTROL 选择数据类型]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 类型]**： **[!UICONTROL 字符串]**
@@ -369,14 +369,14 @@ ht-degree: 15%
    1. 请确保&#x200B;**[!UICONTROL 数据格式]**&#x200B;和&#x200B;**[!UICONTROL 分隔符]**&#x200B;具有示例数据的正确值。 例如，**[!UICONTROL 已分隔]**&#x200B;作为&#x200B;**[!UICONTROL 数据格式]**，**[!UICONTROL 已分隔]**&#x200B;作为&#x200B;**[!UICONTROL 分隔符]**。
    1. 摘要数据的样本（10条记录）显示在&#x200B;**[!UICONTROL 样本数据]**&#x200B;中。
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
-1. 在&#x200B;**[!UICONTROL 工作流]** > **[!UICONTROL 将CSV映射到XDM架构]**&#x200B;向导的&#x200B;**[!UICONTROL 映射]**&#x200B;步骤中：
+1. 在&#x200B;**[!UICONTROL 工作流]** > **[!UICONTROL 将CSV映射到XDM架构]**&#x200B;向导的&#x200B;**[!UICONTROL 映射]**步骤中：
    ![示例数据集映射](../assets/example-dataset-mapping.png)
    1. 检查&#x200B;**[!UICONTROL Source数据]**&#x200B;的所有数据字段是否正确映射到架构中对应的&#x200B;**[!UICONTROL 目标字段]**。 对于示例数据，不会报告任何错误，因为您明确命名了架构中的字段，类似于示例数据中的字段名称。 否则，您可以使用此屏幕来更正映射。
    1. 您可以选择选择![齿轮](/help/assets/icons/Gear.svg) **[!UICONTROL 验证]**&#x200B;以（再次）验证数据。
    1. 您可以选择选择![预览](/help/assets/icons/Preview.svg) **[!UICONTROL 预览数据]**&#x200B;打开对话框，预览加载到数据集中的数据后。
    1. 选择&#x200B;**[!UICONTROL 完成]**。
 
-在&#x200B;**[!UICONTROL 源]** > **[!UICONTROL 数据流 — XX/XX/XXXX， XX：XX XX]**&#x200B;中，将显示您的上传状态。 刷新以查看上载的更新。 成功后，您的示例数据将加载到Experience Platform中。
+在&#x200B;**[!UICONTROL 源]** > **[!UICONTROL 数据流 — XX/XX/XXXX， XX:XX XX]**&#x200B;中，会显示您的上传状态。 刷新以查看上载的更新。 成功后，您的示例数据将加载到Experience Platform中。
 
 
 
@@ -451,7 +451,7 @@ ht-degree: 15%
       1. 为您的数据视图输入&#x200B;**[!UICONTROL 名称]**，例如`Example Data View Using Summary Data`。
       1. 保留所有其他设置。
       1. 选择&#x200B;**[!UICONTROL 保存并继续]**。
-   1. 在&#x200B;**[!UICONTROL 数据视图]** > **[!UICONTROL 使用摘要数据的示例数据视图的**&#x200B;[!UICONTROL &#x200B;组件&#x200B;]&#x200B;**步骤中]**：
+   1. 在&#x200B;**[!UICONTROL 数据视图]** > **[!UICONTROL 使用摘要数据的示例数据视图的]**&#x200B;组件&#x200B;**[!UICONTROL 步骤中]**：
       1. 将以下组件添加到“维度和量度”列表。 请注意，为清楚起见，组件名称是从其默认名称修改的，在组件面板的&#x200B;**[!UICONTROL 组件设置]**&#x200B;中使用&#x200B;**[!UICONTROL 组件名称]**（在右侧）。
 
          **量度**
@@ -484,13 +484,13 @@ ht-degree: 15%
          1. 展开![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL 摘要数据组]**。
          1. 启用&#x200B;**[!UICONTROL 创建分组]**。
          1. 从&#x200B;**[!UICONTROL Dimension]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 促销活动ID]**。 此步骤可确保正确组合事件数据和摘要数据以便进行报告。
-         1. 您可以选择在报表&#x200B;**中启用**&#x200B;隐藏。 [!UICONTROL 在报表中隐藏]确保选定的维度（[!UICONTROL 促销活动ID]）在Analysis Workspace和其他Customer Journey Analytics报表工具中隐藏。 如果已启用此选项，则可以验证选项：
+         1. 您可以选择在报表&#x200B;**[!UICONTROL 中启用]**&#x200B;隐藏。 [!UICONTROL 在报表中隐藏]确保选定的维度（[!UICONTROL 促销活动ID]）在Analysis Workspace和其他Customer Journey Analytics报表工具中隐藏。 如果已启用此选项，则可以验证选项：
             1. 在&#x200B;**[!UICONTROL 维度]**&#x200B;列表中选择&#x200B;**[!UICONTROL 促销活动ID]**&#x200B;维度。
             1. 您注意到现在已在&#x200B;**[!UICONTROL 组件设置]**&#x200B;中自动启用&#x200B;**[!UICONTROL 隐藏报表中的组件]**。
 
       1. 创建新的派生字段，例如`Campaign Name (Lookup Derived Field)`，以确保您可以使用示例查找数据数据集中的“促销活动名称（查找）”维度在Workspace中报告。
 
-         营销活动名称![&#128279;](../aa-data/../assets/summary-derived-field.png)的派生字段
+         营销活动名称![的](../aa-data/../assets/summary-derived-field.png)派生字段
 
          1. 为&#x200B;**[!UICONTROL 值]**&#x200B;选择&#x200B;**[!UICONTROL campaign_id]**。
          1. 从&#x200B;**[!UICONTROL 查找数据集]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 示例查找数据集]**。
@@ -512,7 +512,7 @@ ht-degree: 15%
 
          ![收入摘要数据](../assets/revenue-summary-data.png)
          1. 展开![V形向下](/help/assets/icons/ChevronDown.svg) **[!UICONTROL 归因]**。
-            1. 从&#x200B;**[!UICONTROL 归因模型]**&#x200B;下拉菜单中选择![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Last Touch]**。
+            1. 从![归因模型](/help/assets/icons/AttributeLastTouch.svg)下拉菜单中选择&#x200B;**[!UICONTROL AttributeLastTouch]** **[!UICONTROL Last Touch]**。
             1. 从&#x200B;**[!UICONTROL 回顾窗口]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 30天]**。
          1. 展开![V形](/help/assets/icons/ChevronDown.svg) **格式**。
             1. 从&#x200B;**[!UICONTROL 格式]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 货币]**。
@@ -522,11 +522,11 @@ ht-degree: 15%
 
          ![订单摘要数据](../assets/orders-summary-data.png)
          1. 展开![V形向下](/help/assets/icons/ChevronDown.svg) **[!UICONTROL 归因]**。
-            1. 从&#x200B;**[!UICONTROL 归因模型]**&#x200B;下拉菜单中选择![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Last Touch]**。
+            1. 从![归因模型](/help/assets/icons/AttributeLastTouch.svg)下拉菜单中选择&#x200B;**[!UICONTROL AttributeLastTouch]** **[!UICONTROL Last Touch]**。
             1. 从&#x200B;**[!UICONTROL 回顾窗口]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 30天]**。
          1. 展开![V形](/help/assets/icons/ChevronDown.svg) **[!UICONTROL 格式]**。
             1. 从&#x200B;**[!UICONTROL 格式]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 十进制]**。
-            1. 从▲2&rbrace;将上升趋势显示为&#x200B;**下拉菜单中选择**&#x200B;[!UICONTROL &#x200B;良好（绿色）]&#x200B;**。**
+            1. 从&#x200B;**[!UICONTROL ▲将上升趋势显示为]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 良好（绿色）]**。
 
       1. 选择&#x200B;**[!UICONTROL 保存并继续]**。
 
@@ -562,24 +562,24 @@ ht-degree: 15%
 
 1. 选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 计算量度]**。
 1. 选择![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]**&#x200B;以添加新的计算量度。
-   1. 为&#x200B;**[!UICONTROL 名称]**&#x200B;指定`Cost per Impression`。
+   1. 为`Cost per Impression`名称&#x200B;**[!UICONTROL 指定]**。
    1. 为&#x200B;**[!UICONTROL 格式]**&#x200B;选择&#x200B;**[!UICONTROL 货币]**。
-   1. 为&#x200B;**[!UICONTROL 小数位]**&#x200B;指定`4`。
+   1. 为`4`小数位&#x200B;**[!UICONTROL 指定]**。
    1. 使用![事件](/help/assets/icons/Event.svg) **[!UICONTROL 成本（摘要）]** **[!UICONTROL ÷]** **[!UICONTROL 展示次数（摘要）]**&#x200B;作为&#x200B;**[!UICONTROL 定义]**。
    1. 选择&#x200B;**[!UICONTROL 保存]**。
 1. 选择![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]**&#x200B;以添加另一个新的计算量度。
-   1. 为&#x200B;**[!UICONTROL 名称]**&#x200B;指定`Return on Ad Spend`。
+   1. 为`Return on Ad Spend`名称&#x200B;**[!UICONTROL 指定]**。
    1. 为&#x200B;**[!UICONTROL 格式]**&#x200B;选择&#x200B;**[!UICONTROL 货币]**。
-   1. 为&#x200B;**[!UICONTROL 小数位]**&#x200B;选择`2`。
+   1. 为`2`小数位&#x200B;**[!UICONTROL 选择]**。
    1. 使用![事件](/help/assets/icons/Event.svg) **[!UICONTROL 收入（最近联系） | 30天)]** **[!UICONTROL −]** ![事件](/help/assets/icons/Event.svg) **[!UICONTROL 成本（摘要）]**&#x200B;作为&#x200B;**[!UICONTROL 定义]**。
    1. 选择&#x200B;**[!UICONTROL 保存]**。
 
 将计算量度添加到报表中。
 
-1. 从&#x200B;**[!UICONTROL 指标]**&#x200B;中拖动&#x200B;**[!UICONTROL 每次展示成本]** ![计算器](/help/assets/icons/Calculator.svg)并放置指标，以将其添加为自由格式表的附加列。
+1. 从&#x200B;**[!UICONTROL 指标]**&#x200B;中拖动![每次展示成本](/help/assets/icons/Calculator.svg) **[!UICONTROL 计算器]**&#x200B;并放置指标，以将其添加为自由格式表的附加列。
    1. 选择![设置](/help/assets/icons/Setting.svg)列设置。
       1. 禁用&#x200B;**[!UICONTROL 百分比]**。
-1. 从&#x200B;**[!UICONTROL 量度]**&#x200B;中拖动&#x200B;**[!UICONTROL 广告支出回报]** ![计算器](/help/assets/icons/Calculator.svg)并放置量度，以将其添加为自由格式表的附加列。
+1. 从&#x200B;**[!UICONTROL 量度]**&#x200B;中拖动![广告支出回报](/help/assets/icons/Calculator.svg) **[!UICONTROL 计算器]**&#x200B;并放置量度，以将其添加为自由格式表的附加列。
    1. 选择![设置](/help/assets/icons/Setting.svg)列设置。
       1. 禁用&#x200B;**[!UICONTROL 百分比]**。
       1. 启用&#x200B;**[!UICONTROL 条件格式]**。
@@ -603,4 +603,4 @@ ht-degree: 15%
 >[!MORELIKETHIS]
 >
 >[摘要数据](/help/data-views/summary-data.md)
->[摘要数据组组件设置](/help/data-views/component-settings/summary-data-group.md)
+>>[摘要数据组组件设置](/help/data-views/component-settings/summary-data-group.md)

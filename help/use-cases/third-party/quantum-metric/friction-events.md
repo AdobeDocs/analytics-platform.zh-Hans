@@ -38,7 +38,7 @@ Quantum Metric收集页面加载缓慢、页面加载错误、范围点击等摩
 
 ## 步骤2：使用量子量度标记扩展捕获摩擦事件
 
-有关如何设置标记以包含Quantum量度数据的说明，请参阅Adobe Experience Platform目标指南中的[Quantum量度扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/analytics/quantum-metric)。 使用此扩展可将更多行传递到现有数据集。
+有关如何设置标记以包含Quantum量度数据的说明，请参阅Adobe Experience Platform目标指南中的[Quantum量度扩展](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric)。 使用此扩展可将更多行传递到现有数据集。
 
 使用Adobe Experience Platform数据收集中的标记手动设置摩擦事件的名称，以便将其包含在XDM对象中并进行分析。 一种方法是使用规则的自定义代码：
 
@@ -78,5 +78,5 @@ return true;
 可能的分析想法包括：
 
 * 随时间呈现摩擦事件数据的趋势
-* 在流失或漏斗可视化图表中，将Customer Journey Analytics事件作为某些步骤添加，并将量子量度摩擦事件作为其他步骤添加。 通过此报告，您可以查看访客最常遇到问题的地方。
+* 在流失或funnel可视化图表中，将Customer Journey Analytics事件添加为某些步骤，将量子量度摩擦事件添加为其他步骤。 通过此报告，您可以查看访客最常遇到问题的地方。
 * 为体验摩擦事件的访客创建并应用区段，以便进行更深入的分析

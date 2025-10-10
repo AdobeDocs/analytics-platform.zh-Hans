@@ -1,13 +1,13 @@
 ---
 title: Customer Journey Analytics数据中心
-description: 了解全球CJA数据中心位置。
+description: 了解CJA在世界各地的数据中心位置。
 solution: Customer Journey Analytics
 role: Admin
 exl-id: a41686bb-1a7b-4d27-8415-f4a1880b7de5
 source-git-commit: b325319167ae183b54e60feee0c591c245a20e49
 workflow-type: tm+mt
 source-wordcount: '100'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -17,7 +17,7 @@ Adobe Customer Journey Analytics在北美洲、欧洲和APAC的公共云服务�
 
 在配置时，客户指定其Adobe Experience Platform数据将驻留的地区。 从Adobe Experience Platform数据湖摄取到CJA的数据将存储在同一区域。
 
-有关详细信息，请参阅Adobe Experience Cloud文档中的[区域数据收集](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/data-collection/rdc)。
+有关详细信息，请参阅Adobe Experience Cloud文档中的[区域数据收集](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc)。
 
 ## Azure
 

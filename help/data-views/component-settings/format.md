@@ -92,7 +92,7 @@ Customer Journey Analytics 中的货币转换对于跨国经营的企业来说�
 
    * 在&#x200B;[!UICONTROL **选择货币代码维度**]&#x200B;字段中，选择代表您要转换的货币（即您的数据所基于的货币）的维度。例如，选择一个名为&#x200B;[!UICONTROL **货币代码**]&#x200B;的维度。
 
-     如果您当前数据架构中没有包含货币代码字段的维度，则可以使用[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)、[数据蒸馏器](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=zh-Hans)或者[派生字段](/help/data-views/derived-fields/derived-fields.md)创建新的货币代码字段。“数据准备”仅适用于新的实施，因为它仅适用于向前推进的情况。根据组织的设置，可以使用“数据蒸馏器”和“派生字段”来访问历史货币代码值。
+     如果您当前数据架构中没有包含货币代码字段的维度，则可以使用[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html)、[数据蒸馏器](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html)或者[派生字段](/help/data-views/derived-fields/derived-fields.md)创建新的货币代码字段。“数据准备”仅适用于新的实施，因为它仅适用于向前推进的情况。根据组织的设置，可以使用“数据蒸馏器”和“派生字段”来访问历史货币代码值。
 
    * 在&#x200B;[!UICONTROL **转换并显示货币**]&#x200B;字段中，选择您希望数据转换成的货币。
 

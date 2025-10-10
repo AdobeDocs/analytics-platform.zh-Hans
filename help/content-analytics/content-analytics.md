@@ -8,7 +8,7 @@ exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -47,8 +47,8 @@ Content Analytics 使用在 Experience Platform 的事件数据集中的网页�
 
 1. 当用户访问[配置了 Content Analytics](config/configuration.md) 的网站时，Experience Plarform Web SDK 会记录对内容的印象以及与内容的交互情况。
 1. 身份标识服务和特征化服务会对这些交互进行处理。该过程包括一个检索服务，该服务会重新访问定义这些交互的公众版本的已配置 URL。身份标识服务会为所有这些检索到的 URL 唯一性标识体验和资产。特征化服务应用 AI/ML 服务来发现体验和资产元数据和属性。
-1. 这些服务（[组件、属性和身份](/help/content-analytics/report/components.md)）的结果用于更新Experience Platform中相关的特定Content Analytics数据集。
-1. Content Analytics数据，以及行为数据和其他查找数据，可以在Customer Journey Analytics设置([连接](/help/connections/overview.md)、[数据视图](/help/data-views/data-views.md)和[Workspace](/help/analysis-workspace/home.md))中使用。 该设置为对内容的独特宏观级洞察提供了基础。<br/>您可以使用[Content Analytics 模板](/help/content-analytics/report/report.md#template)快速启动 Content Analytics 报告和分析。
+1. 这些服务（[组件、属性和身份标识](/help/content-analytics/report/components.md)）的结果用于更新 Experience Platform 中相关的特定 Content Analytics 数据集。
+1. Content Analytics 数据以及行为数据和其他查找数据可一起用在 Customer Journey Analytics 配置中（[连接](/help/connections/overview.md)、[数据视图](/help/data-views/data-views.md)和[工作区](/help/analysis-workspace/home.md)）。该设置为对内容的独特宏观级洞察提供了基础。<br/>您可以使用[Content Analytics 模板](/help/content-analytics/report/report.md#template)快速启动 Content Analytics 报告和分析。
 
 
 >[!NOTE]
@@ -67,7 +67,7 @@ Content Analytics 使用在 Experience Platform 的事件数据集中的网页�
 >[!MORELIKETHIS]
 >
 >[Content Analytics 报告](report/report.md)
->&#x200B;>[配置 Content Analytics](config/configuration.md)
->&#x200B;>[在 Customer Journey Analytics 中计算跳出次数和跳出率](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
+>>[配置 Content Analytics](config/configuration.md)
+>>[在 Customer Journey Analytics 中计算跳出次数和跳出率](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
 >
 

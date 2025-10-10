@@ -7,7 +7,7 @@ exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: d8ff5191ea96b8871f6aaba1fc28211c22a13e0d
 workflow-type: tm+mt
 source-wordcount: '843'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 96%
 
 ## 新增功能
 
-大致了解 Customer Journey Analytics 产品和文档中的最新增强！有关功能、改进和修复的完整列表，请查看详细的[发行说明](../release-notes/latest.md)。 访问[文档更新页面](../release-notes/doc-changes.md)以及时了解最新的文档更新。
+大致了解 Customer Journey Analytics 产品和文档中的最新增强！有关功能、改进和修复的完整列表，请查看详细的[发行说明](../release-notes/latest.md)。访问[文档更新页面](../release-notes/doc-changes.md)以及时了解最新的文档更新。
 
 >[!BEGINTABS]
 
@@ -29,7 +29,7 @@ Customer Journey Analytics 中的实时报告功能可以实时显示并更新 A
 
 [![图像](assets/learn-more-button.svg)](/help/components/real-time/real-time.md)
 
-*_您必须拥有Ultimate包才能进行实时报告。_*
+*_您必须具有 Ultimate 包才能进行实时报告。_*
 
 >[!TAB B2B Edition]
 

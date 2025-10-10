@@ -6,7 +6,7 @@ keywords: 产品分析
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
 source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 ![FirstUse](/help/assets/icons/FirstUse.svg) **[!UICONTROL 首次使用影响]**&#x200B;分析显示了用户首次使用产品功能前后关键指标表现的对比。本报告的横轴是事件前后的相对时间间隔，纵轴则会衡量所需的关键指标。图表中间的垂直条表示特定用户首次使用某项功能的第 0 天。由于用户并非总是在同一天采用功能，且功能的推出可能会持续数天，因此对于每位用户而言，“第 0 天”可能具有不同的含义。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3423493/?quality=12&learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3421661/?quality=12&learn=on)
 
 
 ## 用例

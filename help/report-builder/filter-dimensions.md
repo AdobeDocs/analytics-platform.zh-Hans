@@ -22,7 +22,7 @@ ht-degree: 33%
 
 1. 在数据块中选择单元格。
 
-1. 在&#x200B;**[!UICONTROL 命令]**&#x200B;面板中选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据块]**。
+1. 在![命令](/help/assets/icons/Edit.svg)面板中选择&#x200B;**[!UICONTROL 编辑]** **[!UICONTROL 编辑数据块]**。
 
 1. 选择&#x200B;**[!UICONTROL 下一步]**&#x200B;以显示&#x200B;**[!UICONTROL 维度]**&#x200B;选项卡。
 

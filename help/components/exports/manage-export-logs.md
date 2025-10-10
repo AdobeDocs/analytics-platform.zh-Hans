@@ -8,7 +8,7 @@ role: User
 source-git-commit: ad43b199d4174894f0e428bcaf1748ca80bddb45
 workflow-type: tm+mt
 source-wordcount: '837'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 5%
 
    * 选择日志名称旁边的&#x200B;**编辑导出图标** ![信息图标](assets/edit-export-icon.png)以编辑与日志关联的导出。
 
-     有关编辑导出的详细信息，请参阅[将Customer Journey Analytics报表导出到云](/help/analysis-workspace/export/export-cloud.md)。
+     有关编辑导出的更多信息，请参阅[将Customer Journey Analytics报表导出到云](/help/analysis-workspace/export/export-cloud.md)。
 
 ## 过滤和搜索日志
 
@@ -57,7 +57,7 @@ ht-degree: 5%
    | 过滤器 | 描述 |
    |---------|----------|
    | [!UICONTROL **导出ID**] | 指定要查看的导出日志的导出ID。 |
-   | [!UICONTROL **帐户类型**] | 与日志关联的帐户类型。 可以使用以下帐户类型： <ul><li>[!UICONTROL **AEP数据登陆区**]</li><li>[!UICONTROL **Amazon S3角色ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google云平台**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
+   | [!UICONTROL **帐户类型**] | 与日志关联的帐户类型。 可以使用以下帐户类型： <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
    | [!UICONTROL **状态**] | 导出的状态。 可以使用以下状态： <ul><li>[!UICONTROL **挂起**]：特定导出实例已启动，但尚未完成。<p>重新运行状态为“待定”的导出将会延迟导出过程。</p></li><li>[!UICONTROL **已完成**]：导出的特定实例已完成处理，可在导出帐户中使用。</li><li>[!UICONTROL **失败**]<p>各种情况都可能导致导出失败。 将鼠标悬停在失败状态上可查看有关失败的详细信息。<p>有关失败可能原因的更多信息，请参阅[导出失败疑难解答](/help/components/exports/troubleshoot-exports.md)。</p> |
 
    {style="table-layout:auto"}
@@ -100,7 +100,7 @@ This option is not available when selecting multiple logs. -->
 
    选中日志旁边的复选框，然后选择&#x200B;[!UICONTROL **编辑导出**]。
 
-## 配置列
+## 配置各列
 
 您可以在[!UICONTROL 日志]选项卡中添加或删除列以配置显示的信息。
 
@@ -112,7 +112,7 @@ This option is not available when selecting multiple logs. -->
 
 1. 选择&#x200B;[!UICONTROL **日志**]&#x200B;选项卡。
 
-1. 选择[!UICONTROL 日志]页面右上角的&#x200B;**自定义表**&#x200B;图标![自定义表](assets/customize-table-icon.png)。
+1. 选择&#x200B;**日志**&#x200B;页面右上角的![自定义表](assets/customize-table-icon.png)图标[!UICONTROL 自定义表]。
 
    以下列可供使用：
 
@@ -128,7 +128,7 @@ This option is not available when selecting multiple logs. -->
    | 帐户 | 从中导出数据的帐户。 |
    | 状态 | 导出的状态。 可用状态为[!UICONTROL Pending]、[!UICONTROL Delivered]和[!UICONTROL Failed]。 |
    | 投放日期 | 导出日期。 |
-   | 帐户类型 | 从中导出数据的云帐户的类型。 可用的帐户类型包括[!UICONTROL Amazon S3SnowflakeARN]、[!UICONTROL Google云平台]、[!UICONTROL Azure SAS]、[!UICONTROL Azure RBAC]、[!UICONTROL 角色]和[!UICONTROL Adobe Experience Platform]。 |
+   | 帐户类型 | 从中导出数据的云帐户的类型。 可用的帐户类型包括[!UICONTROL Amazon S3 Role ARN]、[!UICONTROL Google Cloud Platform]、[!UICONTROL Azure SAS]、[!UICONTROL Azure RBAC]、[!UICONTROL Snowflake]和[!UICONTROL Adobe Experience Platform]。 |
    | 行数 | 导出表中包括的行数。 |
 
    {style="table-layout:auto"}
@@ -137,4 +137,4 @@ This option is not available when selecting multiple logs. -->
 
 ## 查看审核日志
 
-[Customer Journey Analytics审核日志](/help/privacy/audit-log.md)中还跟踪了完整表导出。<!-- Need to see what the Component Type for full-table export will be and add it here. Also, under "Event type captured by audit logs" there would be a new event type called "Full-table export". 4 actions would be "Create, Delete, Edit, Export" and "API_Request"? Also information about the locations. Probably have a different component for the location credentials.-->
+还在[Customer Journey Analytics审核日志](/help/privacy/audit-log.md)中跟踪全表导出。<!-- Need to see what the Component Type for full-table export will be and add it here. Also, under "Event type captured by audit logs" there would be a new event type called "Full-table export". 4 actions would be "Create, Delete, Edit, Export" and "API_Request"? Also information about the locations. Probably have a different component for the location credentials.-->

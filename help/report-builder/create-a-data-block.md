@@ -9,11 +9,11 @@ solution: Customer Journey Analytics
 source-git-commit: 7d3300336a955facc230f335d1452096700ea98b
 workflow-type: tm+mt
 source-wordcount: '777'
-ht-degree: 23%
+ht-degree: 24%
 
 ---
 
-# 创建数据块
+# 创建一个数据块
 
 *数据块*&#x200B;是由单个数据请求创建的数据的表。Report Builder 工作簿可以包含多个数据块。创建数据块时，首先配置数据块，然后构建数据块。
 
@@ -114,7 +114,7 @@ ht-degree: 23%
 >[!MORELIKETHIS]
 >
 >[选择数据视图](select-data-view.md)
->[选择日期范围](select-date-range.md)
->[筛选维度](filter-dimensions.md)
->[使用区段](work-with-filters.md)
+>>[选择日期范围](select-date-range.md)
+>>[筛选维度](filter-dimensions.md)
+>>[使用区段](work-with-filters.md)
 >

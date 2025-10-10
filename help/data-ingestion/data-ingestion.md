@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: ec56bc657961b2e4e8318ab14cd676288398462f
 workflow-type: tm+mt
 source-wordcount: '1089'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -23,15 +23,15 @@ ht-degree: 85%
 
 Customer Journey Analytics 架构大致如下所示：
 
-![Customer Journey Analytics架构](/help/getting-started/assets/cja-overview.svg)
+![Customer Journey Analytics 架构](/help/getting-started/assets/cja-overview.svg)
 
-此架构说明了客户历程分析如何允许您：
+该架构展示了 Customer Journey Analytics 如何实现以下功能：
 
-* 在![连接](/help/assets/icons/Data.svg)中合并多个数据集[数据](/help/connections/overview.md)。
-* 在![数据视图](/help/assets/icons/Dimensions.svg)中，根据您在连接中定义的数据集中可用的字段，定义和配置维度![维度](/help/assets/icons/Event.svg)和量度[事件](/help/data-views/data-views.md)。
-* 基于数据视图中的维度和量度生成![项目](/help/assets/icons/ViewTable.svg)中的报告![ViewTable](/help/assets/icons/GraphTrend.svg)和可视化图表（如行![行](/help/assets/icons/GraphAreaStacked.svg)和区域[区域](/help/analysis-workspace/home.md)）。
+* 在一个[连接](/help/connections/overview.md)中合并多个数据集![数据](/help/assets/icons/Data.svg)。
+* 在[数据视图](/help/data-views/data-views.md)中，根据您在连接中定义的数据集中可用的字段，定义和配置维度![维度](/help/assets/icons/Dimensions.svg)和量度![事件](/help/assets/icons/Event.svg)。
+* 基于数据视图中的维度和量度生成[项目](/help/analysis-workspace/home.md)中的报告 ![ViewTable](/help/assets/icons/ViewTable.svg) 和可视化图表（如行![行](/help/assets/icons/GraphTrend.svg)和区域![区域](/help/assets/icons/GraphAreaStacked.svg)）。
 
-架构中的数据集可以源自各种来源：
+架构中的数据集可以来自各种来源：
 
 * 批次数据，
 
@@ -102,15 +102,15 @@ Customer Journey Analytics 架构大致如下所示：
 
 ## 使用源连接器摄取和使用数据
 
-您可以从源连接器支持的源获取数据。源连接器是可配置的配置允许您将数据从 Adobe、第一方和第三方应用程序摄取到 Adobe Experience Platform 中。有关可用源连接器的概述请参见[源连接器概述](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hans)。使用源连接器您可以轻松地将数据从源导入 Adobe Experience Platform，然后在 Customer Journey Analytics 中使用、组合和分析来自其他渠道和数据源的数据。
+您可以从源连接器支持的源获取数据。源连接器是可配置的配置允许您将数据从 Adobe、第一方和第三方应用程序摄取到 Adobe Experience Platform 中。有关可用源连接器的概述请参见[源连接器概述](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-hans)。使用源连接器您可以轻松地将数据从源导入 Adobe Experience Platform，然后在 Customer Journey Analytics 中使用、组合和分析来自其他渠道和数据源的数据。
 
 有关详细信息请参阅[摄取并使用源连接器使用数据](./sources.md)。
 
 ## 摄取和使用临时数据
 
-您有可用的临时数据，在Experience Platform中只需要单个数据集，并且不需要配置Experience Data Model (XDM)架构。 此方案称为临时架构。 临时架构用于Experience Platform的各种数据摄取工作流，包括摄取CSV文件和创建特定类型的源连接。
+您可以使用临时数据，这类数据只需在 Experience Platform 中建立单一数据集，无需配置体验数据模型 (XDM) 架构。这种情况被称为临时架构。临时架构广泛应用于 Experience Platform 的多种数据摄入流程中，包括导入 CSV 文件以及创建特定类型的源连接。
 
-查看[摄取和使用临时数据](./adhoc.md)
+请参阅[引入并使用临时数据](./adhoc.md)
 
 >[!MORELIKETHIS]
 >

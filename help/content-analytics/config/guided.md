@@ -8,7 +8,7 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
 workflow-type: tm+mt
 source-wordcount: '2694'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -82,21 +82,21 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataview_button"
 >title="数据视图"
->abstract="要配置 Content Analytics，您需要选择一个现有的数据视图。因此，您可以将Content Analytics数据与其他数据合并。"
+>abstract="要配置 Content Analytics，您需要选择一个现有的数据视图。然后，您可以将 Content Analytics 数据与其他数据合并。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="数据视图"
->abstract="从Customer Journey Analytics中选择一个要与Content Analytics数据合并的现有数据视图。"
+>abstract="从 Customer Journey Analytics 中选择一个您希望将 Content Analytics 数据与之合并的现有数据视图。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
 >title="数据视图"
->abstract="从Customer Journey Analytics中选择要与Content Analytics数据合并的现有数据视图。<br/>"
+>abstract="从 Customer Journey Analytics 中选择一个您希望将 Content Analytics 数据与之合并的现有数据视图<br/>"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
->title="新建数据视图"
+>title="新数据视图"
 >abstract="您已为此配置选择了新的数据视图。新的数据视图将进行更新，以包含 Content Analytics 量度和维度。这些量度和维度将会从原先选择的数据视图中移除。<br/><br/>如果不同的连接与新的数据视图相关联，则该连接将会更新，以包含 Content Analytics 数据集。Content Analytics 数据集不会从原先选择的连接中删除。"
 
 >[!CONTEXTUALHELP]
@@ -111,7 +111,7 @@ ht-degree: 95%
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_new_dialog"
->title="新建数据视图"
+>title="新数据视图"
 >abstract="您已为此配置选择了新的数据视图。新的数据视图将进行更新，以包含 Content Analytics 量度和维度。类似的量度和维度将会从现有的数据视图中移除。<br/>如果不同的连接与新的数据视图相关联，则该连接将会更新，以包含 Content Analytics 数据集。请注意，Content Analytics 数据集不会从现有配置中移除。"
 
 <!-- markdownlint-enable MD034 -->
@@ -141,7 +141,7 @@ ht-degree: 95%
    您可以执行以下操作：
 
    * 要搜索特定的数据视图，请使用![搜索](/help/assets/icons/Search.svg)字段。
-   * 要筛选可用数据视图的列表，请选择![显示筛选器](/help/assets/icons/Filter.svg)。 您可以在[!UICONTROL 连接]、[!UICONTROL 所有者]和[!UICONTROL 沙盒]上筛选列表。<br/>使用![隐藏](/help/assets/icons/Filter.svg) **[!UICONTROL 隐藏区段]**&#x200B;来隐藏区段窗格。
+   * 要筛选可用数据视图的列表，请选择![显示筛选条件](/help/assets/icons/Filter.svg)。您可以根据[!UICONTROL 连接]、[!UICONTROL 所有者]和[!UICONTROL 沙盒]筛选列表。<br/>使用![隐藏](/help/assets/icons/Filter.svg) **[!UICONTROL 隐藏区段]**&#x200B;来隐藏区段窗格。
    * 要定义在表格中显示哪些列，请选择![列设置](/help/assets/icons/ColumnSetting.svg)。选择要在&#x200B;**[!UICONTROL 自定义表格]**&#x200B;对话框中显示哪些列，然后选择&#x200B;**[!UICONTROL 应用]**，以应用更改。
 
 1. 选择 ![SelectBox](/help/assets/icons/SelectBox.svg) 您想要使用的数据视图。
@@ -237,7 +237,7 @@ ht-degree: 95%
 
 ### 数据收集 {#onboarding-data-collection}
 
-在此部分中，您可以配置如何收集Content Analytics数据。
+在此部分，您可配置如何收集 Content Analytics 数据。
 
 <!-- markdownlint-disable MD034 -->
 
@@ -297,7 +297,7 @@ ht-degree: 95%
   ![Content Analytics 数据收集现有标记](../assets/aca-configuration-datacollection-existingtag.png)
 
    1. 选择&#x200B;**[!UICONTROL 选择现有的]**。
-   2. 从&#x200B;**[!UICONTROL 标记属性]**&#x200B;下拉菜单中选择现有属性。 您可以开始输入进行搜索，并限制可用的选项。您不能选择正在被另一个已实施的 Content Analytics 配置使用的标记属性。
+   2. 从&#x200B;**[!UICONTROL 标记属性]**&#x200B;下拉菜单中选择一个现有的属性。您可以开始输入进行搜索，并限制可用的选项。您不能选择正在被另一个已实施的 Content Analytics 配置使用的标记属性。
 
 
 * 要创建一个新的“标记”属性：
@@ -314,7 +314,7 @@ ht-degree: 95%
 
 * 指明在为 Content Analytics 收集数据时应包括或排除哪些资产。
 
-  为&#x200B;**[!UICONTROL 要包含/排除的资产]**&#x200B;指定一个正则表达式字符串。<br/>例如： `^(?!.*(logo\.jpg)).*$`从Content Analytics中排除所有徽标JPEG图像。
+  为&#x200B;**[!UICONTROL 要包含/排除的资产]**&#x200B;指定一个正则表达式字符串。<br/>例如：`^(?!.*(logo\.jpg)).*$` 可将所有徽标 JPEG 图像排除在 Content Analytics 之外。
 
 >[!IMPORTANT]
 >
@@ -325,7 +325,7 @@ ht-degree: 95%
 
 #### 现有的配置 {#existing-configuration}
 
-对于现有配置，您无法编辑“标记”属性。要更新与现有配置关联的标记属性，请使用[Content Analytics标记扩展配置](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview)。
+对于现有配置，您无法编辑“标记”属性。要更新与现有配置关联的标记属性，请使用 [Content Analytics 标记扩展配置](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview)。
 
 但是，您可以编辑要包含或排除的页面和资产。
 

@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: FAQ
 role: User
 source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2580'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Adobe Customer Journey Analytics 是下一代分析产品。本文提供有关 Customer Journey Analytics 的常见问题解答。有关更多信息，请查阅 [Customer Journey Analytics 功能支持](/help/getting-started/aa-vs-cja/cja-aa.md)。
 
-## 1. 先决条件 {#prerequisites}
+## &#x200B;1. 先决条件 {#prerequisites}
 
 +++**[!UICONTROL Customer Journey Analytics] 是否需要 [!UICONTROL 专用设备图形] 或 [!UICONTROL 设备协作]？**
 
@@ -39,7 +39,7 @@ Customer Journey Analytics 包括[数据准备](https://experienceleague.adobe.c
 +++
 
 
-## 2. 拼合数据 {#stitching}
+## &#x200B;2. 拼合数据 {#stitching}
 
 +++**[!UICONTROL Customer Journey Analytics] 是否可以跨设备或跨数据集进行“拼合”？**
 
@@ -75,7 +75,7 @@ Customer Journey Analytics 包括[数据准备](https://experienceleague.adobe.c
 
 +++
 
-## 3. 将数据载入到 [!UICONTROL Customer Journey Analytics] {#ingest}
+## &#x200B;3. 将数据载入到 [!UICONTROL Customer Journey Analytics] {#ingest}
 
 +++**是否可以将来自不同 [!UICONTROL Adobe Experience Platform] 沙盒的数据合并到一个 [!UICONTROL Customer Journey Analytics] 连接中？**
 
@@ -127,7 +127,7 @@ Customer Journey Analytics 包括[数据准备](https://experienceleague.adobe.c
 +++
 
 
-## 4. 延迟注意事项 {#latency}
+## &#x200B;4. 延迟注意事项 {#latency}
 
 >[!NOTE]
 >
@@ -142,13 +142,13 @@ Adobe 最近改变了在 Customer Journey Analytics 中处理数据的方式：
 * “当前”天的事件数据以实时数据的形式流入。任何事件时间早于前一天晚上 11:59:59 点（23:59:59）的数据都将被视为回填。
 * 将时间戳为大于 24 小时前的任何事件数据（即使它与更新的数据属于同一批次）视为回填，并以更低的优先级摄取这些数据。
 
-## 5. 设置[!UICONTROL 连接]数据保留的滚动时段 {#data-retention}
+## &#x200B;5. 设置[!UICONTROL 连接]数据保留的滚动时段 {#data-retention}
 
-通过[**[!UICONTROL 启用滚动数据时段&#x200B;]**设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans#create-connection)，可将 Customer Journey Analytics 数据保留定义为按月（三个月、六个月等）计的滚动时段。在[!UICONTROL 连接]级别而非[!UICONTROL 数据集]级别设置它。数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此轮廓或查找数据集没有数据保留设置。
+通过[**[!UICONTROL 启用滚动数据时段&#x200B;]**设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection)，可将 Customer Journey Analytics 数据保留定义为按月（三个月、六个月等）计的滚动时段。在[!UICONTROL 连接]级别而非[!UICONTROL 数据集]级别设置它。数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此轮廓或查找数据集没有数据保留设置。
 
 主要好处是，您只需存储或报告适用且有用的数据，并且可删除不再有用的旧数据。它可以帮助您保持在合同限制范围内，并减少超出预期成本的风险。
 
-## 6. 删除数据组件的后果 {#deletion}
+## &#x200B;6. 删除数据组件的后果 {#deletion}
 
 对于数据删除，您应关注六类组件：沙盒、架构、数据集、连接、数据视图和 Workspace 项目。下面是关于删除其中任何一个组件的一些可能情景：
 
@@ -163,9 +163,9 @@ Adobe 最近改变了在 Customer Journey Analytics 中处理数据的方式：
 | 删除 [!UICONTROL Customer Journey Analytics] 中的连接 | 出现错误消息，其中指示：<ul><li>任何为已删除的连接创建的数据视图都将不再起作用。</li><li> 同样地，任何依赖于已删除的连接中的数据视图的 Workspace 项目都停止运行。</li></ul> |
 | 删除 [!UICONTROL Customer Journey Analytics] 中的数据视图 | 一条错误消息指示任何依赖于这个已删除的数据视图的 Workspace 项目都将停止运行。 |
 
-## 7. 在 Customer Journey Analytics 中合并报告包时的注意事项 {#merge-reportsuite}
+## &#x200B;7. 在 Customer Journey Analytics 中合并报告包时的注意事项 {#merge-reportsuite}
 
-如果打算通过 [Adobe Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans)摄取 Adobe Analytics 数据，请在合并两个或更多 Adobe Analytics 报告包时考虑以下这些后果。
+如果打算通过 [Adobe Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)摄取 Adobe Analytics 数据，请在合并两个或更多 Adobe Analytics 报告包时考虑以下这些后果。
 
 | 问题 | 注意事项 |
 | --- | --- |
@@ -176,7 +176,7 @@ Adobe 最近改变了在 Customer Journey Analytics 中处理数据的方式：
 | [!UICONTROL 持久性] | [持久性](../data-views/component-settings/persistence.md)作用于各个报告包，这会影响[!UICONTROL 区段]、[!UICONTROL 归因]等。数值可能无法正确地累加。 |
 | [!UICONTROL 分类] | 在合并报告包时，不会自动为[!UICONTROL 分类]去重。将多个分类文件合并为一个[!UICONTROL 查找]数据集时，可能会遇到问题。 |
 
-## 8. [!UICONTROL Adobe Analytics] 组件
+## &#x200B;8. [!UICONTROL Adobe Analytics] 组件
 
 +++**我能否将来自 [!DNL Customer Journey Analytics] 的 [!UICONTROL 受众] 共享/发布到 Experience Platform Real-Time CDP 或其他 Experience Cloud 应用程序？**
 
@@ -214,17 +214,17 @@ Adobe 最近改变了在 Customer Journey Analytics 中处理数据的方式：
 
 +++
 
-## 9. 估计连接大小 {#estimate-size}
+## &#x200B;9. 估计连接大小 {#estimate-size}
 
 请参阅 [连接使用情况](/help/connections/manage-connections.md#usage)。
 
-## 10. 关于使用过量 {#overage}
+## &#x200B;10. 关于使用过量 {#overage}
 
 Adobe 定期监控和执行使用限制。“数据行数”表示可供在 Customer Journey Analytics 中分析的数据的每日平均行数。
 
 例如，您的合同授权您拥有 100 万行数据。假设在使用 Customer Journey Analytics 的第 1 天，您上传了 200 万行数据。在第 2 天，您删除了 100 万行数据，并在许可期限的剩余时间将用量保持在承诺的最大值（即 100 万行数据）。根据您的合同条款，由于您超出了“数据行”许可证授权，因此您在第 1 天仍可能会收取按比例分摊的过度使用费用。
 
-## 11. 诊断数据差异 {#discrepancies}
+## &#x200B;11. 诊断数据差异 {#discrepancies}
 
 您有时可能会注意到您的连接摄取的事件总数与 [!UICONTROL Adobe Experience Platform] 中数据集中的行数不同。在此示例中，“B2B Impression”数据集的行数为 7650，而该数据集在 [!UICONTROL Adobe Experience Platform] 中的行数为 3830。导致差异的原因有多种，可采取以下步骤进行诊断：
 
@@ -237,11 +237,11 @@ Adobe 定期监控和执行使用限制。“数据行数”表示可供在 Cust
 有关更多信息，请参阅在 [!UICONTROL Customer Journey Analytics] 和 [!UICONTROL Adobe Experience Platform] 中[删除数据集和连接的后果。](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-hans#implications-of-deleting-data-components)
 
 
-## 12. 地区数据收集
+## &#x200B;12. 地区数据收集
 
 Adobe Experience Cloud 使用地区数据收集 (RDC)，以使您的访客与 Adobe 和非 Adobe 解决方案之间发生的交互尽可能接近您的访客。在数据收集中心（DCC，也称为边缘站点，它是 Platform 边缘网络的一部分）区域性地收集数据后，将根据您的数据流和/或事件转发的配置通过一个安全的连接将这些数据转发到相关的解决方案。
 
-![使用边缘网络的数据流](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png?lang=zh-Hans)
+![使用边缘网络的数据流](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png)
 
 区域数据收集过程使用以下步骤：
 
@@ -271,4 +271,4 @@ RDC 目前包括以下位置（可能发生变化）：
 Customer Journey Analytics 需要来自 Adobe Experience Platform 的数据集，因此，您的数据流/事件转发配置需要 Adobe Experience Platform 服务将数据从区域数据中心路由到 Adobe Experience Platform 实例所在的数据中心。Customer Journey Analytics 及其支持服务和基础设施部署在同一个 Adobe Experience Platform 实例中。
 
 
-有关在 Adobe Experience Platform Edge Network 及其区域数据中心之外收集数据的过程，请参阅[数据收集概述](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=zh-Hans)。
+有关在 Adobe Experience Platform Edge Network 及其区域数据中心之外收集数据的过程，请参阅[数据收集概述](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html)。

@@ -110,7 +110,7 @@ ht-degree: 77%
 
    ![将电子邮件指定为身份标识](./assets/specify-email-loyalty-id.png)
 
-   您将电子邮件地址指定为 Adobe Experience Platform Identity 服务可用于组合（拼接）轮廓行为的标识。
+   您将电子邮件地址指定为 Adobe Experience Platform 身份标识服务可用于组合（拼接）轮廓行为的标识。
 
    选择&#x200B;**[!UICONTROL 应用]**。您会看到电子邮件属性中显示指纹图标。
 
@@ -118,7 +118,7 @@ ht-degree: 77%
 
    系统会提示您启用轮廓的架构。一旦启用，当数据被引入基于此架构的数据集中时，该数据将合并到实时客户轮廓。
 
-   有关详细信息，请参阅[启用架构以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans#profile)。
+   有关详细信息，请参阅[启用架构以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile)。
 
    >[!IMPORTANT]
    >
@@ -130,7 +130,7 @@ ht-degree: 77%
 
 您已经创建了一个最小的架构，它可以对可以引入 Adobe Experience Platform 的忠诚度数据进行建模。该架构允许使用电子邮件地址标识轮廓。通过为概要文件启用架构，可以确保流媒体源添加到实时客户轮廓中。
 
-请参阅[在 UI 中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=zh-Hans)，了解有关向架构添加和删除字段组和单个字段的更多信息。
+请参阅[在 UI 中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html)，了解有关向架构添加和删除字段组和单个字段的更多信息。
 
 ### 设置数据集
 
@@ -175,15 +175,15 @@ ht-degree: 77%
 
 您可以从各种来源摄取数据。 以下只是众多可用源中的几个：
 
-- Adobe应用程序(源连接器包括[Adobe Analytics](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics)、[Adobe Audience Manager](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/audience-manager)等)
+- Adobe应用程序(源连接器包括[Adobe Analytics](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics)、[Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager)等)
 
-- 云存储(源连接器包括[Amazon S3](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/cloud-storage/s3)、[Azure Blob](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/cloud-storage/blob)等)
+- 云存储(源连接器包括[Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3)、[Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob)等)
 
-- 数据库(源连接器包括[Snowflake](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/snowflake)、[Microsoft SQL Server](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/sql-server)等)
+- 数据库(源连接器包括[Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)、[Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server)等)
 
 要设置源连接器：
 
-1. 在Adobe Experience Platform中，从左边栏中的[!UICONTROL CONNECTIONS]中选择&#x200B;**[!UICONTROL 源]**。
+1. 在Adobe Experience Platform中，从左边栏中的&#x200B;**[!UICONTROL CONNECTIONS]**&#x200B;中选择[!UICONTROL 源]。
 
 1. 从可用源连接器列表中选择源连接器。
 
@@ -213,7 +213,7 @@ ht-degree: 77%
 
 有关如何使用HTTP API源连接器的信息，请参阅[摄取和使用流数据](./streaming.md)。
 
-请参阅[源连接器概述](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hans#terms-and-conditions)了解源连接器的概述，包括指向每个连接器更多信息的链接。
+请参阅[源连接器概述](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions)了解源连接器的概述，包括指向每个连接器更多信息的链接。
 
 
 ## 设置连接

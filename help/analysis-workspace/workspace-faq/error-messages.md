@@ -5,7 +5,7 @@ feature: Workspace Basics
 exl-id: 792c3b2e-bd24-4e98-b9ea-983c1189d52e
 role: User
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '580'
 ht-degree: 100%
 
@@ -36,4 +36,4 @@ ht-degree: 100%
 | 问题 | 如何排除故障 |
 |---|---|
 | 当我拖动一个量度时，它会显示&#x200B;*无效数据*。 | 无效数据意味着 Adobe 无法通过报告中使用的维度和量度组合返回数据。例如，两个彼此堆叠的量度不能作为数据返回，因为无法以这种堆叠方式显示这两个量度。相反，应将两个量度并排放置。 |
-| 当我将量度拖动到上面时，看不到任何实际数据 - 只有零。 | 如果您成功创建了 Workspace 报告，但报告中没有数据，则可以检查以下几项内容：<ul><li>如果在报告中应用了区段，区段标准可能与所有数据不匹配。请尝试移除区段或调整区段定义。</li><li>检查右上角的日期范围，并确保它已设置为预期的值。</li><li>导航到您的网站，然后使用 [Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=zh-Hans) 验证正在收集的数据。</li></ul> |
+| 当我将量度拖动到上面时，看不到任何实际数据 - 只有零。 | 如果您成功创建了 Workspace 报告，但报告中没有数据，则可以检查以下几项内容：<ul><li>如果在报告中应用了区段，区段标准可能与所有数据不匹配。请尝试移除区段或调整区段定义。</li><li>检查右上角的日期范围，并确保它已设置为预期的值。</li><li>导航到您的网站，然后使用 [Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html) 验证正在收集的数据。</li></ul> |

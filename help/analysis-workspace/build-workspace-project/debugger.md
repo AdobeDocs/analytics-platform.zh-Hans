@@ -4,7 +4,8 @@ keywords: Analysis Workspace
 feature: Workspace Basics
 title: 项目调试器
 role: User
-source-git-commit: ae8c1fb127accae53ab9363a8cceedd5221a245b
+exl-id: 1335ec1f-5597-4e23-8228-3d477534de43
+source-git-commit: 695d5f686d10fc39b1b3d717a19fd6e874d81b33
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 3%
@@ -17,7 +18,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->若要使用调试器，您必须拥有对项目&#x200B;**的**&#x200B;编辑&#x200B;**或**&#x200B;复制[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-25744)访问权限。
+>若要使用调试器，您必须拥有对项目&#x200B;**的**&#x200B;编辑&#x200B;**或**&#x200B;复制[ ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25744)访问权限。
 >
 
 
@@ -96,6 +97,3 @@ ht-degree: 3%
 1. 从Analysis Workspace项目菜单中选择&#x200B;**[!UICONTROL 帮助]** > **[!UICONTROL 禁用调试器]**。
 1. 在&#x200B;**[!UICONTROL 禁用调试器]**&#x200B;对话框中选择&#x200B;**[!UICONTROL 确定]**。
 1. 在浏览器提示您重新加载页面或站点时确认。
-
-
-

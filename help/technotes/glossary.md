@@ -27,4 +27,4 @@ ht-degree: 96%
 
 ## Adobe Experience Platform 术语表
 
-Adobe Experience Platform 实现了整个企业内的数据和内容的标准化，从而为实时使用者用户轮廓提供强大动力，支持数据科学，加速内容处理速度以推动客户历程中的体验个性化。有关更多信息，请参阅 [Adobe Experience Platform 术语表](https://experienceleague.adobe.com/docs/experience-platform/landing/glossary.html?lang=zh-Hans)。
+Adobe Experience Platform 实现了整个企业内的数据和内容的标准化，从而为实时使用者用户轮廓提供强大动力，支持数据科学，加速内容处理速度以推动客户历程中的体验个性化。有关更多信息，请参阅 [Adobe Experience Platform 术语表](https://experienceleague.adobe.com/docs/experience-platform/landing/glossary.html)。

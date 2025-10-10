@@ -17,8 +17,8 @@ ht-degree: 89%
 
 配置数据收集涉及以下步骤：
 
-1. 实施[Adobe Experience Platform 的标签](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)。请参阅[快速入门指南](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=zh-Hans)以启动和运行基本实施。
-1. 安装 [Google 数据层扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-data-layer/overview.html?lang=zh-Hans)。此扩展作为安装 Web SDK 扩展的替代方案，专门针对 Google 数据层。
-1. 在 Adobe Experience Platform 数据收集中[创建数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=zh-Hans)。配置数据流以将数据发送到 Adobe Experience Platform。您当前必须在此处将每个 Google 数据层对象映射到适用的 XDM 字段。Adobe 计划在未来简化此映射工作流。
+1. 实施[Adobe Experience Platform 的标签](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)。请参阅[快速入门指南](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)以启动和运行基本实施。
+1. 安装 [Google 数据层扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-data-layer/overview.html)。此扩展作为安装 Web SDK 扩展的替代方案，专门针对 Google 数据层。
+1. 在 Adobe Experience Platform 数据收集中[创建数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html)。配置数据流以将数据发送到 Adobe Experience Platform。您当前必须在此处将每个 Google 数据层对象映射到适用的 XDM 字段。Adobe 计划在未来简化此映射工作流。
 
 在您的网站上实施并发布所需的标记后，您可以继续[创建连接](/help/connections/create-connection.md)，然后[创建数据视图](/help/data-views/create-dataview.md)。

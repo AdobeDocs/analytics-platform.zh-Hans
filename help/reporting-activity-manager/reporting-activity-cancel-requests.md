@@ -6,7 +6,7 @@ feature: Basics
 exl-id: 87da2447-f114-432a-9f63-e660c2541d0f
 role: Admin
 source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1497'
 ht-degree: 100%
 
@@ -158,7 +158,7 @@ ht-degree: 100%
 应用程序包括：
 
 * Analysis Workspace UI
-* 工作区计划项目
+* Workspace 计划项目
 * Report Builder
 * 生成器 UI：区段、计算量度、注释、受众等。
 * 来自 2.0 API 的 API 调用

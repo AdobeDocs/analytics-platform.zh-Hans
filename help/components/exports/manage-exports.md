@@ -8,13 +8,13 @@ role: User
 source-git-commit: 6f8a43acfba23d6faeff078873742315f1506699
 workflow-type: tm+mt
 source-wordcount: '1029'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
 # 管理导出
 
-在按[将Customer Journey Analytics报告导出到云](/help/analysis-workspace/export/export-cloud.md)中所述导出完整表后，可在[!UICONTROL 导出]页的[!UICONTROL 导出]选项卡上导出该表。
+在按[将Customer Journey Analytics报表导出到云](/help/analysis-workspace/export/export-cloud.md)中所述导出整个表后，可在[!UICONTROL 导出]页的[!UICONTROL 导出]选项卡上找到这些导出。
 
 您只能看到您创建的导出。
 
@@ -36,7 +36,7 @@ ht-degree: 4%
 
    | 过滤器 | 描述 |
    |---------|----------|
-   | [!UICONTROL **帐户类型**] | 与导出关联的帐户类型。 可以使用以下帐户类型： <ul><li>[!UICONTROL **AEP数据登陆区**]</li><li>[!UICONTROL **Amazon S3角色ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google云平台**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
+   | [!UICONTROL **帐户类型**] | 与导出关联的帐户类型。 可以使用以下帐户类型： <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
    | [!UICONTROL **状态**] | 导出的状态。 可以使用以下状态： <ul><li>[!UICONTROL **活动**]：表示计划的导出尚未过期，或一次性导出尚未完成。 </li><li>[!UICONTROL **已完成**]：表示导出已成功导出。 对于计划的导出，这表示计划已过期。</li><li>[!UICONTROL **失败**]<p>以下情况可能会导致导出失败。 将鼠标悬停在&#x200B;[!UICONTROL **失败**]&#x200B;状态上可查看有关失败的详细信息。 <ul><li>计划的导出过期</li><li>已达到计划导出的行限制 </li></ul> </p></li></ul> |
    | [!UICONTROL **频率**] | 导出的频率。 可以使用以下频率： <ul><li>[!UICONTROL **一次**]</li><li>[!UICONTROL **每天**]</li><li>[!UICONTROL **每周**]</li><li>[!UICONTROL **每月**]</li><li>[!UICONTROL **每年**]</li></ul> |
 
@@ -64,7 +64,7 @@ ht-degree: 4%
 
    此时将显示&#x200B;[!UICONTROL **导出完整表**]&#x200B;对话框。
 
-1. 更新任何可用选项。 有关每个选项的信息，请参阅[将Customer Journey Analytics报表导出到云](/help/analysis-workspace/export/export-cloud.md)中的[从Analysis Workspace导出完整表](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)。
+1. 更新任何可用选项。 有关每个选项的信息，请参阅[将Analysis Workspace报表导出到云](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)中的[从Customer Journey Analytics导出完整表](/help/analysis-workspace/export/export-cloud.md)。
 
 ## 复制导出
 
@@ -128,7 +128,7 @@ ht-degree: 4%
 
 1. 在Customer Journey Analytics中，选择&#x200B;[!UICONTROL **组件**] > [!UICONTROL **导出**]。
 
-1. 在&#x200B;[!UICONTROL **导出**]&#x200B;选项卡上，选择[!UICONTROL 导出]页面右上角的&#x200B;**自定义表**&#x200B;图标![自定义表](assets/customize-table-icon.png)。
+1. 在&#x200B;[!UICONTROL **导出**]&#x200B;选项卡上，选择&#x200B;**导出**&#x200B;页面右上角的![自定义表](assets/customize-table-icon.png)图标[!UICONTROL 自定义表]。
 
    以下列可供使用：
 
@@ -148,7 +148,7 @@ ht-degree: 4%
    | 发送时间 | 发送导出的时间。 |
    | 上次发送 | 上次发送导出的时间。 |
    | 最近修改 | 上次修改导出的时间。 默认情况下，“导出”页面上的项目将按此列排序。 |
-   | 帐户类型 | 从中导出数据的云帐户的类型。 可用的帐户类型包括[!UICONTROL Amazon S3SnowflakeARN]、[!UICONTROL Google云平台]、[!UICONTROL Azure SAS]、[!UICONTROL Azure RBAC]、[!UICONTROL 角色]和[!UICONTROL Adobe Experience Platform]。 |
+   | 帐户类型 | 从中导出数据的云帐户的类型。 可用的帐户类型包括[!UICONTROL Amazon S3 Role ARN]、[!UICONTROL Google Cloud Platform]、[!UICONTROL Azure SAS]、[!UICONTROL Azure RBAC]、[!UICONTROL Snowflake]和[!UICONTROL Adobe Experience Platform]。 |
 
    {style="table-layout:auto"}
 

@@ -6,7 +6,7 @@ feature: Guided Analysis
 keywords: 产品分析
 role: User
 source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 +++**我的组织是否可以访问引导式分析？**
 
-所有 Customer Journey Analytics 包均包含引导分析视图。请参阅概览页面上的 [配置](overview.md#provisioning) 部分，了解有关 CJA 包解锁的视图的更多信息。
+所有 Customer Journey Analytics 包均包含引导分析视图。请参阅概述页面上的 [配置](overview.md#provisioning) 部分，了解有关 CJA 包解锁的视图的更多信息。
 
 +++
 

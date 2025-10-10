@@ -55,5 +55,5 @@ ht-degree: 6%
 ## 引用
 
 1. Taylor、Sean J.和Benjamin Letham： *大规模预测。*&#x200B;美国统计师72.1 (2018)： 37-45。
-1. 特里贝、奥斯卡等： *Neuralprophet：可大规模解释的预测。* arXiv预印arXiv：2111.15397(2021)。
+1. 特里贝、奥斯卡等： *Neuralprophet：可大规模解释的预测。* arXiv预打印arXiv:2111.15397(2021)。
 1. Zhang和Arbor： *时间序列异常检测。*&#x200B;美国专利申请#18/057883。

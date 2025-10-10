@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: c5ed81ea-1d55-4193-9bb1-a2a93ebde91f
 source-git-commit: 3e521cb4ef532d57b9f408fc12dcf138f130f059
-workflow-type: ht
-source-wordcount: '831'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '830'
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
    >[!IMPORTANT]
    >
-   >您只能进行从一个用户到另一个用户的 1:1 转移。不支持一到多或多到一的转移。
+   >您只能从一个用户向另一个用户进行1:1转移。 不支持一到多或多到一的转移。
 
 
 1. 选择用户后，屏幕底部就会出现转移资产选项。

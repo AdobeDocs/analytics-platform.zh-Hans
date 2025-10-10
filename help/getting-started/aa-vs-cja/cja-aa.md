@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 7f44c7497a48e8377ca26cb194f828c3c8836f98
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 100%
 
