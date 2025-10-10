@@ -4,11 +4,9 @@ description: 了解如何使用派生字段作为在Workspace中报告LLM和AI�
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-hide: true
-hidefromtoc: true
-source-git-commit: 38be574621e4fc384f9fdeac94fc071f0cdd132b
+source-git-commit: 8862bfdf873c4c3c5e795f3b299040b3dc253647
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1275'
 ht-degree: 1%
 
 ---
@@ -17,6 +15,11 @@ ht-degree: 1%
 # 关于LLM和AI生成的流量的报告
 
 本用例文章探讨了如何使用Customer Journey Analytics派生字段功能作为报告LLM（大语言模型）和AI生成的流量的基础。
+
+>[!NOTE]
+>
+>[检测方法](#detection-methods)、[检测签名](#detection-signatures)和[实施策略](#implementation)的有效性取决于您的特定数据收集方法、Experience Platform数据集覆盖率和Customer Journey Analytics实施。 结果可能会因您的技术环境、数据治理策略和实施方法而异。 使用Experience Edge时，您需要选择记录原始用户代理字符串还是收集设备信息。
+>
 
 ## 检测方法
 
@@ -30,6 +33,7 @@ ht-degree: 1%
 * **用户代理标识**：向服务器发出请求时，将提取HTTP User-Agent标头并根据已知的AI爬网程序和代理模式进行分析。 此服务器端方法需要访问HTTP标头，并且在数据收集层实施时最有效。
 * **反向链接分类**： HTTP反向链接标头包含链接到当前请求的上一个网页的URL。 当用户从ChatGPT或Perplexity等Web界面点击进入您的网站时，此标题会显示。
 * **查询参数检测**： AI服务可以将URL参数（特别是UTM参数）附加到链接。 这些参数会在URL中持续存在，并且可以通过标准分析实施进行检测，这使得这些URL参数即使在客户端跟踪场景中也可以发挥重要作用。
+
 
 下表说明了如何针对不同的LLM和AI交互场景使用这些检测方法。
 
@@ -248,12 +252,12 @@ LLM和AI代理在与数字属性交互时表现出复杂且不断演变的行为
 
 ## 实施
 
-您可以通过[派生字段](#derived-fields)、[区段](#segments)和[工作区项目](#workspace-project)的特定设置和配置，在典型的Customer Journey Analytics设置（连接、数据视图、工作区项目）中报告LLM和AI生成的流量。
+您可以通过[派生字段](/help/connections/overview.md)、[区段](/help/data-views/data-views.md)和[工作区项目](/help/analysis-workspace/home.md)的特定设置和配置，在典型的Customer Journey Analytics设置（[连接](#derived-fields)、[数据视图](#segments)和[工作区项目](#workspace-project)）中报告LLM和AI生成的流量。
 
 
 ### 派生字段
 
-要配置检测方法和检测信号，需以派生字段为基础。 例如，定义用于用户代理识别、查询参数检测和反向链接分类的派生字段。
+要配置检测方法和检测信号，需以派生字段为基础。 例如，为[用户代理标识](#user-agent-identification)、[查询参数检测](#query-parameter-detection)和[反向链接分类](#referrer-classification)定义派生字段。
 
 #### LLM/AI用户代理识别
 
@@ -264,16 +268,412 @@ LLM和AI代理在与数字属性交互时表现出复杂且不断演变的行为
 
 #### LLM/AI查询参数检测
 
-使用[URL Parse](/help/data-views/derived-fields/derived-fields.md#url-parse)和[Classify](/help/data-views/derived-fields/derived-fields.md#classify)派生字段函数定义可检测UTM参数检测的派生字段。
+使用[URL分析](/help/data-views/derived-fields/derived-fields.md#url-parse)和[分类](/help/data-views/derived-fields/derived-fields.md#classify)派生字段函数定义检测查询参数的派生字段。
 
 ![LLM/AI UTM参数检测](assets/aitraffic-utmparams.png){zoomable="yes"}
 
 
 #### LLM/AI反向链接分类
 
-使用“URL解析”和“对派生字段进行分类”函数可定义用于对反向链接进行分类的派生字段。
+使用[URL Parse](/help/data-views/derived-fields/derived-fields.md#url-parse)和[Classify](/help/data-views/derived-fields/derived-fields.md#classify)派生字段函数定义用于对反向链接进行分类的派生字段。
 
-![LLM/AI反向链接分类](assets/aitraffic-utmparams.png){zoomable="yes"}
+(assets/aitraffic-referrers.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+）{zoomable="yes"}
 
 
 ### 区段
