@@ -21,7 +21,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [摘要数字和摘要变化可视化图表](https://video.tv.adobe.com/v/335564/?quality=12&learn=on){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [摘要数字和摘要变化可视化图表](https://video.tv.adobe.com/v/3416886/?quality=12&learn=on&captions=chi_hans){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 

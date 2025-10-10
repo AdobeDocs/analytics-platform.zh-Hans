@@ -31,7 +31,7 @@ ht-degree: 92%
 所有活跃用户（新用户 + 重复用户 + 返回用户）在横轴上方显示为青色，而所有休眠用户在横轴下方显示为橙色。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3421667/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423391/?quality=12&learn=on&captions=chi_hans)
 
 ## 用例
 
