@@ -15,4 +15,4 @@ ht-degree: 0%
 
 Adobe Advertising与Adobe Customer Journey Analytics集成，可实现双向数据共享和报告。
 
-有关详细信息，请参阅[Adobe Advertising与Customer Journey Analytics之间集成的概述](https://experienceleague.adobe.com/en/docs/advertising/integrations/customer-journey-analytics/overview)。
+有关详细信息，请参阅[Adobe Advertising与Customer Journey Analytics之间集成的概述](https://experienceleague.adobe.com/zh-hans/docs/advertising/integrations/customer-journey-analytics/overview)。
