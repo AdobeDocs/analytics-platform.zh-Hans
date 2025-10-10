@@ -3,9 +3,9 @@ description: 了解使用THEN运算符定义区段条件序列的顺序区段。
 title: 顺序区段
 feature: Filters, Segments
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: 8e10818efa7da54b0802c56e5388e6c7ef7fd8b6
+source-git-commit: c745e37203ac829fa0fb7d8532e6499351cb94ba
 workflow-type: tm+mt
-source-wordcount: '2459'
+source-wordcount: '2460'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [顺序分段](https://video.tv.adobe.com/v/37426/?quality=12&learn=on&captions=chi_hans){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [顺序分段](https://video.tv.adobe.com/v/25405/?quality=12&learn=on){target="_blank"}。
 
 {{videoaa}}
 
@@ -91,7 +91,7 @@ ht-degree: 4%
 1. 选择![时钟](/help/assets/icons/Clock.svg)。
 1. 从上下文菜单中选择&#x200B;**[!UICONTROL Within]**&#x200B;或&#x200B;**[!UICONTROL After]**。
 1. 指定一个时间段（**[!UICONTROL 分钟]**，**[!UICONTROL 小时]**，最多&#x200B;**[!UICONTROL 年]**）。
-1. 选择![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**&#x200B;以打开一个弹出窗口，允许您使用&#x200B;**[!UICONTROL -]**&#x200B;或&#x200B;**[!UICONTROL +]**&#x200B;键入或指定数字。
+1. 选择![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**以打开一个弹出窗口，允许您使用**[!UICONTROL -]**或**[!UICONTROL +]**键入或指定数字。
 
 若要移除时间限制，请使用![CrossSize75](/help/assets/icons/CrossSize75.svg)。
 
@@ -114,7 +114,7 @@ ht-degree: 4%
 
 ![序列在](assets/sequence-after.png)之后
 
-如果主页的页面查看发生在2024年6月1日00:01，则页面查看针对页面女性 | 只要该页面查看发生在2024年6月15日00:01之后，鞋就会匹配。
+如果主页的页面查看发生在2024年6月1日00:01，则页面查看针对页面女性 | 只要2024年6月15日00:01之后出现该页面查看，鞋就会匹配。
 
 ##### [!UICONTROL Within]运算符
 
@@ -130,7 +130,7 @@ ht-degree: 4%
 
 ![序列晚于](assets/sequence-afterbutwithin.png)但在此范围内
 
-2024年6月1日点击主页并返回妇女之家的任何人 | 2019年6月15日00:01之后但2019年7月1日之前的“鞋子”页面符合该区段的条件。
+2024年6月1日点击主页并返回妇女之家的任何人 | 2019年6月15日之后00:01但2019年7月1日之前的“鞋子”页面符合该区段的条件。
 
 
 ### [!UICONTROL 事件]、[!UICONTROL 会话]和[!UICONTROL Dimension]约束
