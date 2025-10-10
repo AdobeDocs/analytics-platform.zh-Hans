@@ -43,7 +43,7 @@ Universal Analytics 属性将每条记录作为用户会话而不是单个事件
 
 >[!BEGINSHADEBOX]
 
-观看从Google Analytics到Customer Journey Analytics的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ - BigQuery](https://video.tv.adobe.com/v/332634?quality=12&learn=on){target="_blank"}演示视频。
+观看从Google Analytics到Customer Journey Analytics的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; - BigQuery](https://video.tv.adobe.com/v/332634?quality=12&learn=on){target="_blank"}演示视频。
 
 >[!ENDSHADEBOX]
 
