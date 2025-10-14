@@ -17,7 +17,7 @@ Analysis Workspace 中的自由格式表是进行交互式数据分析的基础�
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/23968)-->
+>[!VIDEO](https://video.tv.adobe.com/v/327345?captions=chi_hans)-->
 
 ## 过滤表格
 
