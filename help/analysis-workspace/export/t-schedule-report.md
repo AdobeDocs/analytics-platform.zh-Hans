@@ -86,7 +86,7 @@ ht-degree: 51%
 
 >[!NOTE]
 >
->只有购买了 [Healthcare Shield](https://business.adobe.com/solutions/industries/healthcare.html) 附加产品的 Customer Journey Analytics 客户，才能使用密码保护计划项目的选项。
+>只有购买了 [Healthcare Shield](https://business.adobe.com/cn/solutions/industries/healthcare.html) 附加产品的 Customer Journey Analytics 客户，才能使用密码保护计划项目的选项。
 
 Adobe 使用密码来加密计划项目，无论它们是以 .pdf 还是 .csv 格式发送均是如此。
 

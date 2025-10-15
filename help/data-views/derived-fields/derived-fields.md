@@ -1580,10 +1580,10 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 | 页面 URL |
 |---|
-| `https://business.adobe.com/products/analytics/adobe-analytics-benefits.html` |
-| `https://business.adobe.com/products/analytics/adobe-analytics.html` |
-| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` |
-| `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` |
+| `https://business.adobe.com/cn/products/analytics/adobe-analytics-benefits.html` |
+| `https://business.adobe.com/cn/products/analytics/adobe-analytics.html` |
+| `https://business.adobe.com/cn/products/experience-platform/customer-journey-analytics.html` |
+| `https://business.adobe.com/cn/products/experience-platform/adobe-experience-platform.html` |
 
 {style="table-layout:auto"}
 
