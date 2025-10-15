@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ![发布](/help/assets/icons/Release.svg) **[!UICONTROL 发布影响]**&#x200B;分析显示了关键量度在特定日期之前和之后的表现的比较。该报告的横轴是时间间隔，而纵轴衡量的是您所期望的关键指标。图表中间的垂直条代表要在其前后进行比较的日期。此日期通常代表您想要衡量的产品的显著变化，例如产品更新或营销活动启动。
 
->[!VIDEO](https://video.tv.adobe.com/v/3421665/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423446/?captions=chi_hans&quality=12&learn=on)
 
 ## 用例
 

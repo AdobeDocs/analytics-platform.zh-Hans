@@ -41,7 +41,7 @@ ht-degree: 93%
 >
 >重复用户并未被纳入此计算中，因为它们并不代表用户的任何增减。
 
->[!VIDEO](https://video.tv.adobe.com/v/3421664/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423458/?captions=chi_hans&quality=12&learn=on)
 
 
 ## 用例

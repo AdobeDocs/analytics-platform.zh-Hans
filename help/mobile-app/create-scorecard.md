@@ -29,7 +29,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Createa 移动记分卡](https://video.tv.adobe.com/v/343458?quality=12&learn=on){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Createa 移动记分卡](https://video.tv.adobe.com/v/3409727?captions=chi_hans&quality=12&learn=on){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -212,7 +212,7 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自定义详细信息视图](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自定义详细信息视图](https://video.tv.adobe.com/v/3413785?captions=chi_hans&quality=12&learn=on){target="_blank"}以观看演示视频。
 
 {{videoaa}}
 
@@ -257,7 +257,7 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [移动记分卡的数据故事项目](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on){target="_blank"}，观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [移动记分卡的数据故事项目](https://video.tv.adobe.com/v/3420558/?captions=chi_hans&quality=12&learn=on){target="_blank"}，观看演示视频。
 
 {{videoaa}}
 

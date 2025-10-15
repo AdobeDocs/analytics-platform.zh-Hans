@@ -60,7 +60,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [媒体播放耗时](https://video.tv.adobe.com/v/338699){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [媒体播放耗时](https://video.tv.adobe.com/v/3446710?captions=chi_hans){target="_blank"}以观看演示视频。
 
 {{videoaa}}
 
