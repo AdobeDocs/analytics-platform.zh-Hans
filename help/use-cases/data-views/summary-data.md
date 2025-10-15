@@ -50,7 +50,7 @@ ht-degree: 15%
 | 17 | 321营销活动 | 20 | 2500 | def321 | facebook | def-adgroup | 2024-07-18T18:20:39.000Z |
 | 18 | 321营销活动 | 15 | 2250 | ghi321 | facebook | ghi-adgroup | 2024-07-18T18:20:39.000Z |
 
-[！[数据下载](/help/assets/icons/DataDownload.svg)](./assets/summary-data.csv)
+[![数据下载](/help/assets/icons/DataDownload.svg)](./assets/summary-data.csv)
 
 +++
 
@@ -249,7 +249,7 @@ ht-degree: 15%
 | 2024-07-18T19:15:39+00:00 | 178 | 确认页面 | person-142def654 |  | 1 | 174.25 |
 | 2024-07-18T19:15:39+00:00 | 179 | 主页 | person-143ghi654 | ghi654 |  |  |
 
-[！[数据下载](/help/assets/icons/DataDownload.svg)](./assets/event-data.csv)
+[![数据下载](/help/assets/icons/DataDownload.svg)](./assets/event-data.csv)
 
 +++
 
@@ -278,7 +278,7 @@ ht-degree: 15%
 | 17 | def321 | def-adgroup | 321营销活动 |
 | 18 | ghi321 | ghi-adgroup | 321营销活动 |
 
-[！[数据下载](/help/assets/icons/DataDownload.svg)](./assets/lookup-data.csv)
+[![数据下载](/help/assets/icons/DataDownload.svg)](./assets/lookup-data.csv)
 +++
 
 >[!INFO]
@@ -369,7 +369,7 @@ ht-degree: 15%
    1. 请确保&#x200B;**[!UICONTROL 数据格式]**&#x200B;和&#x200B;**[!UICONTROL 分隔符]**&#x200B;具有示例数据的正确值。 例如，**[!UICONTROL 已分隔]**&#x200B;作为&#x200B;**[!UICONTROL 数据格式]**，**[!UICONTROL 已分隔]**&#x200B;作为&#x200B;**[!UICONTROL 分隔符]**。
    1. 摘要数据的样本（10条记录）显示在&#x200B;**[!UICONTROL 样本数据]**&#x200B;中。
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
-1. 在&#x200B;**[!UICONTROL 工作流]** > **[!UICONTROL 将CSV映射到XDM架构]**&#x200B;向导的&#x200B;**[!UICONTROL 映射]**步骤中：
+1. 在&#x200B;**[!UICONTROL 工作流]** > **[!UICONTROL 将CSV映射到XDM架构]**&#x200B;向导的&#x200B;**[!UICONTROL 映射]**&#x200B;步骤中：
    ![示例数据集映射](../assets/example-dataset-mapping.png)
    1. 检查&#x200B;**[!UICONTROL Source数据]**&#x200B;的所有数据字段是否正确映射到架构中对应的&#x200B;**[!UICONTROL 目标字段]**。 对于示例数据，不会报告任何错误，因为您明确命名了架构中的字段，类似于示例数据中的字段名称。 否则，您可以使用此屏幕来更正映射。
    1. 您可以选择选择![齿轮](/help/assets/icons/Gear.svg) **[!UICONTROL 验证]**&#x200B;以（再次）验证数据。
@@ -603,4 +603,4 @@ ht-degree: 15%
 >[!MORELIKETHIS]
 >
 >[摘要数据](/help/data-views/summary-data.md)
->>[摘要数据组组件设置](/help/data-views/component-settings/summary-data-group.md)
+>&#x200B;>[摘要数据组组件设置](/help/data-views/component-settings/summary-data-group.md)

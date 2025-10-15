@@ -423,7 +423,7 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
 #### 提供导出参数
 
-接下来，您必须[再使用](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-target-connection)[`POST /targetConection` API创建一个目标连接，用于存储输出数据集的导出参数](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection)。 这些导出参数包括位置、文件格式、压缩等。
+接下来，您必须[再使用](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-target-connection) [`POST /targetConection` API创建一个目标连接，用于存储输出数据集的导出参数](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection)。 这些导出参数包括位置、文件格式、压缩等。
 
 #### 设置数据流
 

@@ -188,7 +188,7 @@ ppales4@nsw.gov.au,365384,82.71,Silver
 
 2. 选择 **[!UICONTROL 将 CSV 映射到 XDM 架构]**。选择&#x200B;**[!UICONTROL 启动]**。
 
-   将 ![ CSV 映射到 XDN](./assets/workflow-mapcsvtoxdm.png)
+   将 ![&#x200B; CSV 映射到 XDN](./assets/workflow-mapcsvtoxdm.png)
 
 3. 在 [!UICONTROL CSV 映射到 XDM 架构]场景，在 [!UICONTROL 数据流详细信息]步骤中：
 

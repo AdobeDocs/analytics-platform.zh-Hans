@@ -206,7 +206,7 @@ Traditional Analytics comes with numerous out-of-the-box templates and calculate
 >[!MORELIKETHIS]
 >
 >[创建区段](seg-create.md)
->>[区段生成器](seg-builder.md)
->>[快速区段](seg-quick.md)
->>[顺序区段](seg-sequential-build.md)
->>[管理区段](seg-manage.md)
+>&#x200B;>[区段生成器](seg-builder.md)
+>&#x200B;>[快速区段](seg-quick.md)
+>&#x200B;>[顺序区段](seg-sequential-build.md)
+>&#x200B;>[管理区段](seg-manage.md)

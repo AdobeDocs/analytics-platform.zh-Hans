@@ -17,7 +17,7 @@ ht-degree: 14%
 
 此表列出了通过频谱图标代码段配置可用的所有频谱图标。 使用名称将该代码片段添加到Markdown中，并显示Spectrum图标。
 
-观看[Wiki页面](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+icons+in+documentation)的任何更新。
+观看[Wiki页面] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+icons+in+documentation)的任何更新。
 
 ![](https://reportbuilder.an.adobe.com/assets/AdobeAnalyticsLogo-80.png)
 
@@ -25,7 +25,7 @@ ht-degree: 14%
 
 | 名称 | 插入的代码片段 | 图像 |
 |---|---|:---:|
-| 123 | `![123](/help/assets/icons/123.svg)` | ![ 123](/help/assets/icons/123.svg) |
+| 123 | `![123](/help/assets/icons/123.svg)` | ![&#x200B; 123](/help/assets/icons/123.svg) |
 | 3D材料 | `![3DMaterial](/help/assets/icons/3DMaterial.svg)` | ![3DMaterial](/help/assets/icons/3DMaterial.svg) |
 | ABC | `![ABC](/help/assets/icons/ABC.svg)` | ![ABC](/help/assets/icons/ABC.svg) |
 | AEMS屏幕 | `![AEMScreen](/help/assets/icons/AEMScreen.svg)` | ![AEMScreen](/help/assets/icons/AEMScreen.svg) |
