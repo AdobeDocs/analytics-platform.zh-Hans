@@ -270,5 +270,5 @@ Customer Journey Analytics本身不会组合名称相似但对象级别不同的
 
 ## 限制
 
-限制确实适用于Customer Journey Analytics使用的数据中的数组，并作为Experience Platform中的架构的一部分进行建模。 查看[实时客户个人资料数据和分段默认护栏](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits)中的[数据模型限制](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits)和[数据大小限制](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/guardrails)。
+限制确实适用于Customer Journey Analytics使用的数据中的数组，并作为Experience Platform中的架构的一部分进行建模。 查看[实时客户个人资料数据和分段默认护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/guardrails#data-model-limits)中的[数据模型限制](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/guardrails#data-size-limits)和[数据大小限制](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/guardrails)。
 

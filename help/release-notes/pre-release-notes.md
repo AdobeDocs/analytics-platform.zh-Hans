@@ -23,10 +23,10 @@ ht-degree: 82%
 有关Adobe Experience Platform及其其他应用程序的发行说明，请参阅以下文档：
 
 * [Adobe Experience Platform](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/release-notes/pre-release-notes)
-* [Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes?lang=en)
-* [Adobe Journey Optimizer B2B](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/release-notes?lang=en)
-* [联合受众构成](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/release-notes?lang=en)
-* [Real-Time CDP Collaboration](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/latest?lang=en)
+* [Adobe Journey Optimizer](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/whats-new/release-notes?lang=en)
+* [Adobe Journey Optimizer B2B](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer-b2b/user/release-notes?lang=en)
+* [联合受众构成](https://experienceleague.adobe.com/zh-hans/docs/federated-audience-composition/using/release-notes?lang=en)
+* [Real-Time CDP Collaboration](https://experienceleague.adobe.com/zh-hans/docs/real-time-cdp-collaboration/using/latest?lang=en)
 
 ## 新增功能或更新后的功能
 

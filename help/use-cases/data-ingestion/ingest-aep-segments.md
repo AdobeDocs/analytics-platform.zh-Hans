@@ -32,13 +32,13 @@ RTCP 中可能已经有来自不同来源的受众。 选择一个或多个受�
 
 ## 步骤 2：为导出创建用户轮廓合并数据集
 
-为了将受众导出到最终可以添加到Customer Journey Analytics中的连接的数据集，您需要创建其架构是配置文件[合并架构](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html#understanding-union-schemas)的数据集。
+为了将受众导出到最终可以添加到Customer Journey Analytics中的连接的数据集，您需要创建其架构是配置文件[合并架构](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=zh-Hans#understanding-union-schemas)的数据集。
 
 合并架构由多个共享同一类并已启用用户轮廓的架构组成。 合并架构使您能够看到共享同一类的架构中包含的所有字段的合并。实时客户轮廓使用合并架构创建每个客户的整体视图。
 
 ## 步骤 3：通过 API 调用将受众导出到用户轮廓合并数据集 {#export}
 
-在将受众引入Customer Journey Analytics之前，您需要将其导出到Adobe Experience Platform数据集。 这只能使用分段 API，特别是 [导出作业 API 端点](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html)来完成。
+在将受众引入Customer Journey Analytics之前，您需要将其导出到Adobe Experience Platform数据集。 这只能使用分段 API，特别是 [导出作业 API 端点](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=zh-Hans)来完成。
 
 您可以使用所选的受众ID创建导出作业，并将结果放入在步骤2中创建的配置文件联合Adobe Experience Platform数据集中。 尽管您可以为受众导出各种属性/事件，但您只需要导出与您将要利用的Customer Journey Analytics连接中使用的个人ID字段匹配的特定用户档案ID字段（请参阅下面的步骤5）。
 
