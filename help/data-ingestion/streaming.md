@@ -116,7 +116,7 @@ ht-degree: 83%
 
    系统会提示您启用轮廓的架构。一旦启用，当数据被引入基于此架构的数据集中时，该数据将合并到实时客户轮廓。
 
-   有关详细信息，请参阅[启用架构以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans#profile)。
+   有关详细信息，请参阅[启用架构以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile)。
 
    >[!IMPORTANT]
    >
@@ -128,7 +128,7 @@ ht-degree: 83%
 
 您已经创建了一个最小的架构，它可以对可以引入 Adobe Experience Platform 的忠诚度数据进行建模。该架构允许使用电子邮件地址标识轮廓。通过为概要文件启用架构，可以确保流媒体源添加到实时客户轮廓中。
 
-请参阅[在 UI 中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=zh-Hans)，了解有关向架构添加和删除字段组和单个字段的更多信息。
+请参阅[在 UI 中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html)，了解有关向架构添加和删除字段组和单个字段的更多信息。
 
 ### 设置数据集
 
@@ -237,7 +237,7 @@ ht-degree: 83%
 
 您可以复制流式端点 URL 并使用它来配置您的忠诚度应用程序以将数据流式传输到 Adobe Experience Platform 忠诚度数据集中。
 
-有关更全面的教程说明，请参阅[使用UI创建HTTP API流连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=zh-Hans)：
+有关更全面的教程说明，请参阅[使用UI创建HTTP API流连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html)：
 
 - 如何使用身份验证，
 - 当传入数据与XDM架构不兼容时如何映射数据，以及

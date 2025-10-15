@@ -7,7 +7,7 @@ role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 7%
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ Analysis Workspace中的流失让您可以将维度和量度作为漏斗和工�
 
 ![所有访问视图将多个维度显示为接触点。](assets/fallout-otherdimension.png)
 
-流失会动态更新，并且允许您查看多个维度中的流失。
+流失会动态更新，并允许您查看多个维度中的流失。
 
 您还可以添加量度。 例如，您可以添加量度“呼叫”以仅显示存在呼叫且已联系呼叫中心的用户的路径：
 

@@ -30,7 +30,7 @@ ht-degree: 97%
 
 在此分析中，图表的 x 轴表示自用户首次启动事件以来的时间，y 轴表示参与一个或多个回访事件的用户百分比。您可以查看不同持续时间内的保留率和流失率，并且可以通过查询设置来自定义显示的持续时间。图表下方的表格提供的是汇总数据，并可以选择显示单个同类群组，即在同一日期执行起始事件的一群人。
 
->[!VIDEO](https://video.tv.adobe.com/v/3435788/?quality=12&learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3430503/?quality=12&learn=on)
 
 
 ## 用例

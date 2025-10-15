@@ -8,7 +8,7 @@ hide-from-toc: true
 source-git-commit: 39f9ef07088eb9595e5057d21008ecd2f5ea44fe
 workflow-type: tm+mt
 source-wordcount: '1954'
-ht-degree: 16%
+ht-degree: 14%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 16%
 
 此表列出了通过频谱图标代码段配置可用的所有频谱图标。 使用名称将该代码片段添加到Markdown中，并显示Spectrum图标。
 
-观看[Wiki页面] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+icons+in+documentation)的任何更新。
+观看[Wiki页面](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+icons+in+documentation)的任何更新。
 
 ![](https://reportbuilder.an.adobe.com/assets/AdobeAnalyticsLogo-80.png)
 
@@ -25,7 +25,7 @@ ht-degree: 16%
 
 | 名称 | 插入的代码片段 | 图像 |
 |---|---|:---:|
-| 123 | `![123](/help/assets/icons/123.svg)` | ![&#x200B; 123](/help/assets/icons/123.svg) |
+| 123 | `![123](/help/assets/icons/123.svg)` | ![ 123](/help/assets/icons/123.svg) |
 | 3D材料 | `![3DMaterial](/help/assets/icons/3DMaterial.svg)` | ![3DMaterial](/help/assets/icons/3DMaterial.svg) |
 | ABC | `![ABC](/help/assets/icons/ABC.svg)` | ![ABC](/help/assets/icons/ABC.svg) |
 | AEMS屏幕 | `![AEMScreen](/help/assets/icons/AEMScreen.svg)` | ![AEMScreen](/help/assets/icons/AEMScreen.svg) |
@@ -58,7 +58,7 @@ ht-degree: 16%
 | 游乐园 | `![Amusementpark](/help/assets/icons/Amusementpark.svg)` | ![游乐园](/help/assets/icons/Amusementpark.svg) |
 | 锚点 | `![Anchor](/help/assets/icons/Anchor.svg)` | ![锚点](/help/assets/icons/Anchor.svg) |
 | 锚点选择 | `![AnchorSelect](/help/assets/icons/AnchorSelect.svg)` | ![AnchorSelect](/help/assets/icons/AnchorSelect.svg) |
-| 注释 | `![Annotate](/help/assets/icons/Annotate.svg)` | ![批注](/help/assets/icons/Annotate.svg) |
+| 批注 | `![Annotate](/help/assets/icons/Annotate.svg)` | ![批注](/help/assets/icons/Annotate.svg) |
 | 批注笔 | `![AnnotatePen](/help/assets/icons/AnnotatePen.svg)` | ![批注笔](/help/assets/icons/AnnotatePen.svg) |
 | 批注范围 | `![AnnotateRange](/help/assets/icons/AnnotateRange.svg)` | ![批注范围](/help/assets/icons/AnnotateRange.svg) |
 | 回答 | `![Answer](/help/assets/icons/Answer.svg)` | ![回答](/help/assets/icons/Answer.svg) |
@@ -182,7 +182,7 @@ ht-degree: 16%
 | 时钟 | `![Clock](/help/assets/icons/Clock.svg)` | ![时钟](/help/assets/icons/Clock.svg) |
 | ClockCheck | `![ClockCheck](/help/assets/icons/ClockCheck.svg)` | ![时钟检查](/help/assets/icons/ClockCheck.svg) |
 | 仿制图章 | `![CloneStamp](/help/assets/icons/CloneStamp.svg)` | ![CloneStamp](/help/assets/icons/CloneStamp.svg) |
-| Close | `![Close](/help/assets/icons/Close.svg)` | ![关闭](/help/assets/icons/Close.svg) |
+| 关闭 | `![Close](/help/assets/icons/Close.svg)` | ![关闭](/help/assets/icons/Close.svg) |
 | CloseCaption | `![CloseCaption](/help/assets/icons/CloseCaption.svg)` | ![CloseCaption](/help/assets/icons/CloseCaption.svg) |
 | 封闭圆形 | `![CloseCircle](/help/assets/icons/CloseCircle.svg)` | ![闭合圆圈](/help/assets/icons/CloseCircle.svg) |
 | 云 | `![Cloud](/help/assets/icons/Cloud.svg)` | ![云](/help/assets/icons/Cloud.svg) |
@@ -262,7 +262,7 @@ ht-degree: 16%
 | 设备电视 | `![DeviceTV](/help/assets/icons/DeviceTV.svg)` | ![设备电视](/help/assets/icons/DeviceTV.svg) |
 | 设备平板电脑 | `![DeviceTablet](/help/assets/icons/DeviceTablet.svg)` | ![设备平板电脑](/help/assets/icons/DeviceTablet.svg) |
 | 维度 | `![Dimensions](/help/assets/icons/Dimensions.svg)` | ![Dimensions](/help/assets/icons/Dimensions.svg) |
-| Discover | `![Discover](/help/assets/icons/Discover.svg)` | ![Discover](/help/assets/icons/Discover.svg) |
+| 发现 | `![Discover](/help/assets/icons/Discover.svg)` | ![发现](/help/assets/icons/Discover.svg) |
 | DiscoverOutline | `![DiscoverOutline](/help/assets/icons/DiscoverOutline.svg)` | ![发现大纲](/help/assets/icons/DiscoverOutline.svg) |
 | Distributbottedge | `![DistributeBottomEdge](/help/assets/icons/DistributeBottomEdge.svg)` | ![DistributeBottomEdge](/help/assets/icons/DistributeBottomEdge.svg) |
 | 分布水平居中 | `![DistributeHorizontalCenter](/help/assets/icons/DistributeHorizontalCenter.svg)` | ![DistributeHorizontalCenter](/help/assets/icons/DistributeHorizontalCenter.svg) |
@@ -479,7 +479,7 @@ ht-degree: 16%
 | 帮助 | `![Help](/help/assets/icons/Help.svg)` | ![帮助](/help/assets/icons/Help.svg) |
 | 帮助大纲 | `![HelpOutline](/help/assets/icons/HelpOutline.svg)` | ![帮助大纲](/help/assets/icons/HelpOutline.svg) |
 | 直方图 | `![Histogram](/help/assets/icons/Histogram.svg)` | ![直方图](/help/assets/icons/Histogram.svg) |
-| History | `![History](/help/assets/icons/History.svg)` | ![历史记录](/help/assets/icons/History.svg) |
+| 历史记录 | `![History](/help/assets/icons/History.svg)` | ![历史记录](/help/assets/icons/History.svg) |
 | 主页 | `![Home](/help/assets/icons/Home.svg)` | ![主页](/help/assets/icons/Home.svg) |
 | 主页 | `![Homepage](/help/assets/icons/Homepage.svg)` | ![主页](/help/assets/icons/Homepage.svg) |
 | 热修复 | `![HotFixe](/help/assets/icons/HotFixe.svg)` | ![热修复程序](/help/assets/icons/HotFixe.svg) |
@@ -575,7 +575,7 @@ ht-degree: 16%
 | 最小化 | `![Minimize](/help/assets/icons/Minimize.svg)` | ![最小化](/help/assets/icons/Minimize.svg) |
 | MobileService | `![MobileService](/help/assets/icons/MobileService.svg)` | ![移动服务](/help/assets/icons/MobileService.svg) |
 | ModernGridView | `![ModernGridView](/help/assets/icons/ModernGridView.svg)` | ![ModernGridView](/help/assets/icons/ModernGridView.svg) |
-| “财经” | `![Money](/help/assets/icons/Money.svg)` | ![钱](/help/assets/icons/Money.svg) |
+| 货币 | `![Money](/help/assets/icons/Money.svg)` | ![钱](/help/assets/icons/Money.svg) |
 | 监控 | `![Monitoring](/help/assets/icons/Monitoring.svg)` | ![监控](/help/assets/icons/Monitoring.svg) |
 | 月亮 | `![Moon](/help/assets/icons/Moon.svg)` | ![月](/help/assets/icons/Moon.svg) |
 | 更多 | `![More](/help/assets/icons/More.svg)` | ![更多](/help/assets/icons/More.svg) |
@@ -637,7 +637,7 @@ ht-degree: 16%
 | 暂停 | `![Pause](/help/assets/icons/Pause.svg)` | ![暂停](/help/assets/icons/Pause.svg) |
 | 暂停圆形 | `![PauseCircle](/help/assets/icons/PauseCircle.svg)` | ![PauseCircle](/help/assets/icons/PauseCircle.svg) |
 | 典当 | `![Pawn](/help/assets/icons/Pawn.svg)` | ![典当](/help/assets/icons/Pawn.svg) |
-| 待定 | `![Pending](/help/assets/icons/Pending.svg)` | ![挂起](/help/assets/icons/Pending.svg) |
+| 待处理 | `![Pending](/help/assets/icons/Pending.svg)` | ![挂起](/help/assets/icons/Pending.svg) |
 | 人员组 | `![PeopleGroup](/help/assets/icons/PeopleGroup.svg)` | ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) |
 | PersonalizationField | `![PersonalizationField](/help/assets/icons/PersonalizationField.svg)` | ![个性化字段](/help/assets/icons/PersonalizationField.svg) |
 | 透视 | `![Perspective](/help/assets/icons/Perspective.svg)` | ![透视](/help/assets/icons/Perspective.svg) |
@@ -692,7 +692,7 @@ ht-degree: 16%
 | 区域选择 | `![RegionSelect](/help/assets/icons/RegionSelect.svg)` | ![区域选择](/help/assets/icons/RegionSelect.svg) |
 | 版本 | `![Release](/help/assets/icons/Release.svg)` | ![发布](/help/assets/icons/Release.svg) |
 | 相关性 | `![Relevance](/help/assets/icons/Relevance.svg)` | ![相关性](/help/assets/icons/Relevance.svg) |
-| 删除 | `![Remove](/help/assets/icons/Remove.svg)` | ![删除](/help/assets/icons/Remove.svg) |
+| 移除 | `![Remove](/help/assets/icons/Remove.svg)` | ![删除](/help/assets/icons/Remove.svg) |
 | 删除圆形 | `![RemoveCircle](/help/assets/icons/RemoveCircle.svg)` | ![删除圆圈](/help/assets/icons/RemoveCircle.svg) |
 | 重命名 | `![Rename](/help/assets/icons/Rename.svg)` | ![重命名](/help/assets/icons/Rename.svg) |
 | 重新排序 | `![Reorder](/help/assets/icons/Reorder.svg)` | ![重新排序](/help/assets/icons/Reorder.svg) |
@@ -702,7 +702,7 @@ ht-degree: 16%
 | 全部回复 | `![ReplyAll](/help/assets/icons/ReplyAll.svg)` | ![全部回复](/help/assets/icons/ReplyAll.svg) |
 | 报告 | `![Report](/help/assets/icons/Report.svg)` | ![报告](/help/assets/icons/Report.svg) |
 | 报告添加 | `![ReportAdd](/help/assets/icons/ReportAdd.svg)` | ![报告添加](/help/assets/icons/ReportAdd.svg) |
-| 必需 | `![Required](/help/assets/icons/Required.svg)` | ![必填](/help/assets/icons/Required.svg) |
+| 必需 | `![Required](/help/assets/icons/Required.svg)` | ![必需](/help/assets/icons/Required.svg) |
 | 调整大小 | `![Resize](/help/assets/icons/Resize.svg)` | ![调整大小](/help/assets/icons/Resize.svg) |
 | 已解决的注释 | `![ResolvedComment](/help/assets/icons/ResolvedComment.svg)` | ![已解决的评论](/help/assets/icons/ResolvedComment.svg) |
 | 保留 | `![Retention](/help/assets/icons/Retention.svg)` | ![保留](/help/assets/icons/Retention.svg) |
@@ -749,7 +749,7 @@ ht-degree: 16%
 | SelectGear | `![SelectGear](/help/assets/icons/SelectGear.svg)` | ![选择齿轮](/help/assets/icons/SelectGear.svg) |
 | SelectIntersect | `![SelectIntersect](/help/assets/icons/SelectIntersect.svg)` | ![SelectIntersect](/help/assets/icons/SelectIntersect.svg) |
 | SelectSubtract | `![SelectSubtract](/help/assets/icons/SelectSubtract.svg)` | ![SelectSubtract](/help/assets/icons/SelectSubtract.svg) |
-| 选区 | `![Selection](/help/assets/icons/Selection.svg)` | ![选区](/help/assets/icons/Selection.svg) |
+| 选择 | `![Selection](/help/assets/icons/Selection.svg)` | ![选择](/help/assets/icons/Selection.svg) |
 | SelectionChecked | `![SelectionChecked](/help/assets/icons/SelectionChecked.svg)` | ![SelectionChecked](/help/assets/icons/SelectionChecked.svg) |
 | 选择移动 | `![SelectionMove](/help/assets/icons/SelectionMove.svg)` | ![SelectionMove](/help/assets/icons/SelectionMove.svg) |
 | 发送 | `![Send](/help/assets/icons/Send.svg)` | ![发送](/help/assets/icons/Send.svg) |
@@ -786,11 +786,11 @@ ht-degree: 16%
 | 排序上移 | `![SortOrderUp](/help/assets/icons/SortOrderUp.svg)` | ![排序顺序设置](/help/assets/icons/SortOrderUp.svg) |
 | 垃圾邮件 | `![Spam](/help/assets/icons/Spam.svg)` | ![垃圾邮件](/help/assets/icons/Spam.svg) |
 | 拼写检查 | `![Spellcheck](/help/assets/icons/Spellcheck.svg)` | ![拼写检查](/help/assets/icons/Spellcheck.svg) |
-| 旋转查看器 | `![Spin](/help/assets/icons/Spin.svg)` | ![旋转](/help/assets/icons/Spin.svg) |
+| 旋转 | `![Spin](/help/assets/icons/Spin.svg)` | ![旋转](/help/assets/icons/Spin.svg) |
 | SplitView | `![SplitView](/help/assets/icons/SplitView.svg)` | ![拆分视图](/help/assets/icons/SplitView.svg) |
 | 污点修复 | `![SpotHeal](/help/assets/icons/SpotHeal.svg)` | ![污点修复](/help/assets/icons/SpotHeal.svg) |
 | 体育场 | `![Stadium](/help/assets/icons/Stadium.svg)` | ![体育场](/help/assets/icons/Stadium.svg) |
-| Stage（阶段） | `![Stage](/help/assets/icons/Stage.svg)` | ![阶段](/help/assets/icons/Stage.svg) |
+| Stage | `![Stage](/help/assets/icons/Stage.svg)` | ![阶段](/help/assets/icons/Stage.svg) |
 | 图章 | `![Stamp](/help/assets/icons/Stamp.svg)` | ![戳](/help/assets/icons/Stamp.svg) |
 | 星形 | `![Star](/help/assets/icons/Star.svg)` | ![Star](/help/assets/icons/Star.svg) |
 | 星形轮廓 | `![StarOutline](/help/assets/icons/StarOutline.svg)` | ![StarOutline](/help/assets/icons/StarOutline.svg) |
@@ -804,7 +804,7 @@ ht-degree: 16%
 | 阶梯向后圆 | `![StepBackwardCircle](/help/assets/icons/StepBackwardCircle.svg)` | ![回退](/help/assets/icons/StepBackwardCircle.svg) |
 | 步进 | `![StepForward](/help/assets/icons/StepForward.svg)` | ![向前一步](/help/assets/icons/StepForward.svg) |
 | StepForwardCycle | `![StepForwardCircle](/help/assets/icons/StepForwardCircle.svg)` | ![向前移动圆圈](/help/assets/icons/StepForwardCircle.svg) |
-| Stop | `![Stop](/help/assets/icons/Stop.svg)` | ![停止](/help/assets/icons/Stop.svg) |
+| 停止 | `![Stop](/help/assets/icons/Stop.svg)` | ![停止](/help/assets/icons/Stop.svg) |
 | 停止圆形 | `![StopCircle](/help/assets/icons/StopCircle.svg)` | ![停止循环](/help/assets/icons/StopCircle.svg) |
 | 秒表 | `![Stopwatch](/help/assets/icons/Stopwatch.svg)` | ![停止观看](/help/assets/icons/Stopwatch.svg) |
 | 拉直 | `![Straighten](/help/assets/icons/Straighten.svg)` | ![拉直](/help/assets/icons/Straighten.svg) |
@@ -965,7 +965,7 @@ ht-degree: 16%
 | VolumeOne | `![VolumeOne](/help/assets/icons/VolumeOne.svg)` | ![VolumeOne](/help/assets/icons/VolumeOne.svg) |
 | 第三卷 | `![VolumeThree](/help/assets/icons/VolumeThree.svg)` | ![卷三](/help/assets/icons/VolumeThree.svg) |
 | 第二卷 | `![VolumeTwo](/help/assets/icons/VolumeTwo.svg)` | ![卷二](/help/assets/icons/VolumeTwo.svg) |
-| 监视 | `![Watch](/help/assets/icons/Watch.svg)` | ![观看](/help/assets/icons/Watch.svg) |
+| 观看 | `![Watch](/help/assets/icons/Watch.svg)` | ![观看](/help/assets/icons/Watch.svg) |
 | 网页 | `![WebPage](/help/assets/icons/WebPage.svg)` | ![WebPage](/help/assets/icons/WebPage.svg) |
 | 网页 | `![WebPages](/help/assets/icons/WebPages.svg)` | ![网页](/help/assets/icons/WebPages.svg) |
 | 工作流 | `![Workflow](/help/assets/icons/Workflow.svg)` | ![Workflow](/help/assets/icons/Workflow.svg) |

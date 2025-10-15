@@ -7,7 +7,7 @@ exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
 source-git-commit: ab0e6f0578cbc6f856c2b0a46b1231cce145b84c
 workflow-type: tm+mt
 source-wordcount: '2761'
-ht-degree: 12%
+ht-degree: 9%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中的地图可视化图表。_<br/>_查看本文的[&#x200B; &#x200B;](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)版本的&#x200B;_&#x200B;**映射**。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的地图可视化图表。_<br/>_查看本文的[ ](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)版本的&#x200B;_**映射**。_
 
 >[!ENDSHADEBOX]
 
@@ -240,7 +240,7 @@ Customer Journey Analytics中的地图可视化图表与Adobe Analytics中的地
 
    * **其他可视化设置**：选择可视化标题中的“设置”图标![设置](/help/assets/icons/Setting.svg)以查看地图可视化的其他设置。 有关详细信息，请参阅[配置可视化设置](#configure-visualization-settings)。
 
-1. **保存**&#x200B;该项目，以保存所有地图设置（坐标、缩放、旋转）。
+1. **保存**&#x200B;项目以保存所有地图设置（坐标、缩放、旋转）。
 1. （可选）可以通过从左边栏拖入位置维度和量度来填充可视化图表下方的自由格式表。
 
 ## 配置可视化设置
@@ -256,10 +256,10 @@ Customer Journey Analytics中的地图可视化图表与Adobe Analytics中的地
    | 部分 | 设置 | 描述 |
    | --- |--- |--- |
    | **[!UICONTROL 地图类型]** | | |
-   | | **[!UICONTROL 气泡]** | 使用气泡描绘事件。气泡图是一种多变量图表，其形式介于散点图和比例面积图之间。这个视图是默认的。 |
-   | | **[!UICONTROL 热图]** | 使用热图描绘事件。热图是对数据的图形化呈现，其中以不同颜色表示矩阵中包含的单独值。 |
+   | | **[!UICONTROL 气泡]** | 使用气泡绘制事件。 气泡图是一种多变量图表，它是散点图和比例面积图之间的交叉。 这个视图是默认的。 |
+   | | **[!UICONTROL 热图]** | 使用热图绘制事件。 热图是数据的图形表示，其中包含在矩阵中的各个值表示为颜色。 |
    | **[!UICONTROL 样式]** | | |
-   | | **[!UICONTROL 颜色主题]** | 显示热图和气泡的颜色方案。您可以选择珊瑚色、红色、绿色或蓝色。默认为珊瑚色。 |
+   | | **[!UICONTROL 颜色主题]** | 显示热图和气泡的颜色方案。 你可以选择珊瑚色、红色、绿色或蓝色。 默认为珊瑚色。 |
    | | **[!UICONTROL 地图样式]** | 您可以从基本、街道、明亮、浅色、深色和卫星中选择。 |
    | | **[!UICONTROL 群集半径]** | 将像素数量在指定范围之内的数据点组合在一起。默认值为 50。<p>仅当选择&#x200B;**[!UICONTROL 气泡]**&#x200B;作为&#x200B;**[!UICONTROL 映射类型]**&#x200B;时，此选项才可用。</p> |
    | | **[!UICONTROL 自定义最大值]** | 允许您更改地图最大值的阈值。 调整此值可调整气泡图或热图值（颜色和大小）相对于您设置的自定义最大值的缩放比例。 |

@@ -7,7 +7,7 @@ role: User
 source-git-commit: 639c3d3c349615078c76f8806bcd5bb458b0f6f2
 workflow-type: tm+mt
 source-wordcount: '509'
-ht-degree: 99%
+ht-degree: 75%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 99%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** 中的摘要数字和摘要变化可视化图表。_<br/>_请参阅本文的_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** 版本的[摘要数字和摘要变化](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** 中的摘要数字和摘要变化可视化图表。_<br/>_请参阅本文的_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版本的[摘要数字和摘要变化](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change)。_
 
 >[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [摘要数字和摘要变化可视化图表](https://video.tv.adobe.com/v/3416886/?quality=12&learn=on&captions=chi_hans){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [摘要数字和摘要变化可视化图表](https://video.tv.adobe.com/v/335564/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -38,10 +38,10 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 使用![摘要](/help/assets/icons/123.svg)**[!UICONTROL 摘要数字]**&#x200B;可视化图表来突出显示项目中的大型重要数字。此可视化图表使用关联的数据源并会按以下方式运行：
 
-* 如果未选中单元格，此可视化则会选择总列数。
-* 如果选中了单个单元格，此可视化则会显示该单元格的概要。
-* 如果选中了多个单元格，此可视化则会显示所选单元格的第一个单元格。
-* 如果选中了列，此可视化则会选择列中的第一个单元格值。
+* 如果未选择单元格，则选择列的总数。
+* 如果选择了单个单元格，则会显示该单元格的摘要。
+* 如果选择了多个单元格，则会显示选定的第一个单元格。
+* 如果选择该列，则会选取列中的第一个单元格值。
 
 ![摘要数字可视化图表](asses/../assets/summary-number.png)
 
@@ -64,20 +64,20 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 <!-- markdownlint-enable MD034 -->
 
 
-使用 ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) **[!UICONTROL 摘要变化]**&#x200B;可视化图表来显示两个数字之间的增量（变化）。<!-- This is applicable for AA, not CJA: The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html?lang=zh-Hans) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html?lang=zh-Hans) option.-->
+使用 ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) **[!UICONTROL 摘要变化]**&#x200B;可视化图表来显示两个数字之间的增量（变化）。<!-- This is applicable for AA, not CJA: The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.-->
 
 <!--
-The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html?lang=zh-Hans) option.
+The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.
 -->
 
 此可视化图表的行为方式如下：
 
 * 如果未选中单元格，此可视化图表会比较列中的前两个单元格值。
 * 如果选中了一个单元格，此可视化图表会显示 0，因为它将单元格值与其自身进行比较。
-* 如果选中了两个单元格，则第一个选定的单元格将作为分子，第二个单元格将作为分母。
-* 如果选中了两个以上的单元格，则会仅考虑比较前两个单元格。
-* 如果选中了单元格范围，则会将范围内选定的第一个单元格与最后一个单元格进行比较。
-* 如果选中了列，会将第一个值与其自身进行比较，结果会显示变化为 0。
+* 如果选择两个单元格，则第一个选定的单元格作为分子，第二个单元格作为分母。
+* 如果选择了两个以上的单元格，则只考虑将前两个单元格进行比较。
+* 如果选择了某个单元格范围，则会比较该范围中选定的第一个单元格和最后一个单元格。
+* 如果选择该列，则会将第一个值与其自身进行比较，这显示0的更改。
 
 
 ![摘要变化可视化图表显示两个数字之间的增量。](assets/summary-change.png)
@@ -94,6 +94,6 @@ The green and red color of the Summary Change can be controlled through [custom 
 >[!MORELIKETHIS]
 >
 >[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[可视化图表设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[可视化图表上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[可视化图表设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[可视化图表上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

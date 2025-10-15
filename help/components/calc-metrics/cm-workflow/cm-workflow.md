@@ -6,7 +6,7 @@ exl-id: 55ed36c1-99ca-400a-bc2b-661994cbf720
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 18%
+ht-degree: 13%
 
 ---
 
@@ -34,12 +34,12 @@ ht-degree: 18%
 
 在创建计算量度之前，请仔细考虑以下工作流程：
 
-| 工作流程任务 | 描述 |
+| 工作流任务 | 描述 |
 | --- | --- |
 | 计划计算指标 | 特别是对于即将正式批准的指标，规划可以概述哪些计算量度将会广泛使用以及它们的定义方式。 |
 | [生成](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)计算量度 | 生成并编辑计算量度和高级计算量度，以在 [!DNL Customer Journey Analytics] 组件中使用。 |
-| [标记](cm-tagging.md)计算量度 | 标记计算量度以便进行组织和共享。请参阅如何规划和分配标记以进行简单和高级搜索和组织。 |
-| [批准](cm-approving.md)计算量度 | 批准计算量度以将其作为规范。 |
+| [标记](cm-tagging.md)计算量度 | 标记计算量度以方便组织和共享。 请参阅如何规划和分配标记以进行简单和高级搜索和组织。 |
+| [批准](cm-approving.md)计算量度 | 批准计算量度以使其成为规范量度。 |
 | 使用计算量度 | 在项目中使用计算量度。 |
 | [共享](cm-sharing.md)计算量度 | 与其他个人、组或组织共享您的计算指标。 |
 | [筛选器](cm-filter.md)计算量度 | 按标记、所有者和其他过滤器（“全部显示”、“我的”、“已与我共享”、“收藏”和“已批准”）过滤计算量度。 |

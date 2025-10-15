@@ -93,7 +93,7 @@ When a journey contains multiple paths that converge into a single node, the two
 
 ![历程的百分比高于前一个节点](assets/journey-canvas-higher-percentage.png)
 
-| 节点 | 统计资料 |
+| 节点 | 统计数据 |
 |---------|----------|
 | 节点1 — “访问站点” | 在此历程中，在报告日期范围内有354,147个事件在网站上，如历程的开始节点“访问站点”中所示。 |
 | 节点2 — “查看产品A” | 在开始节点中显示的总事件数中，14%(48,394)与历程的第二个节点“查看产品A”的条件匹配。 |
@@ -107,7 +107,7 @@ When a journey contains multiple paths that converge into a single node, the two
 
 ![历程的百分比高于前一个节点](assets/journey-canvas-percentage-previous.png)
 
-| 节点 | 统计资料 |
+| 节点 | 统计数据 |
 |---------|----------|
 | 节点1 — “访问站点” | 在此历程中，在报告日期范围内有354,147个事件在网站上，如历程的开始节点“访问站点”中所示。 |
 | 节点2 — “查看产品A” | 在上一个节点中显示的总事件数中，14%(48,394)符合历程的第二个节点“查看产品A”的标准。 |
@@ -121,7 +121,7 @@ When a journey contains multiple paths that converge into a single node, the two
 
 ![历程的百分比高于前一个节点](assets/journey-canvas-percentage-total.png)
 
-| 节点 | 统计资料 |
+| 节点 | 统计数据 |
 |---------|----------|
 | 节点1 — “访问站点” | 在此历程中，在报告日期范围内有354,147个事件在网站上，如历程的开始节点“访问站点”中所示。 |
 | 节点2 — “查看产品A” | 在事件总数中，不到1% (48,394)的事件与历程的第二个节点“查看产品A”的条件匹配。 |

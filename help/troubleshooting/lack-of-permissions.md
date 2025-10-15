@@ -28,9 +28,9 @@ ht-degree: 100%
 
 1. 确保您拥有正确的访问控制：
 
-   * 您必须拥有拥有 Experience Platform 产品的组织的系统或产品管理员权限。请参阅 [Access 控制概述](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hans#platform-permissions) 了解更多信息。
+   * 您必须拥有拥有 Experience Platform 产品的组织的系统或产品管理员权限。请参阅 [Access 控制概述](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#platform-permissions) 了解更多信息。
 
-   * 您必须是 AEP-Default-All-Users 产品配置文件中的用户。如果您没有权限将自己添加到该轮廓中，请询问您的管理员。请参阅 [Access 控制层次结构和工作流程](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hans#access-control-hierarchy-and-workflow) 了解更多信息。
+   * 您必须是 AEP-Default-All-Users 产品配置文件中的用户。如果您没有权限将自己添加到该轮廓中，请询问您的管理员。请参阅 [Access 控制层次结构和工作流程](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#access-control-hierarchy-and-workflow) 了解更多信息。
 
 
 1. 导航到 Adobe Experience Platfom UI。

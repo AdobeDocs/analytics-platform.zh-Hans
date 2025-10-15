@@ -51,7 +51,7 @@ ht-degree: 99%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中的历程画布可视化图表。<br/>**Adobe Analytics** 中没有等效的可视化图表。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的历程画布可视化图表。<br/>**Adobe Analytics** 中没有等效的可视化图表。_
 
 >[!ENDSHADEBOX]
 
@@ -162,7 +162,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 分析历程画布中的 Journey Optimizer 历程可以提供有关人们如何与历程互动的深入、可操作洞察。
 
-当您在历程画布中分析 Journey Optimizer 历程时，历程将会以与 Journey Optimizer 中相同的顺序、序列和结构显示。如果您对历程画布中的历程进行了重大更改，则[&#x200B; Journey Optimizer 中的更改将不再同步](#synchronization-between-journey-optimizer-and-journey-canvas)。
+当您在历程画布中分析 Journey Optimizer 历程时，历程将会以与 Journey Optimizer 中相同的顺序、序列和结构显示。如果您对历程画布中的历程进行了重大更改，则[ Journey Optimizer 中的更改将不再同步](#synchronization-between-journey-optimizer-and-journey-canvas)。
 
 ### 使用历程画布分析 Journey Optimizer 历程的好处
 

@@ -47,6 +47,6 @@ ht-degree: 24%
 
 ## 创建警报
 
-在Adobe Analytics的Analysis Workspace中，您可以[通过多种方式从Analysis Workspace创建警报](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/alerts/alert-builder)。 在Customer Journey Analytics中，您只能在Analysis Workspace中从自由格式表中的选定内容[创建警报](alert-builder.md)。
+在Adobe Analytics的Analysis Workspace中，您可以[通过多种方式从Analysis Workspace创建警报](https://experienceleague.adobe.com/en/docs/analytics/components/alerts/alert-builder)。 在Customer Journey Analytics中，您只能在Analysis Workspace中从自由格式表中的选定内容[创建警报](alert-builder.md)。
 
 Adobe Analytics和Customer Journey Analytics都支持通过[警报管理器](alert-manager.md)创建警报

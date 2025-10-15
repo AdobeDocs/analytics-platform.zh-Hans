@@ -7,7 +7,7 @@ exl-id: f042a6dd-6af5-4bdd-afc9-07546d8ded6e
 source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
 source-wordcount: '545'
-ht-degree: 6%
+ht-degree: 4%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 6%
 
 * 马丁·路德·金日
 * 总统日
-* 阵亡将士纪念日
+* 阵亡将士
 * 7 月 4 日
 * 感恩节
 * 黑色星期五

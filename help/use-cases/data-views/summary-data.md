@@ -50,7 +50,7 @@ ht-degree: 15%
 | 17 | 321营销活动 | 20 | 2500 | def321 | facebook | def-adgroup | 2024-07-18T18:20:39.000Z |
 | 18 | 321营销活动 | 15 | 2250 | ghi321 | facebook | ghi-adgroup | 2024-07-18T18:20:39.000Z |
 
-[![数据下载](/help/assets/icons/DataDownload.svg)](./assets/summary-data.csv)
+[！[数据下载](/help/assets/icons/DataDownload.svg)](./assets/summary-data.csv)
 
 +++
 
@@ -249,7 +249,7 @@ ht-degree: 15%
 | 2024-07-18T19:15:39+00:00 | 178 | 确认页面 | person-142def654 |  | 1 | 174.25 |
 | 2024-07-18T19:15:39+00:00 | 179 | 主页 | person-143ghi654 | ghi654 |  |  |
 
-[![数据下载](/help/assets/icons/DataDownload.svg)](./assets/event-data.csv)
+[！[数据下载](/help/assets/icons/DataDownload.svg)](./assets/event-data.csv)
 
 +++
 
@@ -278,7 +278,7 @@ ht-degree: 15%
 | 17 | def321 | def-adgroup | 321营销活动 |
 | 18 | ghi321 | ghi-adgroup | 321营销活动 |
 
-[![数据下载](/help/assets/icons/DataDownload.svg)](./assets/lookup-data.csv)
+[！[数据下载](/help/assets/icons/DataDownload.svg)](./assets/lookup-data.csv)
 +++
 
 >[!INFO]
@@ -322,7 +322,7 @@ ht-degree: 15%
    |---|---|---|---|
    | `ad_group` | `ad_group` | 字符串 | 示例摘要数据 |
    | `campaign_name` | `campaign_name` | 字符串 | 示例摘要数据 |
-   | `cost` | `cost` | 双线 | 示例摘要数据 |
+   | `cost` | `cost` | 双精度型 | 示例摘要数据 |
    | `impression` | `impression` | 整数 | 示例摘要数据 |
    | `network` | `network` | 字符串 | 示例摘要数据 |
 
@@ -369,7 +369,7 @@ ht-degree: 15%
    1. 请确保&#x200B;**[!UICONTROL 数据格式]**&#x200B;和&#x200B;**[!UICONTROL 分隔符]**&#x200B;具有示例数据的正确值。 例如，**[!UICONTROL 已分隔]**&#x200B;作为&#x200B;**[!UICONTROL 数据格式]**，**[!UICONTROL 已分隔]**&#x200B;作为&#x200B;**[!UICONTROL 分隔符]**。
    1. 摘要数据的样本（10条记录）显示在&#x200B;**[!UICONTROL 样本数据]**&#x200B;中。
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
-1. 在&#x200B;**[!UICONTROL 工作流]** > **[!UICONTROL 将CSV映射到XDM架构]**&#x200B;向导的&#x200B;**[!UICONTROL 映射]**&#x200B;步骤中：
+1. 在&#x200B;**[!UICONTROL 工作流]** > **[!UICONTROL 将CSV映射到XDM架构]**&#x200B;向导的&#x200B;**[!UICONTROL 映射]**步骤中：
    ![示例数据集映射](../assets/example-dataset-mapping.png)
    1. 检查&#x200B;**[!UICONTROL Source数据]**&#x200B;的所有数据字段是否正确映射到架构中对应的&#x200B;**[!UICONTROL 目标字段]**。 对于示例数据，不会报告任何错误，因为您明确命名了架构中的字段，类似于示例数据中的字段名称。 否则，您可以使用此屏幕来更正映射。
    1. 您可以选择选择![齿轮](/help/assets/icons/Gear.svg) **[!UICONTROL 验证]**&#x200B;以（再次）验证数据。
@@ -458,10 +458,10 @@ ht-degree: 15%
 
          | 组件名称 | 数据集 | 架构数据类型 | 架构路径 |
          |---|---|---|---|
-         | 成本 | 示例摘要数据数据集 | 双线 | *_tenant*.cost |
+         | 成本 | 示例摘要数据数据集 | 双精度型 | *_tenant*.cost |
          | 展示次数 | 示例摘要数据数据集 | 整数 | *_tenant*.impression |
          | 订单数 | 示例事件数据数据集 | 整数 | *_tenant*.订单 |
-         | 收入 | 示例事件数据数据集 | 双线 | *_tenant*.revenue_amount |
+         | 收入 | 示例事件数据数据集 | 双精度型 | *_tenant*.revenue_amount |
 
          **Dimensions**
 
@@ -469,7 +469,7 @@ ht-degree: 15%
          |---|---|---|---|
          | 广告组（查找） | 示例查找数据集 | 字符串 | *_tenant*.ad_group |
          | 广告组（摘要） | 示例摘要数据数据集 | 字符串 | *_tenant*.ad_group |
-         | 营销活动 ID | 示例摘要数据数据集 | 字符串 | *_tenant*.campaign_id |
+         | 营销活动ID | 示例摘要数据数据集 | 字符串 | *_tenant*.campaign_id |
          | 营销活动名称（查找） | 示例查找数据集 | 字符串 | *_tenant*.campaign_name |
          | 营销活动名称（摘要） | 示例摘要数据数据集 | 字符串 | *_tenant*.campaign_name |
          | 网络 | 示例摘要数据数据集 | 字符串 | *_tenant*.network |
@@ -603,4 +603,4 @@ ht-degree: 15%
 >[!MORELIKETHIS]
 >
 >[摘要数据](/help/data-views/summary-data.md)
->&#x200B;>[摘要数据组组件设置](/help/data-views/component-settings/summary-data-group.md)
+>>[摘要数据组组件设置](/help/data-views/component-settings/summary-data-group.md)

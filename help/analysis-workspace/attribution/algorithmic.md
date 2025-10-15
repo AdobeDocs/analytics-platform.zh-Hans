@@ -18,7 +18,7 @@ Analysis Workspace 中的算法[归因模型](models.md)与其他模型有所不
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [算法归因](https://video.tv.adobe.com/v/40050?quality=12&learn=on&captions=chi_hans){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[算法归因](https://video.tv.adobe.com/v/36205?quality=12&learn=on){target="_blank"}。
 
 >[!ENDSHADEBOX]
 

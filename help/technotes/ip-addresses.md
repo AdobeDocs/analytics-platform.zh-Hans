@@ -144,4 +144,4 @@ ht-degree: 34%
 >
 >Customer Journey Analytics使用的[域](domains.md)
 >
->Adobe Experience Cloud使用的[IP地址](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/data-collection/ip-addresses)
+>Adobe Experience Cloud使用的[IP地址](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)

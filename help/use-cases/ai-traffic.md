@@ -12,7 +12,7 @@ ht-degree: 1%
 ---
 
 
-# 关于LLM和AI生成的流量的报告
+# 关于 LLM 和 AI 生成流量的报告
 
 本用例文章探讨了如何使用Customer Journey Analytics派生字段功能作为报告LLM（大语言模型）和AI生成的流量的基础。
 

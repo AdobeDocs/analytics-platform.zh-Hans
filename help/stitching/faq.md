@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 4cea79a6ba26a2e4f06bfc9c60fdfc03341a7d60
 workflow-type: tm+mt
 source-wordcount: '2084'
-ht-degree: 26%
+ht-degree: 25%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 26%
 
 1. 登录到[Customer Journey Analytics](https://analytics.adobe.com)并创建一个空白的Workspace项目。
 2. 选择左侧的&#x200B;**[!UICONTROL **&#x200B;可视化图表&#x200B;**]**&#x200B;选项卡，然后将&#x200B;**[!UICONTROL **&#x200B;流量&#x200B;**]**&#x200B;可视化图表拖到右侧的画布上。
-3. 选择左侧的&#x200B;**[!UICONTROL **&#x200B;组件&#x200B;**]**&#x200B;选项卡，并将维度&#x200B;**[!UICONTROL **&#x200B;数据集ID **]**&#x200B;拖到标记为&#x200B;**[!UICONTROL **&#x200B; Dimension或项&#x200B;**]**&#x200B;的中心位置。
+3. 选择左侧的&#x200B;**[!UICONTROL **&#x200B;组件&#x200B;**]**&#x200B;选项卡，并将维度&#x200B;**[!UICONTROL **&#x200B;数据集ID **]**&#x200B;拖到标记为&#x200B;**[!UICONTROL ** Dimension或项&#x200B;**]**&#x200B;的中心位置。
 4. 此流量报告是交互式的。要将流量展开到后续或之前的页面，请选择任意值。 使用右键单击菜单可展开或折叠列。此外，还可以在同一流量报告中使用不同的维度。
 
 如果要重命名“数据集 ID”维度项，可使用查找数据集。
@@ -75,7 +75,7 @@ ht-degree: 26%
 
 +++ 跨设备分析（传统Analytics中的一项功能）和跨渠道分析之间有何区别？
 
-[跨设备分析](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=zh-Hans)是传统Adobe Analytics特有的功能，它使您能够了解人们如何跨设备操作。 该功能提供了两种将设备数据链接在一起的工作流：基于字段的拼接和设备图。
+[跨设备分析](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html)是传统Adobe Analytics特有的功能，它使您能够了解人们如何跨设备操作。 该功能提供了两种将设备数据链接在一起的工作流：基于字段的拼接和设备图。
 
 跨渠道分析是特定于Customer Journey Analytics的用例，通过该用例，您可以同时了解人们如何跨设备和跨渠道操作。 它拼合数据集的人员ID，允许将该数据集与其他数据集无缝组合。 该功能在设计上类似于基于跨设备分析的字段拼接，但由于传统Analytics和Customer Journey Analytics之间的数据架构不同，因此实施方法也不同。 有关详细信息，请参阅[拼接](overview.md)和[跨渠道分析](../use-cases/cross-channel/cross-channel.md)用例。
 
@@ -275,6 +275,6 @@ curl -X POST \
 
 当您未获得实时客户数据配置文件的许可时，在请求中对`unifiedProfile`标记的任何使用都会返回错误。
 
-有关详细信息，请参阅[创建为配置文件和标识启用的数据集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity)。
+有关详细信息，请参阅[创建为配置文件和标识启用的数据集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity)。
 
 +++ 

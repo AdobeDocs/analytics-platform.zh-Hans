@@ -50,7 +50,7 @@ Experience Platform Data Mirror for Customer Journey Analytics需要基于模型
 
 +++ 示例事件数据的详细信息
 
-| timestamp | ID | pagename | 个性化 | trackingcode | 订单 | 收入金额 |
+| timestamp | id | pagename | 个性化 | trackingcode | 订单 | 收入金额 |
 | :---                      |  ---: | :---              | :---            | :---          |   ---: | :---           |
 | 2025-03-06T19:15:39+00:00 | 10001 | 主页 | person-1abc123 | abc123 |        |                |
 | 2025-03-06T19:15:39+00:00 | 10002 | 确认页面 | person-1abc123 |               | 1 | 174.25 |
@@ -218,7 +218,7 @@ Experience Platform Data Mirror for Customer Journey Analytics需要基于模型
 
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
-  有关在使用[Azure Databricks](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/databricks)或[Snowflake](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/snowflake)连接器时如何连接和身份验证的详细信息，请参阅Experience Platform文档。
+  有关在使用[Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)或[Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)连接器时如何连接和身份验证的详细信息，请参阅Experience Platform文档。
 
 
 ### 选择数据
@@ -272,7 +272,7 @@ Experience Platform Data Mirror for Customer Journey Analytics需要基于模型
 1. 选择&#x200B;**[!UICONTROL 下一步]**&#x200B;以继续。
 
 
-### 请查看
+### 审核
 
 在&#x200B;**[!UICONTROL 审核]**&#x200B;步骤中。
 

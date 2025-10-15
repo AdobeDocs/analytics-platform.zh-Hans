@@ -54,7 +54,7 @@ ht-degree: 100%
 
 ## 创建 Analytics 源连接器并映射字段
 
-创建自定义架构后，您需要创建 Adobe Analytics 源连接器，以用于历史数据。（有关创建源连接器的更全面的通用准则，请参阅[在 UI 中创建 Adobe Analytics 源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)。）
+创建自定义架构后，您需要创建 Adobe Analytics 源连接器，以用于历史数据。（有关创建源连接器的更全面的通用准则，请参阅[在 UI 中创建 Adobe Analytics 源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)。）
 
 要创建用于历史数据的 Adobe Analytics 源连接器，请执行以下操作：
 

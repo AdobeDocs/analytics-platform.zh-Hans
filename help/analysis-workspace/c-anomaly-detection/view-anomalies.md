@@ -7,7 +7,7 @@ role: User
 source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 50%
+ht-degree: 46%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 50%
 
    * 异常的原始值。
 
-   * 与预期值相差（高出或低于）的百分比，该值由绿色实线表示。
+   * 百分比值高于或低于预期值，以实心绿色线表示。
 
 
 

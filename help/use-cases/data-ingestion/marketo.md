@@ -33,13 +33,13 @@ ht-degree: 13%
 
 +++ 1.将Marketo源数据字段映射到其XDM目标
 
-将 [人员](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 和 [活动](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 对象映射到各自的 XDM 架构目标字段。
+将 [人员](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 和 [活动](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 对象映射到各自的 XDM 架构目标字段。
 
 +++
 
 +++ 2.将Marketo数据摄取到Adobe Experience Platform
 
-使用 [Marketo Engage 连接器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)将 Marketo 的数据传送到 Experience Platform，并使用与平台连接的应用程序使这些数据保持最新。
+使用 [Marketo Engage 连接器](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)将 Marketo 的数据传送到 Experience Platform，并使用与平台连接的应用程序使这些数据保持最新。
 
 +++
 

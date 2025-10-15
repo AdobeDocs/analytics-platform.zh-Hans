@@ -7,16 +7,16 @@ role: User
 source-git-commit: d91e6aaebd14bc02f53b28820dd6013350e36d36
 workflow-type: tm+mt
 source-wordcount: '856'
-ht-degree: 76%
+ht-degree: 69%
 
 ---
 
 # 配置流失可视化图表 {#configure-fallout-visualization}
 
 
-您可以指定接触点以创建多维度流失序列。通常，接触点就是网站中的某个页面。但是，接触点并不仅限于页面。例如，您可以添加事件，如单位及独特人员和回访。也可以添加维度，如类别、浏览器类型或内部搜索词。
+可以指定接触点以创建多维度流失序列。 通常，接触点是您网站上的一个页面。 但是，接触点并不限于页面。 例如，您可以添加事件，如单位及独特人员和回访。您还可以添加维度，例如类别、浏览器类型或内部搜索词。
 
-甚至可以在接触点内添加区段。例如，您可能需要比较区段，如 iOS 和 Android™ 用户。请将所需区段拖动到流失顶部，并将与这些区段有关的信息添加到流失报告中。如果要仅显示这些区段，您可以移除“所有访问”基准值。
+您甚至可以在接触点中添加区段。 例如，您可能需要比较区段，如 iOS 和 Android™ 用户。请将所需区段拖动到流失顶部，并将与这些区段有关的信息添加到流失报告中。如果要仅显示这些区段，您可以移除“所有访问”基准值。
 
 对于可添加的步骤数量或可以使用的维度数量，没有任何限制。
 
@@ -80,14 +80,14 @@ ht-degree: 76%
 | **[!UICONTROL 显示接触点趋势]** | 在预先生成了一些异常检测数据的线形图中查看接触点的趋势数据。 |
 | **[!UICONTROL 显示接触点趋势（%）]** | 显示总流失百分比趋势。 |
 | **[!UICONTROL 显示所有接触点趋势（%）]** | 在同一个图表中显示流失中的所有接触点百分比趋势（如果包括&#x200B;**[!UICONTROL 所有人员]**，则将其排除）。 |
-| **[!UICONTROL 划分此接触点的流过]** | 查看人员在两个接触点（此接触点和下一个接触点）之间的行为（如果他们继续到下一个接触点）。这会创建一个自由格式表来显示您的维度。可以替换表的尺寸和其他元素。 例如，一个标记为&#x200B;**[!UICONTROL 流过：所有人员>页面等于任何主页]**，并包含&#x200B;**[!UICONTROL 页面]**&#x200B;作为维度以及按&#x200B;**[!UICONTROL 仅用于项目的快速区段]**&#x200B;分段的[人员](/help/components/segments/seg-quick.md) **[!UICONTROL 流过：所有人员>页面等于任何主页]**&#x200B;作为量度的表。 检查区段以了解如何确定流过区段。 |
-| **[!UICONTROL 划分此接触点的流失]** | 查看未通过funnel的人员在选定步骤后立即做了些什么。 这会创建一个自由格式表来显示您的维度。可以替换表的尺寸和其他元素。 例如，标记为&#x200B;**[!UICONTROL 流失：人员>页面等于任何主页]**，并包含&#x200B;**[!UICONTROL 页面]**&#x200B;作为维度以及按&#x200B;**[!UICONTROL 仅用于项目的快速区段]** [流过：所有访客>页面等于任何主页](/help/components/segments/seg-quick.md)区段分段的&#x200B;**[!UICONTROL 人员]**&#x200B;作为量度。 检查区段以了解如何确定流失区段。 |
+| **[!UICONTROL 划分此接触点的流过]** | 查看人员在两个接触点（此接触点和下一个接触点）之间的行为（如果他们继续到下一个接触点）。这将创建一个自由格式表，其中显示您的维度。 可以替换表的尺寸和其他元素。 例如，一个标记为&#x200B;**[!UICONTROL 流过：所有人员>页面等于任何主页]**，并包含&#x200B;**[!UICONTROL 页面]**&#x200B;作为维度以及按&#x200B;**[!UICONTROL 仅用于项目的快速区段]**&#x200B;分段的[人员](/help/components/segments/seg-quick.md) **[!UICONTROL 流过：所有人员>页面等于任何主页]**&#x200B;作为量度的表。 检查区段以了解如何确定流过区段。 |
+| **[!UICONTROL 划分此接触点的流失]** | 查看未通过funnel的人员在选定步骤后立即做了些什么。 这将创建一个自由格式表，其中显示您的维度。 可以替换表的尺寸和其他元素。 例如，标记为&#x200B;**[!UICONTROL 流失：人员>页面等于任何主页]**，并包含&#x200B;**[!UICONTROL 页面]**&#x200B;作为维度以及按&#x200B;**[!UICONTROL 仅用于项目的快速区段]** [流过：所有访客>页面等于任何主页](/help/components/segments/seg-quick.md)区段分段的&#x200B;**[!UICONTROL 人员]**&#x200B;作为量度。 检查区段以了解如何确定流失区段。 |
 | **[!UICONTROL 从接触点创建区段]** | 从选定的接触点创建新区段。 |
 
 >[!MORELIKETHIS]
 >
 >[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[可视化图表设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[可视化图表上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[可视化图表设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[可视化图表上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

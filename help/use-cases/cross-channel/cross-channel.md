@@ -30,8 +30,8 @@ ht-degree: 100%
 ![本节所述的实施步骤流程。](../assets/cca-architecture.png)
 
 1. 为要引入的数据[创建架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans)。
-1. 为要引入的数据[创建数据集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hans)。
-1. [将数据引入 Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=zh-Hans)：
+1. 为要引入的数据[创建数据集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html)。
+1. [将数据引入 Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html)：
    1. 通过 Edge Network 或 Analytics 源连接器从网站或移动应用程序获取的基于事件的数据 ![event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg)。
    2. 轮廓数据 ![轮廓](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg)（例如来自 CRM 系统、呼叫中心应用程序、忠诚度应用程序）。
    3. 查找数据 ![查找](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)（例如来自产品信息系统的产品名称、类别）。

@@ -43,7 +43,7 @@ Universal Analytics 属性将每条记录作为用户会话而不是单个事件
 
 >[!BEGINSHADEBOX]
 
-观看从Google Analytics到Customer Journey Analytics的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; - BigQuery](https://video.tv.adobe.com/v/332634?quality=12&learn=on){target="_blank"}演示视频。
+观看从Google Analytics到Customer Journey Analytics的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ - BigQuery](https://video.tv.adobe.com/v/332634?quality=12&learn=on){target="_blank"}演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -83,7 +83,7 @@ FROM
 
 >[!BEGINSHADEBOX]
 
-观看![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [将Google Analytics数据导入Adobe Experience Platform](https://video.tv.adobe.com/v/3437176?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取演示视频。
+观看![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [将Google Analytics数据导入Adobe Experience Platform](https://video.tv.adobe.com/v/332676?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -92,7 +92,7 @@ FROM
 >
 >如果您计划同时导入历史和实时流式 Google Analytics 数据，请确保对两个数据集使用相同的架构。您可以使用[组合数据集](/help/connections/combined-dataset.md)在Customer Journey Analytics中合并数据集。
 
-您可以将 GA 事件数据映射到以前创建的现有数据集，或者使用所选择的任何 XDM 架构创建数据集。选择好架构后，Experience Platform 则应用机器学习，自动将 Google Analytics 数据中的每个字段预映射到您的 [XDM 架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans#ui)。
+您可以将 GA 事件数据映射到以前创建的现有数据集，或者使用所选择的任何 XDM 架构创建数据集。选择好架构后，Experience Platform 则应用机器学习，自动将 Google Analytics 数据中的每个字段预映射到您的 [XDM 架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html#ui)。
 
 ![突出显示GA数据字段和Target架构映射的架构映射](../../assets/schema-map.png)
 

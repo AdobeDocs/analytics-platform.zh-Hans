@@ -80,9 +80,9 @@ ht-degree: 97%
 
 | 图标 | 操作 | 描述 |
 |:---:|---|---|
-| ![标签](/help/assets/icons/Labels.svg) | **[!UICONTROL 标记]** | 标记选定的受众。在&#x200B;**[!UICONTROL 更新标记：*受众名称&#x200B;*]**&#x200B;对话框中，从下拉菜单中选择标记或者输入一个或多个新标记。选择&#x200B;**[!UICONTROL 保存&#x200B;]**&#x200B;以保存。 |
+| ![标签](/help/assets/icons/Labels.svg) | **[!UICONTROL 标记]** | 标记选定的受众。在&#x200B;**[!UICONTROL 更新标记：*受众名称&#x200B;*]**对话框中，从下拉菜单中选择标记或者输入一个或多个新标记。选择**[!UICONTROL 保存&#x200B;]**以保存。 |
 | ![Delete](/help/assets/icons/Delete.svg) | **[!UICONTROL 删除]** | 删除选定的受众。 |
-| ![Edit](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名选定的受众。使用&#x200B;**[!UICONTROL 重命名：*受众名称&#x200B;*]**&#x200B;对话框来重命名受众，并选择&#x200B;**[!UICONTROL 保存&#x200B;]**&#x200B;以保存。 |
+| ![Edit](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名选定的受众。使用&#x200B;**[!UICONTROL 重命名：*受众名称&#x200B;*]**对话框来重命名受众，并选择**[!UICONTROL 保存&#x200B;]**以保存。 |
 
 选择一个或多个计划项目时，可以从蓝色操作栏中执行以下操作。
 

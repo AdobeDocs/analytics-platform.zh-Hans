@@ -17,7 +17,7 @@ Adobe Analytics中的归因概念包含三个组件：
 
 * **归因模型：** [模型](#attribution-model)描述某个群组中点击的转化分布。 例如，首次接触或最后接触。
 * **容器**： [容器](#container)定义归因的范围，或定义如何对每个模型的点击进行分组。
-* **归因回顾时间范围：**&#x200B;[回顾时间范围](#lookback-window)描述所选模型的回顾天数。
+* **归因回顾时间范围：**[回顾时间范围](#lookback-window)描述所选模型的回顾天数。
 
 
 ## 归因模型
@@ -69,7 +69,7 @@ A lookback window is the amount of time a conversion should look back to include
 
 >[!BEGINSHADEBOX]
   
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Custom lookback window](https://video.tv.adobe.com/v/40042?quality=12&learn=on&captions=chi_hans){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Custom lookback window](https://video.tv.adobe.com/v/36204?quality=12&learn=on){target="_blank"} for a demo video.
   
 >[!ENDSHADEBOX]
 

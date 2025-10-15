@@ -20,7 +20,7 @@ ht-degree: 2%
 
 这些步骤假定您使用Adobe Experience Platform数据收集中的标记。 如果您的组织不使用标记，则可以调整这些数据收集方法，以便手动实施Web SDK。
 
-有关详细信息，请参阅[Quantum量度标记扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/analytics/quantum-metric)文档。
+有关详细信息，请参阅[Quantum量度标记扩展](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric)文档。
 
 ## 步骤1：创建架构字段以容纳量子度量会话ID
 

@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL 漏斗&#x200B;]**分析可以直观地呈现您的产品中关键的用户历程。横轴代表用户必须经历的每个步骤。纵轴表示每个步骤的用户或会话的百分比。所有步骤必须按最终顺序执行，但可在报告窗口内的任何时间进行。
 
->[!VIDEO](https://video.tv.adobe.com/v/3431280/?quality=12&learn=on&captions=chi_hans){width="90%"}
+>[!VIDEO](https://video.tv.adobe.com/v/3421663/?quality=12&learn=on){width="90%"}
 
 ## 用例
 

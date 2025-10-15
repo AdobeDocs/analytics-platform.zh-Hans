@@ -6,7 +6,7 @@ exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
 source-git-commit: c745e37203ac829fa0fb7d8532e6499351cb94ba
 workflow-type: tm+mt
 source-wordcount: '2460'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [顺序分段](https://video.tv.adobe.com/v/37426/?quality=12&learn=on&captions=chi_hans){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [顺序分段](https://video.tv.adobe.com/v/25405/?quality=12&learn=on){target="_blank"}。
 
 {{videoaa}}
 
@@ -91,7 +91,7 @@ ht-degree: 4%
 1. 选择![时钟](/help/assets/icons/Clock.svg)。
 1. 从上下文菜单中选择&#x200B;**[!UICONTROL Within]**&#x200B;或&#x200B;**[!UICONTROL After]**。
 1. 指定一个时间段（**[!UICONTROL 分钟]**，**[!UICONTROL 小时]**，最多&#x200B;**[!UICONTROL 年]**）。
-1. 选择![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**&#x200B;以打开一个弹出窗口，允许您使用&#x200B;**[!UICONTROL -]**&#x200B;或&#x200B;**[!UICONTROL +]**&#x200B;键入或指定数字。
+1. 选择![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**以打开一个弹出窗口，允许您使用**[!UICONTROL -]**或**[!UICONTROL +]**键入或指定数字。
 
 若要移除时间限制，请使用![CrossSize75](/help/assets/icons/CrossSize75.svg)。
 
@@ -100,7 +100,7 @@ ht-degree: 4%
 | 运算符 | 描述 |
 |--- |--- |
 | **[!UICONTROL After]** | [!UICONTROL After]运算符用于指定两个检查点之间的时间长度的最小限制。 设置After值时，时间限制从应用区段时开始。 例如，如果在容器上设置[!UICONTROL After]运算符以识别访问页面A，但直到一天后才返回访问页面B的人员，则访客离开页面A时将会开始该日期。 对于要包含在区段中的访客，离开页面A后必须至少经过1440分钟（一天）才能查看页面B。 |
-| **[!UICONTROL Within]** | [!UICONTROL Within] 运算符用于指定两个检查点之间的时间长度的最大限制。例如，如果在容器上设置[!UICONTROL Within]运算符以识别访问页面A，然后在一天内返回访问页面B的人员，则该时间将从该人员离开页面A时开始。要包含在此区段中，人员最多需要在一天之后打开页面B。对于要包含在区段中的人员，在离开页面A以查看页面B后，最多必须在1440分钟（一天）内打开页面B。 |
+| **[!UICONTROL Within]** | [!UICONTROL Within]运算符用于指定两个检查点之间的时间长度的最大限制。 例如，如果在容器上设置[!UICONTROL Within]运算符以识别访问页面A，然后在一天内返回访问页面B的人员，则该时间将从该人员离开页面A时开始。要包含在此区段中，人员最多需要在一天之后打开页面B。对于要包含在区段中的人员，在离开页面A以查看页面B后，最多必须在1440分钟（一天）内打开页面B。 |
 | **[!UICONTROL 晚于]**&#x200B;之内 | 同时使用[!UICONTROL After]和[!UICONTROL Within]运算符时，这两个运算符是并行开始和结束的，而不是按顺序开始和结束。 <br/>例如，您生成了一个区段，其容器设置为： `After = 1 Week(s) and Within = 2 Week(s)`。<br/>此区段中用于识别访客的条件仅在一周至两周内满足要求。 这两个条件是从第一次查看页面时开始执行的。 |
 
 
@@ -183,8 +183,8 @@ ht-degree: 4%
 | B然后D | A | B | C | D | E | F |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | 包含每个人 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
-| 仅在序列前 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |  |  |  |  |
-| 仅在序列后 |  |  |  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
+| 仅在序列之前 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |  |  |  |  |
+| 仅在序列之后 |  |  |  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
 
 {style="table-layout:fixed"}
 
@@ -193,8 +193,8 @@ ht-degree: 4%
 | B然后D（出现多次） | A | B | C | D | B | C | D | E |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 包含每个人 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
-| 仅在序列前 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |  |  |  |
-| 仅在序列后 |  |  |  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
+| 仅在序列之前 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |  |  |  |
+| 仅在序列之后 |  |  |  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
 
 {style="table-layout:fixed"}
 
@@ -216,9 +216,9 @@ ht-degree: 4%
 
 排除定义的示例包括：
 
-* **排除页面**。使用区段定义从报告中排除特定页面（如&#x200B;*主页*），创建页面等于`Home Page`的事件规则，然后排除该规则。 此定义自动包括&#x200B;*主页*&#x200B;以外的所有页面。
-* **排除反向链接域**。请使用仅包含来自Google.com的反向链接域并排除所有其他域的定义。
-* **确定非顾客**。识别订单大于零的时间，然后排除[!UICONTROL 人员]。
+* **排除页面**。 使用区段定义从报告中排除特定页面（如&#x200B;*主页*），创建页面等于`Home Page`的事件规则，然后排除该规则。 此定义自动包括&#x200B;*主页*&#x200B;以外的所有页面。
+* **排除反向链接域**。 请使用仅包含来自Google.com的反向链接域并排除所有其他域的定义。
+* **识别非购买者**。 识别订单大于零的时间，然后排除[!UICONTROL 人员]。
 
 [!UICONTROL Exclude]可用于识别人员不是特定会话一部分的序列或执行特定事件。 [!UICONTROL 排除]也可以包含在[!UICONTROL 逻辑组]中（请参阅下文）。
 

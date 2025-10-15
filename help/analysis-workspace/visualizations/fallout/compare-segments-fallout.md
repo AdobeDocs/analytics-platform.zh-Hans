@@ -8,7 +8,7 @@ role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '468'
-ht-degree: 34%
+ht-degree: 23%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 34%
 >* 在会话上下文流失可视化图表中使用基于会话的区段作为接触点。
 
 <!-- Should we add B2B context here?
-* [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Usimg a B2B container based segment as a touchpoint inside a non-container based context Fallout visualization.
+* [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Usimg a B2B container based segment as a touchpoint inside a non-container based context Fallout visualization.
 * -->
 
 ## 从接触点创建区段
@@ -38,17 +38,17 @@ ht-degree: 34%
 
    ![区段生成器显示预填充和预生成的顺序区段。](assets/fallout-definesegment.png)
 
-1. 为该区段提供一个标题和描述，然后保存它。
+1. 为区段提供标题和描述，然后保存它。
 
    您现在可以在所需的任何项目中使用此区段。
 
 ## 添加区段作为接触点
 
-例如，如果您要查看您的美国用户趋势及其是如何影响流失的，只需将美国用户区段拖到流失中：
+例如，如果您要查看您的美国用户趋势以及如何影响流失，只需将美国用户区段拖入流失中：
 
 ![选定并突出显示要拖入流失中的美国用户区段。](assets/fallout-addfilter.png)
 
-或者，您也可以将美国用户区段拖到另一检查点中，以此来创建一个 AND 接触点。
+或者，您也可以将美国用户区段拖到其他检查点中，以此来创建一个AND接触点。
 
 ## 在流失中比较区段
 

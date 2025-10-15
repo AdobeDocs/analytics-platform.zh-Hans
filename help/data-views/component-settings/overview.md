@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: aa635d52007a3032d8c3f90a779d1b70213dee9e
 workflow-type: tm+mt
 source-wordcount: '3738'
-ht-degree: 55%
+ht-degree: 56%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 55%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [组件类型设置](https://video.tv.adobe.com/v/3412933/?quality=12&learn=on&captions=chi_hans){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [组件类型设置](https://video.tv.adobe.com/v/333112/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -97,7 +97,7 @@ ht-degree: 55%
 
 * 要定义一组组件，您可以使用Analysis Workspace项目中的[试验面板](/help/analysis-workspace/c-panels/experimentation.md)在试验报表中使用。
 
-  请参阅[与 Journey Optimizer 集成](/help/integrations/ajo.md#data-view)以及[&#x200B; Target 报告](/help/integrations/at.md)。
+  请参阅[与 Journey Optimizer 集成](/help/integrations/ajo.md#data-view)以及[ Target 报告](/help/integrations/at.md)。
 
 * 要定义一组组件，您可以在Analysis Workspace项目的[地图](/help/analysis-workspace/visualizations/map.md)可视化图表中使用。
 
@@ -396,7 +396,7 @@ ht-degree: 55%
 | 活动名称（AJO） | 活动的名称。 |
 | 营销活动版本 ID（AJO） | 营销活动的版本 ID。 |
 | 渠道 | 该数据应关联到的渠道。 |
-| 点击次数（AJO） | 所有渠道的总点击次数。 |
+| 点击次数（AJO） | 所有渠道的点击总数。 |
 | 同意政策拒绝次数 (AJO) | 由于一个或多个同意策略而被拒绝的历程操作的计数。 |
 | 内容决策错误（AJO） | 历程的内容决策节点生成的错误消息。 |
 | 内容决策错误（AJO） | 历程的内容决策节点产生的错误数量。 |
@@ -473,7 +473,7 @@ ht-degree: 55%
 | 节点 Id | 历程节点的节点 ID。 |
 | 节点名称 | 历程节点的节点名称。 |
 | 节点类型 | 历程节点的节点类型。 |
-| 精心策划的营销活动操作身份标识命名空间（AJO） | 编排的营销活动操作的身份命名空间。 |
+| 编排的营销活动操作身份标识命名空间（AJO） | 编排的营销活动操作的身份命名空间。 |
 | 精心策划的营销活动操作名称（AJO） | 编排的营销活动的操作名称。 |
 | 精心策划的营销活动操作节点 ID（AJO） | 编排的营销活动的操作ID。 |
 | 精心策划的营销活动 ID（AJO） | 编排的营销活动的ID。 |
@@ -494,7 +494,7 @@ ht-degree: 55%
 | 重试次数 (AJO) | 消息发送成功或失败前重试的次数。 |
 | 规则名称 | 导致历程记录被拒绝的规则名称。 |
 | 选择类型 (AJO) | 这是在决策中派生项时使用的选择类型。 |
-| 发送（已弃用） | 跨所有渠道发送的消息总数。 |
+| 发送（已弃用） | 所有渠道发送的消息总数。 |
 | SMS 入站消息（AJO） | 短信入站回复，例如，停止、开始、订阅等。 |
 | SMS 入站消息（AJO） | SMS 入站回复，例如停止、开始、订阅等。 |
 | SMS 消息类型（AJO） | SMS提供商，例如，inbound、inboundReply或send。 |
@@ -516,7 +516,7 @@ ht-degree: 55%
 | 处理 ID（AJO） | 为试验选择的处理的 ID。 |
 | 处理名称（AJO） | 实验处理的名称。 |
 | 试验中的独特访客 (AJO) | 试验中的独特访客。 |
-| 取消订阅（AJO） | 取消订阅的总数。 |
+| 取消订阅（AJO） | 取消订阅的总次数。 |
 | URL 标签（AJO） | 人性化的 URL 标签。 |
 | URL ID（AJO） | 用户点击的 URL 的唯一标识符。 |
 

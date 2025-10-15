@@ -8,7 +8,7 @@ role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '390'
-ht-degree: 8%
+ht-degree: 6%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 8%
 | 不支持Dimension | <p>完全表导出不支持任何满足以下所有条件的维度：</p> <ul><li>从属于对象数组的字段创建</li><li>已启用持久性<li>未使用绑定维度</li> | <ul><li>[使用对象数组](/help/use-cases/object-arrays.md)</li><li>[持久性组件设置](/help/data-views/component-settings/persistence.md)<li>[在Customer Journey Analytics中使用绑定维度和量度](/help/use-cases/data-views/binding-dimensions-metrics.md)</li> |
 | 您的组织强制实施的数据治理策略限制导出表中的组件 | 请与系统管理员联系，查看哪些组件被限制导出。 导出之前删除受限制的组件。 | *筛选*&#x200B;标签和策略[中数据视图](/help/data-views/data-governance.md)部分的数据治理策略 |
 
-## 联系 Adobe 客户关怀
+## 联系Adobe客户关怀部门
 
 如果您仍然遇到问题，请联系Adobe客户关怀部门。 在联系客户关怀部门了解导出失败的情况时，请确保您具有以下可用信息：
 

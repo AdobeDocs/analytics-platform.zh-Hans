@@ -8,7 +8,7 @@ role: User
 source-git-commit: 518bebc18611136873fce5c23dd7041afafe1220
 workflow-type: tm+mt
 source-wordcount: '4015'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -141,11 +141,11 @@ ht-degree: 100%
 | | 默认表维度 | 从分钟、小时、天、周、月、季度或年中选择。 |
 | | 调整日期 | 选择此选项可将每列的日期与同一行的所有开始日期对齐。 |
 | **[列](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)** | | |
-| | 隐藏标头文本 | 允许您隐藏自由格式表中的标头文本，以使标头更加易读，表格更易共享。这对 .pdf 渲染和名称较长的量度非常有用。默认处于启用状态。 |
+| | 隐藏标头文本 | 允许您隐藏自由格式表中的标头文本，以使标头更加易读，表格更易共享。这对.pdf渲染和名称较长的量度非常有用。 默认处于启用状态。 |
 | | 显示总数 | 此总数通常等于[!UICONTROL 全部总计]或者是其子集。它反映了自由格式表中应用的任何表区段，包括[!UICONTROL 不包含任何内容]选项。 |
 | | 显示总计 | 此总数表示已收集的所有事件数，有时候称为&#x200B;*数据视图总计*。如果在面板级别或自由格式表中应用区段，此总数会进行相应的调整以反映符合区段标准的所有事件。带有[统计行](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)的表或细分不支持全部总计。 |
 | | 显示迷您图 | 在图表底部显示或隐藏线形图。隐藏时，图例更改为不再在视觉上参照线形图。 |
-| | 数值 | 确定单元格是否显示/隐藏量度的数值。例如，如果量度是“页面查看次数”，则数值是行项目的页面查看次数。 |
+| | 数值 | 确定单元格是否显示/隐藏量度的数值。例如，如果量度是页面查看次数，则数值是行项目的页面查看次数。 |
 | | 百分比 | 确定单元格是否显示/隐藏量度的百分比值。例如，如果量度是“页面浏览次数”，则百分比值等于行项目的页面浏览次数除以该列的总页面浏览次数。注意：您可以显示大于 100% 的百分比，以提高准确性。您还可以将上限调整为 1,000%，以确保列宽度足够大。 |
 | | 显示异常 <!-- This setting was moved from the "Project" tab. this is already in the tool/docs under "Freeform table, But the doc doesn't give a definition. --> | 确定此列中的值是否要运行异常检测。 |
 | | 显示预测 | 确定是否自动显示您创建的任何时间序列自由格式表中第一个量度列的预测值。 |
