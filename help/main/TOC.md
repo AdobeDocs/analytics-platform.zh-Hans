@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: a16043f1bb15deba1332ed39438214597647b9b4
+source-git-commit: f43cbee1d38a67045b9975498870654567a88419
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1307'
 ht-degree: 99%
 
 ---
@@ -99,7 +99,7 @@ ht-degree: 99%
          + [使用通过 Adobe Journey Optimizer 个性化](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
    + 与 Adobe Analytics 进行比较 {#cja-aa-comparison}
       + [概述](../getting-started/aa-vs-cja/overview.md)
-      + [实用 Adobe Analytics 数据 &#x200B;](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+      + [实用 Adobe Analytics 数据 ](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [功能支持](../getting-started/aa-vs-cja/cja-aa.md)
       + [比较术语](../getting-started/aa-vs-cja/terminology.md)
       + [比较数据处理](../getting-started/aa-vs-cja/data-processing-comparisons.md)
@@ -225,7 +225,7 @@ ht-degree: 99%
       + 历程画布 {#journey-canvas}
          + [概述](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
          + [配置](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
-         + [疑难解答 &#x200B;](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
+         + [疑难解答 ](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
       + [面积（堆叠）](../analysis-workspace/visualizations/area.md)
       + [条形图（堆叠）](../analysis-workspace/visualizations/bar.md)
       + [项目符号](../analysis-workspace/visualizations/bullet-graph.md)
@@ -259,7 +259,7 @@ ht-degree: 99%
       + [共享项目](../analysis-workspace/curate-share/share-projects.md)
       + [创建可共享链接](../analysis-workspace/curate-share/shareable-links.md)
       + [只读项目](../analysis-workspace/curate-share/view-only-projects.md)
-      + [生成演示文稿](/help/analysis-workspace/curate-share/generate-presentations.md)
+      + [生成幻灯片演示](/help/analysis-workspace/curate-share/generate-slides.md)
    + 导出 {#export}
       + [概述](../analysis-workspace/export/export-project-overview.md)
       + [下载](../analysis-workspace/export/download-send.md)
@@ -393,7 +393,7 @@ ht-degree: 99%
       + [概述](/help/components/c-intelligent-alerts/intelligent-alerts.md)
       + [创建警报](/help/components/c-intelligent-alerts/alert-builder.md)
       + [管理警报](/help/components/c-intelligent-alerts/alert-manager.md)
-      + [功能比较 &#x200B;](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
+      + [功能比较 ](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
       + [用例](/help/components/c-intelligent-alerts/alerts-use-cases.md)
    + 导出 {#exports}
       + [配置云导出帐户](/help/components/exports/cloud-export-accounts.md)
@@ -490,7 +490,7 @@ ht-degree: 99%
       + [使用摘要数据](/help/use-cases/data-views/summary-data.md)
       + [BI 扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)
    + 派生字段 {#derived-fields}
-      + [关于LLM和AI生成的流量的报告](/help/use-cases/ai-traffic.md)
+      + [关于 LLM 和 AI 生成流量的报告](/help/use-cases/ai-traffic.md)
       + [报告目标](../use-cases/goals-using-derived-fields.md)
    + 产品分析 {#product-analysis}
       + [产品分析](/help/use-cases/product-analysis.md)
@@ -514,7 +514,7 @@ ht-degree: 99%
    + [Labs 用户指南](../labs/labs.md)
 
 + 故障排除 {#troubleshooting}
-   + [比较Source Connector数据](../troubleshooting/compare.md)
+   + [比较源连接器数据](../troubleshooting/compare.md)
    + [量度和受众的一致性](../troubleshooting/consistency-rcdp-cja.md)
    + [缺乏权限](../troubleshooting/lack-of-permissions.md)
 
