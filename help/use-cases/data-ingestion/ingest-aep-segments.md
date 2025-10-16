@@ -336,7 +336,7 @@ WHERE value.status = 'realized' AND (key = '{AUDIENCE_ID_1}' OR key = 'AUDIENCE_
    1. （可选）输入&#x200B;**[!UICONTROL 描述]**。
    1. 选择&#x200B;**[!UICONTROL 完成]**。
 1. 设置架构以包含自定义字段组（例如&#x200B;**[!UICONTROL 受众成员资格]**），该自定义字段组包含名为&#x200B;**[!UICONTROL audienceMembershipId]**&#x200B;和&#x200B;**[!UICONTROL audienceMembershipName]**&#x200B;的两个字段。
-1. 确保&#x200B;**[!UICONTROL personID]**&#x200B;字段是&#x200B;**[!UICONTROL 标识]**、**[!UICONTROL 主标识]**，并且具有&#x200B;**[!UICONTROL 电子邮件]**&#x200B;作为I**[!UICONTROL 标识命名空间]**。
+1. 确保&#x200B;**[!UICONTROL personID]**&#x200B;字段是&#x200B;**[!UICONTROL 标识]**、**[!UICONTROL 主标识]**，并且具有&#x200B;**[!UICONTROL 电子邮件]**&#x200B;作为I&#x200B;**[!UICONTROL 标识命名空间]**。
 
    用于导出的![区段](assets/segment-for-export.png)
 
