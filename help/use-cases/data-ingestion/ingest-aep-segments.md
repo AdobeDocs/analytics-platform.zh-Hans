@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
 role: Admin
-source-git-commit: fc62e87c3a69302c4084bf8c0f6c16520e65d60d
+source-git-commit: 477b9850f923038f399f4399e2cb6c0970964052
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1577'
 ht-degree: 11%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 11%
 ## 先决条件
 
 * 访问[Experience Platform](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/home)，特别是实时客户个人资料。
-* 创建和管理Experience Platform [架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/home)和[数据集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/overview)的访问权限。
+* 创建和管理Experience Platform [架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/home)和[数据集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)的访问权限。
 * 访问[Experience Platform查询服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/home) （以及编写SQL的能力）。
 * 访问可执行某些数据转换的工具。
 * 访问 Customer Journey Analytics. 您需要是[Customer Journey Analytics产品管理员](/help/technotes/access-control.md)才能创建和修改Customer Journey Analytics连接和数据视图。
@@ -56,7 +56,7 @@ ht-degree: 11%
 
 ### 创建启用配置文件的数据集
 
-您需要基于基于核心的&#x200B;**[!UICONTROL XDM Individual Profile]**&#x200B;架构创建数据集。 在Experience Platform UI中创建数据集时，无法选择该基于核心的XDM Individual Profile作为架构。 请改用[目录服务API基于](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/create#create-a-dataset)架构创建数据集`_xdm.context.profile__union`。
+您需要基于基于核心的&#x200B;**[!UICONTROL XDM Individual Profile]**&#x200B;架构创建数据集。 在Experience Platform UI中创建数据集时，无法选择该基于核心的XDM Individual Profile作为架构。 请改用[目录服务API基于](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/create#create-a-dataset)架构创建数据集`_xdm.context.profile__union`。
 
 +++ 创建数据集请求
 
@@ -102,7 +102,7 @@ curl -X POST \
 
 ### 导出受众
 
-将所选受众导出到刚刚创建的数据集中。 使用[分段服务API创建将受众发送到数据集的导出作业](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/segmentation/api/export-jobs#create)。
+将所选受众导出到刚刚创建的数据集中。 使用[分段服务API创建将受众发送到数据集的导出作业](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/export-jobs#create)。
 
 +++ 导出作业请求
 
@@ -170,7 +170,7 @@ curl -X POST https://platform.adobe.io/data/core/ups/export/jobs \
 
 +++
 
-使用[分段服务API检查导出作业](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/segmentation/api/export-jobs#get)的状态。
+使用[分段服务API检查导出作业](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/export-jobs#get)的状态。
 
 +++ 检索特定的导出作业请求
 
@@ -244,6 +244,7 @@ WHERE value.status = 'realized' AND (key = '{AUDIENCE_ID_1}' OR key = 'AUDIENCE_
 其中：
 
 * `IDENTITY_TO_USE_AS_PERSON_ID`是您定义为导出作业一部分的字段之一。 例如：`_demoemea.identification.core.email`。
+* `DATASET_TABLE_NAME`是数据集的表名称。
 * `AUDIENCE_ID_x`是您定义为导出作业一部分的受众。 您需要再次指定这些受众，因为导出作业中的规范是行级过滤器。 该行级过滤器返回指定区段的配置文件，以及每个配置文件的所有区段成员资格。
 
 
@@ -336,7 +337,7 @@ WHERE value.status = 'realized' AND (key = '{AUDIENCE_ID_1}' OR key = 'AUDIENCE_
    1. （可选）输入&#x200B;**[!UICONTROL 描述]**。
    1. 选择&#x200B;**[!UICONTROL 完成]**。
 1. 设置架构以包含自定义字段组（例如&#x200B;**[!UICONTROL 受众成员资格]**），该自定义字段组包含名为&#x200B;**[!UICONTROL audienceMembershipId]**&#x200B;和&#x200B;**[!UICONTROL audienceMembershipName]**&#x200B;的两个字段。
-1. 确保&#x200B;**[!UICONTROL personID]**&#x200B;字段是&#x200B;**[!UICONTROL 标识]**、**[!UICONTROL 主标识]**，并且具有&#x200B;**[!UICONTROL 电子邮件]**&#x200B;作为I&#x200B;**[!UICONTROL 标识命名空间]**。
+1. 确保&#x200B;**[!UICONTROL personID]**&#x200B;字段是&#x200B;**[!UICONTROL 标识]**、**[!UICONTROL 主标识]**，并且具有&#x200B;**[!UICONTROL 电子邮件]**&#x200B;作为I**[!UICONTROL 标识命名空间]**。
 
    用于导出的![区段](assets/segment-for-export.png)
 
@@ -350,7 +351,7 @@ WHERE value.status = 'realized' AND (key = '{AUDIENCE_ID_1}' OR key = 'AUDIENCE_
 
 在 Experience Platform UI 中：
 
-1. 选择&#x200B;**[!UICONTROL 数据管理]** > ![架构](/help/assets/icons2/Schema.svg) **[!UICONTROL 数据集]**。
+1. 选择&#x200B;**[!UICONTROL 数据管理]** > ![数据](/help/assets/icons2/Data.svg) **[!UICONTROL 数据集]**。
 1. 选择![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL 创建数据集]**。
 1. 选择&#x200B;**[!UICONTROL 使用架构创建数据集]**。
 1. 在&#x200B;**[!UICONTROL 从架构]**&#x200B;向导的&#x200B;**[!UICONTROL 选择架构]**&#x200B;步骤中：
@@ -412,7 +413,7 @@ WHERE value.status = 'realized' AND (key = '{AUDIENCE_ID_1}' OR key = 'AUDIENCE_
 
 ## Step 1: Select audiences in Real-time Customer Profile {#audience}
 
-Experience Platform [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans) lets you see a holistic view of each individual customer by combining data from multiple channels, including online, offline, CRM, and third party. 
+Experience Platform [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) lets you see a holistic view of each individual customer by combining data from multiple channels, including online, offline, CRM, and third party. 
 
 You likely already have audiences in RTCP that may have come from various sources. Select one or more audiences to ingest into Customer Journey Analytics. For example, WKND Fly Platinum and Gold Fly Club Members.
 
@@ -421,19 +422,19 @@ You likely already have audiences in RTCP that may have come from various source
 
 ## Step 2: Create a Profile Union dataset for the export
 
-In order to export the audience to a dataset that you can ingest in Customer Journey Analytics as profiles, create a dataset whose schema is a Profile [Union schema](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=zh-Hans#understanding-union-schemas).
+In order to export the audience to a dataset that you can ingest in Customer Journey Analytics as profiles, create a dataset whose schema is a Profile [Union schema](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html#understanding-union-schemas).
 
 Union schemas are composed of multiple schemas that share the same class and have been enabled for Profile. The union schema enables you to see an amalgamation of all of the fields contained within schemas sharing the same class. Real-time Customer Profile uses the union schema to create a holistic view of each individual customer.
 
 ## Step 3: Export an audience to the Profile Union dataset via API call {#export}
 
-Before you can bring an audience into Customer Journey Analytics, you need to export it to an Adobe Experience Platform dataset. This can only be done using the Segmentation API, and specifically the [Export Jobs API Endpoint](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=zh-Hans). 
+Before you can bring an audience into Customer Journey Analytics, you need to export it to an Adobe Experience Platform dataset. This can only be done using the Segmentation API, and specifically the [Export Jobs API Endpoint](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html). 
 
 You can create an export job using the audience ID of your choice, and put the results in the Profile Union Adobe Experience Platform dataset you created in Step 2. Although you can export various attributes/events for the audience, you only need to export the specific profile ID field that matches the person ID field used in the Customer Journey Analytics connection you will be leveraging (see below in Step 5).
 
 ## Step 4: Edit the export output 
 
-The results of the export job need to be transformed into a separate Profile dataset in order to be ingested into Customer Journey Analytics.  This transformation can be done with [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans), or another transformation tool of your choice. We only need the Profile ID (that will match the Person ID in Customer Journey Analytics) and one or more audience ID(s) to do the reporting in Customer Journey Analytics.
+The results of the export job need to be transformed into a separate Profile dataset in order to be ingested into Customer Journey Analytics.  This transformation can be done with [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html), or another transformation tool of your choice. We only need the Profile ID (that will match the Person ID in Customer Journey Analytics) and one or more audience ID(s) to do the reporting in Customer Journey Analytics.
 
 The standard export job, however, contains more data and so we need to edit this output to remove extraneous data, as well as move some things around.  Also, you need to create a schema/dataset first before you add the transformed data to it.
 
