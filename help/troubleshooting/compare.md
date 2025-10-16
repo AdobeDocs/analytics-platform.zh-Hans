@@ -7,7 +7,7 @@ exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: 查询服务；查询服务；sql 语法
 source-git-commit: d96404479aabe6020566e693245879b5ad4fad9c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '720'
 ht-degree: 100%
 
@@ -15,16 +15,16 @@ ht-degree: 100%
 
 # 将 Analytics 源连接器数据与 Adobe Analytics 进行比较
 
-当您的组织采用 Customer Journey Analytics 时，可能会发现 Adobe Analytics 和 Customer Journey Analytics 之间的数据存在一些差异。这些差异是正常的，可能有多种原因。Customer Journey Analytics 旨在使您可改善对于您在 Adobe Analytics 中的数据存在的某些限制。这种灵活性可能会导致 Customer Journey Analytics 以不同的方式解读数据。通过本文了解 Customer Journey Analytics 和 Adobe Analytics 会如何以不同方式处理您的数据。
+当您的组织采用 Customer Journey Analytics 时，可能会发现 Adobe Analytics 和 Customer Journey Analytics 之间的数据存在一些差异。这些差异是正常的，可能有多种原因。Customer Journey Analytics 旨在使您可改善对于您在 Adobe Analytics 中的数据存在的某些限制。这种灵活性可能会导致 Customer Journey Analytics 以不同的方式解读数据。通过本文了解 Customer Journey Analytics 和 Adobe Analytics 在处理您的数据时可能存在的差异。
 
-此页面假设您通过 [Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)将 Adobe Analytics 数据摄取到 Adobe Experience Platform，然后在 Customer Journey Analytics 中创建了一个[连接](/help/connections/overview.md)和[数据视图](/help/data-views/data-views.md)。
+此页面假设您通过 [Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)将 Adobe Analytics 数据摄取到 Adobe Experience Platform，然后在 Customer Journey Analytics 中创建了一个[连接](/help/connections/overview.md)和[数据视图](/help/data-views/data-views.md)。
 
 ![数据从 Adobe Analytics 通过数据连接器流向 Adobe Experience Platform，然后使用 CJA 连接流向 Customer Journey Analytics](assets/compare.png)。
 
 请注意以下原因可能会导致两个报告平台之间存在数据差异：
 
 * **不同的数据集或报告包**：确保 Adobe Analytics 中的报告包与源连接器从其中派生数据的报告包相同。
-* **日程表设置**：Adobe Analytics 中的报告包中包含的时区和其他日程表设置您可以配置。同样，Customer Journey Analytics 中的数据视图也有一个您可以控制的单独设置。如果需要对等性，请确保这些设置在两个产品之间是匹配的。
+* **日程表设置**：Adobe Analytics 中的报告包中包含的时区和其他日程表设置，您可以进行配置。同样，Customer Journey Analytics 中的数据视图也有一个您可以控制的单独设置。如果需要对等性，请确保这些设置在两个产品之间是匹配的。
 * **其他数据集**：Customer Journey Analytics 提供在一个连接中包含多个数据集的功能。这些差异包括其他事件数据集、轮廓数据集或查找数据集。此功能是 Adobe Analytics 与 Customer Journey Analytics 之间的关键区别，它允许深入了解跨渠道数据。
 * **拼接的数据集**：Adobe 提供分析两个数据集之间人员 ID 的功能，结果会生成一个包含拼接 ID 的新数据集。这些[拼接的数据集](/help/stitching/overview.md)中包含超出 Adobe Analytics 报告包所提供范围的额外数据。
 * **数据源**：Customer Journey Analytics 不包含上传到 Adobe Analytics 报告包的任何类型的[数据源](https://experienceleague.adobe.com/zh-hans/docs/analytics/import/data-sources/overview)，包括摘要数据源或交易 ID 数据源。
@@ -32,7 +32,7 @@ ht-degree: 100%
 
   >[!TIP]
   >
-  >Adobe 强烈建议 Adobe Analytics 中的维度使用“[!UICONTROL 最近（最后）]”的分配。此分配设置可以使 Customer Journey Analytics 中达到更大的归因灵活性。
+  >Adobe 强烈建议 Adobe Analytics 中的维度使用“[!UICONTROL 最近（最后）]”的分配。此分配设置可以使 Customer Journey Analytics 达到更大的归因灵活性。
 
 * **访问定义**：除了各维度和量度设置外，数据视图本身还包含可以完全改变访客数据解读方式的设置。例如，您可以将一个区段应用到整个数据视图（类似于 Adobe Analytics 中的[虚拟报告包](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/virtual-report-suites/vrs-about)）。您还可以更改访问持续时间的定义，或自动开始对任何所需事件的新访问。这些设置中的任何一个都会对 Customer Journey Analytics 和 Adobe Analytics 之间的报告差异产生显著影响。
 
