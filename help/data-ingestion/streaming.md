@@ -225,7 +225,7 @@ ht-degree: 83%
 
    选择&#x200B;**[!UICONTROL 下一步]**。
 
-6. [!UICONTROL 检查][!UICONTROL 添加数据]屏幕的步骤为您提供了 HTTP API 连接的概述。
+6. [!UICONTROL 检查]&#x200B;[!UICONTROL 添加数据]屏幕的步骤为您提供了 HTTP API 连接的概述。
 
    ![数据流详细信息](./assets/httpapi-review.png)
 
