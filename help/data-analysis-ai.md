@@ -149,7 +149,7 @@ Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/a
 
 **提示词：**&#x200B;在提示词窗口中输入&#x200B;*“添加利润。”*
 
-**回答：****[!UICONTROL 条形]**&#x200B;图仍然提供了最简洁的回答，而利润量度被添加到自由格式表中成为一列：
+**回答：**&#x200B;**[!UICONTROL 条形]**&#x200B;图仍然提供了最简洁的回答，而利润量度被添加到自由格式表中成为一列：
 
 ![条形图](/help/assets/ai-asst-result4.png)
 
@@ -259,7 +259,7 @@ Following the thumbs up or thumbs down selection, please make a selection for th
 >[!MORELIKETHIS]
 >
 >[组件设置](/help/data-views/component-settings/overview.md)
->>[数据字典](/help/components/data-dictionary/data-dictionary-overview.md)
->>[批准计算量度](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->>[共享区段](/help/components/segments/seg-share.md)
+>&#x200B;>[数据字典](/help/components/data-dictionary/data-dictionary-overview.md)
+>&#x200B;>[批准计算量度](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>&#x200B;>[共享区段](/help/components/segments/seg-share.md)
 >
