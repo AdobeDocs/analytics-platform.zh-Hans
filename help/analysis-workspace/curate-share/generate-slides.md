@@ -6,9 +6,9 @@ feature: Curate and Share
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 9e23382800326440ed2a583e80029c9f27bb2494
+source-git-commit: f6e64e850b8c416817b76697d869c10adb9b544b
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1177'
 ht-degree: 4%
 
 ---
@@ -17,21 +17,27 @@ ht-degree: 4%
 
 具有[必要权限](#permission-requirements-to-generate-slides)的用户可以从Analysis Workspace项目自动生成.pptx演示文稿。 在生成这些幻灯片演示文稿时，Customer Journey Analytics通过识别关键见解并将其转换为可供利益相关者使用的幻灯片，自动根据您的数据创建故事。
 
-此功能可减少从您的Workspace项目揭示发现结果所需的时间和精力，并且允许您快速构建管理层叙述并将业务影响传达给利益相关者。
-
-这个自动生成的数据故事允许分析人员专注于数据探索，而Customer Journey Analytics会编排分析人员的调查结果并将其格式化，以供利益相关者使用。
+此自动生成的数据故事可减少从Workspace项目揭示调查结果所需的时间、精力和专业知识。 分析人员可以更专注于数据探索，同时允许Customer Journey Analytics构建和格式化执行叙述，并将业务影响传达给利益相关者。
 
 ## 了解幻灯片演示文稿中的数据故事
 
-Analysis Workspace使用创新型人工智能在幻灯片演示文稿中创建数据故事。 这些数据故事通过提供其他上下文、呈现重要亮点并提供后续步骤的想法，对给定Workspace项目的分析进行了补充。 指出隐藏的趋势、异常、影响因素、关键驱动因素
+Analysis Workspace使用创作AI以幻灯片演示文稿格式创建基于Workspace数据的叙述。
+
+以下各节介绍数据故事提供的附加价值、项目中有助于塑造故事的必要元素以及每个演示输出中包含的关键元素。
 
 ### 数据故事提供的附加值
+
+数据故事通过让数据分析经验较少的用户访问数据，为Workspace项目提供价值和见解。
 
 数据故事通过以下方式补充给定Workspace项目的分析：
 
 * 提供其他上下文
 
 * 突出显示重要见解
+
+* 为给定上下文中的数据是好是坏提供指导
+
+* 评估某些变量是低估还是高估。
 
 * 揭示隐藏的趋势、异常和其他促成因素
 
