@@ -4,9 +4,9 @@ title: 实时报表概述
 feature: Real-time Reporting
 role: User
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: d8ff5191ea96b8871f6aaba1fc28211c22a13e0d
+source-git-commit: 0e5a64e78e5a471f8b7c9fc32fdbae2b2e70230a
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '780'
 ht-degree: 7%
 
 ---
@@ -14,8 +14,6 @@ ht-degree: 7%
 # 实时报表概述
 
 Customer Journey Analytics 中的实时报告功能可以实时显示并更新 Analysis Workspace 的一个或多个面板中的数据和可视化图表。
-
-{{release-limited-testing}}
 
 {{ultimate-package}}
 
@@ -59,6 +57,7 @@ Customer Journey Analytics 中的实时报告功能可以实时显示并更新 A
 | 3 | Adobe Analytics源连接器 | 17 分钟 | 105 分钟 |
 | 4 | 进入源连接器的其他源连接器（包括批量数据） | 25 小时 | 25 小时 |
 
+如果服务中断超过半小时，则解决问题后实时数据不会回填数据。 相反，实时报表会从服务重新开始工作的那一刻开始收集实时数据。 在此期间，不会丢失任何数据，并且仍可以使用实时报表之外的标准报表功能。
 
 ## 限制
 

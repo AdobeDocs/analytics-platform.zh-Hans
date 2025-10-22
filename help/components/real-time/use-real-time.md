@@ -4,7 +4,7 @@ title: 使用实时报表
 feature: Real-time Reporting
 role: User
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
-source-git-commit: d8ff5191ea96b8871f6aaba1fc28211c22a13e0d
+source-git-commit: 0e5a64e78e5a471f8b7c9fc32fdbae2b2e70230a
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 12%
@@ -18,8 +18,6 @@ ht-degree: 12%
 >title="实时刷新"
 >abstract="启用后，可实时刷新此面板中的数据和可视化内容。"
 
-{{release-limited-testing}}
-
 要使用实时报表，请在Workspace项目中的以下任何面板上启用&#x200B;**[!UICONTROL 实时刷新]**&#x200B;切换开关：
 
 * [”空白“面板](/help/analysis-workspace/c-panels/blank-panel.md)
@@ -27,7 +25,7 @@ ht-degree: 12%
 * [归因](/help/analysis-workspace/c-panels/attribution.md)
 * [下一项或上一项](/help/analysis-workspace/c-panels/next-previous.md)
 
-您会看到一条消息，其中包含数据最近刷新时的时间戳。 例如： [!UICONTROL &#x200B; *上次刷新时间： 07:55下午*]。
+您会看到一条消息，其中包含数据最近刷新时的时间戳。 例如： [!UICONTROL  *上次刷新时间： 07:55下午*]。
 
 从下拉菜单中选择要报告的实时时段。 可用选项包括：
 
@@ -39,7 +37,7 @@ ht-degree: 12%
 
 现在，当启用了实时刷新面板的浏览器选项卡处于活动状态时，面板中的所有可视化图表每分钟更新一次，最多更新30分钟。
 
-例如，查看下面的&#x200B;**[!UICONTROL 实时报表面板]**&#x200B;快照，该快照在时间从&#x200B;**[!UICONTROL 06]**&#x200B;移至&#x200B;**[!UICONTROL 06]**&#x200B;下午&#x200B;**[!UICONTROL *时刷新了:26pm*]**&#x200B;总收入/小时&#x200B;**[!UICONTROL *条形图可视化图表和:27总收入/小时&#x200B;*]**&#x200B;自由格式表。
+例如，查看下面的&#x200B;**[!UICONTROL 实时报表面板]**&#x200B;快照，该快照在时间从&#x200B;**[!UICONTROL 06]**&#x200B;移至&#x200B;**[!UICONTROL 06]**&#x200B;下午&#x200B;**[!UICONTROL *时刷新了:26pm*]**&#x200B;总收入/小时&#x200B;**[!UICONTROL *条形图可视化图表和:27总收入/小时&#x200B;*]**自由格式表。
 
 ![实时刷新](assets/real-time-refresh.gif)
 
