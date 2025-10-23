@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: 从Workspace报表生成演示
 feature: Curate and Share
 role: User
-source-git-commit: 99adae279a21c827579ebc3b58b336a9f0e3e8a4
+source-git-commit: 62ef107c52a96178fbf9e41fee49db757488525b
 workflow-type: tm+mt
-source-wordcount: '1535'
-ht-degree: 4%
+source-wordcount: '1506'
+ht-degree: 3%
 
 ---
 
@@ -106,9 +106,10 @@ Analysis Workspace通过考虑以下项目元素来创建数据故事：
    | **[!UICONTROL 封面标题]** | 指定演示文稿的标题。 此标题显示在演示文稿的标题幻灯片上。 |
    | **[!UICONTROL 包括演示者姓名]** | 指定演示者的名称。 此名称显示在演示文稿的标题幻灯片上，位于封面标题的下方。 |
    | **[!UICONTROL 要包括的面板和可视化图表]** | 选择要包含在演示文稿中的面板和可视化图表。 您最多可以包含50个可视化图表。<p>大多数面板和可视化图表都受支持。 有关不支持的面板和可视化的信息，请参阅[不支持的项目元素和功能](#unsupported-project-elements-and-features)。</p> |
-   | **[!UICONTROL 面板和可视化图表描述]** | 选择是否在生成的幻灯片演示文稿中包含面板和可视化图表描述。 |
-   | **[!UICONTROL 注释]** | 选择批注在生成的幻灯片演示文稿中是否可见。 有关注释的更多信息，请参阅[注释概述](/help/components/annotations/overview.md)。 |
    | **[!UICONTROL 强调组件]** | 从可视化图表中选择要在演示文稿中强调的量度和维度。 在创建数据故事的主题和总体叙述时，您选择的组件排名较高，具有更大的权重。 <p>未强调时，组件在演示文稿中显示如下：<ul><li>**量度和维度：**&#x200B;斜体</li><li>**Dimension项：**&#x200B;引号</li></ul></p><p>当应用强调时，组件在演示文稿中显示如下：</p><ul><li>**量度和维度：**&#x200B;斜体和粗体</li><li>**Dimension项目：**&#x200B;当强调相应的维度时为粗体<p>在图表中突出显示维度项时，也会对维度项应用颜色。</p></li></ul> |
+
+   <!-- add this later: - **[!UICONTROL Panel and visualization descriptions]** - Choose whether to include panel and visualization descriptions in your generated slide presentation. - 
+   - **[!UICONTROL Annotations]** - Choose whether annotations are visible in your generated slide presentation. For more information about annotations, see [Annotations overview](/help/components/annotations/overview.md).  -  -->
 
 1. （视情况而定）如果您希望以较少的步骤生成幻灯片，并且幻灯片演示不需要公司主题，请选择&#x200B;**[!UICONTROL 默认主题]**。
 
@@ -155,6 +156,8 @@ Analysis Workspace通过考虑以下项目元素来创建数据故事：
          选择&#x200B;**[!UICONTROL 浏览]**，然后浏览并从文件系统中选择您的自定义模板。
 
          确保上传的文件具有具有以下名称的主布局：“Title_Slide”、“Section_Divider”、“Title_Text”、“Title_Chart”、“Title_Two_Content_Mixed”、“Title_Three_Content_Mixed”。
+
+         最多支持15个主布局。
 
          支持大小最大为25MB的.pptx和.potx文件。
 
