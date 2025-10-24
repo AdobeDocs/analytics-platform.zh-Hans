@@ -5,23 +5,23 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
-source-git-commit: 4ce2eb397e15dcb081f7b9695ba2332a3eb17659
+source-git-commit: d1097ca5f981623283a7d02200d5023548046429
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '470'
 ht-degree: 4%
 
 ---
 
 # 转换数据集以进行 B2B 查找
 
-要支持对B2B数据（包括客户、机会、营销列表和营销活动）进行基于人员的查找，需要转换B2B查找数据集。
+为了支持对B2B数据（包括客户、机会、营销列表和营销活动）进行基于人员的查找，转换B2B查找数据集可以提高数据准确性。
 
 此转换仅适用于包含B2B查找架构数据的数据集，它基于以下类：
 
-* [XDM业务帐户人员关系](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
-* [XDM业务机会人员关系](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
-* [XDM商业营销列表成员](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
-* [XDM商业营销活动成员](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
+* [XDM业务帐户人员关系](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [XDM业务机会人员关系](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [XDM商业营销列表成员](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [XDM商业营销活动成员](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 >[!NOTE]
 >

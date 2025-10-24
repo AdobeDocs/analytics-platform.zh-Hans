@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: 1bfebb53fbe056ed6320380178c8b1ce8f7079f1
+source-git-commit: d1097ca5f981623283a7d02200d5023548046429
 workflow-type: tm+mt
-source-wordcount: '1276'
-ht-degree: 7%
+source-wordcount: '1373'
+ht-degree: 6%
 
 ---
 
 # 基于人员的 B2B 项目示例
 
-本文描述了一个用例，其中您想要在Customer Journey Analytics中正确报告典型基于人员的B2B设置上下文中的人员数据。 [Real-Time CDP B2B edition](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview)可帮助进行此类配置。  此用例说明了如何在Customer Journey Analytics中设置、配置和报告基于配置文件（人员）级别的B2B数据。
+本文描述了一个用例，其中您想要在Customer Journey Analytics中正确报告典型基于人员的B2B设置上下文中的人员数据。 [Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview)可帮助进行此类配置。  此用例说明了如何在Customer Journey Analytics中设置、配置和报告基于配置文件（人员）级别的B2B数据。
 
 [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}随着[Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md)的发布，发布了基于帐户的报表用例的单独部分。
 
@@ -22,7 +22,7 @@ ht-degree: 7%
 
 定义您的连接以包含来自Experience Platform的所有相关B2B数据集。 可以考虑添加到连接的数据集：
 
-| 数据集 | 架构 | 架构类型 | 基类 | 描述 |
+| 数据集（可选） | 架构 | 架构类型 | 基类 | 描述 |
 |---|---|---|---|---|
 | B2B活动数据集 | B2B活动模式 | 事件 | XDM ExperienceEvent | ExperienceEvent是所发生情况的事实记录，包括时间点和所涉及的个人身份。 ExperienceEvents可以是显式的（可直接观察的人类行为）或隐式的（在没有直接人类行为的情况下引发），并且无需聚合或解释即可记录。 体验事件对于时域分析至关重要，因为它们允许观察和分析给定时间段内发生的变化，并在多个时间段之间进行比较以跟踪趋势。 |
 | B2B人员数据集 | B2B人员模式 | 轮廓 | XDM个人资料 | XDM个人资料形成已识别和部分识别的个人的属性和兴趣的单一表示。 识别度较低的用户档案可能仅包含匿名行为信号，如浏览器Cookie，而识别度较高的用户档案可能包含详细的个人信息，如姓名、出生日期、位置和电子邮件地址。 随着用户档案的发展，它成为个人信息、身份信息、联系人详细信息和个人通信偏好设置的强大存储库。 |
@@ -43,7 +43,7 @@ ht-degree: 7%
 -->
 
 
-B2B查找架构、配置文件架构和事件架构之间的关系在Experience Platform内的B2B设置中定义。 查看[Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/rtcdp/schemas/b2b)中的架构，以及[在Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/relationship-b2b)中定义两个架构之间的多对一关系。
+B2B查找架构、配置文件架构和事件架构之间的关系在Experience Platform内的B2B设置中定义。 查看[Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/rtcdp/schemas/b2b)中的架构，以及[在Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b)中定义两个架构之间的多对一关系。
 
 
 要确保正确设置支持B2B数据基于人员的查找的连接，请使用下图进行概述并执行以下步骤：
@@ -56,20 +56,26 @@ B2B查找架构、配置文件架构和事件架构之间的关系在Experience 
 
    ![键 — 匹配的键](assets/key-matchingkey.png)
 
-   下表提供了每个数据集的[!UICONTROL 人员ID]、[!UICONTROL 键]和[!UICONTROL 匹配键]值的示例概述。
+   下表提供了每个数据集的[!UICONTROL 人员ID]、[!UICONTROL 键]和[!UICONTROL 匹配键]示例值的示例概述。
 
-   | 数据集 | 人员 ID | 键 | 匹配键<br/>（在事件数据集中） |
+   >[!IMPORTANT]
+   >
+   >下表中的&#x200B;**人员ID**、**键**&#x200B;和&#x200B;**匹配键**&#x200B;的值是&#x200B;**示例值**，并且在您的特定环境中可以不同。
+   >
+
+
+   | 数据集（可选） | 人员 ID | 键<br/> | 匹配键<br/>（在事件数据集中）<br/> |
    |---|---|---|---| 
    | B2B活动数据集 | SourceKey <br/>**personKey.sourceKey** | | |
    | B2B人员数据集 | SourceKey <br/>**b2b.personKey.sourceKey** | | |
-   | B2B帐户数据集 | | SourceKey <br/>**accountKey.sourceKey**&#x200B;❶ | SourceKey<br>（B2B人员数据集）<br/>**b2b.accountKey.sourceKey**&#x200B;❶ |
-   | B2B Opportunity数据集 | | Source Key <br/>**opportunityKey.sourceKey**&#x200B;❷ | SourceKey<br/>（B2B机会关系数据集）<br/>**opportunityKey.sourceKey**&#x200B;❷ |
-   | B2B Campaign数据集 | | SourceKey <br/>**campaignKey.sourceKey**&#x200B;❸ | SourceKey<br/>（B2B营销活动成员数据集）<br/>**campaignKey.sourceKey**&#x200B;❸<br/> |
-   | B2B营销列表数据集 | | SourceKey <br/>**marketingListKey.sourceKey**&#x200B;❹ | SourceKey<br/>（B2B营销列表成员数据集）<br/>**marketingListKey.sourceKey**&#x200B;❹ |
-   | B2B帐户人员关系数据集 | | SourceKey <br/>**personKey.sourceKey**&#x200B;❺ | Source Key<br/>（事件数据集）<br/>**personKey.sourceKey**&#x200B;❺ |
-   | B2B机会人员关系数据集 | | SourceKey <br/>**personKey.sourceKe** y❻ | Source Key<br/>（事件数据集）<br/>**personKey.sourceKey**&#x200B;❻ |
-   | B2B营销活动成员数据集 | | SourceKey <br/>**personKey.sourceKey**&#x200B;❼ | Source Key<br/>（事件数据集）<br/>**personKey.sourceKey**&#x200B;❼ |
-   | B2B营销列表成员数据集 | | SourceKey <br/>**personKey.sourceKey**&#x200B;❽ | Source Key<br/>（事件数据集）<br/>**personKey.sourceKey**&#x200B;❽ |
+   | B2B帐户数据集 | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br>（B2B人员数据集）<br/>**b2b.accountKey.sourceKey**❶ |
+   | B2B Opportunity数据集 | | Source Key <br/>**opportunityKey.sourceKey**❷ | SourceKey<br/>（B2B机会关系数据集）<br/>**opportunityKey.sourceKey**❷ |
+   | B2B Campaign数据集 | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/>（B2B营销活动成员数据集）<br/>**campaignKey.sourceKey**❸<br/> |
+   | B2B营销列表数据集 | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/>（B2B营销列表成员数据集）<br/>**marketingListKey.sourceKey**❹ |
+   | B2B帐户人员关系数据集 | | SourceKey <br/>**personKey.sourceKey**❺ | Source Key<br/>（事件数据集）<br/>**personKey.sourceKey**❺ |
+   | B2B机会人员关系数据集 | | SourceKey <br/>**personKey.sourceKe** y❻ | Source Key<br/>（事件数据集）<br/>**personKey.sourceKey**❻ |
+   | B2B营销活动成员数据集 | | SourceKey <br/>**personKey.sourceKey**❼ | Source Key<br/>（事件数据集）<br/>**personKey.sourceKey**❼ |
+   | B2B营销列表成员数据集 | | SourceKey <br/>**personKey.sourceKey**❽ | Source Key<br/>（事件数据集）<br/>**personKey.sourceKey**❽ |
 
 {style="table-layout:auto"}
 
@@ -84,6 +90,11 @@ B2B查找架构、配置文件架构和事件架构之间的关系在Experience 
 
 +++量度 
 
+>[!IMPORTANT]
+>
+>下表中的量度及其值（**组件名称**、**数据集**、**数据集类型**&#x200B;和&#x200B;**[!UICONTROL 架构路径]）**&#x200B;是&#x200B;**示例**。 为您的特定情况定义相关的B2B量度（组件名称、数据集、数据类型和架构路径）。
+>
+
 | 组件名称 | 数据集 | 数据类型 | 架构路径 |
 |---|---|---|---|
 | 年度帐户收入 | B2B帐户数据集 | 双精度型 | accountOrganization.annualRevenue.amount |
@@ -97,6 +108,11 @@ B2B查找架构、配置文件架构和事件架构之间的关系在Experience 
 +++
 
 +++维度
+
+>[!IMPORTANT]
+>
+>下表中的维度及其值（**组件名称**、**数据集**、**数据集类型**&#x200B;和&#x200B;**[!UICONTROL 架构路径]）**&#x200B;是&#x200B;**示例**。 为您的特定情况定义相关的B2B维度（组件名称、数据集、数据类型和架构路径）。
+>
 
 | 组件名称 | 数据集 | 数据类型 | 架构路径 |
 |---|---|---|---|
