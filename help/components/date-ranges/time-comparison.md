@@ -4,22 +4,28 @@ title: 日期比较
 feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
 role: User
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: 5a9cb206076755d5b34a8ec9108ca88a9468bfe3
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 95%
+source-wordcount: '757'
+ht-degree: 82%
 
 ---
 
 # 日期比较
 
-Analysis Workspace 中的日期对比功能可让您基于包含日期范围的任意列创建常见的日期对比分析，例如：同比（年对年）、环比（季对季、月对月）等。
+Analysis Workspace中的日期比较允许您采用包含日期范围的任何列来创建常见的日期比较，例如：年同比、季度同比、月同比，等等。
 
 ## 比较时段
 
 分析需要上下文，而这种上下文往往来自前一个时段。例如，问题&#x200B;*“相比去年同期，目前的表现提升了多少，或有所下降？”* 是理解您的业务的基础。日期对比功能会自动包含一个&#x200B;*差异*&#x200B;列，用于显示与指定时段相比的百分比变化。
 
 1. 创建一个[自由格式表格](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)，自由选择您希望在指定时段内进行对比的维度和量度。
+1. 在面板或列上设置时间段以确定比较时间范围，以及它是滚动时间比较还是固定时间比较。
+
+   要创建滚动时间比较，请将面板或列日期范围设置为滚动日期范围（例如&#x200B;**[!UICONTROL 最近7天]**、**[!UICONTROL 最近30天]**&#x200B;等）。
+
+   要创建固定时间比较，请将面板或列日期范围设置为自定义日期范围。
+
 1. 打开表格行的上下文菜单，然后选择&#x200B;**[!UICONTROL 比较时段]**。
 
    ![已选择“比较时段”的表格行](assets/compare-time.png)
