@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 9774e0e3af024823a03dbcd8d6766877f55e95d8
+source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 100%
+source-wordcount: '821'
+ht-degree: 74%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 100%
 >
 >您必须具有 **Select** 包或更高版本（用于[基于字段的拼接](fbs.md)）或者 **Prime** 包或更高版本（用于[基于图形的拼接](gbs.md)）才能使用本节中描述的功能。如果您不确定您拥有的是哪个 Customer Journey Analytics 包，请联系您的管理员。
 
-标识拼接（或简称为拼接）是一项强大的功能，可提升事件数据集对跨渠道分析的适用性。跨渠道分析是 Customer Journey Analytics 可以处理的主要用例，允许您基于常用标识符（人员 ID）对来自不同渠道的多个数据集的报告无缝进行组合和运行。
+标识拼接（或简称为拼接）是一项强大的功能，可提升事件数据集对跨渠道分析的适用性。跨渠道分析是Customer Journey Analytics的主要用例。 该功能允许您根据通用标识符（人员ID）对不同渠道的多个数据集无缝地组合和运行报表。
 
-当您合并具有相似人员 ID 的数据集时，将跨设备和渠道进行归因。例如，用户首先通过台式计算机上的广告访问了您的网站。该用户在下单时遇到了问题，随后致电客服团队以请求其帮助解决此问题。通过跨渠道分析，您可以将呼叫中心事件归因于最初点击的广告。
+当您合并具有相似人员 ID 的数据集时，将跨设备和渠道进行归因。例如，用户通过台式计算机上的广告访问您的网站。 用户购买产品，但随后订单出现问题。 然后，用户致电客服团队以帮助解决问题。 通过跨渠道分析，您可以将呼叫中心事件归因于用户最初点击的广告。
 
-然而，作为 Customer Journey Analytics 中连接的一部分的基于事件的数据集，并非全都填充了足够的数据以支持这种现成可用的归因方法。特别是，基于网页或基于移动的体验数据集通常没有所有事件可用的实际人员 ID 信息。
+然而，作为 Customer Journey Analytics 中连接的一部分的基于事件的数据集，并非全都填充了足够的数据以支持这种现成可用的归因方法。特别是，基于Web或基于移动设备的体验数据集通常没有可用于所有事件的实际人员ID信息。
 
-拼接方法允许在一个数据集的行内重新生成身份标识键值，确保每个事件都有可用的人员 ID（拼接 ID）。拼接方法会查看来自经过身份验证和未经身份验证的会话的用户数据，以确定可用作拼接 ID 的常用临时 ID（人员 ID）值。这种重新生成键值的方法可将不同的记录解析为单个拼接 ID，以在人员级别而非设备或 Cookie 级别上进行分析。
+拼接允许为一个数据集的行中的身份重新生成键值，以确保人员ID（拼接ID）在每个事件上均可用。 拼接查看来自经过身份验证和未经身份验证的会话的用户数据，以确定可用作拼接ID的通用人员ID值。 通过重新生成键值，可以将不同的记录解析为单个拼接ID，以供在人员级别，而不是设备或Cookie级别进行分析。
 
 Customer Journey Analytics 支持两种类型的拼接：[基于字段的拼接](fbs.md)和[基于图形的拼接](gbs.md)。
 
@@ -45,6 +45,12 @@ Customer Journey Analytics 支持两种类型的拼接：[基于字段的拼接]
 
 如果您在定义 Customer Journey Analytics 连接时将一个或多个拼接数据集与其他数据集（例如呼叫中心数据）相结合，您将受益于跨渠道分析。此连接配置假定那些其他数据集的每一行已经包含一个人员 ID，与拼接 ID 的情况类似。
 
+## 启用拼合
+
+您可以通过两种方式启用拼合：
+
+- [请求启用拼接](/help/stitching/use-stitching.md)
+- [在连接界面中启用拼接](/help/stitching/use-stitching-ui.md) [!BADGE Beta]{type=Informative}
 
 ## 限制
 
@@ -85,7 +91,7 @@ Customer Journey Analytics 支持两种类型的拼接：[基于字段的拼接]
 
 >[!MORELIKETHIS]
 >
->[基于字段的拼接](fbs.md)
+>[基于字段的拼合](fbs.md)
 >>[基于图形的拼接](gbs.md)
 >>[使用拼接](use-stitching.md)
 >>[验证拼接](validate.md)

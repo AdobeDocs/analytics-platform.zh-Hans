@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
-source-git-commit: f45a457d251767634e28984d7c75158dac6e51e8
+source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '657'
 ht-degree: 6%
 
 ---
@@ -49,7 +49,7 @@ The order success (purchase) events assign the data accurately to the correct em
 
 ### 最后验证归因
 
-上次身份验证将共享设备中的所有未知活动归因于上次进行身份验证的用户。 Experience Platform Identity服务基于最后验证归因构建图形，因此用于基于图形的拼合。 有关详细信息，请参阅[标识图链接规则](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details)。
+上次身份验证将共享设备中的所有未知活动归因于上次进行身份验证的用户。 Experience Platform Identity服务基于上次身份验证归因构建图形，因此用于基于图形的拼合。 有关详细信息，请参阅[标识图链接规则](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details)。
 
 在拼接中使用最后验证归因时，拼接ID会解析，如下表所示。
 

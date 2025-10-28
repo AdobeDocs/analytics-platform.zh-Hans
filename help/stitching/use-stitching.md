@@ -1,20 +1,20 @@
 ---
-title: 使用拼合
-description: 如何使用拼合
+title: 请求拼接
+description: 如何请求拼接
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: 1ee282d0bf91c1a2f27073d0755cf404148d4d5b
+source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 9%
+source-wordcount: '460'
+ht-degree: 8%
 
 ---
 
-# 使用拼合
+# 请求拼接
 
-如果贵组织满足所有[先决条件](overview.md#prerequisites)并了解常见的[限制](overview.md#limitations)和特定于拼接方法（[基于字段](fbs.md#limitations)和[基于图形](gbs.md#limitations)）的限制，则可以按照以下步骤在Customer Journey Analytics中开始使用拼接。
+如果贵组织满足所有[先决条件](overview.md#prerequisites)并了解常见的[限制](overview.md#limitations)和特定于拼接方法（[基于字段](fbs.md#limitations)和[基于图形](gbs.md#limitations)）的限制，则可以按照以下步骤在Customer Journey Analytics中请求并开始使用拼接。
 
 ## 选择选项
 
@@ -35,20 +35,19 @@ ht-degree: 9%
    - 要重新生成键值的数据集的数据集ID。
    - 所需数据集（每行都显示的标识符）的永久ID的列名称（身份路径和命名空间）。
    - 如果数据集支持`identityMap`：
-      - 对于基于字段的拼接，请为永久和临时ID指定命名空间。
+      - 对于基于字段的拼接，请为永久ID和人员ID指定命名空间。
       - 对于基于图的拼接，请指定持久ID的命名空间以及用于查询身份图的身份命名空间。
    - 如果数据集不支持`identityMap`：
-      - 对于基于字段的拼合，所需数据集的“临时ID”列名称（人员标识符，也用作连接上下文中数据集之间的链接）。
+      - 对于基于字段的拼合，是指所需数据集的人员ID的列名称（人员标识符，还充当连接上下文中数据集之间的链接）。
       - 对于基于图的拼接，为用于查询身份图的身份命名空间。
    - 您的回顾窗口和重播频率首选项。 查看您的Customer Journey Analytics程序包以了解[选项](#options)。
    - 沙盒名称。
 
 
-2. Adobe客户支持可与Adobe工程部门合作，以便在收到您的请求时启用拼合。 启用后，Adobe Experience Platform中会显示一个包含新拼接ID列的已重新生成键值的新数据集。 Adobe客户支持可以提供新数据集的ID。
-
+2. Adobe客户支持可与Adobe工程部门合作，以便在收到您的请求时启用拼合。 启用后，Adobe Experience Platform中会显示一个包含拼接ID列的已重新生成键值的数据集。 Adobe客户支持可以提供新数据集的ID。
 3. 首次打开时，Adobe会提供拼合数据的回填。 查看您的Customer Journey Analytics程序包，了解有关[选项](#options)的信息，该程序包已推出。
 
-4. 如果要在跨渠道分析中使用新拼接的数据集，则需要将新拼接的数据集添加到Customer Journey Analytics中的[连接](../connections/overview.md)。 然后，添加跨渠道分析所需的任何其他数据集，并为每个数据集选择正确的人员ID。
+4. 如果要在跨渠道分析中使用拼接的数据集，则需要将拼接的数据集添加到Customer Journey Analytics中的[连接](../connections/overview.md)。 然后，添加跨渠道分析所需的任何其他数据集，并为每个数据集选择正确的人员ID。
 
 5. 根据连接[创建数据视图](/help/data-views/create-dataview.md)。
 

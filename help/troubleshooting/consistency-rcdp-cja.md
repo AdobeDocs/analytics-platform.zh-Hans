@@ -4,10 +4,10 @@ title: 指标和受众会员资格的一致性
 role: Admin
 feature: Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: 7c906e30d54362713f5013c8661ee523938d4b0f
+source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 100%
+source-wordcount: '623'
+ht-degree: 90%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 100%
 
 ## 身份标识配置的差异
 
-Real-time CDP 和 Customer Journey Analytics 现在对个人的定义不同。Real-time CDP 完全依赖于[身份标识图](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=zh-Hans)中的信息来构建合并的轮廓。
+Real-time CDP 和 Customer Journey Analytics 现在对个人的定义不同。Real-time CDP 完全依赖于[身份标识图](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html)中的信息来构建合并的轮廓。
 
-可以将 Customer Journey Analytics 配置为使用 [拼接](../stitching/overview.md)。如果使用[基于字段的拼接](/help/stitching/fbs.md)作为拼接机制，您可以从数据湖中的某个数据集指定一个标识符来拼接该数据集中的数据，以改进合并轮廓，提升数据集。如果使用 [基于图形的拼接](/help/stitching/gbs.md)作为拼接机制，一种类似的过程是使用基于某个指定的身份标识命名空间的身份标识图。
+可以将 Customer Journey Analytics 配置为使用 [拼接](../stitching/overview.md)。如果您使用[基于字段的拼接](/help/stitching/fbs.md)作为拼接机制，则需从数据湖中的数据集中指定一个标识符，以拼接该数据集中的数据，从而提升具有改进合并用户档案的数据集。 如果您使用[基于图形的拼接](/help/stitching/gbs.md)作为拼接机制，则类似的过程是基于指定的身份命名空间使用身份图形。
 
 
 ## 数据集配置的差异
@@ -33,7 +33,7 @@ Real-time CDP 和 Customer Journey Analytics 现在对个人的定义不同。Re
 
 Customer Journey Analytics 允许在查询时进行广泛的数据修改，例如组合字段、拆分字段以及其他操作，如包含/排除、子字符串、重复值消除、会话和行级过滤。
 
-Real-time CDP 提供了一套不同的数据操作工具。 它应用[合并策略](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=zh-Hans)来确定哪些数据将被优先处理，哪些数据将合并以创建个人的统一视图。
+Real-time CDP 提供了一套不同的数据操作工具。 它应用[合并策略](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)来确定哪些数据将被优先处理，哪些数据将合并以创建个人的统一视图。
 
 ## TTL（生存时间）和数据摄取的差异
 

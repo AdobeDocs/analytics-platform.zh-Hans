@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 4cea79a6ba26a2e4f06bfc9c60fdfc03341a7d60
+source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
 workflow-type: tm+mt
-source-wordcount: '2084'
-ht-degree: 25%
+source-wordcount: '2069'
+ht-degree: 24%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 25%
 
 1. 登录到[Customer Journey Analytics](https://analytics.adobe.com)并创建一个空白的Workspace项目。
 2. 选择左侧的&#x200B;**[!UICONTROL **&#x200B;可视化图表&#x200B;**]**&#x200B;选项卡，然后将&#x200B;**[!UICONTROL **&#x200B;流量&#x200B;**]**&#x200B;可视化图表拖到右侧的画布上。
-3. 选择左侧的&#x200B;**[!UICONTROL **&#x200B;组件&#x200B;**]**&#x200B;选项卡，并将维度&#x200B;**[!UICONTROL **&#x200B;数据集ID **]**&#x200B;拖到标记为&#x200B;**[!UICONTROL **&#x200B; Dimension或项&#x200B;**]**&#x200B;的中心位置。
+3. 选择左侧的&#x200B;**[!UICONTROL **&#x200B;组件&#x200B;**]**&#x200B;选项卡，并将维度&#x200B;**[!UICONTROL **&#x200B;数据集ID **]**&#x200B;拖到标记为&#x200B;**[!UICONTROL ** Dimension或项&#x200B;**]**&#x200B;的中心位置。
 4. 此流量报告是交互式的。要将流量展开到后续或之前的页面，请选择任意值。 使用右键单击菜单可展开或折叠列。此外，还可以在同一流量报告中使用不同的维度。
 
 如果要重命名“数据集 ID”维度项，可使用查找数据集。
@@ -33,7 +33,7 @@ ht-degree: 25%
 
 ## 重播
 
-+++ 拼合重播访客可追溯到多久之前？
++++ 拼合重播配置文件可以追溯到多久之前？
 
 重新生成键值的回顾时间范围取决于您所需的数据重播频率。 例如，如果将拼合设置为每周重播一次数据，则重新生成键值的回顾时间范围为7天。 如果将拼合设置为每天重播一次数据，则重新生成键值的回顾时间范围为一天。
 
@@ -45,7 +45,7 @@ ht-degree: 25%
 
 在某些情况下，可能会有多人从同一设备登录。例如，在家中使用共享设备，在图书馆中使用共享 PC，或在零售商店中使用自助终端。
 
-临时 ID 会覆盖永久 ID，因此共享设备会被视为单独的人员（即使来自于同一设备也是如此）。
+人员ID会覆盖永久ID，因此共享设备会被视为单独的人员（即使来自同一设备也是如此）。
 
 有关详细信息，请参阅[共享设备](/help/use-cases/stitching/shared-devices.md)用例。
 
@@ -57,7 +57,7 @@ ht-degree: 25%
 
 在某些情况下，单个用户可以与许多永久性 ID 相关联。例如，经常清除浏览器的Cookie或使用浏览器私人/隐身模式的用户。
 
-对于基于字段的拼合，永久ID的数量与临时ID的数量无关。 单个用户可以属于任意数量的设备，而不会影响Customer Journey Analytics跨设备拼合的功能。
+对于基于字段的拼合，永久ID的数量与人员ID无关。 单个用户可以属于任意数量的设备，而不会影响Customer Journey Analytics跨设备拼合的功能。
 
 对于基于图的拼合，一个人在身份图中可以具有多个永久ID。 基于图形的拼接使用基于指定命名空间的永久ID。 如果同一命名空间存在更多永久ID，则使用词典编排的第一个永久ID。
 
@@ -75,7 +75,7 @@ ht-degree: 25%
 
 +++ 跨设备分析（传统Analytics中的一项功能）和跨渠道分析之间有何区别？
 
-[跨设备分析](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=zh-Hans)是传统Adobe Analytics特有的功能，它使您能够了解人们如何跨设备操作。 该功能提供了两种将设备数据链接在一起的工作流：基于字段的拼接和设备图。
+[跨设备分析](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html)是传统Adobe Analytics特有的功能，它使您能够了解人们如何跨设备操作。 该功能提供了两种将设备数据链接在一起的工作流：基于字段的拼接和设备图。
 
 跨渠道分析是特定于Customer Journey Analytics的用例，通过该用例，您可以同时了解人们如何跨设备和跨渠道操作。 它拼合数据集的人员ID，允许将该数据集与其他数据集无缝组合。 该功能在设计上类似于基于跨设备分析的字段拼接，但由于传统Analytics和Customer Journey Analytics之间的数据架构不同，因此实施方法也不同。 有关详细信息，请参阅[拼接](overview.md)和[跨渠道分析](../use-cases/cross-channel/cross-channel.md)用例。
 
@@ -94,20 +94,20 @@ Adobe将根据当地和国际法律处理隐私请求。 Adobe 提供了 [Adobe 
 
 举例来说，可以想象以下用于标识的数据，即拼接之前和拼接之后的事件。
 
-| 身份标识映射 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 |
+| 身份标识映射 | Id | timestamp | 永久ID | 永久命名空间 | 人员IO | 人员命名空间 |
 |---|---|---|---|---|---|---|
 |  | 1 | ts1 | 123 | ecid | Bob | CustId |
 |  | 2 | ts2 | 123 | ecid | Alex | CustId |
 
 
-| 事件数据集 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 |
+| 事件数据集 | Id | timestamp | 永久ID | 永久命名空间 | 人员ID | 人员命名空间 |
 |---|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ecid | | |
 | | 2 | ts1 | 123 | ecid | Bob | CustId |
 | | 3 | ts2 | 123 | ecid | Alex | CustId |
 
 
-| 拼接数据集 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 | 拼接 ID | 拼接的命名空间 |
+| 拼接数据集 | Id | timestamp | 永久ID | 永久命名空间 | 人员ID | 人员命名空间 | 拼接ID | 拼接的命名空间 |
 |---|---|---|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ecid | | | Bob | CustId |
 | | 2 | ts1 | 123 | ecid | Bob | CustId | Bob | CustId |
@@ -118,20 +118,20 @@ Adobe将根据当地和国际法律处理隐私请求。 Adobe 提供了 [Adobe 
 
 当收到具有CustID Bob的客户的隐私请求时，将删除具有删除线条目的行。 使用标识映射重新获取其他事件。 例如，拼接数据集中的第一个拼接ID已更新为&#x200B;**Alex**。
 
-| 身份标识映射 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 |
+| 身份标识映射 | Id | timestamp | 永久ID | 永久命名空间 | 人员ID | 人员命名空间 |
 |:---:|---|---|---|---|---|---|
 | ![删除大纲](/help/assets/icons/DeleteOutline.svg) | ~~1~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
 |  | 2 | ts2 | 123 | ecid | Alex | CustId |
 
 
-| 事件数据集 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 |
+| 事件数据集 | Id | timestamp | 永久ID | 永久命名空间 | 人员ID | 人员命名空间 |
 |:---:|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ecid | | |
 | ![删除大纲](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
 | | 3 | ts2 | 123 | ecid | Alex | CustId |
 
 
-| 拼接数据集 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 | 拼接 ID | 拼接的命名空间 |
+| 拼接数据集 | Id | timestamp | 永久ID | 永久命名空间 | 人员ID | 人员命名空间 | 拼接ID | 拼接的命名空间 |
 |:---:|---|---|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ecid | | | **Alex** | CustId |
 | ![删除大纲](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ | ~~Bob~~ | ~~CustId~~ |
@@ -142,20 +142,20 @@ Adobe将根据当地和国际法律处理隐私请求。 Adobe 提供了 [Adobe 
 
 当收到具有CustID Bob的客户的隐私请求时，将删除具有删除线条目的行。 使用永久id重新获取其他事件。 例如，拼接数据集中的第一个拼接ID已更新为&#x200B;**123**。
 
-| 身份标识映射 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 |
+| 身份标识映射 | Id | timestamp | 永久ID | 永久命名空间 | 人员ID | 人员命名空间 |
 |:---:|---|---|---|---|---|---|
 | ![删除大纲](/help/assets/icons/DeleteOutline.svg) | ~~1~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
 |  | 2 | ts2 | 123 | ecid | Alex | CustId |
 
 
-| 事件数据集 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 |
+| 事件数据集 | Id | timestamp | 永久ID | 永久命名空间 | 人员ID | 人员命名空间 |
 |:---:|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ecid | | |
 | ![删除大纲](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
 | | 3 | ts2 | 123 | ecid | Alex | CustId |
 
 
-| 拼接数据集 | Id | timestamp | 永久ID | 永久命名空间 | 临时id | 瞬态命名空间 | 拼接 ID | 拼接的命名空间 |
+| 拼接数据集 | Id | timestamp | 永久ID | 永久命名空间 | 人员ID | 人员命名空间 | 拼接ID | 拼接的命名空间 |
 |:---:|---|---|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ecid | | | **123** | ecid |
 | ![删除大纲](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ | ~~Bob~~ | ~~CustId~~ |
@@ -165,23 +165,23 @@ Adobe将根据当地和国际法律处理隐私请求。 Adobe 提供了 [Adobe 
 
 ## 持久ID值为空
 
-+++ 如果一个或多个事件中的永久 ID 字段为空，会发生什么情况？
++++ 如果一个或多个事件中的永久ID字段为空，会发生什么情况？
 
-如果在要拼合的数据集内，某个事件的持久ID字段为空，则会通过以下两种方式之一确定该事件的拼合ID：
+如果在要拼合的数据集内，某个事件的持久ID字段为空，则该事件的拼合ID将通过以下两种方式之一确定：
 
-* 如果“临时ID”字段不为空，Customer Journey Analytics会将临时ID中的值用作拼合ID。
-* 如果“临时ID”字段为空，Customer Journey Analytics还会将“拼合ID”留空。 在这种情况下，事件中的永久ID、临时ID和拼合ID全部为空。 使用正在拼接的数据集从任何Customer Journey Analytics连接中删除这些类型的事件，其中，拼接ID被选为人员ID。
+* 如果临时ID字段不为空，Customer Journey Analytics会将临时ID中的值用作拼合ID。
+* 如果临时ID字段为空，Customer Journey Analytics还会将拼合ID保留为空。 在这种情况下，事件的永久ID、临时ID和拼合ID全部为空。 使用拼接的数据集从任何Customer Journey Analytics连接中删除这些类型的事件，其中拼接的ID被选作人员ID。
 
 +++
 
 
-## 未定义的临时ID值
+## 未定义的人员ID值
 
-+++ 如果一个或多个事件中的临时ID字段具有占位符值（如`Undefined`），会发生什么情况？
++++ 如果一个或多个事件中的人员ID字段具有占位符值（如`Undefined`），会发生什么情况？
 
 务必要谨慎，当将拼合应用于将占位符值用于临时ID的数据时，会出现“人员折叠”。 在下面的示例表中，源自于CRM系统数据集的未定义人员ID被填充为“Undefined”值，从而导致人员的表示不正确。
 
-| 事件 | 时间戳 | 永久性ID(Cookie ID) | 临时ID（登录ID） | 拼合ID（重播后） |
+| 事件 | 时间戳 | 永久性ID(Cookie ID) | 临时ID | 拼合ID（重播后） |
 |---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | 123 | - | **科里** |
 | 2 | 2023-05-12 12:02 | 123 | 科里 | **科里** |
@@ -207,7 +207,7 @@ Customer Journey Analytics中的某些指标与传统Analytics中的指标相似
 | ----- | ----- | ----- | ----- |
 | **人员** =将拼合ID选为人员ID的不同人员ID数。 **人员数** 可能高于或低于传统 Adobe Analytics 中的&#x200B;**独特访客数**，具体取决于拼接过程的结果。 | **人员** =不同人员ID的数量（根据选定为人员ID的列）。 在Customer Journey Analytics中将&#x200B;**用作人员ID时，Analytics源连接器数据集中的**&#x200B;人员&#x200B;**类似于传统Adobe Analytics中的**&#x200B;独特访客`endUserIDs._experience.aaid.id`。 | **独特访客** = 不同访客 ID 的数量。**独特访客**&#x200B;可能与不同 **ECID** 的数量不一致。 | 请参阅[人员数](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=zh-Hans)。 |
 | **会话**：根据 Customer Journey Analytics 数据视图中的会话设置定义。拼接过程可能会将来自多个设备的各个会话组合成单个会话。 | **会话**：根据 Customer Journey Analytics 数据视图中特定的会话设置定义。 | **访问数**：请参阅[访问数](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=zh-Hans)。 | **访问数**：根据 [CDA 虚拟报告包](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=zh-Hans)中特定的会话设置定义。 |
-| **活动**= Customer Journey Analytics 中拼接数据的行数。该量度通常接近于传统 Adobe Analytics 中的&#x200B;**“发生次数”。**&#x200B;但是，请注意上面关于具有空白永久ID的行的常见问题解答。 | **活动**= Customer Journey Analytics 中未拼接数据的行数。该量度通常接近于传统 Adobe Analytics 中的&#x200B;**“发生次数”。**&#x200B;但是，请注意，如果任何事件在Experience Platform数据湖的未拼接数据中有空白的人员ID，则Customer Journey Analytics中不包括这些事件。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=zh-Hans)。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=zh-Hans)。 |
+| **活动**= Customer Journey Analytics 中拼接数据的行数。该量度通常接近于传统 Adobe Analytics 中的&#x200B;**“发生次数”。**&#x200B;但是，请注意上面关于具有空白永久ID的行的常见问题解答。 | **活动**= Customer Journey Analytics 中未拼接数据的行数。该量度通常接近于传统 Adobe Analytics 中的&#x200B;**“发生次数”。**&#x200B;但是，请注意，如果任何事件在Experience Platform数据湖的未拼接数据中具有空白的人员ID，则Customer Journey Analytics中不包括这些事件。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=zh-Hans)。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=zh-Hans)。 |
 
 Customer Journey Analytics和Adobe Analytics中的其他指标可能类似。 例如，Adobe Analytics [自定义事件](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=zh-Hans) 1-100的总数在传统Adobe Analytics和Customer Journey Analytics之间是可比较的（无论是已拼合还是未拼合）。 Customer Journey Analytics与Adobe Analytics之间的功能差异（如消除重复事件）[可能会导致这两种产品之间存在差异。](/help/getting-started/aa-vs-cja/cja-aa.md)
 
@@ -217,7 +217,7 @@ Customer Journey Analytics和Adobe Analytics中的其他指标可能类似。 �
 
 +++ Customer Journey Analytics能否使用身份映射字段？
 
-可以，Customer Journey Analytics可以对基于[字段的](/help/stitching/fbs.md#identitymap)和基于图形的[3拼接使用标识映射字段。](/help/stitching/gbs.md#identitymap)
+可以，Customer Journey Analytics可以为基于[字段的](/help/stitching/fbs.md#identitymap)和基于图形的[拼合使用标识映射字段。](/help/stitching/gbs.md#identitymap)
 
 +++
 
@@ -275,6 +275,6 @@ curl -X POST \
 
 当您未获得实时客户数据配置文件的许可时，在请求中对`unifiedProfile`标记的任何使用都会返回错误。
 
-有关详细信息，请参阅[创建为配置文件和标识启用的数据集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity)。
+有关详细信息，请参阅[创建为配置文件和标识启用的数据集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity)。
 
 +++ 

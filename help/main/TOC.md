@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 9c584bb7c66e9e6b2ef2fc49802fb6839db1d70a
-workflow-type: ht
-source-wordcount: '1310'
-ht-degree: 100%
+source-git-commit: 3e87e9edd69229d5228de0f96d2525614172e725
+workflow-type: tm+mt
+source-wordcount: '1308'
+ht-degree: 99%
 
 ---
 
@@ -438,7 +438,7 @@ ht-degree: 100%
    + [概述](/help/stitching/overview.md)
    + [基于字段的拼合](/help/stitching/fbs.md)
    + [基于图形的拼合](/help/stitching/gbs.md)
-   + [使用拼合](/help/stitching/use-stitching.md)
+   + [请求拼接](/help/stitching/use-stitching.md)
    + [使用拼合](/help/stitching/use-stitching-ui.md)
    + [创建和管理拼合数据集](/help/stitching/stitching-ui.md)
    + [验证拼合](/help/stitching/validate.md)
