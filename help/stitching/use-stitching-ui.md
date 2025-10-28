@@ -6,16 +6,16 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 badgePremium: label="Beta 版" type="Informative"
-source-git-commit: 0afe57047e2038f1acd9f88a1e7992da9a2819b1
+source-git-commit: 23b890ec6a3266d1ca0621b09264f1d6a2f82645
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '808'
 ht-degree: 3%
 
 ---
 
 # 使用拼合
 
-您可以对作为连接的一部分配置的一个或多个事件数据集启用拼合。 您可以为拼合启用的事件数据集的数量由您许可的Customer Journey Analytics包决定。
+您可以对作为连接的一部分配置的一个或多个事件数据集启用拼合。 您许可的Customer Journey Analytics包将决定您能够为拼合启用的事件数据集数量。
 
 {{release-limited-testing}}
 
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 要在连接UI中对事件数据集启用拼合，请执行以下操作：
 
-* 必须已定义数据集所基于的架构：
+* 数据集所基于的架构应具有：
 
    * 多个配置为标识的字段，允许您为永久ID和人员ID选择不同的值。
    * 至少一个标记为具有关联命名空间的主身份的字段，以防您将身份映射和主身份命名空间用于永久ID或人员ID。
@@ -57,14 +57,14 @@ ht-degree: 3%
 
      其中：
 
-      * `{PERSISTENT_ID_FIELD}`是持久ID的字段。 例如：`identityMap.ecid[0]`。
+      * `{PERSISTENT_ID_FIELD}`是永久ID的字段。 例如：`identityMap.ecid[0]`。
       * `{DATASET_TABLE_NAME}`是事件数据集的表名称。
       * `{FORMAT_STRING}`是时间戳字段的格式字符串。 例如：`MM/DD/YY HH12:MI AM`。
       * `{START_DATE} `是开始日期。 例如：`2024-01-01 00:00:00`。
       * `{END_DATE}`是标准格式的结束日期。 例如：`2024-01-08 00:00:00`。
 
 
-   * 人员ID — 查询7天的数据，其中人员ID字段不为null，并除以针对数据集中所有事件的7天数据查询。 此百分比应高于5%。
+   * 人员ID — 查询7天的数据，其中人员ID字段不为null，并除以针对数据集中所有事件的7天数据查询。 该百分比应高于5%。
 
      可用于验证的查询示例：
 
@@ -127,7 +127,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >您必须有权使用身份图。
+   >确保您有权使用身份图。
    >
 
    之前，将显示&#x200B;**[!UICONTROL 更改为身份图]**&#x200B;对话框，以确保您在使用身份图进行拼合之前[已完成数据集](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service)的身份图的设置。 选择&#x200B;**[!UICONTROL 继续]**&#x200B;以继续。
@@ -141,7 +141,7 @@ ht-degree: 3%
 
 ## 限制
 
-除了[基于字段的拼接限制](/help/stitching/fbs.md#limitations)和[基于图形的拼接限制](/help/stitching/gbs.md#limitations)之外，在“连接”界面中启用拼接时，还将应用以下限制：
+除了[基于字段的拼接限制](/help/stitching/fbs.md#limitations)和[基于图形的拼接限制](/help/stitching/gbs.md#limitations)之外，在Connections界面中启用拼接时，还将应用以下限制：
 
-* 作为单个连接的一部分，您只能拼合一次事件数据集。 您不能定义多个相同的事件数据集，也不能对每个实例使用单独的拼接配置。 如果要对同一数据集应用不同的拼接配置，请为每个配置使用单独的连接。
+* 作为单个连接的一部分，您只能拼合一次事件数据集。 您不能多次定义同一事件数据集，也不能对每个实例使用单独的拼接配置。 如果要对同一数据集应用不同的拼接配置，请为每个配置使用单独的连接。
 
