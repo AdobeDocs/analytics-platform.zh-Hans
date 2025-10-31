@@ -5,10 +5,10 @@ exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 7d354ce65f72838c007d2b9faf02848d86fd7c0f
+source-git-commit: 2fd79da264d60bb90e1193ead2eee67602404b4c
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 93%
+source-wordcount: '435'
+ht-degree: 63%
 
 ---
 
@@ -33,19 +33,17 @@ ht-degree: 93%
 
 在某些报告中，您可能希望将订单归因到“付费”搜索。在其他报告中，您可能希望将订单归因到社交。通过归因，您能够控制报告的这一方面。
 
-## 设置组件的默认归因模型
+## 设置组件的归因模型
 
-您可以通过更新数据视图中的量度设置来为给定量度设置默认归因模型。这样做会在 Analysis Workspace 中使用该量度时覆盖其归因模型。
+您可以通过更新数据视图中给定组件的设置来更改该组件的默认归因模型。 只要在Analysis Workspace中使用组件，这样做就会覆盖该组件的归因模型。
 
 >[!NOTE]
 >
->启用量度归因时请考虑以下事项：
+>对量度启用非默认归因模型时，请考虑以下事项：
 >
->* **在具有&#x200B;*单个维度*的报告中使用该组件：**&#x200B;当使用非默认归因模型时，该组件的归因将忽略分配模型。
+>* **在具有&#x200B;*单个维度*：**&#x200B;的报表中使用量度时，该量度的归因将覆盖在维度上设置的分配模型。 例如，具有“首次接触”归因的量度将覆盖“最近”维度分配。
 >
->* **在具有&#x200B;*多个维度*的报告中使用该组件：**&#x200B;当使用非默认归因模型时，该组件的归因将保留分配模型。
->
->   只有[将数据导出到云](/help/analysis-workspace/export/export-cloud.md)时，才可以使用多个维度。
+>* **在具有&#x200B;*多个维度的报表中使用量度时*：**&#x200B;该量度的归因将应用于每个维度的分配模型之上。 例如，具有“首次接触”归因的量度应用于“最近”维度分配。
 >
 > 有关分配的详细信息，请参阅[持久性组件设置](/help/data-views/component-settings/persistence.md)。
 

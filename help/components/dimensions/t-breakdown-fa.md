@@ -6,7 +6,7 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: a32f2c308b8fc1b463dc00d77008063035968241
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 56%
@@ -21,7 +21,7 @@ ht-degree: 56%
 
    ![显示从所选内容创建警报的步骤结果。](assets/breakdown.png)
 
-1. 从子菜单中选择&#x200B;**[!UICONTROL 维度]**、**[!UICONTROL 量度]**、**[!UICONTROL 区段]**&#x200B;或&#x200B;**[!UICONTROL 日期范围]**，然后选择一个项目。 或只是在&#x200B;**[!UICONTROL *搜索&#x200B;*]**&#x200B;字段中搜索组件。
+1. 从子菜单中选择&#x200B;**[!UICONTROL 维度]**、**[!UICONTROL 量度]**、**[!UICONTROL 区段]**&#x200B;或&#x200B;**[!UICONTROL 日期范围]**，然后选择一个项目。 或只是在&#x200B;**[!UICONTROL *搜索&#x200B;*]**字段中搜索组件。
 
 您可以按维度项目或受众区段，在选定的时间期限内划分量度。此外，您还可以进一步深入到更精细的粒度级别。
 
@@ -34,8 +34,6 @@ ht-degree: 56%
 默认情况下，划分固定在静态行项目。 例如，假设您按营销渠道细分排名前 3 的“页面”维度项（主页、搜索结果、结账）。然后，您离开项目，两周后返回。再次打开项目时，排名前 3 的页面已更改，此时“主页”、“搜索结果”和“结账”页面成为排名第 4-6 的页面。默认情况下，营销渠道划分仍会显示在“主页”、“搜索结果”和“结账”下方，即使三者现在分别位于第4-6行中。
 
 相反，**按位置**&#x200B;划分，始终划分排名前3的项目，而不管这些项目是什么。 回顾该示例，当您重新打开项目时，营销渠道细分与表中排名前 3 的页面相关联。而不是主页、搜索结果和结帐，三者现在位于第4-6行中。 请参阅[行设置](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)如何配置此设置。
-
-
 
 ## 将归因模型应用于划分
 
@@ -53,7 +51,7 @@ ht-degree: 56%
 
 >[!BEGINSHADEBOX]
 
-有关演示视频，请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace中的Dimension](https://video.tv.adobe.com/v/41374?captions=chi_hans&quality=12&learn=on){target="_blank"}。
+有关演示视频，请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[Analysis Workspace中的Dimension](https://video.tv.adobe.com/v/23971?quality=12&learn=on){target="_blank"}。
 
 {{videoaa}}
 
@@ -62,7 +60,7 @@ ht-degree: 56%
 
 >[!BEGINSHADEBOX]
 
-有关演示视频，请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension划分](https://video.tv.adobe.com/v/327339?captions=chi_hans&quality=12&learn=on){target="_blank"}。
+有关演示视频，请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension划分](https://video.tv.adobe.com/v/23969?quality=12&learn=on){target="_blank"}。
 
 {{videoaa}}
 
@@ -71,7 +69,7 @@ ht-degree: 56%
 
 >[!BEGINSHADEBOX]
 
-请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [添加维度和量度](https://video.tv.adobe.com/v/33233?captions=chi_hans&quality=12&learn=on){target="_blank"}以查看演示视频。
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [添加维度和量度](https://video.tv.adobe.com/v/30606?quality=12&learn=on){target="_blank"}以查看演示视频。
 
 {{videoaa}}
 
@@ -80,7 +78,7 @@ ht-degree: 56%
 
 >[!BEGINSHADEBOX]
 
-请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在自由格式表中使用维度](https://video.tv.adobe.com/v/328526?captions=chi_hans&quality=12&learn=on){target="_blank"}以获取演示视频。
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在自由格式表中使用维度](https://video.tv.adobe.com/v/40179?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 {{videoaa}}
 
@@ -89,7 +87,7 @@ ht-degree: 56%
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [按位置划分的Dimension](https://video.tv.adobe.com/v/327414?captions=chi_hans){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[按位置划分的Dimension](https://video.tv.adobe.com/v/24033){target="_blank"}。
 
 {{videoaa}}
 

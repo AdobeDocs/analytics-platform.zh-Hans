@@ -4,10 +4,10 @@ title: 行设置
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: a32f2c308b8fc1b463dc00d77008063035968241
 workflow-type: tm+mt
 source-wordcount: '1056'
-ht-degree: 86%
+ht-degree: 84%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 86%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自由格式表中的行和列设置](https://video.tv.adobe.com/v/328499/?captions=chi_hans&quality=12&learn=on){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自由格式表中的行和列设置](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -59,7 +59,7 @@ ht-degree: 86%
 | **[!UICONTROL 从选择创建注释]** | 打开&#x200B;**[!UICONTROL 注释详细信息]**&#x200B;以添加注释。 |
 
 
-选择自由格式表中的一个或多个维度项（第一列）或者一个或多个单个单元格时，可以使用以下附加上下文菜单选项。
+在自由格式表中选择一个或多个维度项目（第一列）或一个或多个单个单元格时，可以使用以下其他上下文菜单选项。
 
 | 选项 | 描述 |
 | --- | --- |
@@ -90,4 +90,4 @@ ht-degree: 86%
 
 ## 更改行高
 
-您可以将项目的[视图密度](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density)设置为&#x200B;**[!UICONTROL 紧凑]**、**[!UICONTROL 舒适]**&#x200B;和&#x200B;**[!UICONTROL 展开]**。
+您可以将项目的[视图密度](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density)设置为&#x200B;**[!UICONTROL 紧凑]**、**[!UICONTROL 舒适]**&#x200B;和&#x200B;**[!UICONTROL 展开]**。

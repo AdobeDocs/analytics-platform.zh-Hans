@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 7b44ff2097e4e14c99dd54dc3ef00b9cd500a5a1
+source-git-commit: 2fd79da264d60bb90e1193ead2eee67602404b4c
 workflow-type: tm+mt
-source-wordcount: '1956'
+source-wordcount: '1992'
 ht-degree: 7%
 
 ---
@@ -54,20 +54,16 @@ ht-degree: 7%
 | 每个面板的可视化图表 | 25 | 系统强制的护栏 | 每个面板的[可视化图表的最大数量](../analysis-workspace/home.md#visualizations)。 |
 | 每个自由格式表的派生字段 | 5 | 系统强制的护栏 | 单个自由格式表中不同派生字段的最大数量。 |
 | 每个项目的评论 | 1,000 | 系统强制的护栏 | 每个项目的最大评论数。 |
+| 每个评论的回复 | 100 | 系统强制的护栏 | 每个评论的最大回复数。 |
+| 每个评论的图像数 | 5 | 系统强制的护栏 | 每个评论的最大图像数。 |
+| 图像大小 | 2 | 系统强制的护栏 | 每个图像的最大上传大小（以MB为单位） |
 
 {style="table-layout:auto"}
 
 
-<!--
+<!-- at flatview GA, add: - Dimension columns per freeform table - 5 - System-enforced Guardrail - Maximum number of dimensions per freeform table. -->
 
-Add this to the table above, change - for pipe : (End of April, 2025 when project commenting is GA)
 
-Comments per project - 1,000 - System-enforced Guardrail - Maximum number of comments per project. 
-Replies per comment - 100 - System-enforced Guardrail - Maximum number of replies per comment. 
-Images per comment - 5 - System-enforced Guardrail - Maximum number of images per comment. 
-Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB 
-
--->
 
 <!--
 
@@ -94,7 +90,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [Real-time Customer Data Platform护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/rtcdp/guardrails/overview)。
+另请参阅Experience Platform [Real-time Customer Data Platform护栏](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview)。
 
 
 ## 自动数据集过期
@@ -139,7 +135,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hans)。
+另请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
 
 
 ## 目标数据导出
@@ -151,7 +147,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [数据集导出护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/guardrails#dataset-exports)
+另请参阅Experience Platform [数据集导出护栏](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## 数据登陆区
@@ -258,7 +254,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 >[!NOTE]
 >
->以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 有关详细信息，请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hans)。
+>以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 有关详细信息，请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
 
 | 数据流 | 预期延迟 |
 |---|---|

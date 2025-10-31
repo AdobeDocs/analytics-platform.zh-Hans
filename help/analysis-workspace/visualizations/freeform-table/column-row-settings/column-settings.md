@@ -4,10 +4,10 @@ title: 列设置
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: e8bb2df72cd223713bf63f0e85ea9c9e444cb3e5
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 89%
+source-wordcount: '910'
+ht-degree: 79%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 89%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自由格式表中的行和列设置](https://video.tv.adobe.com/v/328499/?captions=chi_hans&quality=12&learn=on){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自由格式表中的行和列设置](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 {{videoaa}}
 
@@ -88,13 +88,11 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->将组件的归因更新为非默认归因模型时，请考虑以下事项：
+>对量度启用非默认归因模型时，请考虑以下事项：
 >
->* **在具有&#x200B;*单个维度*的报告中使用该组件：**&#x200B;当使用非默认归因模型时，该组件的归因将忽略分配模型。
+>* **在具有&#x200B;*单个维度*：**&#x200B;的报表中使用量度时，该量度的归因将覆盖在维度上设置的分配模型。 例如，具有“首次接触”归因的量度将覆盖“最近”维度分配。
 >
->* **在具有&#x200B;*多个维度*的报告中使用该组件：**&#x200B;当使用非默认归因模型时，该组件的归因将保留分配模型。
->
->   只有[将数据导出到云](/help/analysis-workspace/export/export-cloud.md)时，才可以使用多个维度。
+>* **在具有&#x200B;*多个维度的报表中使用量度时*：**&#x200B;该量度的归因将应用于每个维度的分配模型之上。 例如，具有“首次接触”归因的量度应用于“最近”维度分配。
 >
 > 有关分配的详细信息，请参阅[持久性组件设置](/help/data-views/component-settings/persistence.md)。
 
