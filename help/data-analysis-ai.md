@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: e4b7f1da451a7ec9171fbb623e0e79e916827fd8
+source-git-commit: 77f350923bb750bf99fe4080e44968f9a52cd7da
 workflow-type: tm+mt
 source-wordcount: '2489'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 93%
 
 >[!AVAILABILITY]
 >
->Data Insights 代理在限定时间内供符合条件的客户使用。对 Data Insights 代理的访问权限将于 2025 年 11 月 30 日结束。如要不间断地继续使用 Data Insights 代理，请联系您的 Adobe 客户代表以了解有关 Data Insights 代理许可授予的更多信息。
+>Data Insights 代理在限定时间内供符合条件的客户使用。对Data Insights Agent的访问将于2026年2月28日结束。 如要不间断地继续使用 Data Insights 代理，请联系您的 Adobe 客户代表以了解有关 Data Insights 代理许可授予的更多信息。
 
 Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/ai-assistant.md)访问，它是一个生成式 AI 对话代理，可以快速有效地回答有关您数据的问题。它使用来自数据视图的组件和您的实际数据在 Analysis Workspace 中构建相关的可视化图表。
 
@@ -64,9 +64,9 @@ Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/a
 
    1. 在所提供表格的&#x200B;**[!UICONTROL 报告工具]**&#x200B;行中，选择编辑图标![编辑](/help/assets/icons/Edit.svg)。
    1. 滚动到或搜索 **[!UICONTROL AI 助手：产品知识]**，然后选择此权限旁边的加号图标 ![AddCircle](/help/assets/icons/AddCircle.svg)。
-   1. 滚动到或搜索&#x200B;**[!UICONTROL Data Insights Agent]**，然后选择此权限旁边的加号图标![AddCircle](/help/assets/icons/AddCircle.svg)。
+   1. 滚动到或搜索 **[!UICONTROL Data Insights 代理]**，然后选择此权限旁边的加号图标 ![AddCircle](/help/assets/icons/AddCircle.svg)。
 
-      **[!UICONTROL AI助手：产品知识]**&#x200B;权限和&#x200B;**[!UICONTROL Data Insights Agent]**&#x200B;权限已添加到&#x200B;**[!UICONTROL 包含的权限项]**&#x200B;列。
+      **[!UICONTROL AI 助手：产品知识]**&#x200B;权限和 **[!UICONTROL Data Insights 代理]**&#x200B;权限已添加到&#x200B;**[!UICONTROL 包含的权限项]**&#x200B;一列中。
 
       ![添加权限](assets/ai-assistant-permissions.png)。
 
@@ -74,29 +74,29 @@ Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/a
 
   有关访问控制的其他信息，请参阅[访问控制](/help/technotes/access-control.md#access-control)。
 
-* **数据视图访问**：必须为Data Insights Agent启用数据视图。
+* **数据视图访问**：必须为 Data Insights 代理启用数据视图。
 
   >[!IMPORTANT]
   >
   >启用数据视图时，请考虑以下事项：
   >* 每个 IMS 组织最多可以启用 50 个数据视图。如果您为某个特定组织的所有产品轮廓启用了超过 50 个数据视图，Data Insights 代理将使用最常用的 50 个数据视图。
-  >* 在启用数据视图的同一天，Data Insights Agent可以引用包含的数据视图。
+  >* 您启用数据视图后的同一天内，Data Insights 代理就可以引用这些被包含的数据视图。
 
-  要为Data Insights Agent启用数据视图，请执行以下操作：
+  要为 Data Insights 代理启用数据视图，请执行以下操作：
 
-   1. 在Customer Journey Analytics中，选择&#x200B;**[!UICONTROL 数据管理]** > **[!UICONTROL 数据视图]**。
+   1. 在 Customer Journey Analytics 中选择&#x200B;**[!UICONTROL 数据管理]** > **[!UICONTROL 数据视图]**。
 
-   1. 选择要为Data Insights Agent启用的一个或多个数据视图，然后选择&#x200B;**[!UICONTROL 为Data Insights Agent启用]**。
+   1. 选择您想为 Data Insights 代理启用的一个或多个数据视图，然后选择&#x200B;**[!UICONTROL 为 Data Insights 代理启用]**。
 
-      ![启用Data Insights Agent的数据视图](assets/data-view-enable-dia.png)
+      ![为 Data Insights 代理启用数据视图](assets/data-view-enable-dia.png)
 
-  要查看在IMS组织中为Data Insights Agent启用的数据视图的数量，请执行以下操作：
+  要查看在您的 IMS 组织中为 Data Insights 代理启用的数据视图的数量，请执行以下操作：
 
-   1. 在Customer Journey Analytics中，选择&#x200B;**[!UICONTROL 数据管理]** > **[!UICONTROL 数据视图]**。
+   1. 在 Customer Journey Analytics 中选择&#x200B;**[!UICONTROL 数据管理]** > **[!UICONTROL 数据视图]**。
 
-   1. 选择&#x200B;**[!UICONTROL Data Insights Agent]**&#x200B;列顶部的信息图标。
+   1. 选择 **[!UICONTROL Data Insights 代理]**&#x200B;一列顶部的信息图标。
 
-      ![Data Insights Agent信息图标](assets/data-insights-agent-tooltip.png)
+      ![Data Insights 代理信息图标](assets/data-insights-agent-tooltip.png)
 
 ## 访问 AI 助手中的 Data Insights 代理
 
@@ -154,7 +154,7 @@ Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/a
 
 **提示词：**&#x200B;在提示词窗口中输入&#x200B;*“添加利润。”*
 
-**回答：**&#x200B;**[!UICONTROL 条形]**&#x200B;图仍然提供了最简洁的回答，而利润量度被添加到自由格式表中成为一列：
+**回答：****[!UICONTROL 条形]**&#x200B;图仍然提供了最简洁的回答，而利润量度被添加到自由格式表中成为一列：
 
 ![条形图](/help/assets/ai-asst-result4.png)
 
@@ -264,7 +264,7 @@ Following the thumbs up or thumbs down selection, please make a selection for th
 >[!MORELIKETHIS]
 >
 >[组件设置](/help/data-views/component-settings/overview.md)
->&#x200B;>[数据字典](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[批准计算量度](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[共享区段](/help/components/segments/seg-share.md)
+>>[数据字典](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[批准计算量度](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[共享区段](/help/components/segments/seg-share.md)
 >
