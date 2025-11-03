@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 2fd79da264d60bb90e1193ead2eee67602404b4c
+source-git-commit: 9263a0c868c6cfe140e38df43d72ff497c2fc931
 workflow-type: tm+mt
-source-wordcount: '1992'
+source-wordcount: '2068'
 ht-degree: 7%
 
 ---
@@ -54,6 +54,10 @@ ht-degree: 7%
 | 每个面板的可视化图表 | 25 | 系统强制的护栏 | 每个面板的[可视化图表的最大数量](../analysis-workspace/home.md#visualizations)。 |
 | 每个自由格式表的派生字段 | 5 | 系统强制的护栏 | 单个自由格式表中不同派生字段的最大数量。 |
 | 每个项目的评论 | 1,000 | 系统强制的护栏 | 每个项目的最大评论数。 |
+| 每个项目的评论 | 1,000 | 系统强制的护栏 | 每个项目的最大评论数。 |
+| 每个评论的回复 | 100 | 系统强制的护栏 | 每个评论的最大回复数。 |
+| 每个评论的图像数 | 5 | 系统强制的护栏 | 每个评论的最大图像数。 |
+| 图像大小 | 2 | 系统强制的护栏 | 每个图像的最大上传大小（以MB为单位）。 |
 | 每个评论的回复 | 100 | 系统强制的护栏 | 每个评论的最大回复数。 |
 | 每个评论的图像数 | 5 | 系统强制的护栏 | 每个评论的最大图像数。 |
 | 图像大小 | 2 | 系统强制的护栏 | 每个图像的最大上传大小（以MB为单位） |
@@ -62,8 +66,6 @@ ht-degree: 7%
 
 
 <!-- at flatview GA, add: - Dimension columns per freeform table - 5 - System-enforced Guardrail - Maximum number of dimensions per freeform table. -->
-
-
 
 <!--
 
@@ -90,7 +92,7 @@ ht-degree: 7%
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [Real-time Customer Data Platform护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/rtcdp/guardrails/overview)。
+另请参阅Experience Platform [Real-time Customer Data Platform护栏](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview)。
 
 
 ## 自动数据集过期
@@ -135,7 +137,7 @@ ht-degree: 7%
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hans)。
+另请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
 
 
 ## 目标数据导出
@@ -147,7 +149,7 @@ ht-degree: 7%
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [数据集导出护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/guardrails#dataset-exports)
+另请参阅Experience Platform [数据集导出护栏](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## 数据登陆区
@@ -250,11 +252,20 @@ ht-degree: 7%
 | 数据视图 | 50 | 系统强制的护栏 | 可为Data Insights Agent启用的最大数据视图数量。 启用更多数据视图后，Data Insights Agent将只能使用最常用的数据视图。 此护栏不会影响定义可为连接或组织内定义的最大数据视图数的[护栏](#connections-data-views-projects)。 |
 
 
+## Customer Journey Analytics B2B Edition
+
+| 名称 | 值 | 限制类型 | 描述 |
+|---|--:|---|---|
+| 可报告业务人员配置文件(BPP)可报告行 | 100万 | 性能护栏 | 每1000个可报告业务人员配置文件的平均可报告行数。 |
+
+
+
+
 ## 延迟
 
 >[!NOTE]
 >
->以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 有关详细信息，请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hans)。
+>以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 有关详细信息，请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
 
 | 数据流 | 预期延迟 |
 |---|---|
