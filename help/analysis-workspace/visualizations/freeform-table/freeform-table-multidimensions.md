@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: f7a90a42d3c8bea99af2e69e3f86d9ad4e2041bf
+source-git-commit: 9314f7d88834a67efb61d0cc0cceef1ccd2fb9cb
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1276'
 ht-degree: 2%
 
 ---
@@ -18,13 +18,13 @@ ht-degree: 2%
 
 在自由格式表中最多可包含5个维度列，这样您可以并排查看多个维度项目。 每一行维度项目的行为类似于单个连接的维度项目。
 
-您可以将过滤器、排序、划分等应用于具有多个维度列的自由格式表，从而创建更深入的自定义分析。
+您可以将过滤器、排序、划分等应用于具有多个维度列的自由格式表，从而创建更深入、更自定义的分析。
 
 ## 连接的维度项目
 
-向自由格式表添加多个维度列时，维度项目的每一行都具有类似于单个关联维度项目的行为。 此功能允许您查看特定维度组合的量度数据。
+当您[将多个维度列添加到自由格式表](#add-multiple-dimension-columns)时，维度项的每一行都将像单个串联维度项那样运行。 此功能允许您查看特定维度组合的量度数据。
 
-例如，考虑一个自由格式表，其维度为&#x200B;_城市_、_设备类型_&#x200B;和&#x200B;_日期_，量度为&#x200B;_事件_。 本表第一行的3个维度项成为单个拼接维度项，表明每个月30日孟买通过手机发生了2,056个事件。
+例如，考虑一个自由格式表，其中的维度列为&#x200B;_城市_、_设备类型_&#x200B;和&#x200B;_日期_，量度为&#x200B;_事件_。 本表第一行的3个维度项成为单个拼接维度项，表明每个月30日孟买通过手机发生了2,056个事件。
 
 | Dimension：城市 | Dimension：设备类型 | Dimension：日期 | 量度：事件 |
 |---------|----------|---------|---------|
@@ -57,13 +57,13 @@ ht-degree: 2%
 
      ![拖动多个维度](assets/dimensions-add-multiple.png)
 
-1. 将表的每一行作为单个维度项查看。 有关详细信息，请参阅[查看串联的维度项](#view-concatenated-dimension-items)。
+1. 将表的每一行作为单个维度项查看。 有关详细信息，请参阅[串联的维度项](#view-concatenated-dimension-items)。
 
 ## 过滤表格
 
 您可以将过滤器应用于自由格式表中的一个或多个维度列。
 
-有关筛选表的信息，请参阅[筛选和排序表](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#filter-tables)中的[筛选表](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)。
+有关筛选表的信息，请参阅[筛选和排序自由格式表](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#filter-tables)中的[筛选表](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)。
 
 ## 对表格进行排序 {#sort-tables}
 
