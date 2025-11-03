@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: ec07eb5dced013eac3d1088f2f49dcea23894395
+source-git-commit: f7a90a42d3c8bea99af2e69e3f86d9ad4e2041bf
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1274'
 ht-degree: 2%
 
 ---
@@ -16,9 +16,26 @@ ht-degree: 2%
 
 {{release-limited-testing}}
 
-在自由格式表中最多可包含5个维度列，这样您可以并排查看多个维度项目。 维度项目的每一行都作为单个连接项目。
+在自由格式表中最多可包含5个维度列，这样您可以并排查看多个维度项目。 每一行维度项目的行为类似于单个连接的维度项目。
 
-您可以将过滤器、排序、划分等应用于具有多个维度列的自由格式表，以创建更完整的自定义分析。
+您可以将过滤器、排序、划分等应用于具有多个维度列的自由格式表，从而创建更深入的自定义分析。
+
+## 连接的维度项目
+
+向自由格式表添加多个维度列时，维度项目的每一行都具有类似于单个关联维度项目的行为。 此功能允许您查看特定维度组合的量度数据。
+
+例如，考虑一个自由格式表，其维度为&#x200B;_城市_、_设备类型_&#x200B;和&#x200B;_日期_，量度为&#x200B;_事件_。 本表第一行的3个维度项成为单个拼接维度项，表明每个月30日孟买通过手机发生了2,056个事件。
+
+| Dimension：城市 | Dimension：设备类型 | Dimension：日期 | 量度：事件 |
+|---------|----------|---------|---------|
+| 孟买 | 手机 | 30 | 2,056 |
+| 纽约 | 平板电脑 | 31 | 1,761 |
+| 班加罗尔 | 桌面 | 1 | 1,666 |
+| 德里 | 手机 | 14 | 1,396 |
+
+下表显示于Analysis Workspace中：
+
+![多维度示例](assets/multi-dim-example.png)
 
 ## 添加多个维度列
 
@@ -39,6 +56,8 @@ ht-degree: 2%
      要选择多个维度，请按住&#x200B;***命令***&#x200B;键(在Mac上)或&#x200B;***Ctrl***&#x200B;键（在Windows上）。
 
      ![拖动多个维度](assets/dimensions-add-multiple.png)
+
+1. 将表的每一行作为单个维度项查看。 有关详细信息，请参阅[查看串联的维度项](#view-concatenated-dimension-items)。
 
 ## 过滤表格
 
@@ -160,9 +179,21 @@ Analysis Workspace提供了以下方式在自由格式表中添加多个维度�
 
 ### 将划分添加到具有多个维度列的表中
 
-向具有多个维度列的表添加划分时，该划分会跨越添加该划分的行中的所有维度项。
+向具有多个维度列的表添加划分时，该划分会应用于添加该划分的行上的拼接维度项（在所有维度列中）。
 
-您可以按照[划分维度](/help/components/dimensions/t-breakdown-fa.md)中的说明添加划分。
+此外，您还可以在划分中添加多个维度列。 划分中的每一行维度项目的行为也类似于单个串联维度项目。
+
+<!-- update screenshot to show the breakdown, and include this introductory sentence: "For example, you can break down the first dimension item in this table by a new concatenated dimension item that shows... " -->
+
+![多排序示例](assets/dimensions-multiple-sort.png)
+
+有关如何添加划分的更多信息，请参阅[划分维度](/help/components/dimensions/t-breakdown-fa.md)。
+
+## 基于跨多个维度列的维度项创建区段
+
+当您基于跨越多个维度列的维度项创建区段时，每个维度项都包含在区段定义中，并且使用And运算符连接它们。
+
+有关创建区段的信息，请参阅[创建区段](/help/components/segments/seg-create.md)。
 
 ## 不支持的维度 {#unsupported}
 
