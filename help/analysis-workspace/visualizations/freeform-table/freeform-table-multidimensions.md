@@ -5,7 +5,7 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 9314f7d88834a67efb61d0cc0cceef1ccd2fb9cb
+source-git-commit: ad8026237d73784dfe154e7bc0b32a06a3a66eb3
 workflow-type: tm+mt
 source-wordcount: '1276'
 ht-degree: 2%
@@ -89,7 +89,7 @@ ht-degree: 2%
 
 ### 按多列对表进行排序（高级排序）
 
-{{release-limited-testing-section}}
+<!-- add this back in when move this section back to the filter and sort article: {{release-limited-testing-section}} -->
 
 #### 将排序应用于多个列
 
@@ -175,7 +175,7 @@ Analysis Workspace提供了以下方式在自由格式表中添加多个维度�
 
 划分允许您：
 
-* 在自由格式表中按次要维度划分维度项。 对于次要维度，最多可显示200个维度项目。
+* 在自由格式表中按次要维度划分维度项。 对于次要维度，最多可显示400个维度项目。
 
 ### 将划分添加到具有多个维度列的表中
 
