@@ -2,10 +2,10 @@
 title: 产品使用情况概述
 description: 查看有关您的组织如何使用 Customer Journey Analytics 的洞察和报告。
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: 5b5d4cb17ee73415dbd77bbf0964fc3d4e513cf0
+source-git-commit: 22f3059ffef5df76028f36ffa00da8f98956dee1
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 89%
+source-wordcount: '657'
+ht-degree: 91%
 
 ---
 
@@ -22,7 +22,9 @@ ht-degree: 89%
 
 >[!IMPORTANT]
 >
->此功能计入您在 Adobe Experience Platform 中的合同行数限制。在启用此功能之前，请确保您的组织可以容纳此功能生成的数据。
+>启用“产品使用”后，使用情况数据将存储在您的Adobe Experience Platform数据湖中。 确保贵组织的数据湖存储分配能够容纳通过启用此功能生成的附加数据集。
+>
+>此功能不计入您许可的Customer Journey Analytics报表行限制或事件数据权限。
 
 ## 启用产品使用情况
 
@@ -70,8 +72,8 @@ ht-degree: 89%
    * [!UICONTROL 时间衰减]
    * [!UICONTROL 自定义]
    * [!UICONTROL 算法]
-* **[!UICONTROL 组件ID]**：已添加、删除或修改的组件的ID。
-* **[!UICONTROL 组件名称]**：已添加、删除或修改的组件的友好名称。
+* **[!UICONTROL 组件 ID]**：已添加、移除或修改的组件的 ID。
+* **[!UICONTROL 组件名称]**：已添加、移除或修改的组件的友好名称。
 * **[!UICONTROL 组件类型]**：已添加、移除或修改的组件的类型。维度项包括：
    * [!UICONTROL 维度]
    * [!UICONTROL 量度]
@@ -80,10 +82,10 @@ ht-degree: 89%
    * [!UICONTROL 日期范围]
    * [!UICONTROL 批注]
    * [!UICONTROL 警报]
-* **[!UICONTROL 数据视图ID]**：数据视图的ID。
+* **[!UICONTROL 数据视图 ID]**：数据视图的 ID。
 * **[!UICONTROL 数据视图名称]**：数据视图的友好名称。
 * **[!UICONTROL 登录用户]**：采取该操作的用户。
-* **[!UICONTROL 使用的面板]**：已添加、删除或修改的面板。 维度项包括：
+* **[!UICONTROL 使用的面板]**：已添加、移除或修改的面板。维度项包括：
    * [!UICONTROL 归因]
    * [!UICONTROL 空白面板]
    * [!UICONTROL 试验]
@@ -97,7 +99,7 @@ ht-degree: 89%
    * [!UICONTROL 用户流]
    * [!UICONTROL 保留]
    * [!UICONTROL 功能矩阵]
-* **[!UICONTROL 项目ID]**：项目的ID。
+* **[!UICONTROL 项目 ID]**：项目的 ID。
 * **[!UICONTROL 项目名称]**：便于用户使用的项目名称。
 * **[!UICONTROL 项目类型]**：项目类型。维度项包括：
    * `workspace-projects`
