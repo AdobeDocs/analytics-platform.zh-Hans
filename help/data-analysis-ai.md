@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 source-git-commit: 518f2aeac309a34016146b7a4da7823b6fd84cac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2494'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 >[!AVAILABILITY]
 >
->Data Insights 代理在限定时间内供符合条件的客户使用。Data Insights Agent的访问截止日期为2026年2月28日。 要在此日期之后继续使用Data Insights Agent而不中断，请联系您的Adobe客户代表以了解有关许可Adobe Experience Platform Agent Orchestrator的更多信息。
+>Data Insights 代理在限定时间内供符合条件的客户使用。Data Insights 代理的访问截止日期为 2026 年 2 月 28 日。 若希望在此日期之后继续不间断地使用 Data Insights 代理，请联系 Adobe 客户代表，了解有关 Adobe Experience Platform Agent Orchestrator 许可的更多信息。
 
 Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/ai-assistant.md)访问，它是一个生成式 AI 对话代理，可以快速有效地回答有关您数据的问题。它使用来自数据视图的组件和您的实际数据在 Analysis Workspace 中构建相关的可视化图表。
 
@@ -154,7 +154,7 @@ Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/a
 
 **提示词：**&#x200B;在提示词窗口中输入&#x200B;*“添加利润。”*
 
-**回答：**&#x200B;**[!UICONTROL 条形]**&#x200B;图仍然提供了最简洁的回答，而利润量度被添加到自由格式表中成为一列：
+**回答：****[!UICONTROL 条形]**&#x200B;图仍然提供了最简洁的回答，而利润量度被添加到自由格式表中成为一列：
 
 ![条形图](/help/assets/ai-asst-result4.png)
 
@@ -250,16 +250,16 @@ Following the thumbs up or thumbs down selection, please make a selection for th
 
 ## 配置最佳实践
 
-以下是 Customer Journey Analytics 配置（包括数据视图、计算量度、区段等）的最佳实践，可帮助 Data Insights Agent 准确地定位相关组件，提供更清晰的解答，而无需反复向您请求额外信息。
+以下是 Customer Journey Analytics 配置（包括数据视图、计算量度、区段等）的最佳实践，可帮助 Data Insights 代理准确地定位相关组件，提供更清晰的解答，而无需反复向您请求额外信息。
 
-* **合理平衡所需组件数量**。请勿将数据集中所有字段都添加为数据视图中的量度或维度组件。尤其是那些在分析中几乎不会使用的字段。但另一方面，也不应将自己严格局限于预期分析中会用到的字段。数据视图过于受限将限制您的分析灵活性，并影响 Data Insights Agent 的功能发挥。
+* **合理平衡所需组件数量**。请勿将数据集中所有字段都添加为数据视图中的量度或维度组件。尤其是那些在分析中几乎不会使用的字段。但另一方面，也不应将自己严格局限于预期分析中会用到的字段。数据视图过于受限将限制您的分析灵活性，并影响 Data Insights 代理的功能发挥。
 * **始终使用友好的显示名称**。请确保您在数据视图中定义为量度或维度组件的所有字段都具备易于理解的组件名称。为字段重命名为易于理解的名称的过程，对于来自 Adobe Analytics 源连接器数据集的字段尤为重要。这些字段通常具有不易识别的不友好名称，如 `eVar41` 或 `prop25`。
 * **使用具有辨识度的名称**。当您在数据视图中将同一个字段同时用作量度和维度组件时，使用具有辨识度的名称尤为重要。或当您将同一个字段用于多个相同类型的组件（例如两个不同的量度），且每个组件具有不同的设置时，更应使用具有辨识度的名称。
 * **使用组件命名惯例**。您可以通过组件命名规范对组件进行分组管理。例如，使用&#x200B;**[!UICONTROL 订单 | 产品]**&#x200B;和&#x200B;**[!UICONTROL 订单 | 客户]**&#x200B;等命名方式，可以区分数据中可能存在的不同订单量度。
-* **使用数据字典**。在数据字典中为组件添加描述及其他相关信息。目前，Data Insights Agent 尚未使用数据字典中的描述和标签，但未来可能会支持此功能。
+* **使用数据字典**。在数据字典中为组件添加描述及其他相关信息。目前，Data Insights 代理尚未使用数据字典中的描述和标签，但未来可能会支持此功能。
 * **使用已审核的计算量度**。建立一致的流程，仅使用已审核的计算量度作为数据视图中的组件，并避免使用试验性计算量度。
-* **共享所需的区段**。请确保共享所需的区段，并将其设为可见，以支持 Data Insights Agent 的提示使用。
-* **在各数据视图间统一组件命名标准**。如果您在多个数据视图中将同一字段用作组件，请确保为该组件使用统一的友好名称和唯一标识符。统一的名称和标识符可使 Data Insights Agent 在切换数据视图时保持上下文连续性。
+* **共享所需的区段**。请确保共享所需的区段，并将其设为可见，以支持 Data Insights 代理的提示使用。
+* **在各数据视图间统一组件命名标准**。如果您在多个数据视图中将同一字段用作组件，请确保为该组件使用统一的友好名称和唯一标识符。统一的名称和标识符可使 Data Insights 代理在切换数据视图时保持上下文连续性。
 
 >[!MORELIKETHIS]
 >
