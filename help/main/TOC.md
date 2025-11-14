@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 2fd79da264d60bb90e1193ead2eee67602404b4c
-workflow-type: ht
-source-wordcount: '1311'
-ht-degree: 100%
+source-git-commit: 0c3dfd54dc0cee912cab18644fa984b2be5a26a7
+workflow-type: tm+mt
+source-wordcount: '1321'
+ht-degree: 99%
 
 ---
 
@@ -138,7 +138,6 @@ ht-degree: 100%
    + [合并事件数据集](../connections/combined-dataset.md)
    + [标准查找](../connections/standard-lookups.md)
    + [查找 B2B](../connections/transform-datasets-b2b-lookups.md)
-
 + 数据视图  {#cja-dataviews}
    + [数据视图概述](../data-views/data-views.md)
    + [创建或编辑数据视图](../data-views/create-dataview.md)
@@ -163,7 +162,9 @@ ht-degree: 100%
    + 共享量度和维度{#shared-metrics-dimensions}
       + [概述](/help/data-views/shared-metrics-dimensions/smd-overview.md)
       + [编辑器](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
-
+   + 受众分析 {#audience-analysis}
+      + [概述](/help/connections/audience-analysis/audience-analysis-overview.md)
+      + [从RTCDP分析受众](/help/connections/audience-analysis/analyze-audiences.md)
 + 工具 {#tools}
    + 资产转移 {#asset-transfer}
       + [转移资产](../tools/asset-transfer/transfer-assets.md)
@@ -335,10 +336,10 @@ ht-degree: 100%
       + [管理注释](../components/annotations/manage-annotations.md)
       + [查看注释](../components/annotations/view-annotations.md)
       + [移动记分卡注释](../components/annotations/mobile-annotations.md)
-   + 受众 {#audiences}
-      + [受众概述](../components/audiences/audiences-overview.md)
+   + 受众发布 {#audiences}
+      + [受众发布概述](../components/audiences/audiences-overview.md)
       + [创建并发布受众](../components/audiences/publish.md)
-      + [管理受众](../components/audiences/manage.md)
+      + [管理已发布的受众](../components/audiences/manage.md)
    + 维度 {#dimensions}
       + [概述](../components/dimensions/overview.md)
       + [预览维度](../components/dimensions/view-dimensions.md)

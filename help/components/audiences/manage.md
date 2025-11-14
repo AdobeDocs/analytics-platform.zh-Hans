@@ -4,14 +4,14 @@ description: 了解如何管理 Customer Journey Analytics 中的受众
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 4717a85b9a3c7dc2cbdd8c625ebb5862cbfccd58
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 97%
+source-wordcount: '769'
+ht-degree: 95%
 
 ---
 
-# 管理受众
+# 管理已发布的受众
 
 可以使用 **[!UICONTROL 组件]** > **[!UICONTROL 受众]**&#x200B;在 Customer Journey Analytics 中管理受众。
 
@@ -35,7 +35,7 @@ ht-degree: 97%
 
 查看受众列表：
 
-1. 在 Customer Journey Analytics 中选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 受众]**。
+1. 在Customer Journey Analytics中，选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 已发布的受众]**。
 
 1. （可选）使用 ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) 可以配置要显示的列。
 
@@ -62,7 +62,7 @@ ht-degree: 97%
 
 若要编辑受众：
 
-1. 在 Customer Journey Analytics 中选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 受众]**。
+1. 在Customer Journey Analytics中，选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 已发布的受众]**。
 
    现在显示“受众”页面。
 
@@ -80,9 +80,9 @@ ht-degree: 97%
 
 | 图标 | 操作 | 描述 |
 |:---:|---|---|
-| ![标签](/help/assets/icons/Labels.svg) | **[!UICONTROL 标记]** | 标记选定的受众。在&#x200B;**[!UICONTROL 更新标记：*受众名称&#x200B;*]**&#x200B;对话框中，从下拉菜单中选择标记或者输入一个或多个新标记。选择&#x200B;**[!UICONTROL 保存&#x200B;]**&#x200B;以保存。 |
+| ![标签](/help/assets/icons/Labels.svg) | **[!UICONTROL 标记]** | 标记选定的受众。在&#x200B;**[!UICONTROL 更新标记：*受众名称&#x200B;*]**对话框中，从下拉菜单中选择标记或者输入一个或多个新标记。选择**[!UICONTROL 保存&#x200B;]**以保存。 |
 | ![Delete](/help/assets/icons/Delete.svg) | **[!UICONTROL 删除]** | 删除选定的受众。 |
-| ![Edit](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名选定的受众。使用&#x200B;**[!UICONTROL 重命名：*受众名称&#x200B;*]**&#x200B;对话框来重命名受众，并选择&#x200B;**[!UICONTROL 保存&#x200B;]**&#x200B;以保存。 |
+| ![Edit](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名选定的受众。使用&#x200B;**[!UICONTROL 重命名：*受众名称&#x200B;*]**对话框来重命名受众，并选择**[!UICONTROL 保存&#x200B;]**以保存。 |
 
 选择一个或多个计划项目时，可以从蓝色操作栏中执行以下操作。
 

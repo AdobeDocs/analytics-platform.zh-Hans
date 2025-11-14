@@ -4,9 +4,9 @@ title: 使用模板
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 8b9f45bc68fd90c2b15a91d547256c18d0d7142b
+source-git-commit: 0e282bc341588032fadee45cc128663cf557b21f
 workflow-type: tm+mt
-source-wordcount: '20687'
+source-wordcount: '20775'
 ht-degree: 97%
 
 ---
@@ -591,6 +591,11 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速了解最�
 
 
 <!--Both AA and CJA-->
+
+>[!CONTEXTUALHELP]
+>id="template--audienceOverview"
+>title="查看访问您网站的用户所代表的受众。"
+>abstract="**这可以帮助您**&#x200B;更好地了解受众的一般信息，受众源自何处(RTCDP、Customer Journey Analytics等)、受众重叠等等。<br/>**根据您了解的情况，您可以**&#x200B;执行任意数量的操作，例如，使用数据来专注于这些特定受众的营销工作，或为跨多个受众的客户创建量身定制的体验。<br/>此模板使用“受众名称”、“受众来源”、“退出受众名称”和“退出受众来源”维度。"
 
 >[!CONTEXTUALHELP]
 >id="template--consentPolicyOverview"
