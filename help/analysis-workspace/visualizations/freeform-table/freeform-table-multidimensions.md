@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: ad8026237d73784dfe154e7bc0b32a06a3a66eb3
+source-git-commit: 77acfaf2d186e7fe7d6b9d973af5dedb3956f5d5
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1277'
 ht-degree: 2%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 2%
 
      ![拖动多个维度](assets/dimensions-add-multiple.png)
 
-1. 将表的每一行作为单个维度项查看。 有关详细信息，请参阅[串联的维度项](#view-concatenated-dimension-items)。
+1. 将表的每一行作为单个维度项查看。 有关详细信息，请参阅[串联的维度项](#concatenated-dimension-items)。
 
 ## 过滤表格
 
@@ -181,11 +181,11 @@ Analysis Workspace提供了以下方式在自由格式表中添加多个维度�
 
 向具有多个维度列的表添加划分时，该划分会应用于添加该划分的行上的拼接维度项（在所有维度列中）。
 
+![多排序划分示例](assets/dimensions-multiple-sort-breakdown.png)
+
 此外，您还可以在划分中添加多个维度列。 划分中的每一行维度项目的行为也类似于单个串联维度项目。
 
-<!-- update screenshot to show the breakdown, and include this introductory sentence: "For example, you can break down the first dimension item in this table by a new concatenated dimension item that shows... " -->
-
-![多排序示例](assets/dimensions-multiple-sort.png)
+<!-- Add a screenshot of a breakdown with multiple cllumns, then add this sentence: "For example, you can break down the first dimension item in this table by a new concatenated dimension item that shows..." -->
 
 有关如何添加划分的更多信息，请参阅[划分维度](/help/components/dimensions/t-breakdown-fa.md)。
 
