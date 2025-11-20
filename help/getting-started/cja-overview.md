@@ -29,7 +29,7 @@ Customer Journey Analytics 架构大致如下所示：
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analytics：适用于 Experience Business 的 Analytics](https://video.tv.adobe.com/v/36211/?captions=chi_hans&quality=12&learn=on){target="_blank"} 以获取有关 Customer Journey Analytics 的介绍视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analytics：适用于 Experience Business 的 Analytics](https://video.tv.adobe.com/v/30090/?quality=12&learn=on){target="_blank"} 以获取有关 Customer Journey Analytics 的介绍视频。
 
 >[!ENDSHADEBOX]
 
@@ -54,7 +54,7 @@ Customer Journey Analytics 的初始版本包括 Adobe Analytics 中的许多功
 通过 Customer Journey Analytics，您可以：
 
 * **在历程情境中查看客户**：您可以跨多个渠道按顺序查看和分析数据。将来自呼叫中心、POS 系统以及在线属性的数据合并到单个报告视图。
-* **为所有人提供洞察信息**：实现数据访问大众化，让更多人利用数据衍生的洞察信息做出业务决策。组织中任何负责客户体验某一方面的人员，都可以基于更完整全面的数据，更快地做出真正明智的决策。
+* **为所有人提供洞察信息**：实现数据访问民主化，让更多人利用数据衍生的洞察信息做出业务决策。组织中任何负责客户体验某一方面的人员，都可以基于更完整全面的数据，更快地做出真正明智的决策。
 * **助力分析师充分利用数据科学的强大力量**：Customer Journey Analytics 让普通人能够运用数据科学获得深入的分析和洞察信息。
 * **使用按需报告实现数据集可视化并进行交互**：工作区可以使用 Adobe Experience Platform 中符合某些基本规则的任何数据集。
 * **查看非 Web 数据**：工作区不再局限于“点击”或“事件”的严格定义。自定义架构允许完全控制数据和定义。
@@ -99,13 +99,13 @@ Adobe Experience Platform 让您可以实现源自任何系统的客户数据和
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Customer Journey Analytics 中处理数据](https://video.tv.adobe.com/v/35911/?captions=chi_hans&quality=12&learn=on){target="_blank"}以获取有关如何在 Customer Journey Analytics 中处理数据的介绍视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Customer Journey Analytics 中处理数据](https://video.tv.adobe.com/v/32112/?quality=12&learn=on){target="_blank"}以获取有关如何在 Customer Journey Analytics 中处理数据的介绍视频。
 
 >[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [架构与集成](https://video.tv.adobe.com/v/330413/?captions=chi_hans&quality=12&learn=on){target="_blank"}以获取有关 Customer Journey Analytics 架构与集成的介绍视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [架构与集成](https://video.tv.adobe.com/v/32483/?quality=12&learn=on){target="_blank"}以获取有关 Customer Journey Analytics 架构与集成的介绍视频。
 
 >[!ENDSHADEBOX]
 
