@@ -1,35 +1,62 @@
 ---
-title: 从RTCDP分析受众
-description: 了解如何在Customer Journey Analytics中从RTCDP分析受众。
+title: 在Customer Journey Analytics中分析Experience Platform受众
+description: 了解如何在Customer Journey Analytics中分析Experience Platform受众。
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 7fa7410e892504e0f334ccb60ff1ec9019d2f467
+source-git-commit: 3654d452f2bc4fec5f53854307536b3b8679eac3
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 7%
+source-wordcount: '475'
+ht-degree: 0%
 
 ---
 
-# 从RTCDP分析受众 {#analyze-audiences-RTCDP}
+# 在Customer Journey Analytics中分析Experience Platform受众 {#analyze-audiences-RTCDP}
+
+当受众数据在Customer Journey Analytics中可用作新维度时，在[创建受众分析配置](/help/connections/audience-analysis/audience-analysis-configure.md)之后，即可开始在Analysis Workspace中分析Experience Platform受众。
+
+Customer Journey Analytics中提供了受众概述模板。
+
+有关如何访问受众概述模板的信息，请参阅[使用模板](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template)中的[访问和运行模板](/help/analysis-workspace/templates/use-templates.md)。
+
+受众概述模板包含以下面板：
+
+## 使用概述面板
+
+显示所有受众的数据，其中包含与选定数据视图关联的使用事件。 受众会员资格数据每天从Experience Platform更新。 数据始终显示于昨天，因此更改面板日期范围导致数据不准确。
+
+使用此面板中的表可以更好地了解受众行为。 从所选数据视图拖动受众描述维度，并将其添加为划分。 或使用任何其他交互维度（例如“页面”、“操作”等）作为细分。
+
+## “顶级受众来源”面板
+
+显示创建受众的位置，无论是在RTCDP、Customer Journey Analytics还是其他位置。
+
+使用本面板中的表可以更好地了解受众来源可能如何影响其他因素。 从所选数据视图拖动受众名称维度，并将其添加为划分。 或使用任何其他交互维度（例如“页面”、“操作”等）作为细分。
+
+## 受众重叠面板
+
+显示所有受众的数据，其中包含与选定数据视图关联的使用事件。 数据始终显示于昨天，因此更改面板日期范围导致数据不准确。
+
+在此面板中的表中选择最多三个受众，以查看它们在相应的维恩图中的重叠方式。
+
+## 已退出受众使用情况
+
+显示所有已退出受众的数据，其中包含与所选数据视图关联的使用事件。 数据始终显示于昨天，因此更改面板日期范围导致数据不准确。 “退出受众”是指具有使用事件的用户昨天离开或退出的受众。
+
+使用本面板中的表可以更好地了解受众行为。 从所选数据视图拖动现有的受众描述维度，并将其添加为划分。 或使用任何其他交互维度或量度（例如页面、操作等）作为细分。
+
+## “退出次数最多的受众来源”面板
+
+显示退出每个受众最初创建的位置，无论是在RTCDP、Customer Journey Analytics还是其他位置。
+
+使用本面板中的表可以更好地了解受众来源可能如何影响其他因素。 从所选数据视图拖动退出受众名称维度，并将其添加为划分。 或使用任何其他交互维度或量度（例如页面、操作等）作为细分。
 
 
-<!-- markdownlint-disable MD034 -->
 
->[!CONTEXTUALHELP]
->id="cja-audience-analysis-consent"
->title="从 Experience Platform 导入轮廓同意策略数据"
->abstract="同意策略是Experience Platform规则，用于定义您可以对数据执行的营销操作。 如果对沙盒中的数据集定义了同意策略，则应启用此选项。"
 
-<!-- markdownlint-enable MD034 -->
 
-<!-- markdownlint-disable MD034 -->
 
->[!CONTEXTUALHELP]
->id="cja-audience-analysis-merge-policy"
->title="合并策略"
->abstract="合并策略是Experience Platform规则，可确定哪些数据已优先处理，哪些数据已合并以创建个人的统一视图。 如果对沙盒中的数据集定义了合并策略，则应该启用此选项。"
 
-<!-- markdownlint-enable MD034 -->
+

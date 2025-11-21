@@ -4,7 +4,7 @@ title: 使用模板
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 0e282bc341588032fadee45cc128663cf557b21f
+source-git-commit: 6cb72495bd190a31f0cb1533f0b33a0929d8a35b
 workflow-type: tm+mt
 source-wordcount: '20775'
 ht-degree: 97%
@@ -13,7 +13,7 @@ ht-degree: 97%
 
 # 使用模板
 
-Analysis Workspace 中的模板（或公司模板）可帮助您快速了解最常见的报告场景。以下是您可以使用模板回答的一些问题示例：
+Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最常见的报告场景。以下是您可以使用模板回答的一些问题示例：
 
 * 有多少人访问您的网站
 * 其中有多少位访客是独特访客（只计数一次）
@@ -482,6 +482,13 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速了解最�
 
 ### Web：受众 {#web-audience}
 
+<!--CJA only-->
+
+>[!CONTEXTUALHELP]
+>id="template--audienceOverview"
+>title="查看访问您网站的用户所代表的受众。"
+>abstract="**这可以帮助您**&#x200B;更好地了解受众的一般信息，受众源自何处(RTCDP、Customer Journey Analytics等)、受众重叠等等。<br/>**根据您了解的情况，您可以**&#x200B;执行任意数量的操作，例如，使用数据来专注于这些特定受众的营销工作，或为跨多个受众的客户创建量身定制的体验。<br/>此模板使用“受众名称”、“受众来源”、“退出受众名称”和“退出受众来源”维度。"
+
 <!--AA only-->
 
 >[!CONTEXTUALHELP]
@@ -593,11 +600,6 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速了解最�
 <!--Both AA and CJA-->
 
 >[!CONTEXTUALHELP]
->id="template--audienceOverview"
->title="查看访问您网站的用户所代表的受众。"
->abstract="**这可以帮助您**&#x200B;更好地了解受众的一般信息，受众源自何处(RTCDP、Customer Journey Analytics等)、受众重叠等等。<br/>**根据您了解的情况，您可以**&#x200B;执行任意数量的操作，例如，使用数据来专注于这些特定受众的营销工作，或为跨多个受众的客户创建量身定制的体验。<br/>此模板使用“受众名称”、“受众来源”、“退出受众名称”和“退出受众来源”维度。"
-
->[!CONTEXTUALHELP]
 >id="template--consentPolicyOverview"
 >title="查看访问该网站的人员来自哪个国家或地区。"
 >abstract="**这可以帮助您**&#x200B;更好地了解访问您网站的用户主要来自哪些国家或地区。<br/>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如利用这些数据来聚焦在这些国家的营销努力，或者确保您的网站体验在主要语言不同的国家中达到最优。<br/>此模板使用“国家/地区”维度。"
@@ -649,6 +651,8 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速了解最�
 
 
 可使用以下模板：
+
+<!--need to add audience overview: - **[!UICONTROL Audience overview]** - View which audiences are represented among the people visiting your site.<p>**This can help you** better understand general information about the audiences, where the audiences originated (RTCDP, Customer Journey Analytics, and so forth), audience overlap, and more.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts for these specific audiences, or create tailored experiences for customers who span multiple audiences.</p><p>This template uses the Audience Name, Audience Origin, Exited Audience Name, and Exited Audience Origin dimensions.</p> - -->
 
 | 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
