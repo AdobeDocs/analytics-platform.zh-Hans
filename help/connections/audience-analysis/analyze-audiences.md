@@ -6,9 +6,9 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 3654d452f2bc4fec5f53854307536b3b8679eac3
+source-git-commit: 2b91c0592ac4ec0e0b5ffa3db91758466563abaf
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 0%
 当受众数据在Customer Journey Analytics中可用作新维度时，在[创建受众分析配置](/help/connections/audience-analysis/audience-analysis-configure.md)之后，即可开始在Analysis Workspace中分析Experience Platform受众。
 
 Customer Journey Analytics中提供了受众概述模板。
+
+<!-- Can you also use the new audience dimensions in any project, regardless of whether it's a template? I assume so -->
+
+<!-- What are the names of the new dimensions? Are they customized to whatever your audience names are in AEP, or are they always the same? -->
 
 有关如何访问受众概述模板的信息，请参阅[使用模板](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template)中的[访问和运行模板](/help/analysis-workspace/templates/use-templates.md)。
 
@@ -41,7 +45,7 @@ Customer Journey Analytics中提供了受众概述模板。
 
 在此面板中的表中选择最多三个受众，以查看它们在相应的维恩图中的重叠方式。
 
-## 已退出受众使用情况
+## “退出受众使用情况”面板
 
 显示所有已退出受众的数据，其中包含与所选数据视图关联的使用事件。 数据始终显示于昨天，因此更改面板日期范围导致数据不准确。 “退出受众”是指具有使用事件的用户昨天离开或退出的受众。
 
