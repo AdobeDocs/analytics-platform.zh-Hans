@@ -4,10 +4,10 @@ title: 实时报表概述
 feature: Real-time Reporting
 role: User
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: 0e5a64e78e5a471f8b7c9fc32fdbae2b2e70230a
+source-git-commit: 59d48b84ddd34ef161ec0b11f023ccccf9b2e892
 workflow-type: tm+mt
-source-wordcount: '780'
-ht-degree: 7%
+source-wordcount: '810'
+ht-degree: 6%
 
 ---
 
@@ -16,6 +16,11 @@ ht-degree: 7%
 Customer Journey Analytics 中的实时报告功能可以实时显示并更新 Analysis Workspace 的一个或多个面板中的数据和可视化图表。
 
 {{ultimate-package}}
+
+>[!TIP]
+>
+>如果您有权使用Ultimate包，但未看到[实时刷新切换开关](use-real-time.md)，请创建一个客户关怀票证，以请求为您的组织启用实时报表。
+
 
 ## 用例
 
