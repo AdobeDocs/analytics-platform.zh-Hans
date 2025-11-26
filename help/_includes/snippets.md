@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7d354ce65f72838c007d2b9faf02848d86fd7c0f
+source-git-commit: b2a13524760f9d466696534bc8b9691f3b4dfb8a
 workflow-type: tm+mt
-source-wordcount: '4990'
-ht-degree: 98%
+source-wordcount: '5005'
+ht-degree: 99%
 
 ---
 # 片段
@@ -128,7 +128,7 @@ ht-degree: 98%
 
 归因容器定义了归因的所需范围。可能的选项为：
 
-* **会话**：回顾到发生转化的会话开始时间。会话回顾时间范围遵循数据视图中修改的[会话超时](/help/data-views/create-dataview.md#session-settings)。 选择&#x200B;**[!UICONTROL 会话]**&#x200B;时，[归因回顾时间范围](#atribution-lookback-window)会自动设置为&#x200B;**[!UICONTROL 报告时间范围]**，且无法更改。
+* **会话**：回顾到发生转化的会话开始时间。会话回顾窗口遵循数据视图中已修改的[会话超时](/help/data-views/create-dataview.md#session-settings)。如果选择了&#x200B;**[!UICONTROL 会话]**，[归因回顾窗口](#atribution-lookback-window)会自动设置为&#x200B;**[!UICONTROL 报告窗口]**，且无法更改。
 * **人员**：从“人员”容器的范围查看转化情况。
 * **全局帐户** [!BADGE B2B 版]{type=Informative}：从“全局账户”容器的范围查看转化情况。
 * **帐户** [!BADGE B2B 版本]{type=Informative}：从“人员”容器的范围查看转化情况。
@@ -139,7 +139,7 @@ ht-degree: 98%
 
 归因回顾窗口是指转化应回顾以包含接触点所花费的时间。如果一个维度项设置在回顾窗口之外，该值就不包含在任何归因计算中。
 
-* **[!UICONTROL 报告窗口]**：从转换发生时开始回顾到报告窗口的开头。
+* **[!UICONTROL 报告窗口]**：从转化发生开始回顾到报告窗口的开始。
 * **14 天**：自转化发生后最多回顾 14 天。
 * **30 天**：自转化发生后最多回顾 30 天。
 * **60 天**：自转化发生后最多回顾 60 天。
@@ -155,7 +155,7 @@ ht-degree: 98%
 1. 9 月 18 日，该人员通过朋友提供的社交媒体链接再次访问您的网站。他将多个物品添加到购物车，但没有购买任何物品。
 1. 9 月 24 日，您的营销团队向他们发送一封电子邮件，其中包含购物车中某些物品的产品建议券。他应用了产品建议券，但访问了其他几个网站，查看是否有其他产品建议券可用。他通过展示广告找到另一个网站，并最终购买了价值 50 美元的物品。
 
-根据您的报表时段（例如9月10日至9月24日），归因模型、容器和渠道将获得不同的点数。 请参阅下表示例：
+根据您的报告窗口（例如 9 月 10 日至 9 月 24 日），归因模型、容器和渠道会获得不同的贡献度。请参阅下表示例：
 
 | 模型 | 容器 | 回顾时间范围 | 说明 |
 |---|---|---|---|
@@ -286,3 +286,11 @@ Customer Journey analytics 中的各种可视化图表旨在分析您为客户�
 | [!UICONTROL 会话开始] | 会话的第一个事件的事件数。用在区段定义（例如，“[!UICONTROL 会话开始]”）中时，它会一直细分到每个会话的第一个事件。<p>必须将此组件包含在您的数据视图中，才能在 Workspace 中使用[计算量度](/help/components/calc-metrics/default-calcmetrics.md)： <ul><li>会话开始比率</li></p> |
 | [!UICONTROL 会话] | 基于数据视图的会话设置。 |
 | [!UICONTROL 逗留时间（秒）] | 累计两个不同的维度值之间的时间。<p>必须将此组件包含在您的数据视图中，才能在 Workspace 中使用[计算量度](/help/components/calc-metrics/default-calcmetrics.md)： <ul><li>每人逗留时间</li><li>每个会话逗留时间</li></p> |
+
+
+## 基于关系模型 {#relational-model-based}
+
+>[!INFO]
+>
+>在Customer Journey Analytics界面中，**[!UICONTROL 关系]**&#x200B;数据集可能标记为&#x200B;**[!UICONTROL 基于模型]**。
+>

@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta 版"
 exl-id: 87593d7d-9456-48f8-8d39-5c3d95fe51ec
-source-git-commit: edf7bdac87d9bed48244ad80521bbbf83c48f7b6
+source-git-commit: b2a13524760f9d466696534bc8b9691f3b4dfb8a
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 2%
@@ -27,13 +27,13 @@ ht-degree: 2%
 
 ## 架构
 
-您需要创建一个基于模型的[架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/model-based){target="_blank"}，以便为要镜像的数据仓库本机表建模。 构造基于模型的架构时，请确保满足以下要求：
+您需要创建一个[关系架构](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational){target="_blank"}，该架构是要镜像的数据仓库本机表。 构造关系架构时，请确保满足以下要求：
 
-* 在系统提示输入基于模型的架构类型时，请确保选择手动选项。
+* 在提示输入关系架构类型时，请确保选择手动选项。
 * 为数据类型选择适当的架构。 请注意，Experience Platform Data Mirror主要用于时间序列数据（例如，事件数据）。
 
 * 定义架构中的字段及其属性
-* 在基于模型的架构中配置字段的必需属性：
+* 配置关系架构中字段的必需属性：
 
    * 主键
    * 版本标识符
@@ -42,7 +42,7 @@ ht-degree: 2%
 ## 数据集
 
 您可以提前为架构设置数据集，或在设置源连接器时创建数据集。
-当您提前创建数据集或选择数据集时，请确保数据使用您之前创建的基于模型的[架构](#schema)。
+当您提前创建数据集或选择数据集时，请确保数据使用您之前创建的关系[架构](#schema)。
 
 
 ## 源连接器
@@ -53,9 +53,9 @@ ht-degree: 2%
 
 有关针对支持的Data Warehouse本机解决方案的身份验证，请参阅相关的Experience Platform文档：
 
-* [Azure数据库](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/databricks)
-* [Google BigQuery](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/bigquery)
-* [Snowflake](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/snowflake)
+* [Azure数据库](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)
+* [Google BigQuery](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/bigquery)
+* [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)
 
 
 ### 选择数据
@@ -67,12 +67,12 @@ ht-degree: 2%
 
 确保启用变更数据捕获。 您会看到一个信息面板，其中说明了变更数据捕获的要求。
 
-指定新的或现有的数据集，该数据集基于您之前创建的基于模型的架构。 在数据流详细信息界面中指定并选择其他选项。
+指定基于之前创建的关系架构的新数据集或现有数据集。 在数据流详细信息界面中指定并选择其他选项。
 
 
 ### 映射
 
-将Data Warehouse本机解决方案中表的字段映射到您为基于模型的架构指定的字段。
+将Data Warehouse本机解决方案中表的字段映射到您为关系架构指定的字段。
 
 
 ### 日程计划
@@ -90,6 +90,6 @@ ht-degree: 2%
 
 >[!MORELIKETHIS]
 >
->[Data Mirror快速入门指南：镜像并使用基于模型的数据](model-based.md)
->&#x200B;>[Data Mirror (Experience Platform文档)](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-mirror/overview)
->&#x200B;>[基于模型的架构(Experience Platform文档)](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/model-based)
+>[Data Mirror快速入门指南：镜像并使用关系数据](relational.md)
+>[Data Mirror (Experience Platform文档)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>[关系架构(Experience Platform文档)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational)
