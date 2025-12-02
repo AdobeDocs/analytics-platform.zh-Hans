@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: 从Workspace报表生成演示
 feature: Curate and Share
 role: User
-source-git-commit: 87e3b3cfdf765a57ecdb70921696013bcba4feac
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1585'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -86,7 +86,7 @@ Analysis Workspace通过考虑以下项目元素来创建数据故事：
 
 >[!CONTEXTUALHELP]
 >id="cja-presentation-emphasized-components"
->title="强调的组件"
+>title="被强调的组件"
 >abstract="从可视化图表中最多选择5个要在演示文稿中强调的量度和5个维度。 您选择的量度以斜体显示，维度以粗体显示，维度项目以对比颜色显示。"
 
 <!-- markdownlint-enable MD034 -->
@@ -157,9 +157,9 @@ Analysis Workspace通过考虑以下项目元素来创建数据故事：
 
          确保上传的文件具有具有以下名称的主布局：“Title_Slide”、“Section_Divider”、“Title_Text”、“Title_Chart”、“Title_Two_Content_Mixed”、“Title_Three_Content_Mixed”。
 
-         最多支持15个主布局。
+         最多支持 15 个主布局。
 
-         支持大小最大为25MB的.pptx和.potx文件。
+         支持最大 25MB 的 .pptx 和 .potx 文件。
 
       1. 在&#x200B;**[!UICONTROL 布局映射]**&#x200B;部分中，生成的演示文稿中使用的每个幻灯片布局都会自动映射到上载主题中的幻灯片。 查看所选内容以确保其正确无误。
 

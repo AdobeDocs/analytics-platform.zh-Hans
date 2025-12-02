@@ -1,18 +1,18 @@
 ---
-title: 基于图形的拼合
+title: 基于图形的拼接
 description: 解释基于图形的拼合的概念和工作
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 5%
 
 ---
 
-# 基于图形的拼合
+# 基于图形的拼接
 
 
 在基于图形的拼合中，您可以指定事件数据集，以及该数据集的永久ID (Cookie)和人员ID的命名空间。 基于图形的拼接为拼接的ID向事件数据集添加了一个新列。 然后，使用持久ID使用指定的命名空间从Experience Platform Identity Service查询身份图以更新拼合的ID。
@@ -27,7 +27,7 @@ ht-degree: 5%
 
 ## Identitymap
 
-基于图形的拼接支持在以下情况下使用[`identityMap`字段组](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition#identity)：
+基于图形的拼接支持在以下情况下使用[`identityMap`字段组](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity)：
 
 - 在`identityMap`命名空间中使用主标识来定义persistentID：
    - 如果在不同的命名空间中找到多个主身份，则命名空间中的身份按词法排序并选择第一个身份。
@@ -119,7 +119,7 @@ ht-degree: 5%
 ![身份图246](assets/identity-graph-246.svg)
 ![身份图3579](assets/identity-graph-3579.svg)
 
-您可以使用[身份图形查看器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/identity-graph-viewer)查看特定配置文件的随时间变化的身份图形。 另请参阅[标识服务链接逻辑](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/identity-linking-logic)，以更好地了解链接标识时使用的逻辑。
+您可以使用[身份图形查看器](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer)查看特定配置文件的随时间变化的身份图形。 另请参阅[标识服务链接逻辑](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic)，以更好地了解链接标识时使用的逻辑。
 
 ### 步骤1：实时拼合
 
@@ -223,7 +223,7 @@ ht-degree: 5%
 - 使用指定的命名空间查询人员ID时，不考虑时间戳。 因此，持久ID可能会与具有更早时间戳的记录中的人员ID拼合。
 - 在共享设备方案中，如果图形中的命名空间包含多个标识，则使用第一个词典标识。 如果命名空间限制和优先级是在发布图形链接规则时配置的，则使用上次经过身份验证的用户身份。 有关详细信息，请参阅[共享设备](/help/use-cases/stitching/shared-devices.md)。
 - 在身份图中，存在三个月回填身份信息的硬性限制。 如果您没有使用Experience Platform应用程序（如Real-time Customer Data Platform）来填充身份图，则可以使用回填身份。
-- 应用[Identity Service护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/guardrails)。 例如，查看以下[静态限制](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/guardrails#static-limits)：
+- 应用[Identity Service护栏](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails)。 例如，查看以下[静态限制](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits)：
    - 图形中的最大标识数：50。
    - 一次批次摄取中指向某个身份的最大链接数：50。
    - 用于图形提取的XDM记录中的最大身份数： 20。

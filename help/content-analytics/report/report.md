@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1300'
 ht-degree: 100%
@@ -14,14 +14,14 @@ ht-degree: 100%
 
 # Content Analytics 报告概述
 
-您可以在 [Analysis Workspace](/help/analysis-workspace/home.md) 中报告 Content Analytics、执行分析并获得相关见解。现在提供一个特定的 Workspace [模板](#template)，您可以立即访问一个预先填充了相关内容见解的 Workspace 项目。
+您可以在 [Analysis Workspace](/help/analysis-workspace/home.md) 中报告 Content Analytics、执行分析并获得相关洞察。现在提供一个特定的 Workspace [模板](#template)，您可以立即访问一个预先填充了相关内容洞察的 Workspace 项目。
 
 要从头开始报告 Content Analytics：
 
 1. [在 Workspace 中创建一个新项目](/help/analysis-workspace/build-workspace-project/create-projects.md)或者[打开一个现有的](/help/analysis-workspace/build-workspace-project/open-projects.md)项目。
 1. 确保[为 Content Analytics 报告选择一个数据视图](/help/analysis-workspace/c-panels/panels.md#data-view)。Content Analytics 报告仅适用于那些[已配置](/help/content-analytics/config/configuration.md)给 Content Analytics 的数据视图。
 1. 将一个![表格](/help/assets/icons/Table.svg) [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)可视化图表拖到画布上。
-1. 使用[特定的 Content Analytics 组件](components.md)和其他通用[组件](/help/components/overview.md)（例如区段、日期范围、注释）来构建您的 Content Analytics 见解。
+1. 使用[特定的 Content Analytics 组件](components.md)和其他通用[组件](/help/components/overview.md)（例如区段、日期范围、注释）来构建您的 Content Analytics 洞察。
 
 ## 缩略图
 
@@ -155,5 +155,5 @@ Content Analytics 使用 AI 和生成式 AI 自动分配每个资产元数据，
 >[!MORELIKETHIS]
 >
 >[Content Analytics 组件](components.md)
->>[使用模板](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>[使用模板](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >

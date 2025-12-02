@@ -4,7 +4,7 @@ description: 了解如何在Analysis Workspace的自由格式表中为维度项�
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
-source-git-commit: f7a90a42d3c8bea99af2e69e3f86d9ad4e2041bf
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1602'
 ht-degree: 97%
@@ -26,7 +26,7 @@ ht-degree: 97%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在自由格式表中创建超链接](https://video.tv.adobe.com/v/3445797/?captions=chi_hans&quality=12&learn=on){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在自由格式表中创建超链接](https://video.tv.adobe.com/v/3430411/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 

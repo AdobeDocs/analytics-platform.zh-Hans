@@ -4,7 +4,7 @@ title: 管理区段
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters, Segments
 role: User
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 75%
@@ -35,7 +35,7 @@ ht-degree: 75%
 区段列表➊显示您拥有的所有区段、已确定范围到您的所有项目的区段以及与您共享的区段。 该列表具有以下各列：
 
 | 列 | 描述 |
-| --- | --- | 
+| --- | --- |
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | 选择以将一个区段加入收藏 ![Star](/help/assets/icons/Star.svg) 或取消收藏 ![StarOutline](/help/assets/icons/StarOutline.svg)。参阅[将区段标记为收藏](/help/components/segments/seg-favorite.md) |
 | **[!UICONTROL 标题和描述]** | 要编辑区段，请选择标题链接，这会打开[区段生成器](seg-builder.md)。 ![分享](/help/assets/icons/ShareAlt.svg)表示了这是共享区段。 |
 | **[!UICONTROL 数据视图]** | 应用此区段的数据视图。 |

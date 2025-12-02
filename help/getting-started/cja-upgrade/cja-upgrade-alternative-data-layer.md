@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 3a0d03d1-def0-45e6-8eb2-115b88497e6d
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '684'
 ht-degree: 50%
@@ -55,7 +55,7 @@ ht-degree: 50%
 
 | 优点 | 缺点 |
 |----------|---------|
-| <ul><li>**提供在 Experience Edge Network 中托管数据的所有优点**： <p>这些优点包括：</p><ul><li>Adobe Experience Platform 专为支持[实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=zh-Hans)而构建，因此具有高性能报告和数据可用性</li><li>在其他 Experience Cloud 产品（AJO、RTCDP 等）之间整合对 Adobe Experience Cloud 数据收集的实施</li><li>不依赖于 Adobe Analytics 命名法（属性、eVar、事件等）</li></ul><li>**使用当前数据层逻辑**：此方法使用当前数据层逻辑代替传统的Web SDK实施。 虽然此方法需要一些配置，但它不需要从头开始的全新实施，并且不需要填充数据元素或标记规则。 它允许您将数据从数据层映射到XDM，而不是从头开始填充XDM对象。</li></ul> | <ul><li>**需要映射才能将数据发送到Platform**：当您的组织准备好使用Customer Journey Analytics时，您必须将数据发送到Adobe Experience Platform中的数据集。 <p>由于此选项允许您将整个客户端数据层放入数据对象并将它发送到Adobe，这会导致大量数据被Adobe不容易解读。 要允许Adobe解释数据，您必须使用数据流映射将每个字段映射到所需的XDM字段。</p></li><li>**刚性实施**：实施受限于发送点击时数据层提供的内容。 对于具有基本数据需求的组织来说，这可能是可以接受的，但大多数组织都应当避免这种僵化的实施，而采用允许填充数据元素的更灵活的实施。</li><li>**未来的更改更难实施**：您以后添加到数据的任何字段都必须映射到数据流中的XDM。</li></ul> |
+| <ul><li>**提供在 Experience Edge Network 中托管数据的所有优点**： <p>这些优点包括：</p><ul><li>Adobe Experience Platform 专为支持[实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)而构建，因此具有高性能报告和数据可用性</li><li>在其他 Experience Cloud 产品（AJO、RTCDP 等）之间整合对 Adobe Experience Cloud 数据收集的实施</li><li>不依赖于 Adobe Analytics 命名法（属性、eVar、事件等）</li></ul><li>**使用当前数据层逻辑**：此方法使用当前数据层逻辑代替传统的Web SDK实施。 虽然此方法需要一些配置，但它不需要从头开始的全新实施，并且不需要填充数据元素或标记规则。 它允许您将数据从数据层映射到XDM，而不是从头开始填充XDM对象。</li></ul> | <ul><li>**需要映射才能将数据发送到Platform**：当您的组织准备好使用Customer Journey Analytics时，您必须将数据发送到Adobe Experience Platform中的数据集。 <p>由于此选项允许您将整个客户端数据层放入数据对象并将它发送到Adobe，这会导致大量数据被Adobe不容易解读。 要允许Adobe解释数据，您必须使用数据流映射将每个字段映射到所需的XDM字段。</p></li><li>**刚性实施**：实施受限于发送点击时数据层提供的内容。 对于具有基本数据需求的组织来说，这可能是可以接受的，但大多数组织都应当避免这种僵化的实施，而采用允许填充数据元素的更灵活的实施。</li><li>**未来的更改更难实施**：您以后添加到数据的任何字段都必须映射到数据流中的XDM。</li></ul> |
 
 {style="table-layout:auto"}
 

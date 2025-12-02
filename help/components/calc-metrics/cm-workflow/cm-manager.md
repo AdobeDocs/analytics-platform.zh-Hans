@@ -3,7 +3,7 @@ description: 了解如何共享、筛选、标记、批准、复制、删除计�
 title: 管理计算量度
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 28%
@@ -32,7 +32,7 @@ ht-degree: 28%
 <!-- I think this table incorrectly talks about quick calculated metrics -->
 
 | 列 | 描述 |
-| --- | --- | 
+| --- | --- |
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | 选择支持![Star](/help/assets/icons/Star.svg)或取消支持![StarOutline](/help/assets/icons/StarOutline.svg)计算量度。 查看[将计算量度标记为收藏](/help/components/segments/seg-favorite.md) |
 | **[!UICONTROL 标题和描述]** | 要编辑计算量度，请选择标题链接，这会打开[计算量度生成器](cm-build-metrics.md)。 共享的计算量度以![共享](/help/assets/icons/ShareAlt.svg)表示。 |
 | **[!UICONTROL 数据视图]** | 此计算量度应用于的数据视图。 |

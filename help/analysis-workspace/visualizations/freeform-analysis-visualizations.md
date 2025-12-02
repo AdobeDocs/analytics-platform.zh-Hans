@@ -5,7 +5,7 @@ title: 可视化概述
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1738'
 ht-degree: 89%
@@ -21,7 +21,7 @@ ht-degree: 89%
 Analysis Workspace 中提供了以下可视化图表类型：
 
 | 图标 | 名称 | 描述 |
-| :---: | --- | ---| 
+| :---: | --- | ---|
 | ![GraphArea](/help/assets/icons/GraphArea.svg) | [面积图](/help/analysis-workspace/visualizations/area.md) | 面积图可视化。与线形图相似，但线条下有彩色区域。当您有多个量度并且希望显示两个或更多量度相交的区域时，可以使用面积图。 |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [条形图](/help/analysis-workspace/visualizations/bar.md) | 一种条形图可视化，其中垂直条表示一个或多个量度的不同值。 |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVerticalStacked.svg) | [堆积条形图](/help/analysis-workspace/visualizations/bar.md) | 一种堆积条形图可视化，其中垂直条表示一个或多个量度的不同值。 |
@@ -35,13 +35,13 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | ![GraphHistogram](/help/assets/icons/Histogram.svg) | [直方图](/help/analysis-workspace/visualizations/histogram.md) | 直方图可视化根据量度的量级将人员、访问或事件分入不同的桶中。 |
 | ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [水平条](/help/analysis-workspace/visualizations/horizontal-bar.md) | 水平条可视化显示了一些水平条，这些水平条表示一个或多个量度中的各种值。 |
 | ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [堆叠的水平条形图](/help/analysis-workspace/visualizations/horizontal-bar.md) | 堆叠水平条形图可视化展示了代表一个或多个量度不同值的水平条。 |
-| ![Branch3](/help/assets/icons/Branch3.svg) | [历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | 历程画布可视化可帮助您分析，并深入了解您为用户和客户提供的历程。 |
+| ![Branch3](/help/assets/icons/Branch3.svg) | [历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | 历程画布可视化可帮助您分析，并洞察您为用户和客户提供的历程。 |
 | ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [关键量度摘要](/help/analysis-workspace/visualizations/key-metric.md) | 关键量度摘要可视化结合了线形图、摘要变化图和摘要数字可视化。 |
 | ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Line](/help/analysis-workspace/visualizations/line.md) | 线形图可视化图表使用线条来表示量度，以显示一段时间内值的变化情况。将时间作为 x 轴的线形图。 |
 | ![GraphScatter](/help/assets/icons/GraphScatter.svg) | [散点图](/help/analysis-workspace/visualizations/scatterplot.md) | 散点图可视化图表显示维度项与最多三个量度之间的关系。 |
 | ![PageRule](/help/assets/icons/PageRule.svg) | [部分标头](section-header.md) | 识别并阐述面板中的各个部分。 |
 | ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) | [摘要变化](/help/analysis-workspace/visualizations/summary-number-change.md) | 摘要变化可视化将所选单元格之间的变化显示为一个大的数字或百分比。 |
-| ![&#x200B; 123](/help/assets/icons/123.svg)</p> | [摘要数字](/help/analysis-workspace/visualizations/summary-number-change.md) | 摘要数字可视化将选定的单元格显示为一个大的数字。 |
+| ![ 123](/help/assets/icons/123.svg)</p> | [摘要数字](/help/analysis-workspace/visualizations/summary-number-change.md) | 摘要数字可视化将选定的单元格显示为一个大的数字。 |
 | ![Text](/help/assets/icons/Text.svg) | [文本](/help/analysis-workspace/visualizations/text.md) | 文本可视化功能允许您将用户定义的文本添加到工作区。在利用面板/可视化图表描述之外，对于向您的分析和洞察添加额外的上下文非常有用 |
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [树状图](/help/analysis-workspace/visualizations/treemap.md)<p> | 树状图可视化将层次化（树状结构）数据显示为一组嵌套的矩形。 |
 | ![Type](/help/assets/icons/TwoDots.svg) | [维恩图](/help/analysis-workspace/visualizations/venn.md) | 可视化维恩图使用圆圈来描绘最多 3 个区段的量度重叠。 |

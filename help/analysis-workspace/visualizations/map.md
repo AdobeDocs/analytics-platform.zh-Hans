@@ -4,10 +4,10 @@ title: 地图
 feature: Visualizations
 role: User, Admin
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: ab0e6f0578cbc6f856c2b0a46b1231cce145b84c
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '2761'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中的地图可视化图表。_<br/>_查看本文的[&#x200B; &#x200B;](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)版本的&#x200B;_&#x200B;**映射**。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的地图可视化图表。_<br/>_查看本文的[ ](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)版本的&#x200B;_**映射**。_
 
 >[!ENDSHADEBOX]
 
@@ -63,7 +63,7 @@ Analysis Workspace中的![全球](/help/assets/icons/Globe.svg) **[!UICONTROL �
 
 要添加这些上下文标签，请执行以下操作：
 
-1. 在Customer Journey Analytics中，选择&#x200B;**[!UICONTROL 数据管理]** > **[!UICONTROL 数据视图]**。
+1. 在 Customer Journey Analytics 中选择&#x200B;**[!UICONTROL 数据管理]** > **[!UICONTROL 数据视图]**。
 
 1. 在数据视图页面上，选择包含要在地图可视化图表中分析的数据视图。
 
@@ -107,7 +107,7 @@ Adobe提供了多个[预建模板](/help/analysis-workspace/templates/use-templa
 
 要添加这些上下文标签，请执行以下操作：
 
-1. 在Customer Journey Analytics中，选择&#x200B;**[!UICONTROL 数据管理]** > **[!UICONTROL 数据视图]**。
+1. 在 Customer Journey Analytics 中选择&#x200B;**[!UICONTROL 数据管理]** > **[!UICONTROL 数据视图]**。
 
 1. 在数据视图页面上，选择包含您要使用使用地图可视化图表的预建模板分析的数据视图。 在此数据视图中，选择五个维度：一个包含国家/地区数据，一个包含城市数据，一个包含州数据，一个包含DMA数据。 然后，使用相应的上下文标签来标记这些维度。
 
@@ -270,7 +270,7 @@ Customer Journey Analytics中的地图可视化图表与Adobe Analytics中的地
 
 如果您有非常精确的自定义数据集，则可以配置地图可视化图表以实现在一米内的位置精度。
 
-1. 在Customer Journey Analytics中，选择&#x200B;**[!UICONTROL 数据管理]** > **[!UICONTROL 数据视图]**。
+1. 在 Customer Journey Analytics 中选择&#x200B;**[!UICONTROL 数据管理]** > **[!UICONTROL 数据视图]**。
 
 1. 选择包含要配置以使用更精确位置的维的数据视图。
 

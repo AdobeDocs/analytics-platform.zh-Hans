@@ -4,7 +4,7 @@ description: 了解如何管理 Customer Journey Analytics 中的受众
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: 4717a85b9a3c7dc2cbdd8c625ebb5862cbfccd58
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 95%
@@ -22,7 +22,7 @@ ht-degree: 95%
 * **计划或取消计划**&#x200B;自动受众刷新/更新。计划的最长有效期为 1 年。
 * 即将到期时&#x200B;**续订受众刷新计划**。针对即将过期的受众的处理方式与针对即将过期的计划报告的处理方式类似 - 管理员会在计划过期前一个月收到一封电子邮件。
 * 查看&#x200B;**刷新间隔**&#x200B;和&#x200B;**上次更新受众的时间**
-* 通过 Customer Journey Analytics 深入了解&#x200B;**产生一个受众所花的时间**。以及在实时客户平台中显示受众以进行激活所需的时间。
+* 通过 Customer Journey Analytics 洞察&#x200B;**产生一个受众所花的时间**。以及在实时客户平台中显示受众以进行激活所需的时间。
 * 查看&#x200B;**实时客户平台是否正在积极使用** Customer Journey Analytics 中的受众。或者（理想情况下）任何使用由 Customer Journey Analytics 创建的受众的 Experience Platform 应用程序。
 
 如果您具有[受众视图](/help/technotes/access-control.md#user-level-access)访问权限，那么您可以查看受众。如果您有[受众创建](/help/technotes/access-control.md#user-level-access)访问权限，您可以编辑和删除受众。
@@ -80,9 +80,9 @@ ht-degree: 95%
 
 | 图标 | 操作 | 描述 |
 |:---:|---|---|
-| ![标签](/help/assets/icons/Labels.svg) | **[!UICONTROL 标记]** | 标记选定的受众。在&#x200B;**[!UICONTROL 更新标记：*受众名称&#x200B;*]**&#x200B;对话框中，从下拉菜单中选择标记或者输入一个或多个新标记。选择&#x200B;**[!UICONTROL 保存&#x200B;]**&#x200B;以保存。 |
+| ![标签](/help/assets/icons/Labels.svg) | **[!UICONTROL 标记]** | 标记选定的受众。在&#x200B;**[!UICONTROL 更新标记：*受众名称&#x200B;*]**对话框中，从下拉菜单中选择标记或者输入一个或多个新标记。选择**[!UICONTROL 保存&#x200B;]**以保存。 |
 | ![Delete](/help/assets/icons/Delete.svg) | **[!UICONTROL 删除]** | 删除选定的受众。 |
-| ![Edit](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名选定的受众。使用&#x200B;**[!UICONTROL 重命名：*受众名称&#x200B;*]**&#x200B;对话框来重命名受众，并选择&#x200B;**[!UICONTROL 保存&#x200B;]**&#x200B;以保存。 |
+| ![Edit](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名选定的受众。使用&#x200B;**[!UICONTROL 重命名：*受众名称&#x200B;*]**对话框来重命名受众，并选择**[!UICONTROL 保存&#x200B;]**以保存。 |
 
 选择一个或多个计划项目时，可以从蓝色操作栏中执行以下操作。
 

@@ -4,7 +4,7 @@ description: 了解如何在Workspace中管理注释。
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 91%
@@ -34,7 +34,7 @@ ht-degree: 91%
 注释列表➊显示您拥有的所有注释、已覆盖到您的所有项目的注释以及与您共享的注释。 该列表具有以下各列：
 
 | 列 | 描述 |
-| --- | --- | 
+| --- | --- |
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | 选择加入收藏 ![Star](/help/assets/icons/Star.svg) 或取消收藏 ![StarOutline](/help/assets/icons/StarOutline.svg) 一项注释。 |
 | **[!UICONTROL 标题和描述]** | 在注释生成器中提供。要编辑标题和说明，请选择标题链接：打开[注释生成器](/help/components/annotations/create-annotations.md#annotation-builder)。共享注释用![Share](/help/assets/icons/ShareAlt.svg)表示。 |
 | **[!UICONTROL 数据视图]** | 此注释应用于的数据视图。 |

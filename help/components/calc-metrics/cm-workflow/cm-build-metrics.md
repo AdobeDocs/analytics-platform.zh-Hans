@@ -3,7 +3,7 @@ description: 了解计算量度构建器，它提供了一个画布，您可以�
 title: 生成度量
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 100%
@@ -199,5 +199,5 @@ Customer Journey Analytics 提供了一个画布，用于拖放维度、量度�
 >[!MORELIKETHIS]
 >
 >[使用函数](cm-using-functions.md)
->>[区段](/help/components/segments/seg-overview.md)
+>[区段](/help/components/segments/seg-overview.md)
 >

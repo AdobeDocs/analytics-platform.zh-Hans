@@ -4,7 +4,7 @@ title: 快速区段
 feature: Workspace Basics, Filters, Segments
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1186'
 ht-degree: 84%
@@ -19,7 +19,7 @@ ht-degree: 84%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的快速区段](https://video.tv.adobe.com/v/345335/?captions=chi_hans&quality=12&learn=on){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的快速区段](https://video.tv.adobe.com/v/341466/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -74,7 +74,7 @@ ht-degree: 84%
 | 元素 | 描述 |
 |---|---|
 | **[!UICONTROL 名称]** | 该名称是从快速区段的定义自动得出的。 |
-| **[!UICONTROL 人员]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![警报](/help/assets/icons/Alert.svg) | 预览快速分段后得到的数据可视化效果。通过条形图和百分比可以了解总体数据中有多少是快速区段结果的一部分。![警报](/help/assets/icons/AlertRed.svg)表示快速区段未返回数据。 |
+| **[!UICONTROL 人员]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![警报](/help/assets/icons/Alert.svg) | 预览快速分段后得到的数据可视化效果。通过条形图和百分比可以洞察总体数据中有多少是快速区段结果的一部分。![警报](/help/assets/icons/AlertRed.svg)表示快速区段未返回数据。 |
 | **[!UICONTROL 包括]**<br/>**[!UICONTROL 排除]** | 从下拉列表![ChevronDown](/help/assets/icons/ChevronDown.svg)中选择是否要从面板中的数据包括或排除快速区段的结果。 |
 | **[!UICONTROL 事件]**<br/>**[!UICONTROL 会话]**<br/>**[!UICONTROL 人员]** | 从下拉菜单![ChevronDown](/help/assets/icons/ChevronDown.svg)中选择快速区段的范围。 |
 

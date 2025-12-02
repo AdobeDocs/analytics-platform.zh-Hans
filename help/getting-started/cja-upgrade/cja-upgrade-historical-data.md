@@ -7,7 +7,7 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 1d17151b-3a12-468e-9a4f-9e5994599570
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 97%
@@ -46,7 +46,7 @@ ht-degree: 97%
 
 ## 使用 Analytics 源连接器
 
-您可以使用[&#x200B; Analytics 源连接器](/help/data-ingestion/analytics.md)来保留历史数据。无论您选择哪种升级路径（即使您使用 Web SDK 升级），您都可以使用 Analytics 源连接器保留来自 Adobe Analytics 环境的历史数据。
+您可以使用[ Analytics 源连接器](/help/data-ingestion/analytics.md)来保留历史数据。无论您选择哪种升级路径（即使您使用 Web SDK 升级），您都可以使用 Analytics 源连接器保留来自 Adobe Analytics 环境的历史数据。
 
 您可以使用 Analytics 源连接器将历史数据放入与当前数据分开的专用位置，从而保留历史数据。
 

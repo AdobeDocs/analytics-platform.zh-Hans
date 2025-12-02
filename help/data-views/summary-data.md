@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 97%
@@ -21,7 +21,7 @@ ht-degree: 97%
 >[!NOTE]
 >
 >摘要数据是来自摘要数据集的时间序列数据。该摘要数据集基于一个以 XDM 摘要量度类别为基础类别的架构。
->&#x200B;>仅支持基于小时或每日的时间序列数据。
+>仅支持基于小时或每日的时间序列数据。
 
 >[!TIP]
 >

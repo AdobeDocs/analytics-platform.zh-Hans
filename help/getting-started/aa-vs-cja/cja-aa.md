@@ -5,7 +5,7 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 7f44c7497a48e8377ca26cb194f828c3c8836f98
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 100%
@@ -26,7 +26,7 @@ ht-degree: 100%
 | **适用于任何类型的数据** | Customer Journey Analytics 与 Experience Platform 保存各种数据架构和类型的能力相结合。使用[体验数据模型 (XDM)](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/home)，可以采用统一的方式来表示和组织数据，以便进行数据合并和分析。Adobe Analytics 主要专注于 Web 和移动分析数据，并具有一些[数据导入](https://experienceleague.adobe.com/zh-hans/docs/analytics/import/home)功能。 |
 | **B2B Edition** | [Customer Journey Analytics B2B Edition](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition?lang=cn) 通过提供可付诸行动的账户洞察，助力 B2B 企业协同其市场、销售与产品团队，推动营收增长。帐户是数据模型的中心，因此所有分析都集中在帐户历程上。在基于人员及时间的事件之上添加一层新实体（帐户、机会和购买群组），可以创建 B2B 营销活动和收入生命周期的完整图景。 |
 | **BI 扩展** | 通过 [BI 扩展功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/data-export/bi-extension)，您可以将 Customer Journey Analytics 直接连接至主流 BI 可视化工具，例如 Power BI 或 Tableau。使用此扩展功能，您可以确保 BI 报表与 Analysis Workspace 及其他 Customer Journey Analytics 报表界面中的数据精准一致。该扩展功能为 Customer Journey Analytics 提供了一种更为简便的 BI 报表获取方式，无需从原始数据重新构建报表或量度。 |
-| **Workspace 项目中的备注** | 您可以通过备注在 [Analysis Workspace 项目](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects?lang=cn)的上下文中分享见解并提出问题。这可以简化有关数据的讨论，使对话保持在正在讨论的数据范围内。 |
+| **Workspace 项目中的备注** | 您可以通过评论在 [Analysis Workspace 项目](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects?lang=cn)的上下文中分享洞察并提出问题。这可以简化有关数据的讨论，使对话保持在正在讨论的数据范围内。 |
 | **Content Analytics** | [Content Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/content-analytics/content-analytics) 帮助营销人员了解内容如何影响企业定义的关键绩效指标。除了行为数据之外，Content Analytics 还收集关于内容如何被消费以及内容如何产生影响的数据。 |
 | **跨设备分析** | Customer Journey Analytics 支持来自未经身份验证和经过身份验证的会话的特定于设备的数据集的无缝组合。Customer Journey Analytics 可以将历史数据回填到已知设备。在 Adobe Analytics 中，此功能仅限于单个报告包和使用设备图时。 |
 | **Data Insights 代理** | [Data Insights 代理](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai?lang=cn)是 Customer Journey Analytics 中 AI 助手的一部分，是一款生成式 AI 对话代理。它使用来自数据视图和实际数据的组件，通过在 Analysis Workspace 中构建相关的可视化图表来快速有效地回答以数据为中心的问题。 |
@@ -34,9 +34,9 @@ ht-degree: 100%
 | **派生字段** | [派生字段](/help/data-views/derived-fields/derived-fields.md)可为数据转换报告时间。可即时组合、更正或创建数据，并且这些转换可追溯地应用于所有报告。 |
 | **增强了安全和隐私选项** - HIPAA 就绪 | Customer Journey Analytics 符合 HIPAA 标准，并提供[附加安全选项](/help/privacy/cmk.md)，以确保符合相关法规。Adobe Analytics 尚未为 HIPAA 做好准备。 |
 | **试验分析** | Customer Journey Analytics 可以[评估来自定义为连接一部分的任何数据源的任何试验](/help/analysis-workspace/c-panels/experimentation.md)的提升度和置信度。通过此评估，您可以了解跨任何渠道的客户互动之间的因果关系。Analytics 仅限用于通过 A4T 进行的试验分析。 |
-| **预测** | [预测](/help/analysis-workspace/c-forecast/forecasting.md)是一种 AI/ML 功能，包括基于 Customer Journey Analytics 中已有的历史数据对时间序列相关数据进行统计预测。预测可以出现在自由格式的表格和线形图可视化中。 |
+| **预测** | [预测](/help/analysis-workspace/c-forecast/forecasting.md)是一种 AI/ML 功能，包括基于 Customer Journey Analytics 中已有的历史数据对时间序列相关数据进行统计预测。预测可以出现在自由格式表和折线图可视化中。 |
 | **引导式分析** | [引导式分析](/help/guided-analysis/overview.md)使用户能够通过基于 Customer Journey Analytics 的跨渠道数据的引导式工作流，自助提供有关客户历程的高质量数据和洞察。 |
-| **智能题注** | [智能题注](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions)使用先进的机器学习和生成式 AI 为 Workspace 可视化提供有价值的自然语言见解。支持以下可视化图表的智能题注：线形图、多行、条形图、水平条形图、圆环图、面积图、流量和流失图。 |
+| **智能题注** | [智能题注](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions)使用先进的机器学习和生成式 AI 为 Workspace 可视化提供有价值的自然语言洞察。支持以下可视化图表的智能题注：线形图、多行、条形图、水平条形图、圆环图、面积图、流量和流失图。 |
 | **历程画布** | [历程画布](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=cn)是 Analysis Workspace 中的一种可视化工具，可用于分析用户如何在既定历程中前进或流失。 |
 | **产品使用情况** | [产品使用情况](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/tools/product-usage/usage-overview)向您展示贵组织如何使用 Customer Journey Analytics。 |
 | **报告时转换** | Customer Journey Analytics 中的[数据视图](/help/data-views/data-views.md)可用于解释来自某个连接的数据。您可以在不更改实施方式的前提下修改或移除数据。使用子字符串操作维度。可根据任意数值创建量度，或筛选子事件。以非破坏性的方式进行所有这些转换。Adobe Analytics 通过虚拟报告包和自定义会话长度提供有限的功能。 |
@@ -107,7 +107,7 @@ ht-degree: 100%
 | **IP 模糊处理** | 对于 Customer Journey Analytics 用户，在使用 Analytics 源连接器将 Adobe Analytics 数据导入 Customer Journey Analytics 时，Adobe Analytics 中应用的 IP 混淆设置会传递至 Customer Journey Analytics 数据中。您可以根据需要在 Adobe Analytics 中控制这些设置。<p>对于使用 Experience Platform Web SDK 将数据直接填充到 Platform 和 Customer Journey Analytics 中的 Customer Journey Analytics 客户。您可以使用 Platform 中的“数据收集数据准备”功能根据您公司的要求配置混淆 IP 地址的规则。 |
 | **营销渠道** | 使用 Analytics Source Connector 时，“营销渠道”数据会通过该连接器流入 Customer Journey Analytics。在传统的 Adobe Analytics 中配置营销渠道规则，其中不支持某些规则。有关更多信息，请参阅 [Customer Journey Analytics 营销渠道](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels)。<br/>对于 WebSDK 实施，通过[派生字段](../../data-views/derived-fields/derived-fields.md)支持报告时营销渠道处理规则。 |
 | **促销变量持久性** | 通过[绑定维度和绑定量度](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)实现全面支持 |
-| **量度去重** | 在数据视图中的量度上进行配置。量度去重是在人员级别或会话级别执行的，而非在数据集、数据视图或连接级别。 |
+| **重复量度删除** | 在数据视图中的量度上进行配置。重复量度删除是在人员级别或会话级别执行的，而非在数据集、数据视图或连接级别。 |
 | **新会话与重复会话报表分析** | 此前是通过使用“访问次数”维度实现的。新会话与重复会话分析支持[最长 13 个月的回溯窗口](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/data-views/data-views-usecases)。 |
 | **处理规则、VISTA 规则、营销渠道处理规则** | 支持使用 Adobe Experience Platform 数据准备功能以及基于 WebSDK 的数据集和 Analytics Source Connector 的数据的[派生字段。](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/derived-fields) |
 | **Products 变量** | 在 Experience Platform 中，用户可在数据集架构中使用对象数组满足此用例。在 Customer Journey Analytics 中，客户可使用任意数量的产品变量，而不像在 Adobe Analytics 中那样只能使用一个变量。 |
@@ -122,7 +122,7 @@ ht-degree: 100%
 
 | 功能 | 注释 |
 | --- | --- |
-| **Workspace 面板** | 全面支持空白面板、“归因”面板、“任意形状”面板和“快速洞察”面板。不支持“区段比较面板”和“Analytics for Target (A4T) 面板”。 |
+| **Workspace 面板** | 完全支持“空白面板”、“归因面板”、“快速洞察面板”。不支持“区段比较面板”和“Analytics for Target (A4T) 面板”。 |
 
 ## 没有支持，但有计划支持 {#planned}
 

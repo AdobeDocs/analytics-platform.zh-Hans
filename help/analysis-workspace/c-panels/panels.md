@@ -4,7 +4,7 @@ title: 面板概述
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '2193'
 ht-degree: 100%
@@ -167,7 +167,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [下拉区段](https://video.tv.adobe.com/v/327489?captions=chi_hans&quality=12&learn=on){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [下拉区段](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 {{videoaa}}
 
@@ -186,7 +186,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 * 对于使用维度项的下拉区段，请从左侧面板中选择一个维度，然后在按住 ⇧ (*shift*) 的同时，将该维度拖放到面板的放置区域。此操作会创建一个下拉区段，其中包含与该维度关联的所有维度项。
 
-  或者，如果您希望下拉区段仅包含与某个维度相关联的特定维度项，请选择左侧边栏中所需维度旁边的右箭头图标。此操作会公开所有可用的维度项。使用 ⇧+![Select](/help/assets/icons/Select.svg)（*shift* + *选择*）或 ^+![Select](/help/assets/icons/Select.svg)（*control* + *选择*）从此列表中选择多个维度项，**然后在按住**⇧ 的同时将它们放入面板放置区。
+  或者，如果您希望下拉区段仅包含与某个维度相关联的特定维度项，请选择左侧面板中所需维度旁边的右箭头图标。此操作会公开所有可用的维度项。使用 ⇧+![Select](/help/assets/icons/Select.svg)（*shift* + *选择*）或 ^+![Select](/help/assets/icons/Select.svg)（*control* + *选择*）从此列表中选择多个维度项，**然后在按住**⇧ 的同时将它们放入面板放置区。
 
 * 对于使用单一组件类型（例如，仅维度、仅区段或仅量度）的下拉区段，请使用 ⇧+![Select](/help/assets/icons/Select.svg)或 ^+![Select](/help/assets/icons/Select.svg)在左侧面板中选择多个相同类型的项目。然后&#x200B;**在按住** ⇧ 的同时将这些项目拖放到面板放置区域。
 
