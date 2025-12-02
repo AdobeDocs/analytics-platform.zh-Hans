@@ -18,11 +18,11 @@ Analysis Workspace 中提供了热键（键盘快捷键），以实现无缝导�
 
 请注意，您的键盘上可能会使用以下符号：
 
-- **⇧** 表示 **[!UICONTROL ** shift **]** 键。
-- **⌘** 表示 **[!UICONTROL ** cmd **]**（命令）。
-- **⌃** 表示 **[!UICONTROL ** ctrl **]**（控制）。
-- **⌥** 表示 **[!UICONTROL ** opt **]**（选项）。
-- **⎇** 表示 **[!UICONTROL ** alt **]**（备选）。
+- **⇧** 表示 **[!UICONTROL **&#x200B; shift &#x200B;**]** 键。
+- **⌘** 表示 **[!UICONTROL **&#x200B; cmd &#x200B;**]**（命令）。
+- **⌃** 表示 **[!UICONTROL **&#x200B; ctrl &#x200B;**]**（控制）。
+- **⌥** 表示 **[!UICONTROL **&#x200B; opt &#x200B;**]**（选项）。
+- **⎇** 表示 **[!UICONTROL **&#x200B; alt &#x200B;**]**（备选）。
 
 ## 导航操作
 
