@@ -77,7 +77,7 @@ ht-degree: 13%
    | 字段 | 描述 |
    |---------|----------|
    | **[!UICONTROL 合并策略]** | 选择与要用于受众分析的配置文件数据集对应的合并策略。 <p>合并策略可确定Adobe Experience Platform如何将来自多个数据集的配置文件数据合并到用于创建受众的统一客户配置文件中。 您选择的合并策略会影响受众中包含哪些配置文件属性。 每天都会在Experience Platform中生成此数据的快照。 此快照提供特定时间点数据的静态视图，不包含任何事件数据。</p><p>如果您看到多个合并策略并且不确定选择哪一个，请选择&#x200B;**[!UICONTROL 默认基于时间]**&#x200B;的合并策略。 您还可以咨询数据团队，以更好地了解哪些受众与每个合并策略关联。</p> |
-   | **[!UICONTROL 配置文件数据集]** | 与所选合并策略关联的配置文件数据集。 此配置文件数据集包含要分析的Experience Platform受众数据。 此用户档案数据集将添加到您选择的连接。<p>选择合并策略后，将显示配置文件快照导出。 例如：`Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`。</p><p>有关详细信息，请参阅《Experience Platform功能板指南》中的[配置文件属性数据集](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/query#profile-attribute-datasets)。</p> |
+   | **[!UICONTROL 配置文件数据集]** | 与所选合并策略关联的配置文件数据集。 此配置文件数据集包含要分析的Experience Platform受众数据。 此用户档案数据集将添加到您选择的连接。<p>选择合并策略后，将显示配置文件快照导出。 例如：`Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`。</p><p>有关详细信息，请参阅《Experience Platform功能板指南》中的[配置文件属性数据集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/dashboards/query#profile-attribute-datasets)。</p> |
 
 1. 在&#x200B;**[!UICONTROL 连接]**&#x200B;部分中，单击&#x200B;**[!UICONTROL 选择连接]**。
 

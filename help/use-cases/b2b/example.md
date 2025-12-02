@@ -14,7 +14,7 @@ ht-degree: 6%
 
 # 基于人员的 B2B 项目示例
 
-本文描述了一个用例，其中您想要在Customer Journey Analytics中正确报告典型基于人员的B2B设置上下文中的人员数据。 [Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview)可帮助进行此类配置。  此用例说明了如何在Customer Journey Analytics中设置、配置和报告基于配置文件（人员）级别的B2B数据。
+本文描述了一个用例，其中您想要在Customer Journey Analytics中正确报告典型基于人员的B2B设置上下文中的人员数据。 [Real-Time CDP B2B edition](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview)可帮助进行此类配置。  此用例说明了如何在Customer Journey Analytics中设置、配置和报告基于配置文件（人员）级别的B2B数据。
 
 [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}随着[Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md)的发布，发布了基于帐户的报表用例的单独部分。
 
@@ -43,7 +43,7 @@ ht-degree: 6%
 -->
 
 
-B2B查找架构、配置文件架构和事件架构之间的关系在Experience Platform内的B2B设置中定义。 查看[Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/rtcdp/schemas/b2b)中的架构，以及[在Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b)中定义两个架构之间的多对一关系。
+B2B查找架构、配置文件架构和事件架构之间的关系在Experience Platform内的B2B设置中定义。 查看[Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/rtcdp/schemas/b2b)中的架构，以及[在Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/relationship-b2b)中定义两个架构之间的多对一关系。
 
 
 要确保正确设置支持B2B数据基于人员的查找的连接，请使用下图进行概述并执行以下步骤：
