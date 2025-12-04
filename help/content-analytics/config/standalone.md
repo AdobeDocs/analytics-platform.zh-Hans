@@ -45,7 +45,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [管理产品配置文件的用户](https://video.tv.adobe.com/v/333860/?quality=12&learn=on){target="_blank"}以观看演示视频。
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [管理产品配置文件的用户](https://video.tv.adobe.com/v/3475951/?captions=chi_hans&quality=12&learn=on){target="_blank"}以观看演示视频。
 
 
 >[!ENDSHADEBOX]
