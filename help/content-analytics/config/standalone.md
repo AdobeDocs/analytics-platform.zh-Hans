@@ -255,7 +255,7 @@ Customer Journey Analytics不支持基于属性的访问控制。 要指定权�
 
 ### 手动配置
 
-要为您的网站实施Content Analytics，您需要手动发布Content Analytics标记属性[](manual.md)。
+要为您的网站实施Content Analytics，您需要手动发布Content Analytics标记属性[&#128279;](manual.md)。
 
 
 ## 设置项目
