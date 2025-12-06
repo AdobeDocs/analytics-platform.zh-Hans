@@ -1,19 +1,19 @@
 ---
-title: 使用拼合
+title: 使用拼接
 description: 如何使用拼合
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 badgePremium: label="Beta 版" type="Informative"
-source-git-commit: 23b890ec6a3266d1ca0621b09264f1d6a2f82645
+source-git-commit: 6ebd1604e01af068228d7a5e4a78fdccf852f480
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '827'
 ht-degree: 3%
 
 ---
 
-# 使用拼合
+# 使用拼接
 
 您可以对作为连接的一部分配置的一个或多个事件数据集启用拼合。 您许可的Customer Journey Analytics包将决定您能够为拼合启用的事件数据集数量。
 
@@ -30,7 +30,7 @@ ht-degree: 3%
    * 多个配置为标识的字段，允许您为永久ID和人员ID选择不同的值。
    * 至少一个标记为具有关联命名空间的主身份的字段，以防您将身份映射和主身份命名空间用于永久ID或人员ID。
 
-* 如果要使用身份图形和基于图形的拼接，必须为Identity服务[启用事件数据集](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service)。
+* 如果要使用基于图形的拼合，并且预期事件数据集将参与身份图形，则应[为身份服务启用该数据集](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service)。 当数据集包含永久性ID旁边的相关人员ID时，数据集会向身份图中添加内容。
 
 
 ## 印前检查检查
@@ -137,7 +137,7 @@ ht-degree: 3%
 
 1. 从&#x200B;**[!UICONTROL 回顾窗口]**&#x200B;下拉菜单中选择一个回顾窗口。 可用选项取决于您有权访问的Customer Journey Analytics包。
 
-保存包含为身份拼接启用的数据集的连接后，每个数据集的拼接过程从该数据集的数据摄取开始时开始。
+保存连接后，当开始为这些数据集摄取数据时，会触发启用拼合功能的数据集拼合过程
 
 ## 限制
 
