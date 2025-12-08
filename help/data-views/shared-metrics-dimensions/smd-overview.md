@@ -2,9 +2,9 @@
 title: 共享量度和维度概述
 description: 在多个数据视图中使用相同的维度或量度引用。
 exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 1de8b8f40a7e1be0de0e6cbed5cc57ff834f2377
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ ht-degree: 0%
    * **[!UICONTROL 摘要数据组]**：组件的[摘要数据组](/help/data-views/component-settings/summary-data-group.md)设置。
    * **[!UICONTROL 创建日期]**：创建或导入组件的日期。
    * **[!UICONTROL 上次修改时间]**：如果组件在创建后已修改，则为上次修改该组件的日期。
-* **[!UICONTROL 作业历史记录]**：选择![历史记录图标](/help/assets/icons/History.svg)图标以打开一个模式窗口，其中显示从单个数据视图导入维度和量度的所有实例。
+* **[!UICONTROL 作业历史记录]**：如果导入或共享大量组件，则会自动创建作业。 选择![历史记录图标](/help/assets/icons/History.svg)图标以打开一个模式窗口，其中显示从单个数据视图导入维度和量度的所有实例。 如果您的导入或共享操作都不够大，无法触发作业，则不会出现此按钮。
 
 ## 编辑组件或将组件共享到数据视图
 
