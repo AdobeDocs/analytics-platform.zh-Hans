@@ -6,10 +6,10 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 3fb94d920b240247f13050cf091423335a3d74ec
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 13%
+source-wordcount: '1289'
+ht-degree: 12%
 
 ---
 
@@ -53,7 +53,11 @@ ht-degree: 13%
 
 利用Audience Analysis，可将受众成员资格数据从Experience Platform配置文件数据集摄取到Customer Journey Analytics连接。 受众将可用作新维度，以便在Analysis Workspace中使用。 有关受众分析的更多详细概述信息，请参阅[受众分析概述](/help/connections/audience-analysis/audience-analysis-overview.md)。
 
+## 创建受众分析配置
+
 创建受众分析配置时，您可以选择与要分析的Experience Platform受众关联的沙盒和合并策略。 Customer Journey Analytics会创建新的查找数据集，然后自动将查找数据集和配置文件数据集添加到您选择的连接。
+
+只有系统管理员可以创建受众分析配置。
 
 要创建受众分析配置，请执行以下操作：
 
@@ -70,18 +74,20 @@ ht-degree: 13%
    | 字段 | 描述 |
    |---------|----------|
    | **[!UICONTROL 名称]** | 指定配置的名称。 |
-   | **[!UICONTROL 沙盒]** | 选择沙盒，其中包含您要添加到连接中的配置文件数据集。 <p>Adobe Experience Platform 提供了可将单个 Platform 实例划分为多个单独的虚拟环境的[沙盒](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sandbox/home)，以帮助开发和改进数字体验应用程序。您可以将沙盒视为包含数据集的“数据孤岛”。沙盒可用于控制对数据集的访问。</p> |
+   | **[!UICONTROL 沙盒]** | 选择包含要添加到连接的配置文件数据集的Experience Platform沙盒。 <p>Adobe Experience Platform 提供了可将单个 Platform 实例划分为多个单独的虚拟环境的[沙盒](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sandbox/home)，以帮助开发和改进数字体验应用程序。您可以将沙盒视为包含数据集的“数据孤岛”。沙盒可用于控制对数据集的访问。</p> |
 
 1. 在&#x200B;**[!UICONTROL 用户档案数据集]**&#x200B;部分中，指定以下信息：
 
    | 字段 | 描述 |
    |---------|----------|
-   | **[!UICONTROL 合并策略]** | 选择与要用于受众分析的配置文件数据集对应的合并策略。 <p>合并策略可确定Adobe Experience Platform如何将来自多个数据集的配置文件数据合并到用于创建受众的统一客户配置文件中。 您选择的合并策略会影响受众中包含哪些配置文件属性。 每天都会在Experience Platform中生成此数据的快照。 此快照提供特定时间点数据的静态视图，不包含任何事件数据。</p><p>如果您看到多个合并策略并且不确定选择哪一个，请选择&#x200B;**[!UICONTROL 默认基于时间]**&#x200B;的合并策略。 您还可以咨询数据团队，以更好地了解哪些受众与每个合并策略关联。</p> |
-   | **[!UICONTROL 配置文件数据集]** | 与所选合并策略关联的配置文件数据集。 此配置文件数据集包含要分析的Experience Platform受众数据。 此用户档案数据集将添加到您选择的连接。<p>选择合并策略后，将显示配置文件快照导出。 例如：`Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`。</p><p>有关详细信息，请参阅《Experience Platform功能板指南》中的[配置文件属性数据集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/dashboards/query#profile-attribute-datasets)。</p> |
+   | **[!UICONTROL 合并策略]** | 选择与您想用于受众分析的轮廓数据集所对应的合并策略。 <p>合并策略可确定Adobe Experience Platform如何将来自多个数据集的配置文件数据合并到用于创建受众的统一客户配置文件中。 您选择的合并策略会影响受众中包含哪些配置文件属性。 每天都会在Experience Platform中生成此数据的快照。 此快照提供特定时间点数据的静态视图，不包含任何事件数据。</p><p>如果您看到多个合并策略并且不确定选择哪一个，请选择&#x200B;**[!UICONTROL 默认基于时间]**&#x200B;的合并策略。 您还可以咨询数据团队，以更好地了解哪些受众与每个合并策略关联。</p> |
+   | **[!UICONTROL 配置文件数据集]** | 与所选合并策略关联的配置文件数据集。 此配置文件数据集包含要分析的Experience Platform受众数据。 此用户档案数据集将添加到您选择的连接。<p>选择合并策略后，将显示配置文件快照导出。 例如：`Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`。</p><p>有关详细信息，请参阅《Experience Platform功能板指南》中的[配置文件属性数据集](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/query#profile-attribute-datasets)。</p> |
 
 1. 在&#x200B;**[!UICONTROL 连接]**&#x200B;部分中，单击&#x200B;**[!UICONTROL 选择连接]**。
 
 1. 在“连接”对话框中，选中要添加配置文件数据集的连接旁边的复选框，然后选择&#x200B;**[!UICONTROL 使用连接]**。
+
+   一个连接只能与一个受众分析配置相关联。
 
 1. 指定以下信息以配置连接：
 
@@ -100,5 +106,35 @@ ht-degree: 13%
 1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以创建配置。
 
    由于配置文件数据集每天更新一次，因此可在创建受众分析配置后一天的Customer Journey Analytics数据视图中访问受众。
+
+1. 24小时后，[在数据视图](#view-audience-dimensions-in-the-data-view)中查看受众维度，以验证受众维度在您选择的数据视图中是否可用。
+
+## 在数据视图中查看受众维度
+
+在您[创建受众分析配置](#create-an-audience-analysis-configuration)后，您可以验证是否已将受众维度添加到您在配置期间选择的数据视图中。
+
+要在数据视图中查看受众维度，您必须是数据视图所分配到的产品配置文件的产品配置文件管理员。 有关详细信息，请参阅[访问控制](/help/technotes/access-control.md)。
+
+在数据视图中查看受众分析维度：
+
+1. 在Customer Journey Analytics中，选择&#x200B;**[!UICONTROL 数据管理]** > **[!UICONTROL 数据视图]**。
+
+1. 在&#x200B;**[!UICONTROL 维度]**&#x200B;部分中，以下维度现在应可用：
+
+   * **[!UICONTROL 受众名称]**
+
+   * **[!UICONTROL 受众来源]**
+
+   * **[!UICONTROL 已退出受众来源]**
+
+   * **[!UICONTROL 已退出受众名称]**
+
+   请注意，其中每个维度都添加到与您在受众分析配置期间选择的合并策略关联的用户档案数据集，并且每个维度都添加到创建的新查找数据集。
+
+   ![数据视图中可用的受众维度](assets/audience-analysis-dataview-dataset.png)
+
+1. 在Analysis Workspace中使用受众分析维度。
+
+   有权在Analysis Workspace中使用数据视图的用户可以查看新维度，并在其分析中使用它们。 有关如何在Analysis Workspace中使用受众分析维度的信息，请参阅[在Customer Journey Analytics中分析Experience Platform受众](/help/connections/audience-analysis/analyze-audiences.md)。
 
 

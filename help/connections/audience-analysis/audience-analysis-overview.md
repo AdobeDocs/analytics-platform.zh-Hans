@@ -6,10 +6,10 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 2b91c0592ac4ec0e0b5ffa3db91758466563abaf
+source-git-commit: f23775342a29d758b478206a77386e18a58312a6
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 4%
+source-wordcount: '678'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,10 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->受众分析不同于受众发布，后者允许您创建在Customer Journey Analytics中发现的受众，并将这些受众发布到Adobe Experience Platform以进行客户定位和个性化。 有关受众发布的信息，请参阅[受众发布概述](/help/components/audiences/audiences-overview.md)。
+>了解受众分析和受众发布之间的区别：
+>
+>* **受众分析**：允许您将受众成员资格数据从Experience Platform配置文件数据集摄取到Customer Journey Analytics连接。
+>* **受众发布**：允许您创建在Customer Journey Analytics中发现的受众，并将其发布到Adobe Experience Platform以进行客户定位和个性化。 有关受众发布的信息，请参阅[受众发布概述](/help/components/audiences/audiences-overview.md)。
 
 利用Audience Analysis，可将受众成员资格数据从Experience Platform配置文件数据集摄取到Customer Journey Analytics连接。 受众将可用作新维度，以便在Analysis Workspace中使用。
 
@@ -46,6 +49,12 @@ ht-degree: 4%
 
 有关详细信息，请参阅[配置受众分析](/help/connections/audience-analysis/audience-analysis-configure.md)。
 
+## 管理受众分析配置
+
+您可以在创建受众分析配置后对其进行管理。 您可以查看、编辑和删除配置。
+
+有关管理现有受众分析配置的信息，请参阅[管理受众分析配置](/help/connections/audience-analysis/audience-analysis-manage.md)。
+
 ## 在Customer Journey Analytics中分析受众数据
 
 借助Customer Journey Analytics中提供的受众数据，您可以获得关于受众成员在各种渠道中的行为的可操作见解。
@@ -57,6 +66,16 @@ ht-degree: 4%
 * 最终进行店内购买的受众成员
 
 有关详细信息，请参阅[在Customer Journey Analytics中分析Experience Platform受众](/help/connections/audience-analysis/analyze-audiences.md)。
+
+## 受众分析角色和权限要求
+
+受众分析需要以下Customer Journey Analytics角色和Experience Platform权限：
+
+| 功能 | Customer Journey Analytics角色或权限要求 | Experience Platform权限要求 |
+|---------|----------|----------|
+| [创建受众分析配置](/help/connections/audience-analysis/audience-analysis-configure.md) | 系统管理员 | <ul><li>数据集：读取权限</li><li>架构：读取、写入</li><li>和身份命名空间：读取</li></ul> |
+| [在数据视图中查看受众分析维度](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | 数据视图所分配到的产品配置文件的产品配置文件管理员 <p>有关详细信息，请参阅[访问控制](/help/technotes/access-control.md)。</p> | 不适用 |
+| 在Analysis Workspace中使用受众分析维度 | 访问添加了受众分析维度的数据视图 | 不适用 |
 
 
 
