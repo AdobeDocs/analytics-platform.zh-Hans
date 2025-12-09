@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: 从Workspace报表生成演示
 feature: Curate and Share
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 6b8a9fd25aaf83eaad3bc9cba0ce9349afb5471c
 workflow-type: tm+mt
-source-wordcount: '1585'
+source-wordcount: '1627'
 ht-degree: 4%
 
 ---
@@ -230,14 +230,18 @@ Analysis Workspace通过考虑以下项目元素来创建数据故事：
 
    * 树状图
 
-* 细分
-
-  划分的数据包含在生成的演示文稿中，但它与维度项目显示在同一级别。
-
 * 引导式分析
 
 * 数据治理策略限制无法导出的组件
 
   有关详细信息，请参阅[导出失败疑难解答](/help/components/exports/troubleshoot-exports.md)。
+
+## 有限支持的项目元素和功能
+
+* 细分
+
+  在生成相关见解时，作为重复数据删除和评分过程的一部分，会单独分析自由格式表中的每个划分，并且只分析单个自由格式表中的前5个划分。
+
+  仅支持第一级细分。 划分不包含在演示文稿中。
 
 
