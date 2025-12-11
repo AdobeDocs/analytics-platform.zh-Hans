@@ -6,7 +6,7 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: f23775342a29d758b478206a77386e18a58312a6
+source-git-commit: 996d7d7bb0c0da566a926f9a3a4c465baca69a9a
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Customer Journey Analytics中提供了受众概述模板。
 
 显示所有受众的数据，其中包含与选定数据视图关联的使用事件。 受众会员资格数据每天从Experience Platform更新。 数据始终显示于昨天，因此更改面板日期范围导致数据不准确。
 
-使用此面板中的表可以更好地了解受众行为。 从所选数据视图拖动受众描述维度，并将其添加为划分。 或使用任何其他交互维度（例如“页面”、“操作”等）作为细分。
+使用本面板中的表可以更好地了解受众行为。 从所选数据视图拖动受众描述维度，并将其添加为划分。 或使用任何其他交互维度（例如“页面”、“操作”等）作为细分。
 
 ## “顶级受众来源”面板
 

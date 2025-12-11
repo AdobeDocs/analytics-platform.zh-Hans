@@ -6,7 +6,7 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: f23775342a29d758b478206a77386e18a58312a6
+source-git-commit: 996d7d7bb0c0da566a926f9a3a4c465baca69a9a
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 3%
@@ -37,7 +37,7 @@ ht-degree: 3%
 | 3 | 轮廓数据集 | 必须包含您要分析的Experience Platform受众数据。 此用户档案数据集将添加到您选择的连接。 |
 | 4 | 合并策略 | 与您要分析的Experience Platform受众关联的合并策略。 |
 | 5 | 配置文件数据 | 与所选合并策略关联的配置文件数据。 此数据在Experience Platform数据集中可用。 |
-| 6 | 新建查找数据集 | 为创建的新受众维度提供易记名称。 系统会自动创建查找数据集并将其添加到连接，以及您选择的用户档案数据集。 |
+| 6 | 新建查找数据集 | 为创建的新受众维度提供易记名称。 <p>系统会自动创建查找数据集并将其添加到连接，以及您选择的用户档案数据集。</p> |
 | 7 | 连接 | 要在其中添加所选配置文件数据集的连接。 |
 | 8 | 新的受众维度 | 新的受众维度<!--and metrics?-->表示包含在所选配置文件数据集中的Experience Platform受众，可以在Analysis Workspace中进行报告。 这些维度是自动创建的。 |
 | 9 | 数据视图 | 您选择的数据视图与您的连接相关联。 在Analysis Workspace中分析Experience Platform受众数据时，要使用这些数据视图。 这些数据视图自动配置了Experience Platform受众数据以用于报表。 |
@@ -73,7 +73,7 @@ ht-degree: 3%
 
 | 功能 | Customer Journey Analytics角色或权限要求 | Experience Platform权限要求 |
 |---------|----------|----------|
-| [创建受众分析配置](/help/connections/audience-analysis/audience-analysis-configure.md) | 系统管理员 | <ul><li>数据集：读取权限</li><li>架构：读取、写入</li><li>和身份命名空间：读取</li></ul> |
+| [创建受众分析配置](/help/connections/audience-analysis/audience-analysis-configure.md) | 系统管理员 | <ul><li>数据集：读取权限</li><li>架构：读取、写入</li><li>身份命名空间：读取</li></ul> |
 | [在数据视图中查看受众分析维度](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | 数据视图所分配到的产品配置文件的产品配置文件管理员 <p>有关详细信息，请参阅[访问控制](/help/technotes/access-control.md)。</p> | 不适用 |
 | 在Analysis Workspace中使用受众分析维度 | 访问添加了受众分析维度的数据视图 | 不适用 |
 
