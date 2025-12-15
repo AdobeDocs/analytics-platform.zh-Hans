@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: 从Workspace报表生成演示
 feature: Curate and Share
 role: User
-source-git-commit: 1ec10a006578bc5ddf5f08501f8d72a9623245d5
+source-git-commit: 8ddfc194c873bdb3fe12f3aeb04c01bcad83d0a5
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 4%
@@ -159,7 +159,7 @@ Analysis Workspace通过考虑以下项目元素来创建数据故事：
 
       确保上传的文件具有具有以下名称的主布局：“Title_Slide”、“Section_Divider”、“Title_Text”、“Title_Chart”、“Title_Two_Content_Mixed”、“Title_Three_Content_Mixed”。
 
-      最多支持 15 个主布局。
+      最多支持 25 个主布局。
 
       支持最大 25MB 的 .pptx 和 .potx 文件。
 
