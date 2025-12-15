@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: 从Workspace报表生成演示
 feature: Curate and Share
 role: User
-source-git-commit: 6b8a9fd25aaf83eaad3bc9cba0ce9349afb5471c
+source-git-commit: 1ec10a006578bc5ddf5f08501f8d72a9623245d5
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 4%
@@ -125,49 +125,53 @@ Analysis Workspace通过考虑以下项目元素来创建数据故事：
 
    要上传自定义模板，请执行以下任一操作：
 
-   * （推荐）下载并修改空白模板。
+   +++（推荐）下载并修改空白模板
 
-      1. 下载[此空白模板](https://d30ln29764hddd.cloudfront.net/deploy/builds/data-storytelling.2025-10-20T15:10:19/resources/components/Blank.potx?)。
+   1. 下载[此空白模板](https://d30ln29764hddd.cloudfront.net/deploy/builds/data-storytelling.2025-10-20T15:10:19/resources/components/Blank.potx?)。
 
-      1. 将自定义样式应用于空白模板。
+   1. 将自定义样式应用于空白模板。
 
-      1. 重新上传模板而不更改任何主布局名称：
+   1. 重新上传模板而不更改任何主布局名称：
 
-         从文件系统中，将应用了自定义样式的空白模板拖放到拖放区域。
+      从文件系统中，将应用了自定义样式的空白模板拖放到拖放区域。
 
-         或
+      或
 
-         选择&#x200B;**[!UICONTROL 浏览]**，然后浏览并选择从文件系统应用了自定义样式的空白模板。
+      选择&#x200B;**[!UICONTROL 浏览]**，然后浏览并选择从文件系统应用了自定义样式的空白模板。
 
-      1. 在&#x200B;**[!UICONTROL 布局映射]**&#x200B;部分中，生成的演示文稿中使用的每个幻灯片布局都会自动映射到上载主题中的幻灯片。 查看所选内容以确保其正确无误。
+   1. 在&#x200B;**[!UICONTROL 布局映射]**&#x200B;部分中，生成的演示文稿中使用的每个幻灯片布局都会自动映射到上载主题中的幻灯片。 查看所选内容以确保其正确无误。
 
-         ![布局映射](assets/generate-slides-layout-mapping.png)
+      ![布局映射](assets/generate-slides-layout-mapping.png)
 
-      1. （视情况而定）如果幻灯片布局映射不正确，请选择从上载的演示文稿中选择的幻灯片上方的&#x200B;**[!UICONTROL 更改选择]**，然后选择与布局匹配的幻灯片。
+   1. （视情况而定）如果幻灯片布局映射不正确，请选择从上载的演示文稿中选择的幻灯片上方的&#x200B;**[!UICONTROL 更改选择]**，然后选择与布局匹配的幻灯片。
 
-         对未正确映射的每张幻灯片重复此过程。
+      对未正确映射的每张幻灯片重复此过程。
 
-   * 直接上传自定义模板。
+   +++
 
-      1. 将自定义模板从文件系统拖到放置区域。
+   +++直接上传自定义模板 
 
-         或
+   1. 将自定义模板从文件系统拖到放置区域。
 
-         选择&#x200B;**[!UICONTROL 浏览]**，然后浏览并从文件系统中选择您的自定义模板。
+      或
 
-         确保上传的文件具有具有以下名称的主布局：“Title_Slide”、“Section_Divider”、“Title_Text”、“Title_Chart”、“Title_Two_Content_Mixed”、“Title_Three_Content_Mixed”。
+      选择&#x200B;**[!UICONTROL 浏览]**，然后浏览并从文件系统中选择您的自定义模板。
 
-         最多支持 15 个主布局。
+      确保上传的文件具有具有以下名称的主布局：“Title_Slide”、“Section_Divider”、“Title_Text”、“Title_Chart”、“Title_Two_Content_Mixed”、“Title_Three_Content_Mixed”。
 
-         支持最大 25MB 的 .pptx 和 .potx 文件。
+      最多支持 15 个主布局。
 
-      1. 在&#x200B;**[!UICONTROL 布局映射]**&#x200B;部分中，生成的演示文稿中使用的每个幻灯片布局都会自动映射到上载主题中的幻灯片。 查看所选内容以确保其正确无误。
+      支持最大 25MB 的 .pptx 和 .potx 文件。
 
-         ![布局映射自定义模板](assets/generate-slides-layout-mapping-custom-template.png)
+   1. 在&#x200B;**[!UICONTROL 布局映射]**&#x200B;部分中，生成的演示文稿中使用的每个幻灯片布局都会自动映射到上载主题中的幻灯片。 查看所选内容以确保其正确无误。
 
-      1. （视情况而定）如果幻灯片布局映射不正确，请选择从上载的演示文稿中选择的幻灯片上方的&#x200B;**[!UICONTROL 更改选择]**，然后选择与布局匹配的幻灯片。
+      ![布局映射自定义模板](assets/generate-slides-layout-mapping-custom-template.png)
 
-         对未正确映射的每张幻灯片重复此过程。
+   1. （视情况而定）如果幻灯片布局映射不正确，请选择从上载的演示文稿中选择的幻灯片上方的&#x200B;**[!UICONTROL 更改选择]**，然后选择与布局匹配的幻灯片。
+
+      对未正确映射的每张幻灯片重复此过程。
+
+   +++
 
 1. 选择&#x200B;**[!UICONTROL 导出PPT]**。
 
