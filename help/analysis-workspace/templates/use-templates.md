@@ -4,7 +4,7 @@ title: 使用模板
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 3fb94d920b240247f13050cf091423335a3d74ec
+source-git-commit: 11a550e0cd67db106e2dd399843c4cf0923467ad
 workflow-type: tm+mt
 source-wordcount: '20775'
 ht-degree: 97%
@@ -1070,12 +1070,12 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 ### Brand Concierge {#brand-concierge-templates}
 
 >[!CONTEXTUALHELP]
->id="template--brand-concierge-b2c"
+>id="template--brand-concierge--concierge"
 >title="通过对话模式、用户反馈和推荐的有效性分析用户参与。"
 >abstract="**这可以帮助您**&#x200B;确定参与模式、评估对话质量、跟踪客户满意度趋势并衡量链接推荐的有效性。<br/>**根据您了解的情况，您可以**&#x200B;执行任意数量的操作，例如优化AI代理的响应、为常见问题开发目标内容、改进推荐算法或为不同的用户区段创建专门的途径。"
 
 >[!CONTEXTUALHELP]
->id="template--brand-concierge--concierge"
+>id="template--brand-concierge--meeting"
 >title="跟踪B2B会议请求的整个生命周期。 监控转化率、顾问表现，并识别您最有效的商机开发渠道。"
 >abstract="**这可以帮助您**&#x200B;跟踪会议转化率，识别表现优异的团队成员，了解预订行为的季节性趋势，并查明哪些页面生成了最有价值的会议请求。<br/>**根据您了解的情况，您可以**&#x200B;执行任意数量的操作，如优化会议请求流程、将资源重新分配给转化率较高的页面、为预订率较低的顾问制定有针对性的培训计划，或实施新策略以减少错过的会议。"
 
