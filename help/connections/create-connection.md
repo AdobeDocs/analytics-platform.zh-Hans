@@ -108,12 +108,12 @@ ht-degree: 60%
 >[!CONTEXTUALHELP]
 >id="connections_useincja_ajo"
 >title="在 Customer Journey Analytics 中使用此连接"
->abstract="此选项允许您将 Customer Journey Analytics 的高级报告功能与 Journey Optimizer 连接结合使用。这些功能允许您：<ul><li>在Customer Journey Analytics中对Journey Optimizer数据执行深入分析。</li><li>编辑Journey Optimizer连接和关联的数据视图。</li></ul>**启用此选项后，连接中的每一行数据每月都计入您的Customer Journey Analytics许可证数据行，并显示在连接使用UI中。**<br>&#x200B;只有在您熟悉Customer Journey Analytics中额外使用数据行的情况下，才可浏览此选项。 [了解详情](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo)。"
+>abstract="此选项允许您将 Customer Journey Analytics 的高级报告功能与 Journey Optimizer 连接结合使用。这些功能允许您：<ul><li>在Customer Journey Analytics中对Journey Optimizer数据执行深入分析。</li><li>编辑Journey Optimizer连接和关联的数据视图。</li></ul>**启用此选项后，连接中的每一行数据每月都计入您的Customer Journey Analytics许可证数据行，并显示在连接使用UI中。**<br>&#x200B;只有在您熟悉Customer Journey Analytics中额外使用数据行的情况下，才可浏览此选项。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/integrations/ajo)。"
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_ajo"
 >title="从 Customer Journey Analytics 中移除此连接"
->abstract="此Journey Optimizer连接当前用于Customer历程分析。 这些连接允许您：<ul><li>在Customer Journey Analytics中对历程分析数据执行深入分析。</li><li>编辑Journey Optimizer连接和关联的数据视图。</li></ul>如果删除连接，则无法再在Customer Journey Analytics中进行深入分析。 连接和任何关联的数据视图都将重置为其默认状态，并且无法再编辑。<br/><br/>[了解详情](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo)。<br/><br/>[了解详情](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo)。[了解详情](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo)。"
+>abstract="此Journey Optimizer连接当前用于Customer历程分析。 这些连接允许您：<ul><li>在Customer Journey Analytics中对历程分析数据执行深入分析。</li><li>编辑Journey Optimizer连接和关联的数据视图。</li></ul>如果删除连接，则无法再在Customer Journey Analytics中进行深入分析。 连接和任何关联的数据视图都将重置为其默认状态，并且无法再编辑。<br/><br/>[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/integrations/ajo)。<br/><br/>[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/integrations/ajo)。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/integrations/ajo)。"
 
 连接创建和编辑工作流体验通过辅助工作流将所有数据集和连接配置设置引入屏幕中心。它提供详细的数据集选择、配置和审查体验。允许您指定关键信息，如[数据集类型](#dataset-types)、大小、架构、数据集ID、批次状态、回填状态、身份等，以降低连接配置错误的风险。 以下是功能概述：
 
@@ -453,7 +453,7 @@ ht-degree: 60%
 
 | 数据集类型 | 描述 | 时间戳 | 架构 | 人员 ID |
 |---|---|---|---|---|
-| **[!UICONTROL 临时]** | 基于[临时架构](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/api/ad-hoc)的临时数据，其字段的命名空间仅供单个数据集使用。 | 取决于您为临时数据集选择的数据集类型。 | 任何基于基于&#x200B;*ad hoc*&#x200B;行为的类的临时架构 | 取决于您为临时数据集选择的数据集类型。 |
+| **[!UICONTROL 临时]** | 基于[临时架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/api/ad-hoc)的临时数据，其字段的命名空间仅供单个数据集使用。 | 取决于您为临时数据集选择的数据集类型。 | 任何基于基于&#x200B;*ad hoc*&#x200B;行为的类的临时架构 | 取决于您为临时数据集选择的数据集类型。 |
 | **[!UICONTROL 模型]** | 基于关系模式的关系数据。 | 取决于您为关系数据集选择的数据集类型。 | 任意关系架构。 | 取决于您为关系数据集选择的数据集类型。 |
 
 
