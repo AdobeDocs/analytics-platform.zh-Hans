@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: c965d836e8e3795d8ba7660594d3fe373781cb43
 workflow-type: tm+mt
 source-wordcount: '2087'
 ht-degree: 7%
@@ -92,7 +92,7 @@ ht-degree: 7%
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [Real-time Customer Data Platform护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/rtcdp/guardrails/overview)。
+另请参阅Experience Platform [Real-time Customer Data Platform护栏](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview)。
 
 
 ## 自动数据集过期
@@ -131,14 +131,14 @@ ht-degree: 7%
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
 | 字段 | 10,000 | 系统强制的护栏 | 数据集中每行属性或字段的最大数量。 |
-| 唯一字符串 | 1000万 — 10亿 | 系统强制的护栏 | 每个查找数据集的最大唯一键数。 依赖于Customer Journey Analytics包（请参阅产品描述）。<ul><li>基金会：1000万。</li><li>选择：1亿。</li><li>Prime：5亿。</li><li>Ultimate：10亿</li><ul> |
+| 唯一字符串 | 1000万 — 10亿 | 系统强制的护栏 | 每个查找数据集的最大唯一键数。 依赖于Customer Journey Analytics包（请参阅产品描述）。<ul><li>基金会：1000万。</li><li>选择：1亿。</li><li>Prime：2.5亿。</li><li>Ultimate：10亿</li><ul> |
 | 每人行数 | 100万 | 系统强制的护栏 | 连接内给定月份中每个唯一人员ID的最大行数。 |
 | 每日行数 | 25亿 | 性能护栏 | 连接中每天的最大平均行数。 |
 | 行大小 | 2 | 性能护栏/系统强制的护栏 | 摄取到Customer Journey Analytics的每行数据的平均大小(KB)（软限制）。 行大小的静态限制由Experience Platform中用于数据摄取的护栏决定。 |
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hans)。
+另请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
 
 
 ## 目标数据导出
@@ -150,7 +150,7 @@ ht-degree: 7%
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [数据集导出护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/guardrails#dataset-exports)
+另请参阅Experience Platform [数据集导出护栏](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## 数据登陆区
@@ -266,7 +266,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 有关详细信息，请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hans)。
+>以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 有关详细信息，请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
 
 | 数据流 | 预期延迟 |
 |---|---|
