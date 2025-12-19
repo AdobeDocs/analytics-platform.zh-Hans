@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 badgePremium: label="Beta 版" type="Informative"
-source-git-commit: 6ebd1604e01af068228d7a5e4a78fdccf852f480
+source-git-commit: c67225619153218e3dca1eacea204f2b033dfb14
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '820'
 ht-degree: 3%
 
 ---
@@ -30,8 +30,7 @@ ht-degree: 3%
    * 多个配置为标识的字段，允许您为永久ID和人员ID选择不同的值。
    * 至少一个标记为具有关联命名空间的主身份的字段，以防您将身份映射和主身份命名空间用于永久ID或人员ID。
 
-* 如果要使用基于图形的拼合，并且预期事件数据集将参与身份图形，则应[为身份服务启用该数据集](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service)。 当数据集包含永久性ID旁边的相关人员ID时，数据集会向身份图中添加内容。
-
+* 如果要使用基于图形的拼合，并且预期事件数据集将参与身份图形（因为数据集包含永久性ID旁边的相关人员ID），则应[为身份服务启用该数据集](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service)。
 
 ## 印前检查检查
 

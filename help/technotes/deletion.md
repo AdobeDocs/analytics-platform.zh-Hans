@@ -1,26 +1,41 @@
 ---
 title: 删除后果
-description: 在 Customer Journey Analytics 或 Adobe Experience Platform 中删除连接、数据集或批次后发生的情况。
+description: 了解删除或重置Customer Journey Analytics或Experience Platform对象的影响。
 exl-id: a89694c9-0909-440e-939c-b245fc4dd6bf
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-source-git-commit: 928c79f9ccf30cc33e0f334f715bf3190a257019
+source-git-commit: c8b646b7e92663ed9c7e8454a336d25e34415cbe
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 64%
+source-wordcount: '804'
+ht-degree: 11%
 
 ---
 
-# 删除后果
+# 删除和重置后果
 
-在 Customer Journey Analytics 或 Adobe Experience Platform 中删除连接、数据集或批次前应考虑这些情况。
+删除或重置Customer Journey Analytics或Experience Platform对象确实有影响。 本文概述了这些含义。
 
-| 当... | 产生的后果... |
+## Customer Journey Analytics
+
+在Customer Journey Analytics中删除连接、数据视图或数据集之前，请考虑以下含义：
+
+| 操作 | 影响 |
 | --- | --- |
-| 删除 [!UICONTROL Customer Journey Analytics] 中的连接 | 将显示一条错误消息，指示：<ul><li>为已删除的连接创建的所有数据视图都将不再起作用。</li><li> 同样地，任何依赖于已删除连接中的数据视图的工作区项目都将停止运行。</li></ul>请注意，您无法删除符合以下条件的Customer Journey Analytics连接： <ul><li>绑定到您没有权限的Adobe Experience Platform沙盒。 即使您有权访问基于这些连接构建的数据视图，但在您获得基础Adobe Experience Platform沙盒的权限之前，您无法删除这些连接。</li><li>为与该连接关联的数据视图选择以下兼容性选项： **[!UICONTROL 在Adobe Journey Optimizer中设置为默认数据视图]**<p>有关此配置选项的详细信息，请参阅[创建或编辑数据视图](/help/data-views/create-dataview.md#compatibility)中的[兼容性](/help/data-views/create-dataview.md)</p></li></ul> |
-| 删除[!UICONTROL Adobe Experience Platform]中的数据集 | 如果删除 AEP 中的某个数据集，则将阻止从该数据集到包含该数据集的任何连接的数据流量。来自该数据集的任何数据都会自动从关联的Customer Journey Analytics连接中删除。 |
-| 删除 [!UICONTROL Customer Journey Analytics] 中的数据集 | 当您从Customer Journey Analytics中的连接中删除数据集时，任何依赖该数据集的数据视图和项目将不再有效。 |
-| 从数据集中删除批次（在 [!UICONTROL Adobe Experience Platform] 中） | 如果从 [!UICONTROL Adobe Experience Platform] 数据集中删除了某个批次，则会从包含该特定批次的所有 [!UICONTROL Customer Journey Analytics] 连接中删除该批次。[!UICONTROL Customer Journey Analytics] 会收到批次已在 [!UICONTROL Adobe Experience Platform] 中删除的通知。 |
-| **批次被摄取**&#x200B;到 [!UICONTROL Customer Journey Analytics] 的同时删除批次 | 如果数据集中只有一个批次，则该批次中只会有部分数据或没有任何数据显示在 [!UICONTROL Customer Journey Analytics] 中。系统将回滚该摄取操作。例如，如果数据集中共有 5 个批次，且在删除该数据集时已摄取其中 3 个批次，那么这 3 个批次中的数据将显示在 [!UICONTROL Customer Journey Analytics] 中。 |
-| 删除[!UICONTROL Adobe Experience Platform]中的查找数据集 | 虽然可以删除其他源连接器的数据集，但目前在[分析分类源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/classifications.html?lang=zh-Hans)中不支持此类删除功能。如果您误删除了一个数据集，请联系 Adobe 客户关怀部门。 |
+| 删除 [!UICONTROL Customer Journey Analytics] 中的连接 | 出现错误消息，其中指示：<ul><li>为已删除的连接创建的任何数据视图都不再有效。</li><li> 同样，任何依赖于已删除连接中的数据视图的Workspace项目都将停止运行。</li></ul>请注意，您无法删除符合以下条件的Customer Journey Analytics连接：<ul><li>绑定到您没有权限的Adobe Experience Platform沙盒。 即使您有权访问基于这些连接构建的数据视图，但在您获得基础Adobe Experience Platform沙盒的权限之前，您无法删除这些连接。</li><li>为与该连接关联的数据视图选择以下兼容性选项： **[!UICONTROL 在Adobe Journey Optimizer中设置为默认数据视图]**<p>有关此配置选项的详细信息，请参阅[创建或编辑数据视图](/help/data-views/create-dataview.md#compatibility)中的[兼容性](/help/data-views/create-dataview.md)</p></li></ul> |
+| 删除 [!UICONTROL Customer Journey Analytics] 中的数据集 | 从Customer Journey Analytics中的连接中删除数据集时，任何依赖该数据集的数据视图和项目都将不再有效。 |
+| 删除 [!UICONTROL Customer Journey Analytics] 中的数据视图 | 当您在Customer Journey Analytics中删除数据视图时，Workspace项目中依赖于该数据视图的任何面板都将无法再正常运行。 |
+
+
+
+## Experience Platform
+
+在删除数据集或批次之前，或者在Experience Platform中重置或删除沙盒时，请考虑以下后果：
+
+| 操作 | 影响 |
+| --- | --- |
+| 删除[!UICONTROL Experience Platform]中的数据集 | 在Experience Platform中，来自该数据集的数据流将停止到包含该数据集的任何连接。 自动从关联的 Customer Journey Analytics 连接删除来自该数据集的任何数据。 |
+| 从[!UICONTROL Experience Platform]中的数据集中删除批次 | 如果从[!UICONTROL Adobe Experience Platform]数据集中删除了某个批次，则会从包含该特定批次的所有[!UICONTROL Customer Journey Analytics]连接中删除该批次。 [!UICONTROL Customer Journey Analytics] 会收到批次已在 [!UICONTROL Adobe Experience Platform] 中删除的通知。 |
+| 将批次[!UICONTROL 摄取到]Customer Journey Analytics **时，从** Experience Platform中删除批次 | 如果数据集中只有一个批次，则没有来自该批次的数据或来自该批次的部分数据出现在 [!UICONTROL Customer Journey Analytics] 中。并且回滚该摄取。例如，如果数据集中共有5个批次，且在删除第四个批次时已摄取其中3个批次，则这3个批次中的数据将显示在[!UICONTROL Customer Journey Analytics]中。 |
+| 删除[!UICONTROL Experience Platform]中的查找数据集 | 虽然可以删除其他源连接器的数据集，但不支持删除[Analytics Classifications Source Connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/classifications)数据集。 如果您误删除了此类数据集，请联系客户关怀团队。 |
+| 在Experience Platform中删除或重置沙盒 | 当您[删除Experience Platform沙盒](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/ui/user-guide#delete-a-sandbox)时，该沙盒中的所有架构、数据集、批次、策略等也会被删除。 沙盒不再存在，以及沙盒标识符和沙盒名称。<br/>当您[重置Experience Platform沙盒](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/ui/user-guide#reset-a-sandbox)时，将会删除该沙盒中的所有架构、数据集、批次、策略等。 虽然沙盒名称和权限保持不变，但在重置完成后沙盒标识符会更改。<br/><br/>Customer Journey Analytics使用沙盒标识符和沙盒名称将连接与沙盒关联。 因此： <ul><li>与已删除或重置沙盒关联的连接已删除。</li><li>基于已删除连接的数据视图（以及数据视图中的所有组件定义，如派生字段）都会被删除。</li><li>依赖已删除数据视图的组件将被删除。 例如，区段、计算量度、注释、警报、已发布受众和导出。</li><li>Workspace项目中引用已删除数据视图的面板变得不可用。 这些面板显示&#x200B;**[!UICONTROL 未知的数据视图]**&#x200B;错误。 移除这些面板，或者如果可能，将这些面板与现有数据视图关联。</li><li>您不应再使用查询服务或依赖于BI扩展的工具来查询Customer Journey Analytics中已存在的已删除连接中的（历史）数据。 最终，Adobe支持或工程人员会从Customer Journey Analytics中删除此数据。</li></ul>由于在Experience Platform中重置或删除沙盒将会产生重大影响，在重置或删除沙盒之前，请考虑以下事项：<ul><li>列出您的连接，以了解哪些连接属于哪些沙盒。</li><li>列出数据视图，以了解哪些数据视图与哪些连接相关联。</li><li>确定重要的Workspace项目，并了解这些项目在其面板中引用的数据视图。</li><li>识别与使用BI扩展的工具的集成，并了解这些集成所依赖的数据视图。</li></ul> |
