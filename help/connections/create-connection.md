@@ -110,22 +110,22 @@ ht-degree: 57%
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_ajo"
 >title="在 Customer Journey Analytics 中使用此连接"
->abstract="此选项允许您将 Customer Journey Analytics 的高级报告功能与 Journey Optimizer 连接结合使用。这些功能允许您：<ul><li>在Customer Journey Analytics中对Journey Optimizer数据执行深入分析。</li><li>编辑Journey Optimizer连接和关联的数据视图。</li><li>分析历程事件、对话路径和营销活动效果。</li></ul>**启用此选项后，连接中的每一行数据每月都计入您的Customer Journey Analytics许可证数据行，并显示在连接使用UI中。**<br><br/>&#x200B;只有在您熟悉Customer Journey Analytics中额外使用数据行的情况下，才可浏览此选项。 [了解详情](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo)。"
+>abstract="此选项允许您将 Customer Journey Analytics 的高级报告功能与 Journey Optimizer 连接结合使用。这些功能允许您：<ul><li>在Customer Journey Analytics中对Journey Optimizer数据执行深入分析。</li><li>编辑Journey Optimizer连接和关联的数据视图。</li><li>分析历程事件、对话路径和营销活动效果。</li></ul>**启用此选项后，连接中的每一行数据每月都计入您的Customer Journey Analytics许可证数据行，并显示在连接使用UI中。**<br><br/>&#x200B;只有在您熟悉Customer Journey Analytics中额外使用数据行的情况下，才可浏览此选项。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/integrations/ajo)。"
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_ajo"
 >title="从 Customer Journey Analytics 中移除此连接"
->abstract="此Journey Optimizer连接当前用于Customer历程分析。 这些连接允许您：<ul><li>在Customer Journey Analytics中对Journey Optimizer数据执行深入分析。</li><li>编辑Journey Optimizer连接和关联的数据视图。</li><li>分析历程事件、对话路径和营销活动效果。</li></ul>**如果删除连接，则无法再在Customer Journey Analytics中进行深入分析。 连接和任何关联的数据视图都将重置为其默认状态，并且无法再编辑。**<br/><br/>**Customer Journey Analytics中此连接的账单包括连接删除的整个月。**<br/><br/>&#x200B;连接在Journey Optimizer中保持启用状态。 [了解详情](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo)。"
+>abstract="此Journey Optimizer连接当前用于Customer历程分析。 这些连接允许您：<ul><li>在Customer Journey Analytics中对Journey Optimizer数据执行深入分析。</li><li>编辑Journey Optimizer连接和关联的数据视图。</li><li>分析历程事件、对话路径和营销活动效果。</li></ul>**如果删除连接，则无法再在Customer Journey Analytics中进行深入分析。 连接和任何关联的数据视图都将重置为其默认状态，并且无法再编辑。**<br/><br/>**Customer Journey Analytics中此连接的账单包括连接删除的整个月。**<br/><br/>&#x200B;连接在Journey Optimizer中保持启用状态。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/integrations/ajo)。"
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_brand_concierge"
 >title="在 Customer Journey Analytics 中使用此连接"
->abstract="此选项允许您将Customer Journey Analytics的高级报告功能与Brand Concierge连接结合使用。 利用这些功能，您可以：<ul><li>在Customer Journey Analytics中对Brand Concierge数据执行深入分析。</li><li>编辑Brand Concierge连接和关联的数据视图。</li><li>分析对话参与度、情绪和转化量度。</li></ul>**启用此选项后，连接中的每一行数据每月都计入您的Customer Journey Analytics许可证数据行，并显示在连接使用UI中。**<br><br/>&#x200B;只有在您熟悉Customer Journey Analytics中额外使用数据行的情况下，才可浏览此选项。 [了解详情](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)。"
+>abstract="此选项允许您将Customer Journey Analytics的高级报告功能与Brand Concierge连接结合使用。 利用这些功能，您可以：<ul><li>在Customer Journey Analytics中对Brand Concierge数据执行深入分析。</li><li>编辑Brand Concierge连接和关联的数据视图。</li><li>分析对话参与度、情绪和转化量度。</li></ul>**启用此选项后，连接中的每一行数据每月都计入您的Customer Journey Analytics许可证数据行，并显示在连接使用UI中。**<br><br/>&#x200B;只有在您熟悉Customer Journey Analytics中额外使用数据行的情况下，才可浏览此选项。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)。"
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_brand_concierge"
 >title="从 Customer Journey Analytics 中移除此连接"
->abstract="此Brand Concierge连接当前用于Customer历程分析。 这些连接允许您：<ul><li>在Customer Journey Analytics中对Brand Concierge数据执行深入分析。</li><li>编辑Brand Concierge连接和关联的数据视图。</li><li>分析对话参与度、情绪和转化量度。</li></ul>**如果删除连接，则无法再在Customer Journey Analytics中进行深入分析。 连接和任何关联的数据视图都将重置为其默认状态，并且无法再编辑。**<br/><br/>**Customer Journey Analytics中此连接的账单包括连接删除的整个月。**<br/><br/>&#x200B;连接在Journey Optimizer中保持启用状态。 [了解详情](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)。"
+>abstract="此Brand Concierge连接当前用于Customer历程分析。 这些连接允许您：<ul><li>在Customer Journey Analytics中对Brand Concierge数据执行深入分析。</li><li>编辑Brand Concierge连接和关联的数据视图。</li><li>分析对话参与度、情绪和转化量度。</li></ul>**如果删除连接，则无法再在Customer Journey Analytics中进行深入分析。 连接和任何关联的数据视图都将重置为其默认状态，并且无法再编辑。**<br/><br/>**Customer Journey Analytics中此连接的账单包括连接删除的整个月。**<br/><br/>&#x200B;连接在Journey Optimizer中保持启用状态。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)。"
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_product_usage"
@@ -151,7 +151,7 @@ ht-degree: 57%
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_brand_concierge_learn_more"
 >title="了解详情"
->abstract="[了解详情](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)。"
+>abstract="[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)。"
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_product_usage_learn_more"
@@ -499,7 +499,7 @@ ht-degree: 57%
 
 | 数据集类型 | 描述 | 时间戳 | 架构 | 人员 ID |
 |---|---|---|---|---|
-| **[!UICONTROL 临时]** | 基于[临时架构](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/api/ad-hoc)的临时数据，其字段的命名空间仅供单个数据集使用。 | 取决于您为临时数据集选择的数据集类型。 | 任何基于基于&#x200B;*ad hoc*&#x200B;行为的类的临时架构 | 取决于您为临时数据集选择的数据集类型。 |
+| **[!UICONTROL 临时]** | 基于[临时架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/api/ad-hoc)的临时数据，其字段的命名空间仅供单个数据集使用。 | 取决于您为临时数据集选择的数据集类型。 | 任何基于基于&#x200B;*ad hoc*&#x200B;行为的类的临时架构 | 取决于您为临时数据集选择的数据集类型。 |
 | **[!UICONTROL 模型]** | 基于关系模式的关系数据。 | 取决于您为关系数据集选择的数据集类型。 | 任意关系架构。 | 取决于您为关系数据集选择的数据集类型。 |
 
 
