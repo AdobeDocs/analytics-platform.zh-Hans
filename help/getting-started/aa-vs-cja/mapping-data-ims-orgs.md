@@ -50,7 +50,7 @@ Analytics Source Connector只能从属于您有权使用Customer Journey Analyti
 
 客户经理收到一封电子邮件，其中包含从多个组织映射Analytics数据的请求，随后将在Adobe中审核该请求。 客户经理联系您以获取任何其他问题、可选培训及其他信息。
 
-批准后，将创建请求的映射，并通知您。 源IMS组织名称已附加到Experience Platform中Analytics报表包[的](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data)列表中的报表包名称。
+批准后，将创建请求的映射，并通知您。 源IMS组织名称已附加到Experience Platform中Analytics报表包[的](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data)列表中的报表包名称。
 
 ## 限制和风险
 
