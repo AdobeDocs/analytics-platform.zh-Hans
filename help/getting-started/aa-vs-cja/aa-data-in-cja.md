@@ -5,20 +5,20 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: db5506e0-6159-4d4b-8149-e4966dab9807
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: e74bbcc385aa90ba05c628a7d37598c6692530ed
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 100%
+source-wordcount: '841'
+ht-degree: 95%
 
 ---
 
-# 在 Customer Journey Analytics 中使用 Adobe Analytics 报告包数据
+# 使用Adobe Analytics报表包数据
 
-Adobe Analytics 客户可以使用 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans) 在 Adobe Experience Platform 和 Customer Journey Analytics 中轻松利用他们的报告包。以下讨论解释了如何这样做。
+Adobe Analytics客户可以使用[Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans)在Experience Platform和Customer Journey Analytics中轻松利用他们的报告包。 以下讨论解释了如何这样做。
 
 >[!IMPORTANT]
 >
->您必须拥有&#x200B;**选择**&#x200B;包才能跨多个报告包执行数据分析。如果您不确定您拥有的 Customer Journey Analytics 包，请联系您的管理员。&#x200B;
+>您必须拥有&#x200B;**选择**&#x200B;包才能跨多个报告包执行数据分析。如果您不确定自己拥有哪个Customer Journey Analytics包，请联系您的管理员。
 
 ## 准备
 
