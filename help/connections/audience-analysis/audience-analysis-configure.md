@@ -6,9 +6,9 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 996d7d7bb0c0da566a926f9a3a4c465baca69a9a
+source-git-commit: 840bf65d186178fb944041ff486e95ba60dc6037
 workflow-type: tm+mt
-source-wordcount: '1294'
+source-wordcount: '1305'
 ht-degree: 12%
 
 ---
@@ -74,14 +74,14 @@ ht-degree: 12%
    | 字段 | 描述 |
    |---------|----------|
    | **[!UICONTROL 名称]** | 指定配置的名称。 |
-   | **[!UICONTROL 沙盒]** | 选择包含要添加到连接的配置文件数据集的Experience Platform沙盒。 <p>Adobe Experience Platform 提供了可将单个 Platform 实例划分为多个单独的虚拟环境的[沙盒](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sandbox/home)，以帮助开发和改进数字体验应用程序。您可以将沙盒视为包含数据集的“数据孤岛”。沙盒可用于控制对数据集的访问。</p> |
+   | **[!UICONTROL 沙盒]** | 选择包含要添加到连接的配置文件数据集的Experience Platform沙盒。 单个沙盒最多可支持100个受众分析配置。 <p>Adobe Experience Platform 提供了可将单个 Platform 实例划分为多个单独的虚拟环境的[沙盒](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sandbox/home)，以帮助开发和改进数字体验应用程序。您可以将沙盒视为包含数据集的“数据孤岛”。沙盒可用于控制对数据集的访问。</p> |
 
 1. 在&#x200B;**[!UICONTROL 用户档案数据集]**&#x200B;部分中，指定以下信息：
 
    | 字段 | 描述 |
    |---------|----------|
    | **[!UICONTROL 合并策略]** | 选择与您想用于受众分析的轮廓数据集所对应的合并策略。 <p>合并策略可确定Adobe Experience Platform如何将来自多个数据集的配置文件数据合并到用于创建受众的统一客户配置文件中。 您选择的合并策略会影响受众中包含哪些配置文件属性。 每天都会在Experience Platform中生成此数据的快照。 此快照提供特定时间点数据的静态视图，不包含任何事件数据。</p><p>如果您看到多个合并策略并且不确定选择哪一个，请选择&#x200B;**[!UICONTROL 默认基于时间]**&#x200B;的合并策略。 您还可以咨询数据团队，以更好地了解哪些受众与每个合并策略关联。</p> |
-   | **[!UICONTROL 配置文件数据集]** | 与所选合并策略关联的配置文件数据集。 此配置文件数据集包含要分析的Experience Platform受众数据。 此用户档案数据集将添加到您选择的连接。<p>选择合并策略后，将显示配置文件快照导出。 例如：`Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`。</p><p>有关详细信息，请参阅《Experience Platform功能板指南》中的[配置文件属性数据集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/dashboards/query#profile-attribute-datasets)。</p> |
+   | **[!UICONTROL 配置文件数据集]** | 与所选合并策略关联的配置文件数据集。 此配置文件数据集包含要分析的Experience Platform受众数据。 此用户档案数据集将添加到您选择的连接。<p>选择合并策略后，将显示配置文件快照导出。 例如：`Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`。</p><p>有关详细信息，请参阅《Experience Platform功能板指南》中的[配置文件属性数据集](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/query#profile-attribute-datasets)。</p> |
 
 1. 在&#x200B;**[!UICONTROL 连接]**&#x200B;部分中，单击&#x200B;**[!UICONTROL 选择连接]**。
 
@@ -105,7 +105,10 @@ ht-degree: 12%
 
 1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以创建配置。
 
-   由于配置文件数据集每天更新一次，因此可在创建受众分析配置后一天的Customer Journey Analytics数据视图中访问受众。
+   >[!IMPORTANT]
+   >
+   >由于配置文件数据集每天更新一次，因此可在创建受众分析配置后一天的Customer Journey Analytics数据视图中访问受众。
+
 
 1. 24小时后，[在数据视图](#view-audience-dimensions-in-the-data-view)中查看受众维度，以验证受众维度在您选择的数据视图中是否可用。
 

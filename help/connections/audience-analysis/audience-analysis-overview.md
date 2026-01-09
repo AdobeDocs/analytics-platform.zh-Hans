@@ -6,9 +6,9 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 996d7d7bb0c0da566a926f9a3a4c465baca69a9a
+source-git-commit: 840bf65d186178fb944041ff486e95ba60dc6037
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '675'
 ht-degree: 3%
 
 ---
@@ -41,11 +41,14 @@ ht-degree: 3%
 | 7 | 连接 | 要在其中添加所选配置文件数据集的连接。 |
 | 8 | 新的受众维度 | 新的受众维度<!--and metrics?-->表示包含在所选配置文件数据集中的Experience Platform受众，可以在Analysis Workspace中进行报告。 这些维度是自动创建的。 |
 | 9 | 数据视图 | 您选择的数据视图与您的连接相关联。 在Analysis Workspace中分析Experience Platform受众数据时，要使用这些数据视图。 这些数据视图自动配置了Experience Platform受众数据以用于报表。 |
-| 10 | Analysis Workspace | Customer Journey Analytics中创建包含已摄取的Experience Platform受众的报表的区域。 |
 
 ## 配置受众分析
 
 在配置受众分析时，您可以选择与要分析的Experience Platform受众关联的沙盒和合并策略。 Customer Journey Analytics会创建新的查找数据集，然后自动将查找数据集和配置文件数据集添加到您选择的连接。
+
+>[!NOTE]
+>
+>受众在创建受众分析配置的当天即出现在Customer Journey Analytics数据视图中。
 
 有关详细信息，请参阅[配置受众分析](/help/connections/audience-analysis/audience-analysis-configure.md)。
 
