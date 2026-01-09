@@ -27,7 +27,7 @@ Customer Journey Analytics 中的警报允许您根据变化的百分比或特�
    * 按特定百分比列出的量度更改。
    * 大于、小于或等于特定值的量度。 (仅适用于具有Select、Prime或Ultimate包的Adobe Analytics客户)
 
-此[视频教程](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/data-science/intelligent-alerts)提供了警报的基本概述。
+此[视频教程](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/data-science/intelligent-alerts)提供了警报的基本概述。
 
 
 
