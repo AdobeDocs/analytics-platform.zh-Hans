@@ -4,10 +4,10 @@ title: 警报概述
 feature: Workspace Basics
 role: User, Admin
 exl-id: 029be0c8-ec78-4bb7-a6cd-bb303b5ac82a
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: 65e46a5d2a6759dd83b24bba2d1d4ee283b907c9
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 96%
+source-wordcount: '465'
+ht-degree: 58%
 
 ---
 
@@ -15,16 +15,21 @@ ht-degree: 96%
 
 Customer Journey Analytics 中的警报允许您根据变化的百分比或特定数据点收到通知。
 
-根据您的 Customer Journey Analytics 包，您还可以使用基于异常阈值触发的警报。这些警报（也称为“智能警报”）提供与[异常检测](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md)集成的粒度控制，在您最需要时触发。
+根据您的 Customer Journey Analytics 包，您还可以使用基于异常阈值触发的警报。这些警报（也称为&#x200B;*智能警报*）提供了与[异常检测](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md)集成的粒度控制，在您最需要它们时触发。
 
-警报允许您：
+* 预览警报触发的频率。
+* 通过含链接的电子邮件或短信将警报发送到自动生成的 Analysis Workspace 项目。
+* 创建可在一个警报中捕获了多个量度的&#x200B;*栈叠*&#x200B;警报。
+* 根据以下条件生成警报：
+   * 量度中的异常存在、高于或低于预期阈值。
 
-* 预览警报触发的频率
-* 通过含链接的电子邮件或短信将警报发送到自动生成的 Analysis Workspace 项目
-* 创建可在一个警报中捕获了多个量度的“堆栈式”警报。
-* 根据异常情况生成警报（90%、95%、99%、99.75% 和 99.9% 阈值；% 变化；高于/低于）（仅适用于拥有 Select、Prime 或 Ultimate 包的 Customer Journey Analytics 客户）
+     [异常检测](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md)使用历史数据构建预期值以及上限和下限。 如果实际度量值高于定义为阈值的上限或低于下限，则该事件在阈值置信度级别被视为异常，并且会触发警报。 阈值越高（例如：99%或99.9%），则警报频度越大，由更极端的异常导致的警报就越少。 较低的阈值（例如：90%）意味着较窄的频带，这会导致由不太极端的异常引起的警报增加。
+   * 按特定百分比列出的量度更改。
+   * 大于、小于或等于特定值的量度。 (仅适用于具有Select、Prime或Ultimate包的Adobe Analytics客户)
 
-以下视频教程提供了警报的基本概述： [警报](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html?lang=zh-Hans) (5:34)
+此[视频教程](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/data-science/intelligent-alerts)提供了警报的基本概述。
+
+
 
 ## 了解警报有何不同
 
