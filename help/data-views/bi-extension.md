@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 0d8da0f61e6494801ed3a09823b2f3b7c1bed7a9
 workflow-type: tm+mt
-source-wordcount: '3247'
-ht-degree: 96%
+source-wordcount: '3249'
+ht-degree: 95%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 ## 先决条件
 
 要使用此功能，您可以使用过期型或非过期型的凭据将 BI 工具连接到 [!DNL Customer Journey Analytics BI extension]。[凭据指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials)提供了有关如何设置过期型凭据或不过期型凭据的更多信息。
-以下是设置 CJA 权限的其他步骤
+以下是设置所需权限的其他步骤。
 <!---   Enable the [!UICONTROL Customer Journey Analytics BI extension] in your Experience Platform organization. -->
 
 ### 过期型凭据
@@ -48,8 +48,8 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
 要使用非过期型凭据：
 
-* 在 Experience Platform 中创建一个非过期型凭据。
-* 按照[过期型凭据](#Expiring-credentials)中提及的步骤授予对非过期型凭据的访问权限。
+* 在Experience Platform[中创建](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/bi-extension#non-expiring-credentials)未过期的凭据。
+* 按照[过期凭据](#Expiring-credentials)中所述的步骤授予访问未过期凭据的权限。
 
 请参阅 [Customer Journey 访问控制](../technotes/access-control.md)，以了解更多信息，特别是[产品管理员附加权限](../technotes/access-control.md#product-admin-additional-permissions)和 [Admin Console 中的 Customer Journey Analytics 权限](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console)。
 
@@ -87,7 +87,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    1. 从`cja`数据库&#x200B;**[!UICONTROL 下拉菜单的数据库列表中选择沙盒的]**&#x200B;数据库。 例如：`prod:cja`。
 
-   1. 若要复制命令字符串，请使用 **[!UICONTROL **&#x200B; PSQL 命令&#x200B;**]**&#x200B;部分中的![复制](assets/Smock_Copy_18_N.svg)。
+   1. 若要复制命令字符串，请使用 **[!UICONTROL ** PSQL 命令&#x200B;**]**&#x200B;部分中的![复制](assets/Smock_Copy_18_N.svg)。
 
 1. 打开命令或终端窗口。
 
@@ -120,9 +120,9 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    1. 选择左边栏中的&#x200B;**[!UICONTROL 更多...]**。
 
-   1. 在&#x200B;**获取数据**&#x200B;屏幕中，搜索 `PostgresSQL`，并从列表中选择 **[!UICONTROL **&#x200B; PostgresSQL 数据库&#x200B;**]**。
+   1. 在&#x200B;**获取数据**&#x200B;屏幕中，搜索 `PostgresSQL`，并从列表中选择 **[!UICONTROL ** PostgresSQL 数据库&#x200B;**]**。
 
-   1. 在 **[!UICONTROL **&#x200B; PostgressSQL 数据库&#x200B;**]**&#x200B;对话框中：
+   1. 在 **[!UICONTROL ** PostgressSQL 数据库&#x200B;**]**&#x200B;对话框中：
 
       1. 将 Experience Platform 查询[!UICONTROL 凭据]中的&#x200B;**[!UICONTROL **&#x200B;主机&#x200B;**]**&#x200B;参数粘贴到&#x200B;**[!UICONTROL **&#x200B;服务器&#x200B;**]**&#x200B;文本字段中。
 
@@ -161,7 +161,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    1. 从左边栏中的&#x200B;**[!UICONTROL **&#x200B;至服务器&#x200B;**]**&#x200B;中选择&#x200B;**[!UICONTROL **&#x200B;更多&#x200B;**]**。
 
-   1. 从列表中选择 **[!UICONTROL **&#x200B; PostgresSQL &#x200B;**]**。
+   1. 从列表中选择 **[!UICONTROL ** PostgresSQL **]**。
 
    1. 在 [!UICONTROL PostgresSQL] 对话框中：
 
