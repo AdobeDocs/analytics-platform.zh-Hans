@@ -6,9 +6,9 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta 版"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
-source-git-commit: 0e86227915404fe62fcd1f27e95eb3b1bb673030
+source-git-commit: cd3baec708f1811a7cbc37dfe0a9c3af75eb97c3
 workflow-type: tm+mt
-source-wordcount: '2268'
+source-wordcount: '2351'
 ht-degree: 14%
 
 ---
@@ -173,6 +173,8 @@ ht-degree: 14%
 
      ![版本描述符](assets/platform-schema-id.png)
 
+     在实际场景中，您可能希望使用更合适的字段作为[版本描述符](aep.md#schema)。 例如，用于跟踪上次修改时间的字段。
+
    * 已将&#x200B;**[!UICONTROL personid]**&#x200B;字段与&#x200B;**[!UICONTROL 时间戳]**&#x200B;一起配置为&#x200B;**[!UICONTROL 主键]**。 选择![添加](/help/assets/icons/Add.svg) **[!UICONTROL 创建组合主键]**&#x200B;以创建组合键。
 
      ![复合键](assets/platform-schema-compositekey.png)
@@ -180,6 +182,8 @@ ht-degree: 14%
      **[!UICONTROL personid]**&#x200B;字段也配置为&#x200B;**[!UICONTROL 标识]**，将&#x200B;**[!UICONTROL CRMID]**&#x200B;配置为&#x200B;**[!UICONTROL 标识命名空间]**。
 
      ![人员描述符](assets/platform-schema-personid.png)
+
+     **[!UICONTROL personid]**&#x200B;字段不必是&#x200B;**[!UICONTROL 主键]**。 在实际情景中，您很有可能使用不同的字段来跟踪主键，该字段与&#x200B;**[!UICONTROL personid]**&#x200B;分开。
 
    * 已将&#x200B;**[!UICONTROL timestamp]**&#x200B;字段与&#x200B;**[!UICONTROL personid]**&#x200B;字段一起配置为&#x200B;**[!UICONTROL 主键]**。 **[!UICONTROL 时间戳]**&#x200B;字段也配置为&#x200B;**[!UICONTROL 时间戳描述符]**。 您只需为时间序列关系数据将字段定义为&#x200B;**[!UICONTROL 时间戳描述符]**&#x200B;即可。
 
@@ -189,6 +193,8 @@ ht-degree: 14%
    如果您已正确定义&#x200B;**[!UICONTROL 主键]**、**[!UICONTROL 版本描述符]**&#x200B;和&#x200B;**[!UICONTROL 时间戳描述符]**，则架构定义顶部的警告将消失。
 
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存架构。
+
+同样，您可以设置基于记录的关系[架构](aep.md#schema)。 例如，包含配置文件和查找数据。
 
 
 ## 使用源连接器
@@ -219,7 +225,7 @@ ht-degree: 14%
 
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
-  有关在使用[Azure Databricks](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/databricks)或[Snowflake](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/snowflake)连接器时如何连接和身份验证的详细信息，请参阅Experience Platform文档。
+  有关在使用[Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)或[Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)连接器时如何连接和身份验证的详细信息，请参阅Experience Platform文档。
 
 
 ### 选择数据
@@ -254,7 +260,7 @@ ht-degree: 14%
 
 在&#x200B;**[!UICONTROL 映射]**&#x200B;步骤中：
 
-1. 映射字段。 从Google BigQuery中的架构(**[!UICONTROL Source数据]**)到您在Experience Platform中定义的架构中的字段（**[!UICONTROL 目标字段]**）。
+1. 将Google BigQuery架构中的字段(**[!UICONTROL Source数据]**)映射到您在Experience Platform中定义的架构中的字段（**[!UICONTROL 目标字段]**）。
 
    ![Experience Platform - Source Connector — 映射](assets/platform-sources-mapping.png)
 

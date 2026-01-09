@@ -6,9 +6,9 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta 版"
 exl-id: 87593d7d-9456-48f8-8d39-5c3d95fe51ec
-source-git-commit: b2a13524760f9d466696534bc8b9691f3b4dfb8a
+source-git-commit: cd3baec708f1811a7cbc37dfe0a9c3af75eb97c3
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '550'
 ht-degree: 2%
 
 ---
@@ -27,17 +27,19 @@ ht-degree: 2%
 
 ## 架构
 
-您需要创建一个[关系架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/relational){target="_blank"}，该架构是要镜像的数据仓库本机表。 构造关系架构时，请确保满足以下要求：
+您需要创建一个[关系架构](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational){target="_blank"}，该架构是要镜像的数据仓库本机表。 构造关系架构时，请确保满足以下要求：
 
 * 在提示输入关系架构类型时，请确保选择手动选项。
-* 为数据类型选择适当的架构。 请注意，Experience Platform Data Mirror主要用于时间序列数据（例如，事件数据）。
+* 为数据类型选择适当的架构。 请注意，Experience Platform Data Mirror主要用于时间序列数据（例如，事件数据），但也可用于基于记录的数据（查找和配置文件）。
 
 * 定义架构中的字段及其属性
 * 配置关系架构中字段的必需属性：
 
-   * 主键
-   * 版本标识符
-   * 时间戳标识符（用于时间序列数据）。
+   * **主键**。
+   * **版本描述符**，必须将其配置为序列号（整数字段类型）或日期时间字段类型。 当您使用DateTime字段类型时，版本描述符定义数据修改的时间戳，例如，包含上次修改的时间戳。
+   * **时间戳描述符**（用于时间序列数据），它定义捕获事件时不可变的时间戳。 基于记录的关系架构不需要时间戳描述符。
+
+
 
 ## 数据集
 
@@ -53,9 +55,9 @@ ht-degree: 2%
 
 有关针对支持的Data Warehouse本机解决方案的身份验证，请参阅相关的Experience Platform文档：
 
-* [Azure数据库](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/databricks)
-* [Google BigQuery](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/bigquery)
-* [Snowflake](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/snowflake)
+* [Azure数据库](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)
+* [Google BigQuery](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/bigquery)
+* [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)
 
 
 ### 选择数据
@@ -91,5 +93,5 @@ ht-degree: 2%
 >[!MORELIKETHIS]
 >
 >[Data Mirror快速入门指南：镜像并使用关系数据](relational.md)
->[Data Mirror (Experience Platform文档)](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-mirror/overview)
->[关系架构(Experience Platform文档)](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/relational)
+>[Data Mirror (Experience Platform文档)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>[关系架构(Experience Platform文档)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational)
