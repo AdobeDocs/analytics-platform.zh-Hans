@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: 3dc53d6955eab3048ebf8a7c9d232b4b5739c6bd
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 100%
@@ -21,18 +21,10 @@ ht-degree: 100%
 >title="在 Adobe Experience Platform 中创建所需的自定义架构"
 >abstract="使用 Adobe Experience Platform UI 创建一个架构，以便 Adobe 知道正确的数据存储格式。<br><br>此步骤将实际创建您的组织已同意的架构。在 Adobe Experience Platform 界面中创建架构的预计时间约为一周，具体取决于需要创建的维度及量度的数量。"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create-default-aa"
 >title="使用 Adobe Analytics ExperienceEvent 字段组创建架构"
 >abstract="使用“Adobe Analytics ExperienceEvent”字段组在 Adobe Experience Platform 中创建一个包含 Adobe Analytics 使用的所有字段的架构。<br><br>根据 Adobe Analytics ExperienceEvent 字段组创建架构很简单，只需几分钟即可完成。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
@@ -132,7 +124,7 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >如果该字段组不可用，请寻找另一个包含身份标识字段的字段组。或者[创建一个新的字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=zh-Hans)，并[将新的身份标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=zh-Hans#define-a-identity-field)（如 `ecid`、`crmId` 以及您需要的其他字段）添加到该字段组中，并选择该新字段组。
+   >如果该字段组不可用，请寻找另一个包含身份标识字段的字段组。或者[创建一个新的字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html)，并[将新的身份标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field)（如 `ecid`、`crmId` 以及您需要的其他字段）添加到该字段组中，并选择该新字段组。
 
    ![识别对象](assets/identification-field.png)
 
@@ -162,7 +154,7 @@ ht-degree: 100%
 
    系统会提示您启用轮廓的架构。一旦启用，当数据被引入基于此架构的数据集中时，该数据将合并到实时客户轮廓。
 
-   有关详细信息，请参阅[启用架构以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans#profile)。
+   有关详细信息，请参阅[启用架构以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile)。
 
    >[!IMPORTANT]
    >
@@ -188,6 +180,6 @@ ht-degree: 100%
 
    * 为轮廓启用架构
 
-   请参阅[在 UI 中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=zh-Hans)，了解有关向架构添加和删除字段组和单个字段的更多信息。
+   请参阅[在 UI 中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html)，了解有关向架构添加和删除字段组和单个字段的更多信息。
 
 {{upgrade-final-step}}
