@@ -25,7 +25,7 @@ ht-degree: 9%
 
 {{upgrade-note-step}}
 
-Adobe建议在实施[Customer Journey Analytics数据收集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/home)时为Adobe Experience Platform创建自定义[Experience Data Model](https://experienceleague.adobe.com/en/docs/experience-platform/collection/home) (XDM)架构。 创建此架构通常在涉及任何实施更改或代码之前完成。 通过自定义架构，您可以设计简洁的、特定于组织的数据合同，而无需继承Adobe Analytics的约束或管理数千个未使用的字段。 请参阅[选择您的Customer Journey Analytics架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)，了解有关您的组织可用的架构类型的更多信息。
+Adobe建议在实施[Customer Journey Analytics数据收集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/home)时为Adobe Experience Platform创建自定义[Experience Data Model](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/home) (XDM)架构。 创建此架构通常在涉及任何实施更改或代码之前完成。 通过自定义架构，您可以设计简洁的、特定于组织的数据合同，而无需继承Adobe Analytics的约束或管理数千个未使用的字段。 请参阅[选择您的Customer Journey Analytics架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)，了解有关您的组织可用的架构类型的更多信息。
 
 架构旨在完善您想要长期构建数据的方式。 对架构的更改成本高昂，因为它们会影响数据收集、验证和下游服务。 您可以在业务要求允许的情况下随着时间的推移添加到架构中；但是，一旦数据开始流入架构字段，就无法删除架构字段。
 
@@ -110,7 +110,7 @@ Adobe建议在符合您需求的地方使用标准化的字段组，并使用自
 
 1. **使用Adobe Analytics可识别和自动映射的XDM字段路径：**&#x200B;当您通过Edge Network将可识别的XDM字段发送到Adobe Analytics时，这些字段会[自动映射](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/xdm-var-mapping)，无需额外配置。
 1. **对特定于组织的概念使用自定义XDM字段：**&#x200B;任何未自动映射到Analytics变量的XDM字段在Adobe Analytics中作为[上下文数据变量](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/vars/page-vars/contextdata)转发。
-1. **使用Adobe Analytics处理规则将这些上下文数据变量映射到prop/eVars：** [处理规则](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)最终使您可以将任何自定义XDM字段映射到任何eVar或prop。 此概念支持Adobe Analytics中的奇偶校验报表，同时保持架构干净并以Customer Journey Analytics为中心。
+1. **使用Adobe Analytics处理规则将这些上下文数据变量映射到prop/eVars：** [处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)最终使您可以将任何自定义XDM字段映射到任何eVar或prop。 此概念支持Adobe Analytics中的奇偶校验报表，同时保持架构干净并以Customer Journey Analytics为中心。
 
 ## 确定利益相关者并确定所有权
 
@@ -128,7 +128,7 @@ Adobe建议在符合您需求的地方使用标准化的字段组，并使用自
 架构设计应根据贵组织的隐私政策反映隐私和治理期望。 在架构架构时，请考虑以下几点：
 
 * 仅收集支持定义的用例所需的内容。
-* 确保在收集策略中反映同意和数据使用要求。 有关详细信息，请参阅[使用Web SDK处理客户同意数据](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/sdk)。
+* 确保在收集策略中反映同意和数据使用要求。 有关详细信息，请参阅[使用Web SDK处理客户同意数据](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/governance-privacy-security/consent/sdk)。
 * 考虑如何在Adobe Experience Platform治理工具中标记和控制敏感字段。 有关详细信息，请参阅[Adobe Customer Journey Analytics和数据管理](/help/privacy/privacy-overview.md)。
 
 ## 后续步骤
