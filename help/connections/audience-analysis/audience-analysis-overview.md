@@ -6,9 +6,9 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 840bf65d186178fb944041ff486e95ba60dc6037
+source-git-commit: 9d9c4dbba13f61af4a47bbb0f87533fb950976bc
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '708'
 ht-degree: 3%
 
 ---
@@ -80,7 +80,13 @@ ht-degree: 3%
 | [在数据视图中查看受众分析维度](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | 数据视图所分配到的产品配置文件的产品配置文件管理员 <p>有关详细信息，请参阅[访问控制](/help/technotes/access-control.md)。</p> | 不适用 |
 | 在Analysis Workspace中使用受众分析维度 | 访问添加了受众分析维度的数据视图 | 不适用 |
 
+## 受众分析限制
 
+在[配置受众分析](/help/connections/audience-analysis/audience-analysis-configure.md)时，请考虑以下限制：
+
+* 单个沙盒最多可支持100个受众分析配置。
+
+* 一个连接只能与一个受众分析配置相关联。
 
 
 
