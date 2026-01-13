@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: 从Workspace报表生成演示
 feature: Curate and Share
 role: User
-source-git-commit: 82ca99af8f344b713e285980145fa0ee6ae6ae1c
+source-git-commit: 06e6dd99d318812447d903f2e14e4daba80d4957
 workflow-type: tm+mt
-source-wordcount: '1682'
-ht-degree: 6%
+source-wordcount: '1694'
+ht-degree: 5%
 
 ---
 
@@ -228,9 +228,7 @@ Analysis Workspace通过考虑以下项目元素来创建数据故事：
 
    * 组合
 
-   * 流失
-
-   * 流量
+   * 具有多个维度列的自由格式表（支持具有单个维度列的表）
 
    * 历程画布
 
