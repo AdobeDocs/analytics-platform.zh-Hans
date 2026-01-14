@@ -6,9 +6,9 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 9d9c4dbba13f61af4a47bbb0f87533fb950976bc
+source-git-commit: ca2adce7be8a28fa72323915473a8c2283741889
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '728'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,9 @@ ht-degree: 3%
 
 在配置受众分析时，您可以选择与要分析的Experience Platform受众关联的沙盒和合并策略。 Customer Journey Analytics会创建新的查找数据集，然后自动将查找数据集和配置文件数据集添加到您选择的连接。
 
->[!NOTE]
+>[!IMPORTANT]
+>
+>每晚重新处理和生成受众数据，使受众数据仅可用于前一天（“昨天”）的分析。
 >
 >受众在创建受众分析配置的当天即出现在Customer Journey Analytics数据视图中。
 

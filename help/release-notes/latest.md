@@ -3,47 +3,54 @@ title: 当前 Customer Journey Analytics 发行说明
 description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 299337b6b0ea12224a7da6c15dcc582e8562c088
+source-git-commit: bdf3b87768e123e64ec36154dae0fd1ab5ce1238
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 94%
+source-wordcount: '949'
+ht-degree: 47%
 
 ---
 
-# 当前的 Customer Journey Analytics 发行说明（2025 年 10 月）
+# 当前Customer Journey Analytics发行说明（2026年1月）
 
-**上次更新日期**：2025 年 10 月 14 日
+**上次更新时间**：2026年1月14日
 
-这些发行说明涵盖 2025 年 10 月至 11 月初的发行期。Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
+这些发行说明涵盖2026年1月发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
 ## 新增功能或更新后的功能
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **包含在线形图可视化图表和迷你图中的筛选条件** | 现在，应用于自由格式表过滤器的任何搜索筛选条件始终包含在迷你图中。此外，您还可以在任何连接的线形图可视化图表中包含搜索筛选条件。<p>您可以通过选择所连接表的量度列标题中的迷你图，将线形图可视化图表配置为包含搜索筛选条件。</p><p>以前，搜索筛选条件未包含在迷你图或连接的线形图可视化图表中。</p><p>有关详细信息，请参阅[查看自由格式表的趋势数据](/help/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md)。</p> | | 2025 年 10 月 15 日 |
-| **数据故事讲述：从 Workspace 报告生成幻灯片演示文稿** | 您现在可以基于 Analysis Workspace 报告自动生成幻灯片演示文稿（采用 .pptx 格式）。Workspace 会检测报告中的关键洞察，并将其转化为适用于利益相关者的幻灯片。<p>该功能可减少呈现发现结果、构建管理层叙述以及传达业务影响所需的时间和精力。</p><p>有关更多信息，请参阅[数据故事讲述：从 Workspace 报告生成幻灯片演示文稿](/help/analysis-workspace/curate-share/generate-slides.md)。</p> | 2025 年 10 月 22 日 | 2026 年 1 月  |
-| **实时报告** | [Customer Journey Analytics 中的实时报告功能](/help/components/real-time/real-time.md)可以实时显示并更新 Analysis Workspace 的一个或多个面板中的数据和可视化图表。 | 2025 年 9 月 18 日（原计划于 2025 年 8 月 15 日发布） | 2025 年 10 月 22 日 |
+| **在Customer Journey Analytics中分析Experience Platform配置文件数据集中的受众** | 您现在可以将Experience Platform配置文件数据集中的受众成员资格数据摄取到Customer Journey Analytics连接。 受众将可用作新维度，以便在Analysis Workspace中使用。<p>这可以通过Customer Journey Analytics中的新功能来摄取XDM对象映射，进而能够摄取用户档案AudienceID。</p><p>以前，只能将简单的XDM映射引入Customer Journey Analytics。</p><p>除了能够向Analysis Workspace中的任何项目添加受众数据作为维度外，还提供以下新的Workspace模板：</p><ul><li>Audience Analytics概述</li><li>同意策略概述</li><p><!--For more information, see "Audience analysis overview" (https://experienceleague.corp.adobe.com/docs/analytics-platform/using/cja-dataviews/audience-analysis/audience-analysis-overview.html).-->（文档链接见下文。）</p> | 2025 年 10 月 22 日 | 2026年1月22日 |
+| **数据故事讲述：从 Workspace 报告生成幻灯片演示文稿** | 您现在可以基于 Analysis Workspace 报告自动生成幻灯片演示文稿（采用 .pptx 格式）。Workspace 会检测报告中的关键洞察，并将其转化为适用于利益相关者的幻灯片。<p>该功能可减少呈现发现结果、构建管理层叙述以及传达业务影响所需的时间和精力。</p><p>（文档链接见下文。）<!--For more information, see [Data storytelling: Generate slide presentations from Workspace reports](/help/analysis-workspace/curate-share/generate-slides.md).--></p> | 2025 年 10 月 22 日 | 2026年1月28日 |
+| **在自由格式表中包含多个维度列** | 现在，您在自由格式表中最多可以包含5个维度列，从而允许您并排查看多个维度项目。 每一行维度项目的行为类似于单个连接的维度项目。<p>您可以将过滤器、排序、划分等应用于具有多个维度列的自由格式表，从而创建更深入、更自定义的分析。</p><p>以前，在自由格式表中只能包含1个维度列。</p><p><!-- For more information, see [Include multiple dimension columns in a freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md).--> （文档链接见下文。）</p> | 2026年1月28日 | 2026年2月18日 |
+| **按多个列对表进行排序** | 您现在可以在Analysis Workspace中按多个列对自由格式表的数据进行排序，无论它们是维度还是量度。<p>当您为多个列排序数据时，将根据您分配给每个列的优先级对数据排序。 优先级编号显示在排序图标旁边。</p><p>（文档链接见下文。）<!-- For more information, see "Filter and sort freeform tables". (need to move info to this article from "Include multiple dimension columns in a freeform table") --></p> | 2026年1月28日 | 2026年2月18日 |
+| **合并来自多个IMS组织的数据源** | 您现在可以使用Analytics Source Connector合并来自多个IMS组织的多个数据源。 这允许组织拥有其客户数据的组合视图，即使该客户数据分布在多个IMS组织也是如此。 <p>**注意：**&#x200B;只有通过向Adobe客户关怀部门提交请求才能使用此配置。</p>  <p>（文档链接见下文。）</p> |  | 2026年1月30日 |
+| **连接中的拼接** | Customer Journey Analytics中的拼合过程现在变得更加简单。 现在不再需要复制数据集后对复制的数据集进行拼接，而是在将数据摄取到 Customer Journey Analytics 中时进行拼接，这样就无需再复制数据集和架构。 <p>此外，您现在可以[通过更新的连接接口](/help/stitching/use-stitching-ui.md)开始自行拼接，而不必通过Adobe客户关怀部门请求拼接。</p><p> *由于需要做额外的工作和假日季节的关系，先前通知的发行日期被推迟。 目前正计划分阶段推出，以确保稳定性，并尽量减少假期的干扰。*</p> | 2025 年 10 月 28 日 | 2026年1月30日 |
 | **支持 Data Mirror** | 通过对 Experience Platform 中的特定源连接器提供基于模型的架构以及变更数据捕获（CDC）功能的支持，Customer Journey Analytics 将能够支持 [!DNL Snowflake]、[!DNL Azure Databricks] 和 [!DNL Google BigQuery] 等数据仓库解决方案的 [Data Mirror](/help/data-mirror/data-mirror.md) 功能。<p>要访问 Beta 版本，请联系您的 Adobe 帐户团队。</p> | Beta 版：2025 年 9 月 24 日 | 待定 |
-| **连接中的拼接** | 简化 Customer Journey Analytics 拼接。现在不再需要复制数据集后对复制的数据集进行拼接，而是在将数据摄取到 Customer Journey Analytics 中时进行拼接，这样就无需再复制数据集和架构。 <p>此外，您现在可以从更新的连接UI[开始](/help/stitching/use-stitching-ui.md)自己拼接，而不必请求通过客户支持进行拼接。</p><p> *由于需要更多工作，之前公布的发布日期被推迟。新的发布日期与假期重叠，因此额外限制了发布。目前正计划分阶段推出，以确保稳定性，并尽量减少假期的干扰。*</p> | 2025 年 10 月 28 日 | 2026年1月30日 |
 | **流媒体服务：支持计划数据** | 您现在可以上传过去直播流媒体内容的计划数据，以便更轻松、更准确地跟踪观看人数。<p>以下是支持计划数据上传的直播内容示例：</p><ul><li>FAST（免费广告支持电视）平台</li><li>本地流</li><li>直播体育赛事</li></ul><p>上传计划数据允许您跟踪在上传文件中指定的时间内运行的各个节目的观看人数数据。您甚至可以收集特定主题或节目片段的观看人数数据。</p><p>无论您如何实现流媒体收集，这些功能都是可用的。</p><p>以前，在分析直播内容时很难准确地将特定场次与特定节目联系起来，也不可能将特定场次与单个主题或节目片段联系起来。</p><p>如需了解更多信息，请参阅[上传计划数据以跟踪实时内容](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/media-use-cases/track-schedule-data)</p> | 2025 年 10 月 29 日 | 2026 年上半年<p>（原计划于 2025 年 10 月 29 日发布）</p> |
-| **Analytics 源连接器：在 Experience Platform 中搜索报告包** | 如果您的报表包数量确实很大，则现在可以在Analytics Source Connector数据流工作流中[搜索要连接的报表包](/help/data-ingestion/analytics.md#set-up-an-adobe-analytics-source-connector)。 | | 2025 年 10 月 30 日 |
-| **流媒体：更新了用于将流媒体数据收集到 Adobe Experience Platform 的 XDM 字段** | 将流媒体数据收集到 Adobe Experience Platform 时，不再使用流媒体参数文档中“XDM 字段路径”标题下显示的 XDM 字段路径。在 2025 年 5 月 9 日之前实施了 Analytics 源连接器以将流媒体数据收集到平台的客户，必须将其现有配置迁移到 mediaReporting 字段路径，参见流媒体参数文档中“报告 XDM 字段路径”标题下的段落。<p> 这些字段路径位于以下页面并标记为“已弃用”：[音频和视频参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/audio-video-parameters)、[广告参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/ad-parameters)、[章节参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/chapter-parameters)、[播放器状态参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/player-state-parameters)和[质量参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/quality-parameters)。（2025 年 5 月 9 日之后实施 Analytics 源连接器，并且只使用 mediaReporting XDM 路径的客户无需采取任何行动。）</p><p>在已弃用的 XDM 字段路径上的数据摄取将继续进行，直到 2025 年 10 月底。之后，已弃用的字段路径将被完全移除，并且不再显示在 Adobe Experience Platform Schema UI 中，届时起将只使用 mediaReporting 字段路径发送数据。</p><p>有关详细信息请参阅[将 Analytics 源连接器实施迁移到更新后的 XDM 流媒体字段](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/media-use-cases/xdm-updates/updated-xdm-fields)。</p><p>请联系您的 Adobe Consulting 服务或帐户团队以获取迁移支持。 </p> |  | 2025 年 10 月 |
 
 ## Customer Journey Analytics 中的修复
 
-**Analysis Workspace**：AN-400507、AN-400265、AN-399209、AN-397146、AN-394992、AN-390795
-**组件**：**Content Analytics**：**导出**：AN-399012、AN-388578
-**引导式分析**：
-**实施**：AN-397551、AN-397550、AN-397190、AN-396127
-**Report Builder**：AN-401127、AN-400618、AN-392971、AN-391692
-**报告**：**分段**：**计划报告**：**共享量度和维度**：**其他**：
+**Analysis Workspace**： AN-423389、AN-423316、AN-422636、AN-422482、AN-422121、AN-422116、AN-422027、AN-421134、AN-420187、AN-406271、AN-406188、AN-405997、AN-405983、AN-405796、AN-405033、AN-404893、AN-404871、AN-404842、AN-404713、AN-404502、AN-404353、AN-404352、AN-404048 an-403241、AN-402523、AN-400795、AN-396149、AN-390990、AN-390646、AN-383484 376980 371729 347570
+**组件**：
+**Content Analytics**：
+**引导式分析**： AN-421274
+**导出**：
+**数据视图**： AN-421891、AN-404627
+**实现**：
+**Report Builder**： AN-422120、AN-421937、AN-406296、AN-402951、AN-399748
+**报告**：
+**分段**：
+**计划报告**： AN-423087、AN-422686
+**共享的量度和维度**：
+**Other**： AN-422946、AN-422775、AN-422273、AN-422100、AN-420045、AN-404891、AN-390912
 
 
 ## Customer Journey Analytics 管理员的重要注意事项
 
 | 注意事项 | 添加或更新注意事项 | 描述 |
 | --- | --- | --- |
-| 不适用 | | |
+| 不适用 |  |  |
 
 ## 相关资产
 
