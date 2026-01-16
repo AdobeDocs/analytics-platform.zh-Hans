@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: b85b5b8212cf072ed46bc8eb587ea00984d33ccc
+source-git-commit: d117ba255151f730e0b5e4958ee56f5ffc88ade9
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 98%
+source-wordcount: '902'
+ht-degree: 88%
 
 ---
 
@@ -49,8 +49,8 @@ Customer Journey Analytics 支持两种类型的拼接：[基于字段的拼接]
 
 您可以通过以下两种方式启用拼接：
 
-- [请求启用拼接](/help/stitching/use-stitching.md)
-- [在“连接”界面中启用拼接](/help/stitching/use-stitching-ui.md) [!BADGE Beta]{type=Informative}
+- [请求启用拼接](/help/stitching/use-stitching.md)。 批准后，将为您请求拼合的数据集创建重复的数据集。 此重复数据集包含一个具有拼接标识符的附加列。 您必须创建新连接或编辑包含拼接数据集的现有连接，才能在Customer Journey Analytics中使用拼接数据。
+- [在连接接口中启用拼接](/help/stitching/use-stitching-ui.md) [!BADGE Beta]{type=Informative}。 在“连接”界面中配置数据集的拼合时，在Customer Journey Analytics中从该数据集摄取数据期间，将“动态”进行拼合。
 
 ## 限制
 
