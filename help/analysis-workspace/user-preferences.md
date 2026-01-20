@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 0a307bb43c780479df1cdc751fdadfc82f9dda55
 workflow-type: tm+mt
-source-wordcount: '4015'
-ht-degree: 99%
+source-wordcount: '4044'
+ht-degree: 98%
 
 ---
 
@@ -50,14 +50,11 @@ ht-degree: 99%
 >title="需要 Experience Cloud 身份验证"
 >abstract="启用后，通过 Analysis Workspace 中的&#x200B;**[!UICONTROL 与任何人共享]**&#x200B;选项获得项目访问权限的人员必须使用其 Experience Cloud 凭据进行身份验证。"
 
-<!-- markdownlint-enable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_projectcommenting"
 >title="允许对项目进行评论"
 >abstract="启用后，Analysis Workspace 中每个项目的右侧栏中会显示一个评论区域。"
 
-<!-- markdownlint-enable MD034 -->
 
 您可以更新适用于组织内所有用户和项目的公司偏好设置。有关如何访问这些偏好设置的信息，请参阅[更新偏好设置](#update-preferences)。
 
@@ -93,6 +90,12 @@ ht-degree: 99%
 
 如[项目概述](/help/analysis-workspace/build-workspace-project/freeform-overview.md)中所述，也可以为 Analysis Workspace 中的个别项目自定义其中一些相同的偏好设置。
 
+>[!IMPORTANT]
+>
+>您无法再在&#x200B;**[!UICONTROL 用户首选项]**&#x200B;的&#x200B;**[!UICONTROL 项目和分析]** > **[!UICONTROL 数据]**&#x200B;部分中定义数字格式。 数字格式自动由为登录用户配置的[默认语言](https://experienceleague.adobe.com/en/docs/core-services/interface/features/browser-language)确定。
+>
+
+
 | 部分 | 偏好设置 | 选项 |
 | --- | --- | --- |
 | **显示** | | |
@@ -103,7 +106,6 @@ ht-degree: 99%
 |  | [日程表](/help/analysis-workspace/c-panels/panels.md#calendar) | 从以下列表中选择： <ul><li>Adobe 提供的范围（默认为“本月”）</li><li>您可以启用[!UICONTROL 默认情况下，使日期范围组件相对于面板日程表]。</li></ul> |
 |  | [面板类型](/help/analysis-workspace/c-panels/panels.md#panel-types) | <ul><li>自由格式（默认）</li><li>空白</li><li>快速洞察</li></ul> |
 |  | 实例计数 | 启用[!UICONTROL 计算重复实例]以指定是否将重复实例计入报告中。例如，启用后，同一页面的多个连续页面查看将会被视为多个页面查看。禁用时，对同一页面的多次连续页面查看将会被视为一次页面查看。 <p>**注意：**&#x200B;此设置仅影响某些量度（例如会话），不适用于流量或流失可视化图表。</p> |
-|  | 数字格式 | <ul><li>1,000.00（默认）</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | CSV 分隔符字符 | <ul><li>逗号（默认）</li><li>分号</li><li>冒号</li><li>竖线</li><li>句点</li><li>空格</li><li>制表符</li></ul> |
 |  | 显示注释 | 选择注释是否在您的项目中可见。有关注释的更多信息，请参阅[注释概述](/help/components/annotations/overview.md)。 |
 
@@ -196,7 +198,7 @@ ht-degree: 99%
 | | 标准化（适用时） | 要求所有量度按等比例计算。如果所绘制量度的幅度差异很大，此偏好设置就很有用。 |
 | | 将 Y 轴定位在零 | 如果图表上绘制的所有值都远远大于零，则图表会默认将 y 轴底部更新为非零值。如果选中此框，y 轴将被强制设为零（并将重新绘制图表）。 |
 | | 将异常情况锚定到 Y 轴 | Y 轴会使用异常值进行缩放。 |
-| **[线形图](/help/analysis-workspace/visualizations/line.md)** | | |
+| **[折线图](/help/analysis-workspace/visualizations/line.md)** | | |
 | | 百分比 | 以百分比显示线条可视化的值。 |
 | | 图例可见 | 允许您为线形图可视化隐藏详细的图例文本。 |
 | | 限制最大项目数 | 减少直线可视化中 X 轴上的项目数。如果您有大型数据集，此偏好设置会很有用。 |
