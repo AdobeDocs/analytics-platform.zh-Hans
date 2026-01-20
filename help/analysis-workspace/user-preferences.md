@@ -92,7 +92,7 @@ ht-degree: 98%
 
 >[!IMPORTANT]
 >
->您无法再在&#x200B;**[!UICONTROL 用户首选项]**&#x200B;的&#x200B;**[!UICONTROL 项目和分析]** > **[!UICONTROL 数据]**&#x200B;部分中定义数字格式。 数字格式自动由为登录用户配置的[默认语言](https://experienceleague.adobe.com/en/docs/core-services/interface/features/browser-language)确定。
+>您无法再在&#x200B;**[!UICONTROL 用户首选项]**&#x200B;的&#x200B;**[!UICONTROL 项目和分析]** > **[!UICONTROL 数据]**&#x200B;部分中定义数字格式。 数字格式自动由为登录用户配置的[默认语言](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/browser-language)确定。
 >
 
 
