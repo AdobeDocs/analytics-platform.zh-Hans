@@ -3,9 +3,9 @@ title: 当前 Customer Journey Analytics 发行说明
 description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: ea699bcacd985d9da1e3895f7770290dc77da537
+source-git-commit: 40f19f5c5f6aa560882e322fce4196a1d52af425
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '958'
 ht-degree: 47%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 47%
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **在Customer Journey Analytics中分析Experience Platform配置文件数据集中的受众** | 您现在可以将Experience Platform配置文件数据集中的受众成员资格数据摄取到Customer Journey Analytics连接。 受众将可用作新维度，以便在Analysis Workspace中使用。<p>这可以通过Customer Journey Analytics中的新功能来摄取XDM对象映射，进而能够摄取用户档案AudienceID。</p><p>以前，只能将简单的XDM映射引入Customer Journey Analytics。</p><p>除了能够向Analysis Workspace中的任何项目添加受众数据作为维度外，还提供以下新的Workspace模板：</p><ul><li>Audience Analytics概述</li><li>同意策略概述</li><p><!--For more information, see "Audience analysis overview" (https://experienceleague.corp.adobe.com/docs/analytics-platform/using/cja-dataviews/audience-analysis/audience-analysis-overview.html).-->（文档链接见下文。）</p> | 2025 年 10 月 22 日 | 2026年1月22日 |
+| **在Customer Journey Analytics中分析Experience Platform配置文件数据集中的受众** | 您现在可以将Experience Platform配置文件数据集中的受众成员资格数据摄取到Customer Journey Analytics连接。 受众将可用作新维度，以便在Analysis Workspace中使用。<p>这可以通过Customer Journey Analytics中的新功能来摄取XDM对象映射，进而能够摄取用户档案AudienceID。</p><p>以前，只能将简单的XDM映射引入Customer Journey Analytics。</p><p>除了能够向Analysis Workspace中的任何项目添加受众数据作为维度外，还提供以下新的Workspace模板：</p><ul><li>Audience Analytics概述</li><li>同意策略概述</li></ul><p><!-- For more information, see [Audience analysis overview](https://experienceleague.corp.adobe.com/docs/analytics-platform/using/cja-dataviews/audience-analysis/audience-analysis-overview.html). -->（文档链接见下文。）</p> | 2025 年 10 月 22 日 | 2026 年 1 月底 <p> （原计划于2026年1月22日）</p> |
 | **数据故事讲述：从 Workspace 报告生成幻灯片演示文稿** | 您现在可以基于 Analysis Workspace 报告自动生成幻灯片演示文稿（采用 .pptx 格式）。Workspace 会检测报告中的关键洞察，并将其转化为适用于利益相关者的幻灯片。<p>该功能可减少呈现发现结果、构建管理层叙述以及传达业务影响所需的时间和精力。</p><p>（文档链接见下文。）<!--For more information, see [Data storytelling: Generate slide presentations from Workspace reports](/help/analysis-workspace/curate-share/generate-slides.md).--></p> | 2025 年 10 月 22 日 | 2026年1月28日 |
 | **在自由格式表中包含多个维度列** | 现在，您在自由格式表中最多可以包含5个维度列，从而允许您并排查看多个维度项目。 每一行维度项目的行为类似于单个连接的维度项目。<p>您可以将过滤器、排序、划分等应用于具有多个维度列的自由格式表，从而创建更深入、更自定义的分析。</p><p>以前，在自由格式表中只能包含1个维度列。</p><p><!-- For more information, see [Include multiple dimension columns in a freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md).--> （文档链接见下文。）</p> | 2026年1月28日 | 2026年2月18日 |
 | **按多个列对表进行排序** | 您现在可以在Analysis Workspace中按多个列对自由格式表的数据进行排序，无论它们是维度还是量度。<p>当您为多个列排序数据时，将根据您分配给每个列的优先级对数据排序。 优先级编号显示在排序图标旁边。</p><p>（文档链接见下文。）<!-- For more information, see "Filter and sort freeform tables". (need to move info to this article from "Include multiple dimension columns in a freeform table") --></p> | 2026年1月28日 | 2026年2月18日 |

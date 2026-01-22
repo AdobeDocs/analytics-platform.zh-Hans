@@ -4,9 +4,9 @@ title: 使用模板
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 11a550e0cd67db106e2dd399843c4cf0923467ad
+source-git-commit: 3f369122863df4f3fc339730ced8c193360d07c6
 workflow-type: tm+mt
-source-wordcount: '20775'
+source-wordcount: '20877'
 ht-degree: 97%
 
 ---
@@ -652,10 +652,9 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 
 可使用以下模板：
 
-<!--need to add audience overview: - **[!UICONTROL Audience overview]** - View which audiences are represented among the people visiting your site.<p>**This can help you** better understand general information about the audiences, where the audiences originated (RTCDP, Customer Journey Analytics, and so forth), audience overlap, and more.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts for these specific audiences, or create tailored experiences for customers who span multiple audiences.</p><p>This template uses the Audience Name, Audience Origin, Exited Audience Name, and Exited Audience Origin dimensions.</p><p>For more information, see [Analyze Experience Platform audiences in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).</p> - -->
-
 | 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
+| **[!UICONTROL 受众概述]** | 查看访问您网站的用户所代表的受众。<p>**这可以帮助您**&#x200B;更好地了解受众的一般信息，受众源自何处(RTCDP、Customer Journey Analytics等)、受众重叠等等。</p><p>**根据您了解的情况，您可以**&#x200B;执行任意数量的操作，例如，使用数据来专注于这些特定受众的营销工作，或为跨多个受众的客户创建量身定制的体验。</p><p>此模板使用“受众名称”、“受众来源”、“退出受众名称”和“退出受众来源”维度。</p><p>有关详细信息，请参阅[在Customer Journey Analytics中分析Experience Platform受众](/help/connections/audience-analysis/analyze-audiences.md)。</p> |
 | [!UICONTROL **首次访客与重复访客**] | 查看首次来访访客和重复访客的比较。 <p>**这可以帮助您**&#x200B;更好地了解您网站在维系客户忠诚度方面的有效性，或者您获取新客户的速度。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如为首次来访访客提供未来购买的激励，以吸引他们回访。</p><!-- This template uses the --> |
 | **人员 ID** | 查看各个渠道中的个体用户行为。<p>**这可以帮助您**&#x200B;更好地了解完整的客户历程和跨多个接触点的互动。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如开展个性化营销，更好地针对用户偏好。</p><!-- This template uses the --> |
 | **地理位置：国家/地区** | 查看访问该网站的人员来自哪个国家或地区。<p>**这可以帮助您**&#x200B;更好地了解访问您网站的用户主要来自哪些国家或地区。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如利用这些数据来聚焦在这些国家的营销努力，或者确保您的网站体验在主要语言不同的国家中达到最优。</p><p>此模板使用“国家或地区”维度。 </p> |
