@@ -69,5 +69,5 @@ Customer Journey Analytics 中的大多数维度和指标都基于您 Adobe Expe
 
 >[!MORELIKETHIS]
 >
->[利用事件深度功能发现更深入的客户洞察](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947#M576)
+>[利用事件深度功能发现更深入的客户洞察](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947?profile.language=zh-Hans#M576)
 >

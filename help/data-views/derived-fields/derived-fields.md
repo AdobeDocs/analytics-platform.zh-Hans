@@ -2140,7 +2140,7 @@ Case When 函数中的 If 或 Else If 结构中的运算符是条件与&#x200B;*
 
 >[!MORELIKETHIS]
 >
->- [博客：充分利用您的数据：在 Customer Journey Analytics 中使用派生字段的框架](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
->- [博客：Customer Journey Analytics 的派生字段用例](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
->- [博客：Adobe Customer Journey Analytics 派生字段增强功能](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808)
+>- [博客：充分利用您的数据：在 Customer Journey Analytics 中使用派生字段的框架](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670?profile.language=zh-Hans)
+>- [博客：Customer Journey Analytics 的派生字段用例](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679?profile.language=zh-Hans)
+>- [博客：Adobe Customer Journey Analytics 派生字段增强功能](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808?profile.language=zh-Hans)
 

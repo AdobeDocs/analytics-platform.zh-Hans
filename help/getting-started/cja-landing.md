@@ -205,4 +205,4 @@ BI 扩展允许 SQL 访问您在 Customer Journey Analytics 中定义的数据�
 
 
 <table style="table-layout:auto" class="tablelayout-is-fixed"><tbody><tr style="border: 0;"><td><img src="./assets/newsletter.png"></td><td>
-<b>随时了解最新动态、为社区做出贡献并提升您的 Customer Journey Analytics 体验！</b><br>访问 Adobe Analytics 社区，与同类从业者讨论其功能。<a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community">立即加入社区！</a></td></tr></tbody></table>
+<b>随时了解最新动态、为社区做出贡献并提升您的 Customer Journey Analytics 体验！</b><br>访问 Adobe Analytics 社区，与同类从业者讨论其功能。<a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=zh-Hans">立即加入社区！</a></td></tr></tbody></table>

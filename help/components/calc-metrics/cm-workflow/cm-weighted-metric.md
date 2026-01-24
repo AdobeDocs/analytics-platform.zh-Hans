@@ -38,7 +38,7 @@ ht-degree: 5%
 
 派生字段是数据视图的一部分，其优点是并非每个用户都可以覆盖或修改跳出率量度的定义。 这一优势也带来了局限性。 无权访问数据视图的用户无法使用派生字段，并且必须依靠区段和计算量度来定义跳出率。
 
-有关如何在Customer Journey Analytics中计算跳出率和跳出率的更多背景信息，请参阅此[博客帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446)。
+有关如何在Customer Journey Analytics中计算跳出率和跳出率的更多背景信息，请参阅此[博客帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=zh-Hans)。
 
 +++
 

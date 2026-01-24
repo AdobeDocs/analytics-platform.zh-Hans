@@ -111,6 +111,6 @@ Adobe Experience Platform 让您可以实现源自任何系统的客户数据和
 
 >[!MORELIKETHIS]
 >
->* [面向分析师的 Adobe Customer Journey Analytics 速成课程](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-crash-course-for-analysts/ba-p/719261)
->* [优化您的思维方式和 Adobe Customer Journey Analytics 工作流程：适合任何规模组织的团队模型](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/optimizing-your-mindset-and-adobe-customer-journey-analytics/ba-p/721456)
->* [构建组织准备工作：以人为本的 Adobe Customer Journey Analytics 扩展指南](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/building-organizational-readiness-a-people-first-guide-to/ba-p/723273)
+>* [面向分析师的 Adobe Customer Journey Analytics 速成课程](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-crash-course-for-analysts/ba-p/719261?profile.language=zh-Hans)
+>* [优化您的思维方式和 Adobe Customer Journey Analytics 工作流程：适合任何规模组织的团队模型](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/optimizing-your-mindset-and-adobe-customer-journey-analytics/ba-p/721456?profile.language=zh-Hans)
+>* [构建组织准备工作：以人为本的 Adobe Customer Journey Analytics 扩展指南](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/building-organizational-readiness-a-people-first-guide-to/ba-p/723273?profile.language=zh-Hans)
