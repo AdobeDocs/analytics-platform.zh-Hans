@@ -4,7 +4,7 @@ title: 使用模板
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: e9799941256524ef148513fb16835a031b241e44
+source-git-commit: 9b941deb424d92744bea99f6ea01f6434d6bc19f
 workflow-type: tm+mt
 source-wordcount: '20935'
 ht-degree: 96%
@@ -1123,3 +1123,5 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 >id="template--mixModelerReport"
 >title="查看来自Mix Modeler生成的选定模型的洞察。"
 >abstract="**这有助于您**&#x200B;更好地了解从Mix Modeler中生成的模型得出的增量见解。 <br/>**根据这些见解**，您将能够：<ul><li>可视化并量化组织营销活动的影响。</li><li>确定哪些渠道表现良好。</li><li>确定可能需要优化的渠道。</li></ul>"
+
+
