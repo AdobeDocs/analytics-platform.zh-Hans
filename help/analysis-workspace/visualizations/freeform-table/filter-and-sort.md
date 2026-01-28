@@ -4,10 +4,10 @@ title: 过滤和排序
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: e51dced9ac7886ae8d087ca3b2fc6ac2755c3ac6
 workflow-type: tm+mt
-source-wordcount: '1134'
-ht-degree: 65%
+source-wordcount: '1577'
+ht-degree: 45%
 
 ---
 
@@ -17,7 +17,7 @@ Analysis Workspace 中的自由格式表是进行交互式数据分析的基础�
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/327345?captions=chi_hans)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## 过滤表格
 
@@ -132,6 +132,82 @@ Note: this option does not seem to work. AN-338422
 
 ## 对表格进行排序
 
-您可以按 Analysis Workspace 中的任何列（维度或量度）对自由格式表的数据进行排序。箭头表示数据的排序方式（**↓** 表示降序，或 **↑** 表示升序）。
+在Analysis Workspace中，您可以按任何列对自由格式表的数据进行排序，无论这些列是维度还是量度。 您甚至可以同时按多个列排序。
 
-![排序](assets/sorting.gif)
+默认情况下，维度按升序排序，量度按降序排序。
+
+### 按单列对表进行排序
+
+按本节所述对单列的数据进行排序时，将删除应用于表的所有[高级排序](#sort-tables-by-multiple-columns-advanced-sorting)。
+
+要按单列对表中的数据进行排序，请执行以下操作：
+
+1. 将鼠标悬停在要排序的列的标题上，然后选择&#x200B;**排序**&#x200B;图标![排序](/help/assets/icons/SortOrderDown.svg)（当它出现时）。
+
+   ![排序下拉菜单](assets/sort-dropdown-menu.png)
+
+1. 选择&#x200B;**[!UICONTROL 升序]**&#x200B;或&#x200B;**[!UICONTROL 降序]**。
+
+   对列应用排序时，排序图标保持可见。 箭头指示数据的排序方式（升序为![排序](/help/assets/icons/SortOrderUp.svg)或降序为![排序](/help/assets/icons/SortOrderDown.svg)）。
+
+### 按多列对表进行排序（高级排序）
+
+{{release-limited-testing-section}}
+
+#### 将排序应用于多个列
+
+要按多列对表中的数据进行排序，请执行以下操作：
+
+1. 将鼠标悬停在要排序的任何列的标题上，然后选择&#x200B;**排序**&#x200B;图标![排序](/help/assets/icons/SortOrderDown.svg)（当它出现时）。
+
+   ![排序下拉菜单](assets/sort-dropdown-menu.png)
+
+1. 选择&#x200B;**[!UICONTROL 高级排序]**。
+
+   ![高级排序对话框](assets/sort-advanced-dialog.png)
+
+1. 在高级排序对话框中，执行以下任一操作：
+
+   * 通过选择&#x200B;**[!UICONTROL 添加排序列]**&#x200B;按钮，添加尚未排序的列。
+
+   * 通过选择&#x200B;**删除**&#x200B;图标![删除](/help/assets/icons/Close.svg)来删除您不再想要排序的列。
+
+   * 在列表中上下拖动列可调整排序优先级。
+
+     有关详细信息，请参阅[排序优先级](#sort-priority)。
+
+   * 在下拉菜单中选择&#x200B;**[!UICONTROL 升序]**&#x200B;或&#x200B;**[!UICONTROL 降序]**&#x200B;以更改排序值。
+
+   * 通过选择列名称下拉菜单选择其他列。
+
+1. 选择&#x200B;**[!UICONTROL 应用]**。
+
+对列应用排序时，排序图标保持可见。 箭头指示数据的排序方式（升序为![排序](/help/assets/icons/SortOrderUp.svg)或降序为![排序](/help/assets/icons/SortOrderDown.svg)）。
+
+![多排序示例](assets/dimensions-multiple-sort.png)
+
+#### 排序优先级
+
+当您为多个列排序数据时，将根据您分配给每个列的优先级对数据排序。 优先级编号显示在排序图标![排序优先级图标](assets/sort-priority-icon.png)旁边。
+
+具有主优先级的列决定主顺序；具有次优先级的列决定主列中行的相同值的顺序；具有第三优先级的列决定主列和次列中行的相同值的顺序；依此类推。
+
+例如，考虑一个包含以下列的表：
+
+* 日期（维度）
+
+* 小时（维度）
+
+* 事件（量度）
+
+您可以为每个列分配排序优先级，如下所示：
+
+| 列（组件）名称 | 组件类型 | 排序优先级 |
+|---------|----------|---------|
+| 月中几号 | 维度 | 1 |
+| 小时 | 维度 | 2 |
+| 事件 | 量度 | 3 |
+
+通过为每个列指定排序优先级，您可以确切控制数据在表中的显示方式。 在本例中，信息首先按日期、小时，最后按事件排序。
+
+![多排序示例](assets/dimensions-multiple-sort.png)
