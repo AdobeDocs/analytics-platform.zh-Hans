@@ -3,10 +3,10 @@ title: 当前 Customer Journey Analytics 发行说明
 description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 3955f7c8da90481610328c0657b33e81ad6c0057
+source-git-commit: 94dffc915f624309bca4709ba9140b64b3e3aa41
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 46%
+source-wordcount: '986'
+ht-degree: 45%
 
 ---
 
@@ -20,10 +20,10 @@ ht-degree: 46%
 
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **在Customer Journey Analytics中分析Experience Platform配置文件数据集中的受众** | 您现在可以将Experience Platform配置文件数据集中的受众成员资格数据摄取到Customer Journey Analytics连接。 受众将可用作新维度，以便在Analysis Workspace中使用。<p>这可以通过Customer Journey Analytics中的新功能来摄取XDM对象映射，进而能够摄取用户档案AudienceID。</p><p>以前，只能将简单的XDM映射引入Customer Journey Analytics。</p><p>除了能够向Analysis Workspace中的任何项目添加受众数据作为维度外，还提供以下新的Workspace模板：</p><ul><li>Audience Analytics概述</li><li>同意策略概述</li></ul><p>有关详细信息，请参阅[受众分析概述](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/audience-analysis/audience-analysis-overview.html?lang=zh-Hans)。</p> | 2025 年 10 月 22 日 | 2026年1月27日 <p> （原计划于2026年1月22日）</p> |
+| **在Customer Journey Analytics中分析Experience Platform配置文件数据集中的受众** | 您现在可以将Experience Platform配置文件数据集中的受众成员资格数据摄取到Customer Journey Analytics连接。 受众将可用作新维度，以便在Analysis Workspace中使用。<p>这可以通过Customer Journey Analytics中的新功能来摄取XDM对象映射，进而能够摄取用户档案AudienceID。</p><p>以前，只能将简单的XDM映射引入Customer Journey Analytics。</p><p>除了能够向Analysis Workspace中的任何项目添加受众数据作为维度外，还提供以下新的Workspace模板：</p><ul><li>Audience Analytics概述</li><li>同意策略概述</li></ul><p>有关详细信息，请参阅[受众分析概述](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/audience-analysis/audience-analysis-overview.html)。</p> | 2025 年 10 月 22 日 | 2026年1月27日 <p> （原计划于2026年1月22日）</p> |
 | **数据故事讲述：从 Workspace 报告生成幻灯片演示文稿** | 您现在可以基于 Analysis Workspace 报告自动生成幻灯片演示文稿（采用 .pptx 格式）。Workspace 会检测报告中的关键洞察，并将其转化为适用于利益相关者的幻灯片。<p>该功能可减少呈现发现结果、构建管理层叙述以及传达业务影响所需的时间和精力。</p><p>有关更多信息，请参阅[数据故事讲述：从 Workspace 报告生成幻灯片演示文稿](/help/analysis-workspace/curate-share/generate-slides.md)。</p> | 2025 年 10 月 22 日 | 2026年1月28日 |
 | **在自由格式表中包含多个维度列** | 现在，您在自由格式表中最多可以包含5个维度列，从而允许您并排查看多个维度项目。 每一行维度项目的行为类似于单个连接的维度项目。<p>您可以将过滤器、排序、划分等应用于具有多个维度列的自由格式表，从而创建更深入、更自定义的分析。</p><p>以前，在自由格式表中只能包含1个维度列。</p><p>有关详细信息，请参阅[在自由格式表中包含多个维度列](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md)。</p> | 2026年1月28日 | 2026年2月18日 |
-| **按多个列对表进行排序** | 您现在可以在Analysis Workspace中按多个列对自由格式表的数据进行排序，无论它们是维度还是量度。<p>当您为多个列排序数据时，将根据您分配给每个列的优先级对数据排序。 优先级编号显示在排序图标旁边。</p><p>（文档链接见下文。）<!-- For more information, see "Filter and sort freeform tables". (need to move info to this article from "Include multiple dimension columns in a freeform table") --></p> | 2026年1月28日 | 2026年2月18日 |
+| **按多个列对表进行排序** | 您现在可以在Analysis Workspace中按多个列对自由格式表的数据进行排序，无论它们是维度还是量度。<p>当您为多个列排序数据时，将根据您分配给每个列的优先级对数据排序。 优先级编号显示在排序图标旁边。</p><p>有关详细信息，请参阅[筛选和排序自由格式表](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#sort-tables-by-multiple-columns-advanced-sorting)中的[按多个列对表进行排序](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)。</p> | 2026年1月28日 | 2026年2月18日 |
 | **合并来自多个IMS组织的数据源** | 您现在可以使用Analytics Source Connector合并来自多个IMS组织的多个数据源。 这允许组织拥有其客户数据的组合视图，即使该客户数据分布在多个IMS组织也是如此。 <p>**注意：**&#x200B;只有通过向Adobe客户关怀部门提交请求才能使用此配置。</p>  <p>（文档链接见下文。）</p> |  | 2026 年 1 月 30 日 |
 | **连接中的拼接** | Customer Journey Analytics中的拼合过程现在变得更加简单。 现在不再需要复制数据集后对复制的数据集进行拼接，而是在将数据摄取到 Customer Journey Analytics 中时进行拼接，这样就无需再复制数据集和架构。 <p>此外，您现在可以[通过更新的连接接口](/help/stitching/use-stitching-ui.md)开始自行拼接，而不必通过Adobe客户关怀部门请求拼接。</p><p> *由于需要做额外的工作和假日季节的关系，先前通知的发行日期被推迟。 目前正计划分阶段推出，以确保稳定性，并尽量减少假期的干扰。*</p> | 2025 年 10 月 28 日 | 2026 年 1 月 30 日 |
 | **支持 Data Mirror** | 通过对 Experience Platform 中的特定源连接器提供基于模型的架构以及变更数据捕获（CDC）功能的支持，Customer Journey Analytics 将能够支持 [!DNL Snowflake]、[!DNL Azure Databricks] 和 [!DNL Google BigQuery] 等数据仓库解决方案的 [Data Mirror](/help/data-mirror/data-mirror.md) 功能。<p>要访问 Beta 版本，请联系您的 Adobe 帐户团队。</p> | Beta 版：2025 年 9 月 24 日 | 待定 |
