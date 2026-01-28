@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
-source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
+source-git-commit: 99b434e62d859c96bfda53731f3f8a0750850501
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1191'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,12 @@ ht-degree: 0%
 >一个或多个数据集的（验证）拼合最终有助于更好地分析和见解。 但是，本文不讨论Customer Journey Analytics配置的整体价值，该配置将Experience Platform中的所有数据集与相同的身份命名空间对齐。 所有这些数据集完美地结合在一起，可在整个客户历程中执行分析。
 
 
+>[!BEGINSHADEBOX]
+
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[拼接启用和验证](https://video.tv.adobe.com/v/3478120?quality=12&learn=on){target="_blank"}。
+
+>[!ENDSHADEBOX]
+
 ## 数据视图先决条件
 
 对于拼接验证测量计划，您需要确保已在数据视图中定义拼接数据集中的所有必需维度和量度。 您需要验证是否已将`stitchedID.id`和`stitchedId.namespace.code`字段添加为维度。 虽然拼接的数据集是原始数据集的精确副本，但拼接过程会向数据集中添加以下两个新列：
@@ -38,7 +44,7 @@ ht-degree: 0%
 * 使用`stitchedID.namespace.code`定义&#x200B;**[!UICONTROL 拼接的命名空间]**&#x200B;维度。 此维度包含行被提升为的标识的命名空间，例如`Email`、`Phone`。 或拼接过程回退到的命名空间，如`ECID`。
   ![拼接的命名空间维度](assets/stitchednamespace-dimension.png)
 
-* 使用`stitchedID.id`定义&#x200B;**[!UICONTROL 拼接ID值]**&#x200B;维度。 此维度包含标识的原始值。 例如：经过哈希处理的电子邮件、经过哈希处理的手机、ECID。 此值与&#x200B;**[!UICONTROL 拼接的命名空间]**&#x200B;一起使用。
+* 使用`stitchedID.id`定义&#x200B;**[!UICONTROL 拼接ID值]**&#x200B;维度。 此维度包含标识的原始值。 例如：经过哈希处理的电子邮件、经过哈希处理的手机、ECID。 此值与&#x200B;**[!UICONTROL 拼接的命名空间]**一起使用。
   ![拼接ID维度](assets/stitchedid-dimension.png)
 
 
@@ -46,7 +52,7 @@ ht-degree: 0%
 
 1. 使用包含拼接数据集中的人员ID的字段配置指标，以定义是否设置了人员ID。 即使您使用基于图形的拼合，也可添加此人员ID，因为人员ID有助于建立基线。 如果人员ID未包含在数据集中，则您的基线为0%。
 
-   在下面的示例中，`personalEmail.address`用作标识，用于创建&#x200B;**[!UICONTROL _Email集]**&#x200B;量度。
+   在下面的示例中，`personalEmail.address`用作标识，用于创建&#x200B;**[!UICONTROL _Email集]**量度。
    ![电子邮件集指标](assets/emailset-metric.png)
 
 1. 使用`stitchedID.namespae.code`字段创建&#x200B;**[!UICONTROL 电子邮件拼接命名空间]**&#x200B;维度。 请确保指定[包括排除值组件设置](/help/data-views/component-settings/include-exclude-values.md)，以便只考虑尝试将数据行提升到的命名空间的值。
@@ -60,9 +66,9 @@ ht-degree: 0%
 
 将这两个维度都添加到数据视图后，在Analysis Workspace中使用[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)检查每个维度包含的数据。
 
-在&#x200B;**[!UICONTROL 拼接的命名空间维度**]表中，您通常看到每个数据集的两行。 一行，表示拼接过程何时必须使用回退方法(ECID)。 另一行显示与所需身份命名空间（电子邮件）关联的事件。
+在**[!UICONTROL 拼接的命名空间维度**]表中，您通常看到每个数据集的两行。 一行，表示拼接过程何时必须使用回退方法(ECID)。 另一行显示与所需身份命名空间（电子邮件）关联的事件。
 
-对于&#x200B;**[!UICONTROL 拼接ID维度**]表，您可以看到来自事件的原始值。 在此表中，您会看到值在永久性ID和所需人员ID之间振荡。
+对于**[!UICONTROL 拼接ID维度**]表，您可以看到来自事件的原始值。 在此表中，您会看到值在永久性ID和所需人员ID之间振荡。
 
 ![检查拼接的维度](assets/check-data-on-stitching.png)
 
@@ -87,13 +93,13 @@ ht-degree: 0%
 
 您想要测量拼合前后的标识识别性能。 为此，请另外创建三个计算指标：
 
-1. 一个&#x200B;**[!UICONTROL 拼接身份验证率]**&#x200B;计算量度，用于计算在事件总数中，拼接命名空间设置为所需身份的事件数。 在设置数据视图时，您创建了一个&#x200B;**[!UICONTROL 电子邮件拼接的命名空间]**&#x200B;量度，该量度包括一个只有在事件的命名空间设置为电子邮件时才计数的过滤器。 计算量度使用此&#x200B;**[!UICONTROL 电子邮件拼接的命名空间]**&#x200B;量度来指示具有所需标识的数据的百分比。
+1. 一个&#x200B;**[!UICONTROL 拼接身份验证率]**&#x200B;计算量度，用于计算在事件总数中，拼接命名空间设置为所需身份的事件数。 在设置数据视图时，您创建了一个&#x200B;**[!UICONTROL 电子邮件拼接的命名空间]**&#x200B;量度，该量度包括一个只有在事件的命名空间设置为电子邮件时才计数的过滤器。 计算量度使用此&#x200B;**[!UICONTROL 电子邮件拼接的命名空间]**量度来指示具有所需标识的数据的百分比。
    ![拼接身份验证率计算量度](assets/calcmetric-stitchedauthenticationrate.png)
 
-1. 一个&#x200B;**[!UICONTROL 百分比增加]**&#x200B;计算量度，用于计算当前标识率与拼接标识率之间的原始百分比变化。
+1. 一个&#x200B;**[!UICONTROL 百分比增加]**计算量度，用于计算当前标识率与拼接标识率之间的原始百分比变化。
    ![百分比增加计算量度](assets/calcmetric-percentincrease.png)
 
-1. 一个&#x200B;**[!UICONTROL 提升]**&#x200B;计算量度，用于计算当前标识率与拼接标识率之间的提升。
+1. 一个&#x200B;**[!UICONTROL 提升]**计算量度，用于计算当前标识率与拼接标识率之间的提升。
    ![提升计算量度](assets/calcmetric-lift.png)
 
 
