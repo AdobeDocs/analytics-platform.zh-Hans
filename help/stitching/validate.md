@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [拼接启用和验证](https://video.tv.adobe.com/v/3478120?quality=12&learn=on){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [拼接启用和验证](https://video.tv.adobe.com/v/3478130?captions=chi_hans&quality=12&learn=on){target="_blank"}。
 
 >[!ENDSHADEBOX]
 
