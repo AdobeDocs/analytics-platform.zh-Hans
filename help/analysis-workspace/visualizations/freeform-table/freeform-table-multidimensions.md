@@ -3,7 +3,7 @@ title: 在自由格式表中包含多个维度
 description: 了解如何在自由格式表中包含多个维度
 feature: Visualizations
 role: User
-source-git-commit: e51dced9ac7886ae8d087ca3b2fc6ac2755c3ac6
+source-git-commit: 696bd0db44949162307d8ce7d2debed351a76cd6
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 1%
@@ -116,3 +116,4 @@ Analysis Workspace提供了以下方式在自由格式表中添加多个维度�
 * 多个维度来自引用在同一自由格式表中一起使用的不同[对象数组](/help/use-cases/object-arrays.md)的字段。
 
   同一自由格式表中允许同时使用多个维度（如果它们引用相同的对象数组）。
+
