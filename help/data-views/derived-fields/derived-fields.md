@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 156a33c653307bce3bad3784bc49e9b7d2ff08a2
 workflow-type: tm+mt
 source-wordcount: '10187'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 89%
 
 派生字段是 Adobe Customer Journey Analytics 中实时报告功能的一个重要方面。通过派生字段和可自定义的规则生成器，即可迅速定义（一般较为复杂的）数据操作。然后，您可以将该派生字段用作[工作区](../../analysis-workspace/home.md)中的组件（量度或维度），甚至可以进一步将该派生字段定义为[数据视图](../data-views.md)中的组件。
 
-与在 Customer Journey Analytics 之外的其他位置转换或操作数据相比，派生字段可以节省大量时间和精力。例如[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)、[数据蒸馏器](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=zh-Hans)，或者在您自己的提取转换加载 (ETL) / 提取加载转换 (ELT) 流程中。
+与在 Customer Journey Analytics 之外的其他位置转换或操作数据相比，派生字段可以节省大量时间和精力。例如[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html)、[数据蒸馏器](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html)，或者在您自己的提取转换加载 (ETL) / 提取加载转换 (ELT) 流程中。
 
 派生字段是在[数据视图](../data-views.md)中定义的，它们基于一组定义为规则的函数，并会应用于可用的标准和/或架构字段。
 
 >[!NOTE]
 >
->[标准组件](../component-reference.md)绑定到事件数据集并与之关联。 因此，用作派生字段一部分的标准组件仅适用于事件数据集中的数据。
+>[标准组件](../component-reference.md)与事件数据集绑定并与之相关联。因此，用作派生字段一部分的标准组件只能处理来自事件数据集的数据。
 >
 
 
@@ -38,7 +38,7 @@ ht-degree: 89%
 
 - 定义一个派生的“营销渠道”字段，该字段可根据一个或多个条件（例如 URL 参数、页面 URL、页面名称）确定适当的营销渠道。
 
-只有派生字段中的事件数据集支持标准组件。
+在派生字段中，标准组件只支持在事件数据集上使用。
 
 ## 派生字段界面 {#interface}
 
@@ -77,7 +77,7 @@ ht-degree: 89%
 | A | **规则名称** | 默认规则名称为&#x200B;**规则 X**（X 指序列号）。要编辑规则的名称，请选择其名称并输入新名称，例如 `Query Parameter`。 |
 | B | **函数名称** | 为规则选择的函数名称，例如 [!UICONTROL URL PARSE]。当该函数是函数序列中的最后一个，并决定最终输出值时，函数名称后将加上 [!UICONTROL - FINAL OUTPUT]，例如 [!UICONTROL URL PARSE - FINAL OUTPUT]。<br/>要显示包含有关该函数的详细信息的弹出窗口，请选择 ![帮助图标](assets/Smock_HelpOutline_18_N.svg)。 |
 | C | **规则和描述** | 您可以选择为规则添加描述。<br/>选择 ![更多图标](assets/More.svg)，然后选择&#x200B;**[!UICONTROL **&#x200B;添加说明&#x200B;**]**&#x200B;来添加说明，或选择&#x200B;**[!UICONTROL **&#x200B;编辑说明&#x200B;**]**&#x200B;来编辑现有说明。<br/>使用编辑器来输入描述。您可以使用工具栏来设置文本格式（使用样式选择器、粗体、斜体、下划线、右对齐、左对齐、居中、颜色、编号列表、项目符号列表）并添加外部信息链接。<br/>要完成编辑描述，请单击编辑器外部。 |
-| D | **函数区** | 定义函数的逻辑。其界面取决于函数的类型。[!UICONTROL 字段]或[!UICONTROL 值]的下拉菜单根据函数所需的输入类型显示所有类别的可用字段（规则、标准字段、字段）。 或者，您可以将字段从“架构和标准”字段选择器拖放到“字段”或“值”上。当拖动的字段是来自查找数据集的字段时，查找函数会自动插入到您定义的函数之前。<br/>请参阅[函数引用](#function-reference)，了解关于所支持的每个函数的详细信息。 |
+| D | **函数区** | 定义函数的逻辑。其界面取决于函数的类型。[!UICONTROL 字段]或者[!UICONTROL 值]的下拉菜单会根据该函数所期望的输入类型显示所有可用的字段类别（规则、标准字段、字段）。或者，您可以将字段从“架构和标准”字段选择器拖放到“字段”或“值”上。当拖动的字段是来自查找数据集的字段时，查找函数会自动插入到您定义的函数之前。<br/>请参阅[函数引用](#function-reference)，了解关于所支持的每个函数的详细信息。 |
 
 {style="table-layout:auto"}
 
@@ -398,7 +398,7 @@ ht-degree: 89%
 
 ### 州纬度 {#state-latitude}
 
-此函数模板获取美国某个州的纬度，精度为5位数。
+此函数模板用于获取美国某个州的纬度，精度为 5 位数。
 
 +++ 详细信息
 
@@ -406,14 +406,14 @@ ht-degree: 89%
 
 要使用该模板，您必须为模板中规则内列出的每个函数指定正确的参数。有关详细信息，请参阅[函数参考](#function-reference)。
 
-![状态Latitude规则生成器的屏幕截图](assets/function-template-state-latitude.png)
+![州纬度规则生成器的屏幕快照](assets/function-template-state-latitude.png)
 
 +++
 
 
 ### 州经度 {#state-longitude}
 
-此函数模板获取US状态的经度，精度为5位。
+此函数模板用于获取美国某个州的经度，精度为 5 位数。
 
 +++ 详细信息
 
@@ -421,7 +421,7 @@ ht-degree: 89%
 
 要使用该模板，您必须为模板中规则内列出的每个函数指定正确的参数。有关详细信息，请参阅[函数参考](#function-reference)。
 
-![状态经度规则生成器的屏幕截图](assets/function-template-state-longitude.png)
+![州经度规则生成器的屏幕快照](assets/function-template-state-longitude.png)
 
 +++
 
@@ -464,7 +464,7 @@ ht-degree: 89%
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_casewhen"
 >title="Case When"
->abstract="此函数提供了根据一个或多个字段中定义的标准应用条件的能力。然后，使用这些标准根据条件的顺序定义新派生字段中的值。"
+>abstract="此函数提供了根据一个或多个字段中定义的标准应用条件的能力。然后使用这些标准根据条件序列来定义新派生字段中的值。"
 
 
 根据一个或多个字段中定义的标准应用条件。然后使用这些标准根据条件序列来定义新派生字段中的值。
@@ -673,7 +673,7 @@ ht-degree: 89%
 
 ## 更多信息 {#casewhen-more-info}
 
-Customer Journey Analytics 使用嵌套的容器结构，该结构仿照的是 Adobe Experience Platform 的 [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans)（体验数据模型）。有关更多背景信息，请参阅[容器](../create-dataview.md#containers)和[区段容器](/help/components/segments/seg-overview.md#containers)。 这种容器模型虽然本质上很灵活，但在使用规则生成器时会施加一些约束。
+Customer Journey Analytics 使用嵌套的容器结构，该结构仿照的是 Adobe Experience Platform 的 [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)（体验数据模型）。如要了解更多背景信息，请参阅[容器](../create-dataview.md#containers)和[区段容器](/help/components/segments/seg-overview.md#containers)。这种容器模型虽然本质上很灵活，但在使用规则生成器时会施加一些约束。
 
 Customer Journey Analytics 使用以下默认容器模型：
 
@@ -941,51 +941,50 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>日期</li><li>日期时间</li></ul> | <ul><li>[!UICONTROL 范围]<ul><li>事件</li><li>会话</li><li>人员</li></ul></li><li>[!UICONTROL 值]：<ul><li>日期</li><li>日期时间</li><li>静态日期（用户输入）</li><li>静态日期时间（用户输入）</li><li>动态日期<ul><li>今天</li></ul></li><li>动态日期时间<ul><li>现在</li></ul></li></ul></li><li>[!UICONTROL 粒度]：<ul><li>Seconds</li><li>Minutes</li><li>小时</li><li>Days</li><li>Weeks</li><li>Months</li><li>季度</li><li>年</li></ul></li><li>对于每个日期或日期时间返回：<ul><li>第一次（会话或人员内）</li><li>上次（会话或人员内）</li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段有 2 个函数</p> | <p>新的派生字段</p> |
+| <ul><li>日期</li><li>日期时间</li></ul> | <ul><li>[!UICONTROL 范围]<ul><li>事件</li><li>会话</li><li>人员</li></ul></li><li>[!UICONTROL 值]：<ul><li>日期</li><li>日期时间</li><li>静态日期（用户输入）</li><li>静态日期时间（用户输入）</li><li>动态日期<ul><li>今天</li></ul></li><li>动态日期时间<ul><li>现在</li></ul></li></ul></li><li>[!UICONTROL 粒度]：<ul><li>Seconds</li><li>Minutes</li><li>小时</li><li>Days</li><li>Weeks</li><li>Months</li><li>季度</li><li>年</li></ul></li><li>为每个日期或日期时间返回：<ul><li>第一次（会话或人员内）</li><li>上次（会话或人员内）</li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段有 2 个函数</p> | <p>新的派生字段</p> |
 
 {style="table-layout:auto"}
 
 
 ## 用例 1 {#datemath-uc1}
 
-作为一家酒店公司的营销分析师，您想要了解上周客户签到日期和预订日期之间的天数差异。
+作为一家酒店公司的营销分析师，您想要了解上周客户入住日期与预订日期之间天数的差异。
 
 
 ### 派生字段 {#datemath-uc1-derivedfield}
 
-您定义一个 `Days between booking and check-in` 派生字段。您使用[!UICONTROL DATE MATH]函数定义规则以计算[!UICONTROL 范围] [!DNL Person]在[!UICONTROL 预订日期]和[!UICONTROL 登记日期]之间的天数。 您选择[!UICONTROL 天]作为[!UICONTROL 输出粒度]。 并且您选择[!UICONTROL 返回]预订日期[!UICONTROL 和]登记日期[!UICONTROL 的最后一个]以确保在计算中使用最后一个人员范围值。
+您定义一个 `Days between booking and check-in` 派生字段。您使用[!UICONTROL 日期运算]函数定义一个规则，用于计算[!UICONTROL 预订日期]与[!UICONTROL 入住日期]之间[!UICONTROL 范围] [!DNL Person]的天数。您选择[!UICONTROL 天]作为[!UICONTROL 输出粒度]。然后您为[!UICONTROL 预订日期]和[!UICONTROL 入住日期]都选择[!UICONTROL 返回最后一个]，以确保在计算中使用范围中最后一个人的值。
 
-![日期数学规则的屏幕截图](assets/datemath-1.png)
+![日期运算规则的屏幕快照](assets/datemath-1.png)
 
 
 ## 用例 2 {#datemath-uc2}
 
-作为一家实体店的营销分析师，您想要了解客户距商店上次访问是多少天前。 您可以使用移动设备应用程序中的地理位置功能以及商店中的信标来捕获客户的实际访问。
+作为一家实体店的营销分析师，您想了解一位顾客最后一次光顾商店是在几天前。您使用一个移动应用程序中的地理位置功能以及商店中的信标来捕获顾客光顾实体店。
 
 ### 派生字段 {#datemath-uc2-derivedfield}
 
-您可以定义一个新的 `Days Since Visit To Shop` 派生字段。您使用[!UICONTROL DATE MATH]函数定义规则以计算自定义日期时间（您在[!UICONTROL Date]中指定）和[!UICONTROL 本地时间]（来自事件数据集的[!UICONTROL placeContext]字段组）之间的天数，该自定义日期时间具有[!UICONTROL 重复数据删除范围]/[!UICONTROL 人员]。 选择[!UICONTROL 返回最后]以确保在计算中使用[!UICONTROL 本地时间]的最后一个人员范围值。 选择“日”作为[!UICONTROL 输出粒度]。
+您可以定义一个新的 `Days Since Visit To Shop` 派生字段。您使用[!UICONTROL 日期运算]函数定义一个规则，用于计算（您在[!UICONTROL 日期]中指定的）自定义日期时间和[!UICONTROL 本地时间]（来自事件数据集的 [!UICONTROL placeContext] 字段组）之间的天数，其中[!UICONTROL 重复数据删除范围]为[!UICONTROL 人员]。您选择[!UICONTROL 返回最后一个]，以确保在计算中使用[!UICONTROL 本地时间]范围中最后一个人的值。您选择“天”作为[!UICONTROL 输出粒度]。
 
-![日期数学规则2](assets/datemath-2.png)的屏幕截图
+![日期运算规则 2 的屏幕快照](assets/datemath-2.png)
 
-或者，您可以使用方便的动态日期范围值“现在”在现在和[!UICONTROL 本地时间]（从事件数据集的[!UICONTROL placeContext]字段组）之间计算
+或者，您可以使用方便的动态日期范围值“现在”，计算现在与[!UICONTROL 本地时间]（来自事件数据集的 [!UICONTROL placeContext] 字段组）之间的差异
 
-![日期数学规则2a](assets/datemath-2a.png)的屏幕截图
+![日期运算规则 2a 的屏幕快照](assets/datemath-2a.png)
 
 
 ## 用例 3 {#datemath-uc3}
 
-您希望了解会话中客户下订单之前的搜索时间（以分钟为单位）。
+您希望了解客户在一个会话中下单之前的搜索时间（以分钟为单位）。
 
-您定义了一个新的`Time Between Search And Order In Minutes`派生字段，该字段是两个[[!UICONTROL CASE WHEN]函数](#case-when)的结果，用于定义[!UICONTROL 搜索时间]和[!UICONTROL 订单时间]值。
-然后使用这两个值计算差值，其中[!UICONTROL DATE MATH]函数的[!UICONTROL 作用域]设置为[!UICONTROL 会话]，值设置为[!UICONTROL 搜索时间]和[!UICONTROL 订单时间]，而[!UICONTROL 输出粒度]设置为[!UICONTROL 分钟]。 对于这两个值，请选择[!UICONTROL 返回第一个]以确保返回第一个[!UICONTROL 搜索时间]和[!UICONTROL 订单时间]。
+您定义一个新的 `Time Between Search And Order In Minutes` 派生字段，这是两个 [[!UICONTROL CASE WHEN] 函数](#case-when)的结果，用于定义[!UICONTROL 搜索时间]和[!UICONTROL 下单时间]的值。然后您用这两个值计算差值，其中[!UICONTROL 日期运算]函数的[!UICONTROL 范围]设置为[!UICONTROL 会话]，值设置为[!UICONTROL 搜索时间]和[!UICONTROL 下单时间]，[!UICONTROL 输出粒度]设置为[!UICONTROL 分钟]。您为这两个值都选择[!UICONTROL 返回第一个]，以确保返回第一个[!UICONTROL 搜索时间]和[!UICONTROL 下单时间]。
 
-![日期数学规则3](assets/datemath-3.png)的屏幕截图
+![日期运算规则 3 的屏幕快照](assets/datemath-3.png)
 
 
 ## 更多信息 {#datemath-more-info}
 
-当您选择基于人员的（从用户档案数据集）字段时，[!UICONTROL 返回第一个]或[!UICONTROL 返回最后一个]的选项不可用。 基于人员的字段对于人员的“日期”或“日期时间”字段只能有一个值。
+如果您（从轮廓数据集）选择一个基于人员的字段，[!UICONTROL 返回第一个]或[!UICONTROL 返回最后一个]的选项就不可用。一个人的基于人员的字段的“日期”或“日期时间”字段只能有一个值。
 +++
 
 <!-- DEDUPLICATE -->
@@ -1028,7 +1027,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 ### 派生字段 {#deduplicate-uc1-derivedfield}
 
-您定义一个 `Booking Confirmation` 派生字段。您可以使用 [!UICONTROL DEDUPLICATE] 函数定义一条规则，以使用[!UICONTROL 重复数据删除 ID] [!UICONTROL 预订确认 ID &#x200B;]对[!UICONTROL 范围] [!DNL Person] 的[!UICONTROL 值] [!DNL Booking] 进行重复数据删除。您可以选择[!UICONTROL 保留第一个实例]作为[!UICONTROL 要保留的值]。
+您定义一个 `Booking Confirmation` 派生字段。您可以使用 [!UICONTROL DEDUPLICATE] 函数定义一条规则，以使用[!UICONTROL 重复数据删除 ID] [!UICONTROL 预订确认 ID ]对[!UICONTROL 范围] [!DNL Person] 的[!UICONTROL 值] [!DNL Booking] 进行重复数据删除。您可以选择[!UICONTROL 保留第一个实例]作为[!UICONTROL 要保留的值]。
 
 ![连接规则的屏幕快照](assets/deduplicate-1.png)
 
@@ -1088,7 +1087,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 >title="深度"
 >abstract="此函数可用于返回任意字段的深度，其功能类似于事件深度标准组件。"
 
-返回字段的深度，类似于现成可用的标准事件深度维度[&#128279;](/help/components/dimensions/overview.md#standard-dimensions)。
+返回一个字段的深度，类似于现成可用的[标准事件深度维度](/help/components/dimensions/overview.md#standard-dimensions)的功能。
 
 +++ 详细信息
 
@@ -1096,25 +1095,25 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| 任何 | 任意字段 | 不适用 | 每个派生字段有 3 个函数 | 新的派生字段 |
+| 任何 | 任何字段 | 不适用 | 每个派生字段有 3 个函数 | 新的派生字段 |
 
 {style="table-layout:auto"}
 
 
 ## 用例 {#depth-uc1}
 
-您希望了解内部搜索深度（您也可以将其解释为搜索次数）。 因此，您可以稍后使用该内部搜索深度来细分与特定搜索深度关联的搜索词。
+您希望了解内部搜索深度（您也可以将其理解为搜索次数）。因此，您可以稍后使用这个内部搜索深度来对与某个特定搜索深度相关联的搜索词进行划分。
 
 
 ### 派生字段 {#depth-uc1-derivedfield}
 
-您可以定义一个新的 `Internal Search Depth` 派生字段。您使用[!UICONTROL DEPTH]函数定义规则以检索[!UICONTROL 内部搜索项]的深度并将其存储在新的派生字段中。
+您可以定义一个新的 `Internal Search Depth` 派生字段。您使用 [!UICONTROL DEPTH] 函数定义一个规则，用于检索[!UICONTROL 内部搜索词]的深度，并将其存储在一个新的派生字段中。
 
-深度规则![屏幕截图](assets/depth-1.png)
+![深度规则的屏幕快照](assets/depth-1.png)
 
-然后，在可视化图表中使用新派生的字段，以细分在第一次搜索时用于搜索的词条。
+然后在可视化图表中使用这个新的派生字段，以细分在第一次搜索时使用的搜索词。
 
-深度规则![屏幕截图](assets/depth-1a.png)
+![深度规则的屏幕快照](assets/depth-1a.png)
 
 +++
 
@@ -1201,11 +1200,11 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 <!-- LOOKUP -->
 
-### 查询 {#lookup}
+### 查找 {#lookup}
 
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_lookup"
->title="查询"
+>title="查找"
 >abstract="此函数提供了利用数据集之间的匹配键来使用查找数据集中的字段的能力。"
 
 
@@ -1217,7 +1216,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 应用查找的字段]：</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul><li>[!UICONTROL 查询数据集]</li><ul><li>数据集</li></ul><li>[!UICONTROL 匹配键]<ul><li>规则</li><li>字段</li></ul></li><li>要返回的值<ul><li>规则</li><li>字段</li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段有 3 个函数</p> | <p>新的派生字段或值，以便在下一个规则中进一步处理</p> |
+| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL 应用查找的字段]：</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul><li>[!UICONTROL 查找数据集]</li><ul><li>数据集</li></ul><li>[!UICONTROL 匹配键]<ul><li>规则</li><li>字段</li></ul></li><li>要返回的值<ul><li>规则</li><li>字段</li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段有 3 个函数</p> | <p>新的派生字段或值，以便在下一个规则中进一步处理</p> |
 
 {style="table-layout:auto"}
 
@@ -1250,7 +1249,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 1. 从选择器中选择&#x200B;**[!UICONTROL 架构字段]**。
 1. 选择 ![架构字段图标](assets/Smock_Folder_18_N.svg) **[!UICONTROL 查找数据集]**。
 1. 选择您的查找数据集，并找到您想要用于查找的字段。
-1. 将查找字段拖放到函数的任何可用输入字段上（例如 Case When）。当该功能有效时，一个标有 **[!UICONTROL + 添加]**&#x200B;的蓝色框会允许您拖放字段，并自动在您放置查找字段的函数之前插入一个查找函数。所插入的查找函数会自动填充所有字段的相关值。
+1. 将查找字段拖放到函数的任何可用输入字段上（例如 Case When）。当该功能有效时，一个标有 **[!UICONTROL + 添加]**的蓝色框会允许您拖放字段，并自动在您放置查找字段的函数之前插入一个查找函数。所插入的查找函数会自动填充所有字段的相关值。
    ![查找拖动](assets/lookup-drag.png)
 
 +++
@@ -1580,10 +1579,10 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 | 页面 URL |
 |---|
-| `https://business.adobe.com/cn/products/analytics/adobe-analytics-benefits.html` |
-| `https://business.adobe.com/cn/products/analytics/adobe-analytics.html` |
-| `https://business.adobe.com/cn/products/experience-platform/customer-journey-analytics.html` |
-| `https://business.adobe.com/cn/products/experience-platform/adobe-experience-platform.html` |
+| `https://business.adobe.com/products/analytics/adobe-analytics-benefits.html` |
+| `https://business.adobe.com/products/analytics/adobe-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` |
 
 {style="table-layout:auto"}
 
@@ -1671,7 +1670,7 @@ Customer Journey Analytics 使用 Perl 正则表达式语法的子集。支持�
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>字符串</li><li>数值</li></ul> | <ul><li>[!UICONTROL 字段]：</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul></ul><ul><li>[!UICONTROL 方法]：</li><ul><li>从左侧</li><li>从右侧</li><li>转换为数组</li></ul></li><li>对于分隔符：<ul><li>字符串</li></ul><li>对于索引：<ul><li>数值</li></ul></li> | <p>不适用</p> | <p>每个派生字段有 2 个函数</p> <p>返回最多10个值</p> | <p>新的派生字段</p> |
+| <ul><li>字符串</li><li>数值</li></ul> | <ul><li>[!UICONTROL 字段]：</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul></ul><ul><li>[!UICONTROL 方法]：</li><ul><li>从左侧</li><li>从右侧</li><li>转换为数组</li></ul></li><li>对于分隔符：<ul><li>字符串</li></ul><li>对于索引：<ul><li>数值</li></ul></li> | <p>不适用</p> | <p>每个派生字段有 2 个函数</p> <p>返回最多 10 个值</p> | <p>新的派生字段</p> |
 
 {style="table-layout:auto"}
 
@@ -1954,7 +1953,7 @@ Customer Journey Analytics 使用 Perl 正则表达式语法的子集。支持�
 >title="类型转换"
 >abstract="此函数可实现字段类型的即时转换，使该字段能够在 Customer Journey Analytics 中进行进一步转换。"
 
-更改字段的字段类型，使其可用于Customer Journey Analytics中的其他转换。
+更改字段的字段类型，使其可用于 Customer Journey Analytics 中的其他转换。
 
 +++ 详细信息
 
@@ -1962,34 +1961,34 @@ Customer Journey Analytics 使用 Perl 正则表达式语法的子集。支持�
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>数值</li><li>日期</li><li>日期时间</li><li>字符串</li></ul> | <ul><li>[!UICONTROL 字段] | <p><ul><li>整数<ul><li>目标字符串</li></ul></li><li>双精度型<ul><li>目标字符串<ul><li>包含要继承的小数位数（最多5位？）</li></ul></li><li>到整数</li></ul></li><li>字节<ul><li>目标字符串</li></ul></li><li>长型<ul><li>目标字符串</li></ul></li><li>日期<ul><li>目标字符串<ul><li>提供定义输出格式的功能</li></ul></li><li>示例<ul><li>日期（例如2025年1月7日）<ul><li data-stringify-indent="1" data-stringify-border="0">MM-DD-YY<ul><li data-stringify-indent="2" data-stringify-border="0">例如 01-07-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM-DD-YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">例如 01-07-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-YY<ul><li data-stringify-indent="2" data-stringify-border="0">例如 07-01-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">例如 07-01-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例如 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">例如 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/YY<ul><li data-stringify-indent="2" data-stringify-border="0">例如 01/07/25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例如 01/07/2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例如 2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">例如 25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MMM DD, YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">例如 2025年1月7日</li></ul></li></ul></li></ul></li></ul></li><li>日期时间<ul><li>目标字符串<ul><li>提供定义输出格式的功能</li></ul></li><li>示例<ul><li data-stringify-indent="0" data-stringify-border="0">日期时间（例如2025年1月7日，1:30pm，52秒）<ul><li data-stringify-indent="2" data-stringify-border="0">月/日/年时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">例如 01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY年MM月DD日hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例如 01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">例如 07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">日-月-年时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">例如 07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">年/月/日时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">例如 25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">年-月-日时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">例如 2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">月/日/年时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">例如 01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">月-日-年时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">例如 01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">年-月-日时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">例如 2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY/MM/DD hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">例如 25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY 年 MM 月 DD 日时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">例如 2025年1月7日13:30:52</li></ul></li></ul></li></ul></li><li>字符串<ul><li>到数字<ul><li>如果我们具有的值本质上不是数字，则它们将返回空值。</li><li>我们需要用户输入精度和要使用的区域设置。 </li></ul></li></ul></li></ul></li></ul></p> | <p>每个派生字段有 3 个函数</p> | <p>新的派生字段</p> |
+| <ul><li>数值</li><li>日期</li><li>日期时间</li><li>字符串</li></ul> | <ul><li>[!UICONTROL 字段] | <p><ul><li>整数<ul><li>转换为字符串</li></ul></li><li>双精度型<ul><li>转换为字符串<ul><li>包含要继承的小数位数（最多 5 位？）</li></ul></li><li>转换为整数</li></ul></li><li>字节<ul><li>转换为字符串</li></ul></li><li>长型<ul><li>转换为字符串</li></ul></li><li>日期<ul><li>转换为字符串<ul><li>提供定义输出格式的功能</li></ul></li><li>示例<ul><li>日期（例如 2025 年 1 月 7 日）<ul><li data-stringify-indent="1" data-stringify-border="0">MM-DD-YY<ul><li data-stringify-indent="2" data-stringify-border="0">示例01-07-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM-DD-YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">示例01-07-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-YY<ul><li data-stringify-indent="2" data-stringify-border="0">示例07-01-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">示例07-01-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">示例25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">示例2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/YY<ul><li data-stringify-indent="2" data-stringify-border="0">示例01/07/25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">示例01/07/2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">示例2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">示例25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MMM DD, YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">示例2025 年 1 月 7 日</li></ul></li></ul></li></ul></li></ul></li><li>日期时间<ul><li>转换为字符串<ul><li>提供定义输出格式的功能</li></ul></li><li>示例<ul><li data-stringify-indent="0" data-stringify-border="0">日期时间（例如 2025 年 1 月 7 日，时间 1:30pm，52 秒）<ul><li data-stringify-indent="2" data-stringify-border="0">月/日/年时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">示例01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM-DD-YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">示例01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">示例07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">日-月-年时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">示例07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">年/月/日时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">示例25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">年-月-日时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">示例2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">月/日/年时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">示例01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">月-日-年时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">示例01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">年-月-日时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">示例2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY/MM/DD hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">示例25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY 年 MM 月 DD 日时分秒<ul><li data-stringify-indent="3" data-stringify-border="0">示例2025 年 1 月 7 日 13:30:52</li></ul></li></ul></li></ul></li><li>字符串<ul><li>转换为数值<ul><li>如果我们的值其实不是数值，它们就会返回 null 值。</li><li>我们需要用户输入精度以及要使用的区域设置。 </li></ul></li></ul></li></ul></li></ul></p> | <p>每个派生字段有 3 个函数</p> | <p>新的派生字段</p> |
 
 {style="table-layout:auto"}
 
 
 ## 用例 1 {#typecast-uc1}
 
-您有一个整数字段，即屏幕高度（例如，事件数据集中的device.screenHeight），您要将其用作基于字符串的维度。
+您有一个整数字段，即屏幕高度（例如，事件数据集中的 device.screenHeight），您要将其用作一个基于字符串的维度。
 
 
 ### 派生字段 {#typecast-uc1-derivedfield}
 
-您定义一个 `Screen Height` 派生字段。您使用[!UICONTROL TYPECAST]函数将规则定义为[!UICONTROL Typecast to] [!UICONTROL String] [!UICONTROL 屏幕高度]字段，并将其存储在新的派生字段中。
+您定义一个 `Screen Height` 派生字段。您使用 [!UICONTROL TYPECAST] 函数定义一个规则，用于将[!UICONTROL 类型转换为] [!UICONTROL 字符串][!UICONTROL 屏幕高度]字段，并将其存储在新的派生字段中。
 
-![Typecast规则1](assets/typecast-1.png)的屏幕截图
+![类型转换规则 1 的屏幕快照](assets/typecast-1.png)
 
 
 
 ## 用例 2 {#typecast-uc2}
 
-您想在同类群组表（仅支持整数）中使用收入，但收入字段具有双精度类型。
+您想在一个（仅支持整数的）同类群组表中使用“收入”，但“收入”字段是双精度浮点数类型。
 
-![Typecast规则2](assets/typecast-2.png)的屏幕快照
+![类型转换规则 2 的屏幕快照](assets/typecast-2.png)
 
 
 ### 派生字段 {#typecast-uc2-derivedfield}
 
-您定义一个 `Revenue (integer)` 派生字段。您使用[!UICONTROL TYPECAST]函数将规则定义为[!UICONTROL Typecast to] [!UICONTROL Integer] [!UICONTROL Revenue]字段，并将其存储在新的派生字段中。
+您定义一个 `Revenue (integer)` 派生字段。您使用 [!UICONTROL TYPECAST] 函数定义一个规则，用于将[!UICONTROL 类型转换为] [!UICONTROL 整数][!UICONTROL 屏幕高度]字段，并将其存储在新的派生字段中。
 
 
 +++
@@ -2089,7 +2088,7 @@ Customer Journey Analytics 使用 Perl 正则表达式语法的子集。支持�
 
 - 定义派生字段的规则时，最多可以使用十个不同的架构字段（不包括标准字段）。
    - 在最多十个不同的架构字段中，最多只允许使用三个查找架构或轮廓架构字段。
-- 每个Customer Journey Analytics连接可以有最大数量的派生字段，具体取决于您许可的包。 有关详细信息，请参阅[产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/customer-journey-analytics.html){target="_blank"}。
+- 您可以为每个 Customer Journey Analytics 连接有一个派生字段的最大数量，具体取决于您购买了许可证的包。更多信息请参阅[产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/customer-journey-analytics.html){target="_blank"}。
 
 
 ### 功能限制摘要
@@ -2098,10 +2097,10 @@ Customer Journey Analytics 使用 Perl 正则表达式语法的子集。支持�
 |---|---|
 | <p>Case When</p> | <ul><li>每个派生字段 5 个 Case When 函数</li><li>每个派生字段 200 个[运算符](#operators)</li></ul> |
 | <p>分类</p> | <ul><li>每个派生字段 5 个分类函数</li><li>每个派生字段 200 个[运算符](#operators)</li></ul> |
-| <p>拼接</p> | <ul><li>每个派生字段 2 个连接函数</li><li>每个连接函数有3个值</ul> |
-| <p>日期运算</p> | <ul><li>每个派生字段有2个日期数学函数</li></ul> |
+| <p>拼接</p> | <ul><li>每个派生字段 2 个连接函数</li><li>每个连接函数有 3 个值</ul> |
+| <p>日期运算</p> | <ul><li>每个派生字段有 2 个日期运算函数</li></ul> |
 | <p>删除重复数据</p> | <ul><li>每个派生字段 5 个重复数据删除函数</li></ul> |
-| <p>深度</p> | <ul><li>每个派生字段有3个深度函数</li></ul> |
+| <p>深度</p> | <ul><li>每个派生字段有 3 个深度函数</li></ul> |
 | <p>查找和替换</p> | <ul><li>每个派生字段 2 个查找和替换函数</li></ul> |
 | <p>查找</p> | <ul><li>每个派生字段 5 个查找函数</li></ul> |
 | <p>小写字母</p> | <ul><li>每个派生字段 2 个小写函数</li></ul> |
@@ -2109,10 +2108,10 @@ Customer Journey Analytics 使用 Perl 正则表达式语法的子集。支持�
 | <p>合并字段</p> | <ul><li>每个派生字段 2 个合并字段函数</li></ul> |
 | <p>下一个或上一个</p> | <ul><li>每个派生字段 3 个下一个或上一个函数</li></ul> |
 | <p>正则表达式替换</p> | <ul><li>每个派生字段 1 个正则表达式替换函数</li></ul> |
-| <p>拆分</p> | <ul><li>每个派生字段 2 个拆分函数</li><li>最多返回10个值</ul> |
+| <p>拆分</p> | <ul><li>每个派生字段 2 个拆分函数</li><li>最多返回 10 个值</ul> |
 | <p>总结</p> | <ul><li>每个派生字段 3 个汇总函数</li></ul> |
 | <p>修剪</p> | <ul><li>每个派生字段有 1 个修剪函数</li></ul> |
-| <p>类型转换</p> | <ul><li>每个派生字段有3个类型转换函数</li></ul> |
+| <p>类型转换</p> | <ul><li>每个派生字段 3 个类型转换函数</li></ul> |
 | <p>URL 解析</p> | <ul><li>每个派生字段 5 个 URL 解析函数</li></ul> |
 
 {style="table-layout:auto"}
@@ -2140,7 +2139,7 @@ Case When 函数中的 If 或 Else If 结构中的运算符是条件与&#x200B;*
 
 >[!MORELIKETHIS]
 >
->- [博客：充分利用您的数据：在 Customer Journey Analytics 中使用派生字段的框架](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670?profile.language=zh-Hans)
->- [博客：Customer Journey Analytics 的派生字段用例](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679?profile.language=zh-Hans)
->- [博客：Adobe Customer Journey Analytics 派生字段增强功能](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808?profile.language=zh-Hans)
+>- [博客：充分利用您的数据：在 Customer Journey Analytics 中使用派生字段的框架](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
+>- [博客：Customer Journey Analytics 的派生字段用例](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
+>- [博客：Adobe Customer Journey Analytics 派生字段增强功能](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808)
 

@@ -8,7 +8,7 @@ role: User, Admin
 source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '2030'
-ht-degree: 19%
+ht-degree: 20%
 
 ---
 
@@ -106,11 +106,11 @@ ht-degree: 19%
 
    1. 打开[Microsoft Azure存储资源管理器](https://azure.microsoft.com/en-us/products/storage/storage-explorer/)。
 
-   1. 转到&#x200B;[!UICONTROL **存储帐户**] > [!UICONTROL **（附加的容器）**] > [!UICONTROL **Blob容器**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name &#x200B;***。
+   1. 转到&#x200B;[!UICONTROL **存储帐户**] > [!UICONTROL **（附加的容器）**] > [!UICONTROL **Blob容器**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name ***。
 
       >[!NOTE]
       >
-      >文件夹名称&#x200B;**[!UICONTROL cjaexport-_number_]**&#x200B;是Azure存储资源管理器提供的默认名称。 如果您只有与SAS URI关联的单个连接（正常），则此文件夹的名称将为&#x200B;**[!UICONTROL cjaexport-1]**。
+      >文件夹名称&#x200B;**[!UICONTROL cjaexport-_number_]**是Azure存储资源管理器提供的默认名称。 如果您只有与SAS URI关联的单个连接（正常），则此文件夹的名称将为&#x200B;**[!UICONTROL cjaexport-1]**。
 
 
       ![访问Azure存储资源管理器](assets/azure-storage-explorer-access.png)中的文件
@@ -196,7 +196,7 @@ ht-degree: 19%
    |---------|----------|
    | [!UICONTROL **容器**] | 您指定的帐户中要将Customer Journey Analytics数据发送到的容器。 确保授予将文件上传到您之前创建的 Azure 应用程序的权限。 |
    | [!UICONTROL **前缀**] | 容器中要用于放置数据的文件夹。指定文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，`folder_name/`<p>确保您在配置 Azure RBAC 帐户时指定的应用程序 ID 已被授予 `Storage Blob Data Contributor` 角色，以便访问容器（文件夹）。</p> <p>有关更多信息，请参阅 [Azure 内置角色](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles)。</p> |
-   | [!UICONTROL **帐户**] | Azure存储帐户。 |
+   | [!UICONTROL **帐户**] | Azure 存储帐户。 |
 
    {style="table-layout:auto"}
 
