@@ -6,10 +6,10 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 badgePremium: label="Beta 版" type="Informative"
-source-git-commit: 3479227eb703583255d40de3d07d071ad2f89950
+source-git-commit: 32997d0fd9801099a75287f63197d3b4c2ba81ef
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 3%
+source-wordcount: '938'
+ht-degree: 2%
 
 ---
 
@@ -136,7 +136,13 @@ ht-degree: 3%
 
 1. 从&#x200B;**[!UICONTROL 回顾窗口]**&#x200B;下拉菜单中选择一个回顾窗口。 可用选项取决于您有权访问的Customer Journey Analytics包。
 
-保存连接后，当开始为这些数据集摄取数据时，会触发启用拼合功能的数据集拼合过程
+保存连接后，当开始为这些数据集摄取数据时，会触发启用拼合功能的数据集拼合过程。
+
+>[!CAUTION]
+>
+>对于在Connections界面中启用拼合的数据集，回填状态会立即错误地报告为![状态绿色](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _回填已完成]**（对于已完成的回填数）。 使用其他方法验证是否回填了来自拼接数据集的数据。
+>
+
 
 ## 限制
 
