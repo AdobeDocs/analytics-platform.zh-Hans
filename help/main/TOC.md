@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: d117ba255151f730e0b5e4958ee56f5ffc88ade9
+source-git-commit: a8c158e66b66f2110df12fac794b2223f1922b1f
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 99%
+source-wordcount: '1363'
+ht-degree: 97%
 
 ---
 
@@ -100,8 +100,8 @@ ht-degree: 99%
          + [使用通过 Adobe Journey Optimizer 个性化](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
    + 与 Adobe Analytics 进行比较 {#cja-aa-comparison}
       + [概述](../getting-started/aa-vs-cja/overview.md)
-      + [实用 Adobe Analytics 数据 &#x200B;](../getting-started/aa-vs-cja/aa-data-in-cja.md)
-      + [映射Adobe Analytics数据](../getting-started/aa-vs-cja/mapping-data-ims-orgs.md)
+      + [实用 Adobe Analytics 数据 ](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+      + [映射 Adobe Analytics 数据](../getting-started/aa-vs-cja/mapping-data-ims-orgs.md)
       + [功能支持](../getting-started/aa-vs-cja/cja-aa.md)
       + [比较术语](../getting-started/aa-vs-cja/terminology.md)
       + [比较数据处理](../getting-started/aa-vs-cja/data-processing-comparisons.md)
@@ -231,7 +231,7 @@ ht-degree: 99%
       + 历程画布 {#journey-canvas}
          + [概述](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
          + [配置](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
-         + [疑难解答 &#x200B;](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
+         + [疑难解答 ](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
       + [面积（堆叠）](../analysis-workspace/visualizations/area.md)
       + [条形图（堆叠）](../analysis-workspace/visualizations/bar.md)
       + [项目符号](../analysis-workspace/visualizations/bullet-graph.md)
@@ -400,7 +400,7 @@ ht-degree: 99%
       + [概述](/help/components/c-intelligent-alerts/intelligent-alerts.md)
       + [创建警报](/help/components/c-intelligent-alerts/alert-builder.md)
       + [管理警报](/help/components/c-intelligent-alerts/alert-manager.md)
-      + [功能比较 &#x200B;](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
+      + [功能比较 ](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
       + [用例](/help/components/c-intelligent-alerts/alerts-use-cases.md)
    + 导出 {#exports}
       + [配置云导出帐户](/help/components/exports/cloud-export-accounts.md)
@@ -494,7 +494,24 @@ ht-degree: 99%
       + [数据视图用例](/help/use-cases/data-views/data-views-usecases.md)
       + [使用绑定维度和量度](/help/use-cases/data-views/binding-dimensions-metrics.md)
       + [使用摘要数据](/help/use-cases/data-views/summary-data.md)
-      + [BI 扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)
+      + BI 扩展 {#bi-extension}
+         + [用例](/help/use-cases/data-views/bi-extension-usecases.md)
+         + [连接并列出数据视图](/help/use-cases/data-views/bi-extension/connect-and-validate.md)
+         + [每日趋势](/help/use-cases/data-views/bi-extension/daily-trend.md)
+         + [每小时趋势](/help/use-cases/data-views/bi-extension/hourly-trend.md)
+         + [每月趋势](/help/use-cases/data-views/bi-extension/monthly-trend.md)
+         + [单个维度排名](/help/use-cases/data-views/bi-extension/single-dimension-ranked.md)
+         + [多个维度排名](/help/use-cases/data-views/bi-extension/multiple-dimension-ranked.md)
+         + [对非重复维度值计数](/help/use-cases/data-views/bi-extension/count-distinct-dimension-values.md)
+         + [使用日期范围名称进行筛选](/help/use-cases/data-views/bi-extension/use-date-range-names-to-filter.md)
+         + [使用区段名称进行分段](/help/use-cases/data-views/bi-extension/use-segment-names-to-segment.md)
+         + [使用维度值进行分段](/help/use-cases/data-views/bi-extension/use-dimension-values-to-segment.md)
+         + [排序](/help/use-cases/data-views/bi-extension/sort.md)
+         + [限制](/help/use-cases/data-views/bi-extension/limits.md)
+         + [转换](/help/use-cases/data-views/bi-extension/transformations.md)
+         + [可视化图表](/help/use-cases/data-views/bi-extension/visualizations.md)
+         + [注意事项](/help/use-cases/data-views/bi-extension/caveats.md)
+
    + 派生字段 {#derived-fields}
       + [关于 LLM 和 AI 生成流量的报告](/help/use-cases/ai-traffic.md)
       + [报告目标](../use-cases/goals-using-derived-fields.md)
