@@ -4,10 +4,10 @@ description: Customer Journey Analytics 登陆页面。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: d8ff5191ea96b8871f6aaba1fc28211c22a13e0d
+source-git-commit: b8c9acfe8fef4543557f87c81079babdc8097b64
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 100%
+source-wordcount: '620'
+ht-degree: 91%
 
 ---
 
@@ -23,7 +23,23 @@ ht-degree: 100%
 
 >[!BEGINTABS]
 
->[!TAB 实时报告*]
+>[!TAB 连接中的拼接]
+
+您现在可以直接在Customer Journey Analytics连接UI中配置和启用事件数据集的拼合。
+
+[![图像](assets/learn-more-button.svg)](/help/stitching/use-stitching-ui.md)
+
+*_必须至少具有Select包才能启用拼接。_*
+
+
+>[!TAB 受众分析]
+
+利用Audience Analysis，可将受众成员资格数据从Experience Platform配置文件数据集摄取到Customer Journey Analytics连接。
+
+[![图像](assets/learn-more-button.svg)](/help/connections/audience-analysis/analyze-audiences.md)
+
+
+>[!TAB 实时报告]
 
 Customer Journey Analytics 中的实时报告功能可以实时显示并更新 Analysis Workspace 的一个或多个面板中的数据和可视化图表。
 
@@ -31,95 +47,19 @@ Customer Journey Analytics 中的实时报告功能可以实时显示并更新 A
 
 *_您必须具有 Ultimate 包才能进行实时报告。_*
 
+
 >[!TAB B2B Edition]
 
 Customer Journey Analytics B2B Edition 提供有助于推动收入增长的可操作的帐户洞察，帮助 B2B 公司协调其营销活动、销售和产品团队。帐户是数据模型的中心，因此所有分析都集中在帐户历程上。
 
 [![图像](assets/learn-more-button.svg)](/help/getting-started/cja-b2b-edition.md)
 
->[!TAB 派生字段函数]
-
-新增的派生字段函数：[日期运算](/help/data-views/derived-fields/derived-fields.md#date-math)、[深度](/help/data-views/derived-fields/derived-fields.md#depth)以及[类型转换](/help/data-views/derived-fields/derived-fields.md#typecast)。
-
-[![图像](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
 >[!TAB Content Analytics]
 
-Content Analytics 可让您快速轻松地调查大量内容数据，以了解趋势、发现异常、识别内容疲劳并从内容曝光度中获取见解。
+Content Analytics 可让您快速轻松地调查大量内容数据，以了解趋势、发现异常、识别内容疲劳并从内容曝光度中获取洞察。
 
 [![图像](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
-
->[!TAB 事件深度]
-
-事件深度是一个新的标准维度，它提供了新的方法来衡量和更好地理解事件在客户会话中的位置。通过事件深度维度，可以详细跟踪和分析特定事件在会话中用户交互顺序流中的发生位置。
-
-[![图像](assets/learn-more-button.svg)](/help/components/dimensions/overview.md#standard-dimensions)
-
-
->[!TAB 共享量度和维度]
-
-共享量度和维度是一个用于管理维度和量度的集中地点，使其可以在任意数量的数据视图中使用。这些组件对于使用多个数据视图的组织来说特别有用，尤其是在这些数据视图共享通用组件设置的情况下。
-
-[![图像](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
-
-
-<!--
->[!TAB AI Assistant] 
-
-AI Assistant is a conversational experience that allows practitioners to perform tasks at a fast pace - whether its understanding concepts, troubleshooting problems, or searching through information. It also allows non-experts to perform expert tasks and increases the overall quality of work.
-
-[![image](assets/learn-more-button.svg)](/help/ai-assistant.md)
-
-
->[!TAB Guided Analysis] 
-
-Guided Analysis is now available directly from within Analysis Workspace, enabling users to create dashboards with comprehensive insights from panels, visualizations, and guided analyses.
-
-[![image](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
-
-
-
->[!TAB Intelligent captions v2] 
-
-Intelligent captions are now supported, with additional interface improvements, for [Line](/help/analysis-workspace/visualizations/line.md) (including multi-line), [Bar](/help/analysis-workspace/visualizations/bar.md), [Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md), [Area](/help/analysis-workspace/visualizations/area.md) (including multiple Area lines), [Donut](/help/analysis-workspace/visualizations/donut.md), [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), and [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) visualizations.
-
-[![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
-
-
->[!TAB Alerts] 
-
-Alerts allow you to be notified based on changed percentages or specific data points. You can preview how often an alert will trigger, send alerts by email or SMS, create stacked alerts, and more.
-
-[![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
-
-
->[!TAB Summary data] 
-
-Allows you to bring in time-series data that does not have a person ID. This time-series data can be used to support various use cases, such as 
-
-- Presenting high-level performance indicators as part of or next to event-level data. 
-- Uploading targets or goals at an hourly or daily basis, then positioning these targets or goals against event-level metrics. 
-
-[![image](assets/learn-more-button.svg)](/help/data-views/summary-data.md)
-
--->
-
->[!TAB 基于图形的拼合*]
-
-通过基于图形的拼合，您可以使用体验平台身份标识服务提供的身份标识图更好地了解客户历程： <ul><li>连接具有不同标识符的数据集，无需提取、转换和加载额外数据以反映单个标识符。</li> <li>通过跨数据集共享身份标识，提高单个数据集中首选或黄金身份标识的覆盖率。</li><li>将 Real-Time Customer Data Platform 和 Journey Optimizer 中创建的轮廓与 Customer Journey Analytics 中的人员进行对齐。</li></ul>
-
-[![图像](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
-
-*_您必须拥有 Prime 包才能进行基于图形的拼合。_*
-
->[!TAB BI 扩展*]
-
-BI 扩展允许 SQL 访问您在 Customer Journey Analytics 中定义的数据视图。您现在可以使用自己喜欢的 BI 工具（Power BI Desktop、Tableau Desktop、Looker、Juyter Notebook 和 RStudio）根据与 Customer Journey Analytics 用户在其分析工作区项目中使用的相同的数据视图创建报告和仪表板。[提供了用例](/help/use-cases/data-views/bi-extension-usecases.md)。
-
-[![图像](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
-
-*_您必须拥有 Select 包或更高版本才能使用 BI 扩展。_*
-
 
 >[!ENDTABS]
 
@@ -139,7 +79,7 @@ BI 扩展允许 SQL 访问您在 Customer Journey Analytics 中定义的数据�
     </td>
     <td>
     <a href="/help/guided-analysis/overview.md"><img src="./assets/product-analytics.png"></a>
-    <div><strong>引导式分析</strong><br/>了解如何使用工作流获取有关客户产品体验的数据和见解。通过引导分析使用 Product Analytics...
+    <div><strong>引导式分析</strong><br/>了解如何使用工作流获取有关客户产品体验的数据和洞察。通过引导分析使用 Product Analytics...
     </div>
     </td>
     <td>
@@ -158,7 +98,7 @@ BI 扩展允许 SQL 访问您在 Customer Journey Analytics 中定义的数据�
 
 ## 浏览文档
 
-了解 Customer Journey Analytics 怎样与 Adobe Analytics 相比较。以及如何将数据放入解决方案中，然后准备、查看、分析和大众化这些数据以及由此产生的分析和报告。
+了解 Customer Journey Analytics 怎样与 Adobe Analytics 相比较。以及如何将数据放入解决方案中，然后准备、查看、分析和民主化这些数据以及由此产生的分析和报告。
 
 <table style="table-layout:fixed">
   <tr style="border: 0;">
@@ -205,4 +145,4 @@ BI 扩展允许 SQL 访问您在 Customer Journey Analytics 中定义的数据�
 
 
 <table style="table-layout:auto" class="tablelayout-is-fixed"><tbody><tr style="border: 0;"><td><img src="./assets/newsletter.png"></td><td>
-<b>随时了解最新动态、为社区做出贡献并提升您的 Customer Journey Analytics 体验！</b><br>访问 Adobe Analytics 社区，与同类从业者讨论其功能。<a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=zh-Hans">立即加入社区！</a></td></tr></tbody></table>
+<b>随时了解最新动态、为社区做出贡献并提升您的 Customer Journey Analytics 体验！</b><br>访问 Adobe Analytics 社区，与同类从业者讨论其功能。<a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community">立即加入社区！</a></td></tr></tbody></table>

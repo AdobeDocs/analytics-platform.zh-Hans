@@ -6,7 +6,7 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 badgePremium: label="Beta 版" type="Informative"
-source-git-commit: 32997d0fd9801099a75287f63197d3b4c2ba81ef
+source-git-commit: 92754044cad67627987b0912367eddc48d1aee89
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 2%
@@ -16,8 +16,6 @@ ht-degree: 2%
 # 使用拼接
 
 您可以对作为连接的一部分配置的一个或多个事件数据集启用拼合。 您许可的Customer Journey Analytics包将决定您能够为拼合启用的事件数据集数量。
-
-{{release-limited-testing}}
 
 当您[创建连接](/help/connections/create-connection.md#dataset-settings)或[编辑连接](/help/connections/create-connection.md)时，可以将拼合作为事件数据集的[数据集设置](/help/connections/manage-connections.md#edit-a-connection)的一部分启用。
 
