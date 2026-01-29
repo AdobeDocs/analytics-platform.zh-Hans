@@ -43,7 +43,7 @@ ht-degree: 0%
 
 1. 在&#x200B;**[!UICONTROL 筛选器]**&#x200B;窗格中：
 
-   1. 从此视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]** daterangeday is (All)****。
+   1. 从此视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]** daterangeday is (All)**&#x200B;**。
    1. 选择&#x200B;**[!UICONTROL 高级筛选]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
    1. 将筛选器定义为&#x200B;**[!UICONTROL 当值]** **[!UICONTROL 位于或晚于]** `1/1/2023` **[!UICONTROL 且]** **[!UICONTROL 位于]** `2/1/2023.`时显示项您可以使用日历图标挑选日期。
    1. 选择&#x200B;**[!UICONTROL 应用筛选器]**。
@@ -152,7 +152,7 @@ ht-degree: 0%
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。
+1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。
 
    ```R
    ## Daily Events

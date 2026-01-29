@@ -45,7 +45,7 @@ ht-degree: 1%
 
 1. 在&#x200B;**[!UICONTROL 筛选器]**&#x200B;窗格中：
 
-   1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]**&#x200B;日期范围是（全部）****。
+   1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]**&#x200B;日期范围是（全部）**&#x200B;**。
    1. 选择&#x200B;**[!UICONTROL 相对日期]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
    1. 将筛选器定义为&#x200B;**[!UICONTROL 当值]** **[!UICONTROL 在最后]** `1` **[!UICONTROL 日历年]**&#x200B;内时显示项。
    1. 选择&#x200B;**[!UICONTROL 应用筛选器]**。
@@ -67,7 +67,7 @@ ht-degree: 1%
 
    1. 选择&#x200B;**[!UICONTROL product_name is (All)]**。
    1. 将&#x200B;**[!UICONTROL 筛选器类型]**&#x200B;设置为&#x200B;**[!UICONTROL 前N]**。
-   1. 将筛选器定义为&#x200B;**[!UICONTROL 按值]**&#x200B;显示项目&#x200B;****&#x200B;前`10` ****。
+   1. 将筛选器定义为&#x200B;**[!UICONTROL 按值]**&#x200B;显示项目&#x200B;**&#x200B;**&#x200B;前`10` **&#x200B;**。
    1. 将&#x200B;**[!UICONTROL purchase_revenue]**&#x200B;拖放到&#x200B;**[!UICONTROL By值]**&#x200B;中&#x200B;**[!UICONTROL 在此处添加数据字段]**。
    1. 选择&#x200B;**[!UICONTROL 应用筛选器]**。
 
@@ -178,7 +178,7 @@ ht-degree: 1%
    1. 选择&#x200B;**[!UICONTROL 系列]**&#x200B;选项卡。
    1. 向下滚动以查看&#x200B;**[!UICONTROL 购买]**&#x200B;并将&#x200B;**[!UICONTROL 类型]**&#x200B;更改为&#x200B;**[!UICONTROL 行]**。
    1. 选择&#x200B;**[!UICONTROL Y]**&#x200B;选项卡。
-   1. 将&#x200B;**[!UICONTROL 购买]**&#x200B;从&#x200B;**[!UICONTROL 左1]**&#x200B;容器拖动到显示&#x200B;**[!UICONTROL *将系列拖动到此处以创建新的左轴&#x200B;*]**。 此操作创建**[!UICONTROL  Left 2 ]**容器。
+   1. 将&#x200B;**[!UICONTROL 购买]**&#x200B;从&#x200B;**[!UICONTROL 左1]**&#x200B;容器拖动到显示&#x200B;**[!UICONTROL *将系列拖动到此处以创建新的左轴&#x200B;*]**。 此操作创建&#x200B;**[!UICONTROL &#x200B; Left 2 &#x200B;]**&#x200B;容器。
       ![Looker可视化图表配置](../assets/uc5-looker-visualization.png)
    1. 选择![编辑](/help/assets/icons/CrossSize75.svg)旁边的&#x200B;**[!UICONTROL CrossSize75]**&#x200B;以隐藏弹出对话框
 
@@ -214,7 +214,7 @@ ht-degree: 1%
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。
+1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。
 
    ```R
    library(tidyr)

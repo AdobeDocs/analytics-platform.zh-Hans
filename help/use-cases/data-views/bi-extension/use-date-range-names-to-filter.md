@@ -138,7 +138,7 @@ ht-degree: 1%
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。 确保使用适当的日期范围名称。 例如，`Last Year 2023`。
+1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。 确保使用适当的日期范围名称。 例如，`Last Year 2023`。
 
    ```R
    ## Monthly Events for Last Year

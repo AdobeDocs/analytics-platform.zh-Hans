@@ -41,7 +41,7 @@ ht-degree: 0%
    1. 选择&#x200B;**[!UICONTROL 发生次数总和]**。
 
 1. 在&#x200B;**[!UICONTROL 筛选器]**&#x200B;窗格中：
-   1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]**&#x200B;日期范围是（全部）****。
+   1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]**&#x200B;日期范围是（全部）**&#x200B;**。
    1. 选择&#x200B;**[!UICONTROL 相对日期]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
    1. 将筛选器定义为&#x200B;**[!UICONTROL 当值]** **[!UICONTROL 在最后]** `1` **[!UICONTROL 日历年]**&#x200B;内时显示项。
    1. 选择&#x200B;**[!UICONTROL 应用筛选器]**。
@@ -260,7 +260,7 @@ FETCH NEXT 5 ROWS ONLY
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。
+1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。
 
    ```R
    ## Dimension 1 Limited

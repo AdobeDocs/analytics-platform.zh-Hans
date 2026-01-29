@@ -25,7 +25,7 @@ ht-degree: 0%
 * Power BI Desktop Advanced日期范围筛选是排他性的。  对于结束日期，您需要选择要在其中报告的一天之后的日期。 例如，**[!UICONTROL 位于]** `1/1/2023` **[!UICONTROL 或之后，且位于]** `1/2/2023`之前。
 * 创建连接时，Power BI桌面默认为&#x200B;**[!UICONTROL 导入]**。 请确保使用&#x200B;**[!UICONTROL 直接查询]**。
 * Power BI Desktop通过Power Query公开数据转换。  Power Query主要与Import类型连接配合使用，因此许多您应用日期或字符串函数之类的转换都会引发错误，指出您需要切换到Import类型连接。  如果您需要在查询时转换数据，则应该使用派生维度和量度，这样Power BI就不需要自己进行转换。
-* Power BI Desktop不了解如何处理日期时间类型列，因此不支持&#x200B;**[!UICONTROL daterange *X *]**维度，如**[!UICONTROL daterangehour ]**和**[!UICONTROL daterangeminute ]**。
+* Power BI Desktop不了解如何处理日期时间类型列，因此不支持&#x200B;**[!UICONTROL daterange *X *]**&#x200B;维度，如&#x200B;**[!UICONTROL daterangehour &#x200B;]**&#x200B;和&#x200B;**[!UICONTROL daterangeminute &#x200B;]**。
 * 默认情况下，Power BI Desktop会尝试使用更多查询服务会话建立多个连接。  转到项目的Power BI设置并禁用并行查询。
 * Power BI Desktop执行所有排序和限制客户端操作。 Power BI Desktop对于前&#x200B;*X*&#x200B;个包含绑定值的过滤也具有不同的语义。 因此，您不能像在Analysis Workspace中一样创建相同的排序和限制。
 * 早期版本的Power BI Desktop 2024年10月发行版中断了PostgreSQL数据源。 确保使用本文中提到的版本。

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 使用维度值进行分段
 
-您使用&#x200B;**[!UICONTROL 产品类别]**&#x200B;的动态&#x200B;**[!UICONTROL 打猎]**值来细分打猎类别中的产品。 或者，对于那些不支持动态检索产品类别值的BI工具，您可以在Customer Journey Analytics中创建一个新区段，以细分来自打猎产品类别的产品。
+您使用&#x200B;**[!UICONTROL 产品类别]**&#x200B;的动态&#x200B;**[!UICONTROL 打猎]**&#x200B;值来细分打猎类别中的产品。 或者，对于那些不支持动态检索产品类别值的BI工具，您可以在Customer Journey Analytics中创建一个新区段，以细分来自打猎产品类别的产品。
 然后，您希望使用新区段来报告2023年1月狩猎类别中产品的产品名称和发生次数（事件）。
 
 +++ Customer Journey Analytics
@@ -52,7 +52,7 @@ ht-degree: 0%
 1. 在&#x200B;**[!UICONTROL 筛选器]**&#x200B;窗格中：
    1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]**&#x200B;筛选器名称为（全部）**[!UICONTROL 。]**
    1. 选择&#x200B;**[!UICONTROL 基本筛选]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
-   1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]**&#x200B;日期范围是（全部）****。
+   1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]**&#x200B;日期范围是（全部）**&#x200B;**。
    1. 选择&#x200B;**[!UICONTROL 高级筛选]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
    1. 将筛选器定义为&#x200B;**[!UICONTROL 当值]** **[!UICONTROL 在]** `1/1/2023` **[!UICONTROL 和]** **[!UICONTROL 在]** `2/1/2023`之前或之后时显示项。
    1. 选择&#x200B;**[!UICONTROL 基本筛选器]**&#x200B;作为&#x200B;**[!UICONTROL product_category]**&#x200B;的&#x200B;**[!UICONTROL 筛选器类型]**，并从可能值列表中选择&#x200B;**[!UICONTROL Hunting]**。
@@ -154,7 +154,7 @@ ht-degree: 0%
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。 确保使用适当的类别。 例如，`Hunting`。
+1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。 确保使用适当的类别。 例如，`Hunting`。
 
    ```R
    ## Dimension 1 Filtered by Dimension 2 value
