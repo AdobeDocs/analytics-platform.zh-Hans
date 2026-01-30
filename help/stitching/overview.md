@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: d117ba255151f730e0b5e4958ee56f5ffc88ade9
+source-git-commit: 9ace0679796c3a813b1fbd97c62c20faf64db211
 workflow-type: tm+mt
 source-wordcount: '902'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 88%
 
 标识拼接（或简称为拼接）是一项强大的功能，可提升事件数据集对跨渠道分析的适用性。跨渠道分析是 Customer Journey Analytics 的主要使用场景之一。该功能可让您基于通用标识符（人员 ID），无缝地组合并运行来自不同渠道的多个数据集。
 
-当您合并具有相似人员 ID 的数据集时，将跨设备和渠道进行归因。例如，某用户通过桌面电脑上的广告访问您的网站。用户购买产品，但随后订单出现问题。 随后，用户致电您的客户服务团队寻求协助以解决问题。通过跨渠道分析，您可以将呼叫中心事件归因到用户最初点击的广告。
+当您合并具有相似人员 ID 的数据集时，将跨设备和渠道进行归因。例如，某用户通过桌面电脑上的广告访问您的网站。用户购买了产品，却在订单处理中遇到问题。随后，用户致电您的客户服务团队寻求协助以解决问题。通过跨渠道分析，您可以将呼叫中心事件归因到用户最初点击的广告。
 
 然而，作为 Customer Journey Analytics 中连接的一部分的基于事件的数据集，并非全都填充了足够的数据以支持这种现成可用的归因方法。尤其是在基于网页或移动端的体验数据集中，通常并非所有事件都具备真实的人员 ID 信息。
 
@@ -49,8 +49,8 @@ Customer Journey Analytics 支持两种类型的拼接：[基于字段的拼接]
 
 您可以通过以下两种方式启用拼接：
 
-- [请求启用拼接](/help/stitching/use-stitching.md)。 批准后，将为您请求拼合的数据集创建重复的数据集。 此重复数据集包含一个具有拼接标识符的附加列。 您必须创建新连接或编辑包含拼接数据集的现有连接，才能在Customer Journey Analytics中使用拼接数据。
-- [在连接接口中启用拼接](/help/stitching/use-stitching-ui.md) [!BADGE Beta]{type=Informative}。 在“连接”界面中配置数据集的拼合时，在Customer Journey Analytics中从该数据集摄取数据期间，将“动态”进行拼合。
+- [请求启用拼接](/help/stitching/use-stitching.md)（已弃用）。 批准后，将为您请求拼合的数据集创建重复的数据集。 此重复数据集包含一个具有拼接标识符的附加列。 您必须创建新连接或编辑包含拼接数据集的现有连接，才能在Customer Journey Analytics中使用拼接数据。
+- [在连接接口](/help/stitching/use-stitching-ui.md)中启用拼接。 在“连接”界面中配置数据集的拼合时，在Customer Journey Analytics中从该数据集摄取数据期间，将“动态”进行拼合。
 
 ## 限制
 

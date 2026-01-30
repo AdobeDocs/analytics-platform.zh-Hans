@@ -5,14 +5,22 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: d117ba255151f730e0b5e4958ee56f5ffc88ade9
+source-git-commit: 9ace0679796c3a813b1fbd97c62c20faf64db211
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '479'
 ht-degree: 7%
 
 ---
 
 # 请求拼接
+
+
+>[!IMPORTANT]
+>
+>不再需要通过Adobe进行请求拼接，此方法已弃用。 [在连接UI中启用拼接](use-stitching-ui.md)。
+>
+
+
 
 如果贵组织满足所有[先决条件](overview.md#prerequisites)并了解常见的[限制](overview.md#limitations)和特定于拼接方法（[基于字段](fbs.md#limitations)和[基于图形](gbs.md#limitations)）的限制，则可以按照以下步骤在Customer Journey Analytics中请求并开始使用拼接。
 
@@ -54,25 +62,3 @@ ht-degree: 7%
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
 设置数据视图后，您可以跨渠道和设备运行Customer Journey Analytics报表分析。
-
-<!-- Uncomment once stitching UI is available (for limited testing)..
-
-### Do It Yourself
-
-|Positive|[!BADGE New Feature]{type=Positive before-title="false"}|
-
-{{release-limited-testing-section}}
-
-Alternatively, you can set up and use stitching through the Customer Journey Analytics user interface:
-
-1. Go to the [Create and manage stitched datasets](stitching-ui.md) and follow steps to rekey your dataset.
-
-2. [Create a connection](/help/connections/create-connection.md) in Customer Journey Analytics using the newly generated dataset and any other datasets that you want to include. Choose the correct person ID for each dataset.
-
-3. [Create a connection](/help/connections/create-connection.md) in Customer Journey Analytics using the newly generated dataset and any other datasets that you want to include. Choose the correct person ID for each dataset.
-   
-4. [Create a data view](/help/data-views/create-dataview.md) based on the connection.
-
-Once the data view is set up, the cross-channel analysis in Customer Journey Analytics is just like any other analysis in Customer Journey Analytics, except now the data operates across channels and devices.
-
--->
