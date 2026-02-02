@@ -23,7 +23,7 @@ ht-degree: 40%
 
 此集成允许您管理合规性。 组织中的数据管理员可以设置策略以限制使用。因此，您的 Customer Journey Analytics 用户可以更自信地使用数据，因为他们知道此等数据使用符合数据管理员定义的策略。
 
-有关更多信息，请参阅[ Customer Journey Analytics 和数据治理](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-privacy/privacy-overview)。
+有关更多信息，请参阅[&#x200B; Customer Journey Analytics 和数据治理](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-privacy/privacy-overview)。
 
 ## 查看受限制的数据
 
