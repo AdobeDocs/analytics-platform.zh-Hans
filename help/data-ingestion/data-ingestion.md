@@ -114,5 +114,5 @@ Customer Journey Analytics 架构大致如下所示：
 
 >[!MORELIKETHIS]
 >
->博客：[仔细了解 Adobe Customer Journey Analytics 中的数据处理和摄取](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
+>博客：[仔细了解 Adobe Customer Journey Analytics 中的数据处理和摄取](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091?profile.language=zh-Hans)
 

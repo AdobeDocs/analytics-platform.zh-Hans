@@ -68,6 +68,6 @@ Content Analytics 使用在 Experience Platform 的事件数据集中的网页�
 >
 >[Content Analytics 报告](report/report.md)
 >[配置 Content Analytics](config/configuration.md)
->[在 Customer Journey Analytics 中计算跳出次数和跳出率](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
+>[在 Customer Journey Analytics 中计算跳出次数和跳出率](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=zh-Hans#M454)
 >
 
