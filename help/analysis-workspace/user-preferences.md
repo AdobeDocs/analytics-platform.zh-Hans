@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 0a307bb43c780479df1cdc751fdadfc82f9dda55
+source-git-commit: bc708b34814550b89f6c9916d8bc48850008c1dc
 workflow-type: tm+mt
-source-wordcount: '4044'
-ht-degree: 98%
+source-wordcount: '4015'
+ht-degree: 99%
 
 ---
 
@@ -90,10 +90,12 @@ ht-degree: 98%
 
 如[项目概述](/help/analysis-workspace/build-workspace-project/freeform-overview.md)中所述，也可以为 Analysis Workspace 中的个别项目自定义其中一些相同的偏好设置。
 
+<!--
 >[!IMPORTANT]
 >
->您无法再在&#x200B;**[!UICONTROL 用户首选项]**&#x200B;的&#x200B;**[!UICONTROL 项目和分析]** > **[!UICONTROL 数据]**&#x200B;部分中定义数字格式。 数字格式自动由为登录用户配置的[默认语言](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/browser-language)确定。
+>You can no longer define the number format in the **[!UICONTROL Project & Analyses]** > **[!UICONTROL Data]** section of **[!UICONTROL User preferences]**. The number format is automatically determined by the [default language that is configured](https://experienceleague.adobe.com/en/docs/core-services/interface/features/browser-language) for the logged in user.
 >
+-->
 
 
 | 部分 | 偏好设置 | 选项 |
@@ -106,6 +108,7 @@ ht-degree: 98%
 |  | [日程表](/help/analysis-workspace/c-panels/panels.md#calendar) | 从以下列表中选择： <ul><li>Adobe 提供的范围（默认为“本月”）</li><li>您可以启用[!UICONTROL 默认情况下，使日期范围组件相对于面板日程表]。</li></ul> |
 |  | [面板类型](/help/analysis-workspace/c-panels/panels.md#panel-types) | <ul><li>自由格式（默认）</li><li>空白</li><li>快速洞察</li></ul> |
 |  | 实例计数 | 启用[!UICONTROL 计算重复实例]以指定是否将重复实例计入报告中。例如，启用后，同一页面的多个连续页面查看将会被视为多个页面查看。禁用时，对同一页面的多次连续页面查看将会被视为一次页面查看。 <p>**注意：**&#x200B;此设置仅影响某些量度（例如会话），不适用于流量或流失可视化图表。</p> |
+|  | 数字格式 | <ul><li>1,000.00（默认）</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | CSV 分隔符字符 | <ul><li>逗号（默认）</li><li>分号</li><li>冒号</li><li>竖线</li><li>句点</li><li>空格</li><li>制表符</li></ul> |
 |  | 显示注释 | 选择注释是否在您的项目中可见。有关注释的更多信息，请参阅[注释概述](/help/components/annotations/overview.md)。 |
 
