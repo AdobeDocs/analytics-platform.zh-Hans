@@ -1,14 +1,14 @@
 ---
 title: 拼接概述
-description: 拼接概述
+description: 了解身份拼接的概念、好处、先决条件和限制。
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 9ace0679796c3a813b1fbd97c62c20faf64db211
+source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 89%
+source-wordcount: '799'
+ht-degree: 78%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->您必须具有 **Select** 包或更高版本（用于[基于字段的拼接](fbs.md)）或者 **Prime** 包或更高版本（用于[基于图形的拼接](gbs.md)）才能使用本节中描述的功能。如果您不确定您拥有的是哪个 Customer Journey Analytics 包，请联系您的管理员。
+>您必须具有Customer Journey Analytics **Select**&#x200B;程序包或更高版本（适用于[基于字段的拼接](fbs.md)）或Customer Journey Analytics **Prime**&#x200B;程序包或更高版本（适用于[基于图形的拼接](gbs.md)），才能使用此部分所述的功能。 如果您不确定您拥有的是哪个 Customer Journey Analytics 包，请联系您的管理员。
 
 标识拼接（或简称为拼接）是一项强大的功能，可提升事件数据集对跨渠道分析的适用性。跨渠道分析是 Customer Journey Analytics 的主要使用场景之一。该功能可让您基于通用标识符（人员 ID），无缝地组合并运行来自不同渠道的多个数据集。
 
-当您合并具有相似人员 ID 的数据集时，将跨设备和渠道进行归因。例如，某用户通过桌面电脑上的广告访问您的网站。用户购买了产品，却在订单处理中遇到问题。随后，用户致电您的客户服务团队寻求协助以解决问题。通过跨渠道分析，您可以将呼叫中心事件归因到用户最初点击的广告。
+当您合并具有相似人员 ID 的数据集时，将跨设备和渠道进行归因。例如，某用户通过桌面电脑上的广告访问您的网站。用户购买产品，但随后遇到订单问题。 随后，用户致电您的客户服务团队寻求协助以解决问题。通过跨渠道分析，您可以将呼叫中心事件归因到用户最初点击的广告。
 
 然而，作为 Customer Journey Analytics 中连接的一部分的基于事件的数据集，并非全都填充了足够的数据以支持这种现成可用的归因方法。尤其是在基于网页或移动端的体验数据集中，通常并非所有事件都具备真实的人员 ID 信息。
 
-拼接功能可在单个数据集的行内重新键入身份标识，从而确保每个事件都包含人员 ID（拼接 ID）。拼接功能会查看来自经过身份验证与未经身份验证会话的用户数据，以确定可用作拼接 ID 的通用人员 ID 值。此重新生成键值的过程可将不同来源的记录统一到单一的拼接 ID 下，以便在人员级别而非设备或 Cookie 级别进行分析。
+拼合会为一个数据集行中的身份重新生成键值，以确保人员ID（拼合ID）在每个事件上均可用。 拼接功能会查看来自经过身份验证与未经身份验证会话的用户数据，以确定可用作拼接 ID 的通用人员 ID 值。此重新生成键值可将不同的记录解析为单个拼接ID，以供在人员级别（而不是设备或Cookie级别）进行分析。
 
 Customer Journey Analytics 支持两种类型的拼接：[基于字段的拼接](fbs.md)和[基于图形的拼接](gbs.md)。
 
@@ -36,7 +36,7 @@ Customer Journey Analytics 支持两种类型的拼接：[基于字段的拼接]
 
 在使用拼接之前，请确保您的组织已做好以下准备：
 
-- 拼接包括将经过身份验证和未经身份验证的用户数据合并起来。在启用对事件数据集进行拼接之前，请确保遵守任何适用的法律和法规，包括获取必要的最终用户权限。请参阅[在 UI 中定义身份标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)以了解更多信息。
+- 拼接包括将经过身份验证和未经身份验证的用户数据合并起来。在激活事件数据集的拼合之前，请确保遵守适用的法律和法规，包括获取必要的最终用户权限。
 
 - 将所需数据导入 Adobe Experience Platform：
 
@@ -49,25 +49,16 @@ Customer Journey Analytics 支持两种类型的拼接：[基于字段的拼接]
 
 您可以通过以下两种方式启用拼接：
 
-- [请求启用拼接](/help/stitching/use-stitching.md)（已弃用）。 批准后，将为您请求拼合的数据集创建重复的数据集。 此重复数据集包含一个具有拼接标识符的附加列。 您必须创建新连接或编辑包含拼接数据集的现有连接，才能在Customer Journey Analytics中使用拼接数据。
-- [在连接接口](/help/stitching/use-stitching-ui.md)中启用拼接。 在“连接”界面中配置数据集的拼合时，在Customer Journey Analytics中从该数据集摄取数据期间，将“动态”进行拼合。
+- [请求启用拼接](/help/stitching/use-stitching.md)（已弃用）。 一旦获得批准，系统将为您请求拼接的数据集创建一个重复的数据集。该重复数据集包含一个附加列，用于存储拼接后的标识符。要在 Customer Journey Analytics 中使用拼接数据，您需要创建新的连接或编辑现有连接，并将该拼接数据集包含在内。
+- [在连接接口](/help/stitching/use-stitching-ui.md)中启用拼接。 在“连接”界面中配置数据集的拼合时，在Customer Journey Analytics中从该数据集摄取数据期间会动态进行拼合。
 
 ## 限制
-
->[!IMPORTANT]
->
->
->- 对源事件数据集架构所做的任何更改，也应同步应用到新的拼接数据集架构中。
->
->- 如果移除源数据集，拼接的数据集将停止处理，并被系统移除。
->
->- 数据使用情况标签不会自动传播到拼接的数据集架构。如果您将数据使用情况标签应用于源数据集架构，就需要将这些数据使用情况标签手动应用于拼接的数据集架构。请参阅[管理 Experience Platform 中的数据使用情况标签](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview)，了解更多信息。
 
 拼接是一项具有突破性的强大功能，但其使用方式存在限制。
 
 - 仅支持事件数据集。不支持其他数据集，例如查找数据集。
 - 拼接不以任何方式改变用于拼接的字段。拼接使用数据湖中非拼接数据集中存在的指定字段中的值。
-- 拼接过程区分大小写。例如，如果字段中有时出现“Bob”一词，有时出现“BOB”一词，这两个 ID 会被视为单独的两人。
+- 拼接过程区分大小写。例如，标识值`Bob`和`BOB`被视为两个不同的人。
 
 确保不要将拼接与以下方法混淆：
 

@@ -1,14 +1,14 @@
 ---
 title: 请求拼接
-description: 如何请求拼接
+description: 了解如何请求拼接。
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: 9ace0679796c3a813b1fbd97c62c20faf64db211
+source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 7%
+source-wordcount: '573'
+ht-degree: 20%
 
 ---
 
@@ -20,13 +20,11 @@ ht-degree: 7%
 >不再需要通过Adobe进行请求拼接，此方法已弃用。 [在连接UI中启用拼接](use-stitching-ui.md)。
 >
 
-
-
-如果贵组织满足所有[先决条件](overview.md#prerequisites)并了解常见的[限制](overview.md#limitations)和特定于拼接方法（[基于字段](fbs.md#limitations)和[基于图形](gbs.md#limitations)）的限制，则可以按照以下步骤在Customer Journey Analytics中请求并开始使用拼接。
+如果贵组织满足常规[先决条件](overview.md#prerequisites)，了解常见[限制](overview.md#limitations)，并且了解特定于拼接方法（[基于字段](fbs.md)和[基于图形](gbs.md)）的先决条件和限制，则可以按照以下步骤在Customer Journey Analytics中请求并开始使用拼接。
 
 ## 选择选项
 
-您有权使用的Customer Journey Analytics程序包将决定可用的拼接方法、初始回填持续时间的选项、回顾时间范围、重放频率以及允许拼接的最大数据集数。 有关更多详细信息，请参阅[Customer Journey Analytics产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/customer-journey-analytics.html)。 在请求支持之前决定可用的选项。
+您有权使用的Customer Journey Analytics包将确定可用的拼接方法、初始回填持续时间的选项、回顾窗口、重放频率和允许拼接的最大数据集数。 有关更多详细信息，请参阅[Customer Journey Analytics产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/customer-journey-analytics.html)。 在请求支持之前决定可用的选项。
 
 | | Customer Journey Analytics<br/>选择 | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
@@ -47,7 +45,7 @@ ht-degree: 7%
       - 对于基于图的拼接，请指定持久ID的命名空间以及用于查询身份图的身份命名空间。
    - 如果数据集不支持`identityMap`：
       - 对于基于字段的拼合，是指所需数据集的人员ID的列名称（人员标识符，还充当连接上下文中数据集之间的链接）。
-      - 对于基于图的拼接，为用于查询身份图的身份命名空间。
+      - 对于基于图的拼接，为要用于查询身份图的身份命名空间。
    - 您的回顾窗口和重播频率首选项。 查看您的Customer Journey Analytics程序包以了解[选项](#options)。
    - 沙盒名称。
 
@@ -62,3 +60,11 @@ ht-degree: 7%
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
 设置数据视图后，您可以跨渠道和设备运行Customer Journey Analytics报表分析。
+
+## 限制
+
+- 对源事件数据集架构所做的任何更改，也应同步应用到新的拼接数据集架构中。
+
+- 如果移除源数据集，拼接的数据集将停止处理，并被系统移除。
+
+- 数据使用情况标签不会自动传播到拼接的数据集架构。如果您将数据使用情况标签应用于源数据集架构，就需要将这些数据使用情况标签手动应用于拼接的数据集架构。请参阅[管理 Experience Platform 中的数据使用情况标签](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview)，了解更多信息。

@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 32997d0fd9801099a75287f63197d3b4c2ba81ef
+source-git-commit: 7c1a4c72cbeba646b1c79a5deade964b59c164d0
 workflow-type: tm+mt
-source-wordcount: '8789'
-ht-degree: 98%
+source-wordcount: '8798'
+ht-degree: 99%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="connection_change_personid"
 >title="更改人员 ID"
->abstract="更改人员ID将删除连接中的所有现有数据。 您必须根据新人员ID从数据集中重新摄取数据。<br/><br/>选择&#x200B;**[!UICONTROL 继续]**&#x200B;后，在删除过程完成之前，报表可能会延迟。"
+>abstract="更改人员 ID 会删除连接中的所有现有数据。您必须基于新的人员 ID 重新从数据集摄取数据。<br/><br/>当您选择&#x200B;**[!UICONTROL 继续]**&#x200B;时，在删除过程完成之前，报表可能会出现延迟。"
 
 >[!CONTEXTUALHELP]
 >id="connection_change_accountid"
@@ -110,7 +110,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_ajo"
 >title="在 Customer Journey Analytics 中使用此连接"
->abstract="此选项允许您将 Customer Journey Analytics 的高级报告功能与 Journey Optimizer 连接结合使用。这些功能允许您：<ul><li>在 Customer Journey Analytics 中对 Journey Optimizer 数据进行深入分析。</li><li>编辑 Journey Optimizer 连接和相关联的数据视图。</li><li>分析历程事件、对话路径和营销活动绩效。</li></ul>**启用此选项后，连接中的每一行数据每月都会计入您的 Customer Journey Analytics 的许可数据行，并显示在 Connections 使用界面中。**<br><br/>&#x200B;只有在您熟悉关于在 Customer Journey Analytics 中额外使用数据行的情况下，才浏览此选项。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/integrations/ajo)。"
+>abstract="此选项允许您将 Customer Journey Analytics 的高级报告功能与 Journey Optimizer 连接结合使用。这些功能允许您：<ul><li>在 Customer Journey Analytics 中对 Journey Optimizer 数据进行深入分析。</li><li>编辑 Journey Optimizer 连接和相关联的数据视图。</li><li>分析历程事件、对话路径和营销活动绩效。</li></ul>**启用此选项后，连接中的每一行数据每月都会计入您的 Customer Journey Analytics 的许可数据行，并显示在连接使用情况 UI 中。**<br><br/>&#x200B;只有在您熟悉关于在 Customer Journey Analytics 中额外使用数据行的情况下，才浏览此选项。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/integrations/ajo)。"
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_ajo"
@@ -120,7 +120,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_brand_concierge"
 >title="在 Customer Journey Analytics 中使用此连接"
->abstract="此选项允许您将 Customer Journey Analytics 的高级报告功能与您的 Brand Concierge 连接一起使用。这些功能允许您：<ul><li>在 Customer Journey Analytics 中对 Brand Concierge 数据进行深入分析。</li><li>编辑 Brand Concierge 连接和相关联的数据视图。</li><li>分析对话式参与度、情绪和转化量度。</li></ul>**启用此选项后，连接中的每一行数据每月都会计入您的 Customer Journey Analytics 的许可数据行，并显示在 Connections 使用界面中。**<br><br/>&#x200B;只有在您熟悉关于在 Customer Journey Analytics 中额外使用数据行的情况下，才浏览此选项。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)。"
+>abstract="此选项允许您将 Customer Journey Analytics 的高级报告功能与您的 Brand Concierge 连接一起使用。这些功能允许您：<ul><li>在 Customer Journey Analytics 中对 Brand Concierge 数据进行深入分析。</li><li>编辑 Brand Concierge 连接和相关联的数据视图。</li><li>分析对话式参与度、情绪和转化量度。</li></ul>**启用此选项后，连接中的每一行数据每月都会计入您的 Customer Journey Analytics 的许可数据行，并显示在连接使用情况 UI 中。**<br><br/>&#x200B;只有在您熟悉关于在 Customer Journey Analytics 中额外使用数据行的情况下，才浏览此选项。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)。"
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_brand_concierge"
@@ -130,7 +130,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_product_usage"
 >title="在 Customer Journey Analytics 中使用此连接"
->abstract="此选项允许您将 Customer Journey Analytics 的高级报告功能与您的产品使用情况连接一起使用。这些功能允许您：<ul><li>在 Customer Journey Analytics 中对产品使用情况数据进行深入分析。</li><li>编辑产品使用情况连接和相关数据视图。</li></ul>**启用此选项后，连接中的每一行数据每月都会计入您的 Customer Journey Analytics 的许可数据行，并显示在 Connections 使用界面中。**<br><br/>&#x200B;只有在您熟悉关于在 Customer Journey Analytics 中额外使用数据行的情况下，才浏览此选项。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/tools/product-usage/usage-overview)。"
+>abstract="此选项允许您将 Customer Journey Analytics 的高级报告功能与您的产品使用情况连接一起使用。这些功能允许您：<ul><li>在 Customer Journey Analytics 中对产品使用情况数据进行深入分析。</li><li>编辑产品使用情况连接和相关数据视图。</li></ul>**启用此选项后，连接中的每一行数据每月都会计入您的 Customer Journey Analytics 的许可数据行，并显示在连接使用情况 UI 中。**<br><br/>&#x200B;只有在您熟悉关于在 Customer Journey Analytics 中额外使用数据行的情况下，才浏览此选项。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/tools/product-usage/usage-overview)。"
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_product_usage"
@@ -172,7 +172,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建并编辑连接](https://video.tv.adobe.com/v/3409297/?captions=chi_hans&quality=12&learn=on){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建并编辑连接](https://video.tv.adobe.com/v/343044/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -208,7 +208,7 @@ ht-degree: 98%
 
 ### Customer Journey Analytics
 
-在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**&#x200B;屏幕中：
+在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**屏幕中：
 
 ![无标题连接设置](assets/create-conn1.png)
 
@@ -221,7 +221,7 @@ ht-degree: 98%
    | **[!UICONTROL 标记]** | 指定标记，将标记添加到您的连接，这样您就可以稍后使用这些标记搜索连接。 |
    | **[!UICONTROL 启用滚动数据窗口]** | 如果选中此复选框，那么您可以在连接级别将 Customer Journey Analytics 数据保留定义为以月计的时段（1 个月、3 个月、6 个月等）。<p>数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此轮廓或查找数据集不存在滚动数据窗口设置。但是，如果您的连接包括任何轮廓或查找数据集（一个或多个事件数据集除外），则该数据会在相同的时段内进行保存。<p> 主要好处是，您只需存储或报告适用且有用的数据，并且可删除不再有用的旧数据。它可以帮助您保持在合同限制范围内，并减少超出预期成本的风险。<p><ul><li>如果您保留默认值（未选中），Adobe Experience Platform 数据保留设置将取代保留期。如果您在 Experience Platform 中有 25 个月的数据，那么 Customer Journey Analytics 会通过回填获取 25 个月的数据。如果您在 Experience Platform 中删除了其中的 10 个月，Customer Journey Analytics 会保留剩余的 15 个月。</li><li>如果启用了一个滚动数据窗口，请在&#x200B;**[!UICONTROL 选择月数]**&#x200B;中指定您启用此滚动数据窗口的月数。 |
    | **[!UICONTROL 沙盒]** | 在 Experience Platform 中选择一个其中包含了您想为其创建连接的数据集的沙盒。<p>Adobe Experience Platform 提供了可将单个 Platform 实例划分为多个单独的虚拟环境的[沙盒](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sandbox/home)，以帮助开发和改进数字体验应用程序。您可以将沙盒视为包含数据集的“数据孤岛”。沙盒可用于控制对数据集的访问。<p>选择沙盒后，左边栏会显示可从该沙盒中提取的所有数据集。 |
-   | **[!UICONTROL 添加数据集]** | 选择![DataAdd](/help/assets/icons/DataAdd.svg) **[!UICONTROL 添加数据集]**，添加数据集。如果连接还没有数据集，您也可以选择&#x200B;**[!UICONTROL 添加数据集表中的数据集]**。 |
+   | **[!UICONTROL 添加数据集]** | 选择![DataAdd](/help/assets/icons/DataAdd.svg) **[!UICONTROL 添加数据集]**，以添加数据集。如果连接还没有数据集，您也可以选择&#x200B;**[!UICONTROL 添加数据集表中的数据集]**。 |
 
 
    对于您已配置的数据集，数据集表显示以下列：
@@ -229,12 +229,12 @@ ht-degree: 98%
    | 列 | 描述 |
    |---|---|
    | **[!UICONTROL 数据集名称]** | 选择您要提取到 Customer Journey Analytics 的一个或多个数据集，并选择&#x200B;**[!UICONTROL 添加。]**<p>（如果您有许多数据集可供选择，可以使用数据集列表上方的搜索数据集搜索栏搜索正确的数据集。） |
-   | ![更多](/help/assets/icons/More.svg) | 选择![更多](/help/assets/icons/More.svg)，可打开选定数据集的上下文菜单。根据数据集（的类型），您可以选择：<ul><li>![CrossSize75](/help/assets/icons/CrossSize400.svg)  **[!UICONTROL 删除数据集]**，以[删除一个数据集](#delete-a-dataset)。</li><li>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**，以[编辑一个数据集](#edit-a-dataset)。</li><li>![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**，以显示[&#128279;](#past-backfills)数据集过去的回填。 |
+   | ![更多](/help/assets/icons/More.svg) | 选择![更多](/help/assets/icons/More.svg)，可打开选定数据集的上下文菜单。根据数据集（的类型），您可以选择：<ul><li>![CrossSize75](/help/assets/icons/CrossSize400.svg)  **[!UICONTROL 删除数据集]**，以[删除一个数据集](#delete-a-dataset)。</li><li>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**，以[编辑一个数据集](#edit-a-dataset)。</li><li>![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**，以显示](#past-backfills)数据集过去的回填[。 |
    | **[!UICONTROL 上次更新时间]** | 仅对于事件数据集，此设置会自动设置为 Experience Platform 中基于事件的架构的默认时间戳字段。“N/A”表示该数据集不包含数据。 |
    | **[!UICONTROL 记录数]** | Experience Platform 中数据集上个月的总记录数。 |
    | **[!UICONTROL 架构]** | 在 Adobe Experience Platform 中创建数据集所依据的[架构。](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition) |
    | **[!UICONTROL 数据集类型]** | 对于您添加到此连接的每个数据集，Customer Journey Analytics 都会根据传入的数据自动设置[数据集类型](#dataset-types)。有 3 种不同的数据集类型：事件数据、轮廓数据和查找数据。有关数据集类型的说明，请参见下表。 |
-   | **[!UICONTROL 已拼合]** | 如果在连接UI[中启用了数据集](/help/stitching/use-stitching-ui.md)的拼接功能，则值为&#x200B;**[!UICONTROL true]**。 否则，值为&#x200B;**[!UICONTROL false]**。 此表中未将拼接过程[的](/help/stitching//use-stitching.md)请求所生成的拼接数据集标识为已拼接，默认值为&#x200B;**[!UICONTROL false]**。 |
+   | **[!UICONTROL 已拼接]** | 如果数据集[在连接 UI 中启用了拼接](/help/stitching/use-stitching-ui.md)，则该值为&#x200B;**[!UICONTROL 真]**。 否则，该值为&#x200B;**[!UICONTROL 假]**。 通过[请求拼接流程](/help/stitching//use-stitching.md)生成的已拼接数据集不会在此表中标识为已拼接，默认值为&#x200B;**[!UICONTROL 假]**。 |
    | **[!UICONTROL 粒度]** | 数据集中数据的粒度；仅适用于摘要数据集。 |
    | **[!UICONTROL 数据源类型]** | 数据集的数据源类型。不适用于摘要数据集。 |
    | **[!UICONTROL 人员 ID]** | 用于支持基于人员的数据集报告的人员 ID。 |
@@ -249,7 +249,7 @@ ht-degree: 98%
 
 [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
 
-在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**&#x200B;屏幕中：
+在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**屏幕中：
 
 ![无标题连接设置](assets/create-conn1-b2b.png)
 
@@ -272,7 +272,7 @@ ht-degree: 98%
    | 列 | 描述 |
    |---|---|
    | **[!UICONTROL 数据集名称]** | 选择您要提取到 Customer Journey Analytics 的一个或多个数据集，并选择&#x200B;**[!UICONTROL 添加。]**<p>（如果您有许多数据集可供选择，可以使用数据集列表上方的搜索数据集搜索栏搜索正确的数据集。） |
-   | ![更多](/help/assets/icons/More.svg) | 选择![更多](/help/assets/icons/More.svg)，可打开选定数据集的上下文菜单。根据数据集（的类型），您可以选择：<ul><li>![CrossSize75](/help/assets/icons/CrossSize400.svg)  **[!UICONTROL 删除数据集]**，以[删除一个数据集](#delete-a-dataset)。</li><li>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**，以[编辑一个数据集](#edit-a-dataset)。</li><li>![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**，以显示[&#128279;](#past-backfills)数据集过去的回填。 |
+   | ![更多](/help/assets/icons/More.svg) | 选择![更多](/help/assets/icons/More.svg)，可打开选定数据集的上下文菜单。根据数据集（的类型），您可以选择：<ul><li>![CrossSize75](/help/assets/icons/CrossSize400.svg)  **[!UICONTROL 删除数据集]**，以[删除一个数据集](#delete-a-dataset)。</li><li>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**，以[编辑一个数据集](#edit-a-dataset)。</li><li>![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**，以显示](#past-backfills)数据集过去的回填[。 |
    | **[!UICONTROL 上次更新时间]** | 仅对于事件数据集，此设置会自动设置为 Experience Platform 中基于事件的架构的默认时间戳字段。“N/A”表示该数据集不包含数据。 |
    | **[!UICONTROL 记录数]** | Experience Platform 中数据集上个月的总记录数。 |
    | **[!UICONTROL 架构]** | 在 Adobe Experience Platform 中创建数据集所依据的[架构。](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition) |
@@ -280,7 +280,7 @@ ht-degree: 98%
    | **[!UICONTROL 粒度]** | 数据集中数据的粒度；仅适用于摘要数据集。 |
    | **[!UICONTROL 数据源类型]** | 数据集的数据源类型。不适用于摘要数据集。 |
    | **[!UICONTROL 帐户 ID]** | （仅为基于帐户的连接显示）用于支持为数据集进行基于帐户的报告的帐户 ID。 |
-   | **[!UICONTROL 全局帐户 ID]** | （仅为基于帐户的连接显示）用于支持为数据集进行基于帐户的报告的全局帐户 ID。 |
+   | **[!UICONTROL 全球帐户 ID]** | （仅为基于帐户的连接显示）用于支持为数据集进行基于帐户的报告的全球帐户 ID。 |
    | **[!UICONTROL 购买群组 ID]** | （仅为基于帐户的连接显示）用于查找购买群组数据的购买群组 ID。 |
    | **[!UICONTROL 机会 ID]** | （仅为基于帐户的连接显示）用于查找机会数据的机会 ID。 |
    | **[!UICONTROL 人员 ID]** | 用于支持基于人员的数据集报告的人员 ID。 |
@@ -325,7 +325,7 @@ ht-degree: 98%
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_globalaccountid"
->title="全局帐户 ID"
+>title="全球帐户 ID"
 >abstract="从 Experience Platform 的数据集架构中定义的可用身份标识中选择一个全球帐户 ID（全球帐户的唯一标识符）。"
 
 >[!CONTEXTUALHELP]
@@ -395,7 +395,7 @@ ht-degree: 98%
 
 >[!CONTEXTUALHELP]
 >id="connection_globalaccountid"
->title="全局帐户 ID"
+>title="全球帐户 ID"
 >abstract="从 Experience Platform 的数据集架构中定义的可用身份标识中选择一个全球帐户 ID（全球帐户的唯一标识符）。"
 
 >[!CONTEXTUALHELP]
@@ -458,7 +458,7 @@ ht-degree: 98%
 
 >[!CONTEXTUALHELP]
 >id="connection_lookbackwindow"
->title="回溯时间范围"
+>title="回顾窗口"
 >abstract="为重播拼接中使用的回顾窗口选择适当的时段。"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/stitching/overview" text="拼接概述"
 
@@ -493,7 +493,7 @@ ht-degree: 98%
 |---|---|---|---|---|
 | **[!UICONTROL 事件]** | 表示时间事件的数据。例如，网站访问量、互动量、交易量、POS 数据、调查数据、广告展示数据等等。该数据可能是典型的点击流数据，带有客户 ID 或 Cookie ID 以及时间戳。使用事件数据，您可以灵活地选择将哪个 ID 用作人员 ID。 | 设置为 [!UICONTROL Experience Platform] 中基于事件的架构的默认时间戳字段。 | 任何一个基于 XDM 类且具有&#x200B;*时间序列*&#x200B;行为的内置或自定义架构。示例包括 *XDM 体验事件*&#x200B;或&#x200B;*XDM 决策事件*。 | 您可以选取您想要包含的人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。Experience Platform 中定义的每个数据集架构都可以拥有自己定义的一个或多个身份标识集，并与身份标识命名空间相关联。这些标识中的任何一个都可以用作人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。示例包括 Cookie ID、拼接 ID、用户 ID、跟踪代码、帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}等。 |
 | **[!UICONTROL 查找]** | 您可以将数据集添加为所有数据集类型中的字段查找：轮廓、查找和事件数据集（后者始终受支持）。此附加功能扩展了 Customer Journey Analytics 的能力，以支持包括 B2B 在内的复杂数据模型。此数据用于查找在“事件”、“轮廓”或“查找”数据中找到的值或键。您最多可以添加三级查找。（注意[派生字段](/help/data-views/derived-fields/derived-fields.md)不能用作”连接“内的查找的匹配键。）例如，您可以上传将事件数据中的数字 ID 映射到产品名称的查找数据。有关示例，请参阅 [B2B 示例](/help/use-cases/b2b/example.md)。 | 不适用 | 任何基于 XDM 类且具有&#x200B;*记录*&#x200B;行为的内置或自定义架构，*XDM 个体轮廓*&#x200B;类除外。 | 不适用 |
-| **[!UICONTROL 轮廓]** | [!UICONTROL 事件]数据中应用于您的帐户、人员、用户或客户的数据。例如，允许您上传关于客户的 CRM 数据。 | 不适用 | 任何基于 *XDM 个体轮廓*&#x200B;类的内置或自定义架构。 | 您可以选取您想要包含的人员 ID/帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。在 [!DNL Experience Platform] 中定义的每个数据集（摘要数据集除外）都定义了自己的一组或多组人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。例如，Cookie ID、拼接 ID、用户 ID、跟踪代码、帐户 ID 等。<br>![人员 ID &#x200B;](assets/person-id.png)**注意**：如果您创建的连接包含具有不同 ID 的数据集，报告会反映这一点。要合并数据集，您需要使用相同的人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。 |
+| **[!UICONTROL 轮廓]** | [!UICONTROL 事件]数据中应用于您的帐户、人员、用户或客户的数据。例如，允许您上传关于客户的 CRM 数据。 | 不适用 | 任何基于 *XDM 个体轮廓*&#x200B;类的内置或自定义架构。 | 您可以选取您想要包含的人员 ID/帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。在 [!DNL Experience Platform] 中定义的每个数据集（摘要数据集除外）都定义了自己的一组或多组人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。例如，Cookie ID、拼接 ID、用户 ID、跟踪代码、帐户 ID 等。<br>![人员 ID ](assets/person-id.png)**注意**：如果您创建的连接包含具有不同 ID 的数据集，报告会反映这一点。要合并数据集，您需要使用相同的人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。 |
 | **摘要** | 不与任何个人 ID 相关联的时间序列数据。摘要数据代表不同聚合级别的聚合数据，例如活动。您可以在 Customer Journey Analytics 中使用这些数据来支持各种用例。有关更多信息，请参阅[摘要数据](/help/data-views/summary-data.md)。 | 自动设置为 Experience Platform 中基于事件的摘要量度架构的默认时间戳字段。仅支持每小时或每天的粒度。 | 任何基于 *XDM 摘要量度*&#x200B;类的内置或自定义架构。 | 不适用 |
 
 或者，上面列出的数据集类型也可以基于一个临时架构或关系架构，而不是基于 XDM 的一般架构。
@@ -552,7 +552,7 @@ ht-degree: 98%
 1. 为您想编辑的数据集表中列出的数据集选择![更多](/help/assets/icons/More.svg)
 1. 选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**。
 
-1. 在&#x200B;**[!UICONTROL 编辑数据集：_数据集名称_]**&#x200B;对话框中配置[数据集设置](#dataset-settings)。
+1. 在&#x200B;**[!UICONTROL 编辑数据集：_数据集名称_]**对话框中配置[数据集设置](#dataset-settings)。
 
    ![编辑数据集](assets/edit-dataset.png)
 
@@ -586,7 +586,7 @@ ht-degree: 98%
 | 设置 | 描述 |
 | --- | --- |
 | **[!UICONTROL 人员 ID]** | 从可用身份标识的下拉菜单中选择一个人员 ID。这些身份标识在 Experience Platform 的数据集架构中定义。请参阅[将身份标识图用作人员 ID](#use-identity-map-as-a-person-id)，了解如何将身份标识图用作人员 ID。<p>如果没有可供选择的人员 ID，就意味着架构中尚未定义人员 ID。请参阅[在 UI 中定义身份标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)以了解更多信息。 <p>所选人员 ID 的值区分大小写。例如，`abc123` 和 `ABC123` 是两个不同的值。<p>如果记录中不包含您已选择用作事件数据集的人员 ID 的身份标识值，就会跳过该记录。 |
-| **[!UICONTROL 启用身份拼接]** | 选择以[为此事件数据集](/help/stitching/overview.md)启用标识拼接。 |
+| **[!UICONTROL 启用身份标识拼接]** | 选择此选项可为该事件数据集[启用身份标识拼接](/help/stitching/overview.md)。 |
 | **[!UICONTROL 时间戳]** | 这个设置会自动设为 Experience Platform 中基于事件的架构的默认时间戳字段。 |
 | **[!UICONTROL 数据源类型]** | 选择数据源类型。数据源的类型包括： <ul><li>[!UICONTROL Web 数据]</li><li>[!UICONTROL 移动应用程序数据]</li><li>[!UICONTROL POS 数据]</li><li>[!UICONTROL CRM 数据]</li><li>[!UICONTROL 调查数据]</li><li>[!UICONTROL 呼叫中心数据]</li><li>[!UICONTROL 产品数据]</li><li> [!UICONTROL 帐户数据]</li><li> [!UICONTROL 事务数据]</li><li>[!UICONTROL 客户反馈数据]</li><li> [!UICONTROL 其他]</li></ul>该字段用于调查正在使用的数据源的类型。 |
 | **[!UICONTROL 数据源描述]** | 这是在您选择“其他”作为数据源类型后对数据源的描述。 |
@@ -602,8 +602,8 @@ ht-degree: 98%
 
 | 设置 | 描述 |
 | --- | --- |
-| **[!UICONTROL 全局帐户 ID]** | 从 Experience Platform 的数据集架构中定义的可用身份标识中选择一个全局帐户 ID（帐户的唯一标识符）。适用于已将全局帐户作为容器添加到连接的情况。 <p>如果记录中不包含您已选择用作事件数据集的帐户 ID 的身份标识值，就会跳过该记录。 |
-| **[!UICONTROL 帐户 ID]** | 从 Experience Platform 的数据集架构中定义的可用身份标识中选择一个帐户 ID（帐户的唯一标识符）。适用于未将全局帐户作为容器添加到连接的情况。 |
+| **[!UICONTROL 全球帐户 ID]** | 从 Experience Platform 的数据集架构中定义的可用身份标识中选择一个全球帐户 ID（帐户的唯一标识符）。适用于已将全球帐户作为容器添加到连接的情况。 <p>如果记录中不包含您已选择用作事件数据集的帐户 ID 的身份标识值，就会跳过该记录。 |
+| **[!UICONTROL 帐户 ID]** | 从 Experience Platform 的数据集架构中定义的可用身份标识中选择一个帐户 ID（帐户的唯一标识符）。适用于未将全球帐户作为容器添加到连接的情况。 |
 | **[!UICONTROL 机会 ID]** | 从 Experience Platform 的数据集架构中定义的可用身份标识中选择一个机会 ID（机会的唯一标识符）。 |
 | **[!UICONTROL 购买群组 ID]** | 从 Experience Platform 的数据集架构中定义的可用身份标识中选择一个购买群组 ID（购买群组的唯一标识符）。 |
 | **[!UICONTROL 人员 ID]** | 从可用身份标识的下拉菜单中选择一个人员 ID。这些身份标识已在 Experience Platform 的数据集架构中定义。请参阅[将身份标识图用作人员 ID](#id-map)，了解如何将身份标识图用作人员 ID。<p>如果没有可供选择的人员 ID，则意味着架构中尚未定义一个或多个人员 ID。请参阅[在 UI 中定义身份标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)以了解更多信息。 <p>所选人员 ID 的值区分大小写。例如，`abc123` 和 `ABC123` 是两个不同的值。 |
@@ -636,8 +636,8 @@ ht-degree: 98%
 | 设置 | 描述 |
 | --- | --- |
 | **[!UICONTROL 人员 ID]** | 从可用身份标识的下拉菜单中选择一个人员 ID。这些身份标识在 Experience Platform 的数据集架构中定义。请参阅[将身份标识图用作人员 ID](#id-map)，了解如何将身份标识图用作人员 ID。<p>如果没有可供选择的人员 ID，就说明架构中尚未定义人员 ID。请参阅[在 UI 中定义身份标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)以了解更多信息。 <p>所选人员 ID 的值区分大小写。例如，`abc123` 和 `ABC123` 是两个不同的值。 <p>如果记录中不包含您已选择用作轮廓数据集的人员 ID 的身份标识值，就会跳过该记录。 |
-| **[!UICONTROL 全局帐户字段]** | 从可用身份标识的下拉菜单中选择一个全局帐户字段，以支持为数据集生成基于帐户的报告。适用于已将全局帐户作为容器添加到连接的情况。 |
-| **[!UICONTROL 帐户字段]** | 从可用身份标识的下拉菜单中选择一个帐户字段，以支持为数据集生成基于帐户的报告。适用于未将全局帐户作为容器添加到连接的情况。 |
+| **[!UICONTROL 全球帐户字段]** | 从可用身份标识的下拉菜单中选择一个全球帐户字段，以支持为数据集生成基于帐户的报告。适用于已将全球帐户作为容器添加到连接的情况。 |
+| **[!UICONTROL 帐户字段]** | 从可用身份标识的下拉菜单中选择一个帐户字段，以支持为数据集生成基于帐户的报告。适用于未将全球帐户作为容器添加到连接的情况。 |
 | **[!UICONTROL 数据源类型]** | 选择数据源类型。数据源的类型包括： <ul><li>[!UICONTROL Web 数据]</li><li>[!UICONTROL 移动应用程序数据]</li><li>[!UICONTROL POS 数据]</li><li>[!UICONTROL CRM 数据]</li><li>[!UICONTROL 调查数据]</li><li>[!UICONTROL 呼叫中心数据]</li><li>[!UICONTROL 产品数据]</li><li> [!UICONTROL 帐户数据]</li><li> [!UICONTROL 事务数据]</li><li>[!UICONTROL 客户反馈数据]</li><li> [!UICONTROL 其他]</li></ul>该字段用于调查正在使用的数据源的类型。 |
 | **[!UICONTROL 数据源描述]** | 这是在您选择“其他”作为数据源类型后对数据源的描述。 |
 
@@ -674,7 +674,7 @@ ht-degree: 98%
 | **[!UICONTROL 键]** | 用于查找数据集的键。 <p>如果记录中不包含您为查找数据集选择的键值，就会跳过该记录。 |
 | **[!UICONTROL 匹配键类型]** | 选择如何连接数据集：基于&#x200B;**[!UICONTROL 按字段匹配]**&#x200B;或&#x200B;**[!UICONTROL 按容器匹配]**。请参阅[按字段容器匹配](/help/getting-started/cja-b2b-concepts-features.md#match-by-container-or-field)，了解更多信息。 |
 | **[!UICONTROL 匹配键]** | 某个事件数据集中要按其连接在一起的匹配键。如果此列表为空，则可能尚未添加或配置事件数据集。<br/><br/>根据您选择的&#x200B;**[!UICONTROL 匹配键类型]**，选择适当的值：<ul><li>**[!UICONTROL 按字段匹配]**：![按字段匹配](assets/match-by-field.png)<br/>从&#x200B;**[!UICONTROL 匹配键]**&#x200B;下拉菜单中选择一个字段，将其与某个事件数据集连接。如果此列表为空，则可能尚未添加或配置事件数据集。</li><li>**[!UICONTROL 按容器匹配]**： ![按容器匹配](assets/match-by-container.png)<br/>从&#x200B;**[!UICONTROL 匹配键]**&#x200B;下拉菜单中选择一个容器，将其与某个事件数据集连接。您在设置连接时包含进去的容器决定了有哪些可用容器可供选择。</li></ul> |
-| **[!UICONTROL 全局帐户字段]** | 用于基于帐户的报告的全局帐户 ID。 |
+| **[!UICONTROL 全球帐户字段]** | 用于基于帐户的报告的全球帐户 ID。 |
 
 
 
@@ -711,14 +711,14 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->关系数据集主要用于支持即将推出的用于 Customer Journey Analytics 的 Experience Platform Data Mirror 功能。
+>关联型数据集主要用于支持即将推出的用于 Customer Journey Analytics 的 Experience Platform Data Mirror 功能。
 >
 
-关系数据集的具体设置包括：
+关联型数据集的具体设置包括：
 
 | 设置 | 选定的数据集类型 | 描述 |
 |---|---|---|
-| **[!UICONTROL 数据集类型]** | 不适用 | 关系数据集中的数据类型。<br/>如果数据集中包含时间序列数据，那么可能的值包括：**[!UICONTROL 事件]**&#x200B;和&#x200B;**[!UICONTROL 摘要]**。<br/>如果数据集中包含记录数据，那么可能的值包括：**[!UICONTROL 轮廓]**&#x200B;和&#x200B;**[!UICONTROL 查找]**。 |
+| **[!UICONTROL 数据集类型]** | 不适用 | 关联型数据集中的数据类型。<br/>如果数据集中包含时间序列数据，那么可能的值包括：**[!UICONTROL 事件]**&#x200B;和&#x200B;**[!UICONTROL 摘要]**。<br/>如果数据集中包含记录数据，那么可能的值包括：**[!UICONTROL 轮廓]**&#x200B;和&#x200B;**[!UICONTROL 查找]**。 |
 | **[!UICONTROL 人员 ID]** | 事件、轮廓 | 从关系架构中选择表示人员 ID 的字段。此选择仅限于在关系架构中标记为身份标识并具有身份标识命名空间的字段的列表。 |
 | **[!UICONTROL 时间戳]** | 事件、摘要 | 在架构中定义为时间戳描述符的字段。此字段会自动填充。 |
 | **[!UICONTROL 键]** | 查找 | 用于查找数据集的键。<br/>如果记录中不包含您为查找数据集选择的键值，就会跳过该记录。 |
@@ -734,7 +734,7 @@ ht-degree: 98%
 
 ### 重新摄取数据
 
-有时您需要将数据从一个或多个数据集重新摄取到连接中。对于临时或关系数据集，您需要[删除该数据集，然后再重新添加](#edit-a-dataset)。对于其他数据集，您可以更新设置。操作方法：
+有时您需要将数据从一个或多个数据集重新摄取到连接中。对于临时或关联型数据集，您需要[删除该数据集，然后再重新添加](#edit-a-dataset)。对于其他数据集，您可以更新设置。操作方法：
 
 1. 对于要为其重新摄取数据的数据集：
 
@@ -759,7 +759,7 @@ ht-degree: 98%
 
 ### 过去的回填
 
-在界面中选择![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;后，**[!UICONTROL 过去的回填： _数据集名称_]**&#x200B;对话框就会显示该数据集中最近的回填。
+在界面中选择![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;后，**[!UICONTROL 过去的回填： _数据集名称_]**对话框就会显示该数据集中最近的回填。
 
 
 ## 连接预览 {#preview}
@@ -794,7 +794,7 @@ ht-degree: 98%
 
 ## 使用身份标识映射作为个人 ID {#id-map}
 
-Customer Journey Analytics 支持将身份标识映射作为个人 ID。Identity Map 是一种映射数据结构，它允许您上传键值对。键是身份标识命名空间，值是包含身份标识值的结构。在上传的每一行/每个事件中，都存在身份标识映射，并且身份标识映射会相应地填充到每一行中。
+Customer Journey Analytics 支持将身份标识映射作为个人 ID。身份标识图是一种映射数据结构，它允许您上传键值对。键是身份标识命名空间，值是包含身份标识值的结构。在上传的每一行/每个事件中，都存在身份标识映射，并且身份标识映射会相应地填充到每一行中。
 
 身份标识映射适用于任何满足以下要求的数据集：使用基于 [ExperienceEvent XDM](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/home) 类的架构。当您要将此类数据集包含在 Customer Journey Analytics 连接中时，您既可以选择主要 ID，也可以选择身份标识映射来作为字段：
 
@@ -804,7 +804,7 @@ Customer Journey Analytics 支持将身份标识映射作为个人 ID。Identity
 
 | 选项 | 描述 |
 |---|---|
-| **[!UICONTROL 使用主要 ID 命名空间]** | 该选项会指示 Customer Journey Analytics 在“身份标识映射”中查找标记了`primary=true`属性的身份标识，并将该身份标识用作该行的人员 ID。该身份标识是 Experience Platform 中用于分区时使用的主密钥。此身份标识也是用作 Customer Journey Analytics 人员 ID 的主要候选项（取决于数据集在 Customer Journey Analytics 连接中如何配置）。 |
+| **[!UICONTROL 使用主标识命名空间]** | 该选项会指示 Customer Journey Analytics 在“身份标识映射”中查找标记了`primary=true`属性的身份标识，并将该身份标识用作该行的人员 ID。该身份标识是 Experience Platform 中用于分区时使用的主键。此身份标识也是用作 Customer Journey Analytics 人员 ID 的主要候选项（取决于数据集在 Customer Journey Analytics 连接中如何配置）。 |
 | **[!UICONTROL 命名空间]** | （此选项仅适用于未使用主要 ID 命名空间的情况。）标识命名空间是 [Experience Platform 身份标识服务的](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/namespaces)一个组件。命名空间充当与身份标识相关的上下文的指示器。如果指定了命名空间，Customer Journey Analytics 会在每行的“身份标识图”中搜索此命名空间密钥，并将该命名空间下的身份标识用作该行的人员 ID。由于 Customer Journey Analytics 无法对所有行执行完整数据集扫描以确定存在哪些命名空间，因此下拉菜单中会显示所有可能的命名空间。必须知道数据中指定了哪些命名空间；系统不会自动检测这些命名空间。 |
 
 {style="table-layout:auto"}
@@ -815,8 +815,8 @@ Customer Journey Analytics 支持将身份标识映射作为个人 ID。Identity
 
 | 选项 | 身份标识映射中不存在 ID。 | 多个 ID，没有一个标记为主要 ID | 多个 ID 均标记为主要 ID | 单个 ID，是否标记为主要 ID | 一个 ID 标记为主要 ID 的无效命名空间 |
 |---|---|---|---|---|---|
-| **[!UICONTROL 使用主要 ID 命名空间]已选中** | Customer Journey Analytics 删除了该行。 | Customer Journey Analytics 删除了该行，因为未指定主要 ID。 | 所有命名空间下标记为主要 ID 的 ID 都将被提取到列表中，随后，这些 ID 会按字母顺序排序；根据这种新的排序方式，排在第一个命名空间中的首个 ID 将被用作人员 ID。 | 单个 ID 用作个人 ID。 | 即使命名空间可能无效（Adobe Experience Platform 中不存在），Customer Journey Analytics 也会使用该命名空间下的主要 ID 作为人员 ID。 |
-| **[!UICONTROL 特定的身份标识映射命名空间]已选择** | Customer Journey Analytics 删除了该行。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。（由于在创建连接时，只能选择有效的命名空间，因此无效的命名空间/ID 不可能用作人员 ID） |
+| **[!UICONTROL 使用主标识命名空间]已选中**<br/>![&#x200B;使用主标识命名空间](assets/use-primary-identity-namespace.png) | Customer Journey Analytics 删除了该行。 | Customer Journey Analytics 删除了该行，因为未指定主要 ID。 | 所有命名空间下标记为主要 ID 的 ID 都将被提取到列表中，随后，这些 ID 会按字母顺序排序；根据这种新的排序方式，排在第一个命名空间中的首个 ID 将被用作人员 ID。 | 单个 ID 用作个人 ID。 | 即使命名空间可能无效（Adobe Experience Platform 中不存在），Customer Journey Analytics 也会使用该命名空间下的主要 ID 作为人员 ID。 |
+| 已选择&#x200B;**[!UICONTROL 特定的身份映射命名空间]**<br/>![&#x200B;不使用主身份命名空间](assets/not-use-primary-identity-namespace.png) | Customer Journey Analytics 删除了该行。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。 | 选定命名空间下的所有 ID 都将被提取到列表中，并且首个 ID 将会用作人员 ID。（由于在创建连接时，只能选择有效的命名空间，因此无效的命名空间/ID 不可能用作人员 ID） |
 
 {style="table-layout:auto"}
 
@@ -840,5 +840,5 @@ Customer Journey Analytics 支持将身份标识映射作为个人 ID。Identity
 >[!MORELIKETHIS]
 >
 >* [数据摄取概述](/help/data-ingestion/data-ingestion.md)
->* 博客：[如何利用 Adobe Customer Journey Analytics 中的事件、查找和轮廓数据集](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478?profile.language=zh-Hans)
+>* 博客：[如何利用 Adobe Customer Journey Analytics 中的事件、查找和轮廓数据集](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
 
