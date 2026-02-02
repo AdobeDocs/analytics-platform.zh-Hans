@@ -16,7 +16,7 @@ ht-degree: 6%
 
 此用例介绍了如何使用派生字段的强大功能设置特定维度的目标，然后在Workspace项目中使用这些目标。
 
-如果您不熟悉派生字段，请参阅[教程](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html)和[文档](../data-views/derived-fields/derived-fields.md)以了解相关说明。
+如果您不熟悉派生字段，请参阅[教程](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=zh-Hans)和[文档](../data-views/derived-fields/derived-fields.md)以了解相关说明。
 
 
 ## 定义目标
