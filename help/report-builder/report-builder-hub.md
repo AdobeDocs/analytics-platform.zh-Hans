@@ -1,15 +1,15 @@
 ---
-title: 什么是 Customer Journey Analytics 中的 Report Builder 中心
-description: 介绍 Report Builder 中心组件
+title: Report Builder 中心
+description: 了解Report Builder中心。
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
 solution: Customer Journey Analytics
-source-git-commit: 065cf61d80ceb3c921ea666ba299e56fb044335b
+source-git-commit: 1e19e0c79617d27c7039b695c70ca5026fcaf357
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 27%
+source-wordcount: '534'
+ht-degree: 25%
 
 ---
 
@@ -39,7 +39,7 @@ Report Builder中心包含![AddCircle](/help/assets/icons/AddCircle.svg) **[!UIC
 | ![编辑](/help/assets/icons/Edit.svg)**[!UICONTROL 编辑数据块]** | 所选一个或多个单元格仅属于一个数据块。 | 用于编辑数据块。 |
 | ![刷新](/help/assets/icons/Refresh.svg) **[!UICONTROL 刷新数据块]** | 选区至少包含一个数据块。该命令仅刷新选区中的数据块。 | 用于刷新一个或多个数据块。 |
 | ![DocumentRefresh](/help/assets/icons/DocumentRefresh.svg) **[!UICONTROL 刷新所有数据块]** | 工作簿包含一个或多个数据块。 | 用于刷新工作簿中的所有数据块 |
-| ![发送](/help/assets/icons/Send.svg) **[!UICONTROL 发送工作簿]** | 工作簿包含一个或多个数据块。 | 使用通过电子邮件以文件形式发送工作簿。 |
+| ![发送](/help/assets/icons/Send.svg) **[!UICONTROL 发送工作簿]** | 工作簿包含一个或多个数据块。 | 使用以电子邮件的形式[发送工作簿](schedule-reportbuilder.md)。 |
 | ![复制](/help/assets/icons/Copy.svg) **[!UICONTROL 复制数据块]** | 所选单元格或单元格属于一个或多个数据块。 | 用于复制数据块。 |
 | ![剪切](/help/assets/icons/Cut.svg) **[!UICONTROL 剪切数据块]** | 所选单元格或单元格属于一个或多个数据块。 | 设置以剪切数据块。 |
 | ![删除](/help/assets/icons/Delete.svg) **[!UICONTROL 删除数据块]** | 所选一个或多个单元格仅属于一个数据块。 | 用于删除数据块 |
@@ -70,6 +70,6 @@ Report Builder中心包含![AddCircle](/help/assets/icons/AddCircle.svg) **[!UIC
 >[!MORELIKETHIS]
 >
 >[选择数据视图](select-data-view.md)
->&#x200B;>[选择日期范围](select-date-range.md)
->&#x200B;>[使用筛选器](work-with-filters.md)
+>[选择日期范围](select-date-range.md)
+>[使用筛选器](work-with-filters.md)
 >

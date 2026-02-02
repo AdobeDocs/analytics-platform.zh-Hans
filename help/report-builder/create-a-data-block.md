@@ -1,15 +1,15 @@
 ---
-title: 如何在Customer Journey Analytics中使用Report Builder创建数据块
-description: 介绍如何创建数据块。
+title: 在Report Builder中创建数据块
+description: 了解如何创建数据块。
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: 7d3300336a955facc230f335d1452096700ea98b
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 24%
+source-wordcount: '771'
+ht-degree: 23%
 
 ---
 
@@ -114,7 +114,7 @@ ht-degree: 24%
 >[!MORELIKETHIS]
 >
 >[选择数据视图](select-data-view.md)
->&#x200B;>[选择日期范围](select-date-range.md)
->&#x200B;>[筛选维度](filter-dimensions.md)
->&#x200B;>[使用区段](work-with-filters.md)
+>[选择日期范围](select-date-range.md)
+>[筛选维度](filter-dimensions.md)
+>[使用区段](work-with-filters.md)
 >

@@ -1,15 +1,15 @@
 ---
-title: 如何在 Customer Journey Analytics 中使用 Report Builder 管理数据块
-description: 描述如何使用 Report Builder 中的管理功能
+title: 在Report Builder中管理数据块
+description: 了解如何管理Report Builder中的数据块。
 role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
-source-git-commit: 22b06eaf9f224188699aa241de1d1daad8a14619
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 21%
+source-wordcount: '517'
+ht-degree: 17%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 21%
 
 ## 编辑数据块
 
-您可以编辑数据视图和日期范围数据块。 或应用于数据块的区段。
+您可以编辑数据块的数据视图和日期范围。 或应用于数据块的区段。
 
 例如，您可以用一个或多个数据块中的新区段替换现有区段。
 

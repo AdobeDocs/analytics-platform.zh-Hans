@@ -1,14 +1,14 @@
 ---
-title: 如何在Customer Journey Analytics的Report Builder中使用区段
-description: 介绍如何在Report Builder for Customer Journey Analytics中使用区段
+title: 在Report Builder中使用区段
+description: 了解如何在Report Builder中使用区段。
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 1f39d7f4-b508-45d8-9b97-81242c3805d3
 solution: Customer Journey Analytics
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '635'
 ht-degree: 6%
 
 ---
@@ -52,14 +52,14 @@ ht-degree: 6%
 
 1. 从一个或多个数据块选择单元格范围。
 
-1. 选择&#x200B;**[!UICONTROL 区段]**&#x200B;链接以启动&#x200B;**[!UICONTROL 快速编辑]**&#x200B;**[!UICONTROL 区段]**&#x200B;面板。
+1. 选择&#x200B;**[!UICONTROL 区段]**&#x200B;链接以启动&#x200B;**[!UICONTROL 快速编辑]****[!UICONTROL 区段]**&#x200B;面板。
 
 
 ### 添加或删除区段
 
 您可以使用“添加/删除”选项添加或删除区段。
 
-1. 在&#x200B;**[!UICONTROL 快速编辑]**&#x200B;**[!UICONTROL 区段]**&#x200B;面板中选择&#x200B;**[!UICONTROL 添加/删除]**&#x200B;选项卡。
+1. 在&#x200B;**[!UICONTROL 快速编辑]****[!UICONTROL 区段]**&#x200B;面板中选择&#x200B;**[!UICONTROL 添加/删除]**&#x200B;选项卡。
 
 
    1. 从&#x200B;**[!UICONTROL 段]**&#x200B;下拉菜单中选择一个或多个段。 区段已添加到&#x200B;**[!UICONTROL 应用的区段]**&#x200B;列表。
@@ -72,7 +72,7 @@ Report Builder显示消息以确认应用的区段更改。
 
 您可以使用另一个区段替换现有区段，以更改数据的分段方式。
 
-1. 在&#x200B;**[!UICONTROL 快速编辑]**&#x200B;**[!UICONTROL 区段]**&#x200B;面板中选择&#x200B;**[!UICONTROL 替换]**&#x200B;选项卡。
+1. 在&#x200B;**[!UICONTROL 快速编辑]****[!UICONTROL 区段]**&#x200B;面板中选择&#x200B;**[!UICONTROL 替换]**&#x200B;选项卡。
 
 1. 使用&#x200B;**搜索列表**&#x200B;搜索字段来查找特定区段。
 

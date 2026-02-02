@@ -1,15 +1,15 @@
 ---
-title: 如何在 Customer Journey Analytics 中使用 Report Builder 安排工作簿
-description: 了解如何使用Report Builder中的计划功能
+title: 使用Report Builder计划工作簿
+description: 了解如何使用Report Builder中的计划功能。
 role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: 9505f21748b3d94b2398f898e5399d095ccec260
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 15%
+source-wordcount: '858'
+ht-degree: 14%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 15%
 
 >[!BEGINSHADEBOX]
 
-请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [计划工作簿](https://video.tv.adobe.com/v/3417502/?captions=chi_hans&quality=12&learn=on){target="_blank"}以观看演示视频。
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [计划工作簿](https://video.tv.adobe.com/v/3413079/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 

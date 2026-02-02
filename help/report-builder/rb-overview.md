@@ -1,15 +1,15 @@
 ---
-title: 什么是 Customer Journey Analytics 中的 Report Builder
-description: 介绍适用于 Customer Journey Analytics 的 Report Builder
+title: Report Builder 概述
+description: 了解Report Builder功能。
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 56bf524d-101d-4745-b2ef-9770c50f6774
 solution: Customer Journey Analytics
-source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 100%
+source-wordcount: '330'
+ht-degree: 98%
 
 ---
 
@@ -41,14 +41,14 @@ Customer Journey Analytics 是一个构建在 Adobe Experience Platform 之上�
 
 - **创建仪表板**：从 Customer Journey Analytics 提取的数据可用于创建基于 Excel 的仪表板和可视化图表，以提供对关键绩效指标 (KPI) 的高级概述。
 
-- **分享见解**：您可以与可能无法直接访问 Customer Journey Analytics 的团队成员或利益相关者共享 Excel 报告和见解。
+- **分享洞察**：您可以与可能无法直接访问 Customer Journey Analytics 的团队成员或利益相关者共享 Excel 报告和洞察。
 
 
 ## 概述视频
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [适用于 Customer Journey Analytics 的 Report Builder](https://video.tv.adobe.com/v/3452590?captions=chi_hans&quality=12&learn=on){target="_blank"} 以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [适用于 Customer Journey Analytics 的 Report Builder](https://video.tv.adobe.com/v/337569?quality=12&learn=on){target="_blank"} 以获取演示视频。
 
 >[!ENDSHADEBOX]
 

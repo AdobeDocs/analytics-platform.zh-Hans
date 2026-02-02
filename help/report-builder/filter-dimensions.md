@@ -1,14 +1,14 @@
 ---
 title: Report Builder中的筛选维度
-description: 介绍如何在适用于Customer Journey Analytics的Report Builder中使用过滤器维度
+description: 了解如何在Report Builder中筛选维度。
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: a18b628f02889911c7663c32f31ef3c3bec3cf2e
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '990'
 ht-degree: 33%
 
 ---

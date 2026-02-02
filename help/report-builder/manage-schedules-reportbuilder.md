@@ -1,14 +1,14 @@
 ---
-title: 如何在Adobe Analytics中管理Report Builder中的计划工作簿
-description: 了解如何在Report Builder中管理计划工作簿以保护目标
+title: 在Report Builder中管理计划工作簿
+description: 了解如何在Report Builder中管理计划工作簿。
 role: User, Admin
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 0a0427d9-223e-410b-a8ef-8601390d88aa
-source-git-commit: 755a5223deb0845079ea98a7371a2f8acb69ea4b
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '326'
 ht-degree: 3%
 
 ---

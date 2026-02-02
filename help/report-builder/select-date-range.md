@@ -1,15 +1,15 @@
 ---
-title: 如何在Customer Journey Analytics的Report Builder中选择日期范围
-description: 介绍如何在Report Builder for Customer Journey Analytics中使用日历、滚动日期和自定义表达式
+title: 在Report Builder中选择数据范围
+description: 了解如何在Report Builder中选择日期范围。
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: 9794779894fbecb433c16d108c555c5f81a4b491
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 49%
+source-wordcount: '853'
+ht-degree: 50%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 49%
 
 1. 选择&#x200B;**[!UICONTROL 开始]**、**[!UICONTROL 结束]**&#x200B;或&#x200B;**[!UICONTROL 固定日期]**。
 
-   - 当选择了&#x200B;**[!UICONTROL 开始]**&#x200B;或&#x200B;**[!UICONTROL 结束]**&#x200B;时，您可以生成一个完整的表达式。例如：**&#x200B;** **[!UICONTROL 当前年份的结束]**&#x200B;**[!UICONTROL 加上]**`1`**[!UICONTROL 天]**。为表达式的每个部分选择适当的值。
+   - 当选择了&#x200B;**[!UICONTROL 开始]**&#x200B;或&#x200B;**[!UICONTROL 结束]**&#x200B;时，您可以生成一个完整的表达式。例如：**** **[!UICONTROL 当前年份的结束]****[!UICONTROL 加上]**`1`**[!UICONTROL 天]**。为表达式的每个部分选择适当的值。
 
       - 选择当前时间的值。例如，**[!UICONTROL 当前年份]**。
       - 为可选的附加计算选择值。 例如，**[!UICONTROL 加上]**。
