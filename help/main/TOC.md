@@ -9,8 +9,8 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: a8c158e66b66f2110df12fac794b2223f1922b1f
-workflow-type: ht
+source-git-commit: 905d32421b4c1d3135a51dfd9898a02e750555d0
+workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 100%
 
@@ -139,6 +139,11 @@ ht-degree: 100%
    + [合并事件数据集](../connections/combined-dataset.md)
    + [标准查找](../connections/standard-lookups.md)
    + [查找 B2B](../connections/transform-datasets-b2b-lookups.md)
+   + 受众分析 {#audience-analysis}
+      + [概述](/help/connections/audience-analysis/audience-analysis-overview.md)
+      + [配置](/help/connections/audience-analysis/audience-analysis-configure.md)
+      + [管理](/help/connections/audience-analysis/audience-analysis-manage.md)
+      + [分析](/help/connections/audience-analysis/analyze-audiences.md)
 + 数据视图  {#cja-dataviews}
    + [数据视图概述](../data-views/data-views.md)
    + [创建或编辑数据视图](../data-views/create-dataview.md)
@@ -163,11 +168,6 @@ ht-degree: 100%
    + 共享量度和维度{#shared-metrics-dimensions}
       + [概述](/help/data-views/shared-metrics-dimensions/smd-overview.md)
       + [编辑器](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
-   + 受众分析 {#audience-analysis}
-      + [概述](/help/connections/audience-analysis/audience-analysis-overview.md)
-      + [配置](/help/connections/audience-analysis/audience-analysis-configure.md)
-      + [管理](/help/connections/audience-analysis/audience-analysis-manage.md)
-      + [分析](/help/connections/audience-analysis/analyze-audiences.md)
 + 工具 {#tools}
    + 资产转移 {#asset-transfer}
       + [转移资产](../tools/asset-transfer/transfer-assets.md)
