@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 source-git-commit: 518f2aeac309a34016146b7a4da7823b6fd84cac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2494'
 ht-degree: 100%
 
@@ -218,7 +218,7 @@ Data Insights 代理会处理每个用户提示词所提供的上下文，尝试
 | 摘要数字可视化图表 | <ul><li>合计</li></ul> |
 | 比较组件 | <ul><li>比较</li><li>VS</li><li>对比度</li><li>每周</li><li>月度环比</li><li>季度环比</li><li>年度同比</li></ul> |
 | 圆环图可视化图表 | <ul><li>比例</li><li>份额</li><li>分布</li><li>百分比</li><li>贡献</li><li>部分</li><li>部分</li></ul> |
-| 线形图可视化图表 | <ul><li>趋势</li><li>[时间范围]内的[量度]</li></ul> |
+| 折线图可视化图表 | <ul><li>趋势</li><li>[时间范围]内的[量度]</li></ul> |
 | 条形图可视化图表 | <ul><li>按[维度]的[量度]</li></ul> |
 
 <!--

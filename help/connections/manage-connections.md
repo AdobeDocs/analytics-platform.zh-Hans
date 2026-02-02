@@ -7,9 +7,9 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 source-git-commit: 32997d0fd9801099a75287f63197d3b4c2ba81ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4935'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -196,11 +196,11 @@ ht-degree: 99%
 
 * Journey Optimizer 连接和任何相关联的数据视图都被重置为其默认状态，无法再编辑。
 
-* 与此连接相关联的任何自定义派生字段都被删除。
+* 与此连接相关联的任何自定义派生字段都删除。
 
 * 您无法在 Customer Journey Analytics 中对 Journey Optimizer 数据进行深入分析。
 
-  这意味着 Journey Optimizer 中的&#x200B;**[!UICONTROL 在 CJA 中分析]**&#x200B;按钮被禁用。
+  这意味着 Journey Optimizer 中的&#x200B;**[!UICONTROL 在 CJA 中分析]**&#x200B;按钮已禁用。
 
 >[!IMPORTANT]
 >
@@ -258,7 +258,7 @@ ht-degree: 99%
 | **[!UICONTROL 事件数据记录可用]** | **对于整个连接**&#x200B;可用于报告的事件数据集总行数。这个数量与任何日期范围或数据集的选择无关。 |
 | [!UICONTROL **[!UICONTROL 量度]**] | 汇总添加、跳过和删除的事件、查找、轮廓和摘要数据集记录以及添加的批次数。这些量度基于&#x200B;**您选择的数据集和日期范围**。<p>选择&#x200B;**[!UICONTROL 查看详细信息]**，以显示&#x200B;**[!UICONTROL 查看跳过的详细信息]**&#x200B;弹出窗口。该弹出窗口列出了所有事件数据集或选定数据集中跳过的记录数及其原因。<p>![跳过的记录数](assets/skipped-records.png)<p>选择![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)弹出窗口，查看更多信息。对于某些跳过的原因，例如[!UICONTROL 访客 ID 为空]，弹出窗口中会显示 **[!UICONTROL EQS (Experience Platform for Query Service) 的示例 PSQL]**，您可以在[查询服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/home)中使用它来查询数据集中跳过的记录。选择![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL 复制 EQS 的示例 PSQL]** 来复制 SQL。 |
 | **[!UICONTROL 添加的记录数]** | 可视化图表，展示了在选定时段内，**为您选择的数据集和日期范围**&#x200B;添加了多少行。每 10 分钟更新一次。 |
-| **[!UICONTROL 跳过的记录数]** | 可视化图表，展示了在选定时段内，**为您选择的数据集和日期范围**&#x200B;跳过了多少行。跳过记录的原因包括：缺少时间戳、缺少或无效的人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} 等。每 10 分钟更新一次。 <p>无效 ID（例如 `undefined` 或 `00000000`，或者在某个事件中，[!UICONTROL 人员 ID] 中在给定月份内出现超过 100 万次的数字和字母的任何组合）是无法归因到任何特定用户或人员的 ID。这些行不能被摄入系统，从而导致摄取和报告容易出错。要修复无效的人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}，您有 3 个选项：<ul><li>使用[拼接](/help/stitching/overview.md)可以利用有效的用户 ID 来填充未定义或全部为零的用户 ID。</li><li>使用户 ID 变成空白，它们就会在摄取过程中被跳过（好于将用户 ID 成为无效或全部为零）。</li><li>先修复系统中的任意无效用户 ID，然后再提取数据。</li></ul> |
+| **[!UICONTROL 跳过的记录数]** | 可视化图表，展示了在选定时段内，**为您选择的数据集和日期范围**&#x200B;跳过了多少行。跳过记录的原因包括：缺少时间戳、缺少或无效的人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} 等。每 10 分钟更新一次。 <p>无效 ID（例如 `undefined` 或 `00000000`，或者在某个事件中，[!UICONTROL 人员 ID] 中在给定月份内出现超过 100 万次的数字和字母的任何组合）是无法归因到任何特定用户或人员的 ID。这些行不能被摄入系统，从而导致摄取和报告容易出错。要修复无效的人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}，您有 3 个选项：<ul><li>使用[拼接](/help/stitching/overview.md)可以利用有效的用户 ID 来填充未定义或全部为零的用户 ID。</li><li>使用户 ID 变成空白，它们就会在摄取过程中跳过（好于将用户 ID 成为无效或全部为零）。</li><li>先修复系统中的任意无效用户 ID，然后再提取数据。</li></ul> |
 | **[!UICONTROL 删除的记录数]** | 可视化图表，展示了在选定时段内，**为您选择的数据集和日期范围**&#x200B;删除了多少行。例如，有人可能在 [!DNL Experience Platform] 中删除了一个数据集。每 10 分钟更新一次。<p>在某些情况下，该值还可以包括替换的记录，如拼接或某些查找数据集更新。考虑以下示例：</p><ul><li>您将一条记录上传到 XDM 个人轮廓数据集，Customer Journey Analytics 被配置为将其作为轮廓查找数据摄取。在连接详细信息中，该数据集将会显示已添加 1 条记录。</li><li>您将原始记录的副本上传到同一个 AEP 数据集，该数据集现在包含两条记录。Customer Journey Analytics 从轮廓或帐户 [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} 查找数据集中摄取额外记录。Customer Journey Analytics 如果发现已经在连接中为某个人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} 摄取了轮廓或帐户记录，就会删除其更早版本，添加新的轮廓数据。在连接详细信息中，此操作表示添加了 1 条记录和删除了 1 条记录，因为 Customer Journey Analytics 只保留任何摄取的人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} 的最新轮廓查找数据。</li><li>总的来说，AEP 数据集包含两个恰好相同的记录。另外，Customer Journey Analytics 连接详细信息显示其摄取数据的状态：此轮廓数据集添加了 2 条记录，删除了 1 条记录。 </li></ul> |
 | ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) | 数据集搜索字段。您可以按数据集名称或数据集 ID 来搜索数据集表。 |
 | [!UICONTROL 数据集表] | 作为连接一部分的数据集。请参阅下表的进一步说明。选择 ![SelectBox](/help/assets/icons/SelectBox.svg) 一个数据集，只显示选定数据集的连接详细信息。这相当于从&#x200B;**[!UICONTROL _数据集选择器_]**&#x200B;中选择一个数据集。 |
@@ -274,9 +274,9 @@ ht-degree: 99%
 | **[!UICONTROL 删除的记录数]** | 在所选日期范围内从某个连接移除的数据集记录数（行数）。 |
 | **[!UICONTROL 添加的批次数]** | 在选定日期范围内添加到某个连接的批次数。 |
 | **[!UICONTROL 上次添加时间]** | 已添加到连接的最新批次的时间戳。 |
-| **[!UICONTROL 数据源类型]** | 来源类型。您在向连接添加数据集时定义来源类型。 |
-| **[!UICONTROL 数据集类型]** | [数据集类型](create-connection.md#dataset-types)。类型可以是&#x200B;**[!UICONTROL 事件]**、**[!UICONTROL 轮廓]**、**[!UICONTROL 查找]**&#x200B;或&#x200B;**[!UICONTROL 摘要]**。临时或关系数据集通过&#x200B;**[!UICONTROL （临时）]**&#x200B;或&#x200B;**[!UICONTROL （关系）]**&#x200B;标识。例如，**[!UICONTROL 事件（临时）]**&#x200B;或&#x200B;**[!UICONTROL 查找（关系）]**。 |
-| **[!UICONTROL 已拼合]** | 如果在连接UI[中启用了数据集](/help/stitching/use-stitching-ui.md)的拼接功能，则值为&#x200B;**[!UICONTROL true]**。 否则，值为&#x200B;**[!UICONTROL false]**。 此表中未将拼接过程[的](/help/stitching//use-stitching.md)请求所生成的拼接数据集标识为已拼接，默认值为&#x200B;**[!UICONTROL false]**。 |
+| **[!UICONTROL 数据源类型]** | 源类型。您在向连接添加数据集时定义源类型。 |
+| **[!UICONTROL 数据集类型]** | [数据集类型](create-connection.md#dataset-types)。类型可以是&#x200B;**[!UICONTROL 事件]**、**[!UICONTROL 轮廓]**、**[!UICONTROL 查找]**&#x200B;或&#x200B;**[!UICONTROL 摘要]**。临时或关联型数据集通过&#x200B;**[!UICONTROL （临时）]**&#x200B;或&#x200B;**[!UICONTROL （关系）]**&#x200B;标识。例如，**[!UICONTROL 事件（临时）]**&#x200B;或&#x200B;**[!UICONTROL 查找（关系）]**。 |
+| **[!UICONTROL 已拼接]** | 如果数据集[在连接 UI 中启用了拼接](/help/stitching/use-stitching-ui.md)，则该值为&#x200B;**[!UICONTROL 真]**。 否则，该值为&#x200B;**[!UICONTROL 假]**。 通过[请求拼接流程](/help/stitching//use-stitching.md)生成的已拼接数据集不会在此表中标识为已拼接，默认值为&#x200B;**[!UICONTROL 假]**。 |
 | **[!UICONTROL 架构]** | 此数据集所基于的 Experience Platform 架构。 |
 | **[!UICONTROL 导入新数据]** | 数据集导入新数据的状态： <p>如果数据集已配置为导入新数据，则![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _开启]**，以及<p>如果数据集已配置为不导入新数据，则![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _x 关闭_]**。 |
 | **[!UICONTROL 转换数据]** | 适用的 B2B 查找数据集的转换状态。参见[转换数据集以进行 B2B 查找](transform-datasets-b2b-lookups.md)了解更多信息。<p>对于已启用转换的适用数据集，![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _开启]**， <p>对于未启用转换的适用数据集，![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _x 关闭_]**，以及<p>对于所有其他数据集均为 **[!UICONTROL N/A]**，不适用于转换。 |
@@ -317,8 +317,8 @@ ht-degree: 99%
 
 | 详细信息 | 描述 |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全局帐户 ID &#x200B;]** | 您为连接指定作为全局帐户 ID 的身份标识。仅适用于配置了全局帐户容器的基于帐户的连接。 |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户 ID &#x200B;]** | 您为连接指定作为帐户 ID 的身份标识。仅适用于未配置全局帐户容器的基于帐户的连接。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全球帐户 ID ]** | 您为连接指定作为全球帐户 ID 的身份标识。仅适用于配置了全球帐户容器的基于帐户的连接。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户 ID ]** | 您为连接指定作为帐户 ID 的身份标识。仅适用于未配置全球帐户容器的基于帐户的连接。 |
 | **[!UICONTROL 人员 ID]** | 您为连接指定作为人员 ID 的身份标识。 |
 | **[!UICONTROL 键]** | 您为查找数据集指定的键。 |
 | **[!UICONTROL 匹配键]** | 您为查找数据集指定的匹配键。 |
@@ -332,7 +332,7 @@ ht-degree: 99%
 | **[!UICONTROL 导入新数据]** | 数据集导入新数据的状态： <p>如果数据集已配置为导入新数据，则![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _开启]**，以及<p>如果数据集已配置为不导入新数据，则![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _x 关闭_]**。 |
 | **[!UICONTROL 回填数据]** | 数据集的回填数据的状态。<p>![状态为红色](assets/status-red.svg)   **[!UICONTROL _x _回填失败]**，表示回填失败的次数，<p>![状态为红色](assets/status-orange.svg)   **[!UICONTROL _x _正在处理回填]**，正在处理的回填次数，<p>![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _回填完成]**，已完成的回填次数，以及<p>如果没有配置回填，则![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _关闭_]**。<p>要显示包含数据集过去回填情况概述的对话框，请选择 <img src="./assets/pastbackfill.svg" alt="过去的回填" width="15"/> **[!UICONTROL 过去的回填]**。 |
 | **[!UICONTROL 数据源类型]** | 数据集添加到连接时定义的数据源类型。 |
-| **[!UICONTROL 数据集类型]** | [数据集类型](create-connection.md#dataset-types)。类型可以是&#x200B;**[!UICONTROL 事件]**、**[!UICONTROL 轮廓]**、**[!UICONTROL 查找]**&#x200B;或&#x200B;**[!UICONTROL 摘要]**。临时或关系数据集通过&#x200B;**[!UICONTROL （临时）]**&#x200B;或&#x200B;**[!UICONTROL （关系）]**&#x200B;标识。例如，**[!UICONTROL 事件（临时）]**&#x200B;或&#x200B;**[!UICONTROL 查找（关系）]**。 |
+| **[!UICONTROL 数据集类型]** | [数据集类型](create-connection.md#dataset-types)。类型可以是&#x200B;**[!UICONTROL 事件]**、**[!UICONTROL 轮廓]**、**[!UICONTROL 查找]**&#x200B;或&#x200B;**[!UICONTROL 摘要]**。临时或关联型数据集通过&#x200B;**[!UICONTROL （临时）]**&#x200B;或&#x200B;**[!UICONTROL （关系）]**&#x200B;标识。例如，**[!UICONTROL 事件（临时）]**&#x200B;或&#x200B;**[!UICONTROL 查找（关系）]**。 |
 | **[!UICONTROL 架构]** | 此数据集所基于的 Experience Platform 架构。 |
 | **[!UICONTROL 数据集 ID]** | 在 Experience Platform 中生成的数据集 ID。 |
 

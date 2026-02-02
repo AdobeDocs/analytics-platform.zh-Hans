@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: FAQ
 role: User
 source-git-commit: c67225619153218e3dca1eacea204f2b033dfb14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2210'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Customer Journey Analytics 包括[数据准备](https://experienceleague.adobe.c
 
 +++**[!UICONTROL Customer Journey Analytics] 是否可以跨设备或跨数据集进行“拼合”？**
 
-是的。[!UICONTROL Customer Journey Analytics &#x200B;]具有[拼合](../stitching/overview.md)功能，该功能适用于数据集中经过身份验证和未经身份验证的事件。这样拼合可将完全不同的记录解析为单个经过拼合的 ID，以供在人员级别进行跨设备分析。此外，在[连接](/help/connections/overview.md)内的数据集间使用公共命名空间 ID（个人 ID）时，您可对在人员级别“拼合”的多个数据集的无缝组合运行分析。
+是的。[!UICONTROL Customer Journey Analytics ]具有[拼合](../stitching/overview.md)功能，该功能适用于数据集中经过身份验证和未经身份验证的事件。这样拼合可将完全不同的记录解析为单个经过拼合的 ID，以供在人员级别进行跨设备分析。此外，在[连接](/help/connections/overview.md)内的数据集间使用公共命名空间 ID（个人 ID）时，您可对在人员级别“拼合”的多个数据集的无缝组合运行分析。
 
 +++
 
@@ -144,13 +144,13 @@ Adobe 最近改变了在 Customer Journey Analytics 中处理数据的方式：
 
 ## &#x200B;5. 设置[!UICONTROL 连接]数据保留的滚动时段 {#data-retention}
 
-通过[**[!UICONTROL 启用滚动数据时段&#x200B;]**&#x200B;设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hans#create-connection)，可将 Customer Journey Analytics 数据保留定义为按月（三个月、六个月等）计的滚动时段。在[!UICONTROL 连接]级别而非[!UICONTROL 数据集]级别设置它。数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此轮廓或查找数据集没有数据保留设置。
+通过[**[!UICONTROL 启用滚动数据时段&#x200B;]**设置](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection)，可将 Customer Journey Analytics 数据保留定义为按月（三个月、六个月等）计的滚动时段。在[!UICONTROL 连接]级别而非[!UICONTROL 数据集]级别设置它。数据保留基于事件数据集时间戳并且仅适用于事件数据集。由于没有适用的时间戳，因此轮廓或查找数据集没有数据保留设置。
 
 主要好处是，您只需存储或报告适用且有用的数据，并且可删除不再有用的旧数据。它可以帮助您保持在合同限制范围内，并减少超出预期成本的风险。
 
-## 6.删除对象或组件的后果 {#deletion}
+## &#x200B;6. 删除对象或组件的后果 {#deletion}
 
-有关删除或重置Customer Journey Analytics或Experience Platform对象或组件时影响的概述，请参阅[删除和重置影响](/help/technotes/deletion.md)。
+关于删除或重置 Customer Journey Analytics 或 Experience Platform 对象或组件后产生影响的概述，请参阅[删除和重置的后果](/help/technotes/deletion.md)。
 
 <!-- Refer to deletion guide 
 
@@ -171,7 +171,7 @@ For data deletion, you should be concerned about six types of components: sandbo
 
 ## &#x200B;7. 在 Customer Journey Analytics 中合并报告包时的注意事项 {#merge-reportsuite}
 
-如果打算通过 [Adobe Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hans)摄取 Adobe Analytics 数据，请在合并两个或更多 Adobe Analytics 报告包时考虑以下这些后果。
+如果打算通过 [Adobe Analytics 源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)摄取 Adobe Analytics 数据，请在合并两个或更多 Adobe Analytics 报告包时考虑以下这些后果。
 
 | 问题 | 注意事项 |
 | --- | --- |
@@ -192,7 +192,7 @@ For data deletion, you should be concerned about six types of components: sandbo
 
 +++**我的旧 [!UICONTROL eVar] 设置发生了什么？**
 
-[!UICONTROL Customer Journey Analytics] 中不再存在 Adobe Analytics 意义上的 [!UICONTROL eVar]、[!UICONTROL prop &#x200B;]和[!UICONTROL 事件。]您有不限量的架构元素（维度、量度、列表字段）。因此，现在将在查询时应用您过去常在数据收集期间使用的所有归因设置。
+[!UICONTROL Customer Journey Analytics] 中不再存在 Adobe Analytics 意义上的 [!UICONTROL eVar]、[!UICONTROL prop ]和[!UICONTROL 事件。]您有不限量的架构元素（维度、量度、列表字段）。因此，现在将在查询时应用您过去常在数据收集期间使用的所有归因设置。
 
 +++
 
@@ -263,7 +263,7 @@ Adobe Experience Cloud 使用地区数据收集 (RDC)，以使您的访客与 Ad
 RDC 目前包括以下位置（可能发生变化）：
 
 
-| RDC类型 | 数据收集中心 |
+| RDC 类型 | 数据收集中心 |
 | --- | --- |
 | 全局（默认） | 俄勒冈、弗吉尼亚、爱尔兰、巴黎、孟买、新加坡、东京、悉尼 |
 | 仅限美洲 | 俄勒冈州、弗吉尼亚州 |
@@ -277,4 +277,4 @@ RDC 目前包括以下位置（可能发生变化）：
 Customer Journey Analytics 需要来自 Adobe Experience Platform 的数据集，因此，您的数据流/事件转发配置需要 Adobe Experience Platform 服务将数据从区域数据中心路由到 Adobe Experience Platform 实例所在的数据中心。Customer Journey Analytics 及其支持服务和基础设施部署在同一个 Adobe Experience Platform 实例中。
 
 
-有关在 Adobe Experience Platform Edge Network 及其区域数据中心之外收集数据的过程，请参阅[数据收集概述](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=zh-Hans)。
+有关在 Adobe Experience Platform Edge Network 及其区域数据中心之外收集数据的过程，请参阅[数据收集概述](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html)。

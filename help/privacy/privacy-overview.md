@@ -5,7 +5,7 @@ exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 feature: Privacy
 role: Admin
 source-git-commit: 40706e3118cbaf7582d8625d307358b16f1836ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '440'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## 数据管理
 
-Adobe Customer Journey Analytics 和 [Adobe Experience Platform 数据治理](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=zh-Hans)之间的集成允许标记敏感的 Customer Journey Analytics 数据和实施隐私政策。
+Adobe Customer Journey Analytics 和 [Adobe Experience Platform 数据治理](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html)之间的集成允许标记敏感的 Customer Journey Analytics 数据和实施隐私政策。
 
 在 Experience Platform 使用的数据集上创建的隐私标签和政策可以在 Customer Journey Analytics 数据视图工作流中显示。这些标签阻止或警告从敏感字段创建量度和/或维度的用户。
 
@@ -43,4 +43,4 @@ Customer Journey Analytics 将不直接订阅一般数据保护条例 (GDPR) 中
 
 >[!MORELIKETHIS]
 >
->* [博客：如何在 Adobe Customer Journey Analytics 中保持有效治理](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4?profile.language=zh-Hans)
+>* [博客：如何在 Adobe Customer Journey Analytics 中保持有效治理](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4)

@@ -6,9 +6,9 @@ feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 source-git-commit: 58254cab90d907ad9675c30dfc1b835910214b3a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '854'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Content Analytics 采用基于 AI 和机器学习的&#x200B;**特征化服务**�
 
 Content Analytics 提供递增价值：
 
-1. 内容&#x200B;**使用情况**：借助 Content Analytics，您可以深入了解哪些资产获得了印象，以及在何处获得。这些洞察有助于您了解您的网络资产中是否存在资产使用不足或过度使用的情况。
+1. 内容&#x200B;**使用情况**：借助 Content Analytics，您可以洞察哪些资产获得了印象，以及在何处获得。这些洞察有助于您了解您的网络资产中是否存在资产使用不足或过度使用的情况。
 1. 内容&#x200B;**参与度**：Content Analytics 可以提供参与度洞察，例如具有特定属性资产的平均点击率。这些洞察可以帮助您确定特定类型的体验是否仍然有效。
 1. 内容&#x200B;**历程**：此外，当与 Experience Platform 中提供的所有其他数据相结合时，您可以获得有关内容历程的更多洞察。例如，除了参与度之外，特定内容是否能够促成转化。有了这些知识，您就能确定各类内容的投资回报率。
 1. 内容&#x200B;**个性化**：最终，Content Analytics 使您能够根据洞察采取行动，并利用这些洞察来决定如何为内容投入资金。例如，我应该向特定受众发送特定类型的内容吗？哪些内容能为我提供高度个性化的机会？
@@ -41,9 +41,9 @@ Content Analytics 使用以下关键术语：
 
 ## 工作原理
 
-Content Analytics 使用在 Experience Platform 的事件数据集中的网页图像视图数据[收集内容事件数据](config/datacollection.md)。这些内容体验事件要求使用Experience Platform Edge Network(Web SDK，服务器API)收集数据。 行为数据可以通过Web SDK或Analytics Source Connector收集。
+Content Analytics 使用在 Experience Platform 的事件数据集中的网页图像视图数据[收集内容事件数据](config/datacollection.md)。这些内容体验事件需要通过 Experience Platform Edge Network（Web SDK 或服务器 API）进行数据收集。行为数据可通过 Web SDK 或 Analytics 源连接器进行收集。
 
-![Content Analytics 的工作原理](assets/aca-overview.gif)
+![Content Analytics 工作原理](assets/aca-overview.gif)
 
 1. 当用户访问[配置了 Content Analytics](config/configuration.md) 的网站时，Experience Plarform Web SDK 会记录对内容的印象以及与内容的交互情况。
 1. 身份标识服务和特征化服务会对这些交互进行处理。该过程包括一个检索服务，该服务会重新访问定义这些交互的公众版本的已配置 URL。身份标识服务会为所有这些检索到的 URL 唯一性标识体验和资产。特征化服务应用 AI/ML 服务来发现体验和资产元数据和属性。
@@ -67,7 +67,7 @@ Content Analytics 使用在 Experience Platform 的事件数据集中的网页�
 >[!MORELIKETHIS]
 >
 >[Content Analytics 报告](report/report.md)
->&#x200B;>[配置 Content Analytics](config/configuration.md)
->&#x200B;>[在 Customer Journey Analytics 中计算跳出次数和跳出率](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=zh-Hans#M454)
+>[配置 Content Analytics](config/configuration.md)
+>[在 Customer Journey Analytics 中计算跳出次数和跳出率](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
 >
 

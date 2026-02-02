@@ -6,7 +6,7 @@ exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
 source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1849'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 | ![NetGrowth](/help/assets/icons/NetGrowth.svg) | [净增长](types/net-growth.md) | 您是在获得用户还是在失去用户？ |
 | ![发布](/help/assets/icons/Release.svg) | [发布影响](types/release-impact.md) | 比较发布前和发布后相同时期的性能。 |
 | ![保留](/help/assets/icons/Retention.svg) | [保留](types/retention.md) | 衡量用户持续的返回习惯。 |
-| ![时间表](/help/assets/icons/Timeline.svg) | [时间表](types/timeline.md) | 探索会话活动中的模式。 |
+| ![时间线](/help/assets/icons/Timeline.svg) | [时间线](types/timeline.md) | 探索会话活动中的模式。 |
 | ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [趋势](types/trends.md) | 随着时间的推移衡量用户参与度。 |
 
 

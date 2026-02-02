@@ -5,7 +5,7 @@ exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
 source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3514'
 ht-degree: 100%
 

@@ -1,13 +1,13 @@
 ---
-description: 了解如何在Analysis Workspace中使用旅程画布。
+description: 了解如何在 Analysis Workspace 中使用历程画布。
 title: 历程画布概述
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1996'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -51,11 +51,11 @@ ht-degree: 99%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中的历程画布可视化图表。<br/>**Adobe Analytics** 中没有等效的可视化图表。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的历程画布可视化图表。<br/>**Adobe Analytics** 中没有等效的可视化图表。_
 
 >[!ENDSHADEBOX]
 
-历程画布可视化图表可帮助您进行分析，并深入了解您为用户和客户提供的历程。它允许您从头开始定义历程，或从 Journey Optimizer 中查看历程，然后查看人们是如何离开（流失）或继续完成（流过）这个历程的。
+历程画布可视化图表可帮助您进行分析，获得关于您为用户和客户提供的历程的深入洞察。它允许您从头开始定义历程，或从 Journey Optimizer 中查看历程，然后查看人们是如何离开（流失）或继续完成（流过）这个历程的。
 
 您可以通过任意组合事件、维度项、区段和日期范围来创建历程节点，从而[构建用户历程分析](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。通过连接各个节点来创建历程的流量，并包含多条路径和决策点。拖动画布上的节点来重新排列历程的事件和条件。当您进行更改时，数据会实时更新。
 
@@ -162,7 +162,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 分析历程画布中的 Journey Optimizer 历程可以提供有关人们如何与历程互动的深入、可操作洞察。
 
-当您在历程画布中分析 Journey Optimizer 历程时，历程将会以与 Journey Optimizer 中相同的顺序、序列和结构显示。如果您对历程画布中的历程进行了重大更改，则[&#x200B; Journey Optimizer 中的更改将不再同步](#synchronization-between-journey-optimizer-and-journey-canvas)。
+当您在历程画布中分析 Journey Optimizer 历程时，历程将会以与 Journey Optimizer 中相同的顺序、序列和结构显示。如果您对历程画布中的历程进行了重大更改，则[ Journey Optimizer 中的更改将不再同步](#synchronization-between-journey-optimizer-and-journey-canvas)。
 
 ### 使用历程画布分析 Journey Optimizer 历程的好处
 
@@ -263,5 +263,5 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!MORELIKETHIS]
 >
-> * [Adobe Customer Journey Analytics 中的历程画布可视化图表指南](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857?profile.language=zh-Hans)
+> * [Adobe Customer Journey Analytics 中的历程画布可视化图表指南](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857)
 

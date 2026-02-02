@@ -6,7 +6,7 @@ feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 role: Admin
 source-git-commit: ec56bc657961b2e4e8318ab14cd676288398462f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1089'
 ht-degree: 100%
 
@@ -114,5 +114,5 @@ Customer Journey Analytics 架构大致如下所示：
 
 >[!MORELIKETHIS]
 >
->博客：[仔细了解 Adobe Customer Journey Analytics 中的数据处理和摄取](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091?profile.language=zh-Hans)
+>博客：[仔细了解 Adobe Customer Journey Analytics 中的数据处理和摄取](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
 

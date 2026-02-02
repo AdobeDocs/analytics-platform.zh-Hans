@@ -6,7 +6,7 @@ feature: Guided Analysis
 keywords: 产品分析
 role: User
 source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '439'
 ht-degree: 100%
 
@@ -32,9 +32,9 @@ ht-degree: 100%
 
 +++**什么时候应该使用引导式分析或 Analysis Workspace？**
 
-**引导式分析**&#x200B;可以帮助用户快速获得高质量的见解。它对于产品团队、希望更自信地处理数据的用户，甚至对于分析师来说都是非常有用的，可以作为更深入分析的开端。
+**引导式分析**&#x200B;可以帮助用户快速获得高质量的洞察。它对于产品团队、希望更自信地处理数据的用户，甚至对于分析师来说都是非常有用的，可以作为更深入分析的开端。
 
-**[Analysis Workspace](../analysis-workspace/home.md)** 是一个格式更加自由的空间，可让您进一步挖掘数据，以发现更多见解。对于十分了解数据并想要深入研究数据的分析师和高级用户来说，这非常有用。
+**[Analysis Workspace](../analysis-workspace/home.md)** 是一个格式更加自由的空间，可让您进一步挖掘数据，以发现更多洞察。对于十分了解数据并想要深入研究数据的分析师和高级用户来说，这非常有用。
 
 +++
 

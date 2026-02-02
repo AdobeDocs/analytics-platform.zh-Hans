@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 source-git-commit: 95e50b73533c627f05c3b8dfe112b28b4f9e70c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2722'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 79%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建或编辑数据视图](https://video.tv.adobe.com/v/345538/?captions=chi_hans&quality=12&learn=on){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建或编辑数据视图](https://video.tv.adobe.com/v/35110/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -68,7 +68,7 @@ ht-degree: 79%
 | 设置 | 描述 |
 | --- | --- |
 | **[!UICONTROL 连接]** | 此字段将数据视图链接到您之前建立的连接，其中包含一个或多个 Adobe Experience Platform 数据集。 |
-| **[!UICONTROL 名称]** | 必填。数据视图的名称。此值显示在Analysis Workspace右上角的下拉菜单中。 |
+| **[!UICONTROL 名称]** | 必填。数据视图的名称。此值显示在 Analysis Workspace 右上角的下拉菜单中。 |
 | **[!UICONTROL 外部 ID]** | 必填。您可以在外部源（例如商业智能工具）中使用的数据视图的名称。默认值为 `unspecified`。如果您未指定外部 ID，则名称将从数据视图的名称生成，并用下划线替换空格。 |
 | **[!UICONTROL 描述]** | 可选。Adobe 建议输入详细描述，以便用户了解为什么存在该数据视图以及为谁设计了它。 |
 
@@ -90,7 +90,7 @@ ht-degree: 79%
 
 | 设置 | 描述 |
 | --- | --- |
-| [!UICONTROL **在 Adobe Journey Optimizer 中设置为默认数据视图**] | 此配置选项使 Journey Optimizer 和 Customer Journey Analytics 的报告标准化。此外，它还允许您在 Customer Journey Analytics 中对 Adobe Journey Optimizer 的数据进行高级分析（在 Journey Optimizer 中选择![打开](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) [!UICONTROL **在 CJA 中分析**]）。<p>进行此类分析时，Journey Optimizer 需要具有 Customer Journey Analytics 数据视图的访问权限。<p>启用此选项可使其成为您的沙盒 Journey Optimizer 报告中使用的默认数据视图。</p><p>此配置选项将自动执行以下操作：</p><ul><li>在 Customer Journey Analytics 的相关连接中配置所有必需的 Journey Optimizer 数据集，以便与 Journey Optimizer 配合使用。</li><li>在数据视图中创建一组 Journey Optimizer 量度和维度（包括派生字段和计算量度）。在所有这些量度和维度上自动设置上下文标签。</li><li>自动启用与此数据视图关联的连接中的&#x200B;**[!UICONTROL 在CJA中使用]**&#x200B;选项。 (要了解有关此选项的更多信息，请参阅[在Customer Journey Analytics中使用Journey Optimizer连接](/help/connections/manage-connections.md)。)<p>如果在启用此设置后手动禁用此设置，则连接和任何关联的数据视图都将重置为其默认状态。 这可能会导致报表中的数据发生更改。</p></li></ul><p><p>启用此选项时，请考虑以下事项： <ul><li>您可以稍后更改默认数据视图，但这样做可能会更改您的 Journey Optimizer 报告数据。如果启用此选项后选择禁用，系统将提示您选择新的默认数据视图。</li><li>如果您已经对 Customer Journey Analytics 数据视图中的数据集、维度或量度进行了手动自定义，则启用此配置选项时，您的手动自定义将保持不变。此选项可以进行额外的自定义，以进一步标准化 Journey Optimizer 和 Customer Journey Analytics 之间的报告。启用此选项后，您还可以进行手动自定义。</li><li>选择此选项时，无法删除与数据视图关联的连接。</li></ul>请参阅[将 Adobe Journey Optimizer 与 Adobe Customer Journey Analytics 集成](/help/integrations/ajo.md)，以了解详细信息。 |
+| [!UICONTROL **在 Adobe Journey Optimizer 中设置为默认数据视图**] | 此配置选项使 Journey Optimizer 和 Customer Journey Analytics 的报告标准化。此外，它还允许您在 Customer Journey Analytics 中对 Adobe Journey Optimizer 的数据进行高级分析（在 Journey Optimizer 中选择![打开](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) [!UICONTROL **在 CJA 中分析**]）。<p>进行此类分析时，Journey Optimizer 需要具有 Customer Journey Analytics 数据视图的访问权限。<p>启用此选项可使其成为您的沙盒 Journey Optimizer 报告中使用的默认数据视图。</p><p>此配置选项将自动执行以下操作：</p><ul><li>在 Customer Journey Analytics 的相关连接中配置所有必需的 Journey Optimizer 数据集，以便与 Journey Optimizer 配合使用。</li><li>在数据视图中创建一组 Journey Optimizer 量度和维度（包括派生字段和计算量度）。在所有这些量度和维度上自动设置上下文标签。</li><li>自动启用与此数据视图相关联的连接中的&#x200B;**[!UICONTROL 在 CJA 中使用]**&#x200B;选项。（要了解有关此选项的更多信息，请参阅[在 Customer Journey Analytics 中使用 Journey Optimizer 连接](/help/connections/manage-connections.md)。）<p>如果在启用此设置后手动禁用此设置，连接和任何相关联的数据视图都会重置为其默认状态。这可能会导致报告中的数据变化。</p></li></ul><p><p>启用此选项时，请考虑以下事项： <ul><li>您可以稍后更改默认数据视图，但这样做可能会更改您的 Journey Optimizer 报告数据。如果启用此选项后选择禁用，系统将提示您选择新的默认数据视图。</li><li>如果您已经对 Customer Journey Analytics 数据视图中的数据集、维度或量度进行了手动自定义，则启用此配置选项时，您的手动自定义将保持不变。此选项可以进行额外的自定义，以进一步标准化 Journey Optimizer 和 Customer Journey Analytics 之间的报告。启用此选项后，您还可以进行手动自定义。</li><li>选择此选项时，无法删除与数据视图关联的连接。</li></ul>请参阅[将 Adobe Journey Optimizer 与 Adobe Customer Journey Analytics 集成](/help/integrations/ajo.md)，以了解详细信息。 |
 
 {style="table-layout:auto"}
 
@@ -120,7 +120,7 @@ ht-degree: 79%
 | [!UICONTROL **日程表类型**] | 决定每个月的周数如何分组。<br>**公历：**&#x200B;标准日程表格式。季度按月分组。<br>**4-5-4 零售：**&#x200B;标准化的 4-5-4 零售日程表。季度的第一个月和最后一个月包含 4 周，而季度的第二个月包含 5 周。<br>**自定义 (4-5-4)：**&#x200B;类似于 4-5-4 日程表，但可选择一年的第一天以及哪年出现“额外的”一周。<br>**自定义 (4-4-5)：**&#x200B;每个季度的第一个月和第二个月包含 4 周，而每个季度的最后一个月包含 5 周。<br>**自定义 (5-4-4)：**&#x200B;每个季度的第一个包含为 5 周，而每个季度的第二个月和第三个月包含 4 周。 |
 | [!UICONTROL **一年的第一个月**]&#x200B;和&#x200B;[!UICONTROL **一周的第一天**] | 对“公历”日程表类型可见。指定要让日程表年从哪一个月开始，以及每周从哪一天开始。 |
 | [!UICONTROL **当年的第一天**] | 对自定义日程表类型可见。指定要让当年在一年中的哪一天开始。日程表自动根据此值设置每周第一天的格式。 |
-| [!UICONTROL **出现“额外的”一周的年份**] | 对于大多数 364 天日程表（52 周，每周 7 天），每年都会积累多出的天数，直到它们加起来形成额外的一周。然后，将这额外的一周添加到当年的最后一个月。指定要将额外的一周添加到哪年。<br><br/>**额外周数和闰年**<br/>&#x200B;当您选择自定义&#x200B;**[!UICONTROL 日历类型]** (**[!UICONTROL 自定义(4-5-4)]**、**[!UICONTROL 自定义(4-4-5)]**&#x200B;或&#x200B;**[!UICONTROL 自定义(5-4-4)]**)时，每年剩余的天数会累计，直到这些天数加起来构成一个完整的额外周（7天）。 该额外的一周将添加到您选择的&#x200B;**[!UICONTROL 年度中，“额外的”一周将在该年度出现]**。<br/><br/>在出现“额外”周的&#x200B;**[!UICONTROL 年中，故意不显示闰年]**。 但是，闰年仍然可以包含53周。 若要强制闰年包含53周，请从&#x200B;**[!UICONTROL Year中选择一个非闰年，在此年度中会出现“额外的”一周]**，以确保目标闰年的累计日期漂移合计为7天。 例如：要在2024年有53周，请选择&#x200B;**[!UICONTROL 2019]**。 从2019年到2024年，总日期漂移为7天(2020 (+2)、2021 (+1)、2022 (+1)、2023 (+1)和2024 (+2))，导致2024年成为第53周。<br/><br/>选择&#x200B;**[!UICONTROL 当前年份的第一天]**&#x200B;会影响额外的一周所在的位置。 使用日历预览确认配置。 |
+| [!UICONTROL **出现“额外的”一周的年份**] | 对于大多数 364 天日程表（52 周，每周 7 天），每年都会积累多出的天数，直到它们加起来形成额外的一周。然后，将这额外的一周添加到当年的最后一个月。指定要将额外的一周添加到哪年。<br><br/>**额外周和闰年**<br/>&#x200B;如果您选择自定义&#x200B;**[!UICONTROL 日历类型]**（**[!UICONTROL 自定义（4-5-4）]**、**[!UICONTROL 自定义（4-4-5）]**&#x200B;或&#x200B;**[!UICONTROL 自定义（5-4-4）]**），每年剩余的天数就会累计起来，直到这些天数加起来构成一个完整的额外周（7 天）。这个额外周会添加到您在&#x200B;**[!UICONTROL “额外周”出现的年份]**&#x200B;中选择的年份。<br/><br/>**[!UICONTROL “额外周”出现的年份]**&#x200B;中特意不显示闰年。不过，闰年仍然可以包含 53 周。如要强制闰年包含 53 周，应从&#x200B;**[!UICONTROL “额外周”出现的年份]**&#x200B;中选择一个非闰年，以确保目标闰年的累计日期漂移达到 7 天。例如：要在 2024 年有 53 周，请选择 **[!UICONTROL 2019]**。从 2019 年到 2024 年，总日期漂移为 7 天（2020 (+2)，2021 (+1)，2022 (+1)，2023 (+1)，2024 (+2)），这使得 2024 年多了一个第 53 周。<br/><br/>选择&#x200B;**[!UICONTROL 本年的第一天]**&#x200B;会影响额外周落在哪里。使用日历预览确认您的配置。 |
 
 {style="table-layout:auto"}
 
@@ -136,13 +136,11 @@ ht-degree: 79%
 
    ![“组件”选项卡](assets/dataview-components.png)
 
-   可在左上角看到[!UICONTROL 连接]（其中包含数据集），并可在下方看到其[!UICONTROL 架构字段]。已包含的组件是所有数据视图（如事件、人员、会话量度以及分钟、季度、周维度）所需的标准组件（系统生成）。Adobe还应用筛选器&#x200B;**[!UICONTROL 包含数据]**，默认情况下不弃用&#x200B;**&#x200B;**，这样仅显示包含数据且未弃用的架构字段。
+   可在左上角看到[!UICONTROL 连接]（其中包含数据集），并可在下方看到其[!UICONTROL 架构字段]。已包含的组件是所有数据视图（如事件、人员、会话量度以及分钟、季度、周维度）所需的标准组件（系统生成）。默认情况下，Adobe 也会应用筛选条件&#x200B;**[!UICONTROL “包含数据”]**&#x200B;和&#x200B;**[!UICONTROL “未弃用”]**，以便仅显示包含数据且未弃用的架构字段。
 
-1. 使用![搜索图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL 搜索架构字段]**&#x200B;搜索架构字段，或通过移动到任何数据集集合中查找字段，如![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 事件数据集]**&#x200B;或![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 查找数据集]**。 对于事件数据集，![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL XDM字段]**&#x200B;和![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 临时和关系字段]**&#x200B;的单独集合可用。<br/>或者，您可以使用![“数据”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**“创建”派生字段**&#x200B;创建派生字段。请参阅[派生字段](./derived-fields/derived-fields.md)，了解更多信息。
+1. 使用![搜索图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL 搜索架构字段]**&#x200B;来搜索架构字段，或者通过移动到任何数据集收藏集来查找字段，例如![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 事件数据集]**&#x200B;或![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 查找数据集]**。对于事件数据集，![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL XDM 字段]**&#x200B;和![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 临时和关系字段]**&#x200B;的单独的收藏集可用。<br/>或者，您可以使用![“数据”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**“创建”派生字段**&#x200B;创建派生字段。请参阅[派生字段](./derived-fields/derived-fields.md)，了解更多信息。
 
-1. 找到特定架构字段或定义派生字段后，将该字段（如![句柄图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL 页面名称]**）从左边栏拖动到&#x200B;**[!UICONTROL 包含的组件]**&#x200B;下的&#x200B;**[!UICONTROL 量度]**&#x200B;或&#x200B;**[!UICONTROL 维度]**&#x200B;部分。
-可将同一架构字段拖入“维度”或“量度”部分多次，并可按不同方式配置同一维度或量度。例如，从pageName字段，您可以使用右侧不同的`Product Pages`组件设置`Error pages`创建名为[的维度以及名为](component-settings/overview.md)的维度。
-如果从左边栏拖动架构字段文件夹，则该文件夹中的字段会自动排序到相应的部分中。 字符串字段最后落在[!UICONTROL 维度]部分中，而数值架构类型最后落在[!UICONTROL 量度]部分中。您还可以单击&#x200B;**[!UICONTROL 添加所有]**，并将所有架构字段添加到其各自的部分。
+1. 如果您找到了特定架构字段或定义了派生字段，就将该字段，例如![手柄图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL 页面名称]**，从左边栏拖到&#x200B;**[!UICONTROL 所包含的组件]**&#x200B;下面的&#x200B;**[!UICONTROL 量度]**&#x200B;或&#x200B;**[!UICONTROL 维度]**&#x200B;部分。可将同一架构字段拖入“维度”或“量度”部分多次，并可按不同方式配置同一维度或量度。例如，可以使用右侧不同的[组件设置](component-settings/overview.md)从“页面名称”字段创建名为 `Product Pages` 的维度以及另一个名为 `Error pages` 的维度。如果从左边栏拖动一个架构字段文件夹，文件夹中的字段会自动分类到相应的部分。字符串字段最后落在[!UICONTROL 维度]部分中，而数值架构类型最后落在[!UICONTROL 量度]部分中。您也可以点击&#x200B;**[!UICONTROL 全部添加]**，将所有架构字段添加到其相应的部分。
 
 1. 选择组件后，右侧即会显示设置。
 
@@ -223,21 +221,21 @@ ht-degree: 79%
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview" text="数据使用标签概述"
 
 
-**[!UICONTROL 包含的组件]**&#x200B;包含您为数据视图配置的&#x200B;**[!UICONTROL 量度]**&#x200B;和&#x200B;**[!UICONTROL 维度]**&#x200B;的列表。
+**[!UICONTROL 所包含的组件]**&#x200B;中包含了您为数据视图配置的&#x200B;**[!UICONTROL 量度]**&#x200B;和&#x200B;**[!UICONTROL 维度]**&#x200B;的列表。
 
-* 若要搜索组件，请使用![搜索](/help/assets/icons/Search.svg) **[!UICONTROL _搜索组件_]**。
-* 要筛选列出的包含的组件，请选择![筛选器](/help/assets/icons/Filter.svg)。
+* 如要搜索组件，使用![搜索](/help/assets/icons/Search.svg) **[!UICONTROL _搜索组件_]**。
+* 如要筛选列出的所包含的组件，选择![过滤器](/help/assets/icons/Filter.svg)。
 
-  ![包含组件筛选器对话框](assets/dataview_includedcomponents_filter.png)
+  ![所包含组件过滤器对话框](assets/dataview_includedcomponents_filter.png)
 
-  在&#x200B;**[!UICONTROL 按]**&#x200B;筛选字段中，可以按以下类别进行筛选：
+  在&#x200B;**[!UICONTROL 字段筛选依据]**&#x200B;对话框中，您可以按以下类别进行筛选：
 
-   * **[!UICONTROL 数据类型]** — 您可以选择以下一种或多种数据类型：[!UICONTROL 字符串]、[!UICONTROL 整数]、[!UICONTROL 短]、[!UICONTROL 布尔值]、[!UICONTROL 双精度浮点数]、[!UICONTROL 字节]、[!UICONTROL 长]、[!UICONTROL 日期]或[!UICONTROL 日期时间]。
-   * **[!UICONTROL 数据集]** — 选择一个或多个数据集。
-   * **[!UICONTROL 数据管理]**：从[!UICONTROL 自定义标签]、[!UICONTROL 合同标签]、[!UICONTROL 身份标签]、[!UICONTROL 敏感度标签]、[!UICONTROL 合作伙伴生态系统]或[!UICONTROL 策略]子类别中选择一个或多个标签。
-   * **[!UICONTROL 其他]** — 选择一个或多个选项[!UICONTROL 包含数据]、[!UICONTROL Is标识]或[!UICONTROL 不弃用]。
+   * **[!UICONTROL 数据类型]** - 您可以选择以下一种或多种数据类型：[!UICONTROL 字符串]、[!UICONTROL 整数]、[!UICONTROL 短整数]、[!UICONTROL 布尔值]、[!UICONTROL 双精度浮点数]、[!UICONTROL 字节]、[!UICONTROL 长整数]、[!UICONTROL 日期]或[!UICONTROL 日期时间]。
+   * **[!UICONTROL 数据集]** - 选择一个或多个数据集。
+   * **[!UICONTROL 数据治理]**：从[!UICONTROL 自定义标签]、[!UICONTROL 合同标签]、[!UICONTROL 身份标识标签]、[!UICONTROL 敏感度标签]、[!UICONTROL 合作伙伴生态系统]或[!UICONTROL 策略]子类别中选择一个或多个标签。
+   * **[!UICONTROL 其他]** - 选择一个或多个选项[!UICONTROL 包含数据]、[!UICONTROL 是身份标识]或[!UICONTROL 未弃用]。
 
-  选择&#x200B;**[!UICONTROL 应用]**&#x200B;以应用筛选器。
+  选择&#x200B;**[!UICONTROL 应用]**，应用过滤器。
 
 
 
@@ -254,7 +252,7 @@ ht-degree: 79%
 
 ### 设置（区段） {#segment-settings}
 
-您可以添加要应用于整个数据视图的区段。此区段应用于您在 Workspace 中运行的任何报告。将区段从左边栏中的组件拖到&#x200B;**[!UICONTROL 添加区段]**&#x200B;字段。
+您可以添加要应用于整个数据视图的区段。此区段应用于您在 Workspace 中运行的任何报告。将一个区段从左边栏中的组件拖至&#x200B;**[!UICONTROL 添加区段]**&#x200B;字段。
 
 ### 会话设置
 

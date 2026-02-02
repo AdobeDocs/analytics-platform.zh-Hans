@@ -7,9 +7,9 @@ exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
 source-git-commit: e51dced9ac7886ae8d087ca3b2fc6ac2755c3ac6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1551'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 99%
   | 类别 | 权限 | 描述 |
   |---|---|---|
   | [!UICONTROL 历程] | [!UICONTROL 查看历程事件、数据源和操作] | 历程事件、历程自定义操作和历程数据源的只读访问权限。 |
-  | [!UICONTROL 历程] | [!UICONTROL 管理历程事件、数据源和操作] | 读取、创建、编辑和删除事件、来源或操作。 |
+  | [!UICONTROL 历程] | [!UICONTROL 管理历程事件、数据源和操作] | 读取、创建、编辑和删除事件、源或操作。 |
   | [!UICONTROL 历程] | [!UICONTROL 查看历程] | 历程的只读访问权限。 |
   | [!UICONTROL 历程] | [!UICONTROL 管理历程] | 读取、创建、编辑和删除历程。 |
 
@@ -88,7 +88,7 @@ ht-degree: 99%
 
 * 使用 [BI 扩展](../data-views/bi-extension.md)
 
-  让用户使用 BI 扩展，一个产品管理员
+  要让用户使用 BI 扩展，产品管理员
 
    * 必须确保用户的 Experience Platform 权限包括一个有查询服务资源的角色，并且有“管理查询”和“管理查询服务集成”选项。关于 Experience Platform 权限的详细信息请参阅[管理产品配置文件的权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/ui/permissions)。
 
@@ -125,9 +125,9 @@ ht-degree: 99%
 | [!UICONTROL 报告工具] | [!UICONTROL 计算量度创建] | 允许用户创建[计算量度](/help/components/calc-metrics/calc-metr-overview.md)。用户只能标记、共享、删除、重命名、批准和取消批准自己创建的计算量度或与他们共享的计算量度。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 区段创建] | 允许用户创建[区段](/help/components/segments/seg-overview.md)。用户只能标记、共享、删除、重命名、批准和取消批准自己创建的区段或与他们共享的区段。 |
 | [!UICONTROL 报告工具] | [!UICONTROL Labs 访问权限] | 允许用户访问 Customer Journey Analytics 中的 [Labs](/help/labs/labs.md) 选项卡。 |
-| [!UICONTROL 报告工具] | [!UICONTROL 创建注释] | 允许用户创建[注释](/help/components/annotations/overview.md)。用户只能标记、共享、删除和重命名自己创建的注释或与他们共享的注释。 |
+| [!UICONTROL 报告工具] | [!UICONTROL 注释创建] | 允许用户创建[注释](/help/components/annotations/overview.md)。用户只能标记、共享、删除和重命名自己创建的注释或与他们共享的注释。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 受众视图] | 允许用户查看[受众](/help/components/audiences/audiences-overview.md)。 |
-| [!UICONTROL 报告工具] | [!UICONTROL 受众创建] | 允许用户创建[受众](/help/components/audiences/audiences-overview.md)。 需要Adobe Experience Platform中的[管理区段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/home)。 |
+| [!UICONTROL 报告工具] | [!UICONTROL 受众创建] | 允许用户创建[受众](/help/components/audiences/audiences-overview.md)。需要 Adobe Experience Platform 中的[管理区段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/home)。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 数据故事讲述] | 允许用户[根据 Workspace 项目生成幻灯片演示文稿。](/help/analysis-workspace/curate-share/generate-slides.md) |
 | [!UICONTROL 报告工具] | [!UICONTROL 审核日志访问] | 强制对 [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) 和审核日志 UI 进行权限检查。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 与任何人共享项目链接] | 允许用户[与任何人共享项目。](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
