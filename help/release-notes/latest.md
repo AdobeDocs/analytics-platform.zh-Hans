@@ -3,10 +3,10 @@ title: 当前 Customer Journey Analytics 发行说明
 description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 402dc1a3ad1f233d9c65f32f4a521e7937c82929
+source-git-commit: 795fbac85fbd57fa503bd1f56fe6dc325201f733
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 93%
+source-wordcount: '981'
+ht-degree: 92%
 
 ---
 
@@ -21,10 +21,10 @@ ht-degree: 93%
 | 功能 | 描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **标题覆盖** | 您可以在Content Analytics中的标头名称和密码标头值中指定。  此[标头覆盖配置](/help/content-analytics/config/guided.md#header-overrides)确保Content Analytics发送自定义HTTP标头以绕过任何已实施的机器人检测或关机流量技术。 |  | 2026年2月2 |
-| **在 Customer Journey Analytics 中分析来自 Experience Platform 轮廓数据集的受众** | 现在，您可以将来自 Experience Platform 轮廓数据集的受众成员关系数据摄取到 Customer Journey Analytics 连接中。受众将作为新的维度在 Analysis Workspace 中可用。<p>这一功能得益于 Customer Journey Analytics 新增的 XDM 对象映射摄取能力，从而可以摄取轮廓受众 ID。</p><p>此前，Customer Journey Analytics 仅支持摄取简单的 XDM 映射。</p><p>除了可以将受众数据作为维度添加到 Analysis Workspace 中的任何项目外，还新增了以下 Workspace 模板：</p><ul><li>Audience Analytics 概述</li><li>同意策略概述</li><p><!--For more information, see "Audience analysis overview" (https://experienceleague.corp.adobe.com/docs/analytics-platform/using/cja-dataviews/audience-analysis/audience-analysis-overview.html).-->（文档链接见下文。）</p> | 2025 年 10 月 22 日 | 2026年1月22日 |
-| **数据故事讲述：从 Workspace 报告生成幻灯片演示文稿** | 您现在可以基于 Analysis Workspace 报告自动生成幻灯片演示文稿（采用 .pptx 格式）。Workspace 会检测报告中的关键洞察，并将其转化为适用于利益相关者的幻灯片。<p>该功能可减少呈现发现结果、构建管理层叙述以及传达业务影响所需的时间和精力。</p><p>（文档链接见下文。）<!--For more information, see [Data storytelling: Generate slide presentations from Workspace reports](/help/analysis-workspace/curate-share/generate-slides.md).--></p> | 2025 年 10 月 22 日 | 2026 年 1 月 28 日 |
-| **在自由格式表中包含多个维度列** | 现在，您可以在自由格式表中最多包含 5 个维度列，从而并排查看多个维度项。每一行的维度项将作为一个拼接后的单一维度项进行处理。<p>您可以对包含多个维度列的自由格式表应用筛选、排序、细分等操作，以实现更深入、更定制化的分析。</p><p>此前，自由格式表中只能包含 1 个维度列。</p><p><!-- For more information, see [Include multiple dimension columns in a freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md).--> （文档链接见下文。）</p> | 2026 年 1 月 28 日 | 2026 年 2 月 18 日 |
-| **按多个列对表格进行排序** | 现在，您可以在 Analysis Workspace 中按多个列（无论是维度还是量度）对自由格式表的数据进行排序。<p>当按多个列进行排序时，数据将根据您为每个列指定的优先级进行排序。优先级编号会显示在排序图标旁。</p><p>（文档链接见下文。）<!-- For more information, see "Filter and sort freeform tables". (need to move info to this article from "Include multiple dimension columns in a freeform table") --></p> | 2026 年 1 月 28 日 | 2026 年 2 月 18 日 |
+| **在 Customer Journey Analytics 中分析来自 Experience Platform 轮廓数据集的受众** | 现在，您可以将来自 Experience Platform 轮廓数据集的受众成员关系数据摄取到 Customer Journey Analytics 连接中。受众将作为新的维度在 Analysis Workspace 中可用。<p>这一功能得益于 Customer Journey Analytics 新增的 XDM 对象映射摄取能力，从而可以摄取轮廓受众 ID。</p><p>此前，Customer Journey Analytics 仅支持摄取简单的 XDM 映射。</p><p>除了可以将受众数据作为维度添加到 Analysis Workspace 中的任何项目外，还新增了以下 Workspace 模板：</p><ul><li>Audience Analytics 概述</li><li>同意策略概述</li></ul><p>有关详细信息，请参阅[受众分析概述](/help/connections/audience-analysis/audience-analysis-overview.md)。</p> | 2025 年 10 月 22 日 | 2026年1月22日 |
+| **数据故事讲述：从 Workspace 报告生成幻灯片演示文稿** | 您现在可以基于 Analysis Workspace 报告自动生成幻灯片演示文稿（采用 .pptx 格式）。Workspace 会检测报告中的关键洞察，并将其转化为适用于利益相关者的幻灯片。<p>该功能可减少呈现发现结果、构建管理层叙述以及传达业务影响所需的时间和精力。</p><p>有关更多信息，请参阅[数据故事讲述：从 Workspace 报告生成幻灯片演示文稿](/help/analysis-workspace/curate-share/generate-slides.md)。</p> | 2025 年 10 月 22 日 | 2026 年 1 月 28 日 |
+| **在自由格式表中包含多个维度列** | 现在，您可以在自由格式表中最多包含 5 个维度列，从而并排查看多个维度项。每一行的维度项将作为一个拼接后的单一维度项进行处理。<p>您可以对包含多个维度列的自由格式表应用筛选、排序、细分等操作，以实现更深入、更定制化的分析。</p><p>此前，自由格式表中只能包含 1 个维度列。</p><p>有关详细信息，请参阅[在自由格式表中包含多个维度列](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md)。</p> | 2026 年 1 月 28 日 | 2026 年 2 月 18 日 |
+| **按多个列对表格进行排序** | 现在，您可以在 Analysis Workspace 中按多个列（无论是维度还是量度）对自由格式表的数据进行排序。<p>当按多个列进行排序时，数据将根据您为每个列指定的优先级进行排序。优先级编号会显示在排序图标旁。</p><p>有关详细信息，请参阅[筛选和排序自由格式表](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)。</p> | 2026 年 1 月 28 日 | 2026 年 2 月 18 日 |
 | **合并来自多个 IMS 组织的数据源** | 现在，您可以使用 Analytics Source Connector 合并来自多个 IMS 组织的多个数据源。这使组织即使在客户数据分布于多个 IMS 组织的情况下，也能够获得统一的客户数据视图。 <p>**注意：**&#x200B;此配置仅在向 Adobe 客户关怀团队提交请求后才可用。</p>  <p>（文档链接见下文。）</p> |  | 2026 年 1 月 30 日 |
 | **连接中的拼接** | Customer Journey Analytics 中的拼接流程现已更加简化。现在不再需要复制数据集后对复制的数据集进行拼接，而是在将数据摄取到 Customer Journey Analytics 中时进行拼接，这样就无需再复制数据集和架构。 <p>此外，您还[通过更新的连接接口](/help/stitching/use-stitching-ui.md)开始拼合自己，而不必通过Adobe客户关怀部门请求拼合。 | 2025 年 10 月 28 日 | 2026 年 1 月 30 日 |
 | **支持 Data Mirror** | 通过对 Experience Platform 中的特定源连接器提供基于模型的架构以及变更数据捕获（CDC）功能的支持，Customer Journey Analytics 将能够支持 [!DNL Snowflake]、[!DNL Azure Databricks] 和 [!DNL Google BigQuery] 等数据仓库解决方案的 [Data Mirror](/help/data-mirror/data-mirror.md) 功能。<p>要访问 Beta 版本，请联系您的 Adobe 帐户团队。</p> | Beta 版：2025 年 9 月 24 日 | 待定 |
