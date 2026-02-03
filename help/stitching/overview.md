@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
+source-git-commit: 9bebfaf7e10762bc7382d8b0d55148ee23698dd9
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 78%
+source-wordcount: '965'
+ht-degree: 66%
 
 ---
 
@@ -45,12 +45,8 @@ Customer Journey Analytics 支持两种类型的拼接：[基于字段的拼接]
 
 如果您在定义 Customer Journey Analytics 连接时将一个或多个拼接数据集与其他数据集（例如呼叫中心数据）相结合，您将受益于跨渠道分析。此连接配置假定那些其他数据集的每一行已经包含一个人员 ID，与拼接 ID 的情况类似。
 
-## 启用拼接
+如果贵组织满足常规[先决条件](overview.md#prerequisites)，了解常见[限制](overview.md#limitations)，并且了解特定于拼接方法（[基于字段](fbs.md)和[基于图形](gbs.md)）的先决条件和限制，则可以按照以下步骤在Customer Journey Analytics中请求并开始使用拼接。
 
-您可以通过以下两种方式启用拼接：
-
-- [请求启用拼接](/help/stitching/use-stitching.md)（已弃用）。 一旦获得批准，系统将为您请求拼接的数据集创建一个重复的数据集。该重复数据集包含一个附加列，用于存储拼接后的标识符。要在 Customer Journey Analytics 中使用拼接数据，您需要创建新的连接或编辑现有连接，并将该拼接数据集包含在内。
-- [在连接接口](/help/stitching/use-stitching-ui.md)中启用拼接。 在“连接”界面中配置数据集的拼合时，在Customer Journey Analytics中从该数据集摄取数据期间会动态进行拼合。
 
 ## 限制
 
@@ -65,6 +61,25 @@ Customer Journey Analytics 支持两种类型的拼接：[基于字段的拼接]
 - 将两个或多个数据集合并。拼接仅适用于一个数据集。数据集的合并是由于设置 Customer Journey Analytics 连接并在此连接中所选的各数据集中选择相同的人员 ID 而发生。
 
 - 将两个数据集连接。在 Customer Journey Analytics 中，连接通常用于在 Analysis Workspace 中查找或分类。拼接使用了连接功能，但拼接过程本身不只涉及到连接。
+
+
+## 选项
+
+您有权使用的Customer Journey Analytics包将确定可用的拼接方法、初始回填持续时间的选项、回顾窗口、重放频率和允许拼接的最大数据集数。 有关更多详细信息，请参阅[Customer Journey Analytics产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/customer-journey-analytics.html)。 在启用拼合之前，请决定可用的选项。
+
+| | Customer Journey Analytics<br/>选择 | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
+|---|---|---|---|
+| 可用的拼接方法 | 基于字段的拼接 | 基于字段的拼接<br/>基于图形的拼接 | 基于字段的拼接<br>基于图形的拼接</li> |
+| 一次性拼接回填持续时间 | 13 个月 | 13 个月 | 25 个月 |
+| 回顾窗口和重放频率 | 1天，每天<br/>最多7天，每周 | 1天，每天<br/>最多14天，每周 | 1天，每天<br/>最多30天，每周 |
+| 允许拼合的最大数据集数 | 5 | 15 | 50 |
+
+## 启用拼接
+
+您可以通过以下两种方式启用拼接：
+
+- [请求启用拼接](/help/stitching/use-stitching.md)（已弃用）。 一旦获得批准，系统将为您请求拼接的数据集创建一个重复的数据集。该重复数据集包含一个附加列，用于存储拼接后的标识符。要在 Customer Journey Analytics 中使用拼接数据，您需要创建新的连接或编辑现有连接，并将该拼接数据集包含在内。
+- [在连接接口](/help/stitching/use-stitching-ui.md)中启用拼接。 在“连接”界面中配置数据集的拼合时，在Customer Journey Analytics中从该数据集摄取数据期间会动态进行拼合。
 
 
 ## Journey Optimizer 数据集

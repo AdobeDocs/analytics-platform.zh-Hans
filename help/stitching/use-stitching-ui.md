@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: 8f7c1f2a89c10be9b33f6e06fcff287e275767cf
+source-git-commit: cbb18e9d0990d5df64995c2dabe8362c7c37bb45
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 3%
+source-wordcount: '935'
+ht-degree: 5%
 
 ---
 
@@ -85,7 +85,13 @@ ht-degree: 3%
 
 
 
-## 启用身份标识拼接
+## 启用身份标识拼接 {#enable-identity-stitching}
+
+>[!CONTEXTUALHELP]
+>id="connection_changeto_identitygraph"
+>title="身份标识图的更改"
+>abstract="在使用身份标识图进行拼接前，请先确保您已完成身份标识图的设置。"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="基于图形的拼接"
 
 要启用拼接，请在&#x200B;**[!UICONTROL 添加数据集]**&#x200B;或&#x200B;**[!UICONTROL 编辑数据集]**&#x200B;对话框的事件数据集部分中：
 

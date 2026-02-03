@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
+source-git-commit: cbb18e9d0990d5df64995c2dabe8362c7c37bb45
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 20%
+source-wordcount: '407'
+ht-degree: 26%
 
 ---
 
@@ -19,19 +19,6 @@ ht-degree: 20%
 >
 >不再需要通过Adobe进行请求拼接，此方法已弃用。 [在连接UI中启用拼接](use-stitching-ui.md)。
 >
-
-如果贵组织满足常规[先决条件](overview.md#prerequisites)，了解常见[限制](overview.md#limitations)，并且了解特定于拼接方法（[基于字段](fbs.md)和[基于图形](gbs.md)）的先决条件和限制，则可以按照以下步骤在Customer Journey Analytics中请求并开始使用拼接。
-
-## 选择选项
-
-您有权使用的Customer Journey Analytics包将确定可用的拼接方法、初始回填持续时间的选项、回顾窗口、重放频率和允许拼接的最大数据集数。 有关更多详细信息，请参阅[Customer Journey Analytics产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/customer-journey-analytics.html)。 在请求支持之前决定可用的选项。
-
-| | Customer Journey Analytics<br/>选择 | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
-|---|---|---|---|
-| 可用的拼接方法 | 基于字段的拼接 | 基于字段的拼接<br/>基于图形的拼接 | 基于字段的拼接<br>基于图形的拼接</li> |
-| 一次性拼接回填持续时间 | 13 个月 | 13 个月 | 25 个月 |
-| 回顾窗口和重放频率 | 1天，每天<br/>最多7天，每周 | 1天，每天<br/>最多14天，每周 | 1天，每天<br/>最多30天，每周 |
-| 允许拼合的最大数据集数 | 5 | 15 | 50 |
 
 ## 请求支持
 
