@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
+source-git-commit: 8f7c1f2a89c10be9b33f6e06fcff287e275767cf
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '910'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 3%
 
 如果您满足前提条件，则可能需要在启用身份拼接之前对事件数据集中的数据执行一些预检检查：
 
-* 如果您要为永久ID /人员ID使用XDM架构字段，请确保在事件数据集的架构中正确标记了身份。 [请参阅身份命名空间概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/namespaces)。
+* 如果您要为持久ID或人员ID使用XDM架构字段，请确保在事件数据集的架构中正确标记身份。 [请参阅身份命名空间概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/namespaces)。
 * 验证持久ID和人员ID的标识覆盖范围：
 
    * **永久ID**

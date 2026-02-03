@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
+source-git-commit: a2715ff9869796858dec16d3b8b422ef0c9325aa
 workflow-type: tm+mt
-source-wordcount: '2694'
-ht-degree: 100%
+source-wordcount: '2776'
+ht-degree: 97%
 
 ---
 
@@ -332,6 +332,18 @@ ht-degree: 100%
 * 要编辑在收集 Content Analytics 数据时应包含或排除哪些页面，请选择&#x200B;**[!UICONTROL 体验]**&#x200B;下的 ![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**。您被重定向到为当前 Content Analytics 配置与标记属性相关联的 [Adobe Content Analytics 扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)。但是，您可以编辑要包含或排除页面的正则表达式。确保您[发布](#publish)更改内容。
 
 * 要编辑在收集 Content Analytics 数据时应包含或排除哪些资产，请选择&#x200B;**[!UICONTROL 资产]**&#x200B;下的 ![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**。您被重定向到为当前 Content Analytics 配置与标记属性相关联的 [Adobe Content Analytics 扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)。但是，您可以编辑要包含或排除资产的正则表达式。确保您[发布](#publish)更改内容。
+
+
+### 标头覆盖
+
+或者，您可以在&#x200B;**[!UICONTROL 标头覆盖]**&#x200B;部分中指定标头名称和密码标头值。  此标头覆盖配置可确保Content Analytics发送自定义HTTP标头，以绕过任何已实施的机器人检测或关口流量技术。
+
+![标头覆盖节](/help/content-analytics/assets/aca-configuration-header-overrides.png)
+
+1. 启用&#x200B;**[!UICONTROL 配置标头覆盖]**。
+1. 输入&#x200B;**[!UICONTROL 标头名称]**。 例如，`x-asset-service`。
+1. 输入&#x200B;**[!UICONTROL 标头值]**。 您指定的任何内容都是机密的，在用户界面中不可见（除非您在输入期间明确选择公开![可见性](/help/assets/icons/Visibility.svg)值）。
+
 
 ### 摘要 {#summary}
 
