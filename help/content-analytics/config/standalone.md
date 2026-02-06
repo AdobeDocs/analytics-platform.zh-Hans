@@ -6,13 +6,13 @@ feature: Content Analytics
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 44fa4385faf2e41f90c6bce3648a4890d4a70442
+exl-id: 35d63b7d-f35a-4a88-ae14-96724d32a931
+source-git-commit: 20ead546897ad517840f95a5ec4dcd7f830afe8c
 workflow-type: tm+mt
 source-wordcount: '2517'
 ht-degree: 6%
 
 ---
-
 
 # 独立配置
 
@@ -35,15 +35,15 @@ Content Analytics作为独立产品授予许可，但配置是在Experience Plat
 | 术语 | 说明 |
 |---|---|
 | **架构** | [架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition)是一组规则，用于表示和验证数据的结构和格式。 在高层面上，架构提供了真实世界对象的抽象定义，例如网站上发生的事件，如点击。 并概述该对象的每个实例中应包含哪些数据。 |
-| **数据集** | [数据集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/overview)是用于数据集合的存储和管理结构，通常是包含架构（列）和字段（行）的表。 数据集类似于数据库表，其中每一行都是来自您网站的事件。 |
-| **数据流** | [数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/overview)表示将数据从您的网站路由到Adobe Experience Platform中的正确数据集的服务器端配置。 数据流充当连接您的网站与存储的数据高速公路。 |
-| **标记** | Experience Platform中的[标记](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/home)是Adobe推出的新一代标记管理功能。 标记为客户提供了一种简单的方式来部署和管理用来加强相关客户体验的分析、营销和广告标记。 在Content Analytics中，Adobe的标签管理系统允许您在网站上部署跟踪代码，而无需以类似方式编辑每个页面。 标记功能类似于您可能从Google Tag Manager中了解的功能。 |
+| **数据集** | [数据集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)是用于数据集合的存储和管理结构，通常是包含架构（列）和字段（行）的表。 数据集类似于数据库表，其中每一行都是来自您网站的事件。 |
+| **数据流** | [数据流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)表示将数据从您的网站路由到Adobe Experience Platform中的正确数据集的服务器端配置。 数据流充当连接您的网站与存储的数据高速公路。 |
+| **标记** | Experience Platform中的[标记](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)是Adobe推出的新一代标记管理功能。 标记为客户提供了一种简单的方式来部署和管理用来加强相关客户体验的分析、营销和广告标记。 在Content Analytics中，Adobe的标签管理系统允许您在网站上部署跟踪代码，而无需以类似方式编辑每个页面。 标记功能类似于您可能从Google Tag Manager中了解的功能。 |
 | **沙盒** | Experience Platform提供了[沙盒](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sandbox/home)，可将单个Experience Platform实例划分为单独的虚拟环境，以帮助开发和改进数字体验应用程序。 Content Analytics通常使用&#x200B;*生产*&#x200B;沙盒。 |
-| **连接** | [连接](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/overview)定义要引入的Experience Platform数据集。 连接定义了数据集(数据存储在AEP中)与Customer Journey Analytics（可在其中分析数据）之间的链接。 通过连接，收集的数据可用于报告。 |
-| **&#x200B;**&#x200B;| [数据视图](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/data-views)是一个容器，通过它可决定如何解释来自连接的数据。 数据视图指定可用于报告的所有维度和量度。 数据视图与确定可在分析中使用的行和列的配置类似。 |
-| **Analysis Workspace** | [Analysis Workspace](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/home)是用于构建Content Analytics报告和分析的拖放浏览器界面。 |
-| **体验** | 在Content Analytics中，[体验](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/content-analytics/content-analytics#terminology)是指网页上所有可根据页面URL捕获和分析的文本内容。 |
-| **资源** | 在Content Analytics中，[资源](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/content-analytics/content-analytics#terminology)是个别且唯一的内容，如图像。 |
+| **连接** | [连接](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/overview)定义要引入的Experience Platform数据集。 连接定义了数据集(数据存储在AEP中)与Customer Journey Analytics（可在其中分析数据）之间的链接。 通过连接，收集的数据可用于报告。 |
+| **** | [数据视图](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/data-views)是一个容器，通过它可决定如何解释来自连接的数据。 数据视图指定可用于报告的所有维度和量度。 数据视图与确定可在分析中使用的行和列的配置类似。 |
+| **Analysis Workspace** | [Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)是用于构建Content Analytics报告和分析的拖放浏览器界面。 |
+| **体验** | 在Content Analytics中，[体验](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology)是指网页上所有可根据页面URL捕获和分析的文本内容。 |
+| **资源** | 在Content Analytics中，[资源](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology)是个别且唯一的内容，如图像。 |
 
 
 ## 设置概述
@@ -85,7 +85,7 @@ Content Analytics作为独立产品授予许可，但配置是在Experience Plat
 
 >[!BEGINSHADEBOX]
 
-请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [管理产品配置文件的用户](https://video.tv.adobe.com/v/3475951/?captions=chi_hans&quality=12&learn=on){target="_blank"}以观看演示视频。
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [管理产品配置文件的用户](https://video.tv.adobe.com/v/333860/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 
 >[!ENDSHADEBOX]
@@ -302,10 +302,9 @@ Customer Journey Analytics不支持基于属性的访问控制。 要指定权�
 
 #### 手动配置
 
-要为您的网站实施Content Analytics，您需要手动发布Content Analytics标记属性[&#128279;](manual.md)。
+要为您的网站实施Content Analytics，您需要手动发布Content Analytics标记属性[](manual.md)。
 
 
 ### 设置项目
 
 在Customer Journey Analytics中设置项目以生成您的[Content Analytics报告和可视化图表](/help/content-analytics/report/report.md)。 或者，您可以使用[Content Analytics模板](/help/content-analytics/report/report.md#template)开始。
-

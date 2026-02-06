@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: d1ba2d203738ca9bf74d17bb93712eff26f88f25
+source-git-commit: 20ead546897ad517840f95a5ec4dcd7f830afe8c
 workflow-type: tm+mt
 source-wordcount: '2149'
 ht-degree: 84%
@@ -75,7 +75,7 @@ Adobe 启用拼接后大约一周，实时拼接功能就可供使用。回填�
 
 +++ 跨设备分析（传统 Analytics 中的一个功能）和跨渠道分析两者之间有什么区别？
 
-[跨设备分析](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/cda/overview)是传统 Adobe Analytics 的一项特有功能，它使您能够了解人们如何跨设备操作。该功能提供了两种将设备数据链接在一起的工作流：基于字段的拼接和设备图。
+[跨设备分析](https://experienceleague.adobe.com/en/docs/analytics/components/cda/overview)是传统 Adobe Analytics 的一项特有功能，它使您能够了解人们如何跨设备操作。该功能提供了两种将设备数据链接在一起的工作流：基于字段的拼接和设备图。
 
 跨渠道分析是 Customer Journey Analytics 的一个特有用例，允许您了解人们在各种设备和渠道上如何操作。它会拼接数据集的人员 ID，使该数据集与其他数据集无缝组合。此功能在设计上与基于跨设备分析字段的拼接功能类似，但由于传统 Analytics 和 Customer Journey Analytics 之间的数据架构不同，此功能的实施方法也不同。更多信息请参阅[拼接](overview.md)和[跨渠道分析](../use-cases/cross-channel/cross-channel.md)用例。
 
@@ -205,11 +205,11 @@ Customer Journey Analytics 中的某些量度与传统 Analytics 中的量度相
 
 | **Customer Journey Analytics 拼接数据** | **Customer Journey Analytics 未拼接数据** | **Adobe Analytics** | **带 CDA 的 Analytics Ultimate** |
 | ----- | ----- | ----- | ----- |
-| **人员** =不同人员ID的数量，其中产生的ID被选作人员ID。 **人员数** 可能高于或低于传统 Adobe Analytics 中的&#x200B;**独特访客数**，具体取决于拼接过程的结果。 | **人员** = 根据被选为人员 ID 的列计算的不同人员 ID 的数量。如果在 Customer Journey Analytics 中 `endUserIDs._experience.aaid.id` 用作人员 ID，Adobe 源连接器数据集中的&#x200B;**人员**&#x200B;就与传统 Adobe Analytics 中的&#x200B;**独特访客**&#x200B;类似。 | **独特访客** = 不同访客 ID 的数量。**独特访客**&#x200B;可能与不同 **ECID** 的数量不一致。 | 请参阅[人员数](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/metrics/people)。 |
-| **会话**：根据 Customer Journey Analytics 数据视图中的会话设置定义。拼接过程可能会将来自多个设备的各个会话组合成单个会话。 | **会话**：根据 Customer Journey Analytics 数据视图中特定的会话设置定义。 | **访问数**：请参阅[访问数](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/metrics/visits)。 | **访问数**：根据 [CDA 虚拟报告包](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/cda/setup)中特定的会话设置定义。 |
-| **活动**= Customer Journey Analytics 中拼接数据的行数。该量度通常接近于传统 Adobe Analytics 中的&#x200B;**“发生次数”。**&#x200B;但是，请注意上面关于包含空白永久 ID 的行的常见问题解答。 | **活动**= Customer Journey Analytics 中未拼接数据的行数。该量度通常接近于传统 Adobe Analytics 中的&#x200B;**“发生次数”。**&#x200B;但是请注意，如果任何事件在 Experience Platform 数据湖的未拼接数据中有空白的永久 ID，这些事件就不包括在 Customer Journey Analytics 中。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/metrics/occurrences)。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/metrics/occurrences)。 |
+| **人员** =不同人员ID的数量，其中产生的ID被选作人员ID。 **人员数** 可能高于或低于传统 Adobe Analytics 中的&#x200B;**独特访客数**，具体取决于拼接过程的结果。 | **人员** = 根据被选为人员 ID 的列计算的不同人员 ID 的数量。如果在 Customer Journey Analytics 中 `endUserIDs._experience.aaid.id` 用作人员 ID，Adobe 源连接器数据集中的&#x200B;**人员**&#x200B;就与传统 Adobe Analytics 中的&#x200B;**独特访客**&#x200B;类似。 | **独特访客** = 不同访客 ID 的数量。**独特访客**&#x200B;可能与不同 **ECID** 的数量不一致。 | 请参阅[人员数](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/people)。 |
+| **会话**：根据 Customer Journey Analytics 数据视图中的会话设置定义。拼接过程可能会将来自多个设备的各个会话组合成单个会话。 | **会话**：根据 Customer Journey Analytics 数据视图中特定的会话设置定义。 | **访问数**：请参阅[访问数](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/visits)。 | **访问数**：根据 [CDA 虚拟报告包](https://experienceleague.adobe.com/en/docs/analytics/components/cda/setup)中特定的会话设置定义。 |
+| **活动**= Customer Journey Analytics 中拼接数据的行数。该量度通常接近于传统 Adobe Analytics 中的&#x200B;**“发生次数”。**&#x200B;但是，请注意上面关于包含空白永久 ID 的行的常见问题解答。 | **活动**= Customer Journey Analytics 中未拼接数据的行数。该量度通常接近于传统 Adobe Analytics 中的&#x200B;**“发生次数”。**&#x200B;但是请注意，如果任何事件在 Experience Platform 数据湖的未拼接数据中有空白的永久 ID，这些事件就不包括在 Customer Journey Analytics 中。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/occurrences)。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/occurrences)。 |
 
-Customer Journey Analytics 和 Adobe Analytics 中的其他量度可能相似。例如，Adobe Analytics [自定义事件](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/metrics/custom-events) 1 – 100 的总数在传统 Adobe Analytics 和 Customer Journey Analytics 之间具有可比性（无论是否拼接）。Customer Journey Analytics 与 Adobe Analytics 之间的[功能差异](/help/getting-started/aa-vs-cja/cja-aa.md)（如消除重复事件）可能会导致这两种产品之间存在差异。
+Customer Journey Analytics 和 Adobe Analytics 中的其他量度可能相似。例如，Adobe Analytics [自定义事件](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/custom-events) 1 – 100 的总数在传统 Adobe Analytics 和 Customer Journey Analytics 之间具有可比性（无论是否拼接）。Customer Journey Analytics 与 Adobe Analytics 之间的[功能差异](/help/getting-started/aa-vs-cja/cja-aa.md)（如消除重复事件）可能会导致这两种产品之间存在差异。
 
 +++
 
@@ -269,7 +269,7 @@ curl -X PATCH \
 
 如果您未获得 Real-Time Customer Data Profile 的许可，在请求中 `unifiedProfile` 标记的任何使用都会返回错误。
 
-更多信息请参阅[创建一个为轮廓和身份标识启用的数据集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/enable-for-profile#enable-the-dataset)。
+更多信息请参阅[创建一个为轮廓和身份标识启用的数据集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#enable-the-dataset)。
 
 +++ 
 
@@ -280,3 +280,4 @@ curl -X PATCH \
 
 默认情况下，拼接的命名空间值为小写。 因此，`custEmail`将变为`custemail`。 如果您的另一个数据集的身份命名空间值为`custEmail`，则两个值不匹配。 若要解决报告中的这种行为，您可以使用[lowercase()](/help/data-views/derived-fields/derived-fields.md#lowercase)派生字段函数来匹配身份命名空间值。
 
++++
