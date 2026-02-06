@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 9bebfaf7e10762bc7382d8b0d55148ee23698dd9
+source-git-commit: d1ba2d203738ca9bf74d17bb93712eff26f88f25
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 66%
+source-wordcount: '982'
+ht-degree: 60%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 66%
 
 然而，作为 Customer Journey Analytics 中连接的一部分的基于事件的数据集，并非全都填充了足够的数据以支持这种现成可用的归因方法。尤其是在基于网页或移动端的体验数据集中，通常并非所有事件都具备真实的人员 ID 信息。
 
-拼合会为一个数据集行中的身份重新生成键值，以确保人员ID（拼合ID）在每个事件上均可用。 拼接功能会查看来自经过身份验证与未经身份验证会话的用户数据，以确定可用作拼接 ID 的通用人员 ID 值。此重新生成键值可将不同的记录解析为单个拼接ID，以供在人员级别（而不是设备或Cookie级别）进行分析。
+拼合会为一个数据集的行中的身份重新生成键值，以确保尽可能多的事件中可以使用所需的人员ID信息。 拼接功能会同时考虑来自经过身份验证和未经身份验证的会话的用户数据，以确定可以使用的通用人员ID值。 此重新生成键值可将不同的记录解析为单个人员ID，以供在人员级别而非设备或Cookie级别进行分析。 但是，如果无法确定通用人员ID值，则改用永久ID值。
 
 Customer Journey Analytics 支持两种类型的拼接：[基于字段的拼接](fbs.md)和[基于图形的拼接](gbs.md)。
 
@@ -43,10 +43,9 @@ Customer Journey Analytics 支持两种类型的拼接：[基于字段的拼接]
    - 有关 Adobe Analytics 数据，请查阅[在 Customer Journey Analytics 中使用 Adobe Analytics 报告包数据](/help/getting-started/aa-vs-cja/aa-data-in-cja.md)。
    - 有关其他类型的数据，请参阅 Adobe Experience Platform 文档中的[创建架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/create-schema-ui)和[摄取数据](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ingestion/home)。
 
-如果您在定义 Customer Journey Analytics 连接时将一个或多个拼接数据集与其他数据集（例如呼叫中心数据）相结合，您将受益于跨渠道分析。此连接配置假定那些其他数据集的每一行已经包含一个人员 ID，与拼接 ID 的情况类似。
+如果您在定义 Customer Journey Analytics 连接时将一个或多个拼接数据集与其他数据集（例如呼叫中心数据）相结合，您将受益于跨渠道分析。此连接配置假定这些其他数据集已在尽可能多的行上包含来自相同命名空间的人员ID。
 
 如果贵组织满足常规[先决条件](overview.md#prerequisites)，了解常见[限制](overview.md#limitations)，并且了解特定于拼接方法（[基于字段](fbs.md)和[基于图形](gbs.md)）的先决条件和限制，则可以按照以下步骤在Customer Journey Analytics中请求并开始使用拼接。
-
 
 ## 限制
 

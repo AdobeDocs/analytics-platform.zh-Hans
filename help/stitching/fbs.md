@@ -5,16 +5,20 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
+source-git-commit: b5afcfe2cac8aa12d7f4d0cf98658149707123e3
 workflow-type: tm+mt
-source-wordcount: '1711'
-ht-degree: 92%
+source-wordcount: '1797'
+ht-degree: 81%
 
 ---
 
 # 基于字段的拼接
 
-在基于字段的拼合中，您可以指定事件数据集以及该数据集的永久ID (Cookie)和人员ID。 基于字段的拼接将一个新的拼接 ID 列添加到事件数据集中，并根据具有特定永久 ID 的人员 ID 的行更新这个拼接 ID。<br/>将 Customer Journey Analytics 用作独立解决方案（无权访问身份标识服务和相关联的身份标识图）时，您可以使用基于字段的拼接。或者，如果您不想使用可用的身份标识图。
+在基于字段的拼合中，您可以指定事件数据集以及该数据集的永久ID (Cookie)和人员ID。 基于字段的拼合会尝试对任何具有特定永久ID的匿名事件提供人员ID信息，以供Customer Journey Analytics数据分析。  该信息将从具有特定永久ID的人员ID的行中检索。
+
+如果无法检索某个事件的人员ID信息，则将改用永久ID用于该&#x200B;*未拼合*&#x200B;事件。 因此，在与包含启用拼合的数据集的[连接](/help/data-views/data-views.md)关联的[数据视图](/help/connections/overview.md)中，人员ID组件在事件级别包含人员ID值或永久ID值。
+
+将Customer Journey Analytics用作独立解决方案(无权访问Experience Platform Identity服务和关联的身份图)时，您可以使用基于字段的拼合。 或者，如果您不想使用可用的身份标识图。
 
 ![基于字段的拼接](/help/stitching/assets/fbs.png)
 
@@ -120,7 +124,7 @@ ht-degree: 92%
 
 *收集数据当天显示的数据：*
 
-| 事件 | 时间戳 | 永久 ID（Cookie ID） | 人员 ID | 拼接 ID（实时拼接后） |
+| 事件 | 时间戳 | 永久 ID（Cookie ID） | 人员 ID | 结果ID（实时拼接后） |
 |---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` ![右箭头](/help/assets/icons/ArrowRight.svg) | - | **`246`** |
 | 2 | 2023-05-12 12:02 | `246` | `Bob` ![右箭头](/help/assets/icons/ArrowRight.svg) | `Bob` |
@@ -138,7 +142,7 @@ ht-degree: 92%
 
 新设备上未经身份验证和经过身份验证的事件都将计为单独的人员（临时）。已识别设备上的未经身份验证的事件进行实时拼接。
 
-自定义变量识别与设备关联后，就会开始归因。在上例中，除事件 1、8、9 和 10 之外的所有其他事件都进行实时拼接（它们都使用 `Bob` 标识符）。实时拼接会“解析”事件 4、6 和 12 的拼接 ID。
+自定义变量识别与设备关联后，就会开始归因。在上例中，除事件 1、8、9 和 10 之外的所有其他事件都进行实时拼接（它们都使用 `Bob` 标识符）。实时拼合“解析”事件4、6和12的结果ID。
 
 延迟的数据（时间戳超过 24 小时的数据）会“以最大努力”处理，并会为当前数据的拼接设置优先顺序，以达到最高质量。
 
@@ -154,7 +158,7 @@ ht-degree: 92%
 
 *重播后的相同数据：*
 
-| 事件 | 时间戳 | 永久 ID（Cookie ID） | 人员 ID | 拼接 ID（实时拼接后） | 拼接 ID（重播后） |
+| 事件 | 时间戳 | 永久 ID（Cookie ID） | 人员 ID | 结果ID（实时拼接后） | 生成的ID（重播后） |
 |---|---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` | - | `246` | **`Bob`** |
 | 2 | 2023-05-12 12:02 | `246` | `Bob` ![右箭头](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![上箭头](/help/assets/icons/ArrowUp.svg) |
@@ -178,7 +182,7 @@ ht-degree: 92%
 
 ### 步骤 3：隐私请求
 
-如果您收到隐私请求，就会在发出隐私请求的用户主体的所有记录中删除拼接 ID。
+当您收到隐私请求时，拼接过程设置的任何与人员ID值的标识符信息将在所有记录中更新为隐私请求用户主体的永久ID值。
 
 +++ 详细信息
 
@@ -186,7 +190,7 @@ ht-degree: 92%
 
 *发出对 Bob 的隐私请求之后的相同数据：*
 
-| 事件 | 时间戳 | 永久 ID（Cookie ID） | 人员 ID | 拼接 ID（实时拼接后） | 拼接 ID（重播后） | 人员 ID | 拼接 ID（隐私请求后） |
+| 事件 | 时间戳 | 永久 ID（Cookie ID） | 人员 ID | 结果ID（实时拼接后） | 生成的ID（重播后） | 人员 ID | 结果ID（隐私请求后） |
 |---|---|---|---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` | - | `246` | **`Bob`** | - | `246` |
 | 2 | 2023-05-12 12:02 | `246` | Bob ![右箭头](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![上箭头](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | ![移除圆圈](/help/assets/icons/RemoveCircle.svg) | `246` |
@@ -214,7 +218,7 @@ ht-degree: 92%
    - **人员 ID**，这是仅在某些行中可用的标识符。例如，轮廓经过身份验证后，经过哈希处理的用户名或电子邮件地址。实际上您可以使用任何标识符。拼接时会将此字段用于保存实际人员 ID 信息。为获得最佳拼接结果，应在数据集的事件中为每个永久 ID 至少发送一次人员 ID。如果您计划在 Customer Journey Analytics 连接中包含此数据集，那么其他数据集最好也有一个类似的常见标识符。
 
 <!--
-- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 
