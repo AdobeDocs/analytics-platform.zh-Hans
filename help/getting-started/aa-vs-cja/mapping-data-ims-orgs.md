@@ -1,21 +1,22 @@
 ---
-title: 映射来自多个IMS组织的Analytics数据
+title: 跨IMS数据映射
 description: 了解如何请求将数据从多个源IMS组织的报表包映射到目标IMS组织。
 role: Admin
 solution: Customer Journey Analytics
 feature: Adobe Analytics Integration,Administration
 hide: true
 hidefromtoc: true
-source-git-commit: 925da525b61c2a24156159f4029303c297e0af10
+exl-id: c109742b-c1c5-45b3-971f-f8dcf814ec37
+source-git-commit: 16486ded009a9dbd9170240c0941853a4deec0af
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1137'
 ht-degree: 1%
 
 ---
 
-# 映射来自多个IMS组织的Analytics数据
+# 跨IMS数据映射
 
-Analytics Source Connector只能从属于您有权使用Customer Journey Analytics的同一组织的Adobe Analytics报表包中摄取数据。 从多个IMS组织映射Analytics数据的功能提供了针对此限制的解决方案。 本文概述了启用此功能的过程。
+Analytics Source Connector只能从属于您有权使用Customer Journey Analytics的同一组织的Adobe Analytics报表包中摄取数据。 *跨IMS数据映射*&#x200B;功能是映射来自多个IMS组织的Analytics数据的功能，它提供了针对此限制的解决方案。 本文概述了启用此功能的过程。
 
 
 ## 场景
@@ -28,7 +29,7 @@ Analytics Source Connector只能从属于您有权使用Customer Journey Analyti
 
 开箱即用型报表包无法在Customer Journey Analytics中跨多个IMS组织报告来自多个报表包的数据组合。 此限制的原因是，通过Analytics Source Connector从Adobe Analytics摄取到Experience Platform的数据仅支持摄取单个IMS组织拥有的数据。 您为其配置了以及用于登录到Adobe Analytics、Experience Platform和Customer Journey Analytics的IMS组织。
 
-通过从多个IMS组织&#x200B;*映射Analytics数据*，您可以请求Adobe来映射数据。 该功能使用Analytics源连接器将数据从跨多个&#x200B;*源* IMS组织的报表包映射到一个&#x200B;*目标* IMS组织一部分的数据集。 例如：
+使用&#x200B;*跨IMS数据映射*&#x200B;功能，您可以请求Adobe来映射数据。 该功能使用Analytics源连接器将数据从跨多个&#x200B;*源* IMS组织的报表包映射到属于一个&#x200B;*目标* IMS组织的报表包（和最终数据集）。 例如：
 
 | 插图 | 说明 |
 |---|---|
@@ -38,7 +39,7 @@ Analytics Source Connector只能从属于您有权使用Customer Journey Analyti
 
 ## 使用方法
 
-要配置和启用来自多个IMS组织的&#x200B;*映射Analytics数据*&#x200B;功能，您必须通过Adobe客户经理请求该映射。 操作方法：
+要配置和启用&#x200B;*跨IMS数据映射*&#x200B;功能，您必须通过Adobe客户经理请求该映射。 操作方法：
 
 1. 作为目标IMS组织管理员，请向要映射报表包的所有源IMS组织管理员请求批准电子邮件。 您可以使用以下文本作为电子邮件模板，以请求源IMS组织管理员批准。
 
@@ -50,12 +51,12 @@ Analytics Source Connector只能从属于您有权使用Customer Journey Analyti
 
 Adobe客户经理收到一封电子邮件，其中包含从多个组织映射Analytics数据的请求，随后将在Adobe中审核该请求。 有关任何其他问题、可选培训及其他信息，Adobe客户经理将与您联系。
 
-批准后，将创建请求的映射，并通知您。 源IMS组织名称已附加到Experience Platform中Analytics报表包[的](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data)列表中的报表包名称。
+批准后，将创建请求的映射，并通知您。 源IMS组织名称已附加到Experience Platform中Analytics报表包[的](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data)列表中的报表包名称。
 
 
 ## 限制
 
-以下限制适用于来自多个IMS组织的&#x200B;*映射Analytics数据*&#x200B;功能：
+以下限制适用于&#x200B;*跨IMS数据映射*&#x200B;功能：
 
 * 一个报表包只能跨组织连接一次。
 * 您必须先删除在映射中定义为目标IMS组织的IMS组织的所有连接，然后才能请求删除映射。
@@ -64,18 +65,18 @@ Adobe客户经理收到一封电子邮件，其中包含从多个组织映射Ana
 
 ## 注意事项
 
-在请求&#x200B;*从多个IMS组织映射Analytics数据*&#x200B;功能之前，您可能需要考虑以下主题：
+在请求&#x200B;*跨IMS数据映射*&#x200B;功能之前，您可能需要考虑以下主题：
 
 ### 轮廓
 
-在批准来自多个IMS组织的&#x200B;*映射Analytics数据*&#x200B;功能后，您可以将目标IMS组织中一个或多个报表包的数据添加到Experience Platform。 您通过[Analytics源连接器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics)的配置来执行此操作。 然后，将在Experience Platform中创建目标数据集。 在此配置和流程中，您可以选择将一个或多个报表包中的配置文件数据发送到配置文件服务。
+*跨IMS数据映射*&#x200B;功能获得批准后，您可以将目标IMS组织中一个或多个报表包的数据添加到Experience Platform。 您通过[Analytics源连接器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics)的配置来执行此操作。 然后，将在Experience Platform中创建目标数据集。 在此配置和流程中，您可以选择将一个或多个报表包中的配置文件数据发送到配置文件服务。
 
-如上所述，估计由配置和流程产生的配置文件总数。 确保总数不超过您按照合同规定有权访问目标组织的用户档案数。 应用[筛选规则和条件](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"}以选择性地包含或排除要引入到Profile服务的数据。 或者禁用将配置文件数据发送到相关报表包的配置文件服务的选项。
+如上所述，估计由配置和流程产生的配置文件总数。 确保总数不超过您按照合同规定有权访问目标组织的用户档案数。 应用[筛选规则和条件](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"}以选择性地包含或排除要引入到Profile服务的数据。 或者禁用将配置文件数据发送到相关报表包的配置文件服务的选项。
 
 
 ### 拼接
 
-在批准来自多个IMS组织的&#x200B;*映射Analytics数据*&#x200B;功能后，您可以将目标IMS组织中一个或多个报表包的数据添加到Experience Platform。 您通过[Analytics源连接器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics)的配置来执行此操作。 然后，将在Experience Platform中创建您在Analytics Source Connector中配置的报表包的Target数据集。 在此配置和流程中，您可以选择将一个或多个报表包中的配置文件数据发送到配置文件服务。
+*跨IMS数据映射*&#x200B;功能获得批准后，您可以将目标IMS组织中一个或多个报表包的数据添加到Experience Platform。 您通过[Analytics源连接器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics)的配置来执行此操作。 然后，将在Experience Platform中创建您在Analytics Source Connector中配置的报表包的Target数据集。 在此配置和流程中，您可以选择将一个或多个报表包中的配置文件数据发送到配置文件服务。
 
 您可以在目标数据集上同时使用[基于字段的](/help/stitching/fbs.md)和[基于图形的](/help/stitching/gbs.md)拼合。 当您对这些目标数据集中的一个或多个使用基于图形的拼接时，请确保按照[用户档案](#profiles)部分中所述遵守用户档案数量的合同权利。
 
@@ -88,4 +89,4 @@ Adobe客户经理收到一封电子邮件，其中包含从多个组织映射Ana
 
 ### 数据报表
 
-*映射来自多个IMS组织的Analytics数据*&#x200B;功能只是确保您可以将数据用作Customer Journey Analytics [连接](/help/connections/overview.md)、一个或多个[数据视图](/help/data-views/data-views.md)和[工作区项目](/help/analysis-workspace/home.md)的一部分的第一步。 您需要仔细检查您现在在一个IMS组织中可用的数据。 在能够正确报告此数据之前，还要考虑数据准备、派生字段、其他查找表等功能。
+*跨IMS数据映射*&#x200B;功能只是确保您可以将数据用作Customer Journey Analytics [连接](/help/connections/overview.md)、一个或多个[数据视图](/help/data-views/data-views.md)和[工作区项目](/help/analysis-workspace/home.md)的一部分的第一步。 您需要仔细检查您现在在一个IMS组织中可用的数据。 在能够正确报告此数据之前，还要考虑数据准备、派生字段、其他查找表等功能。
