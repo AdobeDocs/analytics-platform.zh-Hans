@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 518f2aeac309a34016146b7a4da7823b6fd84cac
-workflow-type: ht
-source-wordcount: '2494'
-ht-degree: 100%
+source-git-commit: cb5baf2ec8d3ad4449a9b08d0a025a2d39a11425
+workflow-type: tm+mt
+source-wordcount: '2451'
+ht-degree: 98%
 
 ---
 
@@ -82,21 +82,10 @@ Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/a
   >* 每个 IMS 组织最多可以启用 50 个数据视图。如果您为某个特定组织的所有产品轮廓启用了超过 50 个数据视图，Data Insights 代理将使用最常用的 50 个数据视图。
   >* 您启用数据视图后的同一天内，Data Insights 代理就可以引用这些被包含的数据视图。
 
-  要为 Data Insights 代理启用数据视图，请执行以下操作：
+  要为Data Insights Agent启用数据视图，请参阅数据视图的[AI设置](/help/data-views/create-dataview.md#ai-settings)。
 
-   1. 在 Customer Journey Analytics 中选择&#x200B;**[!UICONTROL 数据管理]** > **[!UICONTROL 数据视图]**。
+  您可以使用数据视图[中Data Insights Agent列上的](/help/data-views/manage-dataviews.md#manage-data-views)信息查看IMS组织中为Data Insights Agent启用的数据视图数量。
 
-   1. 选择您想为 Data Insights 代理启用的一个或多个数据视图，然后选择&#x200B;**[!UICONTROL 为 Data Insights 代理启用]**。
-
-      ![为 Data Insights 代理启用数据视图](assets/data-view-enable-dia.png)
-
-  要查看在您的 IMS 组织中为 Data Insights 代理启用的数据视图的数量，请执行以下操作：
-
-   1. 在 Customer Journey Analytics 中选择&#x200B;**[!UICONTROL 数据管理]** > **[!UICONTROL 数据视图]**。
-
-   1. 选择 **[!UICONTROL Data Insights 代理]**&#x200B;一列顶部的信息图标。
-
-      ![Data Insights 代理信息图标](assets/data-insights-agent-tooltip.png)
 
 ## 访问 AI 助手中的 Data Insights 代理
 

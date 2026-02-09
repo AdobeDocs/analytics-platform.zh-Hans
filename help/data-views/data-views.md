@@ -5,10 +5,10 @@ exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
-workflow-type: ht
-source-wordcount: '1078'
-ht-degree: 100%
+source-git-commit: 7835d4c5b46177ece4a146df8f0d4abb9605c670
+workflow-type: tm+mt
+source-wordcount: '1094'
+ht-degree: 95%
 
 ---
 
@@ -61,6 +61,8 @@ Customer Journey Analytics 中的 Workspace 项目均基于数据视图。
 
 * 您可以在数据视图中重命名您的容器，并将这些重命名后的容器显示在基于该数据视图的任意 Workspace 项目中。
 
+* 您可以为数据视图启用或禁用Data Insights Agent。
+
 ## 数据视图先决条件 {#prerequisites}
 
 * 在创建数据视图之前，您需要[设置一个或多个与 Experience Platform 数据集的连接](/help/connections/create-connection.md)。
@@ -84,9 +86,10 @@ Customer Journey Analytics 中的 Workspace 项目均基于数据视图。
 
 ## 删除数据视图 {#delete}
 
-如果您删除  [!UICONTROL Customer Journey Analytics] 中的数据视图，将显示一条错误消息，指示所有依赖于这个已删除数据视图的 [!UICONTROL Workspace] 项目都将不再起作用。
+如果您[删除](/help/data-views/manage-dataviews.md#delete-data-views)Customer Journey Analytics[!UICONTROL 中的数据视图]，将显示一条错误消息，指示所有依赖于这个已删除数据视图的[!UICONTROL Workspace]项目都将不再运行。
 
 ## 后续步骤
 
 * [创建数据视图](/help/data-views/create-dataview.md)
+* [管理数据视图](/help/data-views/manage-dataviews.md)
 * [数据视图用例](/help/use-cases/data-views/data-views-usecases.md)

@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 95e50b73533c627f05c3b8dfe112b28b4f9e70c1
-workflow-type: ht
-source-wordcount: '2722'
-ht-degree: 100%
+source-git-commit: ade6fcd95626d9380153b5089d8f438332dedf8d
+workflow-type: tm+mt
+source-wordcount: '2790'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建或编辑数据视图](https://video.tv.adobe.com/v/345538/?captions=chi_hans&quality=12&learn=on){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建或编辑数据视图](https://video.tv.adobe.com/v/35110/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -109,6 +109,11 @@ ht-degree: 100%
 | **[!UICONTROL 事件容器名称]** | `Event`（默认）。[!UICONTROL 事件]容器定义数据集中的个别事件。如果您的组织使用不同的用语（例如，“点击”或“页面查看”），可在此处将该容器重命名。 |
 
 {style="table-layout:auto"}
+
+### AI 设置
+
+选择&#x200B;**[!UICONTROL 启用Data Insights Agent]**&#x200B;以启用[Data Insights Agent](/help/data-analysis-ai.md)的数据视图。 Data Insights Agent是一个创新型人工智能会话代理，可从Customer Journey Analytics中的AI助手访问。 它可帮助您通过文本提示词快速分析数据。代理使用数据视图中的组件并使用实际数据在Analysis Workspace中构建相关可视化图表。
+
 
 ### 日程表
 
