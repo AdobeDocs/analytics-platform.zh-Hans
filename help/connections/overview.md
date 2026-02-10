@@ -14,7 +14,7 @@ ht-degree: 97%
 
 # 连接概述
 
-通过连接，Customer Journey Analytics 产品管理员可以定义摄取哪些 [!DNL  Experience Platform] 数据源，例如事件、查找、轮廓和摘要数据集。连接是 Customer Journey Analytics 的基础，它决定了您可以在[数据视图](/help/data-views/data-views.md)中将其定义为维度或量度的数据（字段）的可用性。
+通过连接，Customer Journey Analytics 产品管理员可以定义摄取哪些 [!DNL &#x200B; Experience Platform] 数据源，例如事件、查找、轮廓和摘要数据集。连接是 Customer Journey Analytics 的基础，它决定了您可以在[数据视图](/help/data-views/data-views.md)中将其定义为维度或量度的数据（字段）的可用性。
 
 >[!IMPORTANT]
 >
