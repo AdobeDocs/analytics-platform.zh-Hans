@@ -1,11 +1,11 @@
 ---
-title: Customer Journey Analytics BI 扩展
+title: Customer Journey Analytics BI扩展
 description: 了解如何使用 Power BI、Tableau Desktop 通过 Customer Journey Analytics BI 扩展来访问数据视图。
 solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 0d8da0f61e6494801ed3a09823b2f3b7c1bed7a9
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
 source-wordcount: '3249'
 ht-degree: 95%
@@ -48,7 +48,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
 要使用非过期型凭据：
 
-* 在Experience Platform[中创建](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/bi-extension#non-expiring-credentials)未过期的凭据。
+* 在Experience Platform[中创建](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/bi-extension#non-expiring-credentials)未过期的凭据。
 * 按照[过期凭据](#Expiring-credentials)中所述的步骤授予访问未过期凭据的权限。
 
 请参阅 [Customer Journey 访问控制](../technotes/access-control.md)，以了解更多信息，特别是[产品管理员附加权限](../technotes/access-control.md#product-admin-additional-permissions)和 [Admin Console 中的 Customer Journey Analytics 权限](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console)。
@@ -87,7 +87,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    1. 从`cja`数据库&#x200B;**[!UICONTROL 下拉菜单的数据库列表中选择沙盒的]**&#x200B;数据库。 例如：`prod:cja`。
 
-   1. 若要复制命令字符串，请使用 **[!UICONTROL **&#x200B; PSQL 命令&#x200B;**]**&#x200B;部分中的![复制](assets/Smock_Copy_18_N.svg)。
+   1. 若要复制命令字符串，请使用 **[!UICONTROL ** PSQL 命令&#x200B;**]**&#x200B;部分中的![复制](assets/Smock_Copy_18_N.svg)。
 
 1. 打开命令或终端窗口。
 
@@ -120,9 +120,9 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    1. 选择左边栏中的&#x200B;**[!UICONTROL 更多...]**。
 
-   1. 在&#x200B;**获取数据**&#x200B;屏幕中，搜索 `PostgresSQL`，并从列表中选择 **[!UICONTROL **&#x200B; PostgresSQL 数据库&#x200B;**]**。
+   1. 在&#x200B;**获取数据**&#x200B;屏幕中，搜索 `PostgresSQL`，并从列表中选择 **[!UICONTROL ** PostgresSQL 数据库&#x200B;**]**。
 
-   1. 在 **[!UICONTROL **&#x200B; PostgressSQL 数据库&#x200B;**]**&#x200B;对话框中：
+   1. 在 **[!UICONTROL ** PostgressSQL 数据库&#x200B;**]**&#x200B;对话框中：
 
       1. 将 Experience Platform 查询[!UICONTROL 凭据]中的&#x200B;**[!UICONTROL **&#x200B;主机&#x200B;**]**&#x200B;参数粘贴到&#x200B;**[!UICONTROL **&#x200B;服务器&#x200B;**]**&#x200B;文本字段中。
 
@@ -161,7 +161,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    1. 从左边栏中的&#x200B;**[!UICONTROL **&#x200B;至服务器&#x200B;**]**&#x200B;中选择&#x200B;**[!UICONTROL **&#x200B;更多&#x200B;**]**。
 
-   1. 从列表中选择 **[!UICONTROL **&#x200B; PostgresSQL &#x200B;**]**。
+   1. 从列表中选择 **[!UICONTROL ** PostgresSQL **]**。
 
    1. 在 [!UICONTROL PostgresSQL] 对话框中：
 
@@ -605,7 +605,7 @@ ORDER BY -metric1 DESC
 
 ### 一般函数支持
 
-| 函数 | 示例 | 详细信息 |
+| 功能 | 示例 | 详细信息 |
 |---|---|---|
 | [转换](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` 或 <br/> `` `timestamp`::string `` | 虽然当前不支持类型转换，但不会引发错误。`CAST` 函数将被忽略。 |
 | [时间戳](https://spark.apache.org/docs/latest/api/sql/index.html#timestamp) | `` WHERE `timestamp` >= TIMESTAMP('2022-01-01 00:00:00') AND   `timestamp` < TIMESTAMP('2022-01-02 00:00:00') `` | 将时间字符串解析为时间戳以在 `WHERE` 子句中使用。 |
@@ -621,7 +621,7 @@ ORDER BY -metric1 DESC
 
 **String 函数**
 
-| 函数 | 示例 | 详细信息 |
+| 功能 | 示例 | 详细信息 |
 |---|---|---|
 | [Lower](https://spark.apache.org/docs/latest/api/sql/index.html#lower) | ``SELECT LOWER(name) AS lower_name`` | 在传入字段上生成动态维度身份标识。 |
 
@@ -629,7 +629,7 @@ ORDER BY -metric1 DESC
 
 **Date-Time 函数**
 
-| 函数 | 示例 | 详细信息 |
+| 功能 | 示例 | 详细信息 |
 |---|---|---|
 | [年](https://spark.apache.org/docs/latest/api/sql/index.html#year) | ``SELECT YEAR(`timestamp`)`` | 在传入字段上生成动态维度身份标识。 |
 | [月](https://spark.apache.org/docs/latest/api/sql/index.html#month) | ``SELECT MONTH(`timestamp`)`` | 在传入字段上生成动态维度身份标识。 |
@@ -650,7 +650,7 @@ ORDER BY -metric1 DESC
 
 BI 扩展插件仅部分支持某些 SQL 功能，并且不会返回与其他数据库相同的结果。 此特定功能用于由各种 BI 工具生成的 SQL，而 BI 扩展插件无法与之完全匹配。因此，BI 扩展主要聚焦于一个有限的实施，该实施仅涵盖最低限度的 BI 工具使用情况，且不会引发错误。有关更多详细信息，请参阅下表。
 
-| 函数 | 示例 | 详细信息 |
+| 功能 | 示例 | 详细信息 |
 |---|---|---|
 | MIN() &amp; MAX() | ``MIN(daterange)`` 或 <br/> ``MAX(daterange)`` | 使用 `MIN()` 对 `timestamp`、`daterange` 或类似的 `daterangeX`（如 `daterangeday`）进行操作，将返回两年前的结果。<br/><br/> 使用 `MAX()` 对 `timestamp`、`daterange`或类似的 `daterangeX`（如 `daterangeday`）进行操作，将返回当前的日期/时间。使用 <br/><br/>`MIN()` 或 `MAX()` 对任何其他维度、量度或表达式的操作将返回 0。 |
 

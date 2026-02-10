@@ -1,14 +1,14 @@
 ---
 title: 会话设置
-description: 数据视图中可用于定义会话长度以及发起新会话的触发器的设置
+description: 了解可用于定义会话长度和启动新会话的触发器的数据视图中的设置
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
-source-git-commit: 15a3d7b6f2ec4f37fd861315871e06ddefa5348a
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 88%
+source-wordcount: '465'
+ht-degree: 82%
 
 ---
 

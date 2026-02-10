@@ -4,13 +4,13 @@ description: 了解如何管理数据视图。
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: cb5baf2ec8d3ad4449a9b08d0a025a2d39a11425
+exl-id: c5cf15ab-3eb1-4e6b-93a3-3d89694ca0ea
+source-git-commit: c7cf7250f30e2f6023aa7690391aea149ba12eff
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 11%
+source-wordcount: '923'
+ht-degree: 10%
 
 ---
-
 
 # 管理数据视图
 
@@ -29,7 +29,7 @@ ht-degree: 11%
 | --- | --- |
 | **[!UICONTROL 名称]** | 数据视图的名称。 |
 | ![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | 要查看有关数据视图的信息，请选择数据视图名称旁边的![信息大纲](/help/assets/icons/InfoOutline.svg)。<br/>弹出窗口显示有关数据视图的详细信息。 |
-| ![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | 选择![更多](/help/assets/icons/More.svg)，打开上下文菜单。您可以选择：<br/>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**&#x200B;到[编辑](#edit-data-views)数据视图。<br/>![复制](/help/assets/icons/Copy.svg) **[!UICONTROL 复制]**&#x200B;到[复制数据视图](#copy-data-views)。<br/>![删除](/help/assets/icons/Delete.svg) **[!UICONTROL 删除]**&#x200B;以[删除](#delete-data-views)数据视图。<br/>![文件CSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL 导出到CSV]**&#x200B;以[将数据视图的详细信息导出到CSV文件](#export-data-views-to-csv)。<br/>![项目添加](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL 创建项目]**&#x200B;以[为数据视图创建新的Workspace项目](#create-project-from-data-views)。 |
+| ![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | 选择![更多](/help/assets/icons/More.svg)，打开上下文菜单。您可以选择：<br/>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**&#x200B;到[编辑](#edit-data-views)数据视图。<br/>![复制](/help/assets/icons/Copy.svg) **[!UICONTROL 复制]**&#x200B;到[复制数据视图](#copy-data-views)。<br/>![删除](/help/assets/icons/Delete.svg) **[!UICONTROL 删除]**&#x200B;以[删除](#delete-data-views)数据视图。<br/>![文件CSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL 导出到CSV]**&#x200B;以[将数据视图的详细信息导出到CSV文件](#export-data-views-to-csv)。<br/>![项目添加](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL 创建项目]**&#x200B;以[为数据视图创建新的Workspace项目](#create-project-from-data-views)。<br/>![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL 启用Data Insights Agent]**&#x200B;以启用Data Insights Agent的数据视图。<br/>![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL 禁用Data Insights Agent]**&#x200B;以禁用Data Insights Agent的数据视图。 |
 | **[!UICONTROL 连接]** | 与数据视图关联的连接的名称。 |
 | **[!UICONTROL 沙盒]** | 与数据视图关联的沙盒的名称。 |
 | **[!UICONTROL 所有者]** | 数据视图的所有者。 |
@@ -44,7 +44,7 @@ ht-degree: 11%
 
 ## 搜索数据视图
 
-您可以使用搜索![搜索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)框快速搜索数据视图。
+您可以使用![搜索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)框快速搜索数据视图。
 
 ## 筛选数据视图
 
@@ -58,6 +58,8 @@ ht-degree: 11%
 | **[!UICONTROL 集成]** | 仅显示具有选定集成的数据视图。 |
 | **[!UICONTROL 在 CJA 中使用]** | 选择&#x200B;**[!UICONTROL On]**&#x200B;以仅显示允许与Customer Journey Analytics一起使用的数据视图。 选择&#x200B;**[!UICONTROL 关闭]**&#x200B;可仅显示尚未启用与Customer Journey Analytics配合使用的数据视图。 |
 
+
+选择![筛选器](/help/assets/icons/Filter.svg) **[!UICONTROL 隐藏筛选器]**&#x200B;以隐藏筛选器窗格。
 
 ## 创建数据视图
 
@@ -152,4 +154,3 @@ ht-degree: 11%
 
 1. 选择一个或多个已为Data Insights Agent禁用或启用的数据视图行。
 1. 从蓝色操作栏中选择![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL 为Data Insights Agent]**&#x200B;启用![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL 为Data Insights Agent]**&#x200B;禁用。
-

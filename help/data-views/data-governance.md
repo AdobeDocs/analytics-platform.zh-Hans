@@ -1,13 +1,13 @@
 ---
-title: 标签和政策
+title: 标签和策略
 description: 了解 Adobe Experience Platform 中定义的数据标签和政策如何影响 Customer Journey Analytics 中的数据视图和报告。
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
-source-git-commit: 6526ca2b7caaf64acf29d97c859c3e813d003d2d
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
 source-wordcount: '583'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 

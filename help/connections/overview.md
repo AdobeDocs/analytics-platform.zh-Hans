@@ -1,14 +1,14 @@
 ---
-title: Customer Journey Analytics 连接概述
+title: Customer Journey Analytics连接概述
 description: 了解 Customer Journey Analytics 中的连接。
 solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: 09a6ae258d27f8fe9c9a1fc7ed63273620c67c1b
-workflow-type: ht
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+workflow-type: tm+mt
 source-wordcount: '249'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 

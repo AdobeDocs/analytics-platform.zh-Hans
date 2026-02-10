@@ -5,10 +5,10 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: aaf23560b69c90fdbaee3fa401b5fe58e6a4e5d1
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
 source-wordcount: '946'
-ht-degree: 32%
+ht-degree: 33%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 32%
 >
 >Adobe Experience Platform通常以UNIX®毫秒为单位存储时间戳。 为了便于阅读，本示例中使用了日期和时间。
 
-| example_id | timestamp | string_color | string_animal | metric_a |
+| example_id | 时间戳 | string_color | string_animal | metric_a |
 | --- | --- | --- | --- | ---: |
 | user_310 | 1月1日上午7点:02 | 红色 | Fox | |
 | user_310 | 1月1日上午7点:04 | | | 2 |
@@ -38,11 +38,11 @@ ht-degree: 32%
 | user_847 | 1月2日12:31下午 | | 乌龟 | 4 |
 | user_847 | 1月2日12:44下午 | | | 2 |
 
-| different_id | timestamp | string_color | string_shape | metric_b |
+| different_id | 时间戳 | string_color | string_shape | metric_b |
 | --- | --- | --- | --- | ---: |
 | user_847 | 1月2日12:26下午 | 黄色 | 圆形 | 8.5 |
 | user_847 | 1月2日下午1:01 | 红色 | | |
-| alternateid_656 | 1月2日晚上8:58 | 红色 | 正方形 | 4.2 |
+| alternateid_656 | 1月2日晚上8:58 | 红色 | 方形 | 4.2 |
 | alternateid_656 | 1月2日晚上9:03 | | 三角形 | 3.1 |
 
 使用这两个事件数据集创建连接时，并且已识别
@@ -52,7 +52,7 @@ ht-degree: 32%
 
 以下组合数据集用于报表。
 
-| id | timestamp | string_color | string_animal | string_shape | metric_a | metric_b |
+| ID | 时间戳 | string_color | string_animal | string_shape | metric_a | metric_b |
 | --- | --- | --- | --- | --- | ---: | ---: |
 | user_310 | 1月1日上午7点:02 | 红色 | Fox | | | |
 | user_310 | 1月1日上午7点:04 | | | | 2 | |
@@ -61,12 +61,12 @@ ht-degree: 32%
 | user_847 | 1月2日12:31下午 | | 乌龟 | | 4 | |
 | user_847 | 1月2日12:44下午 | | | | 2 | |
 | user_847 | 1月2日下午1:01 | 红色 | | | | |
-| alternateid_656 | 1月2日晚上8:58 | 红色 | | 正方形 | | 4.2 |
+| alternateid_656 | 1月2日晚上8:58 | 红色 | | 方形 | | 4.2 |
 | alternateid_656 | 1月2日晚上9:03 | | | 三角形 | | 3.1 |
 
 为了说明架构路径的重要性，请考虑此方案。 在第一个数据集中，`string_color`基于架构路径`_experience.whatever.string_color`，在架构路径`_experience.somethingelse.string_color`的第二个数据集中。 在此方案中，数据&#x200B;**不是**&#x200B;合并到结果合并数据集中的一列中。 相反，结果是在组合数据集中的两个`string_color`列：
 
-| id | timestamp | 体验(_E)。<br/>随便。<br/>string_color | 体验(_E)。<br/>其他内容。<br/>string_color | string_animal | string_shape | metric_a | metric_b |
+| ID | 时间戳 | 体验(_E)。<br/>随便。<br/>string_color | 体验(_E)。<br/>其他内容。<br/>string_color | string_animal | string_shape | metric_a | metric_b |
 |---|---|---|---|---|---|---:|---:|
 | user_310 | 1月1日上午7点:02 | 红色 | | Fox | | | |
 | user_310 | 1月1日上午7点:04 | | | | | 2 | |
@@ -75,7 +75,7 @@ ht-degree: 32%
 | user_847 | 1月2日12:31下午 | | | 乌龟 |  | 4 | |
 | user_847 | 1月2日12:44下午 | | | | | 2 | |
 | user_847 | 1月2日下午1:01 | | 红色 | | | | |
-| alternateid_656 | 1月2日晚上8:58 | | 红色 | | 正方形 | | 4.2 |
+| alternateid_656 | 1月2日晚上8:58 | | 红色 | | 方形 | | 4.2 |
 | alternateid_656 | 1月2日晚上9:03 | | | | 三角形 | | 3.1 |
 
 此合并事件数据集就是报表中使用的数据集。某行数据源自哪个数据集并不重要。 Customer Journey Analytics将所有数据视为位于同一数据集中。 如果两个数据集中都出现了匹配的人员ID，则它们被视为相同的唯一人员。 如果两个包含时间戳（30分钟内）都出现了匹配的人员ID，则它们被视为属于同一会话。 合并具有相同架构路径的字段。

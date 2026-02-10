@@ -1,15 +1,15 @@
 ---
-title: 如何在 Customer Journey Analytics 中管理连接
-description: 描述如何在 Customer Journey Analytics (Customer Journey Analytics) 中管理与 Experience Platform 数据集的连接。
+title: 在Customer Journey Analytics中管理连接
+description: 了解如何在Customer Journey Analytics (Customer Journey Analytics)中管理与Experience Platform数据集的连接。
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: cb5baf2ec8d3ad4449a9b08d0a025a2d39a11425
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
-source-wordcount: '4938'
-ht-degree: 99%
+source-wordcount: '4956'
+ht-degree: 98%
 
 ---
 
@@ -44,26 +44,9 @@ ht-degree: 99%
 
 **[!UICONTROL 列表]**&#x200B;界面是“连接”的默认界面。如果未选择，请选择&#x200B;**[!UICONTROL 列表]**&#x200B;选项卡以访问该界面。
 
+**[!UICONTROL 列表]**&#x200B;界面会显示所有可用连接的表格。
+
 ![列表视图](assets/list-view.png)
-
-[!UICONTROL 列表]界面会显示所有可用连接的表格。
-
-### 搜索连接
-
-您可以使用搜索![搜索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)框快速搜索连接。
-
-### 将过滤器应用于连接列表
-
-要将过滤器应用于连接列表，请选择过滤器图标，然后从以下过滤器选项中选择：
-
-| 筛选选项 | 描述 |
-|---------|----------|
-| **[!UICONTROL 数据集]** | 只显示与您选择的数据集相关联的那些连接。 |
-| **[!UICONTROL 所有者]** | 只显示您选择的那些人员所拥有的连接。 |
-| **[!UICONTROL 沙盒]** | 只显示在您选择的沙盒中可用的连接。 |
-| **[!UICONTROL 在 CJA 中使用]** | 选择 **[!UICONTROL On]**，只显示启用允许与 Customer Journey Analytics 一起使用的连接。选择 **[!UICONTROL Off]**，只显示尚未启用允许与 Customer Journey Analytics 一起使用的连接。 |
-
-### 可用列
 
 该表格中提供了以下列或图标。
 
@@ -85,6 +68,25 @@ ht-degree: 99%
 | **[!UICONTROL 在 CJA 中使用]** | 显示是否启用了连接将其用于 Customer Journey Analytics。 |
 
 要配置在表格中显示哪些列，请选择![列设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)。在&#x200B;**[!UICONTROL 自定义表]**&#x200B;对话框中，选择要显示的列。 然后选择&#x200B;**[!UICONTROL 应用]**。
+
+### 搜索连接
+
+您可以使用![搜索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)框快速搜索连接。
+
+### 筛选连接
+
+要将筛选器应用到连接列表，请选择![筛选器](/help/assets/icons/Filter.svg)。 然后从以下筛选器选项中选择：
+
+| 筛选选项 | 描述 |
+|---------|----------|
+| **[!UICONTROL 数据集]** | 只显示与您选择的数据集相关联的那些连接。 |
+| **[!UICONTROL 所有者]** | 只显示您选择的那些人员所拥有的连接。 |
+| **[!UICONTROL 沙盒]** | 只显示在您选择的沙盒中可用的连接。 |
+| **[!UICONTROL 连接类型]** | 对基于&#x200B;**[!UICONTROL 人员]**&#x200B;或基于&#x200B;**[!UICONTROL 帐户]**&#x200B;的[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}连接进行筛选。 |
+| **[!UICONTROL 在 CJA 中使用]** | 选择 **[!UICONTROL On]**，只显示启用允许与 Customer Journey Analytics 一起使用的连接。选择 **[!UICONTROL Off]**，只显示尚未启用允许与 Customer Journey Analytics 一起使用的连接。 |
+| **[!UICONTROL 集成]** | 仅显示具有选定集成的连接。 |
+
+选择![筛选器](/help/assets/icons/Filter.svg) **[!UICONTROL 隐藏筛选器]**&#x200B;以隐藏筛选器窗格。
 
 ### 编辑连接
 
@@ -317,8 +319,8 @@ ht-degree: 99%
 
 | 详细信息 | 描述 |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全球帐户 ID &#x200B;]** | 您为连接指定作为全球帐户 ID 的身份标识。仅适用于配置了全球帐户容器的基于帐户的连接。 |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户 ID &#x200B;]** | 您为连接指定作为帐户 ID 的身份标识。仅适用于未配置全球帐户容器的基于帐户的连接。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全球帐户 ID ]** | 您为连接指定作为全球帐户 ID 的身份标识。仅适用于配置了全球帐户容器的基于帐户的连接。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户 ID ]** | 您为连接指定作为帐户 ID 的身份标识。仅适用于未配置全球帐户容器的基于帐户的连接。 |
 | **[!UICONTROL 人员 ID]** | 您为连接指定作为人员 ID 的身份标识。 |
 | **[!UICONTROL 键]** | 您为查找数据集指定的键。 |
 | **[!UICONTROL 匹配键]** | 您为查找数据集指定的匹配键。 |

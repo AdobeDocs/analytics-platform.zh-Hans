@@ -4,10 +4,11 @@ description: 了解如何在Customer Journey Analytics中从RTCDP分析受众。
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
-source-git-commit: e59bb52d5e9d79ba72036d5a00ed8abc69dcf735
+exl-id: 1e962f52-6b56-4671-afea-d58dae67e8a8
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
 source-wordcount: '728'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 3%
 >* **受众分析**：允许您将受众成员资格数据从Experience Platform配置文件数据集摄取到Customer Journey Analytics连接。
 >* **受众发布**：允许您创建在Customer Journey Analytics中发现的受众，并将其发布到Adobe Experience Platform以进行客户定位和个性化。 有关受众发布的信息，请参阅[受众发布概述](/help/components/audiences/audiences-overview.md)。
 
-利用Audience Analysis，可将受众成员资格数据从Experience Platform配置文件数据集摄取到Customer Journey Analytics连接。 受众将可用作新维度，以便在Analysis Workspace中使用。
+利用Audience Analysis，可将受众成员资格数据从Experience Platform配置文件数据集摄取到Customer Journey Analytics连接。 受众将作为新的维度在 Analysis Workspace 中可用。
 
 下图和相关表简要展示了Customer Journey Analytics中的受众分析配置如何在Analysis Workspace中使Experience Platform受众数据可用：
 
@@ -85,11 +86,3 @@ ht-degree: 3%
 * 单个沙盒最多可支持100个受众分析配置。
 
 * 一个连接只能与一个受众分析配置相关联。
-
-
-
-
-
-
-
-

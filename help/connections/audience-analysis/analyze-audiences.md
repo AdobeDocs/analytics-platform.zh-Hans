@@ -4,7 +4,8 @@ description: 了解如何在Customer Journey Analytics中分析Experience Platfo
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
-source-git-commit: e59bb52d5e9d79ba72036d5a00ed8abc69dcf735
+exl-id: 095cae34-1337-464a-9682-3c899295c0a8
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
@@ -56,11 +57,3 @@ Customer Journey Analytics中提供了受众概述模板。
 显示退出每个受众最初创建的位置，无论是在RTCDP、Customer Journey Analytics还是其他位置。
 
 使用本面板中的表可以更好地了解受众来源可能如何影响其他因素。 从所选数据视图拖动退出受众名称维度，并将其添加为划分。 或使用任何其他交互维度或量度（例如页面、操作等）作为细分。
-
-
-
-
-
-
-
-

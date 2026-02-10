@@ -1,14 +1,14 @@
 ---
 title: 摘要数据
-description: 有关如何使用和配置数据视图中的摘要数据的详细信息。
+description: 了解有关如何在数据视图中使用和配置摘要数据的详细信息和信息。
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
-source-wordcount: '1147'
-ht-degree: 97%
+source-wordcount: '1150'
+ht-degree: 96%
 
 ---
 
@@ -154,5 +154,5 @@ https://platform.adobe.io/data/foundation/schemaregistry/tenant/descriptors \
 >[!MORELIKETHIS]
 >
 >- 请参阅[使用摘要数据](/help/use-cases/data-views/summary-data.md)一文，了解有关如何使用和报告摘要数据的详细用例示例。
->- 博客：[摘要数据如何增强 Adobe Customer Journey Analytics 数据集](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635?profile.language=zh-Hans)
+>- 博客：[摘要数据如何增强 Adobe Customer Journey Analytics 数据集](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635)
 
