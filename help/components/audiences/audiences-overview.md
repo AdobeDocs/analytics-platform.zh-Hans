@@ -4,7 +4,7 @@ description: 了解 Customer Journey Analytics 中的受众发布的概念
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-source-git-commit: e59bb52d5e9d79ba72036d5a00ed8abc69dcf735
+source-git-commit: 9a7ba4913a4724116455566ff783fb270f5e289c
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 79%
@@ -20,7 +20,7 @@ ht-degree: 79%
 >* **受众分析**：允许您将受众成员资格数据从Experience Platform配置文件数据集摄取到Customer Journey Analytics连接。 有关受众分析的信息，请参阅[受众分析概述](/help/connections/audience-analysis/audience-analysis-overview.md)。
 >* **受众发布**：允许您创建在Customer Journey Analytics中发现的受众，并将其发布到Adobe Experience Platform以进行客户定位和个性化。
 
-您可以在Adobe Experience Platform中创建并将在Customer Journey Analytics中发现的受众发布到[实时客户个人资料](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans)，以实现客户定位和个性化。 (有关将受众成员资格数据从Experience Platform配置文件数据集摄取到Customer Journey Analytics连接的信息，请参阅[受众分析概述](/help/connections/audience-analysis/audience-analysis-overview.md)。)
+您可以在Adobe Experience Platform中创建并将在Customer Journey Analytics中发现的受众发布到[实时客户个人资料](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)，以实现客户定位和个性化。 (有关将受众成员资格数据从Experience Platform配置文件数据集摄取到Customer Journey Analytics连接的信息，请参阅[受众分析概述](/help/connections/audience-analysis/audience-analysis-overview.md)。)
 
 通过发布受众可以提供一种明确的方式来激活 Customer Journey Analytics 中发现的洞察并采取行动。这些行动可能包括：
 
@@ -48,7 +48,7 @@ ht-degree: 79%
 
 ## 数据治理和同意
 
-当您在 Customer Journey Analytics 中发布受众时，将会记录附加到受众中使用的字段的数据治理标签和策略。在任何 Adobe Experience 应用程序中激活受众后，所有相关的数据治理标签和策略都可供该受众使用，并且可以应用适当的强制执行。[进一步了解同意](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=zh-Hans#consent-policy)。
+当您在 Customer Journey Analytics 中发布受众时，将会记录附加到受众中使用的字段的数据治理标签和策略。在任何 Adobe Experience 应用程序中激活受众后，所有相关的数据治理标签和策略都可供该受众使用，并且可以应用适当的强制执行。[进一步了解同意](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy)。
 
 ## 后续步骤
 
