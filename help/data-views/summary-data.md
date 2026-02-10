@@ -154,5 +154,5 @@ https://platform.adobe.io/data/foundation/schemaregistry/tenant/descriptors \
 >[!MORELIKETHIS]
 >
 >- 请参阅[使用摘要数据](/help/use-cases/data-views/summary-data.md)一文，了解有关如何使用和报告摘要数据的详细用例示例。
->- 博客：[摘要数据如何增强 Adobe Customer Journey Analytics 数据集](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635)
+>- 博客：[摘要数据如何增强 Adobe Customer Journey Analytics 数据集](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635?profile.language=zh-Hans)
 
