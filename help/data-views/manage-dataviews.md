@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: c5cf15ab-3eb1-4e6b-93a3-3d89694ca0ea
-source-git-commit: c7cf7250f30e2f6023aa7690391aea149ba12eff
+source-git-commit: e65dd6f71c75c06aac078c22ea7d77eed75cd381
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '922'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 在您[创建或编辑一个或多个数据视图](/help/data-views/create-dataview.md)后，您可以在&#x200B;**[!UICONTROL 数据视图]**&#x200B;中管理它们。
 
-从Customer Journey Analytics中的主菜单栏选择&#x200B;**[!UICONTROL 数据管理]** > **[!UICONTROL 数据视图]**。
+从Customer Journey Analytics的主菜单栏中选择&#x200B;**[!UICONTROL 数据管理]** > **[!UICONTROL 数据视图]**。
 
 **[!UICONTROL 数据视图]**&#x200B;界面显示所有可用数据视图的表。
 
@@ -127,7 +127,7 @@ ht-degree: 10%
 1. 选择一个或多个数据视图行。
 1. 从蓝色操作栏中选择![文件CSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL 导出到CSV]**。
 
-所选数据视图的详细信息将导出到浏览器Downloads文件夹中名为`Data views List (x).csv`的CSV文件。
+所选数据视图的详细信息将导出到浏览器“下载”文件夹中名为`Data views List (x).csv`的CSV文件。
 
 
 ## 从数据视图创建项目
