@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 7835d4c5b46177ece4a146df8f0d4abb9605c670
+source-git-commit: 58d423e2d7d064bcc7d8011a5ecda236ef9b0677
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1367'
 ht-degree: 99%
 
 ---
@@ -23,6 +23,7 @@ ht-degree: 99%
 + 发行说明 {#releases}
    + [最新版本](../release-notes/latest.md)
    + [预发行说明](../release-notes/pre-release-notes.md)
+   + [2026 版](../release-notes/2026.md)
    + [2025 版](../release-notes/2025.md)
    + [2024 版](../release-notes/2024.md)
    + [2023 版](../release-notes/2023.md)
@@ -100,7 +101,7 @@ ht-degree: 99%
          + [使用通过 Adobe Journey Optimizer 个性化](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
    + 与 Adobe Analytics 进行比较 {#cja-aa-comparison}
       + [概述](../getting-started/aa-vs-cja/overview.md)
-      + [实用 Adobe Analytics 数据 &#x200B;](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+      + [实用 Adobe Analytics 数据 ](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [跨IMS数据映射](../getting-started/aa-vs-cja/mapping-data-ims-orgs.md)
       + [功能支持](../getting-started/aa-vs-cja/cja-aa.md)
       + [比较术语](../getting-started/aa-vs-cja/terminology.md)
@@ -232,7 +233,7 @@ ht-degree: 99%
       + 历程画布 {#journey-canvas}
          + [概述](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
          + [配置](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
-         + [疑难解答 &#x200B;](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
+         + [疑难解答 ](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
       + [面积（堆叠）](../analysis-workspace/visualizations/area.md)
       + [条形图（堆叠）](../analysis-workspace/visualizations/bar.md)
       + [项目符号](../analysis-workspace/visualizations/bullet-graph.md)
@@ -401,7 +402,7 @@ ht-degree: 99%
       + [概述](/help/components/c-intelligent-alerts/intelligent-alerts.md)
       + [创建警报](/help/components/c-intelligent-alerts/alert-builder.md)
       + [管理警报](/help/components/c-intelligent-alerts/alert-manager.md)
-      + [功能比较 &#x200B;](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
+      + [功能比较 ](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
       + [用例](/help/components/c-intelligent-alerts/alerts-use-cases.md)
    + 导出 {#exports}
       + [配置云导出帐户](/help/components/exports/cloud-export-accounts.md)
