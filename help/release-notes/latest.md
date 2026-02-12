@@ -3,9 +3,9 @@ title: 当前 Customer Journey Analytics 发行说明
 description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 5107f1a3e602afbb1536e7832a060c70aa898966
+source-git-commit: 14718476695dcf121c94ba4cb8b2c39e5874342d
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1200'
 ht-degree: 39%
 
 ---
@@ -21,8 +21,8 @@ ht-degree: 39%
 | 功能和描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | ------- | ---- |
 | **标题覆盖** <p>您可以在Content Analytics中指定标头名称和密码标头值。 此[标头覆盖配置](/help/content-analytics/config/guided.md#header-overrides)确保Content Analytics发送自定义HTTP标头以绕过任何已实施的机器人检测或关机流量技术。</p> |  | 2026年2月2 |
-| **在自由格式表中包含多个维度列**<p>现在，您可以在自由格式表中最多包含 5 个维度列，从而并排查看多个维度项。每一行的维度项将作为一个拼接后的单一维度项进行处理。</p><p>您可以对包含多个维度列的自由格式表应用筛选、排序、细分等操作，以实现更深入、更定制化的分析。</p><p>此前，自由格式表中只能包含 1 个维度列。</p><p>有关详细信息，请参阅[在自由格式表中包含多个维度列](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md)。</p> | 2026 年 1 月 28 日 | 2026 年 2 月 18 日 |
-| **按多个列对表格进行排序**<p>现在，您可以在 Analysis Workspace 中按多个列（无论是维度还是量度）对自由格式表的数据进行排序。</p><p>当按多个列进行排序时，数据将根据您为每个列指定的优先级进行排序。优先级编号会显示在排序图标旁。</p><p>有关详细信息，请参阅[筛选和排序自由格式表](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)。</p> | 2026 年 1 月 28 日 | 2026 年 2 月 18 日 |
+| **在自由格式表中包含多个维度列**<p>现在，您可以在自由格式表中最多包含 5 个维度列，从而并排查看多个维度项。每一行的维度项将作为一个拼接后的单一维度项进行处理。</p><p>您可以对包含多个维度列的自由格式表应用筛选、排序、细分等操作，以实现更深入、更定制化的分析。</p><p>此前，自由格式表中只能包含 1 个维度列。</p><p>有关详细信息，请参阅[在自由格式表中包含多个维度列](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md)。</p> | 2026 年 1 月 28 日 | 3 月 <p>（原计划于2026年2月18日）</p> |
+| **按多个列对表格进行排序**<p>现在，您可以在 Analysis Workspace 中按多个列（无论是维度还是量度）对自由格式表的数据进行排序。</p><p>当按多个列进行排序时，数据将根据您为每个列指定的优先级进行排序。优先级编号会显示在排序图标旁。</p><p>有关详细信息，请参阅[筛选和排序自由格式表](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)。</p> | 2026 年 1 月 28 日 | 3 月 <p>（原计划于2026年2月18日）</p> |
 | **完整的表导出改进**<p>完整的表导出包括以下增强功能：</p><p>导出创建和配置增强功能</p><ul><li>从“导出”页面创建导出。 以前，您只能通过右键单击表格来创建从Analysis Workspace的导出。</li><li>创建导出时添加新帐户或位置。</li><li>自动创建文件名并放置导出文件的文件夹。 这允许文件名是可预测的并以逻辑方式组织到文件夹中。 以前，文件名不可预测，并且被分组到单个文件夹中。</li><li>支持将数据导出为Parquet文件，以提高数据仓库兼容性。 以前，仅支持CSV和JSON。</li></ul><p>导出管理增强功能</p><ul><li>从“导出”页面续订或取消一个或多个导出。</li><li>从“日志”页面重新发送一个或多个导出。</li><li>在导出失败或即将过期时向单个用户或组发送电子邮件。</li><li>导出失败更精确的错误消息。</li></ul><p>计算指标、区段和维度增强功能</p><ul><li>支持更多计算量度函数。 以前，仅支持简单的数学函数。</li><li>创建导出时应用区段。</li><li>支持双数据类型维度以提高精度。</li></ul><p>管理增强功能</p><ul><li>管理员现在可以查看所有导出和日志，无论导出和日志是由谁创建的。</li></ul><p>（文档链接见下文。）</p> | 2026年2月25日 | 2026年3月11日<p>（原计划于2026年3月4日）</p> |
 | **Content Analytics：散点可视化图表缩略图和预览** <p>现在，在Content Analytics中查看散点图可视化图表时，将鼠标悬停在图表中的点上时，会显示资源的缩略图。 此缩略图允许您快速轻松地查看图表中表示的内容。</p><p>（文档链接见下文。）</p> | 2026年2月17日 | 2026年3月2日 |
 | **Content Analytics：条形图可视化缩略图和预览** <p>现在，在Content Analytics中查看水平条形图可视化时，将鼠标悬停在图表中的条形图上时，会显示资源的缩略图。 此缩略图允许您快速轻松地查看图表中表示的内容。</p><p>（文档链接见下文。）</p> | 2026年2月23日 | 2026年3月9日 |

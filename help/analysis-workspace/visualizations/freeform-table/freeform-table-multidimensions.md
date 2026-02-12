@@ -3,10 +3,11 @@ title: 在自由格式表中包含多个维度
 description: 了解如何在自由格式表中包含多个维度
 feature: Visualizations
 role: User
-source-git-commit: 696bd0db44949162307d8ce7d2debed351a76cd6
+exl-id: 66ebb4fc-feb2-4fa7-a107-37508cca4748
+source-git-commit: 14718476695dcf121c94ba4cb8b2c39e5874342d
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 1%
+source-wordcount: '836'
+ht-degree: 6%
 
 ---
 
@@ -14,9 +15,9 @@ ht-degree: 1%
 
 {{release-limited-testing}}
 
-在自由格式表中最多可包含5个维度列，这样您可以并排查看多个维度项目。 每一行维度项目的行为类似于单个连接的维度项目。
+在自由格式表中最多可包含5个维度列，这样您可以并排查看多个维度项目。 每一行的维度项将作为一个拼接后的单一维度项进行处理。
 
-您可以将过滤器、排序、划分等应用于具有多个维度列的自由格式表，从而创建更深入、更自定义的分析。
+您可以对包含多个维度列的自由格式表应用筛选、排序、细分等操作，以实现更深入、更定制化的分析。
 
 ## 连接的维度项目
 
@@ -109,11 +110,12 @@ Analysis Workspace提供了以下方式在自由格式表中添加多个维度�
 
 有关创建区段的信息，请参阅[创建区段](/help/components/segments/seg-create.md)。
 
-## 不支持的维度 {#unsupported}
+## 不支持的尺寸和功能 {#unsupported}
 
-不支持以下维度组合，Analysis Workspace会禁止添加这些维度组合，或在添加这些维度组合后显示错误消息：
+使用多个维度列时，不支持以下维度组合和功能，Analysis Workspace将禁止使用这些组合和功能或显示错误消息：
 
 * 多个维度来自引用在同一自由格式表中一起使用的不同[对象数组](/help/use-cases/object-arrays.md)的字段。
 
   同一自由格式表中允许同时使用多个维度（如果它们引用相同的对象数组）。
 
+* [静态维度项](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md#static-dimension-items)。
