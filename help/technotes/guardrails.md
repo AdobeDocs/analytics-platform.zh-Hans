@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 687fb6a9f829bf38b91f394e7df811844be6926b
+source-git-commit: 150c8879e441f6a613ae2e51ffbc5df30c202e95
 workflow-type: tm+mt
-source-wordcount: '2277'
+source-wordcount: '2281'
 ht-degree: 7%
 
 ---
@@ -92,7 +92,7 @@ ht-degree: 7%
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [Real-time Customer Data Platform护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/rtcdp/guardrails/overview)。
+另请参阅Experience Platform [Real-time Customer Data Platform护栏](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview)。
 
 
 ## 自动数据集过期
@@ -134,12 +134,12 @@ ht-degree: 7%
 | 唯一字符串 | 1000万 — 10亿 | 系统强制的护栏 | 每个查找数据集的最大唯一键数。 依赖于Customer Journey Analytics包（请参阅产品描述）。<ul><li>基金会：1000万。</li><li>选择：1亿。</li><li>Prime：2.5亿。</li><li>Ultimate：10亿</li><ul> |
 | 每人行数 | 100万 | 系统强制的护栏 | 连接内给定月份中每个唯一人员ID的最大行数。 |
 | 每日行数 | 25亿 | 性能护栏 | 连接中每天的最大平均行数。 |
-| 每年每个连接的行数 | 因分配的数据中心而异（有关更多信息，请参阅描述） | 性能护栏 | 连接中每年的建议行限制。 下面列出的限制是自2026年1月起大致值，并将随着时间的推移而增加，以允许每个连接有更多的行。 如果您希望超出这些限制，请联系您的Adobe客户团队以讨论替代配置。 <p>行限制因您分配的数据中心而异，如下所示：</p><ul><li>**美国Azure（美国客户的默认设置）**：约5000亿（约每月420亿）</li><li>**美国AWS（按美国客户要求提供）**：约300亿（约每月25亿）</li><li>**阿姆斯特丹**：约2000亿（约每月165亿）</li><li>**所有其他数据中心**：250亿（大约每月20亿）</li></ul></p><p>各组织在最初购买Experience Platform时选择其Experience Platform数据中心。 此决策通常基于数据主权和驻留要求。 选择数据中心时，应考虑所有AEP+Apps用例(不只是Customer Journey Analytics中的行卷)。</p><p>有关如何查看您被分配到哪个数据中心的信息，请参阅[Customer Journey Analytics托管位置](/help/technotes/data-centers.md)</p> |
+| 每年每个连接的行数 | 因分配的数据中心而异（有关更多信息，请参阅描述） | 性能护栏 | 连接中每年的行数限制。 下面列出的限制自2026年1月20日起生效，并可能会随着时间的推移而增加，以允许每个连接有更多的行。 <p>行限制因您分配的数据中心而异，如下所示：</p><ul><li>**美国Azure（美国客户的默认设置）**：约5000亿（约每月420亿）</li><li>**美国AWS（按美国客户要求提供）**：约300亿（约每月25亿）</li><li>**阿姆斯特丹**：约2000亿（约每月165亿）</li><li>**所有其他数据中心**：250亿（大约每月20亿）</li></ul><p>如果您希望超过这些限制并希望避免出现性能下降问题，请联系您的Adobe客户团队以讨论替代配置。</p><p>组织可以在最初实施AEP+应用程序时选择其数据中心。 此决策通常基于每个客户自己的数据驻留要求。 选择数据中心时，应考虑所有AEP+Apps用例(不只是Customer Journey Analytics中的行卷)。</p><p>有关如何查看您被分配到哪个数据中心的信息，请参阅[Customer Journey Analytics托管位置](/help/technotes/data-centers.md)。</p> |
 | 行大小 | 2 | 性能护栏/系统强制的护栏 | 摄取到Customer Journey Analytics的每行数据的平均大小(KB)（软限制）。 行大小的静态限制由Experience Platform中用于数据摄取的护栏决定。 |
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hans)。
+另请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
 
 
 ## 目标数据导出
@@ -151,7 +151,7 @@ ht-degree: 7%
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [数据集导出护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/guardrails#dataset-exports)
+另请参阅Experience Platform [数据集导出护栏](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## 数据登陆区
@@ -267,7 +267,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 有关详细信息，请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hans)。
+>以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 有关详细信息，请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
 
 | 数据流 | 预期延迟 |
 |---|---|
