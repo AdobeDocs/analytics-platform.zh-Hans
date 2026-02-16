@@ -4,14 +4,14 @@ description: 了解高级计算量度函数的相关内容。
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: fa66083b922c903f6a7b0608d91f26e85bd8374f
 workflow-type: tm+mt
-source-wordcount: '5241'
+source-wordcount: '5272'
 ht-degree: 98%
 
 ---
 
-# 高级函数
+# 高级功能
 
 使用[计算量度生成器](cm-workflow/cm-build-metrics.md)可以应用统计和数学函数。本文记录了按字母顺序排列的高级函数及其定义列表。
 
@@ -1344,18 +1344,18 @@ CDF-Z(-3) ? 0.0013499
 
 
 
-## 样本方差
+## 样本方差 {#sample-variance}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-waskr-variance-estimate"
 >title="样本方差"
->abstract="使用公式 (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)) 计算样本方差的估计值。其中 N 是标准化容器的计数。<br/>这可作为&#x200B;*随时有效的*&#x200B;置信度计算的一部分。一般来说，这个函数单独使用并无用处，但可用于检查计算结果或&#x200B;*手动*&#x200B;执行置信度计算。"
+>abstract="使用公式`(sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1))`计算样本方差的估计值。 其中`N`是标准化容器的计数。 <br/>这可作为&#x200B;*随时有效的*&#x200B;置信度计算的一部分。一般来说，这个函数单独使用并无用处，但可用于检查计算结果或&#x200B;*手动*&#x200B;执行置信度计算。"
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 样本方差（标准化容器、成功量度）]**
 
-计算样本方差的估计值。
+使用公式`(sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1))`计算样本方差的估计值。 其中`N`是标准化容器的计数。<br/>这可作为&#x200B;*随时有效的*&#x200B;置信度计算的一部分。一般来说，这个函数单独使用并无用处，但可用于检查计算结果或&#x200B;*手动*&#x200B;执行置信度计算。
 
 | 参数 | 描述 |
 | --- | --- |
