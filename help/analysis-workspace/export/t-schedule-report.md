@@ -86,7 +86,7 @@ ht-degree: 51%
 
 >[!NOTE]
 >
->只有购买了 [Healthcare Shield](https://business.adobe.com/solutions/industries/healthcare.html) 附加产品的 Customer Journey Analytics 客户，才能使用密码保护计划项目的选项。
+>只有购买了 [Healthcare Shield](https://business.adobe.com/cn/solutions/industries/healthcare.html) 附加产品的 Customer Journey Analytics 客户，才能使用密码保护计划项目的选项。
 
 Adobe 使用密码来加密计划项目，无论它们是以 .pdf 还是 .csv 格式发送均是如此。
 
@@ -103,7 +103,7 @@ Adobe 使用密码来加密计划项目，无论它们是以 .pdf 还是 .csv �
 ### 密码保护新的计划项目
 
 1. 保存项目后，转到&#x200B;**[!UICONTROL 分享]** > **[!UICONTROL 立即发送文件]**，或&#x200B;**[!UICONTROL 分享]** > **[!UICONTROL 按计划发送文件]**。
-1. 在[立即发送文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#now)或[按计划发送文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#schedule)下面，按照上面的说明操作。
+1. 在[立即发送文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=zh-Hans#now)或[按计划发送文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=zh-Hans#schedule)下面，按照上面的说明操作。
 
 ### 密码保护现有计划项目
 
