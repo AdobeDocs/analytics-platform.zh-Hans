@@ -41,7 +41,7 @@ ht-degree: 100%
 
    ![配置数据视图](assets/dataview-configure.png)
 
-1. 选择&#x200B;[!UICONTROL **组件**]&#x200B;选项卡。
+1. 选择&#x200B;[!UICONTROL **“组件”**]&#x200B;选项卡。
 
    您可以在&#x200B;[!UICONTROL **组件**]&#x200B;选项卡中设置数据视图的组件，也就是说您可以从架构元素创建量度和维度。您也可以使用标准组件。
 

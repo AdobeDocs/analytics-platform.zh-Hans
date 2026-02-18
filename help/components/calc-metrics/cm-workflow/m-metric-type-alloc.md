@@ -163,6 +163,6 @@ ht-degree: 100%
 >[!MORELIKETHIS]
 >
 >[归因组件设置](/help/data-views/component-settings/attribution.md)
->>[参与量度](participation-metric.md)
+>[参与量度](participation-metric.md)
 >
 

@@ -42,7 +42,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中的地图可视化图表。_<br/>_查看本文的[&#x200B; &#x200B;](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)版本的&#x200B;_&#x200B;**映射**。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的地图可视化图表。_<br/>_查看本文的[ ](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)版本的&#x200B;_**映射**。_
 
 >[!ENDSHADEBOX]
 
@@ -243,7 +243,7 @@ Customer Journey Analytics中的地图可视化图表与Adobe Analytics中的地
 1. **保存**&#x200B;项目以保存所有地图设置（坐标、缩放、旋转）。
 1. （可选）可以通过从左边栏拖入位置维度和量度来填充可视化图表下方的自由格式表。
 
-## 配置可视化设置
+## 配置可视化图表设置
 
 要配置地图可视化图表的设置，请执行以下操作：
 

@@ -50,7 +50,7 @@ ht-degree: 100%
 
    如果您已拥有 Analytics 源连接器，[则将字段从源连接器映射到 XDM 架构](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)。
 
-1. [将 Analytics 源连接器数据集添加到该连接](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+1. [将 Analytics 源连接器数据集添加到连接](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
 
 ## 为 Analytics 源连接器创建一个自定义架构
 

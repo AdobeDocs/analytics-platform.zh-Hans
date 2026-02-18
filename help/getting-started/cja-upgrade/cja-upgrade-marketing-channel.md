@@ -25,7 +25,7 @@ ht-degree: 100%
 
 {{upgrade-note-step}}
 
-使用 Analytics Source Connector 时，“营销渠道”数据会通过该连接器流入 Customer Journey Analytics。营销渠道规则是在传统的 Adobe Analytics 中配置的，某些规则不受支持。如需了解更多信息，请参阅[使用营销渠道维度](/help/use-cases/aa-data/marketing-channels.md)。
+使用 Analytics Source Connector 时，“营销渠道”数据会通过该连接器流入 Customer Journey Analytics。在传统的 Adobe Analytics 中配置营销渠道规则，其中不支持某些规则。如需了解更多信息，请参阅[使用营销渠道维度](/help/use-cases/aa-data/marketing-channels.md)。
 
 为了在使用 Experience Platform Web SDK 时使用 Customer Journey Analytics 中的营销渠道，您可以使用数据视图中的派生字段为 Customer Journey Analytics 重新创建相同的营销渠道和处理规则。
 

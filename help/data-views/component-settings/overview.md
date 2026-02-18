@@ -49,7 +49,7 @@ ht-degree: 56%
 | [!UICONTROL 数据集] | 一个不可编辑的字段，它显示该组件来源于哪个数据集。此字段可以包含多个数据集。 |
 | [!UICONTROL 架构类型] | 一个不可编辑的字段，它显示该组件的数据类型。虽然您可以在 Platform 中使用任何受支持的架构字段类型，但 Customer Journey Analytics 并非支持所有字段类型。支持的数据类型有：`Integer`、`Int`、`Long`、`Double`、`Float`、`Number`、`Short`、`Byte`、`String` 和 `Boolean`。目前在查找数据集中仅允许有 `String` 架构数据类型。 |
 | [!UICONTROL 组件 ID] | 必填。[Customer Journey Analytics API](https://www.adobe.io/cja-apis/docs) 使用此字段来引用组件。数据视图中的每个组件都必须是唯一的。Adobe 自动为每个组件生成一个 ID；但是，您可以单击编辑图标并修改组件 ID。更改组件 ID 将破坏所有包含此组件的现有 Workspace 项目。虽然每个组件在单个数据视图中都需要唯一的 ID，但可在其他数据视图中使用相同的组件 ID。如果在其他数据视图中使用相同的组件 ID，则可让 Workspace 项目在数据视图间保持兼容。<br/>对于基于轮廓和查找功能的组件，组件 ID 具有基于数据集 ID 的 ID 前缀（例如： `642b28fcc1f0ee1c074265a0.person.name.firstName`）。当您想重用基于轮廓或查找功能的组件时（如 `person.name.firstName`），并在不同的数据视图中配置该组件时，请确保在数据视图中对组件 ID 的重命名是唯一的（例如：`myUniqueID.person.name.firstName`）。 |
-| [!UICONTROL 路径] | 必需。显示组件来自的架构路径的不可编辑字段。 |
+| [!UICONTROL 路径] | 必填。显示组件来自的架构路径的不可编辑字段。 |
 | [!UICONTROL 数据使用情况标签] | 在Adobe Experience Platform中分配给此组件的任何数据使用标签。 [了解详情](/help/data-views/data-governance.md)。 |
 | [!UICONTROL 在报告中隐藏组件] | 使您可从非管理员的数据视图策划该组件。 管理员仍可通过在 Analysis Workspace 项目中单击[!UICONTROL 显示所有组件]而访问该组件。 |
 
@@ -59,7 +59,7 @@ ht-degree: 56%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [组件类型设置](https://video.tv.adobe.com/v/3412933/?captions=chi_hans&quality=12&learn=on){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [组件类型设置](https://video.tv.adobe.com/v/333112/?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -97,7 +97,7 @@ ht-degree: 56%
 
 * 要定义一组组件，您可以使用Analysis Workspace项目中的[试验面板](/help/analysis-workspace/c-panels/experimentation.md)在试验报表中使用。
 
-  请参阅[与 Journey Optimizer 集成](/help/integrations/ajo.md#data-view)以及[&#x200B; Target 报告](/help/integrations/at.md)。
+  请参阅[与 Journey Optimizer 集成](/help/integrations/ajo.md#data-view)以及[ Target 报告](/help/integrations/at.md)。
 
 * 要定义一组组件，您可以在Analysis Workspace项目的[地图](/help/analysis-workspace/visualizations/map.md)可视化图表中使用。
 
@@ -437,7 +437,7 @@ ht-degree: 56%
 | 项目名称（持久化）（AJO） | 启用了持久性绑定的项目的名称。 |
 | 历程操作错误 (AJO) | 历程操作生成的错误消息。 |
 | 历程操作节点名称 | 历程操作的节点名称。 |
-| 历程入口 | 如果步骤事件是轮廓的历程进入事件，为 True。 |
+| 历程进入 | 如果步骤事件是轮廓的历程进入事件，为 True。 |
 | 历程结束（AJO） | 历程的结束。 |
 | 历程事件节点名称 | 每当历程中发生区段或外部事件时，都会设置此值。 |
 | 历程排除原因 | 历程实例排除的原因。 |
@@ -507,8 +507,8 @@ ht-degree: 56%
 | 订阅列表删除（AJO） | 从订阅列表中删除的总数。 |
 | 表面 (AJO) | 显示消息的渠道表面。 |
 | 已定向（已弃用） | 这是计算定向到个人的建议次数。这是被视为显示给某人的建议次数。 |
-| 目标选择规则名称 (AJO) | 定位规则的名称。 |
-| 测试活动（AJO） | 测试活动。 |
+| 目标选择规则名称 (AJO) | 目标选择规则的名称。 |
+| 测试事件（AJO） | 测试事件。 |
 | 开始时间 | 开始时间。 |
 | 缓冲总持续时间 | 缓冲总持续时间。 |
 | 暂停总持续时间 | 暂停总持续时间。 |

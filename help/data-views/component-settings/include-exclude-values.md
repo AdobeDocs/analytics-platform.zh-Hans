@@ -18,7 +18,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="dataview_component_metric_includeexcludevalues"
->title="包括排除值"
+>title="包括/排除值"
 >abstract="将量度只筛选到具有符合特定条件的数量值。"
 
 <!-- markdownlint-enable MD034 -->
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_includeexcludevalues"
->title="包括排除值"
+>title="包括/排除值"
 >abstract="缩小维度以仅包含符合特定条件的值。在报告中，包含和排除发生在分配和分段之前。确定指定的区段逻辑是否区分大小写。"
 
 <!-- markdownlint-enable MD034 -->

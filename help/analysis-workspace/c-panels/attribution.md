@@ -31,7 +31,7 @@ ht-degree: 93%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_&#x200B;中的归因面板。<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** 版本的[归因面板](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/attribution)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_&#x200B;中的归因面板。<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版本的[归因面板](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/attribution)。_
 
 >[!ENDSHADEBOX]
 
@@ -42,7 +42,7 @@ Customer Journey Analytics 通过让您能够执行以下操作来增强归因�
 * 定义付费媒体之外的归因：可将任何维度、量度、渠道或事件应用于模型（例如内部搜索），而不仅仅是营销活动。
 * 使用无限制的归因模型比较：动态比较任意所需数量的模型。
 * 避免实施更改：使用报告时间处理和上下文感知会话，可在运行时构建并应用客户历程上下文。
-* 构建与您的归因方案最匹配的会话。
+* 生成与您的归因方案最匹配的会话。
 * 按区段细分归因：轻松比较所有重要区段的营销渠道效果（例如新客户与老客户、产品 X 与产品 Y、忠诚度级别或 CLV）。
 * 检查渠道交叉和多接触点分析：使用维恩图和直方图，以及趋势归因结果。
 * 直观地分析关键营销序列：通过多节点流量和流失可视化图表，以可视方式探索导致转化的路径。
