@@ -45,7 +45,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [项目符号图形可视化图表](https://video.tv.adobe.com/v/23989/?quality=12/?quality=12&learn=on){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [项目符号图形可视化图表](https://video.tv.adobe.com/v/41512/?captions=chi_hans&quality=12/?quality=12&learn=on){target="_blank"}以观看演示视频。
 
 {{videoaa}}
 
