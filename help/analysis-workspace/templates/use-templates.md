@@ -4,9 +4,9 @@ title: 使用模板
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 9b941deb424d92744bea99f6ea01f6434d6bc19f
+source-git-commit: 02aa4b4c9b357efca3d620bb72d8a505153bc079
 workflow-type: tm+mt
-source-wordcount: '20935'
+source-wordcount: '21006'
 ht-degree: 96%
 
 ---
@@ -15,15 +15,15 @@ ht-degree: 96%
 
 Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最常见的报告场景。以下是您可以使用模板回答的一些问题示例：
 
-* 有多少人访问您的网站
-* 其中有多少位访客是独特访客（只计数一次）
-* 访客如何访问网站（例如，访客是通过点击链接还是直接访问网站）
-* 访客用于搜索网站内容的关键字
-* 访客在给定页面或整个网站上停留的时长
-* 访客点击的链接以及离开网站的时间
-* 哪些营销渠道在产生收入或转化事件方面最有效
-* 他们花多少时间看了视频
-* 他们访问您的网站所使用的浏览器和设备
+* 有多少人访问您的网站。
+* 其中有多少访客是独特访客（只计数一次）。
+* 访客如何访问网站（例如，访客是通过点击链接还是直接访问网站）。
+* 访客用于搜索网站内容的关键字。
+* 访客在给定页面或整个网站上停留的时长。
+* 访客点击的链接以及离开网站的时间。
+* 哪些营销渠道在生成收入或转化事件方面最有效。
+* 他们看视频花了多少时间。
+* 他们使用哪些浏览器和设备访问您的网站。
 
 以下信息介绍如何从 Analysis Workspace 中的[!UICONTROL 模板]选项卡访问和使用模板。
 
@@ -1117,11 +1117,15 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 
 ### Mix Modeler模板 {#mix-modeler-templates}
 
+可使用以下模板：
+
+| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| --- | --- |
+| [!UICONTROL **Mix Modeler增量模型分析**] | 查看来自Mix Modeler生成的选定模型的洞察。<p>**这有助于您**&#x200B;更好地了解从Mix Modeler中生成的模型得出的增量见解。 <p>**根据这些见解**，您将能够：<ul><li>可视化并量化组织营销活动的影响。</li><li>确定哪些渠道表现良好。</li><li>确定可能需要优化的渠道。</li></ul></p> |
+
 <!-- CJA only -->
 
 >[!CONTEXTUALHELP]
->id="template--mixModelerReport"
+>id="template--mixmodeler-incremental-models-insights"
 >title="查看来自Mix Modeler生成的选定模型的洞察。"
 >abstract="**这有助于您**&#x200B;更好地了解从Mix Modeler中生成的模型得出的增量见解。 <br/>**根据这些见解**，您将能够：<ul><li>可视化并量化组织营销活动的影响。</li><li>确定哪些渠道表现良好。</li><li>确定可能需要优化的渠道。</li></ul>"
-
-
