@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 150c8879e441f6a613ae2e51ffbc5df30c202e95
+source-git-commit: 976170212fb9904a32db93368fbda5f143f4a462
 workflow-type: tm+mt
 source-wordcount: '2281'
 ht-degree: 7%
@@ -92,7 +92,7 @@ ht-degree: 7%
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [Real-time Customer Data Platform护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/rtcdp/guardrails/overview)。
+另请参阅Experience Platform [Real-time Customer Data Platform护栏](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview)。
 
 
 ## 自动数据集过期
@@ -139,7 +139,7 @@ ht-degree: 7%
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hans)。
+另请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
 
 
 ## 目标数据导出
@@ -151,7 +151,7 @@ ht-degree: 7%
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [数据集导出护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/guardrails#dataset-exports)
+另请参阅Experience Platform [数据集导出护栏](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## 数据登陆区
@@ -194,7 +194,7 @@ ht-degree: 7%
 | 每个区段的嵌套容器 | 10 | 系统强制的护栏 | 每个区段的最大嵌套容器数。 |
 | 每个区段的规则 | 100 | 系统强制的护栏 | 每个区段的最大规则数。 |
 | 每个区段每个Dimension的字符串比较数 | 100 | 系统强制的护栏 | 每个区段每个维度的最大字符串比较数。 |
-| 计算量度 | 6,000 | 系统强制的护栏 | 组织的最大计算量度数。 |
+| 计算量度 | 50,000 | 系统强制的护栏 | 组织的最大计算量度数。 |
 | 区段 | 50,000 | 系统强制的护栏 | 可为组织定义的最大区段数。 |
 | API 调用 | 120 | 系统强制的护栏 | 每分钟API请求数（每6秒12个请求）。 |
 
@@ -267,7 +267,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 有关详细信息，请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hans)。
+>以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 有关详细信息，请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
 
 | 数据流 | 预期延迟 |
 |---|---|
