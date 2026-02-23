@@ -4,9 +4,9 @@ title: 快速区段
 feature: Workspace Basics, Filters, Segments
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1187'
 ht-degree: 84%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 84%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的快速区段](https://video.tv.adobe.com/v/345335/?captions=chi_hans&quality=12&learn=on){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的快速区段](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/components/filters/create-a-quick-filter){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 

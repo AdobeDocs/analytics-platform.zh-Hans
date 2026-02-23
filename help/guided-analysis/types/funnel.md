@@ -5,10 +5,10 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 100%
+source-wordcount: '679'
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,12 @@ ht-degree: 100%
 
 ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL 漏斗&#x200B;]**分析可以直观地呈现您的产品中关键的用户历程。横轴代表用户必须经历的每个步骤。纵轴表示每个步骤的用户或会话的百分比。所有步骤必须按最终顺序执行，但可在报告窗口内的任何时间进行。
 
->[!VIDEO](https://video.tv.adobe.com/v/3431280/?captions=chi_hans&quality=12&learn=on){width="90%"}
+>[!BEGINSHADEBOX]
+
+观看演示视频，请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Funnel摩擦分析](https://video.tv.adobe.com/v/3421663/?quality=12&learn=onn){target="_blank"}。
+
+>[!ENDSHADEBOX]
+
 
 ## 用例
 

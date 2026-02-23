@@ -6,10 +6,10 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
-workflow-type: ht
-source-wordcount: '1490'
-ht-degree: 100%
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+workflow-type: tm+mt
+source-wordcount: '1491'
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 概述](https://video.tv.adobe.com/v/35509/?captions=chi_hans&quality=12&learn=on){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 概述](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview){target="_blank"}以获取演示视频。
 
 {{videoaa}}
 

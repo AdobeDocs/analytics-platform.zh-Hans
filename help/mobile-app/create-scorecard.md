@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '2698'
+source-wordcount: '2701'
 ht-degree: 98%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 98%
 
 >[!CONTEXTUALHELP]
 >id="mobilescorecard_annotations"
->title="批注"
+>title="注释"
 >abstract="可以在组件管理器或 Workspace 项目内部创建注释。"
 
 <!-- markdownlint-enable MD034 -->
@@ -29,7 +29,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Createa 移动记分卡](https://video.tv.adobe.com/v/3409727?captions=chi_hans&quality=12&learn=on){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Createa 移动记分卡](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -136,13 +136,13 @@ Analytics 记分卡以平铺版面为执行用户显示关键数据可视化图�
 
 ## 应用可视化图表 {#viz}
 
-Analytics 功能板提供了四种可视化图表，可让您深入了解维度项和量度。通过更改磁贴的[!UICONTROL 属性]的[!UICONTROL 图表类型]来更改为其他可视化图表。只需选择正确的磁贴，然后更改图表类型。
+Analytics 功能板提供了四种可视化图表，可让您洞察维度项和量度。通过更改磁贴的[!UICONTROL 属性]的[!UICONTROL 图表类型]来更改为其他可视化图表。只需选择正确的磁贴，然后更改图表类型。
 
 ![磁贴属性](assets/properties.png)
 
 或者，单击左边栏中的[!UICONTROL 可视化图表]图标，并将正确的可视化图表拖放到磁贴上：
 
-![可视化图表](assets/vizs.png)
+![可视化内容](assets/vizs.png)
 
 ### [!UICONTROL 摘要数字]
 
@@ -156,7 +156,7 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 ![新的移动记分卡，其中显示环形图可视化](assets/donut-viz.png)
 
-### [!UICONTROL 线形图]
+### [!UICONTROL 折线图]
 
 此线形图可视化图表使用线条来表示指标，以显示一段时间内值的变化情况。线形图显示随时间变化的维度，但适用于任何可视化图表。在此示例中，您将对产品类别维度进行可视化。
 
@@ -212,7 +212,7 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自定义详细信息视图](https://video.tv.adobe.com/v/3413785?captions=chi_hans&quality=12&learn=on){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自定义详细信息视图](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/visitor-id/stitching-enablement-and-validation){target="_blank"}以观看演示视频。
 
 {{videoaa}}
 
@@ -257,7 +257,7 @@ Analytics 功能板提供了四种可视化图表，可让您深入了解维度�
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [移动记分卡的数据故事项目](https://video.tv.adobe.com/v/3420558/?captions=chi_hans&quality=12&learn=on){target="_blank"}，观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [移动记分卡的数据故事项目](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"}，观看演示视频。
 
 {{videoaa}}
 

@@ -4,10 +4,10 @@ title: 面板概述
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '2193'
-ht-degree: 100%
+source-wordcount: '2194'
+ht-degree: 99%
 
 ---
 
@@ -56,7 +56,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
   | 选择… | 要创建… |
   |---|---|
   | ![Table](/help/assets/icons/Table.svg) | [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) |
-  | ![Line](/help/assets/icons/GraphTrend.svg) | [线形图](/help/analysis-workspace/visualizations/line.md) |
+  | ![折线图](/help/assets/icons/GraphTrend.svg) | [折线图](/help/analysis-workspace/visualizations/line.md) |
   | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [条形图](/help/analysis-workspace/visualizations/bar.md) |
   | ![ 123](/help/assets/icons/123.svg) | [摘要数字](/help/analysis-workspace/visualizations/summary-number-change.md) |
   | ![Text](/help/assets/icons/Text.svg) | [文本](/help/analysis-workspace/visualizations/text.md) |
@@ -167,7 +167,7 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [下拉区段](https://video.tv.adobe.com/v/327489?captions=chi_hans&quality=12&learn=on){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [下拉区段](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"}以获取演示视频。
 
 {{videoaa}}
 

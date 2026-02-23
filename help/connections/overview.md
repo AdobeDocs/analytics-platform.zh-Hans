@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 97%
+source-wordcount: '260'
+ht-degree: 93%
 
 ---
 
 # 连接概述
 
-通过连接，Customer Journey Analytics 产品管理员可以定义摄取哪些 [!DNL &#x200B; Experience Platform] 数据源，例如事件、查找、轮廓和摘要数据集。连接是 Customer Journey Analytics 的基础，它决定了您可以在[数据视图](/help/data-views/data-views.md)中将其定义为维度或量度的数据（字段）的可用性。
+通过连接，Customer Journey Analytics 产品管理员可以定义摄取哪些 [!DNL  Experience Platform] 数据源，例如事件、查找、轮廓和摘要数据集。连接是 Customer Journey Analytics 的基础，它决定了您可以在[数据视图](/help/data-views/data-views.md)中将其定义为维度或量度的数据（字段）的可用性。
 
 >[!IMPORTANT]
 >
@@ -25,15 +25,11 @@ ht-degree: 97%
 
 ![连接工作流程](assets/connection-workflow.png)
 
-<!-- Outdated interface 
-
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configuring connections](https://video.tv.adobe.com/v/35111/?quality=12&learn=on){target="_blank"} for a demo video.
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[连接到数据源](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"}。
 
 >[!ENDSHADEBOX]
-
--->
 
 从较高层面看，连接工作流程允许您：
 

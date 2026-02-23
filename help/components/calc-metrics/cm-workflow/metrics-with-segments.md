@@ -3,9 +3,9 @@ description: 了解如何按单个量度进行分段，以便能够在同一可�
 title: 分段量度
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '491'
 ht-degree: 1%
 
 ---
@@ -90,7 +90,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-请参阅![VideoCheckout](/help/assets/icons/VideoCheckedOut.svg) [将分段计算量度用作演示视频的无实施量度](https://video.tv.adobe.com/v/37926?captions=chi_hans&quality=12&learn=on){target="_blank"}。
+请参阅![VideoCheckout](/help/assets/icons/VideoCheckedOut.svg) [将分段计算量度用作演示视频的无实施量度](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-segmented-metrics){target="_blank"}。
 
 {{videoaa}}
 

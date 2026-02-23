@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '859'
 ht-degree: 14%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 14%
 
 >[!BEGINSHADEBOX]
 
-请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [计划工作簿](https://video.tv.adobe.com/v/3417502/?captions=chi_hans&quality=12&learn=on){target="_blank"}以观看演示视频。
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [计划工作簿](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/exporting/report-builder/schedule-cja-workbooks-using-report-builder){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 

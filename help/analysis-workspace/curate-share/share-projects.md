@@ -5,10 +5,10 @@ title: 共享项目
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 8e10818efa7da54b0802c56e5388e6c7ef7fd8b6
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '2089'
-ht-degree: 100%
+source-wordcount: '2092'
+ht-degree: 99%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的项目共享](https://video.tv.adobe.com/v/40034/?captions=chi_hans&quality=12&learn=on){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的项目共享](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}以观看演示视频。
 
 {{videoaa}}
 
@@ -96,7 +96,7 @@ ht-degree: 100%
 
    **编辑副本：**&#x200B;收件人可执行&#x200B;**[!UICONTROL 另存为]**，并有权访问左侧面板。项目的互动操作不限于该角色。如果您希望将项目共享给了解您组织数据以及知道如何使用 Analysis Workspace 的用户，则此角色非常有用。但您并不希望这些用户修改您的项目。
 
-   **只读：**&#x200B;收件人无法执行&#x200B;**[!UICONTROL 保存]**&#x200B;或&#x200B;**[!UICONTROL 另存为]**，并且无权访问左侧面板。项目交互受到限制。如果您希望将项目共享给不太熟悉您组织的数据结构（通常情况下是 Analysis Workspace 或 Customer Journey Analytics）的用户，则此角色非常有用。但是，您仍然希望这些用户在一个安全的环境中使用数据和信息分析。详细了解[只读角色项目体验](/help/analysis-workspace/curate-share/view-only-projects.md)。
+   **只读：**&#x200B;收件人无法执行&#x200B;**[!UICONTROL 保存]**&#x200B;或&#x200B;**[!UICONTROL 另存为]**，并且无权访问左侧面板。项目交互受到限制。如果您希望将项目共享给不太熟悉您组织的数据结构（通常情况下是 Analysis Workspace 或 Customer Journey Analytics）的用户，则此角色非常有用。但是，您仍然希望这些用户在一个安全的环境中使用数据和洞察。详细了解[只读角色项目体验](/help/analysis-workspace/curate-share/view-only-projects.md)。
 
 1. （条件）如果您共享单个项目，请选择是否在共享项目时启用以下选项：
 
@@ -161,7 +161,7 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [与任何人分享](https://video.tv.adobe.com/v/3452472/?captions=chi_hans&quality=12&learn=on){target="_blank"}，观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [与任何人分享](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}，观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -216,7 +216,7 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Analysis Workspace 中共享嵌入的组件](https://video.tv.adobe.com/v/327500/?captions=chi_hans&quality=12&learn=on){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Analysis Workspace 中共享嵌入的组件](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}以观看演示视频。
 
 {{videoaa}}
 

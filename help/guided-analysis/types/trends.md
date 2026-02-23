@@ -5,9 +5,9 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: e42f04eaa06a761803e76b64a5a16674fb4af57d
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '836'
 ht-degree: 92%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 92%
 ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL 趋势]**&#x200B;分析提供了关于产品绩效或用户行为随时间变化的宝贵洞察。该报告的横轴是时间间隔，而纵轴衡量的是您所期望的事件。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3423437/?captions=chi_hans&quality=12&learn=on)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/trends)
 
 ## 用例
 

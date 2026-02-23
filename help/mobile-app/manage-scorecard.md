@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1808'
 ht-degree: 85%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 85%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自定义详细信息视图](https://video.tv.adobe.com/v/3413785?captions=chi_hans&quality=12&learn=on){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自定义详细信息视图](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/visitor-id/stitching-enablement-and-validation){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -86,7 +86,7 @@ ht-degree: 85%
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [移动记分卡项目的数据故事](https://video.tv.adobe.com/v/3420558/?captions=chi_hans&quality=12&learn=on){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [移动记分卡项目的数据故事](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"}。
 
 >[!ENDSHADEBOX]
 

@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 100%
+source-wordcount: '756'
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 <!-- markdownlint-enable MD034 -->
 
 
-通过![EngagementGraph](/help/assets/icons/EngagementGraph.svg) **[!UICONTROL 参与度]**&#x200B;分析可以了解某个功能的使用频率，以及使用该功能的人数。当将多个功能进行相互比较时，此分析效果最佳。通过了解您的核心功能、优势功能、一次性功能和可疑功能，有助于推动投资决策。
+通过![EngagementGraph](/help/assets/icons/EngagementGraph.svg)**[!UICONTROL 参与度]**&#x200B;分析可以洞察某个功能的使用频率，以及使用该功能的人数。当将多个功能进行相互比较时，此分析效果最佳。通过了解您的核心功能、优势功能、一次性功能和可疑功能，有助于推动投资决策。
 
 位于该可视化图表顶部的功能表明，这些功能在活跃用户中经常被使用。在此可视化图中向右偏移的功能表明，这些功能在活跃用户中得到了广泛采用。一个功能被使用的次数中位数将图表水平分割。活跃用户的中位数百分比将图表垂直分割。中位数是基于查询中选定的事件计算的，而非基于所有数据。
 
@@ -33,8 +33,11 @@ ht-degree: 100%
 * 矩阵左下角的功能是&#x200B;**低影响力**&#x200B;功能；它们并未被广泛采纳或频繁使用。
 * 矩阵右下角的功能是您的&#x200B;**一次性**&#x200B;功能；它们被广泛采用，但使用频率不高。
 
->[!VIDEO](https://video.tv.adobe.com/v/3447477?captions=chi_hans)
+>[!BEGINSHADEBOX]
 
+观看演示视频，请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [参与分析](https://video.tv.adobe.com/v/3429489/&learn=on){target="_blank"}。
+
+>[!ENDSHADEBOX]
 
 ## 用例
 

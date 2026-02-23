@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: be617c59cd2fced0031fda1130b86e638bee8f68
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '717'
 ht-degree: 93%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 93%
 
 <!-- markdownlint-enable MD034 -->
 
-![NetGrowth](/help/assets/icons/NetGrowth.svg) **[!UICONTROL 净增长]**&#x200B;分析有助于您了解特定时期内用户增加或减少的速度。横轴代表时间间隔，纵轴代表增长的测量值。
+![NetGrowth](/help/assets/icons/NetGrowth.svg)**[!UICONTROL 净增长]**&#x200B;分析有助于您洞察特定时期内用户增加或减少的速度。横轴代表时间间隔，纵轴代表增长的测量值。
 
 每个数据点代表净增长，其计算方式如下：
 
@@ -41,7 +41,7 @@ ht-degree: 93%
 >
 >重复用户并未被纳入此计算中，因为它们并不代表用户的任何增减。
 
->[!VIDEO](https://video.tv.adobe.com/v/3423458/?captions=chi_hans&quality=12&learn=on)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/net-growth)
 
 
 ## 用例

@@ -4,18 +4,18 @@ title: 智能题注
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '758'
 ht-degree: 100%
 
 ---
 
-# 智能标题 {#intelligent-captions}
+# 智能题注 {#intelligent-captions}
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions"
->title="智能标题"
+>title="智能题注"
 >abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化图表的数据。"
 
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [智能标题](https://video.tv.adobe.com/v/3443148/?captions=chi_hans&quality=12&learn=on){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [智能标题](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/intelligent-captions){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -51,7 +51,7 @@ ht-degree: 100%
 * 如果您在特定的时间点上保存项目，并在稍后重新加载，则标题会自动使用新数据进行更新。这同样适用于计划的项目，以及从项目中导出的 PDF 文件。
 
 
-## 可视化内容 {#visualizations}
+## 可视化图表 {#visualizations}
 
 以下可视化内容支持使用智能标题功能：
 
@@ -59,7 +59,7 @@ ht-degree: 100%
 * [条形图](bar.md)
 * [水平条形图](horizontal-bar.md)
 * [面积图](area.md)（包含多条面积线）
-* [环形图](donut.md)
+* [圆环图](donut.md)
 * [流失](fallout/fallout-flow.md)
 * [流量](c-flow/flow.md)
 

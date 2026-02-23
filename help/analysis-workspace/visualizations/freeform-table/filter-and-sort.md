@@ -4,10 +4,10 @@ title: 过滤和排序
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 696bd0db44949162307d8ce7d2debed351a76cd6
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
 source-wordcount: '1575'
-ht-degree: 46%
+ht-degree: 47%
 
 ---
 
@@ -15,9 +15,6 @@ ht-degree: 46%
 
 Analysis Workspace 中的自由格式表是进行交互式数据分析的基础。因此，它们可以包含数千行信息。对数据进行过滤和排序是有效地呈现最重要信息的关键部分。
 
-<!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
-
->[!VIDEO](https://video.tv.adobe.com/v/327345?captions=chi_hans)-->
 
 ## 过滤表格
 
@@ -188,7 +185,7 @@ Note: this option does not seem to work. AN-338422
 
 #### 排序优先级
 
-当您为多个列排序数据时，将根据您分配给每个列的优先级对数据排序。 优先级编号显示在排序图标![SortOrderDown](/help/assets/icons/SortOrderDown.svg)<sup>➊</sup>旁边。
+当按多个列进行排序时，数据将根据您为每个列指定的优先级进行排序。优先级编号显示在排序图标![SortOrderDown](/help/assets/icons/SortOrderDown.svg)<sup>➊</sup>旁边。
 
 具有主优先级的列决定主顺序；具有次优先级的列决定主列中行的相同值的顺序；具有第三优先级的列决定主列和次列中行的相同值的顺序；依此类推。
 

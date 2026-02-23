@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
 exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 100%
+source-wordcount: '578'
+ht-degree: 99%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 100%
 >* **管理员**：*此分析需要 PersonID 属性。请将人员 ID 添加到数据视图。*
 >* **非管理员**：*此分析需要 PersonID 属性。请与您的 Customer Journey Analytics 管理员合作，将人员 ID 添加到数据视图。*
 
->[!VIDEO](https://video.tv.adobe.com/v/3435777/?captions=chi_hans&quality=12&learn=on)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/timeline)
 
 
 

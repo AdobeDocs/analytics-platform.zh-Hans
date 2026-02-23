@@ -3,9 +3,9 @@ description: 了解使用THEN运算符定义区段条件序列的顺序区段。
 title: 顺序区段
 feature: Filters, Segments
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: c745e37203ac829fa0fb7d8532e6499351cb94ba
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '2460'
+source-wordcount: '2461'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [顺序分段](https://video.tv.adobe.com/v/37426/?captions=chi_hans&quality=12&learn=on){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [顺序分段](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/segmentation/sequential-segmentation){target="_blank"}。
 
 {{videoaa}}
 
@@ -91,7 +91,7 @@ ht-degree: 3%
 1. 选择![时钟](/help/assets/icons/Clock.svg)。
 1. 从上下文菜单中选择&#x200B;**[!UICONTROL Within]**&#x200B;或&#x200B;**[!UICONTROL After]**。
 1. 指定一个时间段（**[!UICONTROL 分钟]**，**[!UICONTROL 小时]**，最多&#x200B;**[!UICONTROL 年]**）。
-1. 选择![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**&#x200B;以打开一个弹出窗口，允许您使用&#x200B;**[!UICONTROL -]**&#x200B;或&#x200B;**[!UICONTROL +]**&#x200B;键入或指定数字。
+1. 选择![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**以打开一个弹出窗口，允许您使用**[!UICONTROL -]**或**[!UICONTROL +]**键入或指定数字。
 
 若要移除时间限制，请使用![CrossSize75](/help/assets/icons/CrossSize75.svg)。
 
@@ -148,7 +148,7 @@ ht-degree: 3%
 | 序列 | ![ApproveReject](/help/assets/icons/ApproveReject.svg) |
 |--- | :---: |
 | 页面`Women \| Shoes`后跟页面`Checkout \| Thank You` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
-| 页面`Women \| Shoes`后跟页面`Women \| Tops`，后跟页面`Checkout \| Thank You` | ![删除圆圈](/help/assets/icons/RemoveCircle.svg) |
+| 页面`Women \| Shoes`后跟页面`Women \| Tops`，后跟页面`Checkout \| Thank You` | ![移除圆圈](/help/assets/icons/RemoveCircle.svg) |
 
 ## [!UICONTROL 包含]
 
@@ -168,7 +168,7 @@ ht-degree: 3%
 |---:|--- | --- |
 | 1 | 在同一会话中`Women \| Shoes`然后`Checkout \| Thank You` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
 | 2 | `Women \| Shoes`然后`Men \| Shoes`然后`Checkout \| Thank You`（跨不同会话） | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
-| 3 | `Checkout \| Thank You`，然后`Women \| Shoes` | ![删除圆圈](/help/assets/icons/RemoveCircle.svg) |
+| 3 | `Checkout \| Thank You`，然后`Women \| Shoes` | ![移除圆圈](/help/assets/icons/RemoveCircle.svg) |
 
 ### [!UICONTROL 仅在序列之前]，[!UICONTROL 仅在序列之后]
 

@@ -5,10 +5,10 @@ title: 目录
 feature: Workspace Basics
 role: User
 exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 88%
+source-wordcount: '210'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 88%
 
 >[!BEGINSHADEBOX]
 
-请观看 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建目录](https://video.tv.adobe.com/v/35185/?captions=chi_hans&quality=12&learn=on){target="_blank"}演示视频。
+请观看 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建目录](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace){target="_blank"}演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -46,4 +46,4 @@ ht-degree: 88%
 
 >[!MORELIKETHIS]
 >
->* [通过 Adobe Analytics 中新的目录功能简化仪表板导航](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/simplify-dashboard-navigation-with-the-new-table-of-contents/ba-p/731284?profile.language=zh-Hans)
+>* [通过 Adobe Analytics 中新的目录功能简化仪表板导航](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/simplify-dashboard-navigation-with-the-new-table-of-contents/ba-p/731284)

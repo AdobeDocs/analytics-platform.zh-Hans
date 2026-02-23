@@ -5,9 +5,9 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
-source-git-commit: be617c59cd2fced0031fda1130b86e638bee8f68
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '678'
 ht-degree: 92%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 92%
 
 
 
-通过 ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL 积极增长]**&#x200B;分析可深入了解特定时段内用户的增长和获取情况。横轴是时间间隔，纵轴则是用户测量值。用户分为四类：
+通过 ![PeopleGroup](/help/assets/icons/PeopleGroup.svg)**[!UICONTROL 积极增长]**&#x200B;分析可洞察特定时段内用户的增长和获取情况。横轴是时间间隔，纵轴则是用户测量值。用户分为四类：
 
 * **[!UICONTROL 新用户]**：用户在当前时段处于活跃状态，但是之前不活跃。将鼠标悬停在图表图例中的&#x200B;_[!UICONTROL 新用户]_&#x200B;上，即可查看分析所回顾的时间范围。回顾范围是根据所选的日期范围和间隔动态确定的。
 * **[!UICONTROL 重复]**：该用户在当前时段和上一时段均处于活跃状态。
@@ -31,7 +31,7 @@ ht-degree: 92%
 所有活跃用户（新用户 + 重复用户 + 返回用户）在横轴上方显示为青色，而所有休眠用户在横轴下方显示为橙色。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3423391/?captions=chi_hans&quality=12&learn=on)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/active-growth)
 
 ## 用例
 

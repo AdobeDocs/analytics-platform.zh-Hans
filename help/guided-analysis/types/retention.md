@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1262'
 ht-degree: 97%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 97%
 
 >[!CONTEXTUALHELP]
 >id="workspace_guidedanalysis_retention_button"
->title="保留"
+>title="维系"
 >abstract="衡量有多少用户继续使用您的产品。"
 
 <!-- markdownlint-enable MD034 -->
@@ -30,7 +30,7 @@ ht-degree: 97%
 
 在此分析中，图表的 x 轴表示自用户首次启动事件以来的时间，y 轴表示参与一个或多个回访事件的用户百分比。您可以查看不同持续时间内的保留率和流失率，并且可以通过查询设置来自定义显示的持续时间。图表下方的表格提供的是汇总数据，并可以选择显示单个同类群组，即在同一日期执行起始事件的一群人。
 
->[!VIDEO](https://video.tv.adobe.com/v/3435788/?captions=chi_hans&quality=12&learn=on)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/retention)
 
 
 ## 用例

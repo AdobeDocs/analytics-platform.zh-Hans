@@ -5,9 +5,9 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: aa635d52007a3032d8c3f90a779d1b70213dee9e
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '3738'
+source-wordcount: '3739'
 ht-degree: 56%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 56%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [组件类型设置](https://video.tv.adobe.com/v/3412933/?captions=chi_hans&quality=12&learn=on){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [组件类型设置](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -97,7 +97,7 @@ ht-degree: 56%
 
 * 要定义一组组件，您可以使用Analysis Workspace项目中的[试验面板](/help/analysis-workspace/c-panels/experimentation.md)在试验报表中使用。
 
-  请参阅[与 Journey Optimizer 集成](/help/integrations/ajo.md#data-view)以及[&#x200B; Target 报告](/help/integrations/at.md)。
+  请参阅[与 Journey Optimizer 集成](/help/integrations/ajo.md#data-view)以及[ Target 报告](/help/integrations/at.md)。
 
 * 要定义一组组件，您可以在Analysis Workspace项目的[地图](/help/analysis-workspace/visualizations/map.md)可视化图表中使用。
 

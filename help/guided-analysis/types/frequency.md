@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 100%
+source-wordcount: '658'
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ![频率](/help/assets/icons/Histogram.svg) **[!UICONTROL 频率]**&#x200B;分析根据产品中事件发生的频率对事件数据进行分组。该分析的纵轴包含表示事件频率的区间。横轴测量的是每个区间的用户数或会话数。
 
->[!VIDEO](https://video.tv.adobe.com/v/3435812/?captions=chi_hans&quality=12&learn=on)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/frequency)
 
 ## 用例
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 
 * **参与度**：跟踪用户对产品中任何事件的参与度。您可以单击条形图的任意部分，以将其保存为一个区段。针对参与度较低的群组的区段可以帮助您确定用户为何未以期望的频率与事件互动。针对高参与度群组的区段可以帮助您了解用户为何经常与事件互动。您可以根据该信息鼓励其他用户采取类似的行为。
 * **客户忠诚度**：将事件设置为“订单”，将量度设置为“用户”。通过此分析，您可以根据用户在指定日期范围内在您的网站上购买的次数对用户进行分组。
-* **支持优化**：查看每个用户发出的支持型呼叫次数或未结案件数量，以深入了解哪些用户遇到的问题最多。然后，您可以创建一个区段，重点关注他们的体验，以帮助识别和解决他们的问题。
+* **支持优化**：查看每个用户发出的支持型呼叫次数或未结案件数量，以洞察哪些用户遇到的问题最多。然后，您可以创建一个区段，重点关注他们的体验，以帮助识别和解决他们的问题。
 * **订阅服务**：参与度较低的用户更容易流失。了解高度参与的用户的行为有助于鼓励参与度较低的用户采取类似的行为，从而降低他们取消订阅的可能性。
 
 ## 界面

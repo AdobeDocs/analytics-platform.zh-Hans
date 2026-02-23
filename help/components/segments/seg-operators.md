@@ -4,9 +4,9 @@ title: 运算符
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
 feature: Filters, Segments
 role: User
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1190'
+source-wordcount: '1191'
 ht-degree: 31%
 
 ---
@@ -82,6 +82,6 @@ ht-degree: 31%
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [不同的维度计数](https://video.tv.adobe.com/v/27257?quality=12&learn=on){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [不同的维度计数](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/calculated-metrics/approximate-count-distinct-function-in-calculated-metrics){target="_blank"}。
 
 >[!ENDSHADEBOX]

@@ -4,7 +4,7 @@ title: 日期范围概述
 feature: Calendar
 exl-id: 99b31bd9-32f1-4da1-9e47-6d90c66282c5
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 100%
@@ -16,17 +16,6 @@ ht-degree: 100%
 在工作区项目中，您通常会使用[面板中的日程表](/help/analysis-workspace/c-panels/panels.md#calendar)来指定该面板中可视化图表的日期范围。
 
 使用日期范围组件可以定义和覆盖面板的日程表设置。
-
-<!-- Very old video, should we show it?
-
-+++ View a video illustrating use of calendar and date ranges
-
->[!VIDEO](https://video.tv.adobe.com/v/327350?captions=chi_hans&format=jpeg)
-
-{{videoaa}}
-+++
-
--->
 
 ## 使用日期范围
 

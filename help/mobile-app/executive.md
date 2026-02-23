@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1298'
 ht-degree: 73%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 73%
 
 >[!BEGINSHADEBOX]
 
-请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [协助执行用户访问移动记分卡](https://video.tv.adobe.com/v/3444846?captions=chi_hans){target="_blank"}以获取演示视频。
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [协助执行用户访问移动记分卡](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/assist-executives-to-access-mobile-scorecards){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
