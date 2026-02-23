@@ -22,7 +22,7 @@ Customer Journey Analytics 中的几项功能已经过重命名和重新设计�
 
 您在报告端所熟悉的许多内容并未发生更改。
 
-* 您仍然可以使用[ Analysis Workspace ](/help/analysis-workspace/home.md)分析数据。工作区的操作方式与在传统Adobe Analytics中相同。
+* 您仍然可以使用[&#x200B; Analysis Workspace &#x200B;](/help/analysis-workspace/home.md)分析数据。工作区的操作方式与在传统Adobe Analytics中相同。
 * 有相同版本的 [Adobe Analytics 功能板](/help/mobile-app/home.md)可用，且在 Customer Journey Analytics 与 Adobe Analytics 中的工作原理类似。
 * [Report Builder](/help/report-builder/rb-overview.md) 具有新界面，并可在 MS Windows、MacOS 和 Web 版本的 Excel 上运行。（在此版本的 Report Builder 之前，除非在 VMware 上运行，否则无法在 Mac 上使用。）此版本尚不支持传统的 AA 数据请求。
 
