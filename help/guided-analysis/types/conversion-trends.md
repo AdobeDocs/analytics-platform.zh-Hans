@@ -27,7 +27,7 @@ ht-degree: 99%
 ![转化趋势](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL 转化趋势]**&#x200B;分析提供了随时间变化的转化率趋势的可视化图表。横轴是时间间隔，纵轴表示转化率。
 
 
->[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/conversion-trends)
+>[!VIDEO](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/guided-analysis/conversion-trends)
 
 
 ## 用例

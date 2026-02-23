@@ -18,7 +18,7 @@ ht-degree: 3%
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [顺序分段](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/segmentation/sequential-segmentation){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [顺序分段](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/components/segmentation/sequential-segmentation){target="_blank"}。
 
 {{videoaa}}
 

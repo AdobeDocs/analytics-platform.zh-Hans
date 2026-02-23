@@ -41,7 +41,7 @@ ht-degree: 93%
 >
 >重复用户并未被纳入此计算中，因为它们并不代表用户的任何增减。
 
->[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/net-growth)
+>[!VIDEO](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/guided-analysis/net-growth)
 
 
 ## 用例
