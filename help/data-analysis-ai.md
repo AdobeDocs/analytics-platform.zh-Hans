@@ -5,7 +5,7 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: e1f7245a6c9bf6e36a49edafbcbb0e1005bc6e5b
+source-git-commit: 684f7e95e872ed3cc56a12725dd63459ed488ecc
 workflow-type: tm+mt
 source-wordcount: '2548'
 ht-degree: 89%
@@ -16,7 +16,7 @@ ht-degree: 89%
 
 >[!AVAILABILITY]
 >
->Data Insights 代理在限定时间内供符合条件的客户使用。Data Insights 代理的访问截止日期为 2026 年 2 月 28 日。 若希望在此日期之后继续不间断地使用 Data Insights 代理，请联系 Adobe 客户代表，了解有关 Adobe Experience Platform Agent Orchestrator 许可的更多信息。
+>Data Insights 代理在限定时间内供符合条件的客户使用。Data Insights Agent的访问截止日期为2026年3月31日。 若希望在此日期之后继续不间断地使用 Data Insights 代理，请联系 Adobe 客户代表，了解有关 Adobe Experience Platform Agent Orchestrator 许可的更多信息。
 
 Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/ai-assistant.md)访问，它是一个生成式 AI 对话代理，可以快速有效地回答有关您数据的问题。它使用来自您的数据视图和实际数据的组件在Analysis Workspace中构建相关可视化图表。
 
@@ -158,7 +158,7 @@ Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/a
 
 **提示词：**&#x200B;在提示词窗口中输入&#x200B;*“添加利润。”*
 
-**回答：**&#x200B;**[!UICONTROL 条形]**&#x200B;图仍然提供了最简洁的回答，而利润量度被添加到自由格式表中成为一列：
+**回答：****[!UICONTROL 条形]**&#x200B;图仍然提供了最简洁的回答，而利润量度被添加到自由格式表中成为一列：
 
 ![条形图](/help/assets/ai-asst-result4.png)
 
@@ -178,7 +178,7 @@ Adobe Experience Platform Agent Orchestrator 允许您在 Adobe Journey Optimize
 
 Agent Orchestrator 能够理解您的请求，确定需要使用哪些专门的代理，并编排它们以提供正确的回答。它可以在多轮次交互中跟踪上下文，使您可以在之前查询的基础上自然地构建对话。
 
-有关更多信息，请参阅 [Adobe Experience Platform Agent Orchestrator](https://business.adobe.com/cn/products/experience-platform/agent-orchestrator.html)。
+有关更多信息，请参阅 [Adobe Experience Platform Agent Orchestrator](https://business.adobe.com/products/experience-platform/agent-orchestrator.html)。
 
 ## 数据可视化图表提示词示例
 
