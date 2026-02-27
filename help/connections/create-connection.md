@@ -179,7 +179,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [连接到数据源](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [连接到数据源](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"}。
 
 >[!ENDSHADEBOX]
 
@@ -843,5 +843,5 @@ Customer Journey Analytics 支持将身份标识映射作为个人 ID。身份�
 >[!MORELIKETHIS]
 >
 >* [数据摄取概述](/help/data-ingestion/data-ingestion.md)
->* 博客：[如何利用 Adobe Customer Journey Analytics 中的事件、查找和轮廓数据集](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
+>* 博客：[如何利用 Adobe Customer Journey Analytics 中的事件、查找和轮廓数据集](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478?profile.language=zh-Hans)
 
