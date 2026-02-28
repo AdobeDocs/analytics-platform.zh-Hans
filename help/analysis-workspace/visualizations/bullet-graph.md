@@ -33,7 +33,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** 中的项目符号可视化图表。_<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版本的[项目符号](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** 中的项目符号可视化图表。_<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** 版本的[项目符号](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph)。_
 
 >[!ENDSHADEBOX]
 
@@ -58,7 +58,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 | 设置 | 描述 |
 |---|---|
-| **[!UICONTROL 项目符号选项]** | 在[!UICONTROL 项目符号]可视化图表中指定&#x200B;**[!UICONTROL 高目标]**、**[!UICONTROL 中目标]**&#x200B;和&#x200B;**[!UICONTROL 低目标]**&#x200B;的值。<br/>**[!UICONTROL 高目标&#x200B;]**是您的主要目标。**[!UICONTROL &#x200B;低目标&#x200B;]**和**[!UICONTROL &#x200B;中目标&#x200B;]**创建的是低于高目标的范围。注意：选中**[!UICONTROL &#x200B;百分比&#x200B;]**选项时，请以整数形式输入目标。例如：如果您的目标是百分之二十，则输入 `20`。 |
+| **[!UICONTROL 项目符号选项]** | 在[!UICONTROL 项目符号]可视化图表中指定&#x200B;**[!UICONTROL 高目标]**、**[!UICONTROL 中目标]**&#x200B;和&#x200B;**[!UICONTROL 低目标]**&#x200B;的值。<br/>**[!UICONTROL 高目标&#x200B;]**&#x200B;是您的主要目标。**[!UICONTROL &#x200B;低目标&#x200B;]**&#x200B;和&#x200B;**[!UICONTROL &#x200B;中目标&#x200B;]**&#x200B;创建的是低于高目标的范围。注意：选中&#x200B;**[!UICONTROL &#x200B;百分比&#x200B;]**&#x200B;选项时，请以整数形式输入目标。例如：如果您的目标是百分之二十，则输入 `20`。 |
 
 >[!MORELIKETHIS]
 >
