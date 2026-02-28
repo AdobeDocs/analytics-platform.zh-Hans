@@ -8,7 +8,7 @@ role: User, Admin
 source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '2030'
-ht-degree: 20%
+ht-degree: 25%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 20%
 >[!CONTEXTUALHELP]
 >id="cja-export-prefix"
 >title="前缀"
->abstract="容器中要放置数据的根文件夹。 指定静态文件夹名称，然后在名称后添加斜杠以创建文件夹。 例如，`folder_name/`"
+>abstract="您希望存放数据的容器中的根文件夹。指定一个静态文件夹名称，并在名称后添加斜杠以创建该文件夹。例如，`folder_name/`"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,7 +28,7 @@ ht-degree: 20%
 >[!CONTEXTUALHELP]
 >id="cja-export-file-name"
 >title="文件名称和路径"
->abstract="指定动态自定义文件名，以用于发送到此位置的自动导出。 您还可以在文件名前面添加动态自定义文件路径。 &lt;br\>在文件名和路径中使用变量可使其成为动态变量。 &lt;br\>例如，如果您指定`${yyyy}/${mm}/${dd}/my-report-${instance_id}-${idx}`，则在2026年1月15日自动发送到此目标的导出将具有以下文件路径和名称： `[prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv` &lt;br\>单击以下链接可查看可用变量列表。"
+>abstract="为发送到此位置的自动导出指定一个动态自定义文件名。您还可以在文件名前添加一个动态自定义文件路径。&lt;br\>在文件名和路径中使用变量，使其具有动态性。&lt;br\>例如，如果您指定 `${yyyy}/${mm}/${dd}/my-report-${instance_id}-${idx}`，则在 2026 年 1 月 15 日自动发送到此目标的导出文件将具有以下文件路径和名称：`[prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv` &lt;br\>单击下方链接可查看可用变量列表。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -104,16 +104,16 @@ ht-degree: 20%
 
 1. 在AEP数据登录区中访问数据的最简单方法是使用Microsoft Azure Storage Explorer。 此工具与配置[AEP数据登录区帐户](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)的说明中使用的工具相同。
 
-   1. 打开[Microsoft Azure存储资源管理器](https://azure.microsoft.com/en-us/products/storage/storage-explorer/)。
+   1. 打开[Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/)。
 
-   1. 转到&#x200B;[!UICONTROL **存储帐户**] > [!UICONTROL **（附加的容器）**] > [!UICONTROL **Blob容器**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name &#x200B;***。
+   1. 转到&#x200B;[!UICONTROL **存储帐户**] > [!UICONTROL **（附加的容器）**] > [!UICONTROL **Blob容器**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name ***。
 
       >[!NOTE]
       >
-      >文件夹名称&#x200B;**[!UICONTROL cjaexport-_number_]**&#x200B;是Azure存储资源管理器提供的默认名称。 如果您只有与SAS URI关联的单个连接（正常），则此文件夹的名称将为&#x200B;**[!UICONTROL cjaexport-1]**。
+      >文件夹名称&#x200B;**[!UICONTROL cjaexport-_number_]**是Azure Storage Explorer提供的默认名称。 如果您只有与SAS URI关联的单个连接（正常），则此文件夹的名称将为&#x200B;**[!UICONTROL cjaexport-1]**。
 
 
-      ![访问Azure存储资源管理器](assets/azure-storage-explorer-access.png)中的文件
+      ![访问Azure存储资源管理器中的文件](assets/azure-storage-explorer-access.png)
 
    1. 选择要下载的导出，然后选择&#x200B;[!UICONTROL **下载**]&#x200B;进行下载。
 

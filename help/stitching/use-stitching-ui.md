@@ -8,7 +8,7 @@ exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 source-git-commit: c6ccbdf89c51deef33b562a053b9c3b4bc626497
 workflow-type: tm+mt
 source-wordcount: '962'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 
@@ -96,7 +96,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
 >title="人员 ID"
->abstract="从可用身份中选择人员ID（人员的唯一标识符）。 如果要使用基于图形的拼合，请选择&#x200B;**[!UICONTROL 身份图形]**。"
+>abstract="从可用身份标识中选择一个人员 ID（个人的唯一标识符）。如果您希望使用基于图形的拼接，请选择&#x200B;**[!UICONTROL 身份标识图]**。"
 
 要启用拼接，请在&#x200B;**[!UICONTROL 添加数据集]**&#x200B;或&#x200B;**[!UICONTROL 编辑数据集]**&#x200B;对话框的事件数据集部分中：
 

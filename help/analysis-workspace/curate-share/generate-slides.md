@@ -8,7 +8,7 @@ exl-id: a3f6db1e-0444-4804-98bf-c5c10ba2e7ea
 source-git-commit: 968fef4fa6a967c9654f594e662bc9bbd7ae2ab4
 workflow-type: tm+mt
 source-wordcount: '1698'
-ht-degree: 4%
+ht-degree: 9%
 
 ---
 
@@ -73,14 +73,14 @@ Analysis Workspace通过考虑以下项目元素来创建数据故事：
 
 **分区分隔符：**&#x200B;使用适当放置和命名的分区分隔符来划分见解。
 
-## 基于Workspace项目生成.pptx演示文稿
+## 基于 Workspace 项目生成 .pptx 演示文稿
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-powerpoint-include-visualizations"
->title="包含的面板和可视化图表"
->abstract="选择要包含在演示文稿中的面板和可视化图表。 您最多可以包含50个可视化图表。"
+>title="包含的面板和可视化内容"
+>abstract="选择要在演示文稿中包含的面板和可视化内容。最多可包含 50 个可视化内容。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -89,7 +89,7 @@ Analysis Workspace通过考虑以下项目元素来创建数据故事：
 >[!CONTEXTUALHELP]
 >id="cja-presentation-emphasized-components"
 >title="被强调的组件"
->abstract="从可视化图表中最多选择5个要在演示文稿中强调的量度和5个维度。 您选择的量度以斜体显示，维度以粗体显示，维度项目以对比颜色显示。"
+>abstract="从可视化内容中选择最多 5 个量度和 5 个维度，在演示文稿中重点呈现。所选量度以斜体显示，维度以粗体显示，维度项以对比色显示。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -107,7 +107,7 @@ Analysis Workspace通过考虑以下项目元素来创建数据故事：
    |---------|----------|
    | **[!UICONTROL 封面标题]** | 指定演示文稿的标题。 此标题显示在演示文稿的标题幻灯片上。 |
    | **[!UICONTROL 包括演示者姓名]** | 指定演示者的名称。 此名称显示在演示文稿的标题幻灯片上，位于封面标题的下方。 |
-   | **[!UICONTROL 包含的面板和可视化图表]** | 选择要包含在演示文稿中的面板和可视化图表。 您最多可以包含50个可视化图表。<p>如果可视化图表灰显，则它后面会跟有文本&#x200B;**[!UICONTROL （不支持）]**&#x200B;或&#x200B;**[!UICONTROL （受限制的数据）]**。</p><ul><li>**不支持**：支持大多数面板和可视化图表。 有关不支持的面板和可视化的信息，请参阅[不支持的项目元素和功能](#unsupported-project-elements-and-features)。</li><li>**受限制的数据**：该可视化图表包含受组织强制实施的数据治理策略限制无法导出的组件。 请联系您的系统管理员以查看哪些组件被限制导出，然后在生成幻灯片之前删除受限制的组件。</li></ul> |
+   | **[!UICONTROL 包含的面板和可视化图表]** | 选择要包含在演示文稿中的面板和可视化图表。 最多可包含 50 个可视化内容。<p>如果可视化图表灰显，则它后面会跟有文本&#x200B;**[!UICONTROL （不支持）]**&#x200B;或&#x200B;**[!UICONTROL （受限制的数据）]**。</p><ul><li>**不支持**：支持大多数面板和可视化图表。 有关不支持的面板和可视化的信息，请参阅[不支持的项目元素和功能](#unsupported-project-elements-and-features)。</li><li>**受限制的数据**：该可视化图表包含受组织强制实施的数据治理策略限制无法导出的组件。 请联系您的系统管理员以查看哪些组件被限制导出，然后在生成幻灯片之前删除受限制的组件。</li></ul> |
    | **[!UICONTROL 强调组件]** | 从可视化图表中选择要在演示文稿中强调的量度和维度。 在创建数据故事的主题和总体叙述时，您选择的组件排名较高，具有更大的权重。 <p>未强调时，组件在演示文稿中显示如下：<ul><li>**量度和维度：**&#x200B;斜体</li><li>**Dimension项：**&#x200B;引号</li></ul></p><p>当应用强调时，组件在演示文稿中显示如下：</p><ul><li>**量度和维度：**&#x200B;斜体和粗体</li><li>**Dimension项目：**&#x200B;当强调相应的维度时为粗体<p>在图表中突出显示维度项时，也会对维度项应用颜色。</p></li></ul> |
 
    <!-- add this later: - **[!UICONTROL Panel and visualization descriptions]** - Choose whether to include panel and visualization descriptions in your generated slide presentation. - 
