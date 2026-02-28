@@ -30,7 +30,7 @@ Analytics 管理员负责整理有关数据字典中每个组件的信息，并�
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 的数据字典](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/components/data-dictionary/use-data-dictionary){target="_blank"}，以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 的数据字典](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/components/data-dictionary/use-data-dictionary){target="_blank"}，以观看演示视频。
 
 {{videoaa}}
 
