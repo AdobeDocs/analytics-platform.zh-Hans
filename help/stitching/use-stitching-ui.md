@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: c6ccbdf89c51deef33b562a053b9c3b4bc626497
+source-git-commit: a220eaf24ff877537f86027e3d93ec30772438e5
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 8%
+source-wordcount: '1142'
+ht-degree: 7%
 
 ---
 
@@ -97,6 +97,35 @@ ht-degree: 8%
 >id="connection_stitching_personid"
 >title="人员 ID"
 >abstract="从可用身份标识中选择一个人员 ID（个人的唯一标识符）。如果您希望使用基于图形的拼接，请选择&#x200B;**[!UICONTROL 身份标识图]**。"
+
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics"
+>title="拼接量度"
+>abstract="拼接量度正在使用过去7天的一组样本数据（不包括今天的数据）进行计算。"
+
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics_gbs_personidcoverage"
+>title="人员ID覆盖"
+>abstract="在拼接过程（实时和重放）中用于标识的选定人员ID的覆盖范围。<br/>为获得最佳的拼接结果，每个永久ID的标识图中应存在一个（永久ID、人员ID）关系。"
+
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics_fbs_personidcoverage"
+>title="人员ID覆盖"
+>abstract="在拼接过程（实时和重放）中用于标识的选定人员ID的覆盖范围。<br/>为获得最佳的拼接结果，每个永久ID（设备信息）应在至少一个事件上发送人员ID（用户信息）。"
+
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics_persistentidcoverage"
+>title="永久ID覆盖"
+>abstract="如果无法检测到人员ID值，此值用于在拼合过程（实时和重播）中进行识别。 <br/>将从数据中删除没有永久ID和人员ID的事件。 为获得最佳的拼接结果，所有事件上都应存在永久ID。"
+
+
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics_badids"
+>title="错误的ID"
+>abstract="错误ID是指严重影响报表数据的ID值。"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="错误的ID"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="拼合和错误ID"
+
 
 要启用拼接，请在&#x200B;**[!UICONTROL 添加数据集]**&#x200B;或&#x200B;**[!UICONTROL 编辑数据集]**&#x200B;对话框的事件数据集部分中：
 
