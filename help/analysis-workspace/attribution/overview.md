@@ -4,9 +4,9 @@ description: 了解将成功事件的点数归因到多个维度项的概念。
 feature: Attribution
 role: User, Admin
 exl-id: 47a3523b-d9eb-4272-84b8-090b921cba13
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '431'
 ht-degree: 99%
 
 ---
@@ -51,30 +51,40 @@ Adobe Analytics 通过让您能够执行以下操作来增强归因：
 ## 视频
 
 
+<!--  Attribution IQ
+
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自由格式表中的归因](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/using-attribution-iq-in-freeform-tables){target="_blank"}，获取演示视频。
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Attribution in Freeform tables](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/using-attribution-iq-in-freeform-tables){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
+
+-->
+
+<!-- Attribution IQ 
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Attribution in calculated metrics](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/attribution-iq-in-calculated-metrics){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
+
+-->
+
+
+>[!BEGINSHADEBOX]
+
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [使用归因面板](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/panels/build-the-attribution-panel){target="_blank"}，获取演示视频。
 
 >[!ENDSHADEBOX]
 
 
->[!BEGINSHADEBOX]
-
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [计算量度中的归因](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/attribution-iq-in-calculated-metrics){target="_blank"}，获取演示视频。
-
->[!ENDSHADEBOX]
-
+<!-- Attribution IQ
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [使用归因面板](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/panels/build-the-attribution-panel){target="_blank"}，获取演示视频。
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adding side-by-side comparisons of Attribution models](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/adding-side-by-side-comparisons-of-attribution-iq-models){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 
-
->[!BEGINSHADEBOX]
-
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [添加归因模型的并排比较](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/adding-side-by-side-comparisons-of-attribution-iq-models){target="_blank"}，获取演示视频。
-
->[!ENDSHADEBOX]
+-->
 

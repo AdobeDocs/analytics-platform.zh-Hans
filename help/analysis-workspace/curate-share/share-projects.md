@@ -5,7 +5,7 @@ title: 共享项目
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
 source-wordcount: '2092'
 ht-degree: 99%
@@ -40,9 +40,7 @@ ht-degree: 99%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的项目共享](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}以观看演示视频。
-
-{{videoaa}}
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的项目共享](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -161,7 +159,7 @@ ht-degree: 99%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [与任何人分享](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}，观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [与任何人分享](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}，观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -216,9 +214,7 @@ ht-degree: 99%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Analysis Workspace 中共享嵌入的组件](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}以观看演示视频。
-
-{{videoaa}}
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Analysis Workspace 中共享嵌入的组件](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 

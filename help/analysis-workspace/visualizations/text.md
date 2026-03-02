@@ -4,10 +4,10 @@ title: 文本
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 83%
+source-wordcount: '299'
+ht-degree: 80%
 
 ---
 
@@ -25,12 +25,18 @@ ht-degree: 83%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** 中的文本可视化图表。_<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版本的[文本](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/text)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** 中的文本可视化图表。_<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版本的[文本](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/text)。_
 
 >[!ENDSHADEBOX]
 
 
 要将用户定义的富文本添加到工作区项目中，可以使用![文本](/help/assets/icons/Text.svg)**[!UICONTROL 文本]**&#x200B;可视化图表，或者为可视化图表和面板添加描述。
+
+>[!BEGINSHADEBOX]
+
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[文本可视化图表](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-text-visualizations){target="_blank"}。
+
+>[!ENDSHADEBOX]
 
 ## 使用
 

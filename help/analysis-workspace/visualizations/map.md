@@ -4,9 +4,9 @@ title: 地图
 feature: Visualizations
 role: User, Admin
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
-source-wordcount: '2761'
+source-wordcount: '2770'
 ht-degree: 10%
 
 ---
@@ -42,11 +42,17 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中的地图可视化图表。_<br/>_查看本文的[&#x200B; &#x200B;](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)版本的&#x200B;_&#x200B;**映射**。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的地图可视化图表。_<br/>_查看本文的[ ](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)版本的&#x200B;_**映射**。_
 
 >[!ENDSHADEBOX]
 
 Analysis Workspace中的![全球](/help/assets/icons/Globe.svg) **[!UICONTROL 地图]**&#x200B;可视化允许您构建任何指标（包括计算量度）的可视地图。 此工具用于识别和比较不同地理区域间的量度数据。
+
+>[!BEGINSHADEBOX]
+
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[地图可视化图表](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/configure-and-use-the-map-visualization){target="_blank"}。
+
+>[!ENDSHADEBOX]
 
 ## 先决条件
 

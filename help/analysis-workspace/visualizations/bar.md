@@ -4,10 +4,10 @@ title: 条形图和栈叠的条形图
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 91%
+source-wordcount: '211'
+ht-degree: 87%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 91%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** 中的条形图和条形图堆叠可视化图表。_<br/>_有关本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** 版本，请参阅[条形图和条形图堆叠](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/bar)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** 中的条形图和条形图堆叠可视化图表。_<br/>_有关本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版本，请参阅[条形图和条形图堆叠](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/bar)。_
 
 
 >[!ENDSHADEBOX]
@@ -61,10 +61,16 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 ![100% 堆叠条形图。](assets/bar-stacked100.png)
 
+>[!BEGINSHADEBOX]
+
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[区域可视化图表](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"}。
+
+>[!ENDSHADEBOX]
+
 >[!MORELIKETHIS]
 >
 >[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[可视化图表设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[可视化图表上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[可视化图表设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[可视化图表上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 
