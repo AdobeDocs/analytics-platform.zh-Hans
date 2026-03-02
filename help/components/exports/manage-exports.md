@@ -5,9 +5,9 @@ title: 管理导出
 feature: Components
 exl-id: 0c21802a-c46f-41be-9356-d836c038b174
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: d0fa233aa5359064e9e0afea1a5384f5e38d017e
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1277'
 ht-degree: 5%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 在按[将Customer Journey Analytics报表导出到云](/help/analysis-workspace/export/export-cloud.md)中所述导出整个表后，可在[!UICONTROL 导出]页的[!UICONTROL 导出]选项卡上找到这些导出。
 
-您只能看到您创建的导出。
+您只能看到您创建的导出。 管理员可以通过启用选项&#x200B;**[!UICONTROL 查看所有用户的导出]**&#x200B;来查看所有导出。
 
 ## 筛选和搜索导出
 
@@ -28,16 +28,17 @@ ht-degree: 5%
 
 1. 选择&#x200B;[!UICONTROL **导出**]&#x200B;选项卡。
 
-1. 选择&#x200B;**筛选器**&#x200B;图标。
+   ![管理导出页面](assets/exports-manage.png)
 
-   <!--add screenshot -->
+1. 选择&#x200B;**筛选器**&#x200B;图标![筛选器图标](/help/assets/icons/Filter.svg)。
 
    您可以按以下条件进行筛选：
 
    | 过滤器 | 描述 |
    |---------|----------|
    | [!UICONTROL **帐户类型**] | 与导出关联的帐户类型。 可以使用以下帐户类型： <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
-   | [!UICONTROL **状态**] | 导出的状态。 可以使用以下状态： <ul><li>[!UICONTROL **活动**]：表示计划的导出尚未过期，或一次性导出尚未完成。 </li><li>[!UICONTROL **已完成**]：表示导出已成功导出。 对于计划的导出，这表示计划已过期。</li><li>[!UICONTROL **失败**]<p>以下情况可能会导致导出失败。 将鼠标悬停在&#x200B;[!UICONTROL **失败**]&#x200B;状态上可查看有关失败的详细信息。 <ul><li>计划的导出过期</li><li>已达到计划导出的行限制 </li></ul> </p></li></ul> |
+   | [!UICONTROL **状态**] | 导出的状态。 可以使用以下状态： <ul><li>[!UICONTROL **活动**]：表示计划的导出尚未过期，或一次性导出尚未完成。 </li><li>[!UICONTROL **已完成**]：表示导出已成功导出。 对于计划的导出，这表示计划已过期。</li><li>[!UICONTROL **失败**]<p>以下情况可能会导致导出失败。 将鼠标悬停在&#x200B;[!UICONTROL **失败**]&#x200B;状态上可查看有关失败的详细信息。 <ul><li>计划的导出过期</li><li>已达到计划导出的行限制 </li></ul><li>[!UICONTROL **已过期**]：表示导出已过期。</li></ul> |
+   | [!UICONTROL **创建者**] | 创建导出的用户。<p>仅当为所有用户启用了&#x200B;**[!UICONTROL 查看导出]**&#x200B;选项时，此选项才对管理员可用。 |
    | [!UICONTROL **频率**] | 导出的频率。 可以使用以下频率： <ul><li>[!UICONTROL **一次**]</li><li>[!UICONTROL **每天**]</li><li>[!UICONTROL **每周**]</li><li>[!UICONTROL **每月**]</li><li>[!UICONTROL **每年**]</li></ul> |
 
    {style="table-layout:auto"}
@@ -47,6 +48,8 @@ ht-degree: 5%
 1. 在Customer Journey Analytics中，选择&#x200B;[!UICONTROL **组件**] > [!UICONTROL **导出**]。
 
 1. 选择&#x200B;[!UICONTROL **导出**]&#x200B;选项卡。
+
+   ![管理导出页面](assets/exports-manage.png)
 
 1. 在搜索字段中，开始键入与要搜索的导出相关联的任何信息。 您可以从表中任何可用的列搜索数据。
 
@@ -64,7 +67,21 @@ ht-degree: 5%
 
    此时将显示&#x200B;[!UICONTROL **导出完整表**]&#x200B;对话框。
 
-1. 更新任何可用选项。 有关每个选项的信息，请参阅[将Analysis Workspace报表导出到云](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)中的[从Customer Journey Analytics导出完整表](/help/analysis-workspace/export/export-cloud.md)。
+1. 更新任何可用选项。 有关每个选项的信息，请参阅[将Analysis Workspace报表导出到云](/help/analysis-workspace/export/export-cloud.md#export-full-tables)中的[从Customer Journey Analytics导出完整表](/help/analysis-workspace/export/export-cloud.md)。
+
+## 续订导出
+
+您可以在一个或多个计划导出过期之前或之后续订它们。 这些导出自您续订之日起将续订1年。
+
+1. 在Customer Journey Analytics中，选择&#x200B;[!UICONTROL **组件**] > [!UICONTROL **导出**]。
+
+1. 在&#x200B;[!UICONTROL **导出**]&#x200B;选项卡上，选中要续订的一个或多个导出旁边的复选框。
+
+1. 选择&#x200B;[!UICONTROL **续订**]。
+
+   此时将显示&#x200B;[!UICONTROL **导出完整表**]&#x200B;对话框。<!--check process from here. -->
+
+1. 更新任何可用选项。 有关每个选项的信息，请参阅[将Analysis Workspace报表导出到云](/help/analysis-workspace/export/export-cloud.md#export-full-tables)中的[从Customer Journey Analytics导出完整表](/help/analysis-workspace/export/export-cloud.md)。
 
 ## 复制导出
 
@@ -96,7 +113,7 @@ ht-degree: 5%
 
 ## 标记导出
 
-将标记应用于导出时，您可以在[!UICONTROL 导出]页面的[!UICONTROL 标记]列中查看这些标记。 有关详细信息，请参阅[配置列](#configure-columns)。
+将标记应用于导出时，您可以在[!UICONTROL 导出]页面的[!UICONTROL 标记]列中查看这些标记。 有关详细信息，请参阅[配置列](#configure-columns-on-the-exports-page)。
 
 1. 在Customer Journey Analytics中，选择&#x200B;[!UICONTROL **组件**] > [!UICONTROL **导出**]。
 
@@ -106,13 +123,14 @@ ht-degree: 5%
 
 1. 在&#x200B;[!UICONTROL **标记导出**]&#x200B;对话框中，键入标记名称以创建新标记，或从下拉菜单中选择现有标记。
 
-   所选导出内容之间的任何常用标记都会显示在标记对话框中。<!-- what happens if one export has a tag and another doesn't? Is the tag removed if you don't select it? I'm guessing not, but maybe check -->
+   所选导出内容之间的任何常用标记都会显示在标记对话框中。
 
 1. 选择&#x200B;[!UICONTROL **应用标记**]。
 
+
 ## 删除导出
 
-您可以从“导出”页面中删除导出。 已删除的计划导出将不再发送。
+您可以从“导出”页面中删除导出。 删除导出会将其从导出页面中删除。 已删除的计划导出已取消，不再发送。
 
 1. 在Customer Journey Analytics中，选择&#x200B;[!UICONTROL **组件**] > [!UICONTROL **导出**]。
 
@@ -148,8 +166,22 @@ ht-degree: 5%
    | 发送时间 | 发送导出的时间。 |
    | 上次发送 | 上次发送导出的时间。 |
    | 最近修改 | 上次修改导出的时间。 默认情况下，“导出”页面上的项目将按此列排序。 |
-   | 帐户类型 | 从中导出数据的云帐户的类型。 可用的帐户类型包括[!UICONTROL Amazon S3 Role ARN]、[!UICONTROL Google Cloud Platform]、[!UICONTROL Azure SAS]、[!UICONTROL Azure RBAC]、[!UICONTROL Snowflake]和[!UICONTROL Adobe Experience Platform]。 |
+   | 帐户类型 | 从中导出数据的云帐户的类型。 可用的帐户类型包括[!UICONTROL Amazon S3 Role ARN]、[!UICONTROL Google Cloud Platform]、[!UICONTROL Azure SAS]、[!UICONTROL Azure RBAC]、[!UICONTROL Snowflake]和[!UICONTROL AEP数据登录区]。 |
 
    {style="table-layout:auto"}
 
 1. 确保选定您要显示的任何列。 选定的列将显示在“导出”页上，并显示相关信息。
+
+## 从“导出”页面创建导出
+
+您可以从Analysis Workspace创建导出（如[将完整表导出到云](/help/analysis-workspace/export/export-cloud.md)中所述），也可以从“导出”页面创建导出（如本节中所述）。
+
+要开始从“导出”页面创建导出，请执行以下操作：
+
+1. 在Customer Journey Analytics中，选择&#x200B;[!UICONTROL **组件**] > [!UICONTROL **导出**]。
+
+1. 在&#x200B;[!UICONTROL **导出**]&#x200B;选项卡上，选择&#x200B;**[!UICONTROL 添加导出]**。
+
+1. 填写可用字段以创建导出。 有关每个字段的信息以及有关组件、计算量度函数和其他受支持功能的信息，请参阅[将完整表导出到云](/help/analysis-workspace/export/export-cloud.md)。
+
+

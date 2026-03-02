@@ -5,10 +5,10 @@ title: 配置云导出帐户
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 25f46c50b6578026ff3aaae5019306bdcf82f211
 workflow-type: tm+mt
-source-wordcount: '2246'
-ht-degree: 28%
+source-wordcount: '2242'
+ht-degree: 31%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 28%
 1. 在Customer Journey Analytics中，选择&#x200B;[!UICONTROL **组件**] > [!UICONTROL **导出**]。
 1. 在[!UICONTROL 导出]页上，选择&#x200B;[!UICONTROL **位置帐户**]&#x200B;选项卡。
 
-   ![导出页面选项显示添加其他帐户](assets/account-add.png)
+   ![导出页面选项显示添加帐户](assets/account-add.png)
 
 1. 选择&#x200B;[!UICONTROL **添加帐户**]。
 
@@ -38,11 +38,11 @@ ht-degree: 28%
 
 1. 启用选项&#x200B;[!UICONTROL **如果您希望允许组织中的其他用户使用该帐户，则让组织中的所有用户都可以使用该帐户**]。
 
-   共享帐户时，请考虑以下事项：
+   共享帐户时请考虑以下事项：
 
-   * 无法取消共享您共享的帐户。
+   * 您已共享的帐户无法取消共享。
 
-   * 共享帐户只能由帐户的所有者编辑。
+   * 共享帐户只能由帐户的所有者进行编辑。
 
    * 任何人都可以为共享帐户创建位置。
 
@@ -69,18 +69,18 @@ ht-degree: 28%
 >在为导出帐户使用AEP数据登陆区时，请考虑以下事项：
 >
 > * 将Customer Journey Analytics报表导出到Adobe Experience Platform数据登陆区时，请确保在7天内下载数据，然后从AEP数据登陆区中删除该数据。 7天后，数据将自动从AEP数据登录区中删除。
-> * AEP数据登录区域使用Azure或AWS Storage。 如果您的组织使用配置为使用Azure的登录公司，则AEP数据登录区域将使用Azure。 如果登录公司配置为使用AWS，则AEP数据登录区域将使用AWS。
+> * AEP Data Landing Zone使用Azure或AWS存储。 如果您的组织使用配置为使用Azure的IMS组织，则AEP Data Landing Zone使用Azure。 如果登录公司配置为使用AWS，则AEP数据登录区域将使用AWS。
 >
 
 1. 通过以下任一方式开始创建云导出帐户：
 
    * 如上所述，从“导出”页面中，在[开始创建云导出帐户](#begin-creating-a-cloud-export-account)中
 
-   * 当[从Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)导出完整表时
+   * 当[从Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)导出完整表时
 
 1. 在&#x200B;**[!UICONTROL 帐户类型]**&#x200B;字段中选择&#x200B;**[!UICONTROL AEP Data Landing Zone]**&#x200B;后，选择&#x200B;[!UICONTROL **保存**]。
 
-   根据您的AEP数据登录区域配置为使用Azure还是AWS Storage，将显示以下任一对话框：
+   根据您的AEP数据登录区配置为使用Azure还是AWS存储，系统将显示以下任一对话框：
 
    * **Azure存储：**
 
@@ -100,7 +100,7 @@ ht-degree: 28%
 
 1. （视情况而定）如果您使用的是Azure存储：
 
-   1. 将&#x200B;[!UICONTROL **SAS URI**]&#x200B;字段的内容复制到剪贴板。 您将使用此SAS URI访问从Analysis Workspace从AEP数据登陆区导出的数据。
+   1. 将&#x200B;[!UICONTROL **SAS URI**]&#x200B;字段的内容复制到剪贴板。 您将使用此SAS URI访问从AEP数据登陆区导出的Analysis Workspace数据。
 
       如果此字段为空，您需要被授予访问Adobe Experience Platform的权限。
 
@@ -110,13 +110,13 @@ ht-degree: 28%
       >
       >使用基于Azure的AEP数据登陆区帐户时，访问导出到AEP数据登陆区的报告的最简单方法是使用Azure Storage Explorer。 以下步骤使用此方法。
 
-      1. 如果没有，请下载[Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/)。
+      1. 如果您还没有这样的文件，请下载[Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/)。
 
-      1. 在Adobe Experience Platform文档中，按照[将数据登陆区域容器连接到Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=zh-Hans#connect-your-data-landing-zone-container-to-azure-storage-explorer)中描述的步骤操作。
+      1. 在Adobe Experience Platform文档中，按照[将数据登陆区域容器连接到Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#connect-your-data-landing-zone-container-to-azure-storage-explorer)中描述的步骤操作。
 
-         您可以跳过[检索数据登陆区域的凭据](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=zh-Hans#retrieve-dlz-credentials)和[更新数据登陆区域凭据](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=zh-Hans#update-dlz-credentials)部分中描述的任务，因为您复制的URI包含这些凭据。
+         您可以跳过[检索数据登陆区域的凭据](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#retrieve-dlz-credentials)和[更新数据登陆区域凭据](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#update-dlz-credentials)部分中描述的任务，因为您复制的URI包含这些凭据。
 
-      1. 在遵循Adobe Experience Platform文档并进入&#x200B;[!UICONTROL **Blob容器SAS URL**]&#x200B;字段时，粘贴您在步骤3中复制的SAS URI。
+      1. 在遵循Adobe Experience Platform文档并进入&#x200B;[!UICONTROL **Blob容器SAS URL**]&#x200B;字段时，粘贴您在上一步中复制的SAS URI。
 
          >[!NOTE]
          >
@@ -156,7 +156,7 @@ ht-degree: 28%
 
    * 如上所述，从“导出”页面中，在[开始创建云导出帐户](#begin-creating-a-cloud-export-account)中
 
-   * 当[从Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)导出完整表时
+   * 当[从Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)导出完整表时
 
 1. 在&#x200B;[!UICONTROL **添加帐户**]&#x200B;对话框的&#x200B;[!UICONTROL **帐户属性**]&#x200B;部分中，指定以下信息：
 
@@ -184,7 +184,7 @@ ht-degree: 28%
 
    * 如上所述，从“导出”页面中，在[开始创建云导出帐户](#begin-creating-a-cloud-export-account)中
 
-   * 当[从Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)导出完整表时
+   * 当[从Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)导出完整表时
 
 1. 在&#x200B;[!UICONTROL **添加帐户**]&#x200B;对话框的&#x200B;[!UICONTROL **帐户属性**]&#x200B;部分中，指定以下信息：
 
@@ -212,7 +212,7 @@ ht-degree: 28%
 
    * 如上所述，从“导出”页面中，在[开始创建云导出帐户](#begin-creating-a-cloud-export-account)中
 
-   * 当[从Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)导出完整表时
+   * 当[从Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)导出完整表时
 
 1. 在&#x200B;[!UICONTROL **添加帐户**]&#x200B;对话框的&#x200B;[!UICONTROL **帐户属性**]&#x200B;部分中，指定以下信息：
 
@@ -220,9 +220,9 @@ ht-degree: 28%
    |---------|----------|
    | [!UICONTROL **应用程序 ID**] | 从您创建的 Azure 应用程序复制此 ID。在 Microsoft Azure 中，此信息位于应用程序内的&#x200B;**概述**&#x200B;选项卡上。有关更多信息，请参阅[有关如何向 Microsoft 身份标识平台注册应用程序的 Microsoft Azure 文档](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)。 |
    | [!UICONTROL **租户 ID**] | 从您创建的 Azure 应用程序复制此 ID。在 Microsoft Azure 中，此信息位于应用程序内的&#x200B;**概述**&#x200B;选项卡上。有关更多信息，请参阅[有关如何向 Microsoft 身份标识平台注册应用程序的 Microsoft Azure 文档](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)。 |
-   | [!UICONTROL **密钥保管库 URI**] | <p>Azure Key Vault 中 SAS URI 的路径。要配置 Azure SAS，需要使用 Azure Key Vault 将 SAS URI 存储为密码。有关信息，请参阅[有关如何从 Azure 密钥保管库设置和检索密码的 Microsoft Azure 文档](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations)。</p><p>创建密钥保管库 URI 后：<ul><li>在密钥保管库上添加访问策略，以便向您创建的 Azure 应用程序授予权限。<p><p>有关信息，请参阅[有关如何分配密钥保管库访问策略的 Microsoft Azure 文档](https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy?tabs=azure-portal)。</p>或</p><p>如果要直接授予访问角色而不创建访问策略，请参阅[Microsoft Azure文档，了解如何使用Azure门户分配Azure角色](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal)。 这会添加应用程序ID的角色分配，以访问密钥保管库URI。 </p></li><li>确保已将应用程序 ID 授予 `Key Vault Certificate User` 内置角色，以便访问密钥保管库 URI。</br><p>有关更多信息，请参阅 [Azure 内置角色](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles)。</p></li></ul> |
+   | [!UICONTROL **密钥保管库 URI**] | <p>Azure Key Vault 中 SAS URI 的路径。要配置 Azure SAS，需要使用 Azure Key Vault 将 SAS URI 存储为密码。有关信息，请参阅[有关如何从 Azure 密钥保管库设置和检索密码的 Microsoft Azure 文档](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations)。</p><p>创建密钥保管库 URI 后：<ul><li>在密钥保管库上添加访问策略，以便向您创建的 Azure 应用程序授予权限。<p>有关信息，请参阅[有关如何分配密钥保管库访问策略的 Microsoft Azure 文档](https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy?tabs=azure-portal)。</p><p>或</p><p>如果要在不创建访问策略的情况下直接授予访问角色，请参阅 [Microsoft Azure 文档，了解如何使用 Azure 门户分配 Azure 角色](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal)。这将为应用程序 ID 添加访问密钥存储库 URI 的角色分配。 </p></li><li>确保应用程序ID已被授予`Key Vault Certificate User`内置角色，以便访问密钥保管库URI。<p>有关更多信息，请参阅 [Azure 内置角色](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles)。</p></li></ul> |
    | [!UICONTROL **密钥保管库密码名称**] | 将密码添加到 Azure 密钥保管库时创建的密码名称。在 Microsoft Azure 中，此信息位于您在&#x200B;**密钥保管库**&#x200B;设置页面上创建的密钥保管库中。有关信息，请参阅[有关如何从 Azure 密钥保管库设置和检索密码的 Microsoft Azure 文档](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations)。 |
-   | [!UICONTROL **位置帐户密码**] | 从您创建的 Azure 应用程序复制密码。在 Microsoft Azure 中，此信息位于应用程序中的&#x200B;**证书和密码**&#x200B;选项卡上。有关详细信息，请参阅[Microsoft Azure文档，了解如何向Microsoft Identity Platform注册应用程序](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)。<!-- need to grant permission to the bucket. Jun will send info on where that is documented) --> |
+   | [!UICONTROL **位置帐户密码**] | 从您创建的 Azure 应用程序复制密码。在 Microsoft Azure 中，此信息位于应用程序中的&#x200B;**证书和密码**&#x200B;选项卡上。有关详细信息，请参阅[Microsoft Azure文档，了解如何向Microsoft标识平台注册应用程序](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)。<!-- need to grant permission to the bucket. Jun will send info on where that is documented) --> |
 
    {style="table-layout:auto"}
 
@@ -232,7 +232,7 @@ ht-degree: 28%
 
    ![导出帐户创建的对话框](assets/export-account-azure.png)
 
-1. 如果您尚未这样做，请确保向Azure SAS中的存储段授予权限。<!-- add link to Google Cloud docs on how to do this -->
+1. 如果您尚未这样做，请确保您向Azure SAS中的存储段授予权限。<!-- add link to Google Cloud docs on how to do this -->
 
 1. 选择&#x200B;[!UICONTROL **确定**]。
 
@@ -244,7 +244,7 @@ ht-degree: 28%
 
    * 如上所述，从“导出”页面中，在[开始创建云导出帐户](#begin-creating-a-cloud-export-account)中
 
-   * 当[从Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)导出完整表时
+   * 当[从Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)导出完整表时
 
 1. 在&#x200B;[!UICONTROL **添加帐户**]&#x200B;对话框的&#x200B;[!UICONTROL **帐户属性**]&#x200B;部分中，指定以下信息：
 
@@ -262,7 +262,7 @@ ht-degree: 28%
 
    ![导出帐户创建的对话框](assets/export-account-azure.png)
 
-1. 如果您尚未这样做，请确保向Azure RBAC中的存储段授予权限。<!-- add link to Google Cloud docs on how to do this -->
+1. 如果您还没有这样的权限，请确保在Azure RBAC中授予该容器的权限。
 
 1. 选择&#x200B;[!UICONTROL **确定**]。
 
@@ -274,7 +274,7 @@ ht-degree: 28%
 
    * 如上所述，从“导出”页面中，在[开始创建云导出帐户](#begin-creating-a-cloud-export-account)中
 
-   * 当[从Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)导出完整表时
+   * 当[从Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)导出完整表时
 
 1. 在&#x200B;[!UICONTROL **添加帐户**]&#x200B;对话框的&#x200B;[!UICONTROL **帐户属性**]&#x200B;部分中，指定以下信息：
 

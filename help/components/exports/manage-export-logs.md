@@ -5,10 +5,10 @@ title: 管理导出日志
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: bf76b8688dc0c463c032dd94e88450fed5488949
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 8%
+source-wordcount: '936'
+ht-degree: 7%
 
 ---
 
@@ -30,11 +30,13 @@ ht-degree: 8%
 
 1. 执行下列任一操作：
 
+   * 系统管理员可以启用&#x200B;**[!UICONTROL 查看所有用户的日志]**&#x200B;的选项。 启用此选项后，无论创建导出的用户是谁，都会显示所有日志。
+
    * [自定义显示的列](#configure-columns)。
 
    * 选择日志名称旁边的&#x200B;**信息图标** ![信息图标](assets/information-icon.png)以查看与日志关联的导出。
 
-   * 选择日志名称旁边的&#x200B;**编辑导出图标** ![信息图标](assets/edit-export-icon.png)以编辑与日志关联的导出。
+   * 选择日志名称旁边的&#x200B;**编辑导出图标** ![编辑导出图标](/help/assets/icons/Edit.svg)以编辑与日志关联的导出。
 
      有关编辑导出的更多信息，请参阅[将Customer Journey Analytics报表导出到云](/help/analysis-workspace/export/export-cloud.md)。
 
@@ -58,7 +60,7 @@ ht-degree: 8%
    |---------|----------|
    | [!UICONTROL **导出ID**] | 指定要查看的导出日志的导出ID。 |
    | [!UICONTROL **帐户类型**] | 与日志关联的帐户类型。 可以使用以下帐户类型： <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>。 |
-   | [!UICONTROL **状态**] | 导出的状态。 可以使用以下状态： <ul><li>[!UICONTROL **挂起**]：特定导出实例已启动，但尚未完成。<p>重新运行状态为“待定”的导出将会延迟导出过程。</p></li><li>[!UICONTROL **已完成**]：导出的特定实例已完成处理，可在导出帐户中使用。</li><li>[!UICONTROL **失败**]<p>各种情况都可能导致导出失败。 将鼠标悬停在失败状态上可查看有关失败的详细信息。<p>有关失败可能原因的更多信息，请参阅[导出失败疑难解答](/help/components/exports/troubleshoot-exports.md)。</p> |
+   | [!UICONTROL **状态**] | 导出的状态。 可以使用以下状态： <ul><li>[!UICONTROL **挂起**]：特定导出实例已启动，但尚未完成。<p>重新运行状态为“待定”的导出会延迟导出过程。</p></li><li>[!UICONTROL **已完成**]：导出的特定实例已完成处理，可在导出帐户中使用。</li><li>[!UICONTROL **失败**]<p>各种情况都可能导致导出失败。 将鼠标悬停在失败状态上可查看有关失败的详细信息。</p><p>有关失败可能原因的更多信息，请参阅[导出失败疑难解答](/help/components/exports/troubleshoot-exports.md)。</p></li></ul> |
 
    {style="table-layout:auto"}
 
@@ -94,11 +96,19 @@ This option is not available when selecting multiple logs. -->
 
 1. 找到与要编辑的导出关联的日志。
 
-1. 选择日志名称旁边的&#x200B;**编辑导出**&#x200B;图标![导出日志图标](assets/export-icon.png)。
+1. 选择日志名称旁边的&#x200B;**编辑导出**&#x200B;图标![编辑导出日志图标](/help/assets/icons/Edit.svg)。
 
    或
 
    选中日志旁边的复选框，然后选择&#x200B;[!UICONTROL **编辑导出**]。
+
+## 重新运行已完成或失败的导出
+
+您可以重新运行与特定导出日志关联的一个或多个导出。 要重新运行导出，导出日志的状态必须为“已完成”或“失败”，并且导出日志的创建时间不超过7天。
+
+1. 选中要重新运行的一个或多个导出作业旁边的复选框。
+
+1. 选择&#x200B;**[!UICONTROL 重新运行]**。
 
 ## 配置各列
 
@@ -106,7 +116,7 @@ This option is not available when selecting multiple logs. -->
 
 选择列标题以按该列对日志进行排序。 默认情况下，日志按开始导出的日期和时间排序。
 
-要在[!UICONTROL 日志]选项卡上配置列：
+要在[!UICONTROL 日志]选项卡中配置列：
 
 1. 在Customer Journey Analytics中，选择&#x200B;[!UICONTROL **组件**] > [!UICONTROL **导出**]。
 
@@ -123,12 +133,13 @@ This option is not available when selecting multiple logs. -->
    | 实例 ID | Customer Journey Analytics实例的ID。<!-- True? --> |
    | 数据视图名称 | 与导出关联的数据视图的名称。 用户在创建导出时可以选择数据视图，如[将Customer Journey Analytics报表导出到云](/help/analysis-workspace/export/export-cloud.md)中所述。 |
    | 文件数 | 导出中包含的文件数。 |
-   | 大小 | 导出的大小。<p>文件大小以1024为基数计算，有时表示为KIB和MIB。 如果您的云提供商计算的大小基数为1000，这可能会导致您的云提供商中显示的大小与此处显示的大小略有不同。</p> |
+   | 大小 | 导出的大小。<p>文件大小以1024为基数计算，有时表示为KiB和MiB。 如果您的云提供商计算的大小基数为1000，则可能会导致您的云提供商显示的大小与此处显示的大小略有不同。</p> |
    | 位置 | 帐户上导出数据的位置。 |
    | 帐户 | 从中导出数据的帐户。 |
-   | 状态 | 导出的状态。 可用状态为[!UICONTROL Pending]、[!UICONTROL Delivered]和[!UICONTROL Failed]。 |
+   | 状态 | 导出的状态。 可用状态为[!UICONTROL Pending]、[!UICONTROL Completed]和[!UICONTROL Failed]。 |
    | 投放日期 | 导出日期。 |
-   | 帐户类型 | 从中导出数据的云帐户的类型。 可用的帐户类型包括[!UICONTROL Amazon S3 Role ARN]、[!UICONTROL Google Cloud Platform]、[!UICONTROL Azure SAS]、[!UICONTROL Azure RBAC]、[!UICONTROL Snowflake]和[!UICONTROL Adobe Experience Platform]。 |
+   | 开始日期 | 开始导出的日期。 |
+   | 帐户类型 | 从中导出数据的云帐户的类型。 可用的帐户类型包括[!UICONTROL Amazon S3 Role ARN]、[!UICONTROL Google Cloud Platform]、[!UICONTROL Azure SAS]、[!UICONTROL Azure RBAC]、[!UICONTROL Snowflake]和[!UICONTROL AEP数据登录区]。 |
    | 行数 | 导出表中包括的行数。 |
 
    {style="table-layout:auto"}

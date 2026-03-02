@@ -5,16 +5,16 @@ title: 管理云导出位置和帐户
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 25a5c42153e28493321d87fa5227fcf44c244bb6
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1392'
 ht-degree: 3%
 
 ---
 
 # 管理云导出位置和帐户
 
-您可以查看、编辑和删除云导出位置。
+您可以查看、编辑和删除云导出位置和帐户。
 
 有关如何创建新位置的信息，请参阅[配置云导出位置](/help/components/exports/cloud-export-locations.md)。
 
@@ -30,7 +30,7 @@ ht-degree: 3%
 
 1. 选择&#x200B;**筛选器**&#x200B;图标。
 
-   <!-- add screenshot -->
+   位置页面上的![筛选器图标](assets/locations-filter-icon.png)
 
    您可以按以下条件进行筛选：
 
@@ -48,6 +48,8 @@ ht-degree: 3%
 
 1. 选择&#x200B;[!UICONTROL **位置**]&#x200B;选项卡。
 
+   ![位置页面](assets/locations-manager.png)
+
 1. （视情况而定）如果您是系统管理员，则可以启用&#x200B;[!UICONTROL **查看所有用户的位置**]&#x200B;选项以查看由您组织中的所有用户创建的位置。
 
 1. 在搜索字段中，开始键入与要搜索的位置相关联的任何信息。 您可以从表中任何可用的列搜索数据。
@@ -62,13 +64,13 @@ ht-degree: 3%
 
 1. 选择&#x200B;[!UICONTROL **位置**]&#x200B;选项卡。
 
+   ![显示“位置”选项卡和位置列表的“导出”窗口。](assets/locations-manager.png)
+
 1. （视情况而定）如果您是系统管理员，则可以启用&#x200B;[!UICONTROL **查看所有用户的位置**]&#x200B;选项以查看由您组织中的所有用户创建的位置。
 
 1. 选择要编辑的位置。
 
-   ![显示“位置”选项卡和位置列表的“导出”窗口。](assets/locations-edit.png)
-
-1. 选择&#x200B;[!UICONTROL **编辑**]。
+1. 选择屏幕底部的&#x200B;[!UICONTROL **编辑**]。
 
 1. 进行任何所需的更改，然后选择&#x200B;[!UICONTROL **保存**]。
 
@@ -82,13 +84,13 @@ ht-degree: 3%
 
 1. 选择&#x200B;[!UICONTROL **位置**]&#x200B;选项卡。
 
+   ![显示“位置”选项卡和位置列表的“导出”窗口。](assets/locations-manager.png)
+
 1. （视情况而定）如果您是系统管理员，则可以启用&#x200B;[!UICONTROL **查看所有用户的位置**]&#x200B;选项以查看由您组织中的所有用户创建的位置。
 
 1. 选择一个或多个要删除的位置。
 
-   ![显示“位置”选项卡和位置列表的“导出”窗口](assets/locations-edit.png)
-
-1. 选择&#x200B;[!UICONTROL **删除**]。
+1. 选择屏幕底部的&#x200B;[!UICONTROL **删除**]。
 
    此时将显示“删除位置”对话框。
 
@@ -110,9 +112,9 @@ ht-degree: 3%
 
    显示“位置帐户”选项卡的![导出窗口](assets/account-add.png)
 
-1. （视情况而定）如果您是系统管理员，则可以启用&#x200B;[!UICONTROL **查看所有用户的帐户**]&#x200B;选项以查看由您组织中的所有用户创建的位置。
+1. （视情况而定）如果您是系统管理员，则可以启用&#x200B;[!UICONTROL **查看所有用户的帐户**]&#x200B;选项以查看由您组织中的所有用户创建的帐户。
 
-1. 选择&#x200B;[!UICONTROL **查看要编辑的帐户的详细信息**]。
+1. 选择&#x200B;[!UICONTROL **编辑要编辑的帐户的详细信息**]。
 
 1. 进行任何所需的更改，然后选择&#x200B;[!UICONTROL **保存**]。
 
@@ -128,9 +130,9 @@ ht-degree: 3%
 
    显示“位置帐户”选项卡的![导出窗口](assets/account-add.png)
 
-1. （视情况而定）如果您是系统管理员，则可以启用&#x200B;[!UICONTROL **查看所有用户的帐户**]&#x200B;选项以查看由您组织中的所有用户创建的位置。
+1. （视情况而定）如果您是系统管理员，则可以启用&#x200B;[!UICONTROL **查看所有用户的帐户**]&#x200B;选项以查看由您组织中的所有用户创建的帐户。
 
-1. 选择要编辑的帐户上的3点图标，然后选择&#x200B;[!UICONTROL **帐户密钥**]。
+1. 选择要编辑的帐户上的3点图标，然后选择&#x200B;[!UICONTROL **显示密钥**]。
 
 ## 删除帐户
 
@@ -140,9 +142,9 @@ ht-degree: 3%
 
    显示“位置帐户”选项卡的![导出窗口](assets/account-add.png)
 
-1. （视情况而定）如果您是系统管理员，则可以启用&#x200B;[!UICONTROL **查看所有用户的帐户**]&#x200B;选项以查看由您组织中的所有用户创建的位置。
+1. （视情况而定）如果您是系统管理员，则可以启用&#x200B;[!UICONTROL **查看所有用户的帐户**]&#x200B;选项以查看由您组织中的所有用户创建的帐户。
 
-1. 选择要编辑的帐户上的3点图标，然后选择&#x200B;[!UICONTROL **删除帐户**]。
+1. 选择要删除的帐户上的3点图标，然后选择&#x200B;[!UICONTROL **删除帐户**]。
 
 1. 在确认对话框上再次选择&#x200B;[!UICONTROL **删除**]。
 
@@ -156,7 +158,7 @@ ht-degree: 3%
 
 默认情况下，组织中的所有用户都可以创建帐户并编辑他们在Customer Journey Analytics环境中创建的帐户，如[配置Cloud Export帐户](/help/components/exports/cloud-export-accounts.md)中所述。
 
-您可以限制用户创建帐户。 执行此操作时，用户仍可以使用他们已创建的任何帐户，但无法再编辑这些帐户。 您可以删除用户已创建的帐户，如[删除帐户](#delete-an-account)中所述。
+您可以限制用户创建帐户。 执行此操作时，用户仍可以使用他们已创建的任何帐户，但无法再编辑这些帐户。 您可以删除用户已创建的帐户，如[删除帐户](#delete-accounts)中所述。
 
 要限制所有用户创建和编辑帐户，请执行以下操作：
 
@@ -166,23 +168,23 @@ ht-degree: 3%
 
 1. 选择&#x200B;[!UICONTROL **保存**]。
 
-1. （可选）按照[删除帐户](#delete-an-account)中的说明，删除用户已创建但不再希望他们使用的任何帐户。
+1. （可选）按照[删除帐户](#delete-accounts)中的说明，删除用户已创建但不再希望他们使用的任何帐户。
 
 ### 配置用户是否可以创建和编辑位置
 
 默认情况下，组织中的所有用户都可以在Customer Journey Analytics环境中创建位置并编辑他们创建的位置，如[配置云导出位置](/help/components/exports/cloud-export-locations.md)中所述。
 
-您可以限制用户创建位置。 执行此操作时，用户仍可以使用他们已创建的任何位置，但无法再编辑这些位置。 您可以删除用户已创建的位置，如[删除位置](#delete-a-location)中所述。
+您可以限制用户创建位置。 执行此操作时，用户仍可以使用他们已创建的任何位置，但无法再编辑这些位置。 您可以删除用户已创建的位置，如[删除位置](#delete-locations)中所述。
 
 要限制所有用户创建和编辑位置，请执行以下操作：
 
-1. 在Customer Journey Analytics中，选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 报表]**，然后选择&#x200B;[!UICONTROL **管理员设置**]&#x200B;选项卡。
+1. 在Customer Journey Analytics中，选择&#x200B;**[!UICONTROL 组件]** > **[!UICONTROL 导出]**，然后选择&#x200B;[!UICONTROL **管理员设置**]&#x200B;选项卡。
 
 1. 在&#x200B;[!UICONTROL **位置**]&#x200B;部分中，取消选择选项&#x200B;[!UICONTROL **允许用户创建和管理位置**]。
 
 1. 选择&#x200B;[!UICONTROL **保存**]。
 
-1. （可选）按照[删除位置](#delete-a-location)中的说明，删除用户已创建但不再希望他们使用的任何位置。
+1. （可选）按照[删除位置](#delete-locations)中的说明，删除用户已创建但不再希望他们使用的任何位置。
 
 ### 限制用户可以创建和使用的帐户类型
 
@@ -207,7 +209,7 @@ ht-degree: 3%
 
 1. 找到计划限制的帐户类型的帐户，这些帐户正用于计划导出。
 
-1. 按照[删除帐户](#delete-an-account)中的说明删除帐户。
+1. 按照[删除帐户](#delete-accounts)中的说明删除帐户。
 
 1. 继续下面的部分，[限制用户可用的帐户类型](#limit-the-account-types-that-are-available-to-users)。
 
