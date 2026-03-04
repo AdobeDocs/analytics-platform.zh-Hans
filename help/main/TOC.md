@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 58d423e2d7d064bcc7d8011a5ecda236ef9b0677
+source-git-commit: 974d8a269be15d3ea6fbbcf96f2ab5457d9c9554
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1369'
 ht-degree: 99%
 
 ---
@@ -101,7 +101,7 @@ ht-degree: 99%
          + [使用通过 Adobe Journey Optimizer 个性化](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
    + 与 Adobe Analytics 进行比较 {#cja-aa-comparison}
       + [概述](../getting-started/aa-vs-cja/overview.md)
-      + [实用 Adobe Analytics 数据 &#x200B;](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+      + [实用 Adobe Analytics 数据 ](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [跨IMS数据映射](../getting-started/aa-vs-cja/mapping-data-ims-orgs.md)
       + [功能支持](../getting-started/aa-vs-cja/cja-aa.md)
       + [比较术语](../getting-started/aa-vs-cja/terminology.md)
@@ -145,6 +145,7 @@ ht-degree: 99%
       + [配置](/help/connections/audience-analysis/audience-analysis-configure.md)
       + [管理](/help/connections/audience-analysis/audience-analysis-manage.md)
       + [分析](/help/connections/audience-analysis/analyze-audiences.md)
+      + [用例](/help/connections/audience-analysis/audience-analysis-use-cases.md)
 + 数据视图  {#cja-dataviews}
    + [数据视图概述](../data-views/data-views.md)
    + [创建或编辑数据视图](../data-views/create-dataview.md)
@@ -233,7 +234,7 @@ ht-degree: 99%
       + 历程画布 {#journey-canvas}
          + [概述](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
          + [配置](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
-         + [疑难解答 &#x200B;](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
+         + [疑难解答 ](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
       + [面积（堆叠）](../analysis-workspace/visualizations/area.md)
       + [条形图（堆叠）](../analysis-workspace/visualizations/bar.md)
       + [项目符号](../analysis-workspace/visualizations/bullet-graph.md)
@@ -402,7 +403,7 @@ ht-degree: 99%
       + [概述](/help/components/c-intelligent-alerts/intelligent-alerts.md)
       + [创建警报](/help/components/c-intelligent-alerts/alert-builder.md)
       + [管理警报](/help/components/c-intelligent-alerts/alert-manager.md)
-      + [功能比较 &#x200B;](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
+      + [功能比较 ](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
       + [用例](/help/components/c-intelligent-alerts/alerts-use-cases.md)
    + 导出 {#exports}
       + [配置云导出帐户](/help/components/exports/cloud-export-accounts.md)

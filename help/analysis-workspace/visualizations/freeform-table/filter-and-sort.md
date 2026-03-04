@@ -4,7 +4,7 @@ title: 过滤和排序
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: 39af20da14a5fb96fe01db31af5fc37b7e4aee16
 workflow-type: tm+mt
 source-wordcount: '1575'
 ht-degree: 47%
@@ -148,8 +148,6 @@ Note: this option does not seem to work. AN-338422
    对列应用排序时，排序图标保持可见。 箭头指示数据的排序方式（升序为![排序](/help/assets/icons/SortOrderUp.svg)或降序为![排序](/help/assets/icons/SortOrderDown.svg)）。
 
 ### 按多列对表进行排序（高级排序）
-
-{{release-limited-testing-section}}
 
 #### 将排序应用于多个列
 

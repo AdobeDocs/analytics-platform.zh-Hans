@@ -4,7 +4,7 @@ description: 了解如何在自由格式表中包含多个维度
 feature: Visualizations
 role: User
 exl-id: 66ebb4fc-feb2-4fa7-a107-37508cca4748
-source-git-commit: 14718476695dcf121c94ba4cb8b2c39e5874342d
+source-git-commit: 39af20da14a5fb96fe01db31af5fc37b7e4aee16
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 6%
@@ -12,8 +12,6 @@ ht-degree: 6%
 ---
 
 # 在自由格式表中包含多个维度列
-
-{{release-limited-testing}}
 
 在自由格式表中最多可包含5个维度列，这样您可以并排查看多个维度项目。 每一行的维度项将作为一个拼接后的单一维度项进行处理。
 
