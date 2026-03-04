@@ -123,7 +123,7 @@ ht-degree: 7%
 >id="connection_stitchingmetrics_badids"
 >title="错误的ID"
 >abstract="错误ID是指严重影响报表数据的ID值。"
->additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-16444" text="错误的ID"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="错误的ID"
 
 
 要启用拼接，请在&#x200B;**[!UICONTROL 添加数据集]**&#x200B;或&#x200B;**[!UICONTROL 编辑数据集]**&#x200B;对话框的事件数据集部分中：
