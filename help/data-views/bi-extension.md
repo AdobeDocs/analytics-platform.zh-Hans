@@ -48,7 +48,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
 要使用非过期型凭据：
 
-1. 在Experience Platform[中创建](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#non-expiring-credentials)未过期的凭据。 如果要使用已存在的未过期的凭据，请确保这些凭据[已迁移到OAuth](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#migrate-credentials)。
+1. 在Experience Platform[中创建](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials#non-expiring-credentials)未过期的凭据。 如果要使用已存在的未过期的凭据，请确保这些凭据[已迁移到OAuth](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials#migrate-credentials)。
 
 1. 确保Customer Journey Analytics产品和产品配置文件具有未过期的凭据。 您必须是组织系统管理员才能执行以下步骤。
    1. 从&#x200B;**[!UICONTROL 应用程序]**&#x200B;中选择![Admin Console](/help/assets/icons/Apps.svg)。
