@@ -3,23 +3,24 @@ title: 当前 Customer Journey Analytics 发行说明
 description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 26b61e62c853c3ddb0dad9e1d710c839a49314e4
+source-git-commit: 3d58f4dccdc7b9ea6f936cc924a30cc06b2317d1
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 38%
+source-wordcount: '1255'
+ht-degree: 37%
 
 ---
 
 # 当前Customer Journey Analytics发行说明（2026年2月）
 
-**上次更新时间**：2026年2月12日
+**上次更新时间**：2026年3月5日
 
 这些发行说明涵盖2026年2月发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
 ## 新增功能或更新后的功能
 
 | 功能和描述 | [开始推出](releases.md) | [正式发布](releases.md) |
-| ----------- | ------- | ---- |
+| ----------- | -------: | ----:|
+| **其他Content Analytics缩略图和预览**<p>现在，条形图（栈叠）、水平条形图（栈叠）和散点可视化图表中支持Content Analytics缩略图和预览。 | 2026年3月5日 | 待定 |
 | **标题覆盖** <p>您可以在Content Analytics中指定标头名称和密码标头值。 此[标头覆盖配置](/help/content-analytics/config/guided.md#header-overrides)确保Content Analytics发送自定义HTTP标头以绕过任何已实施的机器人检测或关机流量技术。</p> |  | 2026年2月2 |
 | **合并来自多个IMS组织的报表包**<p>您可以使用Analytics Source Connector合并来自多个IMS组织的报告包。 此[跨IMS数据映射](/help/getting-started/aa-vs-cja/mapping-data-ims-orgs.md)功能允许组织拥有其客户数据的组合视图，即使该客户数据分布在多个IMS组织中也是如此。 <p>**注意：**&#x200B;此配置仅在向 Adobe 客户关怀团队提交请求后才可用。</p> |  | 2026年2月12日 |
 | **在自由格式表中包含多个维度列**<p>现在，您可以在自由格式表中最多包含 5 个维度列，从而并排查看多个维度项。每一行的维度项将作为一个拼接后的单一维度项进行处理。</p><p>您可以对包含多个维度列的自由格式表应用筛选、排序、细分等操作，以实现更深入、更定制化的分析。</p><p>此前，自由格式表中只能包含 1 个维度列。</p><p>有关详细信息，请参阅[在自由格式表中包含多个维度列](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md)。</p> | 2026 年 1 月 28 日 | 2026年3月4日 <p>（原计划于2026年2月18日）</p> |

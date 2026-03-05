@@ -1,63 +1,92 @@
 ---
-title: Content Analytics 报告
-description: 如何报告 Content Analytics
+title: Content Analytics报表
+description: 了解如何使用自由格式表、条形图和散点图等可视化图表报告Content Analytics。
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 93ef16462842a819c3b980d557abaaf0cd547b6c
 workflow-type: tm+mt
-source-wordcount: '1300'
-ht-degree: 100%
+source-wordcount: '1473'
+ht-degree: 77%
 
 ---
 
 # Content Analytics 报告概述
 
-您可以在 [Analysis Workspace](/help/analysis-workspace/home.md) 中报告 Content Analytics、执行分析并获得相关洞察。现在提供一个特定的 Workspace [模板](#template)，您可以立即访问一个预先填充了相关内容洞察的 Workspace 项目。
+您可以在[!DNL Content Analytics]Analysis Workspace[中报告、执行分析和了解](/help/analysis-workspace/home.md)。 现在提供一个特定的 Workspace [模板](#template)，您可以立即访问一个预先填充了相关内容洞察的 Workspace 项目。
 
-要从头开始报告 Content Analytics：
+要从头开始创建您自己的Content Analytics报表，请执行以下步骤：
 
 1. [在 Workspace 中创建一个新项目](/help/analysis-workspace/build-workspace-project/create-projects.md)或者[打开一个现有的](/help/analysis-workspace/build-workspace-project/open-projects.md)项目。
 1. 确保[为 Content Analytics 报告选择一个数据视图](/help/analysis-workspace/c-panels/panels.md#data-view)。Content Analytics 报告仅适用于那些[已配置](/help/content-analytics/config/configuration.md)给 Content Analytics 的数据视图。
 1. 将一个![表格](/help/assets/icons/Table.svg) [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)可视化图表拖到画布上。
 1. 使用[特定的 Content Analytics 组件](components.md)和其他通用[组件](/help/components/overview.md)（例如区段、日期范围、注释）来构建您的 Content Analytics 洞察。
+1. 使用其他[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)来增强您的项目。
+
 
 ## 缩略图
 
-根据您在项目中使用的 Content Analytics 特定维度，将显示资产和维度的缩略图。
+根据您在项目中使用的特定于Content Analytics的维度，缩略图会显示在以下可视化图表中：
+
+### 自由格式表
 
 ![Content Analytics 缩略图](../assets/aca-thumbnails.png)
 
-默认情况下，会显示相关 Content Analytics 维度的缩略图。如要配置 Content Analytics 维度的缩略图显示：
+默认情况下，缩略图显示在[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)中。 如要配置 Content Analytics 维度的缩略图显示：
 
 * 将鼠标悬停在 Content Analytics 维度的标题行上。例如，**[!UICONTROL 资产 ID]**&#x200B;或&#x200B;**[!UICONTROL 体验 ID]**。
 * 选择![设置](/help/assets/icons/Setting.svg)。
 * 在&#x200B;**[!UICONTROL 行设置]**&#x200B;弹出窗口中，在&#x200B;**[!UICONTROL 设置]**&#x200B;下方，勾选或取消勾选&#x200B;**[!UICONTROL 显示缩略图]**。
 
 
+### 条形图（栈叠）和水平条形图（栈叠）
+
+{{release-limited-testing-section}}
+
+![条形图的Content Analytics缩略图](/help/content-analytics/assets/aca-bar-thumbnail.png)
+
+
+缩略图在垂直轴或水平轴上显示为图例的一部分。 当您将鼠标悬停在[条形图（栈叠）](/help/analysis-workspace/visualizations/bar.md)和[水平条形图（栈叠）](/help/analysis-workspace/visualizations/horizontal-bar.md)中的条形图上时，也会显示缩略图。
+
+
+### 散点图
+
+{{release-limited-testing-section}}
+
+![散点图的Content Analytics缩略图](/help/content-analytics/assets/aca-scatter-thumbnail.png)
+
+将鼠标悬停在[散点图](/help/analysis-workspace/visualizations/scatterplot.md)中的数据点上时，将显示缩略图。
+
 ## 预览
 
-对于显示缩略图的 Content Analytics 维度的行，您可以打开一个预览弹出窗口。
+>[!AVAILABILITY]
+>
+>本节中介绍的条形图和散点图可视化图表功能处于此发行版的“有限测试”阶段，可能尚未在环境中可用。 当该功能正式发布时，将删除此说明。有关 Customer Journey Analytics 发布流程的信息，请参阅 [Customer Journey Analytics 功能版本](/help/release-notes/releases.md)。
+>
 
-如要打开包含以下详细信息的预览：
+您可以打开预览弹出窗口。 操作方法：
 
-* 选择 ![InfoOutline](/help/assets/icons/InfoOutline.svg)。会显示以下详细信息。
+* 在![自由格式表](/help/assets/icons/InfoOutline.svg)中选择[信息大纲](#freeform-table)。
+* 在[条形图](#bar-and-horizontal-bar)或[水平条形图](#bar-and-horizontal-bar)可视化图中选择特定条形图，或者在[散点图](#scatter)可视化图表中选择数据点。
 
-  | 体验预览 | 资产预览 |
-  |---|---|
-  | ![Content Analytics 体验预览](../assets/aca-experience-preview.png) | ![Content Analytics 资产预览](../assets/aca-asset-preview.png) |
-  | 维度的名称（例如，**[!UICONTROL 体验 ID]）** | 资产维度的名称（例如，**[!UICONTROL 资产 ID]）** |
-  | **[!UICONTROL 展示次数（所有时间）]**：体验的展示次数。 | **[!UICONTROL 展示次数（所有时间）]**：资产的展示次数。 |
-  | **[!UICONTROL 资产]**：此体验包含的资产数量。<br/>选择![细分](/help/assets/icons/Breakdown.svg) **[!UICONTROL 细分]**&#x200B;以检查资产。 | **[!UICONTROL 体验]**：显示此资产的体验数量。<br/>选择![细分](/help/assets/icons/Breakdown.svg) **[!UICONTROL 细分]**&#x200B;以检查资产。 |
-  | **[!UICONTROL 第一印象]**：体验的第一印象的日期。 | **[!UICONTROL 第一印象]**：资产的第一印象的日期。 |
-  | **[!UICONTROL 最近的印象]**：体验的最近印象的日期。 | **[!UICONTROL 最近的印象]**：资产的最近印象的日期。 |
-  | **[!UICONTROL 体验属性]**：体验的[属性](/help/content-analytics/report/components.md#experience-attributes)。 | **[!UICONTROL 资产属性]**：资产的[属性](/help/content-analytics/report/components.md#asset-attributes)。 |
+
+会显示以下详细信息。
+
+| 体验预览 | 资产预览 |
+|---|---|
+| ![Content Analytics 体验预览](../assets/aca-experience-preview.png) | ![Content Analytics 资产预览](../assets/aca-asset-preview.png) |
+| 维度的名称（例如，**[!UICONTROL 体验 ID]）** | 资产维度的名称（例如，**[!UICONTROL 资产 ID]）** |
+| **[!UICONTROL 展示次数（所有时间）]**：体验的展示次数。 | **[!UICONTROL 展示次数（所有时间）]**：资产的展示次数。 |
+| **[!UICONTROL 资产]**：此体验包含的资产数量。<br/>选择![细分](/help/assets/icons/Breakdown.svg) **[!UICONTROL 细分]**&#x200B;以检查资产。 | **[!UICONTROL 体验]**：显示此资产的体验数量。<br/>选择![细分](/help/assets/icons/Breakdown.svg) **[!UICONTROL 细分]**&#x200B;以检查资产。 |
+| **[!UICONTROL 第一印象]**：体验的第一印象的日期。 | **[!UICONTROL 第一印象]**：资产的第一印象的日期。 |
+| **[!UICONTROL 最近展示]**：体验最近展示的日期。 | **[!UICONTROL 最近的印象]**：资产的最近印象的日期。 |
+| **[!UICONTROL 体验属性]**：体验的[属性](/help/content-analytics/report/components.md#experience-attributes)。 | **[!UICONTROL 资产属性]**：资产的[属性](/help/content-analytics/report/components.md#asset-attributes)。 |
 
 
 ## 模板
 
-现在提供一个 Content Analytics [模板](/help/analysis-workspace/templates/use-templates.md)，帮助您了解哪些内容和内容属性的效果最佳。该模板是[网页渠道和参与度用例](/help/analysis-workspace/templates/use-templates.md#web-engagement)的一部分，详细说明了您的内容在粒度级别上的表现。您可以查看单个资产或特定属性的表现。
+Content Analytics [模板](/help/analysis-workspace/templates/use-templates.md)可帮助您了解哪些内容和内容属性的表现最佳。 该模板是[网页渠道和参与度用例](/help/analysis-workspace/templates/use-templates.md#web-engagement)的一部分，详细说明了您的内容在粒度级别上的表现。您可以查看单个资产或特定属性的表现。
 
 根据您获得的见解，您可能可以做很多事情。例如在主页上推广表现优异的资产，为特定区段提供个性化内容以包含表现优异的属性，或者轮换掉已经开始过时的内容。
 
@@ -81,12 +110,12 @@ ht-degree: 100%
 
      >[!NOTE]
      >
-     >只有在您的 Content Analytics 配置中[包含了体验](/help/content-analytics/config/guided.md#experience-capture-and-definition)的情况下才会显示这些可视化图表。
+     >仅当您将配置配置为在Content Analytics配置中[包含体验](/help/content-analytics/config/guided.md#experience-capture-and-definition)时，这些可视化才会显示在您的模板中。
      > 
 
-      * **体验点进率**：一个展示体验点进率的[摘要变化](/help/analysis-workspace/visualizations/summary-number-change.md)可视化图表。
+      * **体验CTR**：显示Experience CTR的[摘要更改](/help/analysis-workspace/visualizations/summary-number-change.md)可视化图表。
       * **最佳转化体验**：展示基于所选转化量度的最佳转化体验的[水平条形图](/help/analysis-workspace/visualizations/horizontal-bar.md)可视化图表。
-      * **最佳表现体验**：一个展示最佳表现体验的[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)（包括[缩略图](#thumbnails)和[预览](#previews)）。
+      * **表现最佳的体验**：表现最佳的体验的[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)（包括[缩略图](#thumbnails)和[预览](#previews)）。
 
    * **资产**
 
@@ -100,7 +129,7 @@ ht-degree: 100%
 [散点图](/help/analysis-workspace/visualizations/scatterplot.md)可视化图表显示了资产浏览与资产转化的散点图。
 
 * **哪些资产属性有助于转化？**
-Content Analytics 使用 AI 和生成式 AI 自动分配每个资产元数据，例如主题、场景、前景颜色等。属性是 AI 分配的描述资产或体验内容的元数据标记。例如：<code>foreground color: red</code> 是一个自动分配的属性。可视化图表可以帮助您确定资产的哪些属性对转化的贡献最大。
+Content Analytics使用AI和GenAI自动分配每个资源[元数据](/help/content-analytics/report/components.md#asset-metadata)和[属性](/help/content-analytics/report/components.md#asset-attributes)，如主题、场景、前景色等。 属性是 AI 分配的描述资产或体验内容的元数据标记。例如：<code>foreground color: red</code> 是一个自动分配的属性。可视化图表可以帮助您确定资产的哪些属性对转化的贡献最大。
 
   面板由以下可视化图表组成：
 
@@ -138,7 +167,7 @@ Content Analytics 使用 AI 和生成式 AI 自动分配每个资产元数据，
 展示基于所选转化量度的最佳体验关键词的[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)。
 
 * **资产出现在我的网站上的什么位置？**
-由一个自由格式表组成的面板详细说明了您网站上浏览次数最多的资产出现在哪里。
+一个面板，包括一个自由格式表，该表详细介绍了网站上查看次数最多的资源的显示位置。 此分析可帮助您了解哪些页面或部分从性能最佳的资产中获得最大好处以及在何处优化投放。
 
   该面板由一个可视化图表组成：
 
