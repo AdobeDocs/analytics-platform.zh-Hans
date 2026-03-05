@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+source-git-commit: 79b3ca663af6c383eed7ec81e9c430855669d19b
 workflow-type: tm+mt
-source-wordcount: '3249'
-ht-degree: 95%
+source-wordcount: '3462'
+ht-degree: 89%
 
 ---
 
@@ -48,8 +48,31 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
 要使用非过期型凭据：
 
-* 在Experience Platform[中创建](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/bi-extension#non-expiring-credentials)未过期的凭据。
-* 按照[过期凭据](#Expiring-credentials)中所述的步骤授予访问未过期凭据的权限。
+1. 在Experience Platform[中创建](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#non-expiring-credentials)未过期的凭据。 如果要使用已存在的未过期的凭据，请确保这些凭据[已迁移到OAuth](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#migrate-credentials)。
+
+1. 确保Customer Journey Analytics产品和产品配置文件具有未过期的凭据。 您必须是组织系统管理员才能执行以下步骤。
+   1. 从&#x200B;**[!UICONTROL 应用程序]**&#x200B;中选择![Admin Console](/help/assets/icons/Apps.svg)。
+   1. 确认已将未过期的凭据添加到API凭据列表中。
+      1. 从顶部菜单中选择&#x200B;**[!UICONTROL 用户]**。
+      1. 从左边栏中选择&#x200B;**[!UICONTROL API凭据]**。
+      1. 新的或迁移的不过期凭据应列出，并以&#x200B;**[!UICONTROL EQS-...]**&#x200B;开头。
+
+      1. 确保未过期的API凭据有权访问Customer Journey Analytics产品和配置文件。
+
+         1. 为![EQS-...](/help/assets/icons/ProductDetails.svg)未过期的API凭据选择&#x200B;**[!UICONTROL 产品详细信息]**。
+         1. 从&#x200B;**[!UICONTROL EQS-...]**&#x200B;产品详细信息窗格中，选择![更多](/help/assets/icons/More.svg)并选择&#x200B;**[!UICONTROL 编辑API凭据]**。
+         1. 在&#x200B;**[!UICONTROL 编辑API凭据]**&#x200B;对话框中，验证&#x200B;**[!UICONTROL 分配的配置文件]**。 如果未列出任何Customer Journey Analytics产品：
+            1. 选择![添加](/help/assets/icons/Add.svg)并选择&#x200B;**[!UICONTROL Customer Journey Analytics]**。
+            1. 选择一个或多个产品配置文件，这些配置文件包含您要为查询服务和BI扩展提供访问权限的用户。
+            1. 选择&#x200B;**[!UICONTROL 应用]**。
+
+1. 验证您是否在Experience Platform查询服务中看到不会过期的API凭据。
+
+   1. 从&#x200B;**[!UICONTROL 应用程序]**&#x200B;中选择![Experience Platform](/help/assets/icons/Apps.svg)。
+   1. 从左边栏中选择&#x200B;**[!UICONTROL 查询]**。
+   1. 从顶部菜单中选择&#x200B;**[!UICONTROL 凭据]**。
+   1. 您应使用在步骤1中提供的名称，在&#x200B;**[!UICONTROL 未过期的凭据]**&#x200B;列表中看到未过期的API凭据。
+
 
 请参阅 [Customer Journey 访问控制](../technotes/access-control.md)，以了解更多信息，特别是[产品管理员附加权限](../technotes/access-control.md#product-admin-additional-permissions)和 [Admin Console 中的 Customer Journey Analytics 权限](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console)。
 
@@ -87,7 +110,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    1. 从`cja`数据库&#x200B;**[!UICONTROL 下拉菜单的数据库列表中选择沙盒的]**&#x200B;数据库。 例如：`prod:cja`。
 
-   1. 若要复制命令字符串，请使用 **[!UICONTROL **&#x200B; PSQL 命令&#x200B;**]**&#x200B;部分中的![复制](assets/Smock_Copy_18_N.svg)。
+   1. 若要复制命令字符串，请使用 **[!UICONTROL ** PSQL 命令&#x200B;**]**&#x200B;部分中的![复制](assets/Smock_Copy_18_N.svg)。
 
 1. 打开命令或终端窗口。
 
@@ -120,9 +143,9 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    1. 选择左边栏中的&#x200B;**[!UICONTROL 更多...]**。
 
-   1. 在&#x200B;**获取数据**&#x200B;屏幕中，搜索 `PostgresSQL`，并从列表中选择 **[!UICONTROL **&#x200B; PostgresSQL 数据库&#x200B;**]**。
+   1. 在&#x200B;**获取数据**&#x200B;屏幕中，搜索 `PostgresSQL`，并从列表中选择 **[!UICONTROL ** PostgresSQL 数据库&#x200B;**]**。
 
-   1. 在 **[!UICONTROL **&#x200B; PostgressSQL 数据库&#x200B;**]**&#x200B;对话框中：
+   1. 在 **[!UICONTROL ** PostgressSQL 数据库&#x200B;**]**&#x200B;对话框中：
 
       1. 将 Experience Platform 查询[!UICONTROL 凭据]中的&#x200B;**[!UICONTROL **&#x200B;主机&#x200B;**]**&#x200B;参数粘贴到&#x200B;**[!UICONTROL **&#x200B;服务器&#x200B;**]**&#x200B;文本字段中。
 
@@ -161,7 +184,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    1. 从左边栏中的&#x200B;**[!UICONTROL **&#x200B;至服务器&#x200B;**]**&#x200B;中选择&#x200B;**[!UICONTROL **&#x200B;更多&#x200B;**]**。
 
-   1. 从列表中选择 **[!UICONTROL **&#x200B; PostgresSQL &#x200B;**]**。
+   1. 从列表中选择 **[!UICONTROL ** PostgresSQL **]**。
 
    1. 在 [!UICONTROL PostgresSQL] 对话框中：
 
