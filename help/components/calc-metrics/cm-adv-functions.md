@@ -4,10 +4,10 @@ description: 了解高级计算量度函数的相关内容。
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: a5e07891b23184dfe5d4c3f1b2c4b36b6884fb72
+source-git-commit: 76b4ac60c8e3ae2dd62f86a35bdf1c582f60b10f
 workflow-type: tm+mt
-source-wordcount: '5294'
-ht-degree: 98%
+source-wordcount: '5286'
+ht-degree: 97%
 
 ---
 
@@ -433,14 +433,14 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-exp"
 >title="指数回归：相关系数"
->abstract="指数回归：Y = a exp(X) + b。返回相关系数。"
+>abstract="指数回归：Y = b * exp(aX)。 返回相关系数。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE 表]{type="Neutral"} 指数回归：Y = a exp(X) + b。返回相关系数。
+[!BADGE 表]{type="Neutral"}指数回归：Y = b * exp(aX)。 返回相关系数。
 
 
 | 参数 | 描述 |
@@ -456,14 +456,14 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-exp"
 >title="指数回归：预测的 Y"
->abstract="指数回归：Y = a exp(X) + b。返回 Y。"
+>abstract="指数回归：Y = b * exp(aX)。 返回 Y。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE 行]{type="Neutral"} 指数回归：Y = a exp(X) + b。返回 Y。
+[!BADGE 行]{type="Neutral"}指数回归：Y = b * exp(aX)。 返回 Y。
 
 
 | 参数 | 描述 |
@@ -480,14 +480,14 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-exp"
 >title="指数回归：截距"
->abstract="指数回归：Y = a exp(X) + b。返回 b。"
+>abstract="指数回归：Y = b * exp(aX)。 返回 b。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE 表]{type="Neutral"} 指数回归：Y = a exp(X) + b。返回 b。
+[!BADGE 表]{type="Neutral"}指数回归：Y = b * exp(aX)。 返回 b。
 
 | 参数 | 描述 |
 |---|---|
@@ -503,14 +503,14 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-exp"
 >title="指数回归：斜率"
->abstract="指数回归：Y = a exp(X) + b。返回 a。"
+>abstract="指数回归：Y = b * exp(aX)。 返回 a。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE 表]{type="Neutral"} 指数回归：Y = a exp(X) + b。返回 a。
+[!BADGE 表]{type="Neutral"}指数回归：Y = b * exp(aX)。 返回 a。
 
 
 | 参数 | 描述 |
