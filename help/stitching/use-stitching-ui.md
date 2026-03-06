@@ -1,14 +1,14 @@
 ---
 title: 启用拼合
-description: 了解如何在连接UI中启用拼合。
+description: 在Customer Journey Analytics中为事件数据集启用身份拼接。 了解如何在连接UI中配置永久ID、人员ID和重播窗口以拼合数据。
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: 1744d625f2f18202fb7096b0fd904ee26399db34
+source-git-commit: b7b2a1f3eb1c149caf65ab3e4321e4f4347695cc
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 7%
+source-wordcount: '1724'
+ht-degree: 5%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 7%
 
 
    * **人员 ID**
-      * 对于基于图形的拼接，请确保身份图形包含一些片段，这些片段关联来自您选择的永久ID命名空间和人员ID命名空间的ID值。 您可以通过转到[Experience Platform身份图形查看器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"}运行测试，并通过一些测试持久ID值查询该图形。 验证这些永久ID值是否与图表中的人员ID值相关联。
+      * 对于基于图形的拼接，请确保身份图形包含一些片段，这些片段关联来自您选择的永久ID命名空间和人员ID命名空间的ID值。 您可以通过转到[Experience Platform身份图形查看器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"}运行测试，并通过一些示例永久ID值查询该图形。 验证这些永久ID值是否与图表中的人员ID值相关联。
       * 对于基于字段的拼合，请查询7天的数据，其中人员ID字段不为null，然后除以针对数据集中所有事件的7天数据查询。 理想情况下，该百分比应高于5%。
 
         可用于验证的查询示例：
@@ -87,6 +87,8 @@ ht-degree: 7%
 
 ## 启用身份标识拼接 {#enable-identity-stitching}
 
+当您[添加](/help/connections/create-connection.md#add-datasets)或[编辑](/help/connections/create-connection.md#edit-a-dataset)基于人员的连接中的事件数据集时，可以启用身份拼接。 身份拼接不适用于基于帐户的连接。
+
 >[!CONTEXTUALHELP]
 >id="connection_changeto_identitygraph"
 >title="身份标识图的更改"
@@ -101,7 +103,7 @@ ht-degree: 7%
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
 >title="拼接量度"
->abstract="拼接量度是使用一组示例数据从过去7天内摄取的任何数据计算的。<br>这通常与&#x200B;**[!UICONTROL 预览]**&#x200B;表中使用的示例数据不同。"
+>abstract="拼接量度是使用一组示例数据从过去7天内摄取的任何数据计算的。<br>此样本数据集通常与&#x200B;**[!UICONTROL 预览]**&#x200B;表中使用的样本数据不同。"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_gbs_personidcoverage"
@@ -121,12 +123,14 @@ ht-degree: 7%
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_badids"
->title="错误的ID"
+>title="错误 ID"
 >abstract="错误ID是指严重影响报表数据的ID值。"
->additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-16444" text="错误的ID"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="错误 ID"
 
 
-要启用拼接，请在&#x200B;**[!UICONTROL 添加数据集]**&#x200B;或&#x200B;**[!UICONTROL 编辑数据集]**&#x200B;对话框的事件数据集部分中：
+### 数据集设置
+
+若要启用拼接，请在&#x200B;**[!UICONTROL 添加数据集]**&#x200B;或&#x200B;**[!UICONTROL 编辑数据集]**&#x200B;对话框的事件数据集&#x200B;**[!UICONTROL 数据集设置]**&#x200B;部分中：
 
 启用身份拼接时![身份拼接选项](assets/identity-stitching-ui.png)
 
@@ -158,14 +162,70 @@ ht-degree: 7%
    >确保您有权使用身份图。
    >
 
-   在此之前，将显示&#x200B;**[!UICONTROL 更改为身份图]**&#x200B;对话框，以确保您在使用身份图进行拼合之前，已完成为数据集设置身份图以作为基于[图形的先决条件](/help/stitching/gbs.md#prerequisites)的一部分。 选择&#x200B;**[!UICONTROL 继续]**&#x200B;以继续。
+   在此之前，将显示&#x200B;**[!UICONTROL 更改为身份图]**&#x200B;对话框，以确保您已经为数据集完成身份图的设置。 此安装程序是[基于图表的先决条件](/help/stitching/gbs.md#prerequisites)的一部分，之后才能使用标识图进行拼合。 选择&#x200B;**[!UICONTROL 继续]**&#x200B;以继续。
 
    * 从&#x200B;**[!UICONTROL 命名空间]**&#x200B;下拉菜单中选择一个命名空间。
 
-
 1. 从&#x200B;**[!UICONTROL 重播窗口]**&#x200B;下拉菜单中选择一个重播窗口。 可用选项取决于您有权访问的Customer Journey Analytics包。
 
-保存连接后，当开始为这些数据集摄取数据时，会触发启用拼合功能的数据集拼合过程。
+1. 选择&#x200B;**[!UICONTROL 下一步]**&#x200B;查看要拼合的事件数据集预览。
+
+
+### 数据集预览
+
+在标准&#x200B;**[!UICONTROL 数据集预览]**&#x200B;界面之上，当[添加](/help/connections/create-connection.md#add-datasets)或[编辑](/help/connections/create-connection.md#edit-a-dataset)数据集到基于人员的连接中时，可以使用两个其他的信息面板。
+
+>[!NOTE]
+>对于已在AWS上部署Customer Journey Analytics的客户，此功能正在等待发布。
+>
+
+启用身份拼接时![身份拼接选项](assets/identity-stitching-ui-preview.png)
+
+#### 拼接量度
+
+
+
+**[!UICONTROL 正在使用样本数据集从过去7天摄取的任何数据中计算拼合量度]**。 此样本数据集通常不同于&#x200B;**[!UICONTROL 预览]**&#x200B;表中使用的样本数据。 拼接量度提供以下内容的详细信息：
+
+* **[!UICONTROL 人员ID覆盖率]**：拼接过程中用于标识的选定人员ID覆盖率（实时和重播）。
+   * 为了获得基于字段的最佳拼接结果，应在每个永久ID（设备信息）的至少一个事件中发送个人ID（用户信息）。
+   * 为了获得最佳的基于图形的拼接结果，每个永久ID的身份图中应存在一个（永久ID、人员ID）关系。
+
+  人员ID覆盖范围显示为百分比，并与在稳定开发或生产设置中推荐的内容进行比较。 此覆盖值越高，使用选定的人员ID获得的拼接结果就越好。
+
+* **[!UICONTROL 持久ID覆盖率]**：此值用于在拼接过程（实时和重放）中标识，以防检测到人员ID值。 不含永久ID和人员ID的事件将从数据中删除。 为获得最佳的拼接结果，所有事件上都应存在永久ID。
+
+  持久ID覆盖范围以百分比显示，并与稳定开发或生产设置的最低建议数量进行比较。
+
+
+#### 错误 ID
+
+>[!INFO]
+>
+>在Customer Journey Analytics界面中，错误ID也称为BAVID。
+> 
+
+在Customer Journey Analytics中，错误ID是一个标识符：
+
+* 具有特定ID值，该值来自启用拼接的数据集中的永久ID或人员ID字段，**和**
+* 在一个月内处理连接数据中的超过100万(1,000,000)个事件。
+
+当某个ID值被标记为错误ID时，任何包含该ID值的未来事件都将从连接数据中舍弃，并且不会在报表中显示。
+
+错误ID用例示例：
+
+* 人员ID字段中有自定义值或占位符值（例如，`undefined`）。 此类值还会影响[拼接和报告数据质量](/help/stitching/faq.md#undefined-person-id-values)。
+* 在基于字段的拼合配置中，如果多人共享一台设备，则用户之间的转换总数超过50,000。 在这种情况下，拼接过程将停止为该设备使用人员ID信息，而仅使用永久性ID信息。 因此，来自该设备的所有数据集事件都将被发送到具有永久ID身份的连接数据中，这极有可能导致“ID错误”情况。
+
+
+>[!NOTE]
+>**[!UICONTROL 拼合量度]**（包括&#x200B;**[!UICONTROL 错误的ID]**）是根据有限的数据集计算的。 要识别计划用于拼接的数据集存在错误ID，请参阅[错误ID技术说明](/help/technotes/badids.md)。
+>
+
+
+### 保存
+
+保存连接后，一旦开始为这些数据集摄取数据，就会启动用于拼合已启用数据集的拼合过程。
 
 >[!CAUTION]
 >
