@@ -3,9 +3,9 @@ title: 当前 Customer Journey Analytics 发行说明
 description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: fd8c539ae3bb0efc30a7fde7ff8d13a866263a91
+source-git-commit: 8e64a4aea82562a48bab8556739087e89f99781c
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1293'
 ht-degree: 36%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 36%
 
 | 功能和描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | ----------- | -------: | ----:|
-| **数据集在连接中预览重新设计**<p>在基于人员的连接中[添加](/help/connections/create-connection.md#add-datasets)或[编辑](/help/connections/create-connection.md#edit-a-dataset)数据集时，预览数据的体验会得到改进。 对于拼接启用的数据集，有额外的[拼接量度](/help/stitching/use-stitching-ui.md#stitching-metrics)和[错误的ID](/help/stitching/use-stitching-ui.md#bad-ids)可用。 | 2026年3月6日 | 2026年3月6日 |
+| **数据集在连接中预览重新设计**<p>在基于人员的连接中[添加](/help/connections/create-connection.md#add-datasets)或[编辑](/help/connections/create-connection.md#edit-a-dataset)数据集时，预览数据的体验会得到改进。 对于拼接启用的数据集，有其他[拼接量度](/help/stitching/use-stitching-ui.md#stitching-metrics)和[有关错误ID](/help/stitching/use-stitching-ui.md#bad-ids)的信息可用。 | 2026年3月6日 | 2026年3月6日 |
 | **其他Content Analytics缩略图和预览**<p>现在，条形图（栈叠）、水平条形图（栈叠）和散点可视化图表中支持Content Analytics缩略图和预览。 | 2026年3月5日 | 待定 |
 | **标题覆盖** <p>您可以在Content Analytics中指定标头名称和密码标头值。 此[标头覆盖配置](/help/content-analytics/config/guided.md#header-overrides)确保Content Analytics发送自定义HTTP标头以绕过任何已实施的机器人检测或关机流量技术。</p> |  | 2026年2月2 |
 | **合并来自多个IMS组织的报表包**<p>您可以使用Analytics Source Connector合并来自多个IMS组织的报告包。 此[跨IMS数据映射](/help/getting-started/aa-vs-cja/mapping-data-ims-orgs.md)功能允许组织拥有其客户数据的组合视图，即使该客户数据分布在多个IMS组织中也是如此。 <p>**注意：**&#x200B;此配置仅在向 Adobe 客户关怀团队提交请求后才可用。</p> |  | 2026年2月12日 |
