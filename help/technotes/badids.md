@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->错误ID在Customer Journey Analytics界面中也称为BAVID（源自[Analytics BAVID](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444)）。
+>错误ID在Customer Journey Analytics界面中也称为BAVID（源自[Analytics BAVID](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-16444)）。
 >
 
 ## 定义
