@@ -4,10 +4,10 @@ description: 将Adobe Target与Customer Journey Analytics集成
 feature: Experience Platform Integration
 role: User
 exl-id: 0b52af5b-b65c-4929-9ca3-547a640936f3
-source-git-commit: 979564d0249abadd454ce43aba9aeae2c78a44f0
+source-git-commit: 81e08ecb593b6ba789c479d0e648cbe7ba0a82d6
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 41%
+source-wordcount: '386'
+ht-degree: 40%
 
 ---
 
@@ -25,7 +25,9 @@ Customer Journey Analytics中的Target报表功能允许您直接在Customer Jou
 
 ## 注释和注意事项
 
-将Target分类事件数据集添加到CJA连接后，在将这些组件添加为维度后，将在CJA数据视图中进行一些细微调整，包括：
+Target活动必须[使用Customer Journey Analytics作为报表源](https://experienceleague.adobe.com/zh-hans/docs/target/using/integrate/cja/target-reporting-in-cja)。
+
+将目标分类事件数据集添加到连接后，将这些组件添加为维度后，将在数据视图中进行一些细微调整，包括：
 
 * 设置持久性类似于在Target中跟踪持久性的方式（请与Target顾问或客户确认以确保设置正确）。
 

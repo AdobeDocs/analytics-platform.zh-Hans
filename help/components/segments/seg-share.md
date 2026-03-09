@@ -4,10 +4,10 @@ title: 共享区段
 feature: Filters, Segments
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: 81e08ecb593b6ba789c479d0e648cbe7ba0a82d6
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 6%
+source-wordcount: '320'
+ht-degree: 5%
 
 ---
 
@@ -31,6 +31,8 @@ ht-degree: 6%
    1. 从&#x200B;**[!UICONTROL 组织]**&#x200B;或&#x200B;**[!UICONTROL 组]**&#x200B;部分中选择一个或多个选项，或者搜索并选择一个或多个个人。 可用的选项取决于您的角色。
 
    1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以共享区段。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;即可取消。
+
+如果您有权限访问共享区段，则可以在项目中使用它们，或作为数据视图[的](/help/data-views/session-settings.md)设置的一部分使用它们。
 
 ## 最佳实践
 

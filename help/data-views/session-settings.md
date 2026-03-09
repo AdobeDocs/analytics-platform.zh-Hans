@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+source-git-commit: 81e08ecb593b6ba789c479d0e648cbe7ba0a82d6
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 82%
+source-wordcount: '532'
+ht-degree: 65%
 
 ---
 
@@ -34,9 +34,9 @@ ht-degree: 82%
 
 1. 在 Customer Journey Analytics UI 的主导航中选择&#x200B;**[!UICONTROL 数据视图]**，也可以从&#x200B;**[!UICONTROL 数据管理]**&#x200B;中选择。
 
-2. 创建新的或编辑现有的数据视图。有关更多信息，请参阅[创建或编辑数据视图](create-dataview.md)。
+1. 创建新的或编辑现有的数据视图。有关更多信息，请参阅[创建或编辑数据视图](create-dataview.md)。
 
-3. 选择&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡。在[!UICONTROL 会话设置]下：
+1. 选择&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡。在[!UICONTROL 会话设置]下：
 
    1. 输入&#x200B;**[!UICONTROL 会话超时]**&#x200B;的值（以[!UICONTROL 分钟]、[!UICONTROL 小时]、[!UICONTROL 天]或[!UICONTROL 周]为单位）。会话超时可确定在开始新会话之前，会话可处于空闲状态（无事件发生）的时长。
 
@@ -44,8 +44,11 @@ ht-degree: 82%
 
       如果您要整合在线和离线数据，并要分析已购买您的一种或多种产品的客户是否在其购买后的前三个月内致电过您的联络中心，请使用较长的会话超时（例如 3 个月）。
 
+   1. 如果要对数据视图进行分段，请从&#x200B;**[!UICONTROL 添加区段]**&#x200B;下拉菜单中选择一个区段。 或者，您也可以将区段从左窗格中的![分段](/help/assets/icons/Segmentation.svg) **[!UICONTROL 区段]**&#x200B;拖放到&#x200B;**[!UICONTROL _在此处放置区段_]**。
 
-   2. 从&#x200B;**[!UICONTROL 使用量度发起新会话]**&#x200B;下的&#x200B;**[!UICONTROL 在此放置量度]**&#x200B;列表中选择量度。或者，还可将量度从左窗格拖放到&#x200B;**[!UICONTROL 放置量度字段]**&#x200B;上。所选量度定义新会话的开始。您可以定义多个量度。
+      仅列出共享的、您有权访问的、可根据您为数据视图定义的组件进行评估的区段。
+
+   1. 从&#x200B;**[!UICONTROL 使用量度开始新会话]**&#x200B;下拉菜单中选择量度。 或者，您也可以从![Event](/help/assets/icons/Event.svg) **[!UICONTROL Metrics]**&#x200B;将量度拖放到&#x200B;**[!UICONTROL _在此处放置量度_]**&#x200B;的左窗格中。 所选量度定义新会话的开始。您可以定义多个量度。
 
       可使用任何类型的量度定义新会话。举个例子，假设您希望在每次轮廓启动您的移动应用程序时定义一个新会话。在&#x200B;**[!UICONTROL 数据视图]** > **[!UICONTROL 组件]**&#x200B;中，您根据&#x200B;**[!UICONTROL appInteraction]** **[!UICONTROL Name]**&#x200B;架构字段定义了一个名为&#x200B;**[!UICONTROL Launch]**&#x200B;的量度类型的组件。 您可以进一步指定&#x200B;**[!UICONTROL Launch]**&#x200B;量度组件，以便仅在值与`launch`匹配时计算该值。
 
@@ -57,4 +60,4 @@ ht-degree: 82%
 
 
 
-4. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;或&#x200B;**[!UICONTROL 保存并完成]**&#x200B;以保存会话设置定义。
+1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;或&#x200B;**[!UICONTROL 保存并完成]**&#x200B;以保存会话设置定义。

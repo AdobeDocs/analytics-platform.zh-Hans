@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: e51dced9ac7886ae8d087ca3b2fc6ac2755c3ac6
-workflow-type: ht
-source-wordcount: '1551'
-ht-degree: 100%
+source-git-commit: 81e08ecb593b6ba789c479d0e648cbe7ba0a82d6
+workflow-type: tm+mt
+source-wordcount: '1554'
+ht-degree: 96%
 
 ---
 
@@ -120,10 +120,9 @@ ht-degree: 100%
 | 类别 | 权限 | 描述 |
 | --- | --- | ---|
 | [!UICONTROL 数据视图] | *数据视图名称* | 如果您将&#x200B;**[!UICONTROL 自动包含]**&#x200B;切换到&#x200B;**[!UICONTROL 开启]**，则属于此产品配置文件的用户可以查看所有现有和新创建的数据视图。如果此设置被设置为&#x200B;**[!UICONTROL 关闭]**，则可以选择用户有权访问的特定数据视图。 |
-| [!UICONTROL 报告工具] | [!UICONTROL Analysis Workspace 访问权限] | 允许用户访问 [Analysis Workspace](/help/analysis-workspace/home.md)。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 引导式分析访问权限] | 允许用户访问[引导分析](/help/guided-analysis/overview.md)。 |
-| [!UICONTROL 报告工具] | [!UICONTROL 计算量度创建] | 允许用户创建[计算量度](/help/components/calc-metrics/calc-metr-overview.md)。用户只能标记、共享、删除、重命名、批准和取消批准自己创建的计算量度或与他们共享的计算量度。 |
-| [!UICONTROL 报告工具] | [!UICONTROL 区段创建] | 允许用户创建[区段](/help/components/segments/seg-overview.md)。用户只能标记、共享、删除、重命名、批准和取消批准自己创建的区段或与他们共享的区段。 |
+| [!UICONTROL 报告工具] | [!UICONTROL 计算量度创建] | 允许用户创建[计算量度](/help/components/calc-metrics/calc-metr-overview.md)。用户只能标记、共享、删除和重命名他们创建的计算指标或与他们共享的计算指标。 |
+| [!UICONTROL 报告工具] | [!UICONTROL 区段创建] | 允许用户创建[区段](/help/components/segments/seg-overview.md)。用户只能标记、共享、删除和重命名他们创建的区段或与他们共享的区段。 |
 | [!UICONTROL 报告工具] | [!UICONTROL Labs 访问权限] | 允许用户访问 Customer Journey Analytics 中的 [Labs](/help/labs/labs.md) 选项卡。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 注释创建] | 允许用户创建[注释](/help/components/annotations/overview.md)。用户只能标记、共享、删除和重命名自己创建的注释或与他们共享的注释。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 受众视图] | 允许用户查看[受众](/help/components/audiences/audiences-overview.md)。 |
@@ -133,6 +132,7 @@ ht-degree: 100%
 | [!UICONTROL 报告工具] | [!UICONTROL 与任何人共享项目链接] | 允许用户[与任何人共享项目。](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
 | [!UICONTROL 报告工具] | [!UICONTROL 预测] | 允许用户访问 Analysis Workspace 中的[预测](../analysis-workspace/c-forecast/forecasting.md)功能 |
 | [!UICONTROL 报告工具] | [!UICONTROL AI 助手：产品知识] | 允许用户访问 [AI 助手](../ai-assistant.md)，了解产品知识。 |
+| [!UICONTROL 报告工具] | [!UICONTROL Data Insights 代理] | 允许用户访问[Data Insights Agent](../data-analysis-ai.md)以进行AI驱动的数据分析。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 智能题注] | 允许用户访问[智能题注](/help/analysis-workspace/visualizations/intelligent-captions.md)。 |
 | [!UICONTROL 数据视图工具] | [!UICONTROL 完整表格导出] | 允许用户[将完整表格导出到云](/help/analysis-workspace/export/export-cloud.md)。 |
 | [!UICONTROL 数据视图工具] | [!UICONTROL CJA BI 扩展] | 允许用户使用 [BI 扩展](../data-views/bi-extension.md)。 |
