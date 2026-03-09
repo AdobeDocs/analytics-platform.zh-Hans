@@ -125,7 +125,7 @@ ht-degree: 5%
 >id="connection_stitchingmetrics_badids"
 >title="错误 ID"
 >abstract="错误ID是指严重影响报表数据的ID值。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="错误 ID"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-16444" text="错误 ID"
 
 
 ### 数据集设置
