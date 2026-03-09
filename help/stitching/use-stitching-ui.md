@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: b7b2a1f3eb1c149caf65ab3e4321e4f4347695cc
+source-git-commit: 53099bd891d939260a95cffc66e7857167901902
 workflow-type: tm+mt
-source-wordcount: '1724'
+source-wordcount: '1804'
 ht-degree: 5%
 
 ---
@@ -98,7 +98,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
 >title="人员 ID"
->abstract="从可用身份标识中选择一个人员 ID（个人的唯一标识符）。如果您希望使用基于图形的拼接，请选择&#x200B;**[!UICONTROL 身份标识图]**。"
+>abstract="从可用身份标识中选择一个人员 ID（个人的唯一标识符）。如果您的许可证包括基于图形的拼接，并且您想使用该拼接方法，请选择&#x200B;**[!UICONTROL 身份图形]**。"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
@@ -125,7 +125,7 @@ ht-degree: 5%
 >id="connection_stitchingmetrics_badids"
 >title="错误 ID"
 >abstract="错误ID是指严重影响报表数据的ID值。"
->additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-16444" text="错误 ID"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="错误 ID"
 
 
 ### 数据集设置
@@ -172,6 +172,11 @@ ht-degree: 5%
 
 
 ### 数据集预览
+
+>[!AVAILABILITY]
+>
+>本节中描述的增强&#x200B;**[!UICONTROL 数据集预览]**&#x200B;界面（包括&#x200B;**[!UICONTROL 拼接量度]**&#x200B;和&#x200B;**[!UICONTROL 错误的ID]**）处于版本的有限测试阶段，可能尚未在环境中可用。 如果不可用，您将看到数据集预览作为&#x200B;**[!UICONTROL 数据集设置]**&#x200B;界面的一部分。 当该功能正式发布时，将删除此说明。有关 Customer Journey Analytics 发布流程的信息，请参阅 [Customer Journey Analytics 功能版本](/help/release-notes/releases.md)。
+>
 
 在标准&#x200B;**[!UICONTROL 数据集预览]**&#x200B;界面之上，当[添加](/help/connections/create-connection.md#add-datasets)或[编辑](/help/connections/create-connection.md#edit-a-dataset)数据集到基于人员的连接中时，可以使用两个其他的信息面板。
 
