@@ -5,9 +5,9 @@ title: 从Workspace报表生成演示
 feature: Curate and Share
 role: User
 exl-id: a3f6db1e-0444-4804-98bf-c5c10ba2e7ea
-source-git-commit: 968fef4fa6a967c9654f594e662bc9bbd7ae2ab4
+source-git-commit: d14163794fd4d31b29bfc6f55622d839b67ab3d7
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1696'
 ht-degree: 9%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->数据Storytelling是Data Insights Agent项下的技能，在有限的时间内可供符合条件的客户使用。 对Data Insights Agent的访问将于2026年2月28日结束。 要继续使用Data Insights Agent或其他Adobe Experience Platform代理而不中断，请联系您的Adobe客户代表以了解有关许可Adobe Experience Platform Agent Orchestrator的更多信息。
+>数据Storytelling是Data Insights Agent项下的技能，在有限的时间内可供符合条件的客户使用。 对Data Insights Agent的访问将于2026年3月31日终止。 要继续使用Data Insights Agent或其他Adobe Experience Platform代理而不中断，请联系您的Adobe客户代表以了解有关许可Adobe Experience Platform Agent Orchestrator的更多信息。
 
 
 具有[必要权限](#permission-requirements-to-generate-slides)的用户可以基于Analysis Workspace项目自动生成.pptx演示文稿。 在生成这些幻灯片演示文稿时，Customer Journey Analytics通过识别关键见解并将其转换为可供利益相关者使用的幻灯片，自动根据您的数据创建故事。
