@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: a2715ff9869796858dec16d3b8b422ef0c9325aa
+source-git-commit: b48858ea8e54bd9f6e7725f1ed0f0086020aab5f
 workflow-type: tm+mt
-source-wordcount: '2776'
-ht-degree: 97%
+source-wordcount: '3251'
+ht-degree: 85%
 
 ---
 
@@ -114,7 +114,52 @@ ht-degree: 97%
 >title="新数据视图"
 >abstract="您已为此配置选择了新的数据视图。新的数据视图将进行更新，以包含 Content Analytics 量度和维度。类似的量度和维度将会从现有的数据视图中移除。<br/>如果不同的连接与新的数据视图相关联，则该连接将会更新，以包含 Content Analytics 数据集。请注意，Content Analytics 数据集不会从现有配置中移除。"
 
-<!-- markdownlint-enable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="ac_onboarding_dataviews_button"
+>title="数据视图"
+>abstract="对于Content Analytics的配置，您需要选择一个或多个数据视图。 然后，您可以将 Content Analytics 数据与其他数据合并。"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataviewsheader"
+>title="数据视图"
+>abstract="从Customer Journey Analytics中选择一个或多个要与Content Analytics数据合并的现有数据视图。"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataviews_header_alt"
+>title="数据视图"
+>abstract="从Customer Journey Analytics中选择一个或多个要与Content Analytics数据合并的现有数据视图。<br/>"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataviews_new_dialog"
+>title="选定的数据视图"
+>abstract="您已修改此配置的选定数据视图。 选定的数据视图将更新以包含Content Analytics量度和维度。 这些量度和维度将从之前选定的不再选定的数据视图中删除。<br/><br/>如果其他连接与所选数据视图关联，则将更新该连接以包含Content Analytics数据集。 Content Analytics 数据集不会从原先选择的连接中删除。<br/><br/>所有选定数据视图将继承属于此配置的渠道。"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataviews_change_dialog"
+>title="选定的数据视图"
+>abstract="您已修改此配置的选定数据视图。 选定的数据视图将更新以包含Content Analytics量度和维度。 这些量度和维度将从之前选定的不再选定的数据视图中删除。<br/><br/>如果其他连接与所选数据视图关联，则将更新该连接以包含Content Analytics数据集。 Content Analytics 数据集不会从原先选择的连接中删除。<br/><br/>所有选定数据视图将继承属于此配置的渠道。"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataviews_current_cleanup_labels_dialog"
+>title="选定的数据视图"
+>abstract="您已修改此配置的选定数据视图。 选定的数据视图将更新以包含Content Analytics量度和维度。 这些量度和维度将从以前选择的、不再选择的数据视图中删除。<br/><br/>如果其他连接与所选数据视图关联，则将更新该连接以包含Content Analytics数据集。 Content Analytics 数据集不会从原先选择的连接中删除。<br/><br/>所有选定数据视图将继承属于此配置的渠道。"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataviews_prev_cleanup_labels_dialog"
+>title="选定的数据视图"
+>abstract="您已修改此配置的选定数据视图。 选定的数据视图将更新以包含Content Analytics量度和维度。 这些量度和维度将从以前选择的、不再选择的数据视图中删除。<br/><br/>如果其他连接与所选数据视图关联，则将更新该连接以包含Content Analytics数据集。 Content Analytics 数据集不会从原先选择的连接中删除。<br/><br/>所有选定数据视图将继承属于此配置的渠道。"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_channels_button"
+>title="渠道"
+>abstract="为配置启用和配置一个或多个通道。"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_channels_header"
+>title="渠道"
+>abstract="为配置启用和配置一个或多个通道。 属于配置的所有数据视图都会继承已启用的渠道。"
+
 
 您的配置需要选择一个[数据视图](/help/data-views/data-views.md)。
 
