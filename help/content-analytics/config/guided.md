@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: b48858ea8e54bd9f6e7725f1ed0f0086020aab5f
+source-git-commit: fc1961f3191b80c0351c8935fc331d7605f37f13
 workflow-type: tm+mt
-source-wordcount: '3251'
-ht-degree: 85%
+source-wordcount: '3393'
+ht-degree: 81%
 
 ---
 
@@ -121,7 +121,7 @@ ht-degree: 85%
 >abstract="对于Content Analytics的配置，您需要选择一个或多个数据视图。 然后，您可以将 Content Analytics 数据与其他数据合并。"
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_dataviewsheader"
+>id="aca_onboarding_dataviews_header"
 >title="数据视图"
 >abstract="从Customer Journey Analytics中选择一个或多个要与Content Analytics数据合并的现有数据视图。"
 
@@ -331,7 +331,59 @@ ht-degree: 85%
 >title="标记属性已禁用"
 >abstract="Content Analytics 扩展已激活。"
 
-<!-- markdownlint-enable MD034 -->
+
+<!-- For updated ACA -->
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_web_pages_boldheader"
+>title="网页数据收集"
+>abstract="**要包含/排除的页面**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_web_pages_header"
+>title="网页数据收集"
+>abstract="指示在为Content Analytics收集数据时应&#x200B;**包含**&#x200B;或&#x200B;**排除**&#x200B;哪些页面。"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_web_assets_boldheader"
+>title="Web资产数据收集"
+>abstract="**要包含/排除的资产**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_web_assets_header"
+>title="Web资产数据收集"
+>abstract="指示在为Content Analytics收集数据时应&#x200B;**包含**&#x200B;或&#x200B;**排除**&#x200B;哪些资源。"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_experience_locations_boldheader"
+>title="移动体验位置数据收集"
+>abstract="**要包含/排除的体验位置**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_experience_locations_header"
+>title="移动体验位置数据收集"
+>abstract="指示在为Content Analytics收集数据时哪些体验位置应&#x200B;**包含**&#x200B;或&#x200B;**排除**。"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_asset_locations_boldheader"
+>title="移动资产位置数据收集"
+>abstract="**要包含/排除的资源位置**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_asset_locations_header"
+>title="移动资产位置数据收集"
+>abstract="指示在为Content Analytics收集数据时应&#x200B;**包含**&#x200B;或&#x200B;**排除**&#x200B;哪些资源位置。"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_asset_urls_boldheader"
+>title="移动资产URL数据收集"
+>abstract="**要包含/排除的资源URL**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_asset_urls_header"
+>title="移动资产URL数据收集"
+>abstract="指示在为Content Analytics收集数据时应&#x200B;**包含**&#x200B;或&#x200B;**排除**&#x200B;哪些资源URL。"
+
 
 #### 新的配置 {#new-configuration}
 
