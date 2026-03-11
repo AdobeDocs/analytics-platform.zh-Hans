@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: fc1961f3191b80c0351c8935fc331d7605f37f13
+source-git-commit: 6e7776cbaf99d5b2031b0fb3872c331852443b74
 workflow-type: tm+mt
-source-wordcount: '3393'
+source-wordcount: '3419'
 ht-degree: 81%
 
 ---
@@ -432,6 +432,16 @@ ht-degree: 81%
 
 
 ### 标头覆盖
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_header_overrides_boldheader"
+>title="标头覆盖"
+>abstract="**标题覆盖**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_header_overrides_header"
+>title="标头覆盖"
+>abstract="绕过机器人检测或关机流量的高级功能。 调用端点时，Content Analytics会包含您的自定义HTTP标头。"
 
 或者，您可以在&#x200B;**[!UICONTROL 标头覆盖]**&#x200B;部分中指定标头名称和密码标头值。  此标头覆盖配置可确保Content Analytics发送自定义HTTP标头，以绕过任何已实施的机器人检测或关口流量技术。
 
