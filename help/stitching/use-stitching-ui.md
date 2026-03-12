@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: 53099bd891d939260a95cffc66e7857167901902
+source-git-commit: c1acbea7e22e42a2f64f71af054abe2dd6082130
 workflow-type: tm+mt
 source-wordcount: '1804'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
@@ -107,25 +107,25 @@ ht-degree: 5%
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_gbs_personidcoverage"
->title="人员ID覆盖"
+>title="人员 ID 覆盖率"
 >abstract="在拼接过程（实时和重放）中用于标识的选定人员ID的覆盖范围。<br/>为获得最佳的拼接结果，每个永久ID的标识图中应存在一个（永久ID、人员ID）关系。"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_fbs_personidcoverage"
->title="人员ID覆盖"
+>title="人员 ID 覆盖率"
 >abstract="在拼接过程（实时和重放）中用于标识的选定人员ID的覆盖范围。<br/>为获得最佳的拼接结果，每个永久ID（设备信息）应在至少一个事件上发送人员ID（用户信息）。"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_persistentidcoverage"
->title="永久ID覆盖"
->abstract="如果无法检测到人员ID值，此值用于在拼合过程（实时和重播）中进行识别。 <br/>将从数据中删除没有永久ID和人员ID的事件。 为获得最佳的拼接结果，所有事件上都应存在永久ID。"
+>title="永久 ID 覆盖率"
+>abstract="如果无法检测到人员ID值，此值用于在拼合过程（实时和重播）中进行识别。 <br/>将从数据中删除没有永久ID和人员ID的事件。 为了获得最佳拼接效果，所有事件都应包含永久 ID。"
 
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_badids"
->title="错误 ID"
->abstract="错误ID是指严重影响报表数据的ID值。"
->additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-16444" text="错误 ID"
+>title="无效 ID"
+>abstract="无效 ID 是指会严重影响报告数据的 ID 值。"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/badids" text="无效 ID"
 
 
 ### 数据集设置
@@ -198,12 +198,12 @@ ht-degree: 5%
 
   人员ID覆盖范围显示为百分比，并与在稳定开发或生产设置中推荐的内容进行比较。 此覆盖值越高，使用选定的人员ID获得的拼接结果就越好。
 
-* **[!UICONTROL 持久ID覆盖率]**：此值用于在拼接过程（实时和重放）中标识，以防检测到人员ID值。 不含永久ID和人员ID的事件将从数据中删除。 为获得最佳的拼接结果，所有事件上都应存在永久ID。
+* **[!UICONTROL 持久ID覆盖率]**：此值用于在拼接过程（实时和重放）中标识，以防检测到人员ID值。 不包含永久 ID 和人员 ID 的事件将从数据中丢弃。为了获得最佳拼接效果，所有事件都应包含永久 ID。
 
   持久ID覆盖范围以百分比显示，并与稳定开发或生产设置的最低建议数量进行比较。
 
 
-#### 错误 ID
+#### 无效 ID
 
 >[!INFO]
 >

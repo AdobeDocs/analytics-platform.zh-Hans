@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 6e7776cbaf99d5b2031b0fb3872c331852443b74
+source-git-commit: 359b0364b1de82d6e49c6ba8e7222d459c9825b8
 workflow-type: tm+mt
-source-wordcount: '3419'
+source-wordcount: '3432'
 ht-degree: 81%
 
 ---
@@ -68,7 +68,15 @@ ht-degree: 81%
 >title="详细信息"
 >abstract="本指南列出了配置 Content Analytics 所需的必要条件。请为此配置提供名称"
 
-<!-- markdownlint-enable MD034 -->
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_connection_boldheader"
+>title="连接"
+>abstract="**连接**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_connection_header"
+>title="连接"
+>abstract="从Customer Journey Analytics中选择要与Content Analytics数据合并的现有连接。"
 
 每个配置都需要一个唯一的名称。例如：`Example Content Analytics configuration`。需要名称进行保存或实施配置。
 
@@ -357,32 +365,32 @@ ht-degree: 81%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_boldheader"
 >title="移动体验位置数据收集"
->abstract="**要包含/排除的体验位置**"
+>abstract="**要排除的体验位置**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_header"
 >title="移动体验位置数据收集"
->abstract="指示在为Content Analytics收集数据时哪些体验位置应&#x200B;**包含**&#x200B;或&#x200B;**排除**。"
+>abstract="指示在为Content Analytics收集数据时应&#x200B;**排除**&#x200B;哪些体验位置。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_boldheader"
 >title="移动资产位置数据收集"
->abstract="**要包含/排除的资源位置**"
+>abstract="**要排除的资源位置**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_header"
 >title="移动资产位置数据收集"
->abstract="指示在为Content Analytics收集数据时应&#x200B;**包含**&#x200B;或&#x200B;**排除**&#x200B;哪些资源位置。"
+>abstract="指示在为Content Analytics收集数据时应&#x200B;**排除**&#x200B;哪些资源位置。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_boldheader"
 >title="移动资产URL数据收集"
->abstract="**要包含/排除的资源URL**"
+>abstract="**要排除的资源URL**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_header"
 >title="移动资产URL数据收集"
->abstract="指示在为Content Analytics收集数据时应&#x200B;**包含**&#x200B;或&#x200B;**排除**&#x200B;哪些资源URL。"
+>abstract="指示在为Content Analytics收集数据时哪些资源URL应&#x200B;**排除**。"
 
 
 #### 新的配置 {#new-configuration}
