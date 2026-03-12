@@ -125,7 +125,7 @@ ht-degree: 9%
 >id="connection_stitchingmetrics_badids"
 >title="无效 ID"
 >abstract="无效 ID 是指会严重影响报告数据的 ID 值。"
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/badids" text="无效 ID"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/technotes/badids" text="无效 ID"
 
 
 ### 数据集设置
