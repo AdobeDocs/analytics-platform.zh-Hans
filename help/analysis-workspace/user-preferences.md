@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: bc708b34814550b89f6c9916d8bc48850008c1dc
+source-git-commit: c84e18bcaf7687deada7086bfe1a85a4b83f216b
 workflow-type: tm+mt
 source-wordcount: '4015'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 99%
 
 ### 常规偏好设置
 
-常规偏好设置适用于您在浏览器中体验 Customer Journey Analytics。有关如何访问这些偏好设置的信息，请参阅[更新偏好设置](#update-preferences)。
+常规偏好设置适用于您在浏览器中体验 Customer Journey Analytics。有关如何访问这些首选项的信息，请参阅[编辑首选项](#edit-preferences)。
 
 | 偏好设置 | 选项 |
 | --- | --- |
@@ -56,7 +56,7 @@ ht-degree: 99%
 >abstract="启用后，Analysis Workspace 中每个项目的右侧栏中会显示一个评论区域。"
 
 
-您可以更新适用于组织内所有用户和项目的公司偏好设置。有关如何访问这些偏好设置的信息，请参阅[更新偏好设置](#update-preferences)。
+您可以更新适用于组织内所有用户和项目的公司偏好设置。有关如何访问这些首选项的信息，请参阅[编辑首选项](#edit-preferences)。
 
 | 部分 | 偏好设置 | 选项 |
 | --- | --- | --- |
@@ -86,14 +86,14 @@ ht-degree: 99%
 >title="顺序调色板"
 >abstract="应用于频率趋势（堆积条）引导式分析。该调色板具有从浅到深的数字含义。"
 
-您可以为所有新的 Analysis Workspace 项目、新的 Analysis Workspace 面板和新的引导式分析自定义这些偏好设置。有关如何访问这些偏好设置的信息，请参阅[更新偏好设置](#update-preferences)。
+您可以为所有新的 Analysis Workspace 项目、新的 Analysis Workspace 面板和新的引导式分析自定义这些偏好设置。有关如何访问这些首选项的信息，请参阅[编辑首选项](#edit-preferences)。
 
 如[项目概述](/help/analysis-workspace/build-workspace-project/freeform-overview.md)中所述，也可以为 Analysis Workspace 中的个别项目自定义其中一些相同的偏好设置。
 
 <!--
 >[!IMPORTANT]
 >
->You can no longer define the number format in the **[!UICONTROL Project & Analyses]** > **[!UICONTROL Data]** section of **[!UICONTROL User preferences]**. The number format is automatically determined by the [default language that is configured](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/browser-language) for the logged in user.
+>You can no longer define the number format in the **[!UICONTROL Project & Analyses]** > **[!UICONTROL Data]** section of **[!UICONTROL User preferences]**. The number format is automatically determined by the [default language that is configured](https://experienceleague.adobe.com/en/docs/core-services/interface/features/browser-language) for the logged in user.
 >
 -->
 
@@ -132,7 +132,7 @@ ht-degree: 99%
 >abstract="选择用于自由格式表的默认量度。如果选定的数据视图不包含所选的默认量度，表格将自动切换到另一个主要量度。"
 
 
-您可以为在 Analysis Workspace 中创建的所有新项目自定义自由格式表偏好设置。有关如何访问这些偏好设置的信息，请参阅[更新偏好设置](#update-preferences)。
+您可以为在 Analysis Workspace 中创建的所有新项目自定义自由格式表偏好设置。有关如何访问这些首选项的信息，请参阅[编辑首选项](#edit-preferences)。
 
 这些相同的偏好设置中的一些也可以针对单个表进行自定义。
 
@@ -185,7 +185,7 @@ ht-degree: 99%
 >abstract="选择用于[!UICONTROL 历程画布]可视化图表的默认容器。如果选定的数据视图不包含选定的默认容器，则[!UICONTROL 历程画布]可视化图表将会自动切换到另一个主要容器。"
 
 
-您可以更新在 Analysis Workspace 中创建的所有新项目的可视化偏好设置。有关如何访问这些偏好设置的信息，请参阅[更新偏好设置](#update-preferences)。
+您可以更新在 Analysis Workspace 中创建的所有新项目的可视化偏好设置。有关如何访问这些首选项的信息，请参阅[编辑首选项](#edit-preferences)。
 
 这些相同的偏好设置中的一些也可以针对单个可视化进行自定义。
 
