@@ -12,4 +12,4 @@ ht-degree: 8%
 
 # 浏览器和语言支持
 
-Customer Journey Analytics支持Experience Platform UI中支持的所有浏览器和语言，如Experience Platform UI的[浏览器和语言支持](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/browser-language-support#language-support)中所述。
+Customer Journey Analytics支持Experience Platform UI中支持的所有浏览器和语言，如Experience Platform UI的[浏览器和语言支持](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/platform-ui/browser-language-support#language-support)中所述。
