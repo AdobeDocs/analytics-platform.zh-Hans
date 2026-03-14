@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: c1acbea7e22e42a2f64f71af054abe2dd6082130
+source-git-commit: 1e0d028db957743416bc7840f5a3682206a3edf3
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1808'
 ht-degree: 9%
 
 ---
@@ -103,7 +103,7 @@ ht-degree: 9%
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
 >title="拼接量度"
->abstract="拼接量度是使用一组示例数据从过去7天内摄取的任何数据计算的。<br>此样本数据集通常与&#x200B;**[!UICONTROL 预览]**&#x200B;表中使用的样本数据不同。"
+>abstract="拼接量度正在使用具有过去7天内事件时间戳的示例数据集进行计算。<br>此样本数据集通常与&#x200B;**[!UICONTROL 预览]**&#x200B;表中使用的样本数据不同。"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_gbs_personidcoverage"
@@ -125,7 +125,7 @@ ht-degree: 9%
 >id="connection_stitchingmetrics_badids"
 >title="无效 ID"
 >abstract="无效 ID 是指会严重影响报告数据的 ID 值。"
->additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/technotes/badids" text="无效 ID"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/badids" text="无效 ID"
 
 
 ### 数据集设置
@@ -188,9 +188,7 @@ ht-degree: 9%
 
 #### 拼接量度
 
-
-
-**[!UICONTROL 正在使用样本数据集从过去7天摄取的任何数据中计算拼合量度]**。 此样本数据集通常不同于&#x200B;**[!UICONTROL 预览]**&#x200B;表中使用的样本数据。 拼接量度提供以下内容的详细信息：
+**[!UICONTROL 正在使用具有过去7天内事件时间戳的数据样本集计算拼合量度]**。 此样本数据集通常不同于&#x200B;**[!UICONTROL 预览]**&#x200B;表中使用的样本数据。 拼接量度提供以下内容的详细信息：
 
 * **[!UICONTROL 人员ID覆盖率]**：拼接过程中用于标识的选定人员ID覆盖率（实时和重播）。
    * 为了获得基于字段的最佳拼接结果，应在每个永久ID（设备信息）的至少一个事件中发送个人ID（用户信息）。
