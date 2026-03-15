@@ -8,7 +8,7 @@ role: User
 source-git-commit: c4a7884ae05d9290b2974483474ba8326492d014
 workflow-type: tm+mt
 source-wordcount: '3234'
-ht-degree: 56%
+ht-degree: 57%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 56%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-full-table-export"
 >title="创建类似于数据仓库的完整表格导出"
->abstract="只要您在分析工作区中看到数据，就可以完整表格导出。您可以根据需要创建或计划完整表导出。<br><br>如果您已经知道要包括在导出中的数据，则只需几分钟即可创建完整的表导出。"
+>abstract="只要您在 Analysis Workspace 中看到数据，就可以全表导出。 您可以根据需要创建或计划完整表导出。<br><br>如果您已明确需要导出的数据内容，只需几分钟即可创建完整表导出。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -113,7 +113,7 @@ ht-degree: 56%
 >[!CONTEXTUALHELP]
 >id="cja-export-notifications"
 >title="通知"
->abstract="添加希望在此导出失败或即将过期时接收通知的用户和组。"
+>abstract="添加用户和用户组，以便在导出失败或即将过期时接收通知。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -138,7 +138,7 @@ ht-degree: 56%
    | 描述 | 为导出内容添加描述。在查看导出内容时，您可以选择在[导出页面](/help/components/exports/manage-exports.md)中将描述内容视为一列进行查看。 |
    | 数据视图 | 选择包含您想要在导出内容中加入的组件的数据视图。![数据](/help/assets/icons/Data.svg)数据视图下拉菜单位于对话框的左上角。  <p>**注意：**&#x200B;如果选择的数据视图缺少已包含在数据表中的组件，则系统会提示您清除并使用选定数据视图中包含的组件重新创建面板。 </p> |
    | 数据结构 | 显示您正在导出的自由格式表。您可以通过将组件从左侧面板拖动到表格中来调整数据结构。您可以将组件拖动到筛选区域以应用筛选条件。在将组件添加到画布时，表格会动态更新。 您最多可以包含10列。<p>应用于项目中完整表格的任何区段都会显示在表格上方。 您可以将区段或区段组应用到导出。</p> |
-   | 报告窗口 | 选择要包含在每个导出文件中的报告时间范围。相关选项包括&#x200B;[!UICONTROL **今天**]、**[!UICONTROL 昨天、]**&#x200B;**[!UICONTROL 过去 7 天]**、**[!UICONTROL 过去 30 天]**、**[!UICONTROL 本星期]**&#x200B;和&#x200B;**[!UICONTROL 本月]**。 <p>当&#x200B;**[!UICONTROL 导出频率]**&#x200B;设置为&#x200B;**[!UICONTROL 立即发送（一次性）]**&#x200B;时，不显示此选项。</p> |
+   | 报告窗口 | 选择要包含在每个导出文件中的报告时间范围。相关选项包括&#x200B;[!UICONTROL **今天**]、**[!UICONTROL 昨天、]****[!UICONTROL 过去 7 天]**、**[!UICONTROL 过去 30 天]**、**[!UICONTROL 本星期]**&#x200B;和&#x200B;**[!UICONTROL 本月]**。 <p>当&#x200B;**[!UICONTROL 导出频率]**&#x200B;设置为&#x200B;**[!UICONTROL 立即发送（一次性）]**&#x200B;时，不显示此选项。</p> |
    | 全部清除 | 清除数据表的内容。这样您就可以直接在新的完整表格导出对话框中开始构建新表。 |
    | 文件格式 | 选择导出的数据应采用.csv、.json还是.parquet格式。 <p>当选择Parquet文件格式时，组件名称中包含的以下任何字符都将替换为下划线(_)： <ul><li>&#39; &#39; - ASCII空间</li><li>&#39;，&#39; - ASCII逗号</li><li>&#39;；&#39; - ASCII冒号</li><li>&#39;{&#39;或&#39;}&#39; - ASCII左大括号</li><li>&#39;（&#39;或&#39;）&#39; - ASCII左括号/右括号</li><li>&#39;\n&#39; - ASCII换行符</li><li>“\t” — ASCII选项卡</li><li>&#39;=&#39; - ASCII等于</li></ul></p> |
    | 包含清单文件 | 启用后，清单文件将包含在任何成功的导出投放中。 <p>您可以使用清单文件确认所有文件均已成功传送。它包含以下信息：</p> <ul><li>已传递的所有文件的列表</li><li>每个文件的 MD5 校验和</li></ul><p>导出的数据以压缩文件的形式存储在您配置的云目标中，如[配置云导出账户](/help/components/exports/cloud-export-accounts.md)和[配置云导出位置](/help/components/exports/cloud-export-locations.md)中所述。</p><p>压缩文件的文件名如下，具体取决于您选择&#x200B;**[!UICONTROL csv]**、**[!UICONTROL json]**&#x200B;还是&#x200B;**[!UICONTROL parquet]**&#x200B;作为文件格式：</p><ul> <li>`cja-export-{reportInstanceId}-{idx}.csv.gz`</li><li>`cja-export-{reportInstanceId}-{idx}.json.gz`</li><li>`cja-export-<instanceId>-<idx>.snappy.parquet`<p>parquet文件中的每一列都经过压缩。</p></li></ul><p>在上面的&#x200B;**[!UICONTROL 文件格式]**&#x200B;字段中选择文件格式。</p> |
@@ -222,7 +222,7 @@ ht-degree: 56%
 * 在量度定义中使用不支持的函数的计算量度（有关详细信息，请参阅[不支持的计算量度函数](#unsupported-calculated-metric-functions)）
 * 管理员已限制导出组件（有关详细信息，请参阅&#x200B;*标签和策略*&#x200B;中数据视图[中数据管理策略的](/help/data-views/data-governance.md)区段）
 * 满足以下所有条件的任何维度：
-   * 从属于[对象数组](/help/use-cases/object-arrays.md)的字段创建(类似于Adobe Analytics中的多值变量)。
+   * 从属于[对象数组](/help/use-cases/object-arrays.md)的字段创建（类似于Adobe Analytics中的多值变量）。
    * 已启用[持久性](/help/data-views/component-settings/persistence.md)。
    * 未使用[绑定维度](/help/use-cases/data-views/binding-dimensions-metrics.md)。
 * 来自引用不同[对象数组](/help/use-cases/object-arrays.md)的字段的多个维度。（允许多个维度引用同一对象数组。）
@@ -387,11 +387,11 @@ ht-degree: 56%
 
 如果在报表中使用非默认归因模型，则忽略或保留报表中使用的分配模型，具体取决于报表是具有一个维度还是多个维度：
 
-* **对于在单个维度中包含量度归因的报告：**&#x200B;[量度归因](/help/data-views/component-settings/attribution.md)会覆盖[分配模型](/help/data-views/component-settings/persistence.md)，就像使用量度归因时通常进行的操作一样。
+* **对于在单个维度中包含量度归因的报告：**[量度归因](/help/data-views/component-settings/attribution.md)会覆盖[分配模型](/help/data-views/component-settings/persistence.md)，就像使用量度归因时通常进行的操作一样。
 
   例如，“首次接触”量度归因会覆盖“最近”维度分配。
 
-* **对于同时包含多个维度的量度归因的报告：除了维度[分配模型](/help/data-views/component-settings/persistence.md)外，还应用了**&#x200B;[量度归因](/help/data-views/component-settings/attribution.md)。
+* **对于同时包含多个维度的量度归因的报告：除了维度[分配模型](/help/data-views/component-settings/persistence.md)外，还应用了**[量度归因](/help/data-views/component-settings/attribution.md)。
 
   例如，除了“最近”维度分配之外，还会应用“首次接触”量度归因。此外，量度归因会像对单个维度项目一样，应用于后分配的维度项目对，而不是像通常在自由格式表中那样单独应用于每个维度项目。
 
