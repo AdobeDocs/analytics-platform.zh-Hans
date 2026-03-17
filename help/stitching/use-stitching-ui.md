@@ -8,7 +8,7 @@ exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 source-git-commit: 1ad1698f10dd026b0bd5e67599ef35ab3c552286
 workflow-type: tm+mt
 source-wordcount: '1800'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -98,7 +98,7 @@ ht-degree: 9%
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
 >title="人员 ID"
->abstract="从可用身份标识中选择一个人员 ID（个人的唯一标识符）。 如果您的许可证包括基于图形的拼接，并且您想使用该拼接方法，请选择&#x200B;**[!UICONTROL 身份图形]**。"
+>abstract="从可用身份标识中选择一个人员 ID（个人的唯一标识符）。 如果您的许可证包含基于图形的拼接功能且需使用该拼接方式，请选择&#x200B;**[!UICONTROL 身份标识图]**。"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
@@ -125,7 +125,7 @@ ht-degree: 9%
 >id="connection_stitchingmetrics_badids"
 >title="无效 ID"
 >abstract="无效 ID 是指会严重影响报告数据的 ID 值。"
->additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/technotes/badids" text="无效 ID"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/badids" text="无效 ID"
 
 
 ### 数据集设置

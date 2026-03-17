@@ -8,7 +8,7 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: b3988dcc0568245bc6aed7aa80cf1c636c61fc7d
 workflow-type: tm+mt
 source-wordcount: '3432'
-ht-degree: 81%
+ht-degree: 89%
 
 ---
 
@@ -126,47 +126,47 @@ ht-degree: 81%
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataviews_button"
 >title="数据视图"
->abstract="对于Content Analytics的配置，您需要选择一个或多个数据视图。 然后，您可以将 Content Analytics 数据与其他数据合并。"
+>abstract="要配置 Content Analytics，您需要选择一个或多个数据视图。然后，您可以将 Content Analytics 数据与其他数据合并。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_header"
 >title="数据视图"
->abstract="从Customer Journey Analytics中选择一个或多个要与Content Analytics数据合并的现有数据视图。"
+>abstract="从 Customer Journey Analytics 中选择一个或多个您希望将 Content Analytics 数据与之合并的现有数据视图。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_header_alt"
 >title="数据视图"
->abstract="从Customer Journey Analytics中选择一个或多个要与Content Analytics数据合并的现有数据视图。<br/>"
+>abstract="从 Customer Journey Analytics 中选择一个或多个您希望将 Content Analytics 数据与之合并的现有数据视图。<br/>"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_new_dialog"
 >title="选定的数据视图"
->abstract="您已修改此配置的选定数据视图。 选定的数据视图将更新以包含Content Analytics量度和维度。 这些量度和维度将从之前选定的不再选定的数据视图中删除。<br/><br/>如果其他连接与所选数据视图关联，则将更新该连接以包含Content Analytics数据集。 Content Analytics 数据集不会从原先选择的连接中删除。<br/><br/>所有选定数据视图将继承属于此配置的渠道。"
+>abstract="您已修改此配置的选定数据视图。选定的数据视图将进行更新，以包含 Content Analytics 量度和维度。这些量度和维度将从之前选定的不再选定的数据视图中删除。<br/><br/>如果其他连接与所选数据视图关联，则将更新该连接以包含Content Analytics数据集。 Content Analytics 数据集不会从原先选择的连接中删除。<br/><br/>所有选定数据视图将继承属于此配置的渠道。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_change_dialog"
 >title="选定的数据视图"
->abstract="您已修改此配置的选定数据视图。 选定的数据视图将更新以包含Content Analytics量度和维度。 这些量度和维度将从之前选定的不再选定的数据视图中删除。<br/><br/>如果其他连接与所选数据视图关联，则将更新该连接以包含Content Analytics数据集。 Content Analytics 数据集不会从原先选择的连接中删除。<br/><br/>所有选定数据视图将继承属于此配置的渠道。"
+>abstract="您已修改此配置的选定数据视图。选定的数据视图将进行更新，以包含 Content Analytics 量度和维度。这些量度和维度将从之前选定的不再选定的数据视图中删除。<br/><br/>如果其他连接与所选数据视图关联，则将更新该连接以包含Content Analytics数据集。 Content Analytics 数据集不会从原先选择的连接中删除。<br/><br/>所有选定数据视图将继承属于此配置的渠道。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_current_cleanup_labels_dialog"
 >title="选定的数据视图"
->abstract="您已修改此配置的选定数据视图。 选定的数据视图将更新以包含Content Analytics量度和维度。 这些量度和维度将从以前选择的、不再选择的数据视图中删除。<br/><br/>如果其他连接与所选数据视图关联，则将更新该连接以包含Content Analytics数据集。 Content Analytics 数据集不会从原先选择的连接中删除。<br/><br/>所有选定数据视图将继承属于此配置的渠道。"
+>abstract="您已修改此配置的选定数据视图。选定的数据视图将进行更新，以包含 Content Analytics 量度和维度。这些量度和维度将从以前选择的、不再选择的数据视图中删除。<br/><br/>如果其他连接与所选数据视图关联，则将更新该连接以包含Content Analytics数据集。 Content Analytics 数据集不会从原先选择的连接中删除。<br/><br/>所有选定数据视图将继承属于此配置的渠道。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_prev_cleanup_labels_dialog"
 >title="选定的数据视图"
->abstract="您已修改此配置的选定数据视图。 选定的数据视图将更新以包含Content Analytics量度和维度。 这些量度和维度将从以前选择的、不再选择的数据视图中删除。<br/><br/>如果其他连接与所选数据视图关联，则将更新该连接以包含Content Analytics数据集。 Content Analytics 数据集不会从原先选择的连接中删除。<br/><br/>所有选定数据视图将继承属于此配置的渠道。"
+>abstract="您已修改此配置的选定数据视图。选定的数据视图将进行更新，以包含 Content Analytics 量度和维度。这些量度和维度将从以前选择的、不再选择的数据视图中删除。<br/><br/>如果其他连接与所选数据视图关联，则将更新该连接以包含Content Analytics数据集。 Content Analytics 数据集不会从原先选择的连接中删除。<br/><br/>所有选定数据视图将继承属于此配置的渠道。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_channels_button"
 >title="渠道"
->abstract="为配置启用和配置一个或多个通道。"
+>abstract="为该配置启用并配置一个或多个渠道。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_channels_header"
 >title="渠道"
->abstract="为配置启用和配置一个或多个通道。 属于配置的所有数据视图都会继承已启用的渠道。"
+>abstract="为该配置启用并配置一个或多个渠道。属于该配置的所有数据视图均继承已启用的渠道。"
 
 
 您的配置需要选择一个[数据视图](/help/data-views/data-views.md)。
@@ -350,17 +350,17 @@ ht-degree: 81%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_web_pages_header"
 >title="网页数据收集"
->abstract="指示在为Content Analytics收集数据时应&#x200B;**包含**&#x200B;或&#x200B;**排除**&#x200B;哪些页面。"
+>abstract="指明在为 Content Analytics 收集数据时应&#x200B;**包含**&#x200B;或&#x200B;**排除**&#x200B;哪些页面。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_web_assets_boldheader"
->title="Web资产数据收集"
+>title="Web 资产数据收集"
 >abstract="**要包含/排除的资产**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_web_assets_header"
->title="Web资产数据收集"
->abstract="指示在为Content Analytics收集数据时应&#x200B;**包含**&#x200B;或&#x200B;**排除**&#x200B;哪些资源。"
+>title="Web 资产数据收集"
+>abstract="指明在为 Content Analytics 收集数据时应&#x200B;**包含**&#x200B;或&#x200B;**排除**&#x200B;哪些资产。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_boldheader"
@@ -374,22 +374,22 @@ ht-degree: 81%
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_boldheader"
->title="移动资产位置数据收集"
+>title="移动设备资产位置数据收集"
 >abstract="**要排除的资源位置**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_header"
->title="移动资产位置数据收集"
+>title="移动设备资产位置数据收集"
 >abstract="指示在为Content Analytics收集数据时应&#x200B;**排除**&#x200B;哪些资源位置。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_boldheader"
->title="移动资产URL数据收集"
+>title="移动设备资产 URL 数据收集"
 >abstract="**要排除的资源URL**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_header"
->title="移动资产URL数据收集"
+>title="移动设备资产 URL 数据收集"
 >abstract="指示在为Content Analytics收集数据时哪些资源URL应&#x200B;**排除**。"
 
 
@@ -444,12 +444,12 @@ ht-degree: 81%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_header_overrides_boldheader"
 >title="标头覆盖"
->abstract="**标题覆盖**"
+>abstract="**标头覆盖**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_header_overrides_header"
 >title="标头覆盖"
->abstract="绕过机器人检测或关机流量的高级功能。 调用端点时，Content Analytics会包含您的自定义HTTP标头。"
+>abstract="用于绕过机器人检测或进行流量管控的高级功能。Content Analytics 在调用您的端点时包含您自定义的 HTTP 标头。"
 
 或者，您可以在&#x200B;**[!UICONTROL 标头覆盖]**&#x200B;部分中指定标头名称和密码标头值。  此标头覆盖配置可确保Content Analytics发送自定义HTTP标头，以绕过任何已实施的机器人检测或关口流量技术。
 
