@@ -19,7 +19,7 @@ ht-degree: 64%
 
 >[!NOTE]
 >
->此引用仅包括Adobe根据[Analytics数据馈送列引用](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference)视为当前的列。 如果您的Analytics数据馈送列未在此表格中列出，且您积极使用，请查阅贵组织的解决方案设计文档，以确定其在Customer Journey Analytics中的最佳等效项。
+>此引用仅包括Adobe根据[Analytics数据馈送列引用](https://experienceleague.adobe.com/zh-hans/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference)视为当前的列。 如果您的Analytics数据馈送列未在此表格中列出，且您积极使用，请查阅贵组织的解决方案设计文档，以确定其在Customer Journey Analytics中的最佳等效项。
 
 +++**`accept_language`**
 
