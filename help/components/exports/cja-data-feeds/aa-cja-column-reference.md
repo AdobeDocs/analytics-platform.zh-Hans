@@ -20,7 +20,7 @@ ht-degree: 57%
 
 >[!NOTE]
 >
->此引用仅包括Adobe根据[Analytics数据馈送列引用](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference)视为当前的列。 如果您的Analytics数据馈送列未在此表格中列出，且您积极使用，请查阅贵组织的解决方案设计文档，以确定其在Customer Journey Analytics中的最佳等效项。
+>此引用仅包括Adobe根据[Analytics数据馈送列引用](https://experienceleague.adobe.com/zh-hans/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference)视为当前的列。 如果您的Analytics数据馈送列未在此表格中列出，且您积极使用，请查阅贵组织的解决方案设计文档，以确定其在Customer Journey Analytics中的最佳等效项。
 
 +++**`accept_language`**
 
@@ -360,7 +360,7 @@ EF ID，用于Adobe Advertising集成。
 
 {{cja-df-post}}
 
-如果您的架构使用[[!UICONTROL Commerce详细信息]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details)字段组，则某些量度可能会直接映射到以下XDM字段：
+如果您的架构使用[[!UICONTROL Commerce详细信息]](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/field-groups/event/commerce-details)字段组，则某些量度可能会直接映射到以下XDM字段：
 
 * **结帐**： `xdm.commerce.checkouts.value`
 * **购物车添加次数**： `xdm.commerce.productListAdds.value`
@@ -373,7 +373,7 @@ EF ID，用于Adobe Advertising集成。
 某些量度可能使用事件序列化，这是Adobe Analytics允许完全控制重复数据删除的方式。 您可以使用[指标去重](/help/data-views/component-settings/metric-deduplication.md)组件设置来实现去重奇偶校验。
 
 * 如果您的指标在Adobe Analytics中按访问删除了重复项，则您可以在该指标的组件设置中将重复项删除范围设置为会话。
-* 如果您的量度在Adobe Analytics中按事件ID进行了重复数据删除，则该量度的XDM对象可能同时包含`value`和`id`字段。 如果您的架构使用[[!UICONTROL Commerce详细信息]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details)字段组，则这些量度可能驻留在这些XDM字段中，您可以在量度的组件设置中设置&#x200B;**[!UICONTROL 重复数据删除ID]**&#x200B;字段：
+* 如果您的量度在Adobe Analytics中按事件ID进行了重复数据删除，则该量度的XDM对象可能同时包含`value`和`id`字段。 如果您的架构使用[[!UICONTROL Commerce详细信息]](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/field-groups/event/commerce-details)字段组，则这些量度可能驻留在这些XDM字段中，您可以在量度的组件设置中设置&#x200B;**[!UICONTROL 重复数据删除ID]**&#x200B;字段：
 
    * **结帐**： `xdm.commerce.checkouts.id`
    * **购物车添加次数**： `xdm.commerce.productListAdds.id`
