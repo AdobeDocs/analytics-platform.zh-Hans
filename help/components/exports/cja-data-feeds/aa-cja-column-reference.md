@@ -4,22 +4,23 @@ description: 确定如何获取给定的Adobe Analytics数据馈送列，并确�
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: fbd48b74505e18c24260b87b715ad036a6a60020
+exl-id: 81d6e79e-8324-4726-9a48-10177b0a91b1
+source-git-commit: af5b30cd71ebe46e2af584ee502ef631c829f5ea
 workflow-type: tm+mt
-source-wordcount: '3236'
-ht-degree: 64%
+source-wordcount: '3356'
+ht-degree: 57%
 
 ---
 
 # 将Adobe Analytics数据馈送列映射到Customer Journey Analytics
 
-由于Adobe Analytics和Customer Journey Analytics的运行方式截然不同，因此无法进行1:1列映射。 由于每个Adobe Analytics和Customer Journey Analytics实施都各不相同，这些差异会进一步加剧。
+无法在Adobe Analytics和Customer Journey Analytics数据馈送列之间进行1:1映射。 这两种产品存在根本性差异，并且每个组织的实施也可能存在显着差异。
 
-此参考旨在帮助数据工程师将其以Adobe Analytics为中心的数据馈送工作流逐列调整为基于Customer Journey Analytics数据馈送的工作流。
+此参考可帮助数据工程师评估Adobe Analytics数据馈送列，并确定其工作流中与Customer Journey Analytics最接近的等效项。
 
 >[!NOTE]
 >
->此引用仅包括Adobe根据[Analytics数据馈送列引用](https://experienceleague.adobe.com/zh-hans/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference)视为当前的列。 如果您的Analytics数据馈送列未在此表格中列出，且您积极使用，请查阅贵组织的解决方案设计文档，以确定其在Customer Journey Analytics中的最佳等效项。
+>此引用仅包括Adobe根据[Analytics数据馈送列引用](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference)视为当前的列。 如果您的Analytics数据馈送列未在此表格中列出，且您积极使用，请查阅贵组织的解决方案设计文档，以确定其在Customer Journey Analytics中的最佳等效项。
 
 +++**`accept_language`**
 
@@ -76,7 +77,9 @@ AMO EF ID维度，用于Adobe Advertising集成。
 
 +++**`browser`**
 
-表示浏览器的数值 ID。引用 `browser.tsv` 查找表。
+表示浏览器的数值ID。
+
+{{cja-df-lookup}}
 
 +++
 
@@ -106,7 +109,9 @@ AMO EF ID维度，用于Adobe Advertising集成。
 
 +++**`carrier`**
 
-Adobe Advertising 集成变量。指定移动运营商。`carrier.tsv`动态查找的键值。
+Adobe Advertising 集成变量。指定移动设备运营商。
+
+{{cja-df-lookup}}
 
 +++
 
@@ -136,6 +141,10 @@ Activity Map链接维度。
 
 {{cja-df-post}}
 
+{{cja-df-na}}
+
+此列不适用，因为Customer Journey Analytics尚不支持Activity Map。
+
 +++
 
 +++**`clickmaplinkbyregion`**
@@ -143,6 +152,10 @@ Activity Map链接维度。
 Activity Map链接（按地区）维度。
 
 {{cja-df-post}}
+
+{{cja-df-na}}
+
+此列不适用，因为Customer Journey Analytics尚不支持Activity Map。
 
 +++
 
@@ -152,6 +165,10 @@ Activity Map页面维度。
 
 {{cja-df-post}}
 
+{{cja-df-na}}
+
+此列不适用，因为Customer Journey Analytics尚不支持Activity Map。
+
 +++
 
 +++**`clickmapregion`**
@@ -159,6 +176,10 @@ Activity Map页面维度。
 Activity Map区域维度。
 
 {{cja-df-post}}
+
+{{cja-df-na}}
+
+此列不适用，因为Customer Journey Analytics尚不支持Activity Map。
 
 +++
 
@@ -170,13 +191,17 @@ Activity Map区域维度。
 
 +++**`color`**
 
-颜色深度 ID，它基于 `c_color` 列的值。引用 `color_depth.tsv` 查找表。
+颜色深度ID，它基于`c_color`列的值。
+
+{{cja-df-lookup}}
 
 +++
 
 +++**`connection_type`**
 
-表示连接类型维度的数值ID。 引用 `connection_type.tsv` 查找表。
+表示连接类型维度的数值ID。
+
+{{cja-df-lookup}}
 
 +++
 
@@ -191,6 +216,8 @@ Cookie支持维度。<br>Y：启用<br>N：禁用<br>U：未知
 +++**`country`**
 
 表示访客所在国家/地区的数值 ID。引用 `country.tsv` 查找表。
+
+{{cja-df-lookup}}
 
 +++
 
@@ -262,6 +289,10 @@ Cookie支持维度。<br>Y：启用<br>N：禁用<br>U：未知
 
 同意管理选择加入维度。 每次点击可以出现多个值，各个值之间用竖线 (`\|`) 隔开。有效值包括 `DMP` 和 `SELL`。
 
+{{cja-df-na}}
+
+此列不适用，因为Customer Journey Analytics不???。
+
 +++
 
 +++**`dataprivacyconsentoptout`**
@@ -329,6 +360,29 @@ EF ID，用于Adobe Advertising集成。
 
 {{cja-df-post}}
 
+如果您的架构使用[[!UICONTROL Commerce详细信息]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details)字段组，则某些量度可能会直接映射到以下XDM字段：
+
+* **结帐**： `xdm.commerce.checkouts.value`
+* **购物车添加次数**： `xdm.commerce.productListAdds.value`
+* **购物车打开**： `xdm.commerce.productListOpens.value`
+* **购物车移除**： `xdm.commerce.productListRemovals.value`
+* **购物车查看次数**： `xdm.commerce.productListViews.value`
+* **产品查看次数**： `xdm.commerce.productViews.value`
+* **订单**： `xdm.commerce.purchases.value`
+
+某些量度可能使用事件序列化，这是Adobe Analytics允许完全控制重复数据删除的方式。 您可以使用[指标去重](/help/data-views/component-settings/metric-deduplication.md)组件设置来实现去重奇偶校验。
+
+* 如果您的指标在Adobe Analytics中按访问删除了重复项，则您可以在该指标的组件设置中将重复项删除范围设置为会话。
+* 如果您的量度在Adobe Analytics中按事件ID进行了重复数据删除，则该量度的XDM对象可能同时包含`value`和`id`字段。 如果您的架构使用[[!UICONTROL Commerce详细信息]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details)字段组，则这些量度可能驻留在这些XDM字段中，您可以在量度的组件设置中设置&#x200B;**[!UICONTROL 重复数据删除ID]**&#x200B;字段：
+
+   * **结帐**： `xdm.commerce.checkouts.id`
+   * **购物车添加次数**： `xdm.commerce.productListAdds.id`
+   * **购物车打开**： `xdm.commerce.productListOpens.id`
+   * **购物车移除**： `xdm.commerce.productListRemovals.id`
+   * **购物车查看次数**： `xdm.commerce.productListViews.id`
+   * **产品查看次数**： `xdm.commerce.productViews.id`
+   * **订单**： `xdm.commerce.purchases.id`
+
 +++
 
 +++**`exclude_hit`**
@@ -363,7 +417,9 @@ EF ID，用于Adobe Advertising集成。
 
 +++**`first_hit_ref_type`**
 
-表示访客使用的第一个反向链接的反向链接类型的数值 ID。引用 `referrer_type.tsv` 查找表。
+表示访客第一个反向链接的反向链接类型的数值ID。
+
+{{cja-df-lookup}}
 
 +++
 
@@ -447,7 +503,9 @@ IPv4 地址，基于图像请求的 HTTP 标头。与 `ipv6` 互斥；如果此�
 
 +++**`javascript`**
 
-基于 `j_jscript` 的 JavaScript 版本的查找 ID。引用 `javascript_version` 查找表。
+JavaScript版本的查找ID，基于`j_jscript`。
+
+{{cja-df-lookup}}
 
 +++
 
@@ -467,7 +525,9 @@ IPv4 地址，基于图像请求的 HTTP 标头。与 `ipv6` 互斥；如果此�
 
 +++**`language`**
 
-表示访客语言的数值 ID。引用 `languages.tsv` 查找表。
+表示访客语言的数值ID。
+
+{{cja-df-lookup}}
 
 +++
 
@@ -808,7 +868,9 @@ Mobile Services 启动搜索词
 +++
 
 +++**`mobile_id`**
-如果用户使用了移动设备，则为移动设备的数字 ID。`mobile_attributes.tsv`动态查找的键值。
+如果用户使用了移动设备，则为移动设备的数字 ID。
+
+{{cja-df-lookup}}
 
 +++
 
@@ -842,7 +904,9 @@ Mobile Services 启动搜索词
 
 +++**`os`**
 
-表示访客的操作系统的数值 ID。基于 `user_agent` 列。`operating_system.tsv`标准查找和`operating_system_type.tsv`动态查找的键值。
+表示访客的操作系统的数值 ID。基于 `user_agent` 列。
+
+{{cja-df-lookup}}
 
 +++
 
@@ -864,9 +928,11 @@ Mobile Services 启动搜索词
 
 +++**`page_event`**
 
-在图像请求中发送的点击类型（标准点击、下载链接、自定义链接、退出链接）。请参阅页面事件查找。
+在图像请求中发送的点击类型（标准点击、下载链接、自定义链接、退出链接）。
 
 {{cja-df-post}}
+
+{{cja-df-lookup}}
 
 +++
 
@@ -987,15 +1053,19 @@ Mobile Services 与目标点中心的距离
 
 +++**`resolution`**
 
-表示显示器分辨率的数值 ID。在显示器分辨率维度中使用。 使用 `resolution.tsv` 查询表。
+表示显示器分辨率的数值 ID。在显示器分辨率维度中使用。
+
+{{cja-df-lookup}}
 
 +++
 
 +++**`search_engine`**
 
-表示将访客引向您的网站的搜索引擎的数值 ID。在搜索引擎维度中使用。 引用 `search_engines.tsv` 查找表。
+表示将访客引向您的网站的搜索引擎的数值 ID。在搜索引擎维度中使用。
 
 {{cja-df-post}}
+
+{{cja-df-lookup}}
 
 +++
 
@@ -1123,7 +1193,9 @@ Adobe Advertising 集成中使用的关键词 ID。
 
 +++**`va_closer_id`**
 
-标识上次接触渠道维度的数值ID。 此 ID 的查找位于营销渠道管理器。
+标识上次接触渠道维度的数值ID。
+
+{{cja-df-lookup}}
 
 +++
 
@@ -1135,7 +1207,9 @@ Adobe Advertising 集成中使用的关键词 ID。
 
 +++**`va_finder_id`**
 
-标识首次接触渠道维度的数值ID。 此 ID 的查找位于营销渠道管理器。
+标识首次接触渠道维度的数值ID。
+
+{{cja-df-lookup}}
 
 +++
 
@@ -1549,13 +1623,17 @@ MVPD流媒体服务维度。
 
 +++**`visit_ref_type`**
 
-表示此访问的第一个反向链接的反向链接类型的数值 ID。引用 `referrer_type.tsv` 查找表。
+表示访问的第一个反向链接的反向链接类型的数值ID。
+
+{{cja-df-lookup}}
 
 +++
 
 +++**`visit_search_engine`**
 
-表示此访问的第一个搜索引擎的数值 ID。引用 `search_engines.tsv` 查找表。
+表示访问的第一个搜索引擎的数值ID。
+
+{{cja-df-lookup}}
 
 +++
 
