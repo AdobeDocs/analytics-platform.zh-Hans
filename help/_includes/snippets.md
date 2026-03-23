@@ -1,8 +1,8 @@
 ---
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 51c9a7aa620f54bec3f0e4ad2d007dd52ecd12f4
 workflow-type: tm+mt
-source-wordcount: '5005'
-ht-degree: 99%
+source-wordcount: '5228'
+ht-degree: 95%
 
 ---
 # 片段
@@ -294,3 +294,25 @@ Customer Journey analytics 中的各种可视化图表旨在分析您为客户�
 >
 >在Customer Journey Analytics界面中，**[!UICONTROL 关系]**&#x200B;数据集可能标记为&#x200B;**[!UICONTROL 基于模型]**。
 >
+
+## CJA数据馈送回顾窗口 {#cja-df-lookback}
+
+由于Customer Journey Analytics对每个组件使用报表时间归因，因此它没有回顾窗口以外的持久性概念。 此Analytics数据馈送列引用访客级别的行为，这种行为会扩展到访客的整个历史记录。 此组件在Customer Journey Analytics中的回顾时间范围越长，它与Adobe Analytics功能之间的匹配度就越低。
+
+## CJA数据馈送发布列 {#cja-df-post}
+
+此Analytics数据馈送列同时包含预处理版本和后处理版本（前缀`post_`）。 前缀为`post_`的列包含最终在报告中使用的值。 下表比较了这些列的属性：
+
+| 预处理列值 | 后处理列值 |
+| --- | --- |
+| 当它被收集时 | 在报告中使用 |
+| 处理规则之前 | 处理规则之后 |
+| 在VISTA规则之前 | 在VISTA规则之后 |
+| 未应用分配 | 分配适用 |
+
+大多数组织仅使用`post_`列（如果可用）。
+
+由于Customer Journey Analytics没有预处理和后处理的概念，因此在CJA数据馈送中重新创建这两个列比较困难。 如果您希望得到这些列的近似值，则可以在应用单独归因设置的情况下使用相同的列：
+
+* **预处理列**：无归因
+* **后处理的列**：应用与其Analytics变量在数据视图设置中相同的分配和到期设置。 大多数组件将使用“最后一个”的分配，以及“访问”的到期。

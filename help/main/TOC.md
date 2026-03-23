@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 82fe9ca3b702f9213e2eb1e4ab0260500be0f731
+source-git-commit: ee7989a36c9d25468dee5b1b2902ed2757e3a4b7
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 99%
+source-wordcount: '1390'
+ht-degree: 98%
 
 ---
 
@@ -101,7 +101,7 @@ ht-degree: 99%
          + [使用通过 Adobe Journey Optimizer 个性化](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
    + 与 Adobe Analytics 进行比较 {#cja-aa-comparison}
       + [概述](../getting-started/aa-vs-cja/overview.md)
-      + [实用 Adobe Analytics 数据 &#x200B;](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+      + [实用 Adobe Analytics 数据 ](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [跨IMS数据映射](../getting-started/aa-vs-cja/mapping-data-ims-orgs.md)
       + [功能支持](../getting-started/aa-vs-cja/cja-aa.md)
       + [比较术语](../getting-started/aa-vs-cja/terminology.md)
@@ -234,7 +234,7 @@ ht-degree: 99%
       + 历程画布 {#journey-canvas}
          + [概述](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
          + [配置](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
-         + [疑难解答 &#x200B;](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
+         + [疑难解答 ](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
       + [面积（堆叠）](../analysis-workspace/visualizations/area.md)
       + [条形图（堆叠）](../analysis-workspace/visualizations/bar.md)
       + [项目符号](../analysis-workspace/visualizations/bullet-graph.md)
@@ -403,7 +403,7 @@ ht-degree: 99%
       + [概述](/help/components/c-intelligent-alerts/intelligent-alerts.md)
       + [创建警报](/help/components/c-intelligent-alerts/alert-builder.md)
       + [管理警报](/help/components/c-intelligent-alerts/alert-manager.md)
-      + [功能比较 &#x200B;](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
+      + [功能比较 ](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
       + [用例](/help/components/c-intelligent-alerts/alerts-use-cases.md)
    + 导出 {#exports}
       + [配置云导出帐户](/help/components/exports/cloud-export-accounts.md)
@@ -412,6 +412,11 @@ ht-degree: 99%
       + [管理导出](/help/components/exports/manage-exports.md)
       + [管理导出日志](/help/components/exports/manage-export-logs.md)
       + [导出故障诊断](/help/components/exports/troubleshoot-exports.md)
+      + 数据馈送 {#cja-data-feeds}
+         + [数据馈送概述](/help/components/exports/cja-data-feeds/data-feed-overview.md)
+         + [比较Adobe Analytics数据馈送](/help/components/exports/cja-data-feeds/df-comparison.md)
+         + [准备映射列](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
+         + [映射列](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
    + 数据词典 {#data-dictionary}
       + [概述](../components/data-dictionary/data-dictionary-overview.md)
       + [查看数据字典中的组件信息](../components/data-dictionary/view-data-dictionary.md)
@@ -546,7 +551,7 @@ ht-degree: 99%
 
 + 技术说明 {#technotes}
    + [访问控制](../technotes/access-control.md)
-   + [错误 ID](/help/technotes/badids.md)
+   + [无效 ID](/help/technotes/badids.md)
    + [浏览器和语言](/help/technotes/browser-language.md)
    + [数据中心](../technotes/data-centers.md)
    + [删除后果](../technotes/deletion.md)
