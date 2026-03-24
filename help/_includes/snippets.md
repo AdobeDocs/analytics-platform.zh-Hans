@@ -1,7 +1,7 @@
 ---
-source-git-commit: 62b3ad7d3f458eb1edd6906c26a3b8c0c053d64b
+source-git-commit: b0be8b726c4fab1bf9bb5f9462be84f39bdf184a
 workflow-type: tm+mt
-source-wordcount: '5312'
+source-wordcount: '5360'
 ht-degree: 93%
 
 ---
@@ -322,3 +322,7 @@ Customer Journey analytics 中的各种可视化图表旨在分析您为客户�
 ## CJA数据馈送不适用的列 {#cja-df-na}
 
 由于数据架构差异，此Analytics数据馈送列包含无法转换为Customer Journey Analytics等效项的数据。
+
+## CJA数据馈送用户代理 {#cja-df-ua}
+
+您不能同时收集用户代理信息和设备查找信息；这些维度的填充是互斥的。 在[配置数据流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup)时，您必须选择是要直接收集用户代理，还是要收集设备查找信息（基于用户代理）。

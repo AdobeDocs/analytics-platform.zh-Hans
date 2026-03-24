@@ -5,10 +5,10 @@ feature: Components
 hide: true
 hidefromtoc: true
 exl-id: 81d6e79e-8324-4726-9a48-10177b0a91b1
-source-git-commit: af5b30cd71ebe46e2af584ee502ef631c829f5ea
+source-git-commit: b0be8b726c4fab1bf9bb5f9462be84f39bdf184a
 workflow-type: tm+mt
-source-wordcount: '3356'
-ht-degree: 57%
+source-wordcount: '3768'
+ht-degree: 47%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 57%
 
 >[!NOTE]
 >
->此引用仅包括Adobe根据[Analytics数据馈送列引用](https://experienceleague.adobe.com/zh-hans/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference)视为当前的列。 如果您的Analytics数据馈送列未在此表格中列出，且您积极使用，请查阅贵组织的解决方案设计文档，以确定其在Customer Journey Analytics中的最佳等效项。
+>此引用仅包括Adobe根据[Analytics数据馈送列引用](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference)视为当前的列。 如果您的Analytics数据馈送列未在此表格中列出，且您积极使用，请查阅贵组织的解决方案设计文档，以确定其在Customer Journey Analytics中的最佳等效项。
 
 +++**`accept_language`**
 
@@ -109,9 +109,11 @@ AMO EF ID维度，用于Adobe Advertising集成。
 
 +++**`carrier`**
 
-Adobe Advertising 集成变量。指定移动设备运营商。
+指定移动设备运营商。
 
 {{cja-df-lookup}}
+
+{{cja-df-ua}}
 
 +++
 
@@ -127,11 +129,31 @@ Adobe Advertising 集成变量。指定移动设备运营商。
 
 通过 HTTP 请求头收集的客户端提示。
 
+在Adobe Analytics中，客户端提示作为连接字符串包含在此列中。 与`user_agent`列相比，这种方法被认为是一种更现代的方法。
+
+{{cja-df-ua}}
+
 +++
 
 +++**`ch_js`**
 
 通过用户代理客户端提示 JavaScript API 收集的客户端提示。
+
+在Adobe Analytics中，客户端提示作为连接字符串包含在此列中。 与`user_agent`列相比，这种方法被认为是一种更现代的方法。
+
+配置Web SDK时，您可以使用[`highEntropyUserAgentHints`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/context)上下文字符串收集此数据。 填充多个XDM字段而不是一个长连接字符串：
+
+* **操作系统版本**： `xdm.environment.browserDetails.userAgentClientHints.platformVersion`
+* **架构**： `xdm.environment.browserDetails.userAgentClientHints.architecture`
+* **设备型号**： `xdm.environment.browserDetails.userAgentClientHints.model`
+* **位**： `xdm.environment.browserDetails.userAgentClientHints.bitness`
+* **浏览器供应商**： `xdm.environment.browserDetails.userAgentClientHints.vendor`
+* **浏览器名称**： `xdm.environment.browserDetails.userAgentClientHints.brand`
+* **浏览器版本**： `xdm.environment.browserDetails.userAgentClientHints.version`
+
+有关详细信息，请参阅[用户代理客户端提示](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints)。
+
+{{cja-df-ua}}
 
 +++
 
@@ -255,11 +277,17 @@ Cookie支持维度。<br>Y：启用<br>N：禁用<br>U：未知
 
 {{cja-df-post}}
 
+{{cja-df-na}}
+
+Customer Journey Analytics没有事件类型的本机概念，在该概念中，它会根据点击的上下文自动包含或排除点击。 您可以使用`xdm.eventType`帮助确定大多数报告中应包含和排除哪些事件。
+
 +++
 
 +++**`cust_hit_time_gmt`**
 
 仅限启用了时间戳的报表包。随点击发送的时间戳（基于 UNIX® 时间）。
+
+Customer Journey Analytics没有时间戳与非时间戳报表包的概念。 请改用`xdm.timestamp`，并根据需要调整组件设置。
 
 {{cja-df-post}}
 
@@ -268,6 +296,8 @@ Cookie支持维度。<br>Y：启用<br>N：禁用<br>U：未知
 +++**`cust_visid`**
 
 在用 `visitorID` 设置情况下的自定义访客 ID。
+
+Customer Journey Analytics支持使用[`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap)的任意数量的标识。 如果您的组织使用自定义身份，则它很可能位于身份映射中。
 
 {{cja-df-post}}
 
@@ -289,9 +319,7 @@ Cookie支持维度。<br>Y：启用<br>N：禁用<br>U：未知
 
 同意管理选择加入维度。 每次点击可以出现多个值，各个值之间用竖线 (`\|`) 隔开。有效值包括 `DMP` 和 `SELL`。
 
-{{cja-df-na}}
-
-此列不适用，因为Customer Journey Analytics不???。
+如果您的组织具有数据管理平台，则该平台可能会填充此维度的所需XDM字段。
 
 +++
 
@@ -299,11 +327,15 @@ Cookie支持维度。<br>Y：启用<br>N：禁用<br>U：未知
 
 同意管理选择退出维度。 每次点击可以出现多个值，各个值之间用竖线 (`\|`) 隔开。有效值包括 `SSF`, `DMP` 和 `SELL`。
 
+如果您的组织具有数据管理平台，则该平台可能会填充此维度的所需XDM字段。
+
 +++
 
 +++**`date_time`**
 
 以可读格式表示的点击时间（基于报表包所在时区）。
+
+您可以使用`xdm.timestamp`并应用&#x200B;**[!UICONTROL 日期]**&#x200B;或&#x200B;**[!UICONTROL 日期时间]** [格式](/help/data-views/component-settings/format.md)组件设置。
 
 +++
 
@@ -311,11 +343,17 @@ Cookie支持维度。<br>Y：启用<br>N：禁用<br>U：未知
 
 域维度。 基于访客的网络接入点。
 
+在&#x200B;**[!UICONTROL 配置数据流]**&#x200B;时启用[网络查找](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure)。 如果XDM字段包含在您的架构中，则该字段为`xdm.environment.domain`。
+
 +++
 
 +++**`duplicated_from`**
 
 仅在包含点击复制 VISTA 规则的报表包中使用。指示从中复制点击的报表包。
+
+{{cja-df-na}}
+
+此列不适用，因为Customer Journey Analytics不具有VISTA规则的概念。
 
 +++
 
@@ -323,11 +361,19 @@ Cookie支持维度。<br>Y：启用<br>N：禁用<br>U：未知
 
 列出每一个算作重复的事件。
 
+{{cja-df-na}}
+
+Customer Journey Analytics没有充当所有量度重复标志的单个字段。 相反，每个指标都包含其自己的[指标去重组件设置](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication)。 因此，Customer Journey Analytics中没有与此Adobe Analytics数据馈送列等效的字段。
+
 +++
 
 +++**`duplicate_purchase`**
 
 确定此次点击对应的购买事件是重复事件因而被忽略的标记。
+
+虽然无法直接翻译为此Analytics数据馈送列，但其删除重复购买操作的功能仍然存在。 如果使用[[!UICONTROL Commerce详细信息]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details)字段组，则可以设置[指标去重组件设置](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication)，其中&#x200B;**[!UICONTROL 去重ID]**&#x200B;为`xdm.commerce.purchases.id`。
+
+如果需要在需要标记重复购买的位置进行直接翻译，则可以使用规则集中的[Deduplicate](/help/data-views/derived-fields/derived-fields.md)函数的&#x200B;**Derived字段**。
 
 +++
 
@@ -360,7 +406,7 @@ EF ID，用于Adobe Advertising集成。
 
 {{cja-df-post}}
 
-如果您的架构使用[[!UICONTROL Commerce详细信息]](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/field-groups/event/commerce-details)字段组，则某些量度可能会直接映射到以下XDM字段：
+如果您的架构使用[[!UICONTROL Commerce详细信息]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details)字段组，则某些量度可能会直接映射到以下XDM字段：
 
 * **结帐**： `xdm.commerce.checkouts.value`
 * **购物车添加次数**： `xdm.commerce.productListAdds.value`
@@ -373,7 +419,7 @@ EF ID，用于Adobe Advertising集成。
 某些量度可能使用事件序列化，这是Adobe Analytics允许完全控制重复数据删除的方式。 您可以使用[指标去重](/help/data-views/component-settings/metric-deduplication.md)组件设置来实现去重奇偶校验。
 
 * 如果您的指标在Adobe Analytics中按访问删除了重复项，则您可以在该指标的组件设置中将重复项删除范围设置为会话。
-* 如果您的量度在Adobe Analytics中按事件ID进行了重复数据删除，则该量度的XDM对象可能同时包含`value`和`id`字段。 如果您的架构使用[[!UICONTROL Commerce详细信息]](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/field-groups/event/commerce-details)字段组，则这些量度可能驻留在这些XDM字段中，您可以在量度的组件设置中设置&#x200B;**[!UICONTROL 重复数据删除ID]**&#x200B;字段：
+* 如果您的量度在Adobe Analytics中按事件ID进行了重复数据删除，则该量度的XDM对象可能同时包含`value`和`id`字段。 如果您的架构使用[[!UICONTROL Commerce详细信息]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details)字段组，则这些量度可能驻留在这些XDM字段中，您可以在量度的组件设置中设置&#x200B;**[!UICONTROL 重复数据删除ID]**&#x200B;字段：
 
    * **结帐**： `xdm.commerce.checkouts.id`
    * **购物车添加次数**： `xdm.commerce.productListAdds.id`
@@ -381,13 +427,23 @@ EF ID，用于Adobe Advertising集成。
    * **购物车移除**： `xdm.commerce.productListRemovals.id`
    * **购物车查看次数**： `xdm.commerce.productListViews.id`
    * **产品查看次数**： `xdm.commerce.productViews.id`
-   * **订单**： `xdm.commerce.purchases.id`
+
+如果要删除重复的订单量度，请参阅`duplicate_purchase`。
 
 +++
 
 +++**`exclude_hit`**
 
-确定报告中是否包含此点击的标记。对于被排除的点击，`visit_num` 列不递增。<br>1：未使用。属于某个已弃用的功能。<br>2：未使用。属于某个已弃用的功能。<br>3：已不再使用。用户代理排除<br>4：根据 IP 地址排除<br>5：缺少重要的点击信息，如 `page_url`、`pagename`、`page_event` 或 `event_list`<br>6：JavaScript 未正确处理点击<br>7：帐户特有的排除，如 VISTA 规则中的排除<br>8: 未使用。替代特定于帐户的排除。<br>9：未使用。属于某个已弃用的功能。<br>10：无效的货币代码<br>11：仅时间戳报表包上缺少时间戳的点击，或非时间戳报表包上包含时间戳的点击<br>12：未使用。属于某个已弃用的功能。<br>13：未使用。属于某个已弃用的功能。<br>14：与 Analytics 点击不匹配的 Target 点击<br>15：当前未使用。<br>16：与 Analytics 点击不匹配的 Advertising Cloud 点击
+确定报告中是否包含此点击的标记。对于被排除的点击，`visit_num` 列不递增。
+
+Customer Journey Analytics不接受开箱即用的“排除的点击”。 但是，如果您具有标记要排除的特定点击的XDM字段，则可以重新创建此功能：
+
+1. 确保将标记已排除点击的XDM字段作为一个组件（维度或量度，具体取决于您如何设置此标记）包含在内。 在报告[中选择](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview)隐藏组件可能对此字段有益。
+1. 在[数据视图设置](/help/data-views/session-settings.md)中，选择&#x200B;**[!UICONTROL 添加区段]**&#x200B;下拉菜单，然后选择&#x200B;**[!UICONTROL 创建区段]**。
+1. 创建一个区段，以排除存在排除点击组件的所有事件或包含要排除的值。
+1. 在区段和数据视图上选择&#x200B;**[!UICONTROL 保存]**。
+
+现在，Customer Journey Analytics报表中不存在排除的点击，但在数据馈送导出中仍然可用。
 
 +++
 
@@ -907,6 +963,14 @@ Mobile Services 启动搜索词
 表示访客的操作系统的数值 ID。基于 `user_agent` 列。
 
 {{cja-df-lookup}}
+
+当[配置数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure)时，您可以启用&#x200B;**[!UICONTROL 设备查找]**。 如果启用，请选中&#x200B;**[!UICONTROL 操作系统]**&#x200B;复选框。 如果您在架构中包含以下XDM字段，则这样做会自动填充这些字段：
+
+* **OS供应商**： `xdm.environment.operatingSystemVendor`
+* **OS名称**： `xdm.environment.operatingSystem`
+* **OS版本**： `xdm.environment.operatingSystemVersion`
+
+{{cja-df-ua}}
 
 +++
 
