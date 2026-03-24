@@ -325,4 +325,4 @@ Customer Journey analytics 中的各种可视化图表旨在分析您为客户�
 
 ## CJA数据馈送用户代理 {#cja-df-ua}
 
-您不能同时收集用户代理信息和设备查找信息；这些维度的填充是互斥的。 在[配置数据流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup)时，您必须选择是要直接收集用户代理，还是要收集设备查找信息（基于用户代理）。
+您不能同时收集用户代理信息和设备查找信息；这些维度的填充是互斥的。 在[配置数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure#geolocation-device-lookup)时，您必须选择是要直接收集用户代理，还是要收集设备查找信息（基于用户代理）。
