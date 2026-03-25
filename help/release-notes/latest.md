@@ -3,10 +3,10 @@ title: 当前 Customer Journey Analytics 发行说明
 description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: a8a09834818fafc0223d769c5371f829377860ff
+source-git-commit: 5319c0aafa5c92215176044a35953ac1e183eb53
 workflow-type: tm+mt
-source-wordcount: '1621'
-ht-degree: 22%
+source-wordcount: '1630'
+ht-degree: 23%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 22%
 
 | 功能和描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | -----------|-----------|-----------|
-| **标头覆盖** <br/>您可以在Content Analytics中指定标头名称和密码标头值。 此[标头覆盖配置](/help/content-analytics/config/guided.md#header-overrides)确保Content Analytics发送自定义HTTP标头以绕过任何已实施的机器人检测或关机流量技术。 |  | 2026年2月2 |
+| **标头覆盖** <br/>您可以在Content Analytics中指定标头名称和密码标头值。 此[标头覆盖配置](/help/content-analytics/config/guided.md#header-overrides)确保Content Analytics发送自定义HTTP标头以绕过任何已实施的机器人检测或关机流量技术。 |  | 2026年2月2日 |
 | **合并来自多个IMS组织的报表包**<br/>&#x200B;您可以使用Analytics Source Connector合并来自多个IMS组织的报表包。 此[跨IMS数据映射](/help/getting-started/aa-vs-cja/mapping-data-ims-orgs.md)功能允许组织拥有其客户数据的组合视图，即使该客户数据分布在多个IMS组织中也是如此。 <p>**注意：**&#x200B;此配置仅在向 Adobe 客户关怀团队提交请求后才可用。</p> |  | 2026年2月12日 |
 | **在自由格式表中包含多个维度列**<br/>&#x200B;现在，您最多可以在自由格式表中包含5个维度列，从而允许您并排查看多个维度项目。 每一行的维度项将作为一个拼接后的单一维度项进行处理。<p>您可以对包含多个维度列的自由格式表应用筛选、排序、细分等操作，以实现更深入、更定制化的分析。</p><p>此前，自由格式表中只能包含 1 个维度列。</p><p>有关详细信息，请参阅[在自由格式表中包含多个维度列](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md)。</p> | 2026 年 1 月 28 日 | 2026年3月4日 <p>（原计划于2026年2月18日）</p> |
 | **按多列对表进行排序**<br/>&#x200B;您现在可以在Analysis Workspace中按多列对自由格式表的数据进行排序，无论它们是维度还是指标。<p>当按多个列进行排序时，数据将根据您为每个列指定的优先级进行排序。优先级编号会显示在排序图标旁。</p><p>有关详细信息，请参阅[筛选和排序自由格式表](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)。</p> | 2026 年 1 月 28 日 | 2026年3月4日 <p>（原计划于2026年2月18日）</p> |
@@ -33,10 +33,10 @@ ht-degree: 22%
 | **Analysis Workspace实践教程**<br/>&#x200B;现在提供了新的实践教程，可指导新用户了解在Analysis Workspace中使用面板、可视化图表和组件的基础知识。 <p>有关详细信息，请参阅[Customer Journey Analytics登录页面](/help/getting-started/landing.md)。</p> | | 2026年3月18日 |
 | **支持数据镜像**<br/>&#x200B;通过为Experience Platform中的特定源连接器支持基于模型的架构和更改数据捕获(CDC)功能，Customer Journey Analytics将能够支持[、](/help/data-mirror/data-mirror.md)和[!DNL Snowflake]等数据仓库解决方案的[!DNL Azure Databricks]数据镜像[!DNL Google BigQuery]功能。<p>要访问 Beta 版本，请联系您的 Adobe 帐户团队。</p> | Beta 版：2025 年 9 月 24 日 | 2026年3月25日 |
 | **Data Insights Agent与Copilot的集成** <br/> Data Insights Agent现在与Microsoft Copilot集成，允许您直接在Microsoft工具（包括Teams、Powerpoint等）中使用自然语言提示与Customer Journey Analytics数据交互。<p>（文档链接见下文。）</p> | | 2026 年 3 月 26 日 |
-| **Adobe工程代理中的数据验证** <br/>Data Engineering Agent中提供了新的数据验证技能。 在Customer Journey Analytics中分析数据之前，这些技能可帮助团队直接在Adobe Experience Platform中快速评估数据质量。 <p>数据验证技能支持按需验证、字段级验证和数据集级验证，从而将统计摘要与对无效或异常值的智能检测结合起来。 </p><p>使用数据验证技能可减少手动QA工作量，并加快跨数据工程工作流的受信任数据载入和转换。</p><p>（文档链接见下文。）<!--For more information, see [Data Engineering Agent]() (will be in this repo: https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-ai/experience-cloud-ai/agents/cja-data-insights-agent).--></p> | | 2026年3月31日 |
+| **Adobe工程代理中的数据验证** <br/>Data Engineering Agent中提供了新的数据验证技能。 在Customer Journey Analytics中分析数据之前，这些技能可帮助团队直接在Adobe Experience Platform中快速评估数据质量。 <p>数据验证技能支持按需验证、字段级验证和数据集级验证，从而将统计摘要与对无效或异常值的智能检测结合起来。 </p><p>使用数据验证技能可减少手动QA工作量，并加快跨数据工程工作流的受信任数据载入和转换。</p><p>（文档链接见下文。）<!--For more information, see [Data Engineering Agent]() (will be in this repo: https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/cja-data-insights-agent).--></p> | | 2026年4月底 <p>（原计划于2026年3月31日发布）</p> |
 | **将划分应用于面板**<br/>&#x200B;您现在可以将划分应用于面板。 在面板级别应用划分时，划分将应用于面板中所有自由格式表的所有列。 | 2026 年 3 月 | 2026 年 5 月 |
 | **流媒体服务：支持计划数据** <br/>您现在可以上传过去直播流媒体内容的计划数据，以便更轻松、更准确地跟踪收视率。<p>以下是支持计划数据上传的直播内容示例：</p><ul><li>FAST（免费广告支持电视）平台</li><li>本地流</li><li>直播体育赛事</li></ul><p>上传计划数据允许您跟踪在上传文件中指定的时间内运行的各个节目的观看人数数据。您甚至可以收集特定主题或节目片段的观看人数数据。</p><p>无论您如何实现流媒体收集，这些功能都是可用的。</p><p>以前，在分析直播内容时很难准确地将特定场次与特定节目联系起来，也不可能将特定场次与单个主题或节目片段联系起来。</p><p>如需了解更多信息，请参阅[上传计划数据以跟踪实时内容](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/media-use-cases/track-schedule-data)</p> | 2025 年 10 月 29 日 | 2026 年上半年<p>（原计划于 2025 年 10 月 29 日发布）</p> |
-| **意大利语支持**<br/> Customer Journey Analytics中的Analysis Workspace现在支持意大利语区域设置(it-IT)。 <p>Customer Journey Analytics支持Experience Platform UI中支持的所有语言，如Experience Platform UI的[浏览器和语言支持](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/platform-ui/browser-language-support#language-support)中所述。</p><p>您可以在Experience Platform中[更改默认语言](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/platform-ui/browser-language-support#change-default-language)。</p> | | 2026年4月8日 |
+| **意大利语支持**<br/> Customer Journey Analytics中的Analysis Workspace现在支持意大利语区域设置(it-IT)。 <p>Customer Journey Analytics支持Experience Platform UI中支持的所有语言，如Experience Platform UI的[浏览器和语言支持](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/browser-language-support#language-support)中所述。</p><p>您可以在Experience Platform中[更改默认语言](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/browser-language-support#change-default-language)。</p> | | 2026年4月8日 |
 
 ## Customer Journey Analytics 中的修复
 
