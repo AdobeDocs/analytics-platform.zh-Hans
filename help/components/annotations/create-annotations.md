@@ -4,7 +4,7 @@ description: 了解如何在Analysis Workspace中创建注释。
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 91%
@@ -29,7 +29,8 @@ ht-degree: 91%
 
 要定义注释，请使用[[!UICONTROL Annotation Builder]](#annotation-builder)。
 
-<!-- Should we really mention API here. If so, we can do it all over the place in the docs...
+<!-- 
+Should we really mention API here. If so, we can do it all over the place in the docs...
 | **Use the [Customer Journey Analytics Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | The Customer Journey Analytics Annotations APIs allow you to create, update, or retrieve annotations programmatically through Adobe Developer. These APIs use the same data and methods that Adobe uses inside the product UI. |
 -->
 

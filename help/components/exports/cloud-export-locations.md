@@ -5,7 +5,7 @@ title: 配置云导出位置
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 6aea4179b368b50641a03a9cb53e4243fa428f4c
+source-git-commit: b9efb621523f8bbfbb3afe7db4db2e60fcddd34c
 workflow-type: tm+mt
 source-wordcount: '3136'
 ht-degree: 20%
@@ -107,11 +107,11 @@ ht-degree: 20%
 
    1. 打开[Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/)。
 
-   1. 转到&#x200B;[!UICONTROL **存储帐户**] > [!UICONTROL **（附加的容器）**] > [!UICONTROL **Blob容器**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name &#x200B;***。
+   1. 转到&#x200B;[!UICONTROL **存储帐户**] > [!UICONTROL **（附加的容器）**] > [!UICONTROL **Blob容器**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name ***。
 
       >[!NOTE]
       >
-      >文件夹名称&#x200B;**[!UICONTROL cjaexport-_number_]**&#x200B;是Azure Storage Explorer提供的默认名称。 如果您只有与SAS URI关联的单个连接（正常），则此文件夹的名称将为&#x200B;**[!UICONTROL cjaexport-1]**。
+      >文件夹名称&#x200B;**[!UICONTROL cjaexport-_number_]**是Azure Storage Explorer提供的默认名称。 如果您只有与SAS URI关联的单个连接（正常），则此文件夹的名称将为&#x200B;**[!UICONTROL cjaexport-1]**。
 
 
       ![访问Azure存储资源管理器中的文件](assets/azure-storage-explorer-access.png)

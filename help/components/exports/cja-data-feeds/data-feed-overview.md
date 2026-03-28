@@ -5,7 +5,8 @@ title: Analytics 数据馈送概述
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: b0b86424399ea79deca8f1d522d52354dfaaa8c7
+exl-id: 991a7861-cbde-4d55-935c-d56c8031853e
+source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 40%
@@ -37,12 +38,14 @@ Customer Journey Analytics中的数据馈送功能与Adobe Analytics不同。 �
 * 数据馈送最佳实践<!--add link-->：创建和管理数据馈送的最佳实践。
 * 创建数据馈送<!--add link-->：有关创建数据馈送的技术详细信息，详细说明了各个字段
 * 管理数据馈送<!--add link-->：了解有关导览数据馈送界面的详细信息
-* 数据馈送内容<!--add link-->：了解压缩文件<!-- Is this still the output users can download from the destination? I aske Jun. -->中的内容
+* 数据馈送内容<!--add link-->：了解压缩文件中包含的内容
 * 数据列定义<!--add link-->：所有可用列的完整列表。
+
+<!-- Is this still the output users can download from the destination? I aske Jun. -->
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在数据馈送界面中导航](https://video.tv.adobe.com/v/3428569?captions=chi_hans&quality=12&learn=on){target="_blank"}，获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在数据馈送界面中导航](https://video.tv.adobe.com/v/25452?quality=12&learn=on){target="_blank"}，获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -50,6 +53,6 @@ Customer Journey Analytics中的数据馈送功能与Adobe Analytics不同。 �
 
 >[!BEGINSHADEBOX]
 
-查看 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [查找您的数据馈送 ID](https://video.tv.adobe.com/v/3418478?captions=chi_hans&quality=12&learn=on){target="_blank"}，获取演示视频。
+查看 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [查找您的数据馈送 ID](https://video.tv.adobe.com/v/335747?quality=12&learn=on){target="_blank"}，获取演示视频。
 
 >[!ENDSHADEBOX]

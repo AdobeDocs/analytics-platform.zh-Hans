@@ -5,7 +5,7 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 88%
@@ -33,7 +33,7 @@ Customer Journey Analytics 提供了一项非常有用的强大功能，就是�
 
 ## 将网站数据和呼叫中心数据导入 Platform
 
-将您的数据导入 Adobe Experience Platform。请参阅 Adobe Experience Platform 文档中的[创建架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans)和[摄取数据](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans)。
+将您的数据导入 Adobe Experience Platform。请参阅 Adobe Experience Platform 文档中的[创建架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans)和[摄取数据](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans)。
 
 将数据导入 Platform 时，遵循以下提示将有助于在所生成的报告增加洞察信息：
 
@@ -59,11 +59,11 @@ Customer Journey Analytics需要一个通用标识符来生成[组合数据集](
 创建连接后，可以[创建数据视图](/help/data-views/create-dataview.md)，以供在 Analysis Workspace 使用。有用的组件包括：
 
 * 一个页面维度，它具有最终点击和会话持久性。可将呼叫中心指标与客户在致电之前查看的最后一页联系在一起。
-* 一个呼叫指标，它使用“呼叫中心原因”架构字段增加发生次数。请使用[指标去重](/help/data-views/component-settings/metric-deduplication.md)，以使其每个会话仅增加一次。
+* 一个呼叫指标，它使用“呼叫中心原因”架构字段增加发生次数。请使用[重复量度删除](/help/data-views/component-settings/metric-deduplication.md)，以使其每个会话仅增加一次。
 
 ## 创建可视化图表
 
-可使用以下可视化图表深入探查拼合的数据集。
+可使用以下可视化图表洞察拼接的数据集。
 
 ### 数据集重叠
 
@@ -90,7 +90,7 @@ Customer Journey Analytics需要一个通用标识符来生成[组合数据集](
 
 <!-- Complement with donut visualization -->
 
-通过按原因或类别划分致电可进一步增加见解。
+通过按原因或类别划分致电可进一步增加洞察。
 
 1. 在组件列表中的“致电原因”维度下单击右侧的 V 形。此操作显示个别维度值。
 2. 将所需的维度值拖到“致电”量度下，这样将按每个相应的致电原因对该量度进行分段。
@@ -100,7 +100,7 @@ Customer Journey Analytics需要一个通用标识符来生成[组合数据集](
 
 ### 流程可视化
 
-对于客户在使用呼叫中心渠道之前正在尝试做什么，可获得深入的见解。此流程可视化帮助您了解客户致电呼叫中心所经历的最常见的历程。通过此见解，可确定对于网站可作出的最有效的改进，以使客户降低致电的可能性。
+对于客户在使用呼叫中心渠道之前正在尝试做什么，可获得深入的洞察。此流程可视化帮助您了解客户致电呼叫中心所经历的最常见的历程。通过此洞察，可确定对于网站可作出的最有效的改进，以使客户降低致电的可能性。
 
 1. 在左侧单击&#x200B;**[!UICONTROL 可视化]**&#x200B;选项卡，然后将流程可视化拖至工作区画布上。
 2. 在左侧单击&#x200B;**[!UICONTROL 组件]**&#x200B;选项卡，并找到“致电原因”维度。
@@ -145,4 +145,5 @@ wanted to understand when someone interacts with a facet, whats the highest perc
 
 use sequential segments, but you lose the ability to use attribution IQ
 
-## What to do when you've found insight -->
+## What to do when you've found insight 
+-->

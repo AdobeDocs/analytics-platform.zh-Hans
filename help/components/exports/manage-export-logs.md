@@ -5,7 +5,7 @@ title: 管理导出日志
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
 role: User
-source-git-commit: bf76b8688dc0c463c032dd94e88450fed5488949
+source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
 workflow-type: tm+mt
 source-wordcount: '936'
 ht-degree: 7%
@@ -14,7 +14,7 @@ ht-degree: 7%
 
 # 管理导出日志
 
-导出日志提供有关每次导出的详细信息，并在每次将Analysis Workspace数据导出到云时生成。 (有关如何将数据导出到云的信息，请参阅[将Customer Journey Analytics报表导出到云](/help/analysis-workspace/export/export-cloud.md)。)
+导出日志提供有关每次导出的详细信息，并在每次将Analysis Workspace数据导出到云时生成。 （有关如何将数据导出到云的信息，请参阅[将Customer Journey Analytics报表导出到云](/help/analysis-workspace/export/export-cloud.md)。）
 
 对于计划的导出，日志反映发送日志时的导出设置。 无法删除日志。
 
@@ -72,17 +72,21 @@ ht-degree: 7%
 
 1. 在搜索字段中，开始键入与要搜索的日志相关联的任何信息。 您可以从表中任何可用的列搜索数据。
 
-<!-- removed for MVP: Retry an export You can re-run the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. 
+<!-- 
+removed for MVP: Retry an export You can re-run the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. 
 
 Retrying an export that has a status of Pending will delay the export process.
 
-This option is not available when selecting multiple logs. -->
+This option is not available when selecting multiple logs. 
+-->
 
-<!-- 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+<!-- 
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
 1. Select the [!UICONTROL **Logs**] tab, then select a log.
 
-1. Select [!UICONTROL **Retry**]. -->
+1. Select [!UICONTROL **Retry**]. 
+-->
 
 ## 编辑导出
 

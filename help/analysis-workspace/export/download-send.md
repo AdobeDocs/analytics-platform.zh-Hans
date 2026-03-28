@@ -4,7 +4,7 @@ title: 下载项目和数据
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: 1cb9e18f79e8ca49b63aa7d8117ce6c61a020454
+source-git-commit: 873247c643b3be4bb561955af84dd4bbb4e1d81f
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 22%
@@ -77,7 +77,8 @@ ht-degree: 22%
 
 * 从任何表或可视化图表的标题中，从上下文菜单中选择&#x200B;**[!UICONTROL 以CSV格式下载数据]**。 这样可将表中显示的数据或可视化的基础数据源下载为 CSV 格式。
 
-<!-- Only relevant as soon as CJA supports Map visualization 
+<!-- 
+Only relevant as soon as CJA supports Map visualization 
   >[!NOTE]
   >
   >  Note: the Map visualization does not support this option.
@@ -89,7 +90,7 @@ ht-degree: 22%
 
 ## 以CSV文件格式下载项目 {#download-items}
 
-如果要分析表中的400多行可见数据，请从表标题或任何行的上下文菜单中选择&#x200B;**以CSV格式下载项目(_Dimension名称_)**。 此选项会导出所选维度的最多 50,000 个维度项（根据表格排序方式），并会应用排序选项和过滤器。如果从表的顶部选择此选项，将导出表中的第一个维。
+如果要分析表中的400多行可见数据，请从表标题或任何行的上下文菜单中选择&#x200B;**以CSV格式下载项目（_Dimension名称_）**。 此选项会导出所选维度的最多 50,000 个维度项（根据表格排序方式），并会应用排序选项和过滤器。如果从表的顶部选择此选项，将导出表中的第一个维。
 
 ![将项目下载为 CSV（页面）的选项。](assets/download-items-as-csv.png)
 
@@ -106,7 +107,7 @@ ht-degree: 22%
 
 自由格式表的以下功能适用于下载的文件：
 
-* 以过滤器形式应用所有区段。
+* 以过滤器形式应用所有面板区段。
 * 在每列上方以过滤器形式应用表格中所选维度&#x200B;**上面**&#x200B;的细分。
 * 删除表格中所选维度&#x200B;**下面**&#x200B;的细分。
 
@@ -116,15 +117,15 @@ ht-degree: 22%
 
 下载文件时，您会看到以下通知：
 
-* 已请求蓝色&#x200B;**[!UICONTROL _表名&#x200B;_-_Dimension _.csv。_x _%完成]**&#x200B;表示进度。 要随时取消下载，请选择&#x200B;**[!UICONTROL 取消下载]**。 如果要关闭消息，请选择![CrossSize100](/help/assets/icons/CrossSize100.svg)，这样不会取消下载。
-* 在文件下载完成后，已下载绿色的&#x200B;**[!UICONTROL _表名&#x200B;_-_Dimension _.csv]**&#x200B;完成通知。 该文件将下载到为您的浏览器配置的下载文件夹。
+* 已请求蓝色&#x200B;**[!UICONTROL _表名&#x200B;_-_Dimension _.csv。_x _%完成]**表示进度。 要随时取消下载，请选择&#x200B;**[!UICONTROL 取消下载]**。 如果要关闭消息，请选择![CrossSize100](/help/assets/icons/CrossSize100.svg)，这样不会取消下载。
+* 在文件下载完成后，已下载绿色的&#x200B;**[!UICONTROL _表名&#x200B;_-_Dimension _.csv]**完成通知。 该文件将下载到为您的浏览器配置的下载文件夹。
 
 如果您一次请求多个下载，您将收到一条通知，说明每个额外的下载都将排队等待，直到前一个下载完成为止。
 
 
 ## 下载敏感数据 {#sensitive}
 
-想象一下[数据治理策略](/help/data-views/data-governance.md)阻止数据下载。 并且在您报告的数据视图中打开此策略。 因此，项目的任何下载(例如通过电子邮件发送或共享PDF文件时)都会散列标记为敏感的数据字段。 您仍然可以在Analysis Workspace中对这些字段进行分析。 如果您尝试通过电子邮件发送或以其他方式共享项目，则PDF或CSV文件中的敏感数据字段将显示为空。
+想象一下[数据治理策略](/help/data-views/data-governance.md)阻止数据下载。 并且在您报告的数据视图中打开此策略。 因此，项目的任何下载（例如通过电子邮件发送或共享PDF文件时）都会散列标记为敏感的数据字段。 您仍然可以在Analysis Workspace中对这些字段进行分析。 如果您尝试通过电子邮件发送或以其他方式共享项目，则PDF或CSV文件中的敏感数据字段将显示为空。
 
 如果标记为敏感的数据字段包含在数据视图中，则从屏幕中选择和复制数据的选项将限制为数据视图中的所有数据。
 

@@ -3,7 +3,7 @@ description: 了解如何共享、筛选、标记、批准、复制、删除计�
 title: 管理计算量度
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 28%
@@ -56,9 +56,9 @@ ht-degree: 28%
 | ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL 添加]** | 使用[计算量度生成器](cm-build-metrics.md)添加其他计算量度。 |
 | ![Search](/help/assets/icons/Search.svg) | [!UICONTROL *按标题搜索*] | 在列表中未选择计算指标时，使用此搜索字段搜索筛选器。 |
 | ![Label](/help/assets/icons/Label.svg) | **[!UICONTROL 标记]** | 标记所选的计算指标。 在&#x200B;**[!UICONTROL 标记计算量度]**&#x200B;对话框中，选择或取消选择所选计算量度的标记。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存选定计算量度的标记。 有关详细信息，请参阅[标记计算量度](cm-tagging.md)。 |
-| ![Share](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL 共享]** | 共享所选的计算指标。 在&#x200B;**[!UICONTROL 共享计算量度]**&#x200B;对话框中，您可以![搜索](/help/assets/icons/Search.svg) *搜索个人或组*，也可以选择&#x200B;**[!UICONTROL 组织]**&#x200B;或&#x200B;**[!UICONTROL 组]**。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存所选计算量度的共享详细信息。 有关详细信息，请参阅[共享计算量度](cm-sharing.md)。 |
+| ![共享](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL 共享]** | 共享所选的计算指标。 在&#x200B;**[!UICONTROL 共享计算量度]**&#x200B;对话框中，您可以![搜索](/help/assets/icons/Search.svg) *搜索个人或组*，也可以选择&#x200B;**[!UICONTROL 组织]**&#x200B;或&#x200B;**[!UICONTROL 组]**。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存所选计算量度的共享详细信息。 有关详细信息，请参阅[共享计算量度](cm-sharing.md)。 |
 | ![Delete](/help/assets/icons/Delete.svg) | **[!UICONTROL 删除]** | 删除所选的计算指标。 系统将提示您确认。 |
-| ![Edit](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名单个选定的计算指标。 选中后，您可以内联重命名计算指标。 |
+| ![编辑](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名单个选定的计算指标。 选中后，您可以内联重命名计算指标。 |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL 批准]** | 批准所选的计算指标。 请参阅[批准计算量度](cm-approving.md)。 |
 | ![Copy](/help/assets/icons/Copy.svg) | **[!UICONTROL 复制]** | 复制所选的计算指标。 新计算量度是使用相同的名称和后缀`(Copy)`创建的 |
 | ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL 导出至 CSV]** | 将计算量度导出到`Calculated  metric List.csv`文件。 |
@@ -74,7 +74,8 @@ ht-degree: 28%
 有关详细信息，请参阅[筛选计算量度列表](cm-filter.md)。
 
 
-<!-- OLD CONTENT 
+<!-- 
+OLD CONTENT 
 
 The Calculated metric manager shows you all the filters you own and that have been shared with you. Admin-level users can see all custom metrics in the organization. This overview presents the user interface and the capabilities of the Calculated metric manager.
 

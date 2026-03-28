@@ -4,7 +4,7 @@ title: 过滤和排序
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 39af20da14a5fb96fe01db31af5fc37b7e4aee16
+source-git-commit: 873247c643b3be4bb561955af84dd4bbb4e1d81f
 workflow-type: tm+mt
 source-wordcount: '1575'
 ht-degree: 47%
@@ -44,16 +44,19 @@ Analysis Workspace 中的过滤器可帮助您显示最重要的信息。
 
 1. 将鼠标悬停在要排除的行上，然后选择![关闭](/help/assets/icons/Close.svg)。
 
-   按住&#x200B;***Shift***&#x200B;键以选择一定范围的行，或按住&#x200B;***Command***&#x200B;键(在Mac上)或&#x200B;***Ctrl***&#x200B;键（在Windows上）以选择多行。
+   按住&#x200B;***Shift***&#x200B;键以选择一定范围的行，或按住&#x200B;***Command***&#x200B;键（在Mac上）或&#x200B;***Ctrl***&#x200B;键（在Windows上）以选择多行。
 
-<!--### Right-click > Delete selected rows
+<!--
+### Right-click > Delete selected rows
 
 Note: this option does not seem to work. AN-338422
 
 1. Select 1 or more rows. 
 1. Right-click and select **[!UICONTROL Delete Selected Rows]**. 
 
-   This action will remove the rows from the table and apply a table filter.-->
+   This action will remove the rows from the table and apply a table filter
+ 
+-->
 
 
 ### 对表应用简单或高级筛选
