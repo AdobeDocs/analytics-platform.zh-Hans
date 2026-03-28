@@ -121,7 +121,7 @@ Customer Journey Analytics 扩展了 ECID 之外的身份标识概念，以包�
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Customer Journey Analytics 中使用身份标识](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/visitor-id/understanding-how-customer-journey-analytics-uses-identity){target="_blank"}获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Customer Journey Analytics 中使用身份标识](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/visitor-id/understanding-how-customer-journey-analytics-uses-identity){target="_blank"}获取演示视频。
 
 >[!ENDSHADEBOX]
 
