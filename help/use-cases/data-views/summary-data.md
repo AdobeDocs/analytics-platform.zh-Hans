@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: b54083d85c0e07605c567a8d44824884cdc18c4d
 workflow-type: tm+mt
-source-wordcount: '5021'
+source-wordcount: '5014'
 ht-degree: 15%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 15%
 
 +++摘要数据
 
-| _id | campaign_name | 成本 | 印象 | campaign_id | network | ad_group | timestamp |
+| _id | campaign_name | 成本 | 印象 | campaign_id | network | ad_group | 时间戳 |
 |---|---|---:|---:|---|---|---|---|
 | 1 | 123营销活动 | 100 | 5000 | abc123 | facebook | abc-adgroup | 2024-07-18T18:20:39.000Z |
 | 2 | 123营销活动 | 50 | 4000 | def123 | facebook | def-adgroup | 2024-07-18T18:20:39.000Z |
@@ -50,7 +50,7 @@ ht-degree: 15%
 | 17 | 321营销活动 | 20 | 2500 | def321 | facebook | def-adgroup | 2024-07-18T18:20:39.000Z |
 | 18 | 321营销活动 | 15 | 2250 | ghi321 | facebook | ghi-adgroup | 2024-07-18T18:20:39.000Z |
 
-[![数据下载](/help/assets/icons/DataDownload.svg)](./assets/summary-data.csv)
+[！[数据下载](/help/assets/icons/DataDownload.svg)](./assets/summary-data.csv)
 
 +++
 
@@ -67,7 +67,7 @@ ht-degree: 15%
 
 事件数据在示例事件数据集中可用。 示例数据如下所示：
 
-| timestamp | _id | page_name | person_id | tracking_code | 订单 | revenue_amont |
+| 时间戳 | _id | page_name | person_id | tracking_code | 订单 | revenue_amont |
 |---|---:|---|---|---|---:|---:|
 | 2024-07-18T19:15:39+00:00 | 1 | 主页 | person-1abc123 | abc123 |  |  |
 | 2024-07-18T19:15:39+00:00 | 2 | 确认页面 | person-1abc123 |  | 1 | 174.25 |
@@ -249,7 +249,7 @@ ht-degree: 15%
 | 2024-07-18T19:15:39+00:00 | 178 | 确认页面 | person-142def654 |  | 1 | 174.25 |
 | 2024-07-18T19:15:39+00:00 | 179 | 主页 | person-143ghi654 | ghi654 |  |  |
 
-[![数据下载](/help/assets/icons/DataDownload.svg)](./assets/event-data.csv)
+[！[数据下载](/help/assets/icons/DataDownload.svg)](./assets/event-data.csv)
 
 +++
 
@@ -278,7 +278,7 @@ ht-degree: 15%
 | 17 | def321 | def-adgroup | 321营销活动 |
 | 18 | ghi321 | ghi-adgroup | 321营销活动 |
 
-[![数据下载](/help/assets/icons/DataDownload.svg)](./assets/lookup-data.csv)
+[！[数据下载](/help/assets/icons/DataDownload.svg)](./assets/lookup-data.csv)
 +++
 
 >[!INFO]
@@ -369,7 +369,7 @@ ht-degree: 15%
    1. 请确保&#x200B;**[!UICONTROL 数据格式]**&#x200B;和&#x200B;**[!UICONTROL 分隔符]**&#x200B;具有示例数据的正确值。 例如，**[!UICONTROL 已分隔]**&#x200B;作为&#x200B;**[!UICONTROL 数据格式]**，**[!UICONTROL 已分隔]**&#x200B;作为&#x200B;**[!UICONTROL 分隔符]**。
    1. 摘要数据的样本（10条记录）显示在&#x200B;**[!UICONTROL 样本数据]**&#x200B;中。
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
-1. 在&#x200B;**[!UICONTROL 工作流]** > **[!UICONTROL 将CSV映射到XDM架构]**&#x200B;向导的&#x200B;**[!UICONTROL 映射]**&#x200B;步骤中：
+1. 在&#x200B;**[!UICONTROL 工作流]** > **[!UICONTROL 将CSV映射到XDM架构]**&#x200B;向导的&#x200B;**[!UICONTROL 映射]**步骤中：
    ![示例数据集映射](../assets/example-dataset-mapping.png)
    1. 检查&#x200B;**[!UICONTROL Source数据]**&#x200B;的所有数据字段是否正确映射到架构中对应的&#x200B;**[!UICONTROL 目标字段]**。 对于示例数据，不会报告任何错误，因为您明确命名了架构中的字段，类似于示例数据中的字段名称。 否则，您可以使用此屏幕来更正映射。
    1. 您可以选择选择![齿轮](/help/assets/icons/Gear.svg) **[!UICONTROL 验证]**&#x200B;以（再次）验证数据。
@@ -447,7 +447,7 @@ ht-degree: 15%
 1. 选择&#x200B;**[!UICONTROL 创建新数据视图]**。
 1. 在&#x200B;**[!UICONTROL 数据视图]**&#x200B;中，浏览向导屏幕以配置数据视图。
    1. 在&#x200B;**[!UICONTROL 数据视图]**&#x200B;的&#x200B;**[!UICONTROL 配置]**&#x200B;步骤中：
-      1. 从&#x200B;**[!UICONTROL 设置]**&#x200B;中选择连接 | **[!UICONTROL 连接]**。 例如，**[!UICONTROL 使用摘要数据的连接示例]**。
+      1. 从&#x200B;**[!UICONTROL 设置]** | **[!UICONTROL 连接]**&#x200B;中选择连接。 例如，**[!UICONTROL 使用摘要数据的连接示例]**。
       1. 为您的数据视图输入&#x200B;**[!UICONTROL 名称]**，例如`Example Data View Using Summary Data`。
       1. 保留所有其他设置。
       1. 选择&#x200B;**[!UICONTROL 保存并继续]**。
@@ -463,15 +463,15 @@ ht-degree: 15%
          | 订单数 | 示例事件数据数据集 | 整数 | *_tenant*.订单 |
          | 收入 | 示例事件数据数据集 | 双精度型 | *_tenant*.revenue_amount |
 
-         **Dimensions**
+         **维度**
 
          | 组件名称 | 数据集 | 架构数据类型 | 架构路径 |
          |---|---|---|---|
          | 广告组（查找） | 示例查找数据集 | 字符串 | *_tenant*.ad_group |
-         | 广告组（摘要） | 示例摘要数据数据集 | 字符串 | *_tenant*.ad_group |
+         | 广告组 | 示例摘要数据数据集 | 字符串 | *_tenant*.ad_group |
          | 营销活动ID | 示例摘要数据数据集 | 字符串 | *_tenant*.campaign_id |
          | 营销活动名称（查找） | 示例查找数据集 | 字符串 | *_tenant*.campaign_name |
-         | 营销活动名称（摘要） | 示例摘要数据数据集 | 字符串 | *_tenant*.campaign_name |
+         | 营销活动名称 | 示例摘要数据数据集 | 字符串 | *_tenant*.campaign_name |
          | 网络 | 示例摘要数据数据集 | 字符串 | *_tenant*.network |
          | 页面名称 | 示例事件数据数据集 | 字符串 | *_tenant*.page_name |
          | 人员 ID | 示例事件数据数据集 | 字符串 | *_tenant*.person_id |
@@ -506,7 +506,7 @@ ht-degree: 15%
 
          1. 展开![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL 摘要数据组]**。
          1. 启用&#x200B;**[!UICONTROL 创建分组]**。
-         1. 从&#x200B;**[!UICONTROL Dimension]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 促销活动名称（查找派生字段）]**。 此步骤确保示例查找数据数据集中的促销活动名称（查找）可以在报表中安全使用(请参阅[Workspace](#workspace))。
+         1. 从&#x200B;**[!UICONTROL Dimension]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 促销活动名称（查找派生字段）]**。 此步骤确保示例查找数据数据集中的促销活动名称（查找）可以在报表中安全使用（请参阅[Workspace](#workspace)）。
 
       1. 从&#x200B;**[!UICONTROL 指标]**&#x200B;列表中选择&#x200B;**[!UICONTROL 收入]**&#x200B;指标。 在组件面板中：
 
@@ -554,8 +554,8 @@ ht-degree: 15%
 1. 从&#x200B;**[!UICONTROL 维度]**&#x200B;中拖动&#x200B;**[!UICONTROL 跟踪代码（事件）]**&#x200B;并将维度拖放到空的自由格式表中。
 1. 将&#x200B;**[!UICONTROL 订单]**&#x200B;从&#x200B;**[!UICONTROL 指标]**&#x200B;拖放到&#x200B;**[!UICONTROL 事件]**&#x200B;列以替换自由格式表中的该列。
 1. 从&#x200B;**[!UICONTROL 量度]**&#x200B;中拖动&#x200B;**[!UICONTROL 收入]**，并放置要作为附加列添加到自由格式表的量度。
-1. 从&#x200B;**[!UICONTROL 量度]**&#x200B;中拖动&#x200B;**[!UICONTROL 展示次数（摘要）]**，并放置要作为附加列添加到自由格式表的量度。
-1. 从&#x200B;**[!UICONTROL 指标]**&#x200B;中拖动&#x200B;**[!UICONTROL 成本（摘要）]**，然后拖放指标以添加为自由格式表的附加列。
+1. 从&#x200B;**[!UICONTROL 量度]**&#x200B;中拖动&#x200B;**[!UICONTROL 展示次数]**，并放置要作为附加列添加到自由格式表的量度。
+1. 从&#x200B;**[!UICONTROL 量度]**&#x200B;中拖动&#x200B;**[!UICONTROL 成本]**，并放置要作为附加列添加到自由格式表的量度。
 1. 要保存项目，请选择&#x200B;**[!UICONTROL 项目]** > **[!UICONTROL 保存]**，然后为您的项目提供一个名称。 例如，`Example Project Using Summary Data`。
 
 您希望使用报告摘要数据的强大功能并报告每次展示成本和广告支出回报率(ROAS)。 要报告这些指标，您必须创建两个计算指标。
@@ -565,13 +565,13 @@ ht-degree: 15%
    1. 为`Cost per Impression`名称&#x200B;**[!UICONTROL 指定]**。
    1. 为&#x200B;**[!UICONTROL 格式]**&#x200B;选择&#x200B;**[!UICONTROL 货币]**。
    1. 为`4`小数位&#x200B;**[!UICONTROL 指定]**。
-   1. 使用![事件](/help/assets/icons/Event.svg) **[!UICONTROL 成本（摘要）]** **[!UICONTROL ÷]** **[!UICONTROL 展示次数（摘要）]**&#x200B;作为&#x200B;**[!UICONTROL 定义]**。
+   1. 使用![事件](/help/assets/icons/Event.svg) **[!UICONTROL 成本]** **[!UICONTROL ÷]** **[!UICONTROL 展示次数]**&#x200B;作为&#x200B;**[!UICONTROL 定义]**。
    1. 选择&#x200B;**[!UICONTROL 保存]**。
 1. 选择![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]**&#x200B;以添加另一个新的计算量度。
    1. 为`Return on Ad Spend`名称&#x200B;**[!UICONTROL 指定]**。
    1. 为&#x200B;**[!UICONTROL 格式]**&#x200B;选择&#x200B;**[!UICONTROL 货币]**。
    1. 为`2`小数位&#x200B;**[!UICONTROL 选择]**。
-   1. 使用![事件](/help/assets/icons/Event.svg) **[!UICONTROL 收入（最近联系） | 30天)]** **[!UICONTROL −]** ![事件](/help/assets/icons/Event.svg) **[!UICONTROL 成本（摘要）]**&#x200B;作为&#x200B;**[!UICONTROL 定义]**。
+   1. 使用![Event](/help/assets/icons/Event.svg) **[!UICONTROL Revenue （Last Touch | 30天）]** **[!UICONTROL −]** ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Cost]**&#x200B;作为&#x200B;**[!UICONTROL 定义]**。
    1. 选择&#x200B;**[!UICONTROL 保存]**。
 
 将计算量度添加到报表中。
