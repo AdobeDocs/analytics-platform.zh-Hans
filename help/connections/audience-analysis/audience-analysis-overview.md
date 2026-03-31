@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
 exl-id: 1e962f52-6b56-4671-afea-d58dae67e8a8
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+source-git-commit: ac86664e0136563d904021c72347fb544cda4a6d
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 4%
+source-wordcount: '749'
+ht-degree: 5%
 
 ---
 
@@ -78,6 +78,10 @@ ht-degree: 4%
 | [创建受众分析配置](/help/connections/audience-analysis/audience-analysis-configure.md) | 系统管理员 | <ul><li>数据集：读取权限</li><li>架构：读取、写入</li><li>身份命名空间：读取</li></ul> |
 | [在数据视图中查看受众分析维度](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | 数据视图所分配到的产品配置文件的产品配置文件管理员 <p>有关详细信息，请参阅[访问控制](/help/technotes/access-control.md)。</p> | 不适用 |
 | 在Analysis Workspace中使用受众分析维度 | 访问添加了受众分析维度的数据视图 | 不适用 |
+
+## 受众分析用例
+
+有关突出显示Audience Analysis提供的值的用例，请参阅[Audience Analysis用例](/help/connections/audience-analysis/audience-analysis-use-cases.md)。
 
 ## 受众分析限制
 
