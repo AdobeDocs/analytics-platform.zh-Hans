@@ -1,13 +1,13 @@
 ---
-description: 了解面板及其在 Analysis Workspace 中的使用方式。
-title: 面板概述
+description: 了解如何使用Analysis Workspace中的面板来组织报表、筛选或细分数据以及定义数据范围。
+title: Analysis Workspace中的面板概述
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
+source-git-commit: d89c9dd2ab42ada9d0af259c21a77f183384b680
 workflow-type: tm+mt
-source-wordcount: '2205'
-ht-degree: 99%
+source-wordcount: '2682'
+ht-degree: 43%
 
 ---
 
@@ -53,12 +53,12 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 
   ![Popup showing possible visualizations](assets/blank-panel.png)
 
-  | 选择… | 要创建… |
+  | 选择... | 要创建… |
   |---|---|
   | ![Table](/help/assets/icons/Table.svg) | [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) |
   | ![折线图](/help/assets/icons/GraphTrend.svg) | [折线图](/help/analysis-workspace/visualizations/line.md) |
   | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [条形图](/help/analysis-workspace/visualizations/bar.md) |
-  | ![&#x200B; 123](/help/assets/icons/123.svg) | [摘要数字](/help/analysis-workspace/visualizations/summary-number-change.md) |
+  | ![ 123](/help/assets/icons/123.svg) | [摘要数字](/help/analysis-workspace/visualizations/summary-number-change.md) |
   | ![Text](/help/assets/icons/Text.svg) | [文本](/help/analysis-workspace/visualizations/text.md) |
   | ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) | [流失](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) |
   | ![Workflow](/help/assets/icons/GraphPathing.svg) | [流](/help/analysis-workspace/visualizations/c-flow/flow.md) |
@@ -84,12 +84,12 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 * 要折叠面板，请选择 ![ChevronDown](/help/assets/icons/ChevronDown.svg)。
 * 要显示折叠起来的面板，请选择 ![ChevronLeft](/help/assets/icons/ChevronLeft.svg)。
 * 要删除面板，请选择 ![CrossSize400](/help/assets/icons/CrossSize200.svg)。要撤消操作，请选择&#x200B;**[!UICONTROL 编辑]** > **[!UICONTROL 撤消]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**)。
-* 要移动面板，请在![移动](/help/assets/icons/Move.svg)可见时（通常是将鼠标悬停在标题上时）拖放面板。
+* 若要移动面板，请每当![移动](/help/assets/icons/Move.svg)可见时拖放该面板（通常是将鼠标悬停在标题上时）。
 
 
 ## 数据视图
 
-每个面板都与一个[数据视图](/help/data-views/data-views.md)相关联，面板右上角下拉菜单中的![数据](/help/assets/icons/Data.svg)**[!UICONTROL *视图的数据名称&#x200B;*]**&#x200B;为相应的标识。
+每个面板都与[数据视图](/help/data-views/data-views.md)相关联。 您可以在面板右上角的下拉菜单中标识数据视图![的](/help/assets/icons/Data.svg)数据&#x200B;**[!UICONTROL **]**名称。
 
 创建空白 Workspace 项目时，初始面板的默认数据视图是您上次在 Customer Journey Analytics 中使用数据视图。
 
@@ -124,111 +124,167 @@ Analysis Workspace 中为 [!UICONTROL Customer Journey Analytics] 提供了以�
 1. 或者，选择&#x200B;**[!UICONTROL 显示高级设置]**&#x200B;以：
 
    * 指定&#x200B;**[!UICONTROL 开始时间]**&#x200B;和&#x200B;**[!UICONTROL 结束时间]**，而不是默认的 `12:00 AM` (`0:00`) 和 `11:59 PM` (`23:59`)。结束时间始终包括 59 秒。如果日期范围跨越许多天，则开始时间适用于该日期范围的第一天，结束时间适用于日期范围内的最后一天。使用&#x200B;**[!UICONTROL （重置时间值）]**&#x200B;将开始和结束时间重置为默认值。
-   * **[!UICONTROL 使日期范围组件相对于面板日程表]**。如果禁用，面板中使用的日期范围组件与当前时间相关。如果启用，面板中使用的日期范围组件与面板日程表相关。
+   * **[!UICONTROL 使日期范围组件相对于面板日程表]**。如果禁用，则面板中使用的日期范围组件相对于当前时间。 如果启用，则面板中使用的日期范围组件相对于面板日历。
    * **[!UICONTROL 使用滚动日期]**。如果启用，预设日期范围（如&#x200B;**[!UICONTROL 过去 7 个整天]**）会随着当前日期和时间的进展而动态更新。如果禁用，则此类预设在应用后便不会更新。
 
      ![Rolling dates](assets/calendar-rolling.png)
 
-     您可以选择括号内的文本（例如&#x200B;**[!UICONTROL 固定开始 - 每日滚动]**）来扩展面板并指定&#x200B;**[!UICONTROL 开始]**&#x200B;和&#x200B;**[!UICONTROL 结束]**&#x200B;的详细信息。
+     您可以选择括号中的文本（例如&#x200B;**[!UICONTROL 固定开始 — 每日滚动]**）以扩展面板并指定&#x200B;**[!UICONTROL 开始]**&#x200B;和&#x200B;**[!UICONTROL 结束]**&#x200B;的详细信息。
 
       1. 选择&#x200B;**[!UICONTROL 开始]**、**[!UICONTROL 结束]**&#x200B;或&#x200B;**[!UICONTROL 固定日期]**。
-      1. 当选择了&#x200B;**[!UICONTROL 开始]**&#x200B;或&#x200B;**[!UICONTROL 结束]**&#x200B;时，您可以生成一个完整的表达式。例如：**&#x200B;** **[!UICONTROL 当前年份的结束]**&#x200B;**[!UICONTROL 加上]**`1`**[!UICONTROL 天]**。为表达式的每个部分选择适当的值。
-         * 选择当前时间的值。例如&#x200B;**[!UICONTROL 当前年份]**。
+      1. 当选择了&#x200B;**[!UICONTROL 开始]**&#x200B;或&#x200B;**[!UICONTROL 结束]**&#x200B;时，您可以生成一个完整的表达式。例如：**** **[!UICONTROL 当前年份的结束]****[!UICONTROL 加上]**`1`**[!UICONTROL 天]**。为表达式的每个部分选择适当的值。
+         * 选择当前时间的值。例如，**[!UICONTROL 当前年份]**。
          * 选择一个值进行额外的计算。例如，**[!UICONTROL 加上]**。
-         * 当您指定了额外的计算时，请指定一个值。例如：`1`。
-         * 当您指定了额外的计算时，请选择用于该计算的时间段。例如&#x200B;**[!UICONTROL 天]**。
+         * 当您指定了额外的计算时，请指定一个值。例如，`1`。
+         * 当您指定了额外的计算时，请选择用于该计算的时段。例如，**[!UICONTROL 天]**。
 
      选择&#x200B;**[!UICONTROL 隐藏详细信息]**，以隐藏计算滚动日期的详细信息。
 
-1. 选择&#x200B;**[!UICONTROL 应用]**&#x200B;以将日期范围应用到您调用日程表的面板。
-选择&#x200B;**[!UICONTROL 应用于所有面板]**&#x200B;以将日期范围应用于 Workspace 项目中的所有面板。
+1. 选择&#x200B;**[!UICONTROL 应用]**以将日期范围应用到您调用日程表的面板。
+选择**[!UICONTROL 应用于所有面板]**&#x200B;以将日期范围应用于 Workspace 项目中的所有面板。
 
 
 ## 拖放区域 {#dropzone}
 
-使用面板拖放区域，您可以将区段和下拉区段应用到面板中的所有表格和可视化图表。您可以将一个或多个区段应用到面板。
+面板拖放区域标记为&#x200B;**[!UICONTROL _拖放组件以过滤或划分数据_]**，允许您过滤或划分面板的数据。 用于过滤或划分数据的区段或划分适用于面板内的所有自由格式表和可视化图表。
+
+利用区段和划分，可采用可控方式与数据交互。 例如，您可以为移动设备类型添加区段下拉菜单，以便通过选择平板电脑、手机或桌面来筛选面板。
+
+区段也可用于将多个项目合并为一个。 例如，如果您有一个项目的不同版本，每个版本应用了不同的国家/地区区段，您可以将所有版本合并为一个项目并添加一个国家/地区区段下拉菜单。
+
+下图显示了将组件添加到拖放区域时生成的（快速）区段或细分的不同变体。
+
+![面板的拖放区域](assets/panel-drop-zone.png)
+
+### 添加或替换
+
+添加或替换（快速）区段或划分：
+
+1. 从组件边栏中选择一个或多个组件。 使用⇧+![Select](/help/assets/icons/Select.svg)或^+![Select](/help/assets/icons/Select.svg)选择多个组件。
+1. 将选定内容拖到标记为&#x200B;**[!UICONTROL _放置组件以筛选或划分数据_]** ❶的拖放区域，或者拖到已放置在拖放区域附近的现有组件上。
+1. 当您看到![添加](/help/assets/icons/Add.svg) **[!UICONTROL 添加（按Shift创建下拉列表）]**&#x200B;或![切换](/help/assets/icons/Switch.svg) **[!UICONTROL 替换（按Shift添加到下拉列表）]**&#x200B;时，您有两个选项：
+
+   ![添加或替换到放置区域](assets/add-or-replace-to-drop-zone.png)
+
+   * 删除所选内容以创建以下组件：
+      * 您放置[的任何区段组件的](#segment)区段❷。
+      * [您放置了](#quick-segment)的任何非区段组件（日期范围、量度、维度、维度项）的快速区段❸。
+   * 按住&#x200B;**键并⇧(Shift)以创建以下组件时，拖放选项**：
+      * 静态区段[下拉菜单](#drop-down-menu)包含要筛选的项，用于您放置❹的选定区段。
+      * 静态区段[下拉菜单](#drop-down-menu)，其中包含要筛选的项，用于您放置❺的选定日期范围。
+      * 静态区段[下拉菜单](#drop-down-menu)，其中包含要筛选您放置❻的选定量度的项目。
+      * 静态区段[下拉菜单](#drop-down-menu)或划分[下拉菜单](#drop-down-menu)，其中包含要筛选或划分的项，用于您放置&#x200B;*的所选维度*&#x200B;项❼。
+      * 对于您放置[的选定维度，动态区段](#drop-down-menu)下拉菜单[或划分](#drop-down-menu)下拉菜单❽包含要过滤或划分的项。
+
 
 ### 区段
 
-将任意区段从左侧面板拖放到面板拖放区域，以开始对面板进行分段。重复此操作可向面板添加其他区段。区段并排显示在面板顶部。
+您放置的任何区段组件都用于划分面板。 使用区段对面板的数据和可视化图表进行分段分析。
 
-![The left panel shows available Metrics and the Mobile Customer metric dragged to the panel drop zone.](assets/segment-filter.png)
+### 快速区段
 
-#### 快速区段
+任何已放置的非区段组件（维度、维度项、量度、日期范围）定义了一个[快速区段](#quick-segment)来划分面板。 使用任何非区段组件创建快速区段，而无需使用[区段生成器](/help/components/segments/seg-builder.md)。 通过这种方式创建的区段自动定义为事件级区段，默认情况下标记为&#x200B;**[!UICONTROL 快速区段]**。
 
-还可将非区段组件直接拖入放置区域以创建快速区段，从而为您节省转到[区段生成器](/help/components/segments/seg-builder.md)的时间和精力。通过这种方式创建的区段自动定义为事件级别区段。通过选择区段名称旁边的![编辑](/help/assets/icons/Edit.svg)可以快速修改此定义。
+或者，您可以使用![FilterAdd](/help/assets/icons/FilterAdd.svg)创建快速区段。
+
+有关如何创建和管理快速区段，请参阅[快速区段](/help/components/segments/seg-quick.md)。
 
 
-有关更多信息，请参阅[快速区段](/help/components/segments/seg-quick.md)。
+### 下拉菜单
 
-![被公开并放入放置区域的临时区段](assets/adhoc-segment-filter.png)
+在按住⇧键的同时创建的下拉菜单可以：
 
-### 下拉区段
+* 包含[静态](#static)或[动态](#dynamic)项目列表。
+* 行为[筛选面板](#filter)或[划分面板](#breakdown)。
+
+
+#### 静态
+
+已为选定的维度&#x200B;*项目*、量度、区段和日期范围创建静态下拉菜单。 静态下拉菜单中的项基于您拖放的选定组件，在添加或替换组件时，这些项不会更改。
+
+
+#### 动态
+
+仅当拖放维度组件时，才会创建动态下拉菜单。 动态下拉菜单在标签中以![FilterRefresh](/help/assets/icons/FilterRefresh.svg)表示。
+
+动态下拉菜单中的可用项目基于：
+
+* 从面板拖放区域中的其他下拉菜单、区段和快速区段中的选定项目生成的数据，以及
+* 面板报告范围内的可用数据。
+
+例如，您可以使用国家/地区维度和城市维度添加两个动态下拉菜单。 当您从&#x200B;**[!UICONTROL 国家/地区]**&#x200B;下拉菜单中选择国家/地区时，**[!UICONTROL 城市]**&#x200B;下拉菜单会动态调整以仅显示选定国家/地区内的城市。 当您有其他静态下拉菜单时，在这些下拉菜单中选择的项目也会影响动态下拉菜单中的可用项目。 在动态下拉菜单中选择的项目不会影响静态下拉菜单中的可用项目。
+
+
+#### 筛选面板
+
+对于您按住&#x200B;**⇧放置**&#x200B;的任何量度、区段或日期范围组件，将创建一个区段下拉菜单。 该下拉菜单允许您根据可用于放置组件的项筛选面板。
+
+对于您按住&#x200B;*⇧放时放置*&#x200B;的任何&#x200B;**维度**&#x200B;组件，将创建一个区段下拉菜单。 该下拉菜单允许您根据可用于放置的维度项（[静态](#static)区段下拉菜单）或维度组件（[动态](#dynamic)区段下拉菜单）的项筛选面板。 要明确配置下拉菜单以使用区段进行筛选，请执行以下操作：
+
+* 选择![划分](/help/assets/icons/Breakdown.svg)并从组件![的上下文菜单中选择](/help/assets/icons/Filter.svg)筛选器❾。
+
+
+#### 划分面板
+
+对于您按住&#x200B;*⇧放时放置*&#x200B;的任何&#x200B;**维度**&#x200B;组件，将创建一个区段下拉菜单。 您可以将下拉菜单配置为改为进行划分。 要将下拉菜单明确配置为使用划分进行划分，请执行以下操作：
+
+* 选择![筛选器](/help/assets/icons/Filter.svg)并从组件![的上下文菜单中选择](/help/assets/icons/Breakdown.svg)划分❾。
+
+>[!IMPORTANT]
+>
+>细分仅适用于维度和维度项目，不适用于区段、日期范围或量度。
+>
+
+
+
+#### 区段与划分
+
+在以下场景中，请考虑划分面板而不是过滤面板（使用区段）：
+
+* 如果您在面板中使用启用了归因的量度，则区段通常会清除您的启用了归因的量度。 划分将应用在查询中的不同点，执行此操作是为了检索面板的数据。 因此，划分不会清除这些启用属性的量度。
+
+  例如，使用&#x200B;**[!UICONTROL Luma：产品类别]** **[!UICONTROL 筛选器]** ![女性](/help/assets/icons/Filter.svg)区段时，查看基于&#x200B;**[!UICONTROL 在线收入]**&#x200B;量度的属性与&#x200B;**[!UICONTROL Luma：产品类别]** ![划分](/help/assets/icons/Breakdown.svg) **[!UICONTROL 女性]**&#x200B;划分之间的差异。
+
+  ![基于属性的量度：筛选器与划分](assets/attribute-filter-breakdown.png)
+
+* 如果您在划分下拉菜单中使用子事件级别维度，则划分会在该子事件级别执行。 相反，区段下拉菜单中的区段在事件级别执行。
+
+  例如，查看使用&#x200B;**[!UICONTROL Luma：产品子类别]** **[!UICONTROL 筛选器]** ![顶端](/help/assets/icons/Filter.svg)区段时&#x200B;**[!UICONTROL 在线收入]**&#x200B;量度与&#x200B;**[!UICONTROL Luma：产品子类别]** ![划分](/help/assets/icons/Breakdown.svg) **[!UICONTROL 顶端]**&#x200B;划分之间的差异。 划分在子事件级别显式执行查询，而区段在事件级别执行查询。
+
+  ![基于子事件的量度：筛选器与划分](assets/sub-event-filter-breakdown.png)
+
+### 管理
+
+您可以按如下方式管理放置区域中的组件：
+
+| 在面板拖放区域中要执行的操作…… | 如何…… |
+|---|---|
+| 要删除区段或快速区段，请执行以下操作： | 在组件中选择![CrossSize300](/help/assets/icons/CrossSize300.svg)。 |
+| 从下拉菜单中删除选定项。 | 在项中选择![CrossSize100](/help/assets/icons/CrossSize100.svg)。 |
+| 从下拉菜单中删除所有选定项。 | 在下拉菜单中选择![CrossSize200](/help/assets/icons/CrossSize200.svg)。 |
+| 编辑任何组件的标签。 | 将鼠标悬停在组件的标签上，然后选择![编辑](/help/assets/icons/Edit.svg)。 |
+| 删除任何组件的标签。 | 将鼠标悬停在组件的标签上，然后从组件的上下文菜单中选择&#x200B;**[!UICONTROL 删除标签]**。 |
+| 从拖放区域中删除组件。 | 从组件的上下文菜单中选择&#x200B;**[!UICONTROL 删除下拉列表]**。 |
+| 获取有关区段或快速区段的信息。 | 将鼠标悬停在组件内并选择![信息](/help/assets/icons/Info.svg)以打开包含组件信息的数据字典。 |
+| 获取有关定义下拉菜单的组件的信息。 | 将鼠标悬停在下拉菜单内并选择![InfoOutline](/help/assets/icons/InfoOutline.svg)以打开包含组件信息的数据字典。 |
+| 编辑快速区段。 | 将光标悬停在快速区段内并选择![编辑](/help/assets/icons/Edit.svg)。 有关详细信息，请参阅[快速区段](/help/components/segments/seg-quick.md)。 |
+| 需要为下拉菜单进行选择。 | 从组件的上下文菜单中选择&#x200B;**[!UICONTROL 需要选择]**。 |
+| 为下拉菜单允许无过滤器。 | 从组件的上下文菜单中选择&#x200B;**[!UICONTROL 不允许筛选器]**。 |
+| 重置所有组件并清除下拉菜单的所有选择。 | 选择&#x200B;**[!UICONTROL 全部重置]**。 |
+
+
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [下拉区段](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"}以获取演示视频。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[在Analysis Workspace中使用筛选器](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"}。
 
 {{videoaa}}
 
 >[!ENDSHADEBOX]
 
-
-#### 静态下拉区段
-
-您还可通过静态下拉区段以可控方式与数据交互。例如，您可以为移动设备类型添加下拉区段，这样您就可以按照平板电脑、手机或台式机来分段面板。
-
-静态下拉区段也可用于将多个项目合并在一起。例如，如果您有一个项目的多个版本，每个版本具有不同的“国家/地区”区段，您可以将所有版本合并为一个项目并添加“国家/地区”下拉区段。
-
-![突出显示营销渠道“直接”区段的静态下拉区段。](assets/dropdown-filter-intro.png)
-
-##### 创建静态下拉区段
-
-* 对于使用维度项的下拉区段，请从左侧面板中选择一个维度，然后在按住 ⇧ (*shift*) 的同时，将该维度拖放到面板的放置区域。此操作会创建一个下拉区段，其中包含与该维度关联的所有维度项。
-
-  或者，如果您希望下拉区段仅包含与某个维度相关联的特定维度项，请选择左侧面板中所需维度旁边的右箭头图标。此操作会公开所有可用的维度项。使用 ⇧+![Select](/help/assets/icons/Select.svg)（*shift* + *选择*）或 ^+![Select](/help/assets/icons/Select.svg)（*control* + *选择*）从此列表中选择多个维度项，**然后在按住**⇧ 的同时将它们放入面板放置区。
-
-* 对于使用单一组件类型（例如，仅维度、仅区段或仅量度）的下拉区段，请使用 ⇧+![Select](/help/assets/icons/Select.svg)或 ^+![Select](/help/assets/icons/Select.svg)在左侧面板中选择多个相同类型的项目。然后&#x200B;**在按住** ⇧ 的同时将这些项目拖放到面板放置区域。
-
-  使用您选择的组件创建单个下拉区段。
-
-* 对于使用混合组件类型（如 2 个量度和 3 个区段）的下拉区段，请使用 ⇧+![Select](/help/assets/icons/Select.svg)或 ^+![Select](/help/assets/icons/Select.svg)。**按住** ⇧ 的同时将所选内容拖放到面板放置区域。在此上下文中，所有组件类型均被视为单独的下拉区段。例如，如果同时选择了量度和维度项，则会创建两个单独的下拉区段：一个下拉区段包含维度项，另一个包含量度。
-
-下拉区段可提供以下上下文菜单选项：
-
-* **[!UICONTROL 删除下拉菜单]**：从面板中移除下拉区段。
-* **[!UICONTROL 删除标签]**：移除下拉区段上方显示的文本。要修改该标签，请将光标悬停在该标签上，并选择![编辑下拉区段的标签](/help/assets/icons/Edit.svg)。
-* **[!UICONTROL 添加标签]**：当您向一个项目添加下拉区段时，标签会自动设置为组件名称。如果删除标签，可以使用此选项重新添加该标签。
-* **[!UICONTROL 要求选择]**：要求必须在面板上设置区段。
-
-##### 使用静态下拉区段
-
-用户可以通过以下任何一种方式使用下拉区段菜单来分段面板：
-
-* 从下拉区段中选择区段，将单个区段应用于面板。
-
-* 从下拉区段中选择多个区段，将多个区段应用于面板。面板经过分段，可包含任何选定的区段。
-
-
-#### 动态下拉区段
-
-动态下拉区段允许您根据面板报告范围内的数据和其他下拉区段中的值来确定可用值。例如，您可以使用“国家/地区”维度和“城市”维度创建两个动态下拉列表。如果您从&#x200B;**[!UICONTROL 国家/地区]**&#x200B;下拉菜单中选择了一个国家/地区，**[!UICONTROL 城市]**&#x200B;下拉菜单就会动态调整，以仅显示该国家/地区的城市。
-
-同样的概念适用于所有维度；仅出现在面板日期范围内的维度项和选定的区段可见。在静态下拉区段中选择的维度项会影响动态下拉区段中的可用值。但是，反之则不然。在动态下拉区段中选择的维度项不会影响静态下拉区段中的可用值。
-
-如果您预计将来会收集某个维度项，则可以手动选择维度项。您还可以清除动态下拉区段，使其不包含值，从而允许其他动态下拉区段包含更多值。选择&#x200B;**[!UICONTROL 全部重置]**&#x200B;以清除该面板所有下拉区段中的选择。
-
-若要创建动态下拉区段：
-
-* 在按住 **⇧ 的同时，将单个维度拖放到面板放置区**。
-
-请注意，动态下拉区段不适用于量度、区段或日期范围。
-
-动态下拉区段可提供与静态下拉区段相同的上下文菜单选项。
-
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [动态下拉区段](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [动态下拉筛选器](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"}。
 
 >[!ENDSHADEBOX]
 
