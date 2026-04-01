@@ -1,13 +1,13 @@
 ---
 title: 启用拼合
-description: 在Customer Journey Analytics中为事件数据集启用身份拼接。 了解如何在连接UI中配置永久ID、人员ID和重播窗口以拼合数据。
+description: 在Customer Journey Analytics中为事件数据集启用拼合。 在连接UI中配置永久ID、人员ID和重播窗口。
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: f9c2f9cef97e00eb491b815ab8e83820b2dfc032
+source-git-commit: d42f0eb658f26d16bd21bb6ca47d5dd7c228e614
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1717'
 ht-degree: 9%
 
 ---
@@ -22,15 +22,14 @@ ht-degree: 9%
 
 您需要检查并满足您指定的拼接方法的先决条件：[基于字段的拼接](fbs.md#prerequisites)或[基于图形的拼接](gbs.md#prerequisites)。
 
-
 ## 印前检查检查
 
 如果您满足前提条件，则可能需要在启用身份拼接之前对事件数据集中的数据执行一些预检检查：
 
-* 如果您要为持久ID或人员ID使用XDM架构字段，请确保在事件数据集的架构中正确标记身份。 [请参阅身份命名空间概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/namespaces)。
+* 如果您要为永久ID或人员ID使用[体验数据模型(XDM)架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/home)字段，请确保在架构中为事件数据集正确标记了身份。 [请参阅身份命名空间概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/namespaces)。
 * 验证持久ID和人员ID的标识覆盖范围：
 
-   * **永久ID**
+   * **[!UICONTROL 永久ID]**
 
      查询7天的数据，其中您的永久ID字段不为null，并除以针对数据集中所有事件的7天数据查询。 该百分比应高于95%。
 
@@ -53,11 +52,11 @@ ht-degree: 9%
       * `{PERSISTENT_ID_FIELD}`是永久ID的字段。 例如：`identityMap.ecid[0]`。
       * `{DATASET_TABLE_NAME}`是事件数据集的表名称。
       * `{FORMAT_STRING}`是时间戳字段的格式字符串。 例如：`MM/DD/YY HH12:MI AM`。
-      * `{START_DATE} `是开始日期。 例如：`2024-01-01 00:00:00`。
+      * `{START_DATE}`是开始日期。 例如：`2024-01-01 00:00:00`。
       * `{END_DATE}`是标准格式的结束日期。 例如：`2024-01-08 00:00:00`。
 
 
-   * **人员 ID**
+   * **[!UICONTROL 人员 ID]**
       * 对于基于图形的拼接，请确保身份图形包含一些片段，这些片段关联来自您选择的永久ID命名空间和人员ID命名空间的ID值。 您可以通过转到[Experience Platform身份图形查看器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"}运行测试，并通过一些示例永久ID值查询该图形。 验证这些永久ID值是否与图表中的人员ID值相关联。
       * 对于基于字段的拼合，请查询7天的数据，其中人员ID字段不为null，然后除以针对数据集中所有事件的7天数据查询。 理想情况下，该百分比应高于5%。
 
@@ -130,9 +129,9 @@ ht-degree: 9%
 
 ### 数据集设置
 
-若要启用拼接，请在&#x200B;**[!UICONTROL 添加数据集]**&#x200B;或&#x200B;**[!UICONTROL 编辑数据集]**&#x200B;对话框的事件数据集&#x200B;**[!UICONTROL 数据集设置]**&#x200B;部分中：
+若要启用拼接，请在&#x200B;**[!UICONTROL 添加数据集]**&#x200B;或&#x200B;**[!UICONTROL 编辑数据集]**&#x200B;对话框的事件数据集&#x200B;**[!UICONTROL 数据集设置]**&#x200B;部分中。
 
-启用身份拼接时![身份拼接选项](assets/identity-stitching-ui.png)
+启用该功能时![身份拼接选项](assets/identity-stitching-ui.png)
 
 1. 选择&#x200B;**[!UICONTROL 启用身份拼接]**。
 
@@ -142,18 +141,17 @@ ht-degree: 9%
 
 1. 从&#x200B;**[!UICONTROL 永久ID]**&#x200B;下拉菜单中选择一个永久ID。
 
-   如果您为永久ID选择&#x200B;**[!UICONTROL 身份映射]**，则必须选择命名空间。 您有两个选项：
+   如果为永久ID选择&#x200B;**[!UICONTROL 标识映射]**，请选择命名空间。 您有两个选项：
 
    * 选择&#x200B;**[!UICONTROL 使用主身份命名空间]**&#x200B;以使用主身份命名空间。
    * 从&#x200B;**[!UICONTROL 命名空间]**&#x200B;下拉菜单中选择一个命名空间。
 
 1. 从&#x200B;**[!UICONTROL 人员ID]**&#x200B;下拉菜单中选择人员ID。
 
-   如果您为人员ID选择&#x200B;**[!UICONTROL 身份映射]**，则必须选择命名空间。 您有两个选项：
+   如果您为人员ID选择&#x200B;**[!UICONTROL 身份映射]**，请选择命名空间。 您有两个选项：
 
    * 选择&#x200B;**[!UICONTROL 使用主身份命名空间]**&#x200B;以使用主身份命名空间。
    * 从&#x200B;**[!UICONTROL 命名空间]**&#x200B;下拉菜单中选择一个命名空间。
-
 
    如果您为人员ID选择&#x200B;**[!UICONTROL 身份图形]**（要使用[基于图形的拼接](/help/stitching/gbs.md)），则必须选择命名空间。
 
@@ -175,9 +173,14 @@ ht-degree: 9%
 
 在标准&#x200B;**[!UICONTROL 数据集预览]**&#x200B;界面之上，当[添加](/help/connections/create-connection.md#add-datasets)或[编辑](/help/connections/create-connection.md#edit-a-dataset)数据集到基于人员的连接中时，可以使用两个其他的信息面板。
 
-启用身份拼接时![身份拼接选项](assets/identity-stitching-ui-preview.png)
+启用该功能时![身份拼接选项](assets/identity-stitching-ui-preview.png)
 
 #### 拼接量度
+
+>[!AVAILABILITY]
+>
+>无法对基于图形的拼接使用拼接量度。
+>
 
 **[!UICONTROL 拼接量度]**&#x200B;是使用最近7天带有事件时间戳的数据示例集计算的。 此样本数据集通常不同于&#x200B;**[!UICONTROL 预览]**&#x200B;表中使用的样本数据。 拼接量度提供以下内容的详细信息：
 
@@ -191,8 +194,12 @@ ht-degree: 9%
 
   持久ID覆盖范围以百分比显示，并与稳定开发或生产设置的最低建议数量进行比较。
 
-
 #### 无效 ID
+
+>[!AVAILABILITY]
+>
+>错误ID不适用于基于图形的拼合。
+>
 
 >[!INFO]
 >
@@ -236,8 +243,8 @@ ht-degree: 9%
 
 ## 迁移
 
-在Connections界面中启用的拼合可以并行存在，而不会在基于请求的拼合方面出现任何问题。
+在Connections界面中启用的拼合可以共存，而不会出现基于请求的拼合问题。
 
 例如，由于较早或当前的拼接请求，您在数据湖中有基于Web的拼接数据集。 您可以使用Connections界面从呼叫中心数据集添加拼合数据，以将该数据与基于Web的数据相结合。
 
-最终，Adobe会将您的基于请求的拼接数据集迁移到连接中的新拼接体验。
+最终，Adobe会将您的基于请求的拼合数据集迁移到连接中的新拼合体验。
