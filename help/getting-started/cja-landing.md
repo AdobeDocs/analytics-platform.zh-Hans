@@ -4,10 +4,10 @@ description: Customer Journey Analytics 登陆页面。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 3afb60a60b7fd1acb414244dffdb6a6493792f9c
+source-git-commit: efdb05a28813b774ae276de4d9c59656e78618ba
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 79%
+source-wordcount: '701'
+ht-degree: 73%
 
 ---
 
@@ -22,6 +22,18 @@ ht-degree: 79%
 大致了解 Customer Journey Analytics 产品和文档中的最新增强！有关功能、改进和修复的完整列表，请查看详细的[发行说明](../release-notes/latest.md)。访问[文档更新页面](../release-notes/doc-changes.md)以及时了解最新的文档更新。
 
 >[!BEGINTABS]
+
+>[!TAB 划分面板]
+
+您现在可以在Analysis Workspace中划分面板。 在某些情况下，在将区段应用于面板之前，首选在面板中划分数据和可视化。
+
+[![图像](assets/learn-more-button.svg)](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel)
+
+>[!TAB 多个维度列]
+
+在自由格式表中最多可包含5个维度列，这样您可以并排查看多个维度项目。 每一行的维度项将作为一个拼接后的单一维度项进行处理。
+
+[![图像](assets/learn-more-button.svg)](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md)
 
 >[!TAB 连接中的拼接]
 
@@ -151,4 +163,4 @@ Content Analytics 可让您快速轻松地调查大量内容数据，以了解�
 
 
 <table style="table-layout:auto" class="tablelayout-is-fixed"><tbody><tr style="border: 0;"><td><img src="./assets/newsletter.png"></td><td>
-<b>随时了解最新动态、为社区做出贡献并提升您的 Customer Journey Analytics 体验！</b><br>访问 Adobe Analytics 社区，与同类从业者讨论其功能。<a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=zh-Hans">立即加入社区！</a></td></tr></tbody></table>
+<b>随时了解最新动态、为社区做出贡献并提升您的 Customer Journey Analytics 体验！</b><br>访问 Adobe Analytics 社区，与同类从业者讨论其功能。<a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community">立即加入社区！</a></td></tr></tbody></table>
