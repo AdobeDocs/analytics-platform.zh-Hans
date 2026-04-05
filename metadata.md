@@ -1,20 +1,25 @@
 ---
 cloud: Experience Cloud
+solution: Customer Journey Analytics
+type: Documentation
 git-repo: https://github.com/AdobeDocs/analytics-platform.zh-Hans
-description: 此文件包含存储库级别的元数据，这些元数据会传送到存储库中的用户指南TOC.md文件。
+description: 此文件包含存储库级别的元数据，这些元数据将传递到存储库中的用户指南TOC.md文件。
 feature-set: Customer Journey Analytics
+landing-page-name: customer-journey-analytics
+landing-page-breadcrumb-title: Customer Journey Analytics
 role: User, Admin
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+index: true
+source-git-commit: b718ec4452a8ea394cb3d0969f49b18a667dcf3a
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 84%
+source-wordcount: '125'
+ht-degree: 86%
 
 ---
 
 
-# 内部使用的元数据
+# 供内部使用的元数据
 
-metadata.md 文件包括可传递给存储库中用户指南 TOC.md 文件的存储库级别元数据。如果要更改任何用户指南的 metadata.md 内容，请在任意 TOC.md 文件中进行更改。
+metadata.md 文件包含存储库级别的元数据，这些元数据会传送到存储库中的用户指南 TOC.md 文件。 如果要更改任何用户指南的 metadata.md 内容，请在任何 TOC.md 文件中进行更改。
 
 | 元数据 | 作用 |
 |--- |--- |
