@@ -3,10 +3,10 @@ title: 当前 Customer Journey Analytics 发行说明
 description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 701279f92877ee186160f901f0d4df74fd42f547
+source-git-commit: 7fc7475001505749cf59aa82a62e5abb7e81ea97
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 35%
+source-wordcount: '594'
+ht-degree: 39%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 35%
 
 | 功能和描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | -----------|-----------|-----------|
-| **意大利语支持**<br/> Customer Journey Analytics中的Analysis Workspace现在支持意大利语区域设置(it-IT)。 <p>Customer Journey Analytics支持Experience Platform UI中支持的所有语言，如Experience Platform UI的[浏览器和语言支持](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/platform-ui/browser-language-support#language-support)中所述。</p><p>您可以在Experience Platform中[更改默认语言](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/platform-ui/browser-language-support#change-default-language)。</p> | | 2026年4月8日 |
-| **Adobe工程代理中的数据验证** <br/>Data Engineering Agent中提供了新的数据验证技能。 在Customer Journey Analytics中分析数据之前，这些技能可帮助团队直接在Adobe Experience Platform中快速评估数据质量。 <p>数据验证技能支持按需验证、字段级验证和数据集级验证，从而将统计摘要与对无效或异常值的智能检测结合起来。 </p><p>使用数据验证技能可减少手动QA工作量，并加快跨数据工程工作流的受信任数据载入和转换。</p><p>（文档链接见下文。）<!--For more information, see [Data Engineering Agent]() (will be in this repo: https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-ai/experience-cloud-ai/agents/cja-data-insights-agent).--></p> | | 2026年4月底 <p>（原计划于2026年3月31日发布）</p> |
+| **意大利语支持**<br/> Customer Journey Analytics中的Analysis Workspace现在支持意大利语区域设置(it-IT)。 <p>Customer Journey Analytics支持Experience Platform UI中支持的所有语言，如Experience Platform UI的[浏览器和语言支持](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/browser-language-support#language-support)中所述。</p><p>您可以在Experience Platform中[更改默认语言](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/browser-language-support#change-default-language)。</p> | | 2026年4月8日 |
+| **Adobe工程代理中的数据验证** <br/>Data Engineering Agent中提供了新的数据验证技能。 在Customer Journey Analytics中分析数据之前，这些技能可帮助团队直接在Adobe Experience Platform中快速评估数据质量。 <p>数据验证技能支持按需验证、字段级验证和数据集级验证，从而将统计摘要与对无效或异常值的智能检测结合起来。 </p><p>使用数据验证技能可减少手动QA工作量，并加快跨数据工程工作流的受信任数据载入和转换。</p><p>（文档链接见下文。）<!--For more information, see [Data Engineering Agent]() (will be in this repo: https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/cja-data-insights-agent).--></p> | | 2026年4月底 <p>（原计划于2026年3月31日发布）</p> |
 | **用于Customer Journey Analytics的MCP服务器** <br/>您现在可以使用MCP（模型上下文协议）将Customer Journey Analytics绑定到现有代理工作流中。 您可以使用自然语言请求报表和见解。<p>（文档链接见下文。）</p> | | 2026年4月底 |
 | **流媒体服务：支持计划数据** <br/>您现在可以上传过去直播流媒体内容的计划数据，以便更轻松、更准确地跟踪收视率。<p>以下是支持计划数据上传的直播内容示例：</p><ul><li>FAST（免费广告支持电视）平台</li><li>本地流</li><li>直播体育赛事</li></ul><p>上传计划数据允许您跟踪在上传文件中指定的时间内运行的各个节目的观看人数数据。 您甚至可以收集特定主题或节目片段的观看人数数据。</p><p>无论您如何实现流媒体收集，这些功能都是可用的。</p><p>以前，在分析直播内容时很难准确地将特定场次与特定节目联系起来，也不可能将特定场次与单个主题或节目片段联系起来。</p><p>如需了解更多信息，请参阅[上传计划数据以跟踪实时内容](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/media-use-cases/track-schedule-data)</p> | 2025 年 10 月 29 日 | 2026 年上半年<p>（原计划于 2025 年 10 月 29 日发布）</p> |
 | **多维度API报告**<br/>&#x200B;在单一API请求中报告多个维度并执行维度级别的搜索。 [了解详情](https://developer.adobe.com/cja-apis/docs/endpoints/reporting/multidim) | | 2026 年 3 月 |
@@ -43,13 +43,6 @@ ht-degree: 35%
 **计划报告**：
 **共享的量度和维度**：
 **Other**： AN-423359、AN-406242、AN-397985
-
-
-## Customer Journey Analytics 管理员的重要注意事项
-
-| 注意事项 | 添加或更新注意事项 | 描述 |
-| --- | --- | --- |
-| **TLS 1.2密码套件移除** | 2026年2月11日 | 管理员须知： Adobe计划于2026年5月27日从Adobe数据收集服务器中删除对以下TLS 1.2密码包的支持。<ul><li>`TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA`</li><li>`TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA`</li><li>`TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`</li><li>`TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`</li><li>`TLS_RSA_WITH_AES_128_CBC_SHA`</li><li>`TLS_RSA_WITH_AES_256_CBC_SHA`</li></ul><p>大多数实施不需要客户操作。 此更改主要影响从使用过时TLS库的旧版本机应用程序发送的Analytics数据，以及少量使用过时浏览器或操作系统的Web访客。 取消对这些密码包的支持可增强安全性，并使Adobe与现代加密标准保持一致。 目前，不到0.1%的数据收集流量依赖这些密码套件。</p> |
 
 ## 相关资产
 
