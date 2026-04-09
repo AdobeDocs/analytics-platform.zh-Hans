@@ -3,58 +3,46 @@ title: 当前 Customer Journey Analytics 发行说明
 description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: bc3493f14f5b3ed44e043eab1f7c0e9ca8814875
+source-git-commit: 701279f92877ee186160f901f0d4df74fd42f547
 workflow-type: tm+mt
-source-wordcount: '1815'
-ht-degree: 20%
+source-wordcount: '700'
+ht-degree: 35%
 
 ---
 
-# 当前Customer Journey Analytics发行说明（2026年3月）
+# 当前Customer Journey Analytics发行说明（2026年4月）
 
-**上次更新时间**：2026年3月11日
+**上次更新时间**：2026年4月9日
 
-这些发行说明涵盖2026年3月发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
+这些发行说明涵盖2026年4月发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。因此，这些发行说明每月更新几次。请定期检查。
 
 ## 新增功能或更新后的功能
 
 | 功能和描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | -----------|-----------|-----------|
-| **面板划分**<br/>&#x200B;面板的拖放区域现在为[根据维度划分面板](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel)（而不是区段）提供附加功能。 | 2026年3月31日 | 2026年3月31日 |
-| **标头覆盖** <br/>您可以在Content Analytics中指定标头名称和密码标头值。 此[标头覆盖配置](/help/content-analytics/config/guided.md#header-overrides)确保Content Analytics发送自定义HTTP标头以绕过任何已实施的机器人检测或关机流量技术。 |  | 2026年2月2日 |
-| **合并来自多个IMS组织的报表包**<br/>&#x200B;您可以使用Analytics Source Connector合并来自多个IMS组织的报表包。 此[跨IMS数据映射](/help/getting-started/aa-vs-cja/mapping-data-ims-orgs.md)功能允许组织拥有其客户数据的组合视图，即使该客户数据分布在多个IMS组织中也是如此。 <p>**注意：**&#x200B;此配置仅在向 Adobe 客户关怀团队提交请求后才可用。</p> |  | 2026年2月12日 |
-| **在自由格式表中包含多个维度列**<br/>&#x200B;现在，您最多可以在自由格式表中包含5个维度列，从而允许您并排查看多个维度项目。 每一行的维度项将作为一个拼接后的单一维度项进行处理。<p>您可以对包含多个维度列的自由格式表应用筛选、排序、细分等操作，以实现更深入、更定制化的分析。</p><p>此前，自由格式表中只能包含 1 个维度列。</p><p>有关详细信息，请参阅[在自由格式表中包含多个维度列](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md)。</p> | 2026 年 1 月 28 日 | 2026年3月4日 <p>（原计划于2026年2月18日）</p> |
-| **按多列对表进行排序**<br/>&#x200B;您现在可以在Analysis Workspace中按多列对自由格式表的数据进行排序，无论它们是维度还是指标。<p>当按多个列进行排序时，数据将根据您为每个列指定的优先级进行排序。优先级编号会显示在排序图标旁。</p><p>有关详细信息，请参阅[筛选和排序自由格式表](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)。</p> | 2026 年 1 月 28 日 | 2026年3月4日 <p>（原计划于2026年2月18日）</p> |
-| **Content Analytics：散点可视化图表缩略图和预览** <br/>[缩略图和预览](/help/content-analytics/report/report.md)可用于Content Analytics散点可视化图表中的资源和体验。 | 2026年2月17日 | 2026年3月2日 |
-| **Content Analytics：条形可视化缩略图和预览** <br/>[缩略图和预览](/help/content-analytics/report/report.md)可用于Content Analytics的条形图（栈叠）和水平条形图（栈叠）可视化中的资源和体验。 | 2026年2月23日 | 2026年3月9日 |
-| **数据集在连接中预览重新设计**<br/>&#x200B;当在基于人员的连接中[添加](/help/connections/create-connection.md#add-datasets)或[编辑](/help/connections/create-connection.md#edit-a-dataset)数据集时，预览数据的体验会得到改进。 对于拼接启用的数据集，有其他[拼接量度](/help/stitching/use-stitching-ui.md#stitching-metrics)和[有关错误ID](/help/stitching/use-stitching-ui.md#bad-ids)的信息可用。 | 2026年3月6日 | 待定 |
-| **Report Builder：管理员可看到所有计划工作簿**<br/> Report Builder Excel加载项包含一个新的筛选器选项，该选项允许管理员查看给定组织的所有计划工作簿，而不管这些工作簿是谁计划的。 此过滤器选项仅适用于Analytics管理员。 在查看计划工作簿时，它在“工作簿”选项卡和“旧版”选项卡上均可用。<p>查看所有计划工作簿的功能在跨分布式团队迁移工作簿时特别有用，因为它允许管理员在迁移工作簿之前轻松找到所有旧工作簿。</p><p>以前，管理员只能查看他们计划的工作簿，而不能查看其他用户计划的工作簿。</br>有关详细信息，请参阅[管理计划的工作簿](/help/report-builder/manage-schedules-reportbuilder.md)。</p> | | 2026年3月10日 |
-| **更新到Approximate Count Distinct函数**<br/>&#x200B;将很快更新Approximate Count Distinct函数中使用的HLL概率算法。 使用此函数得出的数字输出可能与历史数字略有不同，如下所示：<ul><li>当计算非常少量的唯一值时，将改进结果以使用精确计数，而不是使用估计值。</li><li>在计数任何更大的数字时，计数估计将保持本次更新之前的准确性（估计准确性在准确数字的5%之内，即时间的95%）。</li></ul><p>有关Approximate Count Distinct函数的更多信息，请参阅[高级函数](/help/components/calc-metrics/cm-adv-functions.md#approximate-count-distinct)中的[Approximate Count Distinct](/help/components/calc-metrics/cm-adv-functions.md)</p> | | 2026年3月10日 |
-| **完整的表导出改进**<br/>&#x200B;完整的表导出包括以下增强功能：<p>导出创建和配置增强功能</p><ul><li>从“导出”页面创建导出。 以前，您只能通过右键单击表格来创建从Analysis Workspace的导出。</li><li>创建导出时添加新帐户或位置。</li><li>自动创建文件名并放置导出文件的文件夹。 这允许文件名是可预测的并以逻辑方式组织到文件夹中。 以前，文件名不可预测，并且被分组到单个文件夹中。</li><li>支持将数据导出为Parquet文件，以提高数据仓库兼容性。 以前，仅支持CSV和JSON。</li></ul><p>导出管理增强功能</p><ul><li>从“导出”页面续订或取消一个或多个导出。</li><li>从“日志”页面重新发送一个或多个导出。</li><li>在导出失败或即将过期时向单个用户或组发送电子邮件。</li><li>导出失败更精确的错误消息。</li></ul><p>计算指标、区段和维度增强功能</p><ul><li>支持更多计算量度函数。 以前，仅支持简单的数学函数。</li><li>创建导出时应用区段。</li><li>支持双数据类型维度以提高精度。</li></ul><p>管理增强功能</p><ul><li>管理员现在可以查看所有导出和日志，无论导出和日志是由谁创建的。</li></ul><p>有关更多信息，请参阅以下资源：<ul><li>[将全表导出到云](/help/analysis-workspace/export/export-cloud.md)</li><li>[配置云导出帐户](/help/components/exports/cloud-export-accounts.md)</li><li>[配置云导出位置](/help/components/exports/cloud-export-locations.md)</li><li>[管理导出](/help/components/exports/manage-exports.md)</li><li>[管理云导出位置和帐户](/help/components/exports/manage-export-locations.md)</li><li>[管理导出日志](/help/components/exports/manage-export-logs.md)</li></ul></p> | 2026年2月25日 | 2026年3月11日<p>（原计划于2026年3月4日）</p> |
-| **Analysis Workspace实践教程**<br/>&#x200B;现在提供了新的实践教程，可指导新用户了解在Analysis Workspace中使用面板、可视化图表和组件的基础知识。 <p>有关详细信息，请参阅[Customer Journey Analytics登录页面](/help/getting-started/landing.md)。</p> | | 2026年3月18日 |
-| **流失可视化图表改进**<br/>&#x200B;流失可视化图表包含以下增强功能：<ul><li>改进了拖放体验。<br/>只需将鼠标悬停在接触点上，并将其拖动到可视化中的新位置。<br/>以前，您必须先单击接触点上的“编辑”图标，然后才能拖动它。</li><li>使用拖放操作组合接触点时语言更清晰。<br/>将接触点拖动到另一个接触点时，会显示“合并”文本，这表示两个接触点正在合并。<br/>以前，无论接触点已移动到可视化图表中的新位置还是与其他接触点组合，都会显示“添加”文本。</li><li>重新设计了工具提示。<br/>将鼠标悬停在接触点上时显示的工具提示更加直观易读。</li><li>更易于发现的上下文菜单。<br/>工具提示包括一个新的“单击以分析”选项，该选项提供了对接触点上下文菜单的便捷访问。<br/>以前，上下文菜单仅在右键单击接触点时可用。</li></ul><p>有关详细信息，请参阅[配置流失可视化图表](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)。</p> | | 2026年3月25日 |
-| **支持数据镜像**<br/>&#x200B;通过为Experience Platform中的特定源连接器支持基于模型的架构和更改数据捕获(CDC)功能，Customer Journey Analytics将能够支持[、](/help/data-mirror/data-mirror.md)和[!DNL Snowflake]等数据仓库解决方案的[!DNL Azure Databricks]数据镜像[!DNL Google BigQuery]功能。<p>要访问 Beta 版本，请联系您的 Adobe 帐户团队。</p> | Beta 版：2025 年 9 月 24 日 | 2026年3月25日 |
-| **Data Insights Agent与Copilot的集成** <br/> Data Insights Agent现在与Microsoft Copilot集成，允许您直接在Microsoft工具（包括Teams、Powerpoint等）中使用自然语言提示与Customer Journey Analytics数据交互。<p>有关详细信息，请参阅[Adobe Marketing Agent for Microsoft 365 Copilot](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-ai/experience-cloud-ai/agents/ama-ms)。</p> | | 2026 年 3 月 26 日 |
-| **Adobe工程代理中的数据验证** <br/>Data Engineering Agent中提供了新的数据验证技能。 在Customer Journey Analytics中分析数据之前，这些技能可帮助团队直接在Adobe Experience Platform中快速评估数据质量。 <p>数据验证技能支持按需验证、字段级验证和数据集级验证，从而将统计摘要与对无效或异常值的智能检测结合起来。 </p><p>使用数据验证技能可减少手动QA工作量，并加快跨数据工程工作流的受信任数据载入和转换。</p><p>（文档链接见下文。）<!--For more information, see [Data Engineering Agent]() (will be in this repo: https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-ai/experience-cloud-ai/agents/cja-data-insights-agent).--></p> | | 2026年4月底 <p>（原计划于2026年3月31日发布）</p> |
-| **将划分应用于面板**<br/>&#x200B;您现在可以将划分应用于面板。 在面板级别应用划分时，划分将应用于面板中所有自由格式表的所有列。 | 2026 年 3 月 | 2026 年 5 月 |
+| **意大利语支持**<br/> Customer Journey Analytics中的Analysis Workspace现在支持意大利语区域设置(it-IT)。 <p>Customer Journey Analytics支持Experience Platform UI中支持的所有语言，如Experience Platform UI的[浏览器和语言支持](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/browser-language-support#language-support)中所述。</p><p>您可以在Experience Platform中[更改默认语言](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/browser-language-support#change-default-language)。</p> | | 2026年4月8日 |
+| **Adobe工程代理中的数据验证** <br/>Data Engineering Agent中提供了新的数据验证技能。 在Customer Journey Analytics中分析数据之前，这些技能可帮助团队直接在Adobe Experience Platform中快速评估数据质量。 <p>数据验证技能支持按需验证、字段级验证和数据集级验证，从而将统计摘要与对无效或异常值的智能检测结合起来。 </p><p>使用数据验证技能可减少手动QA工作量，并加快跨数据工程工作流的受信任数据载入和转换。</p><p>（文档链接见下文。）<!--For more information, see [Data Engineering Agent]() (will be in this repo: https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/cja-data-insights-agent).--></p> | | 2026年4月底 <p>（原计划于2026年3月31日发布）</p> |
+| **用于Customer Journey Analytics的MCP服务器** <br/>您现在可以使用MCP（模型上下文协议）将Customer Journey Analytics绑定到现有代理工作流中。 您可以使用自然语言请求报表和见解。<p>（文档链接见下文。）</p> | | 2026年4月底 |
 | **流媒体服务：支持计划数据** <br/>您现在可以上传过去直播流媒体内容的计划数据，以便更轻松、更准确地跟踪收视率。<p>以下是支持计划数据上传的直播内容示例：</p><ul><li>FAST（免费广告支持电视）平台</li><li>本地流</li><li>直播体育赛事</li></ul><p>上传计划数据允许您跟踪在上传文件中指定的时间内运行的各个节目的观看人数数据。 您甚至可以收集特定主题或节目片段的观看人数数据。</p><p>无论您如何实现流媒体收集，这些功能都是可用的。</p><p>以前，在分析直播内容时很难准确地将特定场次与特定节目联系起来，也不可能将特定场次与单个主题或节目片段联系起来。</p><p>如需了解更多信息，请参阅[上传计划数据以跟踪实时内容](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/media-use-cases/track-schedule-data)</p> | 2025 年 10 月 29 日 | 2026 年上半年<p>（原计划于 2025 年 10 月 29 日发布）</p> |
-| **意大利语支持**<br/> Customer Journey Analytics中的Analysis Workspace现在支持意大利语区域设置(it-IT)。 <p>Customer Journey Analytics支持Experience Platform UI中支持的所有语言，如Experience Platform UI的[浏览器和语言支持](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/platform-ui/browser-language-support#language-support)中所述。</p><p>您可以在Experience Platform中[更改默认语言](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/platform-ui/browser-language-support#change-default-language)。</p> | | 2026年4月8日 |
+| **多维度API报告**<br/>&#x200B;在单一API请求中报告多个维度并执行维度级别的搜索。 [了解详情](https://developer.adobe.com/cja-apis/docs/endpoints/reporting/multidim) | | 2026 年 3 月 |
+| **多列API排序**<br/>&#x200B;对API请求中的多个维度和量度对象进行排序。 在同一排序定义中混合使用维度和量度。 [了解详情](https://developer.adobe.com/cja-apis/docs/endpoints/reporting/multidim#multi-column-sorting) | | 2026 年 3 月 |
 
 ## Customer Journey Analytics 中的修复
 
-**Analysis Workspace**： AN-440336、AN-440216、AN-438445、AN-438216、AN-437856、AN-437776、AN-437765、AN-437365、AN-432793、AN-432094、AN-431557、AN-431200、AN-429621、AN-429424、AN-427973、AN-426089、AN-425883、AN-424359
+**Analysis Workspace**： AN-442813、AN-442410、AN-442231、AN-441943、AN-441717、AN-434855、AN-429777、AN-429048、AN-428892、AN-428189、AN-425215
 **组件**：
+**连接**： AN-442824、AN-440937、AN-440092、AN-429781
 **Content Analytics**：
 **引导式分析**：
-**导出**： AN-432030
-**数据视图**： AN-440004、AN-437154、AN-431165
-**实现**：
-**Report Builder**： AN-437895、AN-437083、AN-434288、AN-434209、AN-433224、AN-430622
-**报告**： AN-439482、AN-439545、AN-438708、AN-431206、AN-430079、AN-428302、AN-428257、AN-425779、AN-423330
+**导出**：
+**数据视图**： AN-442809、AN-434824、AN-434210、AN-424000
+**实施**：
+**Report Builder**： AN-441136、AN-438147、AN-425150
+**报告**： AN-443900、AN-441811、AN-441506、AN-440919、AN-440545、AN-440505、AN-440300
 **分段**：
 **计划报告**：
 **共享的量度和维度**：
-**Other**： AN-439795、AN-434783、AN-434233、AN-434005、AN-433368、AN-431322、AN-431165、AN-431012、AN-429983、AN-429067、AN-423285
+**Other**： AN-423359、AN-406242、AN-397985
 
 
 ## Customer Journey Analytics 管理员的重要注意事项
