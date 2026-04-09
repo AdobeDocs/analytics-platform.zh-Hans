@@ -1,8 +1,8 @@
 ---
 source-git-commit: b0be8b726c4fab1bf9bb5f9462be84f39bdf184a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5360'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 # 片段
@@ -288,41 +288,41 @@ Customer Journey analytics 中的各种可视化图表旨在分析您为客户�
 | [!UICONTROL 逗留时间（秒）] | 累计两个不同的维度值之间的时间。<p>必须将此组件包含在您的数据视图中，才能在 Workspace 中使用[计算量度](/help/components/calc-metrics/default-calcmetrics.md)： <ul><li>每人逗留时间</li><li>每个会话逗留时间</li></p> |
 
 
-## 基于关系模型 {#relational-model-based}
+## 基于模型的关系 {#relational-model-based}
 
 >[!INFO]
 >
->在Customer Journey Analytics界面中，**[!UICONTROL 关系]**&#x200B;数据集可能标记为&#x200B;**[!UICONTROL 基于模型]**。
+>在 Customer Journey Analytics 界面中，**[!UICONTROL 关系]**&#x200B;数据集可能会标记为&#x200B;**[!UICONTROL 基于模型]**。
 >
 
-## CJA数据馈送回顾窗口 {#cja-df-lookback}
+## CJA 数据馈送回顾窗口 {#cja-df-lookback}
 
-由于Customer Journey Analytics对每个组件使用报表时间归因，因此它没有回顾窗口以外的持久性概念。 此Analytics数据馈送列引用访客级别的行为，这种行为会扩展到访客的整个历史记录。 此组件在Customer Journey Analytics中的回顾时间范围越长，它与Adobe Analytics功能之间的匹配度就越低。
+由于 Customer Journey Analytics 为每个组件使用报告时间归因，因此它没有超越回顾窗口的持久性概念。此 Analytics 数据馈送列引用了访客层面的行为，这种行为会扩展到访客的整个历史记录。此组件在 Customer Journey Analytics 中的回顾窗口越长，它与 Adobe Analytics 功能的匹配度就越好。
 
-## CJA数据馈送发布列 {#cja-df-post}
+## CJA 数据馈送后处理列 {#cja-df-post}
 
-此Analytics数据馈送列同时包含预处理版本和后处理版本（前缀`post_`）。 前缀为`post_`的列包含最终在报告中使用的值。 大多数组织仅使用`post_`列（如果可用）。 下表比较了这些列的属性：
+此 Analytics 数据馈送列包含了预处理和后处理两个版本（前缀为 `post_`）。带有前缀 `post_` 的列包含了最终在报告中使用的值。在可用的情况下，大多数组织仅使用 `post_` 列。下表比较了这两列的属性：
 
-| 预处理列值 | 后处理列值 |
+| 预处理列的值 | 后处理列的值 |
 | --- | --- |
-| 当它被收集时 | 在报告中使用 |
-| 处理规则之前 | 处理规则之后 |
-| 在VISTA规则之前 | 在VISTA规则之后 |
-| 未应用分配 | 分配适用 |
+| 收集时 | 在报告中使用 |
+| 应用处理规则之前 | 应用处理规则之后 |
+| 应用 VISTA 规则之前 | 应用 VISTA 规则之后 |
+| 未应用分配 | 分配应用 |
 
-由于Customer Journey Analytics没有预处理和后处理的概念，因此在CJA数据馈送中重新创建这两个列比较困难。 如果您希望得到这些列的近似值，则可以将同一XDM字段多次拖动到维度列中，以创建具有不同归因设置的多个组件：
+由于 Customer Journey Analytics 没有预处理和后处理的概念，因此在 CJA 数据馈送中重新创建这两列比较困难。如果您希望获得这两列的近似值，可以将同一个 XDM 字段多次拖放到维度列中，以创建具有不同归因设置的多个组件：
 
 * **预处理列**：无归因
-* **后处理的列**：应用与其Analytics变量在数据视图设置中相同的分配和到期设置。 大多数组件将使用“最后一个”的分配，以及“访问”的到期。
+* **后处理列**：应用与数据视图设置中 Analytics 变量相同的分配和有效期限的设置。大多数组件会使用“上一个”分配以及“访问”的有效期限。
 
-## CJA数据馈送查找列 {#cja-df-lookup}
+## CJA 数据馈送查找列 {#cja-df-lookup}
 
-此Analytics数据馈送列使用查找表来标识所需的值。 在Customer Journey Analytics中，该值直接提供，而不使用任何查找表。 确保您的工作流包含最终值，而不是中间查找值。
+此 Analytics 数据馈送列使用一个查找表来识别所需的值。在 Customer Journey Analytics 中直接提供了这个值，不需要任何查找表。确保您的工作流考虑到最终值，而不是某个中间查找值。
 
-## CJA数据馈送不适用的列 {#cja-df-na}
+## CJA 数据馈送不适用的列 {#cja-df-na}
 
-由于数据架构差异，此Analytics数据馈送列包含无法转换为Customer Journey Analytics等效项的数据。
+此 Analytics 数据馈送列包含了因数据架构差异而无法转换为 Customer Journey Analytics 等效项的数据。
 
-## CJA数据馈送用户代理 {#cja-df-ua}
+## CJA 数据馈送用户代理 {#cja-df-ua}
 
-您不能同时收集用户代理信息和设备查找信息；这些维度的填充是互斥的。 在[配置数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure#geolocation-device-lookup)时，您必须选择是要直接收集用户代理，还是要收集设备查找信息（基于用户代理）。
+您不能同时收集用户代理信息和设备查找信息；这两个维度的群体是互斥的。您必须选择在[配置数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure#geolocation-device-lookup)时要直接收集用户代理还是设备查找信息（基于用户代理）。
