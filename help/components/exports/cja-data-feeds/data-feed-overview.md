@@ -4,9 +4,8 @@ keywords: 点击流;数据馈送;数据馈送;数据馈送
 title: Analytics 数据馈送概述
 feature: Components
 hide: true
-hidefromtoc: true
 exl-id: 991a7861-cbde-4d55-935c-d56c8031853e
-source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
+source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 40%
@@ -45,7 +44,7 @@ Customer Journey Analytics中的数据馈送功能与Adobe Analytics不同。 �
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在数据馈送界面中导航](https://video.tv.adobe.com/v/3428569?captions=chi_hans&quality=12&learn=on){target="_blank"}，获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在数据馈送界面中导航](https://video.tv.adobe.com/v/25452?quality=12&learn=on){target="_blank"}，获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -53,6 +52,6 @@ Customer Journey Analytics中的数据馈送功能与Adobe Analytics不同。 �
 
 >[!BEGINSHADEBOX]
 
-查看 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [查找您的数据馈送 ID](https://video.tv.adobe.com/v/3418478?captions=chi_hans&quality=12&learn=on){target="_blank"}，获取演示视频。
+查看 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [查找您的数据馈送 ID](https://video.tv.adobe.com/v/335747?quality=12&learn=on){target="_blank"}，获取演示视频。
 
 >[!ENDSHADEBOX]

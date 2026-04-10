@@ -3,9 +3,8 @@ title: Customer Journey Analytics预发行说明
 description: 查看最新的Customer Journey Analytics预发行说明
 feature: Release Notes
 hide: true
-hidefromtoc: true
 exl-id: 61982e38-b43a-41b5-85e0-59ed374463a9
-source-git-commit: 9a489831ebbb579a2f0e368426dfed73b1ee5962
+source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 82%
@@ -23,10 +22,10 @@ ht-degree: 82%
 有关Adobe Experience Platform及其其他应用程序的发行说明，请参阅以下文档：
 
 * [Adobe Experience Platform](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/release-notes/pre-release-notes)
-* [Adobe Journey Optimizer](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/whats-new/release-notes?lang=en)
-* [Adobe Journey Optimizer B2B](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer-b2b/user/release-notes?lang=en)
-* [联合受众构成](https://experienceleague.adobe.com/zh-hans/docs/federated-audience-composition/using/release-notes?lang=en)
-* [Real-Time CDP Collaboration](https://experienceleague.adobe.com/zh-hans/docs/real-time-cdp-collaboration/using/latest?lang=en)
+* [Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes?lang=en)
+* [Adobe Journey Optimizer B2B](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/release-notes?lang=en)
+* [联合受众构成](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/release-notes?lang=en)
+* [Real-Time CDP Collaboration](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/latest?lang=en)
 
 ## 新增功能或更新后的功能
 
@@ -38,4 +37,4 @@ ht-degree: 82%
 | **新预览体验** | 预览面板用于预览区段、计算量度等，现在使用水平条形图可视化图表而不是圆环图可视化图表。 |  | 2025 年 6 月 18 日 |
 | **修改了归因模型对话框** | 您现在可以在归因模型对话框中分别定义容器和时段。 |  | 2025 年 6 月 18 日 |
 | **连接图** | 全新的[连接映射界面](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/create-connection#connection-map)现已推出，可用于以可视化方式展示您的连接配置。 |  | 2025 年 6 月 18 日 |
-| **在 Analysis Workspace 项目中添加和查看评论** | Analysis Workspace 中新增的[评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects)可让您在 Analysis Workspace 项目的上下文中分享见解和提出问题。这可以简化有关数据的讨论，使对话保持在正在讨论的数据范围内。您可以 <ul><li>对任何您有权访问的 Analysis Workspace 项目进行评论</li><li>对可视化图表中的特定点进行评论，也可以对项目进行一般性评论</li><li>标记其他用户，将您的评论告知他们</li><li>管理现有评论（编辑、固定、解决等）</li></ul>Customer Journey Analytics 管理员可以[在组织级别禁用评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences)。项目所有者可以[在项目级别禁用评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects)。 |  | 2025 年 6 月 25 日 <p>（原计划于 2025 年 5 月 29 日发布）</p> |
+| **在 Analysis Workspace 项目中添加和查看评论** | Analysis Workspace 中新增的[评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects)可让您在 Analysis Workspace 项目的上下文中分享洞察和提出问题。这可以简化有关数据的讨论，使对话保持在正在讨论的数据范围内。您可以 <ul><li>对任何您有权访问的 Analysis Workspace 项目进行评论</li><li>对可视化图表中的特定点进行评论，也可以对项目进行一般性评论</li><li>标记其他用户，将您的评论告知他们</li><li>管理现有评论（编辑、固定、解决等）</li></ul>Customer Journey Analytics 管理员可以[在组织级别禁用评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences)。项目所有者可以[在项目级别禁用评论功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects)。 |  | 2025 年 6 月 25 日 <p>（原计划于 2025 年 5 月 29 日发布）</p> |

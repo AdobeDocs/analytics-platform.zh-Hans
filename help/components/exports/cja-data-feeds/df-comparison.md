@@ -4,8 +4,8 @@ keywords: 点击流;数据馈送;数据馈送;数据馈送
 title: 比较Customer Journey Analytics和Adobe Analytics中的数据馈送功能
 feature: Components
 hide: true
-hidefromtoc: true
-source-git-commit: fbd48b74505e18c24260b87b715ad036a6a60020
+exl-id: 32b71016-7c53-409f-9ce4-521a40e2eb96
+source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
 workflow-type: tm+mt
 source-wordcount: '2021'
 ht-degree: 1%
@@ -44,4 +44,3 @@ Customer Journey Analytics和Adobe Analytics中的数据馈送允许您向第三
 ![数据馈送数据处理](assets/data-feeds-data-processing.png)
 
 AA端的图表需要显示需要按访客的顺序接收它。
-

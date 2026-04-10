@@ -2,10 +2,10 @@
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: bac8472ed61d2c7421fb43957c22d18edaac67ec
+source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
 workflow-type: tm+mt
 source-wordcount: '1389'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 98%
 
 + 发行说明 {#releases}
    + [最新版本](../release-notes/latest.md)
-   + [预发行说明](../release-notes/pre-release-notes.md)
+   + {hide-from-toc}[预发行说明](../release-notes/pre-release-notes.md)
    + [2026 版](../release-notes/2026.md)
    + [2025 版](../release-notes/2025.md)
    + [2024 版](../release-notes/2024.md)
@@ -43,10 +43,10 @@ ht-degree: 98%
 
 + 升级和比较 {#compare-aa-cja}
    + 升级到 Customer Journey Analytics {#upgrade-to-cja}
-      + [快速入门](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
-      + [选择您的升级路径](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
-      + [向平台发送数据](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
-      + [保留历史数据](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
+      + {hide-from-toc}[入门指南](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
+      + {hide-from-toc}[选择升级路径](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
+      + {hide-from-toc}[将数据发送到平台](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
+      + {hide-from-toc}[保留历史数据](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
       + [建议的升级过程](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
       + [准备您的组织](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md)
       + 架构师和创建架构 {#schema}
@@ -94,7 +94,7 @@ ht-degree: 98%
          + [使用通过 Adobe Journey Optimizer 个性化](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
    + 与 Adobe Analytics 进行比较 {#cja-aa-comparison}
       + [概述](../getting-started/aa-vs-cja/overview.md)
-      + [实用 Adobe Analytics 数据 &#x200B;](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+      + [实用 Adobe Analytics 数据 ](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [跨IMS数据映射](../getting-started/aa-vs-cja/mapping-data-ims-orgs.md)
       + [功能支持](../getting-started/aa-vs-cja/cja-aa.md)
       + [比较术语](../getting-started/aa-vs-cja/terminology.md)
@@ -227,7 +227,7 @@ ht-degree: 98%
       + 历程画布 {#journey-canvas}
          + [概述](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
          + [配置](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
-         + [疑难解答 &#x200B;](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
+         + [疑难解答 ](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
       + [面积（堆叠）](../analysis-workspace/visualizations/area.md)
       + [条形图（堆叠）](../analysis-workspace/visualizations/bar.md)
       + [项目符号](../analysis-workspace/visualizations/bullet-graph.md)
@@ -396,7 +396,7 @@ ht-degree: 98%
       + [概述](/help/components/c-intelligent-alerts/intelligent-alerts.md)
       + [创建警报](/help/components/c-intelligent-alerts/alert-builder.md)
       + [管理警报](/help/components/c-intelligent-alerts/alert-manager.md)
-      + [功能比较 &#x200B;](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
+      + [功能比较 ](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
       + [用例](/help/components/c-intelligent-alerts/alerts-use-cases.md)
    + 导出 {#exports}
       + [配置云导出帐户](/help/components/exports/cloud-export-accounts.md)
@@ -406,10 +406,10 @@ ht-degree: 98%
       + [管理导出日志](/help/components/exports/manage-export-logs.md)
       + [导出故障诊断](/help/components/exports/troubleshoot-exports.md)
       + 数据馈送 {#cja-data-feeds}
-         + [数据馈送概述](/help/components/exports/cja-data-feeds/data-feed-overview.md)
-         + [比较Adobe Analytics数据馈送](/help/components/exports/cja-data-feeds/df-comparison.md)
-         + [准备映射列](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
-         + [映射列](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
+         + {hide-from-toc}[数据馈送概述](/help/components/exports/cja-data-feeds/data-feed-overview.md)
+         + {hide-from-toc}[比较Adobe Analytics数据馈送](/help/components/exports/cja-data-feeds/df-comparison.md)
+         + {hide-from-toc}[准备映射列](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
+         + {hide-from-toc}[映射列](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
    + 数据词典 {#data-dictionary}
       + [概述](../components/data-dictionary/data-dictionary-overview.md)
       + [查看数据字典中的组件信息](../components/data-dictionary/view-data-dictionary.md)
@@ -532,7 +532,7 @@ ht-degree: 98%
          + [Tie 会话重放](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
          + [使用热图](/help/use-cases/third-party/quantum-metric/heatmap.md)
          + [添加阻力事件](/help/use-cases/third-party/quantum-metric/friction-events.md)
-         + [源连接器](/help/use-cases/third-party/quantum-metric/source-connector.md)
+         + {hide-from-toc}[Source连接器](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
    + [Labs 用户指南](../labs/labs.md)
