@@ -7,7 +7,7 @@ role: User
 source-git-commit: 76b4ac60c8e3ae2dd62f86a35bdf1c582f60b10f
 workflow-type: tm+mt
 source-wordcount: '5286'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -433,7 +433,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-exp"
 >title="指数回归：相关系数"
->abstract="指数回归：Y = b * exp(aX)。 返回相关系数。"
+>abstract="指数回归：Y = b * exp(aX)。返回相关系数。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -456,7 +456,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-exp"
 >title="指数回归：预测的 Y"
->abstract="指数回归：Y = b * exp(aX)。 返回 Y。"
+>abstract="指数回归：Y = b * exp(aX)。返回 Y。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -480,7 +480,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-exp"
 >title="指数回归：截距"
->abstract="指数回归：Y = b * exp(aX)。 返回 b。"
+>abstract="指数回归：Y = b * exp(aX)。返回 b。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -503,7 +503,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-exp"
 >title="指数回归：斜率"
->abstract="指数回归：Y = b * exp(aX)。 返回 a。"
+>abstract="指数回归：Y = b * exp(aX)。返回 a。"
 
 <!-- markdownlint-enable MD034 -->
 

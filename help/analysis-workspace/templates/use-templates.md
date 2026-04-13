@@ -1075,7 +1075,7 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 
 >[!CONTEXTUALHELP]
 >id="template--brand-concierge--meeting"
->title="跟踪 B2B 会议请求的完整生命周期。监控转化率、顾问绩效，并识别最有效的销售线索开发渠道。"
+>title="跟踪 B2B 会议请求的完整生命周期。 监控转化率、顾问绩效，并识别最有效的销售线索开发渠道。"
 >abstract="**这可以帮助您**&#x200B;跟踪会议转化率，识别表现优异的团队成员，了解预订行为的季节性趋势，并查明哪些页面生成了最有价值的会议请求。<br/>**根据您了解的情况，您可以**&#x200B;执行任意数量的操作，如优化会议请求流程、将资源重新分配给转化率较高的页面、为预订率较低的顾问制定有针对性的培训计划，或实施新策略以减少错过的会议。"
 
 | 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |

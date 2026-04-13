@@ -117,32 +117,32 @@ ht-degree: 92%
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_ajo"
 >title="在 Customer Journey Analytics 中使用此连接"
->abstract="此选项允许您将 Customer Journey Analytics 的高级报告功能与 Journey Optimizer 连接结合使用。这些功能允许您：<ul><li>在 Customer Journey Analytics 中对 Journey Optimizer 数据进行深入分析。</li><li>编辑 Journey Optimizer 连接和相关联的数据视图。</li><li>分析历程事件、对话路径和营销活动绩效。</li></ul>**启用此选项后，连接中的每一行数据每月都会计入您的 Customer Journey Analytics 的许可数据行。和显示在连接使用情况UI中。**<br><br/>&#x200B;只有在您熟悉关于在 Customer Journey Analytics 中额外使用数据行的情况下，才浏览此选项。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/integrations/ajo){target="_blank"}。"
+>abstract="此选项允许您将 Customer Journey Analytics 的高级报告功能与 Journey Optimizer 连接结合使用。这些功能允许您：<ul><li>在 Customer Journey Analytics 中对 Journey Optimizer 数据进行深入分析。</li><li>编辑 Journey Optimizer 连接和相关联的数据视图。</li><li>分析历程事件、对话路径和营销活动绩效。</li></ul>**启用此选项后，连接中的每一行数据每月都会计入您的 Customer Journey Analytics 的许可数据行。 和显示在连接使用情况UI中。**<br><br/>&#x200B;只有在您熟悉关于在 Customer Journey Analytics 中额外使用数据行的情况下，才浏览此选项。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/integrations/ajo){target="_blank"}。"
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_ajo"
 >title="从 Customer Journey Analytics 中移除此连接"
->abstract="此 Journey Optimizer 连接目前正在 Customer Journey Analytics 中使用。这类连接允许您：<ul><li>在 Customer Journey Analytics 中对 Journey Optimizer 数据进行深入分析。</li><li>编辑 Journey Optimizer 连接和相关联的数据视图。</li><li>分析历程事件、对话路径和营销活动绩效。</li></ul>**如果您移除此连接，就无法在 Customer Journey Analytics 中进行深入分析。此连接和任何相关联的数据视图都被重置为其默认状态，无法再编辑。**<br/><br/>**Customer Journey Analytics 中此连接的计费包括此连接被移除的整月。**<br/><br/>&#x200B;此连接在 Journey Optimizer 中保持启用状态。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/integrations/ajo){target="_blank"}。"
+>abstract="此 Journey Optimizer 连接目前正在 Customer Journey Analytics 中使用。 这类连接允许您：<ul><li>在 Customer Journey Analytics 中对 Journey Optimizer 数据进行深入分析。</li><li>编辑 Journey Optimizer 连接和相关联的数据视图。</li><li>分析历程事件、对话路径和营销活动绩效。</li></ul>**如果您移除此连接，就无法在 Customer Journey Analytics 中进行深入分析。此连接和任何相关联的数据视图都被重置为其默认状态，无法再编辑。**<br/><br/>**Customer Journey Analytics 中此连接的计费包括此连接被移除的整月。**<br/><br/>&#x200B;此连接在 Journey Optimizer 中保持启用状态。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/integrations/ajo){target="_blank"}。"
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_brand_concierge"
 >title="在 Customer Journey Analytics 中使用此连接"
->abstract="此选项允许您将 Customer Journey Analytics 的高级报告功能与您的 Brand Concierge 连接一起使用。这些功能允许您：<ul><li>在 Customer Journey Analytics 中对 Brand Concierge 数据进行深入分析。</li><li>编辑 Brand Concierge 连接和相关联的数据视图。</li><li>分析对话式参与度、情绪和转化量度。</li></ul>**启用此选项后，连接中的每一行数据每月都会计入您的 Customer Journey Analytics 的许可数据行。和显示在连接使用情况UI中。**<br><br/>&#x200B;只有在您熟悉关于在 Customer Journey Analytics 中额外使用数据行的情况下，才浏览此选项。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates){target="_blank"}。"
+>abstract="此选项允许您将 Customer Journey Analytics 的高级报告功能与您的 Brand Concierge 连接一起使用。这些功能允许您：<ul><li>在 Customer Journey Analytics 中对 Brand Concierge 数据进行深入分析。</li><li>编辑 Brand Concierge 连接和相关联的数据视图。</li><li>分析对话式参与度、情绪和转化量度。</li></ul>**启用此选项后，连接中的每一行数据每月都会计入您的 Customer Journey Analytics 的许可数据行。 和显示在连接使用情况UI中。**<br><br/>&#x200B;只有在您熟悉关于在 Customer Journey Analytics 中额外使用数据行的情况下，才浏览此选项。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates){target="_blank"}。"
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_brand_concierge"
 >title="从 Customer Journey Analytics 中移除此连接"
->abstract="此 Brand Concierge 连接当前用于 Customer Journey Analytics。这类连接允许您：<ul><li>在 Customer Journey Analytics 中对 Brand Concierge 数据进行深入分析。</li><li>编辑 Brand Concierge 连接和相关联的数据视图。</li><li>分析对话式参与度、情绪和转化量度。</li></ul>**如果您移除此连接，就无法在 Customer Journey Analytics 中进行深入分析。此连接和任何相关联的数据视图都被重置为其默认状态，无法再编辑。**<br/><br/>**Customer Journey Analytics 中此连接的计费包括此连接被移除的整月。**<br/><br/>&#x200B;此连接在 Brand Concierge 中保持启用状态。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates){target="_blank"}。"
+>abstract="此 Brand Concierge 连接当前用于 Customer Journey Analytics。 这类连接允许您：<ul><li>在 Customer Journey Analytics 中对 Brand Concierge 数据进行深入分析。</li><li>编辑 Brand Concierge 连接和相关联的数据视图。</li><li>分析对话式参与度、情绪和转化量度。</li></ul>**如果您移除此连接，就无法在 Customer Journey Analytics 中进行深入分析。此连接和任何相关联的数据视图都被重置为其默认状态，无法再编辑。**<br/><br/>**Customer Journey Analytics 中此连接的计费包括此连接被移除的整月。**<br/><br/>&#x200B;此连接在 Brand Concierge 中保持启用状态。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates){target="_blank"}。"
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_product_usage"
 >title="在 Customer Journey Analytics 中使用此连接"
->abstract="此选项允许您将 Customer Journey Analytics 的高级报告功能与您的产品使用情况连接一起使用。这些功能允许您：<ul><li>在 Customer Journey Analytics 中对产品使用情况数据进行深入分析。</li><li>编辑产品使用情况连接和相关数据视图。</li></ul>**启用此选项后，连接中的每一行数据每月都会计入您的 Customer Journey Analytics 的许可数据行。和显示在连接使用情况UI中。**<br><br/>&#x200B;只有在您熟悉关于在 Customer Journey Analytics 中额外使用数据行的情况下，才浏览此选项。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/tools/product-usage/usage-overview){target="_blank"}。"
+>abstract="此选项允许您将 Customer Journey Analytics 的高级报告功能与您的产品使用情况连接一起使用。这些功能允许您：<ul><li>在 Customer Journey Analytics 中对产品使用情况数据进行深入分析。</li><li>编辑产品使用情况连接和相关数据视图。</li></ul>**启用此选项后，连接中的每一行数据每月都会计入您的 Customer Journey Analytics 的许可数据行。 和显示在连接使用情况UI中。**<br><br/>&#x200B;只有在您熟悉关于在 Customer Journey Analytics 中额外使用数据行的情况下，才浏览此选项。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/tools/product-usage/usage-overview){target="_blank"}。"
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_product_usage"
 >title="从 Customer Journey Analytics 中移除此连接"
->abstract="此产品使用情况连接当前用于 Customer Journey Analytics。这类连接允许您：<ul><li>在 Customer Journey Analytics 中对产品使用情况数据进行深入分析。</li><li>编辑产品使用情况连接和相关数据视图。</li></ul>**如果您移除此连接，就无法在 Customer Journey Analytics 中进行深入分析。此连接和任何相关联的数据视图都被重置为其默认状态，无法再编辑。**<br/><br/>**Customer Journey Analytics 中此连接的计费包括此连接被移除的整月。**<br/><br/>&#x200B;此连接为产品使用情况保持启用状态。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/tools/product-usage/usage-overview){target="_blank"}。"
+>abstract="此产品使用情况连接当前用于 Customer Journey Analytics。 这类连接允许您：<ul><li>在 Customer Journey Analytics 中对产品使用情况数据进行深入分析。</li><li>编辑产品使用情况连接和相关数据视图。</li></ul>**如果您移除此连接，就无法在 Customer Journey Analytics 中进行深入分析。此连接和任何相关联的数据视图都被重置为其默认状态，无法再编辑。**<br/><br/>**Customer Journey Analytics 中此连接的计费包括此连接被移除的整月。**<br/><br/>&#x200B;此连接为产品使用情况保持启用状态。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/tools/product-usage/usage-overview){target="_blank"}。"
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_legal_section_section"
@@ -454,7 +454,7 @@ ht-degree: 92%
 >[!CONTEXTUALHELP]
 >id="connection_stitching_dialog"
 >title="身份标识拼接"
->abstract="身份标识拼接会从数据集或身份标识图中获取用户身份标识信息。 此过程可能包括将来自已验证和未验证会话的用户数据合并起来。<br/><br/>您有责任遵守适用的法律和法规。此合规要求包含在对数据集启用拼接之前，必须获得必要的最终用户授权。"
+>abstract="身份标识拼接会从数据集或身份标识图中获取用户身份标识信息。 此过程可能包括将来自已验证和未验证会话的用户数据合并起来。<br/><br/>您有责任遵守适用的法律和法规。此合规要求包括在对数据集启用拼接之前，必须获得必要的最终用户授权。"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/stitching/overview" text="拼接概述"
 
 >[!CONTEXTUALHELP]

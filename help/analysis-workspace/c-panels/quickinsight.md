@@ -62,7 +62,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 | [!UICONTROL 量度] | 量度是关于查看次数、点进次数、重新加载次数、平均逗留时间、单位、订单数、收入等人员活动的量化信息。 |
 | **[!UICONTROL 可视化图表]** | Workspace 提供了[许多可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)，用于生成数据的可视化表示形式。例如条形图、圆环图、直方图、线形图、地图、散点图等。 |
 | **[!UICONTROL 维度划分]** | 维度划分是一种按其他维度来划分维度的方法。例如，您可以按移动设备划分美国各州的情况，以获取每个州的移动设备访问次数。或者您可以按移动设备类型、地区、内部营销活动等划分移动设备。 |
-| **[!UICONTROL 区段]** | 利用区段可根据相关特征或网站交互辨别一部分人。例如，您可以根据以下方面生成[!UICONTROL 人员]区段 <li>归因：浏览器类型、设备、访问次数、国家/地区、性别或</li><li>交互：营销活动、关键词搜索、搜索引擎或</li><li>退出和进入：来自 Facebook 的人员、定义的登陆页面、反向链接域或</li><li> 自定义变量：表单字段、定义的类别、客户 ID。 |
+| **[!UICONTROL 区段]** | 利用区段可根据相关特征或网站交互辨别一部分人。例如，您可以根据以下方面生成[!UICONTROL 人员]区段 <li>属性：浏览器类型、设备、访问次数、国家/地区、性别或</li><li>交互：营销活动、关键词搜索、搜索引擎或</li><li>退出和进入：来自 Facebook 的人员、定义的登陆页面、反向链接域或</li><li> 自定义变量：表单字段、定义的类别、客户 ID。 |
 
 ## 使用
 
@@ -103,7 +103,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 1. 当您添加了至少一个维度和一个量度后，您就可以看到结果。
 
-   ![The Freeform table showing the dimension vertically and the metric horizontally.](assets/quick-insights-output.png)
+   ![自由格式表纵向显示维度，横向显示量度。](assets/quick-insights-output.png)
 
    * 具有维度（国家代码）和量度（会话）的自由格式表，按过去 12 个月的 Web 会话分段。
 

@@ -196,7 +196,7 @@ ht-degree: 80%
 
   在下面的示例中，仅包含流量每个步骤中&#x200B;*产品主要类别*&#x200B;和&#x200B;*添加到购物车*&#x200B;的&#x200B;**最后一次**&#x200B;发生次数。
   ![限制，开始](assets/limitonlast.png)
-* 使用的系列因容器而异。如果您使用&#x200B;**[!UICONTROL 会话]**&#x200B;容器，则事件系列仅限于一个会话。  如果您使用任何其他容器(例如，**[!UICONTROL Person]**、**[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}或&#x200B;**[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"})，则一系列事件将基于指定的容器，并可能跨多个会话。
+* 使用的系列因容器而异。如果您使用&#x200B;**[!UICONTROL 会话]**&#x200B;容器，则事件系列仅限于一个会话。  如果您使用任何其他容器（例如，**[!UICONTROL Person]**、**[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}或&#x200B;**[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}），则一系列事件将基于指定的容器，并可能跨多个会话。
 * 在&#x200B;**[!UICONTROL 开始于]**&#x200B;或&#x200B;**[!UICONTROL 结束于]**&#x200B;字段中使用量度或维度项时，可以在高级设置中配置&#x200B;**[!UICONTROL 限制到第一次/最后一次发生次数]**&#x200B;的选项。
 
 

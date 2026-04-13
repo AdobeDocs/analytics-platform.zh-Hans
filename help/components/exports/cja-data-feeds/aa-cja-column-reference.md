@@ -3,9 +3,8 @@ title: 将Adobe Analytics数据馈送列映射到Customer Journey Analytics
 description: 确定如何获取给定的Adobe Analytics数据馈送列，并确定其在您的Customer Journey Analytics实施中的大致等效项。
 feature: Components
 hide: true
-hidefromtoc: true
 exl-id: 81d6e79e-8324-4726-9a48-10177b0a91b1
-source-git-commit: b0be8b726c4fab1bf9bb5f9462be84f39bdf184a
+source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
 workflow-type: tm+mt
 source-wordcount: '3768'
 ht-degree: 47%

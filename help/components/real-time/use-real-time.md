@@ -20,7 +20,7 @@ ht-degree: 12%
 
 要使用实时报表，请在Workspace项目中的以下任何面板上启用&#x200B;**[!UICONTROL 实时刷新]**&#x200B;切换开关：
 
-* [”空白“面板](/help/analysis-workspace/c-panels/blank-panel.md)
+* [空白面板](/help/analysis-workspace/c-panels/blank-panel.md)
 * [自由格式表](/help/analysis-workspace/c-panels/freeform-panel.md)
 * [归因](/help/analysis-workspace/c-panels/attribution.md)
 * [下一项或上一项](/help/analysis-workspace/c-panels/next-previous.md)

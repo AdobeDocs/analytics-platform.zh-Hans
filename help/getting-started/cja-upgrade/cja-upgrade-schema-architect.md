@@ -40,7 +40,7 @@ Customer Journey Analytics的数据管道包含单独的区域，可用于数据
 
 ## 比较架构与Adobe Analytics数据收集
 
-Customer Journey Analytics使用的Experience Data Model比大多数其他Analytics解决方案(包括Adobe Analytics)具有更大的灵活性。 建立一个稳固的架构是贵组织避免执行其他Analytics产品中存在的限制的机会。
+Customer Journey Analytics使用的Experience Data Model比大多数其他Analytics解决方案（包括Adobe Analytics）具有更大的灵活性。 建立一个稳固的架构是贵组织避免执行其他Analytics产品中存在的限制的机会。
 
 | Adobe Analytics的常见习惯 | XDM + Customer Journey Analytics中更好的方法 |
 |---|---|

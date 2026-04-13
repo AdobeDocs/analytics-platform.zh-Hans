@@ -4,10 +4,9 @@ description: 使用量子量度收集用户历程和行为的数据，然后从�
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
-hidefromtoc: true
 hide: true
 exl-id: ea8795fe-f5aa-458f-9e01-53ff1ffe6372
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%

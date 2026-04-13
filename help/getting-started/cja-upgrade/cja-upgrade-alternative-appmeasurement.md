@@ -52,7 +52,7 @@ ht-degree: 58%
 
 ## 基本步骤
 
-迁移Adobe Analytics实施(AppMeasurement或Analytics扩展)以使用Web SDK将数据发送到Customer Journey Analytics的基本步骤如下：
+迁移Adobe Analytics实施（AppMeasurement或Analytics扩展）以使用Web SDK将数据发送到Customer Journey Analytics的基本步骤如下：
 
 1. 迁移Adobe Analytics实施以使用Adobe Experience Platform Web SDK，并开始将数据发送到Edge Network。
 
