@@ -4,14 +4,15 @@ description: 在Customer Journey Analytics的各种BI工具中，BI扩展的多�
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: 7c8d01ac-47a3-4348-83ef-fea66695fbb2
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1532'
 ht-degree: 1%
 
 ---
 
-# 多个维度排名
+# 多维度排名
 
 
 在此使用案例中，您希望显示一个表，其中划分2023年产品类别中产品名称的购买收入和购买。 此外，您还希望使用一些可视化图表来说明每个产品类别中的产品类别分布和产品名称贡献。
@@ -36,7 +37,7 @@ ht-degree: 1%
 >[!TAB Power BI桌面]
 
 1. 若要确保日期范围适用于所有可视化图表，请将&#x200B;**[!UICONTROL daterangeday]**&#x200B;从&#x200B;**[!UICONTROL 数据]**&#x200B;窗格拖放到此页上的&#x200B;**[!UICONTROL 筛选器]**。
-   1. 从该页面上的&#x200B;**[!UICONTROL 筛选器中选择]** daterangeday is (All)**&#x200B;**。
+   1. 从该页面上的&#x200B;**[!UICONTROL 筛选器中选择]** daterangeday is (All)****。
    1. 选择&#x200B;**[!UICONTROL 相对日期]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
    1. 将筛选器定义为&#x200B;**[!UICONTROL 当值]** **[!UICONTROL 在最后]** `1` **[!UICONTROL 日历年]**&#x200B;内时显示项。
    1. 选择&#x200B;**[!UICONTROL 应用筛选器]**。
@@ -49,12 +50,12 @@ ht-degree: 1%
    1. 选择&#x200B;**[!UICONTROL 购买总和]**
 
 1. 若要将垂直条形图修改为表，请确保已选择表，并从&#x200B;**[!UICONTROL 可视化]**&#x200B;窗格中选择&#x200B;**[!UICONTROL 矩阵]**。
-   * 从&#x200B;**[!UICONTROL 列]**&#x200B;中拖动&#x200B;**[!UICONTROL product_name]**，并将字段拖放到[!UICONTROL 可视化]窗格中的&#x200B;**[!UICONTROL 行]**&#x200B;中的&#x200B;**&#x200B;**&#x200B;[!UICONTROL product_categor]&#x200B;**&#x200B;**&#x200B;y下。
+   * 从&#x200B;**[!UICONTROL 列]**&#x200B;中拖动&#x200B;**[!UICONTROL product_name]**，并将字段拖放到[!UICONTROL 可视化]窗格中的&#x200B;**[!UICONTROL 行]**&#x200B;中的****[!UICONTROL product_categor]****y下。
 
 1. 要限制表中显示的产品数，请在&#x200B;**[!UICONTROL 筛选器]**&#x200B;窗格中选择&#x200B;**[!UICONTROL product_name is (All)]**。
 
    1. 选择&#x200B;**[!UICONTROL 高级筛选]**。
-   1. 选择&#x200B;**[!UICONTROL 筛选器类型]** **[!UICONTROL 前N]** **[!UICONTROL 按值]**&#x200B;显示项&#x200B;**&#x200B;**&#x200B;前`15` **&#x200B;**。
+   1. 选择&#x200B;**[!UICONTROL 筛选器类型]** **[!UICONTROL 前N]** **[!UICONTROL 按值]**&#x200B;显示项&#x200B;****&#x200B;前`15` ****。
    1. 从&#x200B;**[!UICONTROL 数据]**&#x200B;窗格将&#x200B;**[!UICONTROL 购买]**&#x200B;拖到&#x200B;**[!UICONTROL 在此添加数据字段]**&#x200B;上。
    1. 选择&#x200B;**[!UICONTROL 应用筛选器]**。
 
@@ -133,7 +134,7 @@ ht-degree: 1%
    1. 若要将两个水平条更改为表，请从&#x200B;**[!UICONTROL 显示我]**&#x200B;中选择&#x200B;**[!UICONTROL 文本表]**。
    1. 要限制产品数，请在&#x200B;**[!UICONTROL 度量值]**&#x200B;中选择&#x200B;**[!UICONTROL 购买]**。 从下拉菜单中选择&#x200B;**[!UICONTROL 筛选器]**。
    1. 在&#x200B;**[!UICONTROL 筛选器\[购买\]]**&#x200B;对话框中，选择&#x200B;**[!UICONTROL 至少]**&#x200B;并输入`7000`。 选择&#x200B;**[!UICONTROL 应用]**&#x200B;和&#x200B;**[!UICONTROL 确定]**。
-   1. 从&#x200B;**&#x200B;**&#x200B;适应下拉菜单中选择&#x200B;**[!UICONTROL 适应宽度]**。
+   1. 从&#x200B;****&#x200B;适应下拉菜单中选择&#x200B;**[!UICONTROL 适应宽度]**。
 
       您的Tableau桌面应该如下所示。
 
@@ -244,7 +245,7 @@ ht-degree: 1%
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。
+1. 在新块中输入以下代码块。
 
    ```R
    ## Multiple dimensions ranked

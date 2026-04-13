@@ -4,9 +4,10 @@ description: Customer Journey Analytics中各种BI工具中BI扩展的每日趋�
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: 09810072-1be4-4c78-8c84-b33db1872dbc
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -43,7 +44,7 @@ ht-degree: 0%
 
 1. 在&#x200B;**[!UICONTROL 筛选器]**&#x200B;窗格中：
 
-   1. 从此视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]** daterangeday is (All)**&#x200B;**。
+   1. 从此视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]** daterangeday is (All)****。
    1. 选择&#x200B;**[!UICONTROL 高级筛选]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
    1. 将筛选器定义为&#x200B;**[!UICONTROL 当值]** **[!UICONTROL 位于或晚于]** `1/1/2023` **[!UICONTROL 且]** **[!UICONTROL 位于]** `2/1/2023.`时显示项您可以使用日历图标挑选日期。
    1. 选择&#x200B;**[!UICONTROL 应用筛选器]**。
@@ -152,7 +153,7 @@ ht-degree: 0%
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。
+1. 在新块中输入以下代码块。
 
    ```R
    ## Daily Events

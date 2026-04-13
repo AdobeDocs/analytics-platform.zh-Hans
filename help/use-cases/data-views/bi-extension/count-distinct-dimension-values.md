@@ -4,9 +4,10 @@ description: 在Customer Journey Analytics的各种BI工具中，计算BI扩展�
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: 6a05bce1-542c-40d3-bbb0-4a8e561438c9
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -40,7 +41,7 @@ ht-degree: 0%
 >[!TAB Power BI桌面]
 
 1. 为确保日期范围适用于所有可视化图表，请将&#x200B;**[!UICONTROL daterangeday]**&#x200B;从&#x200B;**[!UICONTROL 数据]**&#x200B;窗格拖放到此页上的&#x200B;**[!UICONTROL 筛选器]**&#x200B;上。
-   1. 从该页面上的&#x200B;**[!UICONTROL 筛选器中选择]** daterangeday is (All)**&#x200B;**。
+   1. 从该页面上的&#x200B;**[!UICONTROL 筛选器中选择]** daterangeday is (All)****。
    1. 选择&#x200B;**[!UICONTROL 高级筛选]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
    1. 将筛选器定义为&#x200B;**[!UICONTROL 当值]** **[!UICONTROL 在]** `1/1/2023` **[!UICONTROL 和]** **[!UICONTROL 在]** `2/1/2023`之前或之后时显示项。
    1. 选择&#x200B;**[!UICONTROL 应用筛选器]**。
@@ -159,7 +160,7 @@ ht-degree: 0%
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。
+1. 在新块中输入以下代码块。
 
    ```R
    ## Count Distinct
@@ -177,4 +178,3 @@ ht-degree: 0%
 >[!ENDTABS]
 
 +++
-

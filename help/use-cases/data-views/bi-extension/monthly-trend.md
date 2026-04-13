@@ -4,9 +4,10 @@ description: Customer Journey Analytics中各种BI工具中的BI扩展的每月�
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: 9be5180e-6926-431e-aa70-61cb98130ef6
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
@@ -154,7 +155,7 @@ ht-degree: 0%
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。
+1. 在新块中输入以下代码块。
 
    ```R
    ## Hourly Events

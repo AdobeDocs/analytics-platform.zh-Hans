@@ -4,9 +4,10 @@ description: 在Customer Journey Analytics的各种BI工具中对BI扩展的用�
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: bac873a8-9003-400d-9f52-fcf734c2f56b
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '733'
 ht-degree: 1%
 
 ---
@@ -42,7 +43,7 @@ ht-degree: 1%
    1. 选择&#x200B;**[!UICONTROL 购买总和]**。
 
 1. 在&#x200B;**[!UICONTROL 筛选器]**&#x200B;窗格中：
-   1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]**&#x200B;日期范围是（全部）**&#x200B;**。
+   1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择]**&#x200B;日期范围是（全部）****。
    1. 选择&#x200B;**[!UICONTROL 高级筛选]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
    1. 将筛选器定义为&#x200B;**[!UICONTROL 当值]** **[!UICONTROL 在]** `1/1/2023` **[!UICONTROL 和]** **[!UICONTROL 在]** `2/1/2023`之前或之后时显示项。
 
@@ -245,7 +246,7 @@ FETCH NEXT 500 ROWS ONLY
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。
+1. 在新块中输入以下代码块。
 
    ```R
    ## Dimension 1 Sorted
