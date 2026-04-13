@@ -58,11 +58,11 @@ ht-degree: 95%
 
 用于包含 URL 的字段。使用示例 URL`https://example.com/store/index.html?cid=campaign#cart`，提供以下选项：
 
-* **[!UICONTROL 获取协议]**：获取 URL 的协议。例如：`"https://"`。
-* **[!UICONTROL 获取主机]**：获取 URL 的主机。例如：`"example.com"`。
-* **[!UICONTROL 获取路径]**：获取 URL 的路径。例如：`"store/index.html"`。
+* **[!UICONTROL 获取协议]**：获取 URL 的协议。例如，`"https://"`。
+* **[!UICONTROL 获取主机]**：获取 URL 的主机。例如，`"example.com"`。
+* **[!UICONTROL 获取路径]**：获取 URL 的路径。例如，`"store/index.html"`。
 * **[!UICONTROL 获取查询字符串值]**：从单个查询字符串获取值。将所需的查询字符串参数放入 **[!UICONTROL 查询键]** 字段。如果上述 URL 与`"cid"`查询键一起使用，则输出为 `"campaign"`。
-* **[!UICONTROL 获取哈希值]**：获取 URL 的哈希值。例如：`"cart"`。
+* **[!UICONTROL 获取哈希值]**：获取 URL 的哈希值。例如，`"cart"`。
 
 如果输入内容非有效的 URL 或所需的 URL 组件不存在，则应用 [无值选项](no-value-options.md)。
 
@@ -121,7 +121,7 @@ Customer Journey Analytics 使用 Perl 正则表达式语法的子集。如果�
 | --- | --- |
 | `$&` | 输出与整个表达式匹配的内容。 |
 | `$n` | 输出与第 n 个子表达式匹配的内容。例如，`$1` 输出第一个子表达式。 |
-| ``$` `` | 输出上一个匹配的结束（如果没有找到上一个匹配，则输出文本的开始）和当前匹配的开始之间的文本。 |
+| ``$` `` | 输出从上一个匹配结束（若未找到上一个匹配，则为文本开头）到当前匹配开头的文本。 |
 | `$+` | 输出与正则表达式中最后标记的子表达式匹配的内容。 |
 | `$$` | 输出字符串 `"$"`。 |
 

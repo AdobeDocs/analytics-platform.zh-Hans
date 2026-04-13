@@ -59,6 +59,6 @@ ht-degree: 100%
 
    ![为轮廓启用架构](assets/aepwebsdk-dataset-profile.png)
 
-   有关如何查看、预览、创建和删除数据集的更多信息，请参阅[数据集 UI 指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=zh-Hans)。您还可以了解如何为实时客户轮廓启用数据集。
+   有关如何查看、预览、创建和删除数据集的更多信息，请参阅[数据集 UI 指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html)。您还可以了解如何为实时客户轮廓启用数据集。
 
 {{upgrade-final-step}}

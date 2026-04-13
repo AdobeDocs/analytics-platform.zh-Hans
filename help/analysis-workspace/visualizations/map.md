@@ -42,7 +42,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中的地图可视化图表。_<br/>_查看本文的[&#x200B; &#x200B;](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)版本的&#x200B;_&#x200B;**映射**。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的地图可视化图表。_<br/>_查看本文的[ ](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)版本的&#x200B;_**映射**。_
 
 >[!ENDSHADEBOX]
 
@@ -50,7 +50,7 @@ Analysis Workspace中的![全球](/help/assets/icons/Globe.svg) **[!UICONTROL �
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [地图可视化图表](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/configure-and-use-the-map-visualization){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[地图可视化图表](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/configure-and-use-the-map-visualization){target="_blank"}。
 
 >[!ENDSHADEBOX]
 

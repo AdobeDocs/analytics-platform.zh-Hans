@@ -158,7 +158,7 @@ Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/a
 
 **提示词：**&#x200B;在提示词窗口中输入&#x200B;*“添加利润。”*
 
-**回答：**&#x200B;**[!UICONTROL 条形]**&#x200B;图仍然提供了最简洁的回答，而利润量度被添加到自由格式表中成为一列：
+**回答：****[!UICONTROL 条形]**&#x200B;图仍然提供了最简洁的回答，而利润量度被添加到自由格式表中成为一列：
 
 ![条形图](/help/assets/ai-asst-result4.png)
 
@@ -178,7 +178,7 @@ Adobe Experience Platform Agent Orchestrator 允许您在 Adobe Journey Optimize
 
 Agent Orchestrator 能够理解您的请求，确定需要使用哪些专门的代理，并编排它们以提供正确的回答。它可以在多轮次交互中跟踪上下文，使您可以在之前查询的基础上自然地构建对话。
 
-有关更多信息，请参阅 [Adobe Experience Platform Agent Orchestrator](https://business.adobe.com/cn/products/experience-platform/agent-orchestrator.html)。
+有关更多信息，请参阅 [Adobe Experience Platform Agent Orchestrator](https://business.adobe.com/products/experience-platform/agent-orchestrator.html)。
 
 ## 数据可视化图表提示词示例
 

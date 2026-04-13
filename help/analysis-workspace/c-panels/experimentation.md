@@ -26,7 +26,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** 中的试验面板。_<br/>_有关如何在_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** 中分析 Adobe Target 活动和体验的信息，请参阅 [Analytics for Target 面板](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/a4t-panel)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** 中的试验面板。_<br/>_有关如何在_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 中分析 Adobe Target 活动和体验的信息，请参阅 [Analytics for Target 面板](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/a4t-panel)。_
 
 >[!ENDSHADEBOX]
 
@@ -180,8 +180,8 @@ A/B 测试是业内客观衡量此类干预效果的黄金标准。A/B 测试之
 
 ## 在实验面板中使用计算量度
 
-请参阅此博客文章，了解有关[使用实验面板中的计算量度](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119?profile.language=zh-Hans)的信息。
+请参阅此博客文章，了解有关[使用实验面板中的计算量度](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119)的信息。
 
 >[!MORELIKETHIS]
->[掌握 Adobe Customer Journey Analytics 实验](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338?profile.language=zh-Hans)
+>[掌握 Adobe Customer Journey Analytics 实验](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338)
 >

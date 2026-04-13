@@ -59,7 +59,7 @@ ht-degree: 56%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [组件类型设置](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [组件类型设置](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -74,7 +74,7 @@ ht-degree: 56%
 
 为方便起见，智能默认上下文标签会根据具有特定XDM路径的字段自动应用于组件。 例如，**[!UICONTROL Commerce：产品类别]**&#x200B;上下文标签自动应用于基于&#x200B;**[!UICONTROL 架构路径的]**&#x200B;类别名称`productListItems.productCategories.categoryName`维度。 但是，您可以将上下文标签移动到其他组件而不会出现任何问题。
 
-为了简化Adobe提供的项目模板，一些集成(如Journey Optimizer、Content Analytics等)可设置数据视图，其中开箱即用的组件以特定方式构建。 并且会自动应用相应的上下文标签。 同样地，您只需将这些上下文标签中的任意标签移动到在数据视图中创建的其他组件中，即可改用您的自定义组件。
+为了简化Adobe提供的项目模板，一些集成（如Journey Optimizer、Content Analytics等）可设置数据视图，其中开箱即用的组件以特定方式构建。 并且会自动应用相应的上下文标签。 同样地，您只需将这些上下文标签中的任意标签移动到在数据视图中创建的其他组件中，即可改用您的自定义组件。
 
 上下文标签也与项目模板的披露相关。 项目模板可快速实现多个不同专门构建用例的报告基础。 但是，并非每个模板都适用于每个数据视图，并且您不希望显示不适用的模板。 上下文标签用于根据所选数据视图中是否包含上下文标签来显示模板。  只需向数据视图（组件）添加更多上下文标签即可，并且会有更多模板可用。 或者移除上下文标签以隐藏特定模板。
 
@@ -97,7 +97,7 @@ ht-degree: 56%
 
 * 要定义一组组件，您可以使用Analysis Workspace项目中的[试验面板](/help/analysis-workspace/c-panels/experimentation.md)在试验报表中使用。
 
-  请参阅[与 Journey Optimizer 集成](/help/integrations/ajo.md#data-view)以及[&#x200B; Target 报告](/help/integrations/at.md)。
+  请参阅[与 Journey Optimizer 集成](/help/integrations/ajo.md#data-view)以及[ Target 报告](/help/integrations/at.md)。
 
 * 要定义一组组件，您可以在Analysis Workspace项目的[地图](/help/analysis-workspace/visualizations/map.md)可视化图表中使用。
 

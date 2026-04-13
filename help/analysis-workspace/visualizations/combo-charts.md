@@ -25,9 +25,9 @@ ht-degree: 93%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** 中的组合可视化图表。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** 中的组合可视化图表。_
 
-_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** 版本的[组合](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts)。_
+_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版本的[组合](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts)。_
 
 >[!ENDSHADEBOX]
 
@@ -50,7 +50,7 @@ _请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&
 
 ## 使用
 
-1. 添加![注释](/help/assets/icons/ComboChart.svg) [!UICONTROL 组合]可视化。请参阅[将可视化添加到面板](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+1. 添加![注释](/help/assets/icons/ComboChart.svg)[!UICONTROL 组合]可视化。请参阅[将可视化添加到面板](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 
 1. 从下拉菜单中，选择X轴的维和Y轴的量度。
 
@@ -76,7 +76,7 @@ _请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&
 
 如果您选择&#x200B;**[!UICONTROL 函数]**&#x200B;作为[!UICONTROL 线形比较类型]，则会返回已选择量度的函数。
 
-| 函数 | 定义 |
+| 功能 | 定义 |
 | --- | --- |
 | **[!UICONTROL 列总和]** | 添加列中某量度的所有数值（某一维度的各个元素） |
 | **[!UICONTROL 累积平均数]** | 返回最后 N 行的平均数。 |
@@ -99,6 +99,6 @@ _请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&
 >[!MORELIKETHIS]
 >
 >[在面板中添加可视化效果](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[可视化图表设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[可视化图表上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[可视化图表设置](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[可视化图表上下文菜单](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
