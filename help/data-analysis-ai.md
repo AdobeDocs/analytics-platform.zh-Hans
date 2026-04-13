@@ -178,7 +178,7 @@ Adobe Experience Platform Agent Orchestrator 允许您在 Adobe Journey Optimize
 
 Agent Orchestrator 能够理解您的请求，确定需要使用哪些专门的代理，并编排它们以提供正确的回答。它可以在多轮次交互中跟踪上下文，使您可以在之前查询的基础上自然地构建对话。
 
-有关更多信息，请参阅 [Adobe Experience Platform Agent Orchestrator](https://business.adobe.com/products/experience-platform/agent-orchestrator.html)。
+有关更多信息，请参阅 [Adobe Experience Platform Agent Orchestrator](https://business.adobe.com/cn/products/experience-platform/agent-orchestrator.html)。
 
 ## 数据可视化图表提示词示例
 

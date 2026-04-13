@@ -31,7 +31,7 @@ ht-degree: 92%
 所有活跃用户（新用户 + 重复用户 + 返回用户）在横轴上方显示为青色，而所有休眠用户在横轴下方显示为橙色。
 
 
->[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/active-growth)
+>[!VIDEO](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/guided-analysis/active-growth)
 
 ## 用例
 

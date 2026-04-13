@@ -48,6 +48,6 @@ ht-degree: 91%
 
 >[!MORELIKETHIS]
 >
->[在Adobe Customer Journey Analytics中处理“无值”的完整行动手册](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/the-complete-playbook-for-handling-no-value-in-adobe-cja/ba-p/756696#M598)。
+>[在Adobe Customer Journey Analytics中处理“无值”的完整行动手册](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/the-complete-playbook-for-handling-no-value-in-adobe-cja/ba-p/756696?profile.language=zh-Hans#M598)。
 
 
