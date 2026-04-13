@@ -97,7 +97,7 @@ ht-degree: 56%
 
 * 要定义一组组件，您可以使用Analysis Workspace项目中的[试验面板](/help/analysis-workspace/c-panels/experimentation.md)在试验报表中使用。
 
-  请参阅[与 Journey Optimizer 集成](/help/integrations/ajo.md#data-view)以及[ Target 报告](/help/integrations/at.md)。
+  请参阅[与 Journey Optimizer 集成](/help/integrations/ajo.md#data-view)以及[&#x200B; Target 报告](/help/integrations/at.md)。
 
 * 要定义一组组件，您可以在Analysis Workspace项目的[地图](/help/analysis-workspace/visualizations/map.md)可视化图表中使用。
 

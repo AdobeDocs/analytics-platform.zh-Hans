@@ -81,7 +81,7 @@ ht-degree: 99%
 
 1. 使用[日期预览](#data-preview)面板解释数据。
 
-1. 选择&#x200B;**[!UICONTROL [!UICONTROL 查看示例 ID]]** 来查看此受众中的 ID 示例。在 **[!UICONTROL ID 示例]**&#x200B;对话框中，您可以使用![搜索](/help/assets/icons/Search.svg)[!UICONTROL *搜索 ID 示例*]&#x200B;来搜索 ID 示例。
+1. 选择&#x200B;**[!UICONTROL [!UICONTROL 查看示例 ID]]** 来查看此受众中的 ID 示例。在 **[!UICONTROL ID 示例]**&#x200B;对话框中，您可以使用![搜索](/help/assets/icons/Search.svg) [!UICONTROL *搜索 ID 示例*]&#x200B;来搜索 ID 示例。
 
 1. 双击受众配置，然后选择&#x200B;**[!UICONTROL 发布]**。
 您会收到一条受众已发布的确认消息。发布只需要一两分钟，这个受众就会出现在 Experience Platform 上。
@@ -101,7 +101,7 @@ ht-degree: 99%
 | **[!UICONTROL 标记]** | 出于组织目的而要分配给受众的任何标记。您可以选择一个或多个预先存在的标记，也可以输入一个新标记。 |
 | **[!UICONTROL 描述]** | 对受众的描述，以区别于其他人。例如，`Build an audience of really interested potential car buyers` |
 | **[!UICONTROL 刷新频率]** | 您刷新受众所要采用的频率。<p/>您可以选择 <ul><li>**[!UICONTROL 一次性]** 受众：无需刷新的受众（默认）。例如，该选项可能有助于特定的一次性营销活动。<br/>您必须指定一个&#x200B;**[!UICONTROL 一次性的日期范围]**。您可以使用![日程表](/help/assets/icons/Calendar.svg)来输入日期范围。</li><li>刷新的受众。您可以从下列选项中进行选择：<ul><li>**[!UICONTROL 每 4 小时]**：每 4 小时刷新一次的受众。</li><li>**[!UICONTROL 每日]**：每日刷新一次的受众</li><li>**[!UICONTROL 每周]**：每周刷新一次的受众。</li><li>**[!UICONTROL 每月]**：每月刷新一次的受众</li></ul></li>若要刷新观众，您必须指定：<ul><li>**[!UICONTROL 刷新回顾窗口]**。定义从今天开始评估受众的回顾天数。您可以从选项中进行选择或定义自定义时间。最长为 90 天。</li><li>**[!UICONTROL 到期日期]**：定义受众停止刷新的时间。您可以使用![日程表](/help/assets/icons/Calendar.svg)选择日期。默认值为创建日期开始 1 年。到期受众的处理方式与到期的计划报告类似。管理员会在受众到期前一个月收到一封电子邮件。</li></ul> 请注意，受众刷新次数限制为 75 到 150 次，具体取决于您的 Customer Journey Analytics 权限。</li></ul> |
-| **[!UICONTROL 过滤器]** | 过滤器是受众的主要输入。将一个或多个区段从左侧![分段](/help/assets/icons/Segmentation.svg)**[!UICONTROL 区段]**&#x200B;面板拖放到区段区域。您可以使用![搜索](/help/assets/icons/Search.svg)[!UICONTROL *搜索区段*]&#x200B;来搜索区段。您最多可以添加 20 个区段。区段可以与 **[!UICONTROL And]** 或 **[!UICONTROL Or]** 运算符相连。<p>从 Analysis Workspace 中的可视化图表（例如自由格式表或“历程”画布）创建受众时，应用于面板或列的任何区段都会保留。您可以移除任何自动应用的区段。</p> |
+| **[!UICONTROL 过滤器]** | 过滤器是受众的主要输入。将一个或多个区段从左侧![分段](/help/assets/icons/Segmentation.svg)**[!UICONTROL 区段]**&#x200B;面板拖放到区段区域。您可以使用![搜索](/help/assets/icons/Search.svg) [!UICONTROL *搜索区段*]&#x200B;来搜索区段。您最多可以添加 20 个区段。区段可以与 **[!UICONTROL And]** 或 **[!UICONTROL Or]** 运算符相连。<p>从 Analysis Workspace 中的可视化图表（例如自由格式表或“历程”画布）创建受众时，应用于面板或列的任何区段都会保留。您可以移除任何自动应用的区段。</p> |
 | **[!UICONTROL 数据预览]** | 选择![信息](/help/assets/icons/Info.svg)可显示或隐藏所选日期范围的[数据预览](#data-preview)。 |
 
 ## 数据预览
