@@ -4,10 +4,11 @@ description: 使用日期范围名称在Customer Journey Analytics的各种BI工
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: a10818ec-a25c-4e4e-a551-14ff501750fa
+source-git-commit: 0299762a2c901852ba6b0940093809a116fa6b11
 workflow-type: tm+mt
 source-wordcount: '611'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -138,7 +139,7 @@ ht-degree: 1%
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。 确保使用适当的日期范围名称。 例如，`Last Year 2023`。
+1. 在新块中输入以下介于` ```{r} `和` ``` `之间的语句。 确保使用适当的日期范围名称。 例如，`Last Year 2023`。
 
    ```R
    ## Monthly Events for Last Year
