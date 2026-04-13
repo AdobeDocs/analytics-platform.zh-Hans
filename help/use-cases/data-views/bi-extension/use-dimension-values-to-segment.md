@@ -4,14 +4,15 @@ description: 使用维度值在Customer Journey Analytics的各种BI工具中分
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: 8557b424-4a5e-4996-8e2f-cf1bcafe64c5
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 0%
+source-wordcount: '796'
+ht-degree: 1%
 
 ---
 
-# 使用维度值进行分段
+# 使用维度值进行区段划分
 
 您使用&#x200B;**[!UICONTROL 产品类别]**&#x200B;的动态&#x200B;**[!UICONTROL 打猎]**&#x200B;值来细分打猎类别中的产品。 或者，对于那些不支持动态检索产品类别值的BI工具，您可以在Customer Journey Analytics中创建一个新区段，以细分来自打猎产品类别的产品。
 然后，您希望使用新区段来报告2023年1月狩猎类别中产品的产品名称和发生次数（事件）。
@@ -154,7 +155,7 @@ ht-degree: 0%
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。 确保使用适当的类别。 例如，`Hunting`。
+1. 在新块中输入以下代码块。 确保使用适当的类别。 例如，`Hunting`。
 
    ```R
    ## Dimension 1 Filtered by Dimension 2 value
@@ -173,4 +174,3 @@ ht-degree: 0%
 >[!ENDTABS]
 
 +++
-

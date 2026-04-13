@@ -4,9 +4,10 @@ description: Customer Journey Analytics中各种BI工具中BI扩展的转换用�
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: 2022a841-fc2a-4a76-8d91-8227e7a2130a
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1676'
 ht-degree: 0%
 
 ---
@@ -236,7 +237,7 @@ Customer Journey Analytics组件（维度、量度、过滤器、计算量度和
 
 **自定义转换**
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。
+1. 在新块中输入以下代码块。
 
    ```R
    df <- dv %>%
@@ -269,4 +270,3 @@ LIMIT 1000
 >[!ENDTABS]
 
 +++
-

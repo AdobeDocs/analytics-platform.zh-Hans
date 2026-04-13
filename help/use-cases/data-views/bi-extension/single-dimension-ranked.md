@@ -4,14 +4,15 @@ description: 在Customer Journey Analytics的各种BI工具中，BI扩展的单�
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: e66ad7c4-0d49-41fe-a9fc-661fd31e8c68
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1323'
 ht-degree: 1%
 
 ---
 
-# 单个维度排名
+# 单一维度排名
 
 
 在此使用案例中，您希望显示一个表格和简单的条形图可视化图表，其中显示产品名称在2023年的购买和购买收入。
@@ -214,7 +215,7 @@ ht-degree: 1%
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。
+1. 在新块中输入以下代码块。
 
    ```R
    library(tidyr)
@@ -240,4 +241,3 @@ ht-degree: 1%
 >[!ENDTABS]
 
 +++
-

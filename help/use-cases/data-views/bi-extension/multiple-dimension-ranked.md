@@ -4,14 +4,15 @@ description: 在Customer Journey Analytics的各种BI工具中，BI扩展的多�
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: 7c8d01ac-47a3-4348-83ef-fea66695fbb2
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1532'
 ht-degree: 1%
 
 ---
 
-# 多个维度排名
+# 多维度排名
 
 
 在此使用案例中，您希望显示一个表，其中划分2023年产品类别中产品名称的购买收入和购买。 此外，您还希望使用一些可视化图表来说明每个产品类别中的产品类别分布和产品名称贡献。
@@ -244,7 +245,7 @@ ht-degree: 1%
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。
+1. 在新块中输入以下代码块。
 
    ```R
    ## Multiple dimensions ranked

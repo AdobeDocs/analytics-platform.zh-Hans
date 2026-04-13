@@ -4,14 +4,15 @@ description: 使用区段名称在Customer Journey Analytics的各种BI工具中
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: bd0ff42b-7136-41b8-9dcd-75ab3ac8a523
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '679'
 ht-degree: 1%
 
 ---
 
-# 使用区段名称进行分段
+# 使用区段名称进行区段划分
 
 在此使用案例中，您需要将现有区段用于Customer Journey Analytics中定义的渔业产品类别。 细分并报告2023年1月期间的产品名称和发生次数（事件）。
 
@@ -153,7 +154,7 @@ ht-degree: 1%
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。 确保使用适当的过滤器名称。 例如，`Fishing Products`。
+1. 在新块中输入以下代码块。 确保使用适当的过滤器名称。 例如，`Fishing Products`。
 
    ```R
    ## Dimension filtered by name

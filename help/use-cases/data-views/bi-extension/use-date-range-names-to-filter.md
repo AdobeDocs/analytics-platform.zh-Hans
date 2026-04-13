@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: a10818ec-a25c-4e4e-a551-14ff501750fa
-source-git-commit: 0299762a2c901852ba6b0940093809a116fa6b11
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '610'
 ht-degree: 2%
 
 ---
@@ -139,7 +139,7 @@ ht-degree: 2%
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。 确保使用适当的日期范围名称。 例如，`Last Year 2023`。
+1. 在新块中输入以下代码块。 确保使用适当的日期范围名称。 例如，`Last Year 2023`。
 
    ```R
    ## Monthly Events for Last Year

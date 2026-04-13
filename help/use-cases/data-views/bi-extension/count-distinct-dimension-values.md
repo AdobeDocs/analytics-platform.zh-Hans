@@ -4,9 +4,10 @@ description: 在Customer Journey Analytics的各种BI工具中，计算BI扩展�
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: 6a05bce1-542c-40d3-bbb0-4a8e561438c9
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -159,7 +160,7 @@ ht-degree: 0%
 
 >[!TAB RStudio]
 
-1. 在新块中输入以下介于` ` ``{r} `和` `` ` `之间的语句。
+1. 在新块中输入以下代码块。
 
    ```R
    ## Count Distinct
@@ -177,4 +178,3 @@ ht-degree: 0%
 >[!ENDTABS]
 
 +++
-
