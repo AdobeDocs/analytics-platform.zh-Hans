@@ -6,9 +6,9 @@ feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
 hide: true
-source-git-commit: afb577bb72f2528c15acbc30794c900ea62b51b6
+source-git-commit: e5dea7e234585bd28a00df95342879dcba5b932f
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2741'
 ht-degree: 1%
 
 ---
@@ -132,7 +132,7 @@ Customer Journey Analytics为每个派生字段强制实施显式[函数和运�
 
 * 修剪/小写：使用[Substring](/help/data-views/component-settings/substring.md)和[Behavior](/help/data-views/component-settings/behavior.md)组件设置，除非您需要组合的多步转换。
 * 值排除：在数据视图组件级别，而不是在派生字段中对量度或维度值使用[包括排除值](/help/data-views/component-settings/include-exclude-values.md)。
-* 归因和持久性：避免在具有[下一个或上一个](./derived-fields.md#next-or-previous)或其他顺序逻辑的派生字段中模拟维度。 使用维度数据视图[归因](/help/data-views/component-settings/attribution.md)和[持久性](/help/data-views/component-settings/persistence.md)设置。
+* 归因和持久性：使用维度的数据视图[持久性](/help/data-views/component-settings/persistence.md)设置（**[!UICONTROL 分配模型]**&#x200B;和&#x200B;**[!UICONTROL 到期]**），而不是在具有[下一个或上一个](./derived-fields.md#next-or-previous)或其他顺序逻辑的派生字段中模拟它们。
 * 数值分段：保留派生字段的数值，并让数据视图在顶部创建分段维度，而不是在[Case When](./derived-fields.md#case-when)链中硬编码范围标签。
 * 条件逻辑：将简单的0或1标志逻辑转换为：
    * Analysis Workspace中应用的具有包含或排除值过滤器逻辑的原始指标。
@@ -161,7 +161,7 @@ Customer Journey Analytics允许将数值字段强制为维度，将字符串字
    * 在数据视图中将组件类型设置为&#x200B;**[!UICONTROL 量度]**。
    * 如果该组件表示一个子集量度（例如，**[!UICONTROL 结账页面查看次数]**），请在数据视图中使用过滤量度，而不是使用派生字符串加上顶部计算量度。
 * 如果输出是标签：
-   * 将组件类型设置为&#x200B;**[!UICONTROL Dimension]**&#x200B;并相应地配置[归因](/help/data-views/component-settings/attribution.md)和[持久性](/help/data-views/component-settings/persistence.md)设置。
+   * 将组件类型设置为&#x200B;**[!UICONTROL Dimension]**&#x200B;并相应地配置[持久性](/help/data-views/component-settings/persistence.md)设置（**[!UICONTROL 分配模型]**&#x200B;和&#x200B;**[!UICONTROL 到期]**）。
 
 ## 营销渠道和营销活动逻辑隐患
 
@@ -284,12 +284,12 @@ Customer Journey Analytics允许将数值字段强制为维度，将字符串字
 ### 风险诊断：数据质量、高维护性
 
 * 复杂性和脆弱性：沉重的顺序逻辑更难推理，并且如果会话规则或排序更改可能会中断。
-* 具有归因或持久性的冗余：数据视图归因设置可以更好地涵盖某些用例（例如，会话中的最近联系渠道归因）。
+* 具有维度持久性的冗余：维度上的数据视图[持久性](/help/data-views/component-settings/persistence.md)设置（**[!UICONTROL 分配模型]**）更好地涵盖了某些用例（例如，会话上的最近联系渠道）。
 
 ### 建议
 
-* 对于与标准归因相似的模式，请在数据视图中使用维度[归因](/help/data-views/component-settings/attribution.md)和[持久性](/help/data-views/component-settings/persistence.md)设置，而不是使用[下一个或上一个](./derived-fields.md#next-or-previous)来模拟它们。
-* 保留[Next或Previous](./derived-fields.md#next-or-previous)，用于仅归因无法实现的高级多步骤路径或funnel标记（例如：渠道序列连接）。
+* 对于与标准持久性类似的模式（例如，跨会话或人员转发值），请在数据视图中使用维度的[持久性](/help/data-views/component-settings/persistence.md)设置（**[!UICONTROL 分配模型]**&#x200B;和&#x200B;**[!UICONTROL 到期]**），而不是使用[下一个或上一个](./derived-fields.md#next-or-previous)模拟这些模式。
+* 保留[Next或Previous](./derived-fields.md#next-or-previous)，用于无法单独实现维度持久性的高级多步骤路径或funnel标记（例如：渠道序列连接）。
 
 ## 忽略会话和人员级别上下文
 
@@ -350,13 +350,15 @@ Customer Journey Analytics [文档](./derived-fields.md#limitations)每个派生
 ### 模式
 
 * 派生维度具有默认归因（例如：最近联系且会话到期），但派生字段名称暗示不同的语义（例如： `First Campaign of Visit`， `Original Source`）。
+* 派生维度具有默认的[持久性](/help/data-views/component-settings/persistence.md)设置（例如：**[!UICONTROL 最近]**&#x200B;分配，有&#x200B;**[!UICONTROL 会话]**&#x200B;到期），但派生维度的名称暗示不同的语义（例如，`First Campaign of Visit`或`Original Source`）。
 
 
 ### 风险诊断：数据质量
 
-* 语义不匹配：维度的标签建议的[归因](/help/data-views/component-settings/attribution.md)或[到期](/help/data-views/component-settings/persistence.md)行为与实际配置的不同（例如：首次联系或原始源）。
-* 这种不匹配增加了分析人员误解报表或比较名称相似但使用不同归因模型的组件的风险。
+* 语义不匹配：维度的标签建议使用与实际配置不同的分配或到期行为（例如，原始分配或人员级别到期）。
+* 这种不匹配增加了分析人员误解报表或比较名称相似但使用不同分配模型的组件的风险。
 
 ### 建议
 
 * 调整该维度上的[分配模型和过期时间](/help/data-views/component-settings/persistence.md)以调整名称和行为。 例如，名为`Original Source`的派生字段维度应使用到期设置为“人员”的首次接触归因。
+* 调整维度的&#x200B;**[!UICONTROL 持久性]**&#x200B;设置中的&#x200B;**[!UICONTROL 分配模型]**&#x200B;和[到期](/help/data-views/component-settings/persistence.md)以调整名称和行为。 例如，`Original Source`应将&#x200B;**[!UICONTROL 分配模型]**&#x200B;设置为&#x200B;**[!UICONTROL 原有]**，并将&#x200B;**[!UICONTROL 过期]**&#x200B;设置为&#x200B;**[!UICONTROL 人员]**。
