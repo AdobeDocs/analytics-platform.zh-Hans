@@ -4,9 +4,9 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e1aab5822d650b6ae5ed335d85a09fe9ed46a2f0
+source-git-commit: a4287ab5b341f156d039b4bc35dc03482ba3f60c
 workflow-type: tm+mt
-source-wordcount: '5799'
+source-wordcount: '5819'
 ht-degree: 96%
 
 ---
@@ -19,6 +19,8 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 
 | 功能 | 描述 |
 |---|---|
+| **2026 年 4 月** | |
+| 更新了同类群组分析用例 | 根据反馈将Analysis Workspace示例添加到同类群组分析用例中。 |
 | **2026 年 3 月** | |
 | 划分面板 | 重新构建了面板[的](/help/analysis-workspace/c-panels/panels.md#drop-zone)放置区域文档，以支持新的[划分](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel)功能。 |
 | 有关错误ID (BAVID)的技术说明 | 有关错误ID[的新](/help/technotes/badids.md)技术说明。 此技术说明解释了错误ID的定义（在Customer Journey Analytics界面中使用错误ID），以及如何调查连接中的数据以确定错误ID。 |
