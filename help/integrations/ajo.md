@@ -64,7 +64,7 @@ Journey Optimizer 支持使用 Customer Journey Analytics 作为报告引擎。�
 * **[!UICONTROL 连续7天的P95延迟小组件]**：将P95延迟显示为单个值，包括与上周相比的百分比变化。
 * **[!UICONTROL 7天滚动的P95吞吐量小组件]**：将P95吞吐量显示为单个值，包括与上周相比的百分比变化。
 
-有关这些数据集和高吞吐量事务性消息加载项的更多信息，请参阅Adobe Journey Optimizer文档中的[为API触发的营销活动激活高吞吐量模式](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput)。
+有关这些数据集和高吞吐量事务性消息加载项的更多信息，请参阅Adobe Journey Optimizer文档中的[为API触发的营销活动激活高吞吐量模式](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput)。
 
 ### 数据视图
 
