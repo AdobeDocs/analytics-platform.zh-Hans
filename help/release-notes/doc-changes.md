@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a4287ab5b341f156d039b4bc35dc03482ba3f60c
+source-git-commit: 6ae1f8ccca5321b2ebab775cc12775c64377613e
 workflow-type: tm+mt
-source-wordcount: '5819'
-ht-degree: 96%
+source-wordcount: '5856'
+ht-degree: 95%
 
 ---
 
@@ -20,6 +20,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 |---|---|
 | **2026 年 4 月** | |
+| 添加了有关集成Journey Optimizer时可包含的两个数据集的缺失文档 | 为IMS组织启用高吞吐量事务性消息加载项时，连接中会包含另外两个非配置文件系统生成的数据集[。](/help/integrations/ajo.md#high-throughput-add-on-datasets) |
 | 更新了同类群组分析用例 | 根据反馈将Analysis Workspace示例添加到同类群组分析用例中。 |
 | **2026 年 3 月** | |
 | 划分面板 | 重新构建了面板[的](/help/analysis-workspace/c-panels/panels.md#drop-zone)放置区域文档，以支持新的[划分](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel)功能。 |
