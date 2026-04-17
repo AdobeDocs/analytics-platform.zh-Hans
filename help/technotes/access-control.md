@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 81e08ecb593b6ba789c479d0e648cbe7ba0a82d6
+source-git-commit: 3cf3e24fc6c2ea2392e0c5bb97df17f25a023f4d
 workflow-type: tm+mt
-source-wordcount: '1554'
+source-wordcount: '1568'
 ht-degree: 96%
 
 ---
@@ -134,6 +134,7 @@ ht-degree: 96%
 | [!UICONTROL 报告工具] | [!UICONTROL AI 助手：产品知识] | 允许用户访问 [AI 助手](../ai-assistant.md)，了解产品知识。 |
 | [!UICONTROL 报告工具] | [!UICONTROL Data Insights 代理] | 允许用户访问[Data Insights Agent](../data-analysis-ai.md)以进行AI驱动的数据分析。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 智能题注] | 允许用户访问[智能题注](/help/analysis-workspace/visualizations/intelligent-captions.md)。 |
+| [!UICONTROL 报告工具] | [!UICONTROL MCP访问] | 允许用户访问[Customer Journey Analytics MCP服务器](https://developer.adobe.com/analytics-mcp/docs/cja/)。 |
 | [!UICONTROL 数据视图工具] | [!UICONTROL 完整表格导出] | 允许用户[将完整表格导出到云](/help/analysis-workspace/export/export-cloud.md)。 |
 | [!UICONTROL 数据视图工具] | [!UICONTROL CJA BI 扩展] | 允许用户使用 [BI 扩展](../data-views/bi-extension.md)。 |
 
