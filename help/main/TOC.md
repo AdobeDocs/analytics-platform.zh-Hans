@@ -2,9 +2,9 @@
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 32f15ddf44352ec557616835bc6a0f40587d2c09
+source-git-commit: 01e2c7668bf31d9a3ed1ee55d8692a3616f5de4d
 workflow-type: tm+mt
-source-wordcount: '1391'
+source-wordcount: '1392'
 ht-degree: 97%
 
 ---
@@ -159,7 +159,7 @@ ht-degree: 97%
    + [标准组件参考](../data-views/component-reference.md)
    + [BI 扩展](../data-views/bi-extension.md)
    + [派生字段](../data-views/derived-fields/derived-fields.md)
-   + {hide-from-toc}[最佳实践](/help/data-views/derived-fields/best-practices.md)
+   + {hide-from-toc}[最佳实践 — 隐藏](/help/data-views/derived-fields/best-practices.md)
    + [摘要数据](../data-views/summary-data.md)
    + [标签和政策](../data-views/data-governance.md)
    + 共享量度和维度{#shared-metrics-dimensions}
@@ -557,4 +557,3 @@ ht-degree: 97%
    + [管理使用情况](../technotes/estimate-usage.md)
 
 + [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)
-
