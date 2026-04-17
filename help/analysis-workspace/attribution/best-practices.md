@@ -3,7 +3,7 @@ title: 归因最佳实践
 description: 了解最佳实践，以决定使用哪种归因模型。
 feature: Attribution
 exl-id: 92c6039c-f950-4746-8b34-ba18be258c08
-source-git-commit: 1b6e1d432bfe4b0574b8ee68bcfa940941f3c36f
+source-git-commit: ee6eb18fc2a720e61670c571847bacf836b0b039
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 66%
@@ -63,3 +63,4 @@ ht-degree: 66%
 * 您可能需要使用数据科学家的服务，而不是仅仅依靠 Analysis Workspace。
 * 您可以依赖原始数据，就像在 Adobe 数据馈送中一样。
 * 例如，如果您要考虑展示数据，请考虑使用[Customer Journey Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview)。
+
