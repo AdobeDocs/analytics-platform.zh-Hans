@@ -6,7 +6,7 @@ feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
 hide: true
-source-git-commit: 97339504546df94b6962170eb4bbae184193885c
+source-git-commit: 01e2c7668bf31d9a3ed1ee55d8692a3616f5de4d
 workflow-type: tm+mt
 source-wordcount: '2741'
 ht-degree: 1%
@@ -362,3 +362,4 @@ Customer Journey Analytics [文档](./derived-fields.md#limitations)每个派生
 
 * 调整该维度上的[分配模型和过期时间](/help/data-views/component-settings/persistence.md)以调整名称和行为。 例如，名为`Original Source`的派生字段维度应使用到期设置为“人员”的首次接触归因。
 * 调整维度的&#x200B;**[!UICONTROL 持久性]**&#x200B;设置中的&#x200B;**[!UICONTROL 分配模型]**&#x200B;和[到期](/help/data-views/component-settings/persistence.md)以调整名称和行为。 例如，`Original Source`应将&#x200B;**[!UICONTROL 分配模型]**&#x200B;设置为&#x200B;**[!UICONTROL 原有]**，并将&#x200B;**[!UICONTROL 过期]**&#x200B;设置为&#x200B;**[!UICONTROL 人员]**。
+
