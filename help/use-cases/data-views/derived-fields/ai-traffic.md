@@ -297,6 +297,6 @@ LLM和AI代理在与数字属性交互时表现出复杂且不断演变的行为
 
 >[!MORELIKETHIS]
 >
->此用例文章基于博客文章[在Adobe Customer Journey Analytics中跟踪和分析LLM和AI生成的流量](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967)。
+>此用例文章基于博客文章[在Adobe Customer Journey Analytics中跟踪和分析LLM和AI生成的流量](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=zh-Hans)。
 >
 >
