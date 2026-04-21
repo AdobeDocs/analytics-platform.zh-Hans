@@ -6,7 +6,7 @@ feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
 hide: true
-source-git-commit: 0de768fa78e4c5be08e1534757570938c0182dd4
+source-git-commit: 68c9d38f4fe60a9b8e661309698ba0ec38e2ea9b
 workflow-type: tm+mt
 source-wordcount: '2764'
 ht-degree: 1%
@@ -16,13 +16,13 @@ ht-degree: 1%
 
 # 派生字段准则
 
-Customer Journey Analytics [派生字段](./derived-fields.md)允许您在查询时转换、分类和扩充数据，而无需修改源数据集。 如果没有纪律性的应用，这种灵活性可能会带来复杂性、性能问题和维护开销。
+Customer Journey Analytics [派生字段](/help/data-views/derived-fields/derived-fields.md)允许您在查询时转换、分类和扩充数据，而无需修改源数据集。 如果没有纪律性的应用，这种灵活性可能会带来复杂性、性能问题和维护开销。
 
 本文提供了使用派生字段的准则（最佳实践、护栏和常见隐患）。 目标受众是数据架构师、产品管理员和分析师，他们需要：
 
 * **优化性能**：识别降低查询执行速度或达到系统限制的模式，为作业选择正确的工具：
 
-   * [派生字段](./derived-fields.md)
+   * [派生字段](/help/data-views/derived-fields/derived-fields.md)
    * [数据视图设置](/help/data-views/component-settings/overview.md)
    * [数据准备](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/home)
    * [计算量度](/help/components/calc-metrics/calc-metr-overview.md)
@@ -62,7 +62,7 @@ Customer Journey Analytics [派生字段](./derived-fields.md)允许您在查询
 **模式**
 
 * 数据视图引用基于高基数维度（大约100万或更多不同值）构建的派生字段的默认区段。 例如：整页URL。
-* 简单操作(如[小写](./derived-fields.md#lowercase)、[Trim](./derived-fields.md#trim)或[Case When](./derived-fields.md#case-when)对页面URL的检查通常比低基数字段上的相同逻辑更昂贵。
+* 简单操作(如[小写](/help/data-views/derived-fields/derived-fields.md#lowercase)、[Trim](/help/data-views/derived-fields/derived-fields.md#trim)或[Case When](/help/data-views/derived-fields/derived-fields.md#case-when)对页面URL的检查通常比低基数字段上的相同逻辑更昂贵。
 
 **风险诊断：性能**
 
@@ -70,20 +70,20 @@ Customer Journey Analytics [派生字段](./derived-fields.md)允许您在查询
 
 **推荐**
 
-* 避免直接在数据视图默认区段中引用整页URL或类似的高基数组件。 将繁重的URL逻辑（复杂的[大小写条件](./derived-fields.md#case-when)，[正则表达式替换](./derived-fields.md#regex-replace)，多个字符串函数）推送到上游的[数据准备](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/home)或[查找数据集](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)，以便生成的分类基于更简单、低基数维度。
+* 避免直接在数据视图默认区段中引用整页URL或类似的高基数组件。 将繁重的URL逻辑（复杂的[大小写条件](/help/data-views/derived-fields/derived-fields.md#case-when)，[正则表达式替换](/help/data-views/derived-fields/derived-fields.md#regex-replace)，多个字符串函数）推送到上游的[数据准备](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/home)或[查找数据集](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)，以便生成的分类基于更简单、低基数维度。
 * 首选低基数键，例如规范化的页面名称、网站区域或预分类的URL组。
 * 定期审核现有数据视图默认区段和派生字段，以引用高基数维度（页面URL、促销活动ID、原始查询字符串），并重构为规范化键值或分组键。
 
 ## 规则链时过度复杂的大小写
 
-本节讨论[Case When](./derived-fields.md#case-when)规则的过于复杂的链。
+本节讨论[Case When](/help/data-views/derived-fields/derived-fields.md#case-when)规则的过于复杂的链。
 
-Customer Journey Analytics为每个派生字段强制实施显式[函数和运算符限制](derived-fields.md#limitations)（例如，运算符最大数、每种类型的函数最大数）。 过于复杂的函数和函数中的链更难维护，且容易出错。
+Customer Journey Analytics为每个派生字段强制实施显式[函数和运算符限制](/help/data-views/derived-fields/derived-fields.md#limitations)（例如，运算符最大数、每种类型的函数最大数）。 过于复杂的函数和函数中的链更难维护，且容易出错。
 
 **模式**
 
-* 具有复杂[If](./derived-fields.md#case-when)和&#x200B;**[!UICONTROL Else If]**&#x200B;链的&#x200B;**[!UICONTROL 函数时的大小写]** Case：
-   * 许多条件（例如：超过20个运算符）或深层嵌套（超过3或4个级别的嵌套[Case When](./derived-fields.md#case-when) **[!UICONTROL If]**&#x200B;和&#x200B;**[!UICONTROL Else If]**&#x200B;逻辑）。
+* 具有复杂[If](/help/data-views/derived-fields/derived-fields.md#case-when)和&#x200B;**[!UICONTROL Else If]**&#x200B;链的&#x200B;**[!UICONTROL 函数时的大小写]** Case：
+   * 许多条件（例如：超过20个运算符）或深层嵌套（超过3或4个级别的嵌套[Case When](/help/data-views/derived-fields/derived-fields.md#case-when) **[!UICONTROL If]**&#x200B;和&#x200B;**[!UICONTROL Else If]**&#x200B;逻辑）。
    * 相同字段上具有不同值的重复条件。
 * 重复的常量字符串匹配。
 
@@ -97,12 +97,12 @@ Customer Journey Analytics为每个派生字段强制实施显式[函数和运�
 **风险诊断：性能、数据质量、高维护**
 
 * 可维护性和错误风险：编码为单块规则块的逻辑难以调试和更新。
-* 潜在性能和限制风险：您可能会达到或接近[运算符或函数限制](./derived-fields.md#limitations)，尤其是对于类分类模式。
+* 潜在性能和限制风险：您可能会达到或接近[运算符或函数限制](/help/data-views/derived-fields/derived-fields.md#limitations)，尤其是对于类分类模式。
 
 **推荐**
 
 * 拆分为多个派生字段。 例如，将&#x200B;*营销活动标准化*（将不一致的营销活动标识符映射到规范值）与渠道分段分开，而不是在一个巨大的规则中组合所有内容。
-* 使用查找数据集。 许多&#x200B;**[!UICONTROL 如果值&#x200B;_值_条件&#x200B;_条件_然后将&#x200B;_值_设置为值]**&#x200B;条件可以更好地作为[查找数据集](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)与[Lookup](./derived-fields.md#lookup)函数结合使用，而不是使用长[Case When](./derived-fields.md#case-when)链。
+* 使用查找数据集。 许多&#x200B;**[!UICONTROL 如果值&#x200B;_值_条件&#x200B;_条件_然后将&#x200B;_值_设置为值]**&#x200B;条件可以更好地作为[查找数据集](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)与[Lookup](/help/data-views/derived-fields/derived-fields.md#lookup)函数结合使用，而不是使用长[Case When](/help/data-views/derived-fields/derived-fields.md#case-when)链。
 * 使用数据视图组件筛选器。 如果部分逻辑只是过滤掉错误值，请在数据视图组件级别使用[包括排除](/help/data-views/component-settings/include-exclude-values.md)，而不是将该逻辑嵌入派生字段中。
 
 ## 使用错误
@@ -126,7 +126,7 @@ Customer Journey Analytics为每个派生字段强制实施显式[函数和运�
      +++
 
      请改为对数据视图中的维度使用[值分段](/help/data-views/component-settings/value-bucketing.md)。
-   * 使用[下一个或上一个](./derived-fields.md#next-or-previous)编码的持久性或归因逻辑，或数据视图[归因](/help/data-views/component-settings/attribution.md)和[到期](/help/data-views/component-settings/persistence.md)设置足以满足要求的手动序列逻辑。
+   * 使用[下一个或上一个](/help/data-views/derived-fields/derived-fields.md#next-or-previous)编码的持久性或归因逻辑，或数据视图[归因](/help/data-views/component-settings/attribution.md)和[到期](/help/data-views/component-settings/persistence.md)设置足以满足要求的手动序列逻辑。
    * 一种派生的量度，它只计算某个条件下的现有量度。
 
      +++ 示例
@@ -147,8 +147,8 @@ Customer Journey Analytics为每个派生字段强制实施显式[函数和运�
 
 * 修剪/小写：使用[Substring](/help/data-views/component-settings/substring.md)和[Behavior](/help/data-views/component-settings/behavior.md)组件设置，除非您需要组合的多步转换。
 * 值排除：在数据视图组件级别，而不是在派生字段中对量度或维度值使用[包括排除值](/help/data-views/component-settings/include-exclude-values.md)。
-* 归因和持久性：使用维度的数据视图[持久性](/help/data-views/component-settings/persistence.md)设置（**[!UICONTROL 分配模型]**&#x200B;和&#x200B;**[!UICONTROL 到期]**），而不是在具有[下一个或上一个](./derived-fields.md#next-or-previous)或其他顺序逻辑的派生字段中模拟它们。
-* 数值分段：保留派生字段的数值，并让数据视图在顶部创建分段维度，而不是在[Case When](./derived-fields.md#case-when)链中硬编码范围标签。
+* 归因和持久性：使用维度的数据视图[持久性](/help/data-views/component-settings/persistence.md)设置（**[!UICONTROL 分配模型]**&#x200B;和&#x200B;**[!UICONTROL 到期]**），而不是在具有[下一个或上一个](/help/data-views/derived-fields/derived-fields.md#next-or-previous)或其他顺序逻辑的派生字段中模拟它们。
+* 数值分段：保留派生字段的数值，并让数据视图在顶部创建分段维度，而不是在[Case When](/help/data-views/derived-fields/derived-fields.md#case-when)链中硬编码范围标签。
 * 条件逻辑：将简单的0或1标志逻辑转换为：
    * Analysis Workspace中应用的具有包含或排除值过滤器逻辑的原始指标。
    * 使用数据视图组件设置配置的过滤量度。
@@ -184,7 +184,7 @@ Customer Journey Analytics允许将数值字段强制为维度，将字符串字
 
 >[!NOTE]
 >
->考虑上游简化：使用[数据准备](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/home)、[查找数据集](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)或派生字段函数（如[分类](./derived-fields.md#classify)）来合并类似的营销渠道规则，并减少[Case When](./derived-fields.md#case-when)逻辑中的运算符数量。 此外，限制在渠道分类逻辑中引用的高基数字段的数量（例如：多个不同的查询参数键），因为这些字段会增加基数和查询成本。
+>考虑上游简化：使用[数据准备](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/home)、[查找数据集](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)或派生字段函数（如[分类](/help/data-views/derived-fields/derived-fields.md#classify)）来合并类似的营销渠道规则，并减少[Case When](/help/data-views/derived-fields/derived-fields.md#case-when)逻辑中的运算符数量。 此外，限制在渠道分类逻辑中引用的高基数字段的数量（例如：多个不同的查询参数键），因为这些字段会增加基数和查询成本。
 
 **模式**
 
@@ -211,8 +211,8 @@ Customer Journey Analytics允许将数值字段强制为维度，将字符串字
 
 **模式**
 
-* 针对事件或配置文件字段的[查找](./derived-fields.md#lookup)函数，用于提供查找数据集。
-* 没有前面的[小写](./derived-fields.md#lowercase)、[Trim](./derived-fields.md#trim)或[Regex Replace](./derived-fields.md#regex-replace)标准化键。
+* 针对事件或配置文件字段的[查找](/help/data-views/derived-fields/derived-fields.md#lookup)函数，用于提供查找数据集。
+* 没有前面的[小写](/help/data-views/derived-fields/derived-fields.md#lowercase)、[Trim](/help/data-views/derived-fields/derived-fields.md#trim)或[Regex Replace](/help/data-views/derived-fields/derived-fields.md#regex-replace)标准化键。
 * 常见候选项：URL、促销活动ID、电子邮件、帐户ID。
 
 **风险诊断：数据质量，高维护**
@@ -221,7 +221,7 @@ Customer Journey Analytics允许将数值字段强制为维度，将字符串字
 
 **推荐**
 
-* 在[Lookup](./derived-fields.md#lowercase)函数之前添加[小写](./derived-fields.md#trim)和[Trim](./derived-fields.md#lookup)函数，除非有文档说明保留大写或小写的原因。
+* 在[Lookup](/help/data-views/derived-fields/derived-fields.md#lowercase)函数之前添加[小写](/help/data-views/derived-fields/derived-fields.md#trim)和[Trim](/help/data-views/derived-fields/derived-fields.md#lookup)函数，除非有文档说明保留大写或小写的原因。
 * 如果已链接多个转换，请验证其顺序：先标准化，然后查找。
 
 ## 正则表达式滥用或伸手过长
@@ -230,7 +230,7 @@ Customer Journey Analytics允许将数值字段强制为维度，将字符串字
 
 **模式**
 
-* [Regex Replace](./derived-fields.md#regex-replace)或基于regex的条件使用宽模式；更简单的[Case When](./derived-fields.md#case-when)函数包含&#x200B;**[!UICONTROL Contains]**&#x200B;或&#x200B;**[!UICONTROL Starts with]**&#x200B;是更好的替代方案。
+* [Regex Replace](/help/data-views/derived-fields/derived-fields.md#regex-replace)或基于regex的条件使用宽模式；更简单的[Case When](/help/data-views/derived-fields/derived-fields.md#case-when)函数包含&#x200B;**[!UICONTROL Contains]**&#x200B;或&#x200B;**[!UICONTROL Starts with]**&#x200B;是更好的替代方案。
 
   +++ 示例
 
@@ -241,7 +241,7 @@ Customer Journey Analytics允许将数值字段强制为维度，将字符串字
   +++
 
 * 多个正则表达式条件重叠或冲突。
-* 大量使用正则表达式来解析URL，而不是使用[URL Parse](./derived-fields.md#url-parse)函数。
+* 大量使用正则表达式来解析URL，而不是使用[URL Parse](/help/data-views/derived-fields/derived-fields.md#url-parse)函数。
 
 **风险诊断：性能、数据质量、高维护**
 
@@ -250,8 +250,8 @@ Customer Journey Analytics允许将数值字段强制为维度，将字符串字
 
 **推荐**
 
-* 首选标准URL元素（域、路径、查询参数）的[URL解析](./derived-fields.md#url-parse)而不是[正则表达式替换](./derived-fields.md#regex-replace)。
-* 对于简单模式检查，使用[Case When](./derived-fields.md#case-when)和&#x200B;**[!UICONTROL Contains]**、**[!UICONTROL Starts with]**&#x200B;或&#x200B;**[!UICONTROL Ends with]**&#x200B;逻辑，而不是使用[Regex Replace](./derived-fields.md#regex-replace)的正则表达式。
+* 首选标准URL元素（域、路径、查询参数）的[URL解析](/help/data-views/derived-fields/derived-fields.md#url-parse)而不是[正则表达式替换](/help/data-views/derived-fields/derived-fields.md#regex-replace)。
+* 对于简单模式检查，使用[Case When](/help/data-views/derived-fields/derived-fields.md#case-when)和&#x200B;**[!UICONTROL Contains]**、**[!UICONTROL Starts with]**&#x200B;或&#x200B;**[!UICONTROL Ends with]**&#x200B;逻辑，而不是使用[Regex Replace](/help/data-views/derived-fields/derived-fields.md#regex-replace)的正则表达式。
 * 标记使用多个嵌套组或简单模式替代的正则表达式。 或使用派生字段字符串函数替换的正则表达式。
 
 ## 派生字段中的计算量度样式逻辑
@@ -289,12 +289,12 @@ Customer Journey Analytics允许将数值字段强制为维度，将字符串字
 
 ## 过度使用下一个或上一个或顺序函数
 
-本节讨论[Next或Previous](./derived-fields.md#next-or-previous)或顺序函数的过度使用。
+本节讨论[Next或Previous](/help/data-views/derived-fields/derived-fields.md#next-or-previous)或顺序函数的过度使用。
 
 **模式**
 
-* 派生字段多次使用[Next或Previous](./derived-fields.md#next-or-previous)函数（接近记录的每个字段限制）。
-* [Next或Previous](./derived-fields.md#next-or-previous)用于实现类似持久性的逻辑（例如：向前执行活动），而不是使用数据视图持久性。
+* 派生字段多次使用[Next或Previous](/help/data-views/derived-fields/derived-fields.md#next-or-previous)函数（接近记录的每个字段限制）。
+* [Next或Previous](/help/data-views/derived-fields/derived-fields.md#next-or-previous)用于实现类似持久性的逻辑（例如：向前执行活动），而不是使用数据视图持久性。
 
 **风险诊断：数据质量，高维护**
 
@@ -303,8 +303,8 @@ Customer Journey Analytics允许将数值字段强制为维度，将字符串字
 
 **推荐**
 
-* 对于与标准持久性类似的模式（例如，跨会话或人员转发值），请在数据视图中使用维度的[持久性](/help/data-views/component-settings/persistence.md)设置（**[!UICONTROL 分配模型]**&#x200B;和&#x200B;**[!UICONTROL 到期]**），而不是使用[下一个或上一个](./derived-fields.md#next-or-previous)模拟这些模式。
-* 保留[Next或Previous](./derived-fields.md#next-or-previous)，用于仅保留维度持久性无法实现的高级多步骤路径或funnel标记（例如：通道序列连接）。
+* 对于与标准持久性类似的模式（例如，跨会话或人员转发值），请在数据视图中使用维度的[持久性](/help/data-views/component-settings/persistence.md)设置（**[!UICONTROL 分配模型]**&#x200B;和&#x200B;**[!UICONTROL 到期]**），而不是使用[下一个或上一个](/help/data-views/derived-fields/derived-fields.md#next-or-previous)模拟这些模式。
+* 保留[Next或Previous](/help/data-views/derived-fields/derived-fields.md#next-or-previous)，用于仅保留维度持久性无法实现的高级多步骤路径或funnel标记（例如：通道序列连接）。
 
 ## 忽略会话和人员级别上下文
 
@@ -337,12 +337,12 @@ Customer Journey Analytics允许将数值字段强制为维度，将字符串字
 
 >[!NOTE]
 >
->尽可能减少对复杂派生字段内高基数字段的依赖（例如：使用规范化键值或分组分类）以限制查询成本和达到[运算符或函数限制](./derived-fields.md#limitations)的可能性。
+>尽可能减少对复杂派生字段内高基数字段的依赖（例如：使用规范化键值或分组分类）以限制查询成本和达到[运算符或函数限制](/help/data-views/derived-fields/derived-fields.md#limitations)的可能性。
 
-CustomerCustomer历程分析[文档](./derived-fields.md#limitations)每个派生字段的最大函数和运算符数，包括每个函数类型的限制。atterns**
+CustomerCustomer历程分析[文档](/help/data-views/derived-fields/derived-fields.md#limitations)每个派生字段的最大函数和运算符数，包括每个函数类型的限制。atterns**
 
-* 派生字段使用多个[查找](./derived-fields.md#lookup)、[Math](./derived-fields.md#math)操作、[拆分](./derived-fields.md#split)或其他函数。
-* 运算符的数量接近[记录的限制](./derived-fields.md#limitations)（例如：超过70% - 80%的允许计数）。
+* 派生字段使用多个[查找](/help/data-views/derived-fields/derived-fields.md#lookup)、[Math](/help/data-views/derived-fields/derived-fields.md#math)操作、[拆分](/help/data-views/derived-fields/derived-fields.md#split)或其他函数。
+* 运算符的数量接近[记录的限制](/help/data-views/derived-fields/derived-fields.md#limitations)（例如：超过70% - 80%的允许计数）。
 
 **风险诊断：性能，高维护性**
 

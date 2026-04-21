@@ -4,13 +4,13 @@ description: 了解如何使用派生字段作为在Workspace中报告LLM和AI�
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+exl-id: 29857457-3fbb-441c-8761-91712b9df20f
+source-git-commit: aa29067a244c588e6d830f0a039db90e99eaf5d3
 workflow-type: tm+mt
 source-wordcount: '1277'
 ht-degree: 1%
 
 ---
-
 
 # 关于 LLM 和 AI 生成流量的报告
 
@@ -25,12 +25,12 @@ ht-degree: 1%
 
 要检测LLM和AI生成的流量，请区分：
 
-* **LLM爬网程序**：收集用于训练和检索增强生成(RAG)的数据。
+* **LLM爬虫**：收集用于训练和检索增强生成(RAG)的数据。
 * **AI代理**：充当代表人类执行任务的接口。 AI代理更喜欢通过API进行交互，这绕过了网站分析跟踪方法。 尽管如此，您仍然可以分析人工智能生成的网站流量的很大一部分。
 
 用于识别和监控LLM和AI生成的流量的三种常见核心检测方法是：
 
-* **用户代理标识**：向服务器发出请求时，将提取HTTP User-Agent标头并根据已知的AI爬网程序和代理模式进行分析。 此服务器端方法需要访问HTTP标头，并且在数据收集层实施时最有效。
+* **用户代理标识**：向服务器发出请求时，将提取HTTP User-Agent标头并根据已知的AI爬虫和代理模式进行分析。 此服务器端方法需要访问HTTP标头，并且在数据收集层实施时最有效。
 * **反向链接分类**： HTTP反向链接标头包含链接到当前请求的上一个网页的URL。 当用户从ChatGPT或Perplexity等Web界面点击进入您的网站时，此标题会显示。
 * **查询参数检测**： AI服务可以将URL参数（特别是UTM参数）附加到链接。 这些参数会在URL中持续存在，并且可以通过标准分析实施进行检测，这使得这些URL参数即使在客户端跟踪场景中也可以发挥重要作用。
 
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 | 场景 | 用户代理标识 | 反向链接分类 | 查询参数检测 |
 |---|---|---|---|
-| **训练模型** | 实施服务器端日志记录时，可以识别代理（`GPTBot`、`ClaudeBot`等）。 | 无法分类。 AI爬虫在训练期间不会生成反向链接。 | 检测是不可能的。 AI爬网程序在训练期间不添加参数。 |
+| **训练模型** | 实施服务器端日志记录时，可以识别代理（`GPTBot`、`ClaudeBot`等）。 | 无法分类。 人工智能爬虫在训练期间不会生成反向链接。 | 检测是不可能的。 人工智能爬虫在训练期间不添加参数。 |
 | **代理浏览** | 服务器端日志记录捕获标头时可以识别代理(`ChatGPT-User`， `claude-web`)。 | 如果代理从具有反向链接保留的AI界面导航，则可以进行分类。 | 如果AI服务添加跟踪参数，则有时可能进行检测。 |
 | **检索增强生成(RAG)以回答查询** | 可以使用服务器端日志记录标识代理(`OAI-SearchBot`， `PerplexityBot`)。 | 由于RAG操作通常会绕过反向链接机制，因此通常不可能进行分类。 | 除非由AI提供程序专门实施，否则很少可能进行检测。 |
 | **用户点进次数** | 无法识别代理。 AI代理显示为普通用户代理。 | 当用户从AI界面单击链接（[chatgpt.com](https://chatgpt.com)、[claude.ai](https://claude.ai)等）时，可以进行分类。 | 当AI服务将UTM参数添加到出站链接时，可能会进行检测。 |
@@ -63,7 +63,7 @@ LLM和AI代理在与数字属性交互时表现出复杂且不断演变的行为
 <table>
 <thead>
 <tr>
-<th>爬网程序</th>
+<th>爬虫</th>
 <th>用户代理字符串</th>
 <th>用途/行为</th>
 </tr>
@@ -72,7 +72,7 @@ LLM和AI代理在与数字属性交互时表现出复杂且不断演变的行为
 <tr>
 <td><strong>GPTBot</strong></td>
 <td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; GPTBot/1.1; +<a href="https://openai.com/gptbot" target="_blank" rel="noopener nofollow noreferrer">https://openai.com/gptbot</a></code></td>
-<td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">OpenAI的主要网络爬虫程序，用于训练ChatGPT和语言模型</a></td>
+<td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">OpenAI用于培训ChatGPT和语言模型的主要Web爬虫</a></td>
 </tr>
 <tr>
 <td><strong>ChatGPT-User</strong></td>
@@ -87,12 +87,12 @@ LLM和AI代理在与数字属性交互时表现出复杂且不断演变的行为
 <tr>
 <td><strong>OAI-SearchBot</strong></td>
 <td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +<a href="https://openai.com/searchbot" target="_blank" rel="noopener nofollow noreferrer">https://openai.com/searchbot</a></code></td>
-<td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">ChatGPT的搜索主题爬虫程序，用于发现内容</a></td>
+<td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">ChatGPT用于发现内容的搜索重点爬虫</a></td>
 </tr>
 <tr>
 <td><strong>克劳德机器人</strong></td>
 <td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ClaudeBot/1.0; +claudebot@anthropic.com</code></td>
-<td><a href="https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler" target="_blank" rel="noopener nofollow noreferrer">用于训练和更新克劳德AI助理的人工爬行器</a></td>
+<td><a href="https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler" target="_blank" rel="noopener nofollow noreferrer">Anthropic训练和更新Claude AI助理的爬虫</a></td>
 </tr>
 <tr>
 <td><strong>克劳德用户</strong></td>
@@ -107,7 +107,7 @@ LLM和AI代理在与数字属性交互时表现出复杂且不断演变的行为
 <tr>
 <td><strong>PerplexityBot</strong></td>
 <td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; PerplexityBot/1.0; +<a href="https://www.perplexity.ai/perplexitybot" target="_blank" rel="noopener nofollow noreferrer">https://perplexity.ai/perplexitybot</a>)</code></td>
-<td><a href="https://docs.perplexity.ai/guides/bots" target="_blank" rel="noopener nofollow noreferrer">Perplexity.ai用于实时编制网页数据索引的爬虫程序</a></td>
+<td><a href="https://docs.perplexity.ai/guides/bots" target="_blank" rel="noopener nofollow noreferrer">Perplexity.ai的实时Web数据索引爬虫</a></td>
 </tr>
 <tr>
 <td><strong>Perplexity — 用户</strong></td>
@@ -117,12 +117,12 @@ LLM和AI代理在与数字属性交互时表现出复杂且不断演变的行为
 <tr>
 <td><strong>Google-Extended</strong></td>
 <td><code>Mozilla/5.0 (compatible; Google-Extended/1.0; +<a href="https://support.google.com/webmasters/answer/182072" target="_blank" rel="noopener nofollow noreferrer">http://www.google.com/bot.html</a>)</code></td>
-<td><a href="https://blog.google/technology/ai/an-update-on-web-publisher-controls/" target="_blank" rel="noopener nofollow noreferrer">Google面向Gemini的以人工智能为中心的爬虫程序，独立于标准的GoogleBot</a></td>
+<td><a href="https://blog.google/technology/ai/an-update-on-web-publisher-controls/" target="_blank" rel="noopener nofollow noreferrer">Google针对Gemini的以人工智能为中心的爬虫与标准GoogleBot分开</a></td>
 </tr>
 <tr>
 <td><strong>BingBot</strong></td>
 <td><code>Mozilla/5.0 (compatible; BingBot/1.0; +<a href="http://www.bing.com/bot.html" target="_blank" rel="noopener nofollow noreferrer">http://www.bing.com/bot.html</a>)</code></td>
-<td>Microsoft的爬虫程序为Bing Search和Bing Chat提供支持(Copilot)</td>
+<td>Microsoft的爬虫为Bing Search和Bing Chat提供支持(Copilot)</td>
 </tr>
 <tr>
 <td><strong>DuckAssistBot</strong></td>
@@ -132,7 +132,7 @@ LLM和AI代理在与数字属性交互时表现出复杂且不断演变的行为
 <tr>
 <td><strong>YouBot</strong></td>
 <td><code>Mozilla/5.0 (compatible; YouBot (+<a href="http://www.you.com" target="_blank" rel="noopener nofollow noreferrer">http://www.you.com</a>))</code></td>
-<td>You.com的AI搜索和浏览器助手背后的爬网程序</td>
+<td>在You.com的AI 搜索和浏览器助手后面爬虫</td>
 </tr>
 <tr>
 <td><strong>meta-externalagent</strong></td>
@@ -142,17 +142,17 @@ LLM和AI代理在与数字属性交互时表现出复杂且不断演变的行为
 <tr>
 <td><strong>Amazonbot</strong></td>
 <td><code>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.2.5 (KHTML, like Gecko) Version/8.0.2 Safari/600.2.5 (Amazonbot/0.1; +<a href="https://developer.amazon.com/amazonbot" target="_blank" rel="noopener nofollow noreferrer">https://developer.amazon.com/support/amazonbot</a>)</code></td>
-<td><a href="https://developer.amazon.com/amazonbot" target="_blank" rel="noopener nofollow noreferrer">Amazon的搜索和AI应用程序爬网程序</a></td>
+<td><a href="https://developer.amazon.com/amazonbot" target="_blank" rel="noopener nofollow noreferrer">Amazon的搜索和AI应用程序爬虫</a></td>
 </tr>
 <tr>
 <td><strong>Applebot</strong></td>
 <td><code>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15 (Applebot/0.1; +<a href="https://support.apple.com/kb/HT6619" target="_blank" rel="noopener nofollow noreferrer">http://www.apple.com/go/applebot</a>)</code></td>
-<td><a href="https://support.apple.com/en-us/119829" target="_blank" rel="noopener nofollow noreferrer">Apple的聚焦、Siri和Safari爬虫程序</a></td>
+<td><a href="https://support.apple.com/en-us/119829" target="_blank" rel="noopener nofollow noreferrer">Apple的聚焦、Siri和Safari爬虫</a></td>
 </tr>
 <tr>
 <td><strong>Applebot-Extended</strong></td>
 <td><code>Mozilla/5.0 (compatible; Applebot-Extended/1.0; +<a href="https://www.apple.com/bot.html" target="_blank" rel="noopener nofollow noreferrer">http://www.apple.com/bot.html</a>)</code></td>
-<td><a href="https://support.apple.com/en-us/119829" target="_blank" rel="noopener nofollow noreferrer">Apple面向未来AI模型的以AI为中心的爬虫程序（选择加入）</a></td>
+<td><a href="https://support.apple.com/en-us/119829" target="_blank" rel="noopener nofollow noreferrer">Apple面向未来AI模型的以AI为中心的爬虫（选择加入）</a></td>
 </tr>
 <tr>
 <td><strong>Bytespid</strong></td>
@@ -212,7 +212,7 @@ LLM和AI代理在与数字属性交互时表现出复杂且不断演变的行为
 <tr >
 <td>复杂人工智能</td>
 <td>perplexity.ai</td>
-<td>来自具有引文的AI搜索的流量</td>
+<td>来自具有引文的AI 搜索的流量</td>
 </tr>
 <tr>
 <td>Meta人工智能</td>

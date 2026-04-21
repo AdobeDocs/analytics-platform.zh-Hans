@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: 5cd838f7-e394-4a67-9d2e-e1d08a864ca0
 role: User
-source-git-commit: 39d3a233166e2ce2035df2ce821dd16181e5e13e
+source-git-commit: 35d365dec8bc9afdfd55405dbcfa082280515b18
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 6%
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 此用例介绍了如何使用派生字段的强大功能设置特定维度的目标，然后在Workspace项目中使用这些目标。
 
-如果您不熟悉派生字段，请参阅[教程](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=zh-Hans)和[文档](../data-views/derived-fields/derived-fields.md)以了解相关说明。
+如果您不熟悉派生字段，请参阅[教程](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=zh-Hans)和[文档](/help/data-views/derived-fields/derived-fields.md)以了解相关说明。
 
 
 ## 定义目标

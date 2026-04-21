@@ -4,9 +4,9 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 6ae1f8ccca5321b2ebab775cc12775c64377613e
+source-git-commit: 68c9d38f4fe60a9b8e661309698ba0ec38e2ea9b
 workflow-type: tm+mt
-source-wordcount: '5856'
+source-wordcount: '5874'
 ht-degree: 95%
 
 ---
@@ -20,6 +20,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 |---|---|
 | **2026 年 4 月** | |
+| 派生字段准则 | 添加了有关使用派生字段的[准则](/help/use-cases/data-views/derived-fields/guidelines.md)（最佳实践、护栏和常见隐患）的文章。 |
 | 添加了有关集成Journey Optimizer时可包含的两个数据集的缺失文档 | 为IMS组织启用高吞吐量事务性消息加载项时，连接中会包含另外两个非配置文件系统生成的数据集[。](/help/integrations/ajo.md#high-throughput-add-on-datasets) |
 | 更新了同类群组分析用例 | 根据反馈将Analysis Workspace示例添加到同类群组分析用例中。 |
 | **2026 年 3 月** | |
@@ -48,7 +49,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 归因配置 | 反映出关于模型、容器和回顾窗口的新的归因配置选项的其他更新。 |
 | 摄取和使用 Experience Platform 受众 | 更新了关于如何[摄取和使用 Experience Platform 受众](/help/use-cases/data-ingestion/ingest-aep-segments.md)的用例文章。 |
 | 准备您的组织以升级到 Customer Journey Analytics | 添加了关于如何[准备组织以升级到 Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md) 的信息。 |
-| 关于 LLM 和 AI 生成流量的报告 | 添加了关于如何使用派生字段作为基础来生成关于 LLM 和 AI 生成流量的报告的[用例文章](/help/use-cases/ai-traffic.md)。此文章基于博客文章[在 Adobe Customer Journey Analytics 中跟踪和分析 LLM 和 AI 生成的流量](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=zh-Hans)。 |
+| 关于 LLM 和 AI 生成流量的报告 | 添加了关于如何使用派生字段作为基础来生成关于 LLM 和 AI 生成流量的报告的[用例文章](/help/use-cases/data-views/derived-fields/ai-traffic.md)。此文章基于博客文章[在 Adobe Customer Journey Analytics 中跟踪和分析 LLM 和 AI 生成的流量](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=zh-Hans)。 |
 | **2025 年 9 月** | |
 | 1900 年之前的日期 | 新增了一条[说明](/help/connections/create-connection.md#datasets)，介绍 Customer Journey Analytics 如何处理 1900 年之前的日期。 |
 | 实时报告 | 添加了有关 Customer Journey Analytics 中[实时报告](/help/components/real-time/real-time.md)的文档。 |
@@ -178,7 +179,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 货币转化更新 | 关于如何[配置货币转化](/help/data-views/component-settings/format.md)的详细说明文档。 |
 | 异常检测文档更新 | 有关异常检测的文档以前位于有关 Virtual Analyst 的部分中。进行了以下更改： <ul><li>术语 Virtual Analyst 已从文档中删除。</li><li>关于[异常检测](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md)的部分已直接移至 Analysis Workspace 部分下方。</li></ul> |
 | **2023 年 10 月** | |
-| 使用派生字段设定目标/指标 | 新增[用例](../use-cases/goals-using-derived-fields.md)文章，说明如何使用派生字段来设定目标/指标并对其进行报告。 |
+| 使用派生字段设定目标/指标 | 新增[用例](/help/use-cases/data-views/derived-fields/goals-using-derived-fields.md)文章，说明如何使用派生字段来设定目标/指标并对其进行报告。 |
 | 将全表导出到云 | 添加了有关将包含数百万个 Workspace 行的完整表格导出到云目标的文档。 <p>导出全表可一次性或按计划传递 Workspace 中设计的数据表，支持最多五个细分、五个量度、区段和计算量度，所有这些都在一个连接的表中。它从 Adobe Analytics 中的 Data Warehouse 报告演化而来，具有许多当今在 Data Warehouse 中不提供但经常有人要求提供的新功能。</p><p>有关详细信息，请参阅[将 Customer Journey Analytics 报告导出到云](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=zh-Hans)。 |
 | 报告活动管理器 | 添加了报告活动管理器的文档。 <p>通过报告活动管理器，可查看组织中每个连接的报告容量。通过它，管理员可详细了解报告消耗情况，从而轻松地诊断和修复在报告高峰期出现的容量问题。</p> <p>添加了以下新文章：<ul><li>[报告活动管理器概述](/help/reporting-activity-manager/reporting-activity-overview.md)</li><li>[在报告活动管理器中查看报告活动](/help/reporting-activity-manager/reporting-activity.md)</li><li>[取消报告活动管理器中的请求](/help/reporting-activity-manager/reporting-activity-cancel-requests.md)</ul> |
 | 管理页面新增栏目 | 记录了[计算量度管理器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html?lang=zh-Hans)和[区段管理器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html?lang=zh-Hans)现在提供的新列。 |

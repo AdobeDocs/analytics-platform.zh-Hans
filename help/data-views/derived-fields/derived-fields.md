@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 12347a865bdeb16f9b45ec5e5eddc3390894e0dc
+source-git-commit: aa29067a244c588e6d830f0a039db90e99eaf5d3
 workflow-type: tm+mt
-source-wordcount: '10283'
+source-wordcount: '10297'
 ht-degree: 99%
 
 ---
@@ -39,6 +39,11 @@ ht-degree: 99%
 - 定义一个派生的“营销渠道”字段，该字段可根据一个或多个条件（例如 URL 参数、页面 URL、页面名称）确定适当的营销渠道。
 
 在派生字段中，标准组件只支持在事件数据集上使用。
+
+>[!TIP]
+>
+>有关使用派生字段时的最佳实践、护栏和常见陷阱，请参阅[准则](/help/use-cases/data-views/derived-fields/guidelines.md)。
+>
 
 ## 派生字段界面 {#interface}
 
