@@ -82,7 +82,7 @@ ht-degree: 99%
 | **汇总级数据源** | 全面支持 |
 | **虚拟报告包** | 全面支持。[数据视图](/help/data-views/create-dataview.md)是 Customer Journey Analytics 中对应于 Adobe Analytics 中报表包的概念。 |
 | **虚拟报表包组件管理** | 全面支持。组件管理是数据视图功能的一部分。 |
-| **设备、浏览器、反向链接、技术维度** | 支持基于 [Analytics Source Connector ](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics)的数据集和 WebSDK 生成的数据集。请参阅[关于通过 ADC 支持哪些 Analytics 变量的文档。](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics)如果您使用 Experience Platform Web SDK 数据收藏集，则当前不支持基于设备查找的设备和维度。计划在以后提供支持。要将设备和浏览器查找功能添加到 Web SDK 数据流，请参阅[本文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure) |
+| **设备、浏览器、反向链接、技术维度** | 支持基于 [Analytics Source Connector &#x200B;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics)的数据集和 WebSDK 生成的数据集。请参阅[关于通过 ADC 支持哪些 Analytics 变量的文档。](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics)如果您使用 Experience Platform Web SDK 数据收藏集，则当前不支持基于设备查找的设备和维度。计划在以后提供支持。要将设备和浏览器查找功能添加到 Web SDK 数据流，请参阅[本文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure) |
 
 ## 以新方式支持 {#new-support}
 
@@ -97,7 +97,7 @@ ht-degree: 99%
 | **自定义会话长度** | 可通过数据视图中的[会话设置](../../data-views/create-dataview.md#session-settings)配置会话长度。有关详细信息，请参阅[会话设置](../../data-views/session-settings.md)。<br/>通过 Adobe Experience Platform Mobile SDK 支持处理移动后台事件。有关更多信息，请参阅[边缘网络的生命周期](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/)。 |
 | **货币换算** | 在数据视图中[格式化量度组件](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/format)的过程中支持。 |
 | **客户属性** | 轮廓数据集相当于客户归因功能。轮廓数据集不会自动从 Experience Cloud 导入，必须先上传至 Experience Platform，才可在 Customer Journey Analytics 中使用。 |
-| **数据馈送** | 数据集的第一代数据导出可通过[ Experience Platform 数据访问 API](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-access/api)以及[ Experience Platform 目标](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets)实现。这些选项提供了事件/行级别的导出，可将收集或摄入的所有数据导出到 Experience Platform 数据湖中。后处理数据列不可用，因为后处理列是在查询时计算的。可通过报告导出帖子列。 |
+| **数据馈送** | 数据集的第一代数据导出可通过[&#x200B; Experience Platform 数据访问 API](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-access/api)以及[&#x200B; Experience Platform 目标](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets)实现。这些选项提供了事件/行级别的导出，可将收集或摄入的所有数据导出到 Experience Platform 数据湖中。后处理数据列不可用，因为后处理列是在查询时计算的。可通过报告导出帖子列。 |
 | **Data Warehouse 报告** | [Customer Journey Analytics 全表导出](/help/analysis-workspace/export/export-cloud.md)从 Adobe Analytics 中的 Data Warehouse 报告演化而来，具有许多当今在 Data Warehouse 中不提供但经常有人要求提供的新功能。 |
 | **登录、退出和花费时间维度和量度** | 受支持（现在“进入次数”和“退出次数”称为“会话启动次数”和“会话结束次数”），但计算方式略有不同。 |
 | **eVar 持久性设置** | Customer Journey Analytics 中不再包括 eVar。但是，持久性设置现在是数据视图的一部分，且可用于所有维度。请记住，持久基于报告时处理，而不是数据收集处理。数据视图中的纬度集限制为 90 天最大持久性，不支持无限持久性。 |
