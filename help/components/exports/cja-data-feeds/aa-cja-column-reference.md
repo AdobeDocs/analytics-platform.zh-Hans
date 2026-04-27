@@ -437,7 +437,7 @@ EF ID，用于Adobe Advertising集成。
 
 Customer Journey Analytics不接受开箱即用的“排除的点击”。 但是，如果您具有标记要排除的特定点击的XDM字段，则可以重新创建此功能：
 
-1. 确保将标记已排除点击的XDM字段作为一个组件（维度或量度，具体取决于您如何设置此标记）包含在内。 在报告](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview)中选择[隐藏组件可能对此字段有益。
+1. 确保将标记已排除点击的XDM字段作为一个组件（维度或量度，具体取决于您如何设置此标记）包含在内。 在报告[&#128279;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview)中选择隐藏组件可能对此字段有益。
 1. 在[数据视图设置](/help/data-views/session-settings.md)中，选择&#x200B;**[!UICONTROL 添加区段]**&#x200B;下拉菜单，然后选择&#x200B;**[!UICONTROL 创建区段]**。
 1. 创建一个区段，以排除存在排除点击组件的所有事件或包含要排除的值。
 1. 在区段和数据视图上选择&#x200B;**[!UICONTROL 保存]**。
