@@ -4,10 +4,10 @@ description: 确定如何获取给定的Adobe Analytics数据馈送列，并确�
 feature: Components
 hide: true
 exl-id: 81d6e79e-8324-4726-9a48-10177b0a91b1
-source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
+source-git-commit: d79c6d883f436d97925e007f453879e20b4fcc04
 workflow-type: tm+mt
-source-wordcount: '3768'
-ht-degree: 47%
+source-wordcount: '3912'
+ht-degree: 48%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 47%
 
 +++**`aemassetid`**
 
-一个多值变量与一组 Adobe Experience Manager Assets 的资产 ID (GUID) 相对应。可增加展示事件的计数。
+一个多值变量与一组 Adobe Experience Manager Assets 的资产 ID (GUID) 相对应。 可增加展示事件的计数。
 
 {{cja-df-post}}
 
@@ -45,14 +45,14 @@ ht-degree: 47%
 
 +++**`aemassetsource`**
 
-标识资产事件的来源。在 Adobe Experience Manager 中使用。
+标识资产事件的来源。 在 Adobe Experience Manager 中使用。
 
 {{cja-df-post}}
 +++
 
 +++**`aemclickedassetid`**
 
-Adobe Experience Manager 资产的资产 ID。增加点击事件的数量。
+Adobe Experience Manager 资产的资产 ID。 增加点击事件的数量。
 
 {{cja-df-post}}
 
@@ -76,7 +76,7 @@ AMO EF ID维度，用于Adobe Advertising集成。
 
 +++**`browser`**
 
-表示浏览器的数值ID。
+表示浏览器的数值 ID。
 
 {{cja-df-lookup}}
 
@@ -108,7 +108,7 @@ AMO EF ID维度，用于Adobe Advertising集成。
 
 +++**`carrier`**
 
-指定移动设备运营商。
+指定移动运营商。
 
 {{cja-df-lookup}}
 
@@ -212,7 +212,7 @@ Activity Map区域维度。
 
 +++**`color`**
 
-颜色深度ID，它基于`c_color`列的值。
+颜色深度 ID，它基于 `c_color` 列的值。
 
 {{cja-df-lookup}}
 
@@ -228,7 +228,7 @@ Activity Map区域维度。
 
 +++**`cookies`**
 
-Cookie支持维度。<br>Y：启用<br>N：禁用<br>U：未知
+Cookie支持维度。<br>Y：已启用<br>N：已禁用<br>U：未知
 
 {{cja-df-post}}
 
@@ -236,7 +236,7 @@ Cookie支持维度。<br>Y：启用<br>N：禁用<br>U：未知
 
 +++**`country`**
 
-表示访客所在国家/地区的数值 ID。引用 `country.tsv` 查找表。
+表示访客所在国家/地区的数值 ID。 引用 `country.tsv` 查找表。
 
 {{cja-df-lookup}}
 
@@ -244,7 +244,7 @@ Cookie支持维度。<br>Y：启用<br>N：禁用<br>U：未知
 
 +++**`currency`**
 
-交易过程中使用的货币代码。用 `currencyCode` 设置。
+交易过程中使用的货币代码。 用 `currencyCode` 设置。
 
 `xdm.commerce.order.currencyCode`
 
@@ -254,7 +254,7 @@ Cookie支持维度。<br>Y：启用<br>N：禁用<br>U：未知
 
 +++**`ct_connect_type`**
 
-与 `connection_type` 列相关。最常见的值为 LAN/Wifi、Mobile Carrier 和 Modem。
+与 `connection_type` 列相关。 最常见的值为 LAN/Wifi、Mobile Carrier 和 Modem。
 
 +++
 
@@ -266,13 +266,13 @@ Cookie支持维度。<br>Y：启用<br>N：禁用<br>U：未知
 
 +++**`curr_rate`**
 
-交易时的汇率。Adobe 与 XE 合作，以确定当天的汇率。
+交易时的汇率。 Adobe 与 XE 合作，以确定当天的汇率。
 
 +++
 
 +++**`customer_perspective`**
 
-确定点击是否为移动设备后台点击。
+决定点击是否为移动后台点击。
 
 {{cja-df-post}}
 
@@ -284,7 +284,7 @@ Customer Journey Analytics没有事件类型的本机概念，在该概念中，
 
 +++**`cust_hit_time_gmt`**
 
-仅限启用了时间戳的报表包。随点击发送的时间戳（基于 UNIX® 时间）。
+仅限启用了时间戳的报表包。 随点击发送的时间戳（基于 UNIX® 时间）。
 
 Customer Journey Analytics没有时间戳与非时间戳报表包的概念。 请改用`xdm.timestamp`，并根据需要调整组件设置。
 
@@ -304,7 +304,7 @@ Customer Journey Analytics支持使用[`identityMap`](https://experienceleague.a
 
 +++**`c_color`**
 
-调色板的位深度。在计算颜色深度维度时用到。 AppMeasurement 使用 JavaScript 函数 `screen.colorDepth()`。
+调色板的位深度。 在计算颜色深度维度时用到。 AppMeasurement 使用 JavaScript 函数 `screen.colorDepth()`。
 
 +++
 
@@ -316,7 +316,7 @@ Customer Journey Analytics支持使用[`identityMap`](https://experienceleague.a
 
 +++**`dataprivacyconsentoptin`**
 
-同意管理选择加入维度。 每次点击可以出现多个值，各个值之间用竖线 (`\|`) 隔开。有效值包括 `DMP` 和 `SELL`。
+同意管理选择加入维度。 每次点击可以出现多个值，各个值之间用竖线 (`\|`) 隔开。 有效值包括 `DMP` 和 `SELL`。
 
 如果您的组织具有数据管理平台，则该平台可能会填充此维度的所需XDM字段。
 
@@ -324,7 +324,7 @@ Customer Journey Analytics支持使用[`identityMap`](https://experienceleague.a
 
 +++**`dataprivacyconsentoptout`**
 
-同意管理选择退出维度。 每次点击可以出现多个值，各个值之间用竖线 (`\|`) 隔开。有效值包括 `SSF`, `DMP` 和 `SELL`。
+同意管理选择退出维度。 每次点击可以出现多个值，各个值之间用竖线 (`\|`) 隔开。 有效值包括 `SSF`, `DMP` 和 `SELL`。
 
 如果您的组织具有数据管理平台，则该平台可能会填充此维度的所需XDM字段。
 
@@ -342,13 +342,13 @@ Customer Journey Analytics支持使用[`identityMap`](https://experienceleague.a
 
 域维度。 基于访客的网络接入点。
 
-在&#x200B;**[!UICONTROL 配置数据流]**&#x200B;时启用[网络查找](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure)。 如果XDM字段包含在您的架构中，则该字段为`xdm.environment.domain`。
+在[配置数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure)时启用&#x200B;**[!UICONTROL 网络查找]**。 如果XDM字段包含在您的架构中，则该字段为`xdm.environment.domain`。
 
 +++
 
 +++**`duplicated_from`**
 
-仅在包含点击复制 VISTA 规则的报表包中使用。指示从中复制点击的报表包。
+仅在包含点击复制 VISTA 规则的报表包中使用。 指示从中复制点击的报表包。
 
 {{cja-df-na}}
 
@@ -372,7 +372,7 @@ Customer Journey Analytics没有充当所有量度重复标志的单个字段。
 
 虽然无法直接翻译为此Analytics数据馈送列，但其删除重复购买操作的功能仍然存在。 如果使用[[!UICONTROL Commerce详细信息]](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/field-groups/event/commerce-details)字段组，则可以设置[指标去重组件设置](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication)，其中&#x200B;**[!UICONTROL 去重ID]**&#x200B;为`xdm.commerce.purchases.id`。
 
-如果需要在需要标记重复购买的位置进行直接翻译，则可以使用规则集中的[Deduplicate](/help/data-views/derived-fields/derived-fields.md)函数的&#x200B;**Derived字段**。
+如果需要在需要标记重复购买的位置进行直接翻译，则可以使用规则集中的&#x200B;**Deduplicate**&#x200B;函数的[Derived字段](/help/data-views/derived-fields/derived-fields.md)。
 
 +++
 
@@ -386,7 +386,7 @@ EF ID，用于Adobe Advertising集成。
 
 +++**`evar1 - evar250`**
 
-自定义变量 1 至 250。在eVar维度中使用。 每个公司使用 eVar 的方式有所不同。要了解有关贵组织如何填充各个eVar的更多信息，最好的地方是特定于贵组织的解决方案设计文档。
+自定义变量 1 至 250。 在eVar维度中使用。 每个公司使用 eVar 的方式有所不同。 要了解有关贵组织如何填充各个eVar的更多信息，最好的地方是特定于贵组织的解决方案设计文档。
 
 {{cja-df-post}}
 
@@ -394,7 +394,7 @@ EF ID，用于Adobe Advertising集成。
 
 +++**`event_list`**
 
-以逗号分隔的数值 ID 列表，各 ID 表示点击时所触发的事件。包括商务事件和自定义事件1-1,000。 使用 `event.tsv` 查找。
+以逗号分隔的数值 ID 列表，各 ID 表示点击时所触发的事件。 包括商务事件和自定义事件1-1,000。 使用 `event.tsv` 查找。
 
 此列可能会映射到数十个不同的量度，具体取决于您的实施。 Adobe建议执行以下流程，将Customer Journey Analytics中的每个相应指标映射到其在此Analytics数据馈送列中表示的数字值：
 
@@ -433,11 +433,11 @@ EF ID，用于Adobe Advertising集成。
 
 +++**`exclude_hit`**
 
-确定报告中是否包含此点击的标记。对于被排除的点击，`visit_num` 列不递增。
+确定报告中是否包含此点击的标记。 对于被排除的点击，`visit_num` 列不递增。
 
 Customer Journey Analytics不接受开箱即用的“排除的点击”。 但是，如果您具有标记要排除的特定点击的XDM字段，则可以重新创建此功能：
 
-1. 确保将标记已排除点击的XDM字段作为一个组件（维度或量度，具体取决于您如何设置此标记）包含在内。 在报告[中选择](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/overview)隐藏组件可能对此字段有益。
+1. 确保将标记已排除点击的XDM字段作为一个组件（维度或量度，具体取决于您如何设置此标记）包含在内。 在报告[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/overview)中选择隐藏组件可能对此字段有益。
 1. 在[数据视图设置](/help/data-views/session-settings.md)中，选择&#x200B;**[!UICONTROL 添加区段]**&#x200B;下拉菜单，然后选择&#x200B;**[!UICONTROL 创建区段]**。
 1. 创建一个区段，以排除存在排除点击组件的所有事件或包含要排除的值。
 1. 在区段和数据视图上选择&#x200B;**[!UICONTROL 保存]**。
@@ -466,13 +466,13 @@ Customer Journey Analytics不接受开箱即用的“排除的点击”。 但�
 
 +++**`first_hit_ref_domain`**
 
-原始反向链接域维度。 基于 `first_hit_referrer`。访客首次访问的反向链接域。
+原始反向链接域维度。 基于 `first_hit_referrer`。 访客首次访问的反向链接域。
 
 +++
 
 +++**`first_hit_ref_type`**
 
-表示访客第一个反向链接的反向链接类型的数值ID。
+表示访客使用的第一个反向链接的反向链接类型的数值 ID。
 
 {{cja-df-lookup}}
 
@@ -486,31 +486,31 @@ Customer Journey Analytics不接受开箱即用的“排除的点击”。 但�
 
 +++**`geo_city`**
 
-根据 IP 地址判断的点击来源城市的名称。在城市维度中用到。
+根据 IP 地址判断的点击来源城市的名称。 在城市维度中用到。
 
 +++
 
 +++**`geo_country`**
 
-根据 IP 地址判断的点击来源国家/地区的缩写。在国家/地区维度中用到。
+根据 IP 地址判断的点击来源国家/地区的缩写。 在国家/地区维度中用到。
 
 +++
 
 +++**`geo_dma`**
 
-根据 IP 地址判断的点击来源人口统计区的数值 ID。在美国DMA维度中用到。
+根据 IP 地址判断的点击来源人口统计区的数值 ID。 在美国DMA维度中用到。
 
 +++
 
 +++**`geo_region`**
 
-根据 IP 地址判断的点击来源省/市/自治区或区域的名称。在地区维度中使用。
+根据 IP 地址判断的点击来源省/市/自治区或区域的名称。 在地区维度中使用。
 
 +++
 
 +++**`geo_zip`**
 
-根据 IP 地址判断的点击来源的邮政编码。帮助填充邮政编码维度。 另请参阅 `zip`。
+根据 IP 地址判断的点击来源的邮政编码。 帮助填充邮政编码维度。 另请参阅 `zip`。
 
 +++
 
@@ -528,7 +528,7 @@ Customer Journey Analytics不接受开箱即用的“排除的点击”。 但�
 
 +++**`hit_source`**
 
-点击的来源。点击源1和2将计费。 <br>1：不带时间戳的标准图像请求<br>2：带有时间戳的标准图像请求<br>3：带有时间戳的实时数据源上载<br>4：未使用<br>5：通用数据源上载<br>6：不再使用；完全处理数据源上载<br>7：TransactionID数据源上载<br>8：不再使用；Adobe Advertising数据源的以前版本<br>9：不再使用；Adobe Social概要量度<br>10：使用了Audience Manager服务器端转发
+点击的来源。 点击源1和2将计费。 <br>1：不带时间戳的标准图像请求<br>2：带有时间戳的标准图像请求<br>3：带有时间戳的实时数据源上载<br>4：未使用<br>5：通用数据源上载<br>6：不再使用；完全处理数据源上载<br>7：TransactionID数据源上载<br>8：不再使用；Adobe Advertising数据源的以前版本<br>9：不再使用；Adobe Social概要量度<br>10：使用了Audience Manager服务器端转发
 
 +++
 
@@ -546,19 +546,19 @@ Adobe 数据收集服务器接收到点击的时间戳（基于 UNIX® 时间）
 
 +++**`ip`**
 
-IPv4 地址，基于图像请求的 HTTP 标头。与 `ipv6` 互斥；如果此列包含未进行模糊处理的 IP 地址，则 `ipv6` 为空白。
+IPv4 地址，基于图像请求的 HTTP 标头。 与 `ipv6` 互斥；如果此列包含未进行模糊处理的 IP 地址，则 `ipv6` 为空白。
 
 +++
 
 +++**`ipv6`**
 
-压缩的 IPv6 地址（如果有）。与 `ip` 互斥；如果此列包含未进行模糊处理的 IP 地址，则 `ip` 为空白。
+压缩的 IPv6 地址（如果有）。 与 `ip` 互斥；如果此列包含未进行模糊处理的 IP 地址，则 `ip` 为空白。
 
 +++
 
 +++**`javascript`**
 
-JavaScript版本的查找ID，基于`j_jscript`。
+基于 `j_jscript` 的 JavaScript 版本的查找 ID。
 
 {{cja-df-lookup}}
 
@@ -580,7 +580,7 @@ JavaScript版本的查找ID，基于`j_jscript`。
 
 +++**`language`**
 
-表示访客语言的数值ID。
+表示访客语言的数值 ID。
 
 {{cja-df-lookup}}
 
@@ -588,19 +588,19 @@ JavaScript版本的查找ID，基于`j_jscript`。
 
 +++**`last_hit_time_gmt`**
 
-上次点击的时间戳（以 UNIX® 时间表示）。用于计算上次访问后天数维度。
+上次点击的时间戳（以 UNIX® 时间表示）。 用于计算上次访问后天数维度。
 
 +++
 
 +++**`last_purchase_num`**
 
-客户忠诚度维度。 访客以前购买的次数。<br>0：之前没有购买（不是客户）<br>1：1 次先前购买（新客户）<br>2：2 次先前购买（退货客户）<br>3：3 次或更多先前购买（忠诚客户）
+客户忠诚度维度。 访客以前购买的次数。 <br>0：之前没有购买（不是客户）<br>1：1 次先前购买（新客户）<br>2：2 次先前购买（退货客户）<br>3：3 次或更多先前购买（忠诚客户）
 
 +++
 
 +++**`last_purchase_time_gmt`**
 
-在上次购买后天数维度中用到。 上次购买的时间戳（以 UNIX® 时间表示）。对于首次购买和以前未购买过的访客，此值为 `0`。
+在上次购买后天数维度中用到。 上次购买的时间戳（以 UNIX® 时间表示）。 对于首次购买和以前未购买过的访客，此值为 `0`。
 
 +++
 
@@ -624,13 +624,13 @@ JavaScript版本的查找ID，基于`j_jscript`。
 
 +++**`mcvisid`**
 
-Experience Cloud 访客 ID。一个 128 位的数字（由两个 64 位的数字拼接而成），共占据了 19 位数。
+Experience Cloud 访客 ID。 一个 128 位的数字（由两个 64 位的数字拼接而成），共占据了 19 位数。
 
 +++
 
 +++**`mc_audiences`**
 
-列出访客所属的 Audience Manager 区段 ID。`post_mc_audiences` 列将分隔符更改为 `--**--`。
+列出访客所属的 Audience Manager 区段 ID。 `post_mc_audiences` 列将分隔符更改为 `--**--`。
 
 {{cja-df-post}}
 
@@ -638,7 +638,7 @@ Experience Cloud 访客 ID。一个 128 位的数字（由两个 64 位的数字
 
 +++**`mobileaction`**
 
-移动设备操作。在移动实施中调用 `trackAction` 时会自动收集。应用程序支持自动的操作路径。
+移动设备操作。 在移动实施中调用 `trackAction` 时会自动收集。 应用程序支持自动的操作路径。
 
 {{cja-df-post}}
 
@@ -646,7 +646,7 @@ Experience Cloud 访客 ID。一个 128 位的数字（由两个 64 位的数字
 
 +++**`mobileappid`**
 
-移动应用程序 ID。采用以下格式存储应用程序名称和版本：`[AppName] [BundleVersion]`
+移动应用程序 ID。 采用以下格式存储应用程序名称和版本：`[AppName] [BundleVersion]`
 
 `xdm.application.name` + `xdm.application.version`
 
@@ -656,19 +656,19 @@ Experience Cloud 访客 ID。一个 128 位的数字（由两个 64 位的数字
 
 +++**`mobileappperformanceappid`**
 
-用于 Apteligent Data Connector。Apteligent 中使用的应用程序 ID。
+用于 Apteligent Data Connector。 Apteligent 中使用的应用程序 ID。
 
 +++
 
 +++**`mobileappperformancecrashid`**
 
-用于 Apteligent Data Connector。Apteligent 中使用的崩溃 ID。
+用于 Apteligent Data Connector。 Apteligent 中使用的崩溃 ID。
 
 +++
 
 +++**`mobileappstoreobjectid`**
 
-用在 [!DNL Appfigures] 数据连接器中。应用程序商店对象 ID。
+用在 [!DNL Appfigures] 数据连接器中。 应用程序商店对象 ID。
 
 +++
 
@@ -698,7 +698,7 @@ Mobile Services 信标 UUID
 
 +++**`mobilecampaigncontent`**
 
-显示链接的内容名称或 ID。由移动设备应用程序客户获取填充。
+显示链接的内容名称或 ID。 由移动设备应用程序客户获取填充。
 
 {{cja-df-post}}
 
@@ -706,7 +706,7 @@ Mobile Services 信标 UUID
 
 +++**`mobilecampaignmedium`**
 
-营销媒介，例如横幅或电子邮件。由移动设备应用程序客户获取填充。
+营销媒介，例如横幅或电子邮件。 由移动设备应用程序客户获取填充。
 
 {{cja-df-post}}
 
@@ -714,7 +714,7 @@ Mobile Services 信标 UUID
 
 +++**`mobilecampaignname`**
 
-营销活动的名称，也存储在营销活动变量中。由移动设备应用程序客户获取填充。
+营销活动的名称，也存储在营销活动变量中。 由移动设备应用程序客户获取填充。
 
 {{cja-df-post}}
 
@@ -722,7 +722,7 @@ Mobile Services 信标 UUID
 
 +++**`mobilecampaignsource`**
 
-原始反向链接，例如商务通讯或社交媒体网络。由移动设备应用程序客户获取填充。
+原始反向链接，例如商务通讯或社交媒体网络。 由移动设备应用程序客户获取填充。
 
 {{cja-df-post}}
 
@@ -730,7 +730,7 @@ Mobile Services 信标 UUID
 
 +++**`mobilecampaignterm`**
 
-要在此客户获取中跟踪的付费关键字或其他搜索词。由移动设备应用程序客户获取填充。
+要在此客户获取中跟踪的付费关键字或其他搜索词。 由移动设备应用程序客户获取填充。
 
 {{cja-df-post}}
 
@@ -762,13 +762,13 @@ Mobile Services 信标 UUID
 
 +++**`mobiledeeplinkid`**
 
-从上下文数据变量 `a.deeplink.id` 收集。在客户获取报表中用作移动客户获取链接的标识符。
+从上下文数据变量 `a.deeplink.id` 收集。 在客户获取报表中用作移动客户获取链接的标识符。
 
 +++
 
 +++**`mobiledevice`**
 
-移动设备名称。在 iOS 上，该变量存储为用逗号分隔的 2 位数的字符串。第一个数字表示设备是第几代的，而另一个数字则表示设备所属的系列。
+移动设备名称。 在 iOS 上，该变量存储为用逗号分隔的 2 位数的字符串。 第一个数字表示设备是第几代的，而另一个数字则表示设备所属的系列。
 
 {{cja-df-post}}
 
@@ -776,7 +776,7 @@ Mobile Services 信标 UUID
 
 +++**`mobilehourofday`**
 
-确定应用程序启动的具体时间。采用 24 小时数字格式。
+确定应用程序启动的具体时间。 采用 24 小时数字格式。
 
 {{cja-df-post}}
 
@@ -784,7 +784,7 @@ Mobile Services 信标 UUID
 
 +++**`mobileinstalldate`**
 
-移动设备安装日期。提供用户首次打开移动应用程序的日期。
+移动设备安装日期。 提供用户首次打开移动应用程序的日期。
 
 {{cja-df-lookback}}
 
@@ -804,7 +804,7 @@ Mobile Services 信标 UUID
 
 +++**`mobilemessagebuttonname`**
 
-从上下文数据变量 `a.message.button.id` 收集。用于应用程序内消息传递，以标识关闭消息的按钮。
+从上下文数据变量 `a.message.button.id` 收集。 用于应用程序内消息传递，以标识关闭消息的按钮。
 
 {{cja-df-post}}
 
@@ -828,7 +828,7 @@ Mobile Services 信标 UUID
 
 +++**`mobilemessagepushoptin`**
 
-从上下文数据变量 `a.push.optin` 收集。当用户选择启用推送消息时，设置为“true”；否则，将该值设为“false”。
+从上下文数据变量 `a.push.optin` 收集。 当用户选择启用推送消息时，设置为“true”；否则，将该值设为“false”。
 
 {{cja-df-post}}
 
@@ -836,7 +836,7 @@ Mobile Services 信标 UUID
 
 +++**`mobilemessagepushpayloadid`**
 
-从上下文数据变量 `a.push.payloadid` 收集。在推送消息中用作有效负载标识符。
+从上下文数据变量 `a.push.payloadid` 收集。 在推送消息中用作有效负载标识符。
 
 {{cja-df-post}}
 
@@ -852,19 +852,19 @@ Mobile Services 操作系统版本
 
 +++**`mobileplaceaccuracy`**
 
-从上下文数据变量 `a.loc.acc` 收集。指示收集时 GPS 的精度（以米为单位）。
+从上下文数据变量 `a.loc.acc` 收集。 指示收集时 GPS 的精度（以米为单位）。
 
 +++
 
 +++**`mobileplacecategory`**
 
-从上下文数据变量 `a.loc.category` 收集。描述特定位置的类别。
+从上下文数据变量 `a.loc.category` 收集。 描述特定位置的类别。
 
 +++
 
 +++**`mobileplaceid`**
 
-从上下文数据变量 `a.loc.id` 收集。给定目标点的标识符。
+从上下文数据变量 `a.loc.id` 收集。 给定目标点的标识符。
 
 +++
 
@@ -910,13 +910,13 @@ Mobile Services 启动搜索词
 
 +++**`mobilerelaunchcampaigntrackingcode`**
 
-从上下文数据变量 `a.launch.campaign.trackingcode` 收集。在客户获取中用作启动促销活动的跟踪代码。
+从上下文数据变量 `a.launch.campaign.trackingcode` 收集。 在客户获取中用作启动促销活动的跟踪代码。
 
 +++
 
 +++**`mobileresolution`**
 
-移动设备的分辨率。`[Width] x [Height]` 以像素为单位。
+移动设备的分辨率。 `[Width] x [Height]` 以像素为单位。
 
 {{cja-df-post}}
 
@@ -935,9 +935,9 @@ Mobile Services 启动搜索词
 
 +++
 
-+++**`mvvar1`** — **`mvvar3`**
++++**`mvvar1`** - **`mvvar3`**
 
-列出变量值。包含分隔的自定义值列表（取决于实施）。`post_mvvar1` - `post_mvvar3` 列将原始分隔符替换为 `--**--`。
+列出变量值。 包含分隔的自定义值列表（取决于实施）。 `post_mvvar1` - `post_mvvar3` 列将原始分隔符替换为 `--**--`。
 
 {{cja-df-post}}
 
@@ -945,7 +945,7 @@ Mobile Services 启动搜索词
 
 +++**`mvvar1_instances`** - **`mvvar3_instances`**
 
-在当前点击上设置的列表变量值。将原始分隔符替换为 `--**--`。`post` 列通常不包含数据。
+在当前点击上设置的列表变量值。 将原始分隔符替换为 `--**--`。 `post` 列通常不包含数据。
 
 {{cja-df-post}}
 
@@ -953,13 +953,13 @@ Mobile Services 启动搜索词
 
 +++**`new_visit`**
 
-确定当前点击是否为新访问的标记。在不活跃的访问状态持续 30 分钟后，由 Adobe 设置。
+确定当前点击是否为新访问的标记。 在不活跃的访问状态持续 30 分钟后，由 Adobe 设置。
 
 +++
 
 +++**`os`**
 
-表示访客的操作系统的数值 ID。基于 `user_agent` 列。
+表示访客的操作系统的数值 ID。 基于 `user_agent` 列。
 
 {{cja-df-lookup}}
 
@@ -983,7 +983,7 @@ Mobile Services 启动搜索词
 
 +++**`pagename_no_url`**
 
-与 `pagename` 类似，但它不会回退到 `page_url`。仅 `post` 列可用。
+与 `pagename` 类似，但它不会回退到 `page_url`。 仅 `post` 列可用。
 
 {{cja-df-post}}
 
@@ -1001,7 +1001,7 @@ Mobile Services 启动搜索词
 
 +++**`page_event_var1`**
 
-仅用于链接跟踪图像请求。所点击的下载链接、退出链接或自定义链接的 URL。
+仅用于链接跟踪图像请求。 所点击的下载链接、退出链接或自定义链接的 URL。
 
 {{cja-df-post}}
 
@@ -1009,7 +1009,7 @@ Mobile Services 启动搜索词
 
 +++**`page_event_var2`**
 
-仅用于链接跟踪图像请求。链接的自定义名称（如果已指定）。根据`page_event`中的值设置自定义链接、下载链接或退出链接。
+仅用于链接跟踪图像请求。 链接的自定义名称（如果已指定）。 根据`page_event`中的值设置自定义链接、下载链接或退出链接。
 
 {{cja-df-post}}
 
@@ -1063,7 +1063,7 @@ Mobile Services 与目标点中心的距离
 
 +++**`product_list`**
 
-`products` 页面变量。有助于填充多个维度和量度，包括类别、产品、件数和收入。
+`products` 页面变量。 有助于填充多个维度和量度，包括类别、产品、件数和收入。
 
 {{cja-df-post}}
 
@@ -1071,7 +1071,7 @@ Mobile Services 与目标点中心的距离
 
 +++**`prop1`** - **`prop75`**
 
-自定义流量变量 1 至 75。在Prop维度中使用。
+自定义流量变量 1 至 75。 在Prop维度中使用。
 
 {{cja-df-post}}
 
@@ -1079,7 +1079,7 @@ Mobile Services 与目标点中心的距离
 
 +++**`purchaseid`**
 
-某次购买的唯一标识符，使用 `purchaseID` 变量设置它。供 `duplicate_purchase` 列使用。
+某次购买的唯一标识符，使用 `purchaseID` 变量设置它。 供 `duplicate_purchase` 列使用。
 
 `xdm.commerce.order.purchaseID`
 
@@ -1110,13 +1110,13 @@ Mobile Services 与目标点中心的距离
 +++**`ref_type`**
 
 
-表示此点击的反向链接类型的数值 ID。在反向链接类型维度中用到。<br>1：网站内<br>2：其他网站<br>3：搜索引擎<br>4：硬盘<br>5：未发送<br>6：已输入/添加书签（无反向链接）<br>7：电子邮件<br>8：无JavaScript<br>9：社交网络<br>10：对话式AI工具
+表示此点击的反向链接类型的数值 ID。 在反向链接类型维度中使用。<br>1：网站内部<br>2：其他网站<br>3：搜索引擎<br>4：硬盘<br>5：未发送<br>6：已输入/添加书签（无反向链接）<br>7：电子邮件<br>8：无JavaScript<br>9：社交网络<br>10：对话式AI工具
 
 +++
 
 +++**`resolution`**
 
-表示显示器分辨率的数值 ID。在显示器分辨率维度中使用。
+表示显示器分辨率的数值 ID。 在显示器分辨率维度中使用。
 
 {{cja-df-lookup}}
 
@@ -1124,7 +1124,7 @@ Mobile Services 与目标点中心的距离
 
 +++**`search_engine`**
 
-表示将访客引向您的网站的搜索引擎的数值 ID。在搜索引擎维度中使用。
+表示将访客引向您的网站的搜索引擎的数值 ID。 在搜索引擎维度中使用。
 
 {{cja-df-post}}
 
@@ -1140,7 +1140,7 @@ Mobile Services 与目标点中心的距离
 
 +++**`secondary_hit`**
 
-确定此点击是否为辅助点击的标记。此标记通常源自多包标记和复制点击的 VISTA 规则。
+确定此点击是否为辅助点击的标记。 此标记通常源自多包标记和复制点击的 VISTA 规则。
 
 +++
 
@@ -1152,7 +1152,7 @@ Mobile Services 与目标点中心的距离
 
 +++**`stats_server`**
 
-没有用处。处理点击的 Adobe 内部服务器。
+没有用处。 处理点击的 Adobe 内部服务器。
 
 +++
 
@@ -1166,13 +1166,13 @@ Adobe Advertising 集成中使用的关键词 ID。
 
 +++**`s_resolution`**
 
-原始屏幕分辨率值。使用 JavaScript 函数 `screen.width x screen.height` 收集而得。
+原始屏幕分辨率值。 使用 JavaScript 函数 `screen.width x screen.height` 收集而得。
 
 +++
 
 +++**`tnt`**
 
-在 Adobe Target 集成中使用。表示所有当前符合条件的测试。格式为：`TargetCampaignID:TargetRecipeID:TargetType\|Event/Action`。
+在 Adobe Target 集成中使用。 表示所有当前符合条件的测试。 格式为：`TargetCampaignID:TargetRecipeID:TargetType\|Event/Action`。
 
 {{cja-df-post}}
 
@@ -1180,7 +1180,7 @@ Adobe Advertising 集成中使用的关键词 ID。
 
 +++**`tnt_action`**
 
-在 Adobe Target 集成中使用。表示点击符合条件的所有测试。
+在 Adobe Target 集成中使用。 表示点击符合条件的所有测试。
 
 {{cja-df-post}}
 
@@ -1188,7 +1188,7 @@ Adobe Advertising 集成中使用的关键词 ID。
 
 +++**`tnt_instances`**
 
-在 Adobe Target 集成中使用。Target 实例变量。
+在 Adobe Target 集成中使用。 Target 实例变量。
 
 +++
 
@@ -1210,7 +1210,7 @@ Adobe Advertising 集成中使用的关键词 ID。
 
 +++**`t_time_info`**
 
-访客的当地时间。格式为：`M/D/YYYY HH:MM:SS Month (0-11, 0=January) Timezone offset (in minutes)`
+访客的当地时间。 格式为：`M/D/YYYY HH:MM:SS Month (0-11, 0=January) Timezone offset (in minutes)`
 
 {{cja-df-post}}
 
@@ -1218,7 +1218,7 @@ Adobe Advertising 集成中使用的关键词 ID。
 
 +++**`userid`**
 
-没有用处。报告包 ID 的数值 ID。请改用 `username`。
+没有用处。 报告包 ID 的数值 ID。 请改用 `username`。
 
 +++
 
@@ -1236,7 +1236,7 @@ Adobe Advertising 集成中使用的关键词 ID。
 
 +++**`user_hash`**
 
-没有用处。报告包 ID 的哈希值。请改用 `username`。
+没有用处。 报告包 ID 的哈希值。 请改用 `username`。
 
 +++
 
@@ -1646,7 +1646,7 @@ MVPD流媒体服务维度。
 
 +++**`visid_type`**
 
-不能用于外部用途；Adobe 内部用于处理优化。表示用于确定访客的方法的数值 ID。<br>`0`：自定义访客 ID 或未知/不适用<br>`1`：IP 和用户代理回退<br>`2`：HTTP 移动订户标头<br>`3`：旧版 Cookie 值 (`s_vi`)<br>`4`：回退 Cookie 值 (`s_fid`)<br>`5`：身份标识服务
+不能用于外部用途；Adobe 内部用于处理优化。 数字ID，表示用于识别访客的方法。<br>`0`：自定义访客ID或未知/不适用<br>`1`： IP和用户代理回退<br>`2`： HTTP移动订阅者标头<br>`3`：旧版Cookie值(`s_vi`) <br>`4`：回退Cookie值(`s_fid`) <br>`5`：身份服务
 
 {{cja-df-post}}
 
@@ -1654,7 +1654,7 @@ MVPD流媒体服务维度。
 
 +++**`visit_keywords`**
 
-搜索关键词维度。 此列使用varchar(244)的非标准字符限制容纳Adobe使用的后端逻辑。 后处理列是`**post_keywords**`，而不是`**post_visit_keywords**`。
+搜索关键词维度。 此列使用 varchar(244) 的非标准字符限制容纳 Adobe 使用的后端逻辑。 后处理列是`**post_keywords**`，而不是`**post_visit_keywords**`。
 
 {{cja-df-post}}
 
@@ -1668,7 +1668,7 @@ MVPD流媒体服务维度。
 
 +++**`visit_page_num`**
 
-点击深度维度。 访客每产生一次点击，此值就增加 1。重置每一个访问。
+点击深度维度。 访客每产生一次点击，此值就增加 1。 重置每一个访问。
 
 +++
 
@@ -1680,13 +1680,13 @@ MVPD流媒体服务维度。
 
 +++**`visit_ref_domain`**
 
-基于 `visit_referrer` 列。此访问的第一个反向链接域。
+基于 `visit_referrer` 列。 此访问的第一个反向链接域。
 
 +++
 
 +++**`visit_ref_type`**
 
-表示访问的第一个反向链接的反向链接类型的数值ID。
+表示此访问的第一个反向链接的反向链接类型的数值 ID。
 
 {{cja-df-lookup}}
 
@@ -1694,7 +1694,7 @@ MVPD流媒体服务维度。
 
 +++**`visit_search_engine`**
 
-表示访问的第一个搜索引擎的数值ID。
+表示此访问的第一个搜索引擎的数值 ID。
 
 {{cja-df-lookup}}
 

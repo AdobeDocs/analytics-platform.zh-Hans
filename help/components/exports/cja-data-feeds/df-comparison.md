@@ -5,9 +5,9 @@ title: 比较Customer Journey Analytics和Adobe Analytics中的数据馈送功�
 feature: Components
 hide: true
 exl-id: 32b71016-7c53-409f-9ce4-521a40e2eb96
-source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
+source-git-commit: d79c6d883f436d97925e007f453879e20b4fcc04
 workflow-type: tm+mt
-source-wordcount: '2021'
+source-wordcount: '2059'
 ht-degree: 1%
 
 ---

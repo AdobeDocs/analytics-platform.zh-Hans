@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 exl-id: 1d17151b-3a12-468e-9a4f-9e5994599570
-source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
+source-git-commit: d79c6d883f436d97925e007f453879e20b4fcc04
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '676'
 ht-degree: 97%
 
 ---
@@ -24,9 +24,9 @@ ht-degree: 97%
 | 升级任务 | 详细信息 |
 |---------|----------|
 | **步骤 1：[开始升级](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)** | 了解升级到 Customer Journey Analytics 的好处以及基本升级流程。 |
-| **步骤 2：[选择升级路径](/help/getting-started/cja-upgrade/cja-upgrade-path.md)** | 有多种方法可以升级到 Customer Journey Analytics。根据您组织当前的 Adobe Analytics 环境和长期目标，选择最适合您组织的方法。 |
+| **步骤 2：[选择升级路径](/help/getting-started/cja-upgrade/cja-upgrade-path.md)** | 有多种方法可以升级到 Customer Journey Analytics。 根据您组织当前的 Adobe Analytics 环境和长期目标，选择最适合您组织的方法。 |
 | **步骤 3：[将数据发送到 Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)** | 将数据发送到 Adobe Experience Platform 的流程因您在步骤 2 中选择的升级路径而异。 |
-| <span class="preview">**步骤 4：保留历史数据**</span> | <span class="preview">大多数组织需要在一定时间内保留其 Adobe Analytics 的历史数据。有多种选项可以实现此目的。</span> |
+| <span class="preview">**步骤 4：保留历史数据**</span> | <span class="preview">大多数组织需要在一定时间内保留其 Adobe Analytics 的历史数据。 有多种选项可以实现此目的。</span> |
 | **步骤 5：[执行额外的实施任务](/help/getting-started/cja-getting-started.md)** | 在升级流程的这个阶段，您需要执行各种任务，然后您的 Customer Journey Analytics environment 环境才可供使用。<p>这些额外的任务适用于从 Adobe Analytics 进行升级，以及新的 Customer Journey Analytics 实施。</p><p>这些任务包括：</p><ul><li>将其他数据引入 Experience Platform</li><li>在 Platform 数据集与 Customer Journey Analytics 之间创建连接</li><li>创建数据视图</li><li>移植报告 API 使用情况</li><li>数据源和 Data Warehouse 的核算</li><li>迁移项目和组件</li><li>规划用户加入流程</li></ul> <p>有关更多信息，请参阅 [Customer Journey Analytics 快速入门](/help/getting-started/cja-getting-started.md)。 |
 
 {style="table-layout:auto"}
@@ -35,7 +35,7 @@ ht-degree: 97%
 
 >[!AVAILABILITY]
 >
->此页面上的信息将被以下更全面的升级信息取代： <ul><li>**建议的升级步骤**<p>有关详细信息，请参阅[从 Adobe Analytics 升级到 Customer Journey Analytics 时的推荐路径](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)。</p></li><li>**Customer Journey Analytics 升级指南**<p>现有新的升级指南可用，用于动态生成适合您的组织和独特情况的升级步骤。</p><p>要从 Customer Journey Analytics 访问升级指南，请选择&#x200B;**[!UICONTROL 工作区]**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**[!UICONTROL 升级到 Customer Journey Analytics]**。按照屏幕上的说明操作。</p></li></ul>
+>此页面上的信息将被以下更全面的升级信息取代： <ul><li>**建议的升级步骤**<p>有关详细信息，请参阅[从 Adobe Analytics 升级到 Customer Journey Analytics 时的推荐路径](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)。</p></li><li>**Customer Journey Analytics 升级指南**<p>现有新的升级指南可用，用于动态生成适合您的组织和独特情况的升级步骤。</p><p>要从 Customer Journey Analytics 访问升级指南，请选择&#x200B;**[!UICONTROL 工作区]**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**[!UICONTROL 升级到 Customer Journey Analytics]**。 按照屏幕上的说明操作。</p></li></ul>
 
 在从 Adobe Analytics 迁移到 Customer Journey Analytics 时，选择以下选项之一来保留历史数据：
 
@@ -45,7 +45,7 @@ ht-degree: 97%
 
 ## 使用 Analytics 源连接器
 
-您可以使用[&#x200B; Analytics 源连接器](/help/data-ingestion/analytics.md)来保留历史数据。无论您选择哪种升级路径（即使您使用 Web SDK 升级），您都可以使用 Analytics 源连接器保留来自 Adobe Analytics 环境的历史数据。
+您可以使用[&#x200B; Analytics 源连接器](/help/data-ingestion/analytics.md)来保留历史数据。 无论您选择哪种升级路径（即使您使用 Web SDK 升级），您都可以使用 Analytics 源连接器保留来自 Adobe Analytics 环境的历史数据。
 
 您可以使用 Analytics 源连接器将历史数据放入与当前数据分开的专用位置，从而保留历史数据。
 
@@ -55,7 +55,7 @@ ht-degree: 97%
 
 ## 维护您现有的 Adobe Analytics 实施
 
-您可以在特定时间范围内（例如 1 年）维护现有的 Adobe Analytics 实施以及新的 Customer Journey Analytics 实施。选择此选项时，请考虑以下因素：
+您可以在特定时间范围内（例如 1 年）维护现有的 Adobe Analytics 实施以及新的 Customer Journey Analytics 实施。 选择此选项时，请考虑以下因素：
 
 * 数据无法在 Experience Platform 中使用。
 
