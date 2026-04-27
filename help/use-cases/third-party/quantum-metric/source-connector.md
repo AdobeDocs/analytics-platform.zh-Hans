@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 exl-id: ea8795fe-f5aa-458f-9e01-53ff1ffe6372
-source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
+source-git-commit: d79c6d883f436d97925e007f453879e20b4fcc04
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 1%
+source-wordcount: '435'
+ht-degree: 4%
 
 ---
 
@@ -39,7 +39,7 @@ CJA解锁对QM数据、顺序数据分析、富归因和其他高级报表的报
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
 >[!NOTE]
->虽然您可以将Quantum量度数据添加到与Customer Journey Analytics其余数据相同的连接，但如果没有两个数据集之间通用的人员ID，则无法拼合这些数据。 如果需要此行为，Adobe建议使用[标记扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/analytics/quantum-metric)而不是源连接器。
+>虽然您可以将Quantum量度数据添加到与Customer Journey Analytics其余数据相同的连接，但如果没有两个数据集之间通用的人员ID，则无法拼合这些数据。 如果需要此行为，Adobe建议使用[标记扩展](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric)而不是源连接器。
 
 ## 步骤3：在Customer Journey Analytics中创建数据视图
 
