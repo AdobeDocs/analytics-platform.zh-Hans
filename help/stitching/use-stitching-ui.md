@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: d42f0eb658f26d16bd21bb6ca47d5dd7c228e614
+source-git-commit: 2816ea67c009d461fb05393741b74979dd65a212
 workflow-type: tm+mt
-source-wordcount: '1717'
-ht-degree: 9%
+source-wordcount: '1788'
+ht-degree: 20%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 9%
 
 您可以对作为连接的一部分配置的一个或多个事件数据集启用拼合。 您许可的Customer Journey Analytics包将决定您能够为拼合启用的事件数据集数量。
 
-当您[创建连接](/help/connections/create-connection.md#dataset-settings)或[编辑连接](/help/connections/create-connection.md)时，您可以将拼合作为事件数据集的[数据集设置](/help/connections/manage-connections.md#edit-a-connection)的一部分来启用。
+当您[创建连接](/help/connections/create-connection.md)或[编辑连接](/help/connections/manage-connections.md#edit-a-connection)时，您可以将拼合作为事件数据集的[数据集设置](/help/connections/create-connection.md#dataset-settings)的一部分来启用。
 
 ## 先决条件
 
@@ -102,22 +102,22 @@ ht-degree: 9%
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
 >title="拼接量度"
->abstract="拼接量度是使用一组带有过去7天事件时间戳的示例数据来计算的。<br>此样本数据集通常与&#x200B;**[!UICONTROL 预览]**&#x200B;表中使用的样本数据不同。"
+>abstract="拼接量度使用过去 7 天事件时间戳的样本数据集进行计算。<br>此样本数据集通常与&#x200B;**[!UICONTROL 预览]**&#x200B;表中使用的样本数据不同。"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_gbs_personidcoverage"
 >title="人员 ID 覆盖率"
->abstract="在拼接过程（实时和重放）中用于标识的选定人员ID的覆盖范围。<br/>为获得最佳的拼接结果，每个永久ID的标识图中应存在一个（永久ID、人员ID）关系。"
+>abstract="在拼接过程中（实时和重放）用于识别的所选人员 ID 的覆盖率。<br/>为了获得最佳拼接效果，身份标识图中应为每个永久 ID 建立（永久 ID，人员 ID）关系。"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_fbs_personidcoverage"
 >title="人员 ID 覆盖率"
->abstract="在拼接过程（实时和重放）中用于标识的选定人员ID的覆盖范围。<br/>为获得最佳的拼接结果，每个永久ID（设备信息）应在至少一个事件上发送人员ID（用户信息）。"
+>abstract="在拼接过程中（实时和重放）用于识别的所选人员 ID 的覆盖率。<br/>为了获得最佳拼接效果，应在每个永久 ID（设备信息）至少对应的一个事件中发送人员 ID（用户信息）。"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_persistentidcoverage"
 >title="永久 ID 覆盖率"
->abstract="如果无法检测到人员ID值，此值用于在拼合过程（实时和重播）中进行识别。 <br/>将从数据中删除没有永久ID和人员ID的事件。 为了获得最佳拼接效果，所有事件都应包含永久 ID。"
+>abstract="当无法检测到人员 ID 值时，该值会在拼接过程中（实时和重放）用于识别。 <br/>不包含永久 ID 和人员 ID 的事件将从数据中丢弃。 为了获得最佳拼接效果，所有事件都应包含永久 ID。"
 
 
 >[!CONTEXTUALHELP]
@@ -190,7 +190,7 @@ ht-degree: 9%
 
   人员ID覆盖范围显示为百分比，并与在稳定开发或生产设置中推荐的内容进行比较。 此覆盖值越高，使用选定的人员ID获得的拼接结果就越好。
 
-* **[!UICONTROL 持久ID覆盖率]**：此值用于在拼接过程（实时和重放）中标识，以防检测到人员ID值。 不包含永久 ID 和人员 ID 的事件将从数据中丢弃。为了获得最佳拼接效果，所有事件都应包含永久 ID。
+* **[!UICONTROL 持久ID覆盖率]**：此值用于在拼接过程（实时和重放）中标识，以防检测到人员ID值。 不包含永久 ID 和人员 ID 的事件将从数据中丢弃。 为了获得最佳拼接效果，所有事件都应包含永久 ID。
 
   持久ID覆盖范围以百分比显示，并与稳定开发或生产设置的最低建议数量进行比较。
 
@@ -248,3 +248,4 @@ ht-degree: 9%
 例如，由于较早或当前的拼接请求，您在数据湖中有基于Web的拼接数据集。 您可以使用Connections界面从呼叫中心数据集添加拼合数据，以将该数据与基于Web的数据相结合。
 
 最终，Adobe会将您的基于请求的拼合数据集迁移到连接中的新拼合体验。
+
