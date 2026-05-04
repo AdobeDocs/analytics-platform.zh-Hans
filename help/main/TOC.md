@@ -2,10 +2,10 @@
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 8fe31fe0603c2b17fee930011cce915df3c76200
+source-git-commit: f59958b9d290138480fe4b5588d1b5660250be12
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 96%
+source-wordcount: '1427'
+ht-degree: 95%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 + 发行说明 {#releases}
    + [最新版本](../release-notes/latest.md)
    + {hide-from-toc}[预发行说明](../release-notes/pre-release-notes.md)
-   + [2026 版](../release-notes/2026.md)
+   + [2026版](../release-notes/2026.md)
    + [2025 版](../release-notes/2025.md)
    + [2024 版](../release-notes/2024.md)
    + [2023 版](../release-notes/2023.md)
@@ -94,7 +94,7 @@ ht-degree: 96%
          + [使用通过 Adobe Journey Optimizer 个性化](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
    + 与 Adobe Analytics 进行比较 {#cja-aa-comparison}
       + [概述](../getting-started/aa-vs-cja/overview.md)
-      + [实用 Adobe Analytics 数据 &#x200B;](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+      + [实用 Adobe Analytics 数据](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [跨IMS数据映射](../getting-started/aa-vs-cja/mapping-data-ims-orgs.md)
       + [功能支持](../getting-started/aa-vs-cja/cja-aa.md)
       + [比较术语](../getting-started/aa-vs-cja/terminology.md)
@@ -109,7 +109,7 @@ ht-degree: 96%
    + [概述](../data-ingestion/data-ingestion.md)
    + 摄取并使用快速入门指南{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
-      + Experience Platform Edge Network  {#edge-network}
+      + Experience Platform Edge Network {#edge-network}
          + [Web SDK](../data-ingestion/aepwebsdk.md)
          + [Mobile SDK](../data-ingestion/aepmobilesdk.md)
          + [服务器 API](../data-ingestion/serverapi.md)
@@ -139,7 +139,7 @@ ht-degree: 96%
       + [管理](/help/connections/audience-analysis/audience-analysis-manage.md)
       + [分析](/help/connections/audience-analysis/analyze-audiences.md)
       + [用例](/help/connections/audience-analysis/audience-analysis-use-cases.md)
-+ 数据视图  {#cja-dataviews}
++ 数据视图 {#cja-dataviews}
    + [数据视图概述](../data-views/data-views.md)
    + [创建或编辑数据视图](../data-views/create-dataview.md)
    + [管理数据视图](/help/data-views/manage-dataviews.md)
@@ -167,7 +167,7 @@ ht-degree: 96%
 + 工具 {#tools}
    + 资产转移 {#asset-transfer}
       + [转移资产](../tools/asset-transfer/transfer-assets.md)
-   + 产品使用情况  {#product-usage}
+   + 产品使用情况 {#product-usage}
       + [概述](../tools/product-usage/usage-overview.md)
       + [数据设置](../tools/product-usage/data-settings.md)
       + [“选择禁用”设置](../tools/product-usage/opt-out-settings.md)
@@ -227,7 +227,7 @@ ht-degree: 96%
       + 历程画布 {#journey-canvas}
          + [概述](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
          + [配置](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
-         + [疑难解答 &#x200B;](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
+         + [疑难解答](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
       + [面积（堆叠）](../analysis-workspace/visualizations/area.md)
       + [条形图（堆叠）](../analysis-workspace/visualizations/bar.md)
       + [项目符号](../analysis-workspace/visualizations/bullet-graph.md)
@@ -255,7 +255,7 @@ ht-degree: 96%
       + [媒体播放耗时](../analysis-workspace/c-panels/media-playback-time-spent.md)
       + [下一项或上一项](../analysis-workspace/c-panels/next-previous.md)
       + [快速洞察](../analysis-workspace/c-panels/quickinsight.md)
-   + 策划和共享  {#curate-share}
+   + 策划和共享 {#curate-share}
       + [概述](../analysis-workspace/curate-share/send-schedule-files.md)
       + [策划项目](../analysis-workspace/curate-share/curate.md)
       + [共享项目](../analysis-workspace/curate-share/share-projects.md)
@@ -282,7 +282,7 @@ ht-degree: 96%
       + [查看预测](../analysis-workspace/c-forecast/view-forecasts.md)
       + [统计技术](../analysis-workspace/c-forecast/statistics-forecasting.md)
    + [用户偏好设置](../analysis-workspace/user-preferences.md)
-   + Workspace 常见问题解答及更多信息  {#workspace-faq}
+   + Workspace 常见问题解答及更多信息 {#workspace-faq}
       + [常见问题解答](../analysis-workspace/workspace-faq/faq.md)
       + [优化性能](../analysis-workspace/workspace-faq/optimizing-performance.md)
       + [错误和故障排除](../analysis-workspace/workspace-faq/error-messages.md)
@@ -396,7 +396,7 @@ ht-degree: 96%
       + [概述](/help/components/c-intelligent-alerts/intelligent-alerts.md)
       + [创建警报](/help/components/c-intelligent-alerts/alert-builder.md)
       + [管理警报](/help/components/c-intelligent-alerts/alert-manager.md)
-      + [功能比较 &#x200B;](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
+      + [功能比较](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
       + [用例](/help/components/c-intelligent-alerts/alerts-use-cases.md)
    + 导出 {#exports}
       + [配置云导出帐户](/help/components/exports/cloud-export-accounts.md)
@@ -410,6 +410,7 @@ ht-degree: 96%
          + {hide-from-toc}[比较Adobe Analytics数据馈送](/help/components/exports/cja-data-feeds/df-comparison.md)
          + {hide-from-toc}[准备映射列](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
          + {hide-from-toc}[映射列](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
+         + {hide-from-toc}[创建数据馈送](/help/components/exports/cja-data-feeds/create-feed.md)
    + 数据词典 {#data-dictionary}
       + [概述](../components/data-dictionary/data-dictionary-overview.md)
       + [查看数据字典中的组件信息](../components/data-dictionary/view-data-dictionary.md)
@@ -450,7 +451,7 @@ ht-degree: 96%
    + [验证拼接](/help/stitching/validate.md)
    + [常见问题解答](/help/stitching/faq.md)
 
-+ Adobe 集成  {#integrations}
++ Adobe 集成 {#integrations}
    + [概述](/help/integrations/overview.md)
    + [集成 Adobe Analytics](/help/integrations/aa.md)
    + [集成 Target](/help/integrations/at.md)
