@@ -3,10 +3,10 @@ title: 创建数据馈送
 description: 了解如何创建数据馈送以及提供给 Adobe 的文件信息。
 hide: true
 feature: Components
-source-git-commit: 728aa97d87e9b9e125fbfbbaf0ce890bc3ab34fc
+source-git-commit: a565bc01f47255b98436a52c00a933a6f845e9ec
 workflow-type: tm+mt
-source-wordcount: '2422'
-ht-degree: 21%
+source-wordcount: '2477'
+ht-degree: 20%
 
 ---
 
@@ -48,6 +48,15 @@ ht-degree: 21%
 >id="aa_datafeed_notify"
 >title="完成时通知"
 >abstract="指定一个或多个电子邮件地址，用于在数据馈送发送完成后接收通知。 多个电子邮件地址必须使用逗号分隔。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa_datafeed_lookback_date_range"
+>title="回顾日期范围"
+>abstract="控制Customer Journey Analytics在处理数据馈送提交时回顾的时间。<br/>此设置不会更改频率窗口（小时或天）。 但是，回顾日期范围可能会影响投放的数据。 区段鉴别、会话计算和维度持久性都受回顾日期范围的影响。"
 
 <!-- markdownlint-enable MD034 -->
 
