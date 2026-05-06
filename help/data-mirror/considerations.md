@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta 版"
 hide: true
-source-git-commit: 19351a7155eda77d1768b486c7e39dcf7cdba935
+source-git-commit: 93f38f57021bf66cacd700ce6fbc46338fd6a034
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 1%
@@ -56,7 +56,7 @@ ht-degree: 1%
 
 保健服务在&#x200B;*主标识*&#x200B;上运行，但镜像的外部数据库中的表具有&#x200B;*主键*，而不是主标识。
 
-主标识与主键之间差异的后果是，不能直接对关系表执行卫生删除。 因此，您必须：
+主标识与主键之间差异的后果是，不能对这些关系表直接执行卫生删除。 因此，您必须：
 
 * 在数据仓库解决方案中删除其各自源表中的数据，并确保删除操作通过CDC（或手动更改列）进行。
 * 将任何基于下游XDM的数据集的卫生和隐私请求连同身份信息提交到Adobe（例如：Customer Journey Analytics视图、Real-Time Customer Data Platform数据集、Adobe Journey Optimizer专属数据集等）。
@@ -68,7 +68,7 @@ ht-degree: 1%
 
 ## 治理差异
 
-在XDM [架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition)和基础概念（如[字段组](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition#field-group)）中，字段组中定义的[字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition#field)将其标签传播到使用该字段组的所有数据集。 例如，字段组`identities`中的电子邮件字段`emailID`在所有使用字段组`identities`的数据集中标记为相同。
+在XDM [架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition)和基础概念（如[字段组](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field-group)）中，字段组中定义的[字段](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field)将其标签传播到使用该字段组的所有数据集。 例如，字段组`identities`中的电子邮件字段`emailID`在所有使用字段组`identities`的数据集中标记为相同。
 
 在关系模式中，列名是独立的。 表`customers`中名为`email`的列与表`prospects`中名为`email`的列独立且不同。 此行为意味着标签（如DULE使用标签、策略）必须单独应用于镜像数据集中的字段。 根据以上示例，您需要将标签同时应用于`customers`数据集中的`email`字段和`prospects`数据集中的`email`字段。
 
