@@ -7,8 +7,8 @@ role: Admin
 exl-id: 0db3f6f7-9d7e-41bf-8eb5-02e439bab10a
 source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 29%
+source-wordcount: '1391'
+ht-degree: 34%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 29%
 >[!CONTEXTUALHELP]
 >id="cja-audience-analysis-sandbox"
 >title="沙盒"
->abstract="选择包含正确 Experience Platform 轮廓数据集的沙盒。 这些数据集需要包含您要在Analysis Workspace中报告的受众数据。 "
+>abstract="选择包含正确 Experience Platform 轮廓数据集的沙盒。 这些数据集必须包含您希望在 Analysis Workspace 中进行报告的受众数据。 "
 
 <!-- markdownlint-enable MD034 -->
 
@@ -46,11 +46,11 @@ ht-degree: 29%
 >[!CONTEXTUALHELP]
 >id="cja-audience-namespace"
 >title="使用主要身份标识命名空间"
->abstract="如果您希望 Customer Journey Analytics 在“身份标识图”中查找标记为 primary=true 属性的身份，并将该身份用作该行的人员 ID，请启用此选项。 该身份标识是 Experience Platform 中用于分区时使用的主密钥。<br/>如果保持禁用此选项，请从下面的“身份命名空间”字段中选择一个命名空间。 Customer Journey Analytics 会在每一行的“身份标识图”中查找该命名空间键，并将该命名空间下的身份标识用作该行的人员 ID。"
+>abstract="如果您希望 Customer Journey Analytics 在“身份标识图”中查找标记为 primary=true 属性的身份，并将该身份用作该行的人员 ID，请启用此选项。 该身份标识是 Experience Platform 中用于分区时使用的主密钥。 <br/>如果未启用此选项，请从下方的“身份标识命名空间”字段中选择一个命名空间。 Customer Journey Analytics 会在每一行的“身份标识图”中查找该命名空间键，并将该命名空间下的身份标识用作该行的人员 ID。"
 
 <!-- markdownlint-enable MD034 -->
 
-利用Audience Analysis，可将受众成员资格数据从Experience Platform配置文件数据集摄取到Customer Journey Analytics连接。 受众将可用作新维度，以便在Analysis Workspace中使用。 有关受众分析的更多详细概述信息，请参阅[受众分析概述](/help/connections/audience-analysis/audience-analysis-overview.md)。
+利用Audience Analysis，可将受众成员资格数据从Experience Platform配置文件数据集摄取到Customer Journey Analytics连接。 受众将作为新的维度在 Analysis Workspace 中可用。 有关受众分析的更多详细概述信息，请参阅[受众分析概述](/help/connections/audience-analysis/audience-analysis-overview.md)。
 
 >[!IMPORTANT]
 >
@@ -79,7 +79,7 @@ ht-degree: 29%
    | 字段 | 描述 |
    |---------|----------|
    | **[!UICONTROL 名称]** | 指定配置的名称。 |
-   | **[!UICONTROL 沙盒]** | 选择包含要添加到连接的配置文件数据集的Experience Platform沙盒。 单个沙盒最多可支持100个受众分析配置。 <p>Adobe Experience Platform 提供了可将单个 Platform 实例划分为多个单独的虚拟环境的[沙盒](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sandbox/home)，以帮助开发和改进数字体验应用程序。您可以将沙盒视为包含数据集的“数据孤岛”。沙盒可用于控制对数据集的访问。</p> |
+   | **[!UICONTROL 沙盒]** | 选择包含要添加到连接的配置文件数据集的Experience Platform沙盒。 单个沙盒最多可支持100个受众分析配置。 <p>Adobe Experience Platform 提供了可将单个 Platform 实例划分为多个单独的虚拟环境的[沙盒](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sandbox/home)，以帮助开发和改进数字体验应用程序。 您可以将沙盒视为包含数据集的“数据孤岛”。 沙盒可用于控制对数据集的访问。</p> |
 
 1. 在&#x200B;**[!UICONTROL 用户档案数据集]**&#x200B;部分中，指定以下信息：
 
@@ -98,9 +98,9 @@ ht-degree: 29%
 
    | 字段 | 描述 |
    |---------|----------|
-   | **[!UICONTROL 人员 ID]** | 从架构中选择一个表示人员ID的字段。<p>选择仅限于架构中标记为身份并具有身份命名空间的字段列表。 默认情况下已选中&#x200B;**[!UICONTROL IdentityMap]**，适用于大多数配置。 </p><p>如果没有可供选择的人员ID，则意味着未在架构中定义一个或多个人员ID。 请参阅[在 UI 中定义身份标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)以了解更多信息。</p> |
-   | **[!UICONTROL 使用主标识命名空间]** | 此选项显示您是否为人员ID选择&#x200B;**[!UICONTROL 身份映射]**。 <p>如果您希望 Customer Journey Analytics 在“身份标识图”中查找标记为 primary=true 属性的身份，并将该身份用作该行的人员 ID，请启用此选项。 该身份标识是 Experience Platform 中用于分区时使用的主密钥。此身份标识也是用作 Customer Journey Analytics 人员 ID 的主要候选项（取决于数据集在 Customer Journey Analytics 连接中如何配置）。</p> |
-   | **[!UICONTROL 身份标识命名空间]** | 此选项显示您是否为人员ID选择&#x200B;**[!UICONTROL 身份映射]**。 如果您使用主ID命名空间，则会禁用此选项。 <p>身份标识命名空间是 [Experience Platform 身份标识服务的](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/namespaces)一个组件。命名空间充当与身份标识相关的上下文的指示器。如果指定命名空间，Customer Journey Analytics会搜索此命名空间键的每行的“身份映射”，并将该命名空间下的身份用作该行的人员ID。 由于Customer Journey Analytics无法对所有行执行完整数据集扫描以确定哪些命名空间存在，因此下拉菜单中会显示所有可能的命名空间。 您必须知道数据中指定了哪些命名空间；系统不会自动检测这些命名空间。</p> |
+   | **[!UICONTROL 人员 ID]** | 从架构中选择一个代表人员 ID 的字段。<p>选择仅限于架构中标记为身份并具有身份命名空间的字段列表。 默认情况下已选中&#x200B;**[!UICONTROL IdentityMap]**，适用于大多数配置。 </p><p>如果没有可供选择的人员ID，则意味着未在架构中定义一个或多个人员ID。 请参阅[在 UI 中定义身份标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)以了解更多信息。</p> |
+   | **[!UICONTROL 使用主标识命名空间]** | 此选项显示您是否为人员ID选择&#x200B;**[!UICONTROL 身份映射]**。 <p>如果您希望 Customer Journey Analytics 在“身份标识图”中查找标记为 primary=true 属性的身份，并将该身份用作该行的人员 ID，请启用此选项。 该身份标识是 Experience Platform 中用于分区时使用的主键。 此身份标识也是用作 Customer Journey Analytics 人员 ID 的主要候选项（取决于数据集在 Customer Journey Analytics 连接中如何配置）。</p> |
+   | **[!UICONTROL 身份标识命名空间]** | 此选项显示您是否为人员ID选择&#x200B;**[!UICONTROL 身份映射]**。 如果您使用主ID命名空间，则会禁用此选项。 <p>身份标识命名空间是 [Experience Platform 身份标识服务的](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/namespaces)一个组件。 命名空间充当与身份标识相关的上下文的指示器。 如果指定命名空间，Customer Journey Analytics会搜索此命名空间键的每行的“身份映射”，并将该命名空间下的身份用作该行的人员ID。 由于Customer Journey Analytics无法对所有行执行完整数据集扫描以确定哪些命名空间存在，因此下拉菜单中会显示所有可能的命名空间。 您必须知道数据中指定了哪些命名空间；系统不会自动检测这些命名空间。</p> |
 
    <!-- Add this when B2B releases for AuA **[!UICONTROL Account ID]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}|  (only displayed for account-based connections) The Account ID that is used to support account-based reporting for the dataset. -->
 
