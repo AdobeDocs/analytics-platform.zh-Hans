@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta 版"
 hide: true
-source-git-commit: 19351a7155eda77d1768b486c7e39dcf7cdba935
+source-git-commit: 93f38f57021bf66cacd700ce6fbc46338fd6a034
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 1%
@@ -56,7 +56,7 @@ ht-degree: 1%
 
 保健服务在&#x200B;*主标识*&#x200B;上运行，但镜像的外部数据库中的表具有&#x200B;*主键*，而不是主标识。
 
-主标识与主键之间差异的后果是，不能直接对关系表执行卫生删除。 因此，您必须：
+主标识与主键之间差异的后果是，不能对这些关系表直接执行卫生删除。 因此，您必须：
 
 * 在数据仓库解决方案中删除其各自源表中的数据，并确保删除操作通过CDC（或手动更改列）进行。
 * 将任何基于下游XDM的数据集的卫生和隐私请求连同身份信息提交到Adobe（例如：Customer Journey Analytics视图、Real-Time Customer Data Platform数据集、Adobe Journey Optimizer专属数据集等）。
