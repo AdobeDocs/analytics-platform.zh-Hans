@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta 版"
 hide: true
-source-git-commit: 664d14beaa6bc8b01169cef9d50b2ca3a2de44d8
+source-git-commit: 80083aad28e6efd0d9498264cb540d9f2898f2bc
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 1%
@@ -28,7 +28,21 @@ ht-degree: 1%
 
 * 确保最初定义了所有相关列。
 * 映射您最初可能认为需要的每个列。
-* 如果根据需要标识了新列，请删除当前数据集并使用更新的列再次配置连接器。 这可以确保更加有效和及时地回填数据。
+
+如果要添加新列，根据是否需要追溯回填，可以选择以下两个选项：
+
+* 追溯回填：
+
+   * 删除当前数据集。
+   * 使用更新的列再次配置连接器。
+
+  这可以确保更加有效和及时地回填数据。
+
+* 无追溯回填：
+
+   * 在源表中添加该列。
+   * 在目标数据集架构中添加列。
+   * 更新映射以包含从源表到目标数据集的新字段（列）。
 
 此策略：
 
@@ -36,14 +50,6 @@ ht-degree: 1%
 * 与以后添加或修改列时相比，保持更改卷的可预测性更高。
 * 有助于限制外部数据库端的潜在计算成本，因为数据仓库可能会将新列解释为所有行的更新。
 
-要在外部数据仓库表中处理新列，请执行以下步骤：
-
-1. 使用添加的列创建新架构。
-1. 配置将数据引入的新源连接器。
-1. 正确加载回填。
-1. 使用以后的CDC更改。
-
-这种方法将对双方的影响降至最低。
 
 ## Privacy Service
 
@@ -69,7 +75,7 @@ ht-degree: 1%
 
 ## 治理差异
 
-在XDM [架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition)和基础概念（如[字段组](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition#field-group)）中，字段组中定义的[字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition#field)将其标签传播到使用该字段组的所有数据集。 例如，字段组`identities`中的电子邮件字段`emailID`在所有使用字段组`identities`的数据集中标记为相同。
+在XDM [架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition)和基础概念（如[字段组](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field-group)）中，字段组中定义的[字段](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field)将其标签传播到使用该字段组的所有数据集。 例如，字段组`identities`中的电子邮件字段`emailID`在所有使用字段组`identities`的数据集中标记为相同。
 
 在关系模式中，列名是独立的。 表`customers`中名为`email`的列与表`prospects`中名为`email`的列独立且不同。 此行为意味着标签（如DULE使用标签、策略）必须单独应用于镜像数据集中的字段。 根据以上示例，您需要将标签同时应用于`customers`数据集中的`email`字段和`prospects`数据集中的`email`字段。
 
@@ -90,5 +96,5 @@ ht-degree: 1%
 
 以下注意事项适用于系统键和字段：
 
-* 主键、版本描述符和时间戳描述符必须是关系XDM架构中的根级别字段。 在引入期间使用[字段映射](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)来支持此要求。
-* 您可以在[映射阶段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)中忽略相应的源字段。
+* 主键、版本描述符和时间戳描述符必须是关系XDM架构中的根级别字段。 在引入期间使用[字段映射](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)来支持此要求。
+* 您可以在[映射阶段](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)中忽略相应的源字段。
