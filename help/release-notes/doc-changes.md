@@ -24,17 +24,17 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | Content Analytics移动渠道 | 更新了[Content Analytics文档](/help/content-analytics/content-analytics.md)，以说明Content Analytics移动渠道的功能和配置。 |
 | **2026年4月** | |
 | 派生字段准则 | 添加了有关使用派生字段的[准则](/help/use-cases/data-views/derived-fields/guidelines.md)（最佳实践、护栏和常见隐患）的文章。 |
-| 添加了有关集成Journey Optimizer时可包含的两个数据集的缺失文档 | 为IMS组织启用高吞吐量事务性消息加载项时，连接中会包含另外两个非配置文件系统生成的数据集](/help/integrations/ajo.md#high-throughput-add-on-datasets)。[ |
+| 添加了有关集成Journey Optimizer时可包含的两个数据集的缺失文档 | 为IMS组织启用高吞吐量事务性消息加载项时，连接中会包含另外两个非配置文件系统生成的数据集[&#128279;](/help/integrations/ajo.md#high-throughput-add-on-datasets)。 |
 | 更新了同类群组分析用例 | 根据反馈将Analysis Workspace示例添加到同类群组分析用例中。 |
 | **2026 年 3 月** | |
-| 划分面板 | 重新构建了面板](/help/analysis-workspace/c-panels/panels.md#drop-zone)的[放置区域文档，以支持新的[划分](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel)功能。 |
-| 有关错误ID (BAVID)的技术说明 | 有关错误ID](/help/technotes/badids.md)的新[技术说明。 此技术说明解释了错误ID的定义（在Customer Journey Analytics界面中使用错误ID），以及如何调查连接中的数据以确定错误ID。 |
+| 划分面板 | 重新构建了面板[&#128279;](/help/analysis-workspace/c-panels/panels.md#drop-zone)的放置区域文档，以支持新的[划分](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel)功能。 |
+| 有关错误ID (BAVID)的技术说明 | 有关错误ID[&#128279;](/help/technotes/badids.md)的新技术说明。 此技术说明解释了错误ID的定义（在Customer Journey Analytics界面中使用错误ID），以及如何调查连接中的数据以确定错误ID。 |
 | 数据集在连接中预览重新设计 | 当您在基于人员的连接中[添加](/help/connections/create-connection.md#add-datasets)或[编辑](/help/connections/create-connection.md#edit-a-dataset)数据集时，更新了关于改进数据预览体验的文档，包括关于为启用拼接的数据集额外的[拼接预览信息](/help/stitching/use-stitching-ui.md#datasets-preview)的文档。 |
 | Content Analytics缩略图和预览 | 有关Content Analytics中的[缩略图](/help/content-analytics/report/report.md#thumbnails)和[预览](/help/content-analytics/report/report.md#previews)的其他可视化图表的文档。 |
 | **2026 年 2 月** | |
 | 标头覆盖 | 有关Content Analytics的额外[标头覆盖](/help/content-analytics/config/guided.md#header-overrides)配置的文档。 |
-| 计算量度护栏 | 更新了组织](/help/technotes/guardrails.md#segments-and-calculated-metrics)的最大计算量度数的[护栏。 最大数量现在是50,000。 |
-| 独立Content Analytics | 添加了有关Content Analytics](/help/content-analytics/config/standalone.md)的[独立配置的文档。 |
+| 计算量度护栏 | 更新了组织[&#128279;](/help/technotes/guardrails.md#segments-and-calculated-metrics)的最大计算量度数的护栏。 最大数量现在是50,000。 |
+| 独立Content Analytics | 添加了有关Content Analytics[&#128279;](/help/content-analytics/config/standalone.md)的独立配置的文档。 |
 | **2026 年 1 月** | |
 | 架建架构 | 向[架构您的架构以用于Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)添加了大量信息和上下文。 |
 
