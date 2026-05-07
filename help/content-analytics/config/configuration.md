@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: f149a2bd7f184f4e8f6e67979649e2d9f609d603
+source-git-commit: beb2e35354d3da1fe6d22f4221e30ff0ccde3138
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 100%
+source-wordcount: '771'
+ht-degree: 77%
 
 ---
 
@@ -23,33 +23,44 @@ ht-degree: 100%
 
 ![Content Analytics 的配置](../assets/aca-configuration.svg){zoomable="yes"}
 
-1. 使用 Content Analytics [引导式配置](guided.md)向导，该向导将指导您完成设置 Content Analytics 配置的先决条件所需的所有步骤。您可以随时保存您的配置，稍后可返回。
-1. 只要您熟悉了配置值，就可以实施该配置。此实施会根据您在向导中配置的内容创建所有必需的构件。
-1. 只有在您 [手动发布](manual.md)标记属性后，您的 Content Analytics 配置才会有效部署并开始收集数据。
+1. 使用 Content Analytics [引导式配置](guided.md)向导，该向导将指导您完成设置 Content Analytics 配置的先决条件所需的所有步骤。 您可以随时保存您的配置，稍后可返回。
+1. 只要您熟悉了配置值，就可以实施该配置。 此实施会根据您在向导中配置的内容创建所有必需的构件。
+1. 仅当[手动发布](manual.md)时，Tags属性才是您有效部署的Content Analytics配置并启动数据收集的内容。
 
-1. 您只能使用[引导式配置](guided.md)向导对已实施的配置进行一些细微的更改。例如，更改[数据视图](/help/data-views/data-views.md)。
-1. 您可以在相关联标记属性中使用 [Adobe Content Analytics 扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview)对已实施的配置进行其他更改。
-1. 只有在您[手动重新发布](manual.md)标记属性后，才会有效部署更改的配置，并且会根据您的更改开始收集数据。
+1. 您只能使用[引导式配置](guided.md)向导对已实施的配置进行一些细微的更改。 例如，更改[数据视图](/help/data-views/data-views.md)。
+1. 您可以使用[Web](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview)或[移动设备](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)的关联Tags属性中的Adobe Content Analytics扩展对已实施的配置进行其他更改。
+1. 只有手动重新发布标记属性时，配置修改才会有效部署，数据收集才会启动。
 
 
 ## 先决条件
 
 在配置 Content Analytics 之前，请确保满足以下先决条件：
 
-* 您已将 Content Analytics 中使用的特征化服务的用户代理和 IP 地址列入允许列表。要配置的用户代理字符串是：<code>AdobeFeaturization/1.0</code>。
-* 如果您[使用 JavaScript 实施了 Web SDK](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/install/library){target="_blank"}用于定期收集行为数据，请确保您使用了默认名称 <code>alloy</code> 为 JavaScript 库。
+### Web
+
+* 您已将 Content Analytics 中使用的特征化服务的用户代理和 IP 地址列入允许列表。 要配置的用户代理字符串是：<code>AdobeFeaturization/1.0</code>。
+* 如果您[使用 JavaScript 实施了 Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library){target="_blank"}用于定期收集行为数据，请确保您使用了默认名称 <code>alloy</code> 为 JavaScript 库。
 * 您具有 Customer Journey Analytics 产品管理员角色，并具有管理连接和管理数据视图的额外权限。
-* 如果您考虑收集 Content Analytics 体验，请确保根据网页的更改设置并更新[ Content Analytics 版本控制](manual.md#versioning)。
+* 如果您决定收集Content Analytics体验，请确保您根据对网页所做的更改来设置和更新Content Analytics版本控制。
 * 您必须具有[数据收集权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions){target="_blank"}：
-   * [Experience Platform 权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
-   * [Experience Platform 数据收集/权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}
+   * [Experience Platform](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}权限。
+   * [Experience Platform数据收集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}权限。
 * 您已仔细考虑了以下重要的配置选项：
 
-   * 您的站点适合体验报告。只有满足以下条件才可以生成正确的体验报告：
+   * 您的站点适合体验报告。 只有满足以下条件才可以生成正确的体验报告：
       * 网站上的页面必须能够通过页面 URL 重复出现。
       * 任何给定用户看到的文本内容都可以使用页面 URL 重复出现，并且不取决于 cookie 或其他个性化机制。
-   * 您清楚地了解要捕获哪些页面的内容参与度分析和洞察。
+   * 您已清楚地了解要捕获哪些页面以进行内容参与分析和洞察。
    * 您清楚地了解要为哪些（类型的）资产捕获内容参与度分析和洞察。
+
+### 移动
+
+* 请确保为移动设备应用程序启用了[Experience Platform Edge Network](https://developer.adobe.com/client-sdks/edge/edge-network/)和[Edge Network的Experience Platform标识](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/)扩展。
+* 您具有 Customer Journey Analytics 产品管理员角色，并具有管理连接和管理数据视图的额外权限。
+* 您必须具有[数据收集权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions){target="_blank"}：
+   * [Experience Platform](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}权限。
+   * [Experience Platform数据收集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}权限。
+
 
 
 ## 访问控制
@@ -68,7 +79,7 @@ ht-degree: 100%
 
 ## 限制
 
-Content Analytics 事件数据所使用的架构由系统所有。系统所有的架构不可修改，这意味着：
+Content Analytics 事件数据所使用的架构由系统所有。 系统所有的架构不可修改，这意味着：
 
 * 您无法通过添加字段组来支持诸如地理位置、机器人检测或设备查询等功能。
 * 您无法添加特定标识符以支持[基于字段的拼接](/help/stitching/fbs.md)。

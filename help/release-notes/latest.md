@@ -3,10 +3,10 @@ title: 当前 Customer Journey Analytics 发行说明
 description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 58224cf1a0b3527669bad17494fe2582ea95f3b1
+source-git-commit: ae368ea39b6521e2e350aa7849568cd225ecef90
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 66%
+source-wordcount: '838'
+ht-degree: 63%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 66%
 | 功能和描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | -----------|-----------|-----------|
 | **意大利语支持**<br/> Customer Journey Analytics 中的 Analysis Workspace 现在支持意大利语区域设置 (it-IT)。 <p>Customer Journey Analytics 支持 Experience Platform UI 中受支持的所有语言，请参阅 [Experience Platform UI 支持的浏览器和语言](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/platform-ui/browser-language-support#language-support)。</p><p>您可以在 Experience Platform 中[更改您的默认语言](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/platform-ui/browser-language-support#change-default-language)。</p> | | 2026 年 4 月 8 日 |
-| **Adobe Engineering 代理中的数据验证** <br/>Data Engineering 代理中提供新的数据验证技能。 这些技能可以在 Customer Journey Analytics 分析数据之前，帮助团队直接在 Adobe Experience Platform 中快速评估数据质量。 <p>数据验证技能可以进行按需验证、字段级验证和数据集级验证，将统计摘要与对无效值或异常值的智能检测结合起来。 </p><p>使用数据验证技能可减少手动 QA 工作量，加快各种数据工程工作流中可信数据的加入和转换。</p><p>（文档链接见下文。）<!--For more information, see [Data Engineering Agent]() (will be in this repo: https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-ai/experience-cloud-ai/agents/cja-data-insights-agent).--></p> | | 2026年5月 <p>（原计划于 2026 年 3 月 31 日发布）</p> |
+| **Adobe Engineering 代理中的数据验证** <br/>Data Engineering 代理中提供新的数据验证技能。 这些技能可以在 Customer Journey Analytics 分析数据之前，帮助团队直接在 Adobe Experience Platform 中快速评估数据质量。 <p>数据验证技能可以进行按需验证、字段级验证和数据集级验证，将统计摘要与对无效值或异常值的智能检测结合起来。 </p><p>使用数据验证技能可减少手动 QA 工作量，加快各种数据工程工作流中可信数据的加入和转换。</p><p>（文档链接见下文。）<!--For more information, see [Data Engineering Agent]() (will be in this repo: https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/cja-data-insights-agent).--></p> | | 2026年5月 <p>（原计划于 2026 年 3 月 31 日发布）</p> |
 | **用于Customer Journey Analytics的MCP服务器** <br/>Analytics MCP（模型上下文协议）服务器允许您将受支持的MCP客户端连接到Adobe Customer Journey Analytics。 连接后，MCP客户端可以调用特定于产品的工具来检索数据、运行查询或执行作为LLM或代理工作流一部分的受支持操作。 有关详细信息，请参阅[Analytics MCP服务器](https://developer.adobe.com/analytics-mcp/docs/)。<p>如果您在Beta测试期间使用这些MCP服务器，请注意，Beta测试版和生产版端点之间有不同的URL。 请确保在5月31日之前将测试期间创建的任何代理工作流更新为使用生产端点。</p> | | 2026年5月5日 |
-| **Content Analytics支持本机移动应用程序体验**<br/>&#x200B;组织可以将其内容性能分析扩展到iOS和Android应用程序，捕获图像资源和精细的体验元素，以了解哪些应用程序内内容可促进用户参与和业务成果。<p>分析适用于所有Adobe Content Analytics客户。</p> | 2026年5月6日 | 待定 |
+| **Content Analytics支持本机移动应用程序体验**<br/>&#x200B;组织可以将其内容性能分析扩展到iOS和Android应用程序，捕获图像资源和精细的体验元素，以了解哪些应用程序内内容可促进用户参与和业务成果。 [文档](/help/content-analytics/content-analytics.md)已更新，以描述移动渠道功能和配置。 有关[Content Analytics Mobile SDK扩展](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)的信息可从[Adobe Developer](https://developer.adobe.com)中获取。<p>分析适用于所有Adobe Content Analytics客户。</p> | 2026年5月6日 | 2026年5月6日 |
 | **流媒体服务：支持计划数据** <br/>您现在可以上传过去直播流媒体服务内容的计划数据，以便更轻松、更准确地跟踪观看人数。<p>以下是支持计划数据上传的直播内容示例：</p><ul><li>FAST（免费广告支持电视）平台</li><li>本地流</li><li>直播体育赛事</li></ul><p>上传计划数据允许您跟踪在上传文件中指定的时间内运行的各个节目的观看人数数据。 您甚至可以收集特定主题或节目片段的观看人数数据。</p><p>无论您如何实现流媒体收集，这些功能都是可用的。</p><p>以前，在分析直播内容时很难准确地将特定场次与特定节目联系起来，也不可能将特定场次与单个主题或节目片段联系起来。</p><p>如需了解更多信息，请参阅[上传计划数据以跟踪实时内容](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/media-use-cases/track-schedule-data)</p> | 2025 年 10 月 29 日 | 2026 年上半年<p>（原计划于 2025 年 10 月 29 日发布）</p> |
 | **多维度 API 报告**<br/>&#x200B;在同一个 API 请求中报告多个维度，执行维度级搜索。 [了解详情](https://developer.adobe.com/cja-apis/docs/endpoints/reporting/multidim) | | 2026 年 3 月 |
 | **多列 API 排序**<br/>&#x200B;对一个 API 请求中的多个维度和量度对象进行排序。 混合同一个排序定义中的维度和量度。 [了解详情](https://developer.adobe.com/cja-apis/docs/endpoints/reporting/multidim#multi-column-sorting) | | 2026 年 3 月 |

@@ -4,17 +4,18 @@ description: 了解受众分析的用例。
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
-exl-id: 4f465e71-f1b5-4f38-a1db-645550856849
-source-git-commit: ac86664e0136563d904021c72347fb544cda4a6d
+hide: true
+exl-id: f465e71-f1b5-4f38-a1db-645550856849
+source-git-commit: d8d82830188a24bc01bac35c22a27c7f12f9e615
 workflow-type: tm+mt
-source-wordcount: '1486'
-ht-degree: 1%
+source-wordcount: '1517'
+ht-degree: 0%
 
 ---
 
 # Audience Analysis用例 {#analyze-audiences-use-cases}
 
-Audience Analysis支持在Customer Journey Analytics中报告Experience Platform受众成员资格数据。 这是通过受众分析配置向导管理的配置来实现的，该向导可帮助您确定要摄取的配置文件数据集以及其他参数和配置详细信息。 （有关更详细的概述信息，请参阅[受众分析概述](/help/connections/audience-analysis/audience-analysis-overview.md)。）
+Audience Analysis支持在Customer Journey Analytics中报告Experience Platform受众成员资格数据。 这是通过受众分析配置向导管理的配置来实现的，该向导可帮助您确定要摄取的配置文件数据集以及其他参数和配置详细信息。 (有关更详细的概述信息，请参阅[受众分析概述](/help/connections/audience-analysis/audience-analysis-overview.md)。 )
 
 本文档包含重点介绍Audience Analysis所提供值的示例用例。 在查看用例之前，请先熟悉以下报表注意事项。 在查看用例时，请务必牢记这些注意事项，因为它们可能会影响报表的最终输出。
 

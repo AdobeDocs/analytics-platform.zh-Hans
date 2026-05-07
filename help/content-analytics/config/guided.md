@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: da88f281e0b7657306c6c90851d615860721fe16
+source-git-commit: 21bf687f3cff101ee1b3e4be3d870de270f82e89
 workflow-type: tm+mt
-source-wordcount: '3511'
-ht-degree: 95%
+source-wordcount: '3991'
+ht-degree: 62%
 
 ---
 
@@ -19,6 +19,10 @@ ht-degree: 95%
 >[!IMPORTANT]
 >
 >您的组织中每个沙盒内只能有一个 Content Analytics 配置。
+
+>[!NOTE]
+>
+>配置向导支持多个数据视图和通道，这与仅支持一个数据视图和仅Web通道的早期版本不同。 您必须先选择沙盒和连接，然后才能在[数据视图](#data-views)部分中选择一个或多个数据视图。 **[!UICONTROL 体验捕获]**、**[!UICONTROL 数据收集]**&#x200B;和&#x200B;**[!UICONTROL 标题覆盖]**&#x200B;的配置依赖于渠道，并且是您在[渠道](#channels)部分中配置的每个渠道的一部分。
 
 要访问 Content Analytics 配置
 
@@ -36,7 +40,7 @@ ht-degree: 95%
 | **[!UICONTROL 创建日期]** | 创建配置的时间戳。 |
 | **[!UICONTROL 修改日期]** | 配置最后修改的时间戳。 |
 | **[!UICONTROL 沙盒]** | 组织内（计划）配置并实施 Content Analytics 的沙盒。 |
-| **[!UICONTROL 状态]** | 配置的状态。 状态可以是：<br/>![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL 草稿]**：配置已保存以供稍后使用，但未部署。<br/>![StatusRed](/help/assets/icons/StatusRed.svg) **[!UICONTROL 失败]**：配置已失败。 您可以选择&#x200B;**[!UICONTROL 编辑]**，获取有关失败的信息。 Adobe 会主动解决任何实施失败的问题。 您可以联系客户关怀团队以了解详细信息。<br/>![状态绿色](/help/assets/icons/StatusGreen.svg) **[!UICONTROL 完成]**：配置已成功完成并实施。 |
+| **[!UICONTROL 状态]** | 配置的状态。 状态指示已完成配置的启用通道数。 使用![InfoOutline](/help/assets/icons/InfoOutline.svg)打开包含更多详细信息的弹出窗口。 |
 
 您可以使用 ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) 来自定义该表格。 选择要在&#x200B;**[!UICONTROL 自定义表格]**&#x200B;对话框中显示哪些列，然后选择&#x200B;**[!UICONTROL 应用]**，以应用更改。
 
@@ -52,11 +56,9 @@ ht-degree: 95%
 
 ## 引导式配置向导
 
-引导式配置向导由四个部分组成（[详细信息](#details)、[数据视图](#data-view)、[体验捕获和定义](#experience-capture-and-definition)以及[数据收集](#data-collection)），每个部分都会提示您输入必要的资料，以正确设置及配置 Content Analytics。 请先完成每个部分，然后再进入下一个部分，因为某一部分中的某些设置可能取决于前面部分中的配置值。
+引导式配置向导包含四个部分（[详细信息](#details)、[连接](#connection)、[数据视图](#data-view)和[通道](#channels)），每个部分都会提示您提供正确设置和配置Content Analytics所需的详细信息。 请先完成每个部分，然后再进入下一个部分，因为某一部分中的某些设置可能取决于前面部分中的配置值。
 
 ### 详细信息 {#onboarding-details}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_button"
@@ -80,12 +82,34 @@ ht-degree: 95%
 
 每个配置都需要一个唯一的名称。 例如：`Example Content Analytics configuration`。 需要名称进行保存或实施配置。
 
+对于每个配置，您还需要选择要为其配置Content Analytics的沙盒。
+
 ![Content Analytics 配置详情](../assets/aca-configuration-details.png)
+
+* **[!UICONTROL 名称]**：每个配置都需要一个唯一的名称。 例如：`Example Content Analytics configuration`。 需要名称进行保存或实施配置。
+
+* **[!UICONTROL 沙盒]**：配置需要沙盒。 从您有权访问的沙盒列表中选择一个沙盒，并在该沙盒上收集要用于Content Analytics的数据。
+
+  如果更改已为其定义连接和（可选）数据视图的配置沙盒，您将收到需要重新配置连接和数据视图的通知。
+
+### 连接
+
+您需要选择要将Content Analytics数据收集添加到的连接。
+
+如果尚未为您的配置选择连接：
+
+1. 使用![数据](/help/assets/icons/Data.svg) **[!UICONTROL 选择连接]**&#x200B;以打开&#x200B;**[!UICONTROL 选择连接]**&#x200B;对话框，其中列出了沙盒上可用的所有连接。
+1. 在&#x200B;**[!UICONTROL 选择连接]**&#x200B;对话框中，选择![SelectBox](/help/assets/icons/SelectBox.svg)要使用的连接。 您只能选择一个连接。
+1. 选择&#x200B;**[!UICONTROL 使用连接]**。
+
+如果已选择连接，但要更改该连接：
+
+1. 选择![编辑](/help/assets/icons/Edit.svg)**[!UICONTROL 编辑]**。
+1. 在&#x200B;**[!UICONTROL 选择连接]**&#x200B;对话框中，修改要使用的连接。
+1. 选择&#x200B;**[!UICONTROL 使用连接]**。
 
 
 ### 数据视图 {#onboarding-data-view}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataview_button"
@@ -115,7 +139,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_prev_cleanup_labels_dialog"
 >title="清理以前的数据视图"
->abstract="您已选择新的数据视图。 之前选定数据视图的 Content Analytics 配置已移除。"
+>abstract="您已选择新的数据视图。 已删除以前选定数据视图的Content Analytics配置。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_new_dialog"
@@ -141,7 +165,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_new_dialog"
 >title="选定的数据视图"
->abstract="您已修改此配置的选定数据视图。 选定的数据视图将进行更新，以包含 Content Analytics 量度和维度。 这些量度和维度将从之前选择的、现在已取消选择的数据视图中移除。<br/><br/>如果有另一个连接与选定的数据视图相关联，此连接就会更新，以包含 Content Analytics 数据集。 Content Analytics 数据集不会从原先选择的连接中删除。<br/><br/>所有选定的数据视图均继承属于这个配置的渠道。"
+>abstract="您已修改此配置的选定数据视图。 选定的数据视图将进行更新，以包含 Content Analytics 量度和维度。 这些量度和维度将从之前选择的、现在已取消选择的数据视图中移除。<br/><br/>如果其他连接与所选数据视图关联，则将更新该连接以包含Content Analytics数据集。 Content Analytics 数据集不会从原先选择的连接中删除。<br/><br/>所有选定的数据视图均继承属于这个配置的渠道。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_change_dialog"
@@ -169,43 +193,134 @@ ht-degree: 95%
 >abstract="为该配置启用并配置一个或多个渠道。 属于该配置的所有数据视图均继承已启用的渠道。"
 
 
-您的配置需要选择一个[数据视图](/help/data-views/data-views.md)。
+您的配置要求选择一个或多个[数据视图](/help/data-views/data-views.md)。
 
-1. 选择数据视图
+如果尚未为您的配置选择数据视图：
 
-   * 要为某个配置选择新的数据视图，请使用![数据](/help/assets/icons/Data.svg) **[!UICONTROL 选择数据视图]**。
+1. 使用![数据](/help/assets/icons/Data.svg) **[!UICONTROL 选择数据视图]**&#x200B;打开&#x200B;**[!UICONTROL 数据视图]**&#x200B;对话框，其中列出了为Content Analytics配置的连接可用的所有数据视图。
+1. 在&#x200B;**[!UICONTROL 数据视图]**&#x200B;对话框中，选择![SelectBox](/help/assets/icons/SelectBox.svg)您要使用的一个或多个数据视图。
+1. 选择&#x200B;**[!UICONTROL 保存]**。
 
-     ![数据视图的 Content Analytics 配置](../assets/aca-configuration-dataview.png)
+如果已选择了一个或多个数据视图，但想要更改该选择：
 
-   * 要为某个配置更改数据视图，请选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**。
+1. 选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据视图选择]**。
+1. 在&#x200B;**[!UICONTROL 数据视图]**&#x200B;对话框中，修改要使用的数据视图的选择![SelectBox](/help/assets/icons/SelectBox.svg)。
+1. 选择&#x200B;**[!UICONTROL 保存]**。
 
-     ![数据视图的 Content Analytics 配置](../assets/aca-configuration-dataview-edit.png)
+选择&#x200B;**[!UICONTROL 保存]**&#x200B;后，您会看到&#x200B;**[!UICONTROL 选定数据视图]**&#x200B;对话框，该对话框通知您有关将Content Analytics包含在选定数据视图中的含义。 选择&#x200B;**[!UICONTROL 继续]**&#x200B;继续，或选择&#x200B;**[!UICONTROL 取消]**&#x200B;取消。
+
+以下操作在&#x200B;**[!UICONTROL 数据视图]**&#x200B;对话框中可用：
+
+* 要搜索特定的数据视图，请使用![搜索](/help/assets/icons/Search.svg)字段。
+* 要筛选可用数据视图的列表，请选择![显示筛选条件](/help/assets/icons/Filter.svg)。 您可以筛选[!UICONTROL 所有者]的列表。<br/>使用![隐藏](/help/assets/icons/Filter.svg) **[!UICONTROL 隐藏筛选器]**&#x200B;来隐藏区段窗格。
+* 要定义在表格中显示哪些列，请选择![列设置](/help/assets/icons/ColumnSetting.svg)。 选择要在&#x200B;**[!UICONTROL 自定义表格]**&#x200B;对话框中显示哪些列，然后选择&#x200B;**[!UICONTROL 应用]**，以应用更改。
+
+### 渠道
+
+在&#x200B;**[!UICONTROL 渠道]**&#x200B;部分中，选择要为Content Analytics启用的渠道。 您可以选择介于&#x200B;**[!UICONTROL 移动设备]**&#x200B;和&#x200B;**[!UICONTROL Web]**&#x200B;之间。
+
+* 要选择尚未配置的渠道，请选择&#x200B;**[!UICONTROL 启用]**。
+* 要选择已配置但要更改配置的渠道，请选择&#x200B;**[!UICONTROL 编辑配置]**。
+
+然后，您可以更详细地配置渠道。 根据您是启用[移动设备](#mobile)还是[Web](#web)渠道的配置，该配置会有所不同。
+
+#### 移动 {#mobile}
+
+<!-- For updated ACA -->
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_experience_locations_boldheader"
+>title="移动体验位置数据收集"
+>abstract="**要排除的体验位置**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_experience_locations_header"
+>title="移动体验位置数据收集"
+>abstract="指明在为 Content Analytics 收集数据时应&#x200B;**排除**&#x200B;哪些体验位置。 确保排除个人可识别的体验位置。"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_asset_locations_boldheader"
+>title="移动设备资产位置数据收集"
+>abstract="**要排除的资产位置**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_asset_locations_header"
+>title="移动设备资产位置数据收集"
+>abstract="指明在为 Content Analytics 收集数据时应&#x200B;**排除**&#x200B;哪些资产位置。 确保排除个人可识别的资产位置。"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_asset_urls_boldheader"
+>title="移动设备资产 URL 数据收集"
+>abstract="**要排除的资产 URL**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_asset_urls_header"
+>title="移动设备资产 URL 数据收集"
+>abstract="指明在为 Content Analytics 收集数据时应&#x200B;**排除**&#x200B;哪些资产 URL。 确保排除个人可识别的资产URL。"
+
+对于移动渠道，您可以配置[体验捕获和定义](#experience-capture-and-definition)、[数据收集](#data-collection)和[标头覆盖](#header-overrides)。
+
+##### 体验捕捉和定义 {#mobile-experience-capture-and-definition}
+
+在此部分中，您可以选择将体验包含在通过Content Analytics收集的移动数据中。  对于移动渠道，体验是指您使用适用于Content Analytics的Adobe Experience Platform SDK注册为体验。
+
+默认情况下，**[!UICONTROL 包含体验]**&#x200B;处于禁用状态。
+
+仅考虑在您使用移动设备应用程序注册体验并跟踪体验视图和体验点击次数时包含体验。
+
+##### 数据收集 {#mobile-data-collection}
+
+利用数据收集设置，可定义要为Content Analytics收集的数据（体验位置、资源位置、资源URL）。 确保在该数据收集过程中不会收集任何个人身份信息。
+
+要配置数据收集，请执行以下操作：
+
+* 使用现有的移动标记属性或创建新的移动标记属性。
+
+   * 要使用现有的移动标记属性，请执行以下操作：
+
+      1. 选择&#x200B;**[!UICONTROL 选择现有的]**。
+      2. 从&#x200B;**[!UICONTROL 标记属性]**&#x200B;下拉菜单中选择一个现有的属性。 您可以开始输入进行搜索，并限制可用的选项。 您不能选择另一个已实施Content Analytics配置已使用的Tags属性。
 
 
-   在两种场景中，您都会看到一个&#x200B;**[!UICONTROL 数据视图]**&#x200B;对话框，您可以在其中为您的配置选择一个数据视图。
+   * 要创建新的移动标记属性，请执行以下操作：
 
-   ![数据视图的 Content Analytics 配置 - 数据视图表](../assets/aca-configuration-dataview-dialog.png)
+      1. 选择&#x200B;**[!UICONTROL 新建]**。
+      1. 指定一个&#x200B;**[!UICONTROL 标记名称]**，例如 `ACA Test for Documentation`。
+      1. 指定&#x200B;**[!UICONTROL 域]**，例如，`example.com`。
 
-   对于新的配置，该列表仅显示那些与没有有效配置的沙盒相关联的数据视图。 此外，您只能看到那些与您有权访问的沙盒以及您有权更改的连接相关联的数据视图。
+* 指示在为Content Analytics收集数据时应排除哪些体验位置。 确保排除个人可识别的体验位置。
 
-   如果您编辑一共现有配置，则该列表仅显示与现有配置相关联的沙盒中可用的数据视图。
+  为要排除的&#x200B;**[!UICONTROL 体验位置]**&#x200B;指定&#x200B;**[!UICONTROL 正则表达式字符串]**。 <br/>例如：`^(?!.*documentation).*`从Content Analytics中排除所有文档体验位置。
 
-   您可以执行以下操作：
+* 指示在为Content Analytics收集数据时应排除的资源位置。 确保排除个人可识别的资产位置。
 
-   * 要搜索特定的数据视图，请使用![搜索](/help/assets/icons/Search.svg)字段。
-   * 要筛选可用数据视图的列表，请选择![显示筛选条件](/help/assets/icons/Filter.svg)。 您可以筛选[!UICONTROL 连接]、[!UICONTROL 所有者]和[!UICONTROL 沙盒]上的列表。<br/>使用![隐藏](/help/assets/icons/Filter.svg) **[!UICONTROL 隐藏区段]**&#x200B;以隐藏区段窗格。
-   * 要定义在表格中显示哪些列，请选择![列设置](/help/assets/icons/ColumnSetting.svg)。 选择要在&#x200B;**[!UICONTROL 自定义表格]**&#x200B;对话框中显示哪些列，然后选择&#x200B;**[!UICONTROL 应用]**，以应用更改。
+  为&#x200B;**[!UICONTROL 要排除的资源位置]**&#x200B;指定&#x200B;**[!UICONTROL 正则表达式字符串]**。 <br/>例如： `^(?!.*(logo\.jpg)).*$`从Content Analytics中排除所有带有徽标JPEG图像的资源位置。
 
-1. 选择 ![SelectBox](/help/assets/icons/SelectBox.svg) 您想要使用的数据视图。
-1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以确认所选的数据视图。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;即可取消。
+* 指示在为Content Analytics收集数据时应排除哪些资源URL。 确保排除个人可识别的资产URL。
 
-
-在 Customer Journey Analytics 中，[数据视图](/help/data-views/data-views.md)与 Customer Journey Analytics [连接](/help/connections/overview.md)相关联。 连接基于您组织内的沙盒。 保存配置后，**[!UICONTROL 沙盒]**&#x200B;字段中将会根据所选的数据视图自动填充沙盒的名称。
+  为&#x200B;**[!UICONTROL 要排除的资产URL]**&#x200B;指定&#x200B;**[!UICONTROL 正则表达式字符串]**。 <br/>例如： `^(?!.*(logo\.jpg)).*$`从Content Analytics中排除所有引用徽标JPEG图像的资源URL。
 
 
-### 体验捕捉和定义 {#onboarding-experiences}
+##### 标头覆盖 {#mobile-header-overrides}
 
-<!-- markdownlint-disable MD034 -->
+<!-- needs modification for mobile channel -->
+
+或者，您可以在&#x200B;**[!UICONTROL 标头覆盖]**&#x200B;部分中指定标头名称和密码标头值。  此标头覆盖配置可确保Content Analytics发送自定义HTTP标头以检索移动应用程序资源，从而绕过机器人检测或流量审核技术。
+
+![标头覆盖节](/help/content-analytics/assets/aca-configuration-header-overrides.png)
+
+1. 启用&#x200B;**[!UICONTROL 配置标头覆盖]**。
+1. 输入&#x200B;**[!UICONTROL 标头名称]**。 例如，`x-asset-service`。
+1. 输入&#x200B;**[!UICONTROL 标头值]**。 您指定的任何内容都是机密的，在用户界面中不可见（除非您在输入期间明确选择公开![可见性](/help/assets/icons/Visibility.svg)值）。
+
+##### 保存 {#mobile-save}
+
+配置移动渠道后，选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存配置。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消配置。
+
+
+#### Web {#web}
+
+对于Web渠道，您可以配置[体验捕获和定义](#experience-capture-and-definition-1)、[数据收集](#data-collection-1)和[标题覆盖](#header-overrides-1)。
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_button"
@@ -237,62 +352,6 @@ ht-degree: 95%
 >title="体验捕捉和定义"
 >abstract="您必须在 Adobe Content Analytics 扩展中编辑体验数据收集的设置。"
 
-<!-- markdownlint-enable MD034 -->
-
-在这个部分，您可以选择将体验包含在使用 Content Analytics 收集的数据中。  体验是网页上的所有文本，并且可以使用初始用户访问该网页时使用的 URL 进行重现。
-
-默认情况下，**[!UICONTROL 包含体验]**&#x200B;处于关闭状态。 选中后，您必须定义要包含体验的 URL。
-
-仅在以下情况适用时才考虑包含体验：
-
-* 网站上的页面必须能够通过页面 URL 重复出现。
-* 任何给定用户看到的文本内容都可以使用页面 URL 重复出现，并且不取决于 cookie 或其他个性化机制。
-
->[!IMPORTANT]
->
->实施 [Content Analytics 版本控制](manual.md#versioning)，收集您因 Content Analytics 而对体验（页面）所做的更改。
-
-
-
-#### 新的配置 {#new-experiences-configuration}
-
-要将体验包含到新的或未实施的配置中：
-
-![Content Analytics 配置，体验捕获和定义](../assets/aca-configuration-experience.png)
-
-1. 启用&#x200B;**[!UICONTROL 包括体验]**。 切换启用体验的操作会影响以下方面：
-
-   * Content Analytics 扩展中的数据收集
-   * 从 Content Analytics 事件数据生成体验属性的过程
-   * Customer Journey Analytics 中的报告模板。
-
-1. 指定内容如何在网站上呈现的参数。 这些参数是&#x200B;**[!UICONTROL 域正则表达式]**&#x200B;和&#x200B;**[!UICONTROL 查询参数]**&#x200B;的零个或多个组合。 查询参数表示哪些参数会影响页面上的内容。 此输入允许 Content Analytics 在定义了独特体验的情况下忽略任何不影响页面内容的参数。
-   1. 输入&#x200B;**[!UICONTROL 域正则表达式]**，例如 `/^(?!.*\b(store|help|admin)\b)/`。 确保使用以下方法将正则表达式转义 `/`。 域正则表达式表示这些参数适用于哪些 URL。 例如，您可能有多个站点，并且每个站点都用不同的参数驱动内容。 如果查询参数适用于所有页面，那么您可以使用 `.*` 表示所有页面。
-   1. 指定以逗号分隔的&#x200B;**[!UICONTROL 查询参数]**&#x200B;列表，例如 `outdoors, patio, kitchen`。
-1. 如果您想移除域正则表达式和查询参数的组合，请选择&#x200B;**[!UICONTROL 移除]**。
-1. 如果您想添加正则表达式和查询参数的另一个组合，请选择&#x200B;**[!UICONTROL 添加正则表达式]**。
-
-
-#### 已实施的配置 {#implemented-experiences-configuration}
-
-要在已实施的配置中编辑现有体验或包含新体验，请执行以下操作：
-
-![Content Analytics 配置体验捕获和定义](../assets/aca-configuration-experience-edit.png)
-
-* 切换启用或禁用&#x200B;**[!UICONTROL 包含体验]**：
-
-   * 从 Content Analytics 事件数据生成体验属性的过程
-   * Customer Journey Analytics 中的报告模板。
-
-* 选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**&#x200B;可进一步编辑 Content Analytics 中体验数据收集的配置。 您在与当前配置相关联的标记属性中被重定向到 [Adobe Content Analytics 扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)。
-
-
-### 数据收集 {#onboarding-data-collection}
-
-在此部分，您可配置如何收集 Content Analytics 数据。
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_button"
 >title="数据收集"
@@ -311,7 +370,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_header"
 >title="数据收集"
->abstract="指明在为 Content Analytics 收集数据时应&#x200B;**包括**&#x200B;或&#x200B;**排除**&#x200B;哪些页面"
+>abstract="指明在为 Content Analytics 收集数据时应&#x200B;**包含**&#x200B;或&#x200B;**排除**&#x200B;哪些页面。 确保排除个人身份页面。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_boldheader"
@@ -321,7 +380,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_header"
 >title="数据收集"
->abstract="指明在为 Content Analytics 收集数据时应&#x200B;**包括**&#x200B;或&#x200B;**排除**&#x200B;哪些资产"
+>abstract="指明在为 Content Analytics 收集数据时应&#x200B;**包含**&#x200B;或&#x200B;**排除**&#x200B;哪些资产。 确保排除个人身份资产。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
@@ -359,104 +418,103 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_web_assets_header"
 >title="Web 资产数据收集"
->abstract="指明在为 Content Analytics 收集数据时应&#x200B;**包含**&#x200B;或&#x200B;**排除**&#x200B;哪些资产。"
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_mobile_experience_locations_boldheader"
->title="移动体验位置数据收集"
->abstract="**要排除的体验位置**"
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_mobile_experience_locations_header"
->title="移动体验位置数据收集"
->abstract="指明在为 Content Analytics 收集数据时应&#x200B;**排除**&#x200B;哪些体验位置。"
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_mobile_asset_locations_boldheader"
->title="移动设备资产位置数据收集"
->abstract="**要排除的资产位置**"
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_mobile_asset_locations_header"
->title="移动设备资产位置数据收集"
->abstract="指明在为 Content Analytics 收集数据时应&#x200B;**排除**&#x200B;哪些资产位置。"
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_mobile_asset_urls_boldheader"
->title="移动设备资产 URL 数据收集"
->abstract="**要排除的资产 URL**"
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_mobile_asset_urls_header"
->title="移动设备资产 URL 数据收集"
->abstract="指明在为 Content Analytics 收集数据时应&#x200B;**排除**&#x200B;哪些资产 URL。"
+>abstract="指明在为 Content Analytics 收集数据时应&#x200B;**包含**&#x200B;或&#x200B;**排除**&#x200B;哪些资产。 确保排除个人身份资产。"
 
 
-#### 新的配置 {#new-configuration}
+##### 体验捕捉和定义 {#web-experience-capture-and-definition}
 
-在新的配置中，您需要定义是否要使用某个现有的“标记”属性，还是要创建一个新的“标记”属性。 并且您需要使用正则表达式定义那些您想要包含或排除的页面和资产。
+在此部分中，您可以选择将体验包含在通过Content Analytics收集的Web数据中。  体验由网页上的所有文本组成，这些文本可使用最初用户访问的URL进行复制。
 
-* 要使用一个现有的“标记”属性：
+默认情况下，**[!UICONTROL 包含体验]**&#x200B;处于关闭状态。 选中后，定义要包含其体验的URL。
 
-  ![Content Analytics 数据收集现有标记](../assets/aca-configuration-datacollection-existingtag.png)
+仅在以下情况适用时才考虑包含体验：
 
-   1. 选择&#x200B;**[!UICONTROL 选择现有的]**。
-   2. 从&#x200B;**[!UICONTROL 标记属性]**&#x200B;下拉菜单中选择一个现有的属性。 您可以开始输入进行搜索，并限制可用的选项。 您不能选择正在被另一个已实施的 Content Analytics 配置使用的标记属性。
-
-
-* 要创建一个新的“标记”属性：
-
-  ![Content Analytics 数据收集：新标记](../assets/aca-configuration-datacollection-newtag.png)
-
-   1. 选择&#x200B;**[!UICONTROL 新建]**。
-   1. 指定一个&#x200B;**[!UICONTROL 标记名称]**，例如 `ACA Test for Documentation`。
-   1. 指定&#x200B;**[!UICONTROL 域]**，例如，`example.com`。
-
-* 表示在为 Content Analytics 收集数据时应包含或排除哪些页面。
-
-  为&#x200B;**[!UICONTROL 要包含/排除的页面]**&#x200B;指定一个正则表达式字符串。 <br/>例如：`^(?!.*documentation).*`，以从 Content Analytics 中排除所有文档页面。
-
-* 指明在为 Content Analytics 收集数据时应包括或排除哪些资产。
-
-  为&#x200B;**[!UICONTROL 要包含/排除的资产]**&#x200B;指定一个正则表达式字符串。 <br/>例如：`^(?!.*(logo\.jpg)).*$` 可将所有徽标 JPEG 图像排除在 Content Analytics 之外。
+* 网站上的页面必须能够通过页面 URL 重复出现。
+* 任何给定用户看到的文本内容都可以使用页面 URL 重复出现，并且不取决于 cookie 或其他个性化机制。
 
 >[!IMPORTANT]
 >
->如果您现有的 Web SDK 实施使用了 [JavaScript 库](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/install/library)，而不是[标签扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)，则从新创建的标记属性中手动移除自动包含的 Web SDK 扩展。
->
+>实施 [Content Analytics 版本控制](manual.md#versioning)，收集您因 Content Analytics 而对体验（页面）所做的更改。
 
 
 
-#### 现有的配置 {#existing-configuration}
+###### 新的配置 {#new-experiences-configuration}
 
-对于现有配置，您无法编辑“标记”属性。 要更新与现有配置关联的标记属性，请使用 [Content Analytics 标记扩展配置](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview)。
+要将体验包含到新的或未实施的配置中：
 
-但是，您可以编辑要包含或排除的页面和资产。
+![Content Analytics 配置，体验捕获和定义](../assets/aca-configuration-experience.png)
 
-* 要编辑在收集 Content Analytics 数据时应包含或排除哪些页面，请选择&#x200B;**[!UICONTROL 体验]**&#x200B;下的 ![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**。 您被重定向到为当前 Content Analytics 配置与标记属性相关联的 [Adobe Content Analytics 扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)。 但是，您可以编辑要包含或排除页面的正则表达式。 确保您[发布](#publish)更改内容。
+1. 启用&#x200B;**[!UICONTROL 包括体验]**。 切换启用体验的操作会影响以下方面：
 
-* 要编辑在收集 Content Analytics 数据时应包含或排除哪些资产，请选择&#x200B;**[!UICONTROL 资产]**&#x200B;下的 ![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**。 您被重定向到为当前 Content Analytics 配置与标记属性相关联的 [Adobe Content Analytics 扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)。 但是，您可以编辑要包含或排除资产的正则表达式。 确保您[发布](#publish)更改内容。
+   * Content Analytics 扩展中的数据收集
+   * 从 Content Analytics 事件数据生成体验属性的过程
+   * Customer Journey Analytics 中的报告模板。
+
+1. 选择&#x200B;**[!UICONTROL 添加Regex]**&#x200B;以添加域正则表达式和查询参数的组合。
+1. 通过定义影响页面内容的&#x200B;**[!UICONTROL 域正则表达式]**&#x200B;和&#x200B;**[!UICONTROL 查询参数]**&#x200B;的组合，指定内容在网站上的呈现方式。
+   1. 输入&#x200B;**[!UICONTROL 域正则表达式]**，例如 `/^(?!.*\b(store|help|admin)\b)/`。 确保使用以下方法将正则表达式转义 `/`。 域正则表达式表示这些参数适用于哪些 URL。 例如，您可能有多个站点，并且每个站点都用不同的参数驱动内容。 如果查询参数适用于所有页面，那么您可以使用 `.*` 表示所有页面。
+   1. 指定&#x200B;**[!UICONTROL 查询参数]**&#x200B;的逗号分隔列表，例如`outdoors, patio, kitchen`。
+1. 如果您想移除域正则表达式和查询参数的组合，请选择&#x200B;**[!UICONTROL 移除]**。
+1. 如果您想添加正则表达式和查询参数的另一个组合，请选择&#x200B;**[!UICONTROL 添加正则表达式]**。
 
 
-### 标头覆盖
+###### 已实施的配置 {#implemented-experiences-configuration}
 
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_header_overrides_boldheader"
->title="标头覆盖"
->abstract="**标头覆盖**"
+要在已实施的配置中编辑现有体验或包含新体验，请执行以下操作：
 
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_header_overrides_header"
->title="标头覆盖"
->abstract="用于绕过机器人检测或进行流量管控的高级功能。 Content Analytics 在调用您的端点时包含您自定义的 HTTP 标头。"
+![Content Analytics 配置体验捕获和定义](../assets/aca-configuration-experience-edit.png)
 
-或者，您可以在&#x200B;**[!UICONTROL 标头覆盖]**&#x200B;部分中指定标头名称和密码标头值。  此标头覆盖配置可确保Content Analytics发送自定义HTTP标头，以绕过任何已实施的机器人检测或关口流量技术。
+* 切换启用或禁用&#x200B;**[!UICONTROL 包含体验]**：
+
+   * 从 Content Analytics 事件数据生成体验属性的过程
+   * Customer Journey Analytics 中的报告模板。
+
+* 选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**&#x200B;以进一步编辑Content Analytics中体验的数据收集配置。 您在与当前配置相关联的标记属性中被重定向到 [Adobe Content Analytics 扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)。
+
+##### 数据收集 {#web-data-collection}
+
+数据收集设置允许您定义要为Content Analytics收集哪些数据（页面、资源）。 请勿在该数据收集过程中收集任何个人身份信息。
+
+要配置数据收集，请执行以下操作：
+
+* 使用现有的Web标记属性或创建新的Web标记属性。
+
+   * 要使用现有Web标记属性，请执行以下操作：
+
+      1. 选择&#x200B;**[!UICONTROL 选择现有的]**。
+      2. 从&#x200B;**[!UICONTROL 标记属性]**&#x200B;下拉菜单中选择一个现有的属性。 您可以开始输入进行搜索，并限制可用的选项。 您不能选择另一个已实施Content Analytics配置已使用的Tags属性。
+
+
+   * 要创建新的Web标记属性，请执行以下操作：
+
+      1. 选择&#x200B;**[!UICONTROL 新建]**。
+      1. 指定一个&#x200B;**[!UICONTROL 标记名称]**，例如 `ACA Test for Documentation`。
+      1. 指定&#x200B;**[!UICONTROL 域]**，例如，`example.com`。
+
+* 表示在为 Content Analytics 收集数据时应包含或排除哪些页面。 确保排除个人身份页面。
+
+  为&#x200B;**[!UICONTROL 要包含/排除的页面]**&#x200B;指定&#x200B;**[!UICONTROL 正则表达式字符串]**。 <br/>例如：`^(?!.*documentation).*`，以从 Content Analytics 中排除所有文档页面。
+
+* 指明在为 Content Analytics 收集数据时应包括或排除哪些资产。 确保排除个人身份资产。
+
+  为&#x200B;**[!UICONTROL 要包含/排除的资产]**&#x200B;指定&#x200B;**[!UICONTROL 正则表达式字符串]**。 <br/>例如：`^(?!.*(logo\.jpg)).*$` 可将所有徽标 JPEG 图像排除在 Content Analytics 之外。
+
+
+##### 标头覆盖 {#web-header-overrides}
+
+<!-- needs modification for mobile channel -->
+
+或者，您可以在&#x200B;**[!UICONTROL 标头覆盖]**&#x200B;部分中指定标头名称和密码标头值。  此标头覆盖配置可确保Content Analytics发送自定义HTTP标头，以绕过您实施的任何机器人检测或流量审核技术。
 
 ![标头覆盖节](/help/content-analytics/assets/aca-configuration-header-overrides.png)
 
 1. 启用&#x200B;**[!UICONTROL 配置标头覆盖]**。
 1. 输入&#x200B;**[!UICONTROL 标头名称]**。 例如，`x-asset-service`。
 1. 输入&#x200B;**[!UICONTROL 标头值]**。 您指定的任何内容都是机密的，在用户界面中不可见（除非您在输入期间明确选择公开![可见性](/help/assets/icons/Visibility.svg)值）。
+
+#### 保存 {#web-save}
+
+指定Web渠道的详细信息后，选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存配置。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消配置。
 
 
 ### 摘要 {#summary}
@@ -471,23 +529,19 @@ ht-degree: 95%
 
 ### 操作 {#actions}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning_dialog"
 >title="实施确认"
 >abstract="如果选择&#x200B;**[!UICONTROL 实施]**，则会根据您在此工作流程中提供的输入来配置 Content Analytics。 默认情况下，会根据 Content Analytics 的一般用途选择几种设置，但您（作为数据控制者）必须检查每个工件的设置，以确保这些设置是根据您的隐私政策、合同权利和义务以及符合适用法律的同意声明要求实施的。<br/><br/>请注意，在手动发布与此配置关联的标记库之前，不会收集任何数据。<br/><br/>为了获取图像和文本的属性，Adobe 使用了以下方式检索属性：<ol><li>根据您配置的数据收集设置，在用户访问网站时捕获的页面 URL，以及</li><li>托管图像的 URL。</li></ol>您不得对第三方网站上托管的图像进行标记。"
 
-<!-- markdownlint-enable MD034 -->
-
 创建或编辑配置时，您有以下选项：
 
 * **[!UICONTROL 丢弃]**：作为配置一部分的所有更改都将被丢弃。
 * **[!UICONTROL 保存以供未来使用]**：对配置所做的更改已保存。 您可以在稍后阶段重新访问该配置，以进行进一步的更改，或实施该配置。 保存配置时只需要一个[!UICONTROL 名称]的值。
-* **[!UICONTROL 实施]**：为配置所做的设置或更改已保存并实施。 所有被标记为![必需的](/help/assets/icons/Required.svg)字段必须有正确的值。 实施包括：
+* **[!UICONTROL 实施]**：为配置所做的设置或更改已保存并实施。 标记为![必填](/help/assets/icons/Required.svg)的所有字段都必须有正确的值。 实施包括：
 
    * **[!UICONTROL Customer Journey Analytics]** 配置：
-      * 选定的数据视图已更新，以包含 Content Analytics 维度和量度。
+      * 选定的数据视图已更新，将包含Content Analytics维度和量度。
       * 与所选数据视图相关联的连接已更改，以包含 Content Analytics 事件和属性数据集。
       * Content Analytics 报告模板已添加到工作区。
 
@@ -502,8 +556,8 @@ ht-degree: 95%
       * 新的或现有的”标记“属性被配置为支持 Content Analytics 数据收集。 此配置意味着需包含用于”标记“的 Adobe Content Analytics 扩展。
       * 为 Content Analytics 事件创建数据流。
       * Adobe Content Analytics 扩展已配置，以确保将 Content Analytics 事件发送到 Content Analytics 的数据流。
-      * 如果未为”标记“属性配置 Web SDK，则会创建一个新的 Web SDK 配置，以仅发送 Content Analytics 事件。
-      * 如果为此”标记“属性配置了 Web SDK，则现有的 Web SDK 配置不会进行任何更改。
+      * 如果没有为Tags属性配置Web SDK或Mobile SDK，则会创建新的Web SDK或Mobile SDK配置以仅发送Content Analytics事件。
+      * 如果为Tags属性配置了Web SDK或Mobile SDK，则不会对现有Web SDK或Mobile SDK配置进行任何更改。
 
 
 * **[!UICONTROL 保存]**：对已实施的配置所做的更改会被保存，并且实施会被更新。
@@ -512,7 +566,7 @@ ht-degree: 95%
 
 ## 发布 {#publish}
 
-要开始为 Content Analytics 配置收集数据，您需要[手动](manual.md)发布在您选择&#x200B;**[!UICONTROL 实施]**&#x200B;后所创建的标记属性。
+要开始收集Content Analytics配置的数据，您需要[手动](manual.md)发布为您启用的渠道创建的标记属性。
 
 
 >[!MORELIKETHIS]
