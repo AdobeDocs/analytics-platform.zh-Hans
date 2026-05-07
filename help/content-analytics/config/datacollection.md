@@ -119,7 +119,7 @@ Content Analytics通过以下方式处理Web渠道的身份：
 * 由于该架构由系统所有，因此不支持基于字段的拼接。 因此，您无法向架构中添加其他字段来支持基于字段的拼接。
 
 
-要确保在字段级别正确拼接Content Analytics标识数据和Web SDK数据标识数据，请在事件发送[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/onbeforeeventsend){target="_blank"}回调之前修改Web SDK 。
+要确保在字段级别正确拼接Content Analytics标识数据和Web SDK数据标识数据，请在事件发送[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/js/commands/configure/onbeforeeventsend){target="_blank"}回调之前修改Web SDK 。
 
 1. 导航至包含 Adobe Experience Platform Web SDK 扩展和 Adobe Content Analytics 扩展的&#x200B;**[!UICONTROL 标记]**&#x200B;属性。
 1. 选择![插件](/help/assets/icons/Plug.svg)**[!UICONTROL 扩展]**。
