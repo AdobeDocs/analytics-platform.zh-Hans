@@ -45,7 +45,7 @@ Content Analytics使用Experience Platform事件数据集中的Web和移动图�
 
 ![Content Analytics 工作原理](assets/aca-overview-new.gif)
 
-1. 当用户访问为Content Analytics](config/configuration.md)配置的网站或应用程序[时，Experience Platform Web或Mobile SDK会记录展示次数以及与内容的交互。
+1. 当用户访问为Content Analytics[&#128279;](config/configuration.md)配置的网站或应用程序时，Experience Platform Web或Mobile SDK会记录展示次数以及与内容的交互。
 1. 身份和特征化服务处理这些交互。 该过程包括一个检索服务，该服务会重新访问定义这些交互的公众版本的已配置 URL。 身份标识服务会为所有这些检索到的 URL 唯一性标识体验和资产。 功能化服务应用AI/ML服务来发现体验和资产元数据和属性。
 1. 这些服务（[组件、属性和身份标识](/help/content-analytics/report/components.md)）的结果用于更新 Experience Platform 中相关的特定 Content Analytics 数据集。
 1. 您可以在Customer Journey Analytics设置（[连接](/help/connections/overview.md)、[数据视图](/help/data-views/data-views.md)和[Workspace](/help/analysis-workspace/home.md)）中使用Content Analytics数据，以及行为数据和其他查找数据。 该设置提供了对您的内容进行独特的宏级深入分析的基础。 <br/>您可以使用[Content Analytics模板](/help/content-analytics/report/report.md#template)快速开始Content Analytics报告和分析。
