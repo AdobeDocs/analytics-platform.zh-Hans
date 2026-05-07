@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: a3d974733eef42050b0ba8dcce4ebcccf649faa7
+source-git-commit: a593221a9eb81d747777aedb323fd44a32c470be
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 100%
+source-wordcount: '719'
+ht-degree: 64%
 
 ---
 
@@ -22,31 +22,44 @@ ht-degree: 100%
 
 要为已实施的 Content Analytics 配置开始收集数据：
 
-1. 按照[发布流程](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/overview){target="_blank"}操作。成功发布包含 Content Analytics 配置的标记属性库。
+1. 按照[发布流程](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/overview){target="_blank"}操作。 成功发布包含Content Analytics配置的标记属性库。
 
-1. 在开发、暂存或发布环境的页面元素中[安装](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/environments/environments#installation)嵌入代码`<head>`，取决于 Content Analytics。
+1. 根据您配置的渠道：
 
+   * 对于&#x200B;**Web**： [安装](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/environments/environments#installation)开发、暂存或发布环境中页面的`<head>`元素中的嵌入代码，具体受Content Analytics限制。
+   * 对于&#x200B;**移动设备**：请参阅[Adobe Content Analytics Mobile SDK文档](https://developer.adobe.com/client-sdks/home/)中特定于解决方案的[Experience Platform扩展指南](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)，了解如何为Content Analytics配置和装备移动应用程序。
 
 ## 停止数据收集
 
-要为已实施的 Content Analytics 配置停止收集数据：
+要根据您配置的渠道停止为已实施的Content Analytics配置收集数据，请执行以下操作：
 
-1. 在开发、暂存或生成环境的页面元素中移除[嵌入代码](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/environments/environments)`<head>`，取决于 Content Analytics。
-1. [删除](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/overview) Content Analytics 配置的相关标记属性。
+* 对于&#x200B;**Web**：
 
+   1. 在开发、暂存或生产环境的页面元素中移除[嵌入代码](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/environments/environments)`<head>`，取决于 Content Analytics。
+   1. 删除与Content Analytics配置关联的Web标记属性。
+
+* 对于&#x200B;**移动设备**：
+
+   1. 从您的应用程序中删除[Content Analytics扩展](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)。
+   1. 删除与您的Content Analytics配置关联的移动标记属性。
+
+遵循[发布流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/overview){target="_blank"}以应用更改。
 
 
 ## 更改数据收集
 
-您可以使用[引导式配置向导](guided.md)对已实施的配置进行一些细微的更改。例如，更改数据视图，或者启用或禁用体验。
+您可以使用[引导式配置向导](guided.md)对已实施的配置进行一些细微的更改。 例如，更改数据视图，或者启用或禁用体验。
 
-您可以使用与 Content Analytics 配置相关联的标记属性中的 [Adobe Content Analytics 扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview)来更改以下构件：
+
+### Web
+
+在与您的Adobe Content Analytics配置关联的Tags属性中使用[Content Analytics Web扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview)对以下工件进行更改：
 
 * [沙盒和数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}。
 
   >[!CAUTION]
   >
-  >验证您在 Adobe Content Analytics 扩展中配置的沙盒和数据流是否已在某个早期阶段使用[引导式配置](guided.md)为 Content Analytics 进行了配置。此配置可确保所有必需的构件均可用。<br/><br/>还应验证沙盒或数据流的更新不会干扰为使用相同沙盒或数据流而进行的另一个 Content Analytics 配置。
+  >验证您在 Adobe Content Analytics 扩展中配置的沙盒和数据流是否已在某个早期阶段使用[引导式配置](guided.md)为 Content Analytics 进行了配置。 此配置可确保所有必需的构件均可用。<br/><br/>还应验证沙盒或数据流的更新不会干扰为使用相同沙盒或数据流而进行的另一个 Content Analytics 配置。
   >
 
 * [体验捕捉和定义](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview?lang=en#configure-experience-capture-and-definition)
@@ -58,24 +71,28 @@ ht-degree: 100%
   您可以编辑正则表达式来更改页面和资产的分段方式。
 
 
-在 Adobe Content Analytics 扩展中进行更改后，请确保使用[发布流程](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/overview){target="_blank"}，以根据这些更改开始收集数据。
+在Adobe Content Analytics Web扩展中进行更改后，请使用[发布流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/overview){target="_blank"}开始收集数据。
 
 
+### 移动
 
->[!MORELIKETHIS]
->
->[引导式配置](guided.md)
->>[数据收集标记发布概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/overview)
->
+在与Adobe Content Analytics配置关联的Tags属性中，您使用[Content Analytics移动扩展](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)进行其他更改。
+
+在Adobe Content Analytics Web扩展中进行更改后，请使用[发布流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/overview){target="_blank"}开始收集数据。
 
 
 ## 版本控制
+
+>[!NOTE]
+>
+>本节仅适用于适用于Web渠道的Content Analytics。
+
 
 如果您想收集 Content Analytics 体验，您应该考虑实施版本控制，以确保正确收集新的体验（网页的变化）。
 
 要实施版本控制，您可以在您想要分析的体验的页面上添加一个全局`adobe.getContentExperienceVersion`函数。
 
-`adobe.getContentExperienceVersion` 函数的返回值应是一个由您选择的可识别版本的任何字符串。该版本被附加到[体验 ID URL](/help/content-analytics/report/components.md#experience-metadata)。
+`adobe.getContentExperienceVersion` 函数的返回值应是一个由您选择的可识别版本的任何字符串。 该版本被附加到[体验 ID URL](/help/content-analytics/report/components.md#experience-metadata)。
 
 如果该函数不存在或者函数不返回任何值，则应使用 `NoVersion` 作为默认值。
 
@@ -88,44 +105,8 @@ window.adobe.getContentExperienceVersion = () => {
 };
 ```
 
-## 身份标识
-
-Content Analytics 以如下方式处理身份标识：
-
-* ECID 会自动填充到 Content Analytics 架构中的 `identityMap` 部分。
-* 如果您需要在 `identityMap` 中包含其他身份标识值，则必须在 Web SDK 扩展的 `onBeforeEventSend` 回调中设置这些值。
-* 由于该架构由系统所有，因此不支持基于字段的拼接。因此，您无法向架构中添加其他字段来支持基于字段的拼接。
-
-
-为了确保 Content Analytics 身份标识数据与 Adobe Experience Platform Web SDK 身份标识数据在字段级别能够正确拼接，您需要修改 Web SDK 的[在事件发送回调之前](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"}。
-
-1. 导航至包含 Adobe Experience Platform Web SDK 扩展和 Adobe Content Analytics 扩展的&#x200B;**[!UICONTROL 标记]**&#x200B;属性。
-1. 选择![插件](/help/assets/icons/Plug.svg)**[!UICONTROL 扩展]**。
-1. 选择 **[!UICONTROL Adobe Experience Platform Web SDK]** 扩展。
-1. 选择&#x200B;**[!UICONTROL 配置]**。
-1. 在 **[!UICONTROL SDK 实例]**&#x200B;部分，向下滚动至&#x200B;**[!UICONTROL 数据收集]** - **[!UICONTROL 在事件发送回调之前]**。
-
-   ![在事件发送回调之前](/help/content-analytics/assets/onbeforeeventsendcallback.png)
-
-1. 选择 **[!UICONTROL &lt;/> 提供在事件发送回调之前代码]**。
-1. 添加以下代码：
-
-   ```javascript
-   window.adobeContentAnalytics?.forwardEvent(content);
-   
-   content.xdm.identityMap = _satellite.getVar('identityMap');
-   if ((content.xdm.eventType === "content.contentEngagement") && (_satellite.getVar('identityMap') != null)) {
-      return true;
-   }
-   ```
-
-   ![在事件发送回调之前](/help/content-analytics/assets/onbeforeeventsendcallbackcode.png)
-
-1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存代码。
-1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存扩展。
-1. [发布](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/overview)对标记属性的更新。
-
-
-
-
-
+>[!MORELIKETHIS]
+>
+>[引导式配置](guided.md)
+>[数据收集标记发布概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/overview)
+>

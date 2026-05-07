@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 35d63b7d-f35a-4a88-ae14-96724d32a931
-source-git-commit: 1930e9da5d1cc8b5fb7ddc592535f035e4842a7b
+source-git-commit: beb2e35354d3da1fe6d22f4221e30ff0ccde3138
 workflow-type: tm+mt
-source-wordcount: '2540'
-ht-degree: 6%
+source-wordcount: '2631'
+ht-degree: 8%
 
 ---
 
@@ -23,7 +23,7 @@ Content Analytics作为独立产品授予许可，但配置是在Experience Plat
 
 在开始设置独立Content Analytics之前，您应：
 
-* 基本了解Web分析概念，熟悉标签管理系统，并具备JavaScript基础知识。
+* 基本了解Web和移动分析概念，熟悉标签管理系统，并具备JavaScript基础知识。 对于适用于移动设备渠道的Content Analytics，您应该具备移动设备应用程序开发技能。
 * 规划4 - 6小时进行初始设置，并安排额外的时间来测试和验证设置。
 
 ## 术语
@@ -37,7 +37,7 @@ Content Analytics作为独立产品授予许可，但配置是在Experience Plat
 | **数据流** | [数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/overview)表示将数据从您的网站路由到Adobe Experience Platform中的正确数据集的服务器端配置。 数据流充当连接您的网站与存储的数据高速公路。 |
 | **标记** | Experience Platform中的[标记](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/home)是Adobe推出的新一代标记管理功能。 标记为客户提供了一种简单的方式来部署和管理用来加强相关客户体验的分析、营销和广告标记。 在Content Analytics中，Adobe的标签管理系统允许您在网站上部署跟踪代码，而无需以类似方式编辑每个页面。 标记功能类似于您可能从Google Tag Manager中了解的功能。 |
 | **沙盒** | Experience Platform提供了[沙盒](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sandbox/home)，可将单个Experience Platform实例划分为单独的虚拟环境，以帮助开发和改进数字体验应用程序。 Content Analytics通常使用&#x200B;*生产*&#x200B;沙盒。 |
-| **连接** | [连接](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/overview)定义要引入的Experience Platform数据集。 连接定义了数据集(数据存储在AEP中)与Customer Journey Analytics（可在其中分析数据）之间的链接。 通过连接，收集的数据可用于报告。 |
+| **Connection** | [连接](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/overview)定义要引入的Experience Platform数据集。 连接定义了数据集（数据存储在AEP中）与Customer Journey Analytics（可在其中分析数据）之间的链接。 通过连接，收集的数据可用于报告。 |
 | **&#x200B;**&#x200B;| [数据视图](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/data-views)是一个容器，通过它可决定如何解释来自连接的数据。 数据视图指定可用于报告的所有维度和量度。 数据视图与确定可在分析中使用的行和列的配置类似。 |
 | **Analysis Workspace** | [Analysis Workspace](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/home)是用于构建Content Analytics报告和分析的拖放浏览器界面。 |
 | **体验** | 在Content Analytics中，[体验](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/content-analytics/content-analytics#terminology)是指网页上所有可根据页面URL捕获和分析的文本内容。 |
@@ -48,12 +48,12 @@ Content Analytics作为独立产品授予许可，但配置是在Experience Plat
 
 此配置将指导您设置需要具有有效的&#x200B;**独立** Content Analytics实施的所有应用程序。 您可以将设置分为三个阶段，每个阶段均在前一个阶段的基础上进行构建：
 
-**阶段1** - [准备环境](#prepare-your-environment)。 在此阶段，您需要设置用户权限并验证数据基础架构。 如果没有这些适当的权限和数据结构，您将无法完成其余步骤。 涉及的步骤包括：
+**阶段1** - [准备环境](#prepare-your-environment)。 在此阶段，您需要设置用户权限并验证数据基础架构。 凭借这些适当的权限和数据结构，您可以完成其余步骤。 涉及的步骤包括：
 
 1. **配置访问控制和权限**&#x200B;以支持Content Analytics配置和实施。
 1. **设置架构和数据集**&#x200B;以定义您要从中收集内容分析见解的数据的模型（架构）以及收集该数据（数据集）的位置。
 
-**阶段2** - [配置数据收集](#configure-data-collection)。 在此阶段，您将创建从网站捕获内容数据的管道。 因此，Content Analytics知道访客与您的内容交互的内容。
+**阶段2** - [配置数据收集](#configure-data-collection)。 在此阶段，您将创建从网站捕获内容数据的管道。 因此，Content Analytics知道访客与哪些内容互动。
 
 1. **设置数据流**&#x200B;以配置如何将收集的数据路由到数据集。
 1. **使用网站标记**&#x200B;针对网站上数据层中的数据配置规则和数据元素，并确保将数据发送到配置的数据流。
@@ -73,7 +73,7 @@ Content Analytics作为独立产品授予许可，但配置是在Experience Plat
 
 ### 配置访问控制和权限
 
-本节介绍了您需要对产品拥有的访问权限、产品配置文件以及配置和设置独立Content Analytics所需的权限。 尽管您只对Content Analytics的功能感兴趣，但是要使该功能正常工作，您仍需要拥有其他Experience Platform产品的访问权限和权限。
+此部分介绍了您需要对产品和产品配置文件的访问权限，以及配置和设置独立Content Analytics所需的权限。 尽管您只对Content Analytics的功能感兴趣，但是要使该功能正常工作，您仍需要拥有其他Experience Platform产品的访问权限和权限。
 
 #### 访问控制
 
@@ -155,7 +155,7 @@ Experience Platform中的[!UICONTROL Permissions]界面基于角色的定义。 
 
    * 沙盒
       * Prod
-      * (任何其他要用于Content Analytics的沙盒)
+      * （任何其他要用于Content Analytics的沙盒）
 
    * 沙盒管理
       * 管理包
@@ -164,11 +164,11 @@ Experience Platform中的[!UICONTROL Permissions]界面基于角色的定义。 
       * 查看沙盒
 
 
-在“权限”界面中，您可以同时验证角色和相关权限。 以及哪些用户属于该角色。
+在“权限”界面中，您可以同时验证角色和相关权限。 该界面还会显示哪些用户属于该角色。
 
 1. 访问贵组织的Experience Platform。
 1. 在欢迎屏幕的&#x200B;**[!UICONTROL 快速访问]**&#x200B;中，选择&#x200B;**[!UICONTROL 查看全部]**。
-1. 为![权限](/help/assets/icons/PinOn.svg)启用pin **[!UICONTROL PinOn]**，因此&#x200B;**[!UICONTROL 快速访问]**&#x200B;中的&#x200B;**[!UICONTROL 权限]**&#x200B;可供将来使用。
+1. 为&#x200B;**[!UICONTROL 权限]**&#x200B;启用pin ![PinOn](/help/assets/icons/PinOn.svg)，因此&#x200B;**[!UICONTROL 快速访问]**&#x200B;中的&#x200B;**[!UICONTROL 权限]**&#x200B;可供将来使用。
 1. 选择&#x200B;**[!UICONTROL 权限]**。
 1. 选择![用户](/help/assets/icons/User.svg) **[!UICONTROL 角色]**。
 1. 选择要验证的特定角色（例如，**[!UICONTROL 默认的生产所有访问]**）。 选择&#x200B;**[!UICONTROL 查看全部]**&#x200B;以查看所有权限。
@@ -177,7 +177,7 @@ Experience Platform中的[!UICONTROL Permissions]界面基于角色的定义。 
    1. 验证&#x200B;**[!UICONTROL 沙盒]**&#x200B;中的沙盒名称。
 
    要进行任何更新，请选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**。
-   1. 要添加缺少的资源，请从&#x200B;**[!UICONTROL 资源]** > ![Adobe Experience Platform](/help/assets/icons/Add.svg)左边栏中选择&#x200B;**[!UICONTROL 资源名称]** **[!UICONTROL 添加]**。
+   1. 要添加缺少的资源，请从&#x200B;**[!UICONTROL 资源]** > **[!UICONTROL Adobe Experience Platform]**&#x200B;左边栏中选择&#x200B;**[!UICONTROL 资源名称]** ![添加](/help/assets/icons/Add.svg)。
    1. 要添加缺少的权限，请在主面板中缺少权限的资源中选择![ChevronDown](/help/assets/icons/ChevronDown.svg)，然后选择缺少的权限。
 
       ![权限界面](/help/content-analytics/assets/aep-permissions-ui.png)
@@ -200,24 +200,18 @@ Customer Journey Analytics不支持基于属性的访问控制。 要指定权�
    * 所有可用的数据视图。
 
 * 报告工具
-   * 引导式分析访问？
    * 计算量度创建
    * 区段创建
-   * Labs访问权限？
    * 创建注释
-   * 受众创建？
-   * 受众视图？
    * 审核日志访问
    * 与任何人共享项目链接
    * 预测
    * AI 助手：产品知识
    * Data Insights 代理
    * 智能题注
-   * 数据Storytelling？
 
 * 数据视图工具
-   * 是否导出完整表？
-   * CJA BI扩展？
+   * 整个表导出
 
 要验证和更新Customer Journey Analytics的这些权限，请执行以下操作：
 
@@ -240,7 +234,7 @@ Customer Journey Analytics不支持基于属性的访问控制。 要指定权�
 
 ### 设置架构和数据集
 
-要在受Content Analytics分析影响的情况下从您的网站收集数据，您首先需要定义要收集的数据类型。 以及数据的存储方式。 在[通过Adobe Experience Platform Web SDK引入数据](/help/data-ingestion/aepwebsdk.md#set-up-a-schema-and-dataset)快速入门指南中的[设置架构和数据集](/help/data-ingestion/aepwebsdk.md)中说明了这两个概念。
+要从您的网站中收集数据以进行Content Analytics分析，您首先需要定义要收集的数据类型。 您还需要定义数据的存储方式。 在[通过Adobe Experience Platform Web SDK摄取数据](/help/data-ingestion/aepwebsdk.md)和[通过Adobe Experience Platform Mobile SDK摄取数据](/help/data-ingestion/aepmobilesdk.md)快速入门指南中[设置架构和数据集](/help/data-ingestion/aepwebsdk.md#set-up-a-schema-and-dataset)中说明了这两个概念。
 
 
 ## 配置数据收集
@@ -249,19 +243,19 @@ Customer Journey Analytics不支持基于属性的访问控制。 要指定权�
 
 ### 设置数据流
 
-您已定义要收集哪些数据以及如何存储这些数据。 下一步是确保将从您的网站收集的数据路由到数据集。 您需要设置和配置数据流，如[通过Adobe Experience Platform Web SDK摄取数据](/help/data-ingestion/aepwebsdk.md#set-up-a-datastream)快速入门指南中的[设置数据流](/help/data-ingestion/aepwebsdk.md)中所述。
+您已定义要收集哪些数据以及如何存储这些数据。 下一步是确保将从您的网站收集的数据路由到数据集。 您需要设置和配置数据流，如[通过Adobe Experience Platform Web SDK摄取数据](/help/data-ingestion/aepwebsdk.md)快速入门指南中的[设置数据流](/help/data-ingestion/aepwebsdk.md#set-up-a-datastream)中所述。
 
 
 ### 使用标签
 
-您已定义要收集哪些数据（架构），如何存储该数据（数据集），以及如何将从您的网站收集的数据路由到数据集（数据流）。 接下来，您需要标记您的网站，以针对网站上数据层中的数据配置规则和数据元素。 对网站进行标记可确保将数据发送到配置的数据流。 在[通过Adobe Experience Platform Web SDK摄取数据](/help/data-ingestion/aepwebsdk.md#use-tags)快速入门指南中的[使用标记](/help/data-ingestion/aepwebsdk.md)中说明了使用标记帮助标记网站。
+您已定义要收集哪些数据（架构），如何存储该数据（数据集），以及如何将从您的网站收集的数据路由到数据集（数据流）。 接下来，您需要标记您的网站，以针对网站上数据层中的数据配置规则和数据元素。 对网站进行标记可确保将数据发送到配置的数据流。 使用标记标记标记网站在[Web SDK](/help/data-ingestion/aepwebsdk.md#use-tags)和[Mobile SDK](/help/data-ingestion/aepmobilesdk.md#use-tags)快速入门指南的“使用标记”中进行了说明。
 
 
 ### 部署和验证
 
-现在，您可以在`<head>` 标签内的网站开发版本上部署代码。部署后，您的网站即开始将数据收集到Adobe Experience Platform中。 然后，该数据将受Content Analytics约束。
+现在，您可以在`<head>` 标签内的网站开发版本上部署代码。 部署后，您的网站开始将数据收集到 Adobe Experience Platform 中。 然后，该数据将受Content Analytics约束。
 
-验证实施并在必要时进行更正，一旦正确，可使用Tags的发布工作流功能将其部署到暂存和生产环境
+验证您的实现，在必要时进行更正，更正后，使用标签的发布工作流功能将其部署到您的暂存和生产环境中。
 
 
 ## 设置报表
@@ -270,12 +264,12 @@ Customer Journey Analytics不支持基于属性的访问控制。 要指定权�
 
 ### 设置与数据集的连接
 
-要报告收集的数据并为Content Analytics配置这些数据，您需要在Customer Journey Analytics中设置连接。 该连接将连接到包含所收集的数据的数据集。 有关如何设置连接的说明，请参阅[通过Adobe Experience Platform Web SDK摄取数据](../../data-ingestion/aepwebsdk.md#set-up-a-connection)快速入门指南中的[设置连接](/help/data-ingestion/aepwebsdk.md)。
+要报告收集的数据并为Content Analytics配置这些数据，您需要在Customer Journey Analytics中设置连接。 该连接将连接到包含所收集的数据的数据集。 请参阅[Web SDK](/help/data-ingestion/aepwebsdk.md)和[Mobile SDK](/help/data-ingestion/aepmobilesdk.md#set-up-a-connection)快速入门指南中的[设置连接](../../data-ingestion/aepwebsdk.md#set-up-a-connection)。
 
 
 ### 设置数据视图
 
-配置Content Analytics之前的最后一步是定义数据视图。 数据视图是 Customer Journey Analytics 专属的容器，通过它，可决定如何解释来自连接的数据。 数据视图允许您根据Customer Journey Analytics连接的一个或多个数据集的数据定义指标和维度。 有关如何设置数据视图的说明，请参阅[通过Adobe Experience Platform Web SDK引入数据](/help/data-ingestion/aepwebsdk.md#set-up-a-data-view)快速入门指南中的[设置数据视图](/help/data-ingestion/aepwebsdk.md)。
+配置Content Analytics之前的最后一步是定义数据视图。 数据视图是 Customer Journey Analytics 专属的容器，通过它，可决定如何解释来自连接的数据。 数据视图允许您根据Customer Journey Analytics连接的一个或多个数据集的数据定义指标和维度。 请参阅[Web SDK](/help/data-ingestion/aepwebsdk.md)和[Mobile SDK](/help/data-ingestion/aepmobilesdk.md#set-up-a-data-view)快速入门指南中的[设置数据视图](/help/data-ingestion/aepwebsdk.md#set-up-a-data-view)。
 
 
 ### 配置 Content Analytics
@@ -284,7 +278,7 @@ Customer Journey Analytics不支持基于属性的访问控制。 要指定权�
 
 #### 引导配置
 
-使用[引导式配置向导](guided.md)并选择您在[设置数据视图](#set-up-a-data-view)步骤中创建的数据视图。 该选择可确保根据您从网站收集的数据来配置和实施Content Analytics。
+使用[引导式配置向导](guided.md)并选择您在[设置数据视图](#set-up-a-data-view)步骤中创建的数据视图。 该选择可确保根据您从网站和移动设备应用程序中收集的数据来配置和实施Content Analytics。
 
 请注意，引导式配置向导会配置以下其他特定的Content Analytics对象：
 
@@ -296,7 +290,6 @@ Customer Journey Analytics不支持基于属性的访问控制。 要指定权�
   >
   >请确保选择相应选项，以便在向导的[数据收集](guided.md#new-configuration-1)步骤中创建新的标记属性。
   >
-
 
 #### 手动配置
 
