@@ -5,12 +5,13 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 21bf687f3cff101ee1b3e4be3d870de270f82e89
+source-git-commit: f29a55379d83fc9bdd89c82f0b27c4321a139908
 workflow-type: tm+mt
 source-wordcount: '1410'
 ht-degree: 47%
 
 ---
+
 
 # Content Analytics 报告概述
 
@@ -94,7 +95,7 @@ Content Analytics [模板](/help/analysis-workspace/templates/use-templates.md)�
 
 1. 从主菜单中选择&#x200B;**[!UICONTROL Workspace]**。
 1. 确保您选择的数据视图已配置给 Content Analytics。
-1. 搜索或使用区段（为&#x200B;**[!UICONTROL 渠道]**&#x200B;使用 **[!UICONTROL Web]**，为&#x200B;**[!UICONTROL 用例]**&#x200B;使用&#x200B;**[!UICONTROL 参与度]**）查找并选择 **[!UICONTROL Content Analytics]** 模板。
+1. 搜索或使用区段（为&#x200B;**[!UICONTROL 渠道]**&#x200B;使用 **[!UICONTROL Web]**，为**[!UICONTROL 用例]**使用&#x200B;**[!UICONTROL 参与度]**）查找并选择 **[!UICONTROL Content Analytics]** 模板。
 1. 选择&#x200B;**[!UICONTROL 使用模板]**。
 1. 在&#x200B;**[!UICONTROL 设置模板]**&#x200B;对话框中，从&#x200B;**[!UICONTROL 选择转化量度]**&#x200B;对话框中选择一个量度。 例如，**[!UICONTROL 资产点进率]**。
 1. 选择&#x200B;**[!UICONTROL 继续]**。

@@ -1,16 +1,17 @@
 ---
-title: Content Analytics 数据收集
-description: Content Analytics 中数据收集方式概述
+title: Content Analytics数据收集
+description: 了解如何在Content Analytics中收集数据。
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: a593221a9eb81d747777aedb323fd44a32c470be
+source-git-commit: b8b0237a092b37d28bec56bba05c30a853097d4f
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 53%
+source-wordcount: '1093'
+ht-degree: 52%
 
 ---
+
 
 # Content Analytics 数据收集
 
@@ -60,7 +61,7 @@ Content Analytics 事件由以下各项组成：
 Content Analytics 事件收集为以下顺序：
 
 1. [录制的视图或单击](#recorded-view-or-click)。
-1. 用于发送Content Analytics事件[&#128279;](#trigger-to-send-a-content-analytics-event)的触发器。
+1. 用于发送Content Analytics事件](#trigger-to-send-a-content-analytics-event)的[触发器。
 
 Content Analytics 实际上以这种方式收集数据来反映该序列，而不是将收集某次访问或点击与收集该访问或点击之后立即发生的事件两者分开。 这种收集 Content Analytics 数据的方式也减少了所收集的数据量。
 
@@ -119,7 +120,7 @@ Content Analytics通过以下方式处理Web渠道的身份：
 * 由于该架构由系统所有，因此不支持基于字段的拼接。 因此，您无法向架构中添加其他字段来支持基于字段的拼接。
 
 
-要确保在字段级别正确拼接Content Analytics标识数据和Web SDK数据标识数据，请在事件发送[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/js/commands/configure/onbeforeeventsend){target="_blank"}回调之前修改Web SDK 。
+要确保在字段级别正确拼接Content Analytics标识数据和Web SDK数据标识数据，请在事件发送](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/onbeforeeventsend){target="_blank"}回调之前修改Web SDK [。
 
 1. 导航至包含 Adobe Experience Platform Web SDK 扩展和 Adobe Content Analytics 扩展的&#x200B;**[!UICONTROL 标记]**&#x200B;属性。
 1. 选择![插件](/help/assets/icons/Plug.svg)**[!UICONTROL 扩展]**。
