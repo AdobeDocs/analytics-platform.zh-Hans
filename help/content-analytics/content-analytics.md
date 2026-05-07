@@ -1,16 +1,17 @@
 ---
 title: Content Analytics 概述
-description: Content Analytics 概述
+description: 了解Content Analytics价值和术语，并了解Content Analytics的工作原理。
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 21bf687f3cff101ee1b3e4be3d870de270f82e89
+source-git-commit: b8b0237a092b37d28bec56bba05c30a853097d4f
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 56%
+source-wordcount: '905'
+ht-degree: 55%
 
 ---
+
 
 # Content Analytics 概述
 
