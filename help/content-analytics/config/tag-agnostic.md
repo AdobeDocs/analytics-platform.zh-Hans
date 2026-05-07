@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 hide: true
-source-git-commit: b8b0237a092b37d28bec56bba05c30a853097d4f
+source-git-commit: 64b96d8b0917975f19c353e26d9e6437d1b4e5ac
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '467'
 ht-degree: 5%
 
 ---
@@ -16,6 +16,11 @@ ht-degree: 5%
 # Content Analytics Tags不可知配置
 
 Adobe Content Analytics JavaScript库允许通过Experience Platform Edge Network将内容数据发送到Adobe Experience Platform，从而跟踪网站上的内容相关事件。 当您想要实施不带Adobe Experience Platform标记的Content Analytics (Launch)时，请使用此库。
+
+>[!NOTE]
+>
+>本文适用于Web渠道的Content Analytics 。
+
 
 >[!PREREQUISITES]
 >
