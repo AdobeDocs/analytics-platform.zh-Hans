@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: f29a55379d83fc9bdd89c82f0b27c4321a139908
+source-git-commit: 8c4bd397aa2863c7365778cb545ec42d9b0f4528
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1419'
 ht-degree: 47%
 
 ---
@@ -100,7 +100,11 @@ Content Analytics [模板](/help/analysis-workspace/templates/use-templates.md)�
 1. 在&#x200B;**[!UICONTROL 设置模板]**&#x200B;对话框中，从&#x200B;**[!UICONTROL 选择转化量度]**&#x200B;对话框中选择一个量度。 例如，**[!UICONTROL 资产点进率]**。
 1. 选择&#x200B;**[!UICONTROL 继续]**。
 
-在 [Analysis Workspace](/help/analysis-workspace/home.md) 中打开一个&#x200B;**[!UICONTROL Content Analytics 概述]**&#x200B;项目。 项目由四个[面板](/help/analysis-workspace/c-panels/panels.md)组成，其中每个面板都提供[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)和[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)来回答特定问题。 您可以使用&#x200B;**[!UICONTROL 内容渠道]**&#x200B;划分[划分](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel)您感兴趣的内容渠道的面板：**[!UICONTROL Web]**&#x200B;或&#x200B;**[!UICONTROL 移动设备]**。
+在 [Analysis Workspace](/help/analysis-workspace/home.md) 中打开一个&#x200B;**[!UICONTROL Content Analytics 概述]**&#x200B;项目。 项目由四个[面板](/help/analysis-workspace/c-panels/panels.md)组成，其中每个面板都提供[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)和[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)来回答特定问题。
+
+您可以使用&#x200B;**[!UICONTROL 内容渠道]**&#x200B;划分[划分](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel)您感兴趣的内容渠道的面板：**[!UICONTROL Web]**&#x200B;或&#x200B;**[!UICONTROL 移动设备]**。
+
+在Analysis Workspace的面板中，在内容渠道上进行![划分](/help/content-analytics/assets/aca-content-channel-selector.png)
 
 四个面板包括：
 
