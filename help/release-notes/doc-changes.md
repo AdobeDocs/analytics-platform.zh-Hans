@@ -4,9 +4,9 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 64b96d8b0917975f19c353e26d9e6437d1b4e5ac
+source-git-commit: 43beba33f185e81fcebb4c18acfaa1c236ccd0c7
 workflow-type: tm+mt
-source-wordcount: '6869'
+source-wordcount: '6886'
 ht-degree: 95%
 
 ---
@@ -21,6 +21,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 |---|---|
 | **2026年5月** | |
+| Data Mirror注意事项 | [文档](/help/data-mirror/considerations.md)，其中介绍了设置[Data Mirror数据集](/help/data-mirror/data-mirror.md)时应考虑的因素。 |
 | Content Analytics移动渠道 | 更新了[Content Analytics文档](/help/content-analytics/content-analytics.md)，以说明Content Analytics移动渠道的功能和配置。 |
 | **2026年4月** | |
 | 派生字段准则 | 添加了有关使用派生字段的[准则](/help/use-cases/data-views/derived-fields/guidelines.md)（最佳实践、护栏和常见隐患）的文章。 |
