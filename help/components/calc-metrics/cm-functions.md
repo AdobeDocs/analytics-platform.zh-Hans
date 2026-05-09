@@ -93,7 +93,7 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 
 >[!TIP]
 >
->使用[IF](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)语句(如&#x200B;**IF**(*Revenue* = **列最大值***(Revenue*)， 1， 0))突出显示划分中表现最佳的项。
+>使用[IF](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)语句(如&#x200B;**IF**(*Revenue* = **列最大值***(Revenue*)， 1， 0))突出显示划分中表现最佳的项。
 >
 
 ## 列最小值 {#column-minimum}
@@ -123,7 +123,7 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 
 >[!TIP]
 >
->使用[IF](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)语句(如&#x200B;**IF**(*Revenue* = **列最小值***(Revenue*)， 1， 0))突出显示划分中性能最低的项目。
+>使用[IF](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)语句(如&#x200B;**IF**(*Revenue* = **列最小值***(Revenue*)， 1， 0))突出显示划分中性能最低的项目。
 >
 
 
