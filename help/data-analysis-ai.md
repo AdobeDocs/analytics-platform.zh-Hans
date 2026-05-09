@@ -80,7 +80,7 @@ Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/a
   >
   >启用数据视图时，请考虑以下事项：
   >* 每个 IMS 组织最多可以启用 50 个数据视图。 如果您为某个特定组织的所有产品轮廓启用了超过 50 个数据视图，Data Insights 代理将使用最常用的 50 个数据视图。
-  >  您可以使用数据视图](/help/data-views/manage-dataviews.md#manage-data-views)中Data Insights Agent列上的[信息查看IMS组织中为Data Insights Agent启用的数据视图数量。
+  >  您可以使用数据视图[&#128279;](/help/data-views/manage-dataviews.md#manage-data-views)中Data Insights Agent列上的信息查看IMS组织中为Data Insights Agent启用的数据视图数量。
   >* 您启用数据视图后的同一天内，Data Insights 代理就可以引用这些被包含的数据视图。
 
   要为 Data Insights 代理启用数据视图，请执行以下操作：
@@ -158,7 +158,7 @@ Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/a
 
 **提示词：**&#x200B;在提示词窗口中输入&#x200B;*“添加利润。”*
 
-**回答：****[!UICONTROL 条形]**&#x200B;图仍然提供了最简洁的回答，而利润量度被添加到自由格式表中成为一列：
+**回答：**&#x200B;**[!UICONTROL 条形]**&#x200B;图仍然提供了最简洁的回答，而利润量度被添加到自由格式表中成为一列：
 
 ![条形图](/help/assets/ai-asst-result4.png)
 

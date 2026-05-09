@@ -97,7 +97,7 @@ ht-degree: 53%
 
 * 要定义一组组件，您可以使用Analysis Workspace项目中的[试验面板](/help/analysis-workspace/c-panels/experimentation.md)在试验报表中使用。
 
-  请参阅[与 Journey Optimizer 集成](/help/integrations/ajo.md#data-view)以及[ Target 报告](/help/integrations/at.md)。
+  请参阅[与 Journey Optimizer 集成](/help/integrations/ajo.md#data-view)以及[&#x200B; Target 报告](/help/integrations/at.md)。
 
 * 要定义一组组件，您可以在Analysis Workspace项目的[地图](/help/analysis-workspace/visualizations/map.md)可视化图表中使用。
 
@@ -105,7 +105,7 @@ ht-degree: 53%
 
   **注意**：地图可视化图表处于版本的“有限测试”阶段，可能尚未在环境中可用。
 
-* 显示Adobe](/help/analysis-workspace/templates/use-templates.md)提供的[模板。 Adobe提供的某些模板可能无法工作，因为某些组件不在数据视图中。
+* 显示Adobe[&#128279;](/help/analysis-workspace/templates/use-templates.md)提供的模板。 Adobe提供的某些模板可能无法工作，因为某些组件不在数据视图中。
 
   对于每个缺失的组件，数据视图中都会提供一个匹配的上下文标签。 您需要将匹配的上下文标签添加到数据视图中已存在的组件中。 或者，您需要向数据视图添加新组件，并将上下文标签添加到该组件（如果尚未自动提供）。
 

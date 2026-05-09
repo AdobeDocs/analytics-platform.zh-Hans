@@ -96,7 +96,7 @@ ht-degree: 60%
 
    1. 使用数据流映射将数据对象中的所有字段映射到您的XDM架构。
 
-      有关详细信息，请参阅Experience Platform文档中为数据收集](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep)准备数据中的[映射](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping)。[
+      有关详细信息，请参阅Experience Platform文档中为数据收集[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep)准备数据中的[映射](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping)。
 
 {{upgrade-final-step}}。
 
