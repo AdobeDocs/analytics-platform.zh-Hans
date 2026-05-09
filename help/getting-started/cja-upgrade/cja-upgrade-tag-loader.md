@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '301'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-loader"
 >title="在您的网站上实施加载器标记"
->abstract="与您的网站开发团队一起在您网站的每个页面上安装加载器标记。<br><br>此任务的完成时间在很大程度上取决于与您合作部署代码的工程团队的响应时间。一些具有高度适应性的工程团队的组织可以在几天内完成这一步骤，而拥有大量积压任务的工程团队可能需要一个月甚至更长时间。"
+>abstract="与您的网站开发团队一起在您网站的每个页面上安装加载器标记。<br><br>此任务的完成时间在很大程度上取决于与您合作部署代码的工程团队的响应时间。 一些具有高度适应性的工程团队的组织可以在几天内完成这一步骤，而拥有大量积压任务的工程团队可能需要一个月甚至更长时间。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 您必须在您想要跟踪的网站上安装您的标记，这意味着将代码放在您网站模板的标题标记中。
 
-以下过程描述了如何获取引用您的标记的代码。有关补充信息，请参阅 Experience Platform 文档中的[标记和事件转发实施指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/get-started/implementation-guides)。
+以下过程描述了如何获取引用您的标记的代码。 有关补充信息，请参阅 Experience Platform 文档中的[标记和事件转发实施指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/get-started/implementation-guides)。
 
 要获取引用标记的代码，请执行以下操作：
 
@@ -53,6 +53,6 @@ ht-degree: 100%
 
    您可以根据部署 Adobe Experience Platform Web SDK 的位置选择另一个环境（暂存、生产），而不是开发环境的代码。
 
-   有关详细信息，请参阅 [环境](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=zh-Hans&)。
+   有关详细信息，请参阅 [环境](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?)。
 
 {{upgrade-final-step}}

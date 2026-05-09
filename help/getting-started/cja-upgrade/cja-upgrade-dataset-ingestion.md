@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '224'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataset-validate"
 >title="验证数据集中的数据"
->abstract="现在您已经配置了实施，可以使用数据集活动管理器查看已摄取和失败的批次。如果您主要看到的是已摄取的批次，那么这一步就完成了。如果您主要看到的是失败的批次或没有批次，请检查您的实施，以确保它正确地将数据发送到 Adobe。"
+>abstract="现在您已经配置了实施，可以使用数据集活动管理器查看已摄取和失败的批次。 如果您主要看到的是已摄取的批次，那么这一步就完成了。 如果您主要看到的是失败的批次或没有批次，请检查您的实施，以确保它正确地将数据发送到 Adobe。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 1. 在 Experience Platform UI 中，选择左侧导航中的&#x200B;**[!UICONTROL 监控]**。
 
-   监控仪表板会显示。使用该仪表板可查看批量或流式摄取的入站数据的状态。
+   监控仪表板会显示。 使用该仪表板可查看批量或流式摄取的入站数据的状态。
 
    <!-- insert screenshot -->
 

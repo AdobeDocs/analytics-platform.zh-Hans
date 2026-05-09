@@ -5,9 +5,9 @@ title: 从Workspace报表生成演示
 feature: Curate and Share
 role: User
 exl-id: a3f6db1e-0444-4804-98bf-c5c10ba2e7ea
-source-git-commit: b9efb621523f8bbfbb3afe7db4db2e60fcddd34c
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1720'
 ht-degree: 9%
 
 ---
@@ -80,7 +80,7 @@ Analysis Workspace通过考虑以下项目元素来创建数据故事：
 >[!CONTEXTUALHELP]
 >id="cja-powerpoint-include-visualizations"
 >title="包含的面板和可视化内容"
->abstract="选择要在演示文稿中包含的面板和可视化内容。最多可包含 50 个可视化内容。"
+>abstract="选择要在演示文稿中包含的面板和可视化内容。 最多可包含 50 个可视化内容。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -89,7 +89,7 @@ Analysis Workspace通过考虑以下项目元素来创建数据故事：
 >[!CONTEXTUALHELP]
 >id="cja-presentation-emphasized-components"
 >title="被强调的组件"
->abstract="从可视化内容中选择最多 5 个量度和 5 个维度，在演示文稿中重点呈现。所选量度以斜体显示，维度以粗体显示，维度项以对比色显示。"
+>abstract="从可视化内容中选择最多 5 个量度和 5 个维度，在演示文稿中重点呈现。 所选量度以斜体显示，维度以粗体显示，维度项以对比色显示。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -131,7 +131,7 @@ Analysis Workspace通过考虑以下项目元素来创建数据故事：
 
    +++（推荐）下载并修改空白模板
 
-   1. 下载[此空白模板](https://d30ln29764hddd.cloudfront.net/deploy/builds/data-storytelling.2025-10-20T15:10:19/resources/components/Blank.potx?)。
+   1. 下载[此空白模板](https://d30ln29764hddd.cloudfront.net/deploy/builds/data-storytelling.2025-10-20T15:10:19/resources/components/Blank.potx？)。
 
    1. 将自定义样式应用于空白模板。
 
@@ -198,13 +198,13 @@ Analysis Workspace通过考虑以下项目元素来创建数据故事：
 1. 选择您要为其提供[!UICONTROL 数据storytelling]访问权限的产品配置文件的标题。
 1. 在具体的产品配置文件中，选择&#x200B;**[!UICONTROL 权限]**。
 1. 选择![编辑](/help/assets/icons/Edit.svg)来编辑&#x200B;**[!UICONTROL 报告工具]**。
-1. 选择![AddCircle](/help/assets/icons/RemoveCircle.svg)以从&#x200B;**包含的权限项**&#x200B;中删除&#x200B;**[!UICONTROL Data storytelling]**。
+1. 选择![AddCircle](/help/assets/icons/RemoveCircle.svg)以从&#x200B;**[!UICONTROL 包含的权限项]**&#x200B;中删除&#x200B;**Data storytelling**。
 
    <!--add screenshot of permission in the admin console-->
 
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;来保存权限。
 
-有关详细信息，请参阅[访问控制](/help/technotes/access-control.md#user-level-access)中的[用户级访问](/help/technotes/access-control.md#access-control)。
+有关详细信息，请参阅[访问控制](/help/technotes/access-control.md#access-control)中的[用户级访问](/help/technotes/access-control.md#user-level-access)。
 
 ## 不支持的项目元素和功能 {#unsupported}
 

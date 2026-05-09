@@ -4,10 +4,10 @@ title: 数据字典概述
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 99%
+source-wordcount: '586'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 99%
 >[!CONTEXTUALHELP]
 >id="component_datadictionary"
 >title="数据字典"
->abstract="数据字典有助于用户和管理员更有效地追踪并理解 Customer Journey Analytics 环境中的各类组件。<br/>Customer Journey Analytics 管理员负责在数据字典中整理和维护每个组件的信息。"
+>abstract="数据字典有助于用户和管理员更有效地追踪并理解 Customer Journey Analytics 环境中的各类组件。 <br/>Customer Journey Analytics 管理员负责在数据字典中整理和维护每个组件的信息。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -30,7 +30,7 @@ Analytics 管理员负责整理有关数据字典中每个组件的信息，并�
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 的数据字典](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/components/data-dictionary/use-data-dictionary){target="_blank"}，以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 的数据字典](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/components/data-dictionary/use-data-dictionary){target="_blank"}，以观看演示视频。
 
 {{videoaa}}
 
@@ -66,7 +66,7 @@ Analytics 管理员可通过数据字典实现以下用途：
 
 * 确定尚未批准的组件。
 
-* 直接在 Analysis Workspace 中更新组件描述。对数据字典中组件描述所做的任何更新都会反映在数据视图中。
+* 直接在 Analysis Workspace 中更新组件描述。 对数据字典中组件描述所做的任何更新都会反映在数据视图中。
 
   同样，对数据视图中组件描述所做的任何更新都会反映在 Analysis Workspace 中。
 

@@ -4,10 +4,10 @@ description: 了解如何使用和解读Analysis Workspace中的“媒体平均�
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1681'
-ht-degree: 91%
+source-wordcount: '1708'
+ht-degree: 88%
 
 ---
 
@@ -27,13 +27,13 @@ ht-degree: 91%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaaverageminuteaudience_panel"
 >title="媒体受众平均逗留分钟数"
->abstract="显示特定媒体内容的性能或自定义时段内的性能。指定报告维度，可选择将内容分段。"
+>abstract="显示特定媒体内容的性能或自定义时段内的性能。 指定报告维度，可选择将内容分段。"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ 中的媒体平均受众访问分钟数面板。<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** 版本的[媒体平均受众访问分钟数面板](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_&#x200B;中的“媒体平均受众访问分钟数”面板。<br/>_请参阅本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版本的[媒体平均受众访问分钟数面板](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel)。_
 
 >[!ENDSHADEBOX]
 
@@ -49,7 +49,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 * 查看特定媒体流耗时除以内容持续时间，或
 * 在选定粒度的自定义时间段内的查看耗时。
 
-媒体平均受众访问分钟数面板可让您通过比较任意长度或类型的节目来了解内容的平均使用情况。例如，通过比较 30 分钟的情景喜剧和 3 小时的体育赛事，您可以了解平均使用情况。
+媒体平均受众访问分钟数面板可让您通过比较任意长度或类型的节目来了解内容的平均使用情况。 例如，通过比较 30 分钟的情景喜剧和 3 小时的体育赛事，您可以了解平均使用情况。
 
 此外，您还可以使用媒体平均受众访问分钟数面板将此数字平均受众访问分钟数与线性电视平均访问分钟数量度进行比较或附加到其上。
 
@@ -59,13 +59,13 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 * 允许在处理视图后更新持续时间分类（如果持续时间分类不存在或需要更正）
 
-  如果在使用量度时进行此更新，则持续时间分类不存在（如果不存在分类）。或者持续时间分类已过期（如果分类存在但不正确）。
+  如果在使用量度时进行此更新，则持续时间分类不存在（如果不存在分类）。 或者持续时间分类已过期（如果分类存在但不正确）。
 
 ## 使用
 
 要使用&#x200B;**[!UICONTROL 媒体平均受众访问分钟数]**&#x200B;面板：
 
-1. 创建&#x200B;**[!UICONTROL 媒体平均受众访问分钟数]**&#x200B;面板。有关如何创建面板的信息，请参阅[创建面板](panels.md#create-a-panel)。
+1. 创建&#x200B;**[!UICONTROL 媒体平均受众访问分钟数]**&#x200B;面板。 有关如何创建面板的信息，请参阅[创建面板](panels.md#create-a-panel)。
 
 1. 确保为面板选择的数据视图已从流媒体集合中配置了组件。
 
@@ -81,11 +81,11 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
    | 设置 | 描述 |
    |---------|------------|
-   | **面板日期范围** | 面板日期范围的默认值为&#x200B;[!UICONTROL **本月**]。您可以对其进行编辑以一次查看一天或几个月的数据。<br></br>这个可视化图表最多可显示 1440 行数据（例如，以分钟级别的粒度划分 24 小时）。如果日期范围和粒度的组合产生的行数超过了 1440 行，则将自动更新粒度以适应完整的日期范围。 |
-   | [!UICONTROL **将某个区段（或任何其他组件）放置到此处**] | 如同其他面板一样，此设置会根据您已创建的区段将您的选择分段。此设置是查看特定平台、直播或其他常见媒体区段的一个好方法。 |
-   | [!UICONTROL **计算此项的量度**] | 选择是否要了解[**[!UICONTROL 特定内容]**](#specific-content)的平均受众访问分钟数。或者如果您想了解[**[!UICONTROL 自定义时间段]**](#custom-time-period)的平均受众访问分钟数。<br/><br/>选择&#x200B;[!UICONTROL **自定义时间段**]： <ul><li>如果持续时间不可用，或者 </li><li>如果您想查看包含多条内容时间序列的平均受众访问分钟数，或者</li><li>没有指定特定持续时间内容（如在直播或活动期间）的平均受众访问分钟数</li></ul></li></li></ul> <p>此设置更改工作流程和报告输出。</p> |
+   | **面板日期范围** | 面板日期范围的默认值为&#x200B;[!UICONTROL **本月**]。 您可以对其进行编辑以一次查看一天或几个月的数据。<br></br> 这个可视化图表限制为 1440 行数据（例如，以分钟作为粒度级别来表示 24 小时）。 如果日期范围和粒度的组合产生 1440 行以上，则将自动更新粒度以容纳这个完整的日期范围。 |
+   | [!UICONTROL **将某个区段（或任何其他组件）放置到此处**] | 如同其他面板一样，此设置会根据您已创建的区段将您的选择分段。 此设置是查看特定平台、直播或其他常见媒体区段的一个好方法。 |
+   | [!UICONTROL **计算此项的量度**] | 选择是否要了解[**[!UICONTROL 特定内容]**](#specific-content)的平均受众访问分钟数。 或者如果您想了解[**[!UICONTROL 自定义时间段]**](#custom-time-period)的平均受众访问分钟数。<br/><br/>选择&#x200B;[!UICONTROL **自定义时间段**]： <ul><li>如果持续时间不可用，或者 </li><li>如果您想查看包含多条内容时间序列的平均受众访问分钟数，或者</li><li>没有指定特定持续时间内容（如在直播或活动期间）的平均受众访问分钟数</li></ul></li></li></ul> <p>此设置更改工作流程和报告输出。</p> |
 
-1. 根据您在[计算](#specific-content)的量度下拉菜单中选择的选项，继续使用[特定内容](#custom-time-period)或&#x200B;[!UICONTROL **自定义时间段**]。
+1. 根据您在&#x200B;[!UICONTROL **计算**]&#x200B;的量度下拉菜单中选择的选项，继续使用[特定内容](#specific-content)或[自定义时间段](#custom-time-period)。
 
 #### 特定内容
 
@@ -94,7 +94,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
    | 设置 | 描述 |
    |---------|------------|
    | [!UICONTROL **报告维度**] | 当选择特定内容时，可选择报告输出以使用视频名称或内容 ID 字段显示内容及其相关联的平均受众访问分钟数。 |
-   | [!UICONTROL **过滤内容的依据（可选）**] | 可根据所需的查看方式或数据的结构化方式选择如何过滤特定内容。 <ul>[!UICONTROL **节目、季、集**]：将在下拉菜单中显示您可用的节目，从中可使用搜索（或通过从左列拖放节目名称）进行过滤。可在这里结束选择以查看您的各季节目，也可按个别的季过滤，然后按个别的集过滤。此设置显示这些节目、季和集在所选时间段的数据。</li><li>[!UICONTROL **自定义维度**]：如果您的节目名称在自定义维度下，可以通过在维度（可选）下拉菜单中搜索或使用左列搜索来查找该节目。 该维度项根据该选择自动填充，并被视为一集。</li><li>[!UICONTROL **无**]：显示在所选时间段上有平均受众访问分钟数数据的所有视频名称。（此选项默认为选中）。</li></ul> |
+   | [!UICONTROL **过滤内容的依据（可选）**] | 可根据所需的查看方式或数据的结构化方式选择如何过滤特定内容。 <ul>[!UICONTROL **节目、季、集**]：将在下拉菜单中显示您可用的节目，从中可使用搜索（或通过从左列拖放节目名称）进行过滤。 可在这里结束选择以查看您的各季节目，也可按个别的季过滤，然后按个别的集过滤。 此设置显示这些节目、季和集在所选时间段的数据。</li><li>[!UICONTROL **自定义维度**]：如果您的节目名称在自定义维度下，可以通过在维度（可选）下拉菜单中搜索或使用左列搜索来查找该节目。 该维度项根据该选择自动填充，并被视为一集。</li><li>[!UICONTROL **无**]：显示在所选时间段上有平均受众访问分钟数数据的所有视频名称。 （此选项默认为选中）。</li></ul> |
 
 1. 继续[特定内容高级设置](#specific-content-advanced-settings)来配置高级设置。
 
@@ -104,8 +104,8 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
    | 选项 | 描述 |
    |---------|------------|
-   | **[!UICONTROL 表格设置]** | 默认选项&#x200B;**[!UICONTROL 在表格中显示计算的值]**，其中显示平均受众访问分钟数的分子和分母作为表中的前几列。取消选择此选项将移除这两列。平均受众访问分钟数列仍保留在表中视频名称或内容 ID 的旁边。 |
-   | **[!UICONTROL 逗留时间量度]** | 您可以选择默认&#x200B;**[!UICONTROL 内容逗留时间]**&#x200B;选项，其中仅包括内容时间。或者您可以选择使用&#x200B;**[!UICONTROL 媒体逗留时间]**，它将内容和广告时间一起作为平均受众访问分钟数的分子计算。 |
+   | **[!UICONTROL 表格设置]** | 默认选项&#x200B;**[!UICONTROL 在表格中显示计算的值]**，其中显示平均受众访问分钟数的分子和分母作为表中的前几列。 取消选择此选项将移除这两列。 平均受众访问分钟数列仍保留在表中视频名称或内容 ID 的旁边。 |
+   | **[!UICONTROL 逗留时间量度]** | 您可以选择默认&#x200B;**[!UICONTROL 内容逗留时间]**&#x200B;选项，其中仅包括内容时间。 或者您可以选择使用&#x200B;**[!UICONTROL 媒体逗留时间]**，它将内容和广告时间一起作为平均受众访问分钟数的分子计算。 |
 
 1. 选择&#x200B;[!UICONTROL **生成**]&#x200B;以完成媒体平均受众访问分钟数面板的创建。
 
@@ -117,8 +117,8 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
    | 选项 | 描述 |
    |---------|------------|
-   | **[!UICONTROL 粒度]** | 默认粒度为 [!UICONTROL **5 分钟**]，但可选择任何粒度作为选定时间段内时间序列的分母。例如，选择下午12:00点到下午12:30点，粒度为5分钟，将返回这整个半小时的平均受众访问分钟数，以及每5分钟时段的平均受众访问分钟数，共6行。 这些行用作时间序列图的数据点。 |
-   | [!UICONTROL **过滤内容的依据（可选）**] | 可根据所需的查看方式或数据的结构化方式选择如何过滤特定内容。 <ul>[!UICONTROL **节目、季、集**]：将在下拉菜单中显示您可用的节目，从中可使用搜索（或通过从左列拖放节目名称）进行过滤。可在这里结束选择以查看您的各季节目，也可按个别的季过滤，然后按个别的集过滤。此设置显示这些节目、季和集在所选时间段的数据。</li><li>[!UICONTROL **自定义维度**]：如果您的节目名称在自定义维度下，可以通过在维度（可选）菜单中搜索或使用左列搜索来查找该节目。 该维度项根据该选择自动填充，并被视为一集。</li><li>[!UICONTROL **无**]：显示在所选时间段上有平均受众访问分钟数数据的所有视频名称。（此选项默认为选中）。</li></ul> |
+   | **[!UICONTROL 粒度]** | 默认粒度为 [!UICONTROL **5 分钟**]，但可选择任何粒度作为选定时间段内时间序列的分母。 例如，选择下午12:00点到下午12:30点，粒度为5分钟，将返回这整个半小时的平均受众访问分钟数，以及每5分钟时段的平均受众访问分钟数，共6行。 这些行用作时间序列图的数据点。 |
+   | [!UICONTROL **过滤内容的依据（可选）**] | 可根据所需的查看方式或数据的结构化方式选择如何过滤特定内容。 <ul>[!UICONTROL **节目、季、集**]：将在下拉菜单中显示您可用的节目，从中可使用搜索（或通过从左列拖放节目名称）进行过滤。 可在这里结束选择以查看您的各季节目，也可按个别的季过滤，然后按个别的集过滤。 此设置显示这些节目、季和集在所选时间段的数据。</li><li>[!UICONTROL **自定义维度**]：如果您的节目名称在自定义维度下，可以通过在维度（可选）菜单中搜索或使用左列搜索来查找该节目。 该维度项根据该选择自动填充，并被视为一集。</li><li>[!UICONTROL **无**]：显示在所选时间段上有平均受众访问分钟数数据的所有视频名称。 （此选项默认为选中）。</li></ul> |
 
 1. 继续[自定义时间段高级设置](#custom-time-period-advanced-settings)来配置高级设置。
 
@@ -128,7 +128,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
    | 选项 | 描述 |
    |---------|------------|
-   | **[!UICONTROL 表格设置]** | 默认设置在表格中显示计算的值，其中显示平均受众访问分钟数的分子和分母作为表中的前几列。取消选择此选项将删除这两列，这样在时间段旁仅留下平均受众访问分钟数。 |
+   | **[!UICONTROL 表格设置]** | 默认设置在表格中显示计算的值，其中显示平均受众访问分钟数的分子和分母作为表中的前几列。 取消选择此选项将删除这两列，这样在时间段旁仅留下平均受众访问分钟数。 |
 
 1. 选择&#x200B;[!UICONTROL **生成**]&#x200B;以完成媒体平均受众访问分钟数面板的创建。
 
@@ -152,7 +152,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 #### 特定内容数据源
 
-媒体平均受众访问分钟数面板仅使用平均受众访问分钟数量度来收集数据。面板中不能使用细分或其他量度。
+媒体平均受众访问分钟数面板仅使用平均受众访问分钟数量度来收集数据。 面板中不能使用细分或其他量度。
 
 | 量度 | 描述 |
 |--------|-------------|
@@ -177,7 +177,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 #### 自定义时间段数据源
 
-媒体平均受众访问分钟数面板仅使用平均受众访问分钟数量度来收集数据。面板中不能使用细分或其他量度。
+媒体平均受众访问分钟数面板仅使用平均受众访问分钟数量度来收集数据。 面板中不能使用细分或其他量度。
 
 | 量度 | 描述 |
 |---|---|
@@ -186,7 +186,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!MORELIKETHIS]
 >
-> [Create a panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+> [创建面板](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
 > [媒体并行查看者面板](media-concurrent-viewers.md)
 > [媒体播放耗时面板](media-playback-time-spent.md)
 >

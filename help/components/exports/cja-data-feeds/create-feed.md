@@ -3,7 +3,7 @@ title: 创建数据馈送
 description: 了解如何创建数据馈送以及提供给 Adobe 的文件信息。
 hide: true
 feature: Components
-source-git-commit: 54a7f59847b752a4e898b488a90520e8b31d3622
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
 source-wordcount: '2439'
 ht-degree: 19%

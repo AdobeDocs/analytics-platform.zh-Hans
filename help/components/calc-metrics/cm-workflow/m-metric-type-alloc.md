@@ -3,10 +3,10 @@ description: 了解量度类型和归因。
 title: 量度类型和归因
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 100%
+source-wordcount: '620'
+ht-degree: 99%
 
 ---
 
@@ -23,21 +23,21 @@ ht-degree: 100%
 
      | 量度类型 | 定义 |
      |---|---|
-     | **[!UICONTROL 标准]** | 如果一个公式包含一个单一的标准量度，它会显示与其相对的非计算量度的相同数据。标准量度可用于创建特定于每个单独行项目的计算量度。 <p>例如，![事件](/help/assets/icons/Event.svg) **[!UICONTROL 订单]** ![划分](/help/assets/icons/Divide.svg) ![事件](/help/assets/icons/Event.svg) **[!UICONTROL 会话]** 会获取该特定行项目的订单数，并将其除以该特定行项目的会话数。 |
-     | **[!UICONTROL 全部总计]** | 使用每个行项目中报告时段的&#x200B;**[!UICONTROL 全部总计]**。如果一个公式是由单个全部总计量度组成的，则计算量度会在每个行项目上显示相同的“全部总计”数字。全部总计量度可用于创建与总计数据相比较的计算量度。 <p>例如，![事件](/help/assets/icons/Event.svg) **[!UICONTROL 订单]** ![划分](/help/assets/icons/Divide.svg) ![事件](/help/assets/icons/Event.svg) **[!UICONTROL 总会话数]** 显示订单占所有会话的比例，而不仅仅是特定行项目的会话。在此示例中，您指定计算量度中![事件](/help/assets/icons/Event.svg)**[!UICONTROL 会话]**&#x200B;量度的&#x200B;**[!UICONTROL 全部总计]**，这将自动将其转换为![事件](/help/assets/icons/Event.svg)**[!UICONTROL 总会话数]**。 |
+     | **[!UICONTROL 标准]** | 如果一个公式包含一个单一的标准量度，它会显示与其相对的非计算量度的相同数据。 标准量度可用于创建特定于每个单独行项目的计算量度。 <p>例如，![事件](/help/assets/icons/Event.svg) **[!UICONTROL 订单]** ![划分](/help/assets/icons/Divide.svg) ![事件](/help/assets/icons/Event.svg) **[!UICONTROL 会话]** 会获取该特定行项目的订单数，并将其除以该特定行项目的会话数。 |
+     | **[!UICONTROL 全部总计]** | 使用每个行项目中报告时段的&#x200B;**[!UICONTROL 全部总计]**。 如果一个公式是由单个全部总计量度组成的，则计算量度会在每个行项目上显示相同的“全部总计”数字。 全部总计量度可用于创建与总计数据相比较的计算量度。 <p>例如，![事件](/help/assets/icons/Event.svg) **[!UICONTROL 订单]** ![划分](/help/assets/icons/Divide.svg) ![事件](/help/assets/icons/Event.svg) **[!UICONTROL 总会话数]** 显示订单占所有会话的比例，而不仅仅是特定行项目的会话。 在此示例中，您指定计算量度中![事件](/help/assets/icons/Event.svg)**[!UICONTROL 会话]**&#x200B;量度的&#x200B;**[!UICONTROL 全部总计]**，这将自动将其转换为![事件](/help/assets/icons/Event.svg)**[!UICONTROL 总会话数]**。 |
 
    * 指定&#x200B;**[!UICONTROL 归因]**。
 
       1. 您可以：
 
          * 禁用&#x200B;**[!UICONTROL 使用非默认归因模型]**&#x200B;来使用默认的列归因模型，即“上次接触”，其回溯期为 30 天。
-         * 启用&#x200B;**[!UICONTROL 使用非默认的归因模型]**。在&#x200B;**[!UICONTROL 列归因模型]**&#x200B;对话框中，
+         * 启用&#x200B;**[!UICONTROL 使用非默认的归因模型]**。 在&#x200B;**[!UICONTROL 列归因模型]**&#x200B;对话框中，
 
             * 从[归因模型](#attribution-models)中选择一个&#x200B;**[!UICONTROL 模型]**。
             * 从[容器](#container)选项中选择一个&#x200B;**[!UICONTROL 容器]**。
-            * 从[回溯时间范围](#lookback-window)选项中选择&#x200B;**[!UICONTROL 回溯时间范围]**。如果您选择&#x200B;**[!UICONTROL 自定义时间]**，则可定义时段，单位为&#x200B;**[!UICONTROL 分钟]**&#x200B;至&#x200B;**[!UICONTROL 季度]**。
+            * 从[回溯时间范围](#lookback-window)选项中选择&#x200B;**[!UICONTROL 回溯时间范围]**。 如果您选择&#x200B;**[!UICONTROL 自定义时间]**，则可定义时段，单位为&#x200B;**[!UICONTROL 分钟]**&#x200B;至&#x200B;**[!UICONTROL 季度]**。
 
-      1. 选择&#x200B;**[!UICONTROL 应用]**&#x200B;来应用非默认归因模型。选择“取消”即可取消。
+      1. 选择&#x200B;**[!UICONTROL 应用]**&#x200B;来应用非默认归因模型。 选择“取消”即可取消。
 
      如果您已定义非默认归因模型，请选择&#x200B;**[!UICONTROL 编辑]**&#x200B;来修改选择。
 
@@ -144,7 +144,7 @@ ht-degree: 100%
 {{attribution-container}}
 
 
-## 回溯时间范围 {#lookback-winwow}
+## 回顾窗口 {#lookback-winwow}
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_lookbackwindow"

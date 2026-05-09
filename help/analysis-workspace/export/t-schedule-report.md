@@ -6,10 +6,10 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
-source-git-commit: 973e999b611d578da12018e60becf48efd7a76f8
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 51%
+source-wordcount: '838'
+ht-degree: 50%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 51%
    * [!UICONTROL **CSV**]：如果您需要纯文本数据，请选择此选项。
    * [!UICONTROL **PDF**]：如果您希望下载的文件包含项目中所有显示（可见）的表和可视化，请选择此选项。
 1. （可选）使用&#x200B;**[!UICONTROL Description]**&#x200B;添加要包含在电子邮件中的描述。
-1. 添加收件人或组。您还可以输入电子邮件地址。
+1. 添加收件人或组。 您还可以输入电子邮件地址。
 1. （仅适用于Healthcare Shield客户）提供[密码保护计划报告](#password-protect-a-new-scheduled-project)的密码。
 1. （可选）选择&#x200B;**[!UICONTROL 显示计划选项]**&#x200B;到[计划文件导出](#schedule-file-export)。
 1. 单击&#x200B;**[!UICONTROL 立即发送]**。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;即可取消。
@@ -51,7 +51,7 @@ ht-degree: 51%
    * [!UICONTROL **CSV**]：如果您需要纯文本数据，请选择此选项。
    * [!UICONTROL **PDF**]：如果您希望下载的文件包含项目中所有显示（可见）的表和可视化，请选择此选项。
 1. （可选）使用&#x200B;**[!UICONTROL Description]**&#x200B;添加要包含在电子邮件中的描述。
-1. 添加收件人或组。您还可以输入电子邮件地址。
+1. 添加收件人或组。 您还可以输入电子邮件地址。
 1. （仅适用于Healthcare Shield客户）提供[密码保护计划报告](#password-protect-a-new-scheduled-project)的密码。
 1. 确保已选择&#x200B;**[!UICONTROL 显示计划选项]**。
 1. 选择&#x200B;**[!UICONTROL 频率]**。 您可以在以下各项之间进行选择：
@@ -66,7 +66,7 @@ ht-degree: 51%
    | **[!UICONTROL 按月份中的日期每年发送]** | 选择&#x200B;**[!UICONTROL 周中日]**，选择&#x200B;**[!UICONTROL 月中周]**，然后选择&#x200B;**[!UICONTROL 月中月]**。 |
    | **[!UICONTROL 按特定日期每年发送]** | 选择&#x200B;**[!UICONTROL 月份]**&#x200B;并从&#x200B;**[!UICONTROL 发送日期]**&#x200B;中选择一个值。 |
 
-1. 输入从&#x200B;**[!UICONTROL 开始的]**&#x200B;开始日期。 或者，选择![日历](/help/assets/icons/Calendar.svg)以从日历中选择开始日期。
+1. 输入从&#x200B;]**开始的**[!UICONTROL &#x200B;开始日期。 或者，选择![日历](/help/assets/icons/Calendar.svg)以从日历中选择开始日期。
 
 1. 在&#x200B;**[!UICONTROL 结束日期]**&#x200B;中输入结束日期。 或者，选择![日历](/help/assets/icons/Calendar.svg)以从日历中选择结束日期。
 1. 选择&#x200B;**[!UICONTROL 按计划]**&#x200B;发送。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;即可取消。
@@ -79,7 +79,7 @@ ht-degree: 51%
 >[!CONTEXTUALHELP]
 >id="workspace_sendfile_password"
 >title="密码加密"
->abstract="所提供的密码将会用于对计划项目的文件进行加密。您组织的安全要求需要密码加密。"
+>abstract="所提供的密码将会用于对计划项目的文件进行加密。 您组织的安全要求需要密码加密。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -94,7 +94,7 @@ Adobe 使用密码来加密计划项目，无论它们是以 .pdf 还是 .csv �
 
 * 当有人创建一个新的计划项目时。
 
-* 即将发送现有的计划项目时。在设置好密码保护之前，当前计划的项目会被禁用。计划项目的所有者会收到一封电子邮件，通知他们这一要求。
+* 即将发送现有的计划项目时。 在设置好密码保护之前，当前计划的项目会被禁用。 计划项目的所有者会收到一封电子邮件，通知他们这一要求。
 
 ### 密码要求
 
@@ -103,7 +103,7 @@ Adobe 使用密码来加密计划项目，无论它们是以 .pdf 还是 .csv �
 ### 密码保护新的计划项目
 
 1. 保存项目后，转到&#x200B;**[!UICONTROL 分享]** > **[!UICONTROL 立即发送文件]**，或&#x200B;**[!UICONTROL 分享]** > **[!UICONTROL 按计划发送文件]**。
-1. 在[立即发送文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=zh-Hans#now)或[按计划发送文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=zh-Hans#schedule)下面，按照上面的说明操作。
+1. 在[立即发送文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#now)或[按计划发送文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#schedule)下面，按照上面的说明操作。
 
 ### 密码保护现有计划项目
 
@@ -114,7 +114,7 @@ Adobe 使用密码来加密计划项目，无论它们是以 .pdf 还是 .csv �
 1. 登录 Customer Journey Analytics。
 1. 选择&#x200B;**[!UICONTROL 查看计划项目]**。
 1. 在&#x200B;**[!UICONTROL 编辑计划项目]**&#x200B;对话框中，输入密码，然后再输入一次。
-1. 让计划项目的接收者知晓此密码。请不要将密码分发给不是计划项目接受者的人员。
+1. 让计划项目的接收者知晓此密码。 请不要将密码分发给不是计划项目接受者的人员。
 
 
 

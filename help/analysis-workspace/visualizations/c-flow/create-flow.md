@@ -4,9 +4,9 @@ title: 配置流量可视化
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1759'
+source-wordcount: '1843'
 ht-degree: 80%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 80%
 >[!CONTEXTUALHELP]
 >id="workspace_flow_startswith"
 >title="开始于"
->abstract="此字段只能在初始生成时设置。要更新此字段，请选择&#x200B;**[!UICONTROL 重置]**&#x200B;以生成新的流量可视化图表。"
+>abstract="此字段只能在初始生成时设置。 要更新此字段，请选择&#x200B;**[!UICONTROL 重置]**&#x200B;以生成新的流量可视化图表。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_contains"
 >title="包含"
->abstract="此字段只能在初始生成时设置。要更新此字段，请选择&#x200B;**[!UICONTROL 重置]**&#x200B;以生成新的流量可视化图表。"
+>abstract="此字段只能在初始生成时设置。 要更新此字段，请选择&#x200B;**[!UICONTROL 重置]**&#x200B;以生成新的流量可视化图表。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_endswith"
 >title="结束于"
->abstract="此字段只能在初始生成时设置。要更新此字段，请选择&#x200B;**[!UICONTROL 重置]**&#x200B;以生成新的流量可视化图表。"
+>abstract="此字段只能在初始生成时设置。 要更新此字段，请选择&#x200B;**[!UICONTROL 重置]**&#x200B;以生成新的流量可视化图表。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_pathingdimension"
@@ -46,7 +46,7 @@ ht-degree: 80%
 >[!CONTEXTUALHELP]
 >id="workspace_flow_include_repeats_default"
 >title="包括重复项"
->abstract="流量可视化图表基于某个维度的实例。此设置使您可以选择要包含还是排除重复实例，例如：页面重新加载。"
+>abstract="流量可视化图表基于某个维度的实例。 此设置使您可以选择要包含还是排除重复实例，例如：页面重新加载。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_limit_occurrence"
@@ -56,17 +56,17 @@ ht-degree: 80%
 >[!CONTEXTUALHELP]
 >id="workspace_flow_numberofcolumns"
 >title="列数"
->abstract="此字段只能在初始生成时设置。要更新此字段，请选择&#x200B;**[!UICONTROL 重置]**&#x200B;以生成新的流量可视化图表。"
+>abstract="此字段只能在初始生成时设置。 要更新此字段，请选择&#x200B;**[!UICONTROL 重置]**&#x200B;以生成新的流量可视化图表。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_itemsexpandedpercolumn"
 >title="每列扩展的项"
->abstract="此字段只能在初始生成时设置。要更新此字段，请选择&#x200B;**[!UICONTROL 重置]**&#x200B;以生成新的流量可视化图表。"
+>abstract="此字段只能在初始生成时设置。 要更新此字段，请选择&#x200B;**[!UICONTROL 重置]**&#x200B;以生成新的流量可视化图表。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_resettoupdate"
 >title="重置以更新"
->abstract="此字段只能在初始生成时设置。要更新此字段，请选择&#x200B;**[!UICONTROL 重置]**&#x200B;以生成新的流量可视化图表。"
+>abstract="此字段只能在初始生成时设置。 要更新此字段，请选择&#x200B;**[!UICONTROL 重置]**&#x200B;以生成新的流量可视化图表。"
 
 
 流量可视化帮助您了解源自网站或应用程序上特定转化事件的旅程。 或导致特定的转化事件。 可视化图表通过维度（和维度项）或量度跟踪路径。
@@ -77,7 +77,7 @@ ht-degree: 80%
 
 ## 使用
 
-1. 添加 ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL 流量]**&#x200B;可视化图表。请参阅[将可视化图表添加到面板](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel)。
+1. 添加 ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL 流量]**&#x200B;可视化图表。 请参阅[将可视化图表添加到面板](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel)。
 
 1. 使用以下选项之一锚定流量可视化图表：
 
@@ -85,7 +85,7 @@ ht-degree: 80%
    * [!UICONTROL **包含**]（维度或项目），或
    * 以（量度、维度或项目）[!UICONTROL **结束**]
 
-   其中每种类别在屏幕上都显示为一个&#x200B;*放置区域*。可以通过3种方式填充放置区域：
+   其中每种类别在屏幕上都显示为一个&#x200B;*放置区域*。 可以通过3种方式填充放置区域：
 
    * 使用下拉菜单选择量度或维度。
    * 从左侧面板中拖动维度或量度。
@@ -95,7 +95,7 @@ ht-degree: 80%
    >
    >计算量度不能用于&#x200B;**[!UICONTROL 开始于]**&#x200B;或&#x200B;**[!UICONTROL 结束于]**&#x200B;字段。
 
-1. 如果您选择一个量度，则还需要提供一个&#x200B;[!UICONTROL **“路径”维度**]，用作通往或者来自选定组件的路径，如此处所示。默认的是 [!UICONTROL **页面**]。
+1. 如果您选择一个量度，则还需要提供一个&#x200B;[!UICONTROL **“路径”维度**]，用作通往或者来自选定组件的路径，如此处所示。 默认的是 [!UICONTROL **页面**]。
 
    ![流量配置](assets/flow-configure.png)
 
@@ -104,16 +104,16 @@ ht-degree: 80%
 
    | 设置 | 描述 |
    | --- | --- |
-   | **[!UICONTROL 包装标签]** | 通常情况下，流量元素上的标签会被截断以节约屏幕资源，但您可以通过选中此框使整个标签可见。默认值 = 取消选中。 |
-   | **[!UICONTROL 包括重复实例]** | 流量可视化图表基于某个维度的实例。此设置使您可以选择包含还是排除重复实例，例如页面重新载入。但是，不能从包含多值维度（例如 listVar、listProp、s.product、推销 eVar 等）的流量可视化图表中删除重复项。 <p>默认禁用此选项。</p> |
-   | **[!UICONTROL 限制到第一次/最后一次发生次数]** | 将路径限制为以维度、项目或量度的第一次或最后一次发生次数开始或结束的路径。有关更详细的解释，请参阅[限制到第一次/最后一次发生次数](#example-scenario-for-limit-to-firstlast-occurrence)。 |
-   | **[!UICONTROL 列数]** | 流量图中所需的列数。您最多可以指定 5 个列。 |
-   | **[!UICONTROL 每列扩展的项]** | 每列中所需的项数。您最多可以指定每列扩展 10 个项。 |
+   | **[!UICONTROL 包装标签]** | 通常情况下，流量元素上的标签会被截断以节约屏幕资源，但您可以通过选中此框使整个标签可见。  默认值 = 取消选中。 |
+   | **[!UICONTROL 包括重复实例]** | 流量可视化图表基于某个维度的实例。 此设置使您可以选择包含还是排除重复实例，例如页面重新载入。 但是，不能从包含多值维度（例如 listVar、listProp、s.product、推销 eVar 等）的流量可视化图表中删除重复项。 <p>默认禁用此选项。</p> |
+   | **[!UICONTROL 限制到第一次/最后一次发生次数]** | 将路径限制为以维度、项目或量度的第一次或最后一次发生次数开始或结束的路径。 有关更详细的解释，请参阅[限制到第一次/最后一次发生次数](#example-scenario-for-limit-to-firstlast-occurrence)。 |
+   | **[!UICONTROL 列数]** | 流量图中所需的列数。 您最多可以指定 5 个列。 |
+   | **[!UICONTROL 每列扩展的项]** | 每列中所需的项数。 您最多可以指定每列扩展 10 个项。 |
    | **[!UICONTROL 流量容器]** | 您可以在&#x200B;**[!UICONTROL 全局帐户]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 帐户]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 机会]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 购买群]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 会话]**&#x200B;和&#x200B;**[!UICONTROL 人员]**&#x200B;之间切换以分析路径。 这些设置可帮助您了解特定容器级别（跨会话）的参与情况，或将分析限制在单个会话。 |
 
    >[!IMPORTANT]
    >
-   >**[!UICONTROL 列数]**&#x200B;和&#x200B;**[!UICONTROL 每列扩展的项]**&#x200B;的组合确定创建流量可视化图表所需的基础请求数量。该数量越多，渲染可视化图表所需的时间就越长。
+   >**[!UICONTROL 列数]**&#x200B;和&#x200B;**[!UICONTROL 每列扩展的项]**&#x200B;的组合确定创建流量可视化图表所需的基础请求数量。 该数量越多，渲染可视化图表所需的时间就越长。
 
 
 1. 选择&#x200B;**[!UICONTROL 生成]**。
@@ -125,13 +125,13 @@ ht-degree: 80%
 
 1. 创建流量可视化图表，如上所述。
 1. 将&#x200B;[!UICONTROL **页面**]&#x200B;维度拖入&#x200B;**[!UICONTROL 包含]**&#x200B;字段中，然后选择&#x200B;[!UICONTROL **生成**]。
-1. 流量可视化图表使用可视化图表中心的关注节点中可见的查看次数最多的页面来生成。您还可以看到进入该关注页面的查看次数最多的页面（位于关注节点的左侧）以及离开该关注页面的查看次数最多的页面（位于关注节点的右侧）。
+1. 流量可视化图表使用可视化图表中心的关注节点中可见的查看次数最多的页面来生成。 您还可以看到进入该关注页面的查看次数最多的页面（位于关注节点的左侧）以及离开该关注页面的查看次数最多的页面（位于关注节点的右侧）。
 1. 分析流量中的数据，如[配置](#configure)中所述。
 
 
 ## 配置
 
-流量配置的摘要显示在可视化图表的顶部。图中的路径是成比例的。 活动量较大的路径看起来较粗。
+流量配置的摘要显示在可视化图表的顶部。 图中的路径是成比例的。 活动量较大的路径看起来较粗。
 
 ![显示访问结束、路径维度的流量输出示例：页面和流量容器：访客。](assets/flow-output.png)
 
@@ -155,12 +155,12 @@ ht-degree: 80%
 
 ## 过滤器
 
-当您将光标悬停在每列上方时，会显示出一个![过滤器](/help/assets/icons/Filter.svg)过滤器。通过选择过滤器，您将获得与自由格式表中存在的相同的过滤器对话框。请参阅[过滤和排序](freeform-table/../../freeform-table/filter-and-sort.md)。
+当您将光标悬停在每列上方时，会显示出一个![过滤器](/help/assets/icons/Filter.svg)过滤器。 通过选择过滤器，您将获得与自由格式表中存在的相同的过滤器对话框。 请参阅[过滤和排序](freeform-table/../../freeform-table/filter-and-sort.md)。
 
-* 使用&#x200B;**[!UICONTROL 显示高级]**&#x200B;来配置高级设置，使用运算符列表包含或排除某些条件。有关更多信息，请参阅[过滤和排序](../freeform-table/filter-and-sort.md)。
-* 一旦您过滤了某一列，该特定列就会反映出过滤结果。蓝色![过滤器](/help/assets/icons/FilterColored.svg)表示该列已被过滤。过滤器可以缩小列，仅显示过滤器中允许的项目。或除了所需的一个项目，移除过滤器中的所有项目。
+* 使用&#x200B;**[!UICONTROL 显示高级]**&#x200B;来配置高级设置，使用运算符列表包含或排除某些条件。 有关更多信息，请参阅[过滤和排序](../freeform-table/filter-and-sort.md)。
+* 一旦您过滤了某一列，该特定列就会反映出过滤结果。 蓝色![过滤器](/help/assets/icons/FilterColored.svg)表示该列已被过滤。  过滤器可以缩小列，仅显示过滤器中允许的项目。 或除了所需的一个项目，移除过滤器中的所有项目。
 * 只要有数据流入其余节点，所有下游和上游列都保持不变。
-* 要移除过滤器，请选择![过滤器](/help/assets/icons/Filter.svg)以打开过滤器菜单。删除应用的任何过滤器，然后选择&#x200B;**[!UICONTROL 保存]**。流量应返回到其先前的未过滤状态。
+* 要移除过滤器，请选择![过滤器](/help/assets/icons/Filter.svg)以打开过滤器菜单。 删除应用的任何过滤器，然后选择&#x200B;**[!UICONTROL 保存]**。 流量应返回到其先前的未过滤状态。
 
 ## 上下文菜单
 
@@ -172,11 +172,11 @@ ht-degree: 80%
 | **[!UICONTROL 从头开始]** | 返回到自由格式图表生成器，您可从中生成新的流量图表。 |
 | **[!UICONTROL 为此路径创建一个区段]** | 创建区段。 此选择将带您进入区段生成器，您可以在其中配置新区段。 |
 | **[!UICONTROL 细分]** | 按可用维度、量度或时间划分节点。 |
-| **[!UICONTROL 过滤列]** | 显示的过滤选项与自由格式表中的相同。有关可用选项的更多信息，请参阅[过滤和排序表格](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)中的“对表格应用简单或高级过滤器”部分。 |
-| **[!UICONTROL 排除项]**&#x200B;或&#x200B;**[!UICONTROL 还原排除项]** | 从列中删除特定节点，并将其自动创建为列顶部的过滤器。要还原排除项，请从上下文菜单中选择&#x200B;**[!UICONTROL 还原排除项]**。您也可以打开列顶部的区段，移除带有您刚刚排除的项目的Pillbox。 |
+| **[!UICONTROL 过滤列]** | 显示的过滤选项与自由格式表中的相同。 有关可用选项的更多信息，请参阅[过滤和排序表格](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)中的“对表格应用简单或高级过滤器”部分。 |
+| **[!UICONTROL 排除项]**&#x200B;或&#x200B;**[!UICONTROL 还原排除项]** | 从列中删除特定节点，并将其自动创建为列顶部的过滤器。 要还原排除项，请从上下文菜单中选择&#x200B;**[!UICONTROL 还原排除项]**。 您也可以打开列顶部的区段，移除带有您刚刚排除的项目的Pillbox。 |
 | **[!UICONTROL 趋势]** | 为节点创建趋势图表。 |
 | **[!UICONTROL 显示下一列]**/**[!UICONTROL 显示上一列]** | 显示可视化图表的下一列（右）或上一列（左）。 |
-| **[!UICONTROL 隐藏列]**&#x200B;n | 在可视化图表中隐藏选定的列。 |
+| **[!UICONTROL 隐藏列]**n | 在可视化图表中隐藏选定的列。 |
 | **[!UICONTROL 扩展整列]** | 展开列以显示所有节点。 默认情况下，仅显示前五个节点。 |
 | **[!UICONTROL 从选择创建受众]** | 根据所选的列创建受众。 |
 | **[!UICONTROL 折叠整列]** | 隐藏某一列中的所有节点。 |
@@ -185,18 +185,20 @@ ht-degree: 80%
 
 使用此选项时，请记住：
 
-* **[!UICONTROL 限制到第一次/最后一次发生次数]**&#x200B;仅统计序列中的第一次/最后一次发生次数。所有其他满足&#x200B;**[!UICONTROL 开始于]**&#x200B;或&#x200B;**[!UICONTROL 结束于]**&#x200B;标准的发生次数均会被弃用。
-* 如果与&#x200B;**[!UICONTROL 开始于]**&#x200B;流量一起使用，则只包括与开始标准匹配的第一次发生次数。在下面的示例中，包含流量每个步骤中&#x200B;*添加到购物车*&#x200B;和&#x200B;*产品主要类别*&#x200B;的&#x200B;**所有**&#x200B;发生次数。
+* **[!UICONTROL 限制到第一次/最后一次发生次数]**&#x200B;仅统计序列中的第一次/最后一次发生次数。 所有其他满足&#x200B;**[!UICONTROL 开始于]**&#x200B;或&#x200B;**[!UICONTROL 结束于]**&#x200B;标准的发生次数均会被弃用。
+* 如果与&#x200B;**[!UICONTROL 开始于]**流量一起使用，则只包括与开始标准匹配的第一次发生次数。
+在下面的示例中，包含流量每个步骤中*添加到购物车*&#x200B;和&#x200B;*产品主要类别*&#x200B;的&#x200B;**所有**发生次数。
   ![没有限制，第一次](assets/limitofffirst.png)
 
-  在下面的示例中，仅包含流量每个步骤中&#x200B;*添加到购物车*&#x200B;和&#x200B;*产品主要类别*&#x200B;的&#x200B;**第一次**&#x200B;发生次数。
+  在下面的示例中，仅包含流量每个步骤中&#x200B;*添加到购物车*&#x200B;和&#x200B;*产品主要类别*&#x200B;的&#x200B;**第一次**发生次数。
   ![限制，开始](assets/limitonfirst.png)
-* 如果与&#x200B;**[!UICONTROL 结束于]**&#x200B;流量一起使用，则仅包含与结束标准匹配的最后一次发生次数。在下面的示例中，包含流量每个步骤中&#x200B;*产品主要类别*&#x200B;和&#x200B;*添加到购物车*&#x200B;的&#x200B;**所有**&#x200B;发生次数。
+* 如果与&#x200B;**[!UICONTROL 结束于]**流量一起使用，则仅包含与结束标准匹配的最后一次发生次数。
+在下面的示例中，包含流量每个步骤中*产品主要类别*&#x200B;和&#x200B;*添加到购物车*&#x200B;的&#x200B;**所有**发生次数。
   ![没有限制，第一次](assets/limitofflast.png)
 
-  在下面的示例中，仅包含流量每个步骤中&#x200B;*产品主要类别*&#x200B;和&#x200B;*添加到购物车*&#x200B;的&#x200B;**最后一次**&#x200B;发生次数。
+  在下面的示例中，仅包含流量每个步骤中&#x200B;*产品主要类别*&#x200B;和&#x200B;*添加到购物车*&#x200B;的&#x200B;**最后一次**发生次数。
   ![限制，开始](assets/limitonlast.png)
-* 使用的系列因容器而异。如果您使用&#x200B;**[!UICONTROL 会话]**&#x200B;容器，则事件系列仅限于一个会话。  如果您使用任何其他容器（例如，**[!UICONTROL Person]**、**[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}或&#x200B;**[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}），则一系列事件将基于指定的容器，并可能跨多个会话。
+* 使用的系列因容器而异。 如果您使用&#x200B;**[!UICONTROL 会话]**&#x200B;容器，则事件系列仅限于一个会话。  如果您使用任何其他容器（例如，**[!UICONTROL Person]**、**[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}或&#x200B;**[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}），则一系列事件将基于指定的容器，并可能跨多个会话。
 * 在&#x200B;**[!UICONTROL 开始于]**&#x200B;或&#x200B;**[!UICONTROL 结束于]**&#x200B;字段中使用量度或维度项时，可以在高级设置中配置&#x200B;**[!UICONTROL 限制到第一次/最后一次发生次数]**&#x200B;的选项。
 
 

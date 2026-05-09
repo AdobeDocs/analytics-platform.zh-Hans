@@ -4,10 +4,10 @@ title: 地图
 feature: Visualizations
 role: User, Admin
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '2770'
-ht-degree: 10%
+source-wordcount: '2815'
+ht-degree: 11%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 10%
 >[!CONTEXTUALHELP]
 >id="workspace_map_button"
 >title="地图"
->abstract="这种可视化图表通过在地图中叠加量度来表示。这对于识别不同地理区域的数据非常有用。"
+>abstract="这种可视化图表通过在地图中叠加量度来表示。 这对于识别不同地理区域的数据非常有用。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -42,7 +42,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中的地图可视化图表。_<br/>_查看本文的[&#x200B; &#x200B;](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)版本的&#x200B;_&#x200B;**映射**。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的地图可视化。_<br/>_对于本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版本，请参阅[地图](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)。_
 
 >[!ENDSHADEBOX]
 
@@ -50,7 +50,7 @@ Analysis Workspace中的![全球](/help/assets/icons/Globe.svg) **[!UICONTROL �
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [地图可视化图表](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/configure-and-use-the-map-visualization){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[地图可视化图表](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/configure-and-use-the-map-visualization){target="_blank"}。
 
 >[!ENDSHADEBOX]
 
@@ -109,7 +109,7 @@ Adobe提供了多个[预建模板](/help/analysis-workspace/templates/use-templa
 | 地理位置：区域 | [!UICONTROL 地域：地理区域] |
 | 地理位置：城市 | [!UICONTROL 地域：地理城市] |
 | 地理位置：美国 | [!UICONTROL 地域：地理状态] |
-| 美国地区DMA | [!UICONTROL 地域：地域Dma] |
+| 地理美国 DMA | [!UICONTROL 地域：地域Dma] |
 
 要添加这些上下文标签，请执行以下操作：
 
@@ -149,7 +149,7 @@ Customer Journey Analytics中的地图可视化图表与Adobe Analytics中的地
 
 | 功能 | Customer Journey Analytics | Adobe Analytics |
 |---------|----------|---------|
-| 数据源 | 使用数据视图中可用的任何区段作为数据源。 | 提供以下选项： <ul><li>移动设备纬度/经度</li><li>地理Dimension<br/>表示有关访客位置（基于访客的IP地址）的地理分段数据。 </li></ul> |
+| 数据源 | 使用数据视图中可用的任何区段作为数据源。 | 提供以下选项： <ul><li>移动设备经纬度</li><li>地理Dimension<br/>表示有关访客位置（基于访客的IP地址）的地理分段数据。 </li></ul> |
 | 精度 | 对于具有很高精确度的数据集，可以将数据视图中的维度配置为最多显示5位小数。 这可以让地图可视化图表在一米内变得准确。 <p>有关详细信息，请参阅[为维度配置精确位置](#configure-precise-locations-for-dimensions)。</p> | 数据对于[!UICONTROL 国家/地区]、[!UICONTROL 地区]和[!UICONTROL 城市]级别是准确的。 （它不会转到DMA或邮政编码级别。） |
 | 从选定范围中创建区段 | 根据您在地图可视化图表中选择的特定区域创建区段。 <p>有关详细信息，请参阅[从地图可视化图表创建区段](#create-a-segment-from-the-map-visualization)。</p> | 一般而言，根据地图可视化图表中报告的数据创建区段。 |
 | 从所选内容创建受众 | 根据您在地图可视化图表中选择的特定区域创建受众。 <p>有关详细信息，请参阅[从地图可视化图表创建受众](#create-an-audience-from-the-map-visualization)。 | 无法从地图可视化图表创建受众。 |
@@ -163,7 +163,7 @@ Customer Journey Analytics中的地图可视化图表与Adobe Analytics中的地
 >[!CONTEXTUALHELP]
 >id="workspace_map_panel"
 >title="配置地图可视化图表"
->abstract="选择用于构建地图可视化图表的量度或计算量度。您也可以添加区段，以便聚焦于特定的数据子集。<p>可视化图表生成后，您可随时更新此信息。</p>"
+>abstract="选择用于构建地图可视化图表的量度或计算量度。 您也可以添加区段，以便聚焦于特定的数据子集。<p>可视化图表生成后，您可随时更新此信息。</p>"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -171,7 +171,7 @@ Customer Journey Analytics中的地图可视化图表与Adobe Analytics中的地
 
    或
 
-   使用[可视化概述](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)中的[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)部分中所述的任何方式添加地图可视化。
+   使用[可视化概述](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)中的[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)部分中所述的任何方式添加地图可视化。
 
    ![地图配置](assets/map-configuration.png){width="50%"} -
 
@@ -267,7 +267,7 @@ Customer Journey Analytics中的地图可视化图表与Adobe Analytics中的地
    | **[!UICONTROL 样式]** | | |
    | | **[!UICONTROL 颜色主题]** | 显示热图和气泡的颜色方案。 你可以选择珊瑚色、红色、绿色或蓝色。 默认为珊瑚色。 |
    | | **[!UICONTROL 地图样式]** | 您可以从基本、街道、明亮、浅色、深色和卫星中选择。 |
-   | | **[!UICONTROL 群集半径]** | 将像素数量在指定范围之内的数据点组合在一起。默认值为 50。<p>仅当选择&#x200B;**[!UICONTROL 气泡]**&#x200B;作为&#x200B;**[!UICONTROL 映射类型]**&#x200B;时，此选项才可用。</p> |
+   | | **[!UICONTROL 群集半径]** | 将像素数量在指定范围之内的数据点组合在一起。 默认值为 50。<p>仅当选择&#x200B;**[!UICONTROL 气泡]**&#x200B;作为&#x200B;**[!UICONTROL 映射类型]**&#x200B;时，此选项才可用。</p> |
    | | **[!UICONTROL 自定义最大值]** | 允许您更改地图最大值的阈值。 调整此值可调整气泡图或热图值（颜色和大小）相对于您设置的自定义最大值的缩放比例。 |
    | | **[!UICONTROL 显示注释]** | 显示为此可视化图表所做的批注。 |
    | | **[!UICONTROL 隐藏标题]** | 隐藏可视化图表的标题。 |
@@ -338,7 +338,7 @@ Customer Journey Analytics中的地图可视化图表与Adobe Analytics中的地
 
    * **要为更具体的地图区域创建受众：**&#x200B;单击选择工具![地图选择图标](assets/map-selection-icon.png)，拖动鼠标选择所需区域，然后选择&#x200B;**[!UICONTROL 从所选内容创建受众]**。
 
-1. 使用受众生成器来定义新受众。 有关详细信息，请参阅[创建和发布受众](/help/components/audiences/publish.md#audience-builder)中的[受众生成器](/help/components/audiences/publish.md)
+1. 使用受众生成器来定义新受众。 有关详细信息，请参阅[创建和发布受众](/help/components/audiences/publish.md)中的[受众生成器](/help/components/audiences/publish.md#audience-builder)
 
 ## 从地图可视化图表创建趋势线形图
 

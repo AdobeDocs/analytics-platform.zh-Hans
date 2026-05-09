@@ -4,9 +4,9 @@ description: 了解如何查看和管理 Customer Journey Analytics 审核日志
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: 2ef96ad194f8c7acec35bd7635c650af4370531a
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '999'
 ht-degree: 98%
 
 ---
@@ -32,9 +32,9 @@ ht-degree: 98%
 <!-- markdownlint-enable MD034 -->
 
 
-为了提高系统中执行的活动的透明度和可见性，Adobe Customer Journey Analytics 允许您以“审核日志”的形式审核各种服务和功能的用户活动。这些日志形成审核记录，可以帮助解决问题，并帮助您的企业有效遵守公司数据管理政策和监管要求，例如“健康保险流通与责任法案”(HIPAA)。
+为了提高系统中执行的活动的透明度和可见性，Adobe Customer Journey Analytics 允许您以“审核日志”的形式审核各种服务和功能的用户活动。 这些日志形成审核记录，可以帮助解决问题，并帮助您的企业有效遵守公司数据管理政策和监管要求，例如“健康保险流通与责任法案”(HIPAA)。
 
-从基本意义上讲，审核日志将说明&#x200B;**谁**&#x200B;执行了&#x200B;**什么**&#x200B;操作，以及在&#x200B;**什么时候**&#x200B;执行的。日志中记录的每个操作都包含元数据，这些元数据可指示操作类型、日期和时间、执行操作的用户的电子邮件 ID 以及与操作类型相关的其他属性。
+从基本意义上讲，审核日志将说明&#x200B;**谁**&#x200B;执行了&#x200B;**什么**&#x200B;操作，以及在&#x200B;**什么时候**&#x200B;执行的。 日志中记录的每个操作都包含元数据，这些元数据可指示操作类型、日期和时间、执行操作的用户的电子邮件 ID 以及与操作类型相关的其他属性。
 
 审核日志将保留90天。 之后，审核日志将自动删除。
 
@@ -42,9 +42,9 @@ ht-degree: 98%
 
 ## 访问审核日志
 
-为您的组织启用该功能后，系统会在活动发生时自动收集审核日志。您无需手动启用日志收集。
+为您的组织启用该功能后，系统会在活动发生时自动收集审核日志。 您无需手动启用日志收集。
 
-要查看和导出审核日志，您必须已在 Audit Logs Access 中获得&#x200B;**[!UICONTROL 审核日志访问]**&#x200B;访问控制权限。要了解如何管理 Customer Journey Analytics 功能的各项权限，请参阅[访问控制文档](../technotes/access-control.md)。
+要查看和导出审核日志，您必须已在 Audit Logs Access 中获得&#x200B;**[!UICONTROL 审核日志访问]**&#x200B;访问控制权限。 要了解如何管理 Customer Journey Analytics 功能的各项权限，请参阅[访问控制文档](../technotes/access-control.md)。
 
 ## 在 UI 中查看审核日志
 
@@ -64,8 +64,8 @@ ht-degree: 98%
 
 以下项目显现：
 
-* **[!UICONTROL 操作名称]**：所采取的操作。可能的值包括：
-   * API_REQUEST：任何操作都会触发后端 API 请求。显示有关 API 请求的详细信息。
+* **[!UICONTROL 操作名称]**：所采取的操作。 可能的值包括：
+   * API_REQUEST：任何操作都会触发后端 API 请求。 显示有关 API 请求的详细信息。
    * APPROVE：执行了“审批”操作。
    * CREATE：执行了“创建”操作。
    * DELETE：执行了“删除”操作。
@@ -80,10 +80,10 @@ ht-degree: 98%
    * UNSHARE：执行了“取消共享”操作。
 * **[!UICONTROL 创建日期]**：采取行动的日期和时间。
 * **[!UICONTROL 描述]**：对操作的总结。
-* **[!UICONTROL 用户名]**：采取该操作的用户。有时，用户名可能会缺失。考虑使用[产品使用情况](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/tools/product-usage/usage-overview)功能，因为其始终包含登录用户名。
+* **[!UICONTROL 用户名]**：采取该操作的用户。 有时，用户名可能会缺失。 考虑使用[产品使用情况](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/tools/product-usage/usage-overview)功能，因为其始终包含登录用户名。
 * **[!UICONTROL 电子邮件]**：执行该操作的用户的电子邮件地址。
 * **[!UICONTROL 组件名称]**：用户对其采取操作的组件。
-* **[!UICONTROL 组件类型]**：组件的类型。可能的值包括：
+* **[!UICONTROL 组件类型]**：组件的类型。 可能的值包括：
    * ANNOTATION
    * AUDIENCE
    * CALCULATED_METRIC
@@ -105,13 +105,13 @@ ht-degree: 98%
 * **[!UICONTROL IMS 组织 ID]**：组织的 IMS ID，格式为 `ABC123@AdobeOrg`。
 * **[!UICONTROL 日志 ID]**：身份标识此日志条目的唯一 ID。
 * **[!UICONTROL 用户 ID]**：用于识别执行该操作的用户的唯一 ID。
-* **[!UICONTROL 用户类型]**：使用的身份验证类型。有效的值包括：
+* **[!UICONTROL 用户类型]**：使用的身份验证类型。 有效的值包括：
    * IMS
    * OKTA
 
 ### 筛选审核日志
 
-选择漏斗图标（![过滤器](assets/filter-icon.png)）以显示过滤器控件列表，帮助缩小结果范围。仅显示最后 1,000 条记录，这与选择的各种过滤器无关。
+选择漏斗图标（![过滤器](assets/filter-icon.png)）以显示过滤器控件列表，帮助缩小结果范围。 仅显示最后 1,000 条记录，这与选择的各种过滤器无关。
 
 ![显示在日期范围内显示的过滤器的审核日志。](assets/filters.png)
 
@@ -119,11 +119,11 @@ ht-degree: 98%
 
 | 过滤器 | 描述 |
 | --- | --- |
-| [!UICONTROL 日期范围] | 通过选择不同的日期或通过在多个日期上拖动光标来选择日期范围，从而筛选不同的日期范围。默认情况下，选择今天和昨天的日期。 |
+| [!UICONTROL 日期范围] | 通过选择不同的日期或通过在多个日期上拖动光标来选择日期范围，从而筛选不同的日期范围。 默认情况下，选择今天和昨天的日期。 |
 | [!UICONTROL 操作] | 根据上面列出的任何操作名称进行过滤。 |
-| [!UICONTROL 用户 ID] | 按用户 ID 筛选特定用户。通过选择用户名旁边的信息 (i) 按钮可以找到用户 ID。 |
-| [!UICONTROL 电子邮件] | 筛选特定用户的电子邮件地址。通过选择用户名旁边的信息 (i) 按钮可以找到电子邮件 ID。 |
-| [!UICONTROL 组件 ID] | 筛选特定的组件 ID。通过选择所需组件的信息 (i) 按钮可以找到用户 ID。 |
+| [!UICONTROL 用户 ID] | 按用户 ID 筛选特定用户。 通过选择用户名旁边的信息 (i) 按钮可以找到用户 ID。 |
+| [!UICONTROL 电子邮件] | 筛选特定用户的电子邮件地址。 通过选择用户名旁边的信息 (i) 按钮可以找到电子邮件 ID。 |
+| [!UICONTROL 组件 ID] | 筛选特定的组件 ID。 通过选择所需组件的信息 (i) 按钮可以找到用户 ID。 |
 | [!UICONTROL 组件类型] | 根据上面列出的任何组件类型进行过滤。 |
 
 {style="table-layout:auto"}
@@ -152,7 +152,7 @@ ht-degree: 98%
 
 ## 下载审核日志
 
-您可以下载 CSV 或 JSON 格式的审核日志。应用的任何过滤器或选择的列都会反映在下载的文件中。
+您可以下载 CSV 或 JSON 格式的审核日志。 应用的任何过滤器或选择的列都会反映在下载的文件中。
 
 1. 单击屏幕右上方的&#x200B;**[!UICONTROL 下载]**。
 1. 指定格式。
@@ -160,4 +160,4 @@ ht-degree: 98%
 
 ## 在 API 中管理审核日志
 
-您在 UI 中可以执行的所有操作也可以使用 API 调用来完成。若要了解更多信息，请查看 [Customer Journey Analytics API 参考文档](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs)。
+您在 UI 中可以执行的所有操作也可以使用 API 调用来完成。 若要了解更多信息，请查看 [Customer Journey Analytics API 参考文档](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs)。

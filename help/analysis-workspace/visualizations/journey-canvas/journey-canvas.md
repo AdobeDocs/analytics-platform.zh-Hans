@@ -4,7 +4,7 @@ title: 历程画布概述
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 73238f03021b14567c20c686ab72d84afbaa9f81
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 96%
@@ -51,7 +51,7 @@ ht-degree: 96%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中的历程画布可视化图表。<br/>**Adobe Analytics**&#x200B;中没有等效的可视化图表。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的历程画布可视化图表。<br/>**Adobe Analytics**&#x200B;中没有等效的可视化图表。_
 
 >[!ENDSHADEBOX]
 
@@ -162,7 +162,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 分析历程画布中的 Journey Optimizer 历程可以提供有关人们如何与历程互动的深入、可操作洞察。
 
-当您在历程画布中分析 Journey Optimizer 历程时，历程将会以与 Journey Optimizer 中相同的顺序、序列和结构显示。 如果您对历程画布中的历程进行了重大更改，则[&#x200B; Journey Optimizer 中的更改将不再同步](#synchronization-between-journey-optimizer-and-journey-canvas)。
+当您在历程画布中分析 Journey Optimizer 历程时，历程将会以与 Journey Optimizer 中相同的顺序、序列和结构显示。 如果您对历程画布中的历程进行了重大更改，则[ Journey Optimizer 中的更改将不再同步](#synchronization-between-journey-optimizer-and-journey-canvas)。
 
 ### 使用历程画布分析 Journey Optimizer 历程的好处
 
@@ -263,5 +263,5 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!MORELIKETHIS]
 >
-> * [Adobe Customer Journey Analytics 中的历程画布可视化图表指南](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857?profile.language=zh-Hans)
+> * [Adobe Customer Journey Analytics 中的历程画布可视化图表指南](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857)
 
