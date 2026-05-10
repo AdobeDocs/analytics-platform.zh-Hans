@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '818'
 ht-degree: 100%
 
 ---
@@ -27,13 +27,13 @@ ht-degree: 100%
 
 与 Adobe Analytics 中的分类数据类似，查找数据集是 Customer Journey Analytics 中的数据分类的方法。
 
-使用 Analytics 源连接器时，一些标准查找数据集会在报告时自动应用。有关详细信息，请参阅[向数据集添加标准查找](/help/connections/standard-lookups.md)。
+使用 Analytics 源连接器时，一些标准查找数据集会在报告时自动应用。 有关详细信息，请参阅[向数据集添加标准查找](/help/connections/standard-lookups.md)。
 
 为了在使用 Experience Platform Web SDK 时对 Customer Journey Analytics 中的数据进行分类，您需要为包含要分类的数据的每个维度创建一个自定义架构和一个查找数据集。
 
 ## 创建用于查找数据集的自定义架构
 
-为包含您想要在 Customer Journey Analytics 中分类的数据的每个维度创建一个新的自定义架构。当您在后续步骤中创建查找数据集时，它将会引用此架构。
+为包含您想要在 Customer Journey Analytics 中分类的数据的每个维度创建一个新的自定义架构。 当您在后续步骤中创建查找数据集时，它将会引用此架构。
 
 对包含要分类的数据的每个维度重复此过程。
 
@@ -45,7 +45,7 @@ ht-degree: 100%
 
    ![创建架构按钮](assets/schema-create.png)
 
-1. 选择&#x200B;**[!UICONTROL 手动]**。这允许您手动将字段和字段组添加到您的架构中。选择&#x200B;**[!UICONTROL 选择]**&#x200B;以继续前往创建向导的下一页。
+1. 选择&#x200B;**[!UICONTROL 手动]**。 这允许您手动将字段和字段组添加到您的架构中。 选择&#x200B;**[!UICONTROL 选择]**&#x200B;以继续前往创建向导的下一页。
 
 1. 在&#x200B;**[!UICONTROL 架构详细信息]**&#x200B;页面上，选择&#x200B;**[!UICONTROL 其他]**，然后选择&#x200B;**[!UICONTROL 自定义]**。
 
@@ -69,7 +69,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->以下流程使用 CSV 文件创建数据集。您还可以使用任何其他可用的方法将数据导入 Experience Platform，例如设置一个数据流。
+>以下流程使用 CSV 文件创建数据集。 您还可以使用任何其他可用的方法将数据导入 Experience Platform，例如设置一个数据流。
 
 1. 在 Adobe Experience Platform 中，选择左边栏中的&#x200B;**[!UICONTROL 工作流]**。
 
@@ -85,15 +85,15 @@ ht-degree: 100%
 
 1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
-1. 在&#x200B;**[!UICONTROL 将 CSV 映射到 XDM 架构页面]**&#x200B;上，在&#x200B;**[!UICONTROL 上传文件]**&#x200B;部分，选择&#x200B;**[!UICONTROL 选择文件]**，然后浏览文件系统，以查找包含要应用分类数据的维度的分类信息的文件。例如，这可能是一个列有字段 ID 和相应字段名称的电子表格。<!-- correct? How can I better explain what this file is?-->
+1. 在&#x200B;**[!UICONTROL 将 CSV 映射到 XDM 架构页面]**&#x200B;上，在&#x200B;**[!UICONTROL 上传文件]**&#x200B;部分，选择&#x200B;**[!UICONTROL 选择文件]**，然后浏览文件系统，以查找包含要应用分类数据的维度的分类信息的文件。 例如，这可能是一个列有字段 ID 和相应字段名称的电子表格。<!-- correct? How can I better explain what this file is?-->
 
    ![映射 CSV 文件](assets/lookup-map-csv.png)
 
 1. 选择&#x200B;**[!UICONTROL 下一步]**
 
-1. 文件上传后，检查映射以确保其准确无误。CSV 文件的列在&#x200B;**[!UICONTROL 源数据]**&#x200B;下列出，其对应的 XDM 架构字段在&#x200B;**[!UICONTROL 目标字段]**&#x200B;下列出。
+1. 文件上传后，检查映射以确保其准确无误。 CSV 文件的列在&#x200B;**[!UICONTROL 源数据]**&#x200B;下列出，其对应的 XDM 架构字段在&#x200B;**[!UICONTROL 目标字段]**&#x200B;下列出。
 
-   Platform 会根据您选择的目标架构或数据集自动为自动映射的字段提供智能建议。您可以手动调整映射规则，以适应您的用例。
+   Platform 会根据您选择的目标架构或数据集自动为自动映射的字段提供智能建议。 您可以手动调整映射规则，以适应您的用例。
 
    有关映射流程的更多信息，请参阅 Experience Platform 文档中的[将 CSV 文件映射到现有 XDM 架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema)。
 

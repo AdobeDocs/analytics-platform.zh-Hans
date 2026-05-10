@@ -4,10 +4,10 @@ title: 流失概述
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 84%
+source-wordcount: '389'
+ht-degree: 76%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 84%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** 中的流失可视化图表。_<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** 版本的[流失](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中的流失可视化图表。_<br/>_对于本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版本，请参阅[流失](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow)。_
 
 >[!ENDSHADEBOX]
 
@@ -51,7 +51,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 流失显示一个序列中每个步骤或接触点之间的转化和流失率。
 
-例如，您可以跟踪购买过程中的人员流失点。只需选择一个开始接触点和一个结束接触点，然后添加中间接触点即可创建网站导航路径。 但是，您还可以执行多维度流失。
+例如，您可以跟踪购买过程中的人员流失点。 只需选择一个开始接触点和一个结束接触点，然后添加中间接触点即可创建网站导航路径。 但是，您还可以执行多维度流失。
 
 ## 在“流失”、“流量”和“历程”画布可视化图表之间进行选择
 
@@ -68,12 +68,12 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 流失和[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)可视化图表对于分析以下内容很有用：
 
 * 网站上特定过程的转化率（例如购买或注册过程）。
-* 总体、更广泛的流量：在访问主页的人群中，该流量显示了进行搜索的人数。然后，他们中有多少人最终会查看某一特定商品。
+* 总体、更广泛的流量：在访问主页的人群中，该流量显示了进行搜索的人数。 然后，他们中有多少人最终会查看某一特定商品。
 * 网站上事件之间的关联。 关联显示查看了您的隐私政策的用户购买产品的百分比。
 
 流失可视化图表最适合于：
 
-* 涉及具有预定义页面序列和单一入口点及路径的历程的流量分析。（使用历程画布来描绘具有多个入口点和路径的历程。）
+* 涉及具有预定义页面序列和单一入口点及路径的历程的流量分析。 （使用历程画布来描绘具有多个入口点和路径的历程。）
 
 * 需要在同一个报告中对两个不同的区段进行并列比较的历程。
 

@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '394'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-tags"
 >title="Web SDK 标记扩展"
->abstract="（推荐）如果您尚未使用标记，请在您的网站上安装标记加载器。如果您已经使用标记，可以将 Web SDK 扩展添加到您的标记属性。此选项包括使用 Adobe Experience Platform 数据收集和第三方标记管理系统中的标记的实施。"
+>abstract="（推荐）如果您尚未使用标记，请在您的网站上安装标记加载器。 如果您已经使用标记，可以将 Web SDK 扩展添加到您的标记属性。 此选项包括使用 Adobe Experience Platform 数据收集和第三方标记管理系统中的标记的实施。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-api"
 >title="NPM 包"
->abstract="使用数据收集 API 将数据直接发送到数据流。支持非身份验证（客户端到服务器）和身份验证（服务器到服务器）两种类型。"
+>abstract="使用数据收集 API 将数据直接发送到数据流。 支持非身份验证（客户端到服务器）和身份验证（服务器到服务器）两种类型。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -55,7 +55,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-third-party"
 >title="将 Web SDK 库添加到您的第三方标记管理系统"
->abstract="与您的标记管理系统管理员合作，将 Web SDK 库添加到您的网站中。<br><br>此任务的完成时间在很大程度上取决于负责标记管理系统的个人的响应能力。添加 Web SDK 库可能会与相关的实施逻辑捆绑在一起，并在组织的标准发布周期内部署。"
+>abstract="与您的标记管理系统管理员合作，将 Web SDK 库添加到您的网站中。<br><br>此任务的完成时间在很大程度上取决于负责标记管理系统的个人的响应能力。 添加 Web SDK 库可能会与相关的实施逻辑捆绑在一起，并在组织的标准发布周期内部署。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -65,9 +65,9 @@ ht-degree: 100%
 
 使用 Adobe Experience Platform Web SDK 有三种受支持的方式：
 
-* [Web SDK 标记扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/install/extension)：Adobe 建议使用此方法。在您的网站上安装一个标记加载器，然后使用 Adobe Experience Platform 数据收集 UI 来配置您的实施。
+* [Web SDK 标记扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/install/extension)：Adobe 建议使用此方法。 在您的网站上安装一个标记加载器，然后使用 Adobe Experience Platform 数据收集 UI 来配置您的实施。
 
-* [Web SDK JavaScript 库](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/install/library)：引用 CDN 托管的库文件，或者使用您自己的基础架构托管库文件。在您网站的代码内调用该库。
+* [Web SDK JavaScript 库](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/install/library)：引用 CDN 托管的库文件，或者使用您自己的基础架构托管库文件。 在您网站的代码内调用该库。
 
 * [NPM](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/install/npm)：使用 NPM 包管理器在您的网站上安装 Web SDK。
 

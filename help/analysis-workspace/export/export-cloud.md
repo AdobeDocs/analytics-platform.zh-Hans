@@ -5,7 +5,7 @@ title: 将完整表导出到云
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: b9efb621523f8bbfbb3afe7db4db2e60fcddd34c
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
 source-wordcount: '3268'
 ht-degree: 59%

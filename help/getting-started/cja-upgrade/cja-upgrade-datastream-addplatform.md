@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: c6d49ca4-3d04-4c0f-accd-8666a587109d
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '280'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-addplatform-datastream"
 >title="将 Adobe Experience Platform 即服务添加到数据流"
->abstract="数据流需要一个或多个服务来为其发送数据。在您的数据流中设置 Adobe Experience Platform 即服务。<br><br>将服务添加到数据流是一个简单的过程，只需几分钟即可完成。"
+>abstract="数据流需要一个或多个服务来为其发送数据。 在您的数据流中设置 Adobe Experience Platform 即服务。<br><br>将服务添加到数据流是一个简单的过程，只需几分钟即可完成。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-在完成本节中的步骤之前，数据流应该已经存在。数据流的创建时间和方式取决于您的 Adobe Analytics 实施，如下所示：
+在完成本节中的步骤之前，数据流应该已经存在。 数据流的创建时间和方式取决于您的 Adobe Analytics 实施，如下所示：
 
 * 如果您的 Adobe Analytics 实施使用的是 Web SDK 或 Web SDK 扩展，则在升级过程开始之前，数据流在您的 Adobe Analytics 环境中就已经可用。
 

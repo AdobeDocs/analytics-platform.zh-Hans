@@ -4,18 +4,18 @@ description: 了解高级计算量度函数的相关内容。
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 76b4ac60c8e3ae2dd62f86a35bdf1c582f60b10f
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '5286'
-ht-degree: 98%
+source-wordcount: '5381'
+ht-degree: 96%
 
 ---
 
 # 高级功能
 
-使用[计算量度生成器](cm-workflow/cm-build-metrics.md)可以应用统计和数学函数。本文记录了按字母顺序排列的高级函数及其定义列表。
+使用[计算量度生成器](cm-workflow/cm-build-metrics.md)可以应用统计和数学函数。 本文记录了按字母顺序排列的高级函数及其定义列表。
 
-在组件面板中的![效果](/help/assets/icons/Effect.svg)**[!UICONTROL 函数]**&#x200B;列表下方选择&#x200B;**[!UICONTROL 显示全部]**，即可访问这些函数。向下滚动查看&#x200B;**[!UICONTROL 高级函数]**&#x200B;列表。
+在组件面板中的![效果](/help/assets/icons/Effect.svg)**[!UICONTROL 函数]**&#x200B;列表下方选择&#x200B;**[!UICONTROL 显示全部]**，即可访问这些函数。 向下滚动查看&#x200B;**[!UICONTROL 高级函数]**&#x200B;列表。
 
 ## 表函数与行函数
 
@@ -25,11 +25,11 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 
 ## Include-Zeros 参数的含义是什么？
 
-它可告知计算中是否包含零。零有时表示&#x200B;*无*，有时又十分重要。
+它可告知计算中是否包含零。 零有时表示&#x200B;*无*，有时又十分重要。
 
-例如，如果您有收入量度，然后又将页面查看次数量度添加到报告中，则您的收入会突然多出一些全部为零的行。您可能不希望该附加量度影响收入栏中的任何&#x200B;**[平均值](cm-functions.md#mean)**、**[行最小值](cm-functions.md#row-min)**、**[四分位数](cm-functions.md#quartile)**&#x200B;以及其他计算。在这种情况下，您需要检查 `include-zeros` 参数。
+例如，如果您有收入量度，然后又将页面查看次数量度添加到报告中，则您的收入会突然多出一些全部为零的行。 您可能不希望该附加量度影响收入栏中的任何&#x200B;**[平均值](cm-functions.md#mean)**、**[行最小值](cm-functions.md#row-min)**、**[四分位数](cm-functions.md#quartile)**&#x200B;以及其他计算。 在这种情况下，您需要检查 `include-zeros` 参数。
 
-另一种情况是，您有两个感兴趣的量度，其中一个量度的平均值或最小值较高，因为其中有些行为零。在这种情况下，您可以选择不检查参数，以包含零。
+另一种情况是，您有两个感兴趣的量度，其中一个量度的平均值或最小值较高，因为其中有些行为零。  在这种情况下，您可以选择不检查参数，以包含零。
 
 
 ## 与 {#and}
@@ -39,17 +39,17 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 >[!CONTEXTUALHELP]
 >id="functions-and"
 >title="与"
->abstract="连词。不等于零被认为是真，等于零被认为是假。输出为 0（假）或 1（真）。"
+>abstract="连词。 不等于零被认为是真，等于零被认为是假。 输出为 0（假）或 1（真）。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL AND(logical_test)]**
 
-连词。不等于零被认为是真，等于零被认为是假。输出为 0（假）或 1（真）。
+连词。 不等于零被认为是真，等于零被认为是假。 输出为 0（假）或 1（真）。
 
 | 参数 | 描述 |
 |---|---|
-| logical_test | 至少需要一个参数，但可以接受任意数量的参数。任何可被计算为 TRUE 或 FALSE 的值或表达式 |
+| logical_test | 至少需要一个参数，但可以接受任意数量的参数。 任何可被计算为 TRUE 或 FALSE 的值或表达式 |
 
 
 ## 非重复近似计数 {#approximate_count_distinct}
@@ -86,14 +86,14 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 >[!CONTEXTUALHELP]
 >id="functions-acos"
 >title="反余弦"
->abstract="返回某量度的反余弦。反余弦是一个其余弦为数字的角度。返回的角度为范围在 0（零）到 pi 之间的弧度。如果要将结果从弧度转换为角度，请将其乘以 180/PI()。"
+>abstract="返回某量度的反余弦。 反余弦是一个其余弦为数字的角度。 返回的角度为范围在 0（零）到 pi 之间的弧度。 如果要将结果从弧度转换为角度，请将其乘以 180/PI()。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ARC COSINE(metric)]**
 
 
-[!BADGE 行]{type="Neutral"} 返回某量度的反余弦。反余弦是一个其余弦为数字的角度。返回的角度为范围在 0（零）到 pi 之间的弧度。如果要将结果从弧度转换为角度，请将其乘以 180/PI()。
+[!BADGE 行]{type="Neutral"} 返回某量度的反余弦。 反余弦是一个其余弦为数字的角度。 返回的角度为范围在 0（零）到 pi 之间的弧度。 如果要将结果从弧度转换为角度，请将其乘以 180/PI()。
 
 
 | 参数 | 描述 |
@@ -109,14 +109,14 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 >[!CONTEXTUALHELP]
 >id="functions-asin"
 >title="反正弦"
->abstract="返回一个数值的反正弦（或逆正弦）值。反正弦是一个其正弦为数值的角度。返回的角度为范围在 -pi/2 到 pi/2 之间的弧度。要以角度表示反正弦，请将结果乘以 180/PI()。"
+>abstract="返回一个数值的反正弦（或逆正弦）值。 反正弦是一个其正弦为数值的角度。 返回的角度为范围在 -pi/2 到 pi/2 之间的弧度。 要以角度表示反正弦，请将结果乘以 180/PI()。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ARC SINE(metric)]**
 
 
-[!BADGE 行]{type="Neutral"} 返回一个数值的反正弦。反正弦是一个其正弦为数值的角度。返回的角度为范围在 -pi/2 到 pi/2 之间的弧度。要以角度表示反正弦，请将结果乘以 180/PI()。
+[!BADGE 行]{type="Neutral"} 返回一个数值的反正弦。 反正弦是一个其正弦为数值的角度。 返回的角度为范围在 -pi/2 到 pi/2 之间的弧度。 要以角度表示反正弦，请将结果乘以 180/PI()。
 
 
 | 参数 | 描述 |
@@ -132,14 +132,14 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 >[!CONTEXTUALHELP]
 >id="functions-atan"
 >title="反正切"
->abstract="返回一个数值的反正切（或逆正切）值。反正切是一个其正切为数值的角度。返回的角度为范围在 -pi/2 到 pi/2 之间的弧度。要以角度表示反正切，请将结果乘以 180/PI( )。"
+>abstract="返回一个数值的反正切（或逆正切）值。 反正切是一个其正切为数值的角度。 返回的角度为范围在 -pi/2 到 pi/2 之间的弧度。 要以角度表示反正切，请将结果乘以 180/PI( )。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ARC TANGENT(metric)]**
 
 
-[!BADGE 行]{type="Neutral"} 返回一个数值的反正切。反正切是一个其正切为数值的角度。返回的角度为范围在 -pi/2 到 pi/2 之间的弧度。要以角度表示反正切，请将结果乘以 180/PI( )。
+[!BADGE 行]{type="Neutral"} 返回一个数值的反正切。 反正切是一个其正切为数值的角度。 返回的角度为范围在 -pi/2 到 pi/2 之间的弧度。 要以角度表示反正切，请将结果乘以 180/PI( )。
 
 
 | 参数 | 描述 |
@@ -215,13 +215,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ceil"
 >title="上限"
->abstract="返回不小于给定值的最小整数。例如，如果您要避免在报告收入时出现货币小数位数，而某产品的收入为 $569.34，则使用公式 CEILING(Revenue) 可将收入向上取整为最接近的美元数 $570。"
+>abstract="返回不小于给定值的最小整数。 例如，如果您要避免在报告收入时出现货币小数位数，而某产品的收入为 $569.34，则使用公式 CEILING(Revenue) 可将收入向上取整为最接近的美元数 $570。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL CEILING(metric)]**
 
-[!BADGE 行]{type="Neutral"} 返回不小于给定值的最小整数。例如，如果您要避免在报告收入时出现货币小数位数，而某产品的收入为 $569.34，则使用公式 CEILING(Revenue) 可将收入向上取整为最接近的美元数 $570。
+[!BADGE 行]{type="Neutral"} 返回不小于给定值的最小整数。 例如，如果您要避免在报告收入时出现货币小数位数，而某产品的收入为 $569.34，则使用公式 CEILING(Revenue) 可将收入向上取整为最接近的美元数 $570。
 
 | 参数 | 描述 |
 |---|---|
@@ -243,13 +243,13 @@ CDF-Z(-3) ? 0.0013499
 
 使用[时间统一中心极限定理和渐近置信序列](https://arxiv.org/pdf/2103.06476)中所述的 WASKR 方法计算任意时间有效的置信度。
 
-置信度是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。置信度越高，表明支持控制变量和非控制变量具有相同性能的假设的证据越少。
+置信度是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。 置信度越高，表明支持控制变量和非控制变量具有相同性能的假设的证据越少。
 
 | 参数 | 描述 |
 | --- | --- |
 | normalizing-container | 运行测试的基础（人员、会话或事件）。 |
 | success-metric | 用户用来比较变量的一个或多个量度。 |
-| 控制 | 试验中所有其他变量要与之进行比较的变量。输入控制变量维度项的名称。 |
+| 控制 | 试验中所有其他变量要与之进行比较的变量。 输入控制变量维度项的名称。 |
 | significance-threshold | 此函数中的阈值默认设置为 95%。 |
 
 
@@ -268,13 +268,13 @@ CDF-Z(-3) ? 0.0013499
 
 使用[时间统一中心极限定理和渐近置信序列](https://arxiv.org/pdf/2103.06476)中所述的 WASKR 方法计算任意时间有效的置信度（**下限**）。
 
-置信度是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。置信度越高，表明支持控制变量和非控制变量具有相同性能的假设的证据越少。
+置信度是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。 置信度越高，表明支持控制变量和非控制变量具有相同性能的假设的证据越少。
 
 | 参数 | 描述 |
 | --- | --- |
 | normalizing-container | 运行测试的基础（人员、会话或事件）。 |
 | success-metric | 用户用来比较变量的一个或多个量度。 |
-| 控制 | 试验中所有其他变量要与之进行比较的变量。输入控制变量维度项的名称。 |
+| 控制 | 试验中所有其他变量要与之进行比较的变量。 输入控制变量维度项的名称。 |
 | significance-threshold | 此函数中的阈值默认设置为 95%。 |
 
 ## 置信度（上限） {#confidence-upper}
@@ -292,13 +292,13 @@ CDF-Z(-3) ? 0.0013499
 
 使用[时间统一中心极限定理和渐近置信序列](https://arxiv.org/pdf/2103.06476)中所述的 WASKR 方法计算任意时间有效的置信度（**上限**）。
 
-置信度是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。置信度越高，表明支持控制变量和非控制变量具有相同性能的假设的证据越少。
+置信度是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。 置信度越高，表明支持控制变量和非控制变量具有相同性能的假设的证据越少。
 
 | 参数 | 描述 |
 | --- | --- |
 | normalizing-container | 运行测试的基础（人员、会话或事件）。 |
 | success-metric | 用户用来比较变量的一个或多个量度。 |
-| 控制 | 试验中所有其他变量要与之进行比较的变量。输入控制变量维度项的名称。 |
+| 控制 | 试验中所有其他变量要与之进行比较的变量。 输入控制变量维度项的名称。 |
 | significance-threshold | 此函数中的阈值默认设置为 95%。 |
 
 
@@ -309,13 +309,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-cos"
 >title="余弦"
->abstract="返回给定角度的余弦。如果角以角度表示，则将该角乘以 PI( )/180。"
+>abstract="返回给定角度的余弦。 如果角以角度表示，则将该角乘以 PI( )/180。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL COSINE(metric)]**
 
-[!BADGE 行]{type="Neutral"} 返回给定角度的余弦。如果角以角度表示，则将该角乘以 PI( )/180。
+[!BADGE 行]{type="Neutral"} 返回给定角度的余弦。 如果角以角度表示，则将该角乘以 PI( )/180。
 
 | 参数 | 描述 |
 |---|---|
@@ -329,14 +329,14 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-cube-root"
 >title="立方根"
->abstract="返回某数字的正立方根。某数字的立方根是该数字三分之一次幂的值。"
+>abstract="返回某数字的正立方根。 某数字的立方根是该数字三分之一次幂的值。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL CUBE ROOT(metric)]**
 
 
-返回某数字的正立方根。某数字的立方根是该数字三分之一次幂的值。
+返回某数字的正立方根。 某数字的立方根是该数字三分之一次幂的值。
 
 
 | 参数 | 描述 |
@@ -352,17 +352,17 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-cumul"
 >title="累积"
->abstract="返回 x 列最后 n 个元素的和。如果 n > 0，则对最后 n 个元素或 x 求和。如果 n &lt; 0，则对前面的元素求和。"
+>abstract="返回列 x 中最后 n 个元素的总和。 如果 n > 0，则对 x 的最后 n 个元素求和。 如果 n &lt; 0，则对前面的元素求和。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE(number, metric)]**
 
-返回 x 列最后 n 个元素的和。如果 n > 0，则对最后 n 个元素或 x 求和。如果 n &lt; 0，则对前面的元素求和。
+返回列 x 中最后 n 个元素的总和。 如果 n > 0，则对 x 的最后 n 个元素求和。 如果 n &lt; 0，则对前面的元素求和。
 
 | 参数 | 描述 |
 | --- | --- |
-| 数字 | 返回总和的最后 N 行。如果 N &lt;= 0，则使用所有之前的行。 |
+| 数字 | 返回总和的最后 N 行。 如果 N &lt;= 0，则使用所有之前的行。 |
 | 量度 | 您希望求累计总和的量度。 |
 
 ### 示例
@@ -381,22 +381,22 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-cumul-avg"
 >title="累积（平均）"
->abstract="返回 x 列最后 n 个元素的平均值。如果 n > 0，则对最后 n 个元素或 x 求和。如果 n &lt; 0，则对前面的元素求和。"
+>abstract="返回列 x 中最后 n 个元素的平均值。 如果 n > 0，则对 x 的最后 n 个元素求和。 如果 n &lt; 0，则对前面的元素求和。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE AVERAGE(number, metric)]**
 
-返回 x 列最后 n 个元素的平均值。如果 n > 0，则对最后 n 个元素或 x 求和。如果 n &lt; 0，则对前面的元素求和。
+返回列 x 中最后 n 个元素的平均值。 如果 n > 0，则对 x 的最后 n 个元素求和。 如果 n &lt; 0，则对前面的元素求和。
 
 | 参数 | 描述 |
 | --- | --- |
-| 数字 | 返回平均值的最后 N 行。如果 N &lt;= 0，则使用所有之前的行。 |
+| 数字 | 返回平均值的最后 N 行。 如果 N &lt;= 0，则使用所有之前的行。 |
 | 量度 | 您希望求累计平均值的量度。 |
 
 >[!NOTE]
 >
->此函数不适用于人均收入等比率量度。该函数对比率求平均值，而不是对最后 N 行的收入求和，对最后 N 行的人数求和，然后再除以它们。<br/>相反，使用 [**[!UICONTROL CUMULATIVE(revenue)]**](#cumulative) ![除以](/help/assets/icons/Divide.svg) [**[!UICONTROL CUMULATIVE(person)]**](#cumulative)。
+>此函数不适用于人均收入等比率量度。 该函数对比率求平均值，而不是对最后 N 行的收入求和，对最后 N 行的人数求和，然后再除以它们。 <br/>相反，使用 [**[!UICONTROL CUMULATIVE(revenue)]**](#cumulative) ![除以](/help/assets/icons/Divide.svg) [**[!UICONTROL CUMULATIVE(person)]**](#cumulative)。
 >
 
 
@@ -407,13 +407,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-eq"
 >title="等于"
->abstract="等于。输出为 0（假）或 1（真）。"
+>abstract="等于。 输出为 0（假）或 1（真）。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL EQUAL()]**
 
-等于。输出为 0（假）或 1（真）。
+等于。 输出为 0（假）或 1（真）。
 
 
 | 参数 | 描述 |
@@ -433,7 +433,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-exp"
 >title="指数回归：相关系数"
->abstract="指数回归：Y = b * exp(aX)。返回相关系数。"
+>abstract="指数回归：Y = b * exp(aX)。 返回相关系数。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -456,7 +456,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-exp"
 >title="指数回归：预测的 Y"
->abstract="指数回归：Y = b * exp(aX)。返回 Y。"
+>abstract="指数回归：Y = b * exp(aX)。 返回 Y。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -480,7 +480,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-exp"
 >title="指数回归：截距"
->abstract="指数回归：Y = b * exp(aX)。返回 b。"
+>abstract="指数回归：Y = b * exp(aX)。 返回结果 b。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -503,7 +503,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-exp"
 >title="指数回归：斜率"
->abstract="指数回归：Y = b * exp(aX)。返回 a。"
+>abstract="指数回归：Y = b * exp(aX)。 返回 a。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -527,13 +527,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-floor"
 >title="向下取整"
->abstract="返回不大于给定值的最大整数。例如，如果您要避免在报告收入时出现货币小数位数，而某产品的收入为 $569.34，则使用公式 FLOOR(Revenue) 可将收入向下取整为最接近的美元数 $569。"
+>abstract="返回不大于给定值的最大整数。 例如，如果您要避免在报告收入时出现货币小数位数，而某产品的收入为 $569.34，则使用公式 FLOOR(Revenue) 可将收入向下取整为最接近的美元数 $569。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL FLOOR(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 行]{type="Neutral"} 返回不大于给定值的最大整数。例如，如果您要避免在报告收入时出现货币小数位数，而某产品的收入为 $569.34，则使用公式 FLOOR(Revenue) 可将收入向下取整为最接近的美元数 $569。
+[!BADGE 行]{type="Neutral"} 返回不大于给定值的最大整数。 例如，如果您要避免在报告收入时出现货币小数位数，而某产品的收入为 $569.34，则使用公式 FLOOR(Revenue) 可将收入向下取整为最接近的美元数 $569。
 
 | 参数 | 描述 |
 |---|---|
@@ -572,13 +572,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ge"
 >title="大于或等于"
->abstract="大于或等于输出为 0（假）或 1（真）。"
+>abstract="大于或等于 输出为 0（假）或 1（真）。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL GREATER THAN OR EQUAL()]**
 
-大于或等于输出为 0（假）或 1（真）。
+大于或等于 输出为 0（假）或 1（真）。
 
 | 参数 | 描述 |
 |---|---|
@@ -661,21 +661,21 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-if"
 >title="如果"
->abstract="如果完成情况参数的值非零（真），则结果为 value_if_true 参数的值。否则，它会是 value_if_false 参数的值。"
+>abstract="如果完成情况参数的值非零（真），则结果为 value_if_true 参数的值。 否则，它会是 value_if_false 参数的值。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL IF(logical_test, value_if_true, value_if_false)]**
 
 
-[!BADGE 行]{type="Neutral"} 如果条件参数的值非零（真），则结果为 value_if_true 参数的值。否则，它会是 value_if_false 参数的值。
+[!BADGE 行]{type="Neutral"} 如果条件参数的值非零（真），则结果为 value_if_true 参数的值。 否则，它会是 value_if_false 参数的值。
 
 
 | 参数 | 描述 |
 |---|---|
-| logical_test | 必填。任何可被计算为 TRUE 或 FALSE 的值或表达式 |
-| value_if_true | 当 logical_test 参数的计算结果为 TRUE 时，您希望返回的值。（如果未包含此参数，则此参数默认为 0。） |
-| value_if_false | 当 logical_test 参数的计算结果为 FALSE 时，您希望返回的值。（如果不包含，则此参数默认为 0。） |
+| logical_test | 必填。 任何可被计算为 TRUE 或 FALSE 的值或表达式 |
+| value_if_true | 当 logical_test 参数的计算结果为 TRUE 时，您希望返回的值。 （如果未包含此参数，则此参数默认为 0。） |
+| value_if_false | 当logical_test参数的计算结果为FALSE时，您希望返回的值。 （如果未包含此参数，则此参数默认为 0。） |
 
 
 ## 小于 {#less-than}
@@ -710,13 +710,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-le"
 >title="小于或等于"
->abstract="小于或等于。输出为 0（假）或 1（真）。"
+>abstract="小于或等于。 输出为 0（假）或 1（真）。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LESS THAN OR EQUAL()]**
 
-小于或等于。输出为 0（假）或 1（真）。
+小于或等于。 输出为 0（假）或 1（真）。
 
 | 参数 | 描述 |
 |---|---|
@@ -748,7 +748,7 @@ CDF-Z(-3) ? 0.0013499
 | --- | --- |
 | normalizing-container | 运行测试的基础（人员、会话或事件）。 |
 | success-metric | 用户用来比较变量的一个或多个量度。 |
-| 控制 | 试验中所有其他变量要与之进行比较的变量。输入控制变量维度项的名称。 |
+| 控制 | 试验中所有其他变量要与之进行比较的变量。 输入控制变量维度项的名称。 |
 
 
 
@@ -759,14 +759,14 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-linear"
 >title="线性回归：相关系数"
->abstract="线性回归：Y = a X + b。返回相关系数。"
+>abstract="线性回归：Y = a X + b。  返回相关系数。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE 表]{type="Neutral"} 线性回归：Y = a X + b。返回相关系数。
+[!BADGE 表]{type="Neutral"}线性回归：Y = a X + b。  返回相关系数。
 
 
 | 参数 | 描述 |
@@ -784,14 +784,14 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-linear"
 >title="线性回归：截距"
->abstract="线性回归：Y = a X + b。返回 b。"
+>abstract="线性回归：Y = a X + b。 返回结果 b。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE 表]{type="Neutral"} 线性回归：Y = a X + b。返回 b。
+[!BADGE 表]{type="Neutral"}线性回归：Y = a X + b。 返回 b。
 
 
 | 参数 | 描述 |
@@ -809,14 +809,14 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-linear"
 >title="线性回归：预测的 Y"
->abstract="线性回归：Y = a X + b。返回 Y。"
+>abstract="线性回归：Y = a X + b。 返回 Y。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE 行]{type="Neutral"} 线性回归：Y = a X + b。返回 Y。
+[!BADGE 行]{type="Neutral"}线性回归：Y = a X + b。 返回 Y。
 
 
 | 参数 | 描述 |
@@ -834,13 +834,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-linear"
 >title="线性回归：斜率"
->abstract="线性回归：Y = a X + b。返回 a。"
+>abstract="线性回归：Y = a X + b。 返回 a。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"} 线性回归：Y = a X + b。返回 a。
+[!BADGE 表]{type="Neutral"}线性回归：Y = a X + b。 返回 a。
 
 | 参数 | 描述 |
 |---|---|
@@ -878,13 +878,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-log"
 >title="对数回归：相关系数"
->abstract="对数回归：Y = a ln(X) + b。返回相关系数。"
+>abstract="对数回归：Y = a ln(X) + b。 返回相关系数。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"} 对数回归：Y = a ln(X) + b。返回相关系数。
+[!BADGE 表]{type="Neutral"}对数回归：Y = a ln(X) + b。 返回相关系数。
 
 | 参数 | 描述 |
 |---|---|
@@ -900,13 +900,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-log"
 >title="对数回归：截距"
->abstract="对数回归：Y = a ln(X) + b。返回 b。"
+>abstract="对数回归：Y = a ln(X) + b。 返回结果 b。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"} 对数回归：Y = a ln(X) + b。返回 b。
+[!BADGE 表]{type="Neutral"}对数回归：Y = a ln(X) + b。 返回 b。
 
 | 参数 | 描述 |
 |---|---|
@@ -923,13 +923,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-log"
 >title="对数回归：预测的 Y"
->abstract="对数回归：Y = a ln(X) + b。返回 Y。"
+>abstract="对数回归：Y = a ln(X) + b。 返回 Y。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 行]{type="Neutral"} 对数回归：Y = a ln(X) + b。返回 Y。
+[!BADGE 行]{type="Neutral"}对数回归：Y = a ln(X) + b。 返回 Y。
 
 | 参数 | 描述 |
 |---|---|
@@ -946,13 +946,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-log"
 >title="对数回归：斜率"
->abstract="对数回归：Y = a ln(X) + b。返回 a。"
+>abstract="对数回归：Y = a ln(X) + b。 返回 a。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"} 对数回归：Y = a ln(X) + b。返回 a。
+[!BADGE 表]{type="Neutral"}对数回归：Y = a ln(X) + b。 返回 a。
 
 | 参数 | 描述 |
 |---|---|
@@ -969,13 +969,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-log"
 >title="自然对数"
->abstract="返回某数字的自然对数。自然对数以常量 e (2.71828182845904) 为底数。LN 是 EXP 函数的反函数。"
+>abstract="返回某数字的自然对数。 自然对数以常量 e (2.71828182845904) 为底数。 LN 是 EXP 函数的反函数。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL NATURAL LOG(metric)]**
 
-返回某数字的自然对数。自然对数以常量 e (2.71828182845904) 为底数。LN 是 EXP 函数的反函数。
+返回某数字的自然对数。 自然对数以常量 e (2.71828182845904) 为底数。 LN 是 EXP 函数的反函数。
 
 | 参数 | 描述 |
 |---|---|
@@ -990,17 +990,17 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-not"
 >title="不为"
->abstract="作为布尔值的取反。输出为 0（假）或 1（真）。"
+>abstract="作为布尔值的取反。 输出为 0（假）或 1（真）。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL NOT(logical)]**
 
-作为布尔值的取反。输出为 0（假）或 1（真）。
+作为布尔值的取反。 输出为 0（假）或 1（真）。
 
 | 参数 | 描述 |
 |---|---|
-| logical | 必填。可被计算为 TRUE 或 FALSE 的值或表达式 |
+| logical | 必填。 可被计算为 TRUE 或 FALSE 的值或表达式 |
 
 
 
@@ -1011,14 +1011,14 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ne"
 >title="不等于"
->abstract="不等于。输出为 0（假）或 1（真）。"
+>abstract="不等于。 输出为 0（假）或 1（真）。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL NOT EQUAL()]**
 
 
-不等于。输出为 0（假）或 1（真）。
+不等于。 输出为 0（假）或 1（真）。
 
 
 | 参数 | 描述 |
@@ -1038,19 +1038,19 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-or"
 >title="或"
->abstract="析取。不等于零被认为是真，等于零被认为是假。输出为 0（假）或 1（真）。"
+>abstract="析取。 不等于零被认为是真，等于零被认为是假。 输出为 0（假）或 1（真）。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL OR(logical_test)]**
 
 
-[!BADGE 行]{type="Neutral"} 析取。不等于零被认为是真，等于零被认为是假。输出为 0（假）或 1（真）。
+[!BADGE 行]{type="Neutral"} 析取。 不等于零被认为是真，等于零被认为是假。 输出为 0（假）或 1（真）。
 
 
 | 参数 | 描述 |
 |---|---|
-| logical_test | 至少需要一个参数，但可以接受任意数量的参数。任何可被计算为 TRUE 或 FALSE 的值或表达式 |
+| logical_test | 至少需要一个参数，但可以接受任意数量的参数。 任何可被计算为 TRUE 或 FALSE 的值或表达式 |
 
 
 >[!NOTE]
@@ -1081,13 +1081,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-power"
 >title="幂回归：相关系数"
->abstract="幂回归：Y = b X ^ a. 返回相关系数。"
+>abstract="幂回归：Y = b X ^ a。 返回相关系数。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"} 幂回归：Y = b X ^ a。返回相关系数。
+[!BADGE 表]{type="Neutral"}幂回归：Y = b X ^ a。 返回相关系数。
 
 | 参数 | 描述 |
 |---|---|
@@ -1104,14 +1104,14 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-power"
 >title="幂回归：截距"
->abstract="幂回归：Y = b X ^ a. 返回 b。"
+>abstract="幂回归：Y = b X ^ a。 返回结果 b。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE 表]{type="Neutral"} 幂回归：Y = b X ^ a。返回 b。
+[!BADGE 表]{type="Neutral"}幂回归：Y = b X ^ a。 返回 b。
 
 
 | 参数 | 描述 |
@@ -1128,13 +1128,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-power"
 >title="幂回归：预测的 Y"
->abstract="幂回归：Y = b X ^ a. 返回 Y。"
+>abstract="幂回归：Y = b X ^ a。 返回 Y。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 行]{type="Neutral"} 幂回归：Y = b X ^ a。返回 Y。
+[!BADGE 行]{type="Neutral"}幂回归：Y = b X ^ a。 返回 Y。
 
 | 参数 | 描述 |
 |---|---|
@@ -1151,13 +1151,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-power"
 >title="幂回归：斜率"
->abstract="幂回归：Y = b X ^ a. 返回 a。"
+>abstract="幂回归：Y = b X ^ a。 返回 a。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"} 幂回归：Y = b X ^ a。返回 a。
+[!BADGE 表]{type="Neutral"}幂回归：Y = b X ^ a。 返回 a。
 
 | 参数 | 描述 |
 |---|---|
@@ -1262,13 +1262,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-reciprocal"
 >title="倒数回归：相关系数"
->abstract="倒数回归：Y = a + b X ^ -1。返回相关系数。"
+>abstract="倒数回归：Y = a + b X ^ -1。 返回相关系数。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"} 倒数回归：Y = a + b X ^ -1。返回相关系数。
+[!BADGE 表]{type="Neutral"} 倒数回归：Y = a + b X ^ -1。 返回相关系数。
 
 | 参数 | 描述 |
 |---|---|
@@ -1284,13 +1284,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-reciprocal"
 >title="倒数回归：截距"
->abstract="倒数回归：Y = a + b X ^ -1。返回 a。"
+>abstract="倒数回归：Y = a + b X ^ -1。 返回 a。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"} 倒数回归：Y = a + b X ^ -1。返回 a。
+[!BADGE 表]{type="Neutral"} 倒数回归：Y = a + b X ^ -1。 返回 a。
 
 | 参数 | 描述 |
 |---|---|
@@ -1306,13 +1306,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-reciprocal"
 >title="倒数回归：预测的 Y"
->abstract="倒数回归：Y = a + b X ^ -1。返回 Y。"
+>abstract="倒数回归：Y = a + b X ^ -1。 返回 Y。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 行]{type="Neutral"} 倒数回归：Y = a + b X ^ -1。返回 Y。
+[!BADGE 行]{type="Neutral"} 倒数回归：Y = a + b X ^ -1。 返回 Y。
 
 | 参数 | 描述 |
 |---|---|
@@ -1328,13 +1328,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-reciprocal"
 >title="倒数回归：斜率"
->abstract="倒数回归：Y = a + b X ^ -1。返回 b。"
+>abstract="倒数回归：Y = a + b X ^ -1。 返回 b。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE 表]{type="Neutral"} 倒数回归：Y = a + b X ^ -1。返回 b。
+[!BADGE 表]{type="Neutral"} 倒数回归：Y = a + b X ^ -1。 返回 b。
 
 | 参数 | 描述 |
 |---|---|
@@ -1351,11 +1351,11 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-waskr-variance-estimate"
 >title="样本方差"
->abstract="使用公式 (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)) 计算样本方差的估计值。其中 N 是标准化容器的计数。<br/>这可作为&#x200B;*随时有效的*&#x200B;置信度计算的一部分。一般来说，这个函数单独使用并无用处，但可用于检查计算结果或&#x200B;*手动*&#x200B;执行置信度计算。"
+>abstract="使用公式 (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)) 计算样本方差的估计值。 其中 N 是标准化容器的计数。 <br/>这可作为&#x200B;*随时有效的*&#x200B;置信度计算的一部分。 一般来说，这个函数单独使用并无用处，但可用于检查计算结果或&#x200B;*手动*&#x200B;执行置信度计算。"
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL 样本方差（标准化容器、成功量度）]**
 
-使用公式 (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)) 计算样本方差的估计值。其中N是标准化容器的计数。<br/>这可作为&#x200B;*随时有效的*&#x200B;置信度计算的一部分。一般来说，这个函数单独使用并无用处，但可用于检查计算结果或&#x200B;*手动*&#x200B;执行置信度计算。
+使用公式 (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)) 计算样本方差的估计值。 其中 N 是标准化容器的计数。<br/>这可作为&#x200B;*随时有效的*&#x200B;置信度计算的一部分。 一般来说，这个函数单独使用并无用处，但可用于检查计算结果或&#x200B;*手动*&#x200B;执行置信度计算。
 
 | 参数 | 描述 |
 | --- | --- |
@@ -1373,14 +1373,14 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-sin"
 >title="正弦"
->abstract="返回给定角的正弦。如果角以角度表示，则将该角乘以 PI( )/180。"
+>abstract="返回给定角的正弦。 如果角以角度表示，则将该角乘以 PI( )/180。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL SINE(metric)]**
 
 
-[!BADGE 行]{type="Neutral"} 返回给定角度的正弦。如果角以角度表示，则将该角乘以 PI( )/180。
+[!BADGE 行]{type="Neutral"} 返回给定角度的正弦。 如果角以角度表示，则将该角乘以 PI( )/180。
 
 
 | 参数 | 描述 |
@@ -1397,13 +1397,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-t-score"
 >title="T 分数"
->abstract="与[平均值](cm-functions.md#mean)的偏差除以标准差。[Z-Score](#z-score) 的别名。"
+>abstract="与[平均值](cm-functions.md#mean)的偏差除以标准差。 [Z-Score](#z-score) 的别名。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL T-SCORE(metric, include_zeros)]**
 
-与[平均值](cm-functions.md#mean)的偏差除以标准差。[Z-Score](#z-score) 的别名。
+与[平均值](cm-functions.md#mean)的偏差除以标准差。 [Z-Score](#z-score) 的别名。
 
 | 参数 | 描述 |
 |---|---|
@@ -1434,7 +1434,7 @@ CDF-Z(-3) ? 0.0013499
 
 ### 详细信息
 
-签名为 T-TEST(metric, degrees, tails)。在下面，只需调用 ***m*** ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[[!DNL CDF-T(-ABSOLUTE VALUE(tails), degrees)]](#cdf-t)**。此函数类似于 **[Z-TEST](#z-test)** 函数，该函数运行 ***m*** ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[[!DNL CDF-Z(-ABSOLUTE VALUE(tails))]](#cdf-z)**。
+签名为 T-TEST(metric, degrees, tails)。 在下面，只需调用 ***m*** ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[[!DNL CDF-T(-ABSOLUTE VALUE(tails), degrees)]](#cdf-t)**。 此函数类似于 **[Z-TEST](#z-test)** 函数，该函数运行 ***m*** ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[[!DNL CDF-Z(-ABSOLUTE VALUE(tails))]](#cdf-z)**。
 
 - ***m*** 是尾数。
 - ***n*** 是自由度，对于整个报告来说应该是一个常数，也就是说不会逐行改变。
@@ -1465,13 +1465,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-tan"
 >title="正切"
->abstract="返回给定角的正切。如果角以角度表示，则将该角乘以 PI( )/180。"
+>abstract="返回给定角的正切。 如果角以角度表示，则将该角乘以 PI( )/180。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL TANGENT(metric)]**
 
-返回给定角的正切。如果角以角度表示，则将该角乘以 PI( )/180。
+返回给定角的正切。 如果角以角度表示，则将该角乘以 PI( )/180。
 
 | 参数 | 描述 |
 |---|---|
@@ -1499,7 +1499,7 @@ CDF-Z(-3) ? 0.0013499
 | 量度 | 您希望求 Z 分数的量度 |
 | include_zeros | 是否在计算中包含零值 |
 
-Z 分数为 0（零）表示分数与平均值相同。Z分数可以是正数或负数，指示它是否高于或低于平均值以及标准偏差数。
+Z 分数为 0（零）表示分数与平均值相同。 Z分数可以是正数或负数，指示它是否高于或低于平均值以及标准偏差数。
 
 Z分数的等式为：
 

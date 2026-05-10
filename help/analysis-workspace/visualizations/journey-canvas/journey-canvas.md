@@ -4,7 +4,7 @@ title: 历程画布概述
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 73238f03021b14567c20c686ab72d84afbaa9f81
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 96%

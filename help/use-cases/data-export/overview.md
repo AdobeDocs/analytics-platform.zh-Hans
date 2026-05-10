@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
-source-git-commit: efb961c571ddcde1017e6bf2080fc2a97c28bb13
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '806'
 ht-degree: 7%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 7%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-feeds-step"
 >title="使用与数据馈送类似的导出功能"
->abstract="Customer Journey Analytics 中尚未提供数据馈送的精确替代品。不过，也可以通过全表导出、Platform 数据集导出、BI 工具集成和报告 API 等功能实现类似的功能。"
+>abstract="Customer Journey Analytics 中尚未提供数据馈送的精确替代品。 不过，也可以通过全表导出、Platform 数据集导出、BI 工具集成和报告 API 等功能实现类似的功能。"
 
 <!-- markdownlint-enable MD034 -->
 

@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '758'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-create"
 >title="创建 Analytics 源连接器"
->abstract="使用 Analytics 源连接器摄取报告包数据，以用于 Customer Journey Analytics。<br><br>使用默认设置创建 Analytics 源连接器只需几分钟。"
+>abstract="使用 Analytics 源连接器摄取报表包数据，以供 Customer Journey Analytics 使用。<br><br>使用默认设置创建 Analytics 源连接器仅需几分钟。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-map-fields"
 >title="创建 Analytics 源连接器并映射架构字段"
->abstract="源连接器需要知道如何将 Adobe Analytics 字段映射到您组织的架构。使用此界面向源连接器提供该映射。此步骤是将历史数据添加到 Customer Journey Analytics 的一部分。<br><br>此步骤所需的时间在很大程度上取决于您必须映射的维度和量度的数量。这一步并不难，但是它很繁琐且重复。预计数据流映射大约需要一周的时间才能完成。"
+>abstract="源连接器需要知道如何将 Adobe Analytics 字段映射到您组织的架构。 使用此界面向源连接器提供该映射。 此步骤属于向 Customer Journey Analytics 添加历史数据的一部分。<br><br>完成此步骤所需时间在很大程度上取决于需要映射的维度和量度数量。 这一步并不难，但是它很繁琐且重复。 预计数据流映射大约需要一周的时间才能完成。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -36,7 +36,7 @@ ht-degree: 100%
 
 ## 了解 Analytics 源连接器如何将历史数据带入 Customer Journey Analytics
 
-您可以使用 Analytics 源连接器将 Adobe Analytics 报告套件数据导入到 Adobe Experience Platform。然后，这些数据可以用作 Customer Journey Analytics 中的历史数据。
+您可以使用 Analytics 源连接器将 Adobe Analytics 报告套件数据导入到 Adobe Experience Platform。 然后，这些数据可以用作 Customer Journey Analytics 中的历史数据。
 
 此过程假设您希望[创建一个自定义架构，以便与您的 Customer Journey Analytics Web SDK 实施一起使用](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)，因为您需要一个根据您的组织需求和您使用的特定 Platform 应用程序量身定制的精简模式。
 
@@ -54,7 +54,7 @@ ht-degree: 100%
 
 ## 创建 Analytics 源连接器并映射字段
 
-创建自定义架构后，您需要创建 Adobe Analytics 源连接器，以用于历史数据。（有关创建源连接器的更全面的通用准则，请参阅[在 UI 中创建 Adobe Analytics 源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)。）
+创建自定义架构后，您需要创建 Adobe Analytics 源连接器，以用于历史数据。 （有关创建源连接器的更全面的通用准则，请参阅[在 UI 中创建 Adobe Analytics 源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)。）
 
 要创建用于历史数据的 Adobe Analytics 源连接器，请执行以下操作：
 
@@ -84,7 +84,7 @@ ht-degree: 100%
 
    ![映射架构字段](assets/schema-mapping.png)
 
-   1. 在&#x200B;**[!UICONTROL 源字段]**&#x200B;中，从 Adobe Analytics ExperienceEvent 模板字段组中选择一个 Adobe Analytics 字段。然后，在&#x200B;**[!UICONTROL 目标字段]**&#x200B;中，选择要将其映射到的 XDM 架构中的自定义字段。
+   1. 在&#x200B;**[!UICONTROL 源字段]**&#x200B;中，从 Adobe Analytics ExperienceEvent 模板字段组中选择一个 Adobe Analytics 字段。 然后，在&#x200B;**[!UICONTROL 目标字段]**&#x200B;中，选择要将其映射到的 XDM 架构中的自定义字段。
 
       由于 AppMeasurement 和 XDM 之间存在固有的架构差异，因此并非所有 Adobe Analytics 字段在 XDM 中都有对应的字段。
 
@@ -102,7 +102,7 @@ ht-degree: 100%
 
    ![Adobe Experience Platform 窗口，突出显示“连接”和“数据类型”部分以供查看](./assets/review.png)
 
-   创建连接后，将自动创建数据流，以使用报告包中的 Adobe Analytics 数据填充数据集。数据流会为生产沙盒摄取最多 13 个月的历史数据。非生产沙盒的回填期限为三个月。
+   创建连接后，将自动创建数据流，以使用报告包中的 Adobe Analytics 数据填充数据集。 数据流会为生产沙盒摄取最多 13 个月的历史数据。 非生产沙盒的回填期限为三个月。
 
    如果您使用 Analytics 源连接器将历史数据带入您的 Customer Journey Analytics Web SDK 实施，那么您需要将此自动创建的数据集添加到您为 Web SDK 实施创建的连接中。
 

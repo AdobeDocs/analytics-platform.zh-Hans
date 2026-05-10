@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
-source-git-commit: 5808de9b39d3c8fa5632755958ddb887c081b203
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1467'
-ht-degree: 9%
+source-wordcount: '1545'
+ht-degree: 10%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 9%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-architect"
 >title="架建架构"
->abstract="在您的组织内讨论数据收集的要求，并确定如何生成用于 Adobe Experience Platform 的架构。出现此步骤是因为您想要使用一个为您的组织定制的架构的使用推荐过程。正确执行此步骤至关重要，因为组织内所有团队都遵循一个架构可以使数据摄取变得更加容易。<br><br>将组织中的所有相关方聚集在一起以遵循一个统一架构的预计时间为 1-2 个月。这个时间范围在很大程度上取决于需要协调的团队数量以及需要统一的维度 + 量度的数量。"
+>abstract="在您的组织内讨论数据收集的要求，并确定如何生成用于 Adobe Experience Platform 的架构。 出现此步骤是因为您想要使用一个为您的组织定制的架构的使用推荐过程。 正确执行此步骤至关重要，因为组织内所有团队都遵循一个架构可以使数据摄取变得更加容易。<br><br>将组织中的所有相关方聚集在一起以遵循一个统一架构的预计时间为 1-2 个月。 这个时间范围在很大程度上取决于需要协调的团队数量以及需要统一的维度 + 量度的数量。"
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note-step}}
 
-Adobe建议在实施[Customer Journey Analytics数据收集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/home)时为Adobe Experience Platform创建自定义[Experience Data Model](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/home) (XDM)架构。 创建此架构通常在涉及任何实施更改或代码之前完成。 通过自定义架构，您可以设计简洁的、特定于组织的数据合同，而无需继承Adobe Analytics的约束。 请参阅[选择您的Customer Journey Analytics架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)，了解有关您的组织可用的架构类型的更多信息。
+Adobe建议在实施[Customer Journey Analytics数据收集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/home)时为Adobe Experience Platform创建自定义[Experience Data Model](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/home) (XDM)架构。 创建此架构通常在涉及任何实施更改或代码之前完成。 通过自定义架构，您可以设计简洁的、特定于组织的数据合同，而无需继承Adobe Analytics的约束。 请参阅[选择您的Customer Journey Analytics架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)，了解有关您的组织可用的架构类型的更多信息。
 
 架构旨在完善您想要长期构建数据的方式。 对架构的更改成本高昂，因为它们会影响数据收集、验证和下游服务。 您可以在业务要求允许的情况下随着时间的推移添加到架构中；但是，一旦数据开始流入架构字段，就无法删除架构字段。
 

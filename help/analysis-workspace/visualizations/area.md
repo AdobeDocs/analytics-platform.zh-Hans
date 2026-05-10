@@ -4,10 +4,10 @@ title: 面积图（栈叠）
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 90%
+source-wordcount: '226'
+ht-degree: 70%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** 中的面积图和堆叠的面积图可视化图表。_<br/>_有关本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** 版本，请参阅[面积图和堆叠的面积图](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/area)。_
+_本文在_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中记录了面积图和栈叠面积图可视化图表。_<br/>_对于本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版本，请参阅[面积图和栈叠面积图](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/area)。_
 
 >[!ENDSHADEBOX]
 
@@ -37,7 +37,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 
 
-![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL 面积图]**&#x200B;可视化图表与线形图类似，只是线条下方显示了彩色区域。当您有多个量度并且希望显示两个或更多量度交叉的区域时，可添加面积图。
+![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL 面积图]**&#x200B;可视化图表与线形图类似，只是线条下方显示了彩色区域。 当您有多个量度并且希望显示两个或更多量度交叉的区域时，可添加面积图。
 
 ![显示多个量度的面积图可视化图表](assets/area.png)
 

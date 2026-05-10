@@ -4,10 +4,10 @@ title: 流量概述
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 82%
+source-wordcount: '349'
+ht-degree: 74%
 
 ---
 
@@ -23,14 +23,14 @@ ht-degree: 82%
 >[!CONTEXTUALHELP]
 >id="workspace_flow_panel"
 >title="流量"
->abstract="分析从一个接触点到下一个接触点的访问次数或访客流量。指定开始和结束的组件（量度、维度或项目）。或者，您可以定义高级设置来进一步配置可视化图表。"
+>abstract="分析从一个接触点到下一个接触点的访问次数或访客流量。 指定开始和结束的组件（量度、维度或项目）。 或者，您可以定义高级设置来进一步配置可视化图表。"
 
 <!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** 中的流量可视化图表。_<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** 版本的[流量](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow)。_
+_本文在_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中记录了流量可视化图表。_<br/>_请参阅本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版本的[流量](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow)。_
 
 >[!ENDSHADEBOX]
 
@@ -55,7 +55,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 ## 维度间流量
 
-您可以显示[维度间的流量](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)。例如，您可以在一个图表中合并多个页面和部门。在这种情况下，您的流量可能会从主页转到男士页面，然后转到鞋类部门。
+您可以显示[维度间的流量](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)。 例如，您可以在一个图表中合并多个页面和部门。 在这种情况下，您的流量可能会从主页转到男士页面，然后转到鞋类部门。
 
 每列可显示不同的维度。 将一个维度拖放到拖放区域中，以将该维度添加到图中。
 
@@ -78,8 +78,8 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 流程可视化图表最适合于：
 
-* 对路径上的下一个接触点进行探索性、临时性分析。（对于具有预定义页面顺序的历程，或使用最终路径的历程，请使用历程画布。）
+* 对路径上的下一个接触点进行探索性、临时性分析。 （对于具有预定义页面顺序的历程，或使用最终路径的历程，请使用历程画布。）
 
-* 具有多个入口点和路径的非线性历程。（对于具有预定义页面顺序的历程，请使用历程画布。）
+* 具有多个入口点和路径的非线性历程。 （对于具有预定义页面顺序的历程，请使用历程画布。）
 
 使用[上述表格](#understand-the-differences)来了解流量、流失和历程画布之间的区别。

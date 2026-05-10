@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 3a0d03d1-def0-45e6-8eb2-115b88497e6d
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 50%
+source-wordcount: '696'
+ht-degree: 56%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 50%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-layer"
 >title="将数据层发送到 Adobe"
->abstract="您可以通过数据对象将整个数据层发送到 Adobe，而不是通过 XDM 对象发送数据。<br><br>此选项允许您将数据层映射到 XDM，而不是从头开始填充 XDM 对象，从而节省实施时间。不过，这种映射的工作量很大，因为会有大量数据 Adobe 无法轻易解释。随着时间的推移，此选项还会带来更多的复杂性，因为您将来添加到数据中的任何字段都必须映射到数据流中的 XDM。"
+>abstract="您可以通过数据对象将整个数据层发送到 Adobe，而不是通过 XDM 对象发送数据。<br><br>此选项允许您将数据层映射到 XDM，而不是从头开始填充 XDM 对象，从而节省实施时间。 不过，这种映射的工作量很大，因为会有大量数据 Adobe 无法轻易解释。 随着时间的推移，此选项还会带来更多的复杂性，因为您将来添加到数据中的任何字段都必须映射到数据流中的 XDM。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -37,13 +37,13 @@ ht-degree: 50%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-layer-map"
 >title="将每个数据层元素分配给 XDM"
->abstract="将每个数据层元素映射到所需的 XDM 字段。任何未映射到 XDM 字段的数据层元素都将被永久删除，因为 Adobe 不知道在哪里或如何存储该数据。"
+>abstract="将每个数据层元素映射到所需的 XDM 字段。 任何未映射到 XDM 字段的数据层元素都将被永久删除，因为 Adobe 不知道在哪里或如何存储该数据。"
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note}}
 
-当升级到 Customer Journey Analytics 时，Adobe [建议重新实施 Experience Platform Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)。但是，根据时间和资源限制等多种因素，推荐的升级步骤可能不适合您组织。
+当升级到 Customer Journey Analytics 时，Adobe [建议重新实施 Experience Platform Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)。 但是，根据时间和资源限制等多种因素，推荐的升级步骤可能不适合您组织。
 
 您可以将整个数据层发送到Customer Journey Analytics，而不是使用XDM对象收集数据。 但是，这种替代方法会随着时间的推移而增加复杂性。
 
@@ -55,7 +55,7 @@ ht-degree: 50%
 
 | 优点 | 缺点 |
 |----------|---------|
-| <ul><li>**提供在 Experience Edge Network 中托管数据的所有优点**： <p>这些优点包括：</p><ul><li>Adobe Experience Platform 专为支持[实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=zh-Hans)而构建，因此具有高性能报告和数据可用性</li><li>在其他 Experience Cloud 产品（AJO、RTCDP 等）之间整合对 Adobe Experience Cloud 数据收集的实施</li><li>不依赖于 Adobe Analytics 命名法（属性、eVar、事件等）</li></ul><li>**使用当前数据层逻辑**：此方法使用当前数据层逻辑代替传统的Web SDK实施。 虽然此方法需要一些配置，但它不需要从头开始的全新实施，并且不需要填充数据元素或标记规则。 它允许您将数据从数据层映射到XDM，而不是从头开始填充XDM对象。</li></ul> | <ul><li>**需要映射才能将数据发送到Platform**：当您的组织准备好使用Customer Journey Analytics时，您必须将数据发送到Adobe Experience Platform中的数据集。 <p>由于此选项允许您将整个客户端数据层放入数据对象并将它发送到Adobe，这会导致大量数据被Adobe不容易解读。 要允许Adobe解释数据，您必须使用数据流映射将每个字段映射到所需的XDM字段。</p></li><li>**刚性实施**：实施受限于发送点击时数据层提供的内容。 对于具有基本数据需求的组织来说，这可能是可以接受的，但大多数组织都应当避免这种僵化的实施，而采用允许填充数据元素的更灵活的实施。</li><li>**未来的更改更难实施**：您以后添加到数据的任何字段都必须映射到数据流中的XDM。</li></ul> |
+| <ul><li>**提供在 Experience Edge Network 中托管数据的所有优点**： <p>这些优点包括：</p><ul><li>Adobe Experience Platform 专为支持[实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=zh-Hans)而构建，因此具有高性能报告和数据可用性</li><li>在其他 Experience Cloud 产品（AJO、RTCDP 等）之间整合对 Adobe Experience Cloud 数据收集的实施</li><li>不依赖于 Adobe Analytics 命名法（属性、eVar、事件等）</li></ul><li>**使用当前数据层逻辑**：此方法使用当前数据层逻辑代替传统的Web SDK实施。 虽然此方法需要一些配置，但它不需要从头开始的全新实施，并且不需要填充数据元素或标记规则。 它允许您将数据从数据层映射到XDM，而不是从头开始填充XDM对象。</li></ul> | <ul><li>**需要映射才能将数据发送到 Platform**：当您的组织准备好使用 Customer Journey Analytics 时，您必须将数据发送到 Adobe Experience Platform 中的数据集。 <p>由于此选项允许您将整个客户端数据层放入数据对象并将它发送到Adobe，这会导致大量数据被Adobe不容易解读。 要允许Adobe解释数据，您必须使用数据流映射将每个字段映射到所需的XDM字段。</p></li><li>**刚性实施**：实施受限于发送点击时数据层提供的内容。 对于具有基本数据需求的组织来说，这可能是可以接受的，但大多数组织都应当避免这种僵化的实施，而采用允许填充数据元素的更灵活的实施。</li><li>**未来的更改更难实施**：您以后添加到数据的任何字段都必须映射到数据流中的XDM。</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -65,6 +65,6 @@ ht-degree: 50%
 
 1. 配置实施以在所需时间将数据发送到 Adobe，并将 JSON 负载配置为完整的数据层。
 
-1. 将每个数据层元素映射到所需的XDM字段。
+1. 将每个数据层元素映射到所需的 XDM 字段。
 
    任何未映射到 XDM 字段的数据层元素都将被永久删除，因为 Adobe 不知道在哪里或如何存储该数据。

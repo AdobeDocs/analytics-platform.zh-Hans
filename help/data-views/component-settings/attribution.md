@@ -5,9 +5,9 @@ exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 2fd79da264d60bb90e1193ead2eee67602404b4c
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '437'
 ht-degree: 63%
 
 ---
@@ -28,10 +28,10 @@ ht-degree: 63%
 
 例如：
 
-1. 网站访客单击指向您的某个产品页面的付费搜索链接。他们将产品添加到购物车，但没有购买。
-2. 第二天，他们在社交媒体上看到了一位朋友的帖子。他们点击链接，然后完成购买。
+1. 网站访客单击指向您的某个产品页面的付费搜索链接。 他们将产品添加到购物车，但没有购买。
+2. 第二天，他们在社交媒体上看到了一位朋友的帖子。 他们点击链接，然后完成购买。
 
-在某些报告中，您可能希望将订单归因到“付费”搜索。在其他报告中，您可能希望将订单归因到社交。通过归因，您能够控制报告的这一方面。
+在某些报告中，您可能希望将订单归因到“付费”搜索。 在其他报告中，您可能希望将订单归因到社交。 通过归因，您能够控制报告的这一方面。
 
 ## 设置组件的归因模型
 
@@ -65,9 +65,9 @@ ht-degree: 63%
 >
 >如果您的组织要求某个量度具有多个归因设置，您可以执行以下操作之一：
 >
-> * 使用每个所需的归因设置复制数据视图中的量度。您可以在数据视图中多次加入相同的量度，以为每个量度提供不同的设置。确保正确地为每个量度赋予标签，以便分析师在生成报告时了解这些量度之间的差异。
+> * 使用每个所需的归因设置复制数据视图中的量度。 您可以在数据视图中多次加入相同的量度，以为每个量度提供不同的设置。 确保正确地为每个量度赋予标签，以便分析师在生成报告时了解这些量度之间的差异。
 >
-> * 覆盖 Analysis Workspace 中的量度。在量度的[列设置](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)中，选择&#x200B;**[!UICONTROL 使用非默认归因模型]**&#x200B;来更改该特定报告的量度归因模型和回顾时间范围。
+> * 覆盖 Analysis Workspace 中的量度。 在量度的[列设置](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)中，选择&#x200B;**[!UICONTROL 使用非默认归因模型]**&#x200B;来更改该特定报告的量度归因模型和回顾时间范围。
 
 ## 归因模型 {#attribution-models}
 
@@ -86,7 +86,7 @@ ht-degree: 63%
 
 {{attribution-container}}
 
-## 回顾时间范围
+## 回顾窗口
 
 {{attribution-lookback-window}}
 

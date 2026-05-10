@@ -4,10 +4,10 @@ title: 树状图
 feature: Visualizations
 exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 91%
+source-wordcount: '195'
+ht-degree: 71%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 91%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** 中的树状图可视化。_<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** 版本的[树状图](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/treemap)。_
+_本文在_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中记录了树形图可视化图表。_<br/>_对于本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版本，请参阅[树形图](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/treemap)。_
 
 >[!ENDSHADEBOX]
 
@@ -36,7 +36,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 ![树状图示例显示了代表子分支的更小矩形磁贴。](assets/treemap.png)
 
-通过树状图，您可以看到其他方法难以发现的模式。通过维度的颜色和大小，您可以发现维度是如何关联的，以及某个维度是否特别相关。树状图的第二个优势是，从结构上看，树状图可以有效利用空间。
+通过树状图，您可以看到其他方法难以发现的模式。 通过维度的颜色和大小，您可以发现维度是如何关联的，以及某个维度是否特别相关。 树状图的第二个优势是，从结构上看，树状图可以有效利用空间。
 
 
 >[!BEGINSHADEBOX]

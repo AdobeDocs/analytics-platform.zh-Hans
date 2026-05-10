@@ -4,9 +4,9 @@ title: 智能题注
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '802'
 ht-degree: 100%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 智能标题适用于：
 
-* 需要与其他用户分享叙述内容的分析师。分析师需要这些洞察才能向用户提供背景信息。
+* 需要与其他用户分享叙述内容的分析师。 分析师需要这些洞察才能向用户提供背景信息。
 * 希望快速发现高级要点的商业用户。
 
 >[!BEGINSHADEBOX]
@@ -35,20 +35,20 @@ ht-degree: 100%
 
 ## 启动智能标题 {#launch}
 
-要为可视化内容启动自动生成的智能标题，请选择可视化内容右上角的![智能标题](/help/assets/icons/AI.svg)。进行该选择会产生自然语言洞察。
+要为可视化内容启动自动生成的智能标题，请选择可视化内容右上角的![智能标题](/help/assets/icons/AI.svg)。 进行该选择会产生自然语言洞察。
 
 ![启动 Analysis 窗口，其中显示产品浏览量趋势的智能标题。](assets/intelligent-captions.gif)
 
 
 请记住以下事项：
 
-* 您至少需要 3 个数据点才能成功生成标题。否则，您可能会收到类似于&#x200B;**[!UICONTROL 数据不足，无法分析]**&#x200B;的错误。
+* 您至少需要 3 个数据点才能成功生成标题。 否则，您可能会收到类似于&#x200B;**[!UICONTROL 数据不足，无法分析]**&#x200B;的错误。
 
 * 每当表格中用于生成可视化内容的选定基础数据发生变化时，就会生成相应的标题。
 
-* 如果所关联的自由格式表中有多个量度，则仅会为第一个量度或用户当前选择的量度生成标题。但是，可以为折线和面积可视化图表的多个量度生成标题。
+* 如果所关联的自由格式表中有多个量度，则仅会为第一个量度或用户当前选择的量度生成标题。 但是，可以为折线和面积可视化图表的多个量度生成标题。
 
-* 如果您在特定的时间点上保存项目，并在稍后重新加载，则标题会自动使用新数据进行更新。这同样适用于计划的项目，以及从项目中导出的 PDF 文件。
+* 如果您在特定的时间点上保存项目，并在稍后重新加载，则标题会自动使用新数据进行更新。 这同样适用于计划的项目，以及从项目中导出的 PDF 文件。
 
 
 ## 可视化图表 {#visualizations}
@@ -75,7 +75,7 @@ Here is an example of what intelligent captions could look like:
 
 ### 复制到剪贴板 {#copy}
 
-您可以将标题复制到剪贴板，然后将其粘贴到 PowerPoint 或其他工具中。您可以在逐个视图中复制单个标题，也可以在扩展标题视图中一次复制所有标题。
+您可以将标题复制到剪贴板，然后将其粘贴到 PowerPoint 或其他工具中。 您可以在逐个视图中复制单个标题，也可以在扩展标题视图中一次复制所有标题。
 
 * 要复制标题，请选择标题对话框右上角的![将标题复制到剪贴板](/help/assets/icons/Copy.svg)。
 
@@ -135,12 +135,12 @@ Customer Journey Analytics [移动记分卡](https://experienceleague.adobe.com/
 
 * **解决方案访问权限**：Customer Journey Analytics 中提供智能标题功能，但 Adobe Analytics 中不提供该功能。
 
-* **合同访问权限**：如果您无法使用智能标题，请联系您所在组织的管理员或 Adobe 客户代表（管理员）。在您的组织中使用智能标题之前，您必须同意某些与生成式 AI 相关的法律条款。
+* **合同访问权限**：如果您无法使用智能标题，请联系您所在组织的管理员或 Adobe 客户代表（管理员）。 在您的组织中使用智能标题之前，您必须同意某些与生成式 AI 相关的法律条款。
 
-* **权限**：在 [!UICONTROL Adobe Admin Console] 中，[!UICONTROL 报告工具] **[!UICONTROL 智能标题]**&#x200B;权限决定访问权限。[产品轮廓管理员](https://helpx.adobe.com/cn/enterprise/using/manage-product-profiles.html)需要在 [!UICONTROL Admin Console] 中执行以下步骤：
+* **权限**：在 [!UICONTROL Adobe Admin Console] 中，[!UICONTROL 报告工具] **[!UICONTROL 智能标题]**&#x200B;权限决定访问权限。 [产品轮廓管理员](https://helpx.adobe.com/cn/enterprise/using/manage-product-profiles.html)需要在 [!UICONTROL Admin Console] 中执行以下步骤：
    1. 导航至 **[!UICONTROL Admin Console]** > **[!UICONTROL 产品和服务]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL 产品轮廓]**。
    1. 选择您想要提供智能标题访问权限的产品轮廓的标题。
-   1. 在具体的产品轮廓中，选择&#x200B;**[!UICONTROL 权限]**。
+   1. 在具体的产品配置文件中，选择&#x200B;**[!UICONTROL 权限]**。
    1. 选择![编辑](/help/assets/icons/Edit.svg)来编辑&#x200B;**[!UICONTROL 报告工具]**。
    1. 选择 ![AddCircle](/help/assets/icons/AddCircle.svg) 以将&#x200B;**智能标题**&#x200B;添加到&#x200B;**[!UICONTROL 包含的权限项目]**。
 

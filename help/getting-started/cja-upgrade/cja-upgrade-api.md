@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 13b413fd-2103-427a-b251-5b3a19046bdb
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 80%
+source-wordcount: '141'
+ht-degree: 73%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 80%
 
 您可以通过安装 NPM 包来安装 Platform Web SDK，以便控制 Adobe Experience Platform Web SDK JavaScript 的生成过程。
 
-1. 按照Web SDK指南中[安装Web SDK](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package)的[选项3：使用NPM包](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/edge/fundamentals/installing-the-sdk)部分中的信息操作。
+1. 按照Web SDK指南中[安装Web SDK](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/edge/fundamentals/installing-the-sdk)的[选项3：使用NPM包](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package)部分中的信息操作。
 
 {{upgrade-final-step}}
 

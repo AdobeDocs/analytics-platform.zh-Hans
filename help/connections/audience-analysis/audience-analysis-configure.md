@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
 exl-id: 0db3f6f7-9d7e-41bf-8eb5-02e439bab10a
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 34%
@@ -46,7 +46,7 @@ ht-degree: 34%
 >[!CONTEXTUALHELP]
 >id="cja-audience-namespace"
 >title="使用主要身份标识命名空间"
->abstract="如果您希望 Customer Journey Analytics 在“身份标识图”中查找标记为 primary=true 属性的身份，并将该身份用作该行的人员 ID，请启用此选项。 该身份标识是 Experience Platform 中用于分区时使用的主密钥。 <br/>如果未启用此选项，请从下方的“身份标识命名空间”字段中选择一个命名空间。 Customer Journey Analytics 会在每一行的“身份标识图”中查找该命名空间键，并将该命名空间下的身份标识用作该行的人员 ID。"
+>abstract="如果您希望 Customer Journey Analytics 在“身份标识图”中查找标记为 primary=true 属性的身份，并将该身份用作该行的人员 ID，请启用此选项。 该身份标识是 Experience Platform 中用于分区时使用的主键。 <br/>如果未启用此选项，请从下方的“身份标识命名空间”字段中选择一个命名空间。 Customer Journey Analytics 会在每一行的“身份标识图”中查找该命名空间键，并将该命名空间下的身份标识用作该行的人员 ID。"
 
 <!-- markdownlint-enable MD034 -->
 

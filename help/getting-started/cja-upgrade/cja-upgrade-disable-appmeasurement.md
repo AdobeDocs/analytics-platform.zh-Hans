@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 71b9da74-3597-4536-9e47-f18097dd917b
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 100%
@@ -19,7 +19,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-appmeasurement"
 >title="禁用 AppMeasurement 数据收集"
->abstract="在 Web SDK 数据完全发挥作用的情况下，与您的开发团队一起从您的网站或属性中删除 AppMeasurement.js。<br><br>从网站上删除 AppMeasurement 的操作仅需几分钟，但需要您的工程团队花费一些时间来完成。但是，请确保您的 Analytics 用户使用的是 Customer Journey Analytics 而不是 Adobe Analytics；如果您还没有这样做，那么让所有人转换的公告过程可能会花费更长的时间。"
+>abstract="在 Web SDK 数据完全发挥作用的情况下，与您的开发团队一起从您的网站或属性中删除 AppMeasurement.js。<br><br>从网站上删除 AppMeasurement 的操作仅需几分钟，但需要您的工程团队花费一些时间来完成。 但是，请确保您的 Analytics 用户使用的是 Customer Journey Analytics 而不是 Adobe Analytics；如果您还没有这样做，那么让所有人转换的公告过程可能会花费更长的时间。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -33,5 +33,5 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->此信息尚不可用。它将很快提供。
+>此信息尚不可用。 它将很快提供。
 

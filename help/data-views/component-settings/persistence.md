@@ -5,9 +5,9 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1117'
 ht-degree: 76%
 
 ---
@@ -20,13 +20,13 @@ ht-degree: 76%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_persistence"
 >title="持久性"
->abstract="配置应用于维度的默认分配模型。在报告中，分配在区段之前进行。"
+>abstract="配置应用于维度的默认分配模型。 在报告中，分配在区段之前进行。"
 
 <!-- markdownlint-enable MD034 -->
 
 
 
-[!UICONTROL 持久性]是指某个给定的维度值能否归因于其所设置事件之外的某个量度。它使用分配和有效期限的组合。
+[!UICONTROL 持久性]是指某个给定的维度值能否归因于其所设置事件之外的某个量度。 它使用分配和有效期限的组合。
 
 ![突出显示“持久性”选项的数据视图窗口](../assets/persistence.png)
 
@@ -44,9 +44,9 @@ ht-degree: 76%
 
 | 设置 | 描述 |
 | --- | --- |
-| [!UICONTROL 设置持久性] | 为维度启用持久性。如果未启用持久性，则维度仅与同一事件中存在的指标相关。默认下禁用此设置。 |
+| [!UICONTROL 设置持久性] | 为维度启用持久性。 如果未启用持久性，则维度仅与同一事件中存在的指标相关。 默认下禁用此设置。 |
 | [!UICONTROL 分配] | 指定在维度上使用用于持久性的分配模型。 选项如下：<ul><li>**[!UICONTROL 最近]**：维度中的值会一直保留，直到被后续值覆盖</li><li> **[!UICONTROL 原始]**：此维度的第一个值会持续存在，且不会被后续值覆盖</li><li>**[!UICONTROL 全部]**：同时保持此维度的所有值</li><li>**[!UICONTROL 第一个已知]**：使用此维度的第一个值，并将其应用于之前和之后的所有事件。</li><li>**[!UICONTROL 最后一个已知]**：使用此维度的最后一个值，并将其应用于之前和之后的所有事件。</li></ul> |
-| [!UICONTROL 有效期限] | 指定维度的持久性窗口。 选项如下： <ul><li>**[!UICONTROL 会话]**（默认）</li><li>**[!UICONTROL 人员]**</li><li>**[!UICONTROL 自定义时间]**</li><li>**[!UICONTROL 量度]**</li></ul>。可能需要能够在购买（如内部搜索词或其他促销用例）时让维度到期。可设置的最长到期时间为90天。 如果选择[!UICONTROL 全部]分配，则仅有[!UICONTROL 会话]或[!UICONTROL 人员]有效期限可用。 |
+| [!UICONTROL 有效期限] | 指定维度的持久性窗口。 选项如下： <ul><li>**[!UICONTROL 会话]**（默认）</li><li>**[!UICONTROL 人员]**</li><li>**[!UICONTROL 自定义时间]**</li><li>**[!UICONTROL 量度]**</li></ul>. 可能需要能够在购买（如内部搜索词或其他促销用例）时让维度到期。 可设置的最长到期时间为90天。 如果选择[!UICONTROL 全部]分配，则仅有[!UICONTROL 会话]或[!UICONTROL 人员]有效期限可用。 |
 
 {style="table-layout:auto"}
 
@@ -54,7 +54,7 @@ ht-degree: 76%
 
 可用的分配设置包括：
 
-* **[!UICONTROL 最近]**：保留维度中现在的最新（按时间戳）值。在维度的有效期内任何后续出现的值均替换以前保留的值。如果在此维度上的[无值选项](no-value-options.md)下启用了“将‘无值’视为值”，则将用空值覆盖以前保留的值。例如，请考虑下表，其中具有[!UICONTROL 最近]的分配和[!UICONTROL 会话]的有效期限：
+* **[!UICONTROL 最近]**：保留维度中现在的最新（按时间戳）值。 在维度的有效期内任何后续出现的值均替换以前保留的值。 如果在此维度上的[无值选项](no-value-options.md)下启用了“将‘无值’视为值”，则将用空值覆盖以前保留的值。 例如，请考虑下表，其中具有[!UICONTROL 最近]的分配和[!UICONTROL 会话]的有效期限：
 
   | 维度 | 点击1 | 点击2 | 点击3 | 点击4 | 点击5 |
   | --- | --- | --- | --- | --- | --- |
@@ -68,14 +68,14 @@ ht-degree: 76%
   | 数据集值 |  | C | B |  | A |
   | 原有分配 |  | C | C | C | C |
 
-* **[!UICONTROL 全部]**：其行为方式类似于指标的[!UICONTROL 参与率]归因模型。同等地保留所有值，以使每个值都能对报告中的指标发挥完整的作用。例如，请考虑下表，其中具有[!UICONTROL 全部]的分配和[!UICONTROL 会话]的有效期限：
+* **[!UICONTROL 全部]**：其行为方式类似于指标的[!UICONTROL 参与率]归因模型。 同等地保留所有值，以使每个值都能对报告中的指标发挥完整的作用。 例如，请考虑下表，其中具有[!UICONTROL 全部]的分配和[!UICONTROL 会话]的有效期限：
 
   | 维度 | 点击1 | 点击2 | 点击3 | 点击4 | 点击5 |
   | --- | --- | --- | --- | --- | --- |
   | 数据集值 | A | B | C |  | A |
   | 全部分配 | A | A、B | A、B、C | A、B、C | A、B、C |
 
-* **[!UICONTROL 第一个已知]**&#x200B;和&#x200B;**[!UICONTROL 最后一个已知]**：（2022 年 1 月 19 日）这两个分配模型满足“进入”和“退出”维度用例。它们采用指定持久性范围（会话、人员或带回溯的自定义时间段）内某个维度的第一个或最后一个观察值，并将其应用于指定范围内的所有事件。示例：
+* **[!UICONTROL 第一个已知]**&#x200B;和&#x200B;**[!UICONTROL 最后一个已知]**：（2022 年 1 月 19 日）这两个分配模型满足“进入”和“退出”维度用例。 它们采用指定持久性范围（会话、人员或带回溯的自定义时间段）内某个维度的第一个或最后一个观察值，并将其应用于指定范围内的所有事件。 示例：
 
   | 维度 | 点击1 | 点击2 | 点击3 | 点击4 | 点击5 |
   | --- | --- | --- | --- | --- | --- |
@@ -89,14 +89,14 @@ ht-degree: 76%
 
 可用的过期设置包括：
 
-* **会话**：在给定会话后到期。默认有效期限时段。
+* **会话**：在给定会话后到期。 默认有效期限时段。
 * **人员报告期**：在报告期结束时到期。
 * **全球帐户报告期** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}：报告期结束时到期。
 * **帐户报告期** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}：报告期结束时到期。
 * **机会报告期** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}：报告期结束时到期。
 * **购买群组报告期** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}：报告期结束时到期。
-* **自定义时间**：在指定时段（最多 90 天）后过期。仅对“原有”和“最近”分配模型有此有效期限选项。在使用基于时间的有效期限时，将考虑报告时段（最长 90 天）开始之前的值。
-* **量度**：当可在事件中看到此量度时，立即使维度中的持久值过期。可将任何指标用作此维度的有效期限结束。仅对“原有”和“最近”分配设置有此有效期限选项。
+* **自定义时间**：在指定时段（最多 90 天）后过期。 仅对“原有”和“最近”分配模型有此有效期限选项。 在使用基于时间的有效期限时，将考虑报告时段（最长 90 天）开始之前的值。
+* **量度**：当可在事件中看到此量度时，立即使维度中的持久值过期。 可将任何指标用作此维度的有效期限结束。 仅对“原有”和“最近”分配设置有此有效期限选项。
 
 
 ## [!UICONTROL 绑定维度]
@@ -117,6 +117,6 @@ ht-degree: 76%
 
 一个下拉菜单，可让您选择充当绑定触发器的量度。 有效的选项包括数据视图中包含的量度。
 
-此设置仅在对象数组中的绑定维度低于组件时显示。当绑定量度显示在事件中时，维度值会从事件级别维度向下复制到绑定维度的较低架构级别。
+此设置仅在对象数组中的绑定维度低于组件时显示。 当绑定量度显示在事件中时，维度值会从事件级别维度向下复制到绑定维度的较低架构级别。
 
 有关如何有效使用绑定维度的更多信息，请参阅[在Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md)中使用绑定维度和量度下的第二个示例。

@@ -4,10 +4,10 @@ title: “下一个项目”或“上一个项目”面板
 feature: Panels
 role: User, Admin
 exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
-source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 94%
+source-wordcount: '526'
+ht-degree: 89%
 
 ---
 
@@ -21,16 +21,16 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_panel"
 >title="下一项或上一项"
->abstract="分析访客之前最常来自何处或后续最常访问的地方是什么。指定用于可视化图表的维度、维度项、方向和容器。"
+>abstract="分析访客之前最常来自何处或后续最常访问的地方是什么。 指定用于可视化图表的维度、维度项、方向和容器。"
 
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_ 中的“下一项或上一项”面板。<br/>_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** 版本的[下一项或上一项面板](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/next-previous)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_&#x200B;中的下一个或上一个项目面板。<br/>_对于本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版本，请参阅[下一个或上一个项目面板](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/next-previous)。_
 
 >[!ENDSHADEBOX]
 
-**[!UICONTROL 下一项或上一项]**&#x200B;面板包含许多表格和可视化图表，用于识别特定维度的下一项或上一项维度。例如，您可能想要浏览客户访问主页后最常访问哪些页面。
+**[!UICONTROL 下一项或上一项]**&#x200B;面板包含许多表格和可视化图表，用于识别特定维度的下一项或上一项维度。 例如，您可能想要浏览客户访问主页后最常访问哪些页面。
 
 ## 使用 {#use}
 
@@ -41,7 +41,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 要使用&#x200B;**[!UICONTROL 下一项或上一项]**&#x200B;面板：
 
-1. 创建&#x200B;**[!UICONTROL 下一项或上一项]**&#x200B;面板。有关如何创建面板的信息，请参阅[创建面板](panels.md#create-a-panel)。
+1. 创建&#x200B;**[!UICONTROL 下一项或上一项]**&#x200B;面板。 有关如何创建面板的信息，请参阅[创建面板](panels.md#create-a-panel)。
 
 1. 指定面板的[输入](#panel-input)。
 
@@ -74,14 +74,14 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 | 可视化图表 | 描述 |
 | --- | --- |
-| **[!UICONTROL 水平条]** | 根据您选择的维度项列出下一项（或上一项）维度。将光标悬停在单个条形图上可突出显示自由格式表中相应的项。 |
+| **[!UICONTROL 水平条]** | 根据您选择的维度项列出下一项（或上一项）维度。 将光标悬停在单个条形图上可突出显示自由格式表中相应的项。 |
 | **[!UICONTROL 摘要数字]** | 当前月份（迄今为止）所有下一项或上一项维度发生次数的高级摘要数字。 |
-| **[!UICONTROL 自由格式表]** | 根据您选择的维度项以表的格式列出下一项（或上一项）维度。例如，人们在主页或工作区页面之后（或之前）访问的最受欢迎的页面是哪些（按发生次数计算）。 |
+| **[!UICONTROL 自由格式表]** | 根据您选择的维度项以表的格式列出下一项（或上一项）维度。 例如，人们在主页或工作区页面之后（或之前）访问的最受欢迎的页面是哪些（按发生次数计算）。 |
 
 {style="table-layout:auto"}
 
 
 >[!MORELIKETHIS]
 >
->[创建一个面板](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+>[创建面板](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
 >

@@ -4,9 +4,9 @@ description: 了解基本计算量度函数。
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 211f0411d0bf70288cbd46bb219fce7ae99fe03d
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '3599'
+source-wordcount: '3641'
 ht-degree: 48%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 48%
 # 基本功能
 
 
-使用[计算量度生成器](cm-workflow/cm-build-metrics.md)可以应用统计和数学函数。本文按字母顺序列出了这些函数及其定义。
+使用[计算量度生成器](cm-workflow/cm-build-metrics.md)可以应用统计和数学函数。 本文按字母顺序列出了这些函数及其定义。
 
 >[!NOTE]
 >
->当 [!DNL metric] 被标识为函数中的参数时，还允许使用其他量度表达式。例如，[COLUMN MAXIMUM(METRICS)](#column-maximum)还允许[COLUMN MAXIMUM(PageViews + Sessions)](#column-maximum)。
+>当 [!DNL metric] 被标识为函数中的参数时，还允许使用其他量度表达式。 例如，[COLUMN MAXIMUM(METRICS)](#column-maximum)还允许[COLUMN MAXIMUM(PageViews + Sessions)](#column-maximum)。
 
 
 
@@ -30,11 +30,11 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 
 ## Include-Zeros 参数的含义是什么？
 
-它可告知计算中是否包含零。零有时表示&#x200B;*无*，有时又十分重要。
+它可告知计算中是否包含零。 零有时表示&#x200B;*无*，有时又十分重要。
 
-例如，如果您有收入量度，然后又将页面查看次数量度添加到报告中，则您的收入会突然多出一些全部为零的行。您可能不希望该附加量度影响收入栏中的任何&#x200B;**[平均值](cm-functions.md#mean)**、**[行最小值](cm-functions.md#row-min)**、**[四分位数](cm-functions.md#quartile)**&#x200B;以及其他计算。在这种情况下，您需要检查 `include-zeros` 参数。
+例如，如果您有收入量度，然后又将页面查看次数量度添加到报告中，则您的收入会突然多出一些全部为零的行。 您可能不希望该附加量度影响收入栏中的任何&#x200B;**[平均值](cm-functions.md#mean)**、**[行最小值](cm-functions.md#row-min)**、**[四分位数](cm-functions.md#quartile)**&#x200B;以及其他计算。 在这种情况下，您需要检查 `include-zeros` 参数。
 
-另一种情况是，您有两个感兴趣的量度，其中一个量度的平均值或最小值较高，因为其中有些行为零。在这种情况下，您可以选择不检查参数，以包含零
+另一种情况是，您有两个感兴趣的量度，其中一个量度的平均值或最小值较高，因为其中有些行为零。  在这种情况下，您可以选择不检查参数，以包含零
 
 
 
@@ -45,14 +45,14 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 >[!CONTEXTUALHELP]
 >id="functions-abs"
 >title="绝对值"
->abstract="返回某数字的绝对值。某数字的绝对值是一个具有正值的数字。"
+>abstract="返回某数字的绝对值。 某数字的绝对值是一个具有正值的数字。"
 
 <!-- markdownlint-enable MD034 -->
 
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ABSOLUTE VALUE(metric)]**
 
-[!BADGE Row]{type="Neutral"} 返回某数字的绝对值。某数字的绝对值是一个具有正值的数字。
+[!BADGE Row]{type="Neutral"} 返回某数字的绝对值。 某数字的绝对值是一个具有正值的数字。
 
 | 参数 | 描述 |
 |---|---|
@@ -74,13 +74,13 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 >[!CONTEXTUALHELP]
 >id="functions-col-max"
 >title="列最大值"
->abstract="返回某量度列的一组维度元素中的最大值。MAXV 可以在一个列（量度）内跨维度元素垂直估值。"
+>abstract="返回某量度列的一组维度元素中的最大值。 MAXV 可以在一个列（量度）内跨维度元素垂直估值。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MAXIMUM(metric, include_zeros)]**
 
-返回某量度列的一组维度元素中的最大值。MAXV 可以在一个列（量度）内跨维度元素垂直估值。
+返回某量度列的一组维度元素中的最大值。 MAXV 可以在一个列（量度）内跨维度元素垂直估值。
 
 | 参数 | 描述 |
 |---|---|
@@ -89,7 +89,7 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 
 **用例**：确定划分中的最高值，例如访问次数最多的日期或收入最高的产品。 这有助于突出不同类别中的最佳性能。
 
-**在计算量度生成器**&#x200B;中：按&#x200B;**天**&#x200B;或&#x200B;*产品*&#x200B;划分时，将&#x200B;*列最大值*&#x200B;应用于诸如&#x200B;*收入*&#x200B;或&#x200B;*会话*&#x200B;之类的量度。 该函数返回该列中每一行的最大值。
+**在计算量度生成器**&#x200B;中：按&#x200B;*天*&#x200B;或&#x200B;*产品*&#x200B;划分时，将&#x200B;**列最大值**&#x200B;应用于诸如&#x200B;*收入*&#x200B;或&#x200B;*会话*&#x200B;之类的量度。 该函数返回该列中每一行的最大值。
 
 >[!TIP]
 >
@@ -103,14 +103,14 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 >[!CONTEXTUALHELP]
 >id="functions-col-min"
 >title="列最小值"
->abstract="返回某量度列的一组维度元素中的最小值。MINV 可以在一个列（量度）内跨维度元素垂直估值。"
+>abstract="返回某量度列的一组维度元素中的最小值。 MINV 可以在一个列（量度）内跨维度元素垂直估值。"
 
 <!-- markdownlint-enable MD034 -->
 
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MINIMUM(metric, include_zeros)]**
 
-返回某量度列的一组维度元素中的最小值。MINV 可以在一个列（量度）内跨维度元素垂直估值。
+返回某量度列的一组维度元素中的最小值。 MINV 可以在一个列（量度）内跨维度元素垂直估值。
 
 | 参数 | 描述 |
 |---|---|
@@ -119,7 +119,7 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 
 **用例**：标识划分中表现最差的值，例如转化次数最少的促销活动或收入最低的日期。 这有助于快速显示性能不佳的区段。
 
-**在计算量度生成器**&#x200B;中：按&#x200B;**促销活动**&#x200B;或&#x200B;*天*&#x200B;划分时，将&#x200B;*列最小值*&#x200B;应用于诸如&#x200B;*收入*&#x200B;或&#x200B;*转化率*&#x200B;之类的量度。 该函数返回该列中每行的最小值。
+**在计算量度生成器**&#x200B;中：按&#x200B;*促销活动*&#x200B;或&#x200B;*天*&#x200B;划分时，将&#x200B;**列最小值**&#x200B;应用于诸如&#x200B;*收入*&#x200B;或&#x200B;*转化率*&#x200B;之类的量度。 该函数返回该列中每行的最小值。
 
 >[!TIP]
 >
@@ -149,7 +149,7 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 
 **用例**：计算划分中所有值的总计，例如所有产品的总收入或所有天的总访问次数。 当需要总计与单个行值进行比较时，这很有用。
 
-**在计算量度生成器**&#x200B;中：在按&#x200B;**产品**&#x200B;或&#x200B;*天*&#x200B;划分时，将&#x200B;*列总和*&#x200B;应用于诸如&#x200B;*收入*&#x200B;或&#x200B;*会话*&#x200B;之类的量度。 此函数返回该列中每一行所有值的总和。
+**在计算量度生成器**&#x200B;中：在按&#x200B;*产品*&#x200B;或&#x200B;*天*&#x200B;划分时，将&#x200B;**列总和**&#x200B;应用于诸如&#x200B;*收入*&#x200B;或&#x200B;*会话*&#x200B;之类的量度。 此函数返回该列中每一行所有值的总和。
 
 >[!TIP]
 >
@@ -193,7 +193,7 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 >[!CONTEXTUALHELP]
 >id="functions-exp"
 >title="指数"
->abstract="返回 e 的给定次幂。常量 e 等于 2.71828182845904，它是自然对数的底数。EXPONENT 是 LN 的反函数，LN 是某数字的自然对数。"
+>abstract="返回 e 的给定次幂。 常量 e 等于 2.71828182845904，它是自然对数的底数。 EXPONENT 是 LN 的反函数，LN 是某数字的自然对数。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -252,14 +252,14 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 >[!CONTEXTUALHELP]
 >id="functions-median"
 >title="中间值"
->abstract="返回列中某量度的中间值。中间值是位于一组数字中间的数字。也就是说，一半的数字大于或等于中间值，一半的数字小于或等于中间值。"
+>abstract="返回列中某量度的中间值。 中间值是位于一组数字中间的数字。 也就是说，一半的数字大于或等于中间值，一半的数字小于或等于中间值。"
 
 <!-- markdownlint-enable MD034 -->
 
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN(metric, include_zeros)]**
 
-[!BADGE Table]{type="Neutral"} 返回列中某量度的中间值。中间值是位于一组数字中间的数字。也就是说，一半的数字大于或等于中间值，一半的数字小于或等于中间值。
+[!BADGE Table]{type="Neutral"} 返回列中某量度的中间值。 中间值是位于一组数字中间的数字。 也就是说，一半的数字大于或等于中间值，一半的数字小于或等于中间值。
 
 | 参数 | 描述 |
 |---|---|
@@ -329,14 +329,14 @@ MODULO(MODULO(x,y)+y,y)
 >[!CONTEXTUALHELP]
 >id="functions-percentile"
 >title="百分位数"
->abstract="返回第 n 个百分位数，即 0 至 100 之间的值。当 n &lt; 0 时，该函数使用零。当 n > 100 时，该函数返回 100。"
+>abstract="返回第 n 个百分位数，即 0 至 100 之间的值。 当 n &lt; 0 时，该函数使用零。 当 n > 100 时，该函数返回 100。"
 
 <!-- markdownlint-enable MD034 -->
 
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL PERCENTILE(metric, k, include_zeros)]**
 
-[!BADGE Table]{type="Neutral"} 返回第 n 个百分位数，即 0 至 100 之间的值。当 n &lt; 0 时，该函数使用零。当 n > 100 时，该函数返回 100。
+[!BADGE Table]{type="Neutral"} 返回第 n 个百分位数，即 0 至 100 之间的值。 当 n &lt; 0 时，该函数使用零。 当 n > 100 时，该函数返回 100。
 
 | 参数 | 描述 |
 |---|---|
@@ -389,14 +389,14 @@ MODULO(MODULO(x,y)+y,y)
 >[!CONTEXTUALHELP]
 >id="functions-quartile"
 >title="四分位数"
->abstract="返回某量度的四分位数形式的值。例如，四分位数可用于查找在获得的收入方面排名前 25% 的产品。"
+>abstract="返回某量度的四分位数形式的值。 例如，四分位数可用于查找在获得的收入方面排名前 25% 的产品。"
 
 <!-- markdownlint-enable MD034 -->
 
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE(metric, quartile, include_zeros)]**
 
-[!BADGE Table]{type="Neutral"} 返回某量度的四分位数形式的值。例如，四分位数可用于查找在获得的收入方面排名前 25% 的产品。当四分位数分别等于 `0`（零）、`2` 和 `4` 时，[COLUMN MINIMUM](#column-minimum), [MEDIAN](#median) 和 [COLUMN MAXIMUM](#column-maximum) 返回与 [QUARTILE](#quartile) 相同的值。
+[!BADGE Table]{type="Neutral"} 返回某量度的四分位数形式的值。 例如，四分位数可用于查找在获得的收入方面排名前 25% 的产品。 当四分位数分别等于 `0`（零）、`2` 和 `4` 时，[COLUMN MINIMUM](#column-minimum), [MEDIAN](#median) 和 [COLUMN MAXIMUM](#column-maximum) 返回与 [QUARTILE](#quartile) 相同的值。
 
 | 参数 | 描述 |
 |---|---|
@@ -420,18 +420,18 @@ MODULO(MODULO(x,y)+y,y)
 >[!CONTEXTUALHELP]
 >id="functions-round"
 >title="轮次"
->abstract="在没有&#x200B;*数字*&#x200B;参数的情况下四舍五入，与在&#x200B;*数字*&#x200B;参数为 0 的情况下四舍五入是相同的，都会四舍五入为最接近的整数。使用&#x200B;*数字*&#x200B;参数，ROUND 返回小数点右侧的&#x200B;*数字*&#x200B;位数。如果&#x200B;*数字*&#x200B;为负，则在小数点左侧返回 0。"
+>abstract="在没有&#x200B;*数字*&#x200B;参数的情况下四舍五入，与在&#x200B;*数字*&#x200B;参数为 0 的情况下四舍五入是相同的，都会四舍五入为最接近的整数。  使用&#x200B;*数字*&#x200B;参数，ROUND 返回小数点右侧的&#x200B;*数字*&#x200B;位数。  如果&#x200B;*数字*&#x200B;为负，则在小数点左侧返回 0。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ROUND(metric, number)]**
 
-在没有&#x200B;*数字*&#x200B;参数的情况下四舍五入，与在&#x200B;*数字*&#x200B;参数为 0 的情况下四舍五入是相同的，都会四舍五入为最接近的整数。使用&#x200B;*数字*&#x200B;参数，ROUND 返回小数点右侧的&#x200B;*数字*&#x200B;位数。如果&#x200B;*数字*&#x200B;为负，则在小数点左侧返回 0。
+在没有&#x200B;*数字*&#x200B;参数的情况下四舍五入，与在&#x200B;*数字*&#x200B;参数为 0 的情况下四舍五入是相同的，都会四舍五入为最接近的整数。  使用&#x200B;*数字*&#x200B;参数，ROUND 返回小数点右侧的&#x200B;*数字*&#x200B;位数。  如果&#x200B;*数字*&#x200B;为负，则在小数点左侧返回 0。
 
 | 参数 | 描述 |
 |---|---|
 | 量度 | 要舍入的量度。 |
-| 数字 | 返回小数点右边的多少位数字。（如果负数返回小数点左侧的零）。 |
+| 数字 | 返回小数点右边的多少位数字。 （如果负数返回小数点左侧的零）。 |
 
 **用例**：通过将数值结果四舍五入到指定的小数位数来简化数值结果。 这有助于创建更简洁的可视化图表或使计算量度更容易在报表中读取。
 
@@ -458,13 +458,13 @@ ROUND( 314.15, -2) = 300
 >[!CONTEXTUALHELP]
 >id="functions-count-rows"
 >title="行计数"
->abstract="返回给定列的行计数（一个维度中报告的独特元素计数）。将&#x200B;*超出的独特数*&#x200B;计为 1。"
+>abstract="返回给定列的行计数（一个维度中报告的独特元素计数）。 将&#x200B;*超出的独特数*&#x200B;计为 1。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ROW COUNT()]**
 
-返回给定列的行计数（一个维度中报告的独特元素计数）。将&#x200B;*超出的独特数*&#x200B;计为 1。
+返回给定列的行计数（一个维度中报告的独特元素计数）。 将&#x200B;*超出的独特数*&#x200B;计为 1。
 
 **用例**：计算划分或数据集中返回的总行数，如报表中包含的天数、促销活动或产品。 这有助于了解有多少项目对您的分析做出了贡献。
 
@@ -568,14 +568,14 @@ ROUND( 314.15, -2) = 300
 >[!CONTEXTUALHELP]
 >id="functions-sqrt"
 >title="平方根"
->abstract="返回某数字的正平方根。某数字的平方根是该数字二分之一次幂的值。"
+>abstract="返回某数字的正平方根。 某数字的平方根是该数字二分之一次幂的值。"
 
 <!-- markdownlint-enable MD034 -->
 
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT(metric, include_zeros)]**
 
-[!BADGE Row]{type="Neutral"} 返回某数字的正平方根。某数字的平方根是该数字二分之一次幂的值。
+[!BADGE Row]{type="Neutral"} 返回某数字的正平方根。 某数字的平方根是该数字二分之一次幂的值。
 
 | 参数 | 描述 |
 |---|---|
@@ -655,7 +655,7 @@ VARIANCE 的方程式为：
 其中 *x* 为抽样平均值，[MEAN(*metric*)](#mean)，*n* 为抽样大小。
 
 
-为了计算变量，需要查看整列数字。首先，从该数字列表计算平均值。得出平均值后，浏览每个条目，然后执行以下操作：
+为了计算变量，需要查看整列数字。 首先，从该数字列表计算平均值。 得出平均值后，浏览每个条目，然后执行以下操作：
 
 1. 从数字中减去平均值。
 
@@ -663,7 +663,7 @@ VARIANCE 的方程式为：
 
 1. 再相加求和。
 
-对整列进行迭代后，您将得到一个总数。然后，将该总数除以列中的项目数。 该数字是列的方差。 这是一个数字。 但是，它会显示为一列数字。
+对整列进行迭代后，您将得到一个总数。 然后，将该总数除以列中的项目数。 该数字是列的方差。 这是一个数字。 但是，它会显示为一列数字。
 
 在以下三项列的示例中：
 
