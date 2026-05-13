@@ -4,10 +4,9 @@ description: 了解如何在不使用Experience Platform数据收集标记的情
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-hide: true
-source-git-commit: 64b96d8b0917975f19c353e26d9e6437d1b4e5ac
+source-git-commit: d15d85f5904bbada26bfd74fdc45217efeddd723
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '484'
 ht-degree: 5%
 
 ---
@@ -24,7 +23,10 @@ Adobe Content Analytics JavaScript库允许通过Experience Platform Edge Networ
 
 >[!PREREQUISITES]
 >
->在调用`initializeContentLibrary`之前，必须在页面上初始化Adobe Experience Platform Web SDK (Alloy)。
+>* 在调用`initializeContentLibrary`之前，必须在页面上初始化Adobe Experience Platform Web SDK (Alloy)。
+>* 完成Content Analytics引导式配置向导，以引导您完成设置Content Analytics配置的先决条件所需的所有步骤。
+>* 完成引导式配置后，即可在该配置视图中访问特定于您的配置的JavaScript设置。
+
 
 ## 安装
 
@@ -154,8 +156,3 @@ initializeContentLibrary({
   ],
 });
 ```
-
->[!NOTE]
->
->在[引导式配置](/help/content-analytics/config/guided.md)界面中设置Content Analytics配置后，可在该配置视图中访问特定于您配置的JavaScript设置。
-

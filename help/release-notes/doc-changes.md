@@ -4,10 +4,10 @@ description: 列出 Customer Journey Analytics 文档集自 2019 年 12 月以�
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 43beba33f185e81fcebb4c18acfaa1c236ccd0c7
+source-git-commit: d15d85f5904bbada26bfd74fdc45217efeddd723
 workflow-type: tm+mt
-source-wordcount: '6886'
-ht-degree: 95%
+source-wordcount: '6910'
+ht-degree: 94%
 
 ---
 
@@ -21,6 +21,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 |---|---|
 | **2026年5月** | |
+| Content Analytics的标签不可知配置 | [文档](/help/content-analytics/config/tags-agnostic.md)介绍如何为Web渠道实施Content Analytics而无需使用Experience Platform数据收集标记。 |
 | Data Mirror注意事项 | [文档](/help/data-mirror/considerations.md)，其中介绍了设置[Data Mirror数据集](/help/data-mirror/data-mirror.md)时应考虑的因素。 |
 | Content Analytics移动渠道 | 更新了[Content Analytics文档](/help/content-analytics/content-analytics.md)，以说明Content Analytics移动渠道的功能和配置。 |
 | **2026年4月** | |
