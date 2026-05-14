@@ -5,42 +5,37 @@ title: 比较Customer Journey Analytics和Adobe Analytics中的数据馈送功�
 feature: Components
 hide: true
 exl-id: 32b71016-7c53-409f-9ce4-521a40e2eb96
-source-git-commit: 85052fda4e8041bfe96cb80baa8bea0de08a3f20
+source-git-commit: 46d54e388fecac0b62eccfe54fe91620a46474a7
 workflow-type: tm+mt
-source-wordcount: '2056'
-ht-degree: 1%
+source-wordcount: '934'
+ht-degree: 2%
 
 ---
 
 # 在Customer Journey Analytics和Adobe Analytics中比较数据馈送
 
-Customer Journey Analytics和Adobe Analytics中的数据馈送允许您向第三方平台导出原始数据。 如果您之前在Adobe Analytics中使用过数据馈送，请使用以下信息了解可用功能、数据处理行为等之间的差异。
+Customer Journey Analytics和Adobe Analytics中的数据馈送允许您向第三方平台导出原始数据。 如果您之前在Adobe Analytics中使用过数据馈送，请使用以下信息了解可用功能和概念的差异：
 
-## 比较数据馈送功能
-
-| **配置选项和概念** | **Customer Journey Analytics** | **Adobe Analytics** |
+| **概念和配置选项** | **Customer Journey Analytics** | **Adobe Analytics** |
 |---------|----------|---------|
-| **数据输入**<br/>&#x200B;可以收集并包含在数据馈送中的数据类型。 | 支持跨渠道数据输入，包括Web数据、呼叫中心数据、销售点数据等。 | 仅支持Web和移动数据输入。 |
-| **数据处理**<br/>&#x200B;数据通常需要先进行处理，然后才能用于报告，此处理会影响数据馈送功能。 根据您使用的是Customer Journey Analytics还是Adobe Analytics，将在不同的阶段处理数据。 | 数据在报表时处理，因此Customer Journey Analytics中的许多报表功能可用于更改历史数据，例如拼接、派生字段、数据准备、分段和报表窗口。 | 数据在收集时进行处理，因此处理规则、VISTA规则、拼合和分段等报表功能不会影响历史数据。 |
-| **数据馈送窗口** / **提交频率**<br/>&#x200B;确定：<ul><li>数据馈送的发送频率</li><li>数据馈送中包含的时间段<p>换句话说，在数据馈送窗口结束并且发送数据馈送之后，新的数据馈送窗口开始。</p></li></ul><p>可以使用以下选项：</p><ul><li>**每日**：馈送包含一天的数据，从报表包时区的午夜到午夜。 此选项可用于回填或历史数据，或者用于连续馈送。</li><li>**小时**：馈送包含一小时的数据。 使用此选项可继续馈送。</li></ul> | 每小时和每日馈送。<p>数据馈送窗口包含在&#x200B;**[!UICONTROL 报告窗口]**&#x200B;中</p>  <p>示例： 1小时</p> | 每小时和每日馈送。 此外，还可以15分钟馈送，但默认情况下不可用。 </p><p>可根据&#x200B;**[!UICONTROL 回顾时间范围]**&#x200B;配置迟到的点击。</p><p>示例： 1小时</p> |
-| **包含迟到的点击**<br/>&#x200B;迟到的点击是指在当前数据馈送窗口期间到达，但时间戳位于之前的数据馈送窗口内的点击（例如，通过带有时间戳的点击或数据源）。 当点击迟到时，即使点击的时间戳属于较早的时间窗口，点击也会被批量发送到发送的下一个数据馈送文件中。 | 始终包括&#x200B;**[!UICONTROL 报告窗口]**&#x200B;内发生的迟到的点击。 <p>点击在输出中按时间戳自动重新排序（例如，如果延迟点击的时间戳更早，则延迟点击可能会显示在准时点击之前）。 没有更改信息源，因此保留原始值。 | 可包含或排除迟到的点击，并可使用&#x200B;**[!UICONTROL 迟到的点击]**&#x200B;配置选项进行配置。<p>通过可用于此特定用途的&#x200B;**[!UICONTROL 回顾窗口]**&#x200B;配置选项配置这些点击的回顾窗口。</p><p>点击量按其接收顺序显示；点击量不会根据时间戳重新排序。</p> |
-| **无序点击**<br/> | 系统会为每个人评估乱序；CJA可以接受流式+批量到达模式，并在数据到达适当的时间序列后进行重新排序。 CJA在发送之前不会等待确认它是否具有报表时段的所有数据；它会发送该小时/每天到达的数据（可能包括报表时段内时间戳较早的延迟点击）。 <p>**重要信息**：数据馈送数据的最终使用者必须能够处理乱序的时间戳，因为数据馈送数据可能包含时间戳早于数据馈送窗口的延迟点击。</p> | |
-| **回顾时间范围（仅限Adobe Analytics）**<br/>&#x200B;延迟或乱序点击的截止时间，这些点击在选定的&#x200B;**[!UICONTROL 提交频率]**&#x200B;之外提交（如&#x200B;**[!UICONTROL 小时]**&#x200B;或&#x200B;**[!UICONTROL 天]**）。 访问必须在此截止日期之后开始才能被包含；在截止日期之前开始并在回顾窗口内结束的访问不包含在内。<p>不用于持久性、会话或维度（这些包含在收集的原始数据中）。</p> | 已包含在&#x200B;**[!UICONTROL 报告窗口]**&#x200B;中。 | 受支持<p>例如：23小时</p> |
-| **报告时段（仅限Customer Journey Analytics）**<br/>&#x200B;包括以下项的时间时段：<ul><li>当前数据馈送窗口（**[!UICONTROL 提交频率]**&#x200B;字段中选择的最近小时或一天）。</li><li>在当前数据馈送窗口之前的指定时间，允许任何延迟或乱序点击。</li></ul> <p>会话、持久性和区段需要。</p><p>不用于维度。 根据维度的分配和到期，按维度控制维度。 Dimension回顾不能超过报表时段。</p> | 受支持<p>例如：24小时</p> | 不适用<p>请参阅“回顾窗口”</p> |
-| **初始回填窗口**<br/> | 示例： 7天 | 示例： 7天 |
-| **点击量**<br/> | 数据馈送窗口中只有点击5。 但是，由于报表窗口还包括点击4和点击3（它们是迟到的点击，带有来自上一个数据馈送窗口的时间戳），因此它们也包含在当前数据馈送窗口中。<p>点击在数据馈送中根据其时间戳重新排序，如下所示：点击3、点击4、点击5。</p> | 数据馈送窗口中只有点击5。 但是，由于配置了回顾并且它包括点击4和点击3（它们是迟到的点击，带有来自上一个数据馈送窗口的时间戳），因此它们也包含在当前数据馈送窗口中。 （如果未配置回顾，则数据馈送中只会包含点击5。） <p>点击在数据馈送中按其接收顺序显示，如下所示：点击4、点击3、点击5。</p> |
-| **迟到的点击** / **乱序点击**<br/>(在AA中：乱序数据意味着：每个访客乱序。 在CJA中：这意味着每个人没有秩序。 如果您向我们发送每人乱序的数据，则会在您设置时间戳时。 您可以通过两种方式设置时间戳：让Adobe根据我们收到数据的时间设置时间戳。 或者你可以自己设置。 如果您设置了时间戳并且向我们发送了乱序数据，则会导致AA中出现问题。 在AA中，数据需要按访客排列。 我们需要正确的事件顺序。 但在CJA中，数据上的时间戳是什么无关紧要。 CJA不会为点击分配时间戳。 这是上游完成的。 CJA会在数据到达后对其进行重新排序，以使所有内容都处于正确的时间序列中。 然后进行报表时间处理。 这意味着您可以同时拥有流数据和批量数据。 没关系。 当它到达时，我们重新排序它，其结果是它变得与每个人相符了。 因此，在CJA中，我们将向您提供过去一天或一小时内收到的所有数据，但这仅限于报告窗口的开头。 最有可能的情况是，一天或一小时内获取的大量数据属于当天或一小时。 如果你只是从呼叫中心批量处理数据，那么你就只能得到这些数据。 在CJA中，数据可以输入，但何时输入并不重要。 因此数据馈送客户必须能够自行处理。 所以无论他们将数据放在哪里，都需要处理时间戳可能遍布所有位置这一事实。 对于某些客户而言，这可能是一个挑战。 他们需要知道这个。 需要能够处理每个人的乱序数据。 对人来说都无所谓。 )点击应包含在以前的数据馈送中，但由于某种原因它们迟到（例如，通过带有时间戳的点击或数据源）。 <p>这些迟到的点击在到达时包含在当前数据馈送中，即使其时间戳位于之前的数据馈送时段内也是如此。 每次数据馈送处理数据时，它都会查看任何已到达的迟到点击，并将它们分批放入发送的下一个数据馈送文件中。</p> | 始终包括&#x200B;**[!UICONTROL 报告窗口]**&#x200B;内发生的迟到的点击。 <p>这些迟到的点击的回顾时间范围通过&#x200B;**[!UICONTROL 报告时间范围]**&#x200B;配置选项进行控制。</p><p>点击量会根据时间戳自动重新排序；原始值会保留（无更改馈送）。</p> | 可以包含或排除。 可使用&#x200B;**[!UICONTROL 迟到的点击]**&#x200B;配置选项进行配置。<p>通过可用于此特定用途的&#x200B;**[!UICONTROL 回顾窗口]**&#x200B;配置选项配置这些点击的回顾窗口。</p><p>点击量按其接收顺序显示；点击量不会根据时间戳重新排序。</p> |
-| **Segmentation**<br/> | 您在Customer Journey Analytics中配置的区段可应用于数据馈送或数据视图。<p>（人员、会话、事件）人员容器使用整个报告窗口；可以根据区段逻辑展开DF点击输出。</p> | 无法应用区段。 |
-| **拼接**<br/>（可能改为包含在数据处理部分中） | 拼接可用于连接多个数据集（以支持跨渠道分析）。 | 不支持拼接。 |
-| **架构**<br/>（可能改为包含在数据处理部分中） | 使用结构化、分层的字段，可能在单列中包含多个维度和量度（数组；数组中的数组）。 | 使用产品列表，该产品列表具有由专有、分号分隔的字段组成的长字符串。 |
-| **查找**<br/>（可能改为包含在数据处理部分中）动态查找允许您在数据馈送中接收其他查找文件，否则不可用。 | 不需要，因为浏览器维度包含在数据视图中。 更广义的术语包括与AA相同的内容，但还包括分类、查找数据集。 您可以创建所需的任何查找数据集，并将其应用于CJA。 而且你不会得到单独的文件；它们会以尺寸显示。 您不添加查找文件，只选择要使用的维。 | 用于将数据馈送列中的数字与实际值相匹配。 特定于一组特定对象（浏览器、操作系统、移动设备，并且作为数据馈送随附的单独文件应用。） |
-| **会话定义**<br/>（可能改为包含在数据处理部分中）它不是数据馈送中的配置选项。 但您可在数据视图中定义它。 | 在数据视图中定义 | 在收藏集时定义。 |
+| **数据输入**<br/>&#x200B;可以收集并包含在数据馈送中的数据类型。 | 支持跨渠道数据输入，包括Web数据、呼叫中心数据、销售点数据等。 | 主要支持Web和移动数据输入。 其他数据类型（例如呼叫中心或销售点数据）可以通过数据源摄取，但处理能力非常有限。 |
+| **数据处理**<br/>&#x200B;根据您使用的产品，将在不同阶段处理数据。 | 数据在&#x200B;**报告时间**&#x200B;处理，因此许多报告功能可用于更改历史数据，如拼接、派生字段和分段。 | 数据在&#x200B;**收集时间**&#x200B;处理，因此处理规则和VISTA规则等报表功能不会影响历史数据。 |
+| **提交频率**<br/>&#x200B;确定发送数据馈送的频率以及馈送中包含的时间范围。 | **每日**（数据视图时区的午夜到午夜）或&#x200B;**每小时**。 | **每日**（报告包时区的午夜到午夜）或&#x200B;**每小时**。 15分钟信息源是可能的，但默认情况下不可用。 |
+| **迟到的点击**<br/>&#x200B;时间戳属于上一个投放频率窗口但在该窗口已过之后到达的点击。 <p>例如，迟到的点击可能来自在离线时缓冲事件并在重新连接时发送这些事件的移动应用程序。</p> | **处理延迟**&#x200B;设置控制系统在频率窗口关闭后等待多长时间才触发导出，为延迟数据的到达分配额外时间。 | 通过&#x200B;**迟到的点击**&#x200B;配置选项，可以&#x200B;**包含或排除**&#x200B;迟到的点击。 <p>**回看窗口**&#x200B;设置控制系统回溯多远以包含延迟数据。</p> |
+| **乱序点击**<br/>&#x200B;时间戳与接收顺序不匹配的点击。 | 由于Customer Journey Analytics同时接受流数据和批量数据，因此无法保证给定人员的事件将按时间戳顺序到达。 Customer Journey Analytics在报告时按每人时间戳重新排序数据。 <p>**处理延迟**&#x200B;设置通过为批处理数据在导出之前到达提供更多的时间，有助于减少数据馈送输出中的乱序事件。 不保证投放中的事件排序。</p><p>**重要信息**：您的数据馈送数据的最终使用者必须能够按人处理乱序的时间戳，因为不保证数据馈送交付中的点击排序。</p> | Adobe Analytics要求在收集时按每位访客的顺序到达数据，但不保证数据馈送交付中的点击排序。</p> |
+| **回填窗口**<br/>&#x200B;导出两个过去日期之间的历史数据。 | 仅限于连接的滚动数据窗口。 | 限制为报表包数据保留限制：默认为&#x200B;**25个月**。 |
+| **Segmentation** | 区段可以通过数据视图区段和/或馈送特定的区段应用于数据馈送。 | 无法应用区段。 |
+| **拼合** | 支持。 启用跨设备身份解析，将跨设备的事件链接到单个人员。 | 不支持。 无法通过Adobe Analytics数据馈送导出拼合数据。 |
+| **架构**<br/>&#x200B;数据馈送架构确定哪些列可以包含在数据馈送中。 | 数据馈送架构基于数据视图配置。  可包含在数据馈送架构中的组件是数据视图配置中可用组件的子集。</p> | 约1,100多个变量的预定义静态列表。 许多列将导出为&#x200B;**预处理对和后处理对**（例如，`eVar1` / `post_eVar1`），这占列数的大部分。 |
+| **查找**<br/>&#x200B;动态查找允许您在数据馈送中接收其他查找文件，否则不可用。 | 不需要，因为查找和分类都可用作直接在数据视图中管理的维度。 在数据视图中作为维度组织查找或分类时，解析的值在Parquet输出中显示为常规列，与事件数据内联，而不是作为单独的引用文件。 | 用于将数据馈送列中的数字与实际值相匹配。 特定于一组特定对象（浏览器、操作系统、移动设备，并且作为数据馈送随附的单独文件应用。） |
+| **会话定义**<br/> <!--(could be included in the data processing section instead)--> | 在数据视图中定义。 | 在收藏集时定义。 |
 | **计算量度**<br/> | 不可用 | 不可用 |
-| DF输出中的&#x200B;**报告窗口覆盖率**<br/>&#x200B;与迟到的点击量部分合并 | 在CJA中，我们在发送数据馈送之前不会跟踪是否已收到报表窗口的所有数据。 我们不需要等待数据，只需等到一小时/一天结束时，然后获取该时间段内收到的所有数据（包括迟到的点击）。  在AA中，我们会跟踪所有传入的数据，然后在知道我们拥有这些数据时发送它。 由于我们会对其进行跟踪，因此可以为客户提供包含或排除迟到的点击的选项。 | DF仅输出报告窗口的一部分（仅当前窗口），即使会话/区段逻辑可以检查更广泛的窗口。 <p> 整个DF输出仅限于固定时段（小时/天/15分钟）。</p> |
-| **持久性模型**<br/>（可以改为包含在数据处理部分中） | 支持数据视图中可用的所有维度分配设置（指向讨论这些设置的页面的链接）。 原始、最近、全部、最先知、最后知、b2b)。 灵活；基于报告窗口评估。 | 仅限“最近联系”(Last Touch)和“首次联系”(First Touch)（原创）。 |
-| **输出文件格式**<br/>&#x200B;发送数据馈送数据的格式。 | Parquet（支持结构化字段，为现代数据仓库所接受） | C3 |
-| **提交目标**<br/>&#x200B;可以发送数据馈送数据的目标。 | 云目标，包括Amazon S3、Azure RBAC、Azure SAS和Google Cloud Platform。 | 云目标，包括Amazon S3、Azure RBAC、Azure SAS和Google Cloud Platform。<p>还支持SFTP。</p> |
+| **持久性模型** | 灵活。 数据视图中的持久性设置（分配和到期）在生成馈送时在报告时应用。 支持数据视图中可用的所有分配设置：**原有**、**最近**、**全部**、**第一个已知**&#x200B;和&#x200B;**最后一个已知**。 | 仅表示&#x200B;**最近（最近联系）**&#x200B;和&#x200B;**原始值（首次联系）**&#x200B;归因模型。 线性分配的处理方式与最近联系相同。 |
+| **输出文件格式** | Parquet<p>本机支持复杂的嵌套和结构化数据。 产品列表表示为结构化数组/嵌套对象。 </p><p>需要Parquet感知工具才能读取，例如BigQuery、Snowflake或Apache Spark。</p> | TSV<p>平坦、可读的行。 本身不支持结构化数据；复杂字段（如产品列表）必须编码为需要自定义分析逻辑的专有分隔字符串。</p> |
+| **提交目标** | Amazon S3、Azure RBAC、Azure SAS、Google Cloud Platform、Snowflake。 | Amazon S3、Azure RBAC、Azure SAS、Google云平台。 还支持&#x200B;**SFTP**。 |
 
-![数据馈送数据处理](assets/data-feeds-data-processing.png)
+{style="table-layout:auto"}
 
-AA端的图表需要显示需要按访客的顺序接收它。
+<!-- Is this useful info to accompany the table? Not sure... **Hits**<br/>  | Only Hit 5 is in the data feed window. However, because the reporting window also includes Hit 4 and Hit 3 (which are late-arriving hits with timestamps from a previous data feed window), they are also included in the current data feed window.<p>Hits are reordered in the data feed according to their timestamp, as follows: Hit 3, Hit 4, Hit 5.</p> | Only Hit 5 is in the data feed window. However, because a lookback is configured and it includes Hit 4 and Hit 3 (which are late-arriving hits with timestamps from a previous data feed window), they are also included in the current data feed window. (If a lookback was not configured, only Hit 5 would be included in the data feed.) <p>Hits are shown in the data feed in the order they were received, as follows: Hit 4, Hit 3, Hit 5.</p> -->
+
+<!-- Is all of this info redundant?  **Late-arriving hits**<br/> (If you send us data that is out of order per person would be if you are setting the timestamp. You can set the timestamp in 2 ways: you can have Adobe set the timestamp, based on when we received the data. Or you can set it yourself. If you're setting the timestamps and you sending us data that is out of order, it messes things up in AA. In AA, data needs to come in order per visitor. We need the right order of events. But in CJA, it doesn't matter what timestamps are on the data. CJA doesn't assign a timestamp to a hit. That is done upstream. CJA reorders the data once it arrives, so that everything is in the proper time sequence. Then we can do the report-time processing. That means you can have both streaming data and batch data. It doesn't matter. At the time it arrives, we reorder it and it becomes in order per person as a result. So in CJA we'll give you all the data we received in the last day or hour, but it's limited to the beginning of the reporting window. Most likely a huge chunk of the data you get in a day or hour belongs to that day or hour. If all you did was batch data from a call center, then that is what you would get out. In CJA, data can come in and it doesn't matter when it came in. So the data feed ustomer has to be able to handle this on their side. So wherever they're putting the data, it needs to handle the fact that timestamps could potentially be all over the place. This might be a challenge for some customers. They need to know this. Needs to be able to handle out of order data per person. It doesn't matter across people. ) Hits that should have been included in a previous data feed, but for some reason they arrived late (such as through timestamped hits or data sources). <p>These late-arriving hits are included in the current data feed at the time they arrive, even though their timestamps are within a previous data feed window. Every time a data feed processes data, it looks at any late hits that have arrived and batches them in the next data feed file that is sent.</p>  | Late-arriving hits that occur within the **[!UICONTROL Reporting window]** are always included. <p>The lookback window for these late-arriving hits is controlled through the **[!UICONTROL Reporting window]** configuration option.</p><p>Hits are automatically reordered based on timestamps; original values are persisted (no change feed).</p> | Can be included or excluded. Configurable with the **[!UICONTROL Late-arriving hits]** configuration option.<p>The lookback window for these hits is configured through the **[!UICONTROL Lookback window]** configuration option that is available for this specific purpose.</p><p>Hits are shown in the order in which they are received; they are not reordered according to timestamp.</p>   -->
