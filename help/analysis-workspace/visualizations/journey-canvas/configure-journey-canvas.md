@@ -22,9 +22,9 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 11f60dbdd2858f173896a131c08229e0c7f29a69
+source-git-commit: 5513a755345188e6f7ff5d4c566d807d09e25f68
 workflow-type: tm+mt
-source-wordcount: 6456
+source-wordcount: 6457
 ht-degree: 91%
 
 ---
@@ -466,7 +466,7 @@ To change the color of a node or arrow:
 
 * 如果在更早的时候历程中发生了更改，就会更新细分数据。
 
-#### 将细分应用于一个或多个节点或箭头
+#### 将划分应用于节点、箭头或流失数据
 
 1. 在历程画布可视化中，执行以下任一操作：
 
@@ -572,7 +572,7 @@ To change the color of a node or arrow:
 
 1. 选择&#x200B;[!UICONTROL **趋势**]。
 
-### 基于节点或箭头创建区段
+### 根据节点、箭头或流失数据创建区段
 
 创建区段的选项适用于画布上的以下对象：
 
@@ -612,7 +612,7 @@ To change the color of a node or arrow:
 
 ### 排除节点
 
-从历程中排除节点时，历程数据会更新以排除经过该节点的用户。 旅程的区段定义也会更新，以排除经过该节点的用户。
+从历程中排除节点时，旅程数据会更新以排除经过该节点的历程。 旅程的区段定义也会更新，以排除经过该节点的旅程。
 
 要从历程中排除节点，请执行以下操作：
 
