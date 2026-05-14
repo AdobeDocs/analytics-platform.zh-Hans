@@ -3,10 +3,10 @@ title: 创建数据馈送
 description: 了解如何创建数据馈送以及提供给 Adobe 的文件信息。
 hide: true
 feature: Components
-source-git-commit: 46d54e388fecac0b62eccfe54fe91620a46474a7
+source-git-commit: da47de2de52a3cc0d9aa768141bd7368042e1c66
 workflow-type: tm+mt
-source-wordcount: '2724'
-ht-degree: 23%
+source-wordcount: '2466'
+ht-degree: 31%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 23%
 
 * 您想在每一个文件中包含的数据
 
-* 应发送数据馈送的频率（如果您选择包含迟到的点击，则还包括回顾窗口）
+* 应发送数据馈送的频率（包括捕获延迟送达点击的处理延迟）
 
 在创建数据馈送之前，重要的是要对数据馈送有基本的了解，并确保满足所有前提条件。 更多信息请参阅[数据馈送概述](data-feed-overview.md)。
 
@@ -51,11 +51,9 @@ ht-degree: 23%
 
 <!-- markdownlint-enable MD034 -->
 
-<!-- added help for Dynamic lookups to this page: help/export/analytics-data-feed/c-df-contents/dynamic-lookups.md -->
-
 1. 使用您的 Adobe ID 凭据登录 [experiencecloud.adobe.com](https://experiencecloud.adobe.com)。
 
-1. 选择右上角的9个正方形图标，然后选择&#x200B;[!UICONTROL **Customer Journey Analytics**]。
+1. 从界面右上角的应用切换器&#x200B;[!UICONTROL **应用程序**]&#x200B;中选择 ![Customer Journey Analytics](/help/assets/icons/Apps.svg)。
 
 1. 在顶部导航栏中前往&#x200B;[!UICONTROL **管理员**] > [!UICONTROL **数据馈送**]。
 
@@ -69,30 +67,28 @@ ht-degree: 23%
 
    | 字段 | 功能 |
    |---------|----------|
-   | [!UICONTROL **名称**] | 数据馈送的名称。 名称在选定的报表包中必须是唯一的，长度最多为255个字符。<!--[Learn more](/help/export/analytics-data-feed/df-faq.md#must-feed-names-be-unique)--> |
+   | [!UICONTROL **名称**] | 数据馈送的名称。 名称在所选数据视图中必须是唯一的，长度最多为255个字符。<!--[Learn more](/help/export/analytics-data-feed/df-faq.md#must-feed-names-be-unique)--> |
    | [!UICONTROL **标记**] | 将任何标记应用到数据馈送以方便分类。<!--You can filter on tags as described in [Filter and search the list of data feeds](/help/export/analytics-data-feed/df-manage-feeds.md#filter-and-search-the-list-of-data-feeds) in [Manage data feeds](/help/export/analytics-data-feed/df-manage-feeds.md).--> |
    | [!UICONTROL **描述**] | 指定数据馈送的描述。 编辑数据馈送时，您添加的描述可见。 |
    | [!UICONTROL **数据视图**] | 选择包含要导出的数据的数据视图。 |
 
 1. 在&#x200B;[!UICONTROL **数据结构**]&#x200B;部分中，确保在&#x200B;**[!UICONTROL 数据视图]**&#x200B;字段中选择了正确的数据视图。 <p>选择数据视图时，请考虑以下事项：</p> <ul><li>如果为同一数据视图创建了多个数据馈送，则每个数据馈送必须具有不同的列定义。</li><li>可用列的列表取决于所选数据视图所属的登录公司。 如果更改数据视图，则可用列的列表可以更改。 </li></ul>
 
-1. 向数据馈送配置添加列。 在左侧的&#x200B;**[!UICONTROL 可用]**&#x200B;部分中，选择要包含的任何列，然后选择&#x200B;**[!UICONTROL 包含]**。 Adobe Analytics中的所有数据列均可用。 您可以通过按住&#x200B;**[!UICONTROL Shift]**&#x200B;或按住&#x200B;**[!UICONTROL Command]**（在macOS上）或&#x200B;**[!UICONTROL Ctrl]**（在Windows上）来选择多个列。 单击“**[!UICONTROL 全部添加]**”可在数据馈送中包含所有列。
-
-   添加的列显示在右侧的&#x200B;**[!UICONTROL 已包括]**&#x200B;部分中。
+1. 向数据馈送配置添加列。 在左侧的组件边栏部分中，找到您要包含的任何列，然后将它们拖动到画布中以构建数据结构。 您可以通过按住&#x200B;**[!UICONTROL Shift]**&#x200B;或按住&#x200B;**[!UICONTROL Command]**（在macOS上）或&#x200B;**[!UICONTROL Ctrl]**（在Windows上）来选择多个列。
 
    使用以下信息可了解始终包含的维度、无法包含的维度以及必须替换的量度：
 
    +++ 始终包含在数据馈送中的维度
 
-   每个数据馈送中必须包括以下组件：
+   默认情况下，每个数据馈送中都包含以下维度，且无法删除这些维度：
 
-   | 组件名称 | 注释 | 数据馈送 | 其他报表 |
+   | 维度名称 | 注释 | 数据馈送 | 其他报表 |
    |---|---|---|---|
-   | 时间戳 | 事件期间的时间戳。 毫秒粒度。 以UTC表示。 | 必需 | 不可用 |
+   | 时间戳 | 事件期间的时间戳。 微秒粒度。 以UTC表示。 | 必需 | 不可用 |
    | 行Id | 唯一行标识符 | 必需 | 不可用 |
    | 会话ID | 每个会话的唯一标识符 | 必需 | 不可用 |
    | 人员 ID | 数据视图和连接的人员标识符 | 必需 | 可选标准 |
-   | 帐户ID (B2B) | 使用帐户容器时的帐户ID | 强制（仅限B2B） | 可选标准（仅限B2B） |
+   | 帐户ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | 使用帐户容器时的帐户ID | 必需 | 可选标准 |
 
    +++
 
@@ -100,7 +96,7 @@ ht-degree: 23%
 
    Customer Journey Analytics标准维度不能包含在数据馈送中。 下表列出了这些维：
 
-   | 组件名称 | 注释 | 数据馈送 |
+   | 维度名称 | 注释 | 数据馈送 |
    |---|---|---|
    | 5 分钟 | 发生事件时的五分钟间隔（向下舍入） | 不可用 |
    | 15 分钟 | 发生事件时的15分钟间隔（向下舍入） | 不可用 |
@@ -128,13 +124,13 @@ ht-degree: 23%
 
    必须替换以下Customer Journey Analytics指标：
 
-   | 组件名称 | 注释 | 数据馈送 |
+   | 量度名称 | 注释 | 数据馈送 |
    |---|---|---|
-   | 帐户 | [B2B edition]基于连接中指定的帐户ID | 不可用。 使用帐户ID的不同计数。 |
-   | 购买群组 | [B2B edition]根据连接中的购买群ID购买群 | 不可用。 使用不同于购买组ID的计数。 |
+   | 帐户 [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | 基于连接中指定的帐户ID | 不可用。 使用帐户ID的不同计数。 |
+   | 购买组[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | 基于关联中的购买群组ID购买群组 | 不可用。 使用不同于购买组ID的计数。 |
    | 事件 | 来自连接中所有事件数据集的行数 | 不可用。 使用行ID的不同计数。 |
-   | 全球帐户 | [B2B edition]，基于连接中的全局帐户ID | 不可用。 使用全局帐户ID的不同计数。 |
-   | 机会 | 基于连接中的机会ID的[B2B edition]机会 | 不可用。 使用不同于机会ID的计数。 |
+   | 全球帐户 [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | 基于连接中的全局帐户ID | 不可用。 使用全局帐户ID的不同计数。 |
+   | 机会 [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | 基于连接中的机会ID的销售机会 | 不可用。 使用不同于机会ID的计数。 |
    | 人员 | 基于连接中指定的人员ID | 不可用。 使用人员ID的不同计数。 |
    | 对话 | 对话数 | 不可用。 使用对话ID的不同计数。 |
    | 会话结束 | 会话的最后一个事件的事件数 | 不可用 |
@@ -158,12 +154,10 @@ ht-degree: 23%
    | 月份 | 时间划分维度 | 1-12月份 | 不可用 |
    | 首次会话 | 量度 | 个人在报告窗口内的首次定义的会话 | 不可用 |
    | 返回会话 | 量度 | 非个人首次会话的会话 | 不可用 |
-   | 人员 ID | 维度 | 数据视图和连接的人员标识符 | **必需** |
    | 人员ID命名空间 | 维度 | 人员ID包含的ID类型（例如，电子邮件或Cookie ID） | 可用 |
-   | 全球帐户 ID | [B2B edition] Dimension | 使用全局帐户容器时的全局帐户ID | 可用 |
-   | 帐户 ID | [B2B edition] Dimension | 使用帐户容器时的帐户ID | **必需**（仅限B2B） |
-   | 机会 ID | [B2B edition] Dimension | 使用Opportunity容器时的机会ID | 可用 |
-   | 购买群组 ID | [B2B edition] Dimension | 使用购买组容器时购买组ID | 可用 |
+   | 全局帐户ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | 维度 | 使用全局帐户容器时的全局帐户ID | 可用 |
+   | 机会ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | 维度 | 使用Opportunity容器时的机会ID | 可用 |
+   | 购买群ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | 维度 | 使用购买组容器时购买组ID | 可用 |
    | 季度 | 时间划分维度 | 第一季度、第二季度、第三季度和第四季度 | 不可用 |
    | 重复会话 | 量度 | 不是个人的首次会话 | 不可用 |
    | 会话类型 | 维度 | 两个值：首次或返回 | 不可用 |
@@ -182,9 +176,9 @@ ht-degree: 23%
    | [!UICONTROL **馈送类型**] | 选择要创建的信息源类型：<ul><li>[!UICONTROL **实时馈送**]：导出当前和未来的数据。</li><li>[!UICONTROL **回填馈送**]：导出两个过去日期之间的历史数据。</li></ul> |
    | [!UICONTROL **开始日期**] | 指定希望数据馈送开始的日期。 要立即开始处理历史数据的数据馈送，请确保已选择&#x200B;[!UICONTROL **回填馈送**]，然后将此日期设置为收集数据时的过去任何日期。 开始日期基于数据视图的时区。 |
    | [!UICONTROL **结束日期**] | 指定您希望数据馈送结束的日期。 结束日期基于数据视图的时区。 |
-   | [!UICONTROL **频率**] | 选择应发送数据馈送的频率。 时间戳位于频率范围内的事件将包含在数据馈送交付中。 [!UICONTROL **回顾日期范围**]&#x200B;和&#x200B;[!UICONTROL **处理延迟**]&#x200B;字段也会影响所选投放频率的数据中包含哪些事件。<p>选择以包含一小时的数据或一天的数据：</p><ul><li>**每日**：馈送包含一整天的数据，从数据视图时区的午夜到午夜。 此选项可用于回填馈送或实时馈送。</li><li>**小时**：馈送包含一小时的数据。 对实时馈送使用此选项。</li></ul> |
+   | [!UICONTROL **频率**] | 选择应发送数据馈送的频率。 时间戳位于频率范围内的事件将包含在数据馈送交付中。 [!UICONTROL **回顾日期范围**]&#x200B;和&#x200B;[!UICONTROL **处理延迟**]&#x200B;字段也会影响所选投放频率的数据中包含哪些事件。<p>对于实时馈送，选择以包含一小时的数据或一天的数据。 回填馈送必须为每日馈送。</p><ul><li>**每日**：馈送包含一整天的数据，从数据视图时区的午夜到午夜。 此选项可用于回填馈送或实时馈送。</li><li>**小时**：馈送包含一小时的数据。 对实时馈送使用此选项。</li></ul> |
    | [!UICONTROL **回顾日期范围**] | 控制在处理数据馈送传递时 Customer Journey Analytics 回顾的时间范围。 <p>此设置不会更改频率窗口（小时或天），该窗口定义要包含在数据馈送输出中的事件的时间范围。 但是，回顾日期范围可能会以下列方式影响投放的数据： </p><ul><li>**区段鉴别**：将区段应用于您的数据馈送定义时，回顾日期范围内的任何事件都会确定人员是否符合条件。 区段的容器设置确定范围。 (可能的容器包括：“人员”、“会话”或“事件”。 B2B具有以下附加容器：全球客户、客户、商机、购买团体。)  <p>例如，如果使用了人员容器并且该人员在回顾日期范围内符合条件，则该人员在频率窗口期间的所有事件也符合条件。</p></li><li>**会话计算**：会话边界是使用回顾日期范围内的数据计算的。</li><li>**派生字段转换**：引用容器的任何派生字段函数（如“摘要”、“去重”和“深度”函数）在数据馈送导出中使用回顾日期范围。</li><li>**Dimension持久性**：如果选择在单个维度上设置持久性，则还需要选择到期时间，以确定维度项在从中设置它的事件之外保持多久。 <p>当数据视图中的过期时间设置为以下任一选项时，回顾日期范围会影响维度持久性：</p><ul><li>对于数据馈送定义中使用&#x200B;[!UICONTROL **报告窗口**]&#x200B;作为其到期时间的每个维度，回顾日期范围将成为新的报告窗口。</li><li>对于数据馈送定义中使用&#x200B;[!UICONTROL **自定义时间**]&#x200B;作为其到期时间的每个维度，如果选择的自定义时间超出回顾日期范围，则忽略自定义时间，并将回顾日期范围用于维度到期。<p>有关在数据视图中设置维度的持久性的详细信息，请参阅[持久性组件设置](/help/data-views/component-settings/persistence.md)。</p></li></ul> |
-   | [!UICONTROL **处理延迟**] | 选择在处理数据馈送文件之前是否等待给定的时长。 在处理延迟期间传入的任何迟到的点击都包含在数据馈送中。<p>延迟可用于为移动设备实施提供使离线设备变为在线并发送数据的机会。 它还可用于在管理以前处理的文件时容纳组织的服务器端进程。 在大多数情况下，无需延迟。 馈送的延迟时间最多可达8小时（480分钟），如果您选择自定义的时间量（延迟9,999分钟或大约1周），则延迟时间会更长。<p>如果未设置延迟，则馈送中仅包含那些属于频率窗口（最后一天或最后一小时）的事件。</p> <p>访问必须在此截止日期之后开始才能被包含；在截止日期之前开始并在处理延迟内结束的访问不包含在内。</p> <p>会话、持久性和区段需要。</p><p>不用于维度。 根据维度的分配和到期，按维度控制维度。 Dimension回顾不能超过处理延迟。</p> |
+   | [!UICONTROL **处理延迟**] | 选择在处理数据馈送文件之前等待的时间。 在处理延迟期间传入的任何迟到的点击都包含在数据馈送中。 <p>延迟可用于为移动设备实施提供使离线设备变为在线并发送数据的机会。 它还可用于在管理以前处理的文件时容纳组织的服务器端进程。 </p><p>馈送可能会延迟2、3、4或8小时。<p>会话必须在处理延迟截止之后开始才能被包含；在截止之前开始并在处理延迟内结束的会话不包含在内。</p> |
 
 1. 在&#x200B;[!UICONTROL **目标**]&#x200B;部分中，配置要将数据发送到的目标。
 
@@ -210,59 +204,7 @@ ht-degree: 23%
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
-## 管理列模板
 
-利用模板，您可以对创建的未来数据馈送重复使用相同的列。
-
-在管理模板时，您可以创建新模板、使用已创建的模板、复制模板、编辑模板和删除模板。
-
-**[!UICONTROL 管理员]** > **[!UICONTROL 数据馈送]** > **[!UICONTROL 管理模板]**
-
-![管理列模板](assets/data-feed-template-manage.png)
-
-### 创建列模板
-
-在创建多个使用相同列的数据馈送时，Adobe建议您创建列模板。 您创建的任何列模板均可供贵组织中的任何人使用。
-
-要创建列模板，请执行以下操作：
-
-1. 在Adobe Analytics中，转到&#x200B;[!UICONTROL **管理员**] > [!UICONTROL **数据馈送**] > **[!UICONTROL 管理模板]**。
-
-1. 选择&#x200B;**[!UICONTROL 创建新模板]**&#x200B;以创建新列模板。
-
-   ![创建列模板](assets/data-feed-template-create.png)
-
-1. 在&#x200B;**[!UICONTROL 模板名称]**&#x200B;字段中，指定模板的名称。
-
-1. 在左侧的&#x200B;**[!UICONTROL 可用]**&#x200B;部分中，选择要包含的任何列，然后选择&#x200B;**[!UICONTROL 包含]**。 Adobe Analytics中的所有可用数据列均可用。 您可以通过按住&#x200B;**[!UICONTROL Shift]**&#x200B;或按住&#x200B;**[!UICONTROL Command]**（在macOS上）或&#x200B;**[!UICONTROL Ctrl]**（在Windows上）来选择多个列。 单击“**[!UICONTROL 全部添加]**”可在数据馈送中包含所有列。
-
-   添加的列显示在右侧的&#x200B;**[!UICONTROL 已包括]**&#x200B;部分中。
-
-1. 选择&#x200B;**[!UICONTROL 保存]**。
-
-### 编辑列模板
-
-1. 在Adobe Analytics中，转到&#x200B;[!UICONTROL **管理员**] > [!UICONTROL **数据馈送**] > **[!UICONTROL 管理模板]**。
-
-1. 选择要编辑的模板，然后选择&#x200B;**[!UICONTROL 编辑]**。
-
-1. 进行任何编辑，然后选择&#x200B;**[!UICONTROL 保存]**。
-
-### 复制列模板
-
-1. 在Adobe Analytics中，转到&#x200B;[!UICONTROL **管理员**] > [!UICONTROL **数据馈送**] > **[!UICONTROL 管理模板]**。
-
-1. 选择要复制的模板，然后选择&#x200B;**[!UICONTROL 复制]**。
-
-1. 在&#x200B;**[!UICONTROL 模板名称]**&#x200B;字段中，指定模板的名称。
-
-1. 进行任何其他更改，然后选择&#x200B;**[!UICONTROL 保存]**。
-
-### 删除列模板
-
-1. 在Adobe Analytics中，转到&#x200B;[!UICONTROL **管理员**] > [!UICONTROL **数据馈送**] > **[!UICONTROL 管理模板]**。
-
-1. 选择一个或多个要删除的模板，然后选择&#x200B;**[!UICONTROL 删除]**。
 
 
 <!-- why would you want to do this? -->
