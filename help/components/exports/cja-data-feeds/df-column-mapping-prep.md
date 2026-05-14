@@ -5,9 +5,9 @@ title: 准备将数据馈送列从Adobe Analytics映射到Customer Journey Analy
 feature: Components
 hide: true
 exl-id: d0a9e697-1e48-4cfb-8613-2f932bf5015b
-source-git-commit: d79c6d883f436d97925e007f453879e20b4fcc04
+source-git-commit: 4ffcb03421c0e3a31803fad7734d935078169778
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1092'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 与Adobe Analytics相比，Customer Journey Analytics在确定可包含在数据馈送中的列方面提供了更灵活的架构。 大多数组织从Customer Journey Analytics导出的数据馈送列与从Adobe Analytics导出的数据馈送列有所不同。 这些差异是由于以下因素造成的：
 
-* **[架构架构](#schema-architecture)**： Adobe Analytics数据馈送列派生自Analytics变量，而Customer Journey Analytics数据馈送列派生自数据视图架构。
+* **[数据馈送架构架构](#schema-architecture)**： Adobe Analytics数据馈送列派生自Analytics变量，而Customer Journey Analytics数据馈送列派生自数据视图配置。
 
 * **[数据处理](#data-processing)**： Adobe Analytics和Customer Journey Analytics之间存在基本的数据处理差异，尤其是许多Adobe Analytics列同时存在预处理列和后处理列。
 
@@ -28,7 +28,7 @@ ht-degree: 3%
 
 查看此信息后，按照计划保留在Customer Journey Analytics中的每个Adobe Analytics数据馈送列的映射说明进行操作，如[数据列引用](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)中所述。
 
-## 架构架构
+## 数据馈送架构架构
 
 与Adobe Analytics相比，Customer Journey Analytics在确定可在数据馈送中包含哪些列方面提供了更灵活的架构：
 
@@ -40,13 +40,13 @@ ht-degree: 3%
 
 ### Customer Journey Analytics架构
 
-数据视图架构中包含的任何组件都可以作为数据馈送列包含。 有关每个潜在的Adobe Analytics数据馈送列的此过程的详细信息，请参阅[数据列引用](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)。
+数据视图配置中包含的任何组件都可以作为数据馈送列包含。 有关每个潜在的Adobe Analytics数据馈送列的此过程的详细信息，请参阅[数据列引用](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)。
 
-按照下表所述的任何一种方式，在数据视图模式中包含组件：
+按照下表所述的任何一种方式，在数据视图配置中包括组件：
 
-| 数据视图模式中的包含方法 | 其他信息 |
+| 用于包含在数据视图配置中的方法 | 其他信息 |
 |---------|----------|
-| XDM架构字段在数据视图中作为组件进行管理 | XDM架构中存在的字段在数据视图中作为组件进行管理，之后会成为Customer Journey Analytics中的数据视图架构的一部分。 <p>Customer Journey Analytics XDM架构中默认可用的字段数可能会有所不同，具体取决于为Customer Journey Analytics实施收集数据的方式，如下所示：</p><ul><li>**新的Web SDK实施**：如果您的Customer Journey Analytics实施使用自定义架构，则Adobe Analytics数据馈送中存在的许多列可能在Customer Journey Analytics中不存在。 同样，Customer Journey Analytics可能包含Adobe Analytics数据馈送中不存在的字段。<p>如果可能，请咨询为您组织的Customer Journey Analytics实施构建XDM架构的团队或个人。 创建XDM架构时，做出了许多有关在Customer Journey Analytics中需要哪些Adobe Analytics字段的决策。 有关详细信息，请参阅[构建用于 Customer Journey Analytics 的架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)。</p></li><li>**Analytics Source Connector实施**：默认情况下，许多数据馈送列存在一对一字段映射，因为Analytics Source Connector在XDM架构中使用Analytics Experience Event字段组。 有关哪些Adobe Analytics字段映射到此字段组中的字段的信息，请参阅Experience Platform文档中的[Analytics字段映射](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics)。</li></ul> |
+| XDM架构字段在数据视图中作为组件进行管理 | XDM架构中存在的字段在数据视图中作为组件进行管理，之后它们会成为Customer Journey Analytics中的数据视图配置的一部分。 <p>Customer Journey Analytics XDM架构中默认可用的字段数可能会有所不同，具体取决于为Customer Journey Analytics实施收集数据的方式，如下所示：</p><ul><li>**新的Web SDK实施**：如果您的Customer Journey Analytics实施使用自定义架构，则Adobe Analytics数据馈送中存在的许多列可能在Customer Journey Analytics中不存在。 同样，Customer Journey Analytics可能包含Adobe Analytics数据馈送中不存在的字段。<p>如果可能，请咨询为您组织的Customer Journey Analytics实施构建XDM架构的团队或个人。 创建XDM架构时，做出了许多有关在Customer Journey Analytics中需要哪些Adobe Analytics字段的决策。 有关详细信息，请参阅[构建用于 Customer Journey Analytics 的架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)。</p></li><li>**Analytics Source Connector实施**：默认情况下，许多数据馈送列存在一对一字段映射，因为Analytics Source Connector在XDM架构中使用Analytics Experience Event字段组。 有关哪些Adobe Analytics字段映射到此字段组中的字段的信息，请参阅Experience Platform文档中的[Analytics字段映射](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics)。</li></ul> |
 | 组件是在数据视图中使用派生字段创建的 | 您可以直接在数据视图中创建组件，从而创建XDM架构中不可用的数据馈送列。 |
 
 ## 数据处理
@@ -69,7 +69,7 @@ Adobe Analytics中有1,100多个数据馈送列可供导出。 在这些列中�
 
 * **识别适用于您组织的字段**：虽然并非所有Adobe Analytics客户都会导出所有可用的列，但许多客户导出的列多于实际使用的列。
 
-  在开始从Customer Journey Analytics导出数据馈送之前，您应该首先确定贵组织当前使用的Adobe Analytics数据馈送列，然后确保这些组件存在于您的Customer Journey Analytics数据视图架构中。 要收集此信息，请联系贵组织内使用Adobe Analytics数据馈送内容的团队或个人。
+  在开始从Customer Journey Analytics导出数据馈送之前，您应该首先确定贵组织当前使用的Adobe Analytics数据馈送列，然后确保这些组件存在于您的Customer Journey Analytics数据视图配置中。 要收集此信息，请联系贵组织内使用Adobe Analytics数据馈送内容的团队或个人。
 
 ## 跨渠道列
 
