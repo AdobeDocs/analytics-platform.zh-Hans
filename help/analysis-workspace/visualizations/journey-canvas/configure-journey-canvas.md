@@ -5,11 +5,23 @@ feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
 TQID: https://experienceleague.adobe.com/pC3wjv6Q7RHRfDfHq75CP2Lqd-HzN-s7iLZ9t4N4ZR0
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: aff2ef09-fc60-4018-9197-e2befd623064id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: aff2ef09-fc60-4018-9197-e2befd623064
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 5513a755345188e6f7ff5d4c566d807d09e25f68
 workflow-type: tm+mt
 source-wordcount: 6457
@@ -90,7 +102,7 @@ ht-degree: 91%
 
    | 设置 | 功能 |
    |---------|----------|
-   | [!UICONTROL **百分比值**] | 历程中每个节点上显示的百分比值。<p>![百分比值](assets/journey-canvas-percentage.png)</p> <p>配置历程中节点上显示的百分比值时，请考虑以下事项：</p><ul><li>每个节点上显示主要量度的百分比。 如果配置了辅助量度，还会显示辅助量度的百分比。 （关于主要和辅助量度设置的详细信息，请参阅[开始构建历程画布可视化图表](#begin-building-a-journey-canvas-visualization)。）</li><li>百分比包括在面板的日期范围内数据视图中包含的所有人员或会话。 使用&#x200B;_人员_&#x200B;还是&#x200B;_会话_&#x200B;取决于容器设置。 （关于容器设置的详细信息，请参阅[开始构建历程画布可视化图表](#begin-building-a-journey-canvas-visualization)。）</li></ul> <p>从以下选项中进行选择：</p> <ul><li>[!UICONTROL **起始节点的百分比**]：计算每个节点上显示的相对于起始节点的百分比。 百分比基于您选择的主要和辅助量度。 <p>_起始节点_&#x200B;是一个前面没有任何连接节点的节点。</p><p>一个历程可以包含多个起始节点。 但是，如果历程包含的 2 个或更多起始节点都引向某个公共节点，就会使用&#x200B;[!UICONTROL **总数的百分比**]。 如果您想使用&#x200B;**]起始节点的百分比[!UICONTROL **，请更新历程，使历程中的每个节点都可以回溯到单一的起始节点。</p></li><li>[!UICONTROL **前一个节点的百分比**]：计算每个节点上显示的相对于前一个节点的百分比。 百分比基于您选择的主要和辅助量度。</li><li>[!UICONTROL **总数的百分比**]：计算每个节点上显示的相对于数据视图中所有数据的百分比。 百分比基于您选择的主要和辅助量度。</li></ul> |
+   | [!UICONTROL **百分比值**] | 历程中每个节点上显示的百分比值。<p>![百分比值](assets/journey-canvas-percentage.png)</p> <p>配置历程中节点上显示的百分比值时，请考虑以下事项：</p><ul><li>每个节点上显示主要量度的百分比。 如果配置了辅助量度，还会显示辅助量度的百分比。 （关于主要和辅助量度设置的详细信息，请参阅[开始构建历程画布可视化图表](#begin-building-a-journey-canvas-visualization)。）</li><li>百分比包括在面板的日期范围内数据视图中包含的所有人员或会话。 使用&#x200B;_人员_&#x200B;还是&#x200B;_会话_&#x200B;取决于容器设置。 （关于容器设置的详细信息，请参阅[开始构建历程画布可视化图表](#begin-building-a-journey-canvas-visualization)。）</li></ul> <p>从以下选项中进行选择：</p> <ul><li>[!UICONTROL **起始节点的百分比**]：计算每个节点上显示的相对于起始节点的百分比。 百分比基于您选择的主要和辅助量度。 <p>_起始节点_&#x200B;是一个前面没有任何连接节点的节点。</p><p>一个历程可以包含多个起始节点。 但是，如果历程包含的 2 个或更多起始节点都引向某个公共节点，就会使用&#x200B;[!UICONTROL **总数的百分比**]。 如果您想使用&#x200B;**起始节点的百分比**，请更新历程，使历程中的每个节点都可以回溯到单一的起始节点。</p></li><li>[!UICONTROL **前一个节点的百分比**]：计算每个节点上显示的相对于前一个节点的百分比。 百分比基于您选择的主要和辅助量度。</li><li>[!UICONTROL **总数的百分比**]：计算每个节点上显示的相对于数据视图中所有数据的百分比。 百分比基于您选择的主要和辅助量度。</li></ul> |
    | [!UICONTROL **箭头设置**] | 历程画布中两个节点之间显示的箭头可以配置为显示自定义的标签和值。 <p>![箭头设置](assets/journey-canvas-arrow-settings.png)</p><p>_标签_&#x200B;是显示在箭头上的自定义名称。 一个箭头上只显示一个标签。 标签可以是以下任何一种，并按以下优先顺序显示：</p><ol><li>从历程画布添加的自定义名称（如[添加或更新箭头上的标签](#add-or-update-a-label-on-an-arrow)中所述）</li><li>Journey Optimizer 标签</li><li>Journey Optimizer 条件</li></ol><p>_值_&#x200B;是箭头上显示的数字和百分比，它们表示从历程中的一个节点移动到下一个节点的人员或会话。 （换句话说，就是那些没有在某个步骤中退出历程的人。） </p><p>以下选项可用于不是源自 Journey Optimizer 的历程以及没有在历程画布中进行重大更改的 Journey Optimizer 历程：（重大更改包括添加或移除节点、添加或移除箭头或者更改节点的组件。）</p><ul><li>[!UICONTROL **无标签**]：历程中的箭头上不显示标签。</br> 仅当历程在中被修改时，此选项才可用 </li><li>[!UICONTROL **仅标签**]：历程中的箭头上显示标签。</li></ul><p>以下选项适用于在历程画布中进行了重大修改的Journey Optimizer历程：（重大修改包括添加或删除节点、添加或删除箭头或更改节点的组件。）(**注意**：只有在您添加可视化图表的Analysis Workspace面板中选择的同一数据视图中检测到Journey Optimizer数据时，才会显示这些选项。 关于更改 Analysis Workspace 中面板的数据视图的信息，请参阅 [Analysis Workspace 概述](/help/analysis-workspace/home.md)。）</p><ul><li>[!UICONTROL **无标签或无值**]：历程中的箭头上不显示标签或值。</li><li>[!UICONTROL **仅标签**]：历程中的箭头上仅显示标签。 不显示值。</li><li>[!UICONTROL **仅值**]：历程中的箭头上仅显示值。 不显示标签。</li><li>[!UICONTROL **值和标签**]：标签和值都显示在历程的箭头上。</li></ul> |
    | [!UICONTROL **显示流失**] | 流失数据表示了历程的每个节点流失的百分比和数量。 流失数据是基于与历程的容器设置相关联的量度，而不是基于主要或辅助量度。 <p>![流失](assets/journey-canvas-fallout.png)</p><p>默认情况下，容器是&#x200B;_人员_，那么用于流失数据的量度就是&#x200B;_人员_。 如果容器更改为&#x200B;_会话_，用于流失数据的量度就是&#x200B;_会话_，依此类推。</p><p>例如，使用&#x200B;_人员_&#x200B;作为容器设置，流失显示的是历程中从未到达任何紧邻的后续节点的人员的百分比和人数。 他们可能在网站上执行了其他操作，但他们不符合任何紧随其后的节点所定义的标准。</p> <p>关于历程画布容器设置的详细信息，请参阅[开始构建历程画布可视化图表](#begin-building-a-journey-canvas-visualization)。 |
    | **缩放控件** | 以下缩放控件位于画布的右上角：<ul><li>**放大** ![放大图标](assets/zoom-in-icon.png)：放大可视化图表的特定区域。<p>您也可以使用鼠标控制，例如在触控板上捏合。</li><li>**缩小** ![缩小图标](assets/zoom-out-icon.png)：缩小可视化图表，在画布上腾出更多空间。<p>您也可以使用鼠标控制，例如在触控板上捏合。</p></li><li>**适合屏幕** ![适合屏幕图标](assets/fill-screen-icon.png)：调整当前缩放和平移设置，让完整的可视化图表填满屏幕。</li></ul><p>要在缩放后在画布上平移，请单击鼠标并拖动到所需的位置。</p> |
