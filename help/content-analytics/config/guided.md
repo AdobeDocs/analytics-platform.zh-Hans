@@ -6,22 +6,14 @@ feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 TQID: https://experienceleague.adobe.com/qfRVeaFTYitZOsleqfzxYsSlo5YZrTjdFqJSjIza-hg
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: d15d85f5904bbada26bfd74fdc45217efeddd723
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 8fc9bde3d0b9eebfcc8185aff78ce0f7f2e7704f
 workflow-type: tm+mt
-source-wordcount: 4071
-ht-degree: 61%
+source-wordcount: 4074
+ht-degree: 64%
 
 ---
 
@@ -153,7 +145,7 @@ ht-degree: 61%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_prev_cleanup_labels_dialog"
 >title="清理以前的数据视图"
->abstract="您已选择新的数据视图。 已删除以前选定数据视图的Content Analytics配置。"
+>abstract="您已选择新的数据视图。 之前选定数据视图的 Content Analytics 配置已移除。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_new_dialog"
@@ -179,7 +171,7 @@ ht-degree: 61%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_new_dialog"
 >title="选定的数据视图"
->abstract="您已修改此配置的选定数据视图。 选定的数据视图将进行更新，以包含 Content Analytics 量度和维度。 这些量度和维度将从之前选择的、现在已取消选择的数据视图中移除。<br/><br/>如果其他连接与所选数据视图关联，则将更新该连接以包含Content Analytics数据集。 Content Analytics 数据集不会从原先选择的连接中删除。<br/><br/>所有选定的数据视图均继承属于这个配置的渠道。"
+>abstract="您已修改此配置的选定数据视图。 选定的数据视图将进行更新，以包含 Content Analytics 量度和维度。 这些量度和维度将从之前选择的、现在已取消选择的数据视图中移除。<br/><br/>如果有另一个连接与选定的数据视图相关联，此连接就会更新，以包含 Content Analytics 数据集。 Content Analytics 数据集不会从原先选择的连接中删除。<br/><br/>所有选定的数据视图均继承属于这个配置的渠道。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_change_dialog"
@@ -250,7 +242,7 @@ ht-degree: 61%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_header"
 >title="移动体验位置数据收集"
->abstract="指明在为 Content Analytics 收集数据时应&#x200B;**排除**&#x200B;哪些体验位置。 确保排除个人可识别的体验位置。"
+>abstract="指明在为 Content Analytics 收集数据时应&#x200B;**排除**&#x200B;哪些体验位置。 请确保排除能够识别个人身份的体验位置。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_boldheader"
@@ -260,7 +252,7 @@ ht-degree: 61%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_header"
 >title="移动设备资产位置数据收集"
->abstract="指明在为 Content Analytics 收集数据时应&#x200B;**排除**&#x200B;哪些资产位置。 确保排除个人可识别的资产位置。"
+>abstract="指明在为 Content Analytics 收集数据时应&#x200B;**排除**&#x200B;哪些资产位置。 请确保排除能够识别个人身份的资产位置。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_boldheader"
@@ -270,7 +262,7 @@ ht-degree: 61%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_header"
 >title="移动设备资产 URL 数据收集"
->abstract="指明在为 Content Analytics 收集数据时应&#x200B;**排除**&#x200B;哪些资产 URL。 确保排除个人可识别的资产URL。"
+>abstract="指明在为 Content Analytics 收集数据时应&#x200B;**排除**&#x200B;哪些资产 URL。 请确保排除能够识别个人身份的资产 URL。"
 
 对于移动渠道，您可以配置[体验捕获和定义](#experience-capture-and-definition)、[数据收集](#data-collection)和[标头覆盖](#header-overrides)。
 
@@ -302,15 +294,15 @@ ht-degree: 61%
       1. 指定一个&#x200B;**[!UICONTROL 标记名称]**，例如 `ACA Test for Documentation`。
       1. 指定&#x200B;**[!UICONTROL 域]**，例如，`example.com`。
 
-* 指示在为Content Analytics收集数据时应排除哪些体验位置。 确保排除个人可识别的体验位置。
+* 指示在为Content Analytics收集数据时应排除哪些体验位置。 请确保排除能够识别个人身份的体验位置。
 
   为要排除的&#x200B;**[!UICONTROL 体验位置]**&#x200B;指定&#x200B;**[!UICONTROL 正则表达式字符串]**。 <br/>例如：`^(?!.*documentation).*`从Content Analytics中排除所有文档体验位置。
 
-* 指示在为Content Analytics收集数据时应排除的资源位置。 确保排除个人可识别的资产位置。
+* 指示在为Content Analytics收集数据时应排除的资源位置。 请确保排除能够识别个人身份的资产位置。
 
   为&#x200B;**[!UICONTROL 要排除的资源位置]**&#x200B;指定&#x200B;**[!UICONTROL 正则表达式字符串]**。 <br/>例如： `^(?!.*(logo\.jpg)).*$`从Content Analytics中排除所有带有徽标JPEG图像的资源位置。
 
-* 指示在为Content Analytics收集数据时应排除哪些资源URL。 确保排除个人可识别的资产URL。
+* 指示在为Content Analytics收集数据时应排除哪些资源URL。 请确保排除能够识别个人身份的资产 URL。
 
   为&#x200B;**[!UICONTROL 要排除的资产URL]**&#x200B;指定&#x200B;**[!UICONTROL 正则表达式字符串]**。 <br/>例如： `^(?!.*(logo\.jpg)).*$`从Content Analytics中排除所有引用徽标JPEG图像的资源URL。
 
@@ -384,7 +376,7 @@ ht-degree: 61%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_header"
 >title="数据收集"
->abstract="指明在为 Content Analytics 收集数据时应&#x200B;**包含**&#x200B;或&#x200B;**排除**&#x200B;哪些页面。 确保排除个人身份页面。"
+>abstract="指明在为 Content Analytics 收集数据时应&#x200B;**包含**&#x200B;或&#x200B;**排除**&#x200B;哪些页面。 请确保排除能够识别个人身份的页面。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_boldheader"
@@ -394,7 +386,7 @@ ht-degree: 61%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_header"
 >title="数据收集"
->abstract="指明在为 Content Analytics 收集数据时应&#x200B;**包含**&#x200B;或&#x200B;**排除**&#x200B;哪些资产。 确保排除个人身份资产。"
+>abstract="指明在为 Content Analytics 收集数据时应&#x200B;**包含**&#x200B;或&#x200B;**排除**&#x200B;哪些资产。 请确保排除能够识别个人身份的资产。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
@@ -432,7 +424,7 @@ ht-degree: 61%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_web_assets_header"
 >title="Web 资产数据收集"
->abstract="指明在为 Content Analytics 收集数据时应&#x200B;**包含**&#x200B;或&#x200B;**排除**&#x200B;哪些资产。 确保排除个人身份资产。"
+>abstract="指明在为 Content Analytics 收集数据时应&#x200B;**包含**&#x200B;或&#x200B;**排除**&#x200B;哪些资产。 请确保排除能够识别个人身份的资产。"
 
 
 ##### 体验捕捉和定义 {#web-experience-capture-and-definition}
@@ -505,13 +497,13 @@ ht-degree: 61%
       1. 指定一个&#x200B;**[!UICONTROL 标记名称]**，例如 `ACA Test for Documentation`。
       1. 指定&#x200B;**[!UICONTROL 域]**，例如，`example.com`。
 
-     如果要为Web渠道创建Content Analytics的标记[不可知实现](/help/content-analytics/config/tags-agnostic.md)，请使用新的Tags属性。 将创建Tags属性，但您将不会在不可知的实施中使用属性。 但是，不确定的实施要求您至少运行一次引导式配置向导。
+     如果要使用[Content Analytics Javascript库](/help/content-analytics/config/tags-agnostic.md)为Web渠道创建与标记无关的实现，请使用新的Tags属性。 将创建Tags属性，但您将不会在不可知的实施中使用属性。 但是，不确定的实施要求您至少运行一次引导式配置向导。
 
-* 表示在为 Content Analytics 收集数据时应包含或排除哪些页面。 确保排除个人身份页面。
+* 表示在为 Content Analytics 收集数据时应包含或排除哪些页面。 请确保排除能够识别个人身份的页面。
 
   为&#x200B;**[!UICONTROL 要包含/排除的页面]**&#x200B;指定&#x200B;**[!UICONTROL 正则表达式字符串]**。 <br/>例如：`^(?!.*documentation).*`，以从 Content Analytics 中排除所有文档页面。
 
-* 指明在为 Content Analytics 收集数据时应包括或排除哪些资产。 确保排除个人身份资产。
+* 指明在为 Content Analytics 收集数据时应包括或排除哪些资产。 请确保排除能够识别个人身份的资产。
 
   为&#x200B;**[!UICONTROL 要包含/排除的资产]**&#x200B;指定&#x200B;**[!UICONTROL 正则表达式字符串]**。 <br/>例如：`^(?!.*(logo\.jpg)).*$` 可将所有徽标 JPEG 图像排除在 Content Analytics 之外。
 

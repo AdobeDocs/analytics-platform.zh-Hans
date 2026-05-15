@@ -1,20 +1,20 @@
 ---
-title: Content Analytics Tags与配置
-description: 了解如何在不使用Experience Platform数据收集标记的情况下配置Content Analytics。
+title: Content Analytics JavaScript Kibrary
+description: 了解如何在不使用Experience Platform数据收集标记的情况下配置Content Analytics，并改用Content Analytics JavaScript库。
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-source-git-commit: d15d85f5904bbada26bfd74fdc45217efeddd723
+source-git-commit: 8fc9bde3d0b9eebfcc8185aff78ce0f7f2e7704f
 workflow-type: tm+mt
 source-wordcount: '484'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
 
-# Content Analytics Tags不可知配置
+# Content Analytics JavaScript库
 
-Adobe Content Analytics JavaScript库允许通过Experience Platform Edge Network将内容数据发送到Adobe Experience Platform，从而跟踪网站上的内容相关事件。 当您想要实施不带Adobe Experience Platform标记的Content Analytics (Launch)时，请使用此库。
+Adobe Content Analytics JavaScript库允许通过Experience Platform Edge Network将内容数据发送到Adobe Experience Platform，从而跟踪网站上的内容相关事件。 当您想要实施不带Adobe Experience Platform标记的Content Analytics时，请使用此库。
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ Adobe Content Analytics JavaScript库允许通过Experience Platform Edge Networ
 >
 >* 在调用`initializeContentLibrary`之前，必须在页面上初始化Adobe Experience Platform Web SDK (Alloy)。
 >* 完成Content Analytics引导式配置向导，以引导您完成设置Content Analytics配置的先决条件所需的所有步骤。
->* 完成引导式配置后，即可在该配置视图中访问特定于您的配置的JavaScript设置。
+>* 完成引导式配置后，即可使用JavaScript设置。
 
 
 ## 安装
@@ -52,7 +52,7 @@ Adobe Content Analytics JavaScript库允许通过Experience Platform Edge Networ
 
 直接从CDN加载库。
 
-1. 初始化[Web SDK JavaScript库](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/js/install/library)并加载Content Analytics捆绑包：
+1. 初始化[Web SDK JavaScript库](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library)并加载Content Analytics捆绑包：
 
    ```html
    <!-- 1. Load and configure Alloy first -->
@@ -74,7 +74,7 @@ Adobe Content Analytics JavaScript库允许通过Experience Platform Edge Networ
    ```
 
    位置
-   * `alloy/2.x.x`引用您要使用[Web SDK JavaScript库](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/js/install/library)的版本。
+   * `alloy/2.x.x`引用您要使用[Web SDK JavaScript库](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library)的版本。
    * `content-analytics/1.x.x`是指您要使用Content Analytics SDK库的版本。
 
 2. 独立内部版本将`window.contentAnalytics`公开为初始化函数。
@@ -94,7 +94,7 @@ initializeContentLibrary({
 });
 ```
 
-## 体验捕获与定义
+## 体验捕捉和定义
 
 启用体验跟踪并控制如何在您的网站上识别体验。 体验是通过将&#x200B;**域正则表达式**&#x200B;与可选&#x200B;**查询参数**&#x200B;组合在一起定义的，这些参数可在匹配页面中将一个体验与另一个体验区分开来。
 
@@ -131,7 +131,7 @@ initializeContentLibrary({
 });
 ```
 
-## 事件筛选
+## 事件过滤
 
 使用正则表达式控制数据收集中包含的页面URL和资产URL。 将以下模式示例用作起点，并在部署之前通过正则表达式测试器验证模式。
 
