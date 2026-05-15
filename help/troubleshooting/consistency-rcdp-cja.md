@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ## 身份标识配置的差异
 
-Real-time CDP 和 Customer Journey Analytics 现在对个人的定义不同。 Real-time CDP 完全依赖于[身份标识图](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html)中的信息来构建合并的轮廓。
+Real-time CDP 和 Customer Journey Analytics 现在对个人的定义不同。 Real-time CDP 完全依赖于[身份标识图](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=zh-Hans)中的信息来构建合并的轮廓。
 
 可以将 Customer Journey Analytics 配置为使用 [拼接](../stitching/overview.md)。 如果您使用[基于字段的拼接](/help/stitching/fbs.md)作为拼接机制，可从数据湖中的某个数据集中指定一个标识符，以拼接并提升该数据集的合并轮廓质量。 如果您使用[基于图形的拼接](/help/stitching/gbs.md)作为拼接机制，则会基于指定的身份标识命名空间，利用身份标识图执行类似的处理流程。
 
@@ -44,7 +44,7 @@ Real-time CDP 和 Customer Journey Analytics 现在对个人的定义不同。 R
 
 Customer Journey Analytics 允许在查询时进行广泛的数据修改，例如组合字段、拆分字段以及其他操作，如包含/排除、子字符串、重复值消除、会话和行级过滤。
 
-Real-time CDP 提供了一套不同的数据操作工具。 它应用[合并策略](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)来确定哪些数据将被优先处理，哪些数据将合并以创建个人的统一视图。
+Real-time CDP 提供了一套不同的数据操作工具。 它应用[合并策略](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=zh-Hans)来确定哪些数据将被优先处理，哪些数据将合并以创建个人的统一视图。
 
 ## TTL（生存时间）和数据摄取的差异
 

@@ -448,4 +448,4 @@ Analysis Workspace将Orangey的第二集归因于搜索词`kids show`，而不�
 
 >[!MORELIKETHIS]
 >
->[数据视图中的绑定维度](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html)教程。
+>[数据视图中的绑定维度](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html?lang=zh-Hans)教程。

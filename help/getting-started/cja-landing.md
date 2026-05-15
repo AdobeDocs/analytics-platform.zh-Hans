@@ -182,4 +182,4 @@ Content Analytics 可让您快速轻松地调查大量内容数据，以了解�
 
 
 <table style="table-layout:auto" class="tablelayout-is-fixed"><tbody><tr style="border: 0;"><td><img src="./assets/newsletter.png"></td><td>
-<b>了解最新信息，为社区贡献力量，提升您的Customer Journey Analytics体验！</b><br>请访问Adobe Analytics社区，与业内同行讨论该功能。 <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community">立即加入社区！</a></td></tr></tbody></table>
+<b>了解最新信息，为社区贡献力量，提升您的Customer Journey Analytics体验！</b><br>请访问Adobe Analytics社区，与业内同行讨论该功能。 <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=zh-Hans">立即加入社区！</a></td></tr></tbody></table>

@@ -26,7 +26,7 @@ Adobe Customer Journey Analytics在北美洲、欧洲和APAC的公共云服务�
 
 在配置时，客户指定其Adobe Experience Platform数据将驻留的地区。 从Adobe Experience Platform数据湖摄取到Customer Journey Analytics的数据将存储在同一区域。
 
-有关详细信息，请参阅Adobe Experience Cloud文档中的[区域数据收集](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc)。
+有关详细信息，请参阅Adobe Experience Cloud文档中的[区域数据收集](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/data-collection/rdc)。
 
 
 ## 查看存储数据的数据中心

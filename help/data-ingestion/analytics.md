@@ -38,9 +38,9 @@ ht-degree: 77%
 >
 >您的一个或多个网站上确实有 Adobe Analytics 的许可和部署，使用任何记录的实施方法：
 >
->- [使用 Experience Platform Edge 实施 Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html)
+>- [使用 Experience Platform Edge 实施 Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html?lang=zh-Hans)
 >
->- [使用 Adobe Analytics 扩展实现分析](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html)
+>- [使用 Adobe Analytics 扩展实现分析](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=zh-Hans)
 >
 >- [使用 JavaScript 实施 Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=zh-Hans)
 
@@ -101,7 +101,7 @@ Adobe Analytics 源连接器允许您将 Adobe Analytics 报告套件数据导�
 
 初始摄取完成后，您的 Adobe Analytics 报告套件数据即可供 Customer Journey Analytics 使用。
 
-有关更全面的教程，请参阅[在 UI 中创建 Adobe Analytics 源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)。
+有关更全面的教程，请参阅[在 UI 中创建 Adobe Analytics 源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)。
 
 
 ## 设置连接

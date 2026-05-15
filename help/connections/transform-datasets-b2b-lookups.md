@@ -25,10 +25,10 @@ ht-degree: 9%
 
 此转换仅适用于包含B2B查找架构数据的数据集，它基于以下类：
 
-* [XDM 业务帐户人员关系](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
-* [XDM 业务机会人员关系](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
-* [XDM 商业营销列表成员](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
-* [XDM 商业营销活动成员](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
+* [XDM 业务帐户人员关系](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [XDM 业务机会人员关系](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [XDM 商业营销列表成员](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [XDM 商业营销活动成员](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 >[!NOTE]
 >
