@@ -4,16 +4,21 @@ title: 量度
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+TQID: https://experienceleague.adobe.com/e0vvc9JN5k-KPI2zVAezIjdgViKdAcLJEAx0QUV-tAA
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 6%
+source-wordcount: 885
+ht-degree: 9%
 
 ---
 
-# 指标
+# 量度
 
-指标允许您量化 Analysis Workspace 中的数据点。它们最常用作可视化中的列，并与维度相关联。
+指标允许您量化 Analysis Workspace 中的数据点。 它们最常用作可视化中的列，并与维度相关联。
 
 ## 在 Analysis Workspace 中使用量度
 
@@ -58,7 +63,7 @@ Customer Journey Analytics中的标准量度的完整列表：
 
 ### 为所有项目创建计算指标
 
-您可以使用[计算量度生成器](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)来[创建计算量度](/help/components/calc-metrics/cm-workflow/cm-workflow.md)。 通过这种方式创建时，计算量度在组件列表中可用，然后可在整个组织的项目中使用。
+您可以使用[计算量度生成器](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)来[创建计算量度](/help/components/calc-metrics/cm-workflow/cm-workflow.md)。 以这种方式创建时，计算量度可在组件列表中使用，然后可在整个组织的项目中使用。
 
 ### 为单个项目创建计算指标
 

@@ -4,22 +4,28 @@ description: Customer Journey Analytics 登陆页面。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: efdb05a28813b774ae276de4d9c59656e78618ba
+TQID: https://experienceleague.adobe.com/QBGCqJ3GBKAh4jfAAvA3sO6GXjJHGEAtaRXyASH8PhA
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b743a5d9-dc51-41ed-8b2f-86a1f8de430fid: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 73%
+source-wordcount: 743
+ht-degree: 63%
 
 ---
 
 # Customer Journey Analytics 指南
 
-本技术文档指南为 Customer Journey Analytics 提供了自助服务。通过 Customer Journey Analytics，您可以将客户数据从您选择的任何渠道（在线和离线）带入 Adobe Experience Platform。然后，就像现在使用 Analysis Workspace 分析现有数字数据一样分析这些数据。
+本技术文档指南为 Customer Journey Analytics 提供了自助服务。 通过 Customer Journey Analytics，您可以将客户数据从您选择的任何渠道（在线和离线）带入 Adobe Experience Platform。 然后，就像现在使用 Analysis Workspace 分析现有数字数据一样分析这些数据。
 
-使用 Customer Journey Analytics，您可以控制如何在 Analysis Workspace 的任何常见客户 ID 上连接在线和离线数据，从而进行属性、区段、流量、流失等操作。 
+通过Customer Journey Analytics，您可以控制如何在Analysis Workspace中将任何通用客户ID上的在线和离线数据进行关联，
 
 ## 新增功能
 
-大致了解 Customer Journey Analytics 产品和文档中的最新增强！有关功能、改进和修复的完整列表，请查看详细的[发行说明](../release-notes/latest.md)。访问[文档更新页面](../release-notes/doc-changes.md)以及时了解最新的文档更新。
+大致了解 Customer Journey Analytics 产品和文档中的最新增强！ 有关功能、改进和修复的完整列表，请查看详细的[发行说明](../release-notes/latest.md)。 访问[文档更新页面](../release-notes/doc-changes.md)以及时了解最新的文档更新。
 
 >[!BEGINTABS]
 
@@ -62,7 +68,7 @@ Customer Journey Analytics 中的实时报告功能可以实时显示并更新 A
 
 >[!TAB B2B Edition]
 
-Customer Journey Analytics B2B Edition 提供有助于推动收入增长的可操作的帐户洞察，帮助 B2B 公司协调其营销活动、销售和产品团队。帐户是数据模型的中心，因此所有分析都集中在帐户历程上。
+Customer Journey Analytics B2B Edition 提供有助于推动收入增长的可操作的帐户洞察，帮助 B2B 公司协调其营销活动、销售和产品团队。 帐户是数据模型的中心，因此所有分析都集中在帐户历程上。
 
 [![图像](assets/learn-more-button.svg)](/help/getting-started/cja-b2b-edition.md)
 
@@ -92,7 +98,7 @@ Content Analytics 可让您快速轻松地调查大量内容数据，以了解�
     </td>
     <td>
     <a href="/help/guided-analysis/overview.md"><img src="./assets/product-analytics.png"></a>
-    <div><strong>引导式分析</strong><br/>了解如何使用工作流获取有关客户产品体验的数据和洞察。通过引导式分析了解Product Analytics。
+    <div><strong>引导式分析</strong><br/>了解如何使用工作流获取有关客户产品体验的数据和洞察。 通过引导式分析了解Product Analytics。
     </div>
     </td>
     <td>
@@ -116,7 +122,7 @@ Content Analytics 可让您快速轻松地调查大量内容数据，以了解�
 
 ## 浏览文档
 
-了解 Customer Journey Analytics 怎样与 Adobe Analytics 相比较。以及如何将数据放入解决方案中，然后准备、查看、分析和民主化这些数据以及由此产生的分析和报告。
+了解 Customer Journey Analytics 怎样与 Adobe Analytics 相比较。 以及如何将数据放入解决方案中，然后准备、查看、分析和民主化这些数据以及由此产生的分析和报告。
 
 <table style="table-layout:fixed">
   <tr style="border: 0;">
@@ -154,7 +160,7 @@ Content Analytics 可让您快速轻松地调查大量内容数据，以了解�
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Customer Journey Analytics</strong><br/>
-<a href="https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">教程</a> - <a href="https://helpx.adobe.com/cn/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics 产品描述</a> - <a href="https://helpx.adobe.com/cn/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics（Customer Journey Analytics 附加组件）产品描述</a> - <a href="https://helpx.adobe.com/cn/legal/product-descriptions/customer-journey-analytics-b2b.html" target="_blank">Customer Journey Analytics B2B Edition 产品描述</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">Customer Journey Analytics API</a> - <a href="/help/ai-assistant.md">AI 助手</a>
+<a href="https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">教程</a> - <a href="https://helpx.adobe.com/cn/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics产品说明</a> - <a href="https://helpx.adobe.com/cn/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics （Customer Journey Analytics附加组件）产品说明</a> - <a href="https://helpx.adobe.com/cn/legal/product-descriptions/customer-journey-analytics-b2b.html" target="_blank">Customer Journey Analytics B2B edition产品说明</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">Customer Journey Analytics API</a> - <a href="/help/ai-assistant.md">AI助手</a>
 </td>
 <td><strong>数据摄取</strong><br/><a href="/help/data-ingestion/data-ingestion.md">概述</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">Web SDK</a> - <a href="/help/data-ingestion/aepmobilesdk.md">Mobile SDK</a> - <a href="/help/data-ingestion/batch.md">批处理</a> - <a href="/help/data-ingestion/streaming.md">流式处理</a> - <a href="/help/data-ingestion/sources.md">源</a> - <a href="/help/data-ingestion/serverapi.md">服务器 API</a>
 </td>
@@ -163,4 +169,4 @@ Content Analytics 可让您快速轻松地调查大量内容数据，以了解�
 
 
 <table style="table-layout:auto" class="tablelayout-is-fixed"><tbody><tr style="border: 0;"><td><img src="./assets/newsletter.png"></td><td>
-<b>随时了解最新动态、为社区做出贡献并提升您的 Customer Journey Analytics 体验！</b><br>访问 Adobe Analytics 社区，与同类从业者讨论其功能。<a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=zh-Hans">立即加入社区！</a></td></tr></tbody></table>
+<b>了解最新信息，为社区贡献力量，提升您的Customer Journey Analytics体验！</b><br>请访问Adobe Analytics社区，与业内同行讨论该功能。 <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community">立即加入社区！</a></td></tr></tbody></table>

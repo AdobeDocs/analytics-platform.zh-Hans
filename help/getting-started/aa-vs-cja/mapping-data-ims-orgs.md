@@ -5,10 +5,15 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Adobe Analytics Integration,Administration
 exl-id: c109742b-c1c5-45b3-971f-f8dcf814ec37
-source-git-commit: ff0a5eb5b04f604eff41a18b05199b517d1a2d14
+TQID: https://experienceleague.adobe.com/6qERpivKabPPCynMGNKrLhhOMcROnlp7HKpbvXpzNSg
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: d76b9e53-27fb-4597-933f-419cc0dd46db
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 1%
+source-wordcount: 1127
+ht-degree: 2%
 
 ---
 
@@ -51,7 +56,7 @@ ht-degree: 1%
 
 Adobe客户经理收到一封电子邮件，其中包含从多个组织映射Analytics数据的请求，随后将在Adobe中审核该请求。 有关任何其他问题、可选培训及其他信息，Adobe客户经理将与您联系。
 
-批准后，将创建请求的映射，并通知您。 源IMS组织名称已附加到Experience Platform中Analytics报表包[的](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data)列表中的报表包名称。
+批准后，将创建请求的映射，并通知您。 源IMS组织名称已附加到Experience Platform中Analytics报表包](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data)的[列表中的报表包名称。
 
 
 ## 限制
@@ -71,7 +76,7 @@ Adobe客户经理收到一封电子邮件，其中包含从多个组织映射Ana
 
 *跨IMS数据映射*&#x200B;功能获得批准后，您可以将目标IMS组织中一个或多个报表包的数据添加到Experience Platform。 您通过[Analytics源连接器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics)的配置来执行此操作。 然后，将在Experience Platform中创建目标数据集。 在此配置和流程中，您可以选择将一个或多个报表包中的配置文件数据发送到配置文件服务。
 
-如上所述，估计由配置和流程产生的配置文件总数。 确保总数不超过您按照合同规定有权访问目标组织的用户档案数。 应用[筛选规则和条件](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"}以选择性地包含或排除要引入到Profile服务的数据。 或者禁用将配置文件数据发送到相关报表包的配置文件服务的选项。
+如上所述，估计由配置和流程产生的配置文件总数。 确保总数不超过您按照合同规定有权访问目标组织的用户档案数。 应用[筛选规则和条件](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"}以选择性地包含或排除要引入到Profile服务的数据。 或者禁用将配置文件数据发送到相关报表包的配置文件服务的选项。
 
 
 #### 拼接

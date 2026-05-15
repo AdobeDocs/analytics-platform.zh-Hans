@@ -3,9 +3,15 @@ description: 了解如何按单个量度进行分段，以便能够在同一可�
 title: 分段量度
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+TQID: https://experienceleague.adobe.com/dOOOOGytHT-5IMC9LNcNlBKLufs9PUkvjBoAgw38bEI
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: 504
 ht-degree: 1%
 
 ---
@@ -29,8 +35,8 @@ ht-degree: 1%
 
 ## 受欢迎页面
 
-1. [从名为](cm-workflow.md)的Workspace项目创建计算量度`German people`。
-1. 在[计算量度生成器](cm-build-metrics.md)中，[创建一个名为](/help/components/segments/seg-builder.md)的区段`Germany`，该区段使用CRM数据中的“CRM国家/地区”字段来确定人员的来源。
+1. [从名为`German people`的Workspace项目创建计算量度](cm-workflow.md)。
+1. 在[计算量度生成器](cm-build-metrics.md)中，[创建一个名为`Germany`的区段](/help/components/segments/seg-builder.md)，该区段使用CRM数据中的“CRM国家/地区”字段来确定人员的来源。
 
    >[!TIP]
    >
@@ -90,7 +96,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-请参阅![VideoCheckout](/help/assets/icons/VideoCheckedOut.svg) [将分段计算量度用作演示视频的无实施量度](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-segmented-metrics){target="_blank"}。
+请参阅![VideoCheckout](/help/assets/icons/VideoCheckedOut.svg) [将分段计算量度用作演示视频的无实施量度](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-segmented-metrics){target="_blank"}。
 
 {{videoaa}}
 

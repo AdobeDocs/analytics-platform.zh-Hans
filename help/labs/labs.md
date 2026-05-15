@@ -4,16 +4,21 @@ description: 预览 Customer Journey Analytics 的原型项目
 exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
 feature: Labs
 role: User
-source-git-commit: fd033854a3b871c802c38c098d0907062a1c9c07
+TQID: https://experienceleague.adobe.com/toUKCwFyyQJZo-nZFwlo3RxBhccv83ViHPiO9o5yXs8
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: 472
 ht-degree: 81%
 
 ---
 
 # [!UICONTROL Labs] 用户指南
 
-[!UICONTROL Labs] 允许更快地为早期创意制作原型。它以客户为中心，整合了工具和流程，可加快开发速度并提高开发透明度。它允许用户与新兴技术交互，发掘有价值的分析，并影响未来的功能开发和优先级。您可以通过Labs抢先试用Adobe Customer Journey Analytics创新，并在您自己的业务用例和数据范围内评估即将推出的功能。
+[!UICONTROL Labs] 允许更快地为早期创意制作原型。 它以客户为中心，整合了工具和流程，可加快开发速度并提高开发透明度。 它允许用户与新兴技术交互，发掘有价值的洞察，并影响未来的功能开发和优先级。 您可以通过Labs抢先试用Adobe Customer Journey Analytics创新，并在您自己的业务用例和数据范围内评估即将推出的功能。
 
 >[!IMPORTANT]
 >
@@ -21,7 +26,7 @@ ht-degree: 81%
 
 ## 要求
 
-已为所有管理员自动启用 [!UICONTROL Labs]。其他团队成员应联系其产品管理员并请求获取访问权限。
+已为所有管理员自动启用 [!UICONTROL Labs]。 其他团队成员应联系其产品管理员并请求获取访问权限。
 
 如果您尚未这样做，请阅读并签署适用的“保密协议”和“条款与条件”表格。
 
@@ -37,15 +42,15 @@ ht-degree: 81%
 
 要启动并评估原型，请执行以下操作：
 
-1. 在 [!UICONTROL Labs] 屏幕上，单击要查看的原型的&#x200B;**[!UICONTROL 启动]**。启动原型后，您将在原型环境的左上方看到其名称。
+1. 在 [!UICONTROL Labs] 屏幕上，单击要查看的原型的&#x200B;**[!UICONTROL 启动]**。 启动原型后，您将在原型环境的左上方看到其名称。
 
    在此处添加屏幕快照
 
-1. 通过单击屏幕右上方的&#x200B;**[!UICONTROL 观看视频]**，观看重点介绍原型的视频。观看完视频后，单击&#x200B;**[!UICONTROL 关闭]**。
+1. 通过单击屏幕右上方的&#x200B;**[!UICONTROL 观看视频]**，观看重点介绍原型的视频。 观看完视频后，单击&#x200B;**[!UICONTROL 关闭]**。
 
    在此处添加屏幕快照
 
-1. 使用原型。在原型环境中工作时：
+1. 使用原型。 在原型环境中工作时：
 
 * 无法保存或共享在原型环境中创建的项目。
 
@@ -63,7 +68,7 @@ ht-degree: 81%
 
 1. 单击&#x200B;**[!UICONTROL 提交]**&#x200B;以发送您的反馈。
 
-1. 要尝试使用其他原型，或退出原型环境，请单击屏幕右上方的&#x200B;**[!UICONTROL 离开原型]**，并完成有关原型的简短调查。退出原型环境后，对原型项目所做的任何更改都将丢失。
+1. 要尝试使用其他原型，或退出原型环境，请单击屏幕右上方的&#x200B;**[!UICONTROL 离开原型]**，并完成有关原型的简短调查。 退出原型环境后，对原型项目所做的任何更改都将丢失。
 
    ![智能路径反馈窗口](assets/short-survey.png)
 
@@ -71,5 +76,5 @@ ht-degree: 81%
 
 ## 其他信息
 
-* [!UICONTROL Labs] 中的一些原型会成为 Customer Journey Analytics 功能，而其他一些原型则不会。您的反馈有助于我们做出合理决策，因此请查看原型并告知 Adobe 它们对您的重要性。
+* [!UICONTROL Labs] 中的一些原型会成为 Customer Journey Analytics 功能，而其他一些原型则不会。 您的反馈有助于我们做出合理决策，因此请查看原型并告知 Adobe 它们对您的重要性。
 * Labs 适用于所有 SKU 授权。

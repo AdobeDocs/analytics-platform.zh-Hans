@@ -4,9 +4,13 @@ title: 组合
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+TQID: https://experienceleague.adobe.com/ZJeq9DcK3JpxCTuzLec1pahJSTUES3rhEC-5avBmqpE
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: 617
 ht-degree: 92%
 
 ---
@@ -25,9 +29,9 @@ ht-degree: 92%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** 中的组合可视化图表。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** 中的组合可视化图表。_
 
-_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** 版本的[组合](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts)。_
+_请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** 版本的[组合](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts)。_
 
 >[!ENDSHADEBOX]
 
@@ -50,7 +54,7 @@ _请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&
 
 ## 使用
 
-1. 添加![注释](/help/assets/icons/ComboChart.svg) [!UICONTROL 组合]可视化。 请参阅[将可视化添加到面板](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+1. 添加![注释](/help/assets/icons/ComboChart.svg)[!UICONTROL 组合]可视化。 请参阅[将可视化添加到面板](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 
 1. 从下拉菜单中，选择X轴的维和Y轴的量度。
 

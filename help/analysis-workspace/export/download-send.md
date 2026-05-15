@@ -4,10 +4,16 @@ title: 下载项目和数据
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: 873247c643b3be4bb561955af84dd4bbb4e1d81f
+TQID: https://experienceleague.adobe.com/GZEoPBNO5ELAQTN-44YR9A7zCWy-0hgVB98wNDsvXzE
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebb
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1246'
-ht-degree: 22%
+source-wordcount: 1251
+ht-degree: 23%
 
 ---
 
@@ -90,7 +96,7 @@ Only relevant as soon as CJA supports Map visualization
 
 ## 以CSV文件格式下载项目 {#download-items}
 
-如果要分析表中的400多行可见数据，请从表标题或任何行的上下文菜单中选择&#x200B;**以CSV格式下载项目（_Dimension名称_）**。 此选项会导出所选维度的最多 50,000 个维度项（根据表格排序方式），并会应用排序选项和过滤器。如果从表的顶部选择此选项，将导出表中的第一个维。
+如果要分析表中的400多行可见数据，请从表标题或任何行的上下文菜单中选择&#x200B;**以CSV格式下载项目（_Dimension名称_）**。 此选项会导出所选维度的最多 50,000 个维度项（根据表格排序方式），并会应用排序选项和过滤器。 如果从表的顶部选择此选项，将导出表中的第一个维。
 
 ![将项目下载为 CSV（页面）的选项。](assets/download-items-as-csv.png)
 
@@ -98,9 +104,9 @@ Only relevant as soon as CJA supports Map visualization
 
 >[!TIP]
 >
-> 如果您的维度超过 50,000 项，请下载应用了不同排序量度的文件或者应用一个区段。例如，在一次下载中按访问量降序排序，然后在第二次下载中按访问量升序排序。此提示可以帮助您检索较长尾项。
+> 如果您的维度超过 50,000 项，请下载应用了不同排序量度的文件或者应用一个区段。 例如，在一次下载中按访问量降序排序，然后在第二次下载中按访问量升序排序。 此提示可以帮助您检索较长尾项。
 
-您可以在项目中执行多项任务，甚至可以在下载过程中导航到同一选项卡中的新工作区项目。如果打开新的浏览器标签页，则下载暂停。如果完全离开 Workspace 或关闭浏览器标签页，则取消下载。
+您可以在项目中执行多项任务，甚至可以在下载过程中导航到同一选项卡中的新工作区项目。 如果打开新的浏览器标签页，则下载暂停。 如果完全离开 Workspace 或关闭浏览器标签页，则取消下载。
 
 
 ### 下载的项目文件 {#items-file}
@@ -117,8 +123,8 @@ Only relevant as soon as CJA supports Map visualization
 
 下载文件时，您会看到以下通知：
 
-* 已请求蓝色&#x200B;**[!UICONTROL _表名&#x200B;_-_Dimension _.csv。_x _%完成]**&#x200B;表示进度。 要随时取消下载，请选择&#x200B;**[!UICONTROL 取消下载]**。 如果要关闭消息，请选择![CrossSize100](/help/assets/icons/CrossSize100.svg)，这样不会取消下载。
-* 在文件下载完成后，已下载绿色的&#x200B;**[!UICONTROL _表名&#x200B;_-_Dimension _.csv]**&#x200B;完成通知。 该文件将下载到为您的浏览器配置的下载文件夹。
+* 已请求蓝色&#x200B;**[!UICONTROL _表名&#x200B;_-_Dimension _.csv。_x _%完成]**表示进度。 要随时取消下载，请选择&#x200B;**[!UICONTROL 取消下载]**。 如果要关闭消息，请选择![CrossSize100](/help/assets/icons/CrossSize100.svg)，这样不会取消下载。
+* 在文件下载完成后，已下载绿色的&#x200B;**[!UICONTROL _表名&#x200B;_-_Dimension _.csv]**完成通知。 该文件将下载到为您的浏览器配置的下载文件夹。
 
 如果您一次请求多个下载，您将收到一条通知，说明每个额外的下载都将排队等待，直到前一个下载完成为止。
 

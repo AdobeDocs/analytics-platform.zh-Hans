@@ -6,10 +6,16 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta 版"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
-source-git-commit: cd3baec708f1811a7cbc37dfe0a9c3af75eb97c3
+TQID: https://experienceleague.adobe.com/DhV4VNrG4WR1iQP9VqjvV16iEpfShbBir7N1JfeRbCM
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebbid: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '2351'
-ht-degree: 14%
+source-wordcount: 2356
+ht-degree: 15%
 
 ---
 
@@ -27,7 +33,7 @@ ht-degree: 14%
 
 * **在Experience Platform中使用源连接器**&#x200B;将镜像数据导入数据集。
 
-* 在 Customer Journey Analytics 中&#x200B;**设置连接**。此连接应（至少）包含您的Experience Platform关系数据集。
+* 在 Customer Journey Analytics 中&#x200B;**设置连接**。 此连接应（至少）包含您的Experience Platform关系数据集。
 
 * 在 Customer Journey Analytics 中&#x200B;**设置数据视图**&#x200B;以定义要在 Analysis Workspace 中使用的量度和维度。
 
@@ -51,7 +57,7 @@ ht-degree: 14%
 
 +++ 示例事件数据的详细信息
 
-| timestamp | id | pagename | 个性化 | trackingcode | 订单 | 收入金额 |
+| 时间戳 | ID | pagename | 个性化 | trackingcode | 订单 | 收入金额 |
 | :---                      |  ---: | :---              | :---            | :---          |   ---: | :---           |
 | 2025-03-06T19:15:39+00:00 | 10001 | 主页 | person-1abc123 | abc123 |        |                |
 | 2025-03-06T19:15:39+00:00 | 10002 | 确认页面 | person-1abc123 |               | 1 | 174.25 |
@@ -156,7 +162,7 @@ ht-degree: 14%
    * 版本描述符。
    * 时间序列数据的时间戳描述符。
 
-1. 选择![示例事件馈送架构](/help/assets/icons/AddCircle.svg)旁边的&#x200B;**[!UICONTROL AddCircle]**&#x200B;以开始向架构添加字段。 将以下具有数据类型和附加属性的字段添加到架构。
+1. 选择&#x200B;**[!UICONTROL 示例事件馈送架构]**&#x200B;旁边的![AddCircle](/help/assets/icons/AddCircle.svg)以开始向架构添加字段。 将以下具有数据类型和附加属性的字段添加到架构。
 
    | 字段名称 | 显示名称 | 类型 | 其他属性 |
    |---|---|---|---|
@@ -213,7 +219,7 @@ ht-degree: 14%
 
 在&#x200B;**[!UICONTROL 身份验证]**&#x200B;步骤中，选择：
 
-* **[!UICONTROL 现有帐户]**(您已设置Google BigQuery的帐户)。 继续执行[选择数据](#select-data)步骤。
+* **[!UICONTROL 现有帐户]**（您已设置Google BigQuery的帐户）。 继续执行[选择数据](#select-data)步骤。
 * 需要连接到Google BigQuery时&#x200B;**[!UICONTROL 新帐户]**。
    1. 指定&#x200B;**[!UICONTROL 帐户名]**&#x200B;和（可选）**[!UICONTROL 描述]**。
    1. 选择您的&#x200B;**[!UICONTROL 身份验证类型]**： **[!UICONTROL 基本身份验证]**&#x200B;或&#x200B;**[!UICONTROL 服务身份验证]**。 根据您的选择，提供所需的输入。
@@ -225,7 +231,7 @@ ht-degree: 14%
 
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
-  有关在使用[Azure Databricks](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/databricks)或[Snowflake](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/snowflake)连接器时如何连接和身份验证的详细信息，请参阅Experience Platform文档。
+  有关在使用[Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)或[Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)连接器时如何连接和身份验证的详细信息，请参阅Experience Platform文档。
 
 
 ### 选择数据
@@ -260,7 +266,7 @@ ht-degree: 14%
 
 在&#x200B;**[!UICONTROL 映射]**&#x200B;步骤中：
 
-1. 将Google BigQuery架构中的字段(**[!UICONTROL Source数据]**)映射到您在Experience Platform中定义的架构中的字段（**[!UICONTROL 目标字段]**）。
+1. 将Google BigQuery架构中的字段（**[!UICONTROL Source数据]**）映射到您在Experience Platform中定义的架构中的字段（**[!UICONTROL 目标字段]**）。
 
    ![Experience Platform - Source Connector — 映射](assets/platform-sources-mapping.png)
 
@@ -279,7 +285,7 @@ ht-degree: 14%
 1. 选择&#x200B;**[!UICONTROL 下一步]**&#x200B;以继续。
 
 
-### 审核
+### 审阅
 
 在&#x200B;**[!UICONTROL 审核]**&#x200B;步骤中。
 
@@ -351,7 +357,7 @@ ht-degree: 14%
 
 4. 在&#x200B;**[!UICONTROL 组件]**&#x200B;步骤中：
 
-   1. 将您要包含的任何架构字段和/或标准组件添加到&#x200B;**[!UICONTROL METRICS]**&#x200B;或&#x200B;**[!UICONTROL DIMENSIONS]**&#x200B;组件框中。 确保从包含镜像数据的数据集中添加相关字段。 要访问这些字段，请执行以下操作：
+   1. 将要包含的任何架构字段和/或标准组件添加到&#x200B;**[!UICONTROL 量度]**&#x200B;或&#x200B;**[!UICONTROL 维度]**&#x200B;组件框中。 确保从包含镜像数据的数据集中添加相关字段。 要访问这些字段，请执行以下操作：
 
       1. 选择&#x200B;**[!UICONTROL 事件数据集]**。
       1. 选择&#x200B;**[!UICONTROL 临时和关系字段]**。
@@ -411,4 +417,4 @@ Analysis Workspace是一款灵活的浏览器工具，允许您快速构建分�
 
 >[!SUCCESS]
 >
->您已完成所有步骤。您首先定义要从数据仓库本机解决方案中收集哪些镜像数据（架构）。 以及将该数据（数据集）存储在Experience Platform中的什么位置。 您已配置相应的源连接器，以便在Experience Platform中为您提供镜像数据。 您在Customer Journey Analytics中定义了一个连接，以使用镜像的事件数据和（可选）其他数据。 通过数据视图定义，可指定要从镜像数据中使用的维度和量度。 最后，您创建了第一个项目，用于可视化和分析镜像数据。
+>您已完成所有步骤。 您首先定义要从数据仓库本机解决方案中收集哪些镜像数据（架构）。 以及将该数据（数据集）存储在Experience Platform中的什么位置。 您已配置相应的源连接器，以便在Experience Platform中为您提供镜像数据。 您在Customer Journey Analytics中定义了一个连接，以使用镜像的事件数据和（可选）其他数据。 通过数据视图定义，可指定要从镜像数据中使用的维度和量度。 最后，您创建了第一个项目，用于可视化和分析镜像数据。

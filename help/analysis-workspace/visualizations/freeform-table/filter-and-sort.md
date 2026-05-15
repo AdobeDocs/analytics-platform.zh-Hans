@@ -4,16 +4,21 @@ title: 过滤和排序
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 873247c643b3be4bb561955af84dd4bbb4e1d81f
+TQID: https://experienceleague.adobe.com/P8WPSJz11Eg8-jtrT3oXJT6C2fuI3OZf-FdY2zh2Kh8
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1575'
+source-wordcount: 1582
 ht-degree: 47%
 
 ---
 
 # 筛选和排序自由格式表
 
-Analysis Workspace 中的自由格式表是进行交互式数据分析的基础。因此，它们可以包含数千行信息。对数据进行过滤和排序是有效地呈现最重要信息的关键部分。
+Analysis Workspace 中的自由格式表是进行交互式数据分析的基础。 因此，它们可以包含数千行信息。 对数据进行过滤和排序是有效地呈现最重要信息的关键部分。
 
 
 ## 过滤表格
@@ -22,7 +27,7 @@ Analysis Workspace 中的过滤器可帮助您显示最重要的信息。
 
 >[!NOTE]
 >
-> 只有动态维度项才能按照本节所述进行过滤。静态维度项无法过滤。如需了解更多信息，请参阅[自由格式表中的动态与静态维度项](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)。
+> 只有动态维度项才能按照本节所述进行过滤。 静态维度项无法过滤。 如需了解更多信息，请参阅[自由格式表中的动态与静态维度项](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)。
 
 您可以使用多种方法来过滤自由格式表中的行。
 
@@ -38,7 +43,7 @@ Analysis Workspace 中的过滤器可帮助您显示最重要的信息。
 
 >[!NOTE]
 >
->当您按照本节所述排除行时，[!UICONTROL 高级]过滤器对话框中会自动添加一个[!UICONTROL 始终排除项目]规则。您可以通过选择 ![过滤器](/help/assets/icons/Filter.svg) 过滤器图标，然后选择[**[!UICONTROL 显示高级]**](#apply-a-simple-or-advanced-filter-to-a-table)来查看已应用的规则。
+>当您按照本节所述排除行时，[!UICONTROL 高级]过滤器对话框中会自动添加一个[!UICONTROL 始终排除项目]规则。 您可以通过选择 ![过滤器](/help/assets/icons/Filter.svg) 过滤器图标，然后选择[**[!UICONTROL 显示高级]**](#apply-a-simple-or-advanced-filter-to-a-table)来查看已应用的规则。
 
 要从自由格式表中排除特定行，请执行以下操作：
 
@@ -75,8 +80,8 @@ Note: this option does not seem to work. AN-338422
 
    | 选项 | 功能 |
    |---------|----------|
-   | [!UICONTROL **包括“无值”**] | 选择此选项可在表中显示&#x200B;**[!UICONTROL 无值]**&#x200B;行，其中包含选定维度中没有值的数据。取消选择此选项可隐藏&#x200B;**[!UICONTROL 无值]**&#x200B;行。<!-- Add at multi dim GA: When tables include multiple dimension columns, you can deselect this option to show data only when it applies to each dimension column in the table.--> |
-   | [!UICONTROL **搜索单词或短语**] | 指定您想要过滤的单词或短语。仅显示包含指定单词或确切短语的行。 |
+   | [!UICONTROL **包括“无值”**] | 选择此选项可在表中显示&#x200B;**[!UICONTROL 无值]**&#x200B;行，其中包含选定维度中没有值的数据。 取消选择此选项可隐藏&#x200B;**[!UICONTROL 无值]**&#x200B;行。<!-- Add at multi dim GA: When tables include multiple dimension columns, you can deselect this option to show data only when it applies to each dimension column in the table.--> |
+   | [!UICONTROL **搜索单词或短语**] | 指定您想要过滤的单词或短语。 仅显示包含指定单词或确切短语的行。 |
 
 
 1. （可选）要按不同条件或多个条件筛选，请选择&#x200B;[!UICONTROL **显示高级选项**]。
@@ -87,12 +92,12 @@ Note: this option does not seem to work. AN-338422
 
    | 选项 | 功能 |
    |---------|----------|
-   | [!UICONTROL **包括“无值”**] | 选择此选项可在表中显示&#x200B;**[!UICONTROL 无值]**&#x200B;行，其中包含选定维度中没有值的数据。取消选择此选项可隐藏&#x200B;**[!UICONTROL 无值]**&#x200B;行。 |
-   | [!UICONTROL **匹配**] | 选择&#x200B;[!UICONTROL **如果满足所有条件**] 以仅显示满足您指定的所有条件的数据。此选项通常会产生更精确的数据。<br/><br/>选择&#x200B;[!UICONTROL **如果满足任何条件**]&#x200B;以仅显示满足您指定的任一过滤条件的数据。此选项通常会产生不太精确的数据。 |
-   | [!UICONTROL **条件**] | 从以下过滤选项中选择：<br/><ul><li>[!UICONTROL **包含短语**]（默认）：只有包含您指定的确切短语的数据才会包含在过滤结果中。单词必须按照&#x200B;[!UICONTROL **搜索单词或短语字段**]&#x200B;中指定的顺序排列。</li><li>[!UICONTROL **包含任何词语**]：只有包含指定短语中的一个或多个单词的数据才会包含在筛选结果中。 </li><li>[!UICONTROL **包含所有词语**]：只有包含指定短语中所有单词的数据才会包含在筛选结果中。单词不需要按照&#x200B;[!UICONTROL **搜索词或短语字段**]&#x200B;中指定的顺序排列。</li><li>[!UICONTROL **不包含任何词语**]：只有不包含指定短语中任何单词的数据才会包含在筛选结果中。 </li><li>[!UICONTROL **不包含短语**]：只有不包含您指定的确切短语的数据才会包含在过滤结果中。单词必须按照&#x200B;[!UICONTROL **搜索词或短语字段**]&#x200B;中指定的顺序排列。</li><li>[!UICONTROL **对等**]：只有与您指定的短语完全匹配的数据才会包含在筛选结果中。 </li><li>[!UICONTROL **不对等**]：只有与您指定的短语不完全匹配的数据才会包含在筛选结果中。 </li><li>[!UICONTROL **开始于**]：只有以您指定的单词或确切短语开头的数据才会包含在筛选结果中。 </li><li>[!UICONTROL **结束于**]：只有以您指定的单词或确切短语结束的数据才会包含在筛选结果中。 </li></ul>（选择 ![添加](/help/assets/icons/Add.svg) [!UICONTROL **添加行**]&#x200B;以添加多个过滤器。您选择的&#x200B;[!UICONTROL **匹配**]&#x200B;选项将会决定&#x200B;**[!UICONTROL 是否满足所有条件]**&#x200B;或&#x200B;**[!UICONTROL 是否满足任何条件]**。 |
+   | [!UICONTROL **包括“无值”**] | 选择此选项可在表中显示&#x200B;**[!UICONTROL 无值]**&#x200B;行，其中包含选定维度中没有值的数据。 取消选择此选项可隐藏&#x200B;**[!UICONTROL 无值]**&#x200B;行。 |
+   | [!UICONTROL **匹配**] | 选择&#x200B;[!UICONTROL **如果满足所有条件**] 以仅显示满足您指定的所有条件的数据。 此选项通常会产生更精确的数据。<br/><br/>选择&#x200B;[!UICONTROL **如果满足任何条件**]&#x200B;以仅显示满足您指定的任一过滤条件的数据。 此选项通常会产生不太精确的数据。 |
+   | [!UICONTROL **条件**] | 从以下过滤选项中选择：<br/><ul><li>[!UICONTROL **包含短语**]（默认）：只有包含您指定的确切短语的数据才会包含在过滤结果中。 单词必须按照&#x200B;[!UICONTROL **搜索单词或短语字段**]&#x200B;中指定的顺序排列。</li><li>[!UICONTROL **包含任何词语**]：只有包含指定短语中的一个或多个单词的数据才会包含在筛选结果中。 </li><li>[!UICONTROL **包含所有词语**]：只有包含指定短语中所有单词的数据才会包含在筛选结果中。 单词不需要按照&#x200B;[!UICONTROL **搜索词或短语字段**]&#x200B;中指定的顺序排列。</li><li>[!UICONTROL **不包含任何词语**]：只有不包含指定短语中任何单词的数据才会包含在筛选结果中。 </li><li>[!UICONTROL **不包含短语**]：只有不包含您指定的确切短语的数据才会包含在过滤结果中。 单词必须按照&#x200B;[!UICONTROL **搜索词或短语字段**]&#x200B;中指定的顺序排列。</li><li>[!UICONTROL **对等**]：只有与您指定的短语完全匹配的数据才会包含在筛选结果中。 </li><li>[!UICONTROL **不对等**]：只有与您指定的短语不完全匹配的数据才会包含在筛选结果中。 </li><li>[!UICONTROL **开始于**]：只有以您指定的单词或确切短语开头的数据才会包含在筛选结果中。 </li><li>[!UICONTROL **结束于**]：只有以您指定的单词或确切短语结束的数据才会包含在筛选结果中。 </li></ul>（选择 ![添加](/help/assets/icons/Add.svg) [!UICONTROL **添加行**]&#x200B;以添加多个过滤器。 您选择的&#x200B;[!UICONTROL **匹配**]&#x200B;选项将会决定&#x200B;**[!UICONTROL 是否满足所有条件]**&#x200B;或&#x200B;**[!UICONTROL 是否满足任何条件]**。 |
    | [!UICONTROL **始终排除项目**] | 指定要从过滤数据中排除的任何项目的名称。 |
 
-1. 选择&#x200B;**[!UICONTROL 应用]**&#x200B;以筛选数据。选择&#x200B;**[!UICONTROL 清除]**&#x200B;来清除所有输入内容。选择&#x200B;**[!UICONTROL 取消]**&#x200B;来取消并关闭对话框。<br/>当表中应用有过滤器时，彩色的 ![过滤器](/help/assets/icons/FilterColored.svg) **过滤器**&#x200B;图标会指示并显示详细信息。
+1. 选择&#x200B;**[!UICONTROL 应用]**&#x200B;以筛选数据。 选择&#x200B;**[!UICONTROL 清除]**&#x200B;来清除所有输入内容。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;来取消并关闭对话框。 <br/>当表中应用有过滤器时，彩色的 ![过滤器](/help/assets/icons/FilterColored.svg) **过滤器**&#x200B;图标会指示并显示详细信息。
 
 ### 在迷你图和折线图可视化图表的趋势数据中包括筛选条件 {#include-filter-criteria}
 
@@ -186,7 +191,7 @@ Note: this option does not seem to work. AN-338422
 
 #### 排序优先级
 
-当按多个列进行排序时，数据将根据您为每个列指定的优先级进行排序。优先级编号显示在排序图标![SortOrderDown](/help/assets/icons/SortOrderDown.svg)<sup>➊</sup>旁边。
+当按多个列进行排序时，数据将根据您为每个列指定的优先级进行排序。 优先级编号显示在排序图标![SortOrderDown](/help/assets/icons/SortOrderDown.svg)<sup>➊</sup>旁边。
 
 具有主优先级的列决定主顺序；具有次优先级的列决定主列中行的相同值的顺序；具有第三优先级的列决定主列和次列中行的相同值的顺序；依此类推。
 

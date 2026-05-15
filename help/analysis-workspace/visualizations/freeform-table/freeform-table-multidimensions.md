@@ -4,9 +4,14 @@ description: 了解如何在自由格式表中包含多个维度
 feature: Visualizations
 role: User
 exl-id: 66ebb4fc-feb2-4fa7-a107-37508cca4748
-source-git-commit: 39af20da14a5fb96fe01db31af5fc37b7e4aee16
+TQID: https://experienceleague.adobe.com/MD72IobkrYpNoI23FwpnLRWfdELY-X90iLF7FzTVMT8
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: 837
 ht-degree: 6%
 
 ---
@@ -40,7 +45,7 @@ ht-degree: 6%
 
 1. 在Analysis Workspace中，创建一个自由格式表。
 
-   有关详细信息，请参阅[可视化概述](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)中的[将可视化添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)。
+   有关详细信息，请参阅[可视化概述](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)中的[将可视化添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)。
 
 1. 向自由格式表添加维度。 可一次添加一个维度，也可以一次添加多个维度。
 
@@ -50,7 +55,7 @@ ht-degree: 6%
 
    * 在组件菜单中选择最多5个维度，然后将它们拖动到自由格式表中。 维度按您选择它们的顺序从左到右添加到表中。
 
-     要选择多个维度，请按住&#x200B;***命令***&#x200B;键(在Mac上)或&#x200B;***Ctrl***&#x200B;键（在Windows上）。
+     要选择多个维度，请按住&#x200B;***命令***&#x200B;键（在Mac上）或&#x200B;***Ctrl***&#x200B;键（在Windows上）。
 
      ![拖动多个维度](assets/dimensions-add-multiple.png)
 

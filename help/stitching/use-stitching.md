@@ -5,10 +5,15 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: cbb18e9d0990d5df64995c2dabe8362c7c37bb45
+TQID: https://experienceleague.adobe.com/pKQT6f-C-xAqhL4kLEYm2-v9giRwKTMPsWM-BTLpPZI
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 26%
+source-wordcount: 422
+ht-degree: 27%
 
 ---
 
@@ -54,4 +59,4 @@ ht-degree: 26%
 
 - 如果移除源数据集，拼接的数据集将停止处理，并被系统移除。
 
-- 数据使用情况标签不会自动传播到拼接的数据集架构。如果您将数据使用情况标签应用于源数据集架构，就需要将这些数据使用情况标签手动应用于拼接的数据集架构。请参阅[管理 Experience Platform 中的数据使用情况标签](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview)，了解更多信息。
+- 数据使用情况标签不会自动传播到拼接的数据集架构。 如果您将数据使用情况标签应用于源数据集架构，就需要将这些数据使用情况标签手动应用于拼接的数据集架构。 请参阅[管理 Experience Platform 中的数据使用情况标签](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview)，了解更多信息。

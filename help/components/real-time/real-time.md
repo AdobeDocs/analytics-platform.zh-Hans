@@ -4,9 +4,15 @@ title: 实时报表概述
 feature: Real-time Reporting
 role: User
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+TQID: https://experienceleague.adobe.com/Nvg6DVqDq-IwyPJgyDH2nOmNG41-aCRAYohlj7tjrj4
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: 855
 ht-degree: 6%
 
 ---
@@ -68,7 +74,7 @@ Customer Journey Analytics 中的实时报告功能可以实时显示并更新 A
 
 请注意实时报表的以下限制：
 
-* 实时报表仅报告滚动时段24小时内的可用数据。 超过以下项的数据   24小时制不能用于实时报告。 禁用或自动关闭报表的[实时刷新](use-real-time.md)后，通常用于Customer Journey Analytics中报表的[统一数据集](/help/connections/combined-dataset.md)中的所有相关数据将再次可用。
+* 实时报表仅报告滚动时段24小时内的可用数据。 超过24小时之前的数据不可用于实时报表。 禁用或自动关闭报表的[实时刷新](use-real-time.md)后，通常用于Customer Journey Analytics中报表的[统一数据集](/help/connections/combined-dataset.md)中的所有相关数据将再次可用。
 * 归因、分段、计算量度等仅适用于滚动时段（24小时）内的可用数据。 例如，*重复访客*&#x200B;区段在实时报表中包含的用户非常少，因为此报表仅包含过去24小时内多次访问的人。 类似的限制同样适用于创建关于之前点击了不再活动的营销策划的人员的实时报表。
 * 实时报表最适用于事件和会话级别的数据，因此，在对人员级别的数据使用实时报表时应当谨慎。 由于实时报表仅提供滚动的24小时周期中的事件，因此人员的事件历史记录也仅限于此窗口。 选择维度和（计算）量度时，请考虑事件和会话级别数据的首选项。 当您在启用实时刷新的面板中使用划分、下一个或上一个以及更多等功能时。
 * 您不能将拼合与实时报表结合使用。 实时报表是关于事件和会话级别的数据，与基于人员的数据不太相关。

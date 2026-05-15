@@ -6,9 +6,15 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: d79c6d883f436d97925e007f453879e20b4fcc04
+TQID: https://experienceleague.adobe.com/iMB4RMf919vA1uyw8Hx-VOyXbL8M7UagPzBiWZG11Uc
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
 workflow-type: tm+mt
-source-wordcount: '3035'
+source-wordcount: 3035
 ht-degree: 96%
 
 ---
@@ -117,7 +123,7 @@ ht-degree: 96%
 
 | 优点 | 缺点 |
 |----------|---------|
-| <ul><li>**提供在 Experience Edge Network 中托管数据的所有优点**： <p>这些优点包括：</p><ul><li>Adobe Experience Platform 专为支持[实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=zh-Hans)而构建，因此具有高性能报告和数据可用性</li><li>在其他 Experience Cloud 产品（AJO、RTCDP 等）之间整合对 Adobe Experience Cloud 数据收集的实施</li><li>不依赖于 Adobe Analytics 命名法（属性、eVar、事件等）</li></ul></li><li>**面向未来**：未来的实施更新将更加容易。</li></ul> | <ul><li>**需要从头开始进行新的实施**：从头开始进行新实施的要求意味着以下缺点： </li><ul><li>**耗时**：这是最耗时且要求最高的升级路径，因为它要求您重新开始新的实施。</li><li>**必须在 XDM 中重新创建完整架构**：在开始实施 Web SDK 之前，您必须在 XDM 中重新创建完整的架构。</li><li>**必须重新创建规则和数据元素**：在开始实施 Web SDK 之前，您必须从 Adobe Analytics 实施中重新创建所有规则条件和数据元素。</li></ul><li>**不考虑保留历史数据：** Adobe 建议将 Analytics 源连接器与 Experience Platform Web SDK 的新实施结合使用，以便在升级到 Customer Journey Analytics 后保留历史数据。<!-- For more information about this recommended upgrade path, see [Recommended path when upgrading from Adobe Analytics to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md) --></li><li>**不考虑将原始实施的数据与新实施的数据进行比较：** Adobe建议将Analytics源连接器与Experience Platform Web SDK的新实施结合使用，以便比较升级到Customer Journey Analytics后的数据。 </li></ul> |
+| <ul><li>**提供在 Experience Edge Network 中托管数据的所有优点**： <p>这些优点包括：</p><ul><li>Adobe Experience Platform 专为支持[实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)而构建，因此具有高性能报告和数据可用性</li><li>在其他 Experience Cloud 产品（AJO、RTCDP 等）之间整合对 Adobe Experience Cloud 数据收集的实施</li><li>不依赖于 Adobe Analytics 命名法（属性、eVar、事件等）</li></ul></li><li>**面向未来**：未来的实施更新将更加容易。</li></ul> | <ul><li>**需要从头开始进行新的实施**：从头开始进行新实施的要求意味着以下缺点： </li><ul><li>**耗时**：这是最耗时且要求最高的升级路径，因为它要求您重新开始新的实施。</li><li>**必须在 XDM 中重新创建完整架构**：在开始实施 Web SDK 之前，您必须在 XDM 中重新创建完整的架构。</li><li>**必须重新创建规则和数据元素**：在开始实施 Web SDK 之前，您必须从 Adobe Analytics 实施中重新创建所有规则条件和数据元素。</li></ul><li>**不考虑保留历史数据：** Adobe 建议将 Analytics 源连接器与 Experience Platform Web SDK 的新实施结合使用，以便在升级到 Customer Journey Analytics 后保留历史数据。<!-- For more information about this recommended upgrade path, see [Recommended path when upgrading from Adobe Analytics to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md) --></li><li>**不考虑将原始实施的数据与新实施的数据进行比较：** Adobe建议将Analytics源连接器与Experience Platform Web SDK的新实施结合使用，以便比较升级到Customer Journey Analytics后的数据。 </li></ul> |
 
 {style="table-layout:auto"}
 
@@ -129,7 +135,7 @@ ht-degree: 96%
 
 | 优点 | 缺点 |
 |----------|---------|
-| <ul><li>**提供在 Experience Edge Network 中托管数据的所有优点**： <p>这些优点包括：</p><ul><li>Adobe Experience Platform 专为支持[实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=zh-Hans)而构建，因此具有高性能报告和数据可用性</li><li>在其他 Experience Cloud 产品（AJO、RTCDP 等）之间整合对 Adobe Experience Cloud 数据收集的实施</li><li>不依赖于 Adobe Analytics 命名法（属性、eVar、事件等）</li></ul><li>**使用您现有的实施**：虽然这种方法需要进行一些实施方面的变更，但它并不需要从头开始进行全新的实施。 您可以使用现有的数据层和代码，只需对实施逻辑进行最少的更改，而不会影响现有的 Adobe Analytics 报告。</li><li>**在未来可以灵活地为您的组织创建 XDM 架构**：您可以迁移现有的 Adobe Analytics 实施，以使用 Web SDK 并验证 Adobe Analytics 中的所有功能是否正常运行，然后再创建 XDM 架构。 这种灵活性使得向 Customer Journey Analytics 的升级更加系统和周到。</li></ul> | <ul><li>**需要映射才能将数据发送到 Platform**：当您的组织准备好使用 Customer Journey Analytics 时，您必须将数据发送到 Adobe Experience Platform 中的数据集。 此操作要求数据对象中的每个字段都是数据流映射工具中的一个条目，并且该条目会将其分配给一个 XDM 架构字段。 对于此工作流程，仅需进行一次映射，并且不涉及对实施进行更改。 但是，这是一个额外的步骤，在 XDM 对象中发送数据时并不需要该步骤。</li><li>**技术债务**：由于这种方法使用的是现有实施的修改形式，因此在将来需要时，跟踪实施逻辑和执行更改可能会更加困难。 </li></ul> |
+| <ul><li>**提供在 Experience Edge Network 中托管数据的所有优点**： <p>这些优点包括：</p><ul><li>Adobe Experience Platform 专为支持[实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)而构建，因此具有高性能报告和数据可用性</li><li>在其他 Experience Cloud 产品（AJO、RTCDP 等）之间整合对 Adobe Experience Cloud 数据收集的实施</li><li>不依赖于 Adobe Analytics 命名法（属性、eVar、事件等）</li></ul><li>**使用您现有的实施**：虽然这种方法需要进行一些实施方面的变更，但它并不需要从头开始进行全新的实施。 您可以使用现有的数据层和代码，只需对实施逻辑进行最少的更改，而不会影响现有的 Adobe Analytics 报告。</li><li>**在未来可以灵活地为您的组织创建 XDM 架构**：您可以迁移现有的 Adobe Analytics 实施，以使用 Web SDK 并验证 Adobe Analytics 中的所有功能是否正常运行，然后再创建 XDM 架构。 这种灵活性使得向 Customer Journey Analytics 的升级更加系统和周到。</li></ul> | <ul><li>**需要映射才能将数据发送到 Platform**：当您的组织准备好使用 Customer Journey Analytics 时，您必须将数据发送到 Adobe Experience Platform 中的数据集。 此操作要求数据对象中的每个字段都是数据流映射工具中的一个条目，并且该条目会将其分配给一个 XDM 架构字段。 对于此工作流程，仅需进行一次映射，并且不涉及对实施进行更改。 但是，这是一个额外的步骤，在 XDM 对象中发送数据时并不需要该步骤。</li><li>**技术债务**：由于这种方法使用的是现有实施的修改形式，因此在将来需要时，跟踪实施逻辑和执行更改可能会更加困难。 </li></ul> |
 
 {style="table-layout:auto"}
 
@@ -157,7 +163,7 @@ ht-degree: 96%
 
 | 优点 | 缺点 |
 |----------|---------|
-| 如果您的 Adobe Analytics 实施已经在使用 Web SDK，则这是首选的升级路径。<ul><li>**提供在 Experience Edge Network 中托管数据的所有优点**： <p>这些优点包括：</p><ul><li>Adobe Experience Platform 专为支持[实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=zh-Hans)而构建，因此具有高性能报告和数据可用性</li><li>在其他 Experience Cloud 产品（AJO、RTCDP 等）之间整合对 Adobe Experience Cloud 数据收集的实施</li><li>不依赖于 Adobe Analytics 命名法（属性、eVar、事件等）</li></ul><li>**使用您现有的实施**：虽然这种方法需要进行一些实施方面的变更，但它并不需要从头开始进行全新的实施。 您可以使用现有的数据层和代码，只需对实施逻辑进行最少的更改，而不会影响现有的 Adobe Analytics 报告。</li><li>**提供使用 XDM 架构的选项**：您可以选择使用现有的 Adobe Analytics 架构，或者创建一个 XDM 架构，并将数据对象中的字段映射到该 XDM 架构。 [XDM 架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/home#xdm-schemas)是一种灵活的架构，它可以定义您需要的任何字段，并且仅会定义相关的字段。 <p>有关使用您自己的 XDM 架构的优势的更多信息，请参阅下面的“使用您自己的 XDM 架构”。</p></li><li>**保留规则和数据元素**：虽然这确实需要新的规则操作，但您只需进行最小的更改，即可重复使用现有的数据元素和规则条件。</li><li>**面向未来**：如果您选择使用自己的 XDM 架构，那么未来的实施更新将会更容易。</li></ul> | 无 |
+| 如果您的 Adobe Analytics 实施已经在使用 Web SDK，则这是首选的升级路径。<ul><li>**提供在 Experience Edge Network 中托管数据的所有优点**： <p>这些优点包括：</p><ul><li>Adobe Experience Platform 专为支持[实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)而构建，因此具有高性能报告和数据可用性</li><li>在其他 Experience Cloud 产品（AJO、RTCDP 等）之间整合对 Adobe Experience Cloud 数据收集的实施</li><li>不依赖于 Adobe Analytics 命名法（属性、eVar、事件等）</li></ul><li>**使用您现有的实施**：虽然这种方法需要进行一些实施方面的变更，但它并不需要从头开始进行全新的实施。 您可以使用现有的数据层和代码，只需对实施逻辑进行最少的更改，而不会影响现有的 Adobe Analytics 报告。</li><li>**提供使用 XDM 架构的选项**：您可以选择使用现有的 Adobe Analytics 架构，或者创建一个 XDM 架构，并将数据对象中的字段映射到该 XDM 架构。 [XDM 架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/home#xdm-schemas)是一种灵活的架构，它可以定义您需要的任何字段，并且仅会定义相关的字段。 <p>有关使用您自己的 XDM 架构的优势的更多信息，请参阅下面的“使用您自己的 XDM 架构”。</p></li><li>**保留规则和数据元素**：虽然这确实需要新的规则操作，但您只需进行最小的更改，即可重复使用现有的数据元素和规则条件。</li><li>**面向未来**：如果您选择使用自己的 XDM 架构，那么未来的实施更新将会更容易。</li></ul> | 无 |
 
 {style="table-layout:auto"}
 

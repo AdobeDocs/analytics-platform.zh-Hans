@@ -4,10 +4,15 @@ title: 查看预测
 feature: Visualizations
 role: User
 exl-id: 4a8b602c-e6aa-4a46-bba9-642387e6af88
-source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
+TQID: https://experienceleague.adobe.com/fihJQOI-CyvGccQsB0VxvwR-iV0OkJSMENaiciYrgFc
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: d13dba12-733d-4914-8d92-d643658bbe5d
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 2%
+source-wordcount: 372
+ht-degree: 5%
 
 ---
 
@@ -17,7 +22,7 @@ ht-degree: 2%
 
 ## 在表中查看预测
 
-您可以在时间序列自由格式表中查看预测。 在[!UICONTROL 用户首选项]中为自由格式表启用[显示预测](../user-preferences.md)时，将自动显示添加到该表的第一个量度列的预测。 对于任何其他列：
+您可以在时间序列自由格式表中查看预测。 在[用户首选项](../user-preferences.md)中为自由格式表启用[!UICONTROL 显示预测]时，将自动显示添加到该表的第一个量度列的预测。 对于任何其他列：
 
 1. 在列标题中选择列设置图标![列设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg)，然后确保在选项列表中选择&#x200B;**[!UICONTROL 显示预测]**。 有关更多信息，请参阅[列设置](../visualizations/freeform-table/column-row-settings/column-settings.md)。
 

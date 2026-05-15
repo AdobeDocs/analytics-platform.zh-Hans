@@ -4,10 +4,15 @@ description: 在Customer Journey Analytics的各种BI工具中连接并验证BI�
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: cb0102923f10f39becd40cc4187d2e11fb8c4e2f
+exl-id: d122a415-fb22-48f7-9377-8349dba274e5
+TQID: https://experienceleague.adobe.com/HPvTvrapyxOEwxewBLNpLTRYZK-dfpfj1Y8rjJyL-IU
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1864'
-ht-degree: 5%
+source-wordcount: 2021
+ht-degree: 10%
 
 ---
 
@@ -42,28 +47,28 @@ ht-degree: 5%
    1. 导航到您的Experience Platform沙盒。
    1. 从左边栏中选择![查询](/help/assets/icons/DataSearch.svg) **[!UICONTROL 查询]**。
    1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;界面中选择&#x200B;**[!UICONTROL 凭据]**&#x200B;选项卡。
-   1. 从`prod:cja`数据库&#x200B;**[!UICONTROL 下拉菜单中选择]**。
+   1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单中选择`prod:cja`。
 
       ![查询服务凭据](../assets/queryservice-credentials.png)
 
 1. 启动Power BI Desktop。
    1. 从主界面中选择&#x200B;**[!UICONTROL 从其他源获取数据]**。
-   1. 在&#x200B;**[!UICONTROL 获取数据]**&#x200B;对话框中：
+   1. 在&#x200B;**[!UICONTROL 获取数据]**对话框中：
       ![PowerBI PostgreSQL数据库](../assets/powerbi-postgresql.png)
       1. 搜索并选择&#x200B;**[!UICONTROL PostgreSQL数据库]**。
       1. 选择&#x200B;**[!UICONTROL 连接]**。
-   1. 在&#x200B;**[!UICONTROL PostgreSQL数据库]**&#x200B;对话框中：
+   1. 在&#x200B;**[!UICONTROL PostgreSQL数据库]**对话框中：
       ![PowerBI桌面服务器和数据库设置](../assets/powerbi-serverdatabase.png)
       1. 使用![复制](/help/assets/icons/Copy.svg)从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中复制并粘贴&#x200B;**[!UICONTROL 主机]**&#x200B;和&#x200B;**[!UICONTROL 端口]**&#x200B;值，以`:`分隔，作为&#x200B;**[!UICONTROL 服务器]**&#x200B;的值。 例如：`examplecompany.platform-query.adobe.io:80`。
       1. 使用![复制](/help/assets/icons/Copy.svg)从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板复制并粘贴&#x200B;**[!UICONTROL 数据库]**&#x200B;值。 将`?FLATTEN`添加到您粘贴的值。 例如，`prod:cja?FLATTEN`。
       1. 选择&#x200B;**[!UICONTROL DirectQuery]**&#x200B;作为&#x200B;**[!UICONTROL 数据连接模式]**。
       1. 选择&#x200B;**[!UICONTROL 确定]**。
-   1. 在&#x200B;**[!UICONTROL PostgreSQL数据库]** - **[!UICONTROL 数据库]**&#x200B;对话框中：
+   1. 在&#x200B;**[!UICONTROL PostgreSQL数据库]** - **[!UICONTROL 数据库]**对话框中：
       ![PowerBI桌面用户和密码](../assets/powerbi-userpassword.png)
-      1. 使用![复制](/help/assets/icons/Copy.svg)从&#x200B;**[!UICONTROL 用户名]**&#x200B;和&#x200B;**[!UICONTROL 密码]**&#x200B;字段中的Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中复制&#x200B;**[!UICONTROL 用户名]**&#x200B;和&#x200B;**[!UICONTROL 密码]**&#x200B;值。 如果您使用的是[不会过期的凭据](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect)，请使用不会过期的凭据的密码。
+      1. 使用![复制](/help/assets/icons/Copy.svg)从&#x200B;**[!UICONTROL 用户名]**&#x200B;和&#x200B;**[!UICONTROL 密码]**&#x200B;字段中的Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中复制&#x200B;**[!UICONTROL 用户名]**&#x200B;和&#x200B;**[!UICONTROL 密码]**&#x200B;值。 如果您使用的是[不会过期的凭据](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect)，请使用不会过期的凭据的密码。
       1. 确保&#x200B;**[!UICONTROL 选择要将这些设置应用到]**&#x200B;的级别的下拉菜单设置为您之前定义的&#x200B;**[!UICONTROL 服务器]**。
       1. 选择&#x200B;**[!UICONTROL 连接]**。
-   1. 在&#x200B;**[!UICONTROL 导航器]**&#x200B;对话框中，将检索数据视图。 此检索可能需要一些时间。 检索后，您将在Power BI Desktop中看到以下内容。
+   1. 在&#x200B;**[!UICONTROL 导航器]**对话框中，将检索数据视图。 此检索可能需要一些时间。 检索后，您将在Power BI Desktop中看到以下内容。
       ![Power BI桌面加载数据](../assets/powerbi-navigator-load.png)
       1. 从左侧面板的列表中选择&#x200B;**[!UICONTROL public.cc_data_view]**。
       1. 您有两个选项：
@@ -101,21 +106,21 @@ Power BI Desktop支持`FLATTEN`参数的以下方案。 有关详细信息，请
    1. 导航到您的Experience Platform沙盒。
    1. 从左边栏中选择![查询](/help/assets/icons/DataSearch.svg) **[!UICONTROL 查询]**。
    1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;界面中选择&#x200B;**[!UICONTROL 凭据]**&#x200B;选项卡。
-   1. 从`prod:cja`数据库&#x200B;**[!UICONTROL 下拉菜单中选择]**。
+   1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单中选择`prod:cja`。
 
       ![查询服务凭据](../assets/queryservice-credentials.png)
 
 1. 启动“表格”。
    1. 从&#x200B;**[!UICONTROL To a Server]**&#x200B;下的左边栏中选择&#x200B;**[!UICONTROL PostgreSQL]**。 如果不可用，请选择&#x200B;**[!UICONTROL 更多……]**，然后从&#x200B;**[!UICONTROL 安装的连接器]**&#x200B;中选择&#x200B;**[!UICONTROL PostgreSQL]**。
       ![Tableau连接器](../assets/tableau-connectors.png)
-   1. 在&#x200B;**[!UICONTROL PostgreSQL]**&#x200B;对话框的&#x200B;**[!UICONTROL 常规]**&#x200B;选项卡中：
+   1. 在&#x200B;**[!UICONTROL PostgreSQL]**&#x200B;对话框的&#x200B;**[!UICONTROL 常规]**选项卡中：
       ![Tableau登录对话框](../assets/tableau-signin.png)
       1. 使用![复制](/help/assets/icons/Copy.svg)将&#x200B;**[!UICONTROL 主机]**&#x200B;从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板复制并粘贴到&#x200B;**[!UICONTROL 服务器]**。
       1. 使用![复制](/help/assets/icons/Copy.svg)将&#x200B;**[!UICONTROL 端口]**&#x200B;从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板复制并粘贴到&#x200B;**[!UICONTROL 端口]**。
       1. 使用![复制](/help/assets/icons/Copy.svg)将&#x200B;**[!UICONTROL 数据库]**&#x200B;从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板复制并粘贴到&#x200B;**[!UICONTROL 数据库]**。 将`%3FFLATTEN`添加到您粘贴的值。 例如：`prod:cja%3FFLATTEN`。
       1. 从&#x200B;**[!UICONTROL 身份验证]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 用户名和密码]**。
       1. 使用![复制](/help/assets/icons/Copy.svg)将&#x200B;**[!UICONTROL 用户名]**&#x200B;从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板复制并粘贴到&#x200B;**[!UICONTROL 用户名]**。
-      1. 使用![复制](/help/assets/icons/Copy.svg)将&#x200B;**[!UICONTROL 密码]**&#x200B;从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板复制并粘贴到&#x200B;**[!UICONTROL 密码]**。 如果您使用的是[不会过期的凭据](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect)，请使用不会过期的凭据的密码。
+      1. 使用![复制](/help/assets/icons/Copy.svg)将&#x200B;**[!UICONTROL 密码]**&#x200B;从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板复制并粘贴到&#x200B;**[!UICONTROL 密码]**。 如果您使用的是[不会过期的凭据](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect)，请使用不会过期的凭据的密码。
       1. 确保已选中&#x200B;**[!UICONTROL Require SSL]**。
       1. 选择&#x200B;**[!UICONTROL 登录]**。
 
@@ -123,10 +128,10 @@ Power BI Desktop支持`FLATTEN`参数的以下方案。 有关详细信息，请
    1. 在主窗口中，您会在左窗格的&#x200B;**[!UICONTROL Data Source]**&#x200B;页面中看到：
       * **[!UICONTROL 连接]**&#x200B;下的连接名称。
       * **[!UICONTROL 数据库]**&#x200B;下的数据库名称。
-      * **[!UICONTROL 表]**&#x200B;下的表列表。
+      * **[!UICONTROL 表]**下的表列表。
         ![已连接Tableau](../assets/tableau-connected.png)
       1. 将&#x200B;**[!UICONTROL cc_data_view]**&#x200B;条目拖放到显示&#x200B;**[!UICONTROL 将表]**&#x200B;拖放到此处的主视图中。
-   1. 主窗口显示&#x200B;**[!UICONTROL cc_data_view]**&#x200B;数据视图的详细信息。
+   1. 主窗口显示&#x200B;**[!UICONTROL cc_data_view]**数据视图的详细信息。
       ![已连接Tableau](../assets/tableau-validation.png)
 
 ## 是否扁平化
@@ -153,7 +158,7 @@ Tableau Desktop支持`FLATTEN`参数的以下方案。 有关详细信息，请�
    1. 导航到您的Experience Platform沙盒。
    1. 从左边栏中选择![查询](/help/assets/icons/DataSearch.svg) **[!UICONTROL 查询]**。
    1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;界面中选择&#x200B;**[!UICONTROL 凭据]**&#x200B;选项卡。
-   1. 从`prod:cja`数据库&#x200B;**[!UICONTROL 下拉菜单中选择]**。
+   1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单中选择`prod:cja`。
 
       ![查询服务凭据](../assets/queryservice-credentials.png)
 
@@ -174,13 +179,13 @@ Tableau Desktop支持`FLATTEN`参数的以下方案。 有关详细信息，请�
       1. 使用![复制](/help/assets/icons/Copy.svg)从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中复制并粘贴&#x200B;**[!UICONTROL 数据库]**&#x200B;值作为&#x200B;**[!UICONTROL 数据库]**&#x200B;的值。 将`%3FFLATTEN`添加到您粘贴的值。 例如，`prod:cja%3FFLATTEN`。
       1. 使用![复制](/help/assets/icons/Copy.svg)从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中复制并粘贴&#x200B;**[!UICONTROL 用户名]**&#x200B;值作为&#x200B;**[!UICONTROL 用户名]**&#x200B;的值。
       1. 使用![复制](/help/assets/icons/Copy.svg)从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中复制并粘贴&#x200B;**[!UICONTROL 密码]**&#x200B;值作为&#x200B;**[!UICONTROL 密码]**&#x200B;的值。
-      1. 选择&#x200B;**[!UICONTROL 在]**&#x200B;可选设置&#x200B;**[!UICONTROL 处展开全部]**。
-      1. 将每个节点的最大连接数&#x200B;**[!UICONTROL 设置为]**。`5`
+      1. 选择&#x200B;**[!UICONTROL 在**[!UICONTROL &#x200B;可选设置&#x200B;]**处展开全部]**。
+      1. 将每个节点的最大连接数&#x200B;**[!UICONTROL 设置为`5`。]**
       1. 确保启用&#x200B;**[!UICONTROL SSL]**。
       1. 选择&#x200B;**[!UICONTROL 测试]**&#x200B;以测试连接。 您应该会看到屏幕顶部出现一个横幅，其中显示一条消息，如&#x200B;**[!UICONTROL Success， can connect JDBC ....]**。
       1. 选择&#x200B;**[!UICONTROL 连接]**&#x200B;以建立和保存连接。
    1. 您可以在&#x200B;**[!UICONTROL 连接]**&#x200B;界面中看到新连接。
-   1. 从&#x200B;**管理员**&#x200B;中选择&#x200B;**[!UICONTROL ←]**&#x200B;以转到左边栏中的主导航。
+   1. 从&#x200B;**[!UICONTROL 管理员]**&#x200B;中选择&#x200B;**←**&#x200B;以转到左边栏中的主导航。
    1. 选择&#x200B;**[!UICONTROL 开发]**。
    1. 选择&#x200B;**[!UICONTROL 项目]**。
    1. 在LookML项目中选择&#x200B;**[!UICONTROL 新建模型]**。
@@ -229,7 +234,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
    1. 导航到您的Experience Platform沙盒。
    1. 从左边栏中选择![查询](/help/assets/icons/DataSearch.svg) **[!UICONTROL 查询]**。
    1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;界面中选择&#x200B;**[!UICONTROL 凭据]**&#x200B;选项卡。
-   1. 从`prod:cja`数据库&#x200B;**[!UICONTROL 下拉菜单中选择]**。
+   1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单中选择`prod:cja`。
 
       ![查询服务凭据](../assets/queryservice-credentials.png)
 
@@ -335,13 +340,13 @@ Jupyter Notebook支持`FLATTEN`参数的以下方案。 有关详细信息，请
    1. 导航到您的Experience Platform沙盒。
    1. 从左边栏中选择![查询](/help/assets/icons/DataSearch.svg) **[!UICONTROL 查询]**。
    1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;界面中选择&#x200B;**[!UICONTROL 凭据]**&#x200B;选项卡。
-   1. 从`prod:cja`数据库&#x200B;**[!UICONTROL 下拉菜单中选择]**。
+   1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单中选择`prod:cja`。
 
       ![查询服务凭据](../assets/queryservice-credentials.png)
 
 1. 启动RStudio。
 1. 创建新的R Markdown文件，或下载[此示例R Markdown文件](../assets/BI-Extension.Rmd.zip)。
-1. 在第一个块中，输入以下介于` ` ``{r} `和` `` ` `之间的语句。 使用![复制](/help/assets/icons/Copy.svg)将Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中的值复制并粘贴到各种参数（如`host`、`dbname`和`user`）所需的值。 例如：
+1. 在第一个块中，输入以下介于` ```{r} `和` ``` `之间的语句。 使用![复制](/help/assets/icons/Copy.svg)将Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中的值复制并粘贴到各种参数（如`host`、`dbname`和`user`）所需的值。 例如：
 
    ```R
    library(rstudioapi)
@@ -362,7 +367,7 @@ Jupyter Notebook支持`FLATTEN`参数的以下方案。 有关详细信息，请
 
    ![RStudio配置步骤1](../assets/rstudio-config-step1.png)
 
-1. 创建一个新块并输入以下介于` ` `` {r} `和` `` ` `之间的语句。
+1. 创建一个新块并输入以下介于` ``` {r} `和` ``` `之间的语句。
 
    ```R
    con <- dbConnect(
@@ -379,7 +384,7 @@ Jupyter Notebook支持`FLATTEN`参数的以下方案。 有关详细信息，请
 1. 运行块。 如果连接成功，您应该不会看到任何输出。
 
 
-1. 创建一个新块并输入以下介于` ` `` {r} `和` `` ` `之间的语句。
+1. 创建一个新块并输入以下介于` ``` {r} `和` ``` `之间的语句。
 
    ```R
    views <- dbListTables(con)
@@ -389,7 +394,7 @@ Jupyter Notebook支持`FLATTEN`参数的以下方案。 有关详细信息，请
 1. 运行块。 您应该看到`character(0)`作为唯一输出。
 
 
-1. 创建一个新块并输入以下介于` ` `` {r} `和` `` ` `之间的语句。
+1. 创建一个新块并输入以下介于` ``` {r} `和` ``` `之间的语句。
 
    ```R
    glimpse(dv)

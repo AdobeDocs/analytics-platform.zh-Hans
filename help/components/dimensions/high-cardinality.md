@@ -5,10 +5,16 @@ feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 role: User
-source-git-commit: f350fd99187f6ce35042ad9d97d9d02b5f8d1721
+TQID: https://experienceleague.adobe.com/cDOJq7Dc6x301enIo7h-cm8pGphmnvQAihnLoYGIr-A
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 6%
+source-wordcount: 622
+ht-degree: 11%
 
 ---
 
@@ -16,7 +22,7 @@ ht-degree: 6%
 
 使用包含许多唯一值的维度时，生成的报表可能包含太多要显示或计算的唯一维度项。 通过删除被认为最不重要的维度项目，截断结果。 这些优化是为了保持项目和产品性能。
 
-当您请求报表时，如果所包含的维度的唯一值过多，Analysis Workspace会在维度标题中显示一个指示器，以说明并未包含所有维度项。 例如，**[!UICONTROL 行：超过22,343,156]**&#x200B;的1-50。 **[!UICONTROL 大于]**&#x200B;关键字表示已对报表应用了一些优化，以返回最重要的维度项。
+当您请求包含具有过多唯一值的维度的报告时，Analysis Workspace 会在维度标题中显示一个指示器，表明并非所有维度项都包含在内。 例如，**[!UICONTROL 行：超过22,343,156]**&#x200B;的1-50。 **[!UICONTROL 大于]**&#x200B;关键字表示已对报表应用了一些优化，以返回最重要的维度项。
 
 ![Workspace中的自由格式表显示“大于”关键字，可显示1-50个大于22,343,156](assets/high-cardinality.png)
 
@@ -38,7 +44,7 @@ Customer Journey Analytics在运行报表时对其进行处理，将组合数据
 
 * 使用[区段](/help/components/segments/seg-create.md)。 区段在每个服务器处理数据子集时应用。
 * 使用搜索。 从搜索词中排除的Dimension项目将从报表结果中删除，这样您更有可能看到所需的维度项目。
-* 使用查找数据集维度。查找数据集维度将事件数据集维度项组合在一起，从而限制返回的唯一值的数量。
+* 使用查找数据集维度。 查找数据集维度将事件数据集维度项组合在一起，从而限制返回的唯一值的数量。
 * 在数据视图管理器中使用[包含/排除](/help/data-views/component-settings/include-exclude-values.md)组件设置。
 * 缩短请求的日期范围。 如果许多唯一值随时间累积，则缩短Workspace报表的日期范围可以限制要处理的服务器唯一值的数量。
 * 考虑使用[完全表导出](/help/analysis-workspace/export/export-cloud.md)返回表的所有行。

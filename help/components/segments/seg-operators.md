@@ -4,9 +4,14 @@ title: 运算符
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
 feature: Filters, Segments
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+TQID: https://experienceleague.adobe.com/16SJDNJiR49Ztw0jGO8Jj3iIuoDZJKFWmGDtK26P1Ps
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1191'
+source-wordcount: 1215
 ht-degree: 31%
 
 ---
@@ -32,30 +37,30 @@ ht-degree: 31%
 例如，您有一个名为&#x200B;*我的酷炫产品*&#x200B;的页面名称。
 
 * 区段规则&#x200B;**[!UICONTROL 页面名称]** **[!UICONTROL 匹配]** `* product`将匹配上述页面名称。
-* 但是，规则&#x200B;**[!UICONTROL 页面名称]** **[!UICONTROL 匹配]** `My \* product`仅与页面名称&#x200B;*My *产品*&#x200B;匹配。
+* 但是，规则&#x200B;**[!UICONTROL 页面名称]** **[!UICONTROL 匹配]** `My \* product`仅与页面名称&#x200B;*My*&#x200B;产品*匹配。
 
 ## 标准运算符
 
 | 运算符 | 选定的维度、区段或量度事件…… |
 |--- |--- |
-| **[!UICONTROL 等于]** | 返回与某一数字或字符串值完全匹配的项目。注意：如果使用通配符，则使用&#x200B;**[!UICONTROL 匹配]**&#x200B;运算符。 |
-| **[!UICONTROL 不等于]** | 返回不包含输入值的完全匹配项的所有项目。注意：如果使用通配符，则使用&#x200B;**[!UICONTROL 与]**&#x200B;运算符不匹配。 |
-| **[!UICONTROL 等于任何]** | 返回与输入字段中的任何值完全匹配的项目（最多 500 个项目）。例如，使用此运算符输入`Search Results, Homepage`页面名称&#x200B;**[!UICONTROL 维度的]**&#x200B;将匹配&#x200B;*搜索结果*&#x200B;和&#x200B;*主页*，并计为2个项目。 此运算符的输入字段以逗号分隔。 |
-| **[!UICONTROL 不等于]**&#x200B;中的任何一个 | 识别与输入字段中的任何值完全匹配的项目（最多 500 个项目），然后只返回不包含这些值的项目。例如，为`Search Results, Homepage`Page Name **[!UICONTROL 维度输入带有此运算符的]**&#x200B;将识别&#x200B;*搜索结果*&#x200B;和&#x200B;*主页*，然后从返回的项目中&#x200B;**排除**&#x200B;这些结果。 此示例将计为 2 个项目。此运算符的输入字段以逗号分隔。 |
-| **[!UICONTROL 包含]** | 返回与输入值的子字符串匹配的项目。例如，如果规则为&#x200B;**[!UICONTROL Page Name]** **[!UICONTROL 包含]** `Search`，则此规则将匹配包含子字符串`Search`的所有页面，包括&#x200B;*搜索结果*、*搜索*&#x200B;和&#x200B;*搜索*。 “contains”子句在 Adobe Analytics 中不区分大小写，但在 Customer Journey Analytics 中区分大小写。 |
+| **[!UICONTROL 等于]** | 返回与某一数字或字符串值完全匹配的项目。 注意：如果使用通配符，则使用&#x200B;**[!UICONTROL 匹配]**&#x200B;运算符。 |
+| **[!UICONTROL 不等于]** | 返回不包含输入值的完全匹配项的所有项目。  注意：如果使用通配符，则使用&#x200B;**[!UICONTROL 与]**&#x200B;运算符不匹配。 |
+| **[!UICONTROL 等于任何]** | 返回与输入字段中的任何值完全匹配的项目（最多 500 个项目）。 例如，使用此运算符输入&#x200B;**[!UICONTROL 页面名称]**&#x200B;维度的`Search Results, Homepage`将匹配&#x200B;*搜索结果*&#x200B;和&#x200B;*主页*，并计为2个项目。 此运算符的输入字段以逗号分隔。 |
+| **[!UICONTROL 不等于]**&#x200B;中的任何一个 | 识别与输入字段中的任何值完全匹配的项目（最多 500 个项目），然后只返回不包含这些值的项目。 例如，为&#x200B;**[!UICONTROL Page Name]**&#x200B;维度输入带有此运算符的`Search Results, Homepage`将识别&#x200B;*搜索结果*&#x200B;和&#x200B;*主页*，然后从返回的项目中&#x200B;**排除**&#x200B;这些结果。 此示例将计为 2 个项目。 此运算符的输入字段以逗号分隔。 |
+| **[!UICONTROL 包含]** | 返回与输入值的子字符串匹配的项目。 例如，如果规则为&#x200B;**[!UICONTROL Page Name]** **[!UICONTROL 包含]** `Search`，则此规则将匹配包含子字符串`Search`的所有页面，包括&#x200B;*搜索结果*、*搜索*&#x200B;和&#x200B;*搜索*。 “contains”子句在 Adobe Analytics 中不区分大小写，但在 Customer Journey Analytics 中区分大小写。 |
 | **[!UICONTROL 不包含]** | 返回&#x200B;**[!UICONTROL contains]**&#x200B;规则的逆数。 具体而言，将从输入值中排除与输入值匹配的所有项。 例如，如果规则为&#x200B;**[!UICONTROL Page Name]** **[!UICONTROL 不包含]** `Search`，则不会匹配包含子字符串`Search`的任何页面，包括&#x200B;*搜索结果*、*搜索*&#x200B;和&#x200B;*搜索*。 将从结果中排除这些值。 |
-| **[!UICONTROL 包含所有]** | 返回与子字符串匹配的项目，包括联接在一起的多个值。 例如，如果为`Search Results`Page Name **[!UICONTROL 维度输入带有此运算符的]**，则将分别匹配&#x200B;*搜索结果*&#x200B;和&#x200B;*搜索结果*，但不匹配&#x200B;*搜索*&#x200B;或&#x200B;*结果*。 该规则将匹配&#x200B;*Search*&#x200B;和&#x200B;*Results*（一起找到）。 此运算符的输入字段以空格分隔（100 个词）。 |
-| **[!UICONTROL 不包含所有]** | 识别与子字符串匹配的项目，包括联接在一起的多个值，然后只返回不包含这些值的项目。 例如，如果为`Search Results`Page Name **[!UICONTROL 维度输入带有此运算符的]**，则将分别识别&#x200B;*搜索结果*&#x200B;和&#x200B;*搜索结果*（但不包括&#x200B;*搜索*&#x200B;或&#x200B;*结果*），然后排除这些项目。 此运算符的输入字段以空格分隔（100 个词）。 |
+| **[!UICONTROL 包含所有]** | 返回与子字符串匹配的项目，包括联接在一起的多个值。 例如，如果为&#x200B;**[!UICONTROL Page Name]**&#x200B;维度输入带有此运算符的`Search Results`，则将分别匹配&#x200B;*搜索结果*&#x200B;和&#x200B;*搜索结果*，但不匹配&#x200B;*搜索*&#x200B;或&#x200B;*结果*。 该规则将匹配&#x200B;*Search*&#x200B;和&#x200B;*Results*（一起找到）。 此运算符的输入字段以空格分隔（100 个词）。 |
+| **[!UICONTROL 不包含所有]** | 识别与子字符串匹配的项目，包括联接在一起的多个值，然后只返回不包含这些值的项目。 例如，如果为&#x200B;**[!UICONTROL Page Name]**&#x200B;维度输入带有此运算符的`Search Results`，则将分别识别&#x200B;*搜索结果*&#x200B;和&#x200B;*搜索结果*（但不包括&#x200B;*搜索*&#x200B;或&#x200B;*结果*），然后排除这些项目。 此运算符的输入字段以空格分隔（100 个词）。 |
 | **[!UICONTROL 包含任意]** | 返回与子字符串匹配的项目，包括联接或独立标识的多个值。 例如，使用此运算符输入`Search Results`将匹配&#x200B;*搜索结果*、*搜索结果*、*搜索*&#x200B;和&#x200B;*结果*。 它将匹配一起出现或单独出现的&#x200B;*搜索*&#x200B;或&#x200B;*结果*。 此运算符的输入字段以空格分隔（100 个词）。 |
-| **[!UICONTROL 不包含任何]** | 基于子字符串标识项目，然后返回不包含这些子字符串的值。 它可以有多个联接值或独立标识的值。 例如，输入`Search Results`Page Name **[!UICONTROL 维度的]**&#x200B;将匹配&#x200B;*搜索结果*、*搜索结果*、*搜索*&#x200B;和&#x200B;*结果*，其中&#x200B;*搜索*&#x200B;或&#x200B;*结果*&#x200B;是同时存在还是单独存在的。 然后会排除包含这些子字符串的项目。此运算符的输入字段以空格分隔（100 个词）。 |
+| **[!UICONTROL 不包含任何]** | 基于子字符串标识项目，然后返回不包含这些子字符串的值。 它可以有多个联接值或独立标识的值。 例如，输入&#x200B;**[!UICONTROL Page Name]**&#x200B;维度的`Search Results`将匹配&#x200B;*搜索结果*、*搜索结果*、*搜索*&#x200B;和&#x200B;*结果*，其中&#x200B;*搜索*&#x200B;或&#x200B;*结果*&#x200B;是同时存在还是单独存在的。 然后会排除包含这些子字符串的项目。 此运算符的输入字段以空格分隔（100 个词）。 |
 | **[!UICONTROL 开头为]** | 返回以输入的字符串值开头的项目。 |
 | **[!UICONTROL 不以]**&#x200B;开头 | 返回不是以输入的字符串值开头的所有项目。 这与&#x200B;**[!UICONTROL 开头为]**&#x200B;运算符的相反。 |
 | **[!UICONTROL 结尾为]** | 返回以输入的字符串值结束的项目。 |
 | **[!UICONTROL 结尾不是]** | 返回未以输入的字符串值结尾的所有项目。 这与&#x200B;**[!UICONTROL 结尾为]**&#x200B;运算符的相反。 |
-| **[!UICONTROL 个匹配项]** | 返回与给定的数字或字符串值完全匹配的项目。**[!UICONTROL matches]**&#x200B;子句在Adobe Analytics和Customer Journey Analytics中区分大小写。 **注意**：在使用[通配符](#wildcards) （通配）功能时使用此运算符。 “通配”示例：<ul><li>`a*e` 将匹配 `ae`、`abcde`、`adobe` 和 `a whole sentence`</li><li>`adob*` 将匹配 `adobe`、`adobe analytics` 和 `adobo recipe`</li><li>`*dobe` 将匹配 `dobe`、`adobe` 和 `cute little dobe`</li></ul> |
-| **[!UICONTROL 不匹配]** | 返回不包含输入值的完全匹配项的所有项目。注意：在使用[通配符](#wildcards) （通配）功能时使用此运算符。 |
-| **[!UICONTROL 存在]** | 返回存在的项目的数量。例如，如果您使用&#x200B;**[!UICONTROL exist]**&#x200B;运算符评估&#x200B;**[!UICONTROL 页面未找到]**&#x200B;维度，则会返回错误页面的数量。 |
-| **[!UICONTROL 不存在]** | 返回所有不存在的项目。例如，如果您使用&#x200B;**[!UICONTROL 不存在]**&#x200B;运算符评估&#x200B;**[!UICONTROL 页面未找到]**&#x200B;维度，则会返回不存在此错误页面的页面数。 |
+| **[!UICONTROL 个匹配项]** | 返回与给定的数字或字符串值完全匹配的项目。 **[!UICONTROL matches]**&#x200B;子句在Adobe Analytics和Customer Journey Analytics中区分大小写。 **注意**：在使用[通配符](#wildcards) （通配）功能时使用此运算符。 “通配”示例：<ul><li>`a*e` 将匹配 `ae`、`abcde`、`adobe` 和 `a whole sentence`</li><li>`adob*` 将匹配 `adobe`、`adobe analytics` 和 `adobo recipe`</li><li>`*dobe` 将匹配 `dobe`、`adobe` 和 `cute little dobe`</li></ul> |
+| **[!UICONTROL 不匹配]** | 返回不包含输入值的完全匹配项的所有项目。 注意：在使用[通配符](#wildcards) （通配）功能时使用此运算符。 |
+| **[!UICONTROL 存在]** | 返回存在的项目的数量。 例如，如果您使用&#x200B;**[!UICONTROL exist]**&#x200B;运算符评估&#x200B;**[!UICONTROL 页面未找到]**&#x200B;维度，则会返回错误页面的数量。 |
+| **[!UICONTROL 不存在]** | 返回所有不存在的项目。 例如，如果您使用&#x200B;**[!UICONTROL 不存在]**&#x200B;运算符评估&#x200B;**[!UICONTROL 页面未找到]**&#x200B;维度，则会返回不存在此错误页面的页面数。 |
 
 ## Data Warehouse 运算符
 
@@ -68,7 +73,7 @@ ht-degree: 31%
 
 ## 不同的计数运算符
 
-您可以按维度中项目的非重复计数进行分段。示例： *查看超过5个不同产品的访客*，或&#x200B;*查看超过5个不同页面的访问*。
+您可以按维度中项目的非重复计数进行分段。 示例： *查看超过5个不同产品的访客*，或&#x200B;*查看超过5个不同页面的访问*。
 
 | 运算符 | 选定的维度、区段或量度事件…… |
 | --- | --- |
@@ -82,6 +87,6 @@ ht-degree: 31%
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [不同的维度计数](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/components/calculated-metrics/approximate-count-distinct-function-in-calculated-metrics){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [不同的维度计数](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/calculated-metrics/approximate-count-distinct-function-in-calculated-metrics){target="_blank"}。
 
 >[!ENDSHADEBOX]

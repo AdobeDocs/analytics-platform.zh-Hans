@@ -6,9 +6,14 @@ feature: Report Builder
 type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
 solution: Customer Journey Analytics
-source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
+TQID: https://experienceleague.adobe.com/JAuvA8NU9j1Jx4bSw-JTHYF0c6mW249C6MWvzti-kB0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: 539
 ht-degree: 25%
 
 ---
@@ -31,7 +36,7 @@ ht-degree: 25%
 - Windows 10，版本 1904 或更高版本
 - Excel 版本 2106 或更高版本
 
-  所有 Windows 桌面 Excel 用户必须安装 Microsoft Edge Webview2 以使用插件。要安装，请执行以下操作：
+  所有 Windows 桌面 Excel 用户必须安装 Microsoft Edge Webview2 以使用插件。 要安装，请执行以下操作：
 
    1. 转到 <https://developer.microsoft.com/en-us/microsoft-edge/webview2/>。
    1. 选择并下载适用于您的平台的&#x200B;**[!UICONTROL Evergreen Standalone Installer]**&#x200B;的适当版本。
@@ -104,7 +109,7 @@ ht-degree: 25%
 
 1. 选择登录时显示的组织名称。
 
-1. 从可用组织列表中选择组织。只列出您有访问权限的组织。
+1. 从可用组织列表中选择组织。 只列出您有访问权限的组织。
 
    ![您可以访问的组织列表。](./assets/image5.png){zoomable="yes"}
 

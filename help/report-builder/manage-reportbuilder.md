@@ -6,10 +6,14 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
-source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
+TQID: https://experienceleague.adobe.com/75yD-0nmVz22sHzBOga0oH9AaSiKsaG282k5kf3R4og
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 17%
+source-wordcount: 520
+ht-degree: 18%
 
 ---
 
@@ -47,7 +51,7 @@ ht-degree: 17%
 
 例如，您可以用一个或多个数据块中的新区段替换现有区段。
 
-1. 选择要更新的数据块。您可以选中顶级复选框以选择所有数据块，也可以选择单个数据块。
+1. 选择要更新的数据块。 您可以选中顶级复选框以选择所有数据块，也可以选择单个数据块。
 
    ![铅笔编辑图标](./assets/image56.png){zoomable="yes"}
 
@@ -82,7 +86,7 @@ ht-degree: 17%
 
 您可以使用&#x200B;**[!UICONTROL 分组依据]**&#x200B;下拉菜单对数据块进行分组，也可以选择列标题。
 
-要按列对数据块进行排序，请选择列标题。 要按组对数据块进行分组，请从&#x200B;**[!UICONTROL 分组]**&#x200B;下拉菜单中选择组名。例如，下面的屏幕截图显示了按数据视图分组的数据块。
+要按列对数据块进行排序，请选择列标题。 要按组对数据块进行分组，请从&#x200B;**[!UICONTROL 分组]**&#x200B;下拉菜单中选择组名。 例如，下面的屏幕截图显示了按数据视图分组的数据块。
 
 您可以使用分组快速选择要修改其公共元素（如区段）的数据块。
 

@@ -4,10 +4,15 @@ title: 警报概述
 feature: Workspace Basics
 role: User, Admin
 exl-id: 029be0c8-ec78-4bb7-a6cd-bb303b5ac82a
-source-git-commit: 65e46a5d2a6759dd83b24bba2d1d4ee283b907c9
+TQID: https://experienceleague.adobe.com/kXRxlgfo9-F6KyXQ590--TZOZcVqvHkZZGS6alcAC0E
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: a8b1c240-f315-46e3-b813-f545c4279dd1id: aff2ef09-fc60-4018-9197-e2befd623064id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 58%
+source-wordcount: 478
+ht-degree: 57%
 
 ---
 
@@ -15,7 +20,7 @@ ht-degree: 58%
 
 Customer Journey Analytics 中的警报允许您根据变化的百分比或特定数据点收到通知。
 
-根据您的 Customer Journey Analytics 包，您还可以使用基于异常阈值触发的警报。这些警报（也称为&#x200B;*智能警报*）提供了与[异常检测](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md)集成的粒度控制，在您最需要它们时触发。
+根据您的 Customer Journey Analytics 包，您还可以使用基于异常阈值触发的警报。 这些警报（也称为&#x200B;*智能警报*）提供了与[异常检测](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md)集成的粒度控制，在您最需要它们时触发。
 
 * 预览警报触发的频率。
 * 通过含链接的电子邮件或短信将警报发送到自动生成的 Analysis Workspace 项目。
@@ -25,15 +30,15 @@ Customer Journey Analytics 中的警报允许您根据变化的百分比或特�
 
      [异常检测](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md)使用历史数据构建预期值以及上限和下限。 如果实际度量值高于定义为阈值的上限或低于下限，则该事件在阈值置信度级别被视为异常，并且会触发警报。 阈值越高（例如：99%或99.9%），则警报频度越大，由更极端的异常导致的警报就越少。 较低的阈值（例如：90%）意味着较窄的频带，这会导致由不太极端的异常引起的警报增加。
    * 按特定百分比列出的量度更改。
-   * 大于、小于或等于特定值的量度。 (仅适用于具有Select、Prime或Ultimate包的Adobe Analytics客户)
+   * 大于、小于或等于特定值的量度。 （仅适用于具有Select、Prime或Ultimate包的Adobe Analytics客户）
 
-此[视频教程](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/data-science/intelligent-alerts)提供了警报的基本概述。
+此[视频教程](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/data-science/intelligent-alerts)提供了警报的基本概述。
 
 
 
 ## 了解警报有何不同
 
-在 Customer Journey Analytics 中使用警报的过程与在 Adobe Analytics 中使用警报的过程几乎相同。但是，有一些重要的不同之处。
+在 Customer Journey Analytics 中使用警报的过程与在 Adobe Analytics 中使用警报的过程几乎相同。 但是，有一些重要的不同之处。
 
 有关更多信息，请参阅[警报功能比较：Customer Journey Analytics 和 Adobe Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)。
 
@@ -58,10 +63,10 @@ Customer Journey Analytics 中的警报允许您根据变化的百分比或特�
 
 >[!IMPORTANT]
 >
->使用带时间戳的数据创建警报可能会导致警报无法正确触发。Adobe 建议对警报使用不带时间戳的数据。
+>使用带时间戳的数据创建警报可能会导致警报无法正确触发。 Adobe 建议对警报使用不带时间戳的数据。
 
 ## 管理警报
 
-您可以在警报管理器中管理现有警报。您可以对警报执行各种管理任务，例如标记、重命名、删除等。
+您可以在警报管理器中管理现有警报。 您可以对警报执行各种管理任务，例如标记、重命名、删除等。
 
 有关如何管理 Customer Journey Analytics 中现有警报的更多信息，请参阅[管理警报](/help/components/c-intelligent-alerts/alert-manager.md)。

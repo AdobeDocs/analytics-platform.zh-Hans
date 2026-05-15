@@ -5,10 +5,15 @@ title: 只读项目
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
 role: User
-source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
+TQID: https://experienceleague.adobe.com/Rliyf5y-VNnCKEBemXYfHiXOqlYb98nEpPSLHBPOS3o
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 37%
+source-wordcount: 328
+ht-degree: 39%
 
 ---
 
@@ -16,7 +21,7 @@ ht-degree: 37%
 
 您可以通过[共享功能](/help/analysis-workspace/curate-share/share-projects.md)以只读方式与收件人共享项目。 处于&#x200B;**[!UICONTROL 只读]**&#x200B;角色的收件人将获得更有限的项目体验。
 
-如果您将项目共享给不太熟悉您组织的数据结构(通常情况下是Analysis Workspace或Customer Journey Analytics)的用户，但仍希望他们在安全的环境中使用数据和见解，则可能希望这样做。
+如果您将项目共享给不太熟悉您组织的数据结构（通常情况下是Analysis Workspace或Customer Journey Analytics）的用户，但仍希望他们在安全的环境中使用数据和见解，则可能希望这样做。
 
 ![共享为只读](assets/read-only-project-sender.png)
 
@@ -29,7 +34,7 @@ ht-degree: 37%
 仅查看项目中已禁用的交互包括：
 
 * 隐藏的左侧面板
-* 面板日历日期范围。注意：如果要向收件人授予日历控制权，请添加一个包含日期范围[的](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=zh-Hans)下拉区段。
+* 面板日历日期范围。 注意：如果要向收件人授予日历控制权，请添加一个包含日期范围](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html)的[下拉区段。
 * 自由格式分段
 * 自由格式的可见行数
 * 自由格式的行、列或可视化图表设置
@@ -44,7 +49,7 @@ ht-degree: 37%
 | 面积图 | 启用的交互 |
 | --- | --- |
 | **自由格式表** | <li>分页和排序</li><li>悬停</li><li>更新链接可视化图表的单元格选择</li><li>从上下文菜单>获取可视化图表链接</li><li>从上下文菜单>复制到剪贴板</li> |
-| **可视化图表** | <li>单击以打开/关闭图例</li><li>悬停</li><li>从上下文菜单>获取可视化图表链接</li><li>折叠/展开</li><li>流量 - 展开流量节点</li><li>地图 - 缩放</li></ul> |
+| **可视化内容** | <li>单击以打开/关闭图例</li><li>悬停</li><li>从上下文菜单>获取可视化图表链接</li><li>折叠/展开</li><li>流量 - 展开流量节点</li><li>地图 - 缩放</li></ul> |
 | **面板** | <li>交互式下拉区段</li><li>从上下文菜单>获取面板链接</li><li>折叠/展开</li> |
 | **项目** | <li>检查所有信息图标</li><li>“项目”菜单 - 新建、打开、设置为登陆页、刷新、下载 CSV/PDF、有限的项目信息和设置</li><li>“共享”菜单 - 获取项目链接，立即发送文件</li><li>“帮助”菜单 - 除“提示和调试器”选项之外的所有操作</li> |
 

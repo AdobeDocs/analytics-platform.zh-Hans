@@ -5,16 +5,20 @@ title: 如何导出项目数据
 feature: Curate and Share
 exl-id: 3d467050-4bf0-4bdb-b7d2-eba67fbd526d
 role: User
-source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
+TQID: https://experienceleague.adobe.com/THoHVmp3vbNeG4C9teqfWmp8mpaHGBsda-zKSFaF8Is
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: 299
 ht-degree: 100%
 
 ---
 
 # 导出概述
 
-您可以从 Analysis Workspace 导出（部分）Customer Journey Analytics 项目。您可能出于多种原因想要导出 Customer Journey Analytics 报告，例如在第三方工具中使用或与外部数据结合使用。
+您可以从 Analysis Workspace 导出（部分）Customer Journey Analytics 项目。 您可能出于多种原因想要导出 Customer Journey Analytics 报告，例如在第三方工具中使用或与外部数据结合使用。
 
 以下部分介绍了受支持的文件类型、可用于导出的各种方法以及每种方法的优点。
 
@@ -22,15 +26,15 @@ ht-degree: 100%
 
 您可以将 Customer Journey Analytics 报告导出为 PDF、CSV 或 JSON 文件。
 
-* **PDF：**&#x200B;提供一种与利益相关者共享视觉数据的简便方法。PDF 文件包含项目中所有显示（可见）的表格和可视化图表。
+* **PDF：**&#x200B;提供一种与利益相关者共享视觉数据的简便方法。 PDF 文件包含项目中所有显示（可见）的表格和可视化图表。
 
-* **CSV：**&#x200B;允许您在电子表格应用程序中查看原始数据，例如 Excel。CSV 文件包含纯文本数据。
+* **CSV：**&#x200B;允许您在电子表格应用程序中查看原始数据，例如 Excel。 CSV 文件包含纯文本数据。
 
 * **JSON：**&#x200B;提供用于共享数据的开放标准文件格式。
 
 ## 导出方法
 
-从 Analysis Workspace 导出内容时，您可以选择多种方法。选择导出方法时，请考虑您要导出什么以及谁需要访问它。
+从 Analysis Workspace 导出内容时，您可以选择多种方法。 选择导出方法时，请考虑您要导出什么以及谁需要访问它。
 
 | 导出方法 | 如果您想要执行以下操作，请使用此方法： |
 |---------|----------|

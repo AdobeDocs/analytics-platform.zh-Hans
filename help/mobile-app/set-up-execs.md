@@ -5,22 +5,28 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
-source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
+TQID: https://experienceleague.adobe.com/78Bp5YSZg7Qs-qBnCfIoS6mjxda7CAglDG19Qq07Fw4
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b743a5d9-dc51-41ed-8b2f-86a1f8de430fid: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b21c7889-c659-4a99-a779-de1bae57e47eid: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: 720
 ht-degree: 69%
 
 ---
 
 # 设置执行用户以使用功能板
 
-在某些情况下，执行用户可能需要一些其他帮助才能访问和使用应用程序。此部分提供了帮助策划人提供该协助的信息。
+在某些情况下，执行用户可能需要一些其他帮助才能访问和使用应用程序。 此部分提供了帮助策划人提供该协助的信息。
 
 ## 确保应用程序用户具有 Adobe Analytics 访问权限
 
-1. 在 [Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=zh-Hans) 中设置新用户。
+1. 在 [Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html) 中设置新用户。
 
-1. 要能够共享记分卡，您必须向应用程序用户授予对记分卡组件(例如Analysis Workspace)、记分卡所基于的数据视图以及区段、量度和维度的访问权限。
+1. 要能够共享记分卡，您必须向应用程序用户授予对记分卡组件（例如Analysis Workspace）、记分卡所基于的数据视图以及区段、量度和维度的访问权限。
 
 ## 应用程序用户的系统先决条件
 
@@ -29,7 +35,7 @@ ht-degree: 69%
 * 他们的设备上的移动操作系统需要满足以下最低要求：iOS 版本 10 或更高版本，或者 Android 版本 4.4 (KitKat) 或更高版本
 * 执行用户已有效登录Customer Journey Analytics。
 * 您已为执行用户正确创建了移动记分卡，并与他们共享了这些记分卡。
-* 执行用户有权访问记分卡中包含的组件。请注意，在共享记分卡时，您可以选择&#x200B;**[!UICONTROL 共享嵌入的组件]**&#x200B;选项。
+* 执行用户有权访问记分卡中包含的组件。 请注意，在共享记分卡时，您可以选择&#x200B;**[!UICONTROL 共享嵌入的组件]**&#x200B;选项。
 
 ## 帮助执行用户下载和安装应用程序
 
@@ -57,7 +63,7 @@ ht-degree: 69%
 
 1. 让执行用户登录应用程序。
 
-   这将显示&#x200B;**[!UICONTROL 选择公司]**&#x200B;屏幕。该屏幕列出了执行用户所属的登录公司。
+   这将显示&#x200B;**[!UICONTROL 选择公司]**&#x200B;屏幕。 该屏幕列出了执行用户所属的登录公司。
 
 1. 让他们点按应用于您共享的记分卡的登录公司或 Experience Cloud 组织的名称。
 
@@ -94,7 +100,7 @@ ht-degree: 69%
 
    * 点按线形图上的任一点，可查看与线上的这个点相关联的数据。
 
-   * 将包含一个表以显示已添加到图块的各维度的数据。点按向下箭头以选择维度。如果未将维度添加到图块，则表将显示图表数据。
+   * 将包含一个表以显示已添加到图块的各维度的数据。 点按向下箭头以选择维度。 如果未将维度添加到图块，则表将显示图表数据。
 
 1. 要更改记分卡的日期范围，请单击“日期”标题，然后选择要查看的主要和比较日期范围组合。
 
@@ -102,7 +108,7 @@ ht-degree: 69%
 
 ## 更改应用程序偏好设置
 
-要更改首选项，请点按上面显示的&#x200B;**[!UICONTROL 首选项]**&#x200B;选项。在“首选项”中，您可以打开生物识别登录，也可以将应用程序设置为深色模式，如下所示：
+要更改首选项，请点按上面显示的&#x200B;**[!UICONTROL 首选项]**&#x200B;选项。 在“首选项”中，您可以打开生物识别登录，也可以将应用程序设置为深色模式，如下所示：
 
 ![深色模式](assets/darkmode.png)
 

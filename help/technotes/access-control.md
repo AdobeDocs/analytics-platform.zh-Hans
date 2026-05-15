@@ -6,16 +6,22 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 3cf3e24fc6c2ea2392e0c5bb97df17f25a023f4d
+TQID: https://experienceleague.adobe.com/-Zv1B2pvTFAAgwV1uAV6ik65jtKVRBsF-2rc0tCHuUs
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: a4cd176f-aea0-45b8-80e6-7f1b931e5847id: a67cb189-a535-41f6-afa2-448f39c4759fid: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: bf2b169f-d8b2-488a-97b9-f3bc9532e35cid: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8id: c38ed341-fab2-46df-9d72-88d8166edebbid: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d13dba12-733d-4914-8d92-d643658bbe5did: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e0cfe18a-f68c-495b-bafc-f6bcc0392d6cid: e1471301-a189-438e-8d48-264a8db508a6id: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: e8abc408-b05c-427f-9e37-f8b033a6b3c3id: f24857a4-4b64-4b25-b237-d43026362144id: fa6ac035-8403-478b-9ce1-3fe29d211fca
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b23e006f-0a29-4f1d-8fd0-77aa56f3d12bid: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: 1661
 ht-degree: 96%
 
 ---
 
 # 访问控制
 
-三个访问级别或三个角色负责管理 Customer Journey Analytics：产品管理员角色、产品配置文件管理员角色和用户级别访问。本主题将更详细地解释这些角色。
+三个访问级别或三个角色负责管理 Customer Journey Analytics：产品管理员角色、产品配置文件管理员角色和用户级别访问。 本主题将更详细地解释这些角色。
 
 此外，这篇文章还讨论了更加细粒度化的访问限制方法，如工作区策划、行级和值级访问控制。
 
@@ -25,7 +31,7 @@ ht-degree: 96%
 
 ### 产品管理员角色
 
-默认情况下，分配了产品管理员角色的用户会获得在 Customer Journey Analytics 中执行大多数任务所需的权限。但是，有些任务需要额外的权限。
+默认情况下，分配了产品管理员角色的用户会获得在 Customer Journey Analytics 中执行大多数任务所需的权限。 但是，有些任务需要额外的权限。
 
 要将用户添加为产品管理员：
 
@@ -33,7 +39,7 @@ ht-degree: 96%
 
 1. 选择 [!UICONTROL **Customer Journey Analytics**] > [!UICONTROL **管理员**]&#x200B;选项卡 > [!UICONTROL **添加管理员**]。
 
-   您添加的用户会获得[产品管理员默认权限](#product-admin-default-permissions)。如果需要，您还可以授予他们[额外权限](#product-admin-additional-permissions)。
+   您添加的用户会获得[产品管理员默认权限](#product-admin-default-permissions)。 如果需要，您还可以授予他们[额外权限](#product-admin-additional-permissions)。
 
 #### 产品管理员默认权限
 
@@ -82,7 +88,7 @@ ht-degree: 96%
   | 类别 | 权限 | 描述 |
   |---|---|---|
   | [!UICONTROL 目标] | [!UICONTROL 管理目标] | 读取、创建和删除目标连接和目标帐户的访问权限。 |
-  | [!UICONTROL 目标] | [!UICONTROL 激活目标] | 允许用户将区段激活到现有目标。在激活工作流中启用映射步骤。此权限还要求给想要将数据激活到目标的用户授予“查看目标”权限。 |
+  | [!UICONTROL 目标] | [!UICONTROL 激活目标] | 允许用户将区段激活到现有目标。 在激活工作流中启用映射步骤。 此权限还要求给想要将数据激活到目标的用户授予“查看目标”权限。 |
 
   关于 Experience Platform 权限的详细信息请参阅[管理产品配置文件的权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/ui/permissions)。
 
@@ -90,7 +96,7 @@ ht-degree: 96%
 
   要让用户使用 BI 扩展，产品管理员
 
-   * 必须确保用户的 Experience Platform 权限包括一个有查询服务资源的角色，并且有“管理查询”和“管理查询服务集成”选项。关于 Experience Platform 权限的详细信息请参阅[管理产品配置文件的权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/ui/permissions)。
+   * 必须确保用户的 Experience Platform 权限包括一个有查询服务资源的角色，并且有“管理查询”和“管理查询服务集成”选项。 关于 Experience Platform 权限的详细信息请参阅[管理产品配置文件的权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/ui/permissions)。
 
      | 类别 | 权限 | 描述 |
      |---|---|---|
@@ -98,20 +104,20 @@ ht-degree: 96%
      | [!UICONTROL 查询服务] | [!UICONTROL 管理查询服务集成] | 创建、更新和删除未过期的查询服务访问凭据的访问权限。 |
 
    * 必须确保用户有适当的 Customer Journey Analytics 权限：
-      * 相关数据视图的访问权限。查看[用户级别的访问](#user-level-access)中的[!UICONTROL 数据视图]。
-      * Customer Journey Analytics BI 扩展的访问权限。查看[用户级别的访问](#user-level-access)中的[!UICONTROL 数据视图工具]。
+      * 相关数据视图的访问权限。 查看[用户级别的访问](#user-level-access)中的[!UICONTROL 数据视图]。
+      * Customer Journey Analytics BI 扩展的访问权限。 查看[用户级别的访问](#user-level-access)中的[!UICONTROL 数据视图工具]。
 
 ### 产品配置文件管理员角色
 
-产品配置文件是一组权限。产品管理员可以创建产品配置文件，可以分配产品配置文件管理员以管理一个或多个产品配置文件。分配后，产品配置文件管理员可以：
+产品配置文件是一组权限。 产品管理员可以创建产品配置文件，可以分配产品配置文件管理员以管理一个或多个产品配置文件。 分配后，产品配置文件管理员可以：
 
-* 管理所分配的产品配置文件。例如，添加或移除用户或用户组，以及更改产品配置文件的权限。
+* 管理所分配的产品配置文件。 例如，添加或移除用户或用户组，以及更改产品配置文件的权限。
 
-* 在 Customer Journey Analytics 中编辑成为所分配产品配置文件一部分的数据视图。产品配置文件管理员无法创建新的数据视图。
+* 在 Customer Journey Analytics 中编辑成为所分配产品配置文件一部分的数据视图。 产品配置文件管理员无法创建新的数据视图。
 
 ### 用户级别访问
 
-下表概述了您可以为相关用户配置的各种 Customer Journey Analytics 功能的主要访问权限。您可以通过产品配置文件管理不同级别的用户访问权限。产品配置文件将大量权限组合在一起，您可以将这些权限分配给单个用户或用户组。
+下表概述了您可以为相关用户配置的各种 Customer Journey Analytics 功能的主要访问权限。 您可以通过产品配置文件管理不同级别的用户访问权限。 产品配置文件将大量权限组合在一起，您可以将这些权限分配给单个用户或用户组。
 
 **[!UICONTROL 权限]**&#x200B;选项卡是 [Admin Console](https://adminconsole.adobe.com/enterprise/) 中每个产品配置文件的一部分。
 
@@ -119,14 +125,14 @@ ht-degree: 96%
 
 | 类别 | 权限 | 描述 |
 | --- | --- | ---|
-| [!UICONTROL 数据视图] | *数据视图名称* | 如果您将&#x200B;**[!UICONTROL 自动包含]**&#x200B;切换到&#x200B;**[!UICONTROL 开启]**，则属于此产品配置文件的用户可以查看所有现有和新创建的数据视图。如果此设置被设置为&#x200B;**[!UICONTROL 关闭]**，则可以选择用户有权访问的特定数据视图。 |
+| [!UICONTROL 数据视图] | *数据视图名称* | 如果您将&#x200B;**[!UICONTROL 自动包含]**&#x200B;切换到&#x200B;**[!UICONTROL 开启]**，则属于此产品配置文件的用户可以查看所有现有和新创建的数据视图。 如果此设置被设置为&#x200B;**[!UICONTROL 关闭]**，则可以选择用户有权访问的特定数据视图。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 引导式分析访问权限] | 允许用户访问[引导分析](/help/guided-analysis/overview.md)。 |
-| [!UICONTROL 报告工具] | [!UICONTROL 计算量度创建] | 允许用户创建[计算量度](/help/components/calc-metrics/calc-metr-overview.md)。用户只能标记、共享、删除和重命名他们创建的计算指标或与他们共享的计算指标。 |
-| [!UICONTROL 报告工具] | [!UICONTROL 区段创建] | 允许用户创建[区段](/help/components/segments/seg-overview.md)。用户只能标记、共享、删除和重命名他们创建的区段或与他们共享的区段。 |
+| [!UICONTROL 报告工具] | [!UICONTROL 计算量度创建] | 允许用户创建[计算量度](/help/components/calc-metrics/calc-metr-overview.md)。 用户只能标记、共享、删除和重命名他们创建的计算指标或与他们共享的计算指标。 |
+| [!UICONTROL 报告工具] | [!UICONTROL 区段创建] | 允许用户创建[区段](/help/components/segments/seg-overview.md)。 用户只能标记、共享、删除和重命名他们创建的区段或与他们共享的区段。 |
 | [!UICONTROL 报告工具] | [!UICONTROL Labs 访问权限] | 允许用户访问 Customer Journey Analytics 中的 [Labs](/help/labs/labs.md) 选项卡。 |
-| [!UICONTROL 报告工具] | [!UICONTROL 注释创建] | 允许用户创建[注释](/help/components/annotations/overview.md)。用户只能标记、共享、删除和重命名自己创建的注释或与他们共享的注释。 |
+| [!UICONTROL 报告工具] | [!UICONTROL 注释创建] | 允许用户创建[注释](/help/components/annotations/overview.md)。 用户只能标记、共享、删除和重命名自己创建的注释或与他们共享的注释。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 受众视图] | 允许用户查看[受众](/help/components/audiences/audiences-overview.md)。 |
-| [!UICONTROL 报告工具] | [!UICONTROL 受众创建] | 允许用户创建[受众](/help/components/audiences/audiences-overview.md)。需要 Adobe Experience Platform 中的[管理区段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/home)。 |
+| [!UICONTROL 报告工具] | [!UICONTROL 受众创建] | 允许用户创建[受众](/help/components/audiences/audiences-overview.md)。 需要 Adobe Experience Platform 中的[管理区段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/home)。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 数据故事讲述] | 允许用户[根据 Workspace 项目生成幻灯片演示文稿。](/help/analysis-workspace/curate-share/generate-slides.md) |
 | [!UICONTROL 报告工具] | [!UICONTROL 审核日志访问] | 强制对 [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) 和审核日志 UI 进行权限检查。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 与任何人共享项目链接] | 允许用户[与任何人共享项目。](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
@@ -142,11 +148,11 @@ ht-degree: 96%
 
 ## 工作区项目策划
 
-可以在工作区报告级别使用另一级别的访问控制。您可以限制某些用户对特定组件的访问。有关如何在工作区项目级别限制组件（维度、量度、区段、日期范围）以及如何将管理与数据视图绑定在一起的更多信息，请参阅[管理项目](/help/analysis-workspace/curate-share/curate.md)。
+可以在工作区报告级别使用另一级别的访问控制。 您可以限制某些用户对特定组件的访问。 有关如何在工作区项目级别限制组件（维度、量度、区段、日期范围）以及如何将管理与数据视图绑定在一起的更多信息，请参阅[管理项目](/help/analysis-workspace/curate-share/curate.md)。
 
 ## 授予对单个量度或维度的访问权限
 
-您不能像在传统的 Adobe Analytics 中那样，在 Customer Journey Analytics 中授予或拒绝针对单个量度或维度的权限。 量度和维度可以在[数据视图](/help/data-views/data-views.md)中更改，因此可能会在 Customer Journey Analytics 中发生变化。更改它们也会追溯性地更改报告。
+您不能像在传统的 Adobe Analytics 中那样，在 Customer Journey Analytics 中授予或拒绝针对单个量度或维度的权限。 量度和维度可以在[数据视图](/help/data-views/data-views.md)中更改，因此可能会在 Customer Journey Analytics 中发生变化。 更改它们也会追溯性地更改报告。
 
 ## 用例
 
@@ -154,18 +160,18 @@ ht-degree: 96%
 
 ### 第三方访问
 
-您可以向贵公司合作的第三方的团队负责人提供产品配置文件管理访问权限。然后，这位管理员可以将公司团队的用户添加到这个产品配置文件。这位产品配置文件管理员可以授予对特定数据视图的访问权限，并将第三方的其他用户添加到这个产品配置文件。产品配置文件管理员可以更改数据视图，以满足第三方团队的要求。
+您可以向贵公司合作的第三方的团队负责人提供产品配置文件管理访问权限。 然后，这位管理员可以将公司团队的用户添加到这个产品配置文件。 这位产品配置文件管理员可以授予对特定数据视图的访问权限，并将第三方的其他用户添加到这个产品配置文件。 产品配置文件管理员可以更改数据视图，以满足第三方团队的要求。
 
 ### 行级访问控制
 
-您想授予用户只访问一天的数据的权限。以下是如何限制对这些特定行的访问：
+您想授予用户只访问一天的数据的权限。 以下是如何限制对这些特定行的访问：
 
-1. 在特定数据视图的[!UICONTROL 设置]中创建一个区段，其中的[!UICONTROL 天]就是您希望允许他们访问数据的那个日期。更多信息请参阅[创建数据视图](/help/data-views/create-dataview.md#settings-filters)。
-1. 保存数据视图，这会将这个区段应用于基础连接中数据集的数据部分。任何不符合区段定义的行都会自动从数据视图中排除，在 Analysis Workspace 中使用这个数据视图时，这些行都不可用。
+1. 在特定数据视图的[!UICONTROL 设置]中创建一个区段，其中的[!UICONTROL 天]就是您希望允许他们访问数据的那个日期。 更多信息请参阅[创建数据视图](/help/data-views/create-dataview.md#settings-filters)。
+1. 保存数据视图，这会将这个区段应用于基础连接中数据集的数据部分。 任何不符合区段定义的行都会自动从数据视图中排除，在 Analysis Workspace 中使用这个数据视图时，这些行都不可用。
 1. 在 Admin Console 中创建一个新的[产品配置文件](#product-profile-admin-role)，将用户添加到产品配置文件，并且仅将这个特定的数据视图添加到产品配置文件。
 
 ### 值级访问控制
 
-有权访问数据视图的用户只能使用管理员在这个数据视图中包含的量度和维度。管理员可以在数据视图中使用[包含/排除功能](/help/data-views/component-settings/include-exclude-values.md)或[值分段](../data-views/component-settings/value-bucketing.md)组件设置，从数据视图中排除或聚合特定的维度值。
+有权访问数据视图的用户只能使用管理员在这个数据视图中包含的量度和维度。 管理员可以在数据视图中使用[包含/排除功能](/help/data-views/component-settings/include-exclude-values.md)或[值分段](../data-views/component-settings/value-bucketing.md)组件设置，从数据视图中排除或聚合特定的维度值。
 
-例如：您从一个其中包含数据集中单个患者数据的组件，在数据视图中创建了一个名为&#x200B;*高血压*&#x200B;的量度。您使用值分段提供只是对分段值的访问权限，这样数据的用户就看不到单个患者的数据。
+例如：您从一个其中包含数据集中单个患者数据的组件，在数据视图中创建了一个名为&#x200B;*高血压*&#x200B;的量度。 您使用值分段提供只是对分段值的访问权限，这样数据的用户就看不到单个患者的数据。

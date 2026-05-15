@@ -4,9 +4,13 @@ title: 项目符号
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+TQID: https://experienceleague.adobe.com/6fMQ0qYVbortRLhHTIZUb--mVQa3cdNrIQPAqYs2714
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: 297
 ht-degree: 82%
 
 ---
@@ -33,7 +37,7 @@ ht-degree: 82%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中的“项目符号”可视化图表。_<br/>_对于本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版本，请参阅[项目符号](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的“项目符号”可视化图表。_<br/>_对于本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版本，请参阅[项目符号](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph)。_
 
 >[!ENDSHADEBOX]
 
@@ -45,7 +49,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [项目符号图形可视化图表](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bullet-graph-visualizations){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [项目符号图形可视化图表](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bullet-graph-visualizations){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -56,7 +60,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 | 设置 | 描述 |
 |---|---|
-| **[!UICONTROL 项目符号选项]** | 在[!UICONTROL 项目符号]可视化图表中指定&#x200B;**[!UICONTROL 高目标]**、**[!UICONTROL 中目标]**&#x200B;和&#x200B;**[!UICONTROL 低目标]**&#x200B;的值。 <br/>**[!UICONTROL 高目标&#x200B;]**&#x200B;是您的主要目标。**[!UICONTROL &#x200B;低目标&#x200B;]**&#x200B;和&#x200B;**[!UICONTROL &#x200B;中目标&#x200B;]**&#x200B;创建的是低于高目标的范围。 注意：选中&#x200B;**[!UICONTROL &#x200B;百分比&#x200B;]**&#x200B;选项时，请以整数形式输入目标。 例如：如果您的目标是百分之二十，则输入 `20`。 |
+| **[!UICONTROL 项目符号选项]** | 在[!UICONTROL 项目符号]可视化图表中指定&#x200B;**[!UICONTROL 高目标]**、**[!UICONTROL 中目标]**&#x200B;和&#x200B;**[!UICONTROL 低目标]**&#x200B;的值。 <br/>**[!UICONTROL 高目标&#x200B;]**是您的主要目标。**[!UICONTROL &#x200B;低目标&#x200B;]**和**[!UICONTROL &#x200B;中目标&#x200B;]**创建的是低于高目标的范围。 注意：选中**[!UICONTROL &#x200B;百分比&#x200B;]**选项时，请以整数形式输入目标。 例如：如果您的目标是百分之二十，则输入 `20`。 |
 
 >[!MORELIKETHIS]
 >

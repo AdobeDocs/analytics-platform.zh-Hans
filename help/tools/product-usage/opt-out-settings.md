@@ -2,9 +2,13 @@
 title: 产品使用情况选择退出设置
 description: 管理组织内个体用户的选择退出设置。
 exl-id: 0ea24582-bab8-4a76-ac00-7c265423e8bb
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+TQID: https://experienceleague.adobe.com/Z0CR6bB6k0-bR3q2OPs11FcHHDy948UuYIqbX-kwdcg
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: 240
 ht-degree: 85%
 
 ---

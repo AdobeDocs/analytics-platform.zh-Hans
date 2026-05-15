@@ -5,10 +5,15 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+TQID: https://experienceleague.adobe.com/jNezzaav7-Ee6aELr9ZtEB-y55kobChii-6NpCDL8sg
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 6%
+source-wordcount: 726
+ht-degree: 16%
 
 ---
 
@@ -22,7 +27,7 @@ ht-degree: 6%
 
 当两个用户使用同一设备且都进行了经过身份验证的购买时，示例事件数据可能如下所示：
 
-| 事件 | 时间戳 | 页面名称 | 设备ID | 电子邮件 |
+| 事件 | 时间戳 | 页面名称 | 设备 ID | 电子邮件 |
 |--:|---|---|---|---|
 | 1 | 2023-05-12 12:01 | 主页 | `1234` | |
 | 2 | 2023-05-12 12:02 | 产品页面 | `1234` | |
@@ -49,11 +54,11 @@ The order success (purchase) events assign the data accurately to the correct em
 
 ### 最后验证归因
 
-上次身份验证将共享设备中的所有未知活动归因于上次进行身份验证的用户。 Experience Platform Identity服务基于上次身份验证归因构建图形，因此用于基于图形的拼合。 有关详细信息，请参阅[标识图链接规则](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details)。
+上次身份验证将共享设备中的所有未知活动归因于上次进行身份验证的用户。 Experience Platform Identity服务基于上次身份验证归因构建图形，因此用于基于图形的拼合。 有关详细信息，请参阅[标识图链接规则](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details)。
 
 在拼接中使用最后验证归因时，拼接ID会解析，如下表所示。
 
-| 时间戳 | 页面名称 | 设备ID | 电子邮件 | 拼接 ID |
+| 时间戳 | 页面名称 | 设备 ID | 电子邮件 | 拼接 ID |
 |---|---|---|---|---|
 | 2023-05-12 12:01 | 主页 | `1234` | | `cassidy@a.com` |
 | 2023-05-12 12:02 | 产品页面 | `1234` | | `cassidy@a.com` |
@@ -69,7 +74,7 @@ The order success (purchase) events assign the data accurately to the correct em
 
 在拼合中使用设备拆分归因时，拼合ID会解析，如下表所示。
 
-| 时间戳 | 页面名称 | 设备ID | 电子邮件 | 拼接 ID |
+| 时间戳 | 页面名称 | 设备 ID | 电子邮件 | 拼接 ID |
 |---|---|---|---|---|
 | 2023-05-12 12:01 | 主页 | `1234` | | `ryan@a.com` |
 | 2023-05-12 12:02 | 产品页面 | `1234` | | `ryan@a.com` |

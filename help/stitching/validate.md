@@ -5,10 +5,16 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+TQID: https://experienceleague.adobe.com/Ognl-DJP3hlQmBPGQE5J4c2fw6jjBsO-g-NjSenmafQ
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1727'
-ht-degree: 0%
+source-wordcount: 1757
+ht-degree: 1%
 
 ---
 
@@ -33,7 +39,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [拼接启用和验证](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/visitor-id/stitching-enablement-and-validation){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[拼接启用和验证](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/visitor-id/stitching-enablement-and-validation){target="_blank"}。
 
 >[!ENDSHADEBOX]
 
@@ -72,7 +78,7 @@ ht-degree: 0%
 
 ![拼合概述自由格式表 — 电子邮件集](/help/stitching/assets/workspace-emailset.png)
 
-要查看在拼合过程后设置了电子邮件地址的事件，请定义计算量度`Email stitched namespace`。 该计算量度会查看&#x200B;**[!UICONTROL 具有等于经过哈希处理的电子邮件命名空间]**&#x200B;的&#x200B;**[!UICONTROL 身份命名空间]**&#x200B;的事件`email_lc_sha256`。
+要查看在拼合过程后设置了电子邮件地址的事件，请定义计算量度`Email stitched namespace`。 该计算量度会查看&#x200B;**[!UICONTROL 具有等于经过哈希处理的电子邮件命名空间`email_lc_sha256`的**[!UICONTROL &#x200B;身份命名空间&#x200B;]**的事件]**。
 
 ![拼接概述 — 电子邮件拼接的命名空间计算量度](/help/stitching/assets/cm-email-stitched-namespace.png)
 
@@ -111,7 +117,7 @@ ht-degree: 0%
 * 使用`stitchedID.namespace.code`定义&#x200B;**[!UICONTROL 拼接的命名空间]**&#x200B;维度。 此维度包含行被提升为的标识的命名空间，例如`Email`或`Phone`。 或拼接过程回退到的命名空间，如`ECID`。
   ![拼接的命名空间维度](/help/stitching/assets/stitchednamespace-dimension.png)
 
-* 使用`stitchedID.id`定义&#x200B;**[!UICONTROL 拼接ID值]**&#x200B;维度。 此维度包含标识的原始值。 例如：经过哈希处理的电子邮件、经过哈希处理的手机、ECID。 此值与&#x200B;**[!UICONTROL 拼接的命名空间]**&#x200B;一起使用。
+* 使用`stitchedID.id`定义&#x200B;**[!UICONTROL 拼接ID值]**&#x200B;维度。 此维度包含标识的原始值。 例如：经过哈希处理的电子邮件、经过哈希处理的手机、ECID。 此值与&#x200B;**[!UICONTROL 拼接的命名空间]**一起使用。
   ![拼接ID维度](/help/stitching/assets/stitchedid-dimension.png)
 
 
@@ -119,10 +125,10 @@ ht-degree: 0%
 
 1. 使用包含拼接数据集中的人员ID的字段配置指标，以定义是否设置了人员ID。 即使您使用基于图形的拼合，也可添加此人员ID，因为人员ID有助于建立基线。 如果人员ID未包含在数据集中，则您的基线为0%。
 
-   在下面的示例中，`personalEmail.address`用作标识，用于创建&#x200B;**[!UICONTROL _Email集]**&#x200B;量度。
+   在下面的示例中，`personalEmail.address`用作标识，用于创建&#x200B;**[!UICONTROL _Email集]**量度。
    ![电子邮件集指标](/help/stitching/assets/emailset-metric.png)
 
-1. 使用`stitchedID.namespace.code`字段创建&#x200B;**[!UICONTROL 电子邮件拼接命名空间]**&#x200B;量度。 请确保在组件设置[中指定](/help/data-views/component-settings/include-exclude-values.md)包括排除值，以便只考虑尝试将数据行提升到的命名空间的值。
+1. 使用`stitchedID.namespace.code`字段创建&#x200B;**[!UICONTROL 电子邮件拼接命名空间]**&#x200B;量度。 请确保在组件设置](/help/data-views/component-settings/include-exclude-values.md)中指定[包括排除值，以便只考虑尝试将数据行提升到的命名空间的值。
    1. 选择&#x200B;**[!UICONTROL 设置包括/排除值]**。
    1. 选择&#x200B;**[!UICONTROL 如果满足所有条件]**&#x200B;作为&#x200B;**[!UICONTROL 匹配]**。
    1. 将&#x200B;**[!UICONTROL Equals]** `email`指定为&#x200B;**[!UICONTROL 标准]**&#x200B;以选择已提升到电子邮件命名空间的事件。
@@ -160,13 +166,13 @@ ht-degree: 0%
 
 您想要测量拼合前后的标识识别性能。 为此，请另外创建三个计算指标：
 
-1. 一个&#x200B;**[!UICONTROL 拼接身份验证率]**&#x200B;计算量度，用于计算在事件总数中，拼接命名空间设置为所需身份的事件数。 在设置数据视图时，您创建了一个&#x200B;**[!UICONTROL 电子邮件拼接的命名空间]**&#x200B;量度，该量度包括一个只有在事件的命名空间设置为电子邮件时才计数的过滤器。 计算量度使用此&#x200B;**[!UICONTROL 电子邮件拼接的命名空间]**&#x200B;量度来指示具有所需标识的数据的百分比。
+1. 一个&#x200B;**[!UICONTROL 拼接身份验证率]**&#x200B;计算量度，用于计算在事件总数中，拼接命名空间设置为所需身份的事件数。 在设置数据视图时，您创建了一个&#x200B;**[!UICONTROL 电子邮件拼接的命名空间]**&#x200B;量度，该量度包括一个只有在事件的命名空间设置为电子邮件时才计数的过滤器。 计算量度使用此&#x200B;**[!UICONTROL 电子邮件拼接的命名空间]**量度来指示具有所需标识的数据的百分比。
    ![拼接身份验证率计算量度](/help/stitching/assets/calcmetric-stitchedauthenticationrate.png)
 
-1. 一个&#x200B;**[!UICONTROL 百分比增加]**&#x200B;计算量度，用于计算当前标识率与拼接标识率之间的原始百分比变化。
+1. 一个&#x200B;**[!UICONTROL 百分比增加]**计算量度，用于计算当前标识率与拼接标识率之间的原始百分比变化。
    ![百分比增加计算量度](/help/stitching/assets/calcmetric-percentincrease.png)
 
-1. 一个&#x200B;**[!UICONTROL 提升]**&#x200B;计算量度，用于计算当前标识率与拼接标识率之间的提升。
+1. 一个&#x200B;**[!UICONTROL 提升]**计算量度，用于计算当前标识率与拼接标识率之间的提升。
    ![提升计算量度](/help/stitching/assets/calcmetric-lift.png)
 
 

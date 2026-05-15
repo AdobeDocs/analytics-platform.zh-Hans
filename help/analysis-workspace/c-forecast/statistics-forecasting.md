@@ -4,9 +4,14 @@ title: 统计技术
 feature: Visualizations
 role: User
 exl-id: f042a6dd-6af5-4bdd-afc9-07546d8ded6e
-source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
+TQID: https://experienceleague.adobe.com/hbfehTAPC7nw96Wdm47bdX-D5c4cfTCeCtlHlINBBxI
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: d13dba12-733d-4914-8d92-d643658bbe5d
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: 552
 ht-degree: 4%
 
 ---
@@ -24,7 +29,7 @@ ht-degree: 4%
 * 马丁·路德·金日
 * 总统日
 * 阵亡将士
-* 7 月 4 日
+* 4 年 7 月
 * 感恩节
 * 黑色星期五
 * 网购星期一
@@ -54,6 +59,6 @@ ht-degree: 4%
 
 ## 引用
 
-1. Taylor、Sean J.和Benjamin Letham： *大规模预测。*&#x200B;美国统计师72.1 (2018)： 37-45。
-1. 特里贝、奥斯卡等： *Neuralprophet：可大规模解释的预测。* arXiv预打印arXiv:2111.15397(2021)。
-1. Zhang和Arbor： *时间序列异常检测。*&#x200B;美国专利申请#18/057883。
+1. Taylor、Sean J.和Benjamin Letham： *按比例预测。* 美国统计师72.1 (2018)：37-45。
+1. Triebe、Oskar等： *Neuralprophet：可大规模解释的预测。* arXiv预打印arXiv:2111.15397(2021)。
+1. Zhang和Arbor： *时间序列异常检测。* 美国专利申请#18/057883。

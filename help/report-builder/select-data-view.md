@@ -6,9 +6,14 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: bf765144-34f8-465b-b06d-53e4ca91014a
-source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
+TQID: https://experienceleague.adobe.com/auDJxQ6x6fqNVbDuN9reSffP9iUISZ7QgEflGWApc8A
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: f2ef16dc-055a-4bb7-baa5-7039653f3966
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: 383
 ht-degree: 1%
 
 ---
@@ -26,11 +31,11 @@ ht-degree: 1%
 * 结构相似或相同的多个数据视图。
 * 包含自定义组件和布局的复杂数据块格式。
 
-要从单元格中选择数据视图，请先构建一个数据块，并将多个数据视图分配给数据块外部的单元格。 然后，使用单元格&#x200B;**[!UICONTROL 中的]**&#x200B;数据视图面板从不同的数据视图刷新数据块。
+要从单元格中选择数据视图，请先构建一个数据块，并将多个数据视图分配给数据块外部的单元格。 然后，使用单元格&#x200B;]**中的**[!UICONTROL &#x200B;数据视图面板从不同的数据视图刷新数据块。
 
 1. 创建数据块。 有关创建数据块的信息，请参阅[创建数据块](/help/report-builder/create-a-data-block.md)。
 
-1. 在![数据视图](/help/assets/icons/DataViewSelector.svg)中选择&#x200B;**[!UICONTROL 数据视图选择器]**。
+1. 在&#x200B;**[!UICONTROL 数据视图]**&#x200B;中选择![数据视图选择器](/help/assets/icons/DataViewSelector.svg)。
 
 1. 使用数据块外部的![DataBlockSelector](/help/assets/icons/DataBlockSelector.svg)选择单元格。
 
@@ -54,4 +59,4 @@ ht-degree: 1%
    ![从单元格更改数据视图](assets/change-data-view-from-cell.png){zoomable="yes"}
 1. 可选，选择&#x200B;**[!UICONTROL 更改时刷新数据块]**。
 
-1. 选择&#x200B;**[!UICONTROL 应用]**。Report Builder会根据选定的数据视图刷新数据块。
+1. 选择&#x200B;**[!UICONTROL 应用]**。 Report Builder会根据选定的数据视图刷新数据块。

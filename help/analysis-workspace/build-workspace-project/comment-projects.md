@@ -4,9 +4,15 @@ title: 在项目中添加和管理注释
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: 518bebc18611136873fce5c23dd7041afafe1220
+TQID: https://experienceleague.adobe.com/DWntPKJ6AU2MKBWWVc3MxWYFYXUPlmoMbk8pAdrKYg4
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: a8b1c240-f315-46e3-b813-f545c4279dd1
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: 1900
 ht-degree: 1%
 
 ---
@@ -49,7 +55,7 @@ Analysis Workspace中的评论允许您在Analysis Workspace项目的上下文�
 
 ### 在项目中查看评论徽章
 
-在项目[的特定区域上作出](#comment-on-a-specific-area-of-the-project)的评论具有在评论所属的项目区域上显示的&#x200B;**评论徽章** ![评论徽章](assets/comment-indicator.svg)。 选择徽章以查看评论。 选择徽章后，您可以选择注释本身以在右边栏的注释区域中突出显示注释。
+在项目](#comment-on-a-specific-area-of-the-project)的特定区域上作出[的评论具有在评论所属的项目区域上显示的&#x200B;**评论徽章** ![评论徽章](assets/comment-indicator.svg)。 选择徽章以查看评论。 选择徽章后，您可以选择注释本身以在右边栏的注释区域中突出显示注释。
 
 编号显示在项目中的每个徽章上，并且按照其创建顺序排序。 如果在项目的同一区域中有多个评论，则该徽章显示3个点![评论徽章多个](assets/comment-indicator-multiple.svg)。 选择3点徽章以显示该区域中的所有注释。
 
@@ -149,9 +155,9 @@ Analysis Workspace中的评论功能使与他人协作更加容易。
 
 ## 接收有关评论的通知
 
-您提及的项目所有者和[特定用户](#include-others-in-a-comment)将根据其Adobe Experience Cloud通知设置接收通知。 默认情况下，这些用户会收到应用程序内通知，该通知显示在Customer Journey Analytics中的[Experience Cloud通知](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/account-preferences#view-notifications)图标![Experience Cloud通知图标](assets/experience-cloud-notification.svg)中。
+您提及的项目所有者和[特定用户](#include-others-in-a-comment)将根据其Adobe Experience Cloud通知设置接收通知。 默认情况下，这些用户会收到应用程序内通知，该通知显示在Customer Journey Analytics中的[Experience Cloud通知](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications)图标![Experience Cloud通知图标](assets/experience-cloud-notification.svg)中。
 
-此外，用户还可以通过[订阅电子邮件通知](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications)和[订阅Experience Cloud通知](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/account-preferences#slack)，将其Slack通知设置配置为接收电子邮件通知和Slack通知。
+此外，用户还可以通过[订阅电子邮件通知](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications)和[订阅Experience Cloud通知](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack)，将其Slack通知设置配置为接收电子邮件通知和Slack通知。
 
 ## 为现有评论放置徽章
 

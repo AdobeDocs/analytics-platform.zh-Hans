@@ -6,13 +6,16 @@ feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: a18b628f02889911c7663c32f31ef3c3bec3cf2e
+TQID: https://experienceleague.adobe.com/SAoyiEbKE1Niv3uwBMNB-M3F7WcdBQ-Guzs2mkRKHLE
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 33%
+source-wordcount: 993
+ht-degree: 34%
 
 ---
-
 
 # 过滤器维度
 
@@ -22,7 +25,7 @@ ht-degree: 33%
 
 1. 在数据块中选择单元格。
 
-1. 在![命令](/help/assets/icons/Edit.svg)面板中选择&#x200B;**[!UICONTROL 编辑]** **[!UICONTROL 编辑数据块]**。
+1. 在&#x200B;**[!UICONTROL 命令]**&#x200B;面板中选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据块]**。
 
 1. 选择&#x200B;**[!UICONTROL 下一步]**&#x200B;以显示&#x200B;**[!UICONTROL 维度]**&#x200B;选项卡。
 
@@ -42,7 +45,7 @@ ht-degree: 33%
 
 1. Report Builder 显示通知以确认添加了过滤器。
 
-要显示应用的过滤器，请将光标悬停在维度上。应用了筛选器的维度在维度名称旁显示![筛选器](/help/assets/icons/Filter.svg)筛选器图标。
+要显示应用的过滤器，请将光标悬停在维度上。 应用了筛选器的维度在维度名称旁显示![筛选器](/help/assets/icons/Filter.svg)筛选器图标。
 
 ## 更改过滤器和排序顺序
 
@@ -75,7 +78,7 @@ ht-degree: 33%
 
 #### “页面”和“行”选项
 
-使用&#x200B;**[!UICONTROL 页面]**&#x200B;和&#x200B;**[!UICONTROL 行]**&#x200B;字段将数据划分为顺序组或页面。通过此功能，您可以将排名的行值而不是最高的值提取到报表中。 并且对于提取超过50,000行限制的数据特别有用。
+使用&#x200B;**[!UICONTROL 页面]**&#x200B;和&#x200B;**[!UICONTROL 行]**&#x200B;字段将数据划分为顺序组或页面。 通过此功能，您可以将排名的行值而不是最高的值提取到报表中。 并且对于提取超过50,000行限制的数据特别有用。
 
 页面的默认值为`1`，行的默认值为`10`。 这些默认值表示每页有10行数据。 页面 1 返回前 10 项，页面 2 返回接下来的 10 项，以此类推。
 
@@ -99,7 +102,7 @@ ht-degree: 33%
 
 #### 包括“无值”
 
-在Customer Journey Analytics中，某些维度收集&#x200B;*没有值*&#x200B;条目。 **[!UICONTROL 包括“无值”]**&#x200B;设置允许您从报表中排除这些值。 例如，您可以创建分类，例如基于产品 SKU 键的产品名称分类。如果特定产品SKU未设置其特定产品名称分类，则其产品名称值设置为&#x200B;*无值*。
+在Customer Journey Analytics中，某些维度收集&#x200B;*没有值*&#x200B;条目。 **[!UICONTROL 包括“无值”]**&#x200B;设置允许您从报表中排除这些值。 例如，您可以创建分类，例如基于产品 SKU 键的产品名称分类。 如果特定产品SKU未设置其特定产品名称分类，则其产品名称值设置为&#x200B;*无值*。
 
 默认情况下选中&#x200B;**[!UICONTROL 包括“无值”]**。 取消选择此选项可排除无值的条目。
 
@@ -123,7 +126,7 @@ ht-degree: 33%
 
 ### **[!UICONTROL 特定]**
 
-**[!UICONTROL 特定]**&#x200B;选项允许您为每个维度创建固定的维度项列表。 使用&#x200B;**[!UICONTROL 特定]**&#x200B;筛选类型指定要包括在过滤器中的确切维度项。可从列表或从单元格范围中选择项。
+**[!UICONTROL 特定]**&#x200B;选项允许您为每个维度创建固定的维度项列表。 使用&#x200B;**[!UICONTROL 特定]**&#x200B;筛选类型指定要包括在过滤器中的确切维度项。 可从列表或从单元格范围中选择项。
 
 ![特定选项和选定项。](./assets/image32.png){zoomable="yes"}
 

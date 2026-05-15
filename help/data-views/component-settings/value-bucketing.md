@@ -5,9 +5,14 @@ exl-id: 52f9abf6-69f1-47d0-86ab-57123bc178d5
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+TQID: https://experienceleague.adobe.com/f4TS6sPRADB5p87bfau5EOarUwBbxynLJJDpKiOLrGA
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: 209
 ht-degree: 100%
 
 ---
@@ -36,7 +41,7 @@ ht-degree: 100%
 | --- | --- |
 | [!UICONTROL 将值分段] | 一个使您可启用分段的复选框。 |
 | [!UICONTROL 小于] | 第一个维度分段的上限。 |
-| [!UICONTROL 包括]&#x200B;[!UICONTROL 并小于] | 后续分段的边界。 |
+| [!UICONTROL 包括][!UICONTROL 并小于] | 后续分段的边界。 |
 | [!UICONTROL 大于或等于] | 最后一个维度分段的下限。 |
 | [!UICONTROL 添加分段] | 使您可将另一分段添加到数值维度分段。 在一个维度中可添加最多 20 个分段。 |
 

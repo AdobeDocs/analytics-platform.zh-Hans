@@ -4,9 +4,14 @@ title: 已知限制
 feature: Workspace Basics
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 role: User
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+TQID: https://experienceleague.adobe.com/rbguvYCSFfbmMVr5IBC1M9OD0wDIG0Z4p28Z2dOerBc
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: a8b1c240-f315-46e3-b813-f545c4279dd1id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: 309
 ht-degree: 100%
 
 ---
@@ -18,7 +23,7 @@ ht-degree: 100%
 ## 表格
 
 * 将日期范围或量度用作表的行时，无法添加日期比较列。
-* 当区段用作表的行时，将禁用通过所选内容创建量度。此外，通过所选内容创建量度不应应用于日期对齐列。
+* 当区段用作表的行时，将禁用通过所选内容创建量度。 此外，通过所选内容创建量度不应应用于日期对齐列。
 * 划分行的条件格式不能使用自定义范围。
 * 当应用通过汇总行值设置来计算总数时（通常与静态行项目一起使用），表总行数不能趋势化。
 
@@ -31,13 +36,13 @@ ht-degree: 100%
 ## 区段
 
 * 某些量度和维度不可分段，如[!UICONTROL 事件]、[!UICONTROL 人员]等。
-* 在[面板放置区](/help/analysis-workspace/c-panels/panels.md)中创建的临时区段是一种快速区段。它们不出现在 Workspace 的左侧面板或区段管理器中，除非它们被公开。有关更多信息，请参阅[快速区段](/help/components/segments/seg-quick.md)。
+* 在[面板放置区](/help/analysis-workspace/c-panels/panels.md)中创建的临时区段是一种快速区段。 它们不出现在 Workspace 的左侧面板或区段管理器中，除非它们被公开。 有关更多信息，请参阅[快速区段](/help/components/segments/seg-quick.md)。
 
 ## 计算量度
 
-* 计算量度不能用于某些可视化图表。请参阅[可视化图表](#visualizations)。
+* 计算量度不能用于某些可视化图表。 请参阅[可视化图表](#visualizations)。
 * 计算量度无法在[!UICONTROL 归因]面板中使用，因为计算量度本身可以包括单独的归因模型。
-* 如果从 Workspace 创建计算量度（而不是从[!UICONTROL 组件 > 区段]创建），则某些组件和操作符不可用。例如，[!UICONTROL IP 地址]。
+* 如果从 Workspace 创建计算量度（而不是从[!UICONTROL 组件 > 区段]创建），则某些组件和操作符不可用。 例如，[!UICONTROL IP 地址]。
 
 ## 日期范围
 
@@ -46,5 +51,5 @@ ht-degree: 100%
 
 ## 报告设置
 
-* [!UICONTROL 报告设置]页面上的某些设置不适用。Analysis Workspace 只使用底部的[!UICONTROL 语言/货币/编码]设置：[!UICONTROL 千位分隔符]、[!UICONTROL 计划报告编码]和 [!UICONTROL CSV 分隔符]。
+* [!UICONTROL 报告设置]页面上的某些设置不适用。 Analysis Workspace 只使用底部的[!UICONTROL 语言/货币/编码]设置：[!UICONTROL 千位分隔符]、[!UICONTROL 计划报告编码]和 [!UICONTROL CSV 分隔符]。
 

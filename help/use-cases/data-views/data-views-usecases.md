@@ -5,10 +5,16 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0e9dc47b80db142801a94dcbf31470d99a610949
+TQID: https://experienceleague.adobe.com/qEgO-lqYk8ipVP99IBazrKAb7Jer-AN96-PY-f1KdPQ
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 28%
+source-wordcount: 1443
+ht-degree: 24%
 
 ---
 
@@ -34,12 +40,12 @@ ht-degree: 28%
 
 
 
-1. 在&#x200B;**[!UICONTROL 组件]**&#x200B;选项卡上，将&#x200B;**[!UICONTROL 页面标题]**&#x200B;拖到&#x200B;**[!UICONTROL 包含的组件]**&#x200B;下的[!UICONTROL 量度]部分。
-1. 突出显示您刚才拖入的量度，并在上的`Orders`组件设置&#x200B;**[!UICONTROL 中将其重命名为]**
+1. 在&#x200B;**[!UICONTROL 组件]**&#x200B;选项卡上，将&#x200B;**[!UICONTROL 页面标题]**&#x200B;拖到[!UICONTROL 包含的组件]下的&#x200B;**[!UICONTROL 量度]**&#x200B;部分。
+1. 突出显示您刚才拖入的量度，并在上的&#x200B;**[!UICONTROL 组件设置]**&#x200B;中将其重命名为`Orders`
 1. 打开&#x200B;**[!UICONTROL 包括/排除值]**&#x200B;部分，并指定以下内容：
    1. 启用&#x200B;**[!UICONTROL 设置包括排除值]**。
    1. 从&#x200B;**[!UICONTROL 匹配]**&#x200B;中选择&#x200B;**[!UICONTROL 如果满足所有条件]**。
-   1. 指定`confirmation`。 **[!UICONTROL page_title]**&#x200B;的文本指示此页面与下订单相关。 在查看满足这些条件的所有页面标题后，将为每个实例计算`1`。 结果是一个新量度（而非计算量度）。具有已添加/排除值的量度可用于可使用任何其他量度的任何位置。 这些量度可与归因、区段配合使用，以及用在可使用标准量度的任何其他位置。
+   1. 指定`confirmation`。 **[!UICONTROL page_title]**&#x200B;的文本指示此页面与下订单相关。 在查看满足这些条件的所有页面标题后，将为每个实例计算`1`。 结果是一个新量度（而不是计算量度）。 具有已添加/排除值的量度可用在可使用任何其他量度的任意位置。 这些量度可与归因、区段配合使用，以及用在可使用标准量度的任何其他位置。
 
    ![Dimension到指标](../assets/string-to-metric.gif){width=100%}
 1. 您可以进一步为此量度指定归因模型，例如[!UICONTROL 回顾时间范围]为[!UICONTROL 会话]的[!UICONTROL 最近联系]。
@@ -49,12 +55,12 @@ ht-degree: 28%
 
 ## 使用整数作为维度 {#integers}
 
-以前，整数会被自动视为Customer Journey Analytics中的量度。 现在，数字（包括 Adobe Analytics 中的自定义事件）可被视为维度。示例如下：
+以前，整数会被自动视为Customer Journey Analytics中的量度。 现在，数字（包括 Adobe Analytics 中的自定义事件）可被视为维度。 示例如下：
 
 
 
-1. 将&#x200B;**[!UICONTROL 持续时间]**&#x200B;整数拖入&#x200B;**[!UICONTROL 包含的组件]**&#x200B;下的[!UICONTROL 维度]节：
-1. 您现在可以添加&#x200B;**[!UICONTROL 值分段]**&#x200B;以分段方式在报告中表示此维度。如果不进行分段，此维度的每个实例都会显示为Workspace报表中的行项目。
+1. 将&#x200B;**[!UICONTROL 持续时间]**&#x200B;整数拖入[!UICONTROL 包含的组件]下的&#x200B;**[!UICONTROL 维度]**&#x200B;节：
+1. 您现在可以添加&#x200B;**[!UICONTROL 值分段]**以分段方式在报告中表示此维度。 如果不进行分段，此维度的每个实例都会显示为Workspace报表中的行项目。
    ![整数到维度](../assets/integer-to-dimension.gif){width=100%}
 
 
@@ -62,25 +68,25 @@ ht-degree: 28%
 
 您可以使用数值维度将量度纳入[!UICONTROL 流量]可视化图表。
 
-1. 在数据视图[组件](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/create-dataview)选项卡上，将[!UICONTROL 营销渠道]架构字段拖动到[!UICONTROL [!UICONTROL 已包含组件]下的量度]区域。
+1. 在数据视图[组件](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)选项卡上，将[!UICONTROL 营销渠道]架构字段拖动到[!UICONTROL [!UICONTROL 已包含组件]下的量度]区域。
 2. 在工作区报表中，此流程显示[!UICONTROL 营销渠道]流入[!UICONTROL 订单]:
 
 ![营销渠道从电子邮件流向退出/订单。](../assets/flow.png)
 
 ## 执行子事件筛选 {#sub-event}
 
-具体来说，此功能适用于基于数组的字段。包含/排除功能允许您在子事件级别进行筛选，而内置在区段生成器中的区段仅允许您在事件级别进行分段。 您可以使用数据视图中的包含/排除进行子事件筛选，然后在事件级别的区段中引用这一新的量度/维度。
+具体来说，此功能适用于基于数组的字段。 包含/排除功能允许您在子事件级别进行筛选，而内置在区段生成器中的区段仅允许您在事件级别进行分段。 您可以使用数据视图中的包含/排除进行子事件筛选，然后在事件级别的区段中引用这一新的量度/维度。
 
 例如，使用数据视图中的包含/排除功能，仅重点关注产生的销售额超过$50的产品。 因此，如果您的订单包括$50的产品购买和$25的产品购买，则包含/排除功能会删除$25的产品购买，而不是整个订单。
 
-1. 在数据视图[组件](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/create-dataview)选项卡上，将&#x200B;**[!UICONTROL 收入]**&#x200B;架构字段拖动到&#x200B;**[!UICONTROL 量度]**&#x200B;区域中[!UICONTROL 已包含的组件]下。
+1. 在数据视图[组件](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)选项卡上，将&#x200B;**[!UICONTROL 收入]**&#x200B;架构字段拖动到&#x200B;**[!UICONTROL 量度]**&#x200B;区域中[!UICONTROL 已包含的组件]下。
 1. 选择量度并在右侧配置以下内容：
-a.在&#x200B;**[!UICONTROL Format]**&#x200B;下，选择&#x200B;**[!UICONTROL Currency]**。
-b.在&#x200B;**[!UICONTROL 货币]**&#x200B;下，选择&#x200B;**[!UICONTROL USD]**。
-c.在&#x200B;**[!UICONTROL Include/Exclude Values]**&#x200B;下，选中&#x200B;**[!UICONTROL Set include/exclude values]**&#x200B;旁边的复选框。
-d.在&#x200B;**[!UICONTROL Match]**&#x200B;下，选择&#x200B;**[!UICONTROL 如果满足所有条件]**。
-e.在&#x200B;**[!UICONTROL 标准]**&#x200B;下，选择&#x200B;**[!UICONTROL 大于或等于]**。
-f.指定`50`作为值。
+a. 在**[!UICONTROL 格式]**&#x200B;下，选择&#x200B;**[!UICONTROL 货币]**。
+b. 在**[!UICONTROL 货币]**&#x200B;下，选择&#x200B;**[!UICONTROL USD]**。
+c. 在**[!UICONTROL 包含/排除值]**&#x200B;下，选中&#x200B;**[!UICONTROL 设置包含/排除值]**旁边的复选框。
+d. 在**[!UICONTROL 匹配]**&#x200B;下，选择&#x200B;**[!UICONTROL 如果满足所有条件]**。
+e. 在**[!UICONTROL 标准]**&#x200B;下，选择&#x200B;**[!UICONTROL 大于或等于]**。
+f. 指定`50`作为值。
 
 这些新设置允许您仅查看高价值收入，筛选掉任何低于 50 美元的收入。
 
@@ -108,15 +114,15 @@ f.指定`50`作为值。
 
 * 您的订单中有多大百分比来自新会话或回归会话？
 
-* 对于给定的营销渠道或特定的营销活动，您是面向首次访问的用户还是回归用户？此选择如何影响转化率？
+* 对于给定的营销渠道或特定的营销活动，您是面向首次访问的用户还是回归用户？ 此选择如何影响转化率？
 
 有一个维度和两个指标可简化此报表：
 
-* [会话类型](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-reference) — 此维度有两个值：[!UICONTROL New]和[!UICONTROL Returning]。 [!UICONTROL New]行项目包括已确定为个人的首次会话的所有行为（即针对该维度的量度）。 其他所有内容都包含在[!UICONTROL 返回]的行项目中（假设所有内容都属于一个会话）。如果量度不是任何会话的一部分，则它们属于该维度的“不适用”范围。 
+* [会话类型](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) — 此维度有两个值：[!UICONTROL New]和[!UICONTROL Returning]。 [!UICONTROL New]行项目包括已确定为个人的首次会话的所有行为（即针对该维度的量度）。 其他所有内容都包含在[!UICONTROL 返回]的行项目中（假设所有内容都属于一个会话）。 如果量度不是任何会话的一部分，则它们属于该维度的“不适用”范围。
 
-* [首次会话](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-reference)。 首次会话量度被定义为个人在报告窗口内定义的首次会话。
+* [首次会话](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference)。 首次会话量度被定义为个人在报告窗口内定义的首次会话。
 
-* [返回会话](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-reference)返回会话量度是非个人首次会话的会话数。—>
+* [返回会话](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference)返回会话量度是非个人首次会话的会话数。—>
 
 要访问组件，请执行以下操作：
 
@@ -135,7 +141,7 @@ Adobe Experience Platform 中的架构包含[!UICONTROL 日期]和[!UICONTROL �
 
 * 对于日期格式，如果您选择&#x200B;**[!UICONTROL 天]**&#x200B;格式为&#x200B;**[!UICONTROL 月、日、年]**，则报告中的示例输出可能如下所示：2022 年 8 月 23 日。
 
-* 对于日期时间格式，如果选择格式为&#x200B;**[!UICONTROL 小时]**&#x200B;的&#x200B;**[!UICONTROL 一天中的分钟:Minute]**，则输出可能为：20:20。
+* 对于日期时间格式，如果选择格式为&#x200B;**[!UICONTROL 小时:Minute]**&#x200B;的&#x200B;**[!UICONTROL 一天中的分钟]**，则输出可能为：20:20。
 
 支持1900年1月1日之后的日期（1970年1月1日除外）和2000年1月1日之后的日期时间值00:00:00。
 

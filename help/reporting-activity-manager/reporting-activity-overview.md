@@ -5,9 +5,14 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: c3964147-06f1-462a-aea1-e681c4ef15b1
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+TQID: https://experienceleague.adobe.com/e7N-l1OmjmLOFZY0z-ZalLya7CEOsOek-MPZ3iWnkAU
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: 273
 ht-degree: 100%
 
 ---
@@ -16,7 +21,7 @@ ht-degree: 100%
 
 [!UICONTROL 报告活动管理器]可供管理员使用。
 
-如果您的组织在报告高峰期遇到报告性能下降的情况时，报告活动管理器可以让您自行诊断和修复容量问题，而无需 Adobe 客户关怀部门干预。在单个界面中即可轻松地管理报告队列，并可立即采取行动以改善您用户的体验。
+如果您的组织在报告高峰期遇到报告性能下降的情况时，报告活动管理器可以让您自行诊断和修复容量问题，而无需 Adobe 客户关怀部门干预。 在单个界面中即可轻松地管理报告队列，并可立即采取行动以改善您用户的体验。
 
 ## 优点
 
@@ -25,14 +30,14 @@ ht-degree: 100%
 * 允许您监测和管理组织中每个连接的报告容量。
 * 实时通知您当前在各个连接中的报告容量。
 * 提供关于当前已排队或正在进行的报告请求的详细报告信息。
-* 让您通过优先处理某些报告请求并取消其他报告请求以释放容量，从而优化报告队列。它回答了以下问题：此时是否有必要提交此报告，或者我是否可以取消它以便提交更紧急的报告？
-* 允许您限制特定时间段内的未来请求。您可以限制特定的请求，也可以限制来自特定用户的所有请求或与特定项目相关的请求。
+* 让您通过优先处理某些报告请求并取消其他报告请求以释放容量，从而优化报告队列。 它回答了以下问题：此时是否有必要提交此报告，或者我是否可以取消它以便提交更紧急的报告？
+* 允许您限制特定时间段内的未来请求。 您可以限制特定的请求，也可以限制来自特定用户的所有请求或与特定项目相关的请求。
 
 ## 权限
 
 <!-- update for CJA -->
 
-要管理报告活动，您必须具有“产品管理员”角色。有关更多信息，请参阅[ Customer Journey Analytics 访问控制](/help/technotes/access-control.md)。
+要管理报告活动，您必须具有“产品管理员”角色。 有关更多信息，请参阅[ Customer Journey Analytics 访问控制](/help/technotes/access-control.md)。
 
 ## 查看报告活动
 

@@ -5,9 +5,14 @@ exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+TQID: https://experienceleague.adobe.com/FGxkqIQn7EmtZIT4LFiCelgSpkRY67KnkNKlrn6gxVU
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: 348
 ht-degree: 86%
 
 ---
@@ -48,6 +53,6 @@ ht-degree: 86%
 
 >[!MORELIKETHIS]
 >
->[在Adobe Customer Journey Analytics中处理“无值”的完整行动手册](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/the-complete-playbook-for-handling-no-value-in-adobe-cja/ba-p/756696?profile.language=zh-Hans#M598)。
+>[在Adobe Customer Journey Analytics中处理“无值”的完整行动手册](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/the-complete-playbook-for-handling-no-value-in-adobe-cja/ba-p/756696#M598)。
 
 

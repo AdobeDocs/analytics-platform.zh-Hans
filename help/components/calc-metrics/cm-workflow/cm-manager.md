@@ -3,10 +3,15 @@ description: 了解如何共享、筛选、标记、批准、复制、删除计�
 title: 管理计算量度
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
+TQID: https://experienceleague.adobe.com/lyXPyn6sObLNBvD8O-bULf1dDoQO80IIOokU8Dy1Vno
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0id: f2ef16dc-055a-4bb7-baa5-7039653f3966id: fa6ac035-8403-478b-9ce1-3fe29d211fca
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 28%
+source-wordcount: 903
+ht-degree: 32%
 
 ---
 
@@ -40,7 +45,7 @@ ht-degree: 28%
 | **[!UICONTROL 标记]** | 列出此计算指标的标记。 |
 | **[!UICONTROL 共享对象]** | 列出与多少个人或组共享计算指标。 选择以打开&#x200B;**[!UICONTROL 共享计算量度]**&#x200B;对话框。 有关详细信息，请参阅[共享计算量度](cm-sharing.md)。 |
 | **[!UICONTROL 修改日期]** | 上次修改计算量度的日期和时间。 |
-| **[!UICONTROL 用在]** | 显示当前使用计算量度的位置以及在每个区域中使用计算量度的次数。 <p>例如，如果计算量度在40个项目和2个警报中使用，则此列的值显示为&#x200B;[!UICONTROL **42个组件**]。 <p>选择此列中的值可查看在其中使用计算量度的细分(例如，[!UICONTROL **项目(40)**]、[!UICONTROL **移动记分卡(2)**])。 此外，您还可以查看正在使用计算量度的项目列表。 例如，要查看正在使用它们的项目列表，请选择&#x200B;[!UICONTROL **项目（40）**]&#x200B;链接。</p><p>以下每个区域均显示该区域内正在使用的计算量度实例数：</p> <ul><li>[!UICONTROL **项目**]<p>包含[在计算量度生成器](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)中创建并且可用于所有项目的计算量度。</p></li><li>[!UICONTROL **临时组件**]<p>包含[创建为快速计算量度](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project)且仅在单个项目中可用的计算量度。</p></li><li>[!UICONTROL **计划项目**]</li><li>[!UICONTROL **移动记分卡**]</li><li>[!UICONTROL **注释**]</li><li>[!UICONTROL **Report Builder**]<p>选择此选项可下载包含以下数据列的CSV文件：</p><ul><li>Report Builder 名称</li><li>上次访问时间</li><li>上次访问的 IMS 用户 ID</li><li>上次访问的用户名称</li></ul></li></ul><p>此信息可帮助您确定组件是否对组织中的用户有用、组件的使用位置以及是否需要删除或修改它。</p><p>查看本列时请考虑以下事项：</p><ul><li>此信息仅供系统管理员使用。</li><li>默认情况下，[!UICONTROL **用于**]&#x200B;列不显示。使用 ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) 来配置此列的显示。</li><li>此信息不包括 API 或 Data Warehouse 的使用情况。</li><li>如果此列中没有给定组件的数据，但它具有&#x200B;[!UICONTROL **上次使用**]&#x200B;日期，则表示该组件可能未保存便已在分析中使用。</li><li>使用情况信息从 2023 年 9 月开始提供。</li></ul><p>可以结合[数据字典](/help/components/data-dictionary/data-dictionary-overview.md)和这些信息，帮助您跟踪并更好地了解组织中组件的使用情况。</p> |
+| **[!UICONTROL 用在]** | 显示当前使用计算量度的位置以及在每个区域中使用计算量度的次数。 <p>例如，如果计算量度在40个项目和2个警报中使用，则此列的值显示为&#x200B;[!UICONTROL **42个组件**]。 <p>选择此列中的值可查看在其中使用计算量度的细分(例如，[!UICONTROL **项目(40)**]、[!UICONTROL **移动记分卡(2)**])。 此外，您还可以查看正在使用计算量度的项目列表。 例如，要查看正在使用它们的项目列表，请选择&#x200B;[!UICONTROL **项目（40）**]&#x200B;链接。</p><p>以下每个区域均显示该区域内正在使用的计算量度实例数：</p> <ul><li>[!UICONTROL **项目**]<p>包含[在计算量度生成器](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)中创建并且可用于所有项目的计算量度。</p></li><li>[!UICONTROL **临时组件**]<p>包含[创建为快速计算量度](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project)且仅在单个项目中可用的计算量度。</p></li><li>[!UICONTROL **计划项目**]</li><li>[!UICONTROL **移动记分卡**]</li><li>[!UICONTROL **注释**]</li><li>[!UICONTROL **Report Builder**]<p>选择此选项可下载包含以下数据列的CSV文件：</p><ul><li>Report Builder 名称</li><li>上次访问时间</li><li>上次访问的 IMS 用户 ID</li><li>上次访问的用户名称</li></ul></li></ul><p>此信息可帮助您确定某个组件是否对组织中的用户有用、在何处使用该组件以及是否需要删除或修改该组件。</p><p>查看本列时请考虑以下事项：</p><ul><li>此信息仅供系统管理员使用。</li><li>默认情况下，[!UICONTROL **用于**]&#x200B;列不显示。 使用 ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) 来配置此列的显示。</li><li>此信息不包括 API 或 Data Warehouse 的使用情况。</li><li>如果此列中没有给定组件的数据，但它具有&#x200B;[!UICONTROL **上次使用**]&#x200B;日期，则表示该组件可能未保存便已在分析中使用。</li><li>使用情况信息从 2023 年 9 月开始提供。</li></ul><p>可以结合[数据字典](/help/components/data-dictionary/data-dictionary-overview.md)和这些信息，帮助您跟踪并更好地了解组织中组件的使用情况。</p> |
 | **[!UICONTROL 上次使用]** | 上次使用计算量度的时间。 |
 
 {style="table-layout:auto"}
@@ -65,7 +70,7 @@ ht-degree: 28%
 
 ### 活动过滤器栏
 
-筛选器栏➌显示从筛选器面板应用到计算量度列表（如果有）的活动筛选器。 您可以使用 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 快速移除过滤器。如果指定了多个过滤器，则可以使用&#x200B;**[!UICONTROL 全部移除]**&#x200B;来移除所有过滤器。
+筛选器栏➌显示从筛选器面板应用到计算量度列表（如果有）的活动筛选器。 您可以使用 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 快速移除过滤器。 如果指定了多个过滤器，则可以使用&#x200B;**[!UICONTROL 全部移除]**&#x200B;来移除所有过滤器。
 
 ### 过滤器面板
 

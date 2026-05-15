@@ -6,9 +6,15 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 exl-id: 1d17151b-3a12-468e-9a4f-9e5994599570
-source-git-commit: d79c6d883f436d97925e007f453879e20b4fcc04
+TQID: https://experienceleague.adobe.com/8AM-LX5GllmfDt-OpG6CAZt6qMH4DfMj9x8kgDBrD7I
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: 676
 ht-degree: 97%
 
 ---
@@ -45,7 +51,7 @@ ht-degree: 97%
 
 ## 使用 Analytics 源连接器
 
-您可以使用[&#x200B; Analytics 源连接器](/help/data-ingestion/analytics.md)来保留历史数据。 无论您选择哪种升级路径（即使您使用 Web SDK 升级），您都可以使用 Analytics 源连接器保留来自 Adobe Analytics 环境的历史数据。
+您可以使用[ Analytics 源连接器](/help/data-ingestion/analytics.md)来保留历史数据。 无论您选择哪种升级路径（即使您使用 Web SDK 升级），您都可以使用 Analytics 源连接器保留来自 Adobe Analytics 环境的历史数据。
 
 您可以使用 Analytics 源连接器将历史数据放入与当前数据分开的专用位置，从而保留历史数据。
 

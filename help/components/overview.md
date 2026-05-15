@@ -5,9 +5,15 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+TQID: https://experienceleague.adobe.com/91yF4rq5CqbAtgfY9X31FmgiCynSJFHaNF1KKsKDycg
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: df28738e-9c71-4aa8-929e-edde22340cc6id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: 972
 ht-degree: 100%
 
 ---
@@ -23,7 +29,7 @@ ht-degree: 100%
 
 您可以管理以下组件：
 
-* [区段](segments/seg-overview.md)：构建、管理、共享强大的、有针对性的受众区段，并将其应用到您的报告中。使用区段可以根据相关特征或交互识别人员的子集。
+* [区段](segments/seg-overview.md)：构建、管理、共享强大的、有针对性的受众区段，并将其应用到您的报告中。 使用区段可以根据相关特征或交互识别人员的子集。
 * [计算量度](calc-metrics/calc-metr-overview.md)：使用量度和公式作为新组件以便在报告中使用
 * [日期范围](date-ranges/create.md)：自定义和优化 Analysis Workspace 中提供的日期范围。
 * [注释](/help/components/annotations/overview.md)：向您的组织传达上下文数据的细微差别和洞察。
@@ -36,7 +42,7 @@ ht-degree: 100%
 
 ## Analysis Workspace 组件
 
-Analysis Workspace 中的组件包括量度、维度、区段和日期范围，您可以将其拖放到 Workspace 项目中的面板和可视化图表中。您创建的自定义组件会被添加到这些面板中，例如计算量度或自定义日期范围。
+Analysis Workspace 中的组件包括量度、维度、区段和日期范围，您可以将其拖放到 Workspace 项目中的面板和可视化图表中。 您创建的自定义组件会被添加到这些面板中，例如计算量度或自定义日期范围。
 
 要访问“组件”面板，请在按钮面板中选择![Curate](/help/assets/icons/Curate.svg)**[!UICONTROL 组件]**。
 
@@ -47,7 +53,7 @@ Analysis Workspace 中的组件包括量度、维度、区段和日期范围，�
 
 ## 管理组件 {#actions}
 
-您可以使用 Analysis Workspace 中的&#x200B;**[!UICONTROL 组件]**&#x200B;菜单快速创建新组件。请参阅 [Analysis Workspace 菜单](/help/analysis-workspace/home.md#menu)，以了解更多详细信息。
+您可以使用 Analysis Workspace 中的&#x200B;**[!UICONTROL 组件]**&#x200B;菜单快速创建新组件。 请参阅 [Analysis Workspace 菜单](/help/analysis-workspace/home.md#menu)，以了解更多详细信息。
 
 您可以管理组件（逐个管理或通过选择多个组件来进行管理）。
 
@@ -65,14 +71,14 @@ Analysis Workspace 中的组件包括量度、维度、区段和日期范围，�
 
    | 组件操作 | 描述 |
    |--- |--- |
-   | ![Label](/help/assets/icons/Label.svg) [!UICONTROL **标记**] | 通过将标记应用于组件来组织或管理组件。然后，您可以通过选择![Filter](/help/assets/icons/Filter.svg)或者键入 `#` 在左侧面板中按标记搜索。标记在组件管理器中也可用作过滤器。 |
-   | ![Star](/help/assets/icons/Star.svg) [!UICONTROL **收藏夹**] | 将组件添加到您的收藏夹列表中。与标记相似，您可在左侧面板中按“收藏夹”进行搜索，然后在组件管理器中对其进行过滤。 |
+   | ![Label](/help/assets/icons/Label.svg)[!UICONTROL **标记**] | 通过将标记应用于组件来组织或管理组件。 然后，您可以通过选择![Filter](/help/assets/icons/Filter.svg)或者键入 `#` 在左侧面板中按标记搜索。 标记在组件管理器中也可用作过滤器。 |
+   | ![Star](/help/assets/icons/Star.svg) [!UICONTROL **收藏夹**] | 将组件添加到您的收藏夹列表中。 与标记相似，您可在左侧面板中按“收藏夹”进行搜索，然后在组件管理器中对其进行过滤。 |
    | ![StarOutline](/help/assets/icons/StarOutline.svg) **[!UICONTROL 取消收藏]** | 将组件从您的收藏夹列表中移除。 |
-   | ![复选标记](/help/assets/icons/Checkmark.svg) [!UICONTROL **批准**] | 将组件标记为“已批准”可告知用户该组件得到了组织的批准。与标记一样，您可以在左侧面板中按“已批准”进行搜索和筛选。![Checkmark](/help/assets/icons/Checkmark.svg)标识的是已批准的组件。 |
-   | ![Share](/help/assets/icons/ShareAlt.svg) [!UICONTROL **分享**] | 将组件与组织中的用户共享。此选项仅对自定义组件可用，例如区段或计算量度。 |
-   | ![Delete](/help/assets/icons/Delete.svg) [!UICONTROL **删除**] | 删除不再需要的组件。此选项仅对自定义组件可用，例如区段或计算量度。 |
+   | ![复选标记](/help/assets/icons/Checkmark.svg) [!UICONTROL **批准**] | 将组件标记为“已批准”可告知用户该组件得到了组织的批准。 与标记一样，您可以在左侧面板中按“已批准”进行搜索和筛选。 ![Checkmark](/help/assets/icons/Checkmark.svg)标识的是已批准的组件。 |
+   | ![Share](/help/assets/icons/ShareAlt.svg) [!UICONTROL **分享**] | 将组件与组织中的用户共享。 此选项仅对自定义组件可用，例如区段或计算量度。 |
+   | ![删除](/help/assets/icons/Delete.svg) [!UICONTROL **删除**] | 删除不再需要的组件。 此选项仅对自定义组件可用，例如区段或计算量度。 |
 
-自定义组件也可通过其相应的组件管理器进行管理。例如，参阅[管理区段](/help/components/segments/seg-manage.md)。
+自定义组件也可通过其相应的组件管理器进行管理。 例如，参阅[管理区段](/help/components/segments/seg-manage.md)。
 
 ## 管理组件列表
 
@@ -84,7 +90,7 @@ Analysis Workspace 中的组件包括量度、维度、区段和日期范围，�
 
 2. 在搜索字段中，开始键入要在项目中使用的组件名称。
 
-   颜色和图标标识的是组件的类型。**维度** ![Dimension icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) 是橙色的，**区段** ![Segment icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) 是蓝色的，**日期范围** ![Date range icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) 是紫色的，**量度** ![Metric icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) 是绿色的。<br/>Adobe 图标 ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) 表示计算量度模板或区段模板。计算器图标 ![Calculator icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) 表示您的组织中某位管理员创建的计算量度。
+   颜色和图标标识的是组件的类型。 **维度** ![Dimension icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) 是橙色的，**区段** ![Segment icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) 是蓝色的，**日期范围** ![Date range icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) 是紫色的，**量度** ![Metric icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) 是绿色的。<br/>Adobe 图标 ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) 表示计算量度模板或区段模板。 计算器图标 ![Calculator icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) 表示您的组织中某位管理员创建的计算量度。
 
 3. 从下拉菜单中选择组件。
 
@@ -99,12 +105,12 @@ Analysis Workspace 中的组件包括量度、维度、区段和日期范围，�
    | 图标 | 筛选选项 | 描述 |
    |---------|---|----------|
    | ![Checkmark](/help/assets/icons/Checkmark.svg) | **[!UICONTROL 已批准]** | 仅显示标记为由管理员批准的组件。 |
-   | ![Star](/help/assets/icons/Star.svg) | **[!UICONTROL 收藏夹]** | 仅显示收藏夹列表中的组件。<br/>有关将组件添加到收藏夹列表的信息，请参阅[管理组件](#manage-components)。 |
-   | ![Dimensions](/help/assets/icons/Dimensions.svg) | **[!UICONTROL 维度]** | 仅显示维度的组件。 |
-   | ![Event](/help/assets/icons/Event.svg) | **[!UICONTROL 量度]** | 仅显示量度的组件。 |
+   | ![Star](/help/assets/icons/Star.svg) | **[!UICONTROL 收藏夹]** | 仅显示收藏夹列表中的组件。 <br/>有关将组件添加到收藏夹列表的信息，请参阅[管理组件](#manage-components)。 |
+   | ![维度](/help/assets/icons/Dimensions.svg) | **[!UICONTROL 维度]** | 仅显示维度的组件。 |
+   | ![事件](/help/assets/icons/Event.svg) | **[!UICONTROL 量度]** | 仅显示量度的组件。 |
    | ![Segmentation](/help/assets/icons/Segmentation.svg) | **[!UICONTROL 区段]** | 仅显示区段的组件。 |
    | ![Calendar](/help/assets/icons/Calendar.svg) | **[!UICONTROL 日期范围]** | 仅显示日期范围的组件。 |
-   | ![Label](/help/assets/icons/Label.svg) | **[!UICONTROL *标记名称&#x200B;*]** | 仅显示具有特定选定标记的组件。Adobe 模板有一个专用标记，它是 Adobe 提供的[默认计算量度](/help/components/calc-metrics/default-calcmetrics.md)。 |
+   | ![Label](/help/assets/icons/Label.svg) | **[!UICONTROL *标记名称&#x200B;*]** | 仅显示具有特定选定标记的组件。 Adobe 模板有一个专用标记，它是 Adobe 提供的[默认计算量度](/help/components/calc-metrics/default-calcmetrics.md)。 |
 
    在筛选中选择 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 以删除该筛选。
 

@@ -5,10 +5,16 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 role: Admin
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+TQID: https://experienceleague.adobe.com/UXeVx5LF0ww0guz-62swqmGapSfjiTduYjojcZqqIYQ
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: f2ef16dc-055a-4bb7-baa5-7039653f3966
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d00e9f03-e50b-4162-b143-0c0817c937c2id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1059'
-ht-degree: 13%
+source-wordcount: 1129
+ht-degree: 14%
 
 ---
 
@@ -31,36 +37,37 @@ ht-degree: 13%
 
 要在Customer Journey Analytics中报告Marketo Engage数据，请执行以下操作：
 
-+++ 1.将Marketo源数据字段映射到其XDM目标
++++ &#x200B;1. 将Marketo源数据字段映射到其XDM目标
 
-将 [人员](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 和 [活动](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 对象映射到各自的 XDM 架构目标字段。
-
-+++
-
-+++ 2.将Marketo数据摄取到Adobe Experience Platform
-
-使用 [Marketo Engage 连接器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)将 Marketo 的数据传送到 Experience Platform，并使用与平台连接的应用程序使这些数据保持最新。
+将 [人员](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 和 [活动](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 对象映射到各自的 XDM 架构目标字段。
 
 +++
 
-+++ 3.在Customer Journey Analytics中设置与此数据集的连接
++++ &#x200B;2. 将Marketo数据摄取到Adobe Experience Platform
+
+使用 [Marketo Engage 连接器](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)将 Marketo 的数据传送到 Experience Platform，并使用与平台连接的应用程序使这些数据保持最新。
+
++++
+
++++ &#x200B;3. 在Customer Journey Analytics中设置与此数据集的连接
 
 要报告Experience Platform数据集，您必须首先在Experience Platform和Customer Journey Analytics中的数据集之间建立连接。 请参阅[创建或编辑连接](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/create-connection)。
 
 +++
 
 
-+++ 4.创建一个或多个数据视图
++++ &#x200B;4. 创建一个或多个数据视图
 
 [数据视图](/help/data-views/data-views.md) 是 Customer Journey Analytics 专属的容器，通过它，可决定如何解释来自连接的数据。 它指定所有可在 Analysis Workspace 中找到的维度和量度，在本例中，特指 Marketo 的量度和维度。 它还指定这些维度和量度从哪些列获取数据。 为准备 Analysis Workspace 中的报表而定义数据视图。
 
 +++ 
 
-+++ 5.在Analysis Workspace中报告
++++ &#x200B;5. Analysis Workspace中的报表
 
 您可以探索的一个用例是：2020年4月至6月，潜在客户访问了多少网页？
 
-1. 打开 [Analytics Workspace](/help/analysis-workspace/home.md) 并创建新项目。拥有B2B/B2P CDP的客户可以在Customer Journey Analytics中进行B2C风格分析。 B2B 对象尚不可用。
+1. 打开 [Analytics Workspace](/help/analysis-workspace/home.md) 并创建新项目。
+拥有B2B/B2P CDP的客户可以在Customer Journey Analytics中进行B2C风格分析。 B2B 对象尚不可用。
 
 1. 为网页视图创建一个[区段](/help/components/segments/seg-create.md)，如下所示：事件类型= web.webpagedetails.pageViews ：
 
@@ -89,7 +96,7 @@ Customer Journey Analytics是基于Adobe Experience Platform构建的高级跨�
 
 #### 关键功能
 
-* **数据源**：可以合并多个数据集(Web、CRM、电子邮件、呼叫中心、离线、Marketo等)以进行360°客户历程报告。
+* **数据源**：可以合并多个数据集（Web、CRM、电子邮件、呼叫中心、离线、Marketo等） 对于360°客户历程报告。
 * **自助分析**：具有高度交互性、可自定义的仪表板和可视化图表的拖放工作区。
 * **高级归因**：支持所有连接数据的复杂、多点接触和自定义归因模型，而不仅仅是营销计划。
 * **受众和路径分析**：跨购买者历程的深度分段、同类群组和路径分析。
@@ -131,7 +138,7 @@ Marketo Engage提供了着重于营销自动化KPI、项目和营销活动测量
 | 功能 | Marketo Engage | Customer Journey Analytics |
 |---|---|---|
 | **主要焦点** | 营销项目和以活动为中心的报表。 | 全面、全渠道历程以及行为分析和报告。 |
-| **数据源** | 通过Marketo Engage在中生成的数据。 | 将来自任何支持Experience Platform的数据(包括Marketo、网站、移动应用程序、线下渠道等)的数据整合在一起。 |
+| **数据源** | 通过Marketo Engage在中生成的数据。 | 将来自任何支持Experience Platform的数据（包括Marketo、网站、移动应用程序、线下渠道等）的数据整合在一起。 |
 | **归因** | Marketo数据中的单点和多点接触归因。 | 对解决方案中可用的任何数据进行自定义的跨渠道归因。 |
 | **自定义报告和灵活性** | 用于深入了解项目和帐户的高级BI（插件）。 | 高度灵活地使用所有可用数据构建自定义工作区、功能板或报表。 |
 | **受众分析** | 过滤并划分项目列表、参与和智能列表。 | 丰富的角色和历程可视化图表、受众路径和区段重叠分析。 |
