@@ -6,11 +6,21 @@ feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
 TQID: https://experienceleague.adobe.com/ST-1vL8gbeSqaYYHakxjYWcDOryNucEVHiONAQk7gU4
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 4858
@@ -375,7 +385,7 @@ ht-degree: 16%
    1. 请确保&#x200B;**[!UICONTROL 数据格式]**&#x200B;和&#x200B;**[!UICONTROL 分隔符]**&#x200B;具有示例数据的正确值。 例如，**[!UICONTROL 已分隔]**&#x200B;作为&#x200B;**[!UICONTROL 数据格式]**，**[!UICONTROL 已分隔]**&#x200B;作为&#x200B;**[!UICONTROL 分隔符]**。
    1. 摘要数据的样本（10条记录）显示在&#x200B;**[!UICONTROL 样本数据]**&#x200B;中。
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
-1. 在&#x200B;**[!UICONTROL 工作流]** > **[!UICONTROL 将CSV映射到XDM架构]**&#x200B;向导的&#x200B;**[!UICONTROL 映射]**步骤中：
+1. 在&#x200B;**[!UICONTROL 工作流]** > **[!UICONTROL 将CSV映射到XDM架构]**&#x200B;向导的&#x200B;**[!UICONTROL 映射]**&#x200B;步骤中：
    ![示例数据集映射](../assets/example-dataset-mapping.png)
    1. 检查&#x200B;**[!UICONTROL Source数据]**&#x200B;的所有数据字段是否正确映射到架构中对应的&#x200B;**[!UICONTROL 目标字段]**。 对于示例数据，不会报告任何错误，因为您明确命名了架构中的字段，类似于示例数据中的字段名称。 否则，您可以使用此屏幕来更正映射。
    1. 您可以选择选择![齿轮](/help/assets/icons/Gear.svg) **[!UICONTROL 验证]**&#x200B;以（再次）验证数据。
@@ -457,7 +467,7 @@ ht-degree: 16%
       1. 为您的数据视图输入&#x200B;**[!UICONTROL 名称]**，例如`Example Data View Using Summary Data`。
       1. 保留所有其他设置。
       1. 选择&#x200B;**[!UICONTROL 保存并继续]**。
-   1. 在&#x200B;**[!UICONTROL 数据视图]** > **[!UICONTROL 使用摘要数据的示例数据视图的**[!UICONTROL &#x200B;组件&#x200B;]**步骤中]**：
+   1. 在&#x200B;**[!UICONTROL 数据视图]** > **[!UICONTROL 使用摘要数据的示例数据视图的**&#x200B;[!UICONTROL &#x200B;组件&#x200B;]&#x200B;**步骤中]**：
       1. 将以下组件添加到“维度和量度”列表。 请注意，为清楚起见，组件名称是从其默认名称修改的，在组件面板的&#x200B;**[!UICONTROL 组件设置]**&#x200B;中使用&#x200B;**[!UICONTROL 组件名称]**（在右侧）。
 
          **量度**
@@ -490,13 +500,13 @@ ht-degree: 16%
          1. 展开![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL 摘要数据组]**。
          1. 启用&#x200B;**[!UICONTROL 创建分组]**。
          1. 从&#x200B;**[!UICONTROL Dimension]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 促销活动ID]**。 此步骤可确保正确组合事件数据和摘要数据以便进行报告。
-         1. 您可以选择在报表&#x200B;]**中启用**[!UICONTROL &#x200B;隐藏。 [!UICONTROL 在报表中隐藏]确保选定的维度（[!UICONTROL 促销活动ID]）在Analysis Workspace和其他Customer Journey Analytics报表工具中隐藏。 如果已启用此选项，则可以验证选项：
+         1. 您可以选择在报表&#x200B;**中启用**&#x200B;隐藏。 [!UICONTROL 在报表中隐藏]确保选定的维度（[!UICONTROL 促销活动ID]）在Analysis Workspace和其他Customer Journey Analytics报表工具中隐藏。 如果已启用此选项，则可以验证选项：
             1. 在&#x200B;**[!UICONTROL 维度]**&#x200B;列表中选择&#x200B;**[!UICONTROL 促销活动ID]**&#x200B;维度。
             1. 您注意到现在已在&#x200B;**[!UICONTROL 组件设置]**&#x200B;中自动启用&#x200B;**[!UICONTROL 隐藏报表中的组件]**。
 
       1. 创建新的派生字段，例如`Campaign Name (Lookup Derived Field)`，以确保您可以使用示例查找数据数据集中的“促销活动名称（查找）”维度在Workspace中报告。
 
-         营销活动名称](../aa-data/../assets/summary-derived-field.png)的![派生字段
+         营销活动名称![&#128279;](../aa-data/../assets/summary-derived-field.png)的派生字段
 
          1. 为&#x200B;**[!UICONTROL 值]**&#x200B;选择&#x200B;**[!UICONTROL campaign_id]**。
          1. 从&#x200B;**[!UICONTROL 查找数据集]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 示例查找数据集]**。

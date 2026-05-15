@@ -5,11 +5,22 @@ feature: Components
 role: Admin
 exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
 TQID: https://experienceleague.adobe.com/MPtF2ZOWbjayiJtMoTS705nWS-W9OdTmNOp3Wagi6io
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df28738e-9c71-4aa8-929e-edde22340cc6id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+  - id: df28738e-9c71-4aa8-929e-edde22340cc6
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1301
@@ -90,7 +101,7 @@ Customer Journey Analytics管理员可以在数据字典中编辑给定数据视
    | **[!UICONTROL 未批准]** | <p>表示该组件尚未获得管理员审阅和批准。</p><p>管理员会看到&#x200B;**[!UICONTROL 批准]**&#x200B;选项。 选择此选项会为用户将组件标记为“已批准”。</p> |
    | **[!UICONTROL 描述]** | 描述组件的预期功能。 （此信息由 Analytics 管理员添加，如[添加组件描述](/help/components/add-component-descriptions.md)中所述。） |
    | **[!UICONTROL 常常与以下组件一同使用]** | <p>显示最常与您正在查看的组件一起使用的组件。</p><p>在 5 种主要组件类型中，最多显示 5 个组件：量度、计算量度、维度、区段和日期范围。</p><p>此列表基于过去 90 天的数据。 其中仅列出您有权查看的组件。</p><p>管理员可通过在&#x200B;**[!UICONTROL 始终包括]**&#x200B;和&#x200B;**[!UICONTROL 始终排除]**&#x200B;下拉字段中选择所需的组件而编排用户可在此部分中看到的组件。 在您组织用户看到的组件之前，请首先应用&#x200B;**显示全部**&#x200B;区段，以确保您看到任何未与您共享的组件，这些组件可能已由其他管理员添加。<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all segment to make it editable. --></p> |
-   | **[!UICONTROL 类似于]** | <p>显示与您正在查看的组件名称类似的组件。</p><p>在 5 种主要组件类型中，最多显示 5 个组件：量度、计算量度、维度、区段和日期范围。</p><p>其中仅列出您有权查看的组件。</p><p>数据视图中的任何重复组件都将显示在此处。 Analytics 管理员应识别并删除所有重复的组件，如[监视数据词典运行状况](/help/components/data-dictionary/monitor-data-dictionary-health.md)中所述。</p><p>管理员可通过在&#x200B;**[!UICONTROL 始终包括]**&#x200B;和&#x200B;**[!UICONTROL 始终排除]**&#x200B;下拉字段中选择所需的组件而编排用户可在此部分中看到的组件。 在您组织用户看到的组件之前，请首先应用&#x200B;**显示全部**&#x200B;区段，以确保您看到任何未与您共享的组件，这些组件可能已由其他管理员添加。<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all segment to make it editable. --></p><p>**注意：****类似于**&#x200B;部分当前仅包括您创建的组件，而不包括 Adobe 提供的组件。 将在未来的版本中添加 Adobe 提供的组件。</p> |
+   | **[!UICONTROL 类似于]** | <p>显示与您正在查看的组件名称类似的组件。</p><p>在 5 种主要组件类型中，最多显示 5 个组件：量度、计算量度、维度、区段和日期范围。</p><p>其中仅列出您有权查看的组件。</p><p>数据视图中的任何重复组件都将显示在此处。 Analytics 管理员应识别并删除所有重复的组件，如[监视数据词典运行状况](/help/components/data-dictionary/monitor-data-dictionary-health.md)中所述。</p><p>管理员可通过在&#x200B;**[!UICONTROL 始终包括]**&#x200B;和&#x200B;**[!UICONTROL 始终排除]**&#x200B;下拉字段中选择所需的组件而编排用户可在此部分中看到的组件。 在您组织用户看到的组件之前，请首先应用&#x200B;**显示全部**&#x200B;区段，以确保您看到任何未与您共享的组件，这些组件可能已由其他管理员添加。<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all segment to make it editable. --></p><p>**注意：**&#x200B;**类似于**&#x200B;部分当前仅包括您创建的组件，而不包括 Adobe 提供的组件。 将在未来的版本中添加 Adobe 提供的组件。</p> |
    | **[!UICONTROL 产品兼容性]** | 指示Customer Journey Analytics中可以使用此计算量度的位置。 <p>可能的值包括：</p><ul><li>**[!UICONTROL Customer Journey Analytics中的所有位置]**：计算指标可在所有Customer Journey Analytics中使用，包括在Analysis Workspace、Report Builder等中。</li><li>**[!UICONTROL Customer Journey Analytics 中的所有地方（不包括实验）]**：计算量度可用于除实验面板之外的所有 Customer Journey Analytics 部分。</li> <p>有关确定计算量度是否可用于试验的标准的信息，请参阅[试验面板](/help/analysis-workspace/c-panels/experimentation.md)中的[在试验面板中使用计算量度](/help/analysis-workspace/c-panels/experimentation.md#use-calculated-metrics-in-the-experimentation-panel)。</p></ul> |
    | **[!UICONTROL 标记]** | 显示应用于组件的所有标记。 具有管理员访问权限的用户可以在编辑组件时添加标记。 |
    | **[!UICONTROL 组件类型]** | 列出组件的类型，无论是维度、量度、区段还是日期范围。 |

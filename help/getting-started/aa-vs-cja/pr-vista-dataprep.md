@@ -5,11 +5,19 @@ exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 feature: Basics
 role: User
 TQID: https://experienceleague.adobe.com/MuJbtTwSbGbKBifnyWz6SNybYX9JsMpIL9QwVJv031Y
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 632
@@ -21,7 +29,7 @@ ht-degree: 92%
 
 Adobe Analytics [处理规则和 VISTA 规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/processing-rule-order.html)提供了转换和操作传递到 Adobe Analytics [数据收集](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=zh-Hans)中的数据的方法。 在将数据存储在 Adobe Analytics 中用于报告和分析之前，这些转换是 Adobe 数据处理的一部分。
 
-[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html)是一种工具，可用于将基于行的映射和转换应用到 [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html) 中的数据。 随后，这些数据可用于 Experience Platform 应用程序，包括 Customer Journey Analytics 和其他应用程序。 数据准备已与许多 Platform [源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hans)以及[ Analytics Source Connector ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)集成。 此连接器提供了一种将 Adobe Analytics 中的报告包数据摄取到 Platform 中的方法。
+[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html)是一种工具，可用于将基于行的映射和转换应用到 [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html) 中的数据。 随后，这些数据可用于 Experience Platform 应用程序，包括 Customer Journey Analytics 和其他应用程序。 数据准备已与许多 Platform [源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hans)以及[&#x200B; Analytics Source Connector &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)集成。 此连接器提供了一种将 Adobe Analytics 中的报告包数据摄取到 Platform 中的方法。
 
 ## 使用数据准备进一步转换 {#data-prep}
 

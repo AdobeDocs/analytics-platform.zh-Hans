@@ -6,9 +6,12 @@ feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
 TQID: https://experienceleague.adobe.com/2YaPpJFOi4jdLFkJGJsfBLpFtAYx3047ckpCG87lMF8
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 294
@@ -18,7 +21,7 @@ ht-degree: 88%
 
 # 连接概述
 
-通过连接，Customer Journey Analytics 产品管理员可以定义摄取哪些 [!DNL  Experience Platform] 数据源，例如事件、查找、轮廓和摘要数据集。 连接是 Customer Journey Analytics 的基础，它决定了您可以在[数据视图](/help/data-views/data-views.md)中将其定义为维度或量度的数据（字段）的可用性。
+通过连接，Customer Journey Analytics 产品管理员可以定义摄取哪些 [!DNL &#x200B; Experience Platform] 数据源，例如事件、查找、轮廓和摘要数据集。 连接是 Customer Journey Analytics 的基础，它决定了您可以在[数据视图](/help/data-views/data-views.md)中将其定义为维度或量度的数据（字段）的可用性。
 
 >[!IMPORTANT]
 >
@@ -31,7 +34,7 @@ ht-degree: 88%
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[连接到数据源](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [连接到数据源](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"}。
 
 >[!ENDSHADEBOX]
 

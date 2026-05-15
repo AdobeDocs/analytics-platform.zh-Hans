@@ -5,11 +5,20 @@ exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
 TQID: https://experienceleague.adobe.com/kmZ-AYMcKxwZftFSqJQpTH3zDTDT1CxlNw-MVO6Ikn4
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 3841
@@ -50,12 +59,12 @@ Journey Optimizer 支持使用 Customer Journey Analytics 作为报告引擎。 
 | 数据集名称 | 架构 | 数据集类型 | 数据源类型 | 人员 ID | 键 | 匹配键 | 导入新数据 | 回填数据 |
 |---|---|---|---|---|---|---|---|---|
 | [!UICONTROL AJO 实体数据集] | [!UICONTROL AJO 实体记录架构] | [!UICONTROL 查询] | [!UICONTROL 其他] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
-| [!UICONTROL 历程步骤事件] | [!UICONTROL Journey Orchestration 的历程步骤事件架构] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
-| [!UICONTROL AJO 电子邮件跟踪体验事件数据集] | [!UICONTROL AJO 电子邮件跟踪体验事件架构] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
-| [!UICONTROL AJO 消息反馈事件数据集] | [!UICONTROL AJO 消息反馈事件架构] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
-| [!UICONTROL AJO 推送跟踪体验事件数据集] | [!UICONTROL AJO 推送跟踪体验事件架构] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
-| [!UICONTROL AJO消息反馈事件数据集 — 非配置文件] <br/>（请参阅下面的[高吞吐量附加数据集](#high-throughput-add-on-datasets)部分） | [!UICONTROL AJO 消息反馈事件架构] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
-| [!UICONTROL AJO电子邮件跟踪体验事件数据集 — 非配置文件] <br/>（请参阅下面的[高吞吐量附加数据集](#high-throughput-add-on-datasets)部分） | [!UICONTROL AJO 电子邮件跟踪体验事件架构] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
+| [!UICONTROL 历程步骤事件] | [!UICONTROL Journey Orchestration 的历程步骤事件架构] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL &#x200B; IdentityMap(\&lt;primary\>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
+| [!UICONTROL AJO 电子邮件跟踪体验事件数据集] | [!UICONTROL AJO 电子邮件跟踪体验事件架构] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL &#x200B; IdentityMap(\&lt;primary\>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
+| [!UICONTROL AJO 消息反馈事件数据集] | [!UICONTROL AJO 消息反馈事件架构] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL &#x200B; IdentityMap(\&lt;primary\>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
+| [!UICONTROL AJO 推送跟踪体验事件数据集] | [!UICONTROL AJO 推送跟踪体验事件架构] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL &#x200B; IdentityMap(\&lt;primary\>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
+| [!UICONTROL AJO消息反馈事件数据集 — 非配置文件] <br/>（请参阅下面的[高吞吐量附加数据集](#high-throughput-add-on-datasets)部分） | [!UICONTROL AJO 消息反馈事件架构] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL &#x200B; IdentityMap(\&lt;primary\>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
+| [!UICONTROL AJO电子邮件跟踪体验事件数据集 — 非配置文件] <br/>（请参阅下面的[高吞吐量附加数据集](#high-throughput-add-on-datasets)部分） | [!UICONTROL AJO 电子邮件跟踪体验事件架构] | [!UICONTROL 事件] | [!UICONTROL 其他] | [!UICONTROL &#x200B; IdentityMap(\&lt;primary\>)] | - | - | ![状态绿色](assets/../../connections/assets/status-green.svg) 开启 | ![状态灰色](assets/../../connections/assets/status-gray.svg) 关闭 |
 
 #### 高吞吐量附加数据集
 
@@ -108,7 +117,7 @@ Journey Optimizer 支持使用 Customer Journey Analytics 作为报告引擎。 
 * 在&#x200B;**组件**&#x200B;选项卡中：
    * 所有名称中附加有 [!UICONTROL (AJO)] 的量度和维度均会作为此自动配置的一部分自动添加。
    * 一些自动添加的量度或维度是基于派生字段的。 这些派生字段是专门为此集成创建的。 例如，量度“[!UICONTROL 登陆页面点击次数”（AJO）]基于“[!UICONTROL 登陆页面点击次数]”派生字段。
-   * 某些量度或维度有额外的配置。 例如，[!UICONTROL 垃圾邮件投诉 (AJO) ]的确应用了“[!UICONTROL 格式]”和“[!UICONTROL 包含排除值]”设置。
+   * 某些量度或维度有额外的配置。 例如，[!UICONTROL 垃圾邮件投诉 (AJO) &#x200B;]的确应用了“[!UICONTROL 格式]”和“[!UICONTROL 包含排除值]”设置。
    * 所有自动添加的量度和维度都有一个名为 `:`*`name_of_metric_or_dimension`*的上下文标签。 例如，[!UICONTROL 登陆页点击次数（AJO）] 量度具有上下文标签 `:Landing page clicks (AJO)`。
 
 * 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中，未应用任何特定配置值

@@ -7,11 +7,22 @@ role: User, Admin
 badgePremium: label="B2B Edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
 TQID: https://experienceleague.adobe.com/pXiDvk--5tAJYGj8lfq7KQfVLQqVOePbBZqCXT10rZ0
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1485
@@ -77,7 +88,7 @@ Customer Journey Analytics基于三个容器的概念而构建：人员、会话
   >Customer Journey Analytics B2B edition中基于帐户的设置中的B2B事件数据可能包含多行数据，但没有人员或会话。 例如：详细说明商机阶段进展的行。 在评估区段时，请记住，人员和会话可能不再是正确的标准。
   >
 
-* **归因**：您可以在[归因面板](/help/analysis-workspace/c-panels/attribution.md)、[归因组件设置](/help/data-views/component-settings/attribution.md)、[计算量度](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md)或自由格式表](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)的[列中使用新的B2B容器。 帐户回顾时间可延长至13个月。
+* **归因**：您可以在[归因面板](/help/analysis-workspace/c-panels/attribution.md)、[归因组件设置](/help/data-views/component-settings/attribution.md)、[计算量度](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md)或自由格式表[&#128279;](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)的列中使用新的B2B容器。 帐户回顾时间可延长至13个月。
 
 * **可视化图表**：[退出](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)、[流量](/help/analysis-workspace/visualizations/c-flow/flow.md)、[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)和[同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)可视化图表支持新的B2B容器。 例如：您可以使用新容器了解购买组如何使用内容，或者商机同类群组如何接近销售结束。
 您还可以在[用户首选项](/help/analysis-workspace/user-preferences.md#visualizations-preferences)中设置这些可视化的默认容器。

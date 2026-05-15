@@ -6,10 +6,16 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 TQID: https://experienceleague.adobe.com/AGb39x2SEhmLcYgEjP01KGvnHMB9qOLJqZCH07zGAoc
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eb30f47f-d87a-400f-8f78-63ce7979ff56
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 662
@@ -47,7 +53,7 @@ Universal Analytics 属性将每条记录作为用户会话而不是单个事件
 
 >[!BEGINSHADEBOX]
 
-观看从Google Analytics到Customer Journey Analytics的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ - BigQuery](https://video.tv.adobe.com/v/332634?quality=12&learn=on){target="_blank"}演示视频。
+观看从Google Analytics到Customer Journey Analytics的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; - BigQuery](https://video.tv.adobe.com/v/332634?quality=12&learn=on){target="_blank"}演示视频。
 
 >[!ENDSHADEBOX]
 

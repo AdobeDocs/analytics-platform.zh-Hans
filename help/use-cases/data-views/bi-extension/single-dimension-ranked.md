@@ -6,9 +6,12 @@ feature: Data Views
 role: User
 exl-id: e66ad7c4-0d49-41fe-a9fc-661fd31e8c68
 TQID: https://experienceleague.adobe.com/EVPmiuXJyxiWDVLZWyl2pbEla-1Icb4ONUwnNK-oZt4
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1337
@@ -50,7 +53,7 @@ ht-degree: 1%
 
 1. 在&#x200B;**[!UICONTROL 筛选器]**&#x200B;窗格中：
 
-   1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择**[!UICONTROL &#x200B;日期范围是（全部）]**]**。
+   1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择**&#x200B;[!UICONTROL &#x200B;日期范围是（全部）]&#x200B;**]**。
    1. 选择&#x200B;**[!UICONTROL 相对日期]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
    1. 将筛选器定义为&#x200B;**[!UICONTROL 当值]** **[!UICONTROL 在最后]** `1` **[!UICONTROL 日历年]**&#x200B;内时显示项。
    1. 选择&#x200B;**[!UICONTROL 应用筛选器]**。
@@ -72,7 +75,7 @@ ht-degree: 1%
 
    1. 选择&#x200B;**[!UICONTROL product_name is (All)]**。
    1. 将&#x200B;**[!UICONTROL 筛选器类型]**&#x200B;设置为&#x200B;**[!UICONTROL 前N]**。
-   1. 将筛选器定义为&#x200B;**[!UICONTROL 按值]**&#x200B;显示项目&#x200B;]****[!UICONTROL &#x200B;前&#x200B;]**`10`**[!UICONTROL 。
+   1. 将筛选器定义为&#x200B;**[!UICONTROL 按值]**&#x200B;显示项目&#x200B;**&#x200B;**&#x200B;[!UICONTROL &#x200B;前&#x200B;]&#x200B;**`10`**。
    1. 将&#x200B;**[!UICONTROL purchase_revenue]**&#x200B;拖放到&#x200B;**[!UICONTROL By值]**&#x200B;中&#x200B;**[!UICONTROL 在此处添加数据字段]**。
    1. 选择&#x200B;**[!UICONTROL 应用筛选器]**。
 
@@ -183,7 +186,7 @@ ht-degree: 1%
    1. 选择&#x200B;**[!UICONTROL 系列]**&#x200B;选项卡。
    1. 向下滚动以查看&#x200B;**[!UICONTROL 购买]**&#x200B;并将&#x200B;**[!UICONTROL 类型]**&#x200B;更改为&#x200B;**[!UICONTROL 行]**。
    1. 选择&#x200B;**[!UICONTROL Y]**&#x200B;选项卡。
-   1. 将&#x200B;**[!UICONTROL 购买]**&#x200B;从&#x200B;**[!UICONTROL 左1]**&#x200B;容器拖动到显示&#x200B;**[!UICONTROL *将系列拖动到此处以创建新的左轴&#x200B;*]**。 此操作创建**[!UICONTROL  Left 2 ]**容器。
+   1. 将&#x200B;**[!UICONTROL 购买]**&#x200B;从&#x200B;**[!UICONTROL 左1]**&#x200B;容器拖动到显示&#x200B;**[!UICONTROL *将系列拖动到此处以创建新的左轴&#x200B;*]**。 此操作创建&#x200B;**[!UICONTROL &#x200B; Left 2 &#x200B;]**&#x200B;容器。
       ![Looker可视化图表配置](../assets/uc5-looker-visualization.png)
    1. 选择&#x200B;**[!UICONTROL 编辑]**&#x200B;旁边的![CrossSize75](/help/assets/icons/CrossSize75.svg)以隐藏弹出对话框
 
