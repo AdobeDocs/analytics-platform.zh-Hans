@@ -1,10 +1,10 @@
 ---
-title: Content Analytics JavaScript Kibrary
+title: Content Analytics JavaScript库
 description: 了解如何在不使用Experience Platform数据收集标记的情况下配置Content Analytics，并改用Content Analytics JavaScript库。
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-source-git-commit: 8fc9bde3d0b9eebfcc8185aff78ce0f7f2e7704f
+source-git-commit: 35abfb5b77384b16beaddab2554a7d48d10be012
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 4%
@@ -52,7 +52,7 @@ Adobe Content Analytics JavaScript库允许通过Experience Platform Edge Networ
 
 直接从CDN加载库。
 
-1. 初始化[Web SDK JavaScript库](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/js/install/library)并加载Content Analytics捆绑包：
+1. 初始化[Web SDK JavaScript库](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library)并加载Content Analytics捆绑包：
 
    ```html
    <!-- 1. Load and configure Alloy first -->
@@ -74,7 +74,7 @@ Adobe Content Analytics JavaScript库允许通过Experience Platform Edge Networ
    ```
 
    位置
-   * `alloy/2.x.x`引用您要使用[Web SDK JavaScript库](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/js/install/library)的版本。
+   * `alloy/2.x.x`引用您要使用[Web SDK JavaScript库](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library)的版本。
    * `content-analytics/1.x.x`是指您要使用Content Analytics SDK库的版本。
 
 2. 独立内部版本将`window.contentAnalytics`公开为初始化函数。
