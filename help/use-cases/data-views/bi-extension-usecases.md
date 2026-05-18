@@ -114,7 +114,7 @@ When you go through the use cases, replace these example objects with objects th
       1. Select **[!UICONTROL OK]**.
    1. In the **[!UICONTROL PostgreSQL database]** - **[!UICONTROL Database]** dialog:
       ![PowerBI Desktop User and Password](assets/powerbi-userpassword.png)
-      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy the **[!UICONTROL Username]** and **[!UICONTROL Password]** values from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel in the **[!UICONTROL User name]** and **[!UICONTROL Password]** fields. If you are using a [non-expiring credential](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), use the password of your non-expiring credential.
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy the **[!UICONTROL Username]** and **[!UICONTROL Password]** values from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel in the **[!UICONTROL User name]** and **[!UICONTROL Password]** fields. If you are using a [non-expiring credential](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), use the password of your non-expiring credential.
       1. Ensure that the drop-down menu for **[!UICONTROL Select which level to apply these settings to]** is set to the **[!UICONTROL Server]** that you have defined earlier.
       1. Select **[!UICONTROL Connect]**.
    1. In the **[!UICONTROL Navigator]** dialog, the data views are retrieved. This retrieval can take some time. Once retrieved, you see the following in Power BI Desktop.
@@ -131,7 +131,7 @@ When you go through the use cases, replace these example objects with objects th
 
 ### To FLATTEN or not
 
-Power BI Desktop supports the following scenarios for the `FLATTEN` parameter. See [Flatten nested data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
+Power BI Desktop supports the following scenarios for the `FLATTEN` parameter. See [Flatten nested data](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
 
 | FLATTEN parameter | Example | Supported | Remarks |
 |---|---|:---:|---|
@@ -142,8 +142,8 @@ Power BI Desktop supports the following scenarios for the `FLATTEN` parameter. S
 ### More information
 
 * [Prerequisites](/help/data-views/bi-extension.md#prerequisites)
-* [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
-* [Connect Power BI to Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi).
+* [Credentials guide](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials)
+* [Connect Power BI to Query Service](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/clients/power-bi).
 
 
    
@@ -169,7 +169,7 @@ Power BI Desktop supports the following scenarios for the `FLATTEN` parameter. S
       1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Database]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Database]**. Add `%3FFLATTEN` to the value that you paste. For example: `prod:cja%3FFLATTEN`.  
       1. Select **[!UICONTROL Username and Password]** from the **[!UICONTROL Authentication]** drop-down menu.
       1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Username]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Username]**.
-      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Password]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Password]**. If you are using a [non-expiring credential](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), use the password of your non-expiring credential.
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Password]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Password]**. If you are using a [non-expiring credential](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), use the password of your non-expiring credential.
       1. Ensure that **[!UICONTROL Require SSL]** is checked.
       1. Select **[!UICONTROL Sign In]**.
       
@@ -185,7 +185,7 @@ Power BI Desktop supports the following scenarios for the `FLATTEN` parameter. S
 
 ### To FLATTEN or not
 
-Tableau Desktop supports the following scenarios for the `FLATTEN` parameter. See [Flatten nested data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
+Tableau Desktop supports the following scenarios for the `FLATTEN` parameter. See [Flatten nested data](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
 
 | FLATTEN parameter | Example | Supported | Remarks |
 |---|---|:---:|---|
@@ -196,8 +196,8 @@ Tableau Desktop supports the following scenarios for the `FLATTEN` parameter. Se
 ### More information
 
 * [Prerequisites](/help/data-views/bi-extension.md#prerequisites)
-* [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
-* [Connect Tableau Desktop to Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau).
+* [Credentials guide](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials)
+* [Connect Tableau Desktop to Query Service](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/clients/tableau).
 
 
 >[!TAB Looker] 
@@ -262,7 +262,7 @@ Tableau Desktop supports the following scenarios for the `FLATTEN` parameter. Se
 
 ### To FLATTEN or not
 
-Looker supports the following scenarios for the `FLATTEN` parameter. See [Flatten nested data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
+Looker supports the following scenarios for the `FLATTEN` parameter. See [Flatten nested data](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
 
 | FLATTEN parameter | Example | Supported | Remarks |
 |---|---|:---:|---|
@@ -273,7 +273,7 @@ Looker supports the following scenarios for the `FLATTEN` parameter. See [Flatte
 ### More information
 
 * [Prerequisites](/help/data-views/bi-extension.md#prerequisites)
-* [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [Credentials guide](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials)
 
 
 >[!TAB Jupyter Notebook]
@@ -369,7 +369,7 @@ Looker supports the following scenarios for the `FLATTEN` parameter. See [Flatte
 
 ### To FLATTEN or not
 
-Jupyter Notebook supports the following scenarios for the `FLATTEN` parameter. See [Flatten nested data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
+Jupyter Notebook supports the following scenarios for the `FLATTEN` parameter. See [Flatten nested data](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
 
 | FLATTEN parameter | Example | Supported | Remarks |
 |---|---|:---:|---|
@@ -380,7 +380,7 @@ Jupyter Notebook supports the following scenarios for the `FLATTEN` parameter. S
 ### More information
 
 * [Prerequisites](/help/data-views/bi-extension.md#prerequisites)
-* [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [Credentials guide](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials)
 
 >[!TAB RStudio]
 
@@ -455,7 +455,7 @@ Jupyter Notebook supports the following scenarios for the `FLATTEN` parameter. S
 
 ### To FLATTEN or not
 
-RStudio supports the following scenarios for the `FLATTEN` parameter. See [Flatten nested data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
+RStudio supports the following scenarios for the `FLATTEN` parameter. See [Flatten nested data](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
 
 | FLATTEN parameter | Example | Supported | Remarks |
 |---|---|:---:|---|
@@ -466,7 +466,7 @@ RStudio supports the following scenarios for the `FLATTEN` parameter. See [Flatt
 ### More information
 
 * [Prerequisites](/help/data-views/bi-extension.md#prerequisites)
-* [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [Credentials guide](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials)
 
 >[!ENDTABS]
 
