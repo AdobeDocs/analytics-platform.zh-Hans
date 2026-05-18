@@ -6,16 +6,13 @@ feature: Curate and Share
 exl-id: 3d467050-4bf0-4bdb-b7d2-eba67fbd526d
 role: User
 TQID: https://experienceleague.adobe.com/THoHVmp3vbNeG4C9teqfWmp8mpaHGBsda-zKSFaF8Is
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 247b308f55a1ac29c5fc8a7d689580451af43378
 workflow-type: tm+mt
 source-wordcount: 299
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -42,7 +39,7 @@ ht-degree: 100%
 | 导出方法 | 如果您想要执行以下操作，请使用此方法： |
 |---------|----------|
 | [下载至您的工作站](/help/analysis-workspace/export/download-send.md) | <li>将项目下载到您的个人工作站。</li><li>仅下载临时数据（不包含预定数据）。</li> <li>下载最多 50,000 行数据。</li> <!--true? Are there 2 different options to download to your workstation? is this emailing it? --> |
-| [发送给其他用户](/help/analysis-workspace/export/t-schedule-report.md) | <li>通过电子邮件将导出的 Customer Journey Analytics 数据发送给您组织中的其他用户。</li><li>按需或按预定计划发送电子邮件。</li> <li>电子邮件中最多可包含 50,000 行数据。</li> <!--true?--> |
+| [发送给其他用户](/help/analysis-workspace/export/t-schedule-report.md) | <li>通过电子邮件将导出的 Customer Journey Analytics 数据发送给您组织中的其他用户。</li><li>按需或按预定计划发送电子邮件。</li> <li>电子邮件中最多包含400行。</li> <!--true?--> |
 | [导出至云位置](/help/analysis-workspace/export/export-cloud.md) | <li>导出至云位置，例如： <ul><li>Adobe Experience Platform 数据登陆区</li><li>Google Cloud Platform</li><li>Microsoft Azure</li><li>Amazon S3</li><li>Snowflake</li></ul></li><li>按需或按预定计划导出数据。</li><li>存储更多 Customer Journey Analytics 数据。</li><li>导出包含数千或数百万行的完整表格。<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
 
 {style="table-layout:auto"}
