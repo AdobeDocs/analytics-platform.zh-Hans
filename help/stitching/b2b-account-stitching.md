@@ -5,11 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 hide: true
 role: Admin
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-source-git-commit: 4fc2712ae694afa75141ef32dea3114d297a34b8
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+source-git-commit: c444ee455da66fe6f4a95a362b21b50adc328a11
 workflow-type: tm+mt
 source-wordcount: 988
 ht-degree: 2%
@@ -95,28 +93,28 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
 
 1. 对于要为其配置B2B帐户拼接的特定事件数据集，请切换&#x200B;**[!UICONTROL 启用人员到帐户的拼接]**。
 
-   >[!BEGINTABS]
+>[!BEGINTABS]
 
-   >[!TAB 于]
+>[!TAB 于]
 
-   当&#x200B;**[!UICONTROL 启用人员到帐户拼接]**&#x200B;为&#x200B;**于**&#x200B;时，您已为数据集配置了B2B帐户拼接。
+当&#x200B;**[!UICONTROL 启用人员到帐户拼接]**&#x200B;为&#x200B;**于**&#x200B;时，您已为数据集配置了B2B帐户拼接。
 
-   * 需要配置人员ID。 该人员ID用于根据[人员到帐户数据集](#prerequisites)查找帐户ID。
-   * 帐户ID的配置是可选的。
+* 需要配置人员ID。 该人员ID用于根据[人员到帐户数据集](#prerequisites)查找帐户ID。
+* 帐户ID的配置是可选的。
 
-   ![B2B帐户正在拼接](assets/b2b-event-dataset-stitching-on.png)上的事件数据集
+![B2B帐户正在拼接](assets/b2b-event-dataset-stitching-on.png)上的事件数据集
 
-   >[!TAB 关]
+>[!TAB 关]
 
-   当&#x200B;**[!UICONTROL 启用人员到帐户拼接]**&#x200B;为&#x200B;**关**&#x200B;时，您已&#x200B;*不*&#x200B;为数据集配置了B2B帐户拼接。
+当&#x200B;**[!UICONTROL 启用人员到帐户拼接]**&#x200B;为&#x200B;**关**&#x200B;时，您已&#x200B;*不*&#x200B;为数据集配置了B2B帐户拼接。
 
-   * 需要配置帐户ID。
-   * 人员ID的配置是可选的。
+* 需要配置帐户ID。
+* 人员ID的配置是可选的。
 
-   ![B2B帐户拼合关闭的事件数据集](assets/b2b-event-dataset-stitching-off.png)
+![B2B帐户拼合关闭的事件数据集](assets/b2b-event-dataset-stitching-off.png)
 
 
-   >[!ENDTABS]
+>[!ENDTABS]
 
 
 
