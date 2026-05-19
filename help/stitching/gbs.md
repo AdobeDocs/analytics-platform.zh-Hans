@@ -6,16 +6,11 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
 TQID: https://experienceleague.adobe.com/eeNrn3hVytufmz195UHNakznBoVRQ0A-qfOYucFF-X0
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
 source-wordcount: 1899
 ht-degree: 70%
@@ -29,7 +24,7 @@ ht-degree: 70%
 如果无法检索某个事件的人员ID信息，则将改用永久ID用于该&#x200B;*未拼合*&#x200B;事件。 因此，在与包含启用拼合的数据集的[连接](/help/connections/overview.md)关联的[数据视图](/help/data-views/data-views.md)中，人员ID数据视图组件包含事件级别的人员ID值或永久ID值。
 
 
-![基于图形的拼接](/help/stitching/assets/gbs.svg)
+![基于图形的拼接](/help/stitching/assets/gbs.png)
 
 ## IdentityMap
 
@@ -122,7 +117,7 @@ ht-degree: 70%
 
 请考虑以下两个关于访客 A（具有永久 ID `246`）和访客 B（具有永久 ID `3579`）在一段时间内的身份标识图更新，以及这些更新对基于图形的拼接的步骤有何影响。
 
-![身份标识图 3579](assets/identity-graphs.svg)
+![身份标识图 3579](assets/identity-graphs.png)
 
 您可以使用[身份标识图查看器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/identity-graph-viewer)查看某个特定轮廓在一段时间内的身份标识图形。 另请参阅[身份标识服务链接逻辑](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/identity-linking-logic)，更好地了解链接身份标识时使用的逻辑。
 
@@ -216,10 +211,10 @@ ht-degree: 70%
 - 在启用基于图形的拼合之前，必须在沙盒级别设置Experience Platform Identity Service中的身份图形。
    - 身份图形必须具有要在拼接期间用于解析人员ID的命名空间（例如`Email`或`Phone`）。
    - 必须使用来自任何相关数据集（类型为&#x200B;*event*&#x200B;或&#x200B;*profile*&#x200B;且至少包含两个具有ID值的有用命名空间）的标识信息填充标识图。
-   - 所有包含此类相关标识的数据集都必须为标识图数据摄取[&#128279;](faq.md#enable-a-dataset-for-the-identity-service)启用。 此支持可确保随着时间的推移，将来自所有所需来源的传入身份添加到图表中。
+   - 所有包含此类相关标识的数据集都必须为标识图数据摄取](faq.md#enable-a-dataset-for-the-identity-service)启用[。 此支持可确保随着时间的推移，将来自所有所需来源的传入身份添加到图表中。
    - 如果一段时间内已在使用实时客户数据配置文件或Adobe Journey Optimizer，则应已在一定程度上设置此图表。<br/>如果启用基于图形的拼合的数据集也需要历史拼合回填，则图形应已包含整个时段的历史标识，以获取所需的拼合结果。
 - 如果要使用基于图形的拼合，并且预期事件数据集将参与身份图形，则应[为身份服务启用该数据集](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service)。
-- 永久性ID和人员ID可以与[identityMap](#identitymap)一起使用。 或者，持久ID和人员ID可以是XDM架构中的字段，在这种情况下，这些字段必须是[在架构中定义为标识](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity?lang=en)。
+- 永久性ID和人员ID可以与[identityMap](#identitymap)一起使用。 或者，持久ID和人员ID可以是XDM架构中的字段，在这种情况下，这些字段必须是[在架构中定义为标识](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity?lang=en)。
 
 >[!NOTE]
 >
