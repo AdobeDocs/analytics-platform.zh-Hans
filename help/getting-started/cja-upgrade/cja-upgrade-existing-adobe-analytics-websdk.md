@@ -5,20 +5,14 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1459a512-bfa8-4805-97e8-5b6acc6e4ac9
-TQID: https://experienceleague.adobe.com/Kv-jIN0GPIy-7285aKkLQT6R6l9lULtkFrSmr57w644
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
+autotag-review: '2026-05-19T08:14:03.113Z'
+TQID: 'https://experienceleague.adobe.com/pexrlZnVd2fHINcn6W3XC7el5jnCrDZ08c-TLgX1L4E'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 1050
 ht-degree: 64%
@@ -47,7 +41,7 @@ ht-degree: 64%
 
 | 优点 | 缺点 |
 |----------|---------|
-| 如果您的 Adobe Analytics 实施已经在使用 Web SDK，则这是首选的升级路径。<ul><li>**提供在 Experience Edge Network 中托管数据的所有优点**： <p>这些优点包括：</p><ul><li>Adobe Experience Platform 专为支持[实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=zh-Hans)而构建，因此具有高性能报告和数据可用性</li><li>整合其他CX Enterprise产品（AJO、RTCDP等）之间的Adobe CX Enterprise数据收集实施</li><li>不依赖于 Adobe Analytics 命名法（属性、eVar、事件等）</li></ul><li>**使用您现有的实施**：虽然这种方法需要进行一些实施方面的变更，但它并不需要从头开始进行全新的实施。 您可以使用现有的数据层和代码，只需对实施逻辑进行最少的更改，而不会影响现有的 Adobe Analytics 报告。</li><li>**提供使用 XDM 架构的选项**：您可以选择使用现有的 Adobe Analytics 架构，或者创建一个 XDM 架构，并将数据对象中的字段映射到该 XDM 架构。 [XDM 架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/home#xdm-schemas)是一种灵活的架构，它可以定义您需要的任何字段，并且仅会定义相关的字段。 <p>有关使用您自己的 XDM 架构的优势的更多信息，请参阅下面的“使用您自己的 XDM 架构”。</p></li><li>**保留规则和数据元素**：虽然这确实需要新的规则操作，但您只需进行最小的更改，即可重复使用现有的数据元素和规则条件。</li><li>**面向未来**：如果您选择使用自己的 XDM 架构，那么未来的实施更新将会更容易。</li></ul> | <ul><li>**需要映射才能将数据发送到 Platform**：当您的组织准备好使用 Customer Journey Analytics 时，您必须将数据发送到 Adobe Experience Platform 中的数据集。 此操作要求数据对象中的每个字段都是数据流映射工具中的一个条目，并且该条目会将其分配给一个 XDM 架构字段。 对于此工作流程，仅需进行一次映射，并且不涉及对实施进行更改。 但是，这是一个额外的步骤，在 XDM 对象中发送数据时并不需要该步骤。</li><li>**随着时间的推移引入更多复杂性**：将来添加的任何字段都必须映射到数据流中的XDM。<p>只要在实施中添加了新字段，就可以执行以下任一操作：</p><ul><li>**选项1：**&#x200B;在数据对象中填充新的任意evar或新prop，然后将其映射到所需的XDM字段。<p>此过程可促进客户端实施的一致性，但需要映射。</p></li><li>**选项2：**&#x200B;将数据对象保留为旧版实现，并开始仅为所有新字段填充XDM对象。<p>此过程不需要映射，但这意味着某些变量仅位于数据对象中，而其他变量仅位于XDM对象中。 无论何时需要对实施进行故障排除，都需要转到两个位置。 请确保您的内部工作流符合此要求。</p></li></ul> |
+| 如果您的 Adobe Analytics 实施已经在使用 Web SDK，则这是首选的升级路径。<ul><li>**提供在 Experience Edge Network 中托管数据的所有优点**： <p>这些优点包括：</p><ul><li>Adobe Experience Platform 专为支持[实时个性化用例](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)而构建，因此具有高性能报告和数据可用性</li><li>整合其他CX Enterprise产品（AJO、RTCDP等）之间的Adobe CX Enterprise数据收集实施</li><li>不依赖于 Adobe Analytics 命名法（属性、eVar、事件等）</li></ul><li>**使用您现有的实施**：虽然这种方法需要进行一些实施方面的变更，但它并不需要从头开始进行全新的实施。 您可以使用现有的数据层和代码，只需对实施逻辑进行最少的更改，而不会影响现有的 Adobe Analytics 报告。</li><li>**提供使用 XDM 架构的选项**：您可以选择使用现有的 Adobe Analytics 架构，或者创建一个 XDM 架构，并将数据对象中的字段映射到该 XDM 架构。 [XDM 架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/home#xdm-schemas)是一种灵活的架构，它可以定义您需要的任何字段，并且仅会定义相关的字段。 <p>有关使用您自己的 XDM 架构的优势的更多信息，请参阅下面的“使用您自己的 XDM 架构”。</p></li><li>**保留规则和数据元素**：虽然这确实需要新的规则操作，但您只需进行最小的更改，即可重复使用现有的数据元素和规则条件。</li><li>**面向未来**：如果您选择使用自己的 XDM 架构，那么未来的实施更新将会更容易。</li></ul> | <ul><li>**需要映射才能将数据发送到 Platform**：当您的组织准备好使用 Customer Journey Analytics 时，您必须将数据发送到 Adobe Experience Platform 中的数据集。 此操作要求数据对象中的每个字段都是数据流映射工具中的一个条目，并且该条目会将其分配给一个 XDM 架构字段。 对于此工作流程，仅需进行一次映射，并且不涉及对实施进行更改。 但是，这是一个额外的步骤，在 XDM 对象中发送数据时并不需要该步骤。</li><li>**随着时间的推移引入更多复杂性**：将来添加的任何字段都必须映射到数据流中的XDM。<p>只要在实施中添加了新字段，就可以执行以下任一操作：</p><ul><li>**选项1：**&#x200B;在数据对象中填充新的任意evar或新prop，然后将其映射到所需的XDM字段。<p>此过程可促进客户端实施的一致性，但需要映射。</p></li><li>**选项2：**&#x200B;将数据对象保留为旧版实现，并开始仅为所有新字段填充XDM对象。<p>此过程不需要映射，但这意味着某些变量仅位于数据对象中，而其他变量仅位于XDM对象中。 无论何时需要对实施进行故障排除，都需要转到两个位置。 请确保您的内部工作流符合此要求。</p></li></ul> |
 
 {style="table-layout:auto"}
 
@@ -81,6 +75,6 @@ ht-degree: 64%
 
 1. 使用数据流映射将数据对象中的所有字段映射到您的XDM架构。
 
-   有关详细信息，请参阅Experience Platform文档中为数据收集[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/data-prep)准备数据中的[映射](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/data-prep?lang=en#mapping)。
+   有关详细信息，请参阅Experience Platform文档中为数据收集](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep)准备数据中的[映射](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping)。[
 
 {{upgrade-final-step}}

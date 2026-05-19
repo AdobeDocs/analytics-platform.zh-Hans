@@ -2,18 +2,14 @@
 title: 产品使用情况数据设置
 description: 启用、禁用或配置产品使用情况设置。
 exl-id: 85e2b515-78e6-41e8-9947-369b1e65e4fd
-TQID: https://experienceleague.adobe.com/2iLjMb4UCiA3bwZVozXyes4f0Ux1hCLv85oUPVL-CJw
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+autotag-review: '2026-05-19T09:31:13.042Z'
+TQID: 'https://experienceleague.adobe.com/5aCc69OL9tJ1-5fq0OpSrqpYhLjZgbT1auS0csSDxUA'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: a67cb189-a535-41f6-afa2-448f39c4759fid: cc5596a7-18f9-4e6c-87eb-ce3d0a9efb66
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 357
 ht-degree: 100%

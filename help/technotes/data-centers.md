@@ -4,16 +4,14 @@ description: 了解CJA在世界各地的数据中心位置。
 solution: Customer Journey Analytics
 role: Admin
 exl-id: a41686bb-1a7b-4d27-8415-f4a1880b7de5
-TQID: https://experienceleague.adobe.com/vpd1rWg883z793Tgmcm0XxplsaG5q5PGa9eT0pPllp8
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 5771edbe491ceeeaf487dd5eeb2ffb67ef880f96
+autotag-review: '2026-05-19T09:26:11.873Z'
+TQID: 'https://experienceleague.adobe.com/aGyAPxA9wATPVbfByvJqae9memBphvCnq44CmrO8juM'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: d76b9e53-27fb-4597-933f-419cc0dd46dbid: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2: id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 239
 ht-degree: 4%
@@ -26,7 +24,7 @@ Adobe Customer Journey Analytics在北美洲、欧洲和APAC的公共云服务�
 
 在配置时，客户指定其Adobe Experience Platform数据将驻留的地区。 从Adobe Experience Platform数据湖摄取到Customer Journey Analytics的数据将存储在同一区域。
 
-有关详细信息，请参阅Adobe CX Enterprise文档中的[区域数据收集](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/data-collection/rdc)。
+有关详细信息，请参阅Adobe CX Enterprise文档中的[区域数据收集](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc)。
 
 
 ## 查看存储数据的数据中心

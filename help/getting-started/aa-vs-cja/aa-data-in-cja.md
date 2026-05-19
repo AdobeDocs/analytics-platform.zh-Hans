@@ -5,18 +5,14 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: db5506e0-6159-4d4b-8149-e4966dab9807
-TQID: https://experienceleague.adobe.com/ZRRduve-VQwIywA8A51TLsNK6LAKT8Bz51nGdO0a9T0
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+autotag-review: '2026-05-19T07:08:08.190Z'
+TQID: 'https://experienceleague.adobe.com/jrPqS9duYpmQRlQlzurMAQzdtXvW-y-PAsTiyuVfd28'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: c38ed341-fab2-46df-9d72-88d8166edebb
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 883
 ht-degree: 71%
@@ -41,7 +37,7 @@ Adobe Analytics客户可以使用[Analytics源连接器](https://experienceleagu
 
 准备好数据后，您就可以开始配置报告包，以在 Adob&#x200B;e Experience Platform 和 Customer Journey Analytics 中使用。
 
-1. **为您希望在Adobe Experience Platform和Customer Journey Analytics中使用的每个报表包创建一个数据流。** [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-hans)是一种允许您在Adobe Analytics和Adobe Experience Platform之间[创建连接](/help/connections/create-connection.md) （即数据流）的工具。 您将使用源连接器为要在 Adobe Experience Platform 中使用的每个报告包创建一个数据流。 数据流会创建报告包数据的副本，其中架构已转换为 [XDM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=zh-Hans)，以供 Adob&#x200B;e Experience Platform 应用程序（包括 Customer Journey Analytics）使用。<p>通过源连接器配置了数据流的每个报告包都作为单独的数据集存储在 Adobe Experience Platform 数据湖中。 每个数据流将自动包含 13 个月的历史报告包数据，新数据将持续流入 Adobe Experience Platform。 （请注意，从2023年4月26日开始，非生产沙盒中的回填限制为3个月。） 使用Analytics Source Connector，您无需担心提前创建架构。 系统会自动为您创建特定于 Adobe Analytics 的标准化架构。 但是，Adobe Experience Platform 的[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)工具可用于在数据存储在数据库中并提供给 Customer Journey Analytics 之前增强此架构。 请注意，某些类型的数据会被源连接器分段，不会出现在 Adobe Experience Platform 数据湖的数据集中。 其他行可能会在数据湖与 Customer Journey Analytics 之间被分段。 请参阅[比较 Adobe Analytics 数据和 Customer Journey Analytics 数据](/help/troubleshooting/compare.md)，了解更多详情。
+1. **为您希望在Adobe Experience Platform和Customer Journey Analytics中使用的每个报表包创建一个数据流。** [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-hans)是一种允许您在Adobe Analytics和Adobe Experience Platform之间[创建连接](/help/connections/create-connection.md) （即数据流）的工具。 您将使用源连接器为要在 Adobe Experience Platform 中使用的每个报告包创建一个数据流。 数据流会创建报告包数据的副本，其中架构已转换为 [XDM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=zh-Hans)，以供 Adob&#x200B;e Experience Platform 应用程序（包括 Customer Journey Analytics）使用。<p>通过源连接器配置了数据流的每个报告包都作为单独的数据集存储在 Adobe Experience Platform 数据湖中。 每个数据流将自动包含 13 个月的历史报告包数据，新数据将持续流入 Adobe Experience Platform。 （请注意，从2023年4月26日开始，非生产沙盒中的回填限制为3个月。） 使用Analytics Source Connector，您无需担心提前创建架构。 系统会自动为您创建特定于 Adobe Analytics 的标准化架构。 但是，Adobe Experience Platform 的[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html)工具可用于在数据存储在数据库中并提供给 Customer Journey Analytics 之前增强此架构。 请注意，某些类型的数据会被源连接器分段，不会出现在 Adobe Experience Platform 数据湖的数据集中。 其他行可能会在数据湖与 Customer Journey Analytics 之间被分段。 请参阅[比较 Adobe Analytics 数据和 Customer Journey Analytics 数据](/help/troubleshooting/compare.md)，了解更多详情。
 1. **使用数据准备帮助您在Customer Journey Analytics中组合报告包。** 数据准备可用于多种类型的数据转换，Adobe Analytics数据的一个常见用途是解决多个报表包之间的prop和/或eVar映射差异，以便报表包可以轻松地在Customer Journey Analytics中组合。 请参阅[将报告包与不同架构相结合](/help/use-cases/aa-data/combine-report-suites.md)，了解更多详细信息。
 1. 根据需要&#x200B;**启用拼接。** 在 Customer Journey Analytics 中组合多个数据集时，拼接功能可以帮助将不同的 ID 命名空间解析为单个拼接 ID，以实现跨设备和渠道的单一客户视图。 请参阅[拼接概述](../../stitching/overview.md)，了解更多详情。
 1. **创建一个或多个Customer Journey Analytics连接。** 一旦您的报表包的数据集在Adobe Experience Platform数据湖中可用，您就可以创建一个或多个[Customer Journey Analytics连接](/help/connections/overview.md)以将这些数据集导入Customer Journey Analytics。 在一个连接中，报告包数据可以与其他类型的数据相结合，使您能够创建真正的跨渠道客户体验视图。

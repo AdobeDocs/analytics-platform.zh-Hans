@@ -4,18 +4,14 @@ description: 引入 Adobe Journey Optimizer 决策管理生成的数据，并使
 exl-id: fde45264-46cf-4c68-9872-7fb739748f21
 feature: Experience Platform Integration
 role: Admin
-TQID: https://experienceleague.adobe.com/kSBDrh6xQ-vi59JbirhxURFLIiG3BNQWeBZFJgygaG8
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+autotag-review: '2026-05-19T07:19:20.352Z'
+TQID: 'https://experienceleague.adobe.com/n3xsScsv43IG-tOQhgNjeqB2UmWzbIVw7sv5CcpZPd0'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: df066828-d385-4da6-af58-80137fb27d7b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 753
 ht-degree: 100%
@@ -25,15 +21,15 @@ ht-degree: 100%
 # 集成决策管理
 
 
-Adobe Journey Optimizer [决策管理](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=zh-Hans)通过集中的营销产品建议库和决策引擎（该引擎可将规则和约束应用于 Adobe Experience Platform 创建的丰富实时轮廓）帮助您在适当的时间向客户发送合适的产品建议，从而轻松实现个性化。
+Adobe Journey Optimizer [决策管理](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html)通过集中的营销产品建议库和决策引擎（该引擎可将规则和约束应用于 Adobe Experience Platform 创建的丰富实时轮廓）帮助您在适当的时间向客户发送合适的产品建议，从而轻松实现个性化。
 
-决策管理是 Adobe Journey Optimizer 的一部分并与之集成。 它还可以独立于 Adobe Journey Optimizer 中定义的历程和营销活动使用，利用其丰富的 [API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html?lang=zh-Hans) 支持。
+决策管理是 Adobe Journey Optimizer 的一部分并与之集成。 它还可以独立于 Adobe Journey Optimizer 中定义的历程和营销活动使用，利用其丰富的 [API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html) 支持。
 
 可通过执行以下步骤而导入决策管理生成的数据以在 Customer Journey Analytics 中执行高级分析：
 
 ## 将数据从决策管理发送到 Adobe Experience Platform
 
-Adobe Experience Platform 作为中心数据源，联系着决策管理与 Customer Journey Analytics。 决策管理的数据在体验平台中&#x200B;**自动**&#x200B;收集，或作为&#x200B;**明确发送的体验事件**（例如印象或点击）的一部分收集。 有关详细信息，请参阅[数据收集快速入门](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/collect-event-data/data-collection.html?lang=zh-Hans)。
+Adobe Experience Platform 作为中心数据源，联系着决策管理与 Customer Journey Analytics。 决策管理的数据在体验平台中&#x200B;**自动**&#x200B;收集，或作为&#x200B;**明确发送的体验事件**（例如印象或点击）的一部分收集。 有关详细信息，请参阅[数据收集快速入门](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/collect-event-data/data-collection.html)。
 
 ## 创建连接
 
@@ -53,7 +49,7 @@ Adobe Experience Platform 作为中心数据源，联系着决策管理与 Custo
 
 ## 创建数据视图
 
-创建连接之后，可创建一个或多个[数据视图](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-Hans)，以配置在 Customer Journey Analytics 中可用的所需维度和量度。
+创建连接之后，可创建一个或多个[数据视图](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html)，以配置在 Customer Journey Analytics 中可用的所需维度和量度。
 
 >[!NOTE]
 >

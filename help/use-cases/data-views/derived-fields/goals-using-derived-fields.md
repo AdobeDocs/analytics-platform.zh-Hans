@@ -5,10 +5,17 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: 5cd838f7-e394-4a67-9d2e-e1d08a864ca0
 role: User
-source-git-commit: 35d365dec8bc9afdfd55405dbcfa082280515b18
+autotag-review: '2026-05-19T06:55:50.510Z'
+TQID: 'https://experienceleague.adobe.com/dTARH-90RV1yHWQX3tqotqum-WizfgFh5mgUeYySI6c'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: f3ca85c1-72de-4df2-97ed-05753cd77c47
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 6%
+source-wordcount: 442
+ht-degree: 9%
 
 ---
 
@@ -16,7 +23,7 @@ ht-degree: 6%
 
 此用例介绍了如何使用派生字段的强大功能设置特定维度的目标，然后在Workspace项目中使用这些目标。
 
-如果您不熟悉派生字段，请参阅[教程](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=zh-Hans)和[文档](/help/data-views/derived-fields/derived-fields.md)以了解相关说明。
+如果您不熟悉派生字段，请参阅[教程](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html)和[文档](/help/data-views/derived-fields/derived-fields.md)以了解相关说明。
 
 
 ## 定义目标
@@ -39,7 +46,7 @@ ht-degree: 6%
 
 您需要为每个营销渠道设置每月收入目标。 请按以下步骤执行此操作：
 
-1. 使用名为[的](/help/data-views/derived-fields/derived-fields.md#marketing-channels)营销渠道函数模板`Monthly Marketing Channel Revenue Goal (Incremental)`创建新的派生字段。
+1. 使用名为`Monthly Marketing Channel Revenue Goal (Incremental)`的[营销渠道函数模板](/help/data-views/derived-fields/derived-fields.md#marketing-channels)创建新的派生字段。
 
 1. 定义所有规则，以根据URL PARSE和CASE WHEN规则的组合正确标识每个营销渠道。 例如：
 

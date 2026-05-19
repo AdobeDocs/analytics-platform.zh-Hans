@@ -5,18 +5,14 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Troubleshooting
 exl-id: 341123b9-f4d6-4ef7-96f1-789850261b96
-TQID: https://experienceleague.adobe.com/XwJDsOhTuITeyXd9htSUUQb37KnPuxyR9Css0sEikA0
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+autotag-review: '2026-05-19T09:32:28.410Z'
+TQID: 'https://experienceleague.adobe.com/qGrpX20MMcrjeEO75K2Ndoki4eiDmEvmaUCzED8jR1w'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: eb00932f-4d46-46bc-b1d8-10de7588db8did: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: a67cb189-a535-41f6-afa2-448f39c4759f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 218
 ht-degree: 94%
@@ -39,9 +35,9 @@ ht-degree: 94%
 
 1. 确保您拥有正确的访问控制：
 
-   * 您必须拥有拥有 Experience Platform 产品的组织的系统或产品管理员权限。 请参阅 [Access 控制概述](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hans#platform-permissions) 了解更多信息。
+   * 您必须拥有拥有 Experience Platform 产品的组织的系统或产品管理员权限。 请参阅 [Access 控制概述](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#platform-permissions) 了解更多信息。
 
-   * 您必须是 AEP-Default-All-Users 产品配置文件中的用户。 如果您没有权限将自己添加到该轮廓中，请询问您的管理员。 请参阅 [Access 控制层次结构和工作流程](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hans#access-control-hierarchy-and-workflow) 了解更多信息。
+   * 您必须是 AEP-Default-All-Users 产品配置文件中的用户。 如果您没有权限将自己添加到该轮廓中，请询问您的管理员。 请参阅 [Access 控制层次结构和工作流程](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#access-control-hierarchy-and-workflow) 了解更多信息。
 
 
 1. 导航到 Adobe Experience Platfom UI。
