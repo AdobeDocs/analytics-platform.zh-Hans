@@ -6,9 +6,12 @@ feature: Use Cases
 role: Admin
 exl-id: b861f765-b18d-4be2-b4c7-c66186d37d99
 TQID: https://experienceleague.adobe.com/0R5S0Bmx8nJxyCRFycmkEm0KN-43zlRYEDHdKSO-IR4
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
 source-wordcount: 1187
@@ -74,7 +77,7 @@ ht-degree: 3%
 
 ### 流服务API
 
-或者，您可以使用API导出和计划数据集的导出。 使用流服务API](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets)在[导出数据集中记录了所涉及的步骤。
+或者，您可以使用API导出和计划数据集的导出。 使用流服务API[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets)在导出数据集中记录了所涉及的步骤。
 
 #### 快速入门
 
@@ -96,7 +99,7 @@ ht-degree: 3%
 
 #### 提供导出参数
 
-接下来，您必须[再使用[`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) API创建一个目标连接，用于存储数据集的导出参数](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-target-connection)。 这些导出参数包括位置、文件格式、压缩等。
+接下来，您必须[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-target-connection)再使用[`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) API创建一个目标连接，用于存储数据集的导出参数。 这些导出参数包括位置、文件格式、压缩等。
 
 #### 设置数据流
 
