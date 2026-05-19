@@ -5,18 +5,14 @@ solution: Customer Journey Analytics
 role: Admin
 exl-id: a41686bb-1a7b-4d27-8415-f4a1880b7de5
 TQID: https://experienceleague.adobe.com/vpd1rWg883z793Tgmcm0XxplsaG5q5PGa9eT0pPllp8
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 5771edbe491ceeeaf487dd5eeb2ffb67ef880f96
 workflow-type: tm+mt
-source-wordcount: 235
-ht-degree: 7%
+source-wordcount: 239
+ht-degree: 4%
 
 ---
 
@@ -26,7 +22,7 @@ Adobe Customer Journey Analytics在北美洲、欧洲和APAC的公共云服务�
 
 在配置时，客户指定其Adobe Experience Platform数据将驻留的地区。 从Adobe Experience Platform数据湖摄取到Customer Journey Analytics的数据将存储在同一区域。
 
-有关详细信息，请参阅Adobe Experience Cloud文档中的[区域数据收集](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/data-collection/rdc)。
+有关详细信息，请参阅Adobe CX Enterprise文档中的[区域数据收集](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc)。
 
 
 ## 查看存储数据的数据中心
@@ -37,7 +33,7 @@ Adobe Customer Journey Analytics在北美洲、欧洲和APAC的公共云服务�
 
 要查看您的数据存储到哪个数据中心：
 
-1. 登录到 [Adobe Experience Cloud](https://experience.adobe.com)。
+1. 使用您的Adobe ID凭据登录[Adobe CX Enterprise](https://experience.adobe.com)。
 
 1. 从界面右上角的应用程序切换器![应用程序](/help/assets/icons/Apps.svg)中选择&#x200B;**[!UICONTROL Experience Platform]**。
 
