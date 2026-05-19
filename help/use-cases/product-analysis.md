@@ -3,29 +3,12 @@ title: Customer Journey Analytics中的产品分析
 description: 了解可在Customer Journey Analytics中使用哪些功能来有效执行产品分析。
 exl-id: b185a2ed-18c8-4fb3-8c69-693d5fee0e67
 TQID: https://experienceleague.adobe.com/24OrFfxJY7XuqMYoTrmijM5xRfsdGhfA-aKe5tY-7xw
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
-  - id: bfef374d-acfd-4c57-bf74-a2b36053c545
-  - id: c91f8bd2-df97-4c6a-afcd-f1cde8221302
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-  - id: f3ca85c1-72de-4df2-97ed-05753cd77c47
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8id: bfef374d-acfd-4c57-bf74-a2b36053c545id: c91f8bd2-df97-4c6a-afcd-f1cde8221302id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: f3ca85c1-72de-4df2-97ed-05753cd77c47
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
 workflow-type: tm+mt
 source-wordcount: 894
 ht-degree: 3%
@@ -54,9 +37,9 @@ Customer Journey Analytics为团队提供了一些工具，用于分析和优化
 Adobe Experience Platform和Customer Journey Analytics中的以下功能使您能够大规模摄取和管理产品数据：
 
 * Adobe Experience Platform
-   * [数据集&#x200B;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/overview)
+   * [数据集&#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)
    * [数据准备&#x200B;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/home)
-   * [数据&#x200B;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/data-distiller/overview)
+   * [数据&#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview)
 * Customer Journey Analytics
    * [连接&#x200B;](/help/connections/overview.md)
    * [数据视图](/help/data-views/data-views.md)，包括[派生字段&#x200B;](/help/data-views/derived-fields/derived-fields.md)
@@ -117,13 +100,13 @@ Customer Journey Analytics中的以下功能可帮助您有效地跟踪保留和
 
 只有分析可推动操作，它们才能带来价值。 将分析发现转化为改善用户体验并支持长期产品增长的操作。
 
-Experience Cloud中的以下功能使您能够有效地根据见解采取行动：
+CX Enterprise中的以下功能使您能够有效地根据见解采取行动：
 
 * [创建并发布受众](/help/components/audiences/publish.md)&#x200B;以便从Customer Journey Analytics激活
-* 通过Experience Cloud产品激活受众：
+* 通过CX企业版产品激活受众：
    * [在AJO和Adobe Target中运行实验](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment)，并使用[实验面板](/help/analysis-workspace/c-panels/experimentation.md)测量Customer Journey Analytics中各种变化的影响
-   * [向AJO中的用户提供应用程序内参与](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/channels/in-app/get-started-in-app)
-* 使用Adobe Real-time CDP [将受众](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/activation-overview)激活到外部目标&#x200B;
+   * [向AJO中的用户提供应用程序内参与](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app)
+* 使用Adobe Real-time CDP [将受众](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview)激活到外部目标&#x200B;
 
 ## 与组织共享见解&#x200B;。
 

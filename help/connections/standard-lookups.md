@@ -6,24 +6,15 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 TQID: https://experienceleague.adobe.com/QSgHLiPoLQyr0DzEvWfSt535YR6Kch-XhWUyPXOO6gU
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
 workflow-type: tm+mt
 source-wordcount: 442
-ht-degree: 43%
+ht-degree: 42%
 
 ---
 
@@ -31,10 +22,10 @@ ht-degree: 43%
 
 >[!IMPORTANT]
 >
->标准查找仅适用于Customer Journey Analytics中的Analytics Source Connector数据源。 您可以将其用于标准 Adobe Analytics 实施、[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans) 或 Experience Platform 数据收集 API。
+>标准查找仅适用于Customer Journey Analytics中的Analytics Source Connector数据源。 您可以将其用于标准 Adobe Analytics 实施、[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) 或 Experience Platform 数据收集 API。
 >
 
-标准查找（也称为 Adobe 提供的查找）可以增强 Customer Journey Analytics 的功能，用于报告一些本身并不是非常有用但在与其他数据结合时可以发挥作用的维度/属性。 示例包括移动设备属性、操作系统属性和浏览器维度，如浏览器版本号。 “标准查找”类似于查找数据集。 标准查找适用于整个 Experience Cloud 组织。 它们自动应用于包含特定XDM架构字段的所有事件数据集（有关特定字段的信息，请参阅下文）。 Adobe分类的每个架构位置都存在一个标准查找数据集。
+标准查找（也称为 Adobe 提供的查找）可以增强 Customer Journey Analytics 的功能，用于报告一些本身并不是非常有用但在与其他数据结合时可以发挥作用的维度/属性。 示例包括移动设备属性、操作系统属性和浏览器维度，如浏览器版本号。 “标准查找”类似于查找数据集。 标准查找适用于CX Enterprise组织。 它们自动应用于包含特定XDM架构字段的所有事件数据集（有关特定字段的信息，请参阅下文）。 Adobe分类的每个架构位置都存在一个标准查找数据集。
 
 在传统Adobe Analytics中，这些维度按自己的方式显示，但在Customer Journey Analytics中，您必须在创建数据视图时主动包含这些维度。 在“连接”工作流中，选择具有标准查找键标志的数据集。 数据视图 UI 自动知道包括所有标准查找维度以用于报告。 查找文件会在所有区域和所有帐户中自动保持为最新版本和可用。 这些文件将存储在与客户关联的特定于区域的组织中。
 

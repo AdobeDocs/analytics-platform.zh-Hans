@@ -4,18 +4,14 @@ description: 如果贵组织的防火墙阻止源自 Adobe 的 IP 地址，请�
 role: Admin
 exl-id: 0c3e7b2e-cb48-4e14-ae18-65258ebce1b4
 TQID: https://experienceleague.adobe.com/d-nNfumskelDKrgCPQpyoZIagJrGcniXyQgACaHh5tA
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
 workflow-type: tm+mt
-source-wordcount: 170
-ht-degree: 18%
+source-wordcount: 163
+ht-degree: 16%
 
 ---
 
@@ -35,12 +31,12 @@ ht-degree: 18%
 
 {style="table-layout:auto"}
 
-## Adobe Experience Cloud 域
+## CX Enterprise域
 
-除了上述域之外，Adobe Experience Cloud还依靠多个域来收集和导出报表。 有关此域列表，请参阅[Adobe Experience Cloud使用的域](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/data-collection/domains)。
+除了上述域外， CX Enterprise还依靠多个域进行数据收集和导出报告。 有关此域列表，请参阅[CX Enterprise使用的域](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)。
 
 >[!MORELIKETHIS]
 >
 >Customer Journey Analytics使用的[IP地址](ip-addresses.md)
 >
->[Adobe Experience Cloud使用的域](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/data-collection/domains)
+>CX Enterprise使用的[域](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)
