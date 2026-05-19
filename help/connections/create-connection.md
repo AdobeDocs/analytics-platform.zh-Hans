@@ -6,24 +6,14 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 TQID: https://experienceleague.adobe.com/90JULA8fFxPQSbVLHr3hJ8o5algJAfNz9SjjLFecyJc
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: ff99ee131e9bae9fc2815fb54e5b5c14577450f7
 workflow-type: tm+mt
-source-wordcount: 10330
+source-wordcount: 10348
 ht-degree: 92%
 
 ---
@@ -195,7 +185,7 @@ ht-degree: 92%
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [连接到数据源](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[连接到数据源](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"}。
 
 >[!ENDSHADEBOX]
 
@@ -231,7 +221,7 @@ ht-degree: 92%
 
 ### Customer Journey Analytics
 
-在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**&#x200B;屏幕中：
+在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**屏幕中：
 
 ![无标题连接设置](assets/create-conn1.png)
 
@@ -252,7 +242,7 @@ ht-degree: 92%
    | 列 | 描述 |
    |---|---|
    | **[!UICONTROL 数据集名称]** | 选择您要提取到 Customer Journey Analytics 的一个或多个数据集，并选择&#x200B;**[!UICONTROL 添加。]**<p>（如果您有许多数据集可供选择，可以使用数据集列表上方的搜索数据集搜索栏搜索正确的数据集。） |
-   | ![更多](/help/assets/icons/More.svg) | 选择![更多](/help/assets/icons/More.svg)，可打开选定数据集的上下文菜单。 根据数据集（的类型），您可以选择：<ul><li>![CrossSize75](/help/assets/icons/CrossSize400.svg)  **[!UICONTROL 删除数据集]**，以[删除一个数据集](#delete-a-dataset)。</li><li>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**，以[编辑一个数据集](#edit-a-dataset)。</li><li>![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**，以显示[&#128279;](#past-backfills)数据集过去的回填。 |
+   | ![更多](/help/assets/icons/More.svg) | 选择![更多](/help/assets/icons/More.svg)，可打开选定数据集的上下文菜单。 根据数据集（的类型），您可以选择：<ul><li>![CrossSize75](/help/assets/icons/CrossSize400.svg)  **[!UICONTROL 删除数据集]**，以[删除一个数据集](#delete-a-dataset)。</li><li>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**，以[编辑一个数据集](#edit-a-dataset)。</li><li>![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**，以显示](#past-backfills)数据集过去的回填[。 |
    | **[!UICONTROL 上次更新时间]** | 仅对于事件数据集，此设置会自动设置为 Experience Platform 中基于事件的架构的默认时间戳字段。 “N/A”表示该数据集不包含数据。 |
    | **[!UICONTROL 记录数]** | Experience Platform 中数据集上个月的总记录数。 |
    | **[!UICONTROL 架构]** | 在 Adobe Experience Platform 中创建数据集所依据的[架构。](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition) |
@@ -272,7 +262,7 @@ ht-degree: 92%
 
 [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
 
-在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**&#x200B;屏幕中：
+在&#x200B;**[!UICONTROL 连接]** > **[!UICONTROL *连接的名称&#x200B;*]**屏幕中：
 
 ![无标题连接设置](assets/create-conn1-b2b.png)
 
@@ -295,7 +285,7 @@ ht-degree: 92%
    | 列 | 描述 |
    |---|---|
    | **[!UICONTROL 数据集名称]** | 选择您要提取到 Customer Journey Analytics 的一个或多个数据集，并选择&#x200B;**[!UICONTROL 添加。]**<p>（如果您有许多数据集可供选择，可以使用数据集列表上方的搜索数据集搜索栏搜索正确的数据集。） |
-   | ![更多](/help/assets/icons/More.svg) | 选择![更多](/help/assets/icons/More.svg)，可打开选定数据集的上下文菜单。 根据数据集（的类型），您可以选择：<ul><li>![CrossSize75](/help/assets/icons/CrossSize400.svg)  **[!UICONTROL 删除数据集]**，以[删除一个数据集](#delete-a-dataset)。</li><li>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**，以[编辑一个数据集](#edit-a-dataset)。</li><li>![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**，以显示[&#128279;](#past-backfills)数据集过去的回填。 |
+   | ![更多](/help/assets/icons/More.svg) | 选择![更多](/help/assets/icons/More.svg)，可打开选定数据集的上下文菜单。 根据数据集（的类型），您可以选择：<ul><li>![CrossSize75](/help/assets/icons/CrossSize400.svg)  **[!UICONTROL 删除数据集]**，以[删除一个数据集](#delete-a-dataset)。</li><li>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**，以[编辑一个数据集](#edit-a-dataset)。</li><li>![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**，以显示](#past-backfills)数据集过去的回填[。 |
    | **[!UICONTROL 上次更新时间]** | 仅对于事件数据集，此设置会自动设置为 Experience Platform 中基于事件的架构的默认时间戳字段。 “N/A”表示该数据集不包含数据。 |
    | **[!UICONTROL 记录数]** | Experience Platform 中数据集上个月的总记录数。 |
    | **[!UICONTROL 架构]** | 在 Adobe Experience Platform 中创建数据集所依据的[架构。](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition) |
@@ -511,8 +501,8 @@ ht-degree: 92%
 | 数据集类型 | 描述 | 时间戳 | 架构 | 人员 ID <br/> 帐户 ID [!BADGE B2B 版]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} |
 |---|---|---|---|---|
 | **[!UICONTROL 事件]** | 表示时间事件的数据。 例如，网站访问量、互动量、交易量、POS 数据、调查数据、广告展示数据等等。 该数据可能是典型的点击流数据，带有客户 ID 或 Cookie ID 以及时间戳。 对于事件数据，您可以灵活地使用哪个ID作为人员ID。 | 设置为 [!UICONTROL Experience Platform] 中基于事件的架构的默认时间戳字段。 | 任何一个基于 XDM 类且具有&#x200B;*时间序列*&#x200B;行为的内置或自定义架构。 示例包括 *XDM 体验事件*&#x200B;或&#x200B;*XDM 决策事件*。 | 您可以选取您想要包含的人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。 在Experience Platform中定义的每个数据集架构，可以拥有自己定义的一个或多个身份集，并与身份命名空间关联。 这些标识中的任何一个都可以用作人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。 示例包括 Cookie ID、拼接 ID、用户 ID、跟踪代码、帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}等。 |
-| **[!UICONTROL 查找]** | 您可以将数据集添加为所有数据集类型中的字段查找：轮廓、查找和事件数据集（后者始终受支持）。 此附加功能扩展了 Customer Journey Analytics 的能力，以支持包括 B2B 在内的复杂数据模型。 此数据用于查找在“事件”、“轮廓”或“查找”数据中找到的值或键。 您最多可以添加三级查找。 （请注意，[派生字段](/help/data-views/derived-fields/derived-fields.md)不能用作连接内查找的匹配键。） 例如，您可以上传将事件数据中的数字 ID 映射到产品名称的查找数据。 有关示例，请参阅 [B2B 示例](/help/use-cases/b2b/example.md)。 | 不适用 | 任何基于 XDM 类且具有&#x200B;*记录*&#x200B;行为的内置或自定义架构，*XDM 个体轮廓*&#x200B;类除外。 | 不适用 |
-| **[!UICONTROL 轮廓]** | [!UICONTROL 事件]数据中应用于您的帐户、人员、用户或客户的数据。 例如，允许您上传关于客户的 CRM 数据。 | 不适用 | 任何基于 *XDM 个体轮廓*&#x200B;类的内置或自定义架构。 | 您可以选取您想要包含的人员 ID/帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。 在 [!DNL Experience Platform] 中定义的每个数据集（摘要数据集除外）都定义了自己的一组或多组人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。 例如，Cookie ID、拼接 ID、用户 ID、跟踪代码、帐户 ID 等。<br>![人员 ID &#x200B;](assets/person-id.png)**注意**：如果您创建的连接包含具有不同 ID 的数据集，报告会反映这一点。 要合并数据集，您需要使用相同的人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。 |
+| **[!UICONTROL 查找]** | 您可以将数据集添加为所有数据集类型中的字段查找：轮廓、查找和事件数据集（后者始终受支持）。 此附加功能扩展了 Customer Journey Analytics 的能力，以支持包括 B2B 在内的复杂数据模型。 此数据用于查找在“事件”、“轮廓”或“查找”数据中找到的值或键。 您最多可以添加三级查找。 例如，您可以上传将事件数据中的数字 ID 映射到产品名称的查找数据。 有关示例，请参阅 [B2B 示例](/help/use-cases/b2b/example.md)。 <br/><br/>**注释**： <ul><li>[派生字段](/help/data-views/derived-fields/derived-fields.md)不能用作连接内查找的匹配键。</li><li>[客户管理的密钥](/help/privacy/cmk.md)和[临时数据集](#ad-hoc-dataset)不支持大型查找。</li></ul> | 不适用 | 任何基于 XDM 类且具有&#x200B;*记录*&#x200B;行为的内置或自定义架构，*XDM 个体轮廓*&#x200B;类除外。 | 不适用 |
+| **[!UICONTROL 轮廓]** | [!UICONTROL 事件]数据中应用于您的帐户、人员、用户或客户的数据。 例如，允许您上传关于客户的 CRM 数据。 | 不适用 | 任何基于 *XDM 个体轮廓*&#x200B;类的内置或自定义架构。 | 您可以选取您想要包含的人员 ID/帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。 在 [!DNL Experience Platform] 中定义的每个数据集（摘要数据集除外）都定义了自己的一组或多组人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。 例如，Cookie ID、拼接 ID、用户 ID、跟踪代码、帐户 ID 等。<br>![人员 ID ](assets/person-id.png)**注意**：如果您创建的连接包含具有不同 ID 的数据集，报告会反映这一点。 要合并数据集，您需要使用相同的人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。 |
 | **摘要** | 不与任何个人 ID 相关联的时间序列数据。 摘要数据代表不同聚合级别的聚合数据，例如活动。 您可以在 Customer Journey Analytics 中使用这些数据来支持各种用例。 有关更多信息，请参阅[摘要数据](/help/data-views/summary-data.md)。 | 自动设置为 Experience Platform 中基于事件的摘要量度架构的默认时间戳字段。 仅支持每小时或每天的粒度。 | 任何基于 *XDM 摘要量度*&#x200B;类的内置或自定义架构。 | 不适用 |
 
 或者，上面列出的数据集类型也可以基于一个临时架构或关系架构，而不是基于 XDM 的一般架构。
@@ -639,7 +629,7 @@ ht-degree: 92%
 1. 为要编辑的数据集表中列出的数据集选择![更多](/help/assets/icons/More.svg)。
 1. 选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**。
 
-1. 在❶ **[!UICONTROL 数据集设置]**&#x200B;中，在&#x200B;**[!UICONTROL 编辑数据集：_数据集名称_]**&#x200B;对话框中配置[数据集设置](#dataset-settings)。
+1. 在❶ **[!UICONTROL 数据集设置]**&#x200B;中，在&#x200B;**[!UICONTROL 编辑数据集：_数据集名称_]**对话框中配置[数据集设置](#dataset-settings)。
 
    ![编辑数据集](assets/edit-dataset-b2c.png)
 
@@ -683,7 +673,7 @@ ht-degree: 92%
 1. 为要编辑的数据集表中列出的数据集选择![更多](/help/assets/icons/More.svg)。
 1. 选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑数据集]**。
 
-1. 在&#x200B;**[!UICONTROL 编辑数据集：_数据集名称_]**&#x200B;对话框中配置[数据集设置](#dataset-settings)。
+1. 在&#x200B;**[!UICONTROL 编辑数据集：_数据集名称_]**对话框中配置[数据集设置](#dataset-settings)。
 
    ![编辑数据集](assets/edit-dataset-b2b.png)
 
@@ -889,7 +879,7 @@ ht-degree: 92%
 
 ### 过去的回填
 
-在界面中选择![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;后，**[!UICONTROL 过去的回填： _数据集名称_]**&#x200B;对话框就会显示该数据集中最近的回填。
+在界面中选择![历史记录](/help/assets/icons/History.svg) **[!UICONTROL 过去的回填]**&#x200B;后，**[!UICONTROL 过去的回填： _数据集名称_]**对话框就会显示该数据集中最近的回填。
 
 
 ## 连接预览 {#preview}
@@ -970,5 +960,5 @@ Customer Journey Analytics 支持将身份标识映射作为个人 ID。 身份�
 >[!MORELIKETHIS]
 >
 >* [数据摄取概述](/help/data-ingestion/data-ingestion.md)
->* 博客：[如何利用 Adobe Customer Journey Analytics 中的事件、查找和轮廓数据集](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/how-to-leverage-event-lookup-and-profile-datasets-in-adobe-customer-journey-analytics-12699?profile.language=zh-Hans)
+>* 博客：[如何利用 Adobe Customer Journey Analytics 中的事件、查找和轮廓数据集](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/how-to-leverage-event-lookup-and-profile-datasets-in-adobe-customer-journey-analytics-12699)
 
