@@ -7,11 +7,19 @@ role: Admin
 exl-id: b861f765-b18d-4be2-b4c7-c66186d37d99
 autotag-review: '2026-05-19T09:38:40.111Z'
 TQID: 'https://experienceleague.adobe.com/az0B0Gzzu0pbb0TbpiZjW0Y-GysEptIETtg2bBFl-Uw'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: d76b9e53-27fb-4597-933f-419cc0dd46dbid: b3197353-f189-4932-8378-3f3bc40e6071id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: bf2b169f-d8b2-488a-97b9-f3bc9532e35cid: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 1187
@@ -77,7 +85,7 @@ ht-degree: 3%
 
 ### 流服务API
 
-或者，您可以使用API导出和计划数据集的导出。 使用流服务API](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets)在[导出数据集中记录了所涉及的步骤。
+或者，您可以使用API导出和计划数据集的导出。 使用流服务API[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets)在导出数据集中记录了所涉及的步骤。
 
 #### 快速入门
 
@@ -99,7 +107,7 @@ ht-degree: 3%
 
 #### 提供导出参数
 
-接下来，您必须[再使用[`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) API创建一个目标连接，用于存储数据集的导出参数](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-target-connection)。 这些导出参数包括位置、文件格式、压缩等。
+接下来，您必须[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-target-connection)再使用[`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) API创建一个目标连接，用于存储数据集的导出参数。 这些导出参数包括位置、文件格式、压缩等。
 
 #### 设置数据流
 

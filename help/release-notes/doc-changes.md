@@ -6,11 +6,33 @@ solution: Customer Journey Analytics
 feature: Release Notes
 autotag-review: '2026-05-19T11:00:09.733Z'
 TQID: 'https://experienceleague.adobe.com/hHcvSYqGtYuKbPLvtu2qALBNLA0cogWxEUYxu-ktUvM'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: b743a5d9-dc51-41ed-8b2f-86a1f8de430fid: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46dbid: e634a07b-b7ca-4af3-a124-3024ce559e17id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5eid: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2: id: a8e39571-4463-4aa3-8b3f-4e2341ecf3b3
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c1579802-ddd4-4214-8a91-97b2066abe11id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2:
+  - id: a8e39571-4463-4aa3-8b3f-4e2341ecf3b3
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 6915
@@ -33,17 +55,17 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | Content Analytics移动渠道 | 更新了[Content Analytics文档](/help/content-analytics/content-analytics.md)，以说明Content Analytics移动渠道的功能和配置。 |
 | **2026年4月** | |
 | 派生字段准则 | 添加了有关使用派生字段的[准则](/help/use-cases/data-views/derived-fields/guidelines.md)（最佳实践、护栏和常见隐患）的文章。 |
-| 添加了有关集成Journey Optimizer时可包含的两个数据集的缺失文档 | 为IMS组织启用高吞吐量事务性消息加载项时，连接中会包含另外两个非配置文件系统生成的数据集](/help/integrations/ajo.md#high-throughput-add-on-datasets)。[ |
+| 添加了有关集成Journey Optimizer时可包含的两个数据集的缺失文档 | 为IMS组织启用高吞吐量事务性消息加载项时，连接中会包含另外两个非配置文件系统生成的数据集[&#128279;](/help/integrations/ajo.md#high-throughput-add-on-datasets)。 |
 | 更新了同类群组分析用例 | 根据反馈将Analysis Workspace示例添加到同类群组分析用例中。 |
 | **2026 年 3 月** | |
-| 划分面板 | 重新构建了面板](/help/analysis-workspace/c-panels/panels.md#drop-zone)的[放置区域文档，以支持新的[划分](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel)功能。 |
-| 有关错误ID (BAVID)的技术说明 | 有关错误ID](/help/technotes/badids.md)的新[技术说明。 此技术说明解释了错误ID的定义（在Customer Journey Analytics界面中使用错误ID），以及如何调查连接中的数据以确定错误ID。 |
+| 划分面板 | 重新构建了面板[&#128279;](/help/analysis-workspace/c-panels/panels.md#drop-zone)的放置区域文档，以支持新的[划分](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel)功能。 |
+| 有关错误ID (BAVID)的技术说明 | 有关错误ID[&#128279;](/help/technotes/badids.md)的新技术说明。 此技术说明解释了错误ID的定义（在Customer Journey Analytics界面中使用错误ID），以及如何调查连接中的数据以确定错误ID。 |
 | 数据集在连接中预览重新设计 | 当您在基于人员的连接中[添加](/help/connections/create-connection.md#add-datasets)或[编辑](/help/connections/create-connection.md#edit-a-dataset)数据集时，更新了关于改进数据预览体验的文档，包括关于为启用拼接的数据集额外的[拼接预览信息](/help/stitching/use-stitching-ui.md#datasets-preview)的文档。 |
 | Content Analytics缩略图和预览 | 有关Content Analytics中的[缩略图](/help/content-analytics/report/report.md#thumbnails)和[预览](/help/content-analytics/report/report.md#previews)的其他可视化图表的文档。 |
 | **2026 年 2 月** | |
 | 标头覆盖 | 有关Content Analytics的额外[标头覆盖](/help/content-analytics/config/guided.md#header-overrides)配置的文档。 |
-| 计算量度护栏 | 更新了组织](/help/technotes/guardrails.md#segments-and-calculated-metrics)的最大计算量度数的[护栏。 最大数量现在是50,000。 |
-| 独立Content Analytics | 添加了有关Content Analytics](/help/content-analytics/config/standalone.md)的[独立配置的文档。 |
+| 计算量度护栏 | 更新了组织[&#128279;](/help/technotes/guardrails.md#segments-and-calculated-metrics)的最大计算量度数的护栏。 最大数量现在是50,000。 |
+| 独立Content Analytics | 添加了有关Content Analytics[&#128279;](/help/content-analytics/config/standalone.md)的独立配置的文档。 |
 | **2026 年 1 月** | |
 | 架建架构 | 向[架构您的架构以用于Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)添加了大量信息和上下文。 |
 
