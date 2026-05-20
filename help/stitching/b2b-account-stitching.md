@@ -5,13 +5,16 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 hide: true
 role: Admin
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-source-git-commit: c444ee455da66fe6f4a95a362b21b50adc328a11
+autotag-review: '2026-05-19T11:01:07.331Z'
+TQID: 'https://experienceleague.adobe.com/-7rHOhYVCp-nSMqdE7YlAlCJ0zRQYvPOViMHSCNuKV8'
+product_v2: id: d3f42e9e-bb51-4077-a732-358b801d8b29id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 5964c5f87364e5ba78e866d753819d7e7f605b30
 workflow-type: tm+mt
-source-wordcount: 988
+source-wordcount: 1169
 ht-degree: 2%
 
 ---
@@ -24,11 +27,11 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
 
 >[!NOTE]
 >
->在配置功能之前，B2B帐户拼合要求功能在您的环境中可用。
+>在配置功能之前，B2B帐户拼接要求您有权使用环境中的[Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md)。
 
 帐户拼接对数据集执行以下操作：
 
-* **提升人员身份**：使用身份图，将每个事件上的人员ID提升到所需的身份命名空间。
+* **提升人员身份**：使用身份图将每个事件上的人员ID提升到配置的身份命名空间。
 * **添加缺少的帐户信息**：对于包含人员ID的事件，[人员到帐户的映射](#prerequisites)用于派生和添加帐户信息。 有关事件本身的任何帐户信息均用作回退方法。
 
 ## 先决条件
@@ -43,11 +46,44 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
 >
 >**[!UICONTROL 个人对帐户]**&#x200B;数据集中的人员ID字段必须在架构中标记为标识。
 
-## 启用帐户拼接
+## 启用帐户拼接 {#enable-account-stitching}
 
 您可以在连接级别启用和配置B2B帐户拼接，然后对该连接中的单个事件数据集激活帐户拼接。
 
-### 配置B2B拼接设置
+### 配置B2B拼接设置 {#configure-b2b-stitching-settings}
+
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_open_configuration"
+>title="配置B2B帐户拼接"
+>abstract="选择&#x200B;**[!UICONTROL 打开B2B拼接配置]**&#x200B;以配置B2B帐户拼接。 如果尚未保存连接，则该配置将标记为&#x200B;**[!UICONTROL _未保存的更改_]**。"
+
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_person_identifier_namespace"
+>title="人员标识符命名空间"
+>abstract="选择您希望将任何人员ID提升到的人员标识符命名空间，例如电子邮件。"
+
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_person_to_account_dataset"
+>title="人员到帐户数据集"
+>abstract="选择将人员ID映射到帐户ID的查找数据集。"
+
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_person"
+>title="人员"
+>abstract="在数据集中选择包含人员ID的字段。 该字段必须标记为标识，并且不能与&#x200B;**[!UICONTROL 帐户]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。"
+
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_account"
+>title="帐户"
+>abstract="在数据集中选择包含帐户ID的字段。 该字段不能与&#x200B;**[!UICONTROL 人员]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。"
+
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_start_time"
+>title="开始时间"
+>abstract="选择指示人员与帐户关系何时生效的时间戳字段。"
+>additional-url=""
+additional-url=""
+
 
 1. 在Customer Journey Analytics中，导航到&#x200B;**[!UICONTROL 连接]**&#x200B;和[创建新连接](/help/connections/create-connection.md#create-a-connection)或[编辑现有连接](/help/connections/create-connection.md#edit-a-connection)。
 
@@ -74,9 +110,9 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
       | 字段 | 必需 | 描述 |
       |---|:---:|---|
       | **[!UICONTROL 个人到帐户数据集]** | ![必需](/help/assets/icons/Required.svg) | 选择将人员映射到帐户的查找（记录或非时间序列数据集）。 |
-      | **[!UICONTROL 人员字段]** | ![必需](/help/assets/icons/Required.svg) | 在数据集中选择包含人员ID的字段。 该字段必须标记为标识，并且不能与&#x200B;**[!UICONTROL 帐户]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。 |
-      | **[!UICONTROL 帐户字段]** | ![必需](/help/assets/icons/Required.svg) | 在数据集中选择包含帐户ID的字段。 该字段不能与&#x200B;**[!UICONTROL 人员]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。 |
-      | **开始时间字段** | | 选择指示人员与帐户关系何时生效的时间戳字段。 |
+      | **[!UICONTROL 人员]** | ![必需](/help/assets/icons/Required.svg) | 在数据集中选择包含人员ID的字段。 该字段必须标记为标识，并且不能与&#x200B;**[!UICONTROL 帐户]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。 |
+      | **[!UICONTROL 帐户]** | ![必需](/help/assets/icons/Required.svg) | 在数据集中选择包含帐户ID的字段。 该字段不能与&#x200B;**[!UICONTROL 人员]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。 |
+      | **开始时间** | | 选择指示人员与帐户关系何时生效的时间戳字段。 |
 
       >[!NOTE]
       >
@@ -88,6 +124,15 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
 
 
 ### 对事件数据集启用B2B拼合
+
+
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_enable_person_to_account"
+>title="启用人员帐户拼合"
+>abstract="如果启用，此数据集将使用B2B帐户拼接。 选定的人员ID用于根据人员到帐户数据集查找帐户ID。<br/>如果禁用，此数据集&#x200B;*不会*&#x200B;使用B2B帐户拼接。"
+>additional-url=""
+additional-url=""
+
 
 在连接级别配置B2B拼接后，必须为要拼接的每个事件数据集单独启用B2B帐户拼接。
 
@@ -101,7 +146,7 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
 
 当&#x200B;**[!UICONTROL 启用人员到帐户拼接]**&#x200B;为&#x200B;**于**&#x200B;时，您已为数据集配置了B2B帐户拼接。
 
-* 需要配置人员ID。 该人员ID用于根据[人员到帐户数据集](#prerequisites)查找帐户ID。
+* 需要配置人员ID。 该人员ID用于根据[人员对帐户数据集](#prerequisites)查找帐户ID。
 * 帐户ID的配置是可选的。
 
 ![B2B帐户正在拼接](assets/b2b-event-dataset-stitching-on.png)上的事件数据集
