@@ -22,9 +22,9 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 5513a755345188e6f7ff5d4c566d807d09e25f68
+source-git-commit: c6b215f9fe718d0d3e8f81b7f55421c909b69c5a
 workflow-type: tm+mt
-source-wordcount: 6457
+source-wordcount: 6499
 ht-degree: 91%
 
 ---
@@ -87,6 +87,15 @@ ht-degree: 91%
 
 
 ## 配置可视化图表设置
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_percentage_value"
+>title="选择如何计算百分比"
+>abstract="每个节点上显示的百分比是基于您配置的主要和辅助量度。 您可以选择这个百分比与起始节点、上一个节点或者与报告包中的所有数据相关联。"
+
+<!-- markdownlint-enable MD034 -->
 
 历程画布标头中提供了各种不同的配置选项。
 
