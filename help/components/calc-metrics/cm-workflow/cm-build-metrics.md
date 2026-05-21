@@ -4,11 +4,21 @@ title: 生成度量
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
 TQID: https://experienceleague.adobe.com/ilqzP7cMRQqi7-zoylBlfYGv-mgRqbC-66utGrNVFdY
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1693
@@ -146,14 +156,14 @@ Customer Journey Analytics 提供了一个画布，用于拖放维度、量度�
 * 要从某个维度添加区段容器：
 
    1. 将![维度](/help/assets/icons/Dimensions.svg) **[!UICONTROL 维度]**&#x200B;组件从组件面板拖放到 **[!UICONTROL 将量度、维度、维度项、区段和/或函数拖放到此处]**。 您可以使用组件栏中的![搜索](/help/assets/icons/Search.svg)来搜索特定组件。
-   1. 在&#x200B;**[!UICONTROL 从维度创建区段]**&#x200B;弹出窗口中，定义该区段的条件。 从运算符列表中选择，并选择一个值或输入一个值。 例如，**[!UICONTROL 月份]****[!UICONTROL 等于]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`。
+   1. 在&#x200B;**[!UICONTROL 从维度创建区段]**&#x200B;弹出窗口中，定义该区段的条件。 从运算符列表中选择，并选择一个值或输入一个值。 例如，**[!UICONTROL 月份]**&#x200B;**[!UICONTROL 等于]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`。
    1. 选择&#x200B;**[!UICONTROL 完成]**。 现在，**[!UICONTROL 定义]**&#x200B;中添加了一个区段容器。
 
 
 * 要从某个区段添加区段容器，您可以使用：
 
    * 将![分段](/help/assets/icons/Segmentation.svg)**[!UICONTROL 区段]**&#x200B;组件从组件面板拖放到 **[!UICONTROL 将量度、维度、维度项、区段和/或函数拖放到此处]**。 您可以使用组件栏中的![搜索](/help/assets/icons/Search.svg)来搜索特定区段。
-使用区段的名称，区段容器被自动添加到**[!UICONTROL 定义]**&#x200B;中。
+使用区段的名称，区段容器被自动添加到&#x200B;**[!UICONTROL 定义]**&#x200B;中。
 
    * 将![分段](/help/assets/icons/Segmentation.svg)**[!UICONTROL 区段]**&#x200B;组件从组件面板拖放到通用容器上。 该容器变成了一个区段容器。
 

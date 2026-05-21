@@ -5,11 +5,22 @@ exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
 TQID: https://experienceleague.adobe.com/BPbSzyh6eg3QC6NcAVgo06GAISzVH2CX35Z-Q32xMbE
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
 source-wordcount: 2478
@@ -87,7 +98,7 @@ ht-degree: 98%
 
 1. 使用[日期预览](#data-preview)面板解释数据。
 
-1. 选择&#x200B;**[!UICONTROL [!UICONTROL 查看示例 ID]]** 来查看此受众中的 ID 示例。 在 **[!UICONTROL ID 示例]**&#x200B;对话框中，您可以使用![搜索](/help/assets/icons/Search.svg)[!UICONTROL *搜索 ID 示例*]&#x200B;来搜索 ID 示例。
+1. 选择&#x200B;**[!UICONTROL [!UICONTROL 查看示例 ID]]** 来查看此受众中的 ID 示例。 在 **[!UICONTROL ID 示例]**&#x200B;对话框中，您可以使用![搜索](/help/assets/icons/Search.svg) [!UICONTROL *搜索 ID 示例*]&#x200B;来搜索 ID 示例。
 
 1. 双击受众配置，然后选择&#x200B;**[!UICONTROL 发布]**。
 您会收到一条受众已发布的确认消息。 发布只需要一两分钟，这个受众就会出现在 Experience Platform 上。
@@ -107,7 +118,7 @@ ht-degree: 98%
 | **[!UICONTROL 标记]** | 出于组织目的而要分配给受众的任何标记。 您可以选择一个或多个预先存在的标记，也可以输入一个新标记。 |
 | **[!UICONTROL 描述]** | 对受众的描述，以区别于其他人。 例如，`Build an audience of really interested potential car buyers` |
 | **[!UICONTROL 刷新频率]** | 您刷新受众所要采用的频率。<p/>您可以选择 <ul><li>**[!UICONTROL 一次性]** 受众：无需刷新的受众（默认）。 例如，该选项可能有助于特定的一次性营销活动。<br/>您必须指定一个&#x200B;**[!UICONTROL 一次性的日期范围]**。 您可以使用![日程表](/help/assets/icons/Calendar.svg)来输入日期范围。</li><li>刷新的受众。 您可以从下列选项中进行选择：<ul><li>**[!UICONTROL 每 4 小时]**：每 4 小时刷新一次的受众。</li><li>**[!UICONTROL 每日]**：每日刷新一次的受众</li><li>**[!UICONTROL 每周]**：每周刷新一次的受众。</li><li>**[!UICONTROL 每月]**：每月刷新一次的受众</li></ul></li>若要刷新观众，您必须指定：<ul><li>**[!UICONTROL 刷新回顾窗口]**。 定义从今天开始评估受众的回顾天数。 您可以从选项中进行选择或定义自定义时间。 最长为 90 天。</li><li>**[!UICONTROL 到期日期]**：定义受众停止刷新的时间。 您可以使用![日程表](/help/assets/icons/Calendar.svg)选择日期。 默认值为创建日期开始 1 年。 到期受众的处理方式与到期的计划报告类似。 管理员会在受众到期前一个月收到一封电子邮件。</li></ul> 请注意，受众刷新次数限制为 75 到 150 次，具体取决于您的 Customer Journey Analytics 权限。</li></ul> |
-| **[!UICONTROL 过滤器]** | 过滤器是受众的主要输入。 将一个或多个区段从左侧![分段](/help/assets/icons/Segmentation.svg)**[!UICONTROL 区段]**&#x200B;面板拖放到区段区域。 您可以使用![搜索](/help/assets/icons/Search.svg)[!UICONTROL *搜索区段*]&#x200B;来搜索区段。 您最多可以添加 20 个区段。 区段可以与 **[!UICONTROL And]** 或 **[!UICONTROL Or]** 运算符相连。<p>从 Analysis Workspace 中的可视化图表（例如自由格式表或“历程”画布）创建受众时，应用于面板或列的任何区段都会保留。 您可以移除任何自动应用的区段。</p> |
+| **[!UICONTROL 过滤器]** | 过滤器是受众的主要输入。 将一个或多个区段从左侧![分段](/help/assets/icons/Segmentation.svg)**[!UICONTROL 区段]**&#x200B;面板拖放到区段区域。 您可以使用![搜索](/help/assets/icons/Search.svg) [!UICONTROL *搜索区段*]&#x200B;来搜索区段。 您最多可以添加 20 个区段。 区段可以与 **[!UICONTROL And]** 或 **[!UICONTROL Or]** 运算符相连。<p>从 Analysis Workspace 中的可视化图表（例如自由格式表或“历程”画布）创建受众时，应用于面板或列的任何区段都会保留。 您可以移除任何自动应用的区段。</p> |
 | **[!UICONTROL 数据预览]** | 选择![信息](/help/assets/icons/Info.svg)可显示或隐藏所选日期范围的[数据预览](#data-preview)。 |
 
 ## 数据预览
