@@ -7,19 +7,11 @@ hide: true
 role: Admin
 autotag-review: '2026-05-19T11:01:07.331Z'
 TQID: 'https://experienceleague.adobe.com/-7rHOhYVCp-nSMqdE7YlAlCJ0zRQYvPOViMHSCNuKV8'
-product_v2:
-  - id: d3f42e9e-bb51-4077-a732-358b801d8b29
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: d3f42e9e-bb51-4077-a732-358b801d8b29id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 5964c5f87364e5ba78e866d753819d7e7f605b30
 workflow-type: tm+mt
 source-wordcount: 1169
@@ -90,7 +82,7 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
 >title="开始时间"
 >abstract="选择指示人员与帐户关系何时生效的时间戳字段。"
 >additional-url=""
->additional-url=""
+additional-url=""
 
 
 1. 在Customer Journey Analytics中，导航到&#x200B;**[!UICONTROL 连接]**&#x200B;和[创建新连接](/help/connections/create-connection.md#create-a-connection)或[编辑现有连接](/help/connections/create-connection.md#edit-a-connection)。
@@ -139,7 +131,7 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
 >title="启用人员帐户拼合"
 >abstract="如果启用，此数据集将使用B2B帐户拼接。 选定的人员ID用于根据人员到帐户数据集查找帐户ID。<br/>如果禁用，此数据集&#x200B;*不会*&#x200B;使用B2B帐户拼接。"
 >additional-url=""
->additional-url=""
+additional-url=""
 
 
 在连接级别配置B2B拼接后，必须为要拼接的每个事件数据集单独启用B2B帐户拼接。
