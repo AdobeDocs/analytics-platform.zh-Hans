@@ -88,7 +88,7 @@ Analysis Workspace 中的组件包括量度、维度、区段和日期范围，�
 
    | 组件操作 | 描述 |
    |--- |--- |
-   | ![Label](/help/assets/icons/Label.svg)[!UICONTROL **标记**] | 通过将标记应用于组件来组织或管理组件。 然后，您可以通过选择![Filter](/help/assets/icons/Filter.svg)或者键入 `#` 在左侧面板中按标记搜索。 标记在组件管理器中也可用作过滤器。 |
+   | ![Label](/help/assets/icons/Label.svg) [!UICONTROL **标记**] | 通过将标记应用于组件来组织或管理组件。 然后，您可以通过选择![Filter](/help/assets/icons/Filter.svg)或者键入 `#` 在左侧面板中按标记搜索。 标记在组件管理器中也可用作过滤器。 |
    | ![Star](/help/assets/icons/Star.svg) [!UICONTROL **收藏夹**] | 将组件添加到您的收藏夹列表中。 与标记相似，您可在左侧面板中按“收藏夹”进行搜索，然后在组件管理器中对其进行过滤。 |
    | ![StarOutline](/help/assets/icons/StarOutline.svg) **[!UICONTROL 取消收藏]** | 将组件从您的收藏夹列表中移除。 |
    | ![复选标记](/help/assets/icons/Checkmark.svg) [!UICONTROL **批准**] | 将组件标记为“已批准”可告知用户该组件得到了组织的批准。 与标记一样，您可以在左侧面板中按“已批准”进行搜索和筛选。 ![Checkmark](/help/assets/icons/Checkmark.svg)标识的是已批准的组件。 |
