@@ -5,10 +5,27 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 79b3ca663af6c383eed7ec81e9c430855669d19b
+TQID: https://experienceleague.adobe.com/RrX-gp2IY-Ny1D1yzR2whV2GuU98mysma8tQmUEubF8
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '3462'
-ht-degree: 89%
+source-wordcount: 3756
+ht-degree: 87%
 
 ---
 
@@ -16,19 +33,19 @@ ht-degree: 89%
 
 {{select-package}}
 
-通过 [!DNL Customer Journey Analytics BI extension]，SQL 可访问您在 Customer Journey Analytics 中定义的[数据视图](./data-views.md)。您的数据工程师和分析师可能更熟悉 Power BI、Tableau Desktop 或其他商业智能和可视化工具（也称为 BI 工具）。他们现在可以基于 Customer Journey Analytics 用户在创建 Analysis Workspace 项目时使用的相同数据视图来创建报告和仪表板。
+通过 [!DNL Customer Journey Analytics BI extension]，SQL 可访问您在 Customer Journey Analytics 中定义的[数据视图](./data-views.md)。 您的数据工程师和分析师可能更熟悉 Power BI、Tableau Desktop 或其他商业智能和可视化工具（也称为 BI 工具）。 他们现在可以基于 Customer Journey Analytics 用户在创建 Analysis Workspace 项目时使用的相同数据视图来创建报告和仪表板。
 
-Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/home) 是 Experience Platform 数据湖中可用数据的 SQL 接口。启用 [!DNL Customer Journey Analytics BI extension] 后，[!DNL Query Service]的功能将得到扩展，以便在[!DNL Query Service]会话中以表或视图的形式查看 Customer Journey Analytics 数据视图。因此，将[!DNL Query Service]用作其 PostgresSQL 接口的商业智能工具可以无缝地从这项扩展的功能中受益。
+Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/home) 是 Experience Platform 数据湖中可用数据的 SQL 接口。 启用 [!DNL Customer Journey Analytics BI extension] 后，[!DNL Query Service]的功能将得到扩展，以便在[!DNL Query Service]会话中以表或视图的形式查看 Customer Journey Analytics 数据视图。 因此，将[!DNL Query Service]用作其 PostgresSQL 接口的商业智能工具可以无缝地从这项扩展的功能中受益。
 
 主要好处是：
 
-* 无需在 BI 工具中重新创建 Customer Journey Analytics 数据视图的等效表示形式。<br/>有关数据视图功能的更多信息，请参阅[数据视图](data-views.md)，从而了解必须重新创建的内容。
+* 无需在 BI 工具中重新创建 Customer Journey Analytics 数据视图的等效表示形式。 <br/>有关数据视图功能的更多信息，请参阅[数据视图](data-views.md)，从而了解必须重新创建的内容。
 * BI 工具和 Customer Journey Analytics 之间的报告和分析具有更高的一致性。
 * 将 Customer Journey Analytics 数据与 BI 工具中已有的其他数据源结合起来。
 
 ## 先决条件
 
-要使用此功能，您可以使用过期型或非过期型的凭据将 BI 工具连接到 [!DNL Customer Journey Analytics BI extension]。[凭据指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials)提供了有关如何设置过期型凭据或不过期型凭据的更多信息。
+要使用此功能，您可以使用过期型或非过期型的凭据将 BI 工具连接到 [!DNL Customer Journey Analytics BI extension]。 [凭据指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials)提供了有关如何设置过期型凭据或不过期型凭据的更多信息。
 以下是设置所需权限的其他步骤。
 <!---   Enable the [!UICONTROL Customer Journey Analytics BI extension] in your Experience Platform organization. -->
 
@@ -48,10 +65,10 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
 要使用非过期型凭据：
 
-1. 在Experience Platform[中创建](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials#non-expiring-credentials)未过期的凭据。 如果要使用已存在的未过期的凭据，请确保这些凭据[已迁移到OAuth](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials#migrate-credentials)。
+1. 在Experience Platform[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials#non-expiring-credentials)中创建未过期的凭据。 如果要使用已存在的未过期的凭据，请确保这些凭据[已迁移到OAuth](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials#migrate-credentials)。
 
 1. 确保Customer Journey Analytics产品和产品配置文件具有未过期的凭据。 您必须是组织系统管理员才能执行以下步骤。
-   1. 从&#x200B;**[!UICONTROL 应用程序]**&#x200B;中选择![Admin Console](/help/assets/icons/Apps.svg)。
+   1. 从![应用程序](/help/assets/icons/Apps.svg)中选择&#x200B;**[!UICONTROL Admin Console]**。
    1. 确认已将未过期的凭据添加到API凭据列表中。
       1. 从顶部菜单中选择&#x200B;**[!UICONTROL 用户]**。
       1. 从左边栏中选择&#x200B;**[!UICONTROL API凭据]**。
@@ -59,7 +76,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
       1. 确保未过期的API凭据有权访问Customer Journey Analytics产品和配置文件。
 
-         1. 为![EQS-...](/help/assets/icons/ProductDetails.svg)未过期的API凭据选择&#x200B;**[!UICONTROL 产品详细信息]**。
+         1. 为&#x200B;**[!UICONTROL EQS-...]**&#x200B;未过期的API凭据选择![产品详细信息](/help/assets/icons/ProductDetails.svg)。
          1. 从&#x200B;**[!UICONTROL EQS-...]**&#x200B;产品详细信息窗格中，选择![更多](/help/assets/icons/More.svg)并选择&#x200B;**[!UICONTROL 编辑API凭据]**。
          1. 在&#x200B;**[!UICONTROL 编辑API凭据]**&#x200B;对话框中，验证&#x200B;**[!UICONTROL 分配的配置文件]**。 如果未列出任何Customer Journey Analytics产品：
             1. 选择![添加](/help/assets/icons/Add.svg)并选择&#x200B;**[!UICONTROL Customer Journey Analytics]**。
@@ -68,7 +85,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
 1. 验证您是否在Experience Platform查询服务中看到不会过期的API凭据。
 
-   1. 从&#x200B;**[!UICONTROL 应用程序]**&#x200B;中选择![Experience Platform](/help/assets/icons/Apps.svg)。
+   1. 从![应用程序](/help/assets/icons/Apps.svg)中选择&#x200B;**[!UICONTROL Experience Platform]**。
    1. 从左边栏中选择&#x200B;**[!UICONTROL 查询]**。
    1. 从顶部菜单中选择&#x200B;**[!UICONTROL 凭据]**。
    1. 您应使用在步骤1中提供的名称，在&#x200B;**[!UICONTROL 未过期的凭据]**&#x200B;列表中看到未过期的API凭据。
@@ -93,7 +110,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
 1. 选择![创建查询](assets/Smock_AddCircle_18_N.svg)**[!UICONTROL **&#x200B;创建查询&#x200B;**]**。
 
-1. 从`cja`数据库&#x200B;**[!UICONTROL 下拉菜单的数据库列表中选择沙盒的]**&#x200B;数据库。 例如：`prod:cja`。
+1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单的数据库列表中选择沙盒的`cja`数据库。 例如：`prod:cja`。
 
 1. 要执行查询，请键入 SQL 语句并选择![播放](assets/Smock_Play_18_N.svg)按钮（或按 `[SHIFT]` + `[ENTER]`）。
 
@@ -108,7 +125,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    1. 从顶部栏中选择&#x200B;**[!UICONTROL **&#x200B;凭据&#x200B;**]**。
 
-   1. 从`cja`数据库&#x200B;**[!UICONTROL 下拉菜单的数据库列表中选择沙盒的]**&#x200B;数据库。 例如：`prod:cja`。
+   1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单的数据库列表中选择沙盒的`cja`数据库。 例如：`prod:cja`。
 
    1. 若要复制命令字符串，请使用 **[!UICONTROL **&#x200B; PSQL 命令&#x200B;**]**&#x200B;部分中的![复制](assets/Smock_Copy_18_N.svg)。
 
@@ -123,7 +140,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
 ### BI 工具
 
-目前，对于下列工具，[!DNL Customer Journey Analytics BI extension] 已得到支持和测试。其他使用 PSQL 接口的 BI 工具也能工作，但尚未获得正式支持。
+目前，对于下列工具，[!DNL Customer Journey Analytics BI extension] 已得到支持和测试。 其他使用 PSQL 接口的 BI 工具也能工作，但尚未获得正式支持。
 
 +++ Power BI
 
@@ -133,7 +150,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    1. 从顶部栏中选择&#x200B;**[!UICONTROL **&#x200B;凭据&#x200B;**]**。
 
-   1. 从`cja`数据库&#x200B;**[!UICONTROL 下拉菜单的数据库列表中选择沙盒的]**&#x200B;数据库。 例如：`prod:cja`。
+   1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单的数据库列表中选择沙盒的`cja`数据库。 例如：`prod:cja`。
 
    1. 如果需要，使用![复制](assets/Smock_Copy_18_N.svg)在 Power BI 中复制每个 Postgres 凭据参数（[!UICONTROL 主机]、[!UICONTROL 端口]、[!UICONTROL 数据库]、[!UICONTROL 用户名] 等）。
 
@@ -151,11 +168,11 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
       1. 将 Experience Platform 查询[!UICONTROL 凭据]中的&#x200B;**[!UICONTROL **&#x200B;数据库&#x200B;**]**&#x200B;参数粘贴到&#x200B;**[!UICONTROL **&#x200B;数据库&#x200B;**]**&#x200B;文本字段中。
 
-         将 `?FLATTEN` 添加到&#x200B;**[!UICONTROL **&#x200B;数据库&#x200B;**]**&#x200B;参数，例如，使其显示内容为 `prod:cja?FLATTEN`。有关更多信息，请参阅[扁平化处理嵌套数据结构以用于第三方 BI 工具](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/key-concepts/flatten-nested-data)。
+         将 `?FLATTEN` 添加到&#x200B;**[!UICONTROL **&#x200B;数据库&#x200B;**]**&#x200B;参数，例如，使其显示内容为 `prod:cja?FLATTEN`。 有关更多信息，请参阅[扁平化处理嵌套数据结构以用于第三方 BI 工具](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/key-concepts/flatten-nested-data)。
 
       1. 当提示输入&#x200B;**[!UICONTROL 数据连接]**&#x200B;模式时，请选择 **[!UICONTROL DirectQuery]**。
 
-      1. 系统会提示您输入&#x200B;**[!UICONTROL 用户名]**&#x200B;和&#x200B;**[!UICONTROL 密码]**。使用 Experience Platform 查询[!UICONTROL 凭据]中的等效参数。
+      1. 系统会提示您输入&#x200B;**[!UICONTROL 用户名]**&#x200B;和&#x200B;**[!UICONTROL 密码]**。 使用 Experience Platform 查询[!UICONTROL 凭据]中的等效参数。
 
 
    1. 成功登录后，Customer Journey Analytics 数据视图表将显示在 Power BI 的&#x200B;**[!UICONTROL **&#x200B;导航器&#x200B;**]**&#x200B;中。
@@ -164,7 +181,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    与一个或多个选定表关联的所有维度和量度都显示在右窗格中，可供您在可视化图表中使用。
 
-   有关更多信息，请参阅[将 Power BI 连接到 Query Service](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/clients/power-bi)。有关详细示例，另参见 [BI 扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)。
+   有关更多信息，请参阅[将 Power BI 连接到 Query Service](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/clients/power-bi)。 有关详细示例，另参见 [BI 扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)。
 
 +++
 
@@ -176,7 +193,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    1. 从顶部栏中选择&#x200B;**[!UICONTROL **&#x200B;凭据&#x200B;**]**。
 
-   1. 从`cja`数据库&#x200B;**[!UICONTROL 下拉菜单的数据库列表中选择沙盒的]**&#x200B;数据库。 例如：`prod:cja`。
+   1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单的数据库列表中选择沙盒的`cja`数据库。 例如：`prod:cja`。
 
    1. 如果需要，使用![复制](assets/Smock_Copy_18_N.svg)在 Tableau Desktop 中复制每个 Postgres 凭据参数（[!UICONTROL 主机]、[!UICONTROL 端口]、[!UICONTROL 数据库]、[!UICONTROL 用户名] 等）。
 
@@ -194,7 +211,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
       1. 将 Experience Platform 查询[!UICONTROL 凭据]中的&#x200B;**[!UICONTROL **&#x200B;数据库&#x200B;**]**&#x200B;参数粘贴到&#x200B;**[!UICONTROL **&#x200B;数据库&#x200B;**]**&#x200B;文本字段中。
 
-         将 `%3FFLATTEN` 添加到&#x200B;**[!UICONTROL **&#x200B;数据库&#x200B;**]**&#x200B;参数，例如，使其显示内容为 `prod:cja%3FFLATTEN`。有关更多信息，请参阅[扁平化处理嵌套数据结构以用于第三方 BI 工具](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/key-concepts/flatten-nested-data)。
+         将 `%3FFLATTEN` 添加到&#x200B;**[!UICONTROL **&#x200B;数据库&#x200B;**]**&#x200B;参数，例如，使其显示内容为 `prod:cja%3FFLATTEN`。 有关更多信息，请参阅[扁平化处理嵌套数据结构以用于第三方 BI 工具](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/key-concepts/flatten-nested-data)。
 
       1. 从&#x200B;**[!UICONTROL **&#x200B;身份验证&#x200B;**]**&#x200B;列表中选择&#x200B;**[!UICONTROL **&#x200B;用户名和密码&#x200B;**]**。
 
@@ -210,7 +227,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    您现在可以使用数据视图表中的数据来构建报告和可视化图表。
 
-   有关更多信息，请参阅[将 Tableau 连接到 Query Service](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/clients/tableau)。有关详细示例，另参见 [BI 扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)。
+   有关更多信息，请参阅[将 Tableau 连接到 Query Service](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/clients/tableau)。 有关详细示例，另参见 [BI 扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)。
 
 +++
 
@@ -222,7 +239,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    1. 从顶部栏中选择&#x200B;**[!UICONTROL **&#x200B;凭据&#x200B;**]**。
 
-   1. 从`cja`数据库&#x200B;**[!UICONTROL 下拉菜单的数据库列表中选择沙盒的]**&#x200B;数据库。 例如：`prod:cja`。
+   1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单的数据库列表中选择沙盒的`cja`数据库。 例如：`prod:cja`。
 
    1. 如果需要，使用![复制](assets/Smock_Copy_18_N.svg)在 Looker 中复制每个 Postgres 凭据参数（[!UICONTROL 主机]、[!UICONTROL 端口]、[!UICONTROL 数据库]、[!UICONTROL 用户名] 等）。
 
@@ -231,13 +248,13 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
    1. 从左侧边栏中选择&#x200B;**[!UICONTROL 管理员]**。
    1. 选择&#x200B;**[!UICONTROL 连接]**。
    1. 选择&#x200B;**[!UICONTROL 添加连接]**。
-   1. 在&#x200B;**[!UICONTROL 将数据库连接到 Looker]** 屏幕上，在设置新连接时粘贴相应的值。确保选择 **[!UICONTROL PostgreSQL 9.5+]** 作为方言。
+   1. 在&#x200B;**[!UICONTROL 将数据库连接到 Looker]** 屏幕上，在设置新连接时粘贴相应的值。 确保选择 **[!UICONTROL PostgreSQL 9.5+]** 作为方言。
    1. 选择&#x200B;**[!UICONTROL 测试]**&#x200B;来测试您的连接。
    1. 成功后，选择&#x200B;**[!UICONTROL 更新]**&#x200B;来保存您的连接。
 
    您现在可以使用数据视图表中的数据来构建报告和可视化图表。
 
-   有关更多信息，请参阅[将 Looker 连接到查询服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/clients/looker)。有关详细示例，另参见 [BI 扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)。
+   有关更多信息，请参阅[将 Looker 连接到查询服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/clients/looker)。 有关详细示例，另参见 [BI 扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)。
 
 +++
 
@@ -249,7 +266,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    1. 从顶部栏中选择&#x200B;**[!UICONTROL **&#x200B;凭据&#x200B;**]**。
 
-   1. 从`cja`数据库&#x200B;**[!UICONTROL 下拉菜单的数据库列表中选择沙盒的]**&#x200B;数据库。 例如：`prod:cja`。
+   1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单的数据库列表中选择沙盒的`cja`数据库。 例如：`prod:cja`。
 
    1. 如果需要，使用![复制](assets/Smock_Copy_18_N.svg)在 Jupyter Notebook 中复制每个 Postgres 凭据参数（[!UICONTROL 主机]、[!UICONTROL 端口]、[!UICONTROL 数据库]、[!UICONTROL 用户名] 等）。
 
@@ -261,7 +278,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    成功后，您可以使用数据来构建报告和可视化图表。
 
-   有关更多信息，请参阅[将 Jupyter Notebook 连接到查询服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/clients/jupyter-notebook)。有关详细示例，另参见 [BI 扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)。
+   有关更多信息，请参阅[将 Jupyter Notebook 连接到查询服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/clients/jupyter-notebook)。 有关详细示例，另参见 [BI 扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)。
 
 +++
 
@@ -273,7 +290,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    1. 从顶部栏中选择&#x200B;**[!UICONTROL **&#x200B;凭据&#x200B;**]**。
 
-   1. 从`cja`数据库&#x200B;**[!UICONTROL 下拉菜单的数据库列表中选择沙盒的]**&#x200B;数据库。 例如：`prod:cja`。
+   1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单的数据库列表中选择沙盒的`cja`数据库。 例如：`prod:cja`。
 
    1. 如果需要，使用![复制](assets/Smock_Copy_18_N.svg)在 Jupyter Notebook 中复制每个 Postgres 凭据参数（[!UICONTROL 主机]、[!UICONTROL 端口]、[!UICONTROL 数据库]、[!UICONTROL 用户名] 等）。
 
@@ -285,7 +302,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    成功后，您可以使用数据来构建报告和可视化图表。
 
-   有关更多信息，请参阅[将 RStudio 连接到查询服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/clients/rstudio)。有关详细示例（该示例使用的是 RPostgres 包），另请参见 [BI 扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)。
+   有关更多信息，请参阅[将 RStudio 连接到查询服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/clients/rstudio)。 有关详细示例（该示例使用的是 RPostgres 包），另请参见 [BI 扩展用例](/help/use-cases/data-views/bi-extension-usecases.md)。
 
 +++
 
@@ -295,15 +312,15 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
 ## 功能
 
-默认情况下，您的数据视图具有从其友好名称生成的表安全名称。例如，名为[!UICONTROL 我的 Web 数据视图]的数据视图的视图名称为 `my_web_data_view`。您可以定义一个在 BI 工具中用于数据视图的首选名称。请参阅[数据视图设置](create-dataview.md#settings)，以了解更多信息。
+默认情况下，您的数据视图具有从其友好名称生成的表安全名称。 例如，名为[!UICONTROL 我的 Web 数据视图]的数据视图的视图名称为 `my_web_data_view`。 您可以定义一个在 BI 工具中用于数据视图的首选名称。 请参阅[数据视图设置](create-dataview.md#settings)，以了解更多信息。
 
-如果要使用数据视图 ID 作为表名称，可以在连接时将可选的 `CJA_USE_IDS` 设置添加到数据库名称。例如，`prod:cja?CJA_USE_IDS` 显示具有 `dv_ABC123` 等名称的数据视图。
+如果要使用数据视图 ID 作为表名称，可以在连接时将可选的 `CJA_USE_IDS` 设置添加到数据库名称。 例如，`prod:cja?CJA_USE_IDS` 显示具有 `dv_ABC123` 等名称的数据视图。
 
 ### 数据管理
 
-Customer Journey Analytics 中与数据管理相关的设置继承自 Adobe Experience Platform。Customer Journey Analytics 和 Adobe Experience Platform 数据管理之间的集成允许标记敏感的 Customer Journey Analytics 数据和实施隐私政策。
+Customer Journey Analytics 中与数据管理相关的设置继承自 Adobe Experience Platform。 Customer Journey Analytics 和 Adobe Experience Platform 数据管理之间的集成允许标记敏感的 Customer Journey Analytics 数据和实施隐私政策。
 
-在 Experience Platform 使用的数据集上创建的隐私标签和政策可以在 Customer Journey Analytics 数据视图工作流中显示。因此，在未遵循定义的隐私标签和政策时，使用 [!DNL Customer Journey Analytics BI extension] 查询的数据会显示相应的警告或错误。
+在 Experience Platform 使用的数据集上创建的隐私标签和政策可以在 Customer Journey Analytics 数据视图工作流中显示。 因此，在未遵循定义的隐私标签和政策时，使用 [!DNL Customer Journey Analytics BI extension] 查询的数据会显示相应的警告或错误。
 
 ### 列出数据视图
 
@@ -320,18 +337,18 @@ prod:all=> \dv
 
 ### 嵌套与扁平化处理
 
-默认情况下，数据视图架构使用嵌套结构，就像原始 XDM 架构一样。该集成还支持 `FLATTEN` 选项。您可以使用此选项实施要扁平化处理的数据视图（以及会话中的任何其他表）的架构。通过扁平化处理，可以更轻松地在不支持结构化架构的 BI 工具中使用。有关更多信息，请参阅[在 Query Service 中使用嵌套数据结构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/key-concepts/flatten-nested-data)。
+默认情况下，数据视图架构使用嵌套结构，就像原始 XDM 架构一样。 该集成还支持 `FLATTEN` 选项。 您可以使用此选项实施要扁平化处理的数据视图（以及会话中的任何其他表）的架构。 通过扁平化处理，可以更轻松地在不支持结构化架构的 BI 工具中使用。 有关更多信息，请参阅[在 Query Service 中使用嵌套数据结构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/key-concepts/flatten-nested-data)。
 
 
 ### 默认设置和限制
 
 以下附加默认值和限制在使用 BI 扩展时适用：
 
-* BI 扩展要求对查询结果的行数进行限制。默认值为 50，但您可以在 SQL 中使用 `LIMIT n` 覆盖此值，其中 `n` 为 1 - 50000。
-* BI 扩展需要一个日期范围来限制用于计算的行数。其默认值为最近 30 天，但您可以使用特殊的 `WHERE` 或 [`timestamp`](#timestamp) 列在 SQL [`daterange`](#date-range) 子句中覆盖它。
-* BI 扩展需要聚合查询。您不能使用类似于 `SELECT * FROM ...` 的 SQL 来获取原始的底层行。从宏观层面来看，您的聚合查询应使用：
-   * 使用 `SUM` 和/或 `COUNT` 选择总数。<br/> 例如，`SELECT SUM(metric1), COUNT(*) FROM ...`
-   * 选择按维度细分的量度。<br/>例如，`SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
+* BI 扩展要求对查询结果的行数进行限制。 默认值为 50，但您可以在 SQL 中使用 `LIMIT n` 覆盖此值，其中 `n` 为 1 - 50000。
+* BI 扩展需要一个日期范围来限制用于计算的行数。 其默认值为最近 30 天，但您可以使用特殊的 `WHERE` 或 [`timestamp`](#timestamp) 列在 SQL [`daterange`](#date-range) 子句中覆盖它。
+* BI 扩展需要聚合查询。 您不能使用类似于 `SELECT * FROM ...` 的 SQL 来获取原始的底层行。 从宏观层面来看，您的聚合查询应使用：
+   * 使用`SUM`和/或`COUNT`.<br/>选择总数 例如，`SELECT SUM(metric1), COUNT(*) FROM ...`
+   * 选择按维度细分的量度。 <br/>例如，`SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
    * 选择不同的度量值。<br/>例如，`SELECT DISTINCT dimension1 FROM ...`
 
      参阅有关[支持的 SQL](#supported-sql) 的更多信息。
@@ -389,7 +406,7 @@ HAVING m1 > 100</code></pre>
             </td>
         </tr>
         <tr>
-            <td>区别顶部
+            <td>Distinct，顶部 
 维度值 </td>
             <td>
                 <pre><code>SELECT DISTINCT dim1 FROM dv1</code></pre>
@@ -414,9 +431,9 @@ WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'</code></pre>
             </td>
         </tr>
         <tr>
-            <td>多维度
-细分
-和顶部区别 </td>
+            <td>多维
+划分
+和顶级特性 </td>
             <td>
                 <pre><code>SELECT dim1, dim2, SUM(metric1) AS m1
 FROM dv1
@@ -440,15 +457,15 @@ FROM dv1</code></pre>
 FROM (
   SELECT dim1, SUM(metric1) AS m1
   FROM dv1
-  WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'</br>  GROUP BY dim1
+  WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'</br>  按dim1分组
 )
-WHERE dim1 in ('A', 'B')</code></pre>
+其中dim1位于('A'， 'B')</code></pre>
             </td>
         </tr>
         <tr>
             <td>子选择：
-查询
-跨数据视图 </td>
+正在跨以下位置查询
+数据视图 </td>
             <td>
                 <pre><code>SELECT key, SUM(m1) AS total
 FROM (
@@ -469,9 +486,9 @@ ORDER BY total</code></pre>
             </td>
         </tr>
         <tr>
-            <td>子选择：
-分层来源，
-筛选
+            <td>子选择： 
+分层源， 
+正在筛选， 
 和聚合 </td>
             <td>使用子选择进行分层：
 <pre><code>SELECT rows.dim1, SUM(rows.m1) AS total
@@ -501,9 +518,9 @@ GROUP BY rows.item</code></pre>
         </tr>
         <tr>
             <td>选择
-量度位于维度之前
-或与维度混合
-的情况 </td>
+量度先于
+ 或混合使用
+尺寸 </td>
             <td>
                 <pre><code>SELECT SUM(metric1) AS m1, dim1
 FROM dv1
@@ -518,7 +535,7 @@ GROUP BY 2</code></pre>
 
 ### 维度
 
-您可以选择默认可用或在数据视图中定义的任何维度。可通过维度 ID 选择维度。
+您可以选择默认可用或在数据视图中定义的任何维度。 可通过维度 ID 选择维度。
 
 ### 量度
 
@@ -533,16 +550,16 @@ GROUP BY 2</code></pre>
 您可以使用：
 
 * `SELECT COUNT(*)` 或 `COUNT(1)` 获取发生次数量度。
-* `SELECT COUNT(DISTINCT dimension)` 或 `SELECT APPROX_COUNT_DISTINCT(dimension)` 对某个维度的近似不同值计数。有关详细信息，请参阅[计算不同的值](#counting-distinct-values)。
+* `SELECT COUNT(DISTINCT dimension)` 或 `SELECT APPROX_COUNT_DISTINCT(dimension)` 对某个维度的近似不同值计数。 有关详细信息，请参阅[计算不同的值](#counting-distinct-values)。
 * [内联计算](#inline-calculations)，动态组合量度并/或对它们进行数学运算。
 
 #### 计算不同的值
 
-由于 Customer Journey Analytics 工作方式的基本特性，您可以获得准确的不同计数的唯一维度是 `adobe_personid` 维度。以下 SQL 语句返回默认人员量度的值，即不同人员的计数：`SELECT COUNT(DISTINCT adobe_personid)` 或 `SELECT APPROX_COUNT_DISTINCT(adobe_personid)`。对于其他维度，会返回近似的非重复计数。
+由于 Customer Journey Analytics 工作方式的基本特性，您可以获得准确的不同计数的唯一维度是 `adobe_personid` 维度。 以下 SQL 语句返回默认人员量度的值，即不同人员的计数：`SELECT COUNT(DISTINCT adobe_personid)` 或 `SELECT APPROX_COUNT_DISTINCT(adobe_personid)`。 对于其他维度，会返回近似的非重复计数。
 
 #### 条件量度
 
-可以将 `IF` 或 `CASE` 子句嵌入 `SUM` 或 `COUNT` 函数中，以添加对于选定量度特定的其他分段。添加这些子句类似于在工作区报告表的量度列中应用区段。
+可以将 `IF` 或 `CASE` 子句嵌入 `SUM` 或 `COUNT` 函数中，以添加对于选定量度特定的其他分段。 添加这些子句类似于在工作区报告表的量度列中应用区段。
 
 示例：
 
@@ -556,7 +573,7 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 
 #### 内联计算
 
-您可以将额外的数学运算应用到 `SELECT` 中的度量表达式中。可以使用此数学运算，而无需在计算量度中定义数学运算方法。下表列出了支持的表达式的类型。
+您可以将额外的数学运算应用到 `SELECT` 中的度量表达式中。 可以使用此数学运算，而无需在计算量度中定义数学运算方法。 下表列出了支持的表达式的类型。
 
 | 运算符或函数 | 详细信息 |
 |---|---|
@@ -572,7 +589,7 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 
 #### 时间戳
 
-`timestamp` 特殊列用于提供查询的日期范围。可使用 `BETWEEN` 表达式或 `timestamp` `>`、`>=`、`<`、`<=` 检查 `AND` 对来定义日期范围。
+`timestamp` 特殊列用于提供查询的日期范围。 可使用 `BETWEEN` 表达式或 `timestamp` `>`、`>=`、`<`、`<=` 检查 `AND` 对来定义日期范围。
 `timestamp` 是可选的，如果未提供完整范围，则使用默认值：
 
 * 如果仅提供最小值（`timestamp > X` 或 ` timestamp >= X`），则范围为从 X 到当前日期。
@@ -584,7 +601,7 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 
 #### 日期范围
 
-`daterange` 特殊列的工作方式与 `timestamp` 的类似，但是分段仅限于完整天数。`daterange` 也是可选的，并具有与 `timestamp` 相同的范围默认值。
+`daterange` 特殊列的工作方式与 `timestamp` 的类似，但是分段仅限于完整天数。 `daterange` 也是可选的，并具有与 `timestamp` 相同的范围默认值。
 `daterange` 字段也可以在日期/时间函数中用于解析或截断事件日期。
 
 `daterangeName` 特殊列可用于通过已命名的日期范围（例如 `Last Quarter`）将查询分段。
@@ -596,7 +613,7 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 
 #### 区段 ID
 
-`filterId` 特殊列是可选的，用于在查询中应用外部定义的区段。在查询中应用外部定义的区段类似于将区段拖动到工作区的面板上。可通过 `AND` 多个区段 ID 来使用它们。
+`filterId` 特殊列是可选的，用于在查询中应用外部定义的区段。 在查询中应用外部定义的区段类似于将区段拖动到工作区的面板上。 可通过 `AND` 多个区段 ID 来使用它们。
 
 除了 `filterId`，您可以用 `filterName` 来使用区段的名称而不是 ID。
 
@@ -610,13 +627,13 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 
 1. 将剩余的表达式转变为临时区段。
 
-通过解析 `WHERE` 子句中的 `AND` 的第一层来进行处理。每个采用 `AND` 的顶层表达式必须与上述某个表达式匹配。比 `AND` 的第一层更深入的任何项，或者如果 `WHERE` 子句在顶层使用 `OR`，都将被作为临时区段。
+通过解析 `WHERE` 子句中的 `AND` 的第一层来进行处理。 每个采用 `AND` 的顶层表达式必须与上述某个表达式匹配。 比 `AND` 的第一层更深入的任何项，或者如果 `WHERE` 子句在顶层使用 `OR`，都将被作为临时区段。
 
 ### 排序顺序
 
-默认情况下，查询按第一个选定量度以降序顺序对结果进行排序。可以通过指定 `ORDER BY ... ASC` 或 `ORDER BY ... DESC` 来覆盖默认排序顺序。如果使用的是 `ORDER BY`，则必须在第一个选定量度上指定 `ORDER BY`。
+默认情况下，查询按第一个选定量度以降序顺序对结果进行排序。 可以通过指定 `ORDER BY ... ASC` 或 `ORDER BY ... DESC` 来覆盖默认排序顺序。 如果使用的是 `ORDER BY`，则必须在第一个选定量度上指定 `ORDER BY`。
 
-还可以在量度前面使用 `-`（减号）来颠倒顺序。下面的两个语句都将产生相同的顺序：
+还可以在量度前面使用 `-`（减号）来颠倒顺序。 下面的两个语句都将产生相同的顺序：
 
 ```sql
 ORDER BY metric1 ASC
@@ -630,7 +647,7 @@ ORDER BY -metric1 DESC
 
 | 功能 | 示例 | 详细信息 |
 |---|---|---|
-| [转换](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` 或 <br/> `` `timestamp`::string `` | 虽然当前不支持类型转换，但不会引发错误。`CAST` 函数将被忽略。 |
+| [转换](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` 或 <br/> `` `timestamp`::string `` | 虽然当前不支持类型转换，但不会引发错误。 `CAST` 函数将被忽略。 |
 | [时间戳](https://spark.apache.org/docs/latest/api/sql/index.html#timestamp) | `` WHERE `timestamp` >= TIMESTAMP('2022-01-01 00:00:00') AND   `timestamp` < TIMESTAMP('2022-01-02 00:00:00') `` | 将时间字符串解析为时间戳以在 `WHERE` 子句中使用。 |
 | [到时间戳](https://spark.apache.org/docs/latest/api/sql/index.html#to_timestamp) | `` WHERE `timestamp` >= TO_TIMESTAMP('01/01/2022', 'MM/dd/yyyy') AND `timestamp` < TO_TIMESTAMP('01/02/2022', 'MM/dd/yyyy') `` | 将时间字符串解析为时间戳以在 `WHERE` 子句中使用，（可选）并提供该时间字符串的格式。 |
 | [日期](https://spark.apache.org/docs/latest/api/sql/index.html#date) | `` WHERE `timestamp` >= DATE('2022-01-01') AND `timestamp` < DATE('2022-01-02') `` | 将日期字符串解析为时间戳以在 `WHERE` 子句中使用。 |
@@ -657,24 +674,24 @@ ORDER BY -metric1 DESC
 | [年](https://spark.apache.org/docs/latest/api/sql/index.html#year) | ``SELECT YEAR(`timestamp`)`` | 在传入字段上生成动态维度身份标识。 |
 | [月](https://spark.apache.org/docs/latest/api/sql/index.html#month) | ``SELECT MONTH(`timestamp`)`` | 在传入字段上生成动态维度身份标识。 |
 | [日](https://spark.apache.org/docs/latest/api/sql/index.html#day) | ``SELECT DAY(`timestamp`)`` | 在传入字段上生成动态维度身份标识。 |
-| [每周时间](https://spark.apache.org/docs/latest/api/sql/index.html#dayofweek) | ``SELECT DAYOFWEEK(`timestamp`)`` | 在传入字段上生成动态维度身份标识。使用项目 ID 而不是值，因为您需要的是数字而不是友好名称。 |
+| [每周时间](https://spark.apache.org/docs/latest/api/sql/index.html#dayofweek) | ``SELECT DAYOFWEEK(`timestamp`)`` | 在传入字段上生成动态维度身份标识。 使用项目 ID 而不是值，因为您需要的是数字而不是友好名称。 |
 | [每年的某一日](https://spark.apache.org/docs/latest/api/sql/index.html#dayofyear) | ``SELECT DAYOFYEAR(`timestamp`)`` | 在传入字段上生成动态维度身份标识。 |
 | [周](https://spark.apache.org/docs/latest/api/sql/index.html#week) | ``SELECT WEEK(`timestamp`)`` | 在传入字段上生成动态维度身份标识。 |
 | [季度](https://spark.apache.org/docs/latest/api/sql/index.html#quarter) | ``SELECT QUARTER(`timestamp`)`` | 在传入字段上生成动态维度身份标识。 |
-| [小时](https://spark.apache.org/docs/latest/api/sql/index.html#hour) | ``SELECT HOUR(`timestamp`)`` | 在传入字段上生成动态维度身份标识。使用项目 ID 而不是值，因为您需要的是数字而不是友好名称。 |
+| [小时](https://spark.apache.org/docs/latest/api/sql/index.html#hour) | ``SELECT HOUR(`timestamp`)`` | 在传入字段上生成动态维度身份标识。 使用项目 ID 而不是值，因为您需要的是数字而不是友好名称。 |
 | [分钟](https://spark.apache.org/docs/latest/api/sql/index.html#minute) | ``SELECT MINUTE(`timestamp`)`` | 在传入字段上生成动态维度身份标识。 |
-| [提取](https://spark.apache.org/docs/latest/api/sql/index.html#extract) | ``SELECT EXTRACT(MONTH FROM `timestamp`)`` | 在传入字段上生成动态维度身份标识。对此函数的某些部分使用项目 ID 而不是值，因为您需要的是数字而不是友好名称。<br/>支持的部分为：<br>- 关键词：`YEAR`、`MONTH`、`DAYOFMONTH`、`DAYOFWEEK`、`DAYOFYEAR`、`WEEK`、`QUARTER`、`HOUR`、`MINUTE`。<br/>- 字符串：`'YEAR'`、`'Y'`、`'MONTH'`、`'M'`、`'DAYOFMONTH'`、`'DAY'`、`'D'`、`'DAYOFWEEK'`、`'DOW'`、`'DAYOFYEAR'`、`'DOY'`、`'WEEK'`、`'WOY`、`'W'`、`'QUARTER'`、`'QOY'`、`'Q'`、`'HOUR'` 或 `'MINUTE'`。 |
-| [日期（部分）](https://spark.apache.org/docs/latest/api/sql/index.html#date_part) | ``SELECT DATE_PART('month', `timestamp`)`` | 在传入字段上生成动态维度身份标识。对此函数的某些部分使用项目 ID 而不是值，因为您需要的是数字而不是友好名称。<br/>支持的字符串部分为：`'YEAR'`、`'Y'`、`'MONTH'`、`'M'`、`'DAYOFMONTH'`、`'DAY'`、`'D'`、`'DAYOFWEEK'`、`'DOW'`、`'DAYOFYEAR'`、`'DOY'`、`'WEEK'`、`'WOY`、`'W'`、`'QUARTER'`、`'QOY'`、`'Q'`、`'HOUR'` 或 `'MINUTE'`。 |
+| [提取](https://spark.apache.org/docs/latest/api/sql/index.html#extract) | ``SELECT EXTRACT(MONTH FROM `timestamp`)`` | 在传入字段上生成动态维度身份标识。 对此函数的某些部分使用项目 ID 而不是值，因为您需要的是数字而不是友好名称。<br/>支持的部分为：<br> — 关键字： `YEAR`，`MONTH`，`DAYOFMONTH`，`DAYOFWEEK`，`DAYOFYEAR`，`WEEK`，`QUARTER`，`HOUR`，`MINUTE`。<br/> — 字符串： `'YEAR'`，`'Y'`，`'MONTH'`，`'M'`，`'DAYOFMONTH'`，`'DAY'`，`'D'`，`'DAYOFWEEK'`，`'DOW'`，`'DAYOFYEAR'`，`'DOY'`，`'WEEK'`，`'WOY`&#39;，`'W'`，`'QUARTER'`，`'QOY'` `'Q'`、`'HOUR'`或`'MINUTE'`。 |
+| [日期（部分）](https://spark.apache.org/docs/latest/api/sql/index.html#date_part) | ``SELECT DATE_PART('month', `timestamp`)`` | 在传入字段上生成动态维度身份标识。 对此函数的某些部分使用项目 ID 而不是值，因为您需要的是数字而不是友好名称。<br/>支持的字符串部分为：`'YEAR'`、`'Y'`、`'MONTH'`、`'M'`、`'DAYOFMONTH'`、`'DAY'`、`'D'`、`'DAYOFWEEK'`、`'DOW'`、`'DAYOFYEAR'`、`'DOY'`、`'WEEK'`、`'WOY`、`'W'`、`'QUARTER'`、`'QOY'`、`'Q'`、`'HOUR'` 或 `'MINUTE'`。 |
 | [日期（截断）](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | 在传入字段上生成动态维度身份标识。<br/>支持的字符串粒度为：`'YEAR'`、`'Y'`、`'MONTH'`、`'M'`、`'DAYOFMONTH'`、`'DAY'`、`'D'`、`'DAYOFWEEK'`、`'DOW'`、`'DAYOFYEAR'`、`'DOY'`、`'WEEK'`、`'WOY`、`'W'`、`'QUARTER'`、`'QOY'`、`'Q'`、`'HOUR'` 或 `'MINUTE'`。 |
 
 {style="table-layout:auto"}
 
 ### 部分支持
 
-BI 扩展插件仅部分支持某些 SQL 功能，并且不会返回与其他数据库相同的结果。 此特定功能用于由各种 BI 工具生成的 SQL，而 BI 扩展插件无法与之完全匹配。因此，BI 扩展主要聚焦于一个有限的实施，该实施仅涵盖最低限度的 BI 工具使用情况，且不会引发错误。有关更多详细信息，请参阅下表。
+BI 扩展插件仅部分支持某些 SQL 功能，并且不会返回与其他数据库相同的结果。  此特定功能用于由各种 BI 工具生成的 SQL，而 BI 扩展插件无法与之完全匹配。 因此，BI 扩展主要聚焦于一个有限的实施，该实施仅涵盖最低限度的 BI 工具使用情况，且不会引发错误。 有关更多详细信息，请参阅下表。
 
 | 功能 | 示例 | 详细信息 |
 |---|---|---|
-| MIN() &amp; MAX() | ``MIN(daterange)`` 或 <br/> ``MAX(daterange)`` | 使用 `MIN()` 对 `timestamp`、`daterange` 或类似的 `daterangeX`（如 `daterangeday`）进行操作，将返回两年前的结果。<br/><br/> 使用 `MAX()` 对 `timestamp`、`daterange`或类似的 `daterangeX`（如 `daterangeday`）进行操作，将返回当前的日期/时间。使用 <br/><br/>`MIN()` 或 `MAX()` 对任何其他维度、量度或表达式的操作将返回 0。 |
+| MIN() &amp; MAX() | ``MIN(daterange)`` 或 <br/> ``MAX(daterange)`` | 使用 `MIN()` 对 `timestamp`、`daterange` 或类似的 `daterangeX`（如 `daterangeday`）进行操作，将返回两年前的结果。<br/><br/> `timestamp`、`daterange`或任何`daterangeX`（如`daterangeday`）上的`MAX()`将返回当前日期/时间。<br/><br/>`MIN()` 或者`MAX()`对于任何其他维度、量度或表达式将返回0。 |
 
 {style="table-layout:auto"}

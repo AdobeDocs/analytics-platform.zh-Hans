@@ -4,9 +4,22 @@ title: 计划项目
 feature: Components
 exl-id: fa7c5a0f-4983-40ee-b9c1-3e10aab3fc28
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+TQID: https://experienceleague.adobe.com/MOIr6V7GnwTw8-luvhS14IrE7PKspoVOCRXYGBnAUxA
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: c38ed341-fab2-46df-9d72-88d8166edebb
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: 794
 ht-degree: 41%
 
 ---
@@ -30,7 +43,7 @@ ht-degree: 41%
 | **[!UICONTROL 计划 ID]** | 主要用于调试的ID。 |
 | **[!UICONTROL 名称]** | 此项目的名称。<br/>选择![信息大纲](/help/assets/icons/InfoOutline.svg)以查看计划项目的更多详细信息。<br/>选择![更多](/help/assets/icons/More.svg)打开上下文菜单。 通过此菜单，您可以：<ul><li>![删除](/help/assets/icons/Delete.svg) **[!UICONTROL 删除]**&#x200B;计划项目。</li><li>![标签](/help/assets/icons/Labels.svg) **[!UICONTROL 标记]**&#x200B;计划项目。</li><li>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 批准]**&#x200B;计划项目。</li><li>![文件CSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL 导出CSV]**：将计划项目导出到CSV文件。</li></ul> |
 | **[!UICONTROL 所有者]** | 创建并拥有此项目的人。 |
-| **[!UICONTROL 标记]** | （可选）标记是一种用于排列项目的好方法。所有用户均可创建标记，并将一个或多个标记应用到项目。但是，您只能查看自己拥有或者与您共享的项目的标记。 |
+| **[!UICONTROL 标记]** | （可选）标记是一种用于排列项目的好方法。 所有用户均可创建标记，并将一个或多个标记应用到项目。 但是，您只能查看自己拥有或者与您共享的项目的标记。 |
 | **[!UICONTROL 已传送至]** | 此计划项目的收件人。 |
 | **[!UICONTROL 过期日期]** | 无论计划频率如何，您都可以将过期日期设置为最长一年。 |
 | **[!UICONTROL 频率]** | 您希望将此计划项目发送给一个或多个收件人的频率。 |
@@ -55,7 +68,7 @@ ht-degree: 41%
 
 ## 操作
 
-以下是计划项目管理器中的常见操作。选择一个或多个计划项目时，您可以从上下文菜单或蓝色操作栏中选择操作。
+以下是计划项目管理器中的常见操作。 选择一个或多个计划项目时，您可以从上下文菜单或蓝色操作栏中选择操作。
 
 | 图标 | 操作 | 描述 |
 |:---:|---|---|
@@ -68,7 +81,7 @@ ht-degree: 41%
 
 ## 过滤器
 
-您可以使用筛选器面板[筛选计划项目](#scheduled-project-list)计划项目列表➌。 要显示或隐藏过滤器面板，请使用![过滤器](/help/assets/icons/Filter.svg)。
+您可以使用筛选器面板➌筛选计划项目[计划项目列表](#scheduled-project-list)。 要显示或隐藏过滤器面板，请使用![过滤器](/help/assets/icons/Filter.svg)。
 
 过滤器面板由以下部分组成。
 
@@ -76,18 +89,18 @@ ht-degree: 41%
 
 | 标记 | 描述 |
 |---|---|
-| ![标记](/help/components/assets/scheduledprojects-filter-tags.png){width="300"} | 您可以使用&#x200B;**[!UICONTROL 标记]**&#x200B;部分按标记进行过滤。 <ul><li>您可以使用 ![搜索](/help/assets/icons/Search.svg) **[!UICONTROL 搜索标记]**&#x200B;来搜索您想要用于过滤的标记。</li><li>您可以选择多个标记。可用的标记取决于在过滤器面板中对其他部分的选择。</li><li>这些数字表明：<ul><li>⃣7︎：与特定标记关联的计划项目数。</li></ul></li></ul> |
+| ![标记](/help/components/assets/scheduledprojects-filter-tags.png){width="300"} | 您可以使用&#x200B;**[!UICONTROL 标记]**&#x200B;部分按标记进行过滤。 <ul><li>您可以使用 ![搜索](/help/assets/icons/Search.svg) **[!UICONTROL 搜索标记]**&#x200B;来搜索您想要用于过滤的标记。</li><li>您可以选择多个标记。 可用的标记取决于在过滤器面板中对其他部分的选择。</li><li>这些数字表明：<ul><li>7︎：与特定标记关联的计划项目数。</li></ul></li></ul> |
 
 
 ### 所有者
 
 | 所有者 | 描述 |
 |---|---|
-| ![所有者](/help/components/assets/scheduledprojects-filter-owners.png){width="300"} | **[!UICONTROL 所有者]**&#x200B;部分允许您过滤所有者。 <ul><li>您可以使用 ![搜索](/help/assets/icons/Search.svg) *搜索所有者*&#x200B;来搜索您想要用于过滤的所有者。</li><li>您可以选择多个所有者。可用的所有者取决于在过滤器面板中对其他部分的选择。</li><li>这些数字表明：<ul><li>⃣4︎：与特定所有者关联的计划项目数。</li></ul></li></ul> |
+| ![所有者](/help/components/assets/scheduledprojects-filter-owners.png){width="300"} | **[!UICONTROL 所有者]**&#x200B;部分允许您过滤所有者。 <ul><li>您可以使用 ![搜索](/help/assets/icons/Search.svg) *搜索所有者*&#x200B;来搜索您想要用于过滤的所有者。</li><li>您可以选择多个所有者。 可用的所有者取决于在过滤器面板中对其他部分的选择。</li><li>这些数字表明：<ul><li>4︎：与特定所有者关联的计划项目数。</li></ul></li></ul> |
 
 
 ### 其他过滤器
 
 | 其他过滤器 | 描述 |
 |---|---|
-| ![其他过滤器](/help/components/assets/scheduledprojects-filter-otherfilters.png){width="300"} | 您可以使用&#x200B;**[!UICONTROL 其他过滤器]**&#x200B;部分按其他预定义过滤器进行过滤。<ul><li>您可以选择以下一个或多个选项：<ul><li> **[!UICONTROL 已过期]**：筛选已过期的计划项目。</li><li>**[!UICONTROL 失败]**：筛选计划失败的计划项目。</li></ul>您可以选择的内容取决于您的角色和权限。</li><li>您可以选择多个其他过滤器。可用的其他过滤器取决于在过滤器面板中对其他部分的选择。</li><li>这些数字表明：<ul><li>⃣4︎：与特定其他过滤器关联的计划项目数。</li></ul></li></ul> |
+| ![其他过滤器](/help/components/assets/scheduledprojects-filter-otherfilters.png){width="300"} | 您可以使用&#x200B;**[!UICONTROL 其他过滤器]**&#x200B;部分按其他预定义过滤器进行过滤。<ul><li>您可以选择以下一个或多个选项：<ul><li> **[!UICONTROL 已过期]**：筛选已过期的计划项目。</li><li>**[!UICONTROL 失败]**：筛选计划失败的计划项目。</li></ul>您可以选择的内容取决于您的角色和权限。</li><li>您可以选择多个其他过滤器。 可用的其他过滤器取决于在过滤器面板中对其他部分的选择。</li><li>这些数字表明：<ul><li>4︎：与特定其他过滤器关联的计划项目数。</li></ul></li></ul> |

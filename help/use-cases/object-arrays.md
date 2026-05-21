@@ -5,18 +5,33 @@ exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
+autotag-review: '2026-05-19T09:33:58.249Z'
+TQID: 'https://experienceleague.adobe.com/FJOAnB2Dumw9txeabYMfrIqE1uihee-TcA8ZFcAbU2Y'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2:
+  - id: e8abc408-b05c-427f-9e37-f8b033a6b3c3
+  - id: bfef374d-acfd-4c57-bf74-a2b36053c545
+  - id: cf731116-8803-4027-85aa-9c0a126e8321
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 61%
+source-wordcount: 518
+ht-degree: 59%
 
 ---
 
 # 使用对象数组
 
-某些平台架构可以具有对象数组。Adobe Customer Journey Analytics支持摄取和报告事件、查找和配置文件数据中的对象数组。 最常见的示例之一是包含多个产品的购物车。每个产品都有一个名称、SKU、类别、价格、数量以及要跟踪的任何其他维度。所有这些方面都有不同的要求，但必须都属于相同点击。
+某些平台架构可以具有对象数组。 Adobe Customer Journey Analytics支持摄取和报告事件、查找和配置文件数据中的对象数组。 最常见的示例之一是包含多个产品的购物车。 每个产品都有一个名称、SKU、类别、价格、数量以及要跟踪的任何其他维度。 所有这些方面都有不同的要求，但必须都属于相同点击。
 
-在以前版本的 Adobe Analytics 中，此功能是通过 `products` 变量实现的。它是一个连接字符串，用分号 (`;`) 分隔以区分产品不同方面，同时用逗号 (`,`) 描述不同产品。它是有限支持“对象数组”的唯一变量。多值变量（如列表变量）可以支持数组的等效内容，但它们不能支持“对象数组”。Customer Journey Analytics通过支持单行数据中任意深度的层次结构扩展了这一概念，任何以前版本的Adobe Analytics均不提供该功能。
+在以前版本的 Adobe Analytics 中，此功能是通过 `products` 变量实现的。 它是一个连接字符串，用分号 (`;`) 分隔以区分产品不同方面，同时用逗号 (`,`) 描述不同产品。 它是有限支持“对象数组”的唯一变量。 多值变量（如列表变量）可以支持数组的等效内容，但它们不能支持“对象数组”。 Customer Journey Analytics通过支持单行数据中任意深度的层次结构扩展了这一概念，任何以前版本的Adobe Analytics均不提供该功能。
 
 ## 相同事件示例
 
@@ -198,7 +213,7 @@ Customer Journey Analytics会查看事件的这些部分来生成报表：
 | `Unspecified` | `2` | `1` |
 | `Total` | `2` | `2` |
 
-产品订单存在，却不包含与其关联的保修名称，因此该维度项目属于“未指定”。产品保修订单也存在相同情况：
+产品订单存在，却不包含与其关联的保修名称，因此该维度项目属于“未指定”。 产品保修订单也存在相同情况：
 
 ```diff
 {
@@ -242,7 +257,7 @@ Customer Journey Analytics会查看事件的这些部分来生成报表：
 +}
 ```
 
-请注意那些没有关联名称的订单。它们是归因于“未指定”维度项目的订单。
+请注意那些没有关联名称的订单。 它们是归因于“未指定”维度项目的订单。
 
 ### 组合量度
 
@@ -270,5 +285,5 @@ Customer Journey Analytics本身不会组合名称相似但对象级别不同的
 
 ## 限制
 
-限制确实适用于Customer Journey Analytics使用的数据中的数组，并作为Experience Platform中的架构的一部分进行建模。 查看[实时客户个人资料数据和分段默认护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/guardrails#data-model-limits)中的[数据模型限制](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/guardrails#data-size-limits)和[数据大小限制](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/guardrails)。
+限制确实适用于Customer Journey Analytics使用的数据中的数组，并作为Experience Platform中的架构的一部分进行建模。 查看[实时客户个人资料数据和分段默认护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/guardrails)中的[数据模型限制](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/guardrails#data-model-limits)和[数据大小限制](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/guardrails#data-size-limits)。
 

@@ -4,16 +4,35 @@ description: 了解从 Adobe Analytics 升级到 Customer Journey Analytics 时�
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 7c0342a68f75774fd7b29979d3ce610f22d047ae
+exl-id: bd19250e-91c0-49f6-b6dc-3abd641344aa
+TQID: https://experienceleague.adobe.com/DtETa7Qh3l2X9YSjkX56zX8CmDTWVpGvvyrd9HFayt4
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1100'
-ht-degree: 8%
+source-wordcount: 1186
+ht-degree: 15%
 
 ---
 
-# 准备您的组织以升级到Customer Journey Analytics
+# 准备您的组织以升级到 Customer Journey Analytics
 
-成功升级(如[从Adobe Analytics升级到Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)中所述)的部分步骤是，通过关注某些操作注意事项来准备您的组织。 要准备您的组织，建议您：
+成功升级（如[从Adobe Analytics升级到Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)中所述）的部分步骤是，通过关注某些操作注意事项来准备您的组织。 要准备您的组织，建议您：
 
 * 获得关键利益相关者的认同和协调
 
@@ -37,7 +56,7 @@ ht-degree: 8%
 
 | 功能 | 好处 | 示例 |
 |---------|----------|---------|
-| **[所有类型数据的容纳](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/home)** | Customer Journey Analytics与Experience Platform保存各种数据架构和类型的能力相结合。 | 零售组织可以将以下类型的数据集成到单个视图中，从而提供对完整客户历程的可见性： <ul><li>Web点击流交易</li><li>移动应用程序交易</li><li>店内交易</li><li>CRM和忠诚度数据</li></ul> |
+| **[所有类型数据的容纳](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/home)** | Customer Journey Analytics 与 Experience Platform 保存各种数据架构和类型的能力相结合。 | 零售组织可以将以下类型的数据集成到单个视图中，从而提供对完整客户历程的可见性： <ul><li>Web点击流交易</li><li>移动应用程序交易</li><li>店内交易</li><li>CRM和忠诚度数据</li></ul> |
 | **[跨渠道分析](/help/use-cases/cross-channel/cross-channel.md)** | 通过将各种Web、移动和离线资产中的数据统一起来，支持跨各种渠道的客户行为的单个整合视图。 | 从多个渠道收集数据的零售组织可以执行以下类型的分析：<p>购物者点击付费搜索广告，在线浏览牛仔裤，收到推送通知，然后两天后在店内购买。 此统一的观点支持准确的跨渠道归因，显示数字接触点对店内销售的贡献情况。 它还支持更精确的分段，例如通过量身定制的优惠来定位“在线浏览、店内购买”的客户。 此外，它在一个仪表板中提供清晰、全渠道的收入报告，用对客户行为的全面了解代替分散的、孤立的洞察。 |
 | **[报告时间处理](/help/getting-started/aa-to-cja.md#get-comfortable-with-report-time-processing)** | 应用可追溯的设置并创建变量持久性的多个版本，而无需更改基础数据的收集方式。 | 由于Customer Journey Analytics允许您在不重新摄取或重新处理数据的情况下动态创建和调整量度、维度和归因模型，因此零售组织无需请求工程部门重建数据集，即可了解最近的社交活动如何影响在线和店内销售。 他们可以立即将归因模型从最近联系更改为首次联系或基于规则的自定义归因。 |
 | **[Content Analytics](/help/content-analytics/content-analytics.md)** | 帮助营销人员了解内容如何影响企业定义的关键绩效指标。 除了行为数据之外，Content Analytics 还收集关于内容如何被消费以及内容如何产生影响的数据。 | 通过集成Web、应用程序、电子邮件甚至店内数据，零售组织可以准确地了解他们创建的每段数字内容对客户历程和转化的贡献。 <p>零售组织可以发现，在流行社交媒体平台上推出“夏季牛仔装风格指南”，有助于提高忠诚会员的参与度，而且一周内这些会员在店内购买牛仔布的可能性会提高40%。</p> |
@@ -138,15 +157,14 @@ ht-degree: 8%
 
   以下资源可帮助您入门：
 
-   * [Customer Journey Analytics教程](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/overview)
+   * [Customer Journey Analytics 教程](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/overview)
 
    * [Customer Journey Analytics 是什么？](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
 
-   * [Customer Journey Analytics简介](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/cja-basics/understanding-customer-journey-analytics)
+   * [Customer Journey Analytics 简介](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/cja-basics/understanding-customer-journey-analytics)
 
    * [Customer Journey Analytics 功能支持](/help/getting-started/aa-vs-cja/cja-aa.md)
 
 ## 按照建议的升级步骤操作
 
-准备好开始升级过程后，请按照[建议的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)或《Customer Journey Analytics升级指南》中动态生成的升级步骤操作。 要从 Customer Journey Analytics 访问升级指南，请选择&#x200B;**[!UICONTROL 工作区]**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**[!UICONTROL 升级到 Customer Journey Analytics]**。按照屏幕上的说明操作。
-
+准备好开始升级过程后，请按照[建议的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)或《Customer Journey Analytics升级指南》中动态生成的升级步骤操作。 要从 Customer Journey Analytics 访问升级指南，请选择&#x200B;**[!UICONTROL 工作区]**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**[!UICONTROL 升级到 Customer Journey Analytics]**。 按照屏幕上的说明操作。

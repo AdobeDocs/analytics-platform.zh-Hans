@@ -5,9 +5,21 @@ title: 管理导出
 feature: Components
 exl-id: 0c21802a-c46f-41be-9356-d836c038b174
 role: User
-source-git-commit: d0fa233aa5359064e9e0afea1a5384f5e38d017e
+TQID: https://experienceleague.adobe.com/a63XlsGElfxDW1-EqB2l1iMdTtMlk7OaVBuLvS8QH7E
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: 1281
 ht-degree: 5%
 
 ---
@@ -67,7 +79,7 @@ ht-degree: 5%
 
    此时将显示&#x200B;[!UICONTROL **导出完整表**]&#x200B;对话框。
 
-1. 更新任何可用选项。 有关每个选项的信息，请参阅[将Analysis Workspace报表导出到云](/help/analysis-workspace/export/export-cloud.md#export-full-tables)中的[从Customer Journey Analytics导出完整表](/help/analysis-workspace/export/export-cloud.md)。
+1. 更新任何可用选项。 有关每个选项的信息，请参阅[将Analysis Workspace报表导出到云](/help/analysis-workspace/export/export-cloud.md)中的[从Customer Journey Analytics导出完整表](/help/analysis-workspace/export/export-cloud.md#export-full-tables)。
 
 ## 续订导出
 
@@ -81,7 +93,7 @@ ht-degree: 5%
 
    此时将显示&#x200B;[!UICONTROL **导出完整表**]&#x200B;对话框。<!--check process from here. -->
 
-1. 更新任何可用选项。 有关每个选项的信息，请参阅[将Analysis Workspace报表导出到云](/help/analysis-workspace/export/export-cloud.md#export-full-tables)中的[从Customer Journey Analytics导出完整表](/help/analysis-workspace/export/export-cloud.md)。
+1. 更新任何可用选项。 有关每个选项的信息，请参阅[将Analysis Workspace报表导出到云](/help/analysis-workspace/export/export-cloud.md)中的[从Customer Journey Analytics导出完整表](/help/analysis-workspace/export/export-cloud.md#export-full-tables)。
 
 ## 复制导出
 
@@ -146,7 +158,7 @@ ht-degree: 5%
 
 1. 在Customer Journey Analytics中，选择&#x200B;[!UICONTROL **组件**] > [!UICONTROL **导出**]。
 
-1. 在&#x200B;[!UICONTROL **导出**]&#x200B;选项卡上，选择&#x200B;**导出**&#x200B;页面右上角的![自定义表](assets/customize-table-icon.png)图标[!UICONTROL 自定义表]。
+1. 在&#x200B;[!UICONTROL **导出**]&#x200B;选项卡上，选择[!UICONTROL 导出]页面右上角的&#x200B;**自定义表**&#x200B;图标![自定义表](assets/customize-table-icon.png)。
 
    以下列可供使用：
 
@@ -159,7 +171,7 @@ ht-degree: 5%
    | 标记 | 显示应用于导出的任何标记。 有关如何将标记应用于导出的信息，请参阅[标记导出](#tag-an-export)。 |
    | 表大小（上次发送） | 上次发送导出的时间。 |
    | 创建者 | 创建导出的用户。 |
-   | 已创建 | 创建导出的日期和时间。<!-- true? --> |
+   | 创建时间 | 创建导出的日期和时间。<!-- true? --> |
    | 位置 | 帐户上导出数据的位置。 |
    | 帐户 | 从中导出数据的帐户。 |
    | 频率 | 发送导出的频率。 可用选项为[!UICONTROL 一次]、[!UICONTROL 每日]、[!UICONTROL 每周]、[!UICONTROL 按星期日计算]、[!UICONTROL 按月日计算]、[!UICONTROL 按月日计算]以及[!UICONTROL 按特定日期计算]每年。 |

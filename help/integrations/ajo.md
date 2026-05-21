@@ -4,22 +4,37 @@ description: 引入 Adobe Journey Optimizer 生成的数据，并使用 Customer
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 830e16ecd4c43da114c63af51e4bb6e88bbb4ff8
+TQID: https://experienceleague.adobe.com/kmZ-AYMcKxwZftFSqJQpTH3zDTDT1CxlNw-MVO6Ikn4
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '3770'
-ht-degree: 93%
+source-wordcount: 3841
+ht-degree: 90%
 
 ---
 
 # 集成 Journey Optimizer
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/get-started/get-started) 帮助您营造紧密联系、与上下文相关且个性化的体验。它还有助于让客户了解其客户历程的下一步。
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/get-started/get-started) 帮助您营造紧密联系、与上下文相关且个性化的体验。 它还有助于让客户了解其客户历程的下一步。
 
-您可以配置 Journey Optimizer 生成的数据，在 Customer Journey Analytics 中执行高级分析。您可以自动配置此集成。如果需要，您可以对连接或数据视图中可用的数据集、维度或量度进行额外的手动自定义。
+您可以配置 Journey Optimizer 生成的数据，在 Customer Journey Analytics 中执行高级分析。 您可以自动配置此集成。 如果需要，您可以对连接或数据视图中可用的数据集、维度或量度进行额外的手动自定义。
 
 ## 自动配置 Journey Optimizer 集成
 
-Journey Optimizer 支持使用 Customer Journey Analytics 作为报告引擎。请参阅 Journey Optimizer 文档中的[开始使用新的报告界面。](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja)
+Journey Optimizer 支持使用 Customer Journey Analytics 作为报告引擎。 请参阅 Journey Optimizer 文档中的[开始使用新的报告界面。](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja)
 
 当您为 Journey Optimizer 启用 Customer Journey Analytics 报告后，系统会自动为特定沙盒创建[连接](/help/connections/overview.md)和[数据视图。](/help/data-views/data-views.md)
 
@@ -36,7 +51,7 @@ Journey Optimizer 支持使用 Customer Journey Analytics 作为报告引擎。�
 
 | **数据设置** | 值 |
 |---|---|
-| [!UICONTROL 启用滚动数据窗口] | 已启用。[!UICONTROL 选定的月数。]`13` |
+| [!UICONTROL 启用滚动数据窗口] | 已启用。 [!UICONTROL 选定的月数。]`13` |
 | [!UICONTROL 沙盒] | [!UICONTROL *沙盒名称*]（已禁用；您无法修改此设置）。 |
 | [!UICONTROL 平均每日事件数] | 少于 100 万（已禁用；您无法修改此设置）。 |
 
@@ -83,7 +98,7 @@ Journey Optimizer 支持使用 Customer Journey Analytics 作为报告引擎。�
 
   | 兼容性 | 值 |
   |---|---|
-  | [!UICONTROL 在 Adobe Journey Optimizer 中设置为默认数据视图] | 已启用（默认）。<br/><br/>此配置选项允许您指定与 Journey Optimizer 一起使用的数据视图，而无需手动配置。有关如何启用此配置选项的更多信息（如果默认没有启用），请参阅[创建或编辑数据视图](/help/data-views/create-dataview.md)中的[兼容性](/help/data-views/create-dataview.md#compatibility)部分。<br/><br/>当您禁用该选项时，会出现一个对话框提示您是否要继续更改默认数据视图。当您选择&#x200B;**[!UICONTROL 继续]**&#x200B;时，您需要选择另一个数据视图作为默认数据视图。选择&#x200B;**[!UICONTROL 确认]**&#x200B;以确认您的选择。选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消更改默认数据视图。 |
+  | [!UICONTROL 在 Adobe Journey Optimizer 中设置为默认数据视图] | 已启用（默认）。<br/><br/>此配置选项允许您指定数据视图以与Journey Optimizer一起使用，而无需手动配置。 有关如何启用此配置选项的更多信息（如果默认没有启用），请参阅[创建或编辑数据视图](/help/data-views/create-dataview.md)中的[兼容性](/help/data-views/create-dataview.md#compatibility)部分。 <br/><br/>当您禁用该选项时，会出现一个对话框提示您是否要继续更改默认数据视图。 当您选择&#x200B;**[!UICONTROL 继续]**&#x200B;时，您需要选择另一个数据视图作为默认数据视图。 选择&#x200B;**[!UICONTROL 确认]**&#x200B;以确认您的选择。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消更改默认数据视图。 |
 
   | 容器 | 值 |
   |---|---|
@@ -101,9 +116,9 @@ Journey Optimizer 支持使用 Customer Journey Analytics 作为报告引擎。�
 
 * 在&#x200B;**组件**&#x200B;选项卡中：
    * 所有名称中附加有 [!UICONTROL (AJO)] 的量度和维度均会作为此自动配置的一部分自动添加。
-   * 一些自动添加的量度或维度是基于派生字段的。这些派生字段是专门为此集成创建的。例如，量度“[!UICONTROL 登陆页面点击次数”（AJO）]基于“[!UICONTROL 登陆页面点击次数]”派生字段。
-   * 某些量度或维度有额外的配置。例如，[!UICONTROL 垃圾邮件投诉 (AJO) &#x200B;]的确应用了“[!UICONTROL 格式]”和“[!UICONTROL 包含排除值]”设置。
-   * 所有自动添加的量度和维度都有一个名为 `:`*`name_of_metric_or_dimension`*的上下文标签。例如，[!UICONTROL 登陆页点击次数（AJO）] 量度具有上下文标签 `:Landing page clicks (AJO)`。
+   * 一些自动添加的量度或维度是基于派生字段的。 这些派生字段是专门为此集成创建的。 例如，量度“[!UICONTROL 登陆页面点击次数”（AJO）]基于“[!UICONTROL 登陆页面点击次数]”派生字段。
+   * 某些量度或维度有额外的配置。 例如，[!UICONTROL 垃圾邮件投诉 (AJO) &#x200B;]的确应用了“[!UICONTROL 格式]”和“[!UICONTROL 包含排除值]”设置。
+   * 所有自动添加的量度和维度都有一个名为 `:`*`name_of_metric_or_dimension`*的上下文标签。 例如，[!UICONTROL 登陆页点击次数（AJO）] 量度具有上下文标签 `:Landing page clicks (AJO)`。
 
 * 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中，未应用任何特定配置值
 
@@ -114,15 +129,15 @@ Journey Optimizer 支持使用 Customer Journey Analytics 作为报告引擎。�
 
 ## 手动配置与 Journey Optimizer 一起使用的数据视图
 
-以下部分介绍如何手动使用 Journey Optimizer 生成的数据，以便在 Customer Journey Analytics 中执行高级分析。仅在[自动配置选项](#automatically-configure-a-customer-journey-analytics-data-view-to-be-used-with-adobe-journey-optimizer)无法满足您的需求时才需要进行此手动配置。
+以下部分介绍如何手动使用 Journey Optimizer 生成的数据，以便在 Customer Journey Analytics 中执行高级分析。 仅在[自动配置选项](#automatically-configure-a-customer-journey-analytics-data-view-to-be-used-with-adobe-journey-optimizer)无法满足您的需求时才需要进行此手动配置。
 
 ### 将数据从 Journey Optimizer 发送到 Experience Platform
 
-Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 Customer Journey Analytics。有关如何将 Journey Optimizer 数据以数据集的形式发送到 Platform as a Dataset 的步骤，请参阅 Journey Optimizer 用户指南中的[开始使用数据集](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/data-management/datasets/get-started-datasets)。
+Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 Customer Journey Analytics。 有关如何将 Journey Optimizer 数据以数据集的形式发送到 Platform as a Dataset 的步骤，请参阅 Journey Optimizer 用户指南中的[开始使用数据集](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/data-management/datasets/get-started-datasets)。
 
 ### 创建连接
 
-一旦 Journey Optimizer 数据进入 Adobe Experience Platform，即可根据 Journey Optimizer 数据集[创建连接](/help/connections/create-connection.md)。或者，您可以将 Journey Optimizer 数据集添加到现有连接。
+一旦 Journey Optimizer 数据进入 Adobe Experience Platform，即可根据 Journey Optimizer 数据集[创建连接](/help/connections/create-connection.md)。 或者，您可以将 Journey Optimizer 数据集添加到现有连接。
 
 选择并配置以下数据集：
 
@@ -145,18 +160,18 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 
 >[!NOTE]
 >
->Journey Optimizer 和 Customer Journey Analytics 之间的数据差异通常小于 1-2%。过去两小时内收集到的数据可能存在较大差异。请使用排除今天的日期范围以缓解涉及处理时间的差异。
+>Journey Optimizer 和 Customer Journey Analytics 之间的数据差异通常小于 1-2%。 过去两小时内收集到的数据可能存在较大差异。 请使用排除今天的日期范围以缓解涉及处理时间的差异。
 
 
 #### 配置维度
 
-可在数据视图中创建以下维度，以实现与 Journey Optimizer 中类似的维度大致对等。有关维度自定义选项的详细信息，请参阅数据视图管理器中的[组件设置](/help/data-views/component-settings/overview.md)。
+可在数据视图中创建以下维度，以实现与 Journey Optimizer 中类似的维度大致对等。 有关维度自定义选项的详细信息，请参阅数据视图管理器中的[组件设置](/help/data-views/component-settings/overview.md)。
 
 | 维度 | 描述 | 数据集 | 架构元素 | 组件设置 |
 | --- | --- | --- | --- | --- |
 | 操作执行错误（AJO） | 阻止 Journey Runtime 执行操作的错误条件。 | 历程步骤事件 | `_experience.journeyOrchestration.`<br/>`stepEvents.actionExecutionError ` | 组件类型：维度 |
 | 操作标签（AJO） | 客户生成的与最终用户交互的元素的显示名称。 | AJO 推送跟踪体验事件数据集、历程步骤事件、AJO 消息反馈事件数据集、AJO 邮件跟踪体验事件数据集 | `_experience.decisioning.`<br/>`propositionAction.label` | 组件类型：维度 |
-| 批次 ID (AJO) | 在为预定的历程或营销活动操作调用每个新批处理实例时创建的 GUID。例如，如果预定的历程或营销活动操作在上午 8 点和上午 10 点运行，则有两个不同的 batchInstanceID。 | AJO 推送跟踪体验事件数据集、AJO 消息反馈事件数据集、AJO 邮件跟踪体验事件数据集 | ` _experience.customerJourneyManagement.`<br/>`messageExecution.batchInstanceID` | 组件类型：维度 |
+| 批次 ID (AJO) | 在为预定的历程或营销活动操作调用每个新批处理实例时创建的 GUID。 例如，如果预定的历程或营销活动操作在上午 8 点和上午 10 点运行，则有两个不同的 batchInstanceID。 | AJO 推送跟踪体验事件数据集、AJO 消息反馈事件数据集、AJO 邮件跟踪体验事件数据集 | ` _experience.customerJourneyManagement.`<br/>`messageExecution.batchInstanceID` | 组件类型：维度 |
 | 批处理实例时间戳 (AJO) | 批处理实例的时间戳。 | AJO 推送跟踪体验事件数据集、历程步骤事件、AJO 消息反馈事件数据集、AJO 邮件跟踪体验事件数据集 | 派生字段 | 组件类型：维度（派生字段） |
 | 活动 ID (AJO) | 活动的 ID。 | AJO 实体数据集 | `_experience.customerJourneyManagement.entities.`<br/>`campaign.campaignID` | 组件类型：维度 |
 | 活动名称（AJO） | 活动的名称。 | AJO 实体数据集 | `_experience.customerJourneyManagement.entities.`<br/>`campaign.name` | 组件类型：维度 |
@@ -217,7 +232,7 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 
 #### 配置量度
 
-可在数据视图中创建以下量度，以实现与 Journey Optimizer 中类似的量度大致对等。有关量度自定义选项的详细信息，请参阅数据视图管理器中的[组件设置](/help/data-views/component-settings/overview.md)。
+可在数据视图中创建以下量度，以实现与 Journey Optimizer 中类似的量度大致对等。 有关量度自定义选项的详细信息，请参阅数据视图管理器中的[组件设置](/help/data-views/component-settings/overview.md)。
 
 | 量度 | 描述 | 数据集 | 架构元素 | 组件设置 |
 | --- | --- | --- | --- | --- |
@@ -230,15 +245,15 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 | 删除量度（AJO） | 删除量度 | AJO 推送跟踪体验事件数据集、历程步骤事件、AJO 消息反馈事件数据集、AJO 邮件跟踪体验事件数据集 | `_id` | 组件类型：量度 |
 | 投放日期（AJO） | 已投放的消息总数。 | AJO 推送跟踪体验事件数据集、历程步骤事件、AJO 消息反馈事件数据集、AJO 邮件跟踪体验事件数据集 | 派生字段 | 组件类型：量度（派生字段） |
 | 消除（AJO） | 每次 Adobe SDK 关闭应用程序内消息时均进行计数，无论最终用户选择哪种操作来关闭它。 | AJO 推送跟踪体验事件数据集、历程步骤事件、AJO 消息反馈事件数据集、AJO 邮件跟踪体验事件数据集 | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | 组件类型：量度 |
-| 显示次数（AJO） | 这是计算 AJO 消息的显示次数。这包括电子邮件打开次数、网页显示次数和应用程序内消息显示次数。Mobile Platform 不报告 SMS 和推送消息显示次数，因此不计算在内。 | AJO 推送跟踪体验事件数据集、历程步骤事件、AJO 邮件跟踪体验事件数据集、AJO 消息反馈事件数据集 | 派生字段 | 组件类型：量度（派生字段） |
+| 显示次数（AJO） | 此计数显示AJO消息。 这包括电子邮件打开、Web显示和应用内显示。 移动平台不会报告短信和推送消息显示情况，因此不会计入它们。 | AJO 推送跟踪体验事件数据集、历程步骤事件、AJO 邮件跟踪体验事件数据集、AJO 消息反馈事件数据集 | 派生字段 | 组件类型：量度（派生字段） |
 | 电子邮件打开次数（AJO） | 打开电子邮件总次数 | AJO 电子邮件跟踪体验事件数据集 | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | 组件类型：量度 |
 | 入站点击次数（AJO） | 所有入站频道的点击总数 | AJO 推送跟踪体验事件数据集、历程步骤事件、AJO 消息反馈事件数据集、AJO 邮件跟踪体验事件数据集 | `_experience.decisioning.`<br/>`propositionEventType.interact` | 组件类型：量度 |
 | 入站驳回次数（AJO） | 所有入站频道的驳回总数 | AJO 推送跟踪体验事件数据集、历程步骤事件、AJO 消息反馈事件数据集、AJO 邮件跟踪体验事件数据集 | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | 组件类型：量度 |
 | 入站印象（AJO） | 入站频道的印象总数 | AJO 推送跟踪体验事件数据集、历程步骤事件、AJO 消息反馈事件数据集、AJO 邮件跟踪体验事件数据集 | `_experience.decisioning.`<br/>`propositionEventType.display` | 组件类型：量度 |
-| 历程结束（AJO） | 如果当前步骤导致历程的一个实例结束，则为 true。给定轮廓的历程的最后一步已成功执行。 | 历程步骤事件 | `_experience.journeyOrchestration.`<br/>`stepEvents.instanceEnded` | 组件类型：量度 |
+| 历程结束（AJO） | 如果当前步骤导致历程的一个实例结束，则为 true。 给定轮廓的历程的最后一步已成功执行。 | 历程步骤事件 | `_experience.journeyOrchestration.`<br/>`stepEvents.instanceEnded` | 组件类型：量度 |
 | 历程入口（AJO） | 如果步骤事件是轮廓的历程进入事件，为 True。 | 历程步骤事件 | 派生字段 | 组件类型：量度（派生字段） |
-| 历程出口（AJO） | 如果当前步骤导致历程的一个实例结束，则为 true。给定轮廓的历程的最后一步已成功执行。 | 历程步骤事件 | `_experience.journeyOrchestration.`<br/>`stepEvents.instanceEnded` | 组件类型：量度 |
-| 历程失败（AJO） | 给出已完成执行的步骤的当前状态。可能的值：`Transitions`（下一步将在事件过渡时发生），`EndStep`（此历程实例中的最后一步已执行），`Error`（此步骤遇到错误条件，导致当前的历程实例结束），`TimedOut`（由于获取或操作超时，当前步骤已结束）。 | 历程步骤事件 | `_experience.journeyOrchestration.`<br/>`stepEvents.stepStatus` | 组件类型：量度 |
+| 历程出口（AJO） | 如果当前步骤导致历程的一个实例结束，则为 true。 给定轮廓的历程的最后一步已成功执行。 | 历程步骤事件 | `_experience.journeyOrchestration.`<br/>`stepEvents.instanceEnded` | 组件类型：量度 |
+| 历程失败（AJO） | 给出已完成执行的步骤的当前状态。 可能的值：`Transitions`（下一步将在事件过渡时发生），`EndStep`（此历程实例中的最后一步已执行），`Error`（此步骤遇到错误条件，导致当前的历程实例结束），`TimedOut`（由于获取或操作超时，当前步骤已结束）。 | 历程步骤事件 | `_experience.journeyOrchestration.`<br/>`stepEvents.stepStatus` | 组件类型：量度 |
 | 登陆页面点击次数 (AJO) | 登陆页上点击总次数。 | AJO 电子邮件跟踪体验事件数据集 | 派生字段 | 组件类型：量度（派生字段） |
 | 登陆页面转化（AJO） | 登陆页上的转化总数。 | AJO 电子邮件跟踪体验事件数据集 | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | 组件类型：量度 |
 | 登陆页面查看次数（AJO） | 登陆页上浏览总次数。 | AJO 电子邮件跟踪体验事件数据集 | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | 组件类型：量度 |
@@ -250,12 +265,12 @@ Adobe Experience Platform 作为中心数据源，联系 Journey Optimizer 与 C
 | 推送自定义操作（AJO） | 推送交互中自定义操作的总数。 | AJO 推送跟踪体验事件数据集、历程步骤事件、AJO 消息反馈事件数据集、AJO 邮件跟踪体验事件数据集 | `eventType` | 组件类型：量度 |
 | 推送交互次数（AJO） | 由于直接推送消息交互而启动移动设备应用程序的次数 | AJO 推送跟踪体验事件数据集 | `application.launches.value` | 组件类型：量度 |
 | 发送（AJO） | 所有渠道发送的消息总数 | AJO 推送跟踪体验事件数据集、历程步骤事件、AJO 消息反馈事件数据集、AJO 邮件跟踪体验事件数据集 | 派生字段 | 组件类型：量度（派生字段） |
-| SMS 入站消息（AJO） | SMS 入站回复。例如停止、开始、订阅等等。 | AJO 推送跟踪体验事件数据集、AJO 消息反馈事件数据集、AJO 邮件跟踪体验事件数据集 | `_experience.customerJourneyManagement.`<br/>`smsChannelContext.inboundMessage` | 组件类型：量度 |
+| SMS 入站消息（AJO） | SMS 入站回复。 例如停止、开始、订阅等等。 | AJO 推送跟踪体验事件数据集、AJO 消息反馈事件数据集、AJO 邮件跟踪体验事件数据集 | `_experience.customerJourneyManagement.`<br/>`smsChannelContext.inboundMessage` | 组件类型：量度 |
 | 垃圾邮件投诉（AJO） | 垃圾邮件投诉总数 | AJO 电子邮件跟踪体验事件数据集 | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | 组件类型：量度 |
 | 订阅列表添加（AJO） | 添加至订阅列表的总数。 | AJO 电子邮件跟踪体验事件数据集 | 派生字段 | 组件类型：量度（派生字段） |
 | 订阅列表删除（AJO） | 从订阅列表中删除的总数量。 | AJO 电子邮件跟踪体验事件数据集 | 派生字段 | 组件类型：量度（派生字段） |
-| 已定向（AJO） | 这是计算定向到个人的建议次数。这是被视为显示给某人的建议次数。 | AJO 推送跟踪体验事件数据集、历程步骤事件、AJO 消息反馈事件数据集、AJO 邮件跟踪体验事件数据集 | 派生字段 | 组件类型：量度（派生字段） |
-| 已触发 (AJO) | Adobe SDK 选择显示提案。其他因素可能会阻止其实际显示。 | AJO 推送跟踪体验事件数据集、历程步骤事件、AJO 消息反馈事件数据集、AJO 邮件跟踪体验事件数据集 | `_experience.decisioning.`<br/>`propositionEventType.trigger` | 组件类型：量度 |
+| 已定向（AJO） | 建议针对个人的次数计数。 这是考虑向人员显示建议时的次数。 | AJO 推送跟踪体验事件数据集、历程步骤事件、AJO 消息反馈事件数据集、AJO 邮件跟踪体验事件数据集 | 派生字段 | 组件类型：量度（派生字段） |
+| 已触发 (AJO) | 建议已选择由Adobe SDK显示。 其他因素可能会阻止其实际显示。 | AJO 推送跟踪体验事件数据集、历程步骤事件、AJO 消息反馈事件数据集、AJO 邮件跟踪体验事件数据集 | `_experience.decisioning.`<br/>`propositionEventType.trigger` | 组件类型：量度 |
 | 试验中的独特访客 (AJO) | 试验中的独立访客 | AJO 实体数据集 | `_experience.customerJourneyManagement.`<br/>`entities.experiment.experimentId` | 组件类型：量度 |
 | 取消订阅（AJO） | 取消订阅的总次数 | AJO 电子邮件跟踪体验事件数据集 | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | 组件类型：量度 |
 

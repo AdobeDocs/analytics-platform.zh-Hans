@@ -6,9 +6,19 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
+TQID: https://experienceleague.adobe.com/hvK60b1ST9yjl9fz0kFnSncTRXtZQCYvDmLCUCP1Yik
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: 878
 ht-degree: 14%
 
 ---
@@ -17,7 +27,7 @@ ht-degree: 14%
 
 保存工作簿并完成分析后，可以使用计划功能与团队中的其他人共享工作簿。 利用计划功能，可创建自动刷新工作簿中数据的计划。 在特定日期和时间将Excel工作簿文件作为附件发送到指定的受众。 设置计划会自动为收件人提供定期更新。 您还可以使用计划功能将工作簿发送一次，而无需计划自动更新。
 
-您可以为单个工作簿创建多个计划。例如，您创建了两个计划，每周向团队和经理发送一次工作簿。
+您可以为单个工作簿创建多个计划。 例如，您创建了两个计划，每周向团队和经理发送一次工作簿。
 
 使用计划功能，您还可以为工作簿设置密码保护并编辑以前计划的工作簿。
 
@@ -65,7 +75,7 @@ ht-degree: 14%
 
 1. （可选）选择&#x200B;**[!UICONTROL 将时间戳附加到文件名]**。
 
-   您可以将时间戳附加到文件名以标识工作簿的更新日期。时间戳有助于查看在特定日期发送的工作簿版本。 选中后，您可以选择以下选项：
+   您可以将时间戳附加到文件名以标识工作簿的更新日期。 时间戳有助于查看在特定日期发送的工作簿版本。 选中后，您可以选择以下选项：
 
    * **[!UICONTROL ISO日期格式]**，这会导致`YYYY-MM-DD`被附加到文件名中。
    * **[!UICONTROL ISO日期格式+时间戳]**，这会导致`YYYY-MM-DD_HH-MM-SS`被附加到文件名中。
@@ -88,9 +98,9 @@ Does no longer seem to be an option?
 
 ![计划电子邮件设置](assets/schedule-email.png){zoomable="yes"}
 
-1. **输入收件人**。您可以输入组织中可识别的人员的姓名。 或者，您可以输入组织外部人员的电子邮件地址。
+1. **输入收件人**。 您可以输入组织中可识别的人员的姓名。 或者，您可以输入组织外部人员的电子邮件地址。
 
-1. 输入电子邮件的&#x200B;**主题**&#x200B;和对收件人的描述。主题默认为工作簿文件名，但您可以根据需要修改主题。您可以在描述部分添加详细信息。
+1. 输入电子邮件的&#x200B;**主题**&#x200B;和对收件人的描述。 主题默认为工作簿文件名，但您可以根据需要修改主题。 您可以在描述部分添加详细信息。
 
 1. 您可以选择在&#x200B;**[!UICONTROL 描述]**&#x200B;文本区域中输入描述。
 
@@ -103,7 +113,7 @@ Does no longer seem to be an option?
 
 1. 选择&#x200B;**[!UICONTROL 显示计划选项]**&#x200B;以定义计划。
 
-1. 输入从&#x200B;**[!UICONTROL 开始的]**&#x200B;开始日期。 或者，选择![日历](/help/assets/icons/Calendar.svg)以从日历中选择开始日期。
+1. 输入从&#x200B;**开始的**&#x200B;开始日期。 或者，选择![日历](/help/assets/icons/Calendar.svg)以从日历中选择开始日期。
 
 1. 在&#x200B;**[!UICONTROL 结束日期]**&#x200B;中输入结束日期。 或者，选择![日历](/help/assets/icons/Calendar.svg)以从日历中选择结束日期。
 

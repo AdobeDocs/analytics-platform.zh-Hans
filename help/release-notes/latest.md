@@ -27,9 +27,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 11f60dbdd2858f173896a131c08229e0c7f29a69
+source-git-commit: 373deaea2b7d73484a3983bde490a86e950c2c0e
 workflow-type: tm+mt
-source-wordcount: 819
+source-wordcount: 818
 ht-degree: 45%
 
 ---
@@ -77,5 +77,5 @@ ht-degree: 45%
 * [之前的 2025 Customer Journey Analytics 发行说明](/help/release-notes/2025.md)
 * [Adobe Analytics发行说明](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=zh-hans)
 * [流媒体收藏集发行说明](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html?lang=zh-hans)
-* [Adobe Experience Cloud发行说明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-hans)
+* [CX Enterprise发行说明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-hans)
 * [Customer Journey Analytics 文档更新](/help/release-notes/doc-changes.md)

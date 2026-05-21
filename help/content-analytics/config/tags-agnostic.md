@@ -1,20 +1,34 @@
 ---
-title: Content Analytics Tags与配置
-description: 了解如何在不使用Experience Platform数据收集标记的情况下配置Content Analytics。
+title: Content Analytics JavaScript库
+description: 了解如何在不使用Experience Platform数据收集标记的情况下配置Content Analytics，并改用Content Analytics JavaScript库。
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-source-git-commit: d15d85f5904bbada26bfd74fdc45217efeddd723
+autotag-review: '2026-05-19T06:56:34.440Z'
+TQID: 'https://experienceleague.adobe.com/GUYf0ZoTlAkoIIPWzfZTm0-eMvBjN8ieYSu6goHu3GA'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 5%
+source-wordcount: 484
+ht-degree: 4%
 
 ---
 
 
-# Content Analytics Tags不可知配置
+# Content Analytics JavaScript库
 
-Adobe Content Analytics JavaScript库允许通过Experience Platform Edge Network将内容数据发送到Adobe Experience Platform，从而跟踪网站上的内容相关事件。 当您想要实施不带Adobe Experience Platform标记的Content Analytics (Launch)时，请使用此库。
+Adobe Content Analytics JavaScript库允许通过Experience Platform Edge Network将内容数据发送到Adobe Experience Platform，从而跟踪网站上的内容相关事件。 当您想要实施不带Adobe Experience Platform标记的Content Analytics时，请使用此库。
 
 >[!NOTE]
 >
@@ -25,7 +39,7 @@ Adobe Content Analytics JavaScript库允许通过Experience Platform Edge Networ
 >
 >* 在调用`initializeContentLibrary`之前，必须在页面上初始化Adobe Experience Platform Web SDK (Alloy)。
 >* 完成Content Analytics引导式配置向导，以引导您完成设置Content Analytics配置的先决条件所需的所有步骤。
->* 完成引导式配置后，即可在该配置视图中访问特定于您的配置的JavaScript设置。
+>* 完成引导式配置后，即可使用JavaScript设置。
 
 
 ## 安装
@@ -94,7 +108,7 @@ initializeContentLibrary({
 });
 ```
 
-## 体验捕获与定义
+## 体验捕捉和定义
 
 启用体验跟踪并控制如何在您的网站上识别体验。 体验是通过将&#x200B;**域正则表达式**&#x200B;与可选&#x200B;**查询参数**&#x200B;组合在一起定义的，这些参数可在匹配页面中将一个体验与另一个体验区分开来。
 
@@ -131,7 +145,7 @@ initializeContentLibrary({
 });
 ```
 
-## 事件筛选
+## 事件过滤
 
 使用正则表达式控制数据收集中包含的页面URL和资产URL。 将以下模式示例用作起点，并在部署之前通过正则表达式测试器验证模式。
 

@@ -4,10 +4,24 @@ description: 在Customer Journey Analytics的各种BI工具中连接并验证BI�
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: cb0102923f10f39becd40cc4187d2e11fb8c4e2f
+exl-id: d122a415-fb22-48f7-9377-8349dba274e5
+autotag-review: '2026-05-19T09:45:42.786Z'
+TQID: 'https://experienceleague.adobe.com/snwj7xbkzdBzHE073kpVyfNQ0iWxHBrxhm58NJOiwy8'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2:
+  - id: f24857a4-4b64-4b25-b237-d43026362144
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '1864'
-ht-degree: 5%
+source-wordcount: 2021
+ht-degree: 10%
 
 ---
 
@@ -42,7 +56,7 @@ ht-degree: 5%
    1. 导航到您的Experience Platform沙盒。
    1. 从左边栏中选择![查询](/help/assets/icons/DataSearch.svg) **[!UICONTROL 查询]**。
    1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;界面中选择&#x200B;**[!UICONTROL 凭据]**&#x200B;选项卡。
-   1. 从`prod:cja`数据库&#x200B;**[!UICONTROL 下拉菜单中选择]**。
+   1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单中选择`prod:cja`。
 
       ![查询服务凭据](../assets/queryservice-credentials.png)
 
@@ -101,7 +115,7 @@ Power BI Desktop支持`FLATTEN`参数的以下方案。 有关详细信息，请
    1. 导航到您的Experience Platform沙盒。
    1. 从左边栏中选择![查询](/help/assets/icons/DataSearch.svg) **[!UICONTROL 查询]**。
    1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;界面中选择&#x200B;**[!UICONTROL 凭据]**&#x200B;选项卡。
-   1. 从`prod:cja`数据库&#x200B;**[!UICONTROL 下拉菜单中选择]**。
+   1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单中选择`prod:cja`。
 
       ![查询服务凭据](../assets/queryservice-credentials.png)
 
@@ -153,7 +167,7 @@ Tableau Desktop支持`FLATTEN`参数的以下方案。 有关详细信息，请�
    1. 导航到您的Experience Platform沙盒。
    1. 从左边栏中选择![查询](/help/assets/icons/DataSearch.svg) **[!UICONTROL 查询]**。
    1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;界面中选择&#x200B;**[!UICONTROL 凭据]**&#x200B;选项卡。
-   1. 从`prod:cja`数据库&#x200B;**[!UICONTROL 下拉菜单中选择]**。
+   1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单中选择`prod:cja`。
 
       ![查询服务凭据](../assets/queryservice-credentials.png)
 
@@ -174,13 +188,13 @@ Tableau Desktop支持`FLATTEN`参数的以下方案。 有关详细信息，请�
       1. 使用![复制](/help/assets/icons/Copy.svg)从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中复制并粘贴&#x200B;**[!UICONTROL 数据库]**&#x200B;值作为&#x200B;**[!UICONTROL 数据库]**&#x200B;的值。 将`%3FFLATTEN`添加到您粘贴的值。 例如，`prod:cja%3FFLATTEN`。
       1. 使用![复制](/help/assets/icons/Copy.svg)从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中复制并粘贴&#x200B;**[!UICONTROL 用户名]**&#x200B;值作为&#x200B;**[!UICONTROL 用户名]**&#x200B;的值。
       1. 使用![复制](/help/assets/icons/Copy.svg)从Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中复制并粘贴&#x200B;**[!UICONTROL 密码]**&#x200B;值作为&#x200B;**[!UICONTROL 密码]**&#x200B;的值。
-      1. 选择&#x200B;**[!UICONTROL 在]**&#x200B;可选设置&#x200B;**[!UICONTROL 处展开全部]**。
-      1. 将每个节点的最大连接数&#x200B;**[!UICONTROL 设置为]**。`5`
+      1. 选择&#x200B;**[!UICONTROL 在**&#x200B;[!UICONTROL &#x200B;可选设置&#x200B;]&#x200B;**处展开全部]**。
+      1. 将每个节点的最大连接数&#x200B;**[!UICONTROL 设置为`5`。]**
       1. 确保启用&#x200B;**[!UICONTROL SSL]**。
       1. 选择&#x200B;**[!UICONTROL 测试]**&#x200B;以测试连接。 您应该会看到屏幕顶部出现一个横幅，其中显示一条消息，如&#x200B;**[!UICONTROL Success， can connect JDBC ....]**。
       1. 选择&#x200B;**[!UICONTROL 连接]**&#x200B;以建立和保存连接。
    1. 您可以在&#x200B;**[!UICONTROL 连接]**&#x200B;界面中看到新连接。
-   1. 从&#x200B;**管理员**&#x200B;中选择&#x200B;**[!UICONTROL ←]**&#x200B;以转到左边栏中的主导航。
+   1. 从&#x200B;**[!UICONTROL 管理员]**&#x200B;中选择&#x200B;**←**&#x200B;以转到左边栏中的主导航。
    1. 选择&#x200B;**[!UICONTROL 开发]**。
    1. 选择&#x200B;**[!UICONTROL 项目]**。
    1. 在LookML项目中选择&#x200B;**[!UICONTROL 新建模型]**。
@@ -229,7 +243,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
    1. 导航到您的Experience Platform沙盒。
    1. 从左边栏中选择![查询](/help/assets/icons/DataSearch.svg) **[!UICONTROL 查询]**。
    1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;界面中选择&#x200B;**[!UICONTROL 凭据]**&#x200B;选项卡。
-   1. 从`prod:cja`数据库&#x200B;**[!UICONTROL 下拉菜单中选择]**。
+   1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单中选择`prod:cja`。
 
       ![查询服务凭据](../assets/queryservice-credentials.png)
 
@@ -335,7 +349,7 @@ Jupyter Notebook支持`FLATTEN`参数的以下方案。 有关详细信息，请
    1. 导航到您的Experience Platform沙盒。
    1. 从左边栏中选择![查询](/help/assets/icons/DataSearch.svg) **[!UICONTROL 查询]**。
    1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;界面中选择&#x200B;**[!UICONTROL 凭据]**&#x200B;选项卡。
-   1. 从`prod:cja`数据库&#x200B;**[!UICONTROL 下拉菜单中选择]**。
+   1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单中选择`prod:cja`。
 
       ![查询服务凭据](../assets/queryservice-credentials.png)
 

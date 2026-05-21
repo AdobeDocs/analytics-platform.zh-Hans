@@ -5,18 +5,31 @@ title: 配置云导出帐户
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: 25f46c50b6578026ff3aaae5019306bdcf82f211
+TQID: https://experienceleague.adobe.com/RJMRWr4ooIKHzfZ9auhh2hUvequxGTodCL4ba5ScoDg
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '2242'
-ht-degree: 31%
+source-wordcount: 2473
+ht-degree: 34%
 
 ---
 
 # 配置云导出帐户
 
-在将Customer Journey Analytics报表导出到Cloud目标之前(从Analysis Workspace(如[将Customer Journey Analytics报表导出到Cloud](/help/analysis-workspace/export/export-cloud.md)中所述)或从Report Builder(如[从Report Builder导出报表](/help/report-builder/report-builder-export.md)中所述)，您需要添加并配置要将数据发送到的目标。
+在将Customer Journey Analytics报表导出到Cloud目标之前(从Analysis Workspace（如[将Customer Journey Analytics报表导出到Cloud](/help/analysis-workspace/export/export-cloud.md)中所述）或从Report Builder（如[从Report Builder导出报表](/help/report-builder/report-builder-export.md)中所述），您需要添加并配置要将数据发送到的目标。
 
-此过程包括按照本文所述添加和配置帐户(如Amazon S3、Google Cloud Platform等)，然后按照[配置云导出位置](/help/components/exports/cloud-export-locations.md)中所述，添加和配置该帐户内的位置（如帐户内的文件夹）。
+此过程包括按照本文所述添加和配置帐户（如Amazon S3、Google Cloud Platform等），然后按照[配置云导出位置](/help/components/exports/cloud-export-locations.md)中所述，添加和配置该帐户内的位置（如帐户内的文件夹）。
 
 有关如何管理现有帐户（包括查看、编辑和删除帐户）的信息，请参阅[管理云导出位置和帐户](/help/components/exports/manage-export-locations.md)。
 
@@ -92,7 +105,7 @@ ht-degree: 31%
 
      >[!AVAILABILITY]
      >
-     >本节适用于在 Amazon Web Services (AWS) 上运行的 Experience Platform 的实施。目前，在 AWS 上运行的 Experience Platform 仅向有限数量的客户开放。要了解有关受支持的 Experience Platform 基础架构的更多信息，请参阅 [Experience Platform 多云概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/multi-cloud)。
+     >本节适用于在 Amazon Web Services (AWS) 上运行的 Experience Platform 的实施。 目前，在 AWS 上运行的 Experience Platform 仅向有限数量的客户开放。 要了解有关受支持的 Experience Platform 基础架构的更多信息，请参阅 [Experience Platform 多云概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/multi-cloud)。
 
      显示&#x200B;[!UICONTROL **创建的帐户**]&#x200B;对话框。
 
@@ -132,7 +145,7 @@ ht-degree: 31%
 
 1. （视情况而定）如果您使用的是AWS存储：
 
-   1. 将以下字段的内容复制到剪贴板(您将使用此信息访问从AEP数据登录区域的Analysis Workspace中导出的数据)：
+   1. 将以下字段的内容复制到剪贴板（您将使用此信息访问从AEP数据登录区域的Analysis Workspace中导出的数据）：
 
       * [!UICONTROL **访问密钥ID**]
 
@@ -162,7 +175,7 @@ ht-degree: 31%
 
    | 字段 | 功能 |
    |---------|----------|
-   | [!UICONTROL **角色 ARN**] | 您必须提供角色 ARN（Amazon 资源名称），Adobe 可以使用它来获取对 Amazon S3 帐户的访问权限。为此，您需要为源帐户创建 IAM 权限策略，将该策略附加到用户，然后为目标帐户创建角色。有关特定信息，请参阅[此 AWS 文档](https://aws.amazon.com/premiumsupport/knowledge-center/cross-account-access-iam/)。 |
+   | [!UICONTROL **角色 ARN**] | 您必须提供角色 ARN（Amazon 资源名称），Adobe 可以使用它来获取对 Amazon S3 帐户的访问权限。 为此，您需要为源帐户创建 IAM 权限策略，将该策略附加到用户，然后为目标帐户创建角色。 有关特定信息，请参阅[此 AWS 文档](https://aws.amazon.com/premiumsupport/knowledge-center/cross-account-access-iam/)。 |
 
    {style="table-layout:auto"}
 
@@ -172,7 +185,7 @@ ht-degree: 31%
 
    ![导出帐户创建对话框Amazon S3角色ARN](assets/export-account-amazons3.png)
 
-1. 将&#x200B;[!UICONTROL **用户ARN**]&#x200B;字段的内容复制到剪贴板。 用户 ARN（Amazon 资源名称）由 Adobe 提供。您必须将此用户附加到您在Amazon S3角色ARN中创建的策略。
+1. 将&#x200B;[!UICONTROL **用户ARN**]&#x200B;字段的内容复制到剪贴板。 用户 ARN（Amazon 资源名称）由 Adobe 提供。 您必须将此用户附加到您在Amazon S3角色ARN中创建的策略。
 
 1. 选择&#x200B;[!UICONTROL **确定**]。
 
@@ -218,11 +231,11 @@ ht-degree: 31%
 
    | 字段 | 功能 |
    |---------|----------|
-   | [!UICONTROL **应用程序 ID**] | 从您创建的 Azure 应用程序复制此 ID。在 Microsoft Azure 中，此信息位于应用程序内的&#x200B;**概述**&#x200B;选项卡上。有关更多信息，请参阅[有关如何向 Microsoft 身份标识平台注册应用程序的 Microsoft Azure 文档](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)。 |
-   | [!UICONTROL **租户 ID**] | 从您创建的 Azure 应用程序复制此 ID。在 Microsoft Azure 中，此信息位于应用程序内的&#x200B;**概述**&#x200B;选项卡上。有关更多信息，请参阅[有关如何向 Microsoft 身份标识平台注册应用程序的 Microsoft Azure 文档](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)。 |
-   | [!UICONTROL **密钥保管库 URI**] | <p>Azure Key Vault 中 SAS URI 的路径。要配置 Azure SAS，需要使用 Azure Key Vault 将 SAS URI 存储为密码。有关信息，请参阅[有关如何从 Azure 密钥保管库设置和检索密码的 Microsoft Azure 文档](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations)。</p><p>创建密钥保管库 URI 后：<ul><li>在密钥保管库上添加访问策略，以便向您创建的 Azure 应用程序授予权限。<p>有关信息，请参阅[有关如何分配密钥保管库访问策略的 Microsoft Azure 文档](https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy?tabs=azure-portal)。</p><p>或</p><p>如果要在不创建访问策略的情况下直接授予访问角色，请参阅 [Microsoft Azure 文档，了解如何使用 Azure 门户分配 Azure 角色](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal)。这将为应用程序 ID 添加访问密钥存储库 URI 的角色分配。 </p></li><li>确保应用程序ID已被授予`Key Vault Certificate User`内置角色，以便访问密钥保管库URI。<p>有关更多信息，请参阅 [Azure 内置角色](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles)。</p></li></ul> |
-   | [!UICONTROL **密钥保管库密码名称**] | 将密码添加到 Azure 密钥保管库时创建的密码名称。在 Microsoft Azure 中，此信息位于您在&#x200B;**密钥保管库**&#x200B;设置页面上创建的密钥保管库中。有关信息，请参阅[有关如何从 Azure 密钥保管库设置和检索密码的 Microsoft Azure 文档](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations)。 |
-   | [!UICONTROL **位置帐户密码**] | 从您创建的 Azure 应用程序复制密码。在 Microsoft Azure 中，此信息位于应用程序中的&#x200B;**证书和密码**&#x200B;选项卡上。有关详细信息，请参阅[Microsoft Azure文档，了解如何向Microsoft标识平台注册应用程序](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)。<!-- need to grant permission to the bucket. Jun will send info on where that is documented) --> |
+   | [!UICONTROL **应用程序 ID**] | 从您创建的 Azure 应用程序复制此 ID。 在 Microsoft Azure 中，此信息位于应用程序内的&#x200B;**概述**&#x200B;选项卡上。 有关更多信息，请参阅[有关如何向 Microsoft 身份标识平台注册应用程序的 Microsoft Azure 文档](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)。 |
+   | [!UICONTROL **租户 ID**] | 从您创建的 Azure 应用程序复制此 ID。 在 Microsoft Azure 中，此信息位于应用程序内的&#x200B;**概述**&#x200B;选项卡上。 有关更多信息，请参阅[有关如何向 Microsoft 身份标识平台注册应用程序的 Microsoft Azure 文档](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)。 |
+   | [!UICONTROL **密钥保管库 URI**] | <p>Azure Key Vault 中 SAS URI 的路径。  要配置 Azure SAS，需要使用 Azure Key Vault 将 SAS URI 存储为密码。 有关信息，请参阅[有关如何从 Azure 密钥保管库设置和检索密码的 Microsoft Azure 文档](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations)。</p><p>创建密钥保管库 URI 后：<ul><li>在密钥保管库上添加访问策略，以便向您创建的 Azure 应用程序授予权限。<p>有关信息，请参阅[有关如何分配密钥保管库访问策略的 Microsoft Azure 文档](https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy?tabs=azure-portal)。</p><p>或者</p><p>如果要在不创建访问策略的情况下直接授予访问角色，请参阅 [Microsoft Azure 文档，了解如何使用 Azure 门户分配 Azure 角色](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal)。 这将为应用程序 ID 添加访问密钥存储库 URI 的角色分配。 </p></li><li>确保应用程序ID已被授予`Key Vault Certificate User`内置角色，以便访问密钥保管库URI。<p>有关更多信息，请参阅 [Azure 内置角色](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles)。</p></li></ul> |
+   | [!UICONTROL **密钥保管库密码名称**] | 将密码添加到 Azure 密钥保管库时创建的密码名称。 在 Microsoft Azure 中，此信息位于您在&#x200B;**密钥保管库**&#x200B;设置页面上创建的密钥保管库中。 有关信息，请参阅[有关如何从 Azure 密钥保管库设置和检索密码的 Microsoft Azure 文档](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations)。 |
+   | [!UICONTROL **位置帐户密码**] | 从您创建的 Azure 应用程序复制密码。 在 Microsoft Azure 中，此信息位于应用程序中的&#x200B;**证书和密码**&#x200B;选项卡上。 有关详细信息，请参阅[Microsoft Azure文档，了解如何向Microsoft标识平台注册应用程序](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)。<!-- need to grant permission to the bucket. Jun will send info on where that is documented) --> |
 
    {style="table-layout:auto"}
 
@@ -250,9 +263,9 @@ ht-degree: 31%
 
    | 字段 | 功能 |
    |---------|----------|
-   | [!UICONTROL **应用程序 ID**] | 从您创建的 Azure 应用程序复制此 ID。在 Microsoft Azure 中，此信息位于应用程序内的&#x200B;**概述**&#x200B;选项卡上。有关更多信息，请参阅[有关如何向 Microsoft 身份标识平台注册应用程序的 Microsoft Azure 文档](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)。 |
-   | [!UICONTROL **租户 ID**] | 从您创建的 Azure 应用程序复制此 ID。在 Microsoft Azure 中，此信息位于应用程序内的&#x200B;**概述**&#x200B;选项卡上。有关更多信息，请参阅[有关如何向 Microsoft 身份标识平台注册应用程序的 Microsoft Azure 文档](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)。 |
-   | [!UICONTROL **位置帐户密码**] | 从您创建的 Azure 应用程序复制密码。在 Microsoft Azure 中，此信息位于应用程序中的&#x200B;**证书和密码**&#x200B;选项卡上。有关更多信息，请参阅[有关如何向 Microsoft 身份标识平台注册应用程序的 Microsoft Azure 文档](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)。 |
+   | [!UICONTROL **应用程序 ID**] | 从您创建的 Azure 应用程序复制此 ID。 在 Microsoft Azure 中，此信息位于应用程序内的&#x200B;**概述**&#x200B;选项卡上。 有关更多信息，请参阅[有关如何向 Microsoft 身份标识平台注册应用程序的 Microsoft Azure 文档](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)。 |
+   | [!UICONTROL **租户 ID**] | 从您创建的 Azure 应用程序复制此 ID。 在 Microsoft Azure 中，此信息位于应用程序内的&#x200B;**概述**&#x200B;选项卡上。 有关更多信息，请参阅[有关如何向 Microsoft 身份标识平台注册应用程序的 Microsoft Azure 文档](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)。 |
+   | [!UICONTROL **位置帐户密码**] | 从您创建的 Azure 应用程序复制密码。 在 Microsoft Azure 中，此信息位于应用程序中的&#x200B;**证书和密码**&#x200B;选项卡上。 有关更多信息，请参阅[有关如何向 Microsoft 身份标识平台注册应用程序的 Microsoft Azure 文档](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)。 |
 
    {style="table-layout:auto"}
 

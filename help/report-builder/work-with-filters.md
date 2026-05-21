@@ -6,9 +6,21 @@ feature: Report Builder
 type: Documentation
 exl-id: 1f39d7f4-b508-45d8-9b97-81242c3805d3
 solution: Customer Journey Analytics
-source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
+TQID: https://experienceleague.adobe.com/BOvbE0QbzDPntg55mRGkS-HIh7dUh1inIFgAhAlfLGw
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: f2ef16dc-055a-4bb7-baa5-7039653f3966
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: 641
 ht-degree: 6%
 
 ---
@@ -29,7 +41,7 @@ ht-degree: 6%
 
 * 或者：
 
-   1. 在![表](/help/assets/icons/MoreSmall.svg)窗格中为特定量度选择&#x200B;**[!UICONTROL MoreSmall]**，然后选择&#x200B;**[!UICONTROL 筛选量度]**。
+   1. 在&#x200B;**[!UICONTROL 表]**&#x200B;窗格中为特定量度选择![MoreSmall](/help/assets/icons/MoreSmall.svg)，然后选择&#x200B;**[!UICONTROL 筛选量度]**。
 
       ![区段选项卡显示指标。](./assets/filter-metric.png){zoomable="yes"}
 
@@ -39,7 +51,7 @@ ht-degree: 6%
    1. 选择![CrossSize75](/help/assets/icons/CrossSize75.svg)以从&#x200B;**[!UICONTROL 应用的区段]**&#x200B;列表中删除区段。 或者选择&#x200B;**[!UICONTROL 全部清除]**&#x200B;以从&#x200B;**[!UICONTROL 应用的区段]**&#x200B;列表中删除所有区段。
    1. 选择&#x200B;**[!UICONTROL 应用]**。
 
-要查看应用的筛选器，请将光标悬停在上方或者在“表”窗格中选择量度。已应用区段的量度会显示区段图标。
+要查看应用的筛选器，请将光标悬停在上方或者在“表”窗格中选择量度。 已应用区段的量度会显示区段图标。
 
 
 ## 快速编辑区段

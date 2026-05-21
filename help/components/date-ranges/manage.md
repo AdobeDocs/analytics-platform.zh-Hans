@@ -4,9 +4,20 @@ description: 了解如何在Analysis Workspace中管理日期范围。
 feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+TQID: https://experienceleague.adobe.com/zGfFrHDk1cHYcR-AU7Ulmw1YPRE2axM3t0YxEgavV34
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: 606
 ht-degree: 29%
 
 ---
@@ -51,16 +62,16 @@ ht-degree: 29%
 | ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL 添加]** | 使用[日期范围生成器](create.md#date-range-builder)添加另一个日期范围。 |
 | ![Search](/help/assets/icons/Search.svg) | [!UICONTROL *按标题搜索*] | 在列表中未选择日期范围时，使用此搜索字段搜索日期范围。 |
 | ![Label](/help/assets/icons/Label.svg) | **[!UICONTROL 标记]** | 标记选定的日期范围。 在&#x200B;**[!UICONTROL 标记日期范围]**&#x200B;对话框中，选择或取消选择选定日期范围的标记。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存选定日期范围的标记。 |
-| ![Share](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL 共享]** | 共享选定的日期范围。 在&#x200B;**[!UICONTROL 共享日期范围]**&#x200B;对话框中，您可以![搜索](/help/assets/icons/Search.svg) *搜索个人或组*，也可以选择&#x200B;**[!UICONTROL 组织]**&#x200B;或&#x200B;**[!UICONTROL 组]**。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存所选日期范围的共享详细信息。 |
+| ![共享](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL 共享]** | 共享选定的日期范围。 在&#x200B;**[!UICONTROL 共享日期范围]**&#x200B;对话框中，您可以![搜索](/help/assets/icons/Search.svg) *搜索个人或组*，也可以选择&#x200B;**[!UICONTROL 组织]**&#x200B;或&#x200B;**[!UICONTROL 组]**。 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存所选日期范围的共享详细信息。 |
 | ![Delete](/help/assets/icons/Delete.svg) | **[!UICONTROL 删除]** | 删除选定的日期范围。 系统将提示您确认。 |
-| ![Edit](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名单个选定的日期范围。 选中后，您可以内联重命名日期范围。 |
+| ![编辑](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名单个选定的日期范围。 选中后，您可以内联重命名日期范围。 |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL 批准]** | 批准选定的日期范围。 |
 | ![Copy](/help/assets/icons/Copy.svg) | **[!UICONTROL 复制]** | 复制选定的日期范围。 将使用相同的名称和后缀创建新日期范围（复制） |
 | ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL 导出至 CSV]** | 将选定的日期范围导出到`Date ranges List.csv`文件。 |
 
 ### 活动过滤器栏
 
-筛选器栏➌显示活动的筛选器（如果有）。 您可以使用 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 快速移除过滤器。如果指定了多个筛选器，请使用&#x200B;**[!UICONTROL 全部删除]**&#x200B;删除所有筛选器。
+筛选器栏➌显示活动的筛选器（如果有）。 您可以使用 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 快速移除过滤器。 如果指定了多个筛选器，请使用&#x200B;**[!UICONTROL 全部删除]**&#x200B;删除所有筛选器。
 
 ### 过滤器面板
 
@@ -68,7 +79,7 @@ ht-degree: 29%
 
 若要筛选筛选列表：
 
-1. 选择![Filter](/help/assets/icons/Filter.svg)以打开筛选面板。如果“筛选”列表需要更多空间，您可以再次选择![Filter](/help/assets/icons/Filter.svg)来关闭该面板。
+1. 选择![Filter](/help/assets/icons/Filter.svg)以打开筛选面板。 如果“筛选”列表需要更多空间，您可以再次选择![Filter](/help/assets/icons/Filter.svg)来关闭该面板。
 1. 您可以使用任何可用的[过滤分区](#filter-sections)来过滤日期范围。
 
    >[!INFO]
@@ -99,7 +110,7 @@ ht-degree: 29%
 
 
 
-使用日期范围管理器共享、重命名或删除日期范围。进入日期管理器：
+使用日期范围管理器共享、重命名或删除日期范围。 进入日期管理器：
 
 1. 使用您的 Adobe ID 凭据登录 [analytics.adobe.com](https://analytics.adobe.com)。
 1. 依次转到[!UICONTROL 组件] > [!UICONTROL 日期范围]。
@@ -122,7 +133,7 @@ The date range manager includes the following options:
 Click the checkbox next to one or more date ranges for more options.
 
 * **Tag**: Apply a tag to all selected date ranges. Tags help you organize date ranges, and let you filter them using the left column.
-* **Share**: Share a date range to other Experience Cloud users. If you are a product administrator, you can also share to the entire organization or groups. Date ranges that are shared to other users in your organization include a ![shared](../assets/shared.png) icon next to the title.
+* **Share**: Share a date range to other CX Enterprise users. If you are a product administrator, you can also share to the entire organization or groups. Date ranges that are shared to other users in your organization include a ![shared](../assets/shared.png) icon next to the title.
 * **Delete**: Permanently delete the selected date range(s).
 * **Rename**: If a single date range is selected, you can change its title.
 * **Approve**: If you are a product admin, you can add a stamp of approval to a date range. Approved date ranges inform users in your organization that they are 'official', differentiating them from date ranges created by other users in your organization. Approved date ranges include a ![approved](../assets/approved.png) icon next to the title.

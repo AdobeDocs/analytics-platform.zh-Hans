@@ -4,28 +4,46 @@ description: 了解 Adobe Experience Platform 中定义的数据标签和政策�
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+autotag-review: '2026-05-19T08:59:31.818Z'
+TQID: 'https://experienceleague.adobe.com/SoIHLRSx90B4j8EkHWBVt3rVtt-968TN8ocWU2zuYN4'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2:
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: 622
 ht-degree: 99%
 
 ---
 
 # 标签和政策
 
-在 Experience Platform 中创建数据集时，可以为数据集中的部分或所有元素创建[数据使用情况标签](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/reference)。可以在 Customer Journey Analytics 中查看这些标签和政策。
+在 Experience Platform 中创建数据集时，可以为数据集中的部分或所有元素创建[数据使用情况标签](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/reference)。 可以在 Customer Journey Analytics 中查看这些标签和政策。
 
 以下标签对于 Customer Journey Analytics 特别有用：
 
-* `C8` 标签 – **[!UICONTROL 无测量]**。此标签表示数据不能用于组织网站或应用程序上的分析。
+* `C8` 标签 – **[!UICONTROL 无测量]**。 此标签表示数据不能用于组织网站或应用程序上的分析。
 
-* `C12` 标签 – **[!UICONTROL 无一般数据导出]**。以这种方式标记的架构字段无法从 Customer Journey Analytics 导出或下载（通过报告、导出、API 等）
+* `C12` 标签 – **[!UICONTROL 无一般数据导出]**。 以这种方式标记的架构字段无法从 Customer Journey Analytics 导出或下载（通过报告、导出、API 等）
 
 >[!NOTE]
 >
->数据使用情况标签不会自动传播到拼合数据集。但可以手动添加它们。
+>数据使用情况标签不会自动传播到拼合数据集。 但可以手动添加它们。
 
-标签本身并不意味着强制执行这些数据使用情况标签。这就是政策的用途。您可以使用 [Experience Platform UI](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/policies/user-guide) 或通过 Experience Platform 中的[政策服务 API](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/api/overview) 创建政策。
+标签本身并不意味着强制执行这些数据使用情况标签。 这就是政策的用途。 您可以使用 [Experience Platform UI](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/policies/user-guide) 或通过 Experience Platform 中的[政策服务 API](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/api/overview) 创建政策。
 
 在 Experience Platform 中，有两个 Adobe 定义的策略可以在 Customer Journey Analytics 中显示并影响报告和数据导出：
 
@@ -40,7 +58,7 @@ ht-degree: 99%
 | --- | --- |
 | 架构字段上的信息按钮 | 单击此按钮表示当前应用于字段的 [!UICONTROL 数据使用情况标签]：<p>![](assets/data-label-left.png) |
 | 在[组件设置](/help/data-views/component-settings/overview.md)下的右边栏 | 此处列出了任何[!UICONTROL 数据使用情况标签]：<p>![](assets/data-label-right.png) |
-| 将数据标签添加为列 | 您可以将 [!UICONTROL 数据使用情况标签] 作为列添加到数据视图中 [!UICONTROL 包含的组件] 列中。只需选择列选择器图标并选择 **[!UICONTROL 数据使用情况标签]**：<p>![](assets/data-label-column.png) |
+| 将数据标签添加为列 | 您可以将 [!UICONTROL 数据使用情况标签] 作为列添加到数据视图中 [!UICONTROL 包含的组件] 列中。 只需选择列选择器图标并选择 **[!UICONTROL 数据使用情况标签]**：<p>![](assets/data-label-column.png) |
 
 {style="table-layout:auto"}
 
@@ -54,7 +72,7 @@ ht-degree: 99%
 
 ## 筛选数据视图中的数据管理策略
 
-您可以检查某个策略（例如，您创建的名为 **[!UICONTROL 强制分析]** 的策略）是否已启用。以及该策略是否阻止使用某些 Customer Journey Analytics 数据视图元素进行分析或数据导出。
+您可以检查某个策略（例如，您创建的名为 **[!UICONTROL 强制分析]** 的策略）是否已启用。 以及该策略是否阻止使用某些 Customer Journey Analytics 数据视图元素进行分析或数据导出。
 
 再次选择左边栏中的 [!UICONTROL 过滤器] 图标，在 **[!UICONTROL 数据治理]** 下，选择 **[!UICONTROL 策略]**：
 
@@ -72,7 +90,7 @@ ht-degree: 99%
 
 您还无法保存其中有被阻止的字段的数据视图。
 
-请谨慎尝试在 Experience Platform 中的字段或字段组上应用访问和数据治理标签（通过策略），因为您已经在数据视图中定义了这些组件。您可能会看到此对话框。
+请谨慎尝试在 Experience Platform 中的字段或字段组上应用访问和数据治理标签（通过策略），因为您已经在数据视图中定义了这些组件。 您可能会看到此对话框。
 
 ![违规](assets/violation.png)
 

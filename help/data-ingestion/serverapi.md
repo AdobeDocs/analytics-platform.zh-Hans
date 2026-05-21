@@ -5,10 +5,29 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
 role: Admin
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+TQID: https://experienceleague.adobe.com/aInqrIT7Z22NV6kkdJkydpPNEEP46Xbc4CQZxXzzcNk
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: c38ed341-fab2-46df-9d72-88d8166edebb
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '2356'
-ht-degree: 61%
+source-wordcount: 2447
+ht-degree: 62%
 
 ---
 
@@ -24,9 +43,9 @@ ht-degree: 61%
 
 - **使用服务器API**&#x200B;将数据直接从桌面、游戏机、物联网设备或机顶盒上运行的应用程序或游戏发送到数据流。
 
-- **部署和验证**。拥有一个可在其中进行迭代开发的环境，一旦一切通过验证，就将其实时发布到生产环境中。
+- **部署和验证**。 拥有一个可在其中进行迭代开发的环境，一旦一切通过验证，就将其实时发布到生产环境中。
 
-- 在 Customer Journey Analytics 中&#x200B;**设置连接**。此连接应（至少）包含 Adobe Experience Platform 数据集。
+- 在 Customer Journey Analytics 中&#x200B;**设置连接**。 此连接应（至少）包含 Adobe Experience Platform 数据集。
 
 - 在 Customer Journey Analytics 中&#x200B;**设置数据视图**&#x200B;以定义要在 Analysis Workspace 中使用的量度和维度。
 
@@ -39,9 +58,9 @@ ht-degree: 61%
 
 ## 设置架构和数据集
 
-要将数据摄取到Adobe Experience Platform，您必须首先定义要收集的数据。 引入 Adobe Experience Platform 的所有数据都必须符合标准的非规范化结构，以便下游功能和特性对其进行识别和操作。体验数据模型(XDM)是一种标准框架，它以架构的形式提供结构。
+要将数据摄取到Adobe Experience Platform，您必须首先定义要收集的数据。 引入 Adobe Experience Platform 的所有数据都必须符合标准的非规范化结构，以便下游功能和特性对其进行识别和操作。 体验数据模型(XDM)是一种标准框架，它以架构的形式提供结构。
 
-定义架构后，您可以使用一个或多个数据集来存储和管理数据集合。数据集是用于数据集合（通常是表）的存储和管理结构，其中包含架构（列）和字段（行）。
+定义架构后，您可以使用一个或多个数据集来存储和管理数据集合。 数据集是用于数据集合（通常是表）的存储和管理结构，其中包含架构（列）和字段（行）。
 
 摄取到 Adobe Experience Platform 中的所有数据都必须符合预定义的架构，然后才能作为数据集保存。
 
@@ -64,7 +83,7 @@ ht-degree: 61%
 
       >[!INFO]
       >
-      >    Experience Event 架构用于对轮廓的&#x200B;_行为_&#x200B;进行建模（如场景名称、添加到购物车的按钮）。个人轮廓架构用于对轮廓&#x200B;_属性_（如姓名、电子邮件、性别）进行建模。
+      >    Experience Event 架构用于对轮廓的&#x200B;_行为_&#x200B;进行建模（如场景名称、添加到购物车的按钮）。 个人轮廓架构用于对轮廓&#x200B;_属性_（如姓名、电子邮件、性别）进行建模。
 
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
@@ -105,11 +124,11 @@ ht-degree: 61%
 
    >[!NOTE]
    >
-   >如果该字段组不可用，请寻找另一个包含身份标识字段的字段组。或者[创建一个新的字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=zh-Hans)，并[将新的身份标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=zh-Hans#define-a-identity-field)（如 `ecid`、`crmId` 以及您需要的其他字段）添加到该字段组中，并选择该新字段组。
+   >如果该字段组不可用，请寻找另一个包含身份标识字段的字段组。 或者[创建一个新的字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=zh-Hans)，并[将新的身份标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=zh-Hans#define-a-identity-field)（如 `ecid`、`crmId` 以及您需要的其他字段）添加到该字段组中，并选择该新字段组。
 
    ![识别对象](./assets/identification-field-gaming.png)
 
-   识别对象为您的架构添加了识别功能。在您的案例中，您希望使用Experience Cloud ID和电子邮件地址来识别玩游戏的用户档案，这些用户档案用于登录游戏主机。 有许多其他属性可用于跟踪您的人员身份。
+   识别对象为您的架构添加了识别功能。 在您的案例中，您希望使用Experience Cloud ID和电子邮件地址来识别玩游戏的用户档案，这些用户档案用于登录游戏主机。 有许多其他属性可用于跟踪您的人员身份。
 
    选择&#x200B;**[!UICONTROL 应用]**&#x200B;将此对象添加到您的架构中。
 
@@ -119,21 +138,21 @@ ht-degree: 61%
 
    您将 Experience Cloud Identity 指定为 Adobe Experience Platform 身份标识服务可用于组合（缝合）具有相同 ECID 的轮廓行为的主要身份。
 
-   选择 **[!UICONTROL 应用]**。您会看到 ecid 属性中出现指纹图标。
+   选择 **[!UICONTROL 应用]**。 您会看到 ecid 属性中出现指纹图标。
 
 1. 选择刚刚添加的身份标识对象中的&#x200B;**[!UICONTROL 邮件]**&#x200B;字段，选择&#x200B;**[!UICONTROL 身份标识]**&#x200B;和&#x200B;**[!UICONTROL 邮件]** 和 [!UICONTROL 身份标识命名空间] 列表中的 [!UICONTROL 字段属性] 面板。
 
-    ![将电子邮件指定为身份标识](./assets/specify-email-identity-gaming.png)
+   ![将电子邮件指定为身份标识](./assets/specify-email-identity-gaming.png)
 
    您将电子邮件地址指定为 Adobe Experience Platform 身份标识服务可用于组合（拼接）轮廓行为的另一个身份标识。
 
-   选择 **[!UICONTROL 应用]**。您会看到电子邮件属性中显示指纹图标。
+   选择 **[!UICONTROL 应用]**。 您会看到电子邮件属性中显示指纹图标。
 
    选择&#x200B;**[!UICONTROL 保存]**。
 
 1. 选择显示架构名称的架构的根元素，然后选择 **[!UICONTROL 轮廓]** 开关。
 
-   系统会提示您启用轮廓的架构。一旦启用，当数据被引入基于此架构的数据集中时，该数据将合并到实时客户轮廓。
+   系统会提示您启用轮廓的架构。 一旦启用，当数据被引入基于此架构的数据集中时，该数据将合并到实时客户轮廓。
 
    有关详细信息，请参阅[启用架构以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans#profile)。
 
@@ -145,7 +164,7 @@ ht-degree: 61%
 
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存架构。
 
-您创建了一个最小架构，用于模拟您可以从游戏中捕获的数据。 该架构允许使用 Experience Cloud Identity 和电子邮件地址来识别轮廓。通过启用配置文件的架构，您可以确保将从控制台游戏中捕获的数据添加到实时客户配置文件中。
+您创建了一个最小架构，用于模拟您可以从游戏中捕获的数据。 该架构允许使用 Experience Cloud Identity 和电子邮件地址来识别轮廓。 通过启用配置文件的架构，您可以确保将从控制台游戏中捕获的数据添加到实时客户配置文件中。
 
 除了行为数据之外，您还可以从控制台捕获配置文件属性数据（例如，登录到控制台的配置文件的详细信息）。
 
@@ -165,7 +184,7 @@ ht-degree: 61%
 
 ### 设置数据集
 
-使用您的架构，您已经定义了数据模型。现在，您必须定义结构以使用数据集存储和管理这些数据。
+使用您的架构，您已经定义了数据模型。 现在，您必须定义结构以使用数据集存储和管理这些数据。
 
 设置您的数据集
 
@@ -189,7 +208,7 @@ ht-degree: 61%
 
 7. 选择&#x200B;**[!UICONTROL 轮廓]**&#x200B;开关
 
-   系统会提示您启用轮廓的数据集。启用后，数据集会使用其摄取的数据丰富实时客户轮廓。
+   系统会提示您启用轮廓的数据集。 启用后，数据集会使用其摄取的数据丰富实时客户轮廓。
 
    >[!IMPORTANT]
    >
@@ -197,7 +216,7 @@ ht-degree: 61%
 
    ![为轮廓启用架构](./assets/aepwebsdk-dataset-profile.png)
 
-有关如何查看、预览、创建和删除数据集的更多信息，请参阅[数据集 UI 指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=zh-Hans)。以及如何为实时客户轮廓启用数据集。
+有关如何查看、预览、创建和删除数据集的更多信息，请参阅[数据集 UI 指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=zh-Hans)。 以及如何为实时客户轮廓启用数据集。
 
 ## 设置数据流
 
@@ -211,7 +230,7 @@ ht-degree: 61%
 
 2. 选择&#x200B;**[!UICONTROL 新数据流]**。
 
-3. 命名并描述您的数据流。从 [!UICONTROL 事件架构] 列表中选择您的架构。
+3. 命名并描述您的数据流。 从 [!UICONTROL 事件架构] 列表中选择您的架构。
 
    ![新数据流](./assets/new-datastream.png)
 
@@ -278,7 +297,7 @@ curl -X POST "https://server.adobedc.net/ee/v2/interact?dataStreamId={DATASTREAM
 
 要在 Customer Journey Analytics 中使用 Adobe Experience Platform 数据，您需要创建一个连接，其中包含因设置架构、数据集和工作流所产生的数据。
 
-通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告这些数据集，您必须首先在Adobe Experience Platform和Workspace中的数据集之间建立连接。
+通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。 要报告这些数据集，您必须首先在Adobe Experience Platform和Workspace中的数据集之间建立连接。
 
 创建您的连接：
 
@@ -308,7 +327,7 @@ curl -X POST "https://server.adobedc.net/ee/v2/interact?dataStreamId={DATASTREAM
 
       - 在 Adobe Experience Platform 中，从在数据集架构中定义的可用身份标识中选择[!UICONTROL 人员 ID]。
 
-      - 从[!UICONTROL 数据源类型]列表中选择正确的数据源。如果指定&#x200B;**[!UICONTROL 其他]**，则为您的数据源添加描述。
+      - 从[!UICONTROL 数据源类型]列表中选择正确的数据源。 如果指定&#x200B;**[!UICONTROL 其他]**，则为您的数据源添加描述。
 
       - 根据您的首选项设置&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;和&#x200B;**[!UICONTROL 数据集回填现有数据]**。
 
@@ -320,7 +339,7 @@ curl -X POST "https://server.adobedc.net/ee/v2/interact?dataStreamId={DATASTREAM
 
 ## 设置数据视图
 
-数据视图是 Customer Journey Analytics 专属的容器，通过它，可决定如何解释来自连接的数据。 它指定所有可在 Analysis Workspace 中找到的维度和量度，以及这些维度和量度从哪些列获取其数据。为准备 Analysis Workspace 中的报告而定义数据视图。
+数据视图是 Customer Journey Analytics 专属的容器，通过它，可决定如何解释来自连接的数据。 它指定所有可在 Analysis Workspace 中找到的维度和量度，以及这些维度和量度从哪些列获取其数据。 为准备 Analysis Workspace 中的报告而定义数据视图。
 
 创建您的数据视图：
 
@@ -355,7 +374,7 @@ curl -X POST "https://server.adobedc.net/ee/v2/interact?dataStreamId={DATASTREAM
 
 ## 设置项目
 
-Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分析并基于数据共享见解。您可以使用工作区项目来组合数据组件、表和可视化，以制作分析并与组织中的任何人共享。
+Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分析并基于数据共享洞察。 您可以使用工作区项目来组合数据组件、表和可视化，以制作分析并与组织中的任何人共享。
 
 要创建您的项目：
 
@@ -381,4 +400,4 @@ Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分�
 
 >[!SUCCESS]
 >
->您已完成所有步骤。首先定义您要收集的数据（架构）以及在Adobe Experience Platform中存储这些数据（数据集）的位置。 您在Edge Network上配置了一个数据流，以确保可以将数据转发到该数据集。 然后，您使用Edge Network服务器API将该数据发送到您的数据流。 您在Customer Journey Analytics中定义了一个连接以使用您的游戏数据和其他数据。 通过数据视图定义，您可以指定要使用的维度和量度，最后，您创建了第一个项目，用于可视化和分析游戏数据。
+>您已完成所有步骤。 首先定义您要收集的数据（架构）以及在Adobe Experience Platform中存储这些数据（数据集）的位置。 您在Edge Network上配置了一个数据流，以确保可以将数据转发到该数据集。 然后，您使用Edge Network服务器API将该数据发送到您的数据流。 您在Customer Journey Analytics中定义了一个连接以使用您的游戏数据和其他数据。 通过数据视图定义，您可以指定要使用的维度和量度，最后，您创建了第一个项目，用于可视化和分析游戏数据。

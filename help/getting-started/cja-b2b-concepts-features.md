@@ -6,13 +6,29 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B Edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: a9c22cfd7077fd9e1ac4b9ea4ec0e016e9d2425b
+TQID: https://experienceleague.adobe.com/pXiDvk--5tAJYGj8lfq7KQfVLQqVOePbBZqCXT10rZ0
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: 1485
 ht-degree: 2%
 
 ---
-
 
 # B2B edition概念和功能
 
@@ -39,7 +55,7 @@ Customer Journey Analytics基于三个容器的概念而构建：人员、会话
 
 在配置数据视图时，您可以重新定义这些容器的命名方式，但层次结构和容器之间的关系是预先确定的。 会话容器是根据您在数据视图的[会话设置](/help/data-views/session-settings.md)中定义会话的方式生成的。
 
-![B2C](assets/b2c-containers.svg){zoomable="yes"}
+![B2C](assets/b2c-containers.png){zoomable="yes"}
 
 
 ### B2B 容器
@@ -48,14 +64,14 @@ Customer Journey Analytics基于三个容器的概念而构建：人员、会话
 
 容器之间的层次和关系是预定的。 商机、采购组和人员都是帐户容器的同级容器。 在该层次结构中，人员容器和事件容器之间的会话容器是根据您在数据视图的[会话设置](/help/data-views/session-settings.md)中定义会话的方式生成的。 当前不生成并支持其他会话容器，例如帐户容器和事件容器之间的会话容器。 有关B2B容器的说明和基本用法，请参阅下表。
 
-![B2B](assets/b2b-containers.svg){zoomable="yes"}
+![B2B](assets/b2b-containers.png){zoomable="yes"}
 
 | B2B容器 | 描述<br/>基本用例 |
 |---|---|
 | 帐户 | 作为您业务的客户或潜在客户的公司。 该公司可以是大型组织的子公司或部门。 帐户表示您要销售的目标组织以及要在该组织层跟踪的组织。 |
 | 全局帐户（可选） | 一组关联公司的顶级母公司。 全局帐户没有母公司，但可能有属于该全局帐户的子公司或部门。 当您在连接中配置了全局帐户容器时，没有父或子公司的帐户应同时列在“帐户”字段和“全局帐户”字段中。 |
 | 机会（可选） | 一起销售的产品和服务集合。 在销售周期中，销售机会往往涉及各个阶段，直到销售结束。<br>您将使用数据来衡量通过销售funnel的销售机会进展。 例如，提供从阶段3移至阶段4的热门机会详细信息的报表。 |
-| 购买组（可选） | 组织内参与购买产品或服务的决策过程的人员集合。 <br/>您将使用购买群组数据通过促销活动管理来跟踪购买群组。 例如，构建关键购买群体的受众区段。<br/>您最可能希望从购买组查找个人资料数据，以便可以报告购买组中的人员。 |
+| 购买组（可选） | 组织内参与购买产品或服务的决策过程的人员集合。 <br/>您将使用购买群组数据通过促销活动管理来跟踪购买群组。 例如，构建关键购买组的受众区段。<br/> 您最可能希望从购买组查找个人资料数据，以便可以报告购买组中的人员。 |
 | 人员 | 个人，通常通过与公司进行交互的唯一电子邮件地址进行标识。 <br/>您将使用个人资料数据来识别为帐户工作的人员。 例如：定向某个帐户中已注册会议的所有人员。 |
 
 >[!IMPORTANT]
@@ -72,7 +88,7 @@ Customer Journey Analytics基于三个容器的概念而构建：人员、会话
   >Customer Journey Analytics B2B edition中基于帐户的设置中的B2B事件数据可能包含多行数据，但没有人员或会话。 例如：详细说明商机阶段进展的行。 在评估区段时，请记住，人员和会话可能不再是正确的标准。
   >
 
-* **归因**：您可以在[归因面板](/help/analysis-workspace/c-panels/attribution.md)、[归因组件设置](/help/data-views/component-settings/attribution.md)、[计算量度](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md)或自由格式表[的](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)列中使用新的B2B容器。 帐户回顾时间可延长至13个月。
+* **归因**：您可以在[归因面板](/help/analysis-workspace/c-panels/attribution.md)、[归因组件设置](/help/data-views/component-settings/attribution.md)、[计算量度](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md)或自由格式表[&#128279;](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)的列中使用新的B2B容器。 帐户回顾时间可延长至13个月。
 
 * **可视化图表**：[退出](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)、[流量](/help/analysis-workspace/visualizations/c-flow/flow.md)、[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)和[同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)可视化图表支持新的B2B容器。 例如：您可以使用新容器了解购买组如何使用内容，或者商机同类群组如何接近销售结束。
 您还可以在[用户首选项](/help/analysis-workspace/user-preferences.md#visualizations-preferences)中设置这些可视化的默认容器。
@@ -87,13 +103,13 @@ Customer Journey Analytics B2B可将以下数据类型与数据集区分开来�
 | 数据类型 | 时间序列 | 容器记录 | 字段记录 |
 |---|---|---|---|
 | **数据集** | **事件数据集**<br/>&#x200B;例如：<ul><li>数字分析</li><li>CRM事件</li><li>面对面活动</li><li>呼叫中心数据</li></ul> | **配置文件数据集**<br/>&#x200B;例如：<ul><li>CRM记录</li><li>AJO B2B记录</li><li>CDP记录</li><ul> | **分类**<br/>&#x200B;例如：<ul><li>营销活动记录</li><li>营销列表记录</li><li>内容元数据</li><li>产品记录</li></ul> |
-| 要求 | **时间戳**<br>&#x200B;每个记录需要：<ul><li>帐户 ID</li><li>全局帐户ID（可选）</li></ul> | **帐户ID**<br>&#x200B;记录需要容器ID，例如：<ul><li>帐户</li><li>人员</li><li>机会</li><li>购买群组</li></ul> | **匹配键**<br>&#x200B;记录需要包含在容器或事件数据集中的ID，例如：<ul><li>营销活动 ID</li><li>内容 ID</li><li>产品 ID</li></ul> |
+| 要求 | **时间戳**<br>&#x200B;每个记录需要：<ul><li>帐户 ID</li><li>全局帐户ID（可选）</li></ul> | **帐户ID**<br>&#x200B;记录需要容器ID，例如：<ul><li>帐户</li><li>人员</li><li>机会</li><li>购买群组</li></ul> | **匹配键**<br>&#x200B;记录需要包含在容器或事件数据集中的ID，例如：<ul><li>促销活动 ID</li><li>内容 ID</li><li>产品 ID</li></ul> |
 
 {style="table-layout:fixed"}
 
 Customer Journey Analytics B2B edition中基于帐户的连接示例：
 
-![基于帐户的连接示例](assets/b2b-datasets.svg)
+![基于帐户的连接示例](assets/b2b-datasets.png)
 
 Customer Journey Analytics B2B edition提供了[连接图](/help/connections/create-connection.md#connection-map)界面，可让您大致了解连接中数据集之间的关系。
 

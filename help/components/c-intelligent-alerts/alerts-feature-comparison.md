@@ -4,16 +4,30 @@ title: 警报功能比较：Customer Journey Analytics和Adobe Analytics
 feature: Workspace Basics
 role: User, Admin
 exl-id: 04e819c4-9fb5-4459-9f8b-40d78385ed90
-source-git-commit: 9e07dfc84bc06aef987d99c225cefb4e0406f552
+TQID: https://experienceleague.adobe.com/NEm3Mu7q6RDKbCyG-PJzOFPrjJF4Y-unHgyBXyKd1HM
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+  - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 24%
+source-wordcount: 495
+ht-degree: 25%
 
 ---
 
 # 警报功能比较
 
-在 Customer Journey Analytics 中使用警报的过程与在 Adobe Analytics 中使用警报的过程几乎相同。然而，两者之间有着重要的区别。 以下各节描述了主要差异。
+在 Customer Journey Analytics 中使用警报的过程与在 Adobe Analytics 中使用警报的过程几乎相同。 但是，有一些重要的不同之处。 以下各节描述了主要差异。
 
 ## 每小时警报不可用
 
@@ -39,7 +53,7 @@ ht-degree: 24%
 
 为了解决摄取时间的延迟，警报发送前的默认延迟时间为 9 小时。
 
-您可以将默认延迟时间从 9 小时调整为 0 至 24 小时之间的任意值。但是，将延迟时间减少到 9 小时以下可能意味着您报告的数据不完整，从而会导致警报信息不准确。
+您可以将默认延迟时间从 9 小时调整为 0 至 24 小时之间的任意值。 但是，将延迟时间减少到 9 小时以下可能意味着您报告的数据不完整，从而会导致警报信息不准确。
 
 有关如何调整延迟以及调整延迟时应考虑的因素的更多信息，请参阅[创建警报](/help/components/c-intelligent-alerts/alert-builder.md)。
 

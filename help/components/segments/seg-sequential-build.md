@@ -3,10 +3,25 @@ description: 了解使用THEN运算符定义区段条件序列的顺序区段。
 title: 顺序区段
 feature: Filters, Segments
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+TQID: https://experienceleague.adobe.com/TqLnqudV-SrIk7SdMT7dUeNBAwaa5FkoZocUkwrod6g
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '2461'
-ht-degree: 3%
+source-wordcount: 2491
+ht-degree: 4%
 
 ---
 
@@ -43,7 +58,7 @@ ht-degree: 3%
 
 
 
-生成顺序区段的基础知识与使用[区段生成器](seg-builder.md)生成常规区段的基础知识没有区别。 您可以使用[定义生成器](seg-builder.md#definition-builder)来构造区段定义。 在该构造中，使用组件、容器、运算符和逻辑。 只要在主定义或您在&#x200B;**[!UICONTROL 定义生成器]**&#x200B;中使用的任何容器中选择[Then](seg-builder.md#definition-builder)运算符，常规区段就会变成顺序区段。
+生成顺序区段的基础知识与使用[区段生成器](seg-builder.md)生成常规区段的基础知识没有区别。 您可以使用[定义生成器](seg-builder.md#definition-builder)来构造区段定义。 在该构造中，您可以使用组件、容器、运算符和逻辑。 只要在主定义或您在[定义生成器](seg-builder.md#definition-builder)中使用的任何容器中选择&#x200B;**[!UICONTROL Then]**&#x200B;运算符，常规区段就会变成顺序区段。
 
 ### 示例
 
@@ -82,7 +97,7 @@ ht-degree: 3%
 
 ## [!UICONTROL After]和[!UICONTROL Within]
 
-您可以使用![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]**&#x200B;和![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** **[!UICONTROL Then]**&#x200B;运算符为事件、会话或维度[定义其他](#time-constraints)时间约束[或](#event-session-and-dimension-constraints)约束。
+您可以使用![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]**&#x200B;和![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** **[!UICONTROL Then]**&#x200B;运算符为事件、会话或维度[&#128279;](#event-session-and-dimension-constraints)定义其他[时间约束](#time-constraints)或约束。
 
 ### 时间限制
 
@@ -99,9 +114,9 @@ ht-degree: 3%
 
 | 运算符 | 描述 |
 |--- |--- |
-| **[!UICONTROL After]** | [!UICONTROL After]运算符用于指定两个检查点之间的时间长度的最小限制。 设置After值时，时间限制从应用区段时开始。 例如，如果在容器上设置[!UICONTROL After]运算符以识别访问页面A，但直到一天后才返回访问页面B的人员，则访客离开页面A时将会开始该日期。 对于要包含在区段中的访客，离开页面A后必须至少经过1440分钟（一天）才能查看页面B。 |
+| **[!UICONTROL After]** | [!UICONTROL After]运算符用于指定两个检查点之间的时间长度的最小限制。 设置After值时，时间限制从应用区段时开始。 例如，如果在容器上设置[!UICONTROL After]运算符以识别访问页面A，但直到一天后才返回访问页面B的人员，则访客离开页面A时将会开始该日期。  对于要包含在区段中的访客，离开页面A后必须至少经过1440分钟（一天）才能查看页面B。 |
 | **[!UICONTROL Within]** | [!UICONTROL Within]运算符用于指定两个检查点之间的时间长度的最大限制。 例如，如果在容器上设置[!UICONTROL Within]运算符以识别访问页面A，然后在一天内返回访问页面B的人员，则该时间将从该人员离开页面A时开始。要包含在此区段中，人员最多需要在一天之后打开页面B。对于要包含在区段中的人员，在离开页面A以查看页面B后，最多必须在1440分钟（一天）内打开页面B。 |
-| **[!UICONTROL 晚于]**&#x200B;之内 | 同时使用[!UICONTROL After]和[!UICONTROL Within]运算符时，这两个运算符是并行开始和结束的，而不是按顺序开始和结束。 <br/>例如，您生成了一个区段，其容器设置为： `After = 1 Week(s) and Within = 2 Week(s)`。<br/>此区段中用于识别访客的条件仅在一周至两周内满足要求。 这两个条件是从第一次查看页面时开始执行的。 |
+| **[!UICONTROL 晚于]**&#x200B;之内 | 同时使用[!UICONTROL After]和[!UICONTROL Within]运算符时，这两个运算符是并行开始和结束的，而不是按顺序开始和结束。 <br/>例如，您生成了一个区段，其容器设置为： `After = 1 Week(s) and Within = 2 Week(s)`。<br/>此区段中的访客识别条件仅在一周和两周之间满足。 这两个条件是从第一次查看页面时开始执行的。 |
 
 
 #### 示例
@@ -110,27 +125,27 @@ ht-degree: 3%
 
 ##### [!UICONTROL After]运算符
 
-识别仅两周后访问了一个页面然后又访问另一个页面的人员。 例如，访问主页的人员，但 | 仅两周后才能翻页。
+识别仅两周后访问了一个页面然后又访问另一个页面的人员。 例如，访问主页的人员，但 |仅两周后显示“鞋子”页面。
 
 ![序列在](assets/sequence-after.png)之后
 
-如果主页的页面查看发生在2024年6月1日00:01，则页面查看针对页面女性 | 只要2024年6月15日00:01之后出现该页面查看，鞋就会匹配。
+如果主页的页面查看发生在2024年6月1日00:01，则页面查看针对页面女性 |只要2024年6月15日:01之后出现该页面查看，鞋就会匹配。
 
 ##### [!UICONTROL Within]运算符
 
-识别在五分钟内访问了一个页面然后访问另一个页面的人员。 例如，访问主页的人，然后访问妇女 | 在5分钟内完成“鞋子”页面。
+识别在五分钟内访问了一个页面然后访问另一个页面的人员。 例如，访问主页的人，然后访问妇女 |在5分钟内完成“鞋子”页面。
 
 ![在](assets/sequence-within.png)内排序
 
-如果主页的页面查看发生在2024年6月1日12:01，则页面查看针对页面女性 | 只要该页面查看发生在2024年6月15日12:16之前，鞋就会匹配。
+如果主页的页面查看发生在2024年6月1日12:01，则页面查看针对页面女性 |只要该页面查看发生在2024年6月15日12:16之前，鞋就会匹配。
 
 ##### [!UICONTROL After]但[!UICONTROL Within]运算符
 
-识别访问了一个页面然后在两周后但在一个月内访问另一个页面的人员。 例如，访问主页的人，两周后在一个月内访问的女性 | “鞋子”页面。
+识别访问了一个页面然后在两周后但在一个月内访问另一个页面的人员。 例如，访问主页的人，两周后在一个月内访问的女性 |鞋页面。
 
 ![序列晚于](assets/sequence-afterbutwithin.png)但在此范围内
 
-2024年6月1日点击主页并返回妇女之家的任何人 | 2019年6月15日之后00:01但2019年7月1日之前的“鞋子”页面符合该区段的条件。
+2024年6月1日点击主页并返回妇女之家的任何人 | 2019年6月15日之后00:01，但2019年7月1日之前的“鞋子”页面符合该区段的条件。
 
 
 ### [!UICONTROL 事件]、[!UICONTROL 会话]和[!UICONTROL Dimension]约束
@@ -139,7 +154,7 @@ ht-degree: 3%
 
 #### 示例
 
-以下是一个序列区段示例，该区段会查找访问过一个产品类别页面的人员（女性） | 鞋子)，然后是结帐页面（结帐） | 谢谢)。
+以下是一个序列区段示例，该区段会查找访问过一个产品类别页面的人员（女性） |鞋子)，然后是结帐页面（结帐） |谢谢)。
 
 ![在](assets/sequence-filter-within.png)内排序区段
 
@@ -158,7 +173,7 @@ ht-degree: 3%
 
 要创建包含每个人的顺序区段，请选择选项![用户组](/help/assets/icons/UserGroup.svg) **[!UICONTROL 包含每个人]**。
 
-顺序区段识别整体匹配给定模式的数据。  下面是一个基本序列区段示例，该区段会查找访问过某个产品类别页面的人员（女性） | 鞋子)，然后是结帐页面（结帐） | 谢谢)。 该区段设置为![用户组](/help/assets/icons/UserGroup.svg) **[!UICONTROL 包含每个人]**。
+顺序区段识别整体匹配给定模式的数据。  下面是一个基本序列区段示例，该区段会查找访问过某个产品类别页面的人员（女性） |鞋子)，然后是结帐页面（结帐） |谢谢)。 该区段设置为![用户组](/help/assets/icons/UserGroup.svg) **[!UICONTROL 包含每个人]**。
 
 ![顺序区段包括所有人](assets/sequence-include-everyone.png)
 
@@ -183,8 +198,8 @@ ht-degree: 3%
 | B然后D | A | B | C | D | E | F |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | 包含每个人 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
-| 仅在序列之前 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |  |  |  |  |
-| 仅在序列之后 |  |  |  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
+| 仅在序列前 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |  |  |  |  |
+| 仅在序列后 |  |  |  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
 
 {style="table-layout:fixed"}
 
@@ -193,8 +208,8 @@ ht-degree: 3%
 | B然后D（出现多次） | A | B | C | D | B | C | D | E |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 包含每个人 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
-| 仅在序列之前 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |  |  |  |
-| 仅在序列之后 |  |  |  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
+| 仅在序列前 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |  |  |  |
+| 仅在序列后 |  |  |  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
 
 {style="table-layout:fixed"}
 
@@ -210,7 +225,7 @@ ht-degree: 3%
 
 ## [!UICONTROL 排除]
 
-区段定义包括所有数据，除非您使用![排除](/help/assets/icons/User.svg)专门排除[!UICONTROL User] ![Person](/help/assets/icons/Visit.svg)、[!UICONTROL Visit] ![Session](/help/assets/icons/WebPage.svg)或[!UICONTROL WebPage] **[!UICONTROL Event]**&#x200B;数据。
+区段定义包括所有数据，除非您使用&#x200B;**[!UICONTROL 排除]**&#x200B;专门排除![User](/help/assets/icons/User.svg) [!UICONTROL Person]、![Visit](/help/assets/icons/Visit.svg) [!UICONTROL Session]或![WebPage](/help/assets/icons/WebPage.svg) [!UICONTROL Event]数据。
 
 [!UICONTROL 排除]允许您关闭常见数据并创建更集中的区段。 “排除”还允许您创建排除特定人员组的区段。 例如，定义一个区段，该区段指定下订单的人员，然后排除该人员组以识别&#x200B;*非购买者*。 最佳做法是创建使用宽泛定义的规则，而不是尝试使用[!UICONTROL 排除]来定位与特定包含值匹配的特定角色。
 
@@ -255,7 +270,7 @@ ht-degree: 3%
 >
 >[!UICONTROL 逻辑组]只能在顺序区段中定义，这意味着容器中使用[!UICONTROL Then]运算符。
 
-使用逻辑组，您可以将条件分组到一个顺序区段检查点。作为序列的一部分，在标识为逻辑组的容器中定义的逻辑将在任何先前顺序检查点之后和任何后续顺序检查点之前进行评估。
+使用逻辑组，您可以将条件分组到一个顺序区段检查点。 作为序列的一部分，在标识为逻辑组的容器中定义的逻辑将在任何先前顺序检查点之后和任何后续顺序检查点之前进行评估。
 
 可以按任意顺序满足逻辑组本身中的条件。 相反，非顺序容器（事件、会话、人员）不要求在整个序列中满足其条件，如果与Then运算符一起使用，则会产生可能不直观的结果。
 
@@ -284,7 +299,7 @@ ht-degree: 3%
 
 #### 第一个匹配项
 
-识别访问了一个页面或其他页面，然后又访问另一个页面的人员。 例如，访问了“女性”页面或“男性”页面，然后访问了“结帐”的人员 | 感谢页面。
+识别访问了一个页面或其他页面，然后又访问另一个页面的人员。 例如，访问了“女性”页面或“男性”页面，然后访问了“结帐”的人员 |感谢页面。
 
 ![示例将第一个匹配与逻辑组一起使用](assets/logicgroup-example-firstmatch.png)
 

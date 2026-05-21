@@ -5,16 +5,30 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5c52986c-7ff3-45b5-9039-2bfb6529238c
 role: Admin
-source-git-commit: 0e4ea634a604a65484a57f5af8021badb86a865a
+autotag-review: '2026-05-19T09:27:51.516Z'
+TQID: 'https://experienceleague.adobe.com/4DM6LjcCM4xWw8j-1xcEvJ8XOVdvF5zNiOXir538Z0A'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2:
+  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 34%
+source-wordcount: 196
+ht-degree: 32%
 
 ---
 
 # Customer Journey Analytics使用的IP地址
 
-一些防火墙配置会阻止源自 Adobe 数据收集服务器或负责访问数据的服务器的 IP 地址。您可以使用此范围列表来更改贵组织的防火墙设置，以允许从组织内访问和发送数据。
+一些防火墙配置会阻止源自 Adobe 数据收集服务器或负责访问数据的服务器的 IP 地址。 您可以使用此范围列表来更改贵组织的防火墙设置，以允许从组织内访问和发送数据。
 
 此页面包含您需要添加到允许列表的ip地址，以便出站系统正常工作，例如[将数据导出到云提供商](/help/analysis-workspace/export/export-cloud.md)。
 
@@ -144,4 +158,4 @@ ht-degree: 34%
 >
 >Customer Journey Analytics使用的[域](domains.md)
 >
->Adobe Experience Cloud使用的[IP地址](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/data-collection/ip-addresses)
+>CX Enterprise使用的[个IP地址](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/data-collection/ip-addresses)

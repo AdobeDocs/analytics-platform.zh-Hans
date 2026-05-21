@@ -5,9 +5,18 @@ feature: Workspace Basics
 exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 1564c91616015311393a643fe7fcecd429cf3a36
+TQID: https://experienceleague.adobe.com/DMNWDnY4TfLtUmEMMIYrzNvlgYUuqzowkBYvcBmL2x0
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: 189
 ht-degree: 100%
 
 ---
@@ -22,7 +31,7 @@ ht-degree: 100%
 
 您可以随意尝试和拖动维度和量度，更改维度和量度归因设置、友好名称、时区、会话设置等。
 
-以下是工作区中基础的可视化图表示例。例如，您可以：
+以下是工作区中基础的可视化图表示例。 例如，您可以：
 
 * 创建排名报表，其中数据源显示排名最靠前的事件、会话和人员。
 

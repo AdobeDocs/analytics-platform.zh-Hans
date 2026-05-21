@@ -5,10 +5,32 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: User
 exl-id: 29857457-3fbb-441c-8761-91712b9df20f
-source-git-commit: aa29067a244c588e6d830f0a039db90e99eaf5d3
+autotag-review: '2026-05-19T11:02:18.748Z'
+TQID: 'https://experienceleague.adobe.com/uwZ-wOZblEpNl5gGw673Lo11Sqqwfz5u0bxd0d2hOLE'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2:
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+  - id: f3ca85c1-72de-4df2-97ed-05753cd77c47
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '1277'
-ht-degree: 1%
+source-wordcount: 1469
+ht-degree: 3%
 
 ---
 
@@ -252,7 +274,7 @@ LLM和AI代理在与数字属性交互时表现出复杂且不断演变的行为
 
 ## 实施
 
-您可以通过[派生字段](/help/connections/overview.md)、[区段](/help/data-views/data-views.md)和[工作区项目](/help/analysis-workspace/home.md)的特定设置和配置，在典型的Customer Journey Analytics设置（[连接](#derived-fields)、[数据视图](#segments)和[工作区项目](#workspace-project)）中报告LLM和AI生成的流量。
+您可以通过[派生字段](#derived-fields)、[区段](#segments)和[工作区项目](#workspace-project)的特定设置和配置，在典型的Customer Journey Analytics设置（[连接](/help/connections/overview.md)、[数据视图](/help/data-views/data-views.md)和[工作区项目](/help/analysis-workspace/home.md)）中报告LLM和AI生成的流量。
 
 
 ### 派生字段
@@ -287,7 +309,7 @@ LLM和AI代理在与数字属性交互时表现出复杂且不断演变的行为
 ![LLM和AI生成的流量区段](assets/aitraffic-segment.png){zoomable="yes"}
 
 
-### Workspace项目
+### 工作区项目
 
 使用派生的字段和区段来报告和分析LLM和AI生成的流量。 例如，请参阅下面带注释的项目。
 

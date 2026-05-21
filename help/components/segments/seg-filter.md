@@ -4,9 +4,20 @@ title: 过滤区段
 feature: Filters, Segments
 exl-id: 25e617da-8249-4332-970a-c2ef00bf42e3
 role: User
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+TQID: https://experienceleague.adobe.com/Xyft76mCwW-VD9zI6rUDbbGDTnbAsd55hjLQjdhyje0
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: 168
 ht-degree: 29%
 
 ---
@@ -17,13 +28,13 @@ ht-degree: 29%
 
 >[!NOTE]
 >
->区段列表将区段列表[引用为](seg-manage.md#filters-list)区段管理器[的一部分](seg-manage.md)。 您可以使用![筛选器](/help/assets/icons/Filter.svg) [筛选器面板](seg-manage.md#filter-panel)筛选该列表，该面板是同一[区段管理器](seg-manage.md)的一部分。
+>区段列表将区段列表[&#128279;](seg-manage.md#filters-list)引用为[区段管理器](seg-manage.md)的一部分。 您可以使用![筛选器](/help/assets/icons/Filter.svg) [筛选器面板](seg-manage.md#filter-panel)筛选该列表，该面板是同一[区段管理器](seg-manage.md)的一部分。
 >
 
 
 要筛选区段列表，请执行以下操作：
 
-1. 选择![Filter](/help/assets/icons/Filter.svg)以打开筛选面板。如果“筛选”列表需要更多空间，您可以再次选择![Filter](/help/assets/icons/Filter.svg)来关闭该面板。
+1. 选择![Filter](/help/assets/icons/Filter.svg)以打开筛选面板。 如果“筛选”列表需要更多空间，您可以再次选择![Filter](/help/assets/icons/Filter.svg)来关闭该面板。
 1. 从任何可用的[筛选器部分](#filter-sections)中选择筛选器。
 
    >[!INFO]

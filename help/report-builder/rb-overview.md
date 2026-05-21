@@ -6,10 +6,20 @@ feature: Report Builder
 type: Documentation
 exl-id: 56bf524d-101d-4745-b2ef-9770c50f6774
 solution: Customer Journey Analytics
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+TQID: https://experienceleague.adobe.com/XqkSB2GCQ6mQ1iR1uESpafVDqb2-g1NcysPOh-6r7fM
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 97%
+source-wordcount: 360
+ht-degree: 93%
 
 ---
 
@@ -17,7 +27,7 @@ ht-degree: 97%
 
 通过适用于 Customer Journey Analytics 的 Report Builder，您可以在 Microsoft Excel 中使用 Adobe Customer Journey Analytics 数据轻松地创建、编辑和刷新自定义报告。
 
-Customer Journey Analytics 是一个构建在 Adobe Experience Platform 之上的应用程序，可让您连接多个数据源以创建业务的整体视图。通过 Report Builder 简单灵活的拖放界面，您可以在 Microsoft Excel 中从 Customer Journey Analytics 数据创建复杂的数据查询和自定义报告。
+Customer Journey Analytics 是一个构建在 Adobe Experience Platform 之上的应用程序，可让您连接多个数据源以创建业务的整体视图。 通过 Report Builder 简单灵活的拖放界面，您可以在 Microsoft Excel 中从 Customer Journey Analytics 数据创建复杂的数据查询和自定义报告。
 
 利用 Report Builder for Customer Journey Analytics，您可以：
 
@@ -25,7 +35,7 @@ Customer Journey Analytics 是一个构建在 Adobe Experience Platform 之上�
 - 使用日程表、单元格引用或日期数学创建自定义日期。
 - 使用熟悉的 Excel 格式设置工具设计您的表格和可视化图表。
 
-适用于 Customer Journey Analytics 的 Report Builder 是一个 Microsoft Excel 插件。该插件可在以下平台上使用：
+适用于 Customer Journey Analytics 的 Report Builder 是一个 Microsoft Excel 插件。 该插件可在以下平台上使用：
 
 - macOS
 - Windows
@@ -33,9 +43,9 @@ Customer Journey Analytics 是一个构建在 Adobe Experience Platform 之上�
 
 ## 常见使用案例
 
-- **数据提取**：Adobe Report Builder 允许您将数据从 Customer Journey Analytics 提取到 Excel 中。您可以创建自定义报告和查询来检索与您的分析相关的特定数据点。
+- **数据提取**：Adobe Report Builder 允许您将数据从 Customer Journey Analytics 提取到 Excel 中。 您可以创建自定义报告和查询来检索与您的分析相关的特定数据点。
 
-- **自定义报告**：您可以在 Excel 中设计自定义报告并进行格式设置，以满足您特定的报告需求。如果您需要为不同的利益相关者定制报告，这个功能特别有用。
+- **自定义报告**：您可以在 Excel 中设计自定义报告并进行格式设置，以满足您特定的报告需求。 如果您需要为不同的利益相关者定制报告，这个功能特别有用。
 
 - **临时分析**：用户可以快速生成临时报告来回答一些特定的问题或探索数据趋势，而无需经历冗长的报告创建过程。
 

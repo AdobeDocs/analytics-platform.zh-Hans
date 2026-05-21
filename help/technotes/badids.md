@@ -4,15 +4,29 @@ description: 了解Customer Journey Analytics中的错误ID (BAVID)。 了解如
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-source-git-commit: b7b2a1f3eb1c149caf65ab3e4321e4f4347695cc
+exl-id: 4f71fbf2-290b-4076-b2ad-b086c2b854d9
+autotag-review: '2026-05-19T06:53:00.572Z'
+TQID: 'https://experienceleague.adobe.com/6vut30l-BSIxhTK96Tt3BG01q-rjHagcmer0WZ2GL-c'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2:
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 0%
+source-wordcount: 632
+ht-degree: 2%
 
 ---
 
-
-# 错误 ID
+# 无效 ID
 
 本文提供了有关错误ID的上下文，以及如何使用查询服务检测数据中是否存在错误ID或错误发生风险。
 
@@ -44,7 +58,7 @@ ht-degree: 0%
 
 Customer Journey Analytics连接界面在界面的多个位置提供&#x200B;**[!UICONTROL 错误的ID]**&#x200B;指标信息。
 
-* 您可以在&#x200B;**[!UICONTROL 检查跳过的详细信息]**&#x200B;对话框中看到&#x200B;**[!UICONTROL 错误的ID]**（或&#x200B;**[!UICONTROL BAVID]**）作为跳过记录的可能原因。 在连接的&#x200B;**[!UICONTROL 详细信息屏幕]**&#x200B;中，使用&#x200B;**[!UICONTROL 跳过的记录]**&#x200B;下方的[检查详细信息](/help/connections/create-connection.md)（如果可用）。
+* 您可以在&#x200B;**[!UICONTROL 检查跳过的详细信息]**&#x200B;对话框中看到&#x200B;**[!UICONTROL 错误的ID]**（或&#x200B;**[!UICONTROL BAVID]**）作为跳过记录的可能原因。 在连接的[详细信息屏幕](/help/connections/create-connection.md)中，使用&#x200B;**[!UICONTROL 跳过的记录]**&#x200B;下方的&#x200B;**[!UICONTROL 检查详细信息]**（如果可用）。
 * 对于已启用拼接的数据集，[**[!UICONTROL 数据集预览]**](/help/stitching/use-stitching-ui.md#bad-ids)在&#x200B;**[!UICONTROL 拼接量度]**&#x200B;中显示&#x200B;**[!UICONTROL 错误的ID]**。 此量度可帮助您识别可能的ID错误案例。 但是，请注意，此量度是根据有限的数据集计算的。
 
 请参阅[错误的ID泄露](#bad-ids-exposure)，以帮助您识别计划在连接中使用的数据集的错误ID存在（无论是否启用了拼接）。
@@ -77,7 +91,7 @@ LIMIT 20;
 在查询中，根据您调查错误ID的字段类型替换`INSERT FIELD HERE`：
 
 * `full.field.path.from.XDM.schema` （用于XDM架构中定义的字符串字段）
-* `identityMap['namespace_value'][0].id` （对于`namespace_value`中用`identityMap`定义的字段）
+* `identityMap['namespace_value'][0].id` （对于`identityMap`中用`namespace_value`定义的字段）
 
 检查结果以查看是否存在问题的ID值。 如自定义值或占位符值，或者频繁出现的值，在连接数据级别的一个月内将达到或可能接近100万。
 即使您的实施仍然处于开发阶段，只要设置稳定并准备好生产，您就应该评估存在错误ID的风险。

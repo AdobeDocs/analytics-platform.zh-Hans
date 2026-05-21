@@ -5,10 +5,31 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+TQID: https://experienceleague.adobe.com/rbgqDkQLPbw-EfhMyUL-eVXZZ1cxMXiQmvU7Si2WCZ8
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: c38ed341-fab2-46df-9d72-88d8166edebb
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+  - id: df28738e-9c71-4aa8-929e-edde22340cc6
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '3390'
-ht-degree: 62%
+source-wordcount: 3536
+ht-degree: 63%
 
 ---
 
@@ -24,9 +45,9 @@ ht-degree: 62%
 
 - **使用标记**&#x200B;针对移动应用程序中的数据轻松配置规则和数据元素。 然后确保数据发送到在 Adobe Experience Platform Edge Network 上配置的数据流。
 
-- **部署和验证**。拥有一个可以迭代标签开发的环境，一旦所有内容都经过验证，就可以在您的生产环境中实时发布。
+- **部署和验证**。 拥有一个可以迭代标签开发的环境，一旦所有内容都经过验证，就可以在您的生产环境中实时发布。
 
-- 在 Customer Journey Analytics 中&#x200B;**设置连接**。此连接应（至少）包含 Adobe Experience Platform 数据集。
+- 在 Customer Journey Analytics 中&#x200B;**设置连接**。 此连接应（至少）包含 Adobe Experience Platform 数据集。
 
 - 在 Customer Journey Analytics 中&#x200B;**设置数据视图**&#x200B;以定义要在 Analysis Workspace 中使用的量度和维度。
 
@@ -39,9 +60,9 @@ ht-degree: 62%
 
 ## 设置架构和数据集
 
-要将数据导入 Adobe Experience Platform，首先需要定义要收集的数据。引入 Adobe Experience Platform 的所有数据都必须符合标准的非规范化结构，以便下游功能和特性对其进行识别和操作。体验数据模型(XDM)是一种标准框架，它以架构的形式提供结构。
+要将数据导入 Adobe Experience Platform，首先需要定义要收集的数据。 引入 Adobe Experience Platform 的所有数据都必须符合标准的非规范化结构，以便下游功能和特性对其进行识别和操作。 体验数据模型(XDM)是一种标准框架，它以架构的形式提供结构。
 
-定义架构后，您可以使用一个或多个数据集来存储和管理数据集合。数据集是用于数据集合（通常是表）的存储和管理结构，其中包含架构（列）和字段（行）。
+定义架构后，您可以使用一个或多个数据集来存储和管理数据集合。 数据集是用于数据集合（通常是表）的存储和管理结构，其中包含架构（列）和字段（行）。
 
 摄取到 Adobe Experience Platform 中的所有数据都必须符合预定义的架构，然后才能作为数据集保存。
 
@@ -64,7 +85,7 @@ ht-degree: 62%
 
       >[!INFO]
       >
-      >    Experience Event 架构用于对轮廓的&#x200B;_行为_&#x200B;进行建模（如场景名称、添加到购物车的按钮）。个人轮廓架构用于对轮廓&#x200B;_属性_（如姓名、电子邮件、性别）进行建模。
+      >    Experience Event 架构用于对轮廓的&#x200B;_行为_&#x200B;进行建模（如场景名称、添加到购物车的按钮）。 个人轮廓架构用于对轮廓&#x200B;_属性_（如姓名、电子邮件、性别）进行建模。
 
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
@@ -105,11 +126,11 @@ ht-degree: 62%
 
    >[!NOTE]
    >
-   >如果该字段组不可用，请寻找另一个包含身份标识字段的字段组。或者[创建一个新的字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=zh-Hans)，并[将新的身份标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=zh-Hans#define-a-identity-field)（如 `ecid`、`crmId` 以及您需要的其他字段）添加到该字段组中，并选择该新字段组。
+   >如果该字段组不可用，请寻找另一个包含身份标识字段的字段组。 或者[创建一个新的字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=zh-Hans)，并[将新的身份标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=zh-Hans#define-a-identity-field)（如 `ecid`、`crmId` 以及您需要的其他字段）添加到该字段组中，并选择该新字段组。
 
    ![识别对象](./assets/identification-field-mobile.png)
 
-   识别对象为您的架构添加了识别功能。对于您的案例，您希望使用Experience Cloud ID和电子邮件地址来识别使用移动应用程序的用户档案。 还有许多其他属性可用于跟踪您的人员身份（例如客户 ID、忠诚度 ID）。
+   识别对象为您的架构添加了识别功能。 对于您的案例，您希望使用Experience Cloud ID和电子邮件地址来识别使用移动应用程序的用户档案。 还有许多其他属性可用于跟踪您的人员身份（例如客户 ID、忠诚度 ID）。
 
    选择&#x200B;**[!UICONTROL 应用]**&#x200B;将此对象添加到您的架构中。
 
@@ -119,21 +140,21 @@ ht-degree: 62%
 
    您将 Experience Cloud Identity 指定为 Adobe Experience Platform 身份标识服务可用于组合（缝合）具有相同 ECID 的轮廓行为的主要身份。
 
-   选择 **[!UICONTROL 应用]**。您会看到 ecid 属性中出现指纹图标。
+   选择 **[!UICONTROL 应用]**。 您会看到 ecid 属性中出现指纹图标。
 
 1. 选择刚刚添加的身份标识对象中的&#x200B;**[!UICONTROL 邮件]**&#x200B;字段，选择&#x200B;**[!UICONTROL 身份标识]**&#x200B;和&#x200B;**[!UICONTROL 邮件]** 和 [!UICONTROL 身份标识命名空间] 列表中的 [!UICONTROL 字段属性] 面板。
 
-    ![将电子邮件指定为身份标识](./assets/specify-email-identity-mobile.png)
+   ![将电子邮件指定为身份标识](./assets/specify-email-identity-mobile.png)
 
    您将电子邮件地址指定为 Adobe Experience Platform 身份标识服务可用于组合（拼接）轮廓行为的另一个身份标识。
 
-   选择 **[!UICONTROL 应用]**。您会看到电子邮件属性中显示指纹图标。
+   选择 **[!UICONTROL 应用]**。 您会看到电子邮件属性中显示指纹图标。
 
    选择&#x200B;**[!UICONTROL 保存]**。
 
 1. 选择显示架构名称的架构的根元素，然后选择 **[!UICONTROL 轮廓]** 开关。
 
-   系统会提示您启用轮廓的架构。一旦启用，当数据被引入基于此架构的数据集中时，该数据将合并到实时客户轮廓。
+   系统会提示您启用轮廓的架构。 一旦启用，当数据被引入基于此架构的数据集中时，该数据将合并到实时客户轮廓。
 
    有关详细信息，请参阅[启用架构以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans#profile)。
 
@@ -145,7 +166,7 @@ ht-degree: 62%
 
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存架构。
 
-您已创建一个最小架构，用于为您可从移动应用程序中捕获的数据建模。 该架构允许使用 Experience Cloud Identity 和电子邮件地址来识别轮廓。通过为配置文件启用架构，您可以确保将从移动应用程序捕获的数据添加到实时客户配置文件。
+您已创建一个最小架构，用于为您可从移动应用程序中捕获的数据建模。 该架构允许使用 Experience Cloud Identity 和电子邮件地址来识别轮廓。 通过为配置文件启用架构，您可以确保将从移动应用程序捕获的数据添加到实时客户配置文件。
 
 除了行为数据之外，您还可以从移动应用程序捕获配置文件属性数据（例如订阅新闻通讯的配置文件详细信息）。
 
@@ -165,7 +186,7 @@ ht-degree: 62%
 
 ### 设置数据集
 
-使用您的架构，您已经定义了数据模型。现在，您必须定义结构以使用数据集存储和管理这些数据。
+使用您的架构，您已经定义了数据模型。 现在，您必须定义结构以使用数据集存储和管理这些数据。
 
 设置您的数据集
 
@@ -189,7 +210,7 @@ ht-degree: 62%
 
 7. 选择&#x200B;**[!UICONTROL 轮廓]**&#x200B;开关
 
-   系统会提示您启用轮廓的数据集。启用后，数据集会使用其摄取的数据丰富实时客户轮廓。
+   系统会提示您启用轮廓的数据集。 启用后，数据集会使用其摄取的数据丰富实时客户轮廓。
 
    >[!IMPORTANT]
    >
@@ -197,11 +218,11 @@ ht-degree: 62%
 
    ![为轮廓启用架构](./assets/aepwebsdk-dataset-profile.png)
 
-有关如何查看、预览、创建和删除数据集的更多信息，请参阅[数据集 UI 指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=zh-Hans)。以及如何为实时客户轮廓启用数据集。
+有关如何查看、预览、创建和删除数据集的更多信息，请参阅[数据集 UI 指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=zh-Hans)。 以及如何为实时客户轮廓启用数据集。
 
 ## 设置数据流
 
-数据流表示实施 Adobe Experience Platform Web 和移动 SDK 时的服务器端配置。使用 Adobe Experience Platform SDK 收集数据时，数据会发送到 Adobe Experience Platform Edge Network。数据流决定将数据转发到哪些服务。
+数据流表示实施 Adobe Experience Platform Web 和移动 SDK 时的服务器端配置。 使用 Adobe Experience Platform SDK 收集数据时，数据会发送到 Adobe Experience Platform Edge Network。 数据流决定将数据转发到哪些服务。
 
 在设置中，您希望将从移动应用程序中收集的数据发送到Adobe Experience Platform中的数据集。
 
@@ -211,7 +232,7 @@ ht-degree: 62%
 
 2. 选择&#x200B;**[!UICONTROL 新数据流]**。
 
-3. 命名并描述您的数据流。从 [!UICONTROL 事件架构] 列表中选择您的架构。
+3. 命名并描述您的数据流。 从 [!UICONTROL 事件架构] 列表中选择您的架构。
 
    ![新数据流](./assets/new-datastream.png)
 
@@ -239,7 +260,7 @@ ht-degree: 62%
 
 ## 使用标签
 
-要在您的网站上实施代码以实际收集数据，请使用Adobe Experience Platform中的标记功能。 这一款标记管理解决方案，可让您在满足其他标记要求的同时部署代码。标记通过Adobe Experience Platform Mobile Adobe Experience Platform扩展提供了与SDK的无缝集成。
+要在您的网站上实施代码以实际收集数据，请使用Adobe Experience Platform中的标记功能。 这一款标记管理解决方案，可让您在满足其他标记要求的同时部署代码。 标记通过Adobe Experience Platform Mobile Adobe Experience Platform扩展提供了与SDK的无缝集成。
 
 ### 创建您的标记
 
@@ -264,7 +285,7 @@ ht-degree: 62%
 
 要创建并配置Adobe Experience Platform Mobile SDK扩展，请执行以下操作：
 
-1. 在左边栏中选择&#x200B;**[!UICONTROL 扩展]**。 您会看到移动核心扩展和配置文件扩展已经可用。
+1. 选择左边栏中的&#x200B;**[!UICONTROL 扩展]**。 您会看到移动核心扩展和配置文件扩展已经可用。
 
 1. 在顶部栏中选择 **[!UICONTROL 目录]**。
 
@@ -274,7 +295,7 @@ ht-degree: 62%
 
    ![AEP Mobile SDK扩展配置](./assets/aepmobilesdk-extension-datastream.png)
 
-1. 在&#x200B;**[!UICONTROL 域配置]**&#x200B;下输入您的[!UICONTROL Edge Network域]。 通常使用`<organizationName>.data.adobedc.net`。
+1. 在[!UICONTROL 域配置]下输入您的&#x200B;**[!UICONTROL Edge Network域]**。 通常使用`<organizationName>.data.adobedc.net`。
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
@@ -290,7 +311,7 @@ ht-degree: 62%
 
 #### **数据元素**
 
-数据元素是数据词典（或数据映射）的构建块。使用数据元素可跨市场营销和广告技术收集、组织和交付数据。您可以在标记中设置数据元素，该数据元素可从移动设备应用程序数据或事件中读取，并可用于将数据交付到Adobe Experience Platform中。
+数据元素是数据词典（或数据映射）的构建块。 使用数据元素可跨市场营销和广告技术收集、组织和交付数据。 您可以在标记中设置数据元素，该数据元素可从移动设备应用程序数据或事件中读取，并可用于将数据交付到Adobe Experience Platform中。
 
 例如，要从移动设备应用程序中收集运营商名称。
 
@@ -304,9 +325,9 @@ ht-degree: 62%
 
    - 为数据元素命名，例如，`Carrier Name`。
 
-   - 从&#x200B;**[!UICONTROL 扩展]**&#x200B;列表中选择[!UICONTROL 移动核心]。
+   - 从[!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL 移动核心]**。
 
-   - 从&#x200B;**[!UICONTROL 数据元素类型]**&#x200B;列表中选择[!UICONTROL 运营商名称]。
+   - 从[!UICONTROL 数据元素类型]列表中选择&#x200B;**[!UICONTROL 运营商名称]**。
 
 
      ![使用页面信息创建日期元素](./assets/create-dataelement-mobile.png)
@@ -318,7 +339,7 @@ ht-degree: 62%
 
 #### **规则**
 
-Adobe Experience Platform 中的标签遵循基于规则的系统。他们寻找用户交互和相关数据。如果满足您的规则中所列的标准，则规则会触发您已识别的扩展、脚本或客户端代码。您可以使用规则通过Adobe Experience Platform Edge Network扩展将数据发送到Adobe Experience Platform中（如XDM对象）。
+Adobe Experience Platform 中的标签遵循基于规则的系统。 他们寻找用户交互和相关数据。 如果满足您的规则中所列的标准，则规则会触发您已识别的扩展、脚本或客户端代码。 您可以使用规则通过Adobe Experience Platform Edge Network扩展将数据发送到Adobe Experience Platform中（如XDM对象）。
 
 例如，您希望在使用移动设备应用程序时（在前台）和不使用移动设备应用程序时（推送回后台）发送事件数据。
 
@@ -332,29 +353,29 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。他们寻找
 
    - 命名规则，例如`Application Status`。
 
-   - 选择并在[!UICONTROL 事件]下方 **[!UICONTROL +添加]** 
+   - 选择并在[!UICONTROL 事件]下方 **[!UICONTROL +添加]**
 
    - 在[!UICONTROL 事件配置]对话框中：
 
-      - 从&#x200B;**[!UICONTROL 扩展]**&#x200B;列表中选择[!UICONTROL 移动核心]。
+      - 从[!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL 移动核心]**。
 
-      - 从&#x200B;**[!UICONTROL 事件类型]**&#x200B;列表中选择[!UICONTROL 前台]。
-
-      - 选择&#x200B;**[!UICONTROL 保留更改]**。
-
-   - 单击![移动核心 — 前台](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)旁边的[!UICONTROL 加号]。
-
-      - 从&#x200B;**[!UICONTROL 扩展]**&#x200B;列表中选择[!UICONTROL 移动核心]。
-
-      - 从&#x200B;**[!UICONTROL 事件类型]**&#x200B;列表中选择[!UICONTROL 背景]。
+      - 从[!UICONTROL 事件类型]列表中选择&#x200B;**[!UICONTROL 前台]**。
 
       - 选择&#x200B;**[!UICONTROL 保留更改]**。
 
-   - 单击![ACTIONS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)下的[!UICONTROL 加]“添加”。 在[!UICONTROL 操作配置]对话框中：
+   - 单击[!UICONTROL 移动核心 — 前台]旁边的![加号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)。
 
-      - 从&#x200B;**[!UICONTROL 扩展]**&#x200B;列表中选择[!UICONTROL Adobe Experience Platform Edge Network]。
+      - 从[!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL 移动核心]**。
 
-      - 从&#x200B;**[!UICONTROL 操作类型]**&#x200B;列表中选择[!UICONTROL 将事件转发到Edge Network]。
+      - 从[!UICONTROL 事件类型]列表中选择&#x200B;**[!UICONTROL 背景]**。
+
+      - 选择&#x200B;**[!UICONTROL 保留更改]**。
+
+   - 单击[!UICONTROL ACTIONS]下的![加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)“添加”。 在[!UICONTROL 操作配置]对话框中：
+
+      - 从[!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL Adobe Experience Platform Edge Network]**。
+
+      - 从[!UICONTROL 操作类型]列表中选择&#x200B;**[!UICONTROL 将事件转发到Edge Network]**。
 
       - 选择&#x200B;**[!UICONTROL 保留更改]**。
 
@@ -372,7 +393,7 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。他们寻找
 
 ### 生成并发布标签
 
-在定义了数据元素和规则之后，您需要构建和发布标签。创建库生成时，必须将其分配给环境。然后，将会编译该内部版本的扩展、规则和数据元素，并将这些内容放入分配的环境。每个环境都提供了一个唯一的嵌入代码，从而允许您将其分配的内部版本集成到网站中。
+在定义了数据元素和规则之后，您需要构建和发布标签。 创建库生成时，必须将其分配给环境。 然后，将会编译该内部版本的扩展、规则和数据元素，并将这些内容放入分配的环境。 每个环境都提供了一个唯一的嵌入代码，从而允许您将其分配的内部版本集成到网站中。
 
 要生成并发布您的标签：
 
@@ -392,7 +413,7 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。他们寻找
 
    - 选择&#x200B;**[!UICONTROL 保存并生成到开发]**。
 
-   您的标记已保存，并为您的开发环境构建。绿色圆点表示在开发环境中成功构建了标记。
+   您的标记已保存，并为您的开发环境构建。 绿色圆点表示在开发环境中成功构建了标记。
 
 4. 您可以选择&#x200B;**[!UICONTROL ...]** 重建库或将库移动到临时或生产环境。
 
@@ -433,7 +454,7 @@ Adobe Experience Platform标记支持从简单到复杂的发布工作流程，�
 
 要在 Customer Journey Analytics 中使用 Adobe Experience Platform 数据，您需要创建一个连接，其中包含因设置架构、数据集和工作流所产生的数据。
 
-通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告这些数据集，您必须首先在Adobe Experience Platform和Workspace中的数据集之间建立连接。
+通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。 要报告这些数据集，您必须首先在Adobe Experience Platform和Workspace中的数据集之间建立连接。
 
 创建您的连接：
 
@@ -453,7 +474,7 @@ Adobe Experience Platform标记支持从简单到复杂的发布工作流程，�
 
    在[!UICONTROL 添加数据集]的[!UICONTROL 选择数据集]步骤中：
 
-   - 选择您之前创建的数据集和/或要包含在连接中的其他相关数据集(例如来自Adobe Journey Optimizer的推送跟踪体验事件数据和推送配置文件数据)
+   - 选择您之前创建的数据集和/或要包含在连接中的其他相关数据集（例如来自Adobe Journey Optimizer的推送跟踪体验事件数据和推送配置文件数据）
 
      ![添加数据集](./assets/cja-connections-ajopush.png)
 
@@ -465,7 +486,7 @@ Adobe Experience Platform标记支持从简单到复杂的发布工作流程，�
 
       - 在 Adobe Experience Platform 中，从在数据集架构中定义的可用身份标识中选择[!UICONTROL 人员 ID]。
 
-      - 从[!UICONTROL 数据源类型]列表中选择正确的数据源。如果指定&#x200B;**[!UICONTROL 其他]**，则为您的数据源添加描述。
+      - 从[!UICONTROL 数据源类型]列表中选择正确的数据源。 如果指定&#x200B;**[!UICONTROL 其他]**，则为您的数据源添加描述。
 
       - 根据您的首选项设置&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;和&#x200B;**[!UICONTROL 数据集回填现有数据]**。
 
@@ -479,7 +500,7 @@ Adobe Experience Platform标记支持从简单到复杂的发布工作流程，�
 
 ## 设置数据视图
 
-数据视图是 Customer Journey Analytics 专属的容器，通过它，可决定如何解释来自连接的数据。 它指定所有可在 Analysis Workspace 中找到的维度和量度，以及这些维度和量度从哪些列获取其数据。为准备 Analysis Workspace 中的报告而定义数据视图。
+数据视图是 Customer Journey Analytics 专属的容器，通过它，可决定如何解释来自连接的数据。 它指定所有可在 Analysis Workspace 中找到的维度和量度，以及这些维度和量度从哪些列获取其数据。 为准备 Analysis Workspace 中的报告而定义数据视图。
 
 创建您的数据视图：
 
@@ -516,7 +537,7 @@ Adobe Experience Platform标记支持从简单到复杂的发布工作流程，�
 
 ## 设置项目
 
-Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分析并基于数据共享见解。您可以使用工作区项目来组合数据组件、表和可视化，以制作分析并与组织中的任何人共享。
+Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分析并基于数据共享洞察。 您可以使用工作区项目来组合数据组件、表和可视化，以制作分析并与组织中的任何人共享。
 
 要创建您的项目：
 
@@ -544,4 +565,4 @@ Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分�
 
 >[!SUCCESS]
 >
->您已完成所有步骤。 从定义要在 Adobe Experience Platform 中收集的数据（架构）和存储数据的位置（数据集）开始，您在 Edge Network 上配置了一个数据流，以确保数据可以转发到该数据集。然后，您定义和部署了包含扩展(Adobe Experience Platform Edge Network等)、数据元素和规则的标记，以便从移动应用程序中捕获数据并将这些数据发送到数据流。 您在Customer Journey Analytics中定义了一个连接，以使用您的移动应用程序推送通知跟踪数据和其他数据。 通过数据视图定义，您可以指定要使用的维度和量度，最后，您创建了第一个项目，用于可视化和分析移动应用程序数据。
+>您已完成所有步骤。 从定义要在 Adobe Experience Platform 中收集的数据（架构）和存储数据的位置（数据集）开始，您在 Edge Network 上配置了一个数据流，以确保数据可以转发到该数据集。 然后，您定义和部署了包含扩展（Adobe Experience Platform Edge Network等）、数据元素和规则的标记，以便从移动应用程序中捕获数据并将这些数据发送到数据流。 您在Customer Journey Analytics中定义了一个连接，以使用您的移动应用程序推送通知跟踪数据和其他数据。 通过数据视图定义，您可以指定要使用的维度和量度，最后，您创建了第一个项目，用于可视化和分析移动应用程序数据。

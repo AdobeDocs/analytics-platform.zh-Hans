@@ -1,18 +1,32 @@
 ---
-title: 收錄和使用 Experience Platform 受众
+title: 摄取和使用 Experience Platform 受众
 description: 介绍如何将Experience Platform受众摄取和用于Customer Journey Analytics以进行进一步分析。
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
 role: Admin
-source-git-commit: a30b4286207eb72f7674bb4f6ba4cf0a1aecd280
+TQID: https://experienceleague.adobe.com/cyNvsdN-bSBY2VqCdxAZvWhyTx8--sOUMifbuYrZKTM
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 10%
+source-wordcount: 1680
+ht-degree: 13%
 
 ---
 
-# 收錄和使用 Experience Platform 受众
+# 摄取和使用 Experience Platform 受众
 
 本用例探索了一个将Experience Platform受众摄取到Customer Journey Analytics的临时解决方案。 这些受众可能创建于Experience Platform区段生成器、Adobe Audience Manager或其他工具中，并存储在实时客户档案中。 受众包含一组配置文件ID，以及任何适用的属性、事件等。 您希望将该受众数据纳入Customer Journey Analytics以进行进一步分析。
 
@@ -32,7 +46,7 @@ ht-degree: 10%
 1. [选择受众(Experience Platform UI)](#select-audiences)。
 1. [创建启用配置文件的数据集(Experience Platform API)](#create-a-profile-enabled-dataset)。
 1. [导出受众(Experience Platform API)](#export-audiences)。
-1. [转换输出(Experience Platform用户界面等)](#transform-the-output)。
+1. [转换输出（Experience Platform用户界面等）](#transform-the-output)。
 1. [创建架构和数据集(Experience Platform UI)](#create-a-schema-and-dataset)。
 1. [添加或编辑连接(Customer Journey Analytics UI)](#add-or-edit-a-connection)。
 1. [配置数据视图(Customer Journey Analytics UI)](#configure-a-data-view)。
@@ -56,7 +70,7 @@ ht-degree: 10%
 
 ### 创建启用配置文件的数据集
 
-您需要基于基于核心的&#x200B;**[!UICONTROL XDM Individual Profile]**&#x200B;架构创建数据集。 在Experience Platform UI中创建数据集时，无法选择该基于核心的XDM Individual Profile作为架构。 请改用[目录服务API基于](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/create#create-a-dataset)架构创建数据集`_xdm.context.profile__union`。
+您需要基于基于核心的&#x200B;**[!UICONTROL XDM Individual Profile]**&#x200B;架构创建数据集。 在Experience Platform UI中创建数据集时，无法选择该基于核心的XDM Individual Profile作为架构。 请改用[目录服务API基于`_xdm.context.profile__union`架构创建数据集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/create#create-a-dataset)。
 
 +++ 创建数据集请求
 
@@ -363,7 +377,7 @@ WHERE value.status = 'realized' AND (key = '{AUDIENCE_ID_1}' OR key = 'AUDIENCE_
    1. 输入数据集的&#x200B;**[!UICONTROL 名称]**。
    1. （可选）输入数据集的&#x200B;**[!UICONTROL 描述]**。
    1. 选择&#x200B;**[!UICONTROL 完成]**。
-1. 在数据集&#x200B;**[!UICONTROL 的]**&#x200B;数据集&#x200B;**[!UICONTROL _>_]**&#x200B;名称中，将转换后的JSON数据文件拖放到&#x200B;**[!UICONTROL 拖放文件]**&#x200B;上。 此操作会开始将导出的JSON数据引入数据集。
+1. 在数据集&#x200B;_&#x200B;**的**&#x200B;[!UICONTROL &#x200B;数据集&#x200B;]&#x200B;**>**&#x200B;_&#x200B;名称中，将转换后的JSON数据文件拖放到&#x200B;**[!UICONTROL 拖放文件]**&#x200B;上。 此操作会开始将导出的JSON数据引入数据集。
 1. 验证摄取的批次。 如果数据集包含失败的批次，请使用&#x200B;**[!UICONTROL 数据管理]** > ![监视](/help/assets/icons2/Monitoring.svg) **[!UICONTROL 监视]**&#x200B;查看原因。 例如，您在JSON中定义的字段名称在架构中不存在。
 
 
@@ -484,6 +498,6 @@ You can now report on `audienceMembershipId`, `audienceMembershipIdName` and `pe
 * 您应该定期执行此过程，以便在Customer Journey Analytics中不断刷新受众数据。
 * 您可以在单个Customer Journey Analytics连接中导入多个受众。 这增加了流程的复杂性，但这是可能的。 为此，您需要对上述过程进行一些修改：
    1. 在 RTCP 中，为受众集合中的每个所需受众执行此过程。
-   1. Customer Journey Analytics支持配置文件数据集中的阵列/对象阵列。 最佳选项是为[或](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=zh-Hans)使用`audienceMembershipId`对象数组`audienceMembershipIdName`。
+   1. Customer Journey Analytics支持配置文件数据集中的阵列/对象阵列。 最佳选项是为`audienceMembershipId`或`audienceMembershipIdName`使用[对象数组](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=zh-Hans)。
    1. 在数据视图中，在 `audienceMembershipId` 字段上使用子字符串转换创建新维度，以将逗号分隔的值字符串转换为数组。 注意：数组中当前限制为 10 个值。
    1. 您现在可以在Customer Journey Analytics Workspace中报告此新维度`audienceMembershipIds`。

@@ -3,16 +3,26 @@ title: 归因最佳实践
 description: 了解最佳实践，以决定使用哪种归因模型。
 feature: Attribution
 exl-id: 92c6039c-f950-4746-8b34-ba18be258c08
-source-git-commit: ee6eb18fc2a720e61670c571847bacf836b0b039
+TQID: https://experienceleague.adobe.com/noNo2rP-srAtUJbG-kYgipLHknMsWWZR4iJwDv-2ioc
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 66%
+source-wordcount: 466
+ht-degree: 63%
 
 ---
 
 # 归因最佳实践
 
-为您的组织选择适合的归因模型取决于许多考虑因素。本文探索了一种方法论和一些常规的最佳实践：
+为您的组织选择适合的归因模型取决于许多考虑因素。 本文探索了一种方法论和一些常规的最佳实践：
 
 * [探索性分析](#exploratory-analysis)
 * [基于规则的归因](#rule-base-attribution)
@@ -23,16 +33,17 @@ ht-degree: 66%
 >[!NOTE]
 >此分析需要在您选择归因模型之前进行。
 
-此阶段最初包括了解客户行为和定义转化量度。根据转化量度，[数据馈送](https://experienceleague.adobe.com/zh-hans/docs/analytics/export/analytics-data-feed/data-feed-overview)（针对原始数据）或 Analysis Workspace 等工具可以帮助您更好地理解：
+此阶段最初包括了解客户行为和定义转化量度。 根据转化量度，[数据馈送](https://experienceleague.adobe.com/zh-hans/docs/analytics/export/analytics-data-feed/data-feed-overview)（针对原始数据）或 Analysis Workspace 等工具可以帮助您更好地理解：
 
 * 在转化前接触了不同的营销渠道的客户数量
 * 这些行为的比例/分布
 
-例如，如果 50% 的客户在转化前接触了 3 个渠道，这 3 个渠道之间有什么互动吗？然后，您可以进行漏斗上层和漏斗下层分析以扩展您的理解。
+例如，如果 50% 的客户在转化前接触了 3 个渠道，这 3 个渠道之间有什么互动吗？
+然后，您可以进行漏斗上层和漏斗下层分析以扩展您的理解。
 
 ### 漏斗上层分析
 
-漏斗上层分析渠道用于创建品牌和产品意识。 例如，大部分电视广告的目标是品牌意识。您可能使用[时间衰减归因模型](/help/analysis-workspace/attribution/models.md)，因为随着时间的推移，人们会忘记您的电视广告。
+漏斗上层分析渠道用于创建品牌和产品意识。 例如，大部分电视广告的目标是品牌意识。 您可能使用[时间衰减归因模型](/help/analysis-workspace/attribution/models.md)，因为随着时间的推移，人们会忘记您的电视广告。
 
 ### 漏斗下层分析
 

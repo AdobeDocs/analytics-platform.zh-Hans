@@ -1,18 +1,33 @@
 ---
-title: Experience Platform查询服务(数据Distiller)和导出数据集
-description: 介绍如何使用查询服务(数据Distiller)和数据集导出来导出数据。
+title: Experience Platform查询服务（数据Distiller）和导出数据集
+description: 介绍如何使用查询服务（数据Distiller）和数据集导出来导出数据。
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 14a90758-91eb-4610-8802-1edfdb8b9689
-source-git-commit: 20ead546897ad517840f95a5ec4dcd7f830afe8c
+TQID: https://experienceleague.adobe.com/J-5oxLDw4sLVFcXYQhN5cpTkH76C5wAfWFECrIydb-s
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
-source-wordcount: '2642'
-ht-degree: 3%
+source-wordcount: 3355
+ht-degree: 5%
 
 ---
 
-# 查询服务(数据Distiller)和导出数据集
+# 查询服务（数据Distiller）和导出数据集
 
 本文概述如何使用Experience Platform查询服务(Data Distiller)和数据集导出的组合实现以下[数据导出用例](overview.md)：
 
@@ -21,16 +36,16 @@ ht-degree: 3%
 - 为人工智能和机器学习做好准备。
 
 
-Adobe Analytics可以使用其[数据馈送](https://experienceleague.adobe.com/zh-hans/docs/analytics/export/analytics-data-feed/data-feed-overview)功能实施这些用例。 数据馈送是从 Adobe Analytics 中获取原始数据的有效方法。本文介绍了如何从Experience Platform中获得相似类型的原始数据，以便您实施上述用例。 在适用的情况下，将本文中描述的功能与Adobe Analytics数据馈送进行比较，以阐明数据和流程中的差异。
+Adobe Analytics可以使用其[数据馈送](https://experienceleague.adobe.com/zh-hans/docs/analytics/export/analytics-data-feed/data-feed-overview)功能实施这些用例。 数据馈送是从 Adobe Analytics 中获取原始数据的有效方法。 本文介绍了如何从Experience Platform中获得相似类型的原始数据，以便您实施上述用例。 在适用的情况下，将本文中描述的功能与Adobe Analytics数据馈送进行比较，以阐明数据和流程中的差异。
 
 ## 简介
 
-使用查询服务(数据Distiller)导出数据以及数据集导出包含以下内容：
+使用查询服务（数据Distiller）导出数据以及数据集导出包含以下内容：
 
-- 定义一个&#x200B;**计划查询**，该查询使用![查询服务](../assets/output-dataset.svg)将您的数据馈送的数据生成为输出数据集&#x200B;**输出数据集**。
+- 定义一个&#x200B;**计划查询**，该查询使用&#x200B;**查询服务**&#x200B;将您的数据馈送的数据生成为输出数据集![输出数据集](../assets/output-dataset.svg)。
 - 定义使用&#x200B;**数据集导出**&#x200B;将输出数据集导出到云存储目标的&#x200B;**计划数据集导出**。
 
-![数据馈送](../assets/queryservice-export-datasets.svg)
+![数据馈送](../assets/queryservice-export-datasets.png)
 
 
 ## 先决条件
@@ -40,14 +55,14 @@ Adobe Analytics可以使用其[数据馈送](https://experienceleague.adobe.com/
 - 将数据收集到Experience Platform数据湖中的有效实施。
 - 访问Data Distiller加载项，以确保您有权执行批量查询。 有关详细信息，请参阅[查询服务打包](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/packaging)。
 - 访问导出数据集功能，在您购买Real-Time CDP Prime或Ultimate软件包、Adobe Journey Optimizer或Customer Journey Analytics后可用。 有关详细信息，请参阅[将数据集导出到云存储目标](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets)。
-- 将一个或多个已配置目标(例如：Amazon S3、Google Cloud Storage)导出到的数据馈送原始数据。
+- 将一个或多个已配置目标（例如：Amazon S3、Google Cloud Storage）导出到的数据馈送原始数据。
 
 
 ## 查询服务
 
 Experience Platform查询服务允许您查询和联接Experience Platform数据湖中的任何数据集，就像它是一个数据库表一样。 然后，您可以将结果捕获为新数据集，以供进一步在报表中使用或导出。
 
-您可以使用查询服务[用户界面](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/overview)、通过PostgresQL协议[连接的](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/clients/overview)客户端或[RESTful API](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/api/getting-started)创建和计划收集数据馈送数据的查询。
+您可以使用查询服务[用户界面](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/overview)、通过PostgresQL协议[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/clients/overview)连接的客户端或[RESTful API](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/api/getting-started)创建和计划收集数据馈送数据的查询。
 
 ### 创建查询
 
@@ -67,7 +82,7 @@ Experience Platform查询服务允许您查询和联接Experience Platform数据
 例如，如果要使用&#x200B;*页面名称*&#x200B;作为数据馈送的一部分，请执行以下操作：
 
 - 在Adobe Analytics数据馈送的UI中，您可以选择&#x200B;**[!UICONTROL pagename]**&#x200B;作为要添加到数据馈送定义的列。
-- 在查询服务中，您在查询中包含来自`web.webPageDetails.name`数据集的`sample_event_dataset_for_website_global_v1_1`(基于网站的&#x200B;**示例事件架构（全局v1.1）**&#x200B;体验事件架构)。 有关详细信息，请参阅[Web详细信息架构字段组](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/field-groups/event/web-details)。
+- 在查询服务中，您在查询中包含来自`sample_event_dataset_for_website_global_v1_1`数据集的`web.webPageDetails.name`(基于网站的&#x200B;**示例事件架构（全局v1.1）**&#x200B;体验事件架构)。 有关详细信息，请参阅[Web详细信息架构字段组](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/field-groups/event/web-details)。
 
 
 #### 身份标识
@@ -105,7 +120,7 @@ Experience Platform查询服务允许您查询和联接Experience Platform数据
 | `cust_visid` | `endUserIDs._experience.aacustomid.primary` | 布尔值 | 客户访客ID命名空间代码。 |
 | `cust_visid` | `endUserIDs._experience.aacustomid.namespace.code` | 字符串 | 与`visid_low`一起使用以唯一地标识客户访客ID。 |
 | `geo\_*` | `placeContext.geo.* ` | 字符串，数字 | 地理位置数据，如国家/地区、地区、城市等 |
-| `event_list` | `commerce.purchases`、`commerce.productViews`、`commerce.productListOpens`、`commerce.checkouts`、`commerce.productListAdds`、`commerce.productListRemovals`、`commerce.productListViews`、`_experience.analytics.event101to200.*`、...、`_experience.analytics.event901_1000.*` | 字符串 | 点击时触发的标准商务和自定义事件。 |
+| `event_list` | `commerce.purchases`, `commerce.productViews`, `commerce.productListOpens`, `commerce.checkouts`, `commerce.productListAdds`, `commerce.productListRemovals`, `commerce.productListViews`, `_experience.analytics.event101to200.*`, ..., `_experience.analytics.event901_1000.*` | 字符串 | 点击时触发的标准商务和自定义事件。 |
 | `page_event` | `web.webInteraction.type` | 字符串 | 在图像请求中发送的点击类型（标准点击、下载链接、退出链接或单击的自定义链接）。 |
 | `page_event` | `web.webInteraction.linkClicks.value` | 数字 | 在图像请求中发送的点击类型（标准点击、下载链接、退出链接或单击的自定义链接）。 |
 | `page_event_var_1` | `web.webInteraction.URL` | 字符串 | 仅在链接跟踪图像请求中使用的变量。 此变量包含下载链接、退出链接或单击的自定义链接的URL。 |
@@ -117,7 +132,7 @@ Experience Platform查询服务允许您查询和联接Experience Platform数据
 
 Adobe Analytics数据馈送使用带有`post_`前缀的列的概念，这些列是包含处理之后的数据的列。 有关更多信息，请参阅[数据馈送常见问题解答](https://experienceleague.adobe.com/zh-hans/docs/analytics/export/analytics-data-feed/df-faq#post)。
 
-通过Experience Platform Edge Network(Web SDK、Mobile SDK、服务器API)在数据集中收集的数据不包含`post_`字段的概念。 因此，`post_`个带有前缀和&#x200B;*非*-`post_`个带有前缀的数据馈送列映射到相同的XDM字段。 例如，`page_url`和`post_page_url`数据馈送列都映射到相同的`web.webPageDetails.URL` XDM字段。
+通过Experience Platform Edge Network（Web SDK、Mobile SDK、服务器API）在数据集中收集的数据不包含`post_`字段的概念。 因此，`post_`个带有前缀和&#x200B;*非*-`post_`个带有前缀的数据馈送列映射到相同的XDM字段。 例如，`page_url`和`post_page_url`数据馈送列都映射到相同的`web.webPageDetails.URL` XDM字段。
 
 请参阅[跨Adobe Analytics和Customer Journey Analytics比较数据处理](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons)，以了解数据处理差异的概述。
 
@@ -181,8 +196,8 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
 - [放弃的浏览](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/use-cases/abandoned-browse)
 - [归因分析](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/use-cases/attribution-analysis)
-- [机器人筛选](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/use-cases/bot-filtering)
-- 和查询服务指南[中其他](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/use-cases/overview)支持的用例。
+- [机器人过滤](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/use-cases/bot-filtering)
+- 和查询服务指南[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/use-cases/overview)中其他支持的用例。
 
 下面是一个跨会话正确应用归因的示例，其中说明如何
 
@@ -350,7 +365,7 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 #### 使用查询服务API
 
 或者，您可以使用RESTful API为查询定义查询和计划。 有关详细信息，请参阅[查询服务API指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/api/getting-started)。
-在创建查询（`ctasParameters`创建查询[）或为查询创建计划时（](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Queries/operation/createQuery)创建计划查询[），请确保将输出数据集定义为可选](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Schedules/operation/createSchedule)属性的一部分。
+在创建查询（[创建查询](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Queries/operation/createQuery)）或为查询创建计划时（[创建计划查询](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Schedules/operation/createSchedule)），请确保将输出数据集定义为可选`ctasParameters`属性的一部分。
 
 
 
@@ -362,7 +377,7 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
 - [Azure Data Lake Storage Gen2](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/cloud-storage/adls-gen2)
 - [数据登陆区](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone)
-- [Google云存储](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage)
+- [Google 云存储](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage)
 - [Amazon S3](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
 - [Azure Blob](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob)
 - [SFTP](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/cloud-storage/sftp)
@@ -400,7 +415,7 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
 ### 流服务API
 
-或者，您可以使用API导出和计划导出输出数据集。 使用流服务API[在](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/api/export-datasets)导出数据集中记录了所涉及的步骤。
+或者，您可以使用API导出和计划导出输出数据集。 使用流服务API[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/api/export-datasets)在导出数据集中记录了所涉及的步骤。
 
 #### 快速入门
 
@@ -422,7 +437,7 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
 #### 提供导出参数
 
-接下来，您必须[再使用](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/api/export-datasets#create-target-connection) [`POST /targetConection` API创建一个目标连接，用于存储输出数据集的导出参数](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection)。 这些导出参数包括位置、文件格式、压缩等。
+接下来，您必须[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/api/export-datasets#create-target-connection)再使用[`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) API创建一个目标连接，用于存储输出数据集的导出参数。 这些导出参数包括位置、文件格式、压缩等。
 
 #### 设置数据流
 

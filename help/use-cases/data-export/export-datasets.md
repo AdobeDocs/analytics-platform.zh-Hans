@@ -5,10 +5,25 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: b861f765-b18d-4be2-b4c7-c66186d37d99
-source-git-commit: 9fef1fddbb4b51efb9282e3ef13501bd498a4546
+autotag-review: '2026-05-19T09:38:40.111Z'
+TQID: 'https://experienceleague.adobe.com/az0B0Gzzu0pbb0TbpiZjW0Y-GysEptIETtg2bBFl-Uw'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 2%
+source-wordcount: 1187
+ht-degree: 3%
 
 ---
 
@@ -22,7 +37,7 @@ ht-degree: 2%
 
 使用[!DNL Experience Platform Export datasets]导出数据允许您将数据从Customer Journey Analytics数据视图导出到任何云存储目标。
 
-![BI扩展](../assets/export-datasets.svg)
+![BI扩展](../assets/export-datasets.png)
 
 ## 更多信息
 
@@ -32,7 +47,7 @@ ht-degree: 2%
 
 - [Azure Data Lake Storage Gen2](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/cloud-storage/adls-gen2)
 - [数据登陆区](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone)
-- [Google云存储](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage)
+- [Google 云存储](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage)
 - [Amazon S3](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3#changelog)
 - [Azure Blob](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob#changelog)
 - [SFTP](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/cloud-storage/sftp#changelog)
@@ -70,7 +85,7 @@ ht-degree: 2%
 
 ### 流服务API
 
-或者，您可以使用API导出和计划数据集的导出。 使用流服务API[在](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/api/export-datasets)导出数据集中记录了所涉及的步骤。
+或者，您可以使用API导出和计划数据集的导出。 使用流服务API[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/api/export-datasets)在导出数据集中记录了所涉及的步骤。
 
 #### 快速入门
 
@@ -92,7 +107,7 @@ ht-degree: 2%
 
 #### 提供导出参数
 
-接下来，您必须[再使用](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/api/export-datasets#create-target-connection) [`POST /targetConection` API创建一个目标连接，用于存储数据集的导出参数](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection)。 这些导出参数包括位置、文件格式、压缩等。
+接下来，您必须[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/api/export-datasets#create-target-connection)再使用[`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) API创建一个目标连接，用于存储数据集的导出参数。 这些导出参数包括位置、文件格式、压缩等。
 
 #### 设置数据流
 

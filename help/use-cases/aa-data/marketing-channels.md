@@ -5,10 +5,23 @@ exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 0e9dc47b80db142801a94dcbf31470d99a610949
+TQID: https://experienceleague.adobe.com/ur8f2cMDdoncdUzZ8FDAUYbJZ-8JOyAKKZ5p5Go-OkM
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '996'
-ht-degree: 49%
+source-wordcount: 1089
+ht-degree: 48%
 
 ---
 
@@ -25,17 +38,17 @@ ht-degree: 49%
 ## 先决条件
 
 * 必须已使用[Analytics源连接器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics)将报表包数据导入Adobe Experience Platform。 不支持其他数据源，因为“营销渠道”维度依赖于 Analytics 报表包中的处理规则。
-* 必须已设置“营销渠道”维度处理规则。请参阅《Adobe Analytics组件指南》中的[营销渠道的处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules)。
+* 必须已设置“营销渠道”维度处理规则。 请参阅《Adobe Analytics组件指南》中的[营销渠道的处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules)。
 
 ## “营销渠道”架构元素
 
-在所需的报告包上建立Analytics Source Connector后，将为您创建XDM架构。 此架构包含所有 Analytics 维度和量度作为原始数据。此类原始数据中不包含归因或持久性设置。相反，每个事件都通过“营销渠道”维度处理规则运行，并记录其匹配的第一个规则。在Customer Journey Analytics中创建数据视图时，您可以指定归因和持久性。
+在所需的报告包上建立Analytics Source Connector后，将为您创建XDM架构。 此架构包含所有 Analytics 维度和量度作为原始数据。 此类原始数据中不包含归因或持久性设置。 相反，每个事件都通过“营销渠道”维度处理规则运行，并记录其匹配的第一个规则。 在Customer Journey Analytics中创建数据视图时，您可以指定归因和持久性。
 
 1. [创建连接](/help/connections/create-connection.md)，该连接包括基于Analytics源连接器的数据集。
 2. [创建数据视图](/help/data-views/create-dataview.md)，视图中包含以下维度：
    * **`channel.typeAtSource`**：相当于[营销渠道](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/dimensions/marketing-channel)维度。
    * **`channel._id`**：相当于[营销渠道详细信息](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/dimensions/marketing-detail)
-3. 为每个维度提供所需的归因模型和持久性。如果要同时使用“首次接触”和“最后接触”维度，请将每个“营销渠道”维度多次拖动到组件区域。为每个维度提供所需的归因模型和持久性。Adobe 还建议为每个维度提供一个显示名称，以便于在分析工作区中使用这些维度。
+3. 为每个维度提供所需的归因模型和持久性。 如果要同时使用“首次接触”和“最后接触”维度，请将每个“营销渠道”维度多次拖动到组件区域。 为每个维度提供所需的归因模型和持久性。 Adobe 还建议为每个维度提供一个显示名称，以便于在分析工作区中使用这些维度。
 4. 创建数据视图。
 
 “营销渠道”维度现在可在分析工作区中使用。
@@ -48,19 +61,19 @@ ht-degree: 49%
 
 >[!IMPORTANT]
 >
->报表包数据与 Platform 数据之间存在一些基本数据差异。Adobe强烈建议调整报表包的营销渠道处理规则，以便在Experience Platform中正常收集数据。
+>报表包数据与 Platform 数据之间存在一些基本数据差异。 Adobe强烈建议调整报表包的营销渠道处理规则，以便在Experience Platform中正常收集数据。
 
 >[!NOTE]
 >
 >为了最大化归因和Customer Journey Analytics的营销渠道效率，提供了大约[修订后的最佳实践](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/marketing-channels/mchannel-best-practices)。
 
-“营销渠道”设置在 Platform 数据和报表包数据中的运行方式有所不同。在为Customer Journey Analytics设置营销渠道时，请考虑以下差异：
+“营销渠道”设置在 Platform 数据和报表包数据中的运行方式有所不同。 在为Customer Journey Analytics设置营销渠道时，请考虑以下差异：
 
-* **是访问的第一页**：此规则条件在多个默认营销渠道定义中是通用的。 将在 Platform 中忽略包含此条件的任何处理规则（同一规则中的其他条件仍适用）。会话是在数据查询时而不是数据收集时确定的，这样可阻止 Platform 使用此特定规则条件。Adobe 建议重新评估任何包含“是访问的第一页”标准的营销渠道处理规则，选择实现目标的替代方法。
+* **是访问的第一页**：此规则条件在多个默认营销渠道定义中是通用的。 将在 Platform 中忽略包含此条件的任何处理规则（同一规则中的其他条件仍适用）。 会话是在数据查询时而不是数据收集时确定的，这样可阻止 Platform 使用此特定规则条件。 Adobe 建议重新评估任何包含“是访问的第一页”标准的营销渠道处理规则，选择实现目标的替代方法。
 
   ![访问的首个页面](../assets/first-page-of-visit.png)
 
-* **覆盖最后接触渠道**：营销渠道管理器中的这项设置通常会阻止某些渠道获取最后接触渠道点数。Platform 会忽略此设置，从而允许将诸如“直接”或“内部”之类的宽泛渠道以可能不太妥当的方式计入量度。Adobe 建议删除未选中“覆盖最后接触渠道”的渠道。
+* **覆盖最后接触渠道**：营销渠道管理器中的这项设置通常会阻止某些渠道获取最后接触渠道点数。 Platform 会忽略此设置，从而允许将诸如“直接”或“内部”之类的宽泛渠道以可能不太妥当的方式计入量度。 Adobe 建议删除未选中“覆盖最后接触渠道”的渠道。
    * 您可以在营销渠道管理器中删除“直接”营销渠道，然后为该渠道使用Customer Journey Analytics的“无值”维度项目。 您还可以将此维度项重命名为“直接”，或在配置数据视图时完全排除此维度项。
    * 或者，您也可以创建一个营销渠道分类，对每个值进行单独分类，但要在Customer Journey Analytics中排除的渠道除外。 然后，在创建数据视图时，您可以使用此分类维度，而不是 `channel.typeAtSource`。
 
@@ -74,8 +87,8 @@ ht-degree: 49%
 
 由于Adobe Experience Platform的架构与Adobe Analytics报表包不同，因此无法保证结果匹配。 但是，您可以使用以下提示来简化此比较过程：
 
-* 确认上列体系结构差异不会影响您的比较。这些区别包括删除不覆盖最后接触渠道的渠道，以及删除作为访问（会话）的首次点击的规则条件。
+* 确认上列体系结构差异不会影响您的比较。 这些区别包括删除不覆盖最后接触渠道的渠道，以及删除作为访问（会话）的首次点击的规则条件。
 * 请仔细检查您的连接是否使用与Adobe Analytics相同的报表包。 如果您的Customer Journey Analytics连接包含多个报表包且每个报表包都有自己的“营销渠道”处理规则，则很难将其与Adobe Analytics进行比较。 您需要为每个要比较数据的报表包各创建一个连接。
 * 确保比较相同日期范围的数据，并且数据视图中的时区设置与报表包的时区相同。
-* 在查看报表包数据时使用自定义归因模型。例如，将[营销渠道](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/dimensions/marketing-channel)维度与使用非默认归因模型的量度结合使用。Adobe 建议不要比较默认维度[首次接触渠道](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/dimensions/first-touch-channel)或[最后接触渠道](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/dimensions/last-touch-channel)，因为它们依赖于报表包中收集的归因数据。Customer Journey Analytics不依赖报表包的归因数据；相反，会在运行Customer Journey Analytics报表时计算归因数据。
-* 由于报表包数据与 Platform 数据之间存在体系结构上的差异，因此无法合理比较某些量度。例如，访问/会话、人员/人员以及发生次数/事件。
+* 在查看报表包数据时使用自定义归因模型。 例如，将[营销渠道](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/dimensions/marketing-channel)维度与使用非默认归因模型的量度结合使用。 Adobe 建议不要比较默认维度[首次接触渠道](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/dimensions/first-touch-channel)或[最后接触渠道](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/dimensions/last-touch-channel)，因为它们依赖于报表包中收集的归因数据。 Customer Journey Analytics不依赖报表包的归因数据；相反，会在运行Customer Journey Analytics报表时计算归因数据。
+* 由于报表包数据与 Platform 数据之间存在体系结构上的差异，因此无法合理比较某些量度。 例如，访问/会话、人员/人员以及发生次数/事件。

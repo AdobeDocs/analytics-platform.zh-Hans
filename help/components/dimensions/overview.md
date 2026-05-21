@@ -3,16 +3,29 @@ title: 维度概述
 description: 了解什么是维度，以及它们在 Customer Journey Analytics 中的使用方式。
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+TQID: https://experienceleague.adobe.com/bMM7desF2wr71h-SR1mzD7-oSwm-8cPvmeU7SeM7-fU
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: 253
 ht-degree: 100%
 
 ---
 
 # 维度概述
 
-维度是 Customer Journey Analytics 中用于分析数据的一个组件类型。例如，在 [Analysis Workspace](/help/analysis-workspace/home.md) 或在 [Report Builder](/help/report-builder/rb-overview.md) 中构建报告时会使用维度。
+维度是 Customer Journey Analytics 中用于分析数据的一个组件类型。 例如，在 [Analysis Workspace](/help/analysis-workspace/home.md) 或在 [Report Builder](/help/report-builder/rb-overview.md) 中构建报告时会使用维度。
 
 Customer Journey Analytics 维度是一种无限类型；值可以是数字、文本、对象、列表或所有这些值的组合。
 
@@ -28,7 +41,7 @@ Customer Journey Analytics 中的基本报告显示一个量度列（通常是�
 
 {style="table-layout:fixed"}
 
-每个维度表示网站的不同部分或方面。您可以将其中一个或多个维度与一个或多个量度组合在一起，创建所需的报告。
+每个维度表示网站的不同部分或方面。 您可以将其中一个或多个维度与一个或多个量度组合在一起，创建所需的报告。
 
 
 ## 创建维度
@@ -44,7 +57,7 @@ Customer Journey Analytics 管理员可以[在数据视图中创建维度](/help
 
 ## 添加维度描述
 
-Customer Journey Analytics 管理员可以在数据视图中或直接在 Analysis Workspace 中添加维度和其他组件的描述。有关如何添加维度描述的信息，请参阅[添加组件描述](/help/components/add-component-descriptions.md)。
+Customer Journey Analytics 管理员可以在数据视图中或直接在 Analysis Workspace 中添加维度和其他组件的描述。 有关如何向维度添加描述的信息，请参阅[添加组件描述](/help/components/add-component-descriptions.md)。
 
 >[!MORELIKETHIS]
 >

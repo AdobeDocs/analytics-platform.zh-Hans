@@ -4,22 +4,35 @@ description: 了解有关如何将数据从 Google Analytics 移动到 Adobe Exp
 exl-id: 10c485c9-66ab-4925-a357-a66a374d4c6f
 feature: Use Cases
 role: Admin
-source-git-commit: 8262539078c57e32bc3195ef669325fa4889bea0
+TQID: https://experienceleague.adobe.com/C9rt1pyuM6ykLUlXCHc0ITwGeGcuLw6qisXnJxwX4uU
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: 303
 ht-degree: 79%
 
 ---
 
 # 从 Google Analytics 迁移数据
 
-如果您是 Customer Journey Analytics 的新手，您的组织可能在另一个分析平台（例如 Google Analytics）上拥有现有数据。您可以按照这些总体步骤将该数据移动到 Adobe Experience Platform，从而允许您在 Customer Journey Analytics 中查看报告。
+如果您是 Customer Journey Analytics 的新手，您的组织可能在另一个分析平台（例如 Google Analytics）上拥有现有数据。 您可以按照这些总体步骤将该数据移动到 Adobe Experience Platform，从而允许您在 Customer Journey Analytics 中查看报告。
 
-为历史数据和当前数据收集提供了工作流。您可以遵循这些工作流中的一个或两个，具体取决于您组织的数据需求。
+为历史数据和当前数据收集提供了工作流。 您可以遵循这些工作流中的一个或两个，具体取决于您组织的数据需求。
 
 ## 将来自 Google Analytics 的历史数据引入 Adobe Experience Platform
 
-提取历史（回填）数据涉及从 Google 导出数据并将该数据导入 Adobe Experience Platform。查看[将 Google Analytics 数据摄取到 Adobe Experience Platform](backfill.md)。
+提取历史（回填）数据涉及从 Google 导出数据并将该数据导入 Adobe Experience Platform。 查看[将 Google Analytics 数据摄取到 Adobe Experience Platform](backfill.md)。
 
 成功将历史数据引入平台后，您可以[配置流式当前数据](streaming.md)，或通过[创建连接](/help/connections/create-connection.md)立即开始在Customer Journey Analytics中报告回填数据。
 
@@ -35,4 +48,4 @@ ht-degree: 79%
 
 ## 创建报告
 
-在数据视图中配置维度和指标后，您可以开始使用 Analysis Workspace 生成所需的报告。查看[在 Customer Journey Analytics 中就 Google Analytics 数据给出报告](report.md)。
+在数据视图中配置维度和指标后，您可以开始使用 Analysis Workspace 生成所需的报告。 查看[在 Customer Journey Analytics 中就 Google Analytics 数据给出报告](report.md)。

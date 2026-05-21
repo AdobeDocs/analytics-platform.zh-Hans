@@ -5,10 +5,31 @@ title: 共享项目
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+TQID: https://experienceleague.adobe.com/qAYUiD5wa5PhvEjTi397PC4n0xX0rWKJSYaAjCR6jtg
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2:
+  - id: a3b826fd-7a63-4a83-8736-83eee6668f44
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: c38ed341-fab2-46df-9d72-88d8166edebb
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+  - id: f21d8c43-b886-433b-93ea-5982cbfc16b7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
 workflow-type: tm+mt
-source-wordcount: '2185'
-ht-degree: 96%
+source-wordcount: 2181
+ht-degree: 89%
 
 ---
 
@@ -59,9 +80,9 @@ ht-degree: 96%
 
 与组织中的用户和组共享特定项目角色时，请考虑以下事项：
 
-* 项目角色（**[!UICONTROL 编辑原始版本]**、**[!UICONTROL 编辑副本]**&#x200B;和&#x200B;**[!UICONTROL 只读]**）与用户和特定项目 ID 关联。 项目角色与 [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/admin-getting-started) 中管理的用户权限无关。
+* 项目角色（**[!UICONTROL 编辑原始版本]**、**[!UICONTROL 编辑副本]**&#x200B;和&#x200B;**[!UICONTROL 只读]**）与用户和特定项目 ID 关联。 项目角色与[CX Enterprise Admin Console](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/admin-getting-started)中管理的用户权限无关。
 
-* 在 Customer Journey Analytics 中，群组由 [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/admin-getting-started) 中的产品轮廓定义。 管理员可以共享到任何组，包括&#x200B;*全部*&#x200B;组。 除&#x200B;*全部*&#x200B;组外，非管理员可以共享到其所属的任何组。
+* 在Customer Journey Analytics中，组由[CX Enterprise Admin Console](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/admin-getting-started)中的产品配置文件定义。 管理员可以共享到任何组，包括&#x200B;*全部*&#x200B;组。 除&#x200B;*全部*&#x200B;组外，非管理员可以共享到其所属的任何组。
 
 * 如果用户分配到了多个角色，将始终获得权限最高的角色体验。 如果同时将用户添加为个人和组成员，则可能发生这种情况。 例如，如果作为个人授予用户&#x200B;**[!UICONTROL 编辑原始版本]**&#x200B;角色，并作为组成员授予用户&#x200B;**[!UICONTROL 只读]**&#x200B;角色，则该用户会获得&#x200B;**[!UICONTROL 编辑原始版本]**&#x200B;项目体验。
 
@@ -131,8 +152,8 @@ ht-degree: 96%
 
 >[!CONTEXTUALHELP]
 >id="workspace_share_with_anyone_require_aec_authentication"
->title="需要 Experience Cloud 身份验证"
->abstract="您的组织要求用户登录 Experience Cloud 才能使用此链接。"
+>title="需要CX Enterprise身份验证"
+>abstract="您的组织要求用户登录CX Enterprise才能使用此链接。"
 
 
 可为无权访问 Customer Journey Analytics 的人员授予对 Analysis Workspace 项目的[只读访问权限](/help/analysis-workspace/curate-share/view-only-projects.md)。 所授予的访问权限可能包括：
@@ -155,7 +176,7 @@ ht-degree: 96%
 >
 >* 如果许多用户尝试同时访问给定的链接，则项目可能会变得无法访问。 默认情况下，每 5 分钟可有超过 190 人访问单个链接。 如果您的组织达到此限制，请等待 5 分钟，然后再重试访问链接。
 >
->* 对于 [!DNL Healthcare Shield] 和 [!DNL Privacy & Security Shield] 两个许可证，[!UICONTROL 与任何人共享]功能需要 Experience Cloud 身份验证。 为 [!DNL Healthcare Shield] 客户会显示“HIPAA 合规性”警告，但您仍然可以在进行 Experience Cloud 身份验证后使用此功能。
+>* 对于[!DNL Healthcare Shield]和[!DNL Privacy & Security Shield]许可证，[!UICONTROL 与任何人共享]功能需要CX Enterprise身份验证。 对于[!DNL Healthcare Shield]客户，会显示“符合HIPAA标准”警告，但您仍可以在对CX Enterprise进行身份验证后使用此功能。
 
 >[!BEGINSHADEBOX]
 
@@ -182,15 +203,15 @@ ht-degree: 96%
 
 1. 选择是否启用以下安全选项（您的 Customer Journey Analytics 管理员可控制此选项）：
 
-   * **[!UICONTROL 要求进行 Experience Cloud 身份验证]：**
+   * **[!UICONTROL 需要CX Enterprise身份验证]：**
 
-     启用此选项后，只有可登录到从中创建了您所共享的项目的 Adobe Experience Cloud 组织的用户才能访问该项目。 但是，您与其共享的用户无需具有访问 Customer Journey Analytics 的权限。
+     启用此选项后，只有那些能够访问项目的用户才能登录到创建您共享的项目的CX Enterprise组织。 但是，您与其共享的用户无需具有访问 Customer Journey Analytics 的权限。
 
      Customer Journey Analytics 管理员可为公司配置此偏好设置，如[偏好设置](/help/analysis-workspace/user-preferences.md)所述。 根据管理员如何配置此选项，您可能会遇到以下情况：
 
       * 如果此选项不可见，则您的 Customer Journey Analytics 管理员未启用此功能。
 
-      * 如果启用了此选项但您无法禁用它，锁定的选项意味着您的 Customer Journey Analytics 管理员要求对访问 Analysis Workspace 项目的任何人进行 Experience Cloud 身份验证。 对于具有 Healthcare Shield 许可证的组织来说，情况总是如此。
+      * 如果启用了此选项，但无法禁用它，则锁定选项意味着您的Customer Journey Analytics管理员要求对访问Analysis Workspace项目的任何人进行CX企业身份验证。 对于具有 Healthcare Shield 许可证的组织来说，情况总是如此。
 
 1. 在&#x200B;**[!UICONTROL 与任何人共享（无需登录）]**&#x200B;字段旁边，选择![链接](/help/assets/icons/Link.svg)将链接复制到系统剪贴板。
 

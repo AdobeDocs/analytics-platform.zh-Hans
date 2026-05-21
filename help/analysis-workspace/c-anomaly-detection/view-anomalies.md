@@ -4,13 +4,22 @@ title: 查看异常
 feature: Anomaly Detection
 exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
 role: User
-source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
+TQID: https://experienceleague.adobe.com/LnQBV8OMK6D1tg1JgnBKARqYvKgAGqDME3vGpsmgJ0E
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: aff2ef09-fc60-4018-9197-e2befd623064
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: 433
 ht-degree: 46%
 
 ---
-
 
 # 查看异常
 
@@ -28,7 +37,7 @@ ht-degree: 46%
 
    ◥显示在检测到数据异常的每一行的右上角。
 
-   每行&#x200B;**中的**&#x200B;彩色垂直线➋表示预期值。 每行&#x200B;**中的**&#x200B;彩色阴影区域➊表示实际值。 线条（预期值）与阴影区域（实际值）的比较方式决定是否存在异常。（根据[异常检测中使用的统计技术](/help/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)中描述的高级统计技术，将观测视为异常。）
+   每行➋中的&#x200B;**彩色垂直线**&#x200B;表示预期值。 每行➊中的&#x200B;**彩色阴影区域**&#x200B;表示实际值。 线条（预期值）与阴影区域（实际值）的比较方式决定是否存在异常。 （根据[异常检测中使用的统计技术](/help/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)中描述的高级统计技术，将观测视为异常。）
 
 1. 选择行右上角的◥查看有关异常的详细信息。 这显示了实际值偏离预期值以上或以下的程度（以百分比表示）。
 
@@ -48,9 +57,9 @@ ht-degree: 46%
 
    ![异常检测到的折线图可视化图表](assets/anomaly-detected-line.png)
 
-   当检测到数据异常时，**白点**&#x200B;出现在折线上。（根据[异常检测中使用的统计技术](/help/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)中描述的高级统计技术，将观测视为异常。）
+   当检测到数据异常时，**白点**&#x200B;出现在折线上。 （根据[异常检测中使用的统计技术](/help/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)中描述的高级统计技术，将观测视为异常。）
 
-   **浅色阴影区域**&#x200B;是值应该出现的置信带或预期范围。超出此预期范围的任何值都是异常。
+   **浅色阴影区域**&#x200B;是值应该出现的置信带或预期范围。 超出此预期范围的任何值都是异常。
 
    如果折线图中包含多个量度，仅显示异常，您必须将鼠标悬停在每个异常上，才能查看该量度的置信带。
 

@@ -5,9 +5,28 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
 role: Admin
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+TQID: https://experienceleague.adobe.com/oCI3IKOfeOTpNQYOflo5QngPfu4ytnpyewA8ccOf64Q
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: c38ed341-fab2-46df-9d72-88d8166edebb
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1956'
+source-wordcount: 1998
 ht-degree: 86%
 
 ---
@@ -18,11 +37,11 @@ ht-degree: 86%
 
 要完成此实施，您需要：
 
-- 在 Adobe Experience Platform 中&#x200B;**设置架构和数据集**，以定义要收集的数据的模型（架构）以及实际收集数据的位置（数据集）。
+- 在 Adobe Experience Platform 中&#x200B;**设置架构和数据集** ，以定义要收集的数据的模型（架构）以及实际收集数据的位置（数据集）。
 
 - 使用&#x200B;**工作流** 轻松将批处理数据上传到 Adobe Experience Platform 中配置的数据集。
 
-- 在 Customer Journey Analytics 中&#x200B;**设置连接**。此连接应（至少）包含 Adobe Experience Platform 数据集。
+- 在 Customer Journey Analytics 中&#x200B;**设置连接**。 此连接应（至少）包含 Adobe Experience Platform 数据集。
 
 - 在 Customer Journey Analytics 中&#x200B;**设置数据视图**&#x200B;以定义要在 Analysis Workspace 中使用的量度和维度。
 
@@ -34,15 +53,16 @@ ht-degree: 86%
 
 ## 设置架构和数据集
 
-要将数据导入 Adobe Experience Platform，首先需要定义要收集的数据。引入 Adobe Experience Platform 的所有数据都必须符合标准的非规范化结构，以便下游功能和特性对其进行识别和操作。体验数据模型 (XDM) 是以架构形式提供此结构的标准框架。
+要将数据导入 Adobe Experience Platform，首先需要定义要收集的数据。 引入 Adobe Experience Platform 的所有数据都必须符合标准的非规范化结构，以便下游功能和特性对其进行识别和操作。 体验数据模型 (XDM) 是以架构形式提供此结构的标准框架。
 
-定义架构后，您可以使用一个或多个数据集来存储和管理数据集合。数据集是用于数据集合（通常是表）的存储和管理结构，其中包含架构（列）和字段（行）。
+定义架构后，您可以使用一个或多个数据集来存储和管理数据集合。 数据集是用于数据集合（通常是表）的存储和管理结构，其中包含架构（列）和字段（行）。
 
 摄取到 Adobe Experience Platform 中的所有数据都必须符合预定义的架构，然后才能作为数据集保存。
 
 ### 设置架构
 
-为了快速开始，您需要收集一些忠诚度数据，例如忠诚度 id、忠诚度积分和忠诚度状态。您必须首先定义一个模式来模拟此数据。
+为了快速开始，您需要收集一些忠诚度数据，例如忠诚度 id、忠诚度积分和忠诚度状态。
+您必须首先定义一个模式来模拟此数据。
 
 设置您的架构：
 
@@ -58,7 +78,7 @@ ht-degree: 86%
 
       >[!INFO]
       >
-      >    Experience Event 架构用于对轮廓的&#x200B;_行为_&#x200B;进行建模（如场景名称、添加到购物车的按钮）。个人轮廓架构用于对轮廓&#x200B;_属性_（如姓名、电子邮件、性别）进行建模。
+      >    Experience Event 架构用于对轮廓的&#x200B;_行为_&#x200B;进行建模（如场景名称、添加到购物车的按钮）。 个人轮廓架构用于对轮廓&#x200B;_属性_（如姓名、电子邮件、性别）进行建模。
 
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
@@ -79,7 +99,7 @@ ht-degree: 86%
 
       字段组是可重用的对象和属性集合，可让您轻松扩展架构。
 
-   1. 在[!UICONTROL 添加字段组]对话框中，从列表中选择 **[!UICONTROL 忠诚度详细信息]** 字段组。
+   1. 在[!UICONTROL 添加字段组]对话框中，从列表中选择&#x200B;**[!UICONTROL 忠诚度详细信息]**&#x200B;字段组。
 
       ![AEP Web SDK ExperienceEvent 字段组](./assets/loyalty-fieldgroup.png)
 
@@ -99,23 +119,23 @@ ht-degree: 86%
 
    ![识别对象](./assets/identifcation-loyalty-field.png)
 
-   识别对象为您的架构添加了识别功能。在您的情况下，您希望使用批处理数据中的电子邮件地址来识别忠诚度信息。
+   识别对象为您的架构添加了识别功能。 在您的情况下，您希望使用批处理数据中的电子邮件地址来识别忠诚度信息。
 
-   选择 **[!UICONTROL 应用]** 将此对象添加到您的架构中。
+   选择&#x200B;**[!UICONTROL 应用]**&#x200B;将此对象添加到您的架构中。
 
 1. 选择刚刚添加的身份标识对象中的&#x200B;**[!UICONTROL 邮件]**&#x200B;字段，选择&#x200B;**[!UICONTROL 身份标识]**&#x200B;和&#x200B;**[!UICONTROL 邮件]**&#x200B;和[!UICONTROL 身份标识命名空间]中的[!UICONTROL 字段属性]面板。
 
-    ![将电子邮件指定为身份标识](./assets/specify-email-loyalty-id.png)
+   ![将电子邮件指定为身份标识](./assets/specify-email-loyalty-id.png)
 
    您将电子邮件地址指定为 Adobe Experience Platform 身份标识服务可用于组合（拼接）轮廓行为的另一个身份标识。
 
-   选择 **[!UICONTROL 应用]**。您会看到电子邮件属性中显示指纹图标。
+   选择 **[!UICONTROL 应用]**。 您会看到电子邮件属性中显示指纹图标。
 
    选择&#x200B;**[!UICONTROL 保存]**。
 
-1. 选择架构的根级别（使用架构名称），然后选择 **[!UICONTROL 配置]**&#x200B;开关。
+1. 选择架构的根级别（使用架构名称），然后选择&#x200B;**[!UICONTROL 配置]**&#x200B;开关。
 
-   系统会提示您启用轮廓的架构。一旦启用，当数据被引入基于此架构的数据集中时，该数据将合并到实时客户轮廓。
+   系统会提示您启用轮廓的架构。 一旦启用，当数据被引入基于此架构的数据集中时，该数据将合并到实时客户轮廓。
 
    有关详细信息，请参阅[启用架构以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans#profile)。
 
@@ -127,13 +147,13 @@ ht-degree: 86%
 
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存架构。
 
-您已经创建了一个最小的架构，它可以对可以引入 Adobe Experience Platform 的忠诚度数据进行建模。该架构允许使用电子邮件地址标识轮廓。通过为概要文件启用架构，可以确保批处理文件中的数据添加到实时客户轮廓中。
+您已经创建了一个最小的架构，它可以对可以引入 Adobe Experience Platform 的忠诚度数据进行建模。 该架构允许使用电子邮件地址标识轮廓。 通过为概要文件启用架构，可以确保批处理文件中的数据添加到实时客户轮廓中。
 
 请参阅[在 UI 中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=zh-Hans)，了解有关向架构添加和删除字段组和单个字段的更多信息。
 
 ### 设置数据集
 
-使用您的架构，您已经定义了数据模型。现在，您必须定义构建来存储和管理这些数据，这通过数据集来完成。
+使用您的架构，您已经定义了数据模型。 现在，您必须定义构建来存储和管理这些数据，这通过数据集来完成。
 
 设置您的数据集
 
@@ -157,7 +177,7 @@ ht-degree: 86%
 
 7. 选择&#x200B;**[!UICONTROL 轮廓]**&#x200B;开关
 
-   系统会提示您启用轮廓的数据集。启用后，数据集会使用其摄取的数据丰富实时客户轮廓。
+   系统会提示您启用轮廓的数据集。 启用后，数据集会使用其摄取的数据丰富实时客户轮廓。
 
    >[!IMPORTANT]
    >
@@ -165,12 +185,12 @@ ht-degree: 86%
 
    ![为轮廓启用架构](./assets/loyalty-dataset-profile.png)
 
-有关如何查看、预览、创建和删除数据集的更多信息，请参阅[数据集 UI 指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=zh-Hans)。以及如何为实时客户轮廓启用数据集。
+有关如何查看、预览、创建和删除数据集的更多信息，请参阅[数据集 UI 指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=zh-Hans)。 以及如何为实时客户轮廓启用数据集。
 
 
 ## 用工作流
 
-您使用工作流功能将批处理数据上传到 Adobe Experience Platform。您使用的示例批处理文件是一个包含以下内容的 CSV 文件：
+您使用工作流功能将批处理数据上传到 Adobe Experience Platform。 您使用的示例批处理文件是一个包含以下内容的 CSV 文件：
 
 ```
 email,loyaltyID,points,status
@@ -186,7 +206,7 @@ ppales4@nsw.gov.au,365384,82.71,Silver
 
 1. 在平台 UI 中，选择左边栏中的 **[!UICONTROL 工作流]**。
 
-2. 选择 **[!UICONTROL 将 CSV 映射到 XDM 架构]**。选择&#x200B;**[!UICONTROL 启动]**。
+2. 选择 **[!UICONTROL 将 CSV 映射到 XDM 架构]**。 选择&#x200B;**[!UICONTROL 启动]**。
 
    将 ![&#x200B; CSV 映射到 XDN](./assets/workflow-mapcsvtoxdm.png)
 
@@ -200,7 +220,7 @@ ppales4@nsw.gov.au,365384,82.71,Silver
 
 4. 在[!UICONTROL 选择数据]步骤中：
 
-   拖放或选择&#x200B;**[!UICONTROL 选择文件]**&#x200B;以选择包含忠诚度数据的 CSV 文件。您会看到忠诚度数据的预览。
+   拖放或选择&#x200B;**[!UICONTROL 选择文件]**&#x200B;以选择包含忠诚度数据的 CSV 文件。 您会看到忠诚度数据的预览。
 
    ![选择数据](./assets/workflow-selectdata.png)
 
@@ -208,7 +228,7 @@ ppales4@nsw.gov.au,365384,82.71,Silver
 
 5. 在[!UICONTROL 映射]步骤中：
 
-   将数据从 CSV 文件映射到架构中的数据。使用 AI，工作流功能会尝试自动将您的批处理数据字段映射到架构字段。
+   将数据从 CSV 文件映射到架构中的数据。 使用 AI，工作流功能会尝试自动将您的批处理数据字段映射到架构字段。
 
    ![映射您的数据](./assets/workflow-dataflow-mapping.png)
 
@@ -230,7 +250,7 @@ ppales4@nsw.gov.au,365384,82.71,Silver
 
 要在 Customer Journey Analytics 中使用 Adobe Experience Platform 数据，您需要创建一个连接，其中包含因设置架构、数据集和工作流所产生的数据。
 
-通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。要报告这些数据集，您必须首先在Adobe Experience Platform和Workspace中的数据集之间建立连接。
+通过创建连接，您可以将 Adobe Experience Platform 中的数据集集成到工作区中。 要报告这些数据集，您必须首先在Adobe Experience Platform和Workspace中的数据集之间建立连接。
 
 创建您的连接：
 
@@ -262,7 +282,7 @@ ppales4@nsw.gov.au,365384,82.71,Silver
 
       - 在 Adobe Experience Platform 中，从在数据集架构中定义的可用身份标识中选择[!UICONTROL 人员 ID]。
 
-      - 从[!UICONTROL 数据源类型]列表中选择正确的数据源。如果指定&#x200B;**[!UICONTROL 其他]**，则为您的数据源添加描述。
+      - 从[!UICONTROL 数据源类型]列表中选择正确的数据源。 如果指定&#x200B;**[!UICONTROL 其他]**，则为您的数据源添加描述。
 
       - 根据您的首选项设置&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;和&#x200B;**[!UICONTROL 数据集回填现有数据]**。
 
@@ -276,7 +296,7 @@ ppales4@nsw.gov.au,365384,82.71,Silver
 
 ## 设置数据视图
 
-数据视图是 Customer Journey Analytics 专属的容器，通过它，可决定如何解释来自连接的数据。 它指定所有可在 Analysis Workspace 中找到的维度和量度，以及这些维度和量度从哪些列获取其数据。为准备 Analysis Workspace 中的报告而定义数据视图。
+数据视图是 Customer Journey Analytics 专属的容器，通过它，可决定如何解释来自连接的数据。 它指定所有可在 Analysis Workspace 中找到的维度和量度，以及这些维度和量度从哪些列获取其数据。 为准备 Analysis Workspace 中的报告而定义数据视图。
 
 创建您的数据视图：
 
@@ -313,7 +333,7 @@ ppales4@nsw.gov.au,365384,82.71,Silver
 
 ## 设置项目
 
-Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分析并基于数据共享见解。您可以使用工作区项目来组合数据组件、表和可视化，以制作分析并与组织中的任何人共享。
+Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分析并基于数据共享洞察。 您可以使用工作区项目来组合数据组件、表和可视化，以制作分析并与组织中的任何人共享。
 
 要创建您的项目：
 
@@ -341,4 +361,4 @@ Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分�
 
 >[!SUCCESS]
 >
->您已完成所有步骤。首先在 Adobe Experience Platform 中定义要收集的忠诚度数据（架构）和存储位置（数据集），然后配置工作流以将忠诚度数据批量上传到数据集中。您在 Customer Journey Analytics 中定义了一个连接以使用摄取的忠诚度数据和其他数据。您的数据视图定义允许您指定要使用的维度和量度，最后您创建了您的第一个项目来可视化和分析您的数据。
+>您已完成所有步骤。 首先在 Adobe Experience Platform 中定义要收集的忠诚度数据（架构）和存储位置（数据集），然后配置工作流以将忠诚度数据批量上传到数据集中。 您在 Customer Journey Analytics 中定义了一个连接以使用摄取的忠诚度数据和其他数据。 您的数据视图定义允许您指定要使用的维度和量度，最后您创建了您的第一个项目来可视化和分析您的数据。

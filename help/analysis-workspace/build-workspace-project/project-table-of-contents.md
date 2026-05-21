@@ -5,16 +5,25 @@ title: 目录
 feature: Workspace Basics
 role: User
 exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+TQID: https://experienceleague.adobe.com/uG3I5F-Mjzc-cG1Vavuqxa8nb96sA5M-zoa-4wNEdrc
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 89%
+source-wordcount: 244
+ht-degree: 90%
 
 ---
 
 # 目录
 
-您可以在 Analysis Workspace 中查看项目的目录，以便在项目中快速切换到任何面板和可视化内容。在查看包含许多面板和可视化内容的大型项目时，目录功能特别有用。
+您可以在 Analysis Workspace 中查看项目的目录，以便在项目中快速切换到任何面板和可视化内容。 在查看包含许多面板和可视化内容的大型项目时，目录功能特别有用。
 
 >[!BEGINSHADEBOX]
 
@@ -25,7 +34,7 @@ ht-degree: 89%
 
 >[!TIP]
 >
->您可以使用“分区标头”可视化功能来身份标识和阐明包含多个可视化图表的面板中的一个部分。这些部分的标头也会作为条目显示在目录中。
+>您可以使用“分区标头”可视化功能来身份标识和阐明包含多个可视化图表的面板中的一个部分。 这些部分的标头也会作为条目显示在目录中。
 >
 
 
@@ -33,7 +42,7 @@ ht-degree: 89%
 
 1. 在 Analysis Workspace 中，转到您想要查看目录的项目。
 
-1. 在按钮面板中，选择 ![ViewList](/help/assets/icons/ViewList.svg) **[!UICONTROL 目录]**。有关详细信息，请参阅 [Analysis Workspace 概述](/help/analysis-workspace/home.md)。<br/>
+1. 在按钮面板中，选择 ![ViewList](/help/assets/icons/ViewList.svg) **[!UICONTROL 目录]**。 有关详细信息，请参阅 [Analysis Workspace 概述](/help/analysis-workspace/home.md)。<br/>
 
    该项目的&#x200B;**[!UICONTROL 目录]**&#x200B;会显示，且每个面板默认是展开的。
 

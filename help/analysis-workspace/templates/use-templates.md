@@ -4,9 +4,32 @@ title: 使用模板
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+autotag-review: '2026-05-19T09:53:18.849Z'
+TQID: 'https://experienceleague.adobe.com/wZ8vtE4BFc1ahBKdblSEAXBofZBPObbSJi4bA9MtxPY'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+  - id: c18d9e03-ac7d-4811-9c92-3e92ddc70ade
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 18fb93e93ec714e6a9d64010309eba0f2ff5593a
 workflow-type: tm+mt
-source-wordcount: '21144'
+source-wordcount: 21144
 ht-degree: 98%
 
 ---
@@ -383,7 +406,7 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="了解哪些内容和内容属性表现最佳。"
->abstract="**这可以帮助您**&#x200B;了解您的内容在粒度级别上的表现。 您可以查看单个资产或特定属性的表现。 Content Analytics 使用 AI 自动生成属性，并用它们标记您的内容。 <a href="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">了解详情</a>。<br/>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如在主页上推广表现优异的资产，为特定区段市场提供个性化内容以包含表现优异的属性，或者轮换掉已经开始过时的内容。"
+>abstract="**这可以帮助您**&#x200B;了解您的内容在粒度级别上的表现。 您可以查看单个资产或特定属性的表现。 Content Analytics 使用 AI 自动生成属性，并用它们标记您的内容。 [更多信息](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/content-analytics/content-analytics)。<br/>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如在主页上推广表现优异的资产，为特定区段市场提供个性化内容以包含表现优异的属性，或者轮换掉已经开始过时的内容。"
 
 
 可使用以下模板：
