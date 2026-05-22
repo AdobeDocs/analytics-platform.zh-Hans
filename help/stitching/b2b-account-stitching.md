@@ -20,7 +20,7 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: d95b7e2710fac7ce851c1c5ecba229a4221f08ac
+source-git-commit: 11156e1f2db094595cc3333ccb0b896037da4715
 workflow-type: tm+mt
 source-wordcount: 1178
 ht-degree: 2%
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Customer Journey Analytics中对整个客户历程进行完整分析。 当事件缺少帐户ID（Customer Journey Analytics B2B edition需要帐户ID进行摄取）时，帐户拼接将使用您提供的[人员到帐户映射数据集](#prerequisites)自动派生和添加该信息。
 
-如果没有帐户拼合，则在引入期间会丢弃任何不包含帐户ID的事件。 帐户拼接通过查找与每个事件中的人员关联的帐户来消除此障碍，并在事件被摄取和追溯时添加帐户ID。
+如果没有帐户拼合，则在引入期间会丢弃任何不包含帐户ID的事件。 帐户拼接可在每个事件中查找与人员关联的帐户，并在事件被摄取时添加帐户ID以追溯该事件，从而消除此障碍。
 
 >[!NOTE]
 >
