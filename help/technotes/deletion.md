@@ -22,9 +22,9 @@ subfeature_v2:
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: de8f8e06f074fdcb0219ce7286785d870c2093b4
 workflow-type: tm+mt
-source-wordcount: 965
+source-wordcount: 997
 ht-degree: 9%
 
 ---
@@ -51,6 +51,7 @@ ht-degree: 9%
 
 | 操作 | 影响 |
 | --- | --- |
+| 在[!UICONTROL Experience Platform]中删除数据集中的一个或多个记录 | 记录会从Customer Journey Analytics连接中删除，这些连接会将数据集定义为连接配置的一部分。 |
 | 删除[!UICONTROL Experience Platform]中的数据集 | 在Experience Platform中，来自该数据集的数据流将停止到包含该数据集的任何连接。 自动从关联的 Customer Journey Analytics 连接删除来自该数据集的任何数据。 |
 | 从[!UICONTROL Experience Platform]中的数据集中删除批次 | 如果从[!UICONTROL Adobe Experience Platform]数据集中删除了某个批次，则会从包含该特定批次的所有[!UICONTROL Customer Journey Analytics]连接中删除该批次。 [!UICONTROL Customer Journey Analytics] 会收到批次已在 [!UICONTROL Adobe Experience Platform] 中删除的通知。 |
 | 将批次&#x200B;**摄取到[!UICONTROL Customer Journey Analytics]时，从[!UICONTROL Experience Platform]**&#x200B;中删除批次 | 如果数据集中只有一个批次，则没有来自该批次的数据或来自该批次的部分数据出现在 [!UICONTROL Customer Journey Analytics] 中。 并且回滚该摄取。 例如，如果数据集中共有5个批次，且在删除第四个批次时已摄取其中3个批次，则这3个批次中的数据将显示在[!UICONTROL Customer Journey Analytics]中。 |

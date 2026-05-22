@@ -20,9 +20,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: de8f8e06f074fdcb0219ce7286785d870c2093b4
 workflow-type: tm+mt
-source-wordcount: 599
+source-wordcount: 589
 ht-degree: 22%
 
 ---
@@ -45,7 +45,9 @@ ht-degree: 22%
 
 ### 警报列表
 
-警报列表➊显示您拥有的所有警报、已覆盖到您所有项目的警报以及与您共享的警报。 该列表具有以下各列：
+警报列表➊显示您已创建的警报。 如果您是管理员，则会看到所有警报。
+
+该列表具有以下各列：
 
 | 列 | 描述 |
 |---|---|
@@ -54,7 +56,7 @@ ht-degree: 22%
 | **[!UICONTROL Type]** | 显示警报是Customer Journey Analytics数据警报还是服务器调用使用情况警报。 |
 | **[!UICONTROL 已启用]** | 指示警报是启用还是禁用。 |
 | **[!UICONTROL 数据视图]** | 此警报应用于的数据视图。 |
-| **[!UICONTROL 所有者]** | 警报的所有者。 如果您不是管理员，则只能看到您拥有的警报或与您共享的警报。 |
+| **[!UICONTROL 所有者]** | 警报的所有者。 如果您不是管理员，则只能看到您拥有的警报。 管理员可以查看所有警报。 |
 | **[!UICONTROL 标记]** | 此警报的标记。 |
 | **[!UICONTROL 到期日期]** | 警报设置为到期的日期和时间。 |
 | **[!UICONTROL 修改日期]** | 上次修改警报的日期和时间。 |
