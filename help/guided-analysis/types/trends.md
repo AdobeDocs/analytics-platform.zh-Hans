@@ -19,10 +19,10 @@ role_v2:
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
-source-wordcount: 861
-ht-degree: 91%
+source-wordcount: 849
+ht-degree: 92%
 
 ---
 
@@ -39,8 +39,7 @@ ht-degree: 91%
 
 ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL 趋势]**&#x200B;分析提供了关于产品绩效或用户行为随时间变化的宝贵洞察。 该报告的横轴是时间间隔，而纵轴衡量的是您所期望的事件。
 
-
->[!VIDEO](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/guided-analysis/trends)
+>[!VIDEO](https://video.tv.adobe.com/v/3423437/?captions=chi_hans&quality=12&learn=on)
 
 ## 用例
 

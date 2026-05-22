@@ -18,10 +18,10 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
-source-wordcount: 550
-ht-degree: 97%
+source-wordcount: 537
+ht-degree: 100%
 
 ---
 
@@ -39,9 +39,7 @@ ht-degree: 97%
 
 ![转化趋势](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL 转化趋势]**&#x200B;分析提供了随时间变化的转化率趋势的可视化图表。 横轴是时间间隔，纵轴表示转化率。
 
-
->[!VIDEO](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/guided-analysis/conversion-trends)
-
+>[!VIDEO](https://video.tv.adobe.com/v/3423484/?captions=chi_hans&quality=12&learn=on)
 
 ## 用例
 

@@ -20,10 +20,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
-source-wordcount: 694
-ht-degree: 98%
+source-wordcount: 685
+ht-degree: 100%
 
 ---
 
@@ -38,14 +38,9 @@ ht-degree: 98%
 
 <!-- markdownlint-enable MD034 -->
 
-![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL 漏斗&#x200B;]**&#x200B;分析可以直观地呈现您的产品中关键的用户历程。 横轴代表用户必须经历的每个步骤。 纵轴表示每个步骤的用户或会话的百分比。 所有步骤必须按最终顺序执行，但可在报告窗口内的任何时间进行。
+![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL 漏斗&#x200B;]**分析可以直观地呈现您的产品中关键的用户历程。 横轴代表用户必须经历的每个步骤。 纵轴表示每个步骤的用户或会话的百分比。 所有步骤必须按最终顺序执行，但可在报告窗口内的任何时间进行。
 
->[!BEGINSHADEBOX]
-
-观看演示视频，请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Funnel摩擦分析](https://video.tv.adobe.com/v/3431280/?captions=chi_hans&quality=12&learn=onn){target="_blank"}。
-
->[!ENDSHADEBOX]
-
+>[!VIDEO](https://video.tv.adobe.com/v/3431280/?captions=chi_hans&quality=12&learn=on)
 
 ## 用例
 

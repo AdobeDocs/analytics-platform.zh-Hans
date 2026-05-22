@@ -19,10 +19,10 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
-source-wordcount: 671
-ht-degree: 98%
+source-wordcount: 659
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 98%
 
 ![频率](/help/assets/icons/Histogram.svg) **[!UICONTROL 频率]**&#x200B;分析根据产品中事件发生的频率对事件数据进行分组。 该分析的纵轴包含表示事件频率的区间。 横轴测量的是每个区间的用户数或会话数。
 
->[!VIDEO](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/guided-analysis/frequency)
+>[!VIDEO](https://video.tv.adobe.com/v/3435812/?captions=chi_hans&quality=12&learn=on)
 
 ## 用例
 
