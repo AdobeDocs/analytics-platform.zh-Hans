@@ -20,9 +20,9 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 5964c5f87364e5ba78e866d753819d7e7f605b30
+source-git-commit: d95b7e2710fac7ce851c1c5ecba229a4221f08ac
 workflow-type: tm+mt
-source-wordcount: 1169
+source-wordcount: 1178
 ht-degree: 2%
 
 ---
@@ -137,7 +137,7 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="启用人员帐户拼合"
->abstract="如果启用，此数据集将使用B2B帐户拼接。 选定的人员ID用于根据人员到帐户数据集查找帐户ID。<br/>如果禁用，此数据集&#x200B;*不会*&#x200B;使用B2B帐户拼接。"
+>abstract="如果启用，此数据集将使用B2B帐户拼接。 选择所需的&#x200B;**[!UICONTROL 人员ID]**&#x200B;以根据人员到帐户数据集查找帐户ID。<br/>如果已禁用，此数据集&#x200B;*不会*&#x200B;使用B2B帐户拼接，您必须改为选择所需的&#x200B;**[!UICONTROL 帐户ID]**。"
 >additional-url=""
 >additional-url=""
 
