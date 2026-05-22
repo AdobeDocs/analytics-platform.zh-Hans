@@ -6,20 +6,14 @@ keywords: 产品分析
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
 TQID: https://experienceleague.adobe.com/sqRGQu7Vg5jdCGXT-NWIeExSrBeMVK5hXg0VvD2LtIM
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
-source-wordcount: 766
-ht-degree: 98%
+source-wordcount: 758
+ht-degree: 100%
 
 ---
 
@@ -44,11 +38,7 @@ ht-degree: 98%
 * 矩阵左下角的功能是&#x200B;**低影响力**&#x200B;功能；它们并未被广泛采纳或频繁使用。
 * 矩阵右下角的功能是您的&#x200B;**一次性**&#x200B;功能；它们被广泛采用，但使用频率不高。
 
->[!BEGINSHADEBOX]
-
-观看演示视频，请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [参与分析](https://video.tv.adobe.com/v/3447477?captions=chi_hans){target="_blank"}。
-
->[!ENDSHADEBOX]
+>[!VIDEO](https://video.tv.adobe.com/v/3429489/?quality=12&learn=on)
 
 ## 用例
 

@@ -6,20 +6,14 @@ keywords: 产品分析
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
 TQID: https://experienceleague.adobe.com/2PKIwvFwCv5FiL7WgeJPksm74c8m5B4L33RZouD-t1o
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
-source-wordcount: 545
-ht-degree: 97%
+source-wordcount: 532
+ht-degree: 100%
 
 ---
 
@@ -36,7 +30,7 @@ ht-degree: 97%
 
 ![发布](/help/assets/icons/Release.svg) **[!UICONTROL 发布影响]**&#x200B;分析显示了关键量度在特定日期之前和之后的表现的比较。 该报告的横轴是时间间隔，而纵轴衡量的是您所期望的关键指标。 图表中间的垂直条代表要在其前后进行比较的日期。 此日期通常代表您想要衡量的产品的显著变化，例如产品更新或营销活动启动。
 
->[!VIDEO](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/guided-analysis/release-impact)
+>[!VIDEO](https://video.tv.adobe.com/v/3421665/?quality=12&learn=on)
 
 ## 用例
 

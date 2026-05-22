@@ -6,24 +6,15 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
 TQID: https://experienceleague.adobe.com/-AW7cK4fHNV58e539KKcqBx-pRpIpIRWcrS7CA9ZUYc
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
-source-wordcount: 694
-ht-degree: 98%
+source-wordcount: 685
+ht-degree: 100%
 
 ---
 
@@ -38,14 +29,9 @@ ht-degree: 98%
 
 <!-- markdownlint-enable MD034 -->
 
-![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL 漏斗&#x200B;]**&#x200B;分析可以直观地呈现您的产品中关键的用户历程。 横轴代表用户必须经历的每个步骤。 纵轴表示每个步骤的用户或会话的百分比。 所有步骤必须按最终顺序执行，但可在报告窗口内的任何时间进行。
+![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL 漏斗&#x200B;]**分析可以直观地呈现您的产品中关键的用户历程。 横轴代表用户必须经历的每个步骤。 纵轴表示每个步骤的用户或会话的百分比。 所有步骤必须按最终顺序执行，但可在报告窗口内的任何时间进行。
 
->[!BEGINSHADEBOX]
-
-观看演示视频，请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Funnel摩擦分析](https://video.tv.adobe.com/v/3431280/?captions=chi_hans&quality=12&learn=onn){target="_blank"}。
-
->[!ENDSHADEBOX]
-
+>[!VIDEO](https://video.tv.adobe.com/v/3421663/?quality=12&learn=on)
 
 ## 用例
 
