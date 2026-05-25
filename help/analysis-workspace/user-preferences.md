@@ -6,31 +6,15 @@ exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
 TQID: https://experienceleague.adobe.com/5rXDQ-Ygp3TrEMbpK1UaUcRwSrc81VkUKauxth4-AUs
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
-subfeature_v2:
-  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
-  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-  - id: aff2ef09-fc60-4018-9197-e2befd623064
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: fa6ac035-8403-478b-9ce1-3fe29d211fca
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: e634a07b-b7ca-4af3-a124-3024ce559e17
+subfeature_v2: id: a8b1c240-f315-46e3-b813-f545c4279dd1id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: aff2ef09-fc60-4018-9197-e2befd623064id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: fa6ac035-8403-478b-9ce1-3fe29d211fca
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
 workflow-type: tm+mt
 source-wordcount: 4356
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -69,8 +53,8 @@ ht-degree: 92%
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_requireexperiencecloudauth"
->title="需要CX Enterprise身份验证"
->abstract="启用后，通过Analysis Workspace中的&#x200B;**[!UICONTROL 与任何人共享]**&#x200B;选项授予项目访问权限的用户必须使用其CX Enterprise凭据进行身份验证。"
+>title="要求进行 CX Enterprise 身份验证"
+>abstract="启用后，通过 Analysis Workspace 中&#x200B;**[!UICONTROL 与所有人共享]**&#x200B;选项获得项目访问权限的用户，必须使用其 CX Enterprise 凭据进行身份验证。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_projectcommenting"
@@ -86,7 +70,7 @@ ht-degree: 92%
 |  | 隐藏模板选项卡 | 隐藏您组织内所有用户的“模板”选项卡。 |
 | **项目共享** | | |
 | | 仅允许与 Workspace 用户共享 | 启用此选项后，组织内的用户将无法在&#x200B;**[!UICONTROL 共享]**&#x200B;菜单中看到&#x200B;**[!UICONTROL 与任何人共享]**&#x200B;选项。 这意味着，用户无法与已在您的组织中拥有 Analysis Workspace 帐户的人员共享项目，如[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)中所述。<br/>默认情况下，除许可了 Healthcare Shield 的客户外，所有组织均禁用此选项（这意味着用户可以与组织外部的人员共享项目）。 <p>在启用或禁用此选项时，请考虑以下事项：<ul><li>启用此选项后，之前通过[!UICONTROL 与任何人共享]共享选项获得项目访问权限的人员将无法再访问该项目。</li><li>如果启用此选项（仅允许与 Workspace 用户共享），然后将其禁用（允许与任何人共享），则之前通过[!UICONTROL 与任何人共享]共享选项获得项目访问权限的人员不会自动重新获得对项目的访问权限。 在这种情况下，已共享项目的用户必须启用在与任何人共享项目时可用的&#x200B;[!UICONTROL **链接已激活**]&#x200B;选项&#x200B;**（[!UICONTROL 共享]** > **[!UICONTROL 与任何人共享]**），如[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)中所述。</li><li>**对于许可 Healthcare Shield 的客户：**&#x200B;该选项默认启用且无法禁用。 在禁用此选项以便用户可以使用[!UICONTROL 与任何人共享]的共享选项之前，您首先需要在 Adobe Admin Console 中添加[!UICONTROL 与任何人共享项目链接]权限（位于[!UICONTROL 报告工具]下）。 添加权限后，您可以禁用此选项，然后接受由此产生的法律声明。 有关如何在 Admin Console 中添加权限的信息，请参阅[在 Admin Console 中管理产品权限](https://helpx.adobe.com/cn/enterprise/using/manage-permissions-and-roles.html)。</li></ul> |
-| | 需要CX Enterprise身份验证 | 启用此选项后，在Analysis Workspace中通过&#x200B;**[!UICONTROL 与任何人共享]**&#x200B;选项授予项目访问权限的用户必须使用其CX Enterprise凭据进行身份验证。<p>启用此选项后，每当用户使用[!UICONTROL 与任何人共享]共享选项共享项目时，“共享”对话框中就会启用[!UICONTROL 需要CX企业身份验证]选项，并且共享项目的用户无法禁用该选项。 有关用户如何与任何人共享项目的信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)。 <p> <p>启用此选项时，请考虑以下事项： <ul><li>启用此选项后，之前与[!UICONTROL 与任何人共享]共享选项共享的所有项目，以及未启用[!UICONTROL 需要CX企业身份验证]选项的所有项目都将被停用。<p>如果启用此选项（需要CX企业身份验证），稍后又禁用此选项（允许具有链接的任何人访问该项目），则之前通过[!UICONTROL 与任何人共享]共享选项获得项目访问权限的用户不会自动重新获得对该项目的访问权限。 在这种情况下，已共享项目的用户必须启用在与任何人共享项目时可用的[!UICONTROL 链接已激活]选项&#x200B;**（[!UICONTROL 共享]** > **[!UICONTROL 与任何人共享]** > **[!UICONTROL 链接已激活]**），如[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)中所述。</li><li>仅在组织内实施 SSO 后，此选项才可用。 有关系统管理员如何为组织启用 SSO 的信息，请参阅[设置身份标识和单点登录](https://helpx.adobe.com/cn/enterprise/using/set-up-identity.html)。</p><p>如果已为组织配置 SSO，请检查控制台中是否实施了任何类型的自动帐户创建。 通常，系统管理员会进行此设置，如[启用自动帐户创建](https://helpx.adobe.com/cn/enterprise/using/automatic-account-creation.html)中所述。</li><li>如果您的组织许可 Healthcare Shield，则默认情况下会启用此选项且无法禁用。</li></ul> |
+| | 要求进行 CX Enterprise 身份验证 | 启用此选项后，在Analysis Workspace中通过&#x200B;**[!UICONTROL 与任何人共享]**&#x200B;选项授予项目访问权限的用户必须使用其CX Enterprise凭据进行身份验证。<p>启用此选项后，每当用户使用[!UICONTROL 与任何人共享]共享选项共享项目时，“共享”对话框中就会启用[!UICONTROL 需要CX企业身份验证]选项，并且共享项目的用户无法禁用该选项。 有关用户如何与任何人共享项目的信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)。 <p> <p>启用此选项时，请考虑以下事项： <ul><li>启用此选项后，之前与[!UICONTROL 与任何人共享]共享选项共享的所有项目，以及未启用[!UICONTROL 需要CX企业身份验证]选项的所有项目都将被停用。<p>如果启用此选项（需要CX企业身份验证），稍后又禁用此选项（允许具有链接的任何人访问该项目），则之前通过[!UICONTROL 与任何人共享]共享选项获得项目访问权限的用户不会自动重新获得对该项目的访问权限。 在这种情况下，已共享项目的用户必须启用在与任何人共享项目时可用的[!UICONTROL 链接已激活]选项&#x200B;**（[!UICONTROL 共享]** > **[!UICONTROL 与任何人共享]** > **[!UICONTROL 链接已激活]**），如[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)中所述。</li><li>仅在组织内实施 SSO 后，此选项才可用。 有关系统管理员如何为组织启用 SSO 的信息，请参阅[设置身份标识和单点登录](https://helpx.adobe.com/cn/enterprise/using/set-up-identity.html)。</p><p>如果已为组织配置 SSO，请检查控制台中是否实施了任何类型的自动帐户创建。 通常，系统管理员会进行此设置，如[启用自动帐户创建](https://helpx.adobe.com/cn/enterprise/using/automatic-account-creation.html)中所述。</li><li>如果您的组织许可 Healthcare Shield，则默认情况下会启用此选项且无法禁用。</li></ul> |
 | 项目评论 | 允许对项目进行评论 | 该选项启用后，Analysis Workspace 中每个项目的右侧边栏都会出现一个评论区域。 <p>项目所有者可以为某个给定项目禁用评论区域，如[创建项目](/help/analysis-workspace/build-workspace-project/create-projects.md)中所述。</p> <p>有关在 Analysis Workspace 项目中进行评论的更多信息，请参阅[在项目中添加和管理评论](/help/analysis-workspace/build-workspace-project/comment-projects.md)。</p> |
 
 {style="table-layout:auto"}
@@ -115,7 +99,7 @@ ht-degree: 92%
 <!--
 >[!IMPORTANT]
 >
->You can no longer define the number format in the **[!UICONTROL Project & Analyses]** > **[!UICONTROL Data]** section of **[!UICONTROL User preferences]**. The number format is automatically determined by the [default language that is configured](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/browser-language) for the logged in user.
+>You can no longer define the number format in the **[!UICONTROL Project & Analyses]** > **[!UICONTROL Data]** section of **[!UICONTROL User preferences]**. The number format is automatically determined by the [default language that is configured](https://experienceleague.adobe.com/en/docs/core-services/interface/features/browser-language) for the logged in user.
 >
 -->
 
