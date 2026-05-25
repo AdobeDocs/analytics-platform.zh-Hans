@@ -23,7 +23,7 @@ topic_v2:
 source-git-commit: 11156e1f2db094595cc3333ccb0b896037da4715
 workflow-type: tm+mt
 source-wordcount: 1178
-ht-degree: 2%
+ht-degree: 21%
 
 ---
 
@@ -58,37 +58,37 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
 
 您可以在连接级别启用和配置B2B帐户拼接，然后对该连接中的单个事件数据集激活帐户拼接。
 
-### 配置B2B拼接设置 {#configure-b2b-stitching-settings}
+### 配置 B2B 拼接设置 {#configure-b2b-stitching-settings}
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_open_configuration"
->title="配置B2B帐户拼接"
->abstract="选择&#x200B;**[!UICONTROL 打开B2B拼接配置]**&#x200B;以配置B2B帐户拼接。 如果尚未保存连接，则该配置将标记为&#x200B;**[!UICONTROL _未保存的更改_]**。"
+>title="配置 B2B 帐户拼接"
+>abstract="选择&#x200B;**[!UICONTROL 打开 B2B 拼接配置]**&#x200B;以配置 B2B 帐户拼接。 如果连接尚未保存，该配置会标记为&#x200B;**[!UICONTROL _未保存的更改_]**。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_identifier_namespace"
 >title="人员标识符命名空间"
->abstract="选择您希望将任何人员ID提升到的人员标识符命名空间，例如电子邮件。"
+>abstract="选择一个人员标识符命名空间（例如电子邮件），用于提升任何人员 ID。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_to_account_dataset"
 >title="人员到帐户数据集"
->abstract="选择将人员ID映射到帐户ID的查找数据集。"
+>abstract="选择用于将人员 ID 映射到帐户 ID 的查找数据集。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person"
 >title="人员"
->abstract="在数据集中选择包含人员ID的字段。 该字段必须标记为标识，并且不能与&#x200B;**[!UICONTROL 帐户]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。"
+>abstract="选择数据集中包含人员 ID 的字段。 该字段必须标记为身份标识字段，并且不能与&#x200B;**[!UICONTROL 帐户]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_account"
 >title="帐户"
->abstract="在数据集中选择包含帐户ID的字段。 该字段不能与&#x200B;**[!UICONTROL 人员]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。"
+>abstract="选择数据集中包含帐户 ID 的字段。 该字段不能与&#x200B;**[!UICONTROL 人员]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_start_time"
 >title="开始时间"
->abstract="选择指示人员与帐户关系何时生效的时间戳字段。"
+>abstract="选择一个时间戳字段，用于指示人员到帐户关系何时生效。"
 >additional-url=""
 >additional-url=""
 
@@ -118,9 +118,9 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
       | 字段 | 必需 | 描述 |
       |---|:---:|---|
       | **[!UICONTROL 个人到帐户数据集]** | ![必需](/help/assets/icons/Required.svg) | 选择将人员映射到帐户的查找（记录或非时间序列数据集）。 |
-      | **[!UICONTROL 人员]** | ![必需](/help/assets/icons/Required.svg) | 在数据集中选择包含人员ID的字段。 该字段必须标记为标识，并且不能与&#x200B;**[!UICONTROL 帐户]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。 |
-      | **[!UICONTROL 帐户]** | ![必需](/help/assets/icons/Required.svg) | 在数据集中选择包含帐户ID的字段。 该字段不能与&#x200B;**[!UICONTROL 人员]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。 |
-      | **开始时间** | | 选择指示人员与帐户关系何时生效的时间戳字段。 |
+      | **[!UICONTROL 人员]** | ![必需](/help/assets/icons/Required.svg) | 选择数据集中包含人员 ID 的字段。 该字段必须标记为身份标识字段，并且不能与&#x200B;**[!UICONTROL 帐户]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。 |
+      | **[!UICONTROL 帐户]** | ![必需](/help/assets/icons/Required.svg) | 选择数据集中包含帐户 ID 的字段。 该字段不能与&#x200B;**[!UICONTROL 人员]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。 |
+      | **开始时间** | | 选择一个时间戳字段，用于指示人员到帐户关系何时生效。 |
 
       >[!NOTE]
       >
@@ -131,13 +131,13 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
    1. **[!UICONTROL _未保存的更改_]**&#x200B;指示器显示在&#x200B;**打开B2B拼接配置**&#x200B;按钮旁边，直到您[保存](#save)连接。
 
 
-### 对事件数据集启用B2B拼合
+### 在事件数据集上启用 B2B 拼接
 
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_enable_person_to_account"
->title="启用人员帐户拼合"
->abstract="如果启用，此数据集将使用B2B帐户拼接。 选择所需的&#x200B;**[!UICONTROL 人员ID]**&#x200B;以根据人员到帐户数据集查找帐户ID。<br/>如果已禁用，此数据集&#x200B;*不会*&#x200B;使用B2B帐户拼接，您必须改为选择所需的&#x200B;**[!UICONTROL 帐户ID]**。"
+>title="启用人员到帐户拼接"
+>abstract="启用后，此数据集将使用 B2B 帐户拼接。 选择所需的&#x200B;**[!UICONTROL 人员ID]**&#x200B;以根据人员到帐户数据集查找帐户ID。<br/>如果已禁用，此数据集&#x200B;*不会*&#x200B;使用B2B帐户拼接，您必须改为选择所需的&#x200B;**[!UICONTROL 帐户ID]**。"
 >additional-url=""
 >additional-url=""
 

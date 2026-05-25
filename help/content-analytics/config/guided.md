@@ -28,7 +28,7 @@ topic_v2:
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 4111
-ht-degree: 63%
+ht-degree: 64%
 
 ---
 
@@ -376,8 +376,8 @@ ht-degree: 63%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_button"
 >title="数据收集"
->abstract="定义您想要使用的标记属性，或者创建一个新的标记属性。 并使用正则表达式定义那些您想要包含或排除的页面和资产。<br/>对于与标记无关的实现，请选择&#x200B;**[!UICONTROL 新建]**。  已创建Tags属性，但您无需使用它。"
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Content Analytics JavaScript库"
+>abstract="定义您想要使用的标记属性，或者创建一个新的标记属性。 并使用正则表达式定义那些您想要包含或排除的页面和资产。<br/>对于与标签无关的实施方式，请选择&#x200B;**[!UICONTROL 新建]**。  系统会创建一个“标记”属性，但您无需使用它。"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Content Analytics JavaScript 库"
 
 
 >[!CONTEXTUALHELP]

@@ -21,7 +21,7 @@ topic_v2:
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 2458
-ht-degree: 31%
+ht-degree: 32%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 31%
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_lookback_date_range"
 >title="回顾日期范围"
->abstract="控制在处理数据馈送传递时 Customer Journey Analytics 回顾的时间范围。<br/>此设置不会改变频率窗口（小时或天）。 但是，回顾日期范围可能会影响传递的数据。 区段鉴别、会话计算、某些派生字段转换和维度持久性都受回顾日期范围的影响。"
+>abstract="控制在处理数据馈送传递时 Customer Journey Analytics 回顾的时间范围。<br/>此设置不会改变频率窗口（小时或天）。 但是，回顾日期范围可能会影响传递的数据。 细分资格筛选、会话计算、某些派生字段转换以及维度持久性都会受到回溯日期范围的影响。"
 
 <!-- markdownlint-enable MD034 -->
 

@@ -29,7 +29,7 @@ topic_v2:
 source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
 workflow-type: tm+mt
 source-wordcount: 2181
-ht-degree: 89%
+ht-degree: 90%
 
 ---
 
@@ -152,8 +152,8 @@ ht-degree: 89%
 
 >[!CONTEXTUALHELP]
 >id="workspace_share_with_anyone_require_aec_authentication"
->title="需要CX Enterprise身份验证"
->abstract="您的组织要求用户登录CX Enterprise才能使用此链接。"
+>title="要求进行 CX Enterprise 身份验证"
+>abstract="您的组织要求用户登录 CX Enterprise 后才能使用此链接。"
 
 
 可为无权访问 Customer Journey Analytics 的人员授予对 Analysis Workspace 项目的[只读访问权限](/help/analysis-workspace/curate-share/view-only-projects.md)。 所授予的访问权限可能包括：
