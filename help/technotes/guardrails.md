@@ -26,7 +26,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: df1ab1af7757ef012b4c233e6206ee6c6cde6686
 workflow-type: tm+mt
 source-wordcount: 2441
 ht-degree: 9%
@@ -43,7 +43,7 @@ ht-degree: 9%
 
 | 护栏类型 | 描述 |
 |----------|---------|
-| **性能护栏（软限制）** | Performance Guardrails是与用例范围相关的使用限制。 当超出性能护栏时，您可能会遇到性能下降和延迟问题。 Adobe不对此类性能下降负责。 始终超过性能护栏的客户可以选择许可额外的容量，以避免性能下降。 |
+| **性能护栏（软限制）** | 性能护栏是与用例范围相关的使用限制。 当超出性能护栏时，您可能会遇到性能下降和延迟问题。 Adobe不对此类性能下降负责。 始终超过性能护栏的客户可以选择许可额外的容量，以避免性能下降。 |
 | **系统强制的护栏（硬限制）** | Customer Journey Analytics UI或API强制实施系统强制的护栏。 这些限制不得超过，因为UI和API会阻止您这样做或返回错误。 |
 
 {style="table-layout:auto"}
@@ -86,7 +86,7 @@ ht-degree: 9%
 {style="table-layout:auto"}
 
 
-<!-- at flatview GA, add: - Dimension columns per freeform table - 5 - System-enforced Guardrail - Maximum number of dimensions per freeform table. -->
+<!-- at flatview GA, add: - Dimension columns per freeform table - 5 - System-enforced guardrail - Maximum number of dimensions per freeform table. -->
 
 <!--
 

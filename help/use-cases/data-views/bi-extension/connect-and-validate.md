@@ -18,9 +18,9 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 65ddb8af8bf2fdb45eaaef0ad5d824314c35087e
 workflow-type: tm+mt
-source-wordcount: 2021
+source-wordcount: 1963
 ht-degree: 10%
 
 ---
@@ -77,15 +77,15 @@ ht-degree: 10%
       1. 使用![复制](/help/assets/icons/Copy.svg)从&#x200B;**[!UICONTROL 用户名]**&#x200B;和&#x200B;**[!UICONTROL 密码]**&#x200B;字段中的Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中复制&#x200B;**[!UICONTROL 用户名]**&#x200B;和&#x200B;**[!UICONTROL 密码]**&#x200B;值。 如果您使用的是[不会过期的凭据](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect)，请使用不会过期的凭据的密码。
       1. 确保&#x200B;**[!UICONTROL 选择要将这些设置应用到]**&#x200B;的级别的下拉菜单设置为您之前定义的&#x200B;**[!UICONTROL 服务器]**。
       1. 选择&#x200B;**[!UICONTROL 连接]**。
-   1. 在&#x200B;**[!UICONTROL 导航器]**&#x200B;对话框中，将检索数据视图。 此检索可能需要一些时间。 检索后，您将在Power BI Desktop中看到以下内容。
+   1. 在&#x200B;**[!UICONTROL 导航器]**&#x200B;对话框中，将检索数据视图。此检索可能需要一些时间。检索后，您将在Power BI Desktop中看到以下内容。
       ![Power BI桌面加载数据](../assets/powerbi-navigator-load.png)
       1. 从左侧面板的列表中选择&#x200B;**[!UICONTROL public.cc_data_view]**。
       1. 您有两个选项：
          1. 选择&#x200B;**[!UICONTROL 加载]**&#x200B;以继续并完成安装。
-         1. 选择&#x200B;**[!UICONTROL 转换数据]**。 您会看到一个对话框，可以在其中选择将转换作为配置的一部分应用。
+         1. 选择&#x200B;**[!UICONTROL 转换数据]**。您会看到一个对话框，可以在其中选择将转换作为配置的一部分应用。
             ![Power BI桌面转换数据](../assets/powerbi-transform-data.png)
             * 选择&#x200B;**[!UICONTROL 关闭并应用]**。
-   1. 一段时间后，**[!UICONTROL public.cc_data_view]**&#x200B;显示在&#x200B;**[!UICONTROL 数据]**&#x200B;窗格中。 选择![V形右侧](/help/assets/icons/ChevronRight.svg)以显示维度和量度。
+   1. 一段时间后，**[!UICONTROL public.cc_data_view]**&#x200B;显示在&#x200B;**[!UICONTROL 数据]**&#x200B;窗格中。选择![V形右侧](/help/assets/icons/ChevronRight.svg)以显示维度和量度。
       ![Power BI Destkop服务器数据已加载](../assets/powerbi-navigator-loaded.png)
 
 
@@ -120,7 +120,7 @@ Power BI Desktop支持`FLATTEN`参数的以下方案。 有关详细信息，请
       ![查询服务凭据](../assets/queryservice-credentials.png)
 
 1. 启动“表格”。
-   1. 从&#x200B;**[!UICONTROL To a Server]**&#x200B;下的左边栏中选择&#x200B;**[!UICONTROL PostgreSQL]**。 如果不可用，请选择&#x200B;**[!UICONTROL 更多……]**，然后从&#x200B;**[!UICONTROL 安装的连接器]**&#x200B;中选择&#x200B;**[!UICONTROL PostgreSQL]**。
+   1. 从&#x200B;**[!UICONTROL To a Server]**&#x200B;下的左边栏中选择&#x200B;**[!UICONTROL PostgreSQL]**。如果不可用，请选择&#x200B;**[!UICONTROL 更多……]**，然后从&#x200B;**[!UICONTROL 安装的连接器]**&#x200B;中选择&#x200B;**[!UICONTROL PostgreSQL]**。
       ![Tableau连接器](../assets/tableau-connectors.png)
    1. 在&#x200B;**[!UICONTROL PostgreSQL]**&#x200B;对话框的&#x200B;**[!UICONTROL 常规]**&#x200B;选项卡中：
       ![Tableau登录对话框](../assets/tableau-signin.png)
@@ -355,7 +355,7 @@ Jupyter Notebook支持`FLATTEN`参数的以下方案。 有关详细信息，请
 
 1. 启动RStudio。
 1. 创建新的R Markdown文件，或下载[此示例R Markdown文件](../assets/BI-Extension.Rmd.zip)。
-1. 在第一个块中，输入以下介于` ` ``{r} `和` `` ` `之间的语句。 使用![复制](/help/assets/icons/Copy.svg)将Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中的值复制并粘贴到各种参数（如`host`、`dbname`和`user`）所需的值。 例如：
+1. 在第一个块中，输入以下语句。 使用![复制](/help/assets/icons/Copy.svg)将Experience Platform **[!UICONTROL 查询]** **[!UICONTROL 过期凭据]**&#x200B;面板中的值复制并粘贴到各种参数（如`host`、`dbname`和`user`）所需的值。 例如：
 
    ```R
    library(rstudioapi)
@@ -376,7 +376,7 @@ Jupyter Notebook支持`FLATTEN`参数的以下方案。 有关详细信息，请
 
    ![RStudio配置步骤1](../assets/rstudio-config-step1.png)
 
-1. 创建一个新块并输入以下介于` ` `` {r} `和` `` ` `之间的语句。
+1. 创建新块并输入以下语句。
 
    ```R
    con <- dbConnect(
@@ -393,7 +393,7 @@ Jupyter Notebook支持`FLATTEN`参数的以下方案。 有关详细信息，请
 1. 运行块。 如果连接成功，您应该不会看到任何输出。
 
 
-1. 创建一个新块并输入以下介于` ` `` {r} `和` `` ` `之间的语句。
+1. 创建新块并输入以下语句。
 
    ```R
    views <- dbListTables(con)
@@ -403,7 +403,7 @@ Jupyter Notebook支持`FLATTEN`参数的以下方案。 有关详细信息，请
 1. 运行块。 您应该看到`character(0)`作为唯一输出。
 
 
-1. 创建一个新块并输入以下介于` ` `` {r} `和` `` ` `之间的语句。
+1. 创建新块并输入以下语句。
 
    ```R
    glimpse(dv)

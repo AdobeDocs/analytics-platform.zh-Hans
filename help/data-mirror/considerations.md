@@ -20,9 +20,9 @@ topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: df1ab1af7757ef012b4c233e6206ee6c6cde6686
 workflow-type: tm+mt
-source-wordcount: 832
+source-wordcount: 889
 ht-degree: 1%
 
 ---
@@ -112,3 +112,7 @@ ht-degree: 1%
 
 * 主键、版本描述符和时间戳描述符必须是关系XDM架构中的根级别字段。 在引入期间使用[字段映射](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)来支持此要求。
 * 您可以在[映射阶段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)中忽略相应的源字段。
+
+## 镜像数据的批次大小
+
+对于配置为连接一部分的任何镜像数据集，必须确保每个为镜像数据集摄取数据的批次不超过100 GB。 有关更多详细信息，请参阅批次摄取的[护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ingestion/guardrails#guardrails-for-batch-ingestion){target="_blank"}。
