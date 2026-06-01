@@ -8,28 +8,15 @@ badgePremium: label="Beta 版"
 exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
 autotag-review: '2026-05-19T08:55:53.979Z'
 TQID: 'https://experienceleague.adobe.com/10YCh2cnMTVriKKVOyYfzFfngvGQ2VVHOxzedE5NpWA'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2:
-  - id: bfef374d-acfd-4c57-bf74-a2b36053c545
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: e1471301-a189-438e-8d48-264a8db508a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2: id: bfef374d-acfd-4c57-bf74-a2b36053c545id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: b4547b6c48adb97f6749ef54147f369632c44fa9
 workflow-type: tm+mt
-source-wordcount: 447
-ht-degree: 4%
+source-wordcount: 496
+ht-degree: 3%
 
 ---
 
@@ -53,7 +40,7 @@ Data Mirror提供了以下基本数据库同步功能：
 
 使用Data Mirror直接从源系统中摄取更改，强制实施架构完整性，并将数据用于Analytics、Journey Orchestration和合规性工作流。 Data Mirror通过启用现有数据库模型的直接镜像，消除了复杂的上游ETL流程并加快了实施。 这种消除可以通过精确控制删除和数据卫生操作来加强数据治理。
 
-另请参阅有关Data Mirror[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}的Experience Platform文档。
+另请参阅有关Data Mirror](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}的[Experience Platform文档。
 
 ## 适用于Customer Journey Analytics的Data Mirror
 
@@ -61,6 +48,13 @@ Data Mirror提供了以下基本数据库同步功能：
 >
 >Data Mirror目前是测试版中的一项功能，它支持使用更改数据捕获(CDC)同步选定数据仓库中的数据，以便在Customer Journey Analytics中进行分析。<br/>此功能将于2026年6月18日正式在Customer Journey Analytics中提供。 请参阅适用的产品描述，以了解它如何影响未来的年度摄取限制消费。 请注意，当Data Mirror从Beta版过渡到正式发布时，贵组织将继续有权访问该功能。
 >
+
+>[!IMPORTANT]
+>
+>您在Experience Platform中为Data Mirror for Customer Journey Analytics而创建的更改数据捕获数据集不应在其他Experience Platform解决方案（如Real-Time Customer Data Platform或Journey Optimizer）中重复使用。 如果要对这些解决方案使用相同的数据，请考虑使用相同数据创建替代数据集。
+>
+
+
 
 适用于Customer Journey Analytics的Experience Platform Data Mirror适用于选定的Data Warehouse本机解决方案（[!DNL Azure Databricks]、[!DNL Google BigQuery]和[!DNL Snowflake]）。 Customer Journey Analytics版本的Experience Platform Data Mirror需要正确配置以下应用程序或组件：
 
@@ -71,5 +65,5 @@ Data Mirror提供了以下基本数据库同步功能：
 >[!MORELIKETHIS]
 >
 >[Data Mirror快速入门指南：镜像并使用关系数据](relational.md)
->[Data Mirror（Experience Platform文档）](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-mirror/overview)
+>[Data Mirror （Experience Platform文档）](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
 >[关系架构（Experience Platform文档）](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/relational)
