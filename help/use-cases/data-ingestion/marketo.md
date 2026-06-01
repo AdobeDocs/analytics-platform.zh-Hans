@@ -6,31 +6,15 @@ feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 role: Admin
 TQID: https://experienceleague.adobe.com/UXeVx5LF0ww0guz-62swqmGapSfjiTduYjojcZqqIYQ
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: f2ef16dc-055a-4bb7-baa5-7039653f3966
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: f2ef16dc-055a-4bb7-baa5-7039653f3966
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d00e9f03-e50b-4162-b143-0c0817c937c2id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: e430f26e2b6357a288adb4389a266f26acab68c4
 workflow-type: tm+mt
-source-wordcount: 1129
-ht-degree: 14%
+source-wordcount: 1448
+ht-degree: 8%
 
 ---
 
@@ -51,39 +35,77 @@ ht-degree: 14%
 >
 
 
-要在Customer Journey Analytics中报告Marketo Engage数据，请执行以下操作：
+要在Customer Journey Analytics中报告Marketo Engage数据，请执行以下步骤：
 
-+++ &#x200B;1. 将Marketo源数据字段映射到其XDM目标
++++选择ID策略
 
-将 [人员](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 和 [活动](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 对象映射到各自的 XDM 架构目标字段。
+如果要将Marketo活动数据摄取到Customer Journey Analytics，您需要选择适当的ID策略，以确保Marketo数据可以链接到Customer Journey Analytics数据。
+
+Marketo数据本身不包含ECID，但ECID字段可以添加为随`munchkin.js`库收集的自定义字段。 此添加内容确实会在Marketo和现有的客户历程Analytics Web数据之间创建一个共享标识符。
+
+要链接Marketo和Customer Journey Analytics数据，请在相关数据集中使用[基于图形的拼合](/help/stitching/gbs.md)。 您可以根据实施情况使用多个可用的ID：
+
+* ECID，由Experience Platform Identity Service提供
+* 电子邮件
+* Munchkin ID，由Marketo Engage提供
+* 经销商ID
+* 邓恩和布拉德斯特里特Duns\#
+* Demandbase ID
+* （可能其他）
+
+基于图形的拼合在以下方面很有用：
+
+* 在Web事件中保留永久ID。
+* 尽可能使用身份图解析已知身份（如电子邮件）。
+* 如果不存在确定性匹配，则基于图形的拼接会回退到持久ID，而不是删除事件。
+
+基于图形的拼合是链接Marketo和Customer Journey Analytics数据的可行解决方案，原因如下：
+
+* Web事件数据的每行都有一个永久性ID（例如，ECID）。
+* Marketo数据通过Munckin ID、ECID和电子邮件在数据中包含可靠的ID。
+* 基于图形的拼接可决定性地将ECID与Munchkin ID、电子邮件或Marketo数据中任何其他可用的ID连接起来。
+* 基于图形的拼接使用明确配置的身份图形链接规则和命名空间。
+
+要验证此ID策略，您应该运行基于受控图形的拼合试点。
+
+1. 将ECID添加为Marketo中的自定义字段，并将该自定义字段添加到munckin.js客户端JavaScript代码中，以进行Marketo Engage数据收集。
+1. 设置一个临时客户历程连接，该连接至少包含一个Marketo数据集和一个Web事件数据集。
+1. 定义一个狭窄的数据范围，以引入有限但可表示的数据量。
+1. 在Workspace中设置数据视图和报表来验证拼合。 有关更多信息，请参阅下面的步骤。
 
 +++
 
-+++ &#x200B;2. 将Marketo数据摄取到Adobe Experience Platform
++++将Marketo源数据字段映射到其XDM目标
 
-使用 [Marketo Engage 连接器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)将 Marketo 的数据传送到 Experience Platform，并使用与平台连接的应用程序使这些数据保持最新。
+将 [人员](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 和 [活动](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 对象映射到各自的 XDM 架构目标字段。
 
 +++
 
-+++ &#x200B;3. 在Customer Journey Analytics中设置与此数据集的连接
++++将Marketo数据摄取到Adobe Experience Platform
+
+使用[Marketo Engage连接器](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)将数据从Marketo引入Experience Platform，并使用Experience Platform应用程序使这些数据保持最新。
+
++++
+
++++ 在Customer Journey Analytics中设置与此数据集的连接
 
 要报告Experience Platform数据集，您必须首先在Experience Platform和Customer Journey Analytics中的数据集之间建立连接。 请参阅[创建或编辑连接](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/create-connection)。
 
 +++
 
 
-+++ &#x200B;4. 创建一个或多个数据视图
++++创建一个或多个数据视图
 
 [数据视图](/help/data-views/data-views.md) 是 Customer Journey Analytics 专属的容器，通过它，可决定如何解释来自连接的数据。 它指定所有可在 Analysis Workspace 中找到的维度和量度，在本例中，特指 Marketo 的量度和维度。 它还指定这些维度和量度从哪些列获取数据。 为准备 Analysis Workspace 中的报表而定义数据视图。
 
 +++ 
 
-+++ &#x200B;5. Analysis Workspace中的报表
++++Analysis Workspace中的报表
 
 您可以探索的一个用例是：2020年4月至6月，潜在客户访问了多少网页？
 
-1. 打开 [Analytics Workspace](/help/analysis-workspace/home.md) 并创建新项目。
-拥有B2B/B2P CDP的客户可以在Customer Journey Analytics中进行B2C风格分析。 B2B 对象尚不可用。
+1. 打开[Analytics Workspace](/help/analysis-workspace/home.md)并创建新项目。
+拥有B2B/B2P CDP的客户可以在Customer Journey Analytics中进行B2C风格分析。B2B对象尚不可用。
 
 1. 为网页视图创建一个[区段](/help/components/segments/seg-create.md)，如下所示：事件类型= web.webpagedetails.pageViews ：
 
