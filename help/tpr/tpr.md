@@ -4,13 +4,13 @@ description: 使用Customer Journey Analytics中的总人口报表分析数据�
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 774ac76b0a49d8172b31dc97563c13debb0858a7
+hide: true
+source-git-commit: f7bbbaf0b737ab33088c7c585d6415f93deff4c8
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 4%
 
 ---
-
 
 # 总人口报表
 
