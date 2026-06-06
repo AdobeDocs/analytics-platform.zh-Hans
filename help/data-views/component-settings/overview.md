@@ -23,10 +23,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: dcc1be6e0c0e0dab19b4067232e48dc175011ed1
 workflow-type: tm+mt
-source-wordcount: 3784
-ht-degree: 53%
+source-wordcount: 4127
+ht-degree: 48%
 
 ---
 
@@ -173,19 +173,19 @@ ht-degree: 53%
 
 | 名称 | 描述 |
 |------|-------------|
-| 内容 ID | 内容ID。 |
-| 内容逗留时间 | 内容逗留时间。 |
-| 剧集 | 剧集。 |
-| 事件类型 | 事件类型。 |
-| 平均逗留时间 | 媒体逗留时间。 |
-| 季 | 季节。 |
-| 自上次调用以后经过的秒数 | 自上次调用以来的秒数。 |
-| 节目 | 显示。 |
-| 开始时间 | 开始时间。 |
-| 缓冲总持续时间 | 缓冲总持续时间。 |
-| 暂停总持续时间 | 暂停总持续时间。 |
-| 视频长度 | 视频长度。 |
-| 视频名称 | 视频名称。 |
+| [内容ID](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/reporting/dimensions/content) | 所播放内容的唯一标识符。 在[媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)面板中启用&#x200B;**[!UICONTROL 内容ID]**&#x200B;单选按钮。 |
+| [内容逗留时间](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/reporting/metrics/content-time-spent) | 查看内容（不包括广告）所花费的时间。 支持[媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)面板中的&#x200B;**[!UICONTROL 内容逗留时间]**&#x200B;高级设置。 |
+| [集](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/reporting/dimensions/episode) | 系列中的剧集编号。 在[媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)面板中启用按集筛选。 |
+| 事件类型 | 媒体事件类型，如`media.play`或`media.ping`。 Customer Journey Analytics计算[媒体并行查看者](/help/analysis-workspace/c-panels/media-concurrent-viewers.md)派生的量度时需要此项。 |
+| [媒体逗留时间](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/reporting/metrics/media-time-spent) | 总时间，包括内容、广告、缓冲和暂停。 支持[媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)面板中的[媒体播放耗时](/help/analysis-workspace/c-panels/media-playback-time-spent.md)面板和&#x200B;**[!UICONTROL 媒体耗时]**&#x200B;高级设置。 |
+| [季](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/reporting/dimensions/season) | 系列中的季编号。 在[媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)面板中启用按季筛选。 |
+| 自上次调用以后经过的秒数 | 自上次心率Ping以来的时间（以秒为单位）。 需要Customer Journey Analytics才能计算[媒体并行查看者](/help/analysis-workspace/c-panels/media-concurrent-viewers.md)派生量度，该量度用于标识会话何时仍处于活动状态。 |
+| [节目](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/reporting/dimensions/show) | 节目或系列节目的名称。 在[媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)面板中启用按显示筛选。 |
+| [开始时间](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/reporting/metrics/time-to-start) | 从内容选择到播放开始的时间。 已包含在[媒体播放耗时](/help/analysis-workspace/c-panels/media-playback-time-spent.md)的计算中。 |
+| [缓冲总持续时间](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/reporting/metrics/total-buffer-duration) | 会话期间缓冲所花费的总时间。 已包含在[媒体播放耗时](/help/analysis-workspace/c-panels/media-playback-time-spent.md)的计算中。 |
+| [总暂停持续时间](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/reporting/metrics/total-pause-duration) | 会话期间暂停的总时间。 已包含在[媒体播放耗时](/help/analysis-workspace/c-panels/media-playback-time-spent.md)的计算中。 |
+| [视频长度](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/reporting/dimensions/content-length) | 内容的持续时间（秒）。 在[媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)面板中的&#x200B;**[!UICONTROL 特定内容]**&#x200B;模式需要。 |
+| [视频名称](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/reporting/dimensions/content-name) | 内容的显示名称。 在[媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)面板中启用&#x200B;**[!UICONTROL 视频名称]**&#x200B;单选按钮。 |
 
 +++
 
