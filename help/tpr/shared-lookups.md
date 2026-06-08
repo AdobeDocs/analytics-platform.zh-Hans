@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 hide: true
-source-git-commit: f7bbbaf0b737ab33088c7c585d6415f93deff4c8
+source-git-commit: e1c7ffa9a2ac58717ee0050d4e7019b6f3f94518
 workflow-type: tm+mt
 source-wordcount: '2431'
 ht-degree: 13%
@@ -333,7 +333,7 @@ ht-degree: 13%
 | O-987 | BigCo DX | **A-456** | A-789 | 打开 | **$16M** |
 | O-888 | 巨型DX | **A-789** | A-789 | 打开 | **$13M** |
 
-* 帐户A-123 (Acme)的3个机会，总计&#x200B;**$13M**。
+* 帐户A-123 (Acme)的3个机会，总计&#x200B;**$11M**。
 * A-456 (BigCo)有2个销售机会，总金额为&#x200B;**2300万美元**。
 * 帐户A-789 (Giant)的1个机会，总计&#x200B;**1300万美元**。
 
