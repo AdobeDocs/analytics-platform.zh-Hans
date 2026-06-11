@@ -8,26 +8,15 @@ feature: Connections
 role: Admin
 autotag-review: '2026-05-19T08:50:02.853Z'
 TQID: 'https://experienceleague.adobe.com/iJ5jp3wtWSrJzCnJqIceIHwwLideF-U2puXvit5GFac'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2:
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4882eaa340d1139b8f93affb645219c999d293f0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 3b6264a1e159632e5a3246554c055488cfc6b39b
 workflow-type: tm+mt
-source-wordcount: 5865
-ht-degree: 94%
+source-wordcount: 5863
+ht-degree: 93%
 
 ---
 
@@ -62,8 +51,8 @@ ht-degree: 94%
 
 **[!UICONTROL 列表]**&#x200B;界面是“连接”的默认界面。 如果未选择，请选择&#x200B;**[!UICONTROL 列表]**&#x200B;选项卡以访问该界面。
 
-**[!UICONTROL 列表]**&#x200B;界面会显示所有可用连接的表格。
-
+**[!UICONTROL List]**接口显示所有可用连接的表。
+△
 ![列表视图](assets/list-view.png)
 
 该表格中提供了以下列或图标。
@@ -337,8 +326,8 @@ ht-degree: 94%
 
 | 详细信息 | 描述 |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全球帐户 ID &#x200B;]** | 您为连接指定作为全球帐户 ID 的身份标识。 仅适用于配置了全球帐户容器的基于帐户的连接。 |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户 ID &#x200B;]** | 您为连接指定作为帐户 ID 的身份标识。 仅适用于未配置全球帐户容器的基于帐户的连接。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全球帐户 ID ]** | 您为连接指定作为全球帐户 ID 的身份标识。 仅适用于配置了全球帐户容器的基于帐户的连接。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户 ID ]** | 您为连接指定作为帐户 ID 的身份标识。 仅适用于未配置全球帐户容器的基于帐户的连接。 |
 | **[!UICONTROL 人员 ID]** | 您为连接指定作为人员 ID 的身份标识。 |
 | **[!UICONTROL 键]** | 您为查找数据集指定的键。 |
 | **[!UICONTROL 匹配键]** | 您为查找数据集指定的匹配键。 |
@@ -434,7 +423,7 @@ ht-degree: 94%
 
 
 >[!CONTEXTUALHELP]
->id="connections_extendeddatacapacitiyrows"
+>id="connections_extendeddatacapacityrows"
 >title="扩展数据容量行"
 >abstract="从本月起 13 个月之前可用的总行数，以及与上个月相比的百分比变化。 例如，2024 年 2 月 1 日，该数字显示事件时间戳早于 2023 年 1 月的可用行数总数。"
 
@@ -460,7 +449,7 @@ ht-degree: 94%
 
 
 >[!CONTEXTUALHELP]
->id="connections_b2b_correportablebpp"
+>id="connections_b2b_coreportablebpp"
 >title="核心业务人员配置文件可报告行"
 >abstract="当月过去13个月内可用的企业配置文件可报告行总数，与上月相比具有百分比变化。  例如，2024 年 2 月 1 日，该数字显示事件时间戳从 2023 年 1 月到 2024 年 1 月的可用行数总数。"
 
