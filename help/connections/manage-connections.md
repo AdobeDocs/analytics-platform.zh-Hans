@@ -24,7 +24,7 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 3b6264a1e159632e5a3246554c055488cfc6b39b
+source-git-commit: 632179a04d3fa05943ff1cc15c3670e7a81b3ea2
 workflow-type: tm+mt
 source-wordcount: 5863
 ht-degree: 93%
@@ -485,7 +485,7 @@ ht-degree: 93%
 >abstract="当月过去13个月中每月可用的媒体开始总数，与上月相比有百分比变化。  例如，在2024年2月1日，该数字显示事件时间戳为2023年1月至2024年1月的可用总媒体开始次数。"
 
 >[!CONTEXTUALHELP]
->id="△△ "
+>id="connections_breakdown_monthlymediastarts"
 >title="每月媒体开始次数"
 >abstract="每月的介质开始次数是快照值，而不是聚合总数。 这些值根据所选日期范围内的最后一个月动态更新。 如果客户选择一月至三月，则值会反映三月的快照。"
 
