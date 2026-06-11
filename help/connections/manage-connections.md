@@ -8,26 +8,15 @@ feature: Connections
 role: Admin
 autotag-review: '2026-05-19T08:50:02.853Z'
 TQID: 'https://experienceleague.adobe.com/iJ5jp3wtWSrJzCnJqIceIHwwLideF-U2puXvit5GFac'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2:
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 4882eaa340d1139b8f93affb645219c999d293f0
 workflow-type: tm+mt
-source-wordcount: 5351
-ht-degree: 98%
+source-wordcount: 5865
+ht-degree: 94%
 
 ---
 
@@ -337,8 +326,8 @@ ht-degree: 98%
 
 | 详细信息 | 描述 |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全球帐户 ID &#x200B;]** | 您为连接指定作为全球帐户 ID 的身份标识。 仅适用于配置了全球帐户容器的基于帐户的连接。 |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户 ID &#x200B;]** | 您为连接指定作为帐户 ID 的身份标识。 仅适用于未配置全球帐户容器的基于帐户的连接。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全球帐户 ID ]** | 您为连接指定作为全球帐户 ID 的身份标识。 仅适用于配置了全球帐户容器的基于帐户的连接。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户 ID ]** | 您为连接指定作为帐户 ID 的身份标识。 仅适用于未配置全球帐户容器的基于帐户的连接。 |
 | **[!UICONTROL 人员 ID]** | 您为连接指定作为人员 ID 的身份标识。 |
 | **[!UICONTROL 键]** | 您为查找数据集指定的键。 |
 | **[!UICONTROL 匹配键]** | 您为查找数据集指定的匹配键。 |
@@ -433,6 +422,63 @@ ht-degree: 98%
 >abstract="累计可报告行是快照值，而不是汇总总数。 这些值根据所选日期范围内的最后一个月动态更新。 如果客户选择一月至三月，则值会反映三月的快照。"
 
 
+>[!CONTEXTUALHELP]
+>id="connections_extendeddatacapacitiyrows"
+>title="扩展数据容量行"
+>abstract="从本月起 13 个月之前可用的总行数，以及与上个月相比的百分比变化。 例如，2024 年 2 月 1 日，该数字显示事件时间戳早于 2023 年 1 月的可用行数总数。"
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_extendeddatacapacityrows"
+>title="扩展数据容量行"
+>abstract="扩展数据容量行是快照值，而不是聚合总数。 这些值根据所选日期范围内的最后一个月动态更新。 如果客户选择一月至三月，则值会反映三月的快照。"
+
+>[!CONTEXTUALHELP]
+>id="connections_aca_corereportablerows"
+>title="Content Analytics核心可报告行"
+>abstract="当月过去13个月内可用的Content Analytics特定行总数，与上月相比存在百分比变化。  例如，2024 年 2 月 1 日，该数字显示事件时间戳从 2023 年 1 月到 2024 年 1 月的可用行数总数。"
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_aca_monthlyreportablerows"
+>title="每月Content Analytics行"
+>abstract="跟踪可用于报表的Content Analytics行数。 可报告行数是被摄取的行数减去摄取过程中被跳过和删除的行数。 可报告行数是计费和数据使用情况的关键量度。"
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_aca_corereportablerows"
+>title="Content Analytics核心可报告行"
+>abstract="Content Analytics核心可报告行是快照值，而不是聚合总计。 这些值根据所选日期范围内的最后一个月动态更新。 如果客户选择一月至三月，则值会反映三月的快照。"
+
+
+>[!CONTEXTUALHELP]
+>id="connections_b2b_correportablebpp"
+>title="核心业务人员配置文件可报告行"
+>abstract="当月过去13个月内可用的企业配置文件可报告行总数，与上月相比具有百分比变化。  例如，2024 年 2 月 1 日，该数字显示事件时间戳从 2023 年 1 月到 2024 年 1 月的可用行数总数。"
+
+>[!CONTEXTUALHELP]
+>id="connections_b2b_historicalreportablebpp"
+>title="历史业务配置文件可报告行"
+>abstract="当月超过13个月期间可用的企业配置文件可报告行总数，与上月相比具有百分比变化。 例如，2024 年 2 月 1 日，该数字显示事件时间戳早于 2023 年 1 月的可用行数总数。"
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_b2b_corereportablebpp"
+>title="核心业务配置文件可报告行"
+>abstract="核心业务配置文件可报告行是快照值，而不是聚合总计。 这些值根据所选日期范围内的最后一个月动态更新。 如果客户选择一月至三月，则值会反映三月的快照。"
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_b2b_historicalreportablebpp"
+>title="历史业务配置文件可报告行"
+>abstract="历史业务配置文件可报告行是快照值，而不是聚合总计。 这些值根据所选日期范围内的最后一个月动态更新。 如果客户选择一月至三月，则值会反映三月的快照。"
+
+>[!CONTEXTUALHELP]
+>id="connections_monthlymediastarts"
+>title="每月媒体开始次数"
+>abstract="当月过去13个月中每月可用的媒体开始总数，与上月相比有百分比变化。  例如，在2024年2月1日，该数字显示事件时间戳为2023年1月至2024年1月的可用总媒体开始次数。"
+
+>[!CONTEXTUALHELP]
+>id="△△ "
+>title="每月媒体开始次数"
+>abstract="每月的介质开始次数是快照值，而不是聚合总数。 这些值根据所选日期范围内的最后一个月动态更新。 如果客户选择一月至三月，则值会反映三月的快照。"
+
+
 [!UICONTROL 使用情况]界面显示所有连接中摄取的可报告的行的使用情况。 如果未选择，请选择&#x200B;**[!UICONTROL 使用情况]**&#x200B;选项卡以访问该界面。
 
 在此界面中，您可以确定您的 Customer Journey Analytics 使用情况是否遵守合同条款。 除了监测目的之外，您还可以使用“使用情况”界面来规划 Customer Journey Analytics 许可证的续订。
@@ -520,6 +566,6 @@ ht-degree: 98%
 
 >[!MORELIKETHIS]
 >
->[查看、排查和修改连接设置](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja)教程
->[管理您的 Customer Journey Analytics 使用情况](/help/technotes/estimate-usage.md)
+>[查看、排除和修改连接设置](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja)教程。
+>[管理您的Customer Journey Analytics使用情况](/help/technotes/estimate-usage.md)
 >
