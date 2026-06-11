@@ -24,10 +24,10 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4882eaa340d1139b8f93affb645219c999d293f0
+source-git-commit: 3b6264a1e159632e5a3246554c055488cfc6b39b
 workflow-type: tm+mt
-source-wordcount: 5865
-ht-degree: 94%
+source-wordcount: 5863
+ht-degree: 93%
 
 ---
 
@@ -62,8 +62,8 @@ ht-degree: 94%
 
 **[!UICONTROL 列表]**&#x200B;界面是“连接”的默认界面。 如果未选择，请选择&#x200B;**[!UICONTROL 列表]**&#x200B;选项卡以访问该界面。
 
-**[!UICONTROL 列表]**&#x200B;界面会显示所有可用连接的表格。
-
+**[!UICONTROL List]**&#x200B;接口显示所有可用连接的表。
+△
 ![列表视图](assets/list-view.png)
 
 该表格中提供了以下列或图标。
@@ -434,7 +434,7 @@ ht-degree: 94%
 
 
 >[!CONTEXTUALHELP]
->id="connections_extendeddatacapacitiyrows"
+>id="connections_extendeddatacapacityrows"
 >title="扩展数据容量行"
 >abstract="从本月起 13 个月之前可用的总行数，以及与上个月相比的百分比变化。 例如，2024 年 2 月 1 日，该数字显示事件时间戳早于 2023 年 1 月的可用行数总数。"
 
@@ -460,7 +460,7 @@ ht-degree: 94%
 
 
 >[!CONTEXTUALHELP]
->id="connections_b2b_correportablebpp"
+>id="connections_b2b_coreportablebpp"
 >title="核心业务人员配置文件可报告行"
 >abstract="当月过去13个月内可用的企业配置文件可报告行总数，与上月相比具有百分比变化。  例如，2024 年 2 月 1 日，该数字显示事件时间戳从 2023 年 1 月到 2024 年 1 月的可用行数总数。"
 
