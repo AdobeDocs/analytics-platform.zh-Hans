@@ -21,16 +21,16 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e9001ce2-5245-4a8e-8601-dd958009072f
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 046df00868ca4a5b3bab3eb36cca7d91b141333a
 workflow-type: tm+mt
-source-wordcount: 685
-ht-degree: 85%
+source-wordcount: 704
+ht-degree: 83%
 
 ---
 
 # 报告 Google Analytics 数据
 
-在 Customer Journey Analytics 中获得可用数据后，以下示例提供了用于报告该数据的有用方案。
+在 Customer Journey Analytics 中获得可用数据后，以下示例提供了用于报告该数据的有用方案。 有关Customer Journey Analytics中GA4报表等效项的全面查找，请参阅Customer Journey Analytics中的[GA4报表](/help/getting-started/ga-to-cja/reports.md)。
 
 ## 将 Web 数据和应用程序数据可视化为组合数据集
 
