@@ -5,26 +5,25 @@ exl-id: 10c485c9-66ab-4925-a357-a66a374d4c6f
 feature: Use Cases
 role: Admin
 TQID: https://experienceleague.adobe.com/C9rt1pyuM6ykLUlXCHc0ITwGeGcuLw6qisXnJxwX4uU
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 046df00868ca4a5b3bab3eb36cca7d91b141333a
 workflow-type: tm+mt
-source-wordcount: 303
-ht-degree: 79%
+source-wordcount: 342
+ht-degree: 70%
 
 ---
 
 # 从 Google Analytics 迁移数据
+
+>[!BEGINSHADEBOX]
+
+本指南介绍面向管理员的数据迁移。 如果您是希望在Customer Journey Analytics中查找GA4报表的分析师，请参阅[从Google Analytics 4过渡到Customer Journey Analytics](/help/getting-started/ga-to-cja/home.md)和[Customer Journey Analytics中的GA4报表](/help/getting-started/ga-to-cja/reports.md)。
+
+>[!ENDSHADEBOX]
 
 如果您是 Customer Journey Analytics 的新手，您的组织可能在另一个分析平台（例如 Google Analytics）上拥有现有数据。 您可以按照这些总体步骤将该数据移动到 Adobe Experience Platform，从而允许您在 Customer Journey Analytics 中查看报告。
 
