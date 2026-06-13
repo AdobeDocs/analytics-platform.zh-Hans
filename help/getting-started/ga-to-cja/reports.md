@@ -234,7 +234,7 @@ GA4的技术报告显示了浏览器、操作系统、屏幕分辨率和设备�
 
 >[!NOTE]
 >
->由于现代浏览器减少了用户代理字符串中的详细信息，因此完整而准确的值取决于在Web SDK配置中收集[用户代理客户端提示](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints)。
+>由于现代浏览器减少了用户代理字符串中的详细信息，因此完整而准确的值取决于在Web SDK配置中收集[用户代理客户端提示](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/use-cases/client-hints)。
 
 +++
 

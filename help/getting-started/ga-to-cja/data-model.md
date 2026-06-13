@@ -79,7 +79,7 @@ GA4通过其SDK自动收集一组事件。 下表将这些事件映射到其XDM�
 
 在GA4中，自定义事件具有名称和最多25个参数。 在Customer Journey Analytics中，自定义事件映射到实施期间定义的自定义XDM架构字段：
 
-* **事件名称**&#x200B;成为XDM字段中的字段值（通常为[`xdm.eventType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/experienceevent)）。
+* **事件名称**&#x200B;成为XDM字段中的字段值（通常为[`xdm.eventType`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/classes/experienceevent)）。
 * 每个&#x200B;**参数**&#x200B;都成为单独的XDM架构字段。 在[配置数据视图](/help/data-views/component-settings/overview.md)时，任何XDM字段都可以公开为维度或量度。
 
 >[!NOTE]
