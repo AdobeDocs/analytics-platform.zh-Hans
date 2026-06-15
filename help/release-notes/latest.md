@@ -27,10 +27,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 373deaea2b7d73484a3983bde490a86e950c2c0e
+source-git-commit: c818dd36bc900b3945b87503afad8e944a3716a7
 workflow-type: tm+mt
-source-wordcount: 818
-ht-degree: 45%
+source-wordcount: 721
+ht-degree: 38%
 
 ---
 
@@ -48,7 +48,6 @@ ht-degree: 45%
 | **用于Customer Journey Analytics的MCP服务器** <br/>Analytics MCP（模型上下文协议）服务器允许您将受支持的MCP客户端连接到Adobe Customer Journey Analytics。 连接后，MCP客户端可以调用特定于产品的工具来检索数据、运行查询或执行作为LLM或代理工作流一部分的受支持操作。 有关详细信息，请参阅[Analytics MCP服务器](https://developer.adobe.com/analytics-mcp/docs/)。<p>如果您在Beta测试期间使用这些MCP服务器，请注意，Beta测试版和生产版端点之间有不同的URL。 请确保在5月31日之前将测试期间创建的任何代理工作流更新为使用生产端点。</p> | | 2026年5月5日 |
 | **Content Analytics支持本机移动应用程序体验**<br/>&#x200B;组织可以将其内容性能分析扩展到iOS和Android应用程序，捕获图像资源和精细的体验元素，以了解哪些应用程序内内容可促进用户参与和业务成果。<p> [文档](/help/content-analytics/content-analytics.md)已更新，以描述移动渠道功能和配置。 有关[Content Analytics Mobile SDK扩展](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)的信息可在[Adobe Developer](https://developer.adobe.com/)上获取。</p><p>分析适用于所有Adobe Content Analytics客户。</p> | | 2026年5月6日 |
 | **历程画布增强功能** <br/>历程画布可视化中提供了以下增强功能： <ul><li>从历程中[排除节点](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#exclude-nodes)。</li><li>使用节点的流失数据[创建区段](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#create-a-segment-based-on-a-node-or-arrow)、[趋势](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#view-trend-data)、[受众](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#create-an-audience)和[划分](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#apply-a-breakdown)。</li></ul> | | 2026年5月18日 |
-| **Adobe Engineering 代理中的数据验证** <br/>Data Engineering 代理中提供新的数据验证技能。 这些技能可以在 Customer Journey Analytics 分析数据之前，帮助团队直接在 Adobe Experience Platform 中快速评估数据质量。 <p>数据验证技能可以进行按需验证、字段级验证和数据集级验证，将统计摘要与对无效值或异常值的智能检测结合起来。 </p><p>使用数据验证技能可减少手动 QA 工作量，加快各种数据工程工作流中可信数据的加入和转换。</p><p>（文档链接见下文。）<!--For more information, see [Data Engineering Agent]() (will be in this repo: https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-ai/experience-cloud-ai/agents/cja-data-insights-agent).--></p> | | 2026年5月19日 <p>（原计划于 2026 年 3 月 31 日发布）</p> |
 | **Content Analytics：折线图可视化图表缩略图和预览** <br/>[缩略图和预览](/help/content-analytics/report/report.md)现在可用于Content Analytics折线图可视化图表中的资源和体验。 |  | 2026年5月20日 |
 | **流媒体服务：支持计划数据** <br/>您现在可以上传过去直播流媒体服务内容的计划数据，以便更轻松、更准确地跟踪观看人数。<p>以下是支持计划数据上传的直播内容示例：</p><ul><li>FAST（免费广告支持电视）平台</li><li>本地流</li><li>直播体育赛事</li></ul><p>上传计划数据允许您跟踪在上传文件中指定的时间内运行的各个节目的观看人数数据。 您甚至可以收集特定主题或节目片段的观看人数数据。</p><p>无论您如何实现流媒体收集，这些功能都是可用的。</p><p>以前，在分析直播内容时很难准确地将特定场次与特定节目联系起来，也不可能将特定场次与单个主题或节目片段联系起来。</p><p>如需了解更多信息，请参阅[上传计划数据以跟踪实时内容](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/media-use-cases/track-schedule-data)</p> | 2025 年 10 月 29 日 | 2026 年上半年<p>（原计划于 2025 年 10 月 29 日发布）</p> |
 
