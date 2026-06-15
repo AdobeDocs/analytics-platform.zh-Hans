@@ -24,9 +24,9 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ffa7a6d6502dc687b5bbd0aafe4b7e7ec82313fe
+source-git-commit: 4d42c345b98683ef7d4b802262bd7f0f24b45692
 workflow-type: tm+mt
-source-wordcount: 5831
+source-wordcount: 5868
 ht-degree: 92%
 
 ---
@@ -488,6 +488,13 @@ ht-degree: 92%
 >id="connections_breakdown_monthlymediastarts"
 >title="每月媒体开始次数"
 >abstract="每月的介质开始次数是快照值，而不是聚合总数。 这些值根据所选日期范围内的最后一个月动态更新。 这些值反映选定月份的快照。"
+
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_aca_monthlyreportablerows"
+>title="每月Content Analytics行"
+>abstract="每月Content Analytics行都是快照值，而不是聚合总计。 这些值根据所选日期范围内的最后一个月动态更新。 这些值反映选定月份的快照。"
+
 
 
 [!UICONTROL 使用情况]界面显示所有连接中摄取的可报告的行的使用情况。 如果未选择，请选择&#x200B;**[!UICONTROL 使用情况]**&#x200B;选项卡以访问该界面。
