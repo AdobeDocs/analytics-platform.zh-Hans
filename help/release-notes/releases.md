@@ -5,23 +5,15 @@ exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
 feature: Release Notes
 autotag-review: '2026-05-19T09:19:46.530Z'
 TQID: 'https://experienceleague.adobe.com/nNV-qOa3LVmHUMLf-R2MwNHY0N67hxG2DWbVrpA-ZpI'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: a8e39571-4463-4aa3-8b3f-4e2341ecf3b3
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: a8e39571-4463-4aa3-8b3f-4e2341ecf3b3
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 402
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -35,9 +27,9 @@ Customer Journey Analytics 版本在持续交付模型上运行，该模型允�
 
 * **有限测试**：从 Adobe 内部用户测试开始的分阶段发布。 然后将其提供给一小组客户帐户，以确保该功能满足客户的需求和期望。
 
-* **开始推出**：从有限测试阶段开始推出分阶段发布。 然后，此发布在两个月内从 0% 到 100% 提供给客户。 分阶段推出在CX企业组织级别进行，因此组织中所有授权用户都可以获得相同的体验。
+* **开始推出**：从有限测试阶段开始推出分阶段发布。 然后，此发布在两个月内从 0% 到 100% 提供给客户。 由于分阶段推出在 CX Enterprise 组织级别进行，因此组织中所有授权用户都可以获得相同的体验。
 
-* **正式发布(GA)**：此功能对100%授权的CX Enterprise组织可用，且功能发布已完成。
+* **正式发布 (GA)**：此功能可供 100% 授权的 CX Enterprise 组织使用，且功能发布已完成。
 
 对于每个功能发布，从 RTP 到 GA 的时间表可能会有所不同。 目标是缩短发布时间，以便能够在发布开始 (RTP) 后的 2 个月内，功能将达到 GA 阶段。
 
