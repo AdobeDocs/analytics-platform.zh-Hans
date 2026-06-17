@@ -36,7 +36,7 @@ topic_v2:
 source-git-commit: 50c7bb7b18b45b5ffac0eebacca2bb0d2ed0c28d
 workflow-type: tm+mt
 source-wordcount: 6944
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -51,25 +51,25 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 |---|---|
 | **2026年6月** | |
 | 新的GA4指南 | 添加了[从Google Analytics 4过渡到Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home)。 |
-| **2026年5月** | |
-| 适用于Content Analytics的Javascript库 | 有关如何使用[Content Analytics Javascript库](/help/content-analytics/config/tags-agnostic.md)为Web渠道实施Content Analytics而不需要Experience Platform数据收集标记的文档。 |
-| Data Mirror注意事项 | [文档](/help/data-mirror/considerations.md)，其中介绍了设置[Data Mirror数据集](/help/data-mirror/data-mirror.md)时应考虑的因素。 |
-| Content Analytics移动渠道 | 更新了[Content Analytics文档](/help/content-analytics/content-analytics.md)，以说明Content Analytics移动渠道的功能和配置。 |
-| **2026年4月** | |
-| 派生字段准则 | 添加了有关使用派生字段的[准则](/help/use-cases/data-views/derived-fields/guidelines.md)（最佳实践、护栏和常见隐患）的文章。 |
-| 添加了有关集成Journey Optimizer时可包含的两个数据集的缺失文档 | 为IMS组织启用高吞吐量事务性消息加载项时，连接中会包含另外两个非配置文件系统生成的数据集[&#128279;](/help/integrations/ajo.md#high-throughput-add-on-datasets)。 |
-| 更新了同类群组分析用例 | 根据反馈将Analysis Workspace示例添加到同类群组分析用例中。 |
+| **2026 年 5 月** | |
+| 用于 Content Analytics 的 JavaScript 库 | 有关如何使用 [Content Analytics Javascript 库](/help/content-analytics/config/tags-agnostic.md)为网页渠道实施 Content Analytics 而不需要 Experience Platform 数据收集标记的文档。 |
+| Data Mirror 考虑因素 | [文档](/help/data-mirror/considerations.md)介绍了您在设置 [Data Mirror 数据集](/help/data-mirror/data-mirror.md)时应考虑的因素。 |
+| Content Analytics 移动渠道 | [Content Analytics 文档](/help/content-analytics/content-analytics.md)的更新，说明了 Content Analytics 移动渠道的功能和配置。 |
+| **2026 年 4 月** | |
+| 派生字段指南 | 添加了有关使用派生字段的[指南](/help/use-cases/data-views/derived-fields/guidelines.md)（最佳实践、护栏和常见陷阱）的文章。 |
+| 添加了缺失的有关集成 Journey Optimizer 时可包含的两个数据集的文档 | 为您的 IMS 组织启用高吞吐量事务型消息附加组件后，连接中会[额外包含系统生成的两个非轮廓数据集](/help/integrations/ajo.md#high-throughput-add-on-datasets)。 |
+| 更新了同类群组分析用例 | 根据反馈将 Analysis Workspace 示例添加到了同类群组分析用例中。 |
 | **2026 年 3 月** | |
-| 划分面板 | 重新构建了面板[&#128279;](/help/analysis-workspace/c-panels/panels.md#drop-zone)的放置区域文档，以支持新的[划分](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel)功能。 |
-| 有关错误ID (BAVID)的技术说明 | 有关错误ID[&#128279;](/help/technotes/badids.md)的新技术说明。 此技术说明解释了错误ID的定义（在Customer Journey Analytics界面中使用错误ID），以及如何调查连接中的数据以确定错误ID。 |
-| 数据集在连接中预览重新设计 | 当您在基于人员的连接中[添加](/help/connections/create-connection.md#add-datasets)或[编辑](/help/connections/create-connection.md#edit-a-dataset)数据集时，更新了关于改进数据预览体验的文档，包括关于为启用拼接的数据集额外的[拼接预览信息](/help/stitching/use-stitching-ui.md#datasets-preview)的文档。 |
-| Content Analytics缩略图和预览 | 有关Content Analytics中的[缩略图](/help/content-analytics/report/report.md#thumbnails)和[预览](/help/content-analytics/report/report.md#previews)的其他可视化图表的文档。 |
+| 划分面板 | 重新整理了[&#128279;](/help/analysis-workspace/c-panels/panels.md#drop-zone)面板放置区域文档的结构，以支持新的[划分](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel)功能。 |
+| 有关错误 ID (BAVID) 的技术说明 | 新的[有关错误 ID 的技术说明](/help/technotes/badids.md)。 此技术说明解释了错误 ID 的定义，在 Customer Journey Analytics 界面中的什么地方使用错误 ID，以及如何调查您连接中的数据以确定错误 ID。 |
+| 重新设计连接中的数据集预览 | 更新了当您在基于人员的连接中[添加](/help/connections/create-connection.md#add-datasets)或[编辑](/help/connections/create-connection.md#edit-a-dataset)数据集时，获得改进的数据预览体验的文档，包括用于启用了拼接的数据集的[拼接预览信息](/help/stitching/use-stitching-ui.md#datasets-preview)的额外文档。 |
+| Content Analytics 缩略图和预览 | 有关 Content Analytics 中其他可视化图表的[缩略图](/help/content-analytics/report/report.md#thumbnails)和[预览](/help/content-analytics/report/report.md#previews)的文档。 |
 | **2026 年 2 月** | |
-| 标头覆盖 | 有关Content Analytics的额外[标头覆盖](/help/content-analytics/config/guided.md#header-overrides)配置的文档。 |
-| 计算量度护栏 | 更新了组织[&#128279;](/help/technotes/guardrails.md#segments-and-calculated-metrics)的最大计算量度数的护栏。 最大数量现在是50,000。 |
-| 独立Content Analytics | 添加了有关Content Analytics[&#128279;](/help/content-analytics/config/standalone.md)的独立配置的文档。 |
+| 标头覆盖 | 有关用于 Content Analytics 的额外[标头覆盖配置](/help/content-analytics/config/guided.md#header-overrides)的文档。 |
+| 计算量度护栏 | 更新了[组织的最大计算量度数量的护栏](/help/technotes/guardrails.md#segments-and-calculated-metrics)。 最大数量现在是 50,000。 |
+| 独立 Content Analytics | 添加了有关 [Content Analytics 的独立配置的文档](/help/content-analytics/config/standalone.md)。 |
 | **2026 年 1 月** | |
-| 架建架构 | 向[架构您的架构以用于Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)添加了大量信息和上下文。 |
+| 架建架构 | 在[构建用于 Customer Journey Analytics 的架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)中添加了大量信息和上下文。 |
 
 
 ## 2025
@@ -77,7 +77,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 | --- | --- |
 | **2025 年 12 月** | |
-| 沙盒更改的影响 | 在[删除和重置后果](/help/technotes/deletion.md)文章中添加了删除沙盒或重置的后果。 |
+| 沙盒更改的含义 | 在[删除和重置的后果](/help/technotes/deletion.md)文章中添加了删除沙盒或进行重置带来的影响。 |
 | **2025 年 11 月** | |
 | 连接中每日行数的护栏 | 新增了有关连接中每日平均最大行数的[数据传输限制护栏信息](/help/technotes/guardrails.md)。 |
 | **2025 年 10 月** | |
@@ -115,7 +115,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | Adobe Content Analytics | [Content Analytics](/help/content-analytics/content-analytics.md) 可让您快速轻松地调查大量内容数据，以发现趋势、识别异常、判断内容疲劳度，并从内容曝光度获得洞察。 |
 | 已更新用于将流媒体数据收集到 Adobe Experience Platform 的 XDM 字段 | 将流媒体数据收集到 Adobe Experience Platform 时，不再使用流媒体参数文档中“XDM 字段路径”标题下显示的 XDM 字段路径。 这些字段路径位于以下页面并标记为“已弃用”：[音频和视频参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/audio-video-parameters)、[广告参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/ad-parameters)、[章节参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/chapter-parameters)、[播放器状态参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/player-state-parameters)和[质量参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/quality-parameters)。 |
 | 媒体收藏集：Adobe Source Connector 更新了新的媒体报告 XDM | Analytics 源连接器会自动将 Adobe Analytics 中的流媒体数据映射到 Web SDK 使用的相同字段。 以前，数据被映射到旧位置和新位置，但未来只使用新位置。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
-| 术语更改：将“过滤器”改为“区段” | 此前，Adobe Customer Journey Analytics 将区段称为“过滤器”。 该术语现已与 Adobe Analytics 保持一致。 “过滤器”现在改称为“区段”。 （显然，搜索筛选器仍称为“筛选器”。） 用户界面和文档已更新。 |
+| 术语更改：将“过滤器”改为“区段” | 此前，Adobe Customer Journey Analytics 将区段称为“过滤器”。 该术语现已与 Adobe Analytics 保持一致。 “过滤器”现在改称为“区段”。 （显然，搜索过滤器仍称为“过滤器”。） UI 和文档已更新。 |
 | **2025 年 3 月** | |
 | Quantum Metric 用例 | 添加了从 [Quantum Metric](/help/use-cases/third-party/quantum-metric/qm-overview.md) 收集数据的用例。 |
 | 产品使用模板 | 新的工作区模板允许您查看 Customer Journey Analytics 产品在您的组织内如何使用。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/use-templates)。 |
@@ -218,7 +218,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 使用派生字段设定目标/指标 | 新增[用例](/help/use-cases/data-views/derived-fields/goals-using-derived-fields.md)文章，说明如何使用派生字段来设定目标/指标并对其进行报告。 |
 | 将全表导出到云 | 添加了有关将包含数百万个 Workspace 行的完整表格导出到云目标的文档。 <p>导出全表可一次性或按计划传递 Workspace 中设计的数据表，支持最多五个细分、五个量度、区段和计算量度，所有这些都在一个连接的表中。 它从 Adobe Analytics 中的 Data Warehouse 报告演化而来，具有许多当今在 Data Warehouse 中不提供但经常有人要求提供的新功能。</p><p>有关详细信息，请参阅[将 Customer Journey Analytics 报告导出到云](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=zh-Hans)。 |
 | 报告活动管理器 | 添加了报告活动管理器的文档。 <p>通过报告活动管理器，可查看组织中每个连接的报告容量。 通过它，管理员可详细了解报告消耗情况，从而轻松地诊断和修复在报告高峰期出现的容量问题。</p> <p>添加了以下新文章：<ul><li>[报告活动管理器概述](/help/reporting-activity-manager/reporting-activity-overview.md)</li><li>[在报告活动管理器中查看报告活动](/help/reporting-activity-manager/reporting-activity.md)</li><li>[取消报告活动管理器中的请求](/help/reporting-activity-manager/reporting-activity-cancel-requests.md)</ul> |
-| 管理页面新增栏目 | 记录了[计算量度管理器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html?lang=zh-Hans)和[区段管理器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html?lang=zh-Hans)现在提供的新列。 |
+| 管理页面新增栏目 | 记录了[计算量度管理器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html)和[区段管理器](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html?lang=zh-Hans)现在提供的新列。 |
 | 与 Adobe Analytics 进行比较 | 添加了[概述页面](../getting-started/aa-vs-cja/overview.md)，作为比较和理解 Customer Journey Analytics 和 Adobe Analytics 之间差异的介绍。 |
 | 附加派生字段功能 | 更新了新的 [`Lookup`](/help/data-views/derived-fields/derived-fields.md#lookup) 功能的文档。 |
 | **2023 年 9 月** | |

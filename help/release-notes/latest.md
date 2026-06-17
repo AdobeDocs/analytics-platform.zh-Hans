@@ -30,25 +30,25 @@ topic_v2:
 source-git-commit: c818dd36bc900b3945b87503afad8e944a3716a7
 workflow-type: tm+mt
 source-wordcount: 721
-ht-degree: 38%
+ht-degree: 100%
 
 ---
 
-# 当前Customer Journey Analytics发行说明（2026年5月）
+# 当前 Customer Journey Analytics 发行说明（2026 年 5 月）
 
-**上次更新日期**：2026年5月13日
+**上次更新日期**：2026 年 5 月 13 日
 
-这些发行说明涵盖2026年5月发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。 因此，这些发行说明每月更新几次。 请定期检查。
+这些发行说明涵盖了 2026 年 5 月的发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。 因此，这些发行说明每月更新几次。 请定期检查。
 
 ## 新增功能或更新后的功能
 
 | 功能和描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | -----------|-----------|-----------|
-| **CJA API Postman集合** <br/>可下载的Postman集合可用于调用CJA API端点。<p>有关详细信息，请参阅[analytics-cja-postman-collections Github存储库](https://github.com/AdobeDocs/analytics-cja-postman-collections)。  </p> | | 2026年5月1日 |
-| **用于Customer Journey Analytics的MCP服务器** <br/>Analytics MCP（模型上下文协议）服务器允许您将受支持的MCP客户端连接到Adobe Customer Journey Analytics。 连接后，MCP客户端可以调用特定于产品的工具来检索数据、运行查询或执行作为LLM或代理工作流一部分的受支持操作。 有关详细信息，请参阅[Analytics MCP服务器](https://developer.adobe.com/analytics-mcp/docs/)。<p>如果您在Beta测试期间使用这些MCP服务器，请注意，Beta测试版和生产版端点之间有不同的URL。 请确保在5月31日之前将测试期间创建的任何代理工作流更新为使用生产端点。</p> | | 2026年5月5日 |
-| **Content Analytics支持本机移动应用程序体验**<br/>&#x200B;组织可以将其内容性能分析扩展到iOS和Android应用程序，捕获图像资源和精细的体验元素，以了解哪些应用程序内内容可促进用户参与和业务成果。<p> [文档](/help/content-analytics/content-analytics.md)已更新，以描述移动渠道功能和配置。 有关[Content Analytics Mobile SDK扩展](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)的信息可在[Adobe Developer](https://developer.adobe.com/)上获取。</p><p>分析适用于所有Adobe Content Analytics客户。</p> | | 2026年5月6日 |
-| **历程画布增强功能** <br/>历程画布可视化中提供了以下增强功能： <ul><li>从历程中[排除节点](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#exclude-nodes)。</li><li>使用节点的流失数据[创建区段](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#create-a-segment-based-on-a-node-or-arrow)、[趋势](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#view-trend-data)、[受众](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#create-an-audience)和[划分](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#apply-a-breakdown)。</li></ul> | | 2026年5月18日 |
-| **Content Analytics：折线图可视化图表缩略图和预览** <br/>[缩略图和预览](/help/content-analytics/report/report.md)现在可用于Content Analytics折线图可视化图表中的资源和体验。 |  | 2026年5月20日 |
+| **CJA API Postman 收藏集** <br/>可下载的 Postman 收藏集可用于调用 CJA API 端点。<p>有关详细信息，请参阅 [analytics-cja-postman-collections Github 存储库](https://github.com/AdobeDocs/analytics-cja-postman-collections)。  </p> | | 2026 年 5 月 1 日 |
+| **用于 Customer Journey Analytics 的 MCP 服务器** <br/>Analytics MCP（模型上下文协议）服务器允许您将受支持的 MCP 客户端连接到 Adobe Customer Journey Analytics。 连接后，您的 MCP 客户端可以调用产品特有的工具来检索数据、运行查询或执行属于 LLM 或代理式工作流一部分的受支持的各种操作。 有关详细信息，请参阅 [Analytics MCP 服务器](https://developer.adobe.com/analytics-mcp/docs/)。<p>如果您在 Beta 测试期间使用这些 MCP 服务器，请注意 Beta 测试版和生产端点两者有不同的 URL。 请确保在 5 月 31 日之前将 Beta 测试版期间创建的任何代理式工作流更新为使用生产端点。</p> | | 2026 年 5 月 5 日 |
+| **Content Analytics 支持原生移动应用程序体验**<br/>&#x200B;组织可以将其内容性能分析扩展到 iOS 和 Android 应用程序，捕获图像资产和颗粒度体验元素，以了解哪些应用程序内的内容可促进用户参与和商业结果。<p> [文档](/help/content-analytics/content-analytics.md)已更新，以描述移动渠道的功能和配置。 有关 [Content Analytics Mobile SDK 扩展](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)的信息在 [Adobe Developer](https://developer.adobe.com/) 中提供。</p><p>洞察可供所有 Adobe Content Analytics 客户使用。</p> | | 2026 年 5 月 6 日 |
+| **历程画布增强功能** <br/>历程画布可视化现在提供以下增强功能： <ul><li>从历程中[排除的节点](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#exclude-nodes)。</li><li>使用节点的流失数据来[创建区段](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#create-a-segment-based-on-a-node-or-arrow)、[趋势](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#view-trend-data)、[受众](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#create-an-audience)和[细分](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#apply-a-breakdown)。</li></ul> | | 2026 年 5 月 18 日 |
+| **Content Analytics：可视化折线图缩略图和预览** <br/>[缩略图和预览](/help/content-analytics/report/report.md)现在适用于 Content Analytics 的折线图中的资产和体验。 |  | 2026 年 5 月 20 日 |
 | **流媒体服务：支持计划数据** <br/>您现在可以上传过去直播流媒体服务内容的计划数据，以便更轻松、更准确地跟踪观看人数。<p>以下是支持计划数据上传的直播内容示例：</p><ul><li>FAST（免费广告支持电视）平台</li><li>本地流</li><li>直播体育赛事</li></ul><p>上传计划数据允许您跟踪在上传文件中指定的时间内运行的各个节目的观看人数数据。 您甚至可以收集特定主题或节目片段的观看人数数据。</p><p>无论您如何实现流媒体收集，这些功能都是可用的。</p><p>以前，在分析直播内容时很难准确地将特定场次与特定节目联系起来，也不可能将特定场次与单个主题或节目片段联系起来。</p><p>如需了解更多信息，请参阅[上传计划数据以跟踪实时内容](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/media-use-cases/track-schedule-data)</p> | 2025 年 10 月 29 日 | 2026 年上半年<p>（原计划于 2025 年 10 月 29 日发布）</p> |
 
 {style="table-layout:auto"}
@@ -56,25 +56,25 @@ ht-degree: 38%
 
 ## Customer Journey Analytics 中的修复
 
-**Analysis Workspace**： AN-446522、AN-445779、AN-445759、AN-444676、AN-442813、AN-441943、AN-441717、AN-441538、AN-441123、AN-440976、AN-440952、AN-440919、AN-439797、AN-434855、AN-429777、AN-429048、AN-428892、AN-428189、AN-425215、AN-
+**Analysis Workspace**：AN-446522、AN-445779、AN-445759、AN-444676、AN-442813、AN-441943、AN-441717、AN-441538、AN-441123、AN-440976、AN-440952、AN-440919、AN-439797、AN-434855、AN-429777、AN-429048、AN-428892、AN-428189、AN-425215
 **组件**：
-**连接**： AN-449652、AN-444560、AN-442824、AN-440937、AN-440092、AN-439823、AN-429781
+**连接**：AN-449652、AN-444560、AN-442824、AN-440937、AN-440092、AN-439823、AN-429781
 **Content Analytics**：
 **引导式分析**：
-**导出**： AN-438953， AN-437115
-**数据视图**： AN-442809
+**导出**：AN-438953、AN-437115
+**数据视图**：AN-442809
 **实施**：
-**Report Builder**： AN-448697、AN-447128、AN-441148、AN-441136、AN-438147、AN-425150
-**报告**： AN-445123、AN-442231、AN-442169、AN-441811、AN-441733、AN-440505、AN-440300、AN-434824、AN-434210、AN-424000、AN-423359、AN-406242
+**Report Builder**：AN-448697、AN-447128、AN-441148、AN-441136、AN-438147、AN-425150
+**报告**：AN-445123、AN-442231、AN-442169、AN-441811、AN-441733、AN-440505、AN-440300、AN-434824、AN-434210、AN-424000、AN-423359、AN-406242
 **分段**：
 **计划报告**：
 **共享的量度和维度**：
-**Other**： AN-449159、AN-444661、AN-443900、AN-397985
+**其他**：AN-449159、AN-444661、AN-443900、AN-397985
 
 ## 相关资产
 
 * [之前的 2025 Customer Journey Analytics 发行说明](/help/release-notes/2025.md)
-* [Adobe Analytics发行说明](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=zh-hans)
+* [Adobe Analytics 发行说明](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=zh-hans)
 * [流媒体收藏集发行说明](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html?lang=zh-hans)
-* [CX Enterprise发行说明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-hans)
+* [CX Enterprise 发行说明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-hans)
 * [Customer Journey Analytics 文档更新](/help/release-notes/doc-changes.md)
