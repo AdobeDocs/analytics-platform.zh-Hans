@@ -97,7 +97,7 @@ Customer Journey Analytics基于三个容器的概念而构建：人员、会话
 
 ## 架构
 
-Customer Journey Analytics B2B编辑器使用[Adobe Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)来标准化B2B数据并为B2B数据定义架构。 您可以将架构基于Real-time CDP B2B edition[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/rtcdp/schemas/b2b)中提供的标准类，也可以使用自己的自定义类和架构。 [用例](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)文章使用Real-time CDP B2B edition类和架构，但是，使用标准类和架构不需要Real-time CDP B2B edition许可证。
+Customer Journey Analytics B2B编辑器使用[Adobe Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans)来标准化B2B数据并为B2B数据定义架构。 您可以将架构基于Real-time CDP B2B edition[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/rtcdp/schemas/b2b)中提供的标准类，也可以使用自己的自定义类和架构。 [用例](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)文章使用Real-time CDP B2B edition类和架构，但是，使用标准类和架构不需要Real-time CDP B2B edition许可证。
 
 ## 数据集
 

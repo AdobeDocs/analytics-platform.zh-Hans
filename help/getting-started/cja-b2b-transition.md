@@ -64,7 +64,7 @@ ht-degree: 3%
 
 要在现有实施中实施B2B功能，您需要执行以下步骤：
 
-1. 为您的B2B数据建模。 您可以使用[Adobe Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)来标准化B2B数据并定义B2B数据的架构。<br/>您可以将架构基于Real-time CDP B2B edition[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/rtcdp/schemas/b2b)中提供的标准类，也可以使用您自己的自定义类和架构。 [用例](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)文章使用Real-time CDP B2B edition类和架构，但是，使用标准类和架构不需要Real-time CDP B2B edition许可证。 <br/>Customer Journey Analytics B2B edition至少假定使用基于帐户的时间系列事件数据，并且可从其他配置文件或查找记录数据中受益。 例如帐户数据、购买群组数据、商机数据、营销列表成员数据等。
+1. 为您的B2B数据建模。 您可以使用[Adobe Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans)来标准化B2B数据并定义B2B数据的架构。<br/>您可以将架构基于Real-time CDP B2B edition[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/rtcdp/schemas/b2b)中提供的标准类，也可以使用您自己的自定义类和架构。 [用例](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)文章使用Real-time CDP B2B edition类和架构，但是，使用标准类和架构不需要Real-time CDP B2B edition许可证。 <br/>Customer Journey Analytics B2B edition至少假定使用基于帐户的时间系列事件数据，并且可从其他配置文件或查找记录数据中受益。 例如帐户数据、购买群组数据、商机数据、营销列表成员数据等。
 
    * 定义要用作主帐户标识符的标识符（帐户ID）。 通常，现有的CRM或其他工具（例如：Demandbase）可帮助您确定该标识符。
    * 为计划使用的其他B2B数据标识其他标识符：全局帐户标识符、商机标识符、购买组标识符和人员标识符。
