@@ -4,7 +4,6 @@ description: 了解如何在Data Warehouse本机解决方案和Customer Journey 
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-badgePremium: label="Beta 版"
 exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
 autotag-review: '2026-05-19T08:55:53.979Z'
 TQID: 'https://experienceleague.adobe.com/10YCh2cnMTVriKKVOyYfzFfngvGQ2VVHOxzedE5NpWA'
@@ -26,16 +25,14 @@ topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: b4547b6c48adb97f6749ef54147f369632c44fa9
+source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
 workflow-type: tm+mt
-source-wordcount: 496
+source-wordcount: 455
 ht-degree: 3%
 
 ---
 
 # Experience Platform Data Mirror概述
-
-{{release-limited-testing}}
 
 Data Mirror是一项Experience Platform功能，允许使用关系架构将外部数据库中的行级更改引入数据湖。 它保留数据关系，强制唯一性，并支持版本控制，而无需上游提取、转换和加载(ETL)过程。
 
@@ -59,7 +56,7 @@ Data Mirror提供了以下基本数据库同步功能：
 
 >[!NOTE]
 >
->Data Mirror目前是测试版中的一项功能，它支持使用更改数据捕获(CDC)同步选定数据仓库中的数据，以便在Customer Journey Analytics中进行分析。<br/>此功能将于2026年6月18日正式在Customer Journey Analytics中提供。 请参阅适用的产品描述，以了解它如何影响未来的年度摄取限制消费。 请注意，当Data Mirror从Beta版过渡到正式发布时，贵组织将继续有权访问该功能。
+>Data Mirror是一项功能，它支持使用更改数据捕获(CDC)同步选定数据仓库中的数据，以便在Customer Journey Analytics中进行分析。<br/>请参阅适用的产品说明，以了解此功能如何影响年度摄取限制消耗。
 >
 
 >[!IMPORTANT]

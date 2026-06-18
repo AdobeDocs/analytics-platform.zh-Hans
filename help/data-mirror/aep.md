@@ -4,7 +4,6 @@ description: 了解如何为Experience Platform Data Mirror for Customer Journey
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-badgePremium: label="Beta 版"
 exl-id: 87593d7d-9456-48f8-8d39-5c3d95fe51ec
 autotag-review: '2026-05-19T07:18:47.007Z'
 TQID: 'https://experienceleague.adobe.com/nAfDMtaQvsVRAEm31fRwleirW8LaS-yS0tGTdReux0Y'
@@ -21,16 +20,14 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
 workflow-type: tm+mt
-source-wordcount: 604
+source-wordcount: 571
 ht-degree: 6%
 
 ---
 
 # 配置Experience Platform
-
-{{release-limited-testing}}
 
 适用于Customer Journey Analytics的Experience Platform Data Mirror需要正确配置多个Experience Platform组件：
 
@@ -108,5 +105,5 @@ ht-degree: 6%
 >[!MORELIKETHIS]
 >
 >[Data Mirror快速入门指南：镜像并使用关系数据](relational.md)
->[Data Mirror（Experience Platform文档）](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-mirror/overview)
+>[Data Mirror （Experience Platform文档）](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-mirror/overview)
 >[关系架构（Experience Platform文档）](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/relational)
