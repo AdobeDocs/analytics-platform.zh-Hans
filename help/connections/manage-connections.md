@@ -27,7 +27,7 @@ topic_v2:
 source-git-commit: 4d42c345b98683ef7d4b802262bd7f0f24b45692
 workflow-type: tm+mt
 source-wordcount: 5868
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -420,80 +420,80 @@ ht-degree: 92%
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_corereportablerows"
 >title="核心可报告行数"
->abstract="核心可报告行是快照值，而不是汇总总数。 这些值根据所选日期范围内的最后一个月动态更新。 这些值反映选定月份的快照。"
+>abstract="核心可报告行是快照值，而不是汇总总数。 这些值根据所选日期范围内的最后一个月动态更新。 这些值反映所选月份的快照数据。"
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_historicalreportablerows"
 >title="历史可报告行数"
->abstract="历史可报告行是快照值，而不是汇总总数。 这些值根据所选日期范围内的最后一个月动态更新。 这些值反映选定月份的快照。"
+>abstract="历史可报告行是快照值，而不是汇总总数。 这些值根据所选日期范围内的最后一个月动态更新。 这些值反映所选月份的快照数据。"
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_cumulativereportablerows"
 >title="累计可报告行数"
->abstract="累计可报告行是快照值，而不是汇总总数。 这些值根据所选日期范围内的最后一个月动态更新。 这些值反映选定月份的快照。"
+>abstract="累计可报告行是快照值，而不是汇总总数。 这些值根据所选日期范围内的最后一个月动态更新。 这些值反映所选月份的快照数据。"
 
 
 >[!CONTEXTUALHELP]
 >id="connections_extendeddatacapacityrows"
->title="扩展数据容量行"
+>title="扩展的数据容量行"
 >abstract="从本月起 13 个月之前可用的总行数，以及与上个月相比的百分比变化。 例如，2024 年 2 月 1 日，该数字显示事件时间戳早于 2023 年 1 月的可用行数总数。"
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_extendeddatacapacityrows"
->title="扩展数据容量行"
->abstract="扩展数据容量行是快照值，而不是聚合总数。 这些值根据所选日期范围内的最后一个月动态更新。 这些值反映选定月份的快照。"
+>title="扩展的数据容量行"
+>abstract="扩展数据容量行数为快照值，而非汇总总数。 这些值根据所选日期范围内的最后一个月动态更新。 这些值反映所选月份的快照数据。"
 
 >[!CONTEXTUALHELP]
 >id="connections_aca_corereportablerows"
->title="Content Analytics核心可报告行"
->abstract="当月过去13个月内可用的Content Analytics特定行总数，与上月相比存在百分比变化。  例如，2024 年 2 月 1 日，该数字显示事件时间戳从 2023 年 1 月到 2024 年 1 月的可用行数总数。"
+>title="Content Analytics 核心可报告行数"
+>abstract="当前月份过去 13 个月内可用于 Content Analytics 的特定行总数，以及与上个月相比的百分比变化。  例如，2024 年 2 月 1 日，该数字显示事件时间戳从 2023 年 1 月到 2024 年 1 月的可用行数总数。"
 
 >[!CONTEXTUALHELP]
 >id="connections_usage_aca_monthlyreportablerows"
->title="每月Content Analytics行"
->abstract="跟踪可用于报表的Content Analytics行数。 可报告行数是被摄取的行数减去摄取过程中被跳过和删除的行数。 可报告行数是计费和数据使用情况的关键量度。"
+>title="每月 Content Analytics 行数"
+>abstract="跟踪可用于报告的 Content Analytics 行数。 可报告行数是被摄取的行数减去摄取过程中被跳过和删除的行数。 可报告行数是计费和数据使用情况的关键量度。"
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_aca_corereportablerows"
->title="Content Analytics核心可报告行"
->abstract="Content Analytics核心可报告行是快照值，而不是聚合总计。 这些值根据所选日期范围内的最后一个月动态更新。 这些值反映选定月份的快照。"
+>title="Content Analytics 核心可报告行数"
+>abstract="Content Analytics 核心可报告行数为快照值，而非汇总总数。 这些值根据所选日期范围内的最后一个月动态更新。 这些值反映所选月份的快照数据。"
 
 
 >[!CONTEXTUALHELP]
 >id="connections_b2b_coreportablebpp"
->title="核心业务人员配置文件可报告行"
->abstract="当月过去13个月内可用的企业配置文件可报告行总数，与上月相比具有百分比变化。  例如，2024 年 2 月 1 日，该数字显示事件时间戳从 2023 年 1 月到 2024 年 1 月的可用行数总数。"
+>title="核心业务人员轮廓可报告行数"
+>abstract="当前月份过去 13 个月内可用的业务轮廓可报告行总数，以及与上个月相比的百分比变化。  例如，2024 年 2 月 1 日，该数字显示事件时间戳从 2023 年 1 月到 2024 年 1 月的可用行数总数。"
 
 >[!CONTEXTUALHELP]
 >id="connections_b2b_historicalreportablebpp"
->title="历史业务配置文件可报告行"
->abstract="当月超过13个月期间可用的企业配置文件可报告行总数，与上月相比具有百分比变化。 例如，2024 年 2 月 1 日，该数字显示事件时间戳早于 2023 年 1 月的可用行数总数。"
+>title="历史业务轮廓可报告行数"
+>abstract="当前月份超过 13 个月历史期间内可用的业务轮廓可报告行总数，以及与上个月相比的百分比变化。 例如，2024 年 2 月 1 日，该数字显示事件时间戳早于 2023 年 1 月的可用行数总数。"
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_b2b_corereportablebpp"
->title="核心业务配置文件可报告行"
->abstract="核心业务配置文件可报告行是快照值，而不是聚合总计。 这些值根据所选日期范围内的最后一个月动态更新。 这些值反映选定月份的快照。"
+>title="核心业务轮廓可报告行数"
+>abstract="核心业务轮廓可报告行数为快照值，而非汇总总数。 这些值根据所选日期范围内的最后一个月动态更新。 这些值反映所选月份的快照数据。"
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_b2b_historicalreportablebpp"
->title="历史业务配置文件可报告行"
->abstract="历史业务配置文件可报告行是快照值，而不是聚合总计。 这些值根据所选日期范围内的最后一个月动态更新。 这些值反映选定月份的快照。"
+>title="历史业务轮廓可报告行数"
+>abstract="历史业务轮廓可报告行数为快照值，而非汇总总数。 这些值根据所选日期范围内的最后一个月动态更新。 这些值反映所选月份的快照数据。"
 
 >[!CONTEXTUALHELP]
 >id="connections_monthlymediastarts"
->title="每月媒体开始次数"
->abstract="当月过去13个月中每月可用的媒体开始总数，与上月相比有百分比变化。  例如，在2024年2月1日，该数字显示事件时间戳为2023年1月至2024年1月的可用总媒体开始次数。"
+>title="每月媒体启动次数"
+>abstract="当前月份过去 13 个月内可用的每月媒体启动总次数，以及与上个月相比的百分比变化。  例如，在 2024 年 2 月 1 日，该数字表示事件时间戳介于 2023 年 1 月至 2024 年 1 月之间的媒体启动总次数。"
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_monthlymediastarts"
->title="每月媒体开始次数"
->abstract="每月的介质开始次数是快照值，而不是聚合总数。 这些值根据所选日期范围内的最后一个月动态更新。 这些值反映选定月份的快照。"
+>title="每月媒体启动次数"
+>abstract="每月媒体启动次数为快照值，而非汇总总数。 这些值根据所选日期范围内的最后一个月动态更新。 这些值反映所选月份的快照数据。"
 
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_aca_monthlyreportablerows"
->title="每月Content Analytics行"
->abstract="每月Content Analytics行都是快照值，而不是聚合总计。 这些值根据所选日期范围内的最后一个月动态更新。 这些值反映选定月份的快照。"
+>title="每月 Content Analytics 行数"
+>abstract="每月 Content Analytics 行数为快照值，而非汇总总数。 这些值根据所选日期范围内的最后一个月动态更新。 这些值反映所选月份的快照数据。"
 
 
 
