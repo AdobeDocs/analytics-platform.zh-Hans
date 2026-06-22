@@ -22,10 +22,10 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 236959f0e060e35a285777f40b8d1ef90855ed5c
+source-git-commit: 537fc30db0f6e6bddc54df7bbcc04d802226958f
 workflow-type: tm+mt
-source-wordcount: 1438
-ht-degree: 46%
+source-wordcount: 1215
+ht-degree: 51%
 
 ---
 
@@ -74,18 +74,11 @@ ht-degree: 46%
 
 ### 线形图
 
-{{release-limited-testing-section}}
-
 行![&#128279;](/help/content-analytics/assets/aca-line-thumbnail.png)的Content Analytics缩略图
 
 将鼠标悬停在[行](/help/analysis-workspace/visualizations/line.md)中的数据点上时，将显示缩略图。
 
 ## 预览
-
->[!AVAILABILITY]
->
->本节中介绍的条形图和散点图可视化图表位于有限测试中，可能无法在您的环境中使用。 当功能正式可用时，将删除此注释。 有关 Customer Journey Analytics 发布流程的信息，请参阅 [Customer Journey Analytics 功能版本](/help/release-notes/releases.md)。
->
 
 您可以打开预览弹出窗口。 操作方法：
 
@@ -129,8 +122,8 @@ Content Analytics [模板](/help/analysis-workspace/templates/use-templates.md)�
 
 四个面板包括：
 
-* **哪些内容表现最好？**
-此面板可识别哪些体验和资产可促进参与和转化。 体验是在特定时间捕获的完整网页，或者移动应用程序中定义的文本、资源和行动号召的组合。
+* **哪些内容表现最佳？**
+此面板可识别哪些体验和资产可促进参与和转化。体验是在特定时间捕获的完整网页，或者移动应用程序中定义的文本、资源和行动号召的组合。
 
    * **体验**。
 
@@ -152,7 +145,7 @@ Content Analytics [模板](/help/analysis-workspace/templates/use-templates.md)�
       * **表现最佳的资产**
 针对表现最好的资产的[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)（包括[缩略图](#thumbnails)和[预览](#previews)）。
 Assets — 查看次数与转化率的比较。
-[散点图](/help/analysis-workspace/visualizations/scatterplot.md)可视化图表，它显示资源视图与资源转换的散点图。
+[散点图](/help/analysis-workspace/visualizations/scatterplot.md)可视化图表，它显示资产视图与资产转化率的散点图。
 
 * **哪些资产属性有助于转化？**
 Content Analytics使用AI和GenAI自动将元数据和属性（如主题、场景和前景色）分配给每个资源。
@@ -190,10 +183,10 @@ Content Analytics使用AI和GenAI自动将元数据和属性（如主题、场�
    * **体验关键字**
 一个[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)，它根据所选的转化量度显示排名最前的体验关键字。
 
-* **资产出现在我的网站上的什么位置？**
-此自由格式表详细说明了您查看次数最多的资源的显示位置。 使用此分析可以识别高性能页面并优化资产放置。
+* **我的网站上的资产显示位置？**
+此自由格式表详细说明了您查看次数最多的资源的显示位置。使用此分析可以识别高性能页面并优化资产放置。
 
-   * **浏览次数最多的资产出现在哪里？**
+   * **查看次数最多的资源出现在何处？**
 您可以按尺寸划分任何资源，以帮助您更好地了解该图像出现的位置。
 
      在[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)（包括[缩略图](#thumbnails)和[预览](#previews)）示例中使用了&#x200B;**[!UICONTROL 资产感知 ID]**，而不是[!UICONTROL 资产 ID]。 有时，完全相同的图像可能会在您的网站上以不同的图像 URL 重复出现。 [!UICONTROL 资产感知 ID] 属性有助于将这些重复项分组到单个 ID 下。
