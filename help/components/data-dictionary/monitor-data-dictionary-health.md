@@ -14,14 +14,45 @@ subfeature_v2:
   - id: df28738e-9c71-4aa8-929e-edde22340cc6
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: b7493ad9283b5830c36b8e3ac942bf9295b693f8
 workflow-type: tm+mt
-source-wordcount: 242
-ht-degree: 78%
+source-wordcount: 461
+ht-degree: 88%
 
 ---
 
-# 监测数据字典健康状况
+# 监测数据字典健康状况 {#monitor-data-dictionary}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="component_datadictionary"
+>title="数据字典"
+>abstract="选择此选项后，主组件将与所有有权访问重复组件的用户共享（包括组件所有者以及与其共享组件的用户）。 这些用户随后可以在组件列表中选择该主组件，用于未来项目。 但是，他们无法编辑该组件，即使他们曾是已合并重复组件的所有者。 <br/>仅当主组件为区段、计算量度或日期范围时，此选项才可用。 量度和维度始终对所有用户可用。"
+>
+>When this option is deselected, the primary component still replaces duplicates in existing projects and segments, but users who didn't previously have access to it can't access it from the component list for future projects. "
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="datadictionary_share_primary"
+>title="共享主要组件"
+>abstract="选择此选项后，主组件将与所有有权访问重复组件的用户共享（包括组件所有者以及与其共享组件的用户）。 这些用户随后可以在组件列表中选择该主组件，用于未来项目。 但是，他们无法编辑该组件，即使他们曾是已合并重复组件的所有者。 <br/>仅当主组件为区段、计算量度或日期范围时，此选项才可用。 量度和维度始终对所有用户可用。"
+>
+>When this option is deselected, the primary component still replaces duplicates in existing projects and segments, but users who didn't previously have access to it can't access it from the component list for future projects. "
+
+<!-- markdownlint-disable MD034 -->
+
+<!-- markdownlint-enable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="datadictionary_delete_duplicates"
+>title="删除已替换的重复项"
+>abstract="选择此选项后，已整合的重复项将无法再使用。 如果您希望重复项继续可用，请取消选择此选项。"
+
+<!-- markdownlint-enable MD034 -->
 
 Customer Journey Analytics管理员负责维护健康的数据字典。
 
