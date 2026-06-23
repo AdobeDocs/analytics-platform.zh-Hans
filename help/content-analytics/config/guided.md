@@ -25,10 +25,10 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: e557971b741732dae55ba56ee4a44c039a5e3d78
 workflow-type: tm+mt
-source-wordcount: 4111
-ht-degree: 64%
+source-wordcount: 4177
+ht-degree: 63%
 
 ---
 
@@ -546,6 +546,13 @@ ht-degree: 64%
 1. 启用&#x200B;**[!UICONTROL 配置标头覆盖]**。
 1. 输入&#x200B;**[!UICONTROL 标头名称]**。 例如，`x-asset-service`。
 1. 输入&#x200B;**[!UICONTROL 标头值]**。 您指定的任何内容都是机密的，在用户界面中不可见（除非您在输入期间明确选择公开![可见性](/help/assets/icons/Visibility.svg)值）。
+
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_paidmedia_adplatforms_nosourceconnectors"
+>title="无源连接器"
+>abstract="付费媒体需要适用于您的广告出版商的Experience Platform源连接器。 此沙盒中没有Google Ads或Meta Ads连接器。 在&#x200B;**[!UICONTROL Experience Platform]** > **[!UICONTROL 源]**&#x200B;界面中配置一个或多个连接器，并返回此步骤以继续配置Content Analytics付费媒体。"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/advertising/ads" text="Google广告源"
 
 #### 保存 {#web-save}
 
