@@ -22,10 +22,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 536a1c7151521b26fccd486704d5c9426b039f53
 workflow-type: tm+mt
-source-wordcount: 10489
-ht-degree: 99%
+source-wordcount: 10387
+ht-degree: 97%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 99%
 
 派生字段是 Adobe Customer Journey Analytics 中实时报告功能的一个重要方面。 通过派生字段和可自定义的规则生成器，即可迅速定义（一般较为复杂的）数据操作。 然后，您可以将该派生字段用作[工作区](../../analysis-workspace/home.md)中的组件（量度或维度），甚至可以进一步将该派生字段定义为[数据视图](../data-views.md)中的组件。
 
-与在 Customer Journey Analytics 之外的其他位置转换或操作数据相比，派生字段可以节省大量时间和精力。 例如[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)、[数据蒸馏器](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=zh-Hans)，或者在您自己的提取转换加载 (ETL) / 提取加载转换 (ELT) 流程中。
+与在 Customer Journey Analytics 之外的其他位置转换或操作数据相比，派生字段可以节省大量时间和精力。 例如[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)、[数据蒸馏器](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html)，或者在您自己的提取转换加载 (ETL) / 提取加载转换 (ELT) 流程中。
 
 派生字段是在[数据视图](../data-views.md)中定义的，它们基于一组定义为规则的函数，并会应用于可用的标准和/或架构字段。
 
@@ -349,7 +349,7 @@ ht-degree: 99%
 
 ### 获取查询字符串参数 {#querystring}
 
-该函数模板会提取查询字符串值。
+此函数模板提取指定查询参数的查询字符串值。 查询参数区分大小写。 插入[小写](#lowercase)函数以确保考虑查询参数的所有大小写变化。
 
 +++ 详细信息
 
@@ -512,7 +512,7 @@ ht-degree: 99%
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL If], [!UICONTROL Else If] 容器：</p><ul><li>[!UICONTROL 值]</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul><li>[!UICONTROL 标准]（根据所选的值类型查看包含的运算符）</li></ul></li><li>[!UICONTROL 然后将值设置为]，[!UICONTROL 否则将值设置为]：</p><ul><li>[!UICONTROL 值]</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul></ul></li></ul> | <p>字符串</p><ul><li>等于</li><li>等于任何词语</li><li>包含该短语</li><li>包含任何词语</li><li>包含所有词语</li><li>开始于</li><li>以任意词语开头</li><li>结束于</li><li>以任意词语结尾</li><li>不等于</li><li>不等于任何词语</li><li>不包含该短语</li><li>不包含任何词语</li><li>不包含所有词语</li><li>开头不是</li><li>不以任何词语开头</li><li>未止于</li><li>未以任何词语结尾</li><li>已设置</li><li>未设置</li></ul><p>数值</p><ul><li>等于</li><li>不等于</li><li>大于</li><li>大于或等于</li><li>小于</li><li>小于或等于</li><li>已设置</li><li>未设置</li></ul><p>日期</p><ul><li>等于</li><li>不等于</li><li>晚于</li><li>晚于或等于</li><li>早于</li><li>早于或等于</li><li>已设置</li><li>未设置</li></ul> | <ul><li>每个派生字段有 5 个函数</li><li>每个派生字段有 200 个[运算符](#operators)。 单一运算符的一个例子是“反向链接域包含 google”。 </li></ul> | <p>新的派生字段</p> |
+| <ul><li>字符串</li><li>数值</li><li>日期</li></ul> | <ul><li>[!UICONTROL If], [!UICONTROL Else If] 容器：</p><ul><li>[!UICONTROL 值]</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul><li>[!UICONTROL 标准]（根据所选的值类型查看包含的运算符）</li></ul></li><li>[!UICONTROL 然后将值设置为]，[!UICONTROL 否则将值设置为]：</p><ul><li>[!UICONTROL 值]</li><ul><li>规则</li><li>标准字段</li><li>字段</li></ul></ul></li></ul> | <p>字符串</p><ul><li>等于</li><li>等于任何词语</li><li>包含该短语</li><li>包含任何词语</li><li>包含所有词语</li><li>开始于</li><li>以任意词语开头</li><li>结束于</li><li>以任意词语结尾</li><li>不等于</li><li>不等于任何词语</li><li>不包含该短语</li><li>不包含任何词语</li><li>不包含所有词语</li><li>未始于</li><li>不以任何词语开头</li><li>未止于</li><li>未以任何词语结尾</li><li>已设置</li><li>未设置</li></ul><p>数值</p><ul><li>等于</li><li>不等于</li><li>大于</li><li>大于或等于</li><li>小于</li><li>小于或等于</li><li>已设置</li><li>未设置</li></ul><p>日期</p><ul><li>等于</li><li>不等于</li><li>晚于</li><li>晚于或等于</li><li>早于</li><li>早于或等于</li><li>已设置</li><li>未设置</li></ul> | <ul><li>每个派生字段有 5 个函数</li><li>每个派生字段有 200 个[运算符](#operators)。 单一运算符的一个例子是“反向链接域包含 google”。 </li></ul> | <p>新的派生字段</p> |
 
 {style="table-layout:auto"}
 
@@ -755,8 +755,8 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 ## 用例 1 {#classify-uc1}
 
-您确实有一个 CSV 文件，其中包括 `hotelID` 的关键列和与 `hotelID` 相关的一个或多个附加列：`city`、`rooms`、`hotel name`。
-您正在收集维度中的 [!DNL Hotel ID]，但希望创建一个从 CSV 文件中的 `hotelID` 派生的 [!DNL Hotel Name] 维度。
+您的CSV文件确实包括`hotelID`的键列以及与`hotelID`关联的一个或多个其他列： `city`、`rooms`、`hotel name`。
+您正在某个维度中收集[!DNL Hotel ID]，但想要创建从CSV文件中的`hotelID`派生的[!DNL Hotel Name]维度。
 
 **CSV 文件结构和内容**
 
@@ -978,7 +978,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>日期</li><li>日期时间</li></ul> | <ul><li>[!UICONTROL 范围]<ul><li>事件</li><li>会话</li><li>人员</li></ul></li><li>[!UICONTROL 值]：<ul><li>日期</li><li>日期时间</li><li>静态日期（用户输入）</li><li>静态日期时间（用户输入）</li><li>动态日期<ul><li>今天</li></ul></li><li>动态日期时间<ul><li>现在</li></ul></li></ul></li><li>[!UICONTROL 粒度]：<ul><li>秒</li><li>分钟</li><li>小时</li><li>天</li><li>周</li><li>月</li><li>季度</li><li>年</li></ul></li><li>为每个日期或日期时间返回：<ul><li>第一次（会话或人员内）</li><li>上次（会话或人员内）</li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段有 2 个函数</p> | <p>新的派生字段</p> |
+| <ul><li>日期</li><li>日期时间</li></ul> | <ul><li>[!UICONTROL 范围]<ul><li>事件</li><li>会话</li><li>人员</li></ul></li><li>[!UICONTROL 值]：<ul><li>日期</li><li>日期时间</li><li>静态日期（用户输入）</li><li>静态日期时间（用户输入）</li><li>动态日期<ul><li>今天</li></ul></li><li>动态日期时间<ul><li>现在</li></ul></li></ul></li><li>[!UICONTROL 粒度]：<ul><li>Seconds</li><li>Minutes</li><li>小时</li><li>Days</li><li>Weeks</li><li>Months</li><li>季度</li><li>年</li></ul></li><li>为每个日期或日期时间返回：<ul><li>第一次（会话或人员内）</li><li>上次（会话或人员内）</li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段有 2 个函数</p> | <p>新的派生字段</p> |
 
 {style="table-layout:auto"}
 
@@ -1014,8 +1014,8 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 您希望了解客户在一个会话中下单之前的搜索时间（以分钟为单位）。
 
-您定义一个新的 `Time Between Search And Order In Minutes` 派生字段，这是两个 [[!UICONTROL CASE WHEN] 函数](#case-when)的结果，用于定义[!UICONTROL 搜索时间]和[!UICONTROL 下单时间]的值。
-然后您用这两个值计算差值，其中[!UICONTROL 日期运算]函数的[!UICONTROL 范围]设置为[!UICONTROL 会话]，值设置为[!UICONTROL 搜索时间]和[!UICONTROL 下单时间]，[!UICONTROL 输出粒度]设置为[!UICONTROL 分钟]。 您为这两个值都选择[!UICONTROL 返回第一个]，以确保返回第一个[!UICONTROL 搜索时间]和[!UICONTROL 下单时间]。
+您定义了一个新的`Time Between Search And Order In Minutes`派生字段，该字段是两个[[!UICONTROL CASE WHEN]函数](#case-when)的结果，用于定义[!UICONTROL 搜索时间]和[!UICONTROL 订单时间]值。
+然后使用这两个值计算差值，其中[!UICONTROL DATE MATH]函数的[!UICONTROL 作用域]设置为[!UICONTROL 会话]，值设置为[!UICONTROL 搜索时间]和[!UICONTROL 订单时间]，输出粒度设置为[!UICONTROL 分钟]。对于这两个值，请选择[!UICONTROL 返回第一个]以确保返回第一个[!UICONTROL 搜索时间]和[!UICONTROL 订单时间]。
 
 ![日期运算规则 3 的屏幕快照](assets/datemath-3.png)
 
@@ -1287,7 +1287,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 1. 从选择器中选择&#x200B;**[!UICONTROL 架构字段]**。
 1. 选择 ![架构字段图标](assets/Smock_Folder_18_N.svg) **[!UICONTROL 查找数据集]**。
 1. 选择您的查找数据集，并找到您想要用于查找的字段。
-1. 将查找字段拖放到函数的任何可用输入字段上（例如 Case When）。 当该功能有效时，一个标有 **[!UICONTROL + 添加]**&#x200B;的蓝色框会允许您拖放字段，并自动在您放置查找字段的函数之前插入一个查找函数。 所插入的查找函数会自动填充所有字段的相关值。
+1. 将查找字段拖放到函数的任何可用输入字段上（例如Case When）。如果有效，则标有&#x200B;**[!UICONTROL + Add]**&#x200B;的蓝色框允许您删除该字段，并在您删除该查找字段的函数之前自动插入查找函数。插入的Lookup函数将自动填充所有字段的相关值。
    ![查找拖动](assets/lookup-drag.png)
 
 +++
@@ -1409,7 +1409,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 要创建一个公式：
 
-1. 只需在公式字段中开始输入内容，与您输入的内容匹配的数字字段就会出现在弹出菜单中。 或者，您可以从左侧窗格中的可用字段中拖放一个数字字段。
+1. 只需在公式字段中开始输入，与所键入内容匹配的数字字段即会显示在弹出菜单中。或者，您可以从左窗格的可用字段中拖放数值字段。
    ![更多数学信息 1](assets/math-more-info-1.png)
 
 1. 添加运算数（例如 `*` 表示乘法），后跟另一个字段或静态值。 您可以使用括号来定义更复杂的公式。
@@ -1880,7 +1880,7 @@ Customer Journey Analytics 使用 Perl 正则表达式语法的子集。 支持�
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>字符串</li></ul> | <ul><li>[!UICONTROL 字段]<ul><li>规则</li><li>标准字段</li><li>字段</li></ul></li><li>修剪空格</li><li>修剪特殊字符<ul><li>特殊字符的输入</li></ul></li><li>从左侧修剪<ul><li>从 <ul><li>字符串开始</li><li>位置<ul><li>位置 #</li></ul></li><li>字符串<ul><li>字符串值</li><li>索引</li><li>标记以包含字符串</li></ul></li></ul></li><li>到<ul><li>字符串结束</li><li>位置<ul><li>位置 #</li></ul></li><li>字符串<ul><li>字符串值</li><li>索引</li><li>标记以包含字符串</li></ul></li><li>长度</li></ul></li></ul></li><li>从右侧修剪<ul><li>从 <ul><li>字符串结束</li><li>位置<ul><li>位置 #</li></ul></li><li>字符串<ul><li>字符串值</li><li>索引</li><li>标记以包含字符串</li></ul></li></ul></li><li>到<ul><li>字符串开始</li><li>位置<ul><li>位置 #</li></ul></li><li>字符串<ul><li>字符串值</li><li>索引</li><li>标记以包含字符串</li></ul></li><li>长度</li></ul></li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段有 1 个函数</p> | <p>新的派生字段</p> |
+| <ul><li>字符串</li></ul> | <ul><li>[!UICONTROL 字段]<ul><li>规则</li><li>标准字段</li><li>字段</li></ul></li><li>修剪空格</li><li>修剪特殊字符<ul><li>特殊字符的输入</li></ul></li><li>从左侧修剪<ul><li>从 <ul><li>字符串开始</li><li>位置<ul><li>位置 #</li></ul></li><li>字符串<ul><li>字符串值</li><li>索引</li><li>标记以包含字符串</li></ul></li></ul></li><li>至<ul><li>字符串结束</li><li>位置<ul><li>位置 #</li></ul></li><li>字符串<ul><li>字符串值</li><li>索引</li><li>标记以包含字符串</li></ul></li><li>长度</li></ul></li></ul></li><li>从右侧修剪<ul><li>从 <ul><li>字符串结束</li><li>位置<ul><li>位置 #</li></ul></li><li>字符串<ul><li>字符串值</li><li>索引</li><li>标记以包含字符串</li></ul></li></ul></li><li>至<ul><li>字符串开始</li><li>位置<ul><li>位置 #</li></ul></li><li>字符串<ul><li>字符串值</li><li>索引</li><li>标记以包含字符串</li></ul></li><li>长度</li></ul></li></ul></li></ul> | <p>不适用</p> | <p>每个派生字段有 1 个函数</p> | <p>新的派生字段</p> |
 
 
 ## 用例 1 {#trim-uc1}
@@ -1999,7 +1999,7 @@ Customer Journey Analytics 使用 Perl 正则表达式语法的子集。 支持�
 
 | 输入数据类型 | 输入 | 包含的运算符 | 限制 | 输出 |
 |---|---|---|---|---|
-| <ul><li>数值</li><li>日期</li><li>日期时间</li><li>字符串</li></ul> | <ul><li>[!UICONTROL 字段] | <p><ul><li>整数<ul><li>转换为字符串</li></ul></li><li>双精度型<ul><li>转换为字符串<ul><li>包含要继承的小数位数（最多 5 位？）</li></ul></li><li>转换为整数</li></ul></li><li>字节<ul><li>转换为字符串</li></ul></li><li>长型<ul><li>转换为字符串</li></ul></li><li>日期<ul><li>转换为字符串<ul><li>提供定义输出格式的功能</li></ul></li><li>示例<ul><li>日期（例如 2025 年 1 月 7 日）<ul><li data-stringify-indent="1" data-stringify-border="0">MM-DD-YY<ul><li data-stringify-indent="2" data-stringify-border="0">示例 01-07-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM-DD-YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">示例 01-07-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-YY<ul><li data-stringify-indent="2" data-stringify-border="0">示例 07-01-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">示例 07-01-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">示例 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">示例 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/YY<ul><li data-stringify-indent="2" data-stringify-border="0">示例 01/07/25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">示例 01/07/2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">示例 2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">示例 25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MMM DD, YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">示例 2025 年 1 月 7 日</li></ul></li></ul></li></ul></li></ul></li><li>日期时间<ul><li>转换为字符串<ul><li>提供定义输出格式的功能</li></ul></li><li>示例<ul><li data-stringify-indent="0" data-stringify-border="0">日期时间（例如 2025 年 1 月 7 日，时间 1:30pm，52 秒）<ul><li data-stringify-indent="2" data-stringify-border="0">MM-DD-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">示例 01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM-DD-YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">示例 01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">示例 07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">示例 07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">示例 25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">示例 2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">示例 01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">示例 01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY/MM/DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">示例 2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY/MM/DD hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">示例 25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MMM DD, YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">示例 Jan 07, 2025 13:30:52</li></ul></li></ul></li></ul></li><li>字符串<ul><li>转换为数值<ul><li>如果我们的值其实不是数值，它们就会返回 null 值。</li><li>我们需要用户输入精度以及要使用的区域设置。 </li></ul></li></ul></li></ul></li></ul></p> | <p>每个派生字段有 3 个函数</p> | <p>新的派生字段</p> |
+| <ul><li>数值</li><li>日期</li><li>日期时间</li><li>字符串</li></ul> | <ul><li>[!UICONTROL 字段] | <p><ul><li>整数<ul><li>转换为字符串</li></ul></li><li>双精度型<ul><li>转换为字符串<ul><li>包含要继承的小数位数（最多 5 位？）</li></ul></li><li>转换为整数</li></ul></li><li>字节<ul><li>转换为字符串</li></ul></li><li>长型<ul><li>转换为字符串</li></ul></li><li>日期<ul><li>转换为字符串<ul><li>提供定义输出格式的功能</li></ul></li><li>示例<ul><li>日期（例如 2025 年 1 月 7 日）<ul><li data-stringify-indent="1" data-stringify-border="0">MM-DD-YY<ul><li data-stringify-indent="2" data-stringify-border="0">示例 01-07-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM-DD-YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">示例 01-07-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-YY<ul><li data-stringify-indent="2" data-stringify-border="0">示例 07-01-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">示例 07-01-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">示例 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">示例 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/YY<ul><li data-stringify-indent="2" data-stringify-border="0">示例 01/07/25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">示例 01/07/2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">示例 2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">示例 25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MMM DD, YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">示例 2025 年 1 月 7 日</li></ul></li></ul></li></ul></li></ul></li><li>日期时间<ul><li>转换为字符串<ul><li>提供定义输出格式的功能</li></ul></li><li>示例<ul><li data-stringify-indent="0" data-stringify-border="0">日期时间（例如 2025 年 1 月 7 日，时间 1:30pm，52 秒）<ul><li data-stringify-indent="2" data-stringify-border="0">MM-DD-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">示例 01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM-DD-YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">示例 01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">示例 07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">示例 07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">示例 25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">示例 2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">示例 01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">示例 01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY/MM/DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">示例 2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY/MM/DD hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">示例 25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MMM DD, YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">示例 Jan 07, 2025 13:30:52</li></ul></li></ul></li></ul></li><li>字符串<ul><li>转换为数值<ul><li>如果我们的值其实不是数值，它们就会返回 null 值。</li><li>我们需要用户输入精度以及要使用的区域设置。 </li></ul></li></ul></li></ul></li></ul></p> | <p>每个派生字段有 3 个函数</p> | <p>新的派生字段</p> |
 
 {style="table-layout:auto"}
 
@@ -2133,15 +2133,15 @@ Customer Journey Analytics 使用 Perl 正则表达式语法的子集。 支持�
 
 | 功能 | 限制 |
 |---|---|
-| <p>情况</p> | <ul><li>每个派生字段 5 个 Case When 函数</li><li>每个派生字段 200 个[运算符](#operators)</li></ul> |
+| <p>Case When</p> | <ul><li>每个派生字段 5 个 Case When 函数</li><li>每个派生字段 200 个[运算符](#operators)</li></ul> |
 | <p>分类</p> | <ul><li>每个派生字段 5 个分类函数</li><li>每个派生字段 200 个[运算符](#operators)</li></ul> |
-| <p>串联</p> | <ul><li>每个派生字段 2 个连接函数</li><li>每个连接函数有 3 个值</ul> |
+| <p>拼接</p> | <ul><li>每个派生字段 2 个连接函数</li><li>每个连接函数有 3 个值</ul> |
 | <p>日期数学</p> | <ul><li>每个派生字段有 2 个日期数学函数</li></ul> |
 | <p>删除重复数据</p> | <ul><li>每个派生字段 5 个重复数据删除函数</li></ul> |
 | <p>深度</p> | <ul><li>每个派生字段有 3 个深度函数</li></ul> |
 | <p>查找和替换</p> | <ul><li>每个派生字段 2 个查找和替换函数</li></ul> |
 | <p>查找</p> | <ul><li>每个派生字段 5 个查找函数</li></ul> |
-| <p>小写</p> | <ul><li>每个派生字段 2 个小写函数</li></ul> |
+| <p>小写字母</p> | <ul><li>每个派生字段 2 个小写函数</li></ul> |
 | <p>数学</p> | <ul><li>每个派生字段执行 25 次运算</li><li>每个派生字段有 5 个数学函数</li></ul> |
 | <p>合并字段</p> | <ul><li>每个派生字段 2 个合并字段函数</li></ul> |
 | <p>下一个或上一个</p> | <ul><li>每个派生字段 3 个下一个或上一个函数</li></ul> |
