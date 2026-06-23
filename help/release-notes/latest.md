@@ -27,16 +27,16 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 537fc30db0f6e6bddc54df7bbcc04d802226958f
+source-git-commit: 9d0d572a176bf61f2b02ba1c98f0fc4202797692
 workflow-type: tm+mt
-source-wordcount: 229
-ht-degree: 51%
+source-wordcount: 298
+ht-degree: 39%
 
 ---
 
 # 当前Customer Journey Analytics发行说明（2026年6月）
 
-**上次更新时间**：2026年6月22日
+**上次更新时间**：2026年6月23日
 
 这些发行说明涵盖2026年6月发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。 因此，这些发行说明每月更新几次。 请定期检查。
 
@@ -45,6 +45,7 @@ ht-degree: 51%
 | 功能和描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | -----------|-----------|-----------|
 | **Data Mirror** <br/>[Data Mirror](/help/data-mirror/data-mirror.md)是一种Experience Platform功能，它允许使用关系架构从外部数据仓库解决方案（[!DNL Snowflake]、[!DNL Azure Databricks]和[!DNL Google BigQuery]）将行级别的更改引入（更改数据捕获）到Customer Journey Analytics中。 它保留数据关系，强制唯一性，并支持版本控制，而无需上游提取、转换和加载(ETL)过程。 | 2026 年 3 月 25 日 | 2026年6月17日 |
+| **在AI助手中验证您的数据** <br/>您可以使用AI助手来[验证Adobe Experience Platform数据集的数据质量](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-ai/experience-cloud-ai/agents/data-validation)。 由Agent Orchestrator提供的数据验证功能可以对数据集执行统计和语义验证，分析数据集字段，识别数据质量问题，并返回具有可操作洞察信息的自然语言摘要。 | | 2026年6月22日 |
 
 ### Customer Journey Analytics 中的修复
 
