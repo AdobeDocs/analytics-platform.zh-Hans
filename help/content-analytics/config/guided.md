@@ -25,7 +25,7 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: e557971b741732dae55ba56ee4a44c039a5e3d78
+source-git-commit: 6af3e9063dc192814c888e786ca61ff1703aedf5
 workflow-type: tm+mt
 source-wordcount: 4177
 ht-degree: 63%
@@ -554,7 +554,7 @@ ht-degree: 63%
 >abstract="付费媒体需要适用于您的广告出版商的Experience Platform源连接器。 此沙盒中没有Google Ads或Meta Ads连接器。 在&#x200B;**[!UICONTROL Experience Platform]** > **[!UICONTROL 源]**&#x200B;界面中配置一个或多个连接器，并返回此步骤以继续配置Content Analytics付费媒体。"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/advertising/ads" text="Google广告源"
 
-#### 保存 {#web-save}
+##### 保存 {#web-save}
 
 指定Web渠道的详细信息后，选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存配置。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消配置。
 
