@@ -7,20 +7,14 @@ hide: true
 exl-id: 32b71016-7c53-409f-9ce4-521a40e2eb96
 autotag-review: '2026-05-19T08:44:26.806Z'
 TQID: 'https://experienceleague.adobe.com/R7c5-VutwSkyghNvwC2gZv2KUEJoa263AN0Tkdg3w4o'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: 8c577ff8508f15944ced77aaf20b692c911fdd3e
 workflow-type: tm+mt
-source-wordcount: 934
+source-wordcount: 933
 ht-degree: 2%
 
 ---
@@ -45,7 +39,7 @@ Customer Journey Analytics和Adobe Analytics中的数据馈送允许您向第三
 | **计算量度**<br/> | 不可用 | 不可用 |
 | **持久性模型** | 灵活。 数据视图中的持久性设置（分配和到期）在生成馈送时在报告时应用。 支持数据视图中可用的所有分配设置：**原有**、**最近**、**全部**、**第一个已知**&#x200B;和&#x200B;**最后一个已知**。 | 仅表示&#x200B;**最近（最近联系）**&#x200B;和&#x200B;**原始值（首次联系）**&#x200B;归因模型。 线性分配的处理方式与最近联系相同。 |
 | **输出文件格式** | Parquet<p>本机支持复杂的嵌套和结构化数据。 产品列表表示为结构化数组/嵌套对象。 </p><p>需要Parquet感知工具才能读取，例如BigQuery、Snowflake或Apache Spark。</p> | TSV<p>平坦、可读的行。 本身不支持结构化数据；复杂字段（如产品列表）必须编码为需要自定义分析逻辑的专有分隔字符串。</p> |
-| **提交目标** | Amazon S3、Azure RBAC、Azure SAS、Google Cloud Platform、Snowflake。 | Amazon S3、Azure RBAC、Azure SAS、Google云平台。 还支持&#x200B;**SFTP**。 |
+| **提交目标** | Amazon S3、Azure RBAC、Azure SAS、Google云平台。 | Amazon S3、Azure RBAC、Azure SAS、Google云平台。 还支持&#x200B;**SFTP**。 |
 
 {style="table-layout:auto"}
 
