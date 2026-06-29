@@ -28,7 +28,7 @@ topic_v2:
 source-git-commit: 6af3e9063dc192814c888e786ca61ff1703aedf5
 workflow-type: tm+mt
 source-wordcount: 4177
-ht-degree: 63%
+ht-degree: 65%
 
 ---
 
@@ -550,9 +550,9 @@ ht-degree: 63%
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_paidmedia_adplatforms_nosourceconnectors"
->title="无源连接器"
->abstract="付费媒体需要适用于您的广告出版商的Experience Platform源连接器。 此沙盒中没有Google Ads或Meta Ads连接器。 在&#x200B;**[!UICONTROL Experience Platform]** > **[!UICONTROL 源]**&#x200B;界面中配置一个或多个连接器，并返回此步骤以继续配置Content Analytics付费媒体。"
->additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/advertising/ads" text="Google广告源"
+>title="没有源连接器"
+>abstract="付费媒体需要为您的广告发布平台配置 Experience Platform 源连接器。 此沙盒中没有 Google Ads 或 Meta Ads 连接器可用。 在 **[!UICONTROL Experience Platform]** > **[!UICONTROL 源]**&#x200B;界面中配置一个或多个连接器，然后返回到此步骤，继续配置 Content Analytics 付费媒体。"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/advertising/ads" text="Google Ads 源"
 
 ##### 保存 {#web-save}
 

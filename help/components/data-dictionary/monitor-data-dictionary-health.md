@@ -27,7 +27,7 @@ ht-degree: 88%
 
 >[!CONTEXTUALHELP]
 >id="component_datadictionary"
->title="数据字典"
+>title="数据词典"
 >abstract="选择此选项后，主组件将与所有有权访问重复组件的用户共享（包括组件所有者以及与其共享组件的用户）。 这些用户随后可以在组件列表中选择该主组件，用于未来项目。 但是，他们无法编辑该组件，即使他们曾是已合并重复组件的所有者。 <br/>仅当主组件为区段、计算量度或日期范围时，此选项才可用。 量度和维度始终对所有用户可用。"
 >
 >When this option is deselected, the primary component still replaces duplicates in existing projects and segments, but users who didn't previously have access to it can't access it from the component list for future projects. "
