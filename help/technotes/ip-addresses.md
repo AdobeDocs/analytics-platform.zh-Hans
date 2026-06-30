@@ -158,4 +158,4 @@ ht-degree: 32%
 >
 >Customer Journey Analytics使用的[域](domains.md)
 >
->CX Enterprise使用的[个IP地址](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)
+>CX Enterprise使用的[个IP地址](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/data-collection/ip-addresses)

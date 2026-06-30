@@ -56,7 +56,7 @@ Adobe Experience Platform和Customer Journey Analytics中的以下功能使您�
 * Adobe Experience Platform
    * [数据集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/overview)
    * [数据准备](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/home)
-   * [数据蒸馏器](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview)
+   * [数据蒸馏器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/data-distiller/overview)
 * Customer Journey Analytics
    * [连接](/help/connections/overview.md)
    * [数据视图](/help/data-views/data-views.md)，包括[派生字段&#x200B;](/help/data-views/derived-fields/derived-fields.md)
@@ -122,8 +122,8 @@ CX Enterprise中的以下功能使您能够有效地根据见解采取行动：
 * [创建并发布受众](/help/components/audiences/publish.md)以便从Customer Journey Analytics激活
 * 通过CX企业版产品激活受众：
    * [在AJO和Adobe Target中运行实验](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment)，并使用[实验面板](/help/analysis-workspace/c-panels/experimentation.md)测量Customer Journey Analytics中各种变化的影响
-   * [向AJO中的用户提供应用程序内参与](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app)。
-* 使用Adobe Real-time CDP [将受众](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview)激活到外部目标。
+   * [向AJO中的用户提供应用程序内参与](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/channels/in-app/get-started-in-app)。
+* 使用Adobe Real-time CDP [将受众](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/activation-overview)激活到外部目标。
 
 ## 与组织共享见解
 
