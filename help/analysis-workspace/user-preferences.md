@@ -27,7 +27,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
+source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
 workflow-type: tm+mt
 source-wordcount: 4356
 ht-degree: 93%
@@ -86,7 +86,7 @@ ht-degree: 93%
 |  | 隐藏模板选项卡 | 隐藏您组织内所有用户的“模板”选项卡。 |
 | **项目共享** | | |
 | | 仅允许与 Workspace 用户共享 | 启用此选项后，组织内的用户将无法在&#x200B;**[!UICONTROL 共享]**&#x200B;菜单中看到&#x200B;**[!UICONTROL 与任何人共享]**&#x200B;选项。 这意味着，用户无法与已在您的组织中拥有 Analysis Workspace 帐户的人员共享项目，如[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)中所述。<br/>默认情况下，除许可了 Healthcare Shield 的客户外，所有组织均禁用此选项（这意味着用户可以与组织外部的人员共享项目）。 <p>在启用或禁用此选项时，请考虑以下事项：<ul><li>启用此选项后，之前通过[!UICONTROL 与任何人共享]共享选项获得项目访问权限的人员将无法再访问该项目。</li><li>如果启用此选项（仅允许与 Workspace 用户共享），然后将其禁用（允许与任何人共享），则之前通过[!UICONTROL 与任何人共享]共享选项获得项目访问权限的人员不会自动重新获得对项目的访问权限。 在这种情况下，已共享项目的用户必须启用在与任何人共享项目时可用的&#x200B;[!UICONTROL **链接已激活**]&#x200B;选项&#x200B;**（[!UICONTROL 共享]** > **[!UICONTROL 与任何人共享]**），如[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)中所述。</li><li>**对于许可 Healthcare Shield 的客户：**&#x200B;该选项默认启用且无法禁用。 在禁用此选项以便用户可以使用[!UICONTROL 与任何人共享]的共享选项之前，您首先需要在 Adobe Admin Console 中添加[!UICONTROL 与任何人共享项目链接]权限（位于[!UICONTROL 报告工具]下）。 添加权限后，您可以禁用此选项，然后接受由此产生的法律声明。 有关如何在 Admin Console 中添加权限的信息，请参阅[在 Admin Console 中管理产品权限](https://helpx.adobe.com/cn/enterprise/using/manage-permissions-and-roles.html)。</li></ul> |
-| | 要求进行 CX Enterprise 身份验证 | 启用此选项后，在Analysis Workspace中通过&#x200B;**[!UICONTROL 与任何人共享]**&#x200B;选项授予项目访问权限的用户必须使用其CX Enterprise凭据进行身份验证。<p>启用此选项后，每当用户使用[!UICONTROL 与任何人共享]共享选项共享项目时，“共享”对话框中就会启用[!UICONTROL 需要CX企业身份验证]选项，并且共享项目的用户无法禁用该选项。 有关用户如何与任何人共享项目的信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)。 <p> <p>启用此选项时，请考虑以下事项： <ul><li>启用此选项后，之前与[!UICONTROL 与任何人共享]共享选项共享的所有项目，以及未启用[!UICONTROL 需要CX企业身份验证]选项的所有项目都将被停用。<p>如果启用此选项（需要CX企业身份验证），稍后又禁用此选项（允许具有链接的任何人访问该项目），则之前通过[!UICONTROL 与任何人共享]共享选项获得项目访问权限的用户不会自动重新获得对该项目的访问权限。 在这种情况下，已共享项目的用户必须启用在与任何人共享项目时可用的[!UICONTROL 链接已激活]选项&#x200B;**（[!UICONTROL 共享]** > **[!UICONTROL 与任何人共享]** > **[!UICONTROL 链接已激活]**），如[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)中所述。</li><li>仅在组织内实施 SSO 后，此选项才可用。 有关系统管理员如何为组织启用 SSO 的信息，请参阅[设置身份标识和单点登录](https://helpx.adobe.com/cn/enterprise/using/set-up-identity.html)。</p><p>如果已为组织配置 SSO，请检查控制台中是否实施了任何类型的自动帐户创建。 通常，系统管理员会进行此设置，如[启用自动帐户创建](https://helpx.adobe.com/cn/enterprise/using/automatic-account-creation.html)中所述。</li><li>如果您的组织许可 Healthcare Shield，则默认情况下会启用此选项且无法禁用。</li></ul> |
+| | 需要 Experience Cloud 身份验证 | 启用此选项后，在Analysis Workspace中通过&#x200B;**[!UICONTROL 与任何人共享]**&#x200B;选项授予项目访问权限的用户必须使用其CX Enterprise (Experience Cloud)凭据进行身份验证。<p>启用此选项后，每当用户使用[!UICONTROL 与任何人共享]共享选项共享项目时，“共享”对话框中就会启用[!UICONTROL 需要CX企业身份验证]选项，并且共享项目的用户无法禁用该选项。 有关用户如何与任何人共享项目的信息，请参阅[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)。 <p> <p>启用此选项时，请考虑以下事项： <ul><li>启用此选项后，之前与[!UICONTROL 与任何人共享]共享选项共享的所有项目，以及未启用[!UICONTROL 需要CX企业身份验证]选项的所有项目都将被停用。<p>如果启用此选项（需要CX企业身份验证），稍后又禁用此选项（允许具有链接的任何人访问该项目），则之前通过[!UICONTROL 与任何人共享]共享选项获得项目访问权限的用户不会自动重新获得对该项目的访问权限。 在这种情况下，已共享项目的用户必须启用在与任何人共享项目时可用的[!UICONTROL 链接已激活]选项&#x200B;**（[!UICONTROL 共享]** > **[!UICONTROL 与任何人共享]** > **[!UICONTROL 链接已激活]**），如[共享项目](/help/analysis-workspace/curate-share/share-projects.md)中的[与任何人共享项目（无需登录）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)中所述。</li><li>仅在组织内实施 SSO 后，此选项才可用。 有关系统管理员如何为组织启用 SSO 的信息，请参阅[设置身份标识和单点登录](https://helpx.adobe.com/cn/enterprise/using/set-up-identity.html)。</p><p>如果已为组织配置 SSO，请检查控制台中是否实施了任何类型的自动帐户创建。 通常，系统管理员会进行此设置，如[启用自动帐户创建](https://helpx.adobe.com/cn/enterprise/using/automatic-account-creation.html)中所述。</li><li>如果您的组织许可 Healthcare Shield，则默认情况下会启用此选项且无法禁用。</li></ul> |
 | 项目评论 | 允许对项目进行评论 | 该选项启用后，Analysis Workspace 中每个项目的右侧边栏都会出现一个评论区域。 <p>项目所有者可以为某个给定项目禁用评论区域，如[创建项目](/help/analysis-workspace/build-workspace-project/create-projects.md)中所述。</p> <p>有关在 Analysis Workspace 项目中进行评论的更多信息，请参阅[在项目中添加和管理评论](/help/analysis-workspace/build-workspace-project/comment-projects.md)。</p> |
 
 {style="table-layout:auto"}
@@ -131,7 +131,7 @@ ht-degree: 93%
 |  | [面板类型](/help/analysis-workspace/c-panels/panels.md#panel-types) | <ul><li>自由格式（默认）</li><li>空白</li><li>快速洞察</li></ul> |
 |  | 实例计数 | 启用[!UICONTROL 计算重复实例]以指定是否将重复实例计入报告中。 例如，启用后，同一页面的多个连续页面查看将会被视为多个页面查看。 禁用时，对同一页面的多次连续页面查看将会被视为一次页面查看。 <p>**注意：**&#x200B;此设置仅影响某些量度（例如会话），不适用于流量或流失可视化图表。</p> |
 |  | 数字格式 | <ul><li>1,000.00（默认）</li><li>1.000,00</li><li>1 000,00</li></ul> |
-|  | CSV 分隔符 | <ul><li>逗号（默认）</li><li>分号</li><li>冒号</li><li>竖线符号</li><li>期间</li><li>空间</li><li>制表符</li></ul> |
+|  | CSV 分隔符 | <ul><li>逗号（默认）</li><li>分号</li><li>冒号</li><li>竖线</li><li>句点</li><li>空格</li><li>制表符</li></ul> |
 |  | 显示注释 | 选择注释是否在您的项目中可见。 有关注释的更多信息，请参阅[注释概述](/help/components/annotations/overview.md)。 |
 
 
@@ -163,7 +163,7 @@ ht-degree: 93%
 | 部分 | 偏好设置 | 选项 |
 | --- | --- | --- |
 | **表格** | | |
-| | 表类型 | <ul><li>自由格式</li><li>表生成器</li></ul> |
+| | 表类型 | <ul><li>自由格式表</li><li>表生成器</li></ul> |
 | | 默认表量度 | <ul><li>事件</li><li>会话</li><li>人员</li></ul> |
 | | 默认表维度 | 从分钟、小时、天、周、月、季度或年中选择。 |
 | | 调整日期 | 选择此选项可将每列的日期与同一行的所有开始日期对齐。 |
@@ -270,7 +270,7 @@ ht-degree: 93%
 | | 存储体数量 | 在可视化中选择日期范围（储存体）的数量。 存储段的最大数量为 50。 <p>有关更多信息，请参阅[直方图](/help/analysis-workspace/visualizations/histogram.md)。</p> |
 | | 计算方法 | 从以下选项中进行选择： <ul><li>点击</li><li>会话</li><li>人员</li></ul> <p>例如，当与页面浏览次数结合使用时，您可以选择每个人员的页面浏览次数、访问的页面浏览次数或每次事件的页面浏览次数。 对于点击来说，“发生次数”可作为自由格式表中的 y 轴量度。</p> |
 | **[摘要变化](/help/analysis-workspace/visualizations/summary-number-change.md)** | | |
-| | 值 | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>百分比变化</li><li>原始差异</li></ul> |
+| | 值 | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>比例更改</li><li>原始差异</li></ul> |
 | | 百分比 | 以百分比显示摘要更改可视化效果的值。 |
 | | 图例可见 | 此设置允许您为摘要变化可视化图表隐藏详细的图例文本。 |
 | **[摘要数字](/help/analysis-workspace/visualizations/summary-number-change.md)** | | |
@@ -305,7 +305,7 @@ ht-degree: 93%
 
 如果您更希望为 Customer Journey Analytics 用户界面使用深色背景，可以切换到[!UICONTROL 深色主题]。
 
-1. 选择右上角的CX Enterprise用户图标。
+1. 选择右上角的用户图标。
 
    ![dark-theme](assets/dark-theme.png)
 

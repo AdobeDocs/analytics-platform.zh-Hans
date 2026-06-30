@@ -25,10 +25,10 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
+source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
 workflow-type: tm+mt
-source-wordcount: 894
-ht-degree: 3%
+source-wordcount: 896
+ht-degree: 5%
 
 ---
 
@@ -54,15 +54,15 @@ Customer Journey Analytics为团队提供了一些工具，用于分析和优化
 Adobe Experience Platform和Customer Journey Analytics中的以下功能使您能够大规模摄取和管理产品数据：
 
 * Adobe Experience Platform
-   * [数据集&#x200B;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/overview)
-   * [数据准备&#x200B;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/home)
-   * [数据&#x200B;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/data-distiller/overview)
+   * [数据集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/overview)
+   * [数据准备](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/home)
+   * [数据蒸馏器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/data-distiller/overview)
 * Customer Journey Analytics
-   * [连接&#x200B;](/help/connections/overview.md)
+   * [连接](/help/connections/overview.md)
    * [数据视图](/help/data-views/data-views.md)，包括[派生字段&#x200B;](/help/data-views/derived-fields/derived-fields.md)
-   * [区段&#x200B;](/help/components/segments/seg-overview.md)
+   * [区段](/help/components/segments/seg-overview.md)
    * [计算量度](/help/components/calc-metrics/calc-metr-overview.md)
-   * [引导式分析&#x200B;：时间线&#x200B;](/help/guided-analysis/types/timeline.md)
+   * [引导式分析：时间线](/help/guided-analysis/types/timeline.md)
 
 ## 衡量客户获取和激活
 
@@ -75,10 +75,10 @@ Adobe Experience Platform和Customer Journey Analytics中的以下功能使您�
 
 通过Customer Journey Analytics中的以下功能，您可以有效地衡量客户获取和激活情况：
 
-* [引导式分析&#x200B;：主动式增长](/help/guided-analysis/types/active-growth.md)
+* [指导分析：主动增长](/help/guided-analysis/types/active-growth.md)
 * [指导分析：净增长](/help/guided-analysis/types/net-growth.md)
 * [指导分析：趋势](/help/guided-analysis//types/trends.md)
-* [归因面板&#x200B;](/help/analysis-workspace/c-panels/attribution.md)
+* [归因面板](/help/analysis-workspace/c-panels/attribution.md)
 * 包含营销渠道维度的[自由格式表](/help/analysis-workspace/c-panels/freeform-panel.md)（使用[派生字段](/help/data-views/derived-fields/derived-fields.md)创建）
 
 ## 衡量参与度和采用程度
@@ -95,9 +95,9 @@ Customer Journey Analytics中的以下功能可帮助您跟踪产品参与和采
 * [指导分析：Funnel](/help/guided-analysis/types/funnel.md)
 * [指导分析：转化趋势](/help/guided-analysis/types/conversion-trends.md)
 * [指导分析：发布影响](/help/guided-analysis/types/release-impact.md)
-* [指导分析：首次使用影响&#x200B;](/help/guided-analysis/types/first-use-impact.md)
+* [指导分析：首次使用影响](/help/guided-analysis/types/first-use-impact.md)
 * [引导式分析：时间线](/help/guided-analysis/types/timeline.md)
-* [自由格式表&#x200B;](/help/analysis-workspace/c-panels/freeform-panel.md)
+* [自由格式表](/help/analysis-workspace/c-panels/freeform-panel.md)
 * [流量](/help/analysis-workspace/visualizations/c-flow/flow.md)
 
 ## 衡量保留率和流失率
@@ -108,10 +108,10 @@ Customer Journey Analytics中的以下功能可帮助您跟踪产品参与和采
 
 Customer Journey Analytics中的以下功能可帮助您有效地跟踪保留和流失情况：
 
-* [引导式分析：保留](/help/guided-analysis/types/retention.md)&#x200B;
+* [指导分析：保留](/help/guided-analysis/types/retention.md)
 * [指导分析：主动增长](/help/guided-analysis/types/active-growth.md)
 * [指导分析：净增长](/help/guided-analysis/types/net-growth.md)
-* [同类群组表&#x200B;](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
+* [同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
 
 ## 可操作的产品洞察
 
@@ -119,13 +119,13 @@ Customer Journey Analytics中的以下功能可帮助您有效地跟踪保留和
 
 CX Enterprise中的以下功能使您能够有效地根据见解采取行动：
 
-* [创建并发布受众](/help/components/audiences/publish.md)&#x200B;以便从Customer Journey Analytics激活
+* [创建并发布受众](/help/components/audiences/publish.md)以便从Customer Journey Analytics激活
 * 通过CX企业版产品激活受众：
    * [在AJO和Adobe Target中运行实验](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment)，并使用[实验面板](/help/analysis-workspace/c-panels/experimentation.md)测量Customer Journey Analytics中各种变化的影响
-   * [向AJO中的用户提供应用程序内参与](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/channels/in-app/get-started-in-app)
-* 使用Adobe Real-time CDP [将受众](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/activation-overview)激活到外部目标&#x200B;
+   * [向AJO中的用户提供应用程序内参与](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/channels/in-app/get-started-in-app)。
+* 使用Adobe Real-time CDP [将受众](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/activation-overview)激活到外部目标。
 
-## 与组织共享见解&#x200B;。
+## 与组织共享见解
 
 跨团队传达关键调查结果，以协调工作、促进协作，并确保每个人都朝着共享的产品和业务目标努力。
 

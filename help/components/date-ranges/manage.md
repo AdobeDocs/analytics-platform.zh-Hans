@@ -15,10 +15,10 @@ subfeature_v2:
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
+source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
 workflow-type: tm+mt
-source-wordcount: 606
-ht-degree: 29%
+source-wordcount: 590
+ht-degree: 25%
 
 ---
 
@@ -105,15 +105,7 @@ ht-degree: 29%
 
 * 在[[!UICONTROL 日期范围]列表](#date-ranges-list)中，选择日期范围的标题。
 
-您使用[日期范围生成器](/help/components/date-ranges/create.md#date-range-builder)编辑日期范围。
-
-
-
-
-使用日期范围管理器共享、重命名或删除日期范围。 进入日期管理器：
-
-1. 使用您的 Adobe ID 凭据登录 [analytics.adobe.com](https://analytics.adobe.com)。
-1. 依次转到[!UICONTROL 组件] > [!UICONTROL 日期范围]。
+使用[日期范围生成器](/help/components/date-ranges/create.md#date-range-builder)编辑日期范围。使用[日期范围管理器](/help/components/date-ranges/manage.md)共享、重命名或删除日期范围。
 
 
 <!--

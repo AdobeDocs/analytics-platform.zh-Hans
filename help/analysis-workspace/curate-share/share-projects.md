@@ -26,9 +26,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
+source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
 workflow-type: tm+mt
-source-wordcount: 2181
+source-wordcount: 2183
 ht-degree: 90%
 
 ---
@@ -102,8 +102,7 @@ ht-degree: 90%
 
    或
 
-   要仅共享单个项目，您可以打开要共享的项目，然后选择&#x200B;**[!UICONTROL 共享]** > **[!UICONTROL 与工作区用户共享]**。
-如果存在未保存的更改，则将提示您首先保存您的项目。
+   要仅共享单个项目，您可以打开要共享的项目，然后选择&#x200B;**[!UICONTROL 共享]** > **[!UICONTROL 与工作区用户共享]**。如果存在未保存的更改，则将提示您首先保存您的项目。
 
    此时会显示“共享项目”对话框。 该对话框的&#x200B;[!UICONTROL **通过链接分享**]&#x200B;和&#x200B;[!UICONTROL **设置**]&#x200B;部分仅在共享单个项目时可见。
 
@@ -203,9 +202,9 @@ ht-degree: 90%
 
 1. 选择是否启用以下安全选项（您的 Customer Journey Analytics 管理员可控制此选项）：
 
-   * **[!UICONTROL 需要CX Enterprise身份验证]：**
+   * **[!UICONTROL 要求进行 Experience Cloud 身份验证]：**
 
-     启用此选项后，只有那些能够访问项目的用户才能登录到创建您共享的项目的CX Enterprise组织。 但是，您与其共享的用户无需具有访问 Customer Journey Analytics 的权限。
+     启用此选项后，只有那些能够访问项目的用户才能登录到创建了共享项目的CX Enterprise (Experience Cloud)组织。 但是，您与其共享的用户无需具有访问 Customer Journey Analytics 的权限。
 
      Customer Journey Analytics 管理员可为公司配置此偏好设置，如[偏好设置](/help/analysis-workspace/user-preferences.md)所述。 根据管理员如何配置此选项，您可能会遇到以下情况：
 
