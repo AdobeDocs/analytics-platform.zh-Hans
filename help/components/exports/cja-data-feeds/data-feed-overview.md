@@ -19,7 +19,7 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 9c3546c33914feb7a00b5bb78a575dd511cabb5f
+source-git-commit: 66a8a96da6710d20b01b9315fe87ba38c54c2511
 workflow-type: tm+mt
 source-wordcount: 221
 ht-degree: 21%
@@ -27,6 +27,8 @@ ht-degree: 21%
 ---
 
 # 数据馈送概述
+
+{{release-limited-testing}}
 
 数据馈送是从Customer Journey Analytics中获取原始数据的有效方法。 您可以根据贵组织的决定，在Adobe以外的其他平台中使用此原始数据。 数据在每小时结束时以小时为单位分批发送，或者在每天结束时以天为单位分批发送。
 

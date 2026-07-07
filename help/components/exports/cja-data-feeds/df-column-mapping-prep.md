@@ -21,7 +21,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 66a8a96da6710d20b01b9315fe87ba38c54c2511
 workflow-type: tm+mt
 source-wordcount: 1092
 ht-degree: 3%
@@ -29,6 +29,8 @@ ht-degree: 3%
 ---
 
 # 准备将数据馈送列从Adobe Analytics映射到Customer Journey Analytics
+
+{{release-limited-testing}}
 
 与Adobe Analytics相比，Customer Journey Analytics在确定可包含在数据馈送中的列方面提供了更灵活的架构。 大多数组织从Customer Journey Analytics导出的数据馈送列与从Adobe Analytics导出的数据馈送列有所不同。 这些差异是由于以下因素造成的：
 
