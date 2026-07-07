@@ -6,11 +6,28 @@ hide: true
 exl-id: 81d6e79e-8324-4726-9a48-10177b0a91b1
 autotag-review: '2026-05-19T09:53:49.596Z'
 TQID: 'https://experienceleague.adobe.com/Yt2CmGRpO6s8natf9s-KLsMBKHc-qdSQHvi3UyPyLgg'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: ae3aff40-b2f6-4df1-8c01-0b0720d1510fid: b3197353-f189-4932-8378-3f3bc40e6071id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5eid: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2:
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 66a8a96da6710d20b01b9315fe87ba38c54c2511
 workflow-type: tm+mt
 source-wordcount: 3920
@@ -446,7 +463,7 @@ EF ID，用于Adobe Advertising集成。
 
 Customer Journey Analytics不接受开箱即用的“排除的点击”。 但是，如果您具有标记要排除的特定点击的XDM字段，则可以重新创建此功能：
 
-1. 确保将标记已排除点击的XDM字段作为一个组件（维度或量度，具体取决于您如何设置此标记）包含在内。 在报告](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview)中选择[隐藏组件可能对此字段有益。
+1. 确保将标记已排除点击的XDM字段作为一个组件（维度或量度，具体取决于您如何设置此标记）包含在内。 在报告[&#128279;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview)中选择隐藏组件可能对此字段有益。
 1. 在[数据视图设置](/help/data-views/session-settings.md)中，选择&#x200B;**[!UICONTROL 添加区段]**&#x200B;下拉菜单，然后选择&#x200B;**[!UICONTROL 创建区段]**。
 1. 创建一个区段，以排除存在排除点击组件的所有事件或包含要排除的值。
 1. 在区段和数据视图上选择&#x200B;**[!UICONTROL 保存]**。
