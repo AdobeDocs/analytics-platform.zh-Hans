@@ -3,6 +3,7 @@ title: 当前 Customer Journey Analytics 发行说明
 description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
+hold: true
 TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -27,25 +28,28 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 9c3546c33914feb7a00b5bb78a575dd511cabb5f
+source-git-commit: b27408ce620b9dc62c06e4dc6dda00b2aef1c46d
 workflow-type: tm+mt
-source-wordcount: 615
-ht-degree: 44%
+source-wordcount: 746
+ht-degree: 38%
 
 ---
 
-# 当前Customer Journey Analytics发行说明（2026年6月）
+# 当前Customer Journey Analytics发行说明（2026年7月）
 
-**上次更新时间**：2026年6月25日
+**上次更新日期**：2026年7月8日
 
-这些发行说明涵盖2026年6月发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。 因此，这些发行说明每月更新几次。 请定期检查。
+这些发行说明涵盖2026年7月发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。 因此，这些发行说明每月更新几次。 请定期检查。
 
 ## 新增功能或更新后的功能
 
 | 功能和描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | -----------|-----------|-----------|
-| **Data Mirror** <br/>[Data Mirror](/help/data-mirror/data-mirror.md)是一种Experience Platform功能，它允许使用关系架构从外部数据仓库解决方案（[!DNL Snowflake]、[!DNL Azure Databricks]和[!DNL Google BigQuery]）将行级别的更改引入（更改数据捕获）到Customer Journey Analytics中。 它保留数据关系，强制唯一性，并支持版本控制，而无需上游提取、转换和加载(ETL)过程。 | 2026 年 3 月 25 日 | 2026年6月17日 |
-| **在AI助手中验证您的数据** <br/>您可以使用AI助手来[验证Adobe Experience Platform数据集的数据质量](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-ai/experience-cloud-ai/agents/data-validation)。 由Agent Orchestrator提供的数据验证功能可以对数据集执行统计和语义验证，分析数据集字段，识别数据质量问题，并返回具有可操作洞察信息的自然语言摘要。 | | 2026年6月22日 |
+| **子事件分析** <br/>子事件分析允许您在比事件级别更精细的级别上分析数据。 您可以对事件中的单个容器进行分段，而不是筛选整个事件。 <p>例如，您可以按特定产品类别进行分段，而不包括同一订单中购买的所有其他产品。 您还可以将属于事件数据的对象或数组定义为数据视图中的单独容器。</p> | 7月8日 | 2026年7月底 |
+| **CJA B2B：现在基于CJA B2B帐户的连接也支持临时和关系数据集** <br/>临时和关系数据集。<p>（文档链接见下文。）</p> | | 2026年7月20日 |
+| **付费媒体数据** <br/>付费媒体已添加为Content Analytics的第三个渠道。<p>（文档链接见下文。）</p> | | 2026年7月31日 |
+| **连接使用情况UI更新** <br/>您可以查看每个模块的使用详细信息，例如Customer Journey Analytics、Customer Journey Analytics B2B edition。 此外，您还可以按月划分每个模块的使用情况报表。<p>（文档链接见下文。）</p> | | 2026年7月31日 |
+| **CX Enterprise Co-worker：从Adobe Analytics迁移到Customer Journey Analytics时验证您的数据** <br/>CX Enterprise Co-worker的一项新技能允许您根据现有Adobe Analytics实施的数据验证Customer Journey Analytics实施中的数据。 <p>该技能会自动比较每个维度、量度和趋势，然后生成人工智能驱动的洞察和建议，您可以实施这些洞察和建议来促进迁移到Customer Journey Analytics。</p><p>（文档链接见下文。）</p> | | 2026年7月底 |
 
 ### Customer Journey Analytics 中的修复
 
