@@ -1,5 +1,5 @@
 ---
-title: 当前 Customer Journey Analytics 发行说明
+title: 当前的Customer Journey Analytics发行说明
 description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
@@ -27,10 +27,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: ce00cd801894776f2128a86504f5c78afe438986
+source-git-commit: 4dd845eaf5f101e21a8e754ac588cb837398b975
 workflow-type: tm+mt
-source-wordcount: 655
-ht-degree: 44%
+source-wordcount: 666
+ht-degree: 41%
 
 ---
 
@@ -44,10 +44,10 @@ ht-degree: 44%
 
 | 功能和描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | -----------|-----------|-----------|
-| **子事件分析** <br/>子事件分析允许您在比事件级别更精细的级别上分析数据。 您可以对事件中的单个容器进行分段，而不是筛选整个事件。 <p>例如，您可以按特定产品类别进行分段，而不包括同一订单中购买的所有其他产品。 您还可以将属于事件数据的对象或数组定义为数据视图中的单独容器。</p> | 2026年7月15日 | 2026年7月底 |
+| **子事件分析** <br/>子事件分析允许您在比事件级别更精细的级别上分析数据。 您可以对事件中的单个容器进行分段，而不是筛选整个事件。 <p>例如，您可以按特定产品类别进行分段，而不包括同一订单中购买的所有其他产品。 您还可以将属于事件数据的对象或数组定义为数据视图中的单独容器。</p><p>（文档链接见下文。）</p> | 2026年7月15日 | 2026年7月底 |
 | **B2B edition：在Customer Journey Analytics B2B edition中，基于帐户的连接现在也支持临时和关系数据集** <br/>临时和关系数据集。<p>（文档链接见下文。）</p> | | 2026年7月20日 |
 | **Content Analytics：付费媒体数据** <br/>付费媒体现已作为Content Analytics的第三个渠道提供。<p>（文档链接见下文。）</p> | | 2026年7月31日 |
-| **连接使用情况UI更新** <br/>您现在可以看到每个模块的使用详细信息，例如Customer Journey Analytics或Customer Journey Analytics B2B edition。 此外，您现在可以按月划分每个模块的使用情况报表。<p>（文档链接见下文。）</p> | | 2026年7月31日 |
+| **连接使用情况界面更新** <br/>在管理连接时，您现在可以在“使用情况”界面中查看每个模块的使用详细信息，例如Customer Journey Analytics或Customer Journey Analytics B2B edition。 <p>此外，您现在可以按月划分每个模块的使用情况报表。</p><p>（文档链接见下文。）</p> | | 2026年7月31日 |
 | **CX Enterprise Co-worker：从Adobe Analytics迁移到Customer Journey Analytics时验证您的数据** <br/>CX Enterprise Co-worker的一项新技能允许您根据现有Adobe Analytics实施的数据验证Customer Journey Analytics实施中的数据。 <p>这项技能可根据需要自动分别比较每个维度、量度和趋势。 它还可以将所有Adobe Analytics报表包与所有Customer Journey Analytics数据视图进行比较。 然后，该技能可生成由AI驱动的见解和推荐，您可实施这些见解和推荐，以方便您迁移到Customer Journey Analytics。</p><p>（文档链接见下文。）</p> | | 2026年7月底 |
 
 ### Customer Journey Analytics 中的修复
@@ -67,13 +67,13 @@ ht-degree: 44%
 **计划报告**： AN-450715
 **共享的量度和维度**：
 **受众分析**：
-**其他**： AN-457063，
+**其他**： AN-457063
 
 ## 延迟的功能
 
 | 功能和描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | -----------|-----------|-----------|
-| **流媒体服务：支持计划数据** <br/>您现在可以上传过去直播流媒体服务内容的计划数据，以便更轻松、更准确地跟踪观看人数。<p>以下是支持计划数据上传的直播内容示例：</p><ul><li>FAST（免费广告支持电视）平台</li><li>本地流</li><li>直播体育赛事</li></ul><p>上传计划数据允许您跟踪在上传文件中指定的时间内运行的各个节目的观看人数数据。 您甚至可以收集特定主题或节目片段的观看人数数据。</p><p>无论您如何实现流媒体收集，这些功能都是可用的。</p><p>以前，在分析直播内容时很难准确地将特定场次与特定节目联系起来，也不可能将特定场次与单个主题或节目片段联系起来。</p><p>如需了解更多信息，请参阅[上传计划数据以跟踪实时内容](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/media-use-cases/track-schedule-data) | 2025 年 10 月 29 日 | 待定<p>（原计划于2025年10月29日）</p> |
+| **流媒体服务：支持计划数据** <br/>您现在可以上传过去直播流媒体服务内容的计划数据，以便更轻松、更准确地跟踪观看人数。<p>以下是支持计划数据上传的直播内容示例：</p><ul><li>FAST（免费广告支持电视）平台</li><li>本地流</li><li>直播体育赛事</li></ul><p>上传计划数据允许您跟踪在上传文件中指定的时间内运行的各个节目的观看人数数据。 您甚至可以收集特定主题或节目片段的观看人数数据。</p><p>无论您如何实现流媒体收集，这些功能都是可用的。</p><p>以前，在分析直播内容时很难准确地将特定场次与特定节目联系起来，也不可能将特定场次与单个主题或节目片段联系起来。</p><p>有关详细信息，请参阅[上传计划数据以跟踪实时内容](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/media-use-cases/track-schedule-data)。 | 2025 年 10 月 29 日 | 待定<p>（原计划于2025年10月29日）</p> |
 
 >[!MORELIKETHIS]
 >
