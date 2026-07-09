@@ -26,10 +26,10 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 9efc51843684b8cad96d01f7ada99eafc5950b42
 workflow-type: tm+mt
-source-wordcount: 3648
-ht-degree: 87%
+source-wordcount: 3523
+ht-degree: 84%
 
 ---
 
@@ -57,7 +57,6 @@ ht-degree: 87%
 >
 > 本快速入门指南是一份关于如何将从网站收集的数据摄取到Adobe Experience Platform并在Customer Journey Analytics中使用的简化指南。 强烈建议参考时研究附加信息。
 
-
 ## 设置架构和数据集
 
 要将数据摄取到Adobe Experience Platform，您必须首先定义要收集的数据。 引入 Adobe Experience Platform 的所有数据都必须符合标准的非规范化结构，以便下游功能和特性对其进行识别和操作。 体验数据模型 (XDM) 是以架构形式提供此结构的标准框架。
@@ -68,15 +67,14 @@ ht-degree: 87%
 
 ### 设置架构
 
-您希望从访问您网站的轮廓中跟踪一些最小数据，例如页面名称、标识。
-您必须首先定义一个模式来模拟此数据。
+您希望从访问您网站的轮廓中跟踪一些最小数据，例如页面名称、标识。您必须首先定义一个模式来模拟此数据。
 
 设置您的架构：
 
 1. 在 Adobe Experience Platform UI 的左边栏中，选择[!UICONTROL 数据管理]中的&#x200B;**[!UICONTROL 架构]**。
 
 1. 选择&#x200B;**[!UICONTROL 创建架构]**。
-.
+
 1. 在“创建模式”向导的“选择类”步骤中：
 
    1. 选择&#x200B;**[!UICONTROL 体验事件]**。
@@ -301,7 +299,7 @@ ht-degree: 87%
 
 有关详细信息，请参阅[配置 Adobe Experience Platform Web SDK 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html?lang=zh-Hans)。
 
-Web SDK 本身包含 [!UICONTROL Adobe Experience Cloud ID 服务]，因此您无需将 ID 服务扩展添加到标记中。
+Web SDK包含Experience Platform Identity服务，因此您无需将[!UICONTROL Experience Cloud ID服务]标记扩展添加到您的资产。
 
 #### **数据元素**
 
@@ -333,27 +331,7 @@ Web SDK 本身包含 [!UICONTROL Adobe Experience Cloud ID 服务]，因此您�
 
    - 选择&#x200B;**[!UICONTROL 保存]**。
 
-您现在想要设置一个引用 Experience Cloud ID 的数据元素，该 ID 由 Adobe Experience Platform Web SDK 自动提供，可通过 Experience Cloud ID 服务扩展使用。
-
-要定义 ECID 数据元素：
-
-1. 选择左边栏中的&#x200B;**[!UICONTROL 数据元素]**。
-
-2. 选择&#x200B;**[!UICONTROL 添加数据元素]**。
-
-3. 在[!UICONTROL 创建数据元素]对话框中：
-
-   - 为数据元素命名，例如，`ECID`。
-
-   - 从[!UICONTROL 扩展] 列表中选择 **[!UICONTROL Experience Cloud ID 服务]**。
-
-   - 从 [!UICONTROL 数据元素类型]列表中选择&#x200B;**[!UICONTROL ECID]**。
-
-     ![ECID 数据元素](./assets/ecid-dataelement.png)
-
-   - 选择&#x200B;**[!UICONTROL 保存]**。
-
-最后，您现在希望将任何特定的数据元素映射到先前定义的架构。 您可以定义另一个数据元素，它提供 XDM 架构的表示。
+接下来，您现在希望将任何特定数据元素映射到之前定义的架构。 您可以定义另一个数据元素，它提供 XDM 架构的表示。
 
 要定义 XDM 对象数据元素：
 
@@ -372,13 +350,6 @@ Web SDK 本身包含 [!UICONTROL Adobe Experience Cloud ID 服务]，因此您�
    - 从您的[!UICONTROL 沙盒]列表中选择沙盒。
 
    - 从您的[!UICONTROL 架构]列表中选择架构。
-
-   - 将架构中定义的 `identification > core > ecid` 属性映射到 ECID 数据元素。 选择圆柱体图标可以轻松地从数据元素列表中拾取 ECID 数据元素。
-
-     ![拾取 ECID 数据元素](./assets/pick-ecid-dataelement.png)
-
-     ![映射 ECID 数据元素](./assets/map-ecid.png)
-
 
    - 将架构中定义的`web > webPageDetails > name` 属性映射到页面名称数据元素。
 
@@ -621,4 +592,4 @@ Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分�
 
 >[!SUCCESS]
 >
->您已完成所有步骤。 首先定义您要收集的数据（架构）以及在Adobe Experience Platform中存储这些数据（数据集）的位置。 然后，您在Edge Network上配置了一个数据流，以确保可以将数据转发到该数据集。 然后，您定义并部署了包含扩展（Adobe Experience Platform Web SDK、Experience Cloud ID 服务）、数据元素和规则的标记，以从网站捕获数据并将数据发送到数据流。 您在 Customer Journey Analytics 中定义了一个连接，以使用您的网站跟踪数据和其他数据。 您的数据视图定义允许您指定要使用的维度和量度，最后您创建了您的第一个项目来可视化和分析您的数据。
+>您已完成所有步骤。 首先定义您要收集的数据（架构）以及在Adobe Experience Platform中存储这些数据（数据集）的位置。 然后，您在Edge Network上配置了一个数据流，以确保可以将数据转发到该数据集。 然后，您定义和部署了包含Adobe Experience Platform Web SDK扩展、数据元素和规则的标记，以便从网站捕获数据并将该数据发送到数据流。 您在 Customer Journey Analytics 中定义了一个连接，以使用您的网站跟踪数据和其他数据。 您的数据视图定义允许您指定要使用的维度和量度，最后您创建了您的第一个项目来可视化和分析您的数据。

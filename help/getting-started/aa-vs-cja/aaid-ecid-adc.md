@@ -20,10 +20,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 9efc51843684b8cad96d01f7ada99eafc5950b42
 workflow-type: tm+mt
-source-wordcount: 624
-ht-degree: 96%
+source-wordcount: 632
+ht-degree: 90%
 
 ---
 
@@ -39,7 +39,7 @@ Adobe Analytics ID (AAID) 是 Adobe Analytics 中的主要设备标识符，并�
 
 ## ECID
 
-ECID (Experience Cloud ID) 有时也称作 MCID (Marketing Cloud ID)，它是一个单独的设备标识符字段，在使用 [Experience Cloud 身份标识服务](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=zh-Hans) 实施 Analytics 时，会在 Adobe Analytics 中填充该字段。 在 Adobe Analytics 数据馈送中，ECID 由 `mcvisid` 列表示。
+ECID (Experience Cloud ID)有时也称为MCID (Marketing Cloud ID)，它是一个单独的设备标识符字段，在使用[访客ID服务](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=zh-Hans) (AppMeasurement)或Adobe Analytics Identity服务(Web SDK)实施Analytics时，会在Experience Platform中填充该字段。 在 Adobe Analytics 数据馈送中，ECID 由 `mcvisid` 列表示。
 
 如果事件中存在 ECID，则 AAID 可能基于 ECID，具体取决于是否配置了 Analytics [宽限期](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html?lang=zh-Hans)。 另请参阅：[Analytics 和 Experience Cloud ID 请求](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/legacy-analytics.html?lang=zh-Hans)。
 
@@ -65,8 +65,7 @@ Analytics Source Connector 将这些身份标识以 XDM 形式传递到 Adobe Ex
 
 在 identityMap 中：
 
-* 如果存在 ECID，则会将它标记为事件的主身份标识。 请注意，在此情况下，AAID 可能基于 ECID，如上面的讨论中所述。
-否则，会将 AAID 标记为事件的主身份标识。
+* 如果存在 ECID，则会将它标记为事件的主身份标识。 请注意，在此情况下，AAID 可能基于 ECID，如上面的讨论中所述。否则，会将 AAID 标记为事件的主身份标识。
 * 绝不会将 AACUSTOMID 标记为事件的主要 ID。 不过，如果存在 AACUSTOMID，则 AAID 将基于 AACUSTOMID，如上面的讨论中所述。
 
 当一个或多个身份标识被复制到 `identityMap` 时，`endUserIDs._experience.mcid.namespace.code` 也会在同一事件上设置：
