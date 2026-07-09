@@ -6,30 +6,15 @@ feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 role: Admin
 TQID: https://experienceleague.adobe.com/BuizkumbeMPhg7dWvJrFta3CYfQnqivOlXd2RtX9gm4
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: c38ed341-fab2-46df-9d72-88d8166edebb
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: df28738e-9c71-4aa8-929e-edde22340cc6
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebbid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df28738e-9c71-4aa8-929e-edde22340cc6id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: 9efc51843684b8cad96d01f7ada99eafc5950b42
 workflow-type: tm+mt
-source-wordcount: 3648
-ht-degree: 87%
+source-wordcount: 3523
+ht-degree: 84%
 
 ---
 
@@ -57,7 +42,6 @@ ht-degree: 87%
 >
 > 本快速入门指南是一份关于如何将从网站收集的数据摄取到Adobe Experience Platform并在Customer Journey Analytics中使用的简化指南。 强烈建议参考时研究附加信息。
 
-
 ## 设置架构和数据集
 
 要将数据摄取到Adobe Experience Platform，您必须首先定义要收集的数据。 引入 Adobe Experience Platform 的所有数据都必须符合标准的非规范化结构，以便下游功能和特性对其进行识别和操作。 体验数据模型 (XDM) 是以架构形式提供此结构的标准框架。
@@ -68,15 +52,14 @@ ht-degree: 87%
 
 ### 设置架构
 
-您希望从访问您网站的轮廓中跟踪一些最小数据，例如页面名称、标识。
-您必须首先定义一个模式来模拟此数据。
+您希望从访问您网站的轮廓中跟踪一些最小数据，例如页面名称、标识。您必须首先定义一个模式来模拟此数据。
 
 设置您的架构：
 
 1. 在 Adobe Experience Platform UI 的左边栏中，选择[!UICONTROL 数据管理]中的&#x200B;**[!UICONTROL 架构]**。
 
 1. 选择&#x200B;**[!UICONTROL 创建架构]**。
-.
+
 1. 在“创建模式”向导的“选择类”步骤中：
 
    1. 选择&#x200B;**[!UICONTROL 体验事件]**。
@@ -122,11 +105,11 @@ ht-degree: 87%
 
    ![示例架构添加字段按钮](./assets/example-schema-plus.png)
 
-1. 在 [!UICONTROL &#x200B; 字段属性 &#x200B;] 面板中，输入 `Identification`作为名称，**[!UICONTROL Identification]** 作为 [!UICONTROL Display name]，选择 **[!UICONTROL Object]** 作为 [!UICONTROL Type] 和选择 **[!UICONTROL ExperienceEvent Core v2.1]** 作为 [!UICONTROL Field Group]。
+1. 在 [!UICONTROL  字段属性 ] 面板中，输入 `Identification`作为名称，**[!UICONTROL Identification]** 作为 [!UICONTROL Display name]，选择 **[!UICONTROL Object]** 作为 [!UICONTROL Type] 和选择 **[!UICONTROL ExperienceEvent Core v2.1]** 作为 [!UICONTROL Field Group]。
 
    >[!NOTE]
    >
-   >如果该字段组不可用，请寻找另一个包含身份标识字段的字段组。 或者[创建一个新的字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=zh-Hans)，并[将新的身份标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=zh-Hans#define-a-identity-field)（如 `ecid`、`crmId` 以及您需要的其他字段）添加到该字段组中，并选择该新字段组。
+   >如果该字段组不可用，请寻找另一个包含身份标识字段的字段组。 或者[创建一个新的字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html)，并[将新的身份标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field)（如 `ecid`、`crmId` 以及您需要的其他字段）添加到该字段组中，并选择该新字段组。
 
    ![识别对象](./assets/identification-field.png)
 
@@ -156,7 +139,7 @@ ht-degree: 87%
 
    系统会提示您启用轮廓的架构。 一旦启用，当数据被引入基于此架构的数据集中时，该数据将合并到实时客户轮廓。
 
-   有关详细信息，请参阅[启用架构以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans#profile)。
+   有关详细信息，请参阅[启用架构以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile)。
 
    >[!IMPORTANT]
    >
@@ -182,7 +165,7 @@ ht-degree: 87%
 
 - 为轮廓启用架构
 
-请参阅[在 UI 中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=zh-Hans)，了解有关向架构添加和删除字段组和单个字段的更多信息。
+请参阅[在 UI 中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html)，了解有关向架构添加和删除字段组和单个字段的更多信息。
 
 ### 设置数据集
 
@@ -254,7 +237,7 @@ ht-degree: 87%
 
 您的数据流现已配置为将从您的网站收集的数据转发到 Adobe Experience Platform 中的数据集。
 
-有关如何配置数据流和如何处理敏感数据的更多信息，请参阅[数据流概述](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=zh-Hans)。
+有关如何配置数据流和如何处理敏感数据的更多信息，请参阅[数据流概述](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html)。
 
 
 
@@ -299,9 +282,9 @@ ht-degree: 87%
 
    选择&#x200B;**[!UICONTROL 保存]**。
 
-有关详细信息，请参阅[配置 Adobe Experience Platform Web SDK 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html?lang=zh-Hans)。
+有关详细信息，请参阅[配置 Adobe Experience Platform Web SDK 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html)。
 
-Web SDK 本身包含 [!UICONTROL Adobe Experience Cloud ID 服务]，因此您无需将 ID 服务扩展添加到标记中。
+Web SDK包含Experience Platform Identity服务，因此您无需将[!UICONTROL Experience Cloud ID服务]标记扩展添加到您的资产。
 
 #### **数据元素**
 
@@ -333,27 +316,7 @@ Web SDK 本身包含 [!UICONTROL Adobe Experience Cloud ID 服务]，因此您�
 
    - 选择&#x200B;**[!UICONTROL 保存]**。
 
-您现在想要设置一个引用 Experience Cloud ID 的数据元素，该 ID 由 Adobe Experience Platform Web SDK 自动提供，可通过 Experience Cloud ID 服务扩展使用。
-
-要定义 ECID 数据元素：
-
-1. 选择左边栏中的&#x200B;**[!UICONTROL 数据元素]**。
-
-2. 选择&#x200B;**[!UICONTROL 添加数据元素]**。
-
-3. 在[!UICONTROL 创建数据元素]对话框中：
-
-   - 为数据元素命名，例如，`ECID`。
-
-   - 从[!UICONTROL 扩展] 列表中选择 **[!UICONTROL Experience Cloud ID 服务]**。
-
-   - 从 [!UICONTROL 数据元素类型]列表中选择&#x200B;**[!UICONTROL ECID]**。
-
-     ![ECID 数据元素](./assets/ecid-dataelement.png)
-
-   - 选择&#x200B;**[!UICONTROL 保存]**。
-
-最后，您现在希望将任何特定的数据元素映射到先前定义的架构。 您可以定义另一个数据元素，它提供 XDM 架构的表示。
+接下来，您现在希望将任何特定数据元素映射到之前定义的架构。 您可以定义另一个数据元素，它提供 XDM 架构的表示。
 
 要定义 XDM 对象数据元素：
 
@@ -372,13 +335,6 @@ Web SDK 本身包含 [!UICONTROL Adobe Experience Cloud ID 服务]，因此您�
    - 从您的[!UICONTROL 沙盒]列表中选择沙盒。
 
    - 从您的[!UICONTROL 架构]列表中选择架构。
-
-   - 将架构中定义的 `identification > core > ecid` 属性映射到 ECID 数据元素。 选择圆柱体图标可以轻松地从数据元素列表中拾取 ECID 数据元素。
-
-     ![拾取 ECID 数据元素](./assets/pick-ecid-dataelement.png)
-
-     ![映射 ECID 数据元素](./assets/map-ecid.png)
-
 
    - 将架构中定义的`web > webPageDetails > name` 属性映射到页面名称数据元素。
 
@@ -425,7 +381,7 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。 他们寻�
 
       - 从 [!UICONTROL 类型]列表中选择&#x200B;**[!UICONTROL web.webpagedetails.pageViews]**。
 
-      - 选择[!UICONTROL &#x200B; XDM 数据]旁边的圆柱体图标，然后从数据元素列表中选择&#x200B;**[!UICONTROL XDM - 页面视图]**。
+      - 选择[!UICONTROL  XDM 数据]旁边的圆柱体图标，然后从数据元素列表中选择&#x200B;**[!UICONTROL XDM - 页面视图]**。
 
      ![规则 – 操作配置](./assets/action-pageview-xdm.png)
 
@@ -473,7 +429,7 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。 他们寻�
 
 Adobe Experience Platform 标签支持简单到复杂的发布工作流，这些工作流应适合您部署 Adobe Experience Platform Web SDK。
 
-有关详细信息，请参阅 [发布概述](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=zh-Hans) 。
+有关详细信息，请参阅 [发布概述](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) 。
 
 
 ### 检索您的标签代码
@@ -498,7 +454,7 @@ Adobe Experience Platform 标签支持简单到复杂的发布工作流，这些
 
 您可以根据部署 Adobe Experience Platform Web SDK 的位置选择另一个环境（暂存、生产），而不是开发环境的代码。
 
-有关详细信息，请参阅 [环境](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=zh-Hans&)。
+有关详细信息，请参阅 [环境](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?)。
 
 ## 部署和验证
 
@@ -621,4 +577,4 @@ Analysis Workspace 是一个灵活的浏览器工具，允许您快速构建分�
 
 >[!SUCCESS]
 >
->您已完成所有步骤。 首先定义您要收集的数据（架构）以及在Adobe Experience Platform中存储这些数据（数据集）的位置。 然后，您在Edge Network上配置了一个数据流，以确保可以将数据转发到该数据集。 然后，您定义并部署了包含扩展（Adobe Experience Platform Web SDK、Experience Cloud ID 服务）、数据元素和规则的标记，以从网站捕获数据并将数据发送到数据流。 您在 Customer Journey Analytics 中定义了一个连接，以使用您的网站跟踪数据和其他数据。 您的数据视图定义允许您指定要使用的维度和量度，最后您创建了您的第一个项目来可视化和分析您的数据。
+>您已完成所有步骤。 首先定义您要收集的数据（架构）以及在Adobe Experience Platform中存储这些数据（数据集）的位置。 然后，您在Edge Network上配置了一个数据流，以确保可以将数据转发到该数据集。 然后，您定义和部署了包含Adobe Experience Platform Web SDK扩展、数据元素和规则的标记，以便从网站捕获数据并将该数据发送到数据流。 您在 Customer Journey Analytics 中定义了一个连接，以使用您的网站跟踪数据和其他数据。 您的数据视图定义允许您指定要使用的维度和量度，最后您创建了您的第一个项目来可视化和分析您的数据。

@@ -7,22 +7,15 @@ feature: Basics
 exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
 autotag-review: '2026-05-19T08:20:10.493Z'
 TQID: 'https://experienceleague.adobe.com/CZMnHpY8nofEV8fbpLSe7TUZCR7nOd8xKWoMkCzfH0I'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 9efc51843684b8cad96d01f7ada99eafc5950b42
 workflow-type: tm+mt
-source-wordcount: 1664
-ht-degree: 100%
+source-wordcount: 1377
+ht-degree: 95%
 
 ---
 
@@ -47,9 +40,9 @@ ht-degree: 100%
 
 以下部分描述了建议配置的数据元素，以及您可以配置的其他常见数据元素。
 
-有各种类型的数据元素。 建议您配置以下两个常见数据元素：一个用于捕获人们在您的网站上查看的页面名称，另一个用于捕获访问您网站的每个人的 Experience Cloud ID。
+有各种类型的数据元素。 您可能需要配置的常见数据元素是捕获人员正在您的网站上查看的页面名称的元素。
 
-配置完这两个数据元素后，您可以为想要捕获的特定数据配置其他数据元素。
+配置页面名称数据元素后，您可以为要捕获的特定数据配置其他数据元素。
 
 最后，在定义了所有所需的数据元素后，您需要将数据元素分配给[您之前创建的架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)。 为此，您需要定义一个 XDM 数据元素，它提供了 XDM 架构的表示。
 
@@ -93,55 +86,11 @@ ht-degree: 100%
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
-   您现在想要设置一个引用 Experience Cloud ID 的数据元素，该 ID 由 Adobe Experience Platform Web SDK 自动提供，可通过 Experience Cloud ID 服务扩展使用。
-
-1. 继续使用 [ECID 数据元素](#ecid-data-element)。
-
-#### ECID 数据元素
-
-适用于大多数组织的常见数据元素是捕获访问您网站的每个人的 Experience Cloud ID 的数据元素。
-
-若要创建 ECID 数据元素：
-
-1. 使用您的 Adobe ID 凭据登录 experience.adobe.com。
-
-1. 在 Adobe Experience Platform 中，前往&#x200B;**[!UICONTROL 数据收集]** > **[!UICONTROL 标记]**。
-
-1. 从 [!UICONTROL 标签属性] 列表中选择您新创建的标签以将其打开。
-
-1. （视情况而定）如果尚未安装 Experience Cloud ID 服务扩展，请安装它：
-
-   1. 选择左边栏中的&#x200B;**[!UICONTROL 扩展]**。
-
-   1. 默认情况下，**[!UICONTROL 已安装]** 选项卡处于选中状态。 如果其中列出了 **[!UICONTROL Experience Cloud ID 服务]**&#x200B;图块，请跳至步骤 5。
-
-   1. 如果未列出 **[!UICONTROL Experience Cloud ID 服务]**&#x200B;图块，请选择&#x200B;**[!UICONTROL 目录]**&#x200B;选项卡。
-
-   1. 在搜索字段中，搜索 **[!UICONTROL Experience Cloud ID 服务]**，然后在出现图块时选择它
-
-   1. 选择&#x200B;**[!UICONTROL 安装]** > **[!UICONTROL 保存]**。
-
-1. 选择左边栏中的&#x200B;**[!UICONTROL 数据元素]**。
-
-1. 选择&#x200B;**[!UICONTROL 添加数据元素]**。
-
-1. 在&#x200B;**[!UICONTROL 创建数据元素]**&#x200B;对话框中，指定以下信息：
-
-   * **[!UICONTROL 名称]**：数据元素的名称。 例如：`ECID`。
-
-   * **[!UICONTROL 扩展]**：从列表中选择 **[!UICONTROL Experience Cloud ID 服务]**。
-
-   * **[!UICONTROL 数据元素类型]**：从列表中选择 **[!UICONTROL ECID]**。
-
-     ![ECID 数据元素](assets/ecid-dataelement.png)
-
-1. 选择&#x200B;**[!UICONTROL 保存]**。
-
 1. 继续[创建其他数据元素](#create-additional-data-elements)。
 
 ### 创建其他数据元素
 
-为您想要收集的每种类型的数据创建一个数据元素。 使用[页面名称数据元素](#page-name-data-element)和 [ECID 数据元素](#ecid-data-element)中描述的相同流程来创建每个附加数据元素。
+为您想要收集的每种类型的数据创建一个数据元素。 使用[Page name数据元素](#page-name-data-element)中描述的相同流程创建每个其他数据元素。
 
 您创建的数据元素应该在您的架构中有一个相关字段。
 
@@ -201,12 +150,6 @@ ht-degree: 100%
 
    * **[!UICONTROL 架构]**：从列表中选择架构。
 
-1. 将架构中定义的 `identification > core > ecid` 属性映射到 ECID 数据元素。 选择圆柱体图标可以轻松地从数据元素列表中拾取 ECID 数据元素。
-
-   ![拾取 ECID 数据元素](assets/pick-ecid-dataelement.png)
-
-   ![映射 ECID 数据元素](assets/map-ecid.png)
-
 1. 将架构中定义的`web > webPageDetails > name` 属性映射到页面名称数据元素。
 
    ![映射页面名称数据元素](assets/map-pagename.png)
@@ -227,7 +170,7 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。 他们寻�
 >
 >您可以在标记中以各种方式使用规则来操作变量（使用数据元素）。
 >
->有关详细信息，请参阅[规则](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=zh-Hans)。
+>有关详细信息，请参阅[规则](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html)。
 
 1. 使用您的 Adobe ID 凭据登录 experience.adobe.com。
 
@@ -279,7 +222,7 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。 他们寻�
 
 在定义了数据元素和规则之后，您必须构建和发布该标记。 创建库生成时，必须将其分配给环境。 然后，将会编译该内部版本的扩展、规则和数据元素，并将这些内容放入分配的环境。 每个环境都提供了一个唯一的嵌入代码，从而允许您将其分配的内部版本集成到网站中。
 
-Adobe Experience Platform 标签支持简单到复杂的发布工作流，这些工作流应适合您部署 Adobe Experience Platform Web SDK。 有关详细信息，请参阅[发布概述](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=zh-Hans)。
+Adobe Experience Platform 标签支持简单到复杂的发布工作流，这些工作流应适合您部署 Adobe Experience Platform Web SDK。 有关详细信息，请参阅[发布概述](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html)。
 
 要生成并发布您的标记：
 
