@@ -5,29 +5,17 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
+hold: true
 TQID: https://experienceleague.adobe.com/EXiKrWVfmMRgZ4GF0OR410Mr2-P5IEjPy3Hf0FmRDJ8
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: b342654b753f679f86750e43efbed1eb149e1b17
 workflow-type: tm+mt
-source-wordcount: 2959
-ht-degree: 93%
+source-wordcount: 3278
+ht-degree: 84%
 
 ---
 
@@ -38,7 +26,7 @@ ht-degree: 93%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建或编辑数据视图](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/data-views/overview-of-configuring-data-views-for-cja){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建或编辑数据视图](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/overview-of-configuring-data-views-for-cja){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -63,11 +51,16 @@ ht-degree: 93%
 
 ![配置数据视图 B2B](assets/dataview-configure-b2b.png)
 
+>[!TAB 分隔容器选项卡]
+
+![使用单独的容器选项卡配置数据视图](assets/data-view-configure-containers.png)
+
+
 >[!ENDTABS]
 
 
 1. 选择&#x200B;**[!UICONTROL “配置”]**&#x200B;选项卡（如果尚未激活）。
-1. 指定[!UICONTROL “设置”]、[!UICONTROL “容器”]和[!UICONTROL “日程表”]详细信息（见下文）。
+1. 指定&#x200B;**[!UICONTROL “设置”]**、**[!UICONTROL “容器”]**&#x200B;和&#x200B;**[!UICONTROL “日程表”]**&#x200B;详细信息（见下文）。
 1. 选择&#x200B;**[!UICONTROL “保存并继续”]**，以继续配置新的或现有的数据视图。 选择&#x200B;**[!UICONTROL “保存”]**，以保存现有数据视图的配置。
 
 
@@ -126,6 +119,9 @@ ht-degree: 93%
 
 {style="table-layout:auto"}
 
+当您看到&#x200B;**[!UICONTROL 容器已移动时。 专用容器选项卡]**&#x200B;上现在提供了容器，您可以在单独的[容器](#containers-1)选项卡中定义容器。
+
+
 ### AI 设置
 
 选择&#x200B;**[!UICONTROL 启用Data Insights Agent]**&#x200B;以启用[Data Insights Agent](/help/data-analysis-ai.md)的数据视图。 Data Insights Agent是一个创新型人工智能会话代理，可从Customer Journey Analytics中的AI助手访问。 它可帮助您通过文本提示词快速分析数据。 代理使用数据视图中的组件并使用实际数据在Analysis Workspace中构建相关可视化图表。
@@ -145,6 +141,77 @@ ht-degree: 93%
 
 {style="table-layout:auto"}
 
+## 容器
+
+{{release-limited-testing-section}}
+
+
+>[!BEGINTABS]
+
+>[!TAB 标准]
+
+![配置数据视图](assets/data-view-containers-b2c.png)
+
+>[!TAB B2B Edition]
+
+![配置数据视图 B2B](assets/data-view-containers-b2b.png)
+
+>[!ENDTABS]
+
+在&#x200B;**[!UICONTROL 容器]**&#x200B;选项卡中，您可以重命名系统容器并添加自定义容器。
+
+您可以向数据视图添加自定义容器，以便使用这些容器进行[子事件分析](/help/components/segments/sub-event.md)。 自定义容器可从以下位置定义：
+
+* 作为连接一部分的数据集内可用的对象或数组。 例如，**[!UICONTROL productListItems]**、**[!UICONTROL content_assets]**&#x200B;或&#x200B;**[!UICONTROL placeContext.activePOIs]**。
+* 通过使用[Split](/help/data-views/derived-fields/derived-fields.md#split)函数返回数组的派生字段。
+* 配置为使用带有[分隔符](/help/data-views/component-settings/substring.md#delimiter)选项的[子字符串](/help/data-views/component-settings/substring.md)组件设置返回数组的数据视图组件。
+
+### 系统容器
+
+要重命名系统容器，请执行以下操作：
+
+1. 选择![编辑](/help/assets/icons/Edit.svg)以编辑容器的&#x200B;**[!UICONTROL 显示名称]**。
+1. 为容器定义新名称。
+1. 选择&#x200B;**[!UICONTROL 保存]**。
+
+
+### 自定义容器
+
+要添加自定义容器，请执行以下操作：
+
+1. 选择&#x200B;**[!UICONTROL 添加自定义容器]**。
+1. 在&#x200B;**[!UICONTROL 添加容器]**&#x200B;对话框中：
+   1. 从&#x200B;**[!UICONTROL 容器]**&#x200B;下拉菜单中选择一个容器。 例如： **[!UICONTROL productListItems.productCategories]**。 选择后，您会看到&#x200B;**[!UICONTROL 架构路径]**&#x200B;和&#x200B;**[!UICONTROL 架构类型]**&#x200B;的更新值。
+
+   1. 输入容器的&#x200B;**[!UICONTROL 显示名称]**。 例如：`Product Categories`。
+   1. 选择&#x200B;**[!UICONTROL 保存]**。
+
+要编辑自定义容器，请执行以下操作：
+
+1. 为&#x200B;**[!UICONTROL 显示名称]**&#x200B;列中的自定义容器选择![更多](/help/assets/icons/More.svg)。
+1. 从上下文菜单中选择![编辑](/help/assets/icons/Edit.svg)**[!UICONTROL 编辑]**。
+1. 在&#x200B;**[!UICONTROL 编辑容器]**&#x200B;对话框中：
+   1. 修改&#x200B;**[!UICONTROL 容器]**&#x200B;或&#x200B;**[!UICONTROL 显示名称]**，或同时修改两者。
+   1. 选择&#x200B;**[!UICONTROL 保存]**。
+
+要删除自定义容器，请执行以下操作：
+
+1. 在“显示名称”列中为自定义容器选择![更多](/help/assets/icons/More.svg)。
+1. 从上下文菜单中选择![删除](/help/assets/icons/Delete.svg) **[!UICONTROL 删除]**。
+
+   >[!NOTE]
+   >
+   >自定义容器将被删除，恕不确认。
+   >
+
+要更改自定义容器的列表，请执行以下操作：
+
+1. 选择![ColumnSetting](/help/assets/icons/ColumnSetting.svg)。
+1. 在&#x200B;**[!UICONTROL 自定义表]**&#x200B;中：
+   1. 选择要显示的列。
+   1. 选择&#x200B;**[!UICONTROL 保存]**。
+
+
 ## 组件
 
 接下来，您可以设置数据视图的组件，也就是说您可以从架构元素创建量度和维度。 您也可以使用标准组件。
@@ -157,13 +224,11 @@ ht-degree: 93%
 
    ![“组件”选项卡](assets/dataview-components.png)
 
-   可在左上角看到[!UICONTROL 连接]（其中包含数据集），并可在下方看到其[!UICONTROL 架构字段]。  已包含的组件是所有数据视图（如事件、人员、会话量度以及分钟、季度、周维度）所需的标准组件（系统生成）。 默认情况下，Adobe 也会应用筛选条件&#x200B;**[!UICONTROL “包含数据”]**&#x200B;和&#x200B;**[!UICONTROL “未弃用”]**，以便仅显示包含数据且未弃用的架构字段。
+   可在左上角看到[!UICONTROL 连接]（其中包含数据集），并可在下方看到其[!UICONTROL 架构字段]。  已包含的组件是所有数据视图（如事件、人员、会话量度以及分钟、季度、周维度）所需的标准组件（系统生成）。<ul><li>定义了c[自定义容器](#containers-1)后，将自动使用![ShowAllLayer](/help/assets/icons/ShowAllLayer.svg) **[!UICONTROL _自定义容器名称&#x200B;_发生次数]**添加和识别这些容器的量度。</li><li>默认情况下不弃用筛选器&#x200B;****，以便只显示未弃用的架构字段。</li></ul>
 
 1. 使用![搜索图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL 搜索架构字段]**&#x200B;来搜索架构字段，或者通过移动到任何数据集收藏集来查找字段，例如![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 事件数据集]**&#x200B;或![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 查找数据集]**。 对于事件数据集，![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL XDM字段]**&#x200B;和![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 临时和关系字段]**&#x200B;的单独集合可用。<br/>或者，您可以使用![数据图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **创建派生字段**&#x200B;创建派生字段。 请参阅[派生字段](./derived-fields/derived-fields.md)，了解更多信息。
 
-1. 如果您找到了特定架构字段或定义了派生字段，就将该字段，例如![手柄图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL 页面名称]**，从左边栏拖到&#x200B;**[!UICONTROL 所包含的组件]**&#x200B;下面的&#x200B;**[!UICONTROL 量度]**&#x200B;或&#x200B;**[!UICONTROL 维度]**&#x200B;部分。
-可将同一架构字段拖入“维度”或“量度”部分多次，并可按不同方式配置同一维度或量度。 例如，可以使用右侧不同的[组件设置](component-settings/overview.md)从“页面名称”字段创建名为 `Product Pages` 的维度以及另一个名为 `Error pages` 的维度。
-如果从左边栏拖动一个架构字段文件夹，文件夹中的字段会自动分类到相应的部分。 字符串字段最后落在[!UICONTROL 维度]部分中，而数值架构类型最后落在[!UICONTROL 量度]部分中。 您也可以点击&#x200B;**[!UICONTROL 全部添加]**，将所有架构字段添加到其相应的部分。
+1. 如果您找到了特定架构字段或定义了派生字段，就将该字段，例如![手柄图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL 页面名称]**，从左边栏拖到&#x200B;**[!UICONTROL 所包含的组件]**&#x200B;下面的&#x200B;**[!UICONTROL 量度]**&#x200B;或&#x200B;**[!UICONTROL 维度]**&#x200B;部分。可将同一架构字段拖入“维度”或“量度”部分多次，并可按不同方式配置同一维度或量度。 例如，可以使用右侧不同的[组件设置](component-settings/overview.md)从“页面名称”字段创建名为 `Product Pages` 的维度以及另一个名为 `Error pages` 的维度。如果从左边栏拖动一个架构字段文件夹，文件夹中的字段会自动分类到相应的部分。 字符串字段最后落在[!UICONTROL 维度]部分中，而数值架构类型最后落在[!UICONTROL 量度]部分中。 您也可以点击&#x200B;**[!UICONTROL 全部添加]**，将所有架构字段添加到其相应的部分。
 
 1. 选择组件后，右侧即会显示设置。
 

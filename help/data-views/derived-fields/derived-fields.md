@@ -5,27 +5,17 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
+hold: true
 TQID: https://experienceleague.adobe.com/zpiJFUF8RnIdFQWf29FBpRznWO3Ejs-j2szx69kdMNE
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-source-git-commit: 536a1c7151521b26fccd486704d5c9426b039f53
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: beb7a3c1-66ab-4786-b879-7621375b3c40
+source-git-commit: b342654b753f679f86750e43efbed1eb149e1b17
 workflow-type: tm+mt
-source-wordcount: 10387
-ht-degree: 97%
+source-wordcount: 10573
+ht-degree: 98%
 
 ---
 
@@ -39,7 +29,7 @@ ht-degree: 97%
 
 派生字段是 Adobe Customer Journey Analytics 中实时报告功能的一个重要方面。 通过派生字段和可自定义的规则生成器，即可迅速定义（一般较为复杂的）数据操作。 然后，您可以将该派生字段用作[工作区](../../analysis-workspace/home.md)中的组件（量度或维度），甚至可以进一步将该派生字段定义为[数据视图](../data-views.md)中的组件。
 
-与在 Customer Journey Analytics 之外的其他位置转换或操作数据相比，派生字段可以节省大量时间和精力。 例如[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)、[数据蒸馏器](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=zh-Hans)，或者在您自己的提取转换加载 (ETL) / 提取加载转换 (ELT) 流程中。
+与在 Customer Journey Analytics 之外的其他位置转换或操作数据相比，派生字段可以节省大量时间和精力。 例如[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html)、[数据蒸馏器](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html)，或者在您自己的提取转换加载 (ETL) / 提取加载转换 (ELT) 流程中。
 
 派生字段是在[数据视图](../data-views.md)中定义的，它们基于一组定义为规则的函数，并会应用于可用的标准和/或架构字段。
 
@@ -302,6 +292,8 @@ ht-degree: 97%
 要使用该模板，您必须为模板中规则内列出的每个函数指定正确的参数。 有关详细信息，请参阅[函数参考](#function-reference)。
 
 ![“获取带分隔符的列表中的所有值”规则生成器的屏幕快照](assets/function-template-get-all-values-in-delimited-list.png)
+
+派生字段将作为[自定义容器](/help/data-views/create-dataview.md#containers-1)提供，您可以在数据视图中选择该容器，并用于在工作区项目中的[子事件分析](/help/components/segments/sub-event.md)。
 
 +++
 
@@ -710,7 +702,7 @@ ht-degree: 97%
 
 ## 更多信息 {#casewhen-more-info}
 
-Customer Journey Analytics 使用嵌套的容器结构，该结构仿照的是 Adobe Experience Platform 的 [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans)（体验数据模型）。 如要了解更多背景信息，请参阅[容器](../create-dataview.md#containers)和[区段容器](/help/components/segments/seg-overview.md#containers)。 这种容器模型虽然本质上很灵活，但在使用规则生成器时会施加一些约束。
+Customer Journey Analytics 使用嵌套的容器结构，该结构仿照的是 Adobe Experience Platform 的 [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)（体验数据模型）。 如要了解更多背景信息，请参阅[容器](../create-dataview.md#containers)和[区段容器](/help/components/segments/seg-overview.md#containers)。 这种容器模型虽然本质上很灵活，但在使用规则生成器时会施加一些约束。
 
 Customer Journey Analytics 使用以下默认容器模型：
 
@@ -755,8 +747,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 ## 用例 1 {#classify-uc1}
 
-您的CSV文件确实包括`hotelID`的键列以及与`hotelID`关联的一个或多个其他列： `city`、`rooms`、`hotel name`。
-您正在某个维度中收集[!DNL Hotel ID]，但想要创建从CSV文件中的`hotelID`派生的[!DNL Hotel Name]维度。
+您确实有一个 CSV 文件，其中包括 `hotelID` 的关键列和与 `hotelID` 相关的一个或多个附加列：`city`、`rooms`、`hotel name`。您正在收集维度中的 [!DNL Hotel ID]，但希望创建一个从 CSV 文件中的 `hotelID` 派生的 [!DNL Hotel Name] 维度。
 
 **CSV 文件结构和内容**
 
@@ -1014,8 +1005,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 您希望了解客户在一个会话中下单之前的搜索时间（以分钟为单位）。
 
-您定义了一个新的`Time Between Search And Order In Minutes`派生字段，该字段是两个[[!UICONTROL CASE WHEN]函数](#case-when)的结果，用于定义[!UICONTROL 搜索时间]和[!UICONTROL 订单时间]值。
-然后使用这两个值计算差值，其中[!UICONTROL DATE MATH]函数的[!UICONTROL 作用域]设置为[!UICONTROL 会话]，值设置为[!UICONTROL 搜索时间]和[!UICONTROL 订单时间]，输出粒度设置为[!UICONTROL 分钟]。对于这两个值，请选择[!UICONTROL 返回第一个]以确保返回第一个[!UICONTROL 搜索时间]和[!UICONTROL 订单时间]。
+您定义一个新的 `Time Between Search And Order In Minutes` 派生字段，这是两个 [[!UICONTROL CASE WHEN] 函数](#case-when)的结果，用于定义[!UICONTROL 搜索时间]和[!UICONTROL 下单时间]的值。然后您用这两个值计算差值，其中[!UICONTROL 日期运算]函数的[!UICONTROL 范围]设置为[!UICONTROL 会话]，值设置为[!UICONTROL 搜索时间]和[!UICONTROL 下单时间]，[!UICONTROL 输出粒度]设置为[!UICONTROL 分钟]。 您为这两个值都选择[!UICONTROL 返回第一个]，以确保返回第一个[!UICONTROL 搜索时间]和[!UICONTROL 下单时间]。
 
 ![日期运算规则 3 的屏幕快照](assets/datemath-3.png)
 
@@ -1065,7 +1055,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 ### 派生字段 {#deduplicate-uc1-derivedfield}
 
-您定义一个 `Booking Confirmation` 派生字段。 您可以使用 [!UICONTROL DEDUPLICATE] 函数定义一条规则，以使用[!UICONTROL 重复数据删除 ID] [!UICONTROL 预订确认 ID &#x200B;]对[!UICONTROL 范围] [!DNL Person] 的[!UICONTROL 值] [!DNL Booking] 进行重复数据删除。 您可以选择[!UICONTROL 保留第一个实例]作为[!UICONTROL 要保留的值]。
+您定义一个 `Booking Confirmation` 派生字段。 您可以使用 [!UICONTROL DEDUPLICATE] 函数定义一条规则，以使用[!UICONTROL 重复数据删除 ID] [!UICONTROL 预订确认 ID ]对[!UICONTROL 范围] [!DNL Person] 的[!UICONTROL 值] [!DNL Booking] 进行重复数据删除。 您可以选择[!UICONTROL 保留第一个实例]作为[!UICONTROL 要保留的值]。
 
 ![连接规则的屏幕快照](assets/deduplicate-1.png)
 
@@ -1287,8 +1277,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 1. 从选择器中选择&#x200B;**[!UICONTROL 架构字段]**。
 1. 选择 ![架构字段图标](assets/Smock_Folder_18_N.svg) **[!UICONTROL 查找数据集]**。
 1. 选择您的查找数据集，并找到您想要用于查找的字段。
-1. 将查找字段拖放到函数的任何可用输入字段上（例如Case When）。如果有效，则标有&#x200B;**[!UICONTROL + Add]**&#x200B;的蓝色框允许您删除该字段，并在您删除该查找字段的函数之前自动插入查找函数。插入的Lookup函数将自动填充所有字段的相关值。
-   ![查找拖动](assets/lookup-drag.png)
+1. 将查找字段拖放到函数的任何可用输入字段上（例如 Case When）。 当该功能有效时，一个标有 **[!UICONTROL + 添加]**&#x200B;的蓝色框会允许您拖放字段，并自动在您放置查找字段的函数之前插入一个查找函数。 所插入的查找函数会自动填充所有字段的相关值。   ![查找拖动](assets/lookup-drag.png)
 
 +++
 
@@ -1409,8 +1398,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 要创建一个公式：
 
-1. 只需在公式字段中开始输入，与所键入内容匹配的数字字段即会显示在弹出菜单中。或者，您可以从左窗格的可用字段中拖放数值字段。
-   ![更多数学信息 1](assets/math-more-info-1.png)
+1. 只需在公式字段中开始输入内容，与您输入的内容匹配的数字字段就会出现在弹出菜单中。 或者，您可以从左侧窗格中的可用字段中拖放一个数字字段。   ![更多数学信息 1](assets/math-more-info-1.png)
 
 1. 添加运算数（例如 `*` 表示乘法），后跟另一个字段或静态值。 您可以使用括号来定义更复杂的公式。
 
@@ -1617,10 +1605,10 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 | 页面 URL |
 |---|
-| `https://business.adobe.com/cn/products/analytics/adobe-analytics-benefits.html` |
-| `https://business.adobe.com/cn/products/analytics/adobe-analytics.html` |
-| `https://business.adobe.com/cn/products/experience-platform/customer-journey-analytics.html` |
-| `https://business.adobe.com/cn/products/experience-platform/adobe-experience-platform.html` |
+| `https://business.adobe.com/products/analytics/adobe-analytics-benefits.html` |
+| `https://business.adobe.com/products/analytics/adobe-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` |
 
 {style="table-layout:auto"}
 
@@ -2011,7 +1999,7 @@ Customer Journey Analytics 使用 Perl 正则表达式语法的子集。 支持�
 
 ### 派生字段 {#typecast-uc1-derivedfield}
 
-您定义一个 `Screen Height` 派生字段。 您使用 [!UICONTROL TYPECAST] 函数定义一个规则，用于将[!UICONTROL 类型转换为] [!UICONTROL 字符串]&#x200B;[!UICONTROL 屏幕高度]字段，并将其存储在新的派生字段中。
+您定义一个 `Screen Height` 派生字段。 您使用 [!UICONTROL TYPECAST] 函数定义一个规则，用于将[!UICONTROL 类型转换为] [!UICONTROL 字符串][!UICONTROL 屏幕高度]字段，并将其存储在新的派生字段中。
 
 ![类型转换规则 1 的屏幕快照](assets/typecast-1.png)
 
@@ -2026,7 +2014,7 @@ Customer Journey Analytics 使用 Perl 正则表达式语法的子集。 支持�
 
 ### 派生字段 {#typecast-uc2-derivedfield}
 
-您定义一个 `Revenue (integer)` 派生字段。 您使用 [!UICONTROL TYPECAST] 函数定义一个规则，用于将[!UICONTROL 类型转换为] [!UICONTROL 整数]&#x200B;[!UICONTROL 屏幕高度]字段，并将其存储在新的派生字段中。
+您定义一个 `Revenue (integer)` 派生字段。 您使用 [!UICONTROL TYPECAST] 函数定义一个规则，用于将[!UICONTROL 类型转换为] [!UICONTROL 整数][!UICONTROL 屏幕高度]字段，并将其存储在新的派生字段中。
 
 
 +++
@@ -2177,7 +2165,7 @@ Case When 函数中的 If 或 Else If 结构中的运算符是条件与&#x200B;*
 
 >[!MORELIKETHIS]
 >
->- [博客：充分利用您的数据：在 Customer Journey Analytics 中使用派生字段的框架](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670?profile.language=zh-Hans)
->- [博客：Customer Journey Analytics 的派生字段用例](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679?profile.language=zh-Hans)
->- [博客：Adobe Customer Journey Analytics 派生字段增强功能](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808?profile.language=zh-Hans)
+>- [博客：充分利用您的数据：在 Customer Journey Analytics 中使用派生字段的框架](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
+>- [博客：Customer Journey Analytics 的派生字段用例](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
+>- [博客：Adobe Customer Journey Analytics 派生字段增强功能](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808)
 
