@@ -4,40 +4,35 @@ description: 了解 Adobe Experience Platform 中定义的数据标签和政策�
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
+hold: true
 autotag-review: '2026-05-19T08:59:31.818Z'
 TQID: 'https://experienceleague.adobe.com/SoIHLRSx90B4j8EkHWBVt3rVtt-968TN8ocWU2zuYN4'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: e1471301-a189-438e-8d48-264a8db508a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: eb00932f-4d46-46bc-b1d8-10de7588db8did: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: 1254207526535e44c848dfeed0052339fbd8d65d
 workflow-type: tm+mt
-source-wordcount: 622
-ht-degree: 99%
+source-wordcount: 745
+ht-degree: 66%
 
 ---
 
-# 标签和政策
+# 标签、策略和营销操作
 
 在 Experience Platform 中创建数据集时，可以为数据集中的部分或所有元素创建[数据使用情况标签](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/reference)。 可以在 Customer Journey Analytics 中查看这些标签和政策。
 
-以下标签对于 Customer Journey Analytics 特别有用：
+Customer Journey Analytics特别关注以下标签和营销操作：
 
-* `C8` 标签 – **[!UICONTROL 无测量]**。 此标签表示数据不能用于组织网站或应用程序上的分析。
 
-* `C12` 标签 – **[!UICONTROL 无一般数据导出]**。 以这种方式标记的架构字段无法从 Customer Journey Analytics 导出或下载（通过报告、导出、API 等）
+| 标签 | 营销操作 | 定义 |
+|---------|----------|---------|
+| `C2` | [!UICONTROL 导出到第三方] | 标签和关联的营销操作表示，如果启用了相应的DULE策略，则数据无法导出到第三方。 |
+| `C3` | [!UICONTROL 与可直接识别的数据合并] | 标签和关联的营销操作表示，如果启用了相应的DULE策略，则数据无法与直接可识别的信息组合或以其他方式使用。 |
+| `C8` | [!UICONTROL Analytics] | 标签和关联的营销操作表示，如果启用了相应的DULE策略，则数据无法用于组织网站或应用程序上的分析。 |
+| `C9` | [!UICONTROL 数据科学] | 标签和关联的营销操作意味着，如果启用了相应的DULE策略，则数据无法在数据科学工作流中使用。 |
+| `C12` | [!UICONTROL 数据导出] | 标签和相关营销操作表明，如果启用了相应的DULE策略，则无法从Customer Journey Analytics（通过报表、导出、API等）导出或下载以这种方式标记的架构字段。 |
 
 >[!NOTE]
 >
@@ -45,10 +40,17 @@ ht-degree: 99%
 
 标签本身并不意味着强制执行这些数据使用情况标签。 这就是政策的用途。 您可以使用 [Experience Platform UI](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/policies/user-guide) 或通过 Experience Platform 中的[政策服务 API](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/api/overview) 创建政策。
 
-在 Experience Platform 中，有两个 Adobe 定义的策略可以在 Customer Journey Analytics 中显示并影响报告和数据导出：
+Experience Platform中提供了五个Adobe定义的策略，这些策略可能会在Customer Journey Analytics中显示，并影响报表和数据导出：
 
-* **[!UICONTROL 限制使用分析和基于用户的测量]** 策略（使用 `C8` 标签）
-* **[!UICONTROL 限制数据导出]** 策略（使用 `C12` 标签）
+
+| 策略 | 标签 |
+|---------|----------|
+| [!UICONTROL 限制第三方数据导出] | `C2` |
+| [!UICONTROL 限制可直接识别的数据组合] | `C3` |
+| [!UICONTROL 限制使用分析和基于用户的测量] | `C8` |
+| [!UICONTROL 限制数据科学] | `C9` |
+| [!UICONTROL 限制数据导出] | `C12` |
+
 
 ## 查看 Customer Journey Analytics 数据视图中的数据标签
 
@@ -82,7 +84,7 @@ ht-degree: 99%
 
 ## 启用的策略如何影响数据视图
 
-如果启用了一个或多个带有 C8 或 C12 标签的策略，则无法将具有某些数据标签应用的架构组件添加到数据视图中。
+如果一个或多个策略使用C1、C2、C3、C8、C9或C12标签打开，则无法将应用了某些数据标签的架构组件添加到数据视图。
 
 这些组件在左边栏 [!UICONTROL 架构字段] 列表中显示为灰色：
 
