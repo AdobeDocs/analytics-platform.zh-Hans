@@ -3,8 +3,10 @@ title: 子事件分析
 description: 了解子事件分析如何让您在客户历程分析中筛选事件内的单个产品或其他容器，从而消除产品报表中的归因出血。
 feature: Segmentation
 hold: true
-feature_v2: id: c153fd90-23e1-4614-81d3-3cc7571227f7
-subfeature_v2: id: a544b409-2610-410d-a842-474ac1d0d54e
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+subfeature_v2:
+  - id: a544b409-2610-410d-a842-474ac1d0d54e
 source-git-commit: b4bec7c8e476bc2dbffce42bd52ff535b90dcb86
 workflow-type: tm+mt
 source-wordcount: 564

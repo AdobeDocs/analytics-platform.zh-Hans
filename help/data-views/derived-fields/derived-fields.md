@@ -7,11 +7,22 @@ exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
 hold: true
 TQID: https://experienceleague.adobe.com/zpiJFUF8RnIdFQWf29FBpRznWO3Ejs-j2szx69kdMNE
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: beb7a3c1-66ab-4786-b879-7621375b3c40
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
 source-git-commit: b342654b753f679f86750e43efbed1eb149e1b17
 workflow-type: tm+mt
 source-wordcount: 10573
@@ -1055,7 +1066,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 ### 派生字段 {#deduplicate-uc1-derivedfield}
 
-您定义一个 `Booking Confirmation` 派生字段。 您可以使用 [!UICONTROL DEDUPLICATE] 函数定义一条规则，以使用[!UICONTROL 重复数据删除 ID] [!UICONTROL 预订确认 ID ]对[!UICONTROL 范围] [!DNL Person] 的[!UICONTROL 值] [!DNL Booking] 进行重复数据删除。 您可以选择[!UICONTROL 保留第一个实例]作为[!UICONTROL 要保留的值]。
+您定义一个 `Booking Confirmation` 派生字段。 您可以使用 [!UICONTROL DEDUPLICATE] 函数定义一条规则，以使用[!UICONTROL 重复数据删除 ID] [!UICONTROL 预订确认 ID &#x200B;]对[!UICONTROL 范围] [!DNL Person] 的[!UICONTROL 值] [!DNL Booking] 进行重复数据删除。 您可以选择[!UICONTROL 保留第一个实例]作为[!UICONTROL 要保留的值]。
 
 ![连接规则的屏幕快照](assets/deduplicate-1.png)
 
@@ -1999,7 +2010,7 @@ Customer Journey Analytics 使用 Perl 正则表达式语法的子集。 支持�
 
 ### 派生字段 {#typecast-uc1-derivedfield}
 
-您定义一个 `Screen Height` 派生字段。 您使用 [!UICONTROL TYPECAST] 函数定义一个规则，用于将[!UICONTROL 类型转换为] [!UICONTROL 字符串][!UICONTROL 屏幕高度]字段，并将其存储在新的派生字段中。
+您定义一个 `Screen Height` 派生字段。 您使用 [!UICONTROL TYPECAST] 函数定义一个规则，用于将[!UICONTROL 类型转换为] [!UICONTROL 字符串]&#x200B;[!UICONTROL 屏幕高度]字段，并将其存储在新的派生字段中。
 
 ![类型转换规则 1 的屏幕快照](assets/typecast-1.png)
 
@@ -2014,7 +2025,7 @@ Customer Journey Analytics 使用 Perl 正则表达式语法的子集。 支持�
 
 ### 派生字段 {#typecast-uc2-derivedfield}
 
-您定义一个 `Revenue (integer)` 派生字段。 您使用 [!UICONTROL TYPECAST] 函数定义一个规则，用于将[!UICONTROL 类型转换为] [!UICONTROL 整数][!UICONTROL 屏幕高度]字段，并将其存储在新的派生字段中。
+您定义一个 `Revenue (integer)` 派生字段。 您使用 [!UICONTROL TYPECAST] 函数定义一个规则，用于将[!UICONTROL 类型转换为] [!UICONTROL 整数]&#x200B;[!UICONTROL 屏幕高度]字段，并将其存储在新的派生字段中。
 
 
 +++
