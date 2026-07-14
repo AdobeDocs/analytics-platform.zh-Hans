@@ -3,13 +3,12 @@ title: 子事件分析
 description: 了解子事件分析如何让您在客户历程分析中筛选事件内的单个产品或其他容器，从而消除产品报表中的归因出血。
 feature: Segmentation
 hold: true
-feature_v2:
-  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
-subfeature_v2:
-  - id: a544b409-2610-410d-a842-474ac1d0d54e
-source-git-commit: b4bec7c8e476bc2dbffce42bd52ff535b90dcb86
+hide: true
+feature_v2: id: c153fd90-23e1-4614-81d3-3cc7571227f7
+subfeature_v2: id: a544b409-2610-410d-a842-474ac1d0d54e
+source-git-commit: 53fa238b78adc0acabbba3059342e51ba9c23aac
 workflow-type: tm+mt
-source-wordcount: 564
+source-wordcount: 565
 ht-degree: 0%
 
 ---
@@ -32,9 +31,9 @@ ht-degree: 0%
 
 ## 示例
 
-您只想测量专业套件类别的收入。 如果没有子事件分析，应用专业套装细分将包括来自任何订单（事件）上的每项产品的收入，该订单（事件）至少包含一项具有专业套装类别的产品。 通过子事件分析，您可以将该过滤器范围限定为产品级别，并且只返回专业西装类别产品的收入。
+您只想测量专业西装类别的收入。 如果没有子事件分析，应用专业套装细分将包括来自任何订单（事件）上的每项产品的收入，该订单（事件）至少包含一项具有专业套装类别的产品。 通过子事件分析，您可以将该过滤器范围限定为产品级别，并且只返回专业西装类别产品的收入。
 
-您还需要测量除Men类别之外的所有其他类别的在线收入。
+您还需要测量除专业套装类别外的所有其他类别的在线收入。
 
 >[!BEGINTABS]
 
