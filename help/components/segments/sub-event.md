@@ -4,11 +4,9 @@ description: 了解子事件分析如何让您在客户历程分析中筛选事�
 feature: Segmentation
 hold: true
 hide: true
-feature_v2:
-  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
-subfeature_v2:
-  - id: a544b409-2610-410d-a842-474ac1d0d54e
-source-git-commit: 53fa238b78adc0acabbba3059342e51ba9c23aac
+feature_v2: id: c153fd90-23e1-4614-81d3-3cc7571227f7
+subfeature_v2: id: a544b409-2610-410d-a842-474ac1d0d54e
+source-git-commit: c504a631398d14479c9a2b70d9ef43ac88e35704
 workflow-type: tm+mt
 source-wordcount: 565
 ht-degree: 0%
@@ -49,7 +47,7 @@ ht-degree: 0%
 
 >[!TAB 子事件分析]
 
-在分段生成器中，或作为&#x200B;**[!UICONTROL 快速区段]**&#x200B;的一部分，您指定在&#x200B;**[!UICONTROL 产品]**&#x200B;容器上&#x200B;**[!UICONTROL 包含]** **[!UICONTROL Dimension]** **[!UICONTROL product_category]** **[!UICONTROL 等于]** **[!UICONTROL 专业套件]**。
+在分段生成器中，或作为&#x200B;**[!UICONTROL 快速区段]**&#x200B;的一部分，您指定在&#x200B;**[!UICONTROL 产品]**&#x200B;容器上&#x200B;**[!UICONTROL 包含]** **[!UICONTROL Dimension]** **[!UICONTROL product_category]** **[!UICONTROL 等于]** **[!UICONTROL 专业套装]**。
 
 ![显示产品类别专业套装子事件级别分段的面板](./assets/product-category-segmentation-subevents.png)
 
