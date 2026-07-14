@@ -2,10 +2,10 @@
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 2125f1a16ffed79f77757120c5679dd4defa1638
+source-git-commit: 6b2b6fbf16c7aa7a7a31bb46ac63e4150bf2cfc8
 workflow-type: tm+mt
-source-wordcount: '1449'
-ht-degree: 94%
+source-wordcount: '1452'
+ht-degree: 95%
 
 ---
 
@@ -369,6 +369,7 @@ ht-degree: 94%
       + [管理区段](/help/components/segments/seg-manage.md)
       + [运算符](/help/components/segments/seg-operators.md)
       + [使用区段](/help/components/segments/seg-use.md)
+      + {hide-from-toc}[子事件分析](/help/components/segments/sub-event.md)
    + 计算量度 {#cja-calcmetrics}
       + [概述](../components/calc-metrics/calc-metr-overview.md)
       + 工作流 {#cm-workflow}
@@ -527,7 +528,7 @@ ht-degree: 94%
          + [注意事项](/help/use-cases/data-views/bi-extension/caveats.md)
 
       + 派生字段 {#derived-fields}
-         + [派生字段准则](/help/use-cases/data-views/derived-fields/guidelines.md)
+         + [派生字段指南](/help/use-cases/data-views/derived-fields/guidelines.md)
          + [关于 LLM 和 AI 生成流量的报告](/help/use-cases/data-views/derived-fields/ai-traffic.md)
          + [报告目标](/help/use-cases/data-views/derived-fields/goals-using-derived-fields.md)
    + 产品分析 {#product-analysis}
