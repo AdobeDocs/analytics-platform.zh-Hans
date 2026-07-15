@@ -5,6 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
 role: Admin
+hold: true
 autotag-review: '2026-05-19T09:11:52.108Z'
 TQID: 'https://experienceleague.adobe.com/zvIcmaZiq3dtL-6b8fal6l2pWVLUbfVcOGWgyuqMqjE'
 product_v2:
@@ -17,10 +18,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 65ed91c47b271257451243db6f7e50e127ff4b68
 workflow-type: tm+mt
-source-wordcount: 930
-ht-degree: 95%
+source-wordcount: 955
+ht-degree: 93%
 
 ---
 
@@ -62,7 +63,7 @@ ht-degree: 95%
 * **[!UICONTROL 标准]**：您希望如何处理分隔的值列表。
    * **[!UICONTROL 从左]**：从分隔列表的开头开始，向前计数。
    * **[!UICONTROL 从右]**：从分隔列表的结尾开始，向后计数。
-   * **[!UICONTROL 转化为数组]**：将此维度视为对象数组架构元素。
+   * **[!UICONTROL 转化为数组]**：将此维度视为对象数组架构元素。 该维度将作为[自定义容器](/help/data-views/create-dataview.md#containers-1)提供，您可以在数据视图中选择该维度，并将其用于工作区项目中的[子事件分析](/help/components/segments/sub-event.md)。
 * **[!UICONTROL 分隔符]**：字段使用的分隔符。
 * **[!UICONTROL 索引]**：仅当标准为从左/右时才出现。 元素编号，就像它在一个数组中的编号一样。 例如，如果字符串输入是索引为 3 的 `"Fox,Turtle,Rabbit,Wolf"`，则输出是 `"Rabbit"`。 如果索引高于分隔元素的数量，则应用 [无值选项](no-value-options.md)。
 

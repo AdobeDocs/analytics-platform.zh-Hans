@@ -5,6 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
+hold: true
 TQID: https://experienceleague.adobe.com/zpiJFUF8RnIdFQWf29FBpRznWO3Ejs-j2szx69kdMNE
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -22,10 +23,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-source-git-commit: 536a1c7151521b26fccd486704d5c9426b039f53
+source-git-commit: b342654b753f679f86750e43efbed1eb149e1b17
 workflow-type: tm+mt
-source-wordcount: 10387
-ht-degree: 97%
+source-wordcount: 10573
+ht-degree: 98%
 
 ---
 
@@ -302,6 +303,8 @@ ht-degree: 97%
 要使用该模板，您必须为模板中规则内列出的每个函数指定正确的参数。 有关详细信息，请参阅[函数参考](#function-reference)。
 
 ![“获取带分隔符的列表中的所有值”规则生成器的屏幕快照](assets/function-template-get-all-values-in-delimited-list.png)
+
+派生字段将作为[自定义容器](/help/data-views/create-dataview.md#containers-1)提供，您可以在数据视图中选择该容器，并用于在工作区项目中的[子事件分析](/help/components/segments/sub-event.md)。
 
 +++
 
@@ -755,8 +758,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 ## 用例 1 {#classify-uc1}
 
-您的CSV文件确实包括`hotelID`的键列以及与`hotelID`关联的一个或多个其他列： `city`、`rooms`、`hotel name`。
-您正在某个维度中收集[!DNL Hotel ID]，但想要创建从CSV文件中的`hotelID`派生的[!DNL Hotel Name]维度。
+您确实有一个 CSV 文件，其中包括 `hotelID` 的关键列和与 `hotelID` 相关的一个或多个附加列：`city`、`rooms`、`hotel name`。您正在收集维度中的 [!DNL Hotel ID]，但希望创建一个从 CSV 文件中的 `hotelID` 派生的 [!DNL Hotel Name] 维度。
 
 **CSV 文件结构和内容**
 
@@ -1014,8 +1016,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 您希望了解客户在一个会话中下单之前的搜索时间（以分钟为单位）。
 
-您定义了一个新的`Time Between Search And Order In Minutes`派生字段，该字段是两个[[!UICONTROL CASE WHEN]函数](#case-when)的结果，用于定义[!UICONTROL 搜索时间]和[!UICONTROL 订单时间]值。
-然后使用这两个值计算差值，其中[!UICONTROL DATE MATH]函数的[!UICONTROL 作用域]设置为[!UICONTROL 会话]，值设置为[!UICONTROL 搜索时间]和[!UICONTROL 订单时间]，输出粒度设置为[!UICONTROL 分钟]。对于这两个值，请选择[!UICONTROL 返回第一个]以确保返回第一个[!UICONTROL 搜索时间]和[!UICONTROL 订单时间]。
+您定义一个新的 `Time Between Search And Order In Minutes` 派生字段，这是两个 [[!UICONTROL CASE WHEN] 函数](#case-when)的结果，用于定义[!UICONTROL 搜索时间]和[!UICONTROL 下单时间]的值。然后您用这两个值计算差值，其中[!UICONTROL 日期运算]函数的[!UICONTROL 范围]设置为[!UICONTROL 会话]，值设置为[!UICONTROL 搜索时间]和[!UICONTROL 下单时间]，[!UICONTROL 输出粒度]设置为[!UICONTROL 分钟]。 您为这两个值都选择[!UICONTROL 返回第一个]，以确保返回第一个[!UICONTROL 搜索时间]和[!UICONTROL 下单时间]。
 
 ![日期运算规则 3 的屏幕快照](assets/datemath-3.png)
 
@@ -1287,8 +1288,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 1. 从选择器中选择&#x200B;**[!UICONTROL 架构字段]**。
 1. 选择 ![架构字段图标](assets/Smock_Folder_18_N.svg) **[!UICONTROL 查找数据集]**。
 1. 选择您的查找数据集，并找到您想要用于查找的字段。
-1. 将查找字段拖放到函数的任何可用输入字段上（例如Case When）。如果有效，则标有&#x200B;**[!UICONTROL + Add]**&#x200B;的蓝色框允许您删除该字段，并在您删除该查找字段的函数之前自动插入查找函数。插入的Lookup函数将自动填充所有字段的相关值。
-   ![查找拖动](assets/lookup-drag.png)
+1. 将查找字段拖放到函数的任何可用输入字段上（例如 Case When）。 当该功能有效时，一个标有 **[!UICONTROL + 添加]**&#x200B;的蓝色框会允许您拖放字段，并自动在您放置查找字段的函数之前插入一个查找函数。 所插入的查找函数会自动填充所有字段的相关值。   ![查找拖动](assets/lookup-drag.png)
 
 +++
 
@@ -1409,8 +1409,7 @@ Customer Journey Analytics 使用以下默认容器模型：
 
 要创建一个公式：
 
-1. 只需在公式字段中开始输入，与所键入内容匹配的数字字段即会显示在弹出菜单中。或者，您可以从左窗格的可用字段中拖放数值字段。
-   ![更多数学信息 1](assets/math-more-info-1.png)
+1. 只需在公式字段中开始输入内容，与您输入的内容匹配的数字字段就会出现在弹出菜单中。 或者，您可以从左侧窗格中的可用字段中拖放一个数字字段。   ![更多数学信息 1](assets/math-more-info-1.png)
 
 1. 添加运算数（例如 `*` 表示乘法），后跟另一个字段或静态值。 您可以使用括号来定义更复杂的公式。
 
