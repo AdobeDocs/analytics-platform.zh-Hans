@@ -7,23 +7,15 @@ hide: true
 role: Admin
 autotag-review: '2026-05-19T11:01:07.331Z'
 TQID: 'https://experienceleague.adobe.com/-7rHOhYVCp-nSMqdE7YlAlCJ0zRQYvPOViMHSCNuKV8'
-product_v2:
-  - id: d3f42e9e-bb51-4077-a732-358b801d8b29
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 11156e1f2db094595cc3333ccb0b896037da4715
+product_v2: id: d3f42e9e-bb51-4077-a732-358b801d8b29id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: ddbeb022f4850c2f872f612c86fb37a94b43a73d
 workflow-type: tm+mt
-source-wordcount: 1178
-ht-degree: 25%
+source-wordcount: 1203
+ht-degree: 20%
 
 ---
 
@@ -31,7 +23,7 @@ ht-degree: 25%
 
 B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Customer Journey Analytics中对整个客户历程进行完整分析。 当事件缺少帐户ID（Customer Journey Analytics B2B edition需要帐户ID进行摄取）时，帐户拼接将使用您提供的[人员到帐户映射数据集](#prerequisites)自动派生和添加该信息。
 
-如果没有帐户拼合，则在引入期间会丢弃任何不包含帐户ID的事件。 帐户拼接可在每个事件中查找与人员关联的帐户，并在事件被摄取时添加帐户ID以追溯该事件，从而消除此障碍。
+如果没有帐户拼合，则在引入期间会丢弃任何不包含帐户ID的事件。 帐户拼接通过在每个事件中查找与人员关联的帐户，并在事件被摄取和追溯时添加帐户ID来解决此限制。
 
 >[!NOTE]
 >
@@ -68,12 +60,12 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_identifier_namespace"
 >title="人员标识符命名空间"
->abstract="选择一个人员标识符命名空间（例如电子邮件），用于提升任何人员 ID。"
+>abstract="为您的报表选择最相关的人员身份命名空间。 例如，电子邮件。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_to_account_dataset"
 >title="人员到帐户数据集"
->abstract="选择用于将人员 ID 映射到帐户 ID 的查找数据集。"
+>abstract="在数据集中选择包含人员ID的字段。 此字段的命名空间可能与选定的人员标识符命名空间（B2B拼接配置）不同或相同。 如果两个命名空间不同，请链接身份图中的命名空间。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person"
@@ -83,14 +75,14 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_account"
 >title="帐户"
->abstract="选择数据集中包含帐户 ID 的字段。 该字段不能与&#x200B;**[!UICONTROL 人员]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。"
+>abstract="选择数据集中包含唯一帐户标识符值的字段。 帐户ID信息将在启用了拼合的任何事件数据集的行中提供。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_start_time"
 >title="开始时间"
 >abstract="选择一个时间戳字段，用于指示人员到帐户关系何时生效。"
 >additional-url=""
->additional-url=""
+additional-url=""
 
 
 1. 在Customer Journey Analytics中，导航到&#x200B;**[!UICONTROL 连接]**&#x200B;和[创建新连接](/help/connections/create-connection.md#create-a-connection)或[编辑现有连接](/help/connections/create-connection.md#edit-a-connection)。
@@ -139,7 +131,7 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
 >title="启用人员到帐户拼接"
 >abstract="启用后，此数据集将使用 B2B 帐户拼接。 选择必填的&#x200B;**[!UICONTROL 人员 ID]**，以根据人员到帐户数据集查找帐户 ID。<br/>如果禁用，则此数据集&#x200B;*不会*&#x200B;使用 B2B 帐户拼接，您需要改为选择必填的&#x200B;**[!UICONTROL 帐户 ID]**。"
 >additional-url=""
->additional-url=""
+additional-url=""
 
 
 在连接级别配置B2B拼接后，必须为要拼接的每个事件数据集单独启用B2B帐户拼接。
@@ -180,7 +172,7 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
 
 >[!IMPORTANT]
 >
->保存连接后，B2B拼接配置将变得不可更改。 要在保存后查看设置，请选择&#x200B;**打开B2B拼接配置**。 所有字段将以只读状态显示。 此外，如果在Experience Platform中删除了用于[人员到帐户映射](#prerequisites)的数据集，则此连接将被删除。
+>保存连接后，B2B拼接配置将变得不可更改。 要在保存后查看设置，请选择&#x200B;**打开B2B拼接配置**。 所有字段均以只读状态显示。 此外，如果在Experience Platform中删除了用于[人员到帐户映射](#prerequisites)的数据集，则会删除此连接。
 
 ## 数据更新计划
 
@@ -195,7 +187,7 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
 
 帐户拼接遵循个人身份的标准隐私和卫生请求，与B2C拼接行为一致。 如果之后通过隐私或卫生请求删除了人员ID，则使用身份图执行的关联拼合会被撤销。
 
-通过拼接添加到事件的B2B实体（如帐户ID、帐户ID和全局帐户ID）不会作为隐私或卫生请求的一部分删除。 这些值不包含个人身份信息，因此不存在删除这些值的法律义务。
+在隐私或卫生请求期间，不会删除通过拼接添加到事件的B2B实体，如帐户ID、帐户ID和全局帐户ID。 这些值不包含个人身份信息，因此不存在删除这些值的法律义务。
 
 >[!MORELIKETHIS]
 >
