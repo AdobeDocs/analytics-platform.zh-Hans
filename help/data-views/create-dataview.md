@@ -5,7 +5,6 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-hold: true
 TQID: https://experienceleague.adobe.com/EXiKrWVfmMRgZ4GF0OR410Mr2-P5IEjPy3Hf0FmRDJ8
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -25,10 +24,10 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: b342654b753f679f86750e43efbed1eb149e1b17
+source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
 workflow-type: tm+mt
-source-wordcount: 3278
-ht-degree: 84%
+source-wordcount: 3152
+ht-degree: 74%
 
 ---
 
@@ -54,26 +53,12 @@ ht-degree: 84%
 
 要配置新的或现有的数据视图：
 
->[!BEGINTABS]
-
->[!TAB 标准]
-
-![配置数据视图](assets/dataview-configure.png)
-
->[!TAB B2B Edition]
-
-![配置数据视图 B2B](assets/dataview-configure-b2b.png)
-
->[!TAB 分隔容器选项卡]
-
 ![使用单独的容器选项卡配置数据视图](assets/data-view-configure-containers.png)
 
 
->[!ENDTABS]
-
 
 1. 选择&#x200B;**[!UICONTROL “配置”]**&#x200B;选项卡（如果尚未激活）。
-1. 指定&#x200B;**[!UICONTROL “设置”]**、**[!UICONTROL “容器”]**&#x200B;和&#x200B;**[!UICONTROL “日程表”]**&#x200B;详细信息（见下文）。
+1. 指定&#x200B;**[!UICONTROL 设置]**、**[!UICONTROL 兼容性]**、**[!UICONTROL AI设置]**&#x200B;和&#x200B;**[!UICONTROL 日历]**&#x200B;详细信息（请参阅下文）。
 1. 选择&#x200B;**[!UICONTROL “保存并继续”]**，以继续配置新的或现有的数据视图。 选择&#x200B;**[!UICONTROL “保存”]**，以保存现有数据视图的配置。
 
 
@@ -82,7 +67,7 @@ ht-degree: 84%
 >[!CONTEXTUALHELP]
 >id="dataview_externalid"
 >title="外部 ID"
->abstract="更改外部 ID 可能会影响数据视图名称在外部源（例如商业智能工具）中的显示方式。"
+>abstract="更改外部ID会影响数据视图名称在外部源（如商业智能工具）中的显示方式。"
 
 
 提供数据视图的总体设置。
@@ -102,7 +87,7 @@ ht-degree: 84%
 >[!CONTEXTUALHELP]
 >id="dataview_dataviewsinadobejourneyoptimizer"
 >title="Journey Optimizer 中的数据视图"
->abstract="Customer Journey Analytics 需要使用与 Adobe Journey Optimizer 兼容的连接和数据视图。 默认情况下，系统将自动创建一个连接和数据视图用于此目的。<br/>或者，您可以启用此选项，将其设为 Adobe Journey Optimizer 报告中使用的默认数据视图。 启用后，Journey Optimizer 所需的所有必要组件都将添加到此数据视图中，并且所有必要的 Journey Optimizer 数据集都将添加到与此数据视图关联的连接中。"
+>abstract="Customer Journey Analytics需要与Adobe Journey Optimizer兼容的连接和数据视图。 默认情况下，系统会创建连接和数据视图。 或者，启用此选项以将其设置为Adobe Journey Optimizer报表的默认数据视图，这会将必要的组件添加到数据视图，并将数据集添加到连接。"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/integrations/ajo#connection" text="添加了哪些组件和数据集。"
 
 
@@ -115,24 +100,6 @@ ht-degree: 84%
 | [!UICONTROL **在 Adobe Journey Optimizer 中设置为默认数据视图**] | 此配置选项使 Journey Optimizer 和 Customer Journey Analytics 的报告标准化。 此外，它还允许您在 Customer Journey Analytics 中对 Adobe Journey Optimizer 的数据进行高级分析（在 Journey Optimizer 中选择![打开](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) [!UICONTROL **在 CJA 中分析**]）。<p>进行此类分析时，Journey Optimizer 需要具有 Customer Journey Analytics 数据视图的访问权限。<p>启用此选项可使其成为您的沙盒 Journey Optimizer 报告中使用的默认数据视图。</p><p>此配置选项将自动执行以下操作：</p><ul><li>在 Customer Journey Analytics 的相关连接中配置所有必需的 Journey Optimizer 数据集，以便与 Journey Optimizer 配合使用。</li><li>在数据视图中创建一组 Journey Optimizer 量度和维度（包括派生字段和计算量度）。 在所有这些量度和维度上自动设置上下文标签。</li><li>自动启用与此数据视图相关联的连接中的&#x200B;**[!UICONTROL 在 CJA 中使用]**&#x200B;选项。 （要了解有关此选项的更多信息，请参阅[在 Customer Journey Analytics 中使用 Journey Optimizer 连接](/help/connections/manage-connections.md)。）<p>如果在启用此设置后手动禁用此设置，连接和任何相关联的数据视图都会重置为其默认状态。 这可能会导致报告中的数据变化。</p></li></ul><p><p>启用此选项时，请考虑以下事项： <ul><li>您可以稍后更改默认数据视图，但这样做可能会更改您的 Journey Optimizer 报告数据。 如果启用此选项后选择禁用，系统将提示您选择新的默认数据视图。</li><li>如果您已经对 Customer Journey Analytics 数据视图中的数据集、维度或量度进行了手动自定义，则启用此配置选项时，您的手动自定义将保持不变。 此选项可以进行额外的自定义，以进一步标准化 Journey Optimizer 和 Customer Journey Analytics 之间的报告。 启用此选项后，您还可以进行手动自定义。</li><li>选择此选项时，无法删除与数据视图关联的连接。</li></ul>请参阅[将 Adobe Journey Optimizer 与 Adobe Customer Journey Analytics 集成](/help/integrations/ajo.md)，以了解详细信息。 |
 
 {style="table-layout:auto"}
-
-### 容器
-
-指定数据视图的容器的名称。 容器名称经常在[区段](/help/components/segments/seg-overview.md#containers)中使用。
-
-| 设置 | 描述 |
-| --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全球帐户容器名称&#x200B;]** | `Global Account`（默认）。 [!UICONTROL 全球帐户]容器包括全球帐户在指定的时间范围内的每个会话和事件。 如果您的组织使用不同的术语，您可以在此处重命名容器。 |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户容器名称&#x200B;]** | `Account`（默认）。 [!UICONTROL 帐户]容器包括在指定的时间范围内帐户的每个会话和事件。 如果您的组织使用不同的术语，您可以在此处重命名容器。 |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 机会容器名称&#x200B;]** | `Opportunity`（默认）。 [!UICONTROL 机会]容器包括在指定的时间范围内机会的每个会话和事件。 如果您的组织使用不同的术语，您可以在此处重命名容器。 |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 购买群组容器名称&#x200B;]** | `Buying Group`（默认）。 [!UICONTROL 购买群组]容器包括在指定的时间范围内购买群组的每个会话和事件。 如果您的组织使用不同的术语，您可以在此处重命名容器。 |
-| **[!UICONTROL 人员容器名称]** | `Person`（默认）。 [!UICONTROL 人员]容器包括人员在指定的时间范围内的每个会话和事件。 如果您的组织使用不同的用语（例如，“访客”或“用户”），可在此处将该容器重命名。 |
-| **[!UICONTROL 会话容器名称]** | `Session`（默认）。 通过[!UICONTROL 会话]容器可以识别页面交互、营销活动或特定会话的转化。 可将此容器重命名为“访问”或您的组织更喜欢的任何其他用语。 |
-| **[!UICONTROL 事件容器名称]** | `Event`（默认）。 [!UICONTROL 事件]容器定义数据集中的个别事件。 如果您的组织使用不同的用语（例如，“点击”或“页面查看”），可在此处将该容器重命名。 |
-
-{style="table-layout:auto"}
-
-当您看到&#x200B;**[!UICONTROL 容器已移动时。 专用容器选项卡]**&#x200B;上现在提供了容器，您可以在单独的[容器](#containers-1)选项卡中定义容器。
 
 
 ### AI 设置
@@ -173,13 +140,19 @@ ht-degree: 84%
 
 在&#x200B;**[!UICONTROL 容器]**&#x200B;选项卡中，您可以重命名系统容器并添加自定义容器。
 
-您可以向数据视图添加自定义容器，以便使用这些容器进行[子事件分析](/help/components/segments/sub-event.md)。 自定义容器可从以下位置定义：
-
-* 作为连接一部分的数据集内可用的对象或数组。 例如，**[!UICONTROL productListItems]**、**[!UICONTROL content_assets]**&#x200B;或&#x200B;**[!UICONTROL placeContext.activePOIs]**。
-* 通过使用[Split](/help/data-views/derived-fields/derived-fields.md#split)函数返回数组的派生字段。
-* 配置为使用带有[分隔符](/help/data-views/component-settings/substring.md#delimiter)选项的[子字符串](/help/data-views/component-settings/substring.md)组件设置返回数组的数据视图组件。
-
 ### 系统容器
+
+指定数据视图的容器的名称。 容器名称经常在[区段](/help/components/segments/seg-overview.md#containers)中使用。
+
+| 容器名称 | 显示名称（默认） | 描述 |
+| --- | --- | --- |
+| globalAccount | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全局帐户&#x200B;]** | [!UICONTROL 全球帐户]容器包括全球帐户在指定的时间范围内的每个会话和事件。 如果您的组织使用不同的术语，您可以在此处重命名容器。 |
+| 人员 | **[!UICONTROL 人员]** | [!UICONTROL 人员]容器包括人员在指定的时间范围内的每个会话和事件。 如果您的组织使用不同的用语（例如，“访客”或“用户”），可在此处将该容器重命名。 |
+| session | **[!UICONTROL 会话]** | 通过[!UICONTROL 会话]容器可以识别页面交互、营销活动或特定会话的转化。 可将此容器重命名为“访问”或您的组织更喜欢的任何其他用语。 |
+| 机会 | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 机会&#x200B;]** | [!UICONTROL 机会]容器包括在指定的时间范围内机会的每个会话和事件。 如果您的组织使用不同的术语，您可以在此处重命名容器。 |
+| puringGroup | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 购买群&#x200B;]** | [!UICONTROL 购买群组]容器包括在指定的时间范围内购买群组的每个会话和事件。 如果您的组织使用不同的术语，您可以在此处重命名容器。 |
+| 事件 | **[!UICONTROL 事件]** | [!UICONTROL 事件]容器定义数据集中的个别事件。 如果您的组织使用不同的用语（例如，“点击”或“页面查看”），可在此处将该容器重命名。 |
+| account | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户&#x200B;]** | [!UICONTROL 帐户]容器包括在指定的时间范围内帐户的每个会话和事件。 如果您的组织使用不同的术语，您可以在此处重命名容器。 |
 
 要重命名系统容器，请执行以下操作：
 
@@ -189,6 +162,12 @@ ht-degree: 84%
 
 
 ### 自定义容器
+
+您可以向数据视图添加自定义容器，以便使用这些容器进行[子事件分析](/help/components/segments/sub-event.md)。 自定义容器可从以下位置定义：
+
+* 作为连接一部分的数据集内可用的对象或数组。 例如，**[!UICONTROL productListItems]**、**[!UICONTROL content_assets]**&#x200B;或&#x200B;**[!UICONTROL placeContext.activePOIs]**。
+* 通过使用[Split](/help/data-views/derived-fields/derived-fields.md#split)函数返回数组的派生字段。
+* 配置为使用带有[分隔符](/help/data-views/component-settings/substring.md#delimiter)选项的[子字符串](/help/data-views/component-settings/substring.md)组件设置返回数组的数据视图组件。
 
 要添加自定义容器，请执行以下操作：
 
@@ -237,11 +216,11 @@ ht-degree: 84%
 
    ![“组件”选项卡](assets/dataview-components.png)
 
-   可在左上角看到[!UICONTROL 连接]（其中包含数据集），并可在下方看到其[!UICONTROL 架构字段]。  已包含的组件是所有数据视图（如事件、人员、会话量度以及分钟、季度、周维度）所需的标准组件（系统生成）。<ul><li>定义了c[自定义容器](#containers-1)后，将自动使用![ShowAllLayer](/help/assets/icons/ShowAllLayer.svg) **[!UICONTROL _自定义容器名称&#x200B;_发生次数]**&#x200B;添加和识别这些容器的量度。</li><li>默认情况下不弃用筛选器&#x200B;**&#x200B;**，以便只显示未弃用的架构字段。</li></ul>
+   可在左上角看到[!UICONTROL 连接]（其中包含数据集），并可在下方看到其[!UICONTROL 架构字段]。  所有数据视图都包含标准组件，如事件、人员、会话量度和时间维度。<ul><li>定义[自定义容器](#containers-1)时，量度会自动添加为![ShowAllLayer](/help/assets/icons/ShowAllLayer.svg) **[!UICONTROL _自定义容器名称&#x200B;_发生次数]**。</li><li>默认情况下，系统应用&#x200B;**[!UICONTROL 不弃用]**&#x200B;筛选器，因此只显示未弃用的架构字段。</li></ul>
 
 1. 使用![搜索图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL 搜索架构字段]**&#x200B;来搜索架构字段，或者通过移动到任何数据集收藏集来查找字段，例如![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 事件数据集]**&#x200B;或![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 查找数据集]**。 对于事件数据集，![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL XDM字段]**&#x200B;和![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 临时和关系字段]**&#x200B;的单独集合可用。<br/>或者，您可以使用![数据图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **创建派生字段**&#x200B;创建派生字段。 请参阅[派生字段](./derived-fields/derived-fields.md)，了解更多信息。
 
-1. 如果您找到了特定架构字段或定义了派生字段，就将该字段，例如![手柄图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL 页面名称]**，从左边栏拖到&#x200B;**[!UICONTROL 所包含的组件]**&#x200B;下面的&#x200B;**[!UICONTROL 量度]**&#x200B;或&#x200B;**[!UICONTROL 维度]**&#x200B;部分。可将同一架构字段拖入“维度”或“量度”部分多次，并可按不同方式配置同一维度或量度。 例如，可以使用右侧不同的[组件设置](component-settings/overview.md)从“页面名称”字段创建名为 `Product Pages` 的维度以及另一个名为 `Error pages` 的维度。如果从左边栏拖动一个架构字段文件夹，文件夹中的字段会自动分类到相应的部分。 字符串字段最后落在[!UICONTROL 维度]部分中，而数值架构类型最后落在[!UICONTROL 量度]部分中。 您也可以点击&#x200B;**[!UICONTROL 全部添加]**，将所有架构字段添加到其相应的部分。
+1. 找到特定架构字段或定义派生字段后，将该字段（如![句柄图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL 页面名称]**）从左边栏拖动到&#x200B;**[!UICONTROL 包含的组件]**&#x200B;下的&#x200B;**[!UICONTROL 量度]**&#x200B;或&#x200B;**[!UICONTROL 维度]**&#x200B;部分。可将同一架构字段拖入“维度”或“量度”部分多次，并可按不同方式配置同一维度或量度。 例如，从pageName字段，使用右侧不同的[组件设置](component-settings/overview.md)创建`Product Pages`和`Error pages`维度。如果从左边栏拖动一个架构字段文件夹，文件夹中的字段会自动分类到相应的部分。 字符串字段最后落在[!UICONTROL 维度]部分中，而数值架构类型最后落在[!UICONTROL 量度]部分中。 您也可以点击&#x200B;**[!UICONTROL 全部添加]**，将所有架构字段添加到其相应的部分。
 
 1. 选择组件后，右侧即会显示设置。
 
@@ -262,7 +241,7 @@ ht-degree: 84%
 
 ### 重复的指标或维度
 
-复制指标或维度，然后修改特定设置，这是从单个架构字段创建多个指标或维度的简单方法。 在量度或维度在右上角的名称下方选择[!UICONTROL 复制]设置。 修改新维度或量度，并以更具描述性的名称保存它。
+复制量度或维度，然后修改特定设置，是从单个架构字段创建多个量度或维度的有效方法。 在指标或维度在右上角的名称下选择[!UICONTROL 复制]设置。 修改新维度或量度，并以更具描述性的名称保存它。
 
 ### 筛选架构字段或数据集
 
@@ -272,7 +251,7 @@ ht-degree: 84%
 
 >[!TIP]
 >
->如果组件未在数据视图中正确加载，并且您看到错误消息，请参阅[缺乏权限](../troubleshooting/lack-of-permissions.md)，以获得解决方案。
+>如果组件未在数据视图中正确加载，并且您看到错误消息，请参阅[缺少权限](../troubleshooting/lack-of-permissions.md)以了解解决方法。
 
 
 ### 包含的组件 {#included-components}
@@ -311,7 +290,7 @@ ht-degree: 84%
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_policies"
 >title="支持"
->abstract="为了确保数据使用标签能够有效地支持数据合规性，必须实施数据使用策略。 数据使用策略是描述您可以或限制在 Experience Platform 内对数据执行的营销操作类型的规则。 策略过滤器将已启用的策略应用于数据视图。"
+>abstract="要支持数据合规性，请实施数据使用策略。 这些策略描述Experience Platform中允许或限制的对数据的营销操作。 策略过滤器将已启用的策略应用于数据视图。"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview" text="数据使用标签概述"
 
 
@@ -322,7 +301,7 @@ ht-degree: 84%
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview" text="数据使用标签概述"
 
 
-**[!UICONTROL 所包含的组件]**&#x200B;中包含了您为数据视图配置的&#x200B;**[!UICONTROL 量度]**&#x200B;和&#x200B;**[!UICONTROL 维度]**&#x200B;的列表。
+**[!UICONTROL 包含的组件]**&#x200B;部分包含您为数据视图配置的&#x200B;**[!UICONTROL 量度]**&#x200B;和&#x200B;**[!UICONTROL 维度]**&#x200B;的列表。
 
 * 如要搜索组件，使用![搜索](/help/assets/icons/Search.svg) **[!UICONTROL _搜索组件_]**。
 * 如要筛选列出的所包含的组件，选择![过滤器](/help/assets/icons/Filter.svg)。
@@ -333,7 +312,7 @@ ht-degree: 84%
 
    * **[!UICONTROL 数据类型]** - 您可以选择以下一种或多种数据类型：[!UICONTROL 字符串]、[!UICONTROL 整数]、[!UICONTROL 短整数]、[!UICONTROL 布尔值]、[!UICONTROL 双精度浮点数]、[!UICONTROL 字节]、[!UICONTROL 长整数]、[!UICONTROL 日期]或[!UICONTROL 日期时间]。
    * **[!UICONTROL 数据集]** - 选择一个或多个数据集。
-   * **[!UICONTROL 数据治理]**：从[!UICONTROL 自定义标签]、[!UICONTROL 合同标签]、[!UICONTROL 身份标识标签]、[!UICONTROL 敏感度标签]、[!UICONTROL 合作伙伴生态系统]或[!UICONTROL 策略]子类别中选择一个或多个标签。
+   * **[!UICONTROL 数据管理]**：从[!UICONTROL 自定义标签]、[!UICONTROL 合同标签]、[!UICONTROL 身份标签]、[!UICONTROL 敏感度标签]、[!UICONTROL 合作伙伴生态系统]或[!UICONTROL 策略]子类别中选择一个或多个标签。
    * **[!UICONTROL 其他]** - 选择一个或多个选项[!UICONTROL 包含数据]、[!UICONTROL 是身份标识]或[!UICONTROL 未弃用]。
 
   选择&#x200B;**[!UICONTROL 应用]**，应用过滤器。
@@ -357,12 +336,12 @@ ht-degree: 84%
 
 ### 会话设置
 
-决定在会话到期并开始新会话之前，事件之间无活动的时段。 时段为必填。 还可选择在事件包含特定量度时强制开始新会话。 有关更多详细信息，请参阅[会话设置](session-settings.md)。
+决定在会话到期并开始新会话之前，事件之间无活动的时段。 时段为必填。 您可以选择在事件包含特定量度时强制启动新会话。 有关更多详细信息，请参阅[会话设置](session-settings.md)。
 
 ### 数据预览
 
 数据预览中（为各种容器）将此数据视图的数据与连接的数据进行比较。 预览百分比基于过去 90 天连接中的总数。
 
-如果未加载预览，则您的连接有可能仍在进行回填。
+如果未加载预览，则表示您的连接仍在回填。
 
 指定所有需要的设置后，单击&#x200B;**[!UICONTROL 保存并完成]**。

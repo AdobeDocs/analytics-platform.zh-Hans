@@ -4,7 +4,6 @@ title: 行设置
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-hold: true
 TQID: https://experienceleague.adobe.com/qQKmobJ4J1RPezRG-hk38l7JNioIshzjMaKXWVoUWsM
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -17,10 +16,10 @@ subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a63b9948d58c4057db7fa74b36e9d0e0210f946
+source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
 workflow-type: tm+mt
-source-wordcount: 1596
-ht-degree: 56%
+source-wordcount: 1602
+ht-degree: 55%
 
 ---
 
@@ -90,9 +89,9 @@ ht-degree: 56%
 | **[!UICONTROL 趋势选择]** | 为选择创建趋势线形图可视化图表。 |
 | **[!UICONTROL 仅显示选定的行]** | 仅显示可视化图表中选定的行。 |
 | **[!UICONTROL 显示所有行]** | 显示可视化图表中的所有行。 |
-| **[!UICONTROL 重命名所选行]** | 重命名所选行。 在&#x200B;**[!UICONTROL 重命名所选行]**&#x200B;对话框中输入&#x200B;**[!UICONTROL 名称]**。 选择&#x200B;**[!UICONTROL 确定]**&#x200B;以确认，或选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消。 重命名自由格式表中的行后，标题列中的维度名称将附加&#x200B;**[!UICONTROL （已修改）]**，并且有![齿轮](/help/assets/icons/Gear.svg)图标可用于重置维度标题列中的重命名行。 请参阅[内联分类示例](#inline-classifications-example)。 |
-| **[!UICONTROL 合并所选行]** | 合并所选行。 在&#x200B;**[!UICONTROL 合并所选行]**&#x200B;对话框中输入&#x200B;**[!UICONTROL 名称]**。 选择&#x200B;**[!UICONTROL 确定]**&#x200B;以确认，或选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消。 组合自由格式表中的行后，标题列中的维度名称将附加&#x200B;**[!UICONTROL （已修改）]**，并且有![齿轮](/help/assets/icons/Gear.svg)图标可用于重置维度标题列中的重命名行。 请参阅[内联分类示例](#inline-classifications-example)。 |
-| **[!UICONTROL 创建为派生字段]** | *您必须是Customer Journey Analytics产品管理员才能看到此上下文菜单选项。*<br/>&#x200B;在自由格式表的任何选定行上可用，该表因重命名或组合行而被修改。 选中后，[派生字段界面](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field)将打开，其中包含您已预填充的对自由格式表所做的修改。 请参阅[内联分类示例](#inline-classifications-example)。 |
+| **[!UICONTROL 重命名所选行]** | *有限测试可用性*<br/>&#x200B;重命名所选行。 在&#x200B;**[!UICONTROL 重命名所选行]**&#x200B;对话框中输入&#x200B;**[!UICONTROL 名称]**。 选择&#x200B;**[!UICONTROL 确定]**&#x200B;以确认，或选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消。 重命名自由格式表中的行后，标题列中的维度名称将附加&#x200B;**[!UICONTROL （已修改）]**，并且有![齿轮](/help/assets/icons/Gear.svg)图标可用于重置维度标题列中的重命名行。 请参阅[内联分类示例](#inline-classifications-example)。 |
+| **[!UICONTROL 合并所选行]** | *有限测试可用性*<br/>&#x200B;合并所选行。 在&#x200B;**[!UICONTROL 合并所选行]**&#x200B;对话框中输入&#x200B;**[!UICONTROL 名称]**。 选择&#x200B;**[!UICONTROL 确定]**&#x200B;以确认，或选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消。 组合自由格式表中的行后，标题列中的维度名称将附加&#x200B;**[!UICONTROL （已修改）]**，并且有![齿轮](/help/assets/icons/Gear.svg)图标可用于重置维度标题列中的重命名行。 请参阅[内联分类示例](#inline-classifications-example)。 |
+| **[!UICONTROL 创建为派生字段]** | *有限测试可用性&#x200B;*<br/>*您必须是Customer Journey Analytics产品管理员才能查看此上下文菜单选项。*<br/>&#x200B;在自由格式表的任何选定行上可用，该表因重命名或组合行而被修改。 选中后，[派生字段界面](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field)将打开，其中包含您已预填充的对自由格式表所做的修改。 请参阅[内联分类示例](#inline-classifications-example)。 |
 | **[!UICONTROL 从选择创建注释]** | 打开[Annotation Builder](/help/components/annotations/create-annotations.md#annotation-builder)以生成所选内容的注释。 |
 | **[!UICONTROL 从选定范围中创建区段]** | 打开[区段生成器](/help/components/segments/seg-builder.md)以从所选内容生成区段。 |
 | **[!UICONTROL 从选择创建受众]** | 打开[受众生成器](/help/components/audiences/publish.md#audience-builder)以从所选内容生成受众。 |
@@ -118,6 +117,8 @@ ht-degree: 56%
 
 
 ## 内联分类示例
+
+{{release-limited-testing-section}}
 
 此示例说明如何使用&#x200B;**[!UICONTROL 重命名选定行]**、**[!UICONTROL 合并选定行]**&#x200B;和&#x200B;**[!UICONTROL 创建为派生字段]**&#x200B;上下文菜单选项。 以及如何重置修改后的自由格式表。
 

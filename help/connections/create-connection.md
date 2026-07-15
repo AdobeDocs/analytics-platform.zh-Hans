@@ -21,10 +21,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ff99ee131e9bae9fc2815fb54e5b5c14577450f7
+source-git-commit: ddbeb022f4850c2f872f612c86fb37a94b43a73d
 workflow-type: tm+mt
-source-wordcount: 10342
-ht-degree: 92%
+source-wordcount: 10413
+ht-degree: 91%
 
 ---
 
@@ -339,7 +339,7 @@ ht-degree: 92%
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountid"
 >title="帐户 ID"
->abstract="从 Experience Platform 的数据集架构中定义的可用身份标识中选择一个帐户 ID（帐户的唯一标识符）。"
+>abstract="从Experience Platform的数据集架构中定义的可用非身份或非人员身份字段中选择一个帐户ID。 当“人员到帐户”数据集中没有相关的帐户ID信息时，所包含的值将作为行级别的唯一帐户标识符使用。"
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountfield"
@@ -404,7 +404,7 @@ ht-degree: 92%
 >[!CONTEXTUALHELP]
 >id="connection_personid"
 >title="人员 ID"
->abstract="在 Experience Platform 中，从在数据集架构中定义的可用身份标识中选择人员 ID。"
+>abstract="选择一个覆盖范围很广的标识或identityMap类型字段。 包含的值提升为先前配置的人员标识符命名空间中的值（在B2B拼接配置中）。"
 
 >[!CONTEXTUALHELP]
 >id="connection_accountid"
@@ -732,7 +732,7 @@ ht-degree: 92%
 
 | 设置 | 描述 |
 | --- | --- |
-| **[!UICONTROL 全球帐户 ID]** | 从 Experience Platform 的数据集架构中定义的可用身份标识中选择一个全球帐户 ID（帐户的唯一标识符）。 适用于已将全球帐户作为容器添加到连接的情况。 <p>如果记录中不包含您已选择用作事件数据集的帐户 ID 的身份标识值，就会跳过该记录。 |
+| **[!UICONTROL 全球帐户 ID]** | 适用于已将全球帐户作为容器添加到连接的情况。<br/>从Experience Platform的数据集架构中定义的可用非标识或非人员标识字段中，选择一个全局帐户ID（帐户的唯一标识符）。 当“人员到帐户”数据集中没有相关的帐户ID信息时，所包含的值将作为行级别的唯一帐户标识符使用。  <p>如果记录中不包含您已选择用作事件数据集的帐户 ID 的身份标识值，就会跳过该记录。 |
 | **[!UICONTROL 帐户 ID]** | 从 Experience Platform 的数据集架构中定义的可用身份标识中选择一个帐户 ID（帐户的唯一标识符）。 适用于未将全球帐户作为容器添加到连接的情况。 |
 | **[!UICONTROL 机会 ID]** | 从 Experience Platform 的数据集架构中定义的可用身份标识中选择一个机会 ID（机会的唯一标识符）。 |
 | **[!UICONTROL 购买群组 ID]** | 从 Experience Platform 的数据集架构中定义的可用身份标识中选择一个购买群组 ID（购买群组的唯一标识符）。 |

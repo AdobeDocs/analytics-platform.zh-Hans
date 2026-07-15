@@ -5,7 +5,6 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-hold: true
 TQID: https://experienceleague.adobe.com/zpiJFUF8RnIdFQWf29FBpRznWO3Ejs-j2szx69kdMNE
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -23,7 +22,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-source-git-commit: b342654b753f679f86750e43efbed1eb149e1b17
+source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
 workflow-type: tm+mt
 source-wordcount: 10573
 ht-degree: 98%
@@ -36,7 +35,6 @@ ht-degree: 98%
 >id="dataview_derivedfields"
 >title="派生字段"
 >abstract="派生字段允许您通过可自定义的规则生成器动态定义数据操作。 然后，您可以将该派生字段用作工作区中的组件（度量或维度），甚至可以在“数据”视图中进一步定义为组件。"
-
 
 派生字段是 Adobe Customer Journey Analytics 中实时报告功能的一个重要方面。 通过派生字段和可自定义的规则生成器，即可迅速定义（一般较为复杂的）数据操作。 然后，您可以将该派生字段用作[工作区](../../analysis-workspace/home.md)中的组件（量度或维度），甚至可以进一步将该派生字段定义为[数据视图](../data-views.md)中的组件。
 
