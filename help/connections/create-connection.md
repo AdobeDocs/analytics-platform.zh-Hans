@@ -21,10 +21,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ddbeb022f4850c2f872f612c86fb37a94b43a73d
+source-git-commit: 3eae7d76014165ec03151b7c2ec87952f357d4a3
 workflow-type: tm+mt
-source-wordcount: 10413
-ht-degree: 91%
+source-wordcount: 10479
+ht-degree: 90%
 
 ---
 
@@ -404,12 +404,22 @@ ht-degree: 91%
 >[!CONTEXTUALHELP]
 >id="connection_personid"
 >title="人员 ID"
->abstract="选择一个覆盖范围很广的标识或identityMap类型字段。 包含的值提升为先前配置的人员标识符命名空间中的值（在B2B拼接配置中）。"
+>abstract="在 Experience Platform 中，从在数据集架构中定义的可用身份标识中选择人员 ID。"
 
 >[!CONTEXTUALHELP]
 >id="connection_accountid"
 >title="帐户 ID"
 >abstract="从 Experience Platform 的数据集架构中定义的可用身份标识中选择一个帐户 ID（帐户的唯一标识符）。"
+
+>[!CONTEXTUALHELP]
+>id="connection_b2bstitching_personid"
+>title="人员 ID"
+>abstract="选择一个覆盖范围很广的标识或identityMap类型字段。 包含的值将提升到先前配置的人员标识符命名空间中的值。"
+
+>[!CONTEXTUALHELP]
+>id="connection_b2bstitching_accountid"
+>title="帐户 ID"
+>abstract="或者，从数据集架构中定义的可用非身份或非人员身份字段中选择帐户ID。 当人员到帐户数据集中没有相关的帐户ID信息时，包含的值将用作行级别的唯一帐户标识符。"
 
 >[!CONTEXTUALHELP]
 >id="connection_accountfield"
