@@ -5,22 +5,14 @@ solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
 hold: true
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2:
-  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
-  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: eafeab50e86b3e98f372c70a0fd43494015ca002
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: eb00932f-4d46-46bc-b1d8-10de7588db8did: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: ffe2fd81-0630-49b3-a33b-4b8899e89c51id: d3fb138f-79e4-4a81-aedb-76dd93560085
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 91cd8d3d5c290f52e4ae15713693be1fc83baa92
 workflow-type: tm+mt
-source-wordcount: 759
+source-wordcount: 728
 ht-degree: 2%
 
 ---
@@ -32,14 +24,6 @@ ht-degree: 2%
 >[!IMPORTANT]
 >
 >同意筛选在摄取时不包括非同意访客数据。 通过筛选排除的数据不会存储在Customer Journey Analytics中，并且无法针对过去日期恢复。 在启用筛选之前，请仔细查看营销活动选择。
-
-## 先决条件
-
-在配置同意报告和筛选之前，请确保：
-
-* 您在Customer Journey Analytics中拥有系统管理员权限。
-* 您要使用的沙盒包含在`consentPoliciesIDMap`字段中具有同意策略成员资格数据的配置文件数据集。
-* 要配置的连接已存在。 有关详细信息，请参阅[创建或编辑连接](/help/connections/create-connection.md)。
 
 ## 创建配置
 
@@ -58,17 +42,21 @@ ht-degree: 2%
    | **[!UICONTROL 名称]** | 指定配置的名称。 |
    | **[!UICONTROL 沙盒]** | 选择包含带有同意策略成员资格数据的配置文件数据集的Experience Platform沙盒。 <p>每个沙盒最多存在一个同意策略查找数据集。 同一沙盒中的多个配置共享相同的查找数据集。</p> |
 
-1. 在&#x200B;**[!UICONTROL 配置文件数据集]**&#x200B;部分中，选择包含要报告的同意策略成员资格数据（`consentPoliciesIDMap`字段）的配置文件数据集。 此用户档案数据集将添加到您选择的连接。
+1. 在&#x200B;**[!UICONTROL 配置文件数据集]**&#x200B;部分中，选择包含要报告的同意策略成员资格数据（`consentPoliciesIDMap`字段）的配置文件数据集。 当您启用同意报告时，此用户档案数据集将添加到您选择的连接（如果该连接尚未包含在其中）。
 
 1. 在&#x200B;**[!UICONTROL 连接]**&#x200B;部分中，选择&#x200B;**[!UICONTROL 选择连接]**，选中要配置的一个或多个连接旁边的复选框，然后选择&#x200B;**[!UICONTROL 使用连接]**。
 
    在连接级别应用同意报告和筛选。 已配置连接下的所有数据视图将继承相同的行为。
 
+1. 在&#x200B;**[!UICONTROL 数据视图]**&#x200B;部分中，单击&#x200B;**[!UICONTROL 选择数据视图]**。
+
+1. 在数据视图对话框中，选中一个或多个要用于同意报告的数据视图旁边的复选框。 这些数据视图自动配置有Experience Platform同意数据以用于报表。
+
+1. 选择&#x200B;**[!UICONTROL 使用数据视图]**。
+
 1. （可选）在&#x200B;**[!UICONTROL 筛选]**&#x200B;部分中，您可以为以下营销操作启用筛选：
 
    >[!NOTE]
-   >
-   >保持未选中这两个开关可启用同意报告而不进行筛选。
    >
    >启用营销活动过滤功能后，仅当访客与适用于该营销活动的&#x200B;**所有**&#x200B;同意策略相匹配时，Customer Journey Analytics才会摄取访客的数据。 有关详细信息，请参阅[同意报告和筛选概述](/help/connections/consent-reporting-filtering/consent-overview.md)中的[同意筛选](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering)。
 
@@ -79,12 +67,11 @@ ht-degree: 2%
 
 1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以创建配置。
 
-   Customer Journey Analytics自动：
+   如果启用了报表，则Customer Journey Analytics会自动：
 
    * 将选定的配置文件数据集添加到连接。
    * 为沙盒创建同意策略查找数据集（如果尚不存在），并从Experience Platform同步策略名称和描述。
    * 将同意策略组件（维度、量度和派生字段）添加到已配置连接内的数据视图。
-   * 将&#x200B;**consent**&#x200B;内部标签应用于新组件，以便您可以在数据视图中筛选它们。 有关内部标签的详细信息，请参阅[标签和策略](/help/data-views/data-governance.md)。
 
 1. 配置完成后，[在数据视图](#view-consent-policy-components-in-the-data-view)中查看同意策略组件以验证它们是否可用。
 

@@ -5,21 +5,14 @@ solution: Customer Journey Analytics
 feature: Privacy
 role: Admin, User
 hold: true
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2:
-  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: eafeab50e86b3e98f372c70a0fd43494015ca002
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2: id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+source-git-commit: 91cd8d3d5c290f52e4ae15713693be1fc83baa92
 workflow-type: tm+mt
-source-wordcount: 385
+source-wordcount: 388
 ht-degree: 2%
 
 ---
@@ -28,7 +21,7 @@ ht-degree: 2%
 
 您可以将同意策略数据从Experience Platform配置文件数据集摄取到Customer Journey Analytics连接。
 
-在您[创建同意报告和筛选配置](/help/connections/consent-reporting-filtering/consent-configure.md)后，同意策略数据将作为已配置连接下数据视图中的新组件提供。 如果您有权访问存在这些组件的数据视图，则可以在Analysis Workspace中的任意位置使用这些组件。
+在您[创建同意报告和筛选配置](/help/connections/consent-reporting-filtering/consent-configure.md)并启用报告后，同意策略数据将作为已配置连接下数据视图中的新组件提供。 如果您有权访问存在这些组件的数据视图，则可以在Analysis Workspace中的任意位置使用这些组件。
 
 ## 同意策略组件
 
