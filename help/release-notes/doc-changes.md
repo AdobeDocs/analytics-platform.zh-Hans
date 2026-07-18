@@ -50,7 +50,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 |---|---|
 | **2026年6月** | |
-| 新的GA4指南 | 添加了[从Google Analytics 4过渡到Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home)。 |
+| 新的GA4指南 | 添加了[从Google Analytics 4过渡到Customer Journey Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home)。 |
 | **2026 年 5 月** | |
 | 用于 Content Analytics 的 JavaScript 库 | 有关如何使用 [Content Analytics Javascript 库](/help/content-analytics/config/tags-agnostic.md)为网页渠道实施 Content Analytics 而不需要 Experience Platform 数据收集标记的文档。 |
 | Data Mirror 考虑因素 | [文档](/help/data-mirror/considerations.md)介绍了您在设置 [Data Mirror 数据集](/help/data-mirror/data-mirror.md)时应考虑的因素。 |
