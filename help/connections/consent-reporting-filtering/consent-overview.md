@@ -19,9 +19,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: eafeab50e86b3e98f372c70a0fd43494015ca002
+source-git-commit: 91cd8d3d5c290f52e4ae15713693be1fc83baa92
 workflow-type: tm+mt
-source-wordcount: 990
+source-wordcount: 1058
 ht-degree: 2%
 
 ---
@@ -29,6 +29,15 @@ ht-degree: 2%
 # 同意报告和筛选概述
 
 同意报告和筛选使用存储在您的Adobe Experience Platform配置文件数据集中的同意策略成员资格数据来帮助您报告访客同意，并可以选择在未经同意的访客数据被摄取到Customer Journey Analytics之前排除这些访客。
+
+## 先决条件
+
+在配置同意报告和筛选之前，请确保：
+
+* 您的组织已获得许可Adobe Healthcare Shield或Privacy &amp; Security Shield。
+* 您在Customer Journey Analytics中拥有系统管理员权限。
+* 您要使用的沙盒包含在`consentPoliciesIDMap`字段中具有同意策略成员资格数据的配置文件数据集。
+* 要配置的连接已存在。 有关详细信息，请参阅[创建或编辑连接](/help/connections/create-connection.md)。
 
 下图和相关表从较高层面说明了同意报告和筛选如何使同意策略数据在Analysis Workspace中可用并在引入时筛选访客数据：
 
