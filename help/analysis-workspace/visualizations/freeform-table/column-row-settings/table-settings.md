@@ -5,21 +5,14 @@ feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
 TQID: https://experienceleague.adobe.com/qQKmobJ4J1RPezRG-hk38l7JNioIshzjMaKXWVoUWsM
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: f51766fdcb891b8cea93ea047b011792dc3c0ae6
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: b988d8cee94e40c6bed62f7ef22f209b7e38f46c
 workflow-type: tm+mt
-source-wordcount: 1628
-ht-degree: 55%
+source-wordcount: 1630
+ht-degree: 53%
 
 ---
 
@@ -37,7 +30,7 @@ ht-degree: 55%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自由格式表中的行和列设置](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自由格式表中的行和列设置](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"}以获取演示视频。
 
 {{videoaa}}
 
@@ -106,17 +99,19 @@ ht-degree: 55%
 | **[!UICONTROL 修改归因模型]** | 修改该列的归因模型。 |
 | **[!UICONTROL 比较归因模型]** | 指定一个新的归因模型并将其与所选列的归因模型进行比较。 添加了包含新归因模型量度的新列。 此外，还添加了百分比变化列以便进行比较。 |
 | **[!UICONTROL 重置列宽]** | 将列宽重置为默认宽度。 |
-| **[!UICONTROL 从选择创建注释]** | 打开&#x200B;**[!UICONTROL 注释详细信息]**&#x200B;以添加注释。 |
-| **[!UICONTROL 从选定范围中创建区段]** | 打开&#x200B;**[!UICONTROL 区段生成器]**&#x200B;以从所选内容生成区段。 |
-| **[!UICONTROL 从选择创建受众]** | 打开&#x200B;**[!UICONTROL 创建受众]**&#x200B;对话框，从选择中生成受众。 |
+| **[!UICONTROL 从选择创建注释]** | 打开[Annotation Builder](/help/components/annotations/create-annotations.md#annotation-builder)以生成所选内容的注释。 |
+| **[!UICONTROL 从选定范围中创建区段]** | 打开[区段生成器](/help/components/segments/seg-builder.md)以从所选内容生成区段。 |
+| **[!UICONTROL 从选择创建受众]** | 打开[受众生成器](/help/components/audiences/publish.md#audience-builder)以从所选内容生成受众。 |
 
 
 ## 更改行高
 
-您可以将项目的[视图密度](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density)设置为&#x200B;**[!UICONTROL 紧凑]**、**[!UICONTROL 舒适]**&#x200B;和&#x200B;**[!UICONTROL 展开]**。
+您可以将项目的[视图密度](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density)设置为&#x200B;**[!UICONTROL 紧凑]**、**[!UICONTROL 舒适]**&#x200B;和&#x200B;**[!UICONTROL 展开]**。
 
 
-## 内联分类
+## 内联分类 {#inline-classifications-example}
+
+{{release-limited-testing-section}}
 
 使用内联分类，您可以重命名或组合自由格式表中的行。 以及从表中修改的行创建派生字段。
 
@@ -161,7 +156,7 @@ ht-degree: 55%
 
 * 将自由格式表重置为修改前的状态。
 
-  1. 选择&#x200B;**[!UICONTROL _维度名称&#x200B;_（已修改）]**&#x200B;旁边的![齿轮](/help/assets/icons/Gear.svg)。
-  1. 从&#x200B;**[!UICONTROL 重命名的行]**&#x200B;弹出窗口中选择&#x200B;**[!UICONTROL 重置修改的行]**。
+  1. 选择&#x200B;**[!UICONTROL _维度名称&#x200B;_（已修改）]**旁边的![齿轮](/help/assets/icons/Gear.svg)。
+  1. 从&#x200B;**[!UICONTROL 已修改行]**&#x200B;弹出窗口中选择&#x200B;**[!UICONTROL 重置已修改行]**。
 
      ![重置自由格式表](assets/popup-reset.png)
