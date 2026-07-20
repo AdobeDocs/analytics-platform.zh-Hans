@@ -21,7 +21,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 3eae7d76014165ec03151b7c2ec87952f357d4a3
+source-git-commit: 2a7629993e235d66844db036ccce88e57fc20562
 workflow-type: tm+mt
 source-wordcount: 10479
 ht-degree: 90%
@@ -419,7 +419,7 @@ ht-degree: 90%
 >[!CONTEXTUALHELP]
 >id="connection_b2bstitching_accountid"
 >title="帐户 ID"
->abstract="或者，从数据集架构中定义的可用非身份或非人员身份字段中选择帐户ID。 当人员到帐户数据集中没有相关的帐户ID信息时，包含的值将用作行级别的唯一帐户标识符。"
+>abstract="（可选）从XDM架构中定义的可用非标识或非人员标识字段中选择帐户ID。 当人员到帐户数据集中没有相关的帐户ID信息时，包含的值将用作行级别的唯一帐户标识符。"
 
 >[!CONTEXTUALHELP]
 >id="connection_accountfield"
@@ -582,8 +582,8 @@ ht-degree: 90%
    * 要显示表中每个列的命名空间，请启用&#x200B;**[!UICONTROL 显示列命名空间]**。
    * 要在示例数据中搜索，请使用![搜索](/help/assets/icons/Search.svg)。
    * 要配置要显示的列，请选择![ColumnSetting](/help/assets/icons/ColumnSetting.svg)。 <br/>在&#x200B;**[!UICONTROL 自定义表]**&#x200B;对话框中：
-      1. 选择要显示在表中的列。
-      1. 选择&#x200B;**[!UICONTROL 应用]**&#x200B;以应用选择，或选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消选择。
+     1. 选择要显示在表中的列。
+     1. 选择&#x200B;**[!UICONTROL 应用]**&#x200B;以应用选择，或选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消选择。
    * 要显示包含数组或对象数据的列的数据，请选择&#x200B;**[!UICONTROL 值]**。
 
    **[!UICONTROL 数据集信息]**&#x200B;窗格显示有关数据集的详细信息。 选择&#x200B;**[!UICONTROL 架构]**&#x200B;或&#x200B;**[!UICONTROL 数据集]**&#x200B;的值，以在新浏览器选项卡中打开Experience Platform中的相关界面。
@@ -674,8 +674,8 @@ ht-degree: 90%
    * 要显示表中每个列的命名空间，请启用&#x200B;**[!UICONTROL 显示列命名空间]**。
    * 要在示例数据中搜索，请使用![搜索](/help/assets/icons/Search.svg)。
    * 要配置要显示的列，请选择![ColumnSetting](/help/assets/icons/ColumnSetting.svg)。 <br/>在&#x200B;**[!UICONTROL 自定义表]**&#x200B;对话框中：
-      1. 选择要显示在表中的列。
-      1. 选择&#x200B;**[!UICONTROL 应用]**&#x200B;以应用选择，或选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消选择。
+     1. 选择要显示在表中的列。
+     1. 选择&#x200B;**[!UICONTROL 应用]**&#x200B;以应用选择，或选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消选择。
    * 要显示包含数组或对象数据的列的数据，请选择&#x200B;**[!UICONTROL 值]**。
 
    **[!UICONTROL 数据集信息]**&#x200B;窗格显示有关数据集的详细信息。 选择&#x200B;**[!UICONTROL 架构]**&#x200B;或&#x200B;**[!UICONTROL 数据集]**&#x200B;的值，以在新浏览器选项卡中打开Experience Platform中的相关界面。

@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 50c7bb7b18b45b5ffac0eebacca2bb0d2ed0c28d
+source-git-commit: 587265d7613f732af811a77a947b0ce96ccad9bf
 workflow-type: tm+mt
-source-wordcount: 6944
+source-wordcount: 6952
 ht-degree: 99%
 
 ---
@@ -49,6 +49,8 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 
 | 功能 | 描述 |
 |---|---|
+| **2026年7月** | |
+| 内联分类 | [内联分类](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications)的文档。 |
 | **2026年6月** | |
 | 新的GA4指南 | 添加了[从Google Analytics 4过渡到Customer Journey Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home)。 |
 | **2026 年 5 月** | |
