@@ -4,32 +4,14 @@ description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: b988d8cee94e40c6bed62f7ef22f209b7e38f46c
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: ad5685a0-8296-4a0c-814c-658c10b4af12id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 3fcb9c403ace295c1a7e62c21d8bb444a4f9c011
 workflow-type: tm+mt
-source-wordcount: 699
+source-wordcount: 696
 ht-degree: 39%
 
 ---
@@ -44,7 +26,7 @@ ht-degree: 39%
 
 | 功能和描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | -----------|-----------|-----------|
-| **子事件分析** <br/>子事件分析允许您在比事件级别更精细的级别上分析数据。 您可以对事件中的单个容器进行分段，而不是筛选整个事件。 <p>例如，您可以按特定产品类别进行分段，而不包括同一订单中购买的所有其他产品。 您还可以将属于事件数据的对象或数组定义为数据视图中的单独容器。</p><p>（文档链接见下文。）</p> | 2026年7月15日 | 2026年7月底 |
+| **子事件分析** <br/>[子事件分析](/help/components/segments/sub-event.md)允许您在比事件级别更精细的级别上分析数据。 您可以对事件中的单个容器进行分段，而不是筛选整个事件。 <p>例如，您可以按特定产品类别进行分段，而不包括同一订单中购买的所有其他产品。 您也可以将属于事件数据的对象或数组定义为数据视图中单独的[自定义容器](/help/data-views/create-dataview.md#custom-containers)。 | 2026年7月21日 | 2026年7月底 |
 | **B2B edition：在Customer Journey Analytics B2B edition中，基于帐户的连接现在也支持临时和关系数据集** <br/>临时和关系数据集。<p>（文档链接见下文。）</p> | | 2026年7月20日 |
 | **Content Analytics：付费媒体数据** <br/>付费媒体现已作为Content Analytics的第三个渠道提供。<p>（文档链接见下文。）</p> | | 2026年7月31日 |
 | **连接使用情况界面更新** <br/>在管理连接时，您现在可以在“使用情况”界面中查看每个模块的使用详细信息，例如Customer Journey Analytics或Customer Journey Analytics B2B edition。 <p>此外，您现在可以按月划分每个模块的使用情况报表。</p><p>（文档链接见下文。）</p> | | 2026年7月31日 |
