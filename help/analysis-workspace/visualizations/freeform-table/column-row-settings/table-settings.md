@@ -5,10 +5,17 @@ feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
 TQID: https://experienceleague.adobe.com/qQKmobJ4J1RPezRG-hk38l7JNioIshzjMaKXWVoUWsM
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 54e64aeb652d41a39e52b01c0a54edd1ecfd0cdc
 workflow-type: tm+mt
 source-wordcount: 1630
@@ -156,7 +163,7 @@ ht-degree: 53%
 
 * 将自由格式表重置为修改前的状态。
 
-  1. 选择&#x200B;**[!UICONTROL _维度名称&#x200B;_（已修改）]**旁边的![齿轮](/help/assets/icons/Gear.svg)。
+  1. 选择&#x200B;**[!UICONTROL _维度名称&#x200B;_（已修改）]**&#x200B;旁边的![齿轮](/help/assets/icons/Gear.svg)。
   1. 从&#x200B;**[!UICONTROL 已修改行]**&#x200B;弹出窗口中选择&#x200B;**[!UICONTROL 重置已修改行]**。
 
      ![重置自由格式表](assets/popup-reset.png)
