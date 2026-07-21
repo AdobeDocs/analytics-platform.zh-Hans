@@ -27,9 +27,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: b988d8cee94e40c6bed62f7ef22f209b7e38f46c
+source-git-commit: 3fcb9c403ace295c1a7e62c21d8bb444a4f9c011
 workflow-type: tm+mt
-source-wordcount: 699
+source-wordcount: 696
 ht-degree: 39%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 39%
 
 | 功能和描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | -----------|-----------|-----------|
-| **子事件分析** <br/>子事件分析允许您在比事件级别更精细的级别上分析数据。 您可以对事件中的单个容器进行分段，而不是筛选整个事件。 <p>例如，您可以按特定产品类别进行分段，而不包括同一订单中购买的所有其他产品。 您还可以将属于事件数据的对象或数组定义为数据视图中的单独容器。</p><p>（文档链接见下文。）</p> | 2026年7月15日 | 2026年7月底 |
+| **子事件分析** <br/>[子事件分析](/help/components/segments/sub-event.md)允许您在比事件级别更精细的级别上分析数据。 您可以对事件中的单个容器进行分段，而不是筛选整个事件。 <p>例如，您可以按特定产品类别进行分段，而不包括同一订单中购买的所有其他产品。 您也可以将属于事件数据的对象或数组定义为数据视图中单独的[自定义容器](/help/data-views/create-dataview.md#custom-containers)。 | 2026年7月21日 | 2026年7月底 |
 | **B2B edition：在Customer Journey Analytics B2B edition中，基于帐户的连接现在也支持临时和关系数据集** <br/>临时和关系数据集。<p>（文档链接见下文。）</p> | | 2026年7月20日 |
 | **Content Analytics：付费媒体数据** <br/>付费媒体现已作为Content Analytics的第三个渠道提供。<p>（文档链接见下文。）</p> | | 2026年7月31日 |
 | **连接使用情况界面更新** <br/>在管理连接时，您现在可以在“使用情况”界面中查看每个模块的使用详细信息，例如Customer Journey Analytics或Customer Journey Analytics B2B edition。 <p>此外，您现在可以按月划分每个模块的使用情况报表。</p><p>（文档链接见下文。）</p> | | 2026年7月31日 |
