@@ -22,10 +22,10 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: c6b215f9fe718d0d3e8f81b7f55421c909b69c5a
+source-git-commit: 782311939794bab0f04da1df3dccdc3a9847449f
 workflow-type: tm+mt
-source-wordcount: 6499
-ht-degree: 91%
+source-wordcount: 6697
+ht-degree: 88%
 
 ---
 
@@ -92,8 +92,44 @@ ht-degree: 91%
 
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_percentage_value"
->title="选择如何计算百分比"
+>title="百分比值"
 >abstract="每个节点上显示的百分比是基于您配置的主要和辅助量度。 您可以选择这个百分比与起始节点、上一个节点或者与报告包中的所有数据相关联。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_arrow_settings"
+>title="箭头设置"
+>abstract="选择在画布上显示还是隐藏标签。 标签是在历程画布中创建的自定义名称。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_arrow_settings_ajo"
+>title="箭头设置"
+>abstract="选择是否在画布上显示或隐藏标签和值。 标签可以是在历程画布中创建的自定义名称，也可以是在Journey Optimizer中创建的标签或条件。 值是数字和百分比，指示历程中从一个节点移动到下一个节点的人员或会话。 "
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_show_fallout"
+>title="显示流失"
+>abstract="流失数据显示历程每个节点上从未到达历程下一个节点的人员或会话的百分比和数量。 他们可能已在网站上执行了其他操作，但从未满足历程中下一个节点定义的标准。<br/>流失数据显示人员或会话（无论您选择的主要指标如何），并且基于历程画布容器设置。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_compare"
+>title="比较"
+>abstract="用于将当前历程数据与前一时段进行比较的日期范围。 当您选择比较日期范围时，历程中的每个节点会根据主要量度显示当前日期范围和所选比较日期范围之间的百分比变化。 "
 
 <!-- markdownlint-enable MD034 -->
 

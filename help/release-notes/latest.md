@@ -27,9 +27,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 587265d7613f732af811a77a947b0ce96ccad9bf
+source-git-commit: b988d8cee94e40c6bed62f7ef22f209b7e38f46c
 workflow-type: tm+mt
-source-wordcount: 696
+source-wordcount: 699
 ht-degree: 39%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 39%
 | **Content Analytics：付费媒体数据** <br/>付费媒体现已作为Content Analytics的第三个渠道提供。<p>（文档链接见下文。）</p> | | 2026年7月31日 |
 | **连接使用情况界面更新** <br/>在管理连接时，您现在可以在“使用情况”界面中查看每个模块的使用详细信息，例如Customer Journey Analytics或Customer Journey Analytics B2B edition。 <p>此外，您现在可以按月划分每个模块的使用情况报表。</p><p>（文档链接见下文。）</p> | | 2026年7月31日 |
 | **CX Enterprise Co-worker：从Adobe Analytics迁移到Customer Journey Analytics时验证您的数据** <br/>CX Enterprise Co-worker的一项新技能允许您根据现有Adobe Analytics实施的数据验证Customer Journey Analytics实施中的数据。 <p>这项技能可根据需要自动分别比较每个维度、量度和趋势。 它还可以将所有Adobe Analytics报表包与所有Customer Journey Analytics数据视图进行比较。 然后，该技能可生成由AI驱动的见解和推荐，您可实施这些见解和推荐，以方便您迁移到Customer Journey Analytics。</p><p>（文档链接见下文。）</p> | | 2026年7月底 |
-| **内联分类**<br/>[&#x200B;内联分类](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications)允许您重命名或组合自由格式表中的行。 以及从表中修改的行创建派生字段。 | | 2026年7月20日 |
+| **内联分类**<br/>[&#x200B;内联分类](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications)允许您重命名或组合自由格式表中的行。 以及从表中修改的行创建派生字段。 | 2026年7月20日 | 2026年7月25日 |
 
 ### Customer Journey Analytics 中的修复
 
