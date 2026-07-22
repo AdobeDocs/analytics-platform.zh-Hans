@@ -20,10 +20,10 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 2a7629993e235d66844db036ccce88e57fc20562
+source-git-commit: 1dce83d0b5c760830084c1bf4e14f613b998dc10
 workflow-type: tm+mt
-source-wordcount: 1239
-ht-degree: 13%
+source-wordcount: 1245
+ht-degree: 11%
 
 ---
 
@@ -77,12 +77,12 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person"
->title="人员"
+>title="人员 ID"
 >abstract="在数据集中选择包含人员ID的字段。 此字段的命名空间可以与所选人员标识符命名空间不同或相同。 如果两者不同，则需要在身份图中将这两个命名空间链接在一起。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_account"
->title="帐户"
+>title="帐户 ID"
 >abstract="选择数据集中包含唯一帐户标识符值的字段。 帐户ID信息将在启用了&#x200B;**[!UICONTROL 人员与帐户拼接]**&#x200B;的任何事件数据集的行中提供。"
 
 >[!CONTEXTUALHELP]
@@ -116,8 +116,8 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
       | 字段 | 必需 | 描述 |
       |---|:---:|---|
       | **[!UICONTROL 个人到帐户数据集]** | ![必需](/help/assets/icons/Required.svg) | 选择将人员映射到帐户的查找（记录或非时间序列数据集）。 |
-      | **[!UICONTROL 人员]** | ![必需](/help/assets/icons/Required.svg) | 选择数据集中包含人员 ID 的字段。 该字段必须标记为身份标识字段，并且不能与&#x200B;**[!UICONTROL 帐户]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。 |
-      | **[!UICONTROL 帐户]** | ![必需](/help/assets/icons/Required.svg) | 选择数据集中包含帐户 ID 的字段。 该字段不能与&#x200B;**[!UICONTROL 人员]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。 |
+      | **[!UICONTROL 人员 ID]** | ![必需](/help/assets/icons/Required.svg) | 选择数据集中包含人员 ID 的字段。 该字段必须标记为标识，并且不能与&#x200B;**[!UICONTROL 帐户ID]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。 |
+      | **[!UICONTROL 帐户 ID]** | ![必需](/help/assets/icons/Required.svg) | 选择数据集中包含帐户 ID 的字段。 该字段不能与&#x200B;**[!UICONTROL 人员ID]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。 |
       | **开始时间** | | 选择一个时间戳字段，用于指示人员到帐户关系何时生效。 |
 
       >[!NOTE]
