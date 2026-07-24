@@ -5,23 +5,15 @@ hide: true
 feature: Components
 autotag-review: '2026-05-19T08:45:44.870Z'
 TQID: 'https://experienceleague.adobe.com/QgBD7vCkw4YA568XOLlwTnw8eZVZybXr3DFbM1ZKYDw'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: 0cc15e1c3dcbd8609a47954af8602ad617c67a51
 workflow-type: tm+mt
 source-wordcount: 2774
-ht-degree: 28%
+ht-degree: 30%
 
 ---
 
@@ -73,7 +65,7 @@ ht-degree: 28%
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_user-agent"
 >title=""
->abstract="同一数据馈送配置中不能存在用户代理数据和设备查找数据。"
+>abstract="用户代理数据和设备查找数据不能存在于同一个数据馈送配置中。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -112,7 +104,7 @@ ht-degree: 28%
 
    >[!NOTE]
    >
-   >同一数据馈送配置中不能存在用户代理数据和设备查找数据。 如果尝试添加冲突的组件，则会显示错误。 有关详细信息，请参阅数据收集指南中的[创建和配置数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure)中的[配置设备查找](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure#geolocation-device-lookup)。
+   >用户代理数据和设备查找数据不能存在于同一个数据馈送配置中。 如果尝试添加冲突的组件，则会显示错误。 有关详细信息，请参阅数据收集指南中的[创建和配置数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure)中的[配置设备查找](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure#geolocation-device-lookup)。
 
 
    使用以下信息可了解始终包含的维度、无法包含的维度以及必须替换的量度：
@@ -123,9 +115,9 @@ ht-degree: 28%
 
    | 维度名称 | 注释 | 数据馈送 | 其他报表 |
    |---|---|---|---|
-   | 时间戳UTC | 事件发生日期和时间，以UTC时区表示。 支持亚秒（微秒）粒度。 | 必需 | 不可用 |
-   | 行Id | 数据馈送中包含的每一行的唯一标识符。 | 必需 | 不可用 |
-   | 会话ID | 数据馈送中包含的每个会话的唯一标识符。 | 必需 | 不可用 |
+   | 时间戳 UTC | 事件发生日期和时间，以UTC时区表示。 支持亚秒（微秒）粒度。 | 必需 | 不可用 |
+   | 行 ID | 数据馈送中包含的每一行的唯一标识符。 | 必需 | 不可用 |
+   | 会话 ID | 数据馈送中包含的每个会话的唯一标识符。 | 必需 | 不可用 |
    | 人员 ID | 数据视图和连接的人员标识符 | 必需 | 可选标准 |
    | 帐户ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | 使用帐户容器时的帐户ID | 必需 | 可选标准 |
 
