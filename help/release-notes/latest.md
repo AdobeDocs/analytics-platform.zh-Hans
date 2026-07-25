@@ -27,10 +27,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 3fcb9c403ace295c1a7e62c21d8bb444a4f9c011
+source-git-commit: 5f347e3dc3080e47f0dd81d34aa6f4341a892061
 workflow-type: tm+mt
-source-wordcount: 696
-ht-degree: 39%
+source-wordcount: 800
+ht-degree: 33%
 
 ---
 
@@ -46,10 +46,11 @@ ht-degree: 39%
 | -----------|-----------|-----------|
 | **子事件分析** <br/>[子事件分析](/help/components/segments/sub-event.md)允许您在比事件级别更精细的级别上分析数据。 您可以对事件中的单个容器进行分段，而不是筛选整个事件。 <p>例如，您可以按特定产品类别进行分段，而不包括同一订单中购买的所有其他产品。 您也可以将属于事件数据的对象或数组定义为数据视图中单独的[自定义容器](/help/data-views/create-dataview.md#custom-containers)。 | 2026年7月21日 | 2026年7月底 |
 | **B2B edition：在Customer Journey Analytics B2B edition中，基于帐户的连接现在也支持临时和关系数据集** <br/>临时和关系数据集。<p>（文档链接见下文。）</p> | | 2026年7月20日 |
+| **CX Enterprise Co-worker：分析Customer Journey Analytics数据** <br/>Adobe CX Enterprise Co-worker Chat现在可以执行以前只能在Analysis Workspace中进行的高级数据分析。 Co-worker Chat访问来自Customer Journey Analytics数据视图的数据，允许您浏览该数据并获得自然语言提示的答案。<p>有关详细信息，请参阅[使用同事聊天分析Customer Journey Analytics数据](https://experienceleague.adobe.com/en/docs/cx-enterprise-coworker/content/chat/analytics-chat)。</p> | | 2026年7月23日 |
+| **CX Enterprise Co-worker：从Adobe Analytics迁移到Customer Journey Analytics时验证您的数据** <br/>CX Enterprise Co-worker的一项新技能允许您根据现有Adobe Analytics实施的数据验证Customer Journey Analytics实施中的数据。 <p>这项技能可根据需要自动分别比较每个维度、量度和趋势。 它还可以将所有Adobe Analytics报表包与所有Customer Journey Analytics数据视图进行比较。 然后，该技能可生成由AI驱动的见解和推荐，您可实施这些见解和推荐，以方便您迁移到Customer Journey Analytics。</p><p>有关详细信息，请参阅[从Adobe Analytics升级到Customer Journey Analytics时，与同事验证数据](https://experienceleague.adobe.com/zh-hans/docs/cx-enterprise-ai/experience-cloud-ai/coworker/data-validation-aa-cja)。</p> | | 2026年7月24日 |
+| **内联分类**<br/>[&#x200B;内联分类](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications)允许您重命名或组合自由格式表中的行。 以及从表中修改的行创建派生字段。 | 2026年7月20日 | 2026年7月25日 |
 | **Content Analytics：付费媒体数据** <br/>付费媒体现已作为Content Analytics的第三个渠道提供。<p>（文档链接见下文。）</p> | | 2026年7月31日 |
 | **连接使用情况界面更新** <br/>在管理连接时，您现在可以在“使用情况”界面中查看每个模块的使用详细信息，例如Customer Journey Analytics或Customer Journey Analytics B2B edition。 <p>此外，您现在可以按月划分每个模块的使用情况报表。</p><p>（文档链接见下文。）</p> | | 2026年7月31日 |
-| **CX Enterprise Co-worker：从Adobe Analytics迁移到Customer Journey Analytics时验证您的数据** <br/>CX Enterprise Co-worker的一项新技能允许您根据现有Adobe Analytics实施的数据验证Customer Journey Analytics实施中的数据。 <p>这项技能可根据需要自动分别比较每个维度、量度和趋势。 它还可以将所有Adobe Analytics报表包与所有Customer Journey Analytics数据视图进行比较。 然后，该技能可生成由AI驱动的见解和推荐，您可实施这些见解和推荐，以方便您迁移到Customer Journey Analytics。</p><p>（文档链接见下文。）</p> | | 2026年7月底 |
-| **内联分类**<br/>[&#x200B;内联分类](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications)允许您重命名或组合自由格式表中的行。 以及从表中修改的行创建派生字段。 | 2026年7月20日 | 2026年7月25日 |
 
 ### Customer Journey Analytics 中的修复
 
