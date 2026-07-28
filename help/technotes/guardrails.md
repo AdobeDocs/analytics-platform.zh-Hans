@@ -6,27 +6,12 @@ feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
 TQID: https://experienceleague.adobe.com/vNCqAk1-4e34AJrXqzHJgrTDtly-FZTqOGRISjkX5Q8
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: df1ab1af7757ef012b4c233e6206ee6c6cde6686
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: e686fca2c77a8f9739298ece01ccf0fa2fe87b3b
 workflow-type: tm+mt
 source-wordcount: 2441
 ht-degree: 9%
@@ -113,7 +98,7 @@ ht-degree: 9%
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [Real-time Customer Data Platform护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/rtcdp/guardrails/overview)。
+另请参阅Experience Platform [Real-time Customer Data Platform护栏](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview)。
 
 
 ## 自动数据集过期
@@ -160,7 +145,7 @@ ht-degree: 9%
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hans)。
+另请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
 
 
 ## 目标数据导出
@@ -172,7 +157,7 @@ ht-degree: 9%
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [数据集导出护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/guardrails#dataset-exports)
+另请参阅Experience Platform [数据集导出护栏](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## 数据登陆区
@@ -250,8 +235,8 @@ ht-degree: 9%
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
 | 每个报告的行数 | 300万 — 3亿 | 系统强制的护栏 | 每个报表的最大报表行数。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
-| 每个表的细分 | 5 | 系统强制的护栏 | 每个表的最大划分数。 |
-| 每个表的量度 | 5 | 系统强制的护栏 | 每个表的最大量度数。 |
+| 每个表的维度 | 10 | 系统强制的护栏 | 每个表的最大维度数。 |
+| 每个表的量度 | 10 | 系统强制的护栏 | 每个表的最大量度数。 |
 | 计划频率 | 1 | 系统强制的护栏 | 导出可以安排在一天中执行一次(1)，也可以安排更长的导出时间（例如：每2天执行一次，或每周执行一次）。 |
 
 {style="table-layout:auto"}
@@ -288,7 +273,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 有关详细信息，请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hans)。
+>以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 有关详细信息，请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
 
 | 数据流 | 预期延迟 |
 |---|---|
