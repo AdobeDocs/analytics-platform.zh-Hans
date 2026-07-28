@@ -24,7 +24,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: c7fc5df2a0fd7393b48bfe6bdfa7dccdfffde46c
 workflow-type: tm+mt
 source-wordcount: 3268
 ht-degree: 59%
@@ -238,22 +238,22 @@ ht-degree: 59%
 
 以下组件不受支持，并且 Analysis Workspace 会在执行完整表格导出时提示您将其从表中移除：
 
-* 在量度定义中使用不支持的函数的计算量度（有关详细信息，请参阅[不支持的计算量度函数](#unsupported-calculated-metric-functions)）
+* 在量度定义中使用不支持的函数的计算量度（有关详细信息，请参阅[不支持的计算量度函数](#calculated-metric-functions-support)）
 * 管理员已限制导出组件（有关详细信息，请参阅[标签和策略](/help/data-views/data-governance.md)中数据视图&#x200B;*中数据管理策略的*&#x200B;区段）
 * 满足以下所有条件的任何维度：
-   * 从属于[对象数组](/help/use-cases/object-arrays.md)的字段创建（类似于Adobe Analytics中的多值变量）。
-   * 已启用[持久性](/help/data-views/component-settings/persistence.md)。
-   * 未使用[绑定维度](/help/use-cases/data-views/binding-dimensions-metrics.md)。
+  * 从属于[对象数组](/help/use-cases/object-arrays.md)的字段创建（类似于Adobe Analytics中的多值变量）。
+  * 已启用[持久性](/help/data-views/component-settings/persistence.md)。
+  * 未使用[绑定维度](/help/use-cases/data-views/binding-dimensions-metrics.md)。
 * 来自引用不同[对象数组](/help/use-cases/object-arrays.md)的字段的多个维度。 （允许多个维度引用同一对象数组。）
 * 每个报告包含超过 10 个维度和 10 个量度（最多支持 10 个维度和 10 个量度）
 * 在表列中：
-   * 日期范围
-   * 维度
+  * 日期范围
+  * 维度
 * 在表行中：
-   * 计算量度
-   * 量度
-   * 日期范围
-   * 区段
+  * 计算量度
+  * 量度
+  * 日期范围
+  * 区段
 
 ## 计算量度函数支持
 

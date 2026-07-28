@@ -2,9 +2,9 @@
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: ea98309e823b1d4249ac09ca11f0d9f22406c8f3
+source-git-commit: cd71195e30ae7fcc877b395a2756a924fa61b11c
 workflow-type: tm+mt
-source-wordcount: '1462'
+source-wordcount: '1469'
 ht-degree: 94%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 94%
     + [登陆页面](../getting-started/landing.md)
     + [常见问题解答](../getting-started/cja-faq.md)
     + [与 BI 解决方案比较](../getting-started/cja-vs-bi.md)
+    + {hide-from-toc}[Analytics产品比较](/help/getting-started/analytics-product-comparison.md)
     + [AI 助手](../ai-assistant.md)
     + [Data Insights 代理](../data-analysis-ai.md)
   + Customer Journey Analytics B2B Edition {#cja-b2b}
@@ -425,6 +426,7 @@ ht-degree: 94%
       + {hide-from-toc}[准备映射列](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
       + {hide-from-toc}[映射列](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
       + {hide-from-toc}[创建数据馈送](/help/components/exports/cja-data-feeds/create-feed.md)
+      + {hide-from-toc}[数据馈送中的分段](/help/components/exports/cja-data-feeds/df-segmentation.md)
   + 数据词典 {#data-dictionary}
     + [概述](../components/data-dictionary/data-dictionary-overview.md)
     + [查看数据字典中的组件信息](../components/data-dictionary/view-data-dictionary.md)
