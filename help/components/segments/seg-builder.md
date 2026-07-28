@@ -17,10 +17,10 @@ subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
+source-git-commit: 859a195e89c44d3951ca79ce7f93f9dd77cd4f5c
 workflow-type: tm+mt
-source-wordcount: 1851
-ht-degree: 85%
+source-wordcount: 1812
+ht-degree: 79%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 85%
 >[!CONTEXTUALHELP]
 >id="components_filters_datapreview"
 >title="数据预览"
->abstract="将此区段的数据与数据视图的数据进行比较。 预览百分比基于&#x200B;**过去 90 天**&#x200B;数据视图中的总数。<br><br/>如果预览未加载，可能是您的连接仍在进行数据回填。"
+>abstract="比较区段数据和数据视图数据。 预览百分比反映数据视图中从&#x200B;**最近90天**&#x200B;以来的总数。<br><br/>如果无法加载预览，则连接正在回填。"
 
 **[!UICONTROL 区段生成器]**&#x200B;对话框可用于创建新区段或编辑现有区段。 对于您通过[[!UICONTROL 区段]管理器](/help/components/segments/seg-manage.md)创建或管理的区段，该对话框的标题为&#x200B;**[!UICONTROL 新区段]**&#x200B;或&#x200B;**[!UICONTROL 编辑区段]**。
 
@@ -78,8 +78,8 @@ ht-degree: 85%
 
 您可以配置定义的类型和范围：
 
-1. 要指定定义的类型，请指定是否要生成包含或排除定义。 选择![设置](/help/assets/icons/Setting.svg)**[!UICONTROL 选项]**&#x200B;并从下拉菜单中&#x200B;**[!UICONTROL 包括]**&#x200B;或&#x200B;**[!UICONTROL 排除]**。
-1. 要指定定义的范围，请从&#x200B;**[!UICONTROL 包含]**&#x200B;或&#x200B;**[!UICONTROL 排除]**&#x200B;下拉菜单中选择是希望定义的范围是&#x200B;**[!UICONTROL 事件]**、**[!UICONTROL 会话]**、**[!UICONTROL 人员]**、**[!UICONTROL 全局帐户]**&#x200B;[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 帐户]**&#x200B;[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 机会]**&#x200B;[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}还是&#x200B;**[!UICONTROL 购买群]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
+1. 要指定定义的类型，请指定是要构建包括定义还是排除定义。 选择![设置](/help/assets/icons/Setting.svg)**[!UICONTROL 选项]**&#x200B;并从下拉菜单中&#x200B;**[!UICONTROL 包括]**&#x200B;或&#x200B;**[!UICONTROL 排除]**。
+1. 从&#x200B;**[!UICONTROL 包括]**&#x200B;或&#x200B;**[!UICONTROL 排除]**&#x200B;下拉菜单中选择定义的范围：**[!UICONTROL 事件]**、**[!UICONTROL 会话]**、**[!UICONTROL 人员]**、**[!UICONTROL 全局帐户]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 帐户]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 机会]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}或&#x200B;**[!UICONTROL 购买团体]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}。
 
 您稍后可以随时更改这些设置。
 
@@ -130,13 +130,13 @@ ht-degree: 85%
 | **[!UICONTROL 为容器命名]** | 根据容器的默认描述重命名容器。 在文本字段中输入名称。 如果您未提供任何输入内容，则会使用默认描述。 |
 | **[!UICONTROL 删除容器]** | 从定义中删除容器。 |
 
-将定义为[容器](/help/data-views/create-dataview.md#containers-1)的维度或量度拖入区段生成器或快速区段面板时，系统会自动选择正确的容器，并且不使用默认的&#x200B;**[!UICONTROL 事件]**&#x200B;容器。 此行为将区段的范围限制为单个容器，而不是整个事件。
+将定义为[容器](/help/data-views/create-dataview.md#containers-1)的维度或量度拖入区段生成器将自动选择正确的容器，而不是默认的&#x200B;**[!UICONTROL 事件]**&#x200B;容器。 此行为将区段的范围限制为单个容器，而不是整个事件。
 
 将[容器](/help/data-views/create-dataview.md#containers-1)级别和事件级别的组件拖入单个区段规则中时，系统将使用&#x200B;**[!UICONTROL 事件]**&#x200B;容器，这是最高（粒度最少）的共享容器。 如果属于区段规则的所有组件都位于同一容器级别，则使用该容器。
 
 ## 日期范围
 
-您可以构建包含滚动日期范围的区段。 这样，您就可以回答有关正在进行的营销活动或事件的问题。 例如，您可以构建一个包含&#x200B;*过去 60 天中在线购买过产品的用户*&#x200B;的区段。
+您可以构建包含滚动日期范围的区段。 这样，您就可以回答有关正在进行的营销活动或事件的问题。 例如，您可以生成一个区段，该区段包含&#x200B;*过去60天内进行在线购买的所有人员*。
 
 ![使用滚动日期范围进行区段划分](assets/filter-rolling-date-range.gif)
 
@@ -152,11 +152,11 @@ ht-degree: 85%
 
 您可以使用若干区段来构建一个区段。 在一个区段中使用若干区段时，您可以优化该区段，降低复杂性。
 
-假设您想要根据设备类型（2）和美国联邦州（50）的组合进行分段。 您可以构建 100 个区段，每个区段都针对设备类型（手机与平板电脑）与美国联邦州的某个独特组合。 要获取加利福尼亚州的平板电脑用户，您可以使用这 100 个区段中的一个：
+假设您想要根据设备类型（2）和美国联邦州（50）的组合进行分段。 您可以构建 100 个区段，每个区段都针对设备类型（手机与平板电脑）与美国联邦州的某个独特组合。 要获取加利福尼亚的平板电脑用户，请使用以下100个区段之一：
 
 ![加利福尼亚州和平板电脑的简单区段](assets/filter-ca-tablet-single.png)
 
-或者，您也可以定义 52 个区段：50 个美国联邦州的区段，一个手机的区段，一个平板电脑的区段。 然后通过堆叠区段来获得相同的结果。 为了获得加利福尼亚州的平板电脑用户，您需要堆叠两个区段：
+或者，定义52个区段：其中50个区段适用于美国各州，一个适用于手机，一个适用于平板电脑。 要获得相同的结果，请栈叠区段。 要获取加利福尼亚州的平板电脑用户，请栈叠两个区段：
 
 ![堆叠加利福尼亚州和平板电脑的区段](assets/filter-ca-tablet-stacked.png)
 
@@ -208,10 +208,10 @@ ht-degree: 85%
 下表针对每种归因模型，解释了哪些传入事件符合 ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) 该条件。
 
 
-| 女性页面 - 归因 - <br/>*归因模型* | 事件 1：<br/>页面名称等于<br/>女性 | 事件 2：<br/>页面名称等于<br/>男性 | 事件 3：<br/>页面名称等于<br/>女性 | 事件 4：<br/>页面名称等于<br/>女性<br/>（持久） | 事件 5：<br/>页面名称等于<br/>结账 | 事件 6：<br/>页面名称等于<br/>女性 | 事件 7：<br/>页面名称等于<br/>主页 |
+| 女性页面 - 归因 - <br/>*归因模型* | 事件 1：<br/>页面名称等于<br/>女性 | 事件 2：<br/>页面名称等于<br/>男性 | 事件 3：<br/>页面名称等于<br/>女性 | 事件 4：<br/>页面名称等于<br/>女性<br/>（持久） | 事件 5：<br/>页面名称等于<br/>结账 | 事件 6：<br/>页面名称等于<br/>女性 | 事件7：<br/>页面名称等于<br/>女性（明确设置） |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:--:|
-| 重复（默认） | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![删除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![删除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![删除](/help/assets/icons/Remove.svg) |
-| 实例 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![删除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![删除](/help/assets/icons/Remove.svg) | ![删除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![删除](/help/assets/icons/Remove.svg) |
+| 重复（默认） | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![删除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![删除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
+| 实例 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![删除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![删除](/help/assets/icons/Remove.svg) | ![删除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
 | 非重复实例 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![删除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![删除](/help/assets/icons/Remove.svg) | ![删除](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![删除](/help/assets/icons/Remove.svg) |
 
 使用这三个区段的事件报告示例如下：
