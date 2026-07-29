@@ -26,7 +26,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: df1ab1af7757ef012b4c233e6206ee6c6cde6686
+source-git-commit: e686fca2c77a8f9739298ece01ccf0fa2fe87b3b
 workflow-type: tm+mt
 source-wordcount: 2441
 ht-degree: 9%
@@ -250,8 +250,8 @@ ht-degree: 9%
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
 | 每个报告的行数 | 300万 — 3亿 | 系统强制的护栏 | 每个报表的最大报表行数。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
-| 每个表的细分 | 5 | 系统强制的护栏 | 每个表的最大划分数。 |
-| 每个表的量度 | 5 | 系统强制的护栏 | 每个表的最大量度数。 |
+| 每个表的维度 | 10 | 系统强制的护栏 | 每个表的最大维度数。 |
+| 每个表的量度 | 10 | 系统强制的护栏 | 每个表的最大量度数。 |
 | 计划频率 | 1 | 系统强制的护栏 | 导出可以安排在一天中执行一次(1)，也可以安排更长的导出时间（例如：每2天执行一次，或每周执行一次）。 |
 
 {style="table-layout:auto"}

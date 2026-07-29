@@ -25,7 +25,7 @@ topic_v2:
 source-git-commit: 782311939794bab0f04da1df3dccdc3a9847449f
 workflow-type: tm+mt
 source-wordcount: 6697
-ht-degree: 88%
+ht-degree: 91%
 
 ---
 
@@ -102,7 +102,7 @@ ht-degree: 88%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_arrow_settings"
 >title="箭头设置"
->abstract="选择在画布上显示还是隐藏标签。 标签是在历程画布中创建的自定义名称。"
+>abstract="选择是否要在画布上显示或隐藏标签。 标签是在历程画布中创建的自定义名称。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -111,7 +111,7 @@ ht-degree: 88%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_arrow_settings_ajo"
 >title="箭头设置"
->abstract="选择是否在画布上显示或隐藏标签和值。 标签可以是在历程画布中创建的自定义名称，也可以是在Journey Optimizer中创建的标签或条件。 值是数字和百分比，指示历程中从一个节点移动到下一个节点的人员或会话。 "
+>abstract="选择是否要在画布上显示或隐藏标签和值。 标签可以是在历程画布中创建的自定义名称，也可以是在 Journey Optimizer 中创建的标签或条件。 值是表示从历程中的一个节点移动到下一个节点的人员或会话的数量和百分比。 "
 
 <!-- markdownlint-enable MD034 -->
 
@@ -120,7 +120,7 @@ ht-degree: 88%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_show_fallout"
 >title="显示流失"
->abstract="流失数据显示历程每个节点上从未到达历程下一个节点的人员或会话的百分比和数量。 他们可能已在网站上执行了其他操作，但从未满足历程中下一个节点定义的标准。<br/>流失数据显示人员或会话（无论您选择的主要指标如何），并且基于历程画布容器设置。"
+>abstract="流失数据显示了那些在历程中从未到达下一个节点的每个节点上的用户或会话的百分比和数量。 他们可能在网站上执行了其他操作，但他们从未满足历程中下一个节点所定义的标准。<br/>流失数据显示了人员或会话（无论您选择了哪个主要量度），并基于历程画布容器设置。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -129,7 +129,7 @@ ht-degree: 88%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_compare"
 >title="比较"
->abstract="用于将当前历程数据与前一时段进行比较的日期范围。 当您选择比较日期范围时，历程中的每个节点会根据主要量度显示当前日期范围和所选比较日期范围之间的百分比变化。 "
+>abstract="用于将当前历程数据与前一个时段进行比较的日期范围。 如果您选择了比较日期范围，历程中的每个节点就会根据主要量度显示当前日期范围与选定的比较日期范围之间的百分比变化。 "
 
 <!-- markdownlint-enable MD034 -->
 

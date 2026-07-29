@@ -23,7 +23,7 @@ topic_v2:
 source-git-commit: 1dce83d0b5c760830084c1bf4e14f613b998dc10
 workflow-type: tm+mt
 source-wordcount: 1245
-ht-degree: 18%
+ht-degree: 26%
 
 ---
 
@@ -68,7 +68,7 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_identifier_namespace"
 >title="人员标识符命名空间"
->abstract="为您的报告选择最相关的人员身份标识命名空间。 例如，电子邮件。 任何启用了&#x200B;**[!UICONTROL 人员到帐户拼接]**&#x200B;的事件数据集都会将人员ID提升到此人员标识符命名空间。"
+>abstract="为您的报告选择最相关的人员身份标识命名空间。 例如，电子邮件。 任何启用了&#x200B;**[!UICONTROL “人员到帐户”拼接]**&#x200B;的事件数据集都会将人员 ID 提升到此人员标识符命名空间。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_to_account_dataset"
@@ -83,7 +83,7 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_account"
 >title="帐户 ID"
->abstract="选择数据集中包含唯一帐户标识符值的字段。 帐户ID信息将在启用了&#x200B;**[!UICONTROL 人员与帐户拼接]**&#x200B;的任何事件数据集的行中提供。"
+>abstract="选择数据集中包含唯一帐户标识符值的字段。 启用了&#x200B;**[!UICONTROL “人员到帐户”拼接]**&#x200B;的任何事件数据集的行中都会提供帐户 ID 信息。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_start_time"
@@ -135,7 +135,7 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="启用人员到帐户拼接"
->abstract="启用后，此数据集将使用 B2B“人员到帐户”拼接。 **[!UICONTROL 人员ID]**&#x200B;值将提升为配置的&#x200B;**[!UICONTROL 人员标识符命名空间]**&#x200B;中的值，然后用于根据人员到帐户数据集查找帐户ID。<br/>如果已禁用，则此数据集不使用B2B人员进行帐户拼接，您必须改为选择所需的&#x200B;**[!UICONTROL 帐户ID]**。"
+>abstract="启用后，此数据集将使用 B2B“人员到帐户”拼接。 **[!UICONTROL 人员 ID]** 值将提升为已配置的&#x200B;**[!UICONTROL 人员标识符命名空间]**&#x200B;中的值，然后用于根据“人员到帐户”数据集查找帐户 ID。<br/>如果禁用，此数据集就不会使用 B2B“人员到帐户”拼接，在这种情况下您就要选择一个必需的&#x200B;**[!UICONTROL 帐户 ID]**。"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/stitching/b2b-account-stitching#configure-b2b-stitching-settings" text="配置 B2B 拼接设置"
 
 在连接级别配置B2B拼接后，必须为要拼接的每个事件数据集单独启用B2B帐户拼接。

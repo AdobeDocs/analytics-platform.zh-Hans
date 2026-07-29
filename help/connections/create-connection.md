@@ -419,7 +419,7 @@ ht-degree: 92%
 >[!CONTEXTUALHELP]
 >id="connection_b2bstitching_accountid"
 >title="帐户 ID"
->abstract="（可选）从XDM架构中定义的可用非标识或非人员标识字段中选择帐户ID。 如果“人员到帐户”数据集中没有相关的帐户 ID 信息可用，所包含的值将会用作行级别的唯一帐户标识符。"
+>abstract="或者，从 XDM 架构中所定义的可用的非身份标识或非人员身份标识字段中选择一个帐户 ID。 如果“人员到帐户”数据集中没有相关的帐户 ID 信息可用，所包含的值将会用作行级别的唯一帐户标识符。"
 
 >[!CONTEXTUALHELP]
 >id="connection_accountfield"
