@@ -5,20 +5,13 @@ feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
 TQID: https://experienceleague.adobe.com/qQKmobJ4J1RPezRG-hk38l7JNioIshzjMaKXWVoUWsM
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 54e64aeb652d41a39e52b01c0a54edd1ecfd0cdc
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 88ff7c4124d4612a3411b315a605aec29bc9a218
 workflow-type: tm+mt
-source-wordcount: 1630
+source-wordcount: 1650
 ht-degree: 53%
 
 ---
@@ -37,7 +30,7 @@ ht-degree: 53%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自由格式表中的行和列设置](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自由格式表中的行和列设置](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"}以获取演示视频。
 
 {{videoaa}}
 
@@ -51,7 +44,7 @@ ht-degree: 53%
 
    ![自由格式表，显示所显示行数的下拉菜单。 选择了 400 行。](assets/change-row-count.gif)
 
-1. 从下拉菜单中，选择您希望表显示的行数。
+1. 从下拉菜单中，选择要显示的表行数。
 
 
 ## Context-menu
@@ -113,12 +106,10 @@ ht-degree: 53%
 
 ## 更改行高
 
-您可以将项目的[视图密度](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density)设置为&#x200B;**[!UICONTROL 紧凑]**、**[!UICONTROL 舒适]**&#x200B;和&#x200B;**[!UICONTROL 展开]**。
+您可以将项目的[视图密度](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density)设置为&#x200B;**[!UICONTROL 紧凑]**、**[!UICONTROL 舒适]**&#x200B;和&#x200B;**[!UICONTROL 展开]**。
 
 
 ## 内联分类 {#inline-classifications-example}
-
-{{release-limited-testing-section}}
 
 使用内联分类，您可以重命名或组合自由格式表中的行。 以及从表中修改的行创建派生字段。
 
@@ -153,6 +144,11 @@ ht-degree: 53%
 
 * 根据自由格式表中的修改创建派生字段。
 
+  >[!NOTE]
+  >
+  >  当您是Customer Journey Analytics产品管理员时，只能根据自由格式表中的修改创建派生字段。
+
+
   1. 从上下文菜单中，为修改后的表格中的任何选定行选择&#x200B;**[!UICONTROL 将修改的行创建为派生字段]**。
 
      ![选择“将修改的行创建为派生字段菜单”选项](assets/context-derived.png)
@@ -163,7 +159,7 @@ ht-degree: 53%
 
 * 将自由格式表重置为修改前的状态。
 
-  1. 选择&#x200B;**[!UICONTROL _维度名称&#x200B;_（已修改）]**&#x200B;旁边的![齿轮](/help/assets/icons/Gear.svg)。
+  1. 选择&#x200B;**[!UICONTROL _维度名称&#x200B;_（已修改）]**旁边的![齿轮](/help/assets/icons/Gear.svg)。
   1. 从&#x200B;**[!UICONTROL 已修改行]**&#x200B;弹出窗口中选择&#x200B;**[!UICONTROL 重置已修改行]**。
 
      ![重置自由格式表](assets/popup-reset.png)
