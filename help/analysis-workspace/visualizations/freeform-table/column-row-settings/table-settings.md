@@ -16,9 +16,9 @@ subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 54e64aeb652d41a39e52b01c0a54edd1ecfd0cdc
+source-git-commit: 88ff7c4124d4612a3411b315a605aec29bc9a218
 workflow-type: tm+mt
-source-wordcount: 1630
+source-wordcount: 1650
 ht-degree: 53%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 53%
 
    ![自由格式表，显示所显示行数的下拉菜单。 选择了 400 行。](assets/change-row-count.gif)
 
-1. 从下拉菜单中，选择您希望表显示的行数。
+1. 从下拉菜单中，选择要显示的表行数。
 
 
 ## Context-menu
@@ -118,8 +118,6 @@ ht-degree: 53%
 
 ## 内联分类 {#inline-classifications-example}
 
-{{release-limited-testing-section}}
-
 使用内联分类，您可以重命名或组合自由格式表中的行。 以及从表中修改的行创建派生字段。
 
 以下示例说明如何使用&#x200B;**[!UICONTROL 重命名选定行]**、**[!UICONTROL 合并选定行]**&#x200B;和&#x200B;**[!UICONTROL 将修改的行创建为派生字段]**&#x200B;上下文菜单选项。 以及如何重置修改后的自由格式表。
@@ -152,6 +150,11 @@ ht-degree: 53%
      1. 选择&#x200B;**[!UICONTROL 确定]**。
 
 * 根据自由格式表中的修改创建派生字段。
+
+  >[!NOTE]
+  >
+  >  当您是Customer Journey Analytics产品管理员时，只能根据自由格式表中的修改创建派生字段。
+
 
   1. 从上下文菜单中，为修改后的表格中的任何选定行选择&#x200B;**[!UICONTROL 将修改的行创建为派生字段]**。
 

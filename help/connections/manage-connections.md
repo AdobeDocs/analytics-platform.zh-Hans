@@ -24,10 +24,10 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4d42c345b98683ef7d4b802262bd7f0f24b45692
+source-git-commit: 88ff7c4124d4612a3411b315a605aec29bc9a218
 workflow-type: tm+mt
-source-wordcount: 5868
-ht-degree: 98%
+source-wordcount: 7300
+ht-degree: 87%
 
 ---
 
@@ -44,9 +44,9 @@ ht-degree: 98%
 >abstract="通过 Journey Optimizer 取消高级 Customer Journey Analytics 报告功能。"
 
 
-在[创建或编辑一个或多个连接](/help/connections/create-connection.md)后，即可在&#x200B;**[!UICONTROL 连接]**&#x200B;中管理它们。 [!UICONTROL 连接]界面允许您：
+在[创建或编辑一个或多个连接](/help/connections/create-connection.md)后，即可在&#x200B;**[!UICONTROL 连接]**&#x200B;中管理它们。 [!UICONTROL 连接]接口允许您：
 
-* 一目了然地查看所有连接，包括所有者、沙盒以及创建和修改连接的时间。
+* 查看所有连接，包括所有者、沙盒以及创建和修改连接的时间。
 * 编辑连接。
 * 删除连接。
 * 从连接中创建一个数据视图。
@@ -165,11 +165,11 @@ ht-degree: 98%
 
 ### Journey Optimizer 连接
 
-您可以使用 Customer Journey Analytics 中的 Journey Optimizer 连接为您的连接带来以下附加值：
+您可以在Customer Journey Analytics中使用Journey Optimizer连接为连接提供以下附加值：
 
 * 在 Customer Journey Analytics 中对 Journey Optimizer 数据执行深入分析（使用 Journey Optimizer 中的&#x200B;**[!UICONTROL 在 CJA 中分析]**&#x200B;按钮）。
 
-  更多信息请参阅 Journey Optimizer 文档中的[在 Customer Journey Analytics 中分析](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template)。
+  有关详细信息，请参阅[在Customer Journey Analytics中分析](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template)。
 
 * 编辑 Journey Optimizer 连接和相关联的数据视图。
 
@@ -178,7 +178,7 @@ ht-degree: 98%
 
 >[!IMPORTANT]
 >
->如果您按照这个部分所述启用 Journey Optimizer 连接将其用于 Customer Journey Analytics，连接中的每一行数据就都会计入您每月为 Customer Journey Analytics 获得许可的数据行，并显示在连接使用情况 UI 中。 只有在您熟悉在 Customer Journey Analytics 中额外使用数据行的情况下，才选择此连接的&#x200B;**[!UICONTROL 在 CJA 中使用]**&#x200B;选项。
+>为Customer Journey Analytics启用Journey Optimizer连接时，每行都计入每月许可的行，并显示在连接使用情况UI中。 只有在您熟悉在 Customer Journey Analytics 中额外使用数据行的情况下，才选择此连接的&#x200B;**[!UICONTROL 在 CJA 中使用]**&#x200B;选项。
 >
 >**如果您在 2024 年 10 月至 2025 年 10 月期间有权使用 Customer Journey Analytics 和 Journey Optimizer，请参阅以下关于[已启用 AJO 的连接](https://view.adobe.com/viewer/1ed94fc35c7860b260766c620889e7a0#1)**&#x200B;文档。
 
@@ -499,9 +499,13 @@ ht-degree: 98%
 
 [!UICONTROL 使用情况]界面显示所有连接中摄取的可报告的行的使用情况。 如果未选择，请选择&#x200B;**[!UICONTROL 使用情况]**&#x200B;选项卡以访问该界面。
 
-在此界面中，您可以确定您的 Customer Journey Analytics 使用情况是否遵守合同条款。 除了监测目的之外，您还可以使用“使用情况”界面来规划 Customer Journey Analytics 许可证的续订。
+此界面支持您确定Customer Journey Analytics的使用是否符合合同约定的内容。 除了监测目的之外，您还可以使用“使用情况”界面来规划 Customer Journey Analytics 许可证的续订。
 
-“使用情况”界面使用以下量度：
+对于您有权使用的每个模块，都提供了可折叠部分以及使用情况详细信息。
+
+### CJA 使用情况
+
+**[!UICONTROL CJA使用情况]**&#x200B;界面使用以下指标：
 
 | 量度名称 | 描述 |
 |---|---|
@@ -518,23 +522,21 @@ ht-degree: 98%
 >从 2024 年 7 月开始收集核心、历史和总体记录数据。 请联系您的客户经理获取早期的历史数据。
 >
 
-“使用情况”界面由两个面板组成：
+**[!UICONTROL CJA使用情况]**&#x200B;界面由两个面板组成：
 
 * **[!UICONTROL 关键使用量度]**&#x200B;面板，显示：
 
-   * 四个可视化摘要图表，显示与上月相比此数据的总变化和百分比变化：
+  * 四个可视化摘要图表，显示与上月相比此数据的总变化和百分比变化：
 
-      * **[!UICONTROL 核心数据可报告行数]**。 从本月起过去 13 个月内可用的总行数，以及与上个月相比的百分比变化。 例如，2024 年 2 月 1 日，该数字显示事件时间戳从 2023 年 1 月到 2024 年 1 月的可用行数总数。
-      * **[!UICONTROL 历史数据可报告行数]**。 从本月起 13 个月之前可用的总行数，以及与上个月相比的百分比变化。 例如，2024 年 2 月 1 日，该数字显示事件时间戳早于 2023 年 1 月的可用行数总数。
-      * **[!UICONTROL 核心数据量]**。 磁盘上存储的带有本月时间戳的数据总量（以 TB 为单位），以及与上个月相比的变化百分比。
-      * **[!UICONTROL 平均行大小]**。 本月每行数据摄取并存储所使用的平均存储量（以 KB 为单位），以及与上个月相比的百分比变化。
+    * **[!UICONTROL 核心数据可报告行数]**。 从本月起过去 13 个月内可用的总行数，以及与上个月相比的百分比变化。 例如，2024 年 2 月 1 日，该数字显示事件时间戳从 2023 年 1 月到 2024 年 1 月的可用行数总数。
+    * **[!UICONTROL 扩展数据容量行]**。 从本月起 13 个月之前可用的总行数，以及与上个月相比的百分比变化。 例如，2024 年 2 月 1 日，该数字显示事件时间戳早于 2023 年 1 月的可用行数总数。
+    * **[!UICONTROL 每月摄取的行]**。 在计费月份摄取的行，与上月相比具有百分比变化
+    * **[!UICONTROL 核心数据量]**。 磁盘上存储的带有本月时间戳的数据总量（以 TB 为单位），以及与上个月相比的变化百分比。
+    * **[!UICONTROL 平均行大小]**。 当月每个摄取行使用的平均存储量（以kB为单位），与上月相比具有百分比变化。
 
-   * 显示过去 13 个月&#x200B;**[!UICONTROL 核心数据和历史数据可报告行]**&#x200B;的堆积垂直条形图。
+  * 显示过去13个月&#x200B;**[!UICONTROL 核心数据可报告行]**&#x200B;和&#x200B;**[!UICONTROL 扩展数据容量行]**&#x200B;的两个垂直条形图可视化图表。
 
-     如果将鼠标悬停在可视化图表中的任何堆积条形图上，就会弹出一个窗口，显示该条形图这一特定部分的行数。 在下例中，显示了当月的核心数据可报告行（2025 年 8 月：936M (936,347,325)）。
-
-
-     ![关键使用量度](assets/usage-key-usage-metrics.png)
+    如果将鼠标悬停在可视化图表中的任何堆积条形图上，就会弹出一个窗口，显示该条形图这一特定部分的行数。
 
 * 一个组合面板，显示三个子面板：
 
@@ -542,9 +544,7 @@ ht-degree: 98%
 
   **[!UICONTROL 摄取的行数]**&#x200B;子面板衡量每月添加到系统的记录总数，提供有关数据增长和摄取率的洞察。 该子面板提供了本月总摄取行数以及与上个月相比的变化的摘要。
 
-  ![摄取的行数](assets/usage-ingested-rows.png)
-
-  您可以将鼠标悬停在可视化效果中的数据点上，以显示包含更多详细信息的弹出窗口。
+  您可以将鼠标悬停在可视化效果中的数据点上，以显示包含更多详细信息的弹出窗口。 您可以选择同时适用于&#x200B;**[!UICONTROL 引入的行]**&#x200B;和&#x200B;**[!UICONTROL 可报告行]**&#x200B;的&#x200B;**[!UICONTROL 时间范围]**。 使用![日程表](/help/assets/icons/Calendar.svg)来选择时间范围。
 
   +++
 
@@ -552,12 +552,175 @@ ht-degree: 98%
 
   **[!UICONTROL 可报告行数]**&#x200B;可视化效果通过从摄取的行数中减去跳过和删除的行数来跟踪可供报告的行数，作为计费和数据使用情况的关键量度。 该子面板提供了两个摘要：
 
-   * **[!UICONTROL 上月总计]**：截至本月的总可报告行数摘要。
-   * **[!UICONTROL 本月]**：本月可报告行总数及与上月相比的变化的摘要。
+  * **[!UICONTROL 总计可报告行]**：截至本月总计可报告行的汇总。
+  * **[!UICONTROL 每月可报告行数]**：本月可报告行总数以及与上月相比的变化的摘要。
 
-  ![可报告行数](assets/usage-reportable-rows.png)
+  您可以将鼠标悬停在可视化效果中的数据点上，以显示包含更多详细信息的弹出窗口。 您可以选择同时适用于&#x200B;**[!UICONTROL 引入的行]**&#x200B;和&#x200B;**[!UICONTROL 可报告行]**&#x200B;的&#x200B;**[!UICONTROL 时间范围]**。 使用![日程表](/help/assets/icons/Calendar.svg)来选择时间范围。
 
-  您可以将鼠标悬停在可视化效果中的数据点上，以显示包含更多详细信息的弹出窗口。
+  +++
+
+  +++ 详细细分
+
+  您可以使用&#x200B;**[!UICONTROL 详细细分]**&#x200B;表来按照连接、数据集、沙盒和标记查看详细量度。 数据集使用 ID 而不是名称进行报告，因为数据集名称可以在报告期间进行修改。 未知的数据集或连接使用 ID 进行报告。
+
+  对于 2024 年 9 月之前的月份，数据是在数据集层面收集的，为了清楚起见，显示为[!UICONTROL 其他数据集]。 从2024年9月开始，在粒度数据集级别收集数据，并且[!UICONTROL 其他数据集]不再显示。
+
+  * 要更改细分，请选择组合&#x200B;**[!UICONTROL 查看方式]**&#x200B;和&#x200B;**[!UICONTROL 细分方式]**&#x200B;的组合。
+
+    | **[!UICONTROL 查看方式]**&#x200B;选项 | **[!UICONTROL 细分方式]** 选项 |
+    |---|---|
+    | **[!UICONTROL 连接]** | **[!UICONTROL -]** 和&#x200B;**[!UICONTROL 数据集]** |
+    | **[!UICONTROL 数据集]** | **[!UICONTROL -]** |
+    | **[!UICONTROL 沙盒]** | **[!UICONTROL 连接]** |
+    | **[!UICONTROL 标记]** | **[!UICONTROL 连接]** |
+
+  您可以选择希望进行细分的月份。 从&#x200B;**[!UICONTROL 划分月份]**&#x200B;中选择一个月份。
+
+
+  +++
+
+### Content Analytics 使用情况
+
+**[!UICONTROL Content Analytics使用情况]**&#x200B;界面使用以下指标：
+
+| 量度名称 | 描述 |
+|---|---|
+| **Content Analytics Core可报告行** | 当前月份过去 13 个月内可用于 Content Analytics 的特定行总数，以及与上个月相比的百分比变化。  例如，2024 年 2 月 1 日，该数字显示事件时间戳从 2023 年 1 月到 2024 年 1 月的可用行数总数。 |
+| **每月Content Analytics行** | 跟踪可用于报告的 Content Analytics 行数。 可报告行数是被摄取的行数减去摄取过程中被跳过和删除的行数。 可报告行数是计费和数据使用情况的关键量度。 |
+
+>[!NOTE]
+>
+>从 2024 年 7 月开始收集核心、历史和总体记录数据。 请联系您的客户经理获取早期的历史数据。
+>
+
+**[!UICONTROL Content Analytics使用情况]**&#x200B;界面由两个面板组成：
+
+* **[!UICONTROL 关键使用量度]**&#x200B;面板，显示：
+
+  * 显示与上月相比总变化和百分位变化的两个摘要可视化图表：
+
+    * **[!UICONTROL 核心Analytics核心可报告行]**。 当前月份过去 13 个月内可用于 Content Analytics 的特定行总数，以及与上个月相比的百分比变化。  例如，2024 年 2 月 1 日，该数字显示事件时间戳从 2023 年 1 月到 2024 年 1 月的可用行数总数。
+    * **每月Content Analytics行**。 跟踪可用于报告的 Content Analytics 行数。 可报告行数是被摄取的行数减去摄取过程中被跳过和删除的行数。 可报告行数是计费和数据使用情况的关键量度。
+
+  * 显示过去13个月&#x200B;**[!UICONTROL Content Analytics Core可报告行]**&#x200B;的栈叠垂直条形图可视化图表。
+
+    如果将鼠标悬停在可视化图表中的任何堆积条形图上，就会弹出一个窗口，显示该条形图这一特定部分的行数。
+
+* 一个组合面板，其中显示以下两个子面板：
+
+  +++ 每月 Content Analytics 行数
+
+  **[!UICONTROL 每月Content Analytics行数]**&#x200B;子面板测量每月添加到系统的Content Analytics记录总数，从而提供insight的数据增长和摄取率。 该子面板提供了本月总摄取行数以及与上个月相比的变化的摘要。
+
+  您可以将鼠标悬停在可视化效果中的数据点上，以显示包含更多详细信息的弹出窗口。 你可以选择&#x200B;**[!UICONTROL 时间范围]**&#x200B;或使用![日历](/help/assets/icons/Calendar.svg)选择时间范围。
+
+  +++
+
+  +++ 详细细分
+
+  您可以使用&#x200B;**[!UICONTROL 详细细分]**&#x200B;表来按照连接、数据集、沙盒和标记查看详细量度。 数据集使用 ID 而不是名称进行报告，因为数据集名称可以在报告期间进行修改。 未知的数据集或连接使用 ID 进行报告。
+
+  对于 2024 年 9 月之前的月份，数据是在数据集层面收集的，为了清楚起见，显示为[!UICONTROL 其他数据集]。 从2024年9月开始，在粒度数据集级别收集数据，并且[!UICONTROL 其他数据集]不再显示。
+
+  * 要更改细分，请选择组合&#x200B;**[!UICONTROL 查看方式]**&#x200B;和&#x200B;**[!UICONTROL 细分方式]**&#x200B;的组合。
+
+    | **[!UICONTROL 查看方式]**&#x200B;选项 | **[!UICONTROL 细分方式]** 选项 |
+    |---|---|
+    | **[!UICONTROL 连接]** | **[!UICONTROL -]** 和&#x200B;**[!UICONTROL 数据集]** |
+    | **[!UICONTROL 数据集]** | **[!UICONTROL -]** |
+    | **[!UICONTROL 沙盒]** | **[!UICONTROL 连接]** |
+    | **[!UICONTROL 标记]** | **[!UICONTROL 连接]** |
+
+  您可以选择希望进行细分的月份。 从&#x200B;**[!UICONTROL 划分月份]**&#x200B;中选择一个月份。
+
+  +++
+
+
+### CJA B2B Edition 使用情况
+
+**[!UICONTROL CJA B2B edition使用情况]**&#x200B;界面使用以下指标：
+
+| 量度名称 | 描述 |
+|---|---|
+| **可报告的核心BPP** | 过去13个月内本月可用的业务人员配置文件可报告行总数，与上月相比有百分比变化。  例如，2024 年 2 月 1 日，该数字显示事件时间戳从 2023 年 1 月到 2024 年 1 月的可用行数总数。 |
+| **历史可报告BPP** | 当月超过13个月期间可用的业务人员配置文件可报告行总数，与上月相比具有百分比变化。 例如，2024 年 2 月 1 日，该数字显示事件时间戳早于 2023 年 1 月的可用行数总数。 |
+
+>[!NOTE]
+>
+>从 2024 年 7 月开始收集核心、历史和总体记录数据。 请联系您的客户经理获取早期的历史数据。
+>
+
+**[!UICONTROL CJA B2B edition使用情况]**&#x200B;界面包含一个面板，该面板显示以下项目的子面板：
+
++++ 核心可报告BPP。
+
+**[!UICONTROL Core Reportable BPP]**&#x200B;子面板可测量每月添加到系统中的核心可报告业务人员配置文件记录的总数，从而提供insight的数据增长和摄取率。 该子面板提供了本月总摄取行数以及与上个月相比的变化的摘要。
+
+您可以将鼠标悬停在可视化图表中的数据点上，以显示包含适用于&#x200B;**[!UICONTROL Core Reportable BPP]**&#x200B;和&#x200B;**[!UICONTROL Historical Reportable BPP]**&#x200B;的更多详细信息的弹出窗口。 使用![日程表](/help/assets/icons/Calendar.svg)来选择时间范围。
+
++++
+
++++ 历史可报告BPP。
+
+**[!UICONTROL 历史可报告BPP]**&#x200B;子面板测量每月添加到系统中的每月历史可报告业务人员配置文件记录的总数，从而提供insight的数据增长和摄取率。 该子面板提供了本月总摄取行数以及与上个月相比的变化的摘要。
+
+您可以将鼠标悬停在可视化图表中的数据点上，以显示包含适用于&#x200B;**[!UICONTROL Core Reportable BPP]**&#x200B;和&#x200B;**[!UICONTROL Historical Reportable BPP]**&#x200B;的更多详细信息的弹出窗口。 使用![日程表](/help/assets/icons/Calendar.svg)来选择时间范围。
+
++++
+
++++ 详细细分
+
+您可以使用&#x200B;**[!UICONTROL 详细细分]**&#x200B;表来按照连接、数据集、沙盒和标记查看详细量度。 数据集使用 ID 而不是名称进行报告，因为数据集名称可以在报告期间进行修改。 未知的数据集或连接使用 ID 进行报告。
+
+对于 2024 年 9 月之前的月份，数据是在数据集层面收集的，为了清楚起见，显示为[!UICONTROL 其他数据集]。 从 2024 年 9 月起，将在细粒度的数据集层面收集数据，[!UICONTROL 其他数据集]则不再出现。
+
+* 要更改细分，请选择组合&#x200B;**[!UICONTROL 查看方式]**&#x200B;和&#x200B;**[!UICONTROL 细分方式]**&#x200B;的组合。
+
+  | **[!UICONTROL 查看方式]**&#x200B;选项 | **[!UICONTROL 细分方式]** 选项 |
+  |---|---|
+  | **[!UICONTROL 连接]** | **[!UICONTROL -]** 和&#x200B;**[!UICONTROL 数据集]** |
+  | **[!UICONTROL 数据集]** | **[!UICONTROL -]** |
+  | **[!UICONTROL 沙盒]** | **[!UICONTROL 连接]** |
+  | **[!UICONTROL 标记]** | **[!UICONTROL 连接]** |
+
+您可以选择希望进行细分的月份。 从&#x200B;**[!UICONTROL 划分月份]**&#x200B;中选择一个月份。
+
++++
+
+
+### 流媒体使用情况
+
+**[!UICONTROL 流媒体使用情况]**&#x200B;界面使用以下量度：
+
+| 量度名称 | 描述 |
+|---|---|
+| **每月媒体开始** | 当前月份过去 13 个月内可用的每月媒体启动总次数，以及与上个月相比的百分比变化。  例如，在 2024 年 2 月 1 日，该数字表示事件时间戳介于 2023 年 1 月至 2024 年 1 月之间的媒体启动总次数。 |
+
+>[!NOTE]
+>
+>从 2024 年 7 月开始收集核心、历史和总体记录数据。 请联系您的客户经理获取早期的历史数据。
+>
+
+
+**[!UICONTROL 流媒体使用情况]**&#x200B;界面由两个面板组成：
+
+* **[!UICONTROL 关键使用量度]**&#x200B;面板，显示：
+
+  * 显示&#x200B;**[!UICONTROL 每月媒体开始]**&#x200B;的每月总变化量和百分数变化的摘要可视化图表。
+
+    当前月份过去 13 个月内可用的每月媒体启动总次数，以及与上个月相比的百分比变化。  例如，在 2024 年 2 月 1 日，该数字表示事件时间戳介于 2023 年 1 月至 2024 年 1 月之间的媒体启动总次数。
+
+  * 显示过去13个月&#x200B;**[!UICONTROL 每月媒体开始]**&#x200B;的栈叠垂直条形图可视化图表。
+
+    如果将鼠标悬停在可视化图表中的任何堆积条形图上，就会弹出一个窗口，显示该条形图这一特定部分的行数。
+
+* 一个组合面板，其中显示以下两个子面板：
+
+  +++ 每月媒体开始
+
+  **[!UICONTROL 每月媒体开始]**&#x200B;子面板测量每月添加到系统中的每月媒体开始记录总数，从而提供insight数据增长和摄取率。 该子面板提供了本月总摄取行数以及与上个月相比的变化的摘要。
+
+  您可以将鼠标悬停在可视化效果中的数据点上，以显示包含更多详细信息的弹出窗口。 你可以选择&#x200B;**[!UICONTROL 时间范围]**&#x200B;或使用![日历](/help/assets/icons/Calendar.svg)选择时间范围。
 
   +++
 
@@ -567,20 +730,19 @@ ht-degree: 98%
 
   对于 2024 年 9 月之前的月份，数据是在数据集层面收集的，为了清楚起见，显示为[!UICONTROL 其他数据集]。 从 2024 年 9 月起，将在细粒度的数据集层面收集数据，[!UICONTROL 其他数据集]则不再出现。
 
-   * 要更改细分，请选择组合&#x200B;**[!UICONTROL 查看方式]**&#x200B;和&#x200B;**[!UICONTROL 细分方式]**&#x200B;的组合。
+  * 要更改细分，请选择组合&#x200B;**[!UICONTROL 查看方式]**&#x200B;和&#x200B;**[!UICONTROL 细分方式]**&#x200B;的组合。
 
-     | **[!UICONTROL 查看方式]**&#x200B;选项 | **[!UICONTROL 细分方式]** 选项 |
-     |---|---|
-     | **[!UICONTROL 连接]** | **[!UICONTROL -]** 和&#x200B;**[!UICONTROL 数据集]** |
-     | **[!UICONTROL 数据集]** | **[!UICONTROL -]** |
-     | **[!UICONTROL 沙盒]** | **[!UICONTROL 连接]** |
-     | **[!UICONTROL 标记]** | **[!UICONTROL 连接]** |
+    | **[!UICONTROL 查看方式]**&#x200B;选项 | **[!UICONTROL 细分方式]** 选项 |
+    |---|---|
+    | **[!UICONTROL 连接]** | **[!UICONTROL -]** 和&#x200B;**[!UICONTROL 数据集]** |
+    | **[!UICONTROL 数据集]** | **[!UICONTROL -]** |
+    | **[!UICONTROL 沙盒]** | **[!UICONTROL 连接]** |
+    | **[!UICONTROL 标记]** | **[!UICONTROL 连接]** |
 
-  ![详细细分](assets/usage-detail-breakdown.png)
+  您可以选择希望进行细分的月份。 从&#x200B;**[!UICONTROL 划分月份]**&#x200B;中选择一个月份。
 
   +++
 
-  您可以定义以月为单位的&#x200B;**[!UICONTROL 时间范围]**&#x200B;进行报告。 使用![日程表](/help/assets/icons/Calendar.svg)来选择时间范围。
 
 >[!MORELIKETHIS]
 >
