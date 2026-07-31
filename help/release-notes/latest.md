@@ -27,10 +27,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: d16eaa5e7939585f7ade164ef0c680095b8ed2c3
+source-git-commit: ffa9d10d58481d19627633b6a2030c11b6d5b229
 workflow-type: tm+mt
-source-wordcount: 799
-ht-degree: 33%
+source-wordcount: 826
+ht-degree: 32%
 
 ---
 
@@ -44,6 +44,7 @@ ht-degree: 33%
 
 | 功能和描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | -----------|-----------|-----------|
+| **LLM Optimizer集成**<br>&#x200B;通过[LLM Optimizer入站集成](/help/integrations/llmo.md#inbound-integration)，您可以将LLM Optimizer数据摄取到Customer Journey Analytics中以供进一步分析。 | 2026年7月28日 | 2026年7月28日 |
 | **子事件分析** <br/>[子事件分析](/help/components/segments/sub-event.md)允许您在比事件级别更精细的级别上分析数据。 您可以对事件中的单个容器进行分段，而不是筛选整个事件。 <p>例如，您可以按特定产品类别进行分段，而不包括同一订单中购买的所有其他产品。 您也可以将属于事件数据的对象或数组定义为数据视图中单独的[自定义容器](/help/data-views/create-dataview.md#custom-containers)。 | 2026年7月21日 | 2026年7月底 |
 | **B2B edition：在Customer Journey Analytics B2B edition中，基于帐户的连接现在也支持临时和关系数据集** <br/>临时和关系数据集。<p>（文档链接见下文。）</p> | | 2026年7月20日 |
 | **CX Enterprise Co-worker：分析Customer Journey Analytics数据** <br/>Adobe CX Enterprise Co-worker Chat现在可以执行以前只能在Analysis Workspace中进行的高级数据分析。 Co-worker Chat访问来自Customer Journey Analytics数据视图的数据，允许您浏览该数据并获得自然语言提示的答案。<p>有关详细信息，请参阅[使用同事聊天分析Customer Journey Analytics数据](https://experienceleague.adobe.com/zh-hans/docs/cx-enterprise-coworker/content/chat/analytics-chat)。</p> | | 2026年7月23日 |
