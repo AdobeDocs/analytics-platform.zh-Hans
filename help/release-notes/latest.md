@@ -3,74 +3,54 @@ title: 当前的Customer Journey Analytics发行说明
 description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
+hold: true
 TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 2f745f65808e47fd6c0862fe23b6de6ca12ecfff
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: ad5685a0-8296-4a0c-814c-658c10b4af12id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: d3547118dae86f9cf00255bab08e6a1e31b52842
 workflow-type: tm+mt
-source-wordcount: 826
-ht-degree: 32%
+source-wordcount: 711
+ht-degree: 39%
 
 ---
 
-# 当前Customer Journey Analytics发行说明（2026年7月）
+# 当前Customer Journey Analytics发行说明（2026年8月）
 
-**上次更新日期**：2026年7月8日
+**上次更新日期**：2026年8月4日
 
-这些发行说明涵盖2026年7月发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。 因此，这些发行说明每月更新几次。 请定期检查。
+这些发行说明涵盖2026年8月发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。 因此，这些发行说明每月更新几次。 请定期检查。
 
 ## 新增功能或更新后的功能
 
 | 功能和描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | -----------|-----------|-----------|
-| **品牌可见度集成**<br>&#x200B;品牌可见度入站集成[允许您将品牌可见度数据摄取到Customer Journey Analytics中以供进一步分析。](/help/integrations/bv.md#inbound-integration) | 2026年7月28日 | 2026年7月28日 |
-| **子事件分析** <br/>[子事件分析](/help/components/segments/sub-event.md)允许您在比事件级别更精细的级别上分析数据。 您可以对事件中的单个容器进行分段，而不是筛选整个事件。 <p>例如，您可以按特定产品类别进行分段，而不包括同一订单中购买的所有其他产品。 您也可以将属于事件数据的对象或数组定义为数据视图中单独的[自定义容器](/help/data-views/create-dataview.md#custom-containers)。 | 2026年7月21日 | 2026年7月底 |
-| **B2B edition：在Customer Journey Analytics B2B edition中，基于帐户的连接现在也支持临时和关系数据集** <br/>临时和关系数据集。<p>（文档链接见下文。）</p> | | 2026年7月20日 |
-| **CX Enterprise Co-worker：分析Customer Journey Analytics数据** <br/>Adobe CX Enterprise Co-worker Chat现在可以执行以前只能在Analysis Workspace中进行的高级数据分析。 Co-worker Chat访问来自Customer Journey Analytics数据视图的数据，允许您浏览该数据并获得自然语言提示的答案。<p>有关详细信息，请参阅[使用同事聊天分析Customer Journey Analytics数据](https://experienceleague.adobe.com/zh-hans/docs/cx-enterprise-coworker/content/chat/analytics-chat)。</p> | | 2026年7月23日 |
-| **CX Enterprise Co-worker：从Adobe Analytics迁移到Customer Journey Analytics时验证您的数据** <br/>CX Enterprise Co-worker的一项新技能允许您根据现有Adobe Analytics实施的数据验证Customer Journey Analytics实施中的数据。 <p>这项技能可根据需要自动分别比较每个维度、量度和趋势。 它还可以将所有Adobe Analytics报表包与所有Customer Journey Analytics数据视图进行比较。 然后，该技能可生成由AI驱动的见解和推荐，您可实施这些见解和推荐，以方便您迁移到Customer Journey Analytics。</p><p>有关详细信息，请参阅[从Adobe Analytics升级到Customer Journey Analytics时，与同事验证数据](https://experienceleague.adobe.com/zh-hans/docs/cx-enterprise-ai/experience-cloud-ai/coworker/data-validation-aa-cja)。</p> | | 2026年7月24日 |
-| **内联分类**<br/>[&#x200B;内联分类](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications)允许您重命名或组合自由格式表中的行。 以及从表中修改的行创建派生字段。 | 2026年7月20日 | 2026年7月25日 |
-| **Content Analytics：付费媒体数据** <br/>付费媒体现已作为Content Analytics的第三个渠道提供。<p>（文档链接见下文。）</p> | | 2026年7月31日 |
-| **连接使用情况界面更新** <br/>在管理连接时，在[使用情况界面](/help/connections/manage-connections.md#usage)中，您现在可以看到每个模块的使用详细信息，例如Customer Journey Analytics或Customer Journey Analytics B2B edition。 <br/>此外，您现在可以按月划分每个模块的使用情况报告。 | 2026年7月23日 | 2026年7月30日 |
+| **在LLM Optimizer中使用Analytics数据**<br>&#x200B;将LLM Optimizer与贵组织的Customer Journey Analytics数据连接起来，以便衡量AI驱动的发现如何转化为真正的网站参与度和业务成果。<p>（文档链接见下文。）</p> | | 2026年8月14日 |
+| **历程画布增强功能**<br>&#x200B;现已提供以下历程画布增强功能：<ul><li>将历程与先前的时间范围进行比较。 将当前历程与4周前、2个季度前、1年前或自定义日期范围前的历程进行比较。</li><li>对于所选节点，显示历程中任意时间点上所选节点之后排名最前的维度项目。 当所选节点是分析中的关键事件，并且您想要查看用户随后在任何时候执行的操作时，可使用此选项。<p>以前，只有顶级的直接节点才能显示在选定节点之前或之后。 </p></li><li>更改节点之间箭头的形状和样式。 在节点之间拖动箭头以更改箭头的形状（曲线），然后右键单击箭头以将其样式更改为下列任一形式：实线、虚线、点线、虚线点或动画。</li></ul><p></p>有关详细信息，请参阅[配置历程画布可视化图表](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。 |  | 2026年8月18日 |
+| **支持其他数据使用标签**<br> Customer Journey Analytics现在支持数据集内元素的以下其他数据使用标签：<ul><li>C2 — 限制第三方数据导出（现在可用）</li><li>C3 — 限制可直接识别的数据组合（现在可用）</li><li>C9 — 限制数据科学（计划于8月发布）</li></ul><p>有关详细信息，请参阅[标签、策略和营销操作](/help/data-views/data-governance.md)。</p> | | 2026年8月 |
+| **同意策略筛选和报告**<br>&#x200B;您现在可以报告哪些访客与您的Adobe Experience Platform同意策略匹配。 （同意策略维度和量度会添加到连接中的数据视图。）<p>此外，您可以先排除非同意访客，然后再将其数据摄取到Customer Journey Analytics。</p><p>有关更多信息，请参阅同意报表和筛选概述。</p> | | 2026年8月 |
+| **Migration Planner： Adobe Analytics到Customer Journey Analytics**<br> Migration Planner提供了一个迁移向导，可自动执行与从Adobe Analytics升级到Customer Journey Analytics相关的一些最复杂和耗时的任务，包括XDM架构创建和从AppMeasurement或Analytics扩展（标记）迁移到Experience Platform Web SDK。 <p>（文档链接见下文。）</p> | | 2026年8月底或9月底 |
 
 ### Customer Journey Analytics 中的修复
 
-**Analysis Workspace**： AN-457527、AN-451161、AN-459034、AN-458071、AN-458398
+**Analysis Workspace**：
 **组件**：
-**连接**： AN-457065
+**连接**：
 **Content Analytics**：
 **引导式分析**：
 **导出**：
-**数据视图**： AN-453201
+**数据视图**：
 **数据摄取**：
 **实施**：
-**Report Builder**： AN-457533， AN-453683
-**报告**： AN-457607、AN-447692、AN-451259、AN-455713
+**Report Builder**：
+**报告**：
 **分段**：
-**计划报告**： AN-450715
+**计划报告**：
 **共享的量度和维度**：
 **受众分析**：
-**其他**： AN-457063
+**其他**：
 
 ## 延迟的功能
 
