@@ -33,7 +33,7 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: ffa9d10d58481d19627633b6a2030c11b6d5b229
+source-git-commit: 2f745f65808e47fd6c0862fe23b6de6ca12ecfff
 workflow-type: tm+mt
 source-wordcount: 6984
 ht-degree: 99%
@@ -50,7 +50,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 |---|---|
 | **2026年7月** | |
-| LLM Optimizer入站集成 | 有关[LLM Optimizer入站集成](/help/integrations/llmo.md#inbound-integration)的文档。 |
+| 品牌可见度入站集成 | 有关[品牌可见度入站集成](/help/integrations/bv.md#inbound-integration)的文档。 |
 | 使用界面 | 对连接的[使用接口](/help/connections/manage-connections.md#usage)文档的更新。 |
 | 子事件分析 | [子事件分析](/help/components/segments/sub-event.md)和[自定义容器](/help/data-views/create-dataview.md#custom-containers)的文档。 |
 | 内联分类 | [内联分类](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications)的文档。 |

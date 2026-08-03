@@ -22,7 +22,7 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
-source-wordcount: 3355
+source-wordcount: 3315
 ht-degree: 5%
 
 ---
@@ -209,11 +209,11 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
   要做到这一点，您必须……
 
-   - 使用处理状态表`checkpoint_log`跟踪当前引入时间与上次引入时间。 有关详细信息，请参阅[本指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/key-concepts/incremental-load)。
-   - 禁用删除系统列，以便您可以使用`_acp_system_metadata.ingestTime`。
-   - 使用最内层`SELECT`获取要使用的字段，并将事件限制在回看时段内以进行会话和/或归因计算。 例如，90天。
-   - 使用下一级别`SELECT`来应用会话化和/或归因窗口函数以及其他计算。
-   - 在输出表中使用`INSERT INTO`将回顾限制为仅回顾自上次处理时间以来到达的事件。 为此，请筛选`_acp_system_metadata.ingestTime `而不是上次存储在处理状态表中的时间。
+  - 使用处理状态表`checkpoint_log`跟踪当前引入时间与上次引入时间。 有关详细信息，请参阅[本指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/key-concepts/incremental-load)。
+  - 禁用删除系统列，以便您可以使用`_acp_system_metadata.ingestTime`。
+  - 使用最内层`SELECT`获取要使用的字段，并将事件限制在回看时段内以进行会话和/或归因计算。 例如，90天。
+  - 使用下一级别`SELECT`来应用会话化和/或归因窗口函数以及其他计算。
+  - 在输出表中使用`INSERT INTO`将回顾限制为仅回顾自上次处理时间以来到达的事件。 为此，请筛选`_acp_system_metadata.ingestTime `而不是上次存储在处理状态表中的时间。
 
   **会话流程窗口函数示例**
 
@@ -364,7 +364,7 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
 #### 使用查询服务API
 
-或者，您可以使用RESTful API为查询定义查询和计划。 有关详细信息，请参阅[查询服务API指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/api/getting-started)。
+或者，您可以使用RESTful API为查询定义查询和计划。有关详细信息，请参阅[查询服务API指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/api/getting-started)。
 在创建查询（[创建查询](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Queries/operation/createQuery)）或为查询创建计划时（[创建计划查询](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Schedules/operation/createSchedule)），请确保将输出数据集定义为可选`ctasParameters`属性的一部分。
 
 
