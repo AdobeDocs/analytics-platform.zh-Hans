@@ -5,33 +5,15 @@ exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 hold: true
 TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: d3547118dae86f9cf00255bab08e6a1e31b52842
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: ad5685a0-8296-4a0c-814c-658c10b4af12id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 034186edab4bcd66073236e070a37ee9317830e4
 workflow-type: tm+mt
-source-wordcount: 711
-ht-degree: 39%
+source-wordcount: 779
+ht-degree: 36%
 
 ---
 
@@ -45,11 +27,13 @@ ht-degree: 39%
 
 | 功能和描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | -----------|-----------|-----------|
-| **在LLM Optimizer中使用Analytics数据**<br>&#x200B;将LLM Optimizer与贵组织的Customer Journey Analytics数据连接起来，以便衡量AI驱动的发现如何转化为真正的网站参与度和业务成果。<p>（文档链接见下文。）</p> | | 2026年8月14日 |
 | **历程画布增强功能**<br>&#x200B;现已提供以下历程画布增强功能：<ul><li>将历程与先前的时间范围进行比较。 将当前历程与4周前、2个季度前、1年前或自定义日期范围前的历程进行比较。</li><li>对于所选节点，显示历程中任意时间点上所选节点之后排名最前的维度项目。 当所选节点是分析中的关键事件，并且您想要查看用户随后在任何时候执行的操作时，可使用此选项。<p>以前，只有顶级的直接节点才能显示在选定节点之前或之后。 </p></li><li>更改节点之间箭头的形状和样式。 在节点之间拖动箭头以更改箭头的形状（曲线），然后右键单击箭头以将其样式更改为下列任一形式：实线、虚线、点线、虚线点或动画。</li></ul><p></p>有关详细信息，请参阅[配置历程画布可视化图表](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。 |  | 2026年8月18日 |
 | **支持其他数据使用标签**<br> Customer Journey Analytics现在支持数据集内元素的以下其他数据使用标签：<ul><li>C2 — 限制第三方数据导出（现在可用）</li><li>C3 — 限制可直接识别的数据组合（现在可用）</li><li>C9 — 限制数据科学（计划于8月发布）</li></ul><p>有关详细信息，请参阅[标签、策略和营销操作](/help/data-views/data-governance.md)。</p> | | 2026年8月 |
 | **同意策略筛选和报告**<br>&#x200B;您现在可以报告哪些访客与您的Adobe Experience Platform同意策略匹配。 （同意策略维度和量度会添加到连接中的数据视图。）<p>此外，您可以先排除非同意访客，然后再将其数据摄取到Customer Journey Analytics。</p><p>有关更多信息，请参阅同意报表和筛选概述。</p> | | 2026年8月 |
 | **Migration Planner： Adobe Analytics到Customer Journey Analytics**<br> Migration Planner提供了一个迁移向导，可自动执行与从Adobe Analytics升级到Customer Journey Analytics相关的一些最复杂和耗时的任务，包括XDM架构创建和从AppMeasurement或Analytics扩展（标记）迁移到Experience Platform Web SDK。 <p>（文档链接见下文。）</p> | | 2026年8月底或9月底 |
+| **B2B：人员与帐户拼接**<br>&#x200B;您现在可以使用身份拼接将帐户信息拼接到数据集中的每个事件。 由于帐户是Customer Journey Analytics B2B edition中的最高报表容器，因此摄取期间会丢弃不包含帐户ID的事件。</li></ul><p>（文档链接见下文。）</p> | | 2026年8月底或9月底 |
+| **CJA报表API首次调用指南**<br> Adobe Customer Journey Analytics API首次调用指南提供了配置基本报表请求的说明和示例。 | | 2026年8月10日 |
+| **CJA报表API日期趋势指南**<br> Adobe Customer Journey Analytics API日期趋势指南提供了配置基本报表请求的说明和示例。 | | 2026年8月17日 |
 
 ### Customer Journey Analytics 中的修复
 
