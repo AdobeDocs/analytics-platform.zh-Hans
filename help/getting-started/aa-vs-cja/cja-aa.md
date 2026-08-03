@@ -6,45 +6,11 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 TQID: https://experienceleague.adobe.com/3TqNaNKkAo2Ug92F5244fVbnv-Po6x5l2sAf3ZHZuCw
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
-subfeature_v2:
-  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-  - id: aff2ef09-fc60-4018-9197-e2befd623064
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-  - id: d13dba12-733d-4914-8d92-d643658bbe5d
-  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
-  - id: d47d27f9-fcd6-414d-a127-a8a739dac811
-  - id: ddf59f64-0e46-4986-a525-056acc143c70
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e0be3531-517c-451a-b2ff-6fcafd56ca0d
-  - id: e2ff1689-912e-40ed-a029-ed8d02d9f34a
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-  - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46dbid: e634a07b-b7ca-4af3-a124-3024ce559e17
+subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: ad5685a0-8296-4a0c-814c-658c10b4af12id: aff2ef09-fc60-4018-9197-e2befd623064id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d13dba12-733d-4914-8d92-d643658bbe5did: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: d47d27f9-fcd6-414d-a127-a8a739dac811id: ddf59f64-0e46-4986-a525-056acc143c70id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e0be3531-517c-451a-b2ff-6fcafd56ca0did: e2ff1689-912e-40ed-a029-ed8d02d9f34aid: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eb30f47f-d87a-400f-8f78-63ce7979ff56id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
 workflow-type: tm+mt
 source-wordcount: 3109
@@ -122,7 +88,7 @@ ht-degree: 99%
 | **汇总级数据源** | 全面支持 |
 | **虚拟报告包** | 全面支持。 [数据视图](/help/data-views/create-dataview.md)是 Customer Journey Analytics 中对应于 Adobe Analytics 中报表包的概念。 |
 | **虚拟报表包组件管理** | 全面支持。 组件管理是数据视图功能的一部分。 |
-| **设备、浏览器、反向链接、技术维度** | 支持基于 [Analytics Source Connector &#x200B;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics)的数据集和 WebSDK 生成的数据集。 请参阅[关于通过 ADC 支持哪些 Analytics 变量的文档。](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics) 如果您使用 Experience Platform Web SDK 数据收藏集，则当前不支持基于设备查找的设备和维度。 计划在以后提供支持。 要将设备和浏览器查找功能添加到 Web SDK 数据流，请参阅[本文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure) |
+| **设备、浏览器、反向链接、技术维度** | 支持基于 [Analytics Source Connector ](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics)的数据集和 WebSDK 生成的数据集。 请参阅[关于通过 ADC 支持哪些 Analytics 变量的文档。](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics) 如果您使用 Experience Platform Web SDK 数据收藏集，则当前不支持基于设备查找的设备和维度。 计划在以后提供支持。 要将设备和浏览器查找功能添加到 Web SDK 数据流，请参阅[本文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure) |
 
 ## 以新方式支持 {#new-support}
 
@@ -137,7 +103,7 @@ ht-degree: 99%
 | **自定义会话长度** | 可通过数据视图中的[会话设置](../../data-views/create-dataview.md#session-settings)配置会话长度。 有关详细信息，请参阅[会话设置](../../data-views/session-settings.md)。 <br/>通过 Adobe Experience Platform Mobile SDK 支持处理移动后台事件。 有关更多信息，请参阅[边缘网络的生命周期](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/)。 |
 | **货币换算** | 在数据视图中[格式化量度组件](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/format)的过程中支持。 |
 | **客户属性** | 轮廓数据集相当于客户归因功能。 轮廓数据集不会自动从 Experience Cloud 导入，必须先上传至 Experience Platform，才可在 Customer Journey Analytics 中使用。 |
-| **数据馈送** | 数据集的第一代数据导出可通过[&#x200B; Experience Platform 数据访问 API](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-access/api)以及[&#x200B; Experience Platform 目标](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets)实现。 这些选项提供了事件/行级别的导出，可将收集或摄入的所有数据导出到 Experience Platform 数据湖中。 后处理数据列不可用，因为后处理列是在查询时计算的。 可通过报告导出帖子列。 |
+| **数据馈送** | 数据集的第一代数据导出可通过[ Experience Platform 数据访问 API](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-access/api)以及[ Experience Platform 目标](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets)实现。 这些选项提供了事件/行级别的导出，可将收集或摄入的所有数据导出到 Experience Platform 数据湖中。 后处理数据列不可用，因为后处理列是在查询时计算的。 可通过报告导出帖子列。 |
 | **Data Warehouse 报告** | [Customer Journey Analytics 全表导出](/help/analysis-workspace/export/export-cloud.md)从 Adobe Analytics 中的 Data Warehouse 报告演化而来，具有许多当今在 Data Warehouse 中不提供但经常有人要求提供的新功能。 |
 | **登录、退出和花费时间维度和量度** | 受支持（现在“进入次数”和“退出次数”称为“会话启动次数”和“会话结束次数”），但计算方式略有不同。 |
 | **eVar 持久性设置** | Customer Journey Analytics 中不再包括 eVar。 但是，持久性设置现在是数据视图的一部分，且可用于所有维度。 请记住，持久基于报告时处理，而不是数据收集处理。 数据视图中的纬度集限制为 90 天最大持久性，不支持无限持久性。 |
