@@ -30,7 +30,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 66a8a96da6710d20b01b9315fe87ba38c54c2511
 workflow-type: tm+mt
-source-wordcount: 3920
+source-wordcount: 3921
 ht-degree: 48%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 48%
 
 {{release-limited-testing}}
 
-无法在Adobe Analytics和Customer Journey Analytics数据馈送列之间进行1:1映射。 这两种产品存在根本性差异，并且每个组织的实施也可能存在显着差异。
+Adobe Analytics和Customer Journey Analytics数据馈送列之间不可能存在真正的1:1映射。 这两种产品存在根本性差异，并且每个组织的实施也可能存在显着差异。
 
 此参考可帮助数据工程师评估Adobe Analytics数据馈送列，并确定其工作流中与Customer Journey Analytics最接近的等效项。
 
@@ -446,12 +446,12 @@ EF ID，用于Adobe Advertising集成。
 * 如果您的指标在Adobe Analytics中按访问删除了重复项，则您可以在该指标的组件设置中将重复项删除范围设置为会话。
 * 如果您的量度在Adobe Analytics中按事件ID进行了重复数据删除，则该量度的XDM对象可能同时包含`value`和`id`字段。 如果您的架构使用[[!UICONTROL Commerce详细信息]](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/field-groups/event/commerce-details)字段组，则这些量度可能驻留在这些XDM字段中，您可以在量度的组件设置中设置&#x200B;**[!UICONTROL 重复数据删除ID]**&#x200B;字段：
 
-   * **结帐**： `xdm.commerce.checkouts.id`
-   * **购物车添加次数**： `xdm.commerce.productListAdds.id`
-   * **购物车打开**： `xdm.commerce.productListOpens.id`
-   * **购物车移除**： `xdm.commerce.productListRemovals.id`
-   * **购物车查看次数**： `xdm.commerce.productListViews.id`
-   * **产品查看次数**： `xdm.commerce.productViews.id`
+  * **结帐**： `xdm.commerce.checkouts.id`
+  * **购物车添加次数**： `xdm.commerce.productListAdds.id`
+  * **购物车打开**： `xdm.commerce.productListOpens.id`
+  * **购物车移除**： `xdm.commerce.productListRemovals.id`
+  * **购物车查看次数**： `xdm.commerce.productListViews.id`
+  * **产品查看次数**： `xdm.commerce.productViews.id`
 
 如果要删除重复的订单量度，请参阅`duplicate_purchase`。
 
