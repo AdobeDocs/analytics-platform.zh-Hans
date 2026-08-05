@@ -28,10 +28,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: feb7b3364e7981c42e3a31f75acfbddfdc463485
+source-git-commit: 64b257112d0d46aa6a6ca22d1f712376e461d5e4
 workflow-type: tm+mt
-source-wordcount: 795
-ht-degree: 35%
+source-wordcount: 971
+ht-degree: 28%
 
 ---
 
@@ -48,6 +48,7 @@ ht-degree: 35%
 | **历程画布增强功能**<br>&#x200B;现已提供以下历程画布增强功能：<ul><li>将历程与先前的时间范围进行比较。 将当前历程与4周前、2个季度前、1年前或自定义日期范围前的历程进行比较。</li><li>对于所选节点，显示历程中任意时间点上所选节点之后排名最前的维度项目。 当所选节点是分析中的关键事件，并且您想要查看用户随后在任何时候执行的操作时，可使用此选项。<p>以前，只有顶级的直接节点才能显示在选定节点之前或之后。 </p></li><li>更改节点之间箭头的形状和样式。 在节点之间拖动箭头以更改箭头的形状（曲线），然后右键单击箭头以将其样式更改为下列任一形式：实线、虚线、点线、虚线点或动画。</li></ul><p></p>有关详细信息，请参阅[配置历程画布可视化图表](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。 |  | 2026年8月18日 |
 | **支持其他数据使用标签**<br> Customer Journey Analytics现在支持数据集内元素的以下其他数据使用标签：<ul><li>C2 — 限制第三方数据导出（现在可用）</li><li>C3 — 限制可直接识别的数据组合（现在可用）</li><li>C9 — 限制数据科学（计划于8月发布）</li></ul><p>有关详细信息，请参阅[标签、策略和营销操作](/help/data-views/data-governance.md)。</p> | | 2026年8月 |
 | **同意策略筛选和报告**<br>&#x200B;您现在可以报告哪些访客与您的Adobe Experience Platform同意策略匹配。 （同意策略维度和量度会添加到连接中的数据视图。）<p>此外，您可以先排除非同意访客，然后再将其数据摄取到Customer Journey Analytics。</p><p>有关更多信息，请参阅同意报表和筛选概述。</p> | | 2026年8月 |
+| **Content Analytics：付费媒体数据** <br/>付费媒体现已作为Content Analytics的第三个渠道提供。<p>（文档链接见下文。）</p> | | 2026年8月31日 |
 | **Migration Planner： Adobe Analytics到Customer Journey Analytics**<br> Migration Planner提供了一个迁移向导，可自动执行与从Adobe Analytics升级到Customer Journey Analytics相关的一些最复杂和耗时的任务，包括XDM架构创建和从AppMeasurement或Analytics扩展（标记）迁移到Experience Platform Web SDK。 <p>（文档链接见下文。）</p> | | 2026年8月底或9月底 |
 | **B2B：人员到帐户拼接**<br> B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Customer Journey Analytics中跨整个客户历程进行完整分析。 <p>当事件缺少帐户ID（Customer Journey Analytics B2B edition摄取时需要帐户ID）时，帐户拼接将使用您提供的人员到帐户映射数据集自动派生和添加该信息。</p><p>（文档链接见下文。）</p> | | 2026年8月底或9月底 |
 | **CJA报表API首次调用指南**<br> Adobe Customer Journey Analytics API首次调用指南提供了配置基本报表请求的说明和示例。 | | 2026年8月10日 |
@@ -55,22 +56,22 @@ ht-degree: 35%
 
 ### Customer Journey Analytics 中的修复
 
-**Analysis Workspace**：
+**Analysis Workspace**： AN-466867、AN-465995、AN-465315、AN-465313、AN-464375、AN-463634、AN-463248、AN-463175、AN-463049、AN-462347、AN-462124、AN-461922、AN-458398、AN-457849、AN-455002、AN-453357、AN-456863、AN-459816、AN-459034、AN-460774、AN-460671、AN-457760、AN-443594
 **组件**：
-**连接**：
+**连接**： AN-464934、AN-460768
 **Content Analytics**：
 **引导式分析**：
-**导出**：
-**数据视图**：
-**数据摄取**：
+**导出**： AN-451819、AN-448419、AN-456001
+**数据视图**： AN-453201、AN-441965、AN-460967
+**数据摄取**： AN-462123、AN-451836、AN-453790、AN-459000、AN-456057、AN-461271、AN-459016、AN-460935
 **实施**：
-**Report Builder**：
-**报告**：
-**分段**：
-**计划报告**：
+**Report Builder**： AN-465346、AN-464768、AN-464580、AN-464301、AN-463048、AN-462800、AN-457042、AN-461033、AN-459042、AN-454250、AN-451735、AN-450776、AN-450200、AN-451665
+**报告**： AN-463576、AN-462400、AN-456394、AN-455619、AN-459530、AN-454103、AN-452866、AN-461181
+**分段**： AN-459002、AN-457730、AN-457146
+**计划报告**： AN-455009、AN-460037、AN-462093
 **共享的量度和维度**：
-**受众分析**：
-**其他**：
+**受众分析**： AN-458292
+**Other**： AN-466935、AN-462116、AN-454493、AN-457666、AN-457557、AN-456742、AN-437975、AN-460959
 
 ## 延迟的功能
 
