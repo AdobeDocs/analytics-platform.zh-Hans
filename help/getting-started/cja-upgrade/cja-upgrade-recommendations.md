@@ -26,10 +26,10 @@ topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
+source-git-commit: 19bd7f26d503f7397c283dca8f8b71b2d6854adb
 workflow-type: tm+mt
-source-wordcount: 3352
-ht-degree: 95%
+source-wordcount: 3367
+ht-degree: 93%
 
 ---
 
@@ -170,7 +170,7 @@ ht-degree: 95%
 
    使用派生字段中的[营销渠道功能模板](/help/data-views/derived-fields/derived-fields.md#marketing-channels){target="_blank"}可以为营销渠道快速创建一个派生字段。
 
-1. 将旧的实施中 Adobe Analytics 内的数据与新实施中 Customer Journey Analytics 内的数据进行比较，确保您了解所有差异及其存在的原因。<!-- Expound on this. Link to somewhere? There will be a lot of differences. -->
+1. [将Adobe Analytics中旧实施的数据与Customer Journey Analytics中新实施的数据进行比较](https://experienceleague.adobe.com/zh-hans/docs/cx-enterprise-ai/experience-cloud-ai/coworker/data-validation-aa-cja)，确保您了解任何差异及其存在原因。
 
 1. 使用 Analytics 源连接器从 Adobe Analytics 中提取历史数据：
 
