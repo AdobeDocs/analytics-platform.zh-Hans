@@ -23,7 +23,7 @@ topic_v2:
 source-git-commit: 593dc8e9eb32e092545b74882ce2a85bcecc3c56
 workflow-type: tm+mt
 source-wordcount: 1349
-ht-degree: 22%
+ht-degree: 28%
 
 ---
 
@@ -68,7 +68,7 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_identifier_namespace"
 >title="人员标识符命名空间"
->abstract="为您的报告选择最相关的人员身份标识命名空间。 例如，电子邮件。 任何已启用&#x200B;**[!UICONTROL 人员到帐户拼接]**&#x200B;的事件数据集都会将人员ID提升到此人员标识符命名空间。"
+>abstract="为您的报告选择最相关的人员身份标识命名空间。 例如，电子邮件。 任何启用了&#x200B;**[!UICONTROL “人员到帐户”拼接]**&#x200B;的事件数据集都已将人员 ID 提升到了此人员标识符命名空间。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_to_account_dataset"
@@ -94,7 +94,7 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_mapping_creation_time"
 >title="映射创建时间"
->abstract="（可选）选择表示创建人员到帐户映射的日期和时间的字段。 适用于人员随时间切换多个帐户的情况。"
+>abstract="或者，也可以选择“人员到帐户”映射的创建日期和时间的字段。 适合某个人在一段时间内切换多个帐户的情况。"
 
 
 1. 在Customer Journey Analytics中，导航到&#x200B;**[!UICONTROL 连接]**&#x200B;和[创建新连接](/help/connections/create-connection.md#create-a-connection)或[编辑现有连接](/help/connections/create-connection.md#edit-a-connection)。
@@ -124,7 +124,7 @@ B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Cu
       | **[!UICONTROL 个人到帐户数据集]** | ![必需](/help/assets/icons/Required.svg) | 选择将人员映射到帐户的查找（记录或非时间序列数据集）。 |
       | **[!UICONTROL 人员 ID]** | ![必需](/help/assets/icons/Required.svg) | 选择数据集中包含人员 ID 的字段。 该字段必须标记为标识，并且不能与&#x200B;**[!UICONTROL 帐户ID]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。 |
       | **[!UICONTROL 帐户 ID]** | ![必需](/help/assets/icons/Required.svg) | 选择数据集中包含帐户 ID 的字段。 该字段不能与&#x200B;**[!UICONTROL 人员ID]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。 |
-      | **映射创建时间** | | （可选）选择表示创建人员到帐户映射的日期和时间的字段。 适用于人员随时间切换多个帐户的情况。<br/><br/>**示例**（当选择&#x200B;**update_date**&#x200B;字段时）：<table><thead><tr><th>update_date</th><th>人员</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>对于2026年5月1日之前在&#x200B;**[!UICONTROL update_date]**&#x200B;字段中具有时间戳的所有事件： a@b.com已映射到Apple。</li><li>对于2026年5月1日或之后在&#x200B;**[!UICONTROL update_date]**&#x200B;字段中具有时间戳的所有事件： a@b.com已映射到Adobe。</li><ul> |
+      | **映射创建时间** | | 或者，也可以选择“人员到帐户”映射的创建日期和时间的字段。 适合某个人在一段时间内切换多个帐户的情况。<br/><br/>**示例**（当选择&#x200B;**update_date**&#x200B;字段时）：<table><thead><tr><th>update_date</th><th>人员</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>对于2026年5月1日之前在&#x200B;**[!UICONTROL update_date]**&#x200B;字段中具有时间戳的所有事件： a@b.com已映射到Apple。</li><li>对于2026年5月1日或之后在&#x200B;**[!UICONTROL update_date]**&#x200B;字段中具有时间戳的所有事件： a@b.com已映射到Adobe。</li><ul> |
 
       >[!NOTE]
       >

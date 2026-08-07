@@ -20,7 +20,7 @@ role_v2:
 source-git-commit: 859a195e89c44d3951ca79ce7f93f9dd77cd4f5c
 workflow-type: tm+mt
 source-wordcount: 1812
-ht-degree: 79%
+ht-degree: 80%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 79%
 >[!CONTEXTUALHELP]
 >id="components_filters_datapreview"
 >title="数据预览"
->abstract="比较区段数据和数据视图数据。 预览百分比反映数据视图中从&#x200B;**最近90天**&#x200B;以来的总数。<br><br/>如果无法加载预览，则连接正在回填。"
+>abstract="比较区段数据和数据视图数据。 预览百分比体现的是&#x200B;**过去 90 天**&#x200B;数据视图中的总数。<br><br/>如果预览加载失败，说明连接正在回填数据。"
 
 **[!UICONTROL 区段生成器]**&#x200B;对话框可用于创建新区段或编辑现有区段。 对于您通过[[!UICONTROL 区段]管理器](/help/components/segments/seg-manage.md)创建或管理的区段，该对话框的标题为&#x200B;**[!UICONTROL 新区段]**&#x200B;或&#x200B;**[!UICONTROL 编辑区段]**。
 
