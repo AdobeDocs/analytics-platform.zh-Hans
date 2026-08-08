@@ -19,10 +19,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 91cd8d3d5c290f52e4ae15713693be1fc83baa92
+source-git-commit: 55a5bc2160a7dc426b9436116362264ab9f90390
 workflow-type: tm+mt
-source-wordcount: 1058
-ht-degree: 2%
+source-wordcount: 1060
+ht-degree: 3%
 
 ---
 
@@ -81,8 +81,8 @@ ht-degree: 2%
 
   | 营销操作 | 描述 |
   |---------|----------|
-  | **[!UICONTROL Analytics]** | Analysis Workspace中的标准Customer Journey Analytics报表。 |
-  | **[!UICONTROL 数据科学]** | 高级分析、机器学习和数据科学用例。 |
+  | **[!UICONTROL 分析数据]** | Analysis Workspace 中的标准 Customer Journey Analytics 报告。 |
+  | **[!UICONTROL 数据科学数据]** | 高级分析、机器学习和数据科学用例。 |
 
 * 仅当访客与&#x200B;**所有**&#x200B;适用的同意策略匹配时才会摄取访客的数据。 如果访客缺少任何适用的策略，则会排除该访客的数据。
 

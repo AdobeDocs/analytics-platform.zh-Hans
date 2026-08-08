@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 91cd8d3d5c290f52e4ae15713693be1fc83baa92
+source-git-commit: 55a5bc2160a7dc426b9436116362264ab9f90390
 workflow-type: tm+mt
-source-wordcount: 728
+source-wordcount: 770
 ht-degree: 2%
 
 ---
@@ -62,7 +62,11 @@ ht-degree: 2%
 
 1. 选择&#x200B;**[!UICONTROL 使用数据视图]**。
 
-1. （可选）在&#x200B;**[!UICONTROL 筛选]**&#x200B;部分中，您可以为以下营销操作启用筛选：
+1. （可选）在&#x200B;**[!UICONTROL 筛选]**&#x200B;部分中，选择&#x200B;[!UICONTROL **启用筛选**]&#x200B;以筛选同意数据。
+
+   启用筛选后，仅当访客与启用的任何同意策略匹配时，Customer Journey Analytics才会摄取访客的数据。 有关详细信息，请参阅[同意报告和筛选概述](/help/connections/consent-reporting-filtering/consent-overview.md)中的[同意筛选](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering)。
+
+1. （可选）启用以下营销操作的筛选：
 
    >[!NOTE]
    >
@@ -70,8 +74,8 @@ ht-degree: 2%
 
    | 营销操作 | 描述 |
    |---------|----------|
-   | **[!UICONTROL Analytics]** | 在Analysis Workspace中过滤用于标准Customer Journey Analytics报表的数据。 |
-   | **[!UICONTROL 数据科学]** | 过滤用于高级分析、机器学习和数据科学用例的数据。 |
+   | **[!UICONTROL 分析数据]** | 在Analysis Workspace中过滤用于标准Customer Journey Analytics报表的数据。 |
+   | **[!UICONTROL 数据科学数据]** | 过滤用于高级分析、机器学习和数据科学用例的数据。 |
 
 1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以创建配置。
 
