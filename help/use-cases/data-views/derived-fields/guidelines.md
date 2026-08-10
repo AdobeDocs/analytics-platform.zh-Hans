@@ -7,27 +7,11 @@ exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
 autotag-review: '2026-05-19T11:02:42.011Z'
 TQID: 'https://experienceleague.adobe.com/k0nhhAy1CuLa7bEhu1XGqjsQdn9nEAnGb1LbMMeiCLM'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: f3ca85c1-72de-4df2-97ed-05753cd77c47
-  - id: e1471301-a189-438e-8d48-264a8db508a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: f3ca85c1-72de-4df2-97ed-05753cd77c47id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 2842
@@ -36,7 +20,7 @@ ht-degree: 1%
 ---
 
 
-# 派生字段准则
+# 派生字段指南
 
 Customer Journey Analytics [派生字段](/help/data-views/derived-fields/derived-fields.md)允许您在查询时转换、分类和扩充数据，而无需修改源数据集。 如果没有纪律性的应用，这种灵活性可能会带来复杂性、性能问题和维护开销。
 
@@ -44,11 +28,11 @@ Customer Journey Analytics [派生字段](/help/data-views/derived-fields/derive
 
 * **优化性能**：识别降低查询执行速度或达到系统限制的模式，为作业选择正确的工具：
 
-   * [派生字段](/help/data-views/derived-fields/derived-fields.md)
-   * [数据视图设置](/help/data-views/component-settings/overview.md)
-   * [数据准备](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/home)
-   * [计算量度](/help/components/calc-metrics/calc-metr-overview.md)
-   * [查找数据集](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
+  * [派生字段](/help/data-views/derived-fields/derived-fields.md)
+  * [数据视图设置](/help/data-views/component-settings/overview.md)
+  * [数据准备](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/home)
+  * [计算量度](/help/components/calc-metrics/calc-metr-overview.md)
+  * [查找数据集](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
 
 * **改进可维护性**：生成清晰、模块化且易于更新的派生字段逻辑。
 * **确保正确性**：避免分类、归因和数据转换中常见的逻辑错误。
@@ -104,9 +88,9 @@ Customer Journey Analytics为每个派生字段强制实施显式[函数和运�
 
 **模式**
 
-* 具有复杂&#x200B;**[!UICONTROL If]**&#x200B;和&#x200B;**[!UICONTROL Else If]**&#x200B;链的[&#128279;](/help/data-views/derived-fields/derived-fields.md#case-when)函数时的大小写Case：
-   * 许多条件（例如：超过20个运算符）或深层嵌套（超过3或4个级别的嵌套[Case When](/help/data-views/derived-fields/derived-fields.md#case-when) **[!UICONTROL If]**&#x200B;和&#x200B;**[!UICONTROL Else If]**&#x200B;逻辑）。
-   * 相同字段上具有不同值的重复条件。
+* 具有复杂&#x200B;**[!UICONTROL If]**&#x200B;和&#x200B;**[!UICONTROL Else If]**&#x200B;链的](/help/data-views/derived-fields/derived-fields.md#case-when)函数时的大小写[Case：
+  * 许多条件（例如：超过20个运算符）或深层嵌套（超过3或4个级别的嵌套[Case When](/help/data-views/derived-fields/derived-fields.md#case-when) **[!UICONTROL If]**&#x200B;和&#x200B;**[!UICONTROL Else If]**&#x200B;逻辑）。
+  * 相同字段上具有不同值的重复条件。
 * 重复的常量字符串匹配。
 
   +++ 示例
@@ -138,26 +122,26 @@ Customer Journey Analytics为每个派生字段强制实施显式[函数和运�
 **模式**
 
 * 派生字段复制组件设置中已有的行为：
-   * 大小写标准化、修剪或简单筛选（例如：不包括`unknown`、`undefined`或`null`），不增加复杂性。
-   * 数字范围的基本分段。
+  * 大小写标准化、修剪或简单筛选（例如：不包括`unknown`、`undefined`或`null`），不增加复杂性。
+  * 数字范围的基本分段。
 
-     +++ 示例
+    +++ 示例
 
-     ![基本分段使用错误](assets/best-practices-wrong-usage.png)
+    ![基本分段使用错误](assets/best-practices-wrong-usage.png)
 
-     +++
+    +++
 
-     请改为对数据视图中的维度使用[值分段](/help/data-views/component-settings/value-bucketing.md)。
-   * 使用[下一个或上一个](/help/data-views/derived-fields/derived-fields.md#next-or-previous)编码的持久性或归因逻辑，或数据视图[归因](/help/data-views/component-settings/attribution.md)和[到期](/help/data-views/component-settings/persistence.md)设置足以满足要求的手动序列逻辑。
-   * 一种派生的量度，它只计算某个条件下的现有量度。
+    请改为对数据视图中的维度使用[值分段](/help/data-views/component-settings/value-bucketing.md)。
+  * 使用[下一个或上一个](/help/data-views/derived-fields/derived-fields.md#next-or-previous)编码的持久性或归因逻辑，或数据视图[归因](/help/data-views/component-settings/attribution.md)和[到期](/help/data-views/component-settings/persistence.md)设置足以满足要求的手动序列逻辑。
+  * 一种派生的量度，它只计算某个条件下的现有量度。
 
-     +++ 示例
+    +++ 示例
 
-     ![条件逻辑用法错误](assets/best-practices-wrong-usage-2.png)
+    ![条件逻辑用法错误](assets/best-practices-wrong-usage-2.png)
 
-     +++
+    +++
 
-     此方法将复制筛选量度或[包括排除值](/help/data-views/component-settings/include-exclude-values.md)所能达到的目标。
+    此方法将复制筛选量度或[包括排除值](/help/data-views/component-settings/include-exclude-values.md)所能达到的目标。
 
 **风险诊断：数据质量，高维护**
 
@@ -172,8 +156,8 @@ Customer Journey Analytics为每个派生字段强制实施显式[函数和运�
 * 归因和持久性：使用维度的数据视图[持久性](/help/data-views/component-settings/persistence.md)设置（**[!UICONTROL 分配模型]**&#x200B;和&#x200B;**[!UICONTROL 到期]**），而不是在具有[下一个或上一个](/help/data-views/derived-fields/derived-fields.md#next-or-previous)或其他顺序逻辑的派生字段中模拟它们。
 * 数值分段：保留派生字段的数值，并让数据视图在顶部创建分段维度，而不是在[Case When](/help/data-views/derived-fields/derived-fields.md#case-when)链中硬编码范围标签。
 * 条件逻辑：将简单的0或1标志逻辑转换为：
-   * Analysis Workspace中应用的具有包含或排除值过滤器逻辑的原始指标。
-   * 使用数据视图组件设置配置的过滤量度。
+  * Analysis Workspace中应用的具有包含或排除值过滤器逻辑的原始指标。
+  * 使用数据视图组件设置配置的过滤量度。
 
 ## 指标和维度的分类错误
 
@@ -182,8 +166,8 @@ Customer Journey Analytics为每个派生字段强制实施显式[函数和运�
 **模式**
 
 * 派生字段会清楚地生成：
-   * 数字输出（计数、比率或算术），但组件配置为维度。
-   * 分类输出（标签或字符串），但组件配置为量度。
+  * 数字输出（计数、比率或算术），但组件配置为维度。
+  * 分类输出（标签或字符串），但组件配置为量度。
 * 派生的字段将0/1标记编码为字符串。
 
 Customer Journey Analytics允许将数值字段强制为维度，将字符串字段强制为数据视图级别的量度，但若不一致，可能会导致报表混乱。
@@ -195,10 +179,10 @@ Customer Journey Analytics允许将数值字段强制为维度，将字符串字
 **推荐**
 
 * 如果输出是数字：
-   * 在数据视图中将组件类型设置为&#x200B;**[!UICONTROL 量度]**。
-   * 如果该组件表示一个子集量度（例如，**[!UICONTROL 结账页面查看次数]**），请在数据视图中使用过滤量度，而不是使用派生字符串加上顶部计算量度。
+  * 在数据视图中将组件类型设置为&#x200B;**[!UICONTROL 量度]**。
+  * 如果该组件表示一个子集量度（例如，**[!UICONTROL 结账页面查看次数]**），请在数据视图中使用过滤量度，而不是使用派生字符串加上顶部计算量度。
 * 如果输出是标签：
-   * 将组件类型设置为&#x200B;**[!UICONTROL Dimension]**&#x200B;并相应地配置[持久性](/help/data-views/component-settings/persistence.md)设置（**[!UICONTROL 分配模型]**&#x200B;和&#x200B;**[!UICONTROL 到期]**）。
+  * 将组件类型设置为&#x200B;**[!UICONTROL Dimension]**&#x200B;并相应地配置[持久性](/help/data-views/component-settings/persistence.md)设置（**[!UICONTROL 分配模型]**&#x200B;和&#x200B;**[!UICONTROL 到期]**）。
 
 ## 营销渠道和营销活动逻辑隐患
 
@@ -212,9 +196,9 @@ Customer Journey Analytics允许将数值字段强制为维度，将字符串字
 
 * Customer Journey Analytics营销渠道通常使用派生字段实施。
 
-   * 根据URL参数、反向链接、登陆页面等实施营销渠道或营销活动分段的派生字段。
-   * 可疑排序：在应用更具体的规则之前，将显示一个通用的“全部捕获”规则。
-   * 未完成处理所有可能的选项：未设置&#x200B;**[!UICONTROL 反向链接域的显式分支]**&#x200B;或未设置&#x200B;**[!UICONTROL 查询参数]**。
+  * 根据URL参数、反向链接、登陆页面等实施营销渠道或营销活动分段的派生字段。
+  * 可疑排序：在应用更具体的规则之前，将显示一个通用的“全部捕获”规则。
+  * 未完成处理所有可能的选项：未设置&#x200B;**[!UICONTROL 反向链接域的显式分支]**&#x200B;或未设置&#x200B;**[!UICONTROL 查询参数]**。
 
 **风险诊断：数据质量**
 
@@ -301,8 +285,8 @@ Customer Journey Analytics允许将数值字段强制为维度，将字符串字
 **风险诊断：数据质量**
 
 * 治理和设计问题：算法可能更适合：
-   * 派生字段量度（如果您希望派生字段作为所有用户的受管标准量度）。
-   * Analysis Workspace中的计算量度（如果计算量度特定于分析）。
+  * 派生字段量度（如果您希望派生字段作为所有用户的受管标准量度）。
+  * Analysis Workspace中的计算量度（如果计算量度特定于分析）。
 
 **推荐**
 
@@ -340,8 +324,8 @@ Customer Journey Analytics允许将数值字段强制为维度，将字符串字
 
 * 派生字段隐式假定特定[容器级别](/help/getting-started/cja-b2b-concepts-features.md#containers)（事件、会话或人员），但：
 
-   * 派生字段不引用会话或人员级别属性。
-   * 数据视图会话设置与预期逻辑冲突。
+  * 派生字段不引用会话或人员级别属性。
+  * 数据视图会话设置与预期逻辑冲突。
 
 **风险诊断：数据质量**
 
