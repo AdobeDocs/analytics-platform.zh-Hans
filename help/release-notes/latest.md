@@ -27,10 +27,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: b73d8eb73b0b65ca94f42d86b12cdfcc1ed99159
+source-git-commit: 07846fea9f2d7fd966bcd924025aeae0c157cf9e
 workflow-type: tm+mt
-source-wordcount: 975
-ht-degree: 28%
+source-wordcount: 910
+ht-degree: 30%
 
 ---
 
@@ -48,7 +48,6 @@ ht-degree: 28%
 | **支持其他数据使用标签**<br> Customer Journey Analytics现在支持数据集内元素的以下其他数据使用标签：<ul><li>C2 — 限制第三方数据导出（现在可用）</li><li>C3 — 限制可直接识别的数据组合（现在可用）</li><li>C9 — 限制数据科学（计划于8月或9月发布）</li></ul><p>有关详细信息，请参阅[标签、策略和营销操作](/help/data-views/data-governance.md)。</p> | | 2026年8月或9月 |
 | **同意策略筛选和报告**<br>&#x200B;您现在可以报告哪些访客与您的Adobe Experience Platform同意策略匹配。 （同意策略维度和量度会添加到连接中的数据视图。）<p>此外，您可以先排除非同意访客，然后再将其数据摄取到Customer Journey Analytics。</p><p>有关更多信息，请参阅同意报表和筛选概述。</p> | | 2026年8月 |
 | **Content Analytics：付费媒体数据** <br/>付费媒体现已作为Content Analytics的第三个渠道提供。<p>（文档链接见下文。）</p> | | 2026年8月31日 |
-| **Migration Planner： Adobe Analytics到Customer Journey Analytics**<br> Migration Planner提供了一个迁移向导，可自动执行与从Adobe Analytics升级到Customer Journey Analytics相关的一些最复杂和耗时的任务，包括XDM架构创建和从AppMeasurement或Analytics扩展（标记）迁移到Experience Platform Web SDK。 <p>（文档链接见下文。）</p> | | 2026年8月底或9月底 |
 | **B2B：人员到帐户拼接**<br> B2B帐户拼接使用帐户信息丰富了您的事件数据集，并支持在Customer Journey Analytics中跨整个客户历程进行完整分析。 <p>当事件缺少帐户ID（Customer Journey Analytics B2B edition摄取时需要帐户ID）时，帐户拼接将使用您提供的人员到帐户映射数据集自动派生和添加该信息。</p><p>（文档链接见下文。）</p> | | 2026年8月底或9月底 |
 | **CJA报表API首次调用指南**<br> Adobe Customer Journey Analytics API首次调用指南提供了配置基本报表请求的说明和示例。 | | 2026年8月10日 |
 | **CJA报表API日期趋势指南**<br> Adobe Customer Journey Analytics API日期趋势指南提供了配置基本报表请求的说明和示例。 | | 2026年8月17日 |
