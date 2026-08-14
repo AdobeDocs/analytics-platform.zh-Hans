@@ -27,10 +27,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 07846fea9f2d7fd966bcd924025aeae0c157cf9e
+source-git-commit: 3d3015ac59eefd5bd5e948996b2880310332a5e1
 workflow-type: tm+mt
-source-wordcount: 910
-ht-degree: 30%
+source-wordcount: 989
+ht-degree: 27%
 
 ---
 
@@ -45,6 +45,7 @@ ht-degree: 30%
 | 功能和描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | -----------|-----------|-----------|
 | **历程画布增强功能**<br>&#x200B;现已提供以下历程画布增强功能：<ul><li>将历程与先前的时间范围进行比较。 将当前历程与4周前、2个季度前、1年前或自定义日期范围前的历程进行比较。</li><li>对于所选节点，显示历程中任意时间点上所选节点之后排名最前的维度项目。 当所选节点是分析中的关键事件，并且您想要查看用户随后在任何时候执行的操作时，可使用此选项。<p>以前，只有顶级的直接节点才能显示在选定节点之前或之后。 </p></li><li>更改节点之间箭头的形状和样式。 在节点之间拖动箭头可更改箭头的形状（曲率），右键单击箭头可将其样式更改为下列任一类型：实线、虚线、点线、虚线点或动画。</li></ul><p></p>有关详细信息，请参阅[配置历程画布可视化图表](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。 |  | 2026年8月18日 |
+| **将区段限制为报表日期范围**<br/>&#x200B;当区段包含日期范围组件时，Workspace报表中的数据可能会超出报表日期范围。<p>现在提供了一个新选项，通过该选项可将结果限制为报表日期范围，而不管该区段中包含的任何日期组件如何。 <p>创建或修改顶级容器为“人员”的区段时，此选项可用。</p><p>有关详细信息，请参阅[生成区段](/help/components/segments/seg-builder.md#components)。</p> | 2026年8月26日 | 2026年9月9日 |
 | **支持其他数据使用标签**<br> Customer Journey Analytics现在支持数据集内元素的以下其他数据使用标签：<ul><li>C2 — 限制第三方数据导出（现在可用）</li><li>C3 — 限制可直接识别的数据组合（现在可用）</li><li>C9 — 限制数据科学（计划于8月或9月发布）</li></ul><p>有关详细信息，请参阅[标签、策略和营销操作](/help/data-views/data-governance.md)。</p> | | 2026年8月或9月 |
 | **同意策略筛选和报告**<br>&#x200B;您现在可以报告哪些访客与您的Adobe Experience Platform同意策略匹配。 （同意策略维度和量度会添加到连接中的数据视图。）<p>此外，您可以先排除非同意访客，然后再将其数据摄取到Customer Journey Analytics。</p><p>有关更多信息，请参阅同意报表和筛选概述。</p> | | 2026年8月 |
 | **Content Analytics：付费媒体数据** <br/>付费媒体现已作为Content Analytics的第三个渠道提供。<p>（文档链接见下文。）</p> | | 2026年8月31日 |
