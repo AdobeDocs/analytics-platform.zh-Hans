@@ -23,10 +23,10 @@ topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 1254207526535e44c848dfeed0052339fbd8d65d
+source-git-commit: 0b6dc1d738b5f1a8aa430c990f8eb24df5d95653
 workflow-type: tm+mt
-source-wordcount: 745
-ht-degree: 66%
+source-wordcount: 770
+ht-degree: 65%
 
 ---
 
@@ -95,7 +95,9 @@ Experience Platform中提供了五个Adobe定义的策略，这些策略可能�
 
 ## 启用的策略如何影响数据视图
 
-如果一个或多个策略使用C1、C2、C3、C8、C9或C12标签打开，则无法将应用了某些数据标签的架构组件添加到数据视图。
+如果使用C3或C8打开一个或多个策略，则无法将应用了某些数据标签的架构组件添加到数据视图。
+
+如果通过C9打开一个或多个策略，则标记为C9的任何架构组件将不可用于[Analytics MCP服务器](https://developer.adobe.com/analytics-mcp/docs/)。
 
 这些组件在左边栏 [!UICONTROL 架构字段] 列表中显示为灰色：
 
