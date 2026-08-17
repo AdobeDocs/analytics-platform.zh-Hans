@@ -26,9 +26,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: e686fca2c77a8f9739298ece01ccf0fa2fe87b3b
+source-git-commit: d2016e34b4b73c6eebb05097aa43f823c578c2b6
 workflow-type: tm+mt
-source-wordcount: 2441
+source-wordcount: 2440
 ht-degree: 9%
 
 ---
@@ -109,7 +109,7 @@ ht-degree: 9%
 | 受众刷新频率 | 4 | 系统强制的护栏 | 可以刷新[受众](../components/audiences/audiences-overview.md)的最大频率（小时）。 |
 | 受众刷新回顾窗口 | 90 | 系统强制的护栏 | 刷新回顾时间范围的最大天数。 |
 | 刷新受众过期日期 | 13 | 系统强制的护栏 | 受众从创建日期起停止刷新的最大月数。 客户可以将其延长13个月。 |
-| 刷新受众的数量 | 75, 150 | 系统强制的护栏 | 刷新受众的最大数量。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
+| 刷新受众的数量 | 75 - 150 | 系统强制的护栏 | 配置为按计划频率刷新[&#128279;](/help/components/audiences/publish.md#audience-builder)的受众的最大数目（一次性刷新不计入此限制）。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
 
 {style="table-layout:auto"}
 
@@ -301,7 +301,7 @@ ht-degree: 9%
 | 拼接（可选功能；有关详细信息，请参阅[拼接概述](../stitching/overview.md)） | &lt; 4小时 |
 | 少于100亿个事件的Adobe Analytics Source Connector回填（最多13个月的历史数据） | &lt; 4周 |
 | 将受众发布到实时客户个人资料，包括自动创建流区段，并允许区段准备好接收数据。 | ≈ 60分钟 |
-| 刷新受众的频率 | 一次性刷新：少于5分钟的延迟。<br/>每4小时刷新一次，每天、每周、每月（延迟与刷新率密切相关）。 |
+| 刷新受众的频率 | 每4小时刷新一次，每天、每周、每月。 |
 
 | 实时报告延迟 | 预期延迟 |
 |---|---|

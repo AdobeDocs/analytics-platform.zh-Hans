@@ -33,10 +33,10 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 2f745f65808e47fd6c0862fe23b6de6ca12ecfff
+source-git-commit: e2ec268ef4a2d84d51089e7b59b3df5b0ad6f48d
 workflow-type: tm+mt
-source-wordcount: 6984
-ht-degree: 99%
+source-wordcount: 7019
+ht-degree: 98%
 
 ---
 
@@ -49,6 +49,8 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 
 | 功能 | 描述 |
 |---|---|
+| **2026年8月** | |
+| 明确了有关刷新受众的信息 | 当[发布受众](/help/components/audiences/publish.md#audience-builder)时，说明了可以计划刷新的受众数量取决于您的Customer Journey Analytics授权，介于75和150之间。 |
 | **2026年7月** | |
 | 品牌可见度入站集成 | 有关[品牌可见度入站集成](/help/integrations/bv.md#inbound-integration)的文档。 |
 | 使用界面 | 对连接的[使用接口](/help/connections/manage-connections.md#usage)文档的更新。 |
