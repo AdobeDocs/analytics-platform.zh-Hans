@@ -27,9 +27,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: f4e142a3eb5294cedd6d9e6666845dadcfcc415d
+source-git-commit: 89f0a1e54662c59d474b1fba28eb8420612e9243
 workflow-type: tm+mt
-source-wordcount: 21144
+source-wordcount: 21140
 ht-degree: 98%
 
 ---
@@ -624,8 +624,8 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 
 >[!CONTEXTUALHELP]
 >id="template--consentpolicyoverview"
->title="查看访问该网站的人员来自哪个国家或地区。"
->abstract="**这可以帮助您**&#x200B;更好地了解访问您网站的用户主要来自哪些国家或地区。<br/>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如利用这些数据来聚焦在这些国家的营销努力，或者确保您的网站体验在主要语言不同的国家中达到最优。<br/>此模板使用“国家/地区”维度。"
+>title="查看来自Adobe Experience Platform的同意策略成员资格数据的访客。"
+>abstract="**这可以帮助您**&#x200B;作为报告访客同意策略成员资格的起点。 当为同意报表配置数据视图时，Customer Journey Analytics会自动在Analysis Workspace中提供同意策略分析模板。 <br/>**根据您了解的情况，您可以**&#x200B;执行任意数量的操作，例如从Analytics报表中排除非同意的访客。"
 
 >[!CONTEXTUALHELP]
 >id="template--countrygeoreport"
