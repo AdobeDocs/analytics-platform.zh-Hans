@@ -6,28 +6,15 @@ feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
 TQID: https://experienceleague.adobe.com/7Bqz2dh9v-BhLey5fWNjnQkgFAXQd3QDnTzz8rd7BFA
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: c7fc5df2a0fd7393b48bfe6bdfa7dccdfffde46c
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+source-git-commit: f62c202f92ffc842a9abe2a91bec5231a606f67c
 workflow-type: tm+mt
-source-wordcount: 3268
-ht-degree: 59%
+source-wordcount: 3275
+ht-degree: 58%
 
 ---
 
@@ -77,7 +64,7 @@ ht-degree: 59%
 >[!CONTEXTUALHELP]
 >id="cja-export-details"
 >title="详细信息"
->abstract="指定导出内容的名称。 您还可以添加描述和标签。 此信息有助于您在导出表格和电子邮件通知中识别该导出任务。"
+>abstract="指定导出内容的名称。 您还可以添加描述和标签。 此信息有助于您在导出任务表和电子邮件通知中识别该导出任务。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -157,17 +144,17 @@ ht-degree: 59%
    | 描述 | 为导出内容添加描述。 在查看导出内容时，您可以选择在[导出页面](/help/components/exports/manage-exports.md)中将描述内容视为一列进行查看。 |
    | 数据视图 | 选择包含您想要在导出内容中加入的组件的数据视图。 ![数据](/help/assets/icons/Data.svg)数据视图下拉菜单位于对话框的左上角。  <p>**注意：**&#x200B;如果选择的数据视图缺少已包含在数据表中的组件，则系统会提示您清除并使用选定数据视图中包含的组件重新创建面板。 </p> |
    | 数据结构 | 显示您正在导出的自由格式表。 您可以通过将组件从左侧面板拖动到表格中来调整数据结构。 您可以将组件拖动到筛选区域以应用筛选条件。 当您向画布添加组件时，该表会动态更新。 您最多可以包含10列。<p>应用于项目中完整表格的任何区段都会显示在表格上方。 您可以将区段或区段组应用到导出。</p> |
-   | 报告窗口 | 选择要包含在每个导出文件中的报告时间范围。 相关选项包括&#x200B;[!UICONTROL **今天**]、**[!UICONTROL 昨天、]**&#x200B;**[!UICONTROL 过去 7 天]**、**[!UICONTROL 过去 30 天]**、**[!UICONTROL 本星期]**&#x200B;和&#x200B;**[!UICONTROL 本月]**。 <p>当&#x200B;**[!UICONTROL 导出频率]**&#x200B;设置为&#x200B;**[!UICONTROL 立即发送（一次性）]**&#x200B;时，不显示此选项。</p> |
+   | 报告窗口 | 选择要包含在每个导出文件中的报告时间范围。 相关选项包括&#x200B;[!UICONTROL **今天**]、**[!UICONTROL 昨天、]****[!UICONTROL 过去 7 天]**、**[!UICONTROL 过去 30 天]**、**[!UICONTROL 本星期]**&#x200B;和&#x200B;**[!UICONTROL 本月]**。 <p>当&#x200B;**[!UICONTROL 导出频率]**&#x200B;设置为&#x200B;**[!UICONTROL 立即发送（一次性）]**&#x200B;时，不显示此选项。</p> |
    | 全部清除 | 清除数据表的内容。 这样您就可以直接在新的完整表格导出对话框中开始构建新表。 |
    | 文件格式 | 选择导出的数据应采用.csv、.json还是.parquet格式。 <p>当选择Parquet文件格式时，组件名称中包含的以下任何字符都将替换为下划线(_)： <ul><li>&#39; &#39; - ASCII空间</li><li>&#39;，&#39; - ASCII逗号</li><li>&#39;；&#39; - ASCII冒号</li><li>&#39;{&#39;或&#39;}&#39; - ASCII左大括号</li><li>&#39;（&#39;或&#39;）&#39; - ASCII左括号/右括号</li><li>&#39;\n&#39; - ASCII换行符</li><li>“\t” — ASCII选项卡</li><li>&#39;=&#39; - ASCII等于</li></ul></p> |
    | 包含清单文件 | 启用后，任何成功的导出传递都会包含一份清单文件。 <p>您可以使用清单文件确认所有文件均已成功传送。 它包含以下信息：</p> <ul><li>已传递的所有文件的列表</li><li>每个文件的 MD5 校验和</li></ul><p>导出的数据以压缩文件的形式存储在您配置的云目标中，如[配置云导出账户](/help/components/exports/cloud-export-accounts.md)和[配置云导出位置](/help/components/exports/cloud-export-locations.md)中所述。</p><p>压缩文件的文件名如下，具体取决于您选择&#x200B;**[!UICONTROL csv]**、**[!UICONTROL json]**&#x200B;还是&#x200B;**[!UICONTROL parquet]**&#x200B;作为文件格式：</p><ul> <li>`cja-export-{reportInstanceId}-{idx}.csv.gz`</li><li>`cja-export-{reportInstanceId}-{idx}.json.gz`</li><li>`cja-export-<instanceId>-<idx>.snappy.parquet`<p>parquet文件中的每一列都经过压缩。</p></li></ul><p>在上面的&#x200B;**[!UICONTROL 文件格式]**&#x200B;字段中选择文件格式。</p> |
-   | 频率 | 设置导出的频率。 <p>您可以选择&#x200B;[!UICONTROL **立即发送（一次性）**]&#x200B;只发送一次导出内容。 当您选择此选项时，会立即启动导出。</p><p>或者，您可以选择按定义的计划发送导出内容。 当按计划发送时，相关选项包括&#x200B;**[!UICONTROL 每天]**、**[!UICONTROL 每周]**、**[!UICONTROL 每月按星期几]**、**[!UICONTROL 每月按一个月中的某一天]**、**[!UICONTROL 每年按一个月中的某一天]**&#x200B;和&#x200B;**[!UICONTROL 每年按特定日期]**。 </p> <p>选择导出频率时，请考虑以下因素：</p><ul><li>**[!UICONTROL 回顾窗口]**&#x200B;字段中的选项会根据您在此处选择的内容而更改。</li><li>根据您选择的选项，将显示其他配置字段。</li></ul> |
+   | 频率 | 设置导出的频率。 <p>您可以选择&#x200B;[!UICONTROL **立即发送（一次性）**]&#x200B;只发送一次导出内容。 当您选择此选项时，会立即启动导出。</p><p>或者，您可以选择按定义的计划发送导出。 当按计划发送时，相关选项包括&#x200B;**[!UICONTROL 每天]**、**[!UICONTROL 每周]**、**[!UICONTROL 每月按星期几]**、**[!UICONTROL 每月按一个月中的某一天]**、**[!UICONTROL 每年按一个月中的某一天]**&#x200B;和&#x200B;**[!UICONTROL 每年按特定日期]**。 </p> <p>选择导出频率时，请考虑以下因素：</p><ul><li>**[!UICONTROL 回顾窗口]**&#x200B;字段中的选项会根据您在此处选择的内容而更改。</li><li>根据您选择的选项，将显示其他配置字段。</li></ul> |
    | 开始日期 | 计划导出开始的日期和时间。 <p>仅当选择计划导出频率时此选项才可用。</p> |
    | 结束时间 | 计划导出的到期日期和时间。 计划导出在您设置的日期和时间过后不再运行。 <p>仅当选择计划导出频率时此选项才可用。</p> |
    | 查看所有用户的目标 | 系统管理员可以选择此选项，以查看所有帐户和位置，而不管这些帐户和位置是由谁创建的。 |
-   | 帐户 | 选择您想要发送数据的云导出账户。 <p>或者，如果您尚未配置要使用的云帐户，则可以配置一个新帐户：<ol><li>在&#x200B;**[!UICONTROL 帐户]**&#x200B;下拉菜单中，选择&#x200B;**[!UICONTROL 添加帐户]**，然后指定以下信息：<ul><li>**[!UICONTROL 位置帐户名称]**：指定位置账户的名称。 此名称会在创建位置时出现 </li><li>**[!UICONTROL 位置账户描述]**：提供帐户的简短描述，以帮助将它与同一帐户类型的其他帐户区分开来。</li><li>**使帐户对贵组织的所有用户都可用**：如果要允许贵组织中的其他用户使用该帐户，请选择此选项。</li><li>**[!UICONTROL 帐户类型]**：选择您要导出到的云帐户类型。 可用的帐户类型包括 Amazon S3 Role ARN、Google Cloud Platform、Azure SAS、Azure RBAC、Snowflake 和 AEP Data Landing Zone。</li></ul><li>要完成帐户配置，请继续访问下面与您选择的&#x200B;**[!UICONTROL 帐户类型]**&#x200B;相对应的链接：<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-accounts.md#snowflake)</li></ul></ol> |
-   | 位置 | 在帐户上选择要发送导出数据的位置。<p>或者，如果您尚未配置要使用的云帐户，则可以配置一个新帐户：<ol><li>在&#x200B;**[!UICONTROL 位置]**&#x200B;下拉菜单中，选择&#x200B;**[!UICONTROL 添加位置]**，然后指定以下信息：<ul><li>**[!UICONTROL 名称：]**&#x200B;位置的名称。</li><li>**[!UICONTROL 描述]**：提供位置的简短描述，以帮助将它与帐户上的其他位置区分开来。</li><li>**使位置对贵组织的所有用户都可用**：如果要允许贵组织中的其他用户使用该位置，请选择此选项。</li><li>**[!UICONTROL 位置帐户]**：选择要在其中创建位置的帐户。</li></ul><li>要完成位置配置，请继续使用下面与您在&#x200B;**[!UICONTROL 位置帐户]**&#x200B;字段中选择的帐户类型相对应的链接：<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone)。</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
-   | 通知 | 添加用户和用户组，以便在导出失败或即将过期时接收通知。 开始键入用户的名称或电子邮件地址，或开始键入组的名称，然后将其添加到下拉列表中。 |
+   | 帐户 | 选择您想要发送数据的云导出帐户。 <p>或者，如果您尚未配置要使用的云帐户，则可以配置一个新帐户：<ol><li>在&#x200B;**[!UICONTROL 帐户]**&#x200B;下拉菜单中，选择&#x200B;**[!UICONTROL 添加帐户]**，然后指定以下信息：<ul><li>**[!UICONTROL 位置帐户名称]**：指定位置账户的名称。 此名称会在创建位置时出现 </li><li>**[!UICONTROL 位置账户描述]**：提供帐户的简短描述，以帮助将它与同一帐户类型的其他帐户区分开来。</li><li>**使帐户对贵组织的所有用户都可用**：如果要允许贵组织中的其他用户使用该帐户，请选择此选项。</li><li>**[!UICONTROL 帐户类型]**：选择您要导出到的云帐户类型。 可用的帐户类型包括 Amazon S3 Role ARN、Google Cloud Platform、Azure SAS、Azure RBAC、Snowflake 和 AEP Data Landing Zone。</li></ul><li>要完成帐户配置，请继续访问下面与您选择的&#x200B;**[!UICONTROL 帐户类型]**&#x200B;相对应的链接：<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-accounts.md#snowflake)</li></ul></ol> |
+   | 位置 | 选择帐户中要将导出数据发送到的位置。<p>或者，如果您尚未配置要使用的云帐户，则可以配置一个新帐户：<ol><li>在&#x200B;**[!UICONTROL 位置]**&#x200B;下拉菜单中，选择&#x200B;**[!UICONTROL 添加位置]**，然后指定以下信息：<ul><li>**[!UICONTROL 名称：]**&#x200B;位置的名称。</li><li>**[!UICONTROL 描述]**：提供位置的简短描述，以帮助将它与帐户上的其他位置区分开来。</li><li>**使位置对贵组织的所有用户都可用**：如果要允许贵组织中的其他用户使用该位置，请选择此选项。</li><li>**[!UICONTROL 位置帐户]**：选择要在其中创建位置的帐户。</li></ul><li>要完成位置配置，请继续使用下面与您在&#x200B;**[!UICONTROL 位置帐户]**&#x200B;字段中选择的帐户类型相对应的链接：<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone)。</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
+   | 完成或到期时通知问题 | 添加用户和用户组，以便在导出失败或即将过期时接收通知。 开始键入用户的名称或电子邮件地址，或开始键入组的名称，然后将其添加到下拉列表中。 |
 
    {style="table-layout:auto"}
 
@@ -406,11 +393,11 @@ ht-degree: 59%
 
 如果在报表中使用非默认归因模型，则忽略或保留报表中使用的分配模型，具体取决于报表是具有一个维度还是多个维度：
 
-* **对于在单个维度中包含量度归因的报告：**&#x200B;[量度归因](/help/data-views/component-settings/attribution.md)会覆盖[分配模型](/help/data-views/component-settings/persistence.md)，就像使用量度归因时通常进行的操作一样。
+* **对于在单个维度中包含量度归因的报告：**[量度归因](/help/data-views/component-settings/attribution.md)会覆盖[分配模型](/help/data-views/component-settings/persistence.md)，就像使用量度归因时通常进行的操作一样。
 
   例如，“首次接触”量度归因会覆盖“最近”维度分配。
 
-* **对于同时包含多个维度的量度归因的报告：除了维度[分配模型](/help/data-views/component-settings/persistence.md)外，还应用了**&#x200B;[量度归因](/help/data-views/component-settings/attribution.md)。
+* **对于同时包含多个维度的量度归因的报告：除了维度[分配模型](/help/data-views/component-settings/persistence.md)外，还应用了**[量度归因](/help/data-views/component-settings/attribution.md)。
 
   例如，除了“最近”维度分配之外，还会应用“首次接触”量度归因。 此外，量度归因会像对单个维度项目一样，应用于后分配的维度项目对，而不是像通常在自由格式表中那样单独应用于每个维度项目。
 
@@ -424,7 +411,7 @@ ht-degree: 59%
 
 | 功能 | Customer Journey Analytics 中的完整表格导出 | Adobe Analytics 中的 Data Warehouse |
 |---------|----------|---------|
-| 生成自定义报告 | 是 | 是 |
+| 构建自定义报告 | 是 | 是 |
 | 计算量度 | 是 | 否 |
 | 区段 | 是 | 有限制 |
 | 维度 | 限 10 个 | 无限制 |

@@ -7,22 +7,15 @@ hide: true
 exl-id: 991a7861-cbde-4d55-935c-d56c8031853e
 autotag-review: '2026-05-19T08:45:11.428Z'
 TQID: 'https://experienceleague.adobe.com/TO8lEW8-GE-sIGj3vmm0X1zCgpg-0VpS1wjs0-HQjg8'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 66a8a96da6710d20b01b9315fe87ba38c54c2511
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: de8748a1dddbc0ddaadca4c805c9b4aba99a4267
 workflow-type: tm+mt
-source-wordcount: 221
-ht-degree: 21%
+source-wordcount: 230
+ht-degree: 20%
 
 ---
 
@@ -30,7 +23,7 @@ ht-degree: 21%
 
 {{release-limited-testing}}
 
-数据馈送是从Customer Journey Analytics中获取原始数据的有效方法。 您可以根据贵组织的决定，在Adobe以外的其他平台中使用此原始数据。 数据在每小时结束时以小时为单位分批发送，或者在每天结束时以天为单位分批发送。
+数据馈送是从Customer Journey Analytics中获取原始数据的有效方法。 您可以根据贵组织的决定，在Adobe以外的其他平台中使用此原始数据。 数据会在每小时结束时按小时批次交付，或者在每天结束时按天批次交付。
 
 ## 先决条件
 
@@ -45,6 +38,8 @@ ht-degree: 21%
 要开始在Customer Journey Analytics中使用数据馈送，请首先了解Customer Journey Analytics中的数据馈送与Adobe Analytics中的数据馈送有何不同。 了解这些差异后，您可以将Adobe Analytics数据馈送映射到Customer Journey Analytics，然后开始创建数据馈送。
 
 1. [了解Customer Journey Analytics和Adobe Analytics中的数据馈送之间的差异](/help/components/exports/cja-data-feeds/df-comparison.md)。
+
+1. [了解数据馈送与Analysis Workspace之间的数据差异](/help/components/exports/cja-data-feeds/df-comparison-workspace.md)。
 
 1. [将Adobe Analytics数据馈送列映射到Customer Journey Analytics](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)。
 
