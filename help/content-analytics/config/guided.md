@@ -25,10 +25,10 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 6af3e9063dc192814c888e786ca61ff1703aedf5
+source-git-commit: 6c137d20d25cff6fe4630dedb33cfa8b88c121aa
 workflow-type: tm+mt
-source-wordcount: 4177
-ht-degree: 65%
+source-wordcount: 4186
+ht-degree: 64%
 
 ---
 
@@ -84,12 +84,12 @@ ht-degree: 65%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_button"
 >title="详细信息"
->abstract="提供该连接的名称。 在&#x200B;**[!UICONTROL 数据视图]**、**[!UICONTROL 体验捕捉和定义]**&#x200B;以及&#x200B;**[!UICONTROL 数据收集]**&#x200B;部分中，您可以提供更多资料，以确保可以正确配置 Content Analytics。"
+>abstract="提供该连接的名称。 提供配置的名称，然后选择包含要分析的内容分析数据的沙盒。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="详细信息"
->abstract="本指南列出了配置 Content Analytics 所需的必要条件。 请为此配置提供名称"
+>abstract="本指南列出了配置 Content Analytics 所需的必要条件。 请提供此配置的名称并选择包含要分析的内容分析数据的沙盒。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_boldheader"
@@ -101,13 +101,13 @@ ht-degree: 65%
 >title="连接"
 >abstract="从 Customer Journey Analytics 中选择一个您希望将 Content Analytics 数据与之合并的现有连接。"
 
-每个配置都需要一个唯一的名称。 例如：`Example Content Analytics configuration`。 需要名称进行保存或实施配置。
+每个配置都需要一个唯一名称。 例如：`Example Content Analytics configuration`。 保存或实施配置都需要名称。
 
 对于每个配置，您还需要选择要为其配置Content Analytics的沙盒。
 
 ![Content Analytics 配置详情](../assets/aca-configuration-details.png)
 
-* **[!UICONTROL 名称]**：每个配置都需要一个唯一的名称。 例如：`Example Content Analytics configuration`。 需要名称进行保存或实施配置。
+* **[!UICONTROL 名称]**：每个配置都需要一个唯一的名称。 例如：`Example Content Analytics configuration`。 保存或实施配置需要名称。
 
 * **[!UICONTROL 沙盒]**：配置需要沙盒。 从您有权访问的沙盒列表中选择一个沙盒，并在该沙盒上收集要用于Content Analytics的数据。
 
@@ -297,17 +297,17 @@ ht-degree: 65%
 
 * 使用现有的移动标记属性或创建新的移动标记属性。
 
-   * 要使用现有的移动标记属性，请执行以下操作：
+  * 要使用现有的移动标记属性，请执行以下操作：
 
-      1. 选择&#x200B;**[!UICONTROL 选择现有的]**。
-      2. 从&#x200B;**[!UICONTROL 标记属性]**&#x200B;下拉菜单中选择一个现有的属性。 您可以开始输入进行搜索，并限制可用的选项。 您不能选择另一个已实施Content Analytics配置已使用的Tags属性。
+    1. 选择&#x200B;**[!UICONTROL 选择现有的]**。
+    2. 从&#x200B;**[!UICONTROL 标记属性]**&#x200B;下拉菜单中选择一个现有的属性。 您可以开始输入，以搜索并缩小可用选项范围。 您不能选择另一个已实施Content Analytics配置已使用的Tags属性。
 
 
-   * 要创建新的移动标记属性，请执行以下操作：
+  * 要创建新的移动标记属性，请执行以下操作：
 
-      1. 选择&#x200B;**[!UICONTROL 新建]**。
-      1. 指定一个&#x200B;**[!UICONTROL 标记名称]**，例如 `ACA Test for Documentation`。
-      1. 指定&#x200B;**[!UICONTROL 域]**，例如，`example.com`。
+    1. 选择&#x200B;**[!UICONTROL 新建]**。
+    1. 指定一个&#x200B;**[!UICONTROL 标记名称]**，例如 `ACA Test for Documentation`。
+    1. 指定&#x200B;**[!UICONTROL 域]**，例如，`example.com`。
 
 * 指示在为Content Analytics收集数据时应排除哪些体验位置。 请确保排除能够识别个人身份的体验位置。
 
@@ -376,7 +376,7 @@ ht-degree: 65%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_button"
 >title="数据收集"
->abstract="定义您想要使用的标记属性，或者创建一个新的标记属性。 并使用正则表达式定义那些您想要包含或排除的页面和资产。<br/>对于与标签无关的实施方式，请选择&#x200B;**[!UICONTROL 新建]**。  系统会创建一个“标记”属性，但您无需使用它。"
+>abstract="定义您想要使用的标记属性，或者创建一个新的标记属性。 并使用正则表达式定义您想要包含或排除的页面和资产。<br/>对于与标签无关的实施方式，请选择&#x200B;**[!UICONTROL 新建]**。  系统会创建一个“标记”属性，但您无需使用它。"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Content Analytics JavaScript 库"
 
 
@@ -452,7 +452,7 @@ ht-degree: 65%
 
 仅在以下情况适用时才考虑包含体验：
 
-* 网站上的页面必须能够通过页面 URL 重复出现。
+* 网站上的页面必须能够通过页面 URL 重现。
 * 任何给定用户看到的文本内容都可以使用页面 URL 重复出现，并且不取决于 cookie 或其他个性化机制。
 
 >[!IMPORTANT]
@@ -467,7 +467,7 @@ ht-degree: 65%
 
 ![Content Analytics 配置，体验捕获和定义](../assets/aca-configuration-experience.png)
 
-1. 启用&#x200B;**[!UICONTROL 包括体验]**。 切换启用体验的操作会影响以下方面：
+1. 启用&#x200B;**[!UICONTROL 包括体验]**。 用于启用体验的切换开关会影响以下方面：
 
    * Content Analytics 扩展中的数据收集
    * 从 Content Analytics 事件数据生成体验属性的过程
@@ -489,8 +489,8 @@ ht-degree: 65%
 
 * 切换启用或禁用&#x200B;**[!UICONTROL 包含体验]**：
 
-   * 从 Content Analytics 事件数据生成体验属性的过程
-   * Customer Journey Analytics 中的报告模板。
+  * 从 Content Analytics 事件数据生成体验属性的过程
+  * Customer Journey Analytics 中的报告模板。
 
 * 选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**&#x200B;以进一步编辑Content Analytics中体验的数据收集配置。 您在与当前配置相关联的标记属性中被重定向到 [Adobe Content Analytics 扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)。
 
@@ -502,19 +502,19 @@ ht-degree: 65%
 
 * 使用现有的Web标记属性或创建新的Web标记属性。
 
-   * 要使用现有Web标记属性，请执行以下操作：
+  * 要使用现有Web标记属性，请执行以下操作：
 
-      1. 选择&#x200B;**[!UICONTROL 选择现有的]**。
-      2. 从&#x200B;**[!UICONTROL 标记属性]**&#x200B;下拉菜单中选择一个现有的属性。 您可以开始输入进行搜索，并限制可用的选项。 您不能选择另一个已实施Content Analytics配置已使用的Tags属性。
+    1. 选择&#x200B;**[!UICONTROL 选择现有的]**。
+    2. 从&#x200B;**[!UICONTROL 标记属性]**&#x200B;下拉菜单中选择一个现有的属性。 您可以开始输入，以搜索并缩小可用选项范围。 您不能选择另一个已实施Content Analytics配置已使用的Tags属性。
 
 
-   * 要创建新的Web标记属性，请执行以下操作：
+  * 要创建新的Web标记属性，请执行以下操作：
 
-      1. 选择&#x200B;**[!UICONTROL 新建]**。
-      1. 指定一个&#x200B;**[!UICONTROL 标记名称]**，例如 `ACA Test for Documentation`。
-      1. 指定&#x200B;**[!UICONTROL 域]**，例如，`example.com`。
+    1. 选择&#x200B;**[!UICONTROL 新建]**。
+    1. 指定一个&#x200B;**[!UICONTROL 标记名称]**，例如 `ACA Test for Documentation`。
+    1. 指定&#x200B;**[!UICONTROL 域]**，例如，`example.com`。
 
-     如果要使用[Content Analytics Javascript库](/help/content-analytics/config/tags-agnostic.md)为Web渠道创建与标记无关的实现，请使用新的Tags属性。 将创建Tags属性，但您将不会在不可知的实施中使用属性。 但是，不确定的实施要求您至少运行一次引导式配置向导。
+    如果要使用[Content Analytics Javascript库](/help/content-analytics/config/tags-agnostic.md)为Web渠道创建与标记无关的实现，请使用新的Tags属性。 将创建Tags属性，但您将不会在不可知的实施中使用属性。 但是，不确定的实施要求您至少运行一次引导式配置向导。
 
 * 表示在为 Content Analytics 收集数据时应包含或排除哪些页面。 请确保排除能够识别个人身份的页面。
 
@@ -561,7 +561,7 @@ ht-degree: 65%
 
 ### 摘要 {#summary}
 
-在提供了所有必要的详细信息后，摘要中会提供有关创建或修改的构件的详细信息。
+在提供了所有必要的详细信息后，摘要中会提供有关创建或修改的工件的详细信息。
 
 * 在实施新配置时，您会看到&#x200B;**[!UICONTROL “您即将准备好为 Content Analytics 实施&#x200B;_配置名称_”]**&#x200B;的摘要。
 
@@ -582,24 +582,24 @@ ht-degree: 65%
 * **[!UICONTROL 保存以供未来使用]**：对配置所做的更改已保存。 您可以在稍后阶段重新访问该配置，以进行进一步的更改，或实施该配置。 保存配置时只需要一个[!UICONTROL 名称]的值。
 * **[!UICONTROL 实施]**：为配置所做的设置或更改已保存并实施。 标记为![必填](/help/assets/icons/Required.svg)的所有字段都必须有正确的值。 实施包括：
 
-   * **[!UICONTROL Customer Journey Analytics]** 配置：
-      * 选定的数据视图已更新，将包含Content Analytics维度和量度。
-      * 与所选数据视图相关联的连接已更改，以包含 Content Analytics 事件和属性数据集。
-      * Content Analytics 报告模板已添加到工作区。
+  * **[!UICONTROL Customer Journey Analytics]** 配置：
+    * 选定的数据视图已更新，将包含Content Analytics维度和量度。
+    * 与所选数据视图相关联的连接已更改，以包含 Content Analytics 事件和属性数据集。
+    * Content Analytics 报告模板已添加到工作区。
 
 
-   * **[!UICONTROL Adobe Experience Platform]** 配置：
-      * 通过创建架构来模拟 Content Analytics 事件、资产属性和（如果已配置）体验属性。
-      * 通过创建数据集来收集 Content Analytics 事件、资产属性和（如果已配置）体验属性。
-      * 创建一个数据流，用于通过特征化服务从 Content Analytics 事件生成和更新内容属性。
+  * **[!UICONTROL Adobe Experience Platform]** 配置：
+    * 创建用于为 Content Analytics 事件、资产属性和（如果已配置）体验属性建模的架构。
+    * 创建数据集以收集 Content Analytics 事件、资产属性以及（如果已配置）体验属性。
+    * 创建一个数据流，用于通过特征化服务从 Content Analytics 事件生成和更新内容属性。
 
 
-   * **[!UICONTROL 数据收集]**&#x200B;配置：
-      * 新的或现有的”标记“属性被配置为支持 Content Analytics 数据收集。 此配置意味着需包含用于”标记“的 Adobe Content Analytics 扩展。
-      * 为 Content Analytics 事件创建数据流。
-      * Adobe Content Analytics 扩展已配置，以确保将 Content Analytics 事件发送到 Content Analytics 的数据流。
-      * 如果没有为Tags属性配置Web SDK或Mobile SDK，则会创建新的Web SDK或Mobile SDK配置以仅发送Content Analytics事件。
-      * 如果为Tags属性配置了Web SDK或Mobile SDK，则不会对现有Web SDK或Mobile SDK配置进行任何更改。
+  * **[!UICONTROL 数据收集]**&#x200B;配置：
+    * 新的或现有的 Tags 属性被配置为支持 Content Analytics 数据收集。 此配置意味着需包含用于 Tags 的 Adobe Content Analytics 扩展。
+    * 为 Content Analytics 事件创建数据流。
+    * Adobe Content Analytics 扩展已配置，以确保将 Content Analytics 事件发送到 Content Analytics 的数据流。
+    * 如果没有为Tags属性配置Web SDK或Mobile SDK，则会创建新的Web SDK或Mobile SDK配置以仅发送Content Analytics事件。
+    * 如果为Tags属性配置了Web SDK或Mobile SDK，则不会对现有Web SDK或Mobile SDK配置进行任何更改。
 
 
 * **[!UICONTROL 保存]**：对已实施的配置所做的更改会被保存，并且实施会被更新。

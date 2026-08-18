@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: c7fc5df2a0fd7393b48bfe6bdfa7dccdfffde46c
+source-git-commit: f62c202f92ffc842a9abe2a91bec5231a606f67c
 workflow-type: tm+mt
-source-wordcount: 3268
-ht-degree: 59%
+source-wordcount: 3275
+ht-degree: 58%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 59%
 >[!CONTEXTUALHELP]
 >id="cja-export-details"
 >title="详细信息"
->abstract="指定导出内容的名称。 您还可以添加描述和标签。 此信息有助于您在导出表格和电子邮件通知中识别该导出任务。"
+>abstract="指定导出内容的名称。 您还可以添加描述和标签。 此信息有助于您在导出任务表和电子邮件通知中识别该导出任务。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -161,13 +161,13 @@ ht-degree: 59%
    | 全部清除 | 清除数据表的内容。 这样您就可以直接在新的完整表格导出对话框中开始构建新表。 |
    | 文件格式 | 选择导出的数据应采用.csv、.json还是.parquet格式。 <p>当选择Parquet文件格式时，组件名称中包含的以下任何字符都将替换为下划线(_)： <ul><li>&#39; &#39; - ASCII空间</li><li>&#39;，&#39; - ASCII逗号</li><li>&#39;；&#39; - ASCII冒号</li><li>&#39;{&#39;或&#39;}&#39; - ASCII左大括号</li><li>&#39;（&#39;或&#39;）&#39; - ASCII左括号/右括号</li><li>&#39;\n&#39; - ASCII换行符</li><li>“\t” — ASCII选项卡</li><li>&#39;=&#39; - ASCII等于</li></ul></p> |
    | 包含清单文件 | 启用后，任何成功的导出传递都会包含一份清单文件。 <p>您可以使用清单文件确认所有文件均已成功传送。 它包含以下信息：</p> <ul><li>已传递的所有文件的列表</li><li>每个文件的 MD5 校验和</li></ul><p>导出的数据以压缩文件的形式存储在您配置的云目标中，如[配置云导出账户](/help/components/exports/cloud-export-accounts.md)和[配置云导出位置](/help/components/exports/cloud-export-locations.md)中所述。</p><p>压缩文件的文件名如下，具体取决于您选择&#x200B;**[!UICONTROL csv]**、**[!UICONTROL json]**&#x200B;还是&#x200B;**[!UICONTROL parquet]**&#x200B;作为文件格式：</p><ul> <li>`cja-export-{reportInstanceId}-{idx}.csv.gz`</li><li>`cja-export-{reportInstanceId}-{idx}.json.gz`</li><li>`cja-export-<instanceId>-<idx>.snappy.parquet`<p>parquet文件中的每一列都经过压缩。</p></li></ul><p>在上面的&#x200B;**[!UICONTROL 文件格式]**&#x200B;字段中选择文件格式。</p> |
-   | 频率 | 设置导出的频率。 <p>您可以选择&#x200B;[!UICONTROL **立即发送（一次性）**]&#x200B;只发送一次导出内容。 当您选择此选项时，会立即启动导出。</p><p>或者，您可以选择按定义的计划发送导出内容。 当按计划发送时，相关选项包括&#x200B;**[!UICONTROL 每天]**、**[!UICONTROL 每周]**、**[!UICONTROL 每月按星期几]**、**[!UICONTROL 每月按一个月中的某一天]**、**[!UICONTROL 每年按一个月中的某一天]**&#x200B;和&#x200B;**[!UICONTROL 每年按特定日期]**。 </p> <p>选择导出频率时，请考虑以下因素：</p><ul><li>**[!UICONTROL 回顾窗口]**&#x200B;字段中的选项会根据您在此处选择的内容而更改。</li><li>根据您选择的选项，将显示其他配置字段。</li></ul> |
+   | 频率 | 设置导出的频率。 <p>您可以选择&#x200B;[!UICONTROL **立即发送（一次性）**]&#x200B;只发送一次导出内容。 当您选择此选项时，会立即启动导出。</p><p>或者，您可以选择按定义的计划发送导出。 当按计划发送时，相关选项包括&#x200B;**[!UICONTROL 每天]**、**[!UICONTROL 每周]**、**[!UICONTROL 每月按星期几]**、**[!UICONTROL 每月按一个月中的某一天]**、**[!UICONTROL 每年按一个月中的某一天]**&#x200B;和&#x200B;**[!UICONTROL 每年按特定日期]**。 </p> <p>选择导出频率时，请考虑以下因素：</p><ul><li>**[!UICONTROL 回顾窗口]**&#x200B;字段中的选项会根据您在此处选择的内容而更改。</li><li>根据您选择的选项，将显示其他配置字段。</li></ul> |
    | 开始日期 | 计划导出开始的日期和时间。 <p>仅当选择计划导出频率时此选项才可用。</p> |
    | 结束时间 | 计划导出的到期日期和时间。 计划导出在您设置的日期和时间过后不再运行。 <p>仅当选择计划导出频率时此选项才可用。</p> |
    | 查看所有用户的目标 | 系统管理员可以选择此选项，以查看所有帐户和位置，而不管这些帐户和位置是由谁创建的。 |
-   | 帐户 | 选择您想要发送数据的云导出账户。 <p>或者，如果您尚未配置要使用的云帐户，则可以配置一个新帐户：<ol><li>在&#x200B;**[!UICONTROL 帐户]**&#x200B;下拉菜单中，选择&#x200B;**[!UICONTROL 添加帐户]**，然后指定以下信息：<ul><li>**[!UICONTROL 位置帐户名称]**：指定位置账户的名称。 此名称会在创建位置时出现 </li><li>**[!UICONTROL 位置账户描述]**：提供帐户的简短描述，以帮助将它与同一帐户类型的其他帐户区分开来。</li><li>**使帐户对贵组织的所有用户都可用**：如果要允许贵组织中的其他用户使用该帐户，请选择此选项。</li><li>**[!UICONTROL 帐户类型]**：选择您要导出到的云帐户类型。 可用的帐户类型包括 Amazon S3 Role ARN、Google Cloud Platform、Azure SAS、Azure RBAC、Snowflake 和 AEP Data Landing Zone。</li></ul><li>要完成帐户配置，请继续访问下面与您选择的&#x200B;**[!UICONTROL 帐户类型]**&#x200B;相对应的链接：<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-accounts.md#snowflake)</li></ul></ol> |
-   | 位置 | 在帐户上选择要发送导出数据的位置。<p>或者，如果您尚未配置要使用的云帐户，则可以配置一个新帐户：<ol><li>在&#x200B;**[!UICONTROL 位置]**&#x200B;下拉菜单中，选择&#x200B;**[!UICONTROL 添加位置]**，然后指定以下信息：<ul><li>**[!UICONTROL 名称：]**&#x200B;位置的名称。</li><li>**[!UICONTROL 描述]**：提供位置的简短描述，以帮助将它与帐户上的其他位置区分开来。</li><li>**使位置对贵组织的所有用户都可用**：如果要允许贵组织中的其他用户使用该位置，请选择此选项。</li><li>**[!UICONTROL 位置帐户]**：选择要在其中创建位置的帐户。</li></ul><li>要完成位置配置，请继续使用下面与您在&#x200B;**[!UICONTROL 位置帐户]**&#x200B;字段中选择的帐户类型相对应的链接：<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone)。</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
-   | 通知 | 添加用户和用户组，以便在导出失败或即将过期时接收通知。 开始键入用户的名称或电子邮件地址，或开始键入组的名称，然后将其添加到下拉列表中。 |
+   | 帐户 | 选择您想要发送数据的云导出帐户。 <p>或者，如果您尚未配置要使用的云帐户，则可以配置一个新帐户：<ol><li>在&#x200B;**[!UICONTROL 帐户]**&#x200B;下拉菜单中，选择&#x200B;**[!UICONTROL 添加帐户]**，然后指定以下信息：<ul><li>**[!UICONTROL 位置帐户名称]**：指定位置账户的名称。 此名称会在创建位置时出现 </li><li>**[!UICONTROL 位置账户描述]**：提供帐户的简短描述，以帮助将它与同一帐户类型的其他帐户区分开来。</li><li>**使帐户对贵组织的所有用户都可用**：如果要允许贵组织中的其他用户使用该帐户，请选择此选项。</li><li>**[!UICONTROL 帐户类型]**：选择您要导出到的云帐户类型。 可用的帐户类型包括 Amazon S3 Role ARN、Google Cloud Platform、Azure SAS、Azure RBAC、Snowflake 和 AEP Data Landing Zone。</li></ul><li>要完成帐户配置，请继续访问下面与您选择的&#x200B;**[!UICONTROL 帐户类型]**&#x200B;相对应的链接：<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-accounts.md#snowflake)</li></ul></ol> |
+   | 位置 | 选择帐户中要将导出数据发送到的位置。<p>或者，如果您尚未配置要使用的云帐户，则可以配置一个新帐户：<ol><li>在&#x200B;**[!UICONTROL 位置]**&#x200B;下拉菜单中，选择&#x200B;**[!UICONTROL 添加位置]**，然后指定以下信息：<ul><li>**[!UICONTROL 名称：]**&#x200B;位置的名称。</li><li>**[!UICONTROL 描述]**：提供位置的简短描述，以帮助将它与帐户上的其他位置区分开来。</li><li>**使位置对贵组织的所有用户都可用**：如果要允许贵组织中的其他用户使用该位置，请选择此选项。</li><li>**[!UICONTROL 位置帐户]**：选择要在其中创建位置的帐户。</li></ul><li>要完成位置配置，请继续使用下面与您在&#x200B;**[!UICONTROL 位置帐户]**&#x200B;字段中选择的帐户类型相对应的链接：<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone)。</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
+   | 完成或到期时通知问题 | 添加用户和用户组，以便在导出失败或即将过期时接收通知。 开始键入用户的名称或电子邮件地址，或开始键入组的名称，然后将其添加到下拉列表中。 |
 
    {style="table-layout:auto"}
 
@@ -424,7 +424,7 @@ ht-degree: 59%
 
 | 功能 | Customer Journey Analytics 中的完整表格导出 | Adobe Analytics 中的 Data Warehouse |
 |---------|----------|---------|
-| 生成自定义报告 | 是 | 是 |
+| 构建自定义报告 | 是 | 是 |
 | 计算量度 | 是 | 否 |
 | 区段 | 是 | 有限制 |
 | 维度 | 限 10 个 | 无限制 |

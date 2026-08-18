@@ -4,9 +4,9 @@ keywords: 点击流;数据馈送;数据馈送;数据馈送
 title: 比较Customer Journey Analytics和Adobe Analytics中的数据馈送功能
 feature: Components
 hide: true
-source-git-commit: a72ed21bdea40e2441443d7218d9fd7c906adc3e
+source-git-commit: de8748a1dddbc0ddaadca4c805c9b4aba99a4267
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,9 @@ ht-degree: 0%
 
 ## 回顾日期范围（数据馈送）与报表日期范围(Analysis Workspace)
 
-数据馈送中的回顾日期范围决定在查找符合数据馈送交付条件的事件时，Customer Journey Analytics回顾的时间范围。 从这个意义上说，回顾日期范围类似于Analysis Workspace中的报表日期范围。 然而，两者之间有着关键的区别。
+数据馈送中的回顾日期范围决定在查找符合数据馈送交付条件的事件时，Customer Journey Analytics回顾的时间范围。 有关回顾日期范围的详细信息，包括示例，请参阅[了解回顾日期范围](/help/components/exports/cja-data-feeds/create-feed.md#understand-the-lookback-date-range)。
+
+从这个意义上说，回顾日期范围类似于Analysis Workspace中的报表日期范围。 然而，两者之间有着关键的区别。
 
 | 主要差异 | 报表日期范围(Analysis Workspace) | 回顾日期范围（数据馈送） |
 |---------|---------|----------|
