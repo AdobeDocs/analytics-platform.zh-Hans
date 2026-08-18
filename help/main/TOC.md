@@ -2,9 +2,9 @@
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: ba83c48866308eba6148230ea08bc759951d37af
+source-git-commit: 6c137d20d25cff6fe4630dedb33cfa8b88c121aa
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1481'
 ht-degree: 93%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 93%
     + [Data Insights 代理](../data-analysis-ai.md)
   + Customer Journey Analytics B2B Edition {#cja-b2b}
     + [概述](/help/getting-started/cja-b2b-edition.md)
-    + [B2B 概念和特点](/help/getting-started/cja-b2b-concepts-features.md)
+    + [B2B 概念和功能](/help/getting-started/cja-b2b-concepts-features.md)
     + [快速入门指南](/help/getting-started/cja-b2b-quick-start-guide.md)
     + [过渡指南](/help/getting-started/cja-b2b-transition.md)
 
@@ -74,7 +74,7 @@ ht-degree: 93%
     + [验证数据流](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
     + [设置流媒体收藏集](/help/getting-started/cja-upgrade/cja-upgrade-streaming-media.md)
     + 通过 Analytics 源连接器保留历史数据 {#historical-data-source-connector}
-      + [为 Analytics 源连接器创建 XDM 架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+      + [为 Adobe Analytics 源连接器创建 XDM 架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
       + [创建 Analytics 源连接器并映射字段](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
       + [将 Analytics 源连接器数据集添加到连接](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
     + [评估何时禁用 Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
@@ -92,10 +92,10 @@ ht-degree: 93%
       + [Customer Journey Analytics 功能](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md)
       + [Web SDK 实施选项](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md)
       + [为 Platform 配置 Adobe Analytics Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
-      + [使用通过 Adobe Journey Optimizer 个性化](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
+      + [使用 Adobe Journey Optimizer 进行个性化](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
   + 与 Adobe Analytics 进行比较 {#cja-aa-comparison}
     + [概述](../getting-started/aa-vs-cja/overview.md)
-    + [实用 Adobe Analytics 数据](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+    + [使用 Adobe Analytics 数据](../getting-started/aa-vs-cja/aa-data-in-cja.md)
     + [跨IMS数据映射](../getting-started/aa-vs-cja/mapping-data-ims-orgs.md)
     + [功能支持](../getting-started/aa-vs-cja/cja-aa.md)
     + [比较术语](../getting-started/aa-vs-cja/terminology.md)
@@ -295,7 +295,7 @@ ht-degree: 93%
     + [查看预测](../analysis-workspace/c-forecast/view-forecasts.md)
     + [统计技术](../analysis-workspace/c-forecast/statistics-forecasting.md)
   + [用户偏好设置](../analysis-workspace/user-preferences.md)
-  + Workspace 常见问题解答及更多信息 {#workspace-faq}
+  + Workspace 常见问题及更多信息 {#workspace-faq}
     + [常见问题解答](../analysis-workspace/workspace-faq/faq.md)
     + [优化性能](../analysis-workspace/workspace-faq/optimizing-performance.md)
     + [错误和故障排除](../analysis-workspace/workspace-faq/error-messages.md)
@@ -339,6 +339,10 @@ ht-degree: 93%
   + [趋势](../guided-analysis/types/trends.md)
   + [行业用例](../guided-analysis/industry-use-cases.md)
   + [常见问题解答](../guided-analysis/faq.md)
+
++ 对话见解 {#conversation-insights}
+  + {hide-from-toc}[概述](/help/conversatiion-insights/conversation-insights.md)
+  + {hide-from-toc}[配置](/help/conversatiion-insights/config/guided.md)
 
 + 组件 {#cja-components}
   + [概述](../components/overview.md)
@@ -512,7 +516,7 @@ ht-degree: 93%
     + [导出整个表](../use-cases/data-export/export-full-table.md)
     + [查询服务和导出数据集](../use-cases/data-export/queryservice-export-datasets.md)
   + 数据摄取 {#data-ingestion}
-    + [收錄并使用 Marketo Engage 数据](../use-cases/data-ingestion/marketo.md)
+    + [收录并使用 Marketo Engage 数据](../use-cases/data-ingestion/marketo.md)
     + [摄取和使用 Experience Platform 受众](../use-cases/data-ingestion/ingest-aep-segments.md)
   + 数据视图 {#data-views}
     + [数据视图用例](/help/use-cases/data-views/data-views-usecases.md)
