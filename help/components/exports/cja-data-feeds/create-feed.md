@@ -5,11 +5,19 @@ hide: true
 feature: Components
 autotag-review: '2026-05-19T08:45:44.870Z'
 TQID: 'https://experienceleague.adobe.com/QgBD7vCkw4YA568XOLlwTnw8eZVZybXr3DFbM1ZKYDw'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: e7c2598015d3ee271bb7e0f64937fd1c457b5433
 workflow-type: tm+mt
 source-wordcount: 4033
@@ -362,7 +370,7 @@ ht-degree: 20%
 * 用户有一个时间戳位于数据馈送频率窗口（数据馈送的给定小时或日期）内的事件。
 * 该用户在回顾日期范围&#x200B;**内的某个时间符合&#x200B;_促销活动B_区段**&#x200B;的资格。
 
-  对于9天前发生的符合条件的事件，这意味着，如果回顾日期范围设置为30天，则数据馈送中将包括用户&#x200B;****；如果回顾日期范围设置为7天，则数据馈送中将不包括用户&#x200B;****。
+  对于9天前发生的符合条件的事件，这意味着，如果回顾日期范围设置为30天，则数据馈送中将包括用户&#x200B;**&#x200B;**；如果回顾日期范围设置为7天，则数据馈送中将不包括用户&#x200B;**&#x200B;**。
 
 >[!ENDSHADEBOX]
 
@@ -397,7 +405,7 @@ ht-degree: 20%
 
 * 该用户在回顾日期范围&#x200B;**内的某个时间符合原始营销活动**&#x200B;的资格。
 
-  如果用户在9天前符合原始促销活动的资格，则回顾日期范围设置为30天时，数据馈送中将包含原始促销活动&#x200B;****；但是如果回顾日期范围设置为7天，则数据馈送中将不包含原始促销活动&#x200B;****。
+  如果用户在9天前符合原始促销活动的资格，则回顾日期范围设置为30天时，数据馈送中将包含原始促销活动&#x200B;**&#x200B;**；但是如果回顾日期范围设置为7天，则数据馈送中将不包含原始促销活动&#x200B;**&#x200B;**。
 
 >[!ENDSHADEBOX]
 
