@@ -5,22 +5,14 @@ hide: true
 feature: Components
 autotag-review: '2026-05-19T08:45:44.870Z'
 TQID: 'https://experienceleague.adobe.com/QgBD7vCkw4YA568XOLlwTnw8eZVZybXr3DFbM1ZKYDw'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: e2e75dda2d61cd707b2a224ec5ac43a492ffa42e
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: e7c2598015d3ee271bb7e0f64937fd1c457b5433
 workflow-type: tm+mt
-source-wordcount: 4066
+source-wordcount: 4033
 ht-degree: 20%
 
 ---
@@ -349,9 +341,9 @@ ht-degree: 20%
 配置此选项时，请考虑以下重要概念：
 
 * 较长的回顾日期范围通常会导致数据更准确；较短的回顾日期范围会导致更好的交付性能。
-* 回顾日期范围以及频度窗口的功能与Analysis Workspace报表日期范围类似。 但是，存在[主要差异](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#differences)。 这些差异可能会导致在Workspace报表和数据馈送交付之间出现数据描述差异。
+* 回顾日期范围以及频度窗口的功能与Analysis Workspace报表日期范围类似。 但是，存在[主要差异](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#differences)。 这些差异可能会导致Workspace报表和数据馈送交付之间存在数据差异。
 
-在处理回顾日期范围内的数据时，将分别考虑区段鉴别、会话计算、维度持久性和派生字段转换：
+处理回顾日期范围内的数据时，将分别考虑区段鉴别、会话计算、维度持久性和派生字段转换：
 
 ### 细分资格筛选
 
@@ -370,13 +362,13 @@ ht-degree: 20%
 * 用户有一个时间戳位于数据馈送频率窗口（数据馈送的给定小时或日期）内的事件。
 * 该用户在回顾日期范围&#x200B;**内的某个时间符合&#x200B;_促销活动B_区段**&#x200B;的资格。
 
-  对于9天前发生的符合条件的事件，这意味着，如果回顾日期范围设置为30天，则用户&#x200B;**将被包含在数据馈送中**；如果回顾日期范围设置为7天，则用户&#x200B;**将不会包含在数据馈送中**。
+  对于9天前发生的符合条件的事件，这意味着，如果回顾日期范围设置为30天，则数据馈送中将包括用户&#x200B;****；如果回顾日期范围设置为7天，则数据馈送中将不包括用户&#x200B;****。
 
 >[!ENDSHADEBOX]
 
 ### 会话计算
 
-会话边界使用回顾日期范围内的数据计算。 也许这与什么是会话ID更相关？ 它是否会影响会话ID？ 可能会影响很多内容，例如基于会话的持久性。
+会话边界使用回顾日期范围内的数据计算。<!--Maybe this matters more regarding what the session ID is? Could it impact the Session ID? This could impact several factors, such as session-based persistence.-->
 
 ### Dimension持久性
 
@@ -385,7 +377,7 @@ ht-degree: 20%
 当数据视图中的过期时间设置为以下任一选项时，回顾日期范围会影响维度持久性：
 
 * [!UICONTROL **人员报告窗口**]：对于使用&#x200B;[!UICONTROL **人员报告窗口**]&#x200B;作为其过期日期的数据馈送定义中的每个维度，回顾日期范围将成为新的报告窗口。
-* [!UICONTROL **自定义时间**]：如果选择的自定义时间超出回顾日期范围，将忽略自定义时间，并且回顾日期范围将用于数据馈送定义中每个维度的维度过期，这些数据馈送定义使用&#x200B;[!UICONTROL **自定义时间**]&#x200B;作为其过期。 不考虑回溯日期范围之前出现的值。
+* [!UICONTROL **自定义时间**]：如果选择的自定义时间超出回顾日期范围，将忽略自定义时间，并且回顾日期范围将用于数据馈送定义中每个维度的维度过期，这些数据馈送定义使用&#x200B;[!UICONTROL **自定义时间**]&#x200B;作为其过期。 不考虑回溯日期范围之前发生的值。
 
   有关在数据视图中设置维度的持久性的详细信息，请参阅[持久性组件设置](/help/data-views/component-settings/persistence.md)。
 
@@ -405,13 +397,13 @@ ht-degree: 20%
 
 * 该用户在回顾日期范围&#x200B;**内的某个时间符合原始营销活动**&#x200B;的资格。
 
-  如果用户在9天前符合原始促销活动的资格，则如果回顾日期范围设置为30天，则原始促销活动&#x200B;**将包括在数据馈送中**；如果回顾日期范围设置为7天，则原始促销活动&#x200B;**将不包括在数据馈送中**。
+  如果用户在9天前符合原始促销活动的资格，则回顾日期范围设置为30天时，数据馈送中将包含原始促销活动&#x200B;****；但是如果回顾日期范围设置为7天，则数据馈送中将不包含原始促销活动&#x200B;****。
 
 >[!ENDSHADEBOX]
 
 ### 派生字段转换
 
-引用容器的任何派生字段函数在数据馈送导出中使用回顾日期范围。 派生字段中提供了哪些日期功能？ 不确定这如何适用。
+引用容器的任何派生字段函数在数据馈送导出中使用回顾日期范围。 派生字段中提供了哪些日期功能？<!--Not sure how this applies.-->
 
 
 
