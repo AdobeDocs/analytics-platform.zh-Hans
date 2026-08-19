@@ -5,22 +5,14 @@ hide: true
 feature: Components
 autotag-review: '2026-05-19T08:45:44.870Z'
 TQID: 'https://experienceleague.adobe.com/QgBD7vCkw4YA568XOLlwTnw8eZVZybXr3DFbM1ZKYDw'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: de8748a1dddbc0ddaadca4c805c9b4aba99a4267
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: e2e75dda2d61cd707b2a224ec5ac43a492ffa42e
 workflow-type: tm+mt
-source-wordcount: 4036
+source-wordcount: 4066
 ht-degree: 20%
 
 ---
@@ -160,6 +152,26 @@ ht-degree: 20%
    | 周 | 发生事件的周 | 不可用 |
    | 一年中的第几周 | 事件发生的一年中的第几周 | 不可用 |
    | 年 | 发生事件的年份 | 不可用 |
+
+   +++
+
+   +++ 不能包含在数据馈送中的量度
+
+   以下Customer Journey Analytics标准量度不能包含在数据馈送中：
+
+   | 量度名称 | 注释 | 数据馈送 |
+   |---|---|---|
+   | Adobe访客配置文件 | | 不可用 |
+   | Adobe机会联盟 | | 不可用 |
+   | Adobe机会配置文件 | | 不可用 |
+   | Adobe帐户联盟 | | 不可用 |
+   | Adobe帐户配置文件 | | 不可用 |
+   | Adobe采购组联盟 | | 不可用 |
+   | Adobe购买组配置文件 | | 不可用 |
+   | Adobe全球客户联盟 | | 不可用 |
+   | Adobe全局帐户配置文件 | | 不可用 |
+   | Adobe人事联合会 | | 不可用 |
+   | Adobe人员配置文件 | | 不可用 |
 
    +++
 
@@ -318,20 +330,20 @@ ht-degree: 20%
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_lookback_date_range"
 >title="回顾日期范围"
->abstract="控制 Customer Journey Analytics 在处理数据馈送传递时向前回溯的时间范围。 此设置与Analysis Workspace报表日期范围相似，但存在重要差异：<ul><li>如果事件的时间戳位于频率窗口而非回顾日期范围内，则将这些事件包含在数据馈送中。 （在Analysis Workspace中，如果事件具有属于报表日期范围的时间戳，则这些事件将包含在报表中。）</li><li>时间戳位于回顾日期范围内（但频率窗口之外）的事件仍可通过区段鉴别、会话计算、派生字段转换和维度持久性影响馈送中显示的数据。</li><p>较长的回顾日期范围通常会导致事件更准确；较短的回顾日期范围会导致更好的交付性能。</p>"
+>abstract="控制Customer Journey Analytics在处理每次投放时回溯多远。<p>频率窗口（小时或天）确定哪些事件包含在数据馈送中，而&#x200B;**回顾日期范围**&#x200B;提供正确分类这些事件所需的历史上下文。</p><p>区段鉴别、维度持久性、会话计算和派生字段转换都可能影响包含的事件。</p><p>较长的回顾可提高准确性；较短的回顾可提高性能。</p>"
 
 <!-- markdownlint-enable MD034 -->
 
+回顾日期范围可控制Customer Journey Analytics在处理每个数据馈送交付时回顾的时间范围。
 
-
-回顾日期范围可控制Customer Journey Analytics在处理数据馈送交付时回顾的时间范围。 默认值为30天。
+事件仍必须具有要包含在投放中的频率范围（小时或天）内的时间戳，但属于&#x200B;**回顾日期范围**&#x200B;内的数据提供正确分类这些事件所需的历史上下文。
 
 配置此选项时，请考虑以下重要概念：
 
 * 较长的回顾日期范围通常会导致数据更准确；较短的回顾日期范围会导致更好的交付性能。
-* 数据馈送中的回顾日期范围与Analysis Workspace中的报表日期范围相似，但存在[主要差异](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#differences)。 这些差异可能会导致在Workspace报表和数据馈送交付之间出现数据描述差异。
-* 回顾日期范围不会更改频率窗口（小时或天），该频率窗口定义要包含在数据馈送输出中的事件的时间范围。
-* 如果数据属于回顾日期范围，则可能会影响数据馈送（频率窗口）中包含的内容，具体取决于以下部分中描述的因素。
+* 回顾日期范围以及频度窗口的功能与Analysis Workspace报表日期范围类似。 但是，存在[主要差异](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#differences)。 这些差异可能会导致在Workspace报表和数据馈送交付之间出现数据描述差异。
+
+在处理回顾日期范围内的数据时，将分别考虑区段鉴别、会话计算、维度持久性和派生字段转换：
 
 ### 细分资格筛选
 
@@ -357,10 +369,6 @@ ht-degree: 20%
 ### 会话计算
 
 会话边界使用回顾日期范围内的数据计算。 也许这与什么是会话ID更相关？ 它是否会影响会话ID？ 可能会影响很多内容，例如基于会话的持久性。
-
-### 派生字段转换
-
-引用容器的任何派生字段函数在数据馈送导出中使用回顾日期范围。 派生字段中提供了哪些日期功能？ 不确定这如何适用。
 
 ### Dimension持久性
 
@@ -393,6 +401,9 @@ ht-degree: 20%
 
 >[!ENDSHADEBOX]
 
+### 派生字段转换
+
+引用容器的任何派生字段函数在数据馈送导出中使用回顾日期范围。 派生字段中提供了哪些日期功能？ 不确定这如何适用。
 
 
 
