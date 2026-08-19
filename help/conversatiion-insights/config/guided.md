@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 hide: true
-source-git-commit: 6c137d20d25cff6fe4630dedb33cfa8b88c121aa
+source-git-commit: 30194647c56e7eaa8441b915d16f53ba3ff1bd40
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 8%
+source-wordcount: '102'
+ht-degree: 9%
 
 ---
 
@@ -40,6 +40,6 @@ ht-degree: 8%
 
 >[!CONTEXTUALHELP]
 >id="conversation-insights_config_dataview"
->title="连接"
+>title="数据视图"
 >abstract="选择与您的连接关联的数据视图，以便用于对话分析分析。 对话见解量度和维度将添加到您选择的数据视图中。"
 

@@ -21,7 +21,7 @@ topic_v2:
 source-git-commit: 7bb16378fc8813ca126cb786c5d36bf9daa0fe7d
 workflow-type: tm+mt
 source-wordcount: 981
-ht-degree: 14%
+ht-degree: 23%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 14%
 >[!CONTEXTUALHELP]
 >id="cja-consent-sandbox"
 >title="沙盒"
->abstract="选择包含正确 Experience Platform 轮廓数据集的沙盒。 这些数据集需要包含您要在Analysis Workspace中报告的同意数据。"
+>abstract="选择包含正确 Experience Platform 轮廓数据集的沙盒。 这些数据集必须包含您希望在 Analysis Workspace 中进行报告的同意数据。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -50,7 +50,7 @@ ht-degree: 14%
 >[!CONTEXTUALHELP]
 >id="cja-consent-person-id"
 >title="人员 ID"
->abstract="从基于模型的架构中选择一个表示人员ID的字段。 选择仅限于架构中标记为“身份”并且确实具有身份命名空间的字段列表。"
+>abstract="从基于模型的架构中选择表示人员 ID 的字段。 选择仅限于架构中标记为“身份标识”且具有身份标识命名空间的字段的列表。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -59,7 +59,7 @@ ht-degree: 14%
 >[!CONTEXTUALHELP]
 >id="cja-consent-identity-namespace"
 >title="使用主要身份标识命名空间"
->abstract="如果您希望Customer Journey Analytics在标记为primary=true属性的身份映射中找到该身份，并将该身份用作该行的人员ID，请启用此选项。 该身份标识是 Experience Platform 中用于分区时使用的主键。 <br/>如果未启用此选项，请从下方的“身份标识命名空间”字段中选择一个命名空间。 Customer Journey Analytics 会在每一行的“身份标识图”中查找该命名空间键，并将该命名空间下的身份标识用作该行的人员 ID。"
+>abstract="如果您希望 Customer Journey Analytics 在“身份标识图”中查找标记为 primary=true 属性的身份标识，并将这个身份标识用作这一行的人员 ID，请启用此选项。 该身份标识是 Experience Platform 中用于分区时使用的主键。 <br/>如果未启用此选项，请从下方的“身份标识命名空间”字段中选择一个命名空间。 Customer Journey Analytics 会在每一行的“身份标识图”中查找该命名空间键，并将该命名空间下的身份标识用作该行的人员 ID。"
 
 <!-- markdownlint-enable MD034 -->
 
