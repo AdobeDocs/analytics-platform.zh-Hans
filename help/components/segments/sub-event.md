@@ -6,16 +6,14 @@ feature_v2:
   - id: c153fd90-23e1-4614-81d3-3cc7571227f7
 subfeature_v2:
   - id: a544b409-2610-410d-a842-474ac1d0d54e
-source-git-commit: 3fcb9c403ace295c1a7e62c21d8bb444a4f9c011
+source-git-commit: 8a5568b3b6136bc3f8b507f551fbb6d169e4b88a
 workflow-type: tm+mt
-source-wordcount: 636
-ht-degree: 9%
+source-wordcount: 680
+ht-degree: 8%
 
 ---
 
 # 子事件分析
-
-{{release-limited-testing}}
 
 通过子事件分析，可在比事件级别更精细的级别分析事件数据。 您可以对事件中的单个容器进行分段，而不是筛选整个事件。 例如：
 
