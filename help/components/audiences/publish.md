@@ -21,10 +21,10 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d2016e34b4b73c6eebb05097aa43f823c578c2b6
+source-git-commit: 87de19a64e49f83c99df7980828b97a1da2c2d16
 workflow-type: tm+mt
 source-wordcount: 2520
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="components_audiences_refreshfrequency"
 >title="刷新频率"
->abstract="重新评估受众成员资格的频率。<br/>一次性受众只评估一次，不会计入刷新限制。"
+>abstract="重新评估受众成员资格的频率。<br/>一次性请求只评估一次，不计入刷新限制。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -44,7 +44,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="components_audiences_audiencelimit"
 >title="刷新受众限制"
->abstract="您环境中配置为按计划频率自动刷新的受众的数量。 限制介于75和150之间，具体取决于您的Customer Journey Analytics权限。 一次性刷新不计入此限制。"
+>abstract="您环境中配置为按计划频率自动刷新的受众的数量。 限制介于75和150之间，具体取决于您的Customer Journey Analytics权限。 一次性请求不计入此限制。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -113,12 +113,12 @@ ht-degree: 94%
 
 | 设置 | 描述 |
 | --- | --- |
-| ![数据](/help/assets/icons/Data.svg) | 选择用于创建受众群体的数据视图。 |
+| ![数据](/help/assets/icons/Data.svg) | 选择用于创建受众的数据视图。 |
 | **[!UICONTROL 名称]** | 受众的名称。 例如，`Really Interested in Potential Car Buyers` |
 | **[!UICONTROL 标记]** | 出于组织目的而要分配给受众的任何标记。 您可以选择一个或多个预先存在的标记，也可以输入一个新标记。 |
-| **[!UICONTROL 描述]** | 对受众的描述，以区别于其他人。 例如，`Build an audience of really interested potential car buyers` |
-| **[!UICONTROL 刷新频率]** | 您刷新受众所要采用的频率。<p/><p>您可以根据您的Customer Journey Analytics权限，为有限数量的受众配置计划的刷新（在75到150之间）。 </p><p>您可以从以下选项中进行选择：</p><ul><li>**[!UICONTROL 一次性]** 受众：无需刷新的受众（默认）。 例如，该选项可能有助于特定的一次性营销活动。<br/>您必须指定一个&#x200B;**[!UICONTROL 一次性的日期范围]**。 您可以使用![日程表](/help/assets/icons/Calendar.svg)来输入日期范围。</li><li>刷新的受众。 您可以从以下计划的刷新选项中进行选择：<ul><li>**[!UICONTROL 每 4 小时]**：每 4 小时刷新一次的受众。</li><li>**[!UICONTROL 每日]**：每日刷新一次的受众</li><li>**[!UICONTROL 每周]**：每周刷新一次的受众。</li><li>**[!UICONTROL 每月]**：每月刷新一次的受众</li></ul></li>若要刷新观众，您必须指定：<ul><li>**[!UICONTROL 刷新回顾窗口]**。 定义从今天开始评估受众的回顾天数。 您可以从选项中进行选择或定义自定义时间。 最长为 90 天。</li><li>**[!UICONTROL 到期日期]**：定义受众停止刷新的时间。 您可以使用![日程表](/help/assets/icons/Calendar.svg)选择日期。 默认值为创建日期开始 1 年。 到期受众的处理方式与到期的计划报告类似。 管理员会在受众到期前一个月收到一封电子邮件。</li></ul></ul> |
-| **[!UICONTROL 过滤器]** | 过滤器是受众的主要输入。 将一个或多个区段从左侧![分段](/help/assets/icons/Segmentation.svg)**[!UICONTROL 区段]**&#x200B;面板拖放到区段区域。 您可以使用![搜索](/help/assets/icons/Search.svg) [!UICONTROL *搜索区段*]&#x200B;来搜索区段。 您最多可以添加 20 个区段。 区段可以与 **[!UICONTROL And]** 或 **[!UICONTROL Or]** 运算符相连。<p>从 Analysis Workspace 中的可视化图表（例如自由格式表或“历程”画布）创建受众时，应用于面板或列的任何区段都会保留。 您可以移除任何自动应用的区段。</p> |
+| **[!UICONTROL 描述]** | 对受众的描述，以区别于其他受众。 例如，`Build an audience of really interested potential car buyers` |
+| **[!UICONTROL 刷新频率]** | 您刷新受众所要采用的频率。<p/><p>您可以根据您的Customer Journey Analytics权限，为有限数量的受众配置计划的刷新（在75到150之间）。 </p><p>您可以从以下选项中进行选择：</p><ul><li>**[!UICONTROL 一次]**：一次性的请求，无需刷新。 例如，该选项可能有助于特定的一次性营销活动。<br/>您必须指定一个&#x200B;**[!UICONTROL 一次性的日期范围]**。 您可以使用![日程表](/help/assets/icons/Calendar.svg)来输入日期范围。</li><li>刷新的受众。 您可以从以下计划的刷新选项中进行选择：<ul><li>**[!UICONTROL 每 4 小时]**：每 4 小时刷新一次的受众。</li><li>**[!UICONTROL 每日]**：每日刷新一次的受众</li><li>**[!UICONTROL 每周]**：每周刷新一次的受众。</li><li>**[!UICONTROL 每月]**：每月刷新一次的受众</li></ul></li>若要刷新观众，您必须指定：<ul><li>**[!UICONTROL 刷新回顾窗口]**。 定义从今天开始评估受众的回顾天数。 您可以从选项中进行选择或定义自定义时间。 最长为 90 天。</li><li>**[!UICONTROL 到期日期]**：定义受众停止刷新的时间。 您可以使用![日程表](/help/assets/icons/Calendar.svg)选择日期。 默认值为自创建日期起 1 年。 到期受众的处理方式与到期的计划报告类似。 管理员会在受众到期前一个月收到一封电子邮件。</li></ul></ul> |
+| **[!UICONTROL 过滤器]** | 过滤器是受众的主要输入。 将一个或多个区段从左侧![分段](/help/assets/icons/Segmentation.svg)**[!UICONTROL 区段]**&#x200B;面板拖放到区段区域。 您可以使用![搜索](/help/assets/icons/Search.svg) [!UICONTROL *搜索区段*]&#x200B;来搜索区段。 您最多可以添加 20 个区段。 区段可以与 **[!UICONTROL And]** 或 **[!UICONTROL Or]** 运算符相连。<p>从 Analysis Workspace 中的可视化图表（例如自由格式表或历程画布）创建受众时，应用于面板或列的任何区段都会保留。 您可以移除任何自动应用的区段。</p> |
 | **[!UICONTROL 数据预览]** | 选择![信息](/help/assets/icons/Info.svg)可显示或隐藏所选日期范围的[数据预览](#data-preview)。 |
 
 ## 数据预览
@@ -131,13 +131,13 @@ ht-degree: 94%
 | **[!UICONTROL 受众规模限制]** | 显示该受众距离 2000 万人的限制还有多远的可视化内容。 |
 | **[!UICONTROL 预计观众回访率]** | 您可以使用此值重新定位该受众中返回您的网站、移动应用程序或其他渠道的用户。<p>您可以为可能返回的估计客户数量选择时间范围（**[!UICONTROL 未来 7 天]**、**[!UICONTROL 未来 2 周]**&#x200B;或&#x200B;**[!UICONTROL 下个月]**）。 |
 | **[!UICONTROL 预计会返回]** | 该数字为您提供了在您选择的时间范围内返回的客户的估计数量。 这个数字是使用该受众的历史流失率预测的。 |
-| **[!UICONTROL 预览量度]** | 您可以选择一个特定的量度，以查看该量度的数据是如何基于您定义的受众得出的。  每个预览量度都会根据受众显示该量度的总数。 以及数据视图定义的基于受众的量度占量度总数的百分比。 例如，381 人（您选择的量度）是对受众定义的结果，其占数据视图中可用总人数的 5%。 您可以选择数据视图中可用的任何量度。 |
+| **[!UICONTROL 预览量度]** | 您可以选择一个特定的量度，以查看该量度的数据是如何基于您定义的受众得出的。  每个预览量度都会根据受众显示该量度的总数。 以及数据视图定义的基于受众的量度占量度总数的百分比。 例如，381 人（您选择的量度）是您的受众定义得出的结果，占数据视图中可用总人数的 5%。 您可以选择数据视图中可用的任何量度。 |
 | **[!UICONTROL 命名空间包含]** | 与受众中的人关联的特定命名空间。 例如 ECID、CRM ID、电子邮件地址等。 |
 | **[!UICONTROL 沙盒]** | 受众所在的 [Experience Platform sandbox](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sandbox/home) 沙盒。 当您将此受众发布到 Platform 时，您只能在这个沙盒的范围内使用该受众。 |
 
 {style="table-layout:auto"}
 
-## 创建和发布受众后会发生什么? {#after-audience-created}
+## 创建和发布受众后会发生什么？ {#after-audience-created}
 
 在 Customer Journey Analytics 中创建并发布受众后，受众就可以在 Experience Platform 中使用，并可在[受众门户](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/segmentation/ui/audience-portal)中查看。 受众不仅在 Experience Platform 中可用，也可以在其他 Experience Platform 应用程序中使用，如 Adobe Journey Optimizer。
 
@@ -145,7 +145,7 @@ ht-degree: 94%
 
 在使用从 Customer Journey Analytics 发布到 Experience Platform 的受众时，请考虑以下事项：
 
-* Experience Platform 中的受众与 Customer Journey Analytics 受众具有相同的名称和描述。 该名称附加了 Customer Journey Analytics 受众 ID，以确保受众的唯一性。
+* Experience Platform 中的受众与 Customer Journey Analytics 受众具有相同的名称和描述。 该名称后附加了 Customer Journey Analytics 受众 ID，以确保受众的唯一性。
 * Customer Journey Analytics 中对受众名称或描述所做的任何更改都会反映在 Experience Platform 中。
 * 如果在 Customer Journey Analytics 中删除了某个受众，则该受众仍可在 Experience Platform 中继续使用，直到该受众的轮廓会员资格到期。 对于一次性观众，轮廓会员资格会在 420 天后到期；对于定期观众，轮廓会员资格会在 16 天后到期。
 
@@ -158,7 +158,7 @@ ht-degree: 94%
 |  | 延迟点 | 延迟持续时间 |
 | --- | --- | --- |
 | 未显示 | Adobe Analytics 至 Analytics 源连接器 (A4T) | 最多 30 分钟 |
-| 1 | 数据摄入数据湖（从 Analytics 源连接器或其他来源） | 最多 90 分钟 |
+| 1 | 将数据摄取到数据湖中（从 Analytics 源连接器或其他来源） | 最多 90 分钟 |
 | 2 | 将数据从 Experience Platform Data Lake 引入到 Customer Journey Analytics | 最多 90 分钟 |
 | 3 | 受众发布到实时客户轮廓，包括自动创建流式区段，并可让区段准备好接收数据。 | 几秒钟 |
 | 4 | 受众的刷新频率 | <ul><li>一次性刷新（延迟小于 5 分钟）</li><li>每 4 小时、每天、每周、每月刷新一次（延迟与刷新率密切相关） |
@@ -166,7 +166,7 @@ ht-degree: 94%
 
 {style="table-layout:auto"}
 
-## 在 Experience Platform 中使用 Customer Journey Analytics {#audiences-aep}
+## 在 Experience Platform 中使用 Customer Journey Analytics 受众 {#audiences-aep}
 
 Customer Journey Analytics 可以从您发布的受众中获取所有的命名空间和 ID 组合，并将其流式传输到 Real-Time Customer Data Platform 中。 Customer Journey Analytics 会将受众发送到 Experience Platform，并根据配置连接时选择的[!UICONTROL 人员 ID] 设置主要身份标识。
 
@@ -207,11 +207,11 @@ Customer Journey Analytics 和 Real-Time Customer Data Platform 两者的受众�
 
 #### 发布间隔和速度
 
-受众以每秒 1500 条记录 (RPS) 的速度在 Real-Time Customer Data Platform 上发布。 例如，拥有 2000 万会员的受众大约需要 3.7 小时才能完全发布（2000 万/1500 RPS/每小时 3600 秒）。 在这个过程中，两个应用程序的受众会员可能会有所不同。
+受众以每秒 1500 条记录 (RPS) 的速度在 Real-Time Customer Data Platform 上发布。 例如，拥有 2000 万成员的受众大约需要 3.7 小时才能完全发布（2000 万/1500 RPS/每小时 3600 秒）。 在这个过程中，两个应用程序的受众会员可能会有所不同。
 
 #### 轮廓碎片化
 
-如果从 Customer Journey Analytics 导入的轮廓在 Real-Time Customer Data Platform 中已经存在，它们就不被视为新轮廓。 这可能导致 Real-Time Customer Data Platform 中的轮廓数量低于预期。
+如果从 Customer Journey Analytics 导入的轮廓在 Real-Time Customer Data Platform 中已存在，则不会计为新的轮廓。 这可能导致 Real-Time Customer Data Platform 中的轮廓数量低于预期。
 
 #### 批量受众与流媒体受众
 
