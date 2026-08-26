@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 hide: true
-source-git-commit: f7bbbaf0b737ab33088c7c585d6415f93deff4c8
+source-git-commit: 1ce48a6e077ee1069c55f3ef8969ed2eced4742e
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1388'
 ht-degree: 4%
 
 ---
 
 # 总人口报表
 
-总人口报告引入了对配置文件和查找数据集中所定义的实体进行分析和报告的能力，以及对事件数据集中的基于时间的事件系列进行分析和报告的能力。 此功能支持新类别的查询、量度和受众定义，它们反映了企业客户群的整个范围。
+总人口报表引入了对在Customer Journey Analytics连接中存在的配置文件和查找数据集中定义的实体进行分析和报表的功能。 该分析和报告功能超越了事件数据集中的基于时间的事件系列。 该功能支持全新类别的查询、量度和受众定义，它们可反映企业客户群的整个范围。
 
 Customer Journey Analytics是围绕事件构建的。 每个量度、每个可视化图表、每个面板、每个报表都锚定到一个日期时间范围以及该日期时间范围内发生的事件。 您可以提出解决方案这样的问题：
 

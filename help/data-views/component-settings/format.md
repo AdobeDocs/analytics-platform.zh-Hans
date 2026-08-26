@@ -1,6 +1,6 @@
 ---
 title: 格式组件设置
-description: 配置指标的格式。
+description: 配置量度的格式。
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
@@ -19,7 +19,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: a4f7eef26a019f4f8a716f44d49985290b135112
 workflow-type: tm+mt
 source-wordcount: 759
 ht-degree: 88%
@@ -75,11 +75,11 @@ ht-degree: 88%
 >[!CONTEXTUALHELP]
 >id="dataview_component_metric_format_currencyconversion"
 >title="货币换算"
->abstract="选择货币代码维度来配置和显示所选货币类型的货币。"
+>abstract="选择货币代码维度，以所选货币类型配置和显示货币。"
 
 <!-- markdownlint-enable MD034 -->
 
-Customer Journey Analytics 中的货币转换对于跨国经营的企业来说非常有价值。 通过消除手动转换货币的复杂性，Customer Journey Analytics 中的货币转换可为财务数据带来统一性和清晰度。 货币转换会跟踪每日程表史汇率，并将这些每日汇率保留 4 年。
+Customer Journey Analytics 中的货币转换对于跨国经营的企业来说非常有价值。 通过消除手动转换货币的复杂性，Customer Journey Analytics 中的货币转换可为财务数据带来统一性和清晰度。 货币转换会跟踪每日历史汇率，并将这些每日汇率保留 4 年。
 
 例如，如果一家电子商务企业在美国、英国和欧盟开展业务，则销售数据可以自动转换为美元，以确保能够轻松比较并全面了解业绩。
 
@@ -87,7 +87,7 @@ Customer Journey Analytics 中的货币转换对于跨国经营的企业来说�
 >
 >在开始配置货币转换量度之前，请考虑以下事项：
 >
->* 您为货币转换选择的量度必须具备数字类型 (Double、Long、Integer、Short、Byte)。
+>* 您为货币转换选择的量度必须具备数值类型 (Double、Long、Integer、Short、Byte)。
 >* 将您的 Customer Journey Analytics 连接设置为包含至少一个事件数据集，该数据集为每个包含货币量度的事件提供货币代码维度。 该货币代码维度使用符合 [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) 标准的字母货币代码来表示货币。 这些值应采用全大写格式，例如 USD 代表 $、EUR 代表 €、GBP 代表 £。
 
 要确定货币在给定量度中的显示和转换方式：
