@@ -24,7 +24,7 @@ topic_v2:
 source-git-commit: 87de19a64e49f83c99df7980828b97a1da2c2d16
 workflow-type: tm+mt
 source-wordcount: 2520
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -43,8 +43,8 @@ ht-degree: 93%
 
 >[!CONTEXTUALHELP]
 >id="components_audiences_audiencelimit"
->title="刷新受众限制"
->abstract="您环境中配置为按计划频率自动刷新的受众的数量。 限制介于75和150之间，具体取决于您的Customer Journey Analytics权限。 一次性请求不计入此限制。"
+>title="受众刷新数量限制"
+>abstract="您的环境中配置为按计划频率自动刷新的受众数量。 具体限制为 75 至 150 个，具体取决于您的 Customer Journey Analytics 权益。 一次性请求不计入此限制。"
 
 <!-- markdownlint-enable MD034 -->
 
