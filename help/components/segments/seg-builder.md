@@ -5,22 +5,14 @@ feature: Filters, Segments
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
 TQID: https://experienceleague.adobe.com/MFqcgWkCqZbtbI58nF8boBZU3YzfcuAAsJxXbjBcT5E
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 859a195e89c44d3951ca79ce7f93f9dd77cd4f5c
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: e65b2ec10593c19ab056ecf72716a9267cfc0528
 workflow-type: tm+mt
-source-wordcount: 1812
-ht-degree: 80%
+source-wordcount: 1932
+ht-degree: 76%
 
 ---
 
@@ -54,7 +46,7 @@ ht-degree: 80%
 
    | 元素 | 描述 |
    | --- | --- |
-   | **[!UICONTROL 数据视图]** | 您可以选择区段的数据视图。  您定义的区段可用作某个数据视图的[设置](/help/data-views/create-dataview.md#settings-filters)选项卡中的区段。 |
+   | **[!UICONTROL 数据视图]** | 您可以为区段选择数据视图。  您定义的区段可用作某个数据视图的[设置](/help/data-views/create-dataview.md#settings-filters)选项卡中的区段。 |
    | **[!UICONTROL “仅用于项目的区段]** | 一个信息框，说明该区段仅在创建它的项目中可见，且不会添加到您的组件列表中。 启用&#x200B;**[!UICONTROL 提供此区段给您的所有项目，并将其添加到组件列表中]**，以更改该设置。 此信息框仅在您创建[快速区段](seg-quick.md)，并通过[!UICONTROL 快速区段]界面中的&#x200B;**[!UICONTROL 打开生成器]**&#x200B;将此快速区段转换为常规区段时可见。 |
    | **[!UICONTROL 标题]**![必填](/help/assets/icons/Required.svg) | 命名该区段，例如，`Last month mobile customers`。 |
    | **[!UICONTROL 描述]** | 提供关于该区段的描述，例如，`Segment to define the mobile customers for the last month`。 |
@@ -93,9 +85,23 @@ ht-degree: 80%
 
 1. 将一个组件从组件面板拖放到 **[!UICONTROL 将量度、区段和/或维度拖放到此处]**。
    * 您可以使用组件栏中的![搜索](/help/assets/icons/Search.svg)来搜索特定组件。
-   * 您可以在组件栏中使用![筛选器](/help/assets/icons/Filter.svg)按![复选标记](/help/assets/icons/Checkmark.svg) **[!UICONTROL 已批准]**、![星级](/help/assets/icons/Star.svg) **[!UICONTROL 收藏夹]**、![数据维度](/help/assets/icons2/DataDimension.svg) **[!UICONTROL 维度]**、![事件](/help/assets/icons/Event.svg) **[!UICONTROL 量度]**、![分段](/help/assets/icons/Segmentation.svg) **[!UICONTROL 区段]**、![日历](/help/assets/icons/Calendar.svg) **[!UICONTROL 日期范围]**&#x200B;进行筛选![层](/help/assets/icons/Layer.svg) **[!UICONTROL *容器&#x200B;*]**&#x200B;组件（如产品、Content Assets）。 您还可以按![标签](/help/assets/icons/Label.svg)标记进行筛选。
+   * 您可以在组件栏中使用![筛选器](/help/assets/icons/Filter.svg)按![复选标记](/help/assets/icons/Checkmark.svg) **[!UICONTROL 已批准]**、![星级](/help/assets/icons/Star.svg) **[!UICONTROL 收藏夹]**、![数据维度](/help/assets/icons2/DataDimension.svg) **[!UICONTROL 维度]**、![事件](/help/assets/icons/Event.svg) **[!UICONTROL 量度]**、![分段](/help/assets/icons/Segmentation.svg) **[!UICONTROL 区段]**、![日历](/help/assets/icons/Calendar.svg) **[!UICONTROL 日期范围]**&#x200B;进行筛选![层](/help/assets/icons/Layer.svg) **[!UICONTROL *容器&#x200B;*]**组件（如产品、Content Assets）。 您还可以按![标签](/help/assets/icons/Label.svg)标记进行筛选。
+
 1. 指定组件的详细信息。 例如，从&#x200B;**[!UICONTROL 选择值]**&#x200B;中选择一个值。 或输入一个值。 指定一个或多个值的内容和方式取决于组件和运算符。
-1. 可选择修改默认运算符。 例如，从&#x200B;**[!UICONTROL 等于]**&#x200B;到&#x200B;**[!UICONTROL 等于任意一个]**。 请参阅 [运算符](seg-operators.md)，了解可用运算符的详细概述。
+
+1. （可选）启用选项&#x200B;[!UICONTROL **将结果限制在报表日期范围**]。
+
+   如果您的区段包含日期范围组件，Workspace报表中的数据可能会超过报表的日期范围。
+
+   启用此选项可将结果限制为报表日期范围，而不管区段中包含任何日期组件。
+
+   仅当从&#x200B;**[!UICONTROL 包含]**&#x200B;或&#x200B;**[!UICONTROL 排除]**&#x200B;下拉菜单中选择&#x200B;[!UICONTROL **人员**]&#x200B;作为定义的范围（容器）时，才会显示此选项。
+
+   **注意**：此功能处于版本的有限测试阶段，可能尚未在您的环境中可用。 当该功能正式可用时，将删除此说明。 有关 Customer Journey Analytics 发布流程的信息，请参阅 [Customer Journey Analytics 功能版本](/help/release-notes/releases.md)。
+
+1. （可选）修改默认运算符。
+
+   例如，从&#x200B;**[!UICONTROL 等于]**&#x200B;到&#x200B;**[!UICONTROL 等于任意一个]**。 请参阅 [运算符](seg-operators.md)，了解可用运算符的详细概述。
 
 要编辑组件，请执行以下操作：
 
@@ -125,9 +131,9 @@ ht-degree: 80%
 | 容器操作 | 描述 |
 |---|---|
 | **[!UICONTROL 添加容器]** | 向容器中添加嵌套容器。 |
-| **[!UICONTROL 排除]** | 在区段定义中排除容器中的结果。 左侧的细红色条身份标识排除容器。 |
-| **[!UICONTROL 包含]** | 在区段定义中包含容器中的结果。 默认为包含。 左侧的细灰色条身份标识了包含容器。 |
-| **[!UICONTROL 为容器命名]** | 根据容器的默认描述重命名容器。 在文本字段中输入名称。 如果您未提供任何输入内容，则会使用默认描述。 |
+| **[!UICONTROL 排除]** | 在区段定义中排除容器中的结果。 左侧的细红色条标识排除容器。 |
+| **[!UICONTROL 包含]** | 在区段定义中包含容器中的结果。 默认为包含。 左侧的细灰色条标识包含容器。 |
+| **[!UICONTROL 为容器命名]** | 将容器从其默认描述重命名。 在文本字段中输入名称。 如果您未提供任何输入内容，则会使用默认描述。 |
 | **[!UICONTROL 删除容器]** | 从定义中删除容器。 |
 
 将定义为[容器](/help/data-views/create-dataview.md#containers-1)的维度或量度拖入区段生成器将自动选择正确的容器，而不是默认的&#x200B;**[!UICONTROL 事件]**&#x200B;容器。 此行为将区段的范围限制为单个容器，而不是整个事件。
@@ -143,7 +149,7 @@ ht-degree: 80%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [区段中的滚动日期范围](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/components/segmentation/rolling-date-ranges-in-segments){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [区段中的滚动日期范围](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/segmentation/rolling-date-ranges-in-segments){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -166,7 +172,7 @@ ht-degree: 80%
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_repeating"
 >title="重复"
->abstract="包括维度的实例及持续值。"
+>abstract="包括维度的实例和持续保留的值。"
 
 
 >[!CONTEXTUALHELP]
