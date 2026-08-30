@@ -7,19 +7,14 @@ type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
 TQID: https://experienceleague.adobe.com/hvK60b1ST9yjl9fz0kFnSncTRXtZQCYvDmLCUCP1Yik
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: d76b9e53-27fb-4597-933f-419cc0dd46db
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 563f5d89ee9977a956565f68cb2b75adcfb37c0f
 workflow-type: tm+mt
-source-wordcount: 878
-ht-degree: 14%
+source-wordcount: 934
+ht-degree: 13%
 
 ---
 
@@ -29,12 +24,15 @@ ht-degree: 14%
 
 您可以为单个工作簿创建多个计划。 例如，您创建了两个计划，每周向团队和经理发送一次工作簿。
 
-使用计划功能，您还可以为工作簿设置密码保护并编辑以前计划的工作簿。
+计划功能还允许您为工作簿设置密码保护并编辑以前计划的工作簿的计划。
 
+>[!NOTE]
+>
+>计划会发送您在创建计划时已存在的工作簿版本。 如果您稍后更改并保存工作簿，则现有计划不会选取这些更改，将继续发送原始版本。 要分发更新的工作簿，请在保存更改后创建新的计划。
 
 >[!BEGINSHADEBOX]
 
-请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [计划工作簿](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/exporting/report-builder/schedule-cja-workbooks-using-report-builder){target="_blank"}以观看演示视频。
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [计划工作簿](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/exporting/report-builder/schedule-cja-workbooks-using-report-builder){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -51,7 +49,7 @@ ht-degree: 14%
 
    ![计划工作簿窗口。](./assets/schedule-workbook.png){zoomable="yes"}
 
-   计划窗格显示有关工作簿的一些预定义信息，例如工作簿名称和修改工作簿的最后日期。
+   计划窗格显示有关工作簿的一些预定义信息，例如工作簿名称和工作簿上次修改的日期。
 
 ### 文件
 
@@ -113,7 +111,7 @@ Does no longer seem to be an option?
 
 1. 选择&#x200B;**[!UICONTROL 显示计划选项]**&#x200B;以定义计划。
 
-1. 输入从&#x200B;**开始的**&#x200B;开始日期。 或者，选择![日历](/help/assets/icons/Calendar.svg)以从日历中选择开始日期。
+1. 输入从&#x200B;]**开始的**[!UICONTROL &#x200B;开始日期。 或者，选择![日历](/help/assets/icons/Calendar.svg)以从日历中选择开始日期。
 
 1. 在&#x200B;**[!UICONTROL 结束日期]**&#x200B;中输入结束日期。 或者，选择![日历](/help/assets/icons/Calendar.svg)以从日历中选择结束日期。
 
