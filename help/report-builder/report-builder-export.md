@@ -23,10 +23,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 563f5d89ee9977a956565f68cb2b75adcfb37c0f
 workflow-type: tm+mt
-source-wordcount: 1309
-ht-degree: 40%
+source-wordcount: 1343
+ht-degree: 39%
 
 ---
 
@@ -53,10 +53,6 @@ ht-degree: 40%
 ![步骤1至4中描述的导出过程。](assets/report-builder-export-process.png)
 
 ## 从Report Builder导出报告
-
->[!NOTE]
->
->在按本节所述导出数据之前，请先在上一节中了解有关[导出过程](#understand-the-export-process)的更多信息。
 
 要从Report Builder导出报表，请执行以下操作：
 
@@ -100,6 +96,10 @@ ht-degree: 40%
    数据会按照您指定的频率发送到您指定的云帐户。
 
 1. （可选）创建导出后，无论您选择立即发送还是按照定义的计划发送，您都可以在[导出页面](/help/components/exports/manage-exports.md)上查看和管理它，并在[导出日志](/help/components/exports/manage-export-logs.md)中查看它。</p>
+
+>[!NOTE]
+>
+>计划会导出创建计划时已存在的工作簿版本。 如果稍后更改并保存工作簿，则现有计划不会选取这些更改，将继续导出原始版本。 要导出更新的工作簿，请在保存更改后创建新计划。
 
 ## 管理导出
 

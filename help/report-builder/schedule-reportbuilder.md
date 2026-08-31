@@ -16,10 +16,10 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 563f5d89ee9977a956565f68cb2b75adcfb37c0f
 workflow-type: tm+mt
-source-wordcount: 878
-ht-degree: 14%
+source-wordcount: 934
+ht-degree: 13%
 
 ---
 
@@ -29,8 +29,11 @@ ht-degree: 14%
 
 您可以为单个工作簿创建多个计划。 例如，您创建了两个计划，每周向团队和经理发送一次工作簿。
 
-使用计划功能，您还可以为工作簿设置密码保护并编辑以前计划的工作簿。
+计划功能还允许您为工作簿设置密码保护并编辑以前计划的工作簿的计划。
 
+>[!NOTE]
+>
+>计划会发送您在创建计划时已存在的工作簿版本。 如果您稍后更改并保存工作簿，则现有计划不会选取这些更改，将继续发送原始版本。 要分发更新的工作簿，请在保存更改后创建新的计划。
 
 >[!BEGINSHADEBOX]
 
@@ -51,7 +54,7 @@ ht-degree: 14%
 
    ![计划工作簿窗口。](./assets/schedule-workbook.png){zoomable="yes"}
 
-   计划窗格显示有关工作簿的一些预定义信息，例如工作簿名称和修改工作簿的最后日期。
+   计划窗格显示有关工作簿的一些预定义信息，例如工作簿名称和工作簿上次修改的日期。
 
 ### 文件
 
