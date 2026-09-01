@@ -40,6 +40,6 @@ ht-degree: 81%
 
 >[!CONTEXTUALHELP]
 >id="conversation-insights_config_dataview"
->title="数据视图
+>title="数据视图"
 >abstract="选择与您的连接关联的数据视图，用于进行 Conversation Insights 分析。 Conversation Insights 量度和维度将添加到您选择的数据视图中。"
 
