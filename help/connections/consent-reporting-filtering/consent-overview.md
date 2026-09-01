@@ -5,30 +5,21 @@ solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
 hide: true
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2:
-  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
-  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 7bb16378fc8813ca126cb786c5d36bf9daa0fe7d
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: eb00932f-4d46-46bc-b1d8-10de7588db8did: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: ffe2fd81-0630-49b3-a33b-4b8899e89c51id: d3fb138f-79e4-4a81-aedb-76dd93560085
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
 workflow-type: tm+mt
-source-wordcount: 1060
-ht-degree: 3%
+source-wordcount: 1311
+ht-degree: 2%
 
 ---
 
 # 同意报告和筛选概述
 
-同意报告和筛选使用存储在您的Adobe Experience Platform配置文件数据集中的同意策略成员资格数据来帮助您报告访客同意，并可以选择在未经同意的访客数据被摄取到Customer Journey Analytics之前排除这些访客。
+同意报告和筛选使用存储在您的Adobe Experience Platform配置文件数据集中的同意策略成员资格数据帮助您报告访客同意。 此外，您可以选择在未经同意的访客数据被摄取到Customer Journey Analytics中之前排除这些访客。
 
 ## 先决条件
 
@@ -55,7 +46,23 @@ ht-degree: 3%
 
 ## 同意报表与筛选
 
-同意报告和筛选是两项单独的功能。 您可以自行启用同意报告，也可以同时启用报告和过滤。
+同意报告和筛选是两项单独的功能。 **同意报告**&#x200B;允许您使用Analysis Workspace报告哪些访客与Experience Platform配置文件数据集中配置的各种同意策略相匹配。 **同意筛选**&#x200B;告知Customer Journey Analytics在摄取时排除非同意访客。
+
+您可以单独启用同意报表或过滤，也可以同时使用两者。 对于许多业务用例，仅启用同意报告就已足够。
+
+以下信息描述了使用每种配置的原因：
+
+* **最常见：**
+
+  **使用同意数据进行报告（不进行筛选）**：当您想要分析Analysis Workspace中的同意策略成员资格，并且不需要从摄取中排除任何访客数据时，此配置非常有用。
+
+* **不太常见：**
+
+  **同时使用同意数据来报告和筛选同意数据**：当您想要在Analysis Workspace中分析同意策略成员资格数据，并且您的组织还要求您在摄取时排除非同意访客数据时，此配置非常有用。
+
+* **不常见：**
+
+  **筛选同意数据（不报告）**：此配置不常见，但当您的组织要求您在摄取时排除非同意的访客数据，但您不需要报告不属于已筛选数据的其他同意选择时，此配置可能很有用。 例如，贵组织的合规性要求可能要求您根据同意过滤数据，而不是要求您创建和维护报告使用的同意策略查找数据集。
 
 ### 同意报告
 
@@ -79,10 +86,12 @@ ht-degree: 3%
 
   营销活动表示数据使用的类别。 Customer Journey Analytics确定哪些同意策略适用于每个营销操作，并且您在[创建配置](/help/connections/consent-reporting-filtering/consent-configure.md#create-a-configuration)时独立地为每个营销操作启用筛选。
 
+  营销活动会绑定到您在Experience Platform中配置的数据使用标签和策略。 有关详细信息，请参阅[标签、策略和营销操作](/help/data-views/data-governance.md)。
+
   | 营销操作 | 描述 |
-  |---------|----------|
-  | **[!UICONTROL 分析数据]** | Analysis Workspace 中的标准 Customer Journey Analytics 报告。 |
-  | **[!UICONTROL 数据科学数据]** | 高级分析、机器学习和数据科学用例。 |
+  | --------- | ---------- |
+  | **[!UICONTROL 分析数据]** | 在Analysis Workspace中过滤用于标准Customer Journey Analytics报表的数据。 |
+  | **[!UICONTROL 数据科学数据]** | 过滤用于高级分析、机器学习和数据科学用例的数据。 |
 
 * 仅当访客与&#x200B;**所有**&#x200B;适用的同意策略匹配时才会摄取访客的数据。 如果访客缺少任何适用的策略，则会排除该访客的数据。
 

@@ -1,27 +1,19 @@
 ---
 title: 配置同意报告和筛选
-description: 了解如何使用配置向导为Customer Journey Analytics中的连接启用同意报表和可选的摄取时间过滤。
+description: 了解如何在Customer Journey Analytics中创建配置以启用连接的同意报表和可选的引入时间过滤。
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
 hide: true
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2:
-  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
-  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 7bb16378fc8813ca126cb786c5d36bf9daa0fe7d
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: eb00932f-4d46-46bc-b1d8-10de7588db8did: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: ffe2fd81-0630-49b3-a33b-4b8899e89c51id: d3fb138f-79e4-4a81-aedb-76dd93560085
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
 workflow-type: tm+mt
-source-wordcount: 981
-ht-degree: 23%
+source-wordcount: 1326
+ht-degree: 20%
 
 ---
 
@@ -32,7 +24,7 @@ ht-degree: 23%
 >[!CONTEXTUALHELP]
 >id="cja-consent-merge-policy"
 >title="合并策略"
->abstract="合并策略可将多个数据集中的轮廓数据整合为统一的客户轮廓，用于创建受众。 如果存在多个合并策略且您不确定应选择哪一个，请选择“默认基于时间”。 或者咨询您的数据团队，了解每个合并策略关联的受众。"
+>abstract="合并策略可将多个数据集中的轮廓数据整合为统一的客户轮廓，用于创建受众。 选择与包含要报告的同意策略成员资格数据（`consentPoliciesIDMap`字段）的配置文件数据集对应的合并策略。 或者咨询您的数据团队，了解每个合并策略关联的受众。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -63,6 +55,24 @@ ht-degree: 23%
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-enable-reporting"
+>title="启用报告"
+>abstract="启用此选项可使用Analysis Workspace报告连接中可用的同意数据。 同意策略维度和量度将添加到您选择的数据视图中。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-enable-filtering"
+>title="启用筛选"
+>abstract="启用此选项可排除未经同意的访客数据摄取到Customer Journey Analytics。 启用后，仅当访客与下面启用的所有同意策略相匹配时，才会摄取访客的数据。 <br>此选项适用于需要在摄取时排除非同意访客数据的组织。"
+
+<!-- markdownlint-enable MD034 -->
+
 系统管理员可以为一个或多个连接启用同意报告和（可选）同意过滤。 有关概述信息，请参阅[同意报告和筛选概述](/help/connections/consent-reporting-filtering/consent-overview.md)。
 
 >[!IMPORTANT]
@@ -71,13 +81,15 @@ ht-degree: 23%
 
 ## 创建配置
 
-在创建同意报告和筛选配置时，请选择包含同意策略成员资格数据的沙盒和配置文件数据集，选择要配置的连接或连接，并选择是否筛选每个营销操作的数据。 然后，Customer Journey Analytics会自动创建同意策略查找数据集和同意策略组件。
+在创建同意报告和筛选配置时，您可以选择包含同意策略成员资格数据的沙盒和合并策略，选择要配置的连接或连接，并选择是否筛选每个营销操作的数据。 然后，Customer Journey Analytics会自动创建同意策略查找数据集和同意策略组件。
 
 要创建同意报告和筛选配置，请执行以下操作：
 
 1. 在Customer Journey Analytics中，选择&#x200B;**[!UICONTROL 数据管理]** > **[!UICONTROL 同意报告和筛选]**。
 
 1. 选择&#x200B;**[!UICONTROL 创建配置]**。
+
+   ![同意配置页面](assets/consent-configure.png)
 
 1. 在&#x200B;**[!UICONTROL 详细信息]**&#x200B;部分中，指定以下信息：
 
@@ -86,32 +98,50 @@ ht-degree: 23%
    | **[!UICONTROL 名称]** | 指定配置的名称。 |
    | **[!UICONTROL 沙盒]** | 选择包含带有同意策略成员资格数据的配置文件数据集的Experience Platform沙盒。 <p>每个沙盒最多存在一个同意策略查找数据集。 同一沙盒中的多个配置共享相同的查找数据集。</p> |
 
-1. 在&#x200B;**[!UICONTROL 配置文件数据集]**&#x200B;部分中，选择包含要报告的同意策略成员资格数据（`consentPoliciesIDMap`字段）的配置文件数据集。 当您启用同意报告时，此用户档案数据集将添加到您选择的连接（如果该连接尚未包含在其中）。
+1. 在&#x200B;**[!UICONTROL 配置文件数据集]**&#x200B;部分的&#x200B;**[!UICONTROL 合并策略]**&#x200B;字段中，选择与包含要报告的同意策略成员资格数据（`consentPoliciesIDMap`字段）的配置文件数据集对应的合并策略。 当您启用同意报告时，此用户档案数据集将添加到您选择的连接（如果该连接尚未包含在其中）。<p>合并策略可确定Adobe Experience Platform如何将来自多个数据集的配置文件数据合并到统一的客户配置文件中，以用于同意策略成员资格数据。 每天都会在Experience Platform中生成此数据的快照。 此快照提供特定时间点数据的静态视图，不包含任何事件数据。</p><p>如果您看到多个合并策略并且不确定选择哪一个，请选择&#x200B;**[!UICONTROL 默认基于时间]**&#x200B;的合并策略。 您还可以咨询数据团队，以更好地了解哪些同意数据与每个合并策略关联。</p>
 
-1. 在&#x200B;**[!UICONTROL 连接]**&#x200B;部分中，选择&#x200B;**[!UICONTROL 选择连接]**，选中要配置的一个或多个连接旁边的复选框，然后选择&#x200B;**[!UICONTROL 使用连接]**。
+1. 在&#x200B;**[!UICONTROL 连接]**&#x200B;部分中，选择&#x200B;**[!UICONTROL 选择连接]**，选中要配置的连接旁边的复选框，然后选择&#x200B;**[!UICONTROL 使用连接]**。
 
    在连接级别应用同意报告和筛选。 已配置连接下的所有数据视图将继承相同的行为。
 
-1. 在&#x200B;**[!UICONTROL 数据视图]**&#x200B;部分中，单击&#x200B;**[!UICONTROL 选择数据视图]**。
+1. 在&#x200B;**[!UICONTROL 人员ID]**&#x200B;字段中，从基于模型的架构中选择一个表示人员ID的字段。 选择仅限于架构中标记为“身份标识”且具有身份标识命名空间的字段的列表。
 
-1. 在数据视图对话框中，选中一个或多个要用于同意报告的数据视图旁边的复选框。 这些数据视图自动配置有Experience Platform同意数据以用于报表。
+1. 选择是否启用同意数据的报表。
 
-1. 选择&#x200B;**[!UICONTROL 使用数据视图]**。
+   有关何时启用报表的信息，请参阅[同意报表与筛选](/help/connections/consent-reporting-filtering/consent-overview.md#consent-reporting-vs-filtering)。
 
-1. （可选）在&#x200B;**[!UICONTROL 筛选]**&#x200B;部分中，选择&#x200B;[!UICONTROL **启用筛选**]&#x200B;以筛选同意数据。
+   要启用和配置报表，请执行以下操作：
 
-   启用筛选后，仅当访客与启用的任何同意策略匹配时，Customer Journey Analytics才会摄取访客的数据。 有关详细信息，请参阅[同意报告和筛选概述](/help/connections/consent-reporting-filtering/consent-overview.md)中的[同意筛选](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering)。
+   1. 在&#x200B;**[!UICONTROL 报表]**&#x200B;部分中，选择&#x200B;**[!UICONTROL 启用报表]**。
 
-1. （可选）启用以下营销操作的筛选：
+   1. 选择与您的连接相关联的、您在 Analysis Workspace 中分析 Platform 同意数据时想使用的数据视图。 在&#x200B;**[!UICONTROL 数据视图]**&#x200B;部分中，单击&#x200B;**[!UICONTROL 选择数据视图]**。
 
-   >[!NOTE]
-   >
-   >启用营销活动过滤功能后，仅当访客与适用于该营销活动的&#x200B;**所有**&#x200B;同意策略相匹配时，Customer Journey Analytics才会摄取访客的数据。 有关详细信息，请参阅[同意报告和筛选概述](/help/connections/consent-reporting-filtering/consent-overview.md)中的[同意筛选](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering)。
+   1. 在数据视图对话框中，选中一个或多个要用于同意报告的数据视图旁边的复选框。 这些数据视图自动配置有Experience Platform同意数据以用于报表。
 
-   | 营销操作 | 描述 |
-   |---------|----------|
-   | **[!UICONTROL 分析数据]** | 在Analysis Workspace中过滤用于标准Customer Journey Analytics报表的数据。 |
-   | **[!UICONTROL 数据科学数据]** | 过滤用于高级分析、机器学习和数据科学用例的数据。 |
+   1. 选择&#x200B;**[!UICONTROL 使用数据视图]**。
+
+1. 选择是否启用筛选，在摄取时排除非同意的访客。
+
+   启用筛选后，仅当访客与启用的所有同意策略匹配时，Customer Journey Analytics才会摄取访客的数据。
+
+   有关何时启用筛选的信息，请参阅[同意报告与筛选](/help/connections/consent-reporting-filtering/consent-overview.md#consent-reporting-vs-filtering)。
+
+   要启用和配置筛选，请执行以下操作：
+
+   1. 在&#x200B;**[!UICONTROL 筛选]**&#x200B;部分中，选择&#x200B;**[!UICONTROL 启用筛选]**&#x200B;以筛选同意数据。
+
+   1. 为以下一个或两个营销操作启用筛选：
+
+      >[!NOTE]
+      >
+      >启用营销活动过滤功能后，仅当访客与适用于该营销活动的&#x200B;**所有**&#x200B;同意策略相匹配时，Customer Journey Analytics才会摄取访客的数据。 有关详细信息，请参阅[同意报告和筛选概述](/help/connections/consent-reporting-filtering/consent-overview.md)中的[同意筛选](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering)。
+
+      营销活动会绑定到您在Experience Platform中配置的数据使用标签和策略。 有关详细信息，请参阅[标签、策略和营销操作](/help/data-views/data-governance.md)。
+
+      | 营销操作 | 描述 |
+      | --------- | ---------- |
+      | **[!UICONTROL 分析数据]** | 在Analysis Workspace中过滤用于标准Customer Journey Analytics报表的数据。 |
+      | **[!UICONTROL 数据科学数据]** | 过滤用于高级分析、机器学习和数据科学用例的数据。 |
 
 1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以创建配置。
 

@@ -5,21 +5,14 @@ solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
 hide: true
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2:
-  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 7bb16378fc8813ca126cb786c5d36bf9daa0fe7d
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2: id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
 workflow-type: tm+mt
-source-wordcount: 585
+source-wordcount: 590
 ht-degree: 0%
 
 ---
@@ -53,7 +46,7 @@ ht-degree: 0%
 
 1. 创建配置并选择沙盒、配置文件数据集以及包含同意策略成员资格数据的连接。
 
-1. 将&#x200B;**[!UICONTROL Analytics]**&#x200B;和&#x200B;**[!UICONTROL 数据科学]**&#x200B;过滤保持关闭状态。
+1. 保留&#x200B;**[!UICONTROL Analytics数据]**&#x200B;和&#x200B;**[!UICONTROL 数据科学数据]**&#x200B;过滤将切换。
 
 1. 在Analysis Workspace中，使用&#x200B;**[!UICONTROL 策略名称]**&#x200B;维度和&#x200B;**[!UICONTROL 同意的访客]**&#x200B;量度构建自由格式表以查看每个策略的覆盖率。
 
@@ -70,7 +63,7 @@ ht-degree: 0%
 
 1. 创建或编辑支持分析报表的连接配置。
 
-1. 启用&#x200B;**[!UICONTROL Analytics]**&#x200B;筛选切换。
+1. 启用&#x200B;**[!UICONTROL Analytics数据]**&#x200B;过滤切换。
 
 1. 确认配置。 此后，仅当访客与适用于Analytics营销操作的所有同意策略匹配时，Customer Journey Analytics才会摄取访客的数据。
 
@@ -86,7 +79,7 @@ ht-degree: 0%
 
 1. 创建或编辑相关连接的配置。
 
-1. 根据每个用例的同意要求，启用&#x200B;**[!UICONTROL Analytics]**&#x200B;切换和/或&#x200B;**[!UICONTROL 数据科学]**&#x200B;切换。
+1. 启用&#x200B;**[!UICONTROL Analytics数据]**&#x200B;切换、**[!UICONTROL 数据科学数据]**&#x200B;切换或同时启用这两者，具体取决于每个用例的同意要求。
 
 1. 确认配置。 Customer Journey Analytics会独立评估适用于每个已启用的营销操作的同意政策。
 
