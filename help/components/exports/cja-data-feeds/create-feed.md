@@ -5,22 +5,14 @@ hide: true
 feature: Components
 autotag-review: '2026-05-19T08:45:44.870Z'
 TQID: 'https://experienceleague.adobe.com/QgBD7vCkw4YA568XOLlwTnw8eZVZybXr3DFbM1ZKYDw'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: fdd9b5738103166d7c64666f85d0c508c7176fd0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: f5a7272f80aaba167974f2218bc84408d47f62d4
 workflow-type: tm+mt
-source-wordcount: 4178
+source-wordcount: 4217
 ht-degree: 30%
 
 ---
@@ -73,7 +65,16 @@ ht-degree: 30%
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_user-agent"
 >title=""
->abstract="用户代理数据和设备查找数据不能存在于同一个数据馈送配置中。"
+>abstract="用户代理数据和设备查找数据不能包含在同一数据馈送配置中。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_datafeed_required_dimensions"
+>title="必需维度"
+>abstract="每个数据馈送都必须包含某些维度，这些维度由维度名称旁边的&#x200B;**Required**&#x200B;标签标识。 这些维度提供了事件级别分析所需的最低结构。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -114,13 +115,13 @@ ht-degree: 30%
 
    您在此处应用的区段是对可能已应用于数据视图的任何区段之外的区段。
 
-1. （可选）在左边栏中，使用&#x200B;**搜索**&#x200B;字段查找特定组件，或选择&#x200B;**排序**&#x200B;图标![排序组件图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg)以应用以下任何排序选项：
+1. （可选）在左边栏中，使用&#x200B;**搜索**&#x200B;字段来查找特定组件。 或者，选择&#x200B;**排序**&#x200B;图标![排序组件图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg)以应用以下任何排序选项：
 
    | 选项 | 功能 |
-   |---------|----------|
+   | --------- | ---------- |
    | [!UICONTROL **建议**] | 为组件排序，将推荐的组件置于列表的顶部。 您或您组织中的其他人最频繁且最近使用的组件显示在列表的较高位置。 |
    | [!UICONTROL **按字母顺序**] | 按字母顺序为组件排序。 |
-   | [!UICONTROL **分类**] | 根据组件类型（维度、量度、区段、日期范围）为组件排序。 |
+   | [!UICONTROL **分类**] | 与&#x200B;[!UICONTROL **推荐**]&#x200B;类似的组件排序，不同之处在于计算量度和标准量度是分开分组的，而不是混合在一起。 |
 
 1. 将组件添加到数据馈送配置。 左边栏仅显示对数据馈送有效的组件。
 
@@ -380,7 +381,7 @@ ht-degree: 30%
 * 用户有一个时间戳位于数据馈送频率窗口（数据馈送的给定小时或日期）内的事件。
 * 该用户在回顾日期范围&#x200B;**内的某个时间符合&#x200B;_促销活动B_区段**&#x200B;的资格。
 
-  对于9天前发生的符合条件的事件，这意味着，如果回顾日期范围设置为30天，则数据馈送中将包括用户&#x200B;**&#x200B;**；如果回顾日期范围设置为7天，则数据馈送中将不包括用户&#x200B;**&#x200B;**。
+  对于9天前发生的符合条件的事件，这意味着，如果回顾日期范围设置为30天，则数据馈送中将包括用户&#x200B;****；如果回顾日期范围设置为7天，则数据馈送中将不包括用户&#x200B;****。
 
 >[!ENDSHADEBOX]
 
@@ -415,7 +416,7 @@ ht-degree: 30%
 
 * 该用户在回顾日期范围&#x200B;**内的某个时间符合原始营销活动**&#x200B;的资格。
 
-  如果用户在9天前符合原始促销活动的资格，则回顾日期范围设置为30天时，数据馈送中将包含原始促销活动&#x200B;**&#x200B;**；但是如果回顾日期范围设置为7天，则数据馈送中将不包含原始促销活动&#x200B;**&#x200B;**。
+  如果用户在9天前符合原始促销活动的资格，则回顾日期范围设置为30天时，数据馈送中将包含原始促销活动&#x200B;****；但是如果回顾日期范围设置为7天，则数据馈送中将不包含原始促销活动&#x200B;****。
 
 >[!ENDSHADEBOX]
 
