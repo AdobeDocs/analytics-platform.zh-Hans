@@ -28,7 +28,7 @@ topic_v2:
 source-git-commit: 6c137d20d25cff6fe4630dedb33cfa8b88c121aa
 workflow-type: tm+mt
 source-wordcount: 4186
-ht-degree: 64%
+ht-degree: 65%
 
 ---
 
@@ -84,12 +84,12 @@ ht-degree: 64%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_button"
 >title="详细信息"
->abstract="提供该连接的名称。 提供配置的名称，然后选择包含要分析的内容分析数据的沙盒。"
+>abstract="提供该连接的名称。 为该配置命名，并选择包含要分析的内容分析数据的沙盒。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="详细信息"
->abstract="本指南列出了配置 Content Analytics 所需的必要条件。 请提供此配置的名称并选择包含要分析的内容分析数据的沙盒。"
+>abstract="本指南列出了配置 Content Analytics 所需的必要条件。 请为此配置提供名称，并选择包含要分析的内容分析数据的沙盒。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_boldheader"

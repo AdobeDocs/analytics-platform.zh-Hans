@@ -8,7 +8,7 @@ hide: true
 source-git-commit: 30194647c56e7eaa8441b915d16f53ba3ff1bd40
 workflow-type: tm+mt
 source-wordcount: '102'
-ht-degree: 9%
+ht-degree: 81%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 9%
 >[!CONTEXTUALHELP]
 >id="conversation-insights_config_details"
 >title="详细信息"
->abstract="提供配置的名称，然后选择包含要分析的对话数据的沙盒。"
+>abstract="为该配置命名，并选择包含要分析的对话数据的沙盒。"
 
 ## 数据集
 
@@ -34,12 +34,12 @@ ht-degree: 9%
 >[!CONTEXTUALHELP]
 >id="conversation-insights_config_connection"
 >title="连接"
->abstract="选择Customer Journey Analytics中将对话数据添加到其中的连接。"
+>abstract="选择 Customer Journey Analytics 中添加对话数据的连接。"
 
 ## 数据视图
 
 >[!CONTEXTUALHELP]
 >id="conversation-insights_config_dataview"
 >title="数据视图"
->abstract="选择与您的连接关联的数据视图，以便用于对话分析分析。 对话见解量度和维度将添加到您选择的数据视图中。"
+>abstract="选择与您的连接关联的数据视图，用于进行 Conversation Insights 分析。 Conversation Insights 量度和维度将添加到您选择的数据视图中。"
 

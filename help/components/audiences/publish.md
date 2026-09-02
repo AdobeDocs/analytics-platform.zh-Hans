@@ -24,7 +24,7 @@ topic_v2:
 source-git-commit: 87de19a64e49f83c99df7980828b97a1da2c2d16
 workflow-type: tm+mt
 source-wordcount: 2520
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="components_audiences_refreshfrequency"
 >title="刷新频率"
->abstract="重新评估受众成员资格的频率。<br/>一次性请求只评估一次，不计入刷新限制。"
+>abstract="重新评估受众成员资格的频率。<br/>一次性请求仅评估一次，且不计入您的刷新次数限制。"
 
 <!-- markdownlint-enable MD034 -->
 

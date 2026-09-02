@@ -27,9 +27,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 89f0a1e54662c59d474b1fba28eb8420612e9243
+source-git-commit: e8f86da8d18cfa6a30e4a8330ae5492e9d0aa2f0
 workflow-type: tm+mt
-source-wordcount: 21140
+source-wordcount: 21213
 ht-degree: 98%
 
 ---
@@ -677,6 +677,7 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 
 &#x200B;| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
+| [!UICONTROL **同意策略概述**] | 根据 Adobe Experience Platform 中的同意策略成员资格数据查看访客。<p>**这可以帮助您**&#x200B;以此为起点，针对访客的同意策略成员资格生成报告。 当数据视图配置为用于同意情况报告时，Customer Journey Analytics 会自动在 Analysis Workspace 中提供同意策略分析模板。 <br/>**根据分析结果，您可以采取多种措施，例如从分析报告中排除未给予同意的访客。**</p> |
 | **[!UICONTROL 受众概述]** | 查看访问您网站的用户中所包含的受众群体。<p>**这可以帮助您**&#x200B;更好地了解受众的一般信息、受众来源（RTCDP、Customer Journey Analytics 等）、受众重叠等。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如利用这些数据来重点关注针对这些特定受众的营销工作，或者为跨越多个受众的客户创建量身定制的体验。</p><p>此模板使用“受众名称”、“受众来源”、“退出受众名称”和“退出受众来源”维度。</p><p>有关详细信息，请参阅[在Customer Journey Analytics中分析Experience Platform受众](/help/connections/audience-analysis/analyze-audiences.md)。</p> |
 | [!UICONTROL **首次访客与重复访客**] | 查看首次来访访客和重复访客的比较。 <p>**这可以帮助您**&#x200B;更好地了解您网站在维系客户忠诚度方面的有效性，或者您获取新客户的速度。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如为首次来访访客提供未来购买的激励，以吸引他们回访。</p><!-- This template uses the --> |
 | **人员 ID** | 查看各个渠道中的单个用户行为。<p>**这可以帮助您**&#x200B;更好地了解完整的客户历程和跨多个接触点的互动。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如开展个性化营销，更好地针对用户偏好。</p><!-- This template uses the --> |
