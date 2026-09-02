@@ -27,10 +27,10 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: e8f86da8d18cfa6a30e4a8330ae5492e9d0aa2f0
+source-git-commit: bac086b2636f835a5dc494b9cd05eb7b560f0bed
 workflow-type: tm+mt
-source-wordcount: 21213
-ht-degree: 98%
+source-wordcount: 21458
+ht-degree: 97%
 
 ---
 
@@ -153,17 +153,17 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 
    * **[[!UICONTROL 最受欢迎]](#most-popular)**
 
-   * **[[!UICONTROL Web]** > **[!UICONTROL 参与度]](#engagement)**
+   * **[!UICONTROL Web]** > **[[!UICONTROL 参与]](#web-engagement)**
 
-   * **[[!UICONTROL Web]** > **[!UICONTROL 转化]](#web-conversion)**
+   * **[!UICONTROL Web]** > **[[!UICONTROL 转化]](#web-conversion)**
 
-   * **[[!UICONTROL Web]** > **[!UICONTROL 受众]](#web-audience)**
+   * **[!UICONTROL Web]** > **[[!UICONTROL 受众]](#web-audience)**
 
-   * **[[!UICONTROL Web]** > **[!UICONTROL 客户获取]](#web-acquisition)**
+   * **[!UICONTROL Web]** > **[[!UICONTROL 客户获取]](#web-acquisition)**
 
-   * **[[!UICONTROL Mobile]** > **[!UICONTROL 移动设备应用程序]](#mobile-mobile-app)**
+   * **[!UICONTROL 移动设备]** > **[[!UICONTROL 移动设备App]](#mobile-mobile-app)**
 
-   * **[[!UICONTROL Mobile]** > **[!UICONTROL 移动设备信息]](#mobile-mobile-device-information)**
+   * **[!UICONTROL 移动设备]** > **[[!UICONTROL 移动设备信息]](#mobile-mobile-device-information)**
 
    * **[[!UICONTROL Time Parting]](#time-parting)**
 
@@ -171,7 +171,13 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 
    * **[[!UICONTROL 其他渠道]](#other-channels)**
 
-   * **[[!UICONTROL AJO]](#ajo)**
+   * **[[!UICONTROL Journey Optimizer]](#ajo-templates)**
+
+   * **[[!UICONTROL Brand Concierge]](#brand-concierge)**
+
+   * **[[!UICONTROL Mix Modeler]](#mix-modeler)**
+
+
 
 ### 最受欢迎 {#most-popular}
 
@@ -409,6 +415,12 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 >abstract="**这可以帮助您**&#x200B;了解您的内容在粒度级别上的表现。 您可以查看单个资产或特定属性的表现。 Content Analytics 使用 AI 自动生成属性，并用它们标记您的内容。 [更多信息](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/content-analytics/content-analytics)。<br/>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如在主页上推广表现优异的资产，为特定区段市场提供个性化内容以包含表现优异的属性，或者轮换掉已经开始过时的内容。"
 
 
+
+>[!CONTEXTUALHELP]
+>id="template--content-analytics-paid-media"
+>title="了解哪些付费媒体内容和内容属性的表现最佳。"
+>abstract="**这可以帮助您**&#x200B;了解您的付费媒体内容在细粒度级别上的执行情况。 您可以跨网络、帐户、营销活动、体验和资产查看付费媒体覆盖率、参与度、支出和效率。 此面板中的量度和维度会刻意保留在付费媒体资产摘要粒度中。 不要将摘要数据集与事件数据相结合。  [更多信息](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/content-analytics/content-analytics)。<br/>**根据您了解的情况，您可能**&#x200B;会执行任意数量的操作，例如重新关注您如何在付费媒体渠道上支出、在表现不佳的营销活动上支出更多资金或在表现良好的资产营销活动上支出更多资金。"
+
 可使用以下模板：
 
 &#x200B;| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
@@ -427,7 +439,8 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 | **登入页面** | 查看人们首次访问您的网站时访问的热门页面。 <p>**这可以帮助您**&#x200B;更好地了解哪些页面为您的网站带来了最多的流量，或者更多地了解访客对您网站的第一印象。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如优化人们在网站上获得的初步体验，或者确保人们在进入您的网站时首先看到的页面是友好的，并提供指向您网站其他区域的必要链接。</p><p>此模板使用“会话”量度。 它还使用了条形可视化图表和自由格式表可视化图表。</p> |
 | **退出页面** | 查看人们在即将离开您的网站之前访问的热门页面。<p>**这可以帮助您**&#x200B;更好地了解哪些页面会导致人们离开网站。 </p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如更新常见的退出页面，以优化人们在离开前获得的体验，或者包含内容或链接，以鼓励人们留在您的网站上。</p><p>此模板使用“会话”量度。 它还使用了条形可视化图表和自由格式表可视化图表。</p> |
 | **产品使用情况概述** | 查看 Customer Journey Analytics 产品在您的组织内的使用情况。 <p>**这可以帮助您**&#x200B;更好地了解有多少人正在使用 Customer Journey Analytics、他们使用的频率以及随时间变化的使用趋势。 您还可以查看正在创建的项目数量和这些项目的详细信息（如最常用的组件、可视化图表和面板）以及许多其他使用统计数据。</p><p>**根据您获得的见解，您可以**&#x200B;采取多种行动，例如删除不使用的项目或组件，或者提供热门功能的用户培训。</p> |
-| **Content Analytics** | 了解哪些内容和内容属性表现最佳。<p>**这可以帮助您**&#x200B;了解您的内容在粒度级别上的表现。 您可以查看单个资产或特定属性的表现。 Content Analytics 使用 AI 自动生成属性，并用它们标记您的内容。 请参阅 [Content Analytics](/help/content-analytics/content-analytics.md){target="_blank"} 以了解更多信息。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如在主页上推广表现优异的资产，为特定区段市场提供个性化内容以包含表现优异的属性，或者轮换掉已经开始过时的内容。</p> |
+| **Content Analytics** | 了解哪些内容和内容属性表现最佳。<p>**这可以帮助您**&#x200B;了解您的内容在粒度级别上的表现。 您可以查看单个资产或特定属性的表现。 Content Analytics 使用 AI 自动生成属性，并用它们标记您的内容。 请参阅 [Content Analytics](/help/content-analytics/content-analytics.md) 以了解更多信息。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如在主页上推广表现优异的资产，为特定区段市场提供个性化内容以包含表现优异的属性，或者轮换掉已经开始过时的内容。</p> |
+| **付费媒体Content Analytics** | 了解哪些付费媒体内容和内容属性的表现最佳。<p>**这可以帮助您**&#x200B;了解您的付费媒体内容在细粒度级别上的执行情况。 您可以跨网络、帐户、营销活动、体验和资产查看付费媒体覆盖率、参与度、支出和效率。 此面板中的量度和维度会刻意保留在付费媒体资产摘要粒度中。 不要将摘要数据集与事件数据相结合。 请参阅 [Content Analytics](/help/content-analytics/content-analytics.md) 以了解更多信息。<p/><p>**根据您了解的情况，您可能**&#x200B;会执行任意数量的操作，例如重新关注您如何在付费媒体渠道上支出、在表现不佳的营销活动上支出更多资金或在表现良好的资产营销活动上支出更多资金。</p> |
 
 ### Web：转化 {#web-conversion}
 
@@ -1051,7 +1064,7 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 | **调查** | 查看您的调查的用户参与度。 查看开始和完成的次数、热门问题和答案以及首次参与者和重复参与者的数量。<p>**这可以帮助您**&#x200B;更好地了解调查的参与度和成功率。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，比如调整未来的调查以提升参与度。</p><p>该模板使用“用户”、“事件”、“调查开始”、“调查完成”和“调查完成率”这几个量度。</p> |
 | **产品使用情况概述** | 查看您的组织如何使用 Customer Journey Analytics。<p>**这可以帮助您**&#x200B;更好地了解您的组织中有多少人使用 Customer Journey Analytics、他们使用的频率以及随时间变化的数据趋势。 您还可以查看已创建项目的数量以及有关这些项目的详细信息。 查看最常用的组件、可视化图表和面板以及其他使用情况统计数据。 [了解详情](/help/tools/product-usage/usage-overview.md)</p><p>**根据您获得的见解，您可以**&#x200B;采取多种行动，例如删除不使用的项目或组件，或者提供热门功能的用户培训。</p> |
 
-### Journey Optimizer {#AJO-templates}
+### Journey Optimizer {#ajo-templates}
 
 <!--CJA only-->
 
@@ -1139,13 +1152,7 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 | [!UICONTROL **B2B 购买群组活动**] | 将每个帐户内的购买群组活动可视化，为帐户和购买群组营销策略提供参考。<p>**这可以帮助您**&#x200B;直观地了解哪些购买群组以及这些购买群组中的哪些人参与度最高，突出显示群组参与度方面的差异。</p><p>**根据您获得的见解，您可以**&#x200B;采取很多措施，例如尝试与购买群组中那些似乎未参与的人进行更多接触。</p> |
 
 
-### 混合建模器模板 {#mix-modeler-templates}
-
-可使用以下模板：
-
-&#x200B;| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
-| --- | --- |
-| [!UICONTROL **Mix Modeler增量模型分析**] | 查看由 Mix Modeler 生成的所选模型洞察。<p>**这可以帮助您**&#x200B;更好地了解 Mix Modeler 生成的模型带来的增量洞察。 <p>**基于这些洞察**，您能够：<ul><li>可视化并量化组织营销活动的影响。</li><li>识别表现优异的渠道。</li><li>识别可能需要优化的渠道。</li></ul></p> |
+### Mix Modeler {#mix-modeler-templates}
 
 <!-- CJA only -->
 
@@ -1153,3 +1160,13 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 >id="template--mixmodeler-incremental-models-insights"
 >title="查看由 Mix Modeler 生成的所选模型洞察。"
 >abstract="**这可以帮助您**&#x200B;更好地了解 Mix Modeler 生成的模型带来的增量洞察。 <br/>**基于这些洞察**，您能够：<ul><li>可视化并量化组织营销活动的影响。</li><li>识别表现优异的渠道。</li><li>识别可能需要优化的渠道。</li></ul>"
+
+可使用以下模板：
+
+&#x200B;| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| --- | --- |
+| [!UICONTROL **Mix Modeler增量模型分析**] | 查看由 Mix Modeler 生成的所选模型洞察。<p>**这可以帮助您**&#x200B;更好地了解 Mix Modeler 生成的模型带来的增量洞察。 <p>**基于这些洞察**，您能够：<ul><li>可视化并量化组织营销活动的影响。</li><li>识别表现优异的渠道。</li><li>识别可能需要优化的渠道。</li></ul></p> |
+
+
+
+

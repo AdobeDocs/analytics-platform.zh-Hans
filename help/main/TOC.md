@@ -2,9 +2,9 @@
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 144df28d7146435a225d5e8eefb3b10fee702045
+source-git-commit: 6b14b7df4c897c42c963fb93c48e7331b0264589
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1484'
 ht-degree: 93%
 
 ---
@@ -467,11 +467,12 @@ ht-degree: 93%
   + [概述](/help/stitching/overview.md)
   + [基于字段的拼接](/help/stitching/fbs.md)
   + [基于图形的拼接](/help/stitching/gbs.md)
-  + {hide-from-toc}[B2B帐户拼接](/help/stitching/b2b-account-stitching.md)
   + [请求拼接](/help/stitching/use-stitching.md)
   + [启用拼接](/help/stitching/use-stitching-ui.md)
   + [验证拼接](/help/stitching/validate.md)
   + [常见问题解答](/help/stitching/faq.md)
+  + B2B {#b2b}
+    + [人员到帐户的拼合](/help/stitching/b2b/b2b-person-to-account-stitching.md)
 
 + 总人口报表 {#tpr}
   + {hide-from-toc}[概述](/help/tpr/tpr.md)
@@ -586,3 +587,4 @@ ht-degree: 93%
 
 + [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)
 + [Customer Journey Analytics MCP服务器](https://developer.adobe.com/analytics-mcp/docs/cja/)
+
