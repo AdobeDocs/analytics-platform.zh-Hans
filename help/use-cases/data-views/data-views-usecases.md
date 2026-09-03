@@ -6,11 +6,18 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 TQID: https://experienceleague.adobe.com/qEgO-lqYk8ipVP99IBazrKAb7Jer-AN96-PY-f1KdPQ
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1462
@@ -60,7 +67,7 @@ ht-degree: 24%
 
 
 1. 将&#x200B;**[!UICONTROL 持续时间]**&#x200B;整数拖入[!UICONTROL 包含的组件]下的&#x200B;**[!UICONTROL 维度]**&#x200B;节：
-1. 您现在可以添加&#x200B;**[!UICONTROL 值分段]**以分段方式在报告中表示此维度。 如果不进行分段，此维度的每个实例都会显示为Workspace报表中的行项目。
+1. 您现在可以添加&#x200B;**[!UICONTROL 值分段]**&#x200B;以分段方式在报告中表示此维度。 如果不进行分段，此维度的每个实例都会显示为Workspace报表中的行项目。
    ![整数到维度](../assets/integer-to-dimension.gif){width=100%}
 
 
@@ -81,11 +88,11 @@ ht-degree: 24%
 
 1. 在数据视图[组件](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)选项卡上，将&#x200B;**[!UICONTROL 收入]**&#x200B;架构字段拖动到&#x200B;**[!UICONTROL 量度]**&#x200B;区域中[!UICONTROL 已包含的组件]下。
 1. 选择量度并在右侧配置以下内容：
-a. 在**[!UICONTROL 格式]**&#x200B;下，选择&#x200B;**[!UICONTROL 货币]**。
-b. 在**[!UICONTROL 货币]**&#x200B;下，选择&#x200B;**[!UICONTROL USD]**。
-c. 在**[!UICONTROL 包含/排除值]**&#x200B;下，选中&#x200B;**[!UICONTROL 设置包含/排除值]**旁边的复选框。
-d. 在**[!UICONTROL 匹配]**&#x200B;下，选择&#x200B;**[!UICONTROL 如果满足所有条件]**。
-e. 在**[!UICONTROL 标准]**&#x200B;下，选择&#x200B;**[!UICONTROL 大于或等于]**。
+a. 在&#x200B;**[!UICONTROL 格式]**&#x200B;下，选择&#x200B;**[!UICONTROL 货币]**。
+b. 在&#x200B;**[!UICONTROL 货币]**&#x200B;下，选择&#x200B;**[!UICONTROL USD]**。
+c. 在&#x200B;**[!UICONTROL 包含/排除值]**&#x200B;下，选中&#x200B;**[!UICONTROL 设置包含/排除值]**&#x200B;旁边的复选框。
+d. 在&#x200B;**[!UICONTROL 匹配]**&#x200B;下，选择&#x200B;**[!UICONTROL 如果满足所有条件]**。
+e. 在&#x200B;**[!UICONTROL 标准]**&#x200B;下，选择&#x200B;**[!UICONTROL 大于或等于]**。
 f. 指定`50`作为值。
 
 这些新设置允许您仅查看高价值收入，筛选掉任何低于 50 美元的收入。

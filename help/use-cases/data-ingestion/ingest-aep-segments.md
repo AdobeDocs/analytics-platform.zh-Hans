@@ -6,11 +6,19 @@ feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
 role: Admin
 TQID: https://experienceleague.adobe.com/cyNvsdN-bSBY2VqCdxAZvWhyTx8--sOUMifbuYrZKTM
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1680
@@ -345,7 +353,7 @@ WHERE value.status = 'realized' AND (key = '{AUDIENCE_ID_1}' OR key = 'AUDIENCE_
    1. （可选）输入&#x200B;**[!UICONTROL 描述]**。
    1. 选择&#x200B;**[!UICONTROL 完成]**。
 1. 设置架构以包含自定义字段组（例如&#x200B;**[!UICONTROL 受众成员资格]**），该自定义字段组包含名为&#x200B;**[!UICONTROL audienceMembershipId]**&#x200B;和&#x200B;**[!UICONTROL audienceMembershipName]**&#x200B;的两个字段。
-1. 确保&#x200B;**[!UICONTROL personID]**&#x200B;字段是&#x200B;**[!UICONTROL 标识]**、**[!UICONTROL 主标识]**，并且具有&#x200B;**[!UICONTROL 电子邮件]**&#x200B;作为I**[!UICONTROL 标识命名空间]**。
+1. 确保&#x200B;**[!UICONTROL personID]**&#x200B;字段是&#x200B;**[!UICONTROL 标识]**、**[!UICONTROL 主标识]**，并且具有&#x200B;**[!UICONTROL 电子邮件]**&#x200B;作为I&#x200B;**[!UICONTROL 标识命名空间]**。
 
    用于导出的![区段](assets/segment-for-export.png)
 
@@ -369,7 +377,7 @@ WHERE value.status = 'realized' AND (key = '{AUDIENCE_ID_1}' OR key = 'AUDIENCE_
    1. 输入数据集的&#x200B;**[!UICONTROL 名称]**。
    1. （可选）输入数据集的&#x200B;**[!UICONTROL 描述]**。
    1. 选择&#x200B;**[!UICONTROL 完成]**。
-1. 在数据集&#x200B;_]**的**[!UICONTROL &#x200B;数据集&#x200B;]**>**[!UICONTROL _&#x200B;名称中，将转换后的JSON数据文件拖放到&#x200B;**[!UICONTROL 拖放文件]**&#x200B;上。 此操作会开始将导出的JSON数据引入数据集。
+1. 在数据集&#x200B;_&#x200B;**的**&#x200B;[!UICONTROL &#x200B;数据集&#x200B;]&#x200B;**>**&#x200B;_&#x200B;名称中，将转换后的JSON数据文件拖放到&#x200B;**[!UICONTROL 拖放文件]**&#x200B;上。 此操作会开始将导出的JSON数据引入数据集。
 1. 验证摄取的批次。 如果数据集包含失败的批次，请使用&#x200B;**[!UICONTROL 数据管理]** > ![监视](/help/assets/icons2/Monitoring.svg) **[!UICONTROL 监视]**&#x200B;查看原因。 例如，您在JSON中定义的字段名称在架构中不存在。
 
 

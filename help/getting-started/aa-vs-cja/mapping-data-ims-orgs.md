@@ -7,11 +7,18 @@ feature: Adobe Analytics Integration,Administration
 exl-id: c109742b-c1c5-45b3-971f-f8dcf814ec37
 autotag-review: '2026-05-19T09:13:16.649Z'
 TQID: 'https://experienceleague.adobe.com/sMivwoUTSa8KcQcaK8kR5PlbCF8stVNGeL5YET4usMI'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2: id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2:
+  - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 1127
@@ -58,7 +65,7 @@ ht-degree: 2%
 
 Adobe客户经理收到一封电子邮件，其中包含从多个组织映射Analytics数据的请求，随后将在Adobe中审核该请求。 有关任何其他问题、可选培训及其他信息，Adobe客户经理将与您联系。
 
-批准后，将创建请求的映射，并通知您。 源IMS组织名称已附加到Experience Platform中Analytics报表包](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data)的[列表中的报表包名称。
+批准后，将创建请求的映射，并通知您。 源IMS组织名称已附加到Experience Platform中Analytics报表包[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data)的列表中的报表包名称。
 
 
 ## 限制

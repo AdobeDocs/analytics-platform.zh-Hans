@@ -6,11 +6,26 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
 TQID: https://experienceleague.adobe.com/PAKNNU-oabmCvYh-YBzTyzMjlsYoPRXJaGIq06TmZ40
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: edce3047747f1635c9790c8b19794a2f51e7460f
 workflow-type: tm+mt
 source-wordcount: 3372
@@ -183,7 +198,7 @@ ht-degree: 93%
 
    有关 Adobe Analytics 和 Customer Journey Analytics 之间的一些主要差异的信息，请参阅 [Adobe Analytics 用户指南](/help/getting-started/aa-to-cja-user.md){target="_blank"}。
 
-1. 了解[ Customer Journey Analytics 中的功能支持](/help/getting-started/aa-vs-cja/cja-aa.md){target="_blank"}。 Customer Journey Analytics 支持大多数 Adobe Analytics 功能，并且 Customer Journey Analytics 还提供了许多附加功能。
+1. 了解[&#x200B; Customer Journey Analytics 中的功能支持](/help/getting-started/aa-vs-cja/cja-aa.md){target="_blank"}。 Customer Journey Analytics 支持大多数 Adobe Analytics 功能，并且 Customer Journey Analytics 还提供了许多附加功能。
 
 1. 当您的 Customer Journey Analytics Web SDK 完成实施并且您对所收集的数据感到满意时，请禁用 Adobe Analytics。
 
@@ -221,7 +236,7 @@ ht-degree: 93%
    | 问题 | 可用的回答 | 其他信息 |
    |---------|----------|---------|
    | 选择用于描述当前Adobe Analytics实施的选项。 此信息可能会影响在升级到Customer Journey Analytics时您可以使用的其他升级选项。 | 选择一个： <ul><li>**AppMeasurement：**<br/> JavaScript 实施方法，即在页面上加载 AppMeasurement.js，然后使用 s 对象（例如，s.eVar1）将数据发送给 Adobe。</li><li>**Adobe Analytics 扩展（标记）：**<br/>标记实施方法，即加载 Adobe Experience Platform 数据收集 (以前称为 Launch)。 标记已安装 Adobe Analytics 扩展。</li><li>**Experience Platform Web SDK 扩展（标记）：**<br/>&#x200B;标记实施方法，即加载 Adobe Experience Platform 数据收集（以前称为 Launch）。 标记已安装 Web SDK 扩展。</li><li>**Experience Platform Web SDK (alloy.js)：** JavaScript 实施方法，即在页面上加载 Web SDK 库 (alloy.js)，然后使用 JSON 负载将数据发送给 Adobe。</li><li>**批量数据插入 API：**<br/>&#x200B;这种实施方法使用数据插入 API 或批量数据插入 API。</li><li>**Experience Platform Mobile SDK：**<br/>&#x200B;这种实施方法使用 Adobe Experience Platform Mobile SDK。</li><li>**使用第三方标记管理工具的 AppMeasurement：**<br/>&#x200B;这种实施方法使用一个第三方标记管理工具。</li><li>**非 Adobe Analytics 产品：**<br/>&#x200B;这种实施方法为 Adobe Analytics 以外的产品（如 Google Analytics）收集数据。 从非 Adobe Analytics 产品升级到 Customer Journey Analytics 时，选择此选项将禁用升级指南中不适用的几个选项。 </li><li>**我不知道：**<br/>&#x200B;如果您不是负责管理实施的人员，可以暂时选择此选项。</li></ul><p>如果适用，请选择：<ul><li>**我们的实施方法目前使用 Analytics 源连接器：**<br/> Analytics 源连接器可让您轻松获得 Customer Journey Analytics 的价值，但要求您同时支付 Adobe Analytics 和 Customer Journey Analytics 的费用。 本指南可帮助您转向独立的 Web SDK 实施。</li></ul></p> | <ul><li>[了解您的 Adobe Analytics 实施情况及其对升级到 Customer Journey Analytics 的影响](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md#understand-your-adobe-analytics-implementation-and-how-it-affects-your-upgrade-to-customer-journey-analytics)</li><li>[从 Analytics 源连接器过渡到 Customer Journey Analytics 的 Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)</li></ul> |
-   | Customer Journey Analytics中提供了大多数Adobe Analytics功能。 但是，在升级过程中需要考虑以下功能。 选择您计划使用的任何库。 | 请选择所有适用项：<ul><li>**来自 Adobe Analytics 的历史数据：**</br>&#x200B;将您的 Adobe Analytics 报告包历史数据带入 Adobe Experience Platform 和 Customer Journey Analytics。</li><li>**来自 Adobe Analytics 的组件和项目：**</br>&#x200B;来自 Adobe Analytics 的组件包括：项目（及其相关的自由格式表和可视化图表）、区段和计算量度。</li><li>**Activity Map 叠加和链接跟踪：**</br>&#x200B;浏览器扩展，您可在网站上以叠加方式查看链接跟踪数据。</li><li>**分类数据：**</br>&#x200B;将数据分组或分类为单独的维度。</li><li>**营销渠道：**</br>&#x200B;创建对客户接触到网站的方式进行分类的规则。</li><li>**数据仓库：**</br>&#x200B;以电子表格格式从 Adobe Analytics 导出经过处理的数据。</li><li>**数据馈送：**Customer Journey Analytics 中尚未提供数据馈送的准确替代物。 不过，也可以通过全表导出、平台数据集导出、BI 工具集成和报告 API 等功能实现类似的功能。</br></li><li>**流媒体数据：**</br> Adobe Analytics 和 Customer Journey Analytics 的附加组件，专门用于音频、视频或流式处理内容等媒体数据收集。</li></ul> | <ul><li>[了解升级到 Customer Journey Analytics 时对 Adobe Analytics 功能的支持](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)</li></ul> |
+   | Customer Journey Analytics中提供了大多数Adobe Analytics功能。 但是，在升级过程中需要考虑以下功能。 选择您计划使用的任何库。 | 请选择所有适用项：<ul><li>**来自 Adobe Analytics 的历史数据：**</br>&#x200B;将您的 Adobe Analytics 报告包历史数据带入 Adobe Experience Platform 和 Customer Journey Analytics。</li><li>**来自 Adobe Analytics 的组件和项目：**</br>&#x200B;来自 Adobe Analytics 的组件包括：项目（及其相关的自由格式表和可视化图表）、区段和计算量度。</li><li>**Activity Map 叠加和链接跟踪：**</br>&#x200B;浏览器扩展，您可在网站上以叠加方式查看链接跟踪数据。</li><li>**分类数据：**</br>&#x200B;将数据分组或分类为单独的维度。</li><li>**营销渠道：**</br>&#x200B;创建对客户接触到网站的方式进行分类的规则。</li><li>**数据仓库：**</br>&#x200B;以电子表格格式从 Adobe Analytics 导出经过处理的数据。</li><li>**数据馈送：**&#x200B;Customer Journey Analytics 中尚未提供数据馈送的准确替代物。 不过，也可以通过全表导出、平台数据集导出、BI 工具集成和报告 API 等功能实现类似的功能。</br></li><li>**流媒体数据：**</br> Adobe Analytics 和 Customer Journey Analytics 的附加组件，专门用于音频、视频或流式处理内容等媒体数据收集。</li></ul> | <ul><li>[了解升级到 Customer Journey Analytics 时对 Adobe Analytics 功能的支持](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)</li></ul> |
    | 大部分新功能在Customer Journey Analytics中随时可用。 但是，在升级过程中需要考虑以下功能。 选择您计划使用的任何库。 | 请选择所有适用项：<ul><li>**将收集的数据与来自其他来源的数据(如 联系中心数据)：**</br>（推荐）连接各种Web、移动和离线属性的数据，以创建客户行为的单个整合视图。 将来自其他渠道的分析数据结合起来的能力是 Customer Journey Analytics 的主要用例。</li><li>**使用自定义维度拼接来自其他数据集的匹配项：**<br/>&#x200B;如果您的任何数据集不共享主要身份标识符（例如 Experience Cloud ID），您仍然可以使用其他维度（例如登录用户名或电子邮件地址）将该数据拼接在一起。</li><li>**与 Adobe Journey Optimizer 集成：**<br/>&#x200B;为客户传递贴合心意的、情境式、个性化的体验。</li><li>**与 Adobe Real-Time CDP 集成：**<br/>&#x200B;合并来自多个来源的轮廓数据，根据用户特征生成受众和区段。</li><li>**与 Adobe Target (A4T) 集成：**<br/> Adobe 建议与 Adobe Journey Optimizer 集成以实现个性化用例。 可以与 Adobe Target 集成，但这只是短期的解决方案。</li><li>**与 Adobe Audience Manager 集成：**<br/> Adobe 建议与 Adobe Real-time CDP 集成，以实现基于受众的用例。 可以与 Audience Manager 集成，但这只是短期的解决方案。</li></ul> | [了解 Customer Journey Analytics 独有的功能](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md) |
    | 选择您最终计划如何使用 Adobe Analytics 和 Customer Journey Analytics： | 选择一个： <ul><li>**我打算从 Adobe Analytics 完全换到 Customer Journey Analytics：**<br/>（推荐）Adobe 建议您从 Adobe Analytics 完全过渡到 Customer Journey Analytics。 在过渡期间，您应该计划同时运行 Adobe Analytics 和 Customer Journey Analytics，以便并排进行数据比较。 当您对数据满意时，可以禁用 Adobe Analytics。</li><li>**我打算保留这两种 Analytics 产品：**<br/>（不推荐）如果您选择此选项，您与 Adobe 签订的合同将同时包含 Adobe Analytics 和 Customer Journey Analytics，时间长了会增加您组织的开支。</li></ul> | [评估升级到 Customer Journey Analytics 后何时禁用 Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md) |
    | 选择如何配置 Customer Journey Analytics 架构： | 选择一个： <ul><li>**我想使用专门适合我的组织的架构：**</br>（推荐）自定义架构可让您的组织仅跟踪您需要的内容，避免那些与混乱和不需要的领域相关的开支。 此选项包括 Web SDK 添加的字段组和您的组织自定义的字段组。</li><li>**我想使用默认的 Adobe Analytics 架构：**</br>（不推荐）Adobe Analytics 架构包含一千多个字段，这可能会导致架构混乱、复杂。 您的组织将不得不继续遵守 props 和 eVars 的概念，这个旧版概念在 Customer Journey Analytics 不使用。 与其他 Adobe Experience Platform 服务的集成更加困难。</li></ul> | [选择 Customer Journey Analytics 的架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) |

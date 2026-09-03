@@ -8,11 +8,25 @@ badgePremium: label="B2B Edition"
 exl-id: 89e482b8-8082-4413-8fd3-cc1331780af4
 autotag-review: '2026-05-19T08:05:36.015Z'
 TQID: 'https://experienceleague.adobe.com/bPTcvFJRFMoTueec6I8Dtk1ajv5qrmZhHfLVycDLuBw'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7id: d3f42e9e-bb51-4077-a732-358b801d8b29
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2: id: e8abc408-b05c-427f-9e37-f8b033a6b3c3
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: addf009e-030a-4310-8534-776a3e62ed48id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d00e9f03-e50b-4162-b143-0c0817c937c2id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+  - id: d3f42e9e-bb51-4077-a732-358b801d8b29
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2:
+  - id: e8abc408-b05c-427f-9e37-f8b033a6b3c3
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: addf009e-030a-4310-8534-776a3e62ed48
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 484
@@ -27,7 +41,7 @@ ht-degree: 94%
 Adobe Analytics 最初是作为营销人员的网络及数字分析工具而推出的，而 Customer Journey Analytics 则将此范围扩大到包括多渠道、离线和跨平台的数据。  这两种工具都可以帮助”企业对消费者“（B2C）类型公司分析和优化其营销工作和客户体验。 并重点关注&#x200B;**基于人员的报告和分析**：了解客户历程，这里的客户是指通过多种渠道与您的品牌互动的人。
 
 ![B2B主页图像](assets/b2b-image.png)
-Customer Journey Analytics B2B edition添加了**基于帐户的报表和分析**。 在 B2B（企业对企业）销售中，购买历程涉及到多方、线上和线下接触点以及达成交易前的一些关键阶段。 B2B 公司需要在统一的历程视图中跟踪所有这些交互，以有效地分析和优化他们的营销工作和帐户体验。
+Customer Journey Analytics B2B edition添加了&#x200B;**基于帐户的报表和分析**。 在 B2B（企业对企业）销售中，购买历程涉及到多方、线上和线下接触点以及达成交易前的一些关键阶段。 B2B 公司需要在统一的历程视图中跟踪所有这些交互，以有效地分析和优化他们的营销工作和帐户体验。
 
 典型的 B2B 销售特征包括：
 

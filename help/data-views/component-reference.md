@@ -6,11 +6,20 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 TQID: https://experienceleague.adobe.com/r4-Y3zJ51tsClEQFdjQnBYH-D2XQ8cibGYLkSmi3Ttc
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 779
@@ -53,7 +62,7 @@ Customer Journey Analytics 中的大多数维度和指标都基于您 Adobe Expe
 | [!UICONTROL 每周时间] | 时间划分维度 | 星期一、星期二、星期三、星期四、星期五、星期六、星期日 |
 | [!UICONTROL 每年的某一天] | 时间划分维度 | 第 1 天至第 366 天 |
 | [!UICONTROL 小时] | 时间划分维度 | 0 时至 23 时 |
-| [!UICONTROL  月份] | 时间划分维度 | 一月 - 十二月 |
+| [!UICONTROL &#x200B; 月份] | 时间划分维度 | 一月 - 十二月 |
 | [!UICONTROL 首次会话] | 量度 | 个人在报告窗口内定义的首次会话。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat) |
 | [!UICONTROL 返回会话] | 量度 | 不是某人首次会话的会话数量。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat) |
 | [!UICONTROL 人员 ID] | 维度 | Experience Platform 中定义的每个数据集架构都可以拥有自己定义的一个或多个身份标识集，并与身份标识命名空间相关联。 其中任何身份标识都可用作人员 ID。 示例包括 Cookie ID、拼接 ID、用户 ID、跟踪代码等。 [!UICONTROL 个人 ID] 维度是合并数据集的基础，并可在 Customer Journey Analytics 中标识独特访客。<p>可能的使用案例包括：<ul><li>创建针对特定人员ID值的区段，以将所有内容细分为该用户的行为。</li><li>调试：确保特定 Cookie ID（或特定客户 ID）的数据存在。</li><li>确定打电话到呼叫中心的用户。</li></ul> |

@@ -6,11 +6,18 @@ feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
 TQID: https://experienceleague.adobe.com/B2j6BrXAHMu-3LKI61LbK01i-UdpMlELsqYSfAWYDCo
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
 workflow-type: tm+mt
 source-wordcount: 1093
@@ -67,7 +74,7 @@ Content Analytics 事件由以下各项组成：
 Content Analytics 事件按以下序列收集：
 
 1. [录制的视图或单击](#recorded-view-or-click)。
-1. 用于发送Content Analytics事件](#trigger-to-send-a-content-analytics-event)的[触发器。
+1. 用于发送Content Analytics事件[&#128279;](#trigger-to-send-a-content-analytics-event)的触发器。
 
 Content Analytics 确实以这种方式收集数据来反映该序列，而不是将收集某次查看或点击与收集该查看或点击之后立即发生的事件两者分开。 这种收集 Content Analytics 数据的方式也减少了所收集的数据量。
 
@@ -126,7 +133,7 @@ Content Analytics通过以下方式处理Web渠道的身份：
 * 由于该架构由系统所有，因此不支持基于字段的拼接。 因此，您无法向架构中添加其他字段来支持基于字段的拼接。
 
 
-要确保在字段级别正确拼接Content Analytics标识数据和Web SDK数据标识数据，请在事件发送](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/onbeforeeventsend){target="_blank"}回调之前修改Web SDK [。
+要确保在字段级别正确拼接Content Analytics标识数据和Web SDK数据标识数据，请在事件发送[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/onbeforeeventsend){target="_blank"}回调之前修改Web SDK 。
 
 1. 导航至包含 Adobe Experience Platform Web SDK 扩展和 Adobe Content Analytics 扩展的&#x200B;**[!UICONTROL 标记]**&#x200B;属性。
 1. 选择![插件](/help/assets/icons/Plug.svg)**[!UICONTROL 扩展]**。
