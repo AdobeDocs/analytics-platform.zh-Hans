@@ -19,10 +19,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: de8748a1dddbc0ddaadca4c805c9b4aba99a4267
+source-git-commit: 4872f0078640fbd358a60a6d7baeb3ea575d3559
 workflow-type: tm+mt
-source-wordcount: 230
-ht-degree: 20%
+source-wordcount: 252
+ht-degree: 18%
 
 ---
 
@@ -31,6 +31,8 @@ ht-degree: 20%
 {{release-limited-testing}}
 
 数据馈送是从Customer Journey Analytics中获取原始数据的有效方法。 您可以根据贵组织的决定，在Adobe以外的其他平台中使用此原始数据。 数据会在每小时结束时按小时批次交付，或者在每天结束时按天批次交付。
+
+有关数据馈送与其他Customer Journey Analytics导出方法（如完全表导出）的比较，请参阅[Analytics产品比较](/help/getting-started/analytics-product-comparison.md)。
 
 ## 先决条件
 

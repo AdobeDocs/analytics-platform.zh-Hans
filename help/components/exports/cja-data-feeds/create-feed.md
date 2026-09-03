@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: fdd9b5738103166d7c64666f85d0c508c7176fd0
+source-git-commit: f5a7272f80aaba167974f2218bc84408d47f62d4
 workflow-type: tm+mt
-source-wordcount: 4178
+source-wordcount: 4217
 ht-degree: 30%
 
 ---
@@ -73,7 +73,16 @@ ht-degree: 30%
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_user-agent"
 >title=""
->abstract="用户代理数据和设备查找数据不能存在于同一个数据馈送配置中。"
+>abstract="用户代理数据和设备查找数据不能包含在同一数据馈送配置中。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_datafeed_required_dimensions"
+>title="必需维度"
+>abstract="每个数据馈送都必须包含某些维度，这些维度由维度名称旁边的&#x200B;**Required**&#x200B;标签标识。 这些维度提供了事件级别分析所需的最低结构。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -114,13 +123,13 @@ ht-degree: 30%
 
    您在此处应用的区段是对可能已应用于数据视图的任何区段之外的区段。
 
-1. （可选）在左边栏中，使用&#x200B;**搜索**&#x200B;字段查找特定组件，或选择&#x200B;**排序**&#x200B;图标![排序组件图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg)以应用以下任何排序选项：
+1. （可选）在左边栏中，使用&#x200B;**搜索**&#x200B;字段来查找特定组件。 或者，选择&#x200B;**排序**&#x200B;图标![排序组件图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg)以应用以下任何排序选项：
 
    | 选项 | 功能 |
-   |---------|----------|
+   | --------- | ---------- |
    | [!UICONTROL **建议**] | 为组件排序，将推荐的组件置于列表的顶部。 您或您组织中的其他人最频繁且最近使用的组件显示在列表的较高位置。 |
    | [!UICONTROL **按字母顺序**] | 按字母顺序为组件排序。 |
-   | [!UICONTROL **分类**] | 根据组件类型（维度、量度、区段、日期范围）为组件排序。 |
+   | [!UICONTROL **分类**] | 与&#x200B;[!UICONTROL **推荐**]&#x200B;类似的组件排序，不同之处在于计算量度和标准量度是分开分组的，而不是混合在一起。 |
 
 1. 将组件添加到数据馈送配置。 左边栏仅显示对数据馈送有效的组件。
 
