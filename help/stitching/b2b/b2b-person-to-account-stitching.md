@@ -1,36 +1,28 @@
 ---
-title: B2B人员到帐户拼接
-description: 了解Customer Journey Analytics中的B2B人员如何计算拼接，从而通过帐户信息丰富事件数据集，并支持对B2B数据进行完整的历程分析。
+title: B2B人员与帐户拼接
+description: 了解Customer Journey Analytics中的“B2B人员到帐户”拼合如何通过帐户信息丰富事件数据集，并支持对B2B数据进行完整的旅程分析。
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 autotag-review: '2026-05-19T11:01:07.331Z'
 TQID: 'https://experienceleague.adobe.com/-7rHOhYVCp-nSMqdE7YlAlCJ0zRQYvPOViMHSCNuKV8'
-product_v2:
-  - id: d3f42e9e-bb51-4077-a732-358b801d8b29
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: a971b268208ec49b5ccd84b11543263ff3a1abea
+product_v2: id: d3f42e9e-bb51-4077-a732-358b801d8b29id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 62ee184e96a1f22e97bafaae6e71d6bef1267cb4
 workflow-type: tm+mt
-source-wordcount: 2100
-ht-degree: 21%
+source-wordcount: 2120
+ht-degree: 19%
 
 ---
 
 # B2B人员与帐户拼接
 
-B2B帐户拼接使用帐户身份丰富了您的事件数据集，并支持在Customer Journey Analytics中跨整个客户历程进行完整分析。 当事件缺少帐户ID（Customer Journey Analytics B2B edition需要帐户ID进行摄取）时，人员到帐户拼接将使用您提供的[人员到帐户映射数据集](#prerequisites)自动派生和添加该信息。
+B2B帐户拼接使用帐户身份丰富了您的事件数据集，并支持在Customer Journey Analytics中跨整个客户历程进行完整分析。 当事件缺少帐户ID（Customer Journey Analytics B2B edition摄取时需要帐户ID）时，人员与帐户拼接将使用您提供的[人员与帐户映射数据集](#prerequisites)自动派生和添加该信息。
 
-如果没有人员来拼接帐户，则任何不包含帐户ID的事件将在引入期间被丢弃。 人员到帐户拼合通过查找与每个事件中的人员关联的帐户来解决此限制，在事件被摄取时添加帐户ID并追溯到一起。
+如果没有人员来拼接帐户，则任何不包含帐户ID的事件将在引入期间被丢弃。 人员与帐户拼合通过查找与每个事件中的人员关联的帐户来解决此限制，在事件被摄取时添加帐户ID并且追溯。
 
 >[!NOTE]
 >
@@ -39,11 +31,11 @@ B2B帐户拼接使用帐户身份丰富了您的事件数据集，并支持在Cu
 人员与帐户拼接对数据集执行以下操作：
 
 * **提升人员标识**：与[B2C拼接方法](/help/stitching/overview.md)类似，您将配置一个包含永久人员ID的字段。 使用身份图，每个事件上的永久人员ID均从配置的人员标识符命名空间提升为人员ID。
-* **添加缺少的帐户标识**：获取事件的人员ID信息后，[人员到帐户的映射](#prerequisites)用于派生和添加帐户标识信息。 事件本身的任何可用帐户标识均用作回退方法。”
+* **添加缺少的帐户标识**：获取事件的人员ID信息后，[人员到帐户的映射](#prerequisites)用于派生和添加帐户标识信息。 事件本身的任何可用帐户标识均用作回退方法。
 
 ## B2B人员与帐户如何拼合
 
-为了说明B2B帐户拼接的工作原理，使用下面显示的数据集作为起点。
+为了说明B2B人员与帐户之间的拼接如何工作，下面显示的数据集用作起点。
 
 ### 基本事件数据集
 
@@ -69,7 +61,7 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
 
 +++ 详细信息
 
-为了支持B2B人员与帐户的拼接，您提供了一个人员与帐户映射数据集。 例如：
+为了支持B2B人员与帐户拼接，您可以提供人员与帐户映射数据集。 例如：
 
 | CRM ID | 帐户 ID |
 |---|---|
@@ -126,12 +118,12 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
 
 ### 结果
 
-此示例显示了B2B帐户拼接如何根据您作为输入提供的人员到帐户映射数据集，使用缺失的人员标识符或缺失且不正确的帐户标识符更新您的体验事件数据。
+此示例显示了B2B人员到帐户的拼合如何根据您作为输入提供的人员到帐户映射数据集，使用缺失的人员标识符或缺失且不正确的帐户标识符更新您的体验事件数据。
 
 
 ## 先决条件
 
-在启用B2B帐户拼接之前，请在Adobe Experience Platform中准备以下数据集：
+在启用B2B人员帐户拼接之前，请在Adobe Experience Platform中准备以下数据集：
 
 | 数据集 | 必需 | 描述 |
 |---|---|---|
@@ -149,8 +141,8 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_open_configuration"
->title="配置 B2B 帐户拼接"
->abstract="选择&#x200B;**[!UICONTROL 打开 B2B 拼接配置]**&#x200B;以配置 B2B 帐户拼接。 如果连接尚未保存，该配置会标记为&#x200B;**[!UICONTROL _未保存的更改_]**。"
+>title="配置B2B拼接"
+>abstract="选择&#x200B;**[!UICONTROL 打开B2B拼接配置]**&#x200B;以将B2B人员与帐户拼接进行配置。 如果连接尚未保存，该配置会标记为&#x200B;**[!UICONTROL _未保存的更改_]**。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_identifier_namespace"
@@ -204,7 +196,7 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
 
    1. 配置&#x200B;**[!UICONTROL 人员]**&#x200B;部分：
 
-      * 为您的报表选择最相关的人员身份命名空间，如电子邮件。 任何启用了人员到帐户拼合的事件数据集都会将永久人员ID提升到此人员标识符命名空间。此字段为必填字段。
+      * 为您的报表选择最相关的人员身份命名空间，如电子邮件。 任何启用了人员到帐户拼合的事件数据集都会将永久人员ID提升到此人员标识符命名空间。 此字段为必填字段。
 
    1. 在&#x200B;**[!UICONTROL Person to Account]**&#x200B;下配置&#x200B;**[!UICONTROL 帐户]**&#x200B;部分。
 
@@ -230,33 +222,33 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="启用人员到帐户拼接"
 >abstract="启用后，此数据集将使用 B2B“人员到帐户”拼接。 **[!UICONTROL 永久人员ID]**&#x200B;值将提升为配置的&#x200B;**[!UICONTROL 人员标识符命名空间]**&#x200B;中的值，然后用于根据人员到帐户数据集查找帐户ID。<br/>如果禁用，此数据集就不会使用 B2B“人员到帐户”拼接，在这种情况下您就要选择一个必需的&#x200B;**[!UICONTROL 帐户 ID]**。"
->additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/stitching/b2b-account-stitching#configure-b2b-stitching-settings" text="将B2B人员配置为帐户拼接设置"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="将B2B人员配置为帐户拼接设置"
 
 在连接级别将B2B人员配置为帐户拼接后，您必须启用B2B人员以便为要拼接的每个事件数据集单独帐户拼接。
 
 1. 在连接设置中，选择&#x200B;**[!UICONTROL 添加数据集]**&#x200B;或打开现有事件数据集的设置。<br/>有关详细信息，请参阅[添加数据集](/help/connections/create-connection.md#add-datasets)或[编辑数据集](/help/connections/create-connection.md#edit-a-dataset)。
 
-1. 对于要为其配置B2B帐户拼接的特定事件数据集，请切换&#x200B;**[!UICONTROL 启用人员到帐户的拼接]**。
+1. 对于要为其配置B2B人员帐户拼接的特定事件数据集，请切换&#x200B;**[!UICONTROL 启用人员帐户拼接]**。
 
 >[!BEGINTABS]
 
 >[!TAB 于]
 
-当&#x200B;**[!UICONTROL 启用人员到帐户拼接]**&#x200B;为&#x200B;**于**&#x200B;时，您已为数据集配置了B2B帐户拼接。
+当&#x200B;**[!UICONTROL 启用人员到帐户拼接]**&#x200B;为&#x200B;**于**&#x200B;时，您已将B2B人员配置为帐户拼合数据集。
 
 * 需要配置人员ID。 该人员ID用于根据[人员对帐户数据集](#prerequisites)查找帐户ID。
 * 帐户ID的配置是可选的。
 
-![B2B帐户正在拼接](../assets/b2b-event-dataset-stitching-on.png)上的事件数据集
+![B2B人员在](../assets/b2b-event-dataset-stitching-on.png)上的事件数据集上进行帐户拼合
 
 >[!TAB 关]
 
-当&#x200B;**[!UICONTROL 启用人员到帐户拼接]**&#x200B;为&#x200B;**关**&#x200B;时，您已&#x200B;*不*&#x200B;为数据集配置了B2B帐户拼接。
+当&#x200B;**[!UICONTROL 启用人员到帐户拼接]**&#x200B;为&#x200B;**关**&#x200B;时，您&#x200B;*未*&#x200B;将B2B人员配置为帐户拼接数据集。
 
 * 需要配置帐户ID。
 * 人员ID的配置是可选的。
 
-![B2B帐户拼合关闭的事件数据集](../assets/b2b-event-dataset-stitching-off.png)
+![B2B人员到帐户拼接事件数据集](../assets/b2b-event-dataset-stitching-off.png)
 
 >[!ENDTABS]
 
