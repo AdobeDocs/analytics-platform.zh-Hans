@@ -7,20 +7,11 @@ feature: Use Cases
 role: Admin
 autotag-review: '2026-05-19T07:58:46.205Z'
 TQID: 'https://experienceleague.adobe.com/X5R0sqTkZKxvzH7mwv69-Ez3MIbuTg6XDGuxrw-iugw'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2:
-  - id: e1bd5a34-b16e-477b-84cc-247fa0793f4b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: e1bd5a34-b16e-477b-84cc-247fa0793f4b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 662
@@ -28,9 +19,9 @@ ht-degree: 83%
 
 ---
 
-# 引入 Google Analytics 历史数据
+# 摄取 Google Analytics 历史数据
 
-本页面重点介绍如何将您的 Google Analytics 历史数据作为数据集提取到 Adobe Experience Platform 中，允许您在 Customer Journey Analytics 的数据视图中引用该数据集。 您可以将此页面上的步骤与[配置实时 Google Analytics 实施](streaming.md)结合使用，这会生成一个循环数据集。 将此历史数据集与您当前实施的数据集结合起来，以无缝查看 Customer Journey Analytics 中的数据以及当前和回填数据。
+本页面重点介绍如何将您的 Google Analytics 历史数据作为数据集摄取到 Adobe Experience Platform 中，以便您在 Customer Journey Analytics 的数据视图中引用该数据集。 您可以将此页面上的步骤与[配置实时 Google Analytics 实施](streaming.md)结合使用，这会生成一个循环数据集。 将此历史数据集与您当前实施的数据集结合起来，以便在 Customer Journey Analytics 中获得包含当前数据和回填数据的无缝数据视图。
 
 ## 先决条件
 
@@ -53,12 +44,12 @@ Universal Analytics 属性中的数据结构与 Google Analytics 4 属性中的�
 >
 >本部分仅适用于 Universal Analytics 属性。 如果您要从 GA4 属性导出，您可以继续[将数据导出到 Google Cloud Platform](#export-gcp)。
 
-Universal Analytics 属性将每条记录作为用户会话而不是单个事件存储在其数据中。 需要使用 SQL 查询将 Universal Analytics 数据转换为与 Adobe Experience Platform 兼容的格式。 将 `UNNEST` 函数应用于 GA 架构中的 `hits` 字段，并将其保存为 BigQuery 表。
+Universal Analytics 属性将其数据中的每条记录存储为用户会话，而不是单个事件。 需要使用 SQL 查询将 Universal Analytics 数据转换为与 Adobe Experience Platform 兼容的格式。 将 `UNNEST` 函数应用于 GA 架构中的 `hits` 字段，并将其保存为 BigQuery 表。
 
 
 >[!BEGINSHADEBOX]
 
-观看从Google Analytics到Customer Journey Analytics的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; - BigQuery](https://video.tv.adobe.com/v/332634?quality=12&learn=on){target="_blank"}演示视频。
+观看从Google Analytics到Customer Journey Analytics的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[ - BigQuery](https://video.tv.adobe.com/v/332634?quality=12&learn=on){target="_blank"}演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -98,7 +89,7 @@ FROM
 
 >[!BEGINSHADEBOX]
 
-观看![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [将Google Analytics数据导入Adobe Experience Platform](https://video.tv.adobe.com/v/3437176?captions=chi_hans&quality=12&learn=on){target="_blank"}以获取演示视频。
+观看![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [将Google Analytics数据导入Adobe Experience Platform](https://video.tv.adobe.com/v/332676?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -107,7 +98,7 @@ FROM
 >
 >如果您计划同时导入历史和实时流式 Google Analytics 数据，请确保对两个数据集使用相同的架构。 您可以使用[组合数据集](/help/connections/combined-dataset.md)在Customer Journey Analytics中合并数据集。
 
-您可以将 GA 事件数据映射到以前创建的现有数据集，或者使用所选择的任何 XDM 架构创建数据集。 选择好架构后，Experience Platform 则应用机器学习，自动将 Google Analytics 数据中的每个字段预映射到您的 [XDM 架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans#ui)。
+您可以将 GA 事件数据映射到以前创建的现有数据集，或者使用所选择的任何 XDM 架构创建数据集。 选择好架构后，Experience Platform 则应用机器学习，自动将 Google Analytics 数据中的每个字段预映射到您的 [XDM 架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html#ui)。
 
 ![突出显示GA数据字段和Target架构映射的架构映射](../../assets/schema-map.png)
 

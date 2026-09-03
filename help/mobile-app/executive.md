@@ -6,22 +6,11 @@ role: User
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
 TQID: https://experienceleague.adobe.com/VZRakAqCMywVAtKs60w-WQqHJhfKdMj2z3uSSrPyztc
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b21c7889-c659-4a99-a779-de1bae57e47e
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b743a5d9-dc51-41ed-8b2f-86a1f8de430fid: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b21c7889-c659-4a99-a779-de1bae57e47eid: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1335
@@ -36,19 +25,19 @@ ht-degree: 72%
 
 >[!BEGINSHADEBOX]
 
-请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [协助执行用户访问移动记分卡](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/dashboards/assist-executives-to-access-mobile-scorecards){target="_blank"}以获取演示视频。
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [协助执行用户访问移动记分卡](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/assist-executives-to-access-mobile-scorecards){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
-本指南旨在帮助执行用户阅读并理解 Analytics 功能板上的记分卡。 该应用程序允许执行用户在其自己的移动设备上快速、轻松地查看广泛呈现的重要概要数据。
+本指南旨在帮助执行用户阅读并理解 Analytics 功能板上的记分卡。 该应用程序允许执行用户在自己的移动设备上快速、轻松地查看重要摘要数据的整体概览。
 
 ## 在设备上设置功能板
 
-要有效地使用功能板，您需要让记分卡策划人帮助您进行设置。 本节将介绍有助于您在策划人的帮助下设置应用程序的信息。
+要有效地使用仪表板，您需要让记分卡策划人帮助您完成设置。 本节将介绍有助于您在策划人的帮助下设置应用程序的信息。
 
 ### 获取访问权限
 
-要在功能板中访问记分卡，请确保：
+要在仪表板中访问记分卡，请确保：
 
 * 您具备有效的 Customer Journey Analytics 登录信息
 * 您的策划人已正确创建了移动记分卡，并与您共享了这些记分卡
@@ -81,11 +70,11 @@ ht-degree: 72%
 
 要使用功能板，请执行以下操作：
 
-1. 登录到该应用程序。 启动功能板时，将显示登录屏幕。 使用现有的Customer Journey Analytics凭据按照提示操作。 我们同时支持 Adobe ID 和 Enterprise/Federated ID。
+1. 登录到该应用程序。 启动仪表板时，将显示登录屏幕。 使用现有的Customer Journey Analytics凭据按照提示操作。 我们同时支持 Adobe ID 和 Enterprise/Federated ID。
 
    ![登录序列](assets/signseq.png)
 
-1. 选择一个公司。 登录功能板后，会显示&#x200B;**[!UICONTROL 选择公司]**&#x200B;屏幕。 此屏幕会列出您所属的登录公司。 点按与您共享的记分卡所关联的公司名称。
+1. 选择一个公司。 登录功能板后，会显示&#x200B;**[!UICONTROL 选择公司]**&#x200B;屏幕。 此屏幕会列出您所属的可登录公司。 点按与您共享的记分卡所关联的公司名称。
 
    记分卡列表会显示与您共享的所有记分卡。
 
@@ -112,9 +101,9 @@ ht-degree: 72%
 
    * 线形图的粒度取决于日期范围的长度：
 
-      * 一天会显示每小时的趋势
-      * 超过一天且不足一年会显示每日的趋势
-      * 一年及以上会显示每周的趋势
+     * 一天会显示每小时的趋势
+     * 超过一天且不足一年会显示每日的趋势
+     * 一年及以上会显示每周的趋势
 
    * 百分比值更改公式为：量度总计（当前日期范围）- 量度总计（比较日期范围）/ 量度总计（比较日期范围）。
 
@@ -124,7 +113,7 @@ ht-degree: 72%
 
    ![示例记分卡](assets/intro_scorecard.png)
 
-1. 点按图块以查看图块的详细划分方式。
+1. 点按图块以查看图块的详细细分方式。
 
    ![“划分”视图](assets/sparkline.png)
 
@@ -133,7 +122,7 @@ ht-degree: 72%
 
    ![更改日期](assets/changedate.png)
 
-   * 您也可以按相同方式更改上面显示的“划分”视图中的日期范围。
+   * 您也可以按相同方式更改上面显示的“细分”视图中的日期范围。
 
    * 根据点按的时间间隔（**日**、**周**、**月**&#x200B;或&#x200B;**年**），您将看到两个日期范围选项，即当前时间范围或紧随其前的时间范围。 点按这两个选项之一，以选择第一个范围。 在&#x200B;**[!UICONTROL 比较对象]**&#x200B;列表下，点按其中显示的一个选项，以将此时间段的数据与您选择的第一个日期范围进行比较。 点按屏幕右上角的&#x200B;**[!UICONTROL 完成]**。 **[!UICONTROL 日期范围]**&#x200B;字段和记分卡图块会更新以显示您选择的新范围中的新比较数据。
 
@@ -141,7 +130,7 @@ ht-degree: 72%
 
    ![区段](assets/segment_filter.png)
 
-1. 获取[!UICONTROL 记分卡]更新。 如果[!UICONTROL 记分卡]不包含您可能感兴趣的所有量度或划分，请联系您的Customer Journey Analytics团队以更新记分卡。 更新后，您可以下拉屏幕上的记分卡进行刷新，并加载最近添加的数据。
+1. 获取[!UICONTROL 记分卡]更新。 如果[!UICONTROL 记分卡]不包含您可能感兴趣的所有量度或划分，请联系您的Customer Journey Analytics团队以更新记分卡。 更新后，您可以下拉屏幕上的信息卡进行刷新，并加载最近添加的数据。
 
 1. 要提供对应用程序的反馈，请执行以下操作：
 
@@ -168,7 +157,7 @@ ht-degree: 72%
 
 **要咨询问题**，请执行以下操作：
 
-点按相应选项，然后在顶部字段中提供您的电子邮件地址，并在其下方的字段中提供问题说明。 屏幕快照会自动附加到消息中，但如果需要，您可以通过点按附件图像中的 **X** 来删除该屏幕快照。 您还可以选择进行屏幕录制、添加更多屏幕快照或附加文件。 要发送问题，请点按表单右上角的纸飞机图标。
+点按相应选项，然后在顶部字段中提供您的电子邮件地址，并在其下方的字段中提供您的问题。 屏幕快照会自动附加到消息中，但如果需要，您可以通过点按附件图像中的 **X** 来删除该屏幕快照。 您还可以选择进行屏幕录制、添加更多屏幕快照或附加文件。 要发送问题，请点按表单右上角的纸飞机图标。
 
 ## 术语表
 
@@ -179,6 +168,6 @@ ht-degree: 72%
 | 策划 | 创建或编辑移动记分卡的操作，记分卡中包含用户的相关量度、维度和其他组件 |
 | 记分卡 | 包含一个或多个图块的功能板视图 |
 | 图块 | “记分卡视图”中量度的呈现方式 |
-| 划分 | 一种辅助视图，点按记分卡中的图块可访问这种辅助视图。 此视图将展开图块上显示的量度，并（可选）报告其他划分维度。 |
-| 日期范围 | 功能板报告的主要日期范围 |
+| 划分 | 一种辅助视图，点按记分卡中的图块可访问这种辅助视图。 此视图将展开图块上显示的量度，并（可选）报告其他细分维度。 |
+| 日期范围 | 仪表板报告的主要日期范围 |
 | 比较日期范围 | 与主要日期范围进行比较的日期范围 |

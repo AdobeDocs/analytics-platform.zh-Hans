@@ -5,14 +5,10 @@ feature: Workspace Basics
 role: User
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
 TQID: https://experienceleague.adobe.com/21Rc7-uX7Ie2qj5FHzjb89CTmvi79Ne-FR92okGF5uo
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2:
-  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: a8b1c240-f315-46e3-b813-f545c4279dd1
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 860
@@ -46,15 +42,15 @@ Analysis Workspace 中的项目每 2 分钟自动保存一次。 您还可以自
 
   ![保存项目](assets/save-project.png)
 
-   1. 指定以下内容：
+  1. 指定以下内容：
 
-      * **[!UICONTROL 名称]**（必填项） 您的项目名称。
-      * **[!UICONTROL 描述]**。 您的项目描述。
-      * **[!UICONTROL 标记]**。 在&#x200B;[!UICONTROL *搜索标记*]&#x200B;字段中搜索标记，或使用&#x200B;**[!UICONTROL 输入]**&#x200B;添加新标记。
-      * **[!UICONTROL 文件夹]**。 从&#x200B;[!UICONTROL *选择文件夹*]&#x200B;下拉菜单中选择文件夹。 如果您未指定文件夹，则该项目会保存在您创建新项目的当前文件夹中。
-      * **[!UICONTROL 版本说明]**。 在&#x200B;*添加注释*&#x200B;文本区域添加版本说明。
+     * **[!UICONTROL 名称]**（必填项） 您的项目名称。
+     * **[!UICONTROL 描述]**。 您的项目描述。
+     * **[!UICONTROL 标记]**。 在&#x200B;[!UICONTROL *搜索标记*]&#x200B;字段中搜索标记，或使用&#x200B;**[!UICONTROL 输入]**&#x200B;添加新标记。
+     * **[!UICONTROL 文件夹]**。 从&#x200B;[!UICONTROL *选择文件夹*]&#x200B;下拉菜单中选择文件夹。 如果您未指定文件夹，则该项目会保存在您创建新项目的当前文件夹中。
+     * **[!UICONTROL 版本说明]**。 在&#x200B;*添加注释*&#x200B;文本区域添加版本说明。
 
-   1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存项目。
+  1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存项目。
 
   保存项目实际上会保存一个项目版本，该版本会存储 90 天。
 
@@ -62,8 +58,8 @@ Analysis Workspace 中的项目每 2 分钟自动保存一次。 您还可以自
 
   ![保存共享的项目](assets/save-project-shared.png)
 
-   * 选择&#x200B;**[!UICONTROL 保存]**&#x200B;来保存项目。
-   * 选择&#x200B;**[!UICONTROL 另存为]**&#x200B;将该项目保存为具有新名称的重复项目。
+  * 选择&#x200B;**[!UICONTROL 保存]**&#x200B;来保存项目。
+  * 选择&#x200B;**[!UICONTROL 另存为]**&#x200B;将该项目保存为具有新名称的重复项目。
 
 
 * **[!UICONTROL 保存并添加注释]**
@@ -72,8 +68,8 @@ Analysis Workspace 中的项目每 2 分钟自动保存一次。 您还可以自
 
   在保存项目时，添加有关项目中进行了哪些更改的注释。 在保存版本说明对话框中：
 
-   1. 在&#x200B;**[!UICONTROL 添加注释]**&#x200B;文本区域输入您的&#x200B;**[!UICONTROL 版本说明]**。
-   1. 选择&#x200B;**[!UICONTROL 保存]**。
+  1. 在&#x200B;**[!UICONTROL 添加注释]**&#x200B;文本区域输入您的&#x200B;**[!UICONTROL 版本说明]**。
+  1. 选择&#x200B;**[!UICONTROL 保存]**。
 
   注释会与项目版本一起存储，当您[打开项目的先前版本](open-projects.md#open-previous-version)时，这些注释仍然可用。 带有注释的版本将自动保存一年。
 
@@ -83,22 +79,22 @@ Analysis Workspace 中的项目每 2 分钟自动保存一次。 您还可以自
 
   用新名称创建一个项目副本。 “另存为”对话框显示。
 
-   1. 指定以下内容：
+  1. 指定以下内容：
 
-      * **[!UICONTROL 名称]**（必填项） 您的项目名称。
-      * **[!UICONTROL 描述]**。 您的项目描述。
-      * **[!UICONTROL 标记]**。 在&#x200B;[!UICONTROL *搜索标记*]&#x200B;字段中搜索标记，或使用&#x200B;**[!UICONTROL 输入]**&#x200B;添加新标记。
-      * **[!UICONTROL 文件夹]**。 从&#x200B;[!UICONTROL *选择文件夹*]&#x200B;下拉菜单中选择文件夹。 如果您未指定文件夹，则该项目会保存在您创建新项目的当前文件夹中。
-      * **[!UICONTROL 版本说明]**。 在&#x200B;*添加注释*&#x200B;文本区域添加版本说明。
+     * **[!UICONTROL 名称]**（必填项） 您的项目名称。
+     * **[!UICONTROL 描述]**。 您的项目描述。
+     * **[!UICONTROL 标记]**。 在&#x200B;[!UICONTROL *搜索标记*]&#x200B;字段中搜索标记，或使用&#x200B;**[!UICONTROL 输入]**&#x200B;添加新标记。
+     * **[!UICONTROL 文件夹]**。 从&#x200B;[!UICONTROL *选择文件夹*]&#x200B;下拉菜单中选择文件夹。 如果您未指定文件夹，则该项目会保存在您创建新项目的当前文件夹中。
+     * **[!UICONTROL 版本说明]**。 在&#x200B;*添加注释*&#x200B;文本区域添加版本说明。
 
-   1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存项目。
+  1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存项目。
 
   您可以将项目保存到不同的文件夹。 原始项目不会受到影响。
 
 
 <!-- 
 Cannot find this option in CJA 
-| **[!UICONTROL Save as template]** | Save your project as a [custom template](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=zh-Hans) that becomes available to your organization under **[!UICONTROL Project > New]** |
+| **[!UICONTROL Save as template]** | Save your project as a [custom template](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) that becomes available to your organization under **[!UICONTROL Project > New]** |
 -->
 
 ## 自动保存
@@ -109,7 +105,7 @@ Cannot find this option in CJA
 >尽管新项目是自动保存的，但您必须在&#x200B;**第一次**&#x200B;手动保存每个新项目。
 >
 
-Analysis Workspace 中的所有项目每 2 分钟会自动保存到本地计算机。 该自动保存范围包括尚未手动保存的新创建项目。
+Analysis Workspace 中的所有项目每 2 分钟会自动保存到本地计算机。 此自动保存包括尚未手动保存的新创建项目。
 
 ### 新项目
 

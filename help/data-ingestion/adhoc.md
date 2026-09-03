@@ -6,21 +6,11 @@ feature: Basics
 role: Admin
 exl-id: 17b5842f-dc81-481f-8b21-dc90a133adcf
 TQID: https://experienceleague.adobe.com/eqmDvuaNGFj8q2pfKNCzf5-affyrUTYP7MA5UgsRrCI
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: c38ed341-fab2-46df-9d72-88d8166edebb
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebbid: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1674
@@ -46,7 +36,7 @@ ht-degree: 26%
 
 >[!NOTE]
 >
->本快速入门指南是一份关于如何使用将临时数据摄取到Experience Platform并在Customer Journey Analytics中使用该临时数据的简化指南。 强烈建议参考时研究附加信息。
+>本快速入门指南是一份关于如何使用将临时数据摄取到Experience Platform并在Customer Journey Analytics中使用该临时数据的简化指南。 强烈建议在提及时查阅附加信息。
 
 
 ## 使用CSV文件创建数据集
@@ -92,7 +82,7 @@ ht-degree: 26%
 
       1. 选择&#x200B;**[!UICONTROL 完成]**。
 
-成功准备并上传数据后，您将被重定向到Experience Platform界面中的&#x200B;**[!UICONTROL 数据集]**。<br/> 您从CSV **数据集看到**&#x200B;示例数据的&#x200B;**[!UICONTROL 数据集活动]**，状态为![StatusOrange](/help/assets/icons/StatusOrange.svg) **[!UICONTROL 正在处理]**。
+成功准备并上传数据后，您将被重定向到Experience Platform界面中的&#x200B;**[!UICONTROL 数据集]**。<br/> 您从CSV ]**数据集看到**[!UICONTROL &#x200B;示例数据的&#x200B;**[!UICONTROL 数据集活动]**，状态为![StatusOrange](/help/assets/icons/StatusOrange.svg) **[!UICONTROL 正在处理]**。
 
 ![临时数据的数据集活动](assets/datasets-dataset-activity.png)
 
@@ -171,7 +161,7 @@ ht-degree: 26%
 
 >[!IMPORTANT]
 >
->除了不将临时数据集和架构用于时间序列数据的一般建议之外，您不能将&#x200B;**[!UICONTROL 从CSV创建数据集]**&#x200B;工作流用于时间序列数据。 此工作流将所有字段定义为字符串类型，您之后无法对其进行修改。 将基于时间序列的数据集（事件或摘要）添加到连接时，此类型的数据集需要至少定义一个日期时间类型的字段。<br/>如果确实需要使用临时时间序列数据，请考虑使用[使用API创建临时架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438)，然后使用[从架构创建数据集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/user-guide#schema)工作流。
+>除了不将临时数据集和架构用于时间序列数据的一般建议之外，您不能将&#x200B;**[!UICONTROL 从CSV创建数据集]**&#x200B;工作流用于时间序列数据。 此工作流将所有字段定义为字符串类型，您之后无法对其进行修改。 将基于时间序列的数据集（事件或摘要）添加到连接时，此类型的数据集需要至少定义一个日期时间类型的字段。<br/>如果确实需要使用临时时间序列数据，请考虑使用[使用API创建临时架构](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438)，然后使用[从架构创建数据集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/user-guide#schema)工作流。
 
 
 创建[连接](/help/connections/overview.md)后，您可以执行各种管理任务，如[选择和组合数据集](/help/connections/combined-dataset.md)、[检查连接的数据集的状态以及数据摄取的状态](/help/connections/manage-connections.md)等等。
@@ -190,7 +180,7 @@ ht-degree: 26%
 
    1. 从&#x200B;**[!UICONTROL 连接]**&#x200B;列表中选择您的[连接](#set-up-a-connection)。
 
-   1. 名称并（可选）描述您的连接。
+   1. 为您的连接命名，并（可选）添加描述。
 
       ![数据视图配置](./assets/cja-dataview-1.png)
 

@@ -3,18 +3,10 @@ title: 共享组件编辑器
 description: 创建或编辑共享维度和量度。
 exl-id: 3f6a808a-d6ac-4a47-a5e2-63b9f17952e8
 TQID: https://experienceleague.adobe.com/vHmMlOpgjLAVzEg9t-MORtrHKsbqBABVcDFkuMlo5FM
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 394
@@ -40,9 +32,9 @@ ht-degree: 0%
 该界面包括三个主要列/部分：
 
 * **架构字段选择器**：找到所需的架构字段并将其拖动到包含的组件区域。
-   * **连接**：活动连接。 更改[共享量度和维度管理器](smd-overview.md)中的活动连接。
-   * **组件列表**：您可以从下拉菜单中选择[!UICONTROL 架构字段]（全新共享维度和量度）或[!UICONTROL 量度和维度]（现有共享组件）。
-   * **搜索**：使用![搜索图标](/help/assets/icons/Search.svg)文本搜索按名称定位所需的架构字段或共享组件。 您还可以使用![筛选器图标](/help/assets/icons/Filter.svg)筛选器来缩小组件列表的范围。 `Is not deprecated`筛选器默认处于活动状态。
-   * **创建派生字段**：允许您[创建派生字段](/help/data-views/derived-fields/derived-fields.md)。
+  * **连接**：活动连接。 更改[共享量度和维度管理器](smd-overview.md)中的活动连接。
+  * **组件列表**：您可以从下拉菜单中选择[!UICONTROL 架构字段]（全新共享维度和量度）或[!UICONTROL 量度和维度]（现有共享组件）。
+  * **搜索**：使用![搜索图标](/help/assets/icons/Search.svg)文本搜索按名称定位所需的架构字段或共享组件。 您还可以使用![筛选器图标](/help/assets/icons/Filter.svg)筛选器来缩小组件列表的范围。 `Is not deprecated`筛选器默认处于活动状态。
+  * **创建派生字段**：允许您[创建派生字段](/help/data-views/derived-fields/derived-fields.md)。
 * **包含的组件**：您配置为共享的组件。 创建共享组件时，您可以将多个架构字段拖至此区域以同时创建多个组件。 编辑共享组件时，您可以选择要编辑的多个组件，这将列出此区域中的所有选定组件。
 * **组件设置**：在包含的组件区域中选择组件时，可以在此列中配置所有可用的设置。 有关维度和量度的所有可用选项，请参阅[组件设置](/help/data-views/component-settings/overview.md)。 按住Shift并单击包含的组件区域中的多个元素，可以同时编辑任何常用字段。

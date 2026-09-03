@@ -6,30 +6,22 @@ feature: Content Analytics
 role: Admin
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
 TQID: https://experienceleague.adobe.com/McecE-5AGq-IVw-rdkZpV5WgTvax-gubrpQk0ow4JJc
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
 workflow-type: tm+mt
-source-wordcount: 720
-ht-degree: 62%
+source-wordcount: 721
+ht-degree: 66%
 
 ---
 
 
 # Content Analytics 手动配置
 
-本文详细介绍了要启动或停止 Content Analytics 配置的数据收集或者要编辑 Content Analytics 实施所需的手动操作。
+本文详细介绍了启动或停止 Content Analytics 配置的数据收集，或编辑 Content Analytics 实施所需的手动操作。
 
 可以使用以下手动配置操作：
 
@@ -50,13 +42,13 @@ ht-degree: 62%
 
 * 对于&#x200B;**Web**：
 
-   1. 在开发、暂存或生产环境的页面元素中移除[嵌入代码](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/environments/environments)`<head>`，取决于 Content Analytics。
-   1. 删除与Content Analytics配置关联的Web标记属性。
+  1. 在开发、暂存或生产环境的页面元素中移除[嵌入代码](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/environments/environments)`<head>`，取决于 Content Analytics。
+  1. 删除与Content Analytics配置关联的Web标记属性。
 
 * 对于&#x200B;**移动设备**：
 
-   1. 从您的应用程序中删除[Content Analytics扩展](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)。
-   1. 删除与您的Content Analytics配置关联的移动标记属性。
+  1. 从您的应用程序中删除[Content Analytics扩展](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)。
+  1. 删除与您的Content Analytics配置关联的移动标记属性。
 
 遵循[发布流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/overview){target="_blank"}以应用更改。
 

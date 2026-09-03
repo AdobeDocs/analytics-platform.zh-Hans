@@ -5,19 +5,11 @@ feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
 TQID: https://experienceleague.adobe.com/G2HFW3lyH16Hh9IGbBgX85eyO0O9i56-dJeK-LqBPJw
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1166
@@ -39,7 +31,7 @@ ht-degree: 88%
 
 >[!BEGINSHADEBOX]
 
-_本文在_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_&#x200B;中记录了Quick Insights面板。<br/>_有关本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版本，请参阅[Quick Insights面板](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/quickinsight)。_
+_本文在_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_&#x200B;中记录了Quick Insights面板。<br/>_有关本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版本，请参阅[Quick Insights面板](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/panels/quickinsight)。_
 
 >[!ENDSHADEBOX]
 
@@ -63,11 +55,11 @@ _本文在_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalyt
 * 在 [!UICONTROL Analysis Workspace] 中妥善生成数据表以及随附的可视化图表。
 * 了解 [!UICONTROL Analysis Workspace] 中基本组件和要素的术语和词汇。
 * 在[!UICONTROL 自由格式表]中轻松进行维度的简单划分、添加多个量度或比较区段。
-* 更改或尝试各种可视化图表类型，快速直观地找到用于分析的查找工具。
+* 更改或尝试各种可视化图表类型，快速直观地找到适合您分析的工具。
 
 ## 基本关键术语
 
-以下是您需要熟练掌握的一些基本术语。 每个数据表都包含 2 个或多个用于讲述数据故事的生成基块（组件）。
+以下是您需要熟悉的一些基本术语。 每个数据表都包含 2 个或多个用于讲述数据故事的生成基块（组件）。
 
 | 构成要素（组件） | 定义 |
 |---|---|
@@ -75,7 +67,7 @@ _本文在_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalyt
 | **[!UICONTROL 维度项]** | 维度项是维度的单个值。 例如，浏览器维度的维度项可能是 *Chrome*、*Firefox*、*Edge* 等。 |
 | [!UICONTROL 量度] | 量度是关于查看次数、点进次数、重新加载次数、平均逗留时间、单位、订单数、收入等人员活动的量化信息。 |
 | **[!UICONTROL 可视化图表]** | Workspace 提供了[许多可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)，用于生成数据的可视化表示形式。 例如条形图、圆环图、直方图、线形图、地图、散点图等。 |
-| **[!UICONTROL 维度划分]** | 维度划分是一种按其他维度来划分维度的方法。 例如，您可以按移动设备划分美国各州的情况，以获取每个州的移动设备访问次数。 或者您可以按移动设备类型、地区、内部营销活动等划分移动设备。 |
+| **[!UICONTROL 维度划分]** | 维度细分是一种按其他维度来细分维度的方法。 例如，您可以按移动设备划分美国各州的情况，以获取每个州的移动设备访问次数。 或者您可以按移动设备类型、地区、内部营销活动等划分移动设备。 |
 | **[!UICONTROL 区段]** | 利用区段可根据相关特征或网站交互辨别一部分人。 例如，您可以根据以下方面生成[!UICONTROL 人员]区段 <li>属性：浏览器类型、设备、访问次数、国家/地区、性别或</li><li>交互：营销活动、关键词搜索、搜索引擎或</li><li>退出和进入：来自 Facebook 的人员、定义的登陆页面、反向链接域或</li><li> 自定义变量：表单字段、定义的类别、客户 ID。 |
 
 ## 使用
@@ -119,7 +111,7 @@ _本文在_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalyt
 
    ![自由格式表纵向显示维度，横向显示量度。](assets/quick-insights-output.png)
 
-   * 具有维度（国家代码）和量度（会话）的自由格式表，按过去 12 个月的 Web 会话分段。
+   * 具有维度（国家代码）和量度（会话）的自由格式表，按 Web 会话进行分段，时间范围为过去 12 个月。
 
    * 随附的可视化图表，在这个示例中是[条形图](/help/analysis-workspace/visualizations/bar.md)。 生成的可视化内容以您添加到表中的数据类型为基础。 任何基于时间的数据（例如每日/月的[!UICONTROL 会话]）均默认显示为[!UICONTROL 折线图]。 任何非基于时间的数据（例如[!UICONTROL 每台设备]的[!UICONTROL 会话]均默认显示为[!UICONTROL 条形图]。 您可以通过单击可视化内容类型旁边的下拉箭头来更改可视化内容类型。
 
@@ -131,21 +123,21 @@ _本文在_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalyt
 
 [!UICONTROL 快速洞察生成器]中会弹出其他有用提示，其中一些提示取决于您的上一个操作。
 
-* 首先，您可能需要完成&#x200B;**[!UICONTROL 更多提示]**&#x200B;教程。 在创建至少包含一个维度和一个量度的项目后 24 小时内会显示本教程。 选择快速洞察面板标题旁边的 ![HelpOutline](/help/assets/icons/HelpOutline.svg)，然后从弹出窗口中选择&#x200B;**[!UICONTROL 更多提示]**。
+* 首先，您可能需要完成&#x200B;**[!UICONTROL 更多提示]**&#x200B;教程。 在创建至少包含一个维度和一个量度的项目 24 小时后，会显示本教程。 选择快速洞察面板标题旁边的 ![HelpOutline](/help/assets/icons/HelpOutline.svg)，然后从弹出窗口中选择&#x200B;**[!UICONTROL 更多提示]**。
 
   ![The Quick Insights Panel notification displayed after you select the Help icon.](assets/qibuilder4.png)
 
-* 您可以分析多个维度和量度、组合或比较分段并指定数据范围：
+* 您可以分析多个维度和量度、组合或比较分段并指定日期范围：
 
   ![Quick Insights Builder Result](assets/qibuilder-result.png)
 
-   * **[!UICONTROL 分析]**&#x200B;维度&#x200B;**[!UICONTROL 划分条件]**：您最多可以使用 3 个级别对维度进行划分，以挖掘您真正需要的数据。 请参阅➊、➋和➌。
+  * **[!UICONTROL 分析]**&#x200B;维度&#x200B;**[!UICONTROL 划分条件]**：您最多可以使用 3 个级别对维度进行划分，以挖掘您真正需要的数据。 请参阅➊、➋和➌。
 
-   * 添加更多的量度&#x200B;**[!UICONTROL 条件]**：您最多可以添加 2 个量度。 查看➍和➎。
+  * 添加更多的量度&#x200B;**[!UICONTROL 条件]**：您最多可以添加 2 个量度。 查看➍和➎。
 
-   * **[!UICONTROL 分段依据]**：您最多可以再添加 2 个区段。 例如，将“预订”添加为区段，并将该区段与您所比较的“预订常客”和“首次飞行的客人”区段结合起来。 请参阅➏、➐和➑。
+  * **[!UICONTROL 分段依据]**：您最多可以再添加 2 个区段。 例如，将“预订”添加为区段，并将该区段与您所比较的“预订常客”和“首次飞行的客人”区段结合起来。 请参阅➏、➐和➑。
 
-   * 在：可以指定日期范围。 请参阅➒。
+  * 在：可以指定日期范围。 请参阅➒。
 
 ## 已知限制
 
@@ -155,7 +147,7 @@ _本文在_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalyt
 
 ![The Resync Builder option warning.](assets/qibuilder-outofsync.png)
 
-否则，直接生成会导致此表如传统的自由格式表那样，不含对于新用户有用的功能。
+否则，直接构建会导致该表像传统的自由格式表一样运行，而不具备对新用户有帮助的功能。
 
 
 >[!MORELIKETHIS]

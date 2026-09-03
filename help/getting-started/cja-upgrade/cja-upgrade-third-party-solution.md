@@ -7,18 +7,11 @@ feature: Basics
 exl-id: bc79ba1a-1153-4fe8-b265-9703a323c977
 autotag-review: '2026-05-19T08:20:34.368Z'
 TQID: 'https://experienceleague.adobe.com/fwYoa9oeIs2tujyDEWUj-GaAgpZQNBwup-YsHIe-TdU'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 046df00868ca4a5b3bab3eb36cca7d91b141333a
 workflow-type: tm+mt
 source-wordcount: 293
@@ -39,7 +32,7 @@ ht-degree: 89%
 
 {{upgrade-note}}
 
-不是从 Adobe Analytics，而是从一个分析解决方案升级到 Customer Journey Analytics 的推荐流程是对 Experience Platform Web SDK 进行新的实施，这是 Customer Journey Analytics 的首选数据收集方法。 结合 Web SDK，Adobe 还建议将第三方分析解决方案的历史数据导入 Adobe Experience Platform。
+从 Adobe Analytics 以外的分析解决方案升级到 Customer Journey Analytics 的推荐流程，是重新实施 Experience Platform Web SDK，这是 Customer Journey Analytics 的首选数据收集方法。 结合 Web SDK，Adobe 还建议将第三方分析解决方案的历史数据导入 Adobe Experience Platform。
 
 <!-- After you have enough historical data using the Experience Platform Web SDK and you have fully transitioned to Customer Journey Analytics, the Analytics source connector can be turned off and the Web SDK can be used exclusively. -->
 

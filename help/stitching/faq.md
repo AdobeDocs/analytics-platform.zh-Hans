@@ -6,23 +6,14 @@ feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
 TQID: https://experienceleague.adobe.com/0y2eqwQxkHefcODFhxXCuioMnL-YCXm21335Z2upPB0
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
 source-git-commit: 19cf20236196ab9c2518bf299a36d32f65210227
 workflow-type: tm+mt
-source-wordcount: 2373
+source-wordcount: 2383
 ht-degree: 71%
 
 ---
@@ -94,9 +85,9 @@ ht-degree: 71%
 
 在某些情况下，单个用户可以与多个永久 ID 相关联。 例如，经常清除浏览器的Cookie或使用浏览器私人/无痕模式的用户。
 
-对于基于字段的拼接，永久 ID 的数量并不重要，重要的是人员 ID。 单个用户可以属于任意数量的设备，而不会影响 Customer Journey Analytics 的跨设备拼接功能。
+对于基于字段的拼接，永久 ID 的数量并不重要，重要的是人员 ID。 单个用户可以关联任意数量的设备，而不会影响 Customer Journey Analytics 的跨设备拼接功能。
 
-对于基于图形的拼合，一个人在身份图中可以具有多个永久ID。 基于图形的拼接是使用基于指定命名空间的永久 ID。 如果同一命名空间有更多的永久ID，则使用词典编排的第一个永久ID。
+对于基于图形的拼合，一个人在身份图中可以具有多个永久ID。 基于图形的拼接使用基于指定命名空间的永久 ID。 如果同一命名空间有更多的永久ID，则使用词典编排的第一个永久ID。
 
 +++
 
@@ -116,7 +107,7 @@ Adobe 启用拼接后大约一周，实时拼接功能就可供使用。 回填�
 
 +++回答
 
-[跨设备分析](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/cda/overview)是传统 Adobe Analytics 的一项特有功能，它使您能够了解人们如何跨设备操作。 该功能提供了两种将设备数据链接在一起的工作流：基于字段的拼接和设备图。
+[跨设备分析](https://experienceleague.adobe.com/en/docs/analytics/components/cda/overview)是传统 Adobe Analytics 的一项特有功能，它使您能够了解人们如何跨设备操作。 该功能提供了两种将设备数据链接在一起的工作流：基于字段的拼接和设备图。
 
 跨渠道分析是 Customer Journey Analytics 的一个特有用例，允许您了解人们在各种设备和渠道上如何操作。 它会拼接数据集的人员 ID，使该数据集与其他数据集无缝组合。 此功能在设计上与基于跨设备分析字段的拼接功能类似，但由于传统 Analytics 和 Customer Journey Analytics 之间的数据架构不同，此功能的实施方法也不同。 更多信息请参阅[拼接](overview.md)和[跨渠道分析](../use-cases/cross-channel/cross-channel.md)用例。
 
@@ -128,7 +119,7 @@ Adobe 启用拼接后大约一周，实时拼接功能就可供使用。 回填�
 
 +++回答
 
-Adobe 会根据本地和国际法律处理隐私请求。 Adobe 提供了 [Adobe Experience Platform 隐私服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/privacy/home)来提交数据访问和删除请求。 这些请求同时适用于原始数据集和已重新生成键值的数据集。
+Adobe 会根据本地和国际法律处理隐私请求。 Adobe 提供了 [Adobe Experience Platform 隐私服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/privacy/home)来提交数据访问和删除请求。 这些请求同时适用于原始数据集和重新生成键的数据集。
 
 >[!IMPORTANT]
 >
@@ -159,7 +150,7 @@ Adobe 会根据本地和国际法律处理隐私请求。 Adobe 提供了 [Adobe
 
 **隐私请求的当前进程**
 
-收到 CustID Bob 的客户的隐私请求后，就会删除带有删除线条目的行。 其他事件使用身份标识图重新进行拼接。 例如，拼接数据集中的第一个拼接 ID 更新为 **Alex**。
+收到 CustID 为 Bob 的客户的隐私请求后，会删除带有删除线条目的行。 其他事件使用身份标识图重新进行拼接。 例如，拼接数据集中的第一个拼接 ID 更新为 **Alex**。
 
 | 身份标识图 | Id | 时间戳 | 永久 ID | 永久命名空间 | 人员 ID | 人员命名空间 |
 |:---:|---|---|---|---|---|---|
@@ -254,11 +245,11 @@ Customer Journey Analytics 中的某些量度与传统 Analytics 中的量度相
 
 | **Customer Journey Analytics 拼接数据** | **Customer Journey Analytics 未拼接数据** | **Adobe Analytics** | **带 CDA 的 Analytics Ultimate** |
 | ----- | ----- | ----- | ----- |
-| **人员** =不同人员ID的数量，其中产生的ID被选作人员ID。 **人员数** 可能高于或低于传统 Adobe Analytics 中的&#x200B;**独特访客数**，具体取决于拼接过程的结果。 | **人员** = 根据被选为人员 ID 的列计算的不同人员 ID 的数量。 如果在 Customer Journey Analytics 中 `endUserIDs._experience.aaid.id` 用作人员 ID，Adobe 源连接器数据集中的&#x200B;**人员**&#x200B;就与传统 Adobe Analytics 中的&#x200B;**独特访客**&#x200B;类似。 | **独特访客** = 不同访客 ID 的数量。 **独特访客**&#x200B;可能与不同 **ECID** 的数量不一致。 | 请参阅[人员数](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/metrics/people)。 |
-| **会话**：根据 Customer Journey Analytics 数据视图中的会话设置定义。 拼接过程可能会将来自多个设备的各个会话组合成单个会话。 | **会话**：根据 Customer Journey Analytics 数据视图中特定的会话设置定义。 | **访问数**：请参阅[访问数](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/metrics/visits)。 | **访问数**：根据 [CDA 虚拟报告包](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/cda/setup)中特定的会话设置定义。 |
-| **活动**= Customer Journey Analytics 中拼接数据的行数。 该量度通常接近于传统 Adobe Analytics 中的&#x200B;**“发生次数”。** 但是，请注意上面关于包含空白永久 ID 的行的常见问题解答。 | **活动**= Customer Journey Analytics 中未拼接数据的行数。 该量度通常接近于传统 Adobe Analytics 中的&#x200B;**“发生次数”。** 但是请注意，如果任何事件在 Experience Platform 数据湖的未拼接数据中有空白的永久 ID，这些事件就不包括在 Customer Journey Analytics 中。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/metrics/occurrences)。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/metrics/occurrences)。 |
+| **人员** =不同人员ID的数量，其中产生的ID被选作人员ID。 **人员数** 可能高于或低于传统 Adobe Analytics 中的&#x200B;**独特访客数**，具体取决于拼接过程的结果。 | **人员** = 根据被选为人员 ID 的列计算的不同人员 ID 的数量。 如果在 Customer Journey Analytics 中 `endUserIDs._experience.aaid.id` 用作人员 ID，Adobe 源连接器数据集中的&#x200B;**人员**&#x200B;就与传统 Adobe Analytics 中的&#x200B;**独特访客**&#x200B;类似。 | **独特访客** = 不同访客 ID 的数量。 **独特访客**&#x200B;可能与不同 **ECID** 的数量不一致。 | 请参阅[人员数](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/people)。 |
+| **会话**：根据 Customer Journey Analytics 数据视图中的会话设置定义。 拼接过程可能会将来自多个设备的各个会话组合成单个会话。 | **会话**：根据 Customer Journey Analytics 数据视图中特定的会话设置定义。 | **访问数**：请参阅[访问数](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/visits)。 | **访问数**：根据 [CDA 虚拟报告包](https://experienceleague.adobe.com/en/docs/analytics/components/cda/setup)中特定的会话设置定义。 |
+| **活动**= Customer Journey Analytics 中拼接数据的行数。 该量度通常接近于传统 Adobe Analytics 中的&#x200B;**“发生次数”。** 但是，请注意上面关于包含空白永久 ID 的行的常见问题解答。 | **活动**= Customer Journey Analytics 中未拼接数据的行数。 该量度通常接近于传统 Adobe Analytics 中的&#x200B;**“发生次数”。** 但是请注意，如果任何事件在 Experience Platform 数据湖的未拼接数据中有空白的永久 ID，这些事件就不包括在 Customer Journey Analytics 中。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/occurrences)。 | **发生次数**：请参阅[发生次数](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/occurrences)。 |
 
-Customer Journey Analytics 和 Adobe Analytics 中的其他量度可能相似。 例如，Adobe Analytics [自定义事件](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/metrics/custom-events) 1 – 100 的总数在传统 Adobe Analytics 和 Customer Journey Analytics 之间具有可比性（无论是否拼接）。 Customer Journey Analytics 与 Adobe Analytics 之间的[功能差异](/help/getting-started/aa-vs-cja/cja-aa.md)（如消除重复事件）可能会导致这两种产品之间存在差异。
+Customer Journey Analytics 和 Adobe Analytics 中的其他量度可能相似。 例如，Adobe Analytics [自定义事件](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/custom-events) 1 – 100 的总数在传统 Adobe Analytics 和 Customer Journey Analytics 之间具有可比性（无论是否拼接）。 Customer Journey Analytics 与 Adobe Analytics 之间的[功能差异](/help/getting-started/aa-vs-cja/cja-aa.md)（如消除重复事件）可能会导致这两种产品之间存在差异。
 
 +++
 
@@ -280,7 +271,7 @@ Customer Journey Analytics 和 Adobe Analytics 中的其他量度可能相似。
 
 数据不必重新摄取到Experience Platform。 但是，数据需要在Customer Journey Analytics中重新配置。 请执行以下步骤：
 
-1. 使用基于图形的拼接来设置新的基于图形的拼接数据集。
+1. 使用基于图形的拼接来设置新的基于图形拼接的数据集。
 1. 创建一个数据时间窗口非常短的新的临时连接。
 1. 将新的基于图形的数据集配置为这个临时连接的一部分。
 1. 通过这个新的临时连接验证基于图形的拼接是否正常工作。
@@ -295,7 +286,7 @@ Customer Journey Analytics 和 Adobe Analytics 中的其他量度可能相似。
 
 +++回答
 
-如果您按照上述步骤操作就不会。 如果不是这样，请联系 Adobe Consulting 获取更多支持。
+如果您按照上述步骤操作就不会。 否则，请联系 Adobe 咨询获取更多支持。
 
 +++
 
@@ -307,7 +298,7 @@ Customer Journey Analytics 和 Adobe Analytics 中的其他量度可能相似。
 
 确保为Identity Service启用了数据集，以便将该数据集用于基于图形的拼合。
 
-您要使用基于图形的拼接不必具有 Real-Time Customer Data Platform 许可。 基于图形的拼接是基于一个可用的身份标识图，而不是基于实时客户轮廓。
+您无需获得 Real-Time Customer Data Platform 许可即可使用基于图形的拼接。 基于图形的拼接是基于一个可用的身份标识图，而不是基于实时客户轮廓。
 
 要检查现有数据集并仅为标识服务启用该数据集，请使用对仅使用`unifiedIdentity`标记的`/datasets`终结点的`PATCH`请求。 例如：
 
@@ -326,7 +317,7 @@ curl -X PATCH \
 
 如果您未获得 Real-Time Customer Data Profile 的许可，在请求中 `unifiedProfile` 标记的任何使用都会返回错误。
 
-更多信息请参阅[创建一个为轮廓和身份标识启用的数据集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/enable-for-profile#enable-the-dataset)。
+更多信息请参阅[创建一个为轮廓和身份标识启用的数据集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#enable-the-dataset)。
 
 +++
 

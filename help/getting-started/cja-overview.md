@@ -6,23 +6,11 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
 TQID: https://experienceleague.adobe.com/ECcpEFMughC-9Tf1P6-0f82-NusPJ4r5johJMLnD34w
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
 source-wordcount: 1186
@@ -47,7 +35,7 @@ Customer Journey Analytics 架构大致如下所示：
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analytics：适用于 Experience Business 的 Analytics](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics){target="_blank"} 以获取有关 Customer Journey Analytics 的介绍视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analytics：适用于 Experience Business 的 Analytics](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics){target="_blank"} 以获取有关 Customer Journey Analytics 的介绍视频。
 
 >[!ENDSHADEBOX]
 
@@ -56,7 +44,7 @@ Customer Journey Analytics 架构大致如下所示：
 
 Customer Journey Analytics 通过提供易于使用的跨渠道功能和消除 Adobe Analytics 早期版本中的限制，扩展了 Adobe Analytics 的范围。 一些显著改进的功能包括：
 
-* **无限量的变量和事件**：eVar、prop 和事件的概念已不复存在。 数据主要侧重于维度和量度。 数据集可以有无限数量的唯一维度和量度。
+* **无限量的变量和事件**：eVar、prop 和事件的概念已不复存在。 数据主要侧重于维度和量度。 数据集中的不同维度和量度数量可以不受限制。
 * **无限唯一值**：Adobe Experience Platform 不受任何特有限制的约束。
 * **更改历史数据**：使用 Adobe Experience Platform，可以删除或更正数据。
 * **跨报告包数据**：可以在 Platform 中组合来自多个数据集的现有实施。
@@ -72,18 +60,18 @@ Customer Journey Analytics 的初始版本包括 Adobe Analytics 中的许多功
 通过 Customer Journey Analytics，您可以：
 
 * **在历程情境中查看客户**：您可以跨多个渠道按顺序查看和分析数据。 将来自呼叫中心、POS 系统以及在线属性的数据合并到单个报告视图。
-* **为所有人提供洞察信息**：实现数据访问民主化，让更多人利用数据衍生的洞察信息做出业务决策。 组织中任何负责客户体验某一方面的人员，都可以基于更完整全面的数据，更快地做出真正明智的决策。
+* **为所有人提供洞察信息**：实现数据访问民主化，让更多人利用数据衍生的洞察信息做出业务决策。 组织中任何负责客户体验某一方面的人员，都可以基于更完整全面的数据，更快地做出真正的决策。
 * **助力分析师充分利用数据科学的强大力量**：Customer Journey Analytics 让普通人能够运用数据科学获得深入的分析和洞察信息。
 * **使用按需报告实现数据集可视化并进行交互**：工作区可以使用 Adobe Experience Platform 中符合某些基本规则的任何数据集。
-* **查看非 Web 数据**：工作区不再局限于“点击”或“事件”的严格定义。 自定义架构允许完全控制数据和定义。
+* **查看非 Web 数据**：工作区不再局限于“点击”或“事件”的严格定义。 自定义架构允许对数据和定义进行完全控制。
 * **对数据操作加强控制**：更改已上载的数据，创建数据集，并将其导入工作区。 Adobe Experience Platform 通过 Experience Platform Query Service 提供查询、提取、转换和加载工具。
 
 ## 先决条件
 
 在开始使用 Customer Journey Analytics 之前，必须满足以下前提条件：
 
-* 您的组织与 Adobe 签订了一份 Analytics for Select、Prime 或 Ultimate 的有效合同，其中包含 Customer Journey Analytics 附加产品。 如果您不确定您拥有哪种合同类型，或不确定您是否拥有 Customer Journey Analytics 附加产品，请联系您的 Adobe 帐户团队。
-* 您的组织已配置 Adobe Experience Platform。
+* 您的组织与 Adobe 签订了一份 Analytics for Select、Prime 或 Ultimate 的有效合同，其中包含 Customer Journey Analytics 附加产品。 如果您不确定您拥有哪种合同类型，或不确定您是否拥有 Customer Journey Analytics 附加组件，请联系您的 Adobe 帐户团队。
+* 您的组织已开通 Adobe Experience Platform。
 * 您还可以将 Customer Journey Analytics 作为独立产品购买，而无需 Adobe Analytics。
 
 ## 访问控制
@@ -96,7 +84,7 @@ Customer Journey Analytics 的初始版本包括 Adobe Analytics 中的许多功
 
 * 虚拟报告包现在称为“数据视图”。
 * “分类”现在称为“查找数据集”。
-* “客户属性”现在称为“配置文件数据集”。
+* “客户属性”现在称为“轮廓数据集”。
 * “点击”容器现在称为“事件”容器。
 * “访问”容器现在称为“会话”容器。
 * “访客”容器现在称为“人员”容器。
@@ -105,11 +93,11 @@ Customer Journey Analytics 的初始版本包括 Adobe Analytics 中的许多功
 
 Customer Journey Analytics 是依赖于 Adobe Experience Platform 的众多功能之一。 此外，基于 Experience Platform 构建的几项其他功能也可让您充分利用数据。
 
-Adobe Experience Platform 让您可以实现源自任何系统的客户数据和内容的集中化和标准化，并应用数据科学和机器学习来优化个性化体验的设计和交付。 Platform 中的客户数据将作为数据集存储，数据集由一个架构和批量数据组成。 有关 Platform 的更多详细信息，请参阅 [Adobe Experience Platform 体系架构概述](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=zh-hans)。
+Adobe Experience Platform 让您可以实现源自任何系统的客户数据和内容的集中化和标准化，并应用数据科学和机器学习来优化个性化体验的设计和传递。 Platform 中的客户数据将作为数据集存储，数据集由一个架构和批量数据组成。 有关 Platform 的更多详细信息，请参阅 [Adobe Experience Platform 体系架构概述](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=zh-hans)。
 
 从数据摄取到 SQL 直接访问，Experience Platform 的多个组件在 Customer Journey Analytics 中发挥着极为重要的作用，并且与之相辅相成：
 
-* [Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-hans)：使用标准 SQL 从 Adobe Experience Platform 检索数据，如 Adobe 解决方案数据、客户第一方数据或任何其他 Platform 数据。 它是一个无服务器工具，通过它可连接任何数据集，并将查询结果记录为新数据集，以供在报告中使用或摄取到配置文件服务。 可使用 Experience Platform Query Service 构建数据分析生态系统，在使用者的各种交互渠道上为使用者画像。 这些渠道可能包括销售点系统、Web、移动、CRM 系统等。
+* [Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-hans)：使用标准 SQL 从 Adobe Experience Platform 检索数据，如 Adobe 解决方案数据、客户第一方数据或任何其他 Platform 数据。 它是一个无服务器工具，通过它可连接任何数据集，并将查询结果记录为新数据集，以供在报告中使用或摄取到配置文件服务。 可使用 Experience Platform Query Service 构建数据分析生态系统，从而跨消费者的各种交互渠道构建其全貌。 这些渠道可能包括销售点系统、Web、移动、CRM 系统等。
 * [实时客户配置文件](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-hans)：
 * [身份标识服务](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-hans)
 
@@ -117,18 +105,18 @@ Adobe Experience Platform 让您可以实现源自任何系统的客户数据和
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Customer Journey Analytics 中处理数据](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/data-prep/working-with-data-in-cja){target="_blank"}以获取有关如何在 Customer Journey Analytics 中处理数据的介绍视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Customer Journey Analytics 中处理数据](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-prep/working-with-data-in-cja){target="_blank"}以获取有关如何在 Customer Journey Analytics 中处理数据的介绍视频。
 
 >[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [架构与集成](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/architecture/architecture-and-integrations-of-cja){target="_blank"}以获取有关 Customer Journey Analytics 架构与集成的介绍视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [架构与集成](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/architecture/architecture-and-integrations-of-cja){target="_blank"}以获取有关 Customer Journey Analytics 架构与集成的介绍视频。
 
 >[!ENDSHADEBOX]
 
 >[!MORELIKETHIS]
 >
->* [面向分析师的 Adobe Customer Journey Analytics 速成课程](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-crash-course-for-analysts/ba-p/719261?profile.language=zh-Hans)
->* [优化您的思维方式和 Adobe Customer Journey Analytics 工作流程：适合任何规模组织的团队模型](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/optimizing-your-mindset-and-adobe-customer-journey-analytics/ba-p/721456?profile.language=zh-Hans)
->* [构建组织准备工作：以人为本的 Adobe Customer Journey Analytics 扩展指南](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/building-organizational-readiness-a-people-first-guide-to/ba-p/723273?profile.language=zh-Hans)
+>* [面向分析师的 Adobe Customer Journey Analytics 速成课程](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-crash-course-for-analysts/ba-p/719261)
+>* [优化您的思维方式和 Adobe Customer Journey Analytics 工作流程：适合任何规模组织的团队模型](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/optimizing-your-mindset-and-adobe-customer-journey-analytics/ba-p/721456)
+>* [构建组织准备工作：以人为本的 Adobe Customer Journey Analytics 扩展指南](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/building-organizational-readiness-a-people-first-guide-to/ba-p/723273)

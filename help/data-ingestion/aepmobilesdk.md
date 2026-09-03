@@ -6,26 +6,11 @@ feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
 TQID: https://experienceleague.adobe.com/rbgqDkQLPbw-EfhMyUL-eVXZZ1cxMXiQmvU7Si2WCZ8
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: c38ed341-fab2-46df-9d72-88d8166edebb
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: df28738e-9c71-4aa8-929e-edde22340cc6
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebbid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df28738e-9c71-4aa8-929e-edde22340cc6id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 3536
@@ -126,7 +111,7 @@ ht-degree: 63%
 
    >[!NOTE]
    >
-   >如果该字段组不可用，请寻找另一个包含身份标识字段的字段组。 或者[创建一个新的字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=zh-Hans)，并[将新的身份标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=zh-Hans#define-a-identity-field)（如 `ecid`、`crmId` 以及您需要的其他字段）添加到该字段组中，并选择该新字段组。
+   >如果该字段组不可用，请寻找另一个包含身份标识字段的字段组。 或者[创建一个新的字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html)，并[将新的身份标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field)（如 `ecid`、`crmId` 以及您需要的其他字段）添加到该字段组中，并选择该新字段组。
 
    ![识别对象](./assets/identification-field-mobile.png)
 
@@ -156,7 +141,7 @@ ht-degree: 63%
 
    系统会提示您启用轮廓的架构。 一旦启用，当数据被引入基于此架构的数据集中时，该数据将合并到实时客户轮廓。
 
-   有关详细信息，请参阅[启用架构以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans#profile)。
+   有关详细信息，请参阅[启用架构以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile)。
 
    >[!IMPORTANT]
    >
@@ -166,7 +151,7 @@ ht-degree: 63%
 
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存架构。
 
-您已创建一个最小架构，用于为您可从移动应用程序中捕获的数据建模。 该架构允许使用 Experience Cloud Identity 和电子邮件地址来识别轮廓。 通过为配置文件启用架构，您可以确保将从移动应用程序捕获的数据添加到实时客户配置文件。
+您已创建一个最小架构，用于为您可从移动应用程序中捕获的数据建模。 该架构允许使用 Experience Cloud 身份标识和电子邮件地址来识别轮廓。 通过为配置文件启用架构，您可以确保将从移动应用程序捕获的数据添加到实时客户配置文件。
 
 除了行为数据之外，您还可以从移动应用程序捕获配置文件属性数据（例如订阅新闻通讯的配置文件详细信息）。
 
@@ -178,15 +163,15 @@ ht-degree: 63%
 
 - 添加基于 Profile Core v2 字段组的身份标识对象。
 
-- 将 Experience Cloud ID 定义为主要身份标识符，并将电子邮件定义为身份标识符。
+- 将 Experience Cloud ID 定义为主要标识符，并将电子邮件定义为标识符。
 
 - 为轮廓启用架构
 
-请参阅[在 UI 中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=zh-Hans)，了解有关向架构添加和删除字段组和单个字段的更多信息。
+请参阅[在 UI 中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html)，了解有关向架构添加和删除字段组和单个字段的更多信息。
 
 ### 设置数据集
 
-使用您的架构，您已经定义了数据模型。 现在，您必须定义结构以使用数据集存储和管理这些数据。
+通过您的架构，您已经定义了数据模型。 现在，您必须定义结构以使用数据集存储和管理这些数据。
 
 设置您的数据集
 
@@ -210,7 +195,7 @@ ht-degree: 63%
 
 7. 选择&#x200B;**[!UICONTROL 轮廓]**&#x200B;开关
 
-   系统会提示您启用轮廓的数据集。 启用后，数据集会使用其摄取的数据丰富实时客户轮廓。
+   系统会提示您为轮廓启用数据集。 启用后，数据集会使用其摄取的数据丰富实时客户轮廓。
 
    >[!IMPORTANT]
    >
@@ -254,13 +239,13 @@ ht-degree: 63%
 
 您的数据流现在配置为将从移动应用程序收集的数据转发到Adobe Experience Platform中的数据集。
 
-有关如何配置数据流和如何处理敏感数据的更多信息，请参阅[数据流概述](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=zh-Hans)。
+有关如何配置数据流和如何处理敏感数据的更多信息，请参阅[数据流概述](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html)。
 
 
 
 ## 使用标签
 
-要在您的网站上实施代码以实际收集数据，请使用Adobe Experience Platform中的标记功能。 这一款标记管理解决方案，可让您在满足其他标记要求的同时部署代码。 标记通过Adobe Experience Platform Mobile Adobe Experience Platform扩展提供了与SDK的无缝集成。
+要在您的网站上实施代码以实际收集数据，请使用Adobe Experience Platform中的标记功能。 这种标记管理解决方案可让您在满足其他标记要求的同时部署代码。 标记通过Adobe Experience Platform Mobile Adobe Experience Platform扩展提供了与SDK的无缝集成。
 
 ### 创建您的标记
 
@@ -307,7 +292,7 @@ ht-degree: 63%
 - AEP Assurance。
 - 同意。
 
-有关扩展及其配置的更多信息，请参阅Experience Platform的移动应用程序教程中的[配置标记属性](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=zh-Hans)。
+有关扩展及其配置的更多信息，请参阅Experience Platform的移动应用程序教程中的[配置标记属性](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html)。
 
 #### **数据元素**
 
@@ -339,7 +324,7 @@ ht-degree: 63%
 
 #### **规则**
 
-Adobe Experience Platform 中的标签遵循基于规则的系统。 他们寻找用户交互和相关数据。 如果满足您的规则中所列的标准，则规则会触发您已识别的扩展、脚本或客户端代码。 您可以使用规则通过Adobe Experience Platform Edge Network扩展将数据发送到Adobe Experience Platform中（如XDM对象）。
+Adobe Experience Platform 中的标签遵循基于规则的系统。 它们会查找用户交互和相关数据。 如果满足您的规则中所列的标准，则规则会触发您已识别的扩展、脚本或客户端代码。 您可以使用规则通过Adobe Experience Platform Edge Network扩展将数据发送到Adobe Experience Platform中（如XDM对象）。
 
 例如，您希望在使用移动设备应用程序时（在前台）和不使用移动设备应用程序时（推送回后台）发送事件数据。
 
@@ -357,27 +342,27 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。 他们寻�
 
    - 在[!UICONTROL 事件配置]对话框中：
 
-      - 从[!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL 移动核心]**。
+     - 从[!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL 移动核心]**。
 
-      - 从[!UICONTROL 事件类型]列表中选择&#x200B;**[!UICONTROL 前台]**。
+     - 从[!UICONTROL 事件类型]列表中选择&#x200B;**[!UICONTROL 前台]**。
 
-      - 选择&#x200B;**[!UICONTROL 保留更改]**。
+     - 选择&#x200B;**[!UICONTROL 保留更改]**。
 
    - 单击[!UICONTROL 移动核心 — 前台]旁边的![加号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)。
 
-      - 从[!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL 移动核心]**。
+     - 从[!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL 移动核心]**。
 
-      - 从[!UICONTROL 事件类型]列表中选择&#x200B;**[!UICONTROL 背景]**。
+     - 从[!UICONTROL 事件类型]列表中选择&#x200B;**[!UICONTROL 背景]**。
 
-      - 选择&#x200B;**[!UICONTROL 保留更改]**。
+     - 选择&#x200B;**[!UICONTROL 保留更改]**。
 
    - 单击[!UICONTROL ACTIONS]下的![加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)“添加”。 在[!UICONTROL 操作配置]对话框中：
 
-      - 从[!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL Adobe Experience Platform Edge Network]**。
+     - 从[!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL Adobe Experience Platform Edge Network]**。
 
-      - 从[!UICONTROL 操作类型]列表中选择&#x200B;**[!UICONTROL 将事件转发到Edge Network]**。
+     - 从[!UICONTROL 操作类型]列表中选择&#x200B;**[!UICONTROL 将事件转发到Edge Network]**。
 
-      - 选择&#x200B;**[!UICONTROL 保留更改]**。
+     - 选择&#x200B;**[!UICONTROL 保留更改]**。
 
    - 您的规则应如下所示：
 
@@ -393,7 +378,7 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。 他们寻�
 
 ### 生成并发布标签
 
-在定义了数据元素和规则之后，您需要构建和发布标签。 创建库生成时，必须将其分配给环境。 然后，将会编译该内部版本的扩展、规则和数据元素，并将这些内容放入分配的环境。 每个环境都提供了一个唯一的嵌入代码，从而允许您将其分配的内部版本集成到网站中。
+在定义了数据元素和规则之后，您需要构建和发布标签。 创建库生成时，必须将其分配给环境。 然后，将会编译该构建版本的扩展、规则和数据元素，并将这些内容放入分配的环境。 每个环境都提供了一个唯一的嵌入代码，从而允许您将其分配的构建版本集成到网站中。
 
 要生成并发布您的标签：
 
@@ -413,7 +398,7 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。 他们寻�
 
    - 选择&#x200B;**[!UICONTROL 保存并生成到开发]**。
 
-   您的标记已保存，并为您的开发环境构建。 绿色圆点表示在开发环境中成功构建了标记。
+   您的标记已保存，并为您的开发环境构建。 绿色圆点表示您的标记已在您的开发环境中成功构建。
 
 4. 您可以选择&#x200B;**[!UICONTROL ...]** 重建库或将库移动到临时或生产环境。
 
@@ -440,15 +425,15 @@ Adobe Experience Platform标记支持从简单到复杂的发布工作流程，�
 
 您可能已根据部署Adobe Experience Platform Mobile SDK的过程中所处的位置选择其他环境（暂存、生产），而不是开发环境的代码。
 
-有关详细信息，请参阅 [环境](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=zh-Hans&) 。
+有关详细信息，请参阅 [环境](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?) 。
 
 ## 部署和验证
 
 您现在可以在移动应用程序中部署代码。 部署后，您的移动应用程序会开始将数据收集到Adobe Experience Platform中。
 
-验证您的实现，在必要时进行更正，更正后，使用标签的发布工作流功能将其部署到您的暂存和生产环境中。
+验证您的实施，在必要时进行更正，更正后，使用标签的发布工作流功能将其部署到您的暂存和生产环境中。
 
-有关更多详细信息，请参阅[在移动应用程序中实施Adobe Experience Cloud教程](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=zh-Hans)。
+有关更多详细信息，请参阅[在移动应用程序中实施Adobe Experience Cloud教程](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)。
 
 ## 设置连接
 
@@ -484,11 +469,11 @@ Adobe Experience Platform标记支持从简单到复杂的发布工作流程，�
 
    - 对于每个数据集：
 
-      - 在 Adobe Experience Platform 中，从在数据集架构中定义的可用身份标识中选择[!UICONTROL 人员 ID]。
+     - 在 Adobe Experience Platform 中，从在数据集架构中定义的可用身份标识中选择[!UICONTROL 人员 ID]。
 
-      - 从[!UICONTROL 数据源类型]列表中选择正确的数据源。 如果指定&#x200B;**[!UICONTROL 其他]**，则为您的数据源添加描述。
+     - 从[!UICONTROL 数据源类型]列表中选择正确的数据源。 如果指定&#x200B;**[!UICONTROL 其他]**，则为您的数据源添加描述。
 
-      - 根据您的首选项设置&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;和&#x200B;**[!UICONTROL 数据集回填现有数据]**。
+     - 根据您的首选项设置&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;和&#x200B;**[!UICONTROL 数据集回填现有数据]**。
 
      ![配置数据集](./assets/cja-connections-ajopushid.png)
 
@@ -512,7 +497,7 @@ Adobe Experience Platform标记支持从简单到复杂的发布工作流程，�
 
    从[!UICONTROL 连接]列表中选择您的连接。
 
-   名称并（可选）描述您的连接。
+   为您的连接命名并（可选）添加描述。
 
    ![数据视图配置](./assets/cja-dataview-1.png)
 

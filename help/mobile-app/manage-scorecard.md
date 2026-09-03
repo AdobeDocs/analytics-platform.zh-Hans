@@ -6,23 +6,11 @@ role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
 TQID: https://experienceleague.adobe.com/Sb4kVGW3EHe85km5NDp-qWQu8MIeW5v2gwrYNTmNevY
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b21c7889-c659-4a99-a779-de1bae57e47e
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b743a5d9-dc51-41ed-8b2f-86a1f8de430fid: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b21c7889-c659-4a99-a779-de1bae57e47eid: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1849
@@ -81,7 +69,7 @@ ht-degree: 81%
 
 ### 将描述性文本添加到幻灯片
 
-可添加文本以提供关于图表中包含的内容的有意义信息或关于数据的细微差别。
+可添加文本，提供有关图表内容或数据细微差异的有意义信息。
 
 要将文本添加到详细信息幻灯片，请选择显示 `T` 符号的布局，或将文本可视化图表组件从左侧边栏拖放过来。 在添加新的文本可视化图表或选择带有文本的幻灯片布局时，将自动打开文本编辑器。 文本编辑器提供用于设置文本格式的所有标准选项。 可应用段落、标题和副标题等文本样式，并可应用粗体和斜体字体。 可两端对齐文本、添加带项目符号和编号的列表以及添加链接。 编辑完毕后，选择文本编辑器右上角的最小化按钮以关闭它。 要编辑已添加的文本，请选择铅笔图标以再次打开文本编辑器。
 
@@ -95,7 +83,7 @@ ht-degree: 81%
 
 ## 创建数据故事 {#create-data-story}
 
-数据故事是围绕中心主题或量度生成的辅助数据点、业务背景和相关量度的集合。
+数据故事是围绕中心主题或量度构建的辅助数据点、业务背景和相关量度的集合。
 
 例如，如果您关注 Web 流量，则对您最重要的量度可能是访问量，但您也可能对新访客和独特访客感兴趣，并且您可能要查看按网页或流量来源设备类型细分的数据。 通过移动记分卡项目中的数据故事，可重点介绍对您最重要的量度，同时用多张详细信息幻灯片讲述这些量度背后的整个故事。
 
@@ -104,7 +92,7 @@ ht-degree: 81%
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [移动记分卡项目的数据故事](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [移动记分卡项目的数据故事](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"}。
 
 >[!ENDSHADEBOX]
 
@@ -114,7 +102,7 @@ ht-degree: 81%
 通过将多张详细信息幻灯片添加到磁贴而生成您的数据故事。
 
 1. 从移动记分卡项目开始。
-1. 选择要从其创建故事的磁贴。
+1. 选择要基于其创建故事的磁贴。
    ![创建数据故事](assets/data-story1.png)
    ![创建数据故事图标](assets/create-data-story.png){width=".50%"}
 1. 添加幻灯片以构建您的数据故事。 默认生成您的第一张幻灯片。
@@ -123,7 +111,7 @@ ht-degree: 81%
    * 点按复制图标以复制现有幻灯片。
 1. 如果创建空白的幻灯片，请从左边栏拖放组件，或选择一种版面以自动为该幻灯片填入磁贴中的数据。
    ![创建数据故事](assets/data-story2.png)
-要删除幻灯片，请点按垃圾桶图标。
+   要删除幻灯片，请点按垃圾桶图标。
 
 ### 自定义数据故事 {#customize-data-story}
 
@@ -131,11 +119,11 @@ ht-degree: 81%
 
 **自定义磁贴**
 
-1. 点按磁贴。 所选磁贴加入蓝色轮廓，并且右侧面板显示该磁贴属性。
+1. 点按磁贴。 所选磁贴以蓝色轮廓显示，并且右侧面板显示该磁贴的属性。
 1. 更改标题、图表类型和其他磁贴选项。
 1. 将组件拖动到磁贴上。
    ![创建数据故事](assets/data-story3.png)
-将组件（例如可视化图表）拖放到图块上时，该组件将应用于所有数据故事幻灯片。
+   将组件（例如可视化图表）拖放到图块上时，该组件将应用于所有数据故事幻灯片。
 1. 要仅对标题应用更改，请按住 Shift 键以应用更改。
    ![创建数据故事](assets/data-story4.png)
 
@@ -215,7 +203,7 @@ ht-degree: 81%
 
    当收件人使用桌面应用程序或浏览器打开链接时，移动记分卡项目将在工作区中打开。
 
-   当收件人在移动设备上打开链接时，记分卡将直接在 Adobe Analytics 仪表板应用程序中打开。
+   当收件人在移动设备上打开链接时，记分卡将直接在 Adobe Analytics 功能板应用程序中打开。
 
    如果收件人尚未下载移动应用程序，他们将被引向 App Store 或 Google Play Store 中的应用程序列表，然后可以在那里下载。
 

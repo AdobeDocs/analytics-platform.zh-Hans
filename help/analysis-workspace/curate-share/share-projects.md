@@ -6,26 +6,11 @@ feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
 TQID: https://experienceleague.adobe.com/qAYUiD5wa5PhvEjTi397PC4n0xX0rWKJSYaAjCR6jtg
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: a3b826fd-7a63-4a83-8736-83eee6668f44
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: c38ed341-fab2-46df-9d72-88d8166edebb
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-  - id: f21d8c43-b886-433b-93ea-5982cbfc16b7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: a3b826fd-7a63-4a83-8736-83eee6668f44id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: c38ed341-fab2-46df-9d72-88d8166edebbid: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: f21d8c43-b886-433b-93ea-5982cbfc16b7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
 workflow-type: tm+mt
 source-wordcount: 2183
@@ -61,7 +46,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的项目共享](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的项目共享](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -102,7 +87,8 @@ ht-degree: 90%
 
    或
 
-   要仅共享单个项目，您可以打开要共享的项目，然后选择&#x200B;**[!UICONTROL 共享]** > **[!UICONTROL 与工作区用户共享]**。如果存在未保存的更改，则将提示您首先保存您的项目。
+   要仅共享单个项目，您可以打开要共享的项目，然后选择&#x200B;**[!UICONTROL 共享]** > **[!UICONTROL 与工作区用户共享]**。
+   如果存在未保存的更改，则将提示您首先保存您的项目。
 
    此时会显示“共享项目”对话框。 该对话框的&#x200B;[!UICONTROL **通过链接分享**]&#x200B;和&#x200B;[!UICONTROL **设置**]&#x200B;部分仅在共享单个项目时可见。
 
@@ -114,9 +100,9 @@ ht-degree: 90%
 
    **编辑副本：**&#x200B;收件人可执行&#x200B;**[!UICONTROL 另存为]**，并有权访问左侧面板。 项目的互动操作不限于该角色。 如果您希望将项目共享给了解您组织数据以及知道如何使用 Analysis Workspace 的用户，则此角色非常有用。 但您并不希望这些用户修改您的项目。
 
-   **只读：**&#x200B;收件人无法执行&#x200B;**[!UICONTROL 保存]**&#x200B;或&#x200B;**[!UICONTROL 另存为]**，并且无权访问左侧面板。 项目交互受到限制。 如果您希望将项目共享给不太熟悉您组织的数据结构（通常情况下是 Analysis Workspace 或 Customer Journey Analytics）的用户，则此角色非常有用。 但是，您仍然希望这些用户在一个安全的环境中使用数据和洞察。 详细了解[只读角色项目体验](/help/analysis-workspace/curate-share/view-only-projects.md)。
+   **只读：**&#x200B;收件人无法执行&#x200B;**[!UICONTROL 保存]**&#x200B;或&#x200B;**[!UICONTROL 另存为]**，并且无权访问左侧面板。 项目交互受到限制。 如果您希望将项目共享给不太熟悉您组织的数据结构、Analysis Workspace 或 Customer Journey Analytics 的用户，则此角色非常有用。 但是，您仍然希望这些用户在一个安全的环境中使用数据和洞察。 详细了解[只读角色项目体验](/help/analysis-workspace/curate-share/view-only-projects.md)。
 
-1. （条件）如果您共享单个项目，请选择是否在共享项目时启用以下选项：
+1. （视情况而定）如果您共享单个项目，请选择是否在共享项目时启用以下选项：
 
    * **共享嵌入的项目组件：**&#x200B;与所有接收人共享区段、计算量度和日期范围。 共享后，这些组件将显示在接收者 Workspace 的“组件”下拉菜单中。 此设置不具有持续性，属于分享时的一次性操作。
 
@@ -179,7 +165,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [与任何人分享](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}，观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [与任何人分享](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}，观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -208,9 +194,9 @@ ht-degree: 90%
 
      Customer Journey Analytics 管理员可为公司配置此偏好设置，如[偏好设置](/help/analysis-workspace/user-preferences.md)所述。 根据管理员如何配置此选项，您可能会遇到以下情况：
 
-      * 如果此选项不可见，则您的 Customer Journey Analytics 管理员未启用此功能。
+     * 如果此选项不可见，则您的 Customer Journey Analytics 管理员未启用此功能。
 
-      * 如果启用了此选项，但无法禁用它，则锁定选项意味着您的Customer Journey Analytics管理员要求对访问Analysis Workspace项目的任何人进行CX企业身份验证。 对于具有 Healthcare Shield 许可证的组织来说，情况总是如此。
+     * 如果启用了此选项，但无法禁用它，则锁定选项意味着您的Customer Journey Analytics管理员要求对访问Analysis Workspace项目的任何人进行CX企业身份验证。 对于具有 Healthcare Shield 许可证的组织来说，情况总是如此。
 
 1. 在&#x200B;**[!UICONTROL 与任何人共享（无需登录）]**&#x200B;字段旁边，选择![链接](/help/assets/icons/Link.svg)将链接复制到系统剪贴板。
 
@@ -234,7 +220,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Analysis Workspace 中共享嵌入的组件](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Analysis Workspace 中共享嵌入的组件](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -245,5 +231,5 @@ ht-degree: 90%
 |---|---|
 | 如果两位编辑者同时保存一个项目，会发生什么情况？ | 将不会合并更改，并会保留最后保存的项目版本。 Analysis Workspace 当前不支持实时协作。 |
 | 作为管理员，我会看到哪些项目体验？ | 归入&#x200B;**[!UICONTROL 编辑副本]**&#x200B;或&#x200B;**[!UICONTROL 只读]**&#x200B;角色的管理员在打开项目时会获得这些有限的体验。 如有需要，管理员可以随时通过&#x200B;**[!UICONTROL 组件] > [!UICONTROL 项目]**&#x200B;将其角色提升为&#x200B;**[!UICONTROL 编辑原始版本]**。 |
-| 如果一位收件人作为个人和作为小组成员分别有不同的角色，会发生什么情况？ | 如果收件人同时具有多个角色，他们始终会获得权限最高的角色体验。 例如，如果收件人作为个人被赋予了&#x200B;**[!UICONTROL 编辑原始版本]**&#x200B;的角色，并作为群组成员被赋予了&#x200B;**[!UICONTROL 可以查看]**&#x200B;角色，则该用户会获得&#x200B;**[!UICONTROL 编辑原始版本]**&#x200B;项目体验。 |
-| 如果收件人打开项目链接，他们会获得什么体验？ | 收件人将获得您在共享模式中为其分配的角色。 如果没有为收件人分配角色，并且收件人收到项目的链接（**[!UICONTROL 共享]** > **[!UICONTROL 与 Workspace 用户共享]**，然后在&#x200B;**[!UICONTROL 通过链接共享]**&#x200B;字段旁选择&#x200B;**[!UICONTROL 复制]**），则为其授予默认角色。 管理员获得&#x200B;**[!UICONTROL 编辑原始版本]**&#x200B;角色，非管理员获得&#x200B;**[!UICONTROL 编辑副本]**&#x200B;角色。 |
+| 如果一位收件人作为个人和作为组成员分别有不同的角色，会发生什么情况？ | 如果收件人同时具有多个角色，他们始终会获得权限最高的角色体验。 例如，如果收件人作为个人被赋予了&#x200B;**[!UICONTROL 编辑原始版本]**&#x200B;的角色，并作为群组成员被赋予了&#x200B;**[!UICONTROL 可以查看]**&#x200B;角色，则该用户会获得&#x200B;**[!UICONTROL 编辑原始版本]**&#x200B;项目体验。 |
+| 如果收件人打开项目链接，他们会获得什么体验？ | 收件人将获得您在共享对话框中为其分配的角色。 如果没有为收件人分配角色，并且收件人收到项目的链接（**[!UICONTROL 共享]** > **[!UICONTROL 与 Workspace 用户共享]**，然后在&#x200B;**[!UICONTROL 通过链接共享]**&#x200B;字段旁选择&#x200B;**[!UICONTROL 复制]**），则为其授予默认角色。 管理员获得&#x200B;**[!UICONTROL 编辑原始版本]**&#x200B;角色，非管理员获得&#x200B;**[!UICONTROL 编辑副本]**&#x200B;角色。 |

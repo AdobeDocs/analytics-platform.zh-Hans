@@ -5,20 +5,13 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: c5ed81ea-1d55-4193-9bb1-a2a93ebde91f
 TQID: https://experienceleague.adobe.com/jjqF5CYG0y7OfRA9oGihAQwXQCOW00gkiEwwbfH3jrU
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-  - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 856
+source-wordcount: 857
 ht-degree: 98%
 
 ---
@@ -43,7 +36,7 @@ ht-degree: 98%
 
    >[!IMPORTANT]
    >
-   >您只能从一个用户向另一个用户进行1:1转移。 不支持一到多或多到一的转移。
+   >您只能进行1:1传输，即从一个用户传输到另一个用户。 不支持一到多或多到一的转移。
 
 
 1. 选择用户后，屏幕底部就会出现转移资产选项。
@@ -99,15 +92,15 @@ ht-degree: 98%
 
 - 连接/网络故障：在转移过程中连接中断。 任何批次的转移作业传输到后端后仍会继续处理直至完成，但用户看不到包含哪些成功和哪些失败的转移结果摘要消息。
 
-- 在转移过程中浏览器选项卡关闭：对于非常大的转移，如果浏览器选项卡在转移过程中关闭或页面被导航离开，只有在选项卡关闭/页面导航发生之前提出的网络请求才会正确转移资产。 如果用户导航回到该页面，他们不会收到说明哪些资产已转移、哪些资产未转移的回复状态消息。
+- 在转移过程中浏览器选项卡关闭：对于非常大的转移，如果浏览器选项卡在转移过程中关闭或用户离开当前页面，则只有在选项卡关闭/页面导航发生之前发出的网络请求才能正确转移资产。 如果用户导航回到该页面，他们不会收到说明哪些资产已转移、哪些资产未转移的回复状态消息。
 
 ## 从 Adobe Analytics 升级到 Customer Journey Analytics 的过程中转移资产
 
 资产转移的主要用例之一是在从 Adobe Analytics 升级到 Customer Journey Analytics 的过程中。
 
-Adobe Analytics 中的[组件迁移](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/component-migration/component-migration)功能可让您将管理员拥有的项目迁移到其他管理员。 之后，组成这些项目的所有组件都会在 Customer Journey Analytics 中重新创建，无论这些组件是谁创建的，接收项目的管理员都拥有所有组件。
+Adobe Analytics 中的[组件迁移](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/component-migration/component-migration)功能可让您将管理员拥有的项目迁移到其他管理员。 之后，组成这些项目的所有组件都会在 Customer Journey Analytics 中重新创建，无论这些组件是谁创建的，接收管理员都拥有所有这些组件。
 
-此资产转移工具允许管理员将组件重新分配给其合法的所有者，无论他们是否是管理员。
+此资产转移工具随后允许管理员将组件重新分配给其应有的所有者，无论他们是否是管理员。
 
 >[!IMPORTANT]
 >

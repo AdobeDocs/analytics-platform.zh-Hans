@@ -6,23 +6,14 @@ feature: Basics
 role: Admin
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
 TQID: https://experienceleague.adobe.com/DhV4VNrG4WR1iQP9VqjvV16iEpfShbBir7N1JfeRbCM
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: c38ed341-fab2-46df-9d72-88d8166edebb
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebbid: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
 workflow-type: tm+mt
-source-wordcount: 2355
+source-wordcount: 2375
 ht-degree: 15%
 
 ---
@@ -227,17 +218,17 @@ ht-degree: 15%
 
 * **[!UICONTROL 现有帐户]**（您已设置Google BigQuery的帐户）。 继续执行[选择数据](#select-data)步骤。
 * 需要连接到Google BigQuery时&#x200B;**[!UICONTROL 新帐户]**。
-   1. 指定&#x200B;**[!UICONTROL 帐户名]**&#x200B;和（可选）**[!UICONTROL 描述]**。
-   1. 选择您的&#x200B;**[!UICONTROL 身份验证类型]**： **[!UICONTROL 基本身份验证]**&#x200B;或&#x200B;**[!UICONTROL 服务身份验证]**。 根据您的选择，提供所需的输入。
-   1. 选择&#x200B;**[!UICONTROL 连接到源]**
+  1. 指定&#x200B;**[!UICONTROL 帐户名]**&#x200B;和（可选）**[!UICONTROL 描述]**。
+  1. 选择您的&#x200B;**[!UICONTROL 身份验证类型]**： **[!UICONTROL 基本身份验证]**&#x200B;或&#x200B;**[!UICONTROL 服务身份验证]**。 根据您的选择，提供所需的输入。
+  1. 选择&#x200B;**[!UICONTROL 连接到源]**
 
-      ![Google BigQuery — 身份验证](assets/googlebg-authentication.png)
+     ![Google BigQuery — 身份验证](assets/googlebg-authentication.png)
 
-      已验证您的连接。 ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) **[!UICONTROL Connected]**&#x200B;表示连接成功。
+     已验证您的连接。 ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) **[!UICONTROL Connected]**&#x200B;表示连接成功。
 
-   1. 选择&#x200B;**[!UICONTROL 下一步]**。
+  1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
-  有关在使用[Azure Databricks](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/databricks)或[Snowflake](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/snowflake)连接器时如何连接和身份验证的详细信息，请参阅Experience Platform文档。
+  有关在使用[Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)或[Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)连接器时如何连接和身份验证的详细信息，请参阅Experience Platform文档。
 
 
 ### 选择数据

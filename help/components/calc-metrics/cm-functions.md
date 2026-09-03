@@ -5,16 +5,10 @@ feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
 TQID: https://experienceleague.adobe.com/UqQ3US8EQKJxdsuZI8QMoFVFJpLvpJ4Th8vFafPDxIw
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 3641
@@ -45,7 +39,7 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 
 例如，如果您有收入量度，然后又将页面查看次数量度添加到报告中，则您的收入会突然多出一些全部为零的行。 您可能不希望该附加量度影响收入栏中的任何&#x200B;**[平均值](cm-functions.md#mean)**、**[行最小值](cm-functions.md#row-min)**、**[四分位数](cm-functions.md#quartile)**&#x200B;以及其他计算。 在这种情况下，您需要检查 `include-zeros` 参数。
 
-另一种情况是，您有两个感兴趣的量度，其中一个量度的平均值或最小值较高，因为其中有些行为零。  在这种情况下，您可以选择不检查参数，以包含零
+另一种情况是，您有两个感兴趣的量度，其中一个量度的平均值或最小值较高，因为其中有些行为零。  在这种情况下，您可以选择不勾选包含零的参数
 
 
 
@@ -56,14 +50,14 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 >[!CONTEXTUALHELP]
 >id="functions-abs"
 >title="绝对值"
->abstract="返回某数字的绝对值。 某数字的绝对值是一个具有正值的数字。"
+>abstract="返回某数字的绝对值。 数字的绝对值是该数字的正值。"
 
 <!-- markdownlint-enable MD034 -->
 
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ABSOLUTE VALUE(metric)]**
 
-[!BADGE Row]{type="Neutral"} 返回某数字的绝对值。 某数字的绝对值是一个具有正值的数字。
+[!BADGE Row]{type="Neutral"} 返回某数字的绝对值。 某个数字的绝对值是该数字的正值。
 
 | 参数 | 描述 |
 |---|---|
@@ -85,13 +79,13 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 >[!CONTEXTUALHELP]
 >id="functions-col-max"
 >title="列最大值"
->abstract="返回某量度列的一组维度元素中的最大值。 MAXV 可以在一个列（量度）内跨维度元素垂直估值。"
+>abstract="返回某量度列的一组维度元素中的最大值。 MAXV 在单个列（量度）内跨维度元素进行纵向计算。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MAXIMUM(metric, include_zeros)]**
 
-返回某量度列的一组维度元素中的最大值。 MAXV 可以在一个列（量度）内跨维度元素垂直估值。
+返回某量度列的一组维度元素中的最大值。 MAXV 在单个列（量度）内跨维度元素沿垂直方向进行计算。
 
 | 参数 | 描述 |
 |---|---|
@@ -104,7 +98,7 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 
 >[!TIP]
 >
->使用[IF](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)语句(如&#x200B;**IF**(*Revenue* = **列最大值***(Revenue*)， 1， 0))突出显示划分中表现最佳的项。
+>使用[IF](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)语句(如&#x200B;**IF**(*Revenue* = **列最大值***(Revenue*)， 1， 0))突出显示划分中表现最佳的项。
 >
 
 ## 列最小值 {#column-minimum}
@@ -121,7 +115,7 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MINIMUM(metric, include_zeros)]**
 
-返回某量度列的一组维度元素中的最小值。 MINV 可以在一个列（量度）内跨维度元素垂直估值。
+返回某量度列的一组维度元素中的最小值。 MINV 在单个列（量度）内跨维度元素进行纵向计算。
 
 | 参数 | 描述 |
 |---|---|
@@ -134,7 +128,7 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 
 >[!TIP]
 >
->使用[IF](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)语句(如&#x200B;**IF**(*Revenue* = **列最小值***(Revenue*)， 1， 0))突出显示划分中性能最低的项目。
+>使用[IF](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)语句(如&#x200B;**IF**(*Revenue* = **列最小值***(Revenue*)， 1， 0))突出显示划分中性能最低的项目。
 >
 
 
@@ -145,7 +139,7 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 >[!CONTEXTUALHELP]
 >id="functions-col-sum"
 >title="列总和"
->abstract="添加列中某量度的所有数值（跨维度元素）。"
+>abstract="将列中某量度的所有数值相加（跨维度元素）。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -175,7 +169,7 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 >[!CONTEXTUALHELP]
 >id="functions-count"
 >title="计数"
->abstract="返回列中某量度的非零值的数量或计数（某个维度内报告的独特元素数）。"
+>abstract="返回列中某量度的非零值的数量或计数（某个维度内报告的唯一元素数）。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -306,7 +300,7 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 | 参数 | 描述 |
 |---|---|
 | metric_X | 您想要划分的第一个量度。 |
-| metric_Y | 您想要划分的第二个量度。 |
+| metric_Y | 您想要相除的第二个量度。 |
 
 **用例**：将一个数字除以另一个数字后返回余数。 这对于循环或重复模式很有用，例如按顺序识别第n天或营销活动。
 
@@ -400,14 +394,14 @@ MODULO(MODULO(x,y)+y,y)
 >[!CONTEXTUALHELP]
 >id="functions-quartile"
 >title="四分位数"
->abstract="返回某量度的四分位数形式的值。 例如，四分位数可用于查找在获得的收入方面排名前 25% 的产品。"
+>abstract="返回某量度的四分位数形式的值。 例如，四分位数可用于查找带来最多收入的前 25% 产品。"
 
 <!-- markdownlint-enable MD034 -->
 
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE(metric, quartile, include_zeros)]**
 
-[!BADGE Table]{type="Neutral"} 返回某量度的四分位数形式的值。 例如，四分位数可用于查找在获得的收入方面排名前 25% 的产品。 当四分位数分别等于 `0`（零）、`2` 和 `4` 时，[COLUMN MINIMUM](#column-minimum), [MEDIAN](#median) 和 [COLUMN MAXIMUM](#column-maximum) 返回与 [QUARTILE](#quartile) 相同的值。
+[!BADGE Table]{type="Neutral"} 返回某量度的四分位数形式的值。 例如，四分位数可用于查找带来最多收入的前 25% 产品。 当四分位数分别等于 `0`（零）、`2` 和 `4` 时，[COLUMN MINIMUM](#column-minimum), [MEDIAN](#median) 和 [COLUMN MAXIMUM](#column-maximum) 返回与 [QUARTILE](#quartile) 相同的值。
 
 | 参数 | 描述 |
 |---|---|
@@ -442,7 +436,7 @@ MODULO(MODULO(x,y)+y,y)
 | 参数 | 描述 |
 |---|---|
 | 量度 | 要舍入的量度。 |
-| 数字 | 返回小数点右边的多少位数字。 （如果负数返回小数点左侧的零）。 |
+| 数字 | 返回小数点右边的多少位数字。 （如果为负数，则返回小数点左侧的零）。 |
 
 **用例**：通过将数值结果四舍五入到指定的小数位数来简化数值结果。 这有助于创建更简洁的可视化图表或使计算量度更容易在报表中读取。
 
@@ -469,13 +463,13 @@ ROUND( 314.15, -2) = 300
 >[!CONTEXTUALHELP]
 >id="functions-count-rows"
 >title="行计数"
->abstract="返回给定列的行计数（一个维度中报告的独特元素计数）。 将&#x200B;*超出的独特数*&#x200B;计为 1。"
+>abstract="返回给定列的行计数（在一个维度中报告的唯一元素数）。 将&#x200B;*超出的独特数*&#x200B;计为 1。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ROW COUNT()]**
 
-返回给定列的行计数（一个维度中报告的独特元素计数）。 将&#x200B;*超出的独特数*&#x200B;计为 1。
+返回给定列的行计数（在一个维度中报告的唯一元素数）。 将&#x200B;*超出的独特数*&#x200B;计为 1。
 
 **用例**：计算划分或数据集中返回的总行数，如报表中包含的天数、促销活动或产品。 这有助于了解有多少项目对您的分析做出了贡献。
 
@@ -647,7 +641,7 @@ ROUND( 314.15, -2) = 300
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 您希望计算变量的量度。 |
+| 量度 | 您要为其计算方差的量度。 |
 | include_zeros | 是否在计算中包含零值。 |
 
 **用例**：测量数据集中的值从平均值分布到多远，例如分析随着时间的变化有多少每日收入或会话持续时间。 这有助于量化性能的一致性或波动程度。
@@ -666,7 +660,7 @@ VARIANCE 的方程式为：
 其中 *x* 为抽样平均值，[MEAN(*metric*)](#mean)，*n* 为抽样大小。
 
 
-为了计算变量，需要查看整列数字。 首先，从该数字列表计算平均值。 得出平均值后，浏览每个条目，然后执行以下操作：
+为了计算变量，需要查看整列数字。 首先，从该数字列表计算平均值。 得出平均值后，逐一处理每个条目，然后执行以下操作：
 
 1. 从数字中减去平均值。
 

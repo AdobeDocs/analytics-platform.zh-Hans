@@ -7,19 +7,13 @@ type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
 TQID: https://experienceleague.adobe.com/g7-pu7H2LQVNRShRj5Jr6gGWYfB-eMxoLRexdfBUGiE
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: f2ef16dc-055a-4bb7-baa5-7039653f3966
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: f2ef16dc-055a-4bb7-baa5-7039653f3966
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 859
+source-wordcount: 860
 ht-degree: 52%
 
 ---
@@ -61,12 +55,12 @@ ht-degree: 52%
 
 1. 选择&#x200B;**[!UICONTROL 开始]**、**[!UICONTROL 结束]**&#x200B;或&#x200B;**[!UICONTROL 固定日期]**。
 
-   - 当选择了&#x200B;**[!UICONTROL 开始]**&#x200B;或&#x200B;**[!UICONTROL 结束]**&#x200B;时，您可以生成一个完整的表达式。 例如：**&#x200B;** **[!UICONTROL 当前年份的结束]**&#x200B;**[!UICONTROL 加上]**`1`**[!UICONTROL 天]**。 为表达式的每个部分选择适当的值。
+   - 当选择了&#x200B;**[!UICONTROL 开始]**&#x200B;或&#x200B;**[!UICONTROL 结束]**&#x200B;时，您可以生成一个完整的表达式。 例如：**** **[!UICONTROL 当前年份的结束]****[!UICONTROL 加上]**`1`**[!UICONTROL 天]**。 为表达式的每个部分选择适当的值。
 
-      - 选择当前时间的值。 例如，**[!UICONTROL 当前年份]**。
-      - 为可选的附加计算选择值。 例如，**[!UICONTROL 加上]**。
-      - 当您指定了额外的计算时，请指定一个值。 例如，`1`。
-      - 当您指定了额外的计算时，请选择用于该计算的时段。 例如，**[!UICONTROL 天]**。
+     - 选择当前时间的值。 例如，**[!UICONTROL 当前年份]**。
+     - 为可选的附加计算选择值。 例如，**[!UICONTROL 加上]**。
+     - 当您指定了额外的计算时，请指定一个值。 例如，`1`。
+     - 当您指定了额外的计算时，请选择用于该计算的时段。 例如，**[!UICONTROL 天]**。
 
    - 选择&#x200B;**[!UICONTROL 固定日期]**&#x200B;后，请指定固定日期或使用选取器选择日期。
 
@@ -157,9 +151,9 @@ ht-degree: 52%
 
 - 开始日期必须早于或等于结束日期。 两个日期均可以设置在未来。
 
-- 使用滚动日期时，开始日期必须是当天或过去。 如果选择&#x200B;**[!UICONTROL 排除当天]**，则开始日期必须为过去。
+- 使用滚动日期时，开始日期必须是当天或过去的日期。 如果选择&#x200B;**[!UICONTROL 排除当天]**，则开始日期必须为过去。
 
-- 您可以为未来创建静态日期范围设置。 例如，您可能需要为下周的市场营销活动启动设置未来的日期。 此选项提前为营销活动创建工作簿监控。
+- 您可以创建一个适用于未来的静态日期范围。 例如，您可能需要为下周的市场营销活动启动设置未来的日期。 此选项提前为营销活动创建工作簿监控。
 
 ## 更改日期范围
 

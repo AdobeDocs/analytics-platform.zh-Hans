@@ -6,20 +6,11 @@ feature: Privacy
 role: Admin
 autotag-review: '2026-05-19T07:58:20.300Z'
 TQID: 'https://experienceleague.adobe.com/eI0cv42QWTm0NqS-4FTuudTDefQ-MZBUMFsyy5-VLaM'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2:
-  - id: c1cf8502-455a-452a-9f49-d22dfdff8033
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2: id: c1cf8502-455a-452a-9f49-d22dfdff8033
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: d00e9f03-e50b-4162-b143-0c0817c937c2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 999
@@ -81,53 +72,53 @@ ht-degree: 98%
 以下项目显现：
 
 * **[!UICONTROL 操作名称]**：所采取的操作。 可能的值包括：
-   * API_REQUEST：任何操作都会触发后端 API 请求。 显示有关 API 请求的详细信息。
-   * APPROVE：执行了“审批”操作。
-   * CREATE：执行了“创建”操作。
-   * DELETE：执行了“删除”操作。
-   * EDIT：执行了“编辑”操作。
-   * EMBARGO：如果您在[报告活动管理器](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests)中限制请求，该操作将被记录在审核日志的“EMBARGO”中。
-   * EXPORT：执行了“导出”操作。
-   * ORG_CHANGE：执行了组织变更操作。
-   * REFRESH：执行了“刷新”操作。
-   * SHARE：执行了“分享”操作。
-   * TRANSFER：执行了“转移”操作。
-   * UNAPPROVE：执行了“未批准”操作。
-   * UNSHARE：执行了“取消共享”操作。
+  * API_REQUEST：任何操作都会触发后端 API 请求。 显示有关 API 请求的详细信息。
+  * APPROVE：执行了“审批”操作。
+  * CREATE：执行了“创建”操作。
+  * DELETE：执行了“删除”操作。
+  * EDIT：执行了“编辑”操作。
+  * EMBARGO：如果您在[报告活动管理器](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests)中限制请求，该操作将被记录在审核日志的“EMBARGO”中。
+  * EXPORT：执行了“导出”操作。
+  * ORG_CHANGE：执行了组织变更操作。
+  * REFRESH：执行了“刷新”操作。
+  * SHARE：执行了“分享”操作。
+  * TRANSFER：执行了“转移”操作。
+  * UNAPPROVE：执行了“取消批准”操作。
+  * UNSHARE：执行了“取消共享”操作。
 * **[!UICONTROL 创建日期]**：采取行动的日期和时间。
 * **[!UICONTROL 描述]**：对操作的总结。
 * **[!UICONTROL 用户名]**：采取该操作的用户。 有时，用户名可能会缺失。 考虑使用[产品使用情况](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/tools/product-usage/usage-overview)功能，因为其始终包含登录用户名。
 * **[!UICONTROL 电子邮件]**：执行该操作的用户的电子邮件地址。
 * **[!UICONTROL 组件名称]**：用户对其采取操作的组件。
 * **[!UICONTROL 组件类型]**：组件的类型。 可能的值包括：
-   * ANNOTATION
-   * AUDIENCE
-   * CALCULATED_METRIC
-   * CONNECTION
-   * DATA_GROUP
-   * DATA_VIEW
-   * DATASET_STITCHING
-   * DATE_RANGE
-   * FEATURE_ACCESS
-   * FILTER
-   * IMS_ORG
-   * MOBILE
-   * PROJECT (Workspace)
-   * REPORT
-   * SCHEDULED_PROJECT
-   * USER
-   * USER_GROUP
+  * ANNOTATION
+  * AUDIENCE
+  * CALCULATED_METRIC
+  * CONNECTION
+  * DATA_GROUP
+  * DATA_VIEW
+  * DATASET_STITCHING
+  * DATE_RANGE
+  * FEATURE_ACCESS
+  * FILTER
+  * IMS_ORG
+  * MOBILE
+  * PROJECT (Workspace)
+  * REPORT
+  * SCHEDULED_PROJECT
+  * USER
+  * USER_GROUP
 * **[!UICONTROL 组件 ID]**：用户执行操作的组件的 ID。
 * **[!UICONTROL IMS 组织 ID]**：组织的 IMS ID，格式为 `ABC123@AdobeOrg`。
 * **[!UICONTROL 日志 ID]**：身份标识此日志条目的唯一 ID。
 * **[!UICONTROL 用户 ID]**：用于识别执行该操作的用户的唯一 ID。
 * **[!UICONTROL 用户类型]**：使用的身份验证类型。 有效的值包括：
-   * IMS
-   * OKTA
+  * IMS
+  * OKTA
 
 ### 筛选审核日志
 
-选择漏斗图标（![过滤器](assets/filter-icon.png)）以显示过滤器控件列表，帮助缩小结果范围。 仅显示最后 1,000 条记录，这与选择的各种过滤器无关。
+选择漏斗图标（![过滤器](assets/filter-icon.png)）以显示过滤器控件列表，帮助缩小结果范围。 无论选择了哪些过滤器，都仅显示最后 1,000 条记录。
 
 ![显示在日期范围内显示的过滤器的审核日志。](assets/filters.png)
 
@@ -138,7 +129,7 @@ ht-degree: 98%
 | [!UICONTROL 日期范围] | 通过选择不同的日期或通过在多个日期上拖动光标来选择日期范围，从而筛选不同的日期范围。 默认情况下，选择今天和昨天的日期。 |
 | [!UICONTROL 操作] | 根据上面列出的任何操作名称进行过滤。 |
 | [!UICONTROL 用户 ID] | 按用户 ID 筛选特定用户。 通过选择用户名旁边的信息 (i) 按钮可以找到用户 ID。 |
-| [!UICONTROL 电子邮件] | 筛选特定用户的电子邮件地址。 通过选择用户名旁边的信息 (i) 按钮可以找到电子邮件 ID。 |
+| [!UICONTROL 电子邮件] | 筛选特定用户的电子邮件地址。 通过选择用户名旁边的信息 (i) 按钮可以找到电子邮件。 |
 | [!UICONTROL 组件 ID] | 筛选特定的组件 ID。 通过选择所需组件的信息 (i) 按钮可以找到用户 ID。 |
 | [!UICONTROL 组件类型] | 根据上面列出的任何组件类型进行过滤。 |
 

@@ -7,19 +7,11 @@ role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
 autotag-review: '2026-05-19T09:24:07.100Z'
 TQID: 'https://experienceleague.adobe.com/f-HOhKLpbM4u4MAzzoUCc0cMvVIu1k3FXg4FShValVE'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d00e9f03-e50b-4162-b143-0c0817c937c2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 711e4bd71a4939eec96a6c454242e96b350fe4e2
 workflow-type: tm+mt
 source-wordcount: 2017
@@ -35,7 +27,7 @@ ht-degree: 64%
 
 >[!NOTE]
 >
->[Identity服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home)是核心Experience Platform服务，不需要额外许可。 有关详细信息，请参阅[了解Identity Service在Experience Platform基础结构中的角色](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home#understanding-the-role-of-identity-service-within-the-experience-platform-infrastructure)。
+>[Identity服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home)是核心Experience Platform服务，不需要额外许可。 有关详细信息，请参阅[了解Identity Service在Experience Platform基础结构中的角色](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home#understanding-the-role-of-identity-service-within-the-experience-platform-infrastructure)。
 >
 
 如果无法检索某个事件的人员ID信息，则将改用永久ID用于该&#x200B;*未拼合*&#x200B;事件。 因此，在与包含启用拼合的数据集的[连接](/help/connections/overview.md)关联的[数据视图](/help/data-views/data-views.md)中，人员ID数据视图组件包含事件级别的人员ID值或永久ID值。
@@ -119,15 +111,15 @@ ht-degree: 64%
 
 - **重播拼接**：根据身份标识图中更新过的身份标识&#x200B;*重播*&#x200B;数据。 在这个阶段，来自先前未知设备（永久 ID）的点击会在身份标识图为一个命名空间解析了此身份标识后进行拼接。 两个参数决定重播： **频率**&#x200B;和&#x200B;**回顾时间范围**。 Adobe 提供这些参数的以下组合：
   - **以每日频率进行每日回顾**：数据每天重播，采用 24 小时回顾窗口。 此选项的优势在于重播更频繁，但未经身份验证的轮廓必须在访问您网站的当天进行身份验证。
-  - **以每周频率进行每周回顾**：数据每周重播一次，采用每周回顾窗口（请参阅[选项](overview.md#options)）。 此选项的优势在于允许未经身份验证的会话在更加宽松充裕的时间范围内进行身份验证。 但是，未拼接且时间不足一周的数据要等到下一次每周重播时才会重新处理。
-  - **以每周频率进行每两周回顾**：数据每周重播一次，采用两周回顾窗口（请参阅[选项](overview.md#options)）。 此选项的优势在于允许未经身份验证的会话在更加宽松充裕的时间范围内进行身份验证。 但是，未拼接且时间不足两周的数据要等到下一次每周重播时才会重新处理。
+  - **以每周频率进行每周回顾**：数据每周重播一次，采用每周回顾窗口（请参阅[选项](overview.md#options)）。 此选项的优势在于允许未经身份验证的会话在更加宽松充裕的时间范围内进行身份验证。 但是，未拼接且时间不足一周的数据要等到下一次每周重放时才会重新处理。
+  - **以每周频率进行每两周回顾**：数据每周重播一次，采用两周回顾窗口（请参阅[选项](overview.md#options)）。 此选项的优势在于允许未经身份验证的会话在更加宽松充裕的时间范围内进行身份验证。 但是，未拼接且时间不足两周的数据要等到下一次每周重放时才会重新处理。
   - **以每周频率进行每月回顾**：数据每周重播一次，采用每月回顾窗口（请参阅[选项](overview.md#options)）。 此选项的优势在于允许未经身份验证的会话在更加宽松充裕的时间范围内进行身份验证。 但是，未拼接且时间不足一个月的数据要等到下一次每周重播时才会重新处理。
 
 - **隐私**：收到与隐私相关的请求时，除了从来源数据集移除所请求的身份标识外，还必须将该身份标识在未经身份验证的事件中的任何拼接解除。 此外，身份标识还必须从身份标识图中移除，以防止未来对这个特定的身份标识进行基于图形的拼接。
 
   >[!IMPORTANT]
   >
-  >作为隐私请求的一部分，解除拼接过程在 2025 年初发生变化。 当前的解除拼接过程是使用最新版本的已知身份标识来重新拼接事件。 将事件重新分配给另一个身份标识可能会产生不良的法律后果。 为了消除这些疑虑，从 2025 年开始，新的解除拼接过程是通过永久 ID 更新隐私请求涉及的事件。
+  >作为隐私请求的一部分，解除拼接过程在 2025 年初发生变化。 当前的解除拼接过程是使用最新版本的已知身份标识来重新拼接事件。 将事件重新分配给另一个身份标识可能会产生不良的法律后果。 为了消除这些疑虑，从 2025 年开始，新的解除拼接过程会使用永久 ID 更新隐私请求所涉及的事件。
   > 
 
 不会重播回顾窗口以外的数据。 用户档案必须在给定的回看窗口内进行身份验证，才能同时识别未经身份验证的访问和经过身份验证的访问。 识别出某个设备后，就会从此时开始对该设备进行实时拼接。
@@ -163,7 +155,7 @@ ht-degree: 64%
 
 ### 步骤 2：重播拼接
 
-重播拼接会定期（取决于所选的回顾窗口）根据身份标识图的最新版本在间隔时间重新计算历史数据。
+重播拼接会定期（取决于所选的回顾窗口）在每个间隔时间点，根据身份标识图当时的最新版本重新计算历史数据。
 
 +++ 详细信息
 
@@ -222,16 +214,16 @@ ht-degree: 64%
 
 ## 先决条件
 
-以下先决条件专门应用于基于图形的拼接：
+以下先决条件专门适用于基于图的拼接：
 
 - 您想为其应用拼接的 Adobe Experience Platform 中的事件数据集必须有一列是在每一行上标识一个轮廓，就是&#x200B;**永久 ID**。 例如，Adobe Analytics AppMeasurement 库生成的访客 ID 或者身份标识服务生成的 ECID。
 - 在启用基于图形的拼合之前，必须在沙盒级别设置Experience Platform Identity Service中的身份图形。
   - 身份图形必须具有要在拼接期间用于解析人员ID的命名空间（例如`Email`或`Phone`）。
   - 必须使用来自任何相关数据集（类型为&#x200B;*event*&#x200B;或&#x200B;*profile*&#x200B;且至少包含两个具有ID值的有用命名空间）的标识信息填充标识图。
-  - 所有包含此类相关标识的数据集都必须为标识图数据摄取[&#128279;](faq.md#enable-a-dataset-for-the-identity-service)启用。 此支持可确保随着时间的推移，将来自所有所需来源的传入身份添加到图表中。
+  - 所有包含此类相关标识的数据集都必须为标识图数据摄取](faq.md#enable-a-dataset-for-the-identity-service)启用[。 此支持可确保随着时间的推移，将来自所有所需来源的传入身份添加到图表中。
   - 如果一段时间内已在使用实时客户数据配置文件或Adobe Journey Optimizer，则应已在一定程度上设置此图表。<br/>如果启用基于图形的拼合的数据集也需要历史拼合回填，则图形应已包含整个时段的历史标识，以获取所需的拼合结果。
 - 如果要使用基于图形的拼合，并且预期事件数据集将参与身份图形，则应[为身份服务启用该数据集](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service)。
-- 永久性ID和人员ID可以与[identityMap](#identitymap)一起使用。 或者，持久ID和人员ID可以是XDM架构中的字段，在这种情况下，这些字段必须是[在架构中定义为标识](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity?lang=en)。
+- 永久性ID和人员ID可以与[identityMap](#identitymap)一起使用。 或者，持久ID和人员ID可以是XDM架构中的字段，在这种情况下，这些字段必须是[在架构中定义为标识](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity?lang=en)。
 
 >[!NOTE]
 >
@@ -240,11 +232,11 @@ ht-degree: 64%
 
 ## 限制
 
-以下限制专门应用于基于图形的拼接：
+以下限制专门适用于基于图的拼接：
 
 - 使用指定的命名空间查询人员 ID 时不考虑时间戳。 因此，永久 ID 可能会与具有更早时间戳的记录中的人员 ID 拼接。
 - 在共享设备的场景中，如果图形中的命名空间包含多个身份标识，就会使用按字典序排序的第一个身份标识。 如果命名空间限制和优先级是在发布图形链接规则时配置的，就会使用最后一个经过身份验证的用户的身份标识。 更多信息请参阅[共享设备](/help/use-cases/stitching/shared-devices.md)。
-- 有一个将身份标识回填到身份标识图中的时间最长不超过三个月的硬性限制。 如果您没有使用 Experience Platform 应用程序（如 Real-time Customer Data Platform）填充身份标识图，就可以使用回填身份标识的功能。
+- 有一个将身份标识回填到身份标识图中的时间最长不超过三个月的硬性限制。 如果您没有使用 Experience Platform 应用程序（如 Real-Time Customer Data Platform）填充身份标识图，就可以使用回填身份标识的功能。
 - [身份标识服务护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/guardrails)适用。 例如，查看以下[静态限制](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/guardrails#static-limits)：
   - 图中的最大身份标识数量：50。
   - 一个批次摄取中指向某个身份标识的最大链接数量：50。

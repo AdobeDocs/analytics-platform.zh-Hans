@@ -5,19 +5,11 @@ feature: Experience Platform Integration
 role: User
 exl-id: 0b52af5b-b65c-4929-9ca3-547a640936f3
 TQID: https://experienceleague.adobe.com/7Q8q-e58PrmANht9DpOXuNFImYC48ELhrXPRhBG6gYQ
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 410
@@ -33,7 +25,7 @@ Customer Journey Analytics中的Target报表功能允许您直接在Customer Jou
 
 ## 主要优势
 
-* 营销人员可以随时将 Customer Journey Analytics 成功量度动态地应用到 Target 活动报表。 在运行活动之前不需要指定各项内容。
+* 营销人员可以随时将 Customer Journey Analytics 成功量度动态地应用到 Target 活动报告。 在运行活动之前不需要指定各项内容。
 * 营销人员可以利用 Customer Journey Analytics 功能（例如实验面板）进一步分析其网站个性化。
 * 营销人员可以拥有 Adobe Journey Optimizer 和 Target 的单一报告来源。 这两种个性化产品都可以连接到 Customer Journey Analytics，以便更全面地了解您的 Web 个性化情况。
 

@@ -1,23 +1,16 @@
 ---
-description: 了解如何使用智能字幕生成自然语言洞察，以揭示可视化中的趋势。
+description: 了解如何使用智能题注生成自然语言洞察，以揭示可视化中的趋势。
 title: 智能题注
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
 autotag-review: '2026-05-19T08:31:54.599Z'
 TQID: 'https://experienceleague.adobe.com/k-0eP4wFf0vl3zYmUDUOv1V9xI6utt7AOjJqCo2mAB4'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2:
-  - id: ddf59f64-0e46-4986-a525-056acc143c70
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: ddf59f64-0e46-4986-a525-056acc143c70
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 802
@@ -33,7 +26,7 @@ ht-degree: 100%
 >abstract="以自然语言形式生成洞察，帮助您更轻松地理解和解释可视化图表的数据。"
 
 
-智能标题功能使用先进的生成式 AI，为自然语言中最常用的工作区可视化内容提供关键洞察。
+智能题注功能使用先进的生成式 AI，以自然语言为最常用的工作区可视化内容提供关键洞察。
 
 智能标题适用于：
 
@@ -56,11 +49,11 @@ ht-degree: 100%
 
 请记住以下事项：
 
-* 您至少需要 3 个数据点才能成功生成标题。 否则，您可能会收到类似于&#x200B;**[!UICONTROL 数据不足，无法分析]**&#x200B;的错误。
+* 您至少需要 3 个数据点才能成功生成题注。 否则，您可能会收到类似于&#x200B;**[!UICONTROL 数据不足，无法分析]**&#x200B;的错误。
 
-* 每当表格中用于生成可视化内容的选定基础数据发生变化时，就会生成相应的标题。
+* 每当为可视化提供支持的表格中所选的基础数据发生变化时，就会生成相应的题注。
 
-* 如果所关联的自由格式表中有多个量度，则仅会为第一个量度或用户当前选择的量度生成标题。 但是，可以为折线和面积可视化图表的多个量度生成标题。
+* 如果所关联的自由格式表中有多个量度，则仅会为第一个量度或用户当前选择的量度生成题注。 但是，可以为折线和面积可视化图表的多个量度生成题注。
 
 * 如果您在特定的时间点上保存项目，并在稍后重新加载，则标题会自动使用新数据进行更新。 这同样适用于计划的项目，以及从项目中导出的 PDF 文件。
 
@@ -89,7 +82,7 @@ Here is an example of what intelligent captions could look like:
 
 ### 复制到剪贴板 {#copy}
 
-您可以将标题复制到剪贴板，然后将其粘贴到 PowerPoint 或其他工具中。 您可以在逐个视图中复制单个标题，也可以在扩展标题视图中一次复制所有标题。
+您可以将题注复制到剪贴板，然后将其粘贴到 PowerPoint 或其他工具中。 您可以在逐个视图中复制单个标题，也可以在扩展标题视图中一次复制所有标题。
 
 * 要复制标题，请选择标题对话框右上角的![将标题复制到剪贴板](/help/assets/icons/Copy.svg)。
 
@@ -102,7 +95,7 @@ Here is an example of what intelligent captions could look like:
 
 ### 编辑显示内容 {#edit}
 
-您可以编辑标题的显示内容，例如隐藏或取消隐藏特定类别的洞察。
+您可以编辑标题的显示方式，例如隐藏或取消隐藏特定类别的洞察。
 
 1. 在智能标题对话框中选择![编辑智能标题的可见性](/help/assets/icons/EditInLight.svg)。
 
@@ -152,14 +145,14 @@ Customer Journey Analytics [移动记分卡](https://experienceleague.adobe.com/
 * **合同访问权限**：如果您无法使用智能标题，请联系您所在组织的管理员或 Adobe 客户代表（管理员）。 在您的组织中使用智能标题之前，您必须同意某些与生成式 AI 相关的法律条款。
 
 * **权限**：在 [!UICONTROL Adobe Admin Console] 中，[!UICONTROL 报告工具] **[!UICONTROL 智能标题]**&#x200B;权限决定访问权限。 [产品轮廓管理员](https://helpx.adobe.com/cn/enterprise/using/manage-product-profiles.html)需要在 [!UICONTROL Admin Console] 中执行以下步骤：
-   1. 导航至 **[!UICONTROL Admin Console]** > **[!UICONTROL 产品和服务]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL 产品轮廓]**。
-   1. 选择您想要提供智能标题访问权限的产品轮廓的标题。
-   1. 在具体的产品配置文件中，选择&#x200B;**[!UICONTROL 权限]**。
-   1. 选择![编辑](/help/assets/icons/Edit.svg)来编辑&#x200B;**[!UICONTROL 报告工具]**。
-   1. 选择 ![AddCircle](/help/assets/icons/AddCircle.svg) 以将&#x200B;**智能标题**&#x200B;添加到&#x200B;**[!UICONTROL 包含的权限项目]**。
+  1. 导航至 **[!UICONTROL Admin Console]** > **[!UICONTROL 产品和服务]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL 产品轮廓]**。
+  1. 选择您想要提供智能标题访问权限的产品轮廓的标题。
+  1. 在具体的产品配置文件中，选择&#x200B;**[!UICONTROL 权限]**。
+  1. 选择![编辑](/help/assets/icons/Edit.svg)来编辑&#x200B;**[!UICONTROL 报告工具]**。
+  1. 选择 ![AddCircle](/help/assets/icons/AddCircle.svg) 以将&#x200B;**智能标题**&#x200B;添加到&#x200B;**[!UICONTROL 包含的权限项目]**。
 
-      ![添加权限](./assets/intelligent-captions-permissions.png)
+     ![添加权限](./assets/intelligent-captions-permissions.png)
 
-   1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;来保存权限。
+  1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;来保存权限。
 
 请参阅 [访问权限控制](/help/technotes/access-control.md#access-control)，以了解更多信息。

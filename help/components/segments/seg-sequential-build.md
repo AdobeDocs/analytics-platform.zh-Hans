@@ -4,23 +4,14 @@ title: 顺序区段
 feature: Filters, Segments
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
 TQID: https://experienceleague.adobe.com/TqLnqudV-SrIk7SdMT7dUeNBAwaa5FkoZocUkwrod6g
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 2491
+source-wordcount: 2496
 ht-degree: 4%
 
 ---
@@ -33,7 +24,7 @@ ht-degree: 4%
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [顺序分段](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/components/segmentation/sequential-segmentation){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [顺序分段](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/segmentation/sequential-segmentation){target="_blank"}。
 
 {{videoaa}}
 
@@ -47,8 +38,8 @@ ht-degree: 4%
 
 * [包含哪些数据作为区段定义整体序列的一部分](#include)。 或者，对于定义为容器一部分的序列。 默认情况下，会考虑所有匹配数据。 该数据由![用户组](/help/assets/icons/UserGroup.svg) [!UICONTROL 包含每个人]标识。
 
-   * 选择![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]**&#x200B;以仅考虑序列之前的数据。
-   * 选择![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After After Sequence]**&#x200B;以仅考虑序列之后的数据。
+  * 选择![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]**&#x200B;以仅考虑序列之前的数据。
+  * 选择![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After After Sequence]**&#x200B;以仅考虑序列之后的数据。
 
 * [排除](#exclude)的顺序区段定义数据。
 
@@ -97,7 +88,7 @@ ht-degree: 4%
 
 ## [!UICONTROL After]和[!UICONTROL Within]
 
-您可以使用![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]**&#x200B;和![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** **[!UICONTROL Then]**&#x200B;运算符为事件、会话或维度[&#128279;](#event-session-and-dimension-constraints)定义其他[时间约束](#time-constraints)或约束。
+您可以使用![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]**&#x200B;和![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** **[!UICONTROL Then]**&#x200B;运算符为事件、会话或维度](#event-session-and-dimension-constraints)定义其他[时间约束](#time-constraints)或[约束。
 
 ### 时间限制
 
@@ -106,7 +97,7 @@ ht-degree: 4%
 1. 选择![时钟](/help/assets/icons/Clock.svg)。
 1. 从上下文菜单中选择&#x200B;**[!UICONTROL Within]**&#x200B;或&#x200B;**[!UICONTROL After]**。
 1. 指定一个时间段（**[!UICONTROL 分钟]**，**[!UICONTROL 小时]**，最多&#x200B;**[!UICONTROL 年]**）。
-1. 选择![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**&#x200B;以打开一个弹出窗口，允许您使用&#x200B;**[!UICONTROL -]**&#x200B;或&#x200B;**[!UICONTROL +]**&#x200B;键入或指定数字。
+1. 选择![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**以打开一个弹出窗口，允许您使用**[!UICONTROL -]**或**[!UICONTROL +]**键入或指定数字。
 
 若要移除时间限制，请使用![CrossSize75](/help/assets/icons/CrossSize75.svg)。
 
@@ -129,7 +120,7 @@ ht-degree: 4%
 
 ![序列在](assets/sequence-after.png)之后
 
-如果主页的页面查看发生在2024年6月1日00:01，则页面查看针对页面女性 |只要2024年6月15日:01之后出现该页面查看，鞋就会匹配。
+如果主页的页面查看发生在2024年6月1日00:01，则页面查看针对页面女性 |只要2024年6月15日00:01之后出现该页面查看，鞋就会匹配。
 
 ##### [!UICONTROL Within]运算符
 
@@ -145,7 +136,7 @@ ht-degree: 4%
 
 ![序列晚于](assets/sequence-afterbutwithin.png)但在此范围内
 
-2024年6月1日点击主页并返回妇女之家的任何人 | 2019年6月15日之后00:01，但2019年7月1日之前的“鞋子”页面符合该区段的条件。
+2024年6月1日点击主页并返回妇女之家的任何人 |在2019年6月15日00:01之后，但在2019年7月1日之前的“鞋子”页面符合该区段的条件。
 
 
 ### [!UICONTROL 事件]、[!UICONTROL 会话]和[!UICONTROL Dimension]约束
@@ -270,7 +261,7 @@ ht-degree: 4%
 >
 >[!UICONTROL 逻辑组]只能在顺序区段中定义，这意味着容器中使用[!UICONTROL Then]运算符。
 
-使用逻辑组，您可以将条件分组到一个顺序区段检查点。 作为序列的一部分，在标识为逻辑组的容器中定义的逻辑将在任何先前顺序检查点之后和任何后续顺序检查点之前进行评估。
+使用逻辑组，您可以将条件归入一个顺序区段检查点。 作为序列的一部分，在标识为逻辑组的容器中定义的逻辑将在任何先前顺序检查点之后和任何后续顺序检查点之前进行评估。
 
 可以按任意顺序满足逻辑组本身中的条件。 相反，非顺序容器（事件、会话、人员）不要求在整个序列中满足其条件，如果与Then运算符一起使用，则会产生可能不直观的结果。
 

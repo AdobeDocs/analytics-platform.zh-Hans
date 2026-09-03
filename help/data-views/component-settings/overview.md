@@ -6,23 +6,11 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 TQID: https://experienceleague.adobe.com/Ozf-XAsirDMkZLIQCX4SLGD7SvKinu3O4fwJ4ifgSvQ
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2:
-  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: c38ed341-fab2-46df-9d72-88d8166edebb
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: ad5685a0-8296-4a0c-814c-658c10b4af12id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebb
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
 source-git-commit: dcc1be6e0c0e0dab19b4067232e48dc175011ed1
 workflow-type: tm+mt
 source-wordcount: 4127
@@ -57,13 +45,13 @@ ht-degree: 48%
 
 | 设置 | 描述/用例 |
 | --- | --- |
-| [!UICONTROL 组件类型] | 必填。 允许您将组件从“量度”更改为Dimension，反之亦然。 更改此下拉列表选择会将该组件移至其各自包括的组件区域。 |
+| [!UICONTROL 组件类型] | 必填。 允许您将组件从“量度”更改为Dimension，反之亦然。 更改此下拉列表选择会将该组件移至其各自的已包含组件区域。 |
 | [!UICONTROL 组件名称] | 必填。 使您可指定在 Analysis Workspace 中显示的易记名称。 可将组件重命名以给予其一个数据视图专属的名称。 |
 | [!UICONTROL 描述] | 可选，但推荐。 向其他用户提供有关组件的信息。 |
 | [!UICONTROL 标记] | 可选。 可让您使用自定义或现成标记为组件添加标签，以便于在Analysis Workspace UI中搜索/筛选。 |
 | [!UICONTROL 上下文标签] | 可选。 可应用于组件的可用系统定义[上下文标签](#context-labels)的下拉菜单。 |
 | [!UICONTROL 架构字段名] | 架构字段的名称。 |
-| [!UICONTROL 数据集类型] | 必填。 显示组件来自哪个数据集类型（事件、查询或轮廓）的不可编辑字段。 |
+| [!UICONTROL 数据集类型] | 必填。 显示组件来自哪个数据集类型（事件、查找或轮廓）的不可编辑字段。 |
 | [!UICONTROL 数据集] | 一个不可编辑的字段，它显示该组件来源于哪个数据集。 此字段可以包含多个数据集。 |
 | [!UICONTROL 架构类型] | 一个不可编辑的字段，它显示该组件的数据类型。 虽然您可以在 Platform 中使用任何受支持的架构字段类型，但 Customer Journey Analytics 并非支持所有字段类型。 支持的数据类型有：`Integer`、`Int`、`Long`、`Double`、`Float`、`Number`、`Short`、`Byte`、`String` 和 `Boolean`。 目前在查找数据集中仅允许有 `String` 架构数据类型。 |
 | [!UICONTROL 组件 ID] | 必填。 [Customer Journey Analytics API](https://www.adobe.io/cja-apis/docs) 使用此字段来引用组件。 数据视图中的每个组件都必须是唯一的。 Adobe 自动为每个组件生成一个 ID；但是，您可以单击编辑图标并修改组件 ID。 更改组件 ID 将破坏所有包含此组件的现有 Workspace 项目。 虽然每个组件在单个数据视图中都需要唯一的 ID，但可在其他数据视图中使用相同的组件 ID。 如果在其他数据视图中使用相同的组件 ID，则可让 Workspace 项目在数据视图间保持兼容。 <br/>对于基于轮廓和查找功能的组件，组件 ID 具有基于数据集 ID 的 ID 前缀（例如： `642b28fcc1f0ee1c074265a0.person.name.firstName`）。 当您想重用基于轮廓或查找功能的组件时（如 `person.name.firstName`），并在不同的数据视图中配置该组件时，请确保在数据视图中对组件 ID 的重命名是唯一的（例如：`myUniqueID.person.name.firstName`）。 |
@@ -77,7 +65,7 @@ ht-degree: 48%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [组件类型设置](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [组件类型设置](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -108,14 +96,14 @@ ht-degree: 48%
 * **一致性**：贵组织中处理一个或多个项目的每个人（这些项目基于使用上下文标签的数据视图）都将获得相同的行为。
 * **功能和模板的可见性**：仅在分配了正确的上下文标签时，才会显示某些可视化和功能。 例如：
 
-   * 仅当Customer Journey Analytics知道哪些组件表示纬度和经度时，[地图](/help/analysis-workspace/visualizations/map.md)可视化图表才会正确显示。
-   * 只有应用正确的上下文标签并且关联的组件变为可用时，才能看到特定的[模板](/help/analysis-workspace/templates/use-templates.md)。
+  * 仅当Customer Journey Analytics知道哪些组件表示纬度和经度时，[地图](/help/analysis-workspace/visualizations/map.md)可视化图表才会正确显示。
+  * 只有应用正确的上下文标签并且关联的组件变为可用时，才能看到特定的[模板](/help/analysis-workspace/templates/use-templates.md)。
 
 以下情况可能需要上下文标签：
 
 * 要定义一组组件，您可以使用Analysis Workspace项目中的[试验面板](/help/analysis-workspace/c-panels/experimentation.md)在试验报表中使用。
 
-  请参阅[与 Journey Optimizer 集成](/help/integrations/ajo.md#data-view)以及[&#x200B; Target 报告](/help/integrations/at.md)。
+  请参阅[与 Journey Optimizer 集成](/help/integrations/ajo.md#data-view)以及[ Target 报告](/help/integrations/at.md)。
 
 * 要定义一组组件，您可以在Analysis Workspace项目的[地图](/help/analysis-workspace/visualizations/map.md)可视化图表中使用。
 
@@ -123,7 +111,7 @@ ht-degree: 48%
 
   **注意**：地图可视化图表处于版本的“有限测试”阶段，可能尚未在环境中可用。
 
-* 显示Adobe[&#128279;](/help/analysis-workspace/templates/use-templates.md)提供的模板。 Adobe提供的某些模板可能无法工作，因为某些组件不在数据视图中。
+* 显示Adobe](/help/analysis-workspace/templates/use-templates.md)提供的[模板。 Adobe提供的某些模板可能无法工作，因为某些组件不在数据视图中。
 
   对于每个缺失的组件，数据视图中都会提供一个匹配的上下文标签。 您需要将匹配的上下文标签添加到数据视图中已存在的组件中。 或者，您需要向数据视图添加新组件，并将上下文标签添加到该组件（如果尚未自动提供）。
 
@@ -173,19 +161,19 @@ ht-degree: 48%
 
 | 名称 | 描述 |
 |------|-------------|
-| [内容ID](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/reporting/dimensions/content) | 所播放内容的唯一标识符。 在[媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)面板中启用&#x200B;**[!UICONTROL 内容ID]**&#x200B;单选按钮。 |
-| [内容逗留时间](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/reporting/metrics/content-time-spent) | 查看内容（不包括广告）所花费的时间。 支持[媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)面板中的&#x200B;**[!UICONTROL 内容逗留时间]**&#x200B;高级设置。 |
-| [集](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/reporting/dimensions/episode) | 系列中的剧集编号。 在[媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)面板中启用按集筛选。 |
+| [内容ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content) | 所播放内容的唯一标识符。 在[媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)面板中启用&#x200B;**[!UICONTROL 内容ID]**&#x200B;单选按钮。 |
+| [内容逗留时间](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/content-time-spent) | 查看内容（不包括广告）所花费的时间。 支持[媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)面板中的&#x200B;**[!UICONTROL 内容逗留时间]**&#x200B;高级设置。 |
+| [集](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/episode) | 系列中的剧集编号。 在[媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)面板中启用按集筛选。 |
 | 事件类型 | 媒体事件类型，如`media.play`或`media.ping`。 Customer Journey Analytics计算[媒体并行查看者](/help/analysis-workspace/c-panels/media-concurrent-viewers.md)派生的量度时需要此项。 |
-| [媒体逗留时间](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/reporting/metrics/media-time-spent) | 总时间，包括内容、广告、缓冲和暂停。 支持[媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)面板中的[媒体播放耗时](/help/analysis-workspace/c-panels/media-playback-time-spent.md)面板和&#x200B;**[!UICONTROL 媒体耗时]**&#x200B;高级设置。 |
-| [季](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/reporting/dimensions/season) | 系列中的季编号。 在[媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)面板中启用按季筛选。 |
+| [媒体逗留时间](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/media-time-spent) | 总时间，包括内容、广告、缓冲和暂停。 支持[媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)面板中的[媒体播放耗时](/help/analysis-workspace/c-panels/media-playback-time-spent.md)面板和&#x200B;**[!UICONTROL 媒体耗时]**&#x200B;高级设置。 |
+| [季](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/season) | 系列中的季编号。 在[媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)面板中启用按季筛选。 |
 | 自上次调用以后经过的秒数 | 自上次心率Ping以来的时间（以秒为单位）。 需要Customer Journey Analytics才能计算[媒体并行查看者](/help/analysis-workspace/c-panels/media-concurrent-viewers.md)派生量度，该量度用于标识会话何时仍处于活动状态。 |
-| [节目](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/reporting/dimensions/show) | 节目或系列节目的名称。 在[媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)面板中启用按显示筛选。 |
-| [开始时间](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/reporting/metrics/time-to-start) | 从内容选择到播放开始的时间。 已包含在[媒体播放耗时](/help/analysis-workspace/c-panels/media-playback-time-spent.md)的计算中。 |
-| [缓冲总持续时间](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/reporting/metrics/total-buffer-duration) | 会话期间缓冲所花费的总时间。 已包含在[媒体播放耗时](/help/analysis-workspace/c-panels/media-playback-time-spent.md)的计算中。 |
-| [总暂停持续时间](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/reporting/metrics/total-pause-duration) | 会话期间暂停的总时间。 已包含在[媒体播放耗时](/help/analysis-workspace/c-panels/media-playback-time-spent.md)的计算中。 |
-| [视频长度](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/reporting/dimensions/content-length) | 内容的持续时间（秒）。 在[媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)面板中的&#x200B;**[!UICONTROL 特定内容]**&#x200B;模式需要。 |
-| [视频名称](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/reporting/dimensions/content-name) | 内容的显示名称。 在[媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)面板中启用&#x200B;**[!UICONTROL 视频名称]**&#x200B;单选按钮。 |
+| [节目](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/show) | 节目或系列节目的名称。 在[媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)面板中启用按显示筛选。 |
+| [开始时间](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/time-to-start) | 从内容选择到播放开始的时间。 已包含在[媒体播放耗时](/help/analysis-workspace/c-panels/media-playback-time-spent.md)的计算中。 |
+| [缓冲总持续时间](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/total-buffer-duration) | 会话期间缓冲所花费的总时间。 已包含在[媒体播放耗时](/help/analysis-workspace/c-panels/media-playback-time-spent.md)的计算中。 |
+| [总暂停持续时间](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/total-pause-duration) | 会话期间暂停的总时间。 已包含在[媒体播放耗时](/help/analysis-workspace/c-panels/media-playback-time-spent.md)的计算中。 |
+| [视频长度](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content-length) | 内容的持续时间（秒）。 在[媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)面板中的&#x200B;**[!UICONTROL 特定内容]**&#x200B;模式需要。 |
+| [视频名称](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content-name) | 内容的显示名称。 在[媒体平均受众访问分钟数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)面板中启用&#x200B;**[!UICONTROL 视频名称]**&#x200B;单选按钮。 |
 
 +++
 
@@ -364,7 +352,7 @@ ht-degree: 48%
 | 资产链接 URL | 资产链接Url。 |
 | 资产名称 | 资源名称。 |
 | 资产人员类别 | 资产人员类别。 |
-| 资产感知 ID | 感知相同的资产唯一标识符。 |
+| 资产感知 ID | 感知上相同的资产的唯一标识符。 |
 | 资产摄影风格 | 资产摄影样式。 |
 | 资产场景 | 资产场景。 |
 | 资产来源 | 资源Source。 |
@@ -402,7 +390,7 @@ ht-degree: 48%
 |------|-------------|
 | 操作错误（AJO） | 历程操作生成的错误计数。 |
 | 操作执行错误 | 阻止 Journey Runtime 执行操作的错误条件。 |
-| 操作标签（AJO） | 客户生成的与最终用户交互的元素的显示名称。 |
+| 操作标签（AJO） | 最终用户与之交互的元素的客户生成显示名称。 |
 | 备用出口 (AJO) | 因轮廓到达结束节点或因错误而失败的退出次数。 |
 | 应用程序安装（AJO） | 应用程序安装次数。 |
 | 应用程序启动次数（AJO） | 移动应用程序的启动次数。 |
@@ -430,7 +418,7 @@ ht-degree: 48%
 | 显示次数（AJO） | 此计数显示AJO消息。 此计数包括电子邮件打开次数、Web显示次数和应用程序内显示次数。 移动平台不会报告短信和推送消息显示情况，因此不会计入它们。 |
 | 消除（AJO） | 每次 Adobe SDK 关闭应用程序内消息时均进行计数，无论最终用户选择哪种操作来关闭它。 |
 | 试运行 ID（AJO） | 试运行的唯一标识符。 |
-| 机器人打开电子邮件的次数 (AJO) | 机器人执行的电子邮件打开总数。 |
+| 电子邮件机器人打开次数 (AJO) | 机器人执行的电子邮件打开总数。 |
 | 电子邮件打开次数（AJO） | 电子邮件打开的总数。 |
 | 电子邮件收件人域（AJO） | 电子邮件地址的域。 |
 | 电子邮件主题 | 电子邮件主题，非个性化。 |
@@ -455,11 +443,11 @@ ht-degree: 48%
 | 项目名称（持久化）（AJO） | 启用了持久性绑定的项目的名称。 |
 | 历程操作错误 (AJO) | 历程操作生成的错误消息。 |
 | 历程操作节点名称 | 历程操作的节点名称。 |
-| 历程进入 | 如果步骤事件是轮廓的历程进入事件，为 True。 |
+| 历程进入 | 如果步骤事件是轮廓的历程进入事件，则为真。 |
 | 历程结束（AJO） | 历程的结束。 |
 | 历程事件节点名称 | 每当历程中发生区段或外部事件时，都会设置此值。 |
 | 历程排除原因 | 历程实例排除的原因。 |
-| 历程排除规则名称 | 导致历程记录被拒绝的规则名称。 |
+| 历程排除规则名称 | 导致拒绝进入历程的规则名称。 |
 | 历程排除 (AJO) | 指示当前步骤事件是否导致用户档案的历程放弃。 发生这种情况通常是因为应用了上限或并发规则，从而阻止旅程的进一步进展。 |
 | 历程退出类型 (AJO) | 历程实例发生的退出类型。 |
 | 历程失败 | 给出已完成执行的步骤的当前状态。 |
@@ -467,12 +455,12 @@ ht-degree: 48%
 | 历程名称 | 历程名称。 |
 | 历程名称和版本 | 历程的名称和版本。 |
 | 历程版本 ID | 历程的版本 ID。 |
-| JourneyExits | 如果当前步骤导致历程的一个实例结束，则为 true。 给定轮廓的历程的最后一步已成功执行。 |
+| JourneyExits | 如果当前步骤导致历程的一个实例结束，则为真。 给定轮廓的历程的最后一步已成功执行。 |
 | 登陆页面转化（AJO） | 登陆页上的转化总数。 |
 | 登陆页 Id（AJO） | 登陆页面的唯一标识符。 |
 | 登陆页面来源（AJO） | 登陆页面的来源。 |
-| 登陆页面查看次数（AJO） | 登陆页上浏览总次数。 |
-| 登陆页面点击次数（AJO） | 登陆页上点击总次数。 |
+| 登陆页面查看次数（AJO） | 登陆页面上浏览总次数。 |
+| 登陆页面点击次数（AJO） | 登陆页面上点击总次数。 |
 | 链接 URL（AJO） | 用户点击的 URL。 |
 | 消息退回原因（AJO） | 邮件退回的原因。 |
 | 消息错误原因（AJO） | 消息错误的原因。 |
@@ -510,7 +498,7 @@ ht-degree: 48%
 | 排名策略 ID（AJO） | 排名策略 ID。 |
 | 拒绝同意策略名称 | 相应的拒绝同意策略的名称。 |
 | 重试次数 (AJO) | 消息发送成功或失败前重试的次数。 |
-| 规则名称 | 导致历程记录被拒绝的规则名称。 |
+| 规则名称 | 导致历程进入被拒绝的规则名称。 |
 | 选择类型 (AJO) | 这是在决策中派生项时使用的选择类型。 |
 | 发送（已弃用） | 所有渠道发送的消息总数。 |
 | SMS 入站消息（AJO） | 短信入站回复，例如，停止、开始、订阅等。 |
@@ -532,7 +520,7 @@ ht-degree: 48%
 | 暂停总持续时间 | 暂停总持续时间。 |
 | 流量类型（AJO） | 排名流量类型。 |
 | 处理 ID（AJO） | 为试验选择的处理的 ID。 |
-| 处理名称（AJO） | 实验处理的名称。 |
+| 处理名称（AJO） | 试验处理的名称。 |
 | 试验中的独特访客 (AJO) | 试验中的独特访客。 |
 | 取消订阅（AJO） | 取消订阅的总次数。 |
 | URL 标签（AJO） | 人性化的 URL 标签。 |

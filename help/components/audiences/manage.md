@@ -5,15 +5,10 @@ exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
 TQID: https://experienceleague.adobe.com/SVEj1knpMzmtkIlwAYSb6o0PYBR9wf7JbrLMcMM2V8g
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 774
@@ -90,9 +85,9 @@ ht-degree: 95%
 
 | 图标 | 操作 | 描述 |
 |:---:|---|---|
-| ![标签](/help/assets/icons/Labels.svg) | **[!UICONTROL 标记]** | 标记选定的受众。 在&#x200B;**[!UICONTROL 更新标记：*受众名称&#x200B;*]**&#x200B;对话框中，从下拉菜单中选择标记或者输入一个或多个新标记。 选择&#x200B;**[!UICONTROL 保存&#x200B;]**&#x200B;以保存。 |
+| ![标签](/help/assets/icons/Labels.svg) | **[!UICONTROL 标记]** | 标记选定的受众。 在&#x200B;**[!UICONTROL 更新标记：*受众名称&#x200B;*]**对话框中，从下拉菜单中选择标记或者输入一个或多个新标记。 选择**[!UICONTROL 保存&#x200B;]**以保存。 |
 | ![Delete](/help/assets/icons/Delete.svg) | **[!UICONTROL 删除]** | 删除选定的受众。 |
-| ![编辑](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名选定的受众。 使用&#x200B;**[!UICONTROL 重命名：*受众名称&#x200B;*]**&#x200B;对话框来重命名受众，并选择&#x200B;**[!UICONTROL 保存&#x200B;]**&#x200B;以保存。 |
+| ![编辑](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名选定的受众。 使用&#x200B;**[!UICONTROL 重命名：*受众名称&#x200B;*]**对话框来重命名受众，并选择**[!UICONTROL 保存&#x200B;]**以保存。 |
 
 选择一个或多个计划项目时，可以从蓝色操作栏中执行以下操作。
 
@@ -120,7 +115,7 @@ ht-degree: 95%
 
 | 所有者 | 描述 |
 |---|---|
-| ![所有者](/help/components/audiences/assets/audiences-filter-owner.png){width="300"} | **[!UICONTROL 所有者]**&#x200B;部分允许您过滤所有者。 <ul><li>您使用![搜索](/help/assets/icons/Search.svg)来搜索您想要用于过滤的所有者。</li><li>您可以选择多个所有者。 </li></ul> |
+| ![所有者](/help/components/audiences/assets/audiences-filter-owner.png){width="300"} | 您可以使用&#x200B;**[!UICONTROL 所有者]**&#x200B;部分按所有者进行过滤。 <ul><li>您使用![搜索](/help/assets/icons/Search.svg)来搜索您想要用于过滤的所有者。</li><li>您可以选择多个所有者。 </li></ul> |
 
 ## 刷新频率
 

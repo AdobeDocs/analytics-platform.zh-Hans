@@ -1,5 +1,5 @@
 ---
-title: 从 Analytics 源连接器渡到 Customer Journey Analytics 的 Web SDK
+title: 从 Analytics 源连接器过渡到适用于 Customer Journey Analytics 的 Web SDK
 description: 了解升级到 Customer Journey Analytics 时如何从 Analytics 源连接器过渡到 Web SDK
 role: Admin
 solution: Customer Journey Analytics
@@ -7,20 +7,11 @@ feature: Basics
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 autotag-review: '2026-05-19T08:14:22.976Z'
 TQID: 'https://experienceleague.adobe.com/af02lBhLgsKQOkm2yVW4jHvFYVbqOCDi6-puKoKytMo'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 539
@@ -28,13 +19,13 @@ ht-degree: 100%
 
 ---
 
-# 从 Analytics 源连接器渡到 Customer Journey Analytics 的 Web SDK {#transition-from-source-connector}
+# 从 Analytics 源连接器过渡到适用于 Customer Journey Analytics 的 Web SDK {#transition-from-source-connector}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector"
->title="Analytics Source Connector 实施"
+>title="Analytics 源连接器实施"
 >abstract="Analytics Source Connector 可让您轻松获得 Customer Journey Analytics 的价值，但要求您同时支付 Adobe Analytics 和 Customer Journey Analytics 的费用。 本指南可帮助您转向独立的 Web SDK 实施。"
 
 <!-- markdownlint-enable MD034 -->
@@ -64,7 +55,7 @@ ht-degree: 100%
 
 1. 创建一个 Web SDK 实施，具体内容如本文中[详细的建议升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#detailed-recommended-upgrade-steps)所述，[从 Adobe Analytics 升级到 Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)。
 
-   在完成对 Web SDK 实施的配置后，继续以下步骤。
+   在 Web SDK 实施配置完成后，继续执行以下步骤。
 
 1. [为 Analytics 源连接器创建 XDM 架构](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)。
 
@@ -84,7 +75,7 @@ ht-degree: 100%
 
    有关详细信息，请参阅[将当前 Analytics 源连接器中的数据集添加到连接](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)。
 
-1. （有条件）如果您正在使用查找数据集，则必须创建查找数据集并将其添加到您的连接中。 有关详细信息，请参阅 [创建查找数据集，以对 Customer Journey Analytics 中的数据进行分类](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)。
+1. （视情况而定）如果您正在使用查找数据集，则必须创建查找数据集并将其添加到您的连接中。 有关详细信息，请参阅 [创建查找数据集，以对 Customer Journey Analytics 中的数据进行分类](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)。
 
 1. 删除原始 Analytics 源连接器。<!-- need to add steps somewhere about how to do this -->
 

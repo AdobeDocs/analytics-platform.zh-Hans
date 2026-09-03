@@ -6,25 +6,14 @@ feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
 TQID: https://experienceleague.adobe.com/RrX-gp2IY-Ny1D1yzR2whV2GuU98mysma8tQmUEubF8
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 3756
+source-wordcount: 3763
 ht-degree: 87%
 
 ---
@@ -65,7 +54,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
 要使用非过期型凭据：
 
-1. 在Experience Platform[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials#non-expiring-credentials)中创建未过期的凭据。 如果要使用已存在的未过期的凭据，请确保这些凭据[已迁移到OAuth](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials#migrate-credentials)。
+1. 在Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#non-expiring-credentials)中创建[未过期的凭据。 如果要使用已存在的未过期的凭据，请确保这些凭据[已迁移到OAuth](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#migrate-credentials)。
 
 1. 确保Customer Journey Analytics产品和产品配置文件具有未过期的凭据。 您必须是组织系统管理员才能执行以下步骤。
    1. 从![应用程序](/help/assets/icons/Apps.svg)中选择&#x200B;**[!UICONTROL Admin Console]**。
@@ -127,7 +116,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单的数据库列表中选择沙盒的`cja`数据库。 例如：`prod:cja`。
 
-   1. 若要复制命令字符串，请使用 **[!UICONTROL **&#x200B; PSQL 命令&#x200B;**]**&#x200B;部分中的![复制](assets/Smock_Copy_18_N.svg)。
+   1. 若要复制命令字符串，请使用 **[!UICONTROL ** PSQL 命令&#x200B;**]**&#x200B;部分中的![复制](assets/Smock_Copy_18_N.svg)。
 
 1. 打开命令或终端窗口。
 
@@ -160,9 +149,9 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    1. 选择左边栏中的&#x200B;**[!UICONTROL 更多...]**。
 
-   1. 在&#x200B;**获取数据**&#x200B;屏幕中，搜索 `PostgresSQL`，并从列表中选择 **[!UICONTROL **&#x200B; PostgresSQL 数据库&#x200B;**]**。
+   1. 在&#x200B;**获取数据**&#x200B;屏幕中，搜索 `PostgresSQL`，并从列表中选择 **[!UICONTROL ** PostgresSQL 数据库&#x200B;**]**。
 
-   1. 在 **[!UICONTROL **&#x200B; PostgressSQL 数据库&#x200B;**]**&#x200B;对话框中：
+   1. 在 **[!UICONTROL ** PostgressSQL 数据库&#x200B;**]**&#x200B;对话框中：
 
       1. 将 Experience Platform 查询[!UICONTROL 凭据]中的&#x200B;**[!UICONTROL **&#x200B;主机&#x200B;**]**&#x200B;参数粘贴到&#x200B;**[!UICONTROL **&#x200B;服务器&#x200B;**]**&#x200B;文本字段中。
 
@@ -201,7 +190,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    1. 从左边栏中的&#x200B;**[!UICONTROL **&#x200B;至服务器&#x200B;**]**&#x200B;中选择&#x200B;**[!UICONTROL **&#x200B;更多&#x200B;**]**。
 
-   1. 从列表中选择 **[!UICONTROL **&#x200B; PostgresSQL &#x200B;**]**。
+   1. 从列表中选择 **[!UICONTROL ** PostgresSQL **]**。
 
    1. 在 [!UICONTROL PostgresSQL] 对话框中：
 
@@ -318,7 +307,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
 ### 数据管理
 
-Customer Journey Analytics 中与数据管理相关的设置继承自 Adobe Experience Platform。 Customer Journey Analytics 和 Adobe Experience Platform 数据管理之间的集成允许标记敏感的 Customer Journey Analytics 数据和实施隐私政策。
+Customer Journey Analytics 中与数据治理相关的设置继承自 Adobe Experience Platform。 Customer Journey Analytics 和 Adobe Experience Platform 数据治理之间的集成允许标记敏感的 Customer Journey Analytics 数据和实施隐私政策。
 
 在 Experience Platform 使用的数据集上创建的隐私标签和政策可以在 Customer Journey Analytics 数据视图工作流中显示。 因此，在未遵循定义的隐私标签和政策时，使用 [!DNL Customer Journey Analytics BI extension] 查询的数据会显示相应的警告或错误。
 
@@ -337,7 +326,7 @@ prod:all=> \dv
 
 ### 嵌套与扁平化处理
 
-默认情况下，数据视图架构使用嵌套结构，就像原始 XDM 架构一样。 该集成还支持 `FLATTEN` 选项。 您可以使用此选项实施要扁平化处理的数据视图（以及会话中的任何其他表）的架构。 通过扁平化处理，可以更轻松地在不支持结构化架构的 BI 工具中使用。 有关更多信息，请参阅[在 Query Service 中使用嵌套数据结构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/key-concepts/flatten-nested-data)。
+默认情况下，数据视图架构使用嵌套结构，就像原始 XDM 架构一样。 该集成还支持 `FLATTEN` 选项。 您可以使用此选项强制将数据视图（以及会话中的任何其他表）的架构扁平化处理。 通过扁平化处理，可以更轻松地在不支持结构化架构的 BI 工具中使用。 有关更多信息，请参阅[在 Query Service 中使用嵌套数据结构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/key-concepts/flatten-nested-data)。
 
 
 ### 默认设置和限制
@@ -347,11 +336,11 @@ prod:all=> \dv
 * BI 扩展要求对查询结果的行数进行限制。 默认值为 50，但您可以在 SQL 中使用 `LIMIT n` 覆盖此值，其中 `n` 为 1 - 50000。
 * BI 扩展需要一个日期范围来限制用于计算的行数。 其默认值为最近 30 天，但您可以使用特殊的 `WHERE` 或 [`timestamp`](#timestamp) 列在 SQL [`daterange`](#date-range) 子句中覆盖它。
 * BI 扩展需要聚合查询。 您不能使用类似于 `SELECT * FROM ...` 的 SQL 来获取原始的底层行。 从宏观层面来看，您的聚合查询应使用：
-   * 使用`SUM`和/或`COUNT`.<br/>选择总数 例如，`SELECT SUM(metric1), COUNT(*) FROM ...`
-   * 选择按维度细分的量度。 <br/>例如，`SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
-   * 选择不同的度量值。<br/>例如，`SELECT DISTINCT dimension1 FROM ...`
+  * 使用`SUM`和/或`COUNT`.<br/>选择总数 例如，`SELECT SUM(metric1), COUNT(*) FROM ...`
+  * 选择按维度细分的量度。 <br/>例如，`SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
+  * 选择不同的度量值。<br/>例如，`SELECT DISTINCT dimension1 FROM ...`
 
-     参阅有关[支持的 SQL](#supported-sql) 的更多信息。
+    参阅有关[支持的 SQL](#supported-sql) 的更多信息。
 
 
 ### 支持的 SQL
@@ -578,7 +567,7 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 | 运算符或函数 | 详细信息 |
 |---|---|
 | `+`、`-`、`*`、`/` 和 `%` | 加、减、乘、除和模数/余数 |
-| `-X` 或 `+X` | 更改符号或量度，其中 X 是量度表达式 |
+| `-X` 或 `+X` | 更改量度的符号，其中 X 是量度表达式 |
 | `PI()` | π 常量 |
 | `POSITIVE`、`NEGATIVE`、`ABS`、`FLOOR`、`CEIL`、`CEILING`、`EXP`、`LN`、`LOG10`、`LOG1P`、`SQRT`、`CBRT`、`DEGREES`、`RADIANS`、`SIN`、`COS`、`TAN`、`ACOS`、`ASIN`、`ATAN`、`COSH`、`SINH` 和 `TANH` | 一元数学函数 |
 | `MOD`, `POW`, `POWER`, `ROUND`, `LOG` | 二元数学函数 |
@@ -688,7 +677,7 @@ ORDER BY -metric1 DESC
 
 ### 部分支持
 
-BI 扩展插件仅部分支持某些 SQL 功能，并且不会返回与其他数据库相同的结果。  此特定功能用于由各种 BI 工具生成的 SQL，而 BI 扩展插件无法与之完全匹配。 因此，BI 扩展主要聚焦于一个有限的实施，该实施仅涵盖最低限度的 BI 工具使用情况，且不会引发错误。 有关更多详细信息，请参阅下表。
+BI 扩展仅部分支持某些 SQL 功能，并且不会返回与其他数据库相同的结果。  此特定功能用于由各种 BI 工具生成的 SQL，而 BI 扩展没有与之完全对应的功能。 因此，BI 扩展主要聚焦于一个有限的实施，该实施仅涵盖最低限度的 BI 工具使用情况，且不会引发错误。 有关更多详细信息，请参阅下表。
 
 | 功能 | 示例 | 详细信息 |
 |---|---|---|

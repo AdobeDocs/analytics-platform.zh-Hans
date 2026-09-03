@@ -7,18 +7,11 @@ feature: Basics
 hide: true
 exl-id: 1d17151b-3a12-468e-9a4f-9e5994599570
 TQID: https://experienceleague.adobe.com/8AM-LX5GllmfDt-OpG6CAZt6qMH4DfMj9x8kgDBrD7I
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
 workflow-type: tm+mt
 source-wordcount: 676
@@ -40,7 +33,7 @@ ht-degree: 97%
 | **步骤 2：[选择升级路径](/help/getting-started/cja-upgrade/cja-upgrade-path.md)** | 有多种方法可以升级到 Customer Journey Analytics。 根据您组织当前的 Adobe Analytics 环境和长期目标，选择最适合您组织的方法。 |
 | **步骤 3：[将数据发送到 Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)** | 将数据发送到 Adobe Experience Platform 的流程因您在步骤 2 中选择的升级路径而异。 |
 | <span class="preview">**步骤 4：保留历史数据**</span> | <span class="preview">大多数组织需要在一定时间内保留其 Adobe Analytics 的历史数据。 有多种选项可以实现此目的。</span> |
-| **步骤 5：[执行额外的实施任务](/help/getting-started/cja-getting-started.md)** | 在升级流程的这个阶段，您需要执行各种任务，然后您的 Customer Journey Analytics environment 环境才可供使用。<p>这些额外的任务适用于从 Adobe Analytics 进行升级，以及新的 Customer Journey Analytics 实施。</p><p>这些任务包括：</p><ul><li>将其他数据引入 Experience Platform</li><li>在 Platform 数据集与 Customer Journey Analytics 之间创建连接</li><li>创建数据视图</li><li>移植报告 API 使用情况</li><li>数据源和 Data Warehouse 的核算</li><li>迁移项目和组件</li><li>规划用户加入流程</li></ul> <p>有关更多信息，请参阅 [Customer Journey Analytics 快速入门](/help/getting-started/cja-getting-started.md)。 |
+| **步骤 5：[执行额外的实施任务](/help/getting-started/cja-getting-started.md)** | 在升级流程的这个阶段，您需要执行各种任务，然后您的 Customer Journey Analytics environment 环境才可供使用。<p>这些额外的任务适用于从 Adobe Analytics 进行升级，以及新的 Customer Journey Analytics 实施。</p><p>这些任务包括：</p><ul><li>将其他数据引入 Experience Platform</li><li>在 Platform 数据集与 Customer Journey Analytics 之间创建连接</li><li>创建数据视图</li><li>移植报告 API 的使用</li><li>数据源和 Data Warehouse 的核算</li><li>迁移项目和组件</li><li>规划用户加入流程</li></ul> <p>有关更多信息，请参阅 [Customer Journey Analytics 快速入门](/help/getting-started/cja-getting-started.md)。 |
 
 {style="table-layout:auto"}
 
@@ -48,7 +41,7 @@ ht-degree: 97%
 
 >[!AVAILABILITY]
 >
->此页面上的信息将被以下更全面的升级信息取代： <ul><li>**建议的升级步骤**<p>有关详细信息，请参阅[从 Adobe Analytics 升级到 Customer Journey Analytics 时的推荐路径](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)。</p></li><li>**Customer Journey Analytics 升级指南**<p>现有新的升级指南可用，用于动态生成适合您的组织和独特情况的升级步骤。</p><p>要从 Customer Journey Analytics 访问升级指南，请选择&#x200B;**[!UICONTROL 工作区]**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**[!UICONTROL 升级到 Customer Journey Analytics]**。 按照屏幕上的说明操作。</p></li></ul>
+>此页面上的信息将被以下更全面的升级信息取代： <ul><li>**建议的升级步骤**<p>有关详细信息，请参阅[从 Adobe Analytics 升级到 Customer Journey Analytics 时的推荐路径](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)。</p></li><li>**Customer Journey Analytics 升级指南**<p>现有一个新的升级指南可用，可动态生成适合您的组织和独特情况的升级步骤。</p><p>要从 Customer Journey Analytics 访问升级指南，请选择&#x200B;**[!UICONTROL 工作区]**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**[!UICONTROL 升级到 Customer Journey Analytics]**。 按照屏幕上的说明操作。</p></li></ul>
 
 在从 Adobe Analytics 迁移到 Customer Journey Analytics 时，选择以下选项之一来保留历史数据：
 
@@ -58,7 +51,7 @@ ht-degree: 97%
 
 ## 使用 Analytics 源连接器
 
-您可以使用[&#x200B; Analytics 源连接器](/help/data-ingestion/analytics.md)来保留历史数据。 无论您选择哪种升级路径（即使您使用 Web SDK 升级），您都可以使用 Analytics 源连接器保留来自 Adobe Analytics 环境的历史数据。
+您可以使用[ Analytics 源连接器](/help/data-ingestion/analytics.md)来保留历史数据。 无论您选择哪种升级路径（即使您使用 Web SDK 升级），您都可以使用 Analytics 源连接器保留来自 Adobe Analytics 环境的历史数据。
 
 您可以使用 Analytics 源连接器将历史数据放入与当前数据分开的专用位置，从而保留历史数据。
 
@@ -72,11 +65,11 @@ ht-degree: 97%
 
 * 数据无法在 Experience Platform 中使用。
 
-* 在 Customer Journey Analytics 中拥有足够的数据后，您应该计划停止使用 Adobe Analytics 实施。
+* 在 Customer Journey Analytics 中拥有足够的数据后，您应计划停用 Adobe Analytics 实施。
 
 ## 接下来，执行额外的实施任务
 
-在升级流程的这个阶段，您需要执行各种实施任务，然后您的 Customer Journey Analytics environment 环境才可供使用。
+在升级流程的这个阶段，在您的 Customer Journey Analytics 环境可供使用之前，您需要执行各种实施任务。
 
 这些额外的任务适用于从 Adobe Analytics 进行升级，以及新的 Customer Journey Analytics 实施。
 

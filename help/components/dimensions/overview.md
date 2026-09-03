@@ -4,18 +4,11 @@ description: 了解什么是维度，以及它们在 Customer Journey Analytics 
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
 TQID: https://experienceleague.adobe.com/bMM7desF2wr71h-SR1mzD7-oSwm-8cPvmeU7SeM7-fU
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 253
@@ -31,7 +24,7 @@ Customer Journey Analytics 维度是一种无限类型；值可以是数字、�
 
 Customer Journey Analytics 中的基本报告显示一个量度列（通常是数字值）的多个维度行（通常是字符串值）。
 
-例如，如果将“页面”维度与“人员”量度相结合，您就会获得一个显示各人员最常访问页面的排名报告：
+例如，如果将“页面”维度与“人员”量度相结合，您就会获得一个按人数显示访问量最高页面的排名报告：
 
 | 页面 | 人员 |
 | --- | ---: |
@@ -41,7 +34,7 @@ Customer Journey Analytics 中的基本报告显示一个量度列（通常是�
 
 {style="table-layout:fixed"}
 
-每个维度表示网站的不同部分或方面。 您可以将其中一个或多个维度与一个或多个量度组合在一起，创建所需的报告。
+每个维度表示网站的不同部分或方面。 您可以将这些维度中的一个或多个与一个或多个量度组合在一起，创建所需的报告。
 
 
 ## 创建维度
@@ -50,7 +43,7 @@ Customer Journey Analytics 管理员可以[在数据视图中创建维度](/help
 
 ## 标准维度
 
-创建数据视图时，以下组件将被默认作为维度添加到数据视图中：
+创建数据视图时，以下组件将默认作为维度添加到数据视图中：
 
 {{standard-dimensions}}
 
@@ -61,6 +54,6 @@ Customer Journey Analytics 管理员可以在数据视图中或直接在 Analysi
 
 >[!MORELIKETHIS]
 >
->[利用事件深度功能发现更深入的客户洞察](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947?profile.language=zh-Hans#M576)
+>[利用事件深度功能发现更深入的客户洞察](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947#M576)
 >
 

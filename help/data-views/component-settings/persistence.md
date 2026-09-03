@@ -7,17 +7,11 @@ feature: Data Views
 role: Admin
 autotag-review: '2026-05-19T09:11:25.584Z'
 TQID: 'https://experienceleague.adobe.com/n0OW9ezQRIXl-e4qneDwlqUR7d2d-osnG31QYhsBBOI'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: e1471301-a189-438e-8d48-264a8db508a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 1117
@@ -38,7 +32,7 @@ ht-degree: 76%
 
 
 
-[!UICONTROL 持久性]是指某个给定的维度值能否归因于其所设置事件之外的某个量度。 它使用分配和有效期限的组合。
+[!UICONTROL 持久性]是指某个给定的维度值能否归因于其所设置事件之外的某个量度。 它使用分配和过期的组合。
 
 ![突出显示“持久性”选项的数据视图窗口](../assets/persistence.png)
 
@@ -80,14 +74,14 @@ ht-degree: 76%
   | 数据集值 |  | C | B |  | A |
   | 原有分配 |  | C | C | C | C |
 
-* **[!UICONTROL 全部]**：其行为方式类似于指标的[!UICONTROL 参与率]归因模型。 同等地保留所有值，以使每个值都能对报告中的指标发挥完整的作用。 例如，请考虑下表，其中具有[!UICONTROL 全部]的分配和[!UICONTROL 会话]的有效期限：
+* **[!UICONTROL 全部]**：其行为方式类似于指标的[!UICONTROL 参与率]归因模型。 同等地保留所有值，以使每个值都能对报告中的量度发挥完整的作用。 例如，请考虑下表，其中具有[!UICONTROL 全部]的分配和[!UICONTROL 会话]的有效期限：
 
   | 维度 | 点击1 | 点击2 | 点击3 | 点击4 | 点击5 |
   | --- | --- | --- | --- | --- | --- |
   | 数据集值 | A | B | C |  | A |
   | 全部分配 | A | A、B | A、B、C | A、B、C | A、B、C |
 
-* **[!UICONTROL 第一个已知]**&#x200B;和&#x200B;**[!UICONTROL 最后一个已知]**：（2022 年 1 月 19 日）这两个分配模型满足“进入”和“退出”维度用例。 它们采用指定持久性范围（会话、人员或带回溯的自定义时间段）内某个维度的第一个或最后一个观察值，并将其应用于指定范围内的所有事件。 示例：
+* **[!UICONTROL 第一个已知]**&#x200B;和&#x200B;**[!UICONTROL 最后一个已知]**：（2022 年 1 月 19 日）这两个分配模型满足“进入”和“退出”维度用例。 它们采用指定持久性范围（会话、人员或带回溯的自定义时段）内某个维度的第一个或最后一个观察值，并将其应用于指定范围内的所有事件。 示例：
 
   | 维度 | 点击1 | 点击2 | 点击3 | 点击4 | 点击5 |
   | --- | --- | --- | --- | --- | --- |
@@ -120,7 +114,7 @@ ht-degree: 76%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [绑定维度](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [绑定维度](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -129,6 +123,6 @@ ht-degree: 76%
 
 一个下拉菜单，可让您选择充当绑定触发器的量度。 有效的选项包括数据视图中包含的量度。
 
-此设置仅在对象数组中的绑定维度低于组件时显示。 当绑定量度显示在事件中时，维度值会从事件级别维度向下复制到绑定维度的较低架构级别。
+此设置仅在对象数组中的绑定维度低于组件时显示。 当绑定量度存在于事件中时，维度值会从事件级别维度向下复制到绑定维度的较低架构级别。
 
 有关如何有效使用绑定维度的更多信息，请参阅[在Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md)中使用绑定维度和量度下的第二个示例。

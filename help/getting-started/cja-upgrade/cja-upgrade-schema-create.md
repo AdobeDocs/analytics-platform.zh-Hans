@@ -7,20 +7,11 @@ feature: Basics
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
 autotag-review: '2026-05-19T08:15:52.067Z'
 TQID: 'https://experienceleague.adobe.com/RxYBLvBJnhWb-YL6HeVpTz-9dKrr5DQZhOBond8Xano'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: c73c4213-d623-4126-81f4-80b42e5e2656id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 1294
@@ -28,7 +19,7 @@ ht-degree: 100%
 
 ---
 
-# 创建与 Customer Journey Analytics 使用的自定义架构 {#create-custom-schema}
+# 创建用于 Customer Journey Analytics 的自定义架构 {#create-custom-schema}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -116,7 +107,7 @@ ht-degree: 100%
 
    1. （可选）选择您想要包括的任何其他字段组。
 
-      如果您选择使用默认的 Adobe Analytics 架构，而不是创建自定义 XDM 机构，则现在可以添加 Adobe Analytics ExperienceEvent 字段组。 但是，Adobe 建议创建一个自定义的 XDM 架构，而不是添加此字段组。
+      如果您选择使用默认的 Adobe Analytics 架构，而不是创建自定义 XDM 架构，则现在可以添加 Adobe Analytics ExperienceEvent 字段组。 但是，Adobe 建议创建一个自定义的 XDM 架构，而不是添加此字段组。
 
       有关这些架构选项的更多信息，请参阅[为 Customer Journey Analytics 选择架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)。
 
@@ -140,7 +131,7 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >如果该字段组不可用，请寻找另一个包含身份标识字段的字段组。 或者[创建一个新的字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=zh-Hans)，并[将新的身份标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=zh-Hans#define-a-identity-field)（如 `ecid`、`crmId` 以及您需要的其他字段）添加到该字段组中，并选择该新字段组。
+   >如果该字段组不可用，请寻找另一个包含身份标识字段的字段组。 或者[创建一个新的字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html)，并[将新的身份标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field)（如 `ecid`、`crmId` 以及您需要的其他字段）添加到该字段组中，并选择该新字段组。
 
    ![识别对象](assets/identification-field.png)
 
@@ -168,9 +159,9 @@ ht-degree: 100%
 
 1. （可选）如果您想将 Customer Journey Analytics 与 RTCDP 集成，请选择显示架构名称的架构根元素，然后选择&#x200B;**[!UICONTROL 轮廓]**&#x200B;切换按钮。
 
-   系统会提示您启用轮廓的架构。 一旦启用，当数据被引入基于此架构的数据集中时，该数据将合并到实时客户轮廓。
+   系统会提示您为轮廓启用架构。 一旦启用，当数据被引入基于此架构的数据集中时，该数据将合并到实时客户轮廓。
 
-   有关详细信息，请参阅[启用架构以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans#profile)。
+   有关详细信息，请参阅[启用架构以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile)。
 
    >[!IMPORTANT]
    >
@@ -182,7 +173,7 @@ ht-degree: 100%
 
    您已经创建了一个最小架构，用于对您可以从您的网站捕获的数据进行建模。 该架构允许使用 Experience Cloud Identity 和电子邮件地址来识别轮廓。 通过启用轮廓架构，您可以确保从您的网站捕获的数据被添加到实时客户轮廓中。
 
-   除了行为数据之外，您还可以从您的站点捕获轮廓属性数据（例如订阅时事通讯的轮廓的详细信息）。
+   除了行为数据之外，您还可以从您的网站捕获轮廓属性数据（例如订阅新闻稿的轮廓的详细信息）。
 
    要捕获此轮廓数据，您需要：
 
@@ -192,10 +183,10 @@ ht-degree: 100%
 
    * 添加基于 Profile Core v2 字段组的身份标识对象。
 
-   * 将 Experience Cloud ID 定义为主要身份标识符，并将电子邮件定义为身份标识符。
+   * 将 Experience Cloud ID 定义为主要标识符，并将电子邮件定义为标识符。
 
    * 为轮廓启用架构
 
-   请参阅[在 UI 中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=zh-Hans)，了解有关向架构添加和删除字段组和单个字段的更多信息。
+   请参阅[在 UI 中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html)，了解有关向架构添加和删除字段组和单个字段的更多信息。
 
 {{upgrade-final-step}}

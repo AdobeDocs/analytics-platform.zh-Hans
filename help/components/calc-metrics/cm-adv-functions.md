@@ -5,18 +5,11 @@ feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
 TQID: https://experienceleague.adobe.com/aXOUGaFZ-hlW9ROWRUWuCFh0d4UKIyjKNsypmAZIsbE
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 5381
@@ -42,7 +35,7 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 
 例如，如果您有收入量度，然后又将页面查看次数量度添加到报告中，则您的收入会突然多出一些全部为零的行。 您可能不希望该附加量度影响收入栏中的任何&#x200B;**[平均值](cm-functions.md#mean)**、**[行最小值](cm-functions.md#row-min)**、**[四分位数](cm-functions.md#quartile)**&#x200B;以及其他计算。 在这种情况下，您需要检查 `include-zeros` 参数。
 
-另一种情况是，您有两个感兴趣的量度，其中一个量度的平均值或最小值较高，因为其中有些行为零。  在这种情况下，您可以选择不检查参数，以包含零。
+另一种情况是，您有两个感兴趣的量度，其中一个量度的平均值或最小值较高，因为其中某些行的值为零。  在这种情况下，您可以选择不选中包含零值的参数。
 
 
 ## 与 {#and}
@@ -72,14 +65,14 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 >[!CONTEXTUALHELP]
 >id="functions-count-distinct-metric"
 >title="非重复近似计数"
->abstract="返回适用于所选维度的维度项的非重复近似计数。"
+>abstract="返回所选维度的维度项的近似非重复计数。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL APPROXIMATE COUNT DISTINCT(dimension)]**
 
 
-返回适用于所选维度的维度项的非重复近似计数。
+返回所选维度的维度项的近似非重复计数。
 
 
 | 参数 | 描述 |
@@ -99,14 +92,14 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 >[!CONTEXTUALHELP]
 >id="functions-acos"
 >title="反余弦"
->abstract="返回某量度的反余弦。 反余弦是一个其余弦为数字的角度。 返回的角度为范围在 0（零）到 pi 之间的弧度。 如果要将结果从弧度转换为角度，请将其乘以 180/PI()。"
+>abstract="返回某量度的反余弦。 反余弦是余弦值为某个数字的角。 返回的角度为范围在 0（零）到 pi 之间的弧度。 如果要将结果从弧度转换为角度，请将其乘以 180/PI()。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ARC COSINE(metric)]**
 
 
-[!BADGE 行]{type="Neutral"} 返回某量度的反余弦。 反余弦是一个其余弦为数字的角度。 返回的角度为范围在 0（零）到 pi 之间的弧度。 如果要将结果从弧度转换为角度，请将其乘以 180/PI()。
+[!BADGE 行]{type="Neutral"} 返回某量度的反余弦。 反余弦是余弦值为某个数字的角。 返回的角度为范围在 0（零）到 pi 之间的弧度。 如果要将结果从弧度转换为角度，请将其乘以 180/PI()。
 
 
 | 参数 | 描述 |
@@ -122,14 +115,14 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 >[!CONTEXTUALHELP]
 >id="functions-asin"
 >title="反正弦"
->abstract="返回一个数值的反正弦（或逆正弦）值。 反正弦是一个其正弦为数值的角度。 返回的角度为范围在 -pi/2 到 pi/2 之间的弧度。 要以角度表示反正弦，请将结果乘以 180/PI()。"
+>abstract="返回一个数值的反正弦（或逆正弦）值。 反正弦是正弦值为某个数的角。 返回的角度以弧度表示，范围为 -pi/2 到 pi/2。 要以角度表示反正弦，请将结果乘以 180/PI()。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ARC SINE(metric)]**
 
 
-[!BADGE 行]{type="Neutral"} 返回一个数值的反正弦。 反正弦是一个其正弦为数值的角度。 返回的角度为范围在 -pi/2 到 pi/2 之间的弧度。 要以角度表示反正弦，请将结果乘以 180/PI()。
+[!BADGE 行]{type="Neutral"} 返回一个数值的反正弦。 反正弦是一个其正弦为数值的角度。 返回的角度以弧度表示，范围为 -pi/2 到 pi/2。 要以角度表示反正弦，请将结果乘以 180/PI()。
 
 
 | 参数 | 描述 |
@@ -145,14 +138,14 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 >[!CONTEXTUALHELP]
 >id="functions-atan"
 >title="反正切"
->abstract="返回一个数值的反正切（或逆正切）值。 反正切是一个其正切为数值的角度。 返回的角度为范围在 -pi/2 到 pi/2 之间的弧度。 要以角度表示反正切，请将结果乘以 180/PI( )。"
+>abstract="返回一个数值的反正切（或逆正切）值。 反正切是一个其正切为数值的角度。 返回的角度以弧度表示，范围为 -pi/2 到 pi/2。 要以角度表示反正切，请将结果乘以 180/PI()。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL ARC TANGENT(metric)]**
 
 
-[!BADGE 行]{type="Neutral"} 返回一个数值的反正切。 反正切是一个其正切为数值的角度。 返回的角度为范围在 -pi/2 到 pi/2 之间的弧度。 要以角度表示反正切，请将结果乘以 180/PI( )。
+[!BADGE 行]{type="Neutral"} 返回一个数值的反正切。 反正切是一个其正切为数值的角度。 返回的角度以弧度表示，范围为 -pi/2 到 pi/2。 要以角度表示反正切，请将结果乘以 180/PI()。
 
 
 | 参数 | 描述 |
@@ -178,8 +171,8 @@ table函数是其中表的每一行的输出都相同的函数。 行函数是�
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 您希望求学生 t 分布累点数布函数的量度 |
-| 数字 | 学生 t 分布的累点数布函数所对应的自由度 |
+| 量度 | 您希望求学生 t 分布累积分布函数的量度 |
+| 数字 | 学生 t 分布的累积分布函数所对应的自由度 |
 
 ### 示例
 
@@ -209,7 +202,7 @@ CDF-T(x, ∞) ? cdf_z(x)
 
 | 参数 | 描述 |
 |---|---|
-| 量度 | 您希望求标准正态分布累点数布函数的量度 |
+| 量度 | 您希望求标准正态分布累积分布函数的量度 |
 
 ### 示例
 
@@ -262,7 +255,7 @@ CDF-Z(-3) ? 0.0013499
 | --- | --- |
 | normalizing-container | 运行测试的基础（人员、会话或事件）。 |
 | success-metric | 用户用来比较变量的一个或多个量度。 |
-| 控制 | 试验中所有其他变量要与之进行比较的变量。 输入控制变量维度项的名称。 |
+| 控制 | 试验中所有其他变量要与之进行比较的变量。 输入控制变体维度项的名称。 |
 | significance-threshold | 此函数中的阈值默认设置为 95%。 |
 
 
@@ -287,7 +280,7 @@ CDF-Z(-3) ? 0.0013499
 | --- | --- |
 | normalizing-container | 运行测试的基础（人员、会话或事件）。 |
 | success-metric | 用户用来比较变量的一个或多个量度。 |
-| 控制 | 试验中所有其他变量要与之进行比较的变量。 输入控制变量维度项的名称。 |
+| 控制 | 试验中所有其他变量要与之进行比较的变量。 输入控制变体维度项的名称。 |
 | significance-threshold | 此函数中的阈值默认设置为 95%。 |
 
 ## 置信度（上限） {#confidence-upper}
@@ -311,7 +304,7 @@ CDF-Z(-3) ? 0.0013499
 | --- | --- |
 | normalizing-container | 运行测试的基础（人员、会话或事件）。 |
 | success-metric | 用户用来比较变量的一个或多个量度。 |
-| 控制 | 试验中所有其他变量要与之进行比较的变量。 输入控制变量维度项的名称。 |
+| 控制 | 试验中所有其他变量要与之进行比较的变量。 输入控制变体维度项的名称。 |
 | significance-threshold | 此函数中的阈值默认设置为 95%。 |
 
 
@@ -322,13 +315,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-cos"
 >title="余弦"
->abstract="返回给定角度的余弦。 如果角以角度表示，则将该角乘以 PI( )/180。"
+>abstract="返回给定角度的余弦。 如果角以角度表示，则将该角乘以 PI()/180。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL COSINE(metric)]**
 
-[!BADGE 行]{type="Neutral"} 返回给定角度的余弦。 如果角以角度表示，则将该角乘以 PI( )/180。
+[!BADGE 行]{type="Neutral"} 返回给定角度的余弦。 如果角以角度表示，则将该角乘以 PI()/180。
 
 | 参数 | 描述 |
 |---|---|
@@ -365,13 +358,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-cumul"
 >title="累积"
->abstract="返回列 x 中最后 n 个元素的总和。 如果 n > 0，则对 x 的最后 n 个元素求和。 如果 n &lt; 0，则对前面的元素求和。"
+>abstract="返回列 x 中最后 n 个元素的总和。 如果 n > 0，则对最后 n 个元素或 x 求和。 如果 n &lt; 0，则对前面的元素求和。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE(number, metric)]**
 
-返回列 x 中最后 n 个元素的总和。 如果 n > 0，则对 x 的最后 n 个元素求和。 如果 n &lt; 0，则对前面的元素求和。
+返回列 x 中最后 n 个元素的总和。 如果 n > 0，则对最后 n 个元素或 x 求和。 如果 n &lt; 0，则对前面的元素求和。
 
 | 参数 | 描述 |
 | --- | --- |
@@ -394,13 +387,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-cumul-avg"
 >title="累积（平均）"
->abstract="返回列 x 中最后 n 个元素的平均值。 如果 n > 0，则对 x 的最后 n 个元素求和。 如果 n &lt; 0，则对前面的元素求和。"
+>abstract="返回列 x 中最后 n 个元素的平均值。 如果 n > 0，则对最后 n 个元素或 x 求和。 如果 n &lt; 0，则对前面的元素求和。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE AVERAGE(number, metric)]**
 
-返回列 x 中最后 n 个元素的平均值。 如果 n > 0，则对 x 的最后 n 个元素求和。 如果 n &lt; 0，则对前面的元素求和。
+返回列 x 中最后 n 个元素的平均值。 如果 n > 0，则对最后 n 个元素或 x 求和。 如果 n &lt; 0，则对前面的元素求和。
 
 | 参数 | 描述 |
 | --- | --- |
@@ -674,7 +667,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-if"
 >title="如果"
->abstract="如果完成情况参数的值非零（真），则结果为 value_if_true 参数的值。 否则，它会是 value_if_false 参数的值。"
+>abstract="如果条件参数的值非零（真），则结果为 value_if_true 参数的值。 否则，它会是 value_if_false 参数的值。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -761,7 +754,7 @@ CDF-Z(-3) ? 0.0013499
 | --- | --- |
 | normalizing-container | 运行测试的基础（人员、会话或事件）。 |
 | success-metric | 用户用来比较变量的一个或多个量度。 |
-| 控制 | 试验中所有其他变量要与之进行比较的变量。 输入控制变量维度项的名称。 |
+| 控制 | 试验中所有其他变量要与之进行比较的变量。 输入控制变体维度项的名称。 |
 
 
 
@@ -1013,7 +1006,7 @@ CDF-Z(-3) ? 0.0013499
 
 | 参数 | 描述 |
 |---|---|
-| logical | 必填。 可被计算为 TRUE 或 FALSE 的值或表达式 |
+| logical | 必填。 可求值为 TRUE 或 FALSE 的值或表达式 |
 
 
 
@@ -1386,14 +1379,14 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-sin"
 >title="正弦"
->abstract="返回给定角的正弦。 如果角以角度表示，则将该角乘以 PI( )/180。"
+>abstract="返回给定角的正弦。 如果角以角度表示，则将该角乘以 PI()/180。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL SINE(metric)]**
 
 
-[!BADGE 行]{type="Neutral"} 返回给定角度的正弦。 如果角以角度表示，则将该角乘以 PI( )/180。
+[!BADGE 行]{type="Neutral"} 返回给定角度的正弦。 如果角以角度表示，则将该角乘以 PI()/180。
 
 
 | 参数 | 描述 |
@@ -1453,7 +1446,7 @@ CDF-Z(-3) ? 0.0013499
 - ***n*** 是自由度，对于整个报告来说应该是一个常数，也就是说不会逐行改变。
 - ***x*** 为 T 测试统计数据，通常是基于量度的公式（例如 **[Z-SCORE](#z-score)**），每行都将对其进行评估。
 
-返回值是指在给定自由度和尾数的情况下，获得测试统计数据 x 的几率。
+返回值是在给定自由度和尾数的情况下，观察到检验统计量 x 的概率。
 
 ### 示例
 
@@ -1478,13 +1471,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-tan"
 >title="正切"
->abstract="返回给定角的正切。 如果角以角度表示，则将该角乘以 PI( )/180。"
+>abstract="返回给定角的正切。 如果角以角度表示，则将该角乘以 PI()/180。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL TANGENT(metric)]**
 
-返回给定角的正切。 如果角以角度表示，则将该角乘以 PI( )/180。
+返回给定角的正切。 如果角以角度表示，则将该角乘以 PI()/180。
 
 | 参数 | 描述 |
 |---|---|
@@ -1512,7 +1505,7 @@ CDF-Z(-3) ? 0.0013499
 | 量度 | 您希望求 Z 分数的量度 |
 | include_zeros | 是否在计算中包含零值 |
 
-Z 分数为 0（零）表示分数与平均值相同。 Z分数可以是正数或负数，指示它是否高于或低于平均值以及标准偏差数。
+Z 分数为 0（零）表示 Z 分数与平均值相同。 Z分数可以是正数或负数，指示它是否高于或低于平均值以及标准偏差数。
 
 Z分数的等式为：
 
@@ -1533,13 +1526,13 @@ Z分数的等式为：
 >[!CONTEXTUALHELP]
 >id="functions-z-test"
 >title="Z 测试"
->abstract="通过 x 的 z 分数，执行以 n 结尾的 z-test。"
+>abstract="执行 z 分数为 x 的 n 尾 z 检验。"
 
 <!-- markdownlint-enable MD034 -->
 
 ![效果](/help/assets/icons/Effect.svg) **[!UICONTROL Z-TEST(metric_tails)]**
 
-通过 x 的 z 分数，执行以 n 结尾的 z-test。
+执行 z 分数为 x 的 n 尾 z 检验。
 
 | 参数 | 描述 |
 |---|---|
@@ -1548,7 +1541,7 @@ Z分数的等式为：
 
 >[!NOTE]
 >
->假定值为正态分布。
+>假设这些值呈正态分布。
 
 
 

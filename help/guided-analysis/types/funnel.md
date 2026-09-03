@@ -6,20 +6,11 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
 TQID: https://experienceleague.adobe.com/-AW7cK4fHNV58e539KKcqBx-pRpIpIRWcrS7CA9ZUYc
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
 source-wordcount: 685
@@ -40,7 +31,7 @@ ht-degree: 100%
 
 ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL 漏斗&#x200B;]**分析可以直观地呈现您的产品中关键的用户历程。 横轴代表用户必须经历的每个步骤。 纵轴表示每个步骤的用户或会话的百分比。 所有步骤必须按最终顺序执行，但可在报告窗口内的任何时间进行。
 
->[!VIDEO](https://video.tv.adobe.com/v/3431280/?captions=chi_hans&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3421663/?quality=12&learn=on)
 
 ## 用例
 
@@ -49,8 +40,8 @@ ht-degree: 100%
 * **转化分析**：您可以分析漏斗内每个阶段的转化情况，例如零售结账、帐户注册、订阅流程或产品体验中的其他关键历程。 通过跟踪从一个步骤进展到下一个步骤的用户数量，您可以识别具有异常或不理想的转化率的瓶颈。 这些信息对于了解您可以在哪些方面改善产品历程，以获得立竿见影的效果方面非常有价值。
 * **实验分析**：您可以比较具有可选步骤或正在进行 A/B 试验的步骤的漏斗中的转化率。 该信息可以帮助您确定漏斗中的哪种变化可带来最高的转化率，以便您可以鼓励更多的用户选择这种方式。
 * **引导流程优化**：通过观察用户在关键事件上的行为，优化产品的引导流程。 您可以确定用户难以完成或无法完成的步骤。
-* **功能采用和参与度**：了解用户如何与产品中的特定功能进行互动。 通过分析用户在使用与功能相关的步骤时的进展，您可以了解采用率，并确定用户可能未充分利用某些功能的领域。 然后，您可以使用这些信息专注于功能改进，以提高采用率。
-* **营销渠道有效性**：衡量营销渠道的有效性。 您可以创建一个区段，重点关注与不同营销渠道（例如付费搜索、展示广告、免费搜索或直接营销）进行互动的用户。 然后，您可以比较他们的历程，看看哪个渠道可以带来最佳的产品结果。
+* **功能采用和参与度**：了解用户如何与产品中的特定功能进行互动。 通过分析用户在与功能相关的步骤中的进展，您可以了解采用率，并确定用户可能未充分利用某些功能的领域。 然后，您可以使用这些信息专注于功能改进，以提高采用率。
+* **营销渠道有效性**：衡量营销渠道的有效性。 您可以创建一个区段，重点关注与不同营销渠道（例如付费搜索、显示、免费搜索或直接）互动的用户。 然后，您可以比较他们的历程，看看哪个渠道可以带来最佳的产品结果。
 
 ## 界面
 
@@ -62,10 +53,10 @@ ht-degree: 100%
 
 * **[!UICONTROL 视图]**：在此分析和[转化趋势](conversion-trends.md)之间切换。
 * **[!UICONTROL 步骤]**：您想要追踪的事件接触点。 图表中的每个条形代表一个步骤。 您最多可以包含 10 个步骤。
-   * [!UICONTROL 比较]：每个步骤都提供了一个选项，用于比较单个漏斗步骤中的多个事件，从而创建一个“分叉漏斗” 此功能可让您并排比较两次历程的摩擦，而无需创建两个单独的分析。 当漏斗中有步骤选项或正在进行 A/B 试验时，这很有用。 请参阅 Customer Journey Analytics 教程中的[漏斗](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/guided-analysis/funnel)，观看介绍了如何比较漏斗的视频。
+  * [!UICONTROL 比较]：每个步骤都提供了一个选项，用于比较单个漏斗步骤中的多个事件，从而创建一个“分叉漏斗” 此功能可让您并排比较两次历程的阻力，而无需创建两个单独的分析。 当漏斗中有步骤选项或正在进行 A/B 试验时，这很有用。 请参阅 Customer Journey Analytics 教程中的[漏斗](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/guided-analysis/funnel)，观看介绍了如何比较漏斗的视频。
 * **[!UICONTROL 计为]**：您希望应用于漏斗的范围。 选项包括[!UICONTROL 会话]和[!UICONTROL 用户]。
-   * [!UICONTROL 会话]：所有步骤必须发生在同一会话内才可计算。
-   * [!UICONTROL 用户]：所有步骤都必须在选定的报告时间范围内发生才可计算。
+  * [!UICONTROL 会话]：所有步骤必须发生在同一会话内才可计算。
+  * [!UICONTROL 用户]：所有步骤都必须在选定的报告时间范围内发生才可计算。
 * **[!UICONTROL 区段]**：您想要比较漏斗的区段。 每个选定的区段会将每个步骤分成多个条形。 每种颜色代表不同的区段。 最多可以包括三个区段。
 
 ### 图表设置
@@ -86,7 +77,7 @@ ht-degree: 100%
 您需要分析的日期范围。 此设置包含两个部分：
 
 * **[!UICONTROL 间隔]**：您想要查看趋势数据的日期粒度。 此设置不会影响非趋势分析，例如[漏斗](funnel.md)。
-* **[!UICONTROL 日期]**：开始和结束日期。 为方便您使用，我们提供滚动日期范围预设以及之前保存的自定义范围，或者您可以使用日程表选择器选择固定的日期范围。
+* **[!UICONTROL 日期]**：开始和结束日期。 为方便您使用，我们提供滚动日期范围预设以及之前保存的自定义范围，或者您可以使用日历选择器选择固定的日期范围。
 
 <!--
 ## Example

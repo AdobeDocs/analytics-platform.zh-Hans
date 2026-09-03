@@ -7,18 +7,11 @@ role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
 autotag-review: '2026-05-19T09:25:02.883Z'
 TQID: 'https://experienceleague.adobe.com/0A4WNJ6TQDD3QrbupAK7R2sT25Nc-ovCnLFWjIyk0tU'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 422
@@ -42,11 +35,11 @@ ht-degree: 27%
    - 要重新生成键值的数据集的数据集ID。
    - 所需数据集（每行都显示的标识符）的永久ID的列名称（身份路径和命名空间）。
    - 如果数据集支持`identityMap`：
-      - 对于基于字段的拼接，请为永久ID和人员ID指定命名空间。
-      - 对于基于图的拼接，请指定持久ID的命名空间以及用于查询身份图的身份命名空间。
+     - 对于基于字段的拼接，请为永久ID和人员ID指定命名空间。
+     - 对于基于图的拼接，请指定持久ID的命名空间以及用于查询身份图的身份命名空间。
    - 如果数据集不支持`identityMap`：
-      - 对于基于字段的拼合，是指所需数据集的人员ID的列名称（人员标识符，还充当连接上下文中数据集之间的链接）。
-      - 对于基于图的拼接，为要用于查询身份图的身份命名空间。
+     - 对于基于字段的拼合，是指所需数据集的人员ID的列名称（人员标识符，还充当连接上下文中数据集之间的链接）。
+     - 对于基于图的拼接，为要用于查询身份图的身份命名空间。
    - 您的回顾窗口和重播频率首选项。 查看您的Customer Journey Analytics程序包以了解[选项](#options)。
    - 沙盒名称。
 

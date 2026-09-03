@@ -6,27 +6,14 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 TQID: https://experienceleague.adobe.com/EXiKrWVfmMRgZ4GF0OR410Mr2-P5IEjPy3Hf0FmRDJ8
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
 workflow-type: tm+mt
-source-wordcount: 3043
+source-wordcount: 3152
 ht-degree: 77%
 
 ---
@@ -38,7 +25,7 @@ ht-degree: 77%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建或编辑数据视图](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/data-views/overview-of-configuring-data-views-for-cja){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建或编辑数据视图](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/overview-of-configuring-data-views-for-cja){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -91,9 +78,9 @@ ht-degree: 77%
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/integrations/ajo#connection" text="添加了哪些组件和数据集。"
 
 
-此设置适用于在使用 Adobe Journey Optimizer 的同时使用 Customer Journey Analytics。
+提供在同时使用 Adobe Journey Optimizer 和 Customer Journey Analytics 时适用的设置。
 
-此部分仅对配备 Journey Optimizer 的管理员可见。
+此部分仅对已配置 Journey Optimizer 的管理员可见。
 
 | 设置 | 描述 |
 | --- | --- |
@@ -109,7 +96,7 @@ ht-degree: 77%
 
 ### 日程表
 
-指示您希望数据视图遵循的日程表格式。 可有多个数据视图基于同一个[连接](/help/connections/create-connection.md)，并可为其赋予不同的日程表类型或时区。 这些数据视图可让使用不同日程表类型的团队用相同的基础数据满足其各自的需求。
+指示您希望数据视图遵循的日历格式。 可有多个数据视图基于同一个[连接](/help/connections/create-connection.md)，并可为其赋予不同的日程表类型或时区。 这些数据视图可让使用不同日历类型的团队用相同的基础数据满足其各自的需求。
 
 | 设置 | 描述 |
 | --- | --- |
@@ -117,7 +104,7 @@ ht-degree: 77%
 | [!UICONTROL **日程表类型**] | 确定一个月中的周如何分组。<br>**公历：**&#x200B;标准日历格式。 季度按月分组。<br>**4-5-4零售业：**&#x200B;标准化的4-5-4零售日历。 季度的第一个月和最后一个月包含 4 周，而季度的第二个月包含 5 周。<br>**自定义 (4-5-4)：**&#x200B;类似于 4-5-4 日程表，但可选择一年的第一天以及哪年出现“额外的”一周。<br>**自定义 (4-4-5)：**&#x200B;每个季度的第一个月和第二个月包含 4 周，而每个季度的最后一个月包含 5 周。<br>**自定义 (5-4-4)：**&#x200B;每个季度的第一个包含为 5 周，而每个季度的第二个月和第三个月包含 4 周。 |
 | [!UICONTROL **一年的第一个月**]&#x200B;和&#x200B;[!UICONTROL **一周的第一天**] | 对“公历”日程表类型可见。 指定要让日程表年从哪一个月开始，以及每周从哪一天开始。 |
 | [!UICONTROL **当年的第一天**] | 对自定义日程表类型可见。 指定要让当年在一年中的哪一天开始。 日程表自动根据此值设置每周第一天的格式。 |
-| [!UICONTROL **出现“额外的”一周的年份**] | 对于大多数 364 天日程表（52 周，每周 7 天），每年都会积累多出的天数，直到它们加起来形成额外的一周。 然后，将这额外的一周添加到当年的最后一个月。 指定要将额外的一周添加到哪年。<br><br/>**额外周和闰年**<br/>&#x200B;如果您选择自定义&#x200B;**[!UICONTROL 日历类型]**（**[!UICONTROL 自定义（4-5-4）]**、**[!UICONTROL 自定义（4-4-5）]**&#x200B;或&#x200B;**[!UICONTROL 自定义（5-4-4）]**），每年剩余的天数就会累计起来，直到这些天数加起来构成一个完整的额外周（7 天）。 这个额外周会添加到您在&#x200B;**[!UICONTROL “额外周”出现的年份]**&#x200B;中选择的年份。<br/><br/>**[!UICONTROL “额外周”出现的年份]**&#x200B;中特意不显示闰年。 不过，闰年仍然可以包含 53 周。 如要强制闰年包含 53 周，应从&#x200B;**[!UICONTROL “额外周”出现的年份]**&#x200B;中选择一个非闰年，以确保目标闰年的累计日期漂移达到 7 天。 例如：要在 2024 年有 53 周，请选择 **[!UICONTROL 2019]**。 从2019年到2024年，总日期漂移为7天(2020 (+2)、2021 (+1)、2022 (+1)、2023 (+1)和2024 (+2))，这将导致2024年出现第53周。<br/><br/>选择&#x200B;**[!UICONTROL 当前年份的第一天]**&#x200B;将影响额外一周的土地的位置。 使用日历预览确认您的配置。 |
+| [!UICONTROL **出现“额外的”一周的年份**] | 对于大多数 364 天日历（52 周，每周 7 天），每年都会积累多出的天数，直到它们加起来形成额外的一周。 然后，将额外的这一周添加到当年的最后一个月。 指定要将额外的一周添加到哪年。<br><br/>**额外周和闰年**<br/>&#x200B;如果您选择自定义&#x200B;**[!UICONTROL 日历类型]**（**[!UICONTROL 自定义（4-5-4）]**、**[!UICONTROL 自定义（4-4-5）]**&#x200B;或&#x200B;**[!UICONTROL 自定义（5-4-4）]**），每年剩余的天数就会累计起来，直到这些天数加起来构成一个完整的额外周（7 天）。 这个额外周会添加到您在&#x200B;**[!UICONTROL “额外周”出现的年份]**&#x200B;中选择的年份。<br/><br/>**[!UICONTROL “额外周”出现的年份]**&#x200B;中特意不显示闰年。 不过，闰年仍然可以包含 53 周。 如要强制闰年包含 53 周，应从&#x200B;**[!UICONTROL “额外周”出现的年份]**&#x200B;中选择一个非闰年，以确保目标闰年的累计日期漂移达到 7 天。 例如：要在 2024 年有 53 周，请选择 **[!UICONTROL 2019]**。 从2019年到2024年，总日期漂移为7天(2020 (+2)、2021 (+1)、2022 (+1)、2023 (+1)和2024 (+2))，这将导致2024年出现第53周。<br/><br/>选择&#x200B;**[!UICONTROL 当前年份的第一天]**&#x200B;将影响额外一周的土地的位置。 使用日历预览确认您的配置。 |
 
 {style="table-layout:auto"}
 
@@ -220,9 +207,9 @@ ht-degree: 77%
 
 1. 使用![搜索图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL 搜索架构字段]**&#x200B;来搜索架构字段，或者通过移动到任何数据集收藏集来查找字段，例如![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 事件数据集]**&#x200B;或![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 查找数据集]**。 对于事件数据集，![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL XDM字段]**&#x200B;和![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 临时和关系字段]**&#x200B;的单独集合可用。<br/>或者，您可以使用![数据图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **创建派生字段**&#x200B;创建派生字段。 请参阅[派生字段](./derived-fields/derived-fields.md)，了解更多信息。
 
-1. 找到特定架构字段或定义派生字段后，将该字段（如![句柄图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL 页面名称]**）从左边栏拖动到&#x200B;**[!UICONTROL 包含的组件]**&#x200B;下的&#x200B;**[!UICONTROL 量度]**&#x200B;或&#x200B;**[!UICONTROL 维度]**&#x200B;部分。
-可将同一架构字段拖入维度或量度部分多次，并可按不同方式配置同一维度或量度。例如，从pageName字段，使用右侧不同的[组件设置](component-settings/overview.md)创建`Product Pages`和`Error pages`维度。
-如果从左边栏拖动架构字段文件夹，则该文件夹中的字段会自动排序到相应的部分中。字符串字段最后落在[!UICONTROL 维度]部分中，而数字架构类型最后落在[!UICONTROL 量度]部分中。您还可以单击&#x200B;**[!UICONTROL 添加所有]**，并将所有架构字段添加到其各自的部分。
+1. 找到特定架构字段或定义派生字段后，将该字段（如![句柄图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL 页面名称]**）从左边栏拖动到&#x200B;**[!UICONTROL 包含的组件]**&#x200B;下的&#x200B;**[!UICONTROL 量度]**&#x200B;或&#x200B;**[!UICONTROL 维度]**部分。
+可将同一架构字段拖入“维度”或“量度”部分多次，并可按不同方式配置同一维度或量度。 例如，从pageName字段，使用右侧不同的[组件设置](component-settings/overview.md)创建`Product Pages`和`Error pages`维度。
+如果从左边栏拖动一个架构字段文件夹，文件夹中的字段会自动分类到相应的部分。 字符串字段最后落在[!UICONTROL 维度]部分中，而数值架构类型最后落在[!UICONTROL 量度]部分中。 您也可以点击&#x200B;**[!UICONTROL 全部添加]**，将所有架构字段添加到其相应的部分。
 
 1. 选择组件后，右侧即会显示设置。
 
@@ -267,7 +254,7 @@ ht-degree: 77%
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_contract"
 >title="合同标签"
->abstract="合同 (C) 标签用于对具有合同义务或与组织的数据监管策略相关的数据进行分类。"
+>abstract="合同 (C) 标签用于对具有合同义务或与组织的数据治理策略相关的数据进行分类。"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview" text="数据使用标签概述"
 
 >[!CONTEXTUALHELP]
@@ -338,7 +325,7 @@ ht-degree: 77%
 
 ### 会话设置
 
-决定在会话到期并开始新会话之前，事件之间无活动的时段。 时段为必填。 您可以选择在事件包含特定量度时强制启动新会话。 有关更多详细信息，请参阅[会话设置](session-settings.md)。
+确定事件之间无活动的时段，在此时段后当前会话将过期并开始新会话。 时段为必填。 您可以选择在事件包含特定量度时强制启动新会话。 有关更多详细信息，请参阅[会话设置](session-settings.md)。
 
 ### 数据预览
 

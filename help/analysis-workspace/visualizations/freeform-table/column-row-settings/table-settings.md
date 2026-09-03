@@ -5,17 +5,10 @@ feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
 TQID: https://experienceleague.adobe.com/qQKmobJ4J1RPezRG-hk38l7JNioIshzjMaKXWVoUWsM
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 88ff7c4124d4612a3411b315a605aec29bc9a218
 workflow-type: tm+mt
 source-wordcount: 1650
@@ -31,13 +24,13 @@ ht-degree: 53%
 
 | 设置 | 描述 |
 | --- | --- |
-| **[!UICONTROL 按位置细分]** | 默认情况下，此设置处于禁用状态，并且细分固定在静态行项目。 例如，假设您按营销渠道细分排名前 3 的“页面”维度项（主页、搜索结果、结账）。 然后，您离开项目，两周后返回。 再次打开项目时，排名前 3 的页面已更改，此时“主页”、“搜索结果”和“结账”页面成为排名第 4-6 的页面。 默认情况下，营销渠道划分仍将显示在“主页”、“搜索结果”和“结账”下方，即使三者现在分别位于第4-6行中。<br> 相反，**按位置**&#x200B;划分始终划分排名前3的项目，而不管它们具体是什么。 回顾该示例，当您重新打开项目时，营销渠道细分与表中排名前 3 的页面相关联。 而不是与“主页”、“搜索结果”和“结帐”相关联，这三项现在分别位于第 4-6 行中。 |
+| **[!UICONTROL 按位置细分]** | 默认情况下，此设置处于禁用状态，并且细分固定在静态行项目。 例如，假设您按营销渠道细分排名前 3 的“页面”维度项（主页、搜索结果、结账）。 然后，您离开项目，两周后返回。 再次打开项目时，排名前 3 的页面已更改，此时“主页”、“搜索结果”和“结账”页面成为排名第 4-6 的页面。 默认情况下，营销渠道划分仍将显示在“主页”、“搜索结果”和“结账”下方，即使三者现在分别位于第4-6行中。<br> 相反，**按位置**&#x200B;划分始终划分排名前3的项目，而不管它们具体是什么。 回顾该示例，当您重新打开项目时，营销渠道细分与表中排名前 3 的页面相关联。 而不是与“主页”、“搜索结果”和“结账”相关联，这些项目现在位于第 4 – 6 行。 |
 | **[!UICONTROL 百分比]** | **按列计算百分比**（默认）：单元格中显示的百分比是根据列总数计算的。 <br>**按行计算百分比**：单元格中的百分比是按行计算的，而不是沿列向下计算，以全部总计作为分母。 该计算方式对显示百分比趋势特别有用。 |
 | **[!UICONTROL 列总计]** | 这些设置仅可用于[静态行](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)。<br> **显示为当前行的总和**&#x200B;将显示表中行的客户端总和，这意味着总计&#x200B;*不会*&#x200B;去除重复量度，如访问次数或人员。<br> **显示全部总计**&#x200B;将显示服务器端总和，这意味着去除重复量度的总计。 |
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自由格式表中的行和列设置](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自由格式表中的行和列设置](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"}以获取演示视频。
 
 {{videoaa}}
 
@@ -60,7 +53,7 @@ ht-degree: 53%
 
 | 选项 | 描述 |
 | --- | --- |
-| **[!UICONTROL 将选择复制到剪贴板]** | 将可视化图表中的选择复制到剪贴板上。 |
+| **[!UICONTROL 将选择复制到剪贴板]** | 将可视化图表中的所选内容复制到剪贴板上。 |
 | **[!UICONTROL 将项目下载为 CSV（*维度名称*）]** | 将可视化图表的维度项（最多 50,000 个）立即下载到本地设备。 所选维度最多可有 50,000 个维度项。 |
 | **[!UICONTROL 将选择下载为 CSV]** | 立即将可视化图表的维度项下载到您的本地设备。 |
 | **[!UICONTROL 为所有维度项创建超链接]** | 为所有维度项创建超链接。 请参阅[为自由格式表中的维度对超链接进行操作](../freeform-table-hyperlinks.md) |
@@ -96,13 +89,13 @@ ht-degree: 53%
 | **[!UICONTROL 从选定范围中创建区段]** | 打开[区段生成器](/help/components/segments/seg-builder.md)以从所选内容生成区段。 |
 | **[!UICONTROL 从选择创建受众]** | 打开[受众生成器](/help/components/audiences/publish.md#audience-builder)以从所选内容生成受众。 |
 
-选择量度列标题时，可以使用以下附加上下文菜单选项。
+选择量度列标头时，可以使用以下附加上下文菜单选项。
 
 | 选项 | 描述 |
 |---|---|
-| **[!UICONTROL 从选择创建量度]** | 从选定量度创建新的量度。 度量可以是平均值、中间值、列最大值、列最小值、列总和。 您还可以在计算量度生成器中选择“打开”来创建计算量度。 |
+| **[!UICONTROL 从选择创建量度]** | 从选定的量度创建新的量度。 度量可以是平均值、中间值、列最大值、列最小值、列总和。 您还可以在计算量度生成器中选择“打开”来创建计算量度。 |
 | **[!UICONTROL 添加时间段列]** | 添加时间段列。 您有多个选项可供选择，其中面板的日程表范围决定了&#x200B;*日期范围*： <ul><li>从&#x200B;**[!UICONTROL 以前的&#x200B;*日期范围*到此日期范围]**</li><li>从&#x200B;**[!UICONTROL 这些&#x200B;*日期范围*到此日期范围]**。</li><li>**[!UICONTROL 将日期范围自定义为此日期范围]**。 打开&#x200B;**[!UICONTROL 日期范围生成器]**，指定日期范围。</li></ul>有关更多信息，请参阅[日期比较](/help/components/date-ranges/time-comparison.md)。 |
-| **[!UICONTROL 比较时间段]** | 添加比较时间段的列。 仅当维度不是基于时间时才可用。 您可以通过多个选项来确定&#x200B;*日期范围*： <ul><li>从&#x200B;**[!UICONTROL 以前的&#x200B;*日期范围*到此日期范围]**</li><li>**[!UICONTROL 将日期范围自定义为此日期范围]**。 打开&#x200B;**[!UICONTROL 日期范围生成器]**，指定日期范围。</li></ul>有关更多信息，请参阅[日期比较](/help/components/date-ranges/time-comparison.md)。 |
+| **[!UICONTROL 比较时间段]** | 添加比较时段列。 仅当维度不是基于时间时才可用。 您可以通过多个选项来确定&#x200B;*日期范围*： <ul><li>从&#x200B;**[!UICONTROL 以前的&#x200B;*日期范围*到此日期范围]**</li><li>**[!UICONTROL 将日期范围自定义为此日期范围]**。 打开&#x200B;**[!UICONTROL 日期范围生成器]**，指定日期范围。</li></ul>有关更多信息，请参阅[日期比较](/help/components/date-ranges/time-comparison.md)。 |
 | **[!UICONTROL 修改归因模型]** | 修改该列的归因模型。 |
 | **[!UICONTROL 比较归因模型]** | 指定一个新的归因模型并将其与所选列的归因模型进行比较。 添加了包含新归因模型量度的新列。 此外，还添加了百分比变化列以便进行比较。 |
 | **[!UICONTROL 重置列宽]** | 将列宽重置为默认宽度。 |
@@ -113,7 +106,7 @@ ht-degree: 53%
 
 ## 更改行高
 
-您可以将项目的[视图密度](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density)设置为&#x200B;**[!UICONTROL 紧凑]**、**[!UICONTROL 舒适]**&#x200B;和&#x200B;**[!UICONTROL 展开]**。
+您可以将项目的[视图密度](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density)设置为&#x200B;**[!UICONTROL 紧凑]**、**[!UICONTROL 舒适]**&#x200B;和&#x200B;**[!UICONTROL 展开]**。
 
 
 ## 内联分类 {#inline-classifications-example}
@@ -166,7 +159,7 @@ ht-degree: 53%
 
 * 将自由格式表重置为修改前的状态。
 
-  1. 选择&#x200B;**[!UICONTROL _维度名称&#x200B;_（已修改）]**&#x200B;旁边的![齿轮](/help/assets/icons/Gear.svg)。
+  1. 选择&#x200B;**[!UICONTROL _维度名称&#x200B;_（已修改）]**旁边的![齿轮](/help/assets/icons/Gear.svg)。
   1. 从&#x200B;**[!UICONTROL 已修改行]**&#x200B;弹出窗口中选择&#x200B;**[!UICONTROL 重置已修改行]**。
 
      ![重置自由格式表](assets/popup-reset.png)

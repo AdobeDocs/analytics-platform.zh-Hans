@@ -6,18 +6,11 @@ feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
 TQID: https://experienceleague.adobe.com/B2j6BrXAHMu-3LKI61LbK01i-UdpMlELsqYSfAWYDCo
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
 workflow-type: tm+mt
 source-wordcount: 1093
@@ -35,13 +28,13 @@ ht-degree: 52%
 本文中使用以下定义：
 
 * **体验**：
-   * 对于&#x200B;**Web**&#x200B;渠道，体验被定义为整个网页上的文本内容。 对于数据收集，Content Analytics会记录基于页面URL的Experience ID。 然后通过检索服务捕捉页面上的文本。
-   * 对于&#x200B;**移动设备**&#x200B;渠道，使用适用于Adobe Experience Platform Mobile SDK的Content Analytics扩展在移动设备应用程序中定义和跟踪体验。
+  * 对于&#x200B;**Web**&#x200B;渠道，体验被定义为整个网页上的文本内容。 对于数据收集，Content Analytics会记录基于页面URL的Experience ID。 然后通过检索服务捕捉页面上的文本。
+  * 对于&#x200B;**移动设备**&#x200B;渠道，使用适用于Adobe Experience Platform Mobile SDK的Content Analytics扩展在移动设备应用程序中定义和跟踪体验。
 * **体验ID**：
-   * 对于Web渠道，体验ID是相关URL（基本URL加上驱动页面内容的任何参数）和[体验版本](manual.md#versioning)的唯一组合。
-      * 作为[配置](configuration.md)的一部分，您指定哪些参数与任何给定的完整 URL 相关。
-      * 您定义一个可使用的[版本标识符](manual.md#versioning)，这样就可以正确收集有关体验的变化。
-   * 对于&#x200B;**移动设备**&#x200B;渠道，体验ID是使用`registerExperience` API调用的返回值。
+  * 对于Web渠道，体验ID是相关URL（基本URL加上驱动页面内容的任何参数）和[体验版本](manual.md#versioning)的唯一组合。
+    * 作为[配置](configuration.md)的一部分，您指定哪些参数与任何给定的完整 URL 相关。
+    * 您定义一个可使用的[版本标识符](manual.md#versioning)，这样就可以正确收集有关体验的变化。
+  * 对于&#x200B;**移动设备**&#x200B;渠道，体验ID是使用`registerExperience` API调用的返回值。
 * **资产**：一个图像。 Content Analytics 会记录资产 URL。
 * **资产 ID**：资产的 URL。
 * **相关 URL**：基本 URL 加上驱动页面内容的任何参数。
@@ -64,19 +57,19 @@ Content Analytics需要Experience Platform Edge Network Web SDK（适用于Web�
 Content Analytics 事件由以下各项组成：
 
 * 标准字段
-   * 时间戳
-   * 身份标识
-* 体验访问数（如有且已配置）
+  * 时间戳
+  * 身份标识
+* 体验查看数（如有且已配置）
 * 体验点击数（如有且已配置）
-* 资产访问数（如有且已配置）
+* 资产查看数（如有且已配置）
 * 资产点击数（如有且已配置）
 
-Content Analytics 事件收集为以下顺序：
+Content Analytics 事件按以下序列收集：
 
 1. [录制的视图或单击](#recorded-view-or-click)。
-1. 用于发送Content Analytics事件[&#128279;](#trigger-to-send-a-content-analytics-event)的触发器。
+1. 用于发送Content Analytics事件](#trigger-to-send-a-content-analytics-event)的[触发器。
 
-Content Analytics 实际上以这种方式收集数据来反映该序列，而不是将收集某次访问或点击与收集该访问或点击之后立即发生的事件两者分开。 这种收集 Content Analytics 数据的方式也减少了所收集的数据量。
+Content Analytics 确实以这种方式收集数据来反映该序列，而不是将收集某次查看或点击与收集该查看或点击之后立即发生的事件两者分开。 这种收集 Content Analytics 数据的方式也减少了所收集的数据量。
 
 ### 记录的访问或点击
 
@@ -84,7 +77,7 @@ Content Analytics 实际上以这种方式收集数据来反映该序列，而�
 
 * 该资产尚未通过 Content Analytics 扩展配置被排除。
 * 该资产的 75% 被访问。
-* 该资产尚未为此页面被记录。
+* 该资产尚未在此页面中记录。
 
 在以下情况下会记录资产点击：
 
@@ -107,11 +100,11 @@ Content Analytics 实际上以这种方式收集数据来反映该序列，而�
 
 * Web SDK或Adobe AppMeasurement发送事件。
 * 可见性变为隐藏，例如：
-   * 页面卸载
-   * 切换选项卡
-   * 将浏览器最小化
-   * 关闭浏览器
-   * 锁定屏幕
+  * 页面卸载
+  * 切换选项卡
+  * 将浏览器最小化
+  * 关闭浏览器
+  * 锁定屏幕
 * URL 发生变化，导致相关 URL 改变。
 * 记录并准备发送的资产查看次数超过32次。
 
@@ -133,7 +126,7 @@ Content Analytics通过以下方式处理Web渠道的身份：
 * 由于该架构由系统所有，因此不支持基于字段的拼接。 因此，您无法向架构中添加其他字段来支持基于字段的拼接。
 
 
-要确保在字段级别正确拼接Content Analytics标识数据和Web SDK数据标识数据，请在事件发送[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/js/commands/configure/onbeforeeventsend){target="_blank"}回调之前修改Web SDK 。
+要确保在字段级别正确拼接Content Analytics标识数据和Web SDK数据标识数据，请在事件发送](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/onbeforeeventsend){target="_blank"}回调之前修改Web SDK [。
 
 1. 导航至包含 Adobe Experience Platform Web SDK 扩展和 Adobe Content Analytics 扩展的&#x200B;**[!UICONTROL 标记]**&#x200B;属性。
 1. 选择![插件](/help/assets/icons/Plug.svg)**[!UICONTROL 扩展]**。

@@ -6,18 +6,11 @@ keywords: 产品分析
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
 TQID: https://experienceleague.adobe.com/jqpqcNM8eOP0Te1t6-l0Mt5HvxhGzB8xMBxb1I-5GPM
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
 source-wordcount: 537
@@ -39,7 +32,7 @@ ht-degree: 100%
 
 ![转化趋势](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL 转化趋势]**&#x200B;分析提供了随时间变化的转化率趋势的可视化图表。 横轴是时间间隔，纵轴表示转化率。
 
->[!VIDEO](https://video.tv.adobe.com/v/3423484/?captions=chi_hans&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3421662/?quality=12&learn=on)
 
 ## 用例
 
@@ -83,7 +76,7 @@ ht-degree: 100%
 您需要分析的日期范围。 此设置包含两个部分：
 
 * **[!UICONTROL 间隔]**：您想要查看趋势数据的日期粒度。 有效的选项包括每小时、每天、每周、每月和每季度。 相同的日期范围可以有不同的间隔，这会影响图表中的数据点数和表格中的列数。 例如，以每日粒度查看跨越三天的分析仅会显示三个数据点，而以每小时粒度查看跨越三天的分析则会显示 72 个数据点。
-* **[!UICONTROL 日期]**：开始和结束日期。 为方便您使用，我们提供滚动日期范围预设以及之前保存的自定义范围，或者您可以使用日程表选择器选择固定的日期范围。
+* **[!UICONTROL 日期]**：开始和结束日期。 为方便您使用，我们提供滚动日期范围预设以及之前保存的自定义范围，或者您可以使用日历选择器选择固定的日期范围。
 
 <!--
 ## Example

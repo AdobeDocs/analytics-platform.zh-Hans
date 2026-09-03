@@ -6,19 +6,11 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
 TQID: https://experienceleague.adobe.com/Mq-IJRaA3-aplBEJe2XmorAD696XzmOj69YcpotF1dU
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
 source-wordcount: 849
@@ -39,7 +31,7 @@ ht-degree: 92%
 
 ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL 趋势]**&#x200B;分析提供了关于产品绩效或用户行为随时间变化的宝贵洞察。 该报告的横轴是时间间隔，而纵轴衡量的是您所期望的事件。
 
->[!VIDEO](https://video.tv.adobe.com/v/3423437/?captions=chi_hans&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3421666/?quality=12&learn=on)
 
 ## 用例
 
@@ -74,11 +66,11 @@ ht-degree: 92%
 
 向图表添加附加数据。 当图表上显示多个系列时，仅在悬停时显示叠加图。
 
-* **[!UICONTROL 异常检测]**：对趋势分析运行[异常检测](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md)。 离群值以点状显示，您可以将鼠标悬停其上以获取更多信息。
+* **[!UICONTROL 异常检测]**：对趋势分析运行[异常检测](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md)。 离群值以点状显示，您可以将鼠标悬停在其上以获取更多信息。
 * **[!UICONTROL 趋势线叠加]**：在图表中添加趋势线，有助于更清晰地描绘数据中的图案。
-   * [!UICONTROL 线形图]：创建直线回归线。 最适合以稳定速率增加或减少的简单线性数据。 方程式：`y = a + b * x`
-   * [!UICONTROL 对数]：创建一条弯曲的回归线。 最适合快速增加或减少然后变得更加平稳的数据。 方程式：`y = a + b * log(x)`
-   * [!UICONTROL 均线]：根据一组平均值创建平滑的趋势线。 均线也称为滚动平均值，使用特定数量的先前数据点（由您的选择决定），对其求平均值，然后使用平均值作为线条中的点。 示例包括七天均线或四周均线。 可用的均线选项取决于您选择的间隔和日期范围。
+  * [!UICONTROL 线形图]：创建直线回归线。 最适合以稳定速率增加或减少的简单线性数据。 方程式：`y = a + b * x`
+  * [!UICONTROL 对数]：创建一条弯曲的回归线。 最适合快速增加或减少然后变得更加平稳的数据。 方程式：`y = a + b * log(x)`
+  * [!UICONTROL 均线]：根据一组平均值创建平滑的趋势线。 均线也称为滚动平均值，使用特定数量的先前数据点（由您的选择决定），对其求平均值，然后使用平均值作为线条中的点。 示例包括七天移动平均或四周移动平均。 可用的移动平均选项取决于您选择的间隔和日期范围。
 
 ### 时间比较
 
@@ -90,7 +82,7 @@ ht-degree: 92%
 您需要分析的日期范围。 此设置包含两个部分：
 
 * **[!UICONTROL 间隔]**：您想要查看趋势数据的日期粒度。 有效的选项包括每小时、每天、每周、每月和每季度。 相同的日期范围可以有不同的间隔，这会影响图表中的数据点数和表格中的列数。 例如，以每日粒度查看跨越三天的分析仅会显示三个数据点，而以每小时粒度查看跨越三天的分析则会显示 72 个数据点。
-* **[!UICONTROL 日期]**：开始和结束日期。 为方便您使用，我们提供滚动日期范围预设以及之前保存的自定义范围，或者您可以使用日程表选择器选择固定的日期范围。
+* **[!UICONTROL 日期]**：开始和结束日期。 为方便您使用，我们提供滚动日期范围预设以及之前保存的自定义范围，或者您可以使用日历选择器选择固定的日期范围。
 
 
 <!--

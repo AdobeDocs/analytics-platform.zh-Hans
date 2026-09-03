@@ -5,24 +5,11 @@ feature: Visualizations
 role: User, Admin
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
 TQID: https://experienceleague.adobe.com/HFEY-P7m7s0Mukkzw-vWL7I5-WHSncEppX-basxJHGw
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-  - id: fa6ac035-8403-478b-9ce1-3fe29d211fca
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: fa6ac035-8403-478b-9ce1-3fe29d211fca
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 2815
@@ -61,7 +48,7 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中的地图可视化。_<br/>_对于本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版本，请参阅[地图](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的地图可视化。_<br/>_对于本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版本，请参阅[地图](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)。_
 
 >[!ENDSHADEBOX]
 
@@ -69,7 +56,7 @@ Analysis Workspace中的![全球](/help/assets/icons/Globe.svg) **[!UICONTROL �
 
 >[!BEGINSHADEBOX]
 
-观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [地图可视化图表](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/configure-and-use-the-map-visualization){target="_blank"}。
+观看演示视频的![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg)[地图可视化图表](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/configure-and-use-the-map-visualization){target="_blank"}。
 
 >[!ENDSHADEBOX]
 
@@ -225,21 +212,21 @@ Customer Journey Analytics中的地图可视化图表与Adobe Analytics中的地
 
    * **放大**：您可以通过以下任意方式放大地图以放大某些区域：
 
-      * 用鼠标双击地图。
+     * 用鼠标双击地图。
 
-      * 使用鼠标滚轮或在触控板上执行类似的操作。
+     * 使用鼠标滚轮或在触控板上执行类似的操作。
 
-      * 在地图可视化图表上选择加号图标![放大图标](assets/map-zoomin-icon.png)。
+     * 在地图可视化图表上选择加号图标![放大图标](assets/map-zoomin-icon.png)。
 
      地图将相应缩放。 将根据缩放级别自动更新所需的维度（国家/地区>州/省>城市）。
 
    * **缩小**：您可以通过以下任意方式缩小地图以查看更大的区域：
 
-      * 按住Shift键并用鼠标双击地图。
+     * 按住Shift键并用鼠标双击地图。
 
-      * 使用鼠标滚轮或在触控板上执行类似的操作。
+     * 使用鼠标滚轮或在触控板上执行类似的操作。
 
-      * 在地图可视化图表上选择减号图标![缩小图标](assets/map-zoomout-icon.png)。
+     * 在地图可视化图表上选择减号图标![缩小图标](assets/map-zoomout-icon.png)。
 
      地图将相应缩放。 将根据缩放级别自动更新所需的维度（国家/地区>州/省>城市）。
 
@@ -255,13 +242,13 @@ Customer Journey Analytics中的地图可视化图表与Adobe Analytics中的地
 
    * **显示期间比较（例如逐年比较）**：
 
-      * 显示负数。
+     * 显示负数。
 
-        例如，如果您绘制的是以年同比量度，地图会在纽约上方显示 -33%。
+       例如，如果您绘制的是同比量度，地图会在纽约上方显示 -33%。
 
-      * 对于&#x200B;*百分比*&#x200B;类型的量度，进行聚类分析时会将百分比平均起来计算。
+     * 对于&#x200B;*百分比*&#x200B;类型的量度，进行聚类分析时会将百分比平均起来计算。
 
-      * 绿色和红色颜色方案表示正值和负值。
+     * 绿色和红色颜色方案表示正值和负值。
 
    * **其他可视化设置**：选择可视化标题中的“设置”图标![设置](/help/assets/icons/Setting.svg)以查看地图可视化的其他设置。 有关详细信息，请参阅[配置可视化设置](#configure-visualization-settings)。
 
@@ -286,7 +273,7 @@ Customer Journey Analytics中的地图可视化图表与Adobe Analytics中的地
    | **[!UICONTROL 样式]** | | |
    | | **[!UICONTROL 颜色主题]** | 显示热图和气泡的颜色方案。 你可以选择珊瑚色、红色、绿色或蓝色。 默认为珊瑚色。 |
    | | **[!UICONTROL 地图样式]** | 您可以从基本、街道、明亮、浅色、深色和卫星中选择。 |
-   | | **[!UICONTROL 群集半径]** | 将像素数量在指定范围之内的数据点组合在一起。 默认值为 50。<p>仅当选择&#x200B;**[!UICONTROL 气泡]**&#x200B;作为&#x200B;**[!UICONTROL 映射类型]**&#x200B;时，此选项才可用。</p> |
+   | | **[!UICONTROL 群集半径]** | 将彼此间距在指定像素数之内的数据点归为一组。 默认值为 50。<p>仅当选择&#x200B;**[!UICONTROL 气泡]**&#x200B;作为&#x200B;**[!UICONTROL 映射类型]**&#x200B;时，此选项才可用。</p> |
    | | **[!UICONTROL 自定义最大值]** | 允许您更改地图最大值的阈值。 调整此值可调整气泡图或热图值（颜色和大小）相对于您设置的自定义最大值的缩放比例。 |
    | | **[!UICONTROL 显示注释]** | 显示为此可视化图表所做的批注。 |
    | | **[!UICONTROL 隐藏标题]** | 隐藏可视化图表的标题。 |

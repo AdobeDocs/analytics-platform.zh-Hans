@@ -7,27 +7,15 @@ role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
 autotag-review: '2026-05-19T08:53:41.814Z'
 TQID: 'https://experienceleague.adobe.com/v34BzDIuWE-GJEsepuTDMSDbNZT9wFP-WjeKZljmC1Y'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 780
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -58,27 +46,27 @@ ht-degree: 75%
 ### Web
 
 * 您已将 Content Analytics 中使用的特征化服务的用户代理和 IP 地址列入允许列表。 要配置的用户代理字符串是：<code>AdobeFeaturization/1.0</code>。
-* 如果您[使用 JavaScript 实施了 Web SDK](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/js/install/library){target="_blank"}用于定期收集行为数据，请确保您使用了默认名称 <code>alloy</code> 为 JavaScript 库。
+* 如果您[使用 JavaScript 实施了 Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library){target="_blank"}用于定期收集行为数据，请确保您使用了默认名称 <code>alloy</code> 为 JavaScript 库。
 * 您具有 Customer Journey Analytics 产品管理员角色，并具有管理连接和管理数据视图的额外权限。
 * 如果您决定收集Content Analytics体验，请确保您根据对网页所做的更改来设置和更新Content Analytics版本控制。
 * 您必须具有[数据收集权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions){target="_blank"}：
-   * [Experience Platform](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}权限。
-   * [Experience Platform数据收集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}权限。
+  * [Experience Platform](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}权限。
+  * [Experience Platform数据收集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}权限。
 * 您已仔细考虑了以下重要的配置选项：
 
-   * 您的站点适合体验报告。 只有满足以下条件才可以生成正确的体验报告：
-      * 网站上的页面必须能够通过页面 URL 重复出现。
-      * 任何给定用户看到的文本内容都可以使用页面 URL 重复出现，并且不取决于 cookie 或其他个性化机制。
-   * 您已清楚地了解要捕获哪些页面以进行内容参与分析和洞察。
-   * 您清楚地了解要为哪些（类型的）资产捕获内容参与度分析和洞察。
+  * 您的网站适合用于体验报告。 只有满足以下条件才可以生成正确的体验报告：
+    * 网站上的页面必须能够通过页面 URL 重复出现。
+    * 任何给定用户看到的文本内容都可以使用页面 URL 重复出现，并且不取决于 cookie 或其他个性化机制。
+  * 您已清楚地了解要捕获哪些页面以进行内容参与分析和洞察。
+  * 您清楚地了解要为哪些（类型的）资产捕获内容参与度分析和洞察。
 
 ### 移动
 
 * 请确保为移动设备应用程序启用了[Experience Platform Edge Network](https://developer.adobe.com/client-sdks/edge/edge-network/)和[Edge Network的Experience Platform标识](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/)扩展。
 * 您具有 Customer Journey Analytics 产品管理员角色，并具有管理连接和管理数据视图的额外权限。
 * 您必须具有[数据收集权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions){target="_blank"}：
-   * [Experience Platform](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}权限。
-   * [Experience Platform数据收集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}权限。
+  * [Experience Platform](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}权限。
+  * [Experience Platform数据收集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}权限。
 
 
 

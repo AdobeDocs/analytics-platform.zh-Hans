@@ -7,18 +7,11 @@ feature: Basics
 exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
 autotag-review: '2026-05-19T08:19:22.813Z'
 TQID: 'https://experienceleague.adobe.com/OYEIDQvTVX2GFMKWvCGuKqoyZcvWbcsnGSQwM-tsYl0'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 301
@@ -39,7 +32,7 @@ ht-degree: 100%
 
 {{upgrade-note-step}}
 
-您必须在您想要跟踪的网站上安装您的标记，这意味着将代码放在您网站模板的标题标记中。
+您必须在您想要跟踪的网站上安装您的标记，这意味着将代码放在您网站模板的标头标记中。
 
 以下过程描述了如何获取引用您的标记的代码。 有关补充信息，请参阅 Experience Platform 文档中的[标记和事件转发实施指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/get-started/implementation-guides)。
 
@@ -65,8 +58,8 @@ ht-degree: 100%
 
 1. 选择&#x200B;**[!UICONTROL 关闭]**。
 
-   您可以根据部署 Adobe Experience Platform Web SDK 的位置选择另一个环境（暂存、生产），而不是开发环境的代码。
+   您可以根据自己在部署 Adobe Experience Platform Web SDK 过程中的阶段，选择另一个环境（暂存、生产），而不是开发环境的代码。
 
-   有关详细信息，请参阅 [环境](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=zh-Hans&)。
+   有关详细信息，请参阅 [环境](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?)。
 
 {{upgrade-final-step}}

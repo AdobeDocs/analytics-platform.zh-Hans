@@ -5,25 +5,14 @@ feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
 TQID: https://experienceleague.adobe.com/kXVC79sHZMIdUELOC6KjtT7tJdh9pVySu-jApef-8lk
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: df28738e-9c71-4aa8-929e-edde22340cc6
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df28738e-9c71-4aa8-929e-edde22340cc6id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 954
+source-wordcount: 982
 ht-degree: 92%
 
 ---
@@ -42,7 +31,7 @@ ht-degree: 92%
 
 1. [在 Analysis Workspace 中创建项目](/help/analysis-workspace/build-workspace-project/create-projects.md)。
 
-1. 给 Analysis Workspace 中的项目[添加面板](/help/analysis-workspace/c-panels/panels.md#create-a-panel)或者[添加可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)。 如果您将组件添加到一个空白项目，就会创建一个自由格式表可视化图表。
+1. 给 Analysis Workspace 中的项目[添加面板](/help/analysis-workspace/c-panels/panels.md#create-a-panel)或者[添加可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)。 如果您将组件添加到一个空白项目，系统会为您创建一个自由格式表可视化图表。
 
 1. 从按钮面板选择![策划](/help/assets/icons/Curate.svg) **[!UICONTROL 组件]**。 您可以在左侧面板中看到所有可用的组件。 请参阅[界面](/help/analysis-workspace/home.md#interface)了解更多详细信息。
 
@@ -63,7 +52,7 @@ ht-degree: 92%
 
 ### 在项目中添加维度
 
-[维度](/help/components/dimensions/overview.md)是 Customer Journey Analytics 中的变量，通常包含字符串值。 相反，[量度](/help/components/calc-metrics/calc-metr-overview.md)包含与维度相关的数字值。 基本报告根据数值列（量度）显示字符串值的行（维度）。
+[维度](/help/components/dimensions/overview.md)是 Customer Journey Analytics 中的变量，通常包含字符串值。 相反，[量度](/help/components/calc-metrics/calc-metr-overview.md)包含与维度相关的数字值。 基本报告显示字符串值的行（维度）以及数值的列（量度）。
 
 1. 如[在项目中添加组件](#add-components-to-a-project)中所述，开始在 Analysis Workspace 的项目中添加维度。
 
@@ -83,7 +72,7 @@ ht-degree: 92%
 
 指标允许您量化 Analysis Workspace 中的数据点。 它们最常用作可视化中的列，并与维度相关联。
 
-要在 Analysis Workspace 的项目中添加量度：
+要在 Analysis Workspace 中向项目添加量度：
 
 1. 如[在项目中添加组件](#add-components-to-a-project)中所述，开始在 Analysis Workspace 的项目中添加量度。
 
@@ -97,11 +86,11 @@ ht-degree: 92%
 
    * 有维度存在时拖动一个量度，可为每个维度项查看该量度。
 
-   * 将量度拖到某个现有量度标题的顶部，可将其替换。
+   * 将量度拖到某个现有量度标头的顶部，可将其替换。
 
    * 将量度拖到某个现有量度标题的左侧或右侧附近，可添加新量度。
 
-   * 将量度拖到某个现有量度标题的上方或下方，可创建量度重叠。
+   * 将量度拖到某个现有量度标头的上方或下方，可创建量度重叠。
 
 
 请参阅[量度](/help/components/apply-create-metrics.md)了解有关量度的更多信息。

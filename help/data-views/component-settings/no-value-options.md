@@ -7,17 +7,11 @@ feature: Data Views
 role: Admin
 autotag-review: '2026-05-19T09:10:31.309Z'
 TQID: 'https://experienceleague.adobe.com/aE7qKzO2RI0sR28mTHUG5dCwO1AsAHFZlzdX-SjZeG4'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: e1471301-a189-438e-8d48-264a8db508a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 348
@@ -46,11 +40,11 @@ ht-degree: 86%
 | 设置 | 描述 |
 | --- | --- |
 | **[!UICONTROL 如果显示，则将“无值”称为]** | 一个文本字段，通过它，可将&#x200B;**[!UICONTROL 无值]**&#x200B;维度项重命名为其他名称。 |
-| **[!UICONTROL 默认不显示“无值”]** | 不在报告中显示此值。 与此维度无关的指标在报告中不可见。 |
+| **[!UICONTROL 默认不显示“无值”]** | 不在报告中显示此值。 与此维度无关的量度在报告中不可见。 |
 | **[!UICONTROL 默认显示“无值”]** | 在报告中显示此值。 |
 | **[!UICONTROL 将“无值”视为一个值]** | （数值维度的情况下不支持）将数据中的空白值替换为您在[!UICONTROL 如果显示，则称为“无值”]中指定的文本。 例如，如果以“移动设备类型”作为维度，则可将&#x200B;**[!UICONTROL 无值]**&#x200B;项重命名为“桌面”。 将此字段更改为自定义值时，将该自定义值视为合法的字符串值。 因此，如果将“Red”值输入到此字段中，则字符串“Red”在数据自身中存在的任何实例均滚入您已指定的同一行项下方。 |
 
-## 数字维度的情况下支持“无值” {#numeric}
+## 数值维度对“无值”的支持 {#numeric}
 
 使用数值作为维度时，您可以
 
@@ -61,6 +55,6 @@ ht-degree: 86%
 
 >[!MORELIKETHIS]
 >
->[在Adobe Customer Journey Analytics中处理“无值”的完整行动手册](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/the-complete-playbook-for-handling-no-value-in-adobe-cja/ba-p/756696?profile.language=zh-Hans#M598)。
+>[在Adobe Customer Journey Analytics中处理“无值”的完整行动手册](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/the-complete-playbook-for-handling-no-value-in-adobe-cja/ba-p/756696#M598)。
 
 

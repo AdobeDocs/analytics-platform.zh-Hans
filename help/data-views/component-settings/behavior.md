@@ -1,21 +1,16 @@
 ---
 title: 行为组件设置
-description: 指定维度或指标在报告中的行为方式。
+description: 指定维度或量度在报告中的行为方式。
 exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 TQID: https://experienceleague.adobe.com/ra-O8TGxS6ByFEClZR7FtOnJ70YwclBiVMh9vubmGxk
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 341
@@ -43,7 +38,7 @@ ht-degree: 100%
 
 | 设置 | 描述 |
 | --- | --- |
-| [!UICONTROL 小写] | 为具有相同的值但大小写不同的行进行重复数据删除。 如果启用，则维度的所有具有相同值的实例均被报告为小写。 例如，您的数据在字符串维度中包含 `"liverpool"`、`"Liverpool"` 和 `"LIVERPOOL"` 值。 如果启用了[!UICONTROL 小写]，则所有三个值合并为 `"liverpool"`。 如果禁用，则将所有三个值都视为不同。 |
+| [!UICONTROL 小写] | 对具有相同值但大小写不同的行进行重复数据删除。 如果启用，则维度中所有具有相同值的实例都会以小写形式报告。 例如，您的数据在字符串维度中包含 `"liverpool"`、`"Liverpool"` 和 `"LIVERPOOL"` 值。 如果启用了[!UICONTROL 小写]，则所有三个值合并为 `"liverpool"`。 如果禁用，则将所有三个值都视为不同。 |
 
 {style="table-layout:auto"}
 
@@ -57,10 +52,10 @@ ht-degree: 100%
 
 | 设置 | 描述/用例 |
 | --- | --- |
-| [!UICONTROL 计入值] | 在 Integer 和 Double 架构数据类型上可见。 将指标增大指定的数量。 例如，如果列的值为 `50`，则将某个指标增大 50。 |
-| [!UICONTROL 计入实例] | 在 Integer 和 Double 架构数据类型上可见。 无论值是什么，都将指标增大 1。 存在任何值都将增大指标。 例如，如果列的值为 `50`，则将某个指标增大 1。 |
+| [!UICONTROL 计入值] | 在 Integer 和 Double 架构数据类型上可见。 将量度增大指定的数量。 例如，如果列的值为 `50`，则将某个指标增大 50。 |
+| [!UICONTROL 计入实例] | 在 Integer 和 Double 架构数据类型上可见。 无论值是什么，都将量度增大 1。 存在任何值都将增大量度。 例如，如果列的值为 `50`，则将某个指标增大 1。 |
 | [!UICONTROL 要计入的值] | 在 Boolean 架构数据类型上可见。 使您可决定通过计入 `true`、`false` 还是两者而增大指标。 |
 
 {style="table-layout:auto"}
 
-可使用相同的事件数据集列配合不同的行为，在 Analysis Workspace 中生成“订单”和“收入”指标。 将“收入”数据集列拖入数据视图两次，并将其中一个设置为“计入值”，将另一个设置为“计入实例”。 “订单”指标计入实例，而“收入”指标计入值。
+可使用相同的事件数据集列配合不同的行为，在 Analysis Workspace 中生成“订单”和“收入”指标。 将“收入”数据集列拖入数据视图两次，并将其中一个设置为“计入值”，将另一个设置为“计入实例”。 “订单”量度计入实例，而“收入”量度计入值。

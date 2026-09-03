@@ -6,23 +6,14 @@ feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
 role: User
 TQID: https://experienceleague.adobe.com/FX7KMzyOtrWzD-RUT-iEQZvJslmaes8dej76Jbj79OA
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
 workflow-type: tm+mt
-source-wordcount: 517
+source-wordcount: 508
 ht-degree: 98%
 
 ---
@@ -71,5 +62,5 @@ Curation can also be applied from the [!UICONTROL Share] menu by selecting **[!U
 | --- | --- | --- | --- |
 | **从数据视图中&#x200B;*隐藏的*组件** | 所有数据视图组件均可用于报表分析（如需查看隐藏组件，请选择&#x200B;**[!UICONTROL 显示全部]**）。 | 不可用于报告 | 不可用于报告 |
 | **从数据视图添加或删除的组件** | 仅限添加到数据视图的组件（隐藏或不隐藏）。 管理员无法对数据视图中未定义的字段或组件进行报表分析。 | 仅限添加至数据视图的组件，或由用户拥有或共享给用户的组件。 隐藏组件不可用（例如虚拟报告包策划）。 | 仅添加到数据视图中的组件不会被隐藏，并会包含在项目内容策划中。 |
-| **项目中策划的组件** | 所有可用于报表分析的数据视图组件（如需查看隐藏组件，请选择&#x200B;**[!UICONTROL 显示全部]**）。 | 所有非隐藏数据视图组件（需要单击“全部显示”） | 仅限策划的组件，以及由用户拥有或与用户共享的任何组件 |
-| **使用包含隐藏组件的数据视图的策划项目** | 所有可用于报表分析的数据组件（如需查看隐藏和未经过策划的组件，请选择&#x200B;**[!UICONTROL 显示全部]**）。 | 所有非经过策划的项目组件、所有非隐藏的数据视图组件，以及由用户拥有或与用户共享的任何组件 | 仅限策划的组件，以及由用户拥有或与用户共享的任何组件 |
+| **项目中策划的组件** | 所有可用于报表分析的数据视图组件（如需查看隐藏组件，请选择&#x200B;**[!UICONTROL 显示全部]**）。 | 所有非隐藏数据视图组件（需要单击“全部显示”） | 仅限精选的组件，以及用户拥有或与用户共享的任何组件 |
+| **使用包含隐藏组件的数据视图的策划项目** | 所有可用于报表分析的数据组件（如需查看隐藏和未经过策划的组件，请选择&#x200B;**[!UICONTROL 显示全部]**）。 | 所有非精选的项目组件、所有非隐藏的数据视图组件，以及用户拥有或与用户共享的任何组件 | 仅限精选的组件，以及用户拥有或与用户共享的任何组件 |

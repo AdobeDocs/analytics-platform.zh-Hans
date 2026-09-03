@@ -3,20 +3,11 @@ title: 共享量度和维度概述
 description: 在多个数据视图中使用相同的维度或量度引用。
 exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
 TQID: https://experienceleague.adobe.com/5sjpTMocv3547Xqg4VD6C5Gp-cRzNmyHTI5iE6P-JGA
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1292
@@ -61,40 +52,40 @@ ht-degree: 3%
 ![可用维度和量度预览](assets/shared-metrics-dimensions.png)
 
 * **筛选器**：选择![筛选器图标](../../assets/icons/Filter.svg)图标以显示或隐藏可用的筛选器。 可用过滤器如下：
-   * **[!UICONTROL 组件类型]**：仅查看维度或仅查看量度。
-   * **[!UICONTROL 数据集]**：仅查看数据集包含在某个组件共享到的数据视图中的组件。
-   * **[!UICONTROL 数据视图]**：仅查看共享到该数据视图的组件。
-   * **[!UICONTROL 创建者]**：仅查看给定用户创建的组件。
-   * **[!UICONTROL 重复]**：仅查看与另一个组件具有相同组件ID的组件。 这些筛选器与通过概述卡片查看组件相同。
+  * **[!UICONTROL 组件类型]**：仅查看维度或仅查看量度。
+  * **[!UICONTROL 数据集]**：仅查看数据集包含在某个组件共享到的数据视图中的组件。
+  * **[!UICONTROL 数据视图]**：仅查看共享到该数据视图的组件。
+  * **[!UICONTROL 创建者]**：仅查看给定用户创建的组件。
+  * **[!UICONTROL 重复]**：仅查看与另一个组件具有相同组件ID的组件。 这些筛选器与通过概述卡片查看组件相同。
 * **搜索**：使用![搜索图标](../../assets/icons/Search.svg)图标按名称搜索组件。
 * **[!UICONTROL 连接]**：更改[连接](/help/connections/overview.md)的下拉菜单。 共享维度和量度始终特定于单个连接。
 * **[!UICONTROL 自定义表]**：选择![自定义表图标](/help/assets/icons/ColumnSetting.svg)图标以显示或隐藏表中的列。 可用选项包括：
-   * **[!UICONTROL 字段名]**：共享维度或量度的名称。 此字段始终可见。
-   * **[!UICONTROL 类型]**：指示组件是维度还是量度。 此字段始终可见。
-   * **[!UICONTROL 数据集类型]**：数据集的类型。 大多数数据集是事件数据集。
-   * **[!UICONTROL 共享到数据视图]**：此组件共享到的所有数据视图。 此字段始终可见。 选择链接可打开一个模式窗口，其中列出了此组件可用的所有数据视图。
-   * **[!UICONTROL 数据集]**：此组件共享到的每个数据视图中包含的所有数据集。 选择链接可打开一个模式窗口，其中列出了组件的所有数据集。
-   * **[!UICONTROL 创建者]**：创建组件或将组件导入共享量度和维度界面的人员的姓名。
-   * **[!UICONTROL 架构类型]**：存储数据的格式。 示例包括`string`、`double`或`boolean`。
-   * **[!UICONTROL 组件ID]**：维度或量度的组件ID。 必须查看此界面中共享相同组件ID的任何组件并为其去重。
-   * **[!UICONTROL 架构]**：维度或量度的架构路径。 例如，`web.webPageDetails.URL`。
-   * **[!UICONTROL 描述]**：组件的[描述](/help/data-views/component-settings/overview.md)。
-   * **[!UICONTROL 上下文标签]**：组件的[上下文标签](/help/data-views/component-settings/overview.md)。
-   * **[!UICONTROL 包含/排除值]**：列出[包含/排除值](/help/data-views/component-settings/include-exclude-values.md)下指定的规则数。
-   * **[!UICONTROL 数据使用标签]**：架构字段的[数据使用标签](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview)。
-   * **[!UICONTROL 已弃用]**：指示是否设置了已弃用的标志。
-   * **[!UICONTROL 格式]**：值显示的格式。 布尔值通常显示为`True | False`，量度通常显示为`Decimal`等。
-   * **[!UICONTROL 指标去重]**：组件的[指标去重](/help/data-views/component-settings/metric-deduplication.md)设置。
-   * **[!UICONTROL 行为]**：组件的[行为](/help/data-views/component-settings/behavior.md)设置。
-   * **[!UICONTROL 归因]**：组件的[归因](/help/data-views/component-settings/attribution.md)设置。
-   * **[!UICONTROL 无值选项]**：组件的[无值选项](/help/data-views/component-settings/no-value-options.md)。
-   * **[!UICONTROL 值分段]**：组件的[值分段](/help/data-views/component-settings/value-bucketing.md)设置。
-   * **[!UICONTROL 持久性]**：组件的[持久性](/help/data-views/component-settings/persistence.md)设置。
-   * **[!UICONTROL 小写]**：指示组件是否已根据组件的[行为](/help/data-views/component-settings/behavior.md)设置启用小写。
-   * **[!UICONTROL 子字符串]**：组件的[子字符串](/help/data-views/component-settings/substring.md)设置。
-   * **[!UICONTROL 摘要数据组]**：组件的[摘要数据组](/help/data-views/component-settings/summary-data-group.md)设置。
-   * **[!UICONTROL 创建日期]**：创建或导入组件的日期。
-   * **[!UICONTROL 上次修改时间]**：如果组件在创建后已修改，则为上次修改该组件的日期。
+  * **[!UICONTROL 字段名]**：共享维度或量度的名称。 此字段始终可见。
+  * **[!UICONTROL 类型]**：指示组件是维度还是量度。 此字段始终可见。
+  * **[!UICONTROL 数据集类型]**：数据集的类型。 大多数数据集是事件数据集。
+  * **[!UICONTROL 共享到数据视图]**：此组件共享到的所有数据视图。 此字段始终可见。 选择链接可打开一个模式窗口，其中列出了此组件可用的所有数据视图。
+  * **[!UICONTROL 数据集]**：此组件共享到的每个数据视图中包含的所有数据集。 选择链接可打开一个模式窗口，其中列出了组件的所有数据集。
+  * **[!UICONTROL 创建者]**：创建组件或将组件导入共享量度和维度界面的人员的姓名。
+  * **[!UICONTROL 架构类型]**：存储数据的格式。 示例包括`string`、`double`或`boolean`。
+  * **[!UICONTROL 组件ID]**：维度或量度的组件ID。 必须查看此界面中共享相同组件ID的任何组件并为其去重。
+  * **[!UICONTROL 架构]**：维度或量度的架构路径。 例如，`web.webPageDetails.URL`。
+  * **[!UICONTROL 描述]**：组件的[描述](/help/data-views/component-settings/overview.md)。
+  * **[!UICONTROL 上下文标签]**：组件的[上下文标签](/help/data-views/component-settings/overview.md)。
+  * **[!UICONTROL 包含/排除值]**：列出[包含/排除值](/help/data-views/component-settings/include-exclude-values.md)下指定的规则数。
+  * **[!UICONTROL 数据使用标签]**：架构字段的[数据使用标签](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/overview)。
+  * **[!UICONTROL 已弃用]**：指示是否设置了已弃用的标志。
+  * **[!UICONTROL 格式]**：值显示的格式。 布尔值通常显示为`True | False`，量度通常显示为`Decimal`等。
+  * **[!UICONTROL 指标去重]**：组件的[指标去重](/help/data-views/component-settings/metric-deduplication.md)设置。
+  * **[!UICONTROL 行为]**：组件的[行为](/help/data-views/component-settings/behavior.md)设置。
+  * **[!UICONTROL 归因]**：组件的[归因](/help/data-views/component-settings/attribution.md)设置。
+  * **[!UICONTROL 无值选项]**：组件的[无值选项](/help/data-views/component-settings/no-value-options.md)。
+  * **[!UICONTROL 值分段]**：组件的[值分段](/help/data-views/component-settings/value-bucketing.md)设置。
+  * **[!UICONTROL 持久性]**：组件的[持久性](/help/data-views/component-settings/persistence.md)设置。
+  * **[!UICONTROL 小写]**：指示组件是否已根据组件的[行为](/help/data-views/component-settings/behavior.md)设置启用小写。
+  * **[!UICONTROL 子字符串]**：组件的[子字符串](/help/data-views/component-settings/substring.md)设置。
+  * **[!UICONTROL 摘要数据组]**：组件的[摘要数据组](/help/data-views/component-settings/summary-data-group.md)设置。
+  * **[!UICONTROL 创建日期]**：创建或导入组件的日期。
+  * **[!UICONTROL 上次修改时间]**：如果组件在创建后已修改，则为上次修改该组件的日期。
 * **[!UICONTROL 作业历史记录]**：如果导入或共享大量组件，则会自动创建作业。 选择![历史记录图标](/help/assets/icons/History.svg)图标以打开一个模式窗口，其中显示从单个数据视图导入维度和量度的所有实例。 如果您的导入或共享操作都不够大，无法触发作业，则不会出现此按钮。
 
 ## 编辑组件或将组件共享到数据视图

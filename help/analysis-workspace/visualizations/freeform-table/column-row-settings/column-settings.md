@@ -6,18 +6,11 @@ exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
 autotag-review: '2026-05-19T08:43:31.310Z'
 TQID: 'https://experienceleague.adobe.com/WrOP1B4Dclj004zTWZMACNAVusD47Ugi0IrlXVUrZ88'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2:
-  - id: ddf59f64-0e46-4986-a525-056acc143c70
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: ddf59f64-0e46-4986-a525-056acc143c70
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5520579-b31f-4df7-9281-f0d9f91e2edcid: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 951
@@ -32,7 +25,7 @@ ht-degree: 74%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自由格式表中的行和列设置](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [自由格式表中的行和列设置](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"}以获取演示视频。
 
 {{videoaa}}
 
@@ -44,19 +37,19 @@ ht-degree: 74%
 ![列设置](assets/column-settings.png)
 
 
-您可以一次编辑多个列设置。 选择多个列，然后在选定的任意一列中选择![设置](/help/assets/icons/Setting.svg)。 您所做的任何更改将应用于有单元格被选中的所有列。
+您可以一次编辑多个列的设置。 选择多个列，然后在选定的任意一列中选择![设置](/help/assets/icons/Setting.svg)。 您所做的任何更改将应用于有单元格被选中的所有列。
 
 | 选项 | 描述 |
 | --- | --- |
 | **[!UICONTROL 显示总计]** | 显示客户端列的总和。 此总计&#x200B;**不会**&#x200B;去除会话或人员等重复量度。 |
 | **[!UICONTROL 显示全部总计]** | 显示服务器端列的总和。 全部总计会去除会话或人员等重复量度。 |
-| **[!UICONTROL 显示迷您图]** | 在列标题处显示线形图。 |
+| **[!UICONTROL 显示迷您图]** | 在列标题处显示折线图。 |
 | **[!UICONTROL 数值]** | 确定单元格是否显示/隐藏量度的数值。 例如，如果量度是页面查看次数，则数值是行项目的页面查看次数。 |
-| **[!UICONTROL Percent]** | 确定单元格是否显示/隐藏量度的百分比值。 例如，如果量度是“页面查看次数”，则百分比值等于行项目的页面查看次数，除以该列的总页面查看次数。  注释：为了确保准确性，百分比可以大于 100%。 上限可以调整为 1,000%，以防止列宽变得太大。 |
-| **[!UICONTROL 显示异常情况]** | 确定此列中的值是否要运行异常检测。 |
+| **[!UICONTROL Percent]** | 确定单元格是否显示/隐藏量度的百分比值。 例如，如果量度是“页面查看次数”，则百分比值等于行项目的页面查看次数，除以该列的总页面查看次数。  注意：为了确保准确性，百分比可以大于 100%。 上限可以调整为 1,000%，以防止列宽变得太大。 |
+| **[!UICONTROL 显示异常情况]** | 确定是否对此列中的值运行异常检测。 |
 | **[!UICONTROL 显示预测]** | 确定预测值是否显示在此列中。 |
 | **[!UICONTROL 标题文本换行]** | 让自由格式表中的标题文本换行，以使标题更加易读，表格更易共享。 换行对 PDF 渲染和名称较长的量度非常有用。 默认处于启用状态。 |
-| **[!UICONTROL 将零解释为没有值]** | 对于具有 0 值的单元格，确定将其显示为 0 还是空白单元格。 当您查看一个月中每一天的数据，而有些天将在未来发生时，这种解释就很有用。  可以为未来日期显示空白单元格，而不是 0。 各种图表也遵循这种设置（即，线形图或条形图将不显示值为 0 的部分）。 |
+| **[!UICONTROL 将零解释为没有值]** | 对于具有 0 值的单元格，确定将其显示为 0 还是空白单元格。 当您查看一个月中每一天的数据，而有些日期尚未来到时，这种解释就很有用。  可以为未来日期显示空白单元格，而不是 0。 各种图表也遵循这种设置（即，线形图或条形图将不显示值为 0 的部分）。 |
 | **[!UICONTROL 背景]** | 确定单元格是否显示/隐藏所有单元格格式，包括条形图和条件格式。 |
 | **[!UICONTROL 条形图]** | 显示一个水平条形图，表示单元格相对于列总数的值。 |
 | **[!UICONTROL 条件格式]** | 使用条件格式。 请参阅以下[部分](#conditional-formatting)。 |
@@ -92,7 +85,7 @@ ht-degree: 74%
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
 >title="使用非默认归因模型"
->abstract="非默认归因模型不可用于此量度。"
+>abstract="非默认归因模式不可用于此量度。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -129,7 +122,7 @@ ht-degree: 74%
 
 {{attribution-container}}
 
-### 回顾窗口
+### 回顾时间范围
 
 {{attribution-lookback-window}}
 

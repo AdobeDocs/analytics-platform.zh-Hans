@@ -7,21 +7,11 @@ feature: Use Cases, Cross-Channel Analysis
 role: User
 autotag-review: '2026-05-19T09:37:23.903Z'
 TQID: 'https://experienceleague.adobe.com/zguhaVwn2XtF0vSGqYAgjiL2IwUq-DMH-WUd0uQRnPc'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
-  - id: b7fb3355-1f54-4380-bce3-d444b226c0e9
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: d76b9e53-27fb-4597-933f-419cc0dd46dbid: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: bf2b169f-d8b2-488a-97b9-f3bc9532e35cid: b7fb3355-1f54-4380-bce3-d444b226c0e9
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d00e9f03-e50b-4162-b143-0c0817c937c2id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 638
@@ -47,18 +37,18 @@ ht-degree: 100%
 ![本节所述的实施步骤流程。](../assets/cca-architecture.png)
 
 1. 为要引入的数据[创建架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans)。
-1. 为要引入的数据[创建数据集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hans)。
-1. [将数据引入 Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=zh-Hans)：
+1. 为要引入的数据[创建数据集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html)。
+1. [将数据引入 Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html)：
    1. 通过 Edge Network 或 Analytics 源连接器从网站或移动应用程序获取的基于事件的数据 ![event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg)。
    2. 轮廓数据 ![轮廓](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg)（例如来自 CRM 系统、呼叫中心应用程序、忠诚度应用程序）。
    3. 查找数据 ![查找](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)（例如来自产品信息系统的产品名称、类别）。
 
 1. 跨数据集使用通用的命名空间 ID。 使用[拼接](../../stitching/overview.md)功能来提升任何基于事件的数据集![数据刷新](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataRefresh_18_N.svg)，以便为每一行提供通用 ID。 注意，Customer Journey Analytics 当前不使用 Experience Platform 轮廓或身份标识服务进行拼接。
 1. 执行任何自定义数据准备，以确保将一个在时序数据集间公用的键引入 Customer Journey Analytics。
-1. 为查找数据给予一个主 ID，后者可连接到事件数据中的某个字段。 在许可中计为行。
-1. 为轮廓数据设置同一主 ID 作为事件数据的主 ID。
+1. 为查找数据指定一个主 ID，使其可与事件数据中的某个字段联接。 在许可中计为行。
+1. 为轮廓数据设置与事件数据主 ID 相同的主 ID。
 1. 通过[创建连接](../../connections/overview.md)将相关数据集从 Experience Platform 导入到 Customer Journey Analytics。
-1. 在连接上[创建数据视图](/help/data-views/create-dataview.md)以选择要包括在该视图中的特定维度和指标。 还在该数据视图中配置归因和分配设置。 在报告时计算这些设置。
+1. 在连接上[创建数据视图](/help/data-views/create-dataview.md)以选择要包括在该视图中的特定维度和指标。 归因和分配设置也在该数据视图中配置。 在报告时计算这些设置。
 1. 在 Analysis Workspace 中[创建一个项目](/help/analysis-workspace/home.md)以配置功能板和报告。
 
 ## 注意事项
@@ -68,6 +58,6 @@ ht-degree: 100%
 * 跨通道分析数据要求每条记录上的 ID 命名空间都相同。
 * 将不同的数据集统一在一起的合并过程需要一个在数据集间公用的人员/实体主键。
 * 当前不支持基于辅助键的合并。
-* 拼接过程允许根据来自共享相同持久 ID 的记录中的临时 ID（如身份验证 ID）信息，对行中的身份进行重新输入。这使得可以将不同的记录解析为单个拼接 ID，以便在个人层面进行分析，而不是在设备或 Cookie 层面。
+* 拼接过程允许根据来自共享相同持久 ID 的记录中的临时 ID（如身份验证 ID）信息，对行中的身份重新设定键值。这使得可以将不同的记录解析为单个拼接 ID，以便在个人层面进行分析，而不是在设备或 Cookie 层面。
 * 同一 XDM 字段的对象和属性合并为 Customer Journey Analytics 中的一个维度。 要将多个来自不同数据集的属性合并为同一个 Customer Journey Analytics 维度，这些数据集应引用相同的 XDM 字段或架构。
 

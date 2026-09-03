@@ -6,18 +6,11 @@ feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
 TQID: https://experienceleague.adobe.com/g8h5ym4QWd-8r8Sm7Ow6LFwtKCGf-V2wmyLUoYVwUPY
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: a67cb189-a535-41f6-afa2-448f39c4759f
-  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: a67cb189-a535-41f6-afa2-448f39c4759fid: a8b1c240-f315-46e3-b813-f545c4279dd1
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 422
@@ -40,9 +33,9 @@ Workspace 中有两种类型的文件夹：公司文件夹和个人文件夹。 
 
 “公司文件夹”是管理员可以与所有用户共享项目的共享访问权限文件夹。
 
-管理员可快速地与所有用户共享项目并且能够将项目归入用户组的子文件夹中。 例如，您有一组项目，您希望营销人员使用这组项目来开始他们的研究。 然后，您可以在公司文件夹中创建一个营销文件夹，然后将选定的项目放在营销文件夹中。 通过该文件夹可以快速地直接访问共享的项目，并且营销团队更容易知道从何处查找常用项目。
+管理员可快速地与所有用户共享项目并且能够将项目归入用户组的子文件夹中。 例如，您有一组项目，您希望营销人员使用这组项目来开始他们的研究。 然后，您可以在公司文件夹中创建一个营销文件夹，然后将选定的项目放在营销文件夹中。 该文件夹可直接访问共享项目，并让营销团队更容易知道到哪里查找常用项目。
 
-当您登录到 Workspace 时，公司文件夹即会自动添加到您的项目和文件夹列表。 对于公司文件夹中包含的项目没有特定的权限。
+当您登录到 Workspace 时，公司文件夹即会自动添加到您的项目和文件夹列表。 公司文件夹中包含的项目没有特定的权限设置。
 
 ### 管理员选项
 

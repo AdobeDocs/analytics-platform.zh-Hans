@@ -5,18 +5,11 @@ exl-id: 10c485c9-66ab-4925-a357-a66a374d4c6f
 feature: Use Cases
 role: Admin
 TQID: https://experienceleague.adobe.com/C9rt1pyuM6ykLUlXCHc0ITwGeGcuLw6qisXnJxwX4uU
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 046df00868ca4a5b3bab3eb36cca7d91b141333a
 workflow-type: tm+mt
 source-wordcount: 342
@@ -38,7 +31,7 @@ ht-degree: 70%
 
 ## 将来自 Google Analytics 的历史数据引入 Adobe Experience Platform
 
-提取历史（回填）数据涉及从 Google 导出数据并将该数据导入 Adobe Experience Platform。 查看[将 Google Analytics 数据摄取到 Adobe Experience Platform](backfill.md)。
+摄取历史（回填）数据涉及从 Google 导出数据并将该数据导入 Adobe Experience Platform。 查看[将 Google Analytics 数据摄取到 Adobe Experience Platform](backfill.md)。
 
 成功将历史数据引入平台后，您可以[配置流式当前数据](streaming.md)，或通过[创建连接](/help/connections/create-connection.md)立即开始在Customer Journey Analytics中报告回填数据。
 

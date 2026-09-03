@@ -5,19 +5,11 @@ feature: Workspace Basics
 exl-id: 792c3b2e-bd24-4e98-b9ea-983c1189d52e
 role: User
 TQID: https://experienceleague.adobe.com/sRztp43YkOt8oCDqPJH17s5jc9ukMa1NJsl9ZpOY-MQ
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2:
-  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: a8b1c240-f315-46e3-b813-f545c4279dd1id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 588
@@ -36,7 +28,7 @@ ht-degree: 100%
 | 错误消息 | 为什么会出现这个错误？ | 优化 |
 | --- | --- | --- |
 | [!UICONTROL 数据视图正在经历异常繁重的报告。 请稍后重试。] | 您的组织针对特定数据查看尝试运行的并发请求过多。 导致此错误的因素包括：API 请求、计划项目、计划报告、计划警报，以及提出报告请求的并发用户数量。 | 将数据查看的请求和计划较为均匀地分布在一天当中。<p>管理员可以使用 [报告活动管理器来识别和取消](/help/reporting-activity-manager/reporting-activity-overview.md) 正在消耗报告容量的请求。</p> |
-| [!UICONTROL 这份报告太复杂了。 请查看构建 Analysis Workspace 报告的最佳实践。] | 您的报告请求过大，无法执行。 造成此错误的原因是由于请求的复杂性而导致的超时。 | 简化您的请求。 例如，缩短日期范围，或简化分段条件，或移除表格中的某些列或行。 您也可以考虑将表拆分为单独的请求。 |
+| [!UICONTROL 这份报告太复杂了。 请查看构建 Analysis Workspace 报告的最佳实践。] | 您的报告请求过大，无法执行。 造成此错误的原因是由于请求的复杂性而导致的超时。 | 简化您的请求。 例如，缩短日期范围，或简化区段条件，或移除表格中的某些列或行。 您也可以考虑将表拆分为单独的请求。 |
 | [!UICONTROL 数据视图目前已超出其报告容量。 请简化请求或稍后重试。] | 您的组织针对特定数据查看尝试运行的并发请求过多。 导致此错误的因素包括：API 请求、计划项目，以及提出报告请求的并发用户数量。 | 将数据查看的请求和计划较为均匀地分布在一天当中。 |
 | [!UICONTROL 发生系统错误。 请在&#x200B;**[!UICONTROL 帮助 > 提交支持票证]**&#x200B;下记录一条客户关怀团队请求，并将您的错误代码包含在内。] | Adobe 遇到了一个需要解决的问题。 | 将错误代码提交给客户关怀团队。 |
 | [!UICONTROL 错误 500：无法加载页面] | 本地网络的问题（如公司[防火墙设置](/help/technotes/ip-addresses.md)），是引发该错误的一个因素。 此外，Adobe 可能遇到了需要解决的问题。 | 请在几分钟后再次尝试登录。 如果问题仍然存在，请向客户关怀团队提交 EIM 实例 ID 代码。 |
@@ -50,4 +42,4 @@ ht-degree: 100%
 | 问题 | 如何排除故障 |
 |---|---|
 | 当我拖动一个量度时，它会显示&#x200B;*无效数据*。 | 无效数据意味着 Adobe 无法通过报告中使用的维度和量度组合返回数据。 例如，两个彼此堆叠的量度不能作为数据返回，因为无法以这种堆叠方式显示这两个量度。 相反，应将两个量度并排放置。 |
-| 当我将量度拖动到上面时，看不到任何实际数据 - 只有零。 | 如果您成功创建了 Workspace 报告，但报告中没有数据，则可以检查以下几项内容：<ul><li>如果在报告中应用了区段，区段标准可能与所有数据不匹配。 请尝试移除区段或调整区段定义。</li><li>检查右上角的日期范围，并确保它已设置为预期的值。</li><li>导航到您的网站，然后使用 [Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=zh-Hans) 验证正在收集的数据。</li></ul> |
+| 当我将量度拖动到上面时，看不到任何实际数据 - 只有零。 | 如果您成功创建了 Workspace 报告，但报告中没有数据，则可以检查以下几项内容：<ul><li>如果在报告中应用了区段，区段标准可能与所有数据不匹配。 请尝试移除区段或调整区段定义。</li><li>检查右上角的日期范围，并确保它已设置为预期的值。</li><li>导航到您的网站，然后使用 [Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html) 验证正在收集的数据。</li></ul> |

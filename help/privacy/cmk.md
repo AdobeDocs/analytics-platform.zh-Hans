@@ -6,20 +6,11 @@ feature: Privacy
 role: Admin
 autotag-review: '2026-05-19T09:16:21.318Z'
 TQID: 'https://experienceleague.adobe.com/jx1pw9U5sw42999O132esMBoUcQ8hWuUKzzN3WLAcyY'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2:
-  - id: c5ed78d1-99be-42e1-b164-a20a3685241e
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2: id: c5ed78d1-99be-42e1-b164-a20a3685241e
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 561
@@ -39,7 +30,7 @@ Adobe Customer Journey Analytics 为 [Healthcare Shield](https://www.adobe.com/c
 1. 确保您在 Azure 中是具有特权角色的管理员，例如应用程序管理员、云应用程序管理员或全局管理员。 有关更多信息，请参阅 [Microsoft Entra 内置角色](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference)。
 1. 创建一个新的仅用于 Customer Journey Analytics 的 Azure 密钥库。 有关更多信息，请参阅 [Microsoft Azure 密钥库文档](https://learn.microsoft.com/zh-cn/azure/key-vault/general/)。
 1. 授予 Adobe Azure 应用程序访问您在密钥库中的密钥的权限。 您可以使用以下任一方法完成此操作：
-   * 通过以下URL的授权同意授予权限： [https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&client_id=251e3919-1940-4296-bb8b-6b9a5e8a4805&redirect_uri=https://experience.adobe.com&scope=user.read](https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&client_id=251e3919-1940-4296-bb8b-6b9a5e8a4805&redirect_uri=https://experience.adobe.com&scope=user.read)
+   * 通过以下URL的授权同意授予权限： [https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&amp;client_id=251e3919-1940-4296-bb8b-6b9a5e8a4805&amp;redirect_uri=https://experience.adobe.com&amp;scope=user.read](https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&client_id=251e3919-1940-4296-bb8b-6b9a5e8a4805&redirect_uri=https://experience.adobe.com&scope=user.read)
 
    * 按照[为现有帐户配置客户管理的密钥](https://learn.microsoft.com/zh-cn/azure/storage/common/customer-managed-keys-configure-cross-tenant-existing-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=powershell-preview%2Cazure-portal#the-customer-grants-the-service-providers-app-access-to-the-key-in-the-key-vault)中的说明操作。 Adobe 应用程序 ID 为：
 
@@ -49,7 +40,7 @@ Adobe Customer Journey Analytics 为 [Healthcare Shield](https://www.adobe.com/c
 
    ![显示 https://cmkoberontest.vault.azure.net](assets/key-identifier.png) 的 URI 的密钥身份标识符字段
 
-1. Adobe 客户关怀部门确认您已完成对 Customer Journey Analytics 数据应用 CMK。
+1. Adobe 客户关怀部门确认已将 CMK 应用于您的 Customer Journey Analytics 数据。
 
 无论是否应用了客户管理的密钥，Platform 使用的所有数据在传输和静止时都经过加密，以确保您的数据安全。 有关 Adobe Experience Platform 加密的信息，请参阅 [Adobe Experience Platform 中的数据加密](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/governance-privacy-security/encryption)。
 

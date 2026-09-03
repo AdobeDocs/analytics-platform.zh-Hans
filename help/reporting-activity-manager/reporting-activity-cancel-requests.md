@@ -6,17 +6,11 @@ feature: Basics
 exl-id: 87da2447-f114-432a-9f63-e660c2541d0f
 role: Admin
 TQID: https://experienceleague.adobe.com/Rzq3IeZudRcTRC60v2RsijL-g-rno7xPS6Lc5jZlMbs
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1497
@@ -42,7 +36,7 @@ ht-degree: 100%
 
 ## 取消特定请求
 
-您可以取消使用大量报告容量的单个请求。 取消请求时，您可以选择在给定的时间段内进一步限制它。
+您可以取消占用大量报告处理能力的单个请求。 取消请求时，您可以选择在给定的时间段内进一步限制它。
 
 1. 在 Customer Journey Analytics 中，转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 报告活动管理器]**。
 
@@ -70,9 +64,9 @@ ht-degree: 100%
 
       | 选项 | 功能 |
       |---------|----------|
-      | [!UICONTROL **用户和项目**] | 与所选请求相关联的用户将会被暂时限制运行关联项目的报告请求。 |
+      | [!UICONTROL **用户和项目**] | 与所选请求相关联的用户将被暂时限制为相关项目执行报告请求。 |
       | [!UICONTROL **用户**] | 与所选请求相关的用户将会被暂时限制提交任何报告请求。 |
-      | [!UICONTROL **项目**] | 与所选请求相关的项目将会被暂时限制提交所有报告请求。 |
+      | [!UICONTROL **项目**] | 与所选请求相关的项目将被暂时限制所有报告请求。 |
       | [!UICONTROL **限制进行**] | 选择限制请求的时间长度。 您可以选择 1 分钟（默认）、5 分钟、10 分钟、15 分钟或 30 分钟。<!-- double-check this --><p>设置限制后，您无法提前将其移除。</p> |
 
       {style="table-layout:auto"}
@@ -113,7 +107,7 @@ ht-degree: 100%
       |---------|----------|
       | [!UICONTROL **用户和项目**] | 所选用户将会被暂时限制提交关联项目的任何报告请求。 <p>这是限制最少的选项。</p> |
       | [!UICONTROL **用户**] | 所选用户将会被暂时限制提交任何报告请求。 |
-      | [!UICONTROL **项目**] | 与所选用户相关的项目将限制任何用户提交的任何报告请求。 |
+      | [!UICONTROL **项目**] | 与所选用户相关的项目将被限制接收任何用户提交的任何报告请求。 |
       | [!UICONTROL **限制进行**] | 选择限制请求的时间长度。 您可以选择 1 分钟（默认）、5 分钟、10 分钟、15 分钟或 30 分钟。<!--double-check this--> <p>设置限制后，您无法提前将其移除。</p> |
 
       {style="table-layout:auto"}
@@ -152,9 +146,9 @@ ht-degree: 100%
 
       | 选项 | 功能 |
       |---------|----------|
-      | [!UICONTROL **用户和项目**] | 所选项目将会被暂时限制关联用户提交的任何报告请求。<p>这是限制最少的选项。</p> |
+      | [!UICONTROL **用户和项目**] | 所选项目将被暂时限制接收关联用户提交的任何报告请求。<p>这是限制最少的选项。</p> |
       | [!UICONTROL **用户**] | 与所选项目相关的用户将会被限制提交任何报告请求。 |
-      | [!UICONTROL **项目**] | 所选项目将暂时限制任何用户提交的任何报告请求。 |
+      | [!UICONTROL **项目**] | 所选项目将被暂时限制接收任何用户提交的任何报告请求。 |
       | [!UICONTROL **限制进行**] | 选择限制请求的时间长度。 您可以选择 1 分钟（默认）、5 分钟、10 分钟、15 分钟或 30 分钟。<!--double-check this--> <p>设置限制后，您无法提前将其移除。</p> |
 
       {style="table-layout:auto"}

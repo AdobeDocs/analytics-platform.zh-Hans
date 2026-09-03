@@ -7,19 +7,14 @@ exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
 autotag-review: '2026-05-19T09:24:34.962Z'
 TQID: 'https://experienceleague.adobe.com/Y7Q0pAx9s4p2YxrcfVKsvJcppHFmtNCKAgA0oCc0CeA'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: 1022
+source-wordcount: 1024
 ht-degree: 63%
 
 ---
@@ -30,7 +25,7 @@ ht-degree: 63%
 >
 >您必须具有Customer Journey Analytics **Select**&#x200B;程序包或更高版本（适用于[基于字段的拼接](fbs.md)）或Customer Journey Analytics **Prime**&#x200B;程序包或更高版本（适用于[基于图形的拼接](gbs.md)），才能使用此部分所述的功能。 如果您不确定您拥有的是哪个 Customer Journey Analytics 包，请联系您的管理员。
 
-标识拼接（或简称为拼接）是一项强大的功能，可提升事件数据集对跨渠道分析的适用性。 跨渠道分析是 Customer Journey Analytics 的主要使用场景之一。 该功能可让您基于通用标识符（人员 ID），无缝地组合并运行来自不同渠道的多个数据集。
+标识拼接（或简称为拼接）是一项强大的功能，可提升事件数据集对跨渠道分析的适用性。 跨渠道分析是 Customer Journey Analytics 的主要用例之一。 该功能可让您基于通用标识符（人员 ID），无缝地整合不同渠道的多个数据集并对其运行报告。
 
 当您合并具有相似人员 ID 的数据集时，将跨设备和渠道进行归因。 例如，某用户通过桌面电脑上的广告访问您的网站。 用户购买产品，但随后遇到订单问题。 随后，用户致电您的客户服务团队寻求协助以解决问题。 通过跨渠道分析，您可以将呼叫中心事件归因到用户最初点击的广告。
 
@@ -52,8 +47,8 @@ Customer Journey Analytics 支持两种类型的拼接：[基于字段的拼接]
 
 - 将所需数据导入 Adobe Experience Platform：
 
-   - 有关 Adobe Analytics 数据，请查阅[在 Customer Journey Analytics 中使用 Adobe Analytics 报告包数据](/help/getting-started/aa-vs-cja/aa-data-in-cja.md)。
-   - 有关其他类型的数据，请参阅 Adobe Experience Platform 文档中的[创建架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/create-schema-ui)和[摄取数据](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ingestion/home)。
+  - 有关 Adobe Analytics 数据，请查阅[在 Customer Journey Analytics 中使用 Adobe Analytics 报告包数据](/help/getting-started/aa-vs-cja/aa-data-in-cja.md)。
+  - 有关其他类型的数据，请参阅 Adobe Experience Platform 文档中的[创建架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/create-schema-ui)和[摄取数据](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ingestion/home)。
 
 如果您在定义 Customer Journey Analytics 连接时将一个或多个拼接数据集与其他数据集（例如呼叫中心数据）相结合，您将受益于跨渠道分析。 此连接配置假定这些其他数据集已在尽可能多的行上包含来自相同命名空间的人员ID。
 
@@ -64,7 +59,7 @@ Customer Journey Analytics 支持两种类型的拼接：[基于字段的拼接]
 拼接是一项具有突破性的强大功能，但其使用方式存在限制。
 
 - 仅支持事件数据集。 不支持其他数据集，例如查找数据集。
-- 拼接不以任何方式改变用于拼接的字段。 拼接使用数据湖中非拼接数据集中存在的指定字段中的值。
+- 拼接不以任何方式改变用于拼接的字段。 拼接使用数据湖中未拼接数据集里指定字段的现有值。
 - 拼接过程区分大小写。 例如，标识值`Bob`和`BOB`被视为两个不同的人。
 
 确保不要将拼接与以下方法混淆：
@@ -89,7 +84,7 @@ Customer Journey Analytics 支持两种类型的拼接：[基于字段的拼接]
 
 您可以通过以下两种方式启用拼接：
 
-- [请求启用拼接](/help/stitching/use-stitching.md)（已弃用）。 一旦获得批准，系统将为您请求拼接的数据集创建一个重复的数据集。 该重复数据集包含一个附加列，用于存储拼接后的标识符。 要在 Customer Journey Analytics 中使用拼接数据，您需要创建新的连接或编辑现有连接，并将该拼接数据集包含在内。
+- [请求启用拼接](/help/stitching/use-stitching.md)（已弃用）。 一旦获得批准，系统将为您请求拼接的数据集创建一个数据集副本。 该重复数据集包含一个附加列，用于存储拼接后的标识符。 要在 Customer Journey Analytics 中使用拼接数据，您需要创建新的连接或编辑现有连接，并将该拼接数据集包含在内。
 - [在连接接口](/help/stitching/use-stitching-ui.md)中启用拼接。 在“连接”界面中配置数据集的拼合时，在Customer Journey Analytics中从该数据集摄取数据期间会动态进行拼合。
 
 

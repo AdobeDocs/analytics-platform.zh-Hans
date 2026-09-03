@@ -5,20 +5,10 @@ feature: Workspace Basics, Filters, Segments
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
 TQID: https://experienceleague.adobe.com/DvRdeldUVvvaUfzWVV-vTflR1iZvMUH68pZQTL1d8D8
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: a8b1c240-f315-46e3-b813-f545c4279dd1id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1200
@@ -34,7 +24,7 @@ ht-degree: 82%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的快速区段](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/components/filters/create-a-quick-filter){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的快速区段](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/components/filters/create-a-quick-filter){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -84,12 +74,12 @@ ht-degree: 82%
 
 ### 标题区域
 
-标题区域决定了快速区段的名称、类型和范围。 它还显示了快速区段结果的视觉效果。
+标头区域决定了快速区段的名称、类型和范围。 它还显示了快速区段结果的视觉效果。
 
 | 元素 | 描述 |
 |---|---|
 | **[!UICONTROL 名称]** | 该名称是从快速区段的定义自动得出的。 |
-| **[!UICONTROL 人员]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![警报](/help/assets/icons/Alert.svg) | 预览快速分段后得到的数据可视化效果。 通过条形图和百分比可以洞察总体数据中有多少是快速区段结果的一部分。 ![警报](/help/assets/icons/AlertRed.svg)表示快速区段未返回数据。 |
+| **[!UICONTROL 人员]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![警报](/help/assets/icons/Alert.svg) | 预览快速区段生成的数据可视化效果。 条形图和百分比可帮助您了解总体数据中有多少属于快速区段结果。 ![警报](/help/assets/icons/AlertRed.svg)表示快速区段未返回数据。 |
 | **[!UICONTROL 包括]**<br/>**[!UICONTROL 排除]** | 从下拉列表![ChevronDown](/help/assets/icons/ChevronDown.svg)中选择是否要从面板中的数据包括或排除快速区段的结果。 |
 | **[!UICONTROL 事件]**<br/>**[!UICONTROL 会话]**<br/>**[!UICONTROL 人员]** | 从下拉菜单![ChevronDown](/help/assets/icons/ChevronDown.svg)中选择快速区段的范围。 |
 
@@ -100,7 +90,7 @@ ht-degree: 82%
 | 元素 | 描述 |
 |---|---|
 | **[!UICONTROL 维度]**<br/>**[!UICONTROL 量度]**<br/>**[!UICONTROL 日期范围]** | 从下拉菜单![ChevronDown](/help/assets/icons/ChevronDown.svg)中选择是否要为维度、量度或日期范围指定条件。 |
-| **[!UICONTROL *组件&#x200B;*]** | 条件的组件字段。 您可以&#x200B;[!UICONTROL *通过输入来添加*]&#x200B;组件，从列表中选择组件，或者从组件面板中拖放组件。 您只能将相似的组件放在条件的组件字段上。 例如，您只能将维度组件从组件面板拖放到维度条件上。 <br/>您还可以通过拖放操作来替换现有组件。<br/>选择 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 从组件字段中删除该组件。 |
+| **[!UICONTROL *组件&#x200B;*]** | 条件的组件字段。 您可以&#x200B;[!UICONTROL *通过输入来添加*]&#x200B;组件，从列表中选择组件，或者从组件面板中拖放组件。 您只能将相似的组件拖放到条件的组件字段中。 例如，您只能将维度组件从组件面板拖放到维度条件上。 <br/>您还可以通过拖放操作来替换现有组件。<br/>选择 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 从组件字段中删除该组件。 |
 | **[!UICONTROL *运算符&#x200B;*]** | 组件的运算符。 有关更多信息，请参阅[运算符](seg-operators.md)。 仅适用于维度和量度。 |
 | **[!UICONTROL *值&#x200B;*]** | 条件的值。 根据所选的运算符，可以从列表中选择值或者输入一个值。 |
 | ![CrossSize75](/help/assets/icons/CrossSize75.svg) | 选择从快速区段中删除一个条件。 |
@@ -113,7 +103,7 @@ ht-degree: 82%
 | ![AddCircle](/help/assets/icons/AddCircle.svg) | 在您的快速区段中添加另一个条件。 只有在您为快速区段定义了一个或两个条件后，此按钮才可用。 |
 | **[!UICONTROL 应用]** | 将更改应用于快速区段。 |
 | **[!UICONTROL 打开生成器]** | 系统将提示您使用&#x200B;**[!UICONTROL 进行确认。是否确定？]** 对话框。 如果您选择&#x200B;**[!UICONTROL 确定]**，您将无法再在[快速区段生成器](#quick-segment-builder)中更改您的区段。您的快速区段已重命名为&#x200B;**[!UICONTROL 区段]**，并且现在有一个深蓝色的细长左侧边栏。<br/>常规[区段生成器](seg-builder.md)打开时会显示以下选项：**[!UICONTROL 使此区段可用于您的所有项目，并将其添加到您的组件列表中]**。 <ul><li>如果选择此选项并选择&#x200B;**[!UICONTROL 应用]**，则该区段将添加到组件面板中的![区段](/help/assets/icons/Segmentation.svg) **[!UICONTROL 区段]**&#x200B;组件列表中。</li><li>如果您不选择此选项，并选择&#x200B;**[!UICONTROL 应用]**，该区段就仍然是仅限于工作区项目的区段。</li></ul> |
-| **[!UICONTROL 取消]** | 选择取消创建或编辑快速区段。 |
+| **[!UICONTROL 取消]** | 选择以取消创建或编辑快速区段。 |
 
 ## 快速区段与区段
 
@@ -121,7 +111,7 @@ ht-degree: 82%
 
 与快速区段相比，普通区段具有以下优势。
 
-* 普通区段可应用于您所有的工作区项目
+* 普通区段可在您所有的工作区项目中使用
 * 使用嵌套和分层[容器](seg-builder.md#containers)和序列（使用[顺序区段](seg-sequential-build.md)）的区段支持更大的复杂性。
 
 
