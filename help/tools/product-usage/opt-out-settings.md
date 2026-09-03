@@ -1,6 +1,6 @@
 ---
-title: 产品使用情况选择退出设置
-description: 管理组织内个体用户的选择退出设置。
+title: 产品使用情况选择禁用设置
+description: 管理组织内个体用户的选择禁用设置。
 exl-id: 0ea24582-bab8-4a76-ac00-7c265423e8bb
 autotag-review: '2026-05-19T09:31:49.294Z'
 TQID: 'https://experienceleague.adobe.com/O67EiLS9ltB20iQ3d4mxlDcrwR06-r9SmbXZJ37slJs'
@@ -23,7 +23,7 @@ ht-degree: 85%
 
 ---
 
-# 产品使用情况选择退出设置 {#product-usage-opt-out-settings}
+# 产品使用情况选择禁用设置 {#product-usage-opt-out-settings}
 
 您可以通过&#x200B;_选择退出设置_&#x200B;页面从产品使用情况跟踪中排除或重新包含组织内的用户。 它仅对产品管理员可见。
 

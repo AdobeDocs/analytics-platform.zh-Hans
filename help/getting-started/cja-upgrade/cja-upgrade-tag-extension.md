@@ -40,7 +40,7 @@ ht-degree: 92%
 
 {{upgrade-note-step}}
 
-您可以使用 Adobe Experience Platform 中的“标记”功能在您的网站上实施代码，以收集数据。 这一款标记管理解决方案，可让您在满足其他标记要求的同时部署代码。 标签使用 Adobe Experience Platform Web SDK 扩展提供与 Adobe Experience Platform 的无缝集成。
+您可以使用 Adobe Experience Platform 中的“标记”功能在您的网站上实施代码，以收集数据。 这一标记管理解决方案可让您在满足其他标记要求的同时部署代码。 标签使用 Adobe Experience Platform Web SDK 扩展提供与 Adobe Experience Platform 的无缝集成。
 
 以下信息描述了如何将 Web SDK 扩展添加到您的标记中。 有关补充信息，请参阅 Experience Platform 文档中的[配置 Web SDK 标记扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。 Web SDK包含Experience Platform Identity服务，因此您无需将[!UICONTROL Experience Cloud ID服务]扩展添加到标记中。
 

@@ -28,10 +28,10 @@ ht-degree: 88%
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_grandtotal"
 >title="总计"
->abstract="带有统计行的表或细分不支持全部总计。"
+>abstract="带有静态行的表或细分不支持全部总计。"
 
 
-在自由格式表中，每个划分级别都显示一个总计行，可以显示两个总计行：
+在自由格式表中，每个细分级别都会显示一个总计行，并且可以显示两个总计：
 
 ![自由格式表，其中突出显示全部总计和表格总计。](assets/total-row.png)
 

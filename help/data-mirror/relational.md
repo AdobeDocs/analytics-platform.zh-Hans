@@ -22,7 +22,7 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
 workflow-type: tm+mt
-source-wordcount: 2355
+source-wordcount: 2375
 ht-degree: 15%
 
 ---
@@ -227,15 +227,15 @@ ht-degree: 15%
 
 * **[!UICONTROL 现有帐户]**（您已设置Google BigQuery的帐户）。 继续执行[选择数据](#select-data)步骤。
 * 需要连接到Google BigQuery时&#x200B;**[!UICONTROL 新帐户]**。
-   1. 指定&#x200B;**[!UICONTROL 帐户名]**&#x200B;和（可选）**[!UICONTROL 描述]**。
-   1. 选择您的&#x200B;**[!UICONTROL 身份验证类型]**： **[!UICONTROL 基本身份验证]**&#x200B;或&#x200B;**[!UICONTROL 服务身份验证]**。 根据您的选择，提供所需的输入。
-   1. 选择&#x200B;**[!UICONTROL 连接到源]**
+  1. 指定&#x200B;**[!UICONTROL 帐户名]**&#x200B;和（可选）**[!UICONTROL 描述]**。
+  1. 选择您的&#x200B;**[!UICONTROL 身份验证类型]**： **[!UICONTROL 基本身份验证]**&#x200B;或&#x200B;**[!UICONTROL 服务身份验证]**。 根据您的选择，提供所需的输入。
+  1. 选择&#x200B;**[!UICONTROL 连接到源]**
 
-      ![Google BigQuery — 身份验证](assets/googlebg-authentication.png)
+     ![Google BigQuery — 身份验证](assets/googlebg-authentication.png)
 
-      已验证您的连接。 ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) **[!UICONTROL Connected]**&#x200B;表示连接成功。
+     已验证您的连接。 ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) **[!UICONTROL Connected]**&#x200B;表示连接成功。
 
-   1. 选择&#x200B;**[!UICONTROL 下一步]**。
+  1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
   有关在使用[Azure Databricks](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/databricks)或[Snowflake](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/snowflake)连接器时如何连接和身份验证的详细信息，请参阅Experience Platform文档。
 

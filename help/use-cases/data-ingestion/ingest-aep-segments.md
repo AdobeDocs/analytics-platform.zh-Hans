@@ -22,7 +22,7 @@ topic_v2:
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1680
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
@@ -497,7 +497,7 @@ You can now report on `audienceMembershipId`, `audienceMembershipIdName` and `pe
 
 * 您应该定期执行此过程，以便在Customer Journey Analytics中不断刷新受众数据。
 * 您可以在单个Customer Journey Analytics连接中导入多个受众。 这增加了流程的复杂性，但这是可能的。 为此，您需要对上述过程进行一些修改：
-   1. 在 RTCP 中，为受众集合中的每个所需受众执行此过程。
-   1. Customer Journey Analytics支持配置文件数据集中的阵列/对象阵列。 最佳选项是为`audienceMembershipId`或`audienceMembershipIdName`使用[对象数组](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=zh-Hans)。
-   1. 在数据视图中，在 `audienceMembershipId` 字段上使用子字符串转换创建新维度，以将逗号分隔的值字符串转换为数组。 注意：数组中当前限制为 10 个值。
-   1. 您现在可以在Customer Journey Analytics Workspace中报告此新维度`audienceMembershipIds`。
+  1. 在 RTCP 中，为受众集合中的每个所需受众执行此过程。
+  1. Customer Journey Analytics支持配置文件数据集中的阵列/对象阵列。 最佳选项是为`audienceMembershipId`或`audienceMembershipIdName`使用[对象数组](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=zh-Hans)。
+  1. 在数据视图中，在 `audienceMembershipId` 字段上使用子字符串转换创建新维度，以将逗号分隔的值字符串转换为数组。 注意：数组当前最多只能包含 10 个值。
+  1. 您现在可以在Customer Journey Analytics Workspace中报告此新维度`audienceMembershipIds`。

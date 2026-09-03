@@ -30,7 +30,7 @@ ht-degree: 85%
 >[!CONTEXTUALHELP]
 >id="workspace_blankpanel_button"
 >title="空白面板"
->abstract="显示您可以创建的面板或可视化选项，以生成完全自定义的分析。"
+>abstract="显示可供您选择的面板或可视化，以构建完全自定义的分析。"
 >additional-url="https://www.youtube.com/watch?v=SYaioiwBTrk" text="Analysis Workspace 中的面板"
 
 <!-- markdownlint-enable MD034 -->
@@ -58,7 +58,7 @@ _本文在_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalyt
 1. 从可用选项中选择一个可视化图表或面板。
 
 
-   * 当您选择一个面板时，空白面板将会过渡到选定的面板。
+   * 当您选择一个面板时，空白面板会切换为所选面板。
    * 当您选择一个可视化图表时，该可视化图表将会被添加到空白面板中。
 
    例如，选择一个要添加在面板中的可视化图表（如 ![ViewList](/help/assets/icons/ViewList.svg) **[!UICONTROL 组群表]**），或者选择一个面板（如 ![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL 归因]**），以将面板修改为归因面板。

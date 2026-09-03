@@ -1,6 +1,6 @@
 ---
 title: 与 Adobe Analytics 进行比较
-description: Customer Journey Analytics 与 Adobe Analytics 相比的概述。
+description: Customer Journey Analytics 与 Adobe Analytics 的比较概述。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: bde36283-86af-4b1a-9cbe-e251676b2951
@@ -58,7 +58,7 @@ Customer Journey Analytics 一般是要在报告时处理所收集并存储在 E
 
 ## 术语
 
-通过基于底层体验数据模型 (XDM) 的架构产生的灵活性，可在 Customer Journey Analytics 中灵活地定义维度和量度。 例如，Adobe Analytics 使用访客数、访问次数和点击次数，而 Customer Journey Analytics 使用人员数、会话数和事件数作为等效概念（您可将命名更改为您认为合适的形式）。
+Customer Journey Analytics 可灵活定义维度和量度，这得益于底层基于体验数据模型 (XDM) 的架构所提供的灵活性。 例如，Adobe Analytics 使用访客数、访问次数和点击次数，而 Customer Journey Analytics 使用人员数、会话数和事件数作为等效概念（您可将命名更改为您认为合适的形式）。
 
 有关术语中各种区别的详细信息，请参阅[比较通过 Analytics Source Connector 传递的 Analytics 数据的术语](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/terminology.html?lang=zh-Hans)。
 
@@ -69,16 +69,16 @@ Adobe Analytics 具有虚拟报告包的概念，通过这个概念，可为收�
 
 Customer Journey Analytics 具有一个类似的概念，称为数据视图。 数据视图是一些容器，通过这些容器，可确定如何解释从连接获得的数据。 利用它们，可以非常灵活地指定和配置维度和量度以准备用于您的报告和分析。
 
-Experience Platform 提供可被视为容器的沙盒，而该容器中容纳给定环境的数据和应用程序。 沙盒的功能与 Adobe Analytics 虚拟报告包或 Customer Journey Analytics 数据视图无关。 Adobe Analytics 自身完全不依赖 Experience Platform 沙盒，并且完全与其无关。 Customer Journey Analytics 支持 Experience Platform 沙盒，但有一些重要的注意事项。
+Experience Platform 提供沙盒，可将其视为用于容纳给定环境中的数据和应用程序的容器。 沙盒的功能与 Adobe Analytics 虚拟报告包或 Customer Journey Analytics 数据视图无关。 Adobe Analytics 自身完全不依赖 Experience Platform 沙盒，并且完全与其无关。 Customer Journey Analytics 支持 Experience Platform 沙盒，但有一些重要的注意事项。
 
 有关更多信息，请参阅[虚拟报告包、数据视图、Adobe Experience Platform 沙盒和 Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html?lang=zh-Hans)。
 
 
 ## 身份标识
 
-Customer Journey Analytics 支持将身份标识定义为包含数据的数据集所遵循的架构的一部分。 因此，身份标识是 Experience Platform 的基本概念，Customer Journey Analytics 在设置[连接](../../connections/overview.md)（通过为每个数据集定义人员 ID）以及应用[拼合](../../stitching/overview.md)以进行跨渠道分析时将使用这一概念。 Experience Platform SDK 和 API 使用的一个重要身份标识是 Experience Cloud ID (ECID)。
+Customer Journey Analytics 支持您定义的身份标识，这些身份标识是包含您的数据的数据集所遵循的架构的一部分。 因此，身份标识是 Experience Platform 的基本概念，Customer Journey Analytics 在设置[连接](../../connections/overview.md)（通过为每个数据集定义人员 ID）以及应用[拼合](../../stitching/overview.md)以进行跨渠道分析时将使用这一概念。 Experience Platform SDK 和 API 使用的一个重要身份标识是 Experience Cloud ID (ECID)。
 
-Adobe Analytics 使用一组更明确的身份标识字段，例如 Adobe Analytics ID (AAID)。 在使用 Analytics Source Connector 时，将对这些 Adobe Analytics 标识字段进行特殊处理。 有关更多信息，请参阅 [AAID、ECID、AACUSTOMID 和 Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=zh-Hans)。
+Adobe Analytics 使用一组更明确的身份标识字段，例如 Adobe Analytics ID (AAID)。 在使用 Analytics 源连接器时，将对这些 Adobe Analytics 标识字段进行特殊处理。 有关更多信息，请参阅 [AAID、ECID、AACUSTOMID 和 Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=zh-Hans)。
 
 
 ## 支持的功能

@@ -128,7 +128,7 @@ ht-degree: 62%
 
    ![识别对象](./assets/identification-field-gaming.png)
 
-   识别对象为您的架构添加了识别功能。 在您的案例中，您希望使用Experience Cloud ID和电子邮件地址来识别玩游戏的用户档案，这些用户档案用于登录游戏主机。 有许多其他属性可用于跟踪您的人员身份。
+   识别对象为您的架构添加了识别功能。 在您的案例中，您希望使用Experience Cloud ID和电子邮件地址来识别玩游戏的用户档案，这些用户档案用于登录到游戏主机。 有许多其他属性可用于跟踪您的人员身份。
 
    选择&#x200B;**[!UICONTROL 应用]**&#x200B;将此对象添加到您的架构中。
 
@@ -176,7 +176,7 @@ ht-degree: 62%
 
 - 添加基于 Profile Core v2 字段组的身份标识对象。
 
-- 将 Experience Cloud ID 定义为主要身份标识符，并将电子邮件定义为身份标识符。
+- 将 Experience Cloud ID 定义为主要标识符，并将电子邮件定义为标识符。
 
 - 为轮廓启用架构
 
@@ -184,7 +184,7 @@ ht-degree: 62%
 
 ### 设置数据集
 
-使用您的架构，您已经定义了数据模型。 现在，您必须定义结构以使用数据集存储和管理这些数据。
+通过您的架构，您已经定义了数据模型。 现在，您必须定义结构以使用数据集存储和管理这些数据。
 
 设置您的数据集
 
@@ -208,7 +208,7 @@ ht-degree: 62%
 
 7. 选择&#x200B;**[!UICONTROL 轮廓]**&#x200B;开关
 
-   系统会提示您启用轮廓的数据集。 启用后，数据集会使用其摄取的数据丰富实时客户轮廓。
+   系统会提示您为轮廓启用数据集。 启用后，数据集会使用其摄取的数据丰富实时客户轮廓。
 
    >[!IMPORTANT]
    >
@@ -325,11 +325,11 @@ curl -X POST "https://server.adobedc.net/ee/v2/interact?dataStreamId={DATASTREAM
 
    - 对于每个数据集：
 
-      - 在 Adobe Experience Platform 中，从在数据集架构中定义的可用身份标识中选择[!UICONTROL 人员 ID]。
+     - 在 Adobe Experience Platform 中，从在数据集架构中定义的可用身份标识中选择[!UICONTROL 人员 ID]。
 
-      - 从[!UICONTROL 数据源类型]列表中选择正确的数据源。 如果指定&#x200B;**[!UICONTROL 其他]**，则为您的数据源添加描述。
+     - 从[!UICONTROL 数据源类型]列表中选择正确的数据源。 如果指定&#x200B;**[!UICONTROL 其他]**，则为您的数据源添加描述。
 
-      - 根据您的首选项设置&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;和&#x200B;**[!UICONTROL 数据集回填现有数据]**。
+     - 根据您的首选项设置&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;和&#x200B;**[!UICONTROL 数据集回填现有数据]**。
 
    - 选择&#x200B;**[!UICONTROL 添加数据集]**。
 
@@ -351,7 +351,7 @@ curl -X POST "https://server.adobedc.net/ee/v2/interact?dataStreamId={DATASTREAM
 
    从[!UICONTROL 连接]列表中选择您的连接。
 
-   名称并（可选）描述您的连接。
+   为您的连接命名并（可选）添加描述。
 
    ![数据视图配置](./assets/cja-dataview-1.png)
 

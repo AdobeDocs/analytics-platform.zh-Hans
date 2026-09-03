@@ -71,7 +71,7 @@ Experience Platform数据准备功能与Analytics Source Connector集成，可�
    | **XDM ExperienceEvent**&#x200B;类别 |
    | **Adobe Analytics ExperienceEvent 模板**&#x200B;字段组 |
 
-1. 将另一个字段组添加到该架构或[创建自定义字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=zh-Hans#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail)，并将其添加该架构。 我们会创建一个新的字段组，并将其称为&#x200B;**统一字段**。 然后，我们将向新字段组中添加以下字段：：
+1. 将另一个字段组添加到该架构或[创建自定义字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=zh-Hans#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail)，并将其添加该架构。 我们会创建一个新的字段组，并将其称为&#x200B;**统一字段**。 然后，我们将向新字段组中添加以下字段：
 
    | “统一字段”自定义字段组  |
    | --- |

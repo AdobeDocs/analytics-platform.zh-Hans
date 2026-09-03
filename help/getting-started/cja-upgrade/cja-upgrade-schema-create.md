@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ---
 
-# 创建与 Customer Journey Analytics 使用的自定义架构 {#create-custom-schema}
+# 创建用于 Customer Journey Analytics 的自定义架构 {#create-custom-schema}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -116,7 +116,7 @@ ht-degree: 100%
 
    1. （可选）选择您想要包括的任何其他字段组。
 
-      如果您选择使用默认的 Adobe Analytics 架构，而不是创建自定义 XDM 机构，则现在可以添加 Adobe Analytics ExperienceEvent 字段组。 但是，Adobe 建议创建一个自定义的 XDM 架构，而不是添加此字段组。
+      如果您选择使用默认的 Adobe Analytics 架构，而不是创建自定义 XDM 架构，则现在可以添加 Adobe Analytics ExperienceEvent 字段组。 但是，Adobe 建议创建一个自定义的 XDM 架构，而不是添加此字段组。
 
       有关这些架构选项的更多信息，请参阅[为 Customer Journey Analytics 选择架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)。
 
@@ -168,7 +168,7 @@ ht-degree: 100%
 
 1. （可选）如果您想将 Customer Journey Analytics 与 RTCDP 集成，请选择显示架构名称的架构根元素，然后选择&#x200B;**[!UICONTROL 轮廓]**&#x200B;切换按钮。
 
-   系统会提示您启用轮廓的架构。 一旦启用，当数据被引入基于此架构的数据集中时，该数据将合并到实时客户轮廓。
+   系统会提示您为轮廓启用架构。 一旦启用，当数据被引入基于此架构的数据集中时，该数据将合并到实时客户轮廓。
 
    有关详细信息，请参阅[启用架构以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans#profile)。
 
@@ -182,7 +182,7 @@ ht-degree: 100%
 
    您已经创建了一个最小架构，用于对您可以从您的网站捕获的数据进行建模。 该架构允许使用 Experience Cloud Identity 和电子邮件地址来识别轮廓。 通过启用轮廓架构，您可以确保从您的网站捕获的数据被添加到实时客户轮廓中。
 
-   除了行为数据之外，您还可以从您的站点捕获轮廓属性数据（例如订阅时事通讯的轮廓的详细信息）。
+   除了行为数据之外，您还可以从您的网站捕获轮廓属性数据（例如订阅新闻稿的轮廓的详细信息）。
 
    要捕获此轮廓数据，您需要：
 
@@ -192,7 +192,7 @@ ht-degree: 100%
 
    * 添加基于 Profile Core v2 字段组的身份标识对象。
 
-   * 将 Experience Cloud ID 定义为主要身份标识符，并将电子邮件定义为身份标识符。
+   * 将 Experience Cloud ID 定义为主要标识符，并将电子邮件定义为标识符。
 
    * 为轮廓启用架构
 

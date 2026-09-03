@@ -1,6 +1,6 @@
 ---
-title: Customer Journey Analytics 和数据管理
-description: 描述数据管理在 Customer Journey Analytics 中的工作方式。
+title: Customer Journey Analytics 和数据治理
+description: 描述数据治理在 Customer Journey Analytics 中的工作方式。
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 feature: Privacy
 role: Admin
@@ -35,11 +35,11 @@ ht-degree: 88%
 
 Adobe Customer Journey Analytics 和 [Adobe Experience Platform 数据治理](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=zh-Hans)之间的集成允许标记敏感的 Customer Journey Analytics 数据和实施隐私政策。
 
-在 Experience Platform 使用的数据集上创建的隐私标签和政策可以在 Customer Journey Analytics 数据视图工作流中显示。 这些标签阻止或警告从敏感字段创建量度和/或维度的用户。
+在由 Experience Platform 使用的数据集上创建的隐私标签和政策可以显示在 Customer Journey Analytics 数据视图工作流中。 这些标签阻止或警告从敏感字段创建量度和/或维度的用户。
 
 此外，从 Customer Journey Analytics 导出数据时（通过报告、导出、API 等），将添加其他警告或标签，以通知用户报告包含需要以特定方式处理的敏感信息。
 
-此集成允许您更轻松地管理合规性。 组织中的数据管理员可以设置策略以限制使用。 因此，您的 Customer Journey Analytics 用户可以更自信地使用数据，因为他们知道此等数据使用符合数据管理员定义的策略。
+此集成允许您更轻松地管理合规性。 组织中的数据管理员可以设置策略以限制使用。 因此，您的 Customer Journey Analytics 用户可以更自信地使用数据，因为他们知道这些数据符合数据管理员定义的策略。
 
 [了解详情](/help/data-views/data-governance.md)
 
@@ -61,7 +61,9 @@ Customer Journey Analytics 将不直接订阅一般数据保护条例 (GDPR) 中
 
 ## CCPA
 
-《加州消费者隐私法案》(CCPA) 加强了对美国加利福尼亚州居民的隐私权和消费者保护。 此法案已于 2020 年 1 月 1 日生效。CCPA 为加州居民提供了新的数据隐私权，例如，访问和删除个人数据的权利，知晓其个人数据是否被出售或披露（包括披露给谁）的权利，以及拒绝出售其个人数据的权利。依照 CCPA，隐私服务将支持选择退出出售个人数据的请求。
+《加州消费者隐私法案》(CCPA) 加强了对美国加利福尼亚州居民的隐私权和消费者保护。 此法案已于 2020 年 1 月 1 日生效。
+CCPA 为加州居民提供了新的数据隐私权，例如，访问和删除个人数据的权利，知晓其个人数据是否被出售或披露（包括披露给谁）的权利，以及拒绝出售其个人数据的权利。
+依照 CCPA，隐私服务支持选择退出个人数据出售的请求。
 
 >[!MORELIKETHIS]
 >

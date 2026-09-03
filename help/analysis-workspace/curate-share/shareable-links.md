@@ -29,7 +29,7 @@ Analysis Workspace 提供了多种将项目共享给用户的方法，包括能�
 
 ## 获取项目链接以与其他 Workspace 用户共享 {#project-link}
 
-要共享项目链接，请转到要共享的项目，然后选择转到&#x200B;**[!UICONTROL 共享]** > **[!UICONTROL 获取项目链接]**（或&#x200B;**[!UICONTROL 共享]** > **[!UICONTROL 与Workspace用户共享]** > **[!UICONTROL 通过链接共享]**）。 要求您与其共享该链接的用户登录。
+要共享项目链接，请转到要共享的项目，然后选择转到&#x200B;**[!UICONTROL 共享]** > **[!UICONTROL 获取项目链接]**（或&#x200B;**[!UICONTROL 共享]** > **[!UICONTROL 与Workspace用户共享]** > **[!UICONTROL 通过链接共享]**）。 与您共享该链接的用户必须登录。
 
 如果尚未为链接的收件人分配[项目角色](/help/analysis-workspace/curate-share/share-projects.md)，则管理员将获得&#x200B;**[!UICONTROL 编辑原始项目]**，非管理员将获得&#x200B;**[!UICONTROL 编辑副本]**&#x200B;体验。
 

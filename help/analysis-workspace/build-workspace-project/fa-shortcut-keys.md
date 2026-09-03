@@ -65,7 +65,7 @@ Analysis Workspace 中提供了热键（键盘快捷键），以实现无缝导�
 | 撤销 | **[!UICONTROL *cmd + z *]** | **[!UICONTROL *ctrl + z *]** |
 | 刷新组件 | **[!UICONTROL *opt + shift + r *]** | **[!UICONTROL *alt + shift + r *]** |
 | 刷新项目 | **[!UICONTROL *opt + r *]** | **[!UICONTROL *alt + r *]** |
-| 设置为“登录”页面 | **[!UICONTROL *cmd + shift + l *]** | **[!UICONTROL *ctrl + shift + l *]** |
+| 设置为登陆页面 | **[!UICONTROL *cmd + shift + l *]** | **[!UICONTROL *ctrl + shift + l *]** |
 
 ## 添加面板和可视化内容操作
 

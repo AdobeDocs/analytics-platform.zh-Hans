@@ -31,13 +31,13 @@ ht-degree: 90%
 
 Customer Journey Analytics 中的大多数维度和指标都基于您 Adobe Experience Platform 数据集中的架构元素。 但是，无论使用什么连接，都有若干组件可添加到数据视图。
 
-[!UICONTROL 标准组件]不是从数据集架构字段生成的组件，而是由系统生成的组件。 必须具有某些系统组件以利于 Analysis Workspace 中的报表功能，而其他系统组件为可选。
+[!UICONTROL 标准组件]不是从数据集架构字段生成的组件，而是由系统生成的组件。 某些系统组件是必需的，以便在 Analysis Workspace 中实现报告功能，而其他系统组件则是可选的。
 
 ![标准组件](assets/dataview-standard-components.png)
 
 ## 必需的标准组件 {#required}
 
-默认情况下，将这些必需的标准组件添加到每个数据视图。 它们对于 Customer Journey Analytics 提供的报表功能不可或缺。
+默认情况下，将这些必需的标准组件添加到每个数据视图。 它们对于 Customer Journey Analytics 提供的报告功能不可或缺。
 
 ### 标准维度
 
@@ -64,8 +64,8 @@ Customer Journey Analytics 中的大多数维度和指标都基于您 Adobe Expe
 | [!UICONTROL 小时] | 时间划分维度 | 0 时至 23 时 |
 | [!UICONTROL &#x200B; 月份] | 时间划分维度 | 一月 - 十二月 |
 | [!UICONTROL 首次会话] | 量度 | 个人在报告窗口内定义的首次会话。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat) |
-| [!UICONTROL 返回会话] | 量度 | 非个人首次会话的会话数。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat) |
-| [!UICONTROL 人员 ID] | 维度 | Experience Platform 中定义的每个数据集架构都可以拥有自己定义的一个或多个身份标识集，并与身份标识命名空间相关联。 其中任何身份标识都可用作人员 ID。 示例包括 Cookie ID、拼接 ID、用户 ID、跟踪代码等。 [!UICONTROL 个人 ID] 维度是合并数据集的基础，并可在 Customer Journey Analytics 中标识独特访客。<p>可能的使用案例包括：<ul><li>创建针对特定人员ID值的区段，以将所有内容细分为该用户的行为。</li><li>调试：确保特定 Cookie ID（或特定客户 ID）的数据存在。</li><li>确定致电给呼叫中心的用户。</li></ul> |
+| [!UICONTROL 返回会话] | 量度 | 不是某人首次会话的会话数量。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=zh-Hans#new-repeat) |
+| [!UICONTROL 人员 ID] | 维度 | Experience Platform 中定义的每个数据集架构都可以拥有自己定义的一个或多个身份标识集，并与身份标识命名空间相关联。 其中任何身份标识都可用作人员 ID。 示例包括 Cookie ID、拼接 ID、用户 ID、跟踪代码等。 [!UICONTROL 个人 ID] 维度是合并数据集的基础，并可在 Customer Journey Analytics 中标识独特访客。<p>可能的使用案例包括：<ul><li>创建针对特定人员ID值的区段，以将所有内容细分为该用户的行为。</li><li>调试：确保特定 Cookie ID（或特定客户 ID）的数据存在。</li><li>确定打电话到呼叫中心的用户。</li></ul> |
 | [!UICONTROL 人员 ID 命名空间] | 维度 | [!UICONTROL 人员 ID] 由哪种类型的 ID 组成。 示例为：`email address`、`cookie ID`、`Analytics ID` |
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL 全局帐户 ID] | 维度 | [!UICONTROL 全球帐户 ID]，如果您在连接中使用全球帐户容器。 |
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL 帐户 ID] | 维度 | 在连接中使用帐户容器时的[!UICONTROL 帐户ID]。 |

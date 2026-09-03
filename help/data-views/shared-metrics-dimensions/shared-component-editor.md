@@ -40,9 +40,9 @@ ht-degree: 0%
 该界面包括三个主要列/部分：
 
 * **架构字段选择器**：找到所需的架构字段并将其拖动到包含的组件区域。
-   * **连接**：活动连接。 更改[共享量度和维度管理器](smd-overview.md)中的活动连接。
-   * **组件列表**：您可以从下拉菜单中选择[!UICONTROL 架构字段]（全新共享维度和量度）或[!UICONTROL 量度和维度]（现有共享组件）。
-   * **搜索**：使用![搜索图标](/help/assets/icons/Search.svg)文本搜索按名称定位所需的架构字段或共享组件。 您还可以使用![筛选器图标](/help/assets/icons/Filter.svg)筛选器来缩小组件列表的范围。 `Is not deprecated`筛选器默认处于活动状态。
-   * **创建派生字段**：允许您[创建派生字段](/help/data-views/derived-fields/derived-fields.md)。
+  * **连接**：活动连接。 更改[共享量度和维度管理器](smd-overview.md)中的活动连接。
+  * **组件列表**：您可以从下拉菜单中选择[!UICONTROL 架构字段]（全新共享维度和量度）或[!UICONTROL 量度和维度]（现有共享组件）。
+  * **搜索**：使用![搜索图标](/help/assets/icons/Search.svg)文本搜索按名称定位所需的架构字段或共享组件。 您还可以使用![筛选器图标](/help/assets/icons/Filter.svg)筛选器来缩小组件列表的范围。 `Is not deprecated`筛选器默认处于活动状态。
+  * **创建派生字段**：允许您[创建派生字段](/help/data-views/derived-fields/derived-fields.md)。
 * **包含的组件**：您配置为共享的组件。 创建共享组件时，您可以将多个架构字段拖至此区域以同时创建多个组件。 编辑共享组件时，您可以选择要编辑的多个组件，这将列出此区域中的所有选定组件。
 * **组件设置**：在包含的组件区域中选择组件时，可以在此列中配置所有可用的设置。 有关维度和量度的所有可用选项，请参阅[组件设置](/help/data-views/component-settings/overview.md)。 按住Shift并单击包含的组件区域中的多个元素，可以同时编辑任何常用字段。

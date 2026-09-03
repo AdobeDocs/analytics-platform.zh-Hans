@@ -39,14 +39,14 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Algorithmic attr
 
 -->
 
-归因算法基于合作博弈理论中的 Harsanyi Dividend 算法。 Harsanyi Dividend算法是Shapley值解(以诺贝尔经济学奖获得者罗伊德·沙普利(Lloyd Shapley)命名)的推广形式，用于为对结果具有不同贡献的各参与者分配信用。
+归因所用的算法基于合作博弈理论中的 Harsanyi Dividend。 Harsanyi Dividend算法是Shapley值解(以诺贝尔经济学奖获得者罗伊德·沙普利(Lloyd Shapley)命名)的推广形式，用于为对结果具有不同贡献的各参与者分配信用。
 
 从高层面来看，在为每个接触点计算转化点数的归因时，会将回顾时间范围内的每个营销接触点视为一个参与者联盟。 对于由参与者组成的联盟，盈余必须公平分配。 每个联盟的剩余价值分配取决于每个子联盟递归产生的剩余价值。
 
 有关更多详细信息，请参阅约翰·海萨尼和劳埃德·沙普利的原稿：
 
 * 夏普利，劳埃德S (1953). A value for n-person games. *Contributions to the Theory of Games, 2(28)*, 307-317.
-* Harsanyi，约翰C (1963). A simplified bargaining model for the n-person cooperative game. *International Economic Review 4(2)*, 194-220.
+* Harsanyi，约翰C (1963). n 人合作博弈的简化议价模型。 *International Economic Review 4(2)*, 194-220.
 
 >[!NOTE]
 >

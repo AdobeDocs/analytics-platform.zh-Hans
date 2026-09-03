@@ -20,7 +20,7 @@ topic_v2:
 source-git-commit: 7bb16378fc8813ca126cb786c5d36bf9daa0fe7d
 workflow-type: tm+mt
 source-wordcount: 388
-ht-degree: 2%
+ht-degree: 7%
 
 ---
 
@@ -68,6 +68,6 @@ ht-degree: 2%
 
 ## 使用同意策略分析模板
 
-当为同意报表配置数据视图时，Customer Journey Analytics会自动在Analysis Workspace中提供同意策略分析模板。 此模板为报告访客同意策略成员资格提供了一个起点。
+当数据视图配置为用于同意情况报告时，Customer Journey Analytics 会自动在 Analysis Workspace 中提供同意策略分析模板。 此模板为报告访客同意策略成员资格提供了一个起点。
 
 有关如何访问模板的信息，请参阅[访问并运行模板](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template)。

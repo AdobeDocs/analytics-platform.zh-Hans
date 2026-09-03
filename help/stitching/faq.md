@@ -22,7 +22,7 @@ topic_v2:
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
 source-git-commit: 19cf20236196ab9c2518bf299a36d32f65210227
 workflow-type: tm+mt
-source-wordcount: 2373
+source-wordcount: 2383
 ht-degree: 71%
 
 ---
@@ -94,9 +94,9 @@ ht-degree: 71%
 
 在某些情况下，单个用户可以与多个永久 ID 相关联。 例如，经常清除浏览器的Cookie或使用浏览器私人/无痕模式的用户。
 
-对于基于字段的拼接，永久 ID 的数量并不重要，重要的是人员 ID。 单个用户可以属于任意数量的设备，而不会影响 Customer Journey Analytics 的跨设备拼接功能。
+对于基于字段的拼接，永久 ID 的数量并不重要，重要的是人员 ID。 单个用户可以关联任意数量的设备，而不会影响 Customer Journey Analytics 的跨设备拼接功能。
 
-对于基于图形的拼合，一个人在身份图中可以具有多个永久ID。 基于图形的拼接是使用基于指定命名空间的永久 ID。 如果同一命名空间有更多的永久ID，则使用词典编排的第一个永久ID。
+对于基于图形的拼合，一个人在身份图中可以具有多个永久ID。 基于图形的拼接使用基于指定命名空间的永久 ID。 如果同一命名空间有更多的永久ID，则使用词典编排的第一个永久ID。
 
 +++
 
@@ -128,7 +128,7 @@ Adobe 启用拼接后大约一周，实时拼接功能就可供使用。 回填�
 
 +++回答
 
-Adobe 会根据本地和国际法律处理隐私请求。 Adobe 提供了 [Adobe Experience Platform 隐私服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/privacy/home)来提交数据访问和删除请求。 这些请求同时适用于原始数据集和已重新生成键值的数据集。
+Adobe 会根据本地和国际法律处理隐私请求。 Adobe 提供了 [Adobe Experience Platform 隐私服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/privacy/home)来提交数据访问和删除请求。 这些请求同时适用于原始数据集和重新生成键的数据集。
 
 >[!IMPORTANT]
 >
@@ -159,7 +159,7 @@ Adobe 会根据本地和国际法律处理隐私请求。 Adobe 提供了 [Adobe
 
 **隐私请求的当前进程**
 
-收到 CustID Bob 的客户的隐私请求后，就会删除带有删除线条目的行。 其他事件使用身份标识图重新进行拼接。 例如，拼接数据集中的第一个拼接 ID 更新为 **Alex**。
+收到 CustID 为 Bob 的客户的隐私请求后，会删除带有删除线条目的行。 其他事件使用身份标识图重新进行拼接。 例如，拼接数据集中的第一个拼接 ID 更新为 **Alex**。
 
 | 身份标识图 | Id | 时间戳 | 永久 ID | 永久命名空间 | 人员 ID | 人员命名空间 |
 |:---:|---|---|---|---|---|---|
@@ -280,7 +280,7 @@ Customer Journey Analytics 和 Adobe Analytics 中的其他量度可能相似。
 
 数据不必重新摄取到Experience Platform。 但是，数据需要在Customer Journey Analytics中重新配置。 请执行以下步骤：
 
-1. 使用基于图形的拼接来设置新的基于图形的拼接数据集。
+1. 使用基于图形的拼接来设置新的基于图形拼接的数据集。
 1. 创建一个数据时间窗口非常短的新的临时连接。
 1. 将新的基于图形的数据集配置为这个临时连接的一部分。
 1. 通过这个新的临时连接验证基于图形的拼接是否正常工作。
@@ -295,7 +295,7 @@ Customer Journey Analytics 和 Adobe Analytics 中的其他量度可能相似。
 
 +++回答
 
-如果您按照上述步骤操作就不会。 如果不是这样，请联系 Adobe Consulting 获取更多支持。
+如果您按照上述步骤操作就不会。 否则，请联系 Adobe 咨询获取更多支持。
 
 +++
 
@@ -307,7 +307,7 @@ Customer Journey Analytics 和 Adobe Analytics 中的其他量度可能相似。
 
 确保为Identity Service启用了数据集，以便将该数据集用于基于图形的拼合。
 
-您要使用基于图形的拼接不必具有 Real-Time Customer Data Platform 许可。 基于图形的拼接是基于一个可用的身份标识图，而不是基于实时客户轮廓。
+您无需获得 Real-Time Customer Data Platform 许可即可使用基于图形的拼接。 基于图形的拼接是基于一个可用的身份标识图，而不是基于实时客户轮廓。
 
 要检查现有数据集并仅为标识服务启用该数据集，请使用对仅使用`unifiedIdentity`标记的`/datasets`终结点的`PATCH`请求。 例如：
 

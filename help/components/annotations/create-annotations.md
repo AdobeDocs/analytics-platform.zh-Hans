@@ -58,7 +58,7 @@ Should we really mention API here. If so, we can do it all over the place in the
 >[!CONTEXTUALHELP]
 >id="components_annotations_details"
 >title="注释详细信息"
->abstract="注释使您能够有效地将上下文数据的细微差别和洞察传达给您的组织。 通过注释，您可以将日程表活动与特定的维度和量度关联起来。"
+>abstract="注释使您能够有效地将上下文数据的细微差别和洞察传达给您的组织。 通过注释，您可以将日历事件与特定的维度和量度关联起来。"
 
 <!-- markdownlint-enable MD034 -->
 

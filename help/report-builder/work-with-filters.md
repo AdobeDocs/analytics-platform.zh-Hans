@@ -41,17 +41,17 @@ ht-degree: 6%
 
 * 或者：
 
-   1. 在&#x200B;**[!UICONTROL 表]**&#x200B;窗格中为特定量度选择![MoreSmall](/help/assets/icons/MoreSmall.svg)，然后选择&#x200B;**[!UICONTROL 筛选量度]**。
+  1. 在&#x200B;**[!UICONTROL 表]**&#x200B;窗格中为特定量度选择![MoreSmall](/help/assets/icons/MoreSmall.svg)，然后选择&#x200B;**[!UICONTROL 筛选量度]**。
 
-      ![区段选项卡显示指标。](./assets/filter-metric.png){zoomable="yes"}
+     ![区段选项卡显示指标。](./assets/filter-metric.png){zoomable="yes"}
 
-   1. 从&#x200B;**[!UICONTROL 段]**&#x200B;下拉菜单中选择一个或多个段。 区段已添加到&#x200B;**[!UICONTROL 应用的区段]**&#x200B;列表。
+  1. 从&#x200B;**[!UICONTROL 段]**&#x200B;下拉菜单中选择一个或多个段。 区段已添加到&#x200B;**[!UICONTROL 应用的区段]**&#x200B;列表。
 
-      已应用![区段](assets/segments-applied.png)
-   1. 选择![CrossSize75](/help/assets/icons/CrossSize75.svg)以从&#x200B;**[!UICONTROL 应用的区段]**&#x200B;列表中删除区段。 或者选择&#x200B;**[!UICONTROL 全部清除]**&#x200B;以从&#x200B;**[!UICONTROL 应用的区段]**&#x200B;列表中删除所有区段。
-   1. 选择&#x200B;**[!UICONTROL 应用]**。
+     已应用![区段](assets/segments-applied.png)
+  1. 选择![CrossSize75](/help/assets/icons/CrossSize75.svg)以从&#x200B;**[!UICONTROL 应用的区段]**&#x200B;列表中删除区段。 或者选择&#x200B;**[!UICONTROL 全部清除]**&#x200B;以从&#x200B;**[!UICONTROL 应用的区段]**&#x200B;列表中删除所有区段。
+  1. 选择&#x200B;**[!UICONTROL 应用]**。
 
-要查看应用的筛选器，请将光标悬停在上方或者在“表”窗格中选择量度。 已应用区段的量度会显示区段图标。
+要查看应用的筛选器，请将光标悬停在量度上，或者在“表”窗格中选择量度。 已应用区段的量度会显示区段图标。
 
 
 ## 快速编辑区段

@@ -35,13 +35,13 @@ ht-degree: 52%
 本文中使用以下定义：
 
 * **体验**：
-   * 对于&#x200B;**Web**&#x200B;渠道，体验被定义为整个网页上的文本内容。 对于数据收集，Content Analytics会记录基于页面URL的Experience ID。 然后通过检索服务捕捉页面上的文本。
-   * 对于&#x200B;**移动设备**&#x200B;渠道，使用适用于Adobe Experience Platform Mobile SDK的Content Analytics扩展在移动设备应用程序中定义和跟踪体验。
+  * 对于&#x200B;**Web**&#x200B;渠道，体验被定义为整个网页上的文本内容。 对于数据收集，Content Analytics会记录基于页面URL的Experience ID。 然后通过检索服务捕捉页面上的文本。
+  * 对于&#x200B;**移动设备**&#x200B;渠道，使用适用于Adobe Experience Platform Mobile SDK的Content Analytics扩展在移动设备应用程序中定义和跟踪体验。
 * **体验ID**：
-   * 对于Web渠道，体验ID是相关URL（基本URL加上驱动页面内容的任何参数）和[体验版本](manual.md#versioning)的唯一组合。
-      * 作为[配置](configuration.md)的一部分，您指定哪些参数与任何给定的完整 URL 相关。
-      * 您定义一个可使用的[版本标识符](manual.md#versioning)，这样就可以正确收集有关体验的变化。
-   * 对于&#x200B;**移动设备**&#x200B;渠道，体验ID是使用`registerExperience` API调用的返回值。
+  * 对于Web渠道，体验ID是相关URL（基本URL加上驱动页面内容的任何参数）和[体验版本](manual.md#versioning)的唯一组合。
+    * 作为[配置](configuration.md)的一部分，您指定哪些参数与任何给定的完整 URL 相关。
+    * 您定义一个可使用的[版本标识符](manual.md#versioning)，这样就可以正确收集有关体验的变化。
+  * 对于&#x200B;**移动设备**&#x200B;渠道，体验ID是使用`registerExperience` API调用的返回值。
 * **资产**：一个图像。 Content Analytics 会记录资产 URL。
 * **资产 ID**：资产的 URL。
 * **相关 URL**：基本 URL 加上驱动页面内容的任何参数。
@@ -64,19 +64,19 @@ Content Analytics需要Experience Platform Edge Network Web SDK（适用于Web�
 Content Analytics 事件由以下各项组成：
 
 * 标准字段
-   * 时间戳
-   * 身份标识
-* 体验访问数（如有且已配置）
+  * 时间戳
+  * 身份标识
+* 体验查看数（如有且已配置）
 * 体验点击数（如有且已配置）
-* 资产访问数（如有且已配置）
+* 资产查看数（如有且已配置）
 * 资产点击数（如有且已配置）
 
-Content Analytics 事件收集为以下顺序：
+Content Analytics 事件按以下序列收集：
 
 1. [录制的视图或单击](#recorded-view-or-click)。
 1. 用于发送Content Analytics事件[&#128279;](#trigger-to-send-a-content-analytics-event)的触发器。
 
-Content Analytics 实际上以这种方式收集数据来反映该序列，而不是将收集某次访问或点击与收集该访问或点击之后立即发生的事件两者分开。 这种收集 Content Analytics 数据的方式也减少了所收集的数据量。
+Content Analytics 确实以这种方式收集数据来反映该序列，而不是将收集某次查看或点击与收集该查看或点击之后立即发生的事件两者分开。 这种收集 Content Analytics 数据的方式也减少了所收集的数据量。
 
 ### 记录的访问或点击
 
@@ -84,7 +84,7 @@ Content Analytics 实际上以这种方式收集数据来反映该序列，而�
 
 * 该资产尚未通过 Content Analytics 扩展配置被排除。
 * 该资产的 75% 被访问。
-* 该资产尚未为此页面被记录。
+* 该资产尚未在此页面中记录。
 
 在以下情况下会记录资产点击：
 
@@ -107,11 +107,11 @@ Content Analytics 实际上以这种方式收集数据来反映该序列，而�
 
 * Web SDK或Adobe AppMeasurement发送事件。
 * 可见性变为隐藏，例如：
-   * 页面卸载
-   * 切换选项卡
-   * 将浏览器最小化
-   * 关闭浏览器
-   * 锁定屏幕
+  * 页面卸载
+  * 切换选项卡
+  * 将浏览器最小化
+  * 关闭浏览器
+  * 锁定屏幕
 * URL 发生变化，导致相关 URL 改变。
 * 记录并准备发送的资产查看次数超过32次。
 

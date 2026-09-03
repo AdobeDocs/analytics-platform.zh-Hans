@@ -25,7 +25,7 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 9c87ce4fb30c7d1d66ce88174443369ef44a7377
 workflow-type: tm+mt
-source-wordcount: 1545
+source-wordcount: 1592
 ht-degree: 3%
 
 ---
@@ -90,7 +90,7 @@ Customer Journey Analytics基于三个容器的概念而构建：人员、会话
 
 * **归因**：您可以在[归因面板](/help/analysis-workspace/c-panels/attribution.md)、[归因组件设置](/help/data-views/component-settings/attribution.md)、[计算量度](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md)或自由格式表[&#128279;](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)的列中使用新的B2B容器。 帐户回顾时间可延长至13个月。
 
-* **可视化图表**：[退出](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)、[流量](/help/analysis-workspace/visualizations/c-flow/flow.md)、[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)和[同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)可视化图表支持新的B2B容器。例如：您可以使用新容器了解购买组如何使用内容，或者商机同类群组如何接近销售结束。
+* **可视化图表**：[退出](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)、[流量](/help/analysis-workspace/visualizations/c-flow/flow.md)、[历程画布](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)和[同类群组表](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)可视化图表支持新的B2B容器。 例如：您可以使用新容器了解购买组如何使用内容，或者商机同类群组如何接近销售结束。
 您还可以在[用户首选项](/help/analysis-workspace/user-preferences.md#visualizations-preferences)中设置这些可视化的默认容器。
 
 区段、归因和可视化图表以及B2B容器可支持您进行深入的B2B分析和见解。

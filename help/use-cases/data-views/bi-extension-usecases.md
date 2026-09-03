@@ -39,26 +39,26 @@ ht-degree: 18%
 已记录以下用例：
 
 * **连接**
-   * [连接并列出数据视图](bi-extension/connect-and-validate.md)
+  * [连接并列出数据视图](bi-extension/connect-and-validate.md)
 
 * **报告和分析**
-   * [每日趋势](bi-extension/daily-trend.md)
-   * [每小时趋势](bi-extension/hourly-trend.md)
-   * [每月趋势](bi-extension/monthly-trend.md)
-   * [单一维度排名](bi-extension/single-dimension-ranked.md)
-   * [多维度排名](bi-extension/multiple-dimension-ranked.md)
-   * [统计不同维度值数量](bi-extension/count-distinct-dimension-values.md)
-   * [使用日期范围名称进行筛选](bi-extension/use-date-range-names-to-filter.md)
-   * [使用区段名称进行区段划分](bi-extension/use-segment-names-to-segment.md)
-   * [使用维度值进行区段划分](bi-extension/use-dimension-values-to-segment.md)
-   * [排序](bi-extension/sort.md)
-   * [限制](bi-extension/limits.md)
+  * [每日趋势](bi-extension/daily-trend.md)
+  * [每小时趋势](bi-extension/hourly-trend.md)
+  * [每月趋势](bi-extension/monthly-trend.md)
+  * [单一维度排名](bi-extension/single-dimension-ranked.md)
+  * [多维度排名](bi-extension/multiple-dimension-ranked.md)
+  * [统计不同维度值数量](bi-extension/count-distinct-dimension-values.md)
+  * [使用日期范围名称进行筛选](bi-extension/use-date-range-names-to-filter.md)
+  * [使用区段名称进行区段划分](bi-extension/use-segment-names-to-segment.md)
+  * [使用维度值进行区段划分](bi-extension/use-dimension-values-to-segment.md)
+  * [排序](bi-extension/sort.md)
+  * [限制](bi-extension/limits.md)
 
 * **了解**
 
-   * [转换](bi-extension/transformations.md)
-   * [可视化图表](bi-extension/visualizations.md)
-   * [注意事项](bi-extension/caveats.md)
+  * [转换](bi-extension/transformations.md)
+  * [可视化图表](bi-extension/visualizations.md)
+  * [注意事项](bi-extension/caveats.md)
 
 **connect**&#x200B;用例侧重于如何使用Customer Journey Analytics BI扩展连接BI工具。
 

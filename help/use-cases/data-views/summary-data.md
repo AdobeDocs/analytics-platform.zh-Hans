@@ -23,8 +23,8 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 4858
-ht-degree: 16%
+source-wordcount: 5045
+ht-degree: 15%
 
 ---
 
@@ -485,7 +485,7 @@ ht-degree: 16%
          |---|---|---|---|
          | 广告组（查找） | 示例查找数据集 | 字符串 | *_tenant*.ad_group |
          | 广告组 | 示例摘要数据数据集 | 字符串 | *_tenant*.ad_group |
-         | 营销活动ID | 示例摘要数据数据集 | 字符串 | *_tenant*.campaign_id |
+         | Campaign Id | 示例摘要数据数据集 | 字符串 | *_tenant*.campaign_id |
          | 营销活动名称（查找） | 示例查找数据集 | 字符串 | *_tenant*.campaign_name |
          | 营销活动名称 | 示例摘要数据数据集 | 字符串 | *_tenant*.campaign_name |
          | 网络 | 示例摘要数据数据集 | 字符串 | *_tenant*.network |

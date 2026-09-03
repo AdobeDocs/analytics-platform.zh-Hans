@@ -21,7 +21,7 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 535
+source-wordcount: 538
 ht-degree: 25%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 25%
 
 Report Builder中心是从Excel功能区栏选择![AdobeLogoRedonWhite](/help/assets/icons/AdobeLogoRedOnWhite.svg) **[!UICONTROL Report Builder]**&#x200B;时显示在Excel工作簿中的右侧窗格。
 
-使用 Report Builder 中心创建、更新和管理数据块。
+使用 Report Builder 中心创建、更新、删除和管理数据块。
 
 Report Builder中心包含![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create]**、![TableManage](/help/assets/icons/TableManage.svg) **[!UICONTROL Manage]**&#x200B;和![Calendar](/help/assets/icons/Calendar.svg) **[!UICONTROL 计划]**&#x200B;按钮、**[!UICONTROL 命令]**&#x200B;面板和&#x200B;**[!UICONTROL 快速编辑]**&#x200B;面板。
 
@@ -49,13 +49,13 @@ Report Builder中心包含![AddCircle](/help/assets/icons/AddCircle.svg) **[!UIC
 
 | 命令 | 可用的时间… | 用途 |
 |------|------------------|--------|
-| ![编辑](/help/assets/icons/Edit.svg)**[!UICONTROL 编辑数据块]** | 所选一个或多个单元格仅属于一个数据块。 | 用于编辑数据块。 |
+| ![编辑](/help/assets/icons/Edit.svg)**[!UICONTROL 编辑数据块]** | 所选单元格或单元格区域仅属于一个数据块。 | 用于编辑数据块。 |
 | ![刷新](/help/assets/icons/Refresh.svg) **[!UICONTROL 刷新数据块]** | 选区至少包含一个数据块。 该命令仅刷新选区中的数据块。 | 用于刷新一个或多个数据块。 |
 | ![DocumentRefresh](/help/assets/icons/DocumentRefresh.svg) **[!UICONTROL 刷新所有数据块]** | 工作簿包含一个或多个数据块。 | 用于刷新工作簿中的所有数据块 |
 | ![发送](/help/assets/icons/Send.svg) **[!UICONTROL 发送工作簿]** | 工作簿包含一个或多个数据块。 | 使用以电子邮件的形式[发送工作簿](schedule-reportbuilder.md)。 |
-| ![复制](/help/assets/icons/Copy.svg) **[!UICONTROL 复制数据块]** | 所选单元格或单元格属于一个或多个数据块。 | 用于复制数据块。 |
-| ![剪切](/help/assets/icons/Cut.svg) **[!UICONTROL 剪切数据块]** | 所选单元格或单元格属于一个或多个数据块。 | 设置以剪切数据块。 |
-| ![删除](/help/assets/icons/Delete.svg) **[!UICONTROL 删除数据块]** | 所选一个或多个单元格仅属于一个数据块。 | 用于删除数据块 |
+| ![复制](/help/assets/icons/Copy.svg) **[!UICONTROL 复制数据块]** | 所选单元格或单元格区域属于一个或多个数据块。 | 用于复制数据块。 |
+| ![剪切](/help/assets/icons/Cut.svg) **[!UICONTROL 剪切数据块]** | 所选单元格或单元格区域属于一个或多个数据块。 | 设置以剪切数据块。 |
+| ![删除](/help/assets/icons/Delete.svg) **[!UICONTROL 删除数据块]** | 所选单元格或单元格区域仅属于一个数据块。 | 用于删除数据块 |
 
 ## 快速编辑面板
 

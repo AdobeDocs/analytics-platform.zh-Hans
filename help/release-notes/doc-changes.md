@@ -89,9 +89,9 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 连接中每日行数的护栏 | 新增了有关连接中每日平均最大行数的[数据传输限制护栏信息](/help/technotes/guardrails.md)。 |
 | **2025 年 10 月** | |
 | 管理对 Data Insights 代理的访问权限 | 更新了[启用数据视图的权限要求和流程](/help/data-analysis-ai.md#manage-access-to-data-insights-agent)。 |
-| 归因配置 | 反映出关于模型、容器和回顾窗口的新的归因配置选项的其他更新。 |
+| 归因配置 | 其他更新，以反映模型、容器和回顾窗口的新归因配置选项。 |
 | 摄取和使用 Experience Platform 受众 | 更新了关于如何[摄取和使用 Experience Platform 受众](/help/use-cases/data-ingestion/ingest-aep-segments.md)的用例文章。 |
-| 准备您的组织以升级到 Customer Journey Analytics | 添加了关于如何[准备组织以升级到 Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md) 的信息。 |
+| 让您的组织做好准备，以升级到 Customer Journey Analytics | 添加了关于如何[准备组织以升级到 Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md) 的信息。 |
 | 关于 LLM 和 AI 生成流量的报告 | 添加了关于如何使用派生字段作为基础来生成关于 LLM 和 AI 生成流量的报告的[用例文章](/help/use-cases/data-views/derived-fields/ai-traffic.md)。 此文章基于博客文章[在 Adobe Customer Journey Analytics 中跟踪和分析 LLM 和 AI 生成的流量](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=zh-Hans)。 |
 | **2025 年 9 月** | |
 | 1900 年之前的日期 | 新增了一条[说明](/help/connections/create-connection.md#datasets)，介绍 Customer Journey Analytics 如何处理 1900 年之前的日期。 |
@@ -103,8 +103,8 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 新的 Adobe Advertising 集成 | 添加了有关[集成 Adobe Advertising](/help/integrations/advertising.md) 的信息。 |
 | 新增的派生字段函数 | 新增的派生字段函数的相关文档：[日期运算](/help/data-views/derived-fields/derived-fields.md#date-math)、[深度](/help/data-views/derived-fields/derived-fields.md#depth)和[类型转换](/help/data-views/derived-fields/derived-fields.md#typecast)。 |
 | **2025 年 7 月** | |
-| 调试程序 | 新文章介绍如何在 Analysis Workspace 中启用、使用及停用项目调试器。 |
-| 流量可视化性能优化建议 | 新增信息指出，在单个流量可视化中展开超过 10 个节点可能会影响报告加载时间。 |
+| 调试程序 | 新文章介绍如何在 Analysis Workspace 中启用、使用及禁用项目调试器。 |
+| 流量可视化性能推荐 | 新增信息指出，在单个流量可视化中展开超过 10 个节点可能会影响报告加载时间。 |
 | 授予 Adobe Azure App 访问密钥的替代方法 | 在为 Azure 上的 Customer Journey Analytics [设置客户管理密钥](/help/privacy/cmk.md#set-up-customer-managed-keys-for-customer-journey-analytics-on-azure)时，现已新增有关通过授权同意方式授予权限的信息。 |
 | **2025 年 6 月** | |
 | 新的快捷键操作 | 现在，Analysis Workspace 中的新键盘快捷键允许您[在项目中上下移动工作区面板](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#move-panel-actions) 。 |
@@ -120,17 +120,17 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | Report Builder | 审查并更新了 [Report Builder](/help/report-builder/rb-overview.md) 文档。 |
 | 查看和管理使用情况 | 重新编写了有关如何[查看](/help/connections/manage-connections.md#usage)和[管理](/help/technotes/estimate-usage.md) Customer Journey Analytics 使用情况的文档 |
 | Adobe Content Analytics | [Content Analytics](/help/content-analytics/content-analytics.md) 可让您快速轻松地调查大量内容数据，以发现趋势、识别异常、判断内容疲劳度，并从内容曝光度获得洞察。 |
-| 已更新用于将流媒体数据收集到 Adobe Experience Platform 的 XDM 字段 | 将流媒体数据收集到 Adobe Experience Platform 时，不再使用流媒体参数文档中“XDM 字段路径”标题下显示的 XDM 字段路径。 这些字段路径位于以下页面并标记为“已弃用”：[音频和视频参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/audio-video-parameters)、[广告参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/ad-parameters)、[章节参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/chapter-parameters)、[播放器状态参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/player-state-parameters)和[质量参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/quality-parameters)。 |
+| 已更新用于将流媒体数据收集到 Adobe Experience Platform 的 XDM 字段 | 将流媒体数据收集到 Adobe Experience Platform 时，流媒体参数文档中“XDM 字段路径”标题下显示的 XDM 字段路径不应再使用。 这些字段路径位于以下页面并标记为“已弃用”：[音频和视频参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/audio-video-parameters)、[广告参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/ad-parameters)、[章节参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/chapter-parameters)、[播放器状态参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/player-state-parameters)和[质量参数](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/variables/quality-parameters)。 |
 | 媒体收藏集：Adobe Source Connector 更新了新的媒体报告 XDM | Analytics 源连接器会自动将 Adobe Analytics 中的流媒体数据映射到 Web SDK 使用的相同字段。 以前，数据被映射到旧位置和新位置，但未来只使用新位置。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
 | 术语更改：将“过滤器”改为“区段” | 此前，Adobe Customer Journey Analytics 将区段称为“过滤器”。 该术语现已与 Adobe Analytics 保持一致。 “过滤器”现在改称为“区段”。 （显然，搜索过滤器仍称为“过滤器”。） UI 和文档已更新。 |
 | **2025 年 3 月** | |
 | Quantum Metric 用例 | 添加了从 [Quantum Metric](/help/use-cases/third-party/quantum-metric/qm-overview.md) 收集数据的用例。 |
 | 产品使用模板 | 新的工作区模板允许您查看 Customer Journey Analytics 产品在您的组织内如何使用。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/use-templates)。 |
 | Customer Journey Analytics 升级指南 | 让您生成从 Adobe Analytics 升级到 Customer Journey Analytics 的分步指南。 要开始生成自定义指南，请登录 [!DNL Customer Journey Analytics]，然后在 **[!UICONTROL Workspace]** 选项卡上选择&#x200B;**[!UICONTROL 升级到 Customer Journey Analytics]**。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations#recommended-upgrade-steps-for-most-organizations) |
-| 数值维度的“无值”行项目的更新 | 对于数值维度的这个更新允许您在区段中使用“无值”维度项，并在报告中对“无值”行项目进行细分。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/no-value-options#numeric) |
-| 媒体收藏集：Adobe Source Connector 更新了新的媒体报告 XDM | Analytics 源连接器会自动将 Adobe Analytics 中的流媒体数据映射到 Web SDK 使用的相同字段。 以前，数据被映射到旧位置和新位置，但未来只使用新位置。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
+| 数值维度的“无值”行项目的更新 | 对于数值维度，此更新允许您在区段中使用“无值”维度项，并在报告中对“无值”行项目进行细分。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/no-value-options#numeric) |
+| 媒体收藏集：Adobe Source Connector 针对新的媒体报告 XDM 的更新 | Analytics 源连接器会自动将 Adobe Analytics 中的流媒体数据映射到 Web SDK 使用的相同字段。 以前，数据被映射到旧位置和新位置，但未来只使用新位置。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
 | **2025 年 2 月** |  |
-| 媒体收集：Adobe Source Connector 更新了新的媒体报告 XDM | Analytics 源连接器会自动[将 Adobe Analytics 中的流媒体数据映射](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=en)到 Web SDK 使用的相同字段。 以前，数据被映射到旧位置和新位置，但未来只使用新位置。 |
+| 媒体收藏集：Adobe Source Connector 针对新的媒体报告 XDM 的更新 | Analytics 源连接器会自动[将 Adobe Analytics 中的流媒体数据映射](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=en)到 Web SDK 使用的相同字段。 以前，数据被映射到旧位置和新位置，但未来只使用新位置。 |
 | BI 扩展 - 扩展支持 | Customer Journey Analytics BI 扩展现在[支持 Looker、Jupyter Notebook 和 R Studio](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=en)。 |
 | **2025 年 1 月** |  |
 | 更新的 Connections 使用体验 | 现在，Connection 中的 [使用情况](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/manage-connections?lang=en#connections-usage) 选项卡增强了以下类型可报告行的显示效果：核心数据、摄取的数据和历史数据。 您还可以按连接、数据集、沙盒或标记查看和细分使用情况数据。 |
@@ -139,7 +139,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 引导式分析 | 更新了文档，其中包含来自 Guided Analysis 中的[引导式分析](/help/guided-analysis/overview.md)。 |
 | 关于在 Journey Optimizer 的报告页面上使用 Customer Journey Analytics 中的自定义模板的文档 | 您现在可以在 Adobe Journey Optimizer 中自定义新的报告界面：[在 Customer Journey Analytics 中创建或编辑模板](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=cn)，然后保存该模板，将其在 Journey Optimizer 的报告页面中使用。 以前，无法自定义 Adobe Journey Optimizer 中新的报告界面。 |
 | Analysis Workspace 中的模板 | 现在，Customer Journey Analytics 中提供[预建模板](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/use-templates)和[公司模板](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/create-templates)。 |
-| 智能题注 v2 | 现在支持以下可视化图表的[智能题注](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions?lang=en)：多行、条形图、水平条形图、圆环图、面积图、流量和流失图。 您可以选择在扩展视图中一次显示所有智能题注，也可以在逐个视图中显示单个智能题注。 |
+| 智能题注 v2 | 现在支持以下可视化图表的[智能题注](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions?lang=en)：多行、条形图、水平条形图、圆环图、面积图、流量和流失图。 您可以选择在展开视图中一次显示所有智能题注，也可以在逐个视图中显示单个智能题注。 |
 
 ## 2024
 
@@ -167,7 +167,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 更新了数据导出用例 | 向[查询服务（数据蒸馏器）和导出数据集](/help/use-cases/data-export/queryservice-export-datasets.md)添加了更详细的查询示例，以说明如何使用回顾窗口在线程之间正确地应用归因功能。 |
 | 摘要数据 | 添加了有关[摘要数据](/help/data-views/summary-data.md)、[摘要数据组组件设置](/help/data-views/component-settings/summary-data-group.md)和[摘要数据用例](/help/use-cases/data-views/summary-data.md)的文档。 |
 | **2024 年 7 月** | |
-| 添加了有关快速计算量度的信息 | 更新了[量度](/help/components/apply-create-metrics.md)中的信息，以阐明[在计算量度构建器中创建的计算量度](/help/components/apply-create-metrics.md#create-calculated-metrics-for-all-projects)与[在单个项目内作为快速计算量度创建的计算量度之间的区别](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project)。 还添加了有关软管的更多详细信息，以创建快速计算的量度。<p>在计算量度构建器中创建的计算量度在组件列表中可用，并可应用于整个组织的项目，而作为快速计算量度创建的计算量度仅在创建它们的项目中可用。</p><p>还更新了[构建量度](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)中的信息，以做出类似的澄清。</p> |
+| 添加了有关快速计算量度的信息 | 更新了[量度](/help/components/apply-create-metrics.md)中的信息，以阐明[在计算量度构建器中创建的计算量度](/help/components/apply-create-metrics.md#create-calculated-metrics-for-all-projects)与[在单个项目内作为快速计算量度创建的计算量度之间的区别](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project)。 还添加了有关如何创建快速计算量度的更多详细信息。<p>在计算量度构建器中创建的计算量度在组件列表中可用，并可应用于整个组织的项目，而作为快速计算量度创建的计算量度仅在创建它们的项目中可用。</p><p>还更新了[构建量度](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)中的信息，以做出类似的澄清。</p> |
 | 派生字段重复数据删除功能 | 添加了有关派生字段[重复数据删除](/help/data-views/derived-fields/derived-fields.md#deduplicate)功能的文档。 |
 | 已更新的常见错误消息 | 对[常见错误消息](/help/analysis-workspace/workspace-faq/error-messages.md)做了小更新。 |
 | **2024 年 6 月** | |
@@ -181,13 +181,13 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 使用组织策略约束将 Customer Journey Analytics 报告导出到 Google 云平台时所需的信息 | 将 Adobe 拥有的 Google 云平台组织 ID 添加到[配置云导出位置](/help/components/exports/cloud-export-locations.md)文档，以将 Customer Journey Analytics 报告导出到 Google 云平台。 <p>仅当组织在 Google Cloud Platform 中使用[组织策略约束](https://cloud.google.com/storage/docs/org-policy-constraints)时才需要此信息。</p> |
 | 有关向项目添加组件的文档 | 添加了有关如何[将各种类型的组件添加到 Analysis Workspace 中的项目](/help/components/use-components-in-workspace.md)的一般信息。 |
 | 数据导出用例 | 一组新文章，描述了[数据导出用例](/help/use-cases/data-export/overview.md)，以及如何使用 Experience Platform 和 Customer Journey Analytics 功能来实现这些用例 |
-| 有关从 Adobe Analytics 升级到 Customer Journey Analytics 的新文档 | 对于从 Adobe Analytics 升级到 Customer Journey Analytics 的组织，需要考虑组织当前的 Adobe Analytics 实施和长期目标，有多种升级选项和许多注意事项需要牢记。<p>现提供新的文档资产来帮助您更好地理解：</p><ul><li>现有的各种升级路径</li><li>根据组织当前的 Adobe Analytics 实施情况，有哪些升级路径可用</li><li>每种升级路径的优缺点</li><li>每种升级路径的分步指导</li><li>处理历史数据的注意事项</li><li>等等！</li></ul><p>[开始升级到 Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)。</p> |
+| 有关从 Adobe Analytics 升级到 Customer Journey Analytics 的新文档 | 对于从 Adobe Analytics 升级到 Customer Journey Analytics 的组织，基于组织当前的 Adobe Analytics 实施情况和长期目标，有多种升级选项以及许多需要牢记的注意事项。<p>现提供新的文档资产来帮助您更好地理解：</p><ul><li>现有的各种升级路径</li><li>根据组织当前的 Adobe Analytics 实施情况，有哪些升级路径可用</li><li>每种升级路径的优缺点</li><li>每种升级路径的分步指导</li><li>处理历史数据的注意事项</li><li>等等！</li></ul><p>[开始升级到 Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)。</p> |
 | 更新了有关自定义日期范围的文档 | 更新了与[示例日期范围](/help/components/date-ranges/custom-date-ranges.md)相关的屏幕快照和程序，以匹配当前的产品功能和设计。 |
 | 有关 Dimensions 的概述信息 | 添加了有关[维度](/help/components/dimensions/overview.md)的信息。 |
 | 源连接器示例 | 添加了在描述如何[使用源连接器](/help/data-ingestion/sources.md#use-a-source-connector)摄取数据时可用的源连接器示例。 |
 | **2024 年 4 月** | |
 | 预测统计技术 | 添加了描述[预测服务中使用的统计技术](../analysis-workspace/c-forecast/statistics-forecasting.md)的文章。 |
-| 添加了推荐高基数维度的全表导出的信息 | 在[高基数维度的最佳实践](/help/components/dimensions/high-cardinality.md)中添加了项目符号，建议对高基数维度使用全表导出。 |
+| 添加了相关信息，建议对高基数维度使用全表导出 | 在[高基数维度的最佳实践](/help/components/dimensions/high-cardinality.md)中添加了项目符号，建议对高基数维度使用全表导出。 |
 | 添加了有关移动记分卡中智能字幕的文档 | [智能题注](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions)可以帮助非分析师在没有分析师帮助的情况下更好地理解数据。 |
 | Adobe Product Analytics 功能的新文档 | <ul><li>[功能矩阵](/help/guided-analysis/types/funnel.md)</li><li>增强了[留存率](/help/guided-analysis/types/retention.md)</li><li>[增强了漏斗洞察](/help/guided-analysis/types/funnel.md)</li><li>比较单个漏斗步骤内的事件</li></ul> |
 | **2024 年 3 月** | |
@@ -204,7 +204,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 预测 | 添加了有关[预测](../analysis-workspace/c-forecast/forecasting.md)的文档，这是 Analysis Workspace 的一项新功能，用于按任何支持的时间粒度（每小时、每天、每周、每月和每年）为自由格式表和线形图预测标准量度或计算量度。 |
 | 更新了有关导出完整表格时添加帐户和位置的文档 | 更新了文档，以反映在[从 Analysis Workspace 导出完整表格时](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)，配置新帐户或位置时界面的一些细微更新。<p>[!UICONTROL **帐户**]&#x200B;下拉菜单中现已提供&#x200B;[!UICONTROL **添加帐户**]&#x200B;的新选项。 之前在&#x200B;[!UICONTROL **位置名称**]&#x200B;下拉菜单旁以按钮形式存在的&#x200B;[!UICONTROL **添加位置**]&#x200B;选项，现在已移至菜单内部。 |
 | 从 Adobe Analytics 迁移时的新组件迁移信息 | 在 [Adobe Analytics 的 Evolution](/help/getting-started/aa-to-cja.md) 中添加了信息，其中提到了 Adobe Analytics 管理指南中记录的新[组件迁移](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html)功能。 |
-| 阐明了仅管理员有某些信息可用 | 添加了以下信息：只有系统管理员可以使用[计算量度管理器](/help/components/calc-metrics/cm-workflow/cm-manager.md)和[区段管理器](/help/components/segments/seg-manage.md)中描述的“上次使用的”和“用在”这两列。 |
+| 阐明了某些信息仅供管理员使用 | 添加了以下信息：只有系统管理员可以使用[计算量度管理器](/help/components/calc-metrics/cm-workflow/cm-manager.md)和[区段管理器](/help/components/segments/seg-manage.md)中描述的“上次使用的”和“用在”这两列。 |
 | 导出数据集所需的权限 | 添加了解释将数据集导出至云目的地[所需权限](/help/technotes/access-control.md)的信息。 |
 | 管理连接 | 根据客户反馈更新了[管理连接](../connections/manage-connections.md)文章。 |
 | 派生字段 | 添加了功能[限制](/help/data-views/derived-fields/derived-fields.md#limitations)摘要，以及如何确定函数中使用的[运算符](/help/data-views/derived-fields/derived-fields.md#operators)的数量。 |
@@ -237,7 +237,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | Report Builder 增强 | 更新了[安排工作簿](/help/report-builder/schedule-reportbuilder.md)的内容以提供下载计划任务的信息。 更新了[创建数据块](/help/report-builder/create-a-data-block.md)的内容以提供使用开始日期作为维度的信息。 |
 | 移动了关于管理计划项目的内容 | 在《Analytics 组件指南》中创建了一篇名为[计划项目](/help/components/scheduled-projects-manager.md)的新文章。 此内容以前位于《Analytics 工具指南》中的[计划项目](/help/analysis-workspace/export/t-schedule-report.md)一文中。 |
 | 支持 Adobe Customer Journey Analytics 功能 | 在“Customer Journey Analytics 与 Adobe Analytics 相比”中关于会话化功能的&#x200B;*以新方式支持*&#x200B;表中添加了更多信息。 [了解详情](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
-| Adobe Analytics 的演变 | 通过引用派生字段营销渠道功能模板，更新了&#x200B;*（重新）配置营销渠道*&#x200B;部分。 [了解详情](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
+| 从 Adobe Analytics 演变而来 | 通过引用派生字段营销渠道功能模板，更新了&#x200B;*（重新）配置营销渠道*&#x200B;部分。 [了解详情](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
 | 移动应用程序和其他平台的数据摄取快速入门指南 | 添加了额外的数据摄取快速入门指南，概述了如何在 Customer Journey Analytics 中摄取和使用来自移动应用程序或其他平台（例如桌面应用程序、控制台上的游戏、机顶盒和物联网设备上的应用程序）的数据。 [了解详情](../data-ingestion/data-ingestion.md) |
 | **2023 年 7 月** | |
 | 会话设置 | 为此数据视图设置添加了一个主题。 [了解详情](/help/data-views/session-settings.md) |
@@ -251,10 +251,10 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | PowerBI 和 Tableau 访问 Customer Journey Analytics 数据视图 | Customer Journey Analytics BI 扩展允许 SQL 访问您在 Customer Journey Analytics 中定义的数据视图。 [了解详情](/help/data-views/bi-extension.md) |
 | Adobe Journey Optimizer 数据视图 | Customer Journey Analytics 管理员有权访问 Customer Journey Analytics 中某些名为“AJO 数据视图（沙盒名称）”的额外数据视图。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration)。 |
 | 货币换算 | 更新了有关[货币换算](../data-views/component-settings/format.md#currency)支持的文档。 |
-| 计算量度更新 | 对计算量度文档作出了以下更新，以使其与当前的 Customer Journey Analytics 功能保持一致： <ul><li>更新了 Customer Journey Analytics 中提供的[默认计算量度](/help/components/calc-metrics/default-calcmetrics.md)的列表</li><li>更新了各种计算量度文章中的屏幕截图和过程 </li></ul> |
+| 计算量度更新 | 对计算量度文档作出了以下更新，以使其与当前的 Customer Journey Analytics 功能保持一致： <ul><li>更新了 Customer Journey Analytics 中提供的[默认计算量度](/help/components/calc-metrics/default-calcmetrics.md)的列表</li><li>更新了各种计算量度文章中的屏幕截图和操作步骤 </li></ul> |
 | **2023 年 5 月** | |
-| 深层链接（移动设备应用程序）文档 | 使用户可发送记分卡的链接，而这些链接将引导用户直接进入应用程序中的记分卡项目。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=zh-Hans#share-scorecards-using-a-shareable-link) |
-| 关于 Report Builder 中的“从单元格选择数据视图”文档 | 通过此功能，用户可从单元格选择数据块的数据视图。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=zh-Hans) |
+| 深层链接（移动应用程序）文档 | 使用户可发送记分卡的链接，而这些链接将引导用户直接进入应用程序中的记分卡项目。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=zh-Hans#share-scorecards-using-a-shareable-link) |
+| 关于 Report Builder 中“从单元格选择数据视图”的文档 | 通过此功能，用户可从单元格选择数据块的数据视图。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=zh-Hans) |
 | 关于 Analytics 功能板应用程序（移动设备应用程序）更新的主屏幕的文档 | 通过新近更新的主屏幕，可在一个合并的记分卡列表中查看您的所有记分卡。 [了解详情](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/executive.html?lang=zh-Hans#use-dashboards) |
 | 优化更新 | 更新了有关[优化 Customer Journey Analytics 性能](/help/technotes/optimizing-performance.md)的文章 |
 | Analysis Workspace 概述 | 更新了 [Analysis Workspace 概述](/help/analysis-workspace/home.md)，包括更多的一般概述信息和相关内容的链接。 |
@@ -280,7 +280,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 比较 Customer Journey Analytics 和 BI 解决方案 | 新增了有关 Customer Journey Analytics 与典型 BI 解决方案的[比较](../getting-started/cja-vs-bi.md)的文档。 |
 | 对 Audiences 文档的更新 | 有关[延迟注意事项](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-Hans#latency)的新章节。 |
 | 对 Audiences 文档的更新 | 在您创建受众后，Adobe [为每个新的 Customer Journey Analytics 受众创建一个 Experience Platform 流式区段](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-hans#after-audience-created)。 |
-| 工作区日历和日期范围 | 更新内容以描述相对日期范围、公式计算更新和日程表 UI 更改。 请参阅[关于相对面板日期范围](/help/components/date-ranges/overview.md#custom-date-ranges)。 |
+| 工作区日历和日期范围 | 更新内容以描述相对日期范围、公式计算更新和日历 UI 更改。 请参阅[关于相对面板日期范围](/help/components/date-ranges/overview.md#custom-date-ranges)。 |
 | 移动记分卡 | 新文档部分描述如何显示和隐藏比较日期范围。 请参阅 Customer Journey Analytics 中的[显示比较日期范围](/help/mobile-app/create-scorecard.md#show-comparison-dates)。 |
 | **2023 年 1 月** | |
 | 排序和过滤表格 | 更新了[对表格进行筛选和排序](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)一文中的内容（包括添加过程和解释可用选项）。 本文从“对表格进行分页、筛选和排序”更名而成。 |
@@ -290,7 +290,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 自动保存 Workspace 项目 | 已更新内容以在[保存项目](/help/analysis-workspace/build-workspace-project/save-projects.md)中包含自动保存功能。 |
 | 登陆页面 | 新的登陆页面更新[登陆页面](/help/getting-started/landing.md)。 |
 | 计划工作簿 | 专用页面描述如何在 Report Builder 中[计划工作簿](/help/report-builder/schedule-reportbuilder.md)。 |
-| 对象数组支持轮廓和查找数据集 | 更新了[使用对象数组](/help/use-cases/object-arrays.md)和[摄入 Adobe Experience Platform 受众](/help/use-cases/data-ingestion/ingest-aep-segments.md)以反映对轮廓和查找数据集的对象数组支持。 |
+| 轮廓和查找数据集支持对象数组 | 更新了[使用对象数组](/help/use-cases/object-arrays.md)和[摄入 Adobe Experience Platform 受众](/help/use-cases/data-ingestion/ingest-aep-segments.md)以反映对轮廓和查找数据集的对象数组支持。 |
 
 {style="table-layout:auto"}
 
@@ -362,7 +362,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 2021 年 10 月 | 有关 Customer Journey Analytics 中的 [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/rb-overview.html?lang=zh-Hans#) 的文档。 |
 | 2021 年 10 月 | Customer Journey Analytics [审核日志](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) API 文档 |
 | 2021 年 10 月 | 记录了 [Analytics 功能板的可视化图表](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=zh-hans#apply-visualizations) |
-| 2021 年 10 月 | 有关[!UICONTROL 连接][数据保留](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-hans#set-rolling-window-for-connection-data-retention)滚动时段的文档 |
+| 2021 年 10 月 | 有关[!UICONTROL 连接]&#x200B;[数据保留](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-hans#set-rolling-window-for-connection-data-retention)滚动时段的文档 |
 | **2021 年 9 月** | |
 | 2021 年 9 月 | [重复量度删除](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication.html?lang=zh-hans)文档 |
 | 2021 年 9 月 | [报告中的夏令时支持](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-hans#calendar) |

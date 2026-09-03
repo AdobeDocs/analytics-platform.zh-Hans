@@ -42,7 +42,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-tags"
 >title="Web SDK 标记扩展"
->abstract="（推荐）如果您尚未使用标记，请在您的网站上安装标记加载器。 如果您已经使用标记，可以将 Web SDK 扩展添加到您的标记属性。 此选项包括使用 Adobe Experience Platform 数据收集和第三方标记管理系统中的标记的实施。"
+>abstract="（推荐）如果您尚未使用标记，请在您的网站上安装标记加载器。 如果您已经使用 Tags，可以将 Web SDK 扩展添加到您的标记属性。 此选项包括使用 Adobe Experience Platform 数据收集和第三方标记管理系统中的标记的实施。"
 
 <!-- markdownlint-enable MD034 -->
 

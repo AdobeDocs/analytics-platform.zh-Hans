@@ -1,7 +1,7 @@
 ---
 keywords: Analysis Workspace
 title: Analysis Workspace 概述
-description: 了解 Analysis Workspace —— Adobe Analytics 的高级分析工具。 通过项目、面板、表格、可视化图表及其他组件，使数据生动呈现，并进行内容管理与分析共享。
+description: 了解 Analysis Workspace —— Adobe Analytics 的高级分析工具。 通过项目、面板、表格、可视化图表及其他组件，使数据生动呈现，并整理和共享您的分析。
 feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
@@ -82,7 +82,7 @@ Analysis Workspace 的大部分功能可通过拖放以及面板、可视化内�
 - **⌥** 表示 **[!UICONTROL *opt *]**（选项）。
 - **⎇** 表示 **[!UICONTROL *alt *]**（备选）。
 
-请参阅下表以了解可用菜单的概述。
+请参阅下表，了解可用菜单的概览。
 
 | **[!UICONTROL 项目]** | Mac 快捷方式 | Windows 快捷方式 | 描述 |
 |---|---|---|---|
@@ -179,7 +179,7 @@ Analysis Workspace 中的分析被称作[项目](/help/analysis-workspace/build-
 
 ## 其他资源 {#resources}
 
-- Customer Journey Analytics 中的[“学习”登录](/help/getting-started/landing.md#learning)页面。 该页面是熟悉 Analysis Workspace 的好方法。 特别是对于学习 Workspace 的基础内容。 此模板将可指导您逐步了解在 Workspace 中构建第一个分析时通常会用到的术语和步骤
+- Customer Journey Analytics 中的[“学习”登录](/help/getting-started/landing.md#learning)页面。 该页面是熟悉 Analysis Workspace 的好方法。 特别是“学习 Workspace 基础”。 此模板将指导您逐步了解在 Workspace 中构建第一个分析时通常会用到的术语和步骤
 - Adobe 提供大量的 [Analytics 视频培训教程](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/overview)。
 - 有关新功能的更新，请参阅[CX Enterprise发行说明](https://experienceleague.adobe.com/zh-hans/docs/release-notes/experience-cloud/current)。
 

@@ -24,7 +24,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 3756
+source-wordcount: 3763
 ht-degree: 87%
 
 ---
@@ -318,7 +318,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
 ### 数据管理
 
-Customer Journey Analytics 中与数据管理相关的设置继承自 Adobe Experience Platform。 Customer Journey Analytics 和 Adobe Experience Platform 数据管理之间的集成允许标记敏感的 Customer Journey Analytics 数据和实施隐私政策。
+Customer Journey Analytics 中与数据治理相关的设置继承自 Adobe Experience Platform。 Customer Journey Analytics 和 Adobe Experience Platform 数据治理之间的集成允许标记敏感的 Customer Journey Analytics 数据和实施隐私政策。
 
 在 Experience Platform 使用的数据集上创建的隐私标签和政策可以在 Customer Journey Analytics 数据视图工作流中显示。 因此，在未遵循定义的隐私标签和政策时，使用 [!DNL Customer Journey Analytics BI extension] 查询的数据会显示相应的警告或错误。
 
@@ -337,7 +337,7 @@ prod:all=> \dv
 
 ### 嵌套与扁平化处理
 
-默认情况下，数据视图架构使用嵌套结构，就像原始 XDM 架构一样。 该集成还支持 `FLATTEN` 选项。 您可以使用此选项实施要扁平化处理的数据视图（以及会话中的任何其他表）的架构。 通过扁平化处理，可以更轻松地在不支持结构化架构的 BI 工具中使用。 有关更多信息，请参阅[在 Query Service 中使用嵌套数据结构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/key-concepts/flatten-nested-data)。
+默认情况下，数据视图架构使用嵌套结构，就像原始 XDM 架构一样。 该集成还支持 `FLATTEN` 选项。 您可以使用此选项强制将数据视图（以及会话中的任何其他表）的架构扁平化处理。 通过扁平化处理，可以更轻松地在不支持结构化架构的 BI 工具中使用。 有关更多信息，请参阅[在 Query Service 中使用嵌套数据结构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/key-concepts/flatten-nested-data)。
 
 
 ### 默认设置和限制
@@ -347,11 +347,11 @@ prod:all=> \dv
 * BI 扩展要求对查询结果的行数进行限制。 默认值为 50，但您可以在 SQL 中使用 `LIMIT n` 覆盖此值，其中 `n` 为 1 - 50000。
 * BI 扩展需要一个日期范围来限制用于计算的行数。 其默认值为最近 30 天，但您可以使用特殊的 `WHERE` 或 [`timestamp`](#timestamp) 列在 SQL [`daterange`](#date-range) 子句中覆盖它。
 * BI 扩展需要聚合查询。 您不能使用类似于 `SELECT * FROM ...` 的 SQL 来获取原始的底层行。 从宏观层面来看，您的聚合查询应使用：
-   * 使用`SUM`和/或`COUNT`.<br/>选择总数 例如，`SELECT SUM(metric1), COUNT(*) FROM ...`
-   * 选择按维度细分的量度。 <br/>例如，`SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
-   * 选择不同的度量值。<br/>例如，`SELECT DISTINCT dimension1 FROM ...`
+  * 使用`SUM`和/或`COUNT`.<br/>选择总数 例如，`SELECT SUM(metric1), COUNT(*) FROM ...`
+  * 选择按维度细分的量度。 <br/>例如，`SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
+  * 选择不同的度量值。<br/>例如，`SELECT DISTINCT dimension1 FROM ...`
 
-     参阅有关[支持的 SQL](#supported-sql) 的更多信息。
+    参阅有关[支持的 SQL](#supported-sql) 的更多信息。
 
 
 ### 支持的 SQL
@@ -578,7 +578,7 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 | 运算符或函数 | 详细信息 |
 |---|---|
 | `+`、`-`、`*`、`/` 和 `%` | 加、减、乘、除和模数/余数 |
-| `-X` 或 `+X` | 更改符号或量度，其中 X 是量度表达式 |
+| `-X` 或 `+X` | 更改量度的符号，其中 X 是量度表达式 |
 | `PI()` | π 常量 |
 | `POSITIVE`、`NEGATIVE`、`ABS`、`FLOOR`、`CEIL`、`CEILING`、`EXP`、`LN`、`LOG10`、`LOG1P`、`SQRT`、`CBRT`、`DEGREES`、`RADIANS`、`SIN`、`COS`、`TAN`、`ACOS`、`ASIN`、`ATAN`、`COSH`、`SINH` 和 `TANH` | 一元数学函数 |
 | `MOD`, `POW`, `POWER`, `ROUND`, `LOG` | 二元数学函数 |
@@ -688,7 +688,7 @@ ORDER BY -metric1 DESC
 
 ### 部分支持
 
-BI 扩展插件仅部分支持某些 SQL 功能，并且不会返回与其他数据库相同的结果。  此特定功能用于由各种 BI 工具生成的 SQL，而 BI 扩展插件无法与之完全匹配。 因此，BI 扩展主要聚焦于一个有限的实施，该实施仅涵盖最低限度的 BI 工具使用情况，且不会引发错误。 有关更多详细信息，请参阅下表。
+BI 扩展仅部分支持某些 SQL 功能，并且不会返回与其他数据库相同的结果。  此特定功能用于由各种 BI 工具生成的 SQL，而 BI 扩展没有与之完全对应的功能。 因此，BI 扩展主要聚焦于一个有限的实施，该实施仅涵盖最低限度的 BI 工具使用情况，且不会引发错误。 有关更多详细信息，请参阅下表。
 
 | 功能 | 示例 | 详细信息 |
 |---|---|---|

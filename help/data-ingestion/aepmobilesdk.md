@@ -166,7 +166,7 @@ ht-degree: 63%
 
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存架构。
 
-您已创建一个最小架构，用于为您可从移动应用程序中捕获的数据建模。 该架构允许使用 Experience Cloud Identity 和电子邮件地址来识别轮廓。 通过为配置文件启用架构，您可以确保将从移动应用程序捕获的数据添加到实时客户配置文件。
+您已创建一个最小架构，用于为您可从移动应用程序中捕获的数据建模。 该架构允许使用 Experience Cloud 身份标识和电子邮件地址来识别轮廓。 通过为配置文件启用架构，您可以确保将从移动应用程序捕获的数据添加到实时客户配置文件。
 
 除了行为数据之外，您还可以从移动应用程序捕获配置文件属性数据（例如订阅新闻通讯的配置文件详细信息）。
 
@@ -178,7 +178,7 @@ ht-degree: 63%
 
 - 添加基于 Profile Core v2 字段组的身份标识对象。
 
-- 将 Experience Cloud ID 定义为主要身份标识符，并将电子邮件定义为身份标识符。
+- 将 Experience Cloud ID 定义为主要标识符，并将电子邮件定义为标识符。
 
 - 为轮廓启用架构
 
@@ -186,7 +186,7 @@ ht-degree: 63%
 
 ### 设置数据集
 
-使用您的架构，您已经定义了数据模型。 现在，您必须定义结构以使用数据集存储和管理这些数据。
+通过您的架构，您已经定义了数据模型。 现在，您必须定义结构以使用数据集存储和管理这些数据。
 
 设置您的数据集
 
@@ -210,7 +210,7 @@ ht-degree: 63%
 
 7. 选择&#x200B;**[!UICONTROL 轮廓]**&#x200B;开关
 
-   系统会提示您启用轮廓的数据集。 启用后，数据集会使用其摄取的数据丰富实时客户轮廓。
+   系统会提示您为轮廓启用数据集。 启用后，数据集会使用其摄取的数据丰富实时客户轮廓。
 
    >[!IMPORTANT]
    >
@@ -260,7 +260,7 @@ ht-degree: 63%
 
 ## 使用标签
 
-要在您的网站上实施代码以实际收集数据，请使用Adobe Experience Platform中的标记功能。 这一款标记管理解决方案，可让您在满足其他标记要求的同时部署代码。 标记通过Adobe Experience Platform Mobile Adobe Experience Platform扩展提供了与SDK的无缝集成。
+要在您的网站上实施代码以实际收集数据，请使用Adobe Experience Platform中的标记功能。 这种标记管理解决方案可让您在满足其他标记要求的同时部署代码。 标记通过Adobe Experience Platform Mobile Adobe Experience Platform扩展提供了与SDK的无缝集成。
 
 ### 创建您的标记
 
@@ -339,7 +339,7 @@ ht-degree: 63%
 
 #### **规则**
 
-Adobe Experience Platform 中的标签遵循基于规则的系统。 他们寻找用户交互和相关数据。 如果满足您的规则中所列的标准，则规则会触发您已识别的扩展、脚本或客户端代码。 您可以使用规则通过Adobe Experience Platform Edge Network扩展将数据发送到Adobe Experience Platform中（如XDM对象）。
+Adobe Experience Platform 中的标签遵循基于规则的系统。 它们会查找用户交互和相关数据。 如果满足您的规则中所列的标准，则规则会触发您已识别的扩展、脚本或客户端代码。 您可以使用规则通过Adobe Experience Platform Edge Network扩展将数据发送到Adobe Experience Platform中（如XDM对象）。
 
 例如，您希望在使用移动设备应用程序时（在前台）和不使用移动设备应用程序时（推送回后台）发送事件数据。
 
@@ -357,27 +357,27 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。 他们寻�
 
    - 在[!UICONTROL 事件配置]对话框中：
 
-      - 从[!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL 移动核心]**。
+     - 从[!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL 移动核心]**。
 
-      - 从[!UICONTROL 事件类型]列表中选择&#x200B;**[!UICONTROL 前台]**。
+     - 从[!UICONTROL 事件类型]列表中选择&#x200B;**[!UICONTROL 前台]**。
 
-      - 选择&#x200B;**[!UICONTROL 保留更改]**。
+     - 选择&#x200B;**[!UICONTROL 保留更改]**。
 
    - 单击[!UICONTROL 移动核心 — 前台]旁边的![加号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)。
 
-      - 从[!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL 移动核心]**。
+     - 从[!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL 移动核心]**。
 
-      - 从[!UICONTROL 事件类型]列表中选择&#x200B;**[!UICONTROL 背景]**。
+     - 从[!UICONTROL 事件类型]列表中选择&#x200B;**[!UICONTROL 背景]**。
 
-      - 选择&#x200B;**[!UICONTROL 保留更改]**。
+     - 选择&#x200B;**[!UICONTROL 保留更改]**。
 
    - 单击[!UICONTROL ACTIONS]下的![加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)“添加”。 在[!UICONTROL 操作配置]对话框中：
 
-      - 从[!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL Adobe Experience Platform Edge Network]**。
+     - 从[!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL Adobe Experience Platform Edge Network]**。
 
-      - 从[!UICONTROL 操作类型]列表中选择&#x200B;**[!UICONTROL 将事件转发到Edge Network]**。
+     - 从[!UICONTROL 操作类型]列表中选择&#x200B;**[!UICONTROL 将事件转发到Edge Network]**。
 
-      - 选择&#x200B;**[!UICONTROL 保留更改]**。
+     - 选择&#x200B;**[!UICONTROL 保留更改]**。
 
    - 您的规则应如下所示：
 
@@ -393,7 +393,7 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。 他们寻�
 
 ### 生成并发布标签
 
-在定义了数据元素和规则之后，您需要构建和发布标签。 创建库生成时，必须将其分配给环境。 然后，将会编译该内部版本的扩展、规则和数据元素，并将这些内容放入分配的环境。 每个环境都提供了一个唯一的嵌入代码，从而允许您将其分配的内部版本集成到网站中。
+在定义了数据元素和规则之后，您需要构建和发布标签。 创建库生成时，必须将其分配给环境。 然后，将会编译该构建版本的扩展、规则和数据元素，并将这些内容放入分配的环境。 每个环境都提供了一个唯一的嵌入代码，从而允许您将其分配的构建版本集成到网站中。
 
 要生成并发布您的标签：
 
@@ -413,7 +413,7 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。 他们寻�
 
    - 选择&#x200B;**[!UICONTROL 保存并生成到开发]**。
 
-   您的标记已保存，并为您的开发环境构建。 绿色圆点表示在开发环境中成功构建了标记。
+   您的标记已保存，并为您的开发环境构建。 绿色圆点表示您的标记已在您的开发环境中成功构建。
 
 4. 您可以选择&#x200B;**[!UICONTROL ...]** 重建库或将库移动到临时或生产环境。
 
@@ -446,7 +446,7 @@ Adobe Experience Platform标记支持从简单到复杂的发布工作流程，�
 
 您现在可以在移动应用程序中部署代码。 部署后，您的移动应用程序会开始将数据收集到Adobe Experience Platform中。
 
-验证您的实现，在必要时进行更正，更正后，使用标签的发布工作流功能将其部署到您的暂存和生产环境中。
+验证您的实施，在必要时进行更正，更正后，使用标签的发布工作流功能将其部署到您的暂存和生产环境中。
 
 有关更多详细信息，请参阅[在移动应用程序中实施Adobe Experience Cloud教程](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=zh-Hans)。
 
@@ -484,11 +484,11 @@ Adobe Experience Platform标记支持从简单到复杂的发布工作流程，�
 
    - 对于每个数据集：
 
-      - 在 Adobe Experience Platform 中，从在数据集架构中定义的可用身份标识中选择[!UICONTROL 人员 ID]。
+     - 在 Adobe Experience Platform 中，从在数据集架构中定义的可用身份标识中选择[!UICONTROL 人员 ID]。
 
-      - 从[!UICONTROL 数据源类型]列表中选择正确的数据源。 如果指定&#x200B;**[!UICONTROL 其他]**，则为您的数据源添加描述。
+     - 从[!UICONTROL 数据源类型]列表中选择正确的数据源。 如果指定&#x200B;**[!UICONTROL 其他]**，则为您的数据源添加描述。
 
-      - 根据您的首选项设置&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;和&#x200B;**[!UICONTROL 数据集回填现有数据]**。
+     - 根据您的首选项设置&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;和&#x200B;**[!UICONTROL 数据集回填现有数据]**。
 
      ![配置数据集](./assets/cja-connections-ajopushid.png)
 
@@ -512,7 +512,7 @@ Adobe Experience Platform标记支持从简单到复杂的发布工作流程，�
 
    从[!UICONTROL 连接]列表中选择您的连接。
 
-   名称并（可选）描述您的连接。
+   为您的连接命名并（可选）添加描述。
 
    ![数据视图配置](./assets/cja-dataview-1.png)
 

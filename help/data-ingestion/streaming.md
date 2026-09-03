@@ -175,7 +175,7 @@ ht-degree: 83%
 
 7. 选择&#x200B;**[!UICONTROL 轮廓]**&#x200B;开关
 
-   系统会提示您启用轮廓的数据集。 启用后，数据集会使用其摄取的数据丰富实时客户轮廓。
+   系统会提示您为轮廓启用数据集。 启用后，数据集会使用其摄取的数据丰富实时客户轮廓。
 
    >[!IMPORTANT]
    >
@@ -297,11 +297,11 @@ ht-degree: 83%
 
    - 对于每个数据集：
 
-      - 在 Adobe Experience Platform 中，从在数据集架构中定义的可用身份标识中选择[!UICONTROL 人员 ID]。
+     - 在 Adobe Experience Platform 中，从在数据集架构中定义的可用身份标识中选择[!UICONTROL 人员 ID]。
 
-      - 从[!UICONTROL 数据源类型]列表中选择正确的数据源。 如果指定&#x200B;**[!UICONTROL 其他]**，则为您的数据源添加描述。
+     - 从[!UICONTROL 数据源类型]列表中选择正确的数据源。 如果指定&#x200B;**[!UICONTROL 其他]**，则为您的数据源添加描述。
 
-      - 根据您的首选项设置&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;和&#x200B;**[!UICONTROL 数据集回填现有数据]**。
+     - 根据您的首选项设置&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;和&#x200B;**[!UICONTROL 数据集回填现有数据]**。
 
      ![配置数据集](./assets/cja-connections-3.png)
 
@@ -325,7 +325,7 @@ ht-degree: 83%
 
    从[!UICONTROL 连接]列表中选择您的连接。
 
-   名称并（可选）描述您的连接。
+   为您的连接命名并（可选）添加描述。
 
    ![数据视图配置](./assets/cja-dataview-1.png)
 

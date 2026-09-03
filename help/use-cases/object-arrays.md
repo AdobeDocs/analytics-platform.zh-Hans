@@ -29,9 +29,9 @@ ht-degree: 59%
 
 # 使用对象数组
 
-某些平台架构可以具有对象数组。 Adobe Customer Journey Analytics支持摄取和报告事件、查找和配置文件数据中的对象数组。 最常见的示例之一是包含多个产品的购物车。 每个产品都有一个名称、SKU、类别、价格、数量以及要跟踪的任何其他维度。 所有这些方面都有不同的要求，但必须都属于相同点击。
+某些平台架构可以具有对象数组。 Adobe Customer Journey Analytics支持摄取和报告事件、查找和配置文件数据中的对象数组。 最常见的示例之一是包含多个产品的购物车。 每个产品都有一个名称、SKU、类别、价格、数量以及要跟踪的任何其他维度。 所有这些方面都有各自的要求，但都必须适合同一次点击。
 
-在以前版本的 Adobe Analytics 中，此功能是通过 `products` 变量实现的。 它是一个连接字符串，用分号 (`;`) 分隔以区分产品不同方面，同时用逗号 (`,`) 描述不同产品。 它是有限支持“对象数组”的唯一变量。 多值变量（如列表变量）可以支持数组的等效内容，但它们不能支持“对象数组”。 Customer Journey Analytics通过支持单行数据中任意深度的层次结构扩展了这一概念，任何以前版本的Adobe Analytics均不提供该功能。
+在以前版本的 Adobe Analytics 中，此功能是通过 `products` 变量实现的。 它是一个连接字符串，用分号 (`;`) 分隔以区分产品不同方面，同时用逗号 (`,`) 描述不同产品。 它是唯一一个对“对象数组”提供有限支持的变量。 多值变量（如列表变量）可以支持相当于数组的功能，但它们不能支持“对象数组”。 Customer Journey Analytics通过支持单行数据中任意深度的层次结构扩展了这一概念，任何以前版本的Adobe Analytics均不提供该功能。
 
 ## 相同事件示例
 
@@ -82,20 +82,20 @@ ht-degree: 59%
 创建数据视图时，以下维度和量度可用（基于架构）：
 
 * **维度：**
-   * ID
-   * product : SKU
-   * product : name
-   * product : order_id
-   * product : warranty : coverage
-   * prodcut : warranty : length
-   * product : warranty : name
-   * product : warranty : type
+  * ID
+  * product : SKU
+  * product : name
+  * product : order_id
+  * product : warranty : coverage
+  * prodcut : warranty : length
+  * product : warranty : name
+  * product : warranty : type
 * **量度：**
-   * product : orders
-   * product : units
-   * product : revenue
-   * product : warranty
-   * product : warranty : revenue
+  * product : orders
+  * product : units
+  * product : revenue
+  * product : warranty
+  * product : warranty : revenue
 
 ### 相同事件示例（报表行为）
 
@@ -213,7 +213,7 @@ Customer Journey Analytics会查看事件的这些部分来生成报表：
 | `Unspecified` | `2` | `1` |
 | `Total` | `2` | `2` |
 
-产品订单存在，却不包含与其关联的保修名称，因此该维度项目属于“未指定”。 产品保修订单也存在相同情况：
+产品订单存在，却不包含与其关联的保修名称，因此该维度项目归因于“未指定”。 产品保修订单也存在相同情况：
 
 ```diff
 {
@@ -257,7 +257,7 @@ Customer Journey Analytics会查看事件的这些部分来生成报表：
 +}
 ```
 
-请注意那些没有关联名称的订单。 它们是归因于“未指定”维度项目的订单。
+请注意那些没有关联名称的订单。 这些是归因于“未指定”维度项目的订单。
 
 ### 组合量度
 

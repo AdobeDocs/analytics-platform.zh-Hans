@@ -59,7 +59,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 ## 先决条件
 
-要使用实验面板，请确保遵循以下先决条件：
+要使用试验面板，请确保遵循以下先决条件：
 
 ### 创建与试验数据集的连接
 
@@ -75,7 +75,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 * [!UICONTROL 试验试验]
 * [!UICONTROL 试验变量]
 
-在包含试验数据的数据视图中，选择两个维度，一个包含试验数据，另一个包含变量数据。 然后用&#x200B;**[!UICONTROL 实验试验]**&#x200B;和&#x200B;**[!UICONTROL 实验变量]**&#x200B;标签标注这些维度。
+在包含试验数据的数据视图中，选择两个维度，一个包含试验数据，另一个包含变体数据。 然后用&#x200B;**[!UICONTROL 实验试验]**&#x200B;和&#x200B;**[!UICONTROL 实验变量]**&#x200B;标签标注这些维度。
 
 ![实验和实验变量的上下文标签选项。](assets/context-label.png)
 
@@ -99,7 +99,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 ### 面板输入
 
-要使用实验面板：
+要使用试验面板：
 
 1. 配置面板输入设置：
 
@@ -108,9 +108,9 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
    | 设置 | 定义 |
    | --- | --- |
    | **[!UICONTROL 日期范围]** | 根据 Customer Journey Analytics 中收到的所选试验的第一个事件，实验面板的日期范围会自动设置。 如果需要，可以将日期范围限制或扩展到更具体的时间范围。 |
-   | **[!UICONTROL 试验]** | 向最终用户展示的某项体验的一组变体，以确定哪一种体验最适合永久保存。 试验由两个或多个变量组成，其中一个变量会被视为控制变量。 该设置预先填充了数据视图中已标记为&#x200B;**[!UICONTROL 试验]**&#x200B;标签的维度，以及过去 6 个月的实验数据。 |
+   | **[!UICONTROL 试验]** | 向最终用户展示的某项体验的一组变体，以确定哪一种体验最适合永久保存。 试验由两个或多个变体组成，其中一个变体被视为控制变体。 该设置预先填充了数据视图中已标记为&#x200B;**[!UICONTROL 试验]**&#x200B;标签的维度，以及过去 6 个月的实验数据。 |
    | **[!UICONTROL 控制变量]** | 最终用户体验中的两种或多种变化中的一种，并会为了确定更好的替代方案而对其进行比较。 必须选择一个变量作为控制变量，并且只能将一个变量视为控制变量。 该设置预先填充了数据视图中已标记为&#x200B;**[!UICONTROL 变量]**&#x200B;标签的维度。 此设置将会调出与此试验相关的变量数据。 |
-   | **[!UICONTROL 成功量度]** ➊ | 用户正在与变量进行比较的一个或多个量度。 可产生最理想的转化量度结果（最高或最低）的变量会成为某项试验中具有&#x200B;*最佳性能的变量*。 最多可添加 5 个量度。 |
+   | **[!UICONTROL 成功量度]** ➊ | 用户用来比较变体的一个或多个量度。 可产生最理想的转化量度结果（最高或最低）的变量会成为某项试验中具有&#x200B;*最佳性能的变量*。 最多可添加 5 个量度。 |
    | **[!UICONTROL 标准化量度]** ➋ | 测试运行的基础（**[!UICONTROL 全球帐户]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 帐户]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 机会]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 购买群组]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 人员]**、**[!UICONTROL 会话]**&#x200B;或&#x200B;**[!UICONTROL 事件]**）。 例如，测试可以比较几种变体的转化率，**[!UICONTROL 转化率]**&#x200B;的计算方法是页面浏览量。 |
    | **[!UICONTROL 包括置信上限/下限]** | 启用此选项可以显示置信度的上限和下限。 |
 
@@ -119,9 +119,9 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 ### 面板输出
 
-试验面板会返回一组丰富的数据和可视化图表，以帮助您更好地了解试验的执行情况。 在该面板顶部，提供了一个[摘要更改](../visualizations/summary-number-change.md)可视化图表，用于提醒您选择的面板设置。 在任何时候，您都可以通过选择右上角的编辑铅笔来编辑面板。
+试验面板会返回一组丰富的数据和可视化图表，以帮助您更好地了解试验的执行情况。 在该面板顶部，提供了一个[摘要更改](../visualizations/summary-number-change.md)可视化图表，用于提醒您选择的面板设置。 在任何时候，您都可以通过选择右上角的编辑铅笔图标来编辑面板。
 
-您还可以获得一份文本摘要，其中会指出试验是否具有结论性，并会总结结果。 结论性基于统计显着性（请参阅[统计方法](#adobes-statistical-methodology)。） 您可以看到具有最高提升和置信度的最佳性能变量的摘要数字。
+您还可以获得一份文本摘要，其中会指出试验是否有定论，并总结结果。 结论性基于统计显着性（请参阅[统计方法](#adobes-statistical-methodology)。） 您可以看到具有最高提升和置信度的最佳性能变量的摘要数字。
 
 对于您选择的每个成功量度，都会显示一个[自由格式表](../visualizations/freeform-table/freeform-table.md)可视化图表和一个转化率[线型](../visualizations/line.md)可视化图表。
 
@@ -140,9 +140,9 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 3. **转化率**：显示的转化率是成功量度值➊与标准化量度值➋的比率。 注意，如果量度不是二进制的（实验中的每个单位为 1 或 0），则该值可能大于 1
 
-4. **提升**：试验报告摘要显示超过基线的部分，这是对给定变量转换率超过基线的改进百分比的衡量。 精确地来说，它是给定变量与基线之间的性能差异除以基线的性能，并以百分比表示。
+4. **提升**：试验报告摘要显示超过基线的部分，这是对给定变量转换率超过基线的改进百分比的衡量。 精确地来说，它是给定变体与基准之间的性能差异除以基准的性能，并以百分比表示。
 
-5. **置信度**：所示的随时有效置信度是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。 置信度越高，表明支持控制变量和非控制变量具有相同性能的假设的证据越少。 置信度是指您观察到给定变量与控制变量之间转化率差异较小的概率（以百分比表示）。 而实际上，真正的潜在转化率并无差异。 就 *p* 值而言，显示的置信度为1-*p*-值。
+5. **置信度**：所示的随时有效置信度是一种概率度量，可表明有多少证据能够表明给定变量与控制变量相同。 置信度越高，表明支持控制变体和非控制变体具有相同性能这一假设的证据越少。 置信度是指您观察到给定变量与控制变量之间转化率差异较小的概率（以百分比表示）。 而实际上，真正的潜在转化率并无差异。 就 *p* 值而言，显示的置信度为1-*p*-值。
 
 >[!NOTE]
 >
@@ -154,11 +154,11 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 置信度序列是置信区间的&#x200B;*顺序*&#x200B;模拟。 要理解置信度序列是什么，请想象一下您重复试验一百次。 并为&#x200B;*每位参与实验的新用户*&#x200B;计算平均业务量度（例如电子邮件的打开率）的估计值及其相关的 95% 置信度序列。
 
-95% 置信度序列将包括您运行的 100 次实验中的 95 次实验中业务量度的“真”值。 （每个试验只能计算一次 95% 置信区间，以提供相同的 95% 覆盖率保证；而不是计算每个新用户）。 因此，通过使用置信序列，您可以连续监控试验，而不会增加假阳性错误率，即这些序列允许“窥视”结果。
+95% 置信度序列将包括您运行的 100 次实验中的 95 次实验中业务指标的“真”值。 （每个试验只能计算一次 95% 置信区间，以提供相同的 95% 覆盖率保证；而不是计算每个新用户）。 因此，通过使用置信序列，您可以连续监控试验，而不会增加假阳性错误率，即这些序列允许“窥视”结果。
 
 ## 解释非随机维度 {#non-randomized}
 
-Customer Journey Analytics 允许分析师选择任何维度作为实验。 但是，如果所选的实验维度不是对人员进行随机分组的，那么该如何解释分析呢？
+Customer Journey Analytics 允许分析师选择任何维度作为试验。 但是，如果所选的试验维度不是对人员进行随机分组的，那么该如何解释分析呢？
 
 例如，考虑一个人看到的广告。 如果您决定向人员显示&#x200B;*广告B*&#x200B;而不是&#x200B;*广告A*，则您可能有兴趣测量某些量度的变化（例如，平均收入）。显示广告B（而不是广告A）的因果关系对于做出营销决策至关重要。 如果用展示广告 B 的替代策略取代展示广告 A 的现状，那么这种因果效应可以用整个人群的平均收入来衡量。
 
@@ -166,13 +166,13 @@ A/B 测试是业内客观衡量此类干预效果的黄金标准。 A/B 测试�
 
 现在，考虑一个并非通过随机化实现的维度，例如，该人所在的美国州。 人们主要来自两个州，即纽约和加利福尼亚。 由于存在地区气候差异，冬季服装品牌在两个州的平均销售收入可能会有所不同。 在这种情况下，天气可能是冬季服装销售的真正影响因素，而不是人们的地理位置不同。
 
-使用 Customer Journey Analytics 中的实验面板可以分析不同人员所在州的平均收入差异数据。 在这种情况下，输出没有因果解释。 然而，这样的分析可能仍然具有吸引力。 它提供了各州平均收入差异的估计值（以及不确定性指标）。  该值也称为&#x200B;*统计假设验证测试*。 这种分析的结果可能具有吸引力，但并不一定具有可操作性。 这仅仅是因为您尚未进行随机化，并且有时无法将人们随机分配到维度的某一可能值。
+使用 Customer Journey Analytics 中的实验面板可以分析不同人员所在州的平均收入差异数据。 在这种情况下，输出没有因果解释。 然而，这样的分析可能仍然令人感兴趣。 它提供了各州平均收入差异的估计值（以及不确定性指标）。  该值也称为&#x200B;*统计假设验证测试*。 这种分析的结果可能具有吸引力，但并不一定具有可操作性。 这仅仅是因为您尚未进行随机化，并且有时无法将人们随机分配到维度的某一可能值。
 
 下列插图对比了这些情况：
 
 ![显示观察数据和随机实验的图表。](assets/randomize.png)
 
-当您想衡量干预措施 X 对结果 Y 的影响时，很可能两者的真正原因都是混杂因素 C。如果数据不是通过对 X 进行随机分组而获得的，那么影响就更难衡量，而分析会明确考虑到 C。随机化打破了 X 对 C 的依赖，让我们可以衡量 X 对 Y 的影响，而不必担心其他变量。
+当您想衡量干预措施 X 对结果 Y 的影响时，很可能两者的真正原因都是混杂因素 C。如果数据不是通过针对 X 将人们随机分配而获得的，那么这种影响就更难衡量，而分析会明确考虑到 C。随机化打破了 X 对 C 的依赖，让我们可以衡量 X 对 Y 的影响，而不必担心其他变量。
 
 ## 在实验中使用计算量度。 {#use-in-experimentation}
 
@@ -188,7 +188,7 @@ A/B 测试是业内客观衡量此类干预效果的黄金标准。 A/B 测试�
 * 基础指标之间进行相除或相乘（例如，`Revenue`/`Orders`）
 * 在基础量度上增加或减少的常数（例如，`Revenue+50`）
 * 以下任何基础量度：
-   * 人员
+  * 人员
 
 在创建计算量度时，与“实验”面板不兼容的计算量度在&#x200B;[!UICONTROL **产品兼容性**]&#x200B;字段中显示为 Customer Journey Analytics （不包括实验）中的&#x200B;[!UICONTROL **所有位置**]&#x200B;值。 有关创建计算量度的信息，请参阅[建立量度](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)。
 

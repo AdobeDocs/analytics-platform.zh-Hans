@@ -35,7 +35,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-tailored"
 >title="使用一个自定义架构"
->abstract="（推荐）自定义架构可以让您的组织只跟踪您需要的内容，避免那些与混乱和不需要的领域相关的开支。 此选项包括 Web SDK 添加的字段组和您的组织自定义的字段组。"
+>abstract="（推荐）自定义架构可以让您的组织只跟踪所需内容，并避免与杂乱和不需要的字段相关的额外负担。 此选项包括 Web SDK 添加的字段组和您的组织自定义的字段组。"
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-default"

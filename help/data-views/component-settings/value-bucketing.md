@@ -48,9 +48,9 @@ ht-degree: 100%
 | 设置 | 描述 |
 | --- | --- |
 | [!UICONTROL 将值分段] | 一个使您可启用分段的复选框。 |
-| [!UICONTROL 小于] | 第一个维度分段的上限。 |
-| [!UICONTROL 包括] [!UICONTROL 并小于] | 后续分段的边界。 |
-| [!UICONTROL 大于或等于] | 最后一个维度分段的下限。 |
-| [!UICONTROL 添加分段] | 使您可将另一分段添加到数值维度分段。 在一个维度中可添加最多 20 个分段。 |
+| [!UICONTROL 小于] | 第一个维度桶的上限。 |
+| [!UICONTROL 包括][!UICONTROL 并小于] | 后续分段的边界。 |
+| [!UICONTROL 大于或等于] | 最后一个维度桶的下限。 |
+| [!UICONTROL 添加分段] | 使您可以向数值维度分桶中添加另一个桶。 在一个维度中可添加最多 20 个分段。 |
 
 {style="table-layout:auto"}

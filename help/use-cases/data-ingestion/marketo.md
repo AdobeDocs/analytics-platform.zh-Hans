@@ -29,8 +29,8 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: e430f26e2b6357a288adb4389a266f26acab68c4
 workflow-type: tm+mt
-source-wordcount: 1448
-ht-degree: 8%
+source-wordcount: 1476
+ht-degree: 9%
 
 ---
 
@@ -120,8 +120,8 @@ Marketo数据本身不包含ECID，但ECID字段可以添加为随`munchkin.js`�
 
 您可以探索的一个用例是：2020年4月至6月，潜在客户访问了多少网页？
 
-1. 打开[Analytics Workspace](/help/analysis-workspace/home.md)并创建新项目。
-拥有B2B/B2P CDP的客户可以在Customer Journey Analytics中进行B2C风格分析。B2B对象尚不可用。
+1. 打开 [Analytics Workspace](/help/analysis-workspace/home.md) 并创建新项目。
+拥有B2B/B2P CDP的客户可以在Customer Journey Analytics中进行B2C风格分析。 B2B 对象尚不可用。
 
 1. 为网页视图创建一个[区段](/help/components/segments/seg-create.md)，如下所示：事件类型= web.webpagedetails.pageViews ：
 
@@ -131,7 +131,7 @@ Marketo数据本身不包含ECID，但ECID字段可以添加为随`munchkin.js`�
 
    ![自由格式表，按月份显示事件。](../assets/marketo-freeform.png)
 
-1. 或者拉入以下维度：人员密钥或工作电子邮件地址。 此操作将为您提供每个潜在客户的网页访问量：
+1. 或者提取以下维度：人员密钥或工作电子邮件地址。 此操作将为您提供每个潜在客户的网页访问量：
 
    ![自由格式表，显示事件和workEmail.Address及网页视图。](../assets/marketo-freeform2.png)
 

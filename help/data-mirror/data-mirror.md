@@ -27,7 +27,7 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
 workflow-type: tm+mt
-source-wordcount: 455
+source-wordcount: 466
 ht-degree: 3%
 
 ---
@@ -75,5 +75,5 @@ Data Mirror提供了以下基本数据库同步功能：
 >[!MORELIKETHIS]
 >
 >[Data Mirror快速入门指南：镜像并使用关系数据](relational.md)
->[Data Mirror （Experience Platform文档）](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-mirror/overview)
+>[Data Mirror（Experience Platform文档）](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-mirror/overview)
 >[关系架构（Experience Platform文档）](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/relational)

@@ -55,7 +55,7 @@ ht-degree: 96%
 
 ## 基于角色的访问控制
 
-以下基于角色的访问控制级别可用。
+以下是可用的基于角色的访问控制级别。
 
 ### 产品管理员角色
 
@@ -91,7 +91,7 @@ ht-degree: 96%
 
   | 类别 | 权限 | 描述 |
   |---|---|---|
-  | [!UICONTROL 沙盒] | [!UICONTROL 至少一个] | 访问相关的沙盒用于连接。 |
+  | [!UICONTROL 沙盒] | [!UICONTROL 至少一个] | 对连接相关沙盒的访问权限。 |
   | [!UICONTROL 数据建模] | [!UICONTROL 查看架构] | 架构和相关资源的只读访问权限。 |
   | [!UICONTROL 数据建模] | [!UICONTROL 管理架构] | 读取、创建、编辑和删除架构和相关资源的访问权限。 |
   | [!UICONTROL 数据管理] | [!UICONTROL 查看数据集] | 数据集和架构的只读访问权限。 |
@@ -124,16 +124,16 @@ ht-degree: 96%
 
   要让用户使用 BI 扩展，产品管理员
 
-   * 必须确保用户的 Experience Platform 权限包括一个有查询服务资源的角色，并且有“管理查询”和“管理查询服务集成”选项。 关于 Experience Platform 权限的详细信息请参阅[管理产品配置文件的权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/ui/permissions)。
+  * 必须确保用户的 Experience Platform 权限包括一个有查询服务资源的角色，并且有“管理查询”和“管理查询服务集成”选项。 关于 Experience Platform 权限的详细信息请参阅[管理产品配置文件的权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/ui/permissions)。
 
-     | 类别 | 权限 | 描述 |
-     |---|---|---|
-     | [!UICONTROL 查询服务] | [!UICONTROL 管理查询] | 读取、创建、编辑和删除 Platform 数据的结构化 SQL 查询的访问权限。 |
-     | [!UICONTROL 查询服务] | [!UICONTROL 管理查询服务集成] | 创建、更新和删除未过期的查询服务访问凭据的访问权限。 |
+    | 类别 | 权限 | 描述 |
+    |---|---|---|
+    | [!UICONTROL 查询服务] | [!UICONTROL 管理查询] | 读取、创建、编辑和删除 Platform 数据的结构化 SQL 查询的访问权限。 |
+    | [!UICONTROL 查询服务] | [!UICONTROL 管理查询服务集成] | 创建、更新和删除未过期的查询服务访问凭据的访问权限。 |
 
-   * 必须确保用户有适当的 Customer Journey Analytics 权限：
-      * 相关数据视图的访问权限。 查看[用户级别的访问](#user-level-access)中的[!UICONTROL 数据视图]。
-      * Customer Journey Analytics BI 扩展的访问权限。 查看[用户级别的访问](#user-level-access)中的[!UICONTROL 数据视图工具]。
+  * 必须确保用户有适当的 Customer Journey Analytics 权限：
+    * 相关数据视图的访问权限。 查看[用户级别的访问](#user-level-access)中的[!UICONTROL 数据视图]。
+    * Customer Journey Analytics BI 扩展的访问权限。 查看[用户级别的访问](#user-level-access)中的[!UICONTROL 数据视图工具]。
 
 ### 产品配置文件管理员角色
 
@@ -141,7 +141,7 @@ ht-degree: 96%
 
 * 管理所分配的产品配置文件。 例如，添加或移除用户或用户组，以及更改产品配置文件的权限。
 
-* 在 Customer Journey Analytics 中编辑成为所分配产品配置文件一部分的数据视图。 产品配置文件管理员无法创建新的数据视图。
+* 在 Customer Journey Analytics 中，编辑属于所分配产品配置文件的数据视图。 产品配置文件管理员无法创建新的数据视图。
 
 ### 用户级别访问
 
@@ -188,7 +188,7 @@ ht-degree: 96%
 
 ### 第三方访问
 
-您可以向贵公司合作的第三方的团队负责人提供产品配置文件管理访问权限。 然后，这位管理员可以将公司团队的用户添加到这个产品配置文件。 这位产品配置文件管理员可以授予对特定数据视图的访问权限，并将第三方的其他用户添加到这个产品配置文件。 产品配置文件管理员可以更改数据视图，以满足第三方团队的要求。
+您可以向与贵公司合作的第三方团队负责人提供产品配置文件管理访问权限。 然后，这位管理员可以将公司团队的用户添加到这个产品配置文件。 这位产品配置文件管理员可以授予对特定数据视图的访问权限，并将第三方的其他用户添加到这个产品配置文件。 产品配置文件管理员可以更改数据视图，以满足第三方团队的要求。
 
 ### 行级访问控制
 
@@ -202,4 +202,4 @@ ht-degree: 96%
 
 有权访问数据视图的用户只能使用管理员在这个数据视图中包含的量度和维度。 管理员可以在数据视图中使用[包含/排除功能](/help/data-views/component-settings/include-exclude-values.md)或[值分段](../data-views/component-settings/value-bucketing.md)组件设置，从数据视图中排除或聚合特定的维度值。
 
-例如：您从一个其中包含数据集中单个患者数据的组件，在数据视图中创建了一个名为&#x200B;*高血压*&#x200B;的量度。 您使用值分段提供只是对分段值的访问权限，这样数据的用户就看不到单个患者的数据。
+例如：您从一个其中包含数据集中单个患者数据的组件，在数据视图中创建了一个名为&#x200B;*高血压*&#x200B;的量度。 您使用值分桶仅提供对分桶值的访问权限，这样数据用户就看不到单个患者的数据。

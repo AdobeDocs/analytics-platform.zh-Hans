@@ -43,7 +43,7 @@ ht-degree: 100%
 
 ## 了解 Analytics 源连接器如何将历史数据带入 Customer Journey Analytics
 
-您可以使用 Analytics 源连接器将 Adobe Analytics 报告套件数据导入到 Adobe Experience Platform。 然后，这些数据可以用作 Customer Journey Analytics 中的历史数据。
+您可以使用 Analytics 源连接器将 Adobe Analytics 报告包数据导入到 Adobe Experience Platform。 然后，这些数据可以用作 Customer Journey Analytics 中的历史数据。
 
 此过程假设您希望[在更新至 Customer Journey Analytics 时创建一个 XDM 架构](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)，因为您需要一个根据您的组织需求和您使用的特定 Platform 应用程序量身定制的精简架构。
 
@@ -57,13 +57,13 @@ ht-degree: 100%
 
    如果您已拥有 Analytics 源连接器，[则将字段从源连接器映射到 XDM 架构](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)。
 
-1. 将 Analytics 源连接器数据集添加到连接，如下所述
+1. 将 Analytics 源连接器数据集添加到连接，如下所述。
 
 ## 将 Analytics 源连接器数据集添加到连接
 
 在[为历史数据创建 Analytics 源连接器](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)后，会自动为 Analytics 数据创建一个数据集。
 
-您需要将这个自动创建的数据集添加到为 Web SDK 实施创建的同一个连接中。 这样做会将 Analytics 数据带入 Customer Journey Analytics 中的与 Web SDK 数据相同的数据视图中。
+您需要将这个自动创建的数据集添加到为 Web SDK 实施创建的同一个连接中。 这样做会将 Analytics 数据引入 Customer Journey Analytics 中与 Web SDK 数据相同的数据视图。
 
 要将该自动创建的数据集添加到为 Web SDK 实施创建的同一个连接中：
 
@@ -110,7 +110,7 @@ ht-degree: 100%
 
    在指定您要求回填的日期时要明确。 根据多种因素，您可能需要执行以下任一操作：
 
-   * 选择的结束日期与您首次开始使用 Web SDK 实施收集数据的日期相同。
+   * 选择一个与您首次开始使用 Web SDK 实施收集数据的日期相同的结束日期。
 
    * 选择一个在您首次开始使用 Web SDK 实施收集数据后不久的结束日期，然后使用数据视图区段将重叠的数据分段。
 
@@ -124,7 +124,7 @@ ht-degree: 100%
 
 1. 选择&#x200B;**[!UICONTROL 添加数据集]**，然后选择&#x200B;**[!UICONTROL 保存]**&#x200B;来保存该连接。
 
-1. （有条件）如果您正在使用查找数据集，则必须创建查找数据集并将其添加到您的连接中。 有关详细信息，请参阅 [创建查找数据集，以对 Customer Journey Analytics 中的数据进行分类](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)。
+1. （视情况而定）如果您正在使用查找数据集，则必须创建查找数据集并将其添加到您的连接中。 有关详细信息，请参阅 [创建查找数据集，以对 Customer Journey Analytics 中的数据进行分类](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)。
 
    仅当您在配置 Web SDK 实施时尚未执行此操作时才需要这样做。
 

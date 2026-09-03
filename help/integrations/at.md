@@ -33,7 +33,7 @@ Customer Journey Analytics中的Target报表功能允许您直接在Customer Jou
 
 ## 主要优势
 
-* 营销人员可以随时将 Customer Journey Analytics 成功量度动态地应用到 Target 活动报表。 在运行活动之前不需要指定各项内容。
+* 营销人员可以随时将 Customer Journey Analytics 成功量度动态地应用到 Target 活动报告。 在运行活动之前不需要指定各项内容。
 * 营销人员可以利用 Customer Journey Analytics 功能（例如实验面板）进一步分析其网站个性化。
 * 营销人员可以拥有 Adobe Journey Optimizer 和 Target 的单一报告来源。 这两种个性化产品都可以连接到 Customer Journey Analytics，以便更全面地了解您的 Web 个性化情况。
 

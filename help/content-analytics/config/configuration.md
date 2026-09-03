@@ -27,7 +27,7 @@ topic_v2:
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 780
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -62,23 +62,23 @@ ht-degree: 75%
 * 您具有 Customer Journey Analytics 产品管理员角色，并具有管理连接和管理数据视图的额外权限。
 * 如果您决定收集Content Analytics体验，请确保您根据对网页所做的更改来设置和更新Content Analytics版本控制。
 * 您必须具有[数据收集权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions){target="_blank"}：
-   * [Experience Platform](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}权限。
-   * [Experience Platform数据收集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}权限。
+  * [Experience Platform](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}权限。
+  * [Experience Platform数据收集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}权限。
 * 您已仔细考虑了以下重要的配置选项：
 
-   * 您的站点适合体验报告。 只有满足以下条件才可以生成正确的体验报告：
-      * 网站上的页面必须能够通过页面 URL 重复出现。
-      * 任何给定用户看到的文本内容都可以使用页面 URL 重复出现，并且不取决于 cookie 或其他个性化机制。
-   * 您已清楚地了解要捕获哪些页面以进行内容参与分析和洞察。
-   * 您清楚地了解要为哪些（类型的）资产捕获内容参与度分析和洞察。
+  * 您的网站适合用于体验报告。 只有满足以下条件才可以生成正确的体验报告：
+    * 网站上的页面必须能够通过页面 URL 重复出现。
+    * 任何给定用户看到的文本内容都可以使用页面 URL 重复出现，并且不取决于 cookie 或其他个性化机制。
+  * 您已清楚地了解要捕获哪些页面以进行内容参与分析和洞察。
+  * 您清楚地了解要为哪些（类型的）资产捕获内容参与度分析和洞察。
 
 ### 移动
 
 * 请确保为移动设备应用程序启用了[Experience Platform Edge Network](https://developer.adobe.com/client-sdks/edge/edge-network/)和[Edge Network的Experience Platform标识](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/)扩展。
 * 您具有 Customer Journey Analytics 产品管理员角色，并具有管理连接和管理数据视图的额外权限。
 * 您必须具有[数据收集权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions){target="_blank"}：
-   * [Experience Platform](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}权限。
-   * [Experience Platform数据收集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}权限。
+  * [Experience Platform](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}权限。
+  * [Experience Platform数据收集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}权限。
 
 
 

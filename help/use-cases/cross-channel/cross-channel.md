@@ -55,10 +55,10 @@ ht-degree: 100%
 
 1. 跨数据集使用通用的命名空间 ID。 使用[拼接](../../stitching/overview.md)功能来提升任何基于事件的数据集![数据刷新](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataRefresh_18_N.svg)，以便为每一行提供通用 ID。 注意，Customer Journey Analytics 当前不使用 Experience Platform 轮廓或身份标识服务进行拼接。
 1. 执行任何自定义数据准备，以确保将一个在时序数据集间公用的键引入 Customer Journey Analytics。
-1. 为查找数据给予一个主 ID，后者可连接到事件数据中的某个字段。 在许可中计为行。
-1. 为轮廓数据设置同一主 ID 作为事件数据的主 ID。
+1. 为查找数据指定一个主 ID，使其可与事件数据中的某个字段联接。 在许可中计为行。
+1. 为轮廓数据设置与事件数据主 ID 相同的主 ID。
 1. 通过[创建连接](../../connections/overview.md)将相关数据集从 Experience Platform 导入到 Customer Journey Analytics。
-1. 在连接上[创建数据视图](/help/data-views/create-dataview.md)以选择要包括在该视图中的特定维度和指标。 还在该数据视图中配置归因和分配设置。 在报告时计算这些设置。
+1. 在连接上[创建数据视图](/help/data-views/create-dataview.md)以选择要包括在该视图中的特定维度和指标。 归因和分配设置也在该数据视图中配置。 在报告时计算这些设置。
 1. 在 Analysis Workspace 中[创建一个项目](/help/analysis-workspace/home.md)以配置功能板和报告。
 
 ## 注意事项
@@ -68,6 +68,6 @@ ht-degree: 100%
 * 跨通道分析数据要求每条记录上的 ID 命名空间都相同。
 * 将不同的数据集统一在一起的合并过程需要一个在数据集间公用的人员/实体主键。
 * 当前不支持基于辅助键的合并。
-* 拼接过程允许根据来自共享相同持久 ID 的记录中的临时 ID（如身份验证 ID）信息，对行中的身份进行重新输入。这使得可以将不同的记录解析为单个拼接 ID，以便在个人层面进行分析，而不是在设备或 Cookie 层面。
+* 拼接过程允许根据来自共享相同持久 ID 的记录中的临时 ID（如身份验证 ID）信息，对行中的身份重新设定键值。这使得可以将不同的记录解析为单个拼接 ID，以便在个人层面进行分析，而不是在设备或 Cookie 层面。
 * 同一 XDM 字段的对象和属性合并为 Customer Journey Analytics 中的一个维度。 要将多个来自不同数据集的属性合并为同一个 Customer Journey Analytics 维度，这些数据集应引用相同的 XDM 字段或架构。
 

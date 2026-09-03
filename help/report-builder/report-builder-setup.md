@@ -43,9 +43,9 @@ ht-degree: 25%
 
   所有 Windows 桌面 Excel 用户必须安装 Microsoft Edge Webview2 以使用插件。 要安装，请执行以下操作：
 
-   1. 转到 <https://developer.microsoft.com/en-us/microsoft-edge/webview2/>。
-   1. 选择并下载适用于您的平台的&#x200B;**[!UICONTROL Evergreen Standalone Installer]**&#x200B;的适当版本。
-   1. 运行安装程序并按照安装提示操作。
+  1. 转到 <https://developer.microsoft.com/en-us/microsoft-edge/webview2/>。
+  1. 选择并下载适用于您的平台的&#x200B;**[!UICONTROL Evergreen Standalone Installer]**&#x200B;的适当版本。
+  1. 运行安装程序并按照安装提示操作。
 
 ### Web Office
 

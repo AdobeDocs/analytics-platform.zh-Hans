@@ -74,5 +74,5 @@ ht-degree: 89%
 
 >[!IMPORTANT]
 >
->请确保仅从一个维度对维度进行分组，而不要从多个维度进行分组。 例如，如果您通过将 `campaign_name` 维度添加到 `tracking_code` 维度来创建分组，请不要同时为 `campaign_name` 维度创建分组。
+>请确保仅基于一个维度进行分组，而不要从多个维度应用分组。 例如，如果您通过将 `campaign_name` 维度添加到 `tracking_code` 维度来创建分组，请不要同时为 `campaign_name` 维度创建分组。
 >

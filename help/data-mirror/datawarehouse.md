@@ -74,7 +74,7 @@ set spark.databricks.delta.properties.defaults.enableChangeDataFeed = true;
 
 要在[!DNL Google BigQuery]源连接中使用变更数据捕获，请在[!DNL Google Cloud]控制台中导航到您的[!DNL Google BigQuery]页面，并将`enable_change_history`设置为`TRUE`。 此属性启用数据表的更改历史记录。
 
-有关详细信息，请阅读 [!DNL GoogleSQL][&#128279;](https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#table_option_list)中数据定义语言语句的指南。
+有关详细信息，请阅读 [!DNL GoogleSQL]&#x200B;[&#128279;](https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#table_option_list)中数据定义语言语句的指南。
 
 请阅读以下文档，以了解如何为[!DNL Google BigQuery]源连接启用更改数据捕获的步骤：
 

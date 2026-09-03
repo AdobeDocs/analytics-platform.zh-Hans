@@ -16,7 +16,7 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 375
+source-wordcount: 359
 ht-degree: 97%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 97%
 
 ## 不兼容的数据视图
 
-当您打开一个项目时，您可能会看到&#x200B;**[!UICONTROL 不兼容的数据视图]**&#x200B;警告对话框。 该对话框解释了项目中某些组件在项目中的某个面板的选定数据视图中未启用。
+当您打开一个项目时，您可能会看到&#x200B;**[!UICONTROL 不兼容的数据视图]**&#x200B;警告对话框。 该对话框说明，对于项目中的某个面板，项目中的某些组件在所选数据视图中未启用。
 
 ![不兼容](assets/incompatible-data-view.png)
 

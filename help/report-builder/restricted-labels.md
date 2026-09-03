@@ -26,7 +26,7 @@ topic_v2:
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 345
-ht-degree: 36%
+ht-degree: 42%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 36%
 
 在Experience Platform使用的数据集上创建的隐私标签和策略可以在Customer Journey Analytics数据视图工作流中显示。 这些标签阻止或警告从敏感字段创建量度和维度的用户。 有关数据集的更多信息，请参阅[数据集概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/overview)。
 
-此外，从 Customer Journey Analytics 导出数据时（通过报告、导出、API 等），将添加其他警告或标签，以通知用户报告包含需要以特定方式处理的敏感信息。
+此外，从 Customer Journey Analytics 导出数据时（通过报告、导出、API 等），将添加警告或标签，以通知用户报告包含需要以特定方式处理的敏感信息。
 
 此集成允许您管理合规性。 组织中的数据管理员可以设置策略以限制使用。 因此，您的 Customer Journey Analytics 用户可以更自信地使用数据，因为他们知道此等数据使用符合数据管理员定义的策略。
 

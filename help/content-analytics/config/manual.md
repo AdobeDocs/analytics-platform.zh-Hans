@@ -21,15 +21,15 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
 workflow-type: tm+mt
-source-wordcount: 720
-ht-degree: 62%
+source-wordcount: 721
+ht-degree: 66%
 
 ---
 
 
 # Content Analytics 手动配置
 
-本文详细介绍了要启动或停止 Content Analytics 配置的数据收集或者要编辑 Content Analytics 实施所需的手动操作。
+本文详细介绍了启动或停止 Content Analytics 配置的数据收集，或编辑 Content Analytics 实施所需的手动操作。
 
 可以使用以下手动配置操作：
 
@@ -50,13 +50,13 @@ ht-degree: 62%
 
 * 对于&#x200B;**Web**：
 
-   1. 在开发、暂存或生产环境的页面元素中移除[嵌入代码](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/environments/environments)`<head>`，取决于 Content Analytics。
-   1. 删除与Content Analytics配置关联的Web标记属性。
+  1. 在开发、暂存或生产环境的页面元素中移除[嵌入代码](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/environments/environments)`<head>`，取决于 Content Analytics。
+  1. 删除与Content Analytics配置关联的Web标记属性。
 
 * 对于&#x200B;**移动设备**：
 
-   1. 从您的应用程序中删除[Content Analytics扩展](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)。
-   1. 删除与您的Content Analytics配置关联的移动标记属性。
+  1. 从您的应用程序中删除[Content Analytics扩展](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)。
+  1. 删除与您的Content Analytics配置关联的移动标记属性。
 
 遵循[发布流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/publish/overview){target="_blank"}以应用更改。
 

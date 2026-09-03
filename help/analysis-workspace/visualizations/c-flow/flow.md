@@ -35,7 +35,7 @@ ht-degree: 74%
 >[!CONTEXTUALHELP]
 >id="workspace_flow_panel"
 >title="流量"
->abstract="分析从一个接触点到下一个接触点的访问次数或访客流量。 指定开始和结束的组件（量度、维度或项目）。 或者，您可以定义高级设置来进一步配置可视化图表。"
+>abstract="分析从一个接触点到下一个接触点的访问次数或访客流量。 指定开始和结束的组件（量度、维度或项目）。 您也可以定义高级设置来进一步配置可视化图表。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -52,7 +52,7 @@ _本文在_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalyt
 使用该可视化图表可以：
 
 * 可视化客户浏览您的网站或应用程序的历程。
-* 分析客户在指定检查点（例如登入、特定维度或退出）之前和之后的去向。
+* 分析客户在指定检查点（例如入口、特定维度或退出）之前和之后的去向。
 * 在选定路径中指定一个特定点来创建区段。
 
 
@@ -67,7 +67,7 @@ _本文在_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalyt
 
 ## 维度间流量
 
-您可以显示[维度间的流量](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)。 例如，您可以在一个图表中合并多个页面和部门。 在这种情况下，您的流量可能会从主页转到男士页面，然后转到鞋类部门。
+您可以显示[维度间的流量](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)。 例如，您可以在一个图表中合并页面和部门。 在这种情况下，您的流量可能会从主页转到男士页面，然后转到鞋类部门。
 
 每列可显示不同的维度。 将一个维度拖放到拖放区域中，以将该维度添加到图中。
 

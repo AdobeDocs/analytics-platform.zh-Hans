@@ -67,7 +67,8 @@ ht-degree: 84%
 
 ### 设置架构
 
-您希望从访问您网站的轮廓中跟踪一些最小数据，例如页面名称、标识。您必须首先定义一个模式来模拟此数据。
+您希望从访问您网站的轮廓中跟踪一些最小数据，例如页面名称、标识。
+您必须首先定义一个模式来模拟此数据。
 
 设置您的架构：
 
@@ -166,7 +167,7 @@ ht-degree: 84%
 
 您已经创建了一个最小架构，用于对您可以从您的网站捕获的数据进行建模。 该架构允许使用 Experience Cloud Identity 和电子邮件地址来识别轮廓。 通过启用轮廓架构，您可以确保从您的网站捕获的数据被添加到实时客户轮廓中。
 
-除了行为数据之外，您还可以从您的站点捕获轮廓属性数据（例如订阅时事通讯的轮廓的详细信息）。
+除了行为数据之外，您还可以从您的网站捕获轮廓属性数据（例如订阅新闻稿的轮廓的详细信息）。
 
 要捕获此轮廓数据，您需要：
 
@@ -176,7 +177,7 @@ ht-degree: 84%
 
 - 添加基于 Profile Core v2 字段组的身份标识对象。
 
-- 将 Experience Cloud ID 定义为主要身份标识符，并将电子邮件定义为身份标识符。
+- 将 Experience Cloud ID 定义为主要标识符，并将电子邮件定义为标识符。
 
 - 为轮廓启用架构
 
@@ -208,7 +209,7 @@ ht-degree: 84%
 
 7. 选择&#x200B;**[!UICONTROL 轮廓]**&#x200B;开关
 
-   系统会提示您启用轮廓的数据集。 启用后，数据集会使用其摄取的数据丰富实时客户轮廓。
+   系统会提示您为轮廓启用数据集。 启用后，数据集会使用其摄取的数据丰富实时客户轮廓。
 
    >[!IMPORTANT]
    >
@@ -281,7 +282,7 @@ ht-degree: 84%
 
 要确保您可以将数据发送到Adobe Experience Platform（通过数据流），请将Adobe Platform Web SDK扩展添加到您的标记中。
 
-创建并配置 Adobe Experience Platform Web SDK。
+创建并配置 Adobe Experience Platform Web SDK 扩展：
 
 1. 选择左边栏中的&#x200B;**[!UICONTROL 扩展]**。
 
@@ -303,7 +304,7 @@ Web SDK包含Experience Platform Identity服务，因此您无需将[!UICONTROL 
 
 #### **数据元素**
 
-数据元素是数据词典（或数据映射）的构建块。 使用数据元素可跨市场营销和广告技术收集、组织和交付数据。 您可以在标记中设置从数据层读取的数据元素，并可用于将数据传送到 Adobe Experience Platform。
+数据元素是数据词典（或数据映射）的构建块。 使用数据元素可跨市场营销和广告技术收集、组织和交付数据。 您可以在标记中设置数据元素，这些数据元素从数据层读取数据，并可用于将数据传送到 Adobe Experience Platform。
 
 有不同类型的数据元素。 您首先设置一个数据元素来捕获访客在您的网站上查看的页面名称。
 
@@ -360,7 +361,7 @@ Web SDK包含Experience Platform Identity服务，因此您无需将[!UICONTROL 
 
 #### **规则**
 
-Adobe Experience Platform 中的标签遵循基于规则的系统。 他们寻找用户交互和相关数据。 如果满足您的规则中所列的标准，则规则会触发您已识别的扩展、脚本或客户端代码。 您可以使用规则使用 Adobe Experience Platform Web SDK 扩展将数据（如 XDM 对象）发送到 Adobe Experience Platform。
+Adobe Experience Platform 中的标签遵循基于规则的系统。 它们会查找用户交互和相关数据。 如果满足您的规则中所列的标准，则规则会触发您已识别的扩展、脚本或客户端代码。 您可以使用规则使用 Adobe Experience Platform Web SDK 扩展将数据（如 XDM 对象）发送到 Adobe Experience Platform。
 
 去定义规则
 
@@ -376,13 +377,13 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。 他们寻�
 
    - 在[!UICONTROL 事件配置]对话框中：
 
-      - 从[!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL 核心]**
+     - 从[!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL 核心]**
 
-      - 从[!UICONTROL 事件类型] 列表中选择&#x200B;**[!UICONTROL 加载的窗口]**
+     - 从[!UICONTROL 事件类型] 列表中选择&#x200B;**[!UICONTROL 加载的窗口]**
 
-        ![规则 – 事件配置](./assets/event-windowloaded-pageview.png)
+       ![规则 – 事件配置](./assets/event-windowloaded-pageview.png)
 
-      - 选择&#x200B;**[!UICONTROL 保留更改]**。
+     - 选择&#x200B;**[!UICONTROL 保留更改]**。
 
 
 
@@ -390,17 +391,17 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。 他们寻�
 
    - 在[!UICONTROL 操作配置]对话框中：
 
-      - 从 [!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]**。
+     - 从 [!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]**。
 
-      - 从[!UICONTROL 操作类型] 列表中选择&#x200B;**[!UICONTROL 发送事件]**
+     - 从[!UICONTROL 操作类型] 列表中选择&#x200B;**[!UICONTROL 发送事件]**
 
-      - 从 [!UICONTROL 类型]列表中选择&#x200B;**[!UICONTROL web.webpagedetails.pageViews]**。
+     - 从 [!UICONTROL 类型]列表中选择&#x200B;**[!UICONTROL web.webpagedetails.pageViews]**。
 
-      - 选择[!UICONTROL &#x200B; XDM 数据]旁边的圆柱体图标，然后从数据元素列表中选择&#x200B;**[!UICONTROL XDM - 页面视图]**。
+     - 选择[!UICONTROL &#x200B; XDM 数据]旁边的圆柱体图标，然后从数据元素列表中选择&#x200B;**[!UICONTROL XDM - 页面视图]**。
 
      ![规则 – 操作配置](./assets/action-pageview-xdm.png)
 
-      - 选择&#x200B;**[!UICONTROL 保留更改]**。
+     - 选择&#x200B;**[!UICONTROL 保留更改]**。
 
    - 您的规则应如下所示：
 
@@ -416,7 +417,7 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。 他们寻�
 
 ### 生成并发布标签
 
-定义数据元素和规则后，必须构建和发布标记。 创建库生成时，必须将其分配给环境。 然后，将会编译该内部版本的扩展、规则和数据元素，并将这些内容放入分配的环境。 每个环境都提供了一个唯一的嵌入代码，从而允许您将其分配的内部版本集成到网站中。
+定义数据元素和规则后，必须构建和发布标记。 创建库生成时，必须将其分配给环境。 然后，将会编译该构建版本的扩展、规则和数据元素，并将这些内容放入分配的环境。 每个环境都提供了一个唯一的嵌入代码，从而允许您将其分配的构建版本集成到网站中。
 
 要生成并发布您的标签：
 
@@ -436,13 +437,13 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。 他们寻�
 
    - 选择&#x200B;**[!UICONTROL 保存并生成到开发]**。
 
-   您的标记已保存，并为您的开发环境构建。 绿色圆点表示在开发环境中成功构建了标记。
+   您的标记已保存，并为您的开发环境构建。 绿色圆点表示您的标记已在您的开发环境中成功构建。
 
 4. 您可以选择&#x200B;**[!UICONTROL ...]** 重建库或将库移动到临时或生产环境。
 
    ![发布 – 生成文档库](./assets/build-library.png)
 
-Adobe Experience Platform 标签支持简单到复杂的发布工作流，这些工作流应适合您部署 Adobe Experience Platform Web SDK。
+Adobe Experience Platform 标签支持从简单到复杂的发布工作流，应能满足您部署 Adobe Experience Platform Web SDK 的需求。
 
 有关详细信息，请参阅 [发布概述](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=zh-Hans) 。
 
@@ -467,13 +468,13 @@ Adobe Experience Platform 标签支持简单到复杂的发布工作流，这些
 
 3. 选择&#x200B;**[!UICONTROL 关闭]**。
 
-您可以根据部署 Adobe Experience Platform Web SDK 的位置选择另一个环境（暂存、生产），而不是开发环境的代码。
+您可以根据自己在部署 Adobe Experience Platform Web SDK 过程中的阶段，选择另一个环境（暂存、生产），而不是开发环境的代码。
 
 有关详细信息，请参阅 [环境](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=zh-Hans&)。
 
 ## 部署和验证
 
-现在，您可以在`<head>` 标签内的网站开发版本上部署代码。 部署后，您的网站开始将数据收集到 Adobe Experience Platform 中。
+现在，您可以在`<head>` 标签内的网站开发版本上部署代码。 部署后，您的网站将开始收集数据并将其发送到 Adobe Experience Platform。
 
 验证您的实现，在必要时进行更正，更正后，使用标签的发布工作流功能将其部署到您的暂存和生产环境中。
 
@@ -511,11 +512,11 @@ Adobe Experience Platform 标签支持简单到复杂的发布工作流，这些
 
    - 对于每个数据集：
 
-      - 在 Adobe Experience Platform 中，从在数据集架构中定义的可用身份标识中选择[!UICONTROL 人员 ID]。
+     - 在 Adobe Experience Platform 中，从在数据集架构中定义的可用身份标识中选择[!UICONTROL 人员 ID]。
 
-      - 从[!UICONTROL 数据源类型]列表中选择正确的数据源。 如果指定&#x200B;**[!UICONTROL 其他]**，则为您的数据源添加描述。
+     - 从[!UICONTROL 数据源类型]列表中选择正确的数据源。 如果指定&#x200B;**[!UICONTROL 其他]**，则为您的数据源添加描述。
 
-      - 根据您的首选项设置&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;和&#x200B;**[!UICONTROL 数据集回填现有数据]**。
+     - 根据您的首选项设置&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;和&#x200B;**[!UICONTROL 数据集回填现有数据]**。
 
      ![配置数据集](./assets/cja-connections-3b.png)
 
@@ -539,7 +540,7 @@ Adobe Experience Platform 标签支持简单到复杂的发布工作流，这些
 
    从[!UICONTROL 连接]列表中选择您的连接。
 
-   名称并（可选）描述您的连接。
+   为您的连接命名并（可选）添加描述。
 
    ![数据视图配置](./assets/cja-dataview-1.png)
 

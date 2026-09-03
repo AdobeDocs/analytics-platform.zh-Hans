@@ -8,7 +8,7 @@ hide: true
 source-git-commit: 9df4c8cff6c0c044902453e5fb8380fbb5c5ac2d
 workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 5%
+ht-degree: 19%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="dataview_component_metric_scope"
 >title="范围"
->abstract="确定在报表中使用某个组件时如何限定该组件的范围。 您可以在基于事件、基于配置文件或基于总计之间进行选择。"
+>abstract="确定组件在报告中使用时的范围。 您可以选择基于事件、基于轮廓或基于总计。"
 
 量度组件的范围确定如何在报表中使用组件。
 

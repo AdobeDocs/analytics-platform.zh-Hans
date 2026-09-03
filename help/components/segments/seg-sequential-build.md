@@ -20,7 +20,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 2491
+source-wordcount: 2496
 ht-degree: 4%
 
 ---
@@ -47,8 +47,8 @@ ht-degree: 4%
 
 * [包含哪些数据作为区段定义整体序列的一部分](#include)。 或者，对于定义为容器一部分的序列。 默认情况下，会考虑所有匹配数据。 该数据由![用户组](/help/assets/icons/UserGroup.svg) [!UICONTROL 包含每个人]标识。
 
-   * 选择![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]**&#x200B;以仅考虑序列之前的数据。
-   * 选择![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After After Sequence]**&#x200B;以仅考虑序列之后的数据。
+  * 选择![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]**&#x200B;以仅考虑序列之前的数据。
+  * 选择![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After After Sequence]**&#x200B;以仅考虑序列之后的数据。
 
 * [排除](#exclude)的顺序区段定义数据。
 
@@ -129,7 +129,7 @@ ht-degree: 4%
 
 ![序列在](assets/sequence-after.png)之后
 
-如果主页的页面查看发生在2024年6月1日00:01，则页面查看针对页面女性 |只要2024年6月15日:01之后出现该页面查看，鞋就会匹配。
+如果主页的页面查看发生在2024年6月1日00:01，则页面查看针对页面女性 |只要2024年6月15日00:01之后出现该页面查看，鞋就会匹配。
 
 ##### [!UICONTROL Within]运算符
 
@@ -145,7 +145,7 @@ ht-degree: 4%
 
 ![序列晚于](assets/sequence-afterbutwithin.png)但在此范围内
 
-2024年6月1日点击主页并返回妇女之家的任何人 | 2019年6月15日之后00:01，但2019年7月1日之前的“鞋子”页面符合该区段的条件。
+2024年6月1日点击主页并返回妇女之家的任何人 |在2019年6月15日00:01之后，但在2019年7月1日之前的“鞋子”页面符合该区段的条件。
 
 
 ### [!UICONTROL 事件]、[!UICONTROL 会话]和[!UICONTROL Dimension]约束
@@ -270,7 +270,7 @@ ht-degree: 4%
 >
 >[!UICONTROL 逻辑组]只能在顺序区段中定义，这意味着容器中使用[!UICONTROL Then]运算符。
 
-使用逻辑组，您可以将条件分组到一个顺序区段检查点。 作为序列的一部分，在标识为逻辑组的容器中定义的逻辑将在任何先前顺序检查点之后和任何后续顺序检查点之前进行评估。
+使用逻辑组，您可以将条件归入一个顺序区段检查点。 作为序列的一部分，在标识为逻辑组的容器中定义的逻辑将在任何先前顺序检查点之后和任何后续顺序检查点之前进行评估。
 
 可以按任意顺序满足逻辑组本身中的条件。 相反，非顺序容器（事件、会话、人员）不要求在整个序列中满足其条件，如果与Then运算符一起使用，则会产生可能不直观的结果。
 

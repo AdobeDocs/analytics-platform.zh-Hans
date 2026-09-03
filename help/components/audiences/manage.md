@@ -120,7 +120,7 @@ ht-degree: 95%
 
 | 所有者 | 描述 |
 |---|---|
-| ![所有者](/help/components/audiences/assets/audiences-filter-owner.png){width="300"} | **[!UICONTROL 所有者]**&#x200B;部分允许您过滤所有者。 <ul><li>您使用![搜索](/help/assets/icons/Search.svg)来搜索您想要用于过滤的所有者。</li><li>您可以选择多个所有者。 </li></ul> |
+| ![所有者](/help/components/audiences/assets/audiences-filter-owner.png){width="300"} | 您可以使用&#x200B;**[!UICONTROL 所有者]**&#x200B;部分按所有者进行过滤。 <ul><li>您使用![搜索](/help/assets/icons/Search.svg)来搜索您想要用于过滤的所有者。</li><li>您可以选择多个所有者。 </li></ul> |
 
 ## 刷新频率
 

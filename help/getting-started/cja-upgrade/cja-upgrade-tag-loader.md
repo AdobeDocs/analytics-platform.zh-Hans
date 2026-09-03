@@ -39,7 +39,7 @@ ht-degree: 100%
 
 {{upgrade-note-step}}
 
-您必须在您想要跟踪的网站上安装您的标记，这意味着将代码放在您网站模板的标题标记中。
+您必须在您想要跟踪的网站上安装您的标记，这意味着将代码放在您网站模板的标头标记中。
 
 以下过程描述了如何获取引用您的标记的代码。 有关补充信息，请参阅 Experience Platform 文档中的[标记和事件转发实施指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/get-started/implementation-guides)。
 
@@ -65,7 +65,7 @@ ht-degree: 100%
 
 1. 选择&#x200B;**[!UICONTROL 关闭]**。
 
-   您可以根据部署 Adobe Experience Platform Web SDK 的位置选择另一个环境（暂存、生产），而不是开发环境的代码。
+   您可以根据自己在部署 Adobe Experience Platform Web SDK 过程中的阶段，选择另一个环境（暂存、生产），而不是开发环境的代码。
 
    有关详细信息，请参阅 [环境](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=zh-Hans&)。
 

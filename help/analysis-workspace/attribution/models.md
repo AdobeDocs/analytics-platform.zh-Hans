@@ -1,6 +1,6 @@
 ---
 title: 归因组件
-description: 了解定义归因的组件。
+description: 了解定义归因的各个组成部分。
 feature: Attribution
 role: User, Admin
 exl-id: f36de41e-1c53-477d-b326-528fbd4ec9ec
@@ -47,7 +47,7 @@ Adobe Analytics 中的归因概念涉及三个组件：
 {{attribution-container}}
 
 
-## 回顾窗口
+## 回顾时间范围
 
 {{attribution-lookback-window}}
 

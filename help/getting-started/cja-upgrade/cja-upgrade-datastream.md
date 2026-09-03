@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ---
 
-# 创建与 Customer Journey Analytics 使用的数据流 {#upgrade-create-datastream}
+# 创建用于 Customer Journey Analytics 的数据流 {#upgrade-create-datastream}
 
 <!-- markdownlint-disable MD034 -->
 

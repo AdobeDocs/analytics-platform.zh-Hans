@@ -33,7 +33,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_button"
 >title="历程画布"
->abstract="显示人们如何完成或退出一系列接触点。 用于具有多个入口点和路径的历程，或分析在 Journey Optimizer 中创建的历程。"
+>abstract="显示人们如何经历或退出一系列接触点。 用于具有多个入口点和路径的历程，或分析在 Journey Optimizer 中创建的历程。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -42,7 +42,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_panel"
 >title="历程画布"
->abstract="分析人们如何完成或退出既定的历程。 创建由节点和箭头构成的灵活图表来代表事件、维度项和区段之间的任意组合，从而生成用户历程分析。 拖动画布上的节点来重新排列历程的事件和条件。 当您进行该操作时，数据会相应更新。 <br/><br/>有权访问 Adobe Journey Optimizer 的客户可以分析现有的 Journey Optimizer 历程。"
+>abstract="分析人们如何经历或退出既定的历程。 创建由节点和箭头构成的灵活图表来代表事件、维度项和区段之间的任意组合，从而生成用户历程分析。 拖动画布上的节点来重新排列历程的事件和条件。 当您进行该操作时，数据会相应更新。 <br/><br/>有权访问 Adobe Journey Optimizer 的客户可以分析现有的 Journey Optimizer 历程。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -51,7 +51,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_button"
 >title="历程画布"
->abstract="显示人们如何完成或退出一系列接触点。 用于具有多个入口点和路径的历程，或分析在 Journey Optimizer 中创建的历程。"
+>abstract="显示人们如何经历或退出一系列接触点。 用于具有多个入口点和路径的历程，或分析在 Journey Optimizer 中创建的历程。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -60,7 +60,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_panel"
 >title="历程画布"
->abstract="分析人们如何完成或退出既定的历程。 创建由节点和箭头构成的灵活图表来代表事件、维度项和区段之间的任意组合，从而生成用户历程分析。 拖动画布上的节点来重新排列历程的事件和条件。 当您进行该操作时，数据会相应更新。 <br/><br/>有权访问 Adobe Journey Optimizer 的客户可以分析现有的 Journey Optimizer 历程。"
+>abstract="分析人们如何经历或退出既定的历程。 创建由节点和箭头构成的灵活图表来代表事件、维度项和区段之间的任意组合，从而生成用户历程分析。 拖动画布上的节点来重新排列历程的事件和条件。 当您进行该操作时，数据会相应更新。 <br/><br/>有权访问 Adobe Journey Optimizer 的客户可以分析现有的 Journey Optimizer 历程。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -72,7 +72,7 @@ _本文在_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalyt
 
 历程画布可视化图表可帮助您进行分析，获得关于您为用户和客户提供的历程的深入洞察。 它允许您从头开始定义历程，或从 Journey Optimizer 中查看历程，然后查看人们是如何离开（流失）或继续完成（流过）这个历程的。
 
-您可以通过任意组合事件、维度项、区段和日期范围来创建历程节点，从而[构建用户历程分析](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。 通过连接各个节点来创建历程的流量，并包含多条路径和决策点。 拖动画布上的节点来重新排列历程的事件和条件。 当您进行更改时，数据会实时更新。
+您可以通过任意组合事件、维度项、区段和日期范围来创建历程节点，从而[构建用户历程分析](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)。 通过连接各个节点来创建历程流量，并包含多条路径和决策点。 拖动画布上的节点来重新排列历程的事件和条件。 当您进行更改时，数据会实时更新。
 
 [节点已连接](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes)作为“最终路径”，这意味着只要访客最终从一个节点移动到另一个节点，就会计入访客，而不考虑两个节点之间发生的任何事件。 用户沿路径移动的时间由容器设置决定。
 
@@ -98,7 +98,7 @@ _本文在_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalyt
 
 历程画布中最突出的洞察会以标题的形式在画布顶端显示。
 
-此标题总结了历程中的哪些路径的转化率最高。
+此说明文字概括了历程中哪条路径的转化率最高。
 
 当历程中包含多个起始节点时，标题如下所示：
 
@@ -114,14 +114,14 @@ _本文在_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalyt
 
 * 转化率的计算取决于历程的类型（历程中包含的起始节点和终止节点的数量，以及它们之间的路径是否相交）。
 
-  下表描述了如何根据历程类型计算转换率：
+  下表描述了如何根据历程类型计算转化率：
 
   | 历程类型 | 转化率计算 | 示例 |
   |---------|----------|---------|
   | **单个起始节点和单个终止节点** | 转化率是通过将终止节点的数量除以起始节点的数量来计算的。 | ![有多个起点并汇聚到一个共同节点的历程](assets/journey-canvas-single-path.png) |
   | **单个起始节点和多个终止节点** | 转化率的计算方法是找到数值最高的终止节点，然后将该数字除以起始节点的数值。 | ![有多个起点并汇聚到一个共同节点的历程](assets/journey-canvas-singlestart-multiend.png) |
-  | **多个独立路径，其中每个路径均包含一个起始节点和一个终止节点** | 转化率是通过将终止节点的数量除以起始节点的数量来计算的。 标题中描述了转化率最高的路径。 | ![有多个起点并汇聚到一个共同节点的历程](assets/journey-canvas-multi-start-separate.png) |
-  | **在历程中的任何一点，汇聚到一个共同的节点的多个起始节点** | 转化率的计算方法是找到数值最高的终止节点，并将该数字除以具有最低数值的开始节点的数值来计算的。 | ![有多个起点并汇聚到一个共同节点的历程](assets/journey-canvas-multi-start-converge.png) |
+  | **多个独立路径，其中每个路径均包含一个起始节点和一个终止节点** | 转化率是通过将终止节点的数量除以起始节点的数量来计算的。 图注中描述了转化率最高的路径。 | ![有多个起点并汇聚到一个共同节点的历程](assets/journey-canvas-multi-start-separate.png) |
+  | **在历程中的任何一点，汇聚到一个共同的节点的多个起始节点** | 转化率的计算方法是找到数值最高的终止节点，然后将该数字除以数值最低的起始节点的数值。 | ![有多个起点并汇聚到一个共同节点的历程](assets/journey-canvas-multi-start-converge.png) |
 
 ### 流过、流失等
 

@@ -1,5 +1,5 @@
 ---
-title: 为 Customer Journey Analytics 创建一个架构
+title: 为 Customer Journey Analytics 创建架构
 description: 了解从 Adobe Analytics 升级到 Customer Journey Analytics 时的推荐路径
 role: Admin
 solution: Customer Journey Analytics
@@ -30,7 +30,7 @@ ht-degree: 100%
 
 ---
 
-# 创建与 Customer Journey Analytics 使用的数据集 {#upgrade-create-dataset}
+# 创建供 Customer Journey Analytics 使用的数据集 {#upgrade-create-dataset}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -69,7 +69,7 @@ ht-degree: 100%
 
 1. 选择&#x200B;**[!UICONTROL 轮廓]**&#x200B;开关
 
-   系统会提示您启用轮廓的数据集。 启用后，数据集会使用其摄取的数据丰富实时客户轮廓。
+   系统会提示您为轮廓启用数据集。 启用后，数据集会使用其摄取的数据丰富实时客户轮廓。
 
    >[!IMPORTANT]
    >

@@ -28,7 +28,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
 workflow-type: tm+mt
-source-wordcount: 905
+source-wordcount: 906
 ht-degree: 55%
 
 ---
@@ -48,7 +48,7 @@ Content Analytics 提供递增价值：
 
 1. 内容&#x200B;**使用情况**：借助 Content Analytics，您可以洞察哪些资产获得了印象，以及在何处获得。 这些见解可帮助您查看Web和移动资产上的资产是否未被充分利用或过度使用。
 1. 内容&#x200B;**参与度**：Content Analytics 可以提供参与度洞察，例如具有特定属性资产的平均点击率。 这些洞察可以帮助您确定特定类型的体验是否仍然有效。
-1. 内容历程：此外，在与Experience Platform中的所有其他可用数据结合使用时，您可以获得有关内容历程的其他见解；例如，除了参与度之外，特定内容是否会导致转化。 例如，特定内容是否会导致转化，以及参与度。 有了这些知识，您就能确定各类内容的投资回报率。
+1. 内容历程：此外，在与Experience Platform中的所有其他可用数据结合使用时，您可以获得有关内容历程的其他见解；例如，除了参与度之外，特定内容是否会导致转化。 例如，特定内容是否会导致转化，以及参与度。 有了这些知识，您就能确定各类内容的 ROI。
 1. 内容&#x200B;**个性化**：最终，Content Analytics 使您能够根据洞察采取行动，并利用这些洞察来决定如何为内容投入资金。 例如，我应该向特定受众发送特定类型的内容吗？ 哪些内容能为我提供高度个性化的机会？
 
 ## 术语
@@ -68,7 +68,7 @@ Content Analytics使用Experience Platform事件数据集中的Web和移动图�
 ![Content Analytics 工作原理](assets/aca-overview-new.gif)
 
 1. 当用户访问为Content Analytics[&#128279;](config/configuration.md)配置的网站或应用程序时，Experience Platform Web或Mobile SDK会记录展示次数以及与内容的交互。
-1. 身份和特征化服务处理这些交互。 该过程包括一个检索服务，该服务会重新访问定义这些交互的公众版本的已配置 URL。 身份标识服务会为所有这些检索到的 URL 唯一性标识体验和资产。 功能化服务应用AI/ML服务来发现体验和资产元数据和属性。
+1. 身份和特征化服务处理这些交互。 该过程包括一个检索服务，该服务会重新访问已配置 URL 的面向公众的版本，这些 URL 定义了这些交互。 身份标识服务会为所有这些检索到的 URL 唯一标识体验和资产。 功能化服务应用AI/ML服务来发现体验和资产元数据和属性。
 1. 这些服务（[组件、属性和身份标识](/help/content-analytics/report/components.md)）的结果用于更新 Experience Platform 中相关的特定 Content Analytics 数据集。
 1. 您可以在Customer Journey Analytics设置（[连接](/help/connections/overview.md)、[数据视图](/help/data-views/data-views.md)和[Workspace](/help/analysis-workspace/home.md)）中使用Content Analytics数据，以及行为数据和其他查找数据。 该设置提供了对您的内容进行独特的宏级深入分析的基础。 <br/>您可以使用[Content Analytics模板](/help/content-analytics/report/report.md#template)快速开始Content Analytics报告和分析。
 

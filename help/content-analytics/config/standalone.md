@@ -28,7 +28,7 @@ topic_v2:
 source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
 workflow-type: tm+mt
 source-wordcount: 2631
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
@@ -111,15 +111,15 @@ Content Analytics作为独立产品授予许可，但配置是在Experience Plat
 对于独立Content Analytics，您需要成为以下产品和产品配置文件的产品管理员：
 
 * Adobe Experience Platform
-   * AEP-Default-All-Users（用于访问生产沙盒的默认配置文件）
+  * AEP-Default-All-Users（用于访问生产沙盒的默认配置文件）
 
 * Adobe Experience Platform 数据收集
-   * 默认数据收集所有访问
+  * 默认数据收集所有访问
 
 * Adobe Experience Platform Privacy Service
 
 * Customer Journey Analytics（自定义）
-   * Customer Journey Analytics（或任何其他默认配置的产品配置文件）
+  * Customer Journey Analytics（或任何其他默认配置的产品配置文件）
 
 您可以通过Admin Console定义产品管理员访问权限：
 
@@ -157,31 +157,31 @@ Experience Platform中的[!UICONTROL Permissions]界面基于角色的定义。 
 
 * 默认的生产全部访问角色
 
-   * 数据收集
-      * 查看数据流
-      * 管理数据流
+  * 数据收集
+    * 查看数据流
+    * 管理数据流
 
-   * 数据管理
-      * 查看数据集
-      * 管理数据集
+  * 数据管理
+    * 查看数据集
+    * 管理数据集
 
-   * 数据建模
-      * 查看架构
-      * 管理架构
-      * 管理身份元数据
+  * 数据建模
+    * 查看架构
+    * 管理架构
+    * 管理身份元数据
 
 
 * 沙盒管理员角色
 
-   * 沙盒
-      * Prod
-      * （任何其他要用于Content Analytics的沙盒）
+  * 沙盒
+    * Prod
+    * （任何其他要用于Content Analytics的沙盒）
 
-   * 沙盒管理
-      * 管理包
-      * 管理沙盒
-      * 重置沙盒
-      * 查看沙盒
+  * 沙盒管理
+    * 管理包
+    * 管理沙盒
+    * 重置沙盒
+    * 查看沙盒
 
 
 在“权限”界面中，您可以同时验证角色和相关权限。 该界面还会显示哪些用户属于该角色。
@@ -217,21 +217,21 @@ Customer Journey Analytics不支持基于属性的访问控制。 要指定权�
 对于Content Analytics，您需要验证是否包含以下Customer Journey Analytics产品配置文件权限：
 
 * 数据视图
-   * 所有可用的数据视图。
+  * 所有可用的数据视图。
 
 * 报告工具
-   * 计算量度创建
-   * 区段创建
-   * 创建注释
-   * 审核日志访问
-   * 与任何人共享项目链接
-   * 预测
-   * AI 助手：产品知识
-   * Data Insights 代理
-   * 智能题注
+  * 计算量度创建
+  * 区段创建
+  * 创建注释
+  * 审核日志访问
+  * 与任何人共享项目链接
+  * 预测
+  * AI 助手：产品知识
+  * Data Insights 代理
+  * 智能题注
 
 * 数据视图工具
-   * 整个表导出
+  * 整个表导出
 
 要验证和更新Customer Journey Analytics的这些权限，请执行以下操作：
 

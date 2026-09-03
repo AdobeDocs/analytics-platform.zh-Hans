@@ -46,7 +46,7 @@ ht-degree: 26%
 
 >[!NOTE]
 >
->本快速入门指南是一份关于如何使用将临时数据摄取到Experience Platform并在Customer Journey Analytics中使用该临时数据的简化指南。 强烈建议参考时研究附加信息。
+>本快速入门指南是一份关于如何使用将临时数据摄取到Experience Platform并在Customer Journey Analytics中使用该临时数据的简化指南。 强烈建议在提及时查阅附加信息。
 
 
 ## 使用CSV文件创建数据集
@@ -190,7 +190,7 @@ ht-degree: 26%
 
    1. 从&#x200B;**[!UICONTROL 连接]**&#x200B;列表中选择您的[连接](#set-up-a-connection)。
 
-   1. 名称并（可选）描述您的连接。
+   1. 为您的连接命名，并（可选）添加描述。
 
       ![数据视图配置](./assets/cja-dataview-1.png)
 

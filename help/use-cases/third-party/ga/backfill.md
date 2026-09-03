@@ -28,9 +28,9 @@ ht-degree: 83%
 
 ---
 
-# 引入 Google Analytics 历史数据
+# 摄取 Google Analytics 历史数据
 
-本页面重点介绍如何将您的 Google Analytics 历史数据作为数据集提取到 Adobe Experience Platform 中，允许您在 Customer Journey Analytics 的数据视图中引用该数据集。 您可以将此页面上的步骤与[配置实时 Google Analytics 实施](streaming.md)结合使用，这会生成一个循环数据集。 将此历史数据集与您当前实施的数据集结合起来，以无缝查看 Customer Journey Analytics 中的数据以及当前和回填数据。
+本页面重点介绍如何将您的 Google Analytics 历史数据作为数据集摄取到 Adobe Experience Platform 中，以便您在 Customer Journey Analytics 的数据视图中引用该数据集。 您可以将此页面上的步骤与[配置实时 Google Analytics 实施](streaming.md)结合使用，这会生成一个循环数据集。 将此历史数据集与您当前实施的数据集结合起来，以便在 Customer Journey Analytics 中获得包含当前数据和回填数据的无缝数据视图。
 
 ## 先决条件
 
@@ -53,7 +53,7 @@ Universal Analytics 属性中的数据结构与 Google Analytics 4 属性中的�
 >
 >本部分仅适用于 Universal Analytics 属性。 如果您要从 GA4 属性导出，您可以继续[将数据导出到 Google Cloud Platform](#export-gcp)。
 
-Universal Analytics 属性将每条记录作为用户会话而不是单个事件存储在其数据中。 需要使用 SQL 查询将 Universal Analytics 数据转换为与 Adobe Experience Platform 兼容的格式。 将 `UNNEST` 函数应用于 GA 架构中的 `hits` 字段，并将其保存为 BigQuery 表。
+Universal Analytics 属性将其数据中的每条记录存储为用户会话，而不是单个事件。 需要使用 SQL 查询将 Universal Analytics 数据转换为与 Adobe Experience Platform 兼容的格式。 将 `UNNEST` 函数应用于 GA 架构中的 `hits` 字段，并将其保存为 BigQuery 表。
 
 
 >[!BEGINSHADEBOX]
@@ -98,7 +98,7 @@ FROM
 
 >[!BEGINSHADEBOX]
 
-观看![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [将Google Analytics数据导入Adobe Experience Platform](https://video.tv.adobe.com/v/3437176?captions=chi_hans&quality=12&learn=on){target="_blank"}以获取演示视频。
+观看![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [将Google Analytics数据导入Adobe Experience Platform](https://video.tv.adobe.com/v/332676?quality=12&learn=on){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 

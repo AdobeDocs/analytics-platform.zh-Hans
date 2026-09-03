@@ -17,8 +17,8 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 229
-ht-degree: 55%
+source-wordcount: 238
+ht-degree: 57%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 55%
 >[!CONTEXTUALHELP]
 >id="workspace_venn_button"
 >title="维恩图"
->abstract="创建维恩图可视化图表，以快速直观地比较两个元素及其重叠尺寸。"
+>abstract="创建维恩图可视化图表，以快速直观地比较两个元素及其重叠部分的大小。"
 
 <!-- markdownlint-enable MD034 -->
 

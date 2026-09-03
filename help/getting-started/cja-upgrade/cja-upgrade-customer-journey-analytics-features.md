@@ -43,7 +43,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-datasets"
 >title="拼接来自多个数据集的点击量"
->abstract="如果您的任何数据集不共享主要身份标识符（例如 Experience Cloud ID），您仍然可以使用其他维度（例如登录用户名或电子邮件地址）将该数据拼接在一起。"
+>abstract="如果您的任何数据集不共享主要标识符（例如 Experience Cloud ID），您仍然可以使用其他维度（例如登录用户名或电子邮件地址）将该数据拼接在一起。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -79,7 +79,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-ajo"
 >title="与 Journey Optimizer 集成"
->abstract="为客户提供贴合心意的、上下文和个性化的体验。"
+>abstract="为客户提供互联、具有上下文关联且个性化的体验。"
 
 <!-- markdownlint-enable MD034 -->
 

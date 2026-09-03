@@ -49,7 +49,7 @@ Adobe Customer Journey Analytics 为 [Healthcare Shield](https://www.adobe.com/c
 
    ![显示 https://cmkoberontest.vault.azure.net](assets/key-identifier.png) 的 URI 的密钥身份标识符字段
 
-1. Adobe 客户关怀部门确认您已完成对 Customer Journey Analytics 数据应用 CMK。
+1. Adobe 客户关怀部门确认已将 CMK 应用于您的 Customer Journey Analytics 数据。
 
 无论是否应用了客户管理的密钥，Platform 使用的所有数据在传输和静止时都经过加密，以确保您的数据安全。 有关 Adobe Experience Platform 加密的信息，请参阅 [Adobe Experience Platform 中的数据加密](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/governance-privacy-security/encryption)。
 

@@ -63,7 +63,7 @@ Adobe Analytics和Customer Journey Analytics数据馈送列之间不可能存在
 
 +++**`aemassetid`**
 
-一个多值变量与一组 Adobe Experience Manager Assets 的资产 ID (GUID) 相对应。 可增加展示事件的计数。
+一个多值变量，对应于一组 Adobe Experience Manager Assets 的资产 ID (GUID)。 可增加展示事件的计数。
 
 {{cja-df-post}}
 
@@ -280,7 +280,7 @@ Cookie支持维度。<br>Y：已启用<br>N：已禁用<br>U：未知
 
 +++**`ct_connect_type`**
 
-与 `connection_type` 列相关。 最常见的值为 LAN/Wifi、Mobile Carrier 和 Modem。
+与 `connection_type` 列相关。 最常见的值为 LAN/Wifi、移动运营商和 Modem。
 
 +++
 
@@ -298,7 +298,7 @@ Cookie支持维度。<br>Y：已启用<br>N：已禁用<br>U：未知
 
 +++**`customer_perspective`**
 
-决定点击是否为移动后台点击。
+确定点击是否为移动后台点击。
 
 {{cja-df-post}}
 
@@ -336,7 +336,7 @@ Customer Journey Analytics支持使用[`identityMap`](https://experienceleague.a
 
 +++**`daily_visitor`**
 
-用于确定点击是否为新的每日访客的标记。
+用于确定点击是否为新的每日访客的标志。
 
 +++
 
@@ -358,7 +358,7 @@ Customer Journey Analytics支持使用[`identityMap`](https://experienceleague.a
 
 +++**`date_time`**
 
-以可读格式表示的点击时间（基于报表包所在时区）。
+以可读格式表示的点击时间（基于报告包所在时区）。
 
 您可以使用`xdm.timestamp`并应用&#x200B;**[!UICONTROL 日期]**&#x200B;或&#x200B;**[!UICONTROL 日期时间]** [格式](/help/data-views/component-settings/format.md)组件设置。
 
@@ -374,7 +374,7 @@ Customer Journey Analytics支持使用[`identityMap`](https://experienceleague.a
 
 +++**`duplicated_from`**
 
-仅在包含点击复制 VISTA 规则的报表包中使用。 指示从中复制点击的报表包。
+仅在包含点击副本 VISTA 规则的报表包中使用。 指示从中复制点击的报告包。
 
 {{cja-df-na}}
 
@@ -394,7 +394,7 @@ Customer Journey Analytics没有充当所有量度重复标志的单个字段。
 
 +++**`duplicate_purchase`**
 
-确定此次点击对应的购买事件是重复事件因而被忽略的标记。
+确定此次点击对应的购买事件是重复事件因而被忽略的标志。
 
 虽然无法直接翻译为此Analytics数据馈送列，但其删除重复购买操作的功能仍然存在。 如果使用[[!UICONTROL Commerce详细信息]](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/field-groups/event/commerce-details)字段组，则可以设置[指标去重组件设置](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication)，其中&#x200B;**[!UICONTROL 去重ID]**&#x200B;为`xdm.commerce.purchases.id`。
 
@@ -459,7 +459,7 @@ EF ID，用于Adobe Advertising集成。
 
 +++**`exclude_hit`**
 
-确定报告中是否包含此点击的标记。 对于被排除的点击，`visit_num` 列不递增。
+用于确定该点击是否被排除在报告之外的标志。 对于被排除的点击，`visit_num` 列不递增。
 
 Customer Journey Analytics不接受开箱即用的“排除的点击”。 但是，如果您具有标记要排除的特定点击的XDM字段，则可以重新创建此功能：
 
@@ -486,19 +486,19 @@ Customer Journey Analytics不接受开箱即用的“排除的点击”。 但�
 
 +++**`first_hit_referrer`**
 
-访客访问的第一个反向链接 URL。
+访客的第一个反向链接 URL。
 
 +++
 
 +++**`first_hit_ref_domain`**
 
-原始反向链接域维度。 基于 `first_hit_referrer`。 访客首次访问的反向链接域。
+原始反向链接域维度。 基于 `first_hit_referrer`。 访客的第一个反向链接域。
 
 +++
 
 +++**`first_hit_ref_type`**
 
-表示访客使用的第一个反向链接的反向链接类型的数值 ID。
+表示访客的第一个反向链接的反向链接类型的数值 ID。
 
 {{cja-df-lookup}}
 
@@ -530,7 +530,7 @@ Customer Journey Analytics不接受开箱即用的“排除的点击”。 但�
 
 +++**`geo_region`**
 
-根据 IP 地址判断的点击来源省/市/自治区或区域的名称。 在地区维度中使用。
+根据 IP 地址判断的点击来源州或区域的名称。 在地区维度中使用。
 
 +++
 
@@ -560,13 +560,13 @@ Customer Journey Analytics不接受开箱即用的“排除的点击”。 但�
 
 +++**`hit_time_gmt`**
 
-Adobe 数据收集服务器接收到点击的时间戳（基于 UNIX® 时间）。
+Adobe 数据收集服务器收到该点击时的时间戳（基于 UNIX® 时间）。
 
 +++
 
 +++**`hourly_visitor`**
 
-用于确定点击是否为新小时访客的标记。
+用于确定点击是否为新小时访客的标志。
 
 +++
 
@@ -650,13 +650,13 @@ IPv4 地址，基于图像请求的 HTTP 标头。 与 `ipv6` 互斥；如果此
 
 +++**`mcvisid`**
 
-Experience Cloud 访客 ID。 一个 128 位的数字（由两个 64 位的数字拼接而成），共占据了 19 位数。
+Experience Cloud 访客 ID。 一个 128 位数字，由两个填充到 19 位的 64 位数字拼接而成。
 
 +++
 
 +++**`mc_audiences`**
 
-列出访客所属的 Audience Manager 区段 ID。 `post_mc_audiences` 列将分隔符更改为 `--**--`。
+访客所属的 Audience Manager 区段 ID 列表。 `post_mc_audiences` 列将分隔符更改为 `--**--`。
 
 {{cja-df-post}}
 
@@ -664,7 +664,7 @@ Experience Cloud 访客 ID。 一个 128 位的数字（由两个 64 位的数�
 
 +++**`mobileaction`**
 
-移动设备操作。 在移动实施中调用 `trackAction` 时会自动收集。 应用程序支持自动的操作路径。
+移动设备操作。 在移动实施中调用 `trackAction` 时会自动收集。 可在应用程序中实现自动操作路径。
 
 {{cja-df-post}}
 
@@ -694,7 +694,7 @@ Experience Cloud 访客 ID。 一个 128 位的数字（由两个 64 位的数�
 
 +++**`mobileappstoreobjectid`**
 
-用在 [!DNL Appfigures] 数据连接器中。 应用程序商店对象 ID。
+用在 [!DNL Appfigures] 数据连接器中。 应用商店对象 ID。
 
 +++
 
@@ -732,7 +732,7 @@ Mobile Services 信标 UUID
 
 +++**`mobilecampaignmedium`**
 
-营销媒介，例如横幅或电子邮件。 由移动设备应用程序客户获取填充。
+营销媒介，例如横幅或电子邮件。 由移动应用程序客户获取填充。
 
 {{cja-df-post}}
 
@@ -748,7 +748,7 @@ Mobile Services 信标 UUID
 
 +++**`mobilecampaignsource`**
 
-原始反向链接，例如商务通讯或社交媒体网络。 由移动设备应用程序客户获取填充。
+原始反向链接，例如新闻稿或社交媒体网络。 由移动应用程序客户获取填充。
 
 {{cja-df-post}}
 
@@ -764,7 +764,7 @@ Mobile Services 信标 UUID
 
 +++**`mobiledayofweek`**
 
-应用程序启动的时间（星期几）。
+应用程序启动当天是星期几的编号。
 
 {{cja-df-post}}
 
@@ -802,7 +802,7 @@ Mobile Services 信标 UUID
 
 +++**`mobilehourofday`**
 
-确定应用程序启动的具体时间。 采用 24 小时数字格式。
+定义应用程序启动时的时间。 采用 24 小时数字格式。
 
 {{cja-df-post}}
 
@@ -820,7 +820,7 @@ Mobile Services 信标 UUID
 
 +++**`mobilelaunchnumber`**
 
-应用程序每启动一次，该变量值便会递增。
+移动应用程序每启动一次，该变量值便会递增。
 
 {{cja-df-lookback}}
 
@@ -830,7 +830,7 @@ Mobile Services 信标 UUID
 
 +++**`mobilemessagebuttonname`**
 
-从上下文数据变量 `a.message.button.id` 收集。 用于应用程序内消息传递，以标识关闭消息的按钮。
+从上下文数据变量 `a.message.button.id` 收集。 用于应用程序内消息，以标识关闭消息的按钮。
 
 {{cja-df-post}}
 
@@ -979,7 +979,7 @@ Mobile Services 启动搜索词
 
 +++**`new_visit`**
 
-确定当前点击是否为新访问的标记。 在不活跃的访问状态持续 30 分钟后，由 Adobe 设置。
+确定当前点击是否为新访问的标志。 在访问不活跃 30 分钟后，由 Adobe 设置。
 
 +++
 
@@ -1059,13 +1059,13 @@ Mobile Services 启动搜索词
 
 +++**`paid_search`**
 
-确定点击是否与付费搜索检测相匹配的标记。
+确定点击是否与付费搜索检测相匹配的标志。
 
 +++
 
 +++**`persistent_cookie`**
 
-在永久性Cookie支持维度中使用。 表示访客是否支持每次点击后不丢弃的 Cookie。
+在永久性Cookie支持维度中使用。 表示访客是否支持在每次点击后不会被丢弃的 Cookie。
 
 {{cja-df-post}}
 
@@ -1115,7 +1115,7 @@ Mobile Services 与目标点中心的距离
 
 +++**`quarterly_visitor`**
 
-确定此点击是否为新季度访客的标记。
+确定此点击是否为新季度访客的标志。
 
 +++
 
@@ -1166,7 +1166,7 @@ Mobile Services 与目标点中心的距离
 
 +++**`secondary_hit`**
 
-确定此点击是否为辅助点击的标记。 此标记通常源自多包标记和复制点击的 VISTA 规则。
+确定此点击是否为辅助点击的标志。 此标志通常源自多包标记和复制点击的 VISTA 规则。
 
 +++
 
@@ -1250,7 +1250,7 @@ Adobe Advertising 集成中使用的关键词 ID。
 
 +++**`username`**
 
-点击的报表包 ID。
+点击的报告包 ID。
 
 +++
 
@@ -1660,7 +1660,7 @@ MVPD流媒体服务维度。
 
 +++**`visid_new`**
 
-确定此点击是否包含新生成访客 ID 的标记。
+确定此点击是否包含新生成访客 ID 的标志。
 
 +++
 
@@ -1672,7 +1672,7 @@ MVPD流媒体服务维度。
 
 +++**`visid_type`**
 
-不能用于外部用途；Adobe 内部用于处理优化。 数字ID，表示用于识别访客的方法。<br>`0`：自定义访客ID或未知/不适用<br>`1`： IP和用户代理回退<br>`2`： HTTP移动订阅者标头<br>`3`：旧版Cookie值(`s_vi`) <br>`4`：回退Cookie值(`s_fid`) <br>`5`：身份服务
+不供外部使用；Adobe 内部用于处理优化。 数字ID，表示用于识别访客的方法。<br>`0`：自定义访客ID或未知/不适用<br>`1`： IP和用户代理回退<br>`2`： HTTP移动订阅者标头<br>`3`：旧版Cookie值(`s_vi`) <br>`4`：回退Cookie值(`s_fid`) <br>`5`：身份服务
 
 {{cja-df-post}}
 
@@ -1680,7 +1680,7 @@ MVPD流媒体服务维度。
 
 +++**`visit_keywords`**
 
-搜索关键词维度。 此列使用 varchar(244) 的非标准字符限制容纳 Adobe 使用的后端逻辑。 后处理列是`**post_keywords**`，而不是`**post_visit_keywords**`。
+搜索关键词维度。 此列使用非标准的 varchar(244) 字符限制，以适应 Adobe 使用的后端逻辑。 后处理列是`**post_keywords**`，而不是`**post_visit_keywords**`。
 
 {{cja-df-post}}
 
@@ -1688,7 +1688,7 @@ MVPD流媒体服务维度。
 
 +++**`visit_num`**
 
-访问数量维度。 起始值为 1，每当每个访客开始新的访问时，此项就会递增。
+访问数量维度。 起始值为 1，并且每当访客开始新的访问时，此值就会递增。
 
 +++
 

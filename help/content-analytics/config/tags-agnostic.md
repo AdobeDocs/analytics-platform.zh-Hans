@@ -21,12 +21,12 @@ topic_v2:
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 484
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
 
-# Content Analytics JavaScript库
+# Content Analytics JavaScript 库
 
 Adobe Content Analytics JavaScript库允许通过Experience Platform Edge Network将内容数据发送到Adobe Experience Platform，从而跟踪网站上的内容相关事件。 当您想要实施不带Adobe Experience Platform标记的Content Analytics时，请使用此库。
 
@@ -114,7 +114,7 @@ initializeContentLibrary({
 
 | 选项 | 类型 | 默认 | 描述 |
 |--------|------|---------|-------------|
-| `includeExperiences` | 布尔值 | `false` | 启用页面/体验视图跟踪 |
+| `includeExperiences` | 布尔 | `false` | 启用页面/体验视图跟踪 |
 | `experienceConfigurations` | 数组 | - | 按域正则表达式和查询参数定义体验 |
 
 `experienceConfigurations`中的每个条目都接受：

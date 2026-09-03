@@ -15,8 +15,8 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 227
-ht-degree: 64%
+source-wordcount: 236
+ht-degree: 65%
 
 ---
 
@@ -28,7 +28,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!ENDSHADEBOX]
 
-水平条形图可视化图表具有标准和堆叠选项。
+水平条形图可视化具有标准和堆叠选项。
 
 ## 水平条形图 {#horizontal-bar}
 
@@ -37,7 +37,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >[!CONTEXTUALHELP]
 >id="workspace_horizontalbar_button"
 >title="水平条形图"
->abstract="创建水平条形图可视化图表来表示一个或多个量度的各种值。"
+>abstract="创建水平条形图可视化来表示一个或多个量度的各种值。"
 
 <!-- markdownlint-enable MD034 -->
 

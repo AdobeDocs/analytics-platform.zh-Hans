@@ -18,8 +18,8 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: 234
-ht-degree: 68%
+source-wordcount: 243
+ht-degree: 69%
 
 ---
 
@@ -60,7 +60,7 @@ _本文在_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalyt
 >[!CONTEXTUALHELP]
 >id="workspace_barstacked_button"
 >title="条形图堆叠"
->abstract="创建条形图可视化图表来表示一个或多个堆叠量度中的多个值。"
+>abstract="创建条形图可视化图表来表示一个或多个堆叠量度的各种值。"
 
 <!-- markdownlint-enable MD034 -->
 

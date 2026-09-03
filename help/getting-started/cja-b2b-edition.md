@@ -1,6 +1,6 @@
 ---
 title: Customer Journey Analytics B2B edition
-description: 了解 Customer Journey Analytics 的 B2B Edition。
+description: 了解 Customer Journey Analytics 的 B2B 版本。
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
@@ -29,7 +29,7 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: 483
+source-wordcount: 484
 ht-degree: 94%
 
 ---
@@ -47,7 +47,7 @@ Customer Journey Analytics B2B edition添加了&#x200B;**基于帐户的报表�
 
 * 交易金额大
 * 销售周期长
-* 有多个决策者和影响因素，通常组成一个“购买群组”
+* 有多个决策者和影响者，通常组成一个“购买群组”
 * 受教育程度更高的买家
 * 客户维系和追加销售更重要
 * 千禧一代 B2B 买家期望获得更顺滑无缝的“数字消费”，如购买体验

@@ -22,7 +22,7 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
-source-wordcount: 3315
+source-wordcount: 3373
 ht-degree: 5%
 
 ---
@@ -364,7 +364,7 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
 #### 使用查询服务API
 
-或者，您可以使用RESTful API为查询定义查询和计划。有关详细信息，请参阅[查询服务API指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/api/getting-started)。
+或者，您可以使用RESTful API为查询定义查询和计划。 有关详细信息，请参阅[查询服务API指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/api/getting-started)。
 在创建查询（[创建查询](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Queries/operation/createQuery)）或为查询创建计划时（[创建计划查询](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Schedules/operation/createSchedule)），请确保将输出数据集定义为可选`ctasParameters`属性的一部分。
 
 

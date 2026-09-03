@@ -22,8 +22,8 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
 workflow-type: tm+mt
-source-wordcount: 571
-ht-degree: 6%
+source-wordcount: 605
+ht-degree: 5%
 
 ---
 
@@ -47,9 +47,9 @@ ht-degree: 6%
 * 定义架构中的字段及其属性
 * 配置关系架构中字段的必需属性：
 
-   * **主键**。
-   * **版本描述符**，必须将其配置为序列号（整数字段类型）或日期时间字段类型。 当您使用DateTime字段类型时，版本描述符定义数据修改的时间戳，例如，包含上次修改的时间戳。
-   * **时间戳描述符**（用于时间序列数据），它定义捕获事件时不可变的时间戳。 基于记录的关系架构不需要时间戳描述符。
+  * **主键**。
+  * **版本描述符**，必须将其配置为序列号（整数字段类型）或日期时间字段类型。 当您使用DateTime字段类型时，版本描述符定义数据修改的时间戳，例如，包含上次修改的时间戳。
+  * **时间戳描述符**（用于时间序列数据），它定义捕获事件时不可变的时间戳。 基于记录的关系架构不需要时间戳描述符。
 
 
 
@@ -105,5 +105,5 @@ ht-degree: 6%
 >[!MORELIKETHIS]
 >
 >[Data Mirror快速入门指南：镜像并使用关系数据](relational.md)
->[Data Mirror （Experience Platform文档）](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-mirror/overview)
+>[Data Mirror（Experience Platform文档）](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/data-mirror/overview)
 >[关系架构（Experience Platform文档）](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/relational)
