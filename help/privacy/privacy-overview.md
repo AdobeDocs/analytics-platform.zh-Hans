@@ -33,7 +33,7 @@ ht-degree: 88%
 
 ## 数据管理
 
-Adobe Customer Journey Analytics 和 [Adobe Experience Platform 数据治理](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html)之间的集成允许标记敏感的 Customer Journey Analytics 数据和实施隐私政策。
+Adobe Customer Journey Analytics 和 [Adobe Experience Platform 数据治理](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=zh-Hans)之间的集成允许标记敏感的 Customer Journey Analytics 数据和实施隐私政策。
 
 在由 Experience Platform 使用的数据集上创建的隐私标签和政策可以显示在 Customer Journey Analytics 数据视图工作流中。 这些标签阻止或警告从敏感字段创建量度和/或维度的用户。
 
@@ -67,4 +67,4 @@ CCPA 为加州居民提供了新的数据隐私权，例如，访问和删除个
 
 >[!MORELIKETHIS]
 >
->* [博客：如何在 Adobe Customer Journey Analytics 中保持有效治理](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4)
+>* [博客：如何在 Adobe Customer Journey Analytics 中保持有效治理](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4?profile.language=zh-Hans)

@@ -35,7 +35,7 @@ ht-degree: 64%
 
 >[!NOTE]
 >
->[Identity服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home)是核心Experience Platform服务，不需要额外许可。 有关详细信息，请参阅[了解Identity Service在Experience Platform基础结构中的角色](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home#understanding-the-role-of-identity-service-within-the-experience-platform-infrastructure)。
+>[Identity服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home)是核心Experience Platform服务，不需要额外许可。 有关详细信息，请参阅[了解Identity Service在Experience Platform基础结构中的角色](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home#understanding-the-role-of-identity-service-within-the-experience-platform-infrastructure)。
 >
 
 如果无法检索某个事件的人员ID信息，则将改用永久ID用于该&#x200B;*未拼合*&#x200B;事件。 因此，在与包含启用拼合的数据集的[连接](/help/connections/overview.md)关联的[数据视图](/help/data-views/data-views.md)中，人员ID数据视图组件包含事件级别的人员ID值或永久ID值。
@@ -231,7 +231,7 @@ ht-degree: 64%
   - 所有包含此类相关标识的数据集都必须为标识图数据摄取[&#128279;](faq.md#enable-a-dataset-for-the-identity-service)启用。 此支持可确保随着时间的推移，将来自所有所需来源的传入身份添加到图表中。
   - 如果一段时间内已在使用实时客户数据配置文件或Adobe Journey Optimizer，则应已在一定程度上设置此图表。<br/>如果启用基于图形的拼合的数据集也需要历史拼合回填，则图形应已包含整个时段的历史标识，以获取所需的拼合结果。
 - 如果要使用基于图形的拼合，并且预期事件数据集将参与身份图形，则应[为身份服务启用该数据集](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service)。
-- 永久性ID和人员ID可以与[identityMap](#identitymap)一起使用。 或者，持久ID和人员ID可以是XDM架构中的字段，在这种情况下，这些字段必须是[在架构中定义为标识](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity?lang=en)。
+- 永久性ID和人员ID可以与[identityMap](#identitymap)一起使用。 或者，持久ID和人员ID可以是XDM架构中的字段，在这种情况下，这些字段必须是[在架构中定义为标识](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity?lang=en)。
 
 >[!NOTE]
 >

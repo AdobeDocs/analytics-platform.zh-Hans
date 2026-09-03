@@ -36,7 +36,7 @@ ht-degree: 72%
 
 >[!BEGINSHADEBOX]
 
-请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [协助执行用户访问移动记分卡](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/assist-executives-to-access-mobile-scorecards){target="_blank"}以获取演示视频。
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [协助执行用户访问移动记分卡](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/dashboards/assist-executives-to-access-mobile-scorecards){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 

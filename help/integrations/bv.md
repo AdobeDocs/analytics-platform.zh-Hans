@@ -60,7 +60,7 @@ LLM流量可通过两种方式访问您的网站。 Customer Journey Analytics�
 品牌可见度托管连接器将数据作为摘要数据集交付给Experience Platform。 要在Customer Journey Analytics中测量客户历程，您需要自行完成两个设置步骤：
 
 1. 创建包含品牌可见度数据集的连接。 请参阅[创建或编辑连接](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/create-connection){target="_blank"}。
-2. 在该连接上创建数据视图。 数据视图允许在Analysis Workspace中使用以下维度和量度。 请参阅[创建或编辑数据视图](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview){target="_blank"}。
+2. 在该连接上创建数据视图。 数据视图允许在Analysis Workspace中使用以下维度和量度。 请参阅[创建或编辑数据视图](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/create-dataview){target="_blank"}。
 
 数据集：
 

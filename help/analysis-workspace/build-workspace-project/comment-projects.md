@@ -160,9 +160,9 @@ Analysis Workspace中的评论功能使与他人协作更加容易。
 
 ## 接收有关评论的通知
 
-您提及的项目所有者和[特定用户](#include-others-in-a-comment)将根据其CX Enterprise通知设置接收通知。 默认情况下，这些用户会收到应用内通知，该通知可从Customer Journey Analytics中的[CX Enterprise notification](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications)图标![CX Enterprise notification icon](assets/experience-cloud-notification.svg)中看到。
+您提及的项目所有者和[特定用户](#include-others-in-a-comment)将根据其CX Enterprise通知设置接收通知。 默认情况下，这些用户会收到应用内通知，该通知可从Customer Journey Analytics中的[CX Enterprise notification](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/account-preferences#view-notifications)图标![CX Enterprise notification icon](assets/experience-cloud-notification.svg)中看到。
 
-此外，用户还可以通过[订阅电子邮件通知](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications)和[订阅Slack通知](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack)，将其CX Enterprise通知设置配置为接收电子邮件通知和Slack通知。
+此外，用户还可以通过[订阅电子邮件通知](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications)和[订阅Slack通知](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/account-preferences#slack)，将其CX Enterprise通知设置配置为接收电子邮件通知和Slack通知。
 
 ## 为现有评论放置徽章
 

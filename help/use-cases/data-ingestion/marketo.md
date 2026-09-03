@@ -93,13 +93,13 @@ Marketo数据本身不包含ECID，但ECID字段可以添加为随`munchkin.js`�
 
 +++将Marketo源数据字段映射到其XDM目标
 
-将 [人员](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 和 [活动](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 对象映射到各自的 XDM 架构目标字段。
+将 [人员](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 和 [活动](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 对象映射到各自的 XDM 架构目标字段。
 
 +++
 
 +++将Marketo数据摄取到Adobe Experience Platform
 
-使用[Marketo Engage连接器](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)将数据从Marketo引入Experience Platform，并使用Experience Platform应用程序使这些数据保持最新。
+使用[Marketo Engage连接器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)将数据从Marketo引入Experience Platform，并使用Experience Platform应用程序使这些数据保持最新。
 
 +++
 

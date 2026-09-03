@@ -51,7 +51,7 @@ Customer Journey Analytics中出现了两个Adobe定义的策略，这些策略�
 
 遵循这些策略的组件呈灰显状态，并且确实有![InfoOutline](/help/assets/icons/InfoOutline.svg)图标。 当您将鼠标悬停在信息图标上时，会显示一条注释，以指示以下内容：**[!UICONTROL 策略已应用于此字段，因此禁止使用此数据]**。
 
-有关详细信息，请参阅[标签和策略](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-governance)。
+有关详细信息，请参阅[标签和策略](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/data-governance)。
 
 
 ![指示禁止使用数据的策略注释。](assets/restricted-label.png){zoomable="yes"}

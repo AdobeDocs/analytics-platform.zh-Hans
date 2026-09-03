@@ -60,8 +60,8 @@ Content Analytics作为独立产品授予许可，但配置是在Experience Plat
 | **Connection** | [连接](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/overview)定义要引入的Experience Platform数据集。 连接定义了数据集（数据存储在AEP中）与Customer Journey Analytics（可在其中分析数据）之间的链接。 通过连接，收集的数据可用于报告。 |
 | **&#x200B;**&#x200B;| [数据视图](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/data-views)是一个容器，通过它可决定如何解释来自连接的数据。 数据视图指定可用于报告的所有维度和量度。 数据视图与确定可在分析中使用的行和列的配置类似。 |
 | **Analysis Workspace** | [Analysis Workspace](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/home)是用于构建Content Analytics报告和分析的拖放浏览器界面。 |
-| **体验** | 在Content Analytics中，[体验](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology)是指网页上所有可根据页面URL捕获和分析的文本内容。 |
-| **资源** | 在Content Analytics中，[资源](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology)是个别且唯一的内容，如图像。 |
+| **体验** | 在Content Analytics中，[体验](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/content-analytics/content-analytics#terminology)是指网页上所有可根据页面URL捕获和分析的文本内容。 |
+| **资源** | 在Content Analytics中，[资源](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/content-analytics/content-analytics#terminology)是个别且唯一的内容，如图像。 |
 
 
 ## 设置概述
