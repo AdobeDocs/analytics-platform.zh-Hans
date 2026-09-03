@@ -6,11 +6,27 @@ role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
 autotag-review: '2026-05-19T09:53:18.849Z'
 TQID: 'https://experienceleague.adobe.com/wZ8vtE4BFc1ahBKdblSEAXBofZBPObbSJi4bA9MtxPY'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c18d9e03-ac7d-4811-9c92-3e92ddc70adeid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+  - id: c18d9e03-ac7d-4811-9c92-3e92ddc70ade
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: bac086b2636f835a5dc494b9cd05eb7b560f0bed
 workflow-type: tm+mt
 source-wordcount: 21458
@@ -253,7 +269,7 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 
 可使用以下模板：
 
-| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **培训教程**] | 了解常见的 Analysis Workspace 术语，以及构建首个分析的步骤 |
 | [!UICONTROL **页面**] | <!--duplicated in Engagement section--> 找出最受欢迎和最不受欢迎的页面。 <p>**这可以帮助您**&#x200B;更好地了解您的受众，以及他们最感兴趣的信息类型。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如调整页面元数据以提高查看次数较少的页面的可见性，或者花时间改进查看次数最多的页面的内容。</p><p>此模板使用“页面”维度和“页面浏览次数”量度。</p> |
@@ -407,7 +423,7 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 
 可使用以下模板：
 
-| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **关键量度**] | <!--duplicated in Most popular section--> 查看并排显示页面查看次数、访问次数和独特访客量度的报告。 数据显示了某段时间内的数据，并与之前的时间段进行了比较。 <p>**这可以帮助您**&#x200B;比较这些重要的量度，以更全面地了解访问网站的独特人员数量、页面访问次数以及会话次数。</p><p>**根据您所了解的内容，您可以**&#x200B;采取多种行动，例如评估每个人在特定一周或一个月内访问网站时查看的平均页面数，以及在一年中的某些时间或开展营销活动前后这些页面数的变化情况。 </p><p>此模板使用“天”维度、“页面浏览次数”量度、“访问量”量度和“独特访客”量度。</p> |
 | [!UICONTROL **页面浏览次数**] | <!--duplicated in Most popular section-->查看页面总查看次数。 数据显示了某段时间内的数据，并与之前的时间段进行了比较。 <p>**这可以帮助您**&#x200B;更好地了解您网站的流量随着时间的推移如何增加或减少。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如通过比较启动营销活动前后的网站流量来评估最近发起的营销活动的有效性。 或者您可以比较一下同比假期期间的流量。</p><p>此模板使用“天”维度和“页面浏览次数”量度。</p> |
@@ -486,7 +502,7 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 
 可使用以下模板：
 
-| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **产品转化漏斗**] | 在显示购物车、结账和订单的漏斗可视化图表中查看产品转化情况。 您还可以查看转化百分比、收入平均值、单位平均值和订单平均值。<p>**这可以帮助您**&#x200B;更好地了解人们在转换过程中的进度和流失情况。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如改进您的网站以促进更顺畅的结账过程。</p> |
 | **产品** | 查看哪些产品正在推动关键量度，例如热门产品或查看次数最多的产品。 <p>**这可以帮助您**&#x200B;更好地了解哪些产品最成功。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如增加对成功产品的资金投入，减少对不太成功产品的资金投入。</p><p>此模板使用“订单”量度和“产品”维度。 |
@@ -672,7 +688,7 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 
 可使用以下模板：
 
-| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **同意策略概述**] | 根据 Adobe Experience Platform 中的同意策略成员资格数据查看访客。<p>**这可以帮助您**&#x200B;以此为起点，针对访客的同意策略成员资格生成报告。 当数据视图配置为用于同意情况报告时，Customer Journey Analytics 会自动在 Analysis Workspace 中提供同意策略分析模板。 <br/>**根据分析结果，您可以采取多种措施，例如从分析报告中排除未给予同意的访客。**</p> |
 | **[!UICONTROL 受众概述]** | 查看访问您网站的用户中所包含的受众群体。<p>**这可以帮助您**&#x200B;更好地了解受众的一般信息、受众来源（RTCDP、Customer Journey Analytics 等）、受众重叠等。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如利用这些数据来重点关注针对这些特定受众的营销工作，或者为跨越多个受众的客户创建量身定制的体验。</p><p>此模板使用“受众名称”、“受众来源”、“退出受众名称”和“退出受众来源”维度。</p><p>有关详细信息，请参阅[在Customer Journey Analytics中分析Experience Platform受众](/help/connections/audience-analysis/analyze-audiences.md)。</p> |
@@ -793,7 +809,7 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 
 可使用以下模板：
 
-| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **营销渠道**] > [!UICONTROL **渠道概述报告**] | 当使用自定义归因时，此模板显示访客如何到达您的网站。<p>**这可以帮助您**&#x200B;更好地了解哪些营销渠道最有效。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如加大对有效营销渠道的投入，并减少对效果不佳的营销渠道的投入。</p><p>此模板使用 ID(variables/marketingchannel) 维度和“收入”量度。</p> |
 | [!UICONTROL **营销渠道**] > [!UICONTROL **首个联系渠道**] | 查看访客在参与期间（默认为 30 天）首次匹配的营销渠道。 <p>**这可以帮助您**&#x200B;更好地了解哪些营销渠道能给您的网站带来初始流量。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如将营销重点放在最有效的领域。</p><p>此模板使用“首次接触渠道”维度。</p> |
@@ -863,7 +879,7 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 
 可使用以下模板：
 
-| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **移动设备应用程序 Screens**] | 查看移动应用程序上与每个屏幕相关的事件、会话和人数。<p>**这可以帮助您**&#x200B;更好地了解您网站中哪些屏幕最受欢迎。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如改进最受欢迎的屏幕上的内容。</p><p>此模板使用“事件”、“会话”、“人员”和“百分比变化”量度。 它还使用“页面标题”维度。</p> |
 | **移动设备应用程序操作** | 查看人们在您的移动应用程序上采取的操作。 <p>**这可以帮助您**&#x200B;更好地了解人们如何使用您的应用程序以及从中获得的价值。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如改进开发功能，以补充或改进最受欢迎的功能。</p><p>此模板使用“事件”、“会话”、“人员”和“百分比变化”量度。 |
@@ -899,7 +915,7 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 
 可使用以下模板：
 
-| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **移动运营商**] | 查看为人们访问您网站所使用的移动设备提供蜂窝网络连接的电信公司。<p>**这可以帮助您**&#x200B;更好地了解您的用户群中最受欢迎的移动运营商有哪些。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如根据不同运营商的网络能力来调整内容传递方式，以确保用户能够获得流畅的使用体验。</p><p>此模板使用“移动运营商”维度。</p> |
 | **设备** | 查看人们用来访问您网站的移动设备的品牌和型号。<p>**这可以帮助您**&#x200B;更好地了解您的用户群中最受欢迎的移动设备有哪些。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如针对最常见的移动设备优化您网站的呈现效果。</p><p>此模板使用“移动设备名称”维度。</p> |
@@ -963,7 +979,7 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 
 可使用以下模板：
 
-| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **这小时的其中一分钟**] | 查看您网站上的事件数、会话量和人数（按分钟细分）。 例如，如果您有一份报告的时间范围为一天，则当天每小时的第一分钟会分组到同一个维度项中。<p>**这可以帮助您**&#x200B;更好地了解粒度级别的趋势。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如针对高峰时段优化资源，精确到分钟。</p><p>此模板使用“小时中的分钟”维度。</p> |
 | **一天中一小时** | 查看您网站上的事件、会话和人员（按一天中的小时细分）。 例如，如果某个报告的时间跨度为 1 月 1 日至 1 月 7 日，则每天的第一个小时会分组到同一个维度项中。<p>**这可以帮助您**&#x200B;更好地了解您的网站一天中访问频率最高和最低的时间。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如在流量高峰时段为您的网站分配更多的计算资源。</p><p>此模板使用“一天中的小时”维度。</p> |
@@ -1003,7 +1019,7 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 
 可使用以下模板：
 
-| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **多渠道概述**] | 查看跨多个渠道的流量分配。 <p>**这可以帮助您**&#x200B;更好地了解哪些渠道能够更成功地带来流量和参与度。 </p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如将营销工作重点放在实现投资回报率最高的渠道上。</p><p>此模板使用“用户、会话和事件”量度。</p> |
 | **Web + 应用程序** | 同时查看网络流量和移动流量。<p>**这可以帮助您**&#x200B;更好地了解您网站网络流量和移动流量的分配。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如在移动设备应用程序流量达到一定水平时，为其体验投入更多资源。</p><p>此模板使用 “Web 会话、移动设备应用程序会话以及 Web+ 应用程序跨渠道会话”量度。</p> |
@@ -1040,7 +1056,7 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 
 可使用以下模板：
 
-| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **呼叫中心仪表板**] | 查看呼叫中心数据，包括客户呼叫的原因和次数。 <p>**这可以帮助您**&#x200B;更好地了解客户在哪里遇到了问题以及呼叫中心的资源花在了哪里。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如解决导致呼叫中心流量增加的产品问题，最终提高产品盈利能力。</p> |
 | **销售点** | 查看销售点 (POS) 交易数据，包括收入、订单和售出数量。 该模板还包括可视化效果，其中显示有关热门商店、热门产品和热门产品类别以及在线与离线销售的信息。 <p>**这可以帮助您**&#x200B;更好地了解您在实体店和网上最畅销的产品。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如将更多的营销资源分配给表现最好的产品和渠道。</p><p>此模板使用“用户”、“收入”和“订单”量度。</p> |
@@ -1079,7 +1095,7 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 
 可使用以下模板：
 
-| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Journey Optimizer 营销活动**] | 查看 Journey Optimizer 营销活动的基本量度，包括电子邮件营销活动、试验、应用程序内、SMS 等。<p>**这可以帮助您**&#x200B;更好地了解点击次数和已发送消息数量等详细信息，从而全面洞察营销活动的有效性和参与度。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如根据目标受众的参与度调整营销活动。</p> |
 | **Journey Optimizer 历程** | 查看 Journey Optimizer 历程的基本量度，包括电子邮件历程、试验、应用程序内、SMS 等。<p>**这可以帮助您**&#x200B;更好地了解点击次数和已发送消息数量等详细信息，从而全面洞察历程的有效性和参与度。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如根据目标受众的参与度调整营销活动。</p> |
@@ -1099,7 +1115,7 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 >title="跟踪 B2B 会议请求的完整生命周期。 监测转化率、顾问绩效，并识别最有效的销售线索开发渠道。"
 >abstract="**这可以帮助您**&#x200B;跟踪会议转化率、识别高绩效的团队成员、了解预订行为的季节性趋势、确定哪些页面生成了最有价值的会议请求。<br/>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如优化您的会议请求流程、将资源重新分配给转化率高的页面、为预订率较低的顾问开发有针对性的培训，或者实施新的策略以减少会议被错过。"
 
-| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Brand Concierge概述**] | 通过对话模式、用户反馈以及推荐效果来分析用户参与度情况。 <p>**这可以帮助您**&#x200B;确定参与模式、评估对话质量、跟踪客户满意度趋势、衡量推荐链接的有效性。</p><p>**根据您所了解的情况，您可以**&#x200B;采取多种行动，例如改进您的 AI 代理的回答、为常见问题开发有针对性的内容、改进推荐算法，或者为不同的用户区段创建专门的路径。</p> |
 | **Brand Concierge B2B会议** | 跟踪B2B会议请求的整个生命周期。 监控转化率，评估顾问预订表现，并确定您最有效的商机开发渠道。 <p>**这可帮助您**&#x200B;跟踪会议转化率，识别表现优异的团队成员，了解预订行为的季节性趋势，并查明哪些页面URL可生成最有价值的会议请求。 </p><p>**根据您了解的情况，您可以**&#x200B;执行任意数量的操作，如优化会议请求流程、将资源重新分配给转化率较高的页面URL、为预订率较低的顾问制定有针对性的培训计划，或实施新策略以减少错过的会议。</p> |
@@ -1129,7 +1145,7 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 
 可使用以下模板：
 
-| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **B2B 帐户参与度概述**] | 查看您的帐户在各种事件、人员和机会方面的活跃程度。<p>**这可以帮助您**&#x200B;更好地了解帐户级别的参与度是上升还是下降趋势，比较各帐户之间的活动，决定要将客户保留或客户赢取的重点放在哪里。</p><p>**根据您获得的见解，您可以**&#x200B;采取很多措施，例如将注意力重新集中在那些参与度较低，但由于重要性很高而需要更多关注的帐户上。</p> |
 | [!UICONTROL **B2B 机会参与概述**] | 在机会层面跟踪参与度，并发现那些势头增强或减弱的交易。<p>**这可以帮助您**&#x200B;更准确地预测交易进展，重点关注参与度激增或停滞的情况。</p><p>**根据您获得的见解，您可以**&#x200B;采取很多措施，例如对即将完成的交易投入更多精力，研究其他交易失去吸引力的原因。</p> |
@@ -1147,7 +1163,7 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 
 可使用以下模板：
 
-| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Mix Modeler增量模型分析**] | 查看由 Mix Modeler 生成的所选模型洞察。<p>**这可以帮助您**&#x200B;更好地了解 Mix Modeler 生成的模型带来的增量洞察。 <p>**基于这些洞察**，您能够：<ul><li>可视化并量化组织营销活动的影响。</li><li>识别表现优异的渠道。</li><li>识别可能需要优化的渠道。</li></ul></p> |
 
