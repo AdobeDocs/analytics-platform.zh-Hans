@@ -6,11 +6,22 @@ feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
 TQID: https://experienceleague.adobe.com/IM7-a-jp-lLfuGKj-CM2McnFXcus2-x-ffLC8UUKAmY
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12id: bc7a5a86-1a70-451f-985c-037b65f091d1id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
 source-wordcount: 1643
@@ -63,7 +74,7 @@ ht-degree: 41%
 
 ### 线形图
 
-行](/help/content-analytics/assets/aca-line-thumbnail.png)的![Content Analytics缩略图
+行![&#128279;](/help/content-analytics/assets/aca-line-thumbnail.png)的Content Analytics缩略图
 
 将鼠标悬停在[行](/help/analysis-workspace/visualizations/line.md)中的数据点上时，将显示缩略图。
 
@@ -102,7 +113,7 @@ Content Analytics [模板](/help/analysis-workspace/templates/use-templates.md)�
 
 1. 从主菜单中选择&#x200B;**[!UICONTROL Workspace]**。
 1. 确保您已选择为 Content Analytics 配置的数据视图。
-1. 搜索或使用区段（为&#x200B;**[!UICONTROL 渠道]**&#x200B;使用 **[!UICONTROL Web]**，为**[!UICONTROL 用例]**使用&#x200B;**[!UICONTROL 参与度]**）查找并选择 **[!UICONTROL Content Analytics]** 模板。
+1. 搜索或使用区段（为&#x200B;**[!UICONTROL 渠道]**&#x200B;使用 **[!UICONTROL Web]**，为&#x200B;**[!UICONTROL 用例]**&#x200B;使用&#x200B;**[!UICONTROL 参与度]**）查找并选择 **[!UICONTROL Content Analytics]** 模板。
 1. 选择&#x200B;**[!UICONTROL 使用模板]**。
 1. 在&#x200B;**[!UICONTROL 设置模板]**&#x200B;对话框中，从&#x200B;**[!UICONTROL 选择转化量度]**&#x200B;对话框中选择一个量度。 例如，**[!UICONTROL 资产点进率]**。
 1. 选择&#x200B;**[!UICONTROL 继续]**。
@@ -199,7 +210,7 @@ Content Analytics使用AI和GenAI自动将元数据和属性（如主题、场�
 
 1. 从主菜单中选择&#x200B;**[!UICONTROL Workspace]**。
 1. 确保您已选择为 Content Analytics 配置的数据视图。
-1. 搜索或使用区段（**[!UICONTROL 渠道]**&#x200B;的&#x200B;**[!UICONTROL Web]**&#x200B;和**[!UICONTROL 用例]**的&#x200B;**[!UICONTROL 参与]**）来查找和选择&#x200B;**[!UICONTROL 付费媒体Content Analytics]**&#x200B;模板。
+1. 搜索或使用区段（**[!UICONTROL 渠道]**&#x200B;的&#x200B;**[!UICONTROL Web]**&#x200B;和&#x200B;**[!UICONTROL 用例]**&#x200B;的&#x200B;**[!UICONTROL 参与]**）来查找和选择&#x200B;**[!UICONTROL 付费媒体Content Analytics]**&#x200B;模板。
 1. 选择&#x200B;**[!UICONTROL 使用模板]**。
 
 **[!UICONTROL Content Analytics — 付费媒体摘要数据]**&#x200B;项目在[Analysis Workspace](/help/analysis-workspace/home.md)中打开。 项目包含&#x200B;**[!UICONTROL 付费媒体性能]** [面板](/help/analysis-workspace/c-panels/panels.md)，其中包含[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)和[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)。 使用该面板可跨网络、帐户、营销活动、体验和资产审查付费媒体覆盖率、参与度、支出和效率。 面板中的量度和维度会刻意停留在付费媒体资产摘要粒度；请勿将摘要数据集与事件数据结合使用。
