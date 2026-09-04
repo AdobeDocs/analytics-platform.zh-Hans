@@ -26,10 +26,10 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
+source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
-source-wordcount: 906
-ht-degree: 55%
+source-wordcount: 1019
+ht-degree: 43%
 
 ---
 
@@ -48,7 +48,7 @@ Content Analytics 提供递增价值：
 
 1. 内容&#x200B;**使用情况**：借助 Content Analytics，您可以洞察哪些资产获得了印象，以及在何处获得。 这些见解可帮助您查看Web和移动资产上的资产是否未被充分利用或过度使用。
 1. 内容&#x200B;**参与度**：Content Analytics 可以提供参与度洞察，例如具有特定属性资产的平均点击率。 这些洞察可以帮助您确定特定类型的体验是否仍然有效。
-1. 内容历程：此外，在与Experience Platform中的所有其他可用数据结合使用时，您可以获得有关内容历程的其他见解；例如，除了参与度之外，特定内容是否会导致转化。 例如，特定内容是否会导致转化，以及参与度。 有了这些知识，您就能确定各类内容的 ROI。
+1. 内容&#x200B;**历程**：此外，在与Experience Platform中可用的所有其他数据结合使用时，您可以获得有关内容历程的其他见解；例如，除了参与度之外，特定内容是否会导致转化。 例如，特定内容是否会导致转化，以及参与度。 有了这些知识，您就能确定各类内容的 ROI。
 1. 内容&#x200B;**个性化**：最终，Content Analytics 使您能够根据洞察采取行动，并利用这些洞察来决定如何为内容投入资金。 例如，我应该向特定受众发送特定类型的内容吗？ 哪些内容能为我提供高度个性化的机会？
 
 ## 术语
@@ -63,13 +63,21 @@ Content Analytics 使用以下关键术语：
 
 ## 工作原理
 
-Content Analytics使用Experience Platform事件数据集中的Web和移动图像视图数据来[收集内容事件数据](config/datacollection.md)。 这些内容体验事件要求使用Experience Platform Edge Network（Web SDK、Mobile SDK、服务器API）收集数据。 行为数据可以通过Web SDK、Mobile SDK或Analytics Source Connector来收集。
+Content Analytics使用Experience Platform事件数据集中的Web和移动图像视图数据和付费媒体数据来[收集内容事件数据](config/datacollection.md)。 这些内容体验事件要求使用Experience Platform Edge Network（Web SDK、Mobile SDK、服务器API）或通过Experience Platform源连接器收集数据。
 
-![Content Analytics 工作原理](assets/aca-overview-new.gif)
+* 行为数据可以通过Web SDK、Mobile SDK或Analytics Source Connector来收集。
+* 对于付费媒体，通过可用的付费媒体源连接器，从Experience Platform中收集的付费媒体事件数据源重构体验数据。
 
-1. 当用户访问为Content Analytics[&#128279;](config/configuration.md)配置的网站或应用程序时，Experience Platform Web或Mobile SDK会记录展示次数以及与内容的交互。
-1. 身份和特征化服务处理这些交互。 该过程包括一个检索服务，该服务会重新访问已配置 URL 的面向公众的版本，这些 URL 定义了这些交互。 身份标识服务会为所有这些检索到的 URL 唯一标识体验和资产。 功能化服务应用AI/ML服务来发现体验和资产元数据和属性。
-1. 这些服务（[组件、属性和身份标识](/help/content-analytics/report/components.md)）的结果用于更新 Experience Platform 中相关的特定 Content Analytics 数据集。
+![Content Analytics 工作原理](assets/aca-overview-new-paid-media.gif)
+
+
+1. 当用户访问为Content Analytics[&#128279;](config/configuration.md)配置的网站或应用程序时，Experience Platform Web或Mobile SDK会记录与内容的展示次数和交互情况。
+付费媒体数据每天从源连接器（例如，到Google和Meta）收集到数据集中。 Content Analytics监控[配置的付费媒体数据集](config/configuration.md)以获取新的无特征化资源和体验，并使用广告数据集元数据来撰写体验HTML。 该体验HTML会作为付费媒体体验与资源详细信息相结合。
+
+1. 身份和功能化服务会处理这些交互（来自Web和移动设备）和体验（来自付费媒体）。 该流程包括检索服务，该服务会修订定义交互的已配置URL的面向公众的版本，以及定义体验的HTML。 对于所有这些检索到的URL和HTML，Identity Service将唯一标识体验和资源。 功能化服务应用AI/ML服务来发现体验和资产元数据和属性。
+
+1. 标识和特征化服务（[组件、属性和标识](/help/content-analytics/report/components.md)）的结果用于更新Experience Platform中相关的特定Content Analytics数据集。
+
 1. 您可以在Customer Journey Analytics设置（[连接](/help/connections/overview.md)、[数据视图](/help/data-views/data-views.md)和[Workspace](/help/analysis-workspace/home.md)）中使用Content Analytics数据，以及行为数据和其他查找数据。 该设置提供了对您的内容进行独特的宏级深入分析的基础。 <br/>您可以使用[Content Analytics模板](/help/content-analytics/report/report.md#template)快速开始Content Analytics报告和分析。
 
 

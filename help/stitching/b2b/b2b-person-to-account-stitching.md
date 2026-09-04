@@ -19,7 +19,7 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 1ef12bfccbecc74a0b437c9c582fe0f6c1c1e9e5
+source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
 source-wordcount: 2116
 ht-degree: 19%
@@ -91,7 +91,7 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
 
 基于图形的拼接还用于提升体验事件数据集中的人员ID。 例如，查看&#x200B;**emily@adobe.com**&#x200B;的更新值。
 
-基于图形的拼接还用于提升体验事件数据集中的人员ID。 例如，将永久ID (ECID)字段配置为在[启用数据集](#enable-b2b-stitching-on-event-datasets)上的拼合时用作永久人员ID。 基于`5678`作为ECID值，`emily@adobe.com`作为电子邮件值，`emily@adobe.com`在相关事件中设置为提升的人员ID。
+基于图形的拼接还用于提升体验事件数据集中的人员ID。 例如，将永久ID (ECID)字段配置为在[启用数据集](#enable-b2b-person-to-account-stitching-on-event-datasets)上的拼合时用作永久人员ID。 基于`5678`作为ECID值，`emily@adobe.com`作为电子邮件值，`emily@adobe.com`在相关事件中设置为提升的人员ID。
 
 | 时间戳 | 持久 ID | 原始帐户ID | 原始人员ID | 提升的人员ID |
 |--|--|---|---|---|

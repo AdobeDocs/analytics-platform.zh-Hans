@@ -22,10 +22,10 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 537fc30db0f6e6bddc54df7bbcc04d802226958f
+source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
-source-wordcount: 1365
-ht-degree: 48%
+source-wordcount: 1643
+ht-degree: 41%
 
 ---
 
@@ -100,6 +100,10 @@ ht-degree: 48%
 
 
 ## 模板
+
+Content Analytics在Workspace中提供两个项目模板，以便快速创建项目。
+
+### Content Analytics模板
 
 Content Analytics [模板](/help/analysis-workspace/templates/use-templates.md)可帮助您了解哪些内容和内容属性的表现最佳。 该模板是[网页渠道和参与度用例](/help/analysis-workspace/templates/use-templates.md#web-engagement)的一部分，详细说明了您的内容在粒度级别上的表现。 您可以查看单个资产或特定属性的表现。
 
@@ -195,6 +199,21 @@ Content Analytics使用AI和GenAI自动将元数据和属性（如主题、场�
 
     您还可以将[!UICONTROL 资产感知 ID] 换为[!UICONTROL 资产 ID]，以记录特定图像 URL 被引用的位置。
 
+
+### 付费媒体Content Analytics模板
+
+付费媒体Content Analytics [模板](/help/analysis-workspace/templates/use-templates.md)可帮助您了解哪些付费媒体内容和内容属性的表现最佳。 该模板是[Web渠道和参与用例](/help/analysis-workspace/templates/use-templates.md#web-engagement)的一部分，可帮助您了解付费媒体内容在细粒度级别的表现如何。 您可以跨网络、帐户、营销活动、体验和资产查看付费媒体覆盖率、参与度、支出和效率。 此面板中的量度和维度会刻意保留在付费媒体资产摘要粒度中。 请勿将此模板中面板的摘要数据集与事件数据相结合。
+
+根据您了解的情况，您可能会执行任意数量的操作，例如，重新关注您如何在付费媒体渠道上支出、如何在性能不佳的营销活动上支出更多资金，或者如何在性能良好的资产营销活动上支出更多资金。
+
+如要使用模板：
+
+1. 从主菜单中选择&#x200B;**[!UICONTROL Workspace]**。
+1. 确保您已选择为 Content Analytics 配置的数据视图。
+1. 搜索或使用区段（**[!UICONTROL 渠道]**&#x200B;的&#x200B;**[!UICONTROL Web]**&#x200B;和&#x200B;**[!UICONTROL 用例]**&#x200B;的&#x200B;**[!UICONTROL 参与]**）来查找和选择&#x200B;**[!UICONTROL 付费媒体Content Analytics]**&#x200B;模板。
+1. 选择&#x200B;**[!UICONTROL 使用模板]**。
+
+**[!UICONTROL Content Analytics — 付费媒体摘要数据]**&#x200B;项目在[Analysis Workspace](/help/analysis-workspace/home.md)中打开。 项目包含&#x200B;**[!UICONTROL 付费媒体性能]** [面板](/help/analysis-workspace/c-panels/panels.md)，其中包含[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)和[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)。 使用该面板可跨网络、帐户、营销活动、体验和资产审查付费媒体覆盖率、参与度、支出和效率。 面板中的量度和维度会刻意停留在付费媒体资产摘要粒度；请勿将摘要数据集与事件数据结合使用。
 
 >[!MORELIKETHIS]
 >

@@ -25,10 +25,10 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 6c137d20d25cff6fe4630dedb33cfa8b88c121aa
+source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
-source-wordcount: 4186
-ht-degree: 65%
+source-wordcount: 4806
+ht-degree: 54%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 65%
 
 ## 引导式配置向导
 
-引导式配置向导包含四个部分（[详细信息](#details)、[连接](#connection)、[数据视图](#data-view)和[通道](#channels)），每个部分都会提示您提供正确设置和配置Content Analytics所需的详细信息。 请先完成每个部分，然后再进入下一个部分，因为某一部分中的某些设置可能取决于前面部分中的配置值。
+引导式配置向导包含四个部分：[详细信息](#details)、[连接](#connection)、[数据视图](#data-view)和[通道](#channels)。 每个部分都会提示您提供配置Content Analytics所需的详细信息。 在移到下一部分之前完成每个部分，因为某些设置取决于前面部分中的配置值。
 
 ### 详细信息 {#onboarding-details}
 
@@ -89,7 +89,7 @@ ht-degree: 65%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="详细信息"
->abstract="本指南列出了配置 Content Analytics 所需的必要条件。 请为此配置提供名称，并选择包含要分析的内容分析数据的沙盒。"
+>abstract="本指南设置了配置Content Analytics的要求。 为此配置提供一个名称，然后选择包含要分析的内容分析数据的沙盒。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_boldheader"
@@ -99,7 +99,7 @@ ht-degree: 65%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_header"
 >title="连接"
->abstract="从 Customer Journey Analytics 中选择一个您希望将 Content Analytics 数据与之合并的现有连接。"
+>abstract="从Customer Journey Analytics中选择一个现有连接，以将Content Analytics数据与合并。"
 
 每个配置都需要一个唯一名称。 例如：`Example Content Analytics configuration`。 保存或实施配置都需要名称。
 
@@ -140,7 +140,7 @@ ht-degree: 65%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="数据视图"
->abstract="从 Customer Journey Analytics 中选择一个您希望将 Content Analytics 数据与之合并的现有数据视图。"
+>abstract="从Customer Journey Analytics中选择现有数据视图，以将Content Analytics数据与合并。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
@@ -238,14 +238,16 @@ ht-degree: 65%
 
 ### 渠道
 
-在&#x200B;**[!UICONTROL 渠道]**&#x200B;部分中，选择要为Content Analytics启用的渠道。 您可以选择介于&#x200B;**[!UICONTROL 移动设备]**&#x200B;和&#x200B;**[!UICONTROL Web]**&#x200B;之间。
+在&#x200B;**[!UICONTROL 渠道]**&#x200B;部分中，选择要为Content Analytics启用的渠道。 您可以选择介于&#x200B;**[!UICONTROL 移动设备]**、**[!UICONTROL Web]**&#x200B;和&#x200B;**[!UICONTROL 付费媒体]**&#x200B;之间。
 
 * 要选择尚未配置的渠道，请选择&#x200B;**[!UICONTROL 启用]**。
 * 要选择已配置但要更改配置的渠道，请选择&#x200B;**[!UICONTROL 编辑配置]**。
 
-然后，您可以更详细地配置渠道。 根据您是启用[移动设备](#mobile)还是[Web](#web)渠道的配置，该配置会有所不同。
+然后，您可以更详细地配置渠道。 根据您是启用[移动设备](#mobile)、[Web](#web)还是[付费媒体](#paid-media)渠道的配置，该配置会有所不同。
 
-#### 移动 {#mobile}
+#### 移动
+
++++ 详细信息
 
 <!-- For updated ACA -->
 
@@ -281,7 +283,7 @@ ht-degree: 65%
 
 对于移动渠道，您可以配置[体验捕获和定义](#experience-capture-and-definition)、[数据收集](#data-collection)和[标头覆盖](#header-overrides)。
 
-##### 体验捕捉和定义 {#mobile-experience-capture-and-definition}
+### 体验捕捉和定义 {#mobile-experience-capture-and-definition}
 
 在此部分中，您可以选择将体验包含在通过Content Analytics收集的移动数据中。  对于移动渠道，体验是指您使用适用于Content Analytics的Adobe Experience Platform SDK注册为体验。
 
@@ -289,7 +291,7 @@ ht-degree: 65%
 
 仅考虑在您使用移动设备应用程序注册体验并跟踪体验视图和体验点击次数时包含体验。
 
-##### 数据收集 {#mobile-data-collection}
+### 数据收集 {#mobile-data-collection}
 
 利用数据收集设置，可定义要为Content Analytics收集的数据（体验位置、资源位置、资源URL）。 确保在该数据收集过程中不会收集任何个人身份信息。
 
@@ -322,7 +324,7 @@ ht-degree: 65%
   为&#x200B;**[!UICONTROL 要排除的资产URL]**&#x200B;指定&#x200B;**[!UICONTROL 正则表达式字符串]**。 <br/>例如： `^(?!.*(logo\.jpg)).*$`从Content Analytics中排除所有引用徽标JPEG图像的资源URL。
 
 
-##### 标头覆盖 {#mobile-header-overrides}
+### 标头覆盖 {#mobile-header-overrides}
 
 <!-- needs modification for mobile channel -->
 
@@ -334,12 +336,15 @@ ht-degree: 65%
 1. 输入&#x200B;**[!UICONTROL 标头名称]**。 例如，`x-asset-service`。
 1. 输入&#x200B;**[!UICONTROL 标头值]**。 您指定的任何内容都是机密的，在用户界面中不可见（除非您在输入期间明确选择公开![可见性](/help/assets/icons/Visibility.svg)值）。
 
-##### 保存 {#mobile-save}
+### 保存 {#mobile-save}
 
 配置移动渠道后，选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存配置。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消配置。
 
++++
 
 #### Web {#web}
+
++++ 详细信息
 
 对于Web渠道，您可以配置[体验捕获和定义](#experience-capture-and-definition-1)、[数据收集](#data-collection-1)和[标题覆盖](#header-overrides-1)。
 
@@ -444,7 +449,7 @@ ht-degree: 65%
 >abstract="指明在为 Content Analytics 收集数据时应&#x200B;**包含**&#x200B;或&#x200B;**排除**&#x200B;哪些资产。 请确保排除能够识别个人身份的资产。"
 
 
-##### 体验捕捉和定义 {#web-experience-capture-and-definition}
+### 体验捕捉和定义 {#web-experience-capture-and-definition}
 
 在此部分中，您可以选择将体验包含在通过Content Analytics收集的Web数据中。  体验由网页上的所有文本组成，这些文本可使用最初用户访问的URL进行复制。
 
@@ -459,9 +464,7 @@ ht-degree: 65%
 >
 >实施 [Content Analytics 版本控制](manual.md#versioning)，收集您因 Content Analytics 而对体验（页面）所做的更改。
 
-
-
-###### 新的配置 {#new-experiences-configuration}
+#### 新的配置 {#new-experiences-configuration}
 
 要将体验包含到新的或未实施的配置中：
 
@@ -475,13 +478,13 @@ ht-degree: 65%
 
 1. 选择&#x200B;**[!UICONTROL 添加Regex]**&#x200B;以添加域正则表达式和查询参数的组合。
 1. 通过定义影响页面内容的&#x200B;**[!UICONTROL 域正则表达式]**&#x200B;和&#x200B;**[!UICONTROL 查询参数]**&#x200B;的组合，指定内容在网站上的呈现方式。
-   1. 输入&#x200B;**[!UICONTROL 域正则表达式]**，例如 `/^(?!.*\b(store|help|admin)\b)/`。 确保使用以下方法将正则表达式转义 `/`。 域正则表达式表示这些参数适用于哪些 URL。 例如，您可能有多个站点，并且每个站点都用不同的参数驱动内容。 如果查询参数适用于所有页面，那么您可以使用 `.*` 表示所有页面。
+   1. 输入&#x200B;**[!UICONTROL 域正则表达式]**，例如 `/^(?!.*\b(store|help|admin)\b)/`。 确保使用以下方法将正则表达式转义 `/`。 域正则表达式表示这些参数适用于哪些 URL。 例如，您有多个网站，而每个网站的内容是由不同的参数驱动的。 如果查询参数适用于所有页面，那么您可以使用 `.*` 表示所有页面。
    1. 指定&#x200B;**[!UICONTROL 查询参数]**&#x200B;的逗号分隔列表，例如`outdoors, patio, kitchen`。
 1. 如果您想移除域正则表达式和查询参数的组合，请选择&#x200B;**[!UICONTROL 移除]**。
 1. 如果您想添加正则表达式和查询参数的另一个组合，请选择&#x200B;**[!UICONTROL 添加正则表达式]**。
 
 
-###### 已实施的配置 {#implemented-experiences-configuration}
+#### 已实施的配置 {#implemented-experiences-configuration}
 
 要在已实施的配置中编辑现有体验或包含新体验，请执行以下操作：
 
@@ -494,7 +497,7 @@ ht-degree: 65%
 
 * 选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**&#x200B;以进一步编辑Content Analytics中体验的数据收集配置。 您在与当前配置相关联的标记属性中被重定向到 [Adobe Content Analytics 扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)。
 
-##### 数据收集 {#web-data-collection}
+### 数据收集 {#web-data-collection}
 
 数据收集设置允许您定义要为Content Analytics收集哪些数据（页面、资源）。 请勿在该数据收集过程中收集任何个人身份信息。
 
@@ -514,7 +517,7 @@ ht-degree: 65%
     1. 指定一个&#x200B;**[!UICONTROL 标记名称]**，例如 `ACA Test for Documentation`。
     1. 指定&#x200B;**[!UICONTROL 域]**，例如，`example.com`。
 
-    如果要使用[Content Analytics Javascript库](/help/content-analytics/config/tags-agnostic.md)为Web渠道创建与标记无关的实现，请使用新的Tags属性。 将创建Tags属性，但您将不会在不可知的实施中使用属性。 但是，不确定的实施要求您至少运行一次引导式配置向导。
+    如果要使用[Content Analytics JavaScript库](/help/content-analytics/config/tags-agnostic.md)为Web渠道创建与标记无关的实现，请使用新的Tags属性。 将创建Tags属性，但在不可知的实施中不能使用属性。 但是，不确定的实施要求您至少运行一次引导式配置向导。
 
 * 表示在为 Content Analytics 收集数据时应包含或排除哪些页面。 请确保排除能够识别个人身份的页面。
 
@@ -525,7 +528,7 @@ ht-degree: 65%
   为&#x200B;**[!UICONTROL 要包含/排除的资产]**&#x200B;指定&#x200B;**[!UICONTROL 正则表达式字符串]**。 <br/>例如：`^(?!.*(logo\.jpg)).*$` 可将所有徽标 JPEG 图像排除在 Content Analytics 之外。
 
 
-##### 标头覆盖 {#web-header-overrides}
+### 标头覆盖 {#web-header-overrides}
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_header_overrides_boldheader"
@@ -548,22 +551,162 @@ ht-degree: 65%
 1. 输入&#x200B;**[!UICONTROL 标头值]**。 您指定的任何内容都是机密的，在用户界面中不可见（除非您在输入期间明确选择公开![可见性](/help/assets/icons/Visibility.svg)值）。
 
 
+
+
+### 保存 {#web-save}
+
+指定Web渠道的详细信息后，选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存配置。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消配置。
+
++++
+
+#### 付费媒体 {#paid-media}
+
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_paidmedia_adplatforms_nosourceconnectors"
 >title="没有源连接器"
 >abstract="付费媒体需要为您的广告发布平台配置 Experience Platform 源连接器。 此沙盒中没有 Google Ads 或 Meta Ads 连接器可用。 在 **[!UICONTROL Experience Platform]** > **[!UICONTROL 源]**&#x200B;界面中配置一个或多个连接器，然后返回到此步骤，继续配置 Content Analytics 付费媒体。"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/advertising/ads" text="Google Ads 源"
 
-##### 保存 {#web-save}
++++ 详细信息
 
-指定Web渠道的详细信息后，选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存配置。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消配置。
+>[!NOTE]
+>
+>付费媒体渠道不可用于AWS上的Customer Journey Analytics和Experience Platform部署。
 
+
+对于付费媒体渠道，在配置的沙盒中连接的所有受支持[广告平台](#paidmedia-adplatforms)会自动包含在Content Analytics中。
+
+### 广告平台 {#paidmedia-adplatforms}
+
+付费媒体需要为广告发布者配置Experience Platform源连接器。
+
+如果您确实看到&#x200B;**[!UICONTROL 未找到支持的源连接器]**，则表示您尚未在配置的沙盒中为可用广告平台配置任何源连接器。
+
+![未配置源连接器](/help/content-analytics/assets/aca-paid-media-no-source-connectors.png)
+
+要为广告平台配置源连接器，请选择&#x200B;**[!UICONTROL 转到AEP源]**。 您将被重定向到Experience Platform中的&#x200B;**[!UICONTROL 源]**&#x200B;界面。
+
+有关如何配置Google Ads和Meta Ads源连接器的示例，请参阅下文。
+
+>[!BEGINTABS]
+
+>[!TAB Google广告]
+
+1. 在Experience Platform > **[!UICONTROL 源]**&#x200B;中，选择&#x200B;**[!UICONTROL Google广告]**&#x200B;卡片中的&#x200B;**[!UICONTROL 设置]**&#x200B;以启动设置向导。
+
+   >[!WARNING]
+   >
+   >请勿在&#x200B;**Google广告（测试版）**&#x200B;卡中使用&#x200B;**[!UICONTROL 设置]**。
+
+
+1. 在向导的➊ **[!UICONTROL 身份验证]**&#x200B;步骤中，选择&#x200B;**[!UICONTROL 新建帐户]**，然后输入&#x200B;**[!UICONTROL 帐户名称]**。
+
+   ![Google Ads源连接器身份验证步骤1](../assets/paid-media-google-authentication-1.png)
+
+1. 在&#x200B;**[!UICONTROL 使用Google登录]**&#x200B;对话框中，选择一个拥有Google广告管理器帐户和Google广告帐户的帐户。
+
+   ![Google Ads源连接器身份验证步骤2](../assets/paid-media-google-authentication-2.png)
+
+1. 使用密钥或其他身份验证机制验证您的凭据。
+
+   ![Google Ads源连接器身份验证步骤3](../assets/paid-media-google-authentication-3.png)
+
+1. 在&#x200B;**[!UICONTROL Adobe Experience Platform希望访问您的Google帐户]**&#x200B;的对话框中选择&#x200B;**[!UICONTROL 继续]**。
+
+   ![Google Ads源连接器身份验证步骤4](../assets/paid-media-google-authentication-4.png)
+
+1. 成功验证后，在向导的➊ **[!UICONTROL 身份验证]**&#x200B;步骤中看到![CheckmarkCircle](/help/assets/icons2/CheckmarkCircle.svg) **[!UICONTROL Connected]**。
+
+   ![Google Ads源连接器身份验证步骤5](../assets/paid-media-google-authentication-5.png)
+
+   选择&#x200B;**[!UICONTROL 下一步]**。
+
+1. 在向导的➋ **[!UICONTROL 数据流详细信息]**&#x200B;步骤中，输入&#x200B;**[!UICONTROL 数据流]**&#x200B;名称。 您还可以选中订阅警报的选项。
+
+   ![Google Ads源连接器数据流详细信息](../assets/paid-media-google-dataflow-1.png)
+
+   选择&#x200B;**[!UICONTROL 下一步]**。
+
+1. 在向导的➌ **[!UICONTROL 查看]**&#x200B;步骤中，查看源连接器详细信息。
+
+   ![Google Ads源连接器审核](../assets/paid-media-google-review-1.png)
+
+   选择&#x200B;**[!UICONTROL 完成]**。
+
+1. 您最终会看到已成功配置的Google源连接器的详细信息。
+
+   ![Google Ads源连接器最终版本](../assets/paid-media-google-final.png)
+
+
+>[!TAB Meta广告]
+
+1. 在Experience Platform > **[!UICONTROL 源]**&#x200B;中，选择&#x200B;**[!UICONTROL Meta广告]**&#x200B;卡片中的&#x200B;**[!UICONTROL 设置]**&#x200B;以启动设置向导。
+
+1. 在向导的➊ **[!UICONTROL 身份验证]**&#x200B;步骤中，选择&#x200B;**[!UICONTROL 新建帐户]**，然后输入&#x200B;**[!UICONTROL 帐户名称]**。
+
+   ![Meta Ads源连接器身份验证步骤1](../assets/paid-media-meta-authentication-1.png)
+
+1. 登录到已配置广告管理器的Facebook帐户。 如果您已经登录，则会显示一个对话框，该对话框将以登录用户的身份继续。
+
+   ![Meta Ads源连接器身份验证步骤2](../assets/paid-media-meta-authentication-2.png)
+
+1. 成功验证后，在向导的➊ **[!UICONTROL 身份验证]**&#x200B;步骤中看到![CheckmarkCircle](/help/assets/icons2/CheckmarkCircle.svg) **[!UICONTROL Connected]**。
+
+   ![Meta Ads源连接器身份验证步骤3](../assets/paid-media-meta-authentication-3.png)
+
+   选择&#x200B;**[!UICONTROL 下一步]**。
+
+1. 在向导的➋ **[!UICONTROL 选择帐户]**&#x200B;步骤中，选择要配置的帐户。
+
+   ![Meta Ads源连接器选择帐户](paid-media-meta-select-account.png)
+
+   选择&#x200B;**[!UICONTROL 下一步]**。
+
+1. 在向导的➌ **[!UICONTROL 数据流详细信息]**&#x200B;步骤中，输入&#x200B;**[!UICONTROL 数据流]**&#x200B;名称。 您还可以选中订阅警报的选项。
+
+   ![Meta Ads源连接器数据流](../assets/paid-media-meta-dataflow-1.png)
+
+   选择&#x200B;**[!UICONTROL 下一步]**。
+
+1. 在向导的➍ **[!UICONTROL 查看]**&#x200B;步骤中，查看源连接器详细信息。
+
+   ![Meta Ads源连接器审核](../assets/paid-media-meta-review-1.png)
+
+1. 您最终会看到已成功配置的Google源连接器的详细信息。
+
+   ![Meta Ads源连接器最终版本](../assets/paid-media-meta-final.png)
+
+>[!ENDTABS]
+
+有关付费媒体渠道支持的源连接器的更多信息，请参阅[Source连接器概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/home)。
+
+在Experience Platform中配置源连接器后，选择![刷新](/help/assets/icons/Refresh.svg) **[!UICONTROL 刷新]**&#x200B;以更新源连接器的列表。
+
+您会看到可用广告平台的列表，以及哪些平台为![StatusGreen](/help/assets/icons/StatusGreen.svg) **Connected**&#x200B;和![StatusGray](/help/assets/icons/StatusGray.svg) **Not configured**。
+
+已配置![Google连接器](/help/content-analytics/assets/aca-paid-media-google-source-connectors.png)
+
+
+### 数据行为 {#paidmedia-databehavior}
+
+当您选择&#x200B;**[!UICONTROL 保存]**&#x200B;时，Content Analytics会自动：
+
+* 更新Customer Journey Analytics连接，将来自所有连接的源连接器的付费媒体数据集包含在此沙盒中。
+* 在所有选定的数据视图中启用付费媒体维度和量度。
+* 在 Workspace 报告中，将付费媒体渠道作为可筛选维度显示。
+
+### 保存 {#paidmedia-save}
+
+选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存&#x200B;**[!UICONTROL 付费媒体]**&#x200B;配置。
+
+
++++
 
 ### 摘要 {#summary}
 
 在提供了所有必要的详细信息后，摘要中会提供有关创建或修改的工件的详细信息。
 
-* 在实施新配置时，您会看到&#x200B;**[!UICONTROL “您即将准备好为 Content Analytics 实施&#x200B;_配置名称_”]**&#x200B;的摘要。
+* 当您实施新配置时，您会看到&#x200B;**[!UICONTROL 您已准备好为Content Analytics]**&#x200B;摘要实施&#x200B;_配置名称_。
 
 * 对于已实施的配置，您会看到&#x200B;**[!UICONTROL 您已为 Content Analytics 实施&#x200B;_实施名称_]**&#x200B;的摘要。
 
@@ -579,7 +722,7 @@ ht-degree: 65%
 创建或编辑配置时，您有以下选项：
 
 * **[!UICONTROL 丢弃]**：作为配置一部分的所有更改都将被丢弃。
-* **[!UICONTROL 保存以供未来使用]**：对配置所做的更改已保存。 您可以在稍后阶段重新访问该配置，以进行进一步的更改，或实施该配置。 保存配置时只需要一个[!UICONTROL 名称]的值。
+* **[!UICONTROL 保存以供未来使用]**：对配置所做的更改已保存。 要进一步更改或实施配置，请在以后阶段重新访问它。 保存配置时只需要一个[!UICONTROL 名称]的值。
 * **[!UICONTROL 实施]**：为配置所做的设置或更改已保存并实施。 标记为![必填](/help/assets/icons/Required.svg)的所有字段都必须有正确的值。 实施包括：
 
   * **[!UICONTROL Customer Journey Analytics]** 配置：
