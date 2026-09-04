@@ -230,7 +230,7 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="启用人员到帐户拼接"
 >abstract="启用后，此数据集将使用 B2B“人员到帐户”拼接。 **[!UICONTROL 永久人员ID]**&#x200B;值将提升为配置的&#x200B;**[!UICONTROL 人员标识符命名空间]**&#x200B;中的值，然后用于根据人员到帐户数据集查找帐户ID。<br/>如果禁用，此数据集就不会使用 B2B“人员到帐户”拼接，在这种情况下您就要选择一个必需的&#x200B;**[!UICONTROL 帐户 ID]**。"
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="将B2B人员配置为帐户拼接设置"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="将B2B人员配置为帐户拼接设置"
 
 在连接级别配置B2B拼接后，必须启用B2B人员以针对要拼接的每个事件数据集单独考虑拼接。
 
