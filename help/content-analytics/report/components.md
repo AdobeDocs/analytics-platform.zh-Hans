@@ -4,23 +4,15 @@ description: 了解特定Content Analytics组件的详细信息，例如维度�
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
+hold: true
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
 TQID: https://experienceleague.adobe.com/grwbNht938ivCsnzlFBzP8Ga8h1udmQLcZngxY6s0-4
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 3e9a9042bfe707971c4e37d319a23ab9bdc80075
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 8490c4128ac906ba9421b91f9b9da433b91d084d
 workflow-type: tm+mt
 source-wordcount: 1869
 ht-degree: 56%
@@ -38,8 +30,8 @@ Content Analytics 将以下类别的组件（维度、（计算）量度、派�
 * [资产元数据](#asset-metadata)
 * [资产属性](#asset-attributes)
 * [资产事件](#asset-events)
-* [付费媒体](#paid-media)
 * [计算量度](#calculated-metrics)
+* [付费媒体](#paid-media)
 
 在下表中，![AI 生成](/help/assets/icons/AI.svg)表示一个 AI/ML 生成的属性/值对。
 
@@ -158,11 +150,23 @@ Content Analytics 将以下类别的组件（维度、（计算）量度、派�
 {style="table-layout:fixed"}
 -->
 
+
+## 计算量度
+
+| 标题 | 描述 | 类型 |
+|---|---|---|
+| 资产点进率 | 资产点击次数/资产浏览次数 | 计算量度 |
+| 体验点进率 | 体验点击次数/体验浏览次数 | 计算量度 |
+
+{style="table-layout:fixed"}
+
+
+
 ## 付费媒体
 
 当通过[Adobe Experience Platform付费媒体源连接器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/home)启用&#x200B;**付费媒体**&#x200B;渠道时（例如，Meta Ads或Google Ads），这些组件将添加到数据视图中。 它们可让您报告付费媒体实体、创意内容，并与您的Web和移动内容一起支出。
 
-上述AI生成的&#x200B;**资产属性**&#x200B;和&#x200B;**体验属性**&#x200B;也可供付费媒体创意人员使用 — 相同的功能在Web、移动和付费媒体渠道中运行。
+上述AI生成的[资产属性](#asset-attributes)和[体验属性](#experience-attributes)也可用于付费媒体创意。 相同的功能也适用于Web、移动和付费媒体渠道。
 
 ### 付费媒体维度
 
@@ -266,14 +270,3 @@ Content Analytics 将以下类别的组件（维度、（计算）量度、派�
 | 平均订单价值 | 订单总值除以购买量。 | 计算量度 |
 
 {style="table-layout:fixed"}
-
-
-## 计算量度
-
-| 标题 | 描述 | 类型 |
-|---|---|---|
-| 资产点进率 | 资产点击次数/资产浏览次数 | 计算量度 |
-| 体验点进率 | 体验点击次数/体验浏览次数 | 计算量度 |
-
-{style="table-layout:fixed"}
-

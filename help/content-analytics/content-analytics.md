@@ -4,32 +4,18 @@ description: 了解Content Analytics价值和术语，并了解Content Analytics
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
+hold: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 TQID: https://experienceleague.adobe.com/x5FpRmZ-Wv6pPxYBEAyDzRqUSUpmwHFwbi55FwVKT5A
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eb30f47f-d87a-400f-8f78-63ce7979ff56id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 8490c4128ac906ba9421b91f9b9da433b91d084d
 workflow-type: tm+mt
-source-wordcount: 906
-ht-degree: 55%
+source-wordcount: 1019
+ht-degree: 43%
 
 ---
 
@@ -63,13 +49,21 @@ Content Analytics 使用以下关键术语：
 
 ## 工作原理
 
-Content Analytics使用Experience Platform事件数据集中的Web和移动图像视图数据来[收集内容事件数据](config/datacollection.md)。 这些内容体验事件要求使用Experience Platform Edge Network（Web SDK、Mobile SDK、服务器API）收集数据。 行为数据可以通过Web SDK、Mobile SDK或Analytics Source Connector来收集。
+Content Analytics使用Experience Platform事件数据集中的Web和移动图像视图数据和付费媒体数据来[收集内容事件数据](config/datacollection.md)。 这些内容体验事件要求使用Experience Platform Edge Network（Web SDK、Mobile SDK、服务器API）或通过Experience Platform源连接器收集数据。
 
-![Content Analytics 工作原理](assets/aca-overview-new.gif)
+* 行为数据可以通过Web SDK、Mobile SDK或Analytics Source Connector来收集。
+* 对于付费媒体，通过可用的付费媒体源连接器，从Experience Platform中收集的付费媒体事件数据源重构体验数据。
 
-1. 当用户访问为Content Analytics[&#128279;](config/configuration.md)配置的网站或应用程序时，Experience Platform Web或Mobile SDK会记录展示次数以及与内容的交互。
-1. 身份和特征化服务处理这些交互。 该过程包括一个检索服务，该服务会重新访问已配置 URL 的面向公众的版本，这些 URL 定义了这些交互。 身份标识服务会为所有这些检索到的 URL 唯一标识体验和资产。 功能化服务应用AI/ML服务来发现体验和资产元数据和属性。
-1. 这些服务（[组件、属性和身份标识](/help/content-analytics/report/components.md)）的结果用于更新 Experience Platform 中相关的特定 Content Analytics 数据集。
+![Content Analytics 工作原理](assets/aca-overview-new-paid-media.gif)
+
+
+1. 当用户访问为Content Analytics](config/configuration.md)配置的网站或应用程序[时，Experience Platform Web或Mobile SDK会记录与内容的展示次数和交互情况。
+付费媒体数据每天从源连接器（例如，到Google和Meta）收集到数据集中。 Content Analytics监控[配置的付费媒体数据集](config/configuration.md)以获取新的无特征化资源和体验，并使用广告数据集元数据来撰写体验HTML。 该体验HTML会作为付费媒体体验与资源详细信息相结合。
+
+1. 身份和功能化服务会处理这些交互（来自Web和移动设备）和体验（来自付费媒体）。 该流程包括检索服务，该服务会修订定义交互的已配置URL的面向公众的版本，以及定义体验的HTML。 对于所有这些检索到的URL和HTML，Identity Service将唯一标识体验和资源。 功能化服务应用AI/ML服务来发现体验和资产元数据和属性。
+
+1. 标识和特征化服务（[组件、属性和标识](/help/content-analytics/report/components.md)）的结果用于更新Experience Platform中相关的特定Content Analytics数据集。
+
 1. 您可以在Customer Journey Analytics设置（[连接](/help/connections/overview.md)、[数据视图](/help/data-views/data-views.md)和[Workspace](/help/analysis-workspace/home.md)）中使用Content Analytics数据，以及行为数据和其他查找数据。 该设置提供了对您的内容进行独特的宏级深入分析的基础。 <br/>您可以使用[Content Analytics模板](/help/content-analytics/report/report.md#template)快速开始Content Analytics报告和分析。
 
 
@@ -95,6 +89,6 @@ Content Analytics使用Experience Platform事件数据集中的Web和移动图�
 >
 >[Content Analytics报表](report/report.md)
 >[配置 Content Analytics](config/configuration.md)
->[在 Customer Journey Analytics 中计算跳出次数和跳出率](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/calculating-bounces-bounce-rate-in-adobe-customer-journey-analytics-options-and-implications-12722?profile.language=zh-Hans)
+>[在 Customer Journey Analytics 中计算跳出次数和跳出率](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/calculating-bounces-bounce-rate-in-adobe-customer-journey-analytics-options-and-implications-12722)
 >
 
