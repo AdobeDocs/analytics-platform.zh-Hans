@@ -19,16 +19,16 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
+source-git-commit: ae08f7a010c6c8cdb262bd96e51c2b677a4cb70a
 workflow-type: tm+mt
-source-wordcount: 2116
-ht-degree: 19%
+source-wordcount: 2230
+ht-degree: 20%
 
 ---
 
 # B2B人员与帐户拼接
 
-B2B帐户拼接使用帐户身份丰富了您的事件数据集，并支持在Customer Journey Analytics中跨整个客户历程进行完整分析。 当事件缺少帐户ID（Customer Journey Analytics B2B edition摄取时需要帐户ID）时，人员与帐户拼接将使用您提供的[人员与帐户映射数据集](#prerequisites)自动派生和添加该信息。
+B2B帐户拼接使用帐户身份丰富了您的事件数据集，并支持在Customer Journey Analytics中跨整个客户历程进行完整分析。 当事件缺少帐户ID（Customer Journey Analytics B2B edition摄取时需要帐户ID）时，人员到帐户的拼接会派生该信息，并使用[人员自动将信息添加到您提供的帐户映射数据集](#prerequisites)。
 
 如果没有人员来拼接帐户，则任何不包含帐户ID的事件将在引入期间被丢弃。 人员与帐户拼合通过查找与每个事件中的人员关联的帐户来解决此限制，在事件被摄取时添加帐户ID并且追溯。
 
@@ -52,7 +52,7 @@ B2B帐户拼接使用帐户身份丰富了您的事件数据集，并支持在Cu
 | 操作 | 时间戳 | 持久 ID | 帐户 ID | 人员 ID | 事件类型 |
 |:---:|--:|--|---|---|---|
 | ![数据添加](/help/assets/icons/DataAdd.svg) | 1/3/25 | 1234 | Adobe | matt@adobe.com | Page view |
-| ![筛选删除](/help/assets/icons/DeleteOutline.svg) | 1/3/25 | 5678 |  | | |
+| ![筛选删除](/help/assets/icons/DeleteOutline.svg) | 1/3/25 | 5678 |  |  | |
 | ![数据添加](/help/assets/icons/DataAdd.svg) | 3/4/25 | 9012 | 普遍性 | cory@sky.com |  |
 | ![数据添加](/help/assets/icons/DataAdd.svg) | 3/7/25 | 4321 | Sky | emily@sky.com | 呼叫中心 |
 | ![筛选删除](/help/assets/icons/DeleteOutline.svg) | 5/5/25 | 6106 | | carmen@adobe.com |  |
@@ -69,29 +69,31 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
 
 +++ 详细信息
 
-为了支持B2B人员与帐户拼接，您可以提供人员与帐户映射数据集。 例如：
+为了支持B2B人员到帐户的拼接，在您[配置B2B拼接设置](#configure-b2b-person-to-account-stitching-settings)时，请提供主要人员标识符命名空间（例如Email）和人员到帐户的映射数据集。
+从人员到帐户的数据集中的人员ID命名空间可以与主要的数据集（电子邮件）相同，也可以不同。 在下面的示例中，它被设置为CRM ID（需要将其链接到身份图中的电子邮件）。
 
 | CRM ID | 帐户 ID |
 |---|---|
 | 12hsd123 | Adobe |
+| kr7812pq | Adobe |
 | f82jsd32 | Sky |
 | hg2023m2 | Sky |
 | b978bbw9 | 普遍性 |
 | fs453ghi | Adobe |
 
-使用基于图形的拼合来提升该人员到帐户的映射数据集。 例如，您提供电子邮件作为要使用的命名空间。 结果是更新了人员ID较高的人员 — 帐户映射数据集。
+可使用基于图形的拼合提升该人员到帐户的映射数据集。 请注意，这发生在后端，不会反映在实际数据集的数据中。
+在我们的示例中，通过使用CRM ID和电子邮件命名空间之间的身份图链接，结果会生成一个更新的人员，该人员会使用提升的人员ID将数据集映射到帐户。
 
 | CRM ID | 提升的人员ID | 帐户 ID |
 |---|---|---|
 | 12hsd123 | matt@adobe.com | Adobe |
+| kr7812pq | emily@adobe.com | Adobe |
 | f82jsd32 | emily@sky.com | Sky |
 | hg2023m2 | cory@sky.com | Sky |
 | b978bbw9 | cassidy@ubiquity.com | 普遍性 |
 | fs453ghi | carmen@adobe.com | Adobe |
 
-基于图形的拼接还用于提升体验事件数据集中的人员ID。 例如，查看&#x200B;**emily@adobe.com**&#x200B;的更新值。
-
-基于图形的拼接还用于提升体验事件数据集中的人员ID。 例如，将永久ID (ECID)字段配置为在[启用数据集](#enable-b2b-person-to-account-stitching-on-event-datasets)上的拼合时用作永久人员ID。 基于`5678`作为ECID值，`emily@adobe.com`作为电子邮件值，`emily@adobe.com`在相关事件中设置为提升的人员ID。
+基于图形的拼接还用于提升体验事件数据集中的人员ID。 例如，将永久ID (ECID)字段配置为在[启用数据集](#enable-b2b-person-to-account-stitching-on-event-datasets)上的拼合时用作永久人员ID。 基于提升的人员 — 帐户映射数据集`emily@adobe.com`在相关事件中被设置为提升的人员ID。
 
 | 时间戳 | 持久 ID | 原始帐户ID | 原始人员ID | 提升的人员ID |
 |--|--|---|---|---|
@@ -110,12 +112,12 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
 
 +++ 详细信息
 
-人员到帐户数据集可再次用于提升体验事件数据集中的帐户ID。 例如，查看emily@sky.com的添加值&#x200B;**Sky**&#x200B;和carmen@adobe.com的&#x200B;**Adobe**。 以及cory@sky.com的更新值&#x200B;**Sky**（来自Ubiquity）。
+“人员 — 帐户”数据集可再次用于提升体验事件数据集中的帐户ID。 例如，查看emily@sky.com的添加值&#x200B;**Sky**&#x200B;以及carmen@adobe.com和emily@adobe.com的&#x200B;**Adobe**。 以及cory@sky.com的更新值&#x200B;**Sky**（来自Ubiquity）。
 
 | 时间戳 | 持久 ID | 原始帐户ID | 原始人员ID | 提升的帐户ID | 提升的人员ID |
 |---|---|---|---|---|---|
 | 1/3/25 | 1234 | Adobe | matt@adobe.com | Adobe | matt@adobe.com |
-| 1/3/25 | 5678 | | | **天空** | **emily@sky.com** |
+| 1/3/25 | 5678 | | | **Adobe** | **emily@adobe.com** |
 | 3/4/25 | 9012 | 普遍性 | cory@sky.com | **天空** | cory@sky.com |
 | 3/7/25 | 4321 | Sky | emily@sky.com | Sky | emily@sky.com |
 | 5/5/25 | 6106 | | carmen@adobe.com | **Adobe** | carmen@adobe.com |
@@ -135,11 +137,11 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
 
 | 数据集 | 必需 | 描述 |
 |---|---|---|
-| **个人帐户数据集** | 必需 | 至少包含人员ID（具有命名空间）和帐户ID的查找（记录，非时间序列）数据集。 这些ID用于派生人员与帐户的关系映射。 |
+| **人员到帐户数据集** | 必需 | 至少包含人员ID（具有命名空间）和帐户ID的查找（记录，非时间序列）数据集。 这些ID用于派生人员与帐户的关系映射。 |
 
 >[!IMPORTANT]
 >
->**[!UICONTROL 个人对帐户]**&#x200B;数据集中的人员ID字段必须在架构中标记为标识。
+>您的帐户到人员数据集中的人员ID字段必须在架构中标记为身份。
 
 ## 启用人员到帐户拼接 {#enable-account-stitching}
 
@@ -175,7 +177,7 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_start_time"
 >title="开始时间"
->abstract="选择一个时间戳字段，用于指示人员到帐户关系何时生效。"
+>abstract="选择指示人员与帐户关系何时生效的时间戳字段。"
 
 
 >[!CONTEXTUALHELP]
@@ -211,8 +213,8 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
       | 字段 | 必需 | 描述 |
       |---|:---:|---|
       | **[!UICONTROL 个人到帐户数据集]** | ![必需](/help/assets/icons/Required.svg) | 选择将人员映射到帐户的查找（记录或非时间序列数据集）。 |
-      | **[!UICONTROL 人员 ID]** | ![必需](/help/assets/icons/Required.svg) | 选择数据集中包含人员 ID 的字段。 该字段必须标记为标识，并且不能与&#x200B;**[!UICONTROL 帐户ID]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。 |
-      | **[!UICONTROL 帐户 ID]** | ![必需](/help/assets/icons/Required.svg) | 选择数据集中包含帐户 ID 的字段。 该字段不能与&#x200B;**[!UICONTROL 人员ID]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。 |
+      | **[!UICONTROL 人员 ID]** | ![必需](/help/assets/icons/Required.svg) | 选择数据集中包含人员 ID 的字段。 此字段的命名空间可以与选定的人员标识符命名空间不同或相同。 如果两者不同，就需要在身份标识图中将这两个命名空间关联在一起。  该字段必须标记为标识，并且不能与&#x200B;**[!UICONTROL 帐户ID]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。 |
+      | **[!UICONTROL 帐户 ID]** | ![必需](/help/assets/icons/Required.svg) | 选择数据集中包含唯一帐户标识符值的字段。 启用了“人员到帐户”拼接的任何事件数据集的行中都会提供帐户 ID 信息。 该字段不能与&#x200B;**[!UICONTROL 人员ID]**&#x200B;字段或&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段相同。 |
       | **映射创建时间** | | 或者，也可以选择“人员到帐户”映射的创建日期和时间的字段。 适合某个人在一段时间内切换多个帐户的情况。<br/><br/>**示例**（当选择&#x200B;**update_date**&#x200B;字段时）：<table><thead><tr><th>update_date</th><th>人员</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>对于2026年5月1日之前在&#x200B;**[!UICONTROL update_date]**&#x200B;字段中具有时间戳的所有事件： a@b.com已映射到Apple。</li><li>对于2026年5月1日或之后在&#x200B;**[!UICONTROL update_date]**&#x200B;字段中具有时间戳的所有事件： a@b.com已映射到Adobe。</li></ul>未指定映射时间时，将使用词典第一帐户。 当两个不同的帐户名称具有完全相同的&#x200B;**[!UICONTROL update_date]**&#x200B;值并且指定了映射创建时间时，也会使用此相同的算法。 |
 
       >[!NOTE]
@@ -244,7 +246,7 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
 
 当&#x200B;**[!UICONTROL 启用人员到帐户拼接]**&#x200B;为&#x200B;**于**&#x200B;时，您已将B2B人员配置为帐户拼合数据集。
 
-* 需要配置人员ID。 该人员ID用于根据[人员对帐户数据集](#prerequisites)查找帐户ID。
+* 需要配置人员ID。 该人员ID用于根据[人员查找帐户数据集](#prerequisites)的帐户ID。
 * 帐户ID的配置是可选的。
 
 ![B2B人员在](../assets/b2b-event-dataset-stitching-on.png)上的事件数据集上进行帐户拼合
@@ -271,7 +273,7 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
 
 ## 数据更新计划
 
-帐户拼接每天从您的[人员到帐户数据集](#prerequisites)中派生标识映射，并使用此信息更新启用按照以下计划进行短期和长期拼接的数据集：
+帐户拼接每天从您的[个人到帐户数据集](#prerequisites)的标识映射派生出来，并使用此信息更新允许按照以下计划进行短期和长期拼接的数据集：
 
 | 重播 | 频率 | 数据窗口 |
 |---|---|---|
