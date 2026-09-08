@@ -5,23 +5,15 @@ solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
 hide: true
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2:
-  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
-  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: eb00932f-4d46-46bc-b1d8-10de7588db8did: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: ffe2fd81-0630-49b3-a33b-4b8899e89c51id: d3fb138f-79e4-4a81-aedb-76dd93560085
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
 workflow-type: tm+mt
 source-wordcount: 1326
-ht-degree: 20%
+ht-degree: 28%
 
 ---
 
@@ -32,7 +24,7 @@ ht-degree: 20%
 >[!CONTEXTUALHELP]
 >id="cja-consent-merge-policy"
 >title="合并策略"
->abstract="合并策略可将多个数据集中的轮廓数据整合为统一的客户轮廓，用于创建受众。 选择与包含要报告的同意策略成员资格数据（`consentPoliciesIDMap`字段）的配置文件数据集对应的合并策略。 或者咨询您的数据团队，了解每个合并策略关联的受众。"
+>abstract="合并策略可将多个数据集中的轮廓数据整合为统一的客户轮廓，用于创建受众。 选择与要报告的同意策略成员资格数据（`consentPoliciesIDMap` 字段）所在的轮廓数据集相对应的合并策略。 或者咨询您的数据团队，了解每个合并策略关联的受众。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -68,7 +60,7 @@ ht-degree: 20%
 >[!CONTEXTUALHELP]
 >id="cja-consent-enable-reporting"
 >title="启用报告"
->abstract="启用此选项可使用Analysis Workspace报告连接中可用的同意数据。 同意策略维度和量度将添加到您选择的数据视图中。"
+>abstract="启用此选项后，可使用 Analysis Workspace 对连接中可用的同意数据进行报告。 同意策略维度和量度会添加到您选择的数据视图中。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -77,7 +69,7 @@ ht-degree: 20%
 >[!CONTEXTUALHELP]
 >id="cja-consent-enable-filtering"
 >title="启用筛选"
->abstract="启用此选项可排除未经同意的访客数据摄取到Customer Journey Analytics。 启用后，仅当访客与下面启用的所有同意策略相匹配时，才会摄取访客的数据。 <br>此选项适用于需要在摄取时排除非同意访客数据的组织。"
+>abstract="启用此选项后，可阻止未同意的访客数据摄取到 Customer Journey Analytics 中。 启用后，只有当访客符合以下所有已启用的同意策略时，才会摄取该访客的数据。 <br>此选项适用于要求在摄取时排除未同意访客数据的组织。"
 
 <!-- markdownlint-enable MD034 -->
 

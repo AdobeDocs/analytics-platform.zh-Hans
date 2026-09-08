@@ -6,23 +6,15 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 autotag-review: '2026-05-19T11:01:07.331Z'
 TQID: 'https://experienceleague.adobe.com/-7rHOhYVCp-nSMqdE7YlAlCJ0zRQYvPOViMHSCNuKV8'
-product_v2:
-  - id: d3f42e9e-bb51-4077-a732-358b801d8b29
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: d3f42e9e-bb51-4077-a732-358b801d8b29id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: ae08f7a010c6c8cdb262bd96e51c2b677a4cb70a
 workflow-type: tm+mt
 source-wordcount: 2230
-ht-degree: 20%
+ht-degree: 21%
 
 ---
 
@@ -157,7 +149,7 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_identifier_namespace"
 >title="人员标识符命名空间"
->abstract="为您的报告选择最相关的人员身份标识命名空间。 例如，电子邮件。 任何启用了&#x200B;**[!UICONTROL 人员到帐户拼接]**&#x200B;的事件数据集都会将永久人员ID提升到此人员标识符命名空间。"
+>abstract="为您的报告选择最相关的人员身份标识命名空间。 例如，电子邮件。 对于启用了&#x200B;**[!UICONTROL 人员到帐户拼接]**&#x200B;的任何事件数据集，持久人员 ID 会提升到此人员标识符命名空间。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_to_account_dataset"
@@ -232,7 +224,7 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="启用人员到帐户拼接"
 >abstract="启用后，此数据集将使用 B2B“人员到帐户”拼接。 **[!UICONTROL 永久人员ID]**&#x200B;值将提升为配置的&#x200B;**[!UICONTROL 人员标识符命名空间]**&#x200B;中的值，然后用于根据人员到帐户数据集查找帐户ID。<br/>如果禁用，此数据集就不会使用 B2B“人员到帐户”拼接，在这种情况下您就要选择一个必需的&#x200B;**[!UICONTROL 帐户 ID]**。"
->additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="将B2B人员配置为帐户拼接设置"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="将B2B人员配置为帐户拼接设置"
 
 在连接级别配置B2B拼接后，必须启用B2B人员以针对要拼接的每个事件数据集单独考虑拼接。
 
