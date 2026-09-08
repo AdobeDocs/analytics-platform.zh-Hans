@@ -413,8 +413,8 @@ ht-degree: 92%
 
 >[!CONTEXTUALHELP]
 >id="connection_b2bstitching_personid"
->title="永久人员 ID"
->abstract="选择一个可在所有事件中使用的标识或identityMap类型字段，例如包含ECID的字段。 这些标识符将从之前配置的人员标识符命名空间提升为人员ID。"
+>title="持久人员 ID"
+>abstract="选择可用于所有事件的身份或 identityMap 类型字段，例如包含 ECID 的字段。 这些标识符将提升为先前配置的人员标识符命名空间中的人员 ID。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2bstitching_accountid"
