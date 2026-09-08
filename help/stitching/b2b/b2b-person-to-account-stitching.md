@@ -6,22 +6,14 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 autotag-review: '2026-05-19T11:01:07.331Z'
 TQID: 'https://experienceleague.adobe.com/-7rHOhYVCp-nSMqdE7YlAlCJ0zRQYvPOViMHSCNuKV8'
-product_v2:
-  - id: d3f42e9e-bb51-4077-a732-358b801d8b29
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ae08f7a010c6c8cdb262bd96e51c2b677a4cb70a
+product_v2: id: d3f42e9e-bb51-4077-a732-358b801d8b29id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 4ab8bb6c0f68ae49128a2fe2a1eb9e87ccfa52a1
 workflow-type: tm+mt
-source-wordcount: 2230
+source-wordcount: 2268
 ht-degree: 21%
 
 ---
@@ -69,7 +61,7 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
 
 +++ 详细信息
 
-为了支持B2B人员到帐户的拼接，在您[配置B2B拼接设置](#configure-b2b-person-to-account-stitching-settings)时，请提供主要人员标识符命名空间（例如Email）和人员到帐户的映射数据集。
+为了支持B2B人员到帐户的拼接，在您[配置B2B拼接设置](#configure-b2b-stitching-settings)时，请提供主要人员标识符命名空间（例如Email）和人员到帐户的映射数据集。
 从人员到帐户的数据集中的人员ID命名空间可以与主要的数据集（电子邮件）相同，也可以不同。 在下面的示例中，它被设置为CRM ID（需要将其链接到身份图中的电子邮件）。
 
 | CRM ID | 帐户 ID |
@@ -93,7 +85,7 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
 | b978bbw9 | cassidy@ubiquity.com | 普遍性 |
 | fs453ghi | carmen@adobe.com | Adobe |
 
-基于图形的拼接还用于提升体验事件数据集中的人员ID。 例如，将永久ID (ECID)字段配置为在[启用数据集](#enable-b2b-person-to-account-stitching-on-event-datasets)上的拼合时用作永久人员ID。 基于提升的人员 — 帐户映射数据集`emily@adobe.com`在相关事件中被设置为提升的人员ID。
+基于图形的拼接还用于提升体验事件数据集中的人员ID。 例如，将永久ID (ECID)字段配置为在[启用数据集](#enable-b2b-person-to-account-stitching-on-event-datasets)上的拼合时用作永久人员ID。 假设`5678` （永久ID）与身份图中的`emily@adobe.com` （人员ID）相关联，则在相关事件中将`emily@adobe.com`设置为提升的人员ID。
 
 | 时间戳 | 持久 ID | 原始帐户ID | 原始人员ID | 提升的人员ID |
 |--|--|---|---|---|
@@ -112,7 +104,7 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
 
 +++ 详细信息
 
-“人员 — 帐户”数据集可再次用于提升体验事件数据集中的帐户ID。 例如，查看emily@sky.com的添加值&#x200B;**Sky**&#x200B;以及carmen@adobe.com和emily@adobe.com的&#x200B;**Adobe**。 以及cory@sky.com的更新值&#x200B;**Sky**（来自Ubiquity）。
+使用帐户到人员数据集提升体验事件数据集中的帐户ID。 例如，请参阅carmen@adobe.com和emily@adobe.com的添加值&#x200B;**Adobe**。 以及cory@sky.com的更新值&#x200B;**Sky**（来自Ubiquity）。
 
 | 时间戳 | 持久 ID | 原始帐户ID | 原始人员ID | 提升的帐户ID | 提升的人员ID |
 |---|---|---|---|---|---|
@@ -128,7 +120,7 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
 
 ### 结果
 
-此示例显示了B2B人员到帐户的拼合如何根据您作为输入提供的人员到帐户映射数据集，使用缺失的人员标识符或缺失且不正确的帐户标识符更新您的体验事件数据。
+此示例显示了B2B人员到帐户的拼合如何根据身份图数据和您作为输入提供的人员到帐户映射数据集，使用缺失的人员标识符和缺失或不正确的帐户标识符更新您的体验事件数据。
 
 
 ## 先决条件
@@ -232,7 +224,7 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="启用人员到帐户拼接"
 >abstract="启用后，此数据集将使用 B2B“人员到帐户”拼接。 **[!UICONTROL 永久人员ID]**&#x200B;值将提升为配置的&#x200B;**[!UICONTROL 人员标识符命名空间]**&#x200B;中的值，然后用于根据人员到帐户数据集查找帐户ID。<br/>如果禁用，此数据集就不会使用 B2B“人员到帐户”拼接，在这种情况下您就要选择一个必需的&#x200B;**[!UICONTROL 帐户 ID]**。"
->additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="将B2B人员配置为帐户拼接设置"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="将B2B人员配置为帐户拼接设置"
 
 在连接级别配置B2B拼接后，必须启用B2B人员以针对要拼接的每个事件数据集单独考虑拼接。
 
@@ -246,8 +238,8 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
 
 当&#x200B;**[!UICONTROL 启用人员到帐户拼接]**&#x200B;为&#x200B;**于**&#x200B;时，您已将B2B人员配置为帐户拼合数据集。
 
-* 需要配置人员ID。 该人员ID用于根据[人员查找帐户数据集](#prerequisites)的帐户ID。
-* 帐户ID的配置是可选的。
+* 需要配置永久人员ID。 该永久人员ID从以前配置的人员标识符命名空间提升为人员ID，然后用于根据[人员到帐户数据集](#prerequisites)查找帐户ID。
+* 帐户ID的配置是可选的。 当相关帐户ID信息在人员帐户数据集中不可用时，此配置用作回退方法。
 
 ![B2B人员在](../assets/b2b-event-dataset-stitching-on.png)上的事件数据集上进行帐户拼合
 
