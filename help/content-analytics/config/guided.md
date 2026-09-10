@@ -7,28 +7,15 @@ role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 autotag-review: '2026-05-19T08:54:42.845Z'
 TQID: 'https://experienceleague.adobe.com/kEqjocKd5pNypjQlF70HeF1bKuoG9Qi-AT6nJiIwuV0'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c18d9e03-ac7d-4811-9c92-3e92ddc70ade
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c18d9e03-ac7d-4811-9c92-3e92ddc70adeid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
 source-wordcount: 4806
-ht-degree: 54%
+ht-degree: 56%
 
 ---
 
@@ -89,7 +76,7 @@ ht-degree: 54%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="详细信息"
->abstract="本指南设置了配置Content Analytics的要求。 为此配置提供一个名称，然后选择包含要分析的内容分析数据的沙盒。"
+>abstract="本指南介绍配置 Content Analytics 的要求。 为此配置提供名称，然后选择包含您要分析的内容分析数据的沙盒。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_boldheader"
@@ -99,7 +86,7 @@ ht-degree: 54%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_header"
 >title="连接"
->abstract="从Customer Journey Analytics中选择一个现有连接，以将Content Analytics数据与合并。"
+>abstract="从 Customer Journey Analytics 中选择现有连接，以便与您的 Content Analytics 数据合并。"
 
 每个配置都需要一个唯一名称。 例如：`Example Content Analytics configuration`。 保存或实施配置都需要名称。
 
@@ -140,7 +127,7 @@ ht-degree: 54%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="数据视图"
->abstract="从Customer Journey Analytics中选择现有数据视图，以将Content Analytics数据与合并。"
+>abstract="从 Customer Journey Analytics 中选择现有数据视图，以便与您的 Content Analytics 数据合并。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
@@ -691,7 +678,7 @@ ht-degree: 54%
 
 当您选择&#x200B;**[!UICONTROL 保存]**&#x200B;时，Content Analytics会自动：
 
-* 更新Customer Journey Analytics连接，将来自所有连接的源连接器的付费媒体数据集包含在此沙盒中。
+* 更新 Customer Journey Analytics 连接，将来自所有已连接的源连接器的付费媒体数据集包含在这个沙盒中。
 * 在所有选定的数据视图中启用付费媒体维度和量度。
 * 在 Workspace 报告中，将付费媒体渠道作为可筛选维度显示。
 
