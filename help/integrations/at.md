@@ -18,18 +18,18 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 34593a4407e6334e9abab6034accd84fc5a70d33
 workflow-type: tm+mt
-source-wordcount: 410
-ht-degree: 44%
+source-wordcount: 452
+ht-degree: 40%
 
 ---
 
 # Target报表
 
-Customer Journey Analytics中的Target报表功能允许您直接在Customer Journey Analytics中测量和报告Adobe Target活动。 此功能与通过Analytics for Target (A4T)在Adobe Analytics (AA)中执行的功能类似，只是与Adobe Experience Platform (AEP)相连。
+Customer Journey Analytics中的Target报表功能允许您直接在Customer Journey Analytics中测量和报告Adobe Target活动。 此功能与通过Analytics for Target (A4T)在Adobe Analytics (AA)中执行的功能类似，只是与Adobe Experience Platform (AEP)相连。 创建使用Customer Journey Analytics作为报表源的Target活动后，将在相应的沙盒中创建名为Adobe Target分类事件的查找数据集。 此查找数据集通过将Target活动ID与其用户友好属性（如活动名称和体验名称）分类来丰富您的报表。
 
-通过将Target分类查找数据集（默认情况下在Experience Platform中可用）添加到Customer Journey Analytics连接，用户现在可以充分了解Target报表工具、Target订单归因和其他功能。 只需在Customer Journey Analytics数据视图中进行一些小的准备和调整，任何希望将Target数据直接发送到CJA的用户都可以立即使用这些活动。
+通过将此查找数据集添加到Customer Journey Analytics连接，用户现在可以充分了解Target报表工具、Target订单归因和其他功能。 只需在Customer Journey Analytics数据视图中进行一些小的准备和调整，任何希望将Target数据直接发送到Customer Journey Analytics的用户都可以立即使用这些活动。
 
 ## 主要优势
 
@@ -41,7 +41,7 @@ Customer Journey Analytics中的Target报表功能允许您直接在Customer Jou
 
 Target活动必须[使用Customer Journey Analytics作为报表源](https://experienceleague.adobe.com/zh-hans/docs/target/using/integrate/cja/target-reporting-in-cja)。
 
-将目标分类事件数据集添加到连接后，将这些组件添加为维度后，将在数据视图中进行一些细微调整，包括：
+将Adobe Target分类事件查找数据集添加到连接后，在数据视图中进行一些细微调整，之后将这些组件添加为维度，包括：
 
 * 设置持久性类似于在Target中跟踪持久性的方式（请与Target顾问或客户确认以确保设置正确）。
 
