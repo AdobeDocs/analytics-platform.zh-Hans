@@ -4,32 +4,14 @@ description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8fb541eac63595c7d02561a1ca1768ab373c1ea4
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: ad5685a0-8296-4a0c-814c-658c10b4af12id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 04accc9ba060da60916cf4c3bc66710f57f50cda
 workflow-type: tm+mt
-source-wordcount: 1261
+source-wordcount: 1263
 ht-degree: 20%
 
 ---
@@ -53,7 +35,7 @@ ht-degree: 20%
 | **每小时警报**<br/>&#x200B;您现在可以将警报的时间粒度设置为“每小时”。<p>每小时警报适用于在给定小时内到达的数据。 如果数据的滞后时间超过一小时，则较长的粒度可确保警报评估完整的数据。 如果您不确定数据需要多长时间才能到达，请咨询数据工程师。</p>p>（要遵循的文档链接。）</p> | | 2026年9月 |
 | **警报投放严格遵循配置的延迟**<br/>&#x200B;现在，无论指定事件范围的数据已完成还是仍在接收数据，警报均会在您设置的延迟窗口的末尾投放。 延迟时段之后到达的任何数据都不会包含在警报中。<p>以前，警报包括后台处理检查，用于等待迟到的数据，即使这意味着警报在配置的延迟时段后发送。</p>p>（要遵循的文档链接。）</p> | | 2026年9月 |
 | **Adobe Brand Visibility集成**<br/>&#x200B;将Adobe Brand Visibility与贵组织的Customer Journey Analytics数据连接起来，以便您可以衡量AI驱动的发现如何转化为真正的网站参与度和业务成果。<p>（文档链接将随后提供。）</p> | | 2026年9月 |
-| **CX Enterprise Co-worker中的其他技能**<br> Co-worker将获得新技能，包括：<ul><li><strong>实施指南</strong>：将简短的发现对话转换为个性化、依赖项感知的实施计划，并提供到CSV、Jira、Workfront和Markdown的可随时使用的导出。</li><li><strong>智能实施核对清单</strong>：将您的发现对话转换为同事项目中受管理的、可跟踪的实施项目：您可以分配、监控和验证的步骤的有序核对清单。</li><li><strong>数据验证</strong>：直接在同事中检查数据字段和数据集，确认您使用的是受信任、准确的数据（从Adobe Agent Orchestrator v1升级）。</li><li><strong>流媒体验证</strong>：在同事中验证您的流媒体数据，以确认它准确且可供报告。</li></ul><p>（文档链接随后提供。）</p> | | 2026年9月30日 |
+| **CX Enterprise Coworker中的升级和实施技能**<br>&#x200B;同事将获得新技能。 这些技能有助于使Customer Journey Analytics的升级和实施更加顺畅、轻松：<ul><li>**实施指南技能**：生成量身定制的升级或实施步骤和建议列表。 然后，可以使用预定义的行动手册将升级和实施指导转化为同事项目。</li><li>**智能升级和实施核对清单技能**：使用同事项目根据定制的升级或实施核对清单管理和跟踪实施进度，维护项目状态，跨团队协作，分配任务，并在需要时引入批准审核。</li><li>**数据验证技能**：验证您的实施配置正确且符合最佳实践。</li></ul><p>（文档链接随后提供。）</p> | | 2026年9月30日 |
 
 ### Customer Journey Analytics 中的修复
 
