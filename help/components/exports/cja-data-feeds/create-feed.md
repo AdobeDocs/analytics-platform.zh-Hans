@@ -21,7 +21,7 @@ topic_v2:
 source-git-commit: f5a7272f80aaba167974f2218bc84408d47f62d4
 workflow-type: tm+mt
 source-wordcount: 4217
-ht-degree: 30%
+ht-degree: 31%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 30%
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_required_dimensions"
 >title="必需维度"
->abstract="每个数据馈送都必须包含某些维度，这些维度由维度名称旁边的&#x200B;**Required**&#x200B;标签标识。 这些维度提供了事件级别分析所需的最低结构。"
+>abstract="每个数据馈送都必须包含特定维度，这些维度的名称旁会显示&#x200B;**必需**&#x200B;标签。 这些维度提供进行事件级别分析所需的最基本结构。"
 
 <!-- markdownlint-enable MD034 -->
 

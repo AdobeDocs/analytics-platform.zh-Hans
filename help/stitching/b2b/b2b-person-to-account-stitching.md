@@ -22,7 +22,7 @@ topic_v2:
 source-git-commit: ac22a504d6182897438b3724d57c837ab2995f1b
 workflow-type: tm+mt
 source-wordcount: 2270
-ht-degree: 21%
+ht-degree: 23%
 
 ---
 
@@ -147,12 +147,12 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
 
 您首先需要在连接级别启用和配置B2B拼接。 当为连接配置B2B拼接时，您可以激活“人员”以考虑对该连接中的单个事件数据集进行拼接。
 
-### 将B2B人员配置为帐户拼接设置 {#configure-b2b-stitching-settings}
+### 配置 B2B 人员到帐户拼接设置 {#configure-b2b-stitching-settings}
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_open_configuration"
->title="配置B2B拼接"
->abstract="选择&#x200B;**[!UICONTROL 打开B2B拼接配置]**&#x200B;以将B2B人员与帐户拼接进行配置。 如果连接尚未保存，该配置会标记为&#x200B;**[!UICONTROL _未保存的更改_]**。"
+>title="配置 B2B 拼接"
+>abstract="选择&#x200B;**[!UICONTROL 打开 B2B 拼接配置]**，以配置 B2B 人员到帐户拼接。 如果连接尚未保存，该配置会标记为&#x200B;**[!UICONTROL _未保存的更改_]**。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_identifier_namespace"
@@ -225,14 +225,14 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
 
    1. **[!UICONTROL _未保存的更改_]**&#x200B;指示器显示在&#x200B;**打开B2B拼接配置**&#x200B;按钮旁边，直到您[保存](#save)连接。
 
-### 启用B2B人员以考虑对事件数据集进行拼合
+### 在事件数据集上启用 B2B 人员到帐户拼接
 
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="启用人员到帐户拼接"
 >abstract="启用后，此数据集将使用 B2B“人员到帐户”拼接。 **[!UICONTROL 永久人员ID]**&#x200B;值将提升为配置的&#x200B;**[!UICONTROL 人员标识符命名空间]**&#x200B;中的值，然后用于根据人员到帐户数据集查找帐户ID。<br/>如果禁用，此数据集就不会使用 B2B“人员到帐户”拼接，在这种情况下您就要选择一个必需的&#x200B;**[!UICONTROL 帐户 ID]**。"
->additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="将B2B人员配置为帐户拼接设置"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="配置 B2B 人员到帐户拼接设置"
 
 在连接级别配置B2B拼接后，必须启用B2B人员以针对要拼接的每个事件数据集单独考虑拼接。
 
