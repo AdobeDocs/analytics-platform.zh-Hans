@@ -4,32 +4,14 @@ description: 查看最新的 Customer Journey Analytics 发行说明
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 04accc9ba060da60916cf4c3bc66710f57f50cda
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: ad5685a0-8296-4a0c-814c-658c10b4af12id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: f3aad257d518373812176cb123d799b83cf45520
 workflow-type: tm+mt
-source-wordcount: 1263
+source-wordcount: 1261
 ht-degree: 20%
 
 ---
@@ -44,7 +26,7 @@ ht-degree: 20%
 
 | 功能和描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | -----------|-----------|-----------|
-| **Customer Journey Analytics MCP服务器插件**<br/>&#x200B;使用适用于ChatGPT和Claude的新Customer Journey Analytics MCP服务器插件快速访问您的数据。 <p>有关详细信息，请参阅[ChatGPT插件指南](https://developer.adobe.com/analytics-mcp/docs/guides/chatgpt)和[Claude连接器指南](https://developer.adobe.com/analytics-mcp/docs/guides/claude)。</p> | 2026年9月1日 | 2026年9月1日 |
+| **Customer Journey Analytics MCP服务器插件**<br/>&#x200B;使用适用于ChatGPT和Claude的新Customer Journey Analytics MCP服务器插件快速访问您的数据。 <p>有关详细信息，请参阅[连接到ChatGPT](https://developer.adobe.com/analytics-mcp/docs/guides/chatgpt)和[连接到Claude](https://developer.adobe.com/analytics-mcp/docs/guides/claude)。</p> | 2026年9月1日 | 2026年9月1日 |
 | **支持其他数据使用标签**<br> Customer Journey Analytics现在支持数据集内元素的以下其他数据使用标签：<ul><li>C2 — 限制第三方数据导出（现在可用）</li><li>C3 — 限制可直接识别的数据组合（现在可用）</li><li>C9 — 限制数据科学（计划于8月或9月发布）</li></ul><p>有关详细信息，请参阅[标签、策略和营销操作](/help/data-views/data-governance.md)。</p> | | 2026年9月3日 |
 | **同意策略筛选和报告**<br>&#x200B;您现在可以报告哪些访客与您的Adobe Experience Platform同意策略匹配。 （同意策略维度和量度会添加到连接中的数据视图。）<p>此外，您可以先排除非同意访客，然后再将其数据摄取到Customer Journey Analytics。</p><p>（文档链接见下文。）<!--For more information, see Consent reporting and filtering overview.--></p> | | 2026年9月 |
 | **将区段限制为报表日期范围**<br/>&#x200B;当区段包含日期范围组件时，Workspace报表中的数据可能会超出报表日期范围。<p>现在提供了一个新选项，通过该选项可将结果限制为报表日期范围，而不管该区段中包含的任何日期组件如何。</p><p>创建或修改顶级容器为“人员”的区段时，此选项可用。</p><p>有关详细信息，请参阅[生成区段](/help/components/segments/seg-builder.md#components)。</p> | 2026年8月26日 | 2026年9月9日 |
