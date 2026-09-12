@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: e2ec268ef4a2d84d51089e7b59b3df5b0ad6f48d
+source-git-commit: 18b3b42cafd437749041bc1d408e60e77b42e1fc
 workflow-type: tm+mt
-source-wordcount: 7019
+source-wordcount: 7045
 ht-degree: 98%
 
 ---
@@ -49,6 +49,8 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 
 | 功能 | 描述 |
 |---|---|
+| **2026年9月** | |
+| 新的调整大小快捷方式操作 | Analysis Workspace中新增的键盘快捷键现在允许您[调整面板或可视化图表的大小](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#resize-panel-or-visualization)：更宽、更窄、更高或更短。 |
 | **2026年8月** | |
 | 明确了有关刷新受众的信息 | 当[发布受众](/help/components/audiences/publish.md#audience-builder)时，说明了可以计划刷新的受众数量取决于您的Customer Journey Analytics授权，介于75和150之间。 |
 | **2026年7月** | |

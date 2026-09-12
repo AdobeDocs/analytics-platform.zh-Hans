@@ -17,10 +17,10 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 18b3b42cafd437749041bc1d408e60e77b42e1fc
 workflow-type: tm+mt
-source-wordcount: 418
-ht-degree: 89%
+source-wordcount: 488
+ht-degree: 78%
 
 ---
 
@@ -86,6 +86,17 @@ Analysis Workspace 中提供了热键（键盘快捷键），以实现无缝导�
 | --- | --- | --- |
 | 将面板上移 | **[!UICONTROL *cmd + opt + up *]** | **[!UICONTROL *alt + ctrl + up *]** |
 | 下移面板 | **[!UICONTROL *cmd + opt + down *]** | **[!UICONTROL *alt + ctrl + down *]** |
+
+## 调整面板或可视化图表操作的大小
+
+| 操作 | Mac 快捷方式 | Windows 快捷方式 |
+| --- | --- | --- |
+| 调整更宽的大小 | **[!UICONTROL *cmd + opt + shift + right *]** | **[!UICONTROL *ctrl + alt + shift + right *]** |
+| 将大小调整得较窄 | **[!UICONTROL *cmd + opt + shift + left *]** | **[!UICONTROL *ctrl + alt + shift + left *]** |
+| 调整较高的大小 | **[!UICONTROL *cmd + opt + shift + down *]** | **[!UICONTROL *ctrl + alt + shift + down *]** |
+| 调整更短的大小 | **[!UICONTROL *cmd + opt + shift + up *]** | **[!UICONTROL *ctrl + alt + shift + up *]** |
+
+宽度在一个网格列的步长内调整大小，高度在一个网格单元的步长内调整大小（大约25像素）。
 
 ## 民主化操作
 
