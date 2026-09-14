@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 hold: true
-source-git-commit: 8e446c15e998e660b42a09681fe78b885711e41f
+source-git-commit: b29ee2f04a1775dca6a8fd93c3ac3050b67f0ceb
 workflow-type: tm+mt
 source-wordcount: '2257'
 ht-degree: 6%
@@ -18,8 +18,9 @@ ht-degree: 6%
 
 >[!PREREQUISITES]
 >
->您必须具有可用于收集数据的Experience Platform环境（组织和沙盒）。
->必须为实验代理和对话字段组启用您的Adobe组织。
+>* 您必须具有可用于收集数据的Experience Platform环境（组织和沙盒）。
+>* 必须为实验代理和对话字段组启用您的Adobe组织。
+>
 
 ## 架构和数据集
 
@@ -304,6 +305,10 @@ ht-degree: 6%
 | `metadata[]` | 可选的制造者定义的键/值元数据。 |
 
 
+信号提取服务填充信号数据集的`signals`对象。
+
+已弃用以前的`signals[].attributes.{subjects,intents,tones,sentiment}`容器。
+
 #### 对话
 
 有关对话对象的完整详细信息，请参阅下文。
@@ -356,9 +361,6 @@ ht-degree: 6%
 +++
 
 
-信号提取服务填充信号数据集的`signals`对象。
-
-已弃用以前的`signals[].attributes.{subjects,intents,tones,sentiment}`容器。
 
 
 ### 其他字段组

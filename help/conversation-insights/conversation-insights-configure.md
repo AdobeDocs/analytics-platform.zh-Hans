@@ -1,22 +1,21 @@
 ---
-title: 配置对话分析配置
+title: 创建或编辑对话分析配置
 description: 了解如何配置对话分析配置。
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 hold: true
-source-git-commit: 8e446c15e998e660b42a09681fe78b885711e41f
+source-git-commit: b29ee2f04a1775dca6a8fd93c3ac3050b67f0ceb
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '638'
 ht-degree: 8%
 ---
-# 配置对话分析配置
+# 创建或编辑配置
 
 
 对话见解使您能够大规模分析对话(从大型语言模型(LLM)或人)，并在整个客户历程中提供这些对话的上下文。 通过对话分析，您可以了解代表对实际用户结果的影响。
 
-
-## 创建或编辑配置
+通过对话见解配置界面，您可以快速创建或编辑配置和相关工件（连接、数据视图等）。
 
 创建或编辑“对话分析”配置时，请指定沙盒以及包含提示、响应和反馈数据的事件数据集。 您还可以选择要将这些数据集添加到的Customer Journey Analytics连接。 以及要将对话分析量度和维度添加到其中的数据视图。
 
@@ -24,12 +23,12 @@ ht-degree: 8%
 
 您可以从[对话见解配置界面](./conversation-insights-manage.md)创建或编辑配置。
 
-### 恢复缺少的混合数据集
+## 恢复缺少的混合数据集
 
 如果编辑配置并且为该配置生成的混合数据集不再存在，请选择&#x200B;**[!UICONTROL 恢复]**&#x200B;以重新生成混合数据集。
 
 
-### 配置步骤
+## 配置步骤
 
 对于每个配置：
 
