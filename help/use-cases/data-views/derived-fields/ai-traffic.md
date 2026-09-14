@@ -9,31 +9,44 @@ autotag-review: '2026-05-19T11:02:18.748Z'
 TQID: 'https://experienceleague.adobe.com/uwZ-wOZblEpNl5gGw673Lo11Sqqwfz5u0bxd0d2hOLE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
 subfeature_v2:
   - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
   - id: f3ca85c1-72de-4df2-97ed-05753cd77c47
+    internal-label: Derived fields
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Admin
+  - 
+    id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+    internal-label: Artificial intelligence
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ab985ab32df3a8ba8518a7dc3cb8f0b194b8c7c7
+    internal-label: Data management
+source-git-commit: 0a86745b9a1a1e14c3e77fcfa5b97ba0c5236d10
 workflow-type: tm+mt
-source-wordcount: 1451
+source-wordcount: '1453'
 ht-degree: 3%
-
 ---
-
 # 关于 LLM 和 AI 生成流量的报告
 
 本用例文章探讨了如何使用Customer Journey Analytics派生字段功能作为报告LLM（大语言模型）和AI生成的流量的基础。
@@ -102,6 +115,9 @@ LLM和AI代理在与数字属性交互时表现出复杂且不断演变的行为
 <td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">在ChatGPT代表用户浏览网站时使用（旧版）</a></td>
 </tr>
 <tr>
+<td><strong>OAI-AdsBot</strong></td>
+<td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-AdsBot/1.0; +<a href="https://openai.com/adsbot" target="_blank" rel="noopener nofoloow noreferrer">https://openai.com/adsbot</a></code></td>
+</tr>
 <td><strong>OAI-SearchBot</strong></td>
 <td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +<a href="https://openai.com/searchbot" target="_blank" rel="noopener nofollow noreferrer">https://openai.com/searchbot</a></code></td>
 <td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">ChatGPT用于发现内容的搜索重点爬虫</a></td>
@@ -314,6 +330,6 @@ LLM和AI代理在与数字属性交互时表现出复杂且不断演变的行为
 
 >[!MORELIKETHIS]
 >
->此用例文章基于博客文章[在Adobe Customer Journey Analytics中跟踪和分析LLM和AI生成的流量](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=zh-Hans)。
+>此用例文章基于博客文章[在Adobe Customer Journey Analytics中跟踪和分析LLM和AI生成的流量](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967)。
 >
 >
