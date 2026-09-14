@@ -19,7 +19,7 @@ ht-degree: 6%
 >[!PREREQUISITES]
 >
 >您必须具有可用于收集数据的Experience Platform环境（组织和沙盒）。
-必须为实验代理和对话字段组启用您的Adobe组织。
+>必须为实验代理和对话字段组启用您的Adobe组织。
 
 ## 架构和数据集
 
