@@ -9,22 +9,26 @@ autotag-review: '2026-05-19T08:44:26.806Z'
 TQID: 'https://experienceleague.adobe.com/R7c5-VutwSkyghNvwC2gZv2KUEJoa263AN0Tkdg3w4o'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 4872f0078640fbd358a60a6d7baeb3ea575d3559
+    internal-label: Customer journeys
+source-git-commit: 555aef15933d87e5bbb3e3ec8b15d99a96ac25fe
 workflow-type: tm+mt
-source-wordcount: 1629
+source-wordcount: '1699'
 ht-degree: 0%
-
 ---
-
 # 在Customer Journey Analytics和Adobe Analytics中比较数据馈送
 
 {{release-limited-testing}}
@@ -40,6 +44,8 @@ Customer Journey Analytics和Adobe Analytics中的数据馈送允许您向第三
 以下功能在Customer Journey Analytics数据馈送中可用，但在Adobe Analytics数据馈送中不可用：
 
 * **派生字段**：自定义组件，这些组件通过基于规则的转换构建，可包含在您的数据馈送架构中。<!-- add benefit -->
+
+* **组件设置**：数据视图组件设置（如持久性、量度去重和值分段）可以直接在数据馈送输出中转换组件的值，而不需要SQL。
 
 * **拼接**：跨设备身份解析，可将跨设备的事件链接到单个人员。
 
@@ -80,6 +86,7 @@ Customer Journey Analytics和Adobe Analytics中的数据馈送允许您向第三
 | **架构**<br/>&#x200B;数据馈送架构确定哪些列可以包含在数据馈送中。 | 数据馈送架构基于数据视图配置。  可包含在数据馈送架构中的组件是数据视图配置中可用组件的子集。 | 约1,100多个变量的预定义静态列表。 许多列将导出为&#x200B;**预处理对和后处理对**（例如，`eVar1` / `post_eVar1`），这占列数的大部分。 |
 | **数据馈送生成器**<br/>&#x200B;用于配置数据馈送中包含哪些列的界面。 | 使用某个组件边栏，该边栏具有数据视图中可用的相同命名维度和量度，与Analysis Workspace体验相匹配。 | 使用从预定义的~1,100+列集中选择的原始变量名称（如`eVar1`、`prop5`）的平面列表。 组件的命名或描述不能超出其变量标识符。 |
 | **派生字段**<br/>&#x200B;使用在报告时应用的基于规则的转换定义的自定义组件。 | 支持。 派生字段组件可以与标准维度和量度一起包含在数据馈送架构中。 | 不支持。 |
+| **组件设置**<br/>&#x200B;在报告时转换组件值的数据视图组件设置，如持久性、量度去重和值分段。 | 大多数设置都支持。 这些设置适用于数据馈送输出，其应用方式与在Analysis Workspace中相同。 | 不支持。 |
 | **组件更新**<br/>&#x200B;对组件配置的更改是否反映在过去和未来的数据馈送输出中。 | 对数据视图中的组件所做的更改（例如重命名或删除维度）会传播到未来的数据馈送，并且还会反映在回填中。 | 对报表包中组件的更改仅适用于将来收集的数据。 |
 | **查找**<br/> Customer Journey Analytics中的查找数据集等同于Adobe Analytics中的分类。 | 所有查找都直接嵌入到数据中。 | Adobe Analytics数据馈送中不包含分类。 |
 | **会话定义**<br/>&#x200B;访问或会话界限的定义方式，这将影响事件的分组和归因方式。 | 在数据视图中定义。 | 在收藏集时定义。 |
