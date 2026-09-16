@@ -4,29 +4,37 @@ description: 了解如何在Customer Journey Analytics中报告访客同意策�
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
   - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
+    internal-label: Privacy
+source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
 workflow-type: tm+mt
-source-wordcount: 1311
+source-wordcount: '1311'
 ht-degree: 2%
-
 ---
-
 # 同意报告和筛选概述
+
+{{release-limited-testing}}
 
 同意报告和筛选使用存储在您的Adobe Experience Platform配置文件数据集中的同意策略成员资格数据帮助您报告访客同意。 此外，您可以选择在未经同意的访客数据被摄取到Customer Journey Analytics中之前排除这些访客。
 
@@ -130,7 +138,7 @@ ht-degree: 2%
 |---------|----------|----------|
 | [创建同意报告和筛选配置](/help/connections/consent-reporting-filtering/consent-configure.md) | 系统管理员 | <ul><li>数据集：读取、写入</li><li>架构：读取、写入</li></ul> <p>包含同意策略成员资格数据的用户档案数据集需要读取权限。 需要写入权限，因为会创建同意策略查找数据集并保持同步。</p> |
 | 在数据视图中查看同意策略组件 | 数据视图所分配到的产品配置文件的产品配置文件管理员 <p>有关详细信息，请参阅[访问控制](/help/technotes/access-control.md)。</p> | 不适用 |
-| 在Analysis Workspace中使用同意策略组件 | 访问添加了同意策略组件的数据视图 | 不适用 |
+| [在Analysis Workspace中使用同意策略组件](/help/connections/consent-reporting-filtering/consent-analyze.md#use-consent-policy-components-in-analysis-workspace) | 访问添加了同意策略组件的数据视图 | 不适用 |
 
 ## 同意报告和筛选用例
 
