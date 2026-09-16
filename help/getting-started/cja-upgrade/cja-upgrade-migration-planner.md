@@ -5,14 +5,12 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
-source-git-commit: db34e721f156b3eb0aab20b2dca57e194c83d6fb
+source-git-commit: 39d6847296cc385d501defda292b5b3cae98b46a
 workflow-type: tm+mt
-source-wordcount: '2379'
-ht-degree: 5%
-
+source-wordcount: '2338'
+ht-degree: 16%
 ---
-
-# 从标记迁移到XDM {#upgrade-migration-planner}
+# 从 Tags 迁移到 XDM {#upgrade-migration-planner}
 
 {{upgrade-note-step}}
 
@@ -21,7 +19,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="migration_intro"
 >title="迁移概述"
->abstract="升级到Adobe Experience Platform时，将标记实施迁移到Customer Journey Analytics Web SDK。<br/>继续现有的迁移或开始新的迁移。"
+>abstract="升级到 Customer Journey Analytics 时，将 Tags 实施迁移到 Adobe Experience Platform Web SDK。<br/>继续现有迁移或开始新的迁移。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -88,7 +86,8 @@ Migration Planner提供了一个迁移向导，可自动完成以下复杂且耗
 
 1. 在迁移规划者的&#x200B;[!UICONTROL **迁移**]&#x200B;选项卡上，选择&#x200B;[!UICONTROL **新建**]。
 
-   ![新建迁移对话框，您可以在其中选择迁移类型并输入迁移名称。](assets/migration-planner-new-migration.png)
+   <!-- Confirm the exact image: ![The migration overview page with the Audit, Mapping, and Implementation stage cards.](assets/migration-planner-overview.png) -->
+
 
 1. 指定以下信息：
 
@@ -135,17 +134,17 @@ Migration Planner提供了一个迁移向导，可自动完成以下复杂且耗
 
    迁移概述页面显示了要完成的三个阶段，以及迁移及其工件的摘要。
 
-   ![包含“审核”、“映射”和“实施”阶段卡的迁移概述页面。](assets/migration-planner-overview.png)
+   <!-- Confirm the exact image: ![The migration overview page with the Audit, Mapping, and Implementation stage cards.](assets/migration-planner-overview.png) -->
 
 1. 完成&#x200B;[!UICONTROL **审核**]&#x200B;阶段：
 
    1. 在审核卡片（[!UICONTROL **标记扩展审核**]&#x200B;或&#x200B;[!UICONTROL **JavaScript审核**]，具体取决于您的迁移类型）中，选择&#x200B;[!UICONTROL **开始审核**]&#x200B;以查看迁移中包含的规则和数据元素。
 
-      ![审核页面，您可以在其中选择规则和数据元素并解决任何调查结果。](assets/migration-planner-audit.png)
+      <!-- Confirm the exact image: ![The audit page, where you select rules and data elements and resolve any findings.](assets/migration-planner-audit.png) -->
 
    1. 在&#x200B;[!UICONTROL **规则**]&#x200B;和&#x200B;[!UICONTROL **数据元素**]&#x200B;选项卡上，选择要包含在迁移中的项。
 
-      库&#x200B;**中标记为**&#x200B;的规则已发布。 标记为&#x200B;[!UICONTROL **属性**]&#x200B;的规则仅存在于属性中，但不是所选库的一部分。
+      库&#x200B;**]中标记为[!UICONTROL **&#x200B;的规则已发布。 标记为&#x200B;[!UICONTROL **属性**]&#x200B;的规则仅存在于属性中，但不是所选库的一部分。
 
    1. 复查所选规则的任何调查结果。 对于每个发现结果，选择&#x200B;[!UICONTROL **查看**]&#x200B;以解决该问题，或选择&#x200B;[!UICONTROL **忽略**]&#x200B;以保持未寻址。
 
@@ -247,22 +246,22 @@ Migration Planner可以标记以下类型的调查结果：
 >[!CONTEXTUALHELP]
 >id="migration_mapping_sets"
 >title="映射集"
->abstract="映射集确定Analytics变量如何映射到XDM字段。<br/>创建新映射集或选择现有映射集以跨多个迁移应用相同的映射。 您还可以在其他迁移任务中引用映射集。"
+>abstract="映射集用于确定 Analytics 变量如何映射到 XDM 字段。<br/>创建新的映射集或选择现有映射集，以便在多个迁移中应用相同的映射。 您还可以在其他迁移任务中引用映射集。"
 
 <!-- markdownlint-enable MD034 -->
 
 映射集确定Analytics变量如何映射到XDM架构字段。
 
-您可以在迁移过程[&#128279;](#migrate-an-analytics-implementation-to-the-web-sdk)中创建新映射集。 或者，您也可以创建一个独立的映射集，以便用于未来的迁移或其他迁移任务。
+您可以在迁移过程](#migrate-an-analytics-implementation-to-the-web-sdk)中创建新映射集[。 或者，您也可以创建一个独立的映射集，以便用于未来的迁移或其他迁移任务。
 
-### 创建独立映射集 {#xdm-mapping}
+### 创建独立的映射集 {#xdm-mapping}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="migration_mapping_schema"
 >title="选择架构"
->abstract="映射集确定Analytics变量如何映射到XDM字段。<br/>创建新映射集或选择现有映射集以跨多个迁移应用相同的映射。 您还可以在其他迁移任务中引用映射集。"
+>abstract="映射集用于确定 Analytics 变量如何映射到 XDM 字段。<br/>创建新的映射集或选择现有映射集，以便在多个迁移中应用相同的映射。 您还可以在其他迁移任务中引用映射集。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -271,7 +270,7 @@ Migration Planner可以标记以下类型的调查结果：
 >[!CONTEXTUALHELP]
 >id="migration_mapping_field_group"
 >title="字段组首选项"
->abstract="选择标准字段组以尽可能使用已发布的Adobe字段组。 这样可提高最大一致性，并在没有标准字段可用时回退到自定义租户字段。<br/>选择自定义字段组以尽可能使用租户 — 命名空间自定义字段。 这有助于实现最大的灵活性。"
+>abstract="选择标准字段组，以便尽可能使用 Adobe 已发布的字段组。 这有助于最大限度地确保一致性；如果没有可用的标准字段，则会改用租户自定义字段。<br/>选择自定义字段组，以便尽可能使用租户命名空间下的自定义字段。 这有助于最大限度地提高灵活性。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -279,8 +278,8 @@ Migration Planner可以标记以下类型的调查结果：
 
 >[!CONTEXTUALHELP]
 >id="migration_mapping_lookback"
->title="回顾时段"
->abstract="控制在确定哪些变量正在主动接收数据时回溯多远。 架构中包含的变量包含回溯时段内的数据。"
+>title="回溯期"
+>abstract="控制在确定哪些变量正在接收数据时向前回溯的时长。 包含回溯期内数据的变量将纳入架构中。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -304,13 +303,13 @@ Migration Planner可以标记以下类型的调查结果：
 
 1. 在&#x200B;[!UICONTROL **字段组偏好设置**]&#x200B;下拉菜单中，选择要如何将自定义变量组织到字段组中：
 
-   * [!UICONTROL **标准优先**]：尽可能使用已发布的Adobe字段组。 这样可提高最大一致性，并在没有标准字段可用时回退到自定义租户字段。
+   * [!UICONTROL **标准优先**]：尽可能使用已发布的Adobe字段组。 这有助于最大限度地确保一致性；如果没有可用的标准字段，则会改用租户自定义字段。
 
-   * [!UICONTROL **自定义优先**]：尽可能使用租户命名空间自定义字段。 这有助于实现最大的灵活性。
+   * [!UICONTROL **自定义优先**]：尽可能使用租户命名空间自定义字段。 这有助于最大限度地提高灵活性。
 
    <!-- * [!UICONTROL **Ask each time**]: Prompt for each signal so you can decide individually. -->
 
-1. 在&#x200B;[!UICONTROL **回顾期间**]&#x200B;字段中，选择在确定哪些变量正在主动接收数据时要回顾多远。 架构中包含的变量包含回溯时段内的数据。
+1. 在&#x200B;[!UICONTROL **回顾期间**]&#x200B;字段中，选择在确定哪些变量正在主动接收数据时要回顾多远。 包含回溯期内数据的变量将纳入架构中。
 
 1. 选择&#x200B;[!UICONTROL **创建映射集**]。
 
@@ -330,7 +329,7 @@ Migration Planner可以标记以下类型的调查结果：
 
 * [!UICONTROL **已发布**]：映射集已最终完成。
 
-* 迁移&#x200B;**中的**：映射集绑定到一个或多个迁移。
+* 迁移&#x200B;**]中的[!UICONTROL **：映射集绑定到一个或多个迁移。
 
 <!-- Confirm how to publish a mapping set, how versions are created (v1, v2, v3), and what "bindings" represent. -->
 
