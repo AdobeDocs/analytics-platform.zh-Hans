@@ -8,35 +8,42 @@ exl-id: 14a90758-91eb-4610-8802-1edfdb8b9689
 TQID: https://experienceleague.adobe.com/J-5oxLDw4sLVFcXYQhN5cpTkH76C5wAfWFECrIydb-s
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
+    internal-label: Machine learning
+source-git-commit: 06d3fa4838d48567f1b9804992aa0f718937916d
 workflow-type: tm+mt
-source-wordcount: 3373
+source-wordcount: '3306'
 ht-degree: 5%
-
 ---
-
 # 查询服务（数据Distiller）和导出数据集
 
 本文概述如何使用Experience Platform查询服务(Data Distiller)和数据集导出的组合实现以下[数据导出用例](overview.md)：
 
 - 数据验证
-- 数据湖，BI tools的Data Warehouse
+- Data Lake、Data Warehouse for BI tools
 - 为人工智能和机器学习做好准备。
 
 
-Adobe Analytics可以使用其[数据馈送](https://experienceleague.adobe.com/zh-hans/docs/analytics/export/analytics-data-feed/data-feed-overview)功能实施这些用例。 数据馈送是从 Adobe Analytics 中获取原始数据的有效方法。 本文介绍了如何从Experience Platform中获得相似类型的原始数据，以便您实施上述用例。 在适用的情况下，将本文中描述的功能与Adobe Analytics数据馈送进行比较，以阐明数据和流程中的差异。
+Adobe Analytics可以使用其[数据馈送](https://experienceleague.adobe.com/zh-hans/docs/analytics/export/analytics-data-feed/data-feed-overview)功能实施这些用例。 数据馈送是从Adobe Analytics导出原始数据的有效方式。 本文介绍了如何从Experience Platform导出相似类型的原始数据，以便您实施上述用例。 在适用的情况下，将本文中描述的功能与Adobe Analytics数据馈送进行比较，以阐明数据和流程中的差异。
 
 ## 简介
 
@@ -53,8 +60,8 @@ Adobe Analytics可以使用其[数据馈送](https://experienceleague.adobe.com/
 在使用本使用案例中所述的功能之前，请确保您满足以下所有要求：
 
 - 将数据收集到Experience Platform数据湖中的有效实施。
-- 访问Data Distiller加载项，以确保您有权执行批量查询。 有关详细信息，请参阅[查询服务打包](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/packaging)。
-- 访问导出数据集功能，在您购买Real-Time CDP Prime或Ultimate软件包、Adobe Journey Optimizer或Customer Journey Analytics后可用。 有关详细信息，请参阅[将数据集导出到云存储目标](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets)。
+- 访问Data Distiller加载项，以确保您有权执行批量查询。 查询行限制和执行超时取决于您的授权。 有关详细信息，请参阅[查询服务打包](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/packaging)。
+- 访问导出数据集功能，在您购买Real-Time CDP Prime或Ultimate软件包、Adobe Journey Optimizer或Customer Journey Analytics后可用。 要了解更多信息，请参阅[将数据集导出到云存储目标](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets)。
 - 将一个或多个已配置目标（例如：Amazon S3、Google Cloud Storage）导出到的数据馈送原始数据。
 
 
@@ -75,13 +82,13 @@ Experience Platform查询服务允许您查询和联接Experience Platform数据
 
 #### 数据馈送列
 
-可在查询中使用的XDM字段取决于数据集所基于的架构定义。 确保您确实了解数据集背后的架构。 请参阅[数据集UI指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/user-guide)以了解更多信息。
+查询中可用的XDM字段取决于数据集架构。 确保您了解数据集的基础架构。 有关详细信息，请参阅[数据集UI指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/user-guide)。
 
-为了帮助您定义数据馈送列和XDM字段之间的映射，请参阅[Analytics字段映射](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics)。 另请参阅[架构UI概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/overview#defining-xdm-fields)，了解有关如何管理XDM资源（包括架构、类、字段组和数据类型）的更多信息。
+为了帮助您定义数据馈送列和XDM字段之间的映射，请参阅[Analytics字段映射](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics)。 有关管理XDM资源的信息，另请参阅[架构UI概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/overview#defining-xdm-fields)。
 
 例如，如果要使用&#x200B;*页面名称*&#x200B;作为数据馈送的一部分，请执行以下操作：
 
-- 在Adobe Analytics数据馈送的UI中，您可以选择&#x200B;**[!UICONTROL pagename]**&#x200B;作为要添加到数据馈送定义的列。
+- 在Adobe Analytics数据馈送UI中，选择&#x200B;**[!UICONTROL pagename]**&#x200B;作为要添加到数据馈送定义的列。
 - 在查询服务中，您在查询中包含来自`sample_event_dataset_for_website_global_v1_1`数据集的`web.webPageDetails.name`(基于网站的&#x200B;**示例事件架构（全局v1.1）**&#x200B;体验事件架构)。 有关详细信息，请参阅[Web详细信息架构字段组](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/field-groups/event/web-details)。
 
 
@@ -90,13 +97,13 @@ Experience Platform查询服务允许您查询和联接Experience Platform数据
 在Experience Platform中，可以使用各种标识。 创建查询时，请确保正确查询了标识。
 
 
-通常，您会在单独的字段组中找到身份。 在实现中，ECID (`ecid`)可以定义为具有`core`对象的字段组的一部分，该对象本身是`identification`对象的一部分（例如： `_sampleorg.identification.core.ecid`）。 ECID在架构中的组织方式可能有所不同。
+通常，您会在单独的字段组中找到身份。 在实现中，ECID (`ecid`)可以定义为具有`core`对象的字段组的一部分，该对象本身是`identification`对象的一部分（例如： `_sampleorg.identification.core.ecid`）。 ECID在架构中的组织方式有所不同。
 
 或者，您可以使用`identityMap`查询身份。 `identityMap`的类型为`Map`，并使用[嵌套数据结构](#nested-data-structure)。
 
 有关如何在Experience Platform中定义标识字段的更多信息，请参阅[在UI中定义标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity)。
 
-请参阅[Analytics数据中的主要标识符](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics#primary-identifiers-in-analytics-data)，了解在使用Analytics源连接器时，Adobe Analytics标识如何映射到Experience Platform标识。 此映射可用作设置标识的指导，即使未使用Analytics Source Connector也是如此。
+请参阅[Analytics数据中的主要标识符](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics#primary-identifiers-in-analytics-data)，了解在使用Analytics源连接器时，Adobe Analytics标识如何映射到Experience Platform标识。 此映射用作设置标识的指导，即使不使用Analytics Source Connector也是如此。
 
 
 #### 点击级别数据和识别
@@ -189,8 +196,8 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 对于查询：
 
 - 那些使用来自Experience Platform数据湖中数据集的数据，
-- 正在点击Adobe定义的函数和/或Spark SQL的附加功能，以及
-- 会将类似的结果交付给等效的Adobe Analytics数据馈送，
+- 使用Adobe定义的函数和/或Spark SQL的附加功能，以及
+- 提供与等效的Adobe Analytics数据馈送类似的结果，
 
 请参阅：
 
@@ -212,8 +219,8 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
   - 使用处理状态表`checkpoint_log`跟踪当前引入时间与上次引入时间。 有关详细信息，请参阅[本指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/key-concepts/incremental-load)。
   - 禁用删除系统列，以便您可以使用`_acp_system_metadata.ingestTime`。
   - 使用最内层`SELECT`获取要使用的字段，并将事件限制在回看时段内以进行会话和/或归因计算。 例如，90天。
-  - 使用下一级别`SELECT`来应用会话化和/或归因窗口函数以及其他计算。
-  - 在输出表中使用`INSERT INTO`将回顾限制为仅回顾自上次处理时间以来到达的事件。 为此，请筛选`_acp_system_metadata.ingestTime `而不是上次存储在处理状态表中的时间。
+  - 使用下一级别`SELECT`应用您的会话流程和/或归因窗口函数以及其他计算。
+  - 若要将回顾限制为自上次处理时间以来到达的事件，请在输出表中使用`INSERT INTO`。 为此，请筛选`_acp_system_metadata.ingestTime `而不是上次存储在处理状态表中的时间。
 
   **会话流程窗口函数示例**
 
@@ -355,7 +362,7 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
 ### 计划查询
 
-您可以计划查询，以确保按首选间隔执行查询并生成结果。
+要确保按首选间隔执行查询并生成结果，请计划查询。
 
 #### 使用查询编辑器
 
@@ -365,13 +372,13 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 #### 使用查询服务API
 
 或者，您可以使用RESTful API为查询定义查询和计划。 有关详细信息，请参阅[查询服务API指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/api/getting-started)。
-在创建查询（[创建查询](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Queries/operation/createQuery)）或为查询创建计划时（[创建计划查询](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Schedules/operation/createSchedule)），请确保将输出数据集定义为可选`ctasParameters`属性的一部分。
+在创建查询（[创建查询](https://developer.adobe.com/experience-platform-apis/references/query-service#operation/createQuery)）或为查询创建计划时[创建计划查询](https://developer.adobe.com/experience-platform-apis/references/query-service#operation/createSchedule)，请确保将输出数据集定义为可选`ctasParameters`属性的一部分。
 
 
 
 ## 导出数据集
 
-创建并计划查询并验证结果后，您可以将原始数据集导出到云存储目标。 此导出位于“Experience Platform目标”术语中，称为“数据集导出目标”。 有关概述，请参阅[将数据集导出到云存储目标](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets)。
+创建和计划查询，并验证结果以将原始数据集导出到云存储目标。 在“Experience Platform目标”术语中，此导出称为数据集导出目标。 有关概述，请参阅[将数据集导出到云存储目标](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets)。
 
 支持以下云存储目标：
 
@@ -389,7 +396,7 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
 #### 选择目标
 
-确定要将输出数据集导出到的云存储目标后，[选择目标](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets#select-destination)。 如果尚未为首选云存储配置目标，则必须[创建新的目标连接](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/connect-destination)。
+确定要将输出数据集导出到的云存储目标。 然后，[选择目标](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets#select-destination)。 如果尚未为首选云存储配置目标，则必须[创建新的目标连接](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/connect-destination)。
 
 在配置目标时，您可以
 
@@ -404,14 +411,14 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
 #### 计划数据集导出
 
-最后，要计划数据集导出作为&#x200B;**[!UICONTROL 计划]**&#x200B;步骤的一部分。 在该步骤中，您可以定义计划以及输出数据集导出是否应增量导出。 有关详细信息，请参阅[计划数据集导出](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets#scheduling)。
+最后，要计划数据集导出作为&#x200B;**[!UICONTROL 计划]**&#x200B;步骤的一部分。 在该步骤中，定义计划以及输出数据集导出是否为增量导出。 有关详细信息，请参阅[计划数据集导出](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets#scheduling)。
 
 
 #### 最后步骤
 
 [查看](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets#review)您的选择，如果正确，开始将输出数据集导出到云存储目标。
 
-您必须[验证](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets#verify)数据导出是否成功。 导出数据集时，Experience Platform会在目标中定义的存储位置创建一个或多个`.json`或`.parquet`文件。 根据您设置的导出计划，希望将新文件存储在您的存储位置。 Experience Platform会在您指定为选定目标一部分的存储位置中创建一个文件夹结构，用于存储导出的文件。 每次导出时都会创建一个新文件夹，其模式为： `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`。 默认文件名是随机生成的，并确保导出的文件名是唯一的。
+[验证](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets#verify)数据导出是否成功。 导出数据集时，Experience Platform会在目标存储位置创建一个或多个`.json`或`.parquet`文件。 根据您设置的导出计划，希望将新文件存储在您的存储位置。 Experience Platform会在您指定为选定目标一部分的存储位置中创建一个文件夹结构，用于存储导出的文件。 每次导出时都会创建一个新文件夹，其模式为： `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`。 默认文件名是随机生成的，并确保导出的文件名是唯一的。
 
 ### 流服务API
 
@@ -423,36 +430,36 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
 #### 检索符合条件的数据集
 
-您可以[检索符合条件的数据集列表](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/api/export-datasets#retrieve-list-of-available-datasets)以供导出，并使用[`GET /connectionSpecs/{id}/configs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Configurations/operation/getDatasets) API验证您的输出数据集是否属于该列表。
+您可以[检索符合条件的数据集列表](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/api/export-datasets#retrieve-list-of-available-datasets)以供导出，并使用[`GET /connectionSpecs/{id}/configs`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/getDatasets) API验证您的输出数据集是否属于该列表。
 
 
 #### 创建源连接
 
-接下来，您必须使用要导出到云存储目标的输出数据集的唯一ID [创建源连接](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/api/export-datasets#create-source-connection)。 您使用[`POST /sourceConnections`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Source-connections/operation/postSourceConnection) API。
+接下来，您必须使用要导出到云存储目标的输出数据集的唯一ID [创建源连接](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/api/export-datasets#create-source-connection)。 您使用[`POST /sourceConnections`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/postSourceConnection) API。
 
 #### 向目标进行身份验证（创建基本连接）
 
-您现在必须[创建基本连接](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/api/export-datasets#create-base-connection)以使用[`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) API进行身份验证并将凭据安全地存储到您的云存储目标。
+要验证凭据并将凭据安全地存储到您的云存储目标，[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/api/export-datasets#create-base-connection)使用[`POST /targetConnection`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/postTargetConnection) API创建基本连接。
 
 
 #### 提供导出参数
 
-接下来，您必须[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/api/export-datasets#create-target-connection)再使用[`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) API创建一个目标连接，用于存储输出数据集的导出参数。 这些导出参数包括位置、文件格式、压缩等。
+接下来，您必须[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/api/export-datasets#create-target-connection)再使用[`POST /targetConnection`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/postTargetConnection) API创建一个目标连接，用于存储输出数据集的导出参数。 这些导出参数包括位置、文件格式、压缩等。
 
 #### 设置数据流
 
-最后，您[设置数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/api/export-datasets#create-dataflow)，以确保使用[`POST /flows`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflows/operation/postFlow) API将输出数据集导出到云存储目标。 在此步骤中，您可以使用`scheduleParams`参数定义导出的计划。
+为确保将输出数据集导出到云存储目标，请[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/api/export-datasets#create-dataflow)使用[`POST /flows`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/postFlow) API设置数据流。 在此步骤中，您可以使用`scheduleParams`参数定义导出的计划。
 
 #### 验证数据流
 
-要[检查数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/api/export-datasets#get-dataflow-runs)是否成功执行，请使用[`GET /runs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflow-runs/operation/getFlowRuns) API，将数据流ID指定为查询参数。 此数据流ID是您在设置数据流时返回的标识符。
+要[检查数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/api/export-datasets#get-dataflow-runs)是否成功执行，请使用[`GET /runs`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/getFlowRuns) API，将数据流ID指定为查询参数。 此数据流ID是您在设置数据流时返回的标识符。
 
-[验证](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets#verify)数据导出是否成功。 导出数据集时，Experience Platform会在目标中定义的存储位置创建一个或多个`.json`或`.parquet`文件。 根据您设置的导出计划，希望将新文件存储在您的存储位置。 Experience Platform会在您指定为选定目标一部分的存储位置中创建一个文件夹结构，用于存储导出的文件。 每次导出时都会创建一个新文件夹，其模式为： `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`。 默认文件名是随机生成的，并确保导出的文件名是唯一的。
+[验证](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets#verify)数据导出是否成功。 导出数据集时，Experience Platform会在目标存储位置创建一个或多个`.json`或`.parquet`文件。 根据您设置的导出计划，希望将新文件存储在您的存储位置。 Experience Platform会在您指定为选定目标一部分的存储位置中创建一个文件夹结构，用于存储导出的文件。 每次导出时都会创建一个新文件夹，其模式为： `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`。 默认文件名是随机生成的，并确保导出的文件名是唯一的。
 
-## 结论
+## 概要
 
-简而言之，模拟Adobe Analytics数据馈送功能意味着使用查询服务设置计划查询，并在计划的数据集导出中使用这些查询的结果。
+模拟Adobe Analytics数据馈送功能意味着使用查询服务设置计划查询，并在计划的数据集导出中使用这些查询的结果。
 
 >[!IMPORTANT]
 >
->此用例涉及两个调度程序。 要保证模拟数据馈送功能正常工作，请确保在查询服务和数据导出中配置的计划不会干预。
+>此用例涉及两个调度程序。 为确保模拟数据馈送功能正常工作，请确保在查询服务和数据导出中配置的计划不会干预。

@@ -8,23 +8,28 @@ role: User
 TQID: https://experienceleague.adobe.com/qEgO-lqYk8ipVP99IBazrKAb7Jer-AN96-PY-f1KdPQ
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: 7a7ad0d310603850395e35edce7fa66c8c2ff329
 workflow-type: tm+mt
-source-wordcount: 1462
+source-wordcount: '1487'
 ht-degree: 24%
-
 ---
-
 # 数据视图用例
 
 这些用例说明了Customer Journey Analytics中数据视图的灵活性和强大功能。
@@ -41,11 +46,15 @@ ht-degree: 24%
 
 请参阅[BI扩展用例](bi-extension-usecases.md)，了解如何使用Customer Journey Analytics BI扩展完成多个用例。
 
+
+## 如何处理无值
+
+有关如何处理各种&#x200B;**[!UICONTROL 无值]**&#x200B;用例情况的详细信息，请参阅[如何处理无值](./no-value.md)文章。
+
+
 ## 根据字符串架构字段创建量度 {#string}
 
 例如，在创建数据视图时，您可以根据字符串形式的[!UICONTROL 页面标题]架构字段创建一个[!UICONTROL 订单]量度。
-
-
 
 1. 在&#x200B;**[!UICONTROL 组件]**&#x200B;选项卡上，将&#x200B;**[!UICONTROL 页面标题]**&#x200B;拖到[!UICONTROL 包含的组件]下的&#x200B;**[!UICONTROL 量度]**&#x200B;部分。
 1. 突出显示您刚才拖入的量度，并在上的&#x200B;**[!UICONTROL 组件设置]**&#x200B;中将其重命名为`Orders`
