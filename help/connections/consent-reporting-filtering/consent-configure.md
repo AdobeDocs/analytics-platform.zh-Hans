@@ -4,27 +4,32 @@ description: 了解如何在Customer Journey Analytics中创建配置以启用�
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
   - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
+    internal-label: Privacy
+source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
 workflow-type: tm+mt
-source-wordcount: 1326
+source-wordcount: '1325'
 ht-degree: 28%
-
 ---
-
 # 配置同意报告和筛选 {#configure-consent-reporting}
 
 <!-- markdownlint-disable MD034 -->
@@ -80,6 +85,8 @@ ht-degree: 28%
 >abstract="启用此选项后，可阻止未同意的访客数据摄取到 Customer Journey Analytics 中。 启用后，只有当访客符合以下所有已启用的同意策略时，才会摄取该访客的数据。 <br>此选项适用于要求在摄取时排除未同意访客数据的组织。"
 
 <!-- markdownlint-enable MD034 -->
+
+{{release-limited-testing}}
 
 系统管理员可以为一个或多个连接启用同意报告和（可选）同意过滤。 有关概述信息，请参阅[同意报告和筛选概述](/help/connections/consent-reporting-filtering/consent-overview.md)。
 
