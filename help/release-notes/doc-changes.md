@@ -90,7 +90,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 添加了缺失的有关集成 Journey Optimizer 时可包含的两个数据集的文档 | 为您的 IMS 组织启用高吞吐量事务型消息附加组件后，连接中会[额外包含系统生成的两个非轮廓数据集](/help/integrations/ajo.md#high-throughput-add-on-datasets)。 |
 | 更新了同类群组分析用例 | 根据反馈将 Analysis Workspace 示例添加到了同类群组分析用例中。 |
 | **2026 年 3 月** | |
-| 划分面板 | 重新整理了](/help/analysis-workspace/c-panels/panels.md#drop-zone)面板放置区域[文档的结构，以支持新的[划分](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel)功能。 |
+| 划分面板 | 重新整理了[&#128279;](/help/analysis-workspace/c-panels/panels.md#drop-zone)面板放置区域文档的结构，以支持新的[划分](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel)功能。 |
 | 有关错误 ID (BAVID) 的技术说明 | 新的[有关错误 ID 的技术说明](/help/technotes/badids.md)。 此技术说明解释了错误 ID 的定义，在 Customer Journey Analytics 界面中的什么地方使用错误 ID，以及如何调查您连接中的数据以确定错误 ID。 |
 | 重新设计连接中的数据集预览 | 更新了当您在基于人员的连接中[添加](/help/connections/create-connection.md#add-datasets)或[编辑](/help/connections/create-connection.md#edit-a-dataset)数据集时，获得改进的数据预览体验的文档，包括用于启用了拼接的数据集的[拼接预览信息](/help/stitching/use-stitching-ui.md#datasets-preview)的额外文档。 |
 | Content Analytics 缩略图和预览 | 有关 Content Analytics 中其他可视化图表的[缩略图](/help/content-analytics/report/report.md#thumbnails)和[预览](/help/content-analytics/report/report.md#previews)的文档。 |
@@ -385,7 +385,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 2021 年 10 月 | 有关 Customer Journey Analytics 中的 [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/rb-overview.html#) 的文档。 |
 | 2021 年 10 月 | Customer Journey Analytics [审核日志](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) API 文档 |
 | 2021 年 10 月 | 记录了 [Analytics 功能板的可视化图表](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=zh-hans#apply-visualizations) |
-| 2021 年 10 月 | 有关[!UICONTROL 连接][数据保留](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-hans#set-rolling-window-for-connection-data-retention)滚动时段的文档 |
+| 2021 年 10 月 | 有关[!UICONTROL 连接]&#x200B;[数据保留](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=zh-hans#set-rolling-window-for-connection-data-retention)滚动时段的文档 |
 | **2021 年 9 月** | |
 | 2021 年 9 月 | [重复量度删除](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication.html?lang=zh-hans)文档 |
 | 2021 年 9 月 | [报告中的夏令时支持](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-hans#calendar) |

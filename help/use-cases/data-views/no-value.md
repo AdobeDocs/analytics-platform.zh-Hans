@@ -105,7 +105,7 @@ Dimension项目分为三类：
 <td rowspan="3">处理选项</td>
 <td><img src="assets/treat-no-value-as-value.png"/></td>
 <td>仅适用于非数字维度。
-同时影响归因和自由格式表搜索筛选器中的包含**[！UICONTROL无值]**选项。</td>
+同时影响归因和自由格式表搜索筛选器中的包含&#x200B;**[!UICONTROL 无值]**&#x200B;选项。</td>
 <td>值处理和可见性</td>
 </tr>
 <tr>
