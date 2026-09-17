@@ -2,10 +2,10 @@
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 8e446c15e998e660b42a09681fe78b885711e41f
+source-git-commit: 0b2548c1caa15fe7e50c000178e691ea9743ff19
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 93%
+source-wordcount: '1502'
+ht-degree: 92%
 ---
 # Adobe Customer Journey Analytics 指南 {#using}
 
@@ -511,6 +511,7 @@ ht-degree: 93%
       + [构建产品价值](/help/use-cases/b2b/b2b-edition/build-product-value.md)
   + 复杂的数据 {#complex-data}
     + [使用对象数组](../use-cases/object-arrays.md)
+    + [处理无值](../use-cases/data-views/no-value.md)
   + 跨渠道数据 {#cross-channel}
     + [跨渠道分析数据](../use-cases/cross-channel/cross-channel.md)
     + [导入呼叫中心数据和网站数据](../use-cases/cross-channel/call-center.md)
@@ -520,6 +521,9 @@ ht-degree: 93%
     + [导出数据集](../use-cases/data-export/export-datasets.md)
     + [导出整个表](../use-cases/data-export/export-full-table.md)
     + [查询服务和导出数据集](../use-cases/data-export/queryservice-export-datasets.md)
+    + [Workspace导出](../use-cases/data-export/workspace-export.md)
+    + [Report Builder](../use-cases/data-export/report-builder.md)
+    + [报表API](../use-cases/data-export/reporting-api.md)
   + 数据摄取 {#data-ingestion}
     + [收录并使用 Marketo Engage 数据](../use-cases/data-ingestion/marketo.md)
     + [摄取和使用 Experience Platform 受众](../use-cases/data-ingestion/ingest-aep-segments.md)
