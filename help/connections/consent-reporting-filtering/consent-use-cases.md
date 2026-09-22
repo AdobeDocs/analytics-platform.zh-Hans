@@ -23,14 +23,12 @@ topic_v2:
     internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
+source-git-commit: 5e12b8f14210de969beeb664d64fadeaa0b8af2e
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 0%
 ---
 # 同意报告和筛选用例
-
-{{release-limited-testing}}
 
 同意报告和筛选可帮助您报告访客同意策略成员资格，并（可选）在数据进入Customer Journey Analytics之前排除非同意的访客。 有关概述信息，请参阅[同意报告和筛选概述](/help/connections/consent-reporting-filtering/consent-overview.md)。
 

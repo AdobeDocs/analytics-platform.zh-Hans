@@ -25,7 +25,7 @@ topic_v2:
     internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
+source-git-commit: 5e12b8f14210de969beeb664d64fadeaa0b8af2e
 workflow-type: tm+mt
 source-wordcount: '1325'
 ht-degree: 28%
@@ -85,8 +85,6 @@ ht-degree: 28%
 >abstract="启用此选项后，可阻止未同意的访客数据摄取到 Customer Journey Analytics 中。 启用后，只有当访客符合以下所有已启用的同意策略时，才会摄取该访客的数据。 <br>此选项适用于要求在摄取时排除未同意访客数据的组织。"
 
 <!-- markdownlint-enable MD034 -->
-
-{{release-limited-testing}}
 
 系统管理员可以为一个或多个连接启用同意报告和（可选）同意过滤。 有关概述信息，请参阅[同意报告和筛选概述](/help/connections/consent-reporting-filtering/consent-overview.md)。
 
