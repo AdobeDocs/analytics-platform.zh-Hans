@@ -2,9 +2,9 @@
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 0b2548c1caa15fe7e50c000178e691ea9743ff19
+source-git-commit: ed1569087178fe1941d13f481914db6982ed18a1
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1501'
 ht-degree: 92%
 ---
 # Adobe Customer Journey Analytics 指南 {#using}
@@ -145,11 +145,11 @@ ht-degree: 92%
     + [分析](/help/connections/audience-analysis/analyze-audiences.md)
     + [用例](/help/connections/audience-analysis/audience-analysis-use-cases.md)
   + 同意报告和筛选 {#consent-reporting-filtering}
-    + {hide-from-toc}[概述](/help/connections/consent-reporting-filtering/consent-overview.md)
-    + {hide-from-toc}[配置](/help/connections/consent-reporting-filtering/consent-configure.md)
-    + {hide-from-toc}[管理](/help/connections/consent-reporting-filtering/consent-manage.md)
-    + {hide-from-toc}[分析](/help/connections/consent-reporting-filtering/consent-analyze.md)
-    + {hide-from-toc}[用例](/help/connections/consent-reporting-filtering/consent-use-cases.md)
+    + [概述](/help/connections/consent-reporting-filtering/consent-overview.md)
+    + [配置](/help/connections/consent-reporting-filtering/consent-configure.md)
+    + [管理](/help/connections/consent-reporting-filtering/consent-manage.md)
+    + [分析](/help/connections/consent-reporting-filtering/consent-analyze.md)
+    + [用例](/help/connections/consent-reporting-filtering/consent-use-cases.md)
 + 数据视图 {#cja-dataviews}
   + [数据视图概述](../data-views/data-views.md)
   + [创建或编辑数据视图](../data-views/create-dataview.md)
