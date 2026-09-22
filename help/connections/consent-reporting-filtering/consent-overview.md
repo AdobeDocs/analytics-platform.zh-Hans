@@ -27,14 +27,12 @@ topic_v2:
     internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
+source-git-commit: 5e12b8f14210de969beeb664d64fadeaa0b8af2e
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 2%
 ---
 # 同意报告和筛选概述
-
-{{release-limited-testing}}
 
 同意报告和筛选使用存储在您的Adobe Experience Platform配置文件数据集中的同意策略成员资格数据帮助您报告访客同意。 此外，您可以选择在未经同意的访客数据被摄取到Customer Journey Analytics中之前排除这些访客。
 

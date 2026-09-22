@@ -1,6 +1,6 @@
 ---
 title: 当前的Customer Journey Analytics发行说明
-description: 查看最新的 Customer Journey Analytics 发行说明
+description: 查看最新的Customer Journey Analytics发行说明，包括当前时期的新增功能、修复的问题和延迟的版本。
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
@@ -45,9 +45,9 @@ topic_v2:
     internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 2e63ee2c2e2ac0652c5dde54f1d702d99831d72a
+source-git-commit: 171fefc812dc63aee86def3338b286bbce6913bd
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1287'
 ht-degree: 19%
 ---
 # 当前Customer Journey Analytics发行说明（2026年9月）
@@ -61,15 +61,14 @@ ht-degree: 19%
 | 功能和描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | -----------|-----------|-----------|
 | **Customer Journey Analytics MCP服务器插件**<br/>&#x200B;使用适用于ChatGPT和Claude的新Customer Journey Analytics MCP服务器插件快速访问您的数据。 <p>有关详细信息，请参阅[连接到ChatGPT](https://developer.adobe.com/analytics-mcp/docs/guides/chatgpt)和[连接到Claude](https://developer.adobe.com/analytics-mcp/docs/guides/claude)。</p> | 2026年9月1日 | 2026年9月1日 |
-| **支持其他数据使用标签**<br> Customer Journey Analytics现在支持数据集内元素的以下其他数据使用标签：<ul><li>C2 — 限制第三方数据导出（现在可用）</li><li>C3 — 限制可直接识别的数据组合（现在可用）</li><li>C9 — 限制数据科学（计划于8月或9月发布）</li></ul><p>有关详细信息，请参阅[标签、策略和营销操作](/help/data-views/data-governance.md)。</p> | | 2026年9月3日 |
-| **同意策略筛选和报告**<br>&#x200B;您现在可以报告哪些访客与您的Adobe Experience Platform同意策略匹配。 （同意策略维度和量度会添加到连接中的数据视图。）<p>此外，您可以先排除非同意访客，然后再将其数据摄取到Customer Journey Analytics。</p><p>有关详细信息，请参阅[同意报告和筛选概述](/help/connections/consent-reporting-filtering/consent-overview.md)。</p> | | 2026年9月 |
+| **支持其他数据使用标签**<br/> Customer Journey Analytics现在支持数据集内元素的以下其他数据使用标签：<ul><li>C2：限制第三方数据导出（现在可用）</li><li>C3：限制可直接识别的数据组合（现在可用）</li><li>C9：限制数据科学（计划于8月或9月发布）</li></ul><p>有关详细信息，请参阅[标签、策略和营销操作](/help/data-views/data-governance.md)。</p> | | 2026年9月3日 |
+| **同意策略筛选和报告**<br/>&#x200B;您现在可以报告哪些访客与您的Adobe Experience Platform同意策略匹配。 （同意策略维度和量度会添加到连接中的数据视图。）<p>此外，您可以先排除非同意访客，然后再将其数据摄取到Customer Journey Analytics。</p><p>有关详细信息，请参阅[同意报告和筛选概述](/help/connections/consent-reporting-filtering/consent-overview.md)。</p> | | 2026年9月21日 |
 | **将区段限制为报表日期范围**<br/>&#x200B;当区段包含日期范围组件时，Workspace报表中的数据可能会超出报表日期范围。<p>现在提供了一个新选项，通过该选项可将结果限制为报表日期范围，而不管该区段中包含的任何日期组件如何。</p><p>创建或修改顶级容器为“人员”的区段时，此选项可用。</p><p>有关详细信息，请参阅[生成区段](/help/components/segments/seg-builder.md#components)。</p> | 2026年8月26日 | 2026年9月9日 |
-| **在Analysis Workspace中使用对话见解分析LLM客户体验**<br/> Customer Journey Analytics现在将非结构化聊天数据引入Analysis Workspace，允许您报告资产中利用LLM进行的浏览和购买体验。<p>利用此功能，您可以：</p><ul><li>通过Web SDK从对话代理（贵组织的自定义代理或Adobe Brand Concierge）收集提示、响应和代理元数据。</li><li>分析意图、语气和情绪，以便您了解客户提出的问题、您的座席如何回应以及客户对其交互的感受。</li><li>使用现有架构、数据集和数据视图进行大规模分析，然后在Analysis Workspace中显示见解。</li><li>通过将代理互动与更广泛的客户历程联系起来，将对话与成果联系起来，以便您衡量对转化、参与度等工作的实际影响。</li></ul><p>以前，由LLM提供支持的体验难以测量，并且几乎无法连接到您现有的客户历程。</p><p>（文档链接将随后提供。）</p> | | 2026年9月22日 |
-| **总人口报告**<br/>&#x200B;您现在可以分析和报告在Customer Journey Analytics连接中存在的配置文件和查找数据集中定义的实体。 这种分析和报告不仅仅是来自事件数据集的基于时间的事件系列。 <p>此功能支持新类别的查询、量度和受众定义，它们反映了企业客户群的整个范围。</p><p>（文档链接将随后提供。）</p> | | 2026年9月22日 |
-| **每小时警报**<br/>&#x200B;您现在可以将警报的时间粒度设置为“每小时”。<p>每小时警报适用于在给定小时内到达的数据。 如果数据的滞后时间超过一小时，则较长的粒度可确保警报评估完整的数据。 如果您不确定数据需要多长时间才能到达，请咨询数据工程师。</p>p>（要遵循的文档链接。）</p> | | 2026年9月 |
-| **警报投放严格遵循配置的延迟**<br/>&#x200B;现在，无论指定事件范围的数据已完成还是仍在接收数据，警报均会在您设置的延迟窗口的末尾投放。 延迟时段之后到达的任何数据都不会包含在警报中。<p>以前，警报包括后台处理检查，用于等待迟到的数据，即使这意味着警报在配置的延迟时段后发送。</p>p>（要遵循的文档链接。）</p> | | 2026年9月 |
+| **在Analysis Workspace中使用对话见解分析LLM客户体验**<br/> Customer Journey Analytics现在将非结构化聊天数据引入Analysis Workspace，允许您报告资产中利用LLM进行的浏览和购买体验。<p>利用此功能，您可以：</p><ul><li>通过Web SDK从对话代理（贵组织的自定义代理或Adobe Brand Concierge）收集提示、响应和代理元数据。</li><li>分析意图、语气和情绪，以便您了解客户提出的问题、您的座席如何回应以及客户对其交互的感受。</li><li>使用现有架构、数据集和数据视图进行大规模分析，然后在Analysis Workspace中显示见解。</li><li>通过将代理互动与更广泛的客户历程联系起来，将对话与成果联系起来，以便您衡量对转化、参与度等工作的实际影响。</li></ul><p>以前，由LLM提供支持的体验难以测量，并且几乎无法连接到您现有的客户历程。</p><p>（文档链接将随后提供。）</p> | | 2026年9月30日<p>（原计划于2026年9月22日）</p> |
+| **每小时警报**<br/>&#x200B;您现在可以将警报的时间粒度设置为“每小时”。<p>每小时警报适用于在给定小时内到达的数据。 如果数据的滞后时间超过一小时，则较长的粒度可确保警报评估完整的数据。 如果您不确定数据需要多长时间才能到达，请咨询数据工程师。</p><p>（文档链接将随后提供。）</p> | | 2026年9月 |
+| **警报投放严格遵循配置的延迟**<br/>&#x200B;现在，无论指定事件范围的数据已完成还是仍在接收数据，警报均会在您设置的延迟窗口的末尾投放。 延迟时段之后到达的任何数据都不会包含在警报中。<p>以前，警报包括后台处理检查，用于等待迟到的数据，即使这意味着警报在配置的延迟时段后发送。</p><p>（文档链接将随后提供。）</p> | | 2026年9月 |
 | **Adobe Brand Visibility集成**<br/>&#x200B;将Adobe Brand Visibility与贵组织的Customer Journey Analytics数据连接起来，以便您可以衡量AI驱动的发现如何转化为真正的网站参与度和业务成果。<p>（文档链接将随后提供。）</p> | | 2026年9月 |
-| **CX Enterprise Coworker中的升级和实施技能**<br>&#x200B;同事将获得新技能。 这些技能有助于使Customer Journey Analytics的升级和实施更加顺畅、轻松：<ul><li>**实施指南技能**：生成量身定制的升级或实施步骤和建议列表。 然后，可以使用预定义的行动手册将升级和实施指导转化为同事项目。</li><li>**智能升级和实施核对清单技能**：使用同事项目根据定制的升级或实施核对清单管理和跟踪实施进度，维护项目状态，跨团队协作，分配任务，并在需要时引入批准审核。</li><li>**数据验证技能**：验证您的实施配置正确且符合最佳实践。</li></ul><p>（文档链接随后提供。）</p> | | 2026年9月30日 |
+| **CX Enterprise Coworker中的升级和实施技能**<br/>&#x200B;同事将获得新技能。 这些技能有助于使Customer Journey Analytics的升级和实施更加顺畅、轻松：<ul><li>**实施指南技能**：生成量身定制的升级或实施步骤和建议列表。 然后，可以使用预定义的行动手册将升级和实施指导转化为同事项目。</li><li>**智能升级和实施核对清单技能**：使用同事项目根据定制的升级或实施核对清单管理和跟踪实施进度，维护项目状态，跨团队协作，分配任务，并在需要时引入批准审核。</li><li>**数据验证技能**：验证您的实施配置正确且符合最佳实践。</li></ul><p>（文档链接随后提供。）</p> | | 2026年9月30日 |
 
 ### Customer Journey Analytics 中的修复
 
@@ -94,6 +93,7 @@ ht-degree: 19%
 
 | 功能和描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | -----------|-----------|-----------|
+| **总人口报告**<br/>&#x200B;您现在可以分析和报告在Customer Journey Analytics连接中存在的配置文件和查找数据集中定义的实体。 这种分析和报告不仅仅是来自事件数据集的基于时间的事件系列。 <p>此功能支持新类别的查询、量度和受众定义，它们反映了企业客户群的整个范围。</p><p>（文档链接将随后提供。）</p> | | 待定<p>（原计划于2026年9月22日）</p> |
 | **流媒体服务：支持计划数据** <br/>您现在可以上传过去直播流媒体服务内容的计划数据，以便更轻松、更准确地跟踪观看人数。<p>以下是计划数据上传支持的实时内容示例：</p><ul><li>FAST（免费广告支持的电视）平台</li><li>本地流</li><li>直播体育赛事</li></ul><p>上传计划数据允许您跟踪在上传文件中指定的时间内运行的各个节目的观看人数数据。 您甚至可以收集特定主题或节目片段的观看人数数据。</p><p>无论您如何实现流媒体收集，这些功能都是可用的。</p><p>以前，在分析直播内容时很难准确地将特定场次与特定节目联系起来，也不可能将特定场次与单个主题或节目片段联系起来。</p><p>有关详细信息，请参阅[上传计划数据以跟踪实时内容](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/media-use-cases/track-schedule-data)。</p> | 2025 年 10 月 29 日 | 待定<p>（原计划于2025年10月29日）</p> |
 
 >[!MORELIKETHIS]
