@@ -5,29 +5,38 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
+hold: true
 TQID: https://experienceleague.adobe.com/90JULA8fFxPQSbVLHr3hJ8o5algJAfNz9SjjLFecyJc
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 9c0ddbb48c5cb1c62bded02d1455f2631ab1679f
+    internal-label: Data management
+source-git-commit: 3121bb0b99eb5b176b9a208fa242d90f6578adbd
 workflow-type: tm+mt
-source-wordcount: 10488
+source-wordcount: '10488'
 ht-degree: 92%
-
 ---
-
 # 创建或编辑连接 {#create-or-edit-a-connection}
 
 >[!CONTEXTUALHELP]
@@ -530,8 +539,9 @@ ht-degree: 92%
 | 数据集类型 | 描述 | 时间戳 | 架构 | 人员 ID |
 |---|---|---|---|---|
 | **[!UICONTROL 临时]** | 基于[临时架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/api/ad-hoc)的临时数据，其字段的命名空间仅供一个数据集使用。 | 取决于您为临时数据集选择的数据集类型。 | 任何基于一个类且基于&#x200B;*临时*&#x200B;行为的临时架构 | 取决于您为临时数据集选择的数据集类型。 |
-| **[!UICONTROL 模型]** | 基于关系架构的关系数据。 | 取决于您为关系数据集选择的数据集类型。 | 任何一个关系架构。 | 取决于您为关系数据集选择的数据集类型。 |
+| **[!UICONTROL 关系]** | 基于关系架构的关系数据。 | 取决于您为关系数据集选择的数据集类型。 | 任何一个关系架构。 | 取决于您为关系数据集选择的数据集类型。 |
 
+{{relational-dataset-important}}
 
 ### 添加数据集
 
@@ -713,6 +723,8 @@ ht-degree: 92%
 
 所有数据集和数据集类型都具有[一般设置和详细信息](#general-dataset-settings-and-details)，例如是否要导入新数据以及请求回填。
 
+
+
 #### 事件数据集
 
 事件数据集的具体设置取决于连接的类型。
@@ -853,6 +865,8 @@ ht-degree: 92%
 >
 >关联型数据集主要用于支持即将推出的 Adobe Experience Platform Data Mirror for Customer Journey Analytics 功能。
 >
+
+{{relational-dataset-important}}
 
 关联型数据集的具体设置包括：
 

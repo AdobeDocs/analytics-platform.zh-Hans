@@ -1,9 +1,8 @@
 ---
-source-git-commit: b0be8b726c4fab1bf9bb5f9462be84f39bdf184a
+source-git-commit: 3121bb0b99eb5b176b9a208fa242d90f6578adbd
 workflow-type: tm+mt
-source-wordcount: '5455'
-ht-degree: 98%
-
+source-wordcount: '5542'
+ht-degree: 97%
 ---
 # 片段
 
@@ -326,3 +325,11 @@ Customer Journey Analytics 中的各种可视化图表旨在分析您为客户�
 ## CJA 数据馈送用户代理 {#cja-df-ua}
 
 您不能同时收集用户代理信息和设备查找信息；这两个维度的群体是互斥的。 您必须选择在[配置数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure#geolocation-device-lookup)时要直接收集用户代理还是设备查找信息（基于用户代理）。
+
+
+## 关系数据集重要消息 {#relational-dataset-important}
+
+>[!IMPORTANT]
+>
+>关系数据集基于关系架构类型。 在该关系架构中定义的关系描述符没有关联，通常不适用于Customer Journey Analytics连接的定义和配置，也不适用于关系数据集的特定数据集设置。 <br/><br>对于Customer Journey Analytics报表和分析，您需要在[数据集设置](/help/connections/create-connection.md#relational-dataset)中明确配置如何基于通用人员ID或帐户ID将关系数据集中的数据连接到其他数据集。
+>
